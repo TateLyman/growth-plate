@@ -1,7 +1,111 @@
 id: npr2_heterozygous_short_stature
 name: NPR2 heterozygous short stature
+aliases:
+- NPR2 haploinsufficiency
+- NPR-B haploinsufficiency
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  NPR2 heterozygotes are the one-copy point of the CNP dosage series and the reason the series
+  is quantitative rather than anecdotal. In a single extended family containing an AMDM
+  proband, the 16 heterozygous carriers had a mean height z-score of -1.8 +/- 1.1 versus -0.4
+  +/- 0.8 in 23 non-carrier relatives (P < 0.0005) and versus the general population (P <
+  0.0005) - a roughly 1.4 SD effect of losing one functional NPR2 allele, with no change in body
+  proportion. That effect size was subsequently verified in unrelated cohorts: seven
+  heterozygous NPR2 missense or splice-site variants were found in 192 short-stature patients
+  and none in 192 height-normal controls, with eight of the tested variants shown to be
+  loss-of-function in a cGMP assay. A separate screen of SHOX-negative referrals for
+  Leri-Weill dyschondrosteosis found pathogenic NPR2 mutations in about 3 percent, showing that
+  NPR2 haploinsufficiency can present as DISproportionate short stature clinically
+  indistinguishable from SHOX deficiency but WITHOUT Madelung deformity. Estimates of the
+  contribution to idiopathic short stature have converged from an early 1-in-30 down to a range
+  of 0 to 1/26. Because vosoritide agonises this exact receptor, NPR2 heterozygotes are the
+  mechanistically cleanest non-achondroplasia indication for CNP analogues, and they have been
+  included in a phase II basket trial.
+quantitative:
+- parameter: height z-score of NPR2 heterozygous carriers
+  value: '-1.8'
+  unit: SDS
+  conditions: 16 carriers in one extended AMDM family
+  species: human
+  source_ref: olney2006
+  uncertainty: SD 1.1; P<0.0005 vs non-carriers
+- parameter: height z-score of non-carrier relatives in the same family
+  value: '-0.4'
+  unit: SDS
+  conditions: 23 non-carriers
+  species: human
+  source_ref: olney2006
+  uncertainty: SD 0.8
+- parameter: height difference attributable to one lost NPR2 allele
+  value: ~1.4
+  unit: SDS
+  conditions: carriers minus non-carrier relatives, same family, same environment
+  species: human
+  source_ref: olney2006
+  uncertainty: derived from -1.8 vs -0.4; no CI reported
+- parameter: heterozygous NPR2 variants in short-stature patients vs controls
+  value: 7 vs 0
+  unit: variants
+  conditions: 192 unrelated short-stature patients and 192 height-normal controls
+  species: human
+  source_ref: wang2015
+  uncertainty: n=192 per arm
+- parameter: estimated prevalence of NPR2 haploinsufficiency in idiopathic short stature
+  value: 0 to 1/26
+  unit: proportion
+  conditions: functional verification of loss-of-function in patient variants
+  species: human
+  source_ref: wang2015
+  uncertainty: range as reported
+- parameter: pathogenic NPR2 mutation yield in SHOX-negative Leri-Weill referrals
+  value: ~3
+  unit: percent
+  conditions: 173 suspected LWD plus 95 ISS, all SHOX-negative; 8 variants in 9 individuals
+  species: human
+  source_ref: hisadooliva2015
+  uncertainty: n=268 screened
+localization:
+- 'human growth plate: no published histology in NPR2 haploinsufficiency (gap g_l11path_005)'
+human_evidence: direct
+human_evidence_note: Within-family carrier versus non-carrier height comparison plus case-control
+  variant burden with functional cGMP assays in human cells.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: olney2006
+  pmid: '16384845'
+  first_author: Olney RC
+  year: 2006
+  type: primary
+  one_line_finding: NPR2 carriers -1.8 +/- 1.1 SDS vs -0.4 +/- 0.8 in non-carrier relatives (n=16
+    vs 23, P<0.0005).
+- ref_id: wang2015
+  pmid: '25703509'
+  first_author: Wang SR
+  year: 2015
+  type: primary
+  one_line_finding: 7 heterozygous NPR2 variants in 192 short patients and 0 in 192 controls; 8 loss-of-function,
+    1 gain-of-function.
+- ref_id: hisadooliva2015
+  pmid: '26075495'
+  first_author: Hisado-Oliva A
+  year: 2015
+  type: primary
+  one_line_finding: NPR2 mutations in ~3% of SHOX-negative Leri-Weill referrals; disproportion without
+    Madelung deformity.
+- ref_id: bartels2004
+  pmid: '15146390'
+  first_author: Bartels CF
+  year: 2004
+  type: primary
+  one_line_finding: Obligate AMDM carriers have heights below matched control means.
+open_questions:
+- g_l11path_005
+- g_l11path_006
 last_verified: '2026-08-05'

@@ -1,0 +1,445 @@
+edges:
+  - edge_id: e00001
+    source: resting_zone_niche
+    target: pthrp_positive_resting_chondrocyte
+    relation: required_for
+    sign: "+"
+    magnitude: "partial DTA ablation of PTHrP+ cells shrinks PZ and expands HZ and RZ"
+    context: "mouse distal femur, P6 pulse, both sexes"
+    evidence_tier: T1
+    refs: [mizuhashi2018]
+    confidence: C
+    notes: "Niche and cell are mutually defining; ablation was incomplete, so the effect size is a lower bound."
+
+  - edge_id: e00002
+    source: pthrp_positive_resting_chondrocyte
+    target: monoclonal_column_formation
+    relation: sufficient_for
+    sign: "+"
+    magnitude: "single PTHrP-creER cells give rise to single-colour Confetti columns; long columns (>10 cells) appear from P18"
+    context: "mouse distal femur growth plate, P6 tamoxifen pulse"
+    evidence_tier: T1
+    refs: [mizuhashi2018]
+    confidence: C
+
+  - edge_id: e00003
+    source: pthrp_positive_resting_chondrocyte
+    target: chondrocyte_to_osteoblast_transdifferentiation
+    relation: precedes
+    sign: "+"
+    magnitude: "labelled descendants become Col1a1(2.3kb)-GFP+ osteoblasts and Cxcl12-GFP+ stroma; osteoblast counts peak at 3 months of chase"
+    context: "mouse metaphysis beneath labelled columns, P6 pulse"
+    evidence_tier: T1
+    refs: [mizuhashi2018]
+    confidence: C
+    notes: "Multipotency is acquired only at the post-mitotic hypertrophic stage, not in the resting zone."
+
+  - edge_id: e00004
+    source: hypertrophic_chondrocyte_survival
+    target: chondrocyte_to_osteoblast_transdifferentiation
+    relation: required_for
+    sign: "+"
+    magnitude: "~60-63% of trabecular and 62-68% of endosteal osteoblasts are Col10a1-lineage at 3-4 weeks"
+    context: "mouse femur, 3-4 weeks old, Col10a1-Cre and Agc1-CreERT2"
+    evidence_tier: T1
+    refs: [zhou2014a, yang2014]
+    confidence: C
+
+  - edge_id: e00005
+    source: chondrocyte_apoptosis_hz
+    target: chondrocyte_to_osteoblast_transdifferentiation
+    relation: inhibits
+    sign: "-"
+    magnitude: "not quantified; the two fates partition an unmeasured fraction of terminal hypertrophic cells"
+    context: "mouse chondro-osseous junction"
+    evidence_tier: T1
+    refs: [yang2014, zhou2014a]
+    confidence: D
+    notes: "Competing fates of the same cell; the partition has never been measured directly in any species."
+
+  - edge_id: e00006
+    source: chondrocyte_to_osteoblast_transdifferentiation
+    target: lepr_positive_stromal_cell
+    relation: precedes
+    sign: unknown
+    magnitude: "dominant osteoblast source switches from chondrocytes to LepR+ BMSCs at adolescence, starting in diaphysis"
+    context: "mouse long bone, pre- vs post-adolescent, dual Cre/Dre fate mapping"
+    evidence_tier: T1
+    refs: [shu2021]
+    confidence: C
+    notes: "Temporal succession of osteoblast sources, not a differentiation step."
+
+  - edge_id: e00007
+    source: label_retaining_chondrocyte
+    target: chondroprogenitor_quiescence
+    relation: correlates_with
+    sign: "+"
+    magnitude: "label-retaining fraction plateaus at 2.6% with decay half-life 0.99-1.18 weeks"
+    context: "mouse distal femur, Col2a1-tTA H2B-EGFP chase from P21"
+    evidence_tier: T1
+    refs: [hallett2021]
+    confidence: C
+
+  - edge_id: e00008
+    source: resting_zone_niche
+    target: chondroprogenitor_quiescence
+    relation: required_for
+    sign: "+"
+    magnitude: "beta-catenin activation in label-retaining chondrocytes drives them out of the resting zone"
+    context: "mouse growth plate, Wnt-inhibitory microenvironment"
+    evidence_tier: T1
+    refs: [hallett2021]
+    confidence: C
+
+  - edge_id: e00009
+    source: foxa2_resting_chondrocyte
+    target: pthrp_positive_resting_chondrocyte
+    relation: differentiates_into
+    sign: "+"
+    magnitude: "0.017% double-positive at P18 (= background 0.014%) rising to 0.1% by P40 after a P13-P17 pulse"
+    context: "mouse tibia and ulna, FoxA2-creER;ZsGreen;PTHrP-mCherry"
+    evidence_tier: T1
+    refs: [muruganandan2022]
+    confidence: D
+    notes: "Places FoxA2+ cells upstream; the absolute double-positive percentages are very small and rest on one study."
+
+  - edge_id: e00010
+    source: soc_formation_triggers_stemness
+    target: pthrp_positive_resting_chondrocyte
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "secondary colony formation rises from 3.3% (P9 pulse) to 16.3% (P12 pulse) as the SOC develops"
+    context: "mouse distal femur, P9 vs P12 tamoxifen pulse, ex vivo colony assay"
+    evidence_tier: T1
+    refs: [mizuhashi2018, newton2019]
+    confidence: speculative
+    gap_id: g_l2stem_003
+    notes: "Temporal coincidence only; zero published experiments manipulate SOC formation and assay RZ stemness."
+
+  - edge_id: e00011
+    source: soc_formation_triggers_stemness
+    target: monoclonal_column_formation
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "clonal switch from progenitor depletion to stable monoclonal columns reported as coincident with SOC formation"
+    context: "mouse growth plate, fetal/neonatal vs later postnatal"
+    evidence_tier: T1
+    refs: [newton2019]
+    confidence: speculative
+    gap_id: g_l2stem_003
+
+  - edge_id: e00012
+    source: stem_cell_niche_vascular_coupling
+    target: soc_formation_triggers_stemness
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "VEGF blockade shifts skeletal progenitor output from bone to cartilage; epiphyseal-specific test not performed"
+    context: "mouse, BMP2-induced ectopic ossicle; extrapolated to epiphyseal cartilage canals"
+    evidence_tier: T1
+    refs: [kusumbe2014, chan2015]
+    confidence: speculative
+    gap_id: g_l2stem_003
+    notes: "Proposed mechanism by which an SOC could create the niche; untested at the epiphysis."
+
+  - edge_id: e00013
+    source: clonal_exhaustion
+    target: growth_plate_senescence
+    relation: required_for
+    sign: "+"
+    magnitude: "RZ chondrocyte proliferation rate and number per unit area both decline with age (rabbit)"
+    context: "rabbit proximal tibia across postnatal age; mouse clone counts plateau by 6 months"
+    evidence_tier: T1
+    refs: [schrier2006, mizuhashi2018]
+    confidence: C
+
+  - edge_id: e00014
+    source: finite_proliferative_capacity_model
+    target: growth_plate_senescence
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "senescence tracks cumulative divisions, not chronological age"
+    context: "rabbit and rat growth plate, glucocorticoid and hypothyroidism models"
+    evidence_tier: T1
+    refs: [baron1994, gafni2001, marino2008, nilsson2004]
+    confidence: speculative
+    gap_id: g_l2stem_008
+    notes: "Division-dependence is well supported; the division budget itself has never been counted in any species."
+
+  - edge_id: e00015
+    source: replicative_senescence_chondrocyte
+    target: finite_proliferative_capacity_model
+    relation: inhibits
+    sign: "-"
+    magnitude: "cultured rabbit RZ chondrocyte population doublings independent of donor age"
+    context: "rabbit resting zone chondrocytes in vitro"
+    evidence_tier: T1
+    refs: [nilsson2005]
+    confidence: D
+    notes: "Negative result: refutes the cell-autonomous Hayflick version of the finite-capacity model."
+
+  - edge_id: e00016
+    source: telomere_attrition_chondrocyte
+    target: replicative_senescence_chondrocyte
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "no human measurement exists; asserted in reviews, untraceable to primary human data"
+    context: "human growth plate, all ages"
+    evidence_tier: T5
+    refs: [carlone2021, nilsson2005]
+    confidence: speculative
+    gap_id: g_l2stem_007
+
+  - edge_id: e00017
+    source: delayed_senescence_hypothesis
+    target: catch_up_growth
+    relation: required_for
+    sign: "+"
+    magnitude: "local glucocorticoid to one plate yields catch-up confined to that plate; treated plates are less senescent than age-matched controls"
+    context: "rabbit (dexamethasone, local and systemic) and rat (propylthiouracil)"
+    evidence_tier: T1
+    refs: [baron1994, gafni2001, marino2008]
+    confidence: B
+
+  - edge_id: e00018
+    source: neuroendocrine_catchup_hypothesis
+    target: catch_up_growth
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "set point and circulating mediator never identified; local catch-up shows a systemic signal is not required"
+    context: "systemic, mammals"
+    evidence_tier: T5
+    refs: [tanner1963, baron1994, wit2002]
+    confidence: speculative
+    gap_id: g_l2stem_006
+
+  - edge_id: e00019
+    source: growth_plate_senescence
+    target: rz_depletion_causes_fusion
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "sequence asserted in the canonical model; rodents senesce without fusing, so depletion is not sufficient"
+    context: "rabbit and human fuse; mouse and rat do not"
+    evidence_tier: T5
+    refs: [nilsson2004, emons2011, schrier2006]
+    confidence: speculative
+    gap_id: g_l2stem_006
+
+  - edge_id: e00020
+    source: mouse_skeletal_stem_cell_hierarchy
+    target: bone_cartilage_stromal_progenitor
+    relation: differentiates_into
+    sign: "+"
+    magnitude: "mSSC generates pre-BCSP and BCSP and all seven downstream subsets, in vitro and in vivo, from single cells"
+    context: "mouse long bone, rib and sternum; renal capsule transplantation"
+    evidence_tier: T1
+    refs: [chan2015, chan2013]
+    confidence: C
+
+  - edge_id: e00021
+    source: pthrp_positive_resting_chondrocyte
+    target: mouse_skeletal_stem_cell_hierarchy
+    relation: correlates_with
+    sign: "+"
+    magnitude: "49.2 +/- 8.4% of PTHrP-mCherry+ CD51+CD90- cells are CD105-CD200+ (mSSC); 41.6 +/- 4.4% of mSSCs are PTHrP-mCherry+"
+    context: "mouse P9 growth plate, CD45-Ter119-CD31- gate"
+    evidence_tier: T1
+    refs: [mizuhashi2018]
+    confidence: C
+    notes: "Immunophenotypic tiers and anatomical zones cut across each other rather than nesting."
+
+  - edge_id: e00022
+    source: human_skeletal_stem_cell
+    target: bone_cartilage_stromal_progenitor
+    relation: differentiates_into
+    sign: "+"
+    magnitude: "PDPN+CD146-CD73+CD164+ cells generate hBCSP, hOP and three chondroprogenitor subsets; serial CFU to tertiary passage"
+    context: "human 17-week fetal femur; NSG renal capsule xenograft"
+    evidence_tier: T1
+    refs: [chan2018]
+    confidence: C
+
+  - edge_id: e00023
+    source: human_skeletal_stem_cell
+    target: mouse_skeletal_stem_cell_hierarchy
+    relation: correlates_with
+    sign: unknown
+    magnitude: "derived by scoring human cells against 76 mSSC/mBCSP orthologues; the two panels share no surface antigen"
+    context: "human fetal femur vs mouse long bone"
+    evidence_tier: T1
+    refs: [chan2018, chan2015]
+    confidence: D
+    notes: "Transcriptional homology, not marker or anatomical correspondence; the human cell was localised to p-H2/H1, not the resting zone."
+
+  - edge_id: e00024
+    source: marrow_stromal_cell
+    target: human_skeletal_stem_cell
+    relation: correlates_with
+    sign: "-"
+    magnitude: "CD146+ cells give smaller and fewer colonies than PDPN+CD146-CD73+CD164+ cells; the hSSC gate is explicitly CD146-negative"
+    context: "human fetal and adult bone"
+    evidence_tier: T1
+    refs: [chan2018, sacchetti2007, bianco2015]
+    confidence: D
+    notes: "Direct contradiction between two human skeletal stem cell definitions; logged in audit/contradictions.md C-L2-02."
+
+  - edge_id: e00025
+    source: gremlin1_lineage_cell
+    target: pthrp_positive_resting_chondrocyte
+    relation: correlates_with
+    sign: "-"
+    magnitude: "PTHrP+ resting chondrocytes do not express Grem1"
+    context: "mouse growth plate, P6-P12"
+    evidence_tier: T1
+    refs: [mizuhashi2018, worthley2015]
+    confidence: C
+    notes: "Two candidate growth plate stem cells that do not overlap; logged as contradiction C-L2-03."
+
+  - edge_id: e00026
+    source: lepr_positive_stromal_cell
+    target: gremlin1_lineage_cell
+    relation: correlates_with
+    sign: "-"
+    magnitude: "Grem1+ clones make no adipocytes (0/19); LepR+ cells make adipocytes and account for 94% of marrow CFU-F"
+    context: "mouse bone marrow, adult"
+    evidence_tier: T1
+    refs: [worthley2015, zhou2014]
+    confidence: C
+
+  - edge_id: e00027
+    source: periosteal_stem_cell
+    target: mouse_skeletal_stem_cell_hierarchy
+    relation: correlates_with
+    sign: unknown
+    magnitude: "PSC and mSSC share the CD200+ CD105- THY- 6C3- immunophenotype; separated only by anatomy and Ctsk lineage"
+    context: "mouse periosteum vs endosteum/growth plate"
+    evidence_tier: T1
+    refs: [debnath2018, chan2015]
+    confidence: C
+    notes: "Shows the mSSC surface panel does not specify anatomical identity."
+
+  - edge_id: e00028
+    source: cxcl12_abundant_reticular_cell
+    target: marrow_stromal_cell
+    relation: correlates_with
+    sign: "+"
+    magnitude: "LepR+ cells are Cxcl12-DsRed-high, indicating substantial CAR/LepR overlap"
+    context: "mouse bone marrow, adult"
+    evidence_tier: T1
+    refs: [omatsu2010, zhou2014]
+    confidence: C
+
+  - edge_id: e00029
+    source: chondrocyte_to_osteoblast_transdifferentiation
+    target: cxcl12_abundant_reticular_cell
+    relation: differentiates_into
+    sign: "+"
+    magnitude: "chondrocyte-derived Cxcl12-GFP+ stromal cell numbers rise for 3 months of chase then plateau"
+    context: "mouse metaphysis beneath labelled columns, PTHrP-creER P6 pulse"
+    evidence_tier: T1
+    refs: [mizuhashi2018]
+    confidence: C
+
+  - edge_id: e00030
+    source: prrx1_root_stem_cell
+    target: human_resting_zone_chondrocyte
+    relation: differentiates_into
+    sign: "+"
+    magnitude: "root cells generate extensive chondrocyte clones plus stromal and osteoblastic progeny in the mouse Prrx1+ counterpart"
+    context: "human early pubertal growth plate; mouse Prrx1 clonal tracing"
+    evidence_tier: T1
+    refs: [chu2026]
+    confidence: D
+    notes: "Human identity, mouse function; the human root population is PTHLH-negative."
+
+  - edge_id: e00031
+    source: apoe_resting_zone_marker
+    target: resting_zone_niche
+    relation: correlates_with
+    sign: "+"
+    magnitude: "ApoE labels essentially all resting zone chondrocytes and no proliferative or hypertrophic cells"
+    context: "mouse growth plate"
+    evidence_tier: T1
+    refs: [kodama2025]
+    confidence: D
+
+  - edge_id: e00032
+    source: clonal_lineage_tracing
+    target: monoclonal_column_formation
+    relation: required_for
+    sign: "+"
+    magnitude: "labelling efficiency ranges 8-38% depending on tamoxifen dose and reporter allele copy number"
+    context: "mouse growth plate, FoxA2-creER as the worked example"
+    evidence_tier: T1
+    refs: [muruganandan2022, mizuhashi2018]
+    confidence: C
+    notes: "Methodological dependency: clonality claims are conditional on driver specificity and labelling density."
+
+  - edge_id: e00033
+    source: confetti_reporter
+    target: clonal_lineage_tracing
+    relation: required_for
+    sign: "+"
+    magnitude: "four-colour stochastic recombination allows neighbouring clones to be distinguished"
+    context: "mouse, all tissues; validated in intestinal crypt"
+    evidence_tier: T1
+    refs: [snippert2010, rinkevich2011]
+    confidence: C
+
+  - edge_id: e00034
+    source: growth_plate_senescence
+    target: catch_up_growth
+    relation: precedes
+    sign: "-"
+    magnitude: "growth-inhibited plates are less senescent for age and grow faster on release"
+    context: "rabbit dexamethasone and rat propylthiouracil models"
+    evidence_tier: T1
+    refs: [gafni2001, marino2008, lui2011]
+    confidence: B
+
+  - edge_id: e00035
+    source: chondroprogenitor_quiescence
+    target: clonal_exhaustion
+    relation: inhibits
+    sign: "-"
+    magnitude: "growth hormone reduces the slow-cycling label-retaining pool by driving differentiation into transit progenitors"
+    context: "mouse growth plate, multiple transgenic GH models"
+    evidence_tier: T1
+    refs: [chu2025, hallett2021]
+    confidence: C
+    notes: "Implies a cost to GH therapy in stem-cell terms; final-height consequence untested."
+
+  - edge_id: e00036
+    source: mtert_skeletal_progenitor
+    target: skeletal_stem_cell
+    relation: correlates_with
+    sign: "+"
+    magnitude: "mTert-GFP+ cells show enriched colony-forming capacity and multilineage contribution, peaking at adolescent growth"
+    context: "mouse metaphyseal stroma, growth plate and marrow"
+    evidence_tier: T1
+    refs: [carlone2021]
+    confidence: D
+
+  - edge_id: e00037
+    source: skeletal_stem_cell
+    target: mouse_skeletal_stem_cell_hierarchy
+    relation: correlates_with
+    sign: unknown
+    magnitude: "five incompatible operational definitions in current use; no study applies them all to one cohort"
+    context: "mouse and human, multiple compartments"
+    evidence_tier: T1
+    refs: [chan2015, worthley2015, zhou2014, debnath2018, mizuhashi2018, bianco2015]
+    confidence: D
+    gap_id: g_l2stem_004
+    notes: "Umbrella node linked to the hierarchy it fails to uniquely specify; see audit/contradictions.md C-L2-01."
+
+  - edge_id: e00039
+    source: resting_zone_niche
+    target: clonal_exhaustion
+    relation: inhibits
+    sign: "-"
+    magnitude: "Fgfr3 achondroplasia knock-in expands the resting zone by disrupting RZ turnover and stem-like behaviour"
+    context: "mouse Fgfr3-Ach (p.Gly380Arg) knock-in, postnatal"
+    evidence_tier: T1
+    refs: [horike2026, bian2024]
+    confidence: C
+    notes: "Disease models show the niche actively sets the rate at which resting cells are consumed."

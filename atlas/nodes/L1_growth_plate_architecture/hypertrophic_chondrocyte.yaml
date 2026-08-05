@@ -1,7 +1,135 @@
 id: hypertrophic_chondrocyte
 name: Hypertrophic chondrocyte
+aliases:
+- terminal hypertrophic chondrocyte
+- enlarged chondrocyte
 type: cell_type
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The hypertrophic chondrocyte is the cell whose volume increase produces most of the elongation
+  of a long bone. In mouse proximal tibia it reaches about 14,000 fl from a starting volume of about 600
+  fl, a roughly 23-fold increase, achieved by three sequential mechanisms: proportionate biosynthetic
+  growth, then a swelling phase that dilutes dry mass density from 0.183 to about 0.07 pg/fl, then renewed
+  proportionate growth at that low density. In rat the same process is described stereologically as a
+  4-fold height and 10-fold volume increase accompanied by 2-5 fold increases in rough endoplasmic reticulum,
+  Golgi and mitochondrial compartments, so these are not degenerate cells; time-lapse imaging confirms
+  they remain alive up to the chondro-osseous junction, passing through a discrete condensation stage
+  immediately before removal. Final volume correlates linearly with elongation rate across four plates
+  and two ages in rat (r=0.98) and pig (r=0.83), with a species-specific slope, and the relationship fails
+  altogether in birds. No human hypertrophic chondrocyte volume has been reported with unbiased stereology.'
+quantitative:
+- parameter: final volume, fast plate
+  value: '14000'
+  unit: fl
+  conditions: mouse proximal tibia
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: total fold volume increase
+  value: '23'
+  unit: fold
+  conditions: mouse proximal tibia, ~600 fl to ~14,000 fl
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: derived from the reported start and end volumes
+- parameter: dry mass density, small prehypertrophic cells
+  value: '0.183'
+  unit: pg/fl
+  conditions: mouse; equals the normal healthy-cell value of 0.182 pg/fl
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: not reported
+- parameter: dry mass density, largest hypertrophic cells
+  value: '0.07'
+  unit: pg/fl
+  conditions: mouse proximal tibia
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate; ~60% dilution
+- parameter: mean cell height increase, proliferative to late hypertrophic
+  value: '4'
+  unit: fold
+  conditions: rat proximal tibia, stereology
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: not reported
+- parameter: mean cell volume increase, proliferative to late hypertrophic
+  value: '10'
+  unit: fold
+  conditions: rat proximal tibia, stereology
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: not reported
+- parameter: correlation of final volume with elongation rate
+  value: '0.98'
+  unit: Pearson r
+  conditions: rat, four plates, 21 and 35 days
+  species: rat
+  source_ref: breur1991
+  uncertainty: as reported
+- parameter: correlation of final volume with elongation rate
+  value: '0.83'
+  unit: Pearson r
+  conditions: Yucatan pig, four plates, 21 and 35 days
+  species: porcine
+  source_ref: breur1991
+  uncertainty: as reported
+localization:
+- 'mouse HZ: single-cell volume and density measured (cooper2013)'
+- 'rat HZ: stereology and ultrastructure (hunziker1987)'
+- 'swine HZ: terminal condensation stage described (farnum1989a)'
+- 'human HZ: cell heights reported but not volumes (thurston1985)'
+human_evidence: indirect
+human_evidence_note: Human hypertrophic cell heights were measured in an in vitro labelling study (thurston1985,
+  abstract only); no human volume measurement exists.
+species_basis:
+- mouse
+- rat
+- porcine
+- chicken
+translation_risk: high
+translation_risk_reason: The volume-versus-growth-rate relationship that makes this cell the central lever
+  has a species-specific slope between rat and pig and does not hold in birds, so human values cannot
+  be predicted from rodent data.
+confidence: C
+key_refs:
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Mouse hypertrophic chondrocytes reach ~14,000 fl via three phases including dry-mass-diluting
+    swelling.
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: 4-fold height, 10-fold volume and 2-5 fold organelle increases in rat hypertrophic
+    chondrocytes.
+- ref_id: breur1991
+  pmid: '2010838'
+  first_author: Breur GJ
+  year: 1991
+  type: primary
+  one_line_finding: Final hypertrophic volume correlates linearly with elongation rate in rat and pig
+    with different slopes.
+- ref_id: farnum1990
+  pmid: '2201757'
+  first_author: Farnum CE
+  year: 1990
+  type: primary
+  one_line_finding: Terminal hypertrophic chondrocytes are viable living cells at the chondro-osseous
+    junction.
+- ref_id: barreto1994
+  pmid: '8146454'
+  first_author: Barreto C
+  year: 1994
+  type: primary
+  one_line_finding: The mammalian volume/growth-rate relationship does not hold in ducklings and chicks.
+open_questions:
+- g_l1arch_009
+- g_l1arch_008
+contradicts:
+- barreto1994
 last_verified: '2026-08-05'

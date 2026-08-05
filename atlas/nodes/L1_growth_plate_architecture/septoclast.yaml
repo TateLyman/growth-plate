@@ -1,7 +1,99 @@
 id: septoclast
 name: Septoclast
+aliases:
+- cartilage-resorbing perivascular cell
+- FABP5+ chondro-osseous border cell
 type: cell_type
 layer: L1
-stub: true
+stub: false
+summary: 'The septoclast is a mononuclear, spindle-shaped, cathepsin B-rich cell sitting at the chondro-osseous
+  junction in intimate contact with the distal buds of the invading metaphyseal capillaries, first defined
+  in rat as the cell that resorbs the transverse cartilage septa. Lineage tracing in mouse shows septoclasts
+  are mesenchymal, not haematopoietic: they are FABP5+, PDGFRalpha+ and PDGFRbeta+, NG2+ but CD146-negative,
+  and they lack the CD68/vATPase profile of osteoclasts, which are also present at the junction but far
+  less abundant there. Their specification requires the Notch ligand Dll4 supplied by endothelial cells,
+  which makes them a directly angiogenesis-coupled catabolic cell. They disappear in adult and ageing
+  bone in parallel with the cessation of growth, and re-emerge with growing vessels during fracture healing.
+  Marker assignment is not fully settled: FABP4 is upregulated in septoclasts of FABP5-deficient mice,
+  indicating redundancy, and their origin has been assigned variously to pericytes and to the perichondrium.
+  Every primary observation is rodent or bovine; a full search of the septoclast literature returns no
+  human tissue study whatsoever.'
+quantitative:
+- parameter: abundance at the chondro-osseous interface relative to osteoclasts
+  value: significantly more abundant
+  unit: qualitative
+  conditions: 3-week-old wild-type mouse femur, FABP5 vs CD68/vATPase immunostaining
+  species: mouse
+  source_ref: sivaraj2022
+  uncertainty: n = 6 animals
+- parameter: proportion of septoclasts expressing the Pdgfra-GFP reporter
+  value: reported as a percentage in Fig. 1c
+  unit: '% of FABP5+ cells'
+  conditions: 3-week-old mouse femur chondro-osseous border
+  species: mouse
+  source_ref: sivaraj2022
+  uncertainty: n = 6; exact percentage read from figure, not stated in text
+  value_unverified: true
+- parameter: primary studies of septoclasts in human tissue
+  value: '0'
+  unit: studies
+  conditions: Europe PMC query 'septoclast*', 54 records screened, 2026-08-05
+  species: human
+  source_ref: sivaraj2022
+  uncertainty: null result; see search log g_l1arch_003
+localization:
+- 'mouse chondro-osseous border: FABP5+/PDGFRa+/PDGFRb+/NG2+/CD146- (sivaraj2022)'
+- 'rat chondro-osseous junction: cathepsin B-rich (lee1995)'
+- 'human: not demonstrated'
 human_evidence: absent
+human_evidence_note: A complete screen of the 54-record septoclast literature found no primary study in
+  human tissue; the closest human work at the chondro-osseous region (walzer2014) did not stain for septoclast
+  markers.
+species_basis:
+- mouse
+- rat
+- bovine
+translation_risk: high
+translation_risk_reason: An entire cell type with a distinct lineage, marker set and druggable Notch dependency
+  has been defined without a single human observation. If human cartilage septa are removed by osteoclasts
+  instead, Dll4-directed reasoning does not transfer.
+confidence: C
+key_refs:
+- ref_id: sivaraj2022
+  pmid: '35091558'
+  first_author: Sivaraj KK
+  year: 2022
+  type: primary
+  one_line_finding: FABP5+ septoclasts are mesenchyme-derived, Dll4-dependent, more abundant than osteoclasts
+    at the chondro-osseous border, and disappear in adult bone.
+- ref_id: lee1995
+  pmid: '7730591'
+  first_author: Lee ER
+  year: 1995
+  type: primary
+  one_line_finding: Original definition of the septoclast as a cathepsin B-rich, non-osteoclastic cell
+    resorbing growth plate cartilage septa in rat.
+- ref_id: bando2018
+  pmid: '29464321'
+  first_author: Bando Y
+  year: 2018
+  type: primary
+  one_line_finding: Traced the origin and development of septoclasts during endochondral ossification
+    in mice.
+- ref_id: bando2021
+  pmid: '33398436'
+  first_author: Bando Y
+  year: 2021
+  type: primary
+  one_line_finding: FABP4 is expressed and upregulated in septoclasts of FABP5-deficient mice, showing
+    marker redundancy.
+- ref_id: odgren2016
+  pmid: '26818783'
+  first_author: Odgren PR
+  year: 2016
+  type: review
+  one_line_finding: Distinguishes osteoclasts, chondroclasts and septoclasts as separate catabolic populations
+    at the vascular invasion front.
+open_questions:
+- g_l1arch_003
 last_verified: '2026-08-05'

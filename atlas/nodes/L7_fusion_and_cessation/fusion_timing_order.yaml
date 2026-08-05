@@ -2,6 +2,96 @@ id: fusion_timing_order
 name: Site-by-site fusion order
 type: phenotype
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- epiphyseal union sequence
+summary: |
+  Human epiphyses do not close together; they close in a reproducible ascending order. MRI of
+  wrist, knee and ankle in 958 healthy subjects aged 14.0-21.5 years established that fusion
+  proceeds from the foot upward to the wrist, with the calcaneus and distal tibia closing before
+  the femur and the radius last (kvist2021, human). The site-specific completion percentages at
+  fixed ages quantify the spread: in 17-year-old females complete fusion was present in 75%
+  (radius), 85% (femur), 97% (proximal tibia), 98% (distal tibia) and 98% (calcaneus); in
+  19-year-old males the corresponding figures were 90%, 97%, 95%, 97% and 98% (kvist2021).
+  Skeletal-collection data extend the sequence to the whole skeleton: in 258 Bosniak males aged
+  14-30 years the fusion status of 21 epiphyses was compared pairwise to derive separate
+  sequences for beginning and for complete union, and although substantial variation existed in
+  the order of both initiation and completion, most pairwise relationships showed no variant
+  ordering at all (schaefer2007, human). The sacrum runs on its own schedule: partial union of
+  primary ossification centres occurs from 1 to 8 years and of secondary centres from 15 to 21
+  years, with the S5 neural arch-centrum junction first and the S1 costal element-centrum
+  junction last (cardoso2014, human). The invariant pairwise relationships are the forensically
+  useful ones and are also the ones that constrain any mechanistic model: whatever ends the plate
+  must be tunable per site, since different plates in the same individual, in the same endocrine
+  environment, close years apart.
+quantitative:
+- parameter: complete growth plate fusion at age 17 in females (radius / femur / proximal tibia / distal tibia / calcaneus)
+  value: 75 / 85 / 97 / 98 / 98
+  unit: percent of subjects
+  conditions: MRI, healthy Swedish cohort aged 14.0-21.5 y
+  species: human
+  source_ref: kvist2021
+  uncertainty: n=958 across all ages; per-age-cell n not reported in abstract
+- parameter: complete growth plate fusion at age 19 in males (radius / femur / proximal tibia / distal tibia / calcaneus)
+  value: 90 / 97 / 95 / 97 / 98
+  unit: percent of subjects
+  conditions: MRI, healthy Swedish cohort aged 14.0-21.5 y
+  species: human
+  source_ref: kvist2021
+  uncertainty: n=958 across all ages
+- parameter: number of epiphyses sequenced for beginning and complete union
+  value: '21'
+  unit: epiphyses
+  conditions: 258 Bosniak males aged 14-30 y, dry bone
+  species: human
+  source_ref: schaefer2007
+  uncertainty: n=258
+- parameter: age range of partial union of sacral secondary ossification centres
+  value: 15-21
+  unit: years
+  conditions: Lisbon documented skeletal collection, 90 females and 101 males aged 0-30 y
+  species: human
+  source_ref: cardoso2014
+  uncertainty: observed range, posterior probability tables published
+localization:
+- 'human: ascending order calcaneus and distal tibia, then knee, then distal radius (kvist2021)'
+- 'human sacrum: S5 neural arch-centrum first, S1 costal element-centrum last (cardoso2014)'
+human_evidence: direct
+human_evidence_note: >-
+  Direct human imaging (n=958) and direct human skeletal observation (n=258 and n=191) with
+  published stage-by-age distributions.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human phenotype measured directly in humans.
+confidence: A
+key_refs:
+- ref_id: kvist2021
+  pmid: '33047349'
+  first_author: Kvist O
+  year: 2021
+  type: primary
+  one_line_finding: >-
+    MRI in 958 healthy 14-21.5 year olds shows fusion in an ascending foot-to-wrist order with
+    site-specific completion percentages by age and sex.
+- ref_id: schaefer2007
+  pmid: '17316222'
+  first_author: Schaefer MC
+  year: 2007
+  type: primary
+  one_line_finding: >-
+    Pairwise sequencing of 21 epiphyses in 258 Bosniak males yields separate beginning-union and
+    complete-union orders, with most pairwise relationships invariant.
+- ref_id: cardoso2014
+  pmid: '24227049'
+  first_author: Cardoso HF
+  year: 2014
+  type: primary
+  one_line_finding: >-
+    Sacral primary centres fuse between 1 and 8 years and secondary centres between 15 and 21
+    years in a documented Portuguese collection.
+open_questions:
+- g_l7fuse_010
+- g_l7fuse_012
+contradicts: []
 last_verified: '2026-08-05'

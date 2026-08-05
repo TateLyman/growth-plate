@@ -1,7 +1,103 @@
 id: nppc_duplication_tall_stature
-name: NPPC duplication tall stature
+name: NPPC dosage disorders (CNP overexpression and CNP loss)
+aliases:
+- NPPC translocation overgrowth
+- CNP overexpression syndrome
+- NPPC mutation short stature
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  NPPC dosage completes the CNP axis from the ligand side and shows that the growth plate reads
+  CNP quantitatively in both directions. Overexpression: a de novo balanced t(2;7)(q37.1;q21.3)
+  with a breakpoint adjacent to NPPC doubled plasma CNP concentration relative to five controls
+  and substantially raised NPPC expression in the proband's fibroblasts, and the girl had a
+  marfanoid habitus with skeletal anomalies; a transgenic mouse targeting Nppc overexpression to
+  bone reproduced the phenotype. A second, independent translocation, t(1;2)(q41;q37.1), with a
+  breakpoint 200,365 bp downstream of NPPC, raised serum NT-proCNP and caused the same skeletal
+  overgrowth syndrome with macrodactyly of the great toe, scoliosis, ankle valgus and slipped
+  capital femoral epiphysis. Two independent rearrangements at the same locus producing the same
+  phenotype with the same measured biomarker is strong human causal evidence. Loss: screening
+  668 short-stature patients found two heterozygous NPPC mutations located in the highly
+  conserved CNP ring, both with significantly reduced cGMP synthesis, cosegregating with short
+  stature and small hands - the first demonstration that NPPC mutations cause autosomal dominant
+  short stature in humans. One of the two had already been described in the spontaneous Nppc
+  lbab mouse, a rare exact genotype match between a human and a mouse allele. The clearance
+  receptor completes the picture: loss-of-function variants in NPR3 (NPR-C) also cause extreme
+  tall stature, i.e. failing to remove CNP mimics making too much of it.
+quantitative:
+- parameter: plasma CNP concentration in the t(2;7) proband relative to controls
+  value: '2'
+  unit: fold
+  conditions: de novo balanced t(2;7)(q37.1;q21.3) with breakpoint near NPPC; five normal controls
+  species: human
+  source_ref: bocciardi2007
+  uncertainty: n=1 case vs 5 controls
+- parameter: distance of the t(1;2) breakpoint downstream of NPPC
+  value: 200,365
+  unit: bp
+  conditions: targeted resequencing of breakpoints; serum NT-proCNP elevated
+  species: human
+  source_ref: ko2015
+  uncertainty: exact mapped distance
+- parameter: short-stature patients screened for NPPC mutations
+  value: '668'
+  unit: patients
+  conditions: 357 disproportionate short stature, 311 autosomal dominant ISS, plus 29 further ISS
+    families in exome sequencing
+  species: human
+  source_ref: hisadooliva2018
+  uncertainty: 2 pathogenic heterozygous mutations found
+- parameter: heterozygous NPPC mutations identified in the CNP ring
+  value: '2'
+  unit: mutations
+  conditions: both showed significant reductions in cGMP synthesis in functional assay
+  species: human
+  source_ref: hisadooliva2018
+  uncertainty: n=2 of 668 plus 29 families
+localization:
+- 'human growth plate: no published histology for any NPPC dosage disorder'
+- 'human plasma: CNP doubled (bocciardi2007) and NT-proCNP elevated (ko2015) in the two overexpression
+  cases'
+human_evidence: direct
+human_evidence_note: Two independent human chromosomal rearrangements at NPPC with measured circulating
+  CNP/NT-proCNP elevation and matching skeletal overgrowth, plus human loss-of-function NPPC mutations
+  with functional cGMP assays.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node; mouse transgenics are corroborative.
+confidence: A
+key_refs:
+- ref_id: bocciardi2007
+  pmid: '17373680'
+  first_author: Bocciardi R
+  year: 2007
+  type: primary
+  one_line_finding: t(2;7) near NPPC doubles plasma CNP and causes marfanoid overgrowth with skeletal
+    anomalies.
+- ref_id: ko2015
+  pmid: '25728306'
+  first_author: Ko JM
+  year: 2015
+  type: primary_abstract_only
+  one_line_finding: Independent t(1;2) 200 kb downstream of NPPC raises NT-proCNP and causes skeletal
+    overgrowth.
+- ref_id: hisadooliva2018
+  pmid: '28661490'
+  first_author: Hisado-Oliva A
+  year: 2018
+  type: primary
+  one_line_finding: Heterozygous NPPC CNP-ring mutations reduce cGMP synthesis and cause autosomal
+    dominant short stature with small hands.
+- ref_id: lauffer2022
+  pmid: '35233476'
+  first_author: Lauffer P
+  year: 2022
+  type: primary_abstract_only
+  one_line_finding: Loss-of-function NPR3 (CNP clearance receptor) variants cause extreme tall stature.
+open_questions:
+- g_l11path_006
 last_verified: '2026-08-05'

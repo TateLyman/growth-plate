@@ -1,7 +1,68 @@
 id: resting_chondrocyte
-name: Resting zone chondrocyte
+name: Resting (reserve) zone chondrocyte
+aliases:
+- reserve chondrocyte
+- RZ chondrocyte
 type: cell_type
 layer: L1
-stub: true
+stub: false
+summary: 'Resting chondrocytes are small, rounded cells lying singly or in pairs in abundant matrix at
+  the epiphyseal end of the plate. In mouse they include a PTHrP-expressing subpopulation with formal
+  skeletal stem cell properties: these cells self-renew and generate the columnar clones of the proliferative
+  zone, but they acquire that behaviour only after the secondary ossification centre forms, which means
+  the stem compartment is a postnatal acquisition rather than a property of the embryonic plate. The label
+  ''resting'' overstates their quiescence. A systematic review of the primary data finds that reported
+  labelling indices and even the operational definition of quiescence differ widely between studies, so
+  the zone contains cycling cells at rates that are not agreed. A separate mouse population at the plate
+  periphery, the borderline chondrocytes, leaves the cartilage altogether and becomes marrow stroma and
+  osteoblasts. In human tissue none of this has been demonstrated: the human resting zone is described
+  morphologically, and the only human proliferation data come from an in vitro thymidine labelling study
+  in which two of four specimens produced no labelled cells anywhere in the plate.'
+quantitative:
+- parameter: human specimens yielding no labelled cells after in vitro tritiated thymidine exposure
+  value: 2 of 4
+  unit: specimens
+  conditions: human growth plates, in vitro labelling
+  species: human
+  source_ref: thurston1985
+  uncertainty: author-reported; possible technical failure discussed by the authors
+localization:
+- 'mouse RZ: PTHrP+ skeletal stem cells confirmed by lineage tracing (mizuhashi2018)'
+- 'human RZ: morphology described, stem identity unconfirmed'
 human_evidence: absent
+human_evidence_note: No human study demonstrates stem or progenitor behaviour of resting zone chondrocytes;
+  the human evidence is descriptive histology only.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Stem identity rests on inducible Cre lineage tracing in mouse, and it is conditional
+  on secondary ossification centre formation - a developmental milestone whose human timing relative to
+  plate maturation has not been mapped onto this biology.
+confidence: C
+key_refs:
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: PTHrP+ resting zone chondrocytes are skeletal stem cells forming columnar clones after
+    secondary ossification centre formation.
+- ref_id: avijgan2026
+  pmid: '41795828'
+  first_author: Avijgan M
+  year: 2026
+  type: systematic_review
+  one_line_finding: Reported labelling indices and definitions of quiescence in the resting zone vary
+    widely across the primary literature.
+- ref_id: thurston1985
+  pmid: '3864550'
+  first_author: Thurston MN
+  year: 1985
+  type: primary_abstract_only
+  one_line_finding: In vitro thymidine labelling of human growth plates gave no labelled cells in two
+    of four subjects.
+open_questions:
+- g_l1arch_012
+pending_source: thurston1985
 last_verified: '2026-08-05'

@@ -1,7 +1,93 @@
 id: npr2_gain_of_function_tall
-name: NPR2 gain-of-function overgrowth
+name: NPR2 gain-of-function tall stature
+aliases:
+- NPR2 activating mutation overgrowth
+- GC-B activating mutation
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  NPR2 gain of function is the three-copy-equivalent end of the CNP dosage series and completes
+  the human dose-response without any pharmacology. Three mechanistically distinct classes of
+  activating mutation have been reported. p.Val883Met in the guanylyl cyclase domain generates
+  cGMP in the complete absence of CNP ligand; the three-generation family carrying it had tall
+  stature, scoliosis and macrodactyly of the great toes, and blood cGMP was elevated in the
+  patients - the transducer and the phenotype were measured in the same people.
+  p.Arg655Cys in the kinase homology domain instead amplifies the CNP response and its allosteric
+  stabilisation by ATP, wild-type and mutant receptors heterodimerise (a dominant-positive
+  mechanism), and the proband was extremely tall WITHOUT skeletal deformity; his plasma
+  NT-proCNP was reduced, i.e. increased receptor activity feeds back onto ligand production. A
+  third class is an activating deletion in the submembrane region. The phenotypic split between
+  V883M (tall with deformity) and R655C (tall without deformity) is the interesting part: it
+  suggests ligand-independent basal signalling and amplified ligand-dependent signalling are not
+  interchangeable in the growth plate. Adult heights in cm are reported only per-individual;
+  there is no pooled effect size for NPR2 gain of function, which is the single largest
+  quantitative hole in this axis.
+quantitative:
+- parameter: families with the NPR2 p.Val883Met activating allele in the defining report
+  value: 1 (three generations)
+  unit: families
+  conditions: tall stature, scoliosis, macrodactyly of the great toes; blood cGMP elevated
+  species: human
+  source_ref: miura2012
+  uncertainty: single pedigree
+- parameter: cGMP generation by mutant NPR2 in the absence of CNP
+  value: present (wild-type absent)
+  unit: not_applicable
+  conditions: HEK293A cells transfected with mutant vs wild-type Npr2 cDNA
+  species: in_vitro_human_cell
+  source_ref: miura2012
+  uncertainty: qualitative in abstract; no EC50 reported
+- parameter: plasma NT-proCNP in the NPR2 p.Arg655Cys proband
+  value: reduced
+  unit: not_applicable
+  conditions: marker of tissue CNP production; consistent with negative feedback from augmented receptor
+    activity
+  species: human
+  source_ref: hannema2013
+  uncertainty: single patient; absolute values not in abstract
+localization:
+- 'human growth plate: no published histology in NPR2 gain of function'
+human_evidence: direct
+human_evidence_note: Human pedigrees with functionally validated activating NPR2 alleles and, for
+  V883M, a measured downstream second messenger (blood cGMP) in the affected individuals.
+species_basis:
+- human
+- in_vitro_human_cell
+- mouse
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node; the transgenic mouse in the V883M study is corroborative,
+  not the basis of the human claim.
+confidence: B
+key_refs:
+- ref_id: miura2012
+  pmid: '22870295'
+  first_author: Miura K
+  year: 2012
+  type: primary
+  one_line_finding: NPR2 V883M is constitutively active; three-generation tall-stature family with
+    elevated blood cGMP.
+- ref_id: hannema2013
+  pmid: '24057292'
+  first_author: Hannema SE
+  year: 2013
+  type: primary
+  one_line_finding: 'NPR2 R655C in the kinase homology domain: extreme tall stature without skeletal
+    deformity; NT-proCNP reduced.'
+- ref_id: lauffer2020
+  pmid: '32282051'
+  first_author: Lauffer P
+  year: 2020
+  type: primary_abstract_only
+  one_line_finding: An activating deletion in the NPR2 submembrane region causes tall stature - a
+    third activating class.
+- ref_id: wang2015
+  pmid: '25703509'
+  first_author: Wang SR
+  year: 2015
+  type: primary
+  one_line_finding: One NPR2 gain-of-function variant found in tall individuals; NPR2 GoF may be
+    an underrecognised cause of tall stature.
+open_questions:
+- g_l11path_006
 last_verified: '2026-08-05'

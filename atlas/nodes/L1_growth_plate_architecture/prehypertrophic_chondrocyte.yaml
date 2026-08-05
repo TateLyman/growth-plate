@@ -1,7 +1,64 @@
 id: prehypertrophic_chondrocyte
 name: Prehypertrophic chondrocyte
+aliases:
+- maturing chondrocyte
+- PHZ chondrocyte
 type: cell_type
 layer: L1
-stub: true
+stub: false
+summary: 'Prehypertrophic chondrocytes are post-mitotic cells that have committed to terminal differentiation
+  but have not yet begun the swelling phase of enlargement. Quantitatively they occupy phase 1 of the
+  enlargement trajectory: in mouse they roughly triple their volume from about 600 fl to about 2000 fl
+  while holding dry mass density at the normal 0.183 pg/fl, so this is genuine biosynthetic hypertrophy
+  with proportionate increase in macromolecular content, not fluid uptake. The transition out of this
+  state is the growth-rate determining decision, because whether a cell goes on to complete phase 2 swelling
+  and the IGF-dependent phase 3 determines its final volume and therefore its contribution to elongation.
+  Structurally, unbiased stereological stratification is required to place the boundary, because the morphological
+  transition is gradual; the marker-based definition (Indian hedgehog, PTH1R) that is used routinely is
+  murine and has no validated human counterpart.'
+quantitative:
+- parameter: volume range occupied by phase 1 of enlargement
+  value: 600-2000
+  unit: fl
+  conditions: mouse proximal tibia; dry mass density held at 0.183 pg/fl
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: fold volume increase during phase 1
+  value: '3'
+  unit: fold
+  conditions: mouse proximal tibia
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+localization:
+- 'mouse PHZ: defined by marker expression and volume trajectory'
+- 'human PHZ: not separately defined'
 human_evidence: absent
+human_evidence_note: No human study defines or quantifies a prehypertrophic chondrocyte compartment separately
+  from the proliferative and hypertrophic zones.
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: Both the marker definition and the volume trajectory are murine; the compartment
+  has no operational human definition.
+confidence: C
+key_refs:
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Phase 1 of enlargement is a 3-fold volume increase at constant dry mass density, preceding
+    the swelling phase.
+- ref_id: breur1994
+  pmid: '7943757'
+  first_author: Breur GJ
+  year: 1994
+  type: primary
+  one_line_finding: Defines by stereology where in the rat proximal tibial plate chondrocyte volume and
+    shape change begins.
+open_questions:
+- g_l1arch_008
 last_verified: '2026-08-05'

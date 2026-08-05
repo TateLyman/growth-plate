@@ -1,7 +1,109 @@
 id: proliferative_chondrocyte
-name: Proliferative chondrocyte
+name: Proliferative zone chondrocyte
+aliases:
+- flattened chondrocyte
+- columnar chondrocyte
 type: cell_type
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Proliferative chondrocytes are flattened discs whose short axis lies along the growth direction,
+  stacked in clonal columns. They divide with their division plane perpendicular to the long bone axis
+  and then rotate as a doublet so that the daughters end up stacked, a manoeuvre that requires beta1 integrin
+  and N-cadherin mediated adhesion. In rat their cycle is long and its length is set by G1: total cycle
+  time ranges from 30.9 h in the fast proximal tibia to 76.3 h in the slow proximal radius, while S, G2
+  and M are essentially fixed at 3.4-6.1 h, 3.0 h and 0.5-0.6 h respectively. Beta1 integrin deletion
+  delays G1/S progression as well as blocking rotation, which links adhesion directly to cycle control.
+  Human proliferative chondrocytes have never had their cycle measured; the only human number is a derived
+  mean cycle time of roughly 20 days for the distal femur. In quantitative terms, the direct contribution
+  of these divisions to elongation is small (9% in the fast rat proximal tibia); their function is to
+  set the number of cells that will subsequently hypertrophy.'
+quantitative:
+- parameter: total cell cycle time
+  value: '30.9'
+  unit: h
+  conditions: proximal tibia, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not reported
+- parameter: total cell cycle time
+  value: '76.3'
+  unit: h
+  conditions: proximal radius, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: significantly different from all other plates, p<0.05
+- parameter: S phase duration
+  value: 3.4-6.1
+  unit: h
+  conditions: four rat growth plates, 28-day-old
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: range across plates
+- parameter: G2 phase duration
+  value: '3.0'
+  unit: h
+  conditions: four rat growth plates, 28-day-old
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not reported
+- parameter: M phase duration
+  value: 0.5-0.6
+  unit: h
+  conditions: four rat growth plates, 28-day-old
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: range across plates
+- parameter: cell volume at the start of hypertrophic enlargement
+  value: '600'
+  unit: fl
+  conditions: mouse proximal tibia, dissociated live cells
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+localization:
+- 'rat PZ: in vivo BrdU kinetics (wilsman1996a)'
+- 'mouse PZ: rotation and adhesion mechanism (aszodi2003, romereim2014, greer2024)'
+- 'human PZ: kinetics not measured'
+human_evidence: indirect
+human_evidence_note: Human proliferative chondrocytes have been counted per column and their cycle time
+  derived arithmetically (kember1976), but no direct human kinetic measurement exists.
+species_basis:
+- rat
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Cell-cycle structure is rodent-only and the derived human cycle time differs
+  from the rat by more than an order of magnitude.
+confidence: C
+key_refs:
+- ref_id: wilsman1996a
+  pmid: '8764865'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Rat PZ cycle time 30.9-76.3 h with the variation concentrated in G1; S, G2 and M durations
+    reported.
+- ref_id: aszodi2003
+  pmid: '14522949'
+  first_author: Aszodi A
+  year: 2003
+  type: primary
+  one_line_finding: Beta1 integrin is required both for post-mitotic rotation into columns and for normal
+    G1 progression and cytokinesis.
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: 24 cells per proliferative column in human distal femur with a derived ~20-day cycle
+    time.
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Chondrocytes enter hypertrophy at roughly 600 fl in mouse proximal tibia.
+open_questions:
+- g_l1arch_002
+- g_l1arch_012
 last_verified: '2026-08-05'

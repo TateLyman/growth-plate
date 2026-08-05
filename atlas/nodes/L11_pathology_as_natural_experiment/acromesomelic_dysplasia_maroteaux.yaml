@@ -1,9 +1,81 @@
 id: acromesomelic_dysplasia_maroteaux
-name: Acromesomelic dysplasia Maroteaux type
-type: phenotype
-layer: L11
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Acromesomelic dysplasia, Maroteaux type
 aliases:
 - AMDM
+- NPR2 biallelic loss of function
+- acromesomelic dwarfism
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  AMDM is the human NPR2 null experiment and the zero point of the CNP dosage series. Biallelic
+  loss-of-function NPR2 mutations - 21 distinct lesions in 21 families in the defining study,
+  comprising 4 nonsense, 4 frameshift, 2 splice-site and 11 missense changes - abolish or
+  severely reduce guanylyl cyclase B activity, so C-type natriuretic peptide can no longer raise
+  cGMP in growth plate chondrocytes. Three of the missense alleles were tested functionally and
+  had markedly deficient guanylyl cyclase activity, establishing the molecular consequence
+  directly rather than by inference. The cellular consequence in humans is not documented: no
+  AMDM growth plate has been described histologically, and everything known about which zone
+  fails comes from Npr2-deficient mice and rats. The phenotype is acromesomelic - the middle and
+  distal limb segments are disproportionately shortened relative to the proximal segment, the
+  mirror image of the rhizomelia of achondroplasia, which is itself a clue that CNP and FGFR3
+  signalling are not simply the same axis read in opposite directions. A downstream biochemical
+  signature is diagnostic: the AMDM proband in the Olney series had very high plasma CNP and
+  NT-proCNP with low IGF-I and evidence of GH resistance, i.e. ligand accumulates because the
+  receptor cannot clear or transduce it. NPR2 is also the target of the approved CNP analogue
+  vosoritide (L12), making AMDM the mechanistic negative control for that drug.
+quantitative:
+- parameter: families sequenced in the defining AMDM study
+  value: '21'
+  unit: families
+  conditions: 4 nonsense, 4 frameshift, 2 splice-site and 11 missense NPR2 mutations identified
+  species: human
+  source_ref: bartels2004
+  uncertainty: n=21 families
+- parameter: missense NPR2 alleles tested in a guanylyl cyclase assay
+  value: '3'
+  unit: alleles
+  conditions: all three markedly deficient in guanylyl cyclase activity
+  species: in_vitro_human_cell
+  source_ref: bartels2004
+  uncertainty: n=3
+- parameter: plasma CNP and NT-proCNP in the AMDM proband
+  value: very high (qualitative)
+  unit: not_applicable
+  conditions: single AMDM proband with low IGF-I and GH resistance; levels normal in heterozygous
+    carriers
+  species: human
+  source_ref: olney2006
+  uncertainty: single patient; absolute values not given in the abstract
+localization:
+- 'human growth plate: no published histology in AMDM (gap g_l11path_005)'
+- 'human plasma: CNP and NT-proCNP elevated in the affected proband, normal in heterozygous carriers
+  (olney2006)'
+human_evidence: direct
+human_evidence_note: Biallelic NPR2 loss of function with functional confirmation in patient-derived
+  alleles across 21 families; the cellular growth plate phenotype has never been observed in a human.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node; zonal mechanism is imported from rodent Npr2 models.
+confidence: A
+key_refs:
+- ref_id: bartels2004
+  pmid: '15146390'
+  first_author: Bartels CF
+  year: 2004
+  type: primary
+  one_line_finding: Biallelic NPR2 loss of function causes AMDM in 21 families; obligate carriers
+    are shorter than matched controls.
+- ref_id: olney2006
+  pmid: '16384845'
+  first_author: Olney RC
+  year: 2006
+  type: primary
+  one_line_finding: AMDM proband has very high plasma CNP/NT-proCNP with low IGF-I and GH resistance;
+    carriers are normal biochemically.
+open_questions:
+- g_l11path_005
+- g_l11path_006
+last_verified: '2026-08-05'
