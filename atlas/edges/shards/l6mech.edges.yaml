@@ -1,0 +1,376 @@
+edges:
+  - edge_id: e00001
+    source: hueter_volkmann_law
+    target: mechanical_modulation_growth
+    relation: required_for
+    sign: "+"
+    magnitude: "17.1% growth change per 0.1 MPa (range 9.2-23.9), 8-day sustained loading"
+    context: "rat, rabbit and calf caudal vertebrae and proximal tibiae, immature animals"
+    evidence_tier: T1
+    refs: [stokes2006]
+    confidence: C
+    notes: "The law is the quantitative statement of the process node; no human coefficient exists."
+
+  - edge_id: e00002
+    source: mechanical_modulation_growth
+    target: loading_effect_plate_height
+    relation: precedes
+    sign: "-"
+    magnitude: "hypertrophic zone height 87%, mean cell height 85%, cell height increment 78% of control under compression"
+    context: "rat caudal vertebra, 4 weeks at ~60% body weight"
+    evidence_tier: T1
+    refs: [stokes2002, stokes2007]
+    confidence: C
+    notes: "Compression alters zonal structure; distraction at the same magnitude does not."
+
+  - edge_id: e00003
+    source: static_vs_dynamic_loading
+    target: loading_effect_plate_height
+    relation: correlates_with
+    sign: biphasic
+    magnitude: "static and dynamic each reduced growth 19%, but only static reduced plate thickness, proliferative cells/column and hypertrophic cell height"
+    context: "rat caudal vertebra Cd7, 0.2 MPa mean, 0.1 Hz, 2 weeks"
+    evidence_tier: T1
+    refs: [valteau2011]
+    confidence: C
+    notes: "Waveform dissociates growth suppression from tissue damage."
+
+  - edge_id: e00004
+    source: strain_rate_dependence
+    target: static_vs_dynamic_loading
+    relation: required_for
+    sign: "+"
+    magnitude: "static loading gave higher lateral (p<0.001) and volumetric (p<=0.015) hypertrophic cell strain at equal mean stress and equal axial strain"
+    context: "pre-pubertal rat proximal tibial growth plate explants, stress-controlled"
+    evidence_tier: T1
+    refs: [zimmermann2017]
+    confidence: C
+    notes: "Viscoelastic creep is the mechanism that makes the static/dynamic distinction exist."
+
+  - edge_id: e00005
+    source: strain_magnitude_dependence
+    target: mechanical_modulation_growth
+    relation: correlates_with
+    sign: "-"
+    magnitude: "linear over approximately 0.02-0.2 MPa; slope 17.1%/0.1 MPa"
+    context: "rat, rabbit, calf; two anatomical sites"
+    evidence_tier: T1
+    refs: [stokes2006]
+    confidence: C
+
+  - edge_id: e00006
+    source: strain_frequency_dependence
+    target: mechanical_modulation_growth
+    relation: correlates_with
+    sign: unknown
+    magnitude: "0.1 and 1.0 Hz both reduced growth without histological change; 1.0 Hz with +/-0.14 MPa destroyed the plate"
+    context: "rat caudal vertebrae, 0.2 MPa mean, 15 days"
+    evidence_tier: T1
+    refs: [mnard2014]
+    confidence: D
+    notes: "Frequency and amplitude interact non-additively; sign of the frequency main effect is not established."
+
+  - edge_id: e00007
+    source: wolff_law
+    target: static_vs_dynamic_loading
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "Frost predicts intermittent loading drives cartilage growth and static loading suppresses it"
+    context: "theoretical, cartilage; thresholds quoted for bone only"
+    evidence_tier: T5
+    refs: [frost1979, frost2001]
+    confidence: speculative
+    gap_id: g_l6mech_004
+    notes: "Partly supported (tissue preservation) and partly contradicted (equal growth suppression at matched mean stress) by valteau2011."
+
+  - edge_id: e00008
+    source: primary_cilium_mechanosensing
+    target: mechanical_modulation_growth
+    relation: required_for
+    sign: "+"
+    magnitude: "Ift88 deletion disrupted ossification only beneath load-bearing compartments; immobilisation abolished the phenotype"
+    context: "mouse proximal tibia, AggrecanCreERT2;Ift88fl/fl, adolescent"
+    evidence_tier: T1
+    refs: [coveney2022]
+    confidence: C
+    notes: "The only candidate transducer with a complete load-plus-genetics-plus-unloading design."
+
+  - edge_id: e00009
+    source: piezo1_channel
+    target: primary_cilium_mechanosensing
+    relation: binds
+    sign: "+"
+    magnitude: "PIEZO1 colocalises with acetylated alpha-tubulin+ cilia; IFT88 knockdown feedback-upregulates PIEZO1 under stress"
+    context: "mouse growth plate chondrocytes, 100 kPa in vitro / 10 kPa caudal compression in vivo"
+    evidence_tier: T1
+    refs: [chen2025]
+    confidence: D
+    notes: "Colocalisation and epistasis, not a demonstrated physical interaction."
+
+  - edge_id: e00010
+    source: piezo1_channel
+    target: mechanical_modulation_growth
+    relation: required_for
+    sign: "-"
+    magnitude: "compression upregulates PIEZO1, driving GPX4 loss and ferroptosis; Col2a1-CreERT deletion slowed scoliosis"
+    context: "mouse vertebral growth plate chondrocytes"
+    evidence_tier: T1
+    refs: [chen2025a, brylka2024]
+    confidence: C
+    notes: "Readout is ossification and deformity progression, not growth rate; see g_l6mech_008."
+
+  - edge_id: e00011
+    source: trpv4_channel
+    target: mechanical_modulation_growth
+    relation: required_for
+    sign: "+"
+    magnitude: "loading-driven cartilage growth and joint morphogenesis abolished by TRPV4 inhibition"
+    context: "mouse embryonic hindlimb explants, mechanically stimulated culture; prenatal, not postnatal physis"
+    evidence_tier: T1
+    refs: [khatib2023]
+    confidence: C
+
+  - edge_id: e00012
+    source: integrin_beta1_chondrocyte
+    target: loading_effect_plate_height
+    relation: required_for
+    sign: "+"
+    magnitude: "conditional Itgb1 deletion abolishes the 90-degree chondrocyte rotation that forms columns"
+    context: "mouse cranial base explants, live confocal imaging"
+    evidence_tier: T1
+    refs: [greer2024]
+    confidence: C
+
+  - edge_id: e00013
+    source: cytoskeletal_tension_chondrocyte
+    target: integrin_beta1_chondrocyte
+    relation: required_for
+    sign: "+"
+    magnitude: "N-cadherin heterozygous loss rescues rotation failure in the N-cadherin mutant, placing integrin beta-1 downstream as the force generator"
+    context: "mouse growth plate proliferative zone"
+    evidence_tier: T1
+    refs: [greer2024]
+    confidence: D
+
+  - edge_id: e00014
+    source: focal_adhesion_kinase
+    target: cytoskeletal_tension_chondrocyte
+    relation: hypothesized_link
+    sign: "+"
+    magnitude: "no growth plate measurement; inferred from integrin engagement being a genuine load-transduction route in chondrocytes"
+    context: "growth plate, any species - untested"
+    evidence_tier: T5
+    refs: [dietmar2025]
+    confidence: speculative
+    gap_id: g_l6mech_008
+
+  - edge_id: e00015
+    source: yap_taz_chondrocyte
+    target: mechanical_modulation_growth
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: "no chondrocyte-specific Yap1/Wwtr1 deletion with a physeal loading challenge exists in any species"
+    context: "growth plate, any species - untested"
+    evidence_tier: T5
+    refs: [lee2025]
+    confidence: speculative
+    gap_id: g_l6mech_009
+
+  - edge_id: e00016
+    source: piezo2_channel
+    target: mechanical_modulation_growth
+    relation: hypothesized_link
+    sign: unknown
+    magnitude: "Col2a1-Cre Piezo2 deletion produced no endochondral phenotype where Piezo1 deletion produced a severe one"
+    context: "mouse; the direct test in the chondrocyte lineage was negative"
+    evidence_tier: T1
+    refs: [brylka2024]
+    confidence: speculative
+    gap_id: g_l6mech_007
+    notes: "Retained as a negative-result edge; PIEZO2's documented skeletal role is neuronal (xu2026_2)."
+
+  - edge_id: e00017
+    source: hueter_volkmann_law
+    target: guided_growth_tension_band
+    relation: required_for
+    sign: "+"
+    magnitude: "correction 0.67 deg/month (mLDFA) and 0.43 deg/month (mMPTA); 68.7% reach a neutral axis"
+    context: "654 modulations in 313 children, distal femur and proximal tibia"
+    evidence_tier: T1
+    refs: [tolk2026, roelen2026]
+    confidence: A
+    notes: "Human efficacy is established; the mechanical dose is not measured."
+
+  - edge_id: e00018
+    source: guided_growth_tension_band
+    target: physeal_stress_in_vivo
+    relation: correlates_with
+    sign: unknown
+    magnitude: "implant imposes local static stress and removes cyclic loading at insertion; tension rises contralaterally"
+    context: "four human distal femoral epiphyses, personalised FE driven by instrumented gait"
+    evidence_tier: T1
+    refs: [hucke2023]
+    confidence: D
+    notes: "Model output; authors state models are not fully participant-specific."
+
+  - edge_id: e00019
+    source: hueter_volkmann_law
+    target: scoliosis_vertebral_growth
+    relation: required_for
+    sign: "+"
+    magnitude: "frontal-plane simulation using the 15%/0.1 MPa vertebral coefficient reproduces observed curve progression rates"
+    context: "human adolescent idiopathic scoliosis, simulated; animal coefficient imported"
+    evidence_tier: T5
+    refs: [stokes2006a, stokes2006]
+    confidence: D
+
+  - edge_id: e00020
+    source: hueter_volkmann_law
+    target: blount_disease
+    relation: required_for
+    sign: "+"
+    magnitude: "medial compression suppresses medial proximal tibial growth; obesity is the dominant risk factor"
+    context: "human proximal tibia; guided growth performs worse here than in idiopathic deformity"
+    evidence_tier: T1
+    refs: [coskun2026, tolk2026]
+    confidence: C
+
+  - edge_id: e00021
+    source: physeal_bar_formation
+    target: guided_growth_tension_band
+    relation: inhibits
+    sign: "-"
+    magnitude: "growth arrest in 30.1% of 332 prospectively followed physeal fractures; 86% after distal femoral fractures"
+    context: "human paediatric physeal injury; the accidental version of tethering"
+    evidence_tier: T1
+    refs: [hooper2024]
+    confidence: B
+    notes: "Bar formation is the irreversible endpoint that bounds every growth-modulation procedure."
+
+  - edge_id: e00022
+    source: physeal_bar_formation
+    target: epiphysiodesis
+    relation: correlates_with
+    sign: "+"
+    magnitude: "surgically induced arrest is permanent at 28-40 years of follow-up"
+    context: "human distal femur and proximal tibia"
+    evidence_tier: T1
+    refs: [laufer2025]
+    confidence: A
+    notes: "Epiphysiodesis is the deliberate form of the same lesion."
+
+  - edge_id: e00023
+    source: distraction_rate_dose_response
+    target: distraction_osteogenesis
+    relation: required_for
+    sign: "+"
+    magnitude: "0.5 mm/day premature consolidation, 1.0 mm/day optimal, 2.0 mm/day soft-tissue injury; higher frequency monotonically better"
+    context: "canine tibia, Ilizarov circular fixator, open osteotomy and closed osteoclasis"
+    evidence_tier: T1
+    refs: [ilizarov1989, ilizarov1989a]
+    confidence: C
+
+  - edge_id: e00024
+    source: gravity_posture_spinal_loading
+    target: diurnal_stature_variation
+    relation: required_for
+    sign: "+"
+    magnitude: "19.3 mm mean circadian variation in adults (1.1% of stature); 2.0-4.6 mm across the day in 12-14 year old boys"
+    context: "human, precision stadiometry to 1 mm"
+    evidence_tier: T1
+    refs: [tyrrell1985, whitehouse1974]
+    confidence: A
+    notes: "Attributed to intervertebral disc creep; the physeal share has never been partitioned (g_l6mech_014)."
+
+  - edge_id: e00025
+    source: gravity_posture_spinal_loading
+    target: spaceflight_microgravity_growth
+    relation: required_for
+    sign: "+"
+    magnitude: "stature up to +3% early in flight, plateauing, fully reversed postflight"
+    context: "nine ISS crew, adults with closed physes"
+    evidence_tier: T1
+    refs: [young2023]
+    confidence: B
+
+  - edge_id: e00026
+    source: disuse_growth_effect
+    target: primary_cilium_mechanosensing
+    relation: inhibits
+    sign: "-"
+    magnitude: "limb immobilisation abolished the Ift88-null growth plate phenotype"
+    context: "mouse adolescent proximal tibia"
+    evidence_tier: T1
+    refs: [coveney2022]
+    confidence: C
+    notes: "The unloading control that makes the ciliary result mechanical rather than developmental."
+
+  - edge_id: e00027
+    source: sport_specific_loading_human
+    target: gymnastics_stature_effect
+    relation: correlates_with
+    sign: "-"
+    magnitude: "PHV 5.48 vs 8.0 cm/yr (gymnasts vs swimmers); within-sport gradient in sitting height velocity 2.3 vs 3.1 cm/yr"
+    context: "human female adolescents, prospective cohorts"
+    evidence_tier: T1
+    refs: [theintz1993, daly2005]
+    confidence: D
+    notes: "Association is robust; causal attribution to mechanical loading is not (malina2013, thomis2005)."
+
+  - edge_id: e00028
+    source: sport_specific_loading_human
+    target: mechanical_modulation_growth
+    relation: correlates_with
+    sign: biphasic
+    magnitude: "gymnast distal radius shortens (positive ulnar variance) under compression; 24-week jumping gave 4.20 vs 2.48 cm height gain"
+    context: "human children and adolescents; compressive vs impact loading"
+    evidence_tier: T1
+    refs: [difiori2006, wang2025]
+    confidence: C
+    notes: "Human sign reversal between sustained compressive and intermittent impact loading, mirroring the static/dynamic animal result."
+
+  - edge_id: e00029
+    source: physeal_stress_in_vivo
+    target: hueter_volkmann_law
+    relation: required_for
+    sign: unknown
+    magnitude: "the applied-stress range in the animal experiments was approximately 0.02-0.2 MPa; the human in vivo value is unmeasured"
+    context: "human, any physis"
+    evidence_tier: T1
+    refs: [hucke2023, stokes2006]
+    confidence: D
+    notes: "Without this term the animal coefficient cannot be converted into a human prediction."
+
+  - edge_id: e00030
+    source: scoliosis_vertebral_growth
+    target: piezo1_channel
+    relation: activates
+    sign: "+"
+    magnitude: "compression upregulates PIEZO1 in vertebral growth plate chondrocytes; local inhibition slows curve progression"
+    context: "mouse vertebral growth plate, caudal compression 10 kPa"
+    evidence_tier: T1
+    refs: [chen2025a, chen2025]
+    confidence: C
+
+  - edge_id: e00031
+    source: bed_rest_growth_human
+    target: disuse_growth_effect
+    relation: correlates_with
+    sign: unknown
+    magnitude: "no controlled paediatric bed rest study with a growth endpoint located; adult protocols only"
+    context: "human, skeletally mature subjects only"
+    evidence_tier: T5
+    refs: [young2023, tyrrell1985]
+    confidence: D
+    notes: "Node retained to mark the missing human unloading experiment (g_l6mech_013)."
+
+  - edge_id: e00032
+    source: static_vs_dynamic_loading
+    target: distraction_rate_dose_response
+    relation: correlates_with
+    sign: "+"
+    magnitude: "at fixed 1.0 mm/day, 60 increments/day outperformed 4/day and 1/day"
+    context: "canine tibia; the rhythm arm is the distraction analogue of loading frequency"
+    evidence_tier: T1
+    refs: [ilizarov1989]
+    confidence: D

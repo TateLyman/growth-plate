@@ -1,7 +1,100 @@
 id: proteoglycan_turnover
-name: Proteoglycan turnover
+name: Proteoglycan turnover in cartilage and growth plate
+aliases:
+- aggrecan turnover
+- proteoglycan half-life
 type: process
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Proteoglycan turnover in cartilage is measured either by radiosulphate pulse-chase in explants
+  or by aspartate racemization, which reads the molecular age of a protein pool directly. In ADULT HUMAN
+  ARTICULAR cartilage the numbers are unambiguous: the aggrecan large monomer has a turnover constant
+  of 0.206/year, a half-life of 3.4 years, whereas the free G1 hyaluronan-binding region has a constant
+  of 0.027/year and a half-life of 25 years. The G1 fragments therefore accumulate for decades and progressively
+  occupy hyaluronan binding sites, which is a mechanistic explanation for the age-related decline in aggregation
+  seen by quantitative electron microscopy. In the GROWTH PLATE the picture is zonal and much faster but
+  has never been converted into a half-life: in bovine distal tibial explants, rates of both aggrecan
+  synthesis and breakdown are highest in the resting/proliferative third and lowest in the lower hypertrophic
+  third, and are higher in calf than fetal tissue. How aggrecan is actually removed before mineralization
+  is unresolved: mice with MMP-cleavage-resistant aggrecan grow normally without accumulating aggrecan,
+  and Adamts4/Adamts5 double-null mice are physiologically normal, so neither protease family is required.'
+quantitative:
+- parameter: Aggrecan large monomer turnover constant, adult human articular cartilage
+  value: '0.206'
+  unit: per year (half-life 3.4 years)
+  conditions: A1D1 fraction, aspartate racemization
+  species: human
+  source_ref: maroudas1998
+  uncertainty: not reported
+- parameter: Free G1 hyaluronan-binding region turnover constant
+  value: '0.027'
+  unit: per year (half-life 25 years)
+  conditions: adult human articular cartilage
+  species: human
+  source_ref: maroudas1998
+  uncertainty: not reported
+- parameter: Zonal ranking of aggrecan synthesis and breakdown rate in growth plate
+  value: RZ/PZ > upper HZ > lower HZ
+  unit: rank order
+  conditions: bovine distal tibia explants, 35S-sulphate incorporation and 3-day release
+  species: bovine
+  source_ref: shapses1994
+  uncertainty: rank order only; no half-life derived
+- parameter: Aggregation-competent fraction of newly synthesised growth plate proteoglycan
+  value: ~90
+  unit: '%'
+  conditions: bovine growth plate explants
+  species: bovine
+  source_ref: shapses1994
+  uncertainty: not reported
+localization:
+- 'bovine growth plate RZ/PZ: fastest aggrecan turnover (shapses1994)'
+- 'human growth plate: no turnover measurement exists'
+human_evidence: indirect
+human_evidence_note: Human turnover data are from adult articular cartilage; no human growth plate proteoglycan
+  turnover measurement was located.
+species_basis:
+- human
+- bovine
+- mouse
+translation_risk: high
+translation_risk_reason: A 3.4-year aggrecan half-life measured in adult articular cartilage cannot be
+  transferred to a tissue that is entirely replaced every few weeks; the physeal rate is unknown.
+confidence: C
+key_refs:
+- ref_id: maroudas1998
+  pmid: '9466821'
+  first_author: Maroudas A
+  year: 1998
+  type: primary
+  one_line_finding: Aggrecan monomer half-life 3.4 years and free G1 half-life 25 years in adult human
+    articular cartilage by aspartate racemization
+- ref_id: shapses1994
+  pmid: '8061922'
+  first_author: Shapses SA
+  year: 1994
+  type: primary
+  one_line_finding: Aggrecan synthesis and breakdown are both fastest in the resting/proliferative third
+    of the bovine growth plate
+- ref_id: little2005
+  pmid: '15798221'
+  first_author: Little CB
+  year: 2005
+  type: primary
+  one_line_finding: MMP-cleavage-resistant aggrecan mice grow normally and do not accumulate aggrecan
+- ref_id: majumdar2007
+  pmid: '17968948'
+  first_author: Majumdar MK
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Adamts4/Adamts5 double-null mice are physiologically normal
+- ref_id: buckwalter1994
+  pmid: '7919527'
+  first_author: Buckwalter JA
+  year: 1994
+  type: review
+  one_line_finding: Quantitative EM shows the number of aggrecan monomers per aggregate and the proportion
+    of aggregating monomers both fall with age
+open_questions:
+- g_l5matrix_007
 last_verified: '2026-08-05'

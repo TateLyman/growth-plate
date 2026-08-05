@@ -1,7 +1,77 @@
 id: comp_protein
-name: COMP
+name: Cartilage oligomeric matrix protein (COMP)
+aliases:
+- COMP
+- thrombospondin-5
+- TSP-5
 type: protein
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'COMP is a pentameric extracellular glycoprotein of the thrombospondin family, assembled through
+  a five-stranded parallel coiled coil that encloses an axial channel, with each of the five arms ending
+  in a C-terminal globular domain; native molecules appear by electron microscopy as five-armed bouquets.
+  The arms contain calcium-binding thrombospondin type 3 repeats, and essentially all pseudoachondroplasia
+  and many multiple epiphyseal dysplasia mutations fall in these repeats or in the C-terminal domain and
+  abolish calcium binding. The consequence is not loss of an extracellular function but a proteinopathy:
+  misfolded COMP is retained in the chondrocyte endoplasmic reticulum, and PSACH is a disease of ER stress
+  and chondrocyte death rather than of matrix deficiency. This is why COMP mutations cause severe disproportionate
+  short stature whereas Comp-null mice have no skeletal phenotype - a dominant-negative/gain-of-toxicity
+  mechanism that is the opposite of the aggrecan and collagen X haploinsufficiency logic elsewhere in
+  this layer. COMP also participates in matrix assembly, binding collagen IX and cooperating with it in
+  fibril organisation.'
+quantitative:
+- parameter: COMP oligomerisation state
+  value: '5'
+  unit: subunits per molecule (parallel coiled coil)
+  conditions: crystal structure of the coiled-coil domain; EM of native protein
+  species: rat
+  source_ref: malashkevich1996
+  uncertainty: structural constant
+localization:
+- 'cartilage interterritorial matrix: COMP distributed with distinct zonal pattern (ishii2006)'
+- 'chondrocyte endoplasmic reticulum in PSACH: mutant COMP retained (thur2001)'
+- 'human growth plate zonal COMP: not quantified in this sweep'
+human_evidence: direct
+human_evidence_note: COMP mutations are a directly characterised human dominant skeletal dysplasia series
+  (pseudoachondroplasia and MED) with defined molecular mechanism.
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: low
+translation_risk_reason: The disease mechanism was defined in human patients and human chondrocytes; the
+  mouse null is uninformative precisely because the mechanism is dominant-negative.
+confidence: A
+key_refs:
+- ref_id: briggs1995
+  pmid: '7670472'
+  first_author: Briggs MD
+  year: 1995
+  type: primary_abstract_only
+  one_line_finding: COMP mutations cause both pseudoachondroplasia and multiple epiphyseal dysplasia
+- ref_id: thur2001
+  pmid: '11084047'
+  first_author: Thur J
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: PSACH and MED mutations in the COMP thrombospondin repeats abolish calcium binding
+- ref_id: mrgelin1992
+  pmid: '1556122'
+  first_author: Morgelin M
+  year: 1992
+  type: primary_abstract_only
+  one_line_finding: Native COMP is a five-armed bouquet with a globular domain at the end of each arm
+- ref_id: malashkevich1996
+  pmid: '8864111'
+  first_author: Malashkevich VN
+  year: 1996
+  type: primary_abstract_only
+  one_line_finding: COMP oligomerises through a five-stranded parallel coiled coil enclosing an axial
+    channel
+- ref_id: ishii2006
+  pmid: '16778685'
+  first_author: Ishii Y
+  year: 2006
+  type: primary_abstract_only
+  one_line_finding: COMP shows distinct zonal localisation in cartilaginous tissue
 last_verified: '2026-08-05'

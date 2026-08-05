@@ -1,9 +1,71 @@
 id: perlecan_hspg2
-name: Perlecan
-type: protein
-layer: L5
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Perlecan (HSPG2)
 aliases:
 - HSPG2
+- perlecan
+- heparan sulphate proteoglycan 2
+type: protein
+layer: L5
+stub: false
+summary: 'Perlecan is a very large modular heparan sulphate proteoglycan that is a core component of the
+  cartilage pericellular matrix as well as of basement membranes. In cartilage it does two things. Structurally
+  it maintains cartilage integrity: perlecan-null mice die perinatally with severe chondrodysplasia, disorganised
+  growth plate columns and defective cartilage matrix. Functionally it is a growth-factor reservoir: FGF-2
+  is stored bound to perlecan heparan sulphate in the articular pericellular matrix and released on mechanical
+  loading, making perlecan a mechanotransducer rather than a passive scaffold. The human allelic series
+  is unusually informative because it is a dose series: complete functional null HSPG2 mutations cause
+  dyssegmental dysplasia Silverman-Handmaker type, which is perinatal lethal, while hypomorphic mutations
+  that reduce but do not abolish perlecan cause Schwartz-Jampel syndrome (chondrodystrophic myotonia)
+  with short stature and myotonia compatible with survival. Perlecan is therefore dosage-sensitive in
+  humans across the full range from lethal to viable.'
+quantitative:
+- parameter: Human HSPG2 allele dose series
+  value: functional null = DDSH (perinatal lethal); hypomorphic = Schwartz-Jampel (viable)
+  unit: qualitative allelic series
+  conditions: human genetics
+  species: human
+  source_ref: arikawahirasaw2001
+  uncertainty: no quantitative protein level given
+localization:
+- 'cartilage pericellular matrix: perlecan present and FGF-2 bound to its heparan sulphate (vincent2007)'
+- 'mouse growth plate: perlecan required for columnar organisation (costell1999)'
+human_evidence: direct
+human_evidence_note: Two distinct human HSPG2 loss-of-function syndromes (DDSH and Schwartz-Jampel) define
+  a genotype-dose-phenotype relationship directly in humans.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human null and hypomorph phenotypes mirror the mouse null, so mouse and human
+  agree.
+confidence: A
+key_refs:
+- ref_id: arikawahirasaw2001
+  pmid: '11279527'
+  first_author: Arikawa-Hirasawa E
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Functional null HSPG2 mutations cause dyssegmental dysplasia Silverman-Handmaker type
+    in humans
+- ref_id: nicole2000
+  pmid: '11101850'
+  first_author: Nicole S
+  year: 2000
+  type: primary_abstract_only
+  one_line_finding: Hypomorphic HSPG2 mutations reducing but not abolishing perlecan cause Schwartz-Jampel
+    syndrome
+- ref_id: costell1999
+  pmid: '10579729'
+  first_author: Costell M
+  year: 1999
+  type: primary_abstract_only
+  one_line_finding: Perlecan-null mice have severe chondrodysplasia with disorganised growth plate columns,
+    showing perlecan maintains cartilage integrity
+- ref_id: vincent2007
+  pmid: '17368052'
+  first_author: Vincent TL
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: FGF-2 is bound to perlecan heparan sulphate in the articular cartilage pericellular
+    matrix and released on load
+last_verified: '2026-08-05'

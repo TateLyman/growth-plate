@@ -1,7 +1,73 @@
 id: link_protein_hapln1
-name: Link protein HAPLN1
+name: Link protein (HAPLN1)
+aliases:
+- HAPLN1
+- CRTL1
+- cartilage link protein
 type: protein
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Link protein is the small glycoprotein that clamps the aggrecan G1 domain onto hyaluronan, converting
+  a reversible interaction into a stable ternary complex. Hapln1-null mice are dwarfed with craniofacial
+  abnormalities, so link protein is required for normal longitudinal growth in vivo. Its stoichiometry
+  is not one-to-one and it changes with age in a way that destabilises the aggregate: in human articular
+  cartilage from individuals over 13 years, the molar concentration of link protein is LOWER than that
+  of the aggrecan G1 domain in every sequential extract, and particularly so in the 1 M guanidinium fraction,
+  so a substantial fraction of aggregates in adult human cartilage are link-protein-deficient and therefore
+  unstable. Link protein also fragments with age, but fragmentation does not change its extractability.
+  The consequence, stated bluntly by the authors, is that the textbook model of the proteoglycan aggregate
+  - derived from immature animal cartilage where a single PBS extraction recovers most components - does
+  not describe adult human cartilage, which contains a heterogeneous population of complexes with varying
+  stability. Quantitative electron microscopy agrees: monomers per aggregate and the proportion of aggregating
+  monomers both fall with age.'
+quantitative:
+- parameter: Molar ratio of link protein to aggrecan G1 domain, human cartilage >13 years
+  value: <1
+  unit: mol:mol
+  conditions: sequential PBS / HA oligosaccharide / 1-4 M guanidinium extraction of normal human articular
+    cartilage, newborn to 63 years
+  species: human
+  source_ref: wells2003
+  uncertainty: consistently below unity in all extracts; most marked in the 1 M GuHCl extract
+- parameter: Direction of change in monomers per aggregate with age
+  value: decreasing
+  unit: qualitative
+  conditions: quantitative electron microscopy of human and animal hyaline cartilage proteoglycans
+  species: multiple
+  source_ref: buckwalter1994
+  uncertainty: review of quantitative EM series
+localization:
+- 'human articular cartilage: link protein present but substoichiometric to aggrecan G1 after age 13 (wells2003)'
+- 'mouse growth plate: link protein required for normal growth (watanabe1999)'
+- 'human growth plate zonal link protein: unmeasured'
+human_evidence: direct
+human_evidence_note: Link protein and aggrecan G1 molar concentrations were measured directly in human
+  articular cartilage across a newborn-to-63-year age range.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: Human biochemistry is direct but articular; the growth phenotype is murine.
+confidence: B
+key_refs:
+- ref_id: wells2003
+  pmid: '12431185'
+  first_author: Wells T
+  year: 2003
+  type: primary
+  one_line_finding: In human cartilage over 13 years old link protein is present at lower molar concentration
+    than aggrecan G1, so aggregates are heterogeneous and unstable
+- ref_id: watanabe1999
+  pmid: '9988279'
+  first_author: Watanabe H
+  year: 1999
+  type: primary_abstract_only
+  one_line_finding: Link protein (Hapln1) null mice are dwarfed with craniofacial abnormalities
+- ref_id: buckwalter1994
+  pmid: '7919527'
+  first_author: Buckwalter JA
+  year: 1994
+  type: review
+  one_line_finding: Quantitative EM shows the number of aggrecan monomers per aggregate and the proportion
+    of aggregating monomers both fall with age
 last_verified: '2026-08-05'

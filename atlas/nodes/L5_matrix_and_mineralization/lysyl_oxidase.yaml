@@ -1,9 +1,59 @@
 id: lysyl_oxidase
-name: Lysyl oxidase
-type: protein
-layer: L5
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Lysyl oxidase (LOX)
 aliases:
 - LOX
+- protein-lysine 6-oxidase
+- LOXL1-4
+type: protein
+layer: L5
+stub: false
+summary: 'Lysyl oxidase is the copper- and lysine-tyrosylquinone-dependent amine oxidase that initiates
+  all covalent collagen and elastin crosslinking by converting telopeptide lysine and hydroxylysine to
+  allysine. It is the single enzymatic step on which the entire mechanical competence of the cartilage
+  collagen network depends, and it is irreversibly inhibited by beta-aminopropionitrile, the lathyrogen.
+  Lox-null mice die perinatally with aortic aneurysm, cardiovascular dysfunction and diaphragmatic defects;
+  the paralogue Loxl3 null has cleft palate and spinal deformity, so the family has partially distinct
+  skeletal roles. Beyond crosslinking, LOX is hypoxia-induced and the growth plate is a steep oxygen gradient,
+  which makes zonal LOX activity a plausible but untested regulator of the zonal stiffness gradient. This
+  node is deliberately thin because the evidence is thin: no zone-resolved LOX expression, activity or
+  crosslink-density measurement in growth plate cartilage of any species was located in this sweep, and
+  there is no human LOX-deficiency chondrodysplasia. Everything specific to the physis here is inference
+  from vascular and tendon biology.'
+quantitative:
+- parameter: Survival of Lox-null mice
+  value: perinatal lethal
+  unit: qualitative
+  conditions: constitutive Lox null, aortic aneurysm and diaphragmatic defect
+  species: mouse
+  source_ref: mki2002
+  uncertainty: not reported
+localization:
+- 'growth plate zones: LOX expression and activity not localised in any species located in this sweep'
+human_evidence: absent
+human_evidence_note: No human LOX loss-of-function growth plate phenotype was located; human LOX variants
+  are associated with thoracic aortic aneurysm.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: The only in vivo loss-of-function data are murine and vascular, and the growth
+  plate role is inferred from the general chemistry of collagen crosslinking.
+confidence: E
+key_refs:
+- ref_id: mki2002
+  pmid: '12417550'
+  first_author: Maki JM
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: Lox-null mice die perinatally with aortic aneurysm and diaphragmatic defects from
+    failed collagen and elastin crosslinking
+- ref_id: eyre2002
+  pmid: '11879535'
+  first_author: Eyre D
+  year: 2002
+  type: review
+  one_line_finding: Cartilage collagen II is crosslinked head-to-tail by hydroxylysyl pyridinoline at
+    two telopeptide-to-helix sites; collagen IX carries at least six crosslink sites all occupied in the
+    matrix pool
+open_questions:
+- g_l5matrix_009
+last_verified: '2026-08-05'

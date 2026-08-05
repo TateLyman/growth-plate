@@ -1,7 +1,71 @@
 id: decorin_protein
-name: Decorin
+name: Decorin (DCN)
+aliases:
+- DCN
+- decorin
+- PG-S2
 type: protein
 layer: L5
-stub: true
+stub: false
+summary: 'Decorin is a class I small leucine-rich proteoglycan carrying a single chondroitin/dermatan
+  sulphate chain whose horseshoe-shaped leucine-rich repeat core binds the collagen fibril surface and
+  limits lateral fibril growth. Decorin-null mice have abnormally coarse and irregular collagen fibrils
+  with skin fragility, the founding demonstration that a SLRP sets fibril diameter in vivo. In cartilage
+  decorin is not distributed uniformly over fibrils: decorin-bearing and collagen IX-bearing fibrils are
+  biochemically distinct subpopulations within the same mammalian cartilage, so the fibril network is
+  compositionally heterogeneous at the level of individual fibrils. Decorin also sequesters TGF-beta.
+  Mechanically its contribution is second to biglycan''s in bone: in single and double knockouts, Bgn
+  deletion but not Dcn deletion reduces trabecular bone mass, but both reduce NMR-measured bound water
+  and fracture toughness and raise extrafibrillar matrix modulus - and that modulus effect disappears
+  on dehydration, showing the SLRPs act mechanically through retained water. Decorin is upregulated in
+  biglycan-null mice, indicating partial compensation. No human decorin-deficiency growth phenotype is
+  established.'
+quantitative:
+- parameter: Trabecular bone mass change in Dcn-null mice
+  value: '0'
+  unit: detectable change
+  conditions: single knockout; Bgn-null and Bgn/Dcn double-null do lose trabecular bone
+  species: mouse
+  source_ref: hua2025
+  uncertainty: negative result within the same study design
+- parameter: Bound water change in Dcn-null bone by low-field NMR
+  value: decreased
+  unit: direction only; most marked in Bgn KO and double KO
+  conditions: low-field NMR of mouse bone
+  species: mouse
+  source_ref: hua2025
+  uncertainty: magnitude not extracted
+localization:
+- 'cartilage fibril subpopulations: decorin-bearing fibrils biochemically distinct from collagen IX-bearing
+  fibrils (hagg1998)'
+- 'human growth plate zonal decorin: not established'
 human_evidence: absent
+human_evidence_note: No human DCN loss-of-function growth phenotype was located in this sweep.
+species_basis:
+- mouse
+- bovine
+translation_risk: high
+translation_risk_reason: All functional data are murine knockouts; human decorin biology in the physis
+  is untested.
+confidence: C
+key_refs:
+- ref_id: danielson1997
+  pmid: '9024701'
+  first_author: Danielson KG
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: Decorin-null mice have coarse irregular collagen fibrils and fragile skin
+- ref_id: hua2025
+  pmid: '39743559'
+  first_author: Hua R
+  year: 2025
+  type: primary
+  one_line_finding: Bgn but not Dcn deletion lowers trabecular bone mass; both lower NMR bound water and
+    fracture toughness, and raise extrafibrillar modulus in a hydration-dependent way
+- ref_id: hagg1998
+  pmid: '9660881'
+  first_author: Hagg R
+  year: 1998
+  type: primary
+  one_line_finding: Decorin and collagen IX occupy biochemically distinct cartilage fibril subpopulations
 last_verified: '2026-08-05'

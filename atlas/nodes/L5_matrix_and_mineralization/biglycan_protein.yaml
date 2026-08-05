@@ -1,7 +1,77 @@
 id: biglycan_protein
-name: Biglycan
+name: Biglycan (BGN)
+aliases:
+- BGN
+- biglycan
+- PG-S1
 type: protein
 layer: L5
-stub: true
+stub: false
+summary: 'Biglycan is the class I SLRP most closely related to decorin, differing in carrying two rather
+  than one glycosaminoglycan chain, and it is the more important of the two for bone. Biglycan-null mice
+  have reduced bone mass and shortened long bones with an osteoporosis-like phenotype that worsens with
+  age, attributed to defective marrow stromal cell function. Direct comparison of single and double knockouts
+  shows the hierarchy: Bgn deletion but not Dcn deletion reduces trabecular bone mass, with the double
+  knockout worst; both genotypes lose NMR-measured bound water and fracture toughness, with the largest
+  losses in Bgn-null and double-null; and AFM shows decreased in situ permanent energy dissipation with
+  INCREASED elastic modulus in the extrafibrillar matrix, an effect abolished by dehydration. So the SLRPs
+  make bone tougher, not stiffer, by holding water. Decorin is markedly upregulated in Bgn-null mice while
+  biglycan is only modestly upregulated in Dcn-null mice, confirming biglycan is the dominant partner.
+  Biglycan is X-linked in humans, and BGN variants cause Meester-Loeys syndrome (an X-linked aortopathy),
+  but no human biglycan short-stature syndrome is established.'
+quantitative:
+- parameter: Trabecular bone mass in Bgn-null mice
+  value: decreased
+  unit: direction; further decreased in Bgn/Dcn double null
+  conditions: micro-CT of knockout mouse bone
+  species: mouse
+  source_ref: hua2025
+  uncertainty: magnitude not extracted
+- parameter: Fracture toughness, Bgn KO and Bgn/Dcn dKO versus Dcn KO
+  value: reduced
+  unit: direction only
+  conditions: mouse bone fracture toughness testing
+  species: mouse
+  source_ref: hua2025
+  uncertainty: magnitude not extracted
+- parameter: Extrafibrillar matrix elastic modulus in Bgn/Dcn deficient bone (hydrated)
+  value: increased
+  unit: direction; effect abolished on dehydration
+  conditions: high-resolution AFM in situ
+  species: mouse
+  source_ref: hua2025
+  uncertainty: magnitude not extracted
+localization:
+- 'mouse bone extrafibrillar matrix: biglycan-dependent water retention demonstrated by AFM and NMR (hua2025)'
+- 'human growth plate zonal biglycan: not established'
 human_evidence: absent
+human_evidence_note: No human BGN loss-of-function growth plate phenotype was located; the described human
+  BGN disease is aortic.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Entirely murine; the human X-linked BGN phenotype does not primarily involve
+  longitudinal growth.
+confidence: C
+key_refs:
+- ref_id: xu1998
+  pmid: '9731537'
+  first_author: Xu T
+  year: 1998
+  type: primary_abstract_only
+  one_line_finding: Biglycan-null mice have reduced bone mass and shortened long bones, an osteoporosis-like
+    phenotype
+- ref_id: hua2025
+  pmid: '39743559'
+  first_author: Hua R
+  year: 2025
+  type: primary
+  one_line_finding: Bgn but not Dcn deletion lowers trabecular bone mass; both lower NMR bound water and
+    fracture toughness, and raise extrafibrillar modulus in a hydration-dependent way
+- ref_id: danielson1997
+  pmid: '9024701'
+  first_author: Danielson KG
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: Decorin-null mice have coarse irregular collagen fibrils and fragile skin
 last_verified: '2026-08-05'

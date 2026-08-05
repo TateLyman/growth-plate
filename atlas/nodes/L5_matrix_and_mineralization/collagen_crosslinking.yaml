@@ -1,7 +1,89 @@
 id: collagen_crosslinking
-name: Collagen crosslinking
+name: Collagen crosslinking in cartilage
+aliases:
+- pyridinoline crosslink
+- hydroxylysyl pyridinoline
+- HP/LP crosslinks
 type: process
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Cartilage collagen owes its tensile strength to covalent crosslinks formed by lysyl oxidase,
+  which oxidatively deaminates specific telopeptide lysine and hydroxylysine residues to aldehydes that
+  then condense with helical residues on neighbouring molecules. In cartilage the pathway is the hydroxylysine
+  route, so divalent ketoimines mature into the trivalent 3-hydroxypyridinium crosslinks hydroxylysyl
+  pyridinoline (HP) and lysyl pyridinoline (LP); collagen II is bonded head-to-tail at the two telopeptide-to-helix
+  sites, and collagen IX is covalently attached to the collagen II fibril surface and to other collagen
+  IX molecules at at least six identified sites, all of which are occupied in matrix-resident collagen
+  IX. This makes the fibril a single covalent polymer that cannot be reassembled if broken, which is why
+  cartilage collagen turnover is essentially nil in adults and why damaged collagen architecture is not
+  recapitulated. Crosslink chemistry is a readout of mineralization status as well: Phospho1-/- bone shows
+  altered DHLNL/HLNL and pyridinoline/deoxypyridinoline ratios alongside its hypomineralization. Lysyl
+  oxidase itself is essential - Lox-null mice die perinatally - but no zone-resolved crosslink density
+  measurement of any growth plate was located in this sweep, and the human cartilage crosslink data are
+  articular, not physeal.'
+quantitative:
+- parameter: Identified covalent crosslinking sites on the collagen IX molecule
+  value: '>=6'
+  unit: sites per molecule, all occupied in matrix pool
+  conditions: peptide mapping of matrix-extracted cartilage collagen IX
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: review of the authors own peptide mapping
+  value_unverified: true
+- parameter: Collagen II telopeptide-to-helix pyridinoline crosslink sites
+  value: '2'
+  unit: sites per molecule (head-to-tail)
+  conditions: cartilage collagen II fibril
+  species: bovine
+  source_ref: eyre2002
+  uncertainty: structural constant
+  value_unverified: true
+localization:
+- 'cartilage collagen fibril: HP/LP crosslinks at telopeptide-to-helix sites (eyre2002)'
+- 'growth plate zones: crosslink density by zone not measured in any species located here'
+human_evidence: indirect
+human_evidence_note: Human articular cartilage pyridinoline content has been measured across age, but
+  no human physeal crosslink data were located and no human LOX deficiency skeletal phenotype is described
+  here.
+species_basis:
+- bovine
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The chemistry is conserved and human articular data exist, but the growth plate
+  specifically has not been measured in any species.
+confidence: C
+key_refs:
+- ref_id: eyre2002
+  pmid: '11879535'
+  first_author: Eyre D
+  year: 2002
+  type: review
+  one_line_finding: Cartilage collagen II is crosslinked head-to-tail by hydroxylysyl pyridinoline at
+    two telopeptide-to-helix sites; collagen IX carries at least six crosslink sites all occupied in the
+    matrix pool
+- ref_id: eyre1988
+  pmid: '3415669'
+  first_author: Eyre DR
+  year: 1988
+  type: primary
+  one_line_finding: Hydroxypyridinium crosslink content of human articular cartilage collagen rises with
+    age on a different trajectory from bone
+- ref_id: mki2002
+  pmid: '12417550'
+  first_author: Maki JM
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: Lox-null mice die perinatally with aortic aneurysm and diaphragmatic defects from
+    failed collagen and elastin crosslinking
+- ref_id: huesa2011
+  pmid: '21272676'
+  first_author: Huesa C
+  year: 2011
+  type: primary
+  one_line_finding: Phospho1-/- bone shows altered DHLNL/HLNL and pyridinoline/deoxypyridinoline crosslink
+    ratios alongside hypomineralization
+open_questions:
+- g_l5matrix_009
+pending_source: eyre1988
 last_verified: '2026-08-05'

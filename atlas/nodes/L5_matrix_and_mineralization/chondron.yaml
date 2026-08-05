@@ -1,7 +1,73 @@
 id: chondron
 name: Chondron
+aliases:
+- chondron
+- chondrocyte plus pericellular capsule
 type: tissue_structure
 layer: L5
-stub: true
+stub: false
+summary: 'A chondron is the chondrocyte together with its pericellular matrix and capsule, treated as
+  the mechanical unit of cartilage. In the growth plate the geometry differs fundamentally from articular
+  cartilage: resting zone chondrocytes sit singly or in pairs with no preferred arrangement, while proliferative
+  and hypertrophic chondrocytes are stacked inside long tubular chondrons that are the columns. This makes
+  the chondron the load-transmitting element of the physis. Direct measurement of chondron deformation
+  under compression shows that the apparently random strain fields reported in the compressed growth plate
+  are not random at all: the chondron tubes undergo large bending deformations, kinking preferentially
+  at the reserve/proliferative zone interface at 20%, 30% and 40% applied compression. The authors propose
+  that this bending is itself the cue that aligns dividing cells longitudinally to maintain the column.
+  Chondrons are also the failure interface: in bovine physeal tensile testing, fracture propagates leaving
+  bundles of intact chondrons on the metaphyseal side, torn away from an interterritorial matrix that
+  stays on the epiphyseal side.'
+quantitative:
+- parameter: Applied compression levels producing chondron bending in growth plate
+  value: 20, 30, 40
+  unit: '% compression (physiological and hyper-physiological)'
+  conditions: ex vivo compressed physis, structural deformation mapping along whole chondron lengths
+  species: bovine
+  source_ref: vendra2018
+  uncertainty: kinking most marked at the RZ/PZ interface
+localization:
+- 'growth plate PZ and HZ: chondrocytes arranged inside tubular chondrons; RZ cells singly or in pairs
+  (vendra2018)'
+- 'bovine physis tensile failure plane: chondrons remain intact on the metaphyseal side (williams2001)'
 human_evidence: absent
+human_evidence_note: No human growth plate chondron mechanics were located; the human physeal tensile
+  specimens tested to date came from two cerebral palsy patients and were not analysed at chondron level.
+species_basis:
+- bovine
+- human
+- porcine
+translation_risk: high
+translation_risk_reason: Chondron mechanics in the physis are bovine only.
+confidence: C
+key_refs:
+- ref_id: vendra2018
+  pmid: '29783204'
+  first_author: Vendra BB
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: Growth plate chondrons bend and kink at the reserve/proliferative interface under
+    20-40% compression, explaining nonuniform strain fields
+- ref_id: choi2007
+  pmid: '17397851'
+  first_author: Choi JB
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Chondron pericellular matrix morphology varies by zone and deforms under compression
+- ref_id: darling2010
+  pmid: '20550897'
+  first_author: Darling EM
+  year: 2010
+  type: primary
+  one_line_finding: In situ AFM stiffness mapping gives PCM:ECM modulus ratio ~0.35 in human, porcine
+    and murine articular cartilage
+- ref_id: williams2001
+  pmid: '11781003'
+  first_author: Williams JL
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Physeal tensile fracture leaves intact chondron bundles on the metaphyseal side torn
+    from interterritorial matrix on the epiphyseal side
+open_questions:
+- g_l5matrix_001
 last_verified: '2026-08-05'

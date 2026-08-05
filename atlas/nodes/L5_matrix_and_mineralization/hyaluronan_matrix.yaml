@@ -1,7 +1,70 @@
 id: hyaluronan_matrix
-name: Hyaluronan
+name: Hyaluronan in growth plate matrix
+aliases:
+- HA
+- hyaluronic acid
+- HAS2
 type: metabolite
 layer: L5
-stub: true
+stub: false
+summary: 'Hyaluronan is the unsulphated, unbranched glycosaminoglycan that forms the central filament
+  of the proteoglycan aggregate: aggrecan G1 domains bind it non-covalently, link protein stabilises each
+  interaction, and the resulting aggregate is too large to diffuse out of the collagen network. It is
+  also the ligand of CD44 and thus the anchor of the chondrocyte pericellular coat. Its necessity is shown
+  by conditional Has2 deletion in limb bud mesenchyme with Prx1-Cre: all limb skeletal elements are severely
+  shortened, growth plates are disorganised with loss of columnar architecture and reduced aggrecan deposition
+  in the matrix, the number of hypertrophic chondrocytes and the expression domains of hypertrophic markers
+  are strikingly reduced, secondary ossification centres fail to form centrally, and proximal phalanges
+  are duplicated. So hyaluronan is required not just to immobilise aggrecan but for chondrocyte maturation
+  itself. The synthesis and degradation rates of hyaluronan in the growth plate, and its concentration
+  by zone, were not located in this sweep.'
+quantitative:
+- parameter: Effect of limb-mesenchyme Has2 deletion on skeletal element length
+  value: severely shortened, all elements
+  unit: qualitative; fold not extracted
+  conditions: Prx1-Cre; Has2 flox/flox mouse limb
+  species: mouse
+  source_ref: matsumoto2009
+  uncertainty: magnitude not extracted from abstract
+- parameter: Hypertrophic chondrocyte number in Has2-deficient growth plate
+  value: strikingly reduced
+  unit: qualitative
+  conditions: same model; hypertrophic marker expression domains also reduced
+  species: mouse
+  source_ref: matsumoto2009
+  uncertainty: not quantified in abstract
+localization:
+- 'mouse growth plate: hyaluronan required across the plate; loss disrupts columnar organisation and aggrecan
+  deposition (matsumoto2009)'
+- 'human growth plate hyaluronan concentration by zone: unmeasured'
 human_evidence: absent
+human_evidence_note: No human HAS2 growth plate phenotype or human physeal hyaluronan measurement was
+  located.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Entirely murine conditional genetics with no human genetic or biochemical anchor.
+confidence: C
+key_refs:
+- ref_id: matsumoto2009
+  pmid: '19633173'
+  first_author: Matsumoto K
+  year: 2009
+  type: primary
+  one_line_finding: Prx1-Cre Has2 conditional null limbs are severely shortened with disorganised growth
+    plate columns, reduced aggrecan deposition, few hypertrophic chondrocytes and no central secondary
+    ossification centre
+- ref_id: watanabe1999
+  pmid: '9988279'
+  first_author: Watanabe H
+  year: 1999
+  type: primary_abstract_only
+  one_line_finding: Link protein (Hapln1) null mice are dwarfed with craniofacial abnormalities
+- ref_id: wells2003
+  pmid: '12431185'
+  first_author: Wells T
+  year: 2003
+  type: primary
+  one_line_finding: In human cartilage over 13 years old link protein is present at lower molar concentration
+    than aggrecan G1, so aggregates are heterogeneous and unstable
 last_verified: '2026-08-05'

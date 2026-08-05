@@ -38,13 +38,13 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 ## Coverage dashboard
 
 <!-- DASHBOARD:BEGIN -->
-**Totals** — 652 nodes (389 researched, 263 stubs) ·
-415 edges · 109 gaps (48 search logs) · 666 references
+**Totals** — 654 nodes (410 researched, 244 stubs) ·
+534 edges · 121 gaps (63 search logs) · 680 references
 
 ```
-nodes  ██████████░░░░░░░░░░ 652/1200 (54%)
-edges  ███░░░░░░░░░░░░░░░░░ 415/2500 (16%)
-gaps   ██████████████░░░░░░ 109/150 (72%)
+nodes  ██████████░░░░░░░░░░ 654/1200 (54%)
+edges  ████░░░░░░░░░░░░░░░░ 534/2500 (21%)
+gaps   ████████████████░░░░ 121/150 (80%)
 ```
 
 | Layer | Name | Nodes | Researched | Edges out | Gaps | Quota | Doc | Fig |
@@ -53,9 +53,9 @@ gaps   ██████████████░░░░░░ 109/150 (72%
 | L1 | growth_plate_architecture | 48 | 48 | 45 | 14 | ✅ | — | — |
 | L2 | stem_and_progenitor_biology | 35 | 35 | 42 | 11 | ✅ | ✅ | — |
 | L3 | signaling_networks | 88 | 87 | 222 | 26 | ✅ | — | — |
-| L4 | endocrine_and_systemic | 72 | 72 | 23 | 0 | 0/8·0/3 | — | — |
-| L5 | matrix_and_mineralization | 40 | 21 | 8 | 0 | 0/8·0/3 | — | — |
-| L6 | mechanobiology | 31 | 31 | 0 | 14 | ✅ | — | — |
+| L4 | endocrine_and_systemic | 72 | 72 | 110 | 12 | ✅ | — | — |
+| L5 | matrix_and_mineralization | 42 | 42 | 8 | 0 | 0/8·0/3 | — | — |
+| L6 | mechanobiology | 31 | 31 | 32 | 14 | ✅ | — | — |
 | L7 | fusion_and_cessation | 34 | 34 | 33 | 13 | ✅ | — | — |
 | L8 | genetics_and_heritability | 36 | 3 | 3 | 2 | 2/8·2/3 | — | — |
 | L9 | whole_organism_growth | 40 | 0 | 0 | 0 | 0/8·0/3 | — | — |
@@ -63,13 +63,13 @@ gaps   ██████████████░░░░░░ 109/150 (72%
 | L11 | pathology_as_natural_experiment | 56 | 56 | 38 | 25 | ✅ | — | — |
 | L12 | pharmacology_as_mechanistic_probe | 36 | 1 | 1 | 2 | 2/8·2/3 | — | — |
 | L13 | methods_and_data | 41 | 1 | 0 | 2 | 2/8·2/3 | — | — |
-| | **total** | **652** | **389** | **415** | **109** | | | |
+| | **total** | **654** | **410** | **534** | **121** | | | |
 
-**Confidence distribution** (researched nodes): **A** 122 · **B** 82 · **C** 124 · **D** 50 · **E** 10 · **X** 1
+**Confidence distribution** (researched nodes): **A** 124 · **B** 88 · **C** 135 · **D** 51 · **E** 11 · **X** 1
 
-**Gap types**: `contradiction` 9 · `known_unknown` 21 · `method_blocked` 5 · `quantitative_gap` 32 · `scale_gap` 2 · `search_established` 30 · `species_gap` 10
+**Gap types**: `contradiction` 12 · `known_unknown` 22 · `method_blocked` 5 · `quantitative_gap` 34 · `scale_gap` 2 · `search_established` 35 · `species_gap` 11
 
-**Quantitative**: 772 values on nodes · 16 rows in `quant/parameters.csv`
+**Quantitative**: 808 values on nodes · 16 rows in `quant/parameters.csv`
 
 **Reference verification** (`tools/verify_refs.py`): 1 verified · 0 mismatched · 0 unresolved · 0 manual
 
