@@ -16,12 +16,32 @@ meta:
   cutoff_date: '2026-02-01'
   date_run: '2026-08-05'
   n_propositions: 64
+  n_scored: 63
+  n_excluded_contaminated: 1   # P38 - see exclusions below
   layers_spanned: 14
   bibliography_refs_at_cutoff: 1036
   blinding: >-
     Propositions authored before any read of query/graph.json, query/derived.json,
     query/parameters.json or atlas/nodes/**. coverage.md was read (it is required
     by QUERY.md §8 and contains no node- or edge-level content).
+
+# ── EXCLUSIONS (added at scoring time, after the blinded commit) ───────────────
+# The non-ingestion check was re-run immediately before scoring, against BOTH
+# bibliography.yaml AND graph.json.refs. One item failed on the second pass.
+exclusions:
+  - id: P38
+    doi: 10.1016/j.xhgg.2026.100597
+    pmid: '41904631'
+    layer: L8
+    reason: >-
+      CONTAMINATED. Absent from bibliography.yaml at sweep time (1036 refs) and
+      present at scoring time (1037 refs) as ref_id `wang2026_2`, cited in the
+      height_gwas node - added by a concurrent process writing to this repo
+      between the two checks. Excluded from every count in
+      query/falsification_baseline.md. Had it been retained it would have scored
+      CORRECT_PREDICTION and raised L8's hit rate from 20% to 33%: the single
+      most flattering item in the weakest layer was the contaminated one.
+    disposal: see query/falsification_corrections.md C-07
 
 propositions:
 
