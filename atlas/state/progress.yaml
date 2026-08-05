@@ -1,0 +1,39 @@
+# RESUME STATE. On session start read this and state/environment.md FIRST,
+# read nothing else, then execute next_3_actions. Never restart from scratch.
+
+current_phase: 1              # 0 scaffold | 1 skeleton_map | 2 layer_sweeps | 3 integration
+                              # 4 quantitative_consolidation | 5 redteam | 6 synthesis
+current_layer: null
+current_subtopic: null
+last_updated: '2026-08-05'
+
+completed:
+  - phase: 0
+    name: scaffold
+    timestamp: '2026-08-05'
+    note: >-
+      Directory tree, node/edge schemas, controlled vocabulary, validator,
+      addref (machine-populated bibliography), verify_refs (anti-fabrication gate).
+      All three tools negative-tested: validator caught 10/10 injected defects,
+      addref refused a fabricated PMID. Network confirmed to NCBI/EPMC/DOI/CTgov.
+
+in_flight: {}
+
+next_3_actions:
+  - "Phase 1: write stub nodes for every entity named in <scope> across all 14 layers (target >=400, no layer empty), using tools/mkstub.py"
+  - "Phase 1 exit check: python3 atlas/tools/validate.py --quota; commit"
+  - "Phase 2 begins with the load-bearing core in order L1, L2, L3, L7 — dispatch parallel subagents by subtopic, one domain and one output file each"
+
+blocked_on: []
+
+known_debt:
+  - "quant/parameters.csv is header-only until Phase 2 layer sweeps populate it"
+  - "docs/<layer>.md not yet written for any layer"
+  - "figures/*.mmd not yet generated"
+  - "Test node pthrp_positive_resting_chondrocyte carries a PLACEHOLDER summary and must be fully rewritten during the L2 sweep"
+
+conventions_reminder:
+  - "Never hand-write bibliography metadata; always `python3 atlas/tools/addref.py`"
+  - "A gap of type search_established REQUIRES a search_log.yaml entry or the validator rejects it"
+  - "Commit message format: atlas(<layer>): <what changed> [+N nodes, +M edges, +K gaps]"
+  - "Every claim carries a species tag; mouse data never stated as human fact"

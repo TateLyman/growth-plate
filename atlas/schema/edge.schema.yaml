@@ -1,0 +1,18 @@
+# EDGE SCHEMA - all edges live in atlas/edges/edges.yaml as a list under key `edges`.
+# Append-only: never rewrite history, never delete an edge; supersede it with a new
+# edge and set `superseded_by` on the old one.
+
+edges:
+  - edge_id:        # REQUIRED. e.g. e00001
+    source:         # REQUIRED. node_id (must exist in atlas/nodes/**)
+    target:         # REQUIRED. node_id (must exist)
+    relation:       # REQUIRED. one of vocab.relations
+    sign:           # +|-|biphasic|unknown
+    magnitude:      # with units where known, e.g. "IC50 5 nM (ATP-competitive, 1 mM ATP)"
+    context:        # REQUIRED. zone, developmental stage, sex, species. e.g. "mouse PHZ, E16.5, both sexes"
+    evidence_tier:  # REQUIRED. T1..T6
+    refs: []        # REQUIRED. list of ref_ids
+    confidence:     # REQUIRED. A|B|C|D|E|X|speculative
+    gap_id:         # REQUIRED when relation == hypothesized_link OR confidence == speculative
+    notes:
+    superseded_by:  # edge_id, if this edge has been replaced
