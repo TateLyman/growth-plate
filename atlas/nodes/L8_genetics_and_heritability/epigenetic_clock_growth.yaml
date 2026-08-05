@@ -1,7 +1,83 @@
 id: epigenetic_clock_growth
 name: Epigenetic clocks and growth
+aliases:
+- DNA methylation age in children
+- PedBE clock
 type: method
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  Epigenetic clocks estimate biological age from DNA methylation and are accurate enough in children
+  to be a candidate maturational readout, but they have not been validated against skeletal
+  maturation, which is what this atlas would need them for. McEwen 2020 built the Pediatric-Buccal-
+  Epigenetic clock from 1,721 genome-wide methylation profiles across 11 cohorts of typically
+  developing individuals aged 0-20, selecting 94 CpG sites by elastic-net regression in a
+  1,032-sample training set and achieving a median absolute error of 0.35 years in a separate
+  689-sample test set. That is finer resolution than bone age scoring, non-invasive, and continuous.
+  What is missing is any published correspondence between epigenetic age acceleration and bone age,
+  peak height velocity, or the timing of epiphyseal fusion. The clock literature in children has
+  instead been applied to prenatal adversity, prematurity and neurodevelopment: placental epigenetic
+  gestational-age acceleration, for instance, associates with slower postnatal weight and fat-mass
+  gain but explicitly shows no association with height or lean-mass gain. Until an epigenetic-age-
+  versus-bone-age study exists, an epigenetic clock is a validated chronological-age estimator in
+  children and nothing more for growth-plate purposes - which is exactly how it is graded here.
+quantitative:
+- parameter: CpG sites in the PedBE clock
+  value: '94'
+  unit: CpG sites
+  conditions: elastic-net selection from 1,032 buccal training samples
+  species: human
+  source_ref: mcewen2020
+  uncertainty: not applicable (count)
+- parameter: median absolute error of PedBE age prediction
+  value: '0.35'
+  unit: years
+  conditions: 689-sample independent test set, ages 0-20
+  species: human
+  source_ref: mcewen2020
+  uncertainty: median absolute error
+- parameter: total methylation profiles assembled
+  value: '1721'
+  unit: profiles
+  conditions: 11 cohorts of typically developing individuals aged 0-20
+  species: human
+  source_ref: mcewen2020
+  uncertainty: not applicable (count)
+localization:
+- 'human: buccal epithelium and blood; no cartilage or growth plate clock exists'
+human_evidence: direct
+human_evidence_note: Human paediatric cohorts with measured chronological age; no skeletal maturation
+  endpoint has been tested.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human method development.
+confidence: B
+claim_grades:
+- claim: DNA methylation predicts chronological age in children to within about 0.4 years.
+  grade: A
+  basis: Training and independent test sets totalling 1,721 profiles across 11 cohorts (mcewen2020).
+- claim: Epigenetic age acceleration indexes skeletal maturation or predicts growth cessation.
+  grade: X
+  basis: Widely assumed in reviews but no primary study relating an epigenetic clock to bone age,
+    peak height velocity or epiphyseal fusion was located. See gap g_l8gen_014.
+key_refs:
+- ref_id: mcewen2020
+  pmid: '31611402'
+  doi: 10.1073/pnas.1820843116
+  first_author: McEwen LM
+  year: 2020
+  type: primary
+  one_line_finding: The PedBE clock predicts chronological age from 94 buccal CpGs with median
+    absolute error 0.35 years in children aged 0-20.
+- ref_id: mcdonnell2024
+  pmid: '39579763'
+  doi: 10.1016/j.ajhg.2024.10.017
+  first_author: McDonnell E
+  year: 2024
+  type: primary
+  one_line_finding: Human developmental cartilage methylome, the substrate a cartilage-specific
+    clock would have to be built on.
+open_questions:
+- g_l8gen_014
 last_verified: '2026-08-05'

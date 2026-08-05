@@ -1,7 +1,104 @@
 id: col2a1_gene
 name: COL2A1
+aliases:
+- type II collagen alpha-1 gene
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  COL2A1 encodes the alpha-1 chain of type II collagen, the principal fibrillar collagen of growth
+  plate and articular cartilage, and its human allelic series is the textbook case of
+  dominant-negative dosage rather than haploinsufficiency. The recurrent pathogenic class is glycine
+  substitution within the Gly-X-Y repeat of the triple-helical domain: Zhan 2025 found six such
+  substitutions (Gly1110Ser, Gly1107Glu, Gly873Arg, Gly456Ala, Gly1062Ser, Gly1182Arg) plus one
+  intronic variant across seven unrelated Chinese SEDC families, all presenting with disproportionate
+  short stature and skeletal abnormality. Because collagen II is a homotrimer, a single mutant chain
+  poisons the assembly of trimers containing any wild-type chains, which is why heterozygous missense
+  alleles give a phenotype far more severe than the expected 50% reduction and why true whole-gene
+  deletions instead give the mild Stickler spectrum. The severity gradient across type II
+  collagenopathies - achondrogenesis type II (lethal), SEDC, Kniest, Stickler - tracks the position
+  and steric bulk of the substituting residue rather than the amount of protein made. ClinGen's
+  skeletal disorders expert panel classifies COL2A1 as definitively associated with at least one
+  skeletal disorder among the 26 gene-disease relationships it curated. The quantitative weakness of
+  this node is that no published series gives a mean adult height SDS by mutation class for COL2A1
+  the way Meng 2025 does for COL10A1; the reported growth data are single-arm GH-treatment responses
+  (+0.76 and +0.27 height SDS over 3.5 and 3 years in two SEDC children).
+quantitative:
+- parameter: COL2A1 glycine-substitution missense variants in consecutive SEDC families
+  value: '6'
+  unit: of 7 families
+  conditions: whole-exome/targeted sequencing, unrelated Chinese families; seventh was an intronic
+    variant
+  species: human
+  source_ref: zhan2025
+  uncertainty: not applicable (count)
+- parameter: height SDS gain on growth hormone, SEDC
+  value: '0.76'
+  unit: SDS
+  conditions: one patient, 3.5 years of GH
+  species: human
+  source_ref: zhan2025
+  uncertainty: n=1; no control arm
+- parameter: height SDS gain on growth hormone, SEDC
+  value: '0.27'
+  unit: SDS
+  conditions: second patient, 3 years of GH
+  species: human
+  source_ref: zhan2025
+  uncertainty: n=1; no control arm
+- parameter: COL2A1 variant yield in idiopathic short stature
+  value: '1'
+  unit: of 102 patients
+  conditions: targeted multigene panel
+  species: human
+  source_ref: andrade2022
+  uncertainty: not applicable (count)
+localization:
+- 'human: germline; product is the dominant fibrillar collagen of growth plate and articular cartilage'
+human_evidence: direct
+human_evidence_note: Human genotype-phenotype series with cosegregation; no animal data are used
+  for any claim on this node.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Purely human allelic data.
+confidence: B
+claim_grades:
+- claim: Heterozygous glycine substitutions in the COL2A1 triple-helical domain cause spondyloepiphyseal
+    dysplasia congenita.
+  grade: A
+  basis: Seven unrelated families (zhan2025) plus ClinGen definitive gene-disease classification
+    (webb2026); a very large independent literature exists.
+- claim: The mechanism is dominant-negative incorporation into the collagen II homotrimer rather
+    than haploinsufficiency.
+  grade: C
+  basis: Consistent with the severity gradient and with the mild phenotype of whole-gene deletions,
+    but no allele-matched human trimer-assembly experiment was reached in this sweep. See gap
+    g_l8gen_005.
+key_refs:
+- ref_id: zhan2025
+  pmid: '39953747'
+  doi: 10.1111/apa.70029
+  first_author: Zhan S
+  year: 2025
+  type: primary
+  one_line_finding: Six COL2A1 glycine substitutions plus one intronic variant across seven unrelated
+    SEDC families; GH gave +0.76 and +0.27 height SDS in two patients.
+- ref_id: webb2026
+  pmid: '41313243'
+  doi: 10.1093/jbmr/zjaf183
+  first_author: Webb RF
+  year: 2026
+  type: systematic_review
+  one_line_finding: ClinGen skeletal disorders expert panel classifies COL2A1 as definitively
+    associated with skeletal disease across curated gene-disease relationships.
+- ref_id: andrade2022
+  pmid: '36373817'
+  doi: 10.1530/ec-22-0214
+  first_author: Andrade NLM
+  year: 2022
+  type: primary
+  one_line_finding: COL2A1 variant found in 1 of 102 children classified as idiopathic short stature.
+open_questions:
+- g_l8gen_005
 last_verified: '2026-08-05'

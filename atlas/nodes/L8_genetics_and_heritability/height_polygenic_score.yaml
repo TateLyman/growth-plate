@@ -1,9 +1,98 @@
 id: height_polygenic_score
 name: Height polygenic score
-type: method
-layer: L8
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - height PGS
+- height polygenic risk score
+type: method
+layer: L8
+stub: false
+summary: |-
+  A height polygenic score sums allele dosages weighted by GWAS effect sizes and is the best-performing
+  polygenic predictor of any human quantitative trait, which makes it the ceiling case for what
+  polygenic prediction can do. Yengo 2022 reported that the 12,111 genome-wide-significant SNPs
+  account for 40% of phenotypic variance in European-ancestry out-of-sample prediction, rising to 45%
+  using all HapMap 3 SNPs, and falling to about 10-20% (14-24% with all HapMap 3 SNPs) in populations
+  of other ancestries. Depope 2026 reached a comparable ceiling by a different route, jointly
+  modelling tens of millions of UK Biobank whole-genome-sequence variants with approximate message
+  passing and obtaining about 46% prediction accuracy for height. Against a narrow-sense heritability
+  of about 0.76, a 40-46% predictor captures roughly 55-60% of the genetic variance and essentially
+  all of the common-variant component - the residual is the rare and non-coding tier that
+  Wainschtein 2026 quantifies at 20% of pedigree heritability. Two limits are structural rather than
+  technical. First, prediction accuracy is not transferable across ancestries because it depends on
+  linkage disequilibrium and allele frequency in the training population, not because the biology
+  differs. Second, a score trained in a population with assortative mating carries inflated effect
+  estimates, since assortment raises the genetic variance of the trait and induces correlations
+  between causal alleles.
+quantitative:
+- parameter: phenotypic variance explained, European ancestry
+  value: '40'
+  unit: '%'
+  conditions: 12,111 genome-wide-significant SNPs, out-of-sample prediction
+  species: human
+  source_ref: yengo2022
+  uncertainty: 45% using all HapMap 3 SNPs
+- parameter: phenotypic variance explained, non-European ancestries
+  value: 10-20
+  unit: '%'
+  conditions: same score, out-of-sample
+  species: human
+  source_ref: yengo2022
+  uncertainty: 14-24% using all HapMap 3 SNPs
+- parameter: prediction accuracy from joint WGS modelling
+  value: '46'
+  unit: '%'
+  conditions: gVAMP applied to tens of millions of UK Biobank WGS variants
+  species: human
+  source_ref: depope2026
+  uncertainty: approximate as reported
+- parameter: narrow-sense heritability benchmark
+  value: '0.76'
+  unit: proportion of variance
+  conditions: 119,000 sibling pairs, IBD design
+  species: human
+  source_ref: sidorenko2024
+  uncertainty: SE 0.05
+localization:
+- 'human: germline genome-wide; a statistical construct, not tissue-localized'
+human_evidence: direct
+human_evidence_note: Out-of-sample prediction accuracy measured against observed stature in independent
+  human cohorts.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human prediction method.
+confidence: A
+key_refs:
+- ref_id: yengo2022
+  pmid: '36224396'
+  doi: 10.1038/s41586-022-05275-y
+  first_author: Yengo L
+  year: 2022
+  type: primary
+  one_line_finding: Height PGS explains 40% of variance in European-ancestry and 10-20% in other-ancestry
+    populations out of sample.
+- ref_id: depope2026
+  pmid: '41713425'
+  doi: 10.1016/j.xgen.2026.101162
+  first_author: Depope A
+  year: 2026
+  type: primary
+  one_line_finding: Joint WGS modelling by approximate message passing reaches ~46% prediction
+    accuracy for height.
+- ref_id: sidorenko2024
+  pmid: '39375568'
+  doi: 10.1038/s41588-024-01940-2
+  first_author: Sidorenko J
+  year: 2024
+  type: primary
+  one_line_finding: Height heritability 0.76 +/- 0.05 provides the benchmark against which PGS
+    accuracy is judged.
+- ref_id: sunde2024
+  pmid: '38531929'
+  doi: 10.1038/s41467-024-46939-9
+  first_author: Sunde HF
+  year: 2024
+  type: primary
+  one_line_finding: Assortative mating raises trait genetic variance and similarity between relatives,
+    biasing PGS-derived estimates trained in assorting populations.
+last_verified: '2026-08-05'

@@ -1,7 +1,76 @@
 id: igf2_h19_imprinting
 name: IGF2/H19 imprinted locus
+aliases:
+- 11p15.5 ICR1
+- IGF2/H19 imprinting control region
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  The IGF2/H19 domain at 11p15.5 is controlled by imprinting control region 1, which is methylated on
+  the paternal allele and unmethylated on the maternal one, and its disruption produces the two
+  reciprocal human growth syndromes that bracket normal stature. Paternal ICR1 loss of methylation
+  silences IGF2 and accounts for roughly 60% of Silver-Russell syndrome, characterised by severe
+  intrauterine and postnatal growth retardation. Maternal ICR1 hypermethylation activates IGF2 on
+  both alleles and causes about 10% of Beckwith-Wiedemann syndrome, characterised by overgrowth. The
+  lesions are structurally reciprocal at the same 1.5 kb element, so the locus behaves as a
+  continuous human IGF2 dose rheostat rather than a binary disease gene. Two mechanistic details are
+  established in patient material rather than inferred. First, microdeletions of the CTCF-binding
+  repeats within ICR1 and point mutations in an OCT-binding motif can each cause the hypermethylated
+  BWS state in a maternally inherited, familial pattern, which localises the control to specific
+  transcription-factor footprints. Second, Abi Habib 2019 showed that IGF2 at this locus is
+  downregulated by hypomethylation at an entirely different imprinted domain on chromosome 14,
+  placing IGF2 downstream of a wider imprinting network. Because IGF2 acts principally on prenatal
+  growth, the postnatal stature deficit in Silver-Russell is not fully explained by IGF2 dose alone.
+quantitative:
+- parameter: Silver-Russell syndrome cases with paternal ICR1 loss of methylation
+  value: '60'
+  unit: '%'
+  conditions: 11p15.5 molecular diagnostic series
+  species: human
+  source_ref: abi2019
+  uncertainty: approximate as reported
+- parameter: Beckwith-Wiedemann syndrome cases with maternal ICR1 hypermethylation
+  value: '10'
+  unit: '%'
+  conditions: 11p15.5 molecular diagnostic series
+  species: human
+  source_ref: abi2019
+  uncertainty: approximate as reported
+localization:
+- 'human: 11p15.5; IGF2 expressed from the paternal allele, H19 from the maternal allele'
+human_evidence: direct
+human_evidence_note: Human imprinting disorder cohorts with allele-specific methylation analysis
+  and patient-derived expression profiling.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human imprinting; the mouse distal-7 orthologue shows contradictory parental-transmission
+  phenotypes for some models and is deliberately not invoked.
+confidence: B
+claim_grades:
+- claim: Reciprocal ICR1 methylation defects cause reciprocal growth phenotypes through IGF2 dosage.
+  grade: A
+  basis: Two large reciprocal patient groups (SRS and BWS) with allele-specific methylation and
+    IGF2 expression data; established across many independent diagnostic series.
+- claim: IGF2 dosage at this locus is regulated in trans by imprinting status at 14q32.2.
+  grade: D
+  basis: Single expression-profiling study (abi2019).
+key_refs:
+- ref_id: abi2019
+  pmid: '30801013'
+  doi: 10.1126/sciadv.aau9425
+  first_author: Abi Habib W
+  year: 2019
+  type: primary
+  one_line_finding: 14q32.2 hypomethylation lowers IGF2 expression at the 11p15.5 domain, and
+    paternal ICR1 loss of methylation accounts for ~60% of Silver-Russell syndrome.
+- ref_id: ogawa2025
+  pmid: '39693239'
+  doi: 10.1210/clinem/dgae883
+  first_author: Ogawa T
+  year: 2025
+  type: primary
+  one_line_finding: Temple syndrome (the 14q32.2 counterpart) causes postnatal short stature in
+    87.0% of 60 genetically confirmed patients.
 last_verified: '2026-08-05'

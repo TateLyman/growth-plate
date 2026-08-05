@@ -16,15 +16,29 @@ summary: 'CNP is encoded by NPPC, translated as proCNP and cleaved by furin at a
 
   physiological driver (Nakao 2015). Nppc-null mice are severely dwarfed and die early (Chusho 2001).
 
-  The effect is strongly zone-partitioned: in cartilage-specific Nppc-null mice the type X
+  The effect is zone-partitioned but GRADED, not exclusive: in cartilage-specific Nppc-null mice the
 
-  collagen-positive hypertrophic layer falls to 34.6% of control thickness whereas the non-hypertrophic
+  type X collagen-positive hypertrophic layer falls to 34.6% of control thickness whereas the
 
-  layer falls only to 76.7%, and BrdU incorporation is only marginally reduced (Nakao 2015); in mouse
+  non-hypertrophic layer falls only to 76.7%, and the BrdU index merely trends lower - but in the
 
-  tibia organ culture CNP acts largely by expanding the hypertrophic zone and zonal microarray shows
+  matched cartilage-specific Npr2-null the same index is SIGNIFICANTLY reduced, and the summary
 
-  far more CNP-regulated genes in hypertrophic than in proliferative or resting cells (Agoston 2007).
+  given by the authors is that the proliferative layer and its proliferation are moderately reduced in both
+
+  (Nakao 2015, n=5 per group). In mouse tibia organ culture CNP acts largely by expanding the
+
+  hypertrophic zone and zonal microarray shows far more CNP-regulated genes in hypertrophic than in
+
+  the combined resting/proliferative compartment (Agoston 2007); the hypertrophic-zone expansion in
+
+  that system requires p38, while CNP simultaneously inhibits ERK. Downstream of NPR2 the effector
+
+  assignment is unsettled: the PKG-II zonal explanation has been retracted (CORR-003), and CNP-driven
+
+  bone growth in tibia explant is abolished by chondrocyte-specific Trpm7 ablation, placing a
+
+  PKG-BK channel-TRPM7-CaMKII arm alongside SOX9/GSK-3beta (Miyazaki 2022).
 
   Human dosage evidence runs in both directions: heterozygous NPPC ring-domain mutations cause
 
@@ -42,21 +56,21 @@ quantitative:
   conditions: proximal tibia, 2 weeks of age, Col2a1-Cre;Nppc fl/fl, type X collagen IHC
   species: mouse
   source_ref: nakao2015
-  uncertainty: significant vs control; n not stated in text
+  uncertainty: significant vs control; n=5 per group (figure legend)
 - parameter: non-hypertrophic (type II collagen+) layer thickness, cartilage-specific Nppc knockout
   value: '76.7'
   unit: '% of control'
   conditions: proximal tibia, 2 weeks of age, Col2a1-Cre;Nppc fl/fl
   species: mouse
   source_ref: nakao2015
-  uncertainty: n not stated in text
+  uncertainty: n=5 per group (figure legend)
 - parameter: tibia length, cartilage-specific Nppc knockout vs control
   value: '65.9'
   unit: '% of control'
   conditions: 10 weeks of age, soft x-ray morphometry
   species: mouse
   source_ref: nakao2015
-  uncertainty: significant vs control
+  uncertainty: significant vs control; n=5 per group (figure legend)
 - parameter: plasma CNP concentration, NPPC-translocation overgrowth proband vs controls
   value: '2'
   unit: fold
@@ -72,7 +86,8 @@ quantitative:
   source_ref: savarirayan2020
   uncertainty: 95% CI 1.22-1.93; n=121 randomised (60 vosoritide, 61 placebo)
 localization:
-- 'mouse non-hypertrophic chondrocyte layers (RZ/PZ): confirmed by IHC and cartilage-specific KO (nakao2015)'
+- 'mouse non-hypertrophic chondrocyte layers (RZ/PZ): confirmed by IHC and cartilage-specific KO (nakao2015).
+  The CNP IHC in that paper demonstrates knock-down; it is not a quantitative zonal map'
 - 'mouse HZ: CNP-regulated transcriptome strongly enriched, confirmed by zonal microarray (agoston2007)'
 - 'human growth plate: zonal CNP protein distribution unconfirmed'
 human_evidence: direct
@@ -104,9 +119,16 @@ key_refs:
   pmid: '17374144'
   first_author: Agoston H
   year: 2007
-  type: primary_abstract_only
+  type: primary
   one_line_finding: CNP grows mouse tibia largely by expanding the hypertrophic zone; zonal microarray
     shows hypertrophic chondrocytes are the main CNP target.
+- ref_id: miyazaki2022
+  pmid: '35287796'
+  first_author: Miyazaki Y
+  year: 2022
+  type: primary
+  one_line_finding: CNP-facilitated bone growth in mouse tibia explant is abolished by chondrocyte-specific
+    Trpm7 ablation, via PKG acting on the BK channel to drive TRPM7 Ca2+ entry and CaMKII.
 - ref_id: hisadooliva2018
   pmid: '28661490'
   first_author: Hisado-Oliva A
@@ -140,5 +162,10 @@ key_refs:
   one_line_finding: Vosoritide increased annualised growth velocity by 1.57 cm/yr versus placebo in achondroplasia.
 open_questions:
 - g_l3core_003
+- g_l2d_001
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. nakao2015, agoston2007 and miyazaki2022 read in
+  FULL (nakao2015 pending_source cleared - full text retrieved, n=5 per group recovered from figure
+  legends). Verdict SCOPED - the zonal partition is graded, not exclusive.
 last_verified: '2026-08-05'
-pending_source: nakao2015

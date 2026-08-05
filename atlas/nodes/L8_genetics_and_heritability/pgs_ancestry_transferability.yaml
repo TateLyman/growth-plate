@@ -1,7 +1,91 @@
 id: pgs_ancestry_transferability
 name: PGS ancestry transferability
+aliases:
+- portability of polygenic scores
+- cross-ancestry prediction
 type: process
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  Height polygenic scores lose most of their accuracy outside the ancestry group they were trained in,
+  and the height literature is unusually well placed to say why, because the same paper that measures
+  the loss also tests the two candidate explanations. Yengo 2022 found that the 12,111 SNPs explain
+  40% of variance in European-ancestry populations but only about 10-20% in others, while per-allele
+  effect sizes, associated regions and prioritised genes were similar across ancestries. That
+  similarity is the discriminating observation: it excludes the interpretation that height has a
+  different genetic basis in different populations and localises the failure to linkage disequilibrium
+  and allele frequency differences within associated regions - a property of the study design and the
+  marker panel rather than of the biology. Graff 2021 supports the same conclusion from the other
+  direction: in an African-ancestry meta-analysis of 52,764 individuals, 643 of 802 known European
+  height signals were directionally consistent and 205 were nominally significant, and only 2 of 20
+  newly identified secondary signals had minor allele frequency below 5%. The practical consequence
+  for this atlas is that any claim of the form 'this locus explains X% of height' is a claim about a
+  population and a marker panel, not about a mechanism, and none of the growth-plate mechanism nodes
+  inherit an ancestry qualifier from it.
+quantitative:
+- parameter: height variance explained by PGS, European ancestry
+  value: '40'
+  unit: '%'
+  conditions: 12,111 SNPs, out-of-sample
+  species: human
+  source_ref: yengo2022
+  uncertainty: 45% with all HapMap 3 SNPs
+- parameter: height variance explained by PGS, non-European ancestries
+  value: 10-20
+  unit: '%'
+  conditions: same score, out-of-sample
+  species: human
+  source_ref: yengo2022
+  uncertainty: 14-24% with all HapMap 3 SNPs
+- parameter: European height signals directionally consistent in African ancestry
+  value: '643'
+  unit: of 802 signals
+  conditions: African Ancestry Anthropometry Genetics Consortium, n=52,764
+  species: human
+  source_ref: graff2021
+  uncertainty: 205 of the 643 were nominally significant at P<0.05
+- parameter: new African-ancestry secondary signals with MAF < 5%
+  value: '2'
+  unit: of 20 signals
+  conditions: same analysis
+  species: human
+  source_ref: graff2021
+  uncertainty: not applicable (count)
+localization:
+- 'human: population-level property of marker panels, not tissue-localized'
+human_evidence: direct
+human_evidence_note: Two independent human analyses measuring cross-ancestry prediction accuracy
+  and signal concordance.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Between-population, not between-species, transfer.
+confidence: A
+claim_grades:
+- claim: Height PGS accuracy falls by roughly half to three quarters outside the training ancestry.
+  grade: A
+  basis: Measured out of sample in yengo2022 and corroborated by partial signal transfer in graff2021.
+- claim: The loss is caused by linkage disequilibrium and allele frequency differences rather
+    than different underlying biology.
+  grade: B
+  basis: Supported by similar per-allele effect sizes and gene prioritisation across ancestries
+    within yengo2022 and by 643/802 directional concordance in graff2021, but not established
+    by a purpose-designed decomposition.
+key_refs:
+- ref_id: yengo2022
+  pmid: '36224396'
+  doi: 10.1038/s41586-022-05275-y
+  first_author: Yengo L
+  year: 2022
+  type: primary
+  one_line_finding: PGS variance explained falls from 40% (European) to 10-20% (other ancestries)
+    despite similar effect sizes and prioritised genes across ancestries.
+- ref_id: graff2021
+  pmid: '33713608'
+  doi: 10.1016/j.ajhg.2021.02.011
+  first_author: Graff M
+  year: 2021
+  type: primary
+  one_line_finding: 643 of 802 European height signals are directionally consistent in 52,764
+    African-ancestry individuals; 205 nominally significant.
 last_verified: '2026-08-05'

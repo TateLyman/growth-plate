@@ -1,7 +1,139 @@
 id: shox_gene
 name: SHOX
+aliases:
+- short stature homeobox
+- PAR1 homeobox gene
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: 'SHOX sits in the pseudoautosomal region PAR1 of Xp22/Yp11.3 and escapes X-inactivation,
+  so it is
+
+  one of the very few human genes that is genuinely dosage-sensitive in a diploid-versus-monosomic
+
+  sense. Rao 1997 defined a 170 kb PAR1 interval deleted in 36 short-statured individuals with
+  Xp22
+
+  or Yp11.3 rearrangements and absent from normal-height relatives and from 30 rearrangement
+
+  carriers of normal height, then isolated SHOX inside it and found one functional SHOX mutation
+  by
+
+  screening 91 idiopathic-short-stature patients. Shears 1998 showed the same gene is deleted
+  or
+
+  truncated in Leri-Weill dyschondrosteosis and that Langer mesomelic dysplasia is its homozygous
+
+  form, establishing a strict allelic dose series: two functional copies = normal stature, one
+  copy =
+
+  mesomelic short stature with Madelung deformity, zero copies = severe mesomelic dwarfism. That
+
+  series has been measured: in 41 patients from 23 families the median height SDS was -6.3 for
+
+  Langer (nullizygous), -2.4 for Leri-Weill (haploinsufficient) and -2.1 for the SHOX-positive
+
+  idiopathic short stature referrals. SHOX is a homeodomain transcription factor; the human
+
+  mechanistic work localizing its product in growth plate cartilage is far thinner than the genetic
+
+  dose data, which is why the gene node and any protein-level claim must be graded separately.
+
+  SHOX has no mouse orthologue (the gene is absent from the rodent genome), so there is no
+
+  knockout mouse and essentially no murine mechanism to launder - an unusual and welcome situation
+
+  for this atlas.'
+quantitative:
+- parameter: PAR1 interval deleted in short stature
+  value: '170'
+  unit: kb
+  conditions: deleted in 36 individuals with Xp22/Yp11.3 rearrangements; absent in normal-height
+    relatives and 30 normal-height rearrangement carriers
+  species: human
+  source_ref: rao1997
+  uncertainty: not applicable (interval size)
+- parameter: median height SDS, SHOX nullizygous (Langer mesomelic dysplasia)
+  value: '-6.3'
+  unit: SDS
+  conditions: n=2 of 41 patients from 23 families
+  species: human
+  source_ref: doan2026
+  uncertainty: median of 2 cases; range not reported
+- parameter: median height SDS, SHOX haploinsufficient (Leri-Weill dyschondrosteosis)
+  value: '-2.4'
+  unit: SDS
+  conditions: n=24 of 41 patients
+  species: human
+  source_ref: doan2026
+  uncertainty: median; interquartile range not reported
+- parameter: median height SDS, SHOX variant presenting as idiopathic short stature
+  value: '-2.1'
+  unit: SDS
+  conditions: n=12 of 41 patients
+  species: human
+  source_ref: doan2026
+  uncertainty: median; interquartile range not reported
+- parameter: SHOX variant yield in unselected idiopathic short stature
+  value: '3'
+  unit: of 102 patients
+  conditions: targeted multigene panel, Brazilian ISS cohort
+  species: human
+  source_ref: andrade2022
+  uncertainty: 3/102 = 2.9%; CI not reported
+localization:
+- 'human: germline PAR1 (Xp22.33/Yp11.32), escapes X-inactivation'
+human_evidence: direct
+human_evidence_note: The entire allelic series - nullizygous, haploinsufficient, and heterozygous-mild
+  - is defined in humans with measured stature; there is no mouse orthologue of SHOX.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: SHOX is absent from the rodent genome, so no cross-species inference
+  is possible or attempted.
+confidence: A
+claim_grades:
+- claim: SHOX gene dosage sets human stature in a monotonic 0/1/2-copy series.
+  grade: A
+  basis: Three independent human cohorts (rao1997 discovery, shears1998 LWD/LMD allelism, doan2026
+    quantified SDS by dose).
+- claim: SHOX acts as a transcription factor within growth plate chondrocytes to produce this
+    effect.
+  grade: D
+  basis: Asserted in reviews; no human growth-plate localization primary was reached in this sweep.
+    See gap g_l8gen_004.
+key_refs:
+- ref_id: rao1997
+  pmid: '9140395'
+  doi: 10.1038/ng0597-54
+  first_author: Rao E
+  year: 1997
+  type: primary
+  one_line_finding: A 170 kb PAR1 interval containing the novel homeobox gene SHOX is deleted
+    in 36 short-statured individuals and in no normal-height relative.
+- ref_id: shears1998
+  pmid: '9590293'
+  doi: 10.1038/ng0198-70
+  first_author: Shears DJ
+  year: 1998
+  type: primary
+  one_line_finding: SHOX deletions and a premature stop segregate with Leri-Weill dyschondrosteosis;
+    Langer mesomelic dysplasia is the homozygous form.
+- ref_id: doan2026
+  pmid: '42230379'
+  doi: 10.1007/s00431-026-07128-6
+  first_author: Doğan Arı AB
+  year: 2026
+  type: primary
+  one_line_finding: 'Median height SDS by SHOX dose in 41 patients: -6.3 nullizygous, -2.4 Leri-Weill,
+    -2.1 idiopathic short stature.'
+- ref_id: andrade2022
+  pmid: '36373817'
+  doi: 10.1530/ec-22-0214
+  first_author: Andrade NLM
+  year: 2022
+  type: primary
+  one_line_finding: SHOX variants in 3 of 102 children classified as idiopathic short stature.
+open_questions:
+- g_l8gen_004
 last_verified: '2026-08-05'

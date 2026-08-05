@@ -33,32 +33,65 @@ summary: 'NPR2 is a homodimeric transmembrane receptor guanylyl cyclase: CNP bin
 
   receptor is inactivated post-translationally by FGF-driven dephosphorylation, which is the principal
 
-  molecular link between FGFR3 and this pathway (see fgfr3_npr2_crosstalk). Zonal receptor protein
+  molecular link between FGFR3 and this pathway (see fgfr3_npr2_crosstalk). What sets the zonal
 
-  distribution is not the explanation for the zonal partition of CNP effect: NPR2 has been reported
+  partition of the CNP effect is NOT established. Npr2 mRNA is reported at similar levels across the
 
-  at similar levels in all three zones while the downstream kinases PKG-I/II are far higher in
+  resting/proliferative (combined), hypertrophic and mineralized compartments of micro-dissected mouse
 
-  hypertrophic cells (Agoston 2007), which conflicts with the prehypertrophic-restricted GC-B
+  tibia - that study contains no resting-versus-proliferative comparison (Agoston 2007) - while the
 
-  localisation reported by the Kyoto group (Nakao 2015).
+  prehypertrophic-restricted GC-B protein map attributed to the Kyoto group is a claim Nakao 2015
+
+  CITES to its own earlier work rather than data in that paper, whose GC-B immunohistochemistry serves
+
+  only to confirm knock-down (g_l2d_002). The downstream explanation previously carried here, that
+
+  PKG-I/II enrichment in hypertrophic cells accounts for the partition, does not survive the primary
+
+  data and has been retracted (see pkg2_kinase and CORR-003). A live alternative from the same
+
+  microarray is zone-specific ligand clearance: CNP induces Npr3 16-fold in the hypertrophic zone and
+
+  nowhere else (Agoston 2007). Note also that the zonal partition itself is graded rather than
+
+  exclusive - BrdU incorporation is significantly reduced in the cartilage-specific Npr2 knockout, not
+
+  merely trending down as in the Nppc knockout (Nakao 2015).
 
   '
 quantitative:
 - parameter: hypertrophic zone thickness, cartilage-specific Npr2 knockout vs control
   value: '23.0'
   unit: '% of control'
-  conditions: proximal tibia, Col2a1-Cre;Npr2 fl/fl, type X collagen IHC
+  conditions: proximal tibia, 2 weeks of age, Col2a1-Cre;Npr2 fl/fl, type X collagen IHC
   species: mouse
   source_ref: nakao2015
-  uncertainty: significant vs control
+  uncertainty: significant vs control; n=5 per group (figure legend)
+- parameter: BrdU-positive chondrocyte index, cartilage-specific Npr2 knockout vs control
+  value: significantly reduced
+  unit: '% of nuclei in proliferative zone'
+  conditions: proximal tibia, 2 h BrdU pulse; contrast with the cartilage-specific Nppc knockout in which
+    the same index only TRENDED lower
+  species: mouse
+  source_ref: nakao2015
+  uncertainty: reported as significant; absolute values not tabulated in text
+  value_unverified: true
+- parameter: Npr3 (clearance receptor) mRNA induction by CNP, hypertrophic zone
+  value: '16'
+  unit: fold
+  conditions: micro-dissected mouse tibia organ culture, 1 uM CNP, real-time PCR; p38-independent; no
+    induction in any other zone
+  species: mouse
+  source_ref: agoston2007
+  uncertainty: statistically significant by real-time PCR; not significant in the microarray
 - parameter: non-hypertrophic layer thickness, cartilage-specific Npr2 knockout vs control
   value: '71.1'
   unit: '% of control'
   conditions: proximal tibia, Col2a1-Cre;Npr2 fl/fl, type II collagen IHC
   species: mouse
   source_ref: nakao2015
-  uncertainty: n not stated in text
+  uncertainty: n=5 per group (figure legend)
 - parameter: femur length, cartilage-specific Npr2 knockout vs control
   value: '45.3'
   unit: '% of control'
@@ -127,9 +160,12 @@ quantitative:
   source_ref: lauffer2020
   uncertainty: n=3, one family
 localization:
-- 'mouse PHZ: GC-B protein reported by IHC (nakao2015)'
-- 'mouse RZ, PZ and HZ: NPR2 transcript reported at similar levels across all three zones by zonal microarray
-  (agoston2007)'
+- 'mouse PHZ: prehypertrophic GC-B protein is asserted by the Kyoto group but is NOT data in nakao2015
+  - that paper cites it to earlier work and uses GC-B IHC only to confirm knock-down. True primary
+  unidentified (g_l2d_002)'
+- 'mouse resting/proliferative (combined) vs hypertrophic vs mineralized: Npr2 transcript similar across
+  these three compartments by zonal microarray (agoston2007). This study makes NO resting-versus-proliferative
+  comparison; the atlas previously mis-stated its compartments as RZ/PZ/HZ'
 - 'human growth plate: NPR2 zonal protein map unconfirmed'
 human_evidence: direct
 human_evidence_note: A complete human three-state dosage series (biallelic loss, heterozygous loss, gain
@@ -206,14 +242,22 @@ key_refs:
   pmid: '17374144'
   first_author: Agoston H
   year: 2007
-  type: primary_abstract_only
-  one_line_finding: NPR2 transcript is similar across zones while PKG-I/II are much higher in hypertrophic
-    cells.
+  type: primary
+  one_line_finding: Npr2/Nppc/Npr3 mRNA similar across resting-proliferative (combined), hypertrophic
+    and mineralized compartments; Prkg1 5.9-fold and Prkg2 4.4-fold hypertrophic-enriched (mRNA only);
+    CNP induces Npr3 16-fold in the hypertrophic zone alone.
 open_questions:
 - g_l3core_003
 - g_l3core_004
+- g_l2d_001
+- g_l2d_002
 contradicts:
 - nakao2015
 - agoston2007
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. nakao2015, agoston2007, chikuda2004 and lauffer2020
+  read in FULL. Verdict SCOPED - two source-attribution errors corrected (prehypertrophic GC-B IHC not
+  attributable to nakao2015; agoston2007 compartments are not RZ/PZ/HZ) and the PKG-II zonal explanation
+  retracted per CORR-003.
 last_verified: '2026-08-05'
-pending_source: nakao2015

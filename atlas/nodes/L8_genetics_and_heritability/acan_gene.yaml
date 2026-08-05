@@ -1,7 +1,118 @@
 id: acan_gene
 name: ACAN
+aliases:
+- aggrecan gene
+- ACAN haploinsufficiency
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Heterozygous loss-of-function variants in ACAN, which encodes the growth-plate proteoglycan
+
+  aggrecan, produce autosomal dominant short stature with advanced rather than delayed bone age
+  -
+
+  an unusual combination that inverts the normal clinical heuristic for short stature. Nilsson
+  2014
+
+  identified novel heterozygous ACAN variants by whole-exome sequencing in three families with
+
+  dominant short stature, advanced bone age and premature growth cessation; affected adults reached
+
+  -2.3 to -4.2 SDS and affected children measured -1.9 to -3.5 SDS. Gkourogianni 2017 extended
+  this
+
+  to 103 individuals from 20 families, with perfect cosegregation of variant and phenotype: adult
+
+  median height -2.8 SDS (range -5.9 to -0.9), childhood median -2.0 SDS (range -4.2 to -0.6),
+  and
+
+  frequent early-onset osteoarthritis (12 of 20 families) and intervertebral disc disease (9 of
+  20).
+
+  The direction of the bone-age effect is the mechanistically informative part: aggrecan
+
+  haploinsufficiency does not simply slow the plate, it accelerates its maturation and shortens
+  the
+
+  total growth window. No genotype-phenotype correlation was found between mutation class and
+  joint
+
+  involvement, so within this gene the dominant-negative/haploinsufficiency distinction does not
+
+  appear to stratify outcome the way it does for COL10A1. The childhood-to-adult widening of the
+
+  deficit (-2.0 to -2.8 SDS median) is itself a quantitative statement that the loss accrues across
+
+  puberty rather than being set prenatally.'
+quantitative:
+- parameter: adult height, ACAN heterozygotes
+  value: '-2.8'
+  unit: SDS
+  conditions: n=103 individuals from 20 families, median
+  species: human
+  source_ref: gkourogianni2017
+  uncertainty: range -5.9 to -0.9
+- parameter: childhood height, ACAN heterozygotes
+  value: '-2.0'
+  unit: SDS
+  conditions: same cohort, median
+  species: human
+  source_ref: gkourogianni2017
+  uncertainty: range -4.2 to -0.6
+- parameter: adult height, ACAN heterozygotes (discovery families)
+  value: -2.3 to -4.2
+  unit: SDS
+  conditions: 3 families, autosomal dominant short stature with advanced bone age
+  species: human
+  source_ref: nilsson2014_2
+  uncertainty: range across affected individuals
+- parameter: families with early-onset osteoarthritis
+  value: '12'
+  unit: of 20 families
+  conditions: ACAN heterozygous short stature cohort
+  species: human
+  source_ref: gkourogianni2017
+  uncertainty: not applicable (count)
+- parameter: families with intervertebral disc disease
+  value: '9'
+  unit: of 20 families
+  conditions: same cohort
+  species: human
+  source_ref: gkourogianni2017
+  uncertainty: not applicable (count)
+localization:
+- 'human: germline; effector tissue is growth plate and articular cartilage extracellular matrix'
+human_evidence: direct
+human_evidence_note: Two independent human cohorts with measured adult and childhood stature and
+  cosegregation testing.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Claims here are restricted to human allele-dose and measured stature;
+  the murine cmd/nanomelia aggrecan literature is not invoked.
+confidence: A
+key_refs:
+- ref_id: nilsson2014_2
+  pmid: '24762113'
+  doi: 10.1210/jc.2014-1332
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: Heterozygous ACAN variants in three families cause short stature (adult -2.3
+    to -4.2 SDS) with advanced bone age and early growth cessation.
+- ref_id: gkourogianni2017
+  pmid: '27870580'
+  doi: 10.1210/jc.2016-3313
+  first_author: Gkourogianni A
+  year: 2017
+  type: primary
+  one_line_finding: '103 individuals from 20 ACAN families: adult median height -2.8 SDS, childhood
+    -2.0 SDS, with early osteoarthritis in 12/20 families.'
+- ref_id: andrade2022
+  pmid: '36373817'
+  doi: 10.1530/ec-22-0214
+  first_author: Andrade NLM
+  year: 2022
+  type: primary
+  one_line_finding: ACAN variants in 2 of 102 children classified as idiopathic short stature.
 last_verified: '2026-08-05'

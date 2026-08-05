@@ -1,7 +1,117 @@
 id: nppc_gene
 name: NPPC
+aliases:
+- CNP gene
+- natriuretic peptide precursor C
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: 'NPPC encodes the CNP precursor and is the ligand-side member of the CNP/NPR2 dose axis,
+  so its
+
+  human allelic series is the mirror image of NPR2''s. Overexpression comes first historically:
+
+  Bocciardi 2007 characterised a de novo balanced t(2;7)(q37.1;q21.3) in a girl with Marfanoid
+
+  habitus and skeletal overgrowth, with the chromosome 2 breakpoint near NPPC, plasma CNP doubled
+
+  relative to five controls, and NPPC substantially overexpressed in her fibroblasts. Moncla 2007
+
+  then found two further patients with balanced translocations breaking in the same 2q37.1 band
+
+  (involving chromosomes 8 and 13), the same overgrowth phenotype and the same NPPC overexpression,
+
+  and proposed that the breakpoints separate NPPC from a negative regulatory element on chromosome
+  2
+
+  - a mutational mechanism defined by three independent chromosomal partners converging on one
+  gene.
+
+  Loss of function was found much later: Hisado-Oliva 2018 screened 668 patients (357 with
+
+  disproportionate short stature, 311 with autosomal dominant idiopathic short stature) plus 29
+  ISS
+
+  families and identified two heterozygous NPPC mutations, both in the highly conserved CNP ring,
+
+  both giving significant reductions in cGMP synthesis, cosegregating with short stature and small
+
+  hands. One of the two alleles corresponds to the spontaneous mouse lbab long-bone-abnormality
+
+  mutation. The gene is therefore bidirectionally validated in humans, but the loss-of-function
+  arm
+
+  rests on two families and yields no published effect size in SDS, which is the main quantitative
+
+  hole on this node.'
+quantitative:
+- parameter: plasma CNP concentration, NPPC-overexpressing translocation carrier
+  value: '2'
+  unit: fold vs control
+  conditions: de novo balanced t(2;7)(q37.1;q21.3); compared with 5 normal controls
+  species: human
+  source_ref: bocciardi2007
+  uncertainty: n=1 case vs 5 controls; CI not reported
+- parameter: independent 2q37.1 translocation patients with NPPC overexpression and overgrowth
+  value: '3'
+  unit: patients
+  conditions: breakpoint partners on chromosomes 7, 8 and 13
+  species: human
+  source_ref: moncla2007
+  uncertainty: not applicable (count)
+- parameter: heterozygous NPPC loss-of-function mutations found
+  value: '2'
+  unit: mutations
+  conditions: screen of 668 patients (357 disproportionate short stature, 311 AD idiopathic short
+    stature) plus 29 ISS families
+  species: human
+  source_ref: hisadooliva2018
+  uncertainty: not applicable (count)
+localization:
+- 'human: germline; ligand acts on NPR2 in growth plate cartilage'
+human_evidence: direct
+human_evidence_note: Overgrowth from NPPC overexpression is documented in three independent translocation
+  patients; loss of function is documented in two families with functional cGMP assays.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Stature claims rest entirely on measured human phenotypes; the mouse
+  lbab allele is cited only as convergent support for pathogenicity of one variant.
+confidence: A
+claim_grades:
+- claim: Increased NPPC expression causes human skeletal overgrowth.
+  grade: A
+  basis: Three independent patients with different translocation partners, each with measured
+    NPPC overexpression (bocciardi2007, moncla2007).
+- claim: Heterozygous NPPC loss of function causes autosomal dominant short stature.
+  grade: B
+  basis: Two mutations in one screening study with in vitro cGMP confirmation and cosegregation;
+    no independent replication cohort and no reported SDS effect size.
+key_refs:
+- ref_id: bocciardi2007
+  pmid: '17373680'
+  doi: 10.1002/humu.20511
+  first_author: Bocciardi R
+  year: 2007
+  type: primary
+  one_line_finding: Balanced t(2;7) near NPPC gives skeletal overgrowth with plasma CNP doubled
+    versus five controls and NPPC overexpressed in fibroblasts.
+- ref_id: moncla2007
+  pmid: '17676597'
+  doi: 10.1002/humu.20611
+  first_author: Moncla A
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Two further 2q37.1 translocation patients (partners chr8, chr13) show the
+    same NPPC overexpression and overgrowth phenotype.
+- ref_id: hisadooliva2018
+  pmid: '28661490'
+  doi: 10.1038/gim.2017.66
+  first_author: Hisado-Oliva A
+  year: 2018
+  type: primary
+  one_line_finding: Two heterozygous NPPC CNP-ring mutations reduce cGMP synthesis and cause autosomal
+    dominant short stature with small hands.
+open_questions:
+- g_l8gen_002
 last_verified: '2026-08-05'

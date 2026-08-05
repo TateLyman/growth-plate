@@ -10,18 +10,27 @@ summary: 'Collagen X is a short-chain non-fibrillar network collagen expressed b
   and by essentially nothing else in the skeleton, which makes COL10A1 the canonical marker of the hypertrophic
   zone and of the thin calcified cartilage layer under articular cartilage. Its C-terminal NC1 domain
   trimerises and drives assembly into a hexagonal lattice concentrated in the pericellular matrix of hypertrophic
-  cells. Its loss is the single most instructive negative result in this layer. Col10a1-null mice were
-  originally reported to have entirely normal long bone growth and development; a later analysis of the
-  same null found a compressed growth plate with reduced hypertrophic zone height and altered haematopoiesis,
-  so the phenotype is real but subtle. Human COL10A1 haploinsufficiency causes Schmid metaphyseal chondrodysplasia,
+  cells. Its loss is the most instructive loss-of-function result in this layer, and it does not point where
+  the field says it does. Col10a1-null mice were originally reported to have entirely normal long bone
+  growth and development; re-analysis of the same null line found the growth plate width reduced by
+  about 14% at day 21 with the PROLIFERATIVE zone more compressed than the hypertrophic - explicitly
+  the opposite of the collagen X dominant-interference transgenic - together with about 10.8% perinatal
+  lethality at week three, about 14% total lethality by 12 weeks, marrow aplasia and lymphatic organs
+  at about 80% of control (Gress 2000). A collagen expressed in hypertrophic chondrocytes and nowhere
+  else therefore produces its clearest histological effect one zone upstream, which is a
+  non-cell-autonomous action through an unidentified intermediate. Human COL10A1 haploinsufficiency causes Schmid metaphyseal chondrodysplasia,
   which is mild: short stature, coxa vara, genu varum and a waddling gait, with normal intelligence and
   normal life expectancy. Most Schmid alleles are nonsense or frameshift alleles degraded by nonsense-mediated
   decay, so the disease is true haploinsufficiency, although at least one frameshift allele (p.W651fsX666)
   blocks trimerisation of the wild-type chain and acts dominant-negatively. The decisive human experiment
   is CRISPR deletion in human iPSC-derived chondrocytes: COL10A1-/- cells undergo normal hypertrophic
-  differentiation in vitro and normal endochondral ossification after transplantation. Collagen X is therefore
-  a marker of hypertrophy that is largely dispensable for it, and any model that makes collagen X the
-  structural prerequisite for cartilage mineralization is contradicted by three independent systems.'
+  differentiation in vitro, but the transplanted bone-area fraction was significantly larger in one of
+  two iPSC backgrounds and the hypertrophic transcriptome shifted away from proliferating-phase and
+  toward calcification-phase genes, which the authors read as accelerated differentiation (Kamakura
+  2023). Collagen X is therefore a marker of hypertrophy that is dispensable for hypertrophy itself,
+  and any model that makes collagen X the structural prerequisite for cartilage mineralization is
+  contradicted by three independent systems - but it is not phenotypically silent: both loss-of-function
+  systems shift the proliferation/ossification balance toward ossification.'
 quantitative:
 - parameter: Effect of homozygous Col10a1 deletion on long bone length in mouse
   value: '0'
@@ -30,15 +39,49 @@ quantitative:
   species: mouse
   source_ref: rosati1994
   uncertainty: negative result; power not stated
-- parameter: Effect of COL10A1-/- on hypertrophic differentiation of human iPSC chondrocytes
+  superseded_model: true
+  note: >-
+    The measurement stands - no detectable long-bone length difference was reported. What is superseded
+    is its use as evidence that the null has no phenotype. Gress 2000 re-examined the SAME null line
+    and found ~14% growth plate width reduction, proliferative-zone-dominant compression and ~14%
+    lethality. See CORR-002.
+- parameter: Growth plate width, Col10a1-null vs control
+  value: '-14'
+  unit: '% of control'
+  conditions: day 21, histomorphometry; compression is greater in the proliferative than the hypertrophic
+    zone, opposite to the collagen X dominant-interference transgenic (>18% reduction, hypertrophic-dominant)
+  species: mouse
+  source_ref: gress2000
+  uncertainty: stated as an overall decrease; per-animal n not given in text
+- parameter: Total lethality of Col10a1-null mice
+  value: '14'
+  unit: '%'
+  conditions: colony-scale survival; ~10.8% perinatal at week 3, remainder by 12 weeks
+  species: mouse
+  source_ref: gress2000
+  uncertainty: colony percentages; no confidence interval reported
+- parameter: Effect of COL10A1-/- on hypertrophic differentiation markers of human iPSC chondrocytes
   value: '0'
   unit: detectable difference in differentiation markers
-  conditions: dual sgRNA CRISPR, 3D pellet induction, transplantation into immunodeficient mice
+  conditions: dual sgRNA CRISPR, 3D pellet induction to the hypertrophic phase
   species: ipsc_derived
   source_ref: kamakura2023
-  uncertainty: bone fraction trended larger in COL10A1-/- transplants
+  uncertainty: genuinely null for differentiation markers; NOT null for the in vivo bone-area readout
+    - see the following row
+- parameter: Bone-area fraction of transplanted proliferating-stage COL10A1-/- iPSC chondrocyte pellets
+  value: increased
+  unit: proportion of tissue area
+  conditions: day-14 pellets transplanted into immunodeficient mice, collected 98 days later; COL II-positive
+    area smaller and bone area larger in COL10A1-/-
+  species: ipsc_derived
+  source_ref: kamakura2023
+  uncertainty: statistically significant in the 414C2 background only, not in 1231A3; authors interpret
+    as accelerated differentiation
+  value_unverified: true
 localization:
 - 'mouse HZ: confirmed, Col10a1 restricted to hypertrophic chondrocytes (rosati1994, gress2000)'
+- 'mouse PZ: no collagen X, yet this is the zone most compressed in the null (gress2000) - the effect
+  of collagen X loss is displaced one zone upstream of its expression domain'
 - 'human HZ: confirmed by COL10A1 expression and by the Schmid phenotype being metaphyseal (warman1993)'
 - 'articular calcified cartilage layer: collagen X present around the cells (eyre2002)'
 - 'human RZ/PZ: absent'
@@ -67,8 +110,9 @@ key_refs:
   first_author: Gress CJ
   year: 2000
   type: primary_abstract_only
-  one_line_finding: Collagen X null mice do have growth plate compression and altered haematopoiesis,
-    refining the earlier negative result
+  one_line_finding: Collagen X null mice have ~14% growth plate width reduction with the PROLIFERATIVE
+    zone more compressed than the hypertrophic (opposite to the collagen X transgenic), ~14% total lethality,
+    marrow aplasia and lymphatic organs at ~80% of control
 - ref_id: warman1993
   pmid: '8220429'
   first_author: Warman ML
@@ -86,8 +130,9 @@ key_refs:
   first_author: Kamakura T
   year: 2023
   type: primary
-  one_line_finding: COL10A1-/- human iPSC-derived chondrocytes hypertrophy and ossify normally in vitro
-    and in vivo
+  one_line_finding: COL10A1-/- human iPSC-derived chondrocytes hypertrophy normally, but transplants
+    show a significantly larger bone-area fraction in one of two iPSC backgrounds and a transcriptome
+    shifted toward calcification-phase genes - accelerated differentiation, not a null result
 - ref_id: yang2025
   pmid: '40398448'
   first_author: Yang J
@@ -111,5 +156,12 @@ key_refs:
     a marked pretranslational increase between 20 and 24 weeks gestation
 open_questions:
 - g_l5matrix_005
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. gress2000 and kamakura2023 read in FULL. Verdict
+  SUPERSEDED for the zonal statement; see atlas/audit/corrections.md CORR-002 and
+  atlas/audit/mechanism_audit.md.
+contradicts:
+- rosati1994
 last_verified: '2026-08-05'
 pending_source: meng2025

@@ -1,7 +1,107 @@
 id: fgfr3_gene
 name: FGFR3
+aliases:
+- fibroblast growth factor receptor 3 gene
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  FGFR3 is the clearest bidirectional dose experiment in human skeletal genetics because activating
+  and inactivating alleles of the same receptor move stature in opposite directions, and because the
+  activating series is graded rather than binary. Shiang 1994 and Rousseau 1994 independently showed
+  that achondroplasia is caused by heterozygous transmembrane-domain substitutions at Gly380, found
+  on essentially all achondroplasia chromosomes; Tavormina 1995 showed that thanatophoric dysplasia
+  types I and II arise from distinct, more strongly activating FGFR3 domains; Bellus 1995 showed
+  hypochondroplasia arises from the weaker tyrosine-kinase-domain N540K. FGFR3 is thus a negative
+  regulator of bone growth in which the degree of constitutive activation predicts the degree of
+  shortening across four clinically distinct disorders. The loss-of-function arm was found last:
+  Toydemir 2006 mapped CATSHL syndrome - camptodactyly, tall stature, scoliosis, hearing loss - to
+  FGFR3 p.R621H, a partial loss of kinase function that recapitulates the Fgfr3-knockout mouse
+  phenotype and therefore establishes in humans that reducing FGFR3 signalling lengthens bone. A
+  second, independent CATSHL family with p.R621C at the same residue has since been reported.
+  Separately, FGFR3 is a paternal-age-effect gene: Moura 2024 measured 10 FGFR3 missense
+  substitutions in postmortem human testis by digital PCR and found 9 raised ligand-independent
+  signalling, several forming age-correlated subclonal expansions - the germline selection mechanism
+  that makes achondroplasia predominantly a de novo, paternally derived mutation.
+quantitative:
+- parameter: achondroplasia chromosomes carrying a Gly380 transmembrane substitution
+  value: '16'
+  unit: of 16
+  conditions: FGFR3 c.1138G>A or G>C
+  species: human
+  source_ref: shiang1994
+  uncertainty: not applicable (count)
+- parameter: FGFR3 missense substitutions raising ligand-independent signalling in human testis
+  value: '9'
+  unit: of 10 tested
+  conditions: digital PCR plus biophysical signalling assay on dissected postmortem testis
+  species: human
+  source_ref: moura2024
+  uncertainty: not applicable (count)
+- parameter: FGFR3 variants found in idiopathic short stature panel screening
+  value: '2'
+  unit: of 102 patients
+  conditions: targeted multigene panel
+  species: human
+  source_ref: andrade2022
+  uncertainty: not applicable (count)
+localization:
+- 'human: germline; receptor acts in proliferative and prehypertrophic growth plate chondrocytes'
+human_evidence: direct
+human_evidence_note: Gain- and loss-of-function alleles both defined in humans with measured stature
+  and independently replicated across four disorders.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: All allele-to-stature claims are human; the mouse Fgfr3 knockout is cited
+  only as concordant background for the CATSHL direction.
+confidence: A
+key_refs:
+- ref_id: shiang1994
+  pmid: '7913883'
+  doi: 10.1016/0092-8674(94)90302-6
+  first_author: Shiang R
+  year: 1994
+  type: primary
+  one_line_finding: Achondroplasia is caused by heterozygous FGFR3 transmembrane Gly380 substitutions
+    present on all 16 achondroplasia chromosomes examined.
+- ref_id: rousseau1994
+  pmid: '8078586'
+  doi: 10.1038/371252a0
+  first_author: Rousseau F
+  year: 1994
+  type: primary_abstract_only
+  one_line_finding: Independent identification of FGFR3 mutations as the cause of achondroplasia.
+- ref_id: tavormina1995
+  pmid: '7773297'
+  doi: 10.1038/ng0395-321
+  first_author: Tavormina PL
+  year: 1995
+  type: primary
+  one_line_finding: Thanatophoric dysplasia types I and II are caused by distinct FGFR3 mutations
+    more strongly activating than the achondroplasia allele.
+- ref_id: bellus1995
+  pmid: '7670477'
+  doi: 10.1038/ng0795-357
+  first_author: Bellus GA
+  year: 1995
+  type: primary
+  one_line_finding: Hypochondroplasia is caused by the weaker tyrosine-kinase-domain FGFR3 N540K
+    substitution.
+- ref_id: toydemir2006
+  pmid: '17033969'
+  doi: 10.1086/508433
+  first_author: Toydemir RM
+  year: 2006
+  type: primary
+  one_line_finding: FGFR3 p.R621H causes partial loss of function and CATSHL syndrome with tall
+    stature, establishing that reduced FGFR3 signalling lengthens human bone.
+- ref_id: moura2024
+  pmid: '38411226'
+  doi: 10.1093/gbe/evae015
+  first_author: Moura S
+  year: 2024
+  type: primary
+  one_line_finding: Nine of ten FGFR3 missense substitutions assayed in human testis raise ligand-independent
+    signalling; several form age-correlated subclonal germline expansions.
 last_verified: '2026-08-05'

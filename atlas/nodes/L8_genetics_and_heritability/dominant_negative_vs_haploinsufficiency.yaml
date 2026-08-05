@@ -1,7 +1,111 @@
 id: dominant_negative_vs_haploinsufficiency
 name: Dominant-negative versus haploinsufficiency dose effects
+aliases:
+- mutation class and effect size
+- poison-subunit versus reduced-dosage
 type: process
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  Two heterozygous alleles of the same gene can produce very different phenotypes depending on whether
+  the mutant product is absent or present-but-defective, and the growth plate provides the cleanest
+  human measurement of that difference anywhere in medicine. In COL10A1 metaphyseal chondrodysplasia
+  Schmid, Meng 2025 pooled 4 new and 124 published cases and found height Z of -3.62 +/- 1.95 for
+  missense variants versus -1.99 +/- 1.28 for truncating variants (P = 0.013), with more metaphyseal
+  irregularity in the missense group (P = 0.019). Truncating COL10A1 transcripts are degraded by
+  nonsense-mediated decay, leaving one functional allele; missense alleles make a stable chain that
+  disrupts trimerisation of the wild-type product, as Yang 2025 demonstrated directly for the
+  p.W651fsX666 allele. Dominant-negative interference therefore costs about 1.6 SDS more stature than
+  losing one copy outright, at the same locus, in the same disease. The same logic explains why
+  COL2A1 glycine substitutions give lethal-to-severe type II collagenopathies while whole-gene
+  deletions give the mild Stickler spectrum, and why COMP missense variants concentrated in the
+  type-3 calcium-binding repeat (87.7% of 471 probands) are cytotoxic through ER retention rather
+  than dosage-limiting. The generalisation has a documented exception within this layer: in ACAN,
+  Gkourogianni 2017 found no genotype-phenotype correlation between mutation class and joint
+  involvement across 20 families, so the dominant-negative premium is locus-specific and must be
+  demonstrated rather than assumed.
+quantitative:
+- parameter: height Z, COL10A1 missense (dominant-negative)
+  value: '-3.62'
+  unit: SDS
+  conditions: 128 metaphyseal chondrodysplasia Schmid cases
+  species: human
+  source_ref: meng2025
+  uncertainty: SD 1.95; P=0.013 versus truncating
+- parameter: height Z, COL10A1 truncating (haploinsufficiency)
+  value: '-1.99'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: meng2025
+  uncertainty: SD 1.28
+- parameter: stature premium of dominant-negative over haploinsufficient COL10A1 alleles
+  value: '1.63'
+  unit: SDS
+  conditions: difference of the two group means
+  species: human
+  source_ref: meng2025
+  uncertainty: derived from the reported means; no CI on the difference is published
+- parameter: COMP probands with a variant in the type-3 calcium-binding repeat
+  value: '87.7'
+  unit: '%'
+  conditions: 413 of 471 probands across 106 publications
+  species: human
+  source_ref: ni2026
+  uncertainty: 80.8% of all COMP variants are missense
+localization:
+- 'human: applies at any locus whose product is a multimer or matrix assembly'
+human_evidence: direct
+human_evidence_note: Direct human height comparison between mutation classes at a single locus,
+  with an in vitro trimerisation assay establishing the mechanism.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human genotype-phenotype comparison with human-protein biochemistry.
+confidence: B
+claim_grades:
+- claim: At COL10A1, dominant-negative missense alleles reduce stature more than haploinsufficient
+    truncating alleles.
+  grade: B
+  basis: One pooled 128-case cohort with P=0.013 (meng2025), mechanistically corroborated by an
+    independent trimerisation assay (yang2025); the height comparison itself has not been repeated
+    in a second cohort.
+- claim: The dominant-negative premium generalises across matrix-protein loci.
+  grade: C
+  basis: Consistent with the COL2A1 and COMP genotype-phenotype patterns but explicitly absent
+    in ACAN (gkourogianni2017), so the generalisation has a documented counterexample.
+key_refs:
+- ref_id: meng2025
+  pmid: '41454937'
+  doi: 10.1007/s00223-025-01457-8
+  first_author: Meng L
+  year: 2025
+  type: primary
+  one_line_finding: COL10A1 missense variants give height Z -3.62 +/- 1.95 versus -1.99 +/- 1.28
+    for truncating variants (P=0.013) in 128 cases.
+- ref_id: yang2025
+  pmid: '40398448'
+  doi: 10.1093/hmg/ddaf071
+  first_author: Yang J
+  year: 2025
+  type: primary
+  one_line_finding: COL10A1 p.W651fsX666 impairs trimerisation of normal collagen X, demonstrating
+    a dominant-negative effect on the wild-type allele.
+- ref_id: ni2026
+  pmid: '41798190'
+  doi: 10.3389/fendo.2026.1740770
+  first_author: Ni X
+  year: 2026
+  type: systematic_review
+  one_line_finding: 80.8% of COMP variants are missense and 87.7% of probands carry one in the
+    type-3 repeat domain, the domain whose misfolding drives ER retention.
+- ref_id: gkourogianni2017
+  pmid: '27870580'
+  doi: 10.1210/jc.2016-3313
+  first_author: Gkourogianni A
+  year: 2017
+  type: primary
+  one_line_finding: No genotype-phenotype correlation between ACAN mutation class and joint involvement
+    across 20 families - the documented counterexample.
 last_verified: '2026-08-05'

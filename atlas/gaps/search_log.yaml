@@ -1396,3 +1396,58 @@ searches:
     and oncology resistance work. A companion query "infigratinib AND (G380R OR transmembrane) AND FGFR3" returned 284 hits
     of which the top 8 screened likewise report no G380R potency value. Patents and regulatory submissions were not searchable
     here and are the most likely repository - flagged P1.'
+- gap_id: g_l12l7_005
+  database: Europe PMC
+  exact_query_string: (FGFR3) AND (G380R OR "Gly380Arg") AND (STAT1)
+  filters: format=json, resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 43
+  screened_count: 25
+  reason_none_qualified: Of the 25 highest-relevance records, the only study that tests the achondroplasia G380R allele for
+    STAT1 activation is Krejci 2008 (PMID 19088846), and it is NEGATIVE - no activatory STAT1(Y701) phosphorylation by G380R
+    in a cell-free kinase assay or in RCS chondrocytes or 293T cells. Every other hit is a review, an FGFR3 inhibitor pharmacology
+    paper, a cancer-signalling paper, or a mouse model. No record measures STAT1 phosphorylation in human achondroplasia growth
+    plate tissue, and no record reconciles Krejci 2008 with the ligand-independent STAT1 activation reported in human thanatophoric
+    dysplasia type I fetal chondrocytes. The gap is a human-tissue gap plus an unresolved contradiction, not an absence of
+    literature.
+- gap_id: g_l12l7_006
+  database: Europe PMC
+  exact_query_string: (teriparatide OR abaloparatide OR "PTH1R agonist") AND ("open epiphyses" OR "growth plate" OR "linear
+    growth" OR "height velocity") AND (children OR paediatric OR pediatric)
+  filters: format=json, resultType=core, pageSize=30, no date limit
+  date_run: '2026-08-05'
+  hit_count: 318
+  screened_count: 30
+  reason_none_qualified: 'The retrieved set is dominated by paediatric bone-fragility, osteoporosis and osteogenesis imperfecta
+    literature in which linear growth is not an endpoint. Exactly one record reports linear growth during PTH(1-34) exposure
+    in children: Winer 2025 (PMID 39883563), a secondary pooled analysis of hypoparathyroidism cohorts (n=27, mean baseline
+    age 13.7 +/- 5.5 y) reporting height-for-age Z trajectories that diverge between two different underlying diseases (APS-1
+    versus activating CaSR mutation) with no untreated control. It does not qualify as a test of PTH1R agonism on growth:
+    the comparison is between diseases, not between treated and untreated. No record reports a trial in which a PTH1R agonist
+    was given for a growth indication with a prespecified linear-growth endpoint.'
+- gap_id: g_l12l7_008
+  database: Europe PMC
+  exact_query_string: (NPR2 OR "guanylyl cyclase B" OR "GC-B") AND (phosphorylation OR dephosphorylation) AND (human) AND
+    ("growth plate" OR cartilage OR chondrocyte) AND (achondroplasia OR FGFR3)
+  filters: format=json, resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 79
+  screened_count: 25
+  reason_none_qualified: 'All qualifying mechanistic records are rodent or transfected-cell studies: Robinson 2017 (rat chondrosarcoma),
+    Shuhaibar 2017 (intact mouse tibia, in vivo cGMP biosensor), Wagner 2021 (mouse GC-B 7E/7E crossed into FGFR3-G380R),
+    plus mouse phosphomimetic and epitope-tagged receptor models and a phosphatase-inhibitor study. The remainder are reviews
+    of CNP-analogue therapy, clinical meta-analyses, or unrelated natriuretic-peptide biology. No record measures NPR2/GC-B
+    phosphorylation state, or cGMP, in human growth plate tissue from any donor, achondroplastic or control.'
+- gap_id: g_l12l7_009
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis) AND (human) AND ("resting zone" OR "reserve zone") AND (number OR density
+    OR count OR quantif*) AND (puberty OR pubertal OR age OR fusion)
+  filters: format=json, resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 648
+  screened_count: 25
+  reason_none_qualified: The human records retrieved (Chu 2026 and the Avijgan 2025/2026 spatial-transcriptomics series, plus
+    a 2026 systematic review of resting-zone quiescence) characterise human resting-zone cell IDENTITY and quiescence state,
+    not cell number per unit plate area, and none stratifies by pubertal stage or by proximity to fusion. Everything reporting
+    resting-zone cell counts as a function of age is rodent or rabbit. No human stereological series exists, so the number
+    needed to discriminate depletion-causes-fusion from fusion-imposed-on-a-depleted-plate has never been measured.

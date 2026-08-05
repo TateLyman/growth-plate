@@ -1,7 +1,85 @@
 id: genomic_imprinting_growth
 name: Genomic imprinting and growth
+aliases:
+- parent-of-origin effects on stature
 type: process
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  A small number of human loci are expressed from only one parental allele, and they are
+  disproportionately growth-regulating - which is what the parental-conflict hypothesis predicts, and
+  which gives human genetics a set of natural single-dose experiments no other mechanism supplies.
+  The two best-characterised clusters both cause reciprocal growth phenotypes. At 11p15.5, loss of
+  paternal ICR1 methylation reduces IGF2 and causes Silver-Russell syndrome with severe intrauterine
+  and postnatal growth retardation, while gain of maternal ICR1 methylation causes Beckwith-Wiedemann
+  overgrowth; disruption of the same region therefore moves growth in opposite directions depending
+  on which parental allele is affected. At 14q32.2, hypomethylation of the paternal MEG3/DLK1 region
+  gives Temple syndrome with pre- and postnatal growth failure, while the reciprocal defect gives
+  Kagami-Ogata syndrome with prenatal overgrowth. Abi Habib 2019 supplied the finding that links the
+  two clusters mechanistically: 14q32.2 hypomethylation alters expression not only at that locus but
+  across other imprinted genes, and specifically lowers IGF2 at 11p15.5, producing a shared
+  transcriptional signature that explains the long-noted clinical overlap between Temple and
+  Silver-Russell syndromes. Imprinted growth regulation is therefore not a set of independent loci
+  but a network with IGF2 as a convergence point - a claim made from patient-derived expression
+  profiling rather than from mouse.
+quantitative:
+- parameter: Silver-Russell patients with paternal ICR1 loss of methylation
+  value: '60'
+  unit: '%'
+  conditions: 11p15.5 imprinting disorder cohorts
+  species: human
+  source_ref: abi2019
+  uncertainty: approximate; the commonest single molecular cause
+- parameter: postnatal short stature in genetically confirmed Temple syndrome
+  value: '87.0'
+  unit: '%'
+  conditions: 60 Japanese patients with UPD(14)mat, epimutation or deletion
+  species: human
+  source_ref: ogawa2025
+  uncertainty: not applicable (proportion)
+- parameter: central precocious puberty in Temple syndrome
+  value: '86.0'
+  unit: '%'
+  conditions: same cohort
+  species: human
+  source_ref: ogawa2025
+  uncertainty: not applicable (proportion)
+localization:
+- 'human: 11p15.5 (IGF2/H19, CDKN1C/KCNQ1OT1) and 14q32.2 (DLK1/MEG3) imprinted clusters'
+human_evidence: direct
+human_evidence_note: Human patient cohorts with molecularly defined methylation defects and patient-derived
+  expression profiling.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human imprinting disorders; mouse distal chromosome 7 models are not
+  used to support these claims because parental-transmission phenotypes are known to differ between
+  the species.
+confidence: B
+claim_grades:
+- claim: Reciprocal methylation defects at imprinted growth loci produce reciprocal growth phenotypes.
+  grade: A
+  basis: Two independent clusters (11p15.5 SRS/BWS, 14q32.2 Temple/Kagami-Ogata) each with reciprocal
+    patient groups and molecular confirmation.
+- claim: 14q32.2 hypomethylation acts partly by lowering IGF2 at 11p15.5, explaining Temple/Silver-Russell
+    overlap.
+  grade: D
+  basis: Single transcriptional profiling study (abi2019); not independently replicated.
+key_refs:
+- ref_id: abi2019
+  pmid: '30801013'
+  doi: 10.1126/sciadv.aau9425
+  first_author: Abi Habib W
+  year: 2019
+  type: primary
+  one_line_finding: 14q32.2 hypomethylation deregulates other imprinted genes and lowers IGF2
+    at 11p15.5, giving Temple and Silver-Russell syndromes a shared transcriptional signature.
+- ref_id: ogawa2025
+  pmid: '39693239'
+  doi: 10.1210/clinem/dgae883
+  first_author: Ogawa T
+  year: 2025
+  type: primary
+  one_line_finding: '60 genetically confirmed Temple syndrome patients: postnatal short stature
+    in 87.0% and central precocious puberty in 86.0%.'
 last_verified: '2026-08-05'

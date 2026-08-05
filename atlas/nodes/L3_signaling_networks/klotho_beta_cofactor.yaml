@@ -1,7 +1,85 @@
 id: klotho_beta_cofactor
 name: Beta-Klotho
+aliases:
+- KLB
+- beta-klotho
+- FGF21 co-receptor
 type: protein
 layer: L3
-stub: true
+stub: false
+summary: 'Beta-Klotho (KLB) is the single-pass transmembrane co-receptor that converts FGFR1 and FGFR3
+  from heparin-dependent paracrine receptors into receptors for the endocrine ligand FGF21; without KLB,
+  FGF21 does not signal. Its relevance to this atlas is that it is the only demonstrated molecular entry
+  point by which systemic caloric state reaches the growth plate through the FGF receptor family rather
+  than through the GH/IGF-1 axis. Wu 2012 detected Fgf21, Fgfr1, Fgfr3 and Klb transcripts in fetal and
+  3-week-old MOUSE growth plate chondrocytes, and showed that recombinant human FGF21 at 5-10 ug/ml suppressed
+  thymidine incorporation and Col10a1 mRNA, abolished the GH-stimulated increase in both, and reduced
+  125I-GH binding; siRNA against FGFR1 or ERK1 prevented every one of these effects, which localises the
+  action to an FGFR1-ERK arm in the chondrocyte itself rather than to a systemic route. Wu 2013 completed
+  the circuit in vivo: four weeks of food restriction in wild-type mice raised LEPROT and LEPROTL1 mRNA
+  in liver AND in the tibial growth plate, Fgf21-knockout mice did not show that induction, and giving
+  rhFGF21 back to food-restricted Fgf21-null mice restored it - so FGF21 is necessary for the undernutrition-induced
+  growth-plate GH insensitivity, acting by trafficking GH receptor away from the chondrocyte surface.
+  Two limits are load-bearing and must not be smoothed over: the concentrations that inhibited chondrocytes
+  (5-10 ug/ml) are far above physiological circulating FGF21, and KLB has never been localised in human
+  growth plate cartilage by any method, so the human arm of this pathway is inferred, not shown.'
+quantitative:
+- parameter: FGF21 concentration inhibiting chondrocyte thymidine incorporation and Col10a1 mRNA
+  value: 5-10
+  unit: ug/ml
+  conditions: cultured mouse growth plate chondrocytes, graded rhFGF21 0.01-10 ug/ml
+  species: mouse
+  source_ref: wu2012
+  uncertainty: lower concentrations (0.01-1 ug/ml) had no effect; no EC50 reported
+- parameter: duration of food restriction inducing growth-plate LEPROT/LEPROTL1
+  value: '4'
+  unit: weeks
+  conditions: wild-type versus Fgf21-knockout mice, tibial growth plate
+  species: mouse
+  source_ref: wu2013
+  uncertainty: induction absent in Fgf21-KO; restored by rhFGF21 add-back
+localization:
+- 'mouse growth plate chondrocyte: Klb, Fgfr1 and Fgfr3 mRNA confirmed at fetal and 3 weeks (wu2012)'
+- 'human growth plate: not examined - no protein, mRNA or in situ localization retrieved (gap g_l0l9_001)'
 human_evidence: absent
+human_evidence_note: No human growth plate expression or functional data for beta-Klotho or FGF21 were
+  retrieved; all data are murine or murine primary culture.
+species_basis:
+- mouse
+- in_vitro_animal_cell
+translation_risk: high
+translation_risk_reason: The entire mechanism rests on two papers from one laboratory in mouse, at FGF21
+  concentrations well above physiological, and humans differ from mice in the FGF21 response to undernutrition.
+  Restating this as a human pathway would be exactly the laundering this atlas exists to prevent.
+confidence: D
+claim_grades:
+- claim: Beta-Klotho is expressed in growth plate chondrocytes and permits FGF21 signalling there.
+  grade: C
+  basis: Mouse mRNA detection at two ages plus siRNA epistasis, replicated across two papers but from
+    a single laboratory.
+- claim: FGF21 acting through beta-Klotho/FGFR1 mediates growth-plate GH insensitivity during undernutrition.
+  grade: C
+  basis: Fgf21-knockout loss-of-induction with rhFGF21 add-back rescue in vivo (wu2013); mouse only.
+- claim: This pathway operates in the human growth plate.
+  grade: E
+  basis: Inference from mouse only; no human localization or functional data exist.
+key_refs:
+- ref_id: wu2012
+  pmid: '22696219'
+  doi: 10.1074/jbc.m112.343707
+  first_author: Wu S
+  year: 2012
+  type: primary
+  one_line_finding: beta-Klotho, FGFR1 and FGFR3 are expressed in mouse growth plate chondrocytes; FGF21
+    blocks GH-stimulated proliferation and Col10a1 and reduces GH binding, via FGFR1-ERK1.
+- ref_id: wu2013
+  pmid: '23940039'
+  doi: 10.1074/jbc.m113.462218
+  first_author: Wu S
+  year: 2013
+  type: primary
+  one_line_finding: FGF21 is required for the undernutrition-induced rise in LEPROT/LEPROTL1 in the mouse
+    tibial growth plate, the proposed mechanism of local GH insensitivity.
+open_questions:
+- g_l0l9_001
 last_verified: '2026-08-05'

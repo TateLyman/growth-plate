@@ -1,0 +1,115 @@
+id: hdac4_gene
+name: HDAC4
+aliases:
+- histone deacetylase 4 gene
+- 2q37 deletion syndrome gene
+type: gene
+layer: L8
+stub: false
+summary: 'HDAC4 encodes the class IIa histone deacetylase that restrains RUNX2-driven and MEF2C-driven
+
+  chondrocyte hypertrophy, and human haploinsufficiency of it defines the skeletal component of
+  2q37
+
+  deletion syndrome. Williams 2010 analysed six individuals with overlapping 2q37.3 deletions
+  to
+
+  reduce the critical region from more than 20 candidate genes to HDAC4 alone, then found HDAC4
+
+  point lesions - an intragenic deletion disrupting splicing and an intragenic insertion causing
+  a
+
+  frameshift and premature stop - in individuals with the same clinical picture but no 2q37 deletion.
+
+  That two-step argument (interval narrowing followed by intragenic mutation in deletion-negative
+
+  cases) is what establishes HDAC4 as the causal gene rather than a positional bystander. The
+
+  skeletal phenotype is brachydactyly type E - shortened metacarpals and metatarsals - together
+  with
+
+  short stature, alongside developmental delay, behavioural abnormalities and craniofacial
+
+  dysmorphism. Penetrance is markedly incomplete: in 103 individuals with 2q37 deletion the
+
+  supposedly cardinal features were present in only a fraction, with brachydactyly type E in 48%
+  and
+
+  overweight/obesity in 34%. The mechanistic significance for the growth plate is the direction
+  of
+
+  effect: losing a repressor of hypertrophy shortens the digits, which is the phenotype expected
+  if
+
+  premature or excessive hypertrophic differentiation exhausts the plate rather than extends it.'
+quantitative:
+- parameter: individuals used to narrow the 2q37.3 critical region to HDAC4
+  value: '6'
+  unit: individuals
+  conditions: overlapping deletions; candidate genes reduced from >20 to 1
+  species: human
+  source_ref: williams2010
+  uncertainty: not applicable (count)
+- parameter: brachydactyly type E penetrance in 2q37 deletion syndrome
+  value: '48'
+  unit: '%'
+  conditions: 103 individuals (101 published plus 2 new) with 2q37 deletion
+  species: human
+  source_ref: le2019
+  uncertainty: not applicable (proportion)
+- parameter: overweight or obesity penetrance in 2q37 deletion syndrome
+  value: '34'
+  unit: '%'
+  conditions: same series
+  species: human
+  source_ref: le2019
+  uncertainty: not applicable (proportion)
+- parameter: dysmorphic craniofacial feature penetrance
+  value: '86'
+  unit: '%'
+  conditions: same series
+  species: human
+  source_ref: le2019
+  uncertainty: not applicable (proportion)
+localization:
+- 'human: germline 2q37.3; the deacetylase acts in prehypertrophic chondrocytes'
+human_evidence: direct
+human_evidence_note: Human deletion mapping plus intragenic mutations in deletion-negative patients,
+  with penetrance quantified in 103 individuals.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human genotype-phenotype only; the Hdac4-null mouse (premature ossification)
+  is cited in hdac4_protein, not here.
+confidence: B
+claim_grades:
+- claim: HDAC4 haploinsufficiency causes brachydactyly mental retardation syndrome including brachydactyly
+    type E and short stature.
+  grade: A
+  basis: Critical-region narrowing plus de novo intragenic mutations in deletion-negative cases
+    (williams2010), with a 103-individual genotype-phenotype series (le2019).
+- claim: HDAC4 dosage sets adult stature quantitatively.
+  grade: D
+  basis: No published mean height SDS for HDAC4-mutation carriers as distinct from whole-2q37-deletion
+    carriers. See gap g_l8gen_008.
+key_refs:
+- ref_id: williams2010
+  pmid: '20691407'
+  doi: 10.1016/j.ajhg.2010.07.011
+  first_author: Williams SR
+  year: 2010
+  type: primary
+  one_line_finding: Six overlapping 2q37.3 deletions narrow the critical region to HDAC4 alone;
+    de novo intragenic HDAC4 mutations are found in deletion-negative patients with the same phenotype.
+- ref_id: le2019
+  pmid: '30848064'
+  doi: 10.1002/ajmg.a.61089
+  first_author: Le TN
+  year: 2019
+  type: primary
+  one_line_finding: '103 individuals with 2q37 deletion: brachydactyly type E in 48%, obesity
+    34%, craniofacial dysmorphism 86%; HDAC4 supported as primary contributor with incomplete
+    penetrance.'
+open_questions:
+- g_l8gen_008
+last_verified: '2026-08-05'

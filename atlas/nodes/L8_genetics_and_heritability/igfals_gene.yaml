@@ -1,0 +1,81 @@
+id: igfals_gene
+name: IGFALS
+aliases:
+- acid-labile subunit gene
+- ALS gene
+type: gene
+layer: L8
+stub: false
+summary: |-
+  IGFALS encodes the acid-labile subunit that, with IGFBP-3 or IGFBP-5, forms the 150 kDa ternary
+  complex holding IGF-1 and IGF-2 in circulation. Domene 2004 identified the first inactivating
+  IGFALS mutation and showed that it collapses the whole circulating IGF system. The subsequent
+  14-mutation, 17-patient review (Domene 2009) gives the number that matters for this atlas: despite
+  extraordinarily low serum IGF-1 and IGFBP-3 that fail to rise on GH stimulation, prepubertal height
+  SDS was typically only between -2 and -3, about 1.4 SD below midparental height SDS. That is a
+  remarkably mild stature phenotype for a near-total loss of circulating IGF-1 carriage, and it is
+  the strongest human argument in the atlas that the growth plate is driven principally by locally
+  produced or locally bioavailable IGF-1 rather than by the size of the circulating reservoir.
+  Pubertal delay occurred in half of patients and insulin insensitivity was common, so the complex is
+  not functionally inert. IGFALS therefore functions as a dosage control that dissociates circulating
+  IGF-1 concentration from linear growth - the same dissociation PAPPA2 makes from the opposite
+  direction, by trapping IGF-1 in an intact complex.
+quantitative:
+- parameter: prepubertal height SDS, IGFALS deficiency
+  value: -2 to -3
+  unit: SDS
+  conditions: 17 patients carrying 14 distinct IGFALS mutations
+  species: human
+  source_ref: domen2009
+  uncertainty: typical range as reported
+- parameter: height deficit relative to midparental height SDS
+  value: '-1.4'
+  unit: SDS
+  conditions: same patient series
+  species: human
+  source_ref: domen2009
+  uncertainty: approximate as reported
+- parameter: patients with pubertal delay
+  value: '50'
+  unit: '%'
+  conditions: same series
+  species: human
+  source_ref: domen2009
+  uncertainty: not applicable (proportion)
+localization:
+- 'human: germline; ALS protein is hepatically produced and circulates'
+human_evidence: direct
+human_evidence_note: 17 human patients with 14 distinct mutations, measured heights and full IGF-axis
+  biochemistry.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human loss-of-function series only.
+confidence: A
+claim_grades:
+- claim: IGFALS inactivation collapses the circulating IGF ternary complex.
+  grade: A
+  basis: Original inactivating mutation with biochemistry (domen2004) and 17 patients with concordant
+    IGF-1/IGFBP-3/ALS profiles (domen2009).
+- claim: The stature cost of that collapse is only about -1.4 SDS relative to midparental height.
+  grade: B
+  basis: One aggregated patient series (domen2009); the estimate has not been reproduced in an
+    independent cohort.
+key_refs:
+- ref_id: domen2004
+  pmid: '14762184'
+  doi: 10.1056/nejmoa013100
+  first_author: Domené HM
+  year: 2004
+  type: primary
+  one_line_finding: Inactivation of the IGFALS gene produces a deficiency of the entire circulating
+    insulin-like growth factor system.
+- ref_id: domen2009
+  pmid: '19729943'
+  doi: 10.1159/000232486
+  first_author: Domené HM
+  year: 2009
+  type: review
+  one_line_finding: '17 ALS-deficient patients with 14 mutations: prepubertal height SDS -2 to
+    -3, about 1.4 SD below midparental height, with pubertal delay in 50%.'
+last_verified: '2026-08-05'

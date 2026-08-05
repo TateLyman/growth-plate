@@ -1,7 +1,116 @@
 id: omnigenic_model
 name: Omnigenic model
+aliases:
+- polygenic to omnigenic
 type: hypothesis
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  Boyle 2017 proposed that for complex traits, association signal is spread across most of the genome
+  - including near many genes with no obvious connection to the trait - because gene regulatory
+  networks are sufficiently interconnected that any gene expressed in a trait-relevant cell can
+  affect the function of core trait genes, and that most heritability is explained by effects on
+  genes outside core pathways. Height is the trait the argument was built on and the trait where it
+  is most testable. The supporting observations from this atlas are quantitative and independent of
+  the model's authors: Yengo 2022 found 12,111 independent height SNPs clustered in 7,209 segments
+  covering about 21% of the genome; the per-allele effect of GDF5-UQCC, a bona fide skeletal
+  developmental locus, is 0.44 cm, statistically indistinguishable from the 0.4 cm of HMGA2 and no
+  larger than that of loci with no known skeletal function; and Wood 2014 needed 697 variants to
+  reach one fifth of heritability while all common variants together captured 60%. Against a strict
+  core-gene reading, Marouli 2017's 83 rare coding variants of up to 2 cm are concentrated in genes
+  that are also mutated in monogenic growth disorders, so the effect-size tail does respect a core
+  gene set even while the common-variant bulk does not. The model is a hypothesis node in this atlas
+  and is graded as one: the observation that signal is diffuse is A-grade, the mechanistic claim that
+  diffuseness arises through regulatory-network propagation to core genes has not been directly
+  tested in any growth-plate system.
+quantitative:
+- parameter: fraction of genome covered by height-associated segments
+  value: '21'
+  unit: '%'
+  conditions: union of 7,209 segments containing the 12,111 independent SNPs
+  species: human
+  source_ref: yengo2022
+  uncertainty: not reported with CI
+- parameter: height heritability captured by 697 genome-wide-significant variants
+  value: '20'
+  unit: '%'
+  conditions: n=253,288, European ancestry
+  species: human
+  source_ref: wood2014
+  uncertainty: approximately one fifth as reported
+- parameter: height heritability captured by all common variants
+  value: '60'
+  unit: '%'
+  conditions: same analysis
+  species: human
+  source_ref: wood2014
+  uncertainty: as reported
+- parameter: variance explained by the ~9,500 most strongly associated SNPs
+  value: '29'
+  unit: '%'
+  conditions: phenotypic variance, tested in independent studies
+  species: human
+  source_ref: wood2014
+  uncertainty: ~21% for top ~2,000 and ~24% for top ~3,700 SNPs
+localization:
+- 'human: genome-wide; no tissue localization is claimed'
+human_evidence: indirect
+human_evidence_note: The model is an interpretation of human GWAS architecture; the diffuseness
+  observation is direct human data, the network-propagation mechanism is not directly measured.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A statement about human genetic architecture; no animal inference.
+confidence: C
+claim_grades:
+- claim: Height association signal is spread across a large fraction of the genome rather than
+    confined to skeletal pathways.
+  grade: A
+  basis: 12,111 independent SNPs across 21% of the genome in 5.4M people (yengo2022) and the 697-variant/60%
+    split (wood2014).
+- claim: Peripheral genes affect height by propagating through regulatory networks onto core growth-plate
+    genes.
+  grade: E
+  basis: The mechanistic core of the model; not tested in chondrocytes or any growth-plate system.
+    Flagged as inference.
+- claim: Large-effect variants are concentrated in a core gene set even though common-variant
+    signal is not.
+  grade: B
+  basis: 83 rare coding variants of up to 2 cm overlap monogenic growth-disorder genes (marouli2017);
+    a single analysis, but internally consistent with the monogenic literature in this layer.
+key_refs:
+- ref_id: boyle2017
+  pmid: '28622505'
+  doi: 10.1016/j.cell.2017.05.038
+  first_author: Boyle EA
+  year: 2017
+  type: review
+  one_line_finding: Proposes that interconnected regulatory networks let all genes expressed in
+    trait-relevant cells affect core genes, so most heritability lies outside core pathways.
+- ref_id: yengo2022
+  pmid: '36224396'
+  doi: 10.1038/s41586-022-05275-y
+  first_author: Yengo L
+  year: 2022
+  type: primary
+  one_line_finding: 12,111 independent height SNPs cluster in 7,209 segments covering ~21% of
+    the genome.
+- ref_id: wood2014
+  pmid: '25282103'
+  doi: 10.1038/ng.3097
+  first_author: Wood AR
+  year: 2014
+  type: primary
+  one_line_finding: 697 variants explain one fifth of height heritability while all common variants
+    capture 60%.
+- ref_id: marouli2017
+  pmid: '28146470'
+  doi: 10.1038/nature21039
+  first_author: Marouli E
+  year: 2017
+  type: primary
+  one_line_finding: Rare coding variants of up to 2 cm per allele overlap genes mutated in monogenic
+    growth disorders.
+open_questions:
+- g_l8gen_010
 last_verified: '2026-08-05'

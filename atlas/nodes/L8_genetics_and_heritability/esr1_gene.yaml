@@ -1,0 +1,83 @@
+id: esr1_gene
+name: ESR1
+aliases:
+- estrogen receptor alpha gene
+- ESR1 estrogen resistance
+type: gene
+layer: L8
+stub: false
+summary: |-
+  ESR1 supplies the single most decisive human experiment in the fusion literature. Smith 1994
+  described a 28-year-old man homozygous for a disruptive ESR1 mutation who was 204 cm tall with
+  incomplete epiphyseal closure and a history of continued linear growth into adulthood despite
+  otherwise normal pubertal development; serum estradiol and estrone were elevated, testosterone was
+  normal, FSH and LH were increased, and lumbar spine bone mineral density was 0.745 g/cm2, 3.1 SD
+  below the young adult mean. He was normally masculinised, so androgen action was intact. The
+  inference is unavoidable and does not require a mouse: in humans it is estrogen acting through
+  ESR1, not androgen and not estrogen concentration per se, that closes the growth plate and
+  mineralises bone, in both sexes. Quaynor 2013 supplied the female counterpart, a woman with an ESR1
+  variant, delayed puberty and estrogen resistance. Because oestrogen was high and the receptor was
+  absent, the experiment separates ligand from receptor in a way no pharmacological study can. The
+  node is graded on a single index male plus one female case, which is thin by cohort standards but
+  epistemically strong because the phenotype is a natural knockout with an unambiguous readout.
+quantitative:
+- parameter: adult height, homozygous ESR1 disruptive mutation (male)
+  value: '204'
+  unit: cm
+  conditions: 28-year-old man, normal masculinisation, continued linear growth into adulthood
+  species: human
+  source_ref: smith1994
+  uncertainty: n=1
+- parameter: lumbar spine bone mineral density, same patient
+  value: '0.745'
+  unit: g/cm2
+  conditions: dual-energy absorptiometry
+  species: human
+  source_ref: smith1994
+  uncertainty: 3.1 SD below the young adult mean
+- parameter: epiphyseal closure status
+  value: incomplete
+  unit: qualitative
+  conditions: radiographic assessment in adulthood
+  species: human
+  source_ref: smith1994
+  uncertainty: n=1
+localization:
+- 'human: germline; receptor acts in growth plate chondrocytes, bone and the hypothalamic-pituitary
+  axis'
+human_evidence: direct
+human_evidence_note: Two human loss-of-function patients (one male, one female) with measured
+  stature, bone density and gonadotropins.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human receptor-null phenotype; the mouse ERKO literature is not needed
+  and is not invoked.
+confidence: B
+claim_grades:
+- claim: Estrogen acting through ESR1 is required for epiphyseal fusion in humans of both sexes.
+  grade: A
+  basis: Male ESR1-null with unfused plates and continued growth despite high estradiol (smith1994)
+    plus independent female estrogen-resistance case (quaynor2013), and the concordant aromatase-deficiency
+    series which removes ligand rather than receptor.
+- claim: The adult-height effect of ESR1 loss is about +204 cm / continued growth.
+  grade: D
+  basis: Single male patient; no cohort exists because the genotype is exceptionally rare.
+key_refs:
+- ref_id: smith1994
+  pmid: '8090165'
+  doi: 10.1056/nejm199410203311604
+  first_author: Smith EP
+  year: 1994
+  type: primary
+  one_line_finding: A man homozygous for a disruptive ESR1 mutation reached 204 cm with unfused
+    epiphyses, elevated estradiol, normal testosterone and lumbar BMD 3.1 SD below the young adult
+    mean.
+- ref_id: quaynor2013
+  pmid: '23841731'
+  doi: 10.1056/nejmoa1303611
+  first_author: Quaynor SD
+  year: 2013
+  type: primary
+  one_line_finding: A woman with an ESR1 alpha variant showed delayed puberty and estrogen resistance.
+last_verified: '2026-08-05'

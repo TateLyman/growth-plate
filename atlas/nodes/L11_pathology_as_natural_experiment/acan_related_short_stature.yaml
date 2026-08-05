@@ -4,6 +4,9 @@ aliases:
 - aggrecanopathy
 - SSOAOD
 - ACAN haploinsufficiency
+- acan_dosage_effect
+- ACAN dosage effect on longitudinal growth
+- ACAN gene dosage effect
 type: phenotype
 layer: L11
 stub: false
@@ -23,7 +26,13 @@ summary: |
   been resolved only in mouse: in Acan+/- growth plates the defect is reduced extracellular
   matrix and impaired chondrocyte HYPERTROPHY with proliferation largely spared, associated with
   suppressed Akt signalling downstream of increased Camk1D. That is a mouse result, and the
-  corresponding human growth plate has never been examined.
+  corresponding human growth plate has never been examined. Merged in from the former L5 node
+  `acan_dosage_effect`: independent exome studies gave adult heights of -2.3 to -4.2 SDS in three
+  further families (nilsson2014_2); whole-gene and multi-exon ACAN deletions sit at the more severe
+  end with a high burden of osteochondritis dissecans (sentchordimont2025); and targeted screening
+  establishes ACAN as one of the commonest monogenic causes of clinically labelled idiopathic short
+  stature (hauer2017). The full allelic series therefore runs normal - dominant short stature with
+  advanced bone age - lethal spondyloepimetaphyseal dysplasia (aggrecan type) at biallelic loss.
 quantitative:
 - parameter: adult height in heterozygous ACAN mutation carriers
   value: '-2.8'
@@ -67,6 +76,20 @@ quantitative:
   species: human
   source_ref: gkourogianni2017
   uncertainty: n=103
+- parameter: adult height in three independently exome-sequenced ACAN families
+  value: -2.3 to -4.2
+  unit: SDS
+  conditions: autosomal dominant short stature with advanced bone age
+  species: human
+  source_ref: nilsson2014_2
+  uncertainty: range across affected individuals
+- parameter: effect of Acan heterozygosity on chondrocyte proliferation
+  value: '0'
+  unit: detectable change
+  conditions: Acan+/- (cartilage matrix deficiency) mouse, histomorphometry
+  species: mouse
+  source_ref: bendre2025
+  uncertainty: reported as largely unaffected
 - parameter: treatment-naive ACAN-deficient children in the prospective rhGH study
   value: '10'
   unit: children
@@ -74,6 +97,8 @@ quantitative:
   species: human
   source_ref: muthuvel2024
   uncertainty: n=10
+merged_from:
+- acan_dosage_effect
 localization:
 - 'human growth plate: no published histology in ACAN-related short stature (gap g_l11path_010)'
 - 'mouse PHZ/HZ: impaired hypertrophic differentiation with proliferation largely unaffected in Acan+/-
@@ -110,6 +135,27 @@ key_refs:
   type: primary
   one_line_finding: 'Acan+/- mouse: growth failure from reduced matrix and impaired hypertrophy,
     not reduced proliferation.'
+- ref_id: nilsson2014_2
+  pmid: '24762113'
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: Heterozygous ACAN variants cause short stature with advanced bone age and early
+    growth cessation.
+- ref_id: sentchordimont2025
+  pmid: '40129139'
+  first_author: Sentchordi-Montane L
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: ACAN whole-gene and intragenic deletions give moderate-to-severe short stature with
+    severe joint disease.
+- ref_id: hauer2017
+  pmid: '28939912'
+  first_author: Hauer NN
+  year: 2017
+  type: primary_abstract_only
+  one_line_finding: ACAN heterozygous mutations are a major cause of idiopathic short stature on targeted
+    screening.
 - ref_id: muthuvel2024
   pmid: '39502477'
   first_author: Muthuvel G

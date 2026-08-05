@@ -1,0 +1,103 @@
+id: comp_gene
+name: COMP
+aliases:
+- cartilage oligomeric matrix protein gene
+- thrombospondin-5 gene
+type: gene
+layer: L8
+stub: false
+summary: |-
+  COMP mutations cause pseudoachondroplasia and multiple epiphyseal dysplasia type 1, and the human
+  allelic data show that these are not two diseases but two ends of one continuum produced by
+  mutations in a single structural domain. Briggs 1995 localised both to chromosome 19p13.1 and found
+  COMP mutations in three patients within the region encoding a calcium-binding motif, establishing
+  allelism. Ni 2026 aggregated 830 genetically diagnosed PSACH/EDM1 patients (471 probands, 224
+  distinct COMP variants) from 106 publications: 80.8% of variants are missense, 87.7% of probands
+  carry a variant in the type-3 calcium-binding repeat domain, 38.9% in exon 13 alone, and
+  c.1417_1419del (p.Asp473del) is the single commonest allele. PSACH patients had significantly
+  earlier onset and significantly shorter stature than EDM1 patients (both P < 0.001). The mechanism
+  is not dosage: COMP is a pentamer, mutant subunits misfold, accumulate in the chondrocyte rough
+  endoplasmic reticulum and trigger a stress response, so heterozygous missense alleles are
+  cytotoxic-dominant while true null alleles are far milder. The consequence for this atlas is that
+  COMP is a counterexample to the assumption that a matrix gene's stature effect scales with how much
+  functional protein is left. What is missing is a published mean adult height in centimetres or SDS
+  for genotype-defined PSACH cohorts; the 830-case aggregation reports stature only as a
+  between-group comparison.
+quantitative:
+- parameter: genetically diagnosed PSACH/EDM1 patients aggregated
+  value: '830'
+  unit: patients
+  conditions: 471 probands, 224 distinct COMP variants, from 106 publications
+  species: human
+  source_ref: ni2026
+  uncertainty: systematic literature aggregation
+- parameter: COMP variants that are missense
+  value: '80.8'
+  unit: '%'
+  conditions: same aggregation
+  species: human
+  source_ref: ni2026
+  uncertainty: not applicable (proportion)
+- parameter: probands with a variant in the type-3 repeat domain
+  value: '87.7'
+  unit: '%'
+  conditions: 413 of 471 probands
+  species: human
+  source_ref: ni2026
+  uncertainty: not applicable (proportion)
+- parameter: probands with a variant in exon 13
+  value: '38.9'
+  unit: '%'
+  conditions: 183 of 471 probands
+  species: human
+  source_ref: ni2026
+  uncertainty: not applicable (proportion)
+localization:
+- 'human: germline; product is a pentameric extracellular matrix glycoprotein of growth plate
+  and articular cartilage'
+human_evidence: direct
+human_evidence_note: 830 genotyped human patients with clinical stature comparison between PSACH
+  and EDM1.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human genotype-phenotype aggregation only.
+confidence: B
+claim_grades:
+- claim: COMP mutations cause both pseudoachondroplasia and multiple epiphyseal dysplasia type
+    1 as one allelic continuum.
+  grade: A
+  basis: Original allelism demonstration (briggs1995) plus 830-case aggregation with domain mapping
+    (ni2026); ClinGen definitive (webb2026).
+- claim: PSACH is significantly shorter than EDM1 at the same locus.
+  grade: B
+  basis: One systematic aggregation of published cases (ni2026, P<0.001); vulnerable to ascertainment
+    because diagnosis labels are partly assigned on stature.
+key_refs:
+- ref_id: briggs1995
+  pmid: '7670472'
+  doi: 10.1038/ng0795-330
+  first_author: Briggs MD
+  year: 1995
+  type: primary_abstract_only
+  one_line_finding: PSACH and MED are allelic, both caused by COMP mutations in a calcium-binding
+    motif on chromosome 19p13.1.
+- ref_id: ni2026
+  pmid: '41798190'
+  doi: 10.3389/fendo.2026.1740770
+  first_author: Ni X
+  year: 2026
+  type: systematic_review
+  one_line_finding: '830 PSACH/EDM1 patients: 80.8% missense variants, 87.7% in the type-3 repeat
+    domain; PSACH significantly shorter and earlier-onset than EDM1.'
+- ref_id: webb2026
+  pmid: '41313243'
+  doi: 10.1093/jbmr/zjaf183
+  first_author: Webb RF
+  year: 2026
+  type: systematic_review
+  one_line_finding: ClinGen curation places COMP among genes definitively associated with skeletal
+    disorders.
+open_questions:
+- g_l8gen_006
+last_verified: '2026-08-05'

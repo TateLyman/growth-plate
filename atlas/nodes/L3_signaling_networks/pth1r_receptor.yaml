@@ -12,7 +12,17 @@ summary: 'PTH1R is a class B GPCR expressed most strongly in late proliferative 
 
   and delays hypertrophy; targeted expression of the constitutively active Jansen mutant receptor in
 
-  mouse growth plate delays hypertrophic differentiation and produces chondrodysplasia (Schipani 1997),
+  mouse growth plate delays hypertrophic differentiation and mineralization and produces
+
+  chondrodysplasia; the same transgene CORRECTS the growth plate of PTHrP-null mice at birth and
+
+  rescues their survival, which is the epistasis result placing the receptor downstream of the ligand,
+
+  and the rescued animals show premature epiphyseal closure and absent tooth eruption (Schipani 1997)
+
+  - a rare instance of mouse epiphyseal closure, and directly relevant to L7 since mice do not
+
+  normally fuse,
 
   and Pth1r ablation gives a phenotype distinct from Pthlh ablation, indicating PTHrP-independent
 
@@ -20,11 +30,23 @@ summary: 'PTH1R is a class B GPCR expressed most strongly in late proliferative 
 
   activating H223R substitution causes Jansen metaphyseal chondrodysplasia with retained hypertrophic
 
-  cartilage (Schipani 1995), and biallelic loss of functional receptor causes Blomstrand lethal
+  cartilage (Schipani 1995), and functional absence of the receptor causes Blomstrand lethal
 
-  chondrodysplasia with markedly advanced endochondral ossification (Jobert 1998). Downstream of PTH1R
+  chondrodysplasia with markedly advanced endochondral ossification (Jobert 1998). The genotype there
 
-  in chondrocytes, cAMP is hydrolysed by PDE3A/PDE4 isoforms, and gain-of-function PDE3A variants
+  is more delicate than a plain statement of biallelic loss: the single reported patient was HETEROZYGOUS for a
+
+  splice-creating point mutation inherited from the mother, and the paternal allele was simply not
+
+  expressed by an unexplained mechanism, so the state is functionally but not genotypically biallelic,
+
+  n = 1. Chimeric mice carrying both wild-type and Pth1r-null cells show
+
+  the receptor acts CELL-AUTONOMOUSLY on proliferating chondrocytes, and that mineralization around
+
+  ectopic hypertrophic cells is non-cell-autonomous, requiring a critical mass of adjacent hypertrophic
+
+  cells (Chung 1998). Downstream of PTH1R in chondrocytes, cAMP is hydrolysed by PDE3A/PDE4 isoforms, and gain-of-function PDE3A variants
 
   produce brachydactyly with short stature in humans, the mirror-image lesion (Maass 2015).
 
@@ -54,23 +76,45 @@ key_refs:
   first_author: Jobert AS
   year: 1998
   type: primary_abstract_only
-  one_line_finding: Loss of functional PTH1R causes Blomstrand chondrodysplasia with advanced ossification.
+  one_line_finding: Loss of functional PTH1R causes Blomstrand chondrodysplasia with advanced ossification;
+    n=1 patient, heterozygous for a splice-creating point mutation with the paternal allele unexpressed
+    by an unexplained mechanism - functionally, not genotypically, biallelic.
 - ref_id: schipani1997
   pmid: '9391087'
   first_author: Schipani E
   year: 1997
-  type: primary_abstract_only
-  one_line_finding: Targeted constitutively active PTH1R in mouse growth plate delays hypertrophy.
+  type: primary
+  one_line_finding: Targeted constitutively active PTH1R (HKrk-H223R) delays hypertrophic conversion and
+    mineralization, corrects the PTHrP-null growth plate at birth and rescues survival; rescued animals
+    show premature epiphyseal closure and no tooth eruption.
 - ref_id: lanske1999
   pmid: '10449432'
   first_author: Lanske B
   year: 1999
   type: primary_abstract_only
   one_line_finding: Pthlh-null and Pth1r-null mice differ, indicating PTHrP-independent receptor roles.
+- ref_id: maass2015
+  pmid: '25961944'
+  first_author: Maass PG
+  year: 2015
+  type: primary_abstract_only
+  one_line_finding: Gain-of-function PDE3A variants cause hypertension with brachydactyly and short stature,
+    the mirror-image lesion downstream of PTH1R-cAMP. Cited in this node's prose since authoring but missing
+    from key_refs until the phase 2d audit.
 - ref_id: chung1998
   pmid: '9789035'
   first_author: Chung UI
   year: 1998
-  type: primary_abstract_only
-  one_line_finding: PTH1R acts cell-autonomously in chondrocytes to delay hypertrophy.
+  type: primary
+  one_line_finding: In wild-type/Pth1r-null chimeras PTHrP signals directly to PTH1R on PROLIFERATING
+    chondrocytes; matrix mineralization around ectopic hypertrophic cells is non-cell-autonomous and requires
+    a critical mass of adjacent hypertrophic cells.
+open_questions:
+- g_l2d_007
+audited: '2026-08-05'
+audit_note: >-
+  Phase 2d canonical-mechanism audit, shard l2daudit. schipani1997 and chung1998 read in FULL; jobert1998
+  is a scanned PMC deposit (abstract only). Verdict CONFIRMED - the primaries are STRONGER than the node
+  claimed. Added the PTHrP-null rescue, the premature epiphyseal closure observation and the jobert1998
+  genotype precision; maass2015 was cited in prose but absent from key_refs and has been added.
 last_verified: '2026-08-05'

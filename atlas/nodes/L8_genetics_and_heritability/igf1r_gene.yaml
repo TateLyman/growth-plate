@@ -1,7 +1,69 @@
 id: igf1r_gene
 name: IGF1R
+aliases:
+- type 1 IGF receptor gene
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  IGF1R is the receptor-side counterpart to IGF1 and is the locus that explains a specific clinical
+  puzzle: children born small for gestational age who fail to catch up and whose serum IGF-1 is
+  normal or high rather than low. Abuzzahab 2003 screened 42 patients with unexplained intrauterine
+  growth retardation and persistent short stature plus a second cohort of 50 short children with
+  elevated circulating IGF-1, and found a girl who was a compound heterozygote for two exon-2 point
+  mutations (Arg108Gln and Lys115Asn) whose fibroblasts showed decreased IGF-I binding, establishing
+  partial IGF1R loss of function as a cause of combined prenatal and postnatal growth failure. The
+  receptor is haploinsufficiency-sensitive: heterozygous nonsense and deletion alleles are now
+  recurrently reported in severe short stature with poor growth hormone response, because the defect
+  is downstream of the ligand that GH raises. The signature - low birth size, no catch-up, normal or
+  raised IGF-1, blunted rhGH response - is the mirror image of the GHR/Laron signature (normal birth
+  size, high GH, low IGF-1). Together IGF1, IGF1R and GHR partition the somatotropic axis into
+  prenatal-competent and prenatal-independent segments using nothing but human alleles. The
+  quantitative weakness is that no adequately powered genotype-defined IGF1R cohort with mean adult
+  height SDS was reached in this sweep.
+quantitative:
+- parameter: patients screened with unexplained IUGR plus short stature
+  value: '42'
+  unit: patients
+  conditions: single-strand conformation polymorphism screening of IGF1R followed by sequencing
+  species: human
+  source_ref: abuzzahab2003
+  uncertainty: not applicable (count)
+- parameter: additional patients screened with short stature and elevated IGF-1
+  value: '50'
+  unit: patients
+  conditions: complete IGF1R sequencing in 9 of these
+  species: human
+  source_ref: abuzzahab2003
+  uncertainty: not applicable (count)
+localization:
+- 'human: germline; receptor expressed in growth plate chondrocytes and near-ubiquitously'
+human_evidence: direct
+human_evidence_note: Human compound-heterozygote patient with fibroblast binding assay; the phenotype
+  has been recurrently reported since.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human alleles with patient-derived fibroblast assays.
+confidence: B
+key_refs:
+- ref_id: abuzzahab2003
+  pmid: '14657428'
+  doi: 10.1056/nejmoa010107
+  first_author: Abuzzahab MJ
+  year: 2003
+  type: primary
+  one_line_finding: IGF1R compound-heterozygous exon-2 mutations reduce IGF-I binding in patient
+    fibroblasts and cause intrauterine plus postnatal growth retardation.
+- ref_id: de2026
+  pmid: '41017432'
+  doi: 10.1210/clinem/dgaf532
+  first_author: De La Barrera B
+  year: 2026
+  type: primary
+  one_line_finding: Mendelian randomization of the IGF-1 axis gives 0.09 SD taller adult height
+    per 1 SD higher serum IGF-1.
+open_questions:
+- g_l8gen_007
 last_verified: '2026-08-05'

@@ -1,6 +1,9 @@
 id: height_gwas
 name: Height GWAS
-aliases: [genome-wide association study of adult height, height GWAS saturation]
+aliases: [genome-wide association study of adult height, height GWAS saturation, giant_consortium,
+  GIANT consortium, Genetic Investigation of ANthropometric Traits, polygenic_architecture_height,
+  Polygenic architecture of height]
+merged_from: [giant_consortium, polygenic_architecture_height]
 type: dataset
 layer: L8
 stub: false
@@ -21,7 +24,16 @@ summary: |
   differences in linkage disequilibrium and allele frequency rather than to
   different underlying biology, which matters because it makes the
   transferability failure a study-design artefact rather than evidence that
-  height genetics differs between ancestries.
+  height genetics differs between ancestries. This node also carries the two
+  entities previously stubbed separately as `giant_consortium` and
+  `polygenic_architecture_height`, which were not distinct objects. GIANT is the
+  meta-analysis structure that produced this dataset rather than an independent
+  actor: Yengo 2022 is a GIANT analysis, as was the first-generation 20-locus scan
+  (Weedon 2008, n=30,147), so the trajectory 20 loci explaining ~3% of variance to
+  12,111 SNPs explaining ~40% is one consortium's sample-size curve, not the
+  convergence of independent groups. The "architecture" is the same object measured
+  here from the other side: extreme polygenicity (7,209 segments over 21% of the
+  genome), small per-allele effects, and an ancestry-dependent ceiling on prediction.
 quantitative:
   - parameter: discovery sample size
     value: '5400000'
@@ -67,6 +79,14 @@ quantitative:
     species: human
     source_ref: yengo2022
     uncertainty: 45% when using all HapMap 3 SNPs
+  - parameter: height variance explained by the first 20 GWAS loci
+    value: '3'
+    unit: '%'
+    conditions: 20 SNPs, n=13,665 discovery + 16,482 replication, European ancestry
+    species: human
+    source_ref: weedon2008
+    uncertainty: 'approximate; ~5 cm separates the 6.2% of people carrying <=17 tall alleles
+      from the 5.5% carrying >=27'
   - parameter: phenotypic variance explained, non-European ancestries
     value: 10-20
     unit: '%'
@@ -87,6 +107,16 @@ translation_risk_reason: >-
   transferability limit is between human ancestry groups, not between species.
 confidence: B
 key_refs:
+  - ref_id: weedon2008
+    pmid: '18391952'
+    doi: 10.1038/ng.121
+    first_author: Weedon MN
+    year: 2008
+    type: primary
+    one_line_finding: >-
+      The first-generation GIANT height GWAS found 20 loci explaining ~3% of height
+      variance, implicating hedgehog (IHH, HHIP, PTCH1) and matrix (ACAN, EFEMP1,
+      ADAMTSL3) genes.
   - ref_id: yengo2022
     pmid: '36224396'
     doi: 10.1038/s41586-022-05275-y

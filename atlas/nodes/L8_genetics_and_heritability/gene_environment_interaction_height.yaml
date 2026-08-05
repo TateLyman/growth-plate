@@ -1,7 +1,131 @@
 id: gene_environment_interaction_height
 name: Gene-environment interaction in height
+aliases:
+- GxE for stature
 type: process
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The default expectation - that height heritability should be low in deprived populations
+  because
+
+  environmental variance dominates, and should rise as living standards improve - has been tested
+  at
+
+  large scale and is not supported. Jelenkovic 2016 pooled 40 twin cohorts with 143,390 complete
+  twin
+
+  pairs born between 1886 and 1994 and found adult heritability of 0.69-0.84 in men and 0.53-0.78
+  in
+
+  women with no clear secular pattern across birth-year cohorts; genetic variance did trend upward,
+
+  but so did total variance, leaving the ratio flat. Comparing Europe, North America and Australia,
+
+  and East Asia, total height variance was greatest in North America and Australia and lowest
+  in East
+
+  Asia, yet the heritability proportion was similar across all three. The companion developmental
+
+  analysis of 45 twin cohorts (180,520 paired measurements, ages 1-19) locates the environmental
+
+  signal where it actually is: shared-environment variance is greatest in early childhood and
+
+  persists until early adulthood, while the relative genetic contribution rises with age. A
+
+  purpose-built test of the socioeconomic hypothesis reached the same negative conclusion: pooling
+  29
+
+  cohorts and 65,978 twin pairs with parental education data, parental education was positively
+
+  associated with offspring height from mid-childhood onward but the genetic and environmental
+
+  variance components showed no consistent relation to it, with only a weak meta-regression trend
+
+  toward greater shared-environmental variance in low-education families. So the environment shifts
+
+  the mean of height strongly and reproducibly, while leaving the variance decomposition close
+  to
+
+  unchanged - which is a different statement from ''no gene-environment interaction'' but is the
+  one
+
+  the data support.'
+quantitative:
+- parameter: adult height heritability across birth years 1886-1994, men
+  value: 0.69-0.84
+  unit: h2
+  conditions: 40 twin cohorts, 143,390 complete twin pairs; no clear secular pattern
+  species: human
+  source_ref: jelenkovic2016a
+  uncertainty: range across birth-year cohorts
+- parameter: adult height heritability across birth years 1886-1994, women
+  value: 0.53-0.78
+  unit: h2
+  conditions: same
+  species: human
+  source_ref: jelenkovic2016a
+  uncertainty: range across birth-year cohorts
+- parameter: twin pairs tested for parental-education moderation of height variance
+  value: '65978'
+  unit: complete twin pairs
+  conditions: 29 cohorts, ages 1-69, three geographic-cultural regions
+  species: human
+  source_ref: jelenkovic2020
+  uncertainty: no consistent relation of variance components to parental education
+- parameter: peak adolescent heritability, boys
+  value: '0.83'
+  unit: h2
+  conditions: 45 twin cohorts, 180,520 paired measurements ages 1-19
+  species: human
+  source_ref: jelenkovic2016
+  uncertainty: age-specific maximum
+localization:
+- 'human: population-level variance decomposition'
+human_evidence: direct
+human_evidence_note: Three pooled twin analyses covering over 200,000 twin pairs across 20+ countries
+  and a century of birth years.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human population genetics.
+confidence: A
+claim_grades:
+- claim: Height heritability does not increase with improving living standards or higher parental
+    education.
+  grade: A
+  basis: 143,390 twin pairs across birth years 1886-1994 and three regions (jelenkovic2016a) plus
+    a purpose-designed 65,978-pair parental-education test (jelenkovic2020), by overlapping but
+    independently analysed designs.
+- claim: Shared environment contributes most to height variance in early childhood and declines
+    thereafter.
+  grade: A
+  basis: 45-cohort developmental decomposition with 180,520 paired measurements (jelenkovic2016).
+key_refs:
+- ref_id: jelenkovic2016a
+  pmid: '27964777'
+  doi: 10.7554/elife.20320
+  first_author: Jelenkovic A
+  year: 2016
+  type: primary
+  one_line_finding: '143,390 twin pairs born 1886-1994: no secular change in height heritability
+    despite rising genetic variance; heritability proportion similar across three world regions.'
+- ref_id: jelenkovic2016
+  pmid: '27333805'
+  doi: 10.1038/srep28496
+  first_author: Jelenkovic A
+  year: 2016
+  type: primary
+  one_line_finding: Shared-environment variance in height is greatest in early childhood; heritability
+    rises with age to 0.83 (boys) and 0.76 (girls) in adolescence.
+- ref_id: jelenkovic2020
+  pmid: '32409744'
+  doi: 10.1038/s41598-020-64883-8
+  first_author: Jelenkovic A
+  year: 2020
+  type: primary
+  one_line_finding: '29 twin cohorts, 65,978 pairs: parental education raises mean offspring height
+    but the genetic and environmental variance components of height show no consistent relation
+    to it.'
+open_questions:
+- g_l8gen_012
 last_verified: '2026-08-05'

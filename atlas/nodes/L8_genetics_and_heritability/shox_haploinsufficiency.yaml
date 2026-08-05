@@ -1,7 +1,99 @@
 id: shox_haploinsufficiency
 name: SHOX haploinsufficiency
+aliases:
+- SHOX deficiency disorder
+- Leri-Weill dyschondrosteosis
 type: phenotype
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: 'SHOX haploinsufficiency is the single-copy state of the PAR1 SHOX locus, produced by
+  whole-gene
+
+  deletion, enhancer deletion, nonsense or missense variants, or by loss of one sex chromosome
+  as in
+
+  Turner syndrome. It is the commonest identified monogenic cause of disproportionate short stature
+
+  in children referred as idiopathic. The measured penetrance on stature is incomplete but the
+
+  central tendency is reproducible: median height -2.4 SDS in molecularly confirmed Leri-Weill
+
+  dyschondrosteosis and -2.1 SDS where the same lesion presents without Madelung deformity. Two
+
+  features distinguish it from a generic short-stature gene. First, the deficit is mesomelic -
+  the
+
+  forearm and lower leg are disproportionately shortened and the radius bows into a Madelung
+
+  deformity - so it is a limb-segment-specific rather than uniform growth defect. Second, expression
+
+  is consistently more severe in females than in males at the same genotype, and the penetrance
+  gap
+
+  is wide enough that obligate carriers of normal height are routinely observed within affected
+
+  pedigrees. In molecular screening of unselected idiopathic short stature, MLPA plus sequencing
+
+  detects SHOX lesions in roughly one in six children, with two-thirds of the lesions falling
+  in
+
+  enhancer rather than coding regions - a distribution that matters because coding-only sequencing
+
+  misses the majority.'
+quantitative:
+- parameter: median height SDS in molecularly confirmed Leri-Weill dyschondrosteosis
+  value: '-2.4'
+  unit: SDS
+  conditions: n=24 patients from 23 families, mixed ages
+  species: human
+  source_ref: doan2026
+  uncertainty: median; range not reported
+- parameter: median height SDS in SHOX-positive idiopathic short stature
+  value: '-2.1'
+  unit: SDS
+  conditions: n=12 patients
+  species: human
+  source_ref: doan2026
+  uncertainty: median
+- parameter: height SDS after growth hormone in SHOX deficiency
+  value: '-2.0'
+  unit: SDS
+  conditions: n=15 treated patients, mean pre-treatment -2.5 SDS
+  species: human
+  source_ref: doan2026
+  uncertainty: mean; SD not reported
+localization:
+- 'human: germline PAR1, systemic; limb effect is mesomelic (zeugopod-predominant)'
+human_evidence: direct
+human_evidence_note: Human genotype-phenotype series only; the gene has no rodent orthologue.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: No animal model of SHOX exists, so no cross-species claim is made.
+confidence: A
+key_refs:
+- ref_id: shears1998
+  pmid: '9590293'
+  doi: 10.1038/ng0198-70
+  first_author: Shears DJ
+  year: 1998
+  type: primary
+  one_line_finding: SHOX deletions/nonsense segregate with Leri-Weill dyschondrosteosis; homozygous
+    state gives Langer mesomelic dysplasia.
+- ref_id: doan2026
+  pmid: '42230379'
+  doi: 10.1007/s00431-026-07128-6
+  first_author: Doğan Arı AB
+  year: 2026
+  type: primary
+  one_line_finding: '41 SHOX-deficiency patients: median height SDS -2.4 (LWD) and -2.1 (ISS);
+    GH raised mean height SDS from -2.5 to -2.0 in 15 treated.'
+- ref_id: rao1997
+  pmid: '9140395'
+  doi: 10.1038/ng0597-54
+  first_author: Rao E
+  year: 1997
+  type: primary
+  one_line_finding: PAR1 deletions encompassing SHOX cause growth failure in idiopathic short
+    stature and Turner syndrome.
 last_verified: '2026-08-05'

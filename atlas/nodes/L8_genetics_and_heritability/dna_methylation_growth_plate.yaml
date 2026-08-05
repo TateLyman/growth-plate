@@ -1,7 +1,103 @@
 id: dna_methylation_growth_plate
 name: DNA methylation in the growth plate
+aliases:
+- chondrocyte methylome
+- growth plate epigenome
 type: process
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  DNA methylation in developing human cartilage has now been mapped directly, which converts a
+  previously animal-only claim into a human one. McDonnell 2024 quantified methylation at
+  approximately 700,000 CpGs in developing human chondrocytes from 72 samples spanning 7 to 21
+  post-conception weeks, found significant change at 3% of all CpGs, and defined more than 8,200
+  developmental differentially methylated regions. Integrating with genetic data identified 24 loci
+  where osteoarthritis risk variants colocalise with methylation quantitative trait loci, and
+  comparison with mature chondrocyte datasets separated effects exerted only during development from
+  those operating throughout the life course. The developmental-only class is the important one for
+  this atlas: it means a regulatory variant can act on cartilage before birth and leave a permanent
+  skeletal consequence with no detectable effect in adult tissue, which is a specific mechanism by
+  which height-associated non-coding variants could be invisible to any adult-tissue eQTL catalogue.
+  The complementary claim from animal work - Nilsson 2005 showed growth plate senescence in rabbit is
+  accompanied by loss of DNA methylation - remains species-restricted and is not asserted here as
+  human fact. The gap between the two is that no human dataset yet spans postnatal growth plate
+  through fusion, so the human methylome is characterised in fetal cartilage and in adult articular
+  cartilage but not across the growing physis itself.
+quantitative:
+- parameter: CpGs assayed in developing human chondrocytes
+  value: '700000'
+  unit: CpG sites
+  conditions: 72 samples, 7-21 post-conception weeks
+  species: human
+  source_ref: mcdonnell2024
+  uncertainty: approximate as reported
+- parameter: CpGs showing significant developmental change
+  value: '3'
+  unit: '%'
+  conditions: same dataset
+  species: human
+  source_ref: mcdonnell2024
+  uncertainty: not applicable (proportion)
+- parameter: developmental differentially methylated regions
+  value: '8200'
+  unit: DMRs
+  conditions: same dataset
+  species: human
+  source_ref: mcdonnell2024
+  uncertainty: more than; lower bound as reported
+- parameter: loci where osteoarthritis risk variants colocalise with methylation QTLs
+  value: '24'
+  unit: loci
+  conditions: same dataset
+  species: human
+  source_ref: mcdonnell2024
+  uncertainty: not applicable (count)
+localization:
+- 'human: developing chondrocytes 7-21 post-conception weeks; postnatal growth plate not covered'
+human_evidence: direct
+human_evidence_note: Epigenome-wide methylation measured in 72 human developing cartilage samples
+  with colocalisation against human genetic association data.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The methylome claim is measured in human tissue. The senescence-associated
+  demethylation claim is rabbit-only and is explicitly not extended to humans here.
+confidence: B
+claim_grades:
+- claim: DNA methylation changes substantially across human cartilage development and colocalises
+    with skeletal disease risk variants.
+  grade: A
+  basis: 72-sample human developmental methylome with 8,200 DMRs and 24 mQTL-GWAS colocalisations
+    (mcdonnell2024).
+- claim: Growth plate senescence is accompanied by loss of DNA methylation in humans.
+  grade: C
+  basis: Demonstrated in rabbit (nilsson2005); no human postnatal growth plate methylome exists.
+    Recorded as a species gap, not as human fact. See gap g_l8gen_013.
+key_refs:
+- ref_id: mcdonnell2024
+  pmid: '39579763'
+  doi: 10.1016/j.ajhg.2024.10.017
+  first_author: McDonnell E
+  year: 2024
+  type: primary
+  one_line_finding: '700,000-CpG methylome of 72 human developing chondrocyte samples (7-21 PCW):
+    3% of CpGs change, >8,200 developmental DMRs, 24 OA loci colocalise with mQTLs.'
+- ref_id: nilsson2005
+  pmid: '16002553'
+  doi: 10.1677/joe.1.06016
+  first_author: Nilsson O
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Growth plate senescence in rabbit is associated with loss of DNA methylation
+    - animal evidence only.
+- ref_id: richard2025
+  pmid: '39549696'
+  doi: 10.1016/j.cell.2024.10.040
+  first_author: Richard D
+  year: 2025
+  type: primary
+  one_line_finding: Human skeletal developmental functional genomics intersecting chondrocyte
+    regulatory maps with height heritability.
+open_questions:
+- g_l8gen_013
 last_verified: '2026-08-05'

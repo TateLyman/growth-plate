@@ -1,7 +1,109 @@
 id: ihh_gene
 name: IHH
+aliases:
+- Indian hedgehog gene
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  IHH gives a three-level human dose series with an unusually informative middle. Gao 2001 showed
+  that heterozygous missense mutations in the amino-terminal signalling domain cause brachydactyly
+  type A-1, shortening or loss of the middle phalanges, with three mutations in three large families
+  all altering residues predicted to lie adjacent on the IHH surface - a gain-of-abnormal-function or
+  altered-ligand-range mechanism rather than simple dosage reduction. Hellemans 2003 showed that
+  homozygous IHH mutations cause acrocapitofemoral dysplasia, an autosomal recessive disorder with
+  cone-shaped epiphyses in hands and hips - biallelic loss gives a generalised, not digit-restricted,
+  epiphyseal disorder. Sentchordi-Montane 2020 then characterised 16 probands with heterozygous IHH
+  variants including the first complete IHH deletion and found that none showed classical
+  brachydactyly A-1; the commonest presentation was mild-to-moderate short stature with shortening of
+  the fifth-finger middle phalanx, and two short probands had no radiological hand anomaly at all
+  while five carriers of normal height did. Heterozygous IHH loss is therefore a
+  variably-penetrant short-stature allele rather than a brachydactyly allele, and the BDA-1 missense
+  class must be mechanistically distinct from haploinsufficiency. In unselected idiopathic short
+  stature IHH is the commonest single finding on growth-plate gene panels: 4 of 102 in Andrade 2022,
+  ahead of SHOX.
+quantitative:
+- parameter: heterozygous IHH probands characterised
+  value: '16'
+  unit: probands
+  conditions: targeted NGS or Sanger in short stature and/or brachydactyly; 15 distinct variants
+    including the first complete IHH deletion
+  species: human
+  source_ref: sentchordimont2020
+  uncertainty: not applicable (count)
+- parameter: IHH heterozygotes with classical brachydactyly type A-1
+  value: '0'
+  unit: of 16 probands
+  conditions: same cohort
+  species: human
+  source_ref: sentchordimont2020
+  uncertainty: not applicable (count)
+- parameter: IHH heterozygotes of normal height but with brachydactyly
+  value: '5'
+  unit: of 16 probands
+  conditions: same cohort
+  species: human
+  source_ref: sentchordimont2020
+  uncertainty: not applicable (count)
+- parameter: IHH variant yield in idiopathic short stature
+  value: '4'
+  unit: of 102 patients
+  conditions: targeted multigene panel; commonest single gene in this cohort
+  species: human
+  source_ref: andrade2022
+  uncertainty: not applicable (count)
+localization:
+- 'human: germline; ligand produced by prehypertrophic chondrocytes'
+human_evidence: direct
+human_evidence_note: Heterozygous, homozygous and null alleles all characterised in humans with
+  measured stature and hand radiology.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human allelic series only; the extensive murine Ihh literature is held
+  in ihh_protein.
+confidence: A
+claim_grades:
+- claim: Heterozygous IHH loss of function causes mild-to-moderate short stature with incomplete
+    penetrance.
+  grade: A
+  basis: 16-proband cosegregating series (sentchordimont2020) plus independent panel yield in
+    an unselected ISS cohort (andrade2022).
+- claim: BDA-1 missense alleles act by a mechanism other than reduced IHH dosage.
+  grade: B
+  basis: Inferred from the phenotypic non-overlap between gao2001 missense families and haploinsufficient
+    carriers; not directly tested by an allele-matched functional comparison.
+key_refs:
+- ref_id: gao2001
+  pmid: '11455389'
+  doi: 10.1038/ng577
+  first_author: Gao B
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Three heterozygous missense mutations in the IHH N-terminal signalling domain
+    cause brachydactyly type A-1 in three large families.
+- ref_id: hellemans2003
+  pmid: '12632327'
+  doi: 10.1086/374318
+  first_author: Hellemans J
+  year: 2003
+  type: primary_abstract_only
+  one_line_finding: Homozygous IHH mutations cause acrocapitofemoral dysplasia with cone-shaped
+    epiphyses of hands and hips.
+- ref_id: sentchordimont2020
+  pmid: '32311039'
+  doi: 10.1210/clinem/dgaa218
+  first_author: Sentchordi-Montané L
+  year: 2020
+  type: primary
+  one_line_finding: 16 heterozygous IHH probands show mild-moderate short stature and fifth-finger
+    changes but no classical brachydactyly A-1; five carriers of normal height.
+- ref_id: andrade2022
+  pmid: '36373817'
+  doi: 10.1530/ec-22-0214
+  first_author: Andrade NLM
+  year: 2022
+  type: primary
+  one_line_finding: IHH is the commonest gene found (4/102) on a growth-plate panel in children
+    classified as idiopathic short stature.
 last_verified: '2026-08-05'

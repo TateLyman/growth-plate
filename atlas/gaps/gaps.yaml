@@ -6173,3 +6173,298 @@ gaps:
     experiment is run.
   tractability: 4
   search_log_ref: g_mr002_allele
+- gap_id: g_l12l7_001
+  question: In a species that completes epiphyseal fusion, does depletion of the resting-zone progenitor pool CAUSE fusion,
+    or is the depletion observed at fusion merely the state of a plate terminated by an independent trigger (in humans, oestrogen)?
+  type: species_gap
+  layer: L7
+  why_it_matters: Every progenitor-exhaustion model of growth cessation in this atlas rests on mouse lineage tracing, and
+    the mouse growth plate is never replaced by bone. If depletion is a consequence rather than a cause, then interventions
+    that preserve the resting pool (delayed senescence, growth suppression) would postpone fusion, whereas if fusion is imposed
+    by oestrogen the pool state at closure is irrelevant to therapy design. The two readings give opposite advice about whether
+    a CNP analogue or a GnRH analogue is the better way to buy growth time.
+  what_is_known: In rabbit, oestrogen accelerates the age-related loss of resting-zone chondrocytes, the loss persists 5 weeks
+    after withdrawal, is not apoptotic, and transient oestrogen hastens fusion. In mouse, PTHrP-creER labelled columns decline
+    until ~6 months of chase then plateau, with a 2-3% long-term self-renewing minority. Growth-inhibiting conditions (local
+    and systemic glucocorticoid in rabbit, propylthiouracil in rat) conserve capacity and delay both senescence and, in rabbit,
+    fusion.
+  what_is_missing: Any measurement of resting-zone progenitor number or proliferative capacity in a human or rabbit plate
+    AT the moment of fusion, compared with an age-matched unfused plate. The causal direction has never been tested by manipulating
+    the pool independently of the oestrogen signal.
+  nearest_evidence:
+  - nilsson2014
+  - weise2001
+  - gafni2001
+  - schrier2006
+  - mizuhashi2018
+  discriminating_experiment: 'In juvenile ovariectomised rabbits, run two arms to the moment of fusion: (a) oestradiol cypionate
+    70 ug/kg/week (early fusion) and (b) vehicle (late fusion). At the histologically defined instant of first bony union
+    in each animal, count resting-zone chondrocytes per unit area and measure BrdU/EdU labelling index in the resting zone.
+    If depletion CAUSES fusion, plates that fuse early under oestrogen must be AS depleted at fusion as vehicle plates are
+    at their later fusion - depletion is the shared threshold. If fusion is imposed, oestrogen-treated plates will fuse while
+    measurably LESS depleted than vehicle plates at their own fusion, and the resting-zone count at fusion will differ between
+    arms.'
+  tractability: 4
+  search_log_ref: g_l12l7_009
+- gap_id: g_l12l7_002
+  question: Is the mouse PTHrP-positive resting chondrocyte the functional equivalent of the human PTHLH-negative stem-like
+    "root" population of the resting zone, or are these two different cells?
+  type: species_gap
+  layer: L2
+  why_it_matters: The entire mouse growth-plate stem cell literature is indexed on PTHrP expression. Human single-cell and
+    spatial profiling found the human resting zone stem-like population to be PTHLH-NEGATIVE. If the defining marker does
+    not transfer, then every mouse claim about resting-zone self-renewal, clonal column output and pool exhaustion is being
+    attached to human biology by analogy alone, and the progenitor-exhaustion model of human fusion has no identified human
+    cell to exhaust.
+  what_is_known: 'Mouse: PTHrP+ resting chondrocytes appear at P3, expand P6-P9, are markedly less proliferative than the
+    cells below (6.1% vs 30.5% EdU+ at P9), generate monoclonal columns for at least a year, and ~2-3% behave as long-term
+    stem cells. Human: two stem-like resting populations exist in early pubertal plates, one of them PTHLH-negative and sitting
+    in a WNT- and TGF-beta-low niche; a subset of human resting chondrocytes is functionally quiescent in vivo and can exit
+    G0 ex vivo.'
+  what_is_missing: 'A cross-species transcriptomic and functional alignment: whether the human PTHLH-negative root cell and
+    the mouse PTHrP+ cell occupy corresponding positions in a shared expression manifold, and whether either has demonstrable
+    self-renewal. Human lineage tracing is impossible, so the functional half of the question is method-blocked in humans.'
+  nearest_evidence:
+  - chu2026
+  - mizuhashi2018
+  - avijgan2025
+  - avijgan2026
+  discriminating_experiment: 'Integrate human early-pubertal growth plate single-cell/spatial data with mouse P9-P12 PTHrP-mCherry
+    sorted resting-zone data under a shared-embedding model, then test the alignment functionally in the only direction available:
+    sort the human PTHLH-negative root population and the human PTHLH-positive population from surgical specimens and compare
+    secondary colony-forming frequency and serial passageability ex vivo against the published mouse benchmarks (16.3% secondary
+    colonies from a P12 pulse, 12.5% of those passageable nine times). If the human root cell is the mouse PTHrP+ cell''s
+    equivalent, the PTHLH-negative fraction will carry the colony-forming activity; if the marker is simply inverted between
+    species, the PTHLH-positive fraction will.'
+  tractability: 3
+- gap_id: g_l12l7_003
+  question: Is the terminal chondrocyte fate at human epiphyseal fusion hypoxic, non-apoptotic death, and is HIF1A stabilised
+    in the fusing plate?
+  type: known_unknown
+  layer: L7
+  why_it_matters: The single human fusing growth plate ever examined showed electron-microscopic hypoxia and necrosis with
+    ZERO TUNEL-positive cells, directly contradicting the apoptosis-centred rodent account. If terminal death is hypoxic and
+    secondary to the plate being sealed off by dense cortical-like bone, then fusion is executed from the outside in by bone
+    and vessels and the chondrocyte is a passive casualty; if it is a programmed cell-autonomous pathway, it is a drug target.
+  what_is_known: 'Human n=1 fusing plate: disorganised large chondrocytes surrounded by a border of dense cortical-like bone,
+    no TUNEL positivity, no EM signs of apoptosis or autophagy, EM signs of hypoxia and necrosis. Rat: aged plates develop
+    a bone band sealing the metaphyseal edge with extensive acellular areas. Mouse: chondrocyte-restricted Hif1a deletion
+    kills cells in the plate INTERIOR, showing the plate is developmentally hypoxic in its centre.'
+  what_is_missing: Any molecular corroboration in human tissue. No HIF1A immunostaining, no pimonidazole adduct, no lactate
+    measurement, and no necroptosis marker (RIPK3, phospho-MLKL) has ever been applied to a human growth plate at or approaching
+    fusion.
+  nearest_evidence:
+  - emons2009
+  - schipani2001
+  - emons2011
+  discriminating_experiment: Collect human physeal specimens at successive MRI-defined fusion stages (Sanders/MRI closure
+    staging) from limb-reconstruction and epiphysiodesis surgery, and stain each for HIF1A nuclear stabilisation, CA9 or GLUT1
+    as hypoxia-response readouts, and RIPK3/phospho-MLKL for necroptosis, with TUNEL as the internal comparator. Under the
+    hypoxia hypothesis, hypoxia-response markers rise in the plate interior BEFORE chondrocyte loss and necroptosis markers
+    stay negative. Under a programmed-death hypothesis, RIPK3/MLKL or caspase activation appears at or before the same stage.
+  tractability: 3
+- gap_id: g_l12l7_004
+  question: Does bidirectional vascular invasion execute human epiphyseal fusion, and is VEGF required for the transphyseal
+    bridges that unite the plate?
+  type: known_unknown
+  layer: L7
+  why_it_matters: Bridging is the physical substrate of fusion, and the only proposed molecular control of it is VEGF-gated
+    vascular invasion demonstrated in mouse - a species that forms hundreds of bridges yet never completes fusion. If human
+    fusion is vessel-executed, antiangiogenic exposure in childhood would be predicted to delay closure, which is a testable
+    safety and therapeutic signal; if it is matrix-mineralisation-driven, VEGF is irrelevant to timing.
+  what_is_known: 'Human and canine histology: mineralisation demarcated by tide lines spreads inward from BOTH plate surfaces,
+    first union is by mineralised cartilage as metaplastic bone, then a restricted region is perforated and replaced by bone
+    and marrow. Mouse: VEGF sequestration suppresses vessel invasion of hypertrophic cartilage reversibly; wild-type mice
+    carry 495 +/- 45 transphyseal bridges per tibial plate at density 1.2. Human VEGF protein is present in growth plate and
+    rises across pubertal development; in rat, ovariectomy lowers plate VEGF and estradiol restores it.'
+  what_is_missing: Nobody has imaged the vasculature of a human growth plate at or approaching fusion. There is no 3D vascular
+    map of a human physis at any pubertal stage, and no test of whether bridges in humans contain or follow vessels.
+  nearest_evidence:
+  - haines1975
+  - gerber1999
+  - emons2010
+  - samvelyan2022
+  - staines2018
+  discriminating_experiment: Apply synchrotron phase-contrast or contrast-enhanced micro-CT to human physeal specimens graded
+    by MRI closure stage, segmenting bridges and vessels in the same volume; repeat in rabbit plates approaching fusion with
+    and without a VEGF trap. If fusion is vessel-executed, bridges will co-localise with transphyseal vessels in human specimens
+    and VEGF blockade will delay rabbit fusion while leaving proliferation intact. If it is mineralisation-driven, bridges
+    will form as avascular mineralised-cartilage columns and VEGF blockade will not shift rabbit fusion timing.
+  tractability: 2
+- gap_id: g_l12l7_005
+  question: Which FGFR3 skeletal-dysplasia alleles activate STAT1 in HUMAN chondrocytes, and is STAT1 engaged at all by the
+    achondroplasia G380R allele in human growth plate tissue?
+  type: search_established
+  layer: L3
+  why_it_matters: The STAT1 branch is presented in review literature as the proliferation-arrest arm of FGFR3 and is routinely
+    invoked to explain achondroplasia. If STAT1 activation is restricted to K650E and K650M - which together cause a small
+    minority of FGFR3 dysplasia - then the branch is irrelevant to achondroplasia and every therapeutic argument that targets
+    it is misdirected. The two published human -relevant results disagree.
+  what_is_known: In a cell-free kinase assay and in RCS chondrocytes, HeLa and 293T, only K650M and K650E of six dysplasia
+    alleles caused STAT1(Y701) phosphorylation; G380R, N540K, R248C and Y373C caused weak (HeLa) or no activation, while ERK
+    was strongly activated by all six and correlated with proliferation arrest. Against this, cultured human thanatophoric
+    dysplasia type I (R248C) fetal chondrocytes showed ligand-independent STAT1 activation with nuclear STAT1 in hypertrophic
+    chondrocytes - and in those same human cells the mitogenic response to FGF2/FGF9 was NOT reduced, the lesion instead being
+    increased apoptosis with raised BAX and reduced BCL-2.
+  what_is_missing: A STAT1 phosphorylation measurement in human growth plate tissue carrying a defined FGFR3 allele. Both
+    existing datasets are cell culture; one uses non-cartilage and rat chondrosarcoma backgrounds, the other uses human fetal
+    chondrocytes from lethal cases only. No achondroplasia (G380R) human cartilage has been assayed for STAT1 at all.
+  nearest_evidence:
+  - krejci2008
+  - legeaimallet1998
+  - su1997
+  - murakami2004
+  discriminating_experiment: Differentiate isogenic human iPSC lines carrying G380R, N540K, R248C and K650E (and wild type)
+    to chondrocytes, and quantify phospho-STAT1(Y701), phospho-ERK1/2 and p21WAF1/CIP1 by capillary Western with matched loading,
+    alongside proliferation index. If STAT1 engagement is allele-restricted as krejci2008 reports, only K650E lines will show
+    phospho-STAT1 above background while all lines show phospho-ERK. If the human-chondrocyte context is what matters, R248C
+    and G380R lines will show phospho-STAT1 that the non-cartilage backgrounds missed.
+  tractability: 4
+  search_log_ref: g_l12l7_005
+- gap_id: g_l12l7_006
+  question: Has any PTH1R agonist ever been administered to a human with open epiphyses with a prospectively reported linear-growth
+    endpoint, and does pharmacological PTH1R activation delay hypertrophic differentiation in a growing human?
+  type: search_established
+  layer: L12
+  why_it_matters: PTH1R is the receptor through which PTHrP holds prehypertrophic chondrocytes in the proliferative pool,
+    and the human Jansen/Blomstrand pair establishes the direction of the dose-response without any animal model. Two PTH1R
+    agonists are approved drugs. Yet neither has ever been given to a growth plate for growth, so the single most mechanistically
+    apt pharmacological probe of the plate's own pace-setting signal has never been run. This is a structural hole created
+    by regulation, not by biology.
+  what_is_known: 'Both FDA labels bar or discourage use with open epiphyses on osteosarcoma grounds, drawn from rat carcinogenicity
+    data and the elevated background osteosarcoma incidence during the adolescent growth spurt. Paediatric exposure exists
+    only in hypoparathyroidism, activating calcium-sensing receptor mutations, and off-label osteotomy healing in osteogenesis
+    imperfecta. One 2025 secondary analysis does report height-for-age Z during paediatric PTH(1-34) therapy (n=27, mean baseline
+    age 13.7 y): HAZ rose in the CaSR-activating group but stayed below 0 in the APS-1 group.'
+  what_is_missing: A trial in which linear growth is a prespecified endpoint, with an untreated or differently treated control
+    in the same disease. The one available growth dataset compares two different underlying diseases with different intrinsic
+    growth trajectories and no control, so no PTH1R growth effect can be extracted from it.
+  nearest_evidence:
+  - winer2025
+  - fda_forteo_label_2025
+  - fda_tymlos_label_2025
+  - schipani1995
+  - jobert1998
+  discriminating_experiment: Within a single indication that already justifies chronic PTH(1-34) exposure in children - autosomal
+    dominant hypocalcaemia from activating CaSR mutations - run a randomised comparison of continuous twice-daily PTH(1-34)
+    against conventional calcium/calcitriol management with annualised height velocity and bone age advance as coprimary endpoints
+    over 24 months. If pharmacological PTH1R activation delays hypertrophic exit as Jansen predicts, the PTH arm will show
+    higher height velocity with SLOWER bone age advance; if the receptor is already saturated by endogenous PTHrP in the plate,
+    velocity and bone age will not differ.
+  tractability: 2
+  search_log_ref: g_l12l7_006
+- gap_id: g_l12l7_007
+  question: What concentration of an FGFR3-directed biologic - specifically recifercept - is achieved inside human growth
+    plate cartilage, and does it reach the range required to trap FGF ligand there?
+  type: quantitative_gap
+  layer: L12
+  why_it_matters: Recifercept is the cleanest human test of whether FGFR3-G380R signalling in cartilage is ligand-dependent,
+    because a ligand trap can only work if the mutant receptor still needs ligand. It failed outright - observed/expected
+    height change 1.0 (95% CI 0.8-1.1) in every arm. Without a plate exposure measurement, that scientific null cannot be
+    partitioned between "the target premise is wrong" and "a ~100 kDa glycoprotein cannot penetrate avascular, proteoglycan-dense
+    cartilage". The first conclusion would invalidate every ligand-directed FGFR3 strategy; the second would invalidate only
+    the delivery format. The same unmeasured quantity undermines the CNP analogues and infigratinib.
+  what_is_known: Phase 2 NCT04638153 (n=60) and its extension NCT05116046 (n=35) were terminated 18 November 2022 for lack
+    of efficacy at any tested dose, explicitly not for safety, across 1 mg/kg weekly, 2 mg/kg twice weekly and 1.5 mg/kg daily.
+    FRET work independently shows G380R's one measurable effect is increased UNLIGANDED dimerisation propensity, which would
+    predict ligand-trap failure on target grounds.
+  what_is_missing: No tissue exposure measurement was published for the failed programme, and none exists for any CNP analogue
+    or for infigratinib either. No drug concentration has ever been measured inside growth plate cartilage in any species
+    for any of these agents.
+  nearest_evidence:
+  - nct04638153
+  - nct05116046
+  - rignol2022
+  - sarabipour2016
+  discriminating_experiment: In a large-animal juvenile model with a human-scale physis (pig or sheep), dose recifercept and
+    a CNP analogue to steady state, then quantify drug concentration in microdissected resting, proliferative and hypertrophic
+    zones by LC-MS/MS against matched plasma, with a fluorescently tagged control protein of matched hydrodynamic radius to
+    calibrate penetration. If plate concentration is below the in vitro IC50 for ligand sequestration, the recifercept null
+    is a delivery failure and ligand-directed strategies remain open in a penetrating format. If plate concentration is well
+    above it, the null is evidence that human G380R signalling is substantially ligand-independent.
+  tractability: 3
+- gap_id: g_l12l7_008
+  question: Is NPR2/GC-B dephosphorylated in human achondroplasia growth plate, as the mouse FGFR3-to-NPR2 crosstalk model
+    requires?
+  type: search_established
+  layer: L3
+  why_it_matters: The entire mechanistic rationale for treating achondroplasia with CNP analogues is that FGFR3 suppresses
+    NPR2 post-translationally rather than transcriptionally, leaving receptor present to be agonised. That claim is established
+    genetically in mouse - a non-dephosphorylatable GC-B(7E/7E) allele rescues the FGFR3-G380R phenotype. If the phosphorylation
+    state of human NPR2 in an achondroplasia plate differs, the predicted headroom for CNP-analogue rescue differs with it,
+    and the class ceiling of ~1.4 cm/yr may be a receptor-state ceiling rather than a dose ceiling.
+  what_is_known: FGF causes rapid, potent and reversible dephosphorylation of the seven regulatory juxtamembrane serines and
+    threonines of GC-B in rat chondrosarcoma cells; a 7-glutamate phosphomimetic GC-B is completely FGF-resistant; FGF lowers
+    growth plate cGMP through a PPP-family phosphatase in intact mouse tibia measured with an in vivo biosensor; and GC-B(7E/7E)
+    crossed into FGFR3-G380R restores long bone length and hypertrophic zone area to wild type. GC-B PROTEIN levels are unchanged
+    throughout, so the crosstalk is post-translational only.
+  what_is_missing: Any measurement of NPR2 phosphorylation state, or of cGMP, in human growth plate tissue - from an achondroplasia
+    patient or from a healthy control. All existing data are mouse, rat or transfected cells.
+  nearest_evidence:
+  - wagner2021
+  - robinson2017
+  - shuhaibar2017
+  - ozasa2005
+  discriminating_experiment: Apply phospho-specific GC-B immunodetection (or Phos-tag mobility shift on microdissected tissue)
+    to human growth plate specimens obtained at limb-lengthening surgery from achondroplasia patients and to age-matched non-achondroplasia
+    physeal specimens, zone by zone. If the mouse model transfers, achondroplasia plates will show reduced GC-B phosphorylation
+    relative to controls with unchanged total GC-B protein. If phosphorylation is equivalent, the human ceiling on CNP-analogue
+    efficacy is set somewhere other than receptor phosphorylation state.
+  tractability: 2
+- gap_id: g_l12l7_009
+  question: How many resting-zone chondrocytes per unit area does a human growth plate contain as a function of pubertal stage,
+    and does a plate about to fuse differ from an age-matched unfused plate?
+  type: quantitative_gap
+  layer: L7
+  why_it_matters: This single number is what separates the two readings of resting-zone depletion - cause of fusion versus
+    state at fusion - and it is the human counterpart of the rabbit measurement on which the whole senescence model rests.
+    Without it, the finite-proliferative-capacity model and the oestrogen-imposed-fusion model make identical predictions
+    about human tissue and cannot be told apart.
+  what_is_known: 'Rabbit: resting-zone chondrocyte proliferation rate and cell number per unit area both fall with age; oestrogen
+    accelerates the loss and it persists after withdrawal. Human: two stem-like resting populations have been described transcriptionally
+    in early-pubertal and adolescent specimens, and a subset is functionally quiescent in vivo - but as cell IDENTITIES, not
+    as counts.'
+  what_is_missing: A stereological count of resting-zone chondrocytes per unit plate area in human physeal specimens stratified
+    by pubertal stage and by MRI-defined fusion stage. No such series exists.
+  nearest_evidence:
+  - chu2026
+  - avijgan2025
+  - nilsson2014
+  - schrier2006
+  - kvist2021
+  discriminating_experiment: Assemble human physeal specimens from epiphysiodesis, limb reconstruction and post-mortem material,
+    staged by MRI closure grade and Tanner stage, and perform design-based stereological counting of resting-zone nuclei per
+    unit plate area with plate height as a covariate. If depletion is the threshold for fusion, resting-zone density at the
+    fusing stage will converge to a common low value regardless of chronological age. If fusion is imposed by oestrogen, resting-zone
+    density at fusion will vary with age at fusion and will be higher in early-fusing than in late-fusing plates.
+  tractability: 2
+  search_log_ref: g_l12l7_009
+- gap_id: g_l12l7_010
+  question: Is RUNX2 required to build the transphyseal bone column that unites a growth plate at fusion?
+  type: known_unknown
+  layer: L7
+  why_it_matters: Bony bridges are the physical substrate of fusion and are made of bone, yet the transcription factor that
+    licenses osteoblast differentiation has never been connected to them. Cleidocranial dysplasia shows that one RUNX2 allele
+    is nearly sufficient for the growth plate hypertrophic transition while being clearly insufficient for intramembranous
+    bone - so RUNX2 dose is a natural handle for testing whether bridge formation is an osteoblastic programme or a mineralised-cartilage
+    metaplasia.
+  what_is_known: RUNX2 licenses chondrocyte hypertrophy and osteoblast differentiation; human heterozygous loss gives cleidocranial
+    dysplasia with only mild short stature; mouse Runx2;Runx3 double nulls show complete absence of chondrocyte maturation
+    and limb length falls in proportion to combined gene dose. Bridges can be counted non-destructively by micro-CT and are
+    genotype-sensitive in mouse (wild type 495 bridges at density 1.2; Socs2-/- 187 at density 14.4). Human first union is
+    by MINERALISED CARTILAGE, a metaplastic bone, before any perforation and bone replacement occurs.
+  what_is_missing: No study has measured bridge number, density or composition as a function of RUNX2 dose in any species,
+    and no human bridge has been characterised for osteoblast versus metaplastic-cartilage origin.
+  nearest_evidence:
+  - mundlos1997
+  - yoshida2004
+  - samvelyan2022
+  - haines1975
+  - staines2018
+  discriminating_experiment: Quantify transphyseal bridge number and density by micro-CT in Runx2+/- versus wild-type mice
+    at matched ages, and in parallel stain human physeal specimens at successive MRI fusion stages for RUNX2, osteocalcin
+    and collagen type X to determine whether bridge material is RUNX2-positive osteoblastic bone or collagen-X-positive mineralised
+    cartilage. If bridging is an osteoblastic programme, Runx2+/- mice will have fewer or less dense bridges and human bridges
+    will be RUNX2/osteocalcin-positive. If bridging is metaplastic mineralised cartilage, RUNX2 dose will not change bridge
+    counts and human bridge material will retain collagen X.
+  tractability: 4

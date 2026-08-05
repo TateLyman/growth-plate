@@ -1,7 +1,89 @@
 id: stat5b_gene
 name: STAT5B
+aliases:
+- signal transducer and activator of transcription 5B gene
 type: gene
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |-
+  STAT5B is the transcription factor through which the growth hormone receptor drives IGF1
+  transcription, and human STAT5B deficiency is the experiment that places the defect below the
+  receptor while keeping the receptor intact. Kofoed 2003 reported the first patient: severe growth
+  hormone insensitivity with normal-to-elevated GH and GH-binding protein but very low IGF-1, caused
+  by a homozygous STAT5B mutation, and accompanied by immune dysfunction - because STAT5B also
+  transduces interleukin-2 receptor signalling, so the same allele produces growth failure and
+  lymphoid disease together. Hwa 2005 characterised a second patient from a consanguineous pedigree
+  with a novel homozygous insertion causing total absence of STAT5B protein; she measured 114 cm at
+  16.4 years, a height SDS of -7.8, with IGF-1 at 7.2 ng/ml against a normal range of 242-600,
+  IGFBP-3 at 543 against 2500-4800, and acid-labile subunit at 1.22 microg/ml against 5.6-16, none of
+  which rose during an IGF-1 generation test. The severity is the point: STAT5B nullizygosity gives a
+  larger stature deficit than IGFALS deficiency by roughly 5 SDS despite both collapsing circulating
+  IGF-1, because STAT5B loss also removes locally transcribed IGF-1 and the immune phenotype adds
+  morbidity. The combination of near-absent IGF-1 and a failed generation test with a structurally
+  normal GH receptor is the diagnostic fingerprint that distinguishes it from Laron syndrome.
+quantitative:
+- parameter: height SDS, homozygous STAT5B null
+  value: '-7.8'
+  unit: SDS
+  conditions: female, 114 cm at 16.4 years, consanguineous pedigree
+  species: human
+  source_ref: hwa2005
+  uncertainty: n=1
+- parameter: serum IGF-1, homozygous STAT5B null
+  value: '7.2'
+  unit: ng/ml
+  conditions: same patient; laboratory normal range 242-600 ng/ml
+  species: human
+  source_ref: hwa2005
+  uncertainty: failed to rise during an IGF-1 generation test
+- parameter: serum IGFBP-3, homozygous STAT5B null
+  value: '543'
+  unit: ng/ml
+  conditions: same patient; normal range 2500-4800 ng/ml
+  species: human
+  source_ref: hwa2005
+  uncertainty: n=1
+- parameter: serum acid-labile subunit, homozygous STAT5B null
+  value: '1.22'
+  unit: microg/ml
+  conditions: same patient; normal range 5.6-16 microg/ml
+  species: human
+  source_ref: hwa2005
+  uncertainty: n=1
+localization:
+- 'human: germline; STAT5B transduces GH receptor signalling in liver and growth plate and IL-2
+  receptor signalling in lymphocytes'
+human_evidence: direct
+human_evidence_note: Two independent homozygous human patients with full GH-IGF axis biochemistry
+  and an IGF-1 generation test.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human loss-of-function patients only.
+confidence: B
+claim_grades:
+- claim: Homozygous STAT5B loss causes severe growth hormone insensitivity with normal GH receptor.
+  grade: A
+  basis: Two independent patients from unrelated pedigrees with concordant biochemistry (kofoed2003,
+    hwa2005).
+- claim: The stature deficit of STAT5B nullizygosity is about -7.8 SDS.
+  grade: D
+  basis: Single measured patient (hwa2005); no genotype-defined cohort mean exists.
+key_refs:
+- ref_id: kofoed2003
+  pmid: '13679528'
+  doi: 10.1056/nejmoa022926
+  first_author: Kofoed EM
+  year: 2003
+  type: primary
+  one_line_finding: A homozygous STAT5B mutation causes growth hormone insensitivity with normal
+    GH and GH-binding protein but low IGF-1, plus immune dysfunction.
+- ref_id: hwa2005
+  pmid: '15827093'
+  doi: 10.1210/jc.2005-0515
+  first_author: Hwa V
+  year: 2005
+  type: primary
+  one_line_finding: Total absence of STAT5B protein gives height -7.8 SDS with IGF-1 7.2 ng/ml
+    (normal 242-600) and no response to an IGF-1 generation test.
 last_verified: '2026-08-05'
