@@ -1,7 +1,70 @@
 id: type_h_vessel
 name: Type H vessel
-type: tissue_structure
+aliases:
+- type H capillary
+- CD31-hi endomucin-hi capillary
+type: cell_type
 layer: L1
-stub: true
+stub: false
+summary: 'Type H vessels are a capillary subtype in bone defined by high expression of CD31 (Pecam1) and
+  endomucin, distinguished from the more abundant sinusoidal type L vessels. They are concentrated in
+  the metaphysis immediately beneath the growth plate and in the endosteum, are surrounded by Runx2+ and
+  osterix+ osteoprogenitors, and their abundance falls sharply with age in parallel with declining bone
+  formation. Their functional claim is that they couple angiogenesis to osteogenesis: manipulating endothelial
+  Notch or HIF signalling changes type H vessel abundance and changes bone mass in the same direction.
+  For growth plate architecture their relevance is positional - they define the vascular compartment that
+  meets the chondro-osseous junction and that hosts the septoclasts and osteoprogenitors which convert
+  the cartilage template into primary spongiosa. The entire type H concept is murine; no human study has
+  demonstrated a type H compartment at the human growth plate, and the human vessels characterised at
+  the human chondro-osseous region were phenotyped with a different marker panel.'
+quantitative:
+- parameter: anatomical distribution
+  value: metaphysis adjacent to the growth plate and endosteum
+  unit: qualitative
+  conditions: mouse long bone, CD31/endomucin immunostaining
+  species: mouse
+  source_ref: kusumbe2014
+  uncertainty: descriptive
+- parameter: change with age
+  value: declining abundance
+  unit: qualitative
+  conditions: mouse, juvenile to aged
+  species: mouse
+  source_ref: kusumbe2014
+  uncertainty: direction reported
+- parameter: human studies demonstrating type H vessels at the growth plate
+  value: '0'
+  unit: studies
+  conditions: literature to 2026-08-05
+  species: human
+  source_ref: kusumbe2014
+  uncertainty: null result
+localization:
+- 'mouse metaphysis and endosteum: defined (kusumbe2014)'
+- 'human growth plate: not demonstrated'
 human_evidence: absent
+human_evidence_note: No study demonstrates a CD31-high/endomucin-high type H vessel compartment at the
+  human growth plate; human physeal vessels have been phenotyped with CD34/CD31/alpha-SMA panels instead
+  (walzer2014).
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: A marker-defined vascular subtype established entirely in mouse, with an age-related
+  decline that maps onto a species that does not undergo epiphyseal fusion.
+confidence: C
+key_refs:
+- ref_id: kusumbe2014
+  pmid: '24646994'
+  first_author: Kusumbe AP
+  year: 2014
+  type: primary
+  one_line_finding: Defined type H capillaries as a CD31-high/endomucin-high subtype enriched near the
+    growth plate that couples angiogenesis to osteogenesis and declines with age.
+- ref_id: walzer2014
+  pmid: '25164565'
+  first_author: Walzer SM
+  year: 2014
+  type: primary
+  one_line_finding: Characterised human growth plate vessels with CD34/CD31/alpha-SMA rather than type
+    H markers, finding immature uncovered sprouts in ossification centres.
 last_verified: '2026-08-05'

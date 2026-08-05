@@ -1,7 +1,54 @@
 id: cleidocranial_dysplasia
 name: Cleidocranial dysplasia
+aliases:
+- CCD
+- RUNX2 haploinsufficiency
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Cleidocranial dysplasia is the human RUNX2 dosage experiment and dissects intramembranous from
+  endochondral ossification. RUNX2 haploinsufficiency - by point mutation, whole-gene deletion, or
+  as recently shown a 4.2 kb deletion of the 3' untranslated region that presumably destabilises
+  the transcript - produces absent or hypoplastic clavicles, delayed closure of cranial sutures
+  and fontanelles, wormian bones, supernumerary and unerupted teeth, and only mild to moderate
+  short stature. The distribution of the lesion is the point: bones formed by intramembranous
+  ossification (clavicle, cranial vault) are severely affected, whereas long bones formed by
+  endochondral ossification through a growth plate are comparatively spared. RUNX2 is
+  nevertheless required in the growth plate - it drives chondrocyte hypertrophy - so the mild
+  stature deficit shows that one functional RUNX2 allele is nearly sufficient for the
+  hypertrophic transition while being clearly insufficient for intramembranous bone. That
+  asymmetric dose sensitivity between two ossification programmes in the same individual is what
+  makes CCD useful here, and the 3'UTR deletion adds a regulatory rather than coding mechanism to
+  the allelic series.
+quantitative:
+- parameter: size of the RUNX2 3'UTR deletion in the regulatory-mechanism case
+  value: '4.2'
+  unit: kb
+  conditions: novel non-coding deletion causing cleidocranial dysplasia
+  species: human
+  source_ref: mijovic2025
+  uncertainty: n=1 case
+localization:
+- 'human cranial vault and clavicle (intramembranous): severely affected'
+- 'human long bone growth plate (endochondral): comparatively spared, with only mild short stature'
+human_evidence: direct
+human_evidence_note: Human RUNX2 coding and non-coding lesions with a consistent, anatomically selective
+  skeletal phenotype.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node; RUNX2's role in chondrocyte hypertrophy is established
+  largely in mouse and is flagged as such.
+confidence: B
+key_refs:
+- ref_id: mijovic2025
+  pmid: '42148000'
+  first_author: Mijovic M
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: A 4.2 kb RUNX2 3'UTR deletion causes cleidocranial dysplasia - a regulatory mechanism
+    in the allelic series.
+open_questions:
+- g_l11path_019
 last_verified: '2026-08-05'

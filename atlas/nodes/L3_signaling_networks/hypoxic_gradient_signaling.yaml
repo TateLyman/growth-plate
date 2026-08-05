@@ -1,7 +1,66 @@
 id: hypoxic_gradient_signaling
-name: Hypoxia signaling gradient
+name: Hypoxic gradient across the growth plate
+aliases:
+- oxygen gradient, physis
 type: process
 layer: L3
-stub: true
+stub: false
+summary: 'The standard model holds that oxygen falls from the vascularised epiphyseal and metaphyseal margins toward
+  the avascular centre of the plate, and that this gradient patterns HIF1A activity, glycolytic metabolism and survival.
+  The direct evidence for the gradient itself is thin and old: Brighton and Heppenstall 1971 measured oxygen tension
+  with microelectrodes across zones of the epiphyseal plate, metaphysis and diaphysis in rats and rabbits, in vitro
+  and in vivo. Every subsequent statement about a human growth plate oxygen gradient is inferred from HIF1A-dependent
+  phenotypes, pimonidazole adduct staining or from that rodent measurement. Schipani 2001 established by HIF1A genetics
+  that the mouse plate is hypoxic in its interior rather than its periphery, which is the correct topology but is
+  a genetic inference, not an oxygen measurement. Chondrocytes also actively defend their own oxygenation: they synthesise
+  haemoglobin into membraneless cytoplasmic condensates (''Hedy'') under hypoxic control via KLF1 and independently
+  of HIF1/2A, and deleting chondrocyte haemoglobin causes severe hypoxia, glycolytic shift and death in the cartilage
+  centre (Zhang 2023, mouse) - so the tissue oxygen field is partly cell-autonomously buffered and cannot be predicted
+  from diffusion geometry alone.'
+localization:
+- 'rat and rabbit epiphyseal plate: oxygen tension measured by microelectrode (brighton1971)'
+- 'mouse growth plate interior: hypoxic by HIF1A-dependent genetics (schipani2001)'
+- 'human growth plate: never measured directly'
 human_evidence: absent
+human_evidence_note: No direct measurement of oxygen tension in a human growth plate has been published; the human
+  gradient is assumed.
+species_basis:
+- rat
+- rabbit
+- mouse
+translation_risk: high
+translation_risk_reason: The only direct measurements are from rodent/lagomorph plates a fraction of the thickness
+  of a human adolescent plate, so the diffusion distance - the key determinant - is not comparable.
+confidence: D
+key_refs:
+- ref_id: brighton1971
+  pmid: '5580029'
+  first_author: Brighton CT
+  year: 1971
+  type: primary_abstract_only
+  one_line_finding: Oxygen tension was measured by microelectrode across epiphyseal plate zones, metaphysis and diaphysis
+    in rats and rabbits.
+- ref_id: schipani2001
+  pmid: '11691837'
+  first_author: Schipani E
+  year: 2001
+  type: primary
+  one_line_finding: The mouse growth plate is hypoxic in its interior, shown genetically rather than by oximetry.
+- ref_id: schipani2015
+  pmid: '26331009'
+  first_author: Schipani E
+  year: 2015
+  type: review
+  one_line_finding: Review by the group that defined growth plate hypoxia, stating the gradient claim and enumerating
+    what remains unanswered.
+- ref_id: zhang2023_2
+  pmid: '37794190'
+  first_author: Zhang F
+  year: 2023
+  type: primary
+  one_line_finding: Chondrocytes form haemoglobin condensates under KLF1 control, HIF-independently, and buffer their
+    own oxygen supply.
+open_questions:
+- g_l3rest_011
+pending_source: brighton1971
 last_verified: '2026-08-05'

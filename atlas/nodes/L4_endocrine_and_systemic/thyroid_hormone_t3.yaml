@@ -1,9 +1,86 @@
 id: thyroid_hormone_t3
-name: Triiodothyronine
-type: hormone
-layer: L4
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Triiodothyronine (T3)
 aliases:
 - T3
+- 3,5,3'-triiodothyronine
+type: hormone
+layer: L4
+stub: false
+summary: 'T3 is the receptor-active thyroid hormone and the switch that moves growth plate chondrocytes
+  out of the resting/proliferative programme into hypertrophy. Its action is reciprocal, not simply stimulatory:
+  in rat growth plate chondrocytes in agarose suspension T3 INHIBITED clonal expansion and proliferation
+  while simultaneously INDUCING alkaline phosphatase activity, collagen X mRNA and alcian-blue-positive
+  matrix within 7 days (robson2000). This explains the paradoxical growth plate in juvenile hypothyroidism,
+  where the plate is disorganised and chondrocytes fail to hypertrophy even though proliferation is not
+  the limiting step. Downstream, T3 acts through IGF-1-dependent modulation of beta-catenin (wang2010)
+  and regulates PTHrP and its receptor during hypertrophic differentiation (stevens2000), placing it upstream
+  of the PTHrP-Ihh loop rather than parallel to it. Human relevance is established by the growth arrest
+  of untreated juvenile hypothyroidism and its reversal on levothyroxine; in the neonatal screening era
+  final height in congenital hypothyroidism is normal and actually exceeds target height (delvecchio2015).'
+quantitative:
+- parameter: final height in screened, treated congenital hypothyroidism
+  value: '-0.1'
+  unit: SDS
+  conditions: 215 Italian patients, 20-year cohort; target height -0.8 SDS
+  species: human
+  source_ref: delvecchio2015
+  uncertainty: SD 1.0; difference from target P<0.001
+- parameter: time to induction of alkaline phosphatase, collagen X mRNA and matrix by T3
+  value: '7'
+  unit: days
+  conditions: rat tibial growth plate chondrocytes, agarose suspension culture
+  species: rat
+  source_ref: robson2000
+  uncertainty: earliest timepoint at which induction was detected
+- parameter: serum T3 during Triac treatment of MCT8 deficiency
+  value: 4.58 -> 1.66
+  unit: nmol/L
+  conditions: 67 MCT8-deficient patients, median 2.2 y treatment, target range 1.4-2.5 nmol/L
+  species: human
+  source_ref: van2022
+  uncertainty: SD 1.11 -> 0.69; mean decrease 2.92 (95% CI 2.61-3.23)
+localization:
+- 'rat RZ/PZ: TRalpha1, TRalpha2 and TRbeta1 protein present (robson2000)'
+- 'rat HZ: thyroid hormone receptors NOT detected - hypertrophic cells are not the direct T3 target (robson2000)'
+- 'human growth plate: T3 concentration and receptor occupancy by zone not measured'
+human_evidence: direct
+human_evidence_note: Untreated juvenile hypothyroidism arrests human linear growth and levothyroxine restores
+  it; screened and early-treated congenital hypothyroidism reaches normal final height.
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: moderate
+translation_risk_reason: The clinical requirement is human-proven, but the zonal mechanism (RZ/PZ receptor
+  localisation, reciprocal proliferation/differentiation effect) is rat and mouse in vitro.
+confidence: A
+key_refs:
+- ref_id: robson2000
+  first_author: Robson H
+  year: 2000
+  type: primary
+  one_line_finding: T3 inhibits clonal expansion and proliferation while inducing hypertrophic markers;
+    TRs are in reserve/proliferating but not hypertrophic chondrocytes.
+  pmid: '11014246'
+- ref_id: stevens2000
+  first_author: Stevens DA
+  year: 2000
+  type: primary
+  one_line_finding: Thyroid hormones regulate hypertrophic differentiation and PTHrP/PPR expression during
+    endochondral bone formation.
+  pmid: '11127207'
+- ref_id: wang2010
+  first_author: Wang L
+  year: 2010
+  type: primary
+  one_line_finding: T3-mediated chondrocyte growth and differentiation requires IGF-1 modulation of beta-catenin
+    signalling.
+  pmid: '20200966'
+- ref_id: delvecchio2015
+  first_author: Delvecchio M
+  year: 2015
+  type: primary
+  one_line_finding: Final height in 215 screened congenital hypothyroid patients was -0.1 SDS, above target
+    height -0.8 SDS.
+  pmid: '26511640'
+last_verified: '2026-08-05'

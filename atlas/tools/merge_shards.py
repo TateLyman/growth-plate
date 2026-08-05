@@ -91,13 +91,22 @@ def merge_refs(dry):
     return added, dup, rewrite, len(refs)
 
 
-def merge_listfile(pattern, canon_rel, key, id_field, dry, renumber=False, prefix="e"):
+def merge_listfile(pattern, canon_rel, key, id_field, dry, renumber=False, prefix="e",
+                   dedupe_fields=None):
     canon_p = os.path.join(ROOT, canon_rel)
     canon = load(canon_p, {key: []})
     canon.setdefault(key, [])
     items = canon[key]
-    have = {i.get(id_field) for i in items if isinstance(i, dict)}
-    rewrite, added = {}, 0
+    def dkey(i):
+        if dedupe_fields:
+            return tuple(str(i.get(f))[:160] for f in dedupe_fields)
+        return i.get(id_field)
+
+    have = {dkey(i) for i in items if isinstance(i, dict)}
+    seen_keys = {(i.get("source"), i.get("target"), i.get("relation"),
+                  str(i.get("context"))[:120])
+                 for i in items if isinstance(i, dict)}
+    rewrite, added, skipped = {}, 0, [0]
 
     for sp in sorted(glob.glob(os.path.join(ROOT, pattern))):
         shard = load(sp, {}) or {}
@@ -105,25 +114,31 @@ def merge_listfile(pattern, canon_rel, key, id_field, dry, renumber=False, prefi
             if not isinstance(it, dict):
                 continue
             iid = it.get(id_field)
+            dk = dkey(it)
             if renumber:
+                # NB: must not be named `key` - that is the function parameter
+                # naming the YAML list ("edges"/"gaps"); shadowing it silently
+                # breaks shard.get(key) for every subsequent shard file.
+                semkey = (it.get("source"), it.get("target"), it.get("relation"),
+                          str(it.get("context"))[:120])
+                if semkey in seen_keys:
+                    skipped[0] += 1      # already merged - idempotent re-run
+                    continue
+                seen_keys.add(semkey)
                 new = f"{prefix}{len(items) + 1:05d}"
                 if iid and iid != new:
                     rewrite[f"{os.path.basename(sp)}::{iid}"] = new
                 it[id_field] = new
                 items.append(it); added += 1; continue
-            if iid in have:
-                n = 2
-                while f"{iid}_{n}" in have:
-                    n += 1
-                rewrite[iid] = f"{iid}_{n}"
-                it[id_field] = f"{iid}_{n}"
-                iid = it[id_field]
-            have.add(iid)
+            if dk in have:
+                skipped[0] += 1          # already merged - idempotent re-run
+                continue
+            have.add(dk)
             items.append(it); added += 1
 
     if not dry:
         dump(canon_p, canon)
-    return added, rewrite, len(items)
+    return added, rewrite, len(items), skipped[0]
 
 
 def apply_rewrites(mapping, dry):
@@ -158,22 +173,25 @@ def main():
     dry = a.dry_run
 
     r_add, r_dup, r_rw, r_tot = merge_refs(dry)
-    g_add, g_rw, g_tot = merge_listfile("gaps/shards/*.gaps.yaml",
-                                        "gaps/gaps.yaml", "gaps", "gap_id", dry)
-    s_add, _, s_tot = merge_listfile("gaps/shards/*.search.yaml",
-                                     "gaps/search_log.yaml", "searches", "gap_id", dry)
-    e_add, e_rw, e_tot = merge_listfile("edges/shards/*.edges.yaml",
-                                        "edges/edges.yaml", "edges", "edge_id", dry,
-                                        renumber=True)
+    g_add, g_rw, g_tot, g_sk = merge_listfile("gaps/shards/*.gaps.yaml",
+                                              "gaps/gaps.yaml", "gaps", "gap_id", dry)
+    # one gap may legitimately carry several searches across databases, so dedupe
+    # search logs on (gap_id, database, query) rather than gap_id alone
+    s_add, _, s_tot, s_sk = merge_listfile(
+        "gaps/shards/*.search.yaml", "gaps/search_log.yaml", "searches", "gap_id", dry,
+        dedupe_fields=["gap_id", "database", "exact_query_string"])
+    e_add, e_rw, e_tot, e_sk = merge_listfile("edges/shards/*.edges.yaml",
+                                              "edges/edges.yaml", "edges", "edge_id", dry,
+                                              renumber=True)
 
     rw = {}
     rw.update(r_rw); rw.update(g_rw)
     touched = apply_rewrites(rw, dry)
 
     print(f"refs    +{r_add} new, {r_dup} already present  -> {r_tot} total")
-    print(f"gaps    +{g_add}                               -> {g_tot} total")
-    print(f"search  +{s_add}                               -> {s_tot} total")
-    print(f"edges   +{e_add} (renumbered)                  -> {e_tot} total")
+    print(f"gaps    +{g_add} new, {g_sk} already merged      -> {g_tot} total")
+    print(f"search  +{s_add} new, {s_sk} already merged      -> {s_tot} total")
+    print(f"edges   +{e_add} new, {e_sk} already merged      -> {e_tot} total")
     if rw:
         print(f"id collisions rewritten: {len(rw)}; files touched: {touched}")
         for k, v in list(rw.items())[:10]:

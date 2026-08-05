@@ -1,7 +1,47 @@
 id: irradiation_growth_plate_damage
 name: Irradiation damage to the growth plate
+aliases:
+- radiation physeal injury
+- spinal irradiation growth arrest
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Therapeutic irradiation is the only deliberate, dose-quantified, spatially targeted perturbation
+  ever applied to the human growth plate, which makes it the single most under-exploited data
+  source in this layer. Ionising radiation kills proliferating chondrocytes preferentially, so the
+  proliferative zone is the primary target; the resulting injury is dose- and age-dependent, with
+  younger children more susceptible because more residual growth remains. The clinical signatures
+  map onto the geometry of the field: craniospinal irradiation for medulloblastoma produces a
+  disproportionate loss of SITTING height relative to leg length, because the vertebral growth
+  plates are inside the field and the femoral and tibial plates are not; hemi-field or asymmetric
+  irradiation produces limb-length discrepancy and angular deformity from partial physeal arrest;
+  total body irradiation before haematopoietic transplantation produces generalised loss. The
+  segment-specific dissociation is the key analytic asset: within one patient, an irradiated
+  physis and a non-irradiated physis experience the same endocrine environment, so any difference
+  between them isolates the DIRECT radiation effect from the GH-deficiency effect. This is a
+  within-subject control that no genetic disorder in this layer provides, and it has not been
+  exploited systematically with modern dosimetry.
+localization:
+- 'human PZ: proliferating chondrocytes are the primary radiosensitive target'
+- 'human vertebral physes vs limb physes: differentially included in craniospinal fields, producing
+  a measurable within-patient dissociation of sitting height from leg length'
+human_evidence: direct
+human_evidence_note: Radiation field geometry, dose and age are documented in human treatment records
+  and the segmental growth consequences are clinically observed; systematic dosimetry-linked physeal
+  outcome analyses are lacking.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: B
+key_refs:
+- ref_id: pollock2024
+  pmid: '38804882'
+  first_author: Pollock NI
+  year: 2024
+  type: primary_abstract_only
+  one_line_finding: Final adult height outcomes in irradiated, GH-deficient childhood cancer survivors.
+open_questions:
+- g_l11path_025
 last_verified: '2026-08-05'

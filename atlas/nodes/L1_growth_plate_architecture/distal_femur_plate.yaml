@@ -1,7 +1,119 @@
 id: distal_femur_plate
 name: Distal femoral growth plate
+aliases:
+- distal femoral physis
 type: tissue_structure
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The distal femoral physis is the fastest human growth plate and the single largest contributor
+  to standing height among individual plates. It supplies about 70% of femoral length overall, and its
+  share rises with age: from 60% at age 7 to 90% at age 14 in girls, and from 55% at 7 to 90% at 16 in
+  boys. In absolute terms it adds about 1.3 cm per year from age 7 until the final two years of growth,
+  when the rate halves. Independent data from the Harpenden Growth Study give a mean distal femoral growth
+  rate of 1.4 cm per year between ages 5 and 8, which is roughly 38 um per day - an order of magnitude
+  slower than the rat proximal tibia. Its histology is the source of the only human column-length measurement:
+  24 cells per proliferative column, from which a mean proliferative cycle time of about 20 days was derived.
+  Because of its speed and its accessibility it is also the plate on which most human epiphysiodesis and
+  guided-growth surgery is performed, and the site of the intercondylar transphyseal complexes through
+  which metaphyseal osteosarcoma reaches the epiphysis.'
+quantitative:
+- parameter: share of femoral longitudinal growth
+  value: '70'
+  unit: '% of femoral length'
+  conditions: human, overall across ages 7 to skeletal maturity
+  species: human
+  source_ref: pritchett1992
+  uncertainty: n = 244 children (123 boys, 121 girls)
+- parameter: share of femoral growth, girls
+  value: 60 (age 7) to 90 (age 14)
+  unit: '% of femoral length'
+  conditions: human girls
+  species: human
+  source_ref: pritchett1992
+  uncertainty: n = 121 girls
+- parameter: share of femoral growth, boys
+  value: 55 (age 7) to 90 (age 16)
+  unit: '% of femoral length'
+  conditions: human boys
+  species: human
+  source_ref: pritchett1992
+  uncertainty: n = 123 boys
+- parameter: absolute contribution to femoral growth
+  value: '1.3'
+  unit: cm/year
+  conditions: human, age 7 to skeletal maturity; halves in the final two years
+  species: human
+  source_ref: pritchett1992
+  uncertainty: n = 244
+- parameter: mean growth rate
+  value: '1.4'
+  unit: cm/year
+  conditions: human, ages 5-8 years, serial radiographs (Harpenden Growth Study)
+  species: human
+  source_ref: kember1976
+  uncertainty: mean; dispersion not reported
+- parameter: mean growth rate expressed per day
+  value: '38'
+  unit: um/day
+  conditions: human, ages 5-8; arithmetic conversion of 1.4 cm/year
+  species: human
+  source_ref: kember1976
+  uncertainty: derived
+- parameter: cells per proliferative column
+  value: '24'
+  unit: cells
+  conditions: human distal femur histology
+  species: human
+  source_ref: kember1976
+  uncertainty: single-study value
+- parameter: derived mean proliferative cell cycle time
+  value: '20'
+  unit: days
+  conditions: human distal femur; derived from column count and growth rate
+  species: human
+  source_ref: kember1976
+  uncertainty: derived quantity, not measured
+localization:
+- 'human distal femur: growth rate, column length and transphyseal anatomy all measured in human tissue'
+human_evidence: direct
+human_evidence_note: All key parameters for this plate - growth rate, share of segment growth, column
+  cell count and transphyseal anatomy - come from human specimens and human radiographic cohorts.
+species_basis:
+- human
+- mouse
+translation_risk: not_applicable
+translation_risk_reason: This node is defined by human anatomy and human measurements.
+confidence: A
+key_refs:
+- ref_id: pritchett1992
+  pmid: '1735225'
+  first_author: Pritchett JW
+  year: 1992
+  type: primary
+  one_line_finding: Distal femur supplies ~70% of femoral growth and ~1.3 cm/yr from age 7, with age-
+    and sex-dependent shifts from 55-60% to 90%.
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: Distal femoral growth of 1.4 cm/yr at ages 5-8 with 24 cells per proliferative column
+    and a derived 20-day cycle time.
+- ref_id: shao2022
+  pmid: '35199961'
+  first_author: Shao XH
+  year: 2022
+  type: primary
+  one_line_finding: Intercondylar transphyseal complexes cross the human distal femoral physis and permit
+    transphyseal tumour extension.
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: 3D clonal architecture of the mouse distal femoral plate, including expansion-to-elongation
+    ratios.
+open_questions:
+- g_l1arch_001
+- g_l1arch_009
 last_verified: '2026-08-05'

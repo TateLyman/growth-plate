@@ -1,7 +1,87 @@
 id: pathway_convergence_node
-name: Pathway convergence nodes in the growth plate
+name: Pathway convergence in the growth plate signalling network
+aliases:
+- signalling convergence points, L3
 type: process
 layer: L3
-stub: true
+stub: false
+summary: 'Most L3 pathways are drawn as parallel cascades, but the genetics show they collapse onto a small number
+  of shared targets, and it is the ratio at those targets - not the activity of any one pathway - that determines
+  chondrocyte behaviour. Four convergence points are supported by primary data, each receiving three or more distinct
+  upstream inputs. (1) SOX9 receives inputs from Notch (RBPJ-dependent suppression, genetically demonstrated by rescue
+  of the Rbpj-mutant phenotype with Sox9 heterozygosity; Kohn 2015), from WNT (mutual antagonism with beta-catenin;
+  Akiyama 2004, Topol 2009), from the cilium via Hedgehog (IFT80 loss lowers Hh and raises Wnt and thereby blocks
+  chondrogenesis; Wang 2013), and from metabolism (SOX9 drives GLS1 and the resulting acetyl-CoA sustains its own
+  regulon; Stegen 2020). (2) RUNX2 is the hypertrophy licence and is restrained by HDAC4 (Vega 2004), by ZFP521 downstream
+  of PTHrP (Correa 2010) and by SOX9 (Dy 2012), while it is promoted by beta-catenin-dependent maturation (Dao 2012)
+  and by MEF2C (Nishimori 2019); RUNX2 in turn transcribes Ihh directly (Yoshida 2004), feeding back into the loop
+  that regulates it. (3) beta-catenin integrates canonical WNT, SOX9 antagonism, PTHrP (which it inhibits to initiate
+  hypertrophy; Guo 2009) and cilium-dependent Hedgehog tone (Wang 2013). (4) HDAC4 nuclear localisation is the physical
+  convergence of PTHrP-PKA-SIK3 phosphorylation control (Nishimori 2021), PP2A-dependent dephosphorylation (Kozhemyakina
+  2009) and MEF2C/RUNX2 availability (Arnold 2007) - one protein''s address in the cell encodes the output of an entire
+  endocrine loop. The practical consequence is that single-pathway therapeutic reasoning in the growth plate is unreliable:
+  CNP/FGFR3 modulation, Hedgehog agonism and WNT modulation all terminate on these same four nodes.'
+localization:
+- 'mouse PZ/PHZ/HZ: all four convergence points demonstrated in mouse growth plate or chondrocytes'
+- 'human growth plate: unconfirmed - no human tissue study has measured two or more of these nodes simultaneously'
 human_evidence: absent
+human_evidence_note: No human growth plate study has measured multiple convergence-point activities in the same tissue;
+  the convergence structure is assembled from separate mouse experiments.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: This node is a synthesis across mouse experiments performed in different genetic backgrounds,
+  ages and skeletal sites; convergence demonstrated pairwise is not the same as convergence demonstrated jointly.
+confidence: E
+key_refs:
+- ref_id: kohn2015
+  pmid: '26558140'
+  first_author: Kohn A
+  year: 2015
+  type: primary
+  one_line_finding: Genetic epistasis places SOX9 downstream of RBPJ-dependent Notch for the onset of chondrocyte
+    maturation.
+- ref_id: akiyama2004
+  pmid: '15132997'
+  first_author: Akiyama H
+  year: 2004
+  type: primary
+  one_line_finding: SOX9 and beta-catenin are reciprocal antagonists whose ratio determines the chondrocyte phenotype.
+- ref_id: wang2013
+  pmid: '23333501'
+  first_author: Wang C
+  year: 2013
+  type: primary
+  one_line_finding: Loss of the ciliary protein IFT80 simultaneously lowers Hedgehog and raises Wnt output in chondrogenic
+    cells.
+- ref_id: dy2012
+  pmid: '22421045'
+  first_author: Dy P
+  year: 2012
+  type: primary
+  one_line_finding: SOX9 restrains both Runx2 expression and beta-catenin signalling in growth plate chondrocytes.
+- ref_id: nishimori2021
+  pmid: '33148508'
+  first_author: Nishimori S
+  year: 2021
+  type: primary
+  one_line_finding: PTHrP-PKA-SIK3-HDAC4 phosphorylation converts an endocrine signal into the nuclear/cytoplasmic
+    address of a single corepressor.
+- ref_id: yoshida2004
+  pmid: '15107406'
+  first_author: Yoshida CA
+  year: 2004
+  type: primary
+  one_line_finding: RUNX2 binds the Ihh promoter directly, closing a feedback loop from the hypertrophy licence back
+    onto the IHH/PTHrP circuit.
+- ref_id: stegen2020
+  pmid: '32470321'
+  first_author: Stegen S
+  year: 2020
+  type: primary
+  one_line_finding: SOX9 sets its own nutrient flux through GLS1, making metabolism part of the convergence rather
+    than a downstream consequence.
+open_questions:
+- g_l3rest_012
+- g_l3rest_015
 last_verified: '2026-08-05'

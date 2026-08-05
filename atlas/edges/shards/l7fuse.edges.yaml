@@ -1,0 +1,624 @@
+edges:
+
+- edge_id: e00001
+  source: estradiol_hormone
+  target: epiphyseal_fusion
+  relation: required_for
+  sign: '+'
+  magnitude: 'serum estradiol >73 pmol/L required for closure (n=1, within-subject dose-response)'
+  context: human, both sexes, late puberty; systemic
+  evidence_tier: T1
+  refs:
+  - lanfranco2008
+  - morishima1995
+  - carani1997
+  confidence: B
+  notes: >-
+    Necessity established by aromatase deficiency (no ligand, plates stay open into the third
+    decade) and sufficiency for closure by estradiol replacement in the same patients.
+
+- edge_id: e00002
+  source: estrogen_receptor_alpha
+  target: epiphyseal_fusion
+  relation: required_for
+  sign: '+'
+  magnitude: 'homozygous ESR1 nonsense mutation: bone age advanced only 15 to 17.5 y over 3.5 y'
+  context: human male, homozygous ESR1 codon 157 stop; systemic
+  evidence_tier: T1
+  refs:
+  - smith1994
+  - smith2008
+  confidence: B
+  notes: >-
+    The receptor arm of the experiment. Six months of transdermal estrogen giving a 10-fold rise
+    in free estradiol produced no response, so the requirement is for signalling, not ligand.
+
+- edge_id: e00003
+  source: aromatase_cyp19a1
+  target: epiphyseal_fusion
+  relation: required_for
+  sign: '+'
+  magnitude: '15 published male CYP19A1 cases, all with unfused epiphyses and tall stature'
+  context: human male, congenital CYP19A1 loss of function; systemic
+  evidence_tier: T1
+  refs:
+  - morishima1995
+  - singhania2022
+  - rochira2009
+  confidence: B
+
+- edge_id: e00004
+  source: aromatase_deficiency_human
+  target: estrogen_driven_fusion
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'adult height 188-204 cm; bone age 14 y at chronological age 24.25 y'
+  context: human male case series, untreated congenital aromatase deficiency
+  evidence_tier: T1
+  refs:
+  - morishima1995
+  - singhania2022
+  - rochira2010
+  confidence: B
+
+- edge_id: e00005
+  source: estrogen_resistance_esr1
+  target: estrogen_driven_fusion
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'adult height 204 cm, incomplete epiphyseal closure, no response to estrogen'
+  context: human, homozygous ESR1 loss of function; n=1 male with adult data, plus one family of three
+  evidence_tier: T1
+  refs:
+  - smith1994
+  - smith2008
+  - bernard2017
+  confidence: B
+  notes: >-
+    The Bernard family (two sisters and one brother, homozygous R394H) had not entered puberty at
+    report, so only the Smith propositus provides adult stature and epiphyseal status.
+
+- edge_id: e00006
+  source: estradiol_threshold_fusion
+  target: epiphyseal_fusion
+  relation: precedes
+  sign: '+'
+  magnitude: 'closure obtained only after serum estradiol exceeded 73 pmol/L'
+  context: human male on transdermal estradiol replacement, 5-year follow-up
+  evidence_tier: T1
+  refs:
+  - lanfranco2008
+  - rochira2015
+  confidence: D
+
+- edge_id: e00007
+  source: estradiol_hormone
+  target: estrogen_accelerated_senescence
+  relation: activates
+  sign: '+'
+  magnitude: '70 ug/kg/week estradiol cypionate accelerated decline in all zonal parameters'
+  context: juvenile ovariectomised rabbit, proximal tibia / distal tibia / distal femur, 2-8 weeks
+  evidence_tier: T1
+  refs:
+  - weise2001
+  - nilsson2014rz
+  confidence: C
+
+- edge_id: e00008
+  source: estrogen_accelerated_senescence
+  target: epiphyseal_fusion
+  relation: precedes
+  sign: '+'
+  magnitude: 'fusion occurred when chondrocyte proliferation rate approached zero'
+  context: senescent rabbit growth plate after estradiol or vehicle
+  evidence_tier: T1
+  refs:
+  - weise2001
+  - gafni2001
+  confidence: C
+  notes: >-
+    Rabbit is the only species in which this whole chain has been demonstrated; not shown in any
+    human tissue.
+
+- edge_id: e00009
+  source: growth_plate_senescence
+  target: growth_cessation
+  relation: precedes
+  sign: '+'
+  magnitude: 'senescent decline in growth rate, proliferation, plate height and cell size'
+  context: rabbit and rodent growth plate; human inferred
+  evidence_tier: T1
+  refs:
+  - weise2001
+  - lui2018
+  confidence: C
+
+- edge_id: e00010
+  source: stem_cell_exhaustion_fusion
+  target: epiphyseal_fusion
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: 'irreversible resting zone cell loss after transient estrogen; not measured in humans'
+  context: rabbit resting zone; human resting zone described but never counted across pubertal stages
+  evidence_tier: T1
+  refs:
+  - nilsson2014rz
+  - chu2026
+  confidence: speculative
+  gap_id: g_l7fuse_001
+
+- edge_id: e00011
+  source: rz_depletion_causes_fusion
+  target: stem_cell_exhaustion_fusion
+  relation: correlates_with
+  sign: '+'
+  magnitude: not quantified in human
+  context: rabbit resting zone depletion model
+  evidence_tier: T1
+  refs:
+  - nilsson2014rz
+  confidence: C
+
+- edge_id: e00012
+  source: bidirectional_vascular_invasion
+  target: bony_bridge_formation
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: 'mineralisation advances from both plate surfaces before union; vessel direction never imaged'
+  context: human and dog epiphyses at union
+  evidence_tier: T1
+  refs:
+  - haines1975
+  - emons2010
+  confidence: speculative
+  gap_id: g_l7fuse_009
+
+- edge_id: e00013
+  source: vegfa_growth_plate
+  target: bidirectional_vascular_invasion
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'VEGF protein increases across human pubertal development; estradiol-regulated in rat'
+  context: human growth plate specimens across puberty; rat growth plate and RCJ3.1C5.18 cells
+  evidence_tier: T1
+  refs:
+  - emons2010
+  confidence: D
+
+- edge_id: e00014
+  source: estradiol_hormone
+  target: vegfa_growth_plate
+  relation: activates
+  sign: '+'
+  magnitude: 'VEGF-121 and VEGF-189 stimulated dose-dependently; VEGF-164 not'
+  context: rat growth plate in vivo (ovariectomy and replacement) and rat chondrocyte cell line
+  evidence_tier: T1
+  refs:
+  - emons2010
+  confidence: C
+
+- edge_id: e00015
+  source: apoptosis_at_fusion
+  target: epiphyseal_fusion
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'zero TUNEL-positive cells in the one human fusing plate examined'
+  context: human late-pubertal fusing growth plate, n=1
+  evidence_tier: T1
+  refs:
+  - emons2009
+  confidence: speculative
+  gap_id: g_l7fuse_006
+  notes: >-
+    Retained as a hypothesis with NEGATIVE human evidence; the link is asserted throughout the
+    rodent literature and was not found when directly tested in human fusing tissue.
+
+- edge_id: e00016
+  source: hypoxia_necrosis_at_fusion
+  target: epiphyseal_fusion
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: 'ultrastructural hypoxia and necrosis, no apoptosis or autophagy, in the one human fusing plate'
+  context: human late-pubertal fusing growth plate, n=1, electron microscopy
+  evidence_tier: T1
+  refs:
+  - emons2009
+  - roach2003
+  confidence: speculative
+  gap_id: g_l7fuse_006
+
+- edge_id: e00017
+  source: ecm_remodeling_at_fusion
+  target: epiphyseal_fusion
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'in mouse, MMP-13 and type X collagen are LOST as mineral accumulates'
+  context: aged mouse growth plate W10 versus W55; human matrix at fusion uncharacterised
+  evidence_tier: T1
+  refs:
+  - yu2025
+  - haines1975
+  confidence: speculative
+  gap_id: g_l7fuse_004
+
+- edge_id: e00018
+  source: epigenetic_drift_fusion
+  target: growth_plate_senescence
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: 'no epigenetic mark has been measured in growth plate cartilage of any species'
+  context: rodent transcriptional senescence programme; rabbit replication-counted clock
+  evidence_tier: T1
+  refs:
+  - lui2018
+  - gafni2001
+  confidence: speculative
+  gap_id: g_l7fuse_005
+
+- edge_id: e00019
+  source: chondrocyte_to_osteoblast_transdifferentiation
+  target: bony_bridge_formation
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: 'direct bone formation by former growth plate chondrocytes described in aged rat'
+  context: aged Wistar rat growth plate, 62-80 weeks
+  evidence_tier: T1
+  refs:
+  - roach2003
+  - haines1975
+  confidence: speculative
+  gap_id: g_l7fuse_011
+
+- edge_id: e00020
+  source: bony_bridge_formation
+  target: epiphyseal_fusion
+  relation: precedes
+  sign: '+'
+  magnitude: 'single perforation in small early-uniting epiphyses, multiple in large late-uniting ones'
+  context: human and dog epiphyses at union; mouse bridges quantified but never complete
+  evidence_tier: T1
+  refs:
+  - haines1975
+  - staines2018
+  - samvelyan2022
+  confidence: B
+
+- edge_id: e00021
+  source: epiphyseal_fusion
+  target: physeal_scar
+  relation: precedes
+  sign: '+'
+  magnitude: 'scar persists in large late-uniting epiphyses, absent in small early-uniting ones'
+  context: human epiphyses after complete union
+  evidence_tier: T1
+  refs:
+  - haines1975
+  confidence: B
+
+- edge_id: e00022
+  source: epiphyseal_fusion
+  target: growth_cessation
+  relation: precedes
+  sign: '-'
+  magnitude: 'site-specific: growth at that site is permanently zero after union'
+  context: human, site by site
+  evidence_tier: T1
+  refs:
+  - haines1975
+  - kvist2021
+  confidence: A
+  notes: >-
+    In rat the two are dissociated - cessation occurs with the plate still present - so this edge
+    is human/rabbit-specific.
+
+- edge_id: e00023
+  source: growth_cessation
+  target: adult_height_attainment
+  relation: precedes
+  sign: '+'
+  magnitude: 'last long-bone site (distal radius) 75% fused at 17 y in females, 90% at 19 y in males'
+  context: human, MRI cohort of 958 healthy 14-21.5 year olds
+  evidence_tier: T1
+  refs:
+  - kvist2021
+  confidence: A
+
+- edge_id: e00024
+  source: peak_height_velocity
+  target: epiphyseal_fusion
+  relation: precedes
+  sign: '+'
+  magnitude: 'age at PHV 12.0-13.1 y (girls) and 13.0-14.0 y (boys); last-site fusion 17-19 y'
+  context: human longitudinal cohorts; PHV precedes complete fusion by roughly 4-6 years
+  evidence_tier: T1
+  refs:
+  - cole2014
+  - kvist2021
+  confidence: A
+
+- edge_id: e00025
+  source: menarche_growth_remaining
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'postmenarcheal growth 8.0 cm (SD 4.9), range 0.2-31.1 cm'
+  context: 793 healthy term-born Swedish girls, community longitudinal cohort
+  evidence_tier: T1
+  refs:
+  - grdstedtbergho2024
+  confidence: A
+
+- edge_id: e00026
+  source: estradiol_hormone
+  target: bone_age
+  relation: activates
+  sign: '+'
+  magnitude: 'bone age 14 y at chronological age 24.25 y when estradiol is absent'
+  context: human; congenital aromatase deficiency and ESR1 loss of function
+  evidence_tier: T1
+  refs:
+  - morishima1995
+  - smith2008
+  - rochira2015
+  confidence: B
+
+- edge_id: e00027
+  source: bone_age
+  target: epiphyseal_fusion
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'bone age approximately 18 y corresponds to fused epiphyses at Tanner G5; 16 y to unfused'
+  context: human male puberty, cross-sectional obese versus lean comparison
+  evidence_tier: T5
+  refs:
+  - rochira2015
+  - satoh2015
+  confidence: C
+
+- edge_id: e00028
+  source: greulich_pyle_method
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'interobserver spread 0.96 y; intra-observer 95% limits -2.46 to +2.18 y'
+  context: human hand-wrist radiographs; reference population Cleveland Ohio 1920s-1940s
+  evidence_tier: T1
+  refs:
+  - king1994
+  - bull1999
+  - guevel2026
+  confidence: A
+
+- edge_id: e00029
+  source: tanner_whitehouse_tw3
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'interobserver spread 0.74 y; intra-observer 95% limits -1.41 to +1.43 y'
+  context: human hand-wrist radiographs; reference population British 1950s-60s, revised for TW3
+  evidence_tier: T1
+  refs:
+  - king1994
+  - bull1999
+  - tewattanarat2026
+  confidence: A
+
+- edge_id: e00030
+  source: rus_score
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: '13 bones (radius, ulna, 11 short bones); 2.5-3.3 months mean absolute difference from GP'
+  context: human hand-wrist radiographs, carpals excluded
+  evidence_tier: T1
+  refs:
+  - tanner1975
+  - tewattanarat2026
+  - thodberg2009
+  confidence: A
+
+- edge_id: e00031
+  source: fels_method
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'per-case standard error reported by the method; no independent error-in-years estimate located'
+  context: human hand-wrist radiographs; Fels Longitudinal Study, southwest Ohio
+  evidence_tier: T1
+  refs:
+  - khamis1994
+  - roche1975
+  confidence: D
+
+- edge_id: e00032
+  source: sanders_staging
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'interobserver weighted kappa 0.89; correlation 0.91 with scoliosis curve acceleration phase'
+  context: human hand radiographs, peripubertal range only; derived from TW3-RUS descriptors
+  evidence_tier: T1
+  refs:
+  - sanders2008
+  confidence: B
+
+- edge_id: e00033
+  source: risser_sign
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'lower correlation with the scoliosis growth event than hand-based staging'
+  context: human AP pelvis or spine radiograph, iliac apophysis only
+  evidence_tier: T1
+  refs:
+  - risser1958
+  - sanders2008
+  confidence: C
+
+- edge_id: e00034
+  source: automated_bone_age_ai
+  target: bone_age
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'BoneXpert SD 0.42 y vs GP atlas; repeat-radiograph precision SD 0.17 y; deep learning MAD 4.2 months'
+  context: human hand radiographs; validation cohorts predominantly US and West European
+  evidence_tier: T1
+  refs:
+  - thodberg2009
+  - halabi2019
+  - zmen2025
+  - dallora2019
+  confidence: A
+
+- edge_id: e00035
+  source: mri_physeal_closure_staging
+  target: epiphyseal_fusion
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'inter-observer kappa 0.87-0.94 across sites; cartilage sequences kappa 0.86-0.90 at the knee'
+  context: human wrist, knee and ankle in healthy volunteers aged 14.0-21.5 y
+  evidence_tier: T1
+  refs:
+  - kvist2021
+  - kvist2020
+  confidence: A
+  notes: The only method in this layer that observes the endpoint itself rather than a correlate.
+
+- edge_id: e00036
+  source: bone_age_measurement_error
+  target: remaining_growth_prediction
+  relation: correlates_with
+  sign: '-'
+  magnitude: 'omitting skeletal age entirely increases prediction error only slightly (Khamis-Roche vs RWT)'
+  context: human; Fels Longitudinal Study prediction models
+  evidence_tier: T1
+  refs:
+  - khamis1994
+  - bull1999
+  - thodberg2009
+  confidence: B
+  notes: >-
+    The direction is the surprising part: better bone age has not been shown to improve adult
+    height prediction, which implies most of the residual error is biological.
+
+- edge_id: e00037
+  source: bone_age
+  target: remaining_growth_prediction
+  relation: required_for
+  sign: '+'
+  magnitude: '95% intervals plus or minus 6-8 cm mid-childhood, plus or minus 3-4 cm postmenarcheal'
+  context: human; TW Mark I and Mark II, Bayley-Pinneau and RWT equations
+  evidence_tier: T1
+  refs:
+  - tanner1975
+  - tanner1983
+  - roche1975
+  confidence: A
+  notes: >-
+    Required by the conventional equations, but see e00036 - a model without it performs almost
+    as well.
+
+- edge_id: e00038
+  source: remaining_growth_prediction
+  target: final_adult_height_endpoint
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'mean method errors from -7.3 to +3.1 cm in boys and -2.1 to +2.3 cm in girls with CDGP'
+  context: human, 37 boys and 32 girls with constitutional delay followed to adult height
+  evidence_tier: T1
+  refs:
+  - brmswig1990
+  confidence: A
+
+- edge_id: e00039
+  source: mouse_does_not_fuse
+  target: species_transfer_risk_fusion
+  relation: required_for
+  sign: '+'
+  magnitude: 'plate persists as calcified cartilage at 55 weeks; ColX and MMP-13 lost, not gained'
+  context: mouse; comparison with human union histology
+  evidence_tier: T1
+  refs:
+  - yu2025
+  - chu2026
+  - samvelyan2022
+  confidence: A
+
+- edge_id: e00040
+  source: rat_growth_cessation_without_fusion
+  target: species_transfer_risk_fusion
+  relation: required_for
+  sign: '+'
+  magnitude: 'growth ceases at 62-80 weeks with the plate still histologically present'
+  context: aged Wistar rat femur and tibia
+  evidence_tier: T1
+  refs:
+  - roach2003
+  confidence: B
+
+- edge_id: e00041
+  source: comparative_fusion_across_species
+  target: species_transfer_risk_fusion
+  relation: required_for
+  sign: '+'
+  magnitude: 'human, dog, rabbit and goat fuse; mouse and rat do not; cynomolgus vertebral plates persist to 15 y'
+  context: cross-species comparison
+  evidence_tier: T1
+  refs:
+  - haines1975
+  - weise2001
+  - iwata2018
+  - panebianco2026
+  confidence: B
+
+- edge_id: e00042
+  source: sex_difference_fusion_timing
+  target: fusion_timing_order
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'complete fusion approximately 2 years earlier in girls at every site examined'
+  context: human MRI cohort, wrist, knee and ankle, 958 subjects
+  evidence_tier: T1
+  refs:
+  - kvist2021
+  confidence: A
+
+- edge_id: e00043
+  source: population_variation_fusion
+  target: fusion_timing_order
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'timing shifted at least 2 years between Bosnian and North American males; order never formally compared'
+  context: human skeletal collections and radiographic cohorts
+  evidence_tier: T1
+  refs:
+  - schaefer2005
+  - schaefer2007
+  confidence: C
+
+- edge_id: e00044
+  source: fusion_timing_order
+  target: adult_height_attainment
+  relation: precedes
+  sign: '+'
+  magnitude: 'ascending foot-to-wrist order; distal radius last of the imaged sites'
+  context: human MRI cohort aged 14.0-21.5 y
+  evidence_tier: T1
+  refs:
+  - kvist2021
+  - schaefer2007
+  confidence: A
+
+- edge_id: e00045
+  source: growth_plate_senescence
+  target: epiphyseal_fusion
+  relation: precedes
+  sign: '+'
+  magnitude: 'fusion is abrupt and occurs only after senescent decline is complete'
+  context: rabbit growth plate; extrapolated to human
+  evidence_tier: T1
+  refs:
+  - weise2001
+  - nilsson2014rz
+  - lui2018
+  confidence: C

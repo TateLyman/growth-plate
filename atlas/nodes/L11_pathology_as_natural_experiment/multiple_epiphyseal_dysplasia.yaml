@@ -1,9 +1,78 @@
 id: multiple_epiphyseal_dysplasia
 name: Multiple epiphyseal dysplasia
-type: phenotype
-layer: L11
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - MED
+- EDM1
+- COMP/MATN3/COL9 dysplasia
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  Multiple epiphyseal dysplasia is the mild end of the same matrix-proteostasis continuum as
+  pseudoachondroplasia and is the disorder in this layer where the growth plate fails structurally
+  WITHOUT costing much height. In a 22-patient series from 17 unrelated families, disease genes
+  were COMP (47 percent), COL9A2 and COL9A3 (11.8 percent each, monoallelic), SLC26A2 (17.6
+  percent) and MATN3 and CANT1 (11.8 percent each, biallelic); in 15 children followed to ages
+  11-18 height decreased slightly with age but remained normal or at the lower limit of normal,
+  except in the intermediate PSACH-like form. The joint-specific pattern is mechanistically
+  informative: MED2 and MED3 (COL9A2/COL9A3) predominantly affect the knee, while the other
+  genotypes predominantly affect the hip - so different matrix components are rate-limiting at
+  different anatomical sites. The same series showed COMP mutations previously assigned to
+  pseudoachondroplasia producing a typical MED1 or intermediate phenotype, and biallelic MATN3
+  variants producing MED5. MED is therefore the human demonstration that epiphyseal cartilage can
+  be structurally abnormal enough to cause early osteoarthritis and a waddling gait while
+  longitudinal growth remains close to normal - the growth plate's height output and its
+  mechanical competence are separable.
+quantitative:
+- parameter: patients in the MED natural-history series
+  value: '22'
+  unit: patients
+  conditions: 17 unrelated families; 18 disease-related variants including 7 novel
+  species: human
+  source_ref: taner2026
+  uncertainty: n=22
+- parameter: share of MED variants in COMP
+  value: '47'
+  unit: percent
+  conditions: same series
+  species: human
+  source_ref: taner2026
+  uncertainty: n=18 variants
+- parameter: children followed to ages 11-18 with near-normal height
+  value: '15'
+  unit: children
+  conditions: height decreased slightly with age but remained normal or at the lower limit, except
+    the intermediate form
+  species: human
+  source_ref: taner2026
+  uncertainty: n=15; median follow-up 5.5 y
+localization:
+- 'human epiphysis: irregular, delayed and fragmented ossification with the growth plate itself structurally
+  near-normal on radiographs'
+- 'human knee vs hip: MED2/MED3 (COL9A2/COL9A3) affect the knee; other genotypes predominantly the
+  hip (taner2026)'
+human_evidence: direct
+human_evidence_note: A genotyped human series with median 5.5 years of longitudinal follow-up and
+  site-specific joint involvement by gene.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: taner2026
+  pmid: '42074581'
+  first_author: Taner HE
+  year: 2026
+  type: primary
+  one_line_finding: '22 MED patients: height normal or at the lower limit through ages 11-18; gene
+    predicts which joint fails.'
+- ref_id: ni2026
+  pmid: '41798190'
+  first_author: Ni X
+  year: 2026
+  type: systematic_review
+  one_line_finding: EDM1 vs PSACH separated statistically across 830 COMP patients.
+open_questions:
+- g_l11path_019
+last_verified: '2026-08-05'

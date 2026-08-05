@@ -1,0 +1,578 @@
+gaps:
+
+- gap_id: g_l7fuse_001
+  question: >-
+    Does estrogen irreversibly deplete the resting-zone progenitor pool of the human growth
+    plate, as it does in the ovariectomised rabbit, and does that depletion precede rather
+    than follow the collapse of the proliferative columns?
+  type: species_gap
+  layer: L7
+  why_it_matters: >-
+    Progenitor exhaustion is the leading mechanistic account of why the human plate ends, and
+    it is the account that predicts an intervention window: if fusion is triggered by running
+    out of stem cells, preserving that pool would extend growth, whereas if fusion is a
+    differentiated-cell senescence programme, preserving the pool would not help. The entire
+    mechanism rests on one species.
+  what_is_known: >-
+    In juvenile ovariectomised rabbits, 5 weeks of estradiol cypionate followed by 5 weeks of
+    washout irreversibly advanced structural senescence and the age-related loss of resting-zone
+    chondrocytes while reversibly suppressing growth plate function, and transient estrogen
+    hastened epiphyseal fusion; the resting-zone cell loss was not apoptotic (nilsson2014rz,
+    rabbit). Fusion in the same model occurs when the proliferation rate approaches zero
+    (weise2001, rabbit), and suppressing proliferation with dexamethasone delays both senescence
+    and fusion (gafni2001, rabbit). Single-cell and spatial profiling of human early-pubertal
+    growth plate has now identified two resting-zone stem-like populations, including a
+    PTHrP-negative Prrx1-marked root population, conserved with mouse (chu2026, human).
+  what_is_missing: >-
+    No count of human resting-zone progenitors as a function of pubertal stage, sex, or MRI
+    fusion stage. The human specimens that exist are early-pubertal epiphysiodesis material;
+    nothing spans the interval between mid-puberty and fusion. Mouse cannot be used because it
+    never fuses (mouse_does_not_fuse); rabbit cannot be used for the human cell-identity markers
+    because no rabbit growth plate single-cell atlas exists.
+  nearest_evidence:
+  - nilsson2014rz
+  - chu2026
+  - weise2001
+  discriminating_experiment: >-
+    Model system: human physeal tissue from staged epiphysiodesis and limb-reconstruction
+    procedures, banked prospectively with a same-day MRI fusion stage (kvist2020 cartilage
+    sequence protocol), spanning Tanner 2 to fusion in both sexes. Readout: absolute
+    resting-zone root-cell density (PRRX1+/PTHrP-negative by the chu2026 marker panel) per mm
+    of plate, plus Ki67 index of the proliferative zone, plus plate height, on the same section.
+    Expected results - progenitor exhaustion: root-cell density falls monotonically and reaches
+    near-zero at least one MRI stage BEFORE proliferative index and plate height collapse.
+    Differentiated-cell senescence: root-cell density is preserved into late stages while Ki67
+    index falls first. Vascular invasion: both fall abruptly and simultaneously at the stage at
+    which bridges appear, with no antecedent decline.
+  tractability: 3
+  search_log_ref: null
+
+- gap_id: g_l7fuse_002
+  question: >-
+    How many human growth plates have ever been examined histologically at the moment of
+    epiphyseal fusion, and can a prospectively banked series be assembled?
+  type: method_blocked
+  layer: L7
+  why_it_matters: >-
+    Every cellular mechanism in this layer is adjudicated, if at all, against a sample of one.
+    The negative apoptosis result that contradicts the entire rodent hypertrophic-chondrocyte
+    literature (apoptosis_at_fusion) and the positive hypoxia/necrosis observation that
+    replaced it (hypoxia_necrosis_at_fusion) both come from the same single specimen. Until
+    n is greater than 1, no mechanism in L7 can rise above confidence D on human evidence.
+  what_is_known: >-
+    One human growth plate described as being about to fuse has been reported, collected within
+    a small series of unfused pubertal plates; it contained no TUNEL-positive cells, expressed
+    anti-apoptotic Bcl-2 and Bcl-XL but among pro-apoptotic proteins only Bad, and showed
+    ultrastructural hypoxia and necrosis but no apoptosis or autophagy (emons2009, human).
+    Classical human union histology exists from autopsy material but predates
+    immunohistochemistry and molecular readouts (haines1975). Early-pubertal human growth plate
+    is now obtainable from growth-restricting surgery and has been profiled at single-cell
+    resolution (chu2026).
+  what_is_missing: >-
+    The tissue is not available at the relevant moment. Fusion occurs at ages when elective
+    physeal surgery has essentially ceased, and the plate is destroyed by the event itself, so
+    the window between "still gradable as fusing" and "gone" is short. No biobank of staged
+    human physeal tissue exists, and no autopsy protocol routinely samples the physis.
+  nearest_evidence:
+  - emons2009
+  - haines1975
+  - chu2026
+  discriminating_experiment: >-
+    Model system: a multicentre prospective physeal biobank drawing on (a) epiphysiodesis and
+    guided-growth hardware placement in adolescents 12-17 y, (b) amputation and tumour
+    resection specimens with uninvolved physis, and (c) forensic autopsy of adolescents aged
+    14-20 with same-day post-mortem MRI. Readout: paired MRI fusion stage (kvist2020 protocol)
+    and matched histology, immunohistochemistry and single-nucleus RNA-seq on the identical
+    plate. Expected result: a stage-resolved series of at least 10 specimens per fusion stage
+    would, for the first time, allow the apoptosis, hypoxia/necrosis, vascular and progenitor
+    hypotheses to be tested against each other in the species that actually fuses. A null
+    result - no molecular difference across stages - would itself falsify all cell-autonomous
+    accounts and force the field toward a purely vascular or mechanical trigger.
+  tractability: 2
+  search_log_ref: null
+
+- gap_id: g_l7fuse_003
+  question: >-
+    Has any transcriptomic or single-cell dataset been published from human growth plate tissue
+    at or immediately preceding epiphyseal fusion?
+  type: search_established
+  layer: L7
+  why_it_matters: >-
+    A stage-resolved human transcriptome would arbitrate between the six competing mechanisms
+    without requiring any of them to be assumed, and would be the single highest-value dataset
+    this layer could acquire. Its absence means every molecular statement about human fusion is
+    extrapolated from rodents that do not fuse.
+  what_is_known: >-
+    A transcriptional atlas of the EARLY PUBERTAL human growth plate exists, built from surgical
+    specimens obtained during growth-restricting procedures; it defines two resting-zone
+    stem-like populations and demonstrates direct GH action on human explants (chu2026). Human
+    growth plate VEGF protein has been shown to rise across pubertal development by
+    immunohistochemistry, not sequencing (emons2010).
+  what_is_missing: >-
+    Nothing at or near fusion. A Europe PMC search combining human, growth plate or physis,
+    transcriptome or single-cell RNA or RNA-seq, and epiphyseal fusion or growth plate closure
+    or fusing growth plate returned 50 records, none of which reports sequencing of human
+    physeal tissue at a defined late-pubertal or fusing stage; the closest are the early-pubertal
+    atlas and rodent growth plate studies.
+  nearest_evidence:
+  - chu2026
+  - emons2010
+  discriminating_experiment: >-
+    Model system: single-nucleus RNA-seq plus Visium or Xenium spatial transcriptomics on
+    human physeal specimens stratified by MRI fusion stage from the biobank proposed in
+    g_l7fuse_002, minimum 5 donors per stage, both sexes. Readout: stage-resolved zonal
+    expression of (i) senescence markers CDKN2A and CDKN1A, (ii) angiogenic VEGFA, and
+    endothelial and pericyte signatures, (iii) apoptotic and necroptotic programmes, (iv) matrix
+    genes COL2A1, COL10A1, ACAN, MMP13, (v) resting-zone stem markers from chu2026. Expected
+    results: the senescence hypothesis predicts CDKN2A rises in resting-zone cells before any
+    other change; the vascular hypothesis predicts endothelial signature appears within the
+    plate before chondrocyte programmes change; the ECM hypothesis predicts MMP13 and COL10A1
+    rise at the bridging front, whereas the murine pattern (yu2025) would predict they fall.
+  tractability: 3
+  search_log_ref: g_l7fuse_003
+
+- gap_id: g_l7fuse_004
+  question: >-
+    Does the human growth plate at fusion show the same matrix trajectory as the aged mouse
+    plate - accumulating mineral while losing type X collagen and MMP-13 - or the opposite?
+  type: species_gap
+  layer: L7
+  why_it_matters: >-
+    The only quantitative matrix data on a terminal growth plate come from mice, and they show
+    the degradative machinery being switched OFF as mineral accumulates. If humans do the same,
+    then a matrix-degradation model of fusion is wrong and some additional trigger is needed to
+    convert calcified cartilage into bone. If humans do the opposite, mouse matrix data are
+    actively misleading and should be excluded from human reasoning about fusion.
+  what_is_known: >-
+    In mice, hypertrophic-zone Ca and P content rose and the mineralised area expanded between
+    10 and 55 weeks while type X collagen and MMP-13 became undetectable and aggrecan and type
+    II collagen became sparse; the plate remained calcified cartilage and was never replaced by
+    bone (yu2025, mouse). In humans, mineralisation advances from both plate surfaces and first
+    union is by mineralised cartilage acting as metaplastic bone (haines1975, human and dog),
+    which is qualitatively compatible with the murine mineral accumulation but says nothing
+    about the enzymes.
+  what_is_missing: >-
+    No collagen typing, proteoglycan quantification, MMP or ADAMTS profiling, or elemental
+    analysis has ever been performed on a human growth plate at fusion. Mouse cannot substitute
+    because the endpoint is absent; rabbit matrix composition at fusion has also not been
+    characterised.
+  nearest_evidence:
+  - yu2025
+  - haines1975
+  discriminating_experiment: >-
+    Model system: staged human physeal specimens (g_l7fuse_002) plus rabbit distal femoral
+    plates at defined pre-fusion and fusion stages as a fusing-species positive control.
+    Readout: SEM-EDS elemental mapping for Ca and P plus immunohistochemistry for COL2A1,
+    COL10A1, aggrecan and MMP-13 plus an aggrecan neoepitope antibody, all on serial sections
+    of the same plate. Expected results - matrix degradation model: MMP-13 and neoepitope
+    signal rise at the bridging front in both human and rabbit. Murine-pattern model: MMP-13
+    and COL10A1 fall while mineral rises, in which case human fusion cannot be a
+    matrix-degradation event and the trigger must be sought in the vasculature or the
+    progenitor pool.
+  tractability: 3
+  search_log_ref: null
+
+- gap_id: g_l7fuse_005
+  question: >-
+    Has DNA methylation or any other epigenetic mark ever been measured in human growth plate
+    chondrocytes as a function of age, pubertal stage or fusion status?
+  type: search_established
+  layer: L7
+  why_it_matters: >-
+    The epigenetic drift model is the only proposed mechanism that explains why growth plate
+    senescence tracks replication count rather than chronological time, and why different bones
+    in the same endocrine environment senesce on different schedules. It is also the only
+    mechanism for which a decisive assay already exists off the shelf. If the human growth plate
+    methylome has never been measured, the model is not weakly supported - it is untested.
+  what_is_known: >-
+    Growth plate senescence in rodents is a coordinated molecular programme with
+    bone-size-dependent timing and modulation of IGF, BMP and WNT signalling (lui2018, mouse and
+    rat). Delaying proliferation with dexamethasone delays senescence and fusion in rabbits,
+    implying a replication-counted clock (gafni2001, rabbit). Epigenetic clocks are established
+    for many human tissues but have not been reported for physeal cartilage.
+  what_is_missing: >-
+    A Europe PMC search combining growth plate or epiphyseal plate, DNA methylation or
+    methylome, human, chondrocyte or cartilage, and puberty or bone age or epiphyseal fusion
+    returned 99 records; screening the top-ranked 20 found no primary study measuring
+    methylation in human growth plate cartilage at any age. A broader query without the human
+    and cartilage constraints returned 441 records dominated by osteoarthritis, bone marrow
+    stromal cells and general skeletal ageing, again with no growth plate methylome.
+  nearest_evidence:
+  - lui2018
+  - gafni2001
+  discriminating_experiment: >-
+    Model system: FACS- or laser-capture-isolated resting-zone and proliferative-zone
+    chondrocytes from human physeal specimens spanning Tanner 2 to fusion (g_l7fuse_002), plus
+    matched peripheral blood as a within-donor chronological control, plus paired early- and
+    late-fusing sites (phalanx versus distal femur) from the same donor where available.
+    Readout: enzymatic methyl-seq with a Horvath-type epigenetic age estimate and differential
+    methylation at IGF, BMP and WNT pathway loci. Expected results - epigenetic drift:
+    resting-zone epigenetic age exceeds donor chronological age and advances faster in
+    early-fusing sites than late-fusing sites within the same donor. Progenitor exhaustion: the
+    residual resting-zone cells are epigenetically young but numerically depleted. Endocrine
+    control alone: no site difference within donor, since both sites see the same estradiol.
+  tractability: 3
+  search_log_ref: g_l7fuse_005
+
+- gap_id: g_l7fuse_006
+  question: >-
+    Is the absence of apoptosis in the fusing human growth plate a real species or process
+    difference, or an artefact of a single specimen?
+  type: contradiction
+  layer: L7
+  why_it_matters: >-
+    Apoptosis of terminal hypertrophic chondrocytes is the textbook account of how cartilage is
+    cleared during endochondral ossification, and it is the account carried into fusion by
+    default. The only direct human test of it at fusion is negative. Either the textbook is
+    wrong for the fusion step in humans, or the one available human specimen is unrepresentative.
+    Both possibilities have large downstream consequences for how the atlas grades every
+    apoptosis-based rodent result.
+  what_is_known: >-
+    In the one human growth plate reported as about to fuse, there was not a single
+    TUNEL-positive cell, cleaved caspase-3 was not detected, and electron microscopy showed no
+    apoptosis or autophagy but did show hypoxia and necrosis; unfused plates contained a few
+    TUNEL-positive chondrocytes (emons2009, human). Independently, estrogen-accelerated loss of
+    rabbit resting-zone chondrocytes also did not appear to be apoptotic (nilsson2014rz, rabbit).
+    Against this, apoptosis of hypertrophic chondrocytes is a well-replicated feature of normal
+    endochondral growth in rodents.
+  what_is_missing: >-
+    Replication in a second human fusing plate, and a positive control demonstrating that the
+    TUNEL assay used would have detected apoptosis had it been present in that tissue block.
+    No modern death-modality markers (RIPK3, MLKL, GSDMD, LC3/p62) have been applied to any
+    human physeal specimen.
+  nearest_evidence:
+  - emons2009
+  - nilsson2014rz
+  discriminating_experiment: >-
+    Model system: staged human physeal specimens (g_l7fuse_002) and rabbit plates at matched
+    stages as a fusing-species control, with DNase-treated sections as TUNEL positive controls
+    on the same slides. Readout: TUNEL, cleaved caspase-3, RIPK3 and phospho-MLKL, LC3 and p62,
+    and pimonidazole or CAIX as a hypoxia marker, scored zone by zone at the bridging front.
+    Expected results - classical apoptosis: caspase-3-positive, TUNEL-positive cells cluster at
+    the front. Regulated necrosis: phospho-MLKL positive, caspase-3 negative. Hypoxic death:
+    hypoxia marker positive with no regulated-death marker, matching the emons2009 ultrastructure.
+    A finding of apoptosis in the rabbit but not the human would establish a genuine species
+    difference at the final step even between two fusing species.
+  tractability: 3
+  search_log_ref: null
+
+- gap_id: g_l7fuse_007
+  question: >-
+    What fraction of the error in predicted adult height is attributable to bone age reading
+    error, what fraction to reference-standard displacement, and what fraction to irreducible
+    biological variance in remaining growth at a given skeletal maturity?
+  type: quantitative_gap
+  layer: L7
+  why_it_matters: >-
+    Every clinical and pharmacological decision in growth medicine is powered against predicted
+    adult height, and every trial of a growth-promoting agent is judged against a prediction
+    whose error structure has never been decomposed. If most of the error is biological, better
+    bone age reading - including perfect automated reading - cannot improve prediction, and
+    trials need larger n rather than better imaging. If most of the error is measurement,
+    automation should already have improved prediction, which has not been demonstrated.
+  what_is_known: >-
+    Total 95% prediction intervals are plus or minus 6-8 cm in mid-childhood, narrowing to plus
+    or minus 3-4 cm in postmenarcheal girls and to plus or minus 4 cm in boys when the previous
+    year's height increment is known (tanner1975, tanner1983). Manual bone age has interobserver
+    spread of 0.74-0.96 years and intra-observer 95% limits spanning about 3-5 years of range
+    (king1994, bull1999), while automated reading has a repeat-measurement SD of 0.17 years
+    (thodberg2009). Critically, a model that omits skeletal age entirely (Khamis-Roche) has
+    errors only slightly larger than the model that uses it (khamis1994) - the single strongest
+    hint that the bone age contribution to prediction accuracy is small. Systematic
+    reference-standard displacement is 2.9 months in one modern US cohort and -2.2 months in an
+    Australian one, with 95% limits of agreement around 2 years (guevel2026, paxton2013).
+  what_is_missing: >-
+    No published variance decomposition. The Khamis-Roche comparison is reported qualitatively
+    ("only slightly larger") without the numeric error difference, and no study has repeated a
+    prediction on the same child using (a) two independent manual readings, (b) an automated
+    reading, and (c) no bone age at all, against observed adult height.
+  nearest_evidence:
+  - khamis1994
+  - tanner1983
+  - thodberg2009
+  - guevel2026
+  discriminating_experiment: >-
+    Model system: an existing longitudinal cohort with serial hand radiographs and measured
+    adult height (for example the Fels, Zurich or GrowUp Gothenburg series), re-read
+    prospectively. Readout: for each child, adult height predicted by (i) two independent
+    manual GP readings, (ii) two independent manual TW3-RUS readings, (iii) BoneXpert, and
+    (iv) Khamis-Roche with no skeletal age; fit a variance-components model partitioning
+    prediction residual into reader, method, reference-displacement and residual biological
+    terms. Expected results - measurement-dominated: replacing manual with automated bone age
+    materially narrows the 95% prediction interval and the reader variance component is the
+    largest term. Biology-dominated: the automated and no-bone-age predictions have
+    indistinguishable intervals and the residual biological term exceeds 80% of total variance,
+    in which case bone age precision is not the rate-limiting step in growth medicine.
+  tractability: 4
+  search_log_ref: null
+
+- gap_id: g_l7fuse_008
+  question: >-
+    What is the pooled inter-rater and intra-rater error of Greulich-Pyle and Tanner-Whitehouse
+    bone age, in years with a confidence interval, across contemporary multi-ethnic populations?
+  type: quantitative_gap
+  layer: L7
+  why_it_matters: >-
+    Bone age error is quoted throughout paediatric endocrinology, orthopaedics and forensic age
+    estimation as "about a year", but the number is assembled from small single-centre audits
+    from the 1990s with three or fewer readers, in populations that do not resemble those in
+    which the method is now used - including forensic determinations of legal majority where
+    the consequence of error is a custody decision.
+  what_is_known: >-
+    Interobserver spread 0.96 years (GP) and 0.74 years (TW2) from 3 registrars reading 50
+    films (king1994). Intra-observer 95% limits of agreement -2.46 to +2.18 years (GP) and
+    -1.41 to +1.43 years (TW2) from 362 consecutive clinical radiographs (bull1999). Modern
+    trained-reader ICC exceeds 0.9 for both methods across 1725 radiographs and 12 readers, but
+    ICC is not an error in years and inflates with a wide age range; the reported mean absolute
+    GP-versus-TW3-RUS difference of 2.5-3.3 months widens above 180 months of age
+    (tewattanarat2026). Automated precision is SD 0.17 years (thodberg2009). No Fels error in
+    years was located in this sweep.
+  what_is_missing: >-
+    A Europe PMC search for bone age, Greulich and Pyle, interobserver or inter-rater, and
+    meta-analysis or pooled estimate returned 51 records with no pooled estimate of reader error
+    in years; the one systematic review and meta-analysis found in this area pools machine
+    learning performance, not human reader error, and notes that samples are predominantly US
+    and West European with few studies exploring ethnic differences (dallora2019).
+  nearest_evidence:
+  - king1994
+  - bull1999
+  - tewattanarat2026
+  - dallora2019
+  discriminating_experiment: >-
+    Model system: a prospectively assembled multi-site image set of at least 1000 hand
+    radiographs stratified by sex, chronological age band and self-reported ancestry, read
+    independently by at least 10 readers of mixed seniority, twice, at least 4 weeks apart,
+    using GP, TW3-RUS and Fels, plus BoneXpert. Readout: variance components in years with
+    bootstrap CIs, reported separately by age band, with explicit attention to the 14-19 year
+    band where fusion decisions are made. Expected result under the current assumption: reader
+    SD approximately 0.5 years overall. Expected result if the assumption is wrong: reader SD
+    exceeding 1 year specifically in the peripubertal band, which would invalidate the use of
+    manual bone age for legal age determination at the 18-year threshold.
+  tractability: 4
+  search_log_ref: g_l7fuse_008
+
+- gap_id: g_l7fuse_009
+  question: >-
+    Do blood vessels invade the human growth plate from both the epiphyseal and metaphyseal
+    sides at fusion, and does the first bony bridge form where the two vascular fronts meet?
+  type: species_gap
+  layer: L7
+  why_it_matters: >-
+    Bidirectional invasion is the only proposed mechanism that explains the specific geometry
+    Haines described - mineralisation advancing from both surfaces, then perforation - and it is
+    the only mechanism that would make fusion a vascular rather than a chondrocyte-autonomous
+    event. It also predicts a different therapeutic target (angiogenesis) from every other
+    hypothesis in this layer.
+  what_is_known: >-
+    Human and canine histology shows tide-line-demarcated mineralisation spreading inward from
+    both plate surfaces before union, union first by mineralised cartilage as metaplastic bone,
+    and then perforation, with single perforations in small early-uniting epiphyses and multiple
+    perforations in large late-uniting ones (haines1975, human and dog). The estrogen-angiogenesis
+    link is rodent: VEGF protein fell after ovariectomy and was restored by estradiol in rat
+    growth plates, and estradiol dose-dependently induced VEGF-121 and VEGF-189 but not VEGF-164
+    in a rat chondrocyte line; human growth plate VEGF protein rises across pubertal development
+    (emons2010, rat and human). The one human fusing plate showed hypoxia and necrosis, which is
+    hard to reconcile with a plate being actively vascularised (emons2009).
+  what_is_missing: >-
+    No vascular imaging of a human growth plate at fusion has been published. The direction of
+    vessel ingrowth relative to the first bridge has never been determined in any species that
+    fuses. Rodent VEGF data cannot address it because rodents do not complete fusion.
+  nearest_evidence:
+  - haines1975
+  - emons2010
+  - emons2009
+  discriminating_experiment: >-
+    Model system: synchrotron phase-contrast or contrast-enhanced micro-CT of intact human
+    physeal blocks from the biobank in g_l7fuse_002, plus rabbit distal femora at defined
+    pre-fusion and fusion stages, with vascular casting. Readout: 3D reconstruction of canal
+    continuity across the plate, scored for whether each nascent bridge is continuous with an
+    epiphyseal canal, a metaphyseal canal, or both, and whether chondrocyte loss (empty lacunae)
+    is proximal or distal to the vascular tip. Expected results - bidirectional invasion:
+    bridges are dual-supplied and vascular tips precede empty lacunae. Chondrocyte-first models:
+    empty lacunae precede vessels and bridges are supplied from the metaphyseal side only, as
+    in ordinary endochondral growth. Hypoxic death: canal density falls before bridging, which
+    would reconcile the emons2009 ultrastructure with the Haines geometry.
+  tractability: 2
+  search_log_ref: null
+
+- gap_id: g_l7fuse_010
+  question: >-
+    Is the ORDER in which human epiphyses fuse conserved across populations, or does it vary in
+    the way that the ages of fusion demonstrably do?
+  type: search_established
+  layer: L7
+  why_it_matters: >-
+    Forensic age estimation, paediatric orthopaedic decision-making and every mechanistic model
+    of site-specific fusion all rest on the assumption that the sequence is a species-level
+    developmental constant while only the timing shifts. If the sequence itself varies, then
+    site-specific fusion is not a fixed developmental programme and a purely endocrine account
+    cannot be complete. If it is conserved despite a two-year timing shift, that dissociation is
+    itself strong evidence for a local, site-intrinsic clock modulated by a systemic signal.
+  what_is_known: >-
+    Timing varies markedly: all ten epiphyses compared between young Bosnian males and the
+    McKern and Stewart North American sample were at least two years advanced in the Bosnian
+    material (schaefer2005). Detailed sequences exist for single populations - 21 epiphyses
+    pairwise-sequenced for beginning and complete union in 258 Bosniak males, where substantial
+    variation in order existed at the individual level but most pairwise relationships were
+    invariant (schaefer2007) - and separate sequences exist for the Portuguese sacrum
+    (cardoso2014) and for the Swedish wrist, knee and ankle by MRI, which fuse in an ascending
+    foot-to-wrist order (kvist2021). Differential growth plate aging by bone size has been
+    demonstrated in rodents (lui2018).
+  what_is_missing: >-
+    A Europe PMC search for epiphyseal union or epiphyseal fusion combined with sequence or
+    order of union and population-specific, population differences, ancestry or between
+    populations returned 166 records dominated by forensic age-estimation validation and
+    archaeological population studies; none reported a formal statistical comparison of union
+    SEQUENCE between two or more contemporary populations. Every published sequence is
+    single-population, and the sequences use non-comparable element sets.
+  nearest_evidence:
+  - schaefer2007
+  - schaefer2005
+  - kvist2021
+  discriminating_experiment: >-
+    Model system: harmonised MRI fusion staging of the same element set (distal radius, distal
+    femur, proximal and distal tibia, calcaneus, iliac crest) in at least three contemporary
+    populations differing in fusion timing, using the kvist2020 cartilage-sequence protocol and
+    a common ordinal scale, in cohorts of at least 300 per population. Readout: pairwise
+    Kendall concordance of element rank order within each population, compared between
+    populations, with timing removed by aligning on median age at 50% fusion of a reference
+    element. Expected results - conserved sequence: rank-order concordance between populations
+    is not distinguishable from within-population test-retest concordance, supporting a fixed
+    site-intrinsic programme scaled by a systemic signal. Variable sequence: concordance falls
+    significantly between populations, implicating environment- or ancestry-dependent local
+    modulation and undermining single-population forensic standards.
+  tractability: 3
+  search_log_ref: g_l7fuse_010
+
+- gap_id: g_l7fuse_011
+  question: >-
+    Is the rat terminal growth plate morphology - a bone band sealing the metaphyseal edge with
+    acellular regions - homologous to any stage of human epiphyseal union, or a distinct
+    endpoint?
+  type: species_gap
+  layer: L7
+  why_it_matters: >-
+    The rat is the workhorse of growth plate endocrinology and pharmacology, and its terminal
+    phenotype is routinely described as if it were fusion or as if the difference from humans
+    were merely quantitative. If the rat endpoint is mechanistically distinct, every rat study
+    of "growth plate closure" is measuring something else, and the atlas must grade rat fusion
+    claims as high risk rather than moderate.
+  what_is_known: >-
+    Aged Wistar rats (62-80 weeks) retain histologically present femoral and tibial growth
+    plates while longitudinal growth has ceased, developing four morphologies absent from young
+    plates: a metaphyseal bone band sealing that edge, acellular regions resistant to resorption,
+    intraplate remodelling and bone formation, and direct bone formation by former growth plate
+    chondrocytes; sporadic proliferation continues but loses synchrony (roach2003, rat). The mouse
+    endpoint is different again - persistent calcified cartilage with loss of type X collagen and
+    MMP-13 (yu2025, mouse) - despite countable bony bridges (samvelyan2022, mouse). Human union
+    destroys the cartilage entirely (haines1975).
+  what_is_missing: >-
+    No study has applied the same stains, markers and 3D imaging to rat, mouse, rabbit and human
+    terminal plates in a single comparison, so the descriptive claims sit in incomparable
+    literatures using different methods decades apart.
+  nearest_evidence:
+  - roach2003
+  - yu2025
+  - haines1975
+  - samvelyan2022
+  discriminating_experiment: >-
+    Model system: a single-laboratory four-species comparison - aged rat (80 weeks), aged mouse
+    (55-78 weeks), rabbit at fusion, and staged human physeal specimens - processed identically.
+    Readout: synchrotron micro-CT bridge quantification (staines2018 protocol) plus matched
+    histology for COL2A1, COL10A1, MMP-13, osteocalcin and an empty-lacuna count, plus lineage-
+    or marker-based assessment of whether the bone within the plate derives from chondrocytes.
+    Expected results - homologous endpoints: rat sealed-edge bone and human perforation bone share
+    a chondrocyte-derived signature and appear at the same relative bridge density. Distinct
+    endpoints: rat intraplate bone is osteoblast-derived and appears without the bidirectional
+    mineralisation front seen in human and rabbit, in which case rat growth cessation must be
+    scored as a separate phenotype from fusion throughout the atlas.
+  tractability: 3
+  search_log_ref: null
+
+- gap_id: g_l7fuse_012
+  question: >-
+    Why do different growth plates in the same individual, exposed to the same circulating
+    estradiol, fuse years apart in a reproducible order?
+  type: known_unknown
+  layer: L7
+  why_it_matters: >-
+    Site-asynchronous fusion is the sharpest constraint any mechanistic model has to satisfy, and
+    it falsifies any purely systemic account. Whatever ends the plate must be a local clock that
+    a systemic signal only modulates. Identifying that local clock would explain skeletal
+    proportion, would explain why estrogen excess shortens limbs preferentially, and would
+    identify the target for any intervention that aims to extend growth at one site.
+  what_is_known: >-
+    Human fusion proceeds in an ascending foot-to-wrist order with the distal radius last
+    (kvist2021), and pairwise sequences across 21 epiphyses are largely invariant within a
+    population (schaefer2007). In rodents, functional, structural and molecular senescent changes
+    occur earlier in the growth plates of small bones (metacarpals, phalanges) than of large bones
+    (femur, tibia), and the differential involves modulation of IGF, BMP and WNT signalling
+    (lui2018, mouse and rat). Positional identity is established embryonically by HOX-code
+    patterning, which is a plausible but untested source of the site-specific set point.
+  what_is_missing: >-
+    No human data on site-specific differences in growth plate gene expression, progenitor
+    number or estrogen-receptor abundance. No demonstration in any species that the site-specific
+    clock is cell-autonomous rather than imposed by local mechanics, perfusion or perichondrial
+    signalling.
+  nearest_evidence:
+  - kvist2021
+  - lui2018
+  - schaefer2007
+  discriminating_experiment: >-
+    Model system: paired early-fusing (proximal phalanx or calcaneus) and late-fusing (distal
+    radius or distal femur) physeal specimens from the SAME human donors (g_l7fuse_002), plus
+    heterotopic transplantation of early- and late-fusing rabbit growth plates into reciprocal
+    sites in the same animal. Readout: site-matched single-nucleus RNA-seq and progenitor counts
+    in the human pairs; time to fusion of transplanted rabbit plates in host versus donor site.
+    Expected results - cell-autonomous clock: transplanted plates fuse on their donor schedule
+    and human site pairs differ in senescence markers within donor. Environment-imposed clock:
+    transplanted plates adopt the host site schedule and the human site pairs are
+    transcriptionally indistinguishable, implicating local mechanics or perfusion instead.
+  tractability: 2
+  search_log_ref: null
+
+- gap_id: g_l7fuse_013
+  question: >-
+    What is the full distribution, not the mean, of height gain after menarche, and can the
+    upper tail be predicted prospectively?
+  type: quantitative_gap
+  layer: L7
+  why_it_matters: >-
+    The clinical rule of thumb "girls grow about 5-7 cm after menarche" is used to counsel
+    families, to decide whether to treat precocious puberty, and to time scoliosis surgery. In
+    the best-measured cohort the mean is 8.0 cm but the standard deviation is 4.9 cm and the
+    observed range runs from 0.2 to 31.1 cm. A rule of thumb whose SD is 60% of its mean, and
+    whose tail is four times its mean, is not a clinical tool; using it as one produces
+    systematic errors in exactly the early-maturing girls in whom the decision matters most.
+  what_is_known: >-
+    In 793 healthy term-born Swedish girls, mean age at menarche was 13.0 years (SD 1.3, range
+    8.2-17.2) and postmenarcheal growth averaged 8.0 cm (SD 4.9) with an observed range of 0.2
+    to 31.1 cm, decreasing with later menarche; menarche occurred at 71.6% (SD 18.8) of the
+    QEPS-specific pubertal growth function, and data available at pubertal onset explained 44%
+    of the variance in menarcheal age (grdstedtbergho2024). Adding menarcheal status to
+    Tanner-Whitehouse height prediction narrows the 95% interval from plus or minus 5 cm to plus
+    or minus 4 cm at age 12 and from plus or minus 4 cm to plus or minus 3 cm at age 13
+    (tanner1975).
+  what_is_missing: >-
+    The determinants of the upper tail. No study has reported which prospectively measurable
+    variables at menarche - bone age, MRI fusion stage, height SDS, midparent height, BMI -
+    identify the girls who will gain more than 15 cm. A Europe PMC search combining menarche
+    with height gain, growth after menarche or postmenarcheal, longitudinal or cohort, and
+    centimetres returned 471 records dominated by GnRH-agonist and growth hormone treatment
+    series with predicted rather than observed adult height as the outcome.
+  nearest_evidence:
+  - grdstedtbergho2024
+  - tanner1975
+  discriminating_experiment: >-
+    Model system: a prospective cohort of at least 1000 girls enrolled within 3 months of
+    menarche with baseline height, weight, midparent height, hand radiograph read by BoneXpert,
+    and MRI fusion staging of knee and wrist, followed to measured adult height. Readout: a
+    quantile regression of postmenarcheal height gain on baseline covariates, reporting the 90th
+    percentile explicitly rather than the conditional mean. Expected results - skeletal maturity
+    dominant: MRI fusion stage at menarche explains most of the upper-tail variance and the
+    conditional 90th percentile collapses once it is included. Tempo-independent: the tail
+    persists after adjustment for all baseline maturity measures, which would establish an
+    irreducible biological variance floor on postmenarcheal growth prediction and set the
+    achievable limit for gap g_l7fuse_007.
+  tractability: 4
+  search_log_ref: g_l7fuse_013

@@ -3,25 +3,43 @@ name: FGFR3-NPR2 crosstalk
 type: process
 layer: L3
 stub: false
-summary: |
-  This is the best-characterised convergence point in the layer, and the answer to whether FGFR3
+summary: 'This is the best-characterised convergence point in the layer, and the answer to whether FGFR3
+
   reduces NPR2 output transcriptionally or post-translationally is: post-translationally, with no
+
   demonstrated transcriptional component. Ozasa 2005 showed in mouse ATDC5 chondrogenic cells that
+
   FGF2 and FGF18 markedly reduce CNP-dependent cGMP production and that MAPK inhibitors reverse this,
+
   while Western blotting showed GC-B protein levels were unchanged - so the receptor is inactivated,
+
   not removed. Robinson 2017 identified the mechanism in rat chondrosarcoma cells: FGF causes rapid,
+
   potent and reversible dephosphorylation of the seven regulatory juxtamembrane serines and
+
   threonines of GC-B, and a 7-glutamate phosphomimetic GC-B is completely FGF-resistant. Shuhaibar
+
   2017 confirmed this in intact mouse tibia using an in vivo cGMP biosensor, showing FGF lowers growth
+
   plate cGMP through a PPP-family phosphatase and that non-dephosphorylatable NPR2 increases bone
+
   elongation. Wagner 2021 closed the genetic loop in mouse: crossing GC-B(7E/7E) into FGFR3-G380R
+
   restored long bone length and hypertrophic zone area to wild-type values, so NPR2 dephosphorylation
+
   is necessary for the achondroplasia phenotype. The reverse arm is also post-translational: CNP and
+
   8-Br-cGMP inhibit FGF-induced ERK phosphorylation at RAF-1 without changing FGFR3 protein levels or
+
   STAT1 phosphorylation (Ozasa 2005), which is why CNP overexpression rescues FGFR3-Ach mice (Yasoda
+
   2004). Human confirmation is phenotypic rather than molecular: vosoritide, a CNP analogue, raises
+
   annualised growth velocity by 1.57 cm/yr in children with achondroplasia (Savarirayan 2020). No
+
   molecular measurement of NPR2 phosphorylation state has ever been made in human tissue.
+
+  '
 quantitative:
 - parameter: annualised growth velocity gain from pharmacological reactivation of the NPR2 arm in FGFR3
     gain-of-function
@@ -54,42 +72,43 @@ key_refs:
   pmid: '15869918'
   first_author: Ozasa A
   year: 2005
-  type: primary
+  type: primary_abstract_only
   one_line_finding: FGF2/FGF18 reduce CNP-dependent cGMP via MAPK without changing GC-B protein level;
     CNP reciprocally blocks ERK at RAF-1 without affecting STAT1.
 - ref_id: robinson2017
   pmid: '28964968'
   first_author: Robinson JW
   year: 2017
-  type: primary
+  type: primary_abstract_only
   one_line_finding: FGF inactivates GC-B by reversible dephosphorylation in rat chondrosarcoma cells;
     a 7E phosphomimetic is FGF-resistant.
 - ref_id: shuhaibar2017
   pmid: '29199951'
   first_author: Shuhaibar LC
   year: 2017
-  type: primary
+  type: primary_abstract_only
   one_line_finding: FGF lowers growth plate cGMP in intact mouse tibia via a PPP-family phosphatase acting
     on NPR2.
 - ref_id: wagner2021
   pmid: '33784257'
   first_author: Wagner BM
   year: 2021
-  type: primary
+  type: primary_abstract_only
   one_line_finding: GC-B(7E/7E) crossed into FGFR3-G380R restores long bone length and hypertrophic zone
     area to wild-type.
 - ref_id: yasoda2004
   pmid: '14702637'
   first_author: Yasoda A
   year: 2004
-  type: primary
+  type: primary_abstract_only
   one_line_finding: CNP overexpression rescues achondroplasia in FGFR3-Ach mice via MAPK inhibition.
 - ref_id: savarirayan2020
   pmid: '32891212'
   first_author: Savarirayan R
   year: 2020
-  type: trial_registry
+  type: primary_abstract_only
   one_line_finding: Vosoritide increases annualised growth velocity by 1.57 cm/yr in children with achondroplasia.
 open_questions:
 - g_l3core_004
 last_verified: '2026-08-05'
+pending_source: wagner2021

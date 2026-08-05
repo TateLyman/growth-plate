@@ -1,3 +1,432 @@
-# Falsifiable evidence that a gap is real: the exact searches that returned nothing.
-# Each entry must let a reader re-run the identical query and reproduce the null.
-searches: []
+searches:
+- gap_id: g_l12pharm_001
+  database: Europe PMC
+  exact_query_string: vosoritide AND ("final adult height" OR "final height" OR "adult height" OR "near-adult height")
+  filters: format=json, pageSize=20, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 64
+  screened_count: 20
+  reason_none_qualified: 'No hit reports achieved final or near-adult height in CNP-analogue-treated patients. The two most
+    likely candidates were screened at abstract level and explicitly excluded: PMID 42306228 (meta-analysis of CNP analogs,
+    11 studies N=542, 4 RCTs n=326) reports AGV 1.36 cm/yr (95% CI 1.05-1.68), height Z-score, standing height and upper-to-lower
+    segment ratio - no final height; PMID 40821249 (review of clinical and real-world evidence to May 2025) reports AGV ~1.5-2.0
+    cm/yr and discusses "long-term potential" prospectively rather than reporting attained adult height. The remaining screened
+    hits are surgical integration studies, cost-effectiveness models, dosing/PK modelling, spine and genu varum morphometry,
+    or reviews. Absence is consistent with trial design rather than with reporting failure: the phase 3 extension NCT03424018
+    is registered as ACTIVE_NOT_RECRUITING, so the cohort has not yet reached skeletal maturity.'
+  additional_source_checked: 'ClinicalTrials.gov API v2, query.intr=vosoritide, 2026-08-05: of 12 returned studies the two
+    extension studies (NCT03424018 phase 3 n=119, NCT03989947 phase 2 n=73) are ACTIVE_NOT_RECRUITING, consistent with final
+    height data being pending rather than withheld.'
+- gap_id: g_l12pharm_002
+  database: Europe PMC
+  exact_query_string: vosoritide AND achondroplasia AND (randomi* OR "growth velocity")
+  filters: format=json, pageSize=12, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 134
+  screened_count: 12
+  reason_none_qualified: Screened hits report plasma pharmacokinetics and population-PK-derived weight-band dosing (e.g. PMID
+    38649657) but none reports a measured drug concentration within growth plate tissue or across its zones. Tissue exposure
+    at the target is treated throughout the literature as inferred from plasma exposure rather than measured, which is the
+    substance of this gap.
+- gap_id: g_l13data_001
+  database: NCBI GEO DataSets (E-utilities esearch, db=gds)
+  exact_query_string: (growth plate[All Fields]) AND (spatial[All Fields]) AND Homo sapiens[Organism]
+  filters: db=gds, retmax=0 for count; census executed against live E-utilities API
+  date_run: '2026-08-05'
+  hit_count: 0
+  screened_count: 0
+  reason_none_qualified: 'Exact zero. The unrestricted query (growth plate[All Fields]) AND (spatial[All Fields]) returns
+    7 records, all non-human - inspected accessions include GSE299816, GSE288529 (ApoE resting zone marker), GSE275252 (ADGRG6),
+    GSE221571, all Mus musculus. Adding the Homo sapiens organism restriction eliminates all 7. The null is not an artefact
+    of the organism filter being too strict: the companion query (growth plate) AND (single cell) AND Homo sapiens returns
+    18 records, confirming that human growth plate data IS deposited and indexed under this organism tag, and that the absence
+    is specific to the spatial modality.'
+- gap_id: g_l13data_002
+  database: NCBI GEO DataSets (E-utilities esearch, db=gds)
+  exact_query_string: 'four paired counts: (growth plate[All Fields]) = 1472; AND Mus musculus[Organism] = 919; AND Homo sapiens[Organism]
+    = 141; AND (single cell[All Fields]) = 60, of which Homo sapiens = 18'
+  filters: db=gds, retmax=0, counts only
+  date_run: '2026-08-05'
+  hit_count: 1472
+  screened_count: 24
+  reason_none_qualified: These counts establish the DEPOSITION ratio (~6.5 mouse records per human record) but do not answer
+    the question asked, which concerns the mechanistic LITERATURE and its species attribution practices. No systematic species-audit
+    of the growth plate literature was located in GEO or Europe PMC; the gap is therefore quantitative rather than search_established
+    for the literature claim, and the GEO figures are recorded as nearest available evidence.
+- gap_id: g_l1arch_001
+  database: PubMed
+  exact_query_string: (growth plate[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND humans[MeSH Terms] AND (stereolog*[tiab]
+    OR morphometr*[tiab] OR histomorphometr*[tiab]) AND (hypertroph*[tiab]) AND (elongation[tiab] OR "longitudinal growth"[tiab]
+    OR "growth rate"[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 4
+  screened_count: 4
+  reason_none_qualified: Four hits. PMID 11033444 (Byers 2000) is human histomorphometry of rib growth plate but reports zone
+    heights only, not a partition of elongation. PMID 31997656 correlates growth plate morphometry with tibial growth but
+    the human arm is radiographic (plate height/width) with no cellular stereology. PMIDs 15647824 and 10487224 are rodent.
+    No human study partitions elongation among division, matrix synthesis and hypertrophy.
+- gap_id: g_l1arch_003
+  database: Europe PMC
+  exact_query_string: septoclast*
+  filters: resultType=core, pageSize=60, no date limit
+  date_run: '2026-08-05'
+  hit_count: 54
+  screened_count: 54
+  reason_none_qualified: All 54 records screened by title and, where ambiguous, abstract. Every primary observation of septoclasts
+    is in mouse (35091558, 29464321, 33398436, 28500502, 35195769, 42324641, 41319243, 40387924, 19893052), rat (7730591,
+    35537657, 32816022, 24879443) or bovine calf costochondral junction (33884197). The remainder are reviews, conference
+    abstract collections, or unrelated osteoclast/vascular papers. Not one reports septoclasts, FABP5+ chondro-osseous border
+    cells, or an equivalent population in human growth plate tissue. A narrower run of 'septoclast* AND (human OR "Homo sapiens")'
+    returned 38 records, all of which were rodent-tissue studies or reviews that merely mention human relevance.
+- gap_id: g_l1arch_006
+  database: PubMed
+  exact_query_string: (("growth plate"[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND (elongation[tiab] OR "growth
+    velocity"[tiab] OR "growth rate"[tiab])) AND (implanted[tiab] OR marker[tiab] OR transducer[tiab] OR radiostereometr*[tiab]
+    OR tantalum[tiab]) AND humans[MeSH Terms] AND (daily[tiab] OR "short-term"[tiab] OR continuous[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 2
+  screened_count: 2
+  reason_none_qualified: 'Two hits, neither relevant: PMID 40394920 is a serum miRNA panel as a surrogate marker of GH response,
+    and PMID 39674288 is a CDK8 inhibitor study in achondroplasia model mice. No human study measures physeal elongation directly
+    with implanted markers or transducers at daily resolution. A companion PubMed query ''(saltation[tiab] OR saltatory[tiab]
+    OR stasis[tiab]) AND (growth plate[tiab] OR physis[tiab] OR "bone elongation"[tiab] OR "longitudinal bone growth"[tiab])''
+    returned 7 records, of which the only direct high-frequency physeal measurements are in rabbit (8119172) and dog (21470252).'
+- gap_id: g_l1arch_007
+  database: PubMed
+  exact_query_string: ("oxygen tension"[tiab] OR pO2[tiab] OR "partial pressure of oxygen"[tiab]) AND (growth plate[tiab]
+    OR "epiphyseal plate"[tiab] OR physis[tiab]) AND humans[MeSH Terms]
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 4
+  screened_count: 4
+  reason_none_qualified: Four hits. PMID 41253283 is ToF-SIMS mineral/organic mapping of human growth plate with no oxygen
+    measurement; PMID 19419319 is an in vitro chondrocyte study of ANK expression under imposed oxygen tensions, not a tissue
+    measurement; PMID 16425255 is a review; PMID 711109 is a 1978 non-English clinical paper on fracture effects. No study
+    reports measured oxygen tension in human growth plate tissue. The only zonal measurements in any species remain Brighton
+    and Heppenstall 1971 in rat and rabbit, whose numeric values are not retrievable from any indexed abstract (queued in
+    access_queue).
+- gap_id: g_l1arch_008
+  database: PubMed
+  exact_query_string: (chondrocyte[tiab] AND (swelling[tiab] OR "dry mass"[tiab] OR "volume increase"[tiab] OR hypertrophy[tiab]))
+    AND (human[tiab] OR humans[MeSH Terms]) AND ("growth plate"[tiab] OR physis[tiab]) AND (quantitative phase[tiab] OR interferometr*[tiab]
+    OR "cell volume"[tiab] OR density[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 6
+  screened_count: 6
+  reason_none_qualified: 'Six hits: a mathematical model of osteochondral regeneration (38908475), an HDAC4/MMP-13 mouse study
+    (27320207), an in vitro chondrocyte dedifferentiation study (23758619), a BMP-2/Wnt signalling study (22513174), a chondrosarcoma
+    type X collagen study (22116208) and a review of steroid effects (19940493). None measures single-cell volume or dry mass
+    density in human growth plate chondrocytes. The three-phase enlargement trajectory remains described only in mouse and
+    jerboa (cooper2013).'
+- gap_id: g_l1arch_012
+  database: PubMed
+  exact_query_string: ("cell cycle"[tiab] OR "cycle time"[tiab] OR "labelling index"[tiab] OR "labeling index"[tiab] OR bromodeoxyuridine[tiab]
+    OR Ki-67[tiab]) AND ("growth plate"[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND humans[MeSH Terms] AND (proliferative
+    zone[tiab] OR chondrocyte[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 19
+  screened_count: 19
+  reason_none_qualified: All 19 screened. Every record is either a mouse/rat genetic or pharmacological study (32759468, 24551245,
+    17652426, 16869727, 20470884, 10098598, 2207391), an in vitro human chondrocyte differentiation study without cell-cycle-phase
+    timing (21538935, 19898608, 31601652, 19351720, 11739785), or a review (34137454, 33064251, 10799356, 10372550, 7634645,
+    17098451, 16144844). None reports G1, S, G2 or M duration, cumulative labelling index kinetics, or a growth fraction for
+    human proliferative-zone chondrocytes. The only human numbers remain a derived cycle time (kember1976) and an in vitro
+    labelling index in four subjects (thurston1985).
+- gap_id: g_l2stem_001
+  database: Europe PMC
+  exact_query_string: (human) AND ("growth plate" OR physis OR "resting zone") AND ("lineage tracing" OR "clonal tracing"
+    OR "somatic mutation" OR "clonal lineage")
+  filters: resultType=lite, pageSize=8 inspected of full hit list, no date limit
+  date_run: '2026-08-05'
+  hit_count: 726
+  screened_count: 40
+  reason_none_qualified: Top-ranked and all screened records are either murine lineage tracing, reviews of murine work, or
+    human descriptive transcriptomics (chu2026, avijgan2025, avijgan2026). No record reports clonal or lineage tracing performed
+    on human growth plate cells. The two human primary studies retrieved (chu2026, 41984930; the systematic review 41795828)
+    explicitly state that human growth plate stem cells had not previously been demonstrated and rely on mouse tracing of
+    a transcriptionally matched population for the functional claim.
+- gap_id: g_l2stem_002
+  database: Europe PMC
+  exact_query_string: (human) AND (osteoblast) AND ("chondrocyte-derived" OR "chondrocyte origin" OR transdifferentiation)
+    AND (bone) AND ("lineage" OR "fate mapping" OR "somatic")
+  filters: resultType=lite, pageSize=8 inspected of full hit list, no date limit
+  date_run: '2026-08-05'
+  hit_count: 1466
+  screened_count: 40
+  reason_none_qualified: All screened records are murine lineage tracing, in vitro models, deer antler, or reviews. No study
+    quantifies the fraction of human osteoblasts derived from hypertrophic chondrocytes; the human-tissue hits (Achilles heterotopic
+    ossification, 42143563) describe an endochondral sequence histologically without lineage resolution.
+- gap_id: g_l2stem_003
+  database: Europe PMC
+  exact_query_string: ("secondary ossification cent*") AND (ablat* OR block* OR prevent* OR delay*) AND ("resting zone" OR
+    "stem cell" OR self-renewal) AND (mouse OR mice)
+  filters: resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 0
+  screened_count: 0
+  reason_none_qualified: Zero records. No published experiment manipulates secondary ossification centre formation and then
+    assays resting-zone stem cell behaviour. The SOC-triggers-stemness claim rests entirely on temporal coincidence reported
+    in mizuhashi2018 and newton2019.
+- gap_id: g_l2stem_005
+  database: Europe PMC
+  exact_query_string: (human) AND ("growth plate" OR physis) AND ("resting zone" OR "reserve zone") AND (clonal OR "self-renewal"
+    OR "proliferative capacity" OR "replicative capacity")
+  filters: resultType=lite, pageSize=25 inspected, no date limit
+  date_run: '2026-08-05'
+  hit_count: 213
+  screened_count: 25
+  reason_none_qualified: Screened records are murine primary studies (41748604, 41289405, 41253754, 39549120), reviews (41096725,
+    40838219, 39463341, 40104770), or human transcriptomic description (41984930). None measures proliferative or clonal capacity
+    of human resting zone chondrocytes; the closest, avijgan2025, shows only that a subset can exit G0 ex vivo.
+- gap_id: g_l2stem_007
+  database: Europe PMC
+  exact_query_string: (human) AND ("growth plate" OR "resting zone" OR physis) AND (telomere length OR telomerase activity)
+    AND (chondrocyte OR cartilage) AND (age OR ageing OR aging)
+  filters: resultType=lite, pageSize=25 inspected, no date limit
+  date_run: '2026-08-05'
+  hit_count: 218
+  screened_count: 25
+  reason_none_qualified: Every screened record concerns osteoarthritic articular cartilage senescence, general skeletal ageing
+    reviews, or rodent models (e.g. 39571160 Lmna progeria mouse, 33438789 mouse mTert). No primary measurement of telomere
+    length or telomerase activity in human growth plate chondrocytes at any age was retrieved.
+- gap_id: g_l2stem_009
+  database: Europe PMC
+  exact_query_string: (PDPN OR podoplanin) AND (CD164) AND (CD73) AND ("resting zone" OR "reserve zone" OR PTHrP OR PTHLH)
+  filters: resultType=lite, pageSize=15 inspected of full hit list, no date limit
+  date_run: '2026-08-05'
+  hit_count: 36
+  screened_count: 15
+  reason_none_qualified: All screened records are reviews of skeletal stem cell heterogeneity or primary studies of periosteal
+    (39405183) and marrow populations. None applies the PDPN+CD146-CD73+CD164+ panel to the resting zone of a human growth
+    plate, so the discrepancy between the mouse resting-zone localisation and the human pre-hypertrophic/hypertrophic localisation
+    (chan2018) is untested.
+- gap_id: g_l3core_006
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:"phosphodiesterase" AND TITLE_ABS:"growth plate"
+  filters: format=json, pageSize=25, resultType=lite, no date limit, no publication-type limit
+  date_run: '2026-08-05'
+  hit_count: 14
+  screened_count: 14
+  reason_none_qualified: Of 14 records, 9 concern alkaline phosphatase / nucleotide pyrophosphatase-phosphodiesterase (ENPP1)
+    and matrix-vesicle mineralisation, not cyclic-nucleotide PDEs. Two are the mouse PDE3 work (Kawabe 2025, journal article
+    and its abstract duplicate), one is a rat PDE5/tadalafil study (Wang 2018), one is a human growth plate physicochemical
+    niche paper with no PDE data, and one is a 1986 PTH/alkaline phosphatase study. None reports cyclic-nucleotide PDE isoform
+    localisation by zone in human growth plate.
+- gap_id: g_l3core_006
+  database: Europe PMC
+  exact_query_string: (TITLE_ABS:"PDE3A" OR TITLE_ABS:"PDE3B" OR TITLE_ABS:"PDE5A" OR TITLE_ABS:"PDE9A" OR TITLE_ABS:"PDE1C")
+    AND (TITLE_ABS:"growth plate" OR TITLE_ABS:"physis" OR TITLE_ABS:"epiphyseal")
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 2
+  screened_count: 2
+  reason_none_qualified: The two hits are Kawabe 2025 (mouse PDE3B pharmacology, no zonal localisation, no human tissue) and
+    Reyes 2020 (a review of non-GNAS brachydactyly mentioning PDE3A, no growth plate tissue data). Neither reports a named
+    cGMP-hydrolysing PDE isoform localised to a growth plate zone in any species, and neither uses human growth plate tissue.
+- gap_id: g_l3core_006
+  database: Europe PMC
+  exact_query_string: (phosphodiesterase OR PDE3B OR PDE5A OR PDE9A) AND ("growth plate" OR physis) AND human AND (immunohistochemistry
+    OR "in situ hybridisation" OR "in situ hybridization" OR "laser capture" OR "single-cell")
+  filters: format=json, pageSize=25, resultType=lite, no date limit; first 25 of 201 screened by title and abstract
+  date_run: '2026-08-05'
+  hit_count: 201
+  screened_count: 25
+  reason_none_qualified: The 201 hits are dominated by ENPP1/pyrophosphatase, bone marrow adipose and osteoarthritis papers;
+    the term "phosphodiesterase" matches ENPP1 nomenclature. Of the 25 top-ranked records screened, none reports cyclic-nucleotide
+    PDE isoform expression localised to a growth plate zone in human tissue. The only relevant records (Hirota 2022, Miyazaki
+    2022) are mouse and concern PKA/Ca2+ rather than PDE localisation.
+- gap_id: g_l3core_006
+  database: Europe PMC
+  exact_query_string: PDE9A AND (cartilage OR chondrocyte OR bone OR skeletal)
+  filters: format=json, pageSize=20, resultType=lite, no date limit; first 20 of 234 screened
+  date_run: '2026-08-05'
+  hit_count: 234
+  screened_count: 20
+  reason_none_qualified: All screened records are neurological, cardiovascular, oncological or medicinal-chemistry papers
+    in which PDE9 and a skeletal term co-occur incidentally. No record reports PDE9A in cartilage or growth plate. This is
+    consistent with the review conclusion that PDE6, PDE9 and PDE11 family genes are not expressed in skeletal tissue.
+- gap_id: g_l3core_006
+  database: Europe PMC
+  exact_query_string: PDE1C AND (cartilage OR chondrocyte OR "growth plate")
+  filters: format=json, pageSize=20, resultType=lite, no date limit; first 20 of 59 screened
+  date_run: '2026-08-05'
+  hit_count: 59
+  screened_count: 20
+  reason_none_qualified: Hits are dominated by circular-RNA studies in osteoarthritis in which "circ-PDE1C" is a transcript
+    name rather than a study of the enzyme, plus cardiac PDE1 reviews. No record reports PDE1C protein or activity in growth
+    plate cartilage in any species.
+- gap_id: g_l3core_005
+  database: Europe PMC
+  exact_query_string: (TITLE_ABS:"PTHrP" OR TITLE_ABS:"PTHLH" OR TITLE_ABS:"PTH1R") AND (TITLE_ABS:"C-type natriuretic peptide"
+    OR TITLE_ABS:"CNP" OR TITLE_ABS:"NPR2" OR TITLE_ABS:"Nppc" OR TITLE_ABS:"guanylyl cyclase-B")
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 8
+  screened_count: 8
+  reason_none_qualified: All eight records were screened. Four are reviews or gene-panel papers listing both pathways as separate
+    causes of short stature (Vasques-type panels, SHOX second-hit papers, a signalling review, and a novel-genetic-causes
+    review). One is a vascular smooth muscle homocysteine study. One is a GWAS/expression synthesis. One (Huang 2003, PMID
+    12827032) tests adrenomedullin, CNP and PTHrP effects in parallel on cultured cells with no combination arm and no growth
+    plate tissue. None reports an experimental test of whether either pathway regulates the other.
+- gap_id: g_l3core_005
+  database: Europe PMC
+  exact_query_string: (PTHrP OR "parathyroid hormone-related protein") AND (Nppc OR NPR2 OR "C-type natriuretic peptide")
+    AND (chondrocyte OR "growth plate") AND (crosstalk OR "cross-talk" OR converge OR epistasis OR "double mutant" OR "compound")
+  filters: format=json, pageSize=25, resultType=lite, no date limit; first 25 of 58 screened
+  date_run: '2026-08-05'
+  hit_count: 58
+  screened_count: 25
+  reason_none_qualified: Every screened record is a narrative review, a clinical short-stature overview, or a study of one
+    pathway that mentions the other in its introduction. No compound mutant, no epistasis experiment, and no measurement of
+    cGMP under PTH1R manipulation (or cAMP under NPR2 manipulation) in growth plate cartilage was found.
+- gap_id: g_l3core_001
+  database: Europe PMC
+  exact_query_string: (PTHrP OR PTHLH) AND ("Indian hedgehog" OR Ihh) AND ("growth plate" OR chondrocyte) AND ("loop gain"
+    OR "feedback gain" OR "quantitative model" OR "mathematical model" OR "diffusion coefficient" OR "signalling range" OR
+    "signaling range")
+  filters: format=json, pageSize=25, resultType=lite, no date limit; first 25 of 38 screened
+  date_run: '2026-08-05'
+  hit_count: 38
+  screened_count: 25
+  reason_none_qualified: The modelling papers found (Stoop 2025 continuum particle model; Campbell 2024 osteochondral regeneration
+    model; reaction-diffusion and Turing-pattern papers from 2009-2013; Kerkhofs gene-network models) all parameterise PTHrP
+    and Ihh transport with assumed or fitted constants; none reports a measured diffusion coefficient, decay length or loop
+    gain. No experimental paper in the set measures the loop as a control system.
+- gap_id: g_l3core_001
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:"Ihh" AND TITLE_ABS:("long-range" OR "range of") AND (chondrocyte OR "growth plate" OR skeletal
+    OR cartilage)
+  filters: format=json, pageSize=20, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 22
+  screened_count: 22
+  reason_none_qualified: The two directly relevant records are Koziel 2004 (Ext1 hypomorph EXPANDS the Ihh range) and Tsiairis
+    2008 (Disp1 mutants establish the loop over a SHORTER distance). Both describe range change ordinally, by comparing the
+    extent of Ptch1/Gli1 expression domains between genotypes; neither reports a distance in micrometres, a diffusion coefficient,
+    or a source strength. The remainder concern heparan sulfate structure, MPS models, or craniofacial development.
+- gap_id: g_l3core_003
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis OR epiphyseal) AND human AND ("single-cell RNA" OR "single cell RNA" OR scRNA-seq
+    OR "spatial transcriptom") AND (zone OR zonal OR resting OR hypertrophic)
+  filters: format=json, pageSize=25, resultType=lite, no date limit; first 25 of 458 screened
+  date_run: '2026-08-05'
+  hit_count: 458
+  screened_count: 25
+  reason_none_qualified: Screened for any human growth plate zone-resolved dataset that could partition a CNP/NPR2 effect
+    between hypertrophic volume, matrix synthesis and proliferation. The human-tissue records found concern growth hormone
+    action on human growth plate stem cells and hPSC-derived cartilage; the zone-resolved atlases are murine. No human dataset
+    measures zonal response to CNP-pathway perturbation.
+- gap_id: g_l3core_011
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:NPR2 AND TITLE_ABS:"short stature" AND (heterozygous OR carrier)
+  filters: format=json, pageSize=25, resultType=core, no date limit; first 25 of 49 screened
+  date_run: '2026-08-05'
+  hit_count: 49
+  screened_count: 25
+  reason_none_qualified: Twenty-five records were screened for a standardised activity-versus-height regression. Every cohort
+    reports either cGMP assays on a handful of novel variants (typically 1-8) in a laboratory-specific construct, or height
+    SDS, but never both across a variant panel under one protocol. Wang 2015 comes closest, functionally testing 16 variants,
+    but reports prevalence and direction rather than a regression of activity on height. No study reports the shape of the
+    activity-to-height dose-response.
+- gap_id: g_l7fuse_003
+  database: Europe PMC
+  exact_query_string: (human) AND ("growth plate" OR physis) AND (transcriptome OR "single-cell RNA" OR "RNA-seq") AND ("epiphyseal
+    fusion" OR "growth plate closure" OR "fusing growth plate")
+  filters: format=json, resultType=lite, pageSize=30, no date limit
+  date_run: '2026-08-05'
+  hit_count: 50
+  screened_count: 30
+  reason_none_qualified: Screened the 30 highest-ranked records by title and, where ambiguous, abstract. None reports sequencing
+    of human physeal tissue at a defined late-pubertal or fusing stage. The closest qualifying record is a commentary (PMID
+    42248738) on the human EARLY-PUBERTAL growth plate atlas of chu2026, whose specimens come from growth-restricting surgery
+    and therefore predate fusion by years. The remainder are rodent growth plate studies (e.g. PMID 30036371 rodent differential
+    aging, PMID 35039652 murine gp130/STAT3), reviews of skeletal single-cell methods, cartilage organoid papers, and unrelated
+    skeletal dysplasia genetics. No dataset accession for human fusing physis was identified.
+- gap_id: g_l7fuse_005
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR "epiphyseal plate") AND ("DNA methylation" OR methylome) AND human AND (chondrocyte
+    OR cartilage) AND (puberty OR pubertal OR "bone age" OR "epiphyseal fusion")
+  filters: format=json, resultType=lite, pageSize=20, no date limit
+  date_run: '2026-08-05'
+  hit_count: 99
+  screened_count: 20
+  reason_none_qualified: None of the 20 highest-ranked records measures DNA methylation, chromatin accessibility or histone
+    modification in human growth plate cartilage at any age. Hits are reviews of overgrowth-syndrome epigenetics, epigenetic
+    age acceleration measured in BLOOD of GH-treated children (PMID 40507601), murine skeletal studies, and general genetics-of-stature
+    reviews. A deliberately broader companion query, '("growth plate" OR "epiphyseal plate" OR "physeal cartilage") AND ("DNA
+    methylation" OR methylome OR "epigenetic drift") AND (senescence OR aging OR "growth cessation" OR fusion)', returned
+    441 records whose top 30 were dominated by osteoarthritic articular cartilage, bone marrow stromal cells and systemic
+    ageing, again with no growth plate methylome at any age in any species.
+- gap_id: g_l7fuse_008
+  database: Europe PMC
+  exact_query_string: ("bone age") AND (Greulich AND Pyle) AND (interobserver OR inter-rater OR interrater) AND (meta-analysis
+    OR "pooled estimate")
+  filters: format=json, resultType=lite, pageSize=20, no date limit
+  date_run: '2026-08-05'
+  hit_count: 51
+  screened_count: 20
+  reason_none_qualified: No record provides a pooled meta-analytic estimate of human reader error for bone age in years with
+    a confidence interval. The one systematic review and meta-analysis identified in this area (dallora2019, PMID 31344143)
+    pools machine-learning algorithm performance across 26 studies, not human inter-rater error, and explicitly notes that
+    samples are predominantly from the United States and Western Europe with few studies exploring ethnic differences. Remaining
+    hits are single-centre reliability audits already captured as primaries (king1994, bull1999, paxton2013, tewattanarat2026,
+    guevel2026), AI-versus-manual validation studies in single national cohorts, and narrative reviews.
+- gap_id: g_l7fuse_010
+  database: Europe PMC
+  exact_query_string: ("epiphyseal union" OR "epiphyseal fusion") AND (sequence OR "order of union") AND (population-specific
+    OR "population differences" OR ancestry OR "between populations")
+  filters: format=json, resultType=lite, pageSize=20, no date limit
+  date_run: '2026-08-05'
+  hit_count: 166
+  screened_count: 20
+  reason_none_qualified: No record reports a formal statistical comparison of the SEQUENCE of epiphyseal union between two
+    or more populations. Hits are forensic age-estimation threshold studies at the 15- and 18-year marks using single-population
+    reference data, systematic reviews of anatomy in forensic age evaluation, archaeological and ancient-DNA population studies,
+    and clinical case series. Published union sequences remain single-population and use non-comparable element sets (schaefer2007
+    Bosniak males, 21 epiphyses; cardoso2014 Portuguese sacrum; kvist2021 Swedish wrist/knee/ankle by MRI), so cross-population
+    conservation of order remains an assumption rather than a finding.
+- gap_id: g_l7fuse_013
+  database: Europe PMC
+  exact_query_string: (menarche) AND ("height gain" OR "growth after menarche" OR postmenarcheal) AND (longitudinal OR cohort)
+    AND (centimetres OR centimeters OR cm)
+  filters: format=json, resultType=lite, pageSize=20, no date limit
+  date_run: '2026-08-05'
+  hit_count: 471
+  screened_count: 20
+  reason_none_qualified: Of the 20 highest-ranked records, only grdstedtbergho2024 (PMID 39210984) reports observed postmenarcheal
+    height gain with its full distribution in a healthy community cohort, and it is already cited. The remainder report PREDICTED
+    adult height rather than measured gain, in treated clinical populations - GnRH agonist series for precocious puberty,
+    growth hormone in Turner and SHOX deficiency, congenital adrenal hyperplasia cohorts - or model pubertal growth without
+    decomposing the postmenarcheal increment. No study was found that reports the determinants of the upper tail of postmenarcheal
+    growth (gain above 15 cm), which is the specific quantity this gap requires.
+- gap_id: g_l8gwas_001
+  database: Europe PMC
+  exact_query_string: (height GWAS OR "height-associated variant*") AND ("growth plate" OR physis OR "epiphyseal cartilage")
+    AND (eQTL OR "chromatin accessibility" OR ATAC OR "functional follow-up")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 127
+  screened_count: 25
+  reason_none_qualified: 'Top-ranked hits include three directly relevant papers (richard2025, darbellay2024, ackertbicknell2023)
+    which establish ENRICHMENT of height signal in chondrocyte regulatory elements, but none reports a variance PARTITION
+    - i.e. the percentage of height SNP-heritability attributable to growth-plate chondrocytes benchmarked against other tissues
+    with a confidence interval. Remaining screened hits were animal-agriculture GWAS, osteoarthritis epigenetics, or unrelated
+    skeletal pathology. The gap is quantitative, not total absence: this search REVISED the gap from "no human growth plate
+    functional genomics exists" (which would have been false) to "enrichment is shown, partition is not."'
+- gap_id: g_l8gwas_002
+  database: Europe PMC
+  exact_query_string: '"growth plate" AND (eQTL OR "expression quantitative trait") AND human'
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 91
+  screened_count: 25
+  reason_none_qualified: 'No hit reports a cis-eQTL scan performed on primary human growth plate (physeal) tissue. Screened
+    hits fall into four non-qualifying classes: (1) osteoarthritis articular-cartilage transcriptomics and eQTL colocalization
+    (e.g. PMID 39579762, 36416764); (2) osteoclast regulatory-variant mapping (PMID 32216834); (3) Mendelian-randomization
+    studies using blood/plasma eQTL or pQTL panels as instruments, with no skeletal tissue sampled (e.g. PMID 41029778, 40996951,
+    39747467); (4) rodent systems-genetics of bone mineral density (PMID 34099702). "Growth plate" appears in these records
+    as background phrasing rather than as the sampled tissue.'

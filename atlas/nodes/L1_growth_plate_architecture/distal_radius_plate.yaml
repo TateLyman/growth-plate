@@ -1,7 +1,110 @@
 id: distal_radius_plate
 name: Distal radial growth plate
+aliases:
+- distal radial physis
 type: tissue_structure
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: The distal radial physis supplies about 80% of radial length overall, rising to 85% by age 5
+  and 90% by age 8; the neighbouring distal ulnar physis is even more dominant at about 85% overall, 90%
+  by age 5 and 95% after age 8. In absolute terms the radius grows about 0.9 cm per year in girls and
+  1.0 cm per year in boys from age 7 to skeletal maturity, and the ulna about 1.0 and 1.1 cm per year
+  respectively. This distal dominance is the anatomical reason distal radial physeal arrest after fracture
+  or pinning produces clinically significant deformity while proximal radial injury rarely does. In the
+  rat the distal radius is one of the four plates in the canonical differential-growth series, with a
+  proliferative cycle time of 34.0 h - not significantly different from the fast proximal tibia - which
+  shows that cycle time and elongation rate are not in one-to-one correspondence across plates.
+quantitative:
+- parameter: share of radial longitudinal growth
+  value: '80'
+  unit: '% of radial length'
+  conditions: human, overall; 85% at age 5 and 90% by age 8
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200 subjects
+- parameter: share of ulnar longitudinal growth, distal ulnar physis
+  value: '85'
+  unit: '% of ulnar length'
+  conditions: human, overall; 90% by age 5 and 95% after age 8
+  species: human
+  source_ref: pritchett1991
+  uncertainty: n = 200
+- parameter: radial growth rate, girls
+  value: '0.9'
+  unit: cm/year
+  conditions: human, age 7 to skeletal maturity
+  species: human
+  source_ref: pritchett1988
+  uncertainty: n = 121 girls
+- parameter: radial growth rate, boys
+  value: '1.0'
+  unit: cm/year
+  conditions: human, age 7 to skeletal maturity
+  species: human
+  source_ref: pritchett1988
+  uncertainty: n = 123 boys
+- parameter: ulnar growth rate, girls and boys
+  value: 1.0 and 1.1
+  unit: cm/year
+  conditions: human, age 7 to skeletal maturity
+  species: human
+  source_ref: pritchett1988
+  uncertainty: n = 244
+- parameter: radius as a fraction of standing height
+  value: 13-14 (girls), 14-15 (boys)
+  unit: '% of standing height'
+  conditions: human, age 7 to skeletal maturity
+  species: human
+  source_ref: pritchett1988
+  uncertainty: n = 244
+- parameter: proliferative zone cell cycle time
+  value: '34.0'
+  unit: h
+  conditions: 28-day-old rat distal radius; not significantly different from proximal tibia despite a
+    much lower elongation rate
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: p > 0.05 versus proximal tibia
+localization:
+- 'human distal radius and ulna: radiographic growth data (pritchett1991, pritchett1988)'
+- 'rat distal radius: cell cycle and kinetic parameters (wilsman1996a, wilsman1996)'
+human_evidence: direct
+human_evidence_note: Human contributions and growth rates come from radiographic cohorts of 200 and 244
+  children followed to maturity.
+species_basis:
+- human
+- rat
+translation_risk: low
+translation_risk_reason: The human growth data are direct; only the cell-kinetic comparison is rodent
+  and is labelled as such.
+confidence: A
+key_refs:
+- ref_id: pritchett1991
+  pmid: '2060215'
+  first_author: Pritchett JW
+  year: 1991
+  type: primary
+  one_line_finding: Distal radius supplies ~80% and distal ulna ~85% of their segment's growth, with distal
+    dominance increasing through childhood.
+- ref_id: pritchett1988
+  pmid: '3356718'
+  first_author: Pritchett JW
+  year: 1988
+  type: primary
+  one_line_finding: Radius grows ~0.9-1.0 cm/yr and ulna ~1.0-1.1 cm/yr from age 7 to maturity.
+- ref_id: wilsman1996a
+  pmid: '8764865'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Rat distal radial proliferative cycle time of 34.0 h, not significantly different
+    from the much faster proximal tibia.
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Distal radius is one of the four plates in the rat differential-growth kinetic series.
+open_questions:
+- g_l1arch_010
 last_verified: '2026-08-05'

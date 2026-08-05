@@ -1,0 +1,104 @@
+id: hypertrophic_phase_duration
+name: Hypertrophic phase duration (transit time constraint)
+aliases:
+- hypertrophic transit time
+- hypertrophic zone turnover time
+type: process
+layer: L1
+stub: false
+summary: 'The time a chondrocyte spends between leaving the cell cycle and being removed at the chondro-osseous
+  junction is remarkably invariant, and this invariance is a strong constraint on how growth rate can
+  be regulated. Hunziker and Schenk found the duration of hypertrophic activity to be approximately two
+  days in rat proximal tibia and unchanged across 21-, 35- and 80-day-old animals whose growth rates differ
+  several fold. In mouse the constraint is tighter: the whole hypertrophic column turns over in about
+  24 h, split into roughly 12 h during which cell height more than triples and roughly 12 h at terminal
+  size before removal. The implication is that plates growing at different rates cannot simply take longer
+  to enlarge their cells; they must enlarge them faster or reach a different final size within a fixed
+  window, which is exactly what the three-phase model shows - fast plates run the IGF-dependent third
+  phase, slow plates truncate it. This also means the hypertrophic zone height is the product of a fixed
+  transit time and a variable cell height, which is why zone height alone is a poor predictor of growth
+  rate. The constraint has never been tested in human tissue, where the proliferative cycle appears to
+  be an order of magnitude slower.'
+quantitative:
+- parameter: duration of the hypertrophic activity phase
+  value: '2'
+  unit: days
+  conditions: rat proximal tibia; constant across 21-, 35- and 80-day-old animals
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: approximate; explicitly reported as constant across growth rates
+- parameter: turnover time of the whole hypertrophic column
+  value: '24'
+  unit: h
+  conditions: mouse, BrdU pulse-chase
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: time to more than triple cell height after leaving the proliferative pool
+  value: '12'
+  unit: h
+  conditions: mouse proximal tibia
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: dwell time at terminal size before removal
+  value: '12'
+  unit: h
+  conditions: mouse proximal tibia
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: chondrocyte removal interval per column
+  value: '3'
+  unit: h per cell
+  conditions: rat proximal tibia, steady state
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: equivalently 8 cells/day
+localization:
+- 'rat proximal tibia: phase duration measured (hunziker1989)'
+- 'mouse proximal tibia: transit time measured by pulse-chase (cooper2013)'
+- 'human: not measured'
+human_evidence: absent
+human_evidence_note: No human study measures the transit time of a chondrocyte through the hypertrophic
+  zone.
+species_basis:
+- rat
+- mouse
+translation_risk: high
+translation_risk_reason: A fixed ~24 h to 2 day transit time is a rodent finding in tissues that elongate
+  roughly ten times faster than human plates; whether the same constraint operates in a slow human plate
+  is unknown and would change how growth rate must be regulated.
+confidence: C
+key_refs:
+- ref_id: hunziker1989
+  pmid: '2607442'
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: The duration of the hypertrophic phase is approximately 2 days and constant across
+    widely different rat growth rates.
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: The mouse hypertrophic column turns over in about 24 h, with roughly 12 h enlarging
+    and 12 h at terminal size.
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: One chondrocyte is removed per column every 3 h in the rat proximal tibia.
+- ref_id: farnum1989
+  pmid: '2760737'
+  first_author: Farnum CE
+  year: 1989
+  type: primary
+  one_line_finding: Serial-section analysis of the real-time duration of terminal events at the chondro-osseous
+    junction.
+open_questions:
+- g_l1arch_008
+- g_l1arch_001
+last_verified: '2026-08-05'

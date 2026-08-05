@@ -1,7 +1,95 @@
 id: glucocorticoid_cortisol
-name: Cortisol
+name: Cortisol / glucocorticoid excess
+aliases:
+- cortisol
+- hydrocortisone
+- dexamethasone (pharmacological probe)
 type: hormone
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Glucocorticoid excess is the most potent single suppressor of childhood linear growth, and the
+  decisive experiments show the suppression is plate-INTRINSIC, not a systemic consequence of lowered
+  GH or IGF-1. Infusing dexamethasone phosphate (80 ng/uL at 1 uL/h) into one proximal tibial growth plate
+  of a 5-week-old rabbit reduced growth rate on that side by 77% relative to the vehicle-infused contralateral
+  tibia, measured by serial radiographs of implanted pins with ~5% error (baron1992). The same unilateral
+  model then showed that catch-up growth after the infusion stops is also confined to the affected plate
+  (baron1994), which rules out a central ''sizostat'' for this phenomenon and grounds the growth plate
+  senescence model: glucocorticoid slows resting zone chondrocyte proliferation and slows the numerical
+  depletion of those cells, conserving proliferative capacity (schrier2006). The counterweight is that
+  inducible chondrocyte-specific GR deletion in mouse left growth plates, long bone length and bone microarchitecture
+  normal (tu2014) - so ENDOGENOUS glucocorticoid tone is dispensable for normal growth even though PHARMACOLOGICAL
+  excess acts locally.'
+quantitative:
+- parameter: reduction in proximal tibial growth rate by local dexamethasone infusion
+  value: '77'
+  unit: '%'
+  conditions: 5-week-old male rabbits, 80 ng/uL dexamethasone phosphate at 1 uL/h into one proximal tibial
+    plate, vehicle contralateral
+  species: rabbit
+  source_ref: baron1992
+  uncertainty: P<0.0001; measurement error of the pin-radiograph method ~5%
+- parameter: local dexamethasone dose rate used
+  value: '80'
+  unit: ng/uL at 1 uL/h
+  conditions: direct intra-growth-plate infusion, rabbit proximal tibia
+  species: rabbit
+  source_ref: baron1992
+  uncertainty: single dose level tested
+- parameter: effect of chondrocyte-specific inducible GR deletion on long bone length and growth plate
+    structure
+  value: '0'
+  unit: '% (no detectable difference from controls at any age tested)'
+  conditions: tamoxifen-inducible Col2-CreERT2 x GR-flox mice, deletion at various postnatal ages
+  species: mouse
+  source_ref: tu2014
+  uncertainty: qualitative null; metaphyseal fracture healing WAS impaired
+localization:
+- 'rabbit RZ: dexamethasone slows resting zone chondrocyte proliferation and delays their numerical depletion
+  (schrier2006)'
+- 'rabbit whole plate: local infusion suppresses growth rate by 77% (baron1992)'
+- 'human growth plate: zonal glucocorticoid receptor occupancy never measured'
+human_evidence: indirect
+human_evidence_note: Human evidence is clinical and unambiguous at the whole-organism level (Cushing syndrome,
+  glucocorticoid-treated chronic disease, inhaled corticosteroid effects on growth velocity) but there
+  is no human experiment localising the effect to the plate or to a zone.
+species_basis:
+- rabbit
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: The plate-intrinsic conclusion rests on a rabbit unilateral-infusion model that
+  cannot be performed in humans; the mouse GR-knockout null result shows the endogenous and pharmacological
+  regimes are not interchangeable.
+confidence: B
+key_refs:
+- ref_id: baron1992
+  first_author: Baron J
+  year: 1992
+  type: primary
+  one_line_finding: Local intra-plate dexamethasone cut ipsilateral tibial growth rate by 77% versus the
+    contralateral vehicle-infused plate in rabbits.
+  pmid: '1415528'
+- ref_id: baron1994
+  first_author: Baron J
+  year: 1994
+  type: primary
+  one_line_finding: Catch-up growth after local glucocorticoid suppression is confined to the affected
+    plate, so the mechanism is intrinsic, not neuroendocrine.
+  pmid: '7925098'
+- ref_id: schrier2006
+  first_author: Schrier L
+  year: 2006
+  type: primary
+  one_line_finding: Dexamethasone slowed rabbit resting zone chondrocyte proliferation and their numerical
+    depletion, conserving proliferative capacity.
+  pmid: '16614378'
+- ref_id: tu2014
+  first_author: Tu J
+  year: 2014
+  type: primary
+  one_line_finding: Inducible chondrocyte-specific GR deletion left growth plates and long bone length
+    normal in mice.
+  pmid: '25193158'
+contradicts:
+- glucocorticoid_receptor
 last_verified: '2026-08-05'

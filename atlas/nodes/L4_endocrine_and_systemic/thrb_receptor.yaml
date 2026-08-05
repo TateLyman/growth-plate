@@ -1,7 +1,56 @@
 id: thrb_receptor
-name: THRB
+name: Thyroid hormone receptor beta (THRB / TRbeta)
+aliases:
+- THRB
+- TRbeta1
+- TRbeta2
+- NR1A2
 type: protein
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: THRB encodes TRbeta1 and TRbeta2 and dominates T3 feedback on TSH in the pituitary and hypothalamus;
+  heterozygous dominant-negative THRB mutations cause resistance to thyroid hormone beta, characterised
+  by raised free T4 with non-suppressed TSH and, importantly, largely NORMAL adult stature. TRbeta1 protein
+  is present in reserve and proliferating zone rat chondrocytes and absent from hypertrophic cells (robson2000).
+  In cultured primary neonatal rib chondrocytes from TRalpha- and TRbeta-deficient mice, T3 reduced proliferation
+  and accelerated differentiation normally in TRalpha-deficient cells but ALL T3 responses were abolished
+  in TRbeta-deficient cells, and T3 upregulated TRbeta1 itself (rabier2006). The direct conflict between
+  this mouse result and the human observation that THRA, not THRB, mutations cause short stature is unresolved
+  and is logged as a contradiction; possible explanations include rib versus long-bone chondrocyte differences,
+  compensation in the germline knockouts, or a genuine species difference in isoform deployment.
+localization:
+- 'rat RZ and PZ: TRbeta1 protein confirmed (robson2000)'
+- 'rat HZ: TRbeta1 not detected (robson2000)'
+- 'mouse rib chondrocyte: TRbeta required for all T3 responses in vitro (rabier2006)'
+- 'human growth plate: TRbeta protein not localised'
+human_evidence: direct
+human_evidence_note: Human RTHbeta (dominant-negative THRB) is well characterised and, in contrast to
+  RTHalpha, does not typically cause short stature - a human negative result that constrains TRbeta's
+  role in stature.
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: high
+translation_risk_reason: Mouse chondrocyte data make TRbeta necessary for T3 action while the human phenotype
+  makes THRA the stature-relevant isoform; transferring the mouse conclusion to human growth plate would
+  be unsupported.
+confidence: D
+key_refs:
+- ref_id: rabier2006
+  first_author: Rabier B
+  year: 2006
+  type: primary
+  one_line_finding: T3 responses were abolished in TRbeta-deficient but preserved in TRalpha-deficient
+    mouse rib chondrocytes.
+  pmid: '17065405'
+- ref_id: robson2000
+  first_author: Robson H
+  year: 2000
+  type: primary
+  one_line_finding: TRbeta1 protein is present in reserve and proliferating but not hypertrophic rat growth
+    plate chondrocytes.
+  pmid: '11014246'
+contradicts:
+- thra_receptor
 last_verified: '2026-08-05'

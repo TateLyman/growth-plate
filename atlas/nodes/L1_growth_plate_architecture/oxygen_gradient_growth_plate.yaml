@@ -1,7 +1,101 @@
 id: oxygen_gradient_growth_plate
 name: Oxygen gradient across the growth plate
+aliases:
+- physeal hypoxia
+- growth plate pO2 gradient
 type: process
 layer: L1
-stub: true
+stub: false
+summary: 'The growth plate is avascular, so oxygen must diffuse in from the epiphyseal and metaphyseal
+  margins, producing a gradient with the lowest tension in the interior. The gradient was mapped by direct
+  electrode measurement across the epiphyseal plate, metaphysis and diaphysis in rat and rabbit by Brighton
+  and Heppenstall; that 1971 study remains the source of nearly every statement about physeal hypoxia
+  and its numeric values are not recoverable from any indexed abstract. Genetic evidence confirms the
+  interior is genuinely hypoxic: deleting HIF-1alpha in chondrocytes causes massive death in the centre
+  of the plate while sparing the margins, and VEGFA is required for chondrocyte survival. A striking adaptation
+  was described in 2023: growth plate chondrocytes assemble cytoplasmic membraneless haemoglobin bodies
+  whose oxygen dissociation curve is strongly left-shifted, with P50 of 27.6-27.9 mmHg compared with 58.2
+  mmHg for red cells from the same mice, allowing them to bind and store oxygen at tensions at which erythrocyte
+  haemoglobin has already released it. No oxygen tension has ever been measured in a human growth plate,
+  which matters because human plates are thicker and diffusion distances therefore longer.'
+quantitative:
+- parameter: P50 of chondrocyte haemoglobin bodies (Hedy)
+  value: 27.58-27.85
+  unit: mmHg
+  conditions: mouse growth plate chondrocytes, oxygen dissociation curve by Clark electrode and dual-wavelength
+    spectrophotometry at 37 C
+  species: mouse
+  source_ref: zhang2023_2
+  uncertainty: two independently reported values, 27.58 and 27.85 mmHg
+- parameter: P50 of red blood cells from the same mice
+  value: '58.2'
+  unit: mmHg
+  conditions: comparison sample, same conditions
+  species: mouse
+  source_ref: zhang2023_2
+  uncertainty: as reported
+- parameter: oxygen concentration at which Hba or Hbb knockout cartilage shows increased chondrocyte death
+  value: '1'
+  unit: '% O2'
+  conditions: E14.5 mouse humeral cartilage growth plates cultured 6 days
+  species: mouse
+  source_ref: zhang2023_2
+  uncertainty: n = 3 biological replicates
+- parameter: measured oxygen tension in human growth plate zones
+  value: not measured
+  unit: mmHg
+  conditions: literature to 2026-08-05; PubMed search returned 4 records, none reporting a human tissue
+    measurement
+  species: human
+  source_ref: brighton1971
+  uncertainty: null result; see search log g_l1arch_007
+localization:
+- 'rat and rabbit: electrode measurement by zone (brighton1971)'
+- 'mouse: HIF-1alpha requirement in the plate interior (schipani2001); chondrocyte haemoglobin bodies
+  (zhang2023_2)'
+- 'human: never measured'
 human_evidence: absent
+human_evidence_note: No measurement of oxygen tension in human growth plate tissue exists; a targeted
+  PubMed search returned four records, none of which measures tissue oxygen in human physis (search log
+  g_l1arch_007).
+species_basis:
+- rat
+- rabbit
+- mouse
+translation_risk: high
+translation_risk_reason: Absolute oxygen tensions are rodent and unrecoverable in value, and human plates
+  have longer diffusion distances, so the human gradient could differ substantially. Human physeal explants
+  are routinely cultured at 21% oxygen without knowing the in vivo baseline.
+confidence: C
+key_refs:
+- ref_id: brighton1971
+  pmid: '5580029'
+  first_author: Brighton CT
+  year: 1971
+  type: primary
+  one_line_finding: Measured oxygen tension by zone across the epiphyseal plate, metaphysis and diaphysis
+    in rat and rabbit; the source of the physeal hypoxia concept.
+- ref_id: schipani2001
+  pmid: '11691837'
+  first_author: Schipani E
+  year: 2001
+  type: primary
+  one_line_finding: HIF-1alpha is essential for survival of chondrocytes in the hypoxic interior of the
+    growth plate in mouse.
+- ref_id: zhang2023_2
+  pmid: '37794190'
+  first_author: Zhang F
+  year: 2023
+  type: primary
+  one_line_finding: Growth plate chondrocytes form membraneless haemoglobin bodies with P50 left-shifted
+    to 27.6-27.9 mmHg versus 58.2 mmHg for red cells.
+- ref_id: zelzer2004
+  pmid: '15073147'
+  first_author: Zelzer E
+  year: 2004
+  type: primary
+  one_line_finding: VEGFA is necessary for chondrocyte survival during bone development.
+open_questions:
+- g_l1arch_007
+pending_source: brighton1971
 last_verified: '2026-08-05'

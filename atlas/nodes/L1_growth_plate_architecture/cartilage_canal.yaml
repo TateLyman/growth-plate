@@ -1,7 +1,72 @@
 id: cartilage_canal
 name: Cartilage canal
+aliases:
+- epiphyseal cartilage canal
+- canals of Wegner
 type: tissue_structure
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Cartilage canals are vascularised connective-tissue channels that invade the epiphyseal cartilage
+  before the secondary ossification centre appears. They carry arterioles, venules, capillaries and mesenchymal
+  cells into an otherwise avascular tissue, form a discrete network within the epiphysis, and determine
+  where the secondary centre will form: in mouse, cartilage canals establish the marrow space that the
+  secondary centre subsequently occupies, and they influence the fate of the resting chondrocytes they
+  pass. Their mesenchymal cells express bone-relevant proteins and can become osteocytes, so the canals
+  are not merely a plumbing system but a delivery route for osteogenic precursors. In human epiphyses,
+  the vessels that build the ossification centres arise by sprouting from the bone collar or by intussusception
+  rather than from circulating CD133+ endothelial progenitors, and vascular invasion of the joint anlage
+  is delayed relative to the surrounding tissue. Canals are also the point of vulnerability in osteochondrosis
+  of large animals, where failure of canal blood supply causes focal ischaemic chondronecrosis.'
+quantitative:
+- parameter: temporal relation of cartilage canals to the secondary ossification centre
+  value: canals precede the centre
+  unit: qualitative
+  conditions: mammalian long bone epiphysis
+  species: mouse
+  source_ref: blumer2008
+  uncertainty: descriptive review of primary work
+- parameter: mechanism of new vessel formation in human ossification centres
+  value: sprouting from bone collar or intussusception, not endothelial progenitor recruitment
+  unit: qualitative
+  conditions: human polydactylous digit growth plates, CD34/CD31/CD133/VEGFR-2 immunostaining
+  species: human
+  source_ref: walzer2014
+  uncertainty: descriptive
+localization:
+- 'mouse femoral epiphysis: canals determine secondary centre site (blumer2007)'
+- 'human epiphysis: vessel origin characterised (walzer2014)'
+human_evidence: direct
+human_evidence_note: The origin and phenotype of epiphyseal vessels have been characterised directly in
+  human polydactylous digit specimens (walzer2014).
+species_basis:
+- mouse
+- human
+- porcine
+- ovine
+translation_risk: moderate
+translation_risk_reason: Canal function in determining secondary centre position is mouse work; the human
+  data establish vessel origin but not canal fate.
+confidence: C
+key_refs:
+- ref_id: blumer2007
+  pmid: '17626280'
+  first_author: Blumer MJ
+  year: 2007
+  type: primary
+  one_line_finding: Cartilage canals determine the site of the secondary ossification centre and influence
+    the fate of resting chondrocytes in mouse femoral epiphysis.
+- ref_id: blumer2008
+  pmid: '18602255'
+  first_author: Blumer MJ
+  year: 2008
+  type: review
+  one_line_finding: Reviews cartilage canal structure and formation and the transformation of canal mesenchymal
+    cells into osteocytes.
+- ref_id: walzer2014
+  pmid: '25164565'
+  first_author: Walzer SM
+  year: 2014
+  type: primary
+  one_line_finding: Human ossification centre vessels arise by sprouting from the bone collar or intussusception,
+    not from CD133+ progenitors.
 last_verified: '2026-08-05'

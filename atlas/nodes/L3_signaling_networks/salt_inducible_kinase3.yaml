@@ -1,7 +1,56 @@
 id: salt_inducible_kinase3
 name: SIK3
+aliases:
+- salt-inducible kinase 3
+- SIK3 kinase
 type: protein
 layer: L3
-stub: true
+stub: false
+summary: 'SIK3 is an AMPK-family kinase that sits directly above HDAC4 and controls where HDAC4 is. SIK3 phosphorylates
+  HDAC4 at its 14-3-3-binding sites, anchoring HDAC4 in the cytoplasm and thereby releasing MEF2C to drive hypertrophy.
+  Sik3-null mice are normal-sized as embryos and become dwarfed with age; hypertrophy is markedly delayed from E14.5
+  and blocked until E18.5, growth plates and articular cartilage are expanded, chondrocytes accumulate in sternum,
+  ribs and spine, and HDAC4 remains NUCLEAR in Sik3-null chondrocytes where it is cytoplasmic in wild-type hypertrophic
+  cells (Sasagawa 2012). The converse is also shown: chondrocyte-specific SIK3 overexpression closes growth plates
+  in adult mice. PTHrP acts through this kinase: PTHrP-cAMP-PKA phosphorylates the PKA sites on SIK3, inhibiting SIK3
+  kinase activity, so HDAC4 loses its cytoplasmic anchor, enters the nucleus and blocks MEF2 and RUNX2 (Nishimori
+  2021, mouse). SIK1 and SIK2 substitute when SIK3 activity is low, and HDAC5 substitutes when HDAC4 is low, so the
+  cascade is doubly redundant. No human SIK3 skeletal phenotype is established; human SIK3 variants are known for
+  the short-sleep trait.'
+localization:
+- 'mouse PHZ/HZ: SIK3 protein detected in cytoplasm of prehypertrophic and hypertrophic chondrocytes (sasagawa2012)'
+- 'human growth plate: unconfirmed'
 human_evidence: absent
+human_evidence_note: No human SIK3 skeletal phenotype; human SIK3 variants are associated with sleep duration, not
+  stature.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Mouse germline knockout and transgenic overexpression; the human orthologue has no described
+  physeal role.
+confidence: C
+key_refs:
+- ref_id: sasagawa2012
+  pmid: '22318228'
+  first_author: Sasagawa S
+  year: 2012
+  type: primary
+  one_line_finding: SIK3 anchors HDAC4 in the cytoplasm; Sik3-null mice have blocked hypertrophy and nuclear HDAC4,
+    and SIK3 overexpression closes growth plates.
+- ref_id: nishimori2021
+  pmid: '33148508'
+  first_author: Nishimori S
+  year: 2021
+  type: primary
+  one_line_finding: PTHrP/cAMP/PKA phosphorylates and inhibits SIK3, lowering HDAC4 phosphorylation and allowing nuclear
+    HDAC4 to block MEF2 and RUNX2.
+- ref_id: nishimori2019
+  pmid: '30843886'
+  first_author: Nishimori S
+  year: 2019
+  type: primary
+  one_line_finding: HDAC4 is required for PTHrP effects on chondrocyte differentiation in vivo, with HDAC5 as a partially
+    redundant mediator.
+open_questions:
+- g_l3rest_013
 last_verified: '2026-08-05'

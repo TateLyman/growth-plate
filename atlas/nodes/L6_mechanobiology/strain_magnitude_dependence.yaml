@@ -1,7 +1,88 @@
 id: strain_magnitude_dependence
-name: Strain magnitude dependence of growth
+name: Strain magnitude dependence of growth modulation
 type: process
-layer: L6
-stub: true
+summary: 'Within the range tested experimentally the growth response is linear in applied stress rather
+  than threshold-like: across rat, rabbit and calf plates the percentage growth change was proportional
+  to stress with a slope of 17.1% per 0.1 MPa and no evidence of a dead band around zero. The range actually
+  probed is narrow, roughly 0.02-0.2 MPa in compression and a comparable magnitude in distraction, so
+  linearity outside it is an assumption. In explant work strain rather than stress is the controlled variable
+  and the magnitudes used are an order of magnitude larger than physiological: 10% static compressive
+  strain for 48 h in swine ulnar plates suppressed every histomorphological parameter measured and abolished
+  aggrecan and collagen II/X expression, and compressive modulation reduces chondrocyte viability in a
+  magnitude-dependent way. Magnitude also interacts non-additively with frequency: raising either alone
+  reduced growth without histological change in rat caudal vertebrae, but raising both together (1.0 Hz
+  at 0.2 +/- 0.14 MPa) caused repeated inflammation and destroyed the tissue. There is no measured strain-magnitude
+  dose-response curve for any human physis.'
+quantitative:
+- parameter: slope of growth change vs applied stress
+  value: '17.1'
+  unit: '% per 0.1 MPa'
+  conditions: pooled across 3 species, 2 sites, 8 days sustained loading
+  species: multiple
+  source_ref: stokes2006
+  uncertainty: range 9.2-23.9 across individual plates
+- parameter: stress range over which linearity was demonstrated
+  value: approximately -0.2 to +0.1
+  unit: MPa (negative = compression)
+  conditions: external loading apparatus, rat/rabbit/calf
+  species: multiple
+  source_ref: stokes2006
+  uncertainty: read from the reported loading protocol; extrapolation outside this range untested
+- parameter: static compressive strain used in explant suppression experiments
+  value: '10'
+  unit: '%'
+  conditions: 4-week-old swine ulnar growth plate explants, 48 h unconfined compression
+  species: porcine
+  source_ref: sergerie2011
+  uncertainty: single magnitude tested
+- parameter: dynamic loading amplitude that destroyed plate integrity when combined with 1.0 Hz
+  value: 0.2 +/- 0.14
+  unit: MPa
+  conditions: rat caudal vertebrae, 15 days
+  species: rat
+  source_ref: mnard2014
+  uncertainty: n=3; repeated inflammation prevented analysis
 human_evidence: absent
+human_evidence_note: No human physeal strain-magnitude dose-response exists; human physeal strain in vivo
+  has not been measured.
+species_basis:
+- rat
+- rabbit
+- bovine
+- porcine
+translation_risk: high
+translation_risk_reason: Linearity is asserted over a narrow, non-physiological stress window in quadrupeds;
+  explant strains used are far above in vivo values.
+confidence: C
+key_refs:
+- ref_id: stokes2006
+  pmid: '16705695'
+  first_author: Stokes IA
+  year: 2006
+  type: primary
+  one_line_finding: Growth change was apparently linear in stress with a 17.1%/0.1 MPa slope
+- ref_id: sergerie2011
+  pmid: '21337387'
+  first_author: Sergerie K
+  year: 2011
+  type: primary
+  one_line_finding: 10% static compressive strain for 48 h abolished aggrecan and collagen II/X expression
+    in swine explants
+- ref_id: mnard2014
+  pmid: '24902946'
+  first_author: Menard AL
+  year: 2014
+  type: primary
+  one_line_finding: 'Magnitude and frequency interact: raising both together destroyed the plate'
+- ref_id: kaviani2015
+  pmid: '26019113'
+  first_author: Kaviani R
+  year: 2015
+  type: primary
+  one_line_finding: Chondrocyte viability falls with compressive modulation magnitude
+open_questions:
+- g_l6mech_002
+- g_l6mech_006
+layer: L6
+stub: false
 last_verified: '2026-08-05'

@@ -1,7 +1,162 @@
 id: hueter_volkmann_law
 name: Hueter-Volkmann law
 type: hypothesis
+aliases:
+- Hueter-Volkmann principle
+- stress-growth law
+- growth modulation by sustained stress
+summary: 'Stated qualitatively in the 1860s-1870s, the law asserts that sustained compression across a
+  physis slows longitudinal growth and sustained tension accelerates it. Its quantitative form comes from
+  one experimental programme (Stokes, Aronsson and colleagues), which applied calibrated external loading
+  apparatus across caudal vertebral and proximal tibial growth plates in rats, rabbits and calves for
+  8 days and measured growth as the separation of fluorochrome labels given 24 and 48 h before euthanasia.
+  Over roughly -0.2 to +0.1 MPa the stress-growth relation was apparently linear, with a growth-rate sensitivity
+  of 17.1% per 0.1 MPa averaged across all plates (range 9.2-23.9% per 0.1 MPa), 15.0%/0.1 MPa for vertebrae
+  and 18.6%/0.1 MPa for proximal tibia, despite baseline growth rates spanning 30 um/day (rat vertebra)
+  to 366 um/day (rabbit proximal tibia). Cellularly the modulation is not a single mechanism: about half
+  the growth change under sustained compression is accounted for by reduced hypertrophic chondrocyte enlargement
+  and the remainder by fewer proliferative-zone chondrocytes per column, and in multiple regression the
+  hypertrophic enlargement term carries the larger coefficient (1.39 vs 0.72). The response is asymmetric:
+  compression suppresses more than an equal tension accelerates (52% vs 113% of control at ~60% body weight
+  in rat tail vertebrae over 4 weeks). No equivalent sensitivity coefficient has ever been measured in
+  a human physis; every human application - guided growth, vertebral body tethering, the scoliosis vicious
+  cycle - extrapolates the animal coefficient.'
+quantitative:
+- parameter: growth-rate sensitivity to sustained stress, all plates pooled
+  value: '17.1'
+  unit: '% growth change per 0.1 MPa'
+  conditions: 8 days sustained external loading, compression and distraction, fluorochrome-label growth
+    measurement
+  species: multiple
+  source_ref: stokes2006
+  uncertainty: range across plates 9.2-23.9%/0.1 MPa; linear fit, CI not reported
+- parameter: growth-rate sensitivity, caudal vertebral growth plates
+  value: '15.0'
+  unit: '% per 0.1 MPa'
+  conditions: rat and calf caudal vertebrae, 8 days
+  species: multiple
+  source_ref: stokes2006
+  uncertainty: not reported separately
+- parameter: growth-rate sensitivity, proximal tibial growth plates
+  value: '18.6'
+  unit: '% per 0.1 MPa'
+  conditions: rat, rabbit and calf proximal tibia, 8 days
+  species: multiple
+  source_ref: stokes2006
+  uncertainty: not reported separately
+- parameter: baseline (unloaded) longitudinal growth rate range across the species/sites studied
+  value: 30-366
+  unit: um/day
+  conditions: rat caudal vertebra lowest, rabbit proximal tibia highest
+  species: multiple
+  source_ref: stokes2006
+  uncertainty: site means
+- parameter: growth of compressed rat tail vertebra
+  value: '52'
+  unit: '% of contralateral/adjacent control'
+  conditions: 4 weeks sustained compression at nominally 60% body weight
+  species: rat
+  source_ref: stokes2002
+  uncertainty: p=0.002 vs control
+- parameter: growth of distracted rat tail vertebra
+  value: '113'
+  unit: '% of control'
+  conditions: 4 weeks sustained distraction at nominally 60% body weight
+  species: rat
+  source_ref: stokes2002
+  uncertainty: not significantly different from control
+- parameter: hypertrophic chondrocyte height under sustained compression
+  value: '85'
+  unit: '% of control'
+  conditions: rat tail vertebra, 4 weeks
+  species: rat
+  source_ref: stokes2002
+  uncertainty: significant; zone height 87%, increment in cell height 78%
+- parameter: multiple regression coefficient, final hypertrophic cell height -> growth rate
+  value: '1.39'
+  unit: dimensionless (normalised)
+  conditions: pooled rat, rabbit, calf loaded and control plates
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: overall r=0.56 for this variable
+- parameter: multiple regression coefficient, proliferative cell number per unit width -> growth rate
+  value: '0.72'
+  unit: dimensionless (normalised)
+  conditions: pooled rat, rabbit, calf loaded and control plates
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: overall r=0.38 for this variable
+- parameter: maximum growth-rate change achieved across the loading range tested
+  value: '53'
+  unit: '%'
+  conditions: sustained compression or distraction, 8 days
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: not reported
+localization:
+- 'rat caudal vertebral physis: measured (stokes2006)'
+- 'rat proximal tibial physis: measured (stokes2006)'
+- 'rabbit proximal tibial physis: measured (stokes2006)'
+- 'calf caudal vertebral and proximal tibial physis: measured (stokes2006)'
+- 'human physis: no direct stress-growth measurement located'
+human_evidence: indirect
+human_evidence_note: 'Human evidence is entirely inferential: guided growth, epiphysiodesis, vertebral
+  body tethering and the progression of Blount disease and scoliosis behave as the law predicts, but no
+  human study has applied a known stress across a physis and measured the resulting growth rate, so no
+  human sensitivity coefficient exists.'
+species_basis:
+- rat
+- rabbit
+- bovine
+translation_risk: high
+translation_risk_reason: The coefficient is extrapolated to humans from three quadrupedal species at two
+  skeletal sites over 8-28 day loading windows; human physes differ in thickness, baseline growth rate,
+  loading history and duration of exposure, and the human in vivo physeal stress is itself unmeasured.
+confidence: C
+key_refs:
+- ref_id: stokes2006
+  pmid: '16705695'
+  doi: 10.1002/jor.20189
+  first_author: Stokes IA
+  year: 2006
+  type: primary
+  one_line_finding: Growth-rate sensitivity to sustained stress is 17.1%/0.1 MPa on average (9.2-23.9%)
+    and similar across rat, rabbit and calf at two sites
+- ref_id: stokes2002
+  pmid: '12377917'
+  doi: 10.2106/00004623-200210000-00016
+  first_author: Stokes IA
+  year: 2002
+  type: primary
+  one_line_finding: Sustained compression cut rat tail vertebral growth to 52% of control and distraction
+    raised it to 113%, with hypertrophic cell height at 85% of control
+- ref_id: stokes2007
+  pmid: '17532281'
+  doi: 10.1016/j.bone.2007.04.180
+  first_author: Stokes IA
+  year: 2007
+  type: primary
+  one_line_finding: Modulated growth is explained by both proliferative cell number and hypertrophic cell
+    enlargement, the latter with the larger regression coefficient
+- ref_id: villemure2009
+  pmid: '19540500'
+  first_author: Villemure I
+  year: 2009
+  type: review
+  one_line_finding: Consolidates growth plate mechanics and the stress-growth literature into a single
+    survey
+- ref_id: roelen2026
+  pmid: '42299327'
+  first_author: Roelen MCR
+  year: 2026
+  type: review
+  one_line_finding: Contemporary surgical practice explicitly grounds guided growth in the Hueter-Volkmann
+    observation
+open_questions:
+- g_l6mech_001
+- g_l6mech_002
+- g_l6mech_003
+contradicts: []
 layer: L6
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

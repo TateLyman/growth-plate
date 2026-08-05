@@ -1,7 +1,61 @@
 id: testosterone_hormone
 name: Testosterone
+aliases:
+- T
 type: hormone
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Testosterone drives the male pubertal growth spurt, but the fitted human dose-response shows
+  it does so at concentrations at which its aromatised product is also rising. In 26 healthy boys, a 50%
+  increase in growth velocity from prepubertal baseline to peak height velocity occurred at a morning
+  testosterone of 3.1 nmol/L (95% CI 2.4-4.2), and boys within 4% of PHV had testosterone above 10 nmol/L
+  and estradiol above 9 pmol/L (albin2013). Because these two curves are superimposed, human observational
+  data cannot by themselves separate direct androgen action from aromatisation. Where the separation has
+  been attempted, the answer favours aromatisation: in cultured fetal rat metatarsals neither androgen
+  receptor agonists nor antagonists changed longitudinal growth (chagin2009). Clinically, non-aromatisable
+  androgens such as oxandrolone increase growth velocity but with limited effect on adult height, consistent
+  with a mainly aromatisation-dependent mechanism for the spurt itself.'
+quantitative:
+- parameter: EC50 for 50% increase in growth velocity, morning testosterone
+  value: '3.1'
+  unit: nmol/L
+  conditions: 26 healthy boys, 41 24-h testosterone profiles, modified RIA detection limit 0.03 nmol/L
+  species: human
+  source_ref: albin2013
+  uncertainty: 95% CI 2.4-4.2 nmol/L
+- parameter: morning testosterone in boys with <4% of pubertal growth remaining
+  value: '>10'
+  unit: nmol/L
+  conditions: healthy boys approaching peak height velocity
+  species: human
+  source_ref: albin2013
+  uncertainty: threshold, not a fitted parameter
+localization:
+- 'human SYS: Leydig cell -> serum'
+- 'growth plate: androgen receptor present but direct androgen effect on longitudinal growth not demonstrated'
+human_evidence: direct
+human_evidence_note: A fitted human dose-response between 24-h testosterone profiles and individually
+  modelled growth velocity exists; it cannot separate direct from aromatised action.
+species_basis:
+- human
+- rat
+translation_risk: low
+translation_risk_reason: The quantitative relationship is human; the mechanistic separation attempt is
+  rat organ culture.
+confidence: A
+key_refs:
+- ref_id: albin2013
+  first_author: Albin AK
+  year: 2013
+  type: primary
+  one_line_finding: Testosterone EC50 3.1 nmol/L (95% CI 2.4-4.2) for a 50% growth velocity increase in
+    healthy boys.
+  pmid: '23988590'
+- ref_id: chagin2009
+  first_author: Chagin AS
+  year: 2009
+  type: primary
+  one_line_finding: Androgen receptor agonists and antagonists did not change longitudinal growth of cultured
+    fetal rat metatarsals.
+  pmid: '19258714'
 last_verified: '2026-08-05'

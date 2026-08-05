@@ -1,7 +1,50 @@
 id: sox_trio
-name: SOX9/SOX5/SOX6 trio
-type: pathway
+name: SOX trio (SOX9-SOX5-SOX6)
+aliases:
+- Sox trio
+- chondrogenic Sox trio
+type: process
 layer: L3
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The ''SOX trio'' is the functional unit of SOX9 plus the two SoxD proteins SOX5 and SOX6. SOX9 provides
+  the transactivation domain and is required for SOX5 and SOX6 expression (Akiyama 2002, mouse); SOX5 and SOX6 lack
+  transactivation domains and act as potent, mutually redundant enhancers of SOX9-driven matrix gene transcription
+  (Smits 2001, mouse). The trio''s collective output is what defines the chondrocyte: loss of SOX9 removes the lineage,
+  whereas loss of both SoxD factors leaves cells that are still nominal chondroblasts but produce almost no matrix
+  and initiate proliferation only after a long delay. The asymmetry matters for the atlas: SOX9 is the identity switch,
+  SOX5/SOX6 are the gain. The trio also sets metabolic state - SOX9 drives glutamine uptake and GLS1, and the resulting
+  acetyl-CoA is needed for the histone acetylation that keeps chondrogenic genes on (Stegen 2020) - so this is a transcription-metabolism
+  feedforward loop, not a linear regulon. Human data exist for SOX9 only.'
+localization:
+- 'mouse cartilage: co-expression and hierarchy established (akiyama2002, smits2001)'
+- 'human growth plate: SOX9 inferred from campomelic dysplasia; SOX5/SOX6 unconfirmed'
+human_evidence: indirect
+human_evidence_note: Only the SOX9 member has direct human evidence (campomelic dysplasia); the trio as a unit has
+  never been assayed in human tissue.
+species_basis:
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: Hierarchy is mouse-derived; human evidence covers one of the three members.
+confidence: B
+key_refs:
+- ref_id: akiyama2002
+  pmid: '12414734'
+  first_author: Akiyama H
+  year: 2002
+  type: primary
+  one_line_finding: Sox9 acts at successive differentiation steps and is required for Sox5 and Sox6 expression.
+- ref_id: smits2001
+  pmid: '11702786'
+  first_author: Smits P
+  year: 2001
+  type: primary
+  one_line_finding: Sox5 and Sox6 are redundant potent enhancers of chondroblast function.
+- ref_id: stegen2020
+  pmid: '32470321'
+  first_author: Stegen S
+  year: 2020
+  type: primary
+  one_line_finding: SOX9 raises glutamine consumption and GLS1, and the resulting acetyl-CoA maintains chondrogenic
+    histone acetylation.
 last_verified: '2026-08-05'

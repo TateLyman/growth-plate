@@ -1,7 +1,54 @@
 id: igfbp3
 name: IGFBP-3
+aliases:
+- IGFBP3
 type: protein
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'IGFBP-3 carries roughly 75-90% of circulating IGF-1 and is the principal partner, with ALS,
+  in the 150 kDa ternary complex. Its synthesis is GH- and STAT5B-dependent, which is why serum IGFBP-3
+  falls in GH deficiency, GHR deficiency (Laron) and STAT5B deficiency and is used clinically as a GH-dependent
+  analyte. IGFBP-3 is the main substrate through which PAPP-A2 releases IGF-1: in human PAPP-A2 deficiency
+  IGFBP-3 rises to 4403-5912 ug/L against a Tanner I reference of 2206-4200 ug/L while free IGF-1 falls,
+  and size-exclusion chromatography shows the IGF is retained in ternary complex (dauber2016). Human ALS
+  deficiency collapses IGFBP-3 as well, because the ternary complex protects it from clearance (domen2004).
+  This node belongs to the IGF bioavailability control layer - ternary complex formation (IGFBP-3/-5 plus
+  ALS), pericellular proteolysis (PAPP-A, PAPP-A2) and protease inhibition (STC1, STC2) - which sets the
+  free IGF-1 concentration seen by chondrocyte IGF1R independently of total IGF-1. Reviews typically stop
+  at ''IGF-1 level''; the human PAPPA2 kindreds show that total and free IGF-1 can move in opposite directions
+  and that stature tracks the free fraction.'
+quantitative:
+- parameter: serum IGFBP-3 in PAPP-A2 deficiency
+  value: 4403-5912
+  unit: ug/L
+  conditions: homozygous PAPPA2 mutation, Tanner I; laboratory reference 2206-4200 ug/L
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values, n=5 affected
+localization:
+- 'human growth plate: zonal protein localisation not reported'
+human_evidence: direct
+human_evidence_note: Serum IGFBP-3 responds predictably to human GHR, STAT5B, IGFALS and PAPPA2 mutations
+  and to rhGH treatment - direct, repeatedly replicated human biochemistry.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: The load-bearing measurements are human serum biochemistry in genetically defined
+  patients.
+confidence: A
+key_refs:
+- ref_id: dauber2016
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: IGFBP-3 accumulates and traps IGF-1 in ternary complex when PAPP-A2 proteolysis is
+    lost.
+  pmid: '26902202'
+- ref_id: domen2004
+  first_author: Domené HM
+  year: 2004
+  type: primary
+  one_line_finding: IGFALS inactivation collapses circulating IGFBP-3 along with IGF-1.
+  pmid: '14762184'
 last_verified: '2026-08-05'

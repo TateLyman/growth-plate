@@ -1,7 +1,52 @@
 id: rbpj_tf
 name: RBPJ
+aliases:
+- RBP-Jkappa
+- CSL
+- RBPSUH
 type: protein
 layer: L3
-stub: true
+stub: false
+summary: RBPJ is the DNA-binding transcription factor through which all four Notch receptors signal; without NICD
+  it recruits corepressors, with NICD it recruits MAML and activates transcription. Because it is a single obligatory
+  node, Rbpj deletion is the cleanest available Notch-off experiment. Prx1-Cre and Sox9-Cre driven Rbpj deletion in
+  mouse limb mesenchyme/chondroprogenitors impairs the terminal stage of endochondral ossification and raises SOX9
+  (Kohn 2015, Hosaka 2013), while Col2a1-CreERT-driven deletion in adult articular cartilage confers resistance to
+  surgically induced osteoarthritis (Hosaka 2013). Deleting Rbpj in mesenchymal cells produces a rickets-like phenotype
+  in mouse, indicating the requirement extends into mineralisation as well as differentiation (Gao 2022). RBPJ-independent
+  Notch outputs exist in cartilage, so an Rbpj-null phenotype is a lower bound on Notch function, not a complete one.
+  No human RBPJ growth plate data exist; human RBPJ haploinsufficiency causes Adams-Oliver syndrome, which is not
+  primarily a physeal disorder.
+localization:
+- 'mouse chondroprogenitor and growth plate: functionally required (kohn2015, hosaka2013)'
+- 'human growth plate: unconfirmed'
 human_evidence: absent
+human_evidence_note: Human RBPJ variants cause Adams-Oliver syndrome; no human growth plate RBPJ data.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Conditional mouse genetics only; the human RBPJ phenotype is vascular/limb-terminal rather
+  than physeal.
+confidence: C
+key_refs:
+- ref_id: kohn2015
+  pmid: '26558140'
+  first_author: Kohn A
+  year: 2015
+  type: primary
+  one_line_finding: Prx1Cre;Rbpj-null limb phenotype is rescued by Sox9 heterozygosity, placing SOX9 downstream of
+    RBPJ for maturation onset.
+- ref_id: hosaka2013
+  pmid: '23319657'
+  first_author: Hosaka Y
+  year: 2013
+  type: primary
+  one_line_finding: Sox9-Cre Rbpj deletion impairs terminal endochondral ossification; adult deletion protects against
+    osteoarthritis.
+- ref_id: gao2022
+  pmid: '35694720'
+  first_author: Gao Y
+  year: 2022
+  type: primary_abstract_only
+  one_line_finding: Deleting RBP-Jkappa in mesenchymal cells causes rickets-like changes in mouse.
 last_verified: '2026-08-05'

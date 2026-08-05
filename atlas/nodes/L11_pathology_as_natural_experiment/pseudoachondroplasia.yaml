@@ -1,7 +1,83 @@
 id: pseudoachondroplasia
 name: Pseudoachondroplasia
+aliases:
+- PSACH
+- COMP mutation
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Pseudoachondroplasia is the human COMP experiment and a proteostasis rather than a signalling
+  disorder. Heterozygous mutations in cartilage oligomeric matrix protein, overwhelmingly in the
+  type 3 (calcium-binding) repeat domain, produce a misfolded protein that is retained in the
+  chondrocyte endoplasmic reticulum; the disease mechanism is therefore intracellular retention
+  and ER stress, not simple loss of an extracellular structural protein. The largest genotype
+  compilation - 830 patients (471 probands) carrying 224 distinct COMP variants from 106
+  publications - resolves the allelic series: missense variants account for 80.8 percent, exon 13
+  is hit in 38.9 percent of probands and the T3 repeat domain in 87.7 percent, and the single
+  commonest lesion is the in-frame deletion c.1417_1419del (p.Asp473del). Pseudoachondroplasia
+  and multiple epiphyseal dysplasia type 1 are the two ends of one COMP phenotypic continuum, and
+  the compilation separates them statistically: PSACH has significantly earlier onset, shorter
+  stature, more lower-limb deformity and joint laxity, while EDM1 has more joint pain and
+  osteoarthritis; in-frame variants and p.Asp473del specifically are PSACH, whereas missense
+  changes in subdomains T3-4 and T3-5 give EDM1. Birth length is normal - growth failure appears
+  in the second year - which is the auxological fingerprint that distinguishes it from
+  achondroplasia at presentation.
+quantitative:
+- parameter: patients in the COMP genotype-phenotype compilation
+  value: '830'
+  unit: patients
+  conditions: 471 probands, 224 distinct COMP variants, 106 source articles to March 2025
+  species: human
+  source_ref: ni2026
+  uncertainty: n=830
+- parameter: proportion of COMP variants that are missense
+  value: '80.8'
+  unit: percent
+  conditions: same compilation
+  species: human
+  source_ref: ni2026
+  uncertainty: n=224 variants
+- parameter: probands with an exon 13 variant
+  value: '38.9'
+  unit: percent
+  conditions: 183 of 471 probands
+  species: human
+  source_ref: ni2026
+  uncertainty: n=471 probands
+- parameter: probands with a variant in the type 3 repeat domain
+  value: '87.7'
+  unit: percent
+  conditions: 413 of 471 probands
+  species: human
+  source_ref: ni2026
+  uncertainty: n=471 probands
+localization:
+- 'human growth plate chondrocyte: COMP is retained in the rough endoplasmic reticulum; lamellar
+  inclusion bodies in chondrocytes are the classical human histological finding in PSACH'
+human_evidence: direct
+human_evidence_note: 830 genotyped human patients with statistically compared phenotypes across the
+  PSACH-EDM1 continuum.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: ni2026
+  pmid: '41798190'
+  first_author: Ni X
+  year: 2026
+  type: systematic_review
+  one_line_finding: '830 PSACH/EDM1 patients: in-frame COMP variants and p.Asp473del are PSACH-specific;
+    T3-4/T3-5 missense give EDM1.'
+- ref_id: taner2026
+  pmid: '42074581'
+  first_author: Taner HE
+  year: 2026
+  type: primary
+  one_line_finding: Some COMP mutations previously called PSACH give a typical MED1 or intermediate
+    phenotype.
+open_questions:
+- g_l11path_019
 last_verified: '2026-08-05'

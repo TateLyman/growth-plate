@@ -1,7 +1,53 @@
 id: thra_receptor
-name: THRA
+name: Thyroid hormone receptor alpha (THRA / TRalpha)
+aliases:
+- THRA
+- TRalpha1
+- TRalpha2
+- NR1A1
 type: protein
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: THRA encodes TRalpha1 (T3-binding) and TRalpha2 (non-T3-binding, dominant-negative-like), nuclear
+  receptors that heterodimerise with RXR on thyroid hormone response elements and switch from corepressor
+  to coactivator occupancy on T3 binding. TRalpha1 and TRalpha2 protein are present in reserve and proliferating
+  zone chondrocytes of the rat tibial growth plate but are absent from hypertrophic cells (robson2000).
+  In humans, heterozygous dominant-negative THRA variants (resistance to thyroid hormone alpha) cause
+  growth retardation, delayed bone age and disharmonious short stature with low free T4, normal or mildly
+  raised TSH and constipation; the endocrine picture is subtle enough to be mistaken for central hypothyroidism,
+  and these children respond strikingly to rhGH (up to 2.5 SDS height gain in one patient) as well as
+  to levothyroxine (jorge2025). THRA is therefore the isoform whose HUMAN loss produces a skeletal phenotype
+  - which sits awkwardly against mouse chondrocyte data assigning the differentiation response to TRbeta.
+localization:
+- 'rat RZ and PZ: TRalpha1 and TRalpha2 protein confirmed by immunohistochemistry (robson2000)'
+- 'rat HZ: TRalpha protein not detected (robson2000)'
+- 'human growth plate: TRalpha protein not localised'
+human_evidence: direct
+human_evidence_note: Heterozygous dominant-negative THRA variants in unrelated humans produce short stature
+  with delayed bone age, established by exome sequencing plus functional characterisation.
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: moderate
+translation_risk_reason: Human genetics implicate THRA in stature while rodent chondrocyte experiments
+  implicate TRbeta; the isoform assignment does not transfer cleanly between species.
+confidence: A
+key_refs:
+- ref_id: jorge2025
+  first_author: Jorge AAL
+  year: 2025
+  type: primary
+  one_line_finding: Three unrelated children with heterozygous THRA variants had short stature, low free
+    T4 and marked response to levothyroxine plus rhGH.
+  pmid: '38744258'
+- ref_id: robson2000
+  first_author: Robson H
+  year: 2000
+  type: primary
+  one_line_finding: TRalpha1 and TRalpha2 are expressed in reserve and proliferating but not hypertrophic
+    rat growth plate chondrocytes.
+  pmid: '11014246'
+contradicts:
+- thrb_receptor
 last_verified: '2026-08-05'

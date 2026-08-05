@@ -1,4 +1,1636 @@
-# THE UNKNOWN REGISTRY - a first-class deliverable, not a footnote.
-# A gap of type search_established is INADMISSIBLE without a matching entry in
-# search_log.yaml. The validator enforces this.
-gaps: []
+gaps:
+- gap_id: g_l12pharm_001
+  question: Does CNP-analogue therapy begun in childhood increase FINAL ADULT HEIGHT in achondroplasia, or does it redistribute
+    growth in time by accelerating velocity without changing the endpoint?
+  type: search_established
+  layer: L12
+  why_it_matters: Every approved and investigational CNP analogue is licensed on annualised growth velocity, a surrogate.
+    Growth velocity and adult height dissociate whenever an intervention also advances skeletal maturation - this is exactly
+    what happened historically with some growth-promoting therapies, where early velocity gains were partly or wholly cancelled
+    by earlier fusion. If CNP analogues advance bone age proportionally, the lifetime height benefit could be far smaller
+    than the 1.36-1.57 cm/yr velocity signal implies. Cost, treatment duration, and the risk-benefit of dosing infants all
+    hinge on this. It is also the cleanest available human test of whether the growth plate's total elongation capacity is
+    fixed (finite proliferative capacity, L2) or extensible by signalling.
+  what_is_known: Vosoritide raised annualised growth velocity by 1.57 cm/yr (95% CI 1.22-1.93) over 52 weeks in the pivotal
+    phase 3 (n=121). A class meta-analysis of 11 studies (N=542; 4 RCTs, n=326) gives a pooled 1.36 cm/yr (95% CI 1.05-1.68).
+    Reported endpoints across the literature are AGV, height Z-score, standing height and upper-to-lower segment ratio. The
+    pivotal trial's authors state explicitly that whether final adult height increases is not known. Open-label extension
+    studies (NCT03424018, NCT03989947) remain active and are the designed route to this answer.
+  what_is_missing: No published report of achieved final or near-adult height in a cohort treated with any CNP analogue to
+    skeletal maturity, and no published analysis of whether treatment alters the bone-age-to-chronological-age ratio in a
+    way that would erode the velocity benefit.
+  nearest_evidence:
+  - savarirayan2020
+  - kamrulhasan2026
+  - alfaraj2026
+  discriminating_experiment: 'Follow the existing open-label extension cohorts to epiphyseal fusion with near-adult height
+    as the prespecified endpoint, and pair it with serial standardised bone age (single automated reader to remove inter-rater
+    error, see L7) so that height-for-bone-age can be tracked, not just height-for-age. Compare against a genotype-matched
+    untreated natural-history cohort, since a placebo arm to maturity is not ethical once an approved therapy exists. Readouts
+    under competing hypotheses - TRUE HEIGHT GAIN: near-adult height exceeds matched natural history by roughly the cumulative
+    velocity increment, with bone age advancing at the same rate as controls. REDISTRIBUTION ONLY: near-adult height converges
+    on natural history while bone age advances faster than controls during treatment. PARTIAL: height gain is real but materially
+    less than the cumulative AGV integral, quantifying the fraction lost to maturation advance.'
+  tractability: 4
+  search_log_ref: g_l12pharm_001
+- gap_id: g_l12pharm_002
+  question: What concentration of a systemically administered CNP analogue actually reaches growth plate chondrocytes, given
+    that the growth plate is avascular and solutes must diffuse through dense proteoglycan-rich matrix?
+  type: quantitative_gap
+  layer: L12
+  why_it_matters: 'Dose-response, dosing interval, and the design of every next-generation analogue (including once-weekly
+    prodrugs such as navepegritide) rest on an assumed tissue exposure that is inferred from plasma pharmacokinetics. The
+    growth plate''s high fixed charge density and avascularity mean plasma concentration is a poor proxy: charged or large
+    molecules are excluded, and the concentration seen by a resting-zone chondrocyte differs from that seen by a hypertrophic
+    one. Without a measured tissue gradient, the relationship between the plasma PK curve and the biological effect is an
+    assumption.'
+  what_is_known: Plasma PK is well characterised for vosoritide and navepegritide, and dosing regimens (daily versus once-weekly
+    prodrug) are built on it. Weight-band dosing has been derived by population PK modelling. The zonal expression of NPR2
+    is described in animal tissue.
+  what_is_missing: A measured concentration-versus-depth profile for any CNP analogue across the zones of a growth plate,
+    in any species, and hence no empirical basis for whether the effective tissue exposure follows plasma exposure or is diffusion-limited
+    and flattened.
+  nearest_evidence:
+  - savarirayan2020
+  - savarirayan2023
+  discriminating_experiment: Administer a stable-isotope- or fluorophore-labelled CNP analogue to a large-animal model with
+    a growth plate of human-comparable thickness (pig or sheep - rodent plates are too thin for the diffusion question to
+    be meaningful), then measure spatially resolved drug concentration by MALDI imaging mass spectrometry on frozen sections
+    at intervals across a dosing cycle, alongside phospho-VASP or cGMP immunostaining as a pathway-engagement readout by zone.
+    Under diffusion limitation, concentration falls steeply with depth from the vascular front and the resting zone sees a
+    small fraction of plasma levels, predicting that once-weekly high-peak dosing and daily low-peak dosing are NOT equivalent
+    at the target. Under free equilibration, the profile is flat and plasma AUC is an adequate surrogate.
+  tractability: 3
+  search_log_ref: g_l12pharm_002
+- gap_id: g_l13data_001
+  question: Has spatial transcriptomics ever been applied to human growth plate tissue, and if not, what zonal questions remain
+    unanswerable as a direct consequence?
+  type: search_established
+  layer: L13
+  why_it_matters: 'Spatial transcriptomics is the modality that directly answers "which gene is expressed in which zone" without
+    dissociation bias or the antibody-specificity problems that plague cartilage immunohistochemistry. Multiple gaps elsewhere
+    in this atlas - human zonal PDE isoform distribution, zonal receptor expression, the oxygen-responsive transcriptional
+    gradient - are gaps precisely because this measurement has not been made in humans. They are therefore not independent
+    unknowns but a single missing measurement expressed several times, which matters for prioritisation: one dataset would
+    close several gaps at once.'
+  what_is_known: A GEO DataSets census on 2026-08-05 finds 7 records matching growth plate AND spatial, all non-human (mouse-dominated),
+    including GSE288529 (ApoE as a marker of resting zone chondrocytes) and GSE275252 (ADGRG6 in growth plate homeostasis).
+    Human growth plate single-cell data does exist (18 records, including GSE267139 human cartilage development and GSE288028
+    on GH action in the human pubertal growth plate), so human tissue is not wholly unobtainable - it is the spatially resolved
+    modality specifically that is absent.
+  what_is_missing: Any publicly deposited spatially resolved transcriptomic dataset from human growth plate tissue, at any
+    age or anatomical site.
+  nearest_evidence:
+  - geo_census_20260805
+  - gse267139
+  - gse288028
+  discriminating_experiment: 'Apply a spatial platform tolerant of dense mineralising matrix and low RNA integrity - Visium
+    HD or Xenium on decalcified FFPE, with an RNA-quality pre-screen - to human physeal tissue obtained as surgical discard
+    from epiphysiodesis or limb realignment, sampling at least three anatomical sites and three age bands spanning pre- and
+    peri-pubertal. Readout: zone-resolved expression profiles registered to histological zone boundaries. Primary test: whether
+    human zonal marker distributions recapitulate the mouse pattern (validating the ~6.5:1 murine literature this atlas leans
+    on) or diverge (invalidating a large body of transferred claims). Either result is decisive, which is what makes this
+    the single highest-value experiment identified in this layer. The binding constraint is tissue access and RNA degradation
+    in decalcified bone, not platform availability.'
+  tractability: 3
+  search_log_ref: g_l13data_001
+- gap_id: g_l13data_002
+  question: What fraction of published growth plate mechanism rests on mouse data, and is that fraction acknowledged in the
+    sources that transfer it to humans?
+  type: quantitative_gap
+  layer: L13
+  why_it_matters: 'This atlas assigns a translation_risk grade to every node. Those grades are currently reasoned case by
+    case. A measured, field-wide species-composition figure would let translation risk be calibrated rather than asserted,
+    and would quantify how much of "what is known about human growth" is in fact known about mouse growth. It also bears directly
+    on L7: mice do not undergo epiphyseal fusion, so any fusion mechanism inherited from mouse work carries a structural,
+    not merely statistical, transfer risk.'
+  what_is_known: The GEO census gives a data-deposition ratio of roughly 6.5 mouse records per human record for growth plate
+    (919 vs 141), rising to a complete absence of human records in the spatial modality (0 of 7). This measures deposited
+    datasets, which is a proxy for, not a measurement of, the mechanistic literature.
+  what_is_missing: A systematic audit of the growth plate mechanistic literature classifying each primary mechanistic claim
+    by the species it was demonstrated in, and recording whether the citing review states that species. No such audit was
+    located.
+  nearest_evidence:
+  - geo_census_20260805
+  discriminating_experiment: 'Sample ~300 mechanistic claims at random from the reference lists of the ten most-cited growth
+    plate reviews of the last decade, trace each to its primary source, and record (a) the species of the primary experiment
+    and (b) whether the citing review states that species within the same sentence or the adjacent one. Readout: the proportion
+    of mouse-derived claims presented without species attribution. If that proportion is low, the field self-polices and transferred
+    claims can be trusted at moderate confidence; if it is high, every review-sourced claim in this atlas needs its species
+    re-derived from the primary, and the atlas''s X-grade population is larger than currently recorded.'
+  tractability: 4
+  search_log_ref: g_l13data_002
+- gap_id: g_l1arch_001
+  question: In a human growth plate, what fraction of daily longitudinal elongation is contributed by (a) chondrocyte division,
+    (b) matrix synthesis, and (c) hypertrophic cell volume increase, and does the partition differ between the distal femur
+    and a slow plate such as the proximal radius?
+  type: quantitative_gap
+  layer: L1
+  why_it_matters: The 9% / 32% / 59% partition that the whole field quotes comes from a single stereological study of four
+    growth plates in 28-day-old Long-Evans rats. Every therapeutic argument that targets hypertrophy rather than proliferation
+    (CNP analogues, FGFR3 inhibitors, GH) rests on the assumption that this partition transfers to humans. The rat proximal
+    tibia elongates at ~350-400 um/day; the human distal femur at ~38 um/day. A ten-fold difference in velocity with a twenty-fold
+    longer proliferative cell cycle makes the transfer non-obvious.
+  what_is_known: Wilsman et al. 1996 measured, in 28-day rat, proximal tibia 9% division / 32% matrix / 59% hypertrophy, with
+    hypertrophy falling to 44% and matrix rising to 49% in the slow proximal radius (wilsman1996). Hunziker & Schenk 1989
+    independently concluded in rat that matrix production per cell is essentially invariant across growth rates and that cell-shape
+    modulation dominates (hunziker1989). Breur et al. 1991 showed final hypertrophic volume correlates with growth rate at
+    r=0.98 in rat and r=0.83 in pig, with a species-specific slope (breur1991). Human histomorphometry exists (byers2000,
+    thurston1985, kember1976) but none of it partitions elongation.
+  what_is_missing: No human study has combined (i) a measured in vivo elongation rate for the same specimen, (ii) stereological
+    chondrocyte production rate, and (iii) final hypertrophic cell volume — the three quantities needed to close the budget
+    equation. Human physes cannot be fluorochrome-labelled in vivo for research.
+  nearest_evidence:
+  - wilsman1996
+  - hunziker1989
+  - breur1991
+  - byers2000
+  nearest_evidence_note: Rat (wilsman1996, hunziker1989, hunziker1987), pig (breur1991, thurston1985 places porcine kinetics
+    between human and rodent), mouse (cooper2013).
+  discriminating_experiment: Obtain human physeal specimens at the time of elective epiphysiodesis or limb-lengthening osteotomy
+    from patients who have received a tetracycline or calcein double label for an unrelated clinical indication (or a research-consented
+    single tetracycline label), giving a directly measured elongation rate for that plate. Apply the Wilsman/Hunziker stereological
+    estimators (chondrocyte production rate from column height and cell height; final hypertrophic volume by the disector)
+    to the same block. If the human partition matches the rat (hypertrophy ~59%), the rodent-derived therapeutic logic transfers.
+    If matrix synthesis dominates (>50%, as in the slow rat proximal radius), then agents acting on hypertrophic volume should
+    have proportionally smaller effects in humans than in mouse models — which would predict the observed shortfall between
+    mouse and human responses to CNP analogues.
+  tractability: 3
+  search_log_ref: g_l1arch_001
+- gap_id: g_l1arch_002
+  question: What is the true cell cycle time of human proliferative-zone chondrocytes, and is the ~20-day figure inferred
+    by Kember and Sissons correct?
+  type: species_gap
+  layer: L1
+  why_it_matters: Kember and Sissons calculated ~20 days for the human distal femur from column cell counts plus a radiographic
+    growth rate; Wilsman et al. measured 30.9 h directly in the rat proximal tibia by repeated BrdU pulses. That is a ~16-fold
+    difference. If real, it means the human growth plate is a slow, low-turnover tissue and rodent proliferation-targeted
+    pharmacology and rodent toxicology windows do not scale.
+  what_is_known: 'Human: 24 cells per proliferative column and a derived mean cycle time of ~20 days in distal femur (kember1976);
+    labelling index and PZ cell numbers reported in vitro for human plates by thurston1985, which also places pig kinetics
+    between human and rodent. Rat: total cycle 30.9 h (proximal tibia) to 76.3 h (proximal radius), with S 3.4-6.1 h, G2 3.0
+    h, M 0.5-0.6 h and nearly all variation in G1 (wilsman1996a).'
+  what_is_missing: 'A direct measurement in human tissue. The Kember figure is a derived quantity, not an observation: it
+    assumes steady state, a fixed column length, and that every PZ cell cycles. The systematic review avijgan2026 shows the
+    analogous assumption of resting-zone quiescence is itself unsafe.'
+  nearest_evidence:
+  - kember1976
+  - thurston1985
+  - wilsman1996a
+  nearest_evidence_note: thurston1985 (human explants labelled in vitro with tritiated thymidine; no labelled cells found
+    in 2 of 4 human subjects), kember1976 (derived), wilsman1996a (rat, direct).
+  discriminating_experiment: Label surgically obtained human physeal cartilage explants (epiphysiodesis or hemiepiphysiodesis
+    waste tissue) with EdU under near-physiological oxygen (2-5% O2) and matrix-preserving culture, then fix at a graded series
+    of times (6 h to 14 d) and fit the percent-labelled-mitoses or cumulative-labelling curve. A cumulative labelling index
+    that saturates within 2-3 days would falsify the 20-day estimate and indicate that the human plate simply has a smaller
+    growth fraction; saturation only after >2 weeks would confirm a genuinely long human cycle.
+  tractability: 3
+  search_log_ref: g_l1arch_012
+- gap_id: g_l1arch_003
+  question: Do septoclasts — FABP5+/cathepsin-B-rich, mesenchyme-derived, non-osteoclastic cells that resorb the longitudinal
+    cartilage septa — exist in the human growth plate?
+  type: search_established
+  layer: L1
+  why_it_matters: Septoclasts, not osteoclasts, are the proposed executors of longitudinal septum removal at the chondro-osseous
+    junction in rodents, and they require endothelial Dll4-Notch signalling. If they exist in humans they are a druggable
+    node controlling the rate at which the plate is consumed; if the human junction uses osteoclasts/chondroclasts instead,
+    then anti-resorptive drugs given to children would act on the growth plate through a completely different route than rodent
+    data imply.
+  what_is_known: Septoclasts were defined in rat as cathepsin B-rich cells at the chondro-osseous junction (lee1995); they
+    are FABP5+, mesenchymal in origin, Dll4-dependent, disappear in adult mice and reappear in fracture callus (sivaraj2022);
+    their origin has been traced to pericytes/perichondrium in mouse (bando2018, bando2021).
+  what_is_missing: Not one primary study reports septoclasts, FABP5+ chondro-osseous border cells, or an equivalent population
+    in human physeal tissue. Every primary observation in the literature is mouse, rat, or bovine.
+  nearest_evidence:
+  - lee1995
+  - sivaraj2022
+  - walzer2014
+  nearest_evidence_note: Rodent only (lee1995, sivaraj2022, bando2018, bando2021, yamamoto2022); the closest human tissue
+    study of the chondro-osseous region (walzer2014) stained for CD34/CD31/RANK but not for any septoclast marker.
+  discriminating_experiment: Immunostain human physeal specimens (polydactyly digits, epiphysiodesis waste, or paediatric
+    autopsy rib) for FABP5, cathepsin B, PDGFRb and NG2 together with CD68/vATPase and endomucin. If mononuclear, spindle-shaped
+    FABP5+/CD68- cells sit at the chondro-osseous border in contact with capillary buds, human septoclasts exist and rodent
+    Dll4 pharmacology is relevant. If only multinucleated CD68+/vATPase+ cells are present at the septa, the human junction
+    is osteoclast-driven and septoclast biology does not transfer.
+  tractability: 4
+  search_log_ref: g_l1arch_003
+- gap_id: g_l1arch_004
+  question: Are chondrocyte columns actually required for longitudinal elongation, given that they are rare in the embryonic
+    growth plate at the time elongation is fastest?
+  type: contradiction
+  layer: L1
+  why_it_matters: Column architecture is the canonical explanation for how hypertrophic volume increase is channelled into
+    the longitudinal axis. If bones elongate fastest at a stage when fewer than one in five clonal doublets is correctly stacked,
+    the causal role of columns — and the interpretation of every chondrodysplasia described as a 'column disorganisation'
+    phenotype — needs revision.
+  what_is_known: Rubin et al. 2024 analysed 1044 distal-femur and 805 proximal-tibia clonal doublets in E18.5 mouse by 3D
+    Confetti imaging and found only 17.6% and 19.4% respectively were stacked at elevation angles of 60-90 degrees; most clones
+    were ellipsoidal clusters oriented orthogonal to the growth axis (rubin2024). Postnatally (P40) complete rotations rose
+    to ~36-40% within columns, and perfect (80-90 degree) rotations were still under 10%. In parallel, the classical literature
+    (aszodi2003, romereim2014, greer2024, yuan2023) treats column formation as necessary, and mutants that fail to form columns
+    are short.
+  what_is_missing: A direct test of whether elongation rate depends on columnar order at fixed hypertrophic cell volume. Existing
+    column mutants also perturb cell shape, matrix and proliferation, so shortening cannot be attributed to loss of stacking
+    alone.
+  nearest_evidence:
+  - rubin2024
+  - aszodi2003
+  - romereim2014
+  nearest_evidence_note: rubin2024 (mouse, 3D clonal); romereim2014 and aszodi2003 (mouse, rotation mechanism); reno2025 (metatarsals
+    and pisiform grow from a single plate, showing plate architecture is not stereotyped).
+  discriminating_experiment: In an allelic series that graduates column disorder without changing chondrocyte volume (for
+    example titrated chondrocyte-specific Itgb1 or Cdh2 alleles), measure by 3D imaging both the fraction of correctly stacked
+    doublets and the final hypertrophic cell volume, and measure elongation by calcein double labelling. If elongation rate
+    scales with hypertrophic volume and is insensitive to stacking fraction over a 20-60% range, columns are a lateral-confinement
+    convenience rather than the elongation engine. If elongation falls with stacking fraction at matched cell volume, columns
+    are causal.
+  tractability: 3
+- gap_id: g_l1arch_005
+  question: Is longitudinal bone growth genuinely saltatory — alternating true-zero-velocity stasis with discrete elongation
+    bursts — or continuous with measurement noise, at the level of the growth plate itself?
+  type: contradiction
+  layer: L1
+  why_it_matters: Saltation implies a switch that can arrest and restart the entire chondrocyte differentiation cascade synchronously
+    across all plates within a day. No such switch is known, and its existence would reframe growth-hormone pharmacodynamics,
+    catch-up growth and the interpretation of any short-interval auxological endpoint (including knemometry endpoints used
+    in inhaled-corticosteroid safety trials).
+  what_is_known: Lampl et al. 1992 reported 0.5-2.5 cm saltations in infant length separated by 2-63 day stasis intervals,
+    with 90-95% of days growth-free (lampl1992). Klein et al. 1994 measured rabbit proximal tibial elongation directly, with
+    ~15-fold better precision than human anthropometry, and found a single Gaussian distribution of daily velocities — continuous,
+    not bimodal (klein1994). Heinrichs et al. 1995 published a further critique (heinrichs1995). Johnson et al. 1996 showed
+    by simulation that frequency-distribution shape cannot exclude saltation (johnson1996). Hermanussen 1998 reported chaotic
+    mini growth spurts in rat rather than true stasis (hermanussen1998). McBrien et al. 2011 reported that canine proximal
+    tibial growth follows saltation and stasis (mcbrien2011). Noonan et al. 2004 showed with implanted microtransducers that
+    at least 90% of lamb tibial elongation happens during recumbency, giving a real, mechanically gated discontinuity on a
+    diurnal timescale (noonan2004).
+  what_is_missing: A measurement in the same species and with the same instrument that can distinguish (i) diurnal load-gated
+    discontinuity, which is established, from (ii) multi-day stasis with a true zero, which is contested. The two camps have
+    never measured the same preparation.
+  nearest_evidence:
+  - lampl1992
+  - klein1994
+  - noonan2004
+  - mcbrien2011
+  nearest_evidence_note: klein1994 (rabbit, continuous), noonan2004 (lamb, load-gated diurnal), lampl1992 and mcbrien2011
+    (saltatory), hermanussen1998 (chaotic mini-spurts).
+  discriminating_experiment: Implant the Noonan/Wilsman microtransducer across a lamb or rabbit proximal tibial physis and
+    record continuously for 30 days while simultaneously (a) logging posture and (b) delivering weekly fluorochrome labels.
+    Analyse velocity after regressing out posture. If posture-corrected velocity still contains multi-day intervals with velocity
+    indistinguishable from zero and a bimodal distribution, saltation is real at the tissue level; if the posture-corrected
+    residual is unimodal Gaussian, saltation is a compound of load gating and anthropometric measurement error.
+  tractability: 4
+  search_log_ref: g_l1arch_006
+- gap_id: g_l1arch_006
+  question: Has human physeal elongation ever been measured directly at sub-weekly resolution, rather than inferred from total
+    limb or stature anthropometry?
+  type: search_established
+  layer: L1
+  why_it_matters: Every claim about the temporal pattern of human growth — saltation, mini-spurts, nocturnal growth, acute
+    drug effects in knemometry trials — rests on external measurements whose technical error exceeds the mean daily increment.
+    Without a direct physeal measurement the whole temporal-pattern literature is unfalsifiable in humans.
+  what_is_known: Direct implanted-marker or transducer measurement of physeal elongation has been done in lamb (noonan2004),
+    rabbit (klein1994) and dog (mcbrien2011). In humans only surface anthropometry and knemometry exist. Radiographic marker
+    methods (Pritchett's roentgenstereophotogrammetric analysis, pritchett1992) resolve months, not days.
+  what_is_missing: No human study with implanted physeal markers or equivalent, at daily resolution. Implanting markers across
+    a healthy child's physis is not ethically available; the only plausible route is opportunistic — children who already
+    have transphyseal hardware or external fixators.
+  nearest_evidence:
+  - pritchett1992
+  - klein1994
+  - noonan2004
+  nearest_evidence_note: pritchett1992 and pritchett1991 (human, 6-month radiographic intervals), knemometry literature (external,
+    lower-leg length), klein1994 and noonan2004 (animal, direct).
+  discriminating_experiment: 'In children already undergoing guided-growth or limb-lengthening with radiopaque implants spanning
+    the physis, acquire low-dose biplanar radiographs at 48-hour intervals for 4 weeks and compute physeal separation by radiostereometric
+    analysis (precision ~50 um). Compare the frequency distribution of interval velocities against the Gaussian and bimodal
+    predictions. Expected under continuous growth: unimodal distribution centred on ~40 um/day for the distal femur; under
+    saltation: a mode at zero plus a high-velocity mode.'
+  tractability: 2
+  search_log_ref: g_l1arch_006
+- gap_id: g_l1arch_007
+  question: What is the absolute oxygen tension, in mmHg, at each zone of the human growth plate?
+  type: quantitative_gap
+  layer: L1
+  why_it_matters: The entire HIF-1alpha/VEGF axis in cartilage, the interpretation of chondrocyte metabolism, the design of
+    ex vivo human physeal culture (routinely done at 21% O2), and the newly described chondrocyte haemoglobin body all depend
+    on knowing how hypoxic the human plate actually is. Human physes are thicker than rodent ones, so diffusion distances
+    — and therefore the gradient — are not transferable.
+  what_is_known: Brighton and Heppenstall 1971 measured oxygen tension across the epiphyseal plate, metaphysis and diaphysis
+    in rat and rabbit (brighton1971); this is the source of essentially every 'the growth plate is hypoxic' statement in the
+    field. HIF-1alpha is required for survival of the plate interior in mouse (schipani2001) and VEGFA for chondrocyte survival
+    (zelzer2004). Mouse chondrocytes form haemoglobin bodies with a left-shifted P50 of 27.6-27.9 mmHg versus 58.2 mmHg for
+    red cells of the same animals (zhang2023_2).
+  what_is_missing: No measurement in human tissue, and the Brighton values themselves are not retrievable from any indexed
+    abstract (see access_queue). Modelling from diffusion distance requires human-specific plate height and consumption rate,
+    neither of which is established.
+  nearest_evidence:
+  - brighton1971
+  - zhang2023_2
+  - schipani2001
+  nearest_evidence_note: brighton1971 (rat, rabbit), zhang2023_2 (mouse, indirect via haemoglobin P50), schipani2001 and zelzer2004
+    (mouse, genetic).
+  discriminating_experiment: Insert a fibre-optic or Clark-type microelectrode along the epiphysis-to-metaphysis axis of a
+    freshly resected human physeal block (polydactyly digit or epiphysiodesis specimen) held at 37 C under a defined surface
+    gas tension, and record the profile at 100 um steps. Alternatively, administer pimonidazole to a patient before an elective
+    physeal procedure and quantify adduct staining by zone. If the resting/inner proliferative zone is below 10 mmHg, human
+    physeal explants cultured at 21% O2 are hyperoxic by a factor of 15 and all such data need reinterpretation.
+  tractability: 3
+  search_log_ref: g_l1arch_007
+- gap_id: g_l1arch_008
+  question: Do human hypertrophic chondrocytes enlarge by the same three-phase trajectory (true hypertrophy, then dry-mass-diluting
+    swelling, then proportional growth at low density) described in mouse?
+  type: search_established
+  layer: L1
+  why_it_matters: The three-phase model localises the growth-rate-determining step to phase 3, which is IGF-dependent. If
+    human cells lack phase 3 or spend their volume budget differently, IGF-1 based therapies and the interpretation of IGF1/IGF1R
+    mutations in short stature target a step that does not exist as described.
+  what_is_known: 'In mouse, proximal tibial chondrocytes go from ~600 fl to ~14,000 fl in three phases: phase 1 ~600-2000
+    fl at constant density 0.183 pg/fl; phase 2 ~2000-8000 fl with density diluted to ~0.07 pg/fl (a ~60% fall confirmed tomographically);
+    phase 3 >8000 fl to ~14,000 fl at the low density. The slow proximal radius stops at ~5000 fl and omits phase 3; jerboa
+    metatarsal extends phase 3 to ~23,000 fl; Igf1-null cells stop at ~7000 fl (cooper2013).'
+  what_is_missing: No quantitative phase or interferometric measurement of dry mass density in human growth plate chondrocytes
+    at any volume. Searches for human chondrocyte dry mass or cell-volume trajectories return nothing.
+  nearest_evidence:
+  - cooper2013
+  - thurston1985
+  nearest_evidence_note: cooper2013 (mouse, jerboa); human hypertrophic cell heights reported only as static histology (thurston1985).
+  discriminating_experiment: Dissociate chondrocytes from freshly obtained human physeal cartilage (polydactyly or epiphysiodesis
+    waste) and measure single-cell volume and dry mass by quantitative phase microscopy across the full size range. Plot dry
+    mass density against volume. If a swelling phase with density falling to ~0.07-0.10 pg/fl is present, the mouse model
+    transfers; a monotonic constant-density relationship would mean human chondrocytes achieve their final volume by true
+    hypertrophy alone and that osmotic/aquaporin-directed strategies are misdirected in humans.
+  tractability: 3
+  search_log_ref: g_l1arch_008
+- gap_id: g_l1arch_009
+  question: What is the final volume and height of the terminal hypertrophic chondrocyte in human growth plates, per anatomical
+    site and per age?
+  type: quantitative_gap
+  layer: L1
+  why_it_matters: Final hypertrophic volume is the single strongest correlate of elongation rate in every mammal in which
+    it has been measured, and it is the parameter that CNP analogues and FGFR3 inhibitors are believed to act on. It has never
+    been reported for a human plate with a stated site, age and elongation rate.
+  what_is_known: 'Rat and pig: final hypertrophic volume correlates with growth rate at r=0.98 and r=0.83 respectively, with
+    a species-specific slope (breur1991). Mouse: 14,000 fl in fast proximal tibia versus ~5000 fl in slow proximal radius
+    (cooper2013). Bird plates break the mammalian relationship entirely (barreto1994). Human hypertrophic cell heights were
+    measured by Thurston and Kember but the values are behind a paywall (thurston1985).'
+  what_is_missing: Human volumes obtained with unbiased stereology (the disector or nucleator) in well-fixed, non-decalcified
+    tissue, paired with site and age. Ordinary decalcified paraffin histology shrinks hypertrophic lacunae unpredictably and
+    cannot give a volume.
+  nearest_evidence:
+  - breur1991
+  - cooper2013
+  - thurston1985
+  nearest_evidence_note: breur1991, cooper2013 (rodent); thurston1985 and byers2000 (human, heights/zone dimensions only).
+  discriminating_experiment: Apply Hunziker's high-pressure-freezing/ruthenium-hexammine fixation and the physical disector
+    to human physeal blocks from at least three sites (distal femur, proximal tibia, distal radius) and two age bands, reporting
+    mean final hypertrophic volume with CI. Test whether human values fall on the mammalian volume-versus-growth-rate regression
+    when human site-specific elongation rates from pritchett1992 and pritchett1991 are used as the abscissa. A large negative
+    residual would show that humans achieve their (slow) growth rates by a different mixture of parameters than rodents.
+  tractability: 3
+- gap_id: g_l1arch_010
+  question: What local signal sets the site-specific hypertrophic volume set point that makes the distal femur elongate faster
+    than the proximal femur in the same individual at the same time?
+  type: known_unknown
+  layer: L1
+  why_it_matters: Differential growth is the reason limb proportions exist and the reason a systemic hormone produces non-uniform
+    skeletal effects. Any systemic therapy for short stature is filtered through this local set point, which is why growth-promoting
+    agents change proportions rather than scaling the skeleton uniformly.
+  what_is_known: Eight independent chondrocytic variables differ between plates in the same rat, seven of which vary by site
+    (wilsman1996). Cell cycle differences are almost entirely in G1 (wilsman1996a). Differential growth is not present at
+    birth in rat but emerges postnatally (wilsman2008). In mouse the site difference maps onto whether phase 3 of hypertrophy
+    is executed or truncated, and phase 3 is IGF-dependent (cooper2013). Positional Hox identity is the obvious upstream candidate
+    but has not been connected quantitatively to the volume set point.
+  what_is_missing: A causal chain from positional identity to a measurable change in the phase-3 duration or the volume set
+    point. No experiment has transplanted or reprogrammed positional identity and then measured hypertrophic volume.
+  nearest_evidence:
+  - wilsman1996
+  - cooper2013
+  - wilsman2008
+  nearest_evidence_note: wilsman1996, wilsman2008, cooper2013, reno2025 (metatarsal/pisiform plates show that positional information
+    can even determine which end of a bone carries a plate).
+  discriminating_experiment: Heterotopically graft a slow-growing plate (proximal radius) into the fast-growing site (proximal
+    tibia) with its perichondrium intact and, separately, without it; after 10 days measure final hypertrophic volume by stereology
+    and elongation by calcein labelling. If the graft keeps its donor volume set point, the set point is cell-autonomous positional
+    memory; if it adopts the host value, it is set by the local niche, and the perichondrium-stripped arm identifies whether
+    the groove of Ranvier/perichondrium carries the signal.
+  tractability: 3
+- gap_id: g_l1arch_011
+  question: How much longitudinal growth, in mm per year, does each individual vertebral growth plate contribute in humans,
+    and how does that vary along the T1-S1 segment and with age?
+  type: quantitative_gap
+  layer: L1
+  why_it_matters: The human vertebral column carries more than 130 growth plates and contributes roughly a third of standing
+    height, yet the entire growth-modulation field (vertebral body tethering, growing rods, scoliosis natural history) works
+    from segment-level radiographic measurements rather than per-plate growth rates. Without per-plate rates it is impossible
+    to predict how a tether at one level redistributes growth.
+  what_is_known: Human spinal growth is non-linear with three postnatal phases and the column contains more than 130 growth
+    plates (dimeglio2020). Vertebral endplate growth modulation follows a biphasic response to tether tension in porcine models.
+    Appendicular per-plate contributions are well established (pritchett1992, pritchett1991) but no equivalent exists for
+    the spine.
+  what_is_missing: Per-plate (superior versus inferior endplate, per level) growth rates in humans. Segment lengths measured
+    radiographically conflate disc height change with physeal growth.
+  nearest_evidence:
+  - dimeglio2020
+  - pritchett1992
+  nearest_evidence_note: dimeglio2020 (human, segment level); porcine vertebral tethering studies (site-level, not per-plate).
+  discriminating_experiment: 'Use serial low-dose biplanar (EOS) imaging in a cohort of children imaged for non-spinal indications
+    to measure ossified vertebral body height per level at 6-month intervals from age 5 to maturity, separating disc from
+    bone by MRI in a subset. Report mm/yr per level and per endplate. Prediction under the classical model: cranial thoracic
+    levels grow fastest per level in early childhood, with a lumbar-dominant pattern at puberty; a flat profile would falsify
+    the assumption underlying level-selective tethering.'
+  tractability: 4
+- gap_id: g_l1arch_012
+  question: Has the cell-cycle structure (G1, S, G2, M durations and growth fraction) of human proliferative-zone chondrocytes
+    ever been measured in vivo or in freshly explanted human tissue?
+  type: search_established
+  layer: L1
+  why_it_matters: A drug that arrests chondrocytes in G1 would be far more dangerous in a tissue whose G1 occupies 90% of
+    a 30-hour cycle than in one whose cells cycle every 20 days. The paediatric safety inference from rodent proliferation
+    data depends on knowing the human cycle structure.
+  what_is_known: 'Rat: full cycle decomposition by repeated BrdU pulses (wilsman1996a, farnum1993). Human: only a derived
+    cycle time from column cell counts (kember1976) and an in vitro tritiated-thymidine labelling index in four subjects,
+    two of whom yielded no labelled cells at all (thurston1985).'
+  what_is_missing: No human study reports G1, S, G2 or M durations, and none reports a growth fraction for the human proliferative
+    zone. A PubMed search combining cell-cycle/labelling terms with growth plate and the humans MeSH filter returns no primary
+    human cell-cycle measurement.
+  nearest_evidence:
+  - thurston1985
+  - kember1976
+  - wilsman1996a
+  nearest_evidence_note: thurston1985 (human, labelling index only, abstract-level), kember1976 (human, derived), wilsman1996a
+    (rat, complete).
+  discriminating_experiment: Perform double-labelling (EdU then BrdU at a defined interval) on freshly harvested human physeal
+    explants maintained under matrix-preserving, 2-5% O2 conditions, and estimate S-phase duration from the relative-movement
+    method and total cycle time from cumulative labelling. Report the growth fraction separately by zone. A short S with a
+    very small growth fraction would indicate the 20-day 'cycle time' is really a long average dwell time in a mostly non-cycling
+    pool, which is a different biology from a slow cycle.
+  tractability: 3
+  search_log_ref: g_l1arch_012
+- gap_id: g_l1arch_013
+  question: How much of the latitudinal (circumferential) enlargement of a human growth plate is contributed by the groove
+    of Ranvier, and does the groove also supply chondrocytes to the columnar population?
+  type: known_unknown
+  layer: L1
+  why_it_matters: If the groove supplies the plate with progenitors, it is an alternative stem source to the PTHrP+ resting
+    zone and a target for restoring growth after physeal injury; iatrogenic damage to the groove during surgery is a recognised
+    cause of angular deformity, but the quantitative contribution has never been established.
+  what_is_known: The groove is a wedge of densely cellular tissue continuous with the perichondrium (shapiro1977, rabbit)
+    and is present in developing human calcaneus and talus (cheng1995). It harbours CD90+/CD105+ mesenchymal progenitors and
+    mature alpha-SMA-covered vessels in human digits (walzer2014). Its disorganisation causes hyperostosis in piglets, and
+    its damage is linked to angular deformity and osteochondroma (langenskild1998). Postnatal mouse plates show clusters restricted
+    to the outer edges, consistent with a peripherally driven expansion mechanism (rubin2024).
+  what_is_missing: No lineage tracing from a groove-specific marker into the columnar chondrocyte population, and no quantitative
+    estimate of the fraction of plate diameter increase attributable to the groove versus interstitial appositional growth.
+    In humans nothing beyond descriptive histology exists.
+  nearest_evidence:
+  - shapiro1977
+  - walzer2014
+  - cheng1995
+  nearest_evidence_note: shapiro1977 (rabbit), cheng1995 and walzer2014 (human, descriptive), rubin2024 (mouse, peripheral
+    clusters).
+  discriminating_experiment: Identify a groove-of-Ranvier-restricted driver in mouse (candidates from Gli1+ or periosteal
+    PDGFRa+ perichondrial populations) and perform inducible lineage tracing at P7, scoring at P28 (i) the fraction of labelled
+    cells inside columns versus at the plate margin and (ii) plate diameter. In parallel, microsurgically excise the groove
+    unilaterally and measure the change in plate diameter growth rate versus elongation rate. If diameter growth falls while
+    elongation is preserved, the groove is a dedicated latitudinal-growth organ and not a column progenitor source.
+  tractability: 3
+- gap_id: g_l1arch_014
+  question: Can chondrocyte kinetics be measured non-invasively in a living human growth plate?
+  type: method_blocked
+  layer: L1
+  why_it_matters: Every human number in this layer is either post-mortem, surgical waste, or derived from external anthropometry.
+    Without an in vivo readout there is no way to relate a drug's effect on stature to its effect on the tissue, and no way
+    to detect a plate-level response before months of height data accumulate.
+  what_is_known: Human physeal architecture can be resolved by MRI and the plate can be seen to close, and radiographic marker
+    methods give month-scale elongation (pritchett1992). Growth plate height and width correlate with tibial growth rate in
+    both mouse and human radiographs (wilson2021). Nothing images cell turnover.
+  what_is_missing: An in vivo readout of proliferation, hypertrophic volume, or matrix turnover in human physeal cartilage.
+    Sodium and gagCEST MRI measure matrix proteoglycan but have not been validated against physeal kinetics; no PET tracer
+    targets chondrocyte proliferation with sufficient resolution against adjacent bone uptake.
+  nearest_evidence:
+  - pritchett1992
+  - wilson2021
+  nearest_evidence_note: wilson2021 (human radiographic morphometry), MRI physeal imaging literature, circulating markers
+    such as collagen X neoepitope and miRNA panels proposed but not anchored to a plate-level measurement.
+  discriminating_experiment: 'Validate a candidate readout against ground truth in a large-animal model: in growing lambs
+    with implanted microtransducers measuring elongation continuously, acquire serial ultra-high-field sodium/gagCEST MRI
+    and matched serum collagen X neoepitope, then terminally measure hypertrophic cell volume stereologically. A readout that
+    tracks measured elongation with r>0.8 across a manipulated range of growth rates (for example dexamethasone-suppressed
+    versus control) is a candidate for human translation; anything weaker means human plate-level pharmacodynamics remain
+    inaccessible.'
+  tractability: 2
+- gap_id: g_l2stem_001
+  question: Which cell in the human growth plate resting zone, if any, self-renews and clonally generates chondrocyte columns
+    over years, and does it express PTHLH?
+  type: method_blocked
+  layer: L2
+  why_it_matters: Every functional statement in this layer - clonality, self-renewal, column founding, lifespan - comes from
+    tamoxifen-inducible Cre lineage tracing in mice. The entire resting-zone-stem-cell edifice on which growth-plate exhaustion
+    and fusion models rest is therefore unvalidated in the species the atlas is about, and the one human study that addresses
+    it reports that the most stem-like human resting cells are PTHLH-negative, contradicting the dominant mouse marker.
+  what_is_known: Mouse PTHrP-creER-labelled resting chondrocytes form clonal columns for at least a year, with ~2-3% showing
+    long-term self-renewal (mizuhashi2018); FoxA2+ cells are a longer-lived upstream population (muruganandan2022). Human
+    adolescent resting zone contains transcriptionally quiescent sub-populations (CHRDL2+, SFRP5+; avijgan2025) and two stem-like
+    populations of which the upper 'root' population is PTHLH-negative and maps to mouse Prrx1+ cells (chu2026).
+  what_is_missing: Any clonal or self-renewal measurement made on human cells in their own tissue. Human evidence is entirely
+    cross-sectional transcriptomics plus xenotransplantation of sorted cells into mice.
+  nearest_evidence:
+  - chu2026
+  - chan2018
+  - avijgan2025
+  discriminating_experiment: Somatic-mutation phylogenetics on microdissected human growth plate. Take zone-resolved laser-capture
+    or single-cell samples from paediatric growth plate tissue (surgical epiphysiodesis or post-mortem), deep-sequence to
+    call somatic single-nucleotide variants, and reconstruct clonal lineage trees. Under the resting-zone stem cell model,
+    cells within one column share private mutations absent from neighbouring columns, and resting-zone cells sit at the root
+    of those trees. Under a consumption model with no resident stem cell, columns show no shared private variants distinguishing
+    them from adjacent columns and resting-zone cells are terminal branches, not roots. A PTHLH-expressing root would support
+    mouse-to-human marker transfer; a PTHLH-negative root would refute it.
+  tractability: 3
+  search_log_ref: g_l2stem_001
+  nearest_evidence_note: 'chu2026: human single-cell/spatial identification plus mouse Prrx1 clonal tracing of a transcriptionally
+    matched population. chan2018: human sorted cells assayed by serial renal-capsule xenotransplantation. avijgan2025: human
+    resting cells shown to exit G0 ex vivo.'
+- gap_id: g_l2stem_002
+  question: What fraction of human trabecular and endosteal osteoblasts is derived from hypertrophic chondrocytes, and over
+    what age range?
+  type: quantitative_gap
+  layer: L2
+  why_it_matters: In mice this fraction is about 60%, which reassigns the majority of young trabecular bone to a cartilage
+    origin and changes what a growth plate is for. If the human fraction is similar, growth plate biology is also bone-mass
+    biology; if it is small, human bone accrual and mouse bone accrual are driven by different cells and mouse osteoporosis
+    and growth models transfer poorly.
+  what_is_known: 'Mouse: ~63% of trabecular and ~62% of endosteal osteocalcin+ osteoblasts at one month, and ~60% trabecular
+    / ~68% endosteal Col1a1(2.3kb)-GFP+ osteoblasts at three weeks, are Col10a1-lineage (zhou2014a); confirmed qualitatively
+    by independent inducible tracing (yang2014); the contribution ends at adolescence, after which LepR+ stroma dominates
+    (shu2021).'
+  what_is_missing: Any human number at all. No study has quantified chondrocyte-derived osteoblasts in human bone at any age.
+  nearest_evidence:
+  - zhou2014a
+  - yang2014
+  - shu2021
+  discriminating_experiment: 'Apply single-cell multi-omic lineage inference to paediatric human bone: profile growth-plate
+    hypertrophic chondrocytes and metaphyseal osteoblasts from the same specimen for both transcriptome and mitochondrial
+    or nuclear somatic variants, then test whether osteoblast clones share variants with hypertrophic chondrocytes from the
+    overlying plate. Expected under the mouse-like model: a majority of metaphyseal osteoblast clones share chondrocyte-private
+    variants. Expected under a perichondrial-origin model: osteoblast clones share variants with periosteal or LepR-equivalent
+    stromal cells instead.'
+  tractability: 2
+  search_log_ref: g_l2stem_002
+  nearest_evidence_note: 'zhou2014a and yang2014: mouse lineage tracing giving the ~60% figure. shu2021: mouse dual-recombinase
+    timing of the chondrocyte-to-LepR switch.'
+- gap_id: g_l2stem_003
+  question: Does secondary ossification centre formation causally confer stem-cell properties on resting-zone chondrocytes,
+    or does it merely coincide in time with an autonomous developmental switch?
+  type: search_established
+  layer: L2
+  why_it_matters: This claim is load-bearing for L7 fusion models, which use it to argue that the epiphyseal niche has a defined
+    start and therefore a definable end. It is currently supported only by two temporal correlations in one species, and the
+    atlas should not propagate a correlation as a mechanism into a downstream layer.
+  what_is_known: Mouse PTHrP-creER colony-forming cells acquire robust in vitro self-renewal between a P9 pulse (3.3% secondary
+    colonies, none passageable) and a P12 pulse (16.3%, 12.5% of those passageable nine times), described by the authors as
+    coinciding with active SOC development (mizuhashi2018). Independently, clonal tracing shows a switch from progenitor depletion
+    to stable monoclonal columns 'coinciding with the formation of the secondary ossification centre' (newton2019). FoxA2+
+    long-term stem cells sit at the cartilage/SOC interface (muruganandan2022).
+  what_is_missing: Any experiment that perturbs SOC formation and then measures resting-zone stem cell behaviour. A Europe
+    PMC search on 2026-08-05 for studies combining SOC ablation, blockade, prevention or delay with resting-zone or self-renewal
+    readouts in mice returned zero records.
+  nearest_evidence:
+  - mizuhashi2018
+  - newton2019
+  - chan2015
+  discriminating_experiment: Delay SOC formation genetically or pharmacologically without disturbing the growth plate - for
+    example epiphysis-directed inhibition of cartilage-canal angiogenesis (local VEGF trap or Vegfa deletion restricted to
+    epiphyseal chondrocytes) initiated at P4 - then at P12 and P18 assay (i) PTHrP-creER clonal column formation and (ii)
+    secondary and serial colony-forming capacity of sorted resting chondrocytes. If SOC formation is causal, delayed SOC animals
+    retain the P9-like phenotype (~3% secondary colonies, no serial passage) at P12-P18 and form only short transient columns.
+    If the switch is autonomous, they reach the P12-like phenotype (~16% secondary colonies, passageable clones) on the normal
+    schedule despite an absent or delayed SOC. A comparative version tests the same prediction across bones whose SOCs appear
+    at different times within one animal.
+  tractability: 4
+  search_log_ref: g_l2stem_003
+  nearest_evidence_note: 'mizuhashi2018 and newton2019: temporal coincidence only. chan2015: VEGF blockade shifts skeletal
+    progenitor fate from bone to cartilage, showing vascular signals can steer progenitor fate, but never tested on the resting
+    zone.'
+- gap_id: g_l2stem_004
+  question: Are the five published skeletal stem cell schemes - mSSC, PTHrP+/FoxA2+ resting chondrocytes, Grem1+ OCR cells,
+    LepR+ stroma and CTSK-lineage periosteal stem cells - distinct cell types, overlapping states of one lineage, or artefacts
+    of different assays?
+  type: contradiction
+  layer: L2
+  why_it_matters: Downstream layers need to know which cell to target and which mouse model reports on human biology. The
+    schemes disagree on anatomy, adipogenic potential, developmental window and markers, and one immunophenotype (CD200+CD105-Thy-6C3-)
+    is used for two anatomically different 'stem cells'. Without reconciliation, any therapeutic inference from this layer
+    is arbitrary.
+  what_is_known: mSSC is CD45-Ter119-Tie2-AlphaV+Thy-6C3-CD105-CD200+ and excludes fat (chan2015); the periosteal stem cell
+    carries the same CD200+CD105-Thy-6C3- phenotype but is Ctsk-lineage and periosteal (debnath2018); Grem1+ OCR cells are
+    metaphyseal, non-adipogenic and non-overlapping with Nestin-GFP cells (worthley2015); LepR+ cells are perisinusoidal,
+    make adipocytes, contribute nothing to developing cartilage and become the dominant osteoblast source only after adolescence
+    (zhou2014, shu2021); PTHrP+ resting chondrocytes are Grem1-negative (mizuhashi2018); the human CD146+ definition includes
+    adipogenesis (sacchetti2007, bianco2015) while the hSSC definition excludes it and reports CD146+ cells as poorer colony
+    formers (chan2018).
+  what_is_missing: A single study that applies all marker panels and all Cre drivers to the same animals at the same ages
+    with the same functional assay, so that overlap can be measured rather than inferred across papers.
+  nearest_evidence:
+  - mizuhashi2018
+  discriminating_experiment: 'Multiplexed intersectional fate mapping in one mouse cohort: combine Pthlh-creER, Grem1-creER,
+    Lepr-cre, Ctsk-cre and FoxA2-creER with orthogonal recombinases and distinct reporters, plus full mSSC/PSC surface staining,
+    sampling at P6, P12, P28 and 12 weeks, and score anatomical position, marker phenotype and clonal output for each labelled
+    cell. Under the ''distinct cell types'' model, reporters remain mutually exclusive at all ages and each maps to one compartment.
+    Under the ''states of one lineage'' model, early labelled cells convert between reporter identities with age in a directional
+    sequence. Under the ''assay artefact'' model, surface phenotype fails to predict clonal output within any single Cre lineage.'
+  tractability: 2
+  nearest_evidence_note: 'mizuhashi2018 is the only cross-scheme quantification located: it measures overlap between PTHrP+
+    resting chondrocytes and the mSSC/pre-BCSP/BCSP tiers and excludes Grem1 co-expression.'
+- gap_id: g_l2stem_005
+  question: Do human resting zone chondrocytes have a finite, division-denominated proliferative capacity, or can they renew
+    indefinitely until fusion terminates them?
+  type: search_established
+  layer: L2
+  why_it_matters: This is the pivot between the two available accounts of why human growth stops. If capacity is finite, adult
+    height is set by a spendable budget and interventions that spare divisions raise final height. If capacity is renewable,
+    height is set by the timing of the fusion trigger and sparing divisions achieves nothing.
+  what_is_known: Rabbit resting zone chondrocytes fall in proliferation rate and number with age (schrier2006), the decline
+    is division-dependent rather than age-dependent (baron1994, gafni2001, marino2008), and it is not a cell-autonomous Hayflick
+    limit, since cultured rabbit RZ chondrocyte population doublings are independent of donor age (nilsson2005). Mouse clonal
+    tracing found progenitors acquiring self-renewal postnatally rather than only spending down a budget (newton2019).
+  what_is_missing: Any measurement of proliferative capacity, division history or clone size in human growth plate tissue.
+    A Europe PMC search on 2026-08-05 combining human, growth plate/resting zone and clonal/self-renewal/proliferative-capacity
+    terms returned 213 records of which none was a primary human measurement of resting-zone proliferative or clonal capacity.
+  nearest_evidence:
+  - avijgan2025
+  - nilsson2005
+  - schrier2006
+  discriminating_experiment: 'Paired-age human growth plate biopsies (early puberty vs late puberty, e.g. from epiphysiodesis
+    series) assayed two ways: (i) division-history reconstruction by somatic mutation burden or by methylation-clock-based
+    division counters in sorted resting-zone cells; (ii) ex vivo serial colony formation of sorted resting-zone cells. Under
+    finite capacity, late-pubertal cells show higher accumulated division counts and markedly fewer serial colonies than early-pubertal
+    cells from the same anatomical site. Under renewable capacity, serial colony output is preserved across pubertal stage
+    and division counts plateau.'
+  tractability: 3
+  search_log_ref: g_l2stem_005
+  nearest_evidence_note: 'avijgan2025: human resting cells can exit G0 ex vivo under defined conditions - the closest existing
+    functional readout on human tissue. nilsson2005 and schrier2006: rabbit population-level measurements.'
+- gap_id: g_l2stem_006
+  question: Is resting zone stem cell depletion a cause of epiphyseal fusion or a consequence of it?
+  type: known_unknown
+  layer: L2
+  why_it_matters: L7 depends on the answer. If depletion causes fusion, the therapeutic target is progenitor conservation.
+    If fusion is imposed by an oestrogen-driven programme on a plate that still has capacity, the target is the trigger, and
+    every attempt to raise adult height by sparing progenitors is misdirected.
+  what_is_known: 'Rabbit resting-zone cells decline numerically and functionally with age (schrier2006) and the field''s canonical
+    model states depletion then fusion (nilsson2004). Against a simple causal chain: rodents senesce almost to cessation but
+    never fuse (emons2011_2), so depletion is not sufficient for fusion; and oestrogen accelerates senescence while slowing
+    resting-zone proliferation (schrier2006), the opposite of a pure consumption model.'
+  what_is_missing: A measurement of resting zone cell number and proliferative capacity at the moment of fusion, compared
+    between plates fusing early and late, in a species that fuses.
+  nearest_evidence:
+  - schrier2006
+  - emons2011_2
+  discriminating_experiment: In rabbits, induce early fusion with exogenous oestradiol and delay fusion with an aromatase
+    inhibitor, then at the histological moment of bony bridging in each group measure resting zone cell number per unit area,
+    BrdU labelling index, and ex vivo serial colony capacity, against untreated animals at their own fusion point. If depletion
+    causes fusion, all groups fuse at the same low resting-cell number and colony capacity regardless of chronological age.
+    If fusion is imposed, oestradiol-treated plates fuse while retaining significantly higher resting cell number and colony
+    capacity than controls.
+  tractability: 4
+  nearest_evidence_note: 'schrier2006: age- and treatment-dependent rabbit resting-zone depletion. emons2011_2: the rodents-senesce-without-fusing
+    argument.'
+- gap_id: g_l2stem_007
+  question: Does telomere length shorten, or telomerase activity fall, in human growth plate chondrocytes with age or with
+    proximity to fusion?
+  type: search_established
+  layer: L2
+  why_it_matters: Telomere attrition is the mechanism most often asserted in reviews for the growth plate's finite proliferative
+    capacity. If it is unmeasured in humans, the atlas must carry the claim as grade X rather than as mechanism, and downstream
+    reasoning about senolytics or telomerase manipulation in growth disorders has no foundation.
+  what_is_known: Mouse mTert-GFP marks a transitional skeletal progenitor population whose expression peaks during adolescent
+    bone growth (carlone2021). Rabbit resting-zone chondrocyte replicative capacity in culture is independent of donor age,
+    which is difficult to reconcile with progressive telomere-driven exhaustion (nilsson2005).
+  what_is_missing: Any primary measurement of telomere length or telomerase activity in human growth plate chondrocytes. A
+    Europe PMC search on 2026-08-05 returned 218 records, all of which were osteoarthritic articular cartilage, general skeletal
+    ageing reviews, or rodent studies.
+  nearest_evidence:
+  - carlone2021
+  - nilsson2005
+  discriminating_experiment: 'Zone-resolved telomere measurement on banked human growth plate tissue: apply quantitative FISH
+    for telomere signal intensity, plus TRAP or TERT in-situ detection, to resting, proliferative and hypertrophic zones across
+    a paediatric age series spanning pre-pubertal to near-fusion. If telomere attrition underlies the finite capacity, resting-zone
+    telomere signal declines monotonically with age and is lowest near fusion. If the limit is epigenetic rather than telomeric,
+    resting-zone telomere signal is stable across the series while global methylation falls, mirroring the rabbit result.'
+  tractability: 4
+  search_log_ref: g_l2stem_007
+  nearest_evidence_note: 'carlone2021: mouse mTert-GFP reporter. nilsson2005: rabbit, indirect and negative for a replicative
+    clock.'
+- gap_id: g_l2stem_008
+  question: How many cell divisions of proliferative capacity does a human growth plate resting-zone progenitor start with,
+    and how many are spent per centimetre of bone elongated?
+  type: quantitative_gap
+  layer: L2
+  why_it_matters: The finite-capacity model is stated qualitatively everywhere and quantified nowhere. Without a division
+    budget and a cost-per-centimetre, the model makes no falsifiable prediction about final height, cannot be used to estimate
+    how much height a period of growth suppression conserves, and cannot be compared across species.
+  what_is_known: 'The model is division-dependent rather than age-dependent (baron1994, gafni2001, marino2008), and resting-zone
+    cells are numerically depleted with age in rabbit (schrier2006). Mouse data give clone-level rather than division-level
+    numbers: labelled column number plateaus at about six months of chase and roughly 2-3% of PTHrP+ colony-forming cells
+    self-renew long term (mizuhashi2018).'
+  what_is_missing: A division count. No study in any species reports the total number of divisions a resting-zone progenitor
+    undergoes, nor divisions consumed per unit of longitudinal growth.
+  nearest_evidence:
+  - hallett2021_2
+  - mizuhashi2018
+  - baron1994
+  discriminating_experiment: 'Combine H2B-GFP dilution kinetics with quantified longitudinal growth in mice across the whole
+    growth period: measure divisions per resting-zone cell per week by label dilution, and tibial elongation by calcein double-labelling,
+    over P7 to 12 months, then compute divisions per millimetre elongated and integrate to a lifetime budget. Repeat in rabbit,
+    which fuses, to test whether the budget is exhausted at fusion. A model in which capacity is finite predicts a species-specific
+    total that is reached at growth cessation; a model in which capacity is renewable predicts no ceiling and a growth arrest
+    that occurs at a division count well below any plateau.'
+  tractability: 3
+  nearest_evidence_note: hallett2021_2 provides the per-division measurable (H2B-EGFP halves 2.03-fold per division; label-retaining
+    decay half-life 0.99-1.18 weeks), which is the assay that could generate the number in mouse. mizuhashi2018 gives clone-level
+    rather than division-level numbers. baron1994 establishes division-dependence.
+- gap_id: g_l2stem_009
+  question: Does the hSSC surface panel (PDPN+CD146-CD73+CD164+) label human resting zone chondrocytes, or only pre-hypertrophic
+    and hypertrophic zone cells as originally reported?
+  type: search_established
+  layer: L2
+  why_it_matters: Mouse work places the growth plate stem cell in the resting zone; the human SSC was localised to the pre-hypertrophic
+    and hypertrophic zones of a fetal femur. Either the human and mouse growth plate stem cells occupy different zones - a
+    major biological difference - or one of the two localisations is an assay artefact. Any translational use of the hSSC
+    panel for growth disorders depends on which.
+  what_is_known: chan2018 scored human fetal femur cells against 76 mSSC/mBCSP orthologues and found the highest homology
+    in p-H2 and H1, then confirmed by flow cytometry that PDPN+CD146-CD73+CD164+ cells are enriched there and depleted in
+    the diaphysis. Separately, human resting zone stem-like populations have been described transcriptionally and are PTHLH-negative
+    (chu2026, avijgan2025), but their PDPN/CD73/CD164 status is not reported in the retrieved material.
+  what_is_missing: Direct co-localisation of the hSSC panel with resting-zone identity in postnatal human growth plate. A
+    Europe PMC search on 2026-08-05 combining PDPN, CD164, CD73 with resting zone/reserve zone/PTHrP terms returned 36 records,
+    all reviews or unrelated periosteal and marrow studies; no primary study places the hSSC panel in the resting zone.
+  nearest_evidence:
+  - chan2018
+  - ambrosi2025
+  - chu2026
+  discriminating_experiment: Multiplex immunofluorescence and zone-resolved flow cytometry on postnatal human growth plate
+    (epiphysiodesis specimens), staining PDPN, CD146, CD73, CD164 alongside a resting-zone identity marker set from human
+    spatial transcriptomics, with microdissected zones sorted and assayed for serial colony formation. If the hSSC is a resting-zone
+    cell, the PDPN+CD146-CD73+CD164+ fraction is enriched in the resting zone and carries the serial colony activity. If the
+    original localisation is correct, that fraction remains enriched in the pre-hypertrophic/hypertrophic zones and resting-zone
+    colony activity resides in a panel-negative population - which would mean the human growth plate contains two unrelated
+    'stem cell' populations in different zones.
+  tractability: 3
+  search_log_ref: g_l2stem_009
+  nearest_evidence_note: 'chan2018: fetal pre-hypertrophic/hypertrophic localisation of the hSSC panel. ambrosi2025: hSSC
+    composition across ten sites but not zone-resolved within the growth plate. chu2026: human resting-zone stem-like cells
+    described with a different marker set.'
+- gap_id: g_l2stem_010
+  question: What fraction of resting zone chondrocytes is genuinely long-term self-renewing in vivo, and is the low in vitro
+    figure (~2-3%) an underestimate imposed by culture?
+  type: quantitative_gap
+  layer: L2
+  why_it_matters: The size of the true stem pool sets how much reserve a growth plate has and how much of catch-up growth
+    is possible. The only quantitative figures come from colony passaging, which is an ex vivo proxy, and different markers
+    give order-of-magnitude different answers (2-3% for PTHrP+, 9% of colonies for FoxA2+), so the field currently has no
+    agreed denominator.
+  what_is_known: 'PTHrP-creER P12-pulse colonies: 16/98 (16.3%) formed secondary colonies and 2/16 (12.5%) passaged nine times,
+    yielding the authors'' ~2-3% long-term self-renewal figure (mizuhashi2018). FoxA2+ colonies: 10/112 (8.9%) reached passage
+    9 or beyond versus 2/143 (1.4%) of PTHrP+ colonies reaching passage 5 (muruganandan2022). In vivo, labelled column number
+    declines to a plateau by about six months (mizuhashi2018) and the durable label-retaining fraction plateaus at 2.6% (hallett2021_2).'
+  what_is_missing: An in vivo estimate of the self-renewing fraction that does not depend on culture. The agreement between
+    the 2.6% label-retaining plateau and the 2-3% colony figure is suggestive but the two measure different things and have
+    never been reconciled in the same animals.
+  nearest_evidence:
+  - hallett2021_2
+  - mizuhashi2018
+  - muruganandan2022
+  discriminating_experiment: Very-low-density Confetti or Rainbow labelling in Pthlh-creER and FoxA2-creER mice with quantitative
+    clone-size distribution analysis at 1, 3, 6 and 12 months, fitted to a neutral drift model to estimate the number of functional
+    stem cells per plate directly. Under a 2-3% stem fraction, the fitted stem cell number matches 2-3% of resting-zone cells
+    and clone sizes follow the scaling expected for neutral competition. If culture is underestimating, the fitted in vivo
+    stem number is substantially larger and clone-size distributions are broader than a 2-3% pool can generate.
+  tractability: 4
+  nearest_evidence_note: 'hallett2021_2: label-retention kinetics in vivo. mizuhashi2018 and muruganandan2022: ex vivo colony
+    passaging.'
+- gap_id: g_l2stem_011
+  question: Does any non-murine mammal show the postnatal clonal switch to self-renewing resting-zone progenitors, and specifically
+    does it occur in a species that fuses its growth plates?
+  type: species_gap
+  layer: L2
+  why_it_matters: Mice never fuse. Every clonal and self-renewal result in this layer therefore comes from an animal that
+    lacks the outcome the atlas is trying to explain. If the clonal switch is a feature of non-fusing rodents, the whole resting-zone
+    stem cell framework may not describe human growth at all.
+  what_is_known: The clonal switch and the SOC coincidence are documented only in mouse (mizuhashi2018, newton2019). The only
+    non-murine mammalian datum located is that FoxA2 immunoreactivity is present at the equivalent anatomical position in
+    rabbit, with no functional or clonal data (muruganandan2022). Rabbits fuse; rodents do not (emons2011_2).
+  what_is_missing: Clonal lineage tracing, or any equivalent clone-resolving measurement, in a fusing mammal.
+  nearest_evidence:
+  - muruganandan2022
+  - schrier2006
+  - emons2011_2
+  discriminating_experiment: 'Clone-resolving analysis in rabbit growth plate without transgenesis: use naturally occurring
+    somatic mutation or X-inactivation mosaicism in female rabbits, sampling microdissected columns before SOC completion,
+    mid-growth and at fusion, and test whether columns become clonal after SOC formation as in mouse. If the switch is conserved,
+    columns sampled after SOC completion are monoclonal by mosaicism marker and remain so until fusion. If it is a rodent
+    peculiarity, rabbit columns remain polyclonal throughout, and the resting-zone stem cell framework should be restricted
+    to non-fusing species until human data exist.'
+  tractability: 2
+  nearest_evidence_note: 'muruganandan2022: rabbit FoxA2 immunostaining only, no clonal data. schrier2006: rabbit resting-zone
+    kinetics, population-level not clonal. emons2011_2: rabbits fuse, rodents do not.'
+- gap_id: g_l3core_001
+  question: What is the loop gain of the PTHrP/IHH negative feedback loop - that is, by how many micrometres does the position
+    of the hypertrophic transition shift per unit change in Ihh output - and what are the diffusion coefficient and decay
+    length of IHH and PTHrP in growth plate cartilage?
+  type: quantitative_gap
+  layer: L3
+  why_it_matters: The loop is described everywhere as the device that sets proliferative column length, which is a direct
+    determinant of elongation rate. Without a measured gain or range the loop cannot be used to predict the effect of a partial-loss
+    allele, cannot be compared between skeletal sites whose column lengths differ several-fold, and cannot be parameterised
+    in any of the computational growth plate models that already assume such values.
+  what_is_known: 'Loop topology is established genetically in mouse and chick: Ihh from prehypertrophic cells raises periarticular
+    Pthlh (vortkamp1996, karp2000); PTHrP acting on PTH1R keeps cells cycling and delays hypertrophy (lee1996, chung1998).
+    Ihh behaves as a long-range morphogen directly activating Pthlh, and its range is set by heparan sulfate - reducing Ext1
+    EXPANDS the range (koziel2004) - and by DISP1-dependent release, with Disp1 hypomorphs establishing the same loop over
+    a shorter distance (tsiairis2008). A PTHrP protein gradient has been visualised in mouse mandibular condylar cartilage
+    (tsutsumiarai2024).'
+  what_is_missing: No numeric diffusion coefficient, decay length, source strength, receptor occupancy or transfer function
+    for either ligand, in any species. Range statements are ordinal ("expanded", "shorter"), never metric. Consequently no
+    measured loop gain exists, and the published computational models (stoop2025) run on assumed parameters.
+  nearest_evidence:
+  - koziel2004
+  - tsiairis2008
+  - tsutsumiarai2024
+  - stoop2025
+  discriminating_experiment: 'In mouse proximal tibia at P7, use a genetically encoded Hedgehog-activity reporter (Gli1-based,
+    e.g. GBS-GFP) and quantitative Ptch1 smFISH to measure the spatial decay of Ihh pathway output in micrometres from the
+    prehypertrophic source, and a photoactivatable or HaloTag-labelled IHH knock-in to measure the effective diffusion coefficient
+    by FRAP in intact cartilage. Then titrate Ihh output with an allelic series (Ihh+/-, Ihh-flox partial deletion, Disp1
+    hypomorph) and plot the resulting shift in the hypertrophic transition position (um) against measured Ihh pathway amplitude.
+    Prediction under a high-gain loop: transition position shifts >100 um per halving of Ihh output and Pthlh transcript scales
+    steeply; under a low-gain or saturated loop the transition position is nearly insensitive over the same range and column
+    length is set instead by PTHrP-independent Ihh effects on proliferation.'
+  tractability: 3
+  search_log_ref: g_l3core_001
+- gap_id: g_l3core_002
+  question: What is the spatial profile of GLI3 repressor protein across the resting, proliferative, prehypertrophic and hypertrophic
+    zones of the growth plate, and does its concentration, rather than GLI activator concentration, quantitatively predict
+    where hypertrophy begins?
+  type: known_unknown
+  layer: L3
+  why_it_matters: Genetic rescue puts the essential Ihh output in relief of GLI3R rather than in GLI activator gain (hilton2005,
+    koziel2005). If GLI3R is the carrier of the signal, then the amplitude of Ihh signalling in this tissue is encoded as
+    a repressor concentration, and every statement about "Ihh levels" in the growth plate is really a statement about a quantity
+    nobody has measured.
+  what_is_missing: No zonal quantification of full-length GLI3 versus GLI3R protein by Western blot on microdissected zones
+    or by ratiometric imaging, in any species. Existing evidence is whole-limb epistasis.
+  what_is_known: Deleting Gli3 rescues most of the Ihh-null cartilage phenotype in mouse (hilton2005), and GLI3R acts at two
+    separable differentiation steps (koziel2005). GLI2/GLI3 also mediate Hedgehog-TGF-beta crosstalk in skeletal progenitors
+    (zhou2026).
+  nearest_evidence:
+  - hilton2005
+  - koziel2005
+  - zhou2026
+  discriminating_experiment: 'Laser-capture microdissect the four zones from mouse P7 proximal tibia and from human juvenile
+    iliac crest or distal femur growth plate obtained at orthopaedic surgery, and run quantitative Western blots for full-length
+    GLI3 (190 kDa) and GLI3R (83 kDa) with a recombinant standard curve. Prediction under the derepression model: GLI3R/GLI3-FL
+    ratio is high in the resting and early proliferative zones and falls monotonically toward the prehypertrophic zone, with
+    the inflection coinciding with the Col10a1 boundary. Prediction under an activator-dominant model: the ratio is flat and
+    GLI2 activator abundance instead tracks the boundary.'
+  tractability: 4
+- gap_id: g_l3core_003
+  question: In the human growth plate, what fraction of the CNP/NPR2 effect on elongation rate is contributed by hypertrophic
+    chondrocyte volume, by matrix synthesis in the proliferative zone, and by proliferation rate?
+  type: quantitative_gap
+  layer: L3
+  why_it_matters: Vosoritide and its successors are dosed against a growth velocity endpoint with no measurement of which
+    cellular process is being modulated in humans. If the human partition differs from the mouse partition - for example if
+    human CNP acts more on matrix and less on hypertrophic volume - then the ceiling on achievable growth, the expected effect
+    on body proportion, and the risk of disproportionate segment growth all change.
+  what_is_known: 'The mouse partition is measured and is strongly hypertrophic-zone weighted: cartilage-specific Nppc deletion
+    reduces hypertrophic layer thickness to 34.6% of control while the non-hypertrophic layer falls only to 76.7%, and BrdU
+    incorporation is only marginally reduced; cartilage-specific Npr2 deletion gives 23.0% and 71.1% respectively with significantly
+    reduced BrdU (nakao2015). In mouse tibia organ culture CNP acts largely by expanding the hypertrophic zone and zonal microarray
+    shows far more CNP-regulated genes in hypertrophic than in proliferative or resting cells (agoston2007). CNP also drives
+    TRPM7-mediated Ca2+ entry that supports matrix synthesis (miyazaki2022).'
+  what_is_missing: No human measurement of any of the three components under CNP-pathway perturbation. The only human readout
+    is whole-limb growth velocity (savarirayan2020).
+  nearest_evidence:
+  - nakao2015
+  - agoston2007
+  - miyazaki2022
+  - savarirayan2020
+  discriminating_experiment: 'Prospective paired analysis in children with achondroplasia receiving a CNP analogue: high resolution
+    peripheral quantitative CT or 7T MRI of the distal femoral physis before and at 6 and 12 months, extracting growth plate
+    height and hypertrophic zone height, combined with knemometry for short-term lower-leg growth rate and serum NTproCNP
+    and collagen X marker (CXM) as turnover readouts. Prediction under a hypertrophy-dominant human partition: total physeal
+    height and CXM rise proportionally with growth velocity and the increment is attributable to the metaphyseal-most band.
+    Prediction under a matrix-dominant partition: growth velocity rises with little change in physeal height and with a disproportionate
+    rise in proteoglycan-sensitive MRI T1rho/T2 signal.'
+  tractability: 2
+  search_log_ref: g_l3core_003
+- gap_id: g_l3core_004
+  question: Is NPR2 dephosphorylated in human growth plate cartilage carrying an activating FGFR3 allele, as it is in mouse
+    and rat?
+  type: species_gap
+  layer: L3
+  why_it_matters: The entire mechanistic rationale for treating achondroplasia with CNP analogues is that FGFR3 inactivates
+    NPR2 by dephosphorylation and that supplying more ligand overcomes it. If the human lesion is quantitatively different
+    - for example if human NPR2 is already near-maximally dephosphorylated, or if the responsible phosphatase differs - then
+    the observed ceiling on vosoritide efficacy has a mechanistic explanation and a different drug target.
+  what_is_known: FGF causes reversible dephosphorylation of the seven juxtamembrane serines and threonines of GC-B in rat
+    chondrosarcoma cells (robinson2017); this lowers cGMP in intact mouse tibia via a PPP-family phosphatase (shuhaibar2017);
+    and a non-dephosphorylatable GC-B(7E/7E) allele restores long bone length and hypertrophic zone area in FGFR3-G380R mice
+    (wagner2021). FGF does not change GC-B protein abundance (ozasa2005), so the regulation is post-translational only.
+  what_is_missing: NPR2 phosphorylation state has never been measured in human cartilage of any genotype. There is no phospho-specific
+    NPR2 immunoassay validated on human tissue, and no human achondroplasia growth plate has been analysed biochemically.
+  nearest_evidence:
+  - robinson2017
+  - shuhaibar2017
+  - wagner2021
+  - ozasa2005
+  discriminating_experiment: 'Apply phospho-specific antibodies against the NPR2 juxtamembrane cluster (S489/T500/S502/S506/
+    S510/T513/S516 equivalent positions) to human growth plate cartilage obtained at guided-growth or limb-lengthening surgery,
+    comparing achondroplasia to age-matched non-dysplastic controls, with Phos-tag SDS-PAGE on fresh microdissected tissue
+    as the orthogonal readout. Prediction if the rodent mechanism is conserved: achondroplasia cartilage shows a shifted,
+    hypophosphorylated NPR2 band and reduced basal cGMP; if not conserved, phosphorylation state is indistinguishable and
+    the human lesion must lie downstream of the receptor.'
+  tractability: 2
+- gap_id: g_l3core_005
+  question: Does PTHrP/PTH1R signalling regulate CNP/NPR2 output, or vice versa, in growth plate chondrocytes?
+  type: search_established
+  layer: L3
+  why_it_matters: These are the two dominant local control systems of the growth plate and both converge on the same decision
+    - when a proliferative chondrocyte becomes hypertrophic. If they are independent, their therapeutic effects should be
+    additive and CNP analogues should work in PTH1R-pathway disorders; if they interact, the interaction sets the ceiling
+    on combination therapy and explains why some short-stature genotypes respond to CNP analogues and others do not.
+  what_is_known: Three indirect convergence points exist. PKG-II, the CNP effector, permits hypertrophy by blocking SOX9 nuclear
+    entry (chikuda2004), while PTHrP represses hypertrophy through HDAC4/HDAC5 acting on MEF2 (nishimori2019). CNP acting
+    through NPR2 raises PKA activity in hypertrophic chondrocytes (hirota2022), the same effector PTH1R uses. PDE3 family
+    enzymes are dual-specificity, with cGMP competitively inhibiting cAMP hydrolysis, providing a candidate biochemical coupling
+    (ursachi2026).
+  what_is_missing: No study reports a direct experimental test - no epistasis experiment, no compound mutant, no measurement
+    of cGMP under PTH1R manipulation or of cAMP under NPR2 manipulation in growth plate cartilage, in any species. The nearest
+    record tests adrenomedullin, CNP and PTHrP in parallel on cultured cells with no combination arm (huang2003).
+  nearest_evidence:
+  - chikuda2004
+  - nishimori2019
+  - hirota2022
+  - huang2003
+  - ursachi2026
+  discriminating_experiment: 'In mouse metatarsal or tibial explant culture from a cGMP-biosensor line, measure chondrocyte
+    cGMP during PTH1R agonism (PTHrP 1-36 or abaloparatide) and, reciprocally, measure cAMP with a PKA FRET biosensor during
+    CNP exposure; then test genetic epistasis by crossing Col2a1-Cre; Npr2 fl/fl mice with the Jansen constitutively active
+    PTH1R transgenic. Prediction if the pathways are independent: cGMP is unaffected by PTH1R agonism and the compound mutant
+    length phenotype is the arithmetic sum of the singles. Prediction if PDE3-mediated coupling is real: PTH1R agonism lowers
+    cGMP (cAMP outcompeting cGMP at PDE3) and the compound phenotype is sub-additive.'
+  tractability: 4
+  search_log_ref: g_l3core_005
+- gap_id: g_l3core_006
+  question: Which cyclic-nucleotide phosphodiesterase isoforms are expressed in each zone of the HUMAN growth plate, and which
+    one carries the dominant cGMP-hydrolysing activity there?
+  type: search_established
+  layer: L3
+  why_it_matters: Signal duration in the CNP arm is set by cGMP hydrolysis, so the PDE complement determines how much growth
+    a given amount of CNP buys. PDE inhibitors are already given chronically to children - PDE5 inhibitors for pulmonary arterial
+    hypertension, PDE3 inhibitors for heart failure - and PDE inhibition is being proposed as a repurposing route for short
+    stature. All of that rests on a human zonal map that does not exist.
+  what_is_known: 'Bulk transcript profiling of growth plate chondrocytes across human, mouse and chicken reports PDE1B, 3B,
+    4B, 4D, 5A, 7A, 8A and 10A, with PDE6, 9 and 11 family genes reported absent from skeletal tissue (ursachi2026, indexing
+    takcs2023 and kawabe2025). Functional assignment is species-split: PDE5 dominates cGMP hydrolysis in newborn rat epiphyseal
+    chondrocytes (wang2018) whereas PDE3B is the functional target in mouse (kawabe2025). The only zone-resolved cartilage
+    PDE data are from human and bovine ARTICULAR cartilage - PDE3B superficial, PDE7A deep (grogan2013).'
+  what_is_missing: No study localises any PDE isoform to a growth plate zone in human tissue, by immunohistochemistry, in
+    situ hybridisation, laser-capture transcriptomics or spatial transcriptomics. No human growth plate PDE enzymatic activity
+    assay exists. PDE9A and PDE1C, in particular, have no primary growth plate literature in any species.
+  nearest_evidence:
+  - ursachi2026
+  - wang2018
+  - kawabe2025
+  - grogan2013
+  - takcs2023
+  discriminating_experiment: 'Obtain human growth plate cartilage from guided-growth (hemiepiphysiodesis) or limb-lengthening
+    surgery in children, laser-capture the resting, proliferative, prehypertrophic and hypertrophic zones, and run (a) targeted
+    RNA-seq or Nanostring across all 21 PDE genes, and (b) selective inhibitor-resolved cGMP hydrolysis assays on zone lysates
+    using cilostamide (PDE3), sildenafil (PDE5), PF-04447943 (PDE9) and vinpocetine (PDE1). Prediction if the mouse assignment
+    holds: cilostamide removes most zonal cGMP-hydrolysing activity and PDE3B transcript peaks in the proliferative/prehypertrophic
+    zones. Prediction if the rat assignment holds: sildenafil removes most activity and PDE5A is uniform. A third outcome
+    - a PDE not on either list dominating in human - is not excluded by any current data.'
+  tractability: 3
+  search_log_ref: g_l3core_006
+- gap_id: g_l3core_007
+  question: Does raising bulk cGMP in growth plate cartilage increase longitudinal bone growth? Rat and mouse pharmacology
+    give opposite answers.
+  type: contradiction
+  layer: L3
+  why_it_matters: The premise of every cGMP-raising growth therapy - CNP analogues, NPR3 decoys, PDE inhibitors - is that
+    more cGMP means more growth. One well-controlled rodent experiment raised growth plate cGMP by half and produced no growth
+    at all, which if generalised means the relevant variable is not bulk cGMP but a compartmentalised pool.
+  what_is_known: In one-month-old rats, tadalafil at 10 mg/kg/day for 3 weeks raised tissue cGMP by 52% and peak CNP-stimulated
+    chondrocyte cGMP by 37%, yet produced no change in long bone length, cortical or trabecular properties or growth plate
+    histology (wang2018). In mouse, PDE3 inhibitors raised chondrocyte cGMP, activated PKG-dependent K+ channels, promoted
+    TRPM7-mediated Ca2+ entry, elongated cultured bones and enlarged juvenile animals (kawabe2025, miyazaki2022). Genetic
+    elevation of NPR2 output raises bone length in mouse (wagner2021, shuhaibar2017).
+  what_is_missing: No experiment resolves whether the discrepancy is species (rat versus mouse), isoform (PDE5 versus PDE3B),
+    compartment (bulk versus microdomain cGMP), or dose/duration. No study has measured subcellular cGMP microdomains in chondrocytes.
+  nearest_evidence:
+  - wang2018
+  - kawabe2025
+  - miyazaki2022
+  - shuhaibar2017
+  - wagner2021
+  discriminating_experiment: 'Run the identical protocol - tadalafil and cilostazol, matched to equal whole-tissue cGMP elevation
+    measured by ELISA - side by side in rat and mouse of the same age, with tibial length by microCT and growth plate zone
+    morphometry as the primary endpoints, and with a targeted cGMP FRET biosensor expressed at the plasma membrane versus
+    in the cytosol to read compartment-specific cGMP. Prediction under the microdomain hypothesis: PDE3 inhibition raises
+    membrane-proximal cGMP and growth in both species while PDE5 inhibition raises only cytosolic cGMP and grows neither.
+    Prediction under a species hypothesis: both drugs grow mouse and neither grows rat.'
+  tractability: 4
+- gap_id: g_l3core_008
+  question: Which downstream branch of FGFR3 - MAPK/ERK or STAT1 - carries the load in HUMAN achondroplasia and thanatophoric
+    dysplasia, given that human dysplastic chondrocytes do not show the proliferation defect the STAT1 model predicts?
+  type: contradiction
+  layer: L3
+  why_it_matters: Every FGFR3-directed drug programme picks a branch. CNP analogues and MEK-directed approaches target MAPK;
+    JAK/STAT-directed approaches target STAT1. If the human lesion is apoptosis-and-differentiation rather than proliferation
+    arrest, then mouse-derived proliferation endpoints are the wrong preclinical readout.
+  what_is_known: In rat chondrosarcoma cells and primary murine chondrocytes, FGF inhibits proliferation through STAT1 and
+    Stat1-null metatarsals do not arrest (sahni1999); the TD II K650E mutant constitutively activates STAT1 (su1997). In mouse,
+    constitutively active MEK1 reproduces achondroplasia-like dwarfism with blocked hypertrophy and NORMAL proliferation,
+    and deleting Stat1 in achondroplasia-mutant mice restores proliferation but rescues neither the reduced hypertrophic zone
+    nor the dwarfism (murakami2004). In cultured human thanatophoric dysplasia type I fetal chondrocytes, mitogenic response
+    to FGF2 and FGF9 was NOT reduced relative to controls; the observed lesion was ligand-independent STAT activation with
+    nuclear STAT1 in hypertrophic cells and increased apoptosis with raised BAX and reduced BCL-2 (legeaimallet1998).
+  what_is_missing: No study measures proliferation index, phospho-ERK and phospho-STAT1 together, in situ and by zone, in
+    human achondroplasia or thanatophoric dysplasia growth plate against age-matched controls. The human and mouse literatures
+    have never been placed on the same measurement.
+  nearest_evidence:
+  - sahni1999
+  - su1997
+  - murakami2004
+  - legeaimallet1998
+  discriminating_experiment: 'Multiplex immunofluorescence (Ki-67 or phospho-histone H3, phospho-ERK1/2, phospho-STAT1 Y701,
+    cleaved caspase-3, COL10A1) on archival human fetal thanatophoric dysplasia and postnatal achondroplasia growth plate
+    sections with age-matched non-dysplastic controls, quantified per zone. Prediction under the MAPK-dominant model: phospho-ERK
+    is elevated across the prehypertrophic/hypertrophic boundary, COL10A1 domain is compressed, and proliferation index is
+    unchanged. Prediction under the STAT1-dominant model: phospho-STAT1 and cleaved caspase-3 are elevated and proliferation
+    index is reduced in the proliferative zone.'
+  tractability: 3
+- gap_id: g_l3core_009
+  question: What is the relative quantitative contribution of the BMP arm versus the Ihh arm to proliferative column length,
+    when both are titrated in the same preparation?
+  type: known_unknown
+  layer: L3
+  why_it_matters: BMP and Ihh/PTHrP are described as acting in parallel on the same two decisions, but "parallel" has never
+    been quantified. Without the relative weights, the effect of a partial BMP-pathway lesion on growth cannot be predicted,
+    and BMP-pathway skeletal disorders cannot be placed on the same axis as Ihh-pathway ones.
+  what_is_known: BMP signalling delays hypertrophy partly by maintaining Ihh expression and Ihh raises BMP transcription in
+    perichondrium and cartilage; blocking BMP shortens the proliferative column even with the PTHrP arm intact (minina2001).
+    miR-433 targets both arms simultaneously in the murine postnatal growth plate (thakore2026).
+  what_is_missing: No dose-response surface. Existing work is qualitative epistasis in explants with saturating agonists or
+    antagonists.
+  nearest_evidence:
+  - minina2001
+  - thakore2026
+  discriminating_experiment: 'Mouse metatarsal explant culture with a two-factor dose matrix of a BMP type I receptor inhibitor
+    (LDN-193189, 5 log-spaced doses) crossed with a smoothened antagonist (vismodegib, 5 doses), reading proliferative column
+    length, Col10a1 domain length and total elongation over 6 days, and fitting a response surface. Prediction under additive
+    parallel arms: no interaction term. Prediction under the Minina serial model in which BMP acts through Ihh: strong negative
+    interaction, with the BMP inhibitor having little further effect once Hedgehog is blocked.'
+  tractability: 5
+- gap_id: g_l3core_010
+  question: Which FGF ligand activates FGFR3 in the human growth plate?
+  type: species_gap
+  layer: L3
+  why_it_matters: Ligand-trap and ligand-directed therapies for achondroplasia (soluble FGFR3 decoys) assume the relevant
+    ligand is present and accessible. The assignment of FGF18 as the physiological ligand rests entirely on mouse knockout
+    phenocopy.
+  what_is_known: Fgf18-null mice phenocopy Fgfr3-null mice (liu2002, ohbayashi2002), and an Fgf9/Fgf18 allelic series places
+    Fgf18 as dominant in the growth plate and Fgf9 in vascularisation (hung2016). In human fetal long bone, FGFR3 is expressed
+    in growth plate chondrocytes while FGFR1 and FGFR2 are perichondrial and periosteal (delezoide1998).
+  what_is_missing: No human FGF18 or FGF9 localisation in growth plate, no human FGF18/FGF9 monogenic skeletal phenotype,
+    and no measurement of which ligand occupies FGFR3 in human cartilage.
+  nearest_evidence:
+  - liu2002
+  - ohbayashi2002
+  - hung2016
+  - delezoide1998
+  discriminating_experiment: 'RNAscope for FGF18, FGF9, FGF2 and FGFR3 on human juvenile growth plate with perichondrium intact,
+    plus ligand-binding competition on human growth plate chondrocyte primary cultures using labelled FGF18 against unlabelled
+    FGF9/FGF2 and an FGFR3-blocking antibody. Prediction if the mouse assignment translates: FGF18 transcript is perichondrial
+    with a chondrocyte-facing gradient and labelled FGF18 binding is FGFR3-competable. Prediction otherwise: FGF18 is absent
+    or non-perichondrial and another ligand accounts for FGFR3 occupancy.'
+  tractability: 3
+- gap_id: g_l3core_011
+  question: What is the quantitative relationship between residual NPR2 guanylyl cyclase activity (expressed as percent of
+    wild-type cGMP output in a standardised assay) and adult height across the full human NPR2 allelic series?
+  type: quantitative_gap
+  layer: L3
+  why_it_matters: NPR2 is one of very few human loci with a measured three-state dosage series and an approved pathway-targeted
+    drug. A calibrated activity-to-height curve would convert an in vitro cGMP assay on a novel variant into a predicted height
+    effect, would say how much residual activity a CNP analogue must restore to be worth giving, and would test whether the
+    relationship is linear or thresholded.
+  what_is_known: Individual points exist but on incompatible scales. Biallelic loss gives adult heights around 120-134 cm
+    (arya2020, with the 120 cm figure a secondary citation). Heterozygous carriers sit at -1.8 +/- 1.1 SDS versus -0.4 +/-
+    0.8 in non-carrier relatives (olney2006) and -2.06 +/- 0.97 versus -1.37 +/- 0.59 in wild-type siblings (hanley2020),
+    with individual dominant-negative families spanning -4.5 to -1.7 SDS (vasques2013). Gain-of-function alleles give +1.30
+    to +2.77 SDS (lauffer2020) and extreme tall stature (hannema2013). Many of these variants have been assayed for cGMP output
+    in HEK293 cells or patient fibroblasts, but with different constructs, ligand concentrations and normalisation.
+  what_is_missing: No single study measures cGMP output for a panel of variants under one standardised protocol and regresses
+    it against measured height SDS with confidence intervals. Consequently the shape of the dose-response - linear, thresholded,
+    or saturating - is unknown.
+  nearest_evidence:
+  - arya2020
+  - olney2006
+  - hanley2020
+  - vasques2013
+  - lauffer2020
+  - hannema2013
+  - wang2015
+  discriminating_experiment: 'Assemble the published NPR2 variant set (>60 alleles) and express each in a single NPR2-null
+    HEK293 line at matched surface expression measured by flow cytometry, assaying basal and CNP-stimulated cGMP across a
+    full ligand dose-response; for heterozygous alleles co-express with wild-type at 1:1 to capture dominant-negative effects.
+    Regress log(cGMP Emax, percent of wild-type) against reported adult height SDS with a mixed model accounting for family
+    and ancestry. Prediction under a linear model: height SDS is proportional to residual activity across the whole range.
+    Prediction under a threshold model: height is insensitive above roughly 50% residual activity and falls steeply below
+    it, which would explain why heterozygous carriers cluster near -2 SDS rather than midway between normal and AMDM.'
+  tractability: 4
+  search_log_ref: g_l3core_011
+- gap_id: g_l7fuse_001
+  question: Does estrogen irreversibly deplete the resting-zone progenitor pool of the human growth plate, as it does in the
+    ovariectomised rabbit, and does that depletion precede rather than follow the collapse of the proliferative columns?
+  type: species_gap
+  layer: L7
+  why_it_matters: 'Progenitor exhaustion is the leading mechanistic account of why the human plate ends, and it is the account
+    that predicts an intervention window: if fusion is triggered by running out of stem cells, preserving that pool would
+    extend growth, whereas if fusion is a differentiated-cell senescence programme, preserving the pool would not help. The
+    entire mechanism rests on one species.'
+  what_is_known: In juvenile ovariectomised rabbits, 5 weeks of estradiol cypionate followed by 5 weeks of washout irreversibly
+    advanced structural senescence and the age-related loss of resting-zone chondrocytes while reversibly suppressing growth
+    plate function, and transient estrogen hastened epiphyseal fusion; the resting-zone cell loss was not apoptotic (nilsson2014_2,
+    rabbit). Fusion in the same model occurs when the proliferation rate approaches zero (weise2001, rabbit), and suppressing
+    proliferation with dexamethasone delays both senescence and fusion (gafni2001, rabbit). Single-cell and spatial profiling
+    of human early-pubertal growth plate has now identified two resting-zone stem-like populations, including a PTHrP-negative
+    Prrx1-marked root population, conserved with mouse (chu2026, human).
+  what_is_missing: No count of human resting-zone progenitors as a function of pubertal stage, sex, or MRI fusion stage. The
+    human specimens that exist are early-pubertal epiphysiodesis material; nothing spans the interval between mid-puberty
+    and fusion. Mouse cannot be used because it never fuses (mouse_does_not_fuse); rabbit cannot be used for the human cell-identity
+    markers because no rabbit growth plate single-cell atlas exists.
+  nearest_evidence:
+  - nilsson2014_2
+  - chu2026
+  - weise2001
+  discriminating_experiment: 'Model system: human physeal tissue from staged epiphysiodesis and limb-reconstruction procedures,
+    banked prospectively with a same-day MRI fusion stage (kvist2020 cartilage sequence protocol), spanning Tanner 2 to fusion
+    in both sexes. Readout: absolute resting-zone root-cell density (PRRX1+/PTHrP-negative by the chu2026 marker panel) per
+    mm of plate, plus Ki67 index of the proliferative zone, plus plate height, on the same section. Expected results - progenitor
+    exhaustion: root-cell density falls monotonically and reaches near-zero at least one MRI stage BEFORE proliferative index
+    and plate height collapse. Differentiated-cell senescence: root-cell density is preserved into late stages while Ki67
+    index falls first. Vascular invasion: both fall abruptly and simultaneously at the stage at which bridges appear, with
+    no antecedent decline.'
+  tractability: 3
+  search_log_ref: null
+- gap_id: g_l7fuse_002
+  question: How many human growth plates have ever been examined histologically at the moment of epiphyseal fusion, and can
+    a prospectively banked series be assembled?
+  type: method_blocked
+  layer: L7
+  why_it_matters: Every cellular mechanism in this layer is adjudicated, if at all, against a sample of one. The negative
+    apoptosis result that contradicts the entire rodent hypertrophic-chondrocyte literature (apoptosis_at_fusion) and the
+    positive hypoxia/necrosis observation that replaced it (hypoxia_necrosis_at_fusion) both come from the same single specimen.
+    Until n is greater than 1, no mechanism in L7 can rise above confidence D on human evidence.
+  what_is_known: One human growth plate described as being about to fuse has been reported, collected within a small series
+    of unfused pubertal plates; it contained no TUNEL-positive cells, expressed anti-apoptotic Bcl-2 and Bcl-XL but among
+    pro-apoptotic proteins only Bad, and showed ultrastructural hypoxia and necrosis but no apoptosis or autophagy (emons2009,
+    human). Classical human union histology exists from autopsy material but predates immunohistochemistry and molecular readouts
+    (haines1975). Early-pubertal human growth plate is now obtainable from growth-restricting surgery and has been profiled
+    at single-cell resolution (chu2026).
+  what_is_missing: The tissue is not available at the relevant moment. Fusion occurs at ages when elective physeal surgery
+    has essentially ceased, and the plate is destroyed by the event itself, so the window between "still gradable as fusing"
+    and "gone" is short. No biobank of staged human physeal tissue exists, and no autopsy protocol routinely samples the physis.
+  nearest_evidence:
+  - emons2009
+  - haines1975
+  - chu2026
+  discriminating_experiment: 'Model system: a multicentre prospective physeal biobank drawing on (a) epiphysiodesis and guided-growth
+    hardware placement in adolescents 12-17 y, (b) amputation and tumour resection specimens with uninvolved physis, and (c)
+    forensic autopsy of adolescents aged 14-20 with same-day post-mortem MRI. Readout: paired MRI fusion stage (kvist2020
+    protocol) and matched histology, immunohistochemistry and single-nucleus RNA-seq on the identical plate. Expected result:
+    a stage-resolved series of at least 10 specimens per fusion stage would, for the first time, allow the apoptosis, hypoxia/necrosis,
+    vascular and progenitor hypotheses to be tested against each other in the species that actually fuses. A null result -
+    no molecular difference across stages - would itself falsify all cell-autonomous accounts and force the field toward a
+    purely vascular or mechanical trigger.'
+  tractability: 2
+  search_log_ref: null
+- gap_id: g_l7fuse_003
+  question: Has any transcriptomic or single-cell dataset been published from human growth plate tissue at or immediately
+    preceding epiphyseal fusion?
+  type: search_established
+  layer: L7
+  why_it_matters: A stage-resolved human transcriptome would arbitrate between the six competing mechanisms without requiring
+    any of them to be assumed, and would be the single highest-value dataset this layer could acquire. Its absence means every
+    molecular statement about human fusion is extrapolated from rodents that do not fuse.
+  what_is_known: A transcriptional atlas of the EARLY PUBERTAL human growth plate exists, built from surgical specimens obtained
+    during growth-restricting procedures; it defines two resting-zone stem-like populations and demonstrates direct GH action
+    on human explants (chu2026). Human growth plate VEGF protein has been shown to rise across pubertal development by immunohistochemistry,
+    not sequencing (emons2010).
+  what_is_missing: Nothing at or near fusion. A Europe PMC search combining human, growth plate or physis, transcriptome or
+    single-cell RNA or RNA-seq, and epiphyseal fusion or growth plate closure or fusing growth plate returned 50 records,
+    none of which reports sequencing of human physeal tissue at a defined late-pubertal or fusing stage; the closest are the
+    early-pubertal atlas and rodent growth plate studies.
+  nearest_evidence:
+  - chu2026
+  - emons2010
+  discriminating_experiment: 'Model system: single-nucleus RNA-seq plus Visium or Xenium spatial transcriptomics on human
+    physeal specimens stratified by MRI fusion stage from the biobank proposed in g_l7fuse_002, minimum 5 donors per stage,
+    both sexes. Readout: stage-resolved zonal expression of (i) senescence markers CDKN2A and CDKN1A, (ii) angiogenic VEGFA,
+    and endothelial and pericyte signatures, (iii) apoptotic and necroptotic programmes, (iv) matrix genes COL2A1, COL10A1,
+    ACAN, MMP13, (v) resting-zone stem markers from chu2026. Expected results: the senescence hypothesis predicts CDKN2A rises
+    in resting-zone cells before any other change; the vascular hypothesis predicts endothelial signature appears within the
+    plate before chondrocyte programmes change; the ECM hypothesis predicts MMP13 and COL10A1 rise at the bridging front,
+    whereas the murine pattern (yu2025) would predict they fall.'
+  tractability: 3
+  search_log_ref: g_l7fuse_003
+- gap_id: g_l7fuse_004
+  question: Does the human growth plate at fusion show the same matrix trajectory as the aged mouse plate - accumulating mineral
+    while losing type X collagen and MMP-13 - or the opposite?
+  type: species_gap
+  layer: L7
+  why_it_matters: The only quantitative matrix data on a terminal growth plate come from mice, and they show the degradative
+    machinery being switched OFF as mineral accumulates. If humans do the same, then a matrix-degradation model of fusion
+    is wrong and some additional trigger is needed to convert calcified cartilage into bone. If humans do the opposite, mouse
+    matrix data are actively misleading and should be excluded from human reasoning about fusion.
+  what_is_known: In mice, hypertrophic-zone Ca and P content rose and the mineralised area expanded between 10 and 55 weeks
+    while type X collagen and MMP-13 became undetectable and aggrecan and type II collagen became sparse; the plate remained
+    calcified cartilage and was never replaced by bone (yu2025, mouse). In humans, mineralisation advances from both plate
+    surfaces and first union is by mineralised cartilage acting as metaplastic bone (haines1975, human and dog), which is
+    qualitatively compatible with the murine mineral accumulation but says nothing about the enzymes.
+  what_is_missing: No collagen typing, proteoglycan quantification, MMP or ADAMTS profiling, or elemental analysis has ever
+    been performed on a human growth plate at fusion. Mouse cannot substitute because the endpoint is absent; rabbit matrix
+    composition at fusion has also not been characterised.
+  nearest_evidence:
+  - yu2025
+  - haines1975
+  discriminating_experiment: 'Model system: staged human physeal specimens (g_l7fuse_002) plus rabbit distal femoral plates
+    at defined pre-fusion and fusion stages as a fusing-species positive control. Readout: SEM-EDS elemental mapping for Ca
+    and P plus immunohistochemistry for COL2A1, COL10A1, aggrecan and MMP-13 plus an aggrecan neoepitope antibody, all on
+    serial sections of the same plate. Expected results - matrix degradation model: MMP-13 and neoepitope signal rise at the
+    bridging front in both human and rabbit. Murine-pattern model: MMP-13 and COL10A1 fall while mineral rises, in which case
+    human fusion cannot be a matrix-degradation event and the trigger must be sought in the vasculature or the progenitor
+    pool.'
+  tractability: 3
+  search_log_ref: null
+- gap_id: g_l7fuse_005
+  question: Has DNA methylation or any other epigenetic mark ever been measured in human growth plate chondrocytes as a function
+    of age, pubertal stage or fusion status?
+  type: search_established
+  layer: L7
+  why_it_matters: The epigenetic drift model is the only proposed mechanism that explains why growth plate senescence tracks
+    replication count rather than chronological time, and why different bones in the same endocrine environment senesce on
+    different schedules. It is also the only mechanism for which a decisive assay already exists off the shelf. If the human
+    growth plate methylome has never been measured, the model is not weakly supported - it is untested.
+  what_is_known: Growth plate senescence in rodents is a coordinated molecular programme with bone-size-dependent timing and
+    modulation of IGF, BMP and WNT signalling (lui2018, mouse and rat). Delaying proliferation with dexamethasone delays senescence
+    and fusion in rabbits, implying a replication-counted clock (gafni2001, rabbit). Epigenetic clocks are established for
+    many human tissues but have not been reported for physeal cartilage.
+  what_is_missing: A Europe PMC search combining growth plate or epiphyseal plate, DNA methylation or methylome, human, chondrocyte
+    or cartilage, and puberty or bone age or epiphyseal fusion returned 99 records; screening the top-ranked 20 found no primary
+    study measuring methylation in human growth plate cartilage at any age. A broader query without the human and cartilage
+    constraints returned 441 records dominated by osteoarthritis, bone marrow stromal cells and general skeletal ageing, again
+    with no growth plate methylome.
+  nearest_evidence:
+  - lui2018
+  - gafni2001
+  discriminating_experiment: 'Model system: FACS- or laser-capture-isolated resting-zone and proliferative-zone chondrocytes
+    from human physeal specimens spanning Tanner 2 to fusion (g_l7fuse_002), plus matched peripheral blood as a within-donor
+    chronological control, plus paired early- and late-fusing sites (phalanx versus distal femur) from the same donor where
+    available. Readout: enzymatic methyl-seq with a Horvath-type epigenetic age estimate and differential methylation at IGF,
+    BMP and WNT pathway loci. Expected results - epigenetic drift: resting-zone epigenetic age exceeds donor chronological
+    age and advances faster in early-fusing sites than late-fusing sites within the same donor. Progenitor exhaustion: the
+    residual resting-zone cells are epigenetically young but numerically depleted. Endocrine control alone: no site difference
+    within donor, since both sites see the same estradiol.'
+  tractability: 3
+  search_log_ref: g_l7fuse_005
+- gap_id: g_l7fuse_006
+  question: Is the absence of apoptosis in the fusing human growth plate a real species or process difference, or an artefact
+    of a single specimen?
+  type: contradiction
+  layer: L7
+  why_it_matters: Apoptosis of terminal hypertrophic chondrocytes is the textbook account of how cartilage is cleared during
+    endochondral ossification, and it is the account carried into fusion by default. The only direct human test of it at fusion
+    is negative. Either the textbook is wrong for the fusion step in humans, or the one available human specimen is unrepresentative.
+    Both possibilities have large downstream consequences for how the atlas grades every apoptosis-based rodent result.
+  what_is_known: In the one human growth plate reported as about to fuse, there was not a single TUNEL-positive cell, cleaved
+    caspase-3 was not detected, and electron microscopy showed no apoptosis or autophagy but did show hypoxia and necrosis;
+    unfused plates contained a few TUNEL-positive chondrocytes (emons2009, human). Independently, estrogen-accelerated loss
+    of rabbit resting-zone chondrocytes also did not appear to be apoptotic (nilsson2014_2, rabbit). Against this, apoptosis
+    of hypertrophic chondrocytes is a well-replicated feature of normal endochondral growth in rodents.
+  what_is_missing: Replication in a second human fusing plate, and a positive control demonstrating that the TUNEL assay used
+    would have detected apoptosis had it been present in that tissue block. No modern death-modality markers (RIPK3, MLKL,
+    GSDMD, LC3/p62) have been applied to any human physeal specimen.
+  nearest_evidence:
+  - emons2009
+  - nilsson2014_2
+  discriminating_experiment: 'Model system: staged human physeal specimens (g_l7fuse_002) and rabbit plates at matched stages
+    as a fusing-species control, with DNase-treated sections as TUNEL positive controls on the same slides. Readout: TUNEL,
+    cleaved caspase-3, RIPK3 and phospho-MLKL, LC3 and p62, and pimonidazole or CAIX as a hypoxia marker, scored zone by zone
+    at the bridging front. Expected results - classical apoptosis: caspase-3-positive, TUNEL-positive cells cluster at the
+    front. Regulated necrosis: phospho-MLKL positive, caspase-3 negative. Hypoxic death: hypoxia marker positive with no regulated-death
+    marker, matching the emons2009 ultrastructure. A finding of apoptosis in the rabbit but not the human would establish
+    a genuine species difference at the final step even between two fusing species.'
+  tractability: 3
+  search_log_ref: null
+- gap_id: g_l7fuse_007
+  question: What fraction of the error in predicted adult height is attributable to bone age reading error, what fraction
+    to reference-standard displacement, and what fraction to irreducible biological variance in remaining growth at a given
+    skeletal maturity?
+  type: quantitative_gap
+  layer: L7
+  why_it_matters: Every clinical and pharmacological decision in growth medicine is powered against predicted adult height,
+    and every trial of a growth-promoting agent is judged against a prediction whose error structure has never been decomposed.
+    If most of the error is biological, better bone age reading - including perfect automated reading - cannot improve prediction,
+    and trials need larger n rather than better imaging. If most of the error is measurement, automation should already have
+    improved prediction, which has not been demonstrated.
+  what_is_known: Total 95% prediction intervals are plus or minus 6-8 cm in mid-childhood, narrowing to plus or minus 3-4
+    cm in postmenarcheal girls and to plus or minus 4 cm in boys when the previous year's height increment is known (tanner1975,
+    tanner1983). Manual bone age has interobserver spread of 0.74-0.96 years and intra-observer 95% limits spanning about
+    3-5 years of range (king1994, bull1999), while automated reading has a repeat-measurement SD of 0.17 years (thodberg2009).
+    Critically, a model that omits skeletal age entirely (Khamis-Roche) has errors only slightly larger than the model that
+    uses it (khamis1994) - the single strongest hint that the bone age contribution to prediction accuracy is small. Systematic
+    reference-standard displacement is 2.9 months in one modern US cohort and -2.2 months in an Australian one, with 95% limits
+    of agreement around 2 years (guevel2026, paxton2013).
+  what_is_missing: No published variance decomposition. The Khamis-Roche comparison is reported qualitatively ("only slightly
+    larger") without the numeric error difference, and no study has repeated a prediction on the same child using (a) two
+    independent manual readings, (b) an automated reading, and (c) no bone age at all, against observed adult height.
+  nearest_evidence:
+  - khamis1994
+  - tanner1983
+  - thodberg2009
+  - guevel2026
+  discriminating_experiment: 'Model system: an existing longitudinal cohort with serial hand radiographs and measured adult
+    height (for example the Fels, Zurich or GrowUp Gothenburg series), re-read prospectively. Readout: for each child, adult
+    height predicted by (i) two independent manual GP readings, (ii) two independent manual TW3-RUS readings, (iii) BoneXpert,
+    and (iv) Khamis-Roche with no skeletal age; fit a variance-components model partitioning prediction residual into reader,
+    method, reference-displacement and residual biological terms. Expected results - measurement-dominated: replacing manual
+    with automated bone age materially narrows the 95% prediction interval and the reader variance component is the largest
+    term. Biology-dominated: the automated and no-bone-age predictions have indistinguishable intervals and the residual biological
+    term exceeds 80% of total variance, in which case bone age precision is not the rate-limiting step in growth medicine.'
+  tractability: 4
+  search_log_ref: null
+- gap_id: g_l7fuse_008
+  question: What is the pooled inter-rater and intra-rater error of Greulich-Pyle and Tanner-Whitehouse bone age, in years
+    with a confidence interval, across contemporary multi-ethnic populations?
+  type: quantitative_gap
+  layer: L7
+  why_it_matters: Bone age error is quoted throughout paediatric endocrinology, orthopaedics and forensic age estimation as
+    "about a year", but the number is assembled from small single-centre audits from the 1990s with three or fewer readers,
+    in populations that do not resemble those in which the method is now used - including forensic determinations of legal
+    majority where the consequence of error is a custody decision.
+  what_is_known: Interobserver spread 0.96 years (GP) and 0.74 years (TW2) from 3 registrars reading 50 films (king1994).
+    Intra-observer 95% limits of agreement -2.46 to +2.18 years (GP) and -1.41 to +1.43 years (TW2) from 362 consecutive clinical
+    radiographs (bull1999). Modern trained-reader ICC exceeds 0.9 for both methods across 1725 radiographs and 12 readers,
+    but ICC is not an error in years and inflates with a wide age range; the reported mean absolute GP-versus-TW3-RUS difference
+    of 2.5-3.3 months widens above 180 months of age (tewattanarat2026). Automated precision is SD 0.17 years (thodberg2009).
+    No Fels error in years was located in this sweep.
+  what_is_missing: A Europe PMC search for bone age, Greulich and Pyle, interobserver or inter-rater, and meta-analysis or
+    pooled estimate returned 51 records with no pooled estimate of reader error in years; the one systematic review and meta-analysis
+    found in this area pools machine learning performance, not human reader error, and notes that samples are predominantly
+    US and West European with few studies exploring ethnic differences (dallora2019).
+  nearest_evidence:
+  - king1994
+  - bull1999
+  - tewattanarat2026
+  - dallora2019
+  discriminating_experiment: 'Model system: a prospectively assembled multi-site image set of at least 1000 hand radiographs
+    stratified by sex, chronological age band and self-reported ancestry, read independently by at least 10 readers of mixed
+    seniority, twice, at least 4 weeks apart, using GP, TW3-RUS and Fels, plus BoneXpert. Readout: variance components in
+    years with bootstrap CIs, reported separately by age band, with explicit attention to the 14-19 year band where fusion
+    decisions are made. Expected result under the current assumption: reader SD approximately 0.5 years overall. Expected
+    result if the assumption is wrong: reader SD exceeding 1 year specifically in the peripubertal band, which would invalidate
+    the use of manual bone age for legal age determination at the 18-year threshold.'
+  tractability: 4
+  search_log_ref: g_l7fuse_008
+- gap_id: g_l7fuse_009
+  question: Do blood vessels invade the human growth plate from both the epiphyseal and metaphyseal sides at fusion, and does
+    the first bony bridge form where the two vascular fronts meet?
+  type: species_gap
+  layer: L7
+  why_it_matters: Bidirectional invasion is the only proposed mechanism that explains the specific geometry Haines described
+    - mineralisation advancing from both surfaces, then perforation - and it is the only mechanism that would make fusion
+    a vascular rather than a chondrocyte-autonomous event. It also predicts a different therapeutic target (angiogenesis)
+    from every other hypothesis in this layer.
+  what_is_known: 'Human and canine histology shows tide-line-demarcated mineralisation spreading inward from both plate surfaces
+    before union, union first by mineralised cartilage as metaplastic bone, and then perforation, with single perforations
+    in small early-uniting epiphyses and multiple perforations in large late-uniting ones (haines1975, human and dog). The
+    estrogen-angiogenesis link is rodent: VEGF protein fell after ovariectomy and was restored by estradiol in rat growth
+    plates, and estradiol dose-dependently induced VEGF-121 and VEGF-189 but not VEGF-164 in a rat chondrocyte line; human
+    growth plate VEGF protein rises across pubertal development (emons2010, rat and human). The one human fusing plate showed
+    hypoxia and necrosis, which is hard to reconcile with a plate being actively vascularised (emons2009).'
+  what_is_missing: No vascular imaging of a human growth plate at fusion has been published. The direction of vessel ingrowth
+    relative to the first bridge has never been determined in any species that fuses. Rodent VEGF data cannot address it because
+    rodents do not complete fusion.
+  nearest_evidence:
+  - haines1975
+  - emons2010
+  - emons2009
+  discriminating_experiment: 'Model system: synchrotron phase-contrast or contrast-enhanced micro-CT of intact human physeal
+    blocks from the biobank in g_l7fuse_002, plus rabbit distal femora at defined pre-fusion and fusion stages, with vascular
+    casting. Readout: 3D reconstruction of canal continuity across the plate, scored for whether each nascent bridge is continuous
+    with an epiphyseal canal, a metaphyseal canal, or both, and whether chondrocyte loss (empty lacunae) is proximal or distal
+    to the vascular tip. Expected results - bidirectional invasion: bridges are dual-supplied and vascular tips precede empty
+    lacunae. Chondrocyte-first models: empty lacunae precede vessels and bridges are supplied from the metaphyseal side only,
+    as in ordinary endochondral growth. Hypoxic death: canal density falls before bridging, which would reconcile the emons2009
+    ultrastructure with the Haines geometry.'
+  tractability: 2
+  search_log_ref: null
+- gap_id: g_l7fuse_010
+  question: Is the ORDER in which human epiphyses fuse conserved across populations, or does it vary in the way that the ages
+    of fusion demonstrably do?
+  type: search_established
+  layer: L7
+  why_it_matters: Forensic age estimation, paediatric orthopaedic decision-making and every mechanistic model of site-specific
+    fusion all rest on the assumption that the sequence is a species-level developmental constant while only the timing shifts.
+    If the sequence itself varies, then site-specific fusion is not a fixed developmental programme and a purely endocrine
+    account cannot be complete. If it is conserved despite a two-year timing shift, that dissociation is itself strong evidence
+    for a local, site-intrinsic clock modulated by a systemic signal.
+  what_is_known: 'Timing varies markedly: all ten epiphyses compared between young Bosnian males and the McKern and Stewart
+    North American sample were at least two years advanced in the Bosnian material (schaefer2005). Detailed sequences exist
+    for single populations - 21 epiphyses pairwise-sequenced for beginning and complete union in 258 Bosniak males, where
+    substantial variation in order existed at the individual level but most pairwise relationships were invariant (schaefer2007)
+    - and separate sequences exist for the Portuguese sacrum (cardoso2014) and for the Swedish wrist, knee and ankle by MRI,
+    which fuse in an ascending foot-to-wrist order (kvist2021). Differential growth plate aging by bone size has been demonstrated
+    in rodents (lui2018).'
+  what_is_missing: A Europe PMC search for epiphyseal union or epiphyseal fusion combined with sequence or order of union
+    and population-specific, population differences, ancestry or between populations returned 166 records dominated by forensic
+    age-estimation validation and archaeological population studies; none reported a formal statistical comparison of union
+    SEQUENCE between two or more contemporary populations. Every published sequence is single-population, and the sequences
+    use non-comparable element sets.
+  nearest_evidence:
+  - schaefer2007
+  - schaefer2005
+  - kvist2021
+  discriminating_experiment: 'Model system: harmonised MRI fusion staging of the same element set (distal radius, distal femur,
+    proximal and distal tibia, calcaneus, iliac crest) in at least three contemporary populations differing in fusion timing,
+    using the kvist2020 cartilage-sequence protocol and a common ordinal scale, in cohorts of at least 300 per population.
+    Readout: pairwise Kendall concordance of element rank order within each population, compared between populations, with
+    timing removed by aligning on median age at 50% fusion of a reference element. Expected results - conserved sequence:
+    rank-order concordance between populations is not distinguishable from within-population test-retest concordance, supporting
+    a fixed site-intrinsic programme scaled by a systemic signal. Variable sequence: concordance falls significantly between
+    populations, implicating environment- or ancestry-dependent local modulation and undermining single-population forensic
+    standards.'
+  tractability: 3
+  search_log_ref: g_l7fuse_010
+- gap_id: g_l7fuse_011
+  question: Is the rat terminal growth plate morphology - a bone band sealing the metaphyseal edge with acellular regions
+    - homologous to any stage of human epiphyseal union, or a distinct endpoint?
+  type: species_gap
+  layer: L7
+  why_it_matters: The rat is the workhorse of growth plate endocrinology and pharmacology, and its terminal phenotype is routinely
+    described as if it were fusion or as if the difference from humans were merely quantitative. If the rat endpoint is mechanistically
+    distinct, every rat study of "growth plate closure" is measuring something else, and the atlas must grade rat fusion claims
+    as high risk rather than moderate.
+  what_is_known: 'Aged Wistar rats (62-80 weeks) retain histologically present femoral and tibial growth plates while longitudinal
+    growth has ceased, developing four morphologies absent from young plates: a metaphyseal bone band sealing that edge, acellular
+    regions resistant to resorption, intraplate remodelling and bone formation, and direct bone formation by former growth
+    plate chondrocytes; sporadic proliferation continues but loses synchrony (roach2003, rat). The mouse endpoint is different
+    again - persistent calcified cartilage with loss of type X collagen and MMP-13 (yu2025, mouse) - despite countable bony
+    bridges (samvelyan2022, mouse). Human union destroys the cartilage entirely (haines1975).'
+  what_is_missing: No study has applied the same stains, markers and 3D imaging to rat, mouse, rabbit and human terminal plates
+    in a single comparison, so the descriptive claims sit in incomparable literatures using different methods decades apart.
+  nearest_evidence:
+  - roach2003
+  - yu2025
+  - haines1975
+  - samvelyan2022
+  discriminating_experiment: 'Model system: a single-laboratory four-species comparison - aged rat (80 weeks), aged mouse
+    (55-78 weeks), rabbit at fusion, and staged human physeal specimens - processed identically. Readout: synchrotron micro-CT
+    bridge quantification (staines2018 protocol) plus matched histology for COL2A1, COL10A1, MMP-13, osteocalcin and an empty-lacuna
+    count, plus lineage- or marker-based assessment of whether the bone within the plate derives from chondrocytes. Expected
+    results - homologous endpoints: rat sealed-edge bone and human perforation bone share a chondrocyte-derived signature
+    and appear at the same relative bridge density. Distinct endpoints: rat intraplate bone is osteoblast-derived and appears
+    without the bidirectional mineralisation front seen in human and rabbit, in which case rat growth cessation must be scored
+    as a separate phenotype from fusion throughout the atlas.'
+  tractability: 3
+  search_log_ref: null
+- gap_id: g_l7fuse_012
+  question: Why do different growth plates in the same individual, exposed to the same circulating estradiol, fuse years apart
+    in a reproducible order?
+  type: known_unknown
+  layer: L7
+  why_it_matters: Site-asynchronous fusion is the sharpest constraint any mechanistic model has to satisfy, and it falsifies
+    any purely systemic account. Whatever ends the plate must be a local clock that a systemic signal only modulates. Identifying
+    that local clock would explain skeletal proportion, would explain why estrogen excess shortens limbs preferentially, and
+    would identify the target for any intervention that aims to extend growth at one site.
+  what_is_known: Human fusion proceeds in an ascending foot-to-wrist order with the distal radius last (kvist2021), and pairwise
+    sequences across 21 epiphyses are largely invariant within a population (schaefer2007). In rodents, functional, structural
+    and molecular senescent changes occur earlier in the growth plates of small bones (metacarpals, phalanges) than of large
+    bones (femur, tibia), and the differential involves modulation of IGF, BMP and WNT signalling (lui2018, mouse and rat).
+    Positional identity is established embryonically by HOX-code patterning, which is a plausible but untested source of the
+    site-specific set point.
+  what_is_missing: No human data on site-specific differences in growth plate gene expression, progenitor number or estrogen-receptor
+    abundance. No demonstration in any species that the site-specific clock is cell-autonomous rather than imposed by local
+    mechanics, perfusion or perichondrial signalling.
+  nearest_evidence:
+  - kvist2021
+  - lui2018
+  - schaefer2007
+  discriminating_experiment: 'Model system: paired early-fusing (proximal phalanx or calcaneus) and late-fusing (distal radius
+    or distal femur) physeal specimens from the SAME human donors (g_l7fuse_002), plus heterotopic transplantation of early-
+    and late-fusing rabbit growth plates into reciprocal sites in the same animal. Readout: site-matched single-nucleus RNA-seq
+    and progenitor counts in the human pairs; time to fusion of transplanted rabbit plates in host versus donor site. Expected
+    results - cell-autonomous clock: transplanted plates fuse on their donor schedule and human site pairs differ in senescence
+    markers within donor. Environment-imposed clock: transplanted plates adopt the host site schedule and the human site pairs
+    are transcriptionally indistinguishable, implicating local mechanics or perfusion instead.'
+  tractability: 2
+  search_log_ref: null
+- gap_id: g_l7fuse_013
+  question: What is the full distribution, not the mean, of height gain after menarche, and can the upper tail be predicted
+    prospectively?
+  type: quantitative_gap
+  layer: L7
+  why_it_matters: The clinical rule of thumb "girls grow about 5-7 cm after menarche" is used to counsel families, to decide
+    whether to treat precocious puberty, and to time scoliosis surgery. In the best-measured cohort the mean is 8.0 cm but
+    the standard deviation is 4.9 cm and the observed range runs from 0.2 to 31.1 cm. A rule of thumb whose SD is 60% of its
+    mean, and whose tail is four times its mean, is not a clinical tool; using it as one produces systematic errors in exactly
+    the early-maturing girls in whom the decision matters most.
+  what_is_known: In 793 healthy term-born Swedish girls, mean age at menarche was 13.0 years (SD 1.3, range 8.2-17.2) and
+    postmenarcheal growth averaged 8.0 cm (SD 4.9) with an observed range of 0.2 to 31.1 cm, decreasing with later menarche;
+    menarche occurred at 71.6% (SD 18.8) of the QEPS-specific pubertal growth function, and data available at pubertal onset
+    explained 44% of the variance in menarcheal age (grdstedtbergho2024). Adding menarcheal status to Tanner-Whitehouse height
+    prediction narrows the 95% interval from plus or minus 5 cm to plus or minus 4 cm at age 12 and from plus or minus 4 cm
+    to plus or minus 3 cm at age 13 (tanner1975).
+  what_is_missing: The determinants of the upper tail. No study has reported which prospectively measurable variables at menarche
+    - bone age, MRI fusion stage, height SDS, midparent height, BMI - identify the girls who will gain more than 15 cm. A
+    Europe PMC search combining menarche with height gain, growth after menarche or postmenarcheal, longitudinal or cohort,
+    and centimetres returned 471 records dominated by GnRH-agonist and growth hormone treatment series with predicted rather
+    than observed adult height as the outcome.
+  nearest_evidence:
+  - grdstedtbergho2024
+  - tanner1975
+  discriminating_experiment: 'Model system: a prospective cohort of at least 1000 girls enrolled within 3 months of menarche
+    with baseline height, weight, midparent height, hand radiograph read by BoneXpert, and MRI fusion staging of knee and
+    wrist, followed to measured adult height. Readout: a quantile regression of postmenarcheal height gain on baseline covariates,
+    reporting the 90th percentile explicitly rather than the conditional mean. Expected results - skeletal maturity dominant:
+    MRI fusion stage at menarche explains most of the upper-tail variance and the conditional 90th percentile collapses once
+    it is included. Tempo-independent: the tail persists after adjustment for all baseline maturity measures, which would
+    establish an irreducible biological variance floor on postmenarcheal growth prediction and set the achievable limit for
+    gap g_l7fuse_007.'
+  tractability: 4
+  search_log_ref: g_l7fuse_013
+- gap_id: g_l8gwas_001
+  question: What fraction of the 12,111 independent height-associated SNPs exert their effect through the growth plate chondrocyte,
+    as opposed to through muscle, endocrine tissue, vasculature, or systemic nutrition-sensing tissue?
+  type: quantitative_gap
+  layer: L8
+  why_it_matters: The entire premise of a growth-plate-centred atlas is that the plate is where stature is set. That premise
+    is widely assumed and rarely quantified. If the chondrocyte-attributable fraction is 30% rather than 80%, then large parts
+    of L3-L7 explain a minority of height variance and the atlas's centre of gravity is wrong. It also determines which tissue
+    a therapeutic should target.
+  what_is_known: Richard 2025 generated epigenomic and transcriptomic maps from chondrocytes sampled across multiple growth
+    plates of developing human skeletons and intersected them with height GWAS signal, concluding that regulatory pleiotropy
+    dominates and separating skeletal-element-specific from global-acting variants. Darbellay 2024 showed in mouse that variants
+    overlapping chondrocyte-specific enhancers (2,704 identified, 780 genes) explain height differences better than variants
+    overlapping non-chondrogenic enhancers, establishing enrichment. Yengo 2022 reports that association density is elevated
+    near biologically relevant genes.
+  what_is_missing: Enrichment is not partition. No source states the PERCENTAGE of height SNP heritability attributable to
+    growth-plate chondrocyte regulatory activity, with a confidence interval, benchmarked against competing tissues in the
+    same analysis. The published framing is qualitative ("prime importance of regulatory pleiotropy") rather than a variance
+    decomposition.
+  nearest_evidence:
+  - richard2025
+  - darbellay2024
+  - yengo2022
+  discriminating_experiment: 'Stratified LD-score regression (or equivalent, e.g. sc-linker) partitioning height SNP-heritability
+    across a matched panel of cell-type-specific regulatory annotations that includes human growth-plate chondrocytes by zone
+    (from the Richard 2025 maps), skeletal muscle, hepatocyte, pituitary somatotroph, adipocyte and vascular endothelium,
+    all generated on the same platform to avoid annotation-quality confounding. Readout: proportion of h2-SNP per annotation
+    with standard errors. Under a plate-centric model the chondrocyte annotation takes the largest share and zone-resolved
+    annotations (proliferative/hypertrophic) are individually significant; under a distributed model no single tissue exceeds
+    ~25% and the chondrocyte share is comparable to muscle and endocrine annotations.'
+  tractability: 4
+  search_log_ref: g_l8gwas_001
+- gap_id: g_l8gwas_002
+  question: Do cis-regulatory variants identified in human growth plate chondrocytes have measurable expression effects in
+    situ - i.e. does a growth-plate eQTL catalogue from primary human physeal tissue exist, with donor numbers sufficient
+    to map effects by zone?
+  type: search_established
+  layer: L8
+  why_it_matters: Chromatin accessibility and enhancer maps show where regulatory potential lies, but an eQTL requires genotype-by-expression
+    across many donors and is the direct evidence that a height variant changes gene dosage in the tissue that builds stature.
+    Without it, variant-to-gene assignment in the growth plate rests on accessibility overlap and orthology rather than measured
+    allelic effect, which weakens every causal claim linking L8 to L1-L3.
+  what_is_known: Human chondrocyte epigenomic/transcriptomic maps across skeletal sites now exist (Richard 2025). eQTL catalogues
+    exist for human osteoclasts and for articular/primary cartilage in the osteoarthritis literature, and GTEx covers neither
+    growth plate nor any cartilage tissue.
+  what_is_missing: 'A donor-scale eQTL map of human GROWTH PLATE (physeal) chondrocytes, resolved by zone. Searching yields
+    osteoarthritis articular-cartilage eQTL work, osteoclast eQTL work, and Mendelian-randomization studies using non-skeletal
+    eQTL panels - none is physeal, and none is zone-resolved. The obstacle is structural rather than technical: human growth
+    plate tissue is obtainable only as surgical discard in small numbers, so assembling the tens-to-hundreds of genotyped
+    donors an eQTL scan needs is the binding constraint.'
+  nearest_evidence:
+  - richard2025
+  - darbellay2024
+  discriminating_experiment: 'A multi-centre consortium banking physeal cartilage from routine paediatric orthopaedic procedures
+    (epiphysiodesis, limb realignment, polydactyly correction, amputation), targeting >=150 genotyped donors, with zone separation
+    by laser-capture microdissection and RNA-seq, analysed as a cis-eQTL scan conditioned on age, site and sex. Readout: number
+    of physis-specific eGenes and their overlap with the 12,111 height SNPs. If growth-plate eQTLs are largely shared with
+    other cartilage, the tissue-scarcity problem is partly solvable by proxy tissue; if a substantial fraction are physis-specific,
+    no proxy is adequate and the banking effort is unavoidable.'
+  tractability: 2
+  search_log_ref: g_l8gwas_002
