@@ -1,7 +1,59 @@
 id: mmp9_protease
-name: MMP9
+name: MMP-9 (gelatinase B)
+aliases:
+- MMP9
+- gelatinase B
+- 92 kDa gelatinase
 type: protein
 layer: L5
-stub: true
+stub: false
+summary: 'MMP-9 is not made by chondrocytes. It is supplied by invading cells of bone marrow origin -
+  the chondroclasts/septoclasts at the chondro-osseous junction - and it acts at the last septum of the
+  hypertrophic zone to release matrix-bound angiogenic activity and permit vascular invasion. The Mmp9-null
+  mouse is the cleanest demonstration: hypertrophic chondrocytes still differentiate normally, but apoptosis,
+  vascularisation and ossification are all delayed and the growth plate lengthens progressively to about
+  EIGHT TIMES normal. The phenotype is transient - after three weeks postnatal, compensatory apoptosis
+  and vascularisation remodel the enlarged plate and adult skeletal appearance is normal - so MMP-9 controls
+  the timing of cartilage removal, not whether it happens. That the defect is cell-extrinsic to cartilage
+  is shown directly by rescue with wild-type bone marrow transplantation, and Mmp9-null growth plates
+  in culture show delayed release of an angiogenic activator. No human MMP9 deficiency syndrome is known,
+  so this is a mouse-only mechanism with no human genetic anchor.'
+quantitative:
+- parameter: Growth plate length in Mmp9-null mice relative to wild type
+  value: ~8
+  unit: fold
+  conditions: progressive lengthening before 3 weeks postnatal
+  species: mouse
+  source_ref: vu1998
+  uncertainty: not reported
+- parameter: Age at which compensatory remodelling normalises the Mmp9-null growth plate
+  value: '>3'
+  unit: weeks postnatal
+  conditions: aberrant apoptosis, vascularisation and ossification compensate
+  species: mouse
+  source_ref: vu1998
+  uncertainty: not reported
+localization:
+- 'mouse chondro-osseous junction: MMP-9 expressed by invading marrow-derived chondroclasts, not by chondrocytes
+  (vu1998)'
+- 'human growth plate zonal MMP-9: not established'
 human_evidence: absent
+human_evidence_note: No human MMP9 loss-of-function skeletal phenotype is known and no zonal MMP-9 localisation
+  in human growth plate was located in this sweep.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Entirely murine; the eight-fold phenotype is dramatic but the mouse growth plate
+  never fuses, so the compensation observed may not have a human analogue.
+confidence: C
+key_refs:
+- ref_id: vu1998
+  pmid: '9590175'
+  first_author: Vu TH
+  year: 1998
+  type: primary_abstract_only
+  one_line_finding: Mmp9-null mice have a growth plate lengthened to about eight times normal with delayed
+    apoptosis, vascularisation and ossification, rescued by wild-type bone marrow transplantation
+open_questions:
+- g_l5matrix_009
 last_verified: '2026-08-05'

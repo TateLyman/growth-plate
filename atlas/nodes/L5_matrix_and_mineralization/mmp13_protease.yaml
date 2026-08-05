@@ -1,7 +1,73 @@
 id: mmp13_protease
-name: MMP13
+name: MMP-13 (collagenase-3)
+aliases:
+- MMP13
+- collagenase-3
 type: protein
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'MMP-13 is the chondrocyte-intrinsic collagenase of the hypertrophic zone and is the enzyme that
+  cleaves the triple helix of collagen II in the lower growth plate. Its expression rises steeply from
+  epiphysis to metaphysis in parallel with the loss of type II collagen and the appearance of type X collagen
+  and the type II C-propeptide. Mmp13-null mice have profound growth plate defects: markedly increased
+  hypertrophic domains, delayed endochondral ossification, delayed formation and vascularisation of the
+  primary ossification centre, and significant interstitial collagen accumulation attributable to the
+  missing collagenase cleavage. Unlike the Mmp9-null, these growth plate abnormalities persist into adult
+  life and phenocopy human hereditary chondrodysplasias. There is a human anchor: MMP13 variants cause
+  metaphyseal anadysplasia and, more recently, a frameshift variant causing short stature via a gain-of-function
+  interaction with HSPA5 and ER stress. MMP-13 is also active inside matrix vesicles, where it can activate
+  latent TGF-beta, so it is not solely a bulk collagenase.'
+quantitative:
+- parameter: Hypertrophic zone size in Mmp13-null mice
+  value: markedly increased
+  unit: qualitative; fold not stated in abstract
+  conditions: Mmp13 null mouse growth plate, persisting in adults
+  species: mouse
+  source_ref: inada2004
+  uncertainty: fold change not extracted
+localization:
+- 'mouse growth plate HZ and primary ossification centre: MMP-13 expressed, and collagen cleavage normally
+  occurs there (inada2004)'
+- 'growth plate metaphyseal direction: MMP-13 rises concomitant with loss of type II collagen (little2005)'
+- 'matrix vesicles: active MMP-13 present (dangelo2001)'
+human_evidence: indirect
+human_evidence_note: Human MMP13 variants cause metaphyseal anadysplasia and short stature, but no direct
+  human growth plate MMP-13 zonal quantification was located.
+species_basis:
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: Mouse null and human MMP13 skeletal dysplasia agree in kind; the human zonal
+  expression pattern is inferred.
+confidence: B
+key_refs:
+- ref_id: inada2004
+  pmid: '15563592'
+  first_author: Inada M
+  year: 2004
+  type: primary_abstract_only
+  one_line_finding: Mmp13-null mice have markedly increased hypertrophic domains, interstitial collagen
+    accumulation and delayed primary ossification centre formation persisting into adulthood
+- ref_id: little2005
+  pmid: '15798221'
+  first_author: Little CB
+  year: 2005
+  type: primary
+  one_line_finding: Aggrecan made resistant to MMP cleavage at N341-F342 does not accumulate and the mice
+    develop normally, excluding MMP aggrecanolysis in the growth plate
+- ref_id: dangelo2001
+  pmid: '11145962'
+  first_author: D'Angelo M
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Authentic matrix vesicles contain active MMP-13 capable of activating latent TGF-beta
+- ref_id: lu2026
+  pmid: '41877217'
+  first_author: Lu H
+  year: 2026
+  type: primary_abstract_only
+  one_line_finding: A novel MMP13 frameshift variant causes human short stature via enhanced MMP13-HSPA5
+    interaction and ER stress
+open_questions:
+- g_l5matrix_009
 last_verified: '2026-08-05'

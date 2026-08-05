@@ -1,7 +1,79 @@
 id: adamts4
-name: ADAMTS4
+name: ADAMTS4 (aggrecanase-1)
+aliases:
+- ADAMTS4
+- aggrecanase-1
 type: protein
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'ADAMTS4 is a secreted aggrecanase that cleaves aggrecan at the Glu373-Ala374 bond in the interglobular
+  domain and at further sites in the chondroitin sulphate region, generating the ARGS neoepitope fragments
+  found in human synovial fluid. In mouse it is dispensable: Adamts4-null mice are not protected from
+  surgical osteoarthritis whereas Adamts5-null mice are, and Adamts4/Adamts5 double-null mice are physiologically
+  normal, which means neither aggrecanase is required for skeletal growth or for growth plate development
+  in mouse. In human cartilage explants the division of labour is different - both ADAMTS-4 and ADAMTS-5
+  contribute to aggrecan degradation - so the murine ADAMTS5 dominance should not be assumed for humans.
+  ADAMTS4 is inhibited potently and selectively by TIMP-3 (sub-nanomolar Ki for the N-terminal domain)
+  while TIMP-1, -2 and -4 are weak or inactive.'
+quantitative:
+- parameter: Skeletal phenotype of Adamts4/Adamts5 double-null mice
+  value: none detected
+  unit: physiologically normal
+  conditions: double knockout, standard characterisation
+  species: mouse
+  source_ref: majumdar2007
+  uncertainty: negative result
+- parameter: TIMP-3 N-terminal domain Ki against ADAMTS4
+  value: sub-nanomolar
+  unit: nM
+  conditions: recombinant human enzymes, kinetic assay
+  species: in_vitro_human_cell
+  source_ref: kashiwagi2001
+  uncertainty: reported as sub-nanomolar; exact Ki not extracted
+localization:
+- 'human articular cartilage explants: ADAMTS-4 contributes to aggrecan degradation alongside ADAMTS-5
+  (song2007)'
+- 'human growth plate zonal ADAMTS4: not established'
+human_evidence: indirect
+human_evidence_note: Human evidence is cartilage explant pharmacology and neoepitope detection in synovial
+  fluid; there is no human ADAMTS4 loss-of-function phenotype.
+species_basis:
+- mouse
+- human
+- in_vitro_human_cell
+translation_risk: moderate
+translation_risk_reason: Mouse assigns dominance to ADAMTS5 whereas human explants implicate both, so
+  the species differ in exactly the parameter of interest.
+confidence: C
+key_refs:
+- ref_id: majumdar2007
+  pmid: '17968948'
+  first_author: Majumdar MK
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Adamts4/Adamts5 double knockout mice are physiologically normal and protected from
+    surgical osteoarthritis
+- ref_id: kashiwagi2001
+  pmid: '11278243'
+  first_author: Kashiwagi M
+  year: 2001
+  type: primary
+  one_line_finding: The N-terminal domain of TIMP-3 inhibits ADAMTS4 and ADAMTS5 with sub-nanomolar Ki
+- ref_id: hashimoto2001
+  pmid: '11311239'
+  first_author: Hashimoto G
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: TIMP-3 inhibits ADAMTS4 while TIMP-1, -2 and -4 are weak or inactive
+- ref_id: song2007
+  pmid: '17265492'
+  first_author: Song RH
+  year: 2007
+  type: primary_abstract_only
+  one_line_finding: Aggrecan degradation in human articular cartilage explants is mediated by both ADAMTS-4
+    and ADAMTS-5
+open_questions:
+- g_l5matrix_007
+contradicts:
+- adamts5
 last_verified: '2026-08-05'

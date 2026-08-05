@@ -227,17 +227,23 @@ def main():
                                               "edges/edges.yaml", "edges", "edge_id", dry,
                                               renumber=True)
 
-    # ref renames are scoped to the layer of the shard that supplied them
-    touched = 0
-    for old, val in r_rw.items():
-        if isinstance(val, tuple):
-            new_id, shard_name = val
-            L = LAYER_OF_SHARD.get(shard_name)
-            touched += apply_rewrites({old: new_id}, dry,
-                                      scope_layers=[L] if L else None)
-        else:
-            touched += apply_rewrites({old: val}, dry)
-    touched += apply_rewrites(g_rw, dry)
+    # REF-ID REWRITES ARE DELIBERATELY NOT APPLIED TO NODE FILES.
+    #
+    # Text-rewriting a colliding ref_id cannot be made safe. Layer scoping is not
+    # enough: two shards of the SAME layer (l3core and l3rest) can each use
+    # `zhang2023` for a different paper, so any rewrite touching that layer
+    # corrupts whichever nodes meant the other one. There is no scope narrow
+    # enough, because the shard that authored a given node is not recorded in the
+    # node.
+    #
+    # The sound approach is to resolve by ground truth instead of by text: each
+    # node key_ref carries the pmid the author actually read, so the correct
+    # ref_id is simply whichever bibliography entry holds that pmid. That is what
+    # tools/fix_citations.py does, and it is idempotent and race-tolerant.
+    #
+    # Gap-id rewrites ARE still applied - gap_ids are shard-namespaced
+    # (g_l3rest_001), so they cannot collide across shards in the first place.
+    touched = apply_rewrites(g_rw, dry)
     rw = {k: (v[0] if isinstance(v, tuple) else v) for k, v in r_rw.items()}
     rw.update(g_rw)
 

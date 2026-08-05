@@ -1,0 +1,129 @@
+searches:
+  - gap_id: g_l6mech_001
+    database: Europe PMC
+    exact_query_string: >-
+      (human OR humans OR children OR paediatric) AND ("growth plate" OR physis OR physeal) AND
+      (compression OR "compressive stress" OR "applied load") AND ("growth rate" OR "growth
+      modulation") AND (MPa OR "per MPa" OR sensitivity OR coefficient)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 232
+    screened_count: 25
+    reason_none_qualified: >-
+      No record reports a human physeal stress-growth sensitivity. The top-ranked and all screened
+      records fall into three classes: (a) animal growth modulation with applied stress (halanski2026
+      porcine tethering, 41417440 porcine multi-tether, 41041616 porcine periosteal resection);
+      (b) computational models that apply an animal-derived sensitivity coefficient to human or
+      patient-specific geometry (rodrguez2025; 42244189 decomposition-based stress-modulated spinal
+      growth model; 40227492 personalised multi-scale femoral growth prediction; 42131502 foot
+      progression angle and femoral growth plate mechanics); (c) clinical guided-growth outcome
+      series that report angular correction per month without any stress term (roelen2026,
+      tolk2026). Every quantitative human statement located is model output, not measurement.
+
+  - gap_id: g_l6mech_002
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis) AND (compression OR "sustained load") AND ("dose-response" OR "dose
+      response" OR threshold OR saturation) AND ("growth rate")
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 160
+    screened_count: 25
+    reason_none_qualified: >-
+      No study reports a stress-growth dose-response curve extending to a saturation or damage
+      threshold. Screened records are guided-growth clinical series, implant-design papers (34040660
+      constant-force implant), finite element and bone-adaptation modelling (40396131, rodrguez2025),
+      or single-magnitude animal loading. The only saturation-like result located is temporal rather
+      than magnitude-based (halanski2026: high tether tension advantage disappears by 4 weeks), and
+      the only reported destructive threshold is a combined magnitude-frequency effect in a single
+      3-animal group (mnard2014).
+
+  - gap_id: g_l6mech_003
+    database: Europe PMC
+    exact_query_string: >-
+      (human OR children) AND ("growth plate" OR physis OR physeal) AND ("in vivo") AND (stress OR
+      pressure OR load) AND (measurement OR transducer OR sensor OR instrumented)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 2851
+    screened_count: 25
+    reason_none_qualified: >-
+      No direct in vivo measurement of stress across a human growth plate was found. Screened hits
+      are animal instrumented models (halanski2026 porcine disc pressure transducers - disc, not
+      physis), paediatric implant biomechanics, physeal-sparing ACL reconstruction biomechanics
+      (41059346, 40957368), and computational estimates of physeal loading from gait (42131502,
+      42324072, hucke2023). hucke2023 remains the closest human-facing estimate and its authors
+      explicitly caution that the models are not fully participant-specific in geometry or load
+      cases. The measurement appears method-blocked rather than merely unperformed.
+
+  - gap_id: g_l6mech_007
+    database: Europe PMC
+    exact_query_string: >-
+      (PIEZO1 OR PIEZO2) AND human AND ("growth plate" OR physis OR "epiphyseal plate") AND
+      (immunohistochemistry OR RNAscope OR "in situ hybridization" OR "single-cell" OR spatial OR
+      expression)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 196
+    screened_count: 25
+    reason_none_qualified: >-
+      No record localises PIEZO1 or PIEZO2 in human growth plate tissue. All PIEZO growth plate
+      records screened are murine conditional-knockout or compression studies (brylka2024,
+      tschaffonmller2026, chen2025, chen2025a, chen2026) or reviews of those studies (40765556,
+      41064361, 42098082). The only human PIEZO1 protein data in cartilage located are from
+      osteophytes in osteoarthritic joints, reported inside brylka2024. Human articular and
+      intervertebral-disc PIEZO work exists but is not physeal.
+
+  - gap_id: g_l6mech_009
+    database: Europe PMC
+    exact_query_string: >-
+      (YAP OR TAZ OR YAP1 OR WWTR1 OR Hippo) AND ("growth plate" OR physis) AND (loading OR
+      compression OR mechanical OR mechanotransduction) AND (in vivo OR knockout OR conditional)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 461
+    screened_count: 25
+    reason_none_qualified: >-
+      No study combines chondrocyte-specific Yap1/Wwtr1 deletion with a physeal mechanical challenge
+      and a growth readout. Screened records are in vitro stiffness and hydrogel studies
+      (42082961, 40862770), osteocyte and osteoblast mechanotransduction (41315189 Piezo1-YAP in
+      osteocytes; 38141609 YAP/TAZ in osteoblast precursors), osteoarthritis subchondral bone
+      (41535892), fibrocartilage differentiation, and narrative reviews asserting a growth plate
+      YAP/TAZ role without a primary growth plate loading experiment. This is the pattern of a
+      claim propagated through reviews rather than established by data.
+
+  - gap_id: g_l6mech_011
+    database: Europe PMC
+    exact_query_string: >-
+      ("distraction osteogenesis" OR "limb lengthening") AND (human OR patients OR children) AND
+      (randomi* OR "dose finding" OR "rate comparison") AND ("distraction rate" OR "mm/day" OR
+      rhythm)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 173
+    screened_count: 25
+    reason_none_qualified: >-
+      No human randomised or systematic dose-finding study of distraction rate or rhythm was found.
+      Screened records are device comparisons (external fixator vs motorised nail), adjunctive
+      biologics and biophysical therapies, retrospective outcome series reporting a healing index at
+      the inherited ~1 mm/day rate, and a rabbit feasibility study of supraphysiological-rate
+      distraction with teriparatide (40657227). The 1 mm/day in 4 increments prescription therefore
+      still traces to ilizarov1989 in the canine tibia.
+
+  - gap_id: g_l6mech_013
+    database: Europe PMC
+    exact_query_string: >-
+      (children OR paediatric OR pediatric OR adolescent) AND (immobilization OR immobilisation OR
+      "non-weight bearing" OR "bed rest" OR unloading) AND ("longitudinal growth" OR "bone length"
+      OR "limb length" OR "height velocity") AND (overgrowth OR accelerat* OR increase OR reduc*)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 1414
+    screened_count: 25
+    reason_none_qualified: >-
+      No controlled paediatric unloading study with a longitudinal growth endpoint was found.
+      Screened records are paediatric fracture fixation series in which post-fracture overgrowth is
+      attributed to hyperaemia rather than unloading, growth arrest case reports, and disease
+      cohorts (cerebral palsy, neuromuscular disease) in which disuse is inseparable from nutrition,
+      spasticity and the primary lesion. Adult head-down-tilt bed rest campaigns exist in quantity
+      but all subjects have closed physes.
