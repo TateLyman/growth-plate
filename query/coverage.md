@@ -7,6 +7,17 @@ Generated from the compiled artifacts. Regenerate with `atlas/tools/compile_quer
 
 ---
 
+## Canonical denominator
+
+All coverage percentages in this atlas are stated against **`researched_non_stub_nodes`
+= 578** unless a different base is named inline.
+
+Defined: a node file with `stub: false`, i.e. one that has been researched to full
+schema. Three other counts exist and are NOT interchangeable with it —
+**612** total node files (includes 34 stubs), **34** stubs, and **110** nodes carrying
+`claim_grades`. Earlier reports in this build used 654 and 612 as bases at different
+moments; every figure below is restated against 578.
+
 ## The one-line boundary
 
 **The atlas cannot exceed the measurement record.** Where no one has taken the reading, it

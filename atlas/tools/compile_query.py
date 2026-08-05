@@ -226,6 +226,21 @@ def main():
     }
 
     # ---- parameters.json ----
+    STOP = {"of", "the", "in", "at", "a", "an", "for", "and", "to", "per", "by",
+            "on", "with", "from", "versus", "vs"}
+
+    def norm_param(s):
+        """Aggressive normalisation. The first implementation keyed on the exact
+        parameter-name string, so 'peak height velocity, boys' and 'peak height
+        velocity (boys)' - written by different sweeps - never matched. That
+        criterion found 5 disputed keys in 1350 rows (0.37%), which is
+        implausibly low for a field this fragmented. Now: lowercase, strip
+        punctuation, drop stopwords, sort tokens, so token-permuted and
+        punctuation-variant names collide."""
+        s = re.sub(r"[^a-z0-9 ]", " ", str(s).lower())
+        toks = sorted(t for t in s.split() if t not in STOP and len(t) > 2)
+        return " ".join(toks)
+
     params = defaultdict(list)
     byname = defaultdict(list)
     for nid, n in nodes.items():
@@ -236,10 +251,65 @@ def main():
             row["node_id"] = nid
             row["layer"] = n.get("layer")
             params[nid].append(row)
-            byname[re.sub(r"\s+", " ", str(q.get("parameter", "")).lower()).strip()].append(row)
-    disputed = {k: v for k, v in byname.items()
-                if len({str(r.get("source_ref")) for r in v}) > 1}
+            byname[norm_param(q.get("parameter", ""))].append(row)
+
+    def _num(v):
+        m = re.search(r"[-+]?\d*\.?\d+", str(v).replace(",", ""))
+        return float(m.group()) if m else None
+
+    disputed = {}
+    for k, v in byname.items():
+        srcs = {str(r.get("source_ref")) for r in v}
+        if len(srcs) < 2:
+            continue
+        vals = [x for x in (_num(r.get("value")) for r in v) if x is not None]
+        spread = None
+        if len(vals) > 1 and min(vals) not in (0, None):
+            spread = max(vals) / min(vals)
+        disputed[k] = {
+            "rows": v, "n_sources": len(srcs),
+            "value_spread_ratio": spread,
+            "direction_conflict": bool(spread and spread > 2),
+            "units": sorted({str(r.get("unit")) for r in v}),
+            "unit_clash": len({str(r.get("unit")) for r in v}) > 1,
+        }
     single_lab = {k: v[0] for k, v in byname.items() if len(v) == 1}
+
+    # PHASE 2E, done properly. The first pass looked for the same parameter measured
+    # twice and found 5 keys in 1350 rows. That is not because the atlas hides
+    # disputes - it is because ~94% of parameter names appear exactly ONCE, so
+    # disagreement is never encoded as duplicate rows. It is encoded in the row's own
+    # uncertainty/conditions text, or in the value itself being a range. So classify
+    # every row instead of hunting duplicates.
+    SPREAD_RE = re.compile(
+        r"\brange\b|\bspread\b|varies|disagree|conflict|order of magnitude|"
+        r"method-dependent|depend\w* on (method|technique)|differs? (between|across)|"
+        r"inconsisten", re.I)
+    RANGE_VAL = re.compile(r"\d\s*[-\u2013]\s*\d")
+    multi = {k for k, v in byname.items()
+             if len({str(r.get("source_ref")) for r in v}) > 1}
+    classes = Counter()
+    for nid, rs in params.items():
+        for r in rs:
+            txt = " ".join(str(r.get(f) or "") for f in
+                           ("uncertainty", "conditions", "notes"))
+            if r.get("superseded_model"):
+                c = "superseded"
+            elif r.get("value_unverified"):
+                c = "unverified"
+            elif norm_param(r.get("parameter", "")) in multi:
+                c = "multi_source"
+            elif RANGE_VAL.search(str(r.get("value", ""))):
+                c = "range_value"
+            elif SPREAD_RE.search(txt):
+                c = "spread_documented"
+            elif str(r.get("uncertainty") or "").strip() not in ("", "not reported",
+                                                                "none", "-"):
+                c = "single_source_with_uncertainty"
+            else:
+                c = "single_source_point_no_uncertainty"
+            r["reliability_class"] = c
+            classes[c] += 1
     parameters = {
         "meta": {"warning": "COMPILED - regenerate with tools/compile_query.py",
                  "policy": "where sources conflict, report the SPREAD with the "
@@ -247,6 +317,13 @@ def main():
         "by_node": dict(params),
         "disputed": disputed,
         "single_source_parameters": sorted(single_lab.keys()),
+        "reliability_classes": dict(classes),
+        "reliability_policy": (
+            "Phase 2e. Disputes in this atlas are NOT encoded as duplicate rows - "
+            "~94% of parameter names appear once. They are encoded in the row's own "
+            "uncertainty/conditions text or in a range-valued `value`. "
+            "single_source_point_no_uncertainty is the RISK class: one source, a "
+            "point value, and no stated uncertainty."),
         "superseded_rows": [r for rs in params.values() for r in rs
                             if r.get("superseded_model")],
         "unverified_rows": [r for rs in params.values() for r in rs
