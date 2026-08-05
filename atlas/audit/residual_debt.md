@@ -69,6 +69,24 @@ Carried honestly rather than closed by assertion.
 | **The exposure hole (MR-002)** | Elevated as instructed and still open: the atlas can say what a pathway does but rarely what concentration of anything reaches a chondrocyte in a human. Phase 6 confirmed the cost — in-vivo physeal stress is recorded verbatim as "not measured" and the flow model halts on it. |
 | **Phase 8 is one dataset** | GSE9160 was the highest-value re-analysis target and it has been done. `atlas/quant/dataset_inventory.csv` holds 61 entries and the remainder are untouched. The flagship human scRNA-seq series (GSE288028) is **not fully reusable** — its raw human files were withheld from GEO for identifiability reasons — which is itself a recorded structural limit on what anyone can re-analyse. |
 
+## 4b. Closed after this ledger was written
+
+| item | what happened |
+|---|---|
+| **Reference verification had never been run in full** | The report on disk held **one** entry — every prior run was scoped with `--only`. The README therefore advertised "1 verified" against 1,049 references. Full run: **1,005 resolved OK, 0 metadata mismatches, 0 unresolved, 44 manual, 1 retraction-related.** |
+| **A withdrawn paper was load-bearing** | That one flag was `wu2013`, withdrawn by *J Biol Chem* in 2020, carrying the atlas's only demonstrated environment-to-signalling seam. Traced as **CORR-004**; `validate.py` now errors on an undeclared retracted citation. |
+| **`parameters.csv` was stale** | 820 rows against 1,520 on the nodes. Any figure quoted from the CSV rather than from the nodes was against two-thirds of the record. Regenerated. |
+| **`progress.yaml` was five phases stale** | Claimed phase 2, 633 stubs, "no edges written yet", four sweeps in flight. A resuming session would have restarted finished work. Rewritten. |
+| **`coverage.md` warned about the wrong layers** | Not just stale counts — its evidence-quality heuristic does not predict what the atlas gets wrong. Regenerated from the repository, with the measured per-layer hit rate alongside. |
+| **Context fill** | All MR-004 targets met: zone 53.9%, sex 30.5%, stage 63.8%. Every edge is now determined-from-source or explicitly `unknown`; no nulls remain. |
+| **Five layers had no figure** | L8, L9, L10, L12, L13 generated from the graph. All 14 layers now carry a synthesis and a figure. |
+
+Four of these seven were **tools reporting on themselves incorrectly** rather than work
+left undone — a verification that had never been run at scale, a CSV regenerated from a
+stale tree, a resume file nobody re-read, a coverage file warning on the wrong axis.
+That is the same shape as §5 below and it is worth naming: in a build this long, the
+instruments drift faster than the data.
+
 ## 5. What this ledger is for
 
 Three items in §1 were closed only because a mid-run correction asked for a number and
