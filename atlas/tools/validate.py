@@ -105,6 +105,9 @@ def validate(quota=False):
             r.err(f"gaps/{gid}", f"bad gap type '{g.get('type')}'")
         if g.get("layer") not in layers:
             r.err(f"gaps/{gid}", f"bad layer '{g.get('layer')}'")
+        for rid in (g.get("nearest_evidence") or []):
+            if rid not in known_refs:
+                r.err(f"gaps/{gid}", f"nearest_evidence cites unknown ref '{rid}'")
         gaps_by_layer.setdefault(g.get("layer"), []).append(g)
 
     slogdoc = load(os.path.join(ROOT, "gaps", "search_log.yaml"), {}) or {}

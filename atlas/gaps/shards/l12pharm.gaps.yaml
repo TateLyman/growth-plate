@@ -1,0 +1,93 @@
+gaps:
+  - gap_id: g_l12pharm_001
+    question: >-
+      Does CNP-analogue therapy begun in childhood increase FINAL ADULT HEIGHT in
+      achondroplasia, or does it redistribute growth in time by accelerating
+      velocity without changing the endpoint?
+    type: search_established
+    layer: L12
+    why_it_matters: >-
+      Every approved and investigational CNP analogue is licensed on annualised
+      growth velocity, a surrogate. Growth velocity and adult height dissociate
+      whenever an intervention also advances skeletal maturation - this is exactly
+      what happened historically with some growth-promoting therapies, where early
+      velocity gains were partly or wholly cancelled by earlier fusion. If CNP
+      analogues advance bone age proportionally, the lifetime height benefit could
+      be far smaller than the 1.36-1.57 cm/yr velocity signal implies. Cost,
+      treatment duration, and the risk-benefit of dosing infants all hinge on this.
+      It is also the cleanest available human test of whether the growth plate's
+      total elongation capacity is fixed (finite proliferative capacity, L2) or
+      extensible by signalling.
+    what_is_known: >-
+      Vosoritide raised annualised growth velocity by 1.57 cm/yr (95% CI 1.22-1.93)
+      over 52 weeks in the pivotal phase 3 (n=121). A class meta-analysis of 11
+      studies (N=542; 4 RCTs, n=326) gives a pooled 1.36 cm/yr (95% CI 1.05-1.68).
+      Reported endpoints across the literature are AGV, height Z-score, standing
+      height and upper-to-lower segment ratio. The pivotal trial's authors state
+      explicitly that whether final adult height increases is not known. Open-label
+      extension studies (NCT03424018, NCT03989947) remain active and are the
+      designed route to this answer.
+    what_is_missing: >-
+      No published report of achieved final or near-adult height in a cohort
+      treated with any CNP analogue to skeletal maturity, and no published analysis
+      of whether treatment alters the bone-age-to-chronological-age ratio in a way
+      that would erode the velocity benefit.
+    nearest_evidence: [savarirayan2020, kamrulhasan2026, alfaraj2026]
+    discriminating_experiment: >-
+      Follow the existing open-label extension cohorts to epiphyseal fusion with
+      near-adult height as the prespecified endpoint, and pair it with serial
+      standardised bone age (single automated reader to remove inter-rater error,
+      see L7) so that height-for-bone-age can be tracked, not just height-for-age.
+      Compare against a genotype-matched untreated natural-history cohort, since a
+      placebo arm to maturity is not ethical once an approved therapy exists.
+      Readouts under competing hypotheses - TRUE HEIGHT GAIN: near-adult height
+      exceeds matched natural history by roughly the cumulative velocity increment,
+      with bone age advancing at the same rate as controls. REDISTRIBUTION ONLY:
+      near-adult height converges on natural history while bone age advances faster
+      than controls during treatment. PARTIAL: height gain is real but materially
+      less than the cumulative AGV integral, quantifying the fraction lost to
+      maturation advance.
+    tractability: 4
+    search_log_ref: g_l12pharm_001
+
+  - gap_id: g_l12pharm_002
+    question: >-
+      What concentration of a systemically administered CNP analogue actually
+      reaches growth plate chondrocytes, given that the growth plate is avascular
+      and solutes must diffuse through dense proteoglycan-rich matrix?
+    type: quantitative_gap
+    layer: L12
+    why_it_matters: >-
+      Dose-response, dosing interval, and the design of every next-generation
+      analogue (including once-weekly prodrugs such as navepegritide) rest on an
+      assumed tissue exposure that is inferred from plasma pharmacokinetics. The
+      growth plate's high fixed charge density and avascularity mean plasma
+      concentration is a poor proxy: charged or large molecules are excluded, and
+      the concentration seen by a resting-zone chondrocyte differs from that seen by
+      a hypertrophic one. Without a measured tissue gradient, the relationship
+      between the plasma PK curve and the biological effect is an assumption.
+    what_is_known: >-
+      Plasma PK is well characterised for vosoritide and navepegritide, and dosing
+      regimens (daily versus once-weekly prodrug) are built on it. Weight-band
+      dosing has been derived by population PK modelling. The zonal expression of
+      NPR2 is described in animal tissue.
+    what_is_missing: >-
+      A measured concentration-versus-depth profile for any CNP analogue across the
+      zones of a growth plate, in any species, and hence no empirical basis for
+      whether the effective tissue exposure follows plasma exposure or is
+      diffusion-limited and flattened.
+    nearest_evidence: [savarirayan2020, savarirayan2023]
+    discriminating_experiment: >-
+      Administer a stable-isotope- or fluorophore-labelled CNP analogue to a
+      large-animal model with a growth plate of human-comparable thickness (pig or
+      sheep - rodent plates are too thin for the diffusion question to be
+      meaningful), then measure spatially resolved drug concentration by MALDI
+      imaging mass spectrometry on frozen sections at intervals across a dosing
+      cycle, alongside phospho-VASP or cGMP immunostaining as a pathway-engagement
+      readout by zone. Under diffusion limitation, concentration falls steeply with
+      depth from the vascular front and the resting zone sees a small fraction of
+      plasma levels, predicting that once-weekly high-peak dosing and daily
+      low-peak dosing are NOT equivalent at the target. Under free equilibration,
+      the profile is flat and plasma AUC is an adequate surrogate.
+    tractability: 3
+    search_log_ref: g_l12pharm_002

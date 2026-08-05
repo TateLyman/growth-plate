@@ -1,0 +1,44 @@
+searches:
+  - gap_id: g_l12pharm_001
+    database: Europe PMC
+    exact_query_string: >-
+      vosoritide AND ("final adult height" OR "final height" OR "adult height" OR
+      "near-adult height")
+    filters: 'format=json, pageSize=20, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 64
+    screened_count: 20
+    reason_none_qualified: >-
+      No hit reports achieved final or near-adult height in CNP-analogue-treated
+      patients. The two most likely candidates were screened at abstract level and
+      explicitly excluded: PMID 42306228 (meta-analysis of CNP analogs, 11 studies
+      N=542, 4 RCTs n=326) reports AGV 1.36 cm/yr (95% CI 1.05-1.68), height
+      Z-score, standing height and upper-to-lower segment ratio - no final height;
+      PMID 40821249 (review of clinical and real-world evidence to May 2025) reports
+      AGV ~1.5-2.0 cm/yr and discusses "long-term potential" prospectively rather
+      than reporting attained adult height. The remaining screened hits are surgical
+      integration studies, cost-effectiveness models, dosing/PK modelling, spine and
+      genu varum morphometry, or reviews. Absence is consistent with trial design
+      rather than with reporting failure: the phase 3 extension NCT03424018 is
+      registered as ACTIVE_NOT_RECRUITING, so the cohort has not yet reached
+      skeletal maturity.
+    additional_source_checked: >-
+      ClinicalTrials.gov API v2, query.intr=vosoritide, 2026-08-05: of 12 returned
+      studies the two extension studies (NCT03424018 phase 3 n=119, NCT03989947
+      phase 2 n=73) are ACTIVE_NOT_RECRUITING, consistent with final height data
+      being pending rather than withheld.
+
+  - gap_id: g_l12pharm_002
+    database: Europe PMC
+    exact_query_string: >-
+      vosoritide AND achondroplasia AND (randomi* OR "growth velocity")
+    filters: 'format=json, pageSize=12, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 134
+    screened_count: 12
+    reason_none_qualified: >-
+      Screened hits report plasma pharmacokinetics and population-PK-derived
+      weight-band dosing (e.g. PMID 38649657) but none reports a measured drug
+      concentration within growth plate tissue or across its zones. Tissue exposure
+      at the target is treated throughout the literature as inferred from plasma
+      exposure rather than measured, which is the substance of this gap.

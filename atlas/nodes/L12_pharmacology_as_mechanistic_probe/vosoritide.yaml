@@ -1,9 +1,96 @@
 id: vosoritide
 name: Vosoritide
+aliases: [BMN-111, BMN 111, Voxzogo]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Vosoritide is a recombinant CNP analogue engineered for resistance to
+  neutral-endopeptidase degradation, giving it a plasma half-life long enough for
+  once-daily subcutaneous dosing where native CNP is cleared within minutes. It
+  acts on NPR2 in growth plate chondrocytes, raising cGMP and activating PKG-II,
+  which antagonises the FGFR3-MAPK/ERK brake that is constitutively overactive in
+  achondroplasia. Mechanistically it is therefore a downstream bypass rather than
+  a correction of the causal receptor: it does not reduce FGFR3 signalling, it
+  opposes its output. The pivotal 52-week phase 3 trial (NCT03197766, n=121,
+  ages 5 to <18y, 15.0 ug/kg/day) raised annualised growth velocity by an adjusted
+  mean 1.57 cm/year versus placebo (95% CI 1.22-1.93). Efficacy has since been
+  extended to children under 5 years, and a phase 2 basket trial has tested the
+  same agent in other genetic short stature causes including ACAN and NPR2
+  deficiency - the latter being a direct mechanistic test, since NPR2 haploinsufficiency
+  impairs the very receptor vosoritide agonises. The critical unresolved question is
+  stated by the pivotal trial's own authors: growth velocity is a surrogate, and
+  whether final adult height increases is not established by these data.
+quantitative:
+  - parameter: adjusted mean difference in annualised growth velocity vs placebo
+    value: '1.57'
+    unit: cm/yr
+    conditions: >-
+      52-week phase 3 RCT NCT03197766, vosoritide 15.0 ug/kg/day subcutaneous daily,
+      children with genetically confirmed achondroplasia aged 5 to <18 years
+    species: human
+    source_ref: savarirayan2020
+    uncertainty: 95% CI 1.22-1.93
+  - parameter: randomised participants, pivotal phase 3
+    value: '121'
+    unit: participants
+    conditions: 60 vosoritide / 61 placebo; 119 completed; 24 sites, 7 countries
+    species: human
+    source_ref: savarirayan2020
+    uncertainty: not applicable (count)
+  - parameter: dose, pivotal phase 3
+    value: '15.0'
+    unit: ug/kg/day
+    conditions: once-daily subcutaneous, caregiver-administered at home
+    species: human
+    source_ref: savarirayan2020
+    uncertainty: single dose level in this trial
+localization:
+  - "human growth plate: acts on NPR2-expressing chondrocytes; zonal site of action not directly demonstrated in treated humans"
+human_evidence: direct
+human_evidence_note: >-
+  Multiple randomised, double-blind, placebo-controlled trials in children with
+  achondroplasia with a prespecified growth-velocity endpoint; regulatory approval
+  followed.
+species_basis: [human, mouse]
+translation_risk: low
+translation_risk_reason: >-
+  The efficacy claim rests on human RCTs, not on animal inference. Residual
+  translation risk concerns MECHANISM rather than effect: the zonal site of action
+  and the partition between proliferation, matrix synthesis and hypertrophic volume
+  are inferred from mouse work, not measured in treated human plates.
+confidence: A
+key_refs:
+  - ref_id: savarirayan2020
+    pmid: '32891212'
+    first_author: Savarirayan R
+    year: 2020
+    type: primary
+    one_line_finding: >-
+      Phase 3 RCT (n=121): +1.57 cm/yr annualised growth velocity vs placebo
+      (95% CI 1.22-1.93) at 52 weeks; authors state final adult height effect unknown.
+  - ref_id: savarirayan2024
+    pmid: '37984383'
+    first_author: Savarirayan R
+    year: 2024
+    type: primary
+    one_line_finding: >-
+      Phase 2 RCT extending vosoritide to children aged 3-59 months across three
+      sequential age cohorts.
+  - ref_id: dauber2026
+    pmid: '41967490'
+    first_author: Dauber A
+    year: 2026
+    type: primary
+    one_line_finding: >-
+      Phase II basket trial testing vosoritide in RASopathies, ACAN and NPR2
+      deficiency - extending the agent beyond FGFR3 disease.
+  - ref_id: alfaraj2026
+    pmid: '42026358'
+    first_author: Alfaraj GA
+    year: 2026
+    type: meta_analysis
+    one_line_finding: Systematic review and meta-analysis of vosoritide efficacy and safety.
+open_questions: []
+contradicts: []
 last_verified: '2026-08-05'
-aliases:
-- BMN-111
