@@ -1,0 +1,122 @@
+# Search log for shard l2daudit (phase 2d canonical-mechanism audit).
+# All queries were run against the Europe PMC REST search endpoint:
+#   https://www.ebi.ac.uk/europepmc/webservices/rest/search
+#     ?query=<exact_query_string>&format=json&pageSize=25&resultType=lite
+# Date run for every entry: 2026-08-05.
+searches:
+
+  - gap_id: g_l2d_001
+    database: Europe PMC
+    exact_query_string: '(Prkg1 OR cGKI OR "protein kinase G I") AND (Prkg2 OR cGKII) AND (double knockout OR double-deficient OR compound mutant) AND (cartilage OR bone OR growth plate)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit, no publication-type limit'
+    date_run: '2026-08-05'
+    hit_count: 19
+    screened_count: 19
+    reason_none_qualified: >-
+      No hit reports a cGKI/cGKII double mutant in cartilage or growth plate, in any species. The
+      skeletal hits are single-gene Prkg2 studies (PRKG1 aortopathy, PRKG2 bone mass and mechanical
+      loading, PRKG2 diabetic bone loss) or non-skeletal (granulosa cells, VSMC, Neospora, myelin,
+      sensory axon bifurcation). The experiment proposed independently by chikuda2004 (2004) and
+      agoston2007 (2007) has still not been performed 22 and 19 years later. This is a
+      search_established null, not an absence of interest.
+
+  - gap_id: g_l2d_002
+    database: Europe PMC
+    exact_query_string: 'TITLE_ABS:"guanylyl cyclase-B" AND TITLE_ABS:(growth plate OR cartilage) AND TITLE_ABS:(immunohistochem* OR localization OR expression)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 10
+    screened_count: 10
+    reason_none_qualified: >-
+      Ten hits, none carrying a zonal GC-B protein map of growth plate. Seven are non-skeletal
+      (pituitary somatolactotropes, gonadotrope lines, pericytes, rhabdomyosarcoma, zebrafish nppcl,
+      adult cardiac). The one skeletal candidate, tamura2004 (PMID 15572448, "Critical roles of the
+      guanylyl cyclase B receptor in endochondral ossification"), was retrieved and read: it reports
+      receptor mRNA expression in bone and the null phenotype, with no zonal map and no
+      immunohistochemistry by zone. The prehypertrophic-restricted GC-B claim asserted in nakao2015
+      as a citation therefore remains untraced to a primary and is a candidate grade X claim; logged
+      to atlas/audit/contradictions.md as well.
+
+  - gap_id: g_l2d_003
+    database: Europe PMC
+    exact_query_string: 'TITLE_ABS:FGFR3 AND TITLE_ABS:(ubiquitination OR ubiquitylation OR "c-Cbl")'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 16
+    screened_count: 16
+    reason_none_qualified: >-
+      No hit adjudicates the sign disagreement between cho2004 and Monsonego-Ornan et al. 2004. The
+      two relevant skeletal hits extend rather than resolve it - PMID 18485666 (Sprouty 2 disturbs
+      FGFR3 degradation in thanatophoric dysplasia type II) and PMID 12297284 (FGF receptor
+      ubiquitylation depends on tyrosine kinase activity) - and neither compares mutant with
+      wild-type ubiquitination at endogenous expression level in chondrocytes. The remainder are
+      oncology (bladder, oropharyngeal, glioma) or unrelated. Contradiction stands open.
+
+  - gap_id: g_l2d_004
+    database: Europe PMC
+    exact_query_string: '(NPR2 OR "guanylyl cyclase-B") AND (PPP1 OR PP2A OR PPP2 OR PPP4 OR PPP5) AND (dephosphorylation) AND (growth plate OR chondrocyte)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 55
+    screened_count: 25
+    reason_none_qualified: >-
+      The only on-target hits are the two 2017 papers already held (shuhaibar2017, robinson2017), the
+      2014 ovarian-follicle antecedent (PMID 25183874), a 2024 follicle phosphatase-mapping study
+      (PMID 37774352) which is not growth plate, and a pharmacology paper (PMID 33986191, LB-100
+      plus BMN-111) which uses a broad inhibitor and does not identify the enzyme. No study assigns
+      the growth plate NPR2 phosphatase to a specific catalytic or regulatory subunit. Remaining hits
+      were yeast/mTOR autophagy noise from the PPP2 token.
+
+  - gap_id: g_l2d_005
+    database: Europe PMC
+    exact_query_string: '(Indian hedgehog OR Ihh) AND (PTHrP-independent OR "independently of PTHrP") AND (perichondri* OR relay OR direct) AND (growth plate OR chondrocyte)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 8
+    screened_count: 8
+    reason_none_qualified: >-
+      All hits restate the mak2008 / kobayashi2005 result or review it. None separates Ihh from
+      general Hedgehog pathway activity with an Ihh-specific reagent, and none tests Smo removal in
+      perichondrium against periarticular chondrocytes to discriminate direct action from a
+      perichondrial relay. The relay hypothesis raised in stjacques1999 (1999) has never been tested
+      directly.
+
+  - gap_id: g_l2d_006
+    database: Europe PMC
+    exact_query_string: '(growth plate senescence OR "resting zone") AND (clonal OR lineage tracing OR Confetti) AND (catch-up growth OR growth inhibition OR hypothyroid)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 11
+    screened_count: 11
+    reason_none_qualified: >-
+      The clonal lineage-tracing literature (mizuhashi2018, newton2019 and descendants) and the
+      growth-plate-senescence literature (schrier2006, marino2008, gafni2001) do not intersect in any
+      hit. No study performs clonal tracing in a growth-inhibited animal, and no study compares
+      resting-zone clone number at MATCHED BODY SIZE rather than matched age, which is the comparison
+      the conservation claim actually asserts.
+
+  - gap_id: g_l2d_007
+    database: Europe PMC
+    exact_query_string: 'PTH1R AND (Blomstrand) AND (allele OR allelic OR expression OR silencing OR imprint*)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 9
+    screened_count: 9
+    reason_none_qualified: >-
+      Case reports and reviews of Blomstrand chondrodysplasia; none investigates the mechanism of the
+      unexpressed paternal allele reported in jobert1998, and none reports allele-specific expression
+      or methylation analysis at the PTH1R locus. The n=1 genotype anomaly at the foot of the
+      loss-of-function pole of the human PTH1R dose-response series has never been followed up.
+
+  - gap_id: g_l2d_008
+    database: Europe PMC
+    exact_query_string: '(p38 AND ERK) AND (chondrocyte hypertroph* OR growth plate) AND (opposite OR antagonis* OR reciprocal)'
+    filters: 'format=json, pageSize=25, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 14
+    screened_count: 14
+    reason_none_qualified: >-
+      Hits address p38 or ERK singly in chondrocytes, or address both in osteoarthritic cartilage
+      rather than growth plate. None reports zonal phospho-ERK and phospho-p38 in situ, and none
+      manipulates the two arms combinatorially in a growth plate system. The antagonism is asserted
+      in the discussion of agoston2007 and has not been tested since.

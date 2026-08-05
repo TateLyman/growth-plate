@@ -1451,3 +1451,230 @@ searches:
     not cell number per unit plate area, and none stratifies by pubertal stage or by proximity to fusion. Everything reporting
     resting-zone cell counts as a function of age is rodent or rabbit. No human stereological series exists, so the number
     needed to discriminate depletion-causes-fusion from fusion-imposed-on-a-depleted-plate has never been measured.
+- gap_id: g_l0l9_001
+  database: Europe PMC
+  exact_query_string: (("beta-klotho" OR KLB OR FGF21) AND (human) AND ("growth plate" OR physis OR "epiphyseal cartilage"))
+    AND (expression OR immunohistochemistry OR localization)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 166
+  screened_count: 25
+  reason_none_qualified: Not one record reports beta-Klotho (KLB) detection in human growth plate cartilage. The retrieved
+    set is dominated by FGF21 metabolic biology, osteoarthritis and osteoporosis reviews, and FGF19/FGFR4 cartilage work.
+    The closest skeletal records are Chen 2025 (FGF19 disrupting cartilage development via FGFR4/beta-catenin, mouse) and
+    a 2023 paper on FGF21-GH receptor crosstalk in a non-physeal context. The only growth-plate-specific FGF21 papers remain
+    wu2012 and wu2013, both mouse, and both were retrieved by a separate targeted query (`FGF21 AND chondrocyte AND "growth
+    hormone" AND AUTH:"De Luca F"`, 2 hits, both screened and both cited here).
+- gap_id: g_l0l9_003
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis) AND (human) AND (methylome OR "DNA methylation" OR bisulfite OR "450K" OR
+    EPIC) AND (chondrocyte OR cartilage OR zone)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 490
+  screened_count: 25
+  reason_none_qualified: No human growth plate methylation dataset at any resolution. The screened set splits into osteoarthritis
+    articular-cartilage methylation (the large majority), rodent growth plate work (yanagihara2025 Dnmt1, and a mouse FLIM
+    metabolic-quiescence paper), miRNA rather than methylation regulation of growth plate cartilage, and general epigenetics
+    reviews. The only physis-specific methylation measurement retrieved anywhere in this sweep is nilsson2005, which is rabbit.
+    A companion query restricted to rabbit/human plus senescence returned the same result.
+- gap_id: g_l0l9_004
+  database: Europe PMC
+  exact_query_string: (imprinted OR imprinting OR "parent-of-origin") AND ("growth plate" OR physis OR "epiphyseal cartilage")
+    AND (human) AND (expression OR allele-specific)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 316
+  screened_count: 25
+  reason_none_qualified: No allele-specific expression or imprinting-status measurement in human growth plate cartilage. The
+    nearest records are PLAGL1-IGF2 in postnatal mandibular condyle (not the long-bone physis and not allele-resolved in human),
+    GRB10 association with bone growth in canine and human populations (association only, no physeal tissue), and clinical
+    imprinting-disorder series (Temple, Silver-Russell) that report stature but no tissue. All remaining hits are reviews
+    of IGF2 abnormalities or unrelated skeletal pathology.
+- gap_id: g_l0l9_007
+  database: Europe PMC
+  exact_query_string: (("de novo mutation" OR "de novo variant") AND (height OR stature) AND (population OR cohort) AND (normal
+    range OR general population)) AND (PUB_TYPE:"Journal Article" NOT PUB_TYPE:"Review")
+  filters: format=json, pageSize=25, resultType=lite, primary research only, no date limit
+  date_run: '2026-08-05'
+  hit_count: 1172
+  screened_count: 25
+  reason_none_qualified: Every screened record is a syndromic case report or small case series in which a de novo variant
+    causes a named disorder that includes short or tall stature - Robinow, Wiedemann-Steiner, Rubinstein-Taybi, Kleefstra,
+    Coffin-Siris, Noonan, Schmid metaphyseal chondrodysplasia, trichorhinophalangeal syndrome and similar. Not one record
+    estimates the contribution of de novo mutation to normal-range stature, relates de novo burden to height SDS in a population
+    cohort, or tests paternal age against offspring height conditional on parental height. This null is the basis for deleting
+    the `de_novo_variant_growth` stub rather than researching it.
+- gap_id: g_l2d_001
+  database: Europe PMC
+  exact_query_string: (Prkg1 OR cGKI OR "protein kinase G I") AND (Prkg2 OR cGKII) AND (double knockout OR double-deficient
+    OR compound mutant) AND (cartilage OR bone OR growth plate)
+  filters: format=json, pageSize=25, resultType=lite, no date limit, no publication-type limit
+  date_run: '2026-08-05'
+  hit_count: 19
+  screened_count: 19
+  reason_none_qualified: No hit reports a cGKI/cGKII double mutant in cartilage or growth plate, in any species. The skeletal
+    hits are single-gene Prkg2 studies (PRKG1 aortopathy, PRKG2 bone mass and mechanical loading, PRKG2 diabetic bone loss)
+    or non-skeletal (granulosa cells, VSMC, Neospora, myelin, sensory axon bifurcation). The experiment proposed independently
+    by chikuda2004 (2004) and agoston2007 (2007) has still not been performed 22 and 19 years later. This is a search_established
+    null, not an absence of interest.
+- gap_id: g_l2d_002
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:"guanylyl cyclase-B" AND TITLE_ABS:(growth plate OR cartilage) AND TITLE_ABS:(immunohistochem*
+    OR localization OR expression)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 10
+  screened_count: 10
+  reason_none_qualified: 'Ten hits, none carrying a zonal GC-B protein map of growth plate. Seven are non-skeletal (pituitary
+    somatolactotropes, gonadotrope lines, pericytes, rhabdomyosarcoma, zebrafish nppcl, adult cardiac). The one skeletal candidate,
+    tamura2004 (PMID 15572448, "Critical roles of the guanylyl cyclase B receptor in endochondral ossification"), was retrieved
+    and read: it reports receptor mRNA expression in bone and the null phenotype, with no zonal map and no immunohistochemistry
+    by zone. The prehypertrophic-restricted GC-B claim asserted in nakao2015 as a citation therefore remains untraced to a
+    primary and is a candidate grade X claim; logged to atlas/audit/contradictions.md as well.'
+- gap_id: g_l2d_003
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:FGFR3 AND TITLE_ABS:(ubiquitination OR ubiquitylation OR "c-Cbl")
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 16
+  screened_count: 16
+  reason_none_qualified: No hit adjudicates the sign disagreement between cho2004 and Monsonego-Ornan et al. 2004. The two
+    relevant skeletal hits extend rather than resolve it - PMID 18485666 (Sprouty 2 disturbs FGFR3 degradation in thanatophoric
+    dysplasia type II) and PMID 12297284 (FGF receptor ubiquitylation depends on tyrosine kinase activity) - and neither compares
+    mutant with wild-type ubiquitination at endogenous expression level in chondrocytes. The remainder are oncology (bladder,
+    oropharyngeal, glioma) or unrelated. Contradiction stands open.
+- gap_id: g_l2d_004
+  database: Europe PMC
+  exact_query_string: (NPR2 OR "guanylyl cyclase-B") AND (PPP1 OR PP2A OR PPP2 OR PPP4 OR PPP5) AND (dephosphorylation) AND
+    (growth plate OR chondrocyte)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 55
+  screened_count: 25
+  reason_none_qualified: The only on-target hits are the two 2017 papers already held (shuhaibar2017, robinson2017), the 2014
+    ovarian-follicle antecedent (PMID 25183874), a 2024 follicle phosphatase-mapping study (PMID 37774352) which is not growth
+    plate, and a pharmacology paper (PMID 33986191, LB-100 plus BMN-111) which uses a broad inhibitor and does not identify
+    the enzyme. No study assigns the growth plate NPR2 phosphatase to a specific catalytic or regulatory subunit. Remaining
+    hits were yeast/mTOR autophagy noise from the PPP2 token.
+- gap_id: g_l2d_005
+  database: Europe PMC
+  exact_query_string: (Indian hedgehog OR Ihh) AND (PTHrP-independent OR "independently of PTHrP") AND (perichondri* OR relay
+    OR direct) AND (growth plate OR chondrocyte)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 8
+  screened_count: 8
+  reason_none_qualified: All hits restate the mak2008 / kobayashi2005 result or review it. None separates Ihh from general
+    Hedgehog pathway activity with an Ihh-specific reagent, and none tests Smo removal in perichondrium against periarticular
+    chondrocytes to discriminate direct action from a perichondrial relay. The relay hypothesis raised in stjacques1999 (1999)
+    has never been tested directly.
+- gap_id: g_l2d_006
+  database: Europe PMC
+  exact_query_string: (growth plate senescence OR "resting zone") AND (clonal OR lineage tracing OR Confetti) AND (catch-up
+    growth OR growth inhibition OR hypothyroid)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 11
+  screened_count: 11
+  reason_none_qualified: The clonal lineage-tracing literature (mizuhashi2018, newton2019 and descendants) and the growth-plate-senescence
+    literature (schrier2006, marino2008, gafni2001) do not intersect in any hit. No study performs clonal tracing in a growth-inhibited
+    animal, and no study compares resting-zone clone number at MATCHED BODY SIZE rather than matched age, which is the comparison
+    the conservation claim actually asserts.
+- gap_id: g_l2d_007
+  database: Europe PMC
+  exact_query_string: PTH1R AND (Blomstrand) AND (allele OR allelic OR expression OR silencing OR imprint*)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 9
+  screened_count: 9
+  reason_none_qualified: Case reports and reviews of Blomstrand chondrodysplasia; none investigates the mechanism of the unexpressed
+    paternal allele reported in jobert1998, and none reports allele-specific expression or methylation analysis at the PTH1R
+    locus. The n=1 genotype anomaly at the foot of the loss-of-function pole of the human PTH1R dose-response series has never
+    been followed up.
+- gap_id: g_l2d_008
+  database: Europe PMC
+  exact_query_string: (p38 AND ERK) AND (chondrocyte hypertroph* OR growth plate) AND (opposite OR antagonis* OR reciprocal)
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 14
+  screened_count: 14
+  reason_none_qualified: Hits address p38 or ERK singly in chondrocytes, or address both in osteoarthritic cartilage rather
+    than growth plate. None reports zonal phospho-ERK and phospho-p38 in situ, and none manipulates the two arms combinatorially
+    in a growth plate system. The antagonism is asserted in the discussion of agoston2007 and has not been tested since.
+- gap_id: g_l6l5_001
+  database: Europe PMC
+  exact_query_string: human AND ("growth plate" OR physis OR physeal) AND (histomorphometry OR "zone height" OR "hypertrophic
+    zone" OR "cells per column") AND (tension-band OR hemiepiphysiodesis OR "guided growth" OR tether OR "applied load" OR
+    compression)
+  filters: resultType=lite, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 716
+  screened_count: 25
+  reason_none_qualified: 'No record reports zonal histomorphometry of a human growth plate with a known applied stress. The
+    screened records fall into four classes: (a) clinical guided-growth technique and outcome reviews reporting angular correction
+    only (42299327, tolk2026-class series); (b) large-animal tethering studies with histology but non-human tissue (41417440
+    kyphotic swine multi-tether; 41041616 porcine periosteal resection; 41560384 and 40765624 rabbit); (c) computational models
+    that impose the animal stress-growth coefficient on human geometry; (d) unrelated paediatric orthopaedic and pharmacology
+    records retrieved on the term "growth plate". The two human tissue histomorphometry references in the atlas (byers2000,
+    rodriguez1992) have no mechanical history attached to the specimens.'
+- gap_id: g_l6l5_003
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis OR physeal) AND (compression OR "mechanical loading" OR "compressive stress"
+    OR strain) AND ("alkaline phosphatase" OR TNAP OR ALPL OR pyrophosphate OR "matrix vesicle" OR "provisional calcification")
+  filters: resultType=lite, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 2564
+  screened_count: 25
+  reason_none_qualified: 'No record measures TNAP activity, extracellular pyrophosphate, matrix vesicle yield or vesicle cargo
+    in a mechanically loaded growth plate in any species. Screened records are: paediatric fracture and trauma imaging series
+    (42220951, 41399348, 42038782, 40496262) retrieved on "physeal" plus "compression fracture"; hypophosphatasia and osteopontin
+    genetics with no mechanical arm (42137584, 41293326, 39728440); the human growth plate niche proteomics paper (40781081
+    = xie2025) which is unloaded; and the PIEZO1-cilium compression paper (41194970 = chen2025) which reads out degeneration
+    and ossification, not mineralization chemistry. The nearest existing result, chen2025a, measures ferroptosis rather than
+    the Pi/PPi system.'
+- gap_id: g_l6l5_004
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis OR physeal) AND (compression OR "mechanical loading" OR tension OR strain)
+    AND ("collagen cross-link" OR "collagen crosslink" OR pyridinoline OR "lysyl oxidase" OR LOX)
+  filters: resultType=lite, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 517
+  screened_count: 25
+  reason_none_qualified: Nothing measures collagen crosslink density or lysyl oxidase activity in a loaded growth plate. Screened
+    hits are crosslinking in other tissues (36302059 dystrophic muscle passive stiffness; 32071954 ovariectomised mouse bone;
+    37261462 perilacunar bone composition; 41303312 aortic valve ECM), lysyl oxidase in non-physeal skeletal compartments
+    (38635757 megakaryocyte-specific Lox deletion; 37298730 cartilage calcification via matrix vesicles and LOX in CD11b deficiency),
+    articular cartilage tissue engineering under mechanical stimulus (38053849), and reviews. The combination "growth plate"
+    plus "crosslink" plus "load" returns no primary in any species.
+- gap_id: g_l6l5_005
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis OR physeal) AND human AND (modulus OR stiffness OR "mechanical properties")
+    AND (hydrated OR "tissue level" OR indentation OR "unconfined compression") AND (zone OR zonal OR reserve OR proliferative
+    OR hypertrophic)
+  filters: resultType=lite, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 501
+  screened_count: 25
+  reason_none_qualified: No record reports a tissue-scale, hydrated, zonally resolved modulus for a human weight-bearing physis.
+    The only human physeal modulus data retrieved is 40781081 (= xie2025), which is NANOSCALE sharp-tip AFM on cryosections
+    of phalangeal and tibial plates and returns 130.7 MPa (RZ) and 416.2 MPa (HZ) - two to three orders above every tissue-scale
+    animal measurement. The remaining zonal mechanical records are animal (35245713 bovine growth plate material properties
+    by anatomic location; sergerie2009 porcine; eckstein2022 and radhakrishnan2004 rabbit), or concern articular cartilage,
+    engineered constructs and decellularised matrices. The three-orders-of-magnitude spread and the disagreement about gradient
+    DIRECTION therefore stand unresolved, and no study measures both length scales on the same specimen.
+- gap_id: g_l6l5_014
+  database: Europe PMC
+  exact_query_string: human AND ("growth plate" OR physis OR physeal) AND (loaded OR loading OR compression) AND (aggrecan
+    OR proteoglycan OR "collagen II" OR glycosaminoglycan OR matrix) AND (biopsy OR explant OR "in vivo")
+  filters: resultType=lite, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 4398
+  screened_count: 25
+  reason_none_qualified: No record assays matrix composition of human physeal tissue under a known applied load. The screened
+    set is dominated by articular cartilage and intervertebral disc mechanobiology (42082961, 39934857, 41608144, 41376803,
+    42276983), tissue-engineered constructs (41767232, 41845215), animal tethering and growth modulation (41041616, 40836185
+    = halanski2026), paediatric fracture fixation with finite element analysis (41723475), and a swine physeal allograft study
+    (41485130). The only human physeal loading experiment on record loads epiphysiodesis biopsies at 0.4 N and 0.77 Hz for
+    30 minutes and reads out transcription, not matrix composition. Human physeal matrix has been characterised only WITHOUT
+    load (xie2025, zoehrer2025).

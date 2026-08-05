@@ -1,0 +1,359 @@
+gaps:
+
+- gap_id: g_l0l9_001
+  question: >-
+    Is beta-Klotho (KLB) expressed in human growth plate chondrocytes, and if so in which zones,
+    such that the FGF21-FGFR1-KLB route by which undernutrition suppresses murine bone growth
+    could operate in humans at all?
+  type: search_established
+  layer: L3
+  why_it_matters: >-
+    FGF21/beta-Klotho is the only demonstrated molecular route by which systemic caloric state
+    reaches the growth plate chondrocyte OUTSIDE the GH/IGF-1 axis. If KLB is absent from human
+    growth plate cartilage the entire mouse mechanism is untranslatable and the L10 undernutrition
+    layer connects to L3 only through L4; if it is present and zonally restricted, it is a
+    druggable node sitting directly on the environment-to-plate path. Every stunting intervention
+    argument currently assumes the GH/IGF-1 route is the only one.
+  what_is_known: >-
+    Klb, Fgfr1 and Fgfr3 mRNA are present in fetal and 3-week-old mouse growth plate chondrocytes;
+    rhFGF21 at 5-10 ug/ml suppresses thymidine incorporation and Col10a1, blocks GH-stimulated
+    proliferation and reduces 125I-GH binding, and all of these are abolished by FGFR1 or ERK1
+    siRNA (wu2012). Four weeks of food restriction raises LEPROT/LEPROTL1 in the mouse tibial
+    growth plate in an Fgf21-dependent, rhFGF21-rescuable way (wu2013).
+  what_is_missing: >-
+    Any human growth plate observation whatsoever - no immunohistochemistry, in situ hybridization,
+    RNA-seq or proteomic detection of KLB in human physeal cartilage was retrieved. The two
+    zone-resolved human transcriptome resources that exist (gse9160, n=2 donors) have not been
+    interrogated for KLB, and the FGF21 concentrations that work in mouse culture are far above
+    human circulating levels even in starvation.
+  nearest_evidence: [wu2012, wu2013, gse9160]
+  discriminating_experiment: >-
+    Re-analyse the existing laser-capture zonal human growth plate microarray (gse9160, distal
+    femur, 11y10m female and 13y3m male, five zones) for KLB, FGFR1, FGFR3 and KL probe-level
+    signal, then confirm by KLB immunohistochemistry on the epiphysiodesis biopsy series that
+    already supports the human ER-alpha zonal map (nilsson2003 tissue, Tanner 1-5, n=24). Under
+    the translatable hypothesis KLB is detected in resting and proliferative zone chondrocytes at
+    levels above the array's background and gives zone-restricted staining; under the
+    non-translatable hypothesis KLB is at background in all five zones, in which case the murine
+    FGF21 mechanism must be recorded as species-specific and the L10-to-L3 edge downgraded.
+  tractability: 4
+  search_log_ref: g_l0l9_001
+
+- gap_id: g_l0l9_002
+  question: >-
+    Does the genomic assortative-mating coefficient for height (theta) differ between populations
+    with different marriage systems, and is the 3.2% estimate from European-ancestry UK data
+    transferable at all?
+  type: known_unknown
+  layer: L8
+  why_it_matters: >-
+    Assortative mating inflates additive genetic variance and therefore inflates every
+    family-based heritability estimate. If theta varies substantially between populations, then
+    the widely quoted "height is 80% heritable" is a statement about one mating structure, and
+    cross-population comparisons of heritability - which this atlas uses to argue that
+    between-population height differences are environmental - carry an uncontrolled term.
+  what_is_known: >-
+    theta = 3.2% for height and 2.7% for educational attainment in ~400,000 unrelated
+    European-ancestry individuals, matching the value predicted from the observed spousal
+    phenotypic correlation (yengo2018). Childhood height heritability estimates do not differ
+    significantly across European, Asian and multi-ancestry samples (dewau2025).
+  what_is_missing: >-
+    The odd-versus-even-chromosome estimator has not been applied to any non-European-ancestry
+    biobank for height, and no study relates theta to marriage system, degree of consanguinity or
+    urbanisation. Because the estimator needs a well-powered within-ancestry PGS, it inherits the
+    same discovery-cohort bias that limits polygenic prediction itself.
+  nearest_evidence: [yengo2018, dewau2025, martin2019]
+  discriminating_experiment: >-
+    Apply the odd-versus-even-chromosome polygenic-predictor correlation to height in at least
+    three ancestry-matched biobanks with within-ancestry GWAS weights (for example Biobank Japan,
+    the Uganda Genome Resource and All of Us African-ancestry participants), reporting theta with
+    bootstrap confidence intervals alongside the measured spousal height correlation in each. If
+    theta tracks the spousal correlation in every population, assortative mating is a universal
+    and quantifiable correction; if theta and the spousal correlation dissociate, the genomic
+    estimator is capturing residual stratification rather than mate choice.
+  tractability: 3
+
+- gap_id: g_l0l9_003
+  question: >-
+    What is the DNA methylation state of human growth plate chondrocytes, and does it change
+    across zones or with proliferative age as it does in rabbit?
+  type: search_established
+  layer: L8
+  why_it_matters: >-
+    Loss of DNA methylation is the leading candidate substrate for the replication-counting clock
+    that the finite-proliferative-capacity model of growth plate senescence requires, and Dnmt1
+    loss shortens mouse bones. If human growth plate methylation does not decline with
+    proliferative age, the epigenetic-drift model of human epiphyseal fusion loses its only
+    mechanistic candidate; if it does, the mark is a measurable readout of remaining growth
+    potential, which no existing clinical test provides.
+  what_is_known: >-
+    Global methylcytosine content falls with proliferative age in microdissected rabbit growth
+    plate, and hypothyroid growth restriction slows both senescence and the methylation loss,
+    dissociating it from chronological time (nilsson2005). Dnmt1 deletion in mouse limb mesenchyme
+    shortens long bones through reduced proliferation and accelerated differentiation
+    (yanagihara2025). Human cartilage methylation is developmentally dynamic in FETAL limb and
+    cartilage versus aged articular cartilage (rice2023), but that tissue is not the physis.
+  what_is_missing: >-
+    No human growth plate methylome at any resolution - bulk, zonal or single-cell - was
+    retrieved. There is therefore no human measurement of the mark that the entire epigenetic
+    model of fusion rests on, in the one species that actually fuses.
+  nearest_evidence: [nilsson2005, yanagihara2025, rice2023, gse9160]
+  discriminating_experiment: >-
+    Perform EPIC-array or enzymatic-conversion methylation sequencing on laser-capture
+    microdissected resting, proliferative and hypertrophic zones from human growth plates spanning
+    Tanner 1 to physeal closure, using the epiphysiodesis and hemiepiphysiodesis surgical waste
+    stream that already supplies this field, with at least 8 donors per maturity band. Under the
+    replication-clock hypothesis, global and promoter methylation fall monotonically from resting
+    to proliferative zone and from early to late maturity, with the steepest loss in the small
+    bones that senesce first; under the null, zone and maturity explain no more variance than
+    donor identity, and the drift model must be abandoned for humans.
+  tractability: 3
+  search_log_ref: g_l0l9_003
+
+- gap_id: g_l0l9_004
+  question: >-
+    Are the imprinted growth loci (IGF2/H19 at 11p15.5, DLK1/MEG3 at 14q32.2) monoallelically
+    expressed in human growth plate chondrocytes, and does the parent-of-origin effect on stature
+    act in the plate or upstream of it?
+  type: search_established
+  layer: L8
+  why_it_matters: >-
+    Imprinted loci produce the largest reproducible parent-of-origin effects on human stature -
+    Silver-Russell and Temple syndromes both run 2-3 SDS below target - yet the atlas cannot say
+    whether those effects are exerted on the growth plate, on placental nutrient transfer, or on
+    the timing of puberty. The three routes imply completely different therapeutic windows: a
+    plate-level effect is treatable after birth, a placental one is not.
+  what_is_known: >-
+    A paternally inherited IGF2 loss-of-function mutation causes growth restriction while maternal
+    transmission of the same allele does not (begemann2015). 87.0% of 60 genetically confirmed
+    Temple syndrome patients have postnatal short stature and 86.0% central precocious puberty
+    (ogawa2025), and a paternally inherited DLK1 deletion causes familial central precocious
+    puberty (dauber2017). L4 holds igf2_hormone and dlk1_gene as systemic entities.
+  what_is_missing: >-
+    No allele-specific expression, no methylation status and no expression measurement of any
+    imprinted locus in human growth plate cartilage was retrieved. The closest hits are murine
+    condylar cartilage (PLAGL1-IGF2) and canine/human GRB10 association, neither of which is human
+    physeal tissue.
+  nearest_evidence: [begemann2015, ogawa2025, dauber2017, gse9160]
+  discriminating_experiment: >-
+    Perform allele-specific RNA sequencing with matched genotyping on zonally microdissected human
+    growth plate from heterozygous donors, quantifying the allelic ratio at IGF2, H19, DLK1, MEG3
+    and GRB10. Under the plate-autonomous hypothesis the loci are monoallelic in chondrocytes with
+    the expected parental direction; under the upstream hypothesis they are biallelic or not
+    expressed in the physis, which would place the entire imprinting effect on stature in L4/L10
+    and forbid an L8-to-L1 mechanistic edge.
+  tractability: 2
+  search_log_ref: g_l0l9_004
+
+- gap_id: g_l0l9_005
+  question: >-
+    Does ZBTB38, a methyl-CpG-binding transcription factor and one of the first 20 replicated
+    height loci, have any measurable function in growth plate chondrocytes?
+  type: known_unknown
+  layer: L8
+  why_it_matters: >-
+    ZBTB38 is the single point where the height-association literature and the growth-plate
+    DNA-methylation literature could be the same system rather than two unrelated stories. If the
+    height-associated allele changes ZBTB38 activity in chondrocytes, the methylation clock and
+    the polygenic architecture share a mechanism; if not, the locus is one more unexplained
+    association and the methylation model loses its only genetic anchor.
+  what_is_known: >-
+    rs724016 near ZBTB38 is genome-wide significant for adult height in the first-generation GWAS
+    (weedon2008) and replicates in an African-ancestry cohort (costajnior2024). ZBTB38 is
+    annotated as a methyl-CpG-binding zinc-finger transcription factor. Growth plate methylation
+    declines with proliferative age in rabbit (nilsson2005) and Dnmt1 is required for normal mouse
+    bone length (yanagihara2025).
+  what_is_missing: >-
+    No growth plate expression, no chondrocyte eQTL, no knockout or knockdown phenotype and no
+    functional characterisation of the height-associated allele in any skeletal cell type was
+    retrieved.
+  nearest_evidence: [weedon2008, costajnior2024, yanagihara2025, richard2025]
+  discriminating_experiment: >-
+    Interrogate the existing human developmental chondrocyte epigenomic and transcriptomic maps
+    (richard2025) for ZBTB38 expression and for chromatin accessibility overlapping rs724016, then
+    knock ZBTB38 down in human iPSC-derived chondrocytes and measure proliferation, COL10A1
+    induction and global methylation. Under the shared-mechanism hypothesis ZBTB38 is expressed in
+    chondrocytes, rs724016 sits in accessible chondrocyte chromatin, and knockdown shifts the
+    proliferation-to-hypertrophy balance; under the null it is not expressed in chondrocytes at
+    all and the association must act in another tissue.
+  tractability: 4
+
+- gap_id: g_l0l9_006
+  question: >-
+    Has any genotype-by-environment interaction for adult height been demonstrated at a specific
+    locus, as opposed to the general observation that height heritability varies with age, cohort
+    and environment?
+  type: known_unknown
+  layer: L8
+  why_it_matters: >-
+    "Heritability varies by context" and "a specific allele has a different effect in a different
+    environment" are different claims, and only the second identifies a mechanism a growth-plate
+    layer could reproduce. Nutrition-sensitive height alleles, if they exist, would predict which
+    children benefit most from a nutritional intervention - the single most consequential
+    unanswered question in the stunting literature.
+  what_is_known: >-
+    Parent-offspring heritability of height rises from 0.46 at birth to 0.76 at 17 years while
+    shared-environment effects peak in early childhood (dewau2025). Under equalised optimal
+    conditions only 3% of variance in early linear growth is between six widely separated
+    populations (who2006). Migrant cohorts converge on host-population height within one to two
+    generations (schnbeck2015), and mean adult height has moved by up to ~20 cm over a century
+    (ncd2016).
+  what_is_missing: >-
+    None of these fits an interaction term. No locus-level GxE for height with an environmental
+    exposure measured at the individual level was retrieved, and no such analysis has ever been
+    paired with a growth-plate readout.
+  nearest_evidence: [dewau2025, who2006, schnbeck2015, ncd2016, yengo2022]
+  discriminating_experiment: >-
+    Within a single large cohort spanning a wide nutritional gradient (for example the pooled
+    NCD-RisC contributing cohorts with individual-level data, or All of Us with linked
+    socioeconomic measures), fit height PGS x measured childhood energy-availability interaction
+    terms, both genome-wide and restricted to the growth-plate-expressed subset of height loci
+    identified by richard2025. Under the GxE hypothesis the PGS slope on height is significantly
+    steeper in the well-nourished stratum and the effect concentrates in the chondrocyte-expressed
+    subset; under the null the PGS slope is constant across strata and the height-nutrition
+    relationship is purely additive.
+  tractability: 3
+
+- gap_id: g_l0l9_007
+  question: >-
+    What fraction of normal-range variation in adult height is attributable to de novo mutation,
+    and does paternal age - which sets de novo mutation burden - predict offspring height
+    independently of inherited height?
+  type: search_established
+  layer: L8
+  why_it_matters: >-
+    De novo variants are the one class of genetic variation that is not transmitted and therefore
+    not captured by any heritability estimate, PGS or mid-parental prediction. If they contribute
+    materially to normal-range stature, then the residual scatter about mid-parental target height
+    (95% prediction interval +/- 10 cm) has a genetic component that is currently attributed to
+    environment, and the whole target-height apparatus is mis-specified.
+  what_is_known: >-
+    De novo variants are a well-established cause of syndromic short stature (the retrieved
+    literature is almost entirely case reports of named disorders), and rare inherited variants
+    move height by up to 2 cm per allele in coding regions (marouli2017) and -7 to +4.7 cm in
+    non-coding regions (hawkes2024). Adult offspring height scatters about mid-parental height
+    with a residual SD of ~4.7 cm (sons) and ~4.4 cm (daughters).
+  what_is_missing: >-
+    No study estimating the contribution of de novo mutation to normal-range height, and no
+    analysis of paternal age against offspring height conditional on parental heights, was
+    retrieved from 1172 hits; every screened record was a syndromic case report.
+  nearest_evidence: [marouli2017, hawkes2024, luo1998, zeevi2024]
+  discriminating_experiment: >-
+    In an existing trio whole-genome sequencing resource with measured adult heights (deCODE,
+    Genomics England, or the UK Biobank sibling-trio subset), regress offspring height SDS on
+    counted de novo variant burden, on de novo burden restricted to growth-plate regulatory
+    elements from richard2025, and on paternal age, adjusting for mid-parental height SDS and PGS.
+    Under the contributing hypothesis, de novo burden in chondrocyte regulatory space has a
+    significant negative coefficient on height SDS after adjustment; under the null, no de novo
+    term survives adjustment and the residual scatter about target height stays environmental.
+  tractability: 3
+  search_log_ref: g_l0l9_007
+
+- gap_id: g_l0l9_008
+  question: >-
+    Does the number of progenitors set aside in the embryonic mesenchymal condensation determine
+    the total proliferative capacity the postnatal growth plate can later spend, or is capacity
+    re-established postnatally when the resting zone niche forms?
+  type: scale_gap
+  layer: L0
+  why_it_matters: >-
+    This is the load-bearing question for whether the finite-proliferative-capacity model of
+    growth plate senescence has an embryonic initial condition at all. If founder pool size sets
+    the budget, then site-specific differences in fusion timing are already determined before
+    birth and any postnatal intervention can only redistribute a fixed total; if capacity is
+    re-set when the resting zone niche forms, the budget is a postnatal variable and is in
+    principle extendable.
+  what_is_known: >-
+    Fgfr3-creER pulsed at the condensation stage marks cells contributing exclusively to
+    hypertrophic chondrocytes and to the dorsal resting and proliferative zones, with descendants
+    remaining dorsally restricted - so condensation-stage partitioning IS inherited by the
+    postnatal plate. Growth plates of small bones senesce earlier than those of large bones in
+    rodents (lui2018), and catch-up growth is associated with delayed senescence (gafni2001).
+    Clonal capacity in the resting zone appears to change sharply around secondary ossification
+    centre formation in mouse (mizuhashi2018, newton2019).
+  what_is_missing: >-
+    No experiment has counted the founder pool of a condensation and related that count to the
+    total number of chondrocyte divisions the corresponding plate subsequently performs, in any
+    species. The two quantities have never been measured in the same animal.
+  nearest_evidence: [lui2018, gafni2001, mizuhashi2018, newton2019]
+  discriminating_experiment: >-
+    Use a low-dose confetti or Polylox barcode pulse at the condensation stage in mouse to count
+    labelled founders per element in fore- and hindlimb bones of different final lengths, then
+    follow the same animals to fusion-equivalent age with cumulative EdU or barcode-diversity
+    readout of total divisions per element. Under the fixed-budget hypothesis, total divisions per
+    element scales linearly with founder number and elements with fewer founders exhaust earlier;
+    under the postnatal-reset hypothesis, total divisions correlate with resting zone size at P12
+    and not with founder number.
+  tractability: 2
+
+- gap_id: g_l0l9_009
+  question: >-
+    Does human undernutrition raise FGF21 to concentrations that suppress human growth plate
+    chondrocytes, or is the FGF21 route to growth arrest a mouse-specific mechanism?
+  type: species_gap
+  layer: L10
+  why_it_matters: >-
+    Stunting affects roughly one in five children worldwide and the mechanism is invariably
+    attributed to the GH/IGF-1 axis. FGF21 is the only demonstrated alternative route with a
+    direct action on the chondrocyte, and it would be a different drug target with a different
+    reversibility profile. Getting this wrong in either direction misallocates the entire
+    nutritional-growth research programme.
+  what_is_known: >-
+    In mouse, four weeks of food restriction raises Fgf21 and induces LEPROT/LEPROTL1 in the
+    tibial growth plate in an Fgf21-dependent manner, and rhFGF21 antagonises GH action on
+    chondrocytes and reduces GH binding (wu2012, wu2013). Human circulating FGF21 does rise in
+    fasting and in malnutrition. Human stunted children show reduced IGF-1 with environmental
+    enteric dysfunction (htet2026, madigan2026).
+  what_is_missing: >-
+    The inhibitory concentrations in the mouse experiments were 5-10 ug/ml, orders of magnitude
+    above human circulating FGF21 even in starvation, and no study has measured FGF21 alongside
+    height velocity in undernourished children, nor tested human chondrocytes at
+    physiologically achievable FGF21 concentrations. KLB has never been detected in human physeal
+    cartilage (see g_l0l9_001).
+  nearest_evidence: [wu2012, wu2013, htet2026, madigan2026]
+  discriminating_experiment: >-
+    In an existing stunting cohort with stored serum and monthly length measurement, assay FGF21
+    and relate it to concurrent height velocity with adjustment for IGF-1, IGFBP-3 and
+    inflammation; in parallel, expose human iPSC-derived or epiphysiodesis-derived chondrocytes to
+    FGF21 across the human physiological and fasting range (0.1-10 ng/ml) with and without GH.
+    Under the translatable hypothesis, FGF21 predicts height velocity independently of IGF-1 AND
+    human chondrocytes respond within the physiological range; if the cellular response requires
+    supraphysiological concentrations, the mechanism is mouse-specific and the L10-to-L3 edge must
+    be recorded as such.
+  tractability: 4
+
+- gap_id: g_l0l9_010
+  question: >-
+    Does catch-up growth consume clonal proliferative capacity, so that a child who catches up
+    fuses earlier or reaches a lower adult height than an otherwise identical child who never lost
+    growth?
+  type: known_unknown
+  layer: L2
+  why_it_matters: >-
+    Every growth-promoting intervention in L12 assumes catch-up is free. If catch-up spends a
+    finite clonal budget, then the organism-level observation that catch-up is near-complete
+    conceals a cost paid at fusion, and near-adult-height endpoints in short trials would
+    systematically overstate benefit. This is the single question that connects the L9 catch-up
+    kinetics to the L2 finite-capacity model.
+  what_is_known: >-
+    83-90% of human catch-up episodes are fitted by a monomolecular function whose rate constant k
+    differs by diagnosis but is NOT changed by GH dose (wit2021) - i.e. the deficit, not the
+    drive, sets the rate, which is what a plate-intrinsic account predicts. In rabbit,
+    growth-restriction-induced catch-up is accompanied by DELAYED growth plate senescence
+    (gafni2001), suggesting capacity is preserved rather than spent. Infant realignment onto the
+    parental channel is complete by about 2 years (smith1976).
+  what_is_missing: >-
+    No study has followed catch-up subjects to fusion with a capacity readout. The rabbit result
+    argues capacity is conserved; the finite-capacity model as usually stated argues it is spent;
+    the two have never been tested against each other with adult height or fusion timing as the
+    endpoint in the same cohort.
+  nearest_evidence: [wit2021, gafni2001, smith1976, nilsson2004]
+  discriminating_experiment: >-
+    Assemble a matched cohort from existing paediatric registries: children with a documented,
+    fully resolved growth insult and complete catch-up (treated coeliac disease is the cleanest
+    because the insult is removable and k is highest) versus sibling or PGS-matched controls with
+    no insult, followed to attained adult height and to age at physeal closure by MRI staging.
+    Under the capacity-spending hypothesis the catch-up group closes earlier and finishes below
+    its PGS-and-mid-parental prediction; under the capacity-conserving hypothesis (gafni2001)
+    closure is delayed or unchanged and adult height matches prediction.
+  tractability: 3
