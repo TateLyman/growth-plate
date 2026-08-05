@@ -1,7 +1,56 @@
 id: confetti_reporter
-name: Confetti multicolor reporter
+name: Confetti / Rainbow multicolour clonal reporters
+aliases:
+- R26R-Confetti
+- Brainbow-2.1
+- Rainbow reporter
 type: method
-layer: L2
-stub: true
+summary: Confetti (Brainbow-2.1 knocked into Rosa26) stochastically recombines to one of four fluorophores
+  (nuclear GFP, YFP, RFP, membrane CFP), so adjacent clones acquire different colours and a monochromatic
+  structure can be read as clonal. It was introduced to show that intestinal crypts drift to clonality
+  through neutral competition among symmetrically dividing Lgr5+ cells, and the same neutral-drift logic
+  is what makes a single-coloured chondrocyte column interpretable. In the growth plate, PTHrP-creER;Confetti
+  gave columns of one colour each, and Col2a1-creER;Confetti supported the same conclusion. The Rainbow
+  reporter serves the same purpose in the Weissman-lab skeletal work. The critical caveats are that colour
+  identity is only informative at low labelling density, that recombination frequencies of the four cassettes
+  are unequal, and that a shared colour between neighbours is not proof of common ancestry - none of these
+  are usually quantified in growth plate papers, which is why clonality claims here sit at confidence
+  C rather than higher.
+quantitative: []
+localization:
+- 'not_applicable SYS: methodological node'
 human_evidence: absent
+human_evidence_note: Multicolour genetic reporters cannot be used in humans.
+species_basis:
+- mouse
+translation_risk: not_applicable
+translation_risk_reason: Methodological node with no human application.
+confidence: C
+key_refs:
+- ref_id: snippert2010
+  pmid: '20887898'
+  doi: 10.1016/j.cell.2010.09.016
+  first_author: Snippert HJ
+  year: 2010
+  type: primary_abstract_only
+  one_line_finding: Introduces the Confetti reporter and the neutral-drift framework for reading clonality
+    from colour
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Applies Confetti to the growth plate to show single-colour columns
+- ref_id: rinkevich2011
+  pmid: '21866153'
+  doi: 10.1038/nature10346
+  first_author: Rinkevich Y
+  year: 2011
+  type: primary_abstract_only
+  one_line_finding: Rainbow reporter application to skeletal clonal analysis
+open_questions:
+- g_l2stem_010
+layer: L2
+stub: false
 last_verified: '2026-08-05'

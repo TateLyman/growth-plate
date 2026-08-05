@@ -1,7 +1,72 @@
 id: clonal_lineage_tracing
-name: Clonal lineage tracing
+name: Clonal lineage tracing (genetic fate mapping)
 type: method
-layer: L2
-stub: true
+summary: 'Nearly every claim in this layer is a claim about a tamoxifen-inducible Cre driver crossed to
+  a reporter. The method''s resolution is set by three parameters that are frequently unreported: labelling
+  efficiency, driver specificity, and clonal density. In the growth plate literature these are sometimes
+  quantified - FoxA2-creER labelled 8%, 23% or 38% of FoxA2+ cells depending on tamoxifen dose and reporter
+  allele copy number, and PTHrP-creER preferentially marks an immature CD105-low subset of PTHrP-mCherry+
+  cells rather than all of them - which means a negative tracing result can be a labelling failure and
+  a ''population'' can be an artefact of driver bias. Multicolour reporters (Confetti, Rainbow) convert
+  fate mapping into clonal analysis by making neighbouring clones distinguishable. Dual-recombinase (Cre
+  plus Dre) systems allow intersectional labelling and were needed to show that osteoblast origin switches
+  from chondrocytes to LepR+ stroma at adolescence. The decisive limitation for this atlas is that none
+  of this can be applied to humans: germline transgenesis and tamoxifen pulse-chase are not available,
+  so human stem-cell identity in the growth plate is method-blocked rather than merely unstudied.'
+quantitative:
+- parameter: FoxA2-creER labelling efficiency, two tamoxifen doses
+  value: '8'
+  unit: '% of FoxA2+ cells'
+  conditions: P14-P15 tamoxifen, one floxed reporter allele, mouse
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: 7.92 +/- 0.9 cells labelled of 97.67 +/- 9
+- parameter: FoxA2-creER labelling efficiency, five doses plus two reporter alleles
+  value: '38'
+  unit: '% of FoxA2+ cells'
+  conditions: P14-P18 tamoxifen, mouse
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: 36.9 +/- 2.3 cells labelled
+localization:
+- 'not_applicable SYS: methodological node'
 human_evidence: absent
+human_evidence_note: Genetic fate mapping requires engineered alleles and cannot be performed in humans;
+  human clonal inference would require somatic mutation phylogenies from growth plate tissue, which has
+  not been reported.
+species_basis:
+- mouse
+translation_risk: not_applicable
+translation_risk_reason: Methodological node; the translation problem is the method's inapplicability
+  to humans, captured in gap g_l2stem_001.
+confidence: C
+key_refs:
+- ref_id: muruganandan2022
+  pmid: '35523895'
+  doi: 10.1038/s41467-022-30247-1
+  first_author: Muruganandan S
+  year: 2022
+  type: primary
+  one_line_finding: Reports labelling efficiency explicitly across tamoxifen doses and reporter allele
+    copy number
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Shows PTHrP-creER marks a biased, immature subset of PTHrP-mCherry+ cells
+- ref_id: rinkevich2011
+  pmid: '21866153'
+  doi: 10.1038/nature10346
+  first_author: Rinkevich Y
+  year: 2011
+  type: primary_abstract_only
+  one_line_finding: Rainbow multicolour clonal fate mapping establishing lineage restriction in skeletal
+    repair
+open_questions:
+- g_l2stem_001
+- g_l2stem_011
+layer: L2
+stub: false
 last_verified: '2026-08-05'

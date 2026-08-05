@@ -1,0 +1,35 @@
+searches:
+  - gap_id: g_l13data_001
+    database: NCBI GEO DataSets (E-utilities esearch, db=gds)
+    exact_query_string: '(growth plate[All Fields]) AND (spatial[All Fields]) AND Homo sapiens[Organism]'
+    filters: 'db=gds, retmax=0 for count; census executed against live E-utilities API'
+    date_run: '2026-08-05'
+    hit_count: 0
+    screened_count: 0
+    reason_none_qualified: >-
+      Exact zero. The unrestricted query (growth plate[All Fields]) AND (spatial[All
+      Fields]) returns 7 records, all non-human - inspected accessions include
+      GSE299816, GSE288529 (ApoE resting zone marker), GSE275252 (ADGRG6), GSE221571,
+      all Mus musculus. Adding the Homo sapiens organism restriction eliminates all 7.
+      The null is not an artefact of the organism filter being too strict: the
+      companion query (growth plate) AND (single cell) AND Homo sapiens returns 18
+      records, confirming that human growth plate data IS deposited and indexed under
+      this organism tag, and that the absence is specific to the spatial modality.
+
+  - gap_id: g_l13data_002
+    database: NCBI GEO DataSets (E-utilities esearch, db=gds)
+    exact_query_string: >-
+      four paired counts: (growth plate[All Fields]) = 1472; AND Mus
+      musculus[Organism] = 919; AND Homo sapiens[Organism] = 141; AND (single
+      cell[All Fields]) = 60, of which Homo sapiens = 18
+    filters: 'db=gds, retmax=0, counts only'
+    date_run: '2026-08-05'
+    hit_count: 1472
+    screened_count: 24
+    reason_none_qualified: >-
+      These counts establish the DEPOSITION ratio (~6.5 mouse records per human
+      record) but do not answer the question asked, which concerns the mechanistic
+      LITERATURE and its species attribution practices. No systematic species-audit
+      of the growth plate literature was located in GEO or Europe PMC; the gap is
+      therefore quantitative rather than search_established for the literature claim,
+      and the GEO figures are recorded as nearest available evidence.

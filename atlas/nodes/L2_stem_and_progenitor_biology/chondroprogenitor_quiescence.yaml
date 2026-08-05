@@ -1,7 +1,78 @@
 id: chondroprogenitor_quiescence
 name: Chondroprogenitor quiescence
 type: process
+summary: 'Resting zone chondrocytes have been called quiescent since the 1930s, but the term has been
+  carried on morphology. Where quiescence has been measured, it is real but shallow: 6.1% of PTHrP+ resting
+  chondrocytes are EdU+ over a short pulse versus 30.5% of proliferative chondrocytes, and the durably
+  label-retaining fraction plateaus at 2.6% of Col2a1-lineage cells with a decay half-life near one week
+  - so most ''resting'' cells are cycling slowly, not arrested. Quiescence is actively imposed rather
+  than passive: resting chondrocytes are held in a Wnt-inhibitory environment and forcing beta-catenin
+  activity expels them from the zone; ADGRG6/GPR126 signalling through IHH is required to maintain the
+  slow-cycling state; and growth hormone shrinks the slow-cycling pool by driving differentiation. A 2026
+  PRISMA systematic review of every study using ''quiescen*'' for resting chondrocytes concluded that,
+  relative to well-characterised quiescent stem cells elsewhere, molecular and functional characterisation
+  here is thin and definitions are inconsistent - so ''quiescent resting zone'' should be treated as a
+  partially validated claim, not an established fact.'
+quantitative:
+- parameter: Resting-to-proliferative EdU incorporation ratio at P9
+  value: '0.20'
+  unit: ratio (6.1% / 30.5%)
+  conditions: mouse distal femur, PTHrP-mCherry reporter
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: derived from means; SDs 2.3 and 3.2, n=3
+- parameter: Durably label-retaining chondrocyte fraction
+  value: '2.6'
+  unit: '%'
+  conditions: Tet-Off H2B-EGFP chase, mouse
+  species: mouse
+  source_ref: hallett2021
+  uncertainty: SE 0.9
+localization:
+- 'mouse RZ: confirmed by EdU pulse and H2B-EGFP label retention (mizuhashi2018, hallett2021)'
+- 'human RZ: indirect, nuclear-retained mRNA and heterochromatin in a subset (avijgan2025)'
+human_evidence: indirect
+human_evidence_note: Human quiescence evidence is transcriptomic and ultrastructural in fixed biopsies;
+  no proliferation kinetics have been measured in living human growth plate.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Cycling rates are measured with nucleoside pulses and transgenic pulse-chase
+  in mice; human growth plate proliferation indices are cross-sectional immunostaining at best.
+confidence: C
+key_refs:
+- ref_id: avijgan2026
+  pmid: '41795828'
+  doi: 10.1093/stmcls/sxag010
+  first_author: Avijgan M
+  year: 2026
+  type: systematic_review
+  one_line_finding: 'Systematic review: quiescence of resting chondrocytes is under-measured and inconsistently
+    defined'
+- ref_id: hallett2021
+  pmid: '34309509'
+  doi: 10.7554/elife.64513
+  first_author: Hallett SA
+  year: 2021
+  type: primary
+  one_line_finding: Quantifies the slow-cycling fraction and shows Wnt inhibition maintains it
+- ref_id: bian2024
+  pmid: '39236220'
+  doi: 10.1093/jbmr/zjae144
+  first_author: Bian F
+  year: 2024
+  type: primary
+  one_line_finding: ADGRG6 loss depletes slow-cycling resting zone cells and disorganises the plate
+- ref_id: chu2025
+  pmid: '41289405'
+  doi: 10.1073/pnas.2512316122
+  first_author: Chu NTL
+  year: 2025
+  type: primary
+  one_line_finding: Growth hormone reduces the slow-cycling label-retaining pool
+open_questions:
+- g_l2stem_005
 layer: L2
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

@@ -1,7 +1,118 @@
 id: geo_accession_inventory
-name: GEO accession inventory for growth plate
+name: GEO accession inventory for growth plate transcriptomics
+aliases: [public growth plate dataset inventory]
 type: dataset
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  A direct census of NCBI GEO quantifies the species bias that constrains every
+  mechanistic claim in this atlas. Querying GEO DataSets on 2026-08-05, the term
+  "growth plate" returns 1,472 records; restricting to Mus musculus returns 919
+  and to Homo sapiens returns 141, a mouse-to-human ratio of roughly 6.5 to 1.
+  The bias sharpens with method sophistication: growth plate single-cell records
+  number 60, of which 18 are human, while growth plate spatial-transcriptomics
+  records number 7, of which ZERO are human. Spatial transcriptomics is precisely
+  the modality that would resolve the zonal questions this atlas repeatedly finds
+  unanswered - PDE isoform distribution, oxygen-responsive gene gradients, zonal
+  receptor occupancy - and it has never been applied to human growth plate tissue
+  in any publicly deposited dataset. Human records that do exist are weighted
+  toward development and disease rather than normal postnatal zonal architecture;
+  notable exceptions are GSE267139 (human cartilage development at single-cell
+  resolution, 25 samples) and GSE288028 (growth hormone action on cartilage stem
+  cells in the human pubertal growth plate, 14 samples, human and mouse). The
+  practical consequence is that human zonal claims in this atlas rest on histology
+  and inference, not on transcriptomic measurement.
+quantitative:
+  - parameter: GEO DataSets records matching "growth plate"
+    value: '1472'
+    unit: records
+    conditions: 'NCBI GEO DataSets (db=gds), query (growth plate[All Fields])'
+    species: multiple
+    source_ref: geo_census_20260805
+    uncertainty: point-in-time census; GEO grows continuously
+  - parameter: GEO growth plate records, Mus musculus
+    value: '919'
+    unit: records
+    conditions: 'query (growth plate[All Fields]) AND Mus musculus[Organism]'
+    species: mouse
+    source_ref: geo_census_20260805
+    uncertainty: point-in-time census
+  - parameter: GEO growth plate records, Homo sapiens
+    value: '141'
+    unit: records
+    conditions: 'query (growth plate[All Fields]) AND Homo sapiens[Organism]'
+    species: human
+    source_ref: geo_census_20260805
+    uncertainty: point-in-time census
+  - parameter: mouse-to-human ratio of growth plate GEO records
+    value: '6.5'
+    unit: ratio
+    conditions: 919 mouse / 141 human, computed from the census
+    species: multiple
+    source_ref: geo_census_20260805
+    uncertainty: derived value
+  - parameter: GEO growth plate single-cell records, all species
+    value: '60'
+    unit: records
+    conditions: 'query (growth plate[All Fields]) AND (single cell[All Fields])'
+    species: multiple
+    source_ref: geo_census_20260805
+    uncertainty: point-in-time census
+  - parameter: GEO growth plate single-cell records, human
+    value: '18'
+    unit: records
+    conditions: 'same query AND Homo sapiens[Organism]'
+    species: human
+    source_ref: geo_census_20260805
+    uncertainty: point-in-time census
+  - parameter: GEO growth plate spatial-transcriptomics records, all species
+    value: '7'
+    unit: records
+    conditions: 'query (growth plate[All Fields]) AND (spatial[All Fields])'
+    species: multiple
+    source_ref: geo_census_20260805
+    uncertainty: point-in-time census
+  - parameter: GEO growth plate spatial-transcriptomics records, human
+    value: '0'
+    unit: records
+    conditions: 'same query AND Homo sapiens[Organism]'
+    species: human
+    source_ref: geo_census_20260805
+    uncertainty: >-
+      exact zero at census date; see gap g_l13data_001 for the search that
+      establishes it
+localization:
+  - "not applicable: this node describes the data landscape, not a tissue"
+human_evidence: direct
+human_evidence_note: >-
+  The census itself is a direct, reproducible measurement of the public data
+  landscape, executed against the live NCBI E-utilities API.
+species_basis: [multiple]
+translation_risk: not_applicable
+translation_risk_reason: >-
+  This node measures translation risk rather than incurring it - it is the
+  quantitative basis for the high translation_risk grades used elsewhere.
+confidence: A
+key_refs:
+  - ref_id: geo_census_20260805
+    first_author: NCBI GEO
+    year: 2026
+    type: dataset
+    one_line_finding: >-
+      Census of GEO DataSets: 1,472 growth plate records, 919 mouse vs 141 human;
+      7 spatial-transcriptomics records of which 0 are human.
+  - ref_id: gse267139
+    first_author: GEO submitters
+    year: 2024
+    type: dataset
+    one_line_finding: Human cartilage development at single-cell resolution, 25 samples.
+  - ref_id: gse288028
+    first_author: GEO submitters
+    year: 2025
+    type: dataset
+    one_line_finding: >-
+      Growth hormone directly stimulates cartilage stem cells in the human pubertal
+      growth plate; 14 samples, human and mouse.
+open_questions: []
+contradicts: []
 last_verified: '2026-08-05'

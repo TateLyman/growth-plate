@@ -1,7 +1,89 @@
 id: foxa2_resting_chondrocyte
-name: FOXA2+ resting zone chondrocyte
+name: FoxA2+ resting zone chondrocyte
+aliases:
+- FoxA2+ long-term skeletal stem cell
 type: cell_type
-layer: L2
-stub: true
+summary: 'FoxA2+ cells sit at the very top of the mouse resting zone, at the cartilage/secondary ossification
+  centre interface (75% within the cartilage, 25% inside the SOC domain at P13-P17). They are a small
+  population - about 98 cells per section by immunohistochemistry at P14 - and are essentially non-overlapping
+  with PTHrP+ cells at the time of labelling (0.017% double-positive by flow cytometry, indistinguishable
+  from the 0.014% background). By P40 a FoxA2 pulse gives rise to PTHrP+ cells (0.1% double-positive),
+  placing FoxA2+ cells upstream. In colony assays FoxA2+ cells are more clonogenic and much longer-lived
+  than PTHrP+ cells: 9% (10/112) of FoxA2+ colonies reached passage 9 or beyond, versus 1.4% (2/143) of
+  PTHrP+ colonies reaching passage 5. FoxA2+ cells are required for growth plate regeneration after injury.
+  FoxA2+ cells at this site are also present in rabbit, the only non-murine mammalian confirmation of
+  any resting-zone stem cell marker, but no functional tracing has been done outside mouse.'
+quantitative:
+- parameter: FoxA2+/PTHrP+ double-positive cells at P18
+  value: '0.017'
+  unit: '% of sorted growth plate cells'
+  conditions: FoxA2-creER;ZsGreen;PTHrP-mCherry mouse, tamoxifen P13-P17
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: SD 0.004; double-negative background 0.014%
+- parameter: FoxA2+/PTHrP+ double-positive cells at P40 after P13-P17 pulse
+  value: '0.1'
+  unit: '% of sorted cells'
+  conditions: same mice, 3-week chase
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: not reported
+- parameter: FoxA2+ colonies reaching passage 9 or beyond
+  value: '8.9'
+  unit: '% (10/112 colonies)'
+  conditions: ex vivo colony assay, P18 mouse
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: n=3 experiments
+- parameter: FoxA2+ cells per growth plate section at P14
+  value: '97.67'
+  unit: cells
+  conditions: immunohistochemistry, mouse tibia
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: SD 9
+- parameter: FoxA2+ cells located within growth plate cartilage (rest inside SOC)
+  value: '75'
+  unit: '%'
+  conditions: 5-DTAF bone-matrix counterstain, P13-P17 pulse, mouse
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: not reported
+localization:
+- 'mouse RZ (uppermost, adjacent SOC): confirmed by FoxA2-creER lineage and IHC (muruganandan2022)'
+- 'rabbit RZ: FoxA2 immunoreactivity present at the same anatomical position (muruganandan2022)'
+- 'human RZ: unconfirmed'
 human_evidence: absent
+human_evidence_note: FoxA2 has not been examined as a stem-cell marker in human growth plate tissue.
+species_basis:
+- mouse
+- rabbit
+translation_risk: high
+translation_risk_reason: All functional evidence is from inducible Cre tracing in mouse; the rabbit data
+  are immunostaining only and carry no clonal information.
+confidence: D
+key_refs:
+- ref_id: muruganandan2022
+  pmid: '35523895'
+  doi: 10.1038/s41467-022-30247-1
+  first_author: Muruganandan S
+  year: 2022
+  type: primary
+  one_line_finding: FoxA2+ cells are a distinct, more clonogenic and longer-lived resting zone stem population
+    upstream of PTHrP+ cells
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Provides the PTHrP+ population against which FoxA2+ longevity is benchmarked
+open_questions:
+- g_l2stem_001
+- g_l2stem_004
+- g_l2stem_010
+contradicts:
+- pthrp_positive_resting_chondrocyte
+layer: L2
+stub: false
 last_verified: '2026-08-05'
