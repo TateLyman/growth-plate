@@ -62,7 +62,7 @@ gaps   ████████████████████ 288/150 (100
 | L10 | environment_and_population | 34 | 34 | 58 | 13 | ✅ | ✅ | ✅ |
 | L11 | pathology_as_natural_experiment | 56 | 56 | 83 | 26 | ✅ | ✅ | ✅ |
 | L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 79 | 30 | ✅ | ✅ | ✅ |
-| L13 | methods_and_data | 41 | 41 | 40 | 14 | ✅ | — | ✅ |
+| L13 | methods_and_data | 41 | 41 | 40 | 14 | ✅ | ✅ | ✅ |
 | | **total** | **614** | **614** | **1181** | **288** | | | |
 
 **Confidence distribution** (researched nodes): **A** 156 · **B** 185 · **C** 184 · **D** 76 · **E** 11 · **X** 2
