@@ -68,9 +68,47 @@ that way are logged below with the evidence that justified them.
 
 ---
 
-## Upgrades
+## Upgrade admissibility — replication is PROPOSITIONAL, not topical
+
+An upgrade is admissible only if the second reference **independently tests the same
+proposition by a different route**. Topical adjacency is not replication. A paper on
+*ACAN* dosage does not replicate a claim about aggrecan turnover kinetics merely
+because both concern aggrecan; two papers agreeing that a molecule "matters" replicate
+nothing.
+
+**Every upgrade must record all of these fields. An entry missing any of them is not an
+upgrade, it is citation-stacking, and is rejected.**
+
+```yaml
+- node_id:
+  proposition_tested:     # ONE falsifiable sentence. If you cannot state it in one
+                          # sentence, the node is making several claims and needs
+                          # claim_grades (see below), not an upgrade.
+  ref_1:
+    ref_id:
+    what_it_shows:        # what THIS paper demonstrates about THAT proposition
+  ref_2:
+    ref_id:
+    what_it_shows:
+  independence_basis:     # different method | different cohort | different direction
+                          # of perturbation (gain- vs loss-of-function) | different
+                          # species with human confirmation. State which.
+  grade_before:
+  grade_after:
+```
+
+**Rejected attempts are logged too.** The rejection rate is itself a measurement: it
+quantifies how thin genuinely replicated human evidence is in this field, which is a
+finding this atlas is positioned to make and most reviews are not.
+
+### Upgrades — accepted
 
 _(none yet — populated during the L8 completion sweep)_
 
-| date | node | from | to | justifying evidence |
-|---|---|---|---|---|
+| date | node | proposition | ref_1 | ref_2 | independence basis | from → to |
+|---|---|---|---|---|---|---|
+
+### Upgrades — REJECTED (citation-stacking attempts)
+
+| date | node | proposition | why rejected |
+|---|---|---|---|

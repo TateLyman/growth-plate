@@ -60,6 +60,37 @@ the *mechanistic interpretation* placed on it. The node keeps the observation an
 the interpretation, which is the correct disposition and is why `contradicts` points at
 the reference rather than the finding being discarded.
 
+### Extended sweep (MR-001 item 4) — prose is not the only place a dead mechanism hides
+
+The first sweep matched prose assertions only. Re-run across the three forms a
+superseded mechanism actually survives in:
+
+| Form | Matches | Genuine | Disposition |
+|---|---:|---:|---|
+| **(a) Paraphrase** — "ANK-mediated PPi efflux", "ANK-dependent PPi", "ANK/ENPP1 as PPi sources" | 3 | 3 | All three were *correct* under the new model (they assert ENPP1 is required), but the wording "ANK-dependent PPi" is readable as ANK transporting PPi. **Tightened** to "ANK-attributable PPi, i.e. PPi arising downstream of ANKH ATP export" in 3 nodes. |
+| **(b) Quantitative rows** | 13 | **7** | 6 were substring artefacts (`bioBANK`, `RANK order`, `ANKle`). Of the 7 genuine rows, 6 are correctly framed under the new model — note that `inorganic_pyrophosphate` already says "ANKH-mediated **NTP efflux**", not PPi transport. **1 row required action**: "Fraction of mouse bone PPi attributable to Ank activity (older estimate) = ~75%" is an old-model figure. Now carries `superseded_model: true`, propagated into `parameters.csv` as a machine-readable column so a downstream consumer cannot use it naively. |
+| **(c) Gap phrasing** | 12 | **1** | 11 were substring artefacts. The one genuine ANK gap, `g_l5matrix_006`, is already framed as the *discriminating question* between the two models and names the decisive experiment. **No malformed gaps found** — no gap presupposes the dead mechanism. |
+
+**Counts: (a) 3 tightened · (b) 1 flagged superseded, 6 already correct · (c) 0 malformed.**
+
+The lesson worth carrying: the substring false-positive rate here was ~50% (19 of 32
+matches were `biobank`/`rank`/`ankle`). A correction sweep that reports raw match counts
+overstates its own blast radius. Every match must be read, not tallied.
+
+### Reference disposition classification (MR-001 item 5, now standing policy)
+
+On every mechanism correction, each affected reference is classified:
+
+| Ref | Classification | Reasoning |
+|---|---|---|
+| `wang2005` (chondrocyte *Ank* manipulation) | **interpretation_superseded** | Blocking Ank *does* change chondrocyte PPi handling — that measurement stands. Only the causal story attached to it (ANK as a PPi transporter) died. `contradicts` therefore points at the reference rather than the finding being discarded. |
+| `szeri2022` (ANKH exports ATP) | **observation_stands** | The correcting evidence itself. |
+
+Discarding sound data along with the wrong story is the default failure mode of a
+correction pass, and is now explicitly forbidden: a measurement is retired only when
+classified `both_invalid`, which requires the measurement itself to be unreliable, not
+merely its explanation.
+
 ---
 
 ## CORR-002 — reserved

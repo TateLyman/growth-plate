@@ -28,7 +28,7 @@ OUT = os.path.join(ROOT, "quant", "parameters.csv")
 
 FIELDS = ["param_id", "layer", "node_id", "parameter", "value", "value_min",
           "value_max", "unit", "conditions", "species", "site", "age", "sex",
-          "source_ref", "uncertainty", "value_unverified", "notes"]
+          "source_ref", "uncertainty", "value_unverified", "superseded_model", "notes"]
 
 # plausibility envelopes: unit -> (low, high) for a single scalar value.
 # Deliberately wide - this catches order-of-magnitude blunders, not fine detail.
@@ -97,6 +97,7 @@ def main():
                 "source_ref": q.get("source_ref"),
                 "uncertainty": q.get("uncertainty"),
                 "value_unverified": bool(q.get("value_unverified")),
+                "superseded_model": bool(q.get("superseded_model")),
                 "notes": q.get("notes"),
             }
             rows.append(row)

@@ -31,6 +31,16 @@ species_basis: []   # REQUIRED (STUB_EXEMPT). which organisms the claim rests on
 translation_risk:   # REQUIRED (STUB_EXEMPT). low|moderate|high|unknown|not_applicable
 translation_risk_reason: # REQUIRED (STUB_EXEMPT)
 confidence:         # REQUIRED (STUB_EXEMPT). A|B|C|D|E|X
+                    # Grades the WEAKEST claim the summary makes. A node whose summary
+                    # spans an association AND a mechanism is not one claim: the
+                    # association may be A-grade while the mechanistic reading is C.
+                    # Reporting the stronger of the two would be optimistic; reporting
+                    # only the weaker is lossy. So: `confidence` = weakest, and
+                    # `claim_grades` carries the breakdown.
+claim_grades:       # OPTIONAL but REQUIRED where support diverges across claims.
+  - claim:          #   one falsifiable sentence
+    grade:          #   A|B|C|D|E|X for THAT claim specifically
+    basis:          #   one line: what evidence supports this claim at this grade
 
 key_refs:           # REQUIRED (STUB_EXEMPT). >=1 entry
   - ref_id:         #   key into sources/bibliography.yaml

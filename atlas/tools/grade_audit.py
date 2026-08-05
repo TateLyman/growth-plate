@@ -79,8 +79,24 @@ def audit_node(n, refs):
             citation_only = all(("refs" in r or "key_refs" in r) for r in reasons)
             if internally_replicated and he == "direct" and "human" in sb:
                 return "OK", [], "A"
-            sug = "B" if (he == "direct" and "human" in sb) else (
-                  "C" if he == "indirect" else "D")
+            # Two distinct failure modes, penalised differently:
+            #  - CITATION THINNESS (too few primaries) is under-evidencing, so the
+            #    penalty is a single grade: A -> B.
+            #  - DEFINITIONAL failure (no human evidence at all) is not a penalty
+            #    but a re-classification: the scale says animal-only-but-replicated
+            #    IS C, so C is the correct grade, not a two-grade "punishment".
+            #    Forcing it to B would assert human support that does not exist.
+            #  D is reserved for its actual definition - single study, in vitro
+            #  only, or conflicting reports - and must never be reached by
+            #  arithmetic on a well-cited node.
+            if he == "direct" and "human" in sb:
+                sug = "B"                      # thin citations only
+            elif he == "indirect":
+                sug = "C"
+            elif len(krs) >= 2 and n_primary >= 2:
+                sug = "C"                      # animal-only but replicated = C
+            else:
+                sug = "D"                      # genuinely single-source
             return "INFLATED", reasons, sug
         return "OK", [], "A"
 
