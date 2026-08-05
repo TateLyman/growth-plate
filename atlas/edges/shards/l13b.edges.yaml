@@ -1,0 +1,243 @@
+edges:
+
+- edge_id: e00001
+  source: human_growth_plate_tissue_scarcity
+  target: human_resting_zone_chondrocyte
+  relation: required_for
+  sign: unknown
+  magnitude: 'at most 102 postnatal human growth plates with stated donor counts underlie all human resting-zone claims'
+  context: human, postnatal, surgical-waste provenance; whole-plate
+  evidence_tier: T3
+  refs:
+  - human_gp_donor_census_20260805
+  - nilsson2003
+  confidence: A
+  notes: >-
+    Supply constraint edge: every characterisation of the human resting zone chondrocyte is
+    downstream of this tissue supply, so the confidence ceiling of L2 human claims is set here.
+
+- edge_id: e00002
+  source: laser_capture_microdissection_zonal
+  target: resting_zone
+  relation: required_for
+  sign: unknown
+  magnitude: 'only method that has produced zone-resolved human transcriptomes; n=2 donors, 5 zones'
+  context: human distal femur, 11y10m female and 13y3m male; RZ/PZ/PHZ/HZ/PERI
+  evidence_tier: T3
+  refs:
+  - gse9160
+  confidence: A
+  notes: >-
+    GSE9160 is the sole source of human zone-assigned transcript data. Any human zonal
+    expression claim either derives from it or from immunohistochemistry.
+
+- edge_id: e00003
+  source: chondrocyte_dissociation_bias
+  target: hypertrophic_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: 'hypertrophic cell volume 5,900 um3 in human vs droplet capture ceiling of roughly 40-50 um diameter'
+  context: multiple species, dissociation-based scRNA-seq; HZ
+  evidence_tier: T1
+  refs:
+  - white2008
+  - li2025
+  confidence: D
+  notes: >-
+    Direction is compelled by cell size and matrix stiffness, but the magnitude of loss has
+    never been measured against a histological ground truth in the same plate.
+
+- edge_id: e00004
+  source: cre_lox_lineage_tracing
+  target: monoclonal_column_formation
+  relation: required_for
+  sign: '+'
+  magnitude: 'the clonal column claim exists only where Cre-lox is available, i.e. mouse'
+  context: mouse, postnatal; RZ to PZ
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - zhou2014a
+  confidence: A
+  notes: >-
+    Method-dependency edge. It is not that clonal columns are murine; it is that the evidence
+    for them is, and no human method can produce the equivalent.
+
+- edge_id: e00005
+  source: mouse_model_translation_risk
+  target: epiphyseal_fusion
+  relation: inhibits
+  sign: '-'
+  magnitude: 'mouse plate persists as calcified cartilage at 55 weeks; endpoint not expressible'
+  context: mouse, lifelong; whole plate
+  evidence_tier: T1
+  refs:
+  - yu2025
+  - samvelyan2022
+  confidence: A
+  notes: >-
+    The single most consequential species constraint in the atlas: the dominant model organism
+    cannot express the endpoint the field is trying to explain.
+
+- edge_id: e00006
+  source: spatial_transcriptomics_growth_plate
+  target: growth_plate
+  relation: correlates_with
+  sign: unknown
+  magnitude: '7 growth plate spatial records in GEO, 0 human'
+  context: mouse only; all zones
+  evidence_tier: T3
+  refs:
+  - geo_census_20260805
+  - zhang2024
+  confidence: A
+  notes: >-
+    Human spatial transcriptomics of limb cartilage exists at 5-9 post-conception weeks
+    (zhang2024) but no growth plate exists at that stage, so the null for postnatal human physis
+    stands.
+
+- edge_id: e00007
+  source: stereology_growth_plate
+  target: hypertrophic_volume_increase
+  relation: required_for
+  sign: '+'
+  magnitude: 'human hypertrophic volume 5,900 um3, measured in exactly one plate'
+  context: human distal tibia, adolescent, physis closing; HZ
+  evidence_tier: T1
+  refs:
+  - white2008
+  - breur1991
+  confidence: D
+  notes: >-
+    The human anchor for the hypertrophic volume set point is a single closing plate, so the
+    parameter that drives elongation in every model has n=1 in humans.
+
+- edge_id: e00008
+  source: rabbit_growth_plate_model
+  target: growth_plate_senescence
+  relation: required_for
+  sign: '+'
+  magnitude: 'estrogen accelerates senescence and produces abrupt fusion; resting zone depletion measured'
+  context: rabbit, estrogen-treated and control; RZ
+  evidence_tier: T1
+  refs:
+  - weise2001
+  - schrier2006
+  - nilsson2014
+  confidence: B
+  notes: >-
+    Rabbit is the only tractable laboratory mammal in which the senescence-to-fusion sequence can
+    be observed end to end, and it carries the lowest translation risk score of the small mammals.
+
+- edge_id: e00009
+  source: immunohistochemistry_cartilage_artifact
+  target: resting_chondrocyte
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'ER-alpha reported at 64% of RZ cells by one study and absent from RZ by two others'
+  context: human, epiphysiodesis biopsies, Tanner 1-5; RZ
+  evidence_tier: T1
+  refs:
+  - nilsson2003
+  - egerbacher2002
+  - nilsson1999
+  confidence: D
+  notes: >-
+    Logged as a contradiction in audit/contradictions.md. Unresolved by any orthogonal method in
+    human tissue.
+
+- edge_id: e00010
+  source: knemometry
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: '+'
+  magnitude: 'detects two-week corticosteroid growth suppression that stadiometry cannot resolve'
+  context: human children, tibial segment; systemic
+  evidence_tier: T1
+  refs:
+  - chawes2017
+  - wolthers2017
+  confidence: A
+  notes: >-
+    Tissue-level output measure only; it reports that the plate elongated, never which zone did it.
+
+- edge_id: e00011
+  source: finite_element_model_physis
+  target: growth_plate
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'zero published human zonal physeal moduli, so all FE material constants are animal-derived'
+  context: in silico with human geometry and animal material properties; all zones
+  evidence_tier: T3
+  refs:
+  - sergerie2009
+  - williams2001
+  - hucke2023
+  confidence: C
+  notes: >-
+    Absolute stress predictions inherit animal material constants; only within-model relative
+    comparisons are defensible.
+
+- edge_id: e00012
+  source: snrna_seq_growth_plate
+  target: chondrocyte_dissociation_bias
+  relation: inhibits
+  sign: '-'
+  magnitude: 'nuclear isolation removes the enzymatic digestion step that destroys hypertrophic cells'
+  context: any species, archival or frozen tissue; HZ
+  evidence_tier: T5
+  refs:
+  - li2025
+  - delos2026
+  confidence: C
+  notes: >-
+    A solution that exists and has not been applied to human growth plate; cost is loss of
+    cytoplasmic and secreted-protein transcripts.
+
+- edge_id: e00013
+  source: human_growth_plate_biobank
+  target: human_growth_plate_tissue_scarcity
+  relation: required_for
+  sign: '-'
+  magnitude: 'no public catalogued repository located; donor counts per study range 1-24'
+  context: human, all ages; not zone-localised
+  evidence_tier: T3
+  refs:
+  - human_gp_donor_census_20260805
+  - gse288028
+  confidence: B
+  notes: >-
+    Infrastructure edge: the scarcity is partly an artefact of non-aggregation, since tissue is
+    discarded routinely in paediatric orthopaedic practice.
+
+- edge_id: e00014
+  source: brdu_edu_labeling
+  target: cell_cycle_time_pz
+  relation: required_for
+  sign: '+'
+  magnitude: 'human cycle time is inferred from 24 cells per column and 1.4 cm/yr, not labelled'
+  context: human distal femur, ages 5-8; PZ
+  evidence_tier: T1
+  refs:
+  - kember1976
+  - wilsman1996a
+  confidence: D
+  notes: >-
+    The 20-day human figure used throughout the atlas is a derived quantity; the direct method
+    that would test it cannot be applied to a child.
+
+- edge_id: e00015
+  source: cartilage_organoid
+  target: chondrocyte_column_formation
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'no organoid protocol yields columnar zonal architecture'
+  context: human iPSC-derived, in vitro; would-be PZ
+  evidence_tier: T5
+  refs:
+  - zhang2025
+  confidence: speculative
+  gap_id: g_l13b_008
+  notes: >-
+    Hypothesis that a human organoid could be driven to form columns given a defined mechanical
+    and oxygen boundary condition. Currently unrealised in any published system.

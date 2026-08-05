@@ -7595,3 +7595,881 @@ edges:
   refs:
   - holmgren2017
   confidence: B
+- edge_id: e00644
+  source: protein_intake_growth
+  target: igf1_systemic
+  relation: activates
+  sign: +
+  magnitude: +19% serum IGF-I in 7 days from 1.5 L/day skimmed milk; 0% from an isonitrogenous meat load
+  context: human, healthy prepubertal boys aged 8 y, n=24, free-living diet, 7-day randomised intervention
+  evidence_tier: T1
+  refs:
+  - hoppe2004
+  confidence: A
+  notes: 'Protein source, not protein quantity, is the operative variable: intake rose 61% (milk) and 54% (meat).'
+- edge_id: e00645
+  source: milk_consumption_height
+  target: igf1_systemic
+  relation: activates
+  sign: +
+  magnitude: +15% serum IGF-1 from the casein fraction of 1.5 L skim milk; whey gave no IGF-1 change
+  context: human, 57 boys aged 8 y, 2x2 factorial (whey/casein x high/low milk mineral), 7 days
+  evidence_tier: T1
+  refs:
+  - hoppe2009
+  - hoppe2004
+  confidence: A
+- edge_id: e00646
+  source: milk_consumption_height
+  target: insulin_hormone
+  relation: activates
+  sign: +
+  magnitude: +21% fasting insulin from the whey fraction (P=0.006), with no change in IGF-1
+  context: human, 57 boys aged 8 y, same 2x2 factorial trial
+  evidence_tier: T1
+  refs:
+  - hoppe2009
+  confidence: A
+  notes: Separates the insulinotropic from the somatotropic action of milk; the two fractions dissociate cleanly.
+- edge_id: e00647
+  source: milk_consumption_height
+  target: igfbp3
+  relation: activates
+  sign: +
+  magnitude: IGF-I/IGFBP-3 ratio rose 13% (P<0.0001), i.e. IGF-I rose proportionally more than IGFBP-3
+  context: human, prepubertal boys, 7-day skimmed milk intervention
+  evidence_tier: T1
+  refs:
+  - hoppe2004
+  confidence: B
+  notes: The rise in free IGF-I index is the physiologically relevant quantity; see L4 igf_ternary_complex.
+- edge_id: e00648
+  source: protein_intake_growth
+  target: mtorc1_chondrocyte
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no dietary protein manipulation has ever been coupled to a growth plate mTORC1 readout
+  context: proposed IGF-1-independent second entry point for dietary protein; species unspecified because untested
+  evidence_tier: T1
+  refs:
+  - larnkjr2026
+  confidence: speculative
+  gap_id: g_l10env_002
+- edge_id: e00649
+  source: protein_intake_growth
+  target: amino_acid_sensing_chondrocyte
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: plasma amino acids correlate with serum IGF-1 and linear growth in stunted children; chondrocyte sensing untested
+  context: human, 711-730 stunted Ugandan children aged 12-59 months, cross-sectional
+  evidence_tier: T1
+  refs:
+  - larnkjr2026
+  confidence: speculative
+  gap_id: g_l10env_002
+- edge_id: e00650
+  source: energy_availability_growth
+  target: leptin_hormone
+  relation: correlates_with
+  sign: +
+  magnitude: energy sufficiency is the permissive gate; supplementation closes only 11% of the attainable linear growth deficit
+  context: human, undernourished children in LMICs; leptin itself not measured in these trials
+  evidence_tier: T4
+  refs:
+  - watson2025
+  - martorell2017
+  confidence: E
+  notes: The leptin step is imported from L4 leptin_hormone, not measured in any supplementation trial cited here.
+- edge_id: e00651
+  source: zinc_deficiency_growth
+  target: igf1_systemic
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: zinc supplementation raises height by 0.350 SD (95% CI 0.189-0.511) with no change in weight-for-height
+  context: human, 33 RCTs in prepubertal children; no IGF-1 or growth plate target measured
+  evidence_tier: T4
+  refs:
+  - brown2002
+  confidence: speculative
+  gap_id: g_l10env_007
+- edge_id: e00652
+  source: iodine_deficiency_growth
+  target: thyroid_hormone_t3
+  relation: inhibits
+  sign: '-'
+  magnitude: iodine repletion raised IGF-I and IGFBP-3 and improved somatic growth in three double-blind trials (n=71, 310,
+    188)
+  context: human, iodine-deficient children aged 5-14 in Morocco, Albania and South Africa; exposure verified by urinary iodine
+  evidence_tier: T1
+  refs:
+  - zimmermann2007
+  confidence: A
+  notes: Iodine is the substrate for T4; the deficiency acts by limiting hormone synthesis, not receptor function.
+- edge_id: e00653
+  source: iodine_deficiency_growth
+  target: igf1_systemic
+  relation: inhibits
+  sign: '-'
+  magnitude: iodine repletion increased IGF-I and IGFBP-3 concentrations; smallest effect in the mildly deficient South African
+    cohort
+  context: human, three prospective double-blind iodine repletion trials
+  evidence_tier: T1
+  refs:
+  - zimmermann2007
+  - farebrother2018
+  confidence: A
+- edge_id: e00654
+  source: iodine_deficiency_growth
+  target: thra_receptor
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: T3-THRA action on prehypertrophic chondrocytes is established in L4 but has never been measured under iodine
+    repletion
+  context: human; the chondrocyte step is inferred from L4 thra_receptor
+  evidence_tier: T1
+  refs:
+  - zimmermann2007
+  confidence: speculative
+  gap_id: g_l10env_007
+- edge_id: e00655
+  source: vitamin_d_deficiency_rickets
+  target: vitamin_d_calcitriol
+  relation: inhibits
+  sign: '-'
+  magnitude: supplementation above the rachitic threshold does not change height-for-age Z (Z=0.43, P=0.67)
+  context: human, meta-analysis of RCTs in children 0-14 y in LMICs
+  evidence_tier: T4
+  refs:
+  - peng2025
+  confidence: A
+  notes: 'Threshold nutrient: frank deficiency deranges the plate, additional repletion buys no linear growth.'
+- edge_id: e00656
+  source: vitamin_d_deficiency_rickets
+  target: phosphate_homeostasis
+  relation: inhibits
+  sign: '-'
+  magnitude: hypophosphataemia, not a direct chondrocyte vitamin D action, produces the widened rachitic hypertrophic zone
+  context: human, nutritional rickets; mechanism imported from L4 phosphate_homeostasis
+  evidence_tier: T4
+  refs:
+  - peng2025
+  confidence: B
+- edge_id: e00657
+  source: calcium_intake_growth
+  target: calcium_homeostasis
+  relation: activates
+  sign: +
+  magnitude: milk-mineral (Ca, P) intake at the level of 1.5 L skim milk had no independent effect on serum IGF-1 or insulin
+  context: human, 57 prepubertal boys, 2x2 factorial randomised trial
+  evidence_tier: T1
+  refs:
+  - hoppe2009
+  confidence: A
+  notes: 'Negative result on the endocrine route: calcium''s entry into the atlas is via CASR/PTH/phosphate, not via IGF-1.'
+- edge_id: e00658
+  source: vitamin_a_growth
+  target: igf1_systemic
+  relation: correlates_with
+  sign: unknown
+  magnitude: vitamin A supplementation had no significant effect on HAZ, WAZ or WHZ
+  context: human, meta-analysis of RCTs in children 0-14 y in LMICs (12 RCTs, 6340 children)
+  evidence_tier: T4
+  refs:
+  - peng2025
+  confidence: A
+  notes: 'Recorded as a null: vitamin A repletion does not act through this route at population scale.'
+- edge_id: e00659
+  source: inflammation_growth_suppression
+  target: stat5b_tf
+  relation: inhibits
+  sign: '-'
+  magnitude: LPS abolished GH-induced hepatic STAT5 activation in wild-type and TNFR1-null mice; preserved in IL-6-null mice
+  context: mouse, hepatic, GH +/- LPS challenge; immunoblot, EMSA and qRT-PCR
+  evidence_tier: T1
+  refs:
+  - denson2003
+  confidence: C
+  notes: GHR abundance was unchanged, so the block is post-receptor.
+- edge_id: e00660
+  source: inflammation_growth_suppression
+  target: socs2_protein
+  relation: activates
+  sign: +
+  magnitude: TNF-alpha exposure of growth plate chondrocytes for 48 h increased SOCS2 protein
+  context: mouse growth plate chondrocytes in culture; Socs2-null mice are 6% longer with 24% wider growth plates
+  evidence_tier: T1
+  refs:
+  - macrae2009
+  - pass2012
+  confidence: C
+- edge_id: e00661
+  source: inflammation_growth_suppression
+  target: gh_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: 'functional GH resistance without loss of GHR protein: CIS and SOCS-3 upregulation blocks the receptor''s signal'
+  context: mouse, hepatic, LPS challenge; GHR abundance did not change
+  evidence_tier: T1
+  refs:
+  - denson2003
+  confidence: C
+  notes: Distinguishes signal-level from receptor-level resistance; the distinction matters therapeutically.
+- edge_id: e00662
+  source: inflammation_growth_suppression
+  target: igf1_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: IL-1beta (10 ng/mL), IL-6 (100 ng/mL) or TNF-alpha (50 ng/mL) halved IGF-I-driven proliferation and cut IGF-I-induced
+    AKT phosphorylation by 30-50%
+  context: rat RCJ3.1C5.18 chondrogenic cell line; baseline proliferation unaffected
+  evidence_tier: T1
+  refs:
+  - choukair2014
+  confidence: D
+- edge_id: e00663
+  source: inflammation_growth_suppression
+  target: mek1_erk_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: IGF-I-induced ERK phosphorylation reduced 50-75% by IL-1beta, IL-6 or TNF-alpha
+  context: rat chondrogenic cell line, cytokines co-incubated with IGF-I
+  evidence_tier: T1
+  refs:
+  - choukair2014
+  confidence: D
+- edge_id: e00664
+  source: inflammation_growth_suppression
+  target: igf1_systemic
+  relation: inhibits
+  sign: '-'
+  magnitude: CRP and AGP were the strongest negative correlates of serum IGF-1 in 740 stunted children
+  context: human, Ugandan children aged 12-59 months, Tobit regression
+  evidence_tier: T1
+  refs:
+  - madigan2026
+  - htet2026
+  confidence: A
+- edge_id: e00665
+  source: inflammation_growth_suppression
+  target: glucocorticoid_receptor
+  relation: activates
+  sign: '-'
+  magnitude: treating childhood airway inflammation with inhaled budesonide cost 1.2 cm of adult height (95% CI -1.9 to -0.5)
+  context: human, Childhood Asthma Management Program, 943 of 1041 participants, adult height at 24.9 +/- 2.7 y
+  evidence_tier: T1
+  refs:
+  - kelly2012
+  confidence: A
+  notes: 'The therapeutic trade-off: suppressing the cytokine route by activating the GR route also costs height, dose-dependently
+    (-0.1 cm per ug/kg/day).'
+- edge_id: e00666
+  source: infection_burden_growth
+  target: inflammation_growth_suppression
+  relation: activates
+  sign: +
+  magnitude: malaria positivity associated with serum IGF-1 -4.7 ug/L (95% CI -7.8 to -1.6), attenuated after inflammation
+    adjustment
+  context: human, 740 stunted Ugandan children, rapid malaria test with CRP and AGP
+  evidence_tier: T1
+  refs:
+  - madigan2026
+  confidence: A
+  notes: 'Attenuation on adjustment is the point: infection acts through inflammation, not beside it.'
+- edge_id: e00667
+  source: infection_burden_growth
+  target: igf1_systemic
+  relation: inhibits
+  sign: '-'
+  magnitude: -4.7 ug/L serum IGF-1 with positive malaria test before inflammation adjustment
+  context: human, stunted Ugandan children aged 12-59 months
+  evidence_tier: T1
+  refs:
+  - madigan2026
+  confidence: A
+- edge_id: e00668
+  source: environmental_enteric_dysfunction
+  target: igf1_systemic
+  relation: inhibits
+  sign: '-'
+  magnitude: plasma IFABP positively associated with soluble CD14; CD14 negatively associated with IGF-1
+  context: human, Indonesian birth cohort, faecal and plasma EED biomarkers at 6 months, LAZ at 12 months, SEM
+  evidence_tier: T1
+  refs:
+  - htet2026
+  - lowe2025
+  confidence: B
+- edge_id: e00669
+  source: environmental_enteric_dysfunction
+  target: inflammation_growth_suppression
+  relation: activates
+  sign: +
+  magnitude: elevated EED markers in >80% of infants; gut barrier failure -> microbial translocation -> systemic inflammation
+  context: human, Indonesian infants at 6 months; systematic review of 81 studies and 31996 children
+  evidence_tier: T1
+  refs:
+  - htet2026
+  - lowe2025
+  confidence: B
+- edge_id: e00670
+  source: stunting
+  target: igf1_systemic
+  relation: correlates_with
+  sign: '-'
+  magnitude: median serum IGF-1 37.4 ug/L (IQR 24.2-53.3) at mean HAZ -3.02
+  context: human, 740 stunted Ugandan children aged 12-59 months
+  evidence_tier: T1
+  refs:
+  - madigan2026
+  confidence: A
+- edge_id: e00671
+  source: gut_microbiome_growth
+  target: igf1_systemic
+  relation: activates
+  sign: +
+  magnitude: colonisation of germ-free mice substantially raised serum IGF-1 with increased hepatic and adipose IGF-1 production;
+    antibiotics lowered it
+  context: mouse, germ-free vs SPF colonisation and antibiotic depletion; growth plate activity increased with long-term colonisation
+  evidence_tier: T1
+  refs:
+  - yan2016
+  confidence: C
+- edge_id: e00672
+  source: microbiome_igf1_axis
+  target: igf1_systemic
+  relation: activates
+  sign: +
+  magnitude: short-chain fatty acid supplementation of antibiotic-treated mice restored IGF-1 and bone mass to non-antibiotic-treated
+    levels
+  context: mouse, conventionally raised, antibiotic depletion then SCFA repletion
+  evidence_tier: T1
+  refs:
+  - yan2016
+  confidence: C
+  notes: Sufficiency experiment; identifies SCFA as the candidate mediator. Never tested in humans (g_l10env_001).
+- edge_id: e00673
+  source: microbiome_igf1_axis
+  target: growth_hormone
+  relation: hypothesized_link
+  sign: +
+  magnitude: selected lactobacilli promote juvenile growth in a strain-dependent manner recapitulating the microbiota's effect
+    on the somatotropic axis
+  context: mouse, monocolonised germ-free animals on standard or nutritionally depleted diet
+  evidence_tier: T1
+  refs:
+  - schwarzer2016
+  confidence: speculative
+  gap_id: g_l10env_001
+- edge_id: e00674
+  source: gut_microbiome_growth
+  target: stunting
+  relation: correlates_with
+  sign: '-'
+  magnitude: microbiota from undernourished Malawian infants transmitted impaired growth to gnotobiotic mice; R. gnavus and
+    C. symbiosum ameliorated it
+  context: mouse recipients of human donor microbiota on a Malawian diet; the growth phenotype is read out in mice
+  evidence_tier: T1
+  refs:
+  - blanton2016
+  confidence: C
+- edge_id: e00675
+  source: altitude_hypoxia_growth
+  target: hif1a_chondrocyte
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no measurement of growth plate pO2 or HIF-1alpha under altitude exposure exists in any species
+  context: human high-altitude residents; the human growth plate pO2 has never been measured at any altitude
+  evidence_tier: T5
+  refs:
+  - frisancho2025
+  confidence: speculative
+  gap_id: g_l10env_010
+- edge_id: e00676
+  source: altitude_hypoxia_growth
+  target: hypoxic_gradient_signaling
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: the plate is avascular and already hypoxic at sea level, so a fall in arterial pO2 need not change physeal pO2
+  context: human; baseline physeal oxygen gradient unmeasured (see L1 oxygen_gradient_growth_plate)
+  evidence_tier: T5
+  refs:
+  - frisancho2025
+  confidence: speculative
+  gap_id: g_l10env_010
+- edge_id: e00677
+  source: altitude_hypoxia_growth
+  target: secular_trend_height
+  relation: correlates_with
+  sign: +
+  magnitude: Tibetan children at ~3600 m gained height across the 2005, 2010, 2014 and 2019 survey waves at unchanged altitude
+  context: human, Chinese National Survey on Students' Constitution and Health, ages 7-18, Lhasa region
+  evidence_tier: T1
+  refs:
+  - zhang2026
+  confidence: A
+  notes: 'Altitude is not a fixed ceiling: the environmental component dominates over 15 years.'
+- edge_id: e00678
+  source: endocrine_disrupting_chemicals
+  target: estrogen_receptor_alpha
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no bisphenol or phthalate has been applied to mammalian growth plate chondrocytes with an ERalpha readout
+  context: human exposure biomonitoring only; the cartilage experiment does not exist
+  evidence_tier: T1
+  refs:
+  - choe2025
+  confidence: speculative
+  gap_id: g_l10env_011
+- edge_id: e00679
+  source: endocrine_disrupting_chemicals
+  target: aromatase_cyp19a1
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: aromatase is the proposed alternative EDC target at the plate; never assayed under EDC exposure in physeal tissue
+  context: human; inferred from L4 aromatase_cyp19a1 and the estrogen dependence of fusion
+  evidence_tier: T1
+  refs:
+  - choe2025
+  confidence: speculative
+  gap_id: g_l10env_011
+- edge_id: e00680
+  source: endocrine_disrupting_chemicals
+  target: gnrh_hormone
+  relation: correlates_with
+  sign: biphasic
+  magnitude: mono-benzyl phthalate OR 2.75 (95% CI 1.34-5.66) for delayed puberty in girls; BPA-phthalate mixture associated
+    with precocious puberty in boys and delayed puberty in both sexes
+  context: human, 1424 Korean children and adolescents, Tanner staging self-measured, quantile g-computation mixture models
+  evidence_tier: T1
+  refs:
+  - choe2025
+  confidence: D
+  notes: Opposite directions in the two sexes; the central (GnRH) rather than peripheral entry point is the one with human
+    data.
+- edge_id: e00681
+  source: lead_exposure_growth
+  target: igf1_systemic
+  relation: inhibits
+  sign: '-'
+  magnitude: in 880 children referred for short stature, the GH-deficient group had higher blood lead and lower serum IGF-1
+    (P<0.05)
+  context: human clinical series; companion rat model showed increased ERK1/2, JNK, p38 and Akt phosphorylation
+  evidence_tier: T1
+  refs:
+  - xu2014
+  confidence: D
+  notes: The rat phospho-signal direction is opposite to a simple IGF-I blockade and has not been replicated.
+- edge_id: e00682
+  source: lead_exposure_growth
+  target: igf1_receptor
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no lead target has been identified in physeal cartilage in any species
+  context: human epidemiological association only (blood lead 0.14-1.92 umol/L inversely related to stature, n=1454)
+  evidence_tier: T1
+  refs:
+  - frisancho1991
+  - xu2014
+  confidence: speculative
+  gap_id: g_l10env_007
+- edge_id: e00683
+  source: psychosocial_dwarfism
+  target: gh_secretion_pulsatility
+  relation: inhibits
+  sign: '-'
+  magnitude: emotional deprivation produces growth retardation clinically simulating idiopathic hypopituitarism
+  context: human children; the 1967 defining case series was read at title level only, hormone values unverified
+  evidence_tier: T1
+  refs:
+  - powell1967
+  - powell1967a
+  confidence: D
+  notes: Confidence reduced because the endocrine data could not be verified from the indexed record; full text queued in
+    sources/access_queue.md.
+- edge_id: e00684
+  source: preterm_birth_growth
+  target: glucocorticoid_receptor
+  relation: activates
+  sign: +
+  magnitude: antenatal steroid exposure associated with 2.8 cm greater predicted final height in girls (95% CI 0.3-5.3)
+  context: human, single-centre neonatal cohort, SITAR model of 202 children, n=59 girls with complete covariates
+  evidence_tier: T1
+  refs:
+  - lawrence2025
+  confidence: D
+  notes: Direction is opposite to postnatal glucocorticoid growth suppression; same receptor, different developmental window.
+    Needs replication.
+- edge_id: e00685
+  source: intrauterine_growth_restriction
+  target: igf1_systemic
+  relation: inhibits
+  sign: '-'
+  magnitude: birth length below -2 SDS carries a 7.1-fold relative risk of short final stature (95% CI 3.7-13.6)
+  context: human, 3650 full-term Swedish singletons followed to final height at ~18 y
+  evidence_tier: T1
+  refs:
+  - karlberg1995
+  confidence: B
+  notes: The IGF step is inferred; the cohort measured height, not hormones.
+- edge_id: e00686
+  source: placental_function_growth
+  target: pappa2_protease
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no study links measured placental PAPP-A2 activity to a fetal or infant linear growth endpoint
+  context: human; PAPP-A2 is placentally abundant and sets IGF bioavailability by cleaving IGFBP-3 and IGFBP-5 (L4)
+  evidence_tier: T1
+  refs:
+  - htet2026
+  confidence: speculative
+  gap_id: g_l10env_008
+- edge_id: e00687
+  source: maternal_nutrition_offspring_height
+  target: igf2_hormone
+  relation: hypothesized_link
+  sign: +
+  magnitude: IGF-2 dominates human fetal growth but was not measured in any maternal nutrition trial or cohort cited here
+  context: human; imported from L4 igf2_hormone
+  evidence_tier: T5
+  refs:
+  - martorell2017
+  confidence: speculative
+  gap_id: g_l10env_008
+- edge_id: e00688
+  source: dutch_hunger_winter
+  target: dohad_hypothesis
+  relation: correlates_with
+  sign: +
+  magnitude: birthweight polygenic index explained 14% of variance in controls (r=0.38) but had no detectable effect in famine-exposed
+    (r=0.10)
+  context: human, Dutch Hunger Winter Families Study, 283 mid-to-late gestation exposed, 145 early exposed, 161 controls
+  evidence_tier: T1
+  refs:
+  - taeubert2026
+  confidence: B
+  notes: A severe environmental insult can abolish the expression of genetic influence on growth.
+- edge_id: e00689
+  source: dutch_hunger_winter
+  target: intrauterine_growth_restriction
+  relation: activates
+  sign: +
+  magnitude: childhood famine cost 1.4 cm (95% CI -2.4 to -0.3) of adult height 40 years later versus matched controls
+  context: human; comparison case is the 1984-85 Great Ethiopian Famine retrospective cohort
+  evidence_tier: T1
+  refs:
+  - abera2026
+  confidence: A
+- edge_id: e00690
+  source: small_for_gestational_age
+  target: sga_catch_up
+  relation: precedes
+  sign: +
+  magnitude: 82.9% of SGA infants caught up within 6 months; 13.4% remained below -2 SDS at 1 year and 7.9% at 18 years
+  context: human, population-based Swedish cohorts, n=3650 and companion series
+  evidence_tier: T1
+  refs:
+  - karlberg1995
+  - karlberg2002
+  confidence: A
+- edge_id: e00691
+  source: intrauterine_growth_restriction
+  target: small_for_gestational_age
+  relation: precedes
+  sign: +
+  magnitude: 22% of short 18-year-olds had been short at birth by length; 14% by weight
+  context: human, 3650 full-term Swedish singletons
+  evidence_tier: T1
+  refs:
+  - karlberg1995
+  confidence: A
+- edge_id: e00692
+  source: secular_trend_height
+  target: population_height_variation
+  relation: correlates_with
+  sign: +
+  magnitude: maximum century gain ~20 cm equals the ~19-20 cm between-population range, which has not narrowed
+  context: human, 200 countries, birth cohorts 1896-1996
+  evidence_tier: T1
+  refs:
+  - ncd2016
+  confidence: A
+- edge_id: e00693
+  source: secular_trend_reversal
+  target: secular_trend_height
+  relation: inhibits
+  sign: '-'
+  magnitude: ~5 cm decline from cohort peak in Niger, Rwanda, Sierra Leone and Uganda after the early 1960s
+  context: human, NCD-RisC pooled measured heights
+  evidence_tier: T1
+  refs:
+  - ncd2016
+  confidence: A
+- edge_id: e00694
+  source: socioeconomic_gradient_height
+  target: stunting
+  relation: activates
+  sign: +
+  magnitude: +1.88 cm adult height (95% CI 1.04-2.72) for upward wealth mobility versus stable-low wealth
+  context: human, INCAP Guatemalan birth cohort, n=1386, followed 1967-2018
+  evidence_tier: T1
+  refs:
+  - varghese2021
+  - victora2008
+  confidence: A
+- edge_id: e00695
+  source: migration_studies_height
+  target: netherlands_tallest_population
+  relation: correlates_with
+  sign: '-'
+  magnitude: migrant-origin children gained 2-3 cm in 1997-2009 while Dutch-origin children were flat
+  context: human, Netherlands nationwide growth surveys, n>16000
+  evidence_tier: T1
+  refs:
+  - schnbeck2015
+  - schnbeck2013
+  confidence: A
+  notes: Decisive against reading the Dutch plateau as a property of the shared environment.
+- edge_id: e00696
+  source: ncd_risc_height_dataset
+  target: secular_trend_height
+  relation: required_for
+  sign: +
+  magnitude: 1472 studies and 18.6M measured adult heights are the source of every secular-trend estimate used in this layer
+  context: human, 200 countries; the dataset carries no biological covariate
+  evidence_tier: T1
+  refs:
+  - ncd2016
+  - ncd2020
+  confidence: A
+- edge_id: e00697
+  source: stunting
+  target: energy_availability_growth
+  relation: correlates_with
+  sign: '-'
+  magnitude: SQ-LNS closes 11% of the maximal attainable linear growth benefit (95% CI 9.4-12)
+  context: human, pooled 15 RCTs in 10 LMICs, n=36970
+  evidence_tier: T4
+  refs:
+  - watson2025
+  confidence: A
+  notes: The 89% not closed by feeding is the target of g_l10env_006.
+- edge_id: e00698
+  source: environmental_enteric_dysfunction
+  target: stunting
+  relation: activates
+  sign: +
+  magnitude: all EED domains associated with child linear growth across 81 studies and 31996 children
+  context: human, children 0-5 y in low- and middle-income countries
+  evidence_tier: T4
+  refs:
+  - lowe2025
+  - htet2026
+  confidence: A
+- edge_id: e00699
+  source: human_growth_plate_tissue_scarcity
+  target: human_resting_zone_chondrocyte
+  relation: required_for
+  sign: unknown
+  magnitude: at most 102 postnatal human growth plates with stated donor counts underlie all human resting-zone claims
+  context: human, postnatal, surgical-waste provenance; whole-plate
+  evidence_tier: T3
+  refs:
+  - human_gp_donor_census_20260805
+  - nilsson2003
+  confidence: A
+  notes: 'Supply constraint edge: every characterisation of the human resting zone chondrocyte is downstream of this tissue
+    supply, so the confidence ceiling of L2 human claims is set here.'
+- edge_id: e00700
+  source: laser_capture_microdissection_zonal
+  target: resting_zone
+  relation: required_for
+  sign: unknown
+  magnitude: only method that has produced zone-resolved human transcriptomes; n=2 donors, 5 zones
+  context: human distal femur, 11y10m female and 13y3m male; RZ/PZ/PHZ/HZ/PERI
+  evidence_tier: T3
+  refs:
+  - gse9160
+  confidence: A
+  notes: GSE9160 is the sole source of human zone-assigned transcript data. Any human zonal expression claim either derives
+    from it or from immunohistochemistry.
+- edge_id: e00701
+  source: chondrocyte_dissociation_bias
+  target: hypertrophic_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: hypertrophic cell volume 5,900 um3 in human vs droplet capture ceiling of roughly 40-50 um diameter
+  context: multiple species, dissociation-based scRNA-seq; HZ
+  evidence_tier: T1
+  refs:
+  - white2008
+  - li2025
+  confidence: D
+  notes: Direction is compelled by cell size and matrix stiffness, but the magnitude of loss has never been measured against
+    a histological ground truth in the same plate.
+- edge_id: e00702
+  source: cre_lox_lineage_tracing
+  target: monoclonal_column_formation
+  relation: required_for
+  sign: +
+  magnitude: the clonal column claim exists only where Cre-lox is available, i.e. mouse
+  context: mouse, postnatal; RZ to PZ
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - zhou2014a
+  confidence: A
+  notes: Method-dependency edge. It is not that clonal columns are murine; it is that the evidence for them is, and no human
+    method can produce the equivalent.
+- edge_id: e00703
+  source: mouse_model_translation_risk
+  target: epiphyseal_fusion
+  relation: inhibits
+  sign: '-'
+  magnitude: mouse plate persists as calcified cartilage at 55 weeks; endpoint not expressible
+  context: mouse, lifelong; whole plate
+  evidence_tier: T1
+  refs:
+  - yu2025
+  - samvelyan2022
+  confidence: A
+  notes: 'The single most consequential species constraint in the atlas: the dominant model organism cannot express the endpoint
+    the field is trying to explain.'
+- edge_id: e00704
+  source: spatial_transcriptomics_growth_plate
+  target: growth_plate
+  relation: correlates_with
+  sign: unknown
+  magnitude: 7 growth plate spatial records in GEO, 0 human
+  context: mouse only; all zones
+  evidence_tier: T3
+  refs:
+  - geo_census_20260805
+  - zhang2024
+  confidence: A
+  notes: Human spatial transcriptomics of limb cartilage exists at 5-9 post-conception weeks (zhang2024) but no growth plate
+    exists at that stage, so the null for postnatal human physis stands.
+- edge_id: e00705
+  source: stereology_growth_plate
+  target: hypertrophic_volume_increase
+  relation: required_for
+  sign: +
+  magnitude: human hypertrophic volume 5,900 um3, measured in exactly one plate
+  context: human distal tibia, adolescent, physis closing; HZ
+  evidence_tier: T1
+  refs:
+  - white2008
+  - breur1991
+  confidence: D
+  notes: The human anchor for the hypertrophic volume set point is a single closing plate, so the parameter that drives elongation
+    in every model has n=1 in humans.
+- edge_id: e00706
+  source: rabbit_growth_plate_model
+  target: growth_plate_senescence
+  relation: required_for
+  sign: +
+  magnitude: estrogen accelerates senescence and produces abrupt fusion; resting zone depletion measured
+  context: rabbit, estrogen-treated and control; RZ
+  evidence_tier: T1
+  refs:
+  - weise2001
+  - schrier2006
+  - nilsson2014
+  confidence: B
+  notes: Rabbit is the only tractable laboratory mammal in which the senescence-to-fusion sequence can be observed end to
+    end, and it carries the lowest translation risk score of the small mammals.
+- edge_id: e00707
+  source: immunohistochemistry_cartilage_artifact
+  target: resting_chondrocyte
+  relation: correlates_with
+  sign: unknown
+  magnitude: ER-alpha reported at 64% of RZ cells by one study and absent from RZ by two others
+  context: human, epiphysiodesis biopsies, Tanner 1-5; RZ
+  evidence_tier: T1
+  refs:
+  - nilsson2003
+  - egerbacher2002
+  - nilsson1999
+  confidence: D
+  notes: Logged as a contradiction in audit/contradictions.md. Unresolved by any orthogonal method in human tissue.
+- edge_id: e00708
+  source: knemometry
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: +
+  magnitude: detects two-week corticosteroid growth suppression that stadiometry cannot resolve
+  context: human children, tibial segment; systemic
+  evidence_tier: T1
+  refs:
+  - chawes2017
+  - wolthers2017
+  confidence: A
+  notes: Tissue-level output measure only; it reports that the plate elongated, never which zone did it.
+- edge_id: e00709
+  source: finite_element_model_physis
+  target: growth_plate
+  relation: correlates_with
+  sign: unknown
+  magnitude: zero published human zonal physeal moduli, so all FE material constants are animal-derived
+  context: in silico with human geometry and animal material properties; all zones
+  evidence_tier: T3
+  refs:
+  - sergerie2009
+  - williams2001
+  - hucke2023
+  confidence: C
+  notes: Absolute stress predictions inherit animal material constants; only within-model relative comparisons are defensible.
+- edge_id: e00710
+  source: snrna_seq_growth_plate
+  target: chondrocyte_dissociation_bias
+  relation: inhibits
+  sign: '-'
+  magnitude: nuclear isolation removes the enzymatic digestion step that destroys hypertrophic cells
+  context: any species, archival or frozen tissue; HZ
+  evidence_tier: T5
+  refs:
+  - li2025
+  - delos2026
+  confidence: C
+  notes: A solution that exists and has not been applied to human growth plate; cost is loss of cytoplasmic and secreted-protein
+    transcripts.
+- edge_id: e00711
+  source: human_growth_plate_biobank
+  target: human_growth_plate_tissue_scarcity
+  relation: required_for
+  sign: '-'
+  magnitude: no public catalogued repository located; donor counts per study range 1-24
+  context: human, all ages; not zone-localised
+  evidence_tier: T3
+  refs:
+  - human_gp_donor_census_20260805
+  - gse288028
+  confidence: B
+  notes: 'Infrastructure edge: the scarcity is partly an artefact of non-aggregation, since tissue is discarded routinely
+    in paediatric orthopaedic practice.'
+- edge_id: e00712
+  source: brdu_edu_labeling
+  target: cell_cycle_time_pz
+  relation: required_for
+  sign: +
+  magnitude: human cycle time is inferred from 24 cells per column and 1.4 cm/yr, not labelled
+  context: human distal femur, ages 5-8; PZ
+  evidence_tier: T1
+  refs:
+  - kember1976
+  - wilsman1996a
+  confidence: D
+  notes: The 20-day human figure used throughout the atlas is a derived quantity; the direct method that would test it cannot
+    be applied to a child.
+- edge_id: e00713
+  source: cartilage_organoid
+  target: chondrocyte_column_formation
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no organoid protocol yields columnar zonal architecture
+  context: human iPSC-derived, in vitro; would-be PZ
+  evidence_tier: T5
+  refs:
+  - zhang2025
+  confidence: speculative
+  gap_id: g_l13b_008
+  notes: Hypothesis that a human organoid could be driven to form columns given a defined mechanical and oxygen boundary condition.
+    Currently unrealised in any published system.
