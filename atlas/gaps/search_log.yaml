@@ -844,3 +844,82 @@ searches:
     unloading, growth arrest case reports, and disease cohorts (cerebral palsy, neuromuscular disease) in which disuse is
     inseparable from nutrition, spasticity and the primary lesion. Adult head-down-tilt bed rest campaigns exist in quantity
     but all subjects have closed physes.
+- gap_id: g_l5matrix_001
+  database: Europe PMC REST search
+  exact_query_string: TITLE_ABS:("growth plate" OR physis OR physeal) AND TITLE_ABS:(human) AND TITLE_ABS:("elastic modulus"
+    OR "aggregate modulus" OR indentation OR "atomic force microscopy" OR stiffness)
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 12
+  screened_count: 12
+  reason_none_qualified: All twelve concern implant or graft biomechanics in paediatric patients (MPFL and PCL reconstruction,
+    suture anchors), animal models (mouse, rat, goat), scoliosis vertebral growth plate histomorphometry without a modulus,
+    or reviews. None reports a modulus for human growth plate cartilage. A broader query without the TITLE_ABS restriction
+    ('("growth plate" OR physis OR physeal) AND (human) AND ("elastic modulus" OR "Young modulus" OR stiffness OR nanoindentation
+    OR "atomic force microscopy")', 3436 hits, first 25 screened) returned only paediatric fracture-fixation biomechanics.
+    The single human growth plate modulus dataset located in this sweep, xie2025 (PMID 40781081), was found via a mineralization
+    query, not a mechanics query, and reports nanoscale sharp-tip AFM values 130-416 MPa that are 200-1000 fold above every
+    animal tissue-scale measurement, so no hydrated tissue-scale human physeal modulus exists.
+- gap_id: g_l5matrix_002
+  database: Europe PMC REST search
+  exact_query_string: TITLE_ABS:("growth plate" OR physis OR "epiphyseal cartilage") AND TITLE_ABS:(pyrophosphate OR PPi)
+    AND TITLE_ABS:(concentration OR "in situ" OR ratio OR measurement)
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 13
+  screened_count: 13
+  reason_none_qualified: All thirteen measure PPi or phosphatase activity in isolated matrix vesicles, in cell or organ culture,
+    in plasma, or in biomimetic vesicle systems, or are reviews. kim2010 (PMID 20601283) imposes graded extracellular Pi on
+    cultured growth plate chondrocytes rather than measuring tissue concentrations. wang2005 (PMID 15601852) measures intra-
+    and extracellular PPi in cultured chondrocytes, not in tissue. No study reports Pi or PPi concentration, or their ratio,
+    resolved by zone in intact growth plate tissue in any species. A wider query ('("growth plate" OR physis) AND (pyrophosphate)
+    AND (zone OR zonal OR "in situ") AND (ratio OR concentration OR measured)', 312 hits, first 25 screened) added only hypophosphatasia
+    clinical papers and reviews.
+- gap_id: g_l5matrix_003
+  database: Europe PMC REST search
+  exact_query_string: TITLE_ABS:(human) AND TITLE_ABS:("growth plate" OR physis OR physeal) AND TITLE_ABS:(collagen) AND TITLE_ABS:("type
+    XI" OR "type IX" OR heterotypic OR fibril)
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 12
+  screened_count: 12
+  reason_none_qualified: Two hits are genuinely human physeal and were added to the bibliography, but neither supplies stoichiometry.
+    keene1995 (PMID 7560887) localises collagens II, IX and XI ultrastructurally in human juvenile rib growth plate and reports
+    the fibril-diameter restriction of collagen XI (<25 nm) with zonal fibril-thickness distribution, but is qualitative immuno-EM
+    with no mass or molar ratio. reginato1995 (PMID 7584316) shows human fetal epiphyseal growth plate organ cultures synthesise
+    types II, IX, X and XI but quantifies only type X biosynthetic rate. The remainder are mouse transgenics, reviews, articular
+    cartilage, or craniofacial. A parallel query for the recited ratio ('collagen AND "type XI" AND cartilage AND fibril AND
+    (8:1 OR "3:1" OR ratio OR quantitation)', 331 hits, first 15 screened) returned no primary quantitation of human physeal
+    collagen stoichiometry; the quoted proportions trace to eyre2002, a review of bovine growth cartilage and human articular
+    cartilage.
+- gap_id: g_l5matrix_009
+  database: Europe PMC REST search
+  exact_query_string: TITLE_ABS:("lysyl oxidase" OR LOX OR LOXL) AND TITLE_ABS:("growth plate" OR physis OR "epiphyseal cartilage")
+    AND TITLE_ABS:(crosslink OR collagen OR zone OR activity)
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 13
+  screened_count: 13
+  reason_none_qualified: 'None of the thirteen hits measures lysyl oxidase in growth plate cartilage; the term LOX is matched
+    incidentally (oxidised LDL, NADPH oxidase, unrelated matrix genes) and the remainder are mouse knockouts of other genes,
+    reviews, or intervertebral disc studies. Broader queries were also run: ''TITLE:("lysyl oxidase") AND TITLE:(lathyrism
+    OR beta-aminopropionitrile OR crosslink OR knockout OR mice)'' (47 hits, top 8 screened) returned only vascular, hepatic,
+    palatal and tumour studies plus the Lox and Loxl3 nulls; ''("lysyl oxidase" OR LOX) AND ("growth plate" OR "epiphyseal
+    cartilage" OR chondrocyte) AND (hypoxia OR HIF OR expression)'' (1913 hits, top 10 screened) returned only reviews and
+    unrelated matrix-biology papers. No zone-resolved LOX expression, LOX activity, or pyridinoline crosslink density measurement
+    in growth plate cartilage was located in any species, and no beta-aminopropionitrile dose-response on physeal mechanical
+    properties was found.'
+- gap_id: g_l5matrix_004
+  database: Europe PMC REST search
+  exact_query_string: TITLE_ABS:("growth plate" OR physis OR "epiphyseal cartilage") AND TITLE_ABS:("fixed charge density"
+    OR "swelling pressure" OR "osmotic pressure")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 3
+  screened_count: 3
+  reason_none_qualified: The three hits are a gadolinium contrast-agent comparison in piglet skeleton (16641351), a fixation-osmolarity
+    artefact study in growth plate chondrocytes (20473830), and lesperance1992 (PMID 1309384), which does measure fixed charge
+    density by sodium NMR in calf EPIPHYSEAL cartilage (-0.19 to -0.35 M) but not zone-resolved within a growth plate and
+    not in human tissue. A companion query for zonal hydration ('TITLE_ABS:("growth plate" OR physis OR physeal) AND TITLE_ABS:("water
+    content" OR hydration OR "wet weight")', 22 hits, all screened) returned only shiguetomimedi2013 (method validation in
+    pigs, no zonal values) and unrelated clinical MRI papers. No direct swelling-pressure measurement on physeal tissue exists.

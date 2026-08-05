@@ -6189,3 +6189,532 @@ edges:
   refs:
   - ilizarov1989
   confidence: D
+- edge_id: e00535
+  source: collagen_type_xi
+  target: collagen_fibril_stoichiometry
+  relation: required_for
+  sign: +
+  magnitude: uniform ~20 nm fibril diameter requires collagen II:XI molar excess below 8-fold; above it, control is lost
+  context: in vitro reconstitution of purified embryonic cartilage collagens
+  evidence_tier: T1
+  refs:
+  - blaschke2000
+  confidence: C
+  notes: Collagen IX increases assembly efficiency but is not required for diameter control.
+- edge_id: e00536
+  source: collagen_type_ix
+  target: matrilin3
+  relation: required_for
+  sign: +
+  magnitude: matrilin-3 fails to integrate into cartilage matrix in Col9a1-null mice
+  context: mouse cartilage, collagen IX null
+  evidence_tier: T1
+  refs:
+  - budde2005
+  confidence: C
+- edge_id: e00537
+  source: collagen_fibril_stoichiometry
+  target: zonal_stiffness_gradient
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: collagen XI is restricted to <25 nm fibrils and thin fibrils are concentrated in the human hypertrophic zone;
+    whether this sets the zonal modulus is untested
+  context: human juvenile rib growth plate
+  evidence_tier: T1
+  refs:
+  - keene1995
+  - eckstein2022
+  confidence: speculative
+  gap_id: g_l5matrix_003
+- edge_id: e00538
+  source: aggrecan_acan
+  target: fixed_charge_density
+  relation: sufficient_for
+  sign: +
+  magnitude: FCD -0.19 to -0.35 M in calf epiphyseal cartilage, varying in proportion to GAG content
+  context: calf epiphyseal and articular cartilage, sodium NMR
+  evidence_tier: T1
+  refs:
+  - lesperance1992
+  confidence: C
+- edge_id: e00539
+  source: fixed_charge_density
+  target: cartilage_osmotic_swelling
+  relation: required_for
+  sign: +
+  magnitude: measured swelling pressure is ~1/3 of ideal Donnan prediction; aggregate modulus rises threefold from 2 M to
+    0.001 M NaCl
+  context: immature bovine (n=18) and mature human (n=6) articular cartilage, confined compression
+  evidence_tier: T1
+  refs:
+  - zimmerman2021
+  confidence: B
+- edge_id: e00540
+  source: link_protein_hapln1
+  target: aggrecan_acan
+  relation: binds
+  sign: +
+  magnitude: link protein is substoichiometric to aggrecan G1 in human cartilage over 13 years, leaving a fraction of aggregates
+    unstable
+  context: human articular cartilage, newborn to 63 years, sequential extraction
+  evidence_tier: T1
+  refs:
+  - wells2003
+  confidence: B
+- edge_id: e00541
+  source: hyaluronan_matrix
+  target: aggrecan_acan
+  relation: required_for
+  sign: +
+  magnitude: Prx1-Cre Has2 deletion reduces aggrecan deposition in growth plate matrix and disorganises columns
+  context: mouse limb bud mesenchyme, conditional Has2 null
+  evidence_tier: T1
+  refs:
+  - matsumoto2009
+  confidence: C
+- edge_id: e00542
+  source: acan_dosage_effect
+  target: aggrecan_acan
+  relation: correlates_with
+  sign: '-'
+  magnitude: heterozygous loss-of-function gives median adult height -2.8 SDS and bone age +1.3 years
+  context: 103 humans from 20 families, both sexes
+  evidence_tier: T1
+  refs:
+  - gkourogianni2017
+  - nilsson2014_2
+  confidence: A
+- edge_id: e00543
+  source: enpp1_enzyme
+  target: inorganic_pyrophosphate
+  relation: activates
+  sign: +
+  magnitude: Enpp1-/- mouse bone contains <2.5% of wild-type PPi
+  context: mouse whole bone; also human ENPP1 loss-of-function (GACI)
+  evidence_tier: T1
+  refs:
+  - szeri2022
+  - rutsch2003
+  confidence: A
+- edge_id: e00544
+  source: ankh_transporter
+  target: enpp1_enzyme
+  relation: precedes
+  sign: +
+  magnitude: ANKH exports ATP; ENPP1 converts it extracellularly to PPi + AMP. No PPi rise on ANKH expression in ENPP1-null
+    cells
+  context: ENPP1-knockout HEK293 cells; mouse bone and plasma
+  evidence_tier: T1
+  refs:
+  - szeri2022
+  confidence: B
+  notes: Supersedes the earlier model in which ANK transports PPi directly (wang2005). See gap g_l5matrix_006.
+- edge_id: e00545
+  source: tnap_alpl
+  target: inorganic_pyrophosphate
+  relation: degrades
+  sign: '-'
+  magnitude: Alpl-/- mice have <1% plasma TNAP activity and accumulate PPi; plasma PPi is invariably raised in human hypophosphatasia
+  context: mouse null and human hypophosphatasia, all ages
+  evidence_tier: T1
+  refs:
+  - fedde1999
+  - russell1971
+  confidence: A
+- edge_id: e00546
+  source: inorganic_pyrophosphate
+  target: hydroxyapatite_nucleation
+  relation: inhibits
+  sign: '-'
+  magnitude: mineral initiates inside matrix vesicles in Alpl-/- growth plate but cannot propagate into the PPi-rich extravesicular
+    matrix
+  context: 10-day-old Alpl-/- mouse tibial growth plate, high-resolution TEM
+  evidence_tier: T1
+  refs:
+  - anderson2004
+  - harmey2004
+  confidence: A
+- edge_id: e00547
+  source: pi_ppi_ratio
+  target: mineralization_front
+  relation: required_for
+  sign: +
+  magnitude: growth plate Ca x P ion product exceeds the ~2 mM^2 in vitro threshold in every zone, so position of the front
+    is set by inhibition not supply
+  context: porcine growth plate electron microprobe; supported by ALPL/ENPP1 genetics
+  evidence_tier: T1
+  refs:
+  - althoff1982
+  - milln2016
+  - kim2010
+  confidence: B
+- edge_id: e00548
+  source: phospho1_enzyme
+  target: matrix_vesicle
+  relation: required_for
+  sign: +
+  magnitude: Phospho1-/- matrix vesicles show reduced mineralizing ability; Phospho1/Alpl double null has no skeletal mineral
+    at all
+  context: mouse tibial growth plate chondrocytes and chondrocyte-derived matrix vesicles
+  evidence_tier: T1
+  refs:
+  - yadav2011
+  - roberts2007
+  confidence: C
+- edge_id: e00549
+  source: matrix_vesicle
+  target: hydroxyapatite_nucleation
+  relation: sufficient_for
+  sign: +
+  magnitude: matrix vesicles carry a nucleational core of calcium-acidic phospholipid-phosphate complexes plus ion channels;
+    intravesicular crystals form even without TNAP
+  context: chicken and rat growth plate matrix vesicles; Alpl-/- mouse
+  evidence_tier: T1
+  refs:
+  - wuthier1992
+  - anderson2004
+  confidence: B
+- edge_id: e00550
+  source: tnap_alpl
+  target: mineralization_front
+  relation: required_for
+  sign: +
+  magnitude: asfotase alfa raised 1-year survival in perinatal/infantile hypophosphatasia from 42% to 95% by remineralizing
+    the skeleton
+  context: 37 treated human infants vs 48 historical controls; and Alpl-/- mouse growth plate
+  evidence_tier: T1
+  refs:
+  - whyte2016
+  - fedde1999
+  confidence: A
+- edge_id: e00551
+  source: osteopontin_spp1
+  target: hydroxyapatite_nucleation
+  relation: inhibits
+  sign: '-'
+  magnitude: phosphorylation-dependent inhibition of hydroxyapatite formation and growth in vitro; Opn/Mgp double null calcifies
+    worse than Mgp null
+  context: in vitro gelatin gel; mouse double knockout
+  evidence_tier: T1
+  refs:
+  - boskey1993
+  - speer2002
+  confidence: B
+- edge_id: e00552
+  source: matrix_gla_protein
+  target: hydroxyapatite_nucleation
+  relation: inhibits
+  sign: '-'
+  magnitude: Mgp-/- mice calcify growth plate cartilage and arteries and die within two months with short stature
+  context: mouse constitutive null, both sexes
+  evidence_tier: T1
+  refs:
+  - luo1997
+  confidence: B
+- edge_id: e00553
+  source: fetuin_a_ahsg
+  target: mineralization_front
+  relation: inhibits
+  sign: '-'
+  magnitude: AHSG with SPP1 marks the human GP-epiphysis interface, which behaves as a mineralization inhibition zone
+  context: human phalangeal (0-5 y) and tibial (6-14 y) growth plate, spatial proteomics, 10 donors
+  evidence_tier: T1
+  refs:
+  - xie2025
+  - schafer2003
+  confidence: B
+- edge_id: e00554
+  source: mmp9_protease
+  target: mineralization_front
+  relation: required_for
+  sign: +
+  magnitude: Mmp9-null growth plate lengthens to ~8x normal from delayed vascular invasion and apoptosis; rescued by wild-type
+    marrow transplant
+  context: mouse, first 3 weeks postnatal
+  evidence_tier: T1
+  refs:
+  - vu1998
+  confidence: C
+- edge_id: e00555
+  source: mmp13_protease
+  target: collagen_type_ii
+  relation: degrades
+  sign: '-'
+  magnitude: Mmp13-null growth plate accumulates interstitial collagen and has markedly increased hypertrophic domains persisting
+    into adulthood
+  context: mouse; and human child growth plate where MMP-13 is confined to hypertrophic chondrocytes
+  evidence_tier: T1
+  refs:
+  - inada2004
+  - haeusler2005
+  - little2005
+  confidence: B
+- edge_id: e00556
+  source: mmp14_mt1mmp
+  target: collagen_crosslinking
+  relation: degrades
+  sign: '-'
+  magnitude: global Mmp14 null gives dwarfism and osteopenia from inadequate collagen turnover; MMP-14 is the most prominent
+    MMP in all zones of the human child growth plate
+  context: mouse constitutive null; human child and adolescent growth plate immunohistochemistry
+  evidence_tier: T1
+  refs:
+  - holmbeck1999
+  - haeusler2005
+  confidence: C
+- edge_id: e00557
+  source: adamts5
+  target: aggrecan_acan
+  relation: degrades
+  sign: '-'
+  magnitude: Adamts5 deletion prevents aggrecan loss in murine surgical OA; but Adamts4/5 double null skeletons are normal
+  context: mouse joint; human explants implicate both ADAMTS-4 and -5
+  evidence_tier: T1
+  refs:
+  - glasson2005
+  - majumdar2007
+  - song2007
+  confidence: C
+- edge_id: e00558
+  source: adamts4
+  target: aggrecan_acan
+  relation: degrades
+  sign: '-'
+  magnitude: cleaves aggrecan at Glu373-Ala374; contributes to human cartilage explant aggrecanolysis but is dispensable in
+    mouse
+  context: human articular cartilage explants; mouse knockout
+  evidence_tier: T1
+  refs:
+  - song2007
+  - majumdar2007
+  confidence: C
+- edge_id: e00559
+  source: timp_family
+  target: adamts5
+  relation: inhibits
+  sign: '-'
+  magnitude: TIMP-3 N-terminal domain inhibits ADAMTS4 and ADAMTS5 with sub-nanomolar Ki; TIMP-1, -2, -4 are weak or inactive
+  context: recombinant human enzymes in vitro; TIMP-1 and TIMP-2 localised in human child growth plate
+  evidence_tier: T1
+  refs:
+  - kashiwagi2001
+  - hashimoto2001
+  - haeusler2005
+  confidence: C
+- edge_id: e00560
+  source: lysyl_oxidase
+  target: collagen_crosslinking
+  relation: required_for
+  sign: +
+  magnitude: Lox-null mice die perinatally from failed collagen and elastin crosslinking; no zonal growth plate measurement
+    exists
+  context: mouse constitutive null; growth plate not examined
+  evidence_tier: T1
+  refs:
+  - mki2002
+  confidence: E
+  notes: Growth-plate-specific role is inference from general crosslink chemistry; see gap g_l5matrix_009.
+- edge_id: e00561
+  source: collagen_crosslinking
+  target: zonal_stiffness_gradient
+  relation: hypothesized_link
+  sign: +
+  magnitude: no zone-resolved crosslink density has been measured in any growth plate, so the contribution to the modulus
+    gradient is unquantified
+  context: all species
+  evidence_tier: T5
+  refs:
+  - eyre2002
+  - eckstein2022
+  confidence: speculative
+  gap_id: g_l5matrix_009
+- edge_id: e00562
+  source: perlecan_hspg2
+  target: pericellular_matrix
+  relation: required_for
+  sign: +
+  magnitude: perlecan-null mice have severe chondrodysplasia with disorganised columns; human HSPG2 null = DDSH (lethal),
+    hypomorph = Schwartz-Jampel (viable)
+  context: mouse null and human allelic series
+  evidence_tier: T1
+  refs:
+  - costell1999
+  - arikawahirasaw2001
+  - nicole2000
+  confidence: A
+- edge_id: e00563
+  source: pericellular_matrix
+  target: chondron
+  relation: required_for
+  sign: +
+  magnitude: PCM:ECM modulus ratio ~0.35, so the chondron is a compliant inclusion that concentrates strain on the cell
+  context: human, porcine and murine articular cartilage, in situ AFM
+  evidence_tier: T1
+  refs:
+  - darling2010
+  confidence: B
+- edge_id: e00564
+  source: decorin_protein
+  target: collagen_fibril_stoichiometry
+  relation: inhibits
+  sign: '-'
+  magnitude: decorin-null mice have abnormally coarse irregular fibrils; decorin-bearing and collagen IX-bearing fibrils are
+    distinct subpopulations
+  context: mouse null skin and tendon; bovine cartilage fibril fractionation
+  evidence_tier: T1
+  refs:
+  - danielson1997
+  - hagg1998
+  confidence: C
+- edge_id: e00565
+  source: biglycan_protein
+  target: matrix_water_content_zonal
+  relation: required_for
+  sign: +
+  magnitude: Bgn KO and Bgn/Dcn dKO lose NMR-measured bound water and fracture toughness; the AFM modulus effect vanishes
+    on dehydration
+  context: mouse bone, single and double knockouts
+  evidence_tier: T1
+  refs:
+  - hua2025
+  confidence: C
+- edge_id: e00566
+  source: comp_protein
+  target: collagen_type_ix
+  relation: binds
+  sign: +
+  magnitude: COMP is a pentamer binding collagen IX and fibronectin; PSACH mutations abolish calcium binding and retain COMP
+    in the ER
+  context: human cartilage and chondrocytes; rat chondrosarcoma protein
+  evidence_tier: T1
+  refs:
+  - thur2001
+  - di2002
+  - malashkevich1996
+  confidence: B
+- edge_id: e00567
+  source: matrilin3
+  target: collagen_fibril_stoichiometry
+  relation: inhibits
+  sign: '-'
+  magnitude: matrilin-1/matrilin-3 double-null cartilage has abnormally thick irregular collagen fibrils
+  context: mouse double knockout cartilage, TEM
+  evidence_tier: T1
+  refs:
+  - nicolae2007
+  confidence: C
+- edge_id: e00568
+  source: collagen_type_x
+  target: mineralization_front
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: collagen X is restricted to the hypertrophic zone but its complete loss barely perturbs mineralization in mouse,
+    human iPSC chondrocytes or Schmid patients
+  context: mouse null, human iPSC knockout, human COL10A1 haploinsufficiency
+  evidence_tier: T1
+  refs:
+  - rosati1994
+  - kamakura2023
+  - gress2000
+  confidence: speculative
+  gap_id: g_l5matrix_005
+- edge_id: e00569
+  source: proteoglycan_turnover
+  target: mineralization_front
+  relation: precedes
+  sign: +
+  magnitude: extracellular sulphur (proteoglycan proxy) falls from ~3.5% to 0.3% of dry mass across the mineralization front
+  context: porcine growth plate electron microprobe
+  evidence_tier: T1
+  refs:
+  - althoff1982
+  - shapses1994
+  confidence: C
+- edge_id: e00570
+  source: cartilage_osmotic_swelling
+  target: zonal_stiffness_gradient
+  relation: correlates_with
+  sign: +
+  magnitude: Raman proteoglycan content correlates with compressive modulus across the rabbit growth plate
+  context: 9-week rabbit proximal tibia, n=7 for Raman mapping
+  evidence_tier: T1
+  refs:
+  - eckstein2022
+  - zimmerman2021
+  confidence: C
+- edge_id: e00571
+  source: chondron
+  target: zonal_stiffness_gradient
+  relation: correlates_with
+  sign: unknown
+  magnitude: chondrons bend and kink preferentially at the reserve/proliferative interface at 20-40% compression, and tensile
+    fracture leaves chondrons intact on the metaphyseal side
+  context: bovine physis, ex vivo compression and tension
+  evidence_tier: T1
+  refs:
+  - vendra2018
+  - williams2001
+  confidence: C
+- edge_id: e00572
+  source: fibronectin_cartilage
+  target: comp_protein
+  relation: binds
+  sign: +
+  magnitude: direct COMP-fibronectin matrix-matrix interaction
+  context: in vitro binding, human cartilage proteins
+  evidence_tier: T1
+  refs:
+  - di2002
+  confidence: D
+- edge_id: e00573
+  source: hydroxyapatite_nucleation
+  target: collagen_type_ii
+  relation: binds
+  sign: +
+  magnitude: charge clusters in the 40 nm gap zone of the 67 nm D-period template ACP-to-apatite conversion; imaged directly
+    at the human GP-metaphysis interface
+  context: in vitro collagen mineralization with inhibitors; human growth plate FIB-SEM
+  evidence_tier: T1
+  refs:
+  - nudelman2010
+  - xie2025
+  confidence: B
+- edge_id: e00574
+  source: tnap_alpl
+  target: pi_ppi_ratio
+  relation: activates
+  sign: +
+  magnitude: TNAP hydrolysis of PPi raises the local Pi/PPi ratio; human plasma PPi 3.5 uM against serum Pi 1-2 mM gives a
+    circulating ratio of order 300-600:1
+  context: human plasma; growth plate hypertrophic zone by inference
+  evidence_tier: T1
+  refs:
+  - russell1971
+  - milln2016
+  - harmey2004
+  confidence: B
+- edge_id: e00575
+  source: pi_ppi_ratio
+  target: collagen_type_x
+  relation: activates
+  sign: +
+  magnitude: raising extracellular Pi (via ANK overexpression plus TNAP) increases type X collagen, ALPL and Runx2 mRNA in
+    growth plate chondrocytes; levamisole reverses it
+  context: rat growth plate chondrocyte culture
+  evidence_tier: T1
+  refs:
+  - kim2010
+  confidence: D
+- edge_id: e00576
+  source: matrix_water_content_zonal
+  target: cartilage_osmotic_swelling
+  relation: required_for
+  sign: +
+  magnitude: swelling pressure is generated only by water drawn in against the collagen network; growth plate zonal water
+    content is unmeasured
+  context: porcine growth plate assumed 66% tissue fluid; articular cartilage measured
+  evidence_tier: T1
+  refs:
+  - althoff1982
+  - zimmerman2021
+  confidence: D
