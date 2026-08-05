@@ -38,32 +38,32 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 ## Coverage dashboard
 
 <!-- DASHBOARD:BEGIN -->
-**Totals** — 1 nodes (1 researched, 0 stubs) ·
+**Totals** — 634 nodes (1 researched, 633 stubs) ·
 0 edges · 0 gaps (0 search logs) · 1 references
 
 ```
-nodes  ░░░░░░░░░░░░░░░░░░░░ 1/1200 (0%)
+nodes  ██████████░░░░░░░░░░ 634/1200 (52%)
 edges  ░░░░░░░░░░░░░░░░░░░░ 0/2500 (0%)
 gaps   ░░░░░░░░░░░░░░░░░░░░ 0/150 (0%)
 ```
 
 | Layer | Name | Nodes | Researched | Edges out | Gaps | Quota | Doc | Fig |
 |---|---|---:|---:|---:|---:|:--:|:--:|:--:|
-| L0 | developmental_origin | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L1 | growth_plate_architecture | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L2 | stem_and_progenitor_biology | 1 | 1 | 0 | 0 | 0/8·0/3 | — | — |
-| L3 | signaling_networks | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L4 | endocrine_and_systemic | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L5 | matrix_and_mineralization | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L6 | mechanobiology | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L7 | fusion_and_cessation | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L8 | genetics_and_heritability | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L9 | whole_organism_growth | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L10 | environment_and_population | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L11 | pathology_as_natural_experiment | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L12 | pharmacology_as_mechanistic_probe | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L13 | methods_and_data | 0 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| | **total** | **1** | **1** | **0** | **0** | | | |
+| L0 | developmental_origin | 61 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L1 | growth_plate_architecture | 46 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L2 | stem_and_progenitor_biology | 29 | 1 | 0 | 0 | 0/8·0/3 | — | — |
+| L3 | signaling_networks | 87 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L4 | endocrine_and_systemic | 69 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L5 | matrix_and_mineralization | 40 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L6 | mechanobiology | 30 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L7 | fusion_and_cessation | 29 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L8 | genetics_and_heritability | 36 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L9 | whole_organism_growth | 40 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L10 | environment_and_population | 34 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L11 | pathology_as_natural_experiment | 56 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L12 | pharmacology_as_mechanistic_probe | 36 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| L13 | methods_and_data | 41 | 0 | 0 | 0 | 0/8·0/3 | — | — |
+| | **total** | **634** | **1** | **0** | **0** | | | |
 
 **Confidence distribution** (researched nodes): **C** 1
 

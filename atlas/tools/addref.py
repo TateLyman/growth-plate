@@ -23,7 +23,7 @@ import os, sys, json, time, argparse, urllib.parse, urllib.request, re
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BIB = os.path.join(ROOT, "sources", "bibliography.yaml")
+BIB = os.path.join(ROOT, "sources", "bibliography.yaml")  # overridable via --bib (sharding)
 EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 UA = {"User-Agent": "growth-atlas/1.0 (research use)"}
 
@@ -138,7 +138,13 @@ def main():
     ap.add_argument("--url"); ap.add_argument("--title")
     ap.add_argument("--year"); ap.add_argument("--first-author")
     ap.add_argument("--accession")
+    ap.add_argument("--bib", help="write to this bibliography shard instead of the canonical file")
     a = ap.parse_args()
+
+    global BIB
+    if a.bib:
+        BIB = a.bib if os.path.isabs(a.bib) else os.path.join(ROOT, "sources", "shards", a.bib)
+        os.makedirs(os.path.dirname(BIB), exist_ok=True)
 
     bib = load_bib()
 
