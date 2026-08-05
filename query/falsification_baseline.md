@@ -800,3 +800,96 @@ graded nodes with no outbound edges (genetics, endocrine, pharmacology).
 The 16 silent absences are not 16 unrelated misses. They are one defect counted 16 times:
 **the layers were built and the seams were not.** That is a fixable defect, and it is more
 useful to know than the headline number.
+
+---
+
+## 9. Retrospective re-score against the PRE-PHASE-3 graph
+
+FINAL-01 item B. The Phase 6/8 delta reported in `falsification_corrections.md` is zero
+and near-tautological — nothing structural changed between the baseline commit and now.
+The informative test is the one never run: **did Phase 3, the largest single block of
+work in the project, improve predictive power or only coverage?**
+
+### Method
+
+The graph at `4d9927c` — the commit immediately before `193b79b atlas(L*): phase 3
+dispatch` — is the pre-Phase-3 state. **Neither graph was modified.**
+
+| | pre-Phase-3 (`4d9927c`) | at baseline (`6c916e3`) |
+|---|---:|---:|
+| node files | 612 (34 stubs) | 614 (0 stubs) |
+| edges | **764** | **1,181** |
+
+The re-score is mechanical rather than re-judged, and that is deliberate: re-reading 63
+papers against a second graph invites the second reading to be kinder. §6 records, for
+every item, the specific nodes and edges its verdict rested on. Each of those object ids
+was checked for existence at `4d9927c`. An item is re-scored as still CORRECT only if the
+objects that produced its verdict were present then.
+
+**Direction of the bound, stated:** an item whose recorded objects are missing might
+still have been answerable by a route the record does not name, so this method can
+*understate* the old score. It cannot overstate it. In the event, nothing was
+understated — see below.
+
+### Result: 32 / 50 = 64.0%. Identical. Zero delta.
+
+Nine of the 32 CORRECT items used at least one object created during or after Phase 3:
+
+| item | missing pre-Phase-3 | did the verdict depend on it? |
+|---|---|---|
+| P04 | `e01046` | No — verdict rests on NODE `bone_collar_formation` |
+| P07 | `e01072` | No — NODE `chondrocyte_to_osteoblast_transdifferentiation` plus `e00321` (present) |
+| P19 | `e00983` | No — `e00207` (present, the A-grade human edge the note names) |
+| P22 | `e01113` | No — NODEs `pappa2_deficiency`, `pappa2_protease` |
+| P30 | `e00879` | Partly — the *derived* form is lost, NODE `disuse_growth_effect` still carries the direction |
+| P40 | `common_vs_rare_pathway_divergence` (node) | No — the prediction is the rare/Mendelian overlap claim on NODE `rare_variant_height` |
+| P45 | `e00810` | No — `e00214` (present) plus NODE `vosoritide` |
+| P46 | `e01140` | No — NODE `glucocorticoid_sparing_strategy` frames the exact dissociation |
+| P54 | `e01014` | No — NODE `turner_syndrome` carries the quantified karyotype-dosage gradient |
+
+One further check: the only correction landing between `4d9927c` and the baseline that
+could have flipped a verdict is the Phase 2d CNP-effector break (CORR-003). No held-out
+proposition touches PKG-II, cGKI or the cGMP effector step. The one item that turns on a
+correction — **P25**, the strongest hit in the run — turns on **CORR-001**, which landed
+at `bc6af59`, *before* the pre-Phase-3 snapshot. It scored CORRECT then too.
+
+### What that means, and it is not a comfortable result
+
+**Phase 3 added 417 edges — a 55% increase — inverted the cross-layer/intra-layer ratio
+from 1.3:1 to 0.65:1, and populated every empty seam. The predictive score did not move
+by a single item.**
+
+The reason is visible in the composition of the 32 correct predictions:
+
+| how the verdict was reached | items |
+|---|---:|
+| **node read only — no traversal at all** | **18** |
+| node read plus edge traversal | 13 |
+| **edge traversal alone** | **1** |
+
+**Fifty-six per cent of this atlas's correct predictions come from what a node *says*.
+Exactly one of thirty-two came from what the graph could *derive*.**
+
+That reframes the earlier structural result. The cross-layer inversion was real and it
+was worth doing — it is what makes context-filtered traversal and the fragility analysis
+possible at all, and §3 of this report shows the *remaining* failures are cross-layer.
+But on the evidence of this test, **the edges are not yet where the predictive power
+lives.** The atlas predicts because its nodes are carefully written, not because its
+graph reasons.
+
+Two readings are available and this test does not separate them:
+
+1. **The held-out set is biased toward node-reads.** A proposition extracted from a
+   paper abstract is usually a single mechanistic claim, and single claims are what
+   nodes hold. A question requiring a two-step inference would exercise the edges — and
+   the benchmark's Type 2/3 questions do — but held-out *papers* mostly do not pose
+   those.
+2. **The graph genuinely cannot derive much yet.** 191 weakly-connected components in
+   the answerable subgraph (`audit/fragility.md`) is consistent with this.
+
+The discriminating test is stated rather than run: score a held-out set of
+**multi-step** propositions — findings that connect two facts the atlas holds
+separately — and see whether the edge-derived hit rate rises. That is the measurement
+that would tell you whether Phase 3 bought predictive power that this test could not see.
+
+Raw per-item data: `query/falsification_rescore_prephase3.json`.
