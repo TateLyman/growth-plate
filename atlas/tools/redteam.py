@@ -139,13 +139,28 @@ def main():
         print(f"  ({findings} flags)\n")
 
     if a.hedging:
-        print("=== HEDGING CHECK (banned as a conclusion) ===")
+        # REFINED 2026-08-05 after a manual pass over all 29 hits this check produced
+        # across 614 nodes. NONE of them was a hedged conclusion. They were: the month
+        # "May 1945"; "could be passaged nine times" (a literal capability); "the gap
+        # this dataset could close"; "might be expected to cost adult height BUT DOES
+        # NOT" (a hedge that is immediately resolved); and correctly-scoped statements
+        # about the state of the evidence, which the atlas is supposed to make.
+        # Precision was 0/29. A check that cries wolf every time stops being read, so
+        # it now tests what the rule actually bans - a hedge in the CONCLUSION - by
+        # looking only at the final sentence of the summary.
+        print("=== HEDGING CHECK (hedged CONCLUSION - final sentence only) ===")
         h = 0
         for nid, n in sorted(full.items()):
-            for m in HEDGE.finditer(str(n.get("summary") or "")):
-                print(f"  ! {nid}: '{m.group(0).strip()}'")
+            summ = re.sub(r"\s+", " ", str(n.get("summary") or "")).strip()
+            sents = [x for x in re.split(r"(?<=[.!?]) +", summ) if x.strip()]
+            if not sents:
+                continue
+            for m in HEDGE.finditer(sents[-1]):
+                print(f"  ! {nid}: closes on '{m.group(0).strip()}' -> {sents[-1][:140]}")
                 h += 1
-        print(f"  ({h} hedges - each must be resolved or converted to a gap entry)\n")
+        print(f"  ({h} hedged conclusions - each must be resolved or converted to a "
+              f"gap entry).\n  Mid-summary hedges are NOT flagged: scoping a claim to "
+              f"the evidence is the job.\n")
         findings += h
 
     if a.xgrade:
@@ -177,8 +192,17 @@ def main():
                     print(f"  ✗ {gid}: search_established with NO search log")
                     bad += 1
                     continue
-                if not s.get("exact_query_string") or len(str(s["exact_query_string"])) < 15:
-                    print(f"  ✗ {gid}: query string too vague to reproduce")
+                # The test is REPRODUCIBILITY, not length. A 15-character floor
+                # flagged `septoclast*` on g_l1arch_003 - a single-term wildcard
+                # search that anyone can paste into Europe PMC and get the same 54
+                # hits. What actually makes a log irreproducible is an empty string
+                # or a prose description of a search instead of the search.
+                q = str(s.get("exact_query_string") or "").strip()
+                has_syntax = bool(re.search(r'[*"()\[\]:]|\b(AND|OR|NOT)\b', q))
+                prose = bool(re.search(r"\b(searched|looked for|queried|various|"
+                                       r"several|etc)\b", q, re.I))
+                if not q or prose or (len(q) < 15 and not has_syntax):
+                    print(f"  ✗ {gid}: query string not reproducible as written: {q!r}")
                     bad += 1
                 if s.get("hit_count") is None:
                     print(f"  ✗ {gid}: no hit_count")
