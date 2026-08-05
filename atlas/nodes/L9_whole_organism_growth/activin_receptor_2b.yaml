@@ -1,9 +1,51 @@
 id: activin_receptor_2b
 name: ActRIIB
-type: protein
-layer: L9
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - ACVR2B
+type: protein
+layer: L9
+stub: false
+summary: 'ActRIIB is the type II serine-threonine kinase receptor through which myostatin, activins and
+  several GDFs signal in skeletal muscle. It is the druggable node of that axis: bimagrumab, a human monoclonal
+  antibody that blocks ActRIIB, increased thigh muscle volume in adult men recovering from casting-induced
+  atrophy in a randomised study (rooks2017). Its inclusion in an organism-growth layer is justified by
+  a negative result rather than a positive one - receptor blockade produces a large, measurable change
+  in one organ system''s mass in adults, at an age when no change in stature is possible, which makes
+  the muscle and skeletal growth programmes separately addressable in the same individual. Whether ActRIIB
+  signalling has any role in the growth plate itself is not addressed by these human data; ligand traps
+  against the receptor alter bone geometry in a mouse model of osteogenesis imperfecta, but that is mouse
+  and disease-specific and is not carried forward as a human claim here.'
+quantitative:
+- parameter: effect of ActRIIB antibody blockade on thigh muscle volume
+  value: increase
+  unit: not_applicable
+  conditions: adult men after casting-induced atrophy, randomised, MRI volume and composition
+  species: human
+  source_ref: rooks2017
+  uncertainty: direction reported; magnitude not extracted from the abstract
+localization:
+- 'human skeletal muscle: receptor for myostatin and activins'
+human_evidence: direct
+human_evidence_note: A randomised human pharmacological study of receptor blockade with imaging endpoints.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The retained claim is from a human randomised study; no murine claim is asserted.
+confidence: D
+key_refs:
+- ref_id: rooks2017
+  pmid: '28905498'
+  first_author: Rooks DS
+  year: 2017
+  type: primary
+  one_line_finding: ActRIIB blockade with bimagrumab increases thigh muscle volume after casting-induced
+    atrophy in men.
+- ref_id: schuelke2004
+  pmid: '15215484'
+  first_author: Schuelke M
+  year: 2004
+  type: primary_abstract_only
+  one_line_finding: Human loss of the principal ActRIIB ligand produces muscle hypertrophy.
+open_questions:
+- g_l9organism_012
+last_verified: '2026-08-05'

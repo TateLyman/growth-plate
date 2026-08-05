@@ -1,9 +1,80 @@
 id: teriparatide
-name: Teriparatide
+name: Teriparatide (PTH 1-34)
+aliases: [FORTEO, rhPTH(1-34), Forsteo]
 type: intervention
 layer: L12
-stub: true
+stub: false
+summary: |
+  Teriparatide is recombinant human parathyroid hormone 1-34, an intermittently dosed
+  PTH1R agonist. The PTH1R is the receptor through which PTHrP holds prehypertrophic
+  chondrocytes in the proliferative pool, so teriparatide is in principle the most
+  mechanistically apt drug in this layer - and it is the one that cannot be given to
+  children for growth. The FDA label instructs avoidance in patients with open epiphyses
+  because of increased baseline osteosarcoma risk, and states that safety and effectiveness
+  in paediatric patients have not been established. The barrier is not the growth plate's
+  unresponsiveness but the fact that the same anabolic signal in a growing skeleton is an
+  oncogenic one, an inference drawn from rat carcinogenicity data and from the elevated
+  background osteosarcoma incidence during the adolescent growth spurt. Paediatric human
+  exposure exists only where the indication is severe and the alternative worse:
+  hypoparathyroidism, activating calcium-sensing receptor mutations, and off-label
+  osteotomy healing in osteogenesis imperfecta. None of these report linear growth as an
+  endpoint. Consequently the human growth plate has never been probed with a PTH1R agonist
+  under conditions that would answer whether pharmacological PTH1R activation delays
+  hypertrophic differentiation in vivo, which the mouse and the human Jansen metaphyseal
+  chondrodysplasia phenotype both predict it would.
+quantitative:
+  - parameter: paediatric trials of teriparatide with a linear growth endpoint
+    value: '0'
+    unit: trials
+    conditions: paediatric use is confined to hypoparathyroidism and rare calcium disorders; no growth endpoint reported
+    species: human
+    source_ref: tantivit2026
+    uncertainty: absence established by search - see gap g_l12b_019
+  - parameter: regulatory position on use with open epiphyses
+    value: avoid
+    unit: not applicable
+    conditions: FDA label section 5.1 - avoid in patients at increased osteosarcoma risk including those with open epiphyses; paediatric safety and effectiveness not established
+    species: human
+    source_ref: fda_forteo_label_2025
+    uncertainty: categorical label statement
+localization:
+  - "human growth plate: PTH1R is expressed in prehypertrophic chondrocytes; teriparatide has never been administered to a growing human plate with a growth readout"
 human_evidence: absent
+human_evidence_note: >-
+  There is no human evidence on teriparatide and linear growth; the only paediatric
+  exposures are for calcium disorders and report calcium, not height, outcomes.
+species_basis: [human, mouse]
+translation_risk: high
+translation_risk_reason: >-
+  Everything known about PTH1R agonism and the growth plate comes from mouse genetics and
+  from the human Jansen metaphyseal chondrodysplasia phenotype (constitutive PTH1R
+  activation), not from a pharmacological human exposure. The regulatory barrier means
+  this gap cannot be closed by an ordinary trial.
+confidence: D
+claim_grades:
+  - claim: Teriparatide is contraindicated in growing children because of osteosarcoma risk with open epiphyses.
+    grade: A
+    basis: Explicit FDA label statement and warnings section.
+  - claim: PTH1R agonism would delay hypertrophic differentiation and lengthen the human growth plate.
+    grade: E
+    basis: Inference from PTHrP-PTH1R mouse biology and from Jansen metaphyseal chondrodysplasia; never tested pharmacologically in a human.
+key_refs:
+  - ref_id: fda_forteo_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Avoid in patients with open epiphyses because of increased baseline osteosarcoma risk; paediatric safety and effectiveness not established.
+  - ref_id: tantivit2026
+    pmid: '42501079'
+    first_author: Tantivit N
+    year: 2026
+    type: systematic_review
+    one_line_finding: Systematic review of teriparatide in children with hypoparathyroidism - the only substantial paediatric exposure, and without growth endpoints.
+  - ref_id: hppner2025
+    pmid: '40455993'
+    first_author: Höppner J
+    year: 2025
+    type: primary
+    one_line_finding: Mouse model of Jansen metaphyseal chondrodysplasia - constitutive PTH1R activation - for testing candidate therapeutics.
+open_questions: [g_l12b_019]
+contradicts: []
 last_verified: '2026-08-05'
-aliases:
-- PTH(1-34)

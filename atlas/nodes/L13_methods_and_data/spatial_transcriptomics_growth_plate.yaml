@@ -1,7 +1,89 @@
 id: spatial_transcriptomics_growth_plate
 name: Spatial transcriptomics of the growth plate
+aliases:
+- Visium physis
+- Xenium growth plate
 type: method
-layer: L13
-stub: true
+summary: |
+  Spatial transcriptomics is the modality that would answer most of the atlas's open zonal
+  questions in one experiment, and as of 2026-08-05 it had never been applied to a postnatal
+  human growth plate. A GEO census returns 7 records matching growth plate AND spatial, all
+  non-human, including mouse datasets identifying ApoE as a marker of all resting-zone
+  chondrocytes (GSE288529) and mapping ADGRG6 control of the PTHrP/IHH axis (GSE275252);
+  restricting the same query to Homo sapiens returns zero (geo_census_20260805). Two
+  qualifications sharpen rather than soften that null. First, human spatial transcriptomics of
+  LIMB cartilage does exist: the human embryonic limb atlas combines scRNA-seq with Visium
+  across 5-9 post-conception weeks and maps chondrocyte lineages in situ (zhang2024) - but at
+  that stage there is no growth plate with resting, proliferative and hypertrophic zones, so
+  it cannot answer zonal questions. Second, the human study that reports "spatial analyses" of
+  pubertal growth plate (chu2026) deposited no spatial dataset in GEO, and withheld even its
+  raw single-cell human data (gse288028). The technical barrier is specific and solvable:
+  physeal tissue must be decalcified, which destroys RNA integrity, and polyA-capture spatial
+  platforms require high RIN. RNA-Rescue Spatial Transcriptomics was developed for exactly
+  this class of degraded sample (gse221571) and is the obvious route in.
+quantitative:
+- parameter: GEO records matching growth plate AND spatial, all species
+  value: '7'
+  unit: records
+  conditions: GEO DataSets, 2026-08-05
+  species: multiple
+  source_ref: geo_census_20260805
+  uncertainty: point-in-time census
+- parameter: GEO records matching growth plate AND spatial, Homo sapiens
+  value: '0'
+  unit: records
+  conditions: same query with organism restriction
+  species: human
+  source_ref: geo_census_20260805
+  uncertainty: exact zero; see gap g_l13data_001
+- parameter: human spatial transcriptomic samples of limb cartilage that DO exist
+  value: 5-9 post-conception weeks
+  unit: developmental stage
+  conditions: Visium plus scRNA-seq, whole hindlimb sagittal sections
+  species: human
+  source_ref: zhang2024
+  uncertainty: pre-growth-plate stage; does not close the zonal gap
+localization:
+- 'mouse RZ: ApoE identified as a pan-resting-zone marker by spatial transcriptomics'
+- 'human RZ: no spatial data of any kind'
 human_evidence: absent
+human_evidence_note: No spatially resolved transcriptomic dataset from a postnatal human growth plate
+  exists in any public repository.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Every spatially resolved zonal marker claim in the field is murine, and
+  the murine plate never fuses, so the zonal programme that terminates growth cannot be observed
+  in the species where the data exist.
+confidence: A
+key_refs:
+- ref_id: geo_census_20260805
+  first_author: NCBI GEO
+  year: 2026
+  type: dataset
+  one_line_finding: 7 growth plate spatial records, none human.
+- ref_id: zhang2024
+  first_author: Zhang B
+  year: 2024
+  type: primary
+  one_line_finding: Human embryonic limb atlas with Visium spatial transcriptomics at 5-9 post-conception
+    weeks.
+- ref_id: gse221571
+  first_author: Mattsson Langseth C
+  year: 2023
+  type: dataset
+  one_line_finding: RNA-Rescue Spatial Transcriptomics recovers spatial profiles from low-RNA-integrity
+    tissue.
+- ref_id: chu2026
+  first_author: Chu NTL
+  year: 2026
+  type: primary
+  one_line_finding: Reports spatial analysis of human pubertal growth plate but deposits no spatial
+    dataset.
+open_questions:
+- g_l13data_001
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

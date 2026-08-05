@@ -1,9 +1,115 @@
 id: transcon_growth_hormone
-name: TransCon growth hormone
+name: Lonapegsomatropin (TransCon hGH)
+aliases: [TransCon hGH, SKYTROFA, lonapegsomatropin-tcgd]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Lonapegsomatropin is a TransCon prodrug that releases unmodified somatropin from a PEG
+  carrier, converting daily growth hormone into a once-weekly 0.24 mg/kg subcutaneous
+  injection. Because the released hormone is chemically identical to somatropin, it is a
+  controlled test of whether the growth plate integrates GH exposure or responds to its
+  pulsatility. The answer from the largest head-to-head trial is that weekly dosing is at
+  least as effective: in the 52-week phase 3 briGHt trial (NCT04326374, n=153 treatment-naive
+  prepubertal Chinese children with GHD, randomised 2:1) annualised height velocity was
+  10.66 +/- 0.22 cm/yr on weekly lonapegsomatropin versus 9.75 +/- 0.26 cm/yr on daily
+  somatropin, a difference of 0.91 cm/yr (95% CI 0.37-1.45, p=0.0010), meeting both
+  non-inferiority and superiority. Class-level meta-analysis of 16 RCTs (2435 children)
+  finds only modest differences between long-acting and daily preparations. The
+  counter-example matters as much: somavaratan, a different long-acting GH, was terminated
+  in phase 3 because "the primary endpoint of non-inferiority to daily therapy ... was not
+  achieved", so long-acting GH is not automatically equivalent. Lonapegsomatropin is also
+  being combined with navepegritide in achondroplasia (COACH), where the combination gave
+  an AGV of 8.69 cm/yr versus 5.95 cm/yr for matched navepegritide monotherapy.
+quantitative:
+  - parameter: annualised height velocity, weekly lonapegsomatropin vs daily somatropin
+    value: '+0.91'
+    unit: cm/yr
+    conditions: >-
+      briGHt phase 3, 52 weeks, 17 sites in China, n=153 treatment-naive prepubertal children
+      with GHD, lonapegsomatropin 0.24 mg hGH/kg/week vs somatropin 0.034 mg/kg/day
+    species: human
+    source_ref: ying2026
+    uncertainty: 95% CI 0.37-1.45, p=0.0010; LS mean 10.66 +/- 0.22 vs 9.75 +/- 0.26 cm/yr
+  - parameter: change in height SDS at 52 weeks, weekly arm
+    value: '1.01'
+    unit: SDS
+    conditions: same trial; daily somatropin arm 0.83
+    species: human
+    source_ref: ying2026
+    uncertainty: SE 0.04 (weekly arm)
+  - parameter: recommended paediatric dose
+    value: '0.24'
+    unit: mg/kg/week
+    conditions: subcutaneous once weekly, patients >=1 y weighing >=11.5 kg; approval based on a controlled study of 161 treatment-naive children aged 3-13 y
+    species: human
+    source_ref: fda_skytrofa_label_2026
+    uncertainty: label dose
+  - parameter: IGF-1 SDS response per unit dose change
+    value: '0.17'
+    unit: SDS per 0.02 mg/kg/week
+    conditions: paediatric GHD, weekly average IGF-1 SDS; the only routinely used pharmacodynamic biomarker
+    species: human
+    source_ref: fda_skytrofa_label_2026
+    uncertainty: label mean, no CI
+  - parameter: annualised growth velocity, navepegritide plus lonapegsomatropin combination
+    value: '8.69'
+    unit: cm/yr
+    conditions: >-
+      COACH phase 2 (NCT06433557), n=21 children with achondroplasia aged 2-11 y, week 52
+      LS mean, versus 5.95 cm/yr for matched navepegritide monotherapy from ApproaCH
+    species: human
+    source_ref: mcdonnell2026
+    uncertainty: difference 2.74 cm/yr, p<0.0001; matched external comparator, not randomised
+localization:
+  - "human growth plate: acts via GH receptor and hepatic IGF-1; no plate-level exposure or pharmacodynamic measurement"
+human_evidence: direct
+human_evidence_note: >-
+  Randomised active-controlled phase 3 trials against daily somatropin, plus US and EU
+  approval for paediatric GHD.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  All efficacy and PK data are human. The combination result in achondroplasia carries
+  higher risk because its comparator is a matched external cohort rather than a randomised arm.
+confidence: A
+claim_grades:
+  - claim: Weekly lonapegsomatropin is non-inferior and in one phase 3 superior to daily somatropin on annualised height velocity.
+    grade: A
+    basis: Randomised active-controlled phase 3, n=153, difference 0.91 cm/yr (95% CI 0.37-1.45).
+  - claim: Long-acting GH preparations as a class are equivalent to daily GH.
+    grade: B
+    basis: 16-RCT meta-analysis finds modest differences, but somavaratan failed phase 3 non-inferiority - the class is not uniform.
+  - claim: Adding lonapegsomatropin to navepegritide increases growth beyond CNP monotherapy in achondroplasia.
+    grade: D
+    basis: n=21, open-label, comparator is a matched cohort from a different trial.
+key_refs:
+  - ref_id: ying2026
+    pmid: '41758754'
+    first_author: Ying Y
+    year: 2026
+    type: primary
+    one_line_finding: briGHt phase 3 - weekly lonapegsomatropin AHV 10.66 vs 9.75 cm/yr for daily somatropin.
+  - ref_id: fda_skytrofa_label_2026
+    year: 2026
+    type: regulatory
+    one_line_finding: 0.24 mg/kg/week paediatric dose; approval on 161 treatment-naive children aged 3-13 y.
+  - ref_id: shen2026
+    pmid: '42327908'
+    first_author: Shen ZZ
+    year: 2026
+    type: meta_analysis
+    one_line_finding: 16 RCTs, 2435 children - modest advantage of long-acting over daily GH on HV-SDS and Ht-SDS.
+  - ref_id: mcdonnell2026
+    pmid: '42144862'
+    first_author: McDonnell CM
+    year: 2026
+    type: primary
+    one_line_finding: COACH - navepegritide plus lonapegsomatropin AGV 8.69 vs 5.95 cm/yr for matched navepegritide monotherapy.
+  - ref_id: nct02413138
+    year: 2018
+    type: trial_registry
+    one_line_finding: Somavaratan phase 3 TERMINATED - non-inferiority to daily GH not achieved; long-acting GH is not automatically equivalent.
+open_questions: [g_l12b_009, g_l12b_009]
+contradicts: []
 last_verified: '2026-08-05'
-aliases:
-- lonapegsomatropin

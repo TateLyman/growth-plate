@@ -1,7 +1,78 @@
 id: mri_physis_imaging
-name: MRI of the physis
+name: MRI of the human physis
+aliases:
+- magnetic resonance imaging growth plate
 type: method
+summary: |
+  MRI is the only modality that images a growth plate repeatedly in a living child, and it
+  operates one to two orders of magnitude coarser than the cells it would need to see. At 7 T
+  with a 28-channel knee coil, gradient-echo phase imaging of six healthy children aged 6-15
+  resolved veins and LAYERS within growth cartilage - the zonal scale - in all children up to
+  age 13, but not individual chondrocytes (dymerska2018). Clinical-field MRI is used to stage
+  physeal closure rather than to measure cellular events: cartilage-weighted and T1-weighted
+  sequences give reliable closure staging across readers (kvist2020), and cross-sectional MRI
+  cohorts have been used to determine what governs closure timing (kvist2021). Quantitative MR
+  has reached tissue composition in animal physis - T1 mapping calibrated water content in
+  porcine growth plate (shiguetomimedi2013) - and fixed charge density has been measured by
+  NMR in cartilage (lesperance1992), so composition is in principle accessible. Against the
+  dimensions that matter: plate thickness (1-10 mm) and zone heights (100-1000 um) are within
+  reach at 7 T; a 10-20 um chondrocyte is not, at any field strength usable in a child. The
+  consequence is precise. MRI can tell you that a plate narrowed, or that a bridge formed, or
+  that closure advanced a Sanders-equivalent stage - it cannot tell you whether the resting
+  zone lost cells, which is the mechanism every fusion hypothesis in L7 turns on.
+quantitative:
+- parameter: age above which growth cartilage layers ceased to be resolvable at 7 T
+  value: '13'
+  unit: years
+  conditions: six healthy children aged 6-15, gradient-echo phase imaging, 28-channel knee coil
+  species: human
+  source_ref: dymerska2018
+  uncertainty: n=6; layers visible in all children up to age 13
+- parameter: target cellular dimension not resolvable by any in vivo MRI
+  value: 10-20
+  unit: um
+  conditions: growth plate chondrocyte diameter
+  species: human
+  source_ref: white2008
+  uncertainty: derived from measured hypertrophic cell volume
+localization:
+- 'human PZ: zone-scale layering visible at 7 T'
+- 'human RZ: cell-level events invisible at all clinical field strengths'
+human_evidence: direct
+human_evidence_note: All cited physeal MRI studies are in living human children.
+species_basis:
+- human
+- porcine
+translation_risk: low
+translation_risk_reason: The imaging claims are human; only the T1-water-content calibration is porcine
+  and is flagged as such.
+confidence: A
+key_refs:
+- ref_id: dymerska2018
+  first_author: Dymerska B
+  year: 2018
+  type: primary
+  one_line_finding: 7 T phase imaging resolves veins and layers within growth cartilage in children
+    up to age 13; six subjects.
+- ref_id: kvist2020
+  first_author: Kvist O
+  year: 2020
+  type: primary
+  one_line_finding: Cartilage-weighted and T1-weighted MRI sequences give reliable growth plate closure
+    staging.
+- ref_id: kvist2021
+  first_author: Kvist O
+  year: 2021
+  type: primary
+  one_line_finding: Cross-sectional MRI study of factors influencing growth plate closure.
+- ref_id: shiguetomimedi2013
+  first_author: Shiguetomi-Medina JM
+  year: 2013
+  type: primary
+  one_line_finding: MR T1 mapping calibrated to water content in porcine growth plate.
+open_questions:
+- g_l1arch_014
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

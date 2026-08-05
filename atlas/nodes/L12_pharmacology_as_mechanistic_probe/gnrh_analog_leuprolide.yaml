@@ -1,7 +1,99 @@
 id: gnrh_analog_leuprolide
-name: Leuprolide
+name: Leuprolide acetate
+aliases: [leuprorelin, depot leuprolide, GnRH agonist]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Leuprolide acetate is a GnRH agonist that, given continuously as a depot, desensitises
+  pituitary gonadotrophs and shuts down gonadal sex steroid production. In central
+  precocious puberty it is used to remove the sex-steroid drive to skeletal maturation and
+  so preserve growth potential that would otherwise be spent early. It is therefore a
+  human loss-of-function experiment on the sex-steroid arm of growth plate senescence, run
+  at scale. The height result is real but modest: across a systematic review of 20 studies
+  and 21,812 participants, GnRH agonist therapy improved final adult height by +3.5 to
+  +4.5 cm and slowed bone age advancement by 0.6-1.3 years. In boys with central precocious
+  puberty treated for a mean 2.7 +/- 1.3 years, final adult height exceeded target height
+  by only 1.2 +/- 5.9 cm (p=0.047) and predicted adult height rose by 1.3 +/- 4.9 cm
+  (p=0.012) - statistically detectable, but with a standard deviation four times the mean
+  effect, so the individual response is close to unpredictable. Population pharmacokinetic
+  work now justifies fixed rather than weight-based dosing, which is itself evidence that
+  the exposure-response relationship at the plate is flat over the clinical range.
+quantitative:
+  - parameter: improvement in final adult height with GnRH agonist therapy in central precocious puberty
+    value: '+3.5 to +4.5'
+    unit: cm
+    conditions: systematic review of 20 studies, 21,812 participants aged 0-18 y, 2016-2026
+    species: human
+    source_ref: martn2026
+    uncertainty: range across studies; moderate-to-serious risk of bias
+  - parameter: reduction in bone age advancement
+    value: '-0.6 to -1.3'
+    unit: years
+    conditions: same systematic review
+    species: human
+    source_ref: martn2026
+    uncertainty: range across studies
+  - parameter: final adult height minus target height, boys with central precocious puberty
+    value: '+1.2'
+    unit: cm
+    conditions: 92 boys treated with a GnRH agonist for a mean 2.7 +/- 1.3 y, retrospective single-centre, 2000-2024
+    species: human
+    source_ref: cho2026
+    uncertainty: SD 5.9 cm, p=0.047 - the SD is nearly five times the mean effect
+  - parameter: narrowing of the bone age minus chronological age gap during treatment
+    value: '1.1'
+    unit: years
+    conditions: same cohort of 92 boys
+    species: human
+    source_ref: cho2026
+    uncertainty: SD 0.9, p<0.001
+localization:
+  - "human pituitary gonadotroph: site of action"
+  - "human growth plate: no direct drug action; effect is removal of sex steroid input to the fusion programme"
+human_evidence: direct
+human_evidence_note: >-
+  Tens of thousands of treated children, with attained final adult height reported in
+  multiple cohorts and pooled in a systematic review.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  Entirely human. The residual risk is confounding by indication - treated children are
+  selected for advanced puberty - since randomised withholding of therapy is not ethical.
+confidence: A
+claim_grades:
+  - claim: GnRH agonist therapy increases final adult height in central precocious puberty by roughly 3.5-4.5 cm.
+    grade: A
+    basis: Systematic review of 20 studies, 21,812 participants, with attained final height.
+  - claim: The individual height response is highly variable and only weakly predictable.
+    grade: A
+    basis: In boys, final height exceeded target by 1.2 +/- 5.9 cm - the SD dwarfs the mean.
+  - claim: The height benefit is produced by delaying oestrogen-driven growth plate senescence rather than by any direct plate action.
+    grade: B
+    basis: Mechanistically coherent with the bone-age slowing measured in the same cohorts, but not separable from other consequences of gonadal suppression in humans.
+key_refs:
+  - ref_id: martn2026
+    pmid: '42187530'
+    first_author: Martín Pérez IM
+    year: 2026
+    type: systematic_review
+    one_line_finding: GnRHa improved final adult height +3.5 to +4.5 cm and reduced bone age advancement 0.6-1.3 years.
+  - ref_id: cho2026
+    pmid: '41787710'
+    first_author: Cho KW
+    year: 2026
+    type: primary
+    one_line_finding: 92 boys with CPP - final adult height exceeded target height by only 1.2 +/- 5.9 cm.
+  - ref_id: lim2026
+    year: 2026
+    type: trial_registry
+    one_line_finding: Population pharmacokinetic justification for fixed rather than weight-based leuprolide dosing in children.
+  - ref_id: thaneetrakool2025
+    pmid: '39533736'
+    first_author: Thaneetrakool T
+    year: 2025
+    type: primary
+    one_line_finding: Head-to-head comparison of 3-monthly leuprolide acetate versus triptorelin pamoate in central precocious puberty.
+open_questions: [g_l12b_016, g_l12b_017]
+contradicts: []
 last_verified: '2026-08-05'

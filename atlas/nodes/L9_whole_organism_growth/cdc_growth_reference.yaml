@@ -1,7 +1,85 @@
 id: cdc_growth_reference
-name: CDC growth reference
+name: CDC 2000 growth reference
+aliases:
+- CDC 2000 growth charts
+- NCHS/CDC reference
 type: dataset
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The 2000 CDC growth charts are a descriptive reference: they summarise how US children actually
+  grew in five national survey cycles, without prescriptive inclusion criteria, and they were smoothed
+  with the LMS method so each chart carries explicit L, M and S parameters that permit exact SDS computation
+  (kuczmarski2002). They matter to this atlas for two reasons. They supply the adult-height distribution
+  used to convert clinical target-height bands into centimetres - the +/-1.64 SDS band recommended for
+  idiopathic short stature becomes +/-10.6 cm for girls and +/-11.7 cm for boys under these charts (zeevi2024)
+  - and they supply the matched-percentile male and female heights that expose the additive 13 cm sex
+  correction as wrong at the extremes. Because the reference is descriptive it embeds the secular trend
+  and the body composition of the US survey population, so an SDS computed against CDC is not interchangeable
+  with one computed against WHO, and the two diverge most in infancy and at the tails (de2011).'
+quantitative:
+- parameter: male-female height difference at the 3rd percentile, age 20
+  value: '12.2'
+  unit: cm
+  conditions: CDC charts, final chart entry
+  species: human
+  source_ref: zeevi2024
+  uncertainty: read from the published charts
+- parameter: male-female height difference at the 97th percentile, age 20
+  value: '14.7'
+  unit: cm
+  conditions: CDC charts, final chart entry
+  species: human
+  source_ref: zeevi2024
+  uncertainty: read from the published charts
+- parameter: target-height band of +/-1.64 SDS expressed in cm, girls
+  value: +/-10.6
+  unit: cm
+  conditions: under CDC adult height distribution
+  species: human
+  source_ref: zeevi2024
+  uncertainty: derived from the CDC SD
+- parameter: target-height band of +/-1.64 SDS expressed in cm, boys
+  value: +/-11.7
+  unit: cm
+  conditions: under CDC adult height distribution
+  species: human
+  source_ref: zeevi2024
+  uncertainty: derived from the CDC SD
+- parameter: smoothing method
+  value: LMS
+  unit: not_applicable
+  conditions: each chart published with L, M and S by age and sex
+  species: human
+  source_ref: kuczmarski2002
+  uncertainty: as published
+localization:
+- 'human whole organism: US national survey anthropometry, birth to 20 years'
+human_evidence: direct
+human_evidence_note: Constructed from measured heights and weights in national probability samples of
+  US children.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human reference dataset.
+confidence: A
+key_refs:
+- ref_id: kuczmarski2002
+  pmid: '12043359'
+  first_author: Kuczmarski RJ
+  year: 2002
+  type: primary
+  one_line_finding: Methods and construction of the 2000 CDC growth charts, published with LMS parameters.
+- ref_id: zeevi2024
+  pmid: '39201851'
+  first_author: Zeevi D
+  year: 2024
+  type: primary
+  one_line_finding: Uses CDC matched-percentile heights to show the male-female difference is multiplicative,
+    not additive.
+- ref_id: de2011
+  pmid: '21708799'
+  first_author: de Onis M
+  year: 2011
+  type: primary
+  one_line_finding: Quantifies the divergence between US reference increments and the WHO velocity standards.
 last_verified: '2026-08-05'

@@ -1,7 +1,89 @@
 id: lineage_tracing_limitations
-name: Limitations of lineage tracing
-type: process
-layer: L13
-stub: true
+name: Unavailability of lineage tracing in humans
+aliases:
+- human clonal fate mapping gap
+type: method
+summary: |
+  Every clonal claim in L2 - that resting zone chondrocytes self-renew, that a single
+  progenitor generates a column, that hypertrophic chondrocytes transdifferentiate into
+  osteoblasts - was established by genetic lineage tracing in mice (mizuhashi2018, zhou2014a)
+  and cannot be tested by the same method in humans, because it requires germline recombinase
+  alleles and a reporter locus. The human substitutes are all weaker in a specific, statable
+  way. (1) Xenograft barcoding: human fetal skeletal stem cells were lentivirally barcoded and
+  their clones read out by scRNA-seq after transplantation into mice (gse233188). This
+  measures potency under ectopic graft conditions, not native fate in a growth plate. (2)
+  Somatic mutation phylogenies from bulk or single-cell sequencing require tissue at
+  sufficient depth and have not been applied to human physis. (3) Static marker colocalisation
+  - the approach used in the only human growth plate single-cell study (chu2026) - identifies
+  candidate stem populations by expression profile, then infers lineage from the mouse. The
+  consequence is that human clonal claims are, without exception, either mouse claims
+  transferred by homology or human correlations whose direction cannot be established. The
+  atlas therefore grades every clonal statement about human growth plate cells no higher than
+  C unless it rests on a human-tissue readout, and gap g_l2stem_001 is a method_blocked gap
+  for exactly this reason.
+quantitative:
+- parameter: published genetic lineage-tracing experiments in human growth plate
+  value: '0'
+  unit: studies
+  conditions: structurally impossible; requires germline recombinase alleles
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: categorical
+- parameter: human skeletal stem cell samples clonally barcoded and traced (in mouse graft)
+  value: '4'
+  unit: samples
+  conditions: 17 weeks gestational age growth plate and periosteum, xenotransplant readout
+  species: human
+  source_ref: gse233188
+  uncertainty: GEO sample count
+localization:
+- 'human RZ: clonal behaviour untestable in situ'
 human_evidence: absent
+human_evidence_note: No human in vivo clonal fate data exist; the nearest human data are xenograft
+  barcode experiments that measure potency, not native fate.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Clonal architecture is exactly the property that differs between a lifelong-open
+  murine plate and a fusing human plate, so transferring murine clonal dynamics is transferring the
+  property most likely to diverge.
+confidence: A
+claim_grades:
+- claim: Genetic lineage tracing cannot be performed in humans.
+  grade: A
+  basis: 'Categorical: the method requires engineered germline alleles.'
+- claim: Xenograft barcoding measures potency rather than native fate.
+  grade: B
+  basis: 'Design of gse233188: readout is in an ectopic mouse graft, not a human growth plate.'
+key_refs:
+- ref_id: mizuhashi2018
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: PTHrP+ resting zone chondrocytes form columnar clones - established by Cre-lox
+    tracing in mouse.
+- ref_id: zhou2014a
+  first_author: Zhou X
+  year: 2014
+  type: primary
+  one_line_finding: Hypertrophic chondrocytes transdifferentiate into osteoblasts - a lineage-tracing
+    result, mouse only.
+- ref_id: gse233188
+  first_author: Chan CKF
+  year: 2023
+  type: dataset
+  one_line_finding: Barcoded human fetal growth plate skeletal stem cells clonally tracked after
+    xenotransplantation.
+- ref_id: chu2026
+  first_author: Chu NTL
+  year: 2026
+  type: primary
+  one_line_finding: Human resting-zone stem-like populations identified by expression profile; the
+    clonal claim is supplied by parallel mouse tracing.
+open_questions:
+- g_l2stem_001
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

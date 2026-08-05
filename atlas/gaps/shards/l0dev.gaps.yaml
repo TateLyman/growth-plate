@@ -1,0 +1,497 @@
+gaps:
+
+- gap_id: g_l0dev_001
+  question: >-
+    Does the positional HOX identity retained by postnatal skeletal cells causally set the
+    site-specific elongation rate of the growth plate at that site, or is it a passive marker
+    while rate is set by the independently timed senescence programme?
+  type: scale_gap
+  layer: L0
+  why_it_matters: >-
+    The whole layer is justified by the assumption that embryonic patterning explains why the
+    distal femur, proximal tibia and metacarpal run at different velocities. If HOX identity is
+    causal, site-specific growth becomes a druggable transcriptional target and limb-lengthening
+    biology changes. If it is a marker, then site-specific rate is set by a separate senescence
+    clock and L0 explains only which elements exist, not how fast they grow. The two readings
+    imply completely different intervention strategies and the field currently states the causal
+    version without having tested it.
+  what_is_known: >-
+    Hox11 compound mutants slow radius and ulna elongation postnatally, lose growth plate height
+    and senesce prematurely while resting- and proliferative-zone proliferation rises
+    (pineault2015, mouse). Hox function in the adult skeleton is region-restricted (song2020,
+    rux2017, leclerc2023). Hoxd13, Shox and Tbx5 are differentially expressed between one-week
+    phalangeal and tibial growth plates in a manner independent of the plates' differing
+    developmental age (lui2018). Adult human fibroblasts retain site-specific HOX expression
+    (chang2002). Shox2 gained expression in jerboa metatarsals and is sufficient to lengthen mouse
+    distal limb (saxena2022).
+  what_is_missing: >-
+    Any experiment that changes a HOX gene and measures elongation rate at two anatomically
+    different plates in the same animal. lui2018, the only study that measures both rate and
+    positional gene expression across sites, attributes the rate difference to differential
+    senescence progression and performs no HOX manipulation. The direction of the arrow between
+    positional identity and rate has never been tested.
+  nearest_evidence:
+  - pineault2015
+  - lui2018
+  - saxena2022
+  - leclerc2023
+  discriminating_experiment: >-
+    Conditional, chondrocyte-restricted (Acan-CreERT2) deletion of Hoxa11/Hoxd11 in juvenile mice,
+    with calcein double-labelling of elongation rate measured simultaneously at the proximal tibia
+    (Hox11 domain) and the distal femur (Hox10 domain) in the same animals, plus zone-resolved
+    proliferation and terminal hypertrophic cell height. Under the causal hypothesis, tibial rate
+    falls while femoral rate is unchanged, and the fall precedes any change in senescence markers.
+    Under the marker hypothesis, neither rate changes on the timescale of the deletion, or both
+    change together with generalised senescence markers. A reciprocal gain-of-function arm -
+    Hoxa11 misexpression in metacarpal chondrocytes - should raise metacarpal rate toward tibial
+    values if the identity is instructive.
+  tractability: 4
+  search_log_ref: g_l0dev_004
+
+- gap_id: g_l0dev_002
+  question: >-
+    Is there any developmental antecedent - in patterning, in ossification-centre timing, or in
+    epiphyseal architecture - that distinguishes species whose growth plates undergo complete
+    epiphyseal fusion (human, dog, rabbit) from species whose plates persist (mouse, rat)?
+  type: search_established
+  layer: L0
+  why_it_matters: >-
+    L7 establishes that the two genetically tractable models cannot express the endpoint the atlas
+    is about: mice and rats cease growth without fusing. Every murine fusion claim is therefore an
+    inference from a surrogate. If the divergence has a developmental antecedent - for example a
+    difference in secondary ossification centre extent, in epiphyseal vascular architecture, or in
+    the size of the reserve pool laid down at the condensation stage - then that antecedent is
+    measurable in embryos and could be used to select or engineer a model that does fuse. If there
+    is none, the divergence is a late endocrine or matrix phenomenon and embryology is the wrong
+    place to look.
+  what_is_known: >-
+    Species sort into complete fusion, cessation without fusion, and site-specific persistence
+    (L7 comparative_fusion_across_species). The secondary ossification centre first appears in
+    amniotes and its extent varies with mechanical demand across mammals, but both fusing (rabbit)
+    and non-fusing (mouse, rat) species form SOCs, so SOC presence alone cannot be the antecedent
+    (xie2020). Rodents and rabbits pass through the same sixteen structural stages of long bone
+    development up to physeal resorption, which is stage 16 and is reached in rabbit but not in
+    mouse (rivas2002, and L7 mouse_does_not_fuse).
+  what_is_missing: >-
+    No study asks the question. A Europe PMC search combining epiphyseal fusion or physeal closure
+    with developmental, embryonic or ontogenetic terms and with human-versus-rodent comparison
+    returned 194 records of which the top 20 by relevance were screened; none addresses a
+    developmental antecedent of the fusion/non-fusion divergence. The nearest records are a caprine
+    autopod synostosis description and a comparative review of bone length regulation, neither of
+    which compares embryonic parameters between fusing and non-fusing species.
+  nearest_evidence:
+  - xie2020
+  - rivas2002
+  discriminating_experiment: >-
+    Matched-stage comparative embryology and early postnatal microCT/histology of a fusing species
+    (rabbit) and a non-fusing species (rat) reared under identical conditions, measuring at each of
+    the sixteen Rivas-Shapiro stages: epiphyseal cartilage volume, cartilage canal density, SOC
+    volume as a fraction of epiphyseal volume, and resting zone cell number per unit plate area.
+    Under the developmental-antecedent hypothesis, at least one of these diverges before the
+    fusing species approaches cessation - the strongest prediction being a smaller resting zone
+    reserve per unit of remaining growth in the fusing species. Under the late-endocrine
+    hypothesis, all four parameters scale identically once normalised to fraction of total growth
+    completed, and divergence appears only at sexual maturation.
+  tractability: 3
+  search_log_ref: g_l0dev_002
+
+- gap_id: g_l0dev_003
+  question: >-
+    Do mesenchymal condensations that become skeletal elements of very different final length
+    (femur versus phalanx) differ in cell number, volume or cell density at the condensation stage,
+    and by how much?
+  type: quantitative_gap
+  layer: L0
+  why_it_matters: >-
+    The claim that all long bone condensations start at a similar size and diverge only through
+    differential growth is asserted in the introductions of primary papers and in reviews, and it
+    is load-bearing: it is what licenses the atlas to treat the entire 10-20 fold difference in
+    adult bone length as a growth plate phenomenon rather than a starting-size phenomenon. If
+    condensations differ by, say, threefold in cell number, then a third of the final disparity is
+    set before any growth plate exists and the mechanistic layers are being asked to reproduce a
+    number that is not theirs.
+  what_is_known: >-
+    The statement "all long bones form from mesenchymal condensations of similar size" appears in
+    lui2018 citing two Hall and Miyake reviews, not primary measurements. Condensation-stage
+    progenitors are spatially compartmentalised and their descendants occupy restricted growth
+    plate territories (wu2025). Human embryonic condensation-stage cells have been profiled
+    transcriptionally and spatially at 5-11 post-conception weeks (to2024) but not counted per
+    element.
+  what_is_missing: >-
+    A number. A Europe PMC search for condensation or cartilage anlage combined with cell number,
+    cell count or volume and with measurement or stereology terms returned 363 records; the top 20
+    by relevance contain no study reporting condensation cell number or volume compared across
+    elements of different final length in any species.
+  nearest_evidence:
+  - wu2025
+  - to2024
+  - lui2018
+  discriminating_experiment: >-
+    Light-sheet imaging of whole cleared mouse limbs at E11.5-E12.5 with Sox9 or Col2a1 reporter
+    labelling, segmenting every condensation in one limb and counting nuclei per condensation and
+    condensation volume, then following the same elements to adult length in littermates. Regress
+    adult element length on condensation cell number. Under the equal-start hypothesis the
+    regression slope is near zero and adult length is uncorrelated with starting cell number. Under
+    the starting-size hypothesis the slope is significantly positive and the fraction of adult
+    length variance explained gives directly the share of skeletal proportion that is NOT a growth
+    plate phenomenon. The same measurement is feasible in human embryonic specimens by
+    light-sheet imaging of the existing 5-11 post-conception week collections.
+  tractability: 4
+  search_log_ref: g_l0dev_003
+
+- gap_id: g_l0dev_004
+  question: >-
+    Are HOX genes expressed in growth plate chondrocytes, and if so in which zone, in any species
+    and in human?
+  type: search_established
+  layer: L0
+  why_it_matters: >-
+    The entire proposition that positional identity is retained by the growth plate rests on
+    knowing whether the cells of the plate express HOX at all. The two most relevant mouse studies
+    disagree about where retained Hoxa11 sits: one reports adult Hoxa11-EGFP as EXCLUSIVE to
+    zeugopod bone marrow MSCs (rux2016), the other finds Hoxa11 maintained in zeugopod articular
+    chondrocytes to six months (rux2021). Neither examined the growth plate. If HOX is absent from
+    growth plate chondrocytes, then any HOX effect on elongation must act through the
+    perichondrium or the marrow stroma, which relocates the mechanism to a different compartment
+    and a different set of drugs.
+  what_is_known: >-
+    Bulk laser-capture RNA-seq of separated proliferative and hypertrophic zones detects Hoxd13,
+    Shox and Tbx5 differences between phalangeal and tibial plates (lui2018), so positional
+    transcripts are present at bulk-zone level in rodent. Hox11 function is required postnatally
+    for zeugopod elongation (pineault2015). No in situ hybridization, immunohistochemistry or
+    single-cell dataset resolving HOX by growth plate zone was retrieved.
+  what_is_missing: >-
+    Zone-resolved HOX localization in a growth plate, in any species, and any HOX measurement in
+    human growth plate tissue. A Europe PMC search combining Hox genes with growth plate,
+    chondrocyte and zone terms returned 90 records; the top 20 by relevance were screened and none
+    reports zonal HOX localization in a growth plate. The two closest are rux2021 (articular, not
+    growth plate cartilage) and lui2018 (bulk zonal RNA-seq, no localization).
+  nearest_evidence:
+  - rux2016
+  - rux2021
+  - lui2018
+  discriminating_experiment: >-
+    RNAscope for HOXA11, HOXD11, HOXA13 and HOXD13 on serial sections of mouse proximal tibia
+    (Hox11 domain), distal femur (Hox10 domain) and metacarpal (Hox13 domain) at P10 and P28,
+    scored per zone, alongside the same probes on archived human growth plate specimens from
+    epiphysiodesis or post-mortem tissue. Under the retained-identity hypothesis, signal is present
+    in resting and proliferative zone chondrocytes and is domain-appropriate for each bone. Under
+    the compartment-relocation hypothesis, signal is confined to perichondrium, groove of Ranvier
+    and marrow stroma with the chondrocytes negative, which would reassign every postnatal HOX
+    effect to a non-chondrocyte compartment.
+  tractability: 5
+  search_log_ref: g_l0dev_004
+
+- gap_id: g_l0dev_005
+  question: >-
+    Given that human secondary ossification centres appear bone by bone across roughly two decades
+    while mouse SOCs all appear within a two-week window, does resting-zone stem cell character in
+    humans appear at a bone-specific age tracking that bone's own SOC?
+  type: species_gap
+  layer: L0
+  why_it_matters: >-
+    The SOC-triggers-stemness hypothesis is load-bearing for fusion models in L7, and its only
+    support is temporal coincidence in mouse. This layer contributes the timing side, and the
+    timing side generates a sharp, testable and so far unexamined prediction in humans: if the SOC
+    is the trigger, human growth plates should acquire stem-cell character in the same staggered
+    order as their SOCs appear, meaning the distal femoral plate would be stem-cell-competent from
+    around term while a proximal humeral or metacarpal plate would not be for years. If instead
+    human resting zones look alike at equivalent skeletal ages regardless of SOC status, the
+    coincidence in mouse is an artefact of everything happening at once in a two-week-old animal.
+  what_is_known: >-
+    Human distal femoral SOC is absent before 30 weeks gestation and universal after 35 weeks; the
+    proximal tibial SOC is absent before 33 weeks and present in only 73.7% at 37 weeks
+    (funaki2020, n=199). Mouse PTHrP+ colony-forming self-renewal rises between a P9 and a P12
+    pulse, described as coinciding with SOC development (mizuhashi2018), and clonal behaviour
+    switches at the same time (newton2019). No SOC manipulation has been read out as a stemness
+    assay in any species (L2 gap g_l2stem_003).
+  what_is_missing: >-
+    Any human comparison of resting zone properties between a bone whose SOC has formed and a bone
+    whose SOC has not, at the same chronological age in the same individual.
+  nearest_evidence:
+  - funaki2020
+  - mizuhashi2018
+  - newton2019
+  - xie2020
+  discriminating_experiment: >-
+    Single-cell and spatial transcriptomic profiling of resting zones from two different bones of
+    the same paediatric individual, chosen so that one has a mature SOC and the other does not -
+    for example distal femur versus a metacarpal or proximal humerus in specimens obtained at
+    epiphysiodesis, amputation or post-mortem. Score each resting zone for the human stem-like
+    signatures already defined (PRRX1-high root population, CHRDL2/SFRP5 quiescent populations).
+    Under the SOC-trigger hypothesis the SOC-bearing bone shows the stem-like signature and the
+    SOC-free bone does not. Under the null the two are indistinguishable once normalised for plate
+    height. In mouse the same question is answerable now with the validated SOC-delay tools
+    (axitinib at P18; Prx-Cre:GnasR201H) combined with a PTHrP-creER colony-forming readout.
+  tractability: 2
+  search_log_ref: g_l0dev_005
+
+- gap_id: g_l0dev_006
+  question: >-
+    At what gestational or postnatal ages do the secondary ossification centres of each human
+    epiphysis appear, measured prospectively with modern imaging and reported with dispersion?
+  type: quantitative_gap
+  layer: L0
+  why_it_matters: >-
+    Every bone-age method (Greulich-Pyle, Tanner-Whitehouse, Fels) and every remaining-growth
+    prediction in L7 is calibrated on ossification centre appearance and maturation, but the
+    underlying appearance-timing data are largely mid-twentieth-century radiographic atlases from
+    single populations. If the atlas is going to hold L0 timing as an organism-level number the
+    mechanistic layers must reproduce, that number needs a modern, prospective, population-resolved
+    basis, particularly because secular trend and population differences in maturation are
+    documented elsewhere in the atlas.
+  what_is_known: >-
+    One modern prospective cohort gives the distal femoral and proximal tibial centres only: not
+    visible before 30 and 33 weeks gestation respectively, 100% and 73.7% present at 35 and 37
+    weeks, n=199 Japanese pregnancies, explicit >1 mm visualization criterion (funaki2020). Rabbit
+    has a complete 16-stage histological sequence with ages (rivas2002).
+  what_is_missing: >-
+    Prospective, imaging-based appearance timing with dispersion, by sex and population, for the
+    remaining epiphyses. Existing values circulate as atlas norms without retrievable primary
+    cohorts or confidence intervals.
+  nearest_evidence:
+  - funaki2020
+  - rivas2002
+  discriminating_experiment: >-
+    Retrospective analysis of an existing large paediatric MRI or low-dose CT repository, scoring
+    first appearance of each epiphyseal ossification centre against chronological age, sex and
+    recorded ancestry, with survival analysis to produce median age and interquartile range per
+    centre. The deliverable is a table of appearance ages with dispersion that can be compared
+    directly against the mouse two-week window, and that tests whether appearance order is
+    conserved across populations or shifts with the same secular trend seen in stature.
+  tractability: 4
+
+- gap_id: g_l0dev_007
+  question: >-
+    Does the human interzone give rise to articular but not growth plate chondrocytes, as it does
+    in mouse?
+  type: species_gap
+  layer: L0
+  why_it_matters: >-
+    The separation of the joint lineage from the growth plate lineage at the interzone is the
+    reason the atlas treats articular and growth plate chondrocytes as different cells with
+    different rules, and it underpins the assumption that articular cartilage cannot resupply a
+    depleted resting zone. If in humans the two lineages remain connected for longer, then the
+    articular surface is a potential progenitor reserve for the plate and the finite-capacity
+    argument in L2 weakens.
+  what_is_known: >-
+    Gdf5-Cre lineage tracing in mouse shows interzone descendants build articular cartilage,
+    synovium and intra-articular ligaments but not growth plate chondrocytes (koyama2008), and
+    inducible pulses show continuous recruitment rather than clonal expansion (shwartz2016). Human
+    GDF5 activating and inactivating mutations produce joint fusion and short middle phalanges
+    respectively (seemann2005), which is consistent with but does not demonstrate the same lineage
+    separation.
+  what_is_missing: >-
+    Any human fate map. Lineage tracing is impossible in humans, so the question has to be
+    approached by somatic-mutation phylogenetics or by high-resolution developmental
+    transcriptomics.
+  nearest_evidence:
+  - koyama2008
+  - shwartz2016
+  - to2024
+  discriminating_experiment: >-
+    Somatic single-nucleotide-variant phylogenetics on microdissected articular cartilage and
+    growth plate resting zone from the same human joint, using deep sequencing of laser-captured
+    zonal samples to reconstruct clonal trees. Under the mouse-like model the two compartments
+    occupy separate branches diverging early in development. Under a shared-reservoir model they
+    share late private variants, indicating continued exchange. The human embryonic multi-omic
+    atlas (to2024) provides the developmental-stage reference against which the branch points can
+    be dated.
+  tractability: 2
+
+- gap_id: g_l0dev_008
+  question: >-
+    What patterns whether a given end of a skeletal element forms a growth plate at all, and does
+    the same patterning set how fast that plate will run?
+  type: known_unknown
+  layer: L0
+  why_it_matters: >-
+    Metacarpals and metatarsals grow from one end only, and the pisiform is the only carpal with a
+    growth plate. This is a natural experiment in which the developmental decision to build a plate
+    is made or not made within one element, and it identifies the presence of a PTHrP-expressing
+    reserve pool as the defining feature of a growth plate. If the same patterning input also sets
+    reserve pool SIZE, then L0 patterning and L2 stem cell capacity are the same variable, and
+    site-specific growth rate follows from reserve pool size rather than from anything intrinsic to
+    the chondrocytes.
+  what_is_known: >-
+    Pthlh is expressed in the reserve zone only at the growth-plate-forming end of the mouse
+    metatarsal; the opposite end lacks a PTHrP+ reserve zone and shows premature chondrocyte
+    differentiation with Ihh expression. Pthlh is expressed in the reserve zone of the developing
+    pisiform, confirming a true growth plate there (reno2025).
+  what_is_missing: >-
+    The upstream input. Nothing is known about what restricts Pthlh to one end, whether it is HOX,
+    a joint-derived signal from the adjacent interzone, or mechanical. No study relates reserve
+    pool size at plate formation to the subsequent elongation rate of that plate.
+  nearest_evidence:
+  - reno2025
+  - koyama2008
+  - wu2025
+  discriminating_experiment: >-
+    In the mouse metatarsal, quantify Pthlh+ reserve cell number at both ends at the stage the
+    plate is established, then ablate or expand the pool at the plate-forming end (PTHrP-creER
+    driving DTA, or Pthlh misexpression at the non-plate end) and measure subsequent elongation
+    rate by calcein labelling. Under the reserve-pool-size hypothesis, elongation rate scales with
+    initial Pthlh+ cell number and ectopic Pthlh at the distal end induces a second growth plate.
+    Under the intrinsic-chondrocyte hypothesis, ectopic Pthlh delays differentiation without
+    producing a plate and rate is unchanged by pool size.
+  tractability: 4
+
+- gap_id: g_l0dev_009
+  question: >-
+    Is the difference in elongation rate between long and short bones dominated by chondrocyte
+    hypertrophic volume or by proliferation per column?
+  type: contradiction
+  layer: L0
+  why_it_matters: >-
+    The two answers point at different biology and different drugs. If final hypertrophic volume
+    dominates, the target is the IGF-dependent swelling phase and the matrix conditions that permit
+    it (L5). If proliferation per column dominates, the target is the resting zone's output and the
+    senescence programme that limits it (L2). The atlas cannot carry both as the headline mechanism
+    of skeletal proportion.
+  what_is_known: >-
+    cooper2013 used quantitative phase microscopy to show three phases of chondrocyte volume
+    increase and reported that the duration of the third, IGF-dependent, proportional-dry-mass
+    phase is what varies most between rapidly and slowly elongating growth plates, concluding that
+    the largest contribution to differential elongation comes from hypertrophic volume. lui2018
+    measured both variables in the same animals and found the opposite ranking: at one week the
+    metacarpal grew at 49% of the tibial rate with proliferation per column at 46% of tibial, while
+    hypertrophic cell height differed little at that timepoint, and concluded that proliferation
+    per column is the dominant factor. Both are mouse; both are competent; they disagree.
+  what_is_missing: >-
+    A reconciliation. The two studies differ in the ages examined, in the bones compared and in
+    whether volume was measured as height or as true volume with dry-mass correction, and neither
+    reanalyses the other's data. The L1 node site_specific_growth_rate records a third position
+    from rat, that eight chondrocytic variables contribute and the relative share of hypertrophy
+    falls from 59% to 44% as plates get slower, which suggests the answer is age- and
+    rate-dependent rather than fixed.
+  nearest_evidence:
+  - cooper2013
+  - lui2018
+  discriminating_experiment: >-
+    A single study measuring, in the same mice at four ages spanning 1 to 6 weeks, and at four
+    sites (distal femur, proximal tibia, metacarpal, proximal phalanx): elongation rate by calcein
+    labelling, proliferation per column by EdU, and terminal hypertrophic cell VOLUME by
+    quantitative phase microscopy rather than section height. Then partition the between-site
+    variance in rate into the two components at each age. The prediction that reconciles both
+    papers is that proliferation per column dominates early and hypertrophic volume dominates late;
+    if instead one component dominates at every age, one of the two published conclusions is wrong.
+  tractability: 5
+
+- gap_id: g_l0dev_010
+  question: >-
+    Does the germ-layer origin of a growth plate - somitic sclerotome for vertebral plates versus
+    lateral plate mesoderm for limb plates - predict any difference in its cellular behaviour or
+    its response to systemic signals?
+  type: search_established
+  layer: L0
+  why_it_matters: >-
+    Sitting height and leg length respond differently to endocrine and nutritional perturbation in
+    humans, and vertebral growth plates are structurally distinct from long bone plates. If lineage
+    origin is the reason, then axial and appendicular growth are separate systems and treatments
+    calibrated on limb growth cannot be assumed to work on the spine, which matters directly for
+    growth-promoting therapy and for scoliosis. If it is not the reason, the difference is
+    mechanical or geometric and the same mechanisms apply throughout.
+  what_is_known: >-
+    Vertebral bodies derive from sclerotome and limb elements from lateral plate mesoderm; this is
+    classical embryology. The atlas holds a separate L1 node for vertebral_growth_plate. One
+    retrieved study reports that leptin regulates chondrogenesis differently in mouse vertebral
+    and tibial growth plates, which establishes that a differential response exists but not that
+    lineage causes it.
+  what_is_missing: >-
+    Any study attributing a growth plate property to germ-layer origin. A Europe PMC search
+    combining vertebral growth plate or endplate with long bone or appendicular growth plate and
+    comparative and chondrocyte or growth rate terms returned 53 records; the top 20 by relevance
+    were screened and none compares the two plate types with respect to developmental origin. The
+    single relevant hit compares hormonal responsiveness, not origin. This is why the stub nodes
+    for sclerotome, somite, paraxial mesoderm and lateral plate mesoderm were deleted rather than
+    researched: there is nothing to attach them to.
+  nearest_evidence:
+  - to2024
+  - lui2018
+  discriminating_experiment: >-
+    Parallel zonal transcriptomic and histomorphometric profiling of mouse lumbar vertebral and
+    proximal tibial growth plates at matched skeletal ages, followed by identical systemic
+    challenges (growth hormone, glucocorticoid, dietary restriction) with elongation rate measured
+    at both sites by calcein labelling. Under the lineage hypothesis, the two plates differ in
+    baseline positional transcription factor expression (Hox versus Pax/sclerotome programmes) AND
+    respond differentially to the same systemic dose. Under the geometry hypothesis, baseline
+    transcriptomes differ only in positional markers with no difference in response, and the
+    apparent axial-appendicular difference in humans is loading and plate number, not lineage.
+  tractability: 4
+  search_log_ref: g_l0dev_010
+
+- gap_id: g_l0dev_011
+  question: >-
+    Can the cranial suture, where stem cell ablation has been shown to arrest growth and cause
+    synostosis, be used as a formal control for the untested claim that resting zone depletion
+    causes epiphyseal fusion?
+  type: scale_gap
+  layer: L0
+  why_it_matters: >-
+    The suture and the growth plate are the body's two stem-cell-dependent skeletal growth engines
+    and only one of them has had the depletion hypothesis tested by ablation. That asymmetry is why
+    this layer keeps the cranial nodes at all. But the two structures cannot currently be joined by
+    any edge into L1-L7 with a shared measurable: sutures grow appositionally and bidirectionally
+    with no cartilage to consume, plates grow unidirectionally by consuming cartilage, and there is
+    no quantity - not growth rate, not cell number, not a marker - that has been measured in both
+    on a common scale. The comparison is therefore an argument about experimental design, not a
+    mechanistic link, and stating it as a link would be a category error.
+  what_is_known: >-
+    Gli1+ suture mesenchyme cell ablation causes craniosynostosis and arrests skull growth
+    (zhao2015); Axin2+ suture cells are long-term self-renewing and rebuild calvarial bone
+    (maruyama2016). The frontal and parietal bones derive from different germ layers with the
+    coronal suture at the boundary (jiang2002). In the growth plate, the parallel claim (L2
+    rz_depletion_causes_fusion) has no ablation experiment behind it.
+  what_is_missing: >-
+    A shared quantity. No study measures suture and growth plate stem cell pools, or their outputs,
+    in units that permit comparison, and no study performs the equivalent ablation at the growth
+    plate.
+  nearest_evidence:
+  - zhao2015
+  - maruyama2016
+  - jiang2002
+  discriminating_experiment: >-
+    Perform the suture experiment at the plate. Use an inducible resting-zone driver (PTHrP-creER,
+    or the broader Acan-CreERT2 restricted by tamoxifen dose) to drive DTA in juvenile animals of a
+    species that DOES fuse - rabbit is the only tractable option - titrating ablation efficiency,
+    and score plate height, elongation rate and time to physeal closure against ablation fraction.
+    Under the depletion hypothesis, closure time falls monotonically with ablation fraction, as
+    synostosis timing does with Gli1+ ablation at the suture. Under the contingent-correlation
+    reading, plates thin and growth slows but closure still waits for the systemic estrogen signal
+    and its timing is unchanged.
+  tractability: 2
+
+- gap_id: g_l0dev_012
+  question: >-
+    In the same human individuals, at what ages do calvarial (intramembranous, suture-driven) and
+    long bone (endochondral, plate-driven) growth cease, and how large is the gap?
+  type: quantitative_gap
+  layer: L0
+  why_it_matters: >-
+    The atlas asserts that endochondral growth is constrained in ways intramembranous growth is not
+    - a consumable cartilage template, a finite resting zone, an estrogen-triggered terminal event.
+    That assertion is only meaningful if the two systems demonstrably stop at different times in
+    the same person. The number is also the cleanest available test of whether growth cessation is
+    a systemic endocrine command delivered to all bone or a local exhaustion event: a systemic
+    command should stop both on the same schedule, local exhaustion should not.
+  what_is_known: >-
+    Human epiphyseal fusion timing is well characterised by bone age methods (L7). Suture patency
+    persists into adult life and suture obliteration is used forensically for age estimation over a
+    much later and much wider age range than epiphyseal fusion. The two literatures do not
+    intersect, and no retrieved study reports both in one cohort.
+  what_is_missing: >-
+    Paired measurement. There is no cohort in which cranial vault dimensions and stature or long
+    bone length are tracked to their respective plateaus in the same individuals with the same
+    measurement cadence.
+  nearest_evidence:
+  - to2024
+  - zhao2015
+  discriminating_experiment: >-
+    Longitudinal analysis of an existing paediatric-to-adult imaging cohort with serial head CT or
+    MRI and standing height or long bone length, fitting a plateau model to each trajectory per
+    individual and reporting the difference in plateau age between cranial vault dimension and
+    stature, stratified by sex. Under the systemic-command hypothesis the two plateau ages are
+    tightly correlated within individuals and the sex difference is the same for both. Under the
+    local-exhaustion hypothesis stature plateaus at a sex-specific age tied to estrogen exposure
+    while cranial dimensions plateau independently and with a different sex pattern.
+  tractability: 3

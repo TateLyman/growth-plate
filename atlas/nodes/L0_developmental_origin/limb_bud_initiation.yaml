@@ -1,7 +1,62 @@
 id: limb_bud_initiation
 name: Limb bud initiation
+aliases:
+- limb field induction
+- FGF10-FGF8 limb initiation loop
 type: process
+summary: 'The limb bud is initiated when lateral plate mesoderm at defined axial levels expresses Fgf10, which
+  induces Fgf8 in the overlying ectoderm to form the apical ectodermal ridge; the two maintain each other.
+  Fgf10-null mice form a bud that fails to grow out, no AER is induced, and limbs are absent at birth (min1998).
+  Forelimb versus hindlimb identity is imposed at this step by TBX5 and by TBX4/PITX1 respectively, and the
+  identity is segment-wide: human TBX5 mutations produce Holt-Oram syndrome, in which malformation is confined
+  to the upper limb and heart with the lower limb spared (basson1997). For this atlas the initiation step matters
+  for one reason: it is where the set of skeletal elements, and their forelimb/hindlimb identity, is fixed,
+  and human upper and lower limb growth plates run different programmes thereafter - the proximal humerus supplies
+  about 80% of humeral length while the distal femur supplies about 70% of femoral length, and their relative
+  shares move in opposite directions with age. Nothing in the initiation literature measures a growth plate,
+  so the connection from initiation to postnatal rate is an inference, not a result.'
+localization:
+- 'mouse and chick lateral plate mesoderm at forelimb and hindlimb levels: confirmed'
+- 'human embryo 5-11 post-conception weeks: limb osteoprogenitor trajectories are regionally distinct from
+  cranial ones (to2024)'
+human_evidence: indirect
+human_evidence_note: Human TBX5 mutation restricts malformation to the upper limb, and the human embryonic
+  multi-omic atlas shows limb osteoprogenitor trajectories distinct from cranial ones; no human initiation
+  experiment exists.
+species_basis:
+- mouse
+- chicken
+- human
+translation_risk: moderate
+translation_risk_reason: The molecular logic is murine and avian, but the segment-restricted human syndromes
+  indicate the same limb-field partition operates in humans.
+confidence: B
+key_refs:
+- ref_id: min1998
+  pmid: '9784490'
+  first_author: Min H
+  year: 1998
+  type: primary_abstract_only
+  one_line_finding: Fgf10-null mice form a limb bud that fails to grow out and never induces an AER, giving
+    limbless newborns
+- ref_id: basson1997
+  pmid: '8988165'
+  first_author: Basson CT
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: TBX5 mutations cause Holt-Oram syndrome with malformation confined to the upper limb and
+    heart
+- ref_id: to2024
+  pmid: '39567793'
+  doi: 10.1038/s41586-024-08189-z
+  first_author: To K
+  year: 2024
+  type: primary
+  one_line_finding: Human embryonic snRNA/snATAC and spatial atlas resolves regionally distinct limb versus
+    cranial osteoprogenitor trajectories at 5-11 post-conception weeks
+open_questions:
+- g_l0dev_001
+- g_l0dev_008
 layer: L0
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

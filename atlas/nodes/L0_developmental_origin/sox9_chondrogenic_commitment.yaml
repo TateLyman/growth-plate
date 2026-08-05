@@ -1,7 +1,56 @@
 id: sox9_chondrogenic_commitment
 name: SOX9 chondrogenic commitment
+aliases:
+- Sox9-dependent chondrogenesis
 type: process
+summary: 'SOX9 is the gate on chondrogenic fate and it acts twice. Sox9-null cells in mouse chimeras are excluded
+  from mesenchymal condensations altogether and never express Col2a1 or form cartilage (bi1999); conditional
+  deletion after condensation shows a second, separable requirement for overt chondrocyte differentiation,
+  and SOX9 is required for expression of its own partners Sox5 and Sox6 (akiyama2002). Dose matters and this
+  is where the node earns its place in a growth atlas: Sox9 heterozygous mice have hypoplastic cartilage primordia
+  and PREMATURE skeletal mineralization (bi2001), the mouse model of human campomelic dysplasia, which is caused
+  by SOX9 haploinsufficiency. A halved dose of one transcription factor at the condensation stage therefore
+  produces both a smaller starting template and an accelerated conversion of that template to bone - the two
+  variables the postnatal plate has to work with. The postnatal, zone-resolved role of SOX9 (its requirement
+  in proliferative chondrocytes and its block on osteoblast differentiation) belongs to L3 sox9_tf and is not
+  duplicated here.'
+localization:
+- 'mouse condensation and cartilage: confirmed by conditional deletion (bi1999, akiyama2002)'
+- 'human embryonic chondrocyte trajectories: confirmed transcriptionally (to2024)'
+human_evidence: indirect
+human_evidence_note: Human SOX9 haploinsufficiency causes campomelic dysplasia with bowed, hypoplastic long
+  bones; the mouse heterozygote reproduces the cartilage hypoplasia and premature mineralization, but no human
+  cartilage has been assayed for SOX9 dose effects directly.
+species_basis:
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: Mechanism is murine conditional genetics, but human SOX9 haploinsufficiency gives
+  a concordant skeletal phenotype, so the dose-sensitivity claim transfers.
+confidence: B
+key_refs:
+- ref_id: bi1999
+  pmid: '10319868'
+  first_author: Bi W
+  year: 1999
+  type: primary_abstract_only
+  one_line_finding: Sox9-null cells are excluded from condensations and cannot form cartilage
+- ref_id: akiyama2002
+  pmid: '12414734'
+  first_author: Akiyama H
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: Sox9 is required at a second, post-condensation step for overt chondrocyte differentiation
+    and for Sox5/Sox6 expression
+- ref_id: bi2001
+  pmid: '11371614'
+  first_author: Bi W
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Sox9 heterozygotes have hypoplastic cartilage primordia and premature skeletal mineralization,
+    modelling campomelic dysplasia
+open_questions:
+- g_l0dev_003
 layer: L0
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

@@ -1,7 +1,79 @@
 id: altitude_hypoxia_growth
 name: High altitude and growth
 type: process
+summary: 'Chronic hypoxia is the environmental exposure with the most attractive candidate molecular entry
+  point in this layer and the least evidence that the entry point is used. Andean field studies from Nunoa,
+  Peru (4000 m) established that indigenous children grow slowly in body size with delayed skeletal maturation
+  while lung volume growth is accelerated, and that acclimatisation during the developmental period rather
+  than in adulthood is what produces the adult functional phenotype (frisancho2025). The obvious mechanistic
+  candidate is HIF-1alpha, which the atlas carries at L3 as hif1a_chondrocyte, but the inference has a
+  specific and disqualifying problem: L3 records that the oxygen tension of the human growth plate has
+  never been measured, so there is no baseline against which to say whether residence at 4000 m changes
+  physeal pO2 at all. The plate is avascular and already hypoxic at sea level; a reduction in arterial
+  pO2 need not translate into a change in the interior of cartilage. Meanwhile the population signal is
+  dominated by the environment rather than by altitude: in Tibetan children at ~3600 m surveyed in 2005,
+  2010, 2014 and 2019 (Chinese National Survey on Students'' Constitution and Health), height rose across
+  survey years in most age groups of both sexes despite unchanged altitude, with the largest gains in
+  13-year-old boys and 10-year-old girls (zhang2026). Altitude is therefore not a fixed ceiling.'
+quantitative:
+- parameter: altitude of the Tibetan secular trend survey sites
+  value: ~3600
+  unit: m
+  conditions: Lhasa and surrounding testing sites, Tibet Autonomous Region
+  species: human
+  source_ref: zhang2026
+  uncertainty: approximate as reported
+- parameter: direction of the secular height trend at high altitude, 2005-2019
+  value: increase
+  unit: qualitative
+  conditions: Tibetan school students aged 7-18, four national survey waves
+  species: human
+  source_ref: zhang2026
+  uncertainty: significant across most age groups except 16-year-olds; per-age means in the paper
+localization:
+- 'human growth plate: pO2 never measured at any altitude (see L3 oxygen_gradient_growth_plate)'
+- 'human SYS: reduced arterial pO2, elevated haemoglobin, reduced birth weight at altitude'
+human_evidence: direct
+human_evidence_note: Human anthropometric field studies in Andean and Tibetan high-altitude populations;
+  the mechanistic step is not measured in humans.
+species_basis:
+- human
+translation_risk: unknown
+translation_risk_reason: No animal model of chronic hypobaric hypoxia with a growth plate oxygen or HIF
+  readout is available to translate from.
+confidence: D
+claim_grades:
+- claim: Children native to high altitude show slowed somatic growth and delayed skeletal maturation with
+    accelerated lung volume growth.
+  grade: B
+  basis: Six decades of Andean field anthropometry summarised by the original investigator (frisancho2025);
+    a narrative account of primary work, not a re-analysis.
+- claim: Height at high altitude has risen substantially over 15 years at constant altitude.
+  grade: A
+  basis: Four waves of a standardised national survey of Tibetan school students aged 7-18 (zhang2026).
+- claim: Chronic hypoxia acts on the growth plate through HIF-1alpha in chondrocytes.
+  grade: X
+  basis: No measurement of growth plate pO2 or HIF-1alpha under altitude exposure in any species; the
+    human plate pO2 has never been measured at all. Logged as g_l10env_010.
+key_refs:
+- ref_id: frisancho2025
+  pmid: '40219710'
+  first_author: Frisancho AR.
+  year: 2025
+  type: review
+  one_line_finding: Andean field studies at Nunoa (4000 m) found slow growth in body size and delayed
+    skeletal maturation with accelerated lung volume growth, and showed developmental-period acclimatisation
+    is what produces the adult functional phenotype.
+- ref_id: zhang2026
+  pmid: '42509193'
+  first_author: Zhang C
+  year: 2026
+  type: primary
+  one_line_finding: Tibetan children at ~3600 m showed rising height, weight and BMI across the 2005,
+    2010, 2014 and 2019 national survey waves, with the largest height gains in 13-year-old boys and 10-year-old
+    girls.
+open_questions:
+- g_l10env_010
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

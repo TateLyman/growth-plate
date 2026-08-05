@@ -1,7 +1,69 @@
 id: nonhuman_primate_growth
-name: Non-human primate growth models
-type: method
+name: Non-human primate growth plate model
+aliases:
+- macaque physis
+- NHP skeletal maturation
+type: process
+summary: |
+  Non-human primates are the only laboratory species whose growth plate biology is
+  phylogenetically close to human, and the closest available check on whether murine results
+  transfer at all. The postnatal development of organ systems in cynomolgus monkeys, including
+  skeletal maturation timing, is documented in a form usable for comparative work (li2023).
+  The comparison is not uniformly reassuring: unclosed vertebral growth plate cartilage was
+  found in every lumbar endplate of 11 normal cynomolgus monkeys aged approximately 9-15
+  years, in explicit contrast with complete epiphyseal closure in adult humans (iwata2018) -
+  so closure is site-specific in the macaque in a way it is not in human, and a "primate model
+  of fusion" cannot be assumed to fuse at the site being studied. Practical limits are severe
+  and are the reason this species is nearly absent from the growth plate literature: cost,
+  ethics, small sample sizes, long developmental timelines matching human tempo (which is the
+  point, but also the obstacle), and no conditional genetics. Scored on the four-axis scheme
+  defined in mouse_model_translation_risk (fusion competence, plate architecture, scale,
+  tempo; each 1-5, mean reported). Non-human primate scores A=2, B=1, C=1, D=1, mean 1.25, the
+  lowest translation risk of any model - but the number of growth plate mechanism studies
+  performed in NHP is close to zero, so low risk is currently unrealised.
+quantitative:
+- parameter: non-human primate translation risk score (this layer, 1-5)
+  value: '1.25'
+  unit: score
+  conditions: mean of fusion competence 2, architecture 1, scale 1, tempo 1
+  species: multiple
+  source_ref: li2023
+  uncertainty: scoring scheme defined in mouse_model_translation_risk
+- parameter: cynomolgus monkeys with unclosed lumbar vertebral growth plate cartilage
+  value: 11 of 11
+  unit: animals
+  conditions: normal adult animals aged approximately 9-15 years
+  species: multiple
+  source_ref: iwata2018
+  uncertainty: every endplate examined
+localization:
+- 'multiple: lumbar vertebral endplate cartilage remains unclosed in adult macaque'
+human_evidence: indirect
+human_evidence_note: NHP data are used as the nearest phylogenetic comparator for human closure;
+  no paired human-NHP experiment exists.
+species_basis:
+- multiple
+- human
+translation_risk: low
+translation_risk_reason: Closest phylogeny, human-like tempo and dimensions; residual risk is site-specific
+  persistence of vertebral plates and the near-total absence of mechanistic NHP studies.
+confidence: C
+key_refs:
+- ref_id: li2023
+  first_author: Li X
+  year: 2023
+  type: review
+  one_line_finding: Postnatal organ system development of cynomolgus monkeys including skeletal maturation
+    timing.
+- ref_id: iwata2018
+  first_author: Iwata A
+  year: 2018
+  type: primary
+  one_line_finding: Unclosed vertebral growth plate cartilage in every lumbar endplate of 11 normal
+    adult cynomolgus monkeys.
+open_questions:
+- g_l7fuse_012
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

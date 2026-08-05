@@ -1,7 +1,104 @@
 id: sitting_height_ratio
 name: Sitting height ratio
+aliases:
+- SH/H ratio
+- trunk-to-height ratio
+- upper segment ratio
 type: phenotype
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Sitting height divided by standing height measures the trunk''s share of stature and therefore
+  reports directly on the difference in output between vertebral and lower-limb growth plates in the same
+  child. The ratio falls steeply through infancy and childhood as the legs outgrow the trunk, then rises
+  again during and after the pubertal spurt as vertebral growth continues after the lower-limb plates
+  have decelerated - which is why disproportion is detectable at some ages and not others. Dutch nationwide
+  references from 14500 children aged 0-21 years give age- and sex-specific LMS-smoothed centiles (fredriks2005).
+  The clinically decisive finding in that reference is that SH/H SDS is not independent of height SDS:
+  they are negatively correlated, so in a child with height SDS below -2 the conventional +2 SD cut-off
+  generates too many false positives and must be shifted to +2.5 SD, while in exceptionally tall children
+  the lower cut-off must be shifted to -2.2 SDS. Sensitivity of the height-corrected cut-off is 80% for
+  hypochondroplasia but only 30% for Marfan syndrome, so a normal ratio does not exclude disproportionate
+  growth. The ICP decomposition attributes the childhood fall in the ratio to a greater influence of the
+  childhood growth component on the legs than on the trunk (karlberg1989), which if correct predicts that
+  the growth-hormone-dependent phase acts preferentially on the lower-limb physes - a site-specific prediction
+  that has never been tested at the level of the plate.'
+quantitative:
+- parameter: children contributing to the Dutch SH/H reference
+  value: '14500'
+  unit: children
+  conditions: Dutch origin, ages 0-21 y, cross-sectional; LMS-smoothed
+  species: human
+  source_ref: fredriks2005
+  uncertainty: exact
+- parameter: correlation between SH/H SDS and height SDS
+  value: negative
+  unit: not_applicable
+  conditions: all three age groups analysed
+  species: human
+  source_ref: fredriks2005
+  uncertainty: direction reported; coefficient not given in the abstract
+- parameter: SH/H upper cut-off recommended for children with height SDS below -2
+  value: '+2.5'
+  unit: SD
+  conditions: to keep the false-positive rate acceptable
+  species: human
+  source_ref: fredriks2005
+  uncertainty: replaces the conventional +2 SD
+- parameter: SH/H lower cut-off recommended for exceptionally tall children
+  value: '-2.2'
+  unit: SDS
+  conditions: height-corrected cut-off
+  species: human
+  source_ref: fredriks2005
+  uncertainty: as recommended
+- parameter: sensitivity of the height-corrected SH/H cut-off for hypochondroplasia
+  value: '80'
+  unit: percent
+  conditions: genetically confirmed hypochondroplasia
+  species: human
+  source_ref: fredriks2005
+  uncertainty: n not given in the abstract
+- parameter: sensitivity of the height-corrected SH/H cut-off for Marfan syndrome
+  value: '30'
+  unit: percent
+  conditions: clinically diagnosed Marfan syndrome
+  species: human
+  source_ref: fredriks2005
+  uncertainty: n not given in the abstract
+localization:
+- 'human whole organism: sitting height and standing height by stadiometer and sitting-height table'
+human_evidence: direct
+human_evidence_note: Nationwide cross-sectional anthropometry in 14500 children plus two disease comparison
+  groups.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human anthropometric ratio; quadrupeds have no comparable trunk/limb partition
+  of stature.
+confidence: A
+claim_grades:
+- claim: Age- and sex-specific SH/H reference centiles exist and SH/H SDS depends on height SDS
+  grade: A
+  basis: Direct measurement in 14500 children with the dependency quantified across three age strata (fredriks2005).
+- claim: The childhood growth component acts preferentially on the legs relative to the trunk
+  grade: D
+  basis: A model-derived inference from the ICP decomposition (karlberg1989), never tested against site-specific
+    plate measurements.
+key_refs:
+- ref_id: fredriks2005
+  pmid: '15863466'
+  first_author: Fredriks AM
+  year: 2005
+  type: primary
+  one_line_finding: Dutch nationwide SH, leg length and SH/H references from 14500 children, with height-corrected
+    cut-offs and disease sensitivities.
+- ref_id: karlberg1989
+  pmid: '2801108'
+  first_author: Karlberg J
+  year: 1989
+  type: primary
+  one_line_finding: Attributes the childhood change in body proportions to a stronger childhood-component
+    effect on legs than on trunk.
+open_questions:
+- g_l9organism_008
 last_verified: '2026-08-05'

@@ -1,7 +1,83 @@
 id: bisphosphonate_growth_plate
 name: Bisphosphonates and the growth plate
+aliases: [pamidronate, zoledronate, paediatric bisphosphonate therapy]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Bisphosphonates bind hydroxyapatite and inhibit osteoclast-mediated resorption, and in
+  children they are used chiefly in osteogenesis imperfecta. Their relevance to this layer
+  is that they act precisely at the chondro-osseous junction, where the mineralised
+  cartilage template of the hypertrophic zone is normally resorbed and replaced by bone.
+  Blocking that resorption leaves radiographically visible metaphyseal bands - one per
+  cycle - which are the only routinely produced human image of drug action timed to the
+  growth plate. Whether this changes linear growth is not established: growth in
+  osteogenesis imperfecta is impaired by the underlying collagen defect, and published
+  growth trajectories in treated reference-centre cohorts do not isolate a bisphosphonate
+  effect on height from disease severity. Bone microstructure and strength changes over
+  one year in treated children with OI have been reported as comparable to healthy
+  age- and sex-matched controls. The mechanistically interesting recent observation is
+  combinatorial: in growing osteogenesis imperfecta mice, a CNP analogue plus a
+  bisphosphonate enhanced bone growth beyond either alone, implying that resorption
+  blockade and chondrocyte stimulation act on separable steps rather than competing.
+  That experiment has not been done in humans.
+quantitative:
+  - parameter: human randomised trials isolating a bisphosphonate effect on linear growth
+    value: '0'
+    unit: trials identified
+    conditions: Europe PMC search 2026-08-05; retrieved studies report bone density, microstructure, fracture and growth trajectories confounded by disease severity
+    species: human
+    source_ref: pereira2025_2
+    uncertainty: absence established by search - see gap g_l12b_020
+  - parameter: effect of combined CNP analogue plus bisphosphonate on bone growth
+    value: enhanced vs either alone
+    unit: not applicable
+    conditions: growing osteogenesis imperfecta mice, pilot study; effect sizes reported in the source
+    species: mouse
+    source_ref: mulcrone2026
+    uncertainty: pilot study, no human equivalent
+localization:
+  - "human chondro-osseous junction: bisphosphonates concentrate in newly mineralised matrix, producing metaphyseal sclerotic bands timed to each dosing cycle"
+human_evidence: indirect
+human_evidence_note: >-
+  Children receive bisphosphonates routinely and their skeletal effects are well
+  documented, but no human study isolates the effect on linear growth.
+species_basis: [human, mouse]
+translation_risk: moderate
+translation_risk_reason: >-
+  The human evidence is about bone quality, not longitudinal growth; the growth-relevant
+  combinatorial result is murine, and mice do not undergo epiphyseal fusion, so a claim
+  about additive growth effects cannot be carried across without testing.
+confidence: C
+claim_grades:
+  - claim: Bisphosphonates deposit at the mineralising front of the hypertrophic zone and produce metaphyseal bands in growing children.
+    grade: A
+    basis: Universally observed radiographic finding in treated children; a direct human image of drug localisation timed to the plate.
+  - claim: Bisphosphonates alter linear growth in children with osteogenesis imperfecta.
+    grade: D
+    basis: No study isolates the effect from disease severity; growth trajectory cohorts are observational and unstratified by treatment.
+  - claim: Resorption blockade and CNP-mediated chondrocyte stimulation act additively on bone growth.
+    grade: D
+    basis: Single pilot study in growing osteogenesis imperfecta mice; no human data.
+key_refs:
+  - ref_id: mulcrone2026
+    pmid: '41378917'
+    first_author: Mulcrone JE
+    year: 2026
+    type: primary
+    one_line_finding: Combined CNP analogue and bisphosphonate enhanced bone growth in growing osteogenesis imperfecta mice beyond either alone.
+  - ref_id: pereira2025_2
+    pmid: '40596949'
+    first_author: Pereira LC
+    year: 2025
+    type: primary
+    one_line_finding: Growth trajectories of children and adolescents with osteogenesis imperfecta at a reference centre, not stratified to isolate a bisphosphonate growth effect.
+  - ref_id: hosseinitabata2026
+    pmid: '41045134'
+    first_author: Hosseini-Tabatabaei S
+    year: 2026
+    type: primary
+    one_line_finding: One-year bone microstructure and strength changes in children with osteogenesis imperfecta comparable to matched healthy controls.
+open_questions: [g_l12b_020]
+contradicts: []
 last_verified: '2026-08-05'

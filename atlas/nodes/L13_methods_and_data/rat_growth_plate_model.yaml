@@ -1,7 +1,89 @@
 id: rat_growth_plate_model
 name: Rat growth plate model
-type: method
-layer: L13
-stub: true
+aliases:
+- rattus growth plate transferability
+type: process
+summary: |
+  The rat is the model most often described loosely as "closing", and it does not. In Wistar
+  rats aged 62-80 weeks the femoral and tibial growth plates remain histologically present
+  after longitudinal growth has ceased, with four features absent from young plates: a bone
+  band sealing the metaphyseal edge, extensive acellular resorption-resistant areas,
+  remodelling and bone formation within still-cellular regions, and direct bone formation by
+  former growth plate chondrocytes (roach2003). Proliferation continues sporadically; what
+  stops is synchrony and net expansion. This is a mechanistically distinct endpoint from human
+  fusion, in which the plate is destroyed. The rat's compensating strengths are real: it
+  supplies the only zone-resolved mammalian growth plate transcriptome with adequate
+  replication (35 arrays, gse16981), and that rat dataset - not the two-donor human one - is
+  what has actually been used to interpret height GWAS loci (lui2012), which makes the rat-to-
+  human step a load-bearing and largely unexamined inference. Fetal rat metatarsal culture
+  also provides the workhorse pharmacological assay for growth (chagin2009). Translation risk
+  score used in this layer runs 1 (lowest) to 5 (highest) and is the mean of four sub-scores,
+  each 1-5: (A) fusion competence - can the species express epiphyseal fusion at all; (B)
+  plate architecture - columnar organisation and secondary ossification centre; (C) scale -
+  plate thickness and hypertrophic cell volume relative to human; (D) tempo - proliferative
+  cycle time and growth duration relative to human. Rat scores A=5, B=2, C=3, D=4, mean 3.5,
+  giving translation_risk high, marginally lower than mouse on scale and tempo but identical
+  on the decisive fusion axis.
+quantitative:
+- parameter: rat translation risk score (this layer, 1-5)
+  value: '3.5'
+  unit: score
+  conditions: mean of fusion competence 5, architecture 2, scale 3, tempo 4
+  species: rat
+  source_ref: roach2003
+  uncertainty: scoring scheme defined in mouse_model_translation_risk
+- parameter: age at which rat plates persist with growth ceased
+  value: 62-80
+  unit: weeks
+  conditions: Wistar rats, femur and tibia, compared with 2-16 week animals
+  species: rat
+  source_ref: roach2003
+  uncertainty: as reported
+- parameter: rat zonal microarray replication vs human
+  value: 35 vs 10
+  unit: arrays
+  conditions: gse16981 rat zones against gse9160 human zones
+  species: multiple
+  source_ref: gse16981
+  uncertainty: GEO sample counts
+localization:
+- 'rat PC: bone band seals the metaphyseal edge at cessation'
 human_evidence: absent
+human_evidence_note: No human data in this node beyond the comparator; the rat terminal morphology
+  has never been sought in human tissue (g_l7fuse_011).
+species_basis:
+- rat
+translation_risk: high
+translation_risk_reason: Rats cease growth without fusing, so rat cessation mechanisms are surrogate
+  mechanisms; the rat zonal transcriptome is nonetheless routinely used as a proxy for the human
+  one.
+confidence: A
+key_refs:
+- ref_id: roach2003
+  first_author: Roach HI
+  year: 2003
+  type: primary
+  one_line_finding: Rat growth plates persist at 62-80 weeks with a sealed metaphyseal edge and acellular
+    regions after growth ceases.
+- ref_id: gse16981
+  first_author: Lui JC
+  year: 2009
+  type: dataset
+  one_line_finding: 35-array zone-resolved rat growth plate transcriptome.
+- ref_id: lui2012
+  first_author: Lui JC
+  year: 2012
+  type: primary
+  one_line_finding: Height GWAS loci interpreted through rodent growth plate expression, implicating
+    78 genes.
+- ref_id: chagin2009
+  first_author: Chagin AS
+  year: 2009
+  type: primary
+  one_line_finding: Cultured fetal rat metatarsals as the standard pharmacological growth assay.
+open_questions:
+- g_l7fuse_011
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

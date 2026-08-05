@@ -1,7 +1,79 @@
 id: maternal_nutrition_offspring_height
 name: Maternal nutrition and offspring height
 type: process
+summary: 'Maternal nutrition sets offspring size, and the intergenerational transmission of stature is
+  one of the strongest correlations in human growth epidemiology. Across five long-running birth cohorts,
+  maternal height was one of the indices most strongly related to offspring birthweight and adult outcomes,
+  and undernutrition in mothers and children was strongly associated with shorter adult height in the
+  next generation (victora2008). In the Indonesian Action Against Stunting Hub birth cohort, maternal
+  height, birth weight and infant IGF-1 were the significant determinants of length-for-age Z at 12 months
+  (htet2026). The interventional evidence is the INCAP village-randomised trial in Guatemala (1969-1977),
+  in which a high-quality protein-energy-micronutrient supplement (Atole) was given to pregnant and lactating
+  women and to children under 7 in two villages while two control villages received a low-energy drink
+  (Fresco): Atole improved nutrient intakes and reduced stunting, but only in children under 3 years of
+  age, and the durable adult effects were on schooling, reading, intelligence and wages rather than on
+  a large stature gain (martorell2017). The mechanistic entry point at the fetal stage is the IGF-2/IGF-1
+  and placental IGFBP-protease system carried in L4, none of which was measured in these studies.'
+quantitative:
+- parameter: age window in which Atole supplementation reduced stunting
+  value: <3
+  unit: years
+  conditions: INCAP village-randomised trial, Guatemala 1969-1977
+  species: human
+  source_ref: martorell2017
+  uncertainty: reported in a review of the trial rather than as a within-trial age interaction test
+- parameter: increase in adult male wages after Atole through age 2
+  value: '46'
+  unit: '%'
+  conditions: INCAP cohort followed to 2002-2004
+  species: human
+  source_ref: martorell2017
+  uncertainty: as reported in the review
+localization:
+- 'human SYS: maternal nutrition -> placental transfer -> fetal IGF axis'
+human_evidence: direct
+human_evidence_note: Village-randomised human supplementation trial with 30-year follow-up plus pooled
+  birth cohort analyses with measured maternal height.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human trial and cohort evidence.
+confidence: B
+claim_grades:
+- claim: Maternal height and maternal nutrition predict offspring linear growth.
+  grade: A
+  basis: Five-cohort pooled analysis (victora2008) and a longitudinal cohort with structural equation
+    modelling (htet2026).
+- claim: Maternal and early-child protein-energy supplementation reduces stunting only before age 3.
+  grade: B
+  basis: Village-randomised trial reported through a narrative review of its own results (martorell2017).
+- claim: Maternal nutrition acts on the fetal growth plate through the IGF-2/PAPP-A2 system.
+  grade: E
+  basis: Neither IGF-2 nor PAPP-A2 was measured in any of these studies; the route is imported from L4.
+key_refs:
+- ref_id: victora2008
+  pmid: '18206223'
+  first_author: Victora CG
+  year: 2008
+  type: systematic_review
+  one_line_finding: Maternal height and undernutrition indices predicted offspring birthweight and adult
+    height across five LMIC birth cohorts.
+- ref_id: martorell2017
+  pmid: '28117514'
+  first_author: Martorell R.
+  year: 2017
+  type: review
+  one_line_finding: The INCAP Atole trial reduced stunting only in children under 3 y and raised adult
+    male wages 46% for those supplemented through age 2.
+- ref_id: htet2026
+  pmid: '42132033'
+  first_author: Htet MK
+  year: 2026
+  type: primary
+  one_line_finding: Maternal height, birth weight and infant IGF-1 were the significant determinants of
+    length-for-age Z at 12 months in an Indonesian birth cohort.
+open_questions:
+- g_l10env_008
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

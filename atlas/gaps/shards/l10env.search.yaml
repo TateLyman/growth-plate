@@ -1,0 +1,101 @@
+searches:
+  - gap_id: g_l10env_001
+    database: Europe PMC
+    exact_query_string: >-
+      (probiotic OR "microbiota-directed" OR synbiotic OR "fecal microbiota") AND ("IGF-1" OR
+      "IGF-I" OR "insulin-like growth factor") AND (randomized OR randomised) AND (children OR
+      infants) AND (height OR "linear growth" OR stunting)
+    filters: 'format=json, pageSize=12, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 397
+    screened_count: 12
+    reason_none_qualified: >-
+      No hit reports a randomised human microbiota manipulation with circulating IGF-1 and a linear
+      growth endpoint measured together. The top-ranked hits are narrative and systematic reviews of
+      stunting and the gut-bone axis (four of twelve), a gnotobiotic mouse study of intergenerational
+      undernutrition, a systematic review of early-life protein supplementation, a review of
+      microbiota in post-malnutrition neuropsychiatric outcomes, and a trial protocol for a synbiotic
+      in Senegalese infants that has not reported results. The nearest completed human trial in the
+      set (an open-label 4-arm phase II pro/synbiotic trial in Kenyan infants) reports systemic
+      inflammation and gut health as endpoints, not IGF-1 with linear growth. The gap is therefore a
+      total absence of the human causal test, not an imprecise estimate.
+
+  - gap_id: g_l10env_003
+    database: Europe PMC
+    exact_query_string: >-
+      ("socioeconomic position" OR "socioeconomic status" OR "social class") AND ("adult height" OR
+      "final height" OR stature) AND ("dietary intake" OR "energy intake" OR "protein intake") AND
+      (adjust* OR mediation OR attenuat*)
+    filters: 'format=json, pageSize=12, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 889
+    screened_count: 12
+    reason_none_qualified: >-
+      No hit reports the socioeconomic-height association estimated both with and without adjustment
+      for measured dietary intake in the same participants. The screened set contains dietary
+      assessment methodology papers, single-nutrient growth associations (protein and fat intake and
+      growth in Iranian schoolgirls), cross-sectional socioeconomic patterning of stunting and
+      overweight without dietary adjustment, adult metabolic-disease nutrition studies unrelated to
+      stature, and disease-specific growth series. A prior broader query ('("socioeconomic" OR
+      "social class" OR income) AND (height OR stature) AND (adjust* AND (nutrition OR diet OR
+      "energy intake")) AND (children OR adolescents) AND (cohort)', 21840 hits, top 10 screened)
+      returned the same picture with no qualifying decomposition. The quantity sought - the fraction
+      of the socioeconomic height gradient attenuated by dietary adjustment - has not been reported.
+
+  - gap_id: g_l10env_009
+    database: Europe PMC
+    exact_query_string: >-
+      (SOCS2 OR SOCS3) AND ("growth plate" OR "epiphyseal cartilage") AND (human) AND
+      (immunohistochemistry OR expression OR biopsy)
+    filters: 'format=json, pageSize=10, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 170
+    screened_count: 10
+    reason_none_qualified: >-
+      No hit reports SOCS2, SOCS3 or phospho-STAT5B measured in human growth plate cartilage. The
+      screened set is dominated by reviews (JAK-STAT in dento-maxillofacial bone, GH/IGF-1 and
+      cytokines in children, IL-6 in paediatric bone growth, preclinical rodent models for human
+      bone disease) plus rodent primary work (neutrophil elastase in the rat epiphyseal plate in
+      IBD-associated growth attenuation; a mouse colitis osteosarcopenia model; GH regulation of
+      the growth plate stem cell population in mouse). The word "human" in these records refers to
+      the disease being modelled, not to the tissue examined.
+
+  - gap_id: g_l10env_010
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis OR "epiphyseal cartilage") AND (altitude OR "chronic hypoxia") AND
+      (HIF1A OR "HIF-1alpha") AND human
+    filters: 'format=json, pageSize=12, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 31
+    screened_count: 12
+    reason_none_qualified: >-
+      No hit measures oxygen tension in a growth plate, at any altitude, in any species, and none
+      reports HIF-1alpha in physeal cartilage of an altitude-resident animal or human. The 31 hits
+      comprise rodent in vitro hypoxia studies (hypoxia maintaining the chondrogenic phenotype in
+      rat growth plate chondrocytes via HIF-1alpha/YAP), reviews of HIF and hypoxia signalling in
+      the skeleton, a rat lung immune transcriptome study of developmental hypoxia, a resveratrol
+      high-altitude osteoporosis model, intervertebral disc degeneration reviews, and unrelated
+      oncology and chemistry records. This confirms the L3 finding that human growth plate pO2 has
+      never been measured, and extends it: it has not been measured under altitude exposure in any
+      species either.
+
+  - gap_id: g_l10env_011
+    database: Europe PMC
+    exact_query_string: >-
+      (bisphenol OR phthalate OR "endocrine disrupting") AND ("growth plate" OR chondrocyte) AND
+      ("estrogen receptor" OR ESR1 OR aromatase)
+    filters: 'format=json, pageSize=12, resultType=lite, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 150
+    screened_count: 12
+    reason_none_qualified: >-
+      No hit applies a bisphenol or phthalate to mammalian growth plate chondrocytes with an
+      ERalpha or aromatase readout. The screened set is: network-toxicology and molecular-docking
+      papers on BPA or DEHP in osteoarthritis and bone disease (three of twelve, all in silico with
+      no growth plate experiment), zebrafish craniofacial cartilage studies (benzophenone-2 acting
+      through esr2a on endothelin signalling; generational craniofacial chondrogenesis effects of
+      estrogenic EDCs), a mouse prenatal EDC-mixture study of mandibular development
+      (intramembranous and condylar, not endochondral long bone), a microplastic-and-bone-health
+      review, an EDC-vitamin D biomarker association study, and general estrogen-receptor reviews.
+      The endochondral growth plate is absent from the entire EDC experimental literature returned.

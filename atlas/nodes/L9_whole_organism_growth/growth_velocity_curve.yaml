@@ -1,7 +1,250 @@
 id: growth_velocity_curve
-name: Growth velocity curve
-type: method
+name: Human height velocity curve
+aliases:
+- height velocity
+- growth velocity
+- stature velocity curve
+type: phenotype
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The human height velocity curve is triphasic: a steep monotonic decline through infancy, a slowly
+  decelerating childhood plateau interrupted in some children by a small mid-growth spurt at 6-8 years,
+  and an adolescent spurt that reverses the deceleration for the only time postnatally before velocity
+  falls to zero at fusion. The pubertal peak is reached about two years earlier in girls than boys and
+  is smaller. Three independent longitudinal cohorts modelled with the same shape-invariant method give
+  peak height velocity 9.5-9.6 cm/yr in boys and 8.3-8.4 cm/yr in girls (chun2024 Korea, galvo2025 Brazil).
+  Between-individual variance is dominated by timing rather than amplitude: in ALSPAC the SD of age at
+  peak height velocity is 0.8 years in females around a mean of 11.8 years, with a male mean of 13.5 years
+  (elhakeem2024, n=8518). Timing and amplitude are not independent - earlier pubertal onset raises peak
+  velocity by 1.82 cm/yr per year in boys and 1.39 cm/yr per year in girls (chun2024), and age at onset
+  correlates -0.48 with peak velocity in a separate biannually sampled male cohort (srensen2026). Mechanistically
+  the constraint is severe: one physis must change its output roughly two-fold between the childhood trough
+  and the pubertal peak and then to zero, with no change in the cell types present. Standing height is
+  also a serial sum over the two lower-limb plates, the vertebral plates and the skull base, each running
+  at its own velocity (site_specific_growth_rate, L1), so no plate-level model reaches cm/yr without an
+  explicit summation step.'
+quantitative:
+- parameter: peak height velocity, boys
+  value: '9.61'
+  unit: cm/yr
+  conditions: SITAR fit, 123 Korean boys, 1519 heights, ages 7-18
+  species: human
+  source_ref: chun2024
+  uncertainty: reported 9.61 +/- 1.26; paper labels the dispersion SE but the magnitude is consistent
+    with an individual-level SD
+- parameter: age at peak height velocity, boys
+  value: '12.46'
+  unit: years
+  conditions: same Korean SITAR cohort
+  species: human
+  source_ref: chun2024
+  uncertainty: reported 12.46 +/- 0.69 (labelled SE)
+- parameter: peak height velocity, girls
+  value: '8.32'
+  unit: cm/yr
+  conditions: SITAR fit, 147 Korean girls, 1820 heights
+  species: human
+  source_ref: chun2024
+  uncertainty: reported 8.32 +/- 1.09 (labelled SE)
+- parameter: age at peak height velocity, girls
+  value: '10.99'
+  unit: years
+  conditions: same Korean SITAR cohort
+  species: human
+  source_ref: chun2024
+  uncertainty: reported 10.99 +/- 0.74 (labelled SE)
+- parameter: peak height velocity, boys
+  value: '9.52'
+  unit: cm/yr
+  conditions: Bayesian SITAR, 201 Brazilian boys, annual measurement 1997-2010
+  species: human
+  source_ref: galvo2025
+  uncertainty: mean; SD not given in abstract
+- parameter: age at peak height velocity, boys
+  value: '13.55'
+  unit: years
+  conditions: same Brazilian cohort
+  species: human
+  source_ref: galvo2025
+  uncertainty: mean
+- parameter: peak height velocity, girls
+  value: '8.38'
+  unit: cm/yr
+  conditions: Bayesian SITAR, 197 Brazilian girls
+  species: human
+  source_ref: galvo2025
+  uncertainty: mean
+- parameter: age at peak height velocity, girls
+  value: '11.30'
+  unit: years
+  conditions: same Brazilian cohort
+  species: human
+  source_ref: galvo2025
+  uncertainty: mean
+- parameter: velocity at pubertal take-off, boys
+  value: '5.43'
+  unit: cm/yr
+  conditions: Brazilian SITAR; take-off age 11.19 y
+  species: human
+  source_ref: galvo2025
+  uncertainty: mean
+- parameter: velocity at pubertal take-off, girls
+  value: '5.85'
+  unit: cm/yr
+  conditions: Brazilian SITAR; take-off age 8.41 y
+  species: human
+  source_ref: galvo2025
+  uncertainty: mean
+- parameter: age at peak height velocity, females
+  value: '11.8'
+  unit: years
+  conditions: ALSPAC, mixed-effects model, n=4267 females
+  species: human
+  source_ref: elhakeem2024
+  uncertainty: SD 0.8 years
+- parameter: age at peak height velocity, males
+  value: '13.5'
+  unit: years
+  conditions: ALSPAC, n=4251 males
+  species: human
+  source_ref: elhakeem2024
+  uncertainty: SD not separately reported in the text; SDs across the nine male indicators ranged 0.7-1.2
+    years
+- parameter: correlation of age at menarche with age at peak height velocity
+  value: '0.76'
+  unit: Pearson r
+  conditions: ALSPAC females, n=3037
+  species: human
+  source_ref: elhakeem2024
+  uncertainty: strongest of all female pairwise correlations
+- parameter: correlation of age at peak height velocity with age at peak bone mineral content velocity,
+    males
+  value: '0.77'
+  unit: Pearson r
+  conditions: ALSPAC males
+  species: human
+  source_ref: elhakeem2024
+  uncertainty: strongest male pairwise correlation
+- parameter: difference in peri-pubertal growth velocity, early vs late maturing boys
+  value: '0.48'
+  unit: cm/yr
+  conditions: 105 boys, 947 biannual examinations; early = lowest tertile of age at testis volume >3 mL
+  species: human
+  source_ref: srensen2026
+  uncertainty: 95% CI 0.14-0.82, p<0.006
+- parameter: correlation of age at pubertal onset with peak height velocity, boys
+  value: '-0.48'
+  unit: Spearman rho
+  conditions: same 105-boy longitudinal cohort
+  species: human
+  source_ref: srensen2026
+  uncertainty: p<0.001
+- parameter: increase in peak height velocity per year earlier pubertal onset, boys
+  value: '1.82'
+  unit: cm/yr per year
+  conditions: Korean SITAR cohort
+  species: human
+  source_ref: chun2024
+  uncertainty: p<0.0001
+- parameter: increase in peak height velocity per year earlier pubertal onset, girls
+  value: '1.39'
+  unit: cm/yr per year
+  conditions: Korean SITAR cohort
+  species: human
+  source_ref: chun2024
+  uncertainty: p<0.0001
+- parameter: shortening of growth-spurt duration with earlier onset, boys
+  value: '0.63'
+  unit: years
+  conditions: Korean SITAR cohort
+  species: human
+  source_ref: chun2024
+  uncertainty: p<0.0001
+- parameter: shortening of growth-spurt duration with earlier onset, girls
+  value: '0.58'
+  unit: years
+  conditions: Korean SITAR cohort
+  species: human
+  source_ref: chun2024
+  uncertainty: p<0.0001
+localization:
+- 'human whole organism: standing height by stadiometer; velocity derived from serial measurement'
+human_evidence: direct
+human_evidence_note: Every number is measured in humans by serial stadiometry in longitudinal cohorts;
+  there is no animal component.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: The phenotype is defined only in humans and all data are human.
+confidence: A
+claim_grades:
+- claim: Peak height velocity is 9.5-9.6 cm/yr in boys and 8.3-8.4 cm/yr in girls
+  grade: A
+  basis: Three independent longitudinal cohorts on two continents fitted with the same shape-invariant
+    model agree to within 0.1 cm/yr.
+- claim: Between-individual variance in the pubertal curve is dominated by timing rather than amplitude
+  grade: B
+  basis: ALSPAC SD of age at PHV 0.8 y in females plus the SITAR variance decomposition in Christ's Hospital
+    (tempo SD 0.97 y, velocity SD 15%); never tested as a formal variance partition within one cohort.
+- claim: Earlier pubertal onset produces a higher and shorter spurt
+  grade: A
+  basis: Consistent in sign and magnitude across a Korean SITAR cohort, a Brazilian SITAR cohort and a
+    Danish biannually sampled male cohort.
+- claim: A mid-growth spurt occurs at 6-8 years in a substantial minority of children
+  grade: D
+  basis: Detected by kernel regression and shape-invariant modelling of Fels and Zurich serial data (guo1992,
+    sttzle1980) but invisible to Preece-Baines; prevalence is model-dependent.
+key_refs:
+- ref_id: chun2024
+  pmid: '39376676'
+  first_author: Chun D
+  year: 2024
+  type: primary
+  one_line_finding: SITAR fit to 3339 Korean heights gives PHV 9.61 cm/yr at 12.46 y in boys and 8.32
+    cm/yr at 10.99 y in girls.
+- ref_id: galvo2025
+  pmid: '40878738'
+  first_author: Galvao LG
+  year: 2025
+  type: primary
+  one_line_finding: Bayesian SITAR in 398 Brazilian children gives PHV 9.52 cm/yr at 13.55 y in boys and
+    8.38 cm/yr at 11.30 y in girls.
+- ref_id: elhakeem2024
+  pmid: '39112679'
+  first_author: Elhakeem A
+  year: 2024
+  type: primary
+  one_line_finding: ALSPAC age at PHV is 11.8 y in females (SD 0.8) and 13.5 y in males, correlating r=0.76
+    with menarche.
+- ref_id: srensen2026
+  pmid: '41649011'
+  first_author: Sorensen K
+  year: 2026
+  type: primary
+  one_line_finding: Age at pubertal onset correlates -0.48 with PHV across 105 longitudinally studied
+    boys.
+- ref_id: tanner1966a
+  pmid: '5927918'
+  first_author: Tanner JM
+  year: 1966
+  type: primary
+  one_line_finding: Original British longitudinal height-velocity centiles from birth to maturity.
+- ref_id: berkey1993
+  pmid: '8456221'
+  first_author: Berkey CS
+  year: 1993
+  type: primary
+  one_line_finding: US height velocity centiles ages 7-18 from 6532 children, presented separately for
+    early, average and late maturers.
+- ref_id: guo1992
+  pmid: '28524403'
+  first_author: Guo S
+  year: 1992
+  type: primary
+  one_line_finding: Preece-Baines cannot describe the midgrowth spurt and shifts pubertal-spurt onset
+    earlier than kernel regression on the same Fels data.
+open_questions:
+- g_l9organism_001
+- g_l9organism_002
+pending_source: tanner1966a
 last_verified: '2026-08-05'

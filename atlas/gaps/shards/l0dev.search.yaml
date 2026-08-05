@@ -1,0 +1,94 @@
+searches:
+
+  - gap_id: g_l0dev_002
+    database: Europe PMC
+    exact_query_string: >-
+      ("epiphyseal fusion" OR "physeal closure" OR "growth plate closure") AND (developmental OR
+      embryonic OR "developmental origin" OR ontogen*) AND (human AND (mouse OR rodent)) AND
+      (difference OR divergence OR why)
+    filters: 'resultType=lite, pageSize=20 of full hit list, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 194
+    screened_count: 20
+    reason_none_qualified: >-
+      No record asks whether the human/rodent fusion divergence has a developmental antecedent.
+      Screened records are: a caprine autopod synostosis description (40359336), a comparative
+      review of bone length and skeletal proportion regulation (33369789) that discusses postnatal
+      mechanisms only, murine disuse and microgravity bone studies, signalling reviews, and
+      clinical/veterinary items. The closest relevant primary work in the atlas (xie2020) compares
+      SOC evolution across amniotes but does not address fusion versus non-fusion, and both fusing
+      (rabbit) and non-fusing (mouse, rat) species form SOCs, so it cannot answer the question.
+
+  - gap_id: g_l0dev_004
+    database: Europe PMC
+    exact_query_string: >-
+      (Hox OR Hoxa11 OR Hoxd11 OR Hoxa13 OR Hoxd13) AND ("growth plate") AND (chondrocyte) AND
+      ("resting zone" OR "proliferative zone" OR "hypertrophic zone" OR zonal)
+    filters: 'resultType=lite, pageSize=20 of full hit list, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 90
+    screened_count: 20
+    reason_none_qualified: >-
+      No record reports HOX localization resolved by growth plate zone in any species, and none
+      reports HOX in human growth plate tissue. The two nearest are rux2021 (34010606), which
+      localizes Hoxa11 in zeugopod ARTICULAR cartilage and explicitly does not examine the growth
+      plate, and lui2018 (30036371), which detects Hoxd13 by bulk laser-capture RNA-seq of
+      separated proliferative and hypertrophic zones but performs no in situ localization and uses
+      only rodent tissue. reno2025 (40088130) localizes Pthlh, not Hox, in the reserve zone. The
+      remainder are reviews of skeletal stem cells, achondroplasia mechanism papers, and a murine
+      single-cell limb atlas (40596066) that is not zone-resolved and not human.
+
+  - gap_id: g_l0dev_003
+    database: Europe PMC
+    exact_query_string: >-
+      ("mesenchymal condensation" OR "cartilage anlage") AND ("cell number" OR "cell count" OR
+      "number of cells" OR volume) AND (measured OR quantified OR stereolog*) AND (limb OR digit
+      OR femur)
+    filters: 'resultType=lite, pageSize=20 of full hit list, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 363
+    screened_count: 20
+    reason_none_qualified: >-
+      No record reports condensation cell number, volume or density measured and compared across
+      skeletal elements that reach different final lengths. Screened records are mechanistic gene
+      studies using condensation as a stage label (wu2025 40581360, 41253754, 41342396), signalling
+      and differentiation papers, tissue engineering work, and one human fetal trabecular
+      architecture study (39217219) that measures trabeculae, not condensations. The claim that
+      condensations start at similar size, as repeated in the introduction of lui2018, traces to
+      two Hall and Miyake review articles rather than to a primary measurement.
+
+  - gap_id: g_l0dev_010
+    database: Europe PMC
+    exact_query_string: >-
+      ("vertebral growth plate" OR "vertebral endplate") AND ("long bone growth plate" OR
+      appendicular) AND (compar*) AND (chondrocyte OR proliferation OR "growth rate")
+    filters: 'resultType=lite, pageSize=20 of full hit list, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 53
+    screened_count: 20
+    reason_none_qualified: >-
+      No record attributes a growth plate property to germ-layer origin or compares axial and
+      appendicular plates with respect to their developmental derivation. The single record that
+      compares the two plate types at all is 28569158 (Leptin differentially regulates
+      chondrogenesis in mouse vertebral and tibial growth plates), which establishes a differential
+      hormonal response without addressing origin. The remainder are spinal imaging reviews,
+      intervertebral disc biology, veterinary items, and murine signalling studies that use one
+      plate type only.
+
+  - gap_id: g_l0dev_005
+    database: Europe PMC
+    exact_query_string: >-
+      ("secondary ossification center" OR "secondary ossification centre") AND (mouse OR mice) AND
+      ("growth plate" OR epiphysis)
+    filters: 'resultType=lite, pageSize=15, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 633
+    screened_count: 15
+    reason_none_qualified: >-
+      Run to find any study relating SOC status to resting zone properties in a bone-specific way.
+      The highest-cited records are vascular coupling papers (24646994, 24647000), MMP and
+      angiogenesis studies, and mizuhashi2018 (30401834) itself, which reports the temporal
+      coincidence but performs no SOC manipulation. No record compares two bones of differing SOC
+      status within one animal or one individual, in any species. Note that SOC-delaying tools do
+      exist and are validated (axitinib at P18 and Prx-Cre:GnasR201H, both in xie2020), so the
+      absence here is of a stemness readout rather than of a method.

@@ -1,9 +1,81 @@
 id: dohad_hypothesis
 name: Developmental origins of health and disease
 type: hypothesis
-layer: L10
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - DOHaD
+- fetal programming
+- Barker hypothesis
+summary: 'DOHaD holds that the early-life environment permanently sets adult physiology, and for stature
+  the claim is that size attained by about 2 years of age largely fixes adult height. The pooled evidence
+  is strong for the association: across five long-running birth cohorts in Brazil, Guatemala, India, the
+  Philippines and South Africa, maternal height, birthweight, intrauterine growth restriction and weight,
+  height and BMI at 2 years were all related to adult height, schooling, income and offspring birthweight,
+  with undernutrition strongly associated with shorter adult height and reduced economic productivity
+  (victora2008). The mechanistic claim - permanent programming rather than continuous exposure - is much
+  less secure, because in most settings the environment at age 2 and the environment at age 12 are the
+  same environment. The Dutch Hunger Winter provides the design that separates them, and there the finding
+  is a gene-environment interaction on fetal growth: a birthweight polygenic index explained 14% of birthweight
+  variance in unexposed controls (r=0.38, p<0.001) but had no detectable effect in famine-exposed individuals,
+  particularly those exposed in mid-to-late gestation (r=0.10) (taeubert2026). A severe environmental
+  insult can therefore erase the expression of genetic influence on growth altogether. No DOHaD study
+  has measured a growth plate, and the proposed epigenetic mediators have never been assayed in physeal
+  cartilage; L8 carries dna_methylation_growth_plate as the corresponding placeholder.'
+quantitative:
+- parameter: variance in birthweight explained by a birthweight polygenic index, unexposed controls
+  value: '14'
+  unit: '%'
+  conditions: Dutch Hunger Winter Families Study, n=161 unexposed controls with obstetric records
+  species: human
+  source_ref: taeubert2026
+  uncertainty: r=0.38, p<0.001
+- parameter: correlation of the birthweight polygenic index with birthweight in famine-exposed individuals
+  value: '0.10'
+  unit: Pearson r
+  conditions: exposed in mid-to-late gestation, n=283
+  species: human
+  source_ref: taeubert2026
+  uncertainty: not statistically distinguishable from zero as reported
+localization:
+- 'human SYS: whole-organism developmental programming'
+human_evidence: direct
+human_evidence_note: Five prospective LMIC birth cohorts with adult follow-up, plus a genotyped famine
+  natural experiment with obstetric records.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: The evidence cited here is entirely human cohort and natural-experiment data.
+confidence: B
+claim_grades:
+- claim: Size at 2 years predicts adult height, schooling and income across diverse populations.
+  grade: A
+  basis: Pooled analysis of five prospective birth cohorts with adult follow-up plus systematic reviews
+    (victora2008).
+- claim: Severe prenatal undernutrition suppresses the expression of genetic influence on fetal growth.
+  grade: B
+  basis: Genotyped famine cohort with obstetric records and prespecified gene-environment interaction
+    test (taeubert2026); single cohort, n=589 total.
+- claim: Early-life exposure programmes the growth plate epigenetically.
+  grade: E
+  basis: No DOHaD study has measured DNA methylation, chromatin or transcription in growth plate cartilage
+    in any species.
+key_refs:
+- ref_id: victora2008
+  pmid: '18206223'
+  first_author: Victora CG
+  year: 2008
+  type: systematic_review
+  one_line_finding: In five LMIC birth cohorts, maternal height, birthweight, IUGR and size at 2 years
+    predicted adult height, schooling, income and offspring birthweight.
+- ref_id: taeubert2026
+  pmid: '41820558'
+  first_author: Taeubert MJ
+  year: 2026
+  type: primary
+  one_line_finding: A birthweight polygenic index explained 14% of birthweight variance in Dutch Hunger
+    Winter controls but had no detectable effect in famine-exposed individuals.
+open_questions:
+- g_l10env_005
+- g_l10env_008
+layer: L10
+stub: false
+last_verified: '2026-08-05'

@@ -1,7 +1,104 @@
 id: netherlands_tallest_population
-name: Netherlands as tallest population
+name: The Dutch height plateau
 type: phenotype
+aliases:
+- world's tallest population
+- Dutch stature ceiling
+summary: 'Dutch men born in the last quarter of the 20th century have the highest population mean height
+  ever recorded, above 182.5 cm (ncd2016), and the Dutch series is the only one long enough to show a
+  clean stop. In the fifth Dutch nationwide growth study (2009; 5811 boys and 6194 girls aged 0-21) mean
+  final height was 183.8 cm (SD 7.1) in men and 170.7 cm (SD 6.3) in women, and height-by-age was the
+  same as in the 1997 survey after 150 years of continuous increase (schnbeck2013). The decisive observation
+  against reading this as a shared environmental ceiling comes from the same surveys: Turkish- and Moroccan-origin
+  children living in the Netherlands gained 2-3 cm between 1997 and 2009 while Dutch-origin children were
+  flat, and at age 18 remained 5.5 cm (boys) to 7 cm (girls) shorter than their Dutch peers (schnbeck2015).
+  Two populations sharing one country, food supply and health system sat on opposite sides of the plateau
+  in the same decade. Within the Dutch population height still correlates with the child''s and the parents''
+  educational level (schnbeck2013), so a social gradient persists inside the plateaued population, which
+  a saturated environment does not predict. Whether the plateau is a genetic ceiling or an unmeasured
+  persisting constraint has never been tested.'
+quantitative:
+- parameter: highest recorded population mean adult height
+  value: '>182.5'
+  unit: cm
+  conditions: Dutch men born in the last quarter of the 20th century
+  species: human
+  source_ref: ncd2016
+  uncertainty: posterior mean; credible interval in ncd2016 Figure 5
+- parameter: mean final height, Dutch men
+  value: '183.8'
+  unit: cm
+  conditions: Dutch nationwide growth study 2009, Dutch origin, n=5811 boys aged 0-21
+  species: human
+  source_ref: schnbeck2013
+  uncertainty: SD 7.1 cm
+- parameter: mean final height, Dutch women
+  value: '170.7'
+  unit: cm
+  conditions: Dutch nationwide growth study 2009, Dutch origin, n=6194 girls aged 0-21
+  species: human
+  source_ref: schnbeck2013
+  uncertainty: SD 6.3 cm
+- parameter: change in height-by-age, Dutch-origin children, 1997 to 2009
+  value: '0'
+  unit: cm
+  conditions: nationwide cross-sectional comparison
+  species: human
+  source_ref: schnbeck2013
+  uncertainty: reported as 'the same as in 1997'
+- parameter: height gap at age 18, Turkish/Moroccan-origin vs Dutch-origin, 2009
+  value: 5.5 (boys) to 7 (girls)
+  unit: cm
+  conditions: Netherlands, nationwide survey; n=2548 Turkish, 2594 Moroccan, 11255 Dutch origin
+  species: human
+  source_ref: schnbeck2015
+  uncertainty: group means
+localization:
+- 'human SYS: national population phenotype'
+human_evidence: direct
+human_evidence_note: Five serial nationwide measured-height surveys of Dutch children (1955, 1965, 1980,
+  1997, 2009), 12005 children in the final Dutch-origin wave.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human population phenotype.
+confidence: A
+claim_grades:
+- claim: Dutch height stopped increasing between 1997 and 2009 after 150 years of rise.
+  grade: A
+  basis: Nationwide measured survey, n=12005, direct comparison with the 1997 survey (schnbeck2013).
+- claim: The plateau is population-specific and not a property of the Dutch environment.
+  grade: A
+  basis: Turkish- and Moroccan-origin children in the same country and the same surveys continued to gain
+    2-3 cm over the same interval (schnbeck2015).
+- claim: The plateau represents an attained genetic ceiling for Dutch stature.
+  grade: X
+  basis: Offered by the authors as one of two alternatives; no discriminating test has been performed.
+    Logged as g_l10env_005.
+key_refs:
+- ref_id: schnbeck2013
+  pmid: '23222908'
+  first_author: Schönbeck Y
+  year: 2013
+  type: primary
+  one_line_finding: Dutch height-by-age in 2009 (n=12005) was identical to 1997; mean final height 183.8
+    cm (men) and 170.7 cm (women); height correlates with child and parental education.
+- ref_id: schnbeck2015
+  pmid: '25938671'
+  first_author: Schönbeck Y
+  year: 2015
+  type: primary
+  one_line_finding: Turkish- and Moroccan-origin children in the Netherlands gained 2-3 cm between 1997
+    and 2009 while Dutch-origin children did not, and remained 5.5-7 cm shorter at age 18.
+- ref_id: ncd2016
+  pmid: '27458798'
+  first_author: NCD Risk Factor Collaboration (NCD-RisC).
+  year: 2016
+  type: primary
+  one_line_finding: Dutch men born in the last quarter of the 20th century have the highest mean adult
+    height on record, above 182.5 cm.
+open_questions:
+- g_l10env_005
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

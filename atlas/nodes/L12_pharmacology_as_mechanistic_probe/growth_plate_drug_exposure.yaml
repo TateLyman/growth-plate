@@ -1,7 +1,96 @@
 id: growth_plate_drug_exposure
-name: Drug exposure at the avascular growth plate
+name: Drug exposure at the growth plate
+aliases: [plate pharmacokinetics, cartilage drug penetration, target tissue exposure]
 type: process
 layer: L12
-stub: true
+stub: false
+summary: |
+  The growth plate is avascular. Solutes reach chondrocytes by diffusion from the
+  epiphyseal and metaphyseal vascular fronts through a matrix with high fixed negative
+  charge density, which excludes or retards large and anionic molecules and imposes a
+  concentration gradient with depth. Plasma AUC is therefore not plate AUC. A systematic
+  audit of the twelve pharmacological agents in this layer finds that not one has a
+  published measurement of its concentration within growth plate cartilage in any species:
+  vosoritide, navepegritide, infigratinib, recifercept, meclizine, rhGH, lonapegsomatropin,
+  mecasermin, teriparatide, methotrexate, glucocorticoids and bisphosphonates alike are
+  dosed and interpreted entirely on plasma pharmacokinetics. This is a systematic feature
+  of the field, not an oversight in a few papers, and it has concrete costs. It makes the
+  recifercept failure uninterpretable - a ~100 kDa decoy that produced no growth at any
+  dose cannot be assigned to ligand-independence versus non-delivery. It leaves the
+  identical efficacy of a 24-minute and a 5.3-day CNP exposure unexplained. And it means
+  every dose-selection decision in the layer rests on an untested proportionality
+  assumption. The one indirect human read-out is the metaphyseal band produced by
+  bisphosphonates, which shows that at least one drug class reaches the mineralising front
+  in quantity. The one experimental attack on the problem is site-directed delivery, such
+  as retinoid-impregnated nanoparticles used to modulate endochondral ossification in mice.
+quantitative:
+  - parameter: agents in layer L12 with a published growth plate tissue concentration measurement
+    value: '0'
+    unit: agents out of 12 audited
+    conditions: >-
+      audit of vosoritide, navepegritide, infigratinib, recifercept, meclizine, rhGH,
+      lonapegsomatropin, mecasermin, teriparatide, methotrexate, glucocorticoids and
+      bisphosphonates against Europe PMC, FDA labels and ClinicalTrials.gov, 2026-08-05
+    species: multiple
+    source_ref: matsuoka2025
+    uncertainty: absence established by search - see gap g_l12b_002 search log
+  - parameter: vosoritide plasma half-life used as the exposure surrogate
+    value: '21.0-27.9'
+    unit: minutes
+    conditions: FDA label, 15 ug/kg/day, children with achondroplasia; no corresponding tissue value exists
+    species: human
+    source_ref: fda_voxzogo_label_2025
+    uncertainty: SD 4.7-9.9 min
+  - parameter: navepegritide-released CNP plasma half-life used as the exposure surrogate
+    value: '5.3'
+    unit: days
+    conditions: FDA label, 0.1 mg/kg/week; no corresponding tissue value exists
+    species: human
+    source_ref: fda_yuviwel_label_2026
+    uncertainty: model-derived mean
+localization:
+  - "human growth plate: avascular, diffusion-fed from epiphyseal and metaphyseal vascular fronts; no measured drug concentration-versus-depth profile for any agent"
+  - "human metaphysis: bisphosphonate deposition at the mineralising front is radiographically visible, the only routine human image of drug arrival at the plate"
 human_evidence: absent
+human_evidence_note: >-
+  No human study reports a drug concentration measured within growth plate cartilage; all
+  human exposure data in this layer are plasma.
+species_basis: [human, mouse]
+translation_risk: high
+translation_risk_reason: >-
+  Rodent growth plates are thin enough that diffusion limitation may be negligible, so
+  even a positive animal delivery result would not transfer to the much thicker human
+  plate. Any measurement that matters has to be made in a large-animal or human plate.
+confidence: B
+claim_grades:
+  - claim: No agent in this layer has a published growth plate tissue concentration in any species.
+    grade: B
+    basis: Established by systematic search across Europe PMC, FDA labels and trial registries; an absence claim, so it can be overturned by a single retrieval.
+  - claim: Plasma exposure is a poor surrogate for plate exposure because the tissue is avascular and charge-dense.
+    grade: E
+    basis: Flagged inference from cartilage transport physics; not measured for any therapeutic agent.
+  - claim: Bisphosphonates reach the mineralising front of the growing metaphysis in pharmacologically meaningful quantity.
+    grade: A
+    basis: Metaphyseal sclerotic bands timed to dosing cycles are a routine radiographic finding in treated children.
+key_refs:
+  - ref_id: matsuoka2025
+    pmid: '39883086'
+    first_author: Matsuoka M
+    year: 2025
+    type: primary
+    one_line_finding: Retinoid-impregnated nanoparticles achieved site-specific modulation of endochondral ossification in mice - a direct attempt to solve plate delivery rather than assume it.
+  - ref_id: fda_voxzogo_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Full plasma PK for vosoritide with no tissue distribution data for the target organ.
+  - ref_id: fda_yuviwel_label_2026
+    year: 2026
+    type: regulatory
+    one_line_finding: Full plasma PK for navepegritide and released CNP with no tissue distribution data for the target organ.
+  - ref_id: nct04638153
+    year: 2022
+    type: trial_registry
+    one_line_finding: Recifercept failed at every dose with no tissue exposure measurement, leaving mechanism failure and delivery failure indistinguishable.
+open_questions: [g_l12b_002, g_l12pharm_002]
+contradicts: []
 last_verified: '2026-08-05'

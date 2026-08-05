@@ -1,9 +1,150 @@
 id: secondary_ossification_center
-name: Secondary ossification center
-type: tissue_structure
-layer: L0
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Secondary ossification centre (SOC)
 aliases:
 - SOC
+- epiphyseal ossification centre
+type: tissue_structure
+summary: 'The SOC is the ossified island that forms inside the epiphyseal cartilage after vessels enter through
+  cartilage canals, and its appearance is what physically separates the growth plate from the articular surface
+  (blumer2008, rivas2002). Timing is species- and bone-specific and is measurable in humans: in 199 Japanese
+  pregnancies the distal femoral centre was invisible before 30 weeks gestation and present in 100% of fetuses
+  after 35 weeks, while the proximal tibial centre was invisible before 33 weeks and present in only 73.7%
+  at 37 weeks (funaki2020). In mouse the tibial SOC is well developed by P30 and absent in size-matched P10
+  rat tibia, a difference exploited as a natural SOC+/SOC- pair (xie2020). The best-evidenced FUNCTION of the
+  SOC is mechanical, not stem-cell-related: the SOC first appears in amniotes, is absent in anamniotes, and
+  its ontogenetic timing tracks limb-specific load - newborn bats ossify feet and wing thumbs (used for clinging)
+  ahead of the rest of the wing, and jerboa forelimb SOCs precede hindlimb SOCs, matching the order in which
+  the limbs are used. Finite-element analysis and ex vivo loading show the SOC stiffens the epiphysis and shields
+  hypertrophic chondrocytes, the least stiff cells in the plate; 40% of chondrocytes died under a 1 N load
+  in the SOC- model while SOC+ bones tolerated a tenfold higher load, and delaying SOC formation in vivo with
+  axitinib at P18 or with Prx-Cre:GnasR201H raised hypertrophic-zone apoptosis (xie2020). The separate and
+  widely repeated claim that SOC formation TRIGGERS acquisition of resting-zone stemness rests only on temporal
+  coincidence in mouse (mizuhashi2018, newton2019) and is treated here as a hypothesis (see L2 soc_formation_triggers_stemness,
+  gap g_l2stem_003). Note for that gap: SOC-delaying tools already exist and are validated, so the discriminating
+  experiment is tractable - what is missing is a stemness readout, not a method.'
+quantitative:
+- parameter: gestational age at which distal femoral ossification centre is first visible on ultrasound
+  value: '30'
+  unit: weeks gestation
+  conditions: 199 normal Japanese pregnancies; >1 mm outer-to-outer as presence criterion
+  species: human
+  source_ref: funaki2020
+  uncertainty: not visualized before 30 weeks; visualized in 100% after 35 weeks
+- parameter: gestational age at which proximal tibial ossification centre is first visible on ultrasound
+  value: '33'
+  unit: weeks gestation
+  conditions: same cohort, n=199
+  species: human
+  source_ref: funaki2020
+  uncertainty: present in only 73.7% of fetuses at 37 weeks
+- parameter: chondrocyte death under 1 N load, growth plate without SOC
+  value: '40'
+  unit: '% of epiphyseal chondrocytes (propidium iodide+)'
+  conditions: P10 rat tibia ex vivo, vertical load, size- and stiffness-matched to P30 mouse
+  species: rat
+  source_ref: xie2020
+  uncertainty: n=3; SOC+ mouse tibiae tolerated a load one order of magnitude higher
+- parameter: epiphyseal cartilage stiffness, vehicle versus axitinib-treated mice
+  value: 8.1 vs 10.5
+  unit: kPa (nanoindentation)
+  conditions: mice treated P21-P30, live tissue sections
+  species: mouse
+  source_ref: xie2020
+  uncertainty: mean +/- SE, n=6 and n=7, p=0.37 - no significant difference, i.e. the apoptosis effect is not
+    via matrix stiffness
+- parameter: age at which SOC+ and SOC- rodent tibiae are size- and stiffness-matched
+  value: rat P10 vs mouse P30
+  unit: postnatal day
+  conditions: comparison basis for the SOC-/SOC+ ex vivo loading model
+  species: multiple
+  source_ref: xie2020
+  uncertainty: authors note confounders cannot be fully excluded
+localization:
+- 'human distal femoral epiphysis: present from 30-35 weeks gestation (funaki2020)'
+- 'mouse proximal tibial epiphysis: well developed by P30 (xie2020)'
+- 'rat proximal tibial epiphysis: absent at P10 (xie2020)'
+- 'rabbit: stages 9-10 of 16 (rivas2002)'
+- 'anamniotes: absent (xie2020)'
+human_evidence: direct
+human_evidence_note: Human SOC appearance timing is directly measured by fetal ultrasound with n=199 and explicit
+  percentile criteria; no human functional experiment exists.
+species_basis:
+- human
+- mouse
+- rat
+- rabbit
+- multiple
+translation_risk: moderate
+translation_risk_reason: Human SOC timing is directly observed, but every functional claim is rodent ex vivo
+  or comparative; humans form SOCs bone-by-bone across years whereas mouse SOCs appear within a two-week window,
+  so any timing-dependent mechanism would have to be staggered in humans.
+confidence: B
+claim_grades:
+- claim: The human distal femoral SOC appears between 30 and 35 weeks gestation and the proximal tibial SOC
+    later
+  grade: A
+  basis: prospective ultrasound cohort, n=199, explicit visualization criterion (funaki2020)
+- claim: The SOC stiffens the epiphysis and protects hypertrophic chondrocytes from load-induced death
+  grade: C
+  basis: rodent ex vivo loading with n=3, two independent in vivo SOC-delay models, and FEA; no human data
+- claim: The SOC first appears in amniotes and its timing tracks limb-specific mechanical demand
+  grade: C
+  basis: comparative microCT across bats, jerboa, whales and the fossil record (xie2020); correlational
+- claim: SOC formation triggers acquisition of resting-zone stemness
+  grade: E
+  basis: temporal coincidence in two mouse studies only; no SOC manipulation has ever been read out as a stemness
+    assay (gap g_l2stem_003)
+key_refs:
+- ref_id: funaki2020
+  pmid: '32737626'
+  doi: 10.1007/s10396-020-01043-5
+  first_author: Funaki S
+  year: 2020
+  type: primary_abstract_only
+  one_line_finding: Distal femoral ossification centre invisible before 30 weeks and universal after 35 weeks;
+    proximal tibial invisible before 33 weeks and present in 73.7% at 37 weeks in 199 human pregnancies
+- ref_id: xie2020
+  pmid: '33063669'
+  doi: 10.7554/elife.55212
+  first_author: Xie M
+  year: 2020
+  type: primary
+  one_line_finding: SOC appears in amniotes, its timing tracks limb-specific load in bats and jerboa, and delaying
+    it pharmacologically or genetically raises hypertrophic chondrocyte death
+- ref_id: blumer2008
+  pmid: '18602255'
+  first_author: Blumer MJ
+  year: 2008
+  type: review
+  one_line_finding: Cartilage canals bring vessels into the epiphysis and are the prerequisite for SOC formation
+- ref_id: rivas2002
+  pmid: '11792784'
+  first_author: Rivas R
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: SOC vascular invasion and marrow cavitation are stages 9-10 of the 16-stage rabbit sequence
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: In vitro self-renewability of PTHrP+ colony-forming cells rises between P9 and P12, described
+    by the authors as coinciding with active SOC development
+- ref_id: newton2019
+  pmid: '30814736'
+  doi: 10.1038/s41586-019-0989-6
+  first_author: Newton PT
+  year: 2019
+  type: primary_abstract_only
+  one_line_finding: Clonal switch from progenitor depletion to stable monoclonal columns is reported as coinciding
+    with SOC formation
+open_questions:
+- g_l0dev_005
+- g_l0dev_006
+- g_l0dev_002
+contradicts:
+- soc_formation_triggers_stemness
+layer: L0
+stub: false
+last_verified: '2026-08-05'

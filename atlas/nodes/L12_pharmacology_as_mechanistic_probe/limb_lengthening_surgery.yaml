@@ -1,7 +1,101 @@
 id: limb_lengthening_surgery
 name: Surgical limb lengthening
+aliases: [distraction osteogenesis, Ilizarov lengthening, intramedullary lengthening nail]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Distraction osteogenesis lengthens a bone by osteotomy followed by gradual separation of
+  the fragments, so that new bone forms in the distraction gap by a regenerate mechanism
+  that is intramembranous rather than endochondral. It is included in this layer as the
+  quantitative benchmark against which every pharmacological effect must be judged: it is
+  the only intervention that produces large, certain height gains, and it does so without
+  using the growth plate at all. A meta-analysis of 14 studies and 1149 patients with
+  achondroplasia gives pooled mean gains of 8.85 cm at the femur (95% CI 7.42-10.28),
+  7.36 cm at the tibia (95% CI 6.21-8.52) and 8.38 cm at the humerus (95% CI 7.01-9.74),
+  with a fixator index of 37.1 days/cm (95% CI 32.37-41.82) and a mean fixation duration
+  of 7.71 months. The cost is a pooled complication rate of 56.1% (95% CI 26.9-85.2), and
+  quality of life scores are only moderately improved (pooled PedsQL 75.69). Set against
+  drug effects of 1.4-1.7 cm/yr of velocity with no confirmed adult-height gain, surgery
+  is one to two orders of magnitude more effective per intervention and one to two orders
+  of magnitude more harmful. The two are now used together, and CNP analogues may alter
+  callus consolidation and medullary canal geometry, so the interaction is a live surgical
+  question rather than a hypothetical one.
+quantitative:
+  - parameter: pooled mean femoral lengthening
+    value: '8.85'
+    unit: cm
+    conditions: meta-analysis of 14 studies, 1149 patients with achondroplasia, single-arm pooled means
+    species: human
+    source_ref: hosny2026
+    uncertainty: 95% CI 7.42-10.28
+  - parameter: pooled mean tibial lengthening
+    value: '7.36'
+    unit: cm
+    conditions: same meta-analysis
+    species: human
+    source_ref: hosny2026
+    uncertainty: 95% CI 6.21-8.52
+  - parameter: pooled mean humeral lengthening
+    value: '8.38'
+    unit: cm
+    conditions: same meta-analysis
+    species: human
+    source_ref: hosny2026
+    uncertainty: 95% CI 7.01-9.74
+  - parameter: pooled overall complication rate
+    value: '56.1'
+    unit: percent
+    conditions: same meta-analysis; wide interval reflects heterogeneity of complication definitions
+    species: human
+    source_ref: hosny2026
+    uncertainty: 95% CI 26.9-85.2
+  - parameter: external fixator index
+    value: '37.1'
+    unit: days per cm
+    conditions: same meta-analysis; mean fixation duration 7.71 months (95% CI 5.98-9.63)
+    species: human
+    source_ref: hosny2026
+    uncertainty: 95% CI 32.37-41.82
+localization:
+  - "human diaphysis/metaphysis: regenerate bone forms in the distraction gap by intramembranous ossification, bypassing the growth plate"
+human_evidence: direct
+human_evidence_note: >-
+  Meta-analysis of 14 studies and 1149 patients with achondroplasia reporting attained
+  length gains, fixation times, complications and quality of life.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: A human surgical intervention with human outcome data throughout.
+confidence: A
+claim_grades:
+  - claim: Limb lengthening produces 7-9 cm of segmental gain per treated bone in achondroplasia.
+    grade: A
+    basis: Pooled meta-analysis of 1149 patients with narrow confidence intervals on the length outcomes.
+  - claim: The complication rate is above 50%.
+    grade: B
+    basis: Pooled estimate 56.1% but with a 95% CI from 26.9 to 85.2, reflecting inconsistent complication definitions across studies.
+  - claim: CNP analogues alter bone healing and callus consolidation during lengthening.
+    grade: D
+    basis: Based on animal fracture-healing data and reviewer synthesis; not demonstrated in treated patients undergoing lengthening.
+key_refs:
+  - ref_id: hosny2026
+    pmid: '41838116'
+    first_author: Hosny G
+    year: 2026
+    type: meta_analysis
+    one_line_finding: 14 studies, 1149 patients - femoral 8.85 cm, tibial 7.36 cm, humeral 8.38 cm gains; 56.1% complication rate.
+  - ref_id: qian2026
+    pmid: '42028063'
+    first_author: Qian E
+    year: 2026
+    type: review
+    one_line_finding: CNP analogues may affect bone density, callus consolidation and medullary canal area, with implications for lengthening surgery.
+  - ref_id: merchant2025
+    pmid: '39813116'
+    first_author: Merchant N
+    year: 2025
+    type: review
+    one_line_finding: Contemporary achondroplasia management guidance covering the coexistence of surgical and pharmacological growth strategies.
+open_questions: [g_l12b_025]
+contradicts: []
 last_verified: '2026-08-05'

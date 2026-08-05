@@ -1,7 +1,64 @@
 id: vitamin_d_deficiency_rickets
-name: Vitamin D deficiency rickets
+name: Vitamin D deficiency and nutritional rickets
 type: phenotype
+summary: 'Vitamin D deficiency is the environmental exposure in this layer with the most completely specified
+  molecular entry point, and the entry point is not the one usually assumed. Calcitriol acts through the
+  vitamin D receptor (L4 vitamin_d_receptor) to raise intestinal calcium and phosphate absorption; when
+  it fails, serum phosphate falls, and it is hypophosphataemia rather than a direct chondrocyte effect
+  that produces the rachitic growth plate, because normal phosphate is required for apoptosis of terminal
+  hypertrophic chondrocytes and hence for orderly resorption of the hypertrophic zone (L4 phosphate_homeostasis).
+  The consequence is the widened, disorganised hypertrophic zone and flared metaphysis of rickets. This
+  mechanism is specific to frank deficiency: in randomised trials, vitamin D3 supplementation of children
+  in low- and middle-income countries did not change height-for-age Z (Z=0.43, P=0.67) and improved only
+  weight-for-age Z (Z=2.72, P=0.007) (peng2025). Vitamin D therefore behaves as a threshold nutrient for
+  the growth plate: below the rachitic threshold the plate is structurally deranged, above it additional
+  vitamin D buys no extra linear growth.'
+quantitative:
+- parameter: effect of vitamin D3 supplementation on height-for-age Z
+  value: no significant effect
+  unit: z-score
+  conditions: meta-analysis of RCTs in children aged 0-14 y in LMICs (12 RCTs, 6340 children in total)
+  species: human
+  source_ref: peng2025
+  uncertainty: Z=0.43, P=0.67
+- parameter: effect of vitamin D3 supplementation on weight-for-age Z
+  value: significant improvement
+  unit: z-score
+  conditions: same meta-analysis
+  species: human
+  source_ref: peng2025
+  uncertainty: Z=2.72, P=0.007; clinical relevance described as uncertain by the authors
+localization:
+- 'human HZ: widened and disorganised hypertrophic zone is the defining rachitic lesion'
+- 'human SYS: skin/dietary vitamin D -> calcitriol -> VDR -> intestinal calcium and phosphate absorption'
+human_evidence: direct
+human_evidence_note: Nutritional rickets is a human clinical and radiographic phenotype; the supplementation
+  null is from randomised human trials.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The rachitic phenotype and the vitamin D endocrine axis are both directly characterised
+  in humans.
+confidence: B
+claim_grades:
+- claim: Vitamin D supplementation above the rachitic threshold does not increase linear growth.
+  grade: A
+  basis: Meta-analysis of randomised trials with prespecified HAZ endpoint (peng2025).
+- claim: The rachitic growth plate lesion is produced by hypophosphataemia acting on hypertrophic chondrocyte
+    apoptosis rather than by a direct chondrocyte vitamin D effect.
+  grade: B
+  basis: Mechanism established in the L4 phosphate_homeostasis and vitamin_d_receptor nodes; not re-derived
+    here from a primary in this shard.
+key_refs:
+- ref_id: peng2025
+  pmid: '41502896'
+  first_author: Peng L
+  year: 2025
+  type: meta_analysis
+  one_line_finding: Vitamin D3 supplementation alone did not change height-for-age Z (Z=0.43, P=0.67)
+    in a meta-analysis of RCTs in children in LMICs.
+open_questions:
+- g_l10env_007
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

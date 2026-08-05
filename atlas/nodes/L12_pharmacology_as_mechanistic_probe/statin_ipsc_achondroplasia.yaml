@@ -1,7 +1,76 @@
 id: statin_ipsc_achondroplasia
-name: Statins in iPSC achondroplasia models
+name: Statins in iPSC models of FGFR3 skeletal dysplasia
+aliases: [rosuvastatin achondroplasia, statin rescue of FGFR3 chondrocytes]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Statins entered the achondroplasia field through a human induced pluripotent stem cell
+  model rather than through a mouse. Fibroblasts from patients with thanatophoric dysplasia
+  type I and with achondroplasia were reprogrammed to iPSCs; chondrogenic differentiation
+  of both produced degraded cartilage, and statin treatment corrected that degradation in
+  both genotypes. Statin treatment of achondroplasia model mice produced a significant
+  recovery of bone growth. The proposed mechanism is enhanced degradation or reduced
+  accumulation of the mutant FGFR3 protein rather than kinase inhibition, which would make
+  it mechanistically distinct from both the CNP analogues (downstream antagonism) and the
+  TKIs (catalytic inhibition). Despite being published in 2014 and despite statins being
+  cheap, oral and extensively characterised in adults, no randomised trial of a statin for
+  linear growth in achondroplasia has reported. The reason is not obviously biological:
+  statins are contraindicated in pregnancy, have limited paediatric safety data outside
+  familial hypercholesterolaemia, and there is no commercial sponsor. This node therefore
+  records an unrepeated human-cell finding, not an intervention.
+quantitative:
+  - parameter: human clinical trials of a statin for linear growth in FGFR3 skeletal dysplasia
+    value: '0'
+    unit: trials with reported growth outcomes
+    conditions: no registered trial with a linear-growth endpoint identified as of 2026-08-05
+    species: human
+    source_ref: yamashita2014
+    uncertainty: absence established by search - see gap g_l12b_007
+  - parameter: genotypes rescued in the iPSC chondrogenic model
+    value: '2'
+    unit: genotypes
+    conditions: thanatophoric dysplasia type I and achondroplasia patient-derived iPSCs
+    species: ipsc_derived
+    source_ref: yamashita2014
+    uncertainty: not applicable (count); effect sizes reported graphically in the source
+localization:
+  - "in vitro human iPSC-derived cartilage: degraded cartilage phenotype corrected by statin"
+  - "human growth plate: no in vivo human data of any kind"
+human_evidence: indirect
+human_evidence_note: >-
+  The human evidence is patient-derived iPSC chondrogenic cultures, not treated patients;
+  no human in vivo growth data exist.
+species_basis: [ipsc_derived, mouse]
+translation_risk: high
+translation_risk_reason: >-
+  An iPSC chondrogenic pellet has no vasculature, no zonal architecture, no mechanical
+  loading and no systemic endocrine input, so it cannot report on the diffusion-limited
+  delivery problem that defeats other agents. The supporting in vivo data are murine.
+confidence: D
+claim_grades:
+  - claim: Statin treatment corrects the degraded-cartilage phenotype of TD1 and achondroplasia patient iPSC chondrogenic cultures.
+    grade: D
+    basis: Single high-profile study, not independently replicated in the twelve years since.
+  - claim: Statins increase bone growth in achondroplasia model mice.
+    grade: D
+    basis: Same single study; no independent replication located.
+  - claim: Statins would increase linear growth in children with achondroplasia.
+    grade: X
+    basis: Repeated in reviews as a candidate therapy but traceable to no human in vivo data at all.
+key_refs:
+  - ref_id: yamashita2014
+    pmid: '25231866'
+    first_author: Yamashita A
+    year: 2014
+    type: primary
+    one_line_finding: Statins corrected degraded cartilage in TD1 and achondroplasia iPSC chondrogenic cultures and increased bone growth in achondroplasia model mice.
+  - ref_id: zakheim2025
+    pmid: '41148554'
+    first_author: Zakheim E
+    year: 2025
+    type: review
+    one_line_finding: Contemporary review of achondroplasia therapies lists only vosoritide, infigratinib and navepegritide as clinical agents - statins are absent from the clinical landscape.
+open_questions: [g_l12b_007]
+contradicts: []
 last_verified: '2026-08-05'

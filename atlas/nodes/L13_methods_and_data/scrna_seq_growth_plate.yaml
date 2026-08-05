@@ -1,7 +1,84 @@
 id: scrna_seq_growth_plate
-name: scRNA-seq of the growth plate
+name: Single-cell RNA-seq of the growth plate
+aliases:
+- growth plate scRNA-seq
 type: method
+summary: |
+  Growth plate single-cell RNA-seq is a mouse literature with a thin human appendix. A GEO
+  census on 2026-08-05 returns 60 growth plate single-cell records, of which 18 are human
+  (geo_census_20260805), and inspection shows that most of the human records are fetal, iPSC-
+  derived or tumour-adjacent rather than postnatal normal physis. The field began with 217
+  cells from mouse growth plate (gse76157) - fewer cells than one modern droplet lane. The
+  only human postnatal growth plate scRNA-seq deposit profiles four epiphysiodesis patients
+  aged 11-14, with and without ex vivo growth hormone, and the GEO record states that raw
+  human files were not submitted because of identifiability concerns (gse288028, chu2026).
+  Three structural biases apply to every dataset in this class. Dissociation preferentially
+  destroys large hypertrophic cells (chondrocyte_dissociation_bias). Dissociation itself
+  induces stress-response transcription, so immediate-early genes are not interpretable. And
+  single-cell data have no spatial axis, so zonal assignment is made by mapping onto marker
+  sets that were themselves defined in mouse - which converts a species-transfer step into
+  what looks like an annotation step. Human clonal readout is available only through xenograft
+  barcoding (gse233188), not in situ.
+quantitative:
+- parameter: GEO growth plate single-cell records, all species
+  value: '60'
+  unit: records
+  conditions: GEO DataSets 2026-08-05
+  species: multiple
+  source_ref: geo_census_20260805
+  uncertainty: point-in-time census
+- parameter: GEO growth plate single-cell records, human
+  value: '18'
+  unit: records
+  conditions: same query, Homo sapiens restriction
+  species: human
+  source_ref: geo_census_20260805
+  uncertainty: includes fetal, iPSC-derived and tumour-adjacent records
+- parameter: human donors in the only postnatal human growth plate scRNA-seq deposit
+  value: '4'
+  unit: donors
+  conditions: epiphysiodesis, ages 11-14, 14 samples
+  species: human
+  source_ref: gse288028
+  uncertainty: raw human sequence data withheld from the repository
+localization:
+- 'human RZ: two stem-like populations reported, zonal assignment inferred from marker sets'
+human_evidence: direct
+human_evidence_note: Human postnatal growth plate scRNA-seq exists but rests on four donors and its
+  raw data are not public.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Cluster identities are named using murine marker panels, so a human cluster
+  labelled "resting zone stem cell" inherits the murine definition rather than testing it.
+confidence: B
+key_refs:
+- ref_id: geo_census_20260805
+  first_author: NCBI GEO
+  year: 2026
+  type: dataset
+  one_line_finding: 60 growth plate single-cell records, 18 human.
+- ref_id: gse288028
+  first_author: GEO submitters
+  year: 2025
+  type: dataset
+  one_line_finding: Human pubertal growth plate scRNA-seq from four epiphysiodesis donors; raw human
+    files withheld.
+- ref_id: chu2026
+  first_author: Chu NTL
+  year: 2026
+  type: primary
+  one_line_finding: Two stem-like resting-zone populations described in human pubertal growth plate,
+    with murine clonal validation.
+- ref_id: gse76157
+  first_author: Li J
+  year: 2016
+  type: dataset
+  one_line_finding: 217 cells in the founding growth plate scRNA-seq study.
+open_questions:
+- g_l2stem_009
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

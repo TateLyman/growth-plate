@@ -1,7 +1,75 @@
 id: preterm_birth_growth
-name: Preterm birth and growth
+name: Preterm birth and linear growth
 type: phenotype
+summary: 'Preterm birth removes the fetus from the intrauterine environment during the period of fastest
+  linear growth and costs adult height. A systematic review of 27 studies of adults born prematurely found
+  reduced height among the endocrine outcomes, alongside hypothalamic-pituitary-adrenal axis dysfunction,
+  lower bone mineral density and increased odds of hypothyroidism (claffey2025). The most informative
+  exposure in this population is iatrogenic rather than gestational: antenatal glucocorticoid, given to
+  accelerate fetal lung maturation, is a direct environmental manipulation of the L4 glucocorticoid receptor
+  at a defined developmental moment. In a single-centre cohort recruited from 1994 with a median of 19
+  height measurements per child to a median age of 15.8 years, SITAR modelling of 202 children found that
+  in girls (n=59 with covariates) antenatal steroid exposure was positively associated with the SITAR
+  size and intensity random effects, equating to a predicted final height 2.8 cm greater (95% CI 0.3-5.3)
+  than in unexposed girls after adjustment for gestational age and both parents'' heights (lawrence2025).
+  The direction is opposite to the growth suppression produced by postnatal glucocorticoid, which makes
+  it a sharp test case: the same receptor, opposite sign, different developmental window. The result is
+  sex-restricted, from one centre, and needs replication before it can be treated as a general property
+  of prenatal GR activation.'
+quantitative:
+- parameter: predicted final height difference in girls exposed to antenatal steroids
+  value: '2.8'
+  unit: cm
+  conditions: Sheffield neonatal cohort recruited from 1994, SITAR model of 202 children, n=59 of 87 girls
+    with complete covariates, adjusted for gestational age and parental heights
+  species: human
+  source_ref: lawrence2025
+  uncertainty: 95% CI 0.3-5.3
+- parameter: height measurements per child in the modelled cohort
+  value: '19'
+  unit: measurements
+  conditions: median, IQR 12-21, to a median age of 15.8 y
+  species: human
+  source_ref: lawrence2025
+  uncertainty: Q1 12, Q3 21
+localization:
+- 'human SYS: antenatal glucocorticoid -> fetal GR (L4 glucocorticoid_receptor)'
+- 'human growth plate: never examined in preterm-born children'
+human_evidence: direct
+human_evidence_note: Longitudinal human cohort with ~19 serial height measurements per child and SITAR
+  growth-curve modelling, plus a systematic review of 27 studies of adults born preterm.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human cohort data.
+confidence: C
+claim_grades:
+- claim: Adults born preterm are shorter than term-born adults.
+  grade: B
+  basis: Systematic review of 27 studies of long-term endocrine outcomes after prematurity (claffey2025);
+    heterogeneous designs, no pooled effect size given.
+- claim: Antenatal glucocorticoid exposure is associated with 2.8 cm greater final height in girls.
+  grade: D
+  basis: Single-centre observational cohort, girls only, n=59 with complete covariates, not randomised
+    to steroid (lawrence2025).
+key_refs:
+- ref_id: lawrence2025
+  pmid: '40695558'
+  first_author: Lawrence NR
+  year: 2025
+  type: primary
+  one_line_finding: SITAR modelling of 202 children (median 19 height measurements each) found antenatal
+    steroid exposure associated with 2.8 cm (95% CI 0.3-5.3) greater predicted final height in girls,
+    adjusted for gestational age and parental heights.
+- ref_id: claffey2025
+  pmid: '41244257'
+  first_author: Claffey T
+  year: 2025
+  type: systematic_review
+  one_line_finding: 'Systematic review of 27 studies: adults born preterm show reduced height, HPA axis
+    dysfunction, lower bone mineral density and increased odds of hypothyroidism.'
+open_questions:
+- g_l10env_008
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

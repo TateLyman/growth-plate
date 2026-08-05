@@ -1,7 +1,81 @@
 id: zinc_deficiency_growth
-name: Zinc deficiency and growth
+name: Zinc deficiency and linear growth
 type: process
+summary: 'Zinc supplementation produces one of the largest micronutrient effects on child height that
+  has ever been demonstrated in randomised trials, and it has no established molecular entry point at
+  the growth plate. In a meta-analysis of 33 randomised controlled trials in prepubertal children, supplemental
+  zinc increased height with a weighted mean effect size of 0.350 SD (95% CI 0.189-0.511) and weight by
+  0.309 SD (0.178-0.439), with no effect on weight-for-height (-0.018, 95% CI -0.132 to 0.097); serum
+  zinc rose by 0.820 SD (0.499-1.14), confirming exposure, and the growth response was larger in children
+  with low baseline status (brown2002). The selectivity is informative: zinc lengthens children without
+  fattening them, which is what a growth plate effect rather than a general anabolic effect looks like.
+  Despite this, no study has identified which zinc-dependent protein at the plate is rate-limiting. Zinc
+  is a structural cofactor of hundreds of enzymes and of every zinc-finger transcription factor, including
+  those in the SOX and RUNX families that the atlas already carries at L3, but no experiment has shown
+  that dietary zinc restriction changes SOX9, RUNX2 or IGF1R signalling in chondrocytes at physiologically
+  attainable concentrations. This is registered as a scale gap, not papered over.'
+quantitative:
+- parameter: effect of zinc supplementation on height increment
+  value: '0.350'
+  unit: SD
+  conditions: meta-analysis of 33 RCTs in prepubertal children, random-effects model
+  species: human
+  source_ref: brown2002
+  uncertainty: 95% CI 0.189-0.511
+- parameter: effect of zinc supplementation on weight increment
+  value: '0.309'
+  unit: SD
+  conditions: same meta-analysis
+  species: human
+  source_ref: brown2002
+  uncertainty: 95% CI 0.178-0.439
+- parameter: effect of zinc supplementation on weight-for-height
+  value: '-0.018'
+  unit: SD
+  conditions: same meta-analysis
+  species: human
+  source_ref: brown2002
+  uncertainty: 95% CI -0.132 to 0.097; not significant
+- parameter: effect of zinc supplementation on serum zinc concentration
+  value: '0.820'
+  unit: SD
+  conditions: same meta-analysis; exposure verification
+  species: human
+  source_ref: brown2002
+  uncertainty: 95% CI 0.499-1.14
+localization:
+- 'human SYS: dietary zinc -> serum zinc'
+- 'human growth plate: no zinc-dependent target identified or localized'
+human_evidence: direct
+human_evidence_note: Meta-analysis of 33 randomised controlled supplementation trials with measured height
+  increments and serum zinc.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: The effect estimate is entirely from human randomised trials.
+confidence: B
+claim_grades:
+- claim: Zinc supplementation increases linear growth in prepubertal children by about 0.35 SD.
+  grade: A
+  basis: Random-effects meta-analysis of 33 RCTs with meta-regression on baseline status (brown2002).
+- claim: The effect is specific to linear growth rather than to general weight gain.
+  grade: A
+  basis: Height and weight both increased while weight-for-height did not (brown2002).
+- claim: Zinc acts on chondrocytes through a named zinc-dependent protein.
+  grade: X
+  basis: Widely asserted in reviews; no primary experiment identifies a rate-limiting zinc-dependent target
+    at the growth plate. Logged as g_l10env_007.
+key_refs:
+- ref_id: brown2002
+  pmid: '12036814'
+  first_author: Brown KH
+  year: 2002
+  type: meta_analysis
+  one_line_finding: Zinc supplementation increased height by 0.350 SD (95% CI 0.189-0.511) and weight
+    by 0.309 SD across 33 RCTs, with no change in weight-for-height and a larger response at low baseline
+    status.
+open_questions:
+- g_l10env_007
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

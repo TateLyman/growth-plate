@@ -1,7 +1,79 @@
 id: lead_exposure_growth
-name: Lead exposure and growth
+name: Lead exposure and linear growth
 type: process
+summary: Blood lead is inversely associated with stature at concentrations that were once considered unremarkable,
+  and the association has no established molecular entry point at the growth plate. In 1454 Mexican-American
+  children aged 5-12 from the Hispanic Health and Nutrition Examination Survey (1982-1984), blood lead
+  across the range 0.14-1.92 umol/L was inversely related to stature, the authors' point being that growth
+  retardation appears at moderate and not merely at toxic concentrations (frisancho1991). A clinical series
+  of 880 children referred for short stature found blood lead higher, and height, weight and serum IGF-1
+  lower, in the GH-deficient group than in the idiopathic-short-stature group (P<0.05), and in a companion
+  rat lead-exposure model the phosphorylation of ERK1/2, JNK, p38, Akt(S473) and Akt(T308) was increased
+  (P<0.01) (xu2014) - a result whose direction is the opposite of what a simple IGF-I-signalling blockade
+  would predict and which has not been replicated. Nothing connects lead to a named growth plate protein.
+  Lead is a calcium mimic that accumulates in mineralising tissue, which makes hydroxyapatite nucleation
+  and the calcium-sensing receptor plausible targets, but neither has been tested with a physeal readout.
+  Recorded here as an epidemiological association with an explicitly missing mechanistic link.
+quantitative:
+- parameter: blood lead range over which an inverse relation with stature was observed
+  value: 0.14-1.92
+  unit: umol/L
+  conditions: 1454 Mexican-American children aged 5-12, HHANES 1982-1984
+  species: human
+  source_ref: frisancho1991
+  uncertainty: inverse relationship reported across the range; effect size not stated in the abstract
+- parameter: children screened in the lead / short stature clinical series
+  value: '880'
+  unit: children
+  conditions: referred for short stature, split into GH-deficient and idiopathic-short-stature groups
+    by GH stimulation peak
+  species: human
+  source_ref: xu2014
+  uncertainty: P<0.05 for the group differences in height, weight, IGF-1 and blood lead
+localization:
+- 'human SYS: blood lead, bone lead stores'
+- 'human growth plate: no lead target identified'
+human_evidence: direct
+human_evidence_note: Two human datasets with measured blood lead and measured stature, one national survey
+  and one clinical series with serum IGF-1.
+species_basis:
+- human
+- rat
+translation_risk: high
+translation_risk_reason: The only mechanistic data are a rat lead-poisoning model with whole-tissue phosphoprotein
+  immunoblots, not chondrocyte-resolved and not replicated.
+confidence: D
+claim_grades:
+- claim: Blood lead is inversely associated with stature in children at moderate concentrations.
+  grade: B
+  basis: National survey sample of 1454 children with measured blood lead and measured height (frisancho1991);
+    observational and confounded with socioeconomic position.
+- claim: Lead lowers serum IGF-1 in children.
+  grade: D
+  basis: Single clinical series in which the low-IGF-1 group also had higher blood lead; no adjustment
+    for referral bias or socioeconomic position reported in the abstract (xu2014).
+- claim: Lead has a molecular entry point at the growth plate.
+  grade: X
+  basis: No study identifies a lead target in physeal cartilage; the rat data show increased, not decreased,
+    MAPK and Akt phosphorylation. Logged as g_l10env_007.
+key_refs:
+- ref_id: frisancho1991
+  pmid: '1877508'
+  first_author: Frisancho AR
+  year: 1991
+  type: primary
+  one_line_finding: In 1454 Mexican-American children aged 5-12, blood lead over 0.14-1.92 umol/L was
+    inversely related to stature.
+- ref_id: xu2014
+  pmid: '24955154'
+  first_author: Xu Y
+  year: 2014
+  type: primary
+  one_line_finding: In 880 children with short stature, the GH-deficient group had lower height, weight
+    and serum IGF-1 and higher blood lead than the idiopathic group; a rat lead model showed increased
+    ERK1/2, JNK, p38 and Akt phosphorylation.
+open_questions:
+- g_l10env_007
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

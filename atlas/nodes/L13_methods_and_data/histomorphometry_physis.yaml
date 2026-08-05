@@ -1,7 +1,95 @@
 id: histomorphometry_physis
-name: Physeal histomorphometry
+name: Growth plate histomorphometry
+aliases:
+- physeal histomorphometry
 type: method
+summary: |
+  Histomorphometry - measuring zone heights, cell counts per column, cell dimensions and
+  matrix fractions on stained sections - is the method that produced almost every quantitative
+  statement about the human growth plate in this atlas, and it has been applied to a very
+  small number of human plates. Kember and Sissons estimated 24 cells per column in the human
+  proliferative zone and, combined with a distal femoral growth rate of about 1.4 cm/year from
+  serial radiographs, derived a mean proliferative cell cycle time of 20 days, explicitly
+  warning that the corresponding rodent figure is 2 days and that extrapolation from mouse to
+  man is unwise (kember1976). Byers measured zone heights and matrix volume fractions in human
+  rib from birth to adolescence and found the largest change in the first postnatal year
+  (byers2000). Rodriguez measured plate thickness falling from 1.15 mm at 20 weeks to 0.6 mm
+  at 38 weeks across 125 perinatal donors (rodriguez1992). Emons quantified the pubertal
+  narrowing of total plate height and of each zone, with increasing intercolumnar space,
+  within a single girl studied at Tanner B2 and B3 (emons2011_2). The method's optical
+  resolution (roughly 0.25 um lateral) far exceeds every dimension of interest, so its limits
+  are not optical: they are section-plane obliquity, shrinkage during fixation and
+  decalcification, and the fact that a two-dimensional section cannot recover a three-
+  dimensional cell volume without stereological correction (breur1994, white2008).
+quantitative:
+- parameter: cells per column, human proliferative zone
+  value: '24'
+  unit: cells
+  conditions: distal femur, estimated from cell counts on sections
+  species: human
+  source_ref: kember1976
+  uncertainty: point estimate; no CI given
+- parameter: mean proliferative chondrocyte cycle time, human
+  value: '20'
+  unit: days
+  conditions: derived from 24 cells per column and 1.4 cm/year distal femoral growth
+  species: human
+  source_ref: kember1976
+  uncertainty: derived, not directly measured; rodent equivalent is 2 days
+- parameter: distal femoral growth rate used in the cycle-time derivation
+  value: '1.4'
+  unit: cm/yr
+  conditions: ages 5-8 years, serial radiographs, Harpenden Growth Study
+  species: human
+  source_ref: kember1976
+  uncertainty: series average
+localization:
+- 'human PZ: cells per column measured directly'
+- 'human HZ: cell volume requires stereological correction'
+human_evidence: direct
+human_evidence_note: All three quantitative anchors were measured on human tissue sections.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human measurements; the node exists partly to flag that the rodent equivalent
+  differs tenfold.
+confidence: B
+claim_grades:
+- claim: Human proliferative zone columns contain about 24 cells.
+  grade: B
+  basis: Direct count in kember1976; never independently replicated in human tissue.
+- claim: Human proliferative chondrocyte cycle time is about 20 days.
+  grade: D
+  basis: Derived from a column count and a radiographic growth rate, not measured by labelling; see
+    gap g_l1arch_002.
+key_refs:
+- ref_id: kember1976
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: 24 cells per column and a derived 20-day cycle time in human distal femur, with
+    an explicit warning against rodent extrapolation.
+- ref_id: byers2000
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: Zone heights and matrix volume fractions in human rib from birth to adolescence,
+    largest change in the first year.
+- ref_id: rodriguez1992
+  first_author: Rodriguez JI
+  year: 1992
+  type: primary
+  one_line_finding: Plate thickness 1.15 mm to 0.6 mm across the second half of gestation in 125
+    donors.
+- ref_id: emons2011_2
+  first_author: Emons J
+  year: 2011
+  type: primary
+  one_line_finding: Total and zonal plate height fall and intercolumnar space rises between Tanner
+    B2 and B3 within one girl.
+open_questions:
+- g_l1arch_002
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

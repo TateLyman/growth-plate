@@ -1,7 +1,63 @@
 id: secular_trend_reversal
-name: Secular trend reversals
-type: phenotype
+name: Reversal of the secular height trend
+type: process
+aliases:
+- negative secular trend
+- population height decline
+summary: The secular increase in height is neither monotonic nor irreversible, and the reversals are the
+  most informative part of the record because they show the trend depends on a continuously supplied environmental
+  input rather than on a ratchet. In the NCD-RisC century reanalysis, mean adult height decreased or stopped
+  rising in many sub-Saharan African countries for cohorts born after the early 1960s, falling by around
+  5 cm from its peak in Niger, Rwanda, Sierra Leone and Uganda (ncd2016). The same pattern appeared later
+  in men but not women in parts of Central Asia (Azerbaijan, Uzbekistan) and the Middle East and North
+  Africa (Egypt, Yemen), while both sexes continued to gain in Iran (ncd2016). A loss of about 5 cm within
+  two to three birth cohorts is a quarter of the largest century gain ever recorded, which constrains
+  any model treating population stature as a slowly moving genetic quantity. The reversals are attributed
+  to deteriorating nutrition, infection burden and conflict, but no study has measured IGF-1, IGFBP-3
+  or inflammatory markers in a declining birth cohort against its taller predecessor, so the mechanism
+  of the reversal is imported from the mechanism proposed for the rise rather than demonstrated.
+quantitative:
+- parameter: decline in mean adult height from cohort peak, worst-affected sub-Saharan countries
+  value: ~5
+  unit: cm
+  conditions: Niger, Rwanda, Sierra Leone, Uganda; birth cohorts after the early 1960s
+  species: human
+  source_ref: ncd2016
+  uncertainty: reported as 'by around 5 cm from its peak in some countries'; per-country credible intervals
+    in ncd2016 Figure 8
+localization:
+- 'human SYS: population-level phenotype'
+human_evidence: direct
+human_evidence_note: Measured adult heights in national surveys pooled by NCD-RisC; the declines are in
+  measured, not reported, height.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human population phenotype.
+confidence: A
+claim_grades:
+- claim: Mean adult height fell by about 5 cm from its peak in several sub-Saharan African countries for
+    cohorts born after the early 1960s.
+  grade: A
+  basis: ncd2016 pooled measured-height model with per-country credible intervals.
+- claim: Reversals are sex-asymmetric, appearing in men before or without women in Central Asia and MENA.
+  grade: B
+  basis: Reported country-by-country in ncd2016; not independently replicated outside that pooling.
+- claim: The reversal runs through the same nutrition and infection channel that drove the rise.
+  grade: E
+  basis: No biomarker or mechanistic measurement in a declining cohort; inference only.
+key_refs:
+- ref_id: ncd2016
+  pmid: '27458798'
+  first_author: NCD Risk Factor Collaboration (NCD-RisC).
+  year: 2016
+  type: primary
+  one_line_finding: Adult height decreased or stalled in many sub-Saharan African countries for cohorts
+    born after the early 1960s, by ~5 cm from peak in Niger, Rwanda, Sierra Leone and Uganda; later in
+    men only in parts of Central Asia and MENA.
+open_questions:
+- g_l10env_005
+- g_l10env_008
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

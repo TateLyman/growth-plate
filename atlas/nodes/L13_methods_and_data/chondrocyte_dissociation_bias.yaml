@@ -1,7 +1,97 @@
 id: chondrocyte_dissociation_bias
-name: Dissociation bias in chondrocyte scRNA-seq
-type: process
+name: Dissociation bias in growth plate single-cell RNA-seq
+aliases:
+- hypertrophic chondrocyte loss in scRNA-seq
+type: method
+summary: |
+  Growth plate scRNA-seq requires enzymatic release of cells from a dense, partly mineralised
+  proteoglycan matrix, and the cell most likely to be destroyed is the one the matrix is
+  stiffest around and which is largest and most fragile: the terminal hypertrophic
+  chondrocyte, roughly 5,900 um3 in a human distal tibia (white2008) against a proliferative
+  chondrocyte an order of magnitude smaller. Two structural facts make the bias hard to
+  dismiss. First, hypertrophic cells sit within the calcifying zone, so their release requires
+  either longer digestion (which kills them) or decalcification (which destroys RNA). Second,
+  standard 10x-style droplet capture excludes particles above roughly 40-50 um, which is
+  within the diameter range of a terminal hypertrophic chondrocyte. The field's own
+  methodological reviews name mineralised-matrix dissociation as the principal barrier to
+  single-cell profiling of skeletal tissue and recommend single-nucleus sequencing to
+  circumvent it (li2025, delos2026). The quantitative form of the problem has not been
+  measured in growth plate: no published study compares the zonal composition recovered by
+  scRNA-seq against the zonal composition counted histologically in the SAME plate, which is
+  what would convert this from a plausible bias into a correction factor. Until that is done,
+  every statement of the form "population X is Y% of growth plate cells" derived from
+  dissociated scRNA-seq should be read as a statement about cells that survived dissociation.
+quantitative:
+- parameter: terminal hypertrophic chondrocyte volume, human distal tibia
+  value: '5900'
+  unit: um3
+  conditions: distal 100 um of hypertrophic zone, adolescent physis closing, n=1
+  species: human
+  source_ref: white2008
+  uncertainty: mean across regions; no significant regional difference
+- parameter: cells recovered in the first growth plate scRNA-seq study
+  value: '217'
+  unit: cells
+  conditions: mouse growth plate, plate-based protocol
+  species: mouse
+  source_ref: gse76157
+  uncertainty: total cells in the deposit
+- parameter: published comparisons of scRNA-seq zonal composition against histological zonal composition
+    in the same growth plate
+  value: '0'
+  unit: studies
+  conditions: Europe PMC and GEO sweep 2026-08-05
+  species: multiple
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see search log g_l13b_003
+localization:
+- 'multiple HZ: systematically under-recovered by dissociation-based protocols (inferred)'
+human_evidence: indirect
+human_evidence_note: Human hypertrophic cell dimensions are measured (white2008) but no human study
+  quantifies recovery loss during dissociation.
+species_basis:
+- human
+- mouse
+- multiple
+translation_risk: moderate
+translation_risk_reason: The physical basis of the bias (cell size, matrix stiffness) is species-general,
+  but its magnitude scales with hypertrophic cell volume, which is larger in human and large mammals
+  than in mouse.
+confidence: D
+claim_grades:
+- claim: Hypertrophic chondrocytes are large and sit in mineralising matrix.
+  grade: A
+  basis: Direct stereological measurement in human tissue and in multiple species.
+- claim: Hypertrophic chondrocytes are systematically lost in growth plate scRNA-seq.
+  grade: E
+  basis: Mechanistically compelled by cell size and matrix, and named as a barrier in methodological
+    reviews, but never quantified against a histological ground truth.
+key_refs:
+- ref_id: white2008
+  first_author: White JR
+  year: 2008
+  type: primary
+  one_line_finding: Mean human hypertrophic chondrocyte volume 5,900 um3 by stereology in a closing
+    distal tibial physis.
+- ref_id: li2025
+  first_author: Li X
+  year: 2025
+  type: review
+  one_line_finding: Mineralised matrix dissociation is the principal barrier to single-cell profiling
+    of skeletal tissue.
+- ref_id: delos2026
+  first_author: Delos Santos K
+  year: 2026
+  type: review
+  one_line_finding: Musculoskeletal spatial and single-cell work is constrained by decalcification
+    and low RNA integrity.
+- ref_id: gse76157
+  first_author: Li J
+  year: 2016
+  type: dataset
+  one_line_finding: 217 cells in the first growth plate scRNA-seq deposit.
+open_questions: []
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

@@ -1,7 +1,92 @@
 id: laser_capture_microdissection_zonal
-name: Laser capture microdissection of zones
+name: Laser capture microdissection of growth plate zones
+aliases:
+- LCM zonal profiling
 type: method
+summary: |
+  Laser capture microdissection is the technique that produced the only zone-resolved
+  transcriptome of a human growth plate. Cells corresponding to hypertrophic, prehypertrophic,
+  proliferative and resting zones plus perichondrium were separately isolated from cryostat
+  sections of distal femoral growth plate from two normal children (an 11-year-10-month girl
+  and a 13-year-3-month boy), amplified by T7 linear amplification and hybridised to
+  Affymetrix arrays; 12,193 and 18,454 probe sets were called present in patients 1 and 2,
+  with homologous inter-array correlations of at least 0.91 (gse9160). The rodent counterpart,
+  built the same way, comprises 35 arrays from microdissected rat plates (gse16981), and it is
+  that rat dataset - not the human one - that has been used to interpret height GWAS loci
+  (lui2012). The method's limits are boundary error and RNA yield: zone boundaries are
+  assigned by morphology on a frozen section, so prehypertrophic and early hypertrophic
+  capture inevitably overlap, and picogram RNA inputs require linear amplification with its
+  own 3' bias. Its strength is decisive for this atlas: because the capture is spatial,
+  GSE9160 answers "is transcript X present in human zone Y" for any probed gene without new
+  tissue, which is why it is flagged in the dataset inventory as the single highest-value re-
+  analysis target.
+quantitative:
+- parameter: human donors contributing zone-resolved transcriptomes
+  value: '2'
+  unit: donors
+  conditions: distal femur; 11y10m female and 13y3m male; 5 zones each
+  species: human
+  source_ref: gse9160
+  uncertainty: the complete human zonal transcriptome corpus
+- parameter: probe sets called present, human zonal arrays
+  value: 12193 and 18454
+  unit: probe sets
+  conditions: of about 54,000 on GPL570, patients 1 and 2
+  species: human
+  source_ref: gse9160
+  uncertainty: inter-array correlation >= 0.91 +/- 0.01
+- parameter: rat zonal microdissection arrays
+  value: '35'
+  unit: arrays
+  conditions: postnatal rat growth plate zones
+  species: rat
+  source_ref: gse16981
+  uncertainty: GEO sample count
+localization:
+- 'human RZ/PZ/PHZ/HZ/PERI: all five captured separately in gse9160'
+human_evidence: direct
+human_evidence_note: GSE9160 is a direct human zone-resolved measurement, albeit from two donors.
+species_basis:
+- human
+- rat
+translation_risk: low
+translation_risk_reason: For human-derived conclusions the data are human; risk enters only when
+  the rat dataset is substituted for the human one, which is common practice.
+confidence: B
+claim_grades:
+- claim: Zone-resolved human growth plate transcriptomes exist and are public.
+  grade: A
+  basis: GSE9160 is deposited with raw CEL files.
+- claim: Any given transcript detected in GSE9160 is genuinely zone-restricted.
+  grade: D
+  basis: n=2 donors, morphological boundary assignment and 3prime-biased linear amplification; single-gene
+    conclusions need independent confirmation.
+key_refs:
+- ref_id: gse9160
+  first_author: Mougey EB
+  year: 2007
+  type: dataset
+  one_line_finding: Zone-specific expression profiles of human distal femoral growth plate from two
+    normal children.
+- ref_id: gse16981
+  first_author: Lui JC
+  year: 2009
+  type: dataset
+  one_line_finding: Rat growth plate microdissected into constituent zones, 35 arrays.
+- ref_id: lui2012
+  first_author: Lui JC
+  year: 2012
+  type: primary
+  one_line_finding: Height GWAS loci interpreted using rodent growth plate expression data, implicating
+    78 genes.
+- ref_id: agoston2007
+  first_author: Agoston H
+  year: 2007
+  type: primary
+  one_line_finding: Microdissection-based zonal analysis applied to CNP signalling in growth plate.
+open_questions:
+- g_l3core_006
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

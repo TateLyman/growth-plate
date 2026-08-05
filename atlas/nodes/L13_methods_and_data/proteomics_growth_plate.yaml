@@ -1,7 +1,80 @@
 id: proteomics_growth_plate
-name: Growth plate proteomics
+name: Proteomics of the growth plate
+aliases:
+- physeal proteomics
+- spatial proteomics cartilage
 type: method
+summary: |
+  Growth plate proteomics is small, and the human component is essentially one study.
+  Proteomic and elemental mapping of human growth plate from ten paediatric donors (six
+  amputations for osteosarcoma or trauma, four polydactyly) identified a protein network that
+  polarises mineralisation: SPP1 and AHSG concentrated at the growth-plate/epiphysis interface
+  where mineralisation is inhibited, and ENPP1 and ALPL coexisting with them at the growth-
+  plate/metaphysis interface where mineralisation is promoted (xie2025). Chemical rather than
+  proteomic imaging has been applied to three polydactyly specimens by time-of-flight
+  secondary ion mass spectrometry, mapping a sharp fall in organic markers and a concurrent
+  rise in CaPO2+ and Ca+ across the calcified cartilage front (zoehrer2025). Both are cross-
+  sectional, terminal and low-n. The structural obstacles are the same as for transcriptomics
+  with one addition: cartilage is dominated by a small number of extremely abundant matrix
+  proteins (collagen II, aggrecan), so dynamic range compresses and low-abundance regulatory
+  proteins - receptors, phosphatases, transcription factors - fall below detection unless
+  depleted or enriched. No zone-resolved human growth plate proteome exists; the zonal
+  information available is transcript-level (gse9160) and cannot substitute, because the
+  matrix proteins that determine mechanics have half-lives far longer than their mRNAs.
+quantitative:
+- parameter: human donors in the only human growth plate proteomic study located
+  value: '10'
+  unit: donors
+  conditions: 6 amputation for osteosarcoma or trauma, 4 polydactyly
+  species: human
+  source_ref: xie2025
+  uncertainty: stated in methods
+- parameter: human donors in the only human growth plate ToF-SIMS study
+  value: '3'
+  unit: donors
+  conditions: polydactyly specimens, large-area chemical imaging
+  species: human
+  source_ref: zoehrer2025
+  uncertainty: stated in abstract
+- parameter: zone-resolved human growth plate proteomes
+  value: '0'
+  unit: datasets
+  conditions: sweep 2026-08-05
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see search log g_l13b_006
+localization:
+- 'human ZPC: SPP1/AHSG inhibitory and ENPP1/ALPL promoting interfaces mapped by proteomics'
+human_evidence: direct
+human_evidence_note: Both human proteomic and chemical-imaging studies used human paediatric growth
+  plate tissue.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The cited proteomic evidence is human; risk arises only when murine matrix
+  proteomics is used to fill the zonal gap.
+confidence: C
+key_refs:
+- ref_id: xie2025
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: SPP1 and AHSG inhibit and ENPP1/ALPL promote mineralisation at opposite human
+    growth plate interfaces; ten donors.
+- ref_id: zoehrer2025
+  first_author: Zoehrer R
+  year: 2025
+  type: primary
+  one_line_finding: ToF-SIMS maps the organic-to-mineral transition across the human calcified cartilage
+    front in three polydactyly specimens.
+- ref_id: gse9160
+  first_author: Mougey EB
+  year: 2007
+  type: dataset
+  one_line_finding: Zone-resolved human transcript data; no proteomic equivalent exists.
+open_questions:
+- g_l5matrix_002
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

@@ -2,6 +2,134 @@ id: skeletal_muscle_growth
 name: Skeletal muscle growth
 type: process
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Postnatal skeletal muscle grows almost entirely by enlarging existing fibres, not by making
+  new ones, and this is the structural difference between muscle growth and bone elongation. In mouse
+  extensor digitorum longus there is no net change in myofibre number between postnatal day 7 and adulthood,
+  while myofibre cross-sectional area increases 7.6-fold and length 1.9-fold, giving a 14.1-fold increase
+  in fibre volume (white2010). Because muscle is a syncytium, that hypertrophy requires nuclei: myonuclear
+  number per fibre rises about 5-fold between P3 and P21 and then stops, so all subsequent volume growth
+  expands the myonuclear domain, which doubles to 9.2 x 10^3 um3 by P21 and then triples again to 26.5
+  x 10^3 um3 by P56 (white2010, mouse). Satellite cell number per fibre falls from about 14 at P7 to the
+  adult level of about 5 by P21, i.e. the progenitor pool contracts as the nuclear-accretion phase ends.
+  The organism-level coupling to the skeleton is temporal and measurable in humans: peak lean-mass accrual
+  velocity precedes peak bone mineral content accrual by 0.36 years in boys and 0.51 years in girls (rauch2004).
+  No equivalent human measurement of myofibre number, myonuclear accretion or satellite cell density across
+  postnatal growth exists, so the phase structure above is mouse and must not be stated as human fact.'
+quantitative:
+- parameter: change in myofibre number, P7 to P56
+  value: no net change
+  unit: fibres
+  conditions: mouse EDL, fast type II muscle
+  species: mouse
+  source_ref: white2010
+  uncertainty: explicitly no net gain
+- parameter: increase in myofibre cross-sectional area, P7 to P56
+  value: '7.6'
+  unit: fold
+  conditions: mouse EDL
+  species: mouse
+  source_ref: white2010
+  uncertainty: as reported
+- parameter: increase in myofibre length, P7 to P56
+  value: '1.9'
+  unit: fold
+  conditions: mouse EDL
+  species: mouse
+  source_ref: white2010
+  uncertainty: as reported
+- parameter: increase in myofibre volume, P7 to P56
+  value: '14.1'
+  unit: fold
+  conditions: mouse EDL
+  species: mouse
+  source_ref: white2010
+  uncertainty: product of area and length changes
+- parameter: increase in myonuclei per myofibre, P3 to P21
+  value: '5'
+  unit: fold
+  conditions: mouse EDL, 3F-nlacZ-E reporter
+  species: mouse
+  source_ref: white2010
+  uncertainty: approximately
+- parameter: myonuclear domain at P21
+  value: 9.2e3
+  unit: um3
+  conditions: mouse EDL; doubled from P7
+  species: mouse
+  source_ref: white2010
+  uncertainty: estimated
+- parameter: myonuclear domain at P56
+  value: 26.5e3
+  unit: um3
+  conditions: mouse EDL; no further myonuclear addition after P21
+  species: mouse
+  source_ref: white2010
+  uncertainty: estimated, ~3-fold expansion from P21
+- parameter: satellite cells per myofibre at P7
+  value: '14'
+  unit: cells
+  conditions: mouse EDL, Myf5nlacZ/+ reporter
+  species: mouse
+  source_ref: white2010
+  uncertainty: approximately
+- parameter: satellite cells per myofibre in adult
+  value: '5'
+  unit: cells
+  conditions: mouse EDL, reached by P21
+  species: mouse
+  source_ref: white2010
+  uncertainty: approximately
+- parameter: lead of peak lean mass velocity over peak bone mineral content velocity, boys
+  value: '0.36'
+  unit: years
+  conditions: 70 boys followed longitudinally through puberty, DXA total body
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+- parameter: lead of peak lean mass velocity over peak bone mineral content velocity, girls
+  value: '0.51'
+  unit: years
+  conditions: 68 girls, same study
+  species: human
+  source_ref: rauch2004
+  uncertainty: mean interval
+localization:
+- 'mouse EDL: myofibre and myonuclear counts (white2010)'
+- 'human whole body: DXA lean mass and bone mineral content velocities (rauch2004)'
+human_evidence: indirect
+human_evidence_note: Human evidence is limited to DXA-derived whole-body lean mass velocity; the cellular
+  growth mode is entirely murine.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Every cellular parameter comes from one fast muscle of one mouse strain; human
+  muscle grows over 18 years rather than 8 weeks and human myonuclear accretion has never been measured
+  longitudinally.
+confidence: C
+claim_grades:
+- claim: Postnatal muscle growth is hypertrophic with fibre number fixed early
+  grade: C
+  basis: Directly counted in mouse EDL across the full postnatal period (white2010); no human counterpart.
+- claim: Peak lean mass velocity precedes peak bone mineral accrual in humans
+  grade: A
+  basis: Longitudinal DXA in 138 children with the interval measured at three anatomical levels (rauch2004).
+key_refs:
+- ref_id: white2010
+  pmid: '20175910'
+  first_author: White RB
+  year: 2010
+  type: primary
+  one_line_finding: Mouse EDL myofibre number is fixed by P7 while fibre volume rises 14.1-fold and myonuclear
+    addition stops at P21.
+- ref_id: rauch2004
+  pmid: '15121007'
+  first_author: Rauch F
+  year: 2004
+  type: primary
+  one_line_finding: Peak lean mass accrual precedes peak bone mineral content accrual by 0.36 y in boys
+    and 0.51 y in girls.
+open_questions:
+- g_l9organism_011
 last_verified: '2026-08-05'

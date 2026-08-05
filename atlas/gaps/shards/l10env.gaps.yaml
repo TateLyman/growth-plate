@@ -1,0 +1,520 @@
+gaps:
+  - gap_id: g_l10env_001
+    question: >-
+      Does manipulating the gut microbiota of an undernourished human child raise circulating
+      IGF-1 and increase linear growth velocity, and is any such increase mediated by
+      short-chain fatty acids?
+    type: search_established
+    layer: L10
+    why_it_matters: >-
+      The microbiome-IGF-1 axis is the newest proposed environmental entry point into the GH-IGF
+      system and is already being used to justify probiotic and microbiota-directed food
+      interventions against stunting. Every causal step in it - colonisation raising serum IGF-1,
+      antibiotic depletion lowering it, SCFA supplementation restoring it, strain-specific
+      lactobacilli sustaining juvenile growth - comes from germ-free or antibiotic-treated mice.
+      If the axis does not operate in humans, a whole class of stunting interventions is being
+      built on a mouse phenotype; if it does, it is the only environmental lever in this layer
+      with a defined small-molecule mediator.
+    what_is_known: >-
+      Conventionalisation of germ-free mice increases serum IGF-1 with increased hepatic and
+      adipose IGF-1 production, raises growth plate activity and increases longitudinal and radial
+      bone growth; antibiotic treatment of conventional mice lowers serum IGF-1 and inhibits bone
+      formation, and short-chain fatty acid supplementation of antibiotic-treated mice restores
+      both IGF-1 and bone mass (yan2016). Monocolonisation with selected Lactobacillus plantarum
+      strains sustains juvenile weight gain and longitudinal growth through the somatotropic axis
+      and buffers chronic undernutrition (schwarzer2016). Microbiota transplanted from
+      undernourished Malawian infants into gnotobiotic mice transmits impaired growth, which is
+      ameliorated by adding Ruminococcus gnavus and Clostridium symbiosum (blanton2016).
+    what_is_missing: >-
+      No randomised human trial reports circulating IGF-1 together with a linear growth endpoint
+      after a defined microbiota manipulation. The searched literature returns human synbiotic and
+      probiotic trials with inflammation and gut-health endpoints, gnotobiotic mouse mechanism
+      papers, and reviews asserting the axis, but nothing that closes the loop in a child. There is
+      also no SCFA receptor or transporter localised in growth plate chondrocytes in any species,
+      so even in mice the metabolite may act only on the liver.
+    nearest_evidence: [yan2016, schwarzer2016, blanton2016]
+    discriminating_experiment: >-
+      Model system - a randomised, placebo-controlled trial in 12-24-month-old stunted children in
+      a high-EED setting, three arms: a defined Lactobacillus plantarum strain shown to be
+      growth-promoting in monocolonised mice, a microbiota-directed complementary food, and
+      placebo, for 6 months. Readout - serum IGF-1 and IGFBP-3 at 0, 3 and 6 months, faecal SCFA
+      by GC-MS, 16S and shotgun metagenomics, and knemometry-grade lower-leg length velocity in
+      addition to standard length-for-age Z. Expected result - if the mouse axis operates in
+      humans, the probiotic arm raises serum IGF-1 by at least 15% with a matched rise in faecal
+      butyrate and a detectable increase in lower-leg growth velocity within 3 months; if it does
+      not, inflammation markers may fall while IGF-1 and growth velocity are unchanged, which
+      would confine the axis to the germ-free mouse.
+    tractability: 4
+    search_log_ref: g_l10env_001
+
+  - gap_id: g_l10env_002
+    question: >-
+      Does a dietary protein or amino acid manipulation that changes circulating IGF-1 also change
+      mTORC1 activity in growth plate chondrocytes, and is chondrocyte amino acid sensing required
+      for the linear growth response to dietary protein?
+    type: scale_gap
+    layer: L10
+    why_it_matters: >-
+      Dietary protein is the environmental exposure with the best-characterised human endocrine
+      response in this layer, and the atlas carries both mtorc1_chondrocyte and
+      amino_acid_sensing_chondrocyte at L3. If the plate senses amino acids directly, dietary
+      protein has a second, IGF-1-independent entry point and the two can be dissociated
+      pharmacologically; if it does not, all of nutrition's effect on the plate is endocrine and
+      the L3 amino acid sensing machinery is a housekeeping function rather than a nutritional
+      sensor.
+    what_is_known: >-
+      In randomised 7-day interventions in prepubertal boys, 1.5 L/day of skimmed milk raised serum
+      IGF-I by 19% and IGF-I/IGFBP-3 by 13% while an isonitrogenous meat load raised neither, even
+      though protein intake rose 54-61% in both arms (hoppe2004); the effect localises to casein
+      (+15% IGF-1) rather than whey (+21% fasting insulin) and is independent of milk minerals
+      (hoppe2009). In stunted children, plasma concentrations of 18 of 21 amino acids are lower
+      where inflammatory markers are elevated, and plasma amino acids are correlates of serum
+      IGF-1 and linear growth (larnkjr2026).
+    what_is_missing: >-
+      No dietary protein or amino acid manipulation in any species has been coupled to a growth
+      plate readout of mTORC1 activity (phospho-S6, phospho-4E-BP1) or to a chondrocyte-specific
+      genetic block of amino acid sensing. The step from a measured change in circulating IGF-1 or
+      plasma amino acids to anything happening inside physeal cartilage is entirely unmeasured.
+    nearest_evidence: [hoppe2004, hoppe2009, larnkjr2026]
+    discriminating_experiment: >-
+      Model system - mice carrying a chondrocyte-specific inducible deletion of Rptor (Acan-CreERT2;
+      Rptor-flox) versus littermate controls, each fed an isocaloric low-protein (6% casein) or
+      control (20% casein) diet from weaning for 4 weeks. Readout - tibial length and growth plate
+      zone heights by histomorphometry, phospho-S6 and phospho-4E-BP1 immunostaining by zone,
+      serum IGF-1, and calcein double-labelling growth rate. Expected result - if dietary protein
+      acts only endocrinologically, low protein suppresses growth equally in both genotypes and
+      chondrocyte phospho-S6 tracks serum IGF-1; if the plate senses amino acids directly, control
+      mice show a graded phospho-S6 fall with dietary protein that is absent in the Rptor mutants,
+      and the mutants show no additional growth suppression on the low-protein diet.
+    tractability: 4
+
+  - gap_id: g_l10env_003
+    question: >-
+      In a single cohort with measured energy and protein intake, how large is the association
+      between childhood socioeconomic position and adult height before and after adjustment for
+      measured dietary intake, and what fraction of the gradient survives that adjustment?
+    type: quantitative_gap
+    layer: L10
+    why_it_matters: >-
+      This single difference decides whether the socioeconomic gradient in stature is a nutrition
+      story that public health already knows how to address, or whether a large residual runs
+      through infection burden, chronic low-grade inflammation, sleep, or care - each of which
+      enters the graph at a different molecular node. Without it, "poverty makes children short"
+      is an association with no mechanistic address, which is exactly the kind of free-floating
+      epidemiology this layer exists to prevent.
+    what_is_known: >-
+      The gradient itself is robust. In the 2009 Dutch nationwide survey, height correlated with
+      both the child's and the parents' educational level in the world's tallest and already
+      plateaued population (schnbeck2013). In the INCAP Guatemalan cohort (n=1386), upward wealth
+      mobility since birth was associated with +1.88 cm adult height (95% CI 1.04-2.72) versus
+      stable-low wealth (varghese2021). Pooled across five LMIC birth cohorts, undernutrition
+      indices predicted shorter adult height, less schooling and lower income (victora2008), and a
+      social gradient in linear growth persists in high-income countries where frank undernutrition
+      is rare (freer2026).
+    what_is_missing: >-
+      No published analysis reports the socioeconomic-height coefficient with and without
+      adjustment for measured intake in the same participants. The cohorts that measured diet did
+      not report the socioeconomic gradient conditioned on it, and the cohorts that reported the
+      gradient did not measure diet. The size of the non-nutritional residual is therefore
+      unknown to within its own magnitude.
+    nearest_evidence: [varghese2021, schnbeck2013, victora2008, freer2026]
+    discriminating_experiment: >-
+      Model system - a re-analysis of an existing birth cohort that carries both repeated weighed
+      dietary records and adult height (candidates: the Copenhagen and Danish child cohorts, ALSPAC,
+      or the INCAP cohort's dietary sub-study), not a new study. Readout - the regression
+      coefficient of adult height on a standardised childhood socioeconomic index, estimated first
+      unadjusted and then with sequential adjustment for total energy, total protein, animal protein
+      and micronutrient density, with the proportion of the coefficient attenuated reported with a
+      bootstrap CI; C-reactive protein or a validated infection-burden index entered as a fourth
+      block. Expected result - if the gradient is nutritional, dietary adjustment attenuates the
+      coefficient by more than 60%; if the mechanistically interesting residual is real,
+      attenuation is under 30% and a substantial further attenuation appears only when the
+      inflammation block is added.
+    tractability: 4
+    search_log_ref: g_l10env_003
+
+  - gap_id: g_l10env_004
+    question: >-
+      What are the actual interstitial concentrations of IL-1beta, IL-6 and TNF-alpha in the human
+      growth plate during chronic inflammatory disease, and are they within the range at which
+      these cytokines block IGF-I signalling in chondrocytes in vitro?
+    type: quantitative_gap
+    layer: L10
+    why_it_matters: >-
+      The entire plate-intrinsic account of inflammatory growth failure rests on in vitro
+      concentrations - IL-1beta 10 ng/mL, IL-6 100 ng/mL, TNF-alpha 50 ng/mL - that are orders of
+      magnitude above typical circulating concentrations even in active disease. If physeal
+      interstitial concentrations never approach these, the plate-intrinsic mechanism is an
+      artefact of dose and all of inflammatory growth failure is systemic GH resistance, which
+      changes the therapeutic target from the cartilage to the liver.
+    what_is_known: >-
+      At 10 ng/mL IL-1beta, 100 ng/mL IL-6 or 50 ng/mL TNF-alpha, each cytokine halves IGF-I-driven
+      chondrocyte proliferation and attenuates IGF-I-induced AKT phosphorylation by 30-50% and ERK
+      phosphorylation by 50-75% (choukair2014). At similar concentrations in murine metatarsal
+      culture, IL-1beta and TNF-alpha reduce growth by 71% and 45% over 8 days with an additive
+      110% reduction and incomplete recovery after combined exposure (macrae2006). Systemically, in
+      stunted children CRP and AGP are the strongest negative correlates of serum IGF-1
+      (madigan2026), and in an infant cohort soluble CD14 is negatively associated with IGF-1
+      (htet2026).
+    what_is_missing: >-
+      No measurement of any cytokine concentration in human growth plate tissue or interstitial
+      fluid exists, at any age or in any disease. The comparison that would validate or refute the
+      plate-intrinsic model has never been made even in an animal.
+    nearest_evidence: [choukair2014, macrae2006, madigan2026, htet2026]
+    discriminating_experiment: >-
+      Model system - human growth plate cartilage obtained at epiphysiodesis or corrective
+      osteotomy from children with juvenile idiopathic arthritis or inflammatory bowel disease and
+      from otherwise healthy children undergoing limb-length correction, paired with same-day serum.
+      Readout - multiplex immunoassay of IL-1beta, IL-6 and TNF-alpha in cartilage extract
+      normalised to wet weight and to extractable water volume, with matched serum concentrations,
+      plus phospho-STAT5 and phospho-AKT immunostaining by zone. Expected result - if the
+      plate-intrinsic model holds, cartilage interstitial cytokine concentrations in inflammatory
+      disease reach at least 10% of the in vitro effective concentrations and phospho-AKT is
+      reduced in the proliferative zone relative to controls; if it fails, cartilage concentrations
+      track serum at low pg/mL and zonal phospho-AKT is unchanged, locating the lesion in the liver.
+    tractability: 2
+
+  - gap_id: g_l10env_005
+    question: >-
+      Is the plateau of the secular height trend in the Netherlands and other early-plateauing
+      populations an attained genetic ceiling, or the persistence of an unmeasured
+      growth-constraining exposure?
+    type: known_unknown
+    layer: L10
+    why_it_matters: >-
+      This is the single most consequential unresolved question in this layer, because the answer
+      is the ceiling estimate for environmental modification of human stature and therefore bounds
+      what any growth-promoting intervention could ever achieve in a well-nourished population. It
+      also determines whether polygenic prediction of height should be calibrated on plateaued or
+      on still-rising populations.
+    what_is_known: >-
+      Dutch height-by-age in 2009 was identical to 1997 after 150 years of continuous increase,
+      with mean final height 183.8 cm in men and 170.7 cm in women (schnbeck2013). The plateau is
+      not a property of the Dutch environment: Turkish- and Moroccan-origin children living in the
+      Netherlands gained 2-3 cm over the same interval and remained 5.5-7 cm shorter than Dutch
+      peers (schnbeck2015). Inside the plateaued Dutch population a social gradient persists, with
+      height correlating with child and parental education (schnbeck2013). Elsewhere the trend has
+      plateaued in South Korea for men born in the 1980s and in South Asia at levels 5-10 cm lower
+      than East Asia (ncd2016), and in one longitudinal cohort the secular trend was present at
+      ages 4-14 but not at 18 (eichelberger2024).
+    what_is_missing: >-
+      Nobody has tested the two hypotheses against each other. A genetic ceiling predicts that
+      height-increasing polygenic scores stop predicting additional height at the top of the
+      distribution in a plateaued population, and that no identifiable exposure covaries with the
+      residual social gradient. A persisting-constraint model predicts the opposite on both counts.
+      No study reports polygenic score-height regressions stratified by birth cohort across a
+      plateau, and no study has looked for the exposure that produces the residual educational
+      gradient in a plateaued population.
+    nearest_evidence: [schnbeck2013, schnbeck2015, ncd2016, eichelberger2024]
+    discriminating_experiment: >-
+      Model system - genotyped Dutch cohorts spanning pre-plateau (born 1955-1975) and post-plateau
+      (born 1985-2005) birth years with measured adult height and childhood socioeconomic and
+      health records, e.g. Lifelines and the Netherlands Twin Register. Readout - the regression
+      slope of measured adult height on a height polygenic index, estimated separately by birth
+      cohort and by quantile of the height distribution, plus the residual height gradient by
+      parental education after conditioning on the polygenic index. Expected result - under a
+      genetic ceiling, the polygenic slope is the same in both cohorts and the education gradient
+      in the post-plateau cohort disappears once the polygenic index is conditioned on (because it
+      was genetic-nurture confounding); under a persisting constraint, the polygenic slope is
+      flatter in the post-plateau cohort at the upper quantiles and the education gradient survives
+      polygenic conditioning, identifying an unmeasured exposure that still caps attained height.
+    tractability: 4
+
+  - gap_id: g_l10env_006
+    question: >-
+      Of the ~89% of the linear growth deficit in stunted children that nutrient supplementation
+      does not close, what fraction is attributable to inflammation and infection burden, and what
+      fraction to an already-consumed proliferative capacity of the growth plate?
+    type: quantitative_gap
+    layer: L10
+    why_it_matters: >-
+      Pooled randomised evidence puts the benefit of small-quantity lipid-based nutrient
+      supplements at 11% of the maximal attainable growth benefit. The remaining 89% is the entire
+      unsolved problem of stunting, and the two candidate explanations - ongoing inflammatory
+      suppression versus irreversible loss of growth plate proliferative capacity - have opposite
+      therapeutic implications. The first is treatable in the child in front of you; the second is
+      not, and moves the intervention window before conception.
+    what_is_known: >-
+      SQ-LNS raises length-for-age Z by 0.15 (95% CI 0.12-0.17) across 15 RCTs in 36970 children,
+      equal to 12 days of height-age and 11% of the maximal attainable benefit (95% CI 9.4-12), with
+      between-trial heterogeneity I2 = 90% (watson2025). In stunted children, inflammation markers
+      are the strongest negative correlates of serum IGF-1 (madigan2026) and EED acts on linear
+      growth indirectly through systemic inflammation and IGF-1 (htet2026). In murine metatarsal
+      culture, combined IL-1beta and TNF-alpha exposure leaves a 59% growth deficit that does not
+      recover after cytokine withdrawal, whereas single-cytokine exposure recovers fully
+      (macrae2006) - the only existing evidence that inflammatory growth suppression can be
+      irreversible at the tissue level.
+    what_is_missing: >-
+      No trial has factorially crossed nutrient supplementation with anti-inflammatory or
+      infection-control intervention in the same children with a linear growth endpoint, so the
+      two components of the 89% have never been separated. The irreversibility evidence is from
+      mouse metatarsals, and mice do not fuse their growth plates.
+    nearest_evidence: [watson2025, madigan2026, htet2026, macrae2006, lowe2025]
+    discriminating_experiment: >-
+      Model system - a 2x2 factorial randomised trial in 12-24-month-old stunted children in a
+      high-EED setting: SQ-LNS versus none, crossed with an intensive infection-control package
+      (azithromycin mass administration plus household WASH plus anti-helminthic) versus none,
+      for 12 months. Readout - length-for-age Z and height-age at 12 months as the primary endpoint,
+      with serum IGF-1, IGFBP-3, CRP, AGP and faecal myeloperoxidase as mediators, and the
+      proportion-of-maximal-benefit metric as the common scale. Expected result - if the residual
+      deficit is inflammatory, the infection-control arm alone achieves at least as much
+      proportion-of-maximal-benefit as SQ-LNS and the combination is superadditive; if the residual
+      is exhausted plate capacity, neither arm nor their combination exceeds about 20% of maximal
+      benefit despite normalised IGF-1 and inflammatory markers.
+    tractability: 3
+
+  - gap_id: g_l10env_007
+    question: >-
+      For zinc, iron, vitamin A and lead, which specific protein in the growth plate is the
+      rate-limiting target, and does dietary manipulation of the nutrient change that protein's
+      activity in physeal cartilage?
+    type: scale_gap
+    layer: L10
+    why_it_matters: >-
+      Zinc supplementation is one of the largest micronutrient effects on child height ever
+      demonstrated (0.350 SD, 95% CI 0.189-0.511) and it is specific to length rather than weight,
+      which is the signature of a growth plate action. Yet not one of these four exposures has a
+      named molecular target in physeal cartilage. Without one, the atlas cannot connect a large,
+      reproducible, randomised human effect to any node in L3 or L4, and cannot distinguish a real
+      cartilage effect from an appetite or infection-mediated one.
+    what_is_known: >-
+      Zinc supplementation increases height by 0.350 SD and weight by 0.309 SD with no change in
+      weight-for-height across 33 RCTs, and the response is larger at low baseline status
+      (brown2002). Vitamin A supplementation has no effect on height-for-age Z, and vitamin D3
+      alone likewise does not change HAZ (peng2025). Iron status in stunted children is measured
+      alongside, and confounded by, inflammation (madigan2026). Blood lead is inversely related to
+      stature over 0.14-1.92 umol/L in 1454 children (frisancho1991), and a rat lead model shows
+      increased - not decreased - ERK1/2, JNK, p38 and Akt phosphorylation (xu2014).
+    what_is_missing: >-
+      For zinc: no experiment identifies which zinc-dependent protein at the plate is rate-limiting,
+      despite the obvious candidates (SOX9, RUNX2 and every other zinc-finger factor, and the
+      matrix metalloproteinases). For iron: no test of the Fe(II)-dependent prolyl hydroxylases that
+      set HIF-1alpha stability, or of the lysyl hydroxylases of collagen crosslinking, under dietary
+      restriction with a physeal readout. For vitamin A: no RAR or RXR node exists in the atlas and
+      no dietary vitamin A manipulation has been coupled to a retinoid receptor readout at the
+      plate. For lead: no target at all.
+    nearest_evidence: [brown2002, peng2025, madigan2026, frisancho1991, xu2014]
+    discriminating_experiment: >-
+      Model system - weanling rats on purified diets differing only in zinc (2, 10 or 30 mg/kg) for
+      3 weeks, pair-fed to control for anorexia, which is the standard confounder of zinc
+      restriction. Readout - tibial growth rate by calcein double labelling; growth plate zone
+      heights; laser-capture microdissection of resting, proliferative and hypertrophic zones with
+      targeted proteomics for SOX9, RUNX2, MMP13 and IGF1R; and zinc quantification in
+      microdissected cartilage by ICP-MS. Expected result - if zinc acts at the plate, pair-fed
+      zinc-restricted animals show reduced tibial growth rate with a fall in cartilage zinc content
+      and a zone-specific fall in at least one candidate protein; if zinc acts only through appetite
+      and systemic IGF-1, pair-feeding abolishes the growth difference and cartilage zinc content is
+      defended.
+    tractability: 4
+
+  - gap_id: g_l10env_008
+    question: >-
+      Of the observed maximum secular gain in adult height of about 20 cm per century, how much is
+      attributable to each of protein and energy intake, infection and inflammation burden, and
+      other exposures, quantified as cm of adult height per unit of exposure?
+    type: quantitative_gap
+    layer: L10
+    why_it_matters: >-
+      The ~20 cm maximum secular gain and the ~20 cm between-population range are the two numbers
+      that bound the whole environmental contribution to human stature. Without an attribution, the
+      atlas can say how much environment can do but not which environmental variable does it, and
+      cannot predict the height consequence of any policy or exposure change. It also determines
+      how much of the between-population height difference can be read as genetic.
+    what_is_known: >-
+      The maximum century-scale gains are +20.2 cm (South Korean women, 95% CrI 17.5-22.7) and
+      +16.5 cm (Iranian men, 13.3-19.7) (ncd2016); the between-population range is 19-20 cm and has
+      not narrowed. Reversals of about 5 cm occurred in several sub-Saharan African countries for
+      cohorts born after the early 1960s (ncd2016). Individual exposures have been quantified in
+      isolation and are small by comparison: zinc supplementation 0.350 SD of height increment
+      (brown2002); SQ-LNS 0.15 LAZ, 11% of maximal benefit (watson2025); a one-to-two-year famine in
+      childhood 1.4-2.4 cm of adult height (abera2026); 4-6 years of inhaled budesonide 1.2 cm
+      (kelly2012); upward wealth mobility 1.88 cm (varghese2021). These sum to far less than 20 cm.
+    what_is_missing: >-
+      No decomposition exists. NCD-RisC carries no biological or dietary covariate (ncd2016,
+      ncd2020), and the intervention estimates are not on a common scale with the cohort trend. The
+      gap between the sum of the identified exposures and the observed secular gain is itself
+      unquantified, so it is unknown whether the trend is the sum of many small known effects or is
+      dominated by an unmeasured one.
+    nearest_evidence: [ncd2016, ncd2020, brown2002, watson2025, abera2026, kelly2012, varghese2021]
+    discriminating_experiment: >-
+      Model system - a country-year panel linking NCD-RisC mean height by birth cohort to FAO food
+      balance sheet protein and animal-protein supply, under-5 mortality and infectious disease
+      burden, and GDP, analysed with a within-country fixed-effects specification lagged to the
+      birth cohort's first 1000 days, and validated against the natural experiments (German
+      reunification, the Dutch plateau, the sub-Saharan reversals) as out-of-sample tests. Readout -
+      cm of adult height per 10 g/day of animal protein supply and per 10-per-1000 change in under-5
+      mortality, with the fraction of the observed secular variance explained. Expected result - if
+      nutrition dominates, animal protein supply alone explains more than half the within-country
+      variance and correctly signs the sub-Saharan reversals; if infection dominates, under-5
+      mortality is the stronger predictor; if a substantial residual remains after both, an
+      unmeasured exposure is carrying the trend and should be named.
+    tractability: 5
+
+  - gap_id: g_l10env_009
+    question: >-
+      Are SOCS2, SOCS3 and phosphorylated STAT5B expressed in the human growth plate, in which
+      zones, and does their abundance differ between children with and without chronic
+      inflammatory disease?
+    type: species_gap
+    layer: L10
+    why_it_matters: >-
+      SOCS-mediated interruption of GH-STAT5B signalling is the mechanism the field uses to explain
+      growth failure in juvenile idiopathic arthritis, inflammatory bowel disease and chronic
+      infection, and it is the mechanism this layer routes inflammation through. Every supporting
+      experiment is rodent, and the atlas records socs2_protein at L4 with human_evidence: absent.
+      A human growth plate that does not express SOCS2 in the proliferative zone would break the
+      chain between a well-evidenced human epidemiology and a well-evidenced mouse mechanism.
+    what_is_known: >-
+      In mice, SOCS2 is the only SOCS induced by GH in chondrocytes; its deletion increases
+      chondrocyte STAT1, STAT3 and STAT5 phosphorylation, growth plate width, chondrocyte
+      proliferation and bone growth rate, and increases the number of phospho-STAT5-positive
+      hypertrophic chondrocytes (pass2012). TNF-alpha exposure of growth plate chondrocytes for 48 h
+      increases SOCS2 protein, and Socs2-null mice are 6% longer with 24% wider growth plates
+      (macrae2009). GH-driven growth in the absence of SOCS2 does not require increased IGF-1
+      (dobie2015), and Socs2 deletion protects mouse bone from DSS colitis (dobie2018). In the
+      liver, IL-6 is required for endotoxin-induced loss of GH-STAT5 signalling via CIS and SOCS-3
+      (denson2003). The atlas has no SOCS3 node at all.
+    what_is_missing: >-
+      No immunohistochemistry, in situ hybridisation, single-cell RNA-seq or proteomic dataset
+      reports SOCS2, SOCS3 or phospho-STAT5B in human physeal cartilage, in health or in disease.
+      A targeted Europe PMC search returns only rodent studies and reviews.
+    nearest_evidence: [pass2012, macrae2009, dobie2015, dobie2018, denson2003]
+    discriminating_experiment: >-
+      Model system - archival and prospectively collected human growth plate cartilage from
+      epiphysiodesis, limb-lengthening and corrective osteotomy in children aged 8-16, stratified
+      into those with and without a chronic inflammatory diagnosis, alongside published human
+      growth plate single-cell and spatial transcriptomic datasets. Readout - zone-resolved SOCS2
+      and SOCS3 transcript and protein and phospho-STAT5B immunostaining, quantified per zone and
+      normalised to chondrocyte number. Expected result - if the rodent mechanism transfers, SOCS2
+      is detectable in proliferative and hypertrophic zones of all samples and is elevated with
+      reduced phospho-STAT5B in the inflammatory group; if it does not, SOCS2 is absent or
+      uniformly low in human cartilage and the inflammatory growth failure mechanism must be
+      relocated to the liver.
+    tractability: 2
+
+  - gap_id: g_l10env_010
+    question: >-
+      Does residence at high altitude change the oxygen tension inside the human growth plate, and
+      does it stabilise HIF-1alpha in physeal chondrocytes?
+    type: search_established
+    layer: L10
+    why_it_matters: >-
+      Altitude is routinely listed as a growth-restricting exposure acting through hypoxia and
+      HIF-1alpha, and the atlas carries hif1a_chondrocyte and hypoxic_gradient_signaling at L3. But
+      L3 also records that the oxygen tension of the human growth plate has never been measured at
+      any altitude. The plate is avascular and already hypoxic at sea level, so a fall in arterial
+      pO2 need not change physeal pO2 at all. Until the baseline exists, every altitude-HIF claim in
+      this layer is unanchored, and the same missing baseline blocks L1 oxygen_gradient_growth_plate
+      and L7 hypoxia_necrosis_at_fusion.
+    what_is_known: >-
+      Andean children native to 4000 m grow slowly in body size with delayed skeletal maturation and
+      accelerated lung volume growth, and the adult functional phenotype requires acclimatisation
+      during the developmental period rather than in adulthood (frisancho2025). Tibetan children at
+      ~3600 m nevertheless showed rising height across the 2005, 2010, 2014 and 2019 waves of a
+      standardised national survey, at unchanged altitude (zhang2026) - so altitude is not a fixed
+      ceiling and the environmental component dominates the altitude component over 15 years.
+    what_is_missing: >-
+      The search returns no study measuring growth plate oxygen tension or HIF-1alpha protein under
+      chronic hypobaric hypoxia in any species. The available hits are rat chondrocytes under in
+      vitro hypoxia, HIF-2alpha reviews of the skeletal system, and a resveratrol high-altitude
+      osteoporosis model - none of which reports a physeal pO2 or a HIF readout in an
+      altitude-resident animal or human.
+    nearest_evidence: [frisancho2025, zhang2026]
+    discriminating_experiment: >-
+      Model system - growing rats (4-8 weeks) housed in a hypobaric chamber at a simulated 4000 m or
+      at sea level for 6 weeks, with a fibre-optic or Clark-type oxygen microelectrode inserted
+      through a defined trajectory into the proximal tibial growth plate under terminal anaesthesia,
+      and depth-resolved pO2 recorded from perichondrium to chondro-osseous junction. Readout -
+      zone-resolved pO2 profile, HIF-1alpha and HIF-2alpha immunostaining and pimonidazole adduct
+      formation by zone, growth plate zone heights, and tibial growth rate by calcein labelling.
+      Expected result - if altitude reaches the plate, the resting- and proliferative-zone pO2 in
+      hypobaric animals falls measurably below the sea-level profile with increased pimonidazole
+      binding and HIF-1alpha stabilisation, and growth rate falls; if the plate is already at its
+      floor, the depth-resolved pO2 profiles superimpose and altitude effects on stature must be
+      systemic (appetite, birth weight, cardiopulmonary) rather than physeal.
+    tractability: 3
+    search_log_ref: g_l10env_010
+
+  - gap_id: g_l10env_011
+    question: >-
+      Do bisphenol A or phthalate metabolites, at concentrations measured in children's urine, act
+      on growth plate chondrocytes through ERalpha or aromatase?
+    type: search_established
+    layer: L10
+    why_it_matters: >-
+      Endocrine disruptors are the fastest-growing environmental exposure literature in child
+      growth, and the mechanism universally proposed is estrogenic action through ERalpha. Estrogen
+      is the fusion signal, and the atlas grades estrogen_receptor_alpha as the carrier of
+      growth-terminating action with a biphasic dose-response spanning less than an order of
+      magnitude. If EDCs act at the plate through ERalpha, the biphasic dose-response makes the
+      direction of the effect dose-dependent and potentially opposite in different exposure ranges -
+      a prediction nobody has tested. If they act only centrally on GnRH pulse timing, the entry
+      point is L4 gnrh_hormone and the plate is a bystander.
+    what_is_known: >-
+      In 1424 Korean children and adolescents, mono-benzyl phthalate was associated with delayed
+      puberty in girls (OR 2.75, 95% CI 1.34-5.66), and BPA-plus-phthalate mixtures with precocious
+      puberty in boys and delayed puberty in both sexes (choe2025). Estrogen's biphasic action at
+      the plate and the ERalpha dependence of fusion are established in the L4 nodes
+      estrogen_biphasic_dose_effect and estrogen_receptor_alpha.
+    what_is_missing: >-
+      The search returns no study in which a bisphenol or phthalate was applied to mammalian growth
+      plate chondrocytes with an ERalpha or aromatase readout. The cartilage literature that exists
+      concerns zebrafish craniofacial chondrogenesis, adult articular osteoarthritis, and network
+      toxicology and molecular docking papers with no cellular growth plate experiment. There is
+      also no measurement of BPA or phthalate metabolite concentrations in human physeal tissue, so
+      the exposure at the target is unknown.
+    nearest_evidence: [choe2025]
+    discriminating_experiment: >-
+      Model system - primary human growth plate chondrocytes from epiphysiodesis tissue and murine
+      embryonic metatarsal organ cultures, exposed for 8 days to bisphenol A and mono-benzyl
+      phthalate across a 4-log concentration range spanning the measured urinary and estimated
+      serum ranges, with and without the ERalpha antagonist fulvestrant and the aromatase inhibitor
+      letrozole. Readout - metatarsal length increment, proliferative and hypertrophic zone heights,
+      ERalpha target gene induction (e.g. PGR, GREB1) by qPCR, and aromatase activity by tritiated
+      water release. Expected result - if the ERalpha route is real, low concentrations accelerate
+      and high concentrations arrest metatarsal growth in a fulvestrant-reversible manner,
+      reproducing estrogen's biphasic curve; if it is not, target gene induction is absent across
+      the whole physiological range and any growth effect is fulvestrant-insensitive.
+    tractability: 3
+    search_log_ref: g_l10env_011
+
+  - gap_id: g_l10env_012
+    question: >-
+      In children with psychosocial short stature, what is the quantitative deficit in GH secretory
+      burst mass and frequency by deconvolution analysis, and how fast does it normalise after
+      removal from the adverse environment?
+    type: known_unknown
+    layer: L10
+    why_it_matters: >-
+      Psychosocial short stature is the only exposure in this layer that suppresses growth with no
+      nutritional component and reverses on removal of the exposure. It is therefore the cleanest
+      demonstration that a purely social input reaches the somatotropic axis, and the reversal
+      kinetics would bound how fast the human growth plate can respond to restoration of GH
+      pulsatility - a number the atlas needs for catch-up growth and has nowhere else. The defining
+      literature predates deconvolution analysis of GH pulsatility entirely.
+    what_is_known: >-
+      The syndrome was defined by a two-part 1967 clinical and endocrinologic case series in which
+      emotional deprivation produced growth retardation clinically simulating idiopathic
+      hypopituitarism (powell1967a, powell1967). Neither record carries an abstract in Europe PMC,
+      so the specific hormone values, sample size and recovery kinetics have not been verified in
+      this sweep and the full text is queued in sources/access_queue.md. The L4 nodes
+      gh_secretion_pulsatility and gh_pulse_pattern_hypothesis establish that 10-minute sampling with
+      deconvolution is the standard for quantifying human GH secretion, and that burst mass rather
+      than the 24-hour integral may be the physiologically read variable.
+    what_is_missing: >-
+      No modern study reports deconvolution-analysed 24-hour GH profiles in psychosocial short
+      stature, before and after removal from the environment, with serial height velocity. The
+      syndrome's central mechanistic claim rests on assays and study designs from the 1960s and 1970s.
+    nearest_evidence: [powell1967, powell1967a]
+    discriminating_experiment: >-
+      Model system - children meeting criteria for psychosocial short stature at the point of
+      removal into foster or hospital care, each serving as their own control, with age-, sex- and
+      bone-age-matched short-stature controls without psychosocial adversity. Readout - 24-hour
+      10-minute-interval GH sampling with deconvolution for burst number, burst mass and basal
+      secretion, at admission and at 4, 12 and 26 weeks, with serum IGF-1 and IGFBP-3, and
+      knemometry-grade lower-leg length velocity weekly. Expected result - if the lesion is
+      secretory, admission burst mass is reduced by more than 50% versus matched controls with
+      preserved burst frequency, and normalises within 4-12 weeks of removal, preceding the rise in
+      lower-leg growth velocity; if the lesion is peripheral GH resistance, burst mass is normal at
+      admission while IGF-1 is low, and IGF-1 rises without a change in GH secretion.
+    tractability: 2

@@ -1,7 +1,97 @@
 id: trial_endpoint_annualized_growth_velocity
-name: Annualized growth velocity as trial endpoint
+name: Annualised growth velocity as a trial endpoint
+aliases: [AGV, annualised height velocity, AHV]
 type: method
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Annualised growth velocity is the endpoint on which every modern growth drug has been
+  licensed. It is computed as (height minus baseline height) divided by elapsed time,
+  scaled to 365.25 days, and it has three properties that make it attractive and one that
+  makes it dangerous. It is continuous, it is measurable within 52 weeks, and it is
+  sensitive - the CNP analogues, infigratinib and the long-acting growth hormones all
+  separate from control on it. What it cannot do is distinguish growth that is added from
+  growth that is merely brought forward, because a drug that also advances skeletal
+  maturation raises velocity while shortening the remaining growth period. Both US
+  accelerated approvals in achondroplasia state this explicitly by making continued
+  approval contingent on confirmatory verification of clinical benefit. The measurement
+  itself carries structural noise: annualised velocity computed over a single 52-week
+  window inherits seasonal growth variation and measurement error amplified by the short
+  interval, which is why trials use least-squares means with imputation and why the
+  standard deviations around individual responses are large. It is also strongly
+  age-dependent - untreated achondroplasia natural history gives 9.3 cm/yr (male) and
+  10.4 cm/yr (female) at age 1 falling to 4.1 and 4.6 cm/yr at age 4 - so a velocity
+  difference is uninterpretable without a matched-age comparator.
+quantitative:
+  - parameter: untreated achondroplasia annualised growth velocity at age 1
+    value: 9.3 (M) / 10.4 (F)
+    unit: cm/yr
+    conditions: ACHieve global prospective natural history study, 259 children in 15 countries, no growth-promoting therapy
+    species: human
+    source_ref: mcdonnell2026a
+    uncertainty: means; median follow-up 21 months
+  - parameter: untreated achondroplasia annualised growth velocity at age 4
+    value: 4.1 (M) / 4.6 (F)
+    unit: cm/yr
+    conditions: same cohort; a 55% fall in three years, comparable in size to any drug effect measured
+    species: human
+    source_ref: mcdonnell2026a
+    uncertainty: means
+  - parameter: typical drug effect size measured on this endpoint
+    value: 1.36-1.74
+    unit: cm/yr
+    conditions: CNP analogue class 1.36 (95% CI 1.05-1.68); vosoritide 1.57; navepegritide 1.49; infigratinib 1.74
+    species: human
+    source_ref: kamrulhasan2026
+    uncertainty: separate trials, no head-to-head
+  - parameter: regulatory status of the endpoint
+    value: surrogate
+    unit: not applicable
+    conditions: both achondroplasia approvals are accelerated, contingent on verification of clinical benefit in confirmatory trials
+    species: human
+    source_ref: fda_voxzogo_label_2025
+    uncertainty: categorical regulatory statement
+localization:
+  - "not applicable: whole-organism auxological measure, not zone-localised"
+human_evidence: direct
+human_evidence_note: >-
+  The endpoint is defined and used in human regulatory trials, and its age dependence is
+  quantified by prospective human natural history data.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: A human trial methodology node.
+confidence: A
+claim_grades:
+  - claim: Annualised growth velocity is the licensing endpoint for current achondroplasia and GH therapies.
+    grade: A
+    basis: Stated in both FDA labels and used as the primary endpoint in every pivotal trial cited in this layer.
+  - claim: The endpoint cannot distinguish added growth from redistributed growth.
+    grade: A
+    basis: Structural property of the measure, made explicit by the accelerated-approval requirement for confirmatory clinical benefit.
+  - claim: Age-related decline in untreated velocity is of the same magnitude as the drug effects being measured.
+    grade: A
+    basis: ACHieve natural history - 9.3 to 4.1 cm/yr between ages 1 and 4 in untreated males, versus drug effects of 1.4-1.7 cm/yr.
+key_refs:
+  - ref_id: mcdonnell2026a
+    pmid: '41505353'
+    first_author: McDonnell C
+    year: 2026
+    type: primary
+    one_line_finding: ACHieve natural history - untreated achondroplasia AGV falls from 9.3/10.4 cm/yr at age 1 to 4.1/4.6 at age 4.
+  - ref_id: fda_voxzogo_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Accelerated approval based on improvement in annualised growth velocity, contingent on confirmatory verification of clinical benefit.
+  - ref_id: fda_yuviwel_label_2026
+    year: 2026
+    type: regulatory
+    one_line_finding: Same accelerated-approval construction for the second agent in the class.
+  - ref_id: kamrulhasan2026
+    pmid: '42306228'
+    first_author: Kamrul-Hasan ABM
+    year: 2026
+    type: meta_analysis
+    one_line_finding: Pools the endpoint across four RCTs at 1.36 cm/yr (95% CI 1.05-1.68).
+open_questions: [g_l12b_001, g_l12pharm_001]
+contradicts: []
 last_verified: '2026-08-05'

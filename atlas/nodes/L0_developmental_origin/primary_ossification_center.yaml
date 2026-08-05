@@ -1,9 +1,60 @@
 id: primary_ossification_center
-name: Primary ossification center
-type: tissue_structure
-layer: L0
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Primary ossification centre (POC)
 aliases:
 - POC
+- diaphyseal ossification centre
+type: tissue_structure
+summary: 'The POC is the mid-diaphyseal territory where cartilage is first replaced by bone and marrow, and
+  it is the event that splits one cartilage rod into two growth plates. In rabbit it is stage 4a of a 16-stage
+  sequence, appearing well before epiphyseal cartilage canals (stage 7) and the secondary centre (stages 9-10)
+  (rivas2002). Its timing is the clock against which all later skeletal maturity scoring is calibrated. The
+  functional inheritance for the postnatal plate is geometric rather than molecular: once the POC exists, each
+  plate has a fixed polarity - resting zone facing the epiphysis, hypertrophic zone facing the marrow - and
+  elongation can only add bone at the metaphyseal side. Where an element forms a POC but only ONE growth plate
+  is a patterning decision made at this stage and it is not incidental: in mouse metatarsals Pthlh is expressed
+  in the reserve zone only at the growth-plate-forming end, while the opposite end lacks a PTHrP+ reserve zone
+  and shows premature Ihh expression and no plate (reno2025). The presence of a PTHrP+ reserve pool is therefore
+  the operational definition of a growth plate, and its patterning is an L0 event with a direct L2 consequence.'
+localization:
+- 'mouse and rabbit mid-diaphysis: confirmed'
+- 'mouse metatarsal: single-ended reserve zone patterning (reno2025)'
+- 'human fetus: POCs of long bones present from the first trimester'
+human_evidence: indirect
+human_evidence_note: Human POC appearance is directly observable radiographically, but the patterning claim
+  about which ends form plates rests on mouse in situ hybridization.
+species_basis:
+- mouse
+- rabbit
+- human
+translation_risk: moderate
+translation_risk_reason: Anatomy transfers; the PTHrP-reserve-zone patterning result is murine and has not
+  been checked in human metacarpals, which are likewise single-ended.
+confidence: C
+key_refs:
+- ref_id: rivas2002
+  pmid: '11792784'
+  first_author: Rivas R
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: POC formation is stage 4a of 16 in the rabbit sequence, preceding cartilage canals and
+    the secondary centre
+- ref_id: reno2025
+  pmid: '40088130'
+  doi: 10.1002/dvdy.70013
+  first_author: Reno PL
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: Pthlh marks the reserve zone only at the growth-plate-forming end of the mouse metatarsal;
+    the opposite end has no PTHrP+ reserve zone and shows premature Ihh
+- ref_id: long2013
+  pmid: '23284041'
+  first_author: Long F
+  year: 2013
+  type: review
+  one_line_finding: Places the POC within the endochondral sequence and its role in dividing the template into
+    two plates
+open_questions:
+- g_l0dev_008
+layer: L0
+stub: false
+last_verified: '2026-08-05'

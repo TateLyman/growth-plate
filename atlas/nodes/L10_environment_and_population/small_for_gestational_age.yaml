@@ -1,9 +1,86 @@
 id: small_for_gestational_age
 name: Small for gestational age
 type: phenotype
-layer: L10
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - SGA
+summary: 'Small for gestational age is birth size below -2 SDS for gestational age and is the population-scale
+  readout of a restricted intrauterine environment. In a population-based Swedish cohort of 3650 healthy
+  full-term singletons followed from birth to final height at about 18 years, infants defined SGA on birth
+  length (SGAL) showed catch-up growth in the first 6 months, so that by 1 year only 13.4% remained below
+  -2 SDS in height, falling further to 7.9% at 18 years; SGAL infants nevertheless carried a 7.1-fold
+  higher relative risk of short final stature (95% CI 3.7-13.6), and those who failed to catch up constituted
+  21% of all short prepubertal children (karlberg1995). Definition matters: 22% of short 18-year-olds
+  had been short at birth by length, but only 14% had been light at birth by weight. In a second population-based
+  Swedish series, 88% of healthy full-term singleton SGA infants achieved catch-up during the first 2
+  years, most of the increase occurring by 2 months, and the SGA children still short at 2 years had a
+  markedly higher risk of short stature later; about 20% of all short children had been born SGA (karlberg2002
+  and its companion series). The endocrine entry point is the fetal-to-infant transition of the IGF system,
+  which no SGA cohort has measured longitudinally alongside height.'
+quantitative:
+- parameter: proportion of length-defined SGA infants still below -2 SDS in height at 1 year
+  value: '13.4'
+  unit: '%'
+  conditions: 3650 healthy full-term Swedish singletons
+  species: human
+  source_ref: karlberg1995
+  uncertainty: not reported
+- parameter: proportion of length-defined SGA infants still below -2 SDS in height at 18 years
+  value: '7.9'
+  unit: '%'
+  conditions: same cohort
+  species: human
+  source_ref: karlberg1995
+  uncertainty: not reported
+- parameter: relative risk of short final stature in length-defined SGA
+  value: '7.1'
+  unit: relative risk
+  conditions: same cohort, vs non-SGAL
+  species: human
+  source_ref: karlberg1995
+  uncertainty: 95% CI 3.7-13.6
+- parameter: proportion of short prepubertal children who had been SGA by length
+  value: '21'
+  unit: '%'
+  conditions: same cohort
+  species: human
+  source_ref: karlberg1995
+  uncertainty: not reported
+localization:
+- 'human SYS: birth size phenotype'
+human_evidence: direct
+human_evidence_note: Two population-based Swedish birth cohorts with serial measured height from birth
+  to final height.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype defined against human birth size references.
+confidence: A
+claim_grades:
+- claim: Most length-defined SGA infants catch up, leaving 7.9% short at 18 years.
+  grade: A
+  basis: Population-based cohort of 3650 with final height (karlberg1995).
+- claim: SGA defined by birth length identifies future short stature better than SGA defined by birth
+    weight.
+  grade: A
+  basis: Within-cohort comparison of definitions (karlberg1995).
+key_refs:
+- ref_id: karlberg1995
+  pmid: '8552442'
+  first_author: Karlberg J
+  year: 1995
+  type: primary
+  one_line_finding: In 3650 Swedish full-term singletons, 13.4% of length-defined SGA infants were still
+    below -2 SDS at 1 year and 7.9% at 18 years, with a 7.1-fold relative risk of short final stature.
+- ref_id: karlberg2002
+  pmid: '12510975'
+  first_author: Karlberg J
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: Most SGA infants (82.9%) showed catch-up during the first 6 months and 94.3% reached
+    a final height within the normal range; 15.2% of infants still short at 6 months remained short into
+    adulthood (abstract only).
+open_questions:
+- g_l10env_008
+layer: L10
+stub: false
+last_verified: '2026-08-05'

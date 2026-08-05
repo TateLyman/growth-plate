@@ -1,7 +1,100 @@
 id: who_growth_standard
 name: WHO Child Growth Standards
+aliases:
+- WHO MGRS standards
+- WHO 2006 standards
 type: dataset
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The WHO Child Growth Standards are prescriptive rather than descriptive: they were built from
+  children raised under conditions defined a priori as growth-permitting (breastfeeding, non-smoking mothers,
+  adequate nutrition, no major morbidity) in six sites on five continents, so they describe how children
+  should grow rather than how a given population does grow. The decisive empirical result underpinning
+  that design is that between-site variance in linear growth was small: site differences accounted for
+  only about 3% of the variance in length, while individual differences within sites accounted for about
+  70% (who2006). This is the strongest single piece of evidence that under permissive conditions the human
+  linear-growth trajectory is close to species-universal in the first five years, which in turn is what
+  licenses the atlas to treat early growth-velocity targets as a property of the organism rather than
+  of a population. The companion velocity standards give 1-, 2-, 3-, 4- and 6-month length increments
+  with percentiles from birth to 24 months (who_velocity_2009), and these differ systematically from US
+  reference increments, most at the lower percentiles (de2011) - so the choice of reference changes what
+  counts as growth faltering more than it changes the median.'
+quantitative:
+- parameter: proportion of variance in linear growth attributable to study site
+  value: '3'
+  unit: percent
+  conditions: 'WHO Multicentre Growth Reference Study, six sites: Brazil, Ghana, India, Norway, Oman,
+    USA'
+  species: human
+  source_ref: who2006
+  uncertainty: approximately 3 percent
+- parameter: proportion of variance in linear growth attributable to individuals within sites
+  value: '70'
+  unit: percent
+  conditions: same study
+  species: human
+  source_ref: who2006
+  uncertainty: approximately 70 percent
+- parameter: number of sites in the MGRS
+  value: '6'
+  unit: sites
+  conditions: five continents
+  species: human
+  source_ref: who2006
+  uncertainty: exact
+- parameter: shortest increment interval for which velocity standards were constructed
+  value: '1'
+  unit: month
+  conditions: weight increments birth to 12 months; length increments from 2-month intervals
+  species: human
+  source_ref: who_velocity_2009
+  uncertainty: as published; flagged verify_by_hand
+- parameter: age range of the WHO velocity standards
+  value: 0-24
+  unit: months
+  conditions: length, weight and head circumference increments
+  species: human
+  source_ref: who_velocity_2009
+  uncertainty: as published; flagged verify_by_hand
+localization:
+- 'human whole organism: recumbent length and standing height, birth to 5 years'
+human_evidence: direct
+human_evidence_note: Prospective longitudinal and cross-sectional anthropometry of healthy children in
+  six countries under specified feeding and environmental criteria.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human reference dataset.
+confidence: A
+claim_grades:
+- claim: Under growth-permitting conditions, site of origin explains only about 3% of variance in early
+    linear growth
+  grade: A
+  basis: Prospective multicentre design with prescriptive inclusion criteria and formal variance decomposition
+    (who2006).
+- claim: The WHO velocity standards are the appropriate tool for detecting growth faltering in infancy
+  grade: C
+  basis: Argued by de2011 from the divergence between WHO and US increments; this is an inference about
+    clinical utility rather than a measured outcome.
+key_refs:
+- ref_id: who2006
+  pmid: '16817679'
+  first_author: WHO Multicentre Growth Reference Study Group
+  year: 2006
+  type: primary
+  one_line_finding: Site accounts for about 3% and individuals within sites for about 70% of variance
+    in linear growth across six countries.
+- ref_id: de2011
+  pmid: '21708799'
+  first_author: de Onis M
+  year: 2011
+  type: primary
+  one_line_finding: WHO and US growth velocity references differ, most at the lower percentiles.
+- ref_id: who_velocity_2009
+  first_author: WHO Multicentre Growth Reference Study Group
+  year: 2009
+  type: regulatory
+  doi: null
+  one_line_finding: Publishes 1- to 6-month length, weight and head circumference increment standards
+    from birth to 24 months.
 last_verified: '2026-08-05'

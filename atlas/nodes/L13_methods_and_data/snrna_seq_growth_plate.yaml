@@ -1,7 +1,62 @@
 id: snrna_seq_growth_plate
-name: snRNA-seq of the growth plate
+name: Single-nucleus RNA-seq of the growth plate
+aliases:
+- snRNA-seq physis
 type: method
-layer: L13
-stub: true
+summary: |
+  Single-nucleus RNA-seq is the technical answer to the growth plate's central sampling
+  problem: nuclei can be released from frozen, archival or mineralised tissue without the
+  enzymatic digestion that destroys large hypertrophic chondrocytes, and methodological
+  reviews of musculoskeletal omics name it explicitly as the way around mineralised-matrix
+  dissociation (li2025, delos2026). It buys that access at a stated cost - loss of cytoplasmic
+  transcripts, lower transcript capture per cell, and depletion of mitochondrial and many
+  secreted-protein mRNAs - which matters in a tissue whose defining cells are secretory. The
+  decisive point for this atlas is that the buy has not been made: no single-nucleus dataset
+  from HUMAN growth plate tissue was located in this sweep, and the human growth plate single-
+  cell corpus remains dissociation-based (gse288028). Because archival human physeal blocks
+  exist in pathology departments in far greater numbers than the roughly 100 postnatal plates
+  ever studied prospectively (human_growth_plate_tissue_scarcity), snRNA-seq on archived
+  material is the single cheapest available route to enlarging the human evidence base, and it
+  has not been taken.
+quantitative:
+- parameter: human growth plate single-nucleus RNA-seq datasets located
+  value: '0'
+  unit: datasets
+  conditions: GEO and Europe PMC sweep 2026-08-05
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see search log g_l13b_006
+localization:
+- 'human HZ: recoverable in principle by nuclear isolation; never attempted'
 human_evidence: absent
+human_evidence_note: No human growth plate single-nucleus dataset was located.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The method is species-agnostic; the risk is that its absence in human keeps
+  the human cell census dependent on murine annotation.
+confidence: B
+key_refs:
+- ref_id: li2025
+  first_author: Li X
+  year: 2025
+  type: review
+  one_line_finding: Single-nucleus sequencing named as the route around mineralised-matrix dissociation
+    in skeletal tissue.
+- ref_id: delos2026
+  first_author: Delos Santos K
+  year: 2026
+  type: review
+  one_line_finding: Decalcification and low RNA integrity constrain musculoskeletal single-cell and
+    spatial work.
+- ref_id: gse288028
+  first_author: GEO submitters
+  year: 2025
+  type: dataset
+  one_line_finding: The human growth plate single-cell corpus is dissociation-based, not nucleus-based.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

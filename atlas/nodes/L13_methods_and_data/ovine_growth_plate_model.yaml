@@ -1,7 +1,73 @@
 id: ovine_growth_plate_model
 name: Ovine growth plate model
-type: method
+aliases:
+- sheep physis model
+type: process
+summary: |
+  Sheep are used where a large, weight-bearing, surgically accessible physis is needed over
+  months rather than weeks, principally for mechanically modulated growth and for tissue
+  mechanics. Tensile properties of the physis were characterised across anatomical location,
+  thickness, strain rate and age in ovine tissue alongside human comparison, establishing that
+  physeal tensile behaviour is site-dependent and strain-rate dependent (williams2001). Ovine
+  and bovine cartilage supplied the zonal biochemistry that underpins matrix models -
+  differential aggrecan synthesis and breakdown rates by zone (shapses1994) and collagen
+  fibril composition (mendler1989, keene1995). Growth modulation by sustained compression has
+  been compared across three species at two anatomical locations, which is the closest thing
+  the field has to a cross-species dose-response for mechanical growth suppression
+  (stokes2006). Lamb studies provided the recumbency-growth observations behind the growing-
+  pains literature (noonan2004). Scored on the four-axis scheme defined in
+  mouse_model_translation_risk (fusion competence, plate architecture, scale, tempo; each 1-5,
+  mean reported). Sheep score A=3, B=1, C=1, D=2, mean 1.75, translation_risk moderate. The
+  weak axis is fusion: ovine epiphyseal closure timing is documented for veterinary purposes
+  but the terminal cellular events have not been characterised, so sheep cannot currently
+  substitute for rabbit as a fusion model.
+quantitative:
+- parameter: sheep translation risk score (this layer, 1-5)
+  value: '1.75'
+  unit: score
+  conditions: mean of fusion competence 3, architecture 1, scale 1, tempo 2
+  species: ovine
+  source_ref: williams2001
+  uncertainty: scoring scheme defined in mouse_model_translation_risk
+localization:
+- 'ovine PHZ: tensile failure occurs preferentially near the hypertrophic zone'
+human_evidence: indirect
+human_evidence_note: Ovine physeal tensile data were generated alongside human comparison in the
+  same study.
+species_basis:
+- ovine
+- bovine
+- human
+translation_risk: moderate
+translation_risk_reason: Large weight-bearing physis with human-comparable dimensions, but terminal
+  fusion biology is uncharacterised in sheep.
+confidence: C
+key_refs:
+- ref_id: williams2001
+  first_author: Williams JL
+  year: 2001
+  type: primary
+  one_line_finding: Physeal tensile properties vary with anatomical location, thickness, strain rate
+    and age.
+- ref_id: stokes2006
+  first_author: Stokes IA
+  year: 2006
+  type: primary
+  one_line_finding: Endochondral growth modulated by sustained compression compared across three
+    species at two anatomical locations.
+- ref_id: shapses1994
+  first_author: Shapses SA
+  year: 1994
+  type: primary
+  one_line_finding: Differential aggrecan synthesis and breakdown rates between growth plate zones.
+- ref_id: noonan2004
+  first_author: Noonan KJ
+  year: 2004
+  type: primary
+  one_line_finding: Recumbency-associated growth documented in a lamb model.
+open_questions:
+- g_l6mech_002
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

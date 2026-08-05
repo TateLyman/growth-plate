@@ -1,7 +1,66 @@
 id: hoxa13_gene
 name: HOXA13
+aliases:
+- Hoxa13
 type: gene
+summary: 'HOXA13 specifies the autopod, the limb segment whose growth plates are the slowest and the earliest
+  to senesce. Human heterozygous HOXA13 homeodomain mutations cause hand-foot-genital syndrome, whose skeletal
+  phenotype is size-specific rather than count-specific: a short first metacarpal and small distal phalanges
+  with normal digit number (mortlock1997). This is the cleanest human statement that an autopod HOX gene sets
+  how much a defined set of elements grows. The mechanistic bridge to the growth plate is not established:
+  nobody has measured elongation rate, plate height or chondrocyte kinetics in a HOXA13 carrier or in a Hoxa13
+  mutant mouse growth plate. What is measured is that autopod plates (metacarpal, phalanx) run at roughly half
+  the elongation rate of tibia and femur at one week in mouse and fuse at 3-4 weeks while tibia and femur are
+  still open at 12 weeks (lui2018), and that a distal-limb HOX-cluster gene, Hoxd13, is one of the genes differentially
+  expressed between phalangeal and tibial plates independently of age. HOXA13 is therefore a candidate for
+  the autopod''s distinct growth programme, not a demonstrated cause of it.'
+quantitative:
+- parameter: age at epiphyseal fusion, mouse phalanx versus tibia/femur
+  value: 3 vs >12
+  unit: weeks
+  conditions: C57BL/6 mouse, Masson trichrome histology; metacarpal fuses at ~4 weeks
+  species: mouse
+  source_ref: lui2018
+  uncertainty: 12 weeks was the last timepoint studied; tibia and femur still unfused
+localization:
+- 'mouse autopod: confirmed by classical expression studies'
+- 'human autopod: inferred from HFG syndrome phenotype distribution'
+human_evidence: direct
+human_evidence_note: HOXA13 homeodomain mutations cause hand-foot-genital syndrome in humans with a defined,
+  size-restricted autopod skeletal phenotype.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The human genotype-phenotype link is direct, but the step from HOXA13 genotype to
+  any growth plate parameter is untested in either species.
+confidence: D
+claim_grades:
+- claim: HOXA13 loss-of-function causes a size-restricted human autopod skeletal phenotype
+  grade: A
+  basis: mendelian human genetics with a consistent radiographic phenotype (mortlock1997)
+- claim: HOXA13 sets the autopod growth plate's distinctive kinetics
+  grade: E
+  basis: inference; no growth plate measurement has been made in any HOXA13/Hoxa13 mutant
+key_refs:
+- ref_id: mortlock1997
+  pmid: '9020844'
+  first_author: Mortlock DP
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: HOXA13 homeodomain mutation causes hand-foot-genital syndrome with short first metacarpal
+    and small distal phalanges
+- ref_id: lui2018
+  pmid: '30036371'
+  doi: 10.1371/journal.pbio.2005263
+  first_author: Lui JC
+  year: 2018
+  type: primary
+  one_line_finding: Autopod growth plates elongate at roughly half the rate of tibia/femur and fuse at 3-4
+    weeks in mouse while long-bone plates remain open at 12 weeks
+open_questions:
+- g_l0dev_001
+- g_l0dev_004
 layer: L0
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

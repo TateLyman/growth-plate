@@ -1,7 +1,107 @@
 id: cranial_base_synchondrosis
 name: Cranial base synchondrosis
+aliases:
+- spheno-occipital synchondrosis
 type: tissue_structure
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The synchondroses of the cranial base are bidirectional growth plates: a mirror-image pair of
+  hypertrophic zones flanking a central resting zone, elongating in both directions at once, in contrast
+  to the unidirectional physis of a long bone. The spheno-occipital synchondrosis is the last to close
+  and is the principal contributor to postnatal cranial base lengthening. Its closure is a staged process
+  resolvable on 3D CT, and in 630 Korean subjects aged 6-18 the intermediate stages 3 and 4 fell at 12.7-13.9
+  years in males and 11.0-12.5 years in females, with females significantly more advanced than males at
+  the same age (odds ratio 1.972, 95% CI 1.063-3.658) (kim2024). Fusion stage correlated with cervical
+  vertebral maturation stage at Spearman 0.955 in males and 0.964 in females, so the cranial base and
+  the vertebral column mature almost in lockstep - a much tighter coupling than that between skeletal
+  and dental maturation. That contrast is the mechanistic point: two endochondral sites in different embryological
+  lineages track each other closely, while an adjacent non-endochondral maturation process in the same
+  head does not.'
+quantitative:
+- parameter: subjects in the 3D CT fusion-staging series
+  value: '630'
+  unit: subjects
+  conditions: 308 men and 322 women, Korean, ages 6-18 y, 26 age-sex groups
+  species: human
+  source_ref: kim2024
+  uncertainty: exact
+- parameter: age at spheno-occipital fusion stages 3-4, males
+  value: 12.7-13.9
+  unit: years
+  conditions: 3D CT reoriented to Frankfort horizontal
+  species: human
+  source_ref: kim2024
+  uncertainty: proposed as an indicator of the pubertal growth peak
+- parameter: age at spheno-occipital fusion stages 3-4, females
+  value: 11.0-12.5
+  unit: years
+  conditions: same series
+  species: human
+  source_ref: kim2024
+  uncertainty: earlier than males by 1.4-1.7 y
+- parameter: odds of a more advanced fusion stage in females at the same age
+  value: '1.972'
+  unit: odds ratio
+  conditions: ordinal logistic regression, proportional odds model
+  species: human
+  source_ref: kim2024
+  uncertainty: 95% CI 1.063-3.658, p<0.05
+- parameter: correlation of fusion stage with cervical vertebral maturation stage, males
+  value: '0.955'
+  unit: Spearman rho
+  conditions: same series
+  species: human
+  source_ref: kim2024
+  uncertainty: p<0.001
+- parameter: correlation of fusion stage with cervical vertebral maturation stage, females
+  value: '0.964'
+  unit: Spearman rho
+  conditions: same series
+  species: human
+  source_ref: kim2024
+  uncertainty: p<0.001
+- parameter: correlation of fusion stage with chronological age, males
+  value: '0.887'
+  unit: Spearman rho
+  conditions: same series
+  species: human
+  source_ref: kim2024
+  uncertainty: p<0.001
+- parameter: correlation of fusion stage with chronological age, females
+  value: '0.885'
+  unit: Spearman rho
+  conditions: same series
+  species: human
+  source_ref: kim2024
+  uncertainty: p<0.001
+localization:
+- 'human cranial base: spheno-occipital synchondrosis on 3D CT'
+human_evidence: direct
+human_evidence_note: Cross-sectional 3D CT staging in 630 human subjects with paired cervical vertebral
+  maturation staging.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human imaging series; the murine synchondrosis does not close on a comparable
+  schedule.
+confidence: A
+claim_grades:
+- claim: Spheno-occipital synchondrosis fusion stages 3-4 mark the pubertal growth peak and occur 1.4-1.7
+    years earlier in females
+  grade: A
+  basis: Direct 3D CT staging in 630 subjects with sex-stratified age groups and formal ordinal regression.
+- claim: Cranial base and cervical vertebral maturation are almost perfectly coupled
+  grade: B
+  basis: Spearman 0.955-0.964 in one cross-sectional series; correlation across a wide age range is inflated
+    by shared chronological age.
+key_refs:
+- ref_id: kim2024
+  pmid: '37938056'
+  first_author: Kim SM
+  year: 2024
+  type: primary
+  one_line_finding: Spheno-occipital synchondrosis fusion staged on 3D CT in 630 subjects correlates 0.955-0.964
+    with cervical vertebral maturation and marks the pubertal growth peak.
+open_questions:
+- g_l9organism_016
 last_verified: '2026-08-05'

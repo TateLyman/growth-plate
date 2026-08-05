@@ -1,7 +1,82 @@
 id: energy_availability_growth
-name: Energy availability and growth
+name: Energy availability and linear growth
 type: process
+summary: 'Energy sufficiency is a gate rather than a dose on linear growth: below a threshold the GH-IGF
+  and reproductive axes are switched down, and above it added energy buys very little extra height. The
+  clearest quantitative statement of the ceiling comes from supplementation trials: pooled across 15 randomised
+  trials of small-quantity lipid-based nutrient supplements in 10 low- and middle-income countries (n=36970),
+  the gain in length-for-age Z was 0.15 (95% CI 0.12-0.17), corresponding to 12 days of height-age and
+  11% of the maximal attainable benefit (watson2025). In the INCAP village-randomised trial in Guatemala,
+  a high-quality protein-energy supplement (Atole) improved nutrient intakes and reduced stunting, but
+  only in children under 3 years of age, and the durable adult effects were on schooling, cognition and
+  wages (men''s wages +46% for those supplemented through age 2) rather than on a large height gain (martorell2017).
+  The mechanistic entry points are endocrine and are held in L4: leptin as the adiposity-dependent permissive
+  signal for the reproductive axis, and portal insulin with IGFBP-1 as the acute nutritional gate on IGF-1
+  bioavailability. No study has measured any of these in a randomised energy-supplementation trial with
+  a linear-growth endpoint.'
+quantitative:
+- parameter: length-for-age Z gain from small-quantity lipid-based nutrient supplements
+  value: '0.15'
+  unit: z-score
+  conditions: pooled 15 RCTs, 10 LMICs, n=36970
+  species: human
+  source_ref: watson2025
+  uncertainty: 95% CI 0.12-0.17
+- parameter: equivalent height-age gain from SQ-LNS
+  value: '12'
+  unit: days
+  conditions: same pooled trials
+  species: human
+  source_ref: watson2025
+  uncertainty: 95% CI 9-14
+- parameter: increase in adult male wages after Atole supplementation through age 2
+  value: '46'
+  unit: '%'
+  conditions: INCAP village-randomised trial, Guatemala 1969-1977, followed to 2002-2004
+  species: human
+  source_ref: martorell2017
+  uncertainty: as reported in the review; see primary for CI
+localization:
+- 'human SYS: energy balance -> leptin, insulin, IGFBP-1 -> IGF-1 bioavailability'
+human_evidence: direct
+human_evidence_note: Randomised human supplementation trials with measured linear growth, pooled across
+  36970 children.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: Human intervention data; only the endocrine intermediates are imported from L4
+  rather than measured in these trials.
+confidence: B
+claim_grades:
+- claim: Energy and micronutrient supplementation in undernourished populations produces a small linear
+    growth gain, about 11% of the attainable deficit.
+  grade: A
+  basis: Pooled 15 RCTs with prespecified proportion-of-maximal-benefit metric (watson2025).
+- claim: Supplementation benefits are confined to the first ~3 years of life.
+  grade: B
+  basis: Village-randomised INCAP trial; the age restriction is reported in a review of that trial rather
+    than from a within-trial age interaction test (martorell2017).
+- claim: The energy signal reaches the growth plate via leptin and insulin/IGFBP-1 control of IGF-1 bioavailability.
+  grade: E
+  basis: Endocrine intermediates were not measured in any of these trials; the mechanism is imported from
+    L4 endocrine nodes.
+key_refs:
+- ref_id: watson2025
+  pmid: '41125609'
+  first_author: Watson KM
+  year: 2025
+  type: meta_analysis
+  one_line_finding: SQ-LNS raised LAZ by 0.15 (95% CI 0.12-0.17) across 15 RCTs (n=36970), equal to 12
+    days of height-age and 11% of maximal attainable benefit.
+- ref_id: martorell2017
+  pmid: '28117514'
+  first_author: Martorell R.
+  year: 2017
+  type: review
+  one_line_finding: 'Reviews the INCAP village-randomised Atole vs Fresco trial: reduced stunting only
+    in children under 3 y, and +46% adult male wages for those supplemented through age 2.'
+open_questions:
+- g_l10env_008
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

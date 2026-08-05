@@ -1,7 +1,90 @@
 id: human_growth_plate_biobank
-name: Human growth plate biobanking
+name: Absence of a human growth plate biobank
+aliases:
+- physeal tissue repository
 type: method
+summary: |
+  No dedicated, catalogued, openly accessible biobank of human growth plate tissue was located
+  in this sweep. What exists instead is a set of single-centre, investigator-held collections
+  accumulated from surgical discard, each visible only through the papers that used it: a
+  Stockholm epiphysiodesis series (nilsson1999, nilsson2003, ramesh2022, zhang2024a, chu2026),
+  a Vienna polydactyly series (walzer2014, zoehrer2025), and assorted single-specimen holdings
+  (white2008, wang2014, sales2009). The consequences are measurable rather than rhetorical.
+  Donor counts per study run from 1 to 24 (human_gp_donor_census_20260805). The one
+  transcriptomic study that did profile human growth plate cells at single-cell resolution
+  explicitly withheld its raw human data from GEO - the accession states that raw files were
+  not submitted because of identifiability concerns (gse288028) - so the flagship human
+  dataset cannot be reanalysed at the read level. Tissue-derived measurements that would
+  answer standing atlas questions (zonal oxygen tension, zonal modulus, zonal receptor
+  occupancy) each require fresh tissue, and each investigator must therefore re-solicit tissue
+  from scratch. The absence is not technological: bone-tumour biobanks, fetal tissue
+  programmes and paediatric orthopaedic services already handle this material; what is missing
+  is a shared, consented, age- and site-annotated repository with a public catalogue.
+quantitative:
+- parameter: publicly catalogued human growth plate biobanks located
+  value: '0'
+  unit: repositories
+  conditions: sweep of GEO, ArrayExpress/BioStudies, HCA and the primary literature, 2026-08-05
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: see search log g_l13b_001
+- parameter: human growth plate datasets whose raw human sequence data are withheld from the repository
+  value: 1 of 1
+  unit: datasets
+  conditions: GSE288028, the only human growth plate scRNA-seq deposit
+  species: human
+  source_ref: gse288028
+  uncertainty: stated verbatim in the GEO series record
+- parameter: range of donor numbers per human growth plate tissue study
+  value: 1-24
+  unit: donors
+  conditions: 21 studies with stated donor counts
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: full observed range
+localization:
+- 'human SYS: not applicable - infrastructure, not anatomy'
+human_evidence: direct
+human_evidence_note: The absence was established by direct search of the repositories that would
+  hold such a collection.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Describes human research infrastructure; nothing is transferred from an
+  animal.
+confidence: B
+claim_grades:
+- claim: No public human growth plate biobank exists.
+  grade: B
+  basis: Reproducible null across three repositories plus a literature sweep; a private or unpublicised
+    collection cannot be excluded.
+- claim: Raw human sequence data from the only human growth plate scRNA-seq deposit are withheld.
+  grade: A
+  basis: Stated in the GEO series record for GSE288028.
+key_refs:
+- ref_id: gse288028
+  first_author: GEO submitters
+  year: 2025
+  type: dataset
+  one_line_finding: Human pubertal growth plate scRNA-seq from four epiphysiodesis patients; raw
+    human files explicitly not deposited.
+- ref_id: human_gp_donor_census_20260805
+  first_author: Human Growth System Atlas L13 sweep
+  year: 2026
+  type: dataset
+  one_line_finding: Donor counts per study range from 1 to 24 across 21 studies that report them.
+- ref_id: nilsson2003
+  first_author: Nilsson O
+  year: 2003
+  type: primary
+  one_line_finding: 24-donor proximal tibial biopsy series, never deposited in any repository.
+- ref_id: walzer2014
+  first_author: Walzer SM
+  year: 2014
+  type: primary
+  one_line_finding: 23 polydactyly digits collected 6-105 months after birth, a single-centre collection.
+open_questions: []
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

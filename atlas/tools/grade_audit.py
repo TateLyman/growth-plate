@@ -32,10 +32,21 @@ WEAK_TYPES = {"review", "systematic_review", "meta_analysis", "textbook",
 
 
 def load(p, d=None):
+    """Tolerant loader: a malformed file is reported, not fatal.
+
+    One in-flight or corrupt node file must never break a repo-wide tool run -
+    that turns a single defect into total blindness, exactly when you most need
+    the other 650 files readable.
+    """
     if not os.path.exists(p):
         return d
-    with open(p) as f:
-        return yaml.safe_load(f) or d
+    try:
+        with open(p) as f:
+            return yaml.safe_load(f) or d
+    except Exception as e:
+        import sys as _s
+        print(f"  ! UNPARSEABLE {os.path.relpath(p)}: {str(e)[:90]}", file=_s.stderr)
+        return d
 
 
 def audit_node(n, refs):

@@ -1,7 +1,75 @@
 id: catch_down_growth
 name: Catch-down growth
+aliases:
+- downward centile crossing
+- infant channel shift
 type: process
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Catch-down is the mirror image of catch-up: an infant born larger than its genetic channel decelerates
+  and crosses height centiles downward until it reaches that channel. Smith and colleagues documented
+  both directions in the same series and drew the mechanistic conclusion that birth length reflects the
+  intrauterine environment while the postnatal trajectory reflects the child''s own genotype, so the first
+  two postnatal years are a period of realignment onto the genetic channel rather than of continuous growth
+  along it (smith1976). The realignment is essentially complete by about 2 years, which is why the correlation
+  between length and adult height rises steeply over that interval and why height-for-age becomes a stable
+  trait thereafter. This matters to a mechanistic atlas for a specific reason: it means the postnatal
+  growth plate does not simply inherit the size it was born with and scale it, and any model that treats
+  birth length as the initial condition of a monotone growth process will mispredict roughly the same
+  fraction of infants in each direction. Quantitative centile-crossing rates with modern denominators
+  were not extracted in this sweep and are logged as a gap.'
+quantitative:
+- parameter: age by which the shift onto the genetic growth channel is largely complete
+  value: '2'
+  unit: years
+  conditions: healthy term infants followed from birth
+  species: human
+  source_ref: smith1976
+  uncertainty: stated; per-infant completion ages not tabulated in the abstract
+- parameter: direction of shift
+  value: bidirectional
+  unit: not_applicable
+  conditions: infants born long relative to parental height shift down; infants born short shift up
+  species: human
+  source_ref: smith1976
+  uncertainty: qualitative in the abstract; case series
+localization:
+- 'human whole organism: serial recumbent length from birth to 2 years'
+human_evidence: direct
+human_evidence_note: Described from serial human infant length measurements related to parental heights.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human infant phenomenon; no animal model reproduces the two-year realignment
+  window.
+confidence: C
+claim_grades:
+- claim: Infants shift height centiles in both directions during the first two years to reach a parentally
+    determined channel
+  grade: B
+  basis: Directly observed in serial human data with parental heights (smith1976) and consistent with
+    the 0.75-0.78 parent-offspring regression slope; the original series is small and pre-dates modern
+    references.
+- claim: Birth length reflects the intrauterine environment rather than the child's genotype
+  grade: C
+  basis: Inference from the direction and completeness of the shift; not tested against measured genotype
+    or a polygenic score in the primary.
+key_refs:
+- ref_id: smith1976
+  pmid: '940016'
+  first_author: Smith DW
+  year: 1976
+  type: primary_abstract_only
+  one_line_finding: Infants shift linear growth channels in both directions during infancy, illustrating
+    genetic control of growth from fetal life onward.
+- ref_id: luo1998
+  pmid: '9773847'
+  first_author: Luo ZC
+  year: 1998
+  type: primary
+  one_line_finding: Supplies the parent-offspring regression slope that defines the channel an infant
+    realigns to.
+open_questions:
+- g_l9organism_007
+pending_source: smith1976
 last_verified: '2026-08-05'

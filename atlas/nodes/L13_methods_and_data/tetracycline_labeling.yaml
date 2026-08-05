@@ -1,7 +1,65 @@
 id: tetracycline_labeling
-name: Tetracycline/calcein labeling of growth
+name: Tetracycline labelling of the mineralisation front
+aliases:
+- fluorochrome bone labelling
 type: method
-layer: L13
-stub: true
+summary: |
+  Tetracyclines chelate calcium and are incorporated at active mineralisation fronts, so two
+  doses separated by a known interval leave two fluorescent lines whose separation divided by
+  the interval gives a direct, in vivo mineral apposition rate. In the growth plate context
+  this measures the rate at which the chondro-osseous junction advances - that is,
+  longitudinal growth rate at the tissue level - and it is the standard readout in short-term
+  growth perturbation experiments in animals (farnum2003). Its strengths are that it is truly
+  in vivo, truly rate-resolved, and independent of any assumption about cell behaviour. Its
+  limits for this atlas are three. It labels mineral, not cartilage, so it reports the output
+  of the plate rather than any process inside it. It requires a second harvest, so in humans
+  it has been used almost exclusively in bone histomorphometry on iliac crest biopsies in
+  metabolic bone disease, not in physis. And the interval sets the temporal resolution: a 5-14
+  day interval is standard, which means it cannot resolve the sub-weekly saltatory elongation
+  events proposed for human growth (lampl1992) and disputed on rabbit data (klein1994). No
+  human growth plate tetracycline labelling study was located in this sweep.
+quantitative:
+- parameter: human growth plate tetracycline labelling studies located
+  value: '0'
+  unit: studies
+  conditions: Europe PMC sweep 2026-08-05
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see search log g_l13b_007
+localization:
+- 'multiple PC: mineral apposition at the chondro-osseous junction measured directly'
 human_evidence: absent
+human_evidence_note: Tetracycline labelling of the human physis was not located; human use is confined
+  to iliac crest bone histomorphometry.
+species_basis:
+- multiple
+translation_risk: moderate
+translation_risk_reason: The chemistry is species-independent, but what it measures - mineral apposition
+  rate - has values that differ with growth rate, so the numbers do not transfer even though the
+  method does.
+confidence: C
+key_refs:
+- ref_id: farnum2003
+  first_author: Farnum CE
+  year: 2003
+  type: primary
+  one_line_finding: Short-term fasting and catch-up growth analysed with fluorochrome-based rate
+    measurement in young animals.
+- ref_id: lampl1992
+  first_author: Lampl M
+  year: 1992
+  type: primary
+  one_line_finding: Saltation and stasis model of human growth, requiring sub-weekly temporal resolution
+    to test.
+- ref_id: klein1994
+  first_author: Klein KO
+  year: 1994
+  type: primary
+  one_line_finding: Rabbit linear growth measured as continuous rather than saltatory.
+open_questions:
+- g_l1arch_005
+- g_l1arch_006
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

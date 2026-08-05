@@ -1,7 +1,62 @@
 id: calcium_intake_growth
-name: Calcium intake and growth
+name: Dietary calcium intake and linear growth
 type: process
+summary: 'Dietary calcium has a large effect on bone mineral accrual and a small-to-absent effect on linear
+  growth, and the cleanest experimental separation of the two comes from the milk fractionation trials.
+  In a 2x2 factorial randomised trial in 57 eight-year-old boys, drinks delivering the calcium and phosphorus
+  content of 1.5 L of skim milk were compared with low-mineral drinks against the same protein background:
+  there were no independent effects of high milk-mineral intake on serum IGF-1 or on fasting insulin,
+  and no interaction between the mineral and protein factors (hoppe2009). Since the IGF-1 rise seen with
+  milk is carried entirely by casein, the growth-relevant component of milk is not its calcium. Calcium''s
+  genuine entry point into the atlas is through the L4 calcium homeostasis loop - ionised calcium sets
+  PTH secretion through CASR, and PTH plus calcitriol control phosphate, which is required for hypertrophic
+  chondrocyte apoptosis. Below the rachitic threshold, calcium deficiency therefore deranges the growth
+  plate through the same phosphate route as vitamin D deficiency; above it, calcium is not a linear growth
+  variable.'
+quantitative:
+- parameter: independent effect of milk-mineral (Ca, P) intake on serum IGF-1
+  value: none
+  unit: ug/L
+  conditions: 57 boys aged 8 y, 7-day randomised 2x2 factorial, minerals at the level of 1.5 L skim milk
+  species: human
+  source_ref: hoppe2009
+  uncertainty: no significant independent effect and no protein x mineral interaction
+- parameter: independent effect of milk-mineral intake on fasting insulin
+  value: none
+  unit: pmol/L
+  conditions: same trial
+  species: human
+  source_ref: hoppe2009
+  uncertainty: no significant independent effect
+localization:
+- 'human SYS: dietary calcium -> ionised calcium -> CASR/PTH -> phosphate handling'
+human_evidence: direct
+human_evidence_note: Randomised human factorial trial isolating milk minerals from milk protein with serum
+  IGF-1 and insulin endpoints.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: Human randomised design with human endocrine endpoints.
+confidence: B
+claim_grades:
+- claim: Milk-derived calcium and phosphorus do not raise serum IGF-1 or insulin in prepubertal boys.
+  grade: A
+  basis: 2x2 factorial randomised design that separates minerals from protein, n=57 (hoppe2009).
+- claim: Calcium deficiency below the rachitic threshold deranges the growth plate through the phosphate
+    route.
+  grade: B
+  basis: Imported from the L4 calcium_homeostasis and phosphate_homeostasis nodes; not tested by a dietary
+    calcium manipulation with a plate readout.
+key_refs:
+- ref_id: hoppe2009
+  pmid: '19471293'
+  first_author: Hoppe C
+  year: 2009
+  type: primary
+  one_line_finding: High milk-mineral (Ca, P) intake had no independent effect on serum IGF-1 or fasting
+    insulin in a 2x2 factorial randomised trial in 57 prepubertal boys.
+open_questions:
+- g_l10env_007
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

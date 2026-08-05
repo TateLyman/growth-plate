@@ -1,7 +1,65 @@
 id: psychosocial_dwarfism
 name: Psychosocial short stature
 type: phenotype
+aliases:
+- deprivation dwarfism
+- emotional deprivation growth failure
+- hyperphagic short stature
+summary: 'Psychosocial short stature is the strongest evidence in this layer that an environmental exposure
+  with no nutritional component can shut down linear growth through the GH axis, and it is the only exposure
+  here whose removal reverses the phenotype. The defining description is the two-part 1967 New England
+  Journal of Medicine series by Powell and colleagues, which characterised children with emotional deprivation
+  whose growth retardation clinically simulated idiopathic hypopituitarism (Part I, clinical evaluation)
+  and whose endocrine testing was abnormal (Part II, endocrinologic evaluation) - the observation that
+  named the syndrome and placed its lesion in GH secretion rather than in nutrition. Neither record carries
+  an abstract in Europe PMC, so the specific hormone values, sample size and recovery kinetics reported
+  in those papers have not been verified here; the full text is queued for retrieval and this node''s
+  confidence is reduced accordingly. The mechanistic significance for the atlas is that psychosocial short
+  stature enters the graph at gh_secretion_pulsatility rather than at the growth plate: the pituitary
+  is the lesion, the plate is normal, and removal of the child from the environment restores growth. That
+  entry point is asserted from the title-level content of the 1967 series and from the syndrome''s clinical
+  definition, not from a number verified in this sweep.'
+localization:
+- 'human SYS: hypothalamic-pituitary GH secretion'
+- 'human growth plate: never examined in this syndrome'
+human_evidence: direct
+human_evidence_note: An entirely human clinical syndrome defined by endocrine evaluation of emotionally
+  deprived children; the quantitative endocrine findings were not verifiable from the indexed record in
+  this sweep.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: A human psychosocial syndrome with no animal model that reproduces the reversible
+  GH suppression.
+confidence: D
+claim_grades:
+- claim: Emotional deprivation can produce growth retardation clinically indistinguishable from idiopathic
+    hypopituitarism.
+  grade: B
+  basis: The defining two-part clinical and endocrinologic case series (powell1967a, powell1967); read
+    at title and citation level only in this sweep.
+- claim: The lesion is in GH secretion and is reversed by removal from the environment.
+  grade: D
+  basis: Asserted by the syndrome definition and the title of the endocrinologic paper; the supporting
+    hormone data were not verified here. Full text queued in sources/access_queue.md.
+key_refs:
+- ref_id: powell1967a
+  pmid: '6024346'
+  first_author: Powell GF
+  year: 1967
+  type: primary_abstract_only
+  one_line_finding: 'Part I: clinical evaluation of emotional deprivation and growth retardation simulating
+    idiopathic hypopituitarism (title-level only; no abstract in the indexed record).'
+- ref_id: powell1967
+  pmid: '6024347'
+  first_author: Powell GF
+  year: 1967
+  type: primary_abstract_only
+  one_line_finding: 'Part II: endocrinologic evaluation of the same syndrome (title-level only; no abstract
+    in the indexed record).'
+pending_source: powell1967
+open_questions:
+- g_l10env_012
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

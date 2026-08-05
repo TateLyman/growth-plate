@@ -1,7 +1,76 @@
 id: stereology_growth_plate
 name: Stereology of the growth plate
+aliases:
+- unbiased stereological estimation physis
 type: method
+summary: |
+  Stereology converts two-dimensional section measurements into unbiased three-dimensional
+  estimates, and it is the only correct way to obtain chondrocyte volume, which is the
+  quantity that drives longitudinal growth. Serial-section and stereological analysis
+  established that hypertrophic chondrocyte enlargement is the dominant contributor to
+  elongation, with the volume of the terminal hypertrophic chondrocyte scaling linearly with
+  elongation rate across sites and species (breur1991, breur1994). Applied to human tissue,
+  the method has been used exactly once in a quantitative published form: a single adolescent
+  distal tibial physis undergoing physiological epiphysiodesis, in which mean hypertrophic
+  chondrocyte volume was 5,900 um3 and did not differ significantly between anterior, central
+  and posterior regions, while 46% of the volume of the central region was already occupied by
+  transphyseal bridging bone (white2008). Everything the atlas says about the human
+  hypertrophic volume set point therefore rests on n=1, and on a plate that was in the act of
+  closing rather than growing normally. The methodological requirements are severe and are why
+  this is rare: optimally fixed tissue with minimal shrinkage, known section thickness,
+  systematic random sampling and disector-type probes. Section obliquity alone biases apparent
+  cell height upward, which is the commonest error in the older growth plate literature.
+quantitative:
+- parameter: mean hypertrophic chondrocyte volume, human distal tibia
+  value: '5900'
+  unit: um3
+  conditions: adolescent physis in physiological epiphysiodesis, distal 100 um of HZ, n=1 plate
+  species: human
+  source_ref: white2008
+  uncertainty: no significant difference between anterior, central, posterior regions
+- parameter: fraction of central physeal region occupied by transphyseal bridging bone
+  value: '46'
+  unit: '% of volume'
+  conditions: same single human distal tibial physis
+  species: human
+  source_ref: white2008
+  uncertainty: n=1
+localization:
+- 'human HZ: only one plate ever measured stereologically'
+human_evidence: direct
+human_evidence_note: The only human stereological growth plate dataset is a single distal tibial
+  physis.
+species_basis:
+- human
+- porcine
+- multiple
+translation_risk: moderate
+translation_risk_reason: The linear volume-to-elongation relationship was established across species
+  including pig and rodent; the human anchor is a single closing plate, so transferring the relationship
+  to a normally growing human plate is an extrapolation.
+confidence: D
+key_refs:
+- ref_id: white2008
+  first_author: White JR
+  year: 2008
+  type: primary
+  one_line_finding: Stereological hypertrophic chondrocyte volume of 5,900 um3 in one human distal
+    tibial physis, 46% bridged centrally.
+- ref_id: breur1991
+  first_author: Breur GJ
+  year: 1991
+  type: primary
+  one_line_finding: Volume of hypertrophic chondrocytes varies linearly with rate of longitudinal
+    bone growth.
+- ref_id: breur1994
+  first_author: Breur GJ
+  year: 1994
+  type: primary
+  one_line_finding: Stereological and serial-section analysis of chondrocytic enlargement in the
+    proximal tibial growth plate.
+open_questions:
+- g_l1arch_009
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

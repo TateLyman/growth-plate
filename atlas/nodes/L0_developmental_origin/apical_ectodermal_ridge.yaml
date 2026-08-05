@@ -1,9 +1,46 @@
 id: apical_ectodermal_ridge
-name: Apical ectodermal ridge
-type: tissue_structure
-layer: L0
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Apical ectodermal ridge (AER)
 aliases:
 - AER
+- FGF8/FGF10 signalling centre
+type: tissue_structure
+summary: 'The AER is the pseudostratified ectodermal thickening at the distal limb bud tip that maintains outgrowth
+  by secreting FGF4/FGF8; it is maintained in turn by mesenchymal FGF10 (min1998). Its atlas relevance is confined
+  to one result: an allelic series reducing AER Fgf4/Fgf8 in mouse deletes PROXIMAL skeletal elements while
+  distal elements survive, which excludes the simple timer reading of the AER and shows FGF acts instructively
+  on proximodistal identity and on survival of the proximal domain (mariani2008). The consequence for the postnatal
+  plate is therefore that the AER determines which elements exist and what positional identity they carry,
+  and it stops signalling long before any growth plate forms. No AER manipulation has been carried through
+  to a postnatal growth plate measurement in any species, and there is no human AER data at all. This node
+  is deliberately not a signalling review: FGF ligand-receptor mechanism belongs to L3.'
+localization:
+- 'chick and mouse distal limb bud ectoderm, E9.5-E12.5 mouse: confirmed'
+human_evidence: absent
+human_evidence_note: No human AER experiment exists; human relevance is inferred from the conserved consequence
+  of limb-field disruption in congenital limb reduction defects.
+species_basis:
+- mouse
+- chicken
+translation_risk: high
+translation_risk_reason: Avian and murine embryology only, and the readout is limb morphology at birth rather
+  than any growth plate parameter.
+confidence: C
+key_refs:
+- ref_id: mariani2008
+  pmid: '18449196'
+  first_author: Mariani FV
+  year: 2008
+  type: primary_abstract_only
+  one_line_finding: Genetic reduction of AER Fgf4/Fgf8 deletes proximal rather than distal limb elements, showing
+    an instructive not permissive role
+- ref_id: min1998
+  pmid: '9784490'
+  first_author: Min H
+  year: 1998
+  type: primary_abstract_only
+  one_line_finding: Fgf10 is required to induce and maintain the AER; without it the bud regresses
+open_questions:
+- g_l0dev_001
+layer: L0
+stub: false
+last_verified: '2026-08-05'

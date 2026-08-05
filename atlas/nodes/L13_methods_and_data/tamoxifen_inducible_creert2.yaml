@@ -1,7 +1,72 @@
 id: tamoxifen_inducible_creert2
-name: Tamoxifen-inducible CreERT2
+name: Tamoxifen-inducible CreERT2 in cartilage
+aliases:
+- inducible fate mapping chondrocyte
 type: method
-layer: L13
-stub: true
+summary: |
+  CreERT2 adds temporal control to fate mapping: recombination happens only in cells
+  expressing the driver during a tamoxifen pulse, which is what makes it possible to ask
+  whether a progenitor population is established before or after a developmental event. It is
+  the tool behind the postnatal-versus-embryonic distinction in resting zone stem cell
+  biology, and behind chondrocyte-specific conditional deletions used throughout L6 (chen2025,
+  chen2025a, coveney2022, ely2025) and L4 (tu2014). Three quantitative caveats are routinely
+  under-reported and each can invert a conclusion. Tamoxifen itself perturbs cartilage: it is
+  an estrogen receptor modulator, and estrogen is the dominant regulator of growth plate
+  senescence, so tamoxifen dosing in a growing animal is a pharmacological intervention on the
+  system under study, not an inert trigger. Recombination is leaky in the absence of tamoxifen
+  in many lines, producing labelled cells that were never induced. And the labelling pulse has
+  a finite duration in tissue (tamoxifen metabolites persist for days), so "a single time
+  point" is in practice a window, which blurs precisely the before/after distinction the
+  method was chosen for. No human equivalent exists.
+quantitative:
+- parameter: human applications of inducible genetic fate mapping in growth plate
+  value: '0'
+  unit: studies
+  conditions: structurally impossible
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: categorical
+localization:
+- 'mouse RZ: inducible labelling used to time progenitor establishment'
 human_evidence: absent
+human_evidence_note: Method is murine-only.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Murine-only, and the inducing agent is itself an estrogen receptor modulator
+  acting on the pathway that terminates human growth.
+confidence: B
+claim_grades:
+- claim: CreERT2 gives temporal control of lineage labelling.
+  grade: A
+  basis: Established method property.
+- claim: Tamoxifen dosing perturbs growth plate biology in growing animals.
+  grade: E
+  basis: Follows from tamoxifen being a selective estrogen receptor modulator and estrogen being
+    the dominant senescence regulator; the confound is rarely measured in growth plate studies.
+key_refs:
+- ref_id: tu2014
+  first_author: Tu J
+  year: 2014
+  type: primary
+  one_line_finding: Chondrocyte-specific inducible disruption of glucocorticoid signalling.
+- ref_id: coveney2022
+  first_author: Coveney CR
+  year: 2022
+  type: primary
+  one_line_finding: Inducible ciliary IFT88 deletion in adolescent growth plate.
+- ref_id: chen2025
+  first_author: Chen F
+  year: 2025
+  type: primary
+  one_line_finding: Inducible PIEZO1 deletion used to test mechanotransduction in growth plate.
+- ref_id: mizuhashi2018
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Inducible PTHrP-CreER labelling defined the resting zone stem cell.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

@@ -1,9 +1,113 @@
 id: tooth_mineralization_stages
 name: Tooth mineralization staging
-type: method
-layer: L9
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - Demirjian
+type: method
+layer: L9
+stub: false
+summary: 'Demirjian, Goldstein and Tanner defined dental maturity as an eight-stage ordinal score of crown
+  and root mineralization applied to the seven left mandibular permanent teeth on a panoramic radiograph,
+  converted to a 0-100 maturity score and then to a dental age (demirjian1973). The method''s design choices
+  are what make it useful as an independent clock: stages are defined by shape changes rather than by
+  absolute length, so they are invariant to radiographic magnification and to body size, and the scoring
+  is confined to one side of one jaw, so it does not average across skeletal sites the way bone-age scoring
+  does. Its known limitation is that the original standard is French-Canadian and systematically overestimates
+  dental age in other populations; a recent Iranian orthodontic series found the Demirjian method overestimated
+  dental age while still correlating with chronological age at r = 0.894 in males and 0.876 in females
+  and with cervical-vertebral skeletal stage at Spearman 0.779 and 0.785 (mohammadianras2026). The mineralization
+  sequence itself, unlike the growth plate, is not a rate process that can be transiently suppressed and
+  resumed: each stage is a one-way morphological transition, which is the structural reason the dental
+  clock is robust to systemic perturbation.'
+quantitative:
+- parameter: number of mineralization stages per tooth
+  value: '8'
+  unit: stages
+  conditions: stages A-H defined by crown and root morphology
+  species: human
+  source_ref: demirjian1973
+  uncertainty: exact
+- parameter: teeth scored
+  value: '7'
+  unit: teeth
+  conditions: the seven left mandibular permanent teeth on a panoramic radiograph
+  species: human
+  source_ref: demirjian1973
+  uncertainty: exact
+- parameter: correlation of Demirjian dental age with chronological age, males
+  value: '0.894'
+  unit: Pearson r
+  conditions: 194 Iranian orthodontic patients aged 7-17 y
+  species: human
+  source_ref: mohammadianras2026
+  uncertainty: p<0.001
+- parameter: correlation of Demirjian dental age with chronological age, females
+  value: '0.876'
+  unit: Pearson r
+  conditions: same cohort
+  species: human
+  source_ref: mohammadianras2026
+  uncertainty: p<0.001
+- parameter: correlation of dental age with cervical vertebral maturation stage, males
+  value: '0.779'
+  unit: Spearman rho
+  conditions: same cohort
+  species: human
+  source_ref: mohammadianras2026
+  uncertainty: p<0.001
+- parameter: correlation of dental age with cervical vertebral maturation stage, females
+  value: '0.785'
+  unit: Spearman rho
+  conditions: same cohort
+  species: human
+  source_ref: mohammadianras2026
+  uncertainty: p<0.001
+- parameter: direction of bias of the original Demirjian standard outside the source population
+  value: overestimates dental age
+  unit: not_applicable
+  conditions: Iranian orthodontic population
+  species: human
+  source_ref: mohammadianras2026
+  uncertainty: direction reported; magnitude not given in the abstract
+localization:
+- 'human mandible: seven left permanent teeth on panoramic radiograph'
+human_evidence: direct
+human_evidence_note: The staging system was constructed on and is applied only to human radiographs.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human dental staging method.
+confidence: A
+claim_grades:
+- claim: Dental maturity can be scored as an eight-stage shape-based ordinal system with a population
+    conversion to dental age
+  grade: A
+  basis: The original derivation (demirjian1973) and universal subsequent use.
+- claim: The original standard overestimates dental age outside its source population
+  grade: B
+  basis: Reported in one 194-patient Iranian series (mohammadianras2026) and widely observed elsewhere;
+    magnitude is population-specific and not pooled here.
+key_refs:
+- ref_id: demirjian1973
+  pmid: '4714564'
+  first_author: Demirjian A
+  year: 1973
+  type: primary_abstract_only
+  one_line_finding: Defines the eight-stage dental maturity scoring system on seven left mandibular teeth.
+- ref_id: mohammadianras2026
+  pmid: '41656342'
+  first_author: Mohammadian-Rastani M
+  year: 2026
+  type: primary
+  one_line_finding: Demirjian dental age correlates 0.88-0.89 with chronological age and 0.78-0.79 with
+    cervical vertebral maturation but overestimates dental age in Iranian children.
+- ref_id: demirjian1985
+  pmid: '3864376'
+  first_author: Demirjian A
+  year: 1985
+  type: primary
+  one_line_finding: Uses the 90% dental maturity landmark derived from this staging to show dental development
+    is uncorrelated with somatic maturity.
+open_questions:
+- g_l9organism_009
+pending_source: demirjian1973
+last_verified: '2026-08-05'

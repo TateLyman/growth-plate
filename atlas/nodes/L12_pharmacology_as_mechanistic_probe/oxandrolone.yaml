@@ -1,7 +1,90 @@
 id: oxandrolone
 name: Oxandrolone
+aliases: [non-aromatisable anabolic androgen, Oxandrin]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Oxandrolone is a synthetic androgen that is poorly aromatised to oestrogen, which makes
+  it a specific human probe: it separates the androgenic contribution to growth from the
+  oestrogenic one, because it should promote growth without delivering the oestrogen that
+  closes the plate. It is used in constitutional delay of growth and puberty and, with
+  rhGH, in Turner syndrome. A meta-analysis of 13 retrospective cohorts (803 boys with
+  constitutional delay) found androgen therapy overall increased measured final adult
+  height by 1.78 cm (95% CI 0.47-3.08, p=0.0076) and final height Z score by 0.24
+  (95% CI 0.07-0.41). The internal structure of that result is the interesting part:
+  low-dose regimens gave the largest gain (1.88 cm, 95% CI 0.63-3.12) while medium and
+  high doses were not significant, short courses outperformed long courses (2.70 cm,
+  95% CI 1.30-4.09), and testosterone - which IS aromatised - outperformed oxandrolone by
+  2.64 cm (95% CI 1.44-3.80). The non-aromatisable androgen was therefore the weaker agent,
+  which is the opposite of what the oestrogen-fusion model predicts if androgen acts
+  independently, and points to a genuine oestrogen requirement for the pubertal height gain.
+quantitative:
+  - parameter: increase in measured final adult height, androgen therapy vs untreated controls
+    value: '+1.78'
+    unit: cm
+    conditions: >-
+      meta-analysis of 13 retrospective cohort studies, 803 boys with constitutional delay of
+      growth and puberty; includes both testosterone and oxandrolone regimens
+    species: human
+    source_ref: wang2026
+    uncertainty: 95% CI 0.47-3.08, p=0.0076; no significant publication bias by Egger test
+  - parameter: superiority of testosterone over oxandrolone on final adult height
+    value: '+2.64'
+    unit: cm
+    conditions: subgroup comparison within the same meta-analysis
+    species: human
+    source_ref: wang2026
+    uncertainty: 95% CI 1.44-3.80, p<0.001
+  - parameter: final height gain with low-dose regimens
+    value: '+1.88'
+    unit: cm
+    conditions: low-dose subgroup; medium-dose 1.17 cm (95% CI -0.90 to 3.25, ns) and high-dose 1.68 cm (95% CI -5.07 to 8.42, ns)
+    species: human
+    source_ref: wang2026
+    uncertainty: 95% CI 0.63-3.12, p=0.003
+  - parameter: final height gain with short-course versus long-course therapy
+    value: '+2.70'
+    unit: cm
+    conditions: short-course subgroup within the same meta-analysis
+    species: human
+    source_ref: wang2026
+    uncertainty: 95% CI 1.30-4.09, p<0.001
+localization:
+  - "human growth plate: androgen receptor-mediated effects presumed; no measurement in treated boys"
+human_evidence: direct
+human_evidence_note: >-
+  Meta-analysis of 13 retrospective cohorts with attained final adult height in 803 boys,
+  plus long-standing use with rhGH in Turner syndrome.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  All human with attained-height endpoints. The limitation is design: every included study
+  is retrospective, so allocation to treatment was not random.
+confidence: B
+claim_grades:
+  - claim: Short-term androgen therapy increases final adult height in constitutional delay by about 1.8 cm.
+    grade: B
+    basis: Meta-analysis with attained final height, 803 boys, but all 13 constituent studies are retrospective cohorts.
+  - claim: The non-aromatisable androgen oxandrolone is less effective than testosterone for final height.
+    grade: C
+    basis: Subgroup comparison within a retrospective meta-analysis; not a randomised head-to-head.
+  - claim: The oestrogen produced by aromatisation of testosterone is required for the full pubertal height gain.
+    grade: E
+    basis: Flagged inference from the testosterone-versus-oxandrolone subgroup difference; consistent with oestrogen-deficiency natural experiments but not directly tested here.
+key_refs:
+  - ref_id: wang2026
+    pmid: '41933328'
+    first_author: Wang L
+    year: 2026
+    type: meta_analysis
+    one_line_finding: 13 cohorts, 803 boys - androgen therapy +1.78 cm final adult height; testosterone beat oxandrolone by 2.64 cm.
+  - ref_id: guzzetti2024
+    pmid: '39857834'
+    first_author: Guzzetti C
+    year: 2024
+    type: review
+    one_line_finding: Places oxandrolone alongside rhGH among adult-height-directed therapies in non-GH-deficient children.
+open_questions: [g_l12b_015]
+contradicts: []
 last_verified: '2026-08-05'

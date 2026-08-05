@@ -32,8 +32,14 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def load_all():
     nodes = {}
     for p in glob.glob(os.path.join(ROOT, "nodes", "**", "*.yaml"), recursive=True):
-        with open(p) as f:
-            n = yaml.safe_load(f) or {}
+        # tolerant: one malformed file must not blind the whole graph analysis
+        try:
+            with open(p) as f:
+                n = yaml.safe_load(f) or {}
+        except Exception as e:
+            print(f"  ! UNPARSEABLE {os.path.relpath(p)}: {str(e)[:80]}",
+                  file=sys.stderr)
+            continue
         if isinstance(n, dict) and n.get("id"):
             nodes[n["id"]] = n
     ed = os.path.join(ROOT, "edges", "edges.yaml")

@@ -6718,3 +6718,880 @@ edges:
   - althoff1982
   - zimmerman2021
   confidence: D
+- edge_id: e00577
+  source: hox_code_limb
+  target: site_specific_growth_rate
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: metacarpal elongation 49% and proliferation per column 46% of proximal tibia at 1 week (mouse); Hoxd13/Shox/Tbx5
+    differ between those plates age-independently
+  context: mouse and rat postnatal growth plate, phalanx/metacarpal versus tibia/femur; both sexes not separated
+  evidence_tier: T1
+  refs:
+  - lui2018
+  - pineault2015
+  confidence: speculative
+  gap_id: g_l0dev_001
+  notes: 'The atlas''s central L0 claim and the one most often assumed. What is demonstrated: positional genes are still differentially
+    transcribed inside postnatal plates of different sites, and Hox11 loss slows zeugopod elongation. What is NOT demonstrated:
+    that the HOX code sets the rate. lui2018 attributes the rate difference to differential progression of growth plate senescence
+    and does not test HOX. No manipulation of a HOX gene has ever been read out as an elongation rate at two different sites
+    in the same animal.'
+- edge_id: e00578
+  source: hoxa11_gene
+  target: growth_plate_height
+  relation: required_for
+  sign: +
+  magnitude: growth plate height reduced and senescence premature in Hoxa11/Hoxd11 compound mutants retaining one wild-type
+    allele
+  context: mouse radius and ulna (zeugopod), postnatal; stylopod unaffected
+  evidence_tier: T1
+  refs:
+  - pineault2015
+  confidence: C
+  notes: Region-restricted. Proliferation in the resting and proliferative zones was HIGHER in mutants, so the reduced height
+    is not a proliferation deficit but is read by the authors as premature depletion of the progenitor pool.
+- edge_id: e00579
+  source: hoxa11_gene
+  target: lepr_positive_stromal_cell
+  relation: precedes
+  sign: unknown
+  magnitude: Hoxa11-CreERT2 lineage gives rise to LepR-Cre and Osx-CreER marked populations
+  context: mouse zeugopod, embryonic through adult; Hoxa11-EGFP restricted to zeugopod marrow MSCs
+  evidence_tier: T1
+  refs:
+  - pineault2019
+  - rux2016
+  confidence: C
+  notes: Places an embryonic patterning gene upstream of the postnatal skeletal stem cell hierarchy of L2, and does so region-specifically.
+    rux2016 reports adult Hoxa11-EGFP as exclusive to marrow MSCs, which is in tension with rux2021 finding Hoxa11 in zeugopod
+    articular chondrocytes.
+- edge_id: e00580
+  source: hoxd11_gene
+  target: growth_velocity_longitudinal
+  relation: required_for
+  sign: +
+  magnitude: radial and ulnar elongation rate reduced and terminal bone length shorter in Hox11 compound mutants
+  context: mouse forelimb zeugopod, postnatal; Hoxa11/Hoxd11 act as a paralogue group
+  evidence_tier: T1
+  refs:
+  - pineault2015
+  - song2020
+  confidence: C
+  notes: The adult conditional Hoxd11 deletion (song2020) shows the requirement persists in a fully formed skeleton, acting
+    on osteoblast maturation rather than on stem cell number.
+- edge_id: e00581
+  source: hoxa13_gene
+  target: metacarpal_plate
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: human HOXA13 mutation gives short first metacarpal and small distal phalanges; no growth plate parameter measured
+  context: human hand-foot-genital syndrome; mouse autopod
+  evidence_tier: T1
+  refs:
+  - mortlock1997
+  - lui2018
+  confidence: speculative
+  gap_id: g_l0dev_001
+  notes: The human phenotype is size-restricted rather than count-restricted, which makes HOXA13 a candidate for the autopod
+    plate's distinctive slow, early-senescing programme. Nobody has measured a growth plate in a HOXA13 carrier or a Hoxa13
+    mutant.
+- edge_id: e00582
+  source: hoxd13_gene
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: Hoxd13 expression in 1-week phalangeal plate differs from both 1-week and 4-week tibial plate, i.e. age-independent
+  context: mouse and rat, laser-capture proliferative and hypertrophic zones, 1 and 4 weeks
+  evidence_tier: T1
+  refs:
+  - lui2018
+  confidence: D
+  notes: The single strongest datum that positional identity is still readable inside a postnatal growth plate and is not
+    merely a proxy for how senescent that plate is. Bulk zonal RNA-seq only; no in situ localization and no human tissue.
+- edge_id: e00583
+  source: apical_ectodermal_ridge
+  target: growth_plate
+  relation: required_for
+  sign: +
+  magnitude: AER Fgf4/Fgf8 allelic reduction deletes proximal skeletal elements; Fgf10 loss gives limbless newborns
+  context: mouse limb bud E9.5-E12.5, both sexes
+  evidence_tier: T1
+  refs:
+  - mariani2008
+  - min1998
+  confidence: C
+  notes: Necessity for the existence of skeletal elements, hence of their growth plates. No AER manipulation has been carried
+    to a postnatal growth plate measurement.
+- edge_id: e00584
+  source: zone_of_polarizing_activity
+  target: metacarpal_plate
+  relation: required_for
+  sign: +
+  magnitude: ZPA grafting produces mirror-image digit duplication; SHH is sufficient to reproduce it
+  context: chick limb bud anteroposterior axis; mouse equivalent
+  evidence_tier: T1
+  refs:
+  - riddle1993
+  confidence: C
+  notes: Sets digit number and identity, therefore which autopod growth plates exist. It does not set the rate at which they
+    run, and no such experiment has been done.
+- edge_id: e00585
+  source: zrs_enhancer
+  target: metacarpal_plate
+  relation: required_for
+  sign: +
+  magnitude: single-nucleotide ZRS changes 1 Mb from SHH add preaxial digits in humans
+  context: human preaxial polydactyly pedigrees; conserved in mouse and chick
+  evidence_tier: T1
+  refs:
+  - lettice2003
+  confidence: B
+  notes: A non-coding element determines how many autopod elements, and therefore how many growth plates, a hand contains.
+    The worked example of modular cis-regulatory control that any L8 genetic account of stature has to operate within.
+- edge_id: e00586
+  source: limb_bud_initiation
+  target: growth_plate
+  relation: required_for
+  sign: +
+  magnitude: Fgf10-null mice are limbless; human TBX5 loss confines malformation to the upper limb
+  context: mouse and human, limb field specification
+  evidence_tier: T1
+  refs:
+  - min1998
+  - basson1997
+  confidence: B
+- edge_id: e00587
+  source: tbx5_gene
+  target: distal_radius_plate
+  relation: required_for
+  sign: +
+  magnitude: human TBX5 haploinsufficiency causes radial ray defects with normal lower limbs
+  context: human Holt-Oram syndrome, both sexes
+  evidence_tier: T1
+  refs:
+  - basson1997
+  confidence: B
+  notes: Establishes in humans that forelimb and hindlimb skeletons are separately programmed from the limb-field stage, which
+    is the developmental precondition for arm and leg plates behaving differently.
+- edge_id: e00588
+  source: pitx1_gene
+  target: proximal_tibia_plate
+  relation: required_for
+  sign: +
+  magnitude: Pitx1-null hindlimb defects with partial transformation toward forelimb morphology; forelimb spared
+  context: mouse hindlimb field, embryonic
+  evidence_tier: T1
+  refs:
+  - szeto1999
+  confidence: C
+- edge_id: e00589
+  source: mesenchymal_condensation
+  target: resting_chondrocyte
+  relation: differentiates_into
+  sign: unknown
+  magnitude: Fgfr3-creER condensation-stage cells populate the DORSAL resting and proliferative zones exclusively
+  context: mouse limb condensation stage traced to postnatal growth plate; dorsoventral compartment
+  evidence_tier: T1
+  refs:
+  - wu2025
+  confidence: D
+  notes: 'The most direct L0-to-L1/L2 inheritance edge in this layer: the postnatal plate carries a dorsoventral compartment
+    map fixed before cartilage exists. Single study, two inducible Cre lines, mouse only; the dorsoventral organisation of
+    the human plate is unexamined.'
+- edge_id: e00590
+  source: mesenchymal_condensation
+  target: growth_plate
+  relation: required_for
+  sign: +
+  magnitude: diphtheria-toxin ablation of Fgfr3+ condensation-stage cells severely disrupts long bone development
+  context: mouse, condensation stage
+  evidence_tier: T1
+  refs:
+  - wu2025
+  confidence: D
+- edge_id: e00591
+  source: sox9_chondrogenic_commitment
+  target: growth_plate
+  relation: required_for
+  sign: +
+  magnitude: Sox9-null cells excluded from condensations; Sox9 heterozygotes have hypoplastic primordia and premature mineralization
+  context: mouse chimeras and conditional deletion; human campomelic dysplasia is SOX9 haploinsufficiency
+  evidence_tier: T1
+  refs:
+  - bi1999
+  - bi2001
+  - akiyama2002
+  confidence: B
+  notes: 'Dose-sensitive: halving SOX9 gives both a smaller starting template and faster conversion to bone, the two quantities
+    the postnatal plate has to work with.'
+- edge_id: e00592
+  source: interzone_formation
+  target: growth_plate
+  relation: required_for
+  sign: +
+  magnitude: Gdf5-lineage interzone cells build joint tissues but not growth plate chondrocytes; the two lineages separate
+    here
+  context: mouse presumptive joint sites from E12.5
+  evidence_tier: T1
+  refs:
+  - koyama2008
+  - shwartz2016
+  confidence: B
+  notes: Interzone position defines where one element ends, and therefore how much length each plate is responsible for. The
+    joint and plate lineages diverge at this point, which is why articular and growth plate chondrocytes are not interchangeable
+    postnatally.
+- edge_id: e00593
+  source: gdf5_gene
+  target: elongation_budget
+  relation: required_for
+  sign: +
+  magnitude: activating GDF5 mutation abolishes the interphalangeal joint and fuses phalanges into one longer element; inactivating
+    mutation shortens the middle phalanx
+  context: human symphalangism and brachydactyly type A2
+  evidence_tier: T1
+  refs:
+  - seemann2005
+  confidence: B
+  notes: Bidirectional human mendelian evidence that one gene sets both whether a segmentation boundary is placed and how
+    long the flanking elements become.
+- edge_id: e00594
+  source: primary_ossification_center
+  target: growth_plate
+  relation: precedes
+  sign: unknown
+  magnitude: stage 4a of a 16-stage sequence, before cartilage canals (stage 7) and the secondary centre (stages 9-10)
+  context: rabbit staged histology; conserved in mouse and human
+  evidence_tier: T1
+  refs:
+  - rivas2002
+  - long2013
+  confidence: B
+  notes: Splitting one cartilage rod into two plates fixes each plate's polarity for life. Which ends of an element form a
+    plate at all is patterned here, not later (reno2025).
+- edge_id: e00595
+  source: primary_ossification_center
+  target: resting_zone
+  relation: required_for
+  sign: +
+  magnitude: Pthlh marks the reserve zone only at the growth-plate-forming end of the mouse metatarsal; the other end has
+    no PTHrP+ reserve zone and shows premature Ihh
+  context: mouse metatarsal and pisiform, fetal and early postnatal
+  evidence_tier: T1
+  refs:
+  - reno2025
+  confidence: C
+  notes: Makes the presence of a PTHrP+ reserve pool the operational definition of a growth plate and puts its patterning
+    in L0. Directly relevant to L2, where PTHrP marks the candidate resting zone stem cell.
+- edge_id: e00596
+  source: vascular_invasion_poc
+  target: chondro_osseous_junction
+  relation: required_for
+  sign: +
+  magnitude: Osterix+ precursors, not mature osteoblasts, enter along invading vessels and become trabecular osteoblasts
+  context: mouse diaphysis E14.5-E15.5
+  evidence_tier: T1
+  refs:
+  - maes2010
+  confidence: C
+- edge_id: e00597
+  source: bone_collar_formation
+  target: perichondrial_ring_lacroix
+  relation: precedes
+  sign: unknown
+  magnitude: Ihh-null mice form no bone collar and show disorganised proliferation with premature hypertrophy
+  context: mouse midshaft perichondrium from E14.5
+  evidence_tier: T1
+  refs:
+  - stjacques1999
+  confidence: C
+  notes: The perichondrium that lays down the collar persists at the plate periphery as the groove of Ranvier and the ring
+    of LaCroix, so the collar is the developmental antecedent of the plate's lateral mechanical restraint and of a postnatal
+    progenitor reservoir.
+- edge_id: e00598
+  source: endochondral_ossification
+  target: growth_plate
+  relation: precedes
+  sign: unknown
+  magnitude: embryonic chondrocytes form clusters perpendicular to the growth axis; ordered columns appear postnatally
+  context: mouse Confetti clonal analysis, embryonic versus postnatal
+  evidence_tier: T1
+  refs:
+  - rubin2024
+  - long2013
+  confidence: C
+  notes: 'Important negative inheritance: columnar architecture, the defining feature of the postnatal plate, is NOT inherited
+    from the embryonic plate but acquired. Whatever the embryonic plate hands over, it is not its geometry.'
+- edge_id: e00599
+  source: secondary_ossification_center
+  target: resting_zone_niche
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: PTHrP+ colony-forming self-renewal rises between a P9 and a P12 pulse, described as coinciding with SOC development
+  context: mouse proximal tibia and distal femur, P9-P12; humans form SOCs bone-by-bone across years
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - newton2019
+  - funaki2020
+  confidence: speculative
+  gap_id: g_l2stem_003
+  notes: 'Temporal coincidence only, in one species. The developmental timing side, which is this layer''s contribution, actively
+    strains the hypothesis: in humans SOC appearance is staggered across years and bones (distal femur 30-35 weeks gestation,
+    proximal tibia later, most other centres postnatal), so a SOC-triggered switch would have to produce bone-by-bone acquisition
+    of resting-zone stemness at widely separated ages. Nobody has tested that. Note that SOC-delaying tools are already validated
+    (axitinib at P18; Prx-Cre:GnasR201H, xie2020), so the missing element is a stemness readout, not a method.'
+- edge_id: e00600
+  source: secondary_ossification_center
+  target: chondrocyte_apoptosis_hz
+  relation: inhibits
+  sign: '-'
+  magnitude: 40% chondrocyte death at 1 N load without SOC versus tolerance of a tenfold higher load with SOC; delaying SOC
+    in vivo raises hypertrophic zone TUNEL
+  context: rat P10 (SOC-) versus mouse P30 (SOC+) tibia ex vivo loading, n=3; plus axitinib and Prx-Cre:GnasR201H in vivo
+  evidence_tier: T1
+  refs:
+  - xie2020
+  confidence: C
+  notes: The best-evidenced function of the SOC, and it is mechanical rather than stem-cell-related. Epiphyseal cartilage
+    stiffness was unchanged by axitinib (8.1 vs 10.5 kPa, p=0.37), so the protection is structural, not matrix-mediated.
+- edge_id: e00601
+  source: secondary_ossification_center
+  target: physeal_stress_in_vivo
+  relation: inhibits
+  sign: '-'
+  magnitude: finite element analysis shows SOC reduces octahedral shear stress in the hypertrophic region and stiffens the
+    epiphysis
+  context: in silico model of amniote versus anamniote epiphyseal geometry at 3 MPa supraphysiological load
+  evidence_tier: T1
+  refs:
+  - xie2020
+  confidence: D
+  notes: In silico with physical validation by nanoindentation and ex vivo loading. Archosaur ossified protrusions reduce
+    the same stress without stiffening the joint, so two evolutionary solutions exist for the same problem.
+- edge_id: e00602
+  source: intramembranous_ossification
+  target: appositional_growth
+  relation: required_for
+  sign: +
+  magnitude: distinct regulatory network from endochondral ossification in human embryos
+  context: human embryo 5-11 post-conception weeks; mouse perichondrial bone collar
+  evidence_tier: T1
+  refs:
+  - to2024
+  - long2013
+  confidence: B
+  notes: Width is built intramembranously and length endochondrally, in the same bone, by different regulatory programmes.
+    Any account of why length stops but width does not has to start here.
+- edge_id: e00603
+  source: suture_mesenchyme_stem_cell
+  target: rz_depletion_causes_fusion
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: Gli1+ suture stem cell ablation causes craniosynostosis and arrests skull growth
+  context: mouse calvaria versus mouse/rabbit growth plate; the analogy is between structures, not within one
+  evidence_tier: T1
+  refs:
+  - zhao2015
+  - maruyama2016
+  confidence: speculative
+  gap_id: g_l0dev_011
+  notes: The contrast case that makes the growth plate's evidential gap visible. At the suture, the claim "loss of the resident
+    stem cell pool terminates growth and fuses the structure" has been tested by ablating the cells and observing synostosis.
+    At the growth plate the equivalent claim rests on correlation between resting zone depletion and fusion. This edge asserts
+    only that the suture is the tested analogue, not that the mechanisms are shared - sutures are intramembranous and have
+    no cartilage to consume.
+- edge_id: e00604
+  source: growth_velocity_curve
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: +
+  magnitude: organism peak 9.5-9.6 cm/yr (boys) and 8.3-8.4 cm/yr (girls) must equal the summed axial output of the lower-limb,
+    vertebral and skull-base plates; the human distal femur alone contributes about 1.3 cm/yr after age 7
+  context: human, both sexes, birth to fusion; whole organism versus single physis
+  evidence_tier: T1
+  refs:
+  - chun2024
+  - galvo2025
+  confidence: B
+  notes: This is the summation edge on which the whole validation layer rests. It is B not A because no study has measured
+    all contributing plates in the same children at the same time; the plate-level velocities come from radiographic series
+    in different cohorts.
+- edge_id: e00605
+  source: growth_velocity_curve
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: +
+  magnitude: PHV 9.61 cm/yr at 12.46 y (boys), 8.32 cm/yr at 10.99 y (girls) by SITAR
+  context: human, both sexes, puberty; organism-level velocity
+  evidence_tier: T1
+  refs:
+  - chun2024
+  - galvo2025
+  - elhakeem2024
+  confidence: A
+- edge_id: e00606
+  source: growth_velocity_curve
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: a single organism velocity is partitioned across plates whose relative shares change with age; the partition
+    is what produces the changing sitting height ratio
+  context: human, both sexes, childhood and puberty
+  evidence_tier: T1
+  refs:
+  - fredriks2005
+  - hirano2025
+  confidence: B
+- edge_id: e00607
+  source: icp_growth_model
+  target: pubertal_growth_spurt
+  relation: correlates_with
+  sign: +
+  magnitude: the puberty component is asserted time-invariant in size; QEPS analysis disputes this
+  context: human, both sexes, puberty; model component versus measured spurt
+  evidence_tier: T1
+  refs:
+  - karlberg1989
+  - holmgren2017
+  confidence: D
+  notes: The two cited sources disagree; see contradicts on icp_growth_model.
+- edge_id: e00608
+  source: icp_growth_model
+  target: growth_velocity_longitudinal
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no measured plate parameter has ever been mapped onto an ICP component
+  context: human, 6-12 months, infancy-childhood transition
+  evidence_tier: T5
+  refs:
+  - karlberg1990
+  confidence: speculative
+  gap_id: g_l9organism_003
+- edge_id: e00609
+  source: preece_baines_model
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: +
+  magnitude: PHV read from a five-parameter fit with residual SD 6-7 mm; algebraic solution in sayers2013
+  context: human, both sexes, ages 2 to maturity
+  evidence_tier: T1
+  refs:
+  - preece1978
+  - sayers2013
+  - cole2010
+  confidence: A
+- edge_id: e00610
+  source: jpa2_model
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: +
+  magnitude: derived from an asymptotic fit spanning birth to maturity; residuals not published
+  context: human, both sexes, birth to maturity
+  evidence_tier: T1
+  refs:
+  - jolicoeur1992
+  confidence: D
+- edge_id: e00611
+  source: sitar_model
+  target: peak_height_velocity
+  relation: correlates_with
+  sign: +
+  magnitude: tempo SD 0.97 y and velocity SD 0.15 quantify between-child dispersion in the timing and speed of the spurt;
+    residual SD 0.79 cm
+  context: human male, ages 9-19, Christ's Hospital cohort; and human female Turner syndrome
+  evidence_tier: T1
+  refs:
+  - cole2010
+  confidence: A
+- edge_id: e00612
+  source: mid_parental_target_height
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: +
+  magnitude: regression slope 0.75-0.79 on standardised mid-parental height; 36-40% of variance explained
+  context: human, both sexes, adult height versus parental adult heights
+  evidence_tier: T1
+  refs:
+  - luo1998
+  - zeevi2024
+  confidence: A
+- edge_id: e00613
+  source: target_height_predictive_sd
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: unknown
+  magnitude: residual SD 4.7 cm (sons) and 4.4 cm (daughters) about the corrected target height
+  context: human, both sexes, adult height; 303 adult children of 23 large families
+  evidence_tier: T1
+  refs:
+  - zeevi2024
+  - luo1998
+  confidence: B
+  notes: This is the number a mechanistic model of adult height must reproduce as its irreducible prediction error given both
+    parents' heights.
+- edge_id: e00614
+  source: canalization_growth
+  target: catch_up_growth
+  relation: correlates_with
+  sign: +
+  magnitude: monomolecular kinetics fit 83-90% of episodes; rate constant differs by disease, asymptote does not
+  context: human, prepubertal, coeliac disease, juvenile hypothyroidism and GH deficiency
+  evidence_tier: T1
+  refs:
+  - wit2021
+  - prader1963
+  confidence: B
+- edge_id: e00615
+  source: canalization_growth
+  target: delayed_senescence_hypothesis
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: if catch-up is plate-intrinsic, the disease-specific rate constants of wit2021 should track the duration of growth
+    suppression rather than the hormone replaced
+  context: human, prepubertal; competing mechanistic accounts of catch-up
+  evidence_tier: T5
+  refs:
+  - wit2002
+  - wit2021
+  confidence: speculative
+  gap_id: g_l9organism_006
+- edge_id: e00616
+  source: catch_down_growth
+  target: catch_up_growth
+  relation: correlates_with
+  sign: '-'
+  magnitude: bidirectional centile crossing onto the parental channel, largely complete by 2 years
+  context: human infants, birth to 2 years
+  evidence_tier: T1
+  refs:
+  - smith1976
+  confidence: C
+- edge_id: e00617
+  source: sitting_height_ratio
+  target: vertebral_growth_plate
+  relation: correlates_with
+  sign: +
+  magnitude: the post-pubertal rise in SH/H is the organism-level signature of continued vertebral elongation after the lower-limb
+    plates decelerate
+  context: human, both sexes, puberty and post-puberty
+  evidence_tier: T1
+  refs:
+  - fredriks2005
+  confidence: B
+- edge_id: e00618
+  source: sitting_height_ratio
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: SH/H SDS is negatively correlated with height SDS, so the partition itself scales with size
+  context: human, ages 0-21, Dutch national reference
+  evidence_tier: T1
+  refs:
+  - fredriks2005
+  confidence: A
+- edge_id: e00619
+  source: limb_segment_proportion
+  target: proximal_humerus_plate
+  relation: correlates_with
+  sign: +
+  magnitude: arm span is dominated by the proximal humeral and distal radial physes
+  context: human, ages 5.5-18.5, Japanese national reference
+  evidence_tier: T1
+  refs:
+  - hirano2025
+  confidence: C
+- edge_id: e00620
+  source: limb_segment_proportion
+  target: distal_radius_plate
+  relation: correlates_with
+  sign: +
+  magnitude: arm span/height ratio is population-specific at every age and plateaus at population-specific ages
+  context: human, Japanese versus Dutch versus Turkish children
+  evidence_tier: T1
+  refs:
+  - hirano2025
+  confidence: C
+- edge_id: e00621
+  source: body_proportion_development
+  target: site_specific_growth_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: growth restriction gives a patterned shortfall (cranial base -1.8 SDS, mandible <= -1.7 SDS, lower face height
+    +1.7 SDS), not uniform miniaturisation
+  context: human, 48 short subjects born small for gestational age, ages 2-32 y
+  evidence_tier: T1
+  refs:
+  - van1998
+  confidence: B
+- edge_id: e00622
+  source: height_sds_z_score
+  target: remaining_growth_prediction
+  relation: required_for
+  sign: +
+  magnitude: every remaining-growth method expresses attained and predicted height in SDS against a named reference
+  context: human, both sexes, clinical prediction of adult height
+  evidence_tier: T1
+  refs:
+  - cole1992
+  - kuczmarski2002
+  confidence: A
+- edge_id: e00623
+  source: cdc_growth_reference
+  target: remaining_growth_prediction
+  relation: required_for
+  sign: +
+  magnitude: supplies the adult height distribution converting +/-1.64 SDS to +/-10.6 cm (girls) and +/-11.7 cm (boys)
+  context: human, both sexes, US reference population
+  evidence_tier: T1
+  refs:
+  - kuczmarski2002
+  - zeevi2024
+  confidence: A
+- edge_id: e00624
+  source: who_growth_standard
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: unknown
+  magnitude: site explains about 3% and individuals within sites about 70% of variance in early linear growth, bounding how
+    much of infant plate output is environmental
+  context: human, birth to 5 years, six countries
+  evidence_tier: T1
+  refs:
+  - who2006
+  confidence: A
+- edge_id: e00625
+  source: infancy_growth_nutrition_dependence
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: +
+  magnitude: the infancy-childhood control switch at 6-12 months changes what regulates plate output
+  context: human infants, 0-3 years
+  evidence_tier: T1
+  refs:
+  - karlberg1990
+  - who2006
+  confidence: C
+- edge_id: e00626
+  source: mini_puberty_infancy
+  target: testosterone_hormone
+  relation: correlates_with
+  sign: +
+  magnitude: a 25th-to-75th percentile shift in free testosterone corresponds to +8.3 cm/yr growth velocity in boys (95% CI
+    3.5-15.3)
+  context: human male infants, 0-12 months, Copenhagen Minipuberty Study
+  evidence_tier: T1
+  refs:
+  - pridik2026
+  confidence: B
+- edge_id: e00627
+  source: mini_puberty_infancy
+  target: igf1_systemic
+  relation: correlates_with
+  sign: +
+  magnitude: 32.6% of the free-testosterone effect on infant growth velocity is mediated by IGF-I
+  context: human male infants, 0-12 months
+  evidence_tier: T1
+  refs:
+  - pridik2026
+  confidence: C
+- edge_id: e00628
+  source: dental_development_clock
+  target: bone_age
+  relation: correlates_with
+  sign: +
+  magnitude: r=0.85 in unselected schoolchildren, but the two clocks dissociate by 1.68 y in untreated GH deficiency (bone
+    age -1.99 y, dental age -0.31 y) with the delays uncorrelated
+  context: human, ages 6-17, healthy and GH-deficient
+  evidence_tier: T1
+  refs:
+  - demirjian1985
+  - torliskawalkow2026
+  - floresmir2005
+  confidence: A
+  notes: The correlation in unselected samples is driven by shared chronological age; under endocrine perturbation the clocks
+    separate, which is the constraint on any single-systemic-signal theory of maturation.
+- edge_id: e00629
+  source: tooth_mineralization_stages
+  target: bone_age
+  relation: correlates_with
+  sign: +
+  magnitude: Spearman 0.779 (males) and 0.785 (females) against cervical vertebral maturation stage
+  context: human, 194 orthodontic patients aged 7-17, Iran
+  evidence_tier: T1
+  refs:
+  - mohammadianras2026
+  confidence: B
+- edge_id: e00630
+  source: skeletal_muscle_growth
+  target: physeal_stress_in_vivo
+  relation: correlates_with
+  sign: +
+  magnitude: peak lean mass velocity precedes peak bone mineral accrual by 0.36 y (boys) and 0.51 y (girls)
+  context: human, both sexes, pubertal growth spurt, whole body DXA
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  confidence: B
+- edge_id: e00631
+  source: muscle_bone_mechanical_coupling
+  target: mechanical_modulation_growth
+  relation: correlates_with
+  sign: +
+  magnitude: peak lean mass velocity explains 50% (total body), 61% (arms) and 41% (legs) of variance in peak bone mineral
+    content velocity; peak height velocity explains none of it independently
+  context: human, 70 boys and 68 girls, pubertal growth spurt
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  confidence: B
+- edge_id: e00632
+  source: muscle_bone_mechanical_coupling
+  target: physeal_stress_in_vivo
+  relation: hypothesized_link
+  sign: +
+  magnitude: the mechanostat requires that muscle force is the proximate stimulus at the plate; the human data are compatible
+    with independent genetic determination of both tissues
+  context: human, pubertal growth spurt
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  confidence: speculative
+  gap_id: g_l9organism_013
+- edge_id: e00633
+  source: satellite_cell
+  target: resting_zone
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: both are quiescent stem pools that contract as growth proceeds (satellite cells 14 to 5 per fibre by mouse P21);
+    no experiment tests whether they deplete on a shared schedule
+  context: mouse EDL versus mouse and human growth plate resting zone
+  evidence_tier: T1
+  refs:
+  - white2010
+  confidence: speculative
+  gap_id: g_l9organism_011
+- edge_id: e00634
+  source: muscle_hypertrophy_vs_hyperplasia
+  target: hypertrophic_volume_increase
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: muscle enlarges 14.1-fold in volume without producing new fibres, whereas the plate produces new cells that enlarge
+    and are removed; the contrast is structural, not tested
+  context: mouse EDL versus mouse and rat growth plate hypertrophic zone
+  evidence_tier: T1
+  refs:
+  - white2010
+  confidence: speculative
+  gap_id: g_l9organism_011
+- edge_id: e00635
+  source: myostatin_mstn
+  target: mechanical_modulation_growth
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: if muscle force drove longitudinal growth, human myostatin loss of function should lengthen long bones; no such
+    phenotype is reported
+  context: human; single MSTN loss-of-function case and adult ActRIIB blockade
+  evidence_tier: T1
+  refs:
+  - schuelke2004
+  - rooks2017
+  confidence: speculative
+  gap_id: g_l9organism_012
+- edge_id: e00636
+  source: activin_receptor_2b
+  target: mechanical_modulation_growth
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: receptor blockade raises muscle volume in adults with no reported skeletal length effect
+  context: human adult males after casting-induced atrophy
+  evidence_tier: T1
+  refs:
+  - rooks2017
+  confidence: speculative
+  gap_id: g_l9organism_012
+- edge_id: e00637
+  source: craniofacial_growth
+  target: bone_age
+  relation: correlates_with
+  sign: unknown
+  magnitude: craniofacial dimensions are reduced in short SGA subjects whose skeletal maturation is delayed but whose dental
+    age is not, so bone age alone does not predict facial growth
+  context: human, 48 short subjects born small for gestational age
+  evidence_tier: T1
+  refs:
+  - van1998
+  confidence: C
+- edge_id: e00638
+  source: cranial_base_synchondrosis
+  target: bone_age
+  relation: correlates_with
+  sign: +
+  magnitude: fusion stage correlates with cervical vertebral maturation at Spearman 0.955 (M) and 0.964 (F)
+  context: human, 630 Korean subjects aged 6-18, 3D CT
+  evidence_tier: T1
+  refs:
+  - kim2024
+  confidence: A
+- edge_id: e00639
+  source: cranial_base_synchondrosis
+  target: epiphyseal_fusion
+  relation: precedes
+  sign: unknown
+  magnitude: spheno-occipital fusion stages 3-4 occur at 12.7-13.9 y (M) and 11.0-12.5 y (F), around peak height velocity
+    and before appendicular fusion
+  context: human, both sexes, puberty
+  evidence_tier: T1
+  refs:
+  - kim2024
+  confidence: B
+- edge_id: e00640
+  source: suture_fusion_timing
+  target: epiphyseal_fusion
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: up to 17% of healthy children close a calvarial suture before adulthood, decades before appendicular fusion;
+    whether the two share any mechanism is untested
+  context: human, 1119 healthy children aged 0-18, high-resolution CT
+  evidence_tier: T1
+  refs:
+  - han2025
+  confidence: speculative
+  gap_id: g_l9organism_016
+- edge_id: e00641
+  source: mandibular_condylar_cartilage
+  target: mechanical_modulation_growth
+  relation: hypothesized_link
+  sign: +
+  magnitude: condylar progenitors express osteoblast markers and become chondrogenic under load, so mandibular length is load-responsive
+    in a way femoral length is not
+  context: rat mandibular condyle; no human cellular data
+  evidence_tier: T5
+  refs:
+  - robinson2015
+  confidence: speculative
+  gap_id: g_l9organism_016
+- edge_id: e00642
+  source: growth_velocity_curve
+  target: sex_difference_fusion_timing
+  relation: correlates_with
+  sign: unknown
+  magnitude: girls reach peak height velocity about 2 years earlier and 1.2 cm/yr lower than boys
+  context: human, both sexes, puberty
+  evidence_tier: T1
+  refs:
+  - chun2024
+  - galvo2025
+  - elhakeem2024
+  confidence: A
+- edge_id: e00643
+  source: growth_velocity_curve
+  target: growth_cessation
+  relation: precedes
+  sign: '-'
+  magnitude: end of pubertal growth defined at height velocity below 1 cm/yr in the QEPS decomposition
+  context: human, both sexes, late puberty
+  evidence_tier: T1
+  refs:
+  - holmgren2017
+  confidence: B

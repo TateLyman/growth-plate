@@ -1,7 +1,60 @@
 id: zebrafish_skeletal_model
 name: Zebrafish skeletal model
-type: method
-layer: L13
-stub: true
+aliases:
+- danio rerio growth model
+type: process
+summary: |
+  Zebrafish do not have a mammalian growth plate. Their endochondral growth zones are
+  architecturally distinct - they lack the stacked columnar proliferative zone bounded by a
+  secondary ossification centre that defines the mammalian physis - and their skeletal growth
+  is indeterminate, continuing through adult life (le2022). What zebrafish offer instead is
+  throughput and transparency: forward and reverse genetics at scale, live imaging of skeletal
+  element formation, and rapid phenotyping of candidate genes emerging from human skeletal
+  dysplasia sequencing. A concrete example in this atlas's domain is PAPP-A, whose requirement
+  for IGF-dependent chondrocyte differentiation and organisation was established in zebrafish
+  (harboe2024). Zebrafish are also the only vertebrate in which a growth plate gene can be
+  screened in hundreds of animals per week. The transfer problem is categorical rather than
+  quantitative: because there is no columnar proliferative zone, no hypertrophic volume set
+  point and no epiphyseal fusion, a zebrafish result can establish that a gene is required for
+  chondrocyte differentiation but cannot establish anything about zonal organisation, growth
+  cessation or adult height. Scored on the four-axis scheme defined in
+  mouse_model_translation_risk (fusion competence, plate architecture, scale, tempo; each 1-5,
+  mean reported). Zebrafish score A=5, B=5, C=5, D=5, mean 5.0, the highest translation risk
+  of any model considered.
+quantitative:
+- parameter: zebrafish translation risk score (this layer, 1-5)
+  value: '5.0'
+  unit: score
+  conditions: mean of fusion competence 5, architecture 5, scale 5, tempo 5
+  species: zebrafish
+  source_ref: le2022
+  uncertainty: scoring scheme defined in mouse_model_translation_risk
+localization:
+- 'zebrafish: no RZ/PZ/PHZ/HZ equivalent to score'
 human_evidence: absent
+human_evidence_note: No human counterpart; zebrafish results enter human reasoning only through gene-level
+  orthology.
+species_basis:
+- zebrafish
+translation_risk: high
+translation_risk_reason: The structure whose behaviour the atlas is about does not exist in zebrafish,
+  so only gene-level requirement claims transfer, never architectural or terminal-fate claims.
+confidence: B
+key_refs:
+- ref_id: le2022
+  first_author: Le Pabic P
+  year: 2022
+  type: review
+  one_line_finding: Zebrafish endochondral growth zones differ architecturally from the mammalian
+    growth plate.
+- ref_id: harboe2024
+  first_author: Harboe M
+  year: 2024
+  type: primary
+  one_line_finding: PAPP-A required for IGF-dependent chondrocyte differentiation and organisation
+    in zebrafish.
+open_questions: []
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

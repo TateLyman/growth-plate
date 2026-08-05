@@ -1,7 +1,64 @@
 id: cre_lox_lineage_tracing
-name: Cre-lox lineage tracing
+name: Cre-lox lineage tracing in the growth plate
+aliases:
+- genetic fate mapping physis
 type: method
-layer: L13
-stub: true
+summary: |
+  Cre-lox fate mapping is the method that produced the modern growth plate stem cell model,
+  and it exists only in mouse. Permanent reporter activation in a Cre-expressing cell and its
+  descendants established that PTHrP-expressing resting zone chondrocytes form columnar clones
+  after secondary ossification centre formation (mizuhashi2018) and that hypertrophic
+  chondrocytes transdifferentiate into osteoblasts rather than uniformly dying (zhou2014a).
+  Both claims are central to L2 and neither has a human counterpart. Three interpretive limits
+  apply even within mouse. Cre driver specificity is rarely absolute, so a "PTHrP+ lineage" is
+  really a "PTHrP-promoter-active lineage", including any cell in which the promoter fired
+  transiently. Reporter recombination efficiency is never 100%, so absence of label is not
+  absence of contribution. And clone identity requires either sparse labelling or multicolour
+  reporters; dense labelling produces adjacent same-colour cells that can be miscounted as one
+  clone. The transfer problem is stated precisely in lineage_tracing_limitations: the property
+  being measured - long-term clonal behaviour of a progenitor pool - is measured in a species
+  whose plate never exhausts that pool, because mice do not fuse
+  (mouse_model_translation_risk).
+quantitative:
+- parameter: Cre-lox lineage tracing studies in human growth plate
+  value: '0'
+  unit: studies
+  conditions: structurally impossible
+  species: human
+  source_ref: human_gp_donor_census_20260805
+  uncertainty: categorical
+localization:
+- 'mouse RZ: PTHrP+ cells traced to columnar clones'
 human_evidence: absent
+human_evidence_note: The method cannot be applied in humans; all results are murine.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Clonal exhaustion is the mechanism proposed for human fusion and cannot
+  occur in the species where clones can be traced.
+confidence: A
+key_refs:
+- ref_id: mizuhashi2018
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: PTHrP+ resting zone chondrocytes form columnar clones after secondary ossification
+    centre formation.
+- ref_id: zhou2014a
+  first_author: Zhou X
+  year: 2014
+  type: primary
+  one_line_finding: Hypertrophic chondrocytes transdifferentiate into osteoblasts during endochondral
+    bone formation.
+- ref_id: stoop2025
+  first_author: Stoop R
+  year: 2025
+  type: primary
+  one_line_finding: Timing of resting zone PTHrP expression affects maintenance of the progenitor
+    pool.
+open_questions:
+- g_l2stem_001
+contradicts: []
+layer: L13
+stub: false
 last_verified: '2026-08-05'

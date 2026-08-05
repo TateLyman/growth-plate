@@ -1,7 +1,80 @@
 id: brdu_edu_labeling
-name: BrdU/EdU proliferation labeling
+name: BrdU and EdU labelling of proliferating chondrocytes
+aliases:
+- thymidine analogue labelling growth plate
 type: method
+summary: |
+  Thymidine-analogue labelling is how proliferative kinetics in the growth plate are actually
+  measured, as opposed to inferred. Cumulative and pulse BrdU labelling determined
+  proliferative characteristics of growth plate chondrocytes directly (farnum1993), and cell
+  cycle analysis of proliferative zone chondrocytes across plates elongating at different
+  rates established that cycle time varies with elongation rate rather than being fixed
+  (wilsman1996a). Short-term nutritional and mechanical perturbations have been read out the
+  same way (farnum2003, farnum2000). In humans the method has been applied essentially once:
+  in vitro tritiated thymidine labelling of human and porcine growth plates in the same study
+  (thurston1985). The reason is that BrdU/EdU administration requires systemic dosing of a
+  mutagenic nucleoside analogue followed by tissue harvest at a controlled interval, which
+  cannot be done in a child. The consequence is precise and load-bearing: the human
+  proliferative cycle time of roughly 20 days that this atlas quotes is NOT a labelling
+  measurement but an inference from column cell counts divided by radiographic elongation rate
+  (kember1976), which is why gap g_l1arch_012 exists and why the human cell cycle structure -
+  G1, S, G2, M durations and growth fraction - is entirely unknown.
+quantitative:
+- parameter: human growth plate studies using thymidine-analogue labelling
+  value: 1 located
+  unit: studies
+  conditions: in vitro tritiated thymidine, human and porcine, 1985
+  species: human
+  source_ref: thurston1985
+  uncertainty: see search log g_l13b_007
+- parameter: basis of the quoted human proliferative cycle time
+  value: inferred, not labelled
+  unit: qualitative
+  conditions: 24 cells per column divided by 1.4 cm/yr elongation
+  species: human
+  source_ref: kember1976
+  uncertainty: no direct human labelling measurement exists
+localization:
+- 'multiple PZ: labelling index measured directly in animal models'
+- 'human PZ: not measurable in vivo'
+human_evidence: indirect
+human_evidence_note: One in vitro human labelling study exists; no in vivo human labelling is possible.
+species_basis:
+- multiple
+- human
+- porcine
+translation_risk: high
+translation_risk_reason: Cycle time differs roughly tenfold between rodent and human, so rodent labelling
+  kinetics cannot be carried across even in order of magnitude.
+confidence: B
+key_refs:
+- ref_id: farnum1993
+  first_author: Farnum CE
+  year: 1993
+  type: primary
+  one_line_finding: Proliferative characteristics of growth plate chondrocytes determined by BrdU
+    labelling.
+- ref_id: wilsman1996a
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Cell cycle analysis of proliferative zone chondrocytes in plates elongating at
+    different rates.
+- ref_id: thurston1985
+  first_author: Thurston AJ
+  year: 1985
+  type: primary
+  one_line_finding: In vitro tritiated thymidine labelling in human and porcine growth plates.
+- ref_id: kember1976
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: Human cycle time derived from column counts and radiographic growth rate, not
+    from labelling.
+open_questions:
+- g_l1arch_012
+- g_l1arch_002
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

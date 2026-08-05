@@ -1,7 +1,65 @@
 id: ipsc_chondrogenesis
-name: iPSC chondrogenesis
+name: iPSC-derived chondrogenesis as a human model system
+aliases:
+- pluripotent stem cell chondrocyte differentiation
 type: method
+summary: |
+  iPSC chondrogenesis is the only system in which a HUMAN genotype can be studied
+  prospectively in growth plate-like cells, which makes it the natural test bed for the
+  skeletal dysplasia alleles catalogued in L11. Directed differentiation through sclerotome to
+  chondroprogenitors in 3D pellet culture yields either articular chondrocytes or, along the
+  growth plate pathway, hypertrophic chondrocytes that transdifferentiate to osteoblasts and
+  deposit a mineralising collagen I matrix (GSE219215). The system has already produced a non-
+  trivial negative result relevant to L5: collagen X is dispensable for hypertrophic
+  differentiation and endochondral ossification of human iPSC-derived cartilage
+  (kamakura2023), which parallels the mild human phenotype of COL10A1 mutation in Schmid
+  metaphyseal chondrodysplasia and speaks directly to gap g_l5matrix_005. Three limits are
+  decisive. Directed differentiation produces a developmental-stage cell resembling fetal
+  cartilage, not a postnatal growth plate chondrocyte, and the transcriptional comparison in
+  the assembloid work is explicitly against human EMBRYONIC skeletal tissue. Line-to-line
+  variability between iPSC clones is large relative to many effect sizes of interest, so
+  isogenic controls are mandatory. And no protocol produces zonal organisation (zhang2025), so
+  allele effects on column formation or on the hypertrophic set point cannot be assayed.
+quantitative:
+- parameter: effect of collagen X loss on human iPSC hypertrophic differentiation
+  value: no detectable requirement
+  unit: qualitative
+  conditions: human iPSC-derived cartilage, endochondral protocol
+  species: ipsc_derived
+  source_ref: kamakura2023
+  uncertainty: single-system result
+localization:
+- 'ipsc_derived HZ: hypertrophic phenotype reproducible; zonal context absent'
+human_evidence: direct
+human_evidence_note: Human cells carrying human genotypes; the evidence is human but the developmental
+  stage is fetal-like.
+species_basis:
+- ipsc_derived
+translation_risk: moderate
+translation_risk_reason: Human genotype and human cells, but fetal-like stage, no zonal architecture
+  and substantial line-to-line variance.
+confidence: C
+key_refs:
+- ref_id: kamakura2023
+  first_author: Kamakura T
+  year: 2023
+  type: primary
+  one_line_finding: Collagen X dispensable for hypertrophic differentiation and endochondral ossification
+    in human iPSC-derived cartilage.
+- ref_id: zhang2025
+  first_author: Zhang G
+  year: 2025
+  type: review
+  one_line_finding: No protocol yields zonal growth plate organisation in vitro.
+- ref_id: gse267139
+  first_author: GEO submitters
+  year: 2024
+  type: dataset
+  one_line_finding: hPSC-derived articular and growth plate chondrocytes benchmarked against human
+    fetal femur cells.
+open_questions:
+- g_l5matrix_005
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

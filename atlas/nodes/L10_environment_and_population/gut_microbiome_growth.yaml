@@ -1,7 +1,88 @@
 id: gut_microbiome_growth
-name: Gut microbiome and growth
+name: Gut microbiome and juvenile growth
 type: process
+summary: 'The gut microbiome is causally sufficient to change juvenile body length in gnotobiotic mice
+  and has not been shown to do so in humans. Three 2016 experiments define the state of evidence. Colonising
+  germ-free mice with a conventional specific-pathogen-free microbiota increased both bone formation and
+  resorption; with long-term colonisation, bone formation and growth plate activity predominated, giving
+  increased longitudinal and radial bone growth, and serum IGF-1 rose substantially with increased IGF-1
+  production in liver and adipose tissue (yan2016). Conversely, antibiotic treatment of conventional mice
+  lowered serum IGF-1 and inhibited bone formation, and supplying short-chain fatty acids to antibiotic-treated
+  mice restored both IGF-1 and bone mass - which identifies SCFA production as a candidate mechanism (yan2016).
+  Monocolonisation showed the effect is strain-specific: selected lactobacilli promoted juvenile growth
+  in a strain-dependent way that recapitulated the whole microbiota''s effect on the somatotropic axis,
+  and buffered the growth cost of chronic undernutrition in germ-free mice (schwarzer2016). Transplanting
+  microbiota from 6- and 18-month-old undernourished Malawian infants into germ-free mice fed a Malawian
+  diet transmitted impaired growth, and adding Ruminococcus gnavus and Clostridium symbiosum ameliorated
+  it (blanton2016) - the closest existing link between a human microbiota and a growth phenotype, but
+  the phenotype is still read out in mice.'
+quantitative:
+- parameter: effect of long-term conventionalisation of germ-free mice on longitudinal bone growth
+  value: increased
+  unit: qualitative
+  conditions: sexually mature germ-free mice colonised with SPF microbiota; net effect varies with colonisation
+    duration
+  species: mouse
+  source_ref: yan2016
+  uncertainty: direction reported; magnitudes in the paper's figures
+- parameter: effect of antibiotic treatment on serum IGF-1 in conventional mice
+  value: decreased
+  unit: qualitative
+  conditions: conventionally raised mice; reversed by short-chain fatty acid supplementation
+  species: mouse
+  source_ref: yan2016
+  uncertainty: direction reported
+localization:
+- 'mouse growth plate: increased growth plate activity after long-term colonisation (yan2016)'
+- 'human growth plate: never examined in relation to microbiota'
+human_evidence: indirect
+human_evidence_note: The only human input is donor microbiota from undernourished Malawian children; the
+  growth phenotype is measured in gnotobiotic mice, not in the donors.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Every causal demonstration is in germ-free or antibiotic-treated mice on defined
+  diets. Mice do not fuse their growth plates and the germ-free state has no human counterpart.
+confidence: C
+claim_grades:
+- claim: Gut microbiota causally increase serum IGF-1 and longitudinal bone growth.
+  grade: C
+  basis: Germ-free colonisation, antibiotic depletion and SCFA rescue in mice, replicated across two independent
+    2016 studies (yan2016, schwarzer2016).
+- claim: Microbiota immaturity in undernourished children is causally related to their growth impairment.
+  grade: C
+  basis: Faecal transplant from Malawian donors into gnotobiotic mice transmits the phenotype (blanton2016);
+    causality is established in the recipient mouse, not the donor child.
+- claim: Manipulating the microbiome raises IGF-1 and linear growth in humans.
+  grade: X
+  basis: No randomised human trial reports an IGF-1 and linear growth endpoint after microbiota manipulation.
+    Logged as g_l10env_001.
+key_refs:
+- ref_id: yan2016
+  pmid: '27821775'
+  first_author: Yan J
+  year: 2016
+  type: primary
+  one_line_finding: Conventionalisation of germ-free mice increased serum IGF-1, growth plate activity
+    and longitudinal and radial bone growth; antibiotics lowered IGF-1 and bone formation, and SCFA supplementation
+    restored both.
+- ref_id: schwarzer2016
+  pmid: '26912894'
+  first_author: Schwarzer M
+  year: 2016
+  type: primary
+  one_line_finding: The infant mouse microbiota sustains weight gain and longitudinal growth via the somatotropic
+    axis; selected Lactobacillus plantarum strains recapitulate the effect and buffer chronic undernutrition.
+- ref_id: blanton2016
+  pmid: '26912898'
+  first_author: Blanton LV
+  year: 2016
+  type: primary
+  one_line_finding: Microbiota from undernourished Malawian infants transmitted impaired growth to gnotobiotic
+    mice; Ruminococcus gnavus and Clostridium symbiosum ameliorated it.
+open_questions:
+- g_l10env_001
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

@@ -40,9 +40,22 @@ ANIMAL_MECH = re.compile(r"\b(mouse|mice|murine|rat|rabbit|porcine|bovine|"
                          r"knockout|knock-in|Cre|transgenic|-/-)\b", re.I)
 
 
-def load(p):
-    with open(p) as f:
-        return yaml.safe_load(f) or {}
+def load(p, d=None):
+    """Tolerant loader: a malformed file is reported, not fatal.
+
+    One in-flight or corrupt node file must never break a repo-wide tool run -
+    that turns a single defect into total blindness, exactly when you most need
+    the other 650 files readable.
+    """
+    if not os.path.exists(p):
+        return d or {}
+    try:
+        with open(p) as f:
+            return yaml.safe_load(f) or d
+    except Exception as e:
+        import sys as _s
+        print(f"  ! UNPARSEABLE {os.path.relpath(p)}: {str(e)[:90]}", file=_s.stderr)
+        return d or {}
 
 
 def main():

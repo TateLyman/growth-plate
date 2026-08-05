@@ -1,7 +1,73 @@
 id: porcine_growth_plate_model
 name: Porcine growth plate model
-type: method
+aliases:
+- pig physis model
+type: process
+summary: |
+  The pig is the large-animal model whose growth plate most closely matches human dimensions
+  and loading, and it is the model of choice for physeal mechanics. Unconfined compression of
+  porcine growth plate and its three zones has been used to derive zone-specific mechanical
+  properties (sergerie2009), and porcine explants have supplied the controlled loading
+  experiments the human plate cannot be subjected to: compressive modulation alters
+  chondrocyte viability (kaviani2015), static and dynamic loading produce different strain
+  fields (kaviani2016), and in situ chondrocyte deformation has been measured under stress-
+  controlled static versus dynamic compression (zimmermann2017). Morphological and X-ray
+  microprobe studies of the porcine plate established zonal mineral chemistry (althoff1982),
+  and porcine tissue supplied the T1-mapping calibration used to infer water content by MRI
+  (shiguetomimedi2013). Human comparative data exist directly: in vitro thymidine labelling
+  was performed in human AND porcine growth plates in the same study (thurston1985). Scored on
+  the four-axis scheme defined in mouse_model_translation_risk (fusion competence, plate
+  architecture, scale, tempo; each 1-5, mean reported). Pig scores A=2, B=1, C=1, D=2, mean
+  1.5, giving translation_risk moderate; the residual risk is that pig growth completes far
+  faster than human and that pigs are usually studied as juveniles well before any fusion
+  event.
+quantitative:
+- parameter: pig translation risk score (this layer, 1-5)
+  value: '1.5'
+  unit: score
+  conditions: mean of fusion competence 2, architecture 1, scale 1, tempo 2
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: scoring scheme defined in mouse_model_translation_risk
+localization:
+- 'porcine RZ/PZ/HZ: zone-specific compressive properties measured'
+human_evidence: indirect
+human_evidence_note: One study labelled human and porcine growth plates side by side, which is the
+  strongest direct human-porcine comparison available.
+species_basis:
+- porcine
+- human
+translation_risk: moderate
+translation_risk_reason: Dimensional and mechanical similarity to human is high, but pigs are studied
+  juvenile, growth completes much faster, and fusion is rarely the endpoint.
+confidence: B
+key_refs:
+- ref_id: sergerie2009
+  first_author: Sergerie K
+  year: 2009
+  type: primary
+  one_line_finding: Mechanical properties of the porcine growth plate and its three zones from unconfined
+    compression.
+- ref_id: kaviani2015
+  first_author: Kaviani R
+  year: 2015
+  type: primary
+  one_line_finding: Compressive mechanical modulation alters growth plate chondrocyte viability in
+    porcine explants.
+- ref_id: zimmermann2017
+  first_author: Zimmermann EA
+  year: 2017
+  type: primary
+  one_line_finding: In situ growth plate chondrocyte deformation under static versus dynamic compression.
+- ref_id: thurston1985
+  first_author: Thurston AJ
+  year: 1985
+  type: primary
+  one_line_finding: Thymidine labelling performed in human and porcine growth plates in the same
+    study.
+open_questions:
+- g_l6mech_003
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

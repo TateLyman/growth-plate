@@ -1,9 +1,43 @@
 id: zrs_enhancer
-name: ZRS limb enhancer
-type: gene
-layer: L0
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: ZRS (ZPA regulatory sequence) SHH limb enhancer
 aliases:
-- ZPA regulatory sequence
+- ZRS
+- MFCS1
+- LMBR1 intron 5 enhancer
+type: gene
+summary: 'The ZRS is a conserved cis-regulatory element inside intron 5 of LMBR1, approximately 1 Mb from the
+  SHH promoter, that drives SHH expression specifically in the limb ZPA. Single-nucleotide changes within it
+  segregate with human preaxial polydactyly and with the equivalent mouse and cat phenotypes, while the SHH
+  coding sequence remains intact (lettice2003). It is kept in this layer as the atlas''s worked example that
+  a skeletal patterning decision can be made by a distant non-coding element whose disruption produces a purely
+  limb-restricted phenotype with no midline or CNS involvement - the modular, tissue-specific regulatory architecture
+  that any genetic explanation of site-specific growth (L8) has to work within. What the ZRS does NOT do, on
+  current evidence, is set a growth rate: no ZRS allele has been assayed for elongation rate, growth plate
+  height, or chondrocyte kinetics in any species.'
+localization:
+- 'human LMBR1 intron 5: confirmed by mutation mapping'
+- 'mouse and chick limb bud posterior mesenchyme: confirmed by enhancer reporter'
+human_evidence: direct
+human_evidence_note: Human families with preaxial polydactyly carry ZRS point mutations that co-segregate with
+  the limb phenotype.
+species_basis:
+- human
+- mouse
+- chicken
+translation_risk: low
+translation_risk_reason: The element and its phenotype were defined in human pedigrees first and are conserved
+  across mammals and birds.
+confidence: B
+key_refs:
+- ref_id: lettice2003
+  pmid: '12837695'
+  first_author: Lettice LA
+  year: 2003
+  type: primary_abstract_only
+  one_line_finding: A conserved long-range SHH limb enhancer in LMBR1 intron 5 carries point mutations associated
+    with preaxial polydactyly in humans
+open_questions:
+- g_l0dev_008
+layer: L0
+stub: false
+last_verified: '2026-08-05'

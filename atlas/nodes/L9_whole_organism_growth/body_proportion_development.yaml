@@ -1,7 +1,116 @@
 id: body_proportion_development
 name: Body proportion development
+aliases:
+- developmental change in body proportions
 type: phenotype
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Body proportions are not fixed and rescaled during growth; they change systematically and in
+  opposite directions at different ages, which is the organism-level signature of site-specific physeal
+  velocity. The head is proportionally largest at birth and the legs proportionally shortest; through
+  infancy and childhood leg length grows fastest so the sitting height ratio falls; during and after the
+  pubertal spurt vertebral growth persists after the lower-limb plates decelerate, so the ratio rises
+  again. The Dutch and Japanese national references quantify these trajectories in sitting height, leg
+  length, arm span and their ratios (fredriks2005, hirano2025), and the ICP decomposition attributes the
+  childhood limb-favouring phase to a stronger childhood growth component in the legs than in the trunk
+  (karlberg1989). Two independent constraints on mechanism follow. First, disproportion in disease is
+  site-selective rather than global: short children born small for gestational age show a short anterior
+  cranial base (-1.8 SDS), a small retropositioned mandible (<= -1.7 SDS) and a small maxilla (-1.5 SDS)
+  with an increased lower anterior face height (+1.7 SDS) - a specific pattern, not uniform miniaturisation
+  (van1998). Second, the ratio a child ends with is population-specific at every age, so any single systemic
+  growth signal must be read differently by different plates in a way that itself varies between populations.'
+quantitative:
+- parameter: anterior cranial base length in short children born SGA
+  value: '-1.8'
+  unit: SDS
+  conditions: 48 subjects aged 2-32 y, 77 cephalograms
+  species: human
+  source_ref: van1998
+  uncertainty: age- and sex-specific SDS
+- parameter: mandibular size in short children born SGA
+  value: <= -1.7
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: several mandibular measures at or below this value
+- parameter: maxillary size in short children born SGA
+  value: '-1.5'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: as reported
+- parameter: lower anterior face height in short children born SGA
+  value: '+1.7'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: increased despite global short stature
+- parameter: mandibular plane angle in short children born SGA
+  value: '+1.9'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: as reported
+- parameter: cranial base angle in short children born SGA
+  value: '+1.0'
+  unit: SDS
+  conditions: same cohort
+  species: human
+  source_ref: van1998
+  uncertainty: as reported
+localization:
+- 'human whole organism: sitting height, leg length, arm span, lateral cephalometry'
+human_evidence: direct
+human_evidence_note: All measurements are human anthropometry and cephalometry; the SGA disproportion
+  series is a directly measured clinical cohort.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human proportion phenotype.
+confidence: B
+claim_grades:
+- claim: Body proportions change in opposite directions before and after the pubertal spurt
+  grade: A
+  basis: Directly measured in national reference cohorts of 14500 (Dutch) and 11059 (Japanese) children.
+- claim: Growth restriction produces a site-selective, not uniform, pattern of skeletal shortfall
+  grade: B
+  basis: Directly measured cephalometric SDS pattern in 48 short SGA subjects (van1998); single centre,
+    wide age range, no untreated control series.
+- claim: The childhood growth phase acts preferentially on the legs
+  grade: D
+  basis: Model-derived from the ICP decomposition only (karlberg1989).
+key_refs:
+- ref_id: fredriks2005
+  pmid: '15863466'
+  first_author: Fredriks AM
+  year: 2005
+  type: primary
+  one_line_finding: Age references for sitting height, leg length and their ratio across 0-21 years.
+- ref_id: hirano2025
+  pmid: '40275708'
+  first_author: Hirano Y
+  year: 2025
+  type: primary
+  one_line_finding: Arm span/height ratio trajectories differ between Japanese, Dutch and Turkish children
+    at every age.
+- ref_id: van1998
+  pmid: '9753823'
+  first_author: Van Erum R
+  year: 1998
+  type: primary
+  one_line_finding: Short children born SGA show a specific craniofacial disproportion pattern with normal
+    dental age.
+- ref_id: karlberg1989
+  pmid: '2801108'
+  first_author: Karlberg J
+  year: 1989
+  type: primary
+  one_line_finding: Attributes the infancy-to-childhood change in body proportions to a leg-biased childhood
+    growth component.
+open_questions:
+- g_l9organism_008
 last_verified: '2026-08-05'

@@ -1,7 +1,88 @@
 id: glucocorticoid_sparing_strategy
-name: Glucocorticoid-sparing strategies
+name: Glucocorticoid-sparing strategies for growth
+aliases: [dissociative steroids, vamorolone, intermittent steroid regimens]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  The central pharmacological question raised by chronic glucocorticoid therapy in children
+  is whether the anti-inflammatory transrepression arm of glucocorticoid receptor signalling
+  can be separated from the transactivation arm that suppresses growth and bone. Three
+  strategies have been tried in humans. First, alternative classical steroids: deflazacort
+  was introduced with a bone- and growth-sparing rationale that its US label does not
+  support. Second, route and schedule modification: inhaled rather than systemic delivery
+  in asthma, which the CAMP adult-height result shows reduces but does not abolish the
+  height cost (-1.2 cm of adult height at budesonide 400 ug/day). Third, and most directly,
+  dissociative agents: vamorolone is a structurally modified steroid designed to retain
+  anti-inflammatory activity while reducing growth suppression and bone loss, now compared
+  with prednisone and deflazacort through cross-trial analysis of FOR-DMD, with real-world
+  criteria published for transitioning patients to it. The strategy space is therefore
+  moving from dose reduction toward receptor-level dissociation, but no agent has yet
+  demonstrated preserved anti-inflammatory efficacy with a randomised adult-height endpoint,
+  and CAMP remains the only glucocorticoid study in any indication that measured attained
+  adult height.
+quantitative:
+  - parameter: residual adult height cost of the inhaled-route sparing strategy
+    value: '-1.2'
+    unit: cm
+    conditions: budesonide 400 ug/day for 4-6 years from age 5-13 y; adult height in 943 CAMP participants at mean age 24.9 y
+    species: human
+    source_ref: kelly2012
+    uncertainty: 95% CI -1.9 to -0.5, p=0.001
+  - parameter: glucocorticoid-sparing agents with a randomised attained-adult-height endpoint
+    value: '0'
+    unit: agents
+    conditions: no dissociative or sparing agent has been carried to attained adult height in a randomised trial
+    species: human
+    source_ref: clemens2026
+    uncertainty: absence established by search - see gap g_l12b_023
+localization:
+  - "human growth plate: glucocorticoid receptor transactivation is the proposed growth-suppressive arm; the dissociation has never been demonstrated at the plate in humans"
+human_evidence: direct
+human_evidence_note: >-
+  Each strategy has human trial data - CAMP for the inhaled route, FOR-DMD and its
+  vamorolone cross-trial comparison for dissociative steroids - but none with an
+  adult-height endpoint except CAMP.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  Human trials throughout. The receptor-level dissociation rationale is derived from
+  transactivation/transrepression biology in cells and is asserted rather than demonstrated
+  in the treated human plate.
+confidence: B
+claim_grades:
+  - claim: Changing the route of glucocorticoid administration reduces but does not abolish the adult-height cost.
+    grade: A
+    basis: CAMP randomised trial with attained adult height in 943 participants.
+  - claim: Dissociative steroids such as vamorolone retain anti-inflammatory efficacy with less growth suppression.
+    grade: C
+    basis: Supported by cross-trial comparison against FOR-DMD corticosteroid arms and by real-world transition criteria; not by a randomised head-to-head with a growth endpoint.
+  - claim: Glucocorticoid transactivation and transrepression are pharmacologically separable at the human growth plate.
+    grade: E
+    basis: Flagged inference from receptor biology; no human plate-level demonstration exists.
+key_refs:
+  - ref_id: kelly2012
+    pmid: '22938716'
+    first_author: Kelly HW
+    year: 2012
+    type: primary
+    one_line_finding: Inhaled budesonide still cost 1.2 cm of adult height - route change reduces but does not remove the effect.
+  - ref_id: clemens2026
+    pmid: '42202243'
+    first_author: Clemens PR
+    year: 2026
+    type: primary
+    one_line_finding: Vamorolone compared with prednisone and deflazacort through cross-trial analysis of FOR-DMD.
+  - ref_id: fda_emflaza_label_2025
+    year: 2025
+    type: regulatory
+    one_line_finding: Deflazacort's approved label carries no growth-sparing claim, so the earliest sparing strategy is unsupported at the regulatory level.
+  - ref_id: stimpson2025
+    pmid: '41201188'
+    first_author: Stimpson G
+    year: 2025
+    type: primary
+    one_line_finding: Growth and motor function centiles track together in corticosteroid-treated DMD, quantifying the cost side of the trade-off.
+open_questions: [g_l12b_023]
+contradicts: []
 last_verified: '2026-08-05'

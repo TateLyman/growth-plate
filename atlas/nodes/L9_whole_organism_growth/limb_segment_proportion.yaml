@@ -1,7 +1,90 @@
 id: limb_segment_proportion
 name: Limb segment proportions
+aliases:
+- arm span minus height
+- arm span/height ratio
+- upper to lower segment ratio
 type: phenotype
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Arm span minus height, and the arm span/height ratio, index the relative output of the upper-
+  and lower-limb growth plates and of the vertebral plates against each other. In Japanese national anthropometry
+  of 6089 boys and 4970 girls aged 5.5-18.5 years, arm span rises throughout childhood with a marked acceleration
+  at puberty and the arm span/height ratio rises slowly throughout childhood before plateauing (hirano2025).
+  Two population facts fall out of the same analysis and constrain any universal mechanistic model: the
+  Japanese ratio is lower than the Dutch and Turkish ratio at every age between 5.5 and 18.5 years, and
+  it reaches its plateau earlier. Population differences in limb proportion are therefore not a simple
+  consequence of differences in adult stature or in pubertal timing alone, since the plateau age and the
+  ratio differ independently. Because arm span is dominated by the proximal humeral and distal radial
+  physes while height is dominated by the distal femoral and proximal tibial physes (proximal_humerus_plate,
+  distal_radius_plate, distal_femur_plate, proximal_tibia_plate in L1), the ratio is the cheapest organism-level
+  readout of differential physeal velocity that exists, and a mechanistic model that predicts a single
+  systemic growth signal must explain why these four plates respond to it in fixed but population-specific
+  proportions.'
+quantitative:
+- parameter: children contributing to the Japanese arm span reference
+  value: '11059'
+  unit: children
+  conditions: 6089 boys and 4970 girls, ages 5.5-18.5 y, national survey 1992-1994, LMS-smoothed
+  species: human
+  source_ref: hirano2025
+  uncertainty: exact
+- parameter: arm span/height ratio, Japanese versus Dutch and Turkish
+  value: lower at every age
+  unit: ratio
+  conditions: comparison at the 0 SD reference curve, ages 5.5-18.5 y
+  species: human
+  source_ref: hirano2025
+  uncertainty: direction reported for all ages; absolute values are in the published LMS tables, not the
+    abstract
+- parameter: age at which the arm span/height ratio plateaus, Japanese versus Dutch and Turkish
+  value: earlier in Japanese
+  unit: years
+  conditions: same comparison
+  species: human
+  source_ref: hirano2025
+  uncertainty: direction reported; plateau ages not numerically stated in the abstract
+- parameter: change in arm span through childhood
+  value: monotonic increase with a pubertal acceleration
+  unit: not_applicable
+  conditions: Japanese national survey
+  species: human
+  source_ref: hirano2025
+  uncertainty: qualitative from the abstract; curves published
+localization:
+- 'human whole organism: arm span and standing height by standardised anthropometry'
+human_evidence: direct
+human_evidence_note: Two large national anthropometric surveys compared against two further published
+  national references.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human anthropometric ratio.
+confidence: B
+claim_grades:
+- claim: Arm span/height ratio rises through childhood and plateaus in adolescence
+  grade: A
+  basis: LMS-smoothed reference curves from 11059 children.
+- claim: Population differences in limb proportion are independent of differences in the timing of the
+    plateau
+  grade: C
+  basis: Both differences observed in the same three-population comparison but not formally decomposed;
+    the comparison is cross-sectional and the reference cohorts differ in decade of collection.
+key_refs:
+- ref_id: hirano2025
+  pmid: '40275708'
+  first_author: Hirano Y
+  year: 2025
+  type: primary
+  one_line_finding: Japanese arm span and arm span/height references from 11059 children; the ratio is
+    lower and plateaus earlier than in Dutch and Turkish children.
+- ref_id: fredriks2005
+  pmid: '15863466'
+  first_author: Fredriks AM
+  year: 2005
+  type: primary
+  one_line_finding: Dutch leg length and sitting height references providing the complementary lower-body
+    proportion measures.
+open_questions:
+- g_l9organism_008
 last_verified: '2026-08-05'

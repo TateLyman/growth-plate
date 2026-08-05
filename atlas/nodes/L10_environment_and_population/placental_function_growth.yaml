@@ -1,7 +1,65 @@
 id: placental_function_growth
 name: Placental function and fetal growth
 type: process
+summary: 'The placenta is the organ through which every prenatal environmental exposure in this layer
+  must pass, and it is the least-instrumented node in the chain. Its measurable output is fetal size,
+  and in the Indonesian Action Against Stunting Hub cohort birth weight and maternal height were, with
+  infant IGF-1, the significant determinants of length-for-age Z at 12 months (htet2026). The Dutch Hunger
+  Winter shows the placenta failing as a buffer: mid-to-late gestational famine reduced fetal growth and,
+  more strikingly, abolished the detectable expression of a birthweight polygenic index, which explained
+  14% of birthweight variance in unexposed controls (taeubert2026). Mechanistically the placenta is where
+  the atlas''s IGF bioavailability machinery is most concentrated - PAPP-A and PAPP-A2 are named for their
+  pregnancy-associated plasma abundance and are the proteases that liberate IGF from IGFBP-4 and from
+  IGFBP-3/IGFBP-5 respectively (L4 pappa_protease, pappa2_protease), and HSD11B2 forms the placental barrier
+  that shields the fetus from maternal cortisol (L4 hsd11b2_enzyme). But none of the human cohorts cited
+  here measured a placental protein, and no study links a measured placental PAPP-A2 activity to a measured
+  fetal or infant linear growth outcome. This node is deliberately thin: it names the entry points rather
+  than claiming them.'
+quantitative:
+- parameter: birthweight variance explained by a polygenic index, unexposed controls
+  value: '14'
+  unit: '%'
+  conditions: Dutch Hunger Winter Families Study controls, n=161
+  species: human
+  source_ref: taeubert2026
+  uncertainty: r=0.38, p<0.001; falls to r=0.10 in famine-exposed
+localization:
+- 'human placenta: PAPP-A, PAPP-A2 and HSD11B2 are placentally expressed (see L4 nodes)'
+- 'human placenta: no cohort in this layer measured any placental protein'
+human_evidence: indirect
+human_evidence_note: Human cohorts measure the placenta's output (birth weight) rather than the placenta;
+  the molecular entry points are named from L4 rather than measured here.
+species_basis:
+- human
+translation_risk: unknown
+translation_risk_reason: Placental structure and IGF-2 imprinting differ substantially between human and
+  mouse, so rodent placental data do not transfer cleanly.
+confidence: D
+claim_grades:
+- claim: Birth weight, as the placenta's integrated output, predicts infant linear growth.
+  grade: A
+  basis: Longitudinal cohort with structural equation modelling (htet2026); pooled cohorts (victora2008).
+- claim: Placental PAPP-A2 activity sets fetal IGF bioavailability and hence fetal linear growth in humans.
+  grade: E
+  basis: No study measures placental PAPP-A2 activity against a fetal or infant linear growth endpoint;
+    the protease biology is established in L4 from postnatal human genetics.
+key_refs:
+- ref_id: htet2026
+  pmid: '42132033'
+  first_author: Htet MK
+  year: 2026
+  type: primary
+  one_line_finding: Birth weight and maternal height, together with infant IGF-1, were the significant
+    determinants of length-for-age Z at 12 months in an Indonesian birth cohort.
+- ref_id: taeubert2026
+  pmid: '41820558'
+  first_author: Taeubert MJ
+  year: 2026
+  type: primary
+  one_line_finding: Prenatal famine, acting through the maternal-placental supply line, abolished the
+    detectable genetic contribution to birthweight.
+open_questions:
+- g_l10env_008
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

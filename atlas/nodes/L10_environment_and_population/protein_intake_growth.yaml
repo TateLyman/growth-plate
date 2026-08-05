@@ -1,7 +1,105 @@
 id: protein_intake_growth
-name: Dietary protein and growth
+name: Dietary protein intake and linear growth
 type: process
+summary: 'Dietary protein reaches the growth plate through two verified molecular entry points and one
+  unverified one. The verified systemic route is hepatic IGF-1: in 24 healthy 8-year-old boys randomised
+  to 1.5 L skimmed milk or an isonitrogenous quantity of lean meat for 7 days, protein intake rose 61%
+  and 54% respectively, yet serum IGF-I rose 19% (P=0.001) and the IGF-I/IGFBP-3 ratio 13% (P<0.0001)
+  only in the milk arm and not at all in the meat arm (hoppe2004). Protein quantity is therefore not the
+  operative variable; protein source is. A 2x2 factorial follow-up in 57 boys separated the fractions:
+  casein raised serum IGF-1 by 15% (P<0.0001) with no change in fasting insulin, while whey raised fasting
+  insulin by 21% (P=0.006) with no change in IGF-1, and milk minerals (Ca, P) had no independent effect
+  on either (hoppe2009). The second entry point is amino-acid substrate itself: in 711-730 stunted Ugandan
+  children plasma concentrations of 18 of 21 amino acids were lower where inflammatory markers were elevated,
+  and plasma amino acids were examined as correlates of serum IGF-1 and linear growth (larnkjr2026). The
+  third proposed entry point, direct leucine-sensing by mTORC1 in growth plate chondrocytes, has not been
+  demonstrated for a dietary protein manipulation in any species and is registered as a gap.'
+quantitative:
+- parameter: change in serum IGF-I after 7 days of 1.5 L/day skimmed milk
+  value: '+19'
+  unit: '%'
+  conditions: healthy 8-year-old boys, n=12 of 24, free-living diet otherwise
+  species: human
+  source_ref: hoppe2004
+  uncertainty: P=0.001
+- parameter: change in serum IGF-I after 7 days of isonitrogenous lean meat
+  value: '0'
+  unit: '%'
+  conditions: healthy 8-year-old boys, n=12 of 24; protein intake rose 54% to 3.8 g/kg/day
+  species: human
+  source_ref: hoppe2004
+  uncertainty: no significant increase reported
+- parameter: change in serum IGF-1 after 7 days of casein at the level in 1.5 L skim milk
+  value: '+15'
+  unit: '%'
+  conditions: 57 eight-year-old boys, 2x2 factorial with milk minerals
+  species: human
+  source_ref: hoppe2009
+  uncertainty: P<0.0001
+- parameter: change in fasting insulin after 7 days of whey at the level in 1.5 L skim milk
+  value: '+21'
+  unit: '%'
+  conditions: 57 eight-year-old boys
+  species: human
+  source_ref: hoppe2009
+  uncertainty: P=0.006; IGF-1 unchanged, P=0.27
+- parameter: protein intake achieved in the milk arm
+  value: '4.0'
+  unit: g/kg/day
+  conditions: 8-year-old boys, 3-day weighed records, 61% increase from baseline
+  species: human
+  source_ref: hoppe2004
+  uncertainty: P<0.0001 for the increase
+localization:
+- 'human SYS: diet -> liver -> circulating IGF-1'
+- 'human growth plate: no direct measurement of any dietary protein effect exists'
+human_evidence: direct
+human_evidence_note: Two randomised human dietary interventions in prepubertal boys with serum IGF-I,
+  IGFBP-3 and insulin as endpoints.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The IGF-1 response was measured directly in human children; only the chondrocyte-level
+  step is extrapolated.
+confidence: B
+claim_grades:
+- claim: Milk protein, but not an equal quantity of meat protein, raises serum IGF-I in prepubertal children
+    within 7 days.
+  grade: A
+  basis: Randomised human intervention with weighed dietary records and RIA IGF-I (hoppe2004), fraction-resolved
+    in a second randomised trial (hoppe2009).
+- claim: The casein fraction carries the IGF-1 effect and the whey fraction carries the insulin effect.
+  grade: A
+  basis: 2x2 factorial randomised design in 57 boys with no protein x mineral interaction (hoppe2009).
+- claim: Dietary amino acid supply acts on the growth plate through chondrocyte mTORC1.
+  grade: E
+  basis: No dietary protein manipulation has been coupled to a growth plate mTORC1 readout in any species.
+    Logged as g_l10env_002.
+key_refs:
+- ref_id: hoppe2004
+  pmid: '15054433'
+  first_author: Hoppe C
+  year: 2004
+  type: primary
+  one_line_finding: 1.5 L/day skimmed milk for 7 days raised serum IGF-I 19% and IGF-I/IGFBP-3 13% in
+    8-year-old boys; an isonitrogenous meat load raised neither.
+- ref_id: hoppe2009
+  pmid: '19471293'
+  first_author: Hoppe C
+  year: 2009
+  type: primary
+  one_line_finding: Casein raised serum IGF-1 15% with no insulin change; whey raised fasting insulin
+    21% with no IGF-1 change; milk minerals had no independent effect (n=57).
+- ref_id: larnkjr2026
+  pmid: '42002262'
+  first_author: Larnkjær A
+  year: 2026
+  type: primary
+  one_line_finding: In 711-730 stunted Ugandan children plasma amino acids were examined as correlates
+    of serum IGF-1, linear growth and fat-free mass; 18 of 21 amino acids were lower where inflammatory
+    markers were elevated.
+open_questions:
+- g_l10env_002
 layer: L10
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

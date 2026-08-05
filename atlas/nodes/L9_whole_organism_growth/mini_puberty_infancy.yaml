@@ -1,7 +1,95 @@
 id: mini_puberty_infancy
 name: Mini-puberty of infancy
+aliases:
+- minipuberty
 type: process
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Mini-puberty is the transient postnatal activation of the hypothalamic-pituitary-gonadal axis
+  that produces adult-range sex steroid concentrations in the first months of life. Its relevance to skeletal
+  growth was until recently assumed rather than measured. In the Copenhagen Minipuberty Study, 189 healthy
+  term appropriate-for-gestational-age infants (101 boys, 88 girls) were followed with repeated anthropometry
+  and hormone measurement to 12 months: growth velocity declined in both sexes after birth but boys grew
+  faster than girls for the first three months before the trajectories converged, and free testosterone
+  was positively associated with growth velocity, most strongly in boys - shifting free testosterone from
+  the 25th to the 75th percentile corresponded to a growth velocity 8.3 cm/yr higher (95% CI 3.5-15.3),
+  of which 32.6% (95% CI 15.3-...) was mediated by IGF-I (pridik2026). This is an organism-level number
+  with a direct mechanistic consequence: sex steroids act on the human growth plate to accelerate it months
+  before any secondary sexual characteristic appears, and they do so partly through the somatotropic axis
+  and partly not. It also establishes an initial condition, since the infant plate is exposed to androgen
+  and estrogen concentrations it will not see again until puberty.'
+quantitative:
+- parameter: infants in the Copenhagen Minipuberty Study cohort
+  value: '189'
+  unit: infants
+  conditions: 101 boys and 88 girls, healthy, term, appropriate for gestational age, followed to 12 months
+  species: human
+  source_ref: pridik2026
+  uncertainty: exact
+- parameter: increase in growth velocity for a 25th-to-75th percentile shift in free testosterone, boys
+  value: '8.3'
+  unit: cm/yr
+  conditions: first months of life; repeated anthropometry and hormone measurement
+  species: human
+  source_ref: pridik2026
+  uncertainty: 95% CI 3.5-15.3
+- parameter: fraction of the free-testosterone effect on growth velocity mediated by IGF-I, boys
+  value: '32.6'
+  unit: percent
+  conditions: formal mediation analysis
+  species: human
+  source_ref: pridik2026
+  uncertainty: 95% CI lower bound 15.3; upper bound truncated in the retrieved abstract
+- parameter: duration of the male growth-velocity advantage after birth
+  value: '3'
+  unit: months
+  conditions: before trajectories converge between sexes
+  species: human
+  source_ref: pridik2026
+  uncertainty: as reported
+- parameter: share of adult height gained in the first year
+  value: '15'
+  unit: percent
+  conditions: healthy term infants
+  species: human
+  source_ref: pridik2026
+  uncertainty: stated as background
+localization:
+- 'human whole organism: recumbent length velocity, 0-12 months, related to serum free testosterone and
+  IGF-I'
+human_evidence: direct
+human_evidence_note: Prospective population-based human birth cohort with repeated hormone and anthropometric
+  measurement (NCT02784184).
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Directly measured in human infants; rodents have a mini-puberty but not a comparable
+  postnatal length trajectory.
+confidence: B
+claim_grades:
+- claim: Free testosterone during mini-puberty is associated with faster infant linear growth in boys
+  grade: B
+  basis: Prospective cohort with repeated measures and a stated effect size with CI; observational, single
+    cohort, no interventional confirmation.
+- claim: About one third of the association is mediated by IGF-I
+  grade: C
+  basis: Mediation analysis in one observational cohort; mediation estimates are model-dependent and the
+    reported CI is wide.
+key_refs:
+- ref_id: pridik2026
+  pmid: '41921027'
+  first_author: Pridik C
+  year: 2026
+  type: primary
+  one_line_finding: A 25th-to-75th percentile shift in free testosterone corresponds to an 8.3 cm/yr higher
+    infant growth velocity in boys, 32.6% mediated by IGF-I.
+- ref_id: karlberg1990
+  pmid: '2220375'
+  first_author: Karlberg J
+  year: 1990
+  type: primary
+  one_line_finding: Places the infancy-to-childhood control switch at 6-12 months, overlapping the end
+    of mini-puberty.
+open_questions:
+- g_l9organism_003
 last_verified: '2026-08-05'

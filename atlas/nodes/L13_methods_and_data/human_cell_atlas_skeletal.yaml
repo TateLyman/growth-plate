@@ -1,7 +1,68 @@
 id: human_cell_atlas_skeletal
-name: Human Cell Atlas skeletal data
+name: Skeletal coverage of the Human Cell Atlas
+aliases:
+- HCA bone and cartilage coverage
 type: dataset
+summary: |
+  The Human Cell Atlas does not contain the growth plate. Its organ vocabulary, queried on
+  2026-08-05, includes bone marrow (9 projects), bone tissue (6), bone element (1), femur (1),
+  hindlimb (3), limb (1), skeletal element (1) and musculoskeletal system (1) - and contains
+  no term for cartilage or growth plate at all, so no project is indexed to physeal tissue.
+  The projects returned under skeletal terms are a fetal bone marrow haematopoiesis atlas, a
+  multiple-myeloma study, a lung-metastasis study, an adult femoral head, a neuroblastoma
+  study and Tabula Muris. The nearest relevant HCA resource is the human embryonic limb atlas,
+  which does contain chondrocyte lineages resolved in space and time at 5-9 post-conception
+  weeks (zhang2024), and an adult intervertebral disc atlas that includes vertebral endplate
+  cartilage. Neither covers a postnatal growth plate. The practical effect is that the
+  reference cell atlas the rest of biology uses to annotate human cell states cannot annotate
+  a growth plate chondrocyte; annotation is done instead against mouse growth plate
+  references, which is the species-transfer step that recurs throughout this layer.
+quantitative:
+- parameter: HCA projects indexed to a cartilage or growth plate organ term
+  value: '0'
+  unit: projects
+  conditions: Azul index, organ facet enumeration 2026-08-05
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: see search log g_l13b_002
+- parameter: HCA projects indexed to bone tissue
+  value: '6'
+  unit: projects
+  conditions: organ facet "bone tissue"
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: point-in-time census
+- parameter: HCA projects indexed to bone marrow
+  value: '9'
+  unit: projects
+  conditions: organ facet "bone marrow"
+  species: human
+  source_ref: geo_census_l13b_20260805
+  uncertainty: point-in-time census
+localization:
+- 'human SYS: growth plate absent from the reference human cell atlas'
+human_evidence: direct
+human_evidence_note: Direct enumeration of the live HCA index.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Measures the human reference resource itself.
+confidence: A
+key_refs:
+- ref_id: geo_census_l13b_20260805
+  first_author: Human Growth System Atlas L13 sweep
+  year: 2026
+  type: dataset
+  one_line_finding: HCA organ vocabulary contains no cartilage or growth plate term; 6 bone tissue
+    and 9 bone marrow projects.
+- ref_id: zhang2024
+  first_author: Zhang B
+  year: 2024
+  type: primary
+  one_line_finding: Human embryonic limb cell atlas - the nearest HCA resource containing chondrocyte
+    lineages.
+open_questions: []
+contradicts: []
 layer: L13
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

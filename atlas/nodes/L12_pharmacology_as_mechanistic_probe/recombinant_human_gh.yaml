@@ -1,9 +1,97 @@
 id: recombinant_human_gh
-name: Recombinant human GH
+name: Recombinant human growth hormone (somatropin)
+aliases: [rhGH, somatropin, daily GH]
 type: intervention
 layer: L12
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Recombinant human growth hormone is the oldest and most widely used pharmacological
+  probe of the human growth plate: an unlimited supply after 1985 turned a scarce
+  pituitary extract into a systematically testable intervention across a dozen conditions.
+  Somatropin binds the GH receptor and acts on the plate both indirectly, by raising
+  hepatic IGF-1, and directly on chondrocytes, and its skeletal effect requires open
+  epiphyses. Across indications a systematic review of 20 studies (21,812 participants)
+  reports growth velocity gains of +3.0 to +5.0 cm/yr and height SDS gains of +0.3 to
+  +0.9, largest in idiopathic short stature and Prader-Willi syndrome, with discontinuation
+  rates below 2%. The instructive case is achondroplasia, where GH is licensed only in
+  Japan: it produces a real short-term velocity response but the effect on adult height is
+  explicitly described as unsatisfactory, and real-world cohorts have since transitioned
+  patients from GH to vosoritide. That dissociation - a hormone that reliably accelerates
+  velocity but does not reliably convert velocity into adult height in an FGFR3-driven
+  plate - is the single most important thing GH tells the atlas, because it shows the
+  systemic axis can push a plate whose intrinsic ceiling is set elsewhere.
+quantitative:
+  - parameter: growth velocity gain on rhGH across paediatric growth disorders
+    value: '+3.0 to +5.0'
+    unit: cm/yr
+    conditions: >-
+      systematic review of 20 studies, 21,812 participants aged 0-18 y, 2016-2026, mixed
+      indications with idiopathic short stature and Prader-Willi syndrome largest
+    species: human
+    source_ref: martn2026
+    uncertainty: range across studies; moderate-to-serious risk of bias noted by the authors
+  - parameter: height SDS gain on rhGH
+    value: '+0.3 to +0.9'
+    unit: SDS
+    conditions: same systematic review
+    species: human
+    source_ref: martn2026
+    uncertainty: range across studies
+  - parameter: treatment discontinuation rate
+    value: '<2'
+    unit: percent
+    conditions: same systematic review, GnRHa and rhGH pooled
+    species: human
+    source_ref: martn2026
+    uncertainty: as reported
+localization:
+  - "human growth plate: acts on GH-receptor-bearing chondrocytes and via hepatic IGF-1; no zonal localisation demonstrated in treated humans"
+human_evidence: direct
+human_evidence_note: >-
+  Decades of randomised and post-marketing data in tens of thousands of children across
+  licensed indications, with adult height reported in several.
+species_basis: [human]
+translation_risk: low
+translation_risk_reason: >-
+  Efficacy, safety and dosing are all established in humans. The residual uncertainty is
+  about mechanism partition - how much of the effect is direct on chondrocytes versus
+  IGF-1-mediated - which is not resolvable from clinical data.
+confidence: A
+claim_grades:
+  - claim: rhGH increases growth velocity by roughly 3-5 cm/yr in children with growth disorders.
+    grade: A
+    basis: Systematic review of 20 studies, 21,812 participants, though with moderate-to-serious risk of bias.
+  - claim: rhGH raises adult height in achondroplasia to a clinically satisfactory degree.
+    grade: D
+    basis: Japanese licensure with published statements that the adult-height effect is unsatisfactory; no placebo-controlled adult-height trial in achondroplasia.
+  - claim: The plate effect is partly direct on chondrocytes rather than wholly IGF-1-mediated.
+    grade: C
+    basis: Rests on animal and cell work; not separable in treated humans.
+key_refs:
+  - ref_id: martn2026
+    pmid: '42187530'
+    first_author: Martín Pérez IM
+    year: 2026
+    type: systematic_review
+    one_line_finding: 20 studies, 21,812 participants - rhGH +3.0 to +5.0 cm/yr velocity, +0.3 to +0.9 height SDS.
+  - ref_id: guzzetti2024
+    pmid: '39857834'
+    first_author: Guzzetti C
+    year: 2024
+    type: review
+    one_line_finding: rhGH is licensed to improve adult height in Turner, SHOX deficiency, Noonan, Prader-Willi, ISS, CKD and SGA.
+  - ref_id: shimada2026
+    pmid: '41232919'
+    first_author: Shimada T
+    year: 2026
+    type: primary
+    one_line_finding: Single-centre cohort documenting transition from growth hormone to vosoritide in achondroplasia with age-dependent effectiveness.
+  - ref_id: shimomura2026
+    pmid: '42244940'
+    first_author: Shimomura M
+    year: 2026
+    type: primary
+    one_line_finding: Nationwide survey and cohort of GH therapy after childhood haematopoietic cell transplantation - GH used against an irradiated plate.
+open_questions: [g_l12b_009]
+contradicts: []
 last_verified: '2026-08-05'
-aliases:
-- rhGH

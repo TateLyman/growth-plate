@@ -2,6 +2,117 @@ id: suture_fusion_timing
 name: Cranial suture fusion timing
 type: phenotype
 layer: L9
-stub: true
-human_evidence: absent
+stub: false
+summary: Cranial sutures are the intramembranous growth sites of the calvaria and their patency is what
+  allows the vault to expand with the brain. The textbook statement that the major sutures close during
+  the third decade is wrong for a substantial minority of children. In 1119 healthy children aged 0-18
+  imaged by high-resolution head CT for unrelated reasons, with craniofacial disorders, syndromes, fractures
+  and intracranial pathology excluded, complete or partial sagittal suture closure was present in 11.1%,
+  coronal closure in 2.8% and lambdoid closure in 1.6%; up to 17% had some asymptomatic calvarial suture
+  closure before adulthood (han2025). Sagittal patency fell from 99.3% under age three to 83% by age nine.
+  The metopic suture behaved as the textbooks describe, with over 75% closed by 21 months. Closure was
+  not morphologically silent - sagittal closure was associated with a lower cephalic index (beta -0.8,
+  p=0.026) and 86.4% of children with a cephalic index below 70 had partial or complete sagittal closure
+  - but 83.1% of children with sagittal closure remained normocephalic. The organism-level significance
+  is that the calvarial growth sites finish long before the long bones, and they do so on a schedule that
+  tracks brain growth rather than the pubertal spurt.
+quantitative:
+- parameter: children with complete or partial sagittal suture closure
+  value: '11.1'
+  unit: percent
+  conditions: 1119 healthy children aged 0-18, high-resolution head CT, 2014-2024, three neuroradiologists
+  species: human
+  source_ref: han2025
+  uncertainty: exact
+- parameter: children with coronal suture closure
+  value: '2.8'
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: exact
+- parameter: children with lambdoid suture closure
+  value: '1.6'
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: exact
+- parameter: children with any asymptomatic calvarial suture closure before adulthood
+  value: up to 17
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: as stated in the conclusion
+- parameter: proportion with open sagittal suture under age 3
+  value: '99.3'
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: exact
+- parameter: proportion with open sagittal suture by age 9
+  value: '83'
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: exact
+- parameter: proportion with metopic suture closure by 21 months
+  value: over 75
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: consistent with established patterns
+- parameter: association of sagittal closure with cephalic index
+  value: '-0.8'
+  unit: beta
+  conditions: multivariable regression
+  species: human
+  source_ref: han2025
+  uncertainty: p=0.026
+- parameter: children with sagittal closure who remained normocephalic
+  value: '83.1'
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: exact
+- parameter: children with cephalic index below 70 who had partial or complete sagittal closure
+  value: '86.4'
+  unit: percent
+  conditions: same cohort
+  species: human
+  source_ref: han2025
+  uncertainty: exact
+localization:
+- 'human calvaria: metopic, sagittal, coronal and lambdoid sutures on high-resolution CT'
+human_evidence: direct
+human_evidence_note: Retrospective CT review of 1119 healthy children with explicit exclusion of craniofacial
+  and syndromic disease.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human imaging series.
+confidence: A
+claim_grades:
+- claim: Up to 17% of healthy children have asymptomatic calvarial suture closure before adulthood
+  grade: A
+  basis: Direct CT assessment of 1119 children by three neuroradiologists with explicit exclusion criteria.
+- claim: The classical teaching that the major sutures close in the third decade is wrong
+  grade: A
+  basis: 'Directly contradicted by the same measurement: sagittal patency falls from 99.3% under age 3
+    to 83% by age 9.'
+key_refs:
+- ref_id: han2025
+  pmid: '41254355'
+  first_author: Han NA
+  year: 2025
+  type: primary
+  one_line_finding: 11.1% of 1119 healthy children have partial or complete sagittal suture closure, and
+    up to 17% have some asymptomatic calvarial closure before adulthood.
+open_questions:
+- g_l9organism_016
 last_verified: '2026-08-05'
