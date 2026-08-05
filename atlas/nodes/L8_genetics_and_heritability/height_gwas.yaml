@@ -1,138 +1,199 @@
 id: height_gwas
 name: Height GWAS
-aliases: [genome-wide association study of adult height, height GWAS saturation, giant_consortium,
-  GIANT consortium, Genetic Investigation of ANthropometric Traits, polygenic_architecture_height,
-  Polygenic architecture of height]
-merged_from: [giant_consortium, polygenic_architecture_height]
+aliases:
+- genome-wide association study of adult height
+- height GWAS saturation
+- giant_consortium
+- GIANT consortium
+- Genetic Investigation of ANthropometric Traits
+- polygenic_architecture_height
+- Polygenic architecture of height
+merged_from:
+- giant_consortium
+- polygenic_architecture_height
 type: dataset
 layer: L8
 stub: false
-summary: |
-  Adult height is the canonical polygenic human trait and the first for which
+summary: 'Adult height is the canonical polygenic human trait and the first for which
+
   common-variant discovery reached saturation. The largest analysis to date
+
   (Yengo 2022) meta-analysed 5.4 million individuals of diverse ancestries and
+
   resolved 12,111 statistically independent genome-wide-significant SNPs, which
+
   together account for nearly all of the common-SNP-based heritability of height,
+
   meaning further common-variant discovery in this design yields diminishing
+
   returns. Those SNPs are not scattered uniformly: they cluster into 7,209
+
   non-overlapping genomic segments of mean size ~90 kb covering ~21% of the
+
   genome, and association density is elevated near genes with skeletal growth
+
   function. Saturation is ancestry-specific, not universal: the same 12,111 SNPs
+
   explain 40% of phenotypic variance in European-ancestry populations but only
+
   ~10-20% in populations of other ancestries, despite similar per-allele effect
+
   sizes and similar prioritized genes. That gap is therefore attributed to
+
   differences in linkage disequilibrium and allele frequency rather than to
+
   different underlying biology, which matters because it makes the
+
   transferability failure a study-design artefact rather than evidence that
+
   height genetics differs between ancestries. This node also carries the two
+
   entities previously stubbed separately as `giant_consortium` and
+
   `polygenic_architecture_height`, which were not distinct objects. GIANT is the
+
   meta-analysis structure that produced this dataset rather than an independent
+
   actor: Yengo 2022 is a GIANT analysis, as was the first-generation 20-locus scan
+
   (Weedon 2008, n=30,147), so the trajectory 20 loci explaining ~3% of variance to
-  12,111 SNPs explaining ~40% is one consortium's sample-size curve, not the
+
+  12,111 SNPs explaining ~40% is one consortium''s sample-size curve, not the
+
   convergence of independent groups. The "architecture" is the same object measured
+
   here from the other side: extreme polygenicity (7,209 segments over 21% of the
+
   genome), small per-allele effects, and an ancestry-dependent ceiling on prediction.
+
+  '
 quantitative:
-  - parameter: discovery sample size
-    value: '5400000'
-    unit: individuals
-    conditions: GWAS meta-analysis, diverse ancestries
-    species: human
-    source_ref: yengo2022
-    uncertainty: not applicable (count)
-  - parameter: independent genome-wide-significant SNPs
-    value: '12111'
-    unit: SNPs
-    conditions: conditionally independent, P < 5e-8
-    species: human
-    source_ref: yengo2022
-    uncertainty: not applicable (count)
-  - parameter: non-overlapping genomic segments containing associations
-    value: '7209'
-    unit: segments
-    conditions: clustering of the 12,111 independent SNPs
-    species: human
-    source_ref: yengo2022
-    uncertainty: not applicable (count)
-  - parameter: mean size of associated genomic segment
-    value: '90'
-    unit: kb
-    conditions: >-
-      published version reports MEAN ~90 kb; the bioRxiv preprint of the same
-      analysis reported MEDIAN ~90 kb - see contradicts
-    species: human
-    source_ref: yengo2022
-    uncertainty: summary statistic only; distribution not restated in abstract
-  - parameter: fraction of genome covered by associated segments
-    value: '21'
-    unit: '%'
-    conditions: union of the 7,209 segments
-    species: human
-    source_ref: yengo2022
-    uncertainty: not reported in abstract
-  - parameter: phenotypic variance explained by the 12,111 SNPs, European ancestry
-    value: '40'
-    unit: '%'
-    conditions: out-of-sample estimation and prediction
-    species: human
-    source_ref: yengo2022
-    uncertainty: 45% when using all HapMap 3 SNPs
-  - parameter: height variance explained by the first 20 GWAS loci
-    value: '3'
-    unit: '%'
-    conditions: 20 SNPs, n=13,665 discovery + 16,482 replication, European ancestry
-    species: human
-    source_ref: weedon2008
-    uncertainty: 'approximate; ~5 cm separates the 6.2% of people carrying <=17 tall alleles
-      from the 5.5% carrying >=27'
-  - parameter: phenotypic variance explained, non-European ancestries
-    value: 10-20
-    unit: '%'
-    conditions: out-of-sample; 14-24% when using all HapMap 3 SNPs
-    species: human
-    source_ref: yengo2022
-    uncertainty: range across ancestry groups as reported
+- parameter: discovery sample size
+  value: '5400000'
+  unit: individuals
+  conditions: GWAS meta-analysis, diverse ancestries
+  species: human
+  source_ref: yengo2022
+  uncertainty: not applicable (count)
+- parameter: independent genome-wide-significant SNPs
+  value: '12111'
+  unit: SNPs
+  conditions: conditionally independent, P < 5e-8
+  species: human
+  source_ref: yengo2022
+  uncertainty: not applicable (count)
+- parameter: non-overlapping genomic segments containing associations
+  value: '7209'
+  unit: segments
+  conditions: clustering of the 12,111 independent SNPs
+  species: human
+  source_ref: yengo2022
+  uncertainty: not applicable (count)
+- parameter: mean size of associated genomic segment
+  value: '90'
+  unit: kb
+  conditions: published version reports MEAN ~90 kb; the bioRxiv preprint of the same analysis reported
+    MEDIAN ~90 kb - see contradicts
+  species: human
+  source_ref: yengo2022
+  uncertainty: summary statistic only; distribution not restated in abstract
+- parameter: fraction of genome covered by associated segments
+  value: '21'
+  unit: '%'
+  conditions: union of the 7,209 segments
+  species: human
+  source_ref: yengo2022
+  uncertainty: not reported in abstract
+- parameter: phenotypic variance explained by the 12,111 SNPs, European ancestry
+  value: '40'
+  unit: '%'
+  conditions: out-of-sample estimation and prediction
+  species: human
+  source_ref: yengo2022
+  uncertainty: 45% when using all HapMap 3 SNPs
+- parameter: height variance explained by the first 20 GWAS loci
+  value: '3'
+  unit: '%'
+  conditions: 20 SNPs, n=13,665 discovery + 16,482 replication, European ancestry
+  species: human
+  source_ref: weedon2008
+  uncertainty: approximate; ~5 cm separates the 6.2% of people carrying <=17 tall alleles from the 5.5%
+    carrying >=27
+- parameter: phenotypic variance explained, non-European ancestries
+  value: 10-20
+  unit: '%'
+  conditions: out-of-sample; 14-24% when using all HapMap 3 SNPs
+  species: human
+  source_ref: yengo2022
+  uncertainty: range across ancestry groups as reported
 localization:
-  - "human: germline variation, not tissue-localized"
+- 'human: germline variation, not tissue-localized'
 human_evidence: direct
-human_evidence_note: >-
-  Entirely human by construction - a meta-analysis of measured stature in 5.4
-  million people.
-species_basis: [human]
+human_evidence_note: Entirely human by construction - a meta-analysis of measured stature in 5.4 million
+  people.
+species_basis:
+- human
 translation_risk: not_applicable
-translation_risk_reason: >-
-  Human observational genetics; no cross-species inference involved. The
-  transferability limit is between human ancestry groups, not between species.
-confidence: B
+translation_risk_reason: Human observational genetics; no cross-species inference involved. The transferability
+  limit is between human ancestry groups, not between species.
+confidence: D
 key_refs:
-  - ref_id: weedon2008
-    pmid: '18391952'
-    doi: 10.1038/ng.121
-    first_author: Weedon MN
-    year: 2008
-    type: primary
-    one_line_finding: >-
-      The first-generation GIANT height GWAS found 20 loci explaining ~3% of height
-      variance, implicating hedgehog (IHH, HHIP, PTCH1) and matrix (ACAN, EFEMP1,
-      ADAMTSL3) genes.
-  - ref_id: yengo2022
-    pmid: '36224396'
-    doi: 10.1038/s41586-022-05275-y
-    first_author: Yengo L
-    year: 2022
-    type: primary
-    one_line_finding: >-
-      12,111 independent SNPs from 5.4M individuals capture nearly all common-SNP
-      heritability of height; variance explained drops from 40% in European to
-      10-20% in other ancestries.
+- ref_id: weedon2008
+  pmid: '18391952'
+  doi: 10.1038/ng.121
+  first_author: Weedon MN
+  year: 2008
+  type: primary
+  one_line_finding: The first-generation GIANT height GWAS found 20 loci explaining ~3% of height variance,
+    implicating hedgehog (IHH, HHIP, PTCH1) and matrix (ACAN, EFEMP1, ADAMTSL3) genes.
+- ref_id: yengo2022
+  pmid: '36224396'
+  doi: 10.1038/s41586-022-05275-y
+  first_author: Yengo L
+  year: 2022
+  type: primary
+  one_line_finding: 12,111 independent SNPs from 5.4M individuals capture nearly all common-SNP heritability
+    of height; variance explained drops from 40% in European to 10-20% in other ancestries.
+- ref_id: wang2026_2
+  pmid: '41904631'
+  first_author: Wang X
+  year: 2026
+  type: primary
+  one_line_finding: Out-of-sample height PGS prediction in a non-overlapping admixed Latino cohort - an
+    independent evidence TYPE, not another GWAS.
 open_questions: []
 contradicts:
-  - >-
-    yengo2022 internal discrepancy: the peer-reviewed Nature version states the
-    7,209 segments have a MEAN size of ~90 kb, whereas the bioRxiv preprint of the
-    same analysis states a MEDIAN of ~90 kb. For a right-skewed size distribution
-    these cannot both be ~90 kb. Logged in audit/contradictions.md; the published
-    value is used here and the discrepancy is flagged rather than silently resolved.
+- 'yengo2022 internal discrepancy: the peer-reviewed Nature version states the 7,209 segments have a MEAN
+  size of ~90 kb, whereas the bioRxiv preprint of the same analysis states a MEDIAN of ~90 kb. For a right-skewed
+  size distribution these cannot both be ~90 kb. Logged in audit/contradictions.md; the published value
+  is used here and the discrepancy is flagged rather than silently resolved.'
+- SNP-based (56%, SE 2.3%) versus twin/pedigree (~0.80 adult) heritability estimates disagree in magnitude.
+  This is the missing-heritability problem and is recorded as an open contradiction, not collapsed into
+  a single figure.
 last_verified: '2026-08-05'
+claim_grades:
+- claim: These 12,111 independent SNPs associate with adult height at the reported effect sizes.
+  grade: B
+  basis: 'Yengo 2022, n=5.4M. NOT independently replicated by another GWAS - Wood 2014 and Wainschtein
+    2026 are NESTED inside the same 5.4M sample, so GWAS cannot replicate its own flagship estimate. The
+    legitimate independent test is a DIFFERENT evidence type: out-of-sample polygenic prediction in a
+    non-overlapping cohort. Wang X 2026 supplies one (HCHS/SOL admixed Latinos, European-derived
+    weights, R2 improving ~0.05 with ancestry PCs), which corroborates that the variant effects carry
+    real predictive signal outside the discovery sample.'
+- claim: Height is highly heritable.
+  grade: A
+  basis: Independently corroborated by twin and pedigree designs, which share NO inferential route with
+    GWAS. Dewau 2025 meta-analysis (162,293 twin pairs, 380,195 parent-offspring pairs). This is a genuinely
+    independent replication in the propositional sense - a different study design testing the same proposition.
+- claim: SNP-based and family-based heritability estimates agree in magnitude.
+  grade: D
+  basis: THEY DO NOT. GREML-LDMS gives 56% (SE 2.3%), inferred true 60-70%; twin designs give ~0.80 in
+    adults and 0.57 (95% CI 0.52-0.61) under age 5. That disagreement IS the missing-heritability problem
+    and is recorded as a contradiction, not resolved into a single number.
+- claim: The pathways enriched in height GWAS signal are the pathways that mechanistically build the growth
+    plate.
+  grade: E
+  basis: Weakest claim on the node and graded lowest. Enrichment is demonstrated (Richard 2025, Darbellay
+    2024); the variance PARTITION across tissues has never been computed (g_l8gwas_001). And per common_vs_rare_pathway_divergence,
+    0 of 3 GWAS enrichment lists names the somatotropic axis despite it carrying the largest monogenic
+    stature effects - so GWAS enrichment is NOT a readout of mechanistic importance.

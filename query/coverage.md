@@ -9,14 +9,18 @@ Generated from the compiled artifacts. Regenerate with `atlas/tools/compile_quer
 
 ## Canonical denominator
 
-All coverage percentages in this atlas are stated against **`researched_non_stub_nodes`
-= 578** unless a different base is named inline.
+All coverage percentages in this atlas are stated against **`researched_non_stub_nodes`**
+unless a different base is named inline.
 
-Defined: a node file with `stub: false`, i.e. one that has been researched to full
-schema. Three other counts exist and are NOT interchangeable with it —
-**612** total node files (includes 34 stubs), **34** stubs, and **110** nodes carrying
-`claim_grades`. Earlier reports in this build used 654 and 612 as bases at different
-moments; every figure below is restated against 578.
+Defined: a node file with `stub: false`. **As of Phase 3 close this equals the total node
+count, because stub resolution completed and zero stubs survive: 614 = 614.** Before that
+pass the two numbers differed (578 researched of 612 files, 34 stubs), and earlier reports
+in this build used 654 and 612 as bases at different moments. Any figure in this file
+predating the stub-resolution pass is restated below against the current 614.
+
+The one count that is still NOT interchangeable: **`claim_grades`** is populated on a
+minority of nodes, and coverage figures about claim-level grading must name that base
+explicitly rather than implying it applies to all 614.
 
 ## The one-line boundary
 

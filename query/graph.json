@@ -35275,8 +35275,29 @@
    "layer": "L8",
    "stub": false,
    "summary": "Adult height is the canonical polygenic human trait and the first for which\ncommon-variant discovery reached saturation. The largest analysis to date\n(Yengo 2022) meta-analysed 5.4 million individuals of diverse ancestries and\nresolved 12,111 statistically independent genome-wide-significant SNPs, which\ntogether account for nearly all of the common-SNP-based heritability of height,\nmeaning further common-variant discovery in this design yields diminishing\nreturns. Those SNPs are not scattered uniformly: they cluster into 7,209\nnon-overlapping genomic segments of mean size ~90 kb covering ~21% of the\ngenome, and association density is elevated near genes with skeletal growth\nfunction. Saturation is ancestry-specific, not universal: the same 12,111 SNPs\nexplain 40% of phenotypic variance in European-ancestry populations but only\n~10-20% in populations of other ancestries, despite similar per-allele effect\nsizes and similar prioritized genes. That gap is therefore attributed to\ndifferences in linkage disequilibrium and allele frequency rather than to\ndifferent underlying biology, which matters because it makes the\ntransferability failure a study-design artefact rather than evidence that\nheight genetics differs between ancestries. This node also carries the two\nentities previously stubbed separately as `giant_consortium` and\n`polygenic_architecture_height`, which were not distinct objects. GIANT is the\nmeta-analysis structure that produced this dataset rather than an independent\nactor: Yengo 2022 is a GIANT analysis, as was the first-generation 20-locus scan\n(Weedon 2008, n=30,147), so the trajectory 20 loci explaining ~3% of variance to\n12,111 SNPs explaining ~40% is one consortium's sample-size curve, not the\nconvergence of independent groups. The \"architecture\" is the same object measured\nhere from the other side: extreme polygenicity (7,209 segments over 21% of the\ngenome), small per-allele effects, and an ancestry-dependent ceiling on prediction.\n",
-   "confidence": "B",
-   "claim_grades": null,
+   "confidence": "D",
+   "claim_grades": [
+    {
+     "claim": "These 12,111 independent SNPs associate with adult height at the reported effect sizes.",
+     "grade": "B",
+     "basis": "Yengo 2022, n=5.4M. NOT independently replicated by another GWAS - Wood 2014 and Wainschtein 2026 are NESTED inside the same 5.4M sample, so GWAS cannot replicate its own flagship estimate. The legitimate independent test is a DIFFERENT evidence type: out-of-sample polygenic prediction in a non-overlapping cohort. Wang X 2026 supplies one (HCHS/SOL admixed Latinos, European-derived weights, R2 improving ~0.05 with ancestry PCs), which corroborates that the variant effects carry real predictive signal outside the discovery sample."
+    },
+    {
+     "claim": "Height is highly heritable.",
+     "grade": "A",
+     "basis": "Independently corroborated by twin and pedigree designs, which share NO inferential route with GWAS. Dewau 2025 meta-analysis (162,293 twin pairs, 380,195 parent-offspring pairs). This is a genuinely independent replication in the propositional sense - a different study design testing the same proposition."
+    },
+    {
+     "claim": "SNP-based and family-based heritability estimates agree in magnitude.",
+     "grade": "D",
+     "basis": "THEY DO NOT. GREML-LDMS gives 56% (SE 2.3%), inferred true 60-70%; twin designs give ~0.80 in adults and 0.57 (95% CI 0.52-0.61) under age 5. That disagreement IS the missing-heritability problem and is recorded as a contradiction, not resolved into a single number."
+    },
+    {
+     "claim": "The pathways enriched in height GWAS signal are the pathways that mechanistically build the growth plate.",
+     "grade": "E",
+     "basis": "Weakest claim on the node and graded lowest. Enrichment is demonstrated (Richard 2025, Darbellay 2024); the variance PARTITION across tissues has never been computed (g_l8gwas_001). And per common_vs_rare_pathway_divergence, 0 of 3 GWAS enrichment lists names the somatotropic axis despite it carrying the largest monogenic stature effects - so GWAS enrichment is NOT a readout of mechanistic importance."
+    }
+   ],
    "human_evidence": "direct",
    "human_evidence_note": "Entirely human by construction - a meta-analysis of measured stature in 5.4 million people.",
    "species_basis": [
@@ -35305,11 +35326,20 @@
      "year": 2022,
      "type": "primary",
      "one_line_finding": "12,111 independent SNPs from 5.4M individuals capture nearly all common-SNP heritability of height; variance explained drops from 40% in European to 10-20% in other ancestries."
+    },
+    {
+     "ref_id": "wang2026_2",
+     "pmid": "41904631",
+     "first_author": "Wang X",
+     "year": 2026,
+     "type": "primary",
+     "one_line_finding": "Out-of-sample height PGS prediction in a non-overlapping admixed Latino cohort - an independent evidence TYPE, not another GWAS."
     }
    ],
    "open_questions": [],
    "contradicts": [
-    "yengo2022 internal discrepancy: the peer-reviewed Nature version states the 7,209 segments have a MEAN size of ~90 kb, whereas the bioRxiv preprint of the same analysis states a MEDIAN of ~90 kb. For a right-skewed size distribution these cannot both be ~90 kb. Logged in audit/contradictions.md; the published value is used here and the discrepancy is flagged rather than silently resolved."
+    "yengo2022 internal discrepancy: the peer-reviewed Nature version states the 7,209 segments have a MEAN size of ~90 kb, whereas the bioRxiv preprint of the same analysis states a MEDIAN of ~90 kb. For a right-skewed size distribution these cannot both be ~90 kb. Logged in audit/contradictions.md; the published value is used here and the discrepancy is flagged rather than silently resolved.",
+    "SNP-based (56%, SE 2.3%) versus twin/pedigree (~0.80 adult) heritability estimates disagree in magnitude. This is the missing-heritability problem and is recorded as an open contradiction, not collapsed into a single figure."
    ],
    "termination_reason": null,
    "termination_note": null,
@@ -75597,6 +75627,23 @@
    "title": "Role of &lt;i&gt;ZBTB38&lt;/i&gt; Genotype and Expression in Growth and Response to Recombinant Human Growth Hormone Treatment",
    "type": "primary",
    "year": 2022
+  },
+  "wang2026_2": {
+   "added": "2026-08-05",
+   "cited_by": 0,
+   "doi": "10.1016/j.xhgg.2026.100597",
+   "first_author": "Wang X",
+   "has_full_text": true,
+   "is_preprint": false,
+   "journal": "HGG advances",
+   "one_line_finding": "Out-of-sample height PGS prediction in HCHS/SOL admixed Latino cohort using European-GWAS-derived weights; R2 improves ~0.05 with ancestry PCs",
+   "open_access": true,
+   "pmid": "41904631",
+   "ref_id": "wang2026_2",
+   "tier": "T1",
+   "title": "Explicitly modeling genetic ancestry to improve polygenic prediction accuracy for height in a large, admixed cohort of US Latinos: Findings from HCHS/SOL",
+   "type": "primary",
+   "year": 2026
   }
  }
 }
