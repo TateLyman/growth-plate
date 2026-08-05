@@ -197,10 +197,11 @@ def main():
             layer_adj[f"{sl}->{tl}"] += 1
 
     # reachability for the nodes worth precomputing
-    targets = [c["node"] for c in conv[:25]]
-    targets += [nid for nid, n in nodes.items()
-                if n.get("layer") == "L12" and not n.get("stub")]
-    reach_sets = {t: reach(usable_adj, t) for t in dict.fromkeys(targets)}
+    # Compute for EVERY non-stub node. Partial coverage made a missing key
+    # indistinguishable from "nothing is reachable" - a silent trap that produced a
+    # wrong answer in the first benchmark run.
+    targets = [nid for nid, n in nodes.items() if not n.get("stub")]
+    reach_sets = {t: reach(usable_adj, t) for t in targets}
 
     derived = {
         "meta": {"warning": "COMPILED - regenerate with tools/compile_query.py",
@@ -269,7 +270,32 @@ def main():
         "search_logs": dict(slog_by_gap),
     }
 
+    # ---- contradictions.json ----
+    # The contradiction ledger lived only in audit/contradictions.md, so the query
+    # protocol pointed at parameters.disputed (5 keys) and missed the flagship
+    # zonal-stiffness contradiction entirely. Compile it.
+    contra = {"meta": {"warning": "COMPILED from audit/contradictions.md + node "
+                                  "`contradicts` fields - regenerate, never hand-edit"},
+              "ledger_markdown": "", "node_contradicts": {}, "gap_contradictions": []}
+    cpath = os.path.join(ROOT, "audit", "contradictions.md")
+    if os.path.exists(cpath):
+        contra["ledger_markdown"] = open(cpath).read()
+    for nid, n in nodes.items():
+        if n.get("contradicts"):
+            contra["node_contradicts"][nid] = {
+                "layer": n.get("layer"), "confidence": n.get("confidence"),
+                "contradicts": n["contradicts"]}
+    contra["gap_contradictions"] = [g for g in gaps if g.get("type") == "contradiction"]
+    contra["index"] = {
+        "nodes_with_contradictions": len(contra["node_contradicts"]),
+        "contradiction_type_gaps": len(contra["gap_contradictions"]),
+        "disputed_parameters": None,  # filled below
+    }
+
+    contra["index"]["disputed_parameters"] = len(disputed)
+
     for name, obj in [("graph.json", graph), ("derived.json", derived),
+                      ("contradictions.json", contra),
                       ("parameters.json", parameters), ("gaps.json", gapdoc)]:
         with open(os.path.join(OUT, name), "w") as f:
             json.dump(obj, f, indent=1, default=str)

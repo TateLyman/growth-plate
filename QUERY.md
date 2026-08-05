@@ -27,6 +27,8 @@ query/derived.json     # FIRST — alias table, cycles, convergence, reachabilit
 query/graph.json       # nodes + edges + refs
 query/parameters.json  # only for quantitative questions
 query/gaps.json        # only for negative-space questions
+query/contradictions.json  # contradiction ledger + node contradicts + contradiction gaps
+query/coverage.md      # ALWAYS — §8 requires the layer warning BEFORE the answer
 ```
 
 `derived.json` first because `alias_to_id` decides whether the atlas even *has* the
@@ -48,15 +50,33 @@ An answer produced by the wrong operation is wrong even when it sounds right.
 
 | # | Type | Trigger | REQUIRED operation |
 |---|---|---|---|
-| 1 | **ENTITY** | "what is X" | Node read + `claim_grades`. Cheapest type — do not over-answer or traverse. |
+| 1 | **ENTITY** | "what is X" | Node read + `claim_grades` **if present**. Cheapest type — do not over-answer or traverse. |
 | 2 | **MECHANISM** | "how does X become Y" | Path trace. Carry **units at every step**. Report where the chain breaks or needs an unmeasured conversion factor. The breaks are the answer. |
 | 3 | **PERTURBATION** | "what if X is suppressed at age 11 in a female" | `derived.reachability[X]` with sign products, **filtered by context fields**. Compute it; do not eyeball it. **State which edges the filter excluded.** |
-| 4 | **COMPARATIVE** | "does CNP or FGFR3 matter more" | The four-way ranking: velocity elasticity, final-height elasticity, GWAS enrichment, graph convergence. Report **all four and their disagreements**. Never collapse to one. |
+| 4 | **COMPARATIVE** | "does CNP or FGFR3 matter more" | The four-way ranking: velocity elasticity, final-height elasticity, GWAS enrichment, graph convergence. Report **all four and their disagreements**; never collapse to one. **STATUS: only graph convergence is currently computed.** Phase 3b has not run, so the two elasticity axes and the GWAS-enrichment axis do not exist in any artifact. Until they do, the correct answer to a comparative question is: report convergence, and state explicitly that three of the four axes are not yet computed — **do not substitute convergence for the ranking.** |
 | 5 | **EVIDENCE** | "how do we know estrogen drives fusion" | `key_refs` + `confidence` + `human_evidence` + `translation_risk`. Distinguish established-in-humans from inferred. |
 | 6 | **NEGATIVE** | "what don't we know about the resting zone" | `gaps.json` filtered by layer, **with search logs attached** so the user can see the gap is established, not assumed. |
-| 7 | **CONTRADICTION** | "do sources agree on zonal stiffness" | `parameters.disputed` + `audit/contradictions.md`. Return **the spread and the methodological reason**, never a central estimate. |
+| 7 | **CONTRADICTION** | "do sources agree on zonal stiffness" | **Check all three**: `contradictions.json` (`ledger_markdown`, `node_contradicts`, `gap_contradictions`) **then** `parameters.disputed` **then** the node's own `contradicts` field. `parameters.disputed` holds only 5 numeric keys — the flagship contradictions (zonal stiffness, CNP zonal partition, competing SSC schemes) are in the ledger, NOT there. Return **the spread and the methodological reason**, never a central estimate. |
 | 8 | **DESIGN** | "what would settle this" | `discriminating_experiment` fields, ranked by `tractability`. |
 | 9 | **SPECIES** | "does this hold in humans" | `translation_risk` + `human_evidence` + what the human data actually is. **Highest-value type in this domain. Never answer by silent extrapolation.** |
+
+### Grading fallback — `claim_grades` is absent on most nodes
+
+**`claim_grades` is null on 468 of 578 researched nodes (81%).** It was populated only
+where a summary demonstrably mixed claims of uneven support. So:
+
+- `claim_grades` present → quote the per-claim grades; the node-level `confidence` is the
+  weakest of them.
+- `claim_grades` absent → **use the node-level `confidence`, and say the node is graded as a
+  whole.** This is not a defect in the answer; it means nobody has yet found divergent
+  support within that node. Do not invent per-claim grades.
+- **Derived / structural answers** (cycle counts, convergence ranks, reachability sets, "how
+  many nodes are X") carry **no confidence grade** — they are properties of the graph, not
+  empirical claims. Report them as `[ATLAS-INFERRED]` with `CONFIDENCE: n/a (structural)`
+  and state the artifact they came from. Attaching an evidence grade to a graph statistic
+  is a category error.
+- **Path answers** take the **weakest** grade on the path, and must name which node or edge
+  set it.
 
 ### Traversal rule (types 2 and 3)
 
@@ -66,8 +86,16 @@ not inferable from relation type), `hypothesized_link` (speculative). Traversing
 unsigned edge produces a path with **no directional meaning** — the answer will look
 computed and mean nothing.
 
-When a path is blocked because the only route runs through unusable edges, **say the
-graph cannot answer it directionally.** That is a real result.
+`derived.reachability` is precomputed for **every non-stub node**. Therefore:
+
+- key present, non-empty → that is the answer
+- key present, **empty dict** → nothing is reachable through usable signed edges. This is a
+  REAL finding: the node is a terminal or its outbound edges are all sign-exempt. Say so.
+- key **absent** → the node is a stub, or does not exist. Check the alias table; do not read
+  absence as "nothing reachable".
+
+When a path is blocked because the only route runs through unusable edges, **say the graph
+cannot answer it directionally.** That is a real result.
 
 ---
 

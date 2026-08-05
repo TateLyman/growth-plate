@@ -1,0 +1,735 @@
+{
+ "meta": {
+  "warning": "COMPILED from audit/contradictions.md + node `contradicts` fields - regenerate, never hand-edit"
+ },
+ "ledger_markdown": "# Claim vs counter-claim ledger\n\nTwo sections:\n1. **Contradictions** - two credible primary sources disagree, unresolved.\n2. **X-grade claims** - repeated in reviews but not traceable to primary data.\n   Per the confidence scale these are high-value findings, not filler.\n\n## 1. Contradictions\n\n| id | Claim | Counter-claim | Refs | Load-bearing for | Status |\n|----|-------|---------------|------|------------------|--------|\n| c001 | Yengo 2022 (Nature, peer-reviewed): the 7,209 height-associated genomic segments have a **mean** size of ~90 kb | The bioRxiv preprint of the *same analysis* states a **median** of ~90 kb | `yengo2022` (10.1038/s41586-022-05275-y) vs preprint 10.1101/2022.01.07.475305 | `height_gwas` segment-size quantitative row; any downstream estimate of per-segment gene density | **Unresolved.** For a right-skewed segment-size distribution mean and median cannot both be ~90 kb, so one wording is loose. Published value used, discrepancy flagged on the node. Needs Supplementary Table retrieval to settle \u2014 queued P2 in access_queue.md. Neither number is load-bearing for a mechanistic claim, so impact is low. |\n| C-L2-01 | **The skeletal stem cell is a definable cell with a marker panel.** Five schemes each claim the apex position: mSSC (CD45\u2212Ter119\u2212Tie2\u2212AlphaV+Thy\u22126C3\u2212CD105\u2212CD200+), PTHrP+/FoxA2+ resting chondrocytes, Grem1+ metaphyseal OCR cells, LepR+ perisinusoidal stroma, CTSK-lineage periosteal stem cells | The schemes are **mutually incompatible on anatomy, markers, adipogenic potential and developmental window.** PTHrP+ resting cells are Grem1-negative; LepR+ cells never contribute to developing cartilage and dominate osteoblast production only after adolescence; the PSC carries the *same* CD200+CD105\u2212Thy\u22126C3\u2212 immunophenotype as the mSSC but in a different compartment, so the mSSC panel does not specify anatomical identity | `chan2015`, `worthley2015`, `zhou2014`, `debnath2018`, `mizuhashi2018`, `shu2021` | Any therapeutic inference from L2; the choice of mouse model that reports on human growth; L7 fusion models that assume a single depletable progenitor pool | **Unresolved.** No study applies all panels and all Cre drivers to one cohort at matched ages with one functional assay. Only cross-scheme quantification located is `mizuhashi2018` (PTHrP+ vs mSSC/pre-BCSP/BCSP tiers, and Grem1 exclusion). Opened as gap `g_l2stem_004`. |\n| C-L2-02 | **The human skeletal stem cell is PDPN+CD146\u2212CD73+CD164+ and does not make fat** (`chan2018`); CD146+ cells are inferior colony formers | **The human skeletal stem cell is the CD146+ subendothelial adventitial reticular cell**, which self-renews, transfers the hematopoietic microenvironment and *does* generate marrow adipocytes (`sacchetti2007`, `bianco2015`) | `chan2018` vs `sacchetti2007` / `bianco2015` | `human_skeletal_stem_cell`, `marrow_stromal_cell`; every translational claim built on prospectively sorted human skeletal progenitors | **Unresolved.** The two definitions are CD146-positive and CD146-negative respectively, and disagree on adipogenesis \u2014 the property Bianco uses to define bona fide skeletal stemness. Both rest on heterotopic transplantation of human cells into mice, so neither observes the cell in situ. |\n| C-L2-03 | **The growth plate stem cell lives in the resting zone** \u2014 mouse PTHrP-creER and FoxA2-creER tracing, plus label-retention, all place it at the top of the plate | **The human SSC was localised to the second half of the pre-hypertrophic zone and the first half of the hypertrophic zone** (p-H2/H1) of a 17-week fetal femur, by scoring 76 mSSC/mBCSP orthologues and confirming by flow cytometry; the resting zone was not reported as an hSSC site | `mizuhashi2018`, `muruganandan2022`, `hallett2021` vs `chan2018` | `human_skeletal_stem_cell`, `resting_zone_niche`, `pthrp_positive_resting_chondrocyte`; whether mouse resting-zone biology describes humans at all | **Unresolved.** Either human and mouse growth plate stem cells occupy different zones \u2014 a major biological difference \u2014 or one localisation is an assay artefact. Never directly tested; opened as gap `g_l2stem_009`. |\n| C-L2-04 | **Resting zone progenitors have a finite proliferative capacity that is monotonically spent, producing growth plate senescence** (`nilsson2004`, `schrier2006`) | **Chondroprogenitors are *depleted* during fetal/neonatal growth but then *acquire* self-renewal postnatally**, forming large stable monoclonal columns \u2014 capacity is gained, not only spent (`newton2019`) | `schrier2006`, `nilsson2004`, `gafni2001` vs `newton2019`, `mizuhashi2018` | `finite_proliferative_capacity_model`, `clonal_exhaustion`, `rz_depletion_causes_fusion`, and all of L7 | **Partly reconcilable, unresolved.** Species differ (rabbit/rat vs mouse) and so do levels (population kinetics vs clone counting); a plate could acquire self-renewal and still exhaust. But the two literatures have never been run in one system, and the finite-capacity model's own authors showed the in vitro Hayflick version is false (`nilsson2005`: rabbit RZ population doublings independent of donor age). Opened as gaps `g_l2stem_005` and `g_l2stem_008`. |\n| C-L2-05 | **PTHrP (Pthlh) marks the growth plate stem cell** (`mizuhashi2018`, and the majority of the murine follow-up literature) | **The most stem-like population of the human pubertal resting zone is PTHLH-negative**; it expresses multiple SSC markers, sits in a WNT/TGF-\u03b2-low microenvironment, and maps to Prrx1+ mouse cells (`chu2026`). Separately, FoxA2+ cells are non-overlapping with PTHrP+ cells at labelling (0.017% double-positive = background) and outlive them in culture by ~6-fold (`muruganandan2022`) | `mizuhashi2018` vs `chu2026`, `muruganandan2022` | `pthrp_positive_resting_chondrocyte`, `prrx1_root_stem_cell`, `foxa2_resting_chondrocyte`; any attempt to use PTHrP as a human biomarker or drug target for growth | **Unresolved.** The field's flagship marker may not identify the analogous human cell. `chu2026` full text was not accessible (queued P1 in access_queue.md), so the strength of the PTHLH-negative claim rests on the abstract. |\n\n| C-L3-01 | **FGFR3-STAT1 mediates the chondrocyte proliferation arrest that causes achondroplasia.** FGF phosphorylates STAT1, raises p21WAF1/CIP1, and Stat1-null metatarsals fail to arrest proliferation (`sahni1999`); the TD II K650E mutant constitutively activates STAT1 (`su1997`) | **Human thanatophoric dysplasia chondrocytes have no proliferation defect.** Primary fetal TD I chondrocytes showed a mitogenic response to FGF2 and FGF9 indistinguishable from controls; the lesion was ligand-independent STAT activation with nuclear STAT1 in hypertrophic cells and increased apoptosis (BAX up, BCL-2 down) (`legeaimallet1998`). Independently, deleting *Stat1* in achondroplasia-mutant mice restores proliferation but rescues neither the hypertrophic zone nor the dwarfism (`murakami2004`) | `sahni1999`, `su1997` vs `legeaimallet1998`, `murakami2004` | `fgfr3_stat1_branch`, `fgfr3_mapk_branch`, `mek1_erk_chondrocyte`; the choice of preclinical endpoint for every FGFR3-directed drug programme | **Unresolved.** The species split is the crux: the proliferation-arrest phenotype is rat/mouse, the human lesion is apoptosis-and-differentiation. No study measures proliferation index, phospho-ERK and phospho-STAT1 together in situ by zone in human dysplastic growth plate against matched controls. Opened as gap `g_l3core_008`. |\n| C-L3-02 | **PDE5 is the dominant cGMP-hydrolysing phosphodiesterase of growth plate chondrocytes, but raising cGMP does not lengthen bone.** In newborn rat epiphyseal chondrocytes PDE5 was the major activity; tadalafil raised peak CNP-stimulated cGMP 37% and whole-tissue cGMP 52% (P<0.01), yet 3 weeks of treatment produced no change in long bone length, cortical or trabecular properties, or growth plate histology (`wang2018`) | **PDE3B is the functional cGMP PDE and inhibiting it does lengthen bone.** In mouse, cilostazol and milrinone raised chondrocyte cGMP, activated PKG-dependent K+ channels, promoted TRPM7-mediated Ca2+ entry, elongated cultured bones and enlarged juvenile animals; *Pde3b*-null mice have longer tibiae (`kawabe2025`, `miyazaki2022`) | `wang2018` vs `kawabe2025`, `miyazaki2022` | `pde_isoform_inventory`, `pde5a`, `pde3b`, `cgmp_second_messenger`; the entire premise that raising cGMP raises growth, on which CNP analogues, NPR3 decoys and PDE-inhibitor repurposing all rest | **Unresolved.** Cannot currently be attributed to species (rat vs mouse), isoform (PDE5 vs PDE3B), or compartment (bulk vs microdomain cGMP). Note the clinical stake: children with pulmonary arterial hypertension receive chronic PDE5 inhibitors and no growth plate follow-up has been reported. Opened as gap `g_l3core_007`. |\n| C-L3-03 | **NPR2/GC-B is expressed in the prehypertrophic chondrocyte layer**, with CNP in the non-hypertrophic layers \u2014 the localisation used to argue for a short-range local CNP/GC-B system (`nakao2015`, citing the same group's earlier IHC) | **NPR2 transcript is present at similar levels in all three zones**; what is zone-restricted is the effector, PKG-I and PKG-II being expressed at much higher levels in hypertrophic cells, which the authors offer as the explanation for the spatial distribution of CNP effects (`agoston2007`, zonal microarray of microdissected mouse tibia) | `nakao2015` vs `agoston2007` | `npr2_receptor`, `pkg2_kinase`, `cnp_protein`, `pde_isoform_inventory`; whether the zonal partition of CNP action is set at the receptor or at the effector | **Unresolved, and consequential.** If the receptor is uniform and the effector is zoned, then CNP-analogue dosing acts on a tissue whose response is gated downstream of the drug target, and PKG/PDE distribution rather than receptor distribution sets where the drug works. The two studies used different modalities (IHC vs zonal microarray) and were never reconciled. |\n| C-L3-04 | **SOX9 is required for chondrocyte hypertrophy.** Doxycycline-inducible Sox9 deletion in the mouse growth plate shows SOX9 is needed both to maintain columnar proliferation and to generate hypertrophy; SOX9 protein outlives its mRNA into upper hypertrophic cells, where it acts with MEF2C to directly activate *Col10a1* (`dy2012`) | **SOX9 must be switched off for chondrocytes to differentiate.** Activated mutant FGFR3 impairs endochondral bone growth specifically by *preventing SOX9 downregulation* in differentiating chondrocytes, i.e. persistent SOX9 is the achondroplasia lesion, not the growth-permitting state (`zhou2015`). Consistently, sustained Notch signalling suppresses *Sox9*, and that suppression is required for the onset of maturation (`kohn2015`) | `dy2012` vs `zhou2015`, `kohn2015` | `sox9_tf`, `pathway_convergence_node`, `runx2_tf`, `mef2c_tf`; and the direction of any therapeutic that raises or lowers SOX9 in achondroplasia | **Unresolved.** The two positions may be reconcilable as a biphasic requirement - SOX9 needed to license *Col10a1* at the prehypertrophic step but needing to fall for terminal maturation - but no experiment titrates SOX9 within a single differentiating population and measures hypertrophy as a continuous function of it. Opened as gap `g_l3rest_012`. |\n| C-L1-01 | **Chondrocyte columns are the architecture that channels hypertrophic volume increase into longitudinal growth, and column formation is required for elongation.** A century of 2D histology plus the mutant literature (Itgb1, Cdh2, alpha-parvin) treats columnar order as the elongation-enabling structure | **Columns are rare precisely when elongation is fastest.** 3D multicolour clonal analysis of the E18.5 mouse growth plate found only 17.6% (distal femur, n=1044 doublets) and 19.4% (proximal tibia, n=805) of clonal doublets stacked at the 60-90 degree elevation angle that indicates a completed division-plane rotation; most embryonic clones are ellipsoidal clusters oriented **orthogonal** to the growth axis. Even at P40, within structures scored as columns, only 36-40% of divisions had completed rotation and under 10% were near-perfect | `rubin2024` vs `aszodi2003`, `romereim2014`, `greer2024`, `yuan2023` | `chondrocyte_column_formation`, `clonal_column`, `chondrocyte_cluster`, `appositional_growth`; the interpretation of every chondrodysplasia described as a \"column disorganisation\" phenotype | **Unresolved.** No experiment dissociates columnar order from hypertrophic cell volume: every published column mutant also perturbs cell shape, matrix or proliferation, so shortening cannot be attributed to loss of stacking alone. Opened as gap `g_l1arch_004`. |\n| C-L1-02 | **Linear growth is saltatory**: infant length accrues in 0.5-2.5 cm bursts separated by 2-63 day intervals of true stasis, with 90-95% of days growth-free (`lampl1992`); canine proximal tibial growth measured with implanted tantalum markers is likewise reported to follow saltation and stasis (`mcbrien2011`) | **Linear growth is continuous.** Rabbit proximal tibial elongation measured directly with about 15-fold better precision than human anthropometry gave a single Gaussian distribution of daily velocities, not the bimodal distribution the saltation model predicts (`klein1994`); a further Science critique followed (`heinrichs1995`). A third position holds that short-term growth is a chaotic series of mini growth spurts with no true stasis (`hermanussen1998`) | `lampl1992`, `mcbrien2011` vs `klein1994`, `heinrichs1995`, `hermanussen1998`; methodological defence in `johnson1996` | `saltation_stasis_growth`, `growth_velocity_longitudinal`; the interpretation of every short-interval auxological endpoint, including the knemometry endpoints used in inhaled-corticosteroid safety trials | **Unresolved, and the two camps have never measured the same preparation.** The pro-saltation human evidence is surface anthropometry whose technical error exceeds the mean daily increment; the anti-saltation evidence is direct but in rabbit. One discontinuity is not in dispute: implanted microtransducers show at least 90% of lamb tibial elongation occurs during recumbency (`noonan2004`), so growth is load-gated on a diurnal cycle regardless of how the multi-day statistics are read. `heinrichs1995` has no indexed abstract anywhere and is queued P1 in access_queue.md. Opened as gaps `g_l1arch_005` and `g_l1arch_006`. |\n| C-L1-03 | **Final hypertrophic chondrocyte volume is the principal determinant of elongation rate across species**, correlating with growth rate at r=0.98 in rat and r=0.83 in pig over a wide range of rates and volumes (`breur1991`) | **The relationship does not hold in birds.** Applied to four weight-bearing growth plates each in two-week-old mallard ducklings and leghorn chicks with direct fluorochrome measurement of elongation, the positive linear mammalian relationship between mean hypertrophic chondrocyte volume and bone elongation rate was not reproduced (`barreto1994`) | `breur1991`, `wilsman1996` vs `barreto1994` | `hypertrophic_volume_increase`, `hypertrophic_chondrocyte`, `elongation_budget`; whether a hypertrophy-volume readout is a valid preclinical surrogate for elongation at all | **Unresolved as a general rule; the regression slope already differs between rat and pig, so the relationship is not even a fixed mammalian constant.** No human measurement of final hypertrophic volume with unbiased stereology exists to place humans on (or off) the mammalian line. Opened as gap `g_l1arch_009`. |\n\n| C-L7-01 | **Terminal growth plate chondrocytes are cleared by apoptosis**, the account carried into fusion by default from the rodent hypertrophic-chondrocyte literature | **The one human growth plate ever examined at the moment of fusion contained zero TUNEL-positive cells**, no detectable cleaved caspase-3 or Bax (only Bad among pro-apoptotic proteins), and no ultrastructural apoptosis or autophagy - instead showing hypoxia and necrosis (`emons2009`). Independently, estrogen-accelerated resting-zone cell loss in rabbit \"did not appear to be due to apoptosis\" (`nilsson2014`) | `emons2009`, `nilsson2014` vs the murine apoptosis literature | `apoptosis_at_fusion`, `hypoxia_necrosis_at_fusion`, `epiphyseal_fusion`; and the grading of every rodent apoptosis result transferred into L7 | **Unresolved, and unresolvable at present sample size.** The human refutation is n=1 fusing specimen, with no published positive control demonstrating the TUNEL assay would have detected apoptosis in that tissue block. No second human fusing plate has been reported in the 17 years since. Opened as gap `g_l7fuse_006`; the tissue-supply obstacle is `g_l7fuse_002`. |\n| C-L7-02 | **\"Rodents do not fuse their growth plates\"** - the standard statement used to explain why fusion cannot be studied in mice (`emons2011`) | **Mice do form countable transphyseal bony bridges**, hundreds per tibial plate in wild types (495, SD 45; density 1.2, SD 0.5), rising ~12-fold in density in Socs2-/- animals, which the authors describe as *accelerated growth plate fusion* (`samvelyan2022`); yet the same plate is still calcified cartilage at 55 weeks, having LOST rather than gained type X collagen and MMP-13 (`yu2025`) | `emons2011` vs `samvelyan2022`, `yu2025` | `mouse_does_not_fuse`, `bony_bridge_formation`, `species_transfer_risk_fusion`, and the translation_risk grade on every murine node in the atlas | **Terminological, but consequential.** Both are true at their own level: mice bridge but never complete cartilage-to-bone replacement. The risk is that \"accelerated fusion\" in mouse papers is read as the human endpoint. This atlas resolves it by scoring bridge formation and epiphyseal fusion as separate nodes and by treating murine bridge counts as a surrogate whose relation to the human endpoint has never been validated. |\n| C-L7-03 | **Better bone age assessment should improve prediction of remaining growth**, the premise of five decades of methodological work from Bayley-Pinneau through TW Mark II to BoneXpert | **A model that omits skeletal age entirely (Khamis-Roche) has errors only slightly larger than the RWT model that uses it** (`khamis1994`); and although automated reading cuts repeat-measurement SD to 0.17 y from a human interobserver spread of 0.74-0.96 y (`thodberg2009`, `king1994`), no study has demonstrated a corresponding narrowing of the adult height prediction interval | `khamis1994` vs `tanner1975`, `tanner1983`, `roche1975` | `remaining_growth_prediction`, `bone_age_measurement_error`, `automated_bone_age_ai`; the power calculation of every trial powered on predicted adult height | **Unresolved.** If most prediction error is irreducible biological variance rather than measurement error, then bone age precision is not the rate-limiting step in growth medicine and trials need larger n rather than better imaging. The variance decomposition has never been published. Opened as gap `g_l7fuse_007`. |\n| c-L6-01 | Does dynamic loading spare growth, or only spare tissue? | `sergerie2011` (swine explants, matched strain) and `stokes2005` (rat, 12 vs 24 h/day) support \"dynamic/intermittent loading is growth- and tissue-sparing\", and `frost1979` predicts it theoretically | `valteau2011` applied sustained 0.2 MPa and sinusoidal 0.2 MPa +/-30% at 0.1 Hz to the same rat caudal vertebral level and found **identical 19% growth suppression** in both, with only the histomorphometry spared under dynamic loading | Not equivalent designs. `stokes2005` varied **duty cycle** (load off for 12 h/day); `valteau2011` varied **waveform** about a non-zero mean with the load never removed. Reviews routinely conflate the two under \"dynamic\". Current reading: mean stress integrated over time sets growth rate, waveform sets tissue damage. Unresolved - gap `g_l6mech_004` specifies the orthogonal 2x3 factorial that would settle it | `static_vs_dynamic_loading`, `wolff_law`, `strain_frequency_dependence` |\n| c-L6-02 | Does gymnastics training reduce attained adult stature, or does gymnastics select short, late-maturing girls? | `theintz1993` (PHV 5.48 vs 8.0 cm/yr vs swimmers, falling height SDS, selective leg-length stunting, **no change in the chronological-age/bone-age ratio**) and the within-sport dose gradient in `daly2005` (peripubertal sitting-height velocity 2.3 vs 3.1 cm/yr by training volume) | `thomis2005` (spurts present, ~1 year late, matching short late-maturing girls with short parents) and the FIG Scientific Commission review `malina2013`, which finds epidemiological criteria for causality unmet and training volume inseparable from selection, energy availability and maturation | Both sides are right about different things. The attenuation **during** training is real and dose-related; the claim that it removes **adult** height is not established. Neither side has separated mechanical loading of the physis from energy deficit and hypothalamic suppression. Gap `g_l6mech_010` proposes the within-athlete segment contrast (heavily loaded distal radius vs lightly loaded lower limb, with energy availability measured) that would separate them | `gymnastics_stature_effect`, `sport_specific_loading_human` |\n\n| c_l4endo_01 | Thyroid hormone action on growth plate chondrocytes is mediated by **TRbeta**: in primary neonatal rib chondrocytes from TRalpha- and TRbeta-deficient mice, T3 lowered proliferation and accelerated differentiation normally without TRalpha but ALL T3 responses were abolished without TRbeta | Thyroid hormone action on human stature is mediated by **TRalpha**: heterozygous dominant-negative THRA variants cause growth retardation, delayed bone age and disharmonious short stature, whereas dominant-negative THRB (RTHbeta) is common and typically NOT associated with short stature | `rabier2006` (PMID 17065405) vs `jorge2025` (PMID 38744258); localisation does not adjudicate - `robson2000` (PMID 11014246) finds TRalpha1, TRalpha2 AND TRbeta1 in rat reserve/proliferating zone and none in hypertrophic cells | `thra_receptor`, `thrb_receptor`, `thyroid_hormone_t3`; and the paediatric skeletal safety of TRbeta-selective thyromimetics (resmetirom class) | **Unresolved.** Possible reconciliations: rib versus long-bone chondrocytes are different skeletal elements; germline knockouts permit compensation a conditional deletion would not; or the isoform assignment genuinely differs between mouse and human. Opened as gap `g_l4endo_007` with a conditional-deletion plus human-chondrocyte discriminating experiment. |\n| c_l4endo_02 | Glucocorticoid suppresses growth by acting **directly and potently inside the plate**: unilateral intra-growth-plate dexamethasone (80 ng/uL at 1 uL/h) cut ipsilateral rabbit proximal tibial growth by 77% versus the vehicle-infused contralateral plate (P<0.0001), and subsequent catch-up was likewise confined to the treated plate | **Endogenous glucocorticoid signalling in chondrocytes is dispensable**: tamoxifen-inducible chondrocyte-specific GR knockout mice had normal knee architecture, cartilage structure, growth plates, intervertebral discs, long bone length and bone microarchitecture at every age tested, with impairment only in metaphyseal fracture healing | `baron1992` (PMID 1415528) and `baron1994` (PMID 7925098) vs `tu2014` (PMID 25193158) | `glucocorticoid_cortisol`, `glucocorticoid_receptor`; whether a growth-sparing corticosteroid is achievable and what it would have to avoid | **Unresolved.** The two designs answer different questions (pharmacological excess versus loss of endogenous tone) but are routinely cited as if they answered the same one. The decisive experiment - unilateral local dexamethasone infusion IN a chondrocyte-specific GR knockout - has never been done. Opened as gap `g_l4endo_011`. |\n| c_l4endo_03 | Seasonal variation in human height velocity peaks in **summer** and scales with photoperiod: in 2,277 GH-treated prepubertal children height velocity rose 0.146 cm/yr per daylight hour with no independent effect of calendar month, and in 9,409 Japanese infants length z-velocity peaked in summer with a winter-summer difference of 0.0026 z/day (~13% of mean velocity) | Seasonal variation peaks in **winter-spring** and is not isolated to height: in 760 Danish 8-11 year olds height velocity exceeded the 6.10 cm/yr mean in January-April, and - unlike the classical account of a spring height peak with an autumn weight peak - weight, BMI and fat-free mass index peaked coincidentally | `shulman2013` (PMID 23374591) and `narumi2020` (PMID 33102789) vs `dalskov2016` (PMID 26488554) | `seasonality_growth_velocity`, `growth_velocity_measurement_interval`; and the interpretation of any growth trial shorter than 12 months | **Unresolved.** Age (infants vs schoolchildren), latitude (Japan ~35 N, Denmark ~56 N), GH treatment status and measurement method all differ between the cohorts, and photoperiod, temperature and seasonal nutrition have never been separated in one design. Opened as gap `g_l4endo_008`. |\n| c_l4endo_04 | Growth is driven by **circulating** IGF-1 (somatomedin hypothesis) - the axis's clinical biochemistry, human IGF1/IGFALS/STAT5B/GHR/PAPPA2 mutations and the LID+ALSKO threshold experiment all point to serum IGF-1 setting stature | Growth is driven by **locally produced** IGF-1 (dual effector) - liver-specific Igf1 deletion cut serum IGF-1 by 75% with no change in body weight, body length or femoral length in two independent mouse lines, and local GH action on the plate is abolished by somatomedin antiserum | `yakar1999` (PMID 10377413) and `sjgren1999` (PMID 10359843) vs `yakar2002` (PMID 12235108) and `domen2004` (PMID 14762184); local arm from `nilsson1986` (PMID 3523759), `schlechter1986` (PMID 3464007), `lui2019` (PMID 30765323) | `somatomedin_hypothesis`, `dual_effector_hypothesis`, `igf1_systemic`, `igf1_local_growth_plate`; and the choice between rhGH, rhIGF-1 and cartilage-targeted IGF-1 as therapy | **Partially resolved, but only in mouse.** A threshold model reconciles them: circulating IGF-1 is non-limiting until it falls below the LID+ALSKO level, at which point growth plate height, BMD and cortical thickness all drop and are restored by IGF-1. The human partition has never been made - no measurement of IGF-1 concentration in human physeal interstitium exists. Opened as gap `g_l4endo_001`. |\n\n| c_l5matrix_01 | **ANK/ANKH transports inorganic pyrophosphate out of the growth plate chondrocyte.** In terminally differentiated mineralizing growth plate chondrocytes, blocking Ank transport activity or expression raised BOTH intracellular and extracellular PPi, lowered alkaline phosphatase and blocked mineralization; Ank overexpression in hypertrophic non-mineralizing chondrocytes lowered intra- and extracellular PPi and induced APase, type I collagen, osteocalcin and mineralization (`wang2005`); the mechanism is stated as PPi transport throughout the growth plate and CPPD literature | **ANKH exports ATP, not PPi; ENPP1 makes the PPi extracellularly.** In HEK293 cells engineered to lack ENPP1 entirely, ANKH produced robust ATP release with NO increase in extracellular PPi; Enpp1-/- mouse bone contains <2.5% of wild-type PPi despite intact Ank; ANKH supplies ~25% of plasma PPi and ABCC6 60-70%, both by NTP efflux (`szeri2022`). Consistently NPP1, but not ANK, localises to matrix vesicles (`harmey2004`) | `wang2005`, `zaka2009` vs `szeri2022`, `harmey2004` | `ankh_transporter`, `inorganic_pyrophosphate`, `enpp1_enzyme`, `pi_ppi_ratio`; and the interpretation of every ANK manipulation in growth plate chondrocytes, plus the unrecognised possibility that ANK's output is a purinergic ATP signal | **Unresolved in the relevant cell type.** The decisive ENPP1-null experiment was done in HEK293 overexpression, never in chondrocytes; wang2005 measured PPi but had no way to distinguish direct export from ATP export plus endogenous ENPP1 on the same cells. Opened as gap `g_l5matrix_006`, which specifies Ank manipulation in Enpp1-null primary growth plate chondrocytes with paired ATP and PPi readouts. |\n| c_l5matrix_02 | **The reserve zone is the stiffest zone of the growth plate.** Newborn porcine distal ulna, unconfined compression stress relaxation with a transversely isotropic biphasic model: proliferative and hypertrophic zones are half as stiff as reserve along the compression axis, about three times less stiff transversely, and three times as permeable radially (`sergerie2009`) | **The stiffness peak is in the hypertrophic zone, or increases monotonically toward it.** Nine-week rabbit proximal tibia microindentation gives a Hertz reduced modulus of 380-690 kPa PEAKING in the upper hypertrophic zone, with proteoglycan content correlating with compressive modulus (`eckstein2022`); rabbit cranial base AFM gives a monotonic rise from 0.57 MPa (reserve) to 1.41 MPa (mineralizing) (`radhakrishnan2004`); human growth plate sharp-tip AFM gives HZ 416 MPa > RZ 131 MPa (`xie2025`) | `sergerie2009` vs `eckstein2022`, `radhakrishnan2004`, `xie2025` | `zonal_stiffness_gradient`, `chondron`, `cartilage_osmotic_swelling`, `matrix_water_content_zonal`; and every finite-element model of physeal loading, guided growth and Salter-Harris fracture propagation | **Unresolved, and confounded four ways at once.** The studies differ simultaneously in species (pig/rabbit/human), site (weight-bearing long bone vs cranial base vs phalanx), age (newborn to 14 years) and method/length scale (bulk compression vs microindentation vs 9 nm-tip AFM). The magnitudes span three orders of magnitude - 380 kPa to 416 MPa - which alone shows the methods are not measuring the same physical quantity. Opened as gaps `g_l5matrix_008` (direction) and `g_l5matrix_001` (the missing hydrated tissue-scale human number). |\n| c002 | Cooper et al. 2013 (Nature): the largest contribution to differential elongation between fast and slow growth plates is the duration of the third, IGF-dependent phase of hypertrophic chondrocyte volume enlargement, measured by quantitative phase microscopy | Lui et al. 2018 (PLoS Biol): measuring both variables in the same animals, proliferation rate per column is the dominant factor \u2014 at 1 week the mouse metacarpal grew at 49% of the tibial rate with proliferation per column at 46% of tibial, while hypertrophic cell height differed little at that age; the disparity in proliferation exceeded the disparity in cell size | `cooper2013` (10.1038/nature11940) vs `lui2018` (10.1371/journal.pbio.2005263) | `site_specific_growth_rate` (L1), `hypertrophic_volume_increase` (L1), `hox_code_limb` and `hoxd13_gene` (L0), and the choice of target for any site-specific growth intervention | **Unresolved.** Both are competent mouse studies. They differ in ages examined, bones compared, and whether hypertrophic size was measured as section height or as true volume with dry-mass correction; neither reanalyses the other. The L1 rat data (eight contributing chondrocytic variables; hypertrophy's share falling from 59% to 44% as plates slow) suggest the answer is age- and rate-dependent rather than fixed. Opened as gap g_l0dev_009 with a discriminating design. |\n| c-L13-01 | Nilsson et al. 2003 (J Endocrinol), counting receptor-positive cells with image analysis in proximal tibial growth plate biopsies from 16 boys and 8 girls spanning Tanner 1-5: ER-alpha and ER-beta are MORE frequent in the resting and proliferative zones (64\u00b12% and 64\u00b12% for ER-alpha) than in the hypertrophic zone (38\u00b13%) | Egerbacher et al. 2002 (Horm Res, 4 epiphysiodesis donors) and Nilsson LO et al. 1999 (JCEM, 4 female pubertal donors): ER-alpha and ER-beta immunostaining is RESTRICTED TO hypertrophic chondrocytes, with resting and proliferative chondrocytes negative | `nilsson2003` (10.1677/joe.0.1770319) vs `egerbacher2002` (10.1159/000064661) and `nilsson1999` (10.1210/jcem.84.1.5531) | Every human zonal claim about estrogen action, and therefore the cellular target of the mechanism that terminates human growth (L7 estrogen_driven_fusion, L4 estrogen receptor nodes, L2 rz_depletion_causes_fusion) | **Unresolved.** All three are human-tissue immunohistochemistry studies using polyclonal antibodies of the era on decalcified or cryostat sections; none reports antibody validation against a knockout or blocking peptide, and none has been checked by an orthogonal method in human tissue. The gradient reported by nilsson2003 is the exact inverse of the restriction reported by the other two, so this is not a difference of sensitivity. Adjudicable at transcript level against `gse9160`, the only zone-resolved human growth plate transcriptome, or by RNAscope (gap g_l13b_005). Logged on node `immunohistochemistry_cartilage_artifact`. |\n\n| C-L12-01 | **Low-dose infigratinib is an effective strategy for hypochondroplasia**: in silico docking predicts strong interaction with hypochondroplasia FGFR3 variants, in vitro inhibition is potent, and Fgfr3-N534K/+ mice show significant skeletal improvement (`demuynck2025`) | **Infigratinib is a weak inhibitor of the FGFR3-N540K mutant that causes hypochondroplasia** (`ursachi2026_2`), published in the same journal months later, with an author reply from the first group | `demuynck2025` (10.1093/jbmr/zjaf088) vs `ursachi2026_2` (10.1093/jbmr/zjag017), reply 10.1093/jbmr/zjag018 | `infigratinib_growth`, `fgfr3_tyrosine_kinase_inhibitor`; the design and interpretation of the hypochondroplasia programme | **Unresolved.** No single laboratory has compared wild-type, G380R, N540K and mouse N534K FGFR3 in one assay at a stated ATP concentration. Independent support that large allele-dependence is real: infigratinib IC50 0.5 nM on K650E but 44.4 nM on K650M in one radiometric panel (`ryu2022`). Opened as gap `g_l12b_004`. |\n| C-L12-02 | **Continuous CNP exposure is required for efficacy**, the explicit engineering premise of the TransCon CNP prodrug: navepegritide is designed to give \"sustained release and continuous exposure of active CNP\" over a weekly interval | **Exposure duration appears irrelevant over a ~300-fold range.** Vosoritide has a mean apparent plasma half-life of 21.0-27.9 minutes and gives +1.57 cm/yr (95% CI 1.22-1.93); navepegritide-released CNP has a half-life of 5.3 days and gives +1.49 cm/yr (95% CI 1.05-1.93). The confidence intervals overlap almost completely | `fda_voxzogo_label_2025`, `savarirayan2020` vs `fda_yuviwel_label_2026`, `nct05598320`, `kang2026` | `cnp_analog_pk_challenge`, `npr2_agonist_class`, `navepegritide`, `vosoritide`; the rationale for every next-generation CNP formulation | **Unresolved, and it is a cross-trial comparison rather than a randomised contrast** (different age ranges, no head-to-head). But the FDA label independently reports that vosoritide's urinary cGMP response is already near saturation at the approved 15 ug/kg/day dose, which is consistent with a saturable step rather than an exposure deficit. Opened as gaps `g_l12b_017` and `g_l12b_003`. |\n| C-L12-03 | **Reducing FGFR3 kinase output should reduce disease severity**, the premise of the entire FGFR3 tyrosine kinase inhibitor class | **FGFR3 severity is not monotonic in kinase activity.** K650M (SADDAN) has ~3x the constitutive activity of the LETHAL K650E (thanatophoric dysplasia II) yet is survivable (`tavormina1999`). The pharmacology mirrors it inversely: infigratinib inhibits K650E at 0.5 nM but K650M at 44.4 nM (`ryu2022`) | `savarirayan2026infig`, `starrett2025` vs `tavormina1999`, `ryu2022` | `fgfr3_tyrosine_kinase_inhibitor`, `infigratinib_growth`, `saddan_syndrome`, `thanatophoric_dysplasia` | **Unresolved.** A phase 3 trial nonetheless produced +1.74 cm/yr (95% CI 1.31-2.17), so the class works in achondroplasia despite the premise being wrong as a general rule. That leaves the mechanism of clinical benefit under-specified \u2014 dose-down does not equal benefit across the allelic series. Opened as gap `g_l12b_005`. |\n| C-L12-04 | **Recifercept, a soluble FGFR3 decoy, prevents premature ossification of skull base synchondroses in Fgfr3-ach/+ mice** and was advanced to clinical trial on that basis (`rignol2022`) | **Recifercept produced no growth at any dose in children.** Posted phase 2 results give an observed/expected height-change ratio of 1.0 (95% CI 0.8-1.1) at month 12 in all three dose arms; both trials were terminated with the registry statement \"lack of efficacy at any of the tested doses ... not related to a safety concern\" | `rignol2022` vs `nct04638153`, `nct05116046` | `soluble_fgfr3_decoy`, `growth_plate_drug_exposure`, `fgfr3_receptor` | **Unresolved and, as run, unresolvable.** The failure cannot be attributed between ligand-independence of G380R signalling and non-delivery of a ~100 kDa protein into avascular charge-dense cartilage, because tissue exposure was never measured in either species. Opened as gaps `g_l12b_006` and `g_l12b_002`. |\n| C-L12-05 | **Meclizine promotes bone growth in achondroplasia**: meclozine 2 mg/kg/d reduced death or paralysis and increased body, cranial and long-bone length in Fgfr3-ach mice of both sexes (`funahashi2024`) | **Meclizine moved human height velocity by ~0.1 cm/yr.** A 26-week open-label phase 2 (n=9, with concomitant GH) took height velocity from 4.35 +/- 1.36 to 4.46 +/- 1.54 cm/yr with 1 of 9 reaching 6 cm/yr, despite a dedicated paediatric phase 1b showing adequate exposure (Cmax 167 ng/mL, t1/2 7.4 h) and no serious adverse events (`matsushita2025`, `matsushita2023`) | `funahashi2024` vs `matsushita2025`, `matsushita2023` | `meclizine_repurposing`, `growth_plate_drug_exposure` | **Unresolved.** Adequate measured plasma exposure removes the simplest explanation, leaving either mouse-specific mechanism or failure of delivery into cartilage. Confounded by concomitant growth hormone and n=9 with no control arm. Opened as gap `g_l12b_007`. |\n\n## 2. X-grade claims (untraceable to primary data)\n\n| id | The claim as usually stated | Where it is repeated | What I could not find | Nodes |\n|----|-----------------------------|----------------------|-----------------------|-------|\n| x-L3-01 | \"Untreated adults with acromesomelic dysplasia Maroteaux type reach an average final height of about 120 cm\" \u2014 the figure quoted whenever the severity of biallelic *NPR2* loss is stated | Quoted in the discussion of `arya2020` as \"average reported final height (120 cm) of AMDM patients\", and repeated in clinical reviews of AMDM and of the CNP axis | Any primary cohort that reports mean untreated adult height with an n and a dispersion measure. The AMDM case series located (`33288834` Turkish 26-patient series, `34162036` nine-patient series) report variant spectra and clinical features but not pooled untreated adult height. The only measured final heights found are the two GH-treated siblings in `arya2020` (130.5 cm, -6.57 SDS; 134 cm, -4.58 SDS). | `npr2_receptor` (recorded with `value_unverified: true`), `cnp_protein` |\n| x001 | \"Growth plate chondrocytes exhaust a finite proliferative capacity through telomere attrition\" \u2014 telomere shortening as the molecular clock that terminates longitudinal growth | Routinely asserted in growth-plate and skeletal-ageing review literature as the mechanistic basis of the finite-proliferative-capacity model | Any primary measurement of telomere length or telomerase activity in **human** growth plate or resting-zone chondrocytes as a function of age or proximity to fusion. Targeted Europe PMC search returned only osteoarthritis articular cartilage, general skeletal-ageing reviews, and rodent work. Nearest positive datum is murine and indirect (mTert-GFP marking a transitional skeletal progenitor peaking during adolescent growth rather than persisting). Search logged under g_l2stem_007. | `telomere_attrition_chondrocyte`, and indirectly `finite_proliferative_capacity_model`, `clonal_exhaustion`, `replicative_senescence_chondrocyte` |\n| x-L1-01 | \"The growth plate is hypoxic, with oxygen tension falling from the metaphysis to the centre of the plate\" \u2014 stated as established fact in essentially every growth plate review, and the premise for all HIF-1alpha, VEGF and chondrocyte-metabolism work | Ubiquitous in growth plate, cartilage and endochondral ossification reviews; invariably traced to Brighton & Heppenstall 1971 | The **numbers**. PMID 5580029 (J Bone Joint Surg Am 1971;53:719-728) has no abstract indexed in PubMed or Europe PMC and no full text reachable, so no pO2 value in mmHg for any zone in any species could be retrieved. Targeted PubMed search for human growth plate oxygen tension returned 4 records, none of which measures tissue oxygen in human physis (search log `g_l1arch_007`). The claim is genetically corroborated in mouse (HIF-1alpha deletion kills the plate interior, `schipani2001`) and indirectly supported by chondrocyte haemoglobin bodies with P50 left-shifted to 27.6-27.9 mmHg (`zhang2023`), but the quantitative gradient itself is untraceable. | `oxygen_gradient_growth_plate`, `nutrient_diffusion_growth_plate` (queued P1 in access_queue.md; both nodes carry `pending_source: brighton1971`) |\n| x-L1-02 | \"Septoclasts resorb the cartilage septa at the chondro-osseous junction\" \u2014 stated in reviews and textbooks as a general feature of endochondral ossification | Growth plate and bone-catabolism reviews, including `odgren2016` which formalises the osteoclast/chondroclast/septoclast trichotomy | Any observation of a septoclast **in human tissue**. A complete screen of the Europe PMC query `septoclast*` (54 records, all screened, 2026-08-05, search log `g_l1arch_003`) found every primary observation to be mouse, rat or bovine calf costochondral junction. The only human study of the chondro-osseous region located (`walzer2014`) stained for CD34/CD31/RANK and not for FABP5 or cathepsin B. The cell type carries a lineage (mesenchymal, not haematopoietic) and a druggable dependency (endothelial Dll4-Notch) that have been established without a single human observation. | `septoclast`, `cartilage_septum_resorption`, `metaphyseal_vasculature`; gap `g_l1arch_003` |\n| x-L7-01 | \"Girls grow about 5-7 cm after menarche\" - the rule of thumb used to counsel families, to decide whether to treat precocious puberty, and to time scoliosis surgery | Repeated in paediatric endocrinology and orthopaedic teaching and in clinical practice worldwide | Any primary source giving that specific figure with an n and a dispersion measure. The best-measured community cohort located (793 healthy term-born Swedish girls) gives a **mean of 8.0 cm with SD 4.9 cm and an observed range of 0.2 to 31.1 cm** (`grdstedtbergho2024`) - a distribution whose SD is 60% of its mean and whose upper tail is nearly four times it. A Europe PMC search for observed (not predicted) postmenarcheal height gain in longitudinal cohorts returned 471 records, of which only this one reports the full distribution; the rest report predicted adult height in treated clinical populations. Search logged under g_l7fuse_013. | `menarche_growth_remaining`, `adult_height_attainment`, `remaining_growth_prediction` |\n| x-L7-02 | \"Fusion order is conserved across human populations, only the timing shifts\" - the assumption underpinning forensic age estimation and every site-specific mechanistic model | Implicit wherever a single-population union sequence is applied to another population, and in forensic anthropology standards | Any formal statistical comparison of the SEQUENCE of epiphyseal union between two or more populations. Every published sequence is single-population and uses a non-comparable element set (`schaefer2007` 21 epiphyses in Bosniak males; `cardoso2014` Portuguese sacrum; `kvist2021` Swedish wrist/knee/ankle by MRI). Timing demonstrably differs by at least two years between populations (`schaefer2005`), which makes the untested conservation of order the load-bearing assumption. Europe PMC search returned 166 records, none comparing sequence. Search logged under g_l7fuse_010. | `fusion_timing_order`, `population_variation_fusion` |\n| x-L6-01 | \"YAP/TAZ mediates mechanotransduction in growth plate chondrocytes\" - the default pathway invoked in growth plate mechanobiology reviews and in the design of stiffness-tuned cartilage scaffolds | Reviews of chondrocyte mechanobiology, Hippo-in-bone-and-cartilage reviews, and mechanoepigenetics reviews | Any **growth plate** experiment. A Europe PMC search combining YAP/TAZ/YAP1/WWTR1/Hippo with growth plate or physis and with loading/compression/mechanotransduction and in vivo/knockout/conditional returned 461 records (2026-08-05, search log `g_l6mech_009`); all screened primaries are in vitro stiffness studies, osteocyte or osteoblast-precursor mechanotransduction, subchondral bone in osteoarthritis, or fibrocartilage differentiation. No chondrocyte-specific Yap1/Wwtr1 deletion has ever been combined with a physeal mechanical challenge and a growth readout, in any species, and there is no human growth plate YAP/TAZ localisation | `yap_taz_chondrocyte` (held at confidence E deliberately); gap `g_l6mech_009` |\n| x-L6-02 | \"Compression slows growth and tension accelerates it in the human physis, at roughly 17% per 0.1 MPa\" - the coefficient used to justify and plan guided growth, vertebral body tethering and scoliosis progression models | Orthopaedic reviews and finite element / musculoskeletal modelling papers that apply the coefficient to human or patient-specific geometry (`rodrguez2025`, `koller2025`, `koller2026`, `stokes2006a`) | Any measurement in a human. The coefficient was measured only in rat, rabbit and calf caudal vertebrae and proximal tibiae over 8-day loading windows (`stokes2006`). A Europe PMC search for a human physeal stress-growth sensitivity returned 232 records (2026-08-05, search log `g_l6mech_001`), every quantitative human statement in them being model output using the animal coefficient as input. The in vivo human physeal stress that the coefficient would be multiplied by has itself never been measured (search log `g_l6mech_003`, 2851 records screened) | `hueter_volkmann_law`, `physeal_stress_in_vivo`, `guided_growth_tension_band`, `scoliosis_vertebral_growth`; gaps `g_l6mech_001`, `g_l6mech_003` |\n| x-L5-01 | \"Cartilage collagen fibrils contain collagens II, IX and XI in an 8:1:1 ratio\" - recited in essentially every cartilage matrix review and in skeletal dysplasia teaching | Cartilage biology reviews, collagen chemistry chapters, and the introduction of most cartilage tissue-engineering papers; usually attributed to Mendler et al. 1989 | The primary quantitation. `mendler1989` (PMID 2463256, J Cell Biol 108:191-197) is an immunoelectron-microscopy paper: its abstract establishes that the three collagens are in the SAME fibril and says nothing about a ratio, and its Europe PMC full text is a reference list only (body is a scanned PDF; queued P2 in access_queue.md). The nearest traceable source is `eyre2002`, a review by the author of the underlying biochemistry, giving young growth cartilage as <=80% II, >=10% IX, >=10% XI by MASS - the same 80:10:10 proportion, but for bovine growth cartilage, not a molar ratio and not human physis. Separately, `blaschke2000` reports an independent eight-fold II:XI MOLAR ceiling for fibril-diameter control in vitro, and the two eights are routinely conflated. No quantitation of collagen stoichiometry in human physeal cartilage exists at all; `keene1995` localises collagen XI to <25 nm fibrils in human juvenile rib growth plate without quantifying it. Search logged under `g_l5matrix_003`. | `collagen_fibril_stoichiometry`, `collagen_type_ii`, `collagen_type_ix`, `collagen_type_xi` (all quantitative rows carry `value_unverified: true`); gap `g_l5matrix_003` |\n| x-L5-02 | \"The Pi/PPi ratio controls where the growth plate mineralizes\" - the organising principle of the entire mineralization literature, invoked to explain hypophosphatasia, GACI, craniometaphyseal dysplasia and the action of asfotase alfa | Every review of skeletal mineralization; the framing statement in `milln2016`; the interpretation of the ALPL, ENPP1, ANKH and PHOSPHO1 mouse and human genetics | The ratio itself, anywhere in a growth plate. Human plasma PPi is well measured (3.50 +/- 0.11 umol/L, 99% range 1.19-5.65, n=73, `russell1971`) and porcine growth plate elemental Ca and P are mapped at ~50 um resolution (`althoff1982`) - but microprobe measures total phosphorus, not Pi/PPi speciation, and plasma is the wrong compartment. A Europe PMC search for zone-resolved PPi or Pi concentration in growth plate tissue returned 13 records, all matrix-vesicle, cell-culture, plasma or biomimetic (2026-08-05, search log `g_l5matrix_002`). The principle is strongly supported by convergent genetics - opposing mutations cancel - but the quantity it names has never been measured where it is claimed to act. | `pi_ppi_ratio`, `inorganic_pyrophosphate`, `tnap_alpl`, `enpp1_enzyme`, `ankh_transporter`, `mineralization_front`; gap `g_l5matrix_002` |\n| x002 | \"All long bone mesenchymal condensations begin at a similar size, so the 10\u201320 fold differences in adult bone length are generated entirely by differential growth\" | Stated in the introduction of `lui2018` and in condensation review literature; it is what licenses the atlas to treat the whole of skeletal proportion as a growth-plate phenomenon | Any primary measurement of condensation cell number, volume or density compared across elements of different final length, in any species. `lui2018` cites two Hall & Miyake **review** articles (1992, 2000) for the claim. Targeted Europe PMC search (363 hits, 20 screened) returned no primary measurement; logged under g_l0dev_003. | `mesenchymal_condensation`, and indirectly every L1/L2 claim that treats site-specific adult length as fully explained by postnatal plate behaviour |\n| x-L12-01 | \"Mecasermin rinfabate (rhIGF-1/rhIGFBP-3 complex) improves growth in children with IGF-1 deficiency\" \u2014 asserted whenever the complexed formulation is contrasted with twice-daily uncomplexed mecasermin | Repeated in historical IGF-1 therapy reviews and in accounts of the drug's brief licensure | Any retrievable cohort reporting height velocity or adult height on the complex. Europe PMC search 2026-08-05 (hit_count 865, screened 25) returns only bronchopulmonary dysplasia trials of the same molecule as OHB-607, preterm-infant infusion pharmacokinetics, and a myotonic dystrophy open-label trial; \"iPlex\" now retrieves an unrelated MassARRAY genotyping assay. Nearest source is a 2006 narrative appraisal (`kemp2006`), queued P2 in access_queue.md. Search logged under `g_l12b_012`. | `mecasermin_rinfabate` |\n| x-L12-02 | \"Statins are a candidate treatment for achondroplasia\" \u2014 carried forward in review after review since the 2014 iPSC and mouse rescue | Repeated in achondroplasia therapy reviews and in RASopathy drug-repositioning discussions | Any human in vivo data. No registered or published statin trial with a linear-growth endpoint in FGFR3 skeletal dysplasia; no independent replication of the iPSC rescue in twelve years. A 2025 review of achondroplasia treatments in children aged 5 and older lists only vosoritide, infigratinib and navepegritide as clinical agents. Search logged under `g_l12b_007`. | `statin_ipsc_achondroplasia` |\n| x-L12-03 | \"The growth plate drug concentrations achieved by systemic therapy are adequate\" \u2014 the unstated premise of every dose selection in growth pharmacology | Implicit throughout the CNP-analogue, FGFR3-inhibitor and growth-hormone literatures, which report only plasma pharmacokinetics | Any measured drug concentration inside growth plate cartilage, for any of twelve audited agents, in any species. Checked against Europe PMC (hit_count 253, screened 25), the openFDA structured labelling for eight products, and posted ClinicalTrials.gov results. The imaging methods exist and have been applied to subchondral bone, joint lipids and periprosthetic bone, never to a therapeutic agent in the physis. Search logged under `g_l12b_002`. | `growth_plate_drug_exposure`, and every intervention node in L12 |\n",
+ "node_contradicts": {
+  "hox_code_limb": {
+   "layer": "L0",
+   "confidence": "D",
+   "contradicts": [
+    "rux2016"
+   ]
+  },
+  "secondary_ossification_center": {
+   "layer": "L0",
+   "confidence": "B",
+   "contradicts": [
+    "soc_formation_triggers_stemness"
+   ]
+  },
+  "saddan_syndrome": {
+   "layer": "L11",
+   "confidence": "B",
+   "contradicts": [
+    "SCOPE LIMIT: the non-monotonicity result is specific to the kinase-domain pair K650E/K650M. Across the kinase-domain-to-transmembrane comparison (K650E vs G380R) activation and severity DO track together. Any therapeutic inference drawn from non-monotonicity must state which alleles it applies to - see g_mr002_allele."
+   ]
+  },
+  "cnp_analog_pk_challenge": {
+   "layer": "L12",
+   "confidence": "D",
+   "contradicts": [
+    "INTERNAL TENSION: navepegritide shows a clear within-trial dose-response (ACcomplisH) while vosoritide exposure does not predict growth within its cohort (galetaki2026). Both cannot be simple exposure-response relationships over the same effective range. The most economical resolution is a shared ceiling with navepegritide sampling the sub-saturating region and vosoritide sitting at or above it - but that is inference, not measurement."
+   ]
+  },
+  "fgfr3_tyrosine_kinase_inhibitor": {
+   "layer": "L12",
+   "confidence": "B",
+   "contradicts": [
+    "ALLELE MISMATCH: published FGFR3-inhibitor potency data are on kinase-domain alleles (K650E, K650M, N540K). The clinical achondroplasia target is the transmembrane G380R. Whether potency rank order transfers across activation mechanism is untested - see g_mr002_allele."
+   ]
+  },
+  "infigratinib_growth": {
+   "layer": "L12",
+   "confidence": "C",
+   "contradicts": [
+    "demuynck2025",
+    "ursachi2026_2"
+   ]
+  },
+  "meclizine_repurposing": {
+   "layer": "L12",
+   "confidence": "B",
+   "contradicts": [
+    "funahashi2024"
+   ]
+  },
+  "soluble_fgfr3_decoy": {
+   "layer": "L12",
+   "confidence": "A",
+   "contradicts": [
+    "rignol2022"
+   ]
+  },
+  "immunohistochemistry_cartilage_artifact": {
+   "layer": "L13",
+   "confidence": "B",
+   "contradicts": [
+    "nilsson2003",
+    "egerbacher2002"
+   ]
+  },
+  "elongation_budget": {
+   "layer": "L1",
+   "confidence": "C",
+   "contradicts": [
+    "barreto1994"
+   ]
+  },
+  "hypertrophic_chondrocyte": {
+   "layer": "L1",
+   "confidence": "C",
+   "contradicts": [
+    "barreto1994"
+   ]
+  },
+  "hypertrophic_volume_increase": {
+   "layer": "L1",
+   "confidence": "C",
+   "contradicts": [
+    "barreto1994"
+   ]
+  },
+  "saltation_stasis_growth": {
+   "layer": "L1",
+   "confidence": "D",
+   "contradicts": [
+    "klein1994",
+    "lampl1992",
+    "mcbrien2011"
+   ]
+  },
+  "delayed_senescence_hypothesis": {
+   "layer": "L2",
+   "confidence": "B",
+   "contradicts": [
+    "neuroendocrine_catchup_hypothesis"
+   ]
+  },
+  "finite_proliferative_capacity_model": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "soc_formation_triggers_stemness",
+    "replicative_senescence_chondrocyte"
+   ]
+  },
+  "foxa2_resting_chondrocyte": {
+   "layer": "L2",
+   "confidence": "D",
+   "contradicts": [
+    "pthrp_positive_resting_chondrocyte"
+   ]
+  },
+  "gremlin1_lineage_cell": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "lepr_positive_stromal_cell",
+    "pthrp_positive_resting_chondrocyte"
+   ]
+  },
+  "human_skeletal_stem_cell": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "mouse_skeletal_stem_cell_hierarchy",
+    "pthrp_positive_resting_chondrocyte",
+    "marrow_stromal_cell"
+   ]
+  },
+  "lepr_positive_stromal_cell": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "gremlin1_lineage_cell",
+    "mouse_skeletal_stem_cell_hierarchy"
+   ]
+  },
+  "marrow_stromal_cell": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "human_skeletal_stem_cell",
+    "mouse_skeletal_stem_cell_hierarchy"
+   ]
+  },
+  "mouse_skeletal_stem_cell_hierarchy": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "human_skeletal_stem_cell",
+    "periosteal_stem_cell",
+    "marrow_stromal_cell"
+   ]
+  },
+  "neuroendocrine_catchup_hypothesis": {
+   "layer": "L2",
+   "confidence": "D",
+   "contradicts": [
+    "delayed_senescence_hypothesis"
+   ]
+  },
+  "periosteal_stem_cell": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "mouse_skeletal_stem_cell_hierarchy"
+   ]
+  },
+  "prrx1_root_stem_cell": {
+   "layer": "L2",
+   "confidence": "D",
+   "contradicts": [
+    "pthrp_positive_resting_chondrocyte"
+   ]
+  },
+  "pthrp_positive_resting_chondrocyte": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "foxa2_resting_chondrocyte",
+    "prrx1_root_stem_cell"
+   ]
+  },
+  "replicative_senescence_chondrocyte": {
+   "layer": "L2",
+   "confidence": "D",
+   "contradicts": [
+    "finite_proliferative_capacity_model"
+   ]
+  },
+  "resting_zone_niche": {
+   "layer": "L2",
+   "confidence": "C",
+   "contradicts": [
+    "soc_formation_triggers_stemness"
+   ]
+  },
+  "rz_depletion_causes_fusion": {
+   "layer": "L2",
+   "confidence": "E",
+   "contradicts": [
+    "finite_proliferative_capacity_model"
+   ]
+  },
+  "skeletal_stem_cell": {
+   "layer": "L2",
+   "confidence": "D",
+   "contradicts": [
+    "mouse_skeletal_stem_cell_hierarchy",
+    "human_skeletal_stem_cell",
+    "lepr_positive_stromal_cell",
+    "gremlin1_lineage_cell",
+    "periosteal_stem_cell"
+   ]
+  },
+  "soc_formation_triggers_stemness": {
+   "layer": "L2",
+   "confidence": "D",
+   "contradicts": [
+    "finite_proliferative_capacity_model"
+   ]
+  },
+  "beta_catenin_ctnnb1": {
+   "layer": "L3",
+   "confidence": "C",
+   "contradicts": [
+    "sox9_tf"
+   ]
+  },
+  "cgmp_second_messenger": {
+   "layer": "L3",
+   "confidence": "C",
+   "contradicts": [
+    "wang2018",
+    "kawabe2025"
+   ]
+  },
+  "fgfr3_stat1_branch": {
+   "layer": "L3",
+   "confidence": "D",
+   "contradicts": [
+    "sahni1999",
+    "legeaimallet1998",
+    "murakami2004"
+   ]
+  },
+  "npr2_receptor": {
+   "layer": "L3",
+   "confidence": "B",
+   "contradicts": [
+    "nakao2015",
+    "agoston2007"
+   ]
+  },
+  "smoothened": {
+   "layer": "L3",
+   "confidence": "C",
+   "contradicts": [
+    "wang2022"
+   ]
+  },
+  "sox9_tf": {
+   "layer": "L3",
+   "confidence": "A",
+   "contradicts": [
+    "beta_catenin_ctnnb1"
+   ]
+  },
+  "dual_effector_hypothesis": {
+   "layer": "L4",
+   "confidence": "C",
+   "contradicts": [
+    "somatomedin_hypothesis"
+   ]
+  },
+  "glucocorticoid_cortisol": {
+   "layer": "L4",
+   "confidence": "B",
+   "contradicts": [
+    "glucocorticoid_receptor"
+   ]
+  },
+  "glucocorticoid_receptor": {
+   "layer": "L4",
+   "confidence": "C",
+   "contradicts": [
+    "glucocorticoid_cortisol"
+   ]
+  },
+  "seasonality_growth_velocity": {
+   "layer": "L4",
+   "confidence": "A",
+   "contradicts": [
+    "dalskov2016",
+    "narumi2020"
+   ]
+  },
+  "somatomedin_hypothesis": {
+   "layer": "L4",
+   "confidence": "C",
+   "contradicts": [
+    "dual_effector_hypothesis"
+   ]
+  },
+  "thra_receptor": {
+   "layer": "L4",
+   "confidence": "A",
+   "contradicts": [
+    "thrb_receptor"
+   ]
+  },
+  "thrb_receptor": {
+   "layer": "L4",
+   "confidence": "D",
+   "contradicts": [
+    "thra_receptor"
+   ]
+  },
+  "adamts4": {
+   "layer": "L5",
+   "confidence": "C",
+   "contradicts": [
+    "adamts5"
+   ]
+  },
+  "adamts5": {
+   "layer": "L5",
+   "confidence": "C",
+   "contradicts": [
+    "adamts4"
+   ]
+  },
+  "ankh_transporter": {
+   "layer": "L5",
+   "confidence": "B",
+   "contradicts": [
+    "wang2005"
+   ]
+  },
+  "zonal_stiffness_gradient": {
+   "layer": "L5",
+   "confidence": "D",
+   "contradicts": [
+    "sergerie2009",
+    "eckstein2022",
+    "radhakrishnan2004",
+    "xie2025"
+   ]
+  },
+  "gymnastics_stature_effect": {
+   "layer": "L6",
+   "confidence": "D",
+   "contradicts": [
+    "sport_specific_loading_human"
+   ]
+  },
+  "piezo2_channel": {
+   "layer": "L6",
+   "confidence": "D",
+   "contradicts": [
+    "piezo1_channel"
+   ]
+  },
+  "static_vs_dynamic_loading": {
+   "layer": "L6",
+   "confidence": "C",
+   "contradicts": [
+    "wolff_law"
+   ]
+  },
+  "wolff_law": {
+   "layer": "L6",
+   "confidence": "D",
+   "contradicts": [
+    "hueter_volkmann_law"
+   ]
+  },
+  "apoptosis_at_fusion": {
+   "layer": "L7",
+   "confidence": "D",
+   "contradicts": [
+    "estrogen_accelerated_senescence"
+   ]
+  },
+  "estrogen_accelerated_senescence": {
+   "layer": "L7",
+   "confidence": "C",
+   "contradicts": [
+    "apoptosis_at_fusion"
+   ]
+  },
+  "hypoxia_necrosis_at_fusion": {
+   "layer": "L7",
+   "confidence": "D",
+   "contradicts": [
+    "apoptosis_at_fusion"
+   ]
+  },
+  "height_gwas": {
+   "layer": "L8",
+   "confidence": "B",
+   "contradicts": [
+    "yengo2022 internal discrepancy: the peer-reviewed Nature version states the 7,209 segments have a MEAN size of ~90 kb, whereas the bioRxiv preprint of the same analysis states a MEDIAN of ~90 kb. For a right-skewed size distribution these cannot both be ~90 kb. Logged in audit/contradictions.md; the published value is used here and the discrepancy is flagged rather than silently resolved."
+   ]
+  },
+  "canalization_growth": {
+   "layer": "L9",
+   "confidence": "B",
+   "contradicts": [
+    "neuroendocrine_catchup_hypothesis"
+   ]
+  },
+  "icp_growth_model": {
+   "layer": "L9",
+   "confidence": "B",
+   "contradicts": [
+    "holmgren2017"
+   ]
+  }
+ },
+ "gap_contradictions": [
+  {
+   "gap_id": "g_l1arch_004",
+   "question": "Are chondrocyte columns actually required for longitudinal elongation, given that they are rare in the embryonic growth plate at the time elongation is fastest?",
+   "type": "contradiction",
+   "layer": "L1",
+   "why_it_matters": "Column architecture is the canonical explanation for how hypertrophic volume increase is channelled into the longitudinal axis. If bones elongate fastest at a stage when fewer than one in five clonal doublets is correctly stacked, the causal role of columns \u2014 and the interpretation of every chondrodysplasia described as a 'column disorganisation' phenotype \u2014 needs revision.",
+   "what_is_known": "Rubin et al. 2024 analysed 1044 distal-femur and 805 proximal-tibia clonal doublets in E18.5 mouse by 3D Confetti imaging and found only 17.6% and 19.4% respectively were stacked at elevation angles of 60-90 degrees; most clones were ellipsoidal clusters oriented orthogonal to the growth axis (rubin2024). Postnatally (P40) complete rotations rose to ~36-40% within columns, and perfect (80-90 degree) rotations were still under 10%. In parallel, the classical literature (aszodi2003, romereim2014, greer2024, yuan2023) treats column formation as necessary, and mutants that fail to form columns are short.",
+   "what_is_missing": "A direct test of whether elongation rate depends on columnar order at fixed hypertrophic cell volume. Existing column mutants also perturb cell shape, matrix and proliferation, so shortening cannot be attributed to loss of stacking alone.",
+   "nearest_evidence": [
+    "rubin2024",
+    "aszodi2003",
+    "romereim2014"
+   ],
+   "nearest_evidence_note": "rubin2024 (mouse, 3D clonal); romereim2014 and aszodi2003 (mouse, rotation mechanism); reno2025 (metatarsals and pisiform grow from a single plate, showing plate architecture is not stereotyped).",
+   "discriminating_experiment": "In an allelic series that graduates column disorder without changing chondrocyte volume (for example titrated chondrocyte-specific Itgb1 or Cdh2 alleles), measure by 3D imaging both the fraction of correctly stacked doublets and the final hypertrophic cell volume, and measure elongation by calcein double labelling. If elongation rate scales with hypertrophic volume and is insensitive to stacking fraction over a 20-60% range, columns are a lateral-confinement convenience rather than the elongation engine. If elongation falls with stacking fraction at matched cell volume, columns are causal.",
+   "tractability": 3
+  },
+  {
+   "gap_id": "g_l1arch_005",
+   "question": "Is longitudinal bone growth genuinely saltatory \u2014 alternating true-zero-velocity stasis with discrete elongation bursts \u2014 or continuous with measurement noise, at the level of the growth plate itself?",
+   "type": "contradiction",
+   "layer": "L1",
+   "why_it_matters": "Saltation implies a switch that can arrest and restart the entire chondrocyte differentiation cascade synchronously across all plates within a day. No such switch is known, and its existence would reframe growth-hormone pharmacodynamics, catch-up growth and the interpretation of any short-interval auxological endpoint (including knemometry endpoints used in inhaled-corticosteroid safety trials).",
+   "what_is_known": "Lampl et al. 1992 reported 0.5-2.5 cm saltations in infant length separated by 2-63 day stasis intervals, with 90-95% of days growth-free (lampl1992). Klein et al. 1994 measured rabbit proximal tibial elongation directly, with ~15-fold better precision than human anthropometry, and found a single Gaussian distribution of daily velocities \u2014 continuous, not bimodal (klein1994). Heinrichs et al. 1995 published a further critique (heinrichs1995). Johnson et al. 1996 showed by simulation that frequency-distribution shape cannot exclude saltation (johnson1996). Hermanussen 1998 reported chaotic mini growth spurts in rat rather than true stasis (hermanussen1998). McBrien et al. 2011 reported that canine proximal tibial growth follows saltation and stasis (mcbrien2011). Noonan et al. 2004 showed with implanted microtransducers that at least 90% of lamb tibial elongation happens during recumbency, giving a real, mechanically gated discontinuity on a diurnal timescale (noonan2004).",
+   "what_is_missing": "A measurement in the same species and with the same instrument that can distinguish (i) diurnal load-gated discontinuity, which is established, from (ii) multi-day stasis with a true zero, which is contested. The two camps have never measured the same preparation.",
+   "nearest_evidence": [
+    "lampl1992",
+    "klein1994",
+    "noonan2004",
+    "mcbrien2011"
+   ],
+   "nearest_evidence_note": "klein1994 (rabbit, continuous), noonan2004 (lamb, load-gated diurnal), lampl1992 and mcbrien2011 (saltatory), hermanussen1998 (chaotic mini-spurts).",
+   "discriminating_experiment": "Implant the Noonan/Wilsman microtransducer across a lamb or rabbit proximal tibial physis and record continuously for 30 days while simultaneously (a) logging posture and (b) delivering weekly fluorochrome labels. Analyse velocity after regressing out posture. If posture-corrected velocity still contains multi-day intervals with velocity indistinguishable from zero and a bimodal distribution, saltation is real at the tissue level; if the posture-corrected residual is unimodal Gaussian, saltation is a compound of load gating and anthropometric measurement error.",
+   "tractability": 4,
+   "search_log_ref": "g_l1arch_006"
+  },
+  {
+   "gap_id": "g_l2stem_004",
+   "question": "Are the five published skeletal stem cell schemes - mSSC, PTHrP+/FoxA2+ resting chondrocytes, Grem1+ OCR cells, LepR+ stroma and CTSK-lineage periosteal stem cells - distinct cell types, overlapping states of one lineage, or artefacts of different assays?",
+   "type": "contradiction",
+   "layer": "L2",
+   "why_it_matters": "Downstream layers need to know which cell to target and which mouse model reports on human biology. The schemes disagree on anatomy, adipogenic potential, developmental window and markers, and one immunophenotype (CD200+CD105-Thy-6C3-) is used for two anatomically different 'stem cells'. Without reconciliation, any therapeutic inference from this layer is arbitrary.",
+   "what_is_known": "mSSC is CD45-Ter119-Tie2-AlphaV+Thy-6C3-CD105-CD200+ and excludes fat (chan2015); the periosteal stem cell carries the same CD200+CD105-Thy-6C3- phenotype but is Ctsk-lineage and periosteal (debnath2018); Grem1+ OCR cells are metaphyseal, non-adipogenic and non-overlapping with Nestin-GFP cells (worthley2015); LepR+ cells are perisinusoidal, make adipocytes, contribute nothing to developing cartilage and become the dominant osteoblast source only after adolescence (zhou2014, shu2021); PTHrP+ resting chondrocytes are Grem1-negative (mizuhashi2018); the human CD146+ definition includes adipogenesis (sacchetti2007, bianco2015) while the hSSC definition excludes it and reports CD146+ cells as poorer colony formers (chan2018).",
+   "what_is_missing": "A single study that applies all marker panels and all Cre drivers to the same animals at the same ages with the same functional assay, so that overlap can be measured rather than inferred across papers.",
+   "nearest_evidence": [
+    "mizuhashi2018"
+   ],
+   "discriminating_experiment": "Multiplexed intersectional fate mapping in one mouse cohort: combine Pthlh-creER, Grem1-creER, Lepr-cre, Ctsk-cre and FoxA2-creER with orthogonal recombinases and distinct reporters, plus full mSSC/PSC surface staining, sampling at P6, P12, P28 and 12 weeks, and score anatomical position, marker phenotype and clonal output for each labelled cell. Under the 'distinct cell types' model, reporters remain mutually exclusive at all ages and each maps to one compartment. Under the 'states of one lineage' model, early labelled cells convert between reporter identities with age in a directional sequence. Under the 'assay artefact' model, surface phenotype fails to predict clonal output within any single Cre lineage.",
+   "tractability": 2,
+   "nearest_evidence_note": "mizuhashi2018 is the only cross-scheme quantification located: it measures overlap between PTHrP+ resting chondrocytes and the mSSC/pre-BCSP/BCSP tiers and excludes Grem1 co-expression."
+  },
+  {
+   "gap_id": "g_l3core_007",
+   "question": "Does raising bulk cGMP in growth plate cartilage increase longitudinal bone growth? Rat and mouse pharmacology give opposite answers.",
+   "type": "contradiction",
+   "layer": "L3",
+   "why_it_matters": "The premise of every cGMP-raising growth therapy - CNP analogues, NPR3 decoys, PDE inhibitors - is that more cGMP means more growth. One well-controlled rodent experiment raised growth plate cGMP by half and produced no growth at all, which if generalised means the relevant variable is not bulk cGMP but a compartmentalised pool.",
+   "what_is_known": "In one-month-old rats, tadalafil at 10 mg/kg/day for 3 weeks raised tissue cGMP by 52% and peak CNP-stimulated chondrocyte cGMP by 37%, yet produced no change in long bone length, cortical or trabecular properties or growth plate histology (wang2018). In mouse, PDE3 inhibitors raised chondrocyte cGMP, activated PKG-dependent K+ channels, promoted TRPM7-mediated Ca2+ entry, elongated cultured bones and enlarged juvenile animals (kawabe2025, miyazaki2022). Genetic elevation of NPR2 output raises bone length in mouse (wagner2021, shuhaibar2017).",
+   "what_is_missing": "No experiment resolves whether the discrepancy is species (rat versus mouse), isoform (PDE5 versus PDE3B), compartment (bulk versus microdomain cGMP), or dose/duration. No study has measured subcellular cGMP microdomains in chondrocytes.",
+   "nearest_evidence": [
+    "wang2018",
+    "kawabe2025",
+    "miyazaki2022",
+    "shuhaibar2017",
+    "wagner2021"
+   ],
+   "discriminating_experiment": "Run the identical protocol - tadalafil and cilostazol, matched to equal whole-tissue cGMP elevation measured by ELISA - side by side in rat and mouse of the same age, with tibial length by microCT and growth plate zone morphometry as the primary endpoints, and with a targeted cGMP FRET biosensor expressed at the plasma membrane versus in the cytosol to read compartment-specific cGMP. Prediction under the microdomain hypothesis: PDE3 inhibition raises membrane-proximal cGMP and growth in both species while PDE5 inhibition raises only cytosolic cGMP and grows neither. Prediction under a species hypothesis: both drugs grow mouse and neither grows rat.",
+   "tractability": 4
+  },
+  {
+   "gap_id": "g_l3core_008",
+   "question": "Which downstream branch of FGFR3 - MAPK/ERK or STAT1 - carries the load in HUMAN achondroplasia and thanatophoric dysplasia, given that human dysplastic chondrocytes do not show the proliferation defect the STAT1 model predicts?",
+   "type": "contradiction",
+   "layer": "L3",
+   "why_it_matters": "Every FGFR3-directed drug programme picks a branch. CNP analogues and MEK-directed approaches target MAPK; JAK/STAT-directed approaches target STAT1. If the human lesion is apoptosis-and-differentiation rather than proliferation arrest, then mouse-derived proliferation endpoints are the wrong preclinical readout.",
+   "what_is_known": "In rat chondrosarcoma cells and primary murine chondrocytes, FGF inhibits proliferation through STAT1 and Stat1-null metatarsals do not arrest (sahni1999); the TD II K650E mutant constitutively activates STAT1 (su1997). In mouse, constitutively active MEK1 reproduces achondroplasia-like dwarfism with blocked hypertrophy and NORMAL proliferation, and deleting Stat1 in achondroplasia-mutant mice restores proliferation but rescues neither the reduced hypertrophic zone nor the dwarfism (murakami2004). In cultured human thanatophoric dysplasia type I fetal chondrocytes, mitogenic response to FGF2 and FGF9 was NOT reduced relative to controls; the observed lesion was ligand-independent STAT activation with nuclear STAT1 in hypertrophic cells and increased apoptosis with raised BAX and reduced BCL-2 (legeaimallet1998).",
+   "what_is_missing": "No study measures proliferation index, phospho-ERK and phospho-STAT1 together, in situ and by zone, in human achondroplasia or thanatophoric dysplasia growth plate against age-matched controls. The human and mouse literatures have never been placed on the same measurement.",
+   "nearest_evidence": [
+    "sahni1999",
+    "su1997",
+    "murakami2004",
+    "legeaimallet1998"
+   ],
+   "discriminating_experiment": "Multiplex immunofluorescence (Ki-67 or phospho-histone H3, phospho-ERK1/2, phospho-STAT1 Y701, cleaved caspase-3, COL10A1) on archival human fetal thanatophoric dysplasia and postnatal achondroplasia growth plate sections with age-matched non-dysplastic controls, quantified per zone. Prediction under the MAPK-dominant model: phospho-ERK is elevated across the prehypertrophic/hypertrophic boundary, COL10A1 domain is compressed, and proliferation index is unchanged. Prediction under the STAT1-dominant model: phospho-STAT1 and cleaved caspase-3 are elevated and proliferation index is reduced in the proliferative zone.",
+   "tractability": 3
+  },
+  {
+   "gap_id": "g_l7fuse_006",
+   "question": "Is the absence of apoptosis in the fusing human growth plate a real species or process difference, or an artefact of a single specimen?",
+   "type": "contradiction",
+   "layer": "L7",
+   "why_it_matters": "Apoptosis of terminal hypertrophic chondrocytes is the textbook account of how cartilage is cleared during endochondral ossification, and it is the account carried into fusion by default. The only direct human test of it at fusion is negative. Either the textbook is wrong for the fusion step in humans, or the one available human specimen is unrepresentative. Both possibilities have large downstream consequences for how the atlas grades every apoptosis-based rodent result.",
+   "what_is_known": "In the one human growth plate reported as about to fuse, there was not a single TUNEL-positive cell, cleaved caspase-3 was not detected, and electron microscopy showed no apoptosis or autophagy but did show hypoxia and necrosis; unfused plates contained a few TUNEL-positive chondrocytes (emons2009, human). Independently, estrogen-accelerated loss of rabbit resting-zone chondrocytes also did not appear to be apoptotic (nilsson2014_2, rabbit). Against this, apoptosis of hypertrophic chondrocytes is a well-replicated feature of normal endochondral growth in rodents.",
+   "what_is_missing": "Replication in a second human fusing plate, and a positive control demonstrating that the TUNEL assay used would have detected apoptosis had it been present in that tissue block. No modern death-modality markers (RIPK3, MLKL, GSDMD, LC3/p62) have been applied to any human physeal specimen.",
+   "nearest_evidence": [
+    "emons2009",
+    "nilsson2014_2"
+   ],
+   "discriminating_experiment": "Model system: staged human physeal specimens (g_l7fuse_002) and rabbit plates at matched stages as a fusing-species control, with DNase-treated sections as TUNEL positive controls on the same slides. Readout: TUNEL, cleaved caspase-3, RIPK3 and phospho-MLKL, LC3 and p62, and pimonidazole or CAIX as a hypoxia marker, scored zone by zone at the bridging front. Expected results - classical apoptosis: caspase-3-positive, TUNEL-positive cells cluster at the front. Regulated necrosis: phospho-MLKL positive, caspase-3 negative. Hypoxic death: hypoxia marker positive with no regulated-death marker, matching the emons2009 ultrastructure. A finding of apoptosis in the rabbit but not the human would establish a genuine species difference at the final step even between two fusing species.",
+   "tractability": 3,
+   "search_log_ref": null
+  },
+  {
+   "gap_id": "g_l11path_004",
+   "question": "Why is FGFR3 K650M (SADDAN) survivable when K650E (thanatophoric dysplasia type II) is lethal, despite K650M producing roughly three times the constitutive receptor kinase activity?",
+   "type": "contradiction",
+   "layer": "L11",
+   "why_it_matters": "This is the single observation that falsifies the simplest model of the whole FGFR3 series - that phenotype severity is a monotonic function of receptor activation strength. If the scalar model is wrong, then drug development premised on 'reduce FGFR3 kinase output' (infigratinib, TYRA-300) is targeting a quantity that does not by itself determine outcome, and the relevant variable is pathway bias, receptor localisation or tissue distribution.",
+   "what_is_known": "Tavormina 1999 measured ~3-fold greater constitutive kinase activity for K650M than for K650E in transient transfection, and reported four unrelated K650M individuals surviving past infancy without prolonged life support. Bellus 2000 showed the same codon generates weakly activating alleles (K650N, K650Q) that cause hypochondroplasia-like disease. Wilcox 1998 independently found that K650E growth plates are BETTER preserved than R248C and Y373C plates, a second non-monotonicity in the same series.",
+   "what_is_missing": "No study has compared downstream pathway usage (MAPK/ERK vs STAT1 vs PLCgamma), receptor trafficking, or ligand dependence between K650M and K650E in chondrocytes rather than in generic transfected cells. Lethality in thanatophoric dysplasia is respiratory, driven by thoracic cage and cranial base geometry, and no study has asked whether the two alleles differ in their effect on those specific skeletal elements rather than on the long bones.",
+   "nearest_evidence": [
+    "tavormina1999",
+    "bellus2000",
+    "wilcox1998"
+   ],
+   "discriminating_experiment": "Express K650M and K650E FGFR3 at matched levels in human iPSC-derived chondrocytes and in a costal-cartilage explant model; quantify phospho-ERK, phospho-STAT1 and receptor surface residence, and measure rib and cranial base growth in matched knock-in mouse alleles. Under the scalar model K650M shows uniformly greater signalling and worse growth on every readout; under a pathway-bias model K650M exceeds K650E on ERK but not on STAT1, and STAT1 output tracks the lethal thoracic phenotype.",
+   "tractability": 3
+  },
+  {
+   "gap_id": "g_l3rest_012",
+   "question": "Is SOX9 required for chondrocyte hypertrophy, or must SOX9 be downregulated for hypertrophy to occur?",
+   "type": "contradiction",
+   "layer": "L3",
+   "why_it_matters": "SOX9 is the most convergent node in this layer and the target of every upstream arm. The two published positions imply opposite predictions for any intervention that raises SOX9: one predicts more hypertrophy and faster bone formation, the other predicts a blocked, achondroplasia-like plate. Achondroplasia therapeutics reasoning depends on which is correct.",
+   "what_is_known": "Dy 2012 shows, using doxycycline-inducible Cre and Sox9 conditional nulls in mouse, that SOX9 is REQUIRED to maintain columnar proliferation and to generate hypertrophy, that SOX9 protein outlives its mRNA into upper hypertrophic cells, and that it acts there with MEF2C to directly activate Col10a1. Zhou 2015 shows that activated mutant FGFR3 impairs endochondral growth by PREVENTING SOX9 downregulation in differentiating chondrocytes, i.e. persistent SOX9 is the lesion. Kohn 2015 adds that prolonged Notch signalling suppresses Sox9 and that this suppression is required for the onset of maturation.",
+   "what_is_missing": "No experiment titrates SOX9 level within a single differentiating chondrocyte population and measures hypertrophy as a continuous function of it. The two positions may be reconciled by a biphasic requirement (SOX9 needed to license Col10a1 but needing to fall for terminal maturation), but that reconciliation has not been tested.",
+   "nearest_evidence": [
+    "dy2012",
+    "zhou2015",
+    "kohn2015",
+    "akiyama2002"
+   ],
+   "discriminating_experiment": "A degron-tagged endogenous SOX9 allele in mouse or human chondrocytes allowing graded, reversible protein reduction, applied at defined points along the differentiation trajectory, with live readout of COL10A1 reporter and cell volume. Under the \"required\" hypothesis, reducing SOX9 at the prehypertrophic step lowers COL10A1 monotonically. Under the \"must fall\" hypothesis, modest reduction at that step raises COL10A1 and accelerates volume increase. A biphasic curve with a maximum at intermediate SOX9 supports the reconciliation and gives the field a set point.",
+   "tractability": 4
+  },
+  {
+   "gap_id": "g_l6mech_004",
+   "question": "Do static and dynamic loading at equal mean stress suppress growth rate equally, or is dynamic loading growth-sparing?",
+   "type": "contradiction",
+   "layer": "L6",
+   "why_it_matters": "The claim that dynamic loading preserves growth where static suppresses it is the stated rationale for cyclically controlled vertebral tethers and for 'physiological' growth-modulation implants. If dynamic loading suppresses growth just as much and only spares the tissue, then such devices will still stunt the segment they are applied to, and the design goal should be tissue preservation, not growth preservation.",
+   "what_is_known": "Duty cycle matters: reducing 0.1 MPa compression from 24 to 12 h/day raised rat vertebral growth from 82% to 90-93% of control and tibial growth from 70% to 84-86% (stokes2005). Waveform apparently does not: sinusoidal 0.2 MPa +/-30% at 0.1 Hz reduced rat caudal vertebral growth by the same 19% as sustained 0.2 MPa, while sparing plate thickness, proliferative cells per column and hypertrophic cell height (valteau2011). Explants tell the tissue-sparing half of the story (sergerie2011, kaviani2015) and cell-strain measurements give the viscoelastic explanation (zimmermann2017). Frost's chondral modeling theory predicts the opposite of the valteau2011 result (frost1979).",
+   "what_is_missing": "A single experiment that varies duty cycle and waveform orthogonally at matched mean stress with a growth-rate endpoint, so that 'intermittent' (load off part of the day) and 'dynamic' (oscillating about a non-zero mean) are not conflated, as they routinely are in reviews.",
+   "nearest_evidence": [
+    "stokes2005",
+    "valteau2011",
+    "sergerie2011"
+   ],
+   "discriminating_experiment": "Rat caudal vertebra, 2x3 factorial, n>=8 per cell: duty cycle 24 h/day vs 12 h/day, crossed with waveform sustained, 0.1 Hz sinusoid and 1.0 Hz sinusoid, all at 0.2 MPa time-averaged stress, 14 days, fluorochrome growth rate plus histomorphometry. Under the growth-sparing hypothesis, waveform has a main effect on growth rate. Under the mean-stress hypothesis, only duty cycle affects growth rate while waveform affects only histomorphometry, which is what valteau2011 and stokes2005 jointly imply.",
+   "tractability": 5
+  },
+  {
+   "gap_id": "g_l4endo_007",
+   "question": "Which thyroid hormone receptor isoform mediates T3 action in growth plate chondrocytes - TRalpha, as human THRA mutations imply, or TRbeta, as mouse rib chondrocyte knockouts imply?",
+   "type": "contradiction",
+   "layer": "L4",
+   "why_it_matters": "Isoform-selective thyromimetics (resmetirom-class TRbeta agonists) are entering clinical use, and their skeletal safety in growing children depends entirely on which isoform the plate uses. If the plate is TRbeta-driven, a TRbeta-selective agonist would accelerate hypertrophic differentiation and advance bone age; if TRalpha-driven, the same drug would be skeletally silent. The literature currently supports both answers.",
+   "what_is_known": "Human side - heterozygous dominant-negative THRA variants cause growth retardation, delayed bone age and disharmonious short stature with low free T4 and normal-to-mildly- raised TSH, and these children respond to levothyroxine plus rhGH with height gains up to 2.5 SDS (jorge2025). Human RTHbeta (dominant-negative THRB) is common, well described and typically NOT associated with short stature. Mouse side - in primary neonatal rib chondrocytes, T3 reduced proliferation and accelerated differentiation normally in TRalpha-deficient cells but ALL T3 responses were abolished in TRbeta-deficient cells, and T3 upregulated TRbeta1 itself (rabier2006). Both TRalpha1, TRalpha2 and TRbeta1 protein are present in rat reserve and proliferating zone chondrocytes and absent from hypertrophic cells (robson2000), so localisation does not adjudicate.",
+   "what_is_missing": "No isoform-selective test in long-bone growth plate chondrocytes of either species - the mouse experiment used RIB chondrocytes, a different skeletal element - and no measurement of THRA versus THRB transcript or protein in human physeal tissue. Germline knockouts also permit compensation that a conditional, adult-onset deletion would not.",
+   "nearest_evidence": [
+    "jorge2025",
+    "rabier2006",
+    "robson2000"
+   ],
+   "discriminating_experiment": "Model system - side-by-side conditional deletion of Thra and Thrb in Acan-CreERT2 chondrocytes of the mouse proximal tibia, induced postnatally, plus primary human growth plate chondrocytes from surgical waste treated with isoform-selective agonists (TRbeta-selective resmetirom-class compound versus a TRalpha-sparing control) at matched receptor occupancy. Readout - tibial length and zonal heights in vivo; COL10A1, ALPL and proliferation index in the human cells; isoform transcript quantification in the same human tissue. Expected result - under the human-genetics-led model, Thra deletion shortens the tibia and TRbeta-selective agonists leave human chondrocyte differentiation markers unchanged; under the mouse-chondrocyte-led model, Thrb deletion is the one that blocks hypertrophic differentiation and the TRbeta agonist induces COL10A1 in human cells - which would be a direct paediatric safety signal for that drug class.",
+   "tractability": 3
+  },
+  {
+   "gap_id": "g_l4endo_008",
+   "question": "What drives the seasonal variation in human height velocity - photoperiod, ambient temperature, or seasonal nutrition - and why does the phase of the peak differ between cohorts?",
+   "type": "contradiction",
+   "layer": "L4",
+   "why_it_matters": "The seasonal amplitude is not trivial (~13% of mean linear growth velocity in infants), which means growth-velocity measurement intervals shorter than a year are systematically biased by season - directly affecting clinical decisions about starting or stopping GH and the interpretation of short trials. It is also the only routinely observable environmental modulator of the human growth plate, so identifying the transducer would be mechanistically valuable.",
+   "what_is_known": "Three large human cohorts agree that seasonality is real and disagree on phase and driver. In 11,587 three-month intervals from 2,277 GH-treated prepubertal children, height velocity scaled with average daylight hours (+0.146 cm/yr per hour in treatment year 1, +0.121 thereafter), the effect grew with latitude, and calendar month had no independent effect - a photoperiod signature (shulman2013). In 9,409 Japanese infants, length z-velocity peaked in SUMMER, with a winter-summer difference of 0.0026 z/day (95% CI 0.0015-0.0036), about 13% of mean velocity (narumi2020). In 760 Danish 8-11 year olds, height velocity was above the 6.10 cm/yr mean in JANUARY-APRIL, and unlike earlier reports of a spring height peak with an autumn weight peak, weight, BMI and fat-free mass index peaked coincidentally (dalskov2016).",
+   "what_is_missing": "No study manipulates photoperiod, temperature or energy intake independently while measuring growth, and no study measures a candidate mediator (melatonin amplitude, 25-hydroxyvitamin D, IGF-1, GH pulsatility) longitudinally across seasons in the same children with growth as the outcome. The competing explanations have never been placed in one model.",
+   "nearest_evidence": [
+    "shulman2013",
+    "narumi2020",
+    "dalskov2016"
+   ],
+   "discriminating_experiment": "Model system - a prospective cohort of prepubertal children measured by knemometry every 2 weeks for 24 months at three widely separated latitudes (for example ~60 N, ~35 N and ~5 N), with a nested arm in a controlled-photoperiod setting (polar winter workers' children or a residential facility with fixed lighting). Readout - lower-leg length velocity as the outcome, with monthly serum 25(OH)D, IGF-1, IGFBP-3, overnight urinary 6-sulphatoxymelatonin and 7-day dietary energy record as candidate mediators, analysed by mediation model. Expected result - under a photoperiod model, growth velocity amplitude scales with latitude, peaks in phase with daylight hours regardless of temperature, and melatonin amplitude is the strongest mediator; under a temperature/energy model, amplitude tracks seasonal temperature or energy intake and is near zero at low latitude despite a substantial photoperiod swing there being absent; under a vitamin D model, 25(OH)D mediates the effect and supplementation in a randomised sub-arm abolishes the seasonal amplitude.",
+   "tractability": 3
+  },
+  {
+   "gap_id": "g_l4endo_011",
+   "question": "Why does pharmacological glucocorticoid act locally and potently on the growth plate (77% growth suppression on unilateral infusion in rabbit) while genetic deletion of the glucocorticoid receptor from chondrocytes leaves mouse growth plates and long bone length entirely normal?",
+   "type": "contradiction",
+   "layer": "L4",
+   "why_it_matters": "These two results are used interchangeably to support \"glucocorticoids act on the chondrocyte\", but they cannot both mean that. Either the receptor mediating pharmacological suppression is not the classical chondrocyte GR (raising the possibility of a perichondrial, vascular or mineralocorticoid-receptor route), or endogenous and pharmacological glucocorticoid exposures engage different mechanisms. The answer changes what a growth-sparing steroid would have to avoid.",
+   "what_is_known": "Local intra-plate dexamethasone infusion (80 ng/uL at 1 uL/h) reduced ipsilateral rabbit proximal tibial growth by 77% versus the vehicle-infused contralateral plate, P<0.0001, with a measurement error of ~5% (baron1992); subsequent catch-up was likewise confined to the treated plate (baron1994); dexamethasone slowed rabbit resting zone chondrocyte proliferation and their numerical depletion (schrier2006). Against this, tamoxifen- inducible chondrocyte-specific GR knockout mice showed normal knee joint architecture, cartilage structure, growth plates, intervertebral discs, long bone length and bone microarchitecture at all ages, with a defect confined to metaphyseal fracture healing (tu2014).",
+   "what_is_missing": "No experiment applies the two designs to the same question: nobody has performed the unilateral local dexamethasone infusion in a chondrocyte-specific GR knockout animal, which is the single measurement that would resolve it. Nor has the mouse GR knockout been challenged with systemic glucocorticoid excess and a growth endpoint.",
+   "nearest_evidence": [
+    "baron1992",
+    "baron1994",
+    "schrier2006",
+    "tu2014"
+   ],
+   "discriminating_experiment": "Model system - Acan-CreERT2 x Nr3c1-flox mice and littermate controls, each receiving unilateral intra-growth-plate dexamethasone infusion with contralateral vehicle, plus a systemic high-dose dexamethasone arm. Readout - ipsilateral versus contralateral tibial growth rate by calcein/tetracycline double labelling and pin-radiograph measurement, with zonal heights and resting zone chondrocyte counts. Expected result - under a chondrocyte-GR model, local dexamethasone suppresses growth in controls but has no ipsilateral effect in chondrocyte-GR-null mice, and the mouse null result in tu2014 is simply the absence of a physiological ligand challenge; under a non-chondrocyte-target model, local dexamethasone suppresses growth equally in both genotypes, redirecting the search to perichondrium, hypertrophic-zone vasculature or the mineralocorticoid receptor.",
+   "tractability": 4
+  },
+  {
+   "gap_id": "g_l5matrix_006",
+   "question": "Does ANKH export inorganic pyrophosphate directly from growth plate chondrocytes, or does it export ATP that ENPP1 then converts to PPi extracellularly?",
+   "type": "contradiction",
+   "layer": "L5",
+   "why_it_matters": "The two models predict opposite consequences for any intervention. If ANKH exports PPi, then ANKH activity alone sets local PPi and ENPP1 is a parallel source. If ANKH exports ATP, then ENPP1 is obligatorily downstream of ANKH, no ANKH-derived PPi exists without ENPP1, and purinergic signalling through the exported ATP is an unrecognised second output of the same transporter - relevant because extracellular ATP acts on P2 receptors on chondrocytes. The entire growth plate ANK literature was interpreted under the first model.",
+   "what_is_known": "Under the PPi-transport model: blocking Ank transport or expression in terminally differentiated mineralizing growth plate chondrocytes raises intra- AND extracellular PPi, lowers alkaline phosphatase and blocks mineralization, and Ank overexpression in hypertrophic non-mineralizing chondrocytes lowers intra- and extracellular PPi and induces mineralization (wang2005); ANK expression is HIF-1 and oxygen dependent in these cells (zaka2009). Under the ATP-export model: ANKH introduced into ENPP1-knockout HEK293 cells produces robust ATP release with NO rise in extracellular PPi, Enpp1-/- mouse bone contains under 2.5% of wild-type PPi despite intact Ank, and ANKH supplies about 25% of plasma PPi with ABCC6 supplying 60-70%, both by NTP efflux (szeri2022). Consistently, NPP1 but not ANK localises to matrix vesicles (harmey2004).",
+   "what_is_missing": "The decisive experiment has been done in HEK293 overexpression, not in chondrocytes. No study has tested ANK function in growth plate chondrocytes lacking ENPP1.",
+   "nearest_evidence": [
+    "szeri2022",
+    "wang2005",
+    "harmey2004",
+    "zaka2009"
+   ],
+   "discriminating_experiment": "Generate Enpp1-null primary growth plate chondrocytes (from Enpp1-/- mice or by CRISPR in a chondrocytic line), then overexpress or silence Ank and measure extracellular ATP by luciferase and extracellular PPi by the ATP-sulfurylase assay (lundkvist2023) in parallel, with matched Enpp1-intact controls. Under the ATP-export model, Ank manipulation will change extracellular ATP in both genotypes but change extracellular PPi only in Enpp1-intact cells, and the mineralization phenotype of wang2005 will be abolished in the Enpp1-null background. Under the PPi-transport model, Ank manipulation will change extracellular PPi in both genotypes. Add an apyrase control to confirm that any PPi rise depends on released ATP.",
+   "tractability": 4
+  },
+  {
+   "gap_id": "g_l5matrix_008",
+   "question": "Which zone of the growth plate is stiffest, and does the direction of the zonal stiffness gradient depend on species, anatomical site, or measurement method?",
+   "type": "contradiction",
+   "layer": "L5",
+   "why_it_matters": "Physeal fractures propagate through a mechanically weak plane, and guided-growth and distraction hardware are designed around assumed stiffness gradients. The published gradients point in different directions, so the predicted failure plane and the predicted strain distribution across the plate differ between studies that are all cited interchangeably.",
+   "what_is_known": "Newborn porcine distal ulna, unconfined compression, transversely isotropic biphasic model: the RESERVE zone is stiffest, with PZ and HZ half as stiff axially and about a third as stiff transversely, and three times as permeable radially (sergerie2009). Nine-week rabbit proximal tibia, microindentation: modulus PEAKS in the UPPER HYPERTROPHIC zone, range 380-690 kPa, with proteoglycan content correlating with compressive modulus (eckstein2022). Rabbit cranial base, AFM microindentation: modulus increases MONOTONICALLY from reserve (0.57 MPa) to mineralizing zone (1.41 MPa) (radhakrishnan2004). Human phalangeal and tibial growth plate, sharp-tip AFM: HZ (416 MPa) stiffer than RZ (131 MPa) (xie2025). Bovine tensile failure runs from the upper columnar into the reserve zone, leaving chondrons intact on the metaphyseal side (williams2001).",
+   "what_is_missing": "A single study measuring more than one species, more than one anatomical site and more than one method on comparable tissue. The five datasets differ simultaneously in species, site (weight-bearing long bone versus cranial base versus phalanx), age, hydration, loading mode and constitutive model, so no variable can be isolated.",
+   "nearest_evidence": [
+    "sergerie2009",
+    "eckstein2022",
+    "radhakrishnan2004",
+    "xie2025",
+    "williams2001"
+   ],
+   "discriminating_experiment": "A single-laboratory factorial study: proximal tibial and cranial base physes from rabbit and pig at two ages, each specimen measured by (i) microindentation with a 100 um spherical probe, (ii) AFM with a 5 um spherical probe, and (iii) zone-dissected unconfined compression, all hydrated in PBS, with paired Safranin-O and Raman proteoglycan mapping. If the gradient direction is method-dependent, indentation and compression will disagree within the same specimen and the field's disagreement is an artefact of technique. If it is site-dependent, cranial base and long bone will differ consistently across methods and species, and cranial-base data (radhakrishnan2004) should be excluded from long-bone models. If it is age-dependent, the newborn porcine result (reserve stiffest) will reverse in older animals as the hypertrophic zone begins to calcify.",
+   "tractability": 4
+  },
+  {
+   "gap_id": "g_l0dev_009",
+   "question": "Is the difference in elongation rate between long and short bones dominated by chondrocyte hypertrophic volume or by proliferation per column?",
+   "type": "contradiction",
+   "layer": "L0",
+   "why_it_matters": "The two answers point at different biology and different drugs. If final hypertrophic volume dominates, the target is the IGF-dependent swelling phase and the matrix conditions that permit it (L5). If proliferation per column dominates, the target is the resting zone's output and the senescence programme that limits it (L2). The atlas cannot carry both as the headline mechanism of skeletal proportion.",
+   "what_is_known": "cooper2013 used quantitative phase microscopy to show three phases of chondrocyte volume increase and reported that the duration of the third, IGF-dependent, proportional-dry-mass phase is what varies most between rapidly and slowly elongating growth plates, concluding that the largest contribution to differential elongation comes from hypertrophic volume. lui2018 measured both variables in the same animals and found the opposite ranking: at one week the metacarpal grew at 49% of the tibial rate with proliferation per column at 46% of tibial, while hypertrophic cell height differed little at that timepoint, and concluded that proliferation per column is the dominant factor. Both are mouse; both are competent; they disagree.",
+   "what_is_missing": "A reconciliation. The two studies differ in the ages examined, in the bones compared and in whether volume was measured as height or as true volume with dry-mass correction, and neither reanalyses the other's data. The L1 node site_specific_growth_rate records a third position from rat, that eight chondrocytic variables contribute and the relative share of hypertrophy falls from 59% to 44% as plates get slower, which suggests the answer is age- and rate-dependent rather than fixed.",
+   "nearest_evidence": [
+    "cooper2013",
+    "lui2018"
+   ],
+   "discriminating_experiment": "A single study measuring, in the same mice at four ages spanning 1 to 6 weeks, and at four sites (distal femur, proximal tibia, metacarpal, proximal phalanx): elongation rate by calcein labelling, proliferation per column by EdU, and terminal hypertrophic cell VOLUME by quantitative phase microscopy rather than section height. Then partition the between-site variance in rate into the two components at each age. The prediction that reconciles both papers is that proliferation per column dominates early and hypertrophic volume dominates late; if instead one component dominates at every age, one of the two published conclusions is wrong.",
+   "tractability": 5
+  },
+  {
+   "gap_id": "g_l12b_004",
+   "question": "Does infigratinib inhibit the FGFR3-N540K hypochondroplasia mutant potently enough to be therapeutic, or is it a weak inhibitor of that specific allele?",
+   "type": "contradiction",
+   "layer": "L12",
+   "why_it_matters": "Hypochondroplasia is the declared next indication for infigratinib and a phase 2 programme is predicated on the affirmative answer. Two groups in the same journal within months give opposite answers about the same drug against the same mutant. If the negative report is right, a trial is being designed on an allele the drug does not adequately engage, and any null result will be misread as evidence against FGFR3 inhibition in general rather than against this compound at this allele.",
+   "what_is_known": "Demuynck 2025 reports in silico strong interaction, potent in vitro inhibition, and significant skeletal improvement in Fgfr3-N534K/+ mice. Ursachi 2026 reports that infigratinib is a weak inhibitor of FGFR3-N540K. An independent kinase panel shows infigratinib potency varies ~89-fold between K650E and K650M, establishing that strong allele-dependence of this compound is real.",
+   "what_is_missing": "A single head-to-head biochemical comparison of infigratinib against wild-type, G380R, N540K and N540K-equivalent mouse N534K FGFR3 in one assay with stated ATP concentration, plus a matched cellular assay.",
+   "nearest_evidence": [
+    "demuynck2025",
+    "ursachi2026",
+    "ryu2022"
+   ],
+   "discriminating_experiment": "Run all four FGFR3 variants side by side in a single laboratory using a microfluidic mobility-shift kinase assay at ATP = Km and again at 1 mM ATP, paired with a BaF3 TEL-FGFR3 proliferation assay for each variant. THERAPEUTIC - N540K IC50 within ~3-fold of wild-type at both ATP concentrations and cellular IC50 below achievable free plasma concentration at 0.25 mg/kg/day. NOT THERAPEUTIC - N540K IC50 >20-fold weaker, in which case the hypochondroplasia programme needs a different compound.",
+   "tractability": 5
+  },
+  {
+   "gap_id": "g_l9organism_005",
+   "question": "Which is correct for clinical use, the +/-8.5 cm target-height band derived theoretically by Tanner, or the +/-1.64 SDS band (+/-10.6 cm girls, +/-11.7 cm boys) recommended by the growth hormone societies, given a measured residual SD of 4.4-4.7 cm?",
+   "type": "contradiction",
+   "layer": "L9",
+   "why_it_matters": "These are two different thresholds for the same clinical decision and they differ by up to 3.2 cm at the boundary. A child 10 cm below target height has a 1.0-1.5% prior probability of that deviation under the measured SD, which is inside the guideline band but outside the Tanner band. The discrepancy determines who is investigated and who is treated.",
+   "what_is_known": "The +/-8.5 cm band was derived from theoretical considerations as the 3rd-to-97th centile band, not measured, and was later revised by its own authors to +/-9 cm for girls and +/-10 cm for boys (documented in zeevi2024, citing tanner1970). The +/-1.64 SDS band recommended by the GH Research Society, LWPES and ESPE converts under CDC standards to +/-10.6 and +/-11.7 cm (zeevi2024). The directly measured residual SD is 4.7 cm (sons) and 4.4 cm (daughters), which corresponds to a 95% band of about +/-9.2 and +/-8.6 cm.",
+   "what_is_missing": "No published reconciliation. The guideline band and the empirical SD have not been compared in a paper that both cohorts' authors would accept, and no study has tested which threshold better separates children with a subsequently identified pathological cause of short stature from those without.",
+   "nearest_evidence": [
+    "zeevi2024",
+    "luo1998",
+    "tanner1970"
+   ],
+   "discriminating_experiment": "Model system: a retrospective cohort of children referred for short stature with measured parental heights, complete diagnostic workup and eventual diagnosis (pathological versus familial/constitutional). Readout: sensitivity and specificity for a pathological diagnosis of the three candidate thresholds (+/-8.5 cm, +/-1.64 SDS, +/-2 SD of the measured 4.4-4.7 cm residual), with the corrected target height in all three cases. Expected result if the empirical SD is right: the narrow threshold has materially higher sensitivity at acceptable specificity, and the guideline band is missing pathology. Expected result if the guideline is right: the narrow threshold produces an unacceptable false-positive rate without gaining sensitivity, implying the empirical SD is cohort-specific.",
+   "tractability": 4
+  },
+  {
+   "gap_id": "g_l9organism_013",
+   "question": "Does muscle growth cause bone mineral accrual during the pubertal spurt, or are the two independently determined and merely correlated in time?",
+   "type": "contradiction",
+   "layer": "L9",
+   "why_it_matters": "Peak lean mass velocity precedes and statistically predicts peak bone mineral content velocity at every anatomical site while peak height velocity does not, which is read as support for the mechanostat. The authors of the primary explicitly state their data cannot exclude independent genetic determination of both. The two readings imply opposite intervention strategies for bone accrual in childhood.",
+   "what_is_known": "Peak lean mass velocity precedes peak bone mineral content velocity by 0.36 y (boys) and 0.51 y (girls) for the total body, 0.63 and 0.71 y in the arms, and 0.48 and 0.22 y in the legs; peak lean mass velocity explains 41-61% of the variance in regional peak bone mineral content velocity while peak height velocity and sex explain none independently (rauch2004). The lag differs three-fold between the arms of boys and the legs of girls, which a single systemic driver does not predict.",
+   "what_is_missing": "Any intervention that changes muscle mass without changing hormonal status during growth and measures bone accrual, and any genetically informed decomposition (twin or polygenic score) of the lean mass to bone mineral relationship in growing children.",
+   "nearest_evidence": [
+    "rauch2004"
+   ],
+   "discriminating_experiment": "Model system: a unilateral loading paradigm in growing adolescents - for example the dominant versus non-dominant arm in racquet sport players, who differ in muscle mass within the same endocrine environment. Readout: side-to-side difference in lean mass velocity and in bone mineral content velocity measured longitudinally through the spurt. Expected result if muscle causes bone: the within-person side difference in lean mass velocity predicts the side difference in bone mineral velocity with the same lag as the between-person relationship. Expected result if both are independently determined: side differences in lean mass appear without a corresponding lagged bone response beyond the known direct loading effect on cortical geometry.",
+   "tractability": 4
+  }
+ ],
+ "index": {
+  "nodes_with_contradictions": 57,
+  "contradiction_type_gaps": 18,
+  "disputed_parameters": 5
+ }
+}

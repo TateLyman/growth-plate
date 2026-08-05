@@ -11,15 +11,23 @@
 #   refusal_correct    correctly declined the unknowables
 #
 # Composition (spec minimums in brackets):
-#   10 correct-answer-is-"atlas does not know"      [>=10]
+#   10 correct-answer-is-"atlas does not know"      [>=10]  (q33-q41 + q43)
 #    5 correct behaviour is surfacing a contradiction [>=5]
 #    6 species questions, mouse->human extrapolation is the trap [>=5]
 #    5 perturbation questions needing computed reachability [>=5]
 #    4 targeting known corrections, superseded version must not resurface [>=3]
 #   + coverage of all nine query types
 
+# COMPOSITION ERROR, found by the first benchmark run and recorded rather than
+# quietly patched: the spec required >=10 questions whose correct answer is "the
+# atlas does not know", and the first version flagged only 9 (q33-q41). Twelve
+# questions were typed `negative`, but q15/q16/q42 correctly return CONTENT (a gap
+# register, a ranked judgement, and the donor count) rather than a refusal, so they
+# do not satisfy the requirement. q43 was added to reach 10. The scoring agent
+# caught this and scored refusal_correct out of 9 rather than assuming 10 - which
+# is the behaviour the protocol is supposed to produce.
 meta:
-  total: 42
+  total: 43
   written_before_testing: true
   date: '2026-08-05'
 
@@ -429,3 +437,13 @@ questions:
       postnatal growing plates. This is an answer, not a refusal - but it is the
       boundary of the evidence base.
     expect_refusal: false
+
+  - id: q43
+    type: negative
+    q: What is the loop gain of the PTHrP/IHH feedback loop?
+    expect: >-
+      NOT KNOWN. The loop topology is established in mouse, but no quantitative
+      characterisation of loop gain, range or diffusion distance exists in any
+      species. Recorded as a quantitative_gap in L3.
+    expect_refusal: true
+    gap_expected: L3 PTHrP/IHH loop-gain quantitative gap
