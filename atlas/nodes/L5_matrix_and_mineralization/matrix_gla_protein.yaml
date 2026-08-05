@@ -1,9 +1,67 @@
 id: matrix_gla_protein
-name: Matrix Gla protein
-type: protein
-layer: L5
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Matrix Gla protein (MGP)
 aliases:
 - MGP
+- Keutel syndrome gene
+type: protein
+layer: L5
+stub: false
+summary: 'MGP is a small vitamin-K-dependent, gamma-carboxyglutamate-containing matrix protein made by
+  chondrocytes and vascular smooth muscle cells whose function is to keep soft tissue and non-hypertrophic
+  cartilage unmineralized. Mgp-null mice develop to term and then die within about two months from arterial
+  rupture caused by spontaneous arterial calcification, and - the point for this layer - they inappropriately
+  calcify their growth plate cartilage, which leads to short stature, osteopenia and fractures. This is
+  the cleanest demonstration in the literature that cartilage mineralization is actively suppressed rather
+  than passively absent: withdraw one inhibitor and the proliferative cartilage mineralizes even though
+  nothing about the mineral supply has changed. The gamma-carboxylation is functionally required, which
+  is why warfarin causes cartilage and arterial calcification in rats and why the undercarboxylated form
+  is used as a circulating biomarker. In humans, MGP loss of function causes Keutel syndrome with abnormal
+  cartilage calcification. Ex vivo, MGP is one of the genes expressed more highly by the calcification-suppressing
+  superficial cartilage layer in bovine osteochondral explants.'
+quantitative:
+- parameter: Survival of Mgp-/- mice
+  value: <2
+  unit: months
+  conditions: death from arterial rupture after arterial calcification
+  species: mouse
+  source_ref: luo1997
+  uncertainty: not reported
+localization:
+- 'mouse growth plate: MGP expressed by chondrocytes; its loss causes proliferative-zone cartilage calcification
+  (luo1997)'
+- 'bovine superficial cartilage layer: MGP expression higher in the calcification-suppressing layer (xu2026)'
+- 'human growth plate zonal MGP: unconfirmed in this sweep'
+human_evidence: indirect
+human_evidence_note: Human MGP loss of function causes Keutel syndrome with abnormal cartilage calcification,
+  but no quantitative human growth plate data were located.
+species_basis:
+- mouse
+- bovine
+- human
+translation_risk: moderate
+translation_risk_reason: The mouse null phenotype is dramatic and the human syndrome is qualitatively
+  concordant, but no human growth plate measurement supports it.
+confidence: B
+key_refs:
+- ref_id: luo1997
+  pmid: '9052783'
+  first_author: Luo G
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: Mgp-/- mice calcify their growth plate cartilage and arteries and die within two months,
+    with short stature and osteopenia
+- ref_id: speer2002
+  pmid: '12391016'
+  first_author: Speer MY
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: Osteopontin deletion worsens the calcification of Mgp-/- mice, showing the inhibitors
+    are additive
+- ref_id: xu2026
+  pmid: '41624248'
+  first_author: Xu J
+  year: 2026
+  type: primary
+  one_line_finding: MGP is among the genes upregulated in the cartilage layer that suppresses calcification
+    of the layer beneath it
+last_verified: '2026-08-05'

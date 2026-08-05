@@ -38,38 +38,38 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 ## Coverage dashboard
 
 <!-- DASHBOARD:BEGIN -->
-**Totals** — 648 nodes (323 researched, 325 stubs) ·
-199 edges · 55 gaps (34 search logs) · 640 references
+**Totals** — 652 nodes (389 researched, 263 stubs) ·
+415 edges · 109 gaps (48 search logs) · 666 references
 
 ```
-nodes  ██████████░░░░░░░░░░ 648/1200 (54%)
-edges  █░░░░░░░░░░░░░░░░░░░ 199/2500 (7%)
-gaps   ███████░░░░░░░░░░░░░ 55/150 (36%)
+nodes  ██████████░░░░░░░░░░ 652/1200 (54%)
+edges  ███░░░░░░░░░░░░░░░░░ 415/2500 (16%)
+gaps   ██████████████░░░░░░ 109/150 (72%)
 ```
 
 | Layer | Name | Nodes | Researched | Edges out | Gaps | Quota | Doc | Fig |
 |---|---|---:|---:|---:|---:|:--:|:--:|:--:|
 | L0 | developmental_origin | 61 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L1 | growth_plate_architecture | 48 | 48 | 44 | 14 | ✅ | — | — |
+| L1 | growth_plate_architecture | 48 | 48 | 45 | 14 | ✅ | — | — |
 | L2 | stem_and_progenitor_biology | 35 | 35 | 42 | 11 | ✅ | ✅ | — |
-| L3 | signaling_networks | 88 | 87 | 73 | 11 | ✅ | — | — |
-| L4 | endocrine_and_systemic | 69 | 50 | 6 | 0 | 0/8·0/3 | — | — |
-| L5 | matrix_and_mineralization | 40 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L6 | mechanobiology | 30 | 8 | 0 | 0 | 0/8·0/3 | — | — |
-| L7 | fusion_and_cessation | 34 | 34 | 32 | 13 | ✅ | — | — |
-| L8 | genetics_and_heritability | 36 | 3 | 0 | 2 | 2/8·2/3 | — | — |
+| L3 | signaling_networks | 88 | 87 | 222 | 26 | ✅ | — | — |
+| L4 | endocrine_and_systemic | 72 | 72 | 23 | 0 | 0/8·0/3 | — | — |
+| L5 | matrix_and_mineralization | 40 | 21 | 8 | 0 | 0/8·0/3 | — | — |
+| L6 | mechanobiology | 31 | 31 | 0 | 14 | ✅ | — | — |
+| L7 | fusion_and_cessation | 34 | 34 | 33 | 13 | ✅ | — | — |
+| L8 | genetics_and_heritability | 36 | 3 | 3 | 2 | 2/8·2/3 | — | — |
 | L9 | whole_organism_growth | 40 | 0 | 0 | 0 | 0/8·0/3 | — | — |
 | L10 | environment_and_population | 34 | 0 | 0 | 0 | 0/8·0/3 | — | — |
-| L11 | pathology_as_natural_experiment | 56 | 56 | 2 | 0 | 0/8·0/3 | — | — |
-| L12 | pharmacology_as_mechanistic_probe | 36 | 1 | 0 | 2 | 2/8·2/3 | — | — |
+| L11 | pathology_as_natural_experiment | 56 | 56 | 38 | 25 | ✅ | — | — |
+| L12 | pharmacology_as_mechanistic_probe | 36 | 1 | 1 | 2 | 2/8·2/3 | — | — |
 | L13 | methods_and_data | 41 | 1 | 0 | 2 | 2/8·2/3 | — | — |
-| | **total** | **648** | **323** | **199** | **55** | | | |
+| | **total** | **652** | **389** | **415** | **109** | | | |
 
-**Confidence distribution** (researched nodes): **A** 91 · **B** 66 · **C** 114 · **D** 43 · **E** 8 · **X** 1
+**Confidence distribution** (researched nodes): **A** 122 · **B** 82 · **C** 124 · **D** 50 · **E** 10 · **X** 1
 
-**Gap types**: `contradiction` 6 · `known_unknown` 6 · `method_blocked` 3 · `quantitative_gap` 16 · `search_established` 16 · `species_gap` 8
+**Gap types**: `contradiction` 9 · `known_unknown` 21 · `method_blocked` 5 · `quantitative_gap` 32 · `scale_gap` 2 · `search_established` 30 · `species_gap` 10
 
-**Quantitative**: 619 values on nodes · 16 rows in `quant/parameters.csv`
+**Quantitative**: 772 values on nodes · 16 rows in `quant/parameters.csv`
 
 **Reference verification** (`tools/verify_refs.py`): 1 verified · 0 mismatched · 0 unresolved · 0 manual
 

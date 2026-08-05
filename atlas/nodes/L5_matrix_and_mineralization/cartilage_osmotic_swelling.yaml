@@ -1,7 +1,89 @@
 id: cartilage_osmotic_swelling
 name: Cartilage osmotic swelling pressure
+aliases:
+- Donnan osmotic pressure
+- swelling pressure
 type: process
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The compressive stiffness of cartilage is largely osmotic. Aggrecan''s sulphate and carboxylate
+  groups are immobilised in the collagen network at a fixed charge density of order 0.2-0.3 mol/L, counterions
+  accumulate to preserve electroneutrality, and the resulting Donnan imbalance draws water in until the
+  collagen network''s tension balances it. The size of that pressure has been measured directly rather
+  than inferred: confined compression stress-relaxation of immature bovine (n=18) and mature human (n=6)
+  cartilage in baths of varying osmolarity shows that the real swelling pressure is only about ONE THIRD
+  of the ideal Donnan prediction, i.e. the tissue is markedly non-ideal, and that material properties
+  themselves are salt-concentration dependent: the aggregate modulus rises roughly threefold as the bath
+  goes from hypertonic 2 M to hypotonic 0.001 M NaCl (bovine 0.420 +/- 0.109 to 1.266 +/- 0.438 MPa; human
+  0.499 +/- 0.208 to 1.597 +/- 0.455 MPa). Donnan osmotic and Poisson-Boltzmann electrostatic interactions
+  coexist in the same tissue, which is why single-parameter Donnan models overestimate. All of these measurements
+  are articular cartilage. No equivalent direct swelling-pressure measurement exists for growth plate,
+  although epiphyseal cartilage fixed charge density has been measured by sodium NMR and lies in the same
+  range.'
+quantitative:
+- parameter: Measured cartilage osmotic swelling pressure relative to ideal Donnan prediction
+  value: ~0.33
+  unit: fold
+  conditions: confined compression stress relaxation, direct in situ measurement, varying bath osmolarity
+  species: multiple
+  source_ref: zimmerman2021
+  uncertainty: 18 immature bovine and 6 mature human samples
+- parameter: Aggregate modulus HA, immature bovine cartilage, hypertonic 2 M NaCl
+  value: '0.420'
+  unit: MPa
+  conditions: triphasic fit in FEBio, confined compression
+  species: bovine
+  source_ref: zimmerman2021
+  uncertainty: SD 0.109, n=18
+- parameter: Aggregate modulus HA, immature bovine cartilage, hypotonic 0.001 M NaCl
+  value: '1.266'
+  unit: MPa
+  conditions: same specimens
+  species: bovine
+  source_ref: zimmerman2021
+  uncertainty: SD 0.438
+- parameter: Aggregate modulus HA, mature human cartilage, hypertonic 2 M NaCl
+  value: '0.499'
+  unit: MPa
+  conditions: confined compression, triphasic fit
+  species: human
+  source_ref: zimmerman2021
+  uncertainty: SD 0.208, n=6
+- parameter: Aggregate modulus HA, mature human cartilage, hypotonic 0.001 M NaCl
+  value: '1.597'
+  unit: MPa
+  conditions: same specimens
+  species: human
+  source_ref: zimmerman2021
+  uncertainty: SD 0.455
+localization:
+- 'articular cartilage: direct measurement (zimmerman2021)'
+- 'growth plate: swelling pressure never measured directly'
+human_evidence: direct
+human_evidence_note: Mature human articular cartilage was measured directly alongside bovine tissue in
+  the same apparatus; growth plate was not.
+species_basis:
+- bovine
+- human
+translation_risk: moderate
+translation_risk_reason: Human articular cartilage behaves like bovine here, but growth plate matrix has
+  different aggrecan and collagen composition, so extrapolating the number to the physis is not justified.
+confidence: B
+key_refs:
+- ref_id: zimmerman2021
+  pmid: '33210125'
+  first_author: Zimmerman BK
+  year: 2021
+  type: primary
+  one_line_finding: Direct in situ cartilage osmotic pressure is ~1/3 of the ideal Donnan prediction;
+    aggregate modulus rises threefold from 2 M to 0.001 M NaCl in both bovine and human cartilage
+- ref_id: lesperance1992
+  pmid: '1309384'
+  first_author: Lesperance LM
+  year: 1992
+  type: primary
+  one_line_finding: Sodium NMR gives FCD -0.28 +/- 0.03 M in calf articular cartilage and -0.19 to -0.35
+    M in calf epiphyseal cartilage
+open_questions:
+- g_l5matrix_004
 last_verified: '2026-08-05'

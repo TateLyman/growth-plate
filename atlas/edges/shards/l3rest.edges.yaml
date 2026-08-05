@@ -1,0 +1,1480 @@
+edges:
+- edge_id: e00001
+  source: bmp2_ligand
+  target: bmp_signaling_growth_plate
+  relation: activates
+  sign: +
+  context: mouse PHZ/HZ, Col2-Cre conditional deletion
+  evidence_tier: T1
+  refs:
+  - shu2011
+  - garrison2017
+  confidence: C
+  notes: Bmp2 mRNA peaks in HZ; cartilage-specific Bmp2 loss reduces proliferation and maturation, Bmp4 loss does
+    not.
+- edge_id: e00002
+  source: bmp6_ligand
+  target: bmp_signaling_growth_plate
+  relation: activates
+  sign: +
+  context: mouse HZ, germline null
+  evidence_tier: T1
+  refs:
+  - perry2008
+  - garrison2017
+  confidence: D
+- edge_id: e00003
+  source: bmp7_ligand
+  target: bmp_signaling_growth_plate
+  relation: activates
+  sign: +
+  context: mouse perichondrium, limb mesenchyme
+  evidence_tier: T1
+  refs:
+  - bandyopadhyay2006
+  confidence: C
+  notes: Individually dispensable for limb skeletogenesis.
+- edge_id: e00004
+  source: gdf5_protein
+  target: bmp_signaling_growth_plate
+  relation: activates
+  sign: +
+  context: mouse joint interzone and adjacent cartilage
+  evidence_tier: T1
+  refs:
+  - storm1994
+  - guo2009
+  confidence: C
+- edge_id: e00005
+  source: bmp_signaling_growth_plate
+  target: smad1_5_8
+  relation: phosphorylates
+  sign: +
+  context: mouse chondrocytes, BMPR1A/BMPR1B-dependent
+  evidence_tier: T1
+  refs:
+  - yoon2005
+  - retting2009
+  confidence: C
+- edge_id: e00006
+  source: smad1_5_8
+  target: chondrocyte_hypertrophy
+  relation: required_for
+  sign: +
+  context: mouse growth plate, embryonic and postnatal, both sexes
+  evidence_tier: T1
+  refs:
+  - retting2009
+  confidence: C
+  notes: Smad1/Smad5 double conditional null gives severe chondrodysplasia with impaired hypertrophy.
+- edge_id: e00007
+  source: smad1_5_8
+  target: chondrocyte_proliferation_rate
+  relation: activates
+  sign: +
+  context: mouse PZ
+  evidence_tier: T1
+  refs:
+  - retting2009
+  - garrison2017
+  confidence: C
+- edge_id: e00008
+  source: noggin_antagonist
+  target: bmp_signaling_growth_plate
+  relation: inhibits
+  sign: '-'
+  context: mouse perichondrium and interzone; human NOG haploinsufficiency
+  evidence_tier: T1
+  refs:
+  - brunet1998
+  - gong1999
+  confidence: A
+- edge_id: e00009
+  source: noggin_antagonist
+  target: bmp2_ligand
+  relation: binds
+  sign: '-'
+  context: extracellular, mouse and human
+  evidence_tier: T1
+  refs:
+  - brunet1998
+  confidence: C
+- edge_id: e00010
+  source: chordin_antagonist
+  target: bmp_signaling_growth_plate
+  relation: inhibits
+  sign: '-'
+  context: mouse craniofacial and axial mesenchyme; physeal role unconfirmed
+  evidence_tier: T1
+  refs:
+  - stottmann2001
+  confidence: D
+- edge_id: e00011
+  source: noggin_antagonist
+  target: interzone_formation
+  relation: required_for
+  sign: +
+  context: mouse limb joints, E12.5-E14.5
+  evidence_tier: T1
+  refs:
+  - brunet1998
+  - gong1999
+  confidence: A
+  notes: Nog-null mice fail to form joints; human NOG haploinsufficiency causes symphalangism.
+- edge_id: e00012
+  source: gdf5_protein
+  target: interzone_formation
+  relation: required_for
+  sign: +
+  context: mouse limb interzone; human GDF5/CDMP1 mutation
+  evidence_tier: T1
+  refs:
+  - storm1994
+  - thomas1996
+  confidence: A
+- edge_id: e00013
+  source: gdf5_protein
+  target: gdf5_height_locus
+  relation: correlates_with
+  sign: +
+  magnitude: approximately 0.4 cm per allele (value_unverified)
+  context: human, population cohorts of European ancestry
+  evidence_tier: T1
+  refs:
+  - sanna2008
+  confidence: B
+- edge_id: e00014
+  source: bmp_signaling_growth_plate
+  target: ihh_protein
+  relation: activates
+  sign: +
+  context: mouse limb explant, BMP2 bead implantation
+  evidence_tier: T1
+  refs:
+  - minina2001
+  confidence: C
+- edge_id: e00015
+  source: ihh_protein
+  target: bmp2_ligand
+  relation: activates
+  sign: +
+  context: mouse perichondrium, limb explant
+  evidence_tier: T1
+  refs:
+  - minina2001
+  confidence: C
+- edge_id: e00016
+  source: bmp_signaling_growth_plate
+  target: ihh_bmp_crosstalk
+  relation: required_for
+  sign: +
+  context: mouse limb explant
+  evidence_tier: T1
+  refs:
+  - minina2001
+  - minina2002
+  confidence: C
+- edge_id: e00017
+  source: ihh_protein
+  target: ihh_bmp_crosstalk
+  relation: required_for
+  sign: +
+  context: mouse limb explant
+  evidence_tier: T1
+  refs:
+  - minina2001
+  - stjacques1999
+  confidence: C
+- edge_id: e00018
+  source: bmp_signaling_growth_plate
+  target: chondrocyte_proliferation_rate
+  relation: activates
+  sign: +
+  context: mouse PZ, limb explant; Ihh-independent component demonstrated
+  evidence_tier: T1
+  refs:
+  - minina2001
+  confidence: C
+- edge_id: e00019
+  source: fgfr3_receptor
+  target: bmp_signaling_growth_plate
+  relation: inhibits
+  sign: '-'
+  context: mouse limb explant, FGF versus BMP bead antagonism
+  evidence_tier: T1
+  refs:
+  - minina2002
+  confidence: C
+- edge_id: e00020
+  source: smad1_5_8
+  target: collagen_type_x
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes, Col10a1-luciferase; Smad1 with Runx2 and MEF2
+  evidence_tier: T1
+  refs:
+  - kozhemyakina2009
+  confidence: D
+- edge_id: e00021
+  source: tgfbr2_receptor
+  target: smad2_3
+  relation: phosphorylates
+  sign: +
+  context: mouse cartilage, via TGFBR1
+  evidence_tier: T1
+  refs:
+  - serra1997
+  - yang2001
+  confidence: C
+- edge_id: e00022
+  source: smad2_3
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate, Smad3 germline null
+  evidence_tier: T1
+  refs:
+  - yang2001
+  confidence: C
+- edge_id: e00023
+  source: tgfb_signaling_chondrocyte
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate and articular cartilage
+  evidence_tier: T1
+  refs:
+  - serra1997
+  - yang2001
+  confidence: B
+- edge_id: e00024
+  source: latent_tgfb_matrix_store
+  target: tgfb_signaling_chondrocyte
+  relation: required_for
+  sign: +
+  context: human, inferred from LTBP3 and TGFB1 germline phenotypes
+  evidence_tier: T1
+  refs:
+  - huckert2015
+  - kinoshita2000
+  confidence: C
+  notes: Human bidirectional dose evidence; the matrix concentration itself is unmeasured (g_l3rest_004).
+- edge_id: e00025
+  source: tgfbr2_receptor
+  target: loeys_dietz_syndrome
+  relation: correlates_with
+  sign: +
+  context: human germline heterozygous missense variants
+  evidence_tier: T1
+  refs:
+  - serra1997
+  confidence: E
+  notes: Association is clinical-genetic; the mouse receptor experiment is cited as the mechanistic anchor, not as
+    human evidence.
+- edge_id: e00026
+  source: wnt_canonical_chondrocyte
+  target: beta_catenin_ctnnb1
+  relation: activates
+  sign: +
+  context: mouse growth plate, embryonic and postnatal, both sexes
+  evidence_tier: T1
+  refs:
+  - akiyama2004
+  - dao2012
+  confidence: C
+- edge_id: e00027
+  source: gsk3b_kinase
+  target: beta_catenin_ctnnb1
+  relation: degrades
+  sign: '-'
+  context: human chondrocytes in vitro; LiCl inhibition raises beta-catenin
+  evidence_tier: T1
+  refs:
+  - guidotti2015
+  - akiyama2004
+  confidence: D
+- edge_id: e00028
+  source: lrp5_coreceptor
+  target: wnt_canonical_chondrocyte
+  relation: required_for
+  sign: +
+  context: mouse embryo, redundant with Lrp6; human LRP5 allelic series
+  evidence_tier: T1
+  refs:
+  - joeng2011
+  - gong2001
+  - boyden2002
+  confidence: B
+- edge_id: e00029
+  source: lrp6_coreceptor
+  target: wnt_canonical_chondrocyte
+  relation: required_for
+  sign: +
+  context: mouse embryonic skeleton, dominant of the two paralogues
+  evidence_tier: T1
+  refs:
+  - joeng2011
+  confidence: C
+- edge_id: e00030
+  source: sclerostin_sost
+  target: lrp5_coreceptor
+  relation: inhibits
+  sign: '-'
+  context: human osteocyte-derived; growth plate action unconfirmed
+  evidence_tier: T1
+  refs:
+  - poole2005
+  - balemans2001
+  - boyden2002
+  confidence: B
+  notes: Whether sclerostin reaches the growth plate chondrocyte is open (g_l3rest_007).
+- edge_id: e00031
+  source: dkk1_antagonist
+  target: lrp5_coreceptor
+  relation: inhibits
+  sign: '-'
+  context: human LRP5 G171V resists DKK1 binding
+  evidence_tier: T1
+  refs:
+  - boyden2002
+  - li2006
+  confidence: B
+- edge_id: e00032
+  source: dkk1_antagonist
+  target: lrp6_coreceptor
+  relation: inhibits
+  sign: '-'
+  context: mouse bone, transgenic overexpression and heterozygous null
+  evidence_tier: T1
+  refs:
+  - li2006
+  confidence: C
+- edge_id: e00033
+  source: beta_catenin_ctnnb1
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: biphasic
+  context: mouse growth plate; loss delays hypertrophy, gain accelerates it, excess blocks chondrogenesis
+  evidence_tier: T1
+  refs:
+  - akiyama2004
+  - chen2008
+  - dao2012
+  - yuasa2009
+  confidence: C
+  notes: Dose-dependent with opposite phenotypes at the extremes; no human dose-response exists (g_l3rest_006).
+- edge_id: e00034
+  source: wnt_canonical_chondrocyte
+  target: pth1r_receptor
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate; Wnt lowers PTHrP signalling activity without changing PTHrP expression
+  evidence_tier: T1
+  refs:
+  - guo2009
+  confidence: C
+- edge_id: e00035
+  source: sox9_tf
+  target: beta_catenin_ctnnb1
+  relation: degrades
+  sign: '-'
+  context: mouse chondrocytes and Xenopus assay; SOX9 binds Armadillo repeats and promotes degradation
+  evidence_tier: T1
+  refs:
+  - akiyama2004
+  - topol2009
+  confidence: C
+- edge_id: e00036
+  source: beta_catenin_ctnnb1
+  target: sox9_tf
+  relation: inhibits
+  sign: '-'
+  context: mouse chondrocytes; stabilised beta-catenin phenocopies Sox9 loss
+  evidence_tier: T1
+  refs:
+  - akiyama2004
+  confidence: C
+- edge_id: e00037
+  source: beta_catenin_ctnnb1
+  target: mmp13_protease
+  relation: transcribes
+  sign: +
+  context: mouse HZ, Col10a1-Cre conditional deletion
+  evidence_tier: T1
+  refs:
+  - golovchenko2013
+  confidence: D
+- edge_id: e00038
+  source: beta_catenin_ctnnb1
+  target: vegfa_growth_plate
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes; requires cooperation with BMP2 signalling
+  evidence_tier: T1
+  refs:
+  - chen2008
+  - golovchenko2013
+  confidence: C
+- edge_id: e00039
+  source: beta_catenin_ctnnb1
+  target: bmp2_ligand
+  relation: transcribes
+  sign: +
+  context: mouse cartilage, inducible gain of function
+  evidence_tier: T1
+  refs:
+  - dao2012
+  confidence: C
+- edge_id: e00040
+  source: beta_catenin_ctnnb1
+  target: runx2_tf
+  relation: activates
+  sign: +
+  context: mouse growth plate chondrocytes
+  evidence_tier: T1
+  refs:
+  - dao2012
+  - dy2012
+  confidence: C
+- edge_id: e00041
+  source: beta_catenin_ctnnb1
+  target: epiphyseal_fusion
+  relation: activates
+  sign: +
+  context: mouse, transient activation in young adult cartilage causes premature plate closure
+  evidence_tier: T1
+  refs:
+  - yuasa2009
+  confidence: D
+  notes: Mice do not normally fuse, so this is a forced phenotype and its human relevance is unestablished.
+- edge_id: e00042
+  source: beta_catenin_ctnnb1
+  target: chondrocyte_to_osteoblast_transdifferentiation
+  relation: activates
+  sign: +
+  context: mouse hypertrophic chondrocytes
+  evidence_tier: T1
+  refs:
+  - dao2012
+  - dy2012
+  confidence: D
+- edge_id: e00043
+  source: sclerostin_sost
+  target: wnt_canonical_chondrocyte
+  relation: inhibits
+  sign: '-'
+  context: rabbit, rat and mini-pig articular cartilage, exogenous sclerostin hydrogel
+  evidence_tier: T1
+  refs:
+  - ruscitto2023
+  confidence: C
+  notes: Demonstrates chondrocyte responsiveness to sclerostin; not a growth plate experiment.
+- edge_id: e00044
+  source: wnt5a_ligand
+  target: wnt_noncanonical_pcp
+  relation: activates
+  sign: +
+  context: mouse limb mesenchyme, graded ligand
+  evidence_tier: T1
+  refs:
+  - gao2011
+  - li2009
+  confidence: C
+- edge_id: e00045
+  source: wnt5a_ligand
+  target: vangl2_pcp
+  relation: phosphorylates
+  sign: +
+  context: mouse limb, ROR2-dependent, graded with WNT5A concentration
+  evidence_tier: T1
+  refs:
+  - gao2011
+  confidence: C
+- edge_id: e00046
+  source: vangl2_pcp
+  target: wnt_noncanonical_pcp
+  relation: required_for
+  sign: +
+  context: mouse limb; Looptail allele is phosphorylation-deficient and dominant negative
+  evidence_tier: T1
+  refs:
+  - gao2011
+  confidence: C
+- edge_id: e00047
+  source: wnt_noncanonical_pcp
+  target: chondrocyte_column_formation
+  relation: required_for
+  sign: +
+  context: mouse PZ, explant live imaging
+  evidence_tier: T1
+  refs:
+  - li2009
+  confidence: C
+- edge_id: e00048
+  source: wnt_noncanonical_pcp
+  target: chondrocyte_rotation
+  relation: required_for
+  sign: +
+  context: mouse PZ, post-mitotic rotation
+  evidence_tier: T1
+  refs:
+  - li2009
+  confidence: C
+- edge_id: e00049
+  source: wnt5a_ligand
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  context: mouse; Wnt5a delays and Wnt5b promotes the transition
+  evidence_tier: T1
+  refs:
+  - yang2003
+  confidence: D
+  notes: Paralogue-specific and opposite in sign, so "non-canonical WNT" is not a usable single variable here.
+- edge_id: e00050
+  source: notch_signaling_chondrocyte
+  target: rbpj_tf
+  relation: activates
+  sign: +
+  context: mouse chondrocyte lineage, NICD-dependent
+  evidence_tier: T1
+  refs:
+  - mead2009
+  - kohn2015
+  confidence: C
+- edge_id: e00051
+  source: rbpj_tf
+  target: hes1_tf
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes
+  evidence_tier: T1
+  refs:
+  - hosaka2013
+  - rutkowski2016
+  confidence: C
+- edge_id: e00052
+  source: hes1_tf
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: +
+  context: mouse; HES1 and HES5 promote hypertrophy onset
+  evidence_tier: T1
+  refs:
+  - rutkowski2016
+  - hosaka2013
+  confidence: C
+- edge_id: e00053
+  source: hes1_tf
+  target: sox9_tf
+  relation: inhibits
+  sign: '-'
+  context: mouse chondrogenic cells; direct Sox9 regulation shown for HES5 rather than HES1
+  evidence_tier: T1
+  refs:
+  - rutkowski2016
+  confidence: D
+- edge_id: e00054
+  source: notch_signaling_chondrocyte
+  target: sox9_tf
+  relation: inhibits
+  sign: '-'
+  context: mouse limb mesenchyme; prolonged Notch suppresses Sox9, acute Notch induces it
+  evidence_tier: T1
+  refs:
+  - kohn2015
+  - mead2009
+  confidence: C
+  notes: Sign is duration-dependent; Kohn 2015 shows acute induction and sustained suppression.
+- edge_id: e00055
+  source: notch_signaling_chondrocyte
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  context: mouse cartilage precursors; Rbpj deletion increases proliferation
+  evidence_tier: T1
+  refs:
+  - mead2009
+  confidence: C
+- edge_id: e00056
+  source: rbpj_tf
+  target: endochondral_ossification
+  relation: required_for
+  sign: +
+  context: mouse, Sox9-Cre and Prx1-Cre conditional deletion
+  evidence_tier: T1
+  refs:
+  - hosaka2013
+  - kohn2015
+  - gao2022
+  confidence: C
+- edge_id: e00057
+  source: notch_signaling_chondrocyte
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  context: mouse, forced NICD expression in chondrocyte lineage
+  evidence_tier: T1
+  refs:
+  - mead2009
+  confidence: C
+  notes: Opposite in sign to the HES1 terminal-maturation edge; the two act at different steps.
+- edge_id: e00058
+  source: raptor_protein
+  target: mtorc1_chondrocyte
+  relation: required_for
+  sign: +
+  context: mouse limb cartilage, Prx1-Cre conditional deletion
+  evidence_tier: T1
+  refs:
+  - chen2014
+  confidence: C
+- edge_id: e00059
+  source: tsc1_tsc2
+  target: mtorc1_chondrocyte
+  relation: inhibits
+  sign: '-'
+  context: mouse resting and proliferating zone chondrocytes
+  evidence_tier: T1
+  refs:
+  - hsieh2021
+  confidence: C
+- edge_id: e00060
+  source: mtorc1_chondrocyte
+  target: hypertrophic_volume_increase
+  relation: activates
+  sign: +
+  context: mouse limb cartilage; effect is on cell size and matrix, not proliferation
+  evidence_tier: T1
+  refs:
+  - chen2014
+  confidence: C
+- edge_id: e00061
+  source: mtorc1_chondrocyte
+  target: autophagy_chondrocyte
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate maturing zone and chondrocytic cells
+  evidence_tier: T1
+  refs:
+  - srinivas2009
+  confidence: D
+- edge_id: e00062
+  source: mtorc1_chondrocyte
+  target: prehypertrophic_chondrocyte
+  relation: activates
+  sign: +
+  context: mouse synchondrosis; Tsc1 deletion confers prehypertrophic features on resting cells
+  evidence_tier: T1
+  refs:
+  - hsieh2021
+  confidence: C
+- edge_id: e00063
+  source: tsc1_tsc2
+  target: resting_zone
+  relation: required_for
+  sign: +
+  context: mouse cranial base synchondrosis; loss expands the resting zone
+  evidence_tier: T1
+  refs:
+  - hsieh2021
+  confidence: C
+- edge_id: e00064
+  source: amino_acid_sensing_chondrocyte
+  target: mtorc1_chondrocyte
+  relation: activates
+  sign: +
+  context: chondrocyte, extrapolated from canonical amino-acid sensing; not tested in growth plate
+  evidence_tier: T5
+  refs:
+  - chen2018
+  - stegen2020
+  confidence: speculative
+  gap_id: g_l3rest_010
+  notes: 'Placed as a hypothesis: no experiment links glutamine availability to chondrocyte mTORC1 activity in vivo.'
+- edge_id: e00065
+  source: sox9_tf
+  target: amino_acid_sensing_chondrocyte
+  relation: activates
+  sign: +
+  context: mouse chondrocytes; SOX9 raises glutamine consumption and GLS1
+  evidence_tier: T1
+  refs:
+  - stegen2020
+  confidence: C
+- edge_id: e00066
+  source: amino_acid_sensing_chondrocyte
+  target: sox9_tf
+  relation: required_for
+  sign: +
+  context: mouse chondrocytes; GLS1-derived acetyl-CoA sustains chondrogenic histone acetylation
+  evidence_tier: T1
+  refs:
+  - stegen2020
+  confidence: C
+  notes: Closes a transcription-metabolism feedforward loop with the preceding edge.
+- edge_id: e00067
+  source: autophagy_chondrocyte
+  target: hypertrophic_chondrocyte_survival
+  relation: required_for
+  sign: +
+  context: mouse Atg5/Atg7 conditional null; human growth plate tissue slices with autophagy inhibitors
+  evidence_tier: T1
+  refs:
+  - vuppalapati2015
+  - srinivas2009
+  confidence: B
+- edge_id: e00068
+  source: hif1a_chondrocyte
+  target: autophagy_chondrocyte
+  relation: activates
+  sign: +
+  context: mouse growth plate maturing zone
+  evidence_tier: T1
+  refs:
+  - srinivas2009
+  confidence: D
+- edge_id: e00069
+  source: hypoxic_gradient_signaling
+  target: hif1a_chondrocyte
+  relation: activates
+  sign: +
+  context: mouse growth plate interior; rat and rabbit direct oximetry
+  evidence_tier: T1
+  refs:
+  - schipani2001
+  - brighton1971
+  confidence: C
+- edge_id: e00070
+  source: oxygen_gradient_growth_plate
+  target: hypoxic_gradient_signaling
+  relation: correlates_with
+  sign: +
+  context: rat, rabbit, mouse; human gradient never measured
+  evidence_tier: T1
+  refs:
+  - brighton1971
+  - schipani2001
+  confidence: D
+  notes: The human oxygen gradient is assumed, not measured (g_l3rest_011).
+- edge_id: e00071
+  source: vhl_protein
+  target: hif1a_chondrocyte
+  relation: degrades
+  sign: '-'
+  context: mouse cartilage, Vhlh conditional deletion; Vhlh;Hif1a double null resembles Hif1a null
+  evidence_tier: T1
+  refs:
+  - pfander2004
+  confidence: C
+- edge_id: e00072
+  source: hif1a_chondrocyte
+  target: chondrocyte_apoptosis_hz
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate interior
+  evidence_tier: T1
+  refs:
+  - schipani2001
+  - zelzer2004
+  confidence: C
+- edge_id: e00073
+  source: hif1a_chondrocyte
+  target: vegfa_growth_plate
+  relation: transcribes
+  sign: +
+  context: mouse epiphyseal chondrocytes; a HIF1A-independent component also exists near dying cells
+  evidence_tier: T1
+  refs:
+  - schipani2001
+  - zelzer2004
+  confidence: C
+- edge_id: e00074
+  source: hif1a_chondrocyte
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate interior; loss raises BrdU incorporation and lowers p57
+  evidence_tier: T1
+  refs:
+  - schipani2001
+  confidence: C
+- edge_id: e00075
+  source: vegfa_growth_plate
+  target: vascular_invasion_poc
+  relation: required_for
+  sign: +
+  context: mouse, soluble receptor sequestration and Col2-Cre conditional deletion
+  evidence_tier: T1
+  refs:
+  - gerber1999
+  - zelzer2004
+  confidence: C
+- edge_id: e00076
+  source: vegfa_growth_plate
+  target: chondrocyte_apoptosis_hz
+  relation: inhibits
+  sign: '-'
+  context: mouse epiphyseal and joint chondrocytes, distant from vessels
+  evidence_tier: T1
+  refs:
+  - zelzer2004
+  confidence: C
+- edge_id: e00077
+  source: vegfa_growth_plate
+  target: hypertrophic_zone
+  relation: inhibits
+  sign: '-'
+  context: mouse; VEGF sequestration expands the hypertrophic zone reversibly
+  evidence_tier: T1
+  refs:
+  - gerber1999
+  confidence: C
+  notes: 'Sign refers to zone height: blocking VEGF enlarges HZ because terminal cells are not removed.'
+- edge_id: e00078
+  source: vegfa_growth_plate
+  target: type_h_vessel
+  relation: activates
+  sign: +
+  context: mouse metaphysis and perichondrium
+  evidence_tier: T1
+  refs:
+  - duan2015
+  - gerber1999
+  confidence: D
+- edge_id: e00079
+  source: hypoxic_gradient_signaling
+  target: nutrient_diffusion_growth_plate
+  relation: correlates_with
+  sign: +
+  context: avascular cartilage; diffusion distance sets both
+  evidence_tier: T5
+  refs:
+  - schipani2015
+  confidence: E
+- edge_id: e00080
+  source: sox9_tf
+  target: sox5_tf
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes, staged conditional inactivation
+  evidence_tier: T1
+  refs:
+  - akiyama2002
+  confidence: C
+- edge_id: e00081
+  source: sox9_tf
+  target: sox6_tf
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes, staged conditional inactivation
+  evidence_tier: T1
+  refs:
+  - akiyama2002
+  confidence: C
+- edge_id: e00082
+  source: sox9_tf
+  target: sox_trio
+  relation: required_for
+  sign: +
+  context: mouse cartilage
+  evidence_tier: T1
+  refs:
+  - akiyama2002
+  - smits2001
+  confidence: B
+- edge_id: e00083
+  source: sox5_tf
+  target: sox_trio
+  relation: required_for
+  sign: +
+  context: mouse cartilage; redundant with SOX6
+  evidence_tier: T1
+  refs:
+  - smits2001
+  confidence: C
+- edge_id: e00084
+  source: sox6_tf
+  target: sox_trio
+  relation: required_for
+  sign: +
+  context: mouse cartilage; redundant with SOX5
+  evidence_tier: T1
+  refs:
+  - smits2001
+  confidence: C
+- edge_id: e00085
+  source: sox_trio
+  target: collagen_type_ii
+  relation: transcribes
+  sign: +
+  context: mouse cartilage; matrix genes near-absent in Sox5;Sox6 double null
+  evidence_tier: T1
+  refs:
+  - smits2001
+  - bi1999
+  confidence: B
+- edge_id: e00086
+  source: sox_trio
+  target: aggrecan_acan
+  relation: transcribes
+  sign: +
+  context: mouse cartilage
+  evidence_tier: T1
+  refs:
+  - smits2001
+  confidence: C
+- edge_id: e00087
+  source: sox9_tf
+  target: chondrocyte_column_formation
+  relation: required_for
+  sign: +
+  context: mouse growth plate, doxycycline-inducible Sox9 deletion
+  evidence_tier: T1
+  refs:
+  - dy2012
+  confidence: C
+- edge_id: e00088
+  source: sox9_tf
+  target: runx2_tf
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate chondrocytes
+  evidence_tier: T1
+  refs:
+  - dy2012
+  confidence: C
+- edge_id: e00089
+  source: sox9_tf
+  target: chondrocyte_to_osteoblast_transdifferentiation
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate chondrocytes
+  evidence_tier: T1
+  refs:
+  - dy2012
+  confidence: C
+- edge_id: e00090
+  source: sox9_tf
+  target: sox9_chondrogenic_commitment
+  relation: required_for
+  sign: +
+  context: mouse condensation; human campomelic dysplasia haploinsufficiency
+  evidence_tier: T1
+  refs:
+  - bi1999
+  - foster1994
+  - wagner1994
+  confidence: A
+- edge_id: e00091
+  source: fgfr3_receptor
+  target: sox9_tf
+  relation: activates
+  sign: +
+  context: mouse and human achondroplasia models; activated FGFR3 prevents SOX9 downregulation
+  evidence_tier: T1
+  refs:
+  - zhou2015
+  confidence: C
+  notes: Contradicts the requirement direction in Dy 2012; logged as g_l3rest_012.
+- edge_id: e00092
+  source: runx2_tf
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: +
+  context: mouse; complete failure only in Runx2;Runx3 double null
+  evidence_tier: T1
+  refs:
+  - yoshida2004
+  - vega2004
+  confidence: B
+- edge_id: e00093
+  source: runx3_tf
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: +
+  context: mouse; redundant with RUNX2, dose-dependent
+  evidence_tier: T1
+  refs:
+  - yoshida2004
+  - soung2007
+  confidence: C
+- edge_id: e00094
+  source: runx2_tf
+  target: ihh_protein
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes; RUNX2 binds the Ihh promoter directly
+  evidence_tier: T1
+  refs:
+  - yoshida2004
+  confidence: C
+  notes: Closes a feedback loop from the hypertrophy licence back onto the IHH/PTHrP circuit.
+- edge_id: e00095
+  source: runx2_tf
+  target: collagen_type_x
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes, Col10a1 reporter
+  evidence_tier: T1
+  refs:
+  - kozhemyakina2009
+  - vega2004
+  confidence: C
+- edge_id: e00096
+  source: runx2_tf
+  target: mmp13_protease
+  relation: transcribes
+  sign: +
+  context: mouse hypertrophic chondrocytes
+  evidence_tier: T1
+  refs:
+  - yoshida2004
+  confidence: D
+- edge_id: e00097
+  source: runx2_tf
+  target: cleidocranial_dysplasia
+  relation: correlates_with
+  sign: +
+  context: human heterozygous RUNX2 loss of function
+  evidence_tier: T1
+  refs:
+  - mundlos1997
+  confidence: A
+- edge_id: e00098
+  source: hdac4_protein
+  target: runx2_tf
+  relation: inhibits
+  sign: '-'
+  context: mouse PHZ; HDAC4 binds and inhibits RUNX2
+  evidence_tier: T1
+  refs:
+  - vega2004
+  - nishimori2021
+  confidence: B
+- edge_id: e00099
+  source: hdac4_protein
+  target: mef2c_tf
+  relation: inhibits
+  sign: '-'
+  context: mouse chondrocytes; genetically titrated against MEF2C in vivo
+  evidence_tier: T1
+  refs:
+  - arnold2007
+  - kozhemyakina2009
+  - nishimori2019
+  confidence: B
+- edge_id: e00100
+  source: hdac4_protein
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  context: mouse PHZ; human HDAC4 haploinsufficiency causes brachydactyly type E
+  evidence_tier: T1
+  refs:
+  - vega2004
+  - le2019
+  - takeyari2023
+  confidence: A
+- edge_id: e00101
+  source: mef2c_tf
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: +
+  context: mouse; both loss and superactivation shorten bone by opposite routes
+  evidence_tier: T1
+  refs:
+  - arnold2007
+  confidence: C
+- edge_id: e00102
+  source: mef2c_tf
+  target: runx2_tf
+  relation: activates
+  sign: +
+  context: mouse chondrocytes; MEF2 permits Runx2 mRNA expression
+  evidence_tier: T1
+  refs:
+  - nishimori2019
+  - nishimori2021
+  confidence: C
+- edge_id: e00103
+  source: mef2c_tf
+  target: collagen_type_x
+  relation: transcribes
+  sign: +
+  context: mouse upper hypertrophic chondrocytes, with residual SOX9 protein
+  evidence_tier: T1
+  refs:
+  - dy2012
+  - kozhemyakina2009
+  confidence: C
+- edge_id: e00104
+  source: salt_inducible_kinase3
+  target: hdac4_protein
+  relation: phosphorylates
+  sign: '-'
+  context: mouse PHZ/HZ; phosphorylation at 14-3-3 sites retains HDAC4 in cytoplasm
+  evidence_tier: T1
+  refs:
+  - sasagawa2012
+  - nishimori2021
+  confidence: C
+  notes: Sign refers to HDAC4 repressor activity, which falls when SIK3 phosphorylates it.
+- edge_id: e00105
+  source: salt_inducible_kinase3
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: +
+  context: mouse; Sik3-null hypertrophy blocked to E18.5
+  evidence_tier: T1
+  refs:
+  - sasagawa2012
+  confidence: C
+- edge_id: e00106
+  source: salt_inducible_kinase3
+  target: epiphyseal_fusion
+  relation: activates
+  sign: +
+  context: mouse; chondrocyte SIK3 overexpression closes growth plates in adults
+  evidence_tier: T1
+  refs:
+  - sasagawa2012
+  confidence: D
+  notes: Mice do not normally fuse, so this is a gain-of-function phenotype without a human counterpart.
+- edge_id: e00107
+  source: pthrp_protein
+  target: salt_inducible_kinase3
+  relation: inhibits
+  sign: '-'
+  context: mouse growth plate; via cAMP/PKA phosphorylation of SIK3 PKA sites
+  evidence_tier: T1
+  refs:
+  - nishimori2021
+  confidence: C
+- edge_id: e00108
+  source: pth1r_receptor
+  target: hdac4_protein
+  relation: activates
+  sign: +
+  context: mouse chondrocytes; PTHrP/PKA drives HDAC4 dephosphorylation and nuclear entry
+  evidence_tier: T1
+  refs:
+  - kozhemyakina2009
+  - nishimori2019
+  confidence: C
+  notes: Also PP2A-dependent; okadaic acid reverses forskolin-induced nuclear translocation.
+- edge_id: e00109
+  source: pthrp_ihh_feedback_loop
+  target: hdac4_protein
+  relation: activates
+  sign: +
+  context: mouse PHZ
+  evidence_tier: T1
+  refs:
+  - nishimori2019
+  - nishimori2021
+  confidence: C
+- edge_id: e00110
+  source: pthrp_protein
+  target: zfp521_protein
+  relation: transcribes
+  sign: +
+  context: mouse prehypertrophic chondrocytes
+  evidence_tier: T1
+  refs:
+  - correa2010
+  confidence: C
+- edge_id: e00111
+  source: zfp521_protein
+  target: runx2_tf
+  relation: inhibits
+  sign: '-'
+  context: mouse chondrocytes; HDAC4-dependent antagonism
+  evidence_tier: T1
+  refs:
+  - correa2010
+  confidence: C
+- edge_id: e00112
+  source: zfp521_protein
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  context: mouse; Zfp521 deletion phenocopies PTHrP loss
+  evidence_tier: T1
+  refs:
+  - correa2010
+  confidence: C
+- edge_id: e00113
+  source: foxa_family_chondrocyte
+  target: collagen_type_x
+  relation: transcribes
+  sign: +
+  context: mouse chondrocytes; conserved FoxA sites in the Col10a1 enhancer
+  evidence_tier: T1
+  refs:
+  - ionescu2012
+  confidence: C
+- edge_id: e00114
+  source: foxa_family_chondrocyte
+  target: chondrocyte_hypertrophy
+  relation: required_for
+  sign: +
+  context: mouse; FoxA2;FoxA3 double mutants are postnatally dwarfed
+  evidence_tier: T1
+  refs:
+  - ionescu2012
+  confidence: C
+- edge_id: e00115
+  source: foxa_family_chondrocyte
+  target: mmp13_protease
+  relation: transcribes
+  sign: +
+  context: mouse growth plate
+  evidence_tier: T1
+  refs:
+  - ionescu2012
+  confidence: D
+- edge_id: e00116
+  source: ift88_protein
+  target: primary_cilium_chondrocyte
+  relation: required_for
+  sign: +
+  context: mouse limb mesenchyme, conditional deletion
+  evidence_tier: T1
+  refs:
+  - haycraft2007
+  confidence: C
+- edge_id: e00117
+  source: ift80_protein
+  target: primary_cilium_chondrocyte
+  relation: required_for
+  sign: +
+  context: mouse chondrocytes and stromal cells; human IFT80 ciliopathy
+  evidence_tier: T1
+  refs:
+  - wang2013
+  - beales2007
+  - yuan2015
+  confidence: B
+- edge_id: e00118
+  source: kif3a_protein
+  target: primary_cilium_chondrocyte
+  relation: required_for
+  sign: +
+  context: mouse cartilage, conditional deletion
+  evidence_tier: T1
+  refs:
+  - koyama2007
+  confidence: C
+- edge_id: e00119
+  source: primary_cilium_chondrocyte
+  target: smoothened
+  relation: required_for
+  sign: +
+  context: mouse chondrocytes; SMO must accumulate in the ciliary membrane
+  evidence_tier: T1
+  refs:
+  - haycraft2007
+  - dorn2012
+  confidence: B
+- edge_id: e00120
+  source: primary_cilium_chondrocyte
+  target: gli3_repressor
+  relation: required_for
+  sign: +
+  context: mouse; GLI3 processing depends on intraflagellar transport
+  evidence_tier: T1
+  refs:
+  - haycraft2007
+  - ruizperez2007
+  confidence: C
+  notes: Evc-null cilia process Gli3 normally, so EVC acts downstream of this step.
+- edge_id: e00121
+  source: primary_cilium_chondrocyte
+  target: ihh_protein
+  relation: required_for
+  sign: +
+  context: mouse growth plate; cilium loss abolishes Ihh target gene induction inside the plate
+  evidence_tier: T1
+  refs:
+  - haycraft2007
+  - koyama2007
+  confidence: C
+  notes: 'Directional caveat: Kif3a loss raises hedgehog signalling in the adjacent perichondrium while lowering it
+    in cartilage.'
+- edge_id: e00122
+  source: primary_cilium_chondrocyte
+  target: wnt_canonical_chondrocyte
+  relation: inhibits
+  sign: '-'
+  context: mouse chondrogenic cells; IFT80 silencing raises WNT activity
+  evidence_tier: T1
+  refs:
+  - wang2013
+  - yuan2015
+  confidence: D
+- edge_id: e00123
+  source: evc_evc2_complex
+  target: smoothened
+  relation: binds
+  sign: +
+  context: mouse and cultured cells; complex confined to the EvC zone at the ciliary base
+  evidence_tier: T1
+  refs:
+  - dorn2012
+  - ruizperez2007
+  confidence: B
+- edge_id: e00124
+  source: evc_evc2_complex
+  target: gli1_tf
+  relation: activates
+  sign: +
+  context: mouse growth plate; Evc-null plates have normal Ihh but markedly reduced Gli1
+  evidence_tier: T1
+  refs:
+  - ruizperez2007
+  - dorn2012
+  confidence: B
+- edge_id: e00125
+  source: evc_evc2_complex
+  target: patched1
+  relation: transcribes
+  sign: +
+  context: mouse growth plate; Ptch1 induction lost in Evc-null cartilage
+  evidence_tier: T1
+  refs:
+  - ruizperez2007
+  confidence: B
+- edge_id: e00126
+  source: evc_evc2_complex
+  target: sufu_protein
+  relation: inhibits
+  sign: '-'
+  context: cultured cells; EVC2 acts between SMO and the PKA/SUFU step
+  evidence_tier: T1
+  refs:
+  - dorn2012
+  confidence: C
+- edge_id: e00127
+  source: evc_evc2_complex
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  context: mouse; Evc-null growth plates show advanced chondrocyte maturation
+  evidence_tier: T1
+  refs:
+  - ruizperez2007
+  confidence: C
+- edge_id: e00128
+  source: kif3a_protein
+  target: growth_plate
+  relation: required_for
+  sign: +
+  context: mouse cranial base synchondrosis; zonal organisation lost by P7
+  evidence_tier: T1
+  refs:
+  - koyama2007
+  confidence: C
+- edge_id: e00129
+  source: ift80_protein
+  target: chondrocyte_hypertrophy
+  relation: required_for
+  sign: +
+  context: mouse, inducible Col2a1-CreER deletion
+  evidence_tier: T1
+  refs:
+  - yuan2015
+  confidence: C
+- edge_id: e00130
+  source: ift80_protein
+  target: articular_cartilage
+  relation: inhibits
+  sign: '-'
+  context: mouse; postnatal Ift80 deletion thickens articular cartilage while shortening the growth plate
+  evidence_tier: T1
+  refs:
+  - yuan2015
+  confidence: D
+- edge_id: e00131
+  source: primary_cilium_chondrocyte
+  target: primary_cilium_mechanosensing
+  relation: hypothesized_link
+  sign: unknown
+  context: human growth plate; ciliary prevalence and length by zone unmeasured
+  evidence_tier: T5
+  refs:
+  - koyama2007
+  - wang2013
+  confidence: speculative
+  gap_id: g_l3rest_014
+  notes: Whether the Hedgehog-transducing cilium and the mechanosensing cilium are the same organelle population in
+    human physis is untested.
+- edge_id: e00132
+  source: sox9_tf
+  target: pathway_convergence_node
+  relation: required_for
+  sign: +
+  context: mouse; receives Notch, WNT, Hedgehog/cilium and metabolic inputs
+  evidence_tier: T1
+  refs:
+  - kohn2015
+  - akiyama2004
+  - wang2013
+  - stegen2020
+  confidence: E
+  notes: 'Membership edge: SOX9 is one of the four documented convergence points.'
+- edge_id: e00133
+  source: runx2_tf
+  target: pathway_convergence_node
+  relation: required_for
+  sign: +
+  context: mouse; restrained by HDAC4, ZFP521 and SOX9, promoted by beta-catenin and MEF2C
+  evidence_tier: T1
+  refs:
+  - vega2004
+  - correa2010
+  - dy2012
+  - dao2012
+  confidence: E
+  notes: Membership edge.
+- edge_id: e00134
+  source: beta_catenin_ctnnb1
+  target: pathway_convergence_node
+  relation: required_for
+  sign: +
+  context: mouse; integrates WNT, SOX9 antagonism, PTHrP and ciliary Hedgehog tone
+  evidence_tier: T1
+  refs:
+  - akiyama2004
+  - guo2009
+  - wang2013
+  confidence: E
+  notes: Membership edge.
+- edge_id: e00135
+  source: hdac4_protein
+  target: pathway_convergence_node
+  relation: required_for
+  sign: +
+  context: mouse; subcellular localisation integrates PTHrP-PKA-SIK3, PP2A and MEF2C/RUNX2 availability
+  evidence_tier: T1
+  refs:
+  - nishimori2021
+  - kozhemyakina2009
+  - arnold2007
+  confidence: E
+  notes: Membership edge.
+- edge_id: e00136
+  source: pathway_convergence_node
+  target: chondrocyte_hypertrophy
+  relation: hypothesized_link
+  sign: unknown
+  context: human growth plate; joint integration never measured in one tissue
+  evidence_tier: T5
+  refs:
+  - kohn2015
+  - dy2012
+  - nishimori2021
+  confidence: speculative
+  gap_id: g_l3rest_015
+  notes: Convergence is assembled from pairwise mouse experiments; single-cell multiplexed measurement is required
+    to test it.

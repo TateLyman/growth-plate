@@ -1,7 +1,121 @@
 id: diurnal_stature_variation
 name: Diurnal stature variation
 type: phenotype
+aliases:
+- circadian variation in stature
+- spinal shrinkage
+- diurnal height loss
+summary: 'Human stature falls measurably over a waking day and recovers overnight, and the effect is large
+  enough to corrupt growth monitoring. In eight young adults measured to 1 mm precision, mean circadian
+  variation was 19.3 mm, 1.1% of stature; 54% of the loss occurred within the first hour after rising
+  and about 70% was regained during the first half of the night. The loss is load-dependent: static shoulder
+  loads from 2.5 to 40 kg increased the rate of shrinkage nonlinearly, and repetitive lifting produced
+  more shrinkage than the equivalent static load, so the disc creeps faster under cyclic than sustained
+  loading - the opposite ordering to what static compression does to the growth plate. In children the
+  effect is smaller but not negligible: 12-14 year old boys lost 2.0 mm from 09:30 to 14:00 and 4.6 mm
+  from 10:00 to 17:00 with sitting height falling 2.0 and 2.8 mm, against a measurement standard error
+  of 1.8 mm, and children with idiopathic scoliosis lost a mean 7 mm standing (0.43%) and 7 mm sitting
+  (0.79%) between early morning and evening. The mechanism is intervertebral disc fluid exudation and
+  unloading of the spinal curves, not physeal growth; the practical consequence is that a single unrecorded
+  measurement time can hide or fabricate a centimetre of apparent annual growth.'
+quantitative:
+- parameter: mean circadian variation in adult stature
+  value: '19.3'
+  unit: mm
+  conditions: eight young adults, measurement precision 1 mm
+  species: human
+  source_ref: tyrrell1985
+  uncertainty: 1.1% of stature; 54% of the loss in the first hour after rising
+- parameter: fraction of diurnal loss regained in the first half of the night
+  value: '70'
+  unit: '%'
+  conditions: same subjects
+  species: human
+  source_ref: tyrrell1985
+  uncertainty: approximate figure reported
+- parameter: stature loss 09:30 to 14:00 in 12-14 year old boys
+  value: '2.0'
+  unit: mm
+  conditions: n=19, stretching-upward technique
+  species: human
+  source_ref: whitehouse1974
+  uncertainty: measurement SE 1.8 mm
+- parameter: stature loss 10:00 to 17:00 in 12-14 year old boys
+  value: '4.6'
+  unit: mm
+  conditions: n=11 different boys
+  species: human
+  source_ref: whitehouse1974
+  uncertainty: sitting height fell 2.8 mm over the same interval
+- parameter: standing height loss over the day, children with idiopathic scoliosis
+  value: '7'
+  unit: mm
+  conditions: n=98, Cobb 10-52 deg, 07:00-08:00 vs 19:00-20:00
+  species: human
+  source_ref: czaprowski2019
+  uncertainty: SD 7 mm; 0.43% of initial standing height; p<0.001
+- parameter: sitting height loss over the day, children with idiopathic scoliosis
+  value: '7'
+  unit: mm
+  conditions: same cohort
+  species: human
+  source_ref: czaprowski2019
+  uncertainty: SD 7 mm; 0.79% of initial sitting height
+localization:
+- 'human intervertebral discs and spinal curvature: the source of the variation'
+- 'human physis: not involved'
+human_evidence: direct
+human_evidence_note: Directly measured in adults and children with stadiometry accurate to 1-2 mm, replicated
+  across several independent groups since 1974.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human measurement.
+confidence: A
+key_refs:
+- ref_id: tyrrell1985
+  pmid: '4002039'
+  first_author: Tyrrell AR
+  year: 1985
+  type: primary
+  one_line_finding: Mean circadian stature variation 19.3 mm (1.1%), load-dependent, with repetitive lifting
+    shrinking more than equivalent static load
+- ref_id: whitehouse1974
+  pmid: '16431557'
+  first_author: Whitehouse RH
+  year: 1974
+  type: primary
+  one_line_finding: 12-14 year old boys lost 2.0 mm by early afternoon and 4.6 mm by late afternoon, against
+    a 1.8 mm measurement SE
+- ref_id: czaprowski2019
+  pmid: '30689550'
+  first_author: Czaprowski D
+  year: 2019
+  type: primary
+  one_line_finding: Children with idiopathic scoliosis lost 0.7 cm standing and sitting height between
+    morning and evening
+- ref_id: reilly1984
+  pmid: '6600017'
+  first_author: Reilly T
+  year: 1984
+  type: primary
+  one_line_finding: Established the precision stadiometry method for circadian stature measurement
+- ref_id: voss1997
+  pmid: '9389235'
+  first_author: Voss LD
+  year: 1997
+  type: primary
+  one_line_finding: Diurnal loss persists despite the stretch technique, so it cannot be corrected by
+    measurement posture alone
+- ref_id: meijer2024
+  pmid: '39568059'
+  first_author: Meijer KM
+  year: 2024
+  type: primary
+  one_line_finding: Diurnal spine-length variation is large enough to matter for paediatric radiotherapy
+    field planning
+open_questions:
+- g_l6mech_014
 layer: L6
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

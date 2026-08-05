@@ -1,7 +1,106 @@
 id: hydroxyapatite_nucleation
-name: Hydroxyapatite nucleation
+name: Hydroxyapatite nucleation and mineral maturation
+aliases:
+- apatite nucleation
+- ACP-to-HA transformation
 type: process
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Growth plate mineral does not appear as hydroxyapatite. It appears as amorphous calcium phosphate
+  that is transiently stabilised by inhibitory proteins and then converted to oriented apatite platelets
+  on a collagen template. Cryo-TEM and cryo-tomography of collagen mineralised in the presence of nucleation
+  inhibitors show the mechanism: the positive net charge near the collagen C-terminus draws ACP into the
+  fibril, and clusters of charged residues in the 40 nm gap zone and the overlap zone act as nucleation
+  sites that convert ACP into a parallel array of oriented crystals within the 67 nm D-period. In human
+  growth plate the same sequence has been imaged directly at the growth plate-metaphysis interface, where
+  extrafibrillar spherical mineral particles fuse across the interfibrillar space and permeate the fibrils,
+  and where immature spherical mineral gives way to crystal platelets with distance from the front. The
+  chemistry that permits this is set by the Pi:PPi ratio and by protein inhibitors: in porcine growth
+  plate the extracellular Ca and P concentrations are already several-fold above the ion product needed
+  for in vitro mineralization in ALL zones, so the tissue is chronically supersaturated and mineralization
+  is controlled by inhibition, not by supply.'
+quantitative:
+- parameter: Extracellular Ca in porcine growth plate, all zones
+  value: ~0.7
+  unit: '% dry mass (~58 mmol/kg wet weight assuming 66% tissue fluid)'
+  conditions: electron microprobe, ~50 um lateral resolution, domestic pig
+  species: porcine
+  source_ref: althoff1982
+  uncertainty: rises to ~1% at the first mineralization foci
+- parameter: Extracellular P in porcine growth plate, non-mineralizing zones
+  value: 0.1-0.2
+  unit: '% dry mass (~10-20 mmol/kg wet weight)'
+  conditions: electron microprobe
+  species: porcine
+  source_ref: althoff1982
+  uncertainty: rises to ~1% near first mineralization foci
+- parameter: Ca x P ion product in growth plate relative to the in vitro mineralization threshold
+  value: much greater than 2
+  unit: mM^2 (threshold 2 mM^2)
+  conditions: calculated from microprobe concentrations
+  species: porcine
+  source_ref: althoff1982
+  uncertainty: authors state the product is much higher than the 2 mM^2 in vitro requirement
+- parameter: Collagen gap zone length available for intrafibrillar nucleation
+  value: '40'
+  unit: nm
+  conditions: within the 67 nm collagen D-period
+  species: in_vitro_animal_cell
+  source_ref: nudelman2010
+  uncertainty: structural constant
+localization:
+- 'human GP-metaphysis interface: extrafibrillar spherical mineral fusing and permeating collagen fibrils,
+  imaged by FIB-SEM (xie2025)'
+- 'human GP-epiphysis interface: mineralization inhibited, sharp compositional step (xie2025)'
+- 'porcine growth plate: first mineralization foci coincide with local rise of Ca and P (althoff1982)'
+human_evidence: direct
+human_evidence_note: ACP-to-apatite transformation and mineral platelet maturation have been imaged directly
+  in human growth plate tissue from paediatric donors.
+species_basis:
+- human
+- porcine
+- in_vitro_animal_cell
+translation_risk: low
+translation_risk_reason: The key structural observations have now been made in human growth plate rather
+  than inferred from animals.
+confidence: B
+key_refs:
+- ref_id: nudelman2010
+  pmid: '20972429'
+  first_author: Nudelman F
+  year: 2010
+  type: primary
+  one_line_finding: Collagen charge clusters in the 40 nm gap zone template conversion of amorphous calcium
+    phosphate into oriented apatite even with nucleation inhibitors present
+- ref_id: xie2025
+  pmid: '40781081'
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: 'Human growth plate: sharp modulus step at the epiphyseal boundary with SPP1/AHSG
+    inhibitors, gradual rise at the metaphyseal boundary with ENPP1/ALPL, and ACP-to-apatite transformation
+    at the front'
+- ref_id: althoff1982
+  pmid: '7107329'
+  first_author: Althoff J
+  year: 1982
+  type: primary
+  one_line_finding: 'Porcine growth plate microprobe: extracellular Ca constant ~0.7% dry mass across
+    zones, rising to 1% at first mineralization foci; sulphur falls from 3.5% to 0.3% on mineralization'
+- ref_id: hunter1993
+  pmid: '8397409'
+  first_author: Hunter GK
+  year: 1993
+  type: primary_abstract_only
+  one_line_finding: Bone sialoprotein nucleates hydroxyapatite in a steady-state agarose gel, the first
+    identified protein nucleator
+- ref_id: wuthier1992
+  pmid: '1377071'
+  first_author: Wuthier RE
+  year: 1992
+  type: primary_abstract_only
+  one_line_finding: Growth plate matrix vesicles contain ion channels and a nucleational core of calcium-acidic
+    phospholipid-phosphate complexes
+open_questions:
+- g_l5matrix_002
 last_verified: '2026-08-05'

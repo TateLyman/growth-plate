@@ -1,9 +1,79 @@
 id: osteopontin_spp1
-name: Osteopontin
-type: protein
-layer: L5
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Osteopontin (SPP1)
 aliases:
 - SPP1
+- OPN
+- BSP-1
+- secreted phosphoprotein 1
+type: protein
+layer: L5
+stub: false
+summary: 'Osteopontin is a highly phosphorylated acidic glycoprotein that inhibits hydroxyapatite formation
+  and growth by adsorbing to crystal faces through polyaspartate and phosphoserine motifs; its inhibitory
+  activity is phosphorylation-dependent and is largely lost when the covalently bound phosphate is removed.
+  It is a second, PPi-independent brake on mineralization and it is transcriptionally coupled to the PPi
+  system: Alpl-/- mice have raised osteopontin, ank/ank mice have reduced osteopontin, and both are normalised
+  in the corresponding double mutants, so the hypomineralization of TNAP loss is the combined effect of
+  PPi excess AND osteopontin excess rather than PPi alone. In vivo the inhibitory role is shown by epistasis
+  with matrix Gla protein: Opn-/-;Mgp-/- double nulls calcify far worse than Mgp-/- alone. In human growth
+  plate, SPP1 protein is one of the two proteins concentrated at the mineralization-inhibiting growth
+  plate-epiphysis interface, alongside AHSG. Osteopontin is therefore an inducible inhibitor whose expression
+  rises when mineralization is dysregulated, which makes it a sensor as well as an effector.'
+quantitative:
+- parameter: Direction of osteopontin change in Akp2(Alpl)-/- mice
+  value: increased
+  unit: mRNA and serum, direction only
+  conditions: TNAP null mouse; normalised in Akp2-/-;Enpp1-/- and Akp2-/-;ank/ank double mutants
+  species: mouse
+  source_ref: harmey2004
+  uncertainty: fold change not extracted
+- parameter: Direction of osteopontin change in ank/ank mice
+  value: decreased
+  unit: mRNA and serum, direction only
+  conditions: progressive ankylosis mouse
+  species: mouse
+  source_ref: harmey2004
+  uncertainty: fold change not extracted
+localization:
+- 'human GP-epiphysis interface: SPP1 enriched at the mineralization inhibition zone (xie2025)'
+- 'mouse growth plate and bone: osteopontin present, upregulated in Alpl-/- (harmey2004)'
+human_evidence: indirect
+human_evidence_note: SPP1 protein has been localised in human growth plate tissue, but no human osteopontin
+  loss-of-function phenotype is known.
+species_basis:
+- mouse
+- human
+- in_vitro_animal_cell
+translation_risk: moderate
+translation_risk_reason: Function is defined by mouse knockouts and in vitro crystal assays; the human
+  data are localisation only.
+confidence: B
+key_refs:
+- ref_id: boskey1993
+  pmid: '8251766'
+  first_author: Boskey AL
+  year: 1993
+  type: primary_abstract_only
+  one_line_finding: Osteopontin inhibits hydroxyapatite formation and growth in a gelatin gel in vitro
+- ref_id: harmey2004
+  pmid: '15039209'
+  first_author: Harmey D
+  year: 2004
+  type: primary
+  one_line_finding: TNAP, NPP1 and ANK coordinately set extracellular PPi and osteopontin levels
+- ref_id: speer2002
+  pmid: '12391016'
+  first_author: Speer MY
+  year: 2002
+  type: primary_abstract_only
+  one_line_finding: Opn-/-;Mgp-/- double nulls calcify far worse than Mgp-/- alone, establishing osteopontin
+    as an independent inhibitor
+- ref_id: xie2025
+  pmid: '40781081'
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: 'Human growth plate: sharp modulus step at the epiphyseal boundary with SPP1/AHSG
+    inhibitors, gradual rise at the metaphyseal boundary with ENPP1/ALPL, and ACP-to-apatite transformation
+    at the front'
+last_verified: '2026-08-05'

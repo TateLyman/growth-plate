@@ -6,20 +6,26 @@ aliases:
 type: protein
 layer: L4
 stub: false
-summary: PAPP-A is the founding pappalysin, a homodimeric metzincin that cleaves IGFBP-4 (strictly IGF-dependently)
+summary: 'PAPP-A is the founding pappalysin, a homodimeric metzincin that cleaves IGFBP-4 (strictly IGF-dependently)
   and, more slowly, IGFBP-2 and IGFBP-5. Because IGFBP-4 is a pure inhibitor of IGF action, PAPP-A activity
   converts a locally sequestered IGF pool into free ligand at the cell surface - a paracrine amplifier
-  rather than an endocrine one. It is inhibited stoichiometrically by stanniocalcin-2 (and STC1). PAPP-A's
-  growth role is best established in mouse, where Pappa deletion produces proportionate dwarfism and extended
-  lifespan. In human population data PAPP-A concentration, unlike PAPP-A2 and STC2, does NOT associate
-  with circulating total IGF-1 (nimptsch2024), consistent with PAPP-A acting locally rather than on the
-  circulating pool. No human PAPPA loss-of-function short-stature syndrome has been reported, which is
-  a notable asymmetry with PAPPA2. This node belongs to the IGF bioavailability control layer - ternary
-  complex formation (IGFBP-3/-5 plus ALS), pericellular proteolysis (PAPP-A, PAPP-A2) and protease inhibition
-  (STC1, STC2) - which sets the free IGF-1 concentration seen by chondrocyte IGF1R independently of total
-  IGF-1. Reviews typically stop at 'IGF-1 level'; the human PAPPA2 kindreds show that total and free IGF-1
-  can move in opposite directions and that stature tracks the free fraction.
+  rather than an endocrine one. It is inhibited stoichiometrically by stanniocalcin-2 (and STC1), which
+  locks it by an intersubunit disulfide and excludes IGFBP-4 from binding without occluding the catalytic
+  site (kobber2022). PAPP-A is required in cartilage specifically: Pappa-knockout mice have reduced femur
+  length and disorganised chondrocyte columns, pappaa-null zebrafish show shortened Meckel''s cartilage
+  with disorganised chondrocytes and reduced sox9a, ihha and col10a1, the zebrafish phenotype is mimicked
+  by pharmacological IGF-signalling inhibition and rescued by recombinant IGF-I (harboe2024). In human
+  population data, however, PAPP-A concentration - unlike PAPP-A2 and STC2 - does NOT associate with circulating
+  total IGF-1 (nimptsch2024), consistent with PAPP-A acting locally rather than on the circulating pool.
+  No human PAPPA loss-of-function short-stature syndrome has been reported, a notable asymmetry with PAPPA2.
+  This node belongs to the IGF bioavailability control layer - ternary complex formation, pericellular
+  proteolysis and protease inhibition - which sets the free IGF-1 concentration seen by chondrocyte IGF1R
+  independently of total IGF-1.'
 localization:
+- 'mouse growth plate: Pappa-null mice show reduced femur length and disorganised chondrocyte columns
+  (harboe2024)'
+- 'zebrafish Meckel''s cartilage: pappaa-null shortens cartilage and disrupts chondrocyte organisation,
+  rescued by rhIGF-I (harboe2024)'
 - 'human SYS: circulating (also the first-trimester screening analyte)'
 - 'human growth plate: PAPP-A protein not localised in physeal tissue'
 human_evidence: indirect
@@ -27,12 +33,20 @@ human_evidence_note: Human evidence is correlative (population associations of c
   IGF axis components); no human PAPPA null growth phenotype is described.
 species_basis:
 - mouse
+- zebrafish
 - human
 translation_risk: moderate
 translation_risk_reason: The dwarfism phenotype is mouse-only and the human population data actually dissociate
   PAPP-A from circulating IGF-1, so the mouse result should not be read as a human growth mechanism.
 confidence: C
 key_refs:
+- ref_id: harboe2024
+  first_author: Harboe M
+  year: 2024
+  type: primary
+  one_line_finding: PAPP-A is required for IGF-dependent chondrocyte differentiation and columnar organisation
+    in mouse and zebrafish cartilage.
+  pmid: '39215168'
 - ref_id: nimptsch2024
   first_author: Nimptsch K
   year: 2024
