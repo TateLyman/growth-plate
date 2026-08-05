@@ -95,10 +95,31 @@ and weakly welded. Three sub-patterns, all measured:
 - **L8 is unwired.** 39 A-graded nodes with no edges to the L7/L9/L10 phenotypes they
   exist to explain.
 
-**Distrust context-filtered answers until the fill rates below are met.** A Type 3 query
-filtered on zone or sex returns `UNRELIABLE` with its annotation coverage attached rather
-than a small, confident-looking result. That is the correct failure mode, but it is a
-failure mode.
+**Context filtering now works, and its annotations are not all the same strength.** The
+MR-004 targets are met (zone 40%, sex 30%, stage 40%) and **every edge is now either
+determined-from-source or explicitly `unknown` — there are no nulls left**, so a filter
+can distinguish "this edge contradicts your filter" from "nobody recorded it."
+
+But the zone annotations have three different provenances, stated inline on every edge
+and worth reading before trusting a zone-filtered path:
+
+| provenance | edges | strength |
+|---|---:|---|
+| definitional — an endpoint node *is* a zone | 177 | strongest |
+| inferred from both endpoints' sourced `localization` records | 261 | **inferred, not measured** |
+| the cited paper actually resolved the zone | 60 | strongest, and the rarest |
+
+**Only 60 zone annotations come from a paper that measured the zone.** The rest are sound
+inferences from node localisation, labelled as such in the context string — but a
+zone-filtered answer resting mostly on them is a statement about where the *entities* live,
+not about where the *interaction* was observed.
+
+The field-level finding from the same campaign: of 783 cited references, **515 are
+abstract-only because the paper is not open access**, and abstracts essentially never state
+subject sex or age — 44 of 515 abstract-only refs yielded a sex against 112 of 231 full
+texts. Even with full methods in hand, **119 of 231 papers never state the sex of the
+animals at all.** Sex is unreported far more often than it is reported, and no amount of
+curation can fix that from outside.
 
 **L2 remains the layer with no replicated human evidence at all** — resting-zone stem cell
 biology is mouse lineage tracing, which cannot be done in humans. Its 0% hit rate is *not*
@@ -123,10 +144,10 @@ number is too small to say anything.
 
 | axis | annotated | of edges | MR-004 target |
 |---|---:|---:|---:|
-| zone | 139/1181 | 11.8% | 40% |
-| sex | 139/1181 | 11.8% | 30% |
-| stage | 265/1181 | 22.4% | 40% |
-| species | 1109/1181 | 93.9% | — |
+| zone | 637/1181 | 53.9% | 40% |
+| sex | 360/1181 | 30.5% | 30% |
+| stage | 754/1181 | 63.8% | 40% |
+| species | 1133/1181 | 95.9% | — |
 
 Sign coverage on sign-bearing relations is the traversal gate and stands at **778/778 = 100%**. The 403 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
 <!-- COVERAGE:STRUCT:END -->

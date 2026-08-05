@@ -44,11 +44,18 @@ SIGN_ENTAILED = {"required_for": "+", "sufficient_for": "+",
 SIGN_BEARING = {"activates", "inhibits", "phosphorylates", "secretes"} | set(SIGN_ENTAILED)
 SIGN_EXEMPT = {"precedes", "binds", "hypothesized_link", "correlates_with"}
 
+# BUG FIXED 2026-08-05, found by the context-fill campaign. Every stem alternative here
+# (proliferat, hypertroph, embryon, ...) was written with a TRAILING \b, which cannot
+# match inside a word - so "proliferative" and "hypertrophic", the two commonest zone
+# words in the corpus, never matched and zone fill was under-reported as 18.3% against a
+# real 53.9%. The trailing boundary is removed; the leading one is kept so that
+# "metaphyseal" still requires a word start. Any zone/stage figure quoted from this tool
+# before this date is wrong and low.
 PROBES = {
-    "zone": r"\b(RZ|PZ|PHZ|HZ|resting|proliferat|prehypertroph|hypertroph|perichondr|ZPC|epiphys|metaphys)\b",
+    "zone": r"\b(RZ|PZ|PHZ|HZ)\b|\b(resting|proliferat|prehypertroph|hypertroph|perichondr|ZPC|epiphys|metaphys)",
     "species": r"\b(human|mouse|murine|rat|rabbit|bovine|porcine|ovine|chick|zebrafish|in vitro|iPSC)\b",
-    "stage_age": r"\b(E\d|P\d|postnatal|prenatal|fetal|embryon|adult|pubert|neonat|week|month|year|age|infan)\b",
-    "sex": r"\b(male|female|both sexes|sex-|sex differ)\b",
+    "stage_age": r"\b(E\d|P\d)\b|\b(postnatal|prenatal|fetal|embryon|adult|pubert|neonat|week|month|year|age|infan)",
+    "sex": r"\b(male|female|both sexes|sex-|sex differ)",
 }
 
 
