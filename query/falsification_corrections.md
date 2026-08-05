@@ -152,3 +152,48 @@ held-out evidence. They are still deferred, for a narrower reason given in each 
   atlas already indexes (`falsification_baseline.md` §2.3).
 - Any number produced after the held-out papers are ingested is a **post-ingestion** number.
   It measures a different object and must never be presented as an improvement on 64.0%.
+
+---
+
+## Post-Phase-6/8 delta — required by the Phase 7 protocol, and it is zero
+
+The protocol asks for a baseline now and a re-run after Phase 6, on the grounds that
+*"the delta measures whether the remaining work improved predictive power or only
+coverage. Those are different achievements and should not be conflated."*
+
+**The delta is zero, and it is zero for a reason that can be checked without re-scoring
+a single proposition.**
+
+Between the baseline commit and this one, the graph's topology is byte-for-byte
+identical:
+
+| | at baseline (`6c916e3`) | now |
+|---|---:|---:|
+| node files | 614 | **614** |
+| edges | 1,181 | **1,181** |
+
+Everything landed since then adds *content to existing objects*, never a node and never
+an edge:
+
+- **Phase 6** produced `flow_model.py`, `consistency_report.md` and
+  `docs/experimental_agenda.md`. No graph object.
+- **Phase 8** (`p8_01_gse9160_human_zonal`) added observations to 17 nodes and rewrote 7
+  gaps. No edges.
+- **The paralog audit** annotated 91 nodes and opened 9 gaps. No edges.
+- **The context-fill campaign** rewrote the `context` string on 1,177 edges and changed
+  no other field on any of them.
+
+`SILENTLY_ABSENT` is defined as *no path existed*. Adding annotation to an existing edge
+cannot create a path, so no item in that bucket can convert. A targeted check confirms
+it from the other direction: scanning all 63 held-out propositions for overlap with the
+Phase 8 subject matter returns nine candidates (P07, P09, P11, P15, P46, P55, P56, P57,
+P60), and every one of them is a pharmacological or phenotypic claim that a transcript
+localisation result does not bear on.
+
+**So the answer to the protocol's question is explicit: the work since the baseline
+improved coverage, diagnosis and honesty, and did not improve predictive power.** That
+is the correct outcome for work that deliberately applied zero graph edits, and it is
+worth stating rather than leaving the reader to infer that a re-run was skipped.
+
+The number that would move this is C-01/C-02/C-03 — the cross-layer wiring — and those
+are deferred for the reason at the top of this file, not because they are hard.
