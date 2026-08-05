@@ -1,0 +1,40 @@
+searches:
+  - gap_id: g_l8gwas_001
+    database: Europe PMC
+    exact_query_string: >-
+      (height GWAS OR "height-associated variant*") AND ("growth plate" OR physis OR
+      "epiphyseal cartilage") AND (eQTL OR "chromatin accessibility" OR ATAC OR
+      "functional follow-up")
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 127
+    screened_count: 25
+    reason_none_qualified: >-
+      Top-ranked hits include three directly relevant papers (richard2025,
+      darbellay2024, ackertbicknell2023) which establish ENRICHMENT of height signal
+      in chondrocyte regulatory elements, but none reports a variance PARTITION -
+      i.e. the percentage of height SNP-heritability attributable to growth-plate
+      chondrocytes benchmarked against other tissues with a confidence interval.
+      Remaining screened hits were animal-agriculture GWAS, osteoarthritis
+      epigenetics, or unrelated skeletal pathology. The gap is quantitative, not
+      total absence: this search REVISED the gap from "no human growth plate
+      functional genomics exists" (which would have been false) to "enrichment is
+      shown, partition is not."
+
+  - gap_id: g_l8gwas_002
+    database: Europe PMC
+    exact_query_string: '"growth plate" AND (eQTL OR "expression quantitative trait") AND human'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 91
+    screened_count: 25
+    reason_none_qualified: >-
+      No hit reports a cis-eQTL scan performed on primary human growth plate
+      (physeal) tissue. Screened hits fall into four non-qualifying classes:
+      (1) osteoarthritis articular-cartilage transcriptomics and eQTL colocalization
+      (e.g. PMID 39579762, 36416764); (2) osteoclast regulatory-variant mapping
+      (PMID 32216834); (3) Mendelian-randomization studies using blood/plasma eQTL
+      or pQTL panels as instruments, with no skeletal tissue sampled (e.g. PMID
+      41029778, 40996951, 39747467); (4) rodent systems-genetics of bone mineral
+      density (PMID 34099702). "Growth plate" appears in these records as background
+      phrasing rather than as the sampled tissue.

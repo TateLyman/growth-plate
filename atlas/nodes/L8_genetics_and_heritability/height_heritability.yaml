@@ -1,7 +1,104 @@
 id: height_heritability
 name: Heritability of adult height
+aliases: [h2 of stature]
 type: phenotype
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Height is among the most heritable continuous human traits, but the headline
+  figure of "~80% heritable" conceals real structure in age, ancestry and study
+  design. A systematic review and meta-analysis of 28 twin and 26 family studies
+  (162,293 twin pairs, 380,195 parent-offspring pairs, 19,965 sibling pairs,
+  birth years 1929-2004) found that twin-based heritability of childhood height
+  RISES from birth to age 17 rather than being constant, which is consistent with
+  the progressive expression of growth-regulating alleles across development and
+  with the diminishing relative weight of intrauterine and early-nutritional
+  effects. Under age 5 the estimate is 0.57 (95% CI 0.52-0.61) in European-ancestry
+  samples, 0.48 (0.39-0.57) in Asian-ancestry samples and 0.46 (0.40-0.51) in
+  multi-ancestry samples, so the commonly quoted adult figure should not be
+  applied to young children. Molecular estimates converge from below: GREML-LDMS
+  applied to ~17 million imputed variants in 44,126 unrelated individuals gives
+  56% (SE 2.3%), and after accounting for imperfect imputation tagging the authors
+  place true heritability at 60-70%. Twin designs may modestly overestimate h2
+  because shared environment and non-additive variance are partly absorbed into
+  the additive term.
+quantitative:
+  - parameter: twin-based heritability of height, age <5y, European ancestry
+    value: '0.57'
+    unit: h2 (proportion of variance)
+    conditions: meta-analysis of twin studies, children under 5 years
+    species: human
+    source_ref: dewau2025
+    uncertainty: 95% CI 0.52-0.61
+  - parameter: twin-based heritability of height, age <5y, Asian ancestry
+    value: '0.48'
+    unit: h2 (proportion of variance)
+    conditions: meta-analysis of twin studies, children under 5 years
+    species: human
+    source_ref: dewau2025
+    uncertainty: 95% CI 0.39-0.57
+  - parameter: twin-based heritability of height, age <5y, multi-ancestry
+    value: '0.46'
+    unit: h2 (proportion of variance)
+    conditions: meta-analysis of twin studies, children under 5 years
+    species: human
+    source_ref: dewau2025
+    uncertainty: 95% CI 0.40-0.51
+  - parameter: twin pairs included
+    value: '162293'
+    unit: pairs
+    conditions: 28 twin studies, birth years 1929-2004
+    species: human
+    source_ref: dewau2025
+    uncertainty: not applicable (count)
+  - parameter: parent-offspring pairs included
+    value: '380195'
+    unit: pairs
+    conditions: 26 family studies
+    species: human
+    source_ref: dewau2025
+    uncertainty: not applicable (count)
+  - parameter: variance explained by ~17M imputed variants (GREML-LDMS)
+    value: '56'
+    unit: '%'
+    conditions: 44,126 unrelated individuals, whole-genome-imputed
+    species: human
+    source_ref: yang2015
+    uncertainty: SE 2.3%
+  - parameter: inferred true narrow-sense heritability of height
+    value: 60-70
+    unit: '%'
+    conditions: after correcting for imperfect imputation tagging of rare variants
+    species: human
+    source_ref: yang2015
+    uncertainty: stated as a range by the authors, not a CI
+localization:
+  - "human: population-level variance decomposition, not tissue-localized"
+human_evidence: direct
+human_evidence_note: >-
+  Twin, family and molecular-genetic variance decomposition in humans; over
+  560,000 relative pairs in the meta-analysis alone.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: Heritability is a population-specific human parameter by definition.
+confidence: A
+key_refs:
+  - ref_id: dewau2025
+    pmid: '39564936'
+    first_author: Dewau R
+    year: 2025
+    type: meta_analysis
+    one_line_finding: >-
+      Heritability of childhood height rises from birth to 17 years and differs by
+      ancestry; under-5 h2 is 0.57 (European), 0.48 (Asian), 0.46 (multi-ancestry).
+  - ref_id: yang2015
+    pmid: '26323059'
+    first_author: Yang J
+    year: 2015
+    type: primary
+    one_line_finding: >-
+      GREML-LDMS on ~17M imputed variants explains 56% (SE 2.3%) of height
+      variance; true h2 likely 60-70%, so missing heritability is small.
+open_questions: []
+contradicts: []
 last_verified: '2026-08-05'

@@ -1,0 +1,87 @@
+gaps:
+  - gap_id: g_l8gwas_001
+    question: >-
+      What fraction of the 12,111 independent height-associated SNPs exert their
+      effect through the growth plate chondrocyte, as opposed to through muscle,
+      endocrine tissue, vasculature, or systemic nutrition-sensing tissue?
+    type: quantitative_gap
+    layer: L8
+    why_it_matters: >-
+      The entire premise of a growth-plate-centred atlas is that the plate is where
+      stature is set. That premise is widely assumed and rarely quantified. If the
+      chondrocyte-attributable fraction is 30% rather than 80%, then large parts of
+      L3-L7 explain a minority of height variance and the atlas's centre of gravity
+      is wrong. It also determines which tissue a therapeutic should target.
+    what_is_known: >-
+      Richard 2025 generated epigenomic and transcriptomic maps from chondrocytes
+      sampled across multiple growth plates of developing human skeletons and
+      intersected them with height GWAS signal, concluding that regulatory
+      pleiotropy dominates and separating skeletal-element-specific from
+      global-acting variants. Darbellay 2024 showed in mouse that variants
+      overlapping chondrocyte-specific enhancers (2,704 identified, 780 genes)
+      explain height differences better than variants overlapping non-chondrogenic
+      enhancers, establishing enrichment. Yengo 2022 reports that association
+      density is elevated near biologically relevant genes.
+    what_is_missing: >-
+      Enrichment is not partition. No source states the PERCENTAGE of height SNP
+      heritability attributable to growth-plate chondrocyte regulatory activity,
+      with a confidence interval, benchmarked against competing tissues in the same
+      analysis. The published framing is qualitative ("prime importance of
+      regulatory pleiotropy") rather than a variance decomposition.
+    nearest_evidence: [richard2025, darbellay2024, yengo2022]
+    discriminating_experiment: >-
+      Stratified LD-score regression (or equivalent, e.g. sc-linker) partitioning
+      height SNP-heritability across a matched panel of cell-type-specific
+      regulatory annotations that includes human growth-plate chondrocytes by zone
+      (from the Richard 2025 maps), skeletal muscle, hepatocyte, pituitary
+      somatotroph, adipocyte and vascular endothelium, all generated on the same
+      platform to avoid annotation-quality confounding. Readout: proportion of
+      h2-SNP per annotation with standard errors. Under a plate-centric model the
+      chondrocyte annotation takes the largest share and zone-resolved annotations
+      (proliferative/hypertrophic) are individually significant; under a
+      distributed model no single tissue exceeds ~25% and the chondrocyte share is
+      comparable to muscle and endocrine annotations.
+    tractability: 4
+    search_log_ref: g_l8gwas_001
+
+  - gap_id: g_l8gwas_002
+    question: >-
+      Do cis-regulatory variants identified in human growth plate chondrocytes have
+      measurable expression effects in situ - i.e. does a growth-plate eQTL catalogue
+      from primary human physeal tissue exist, with donor numbers sufficient to map
+      effects by zone?
+    type: search_established
+    layer: L8
+    why_it_matters: >-
+      Chromatin accessibility and enhancer maps show where regulatory potential
+      lies, but an eQTL requires genotype-by-expression across many donors and is
+      the direct evidence that a height variant changes gene dosage in the tissue
+      that builds stature. Without it, variant-to-gene assignment in the growth
+      plate rests on accessibility overlap and orthology rather than measured
+      allelic effect, which weakens every causal claim linking L8 to L1-L3.
+    what_is_known: >-
+      Human chondrocyte epigenomic/transcriptomic maps across skeletal sites now
+      exist (Richard 2025). eQTL catalogues exist for human osteoclasts and for
+      articular/primary cartilage in the osteoarthritis literature, and GTEx covers
+      neither growth plate nor any cartilage tissue.
+    what_is_missing: >-
+      A donor-scale eQTL map of human GROWTH PLATE (physeal) chondrocytes, resolved
+      by zone. Searching yields osteoarthritis articular-cartilage eQTL work,
+      osteoclast eQTL work, and Mendelian-randomization studies using non-skeletal
+      eQTL panels - none is physeal, and none is zone-resolved. The obstacle is
+      structural rather than technical: human growth plate tissue is obtainable
+      only as surgical discard in small numbers, so assembling the tens-to-hundreds
+      of genotyped donors an eQTL scan needs is the binding constraint.
+    nearest_evidence: [richard2025, darbellay2024]
+    discriminating_experiment: >-
+      A multi-centre consortium banking physeal cartilage from routine paediatric
+      orthopaedic procedures (epiphysiodesis, limb realignment, polydactyly
+      correction, amputation), targeting >=150 genotyped donors, with zone
+      separation by laser-capture microdissection and RNA-seq, analysed as a
+      cis-eQTL scan conditioned on age, site and sex. Readout: number of
+      physis-specific eGenes and their overlap with the 12,111 height SNPs. If
+      growth-plate eQTLs are largely shared with other cartilage, the tissue-scarcity
+      problem is partly solvable by proxy tissue; if a substantial fraction are
+      physis-specific, no proxy is adequate and the banking effort is unavoidable.
+    tractability: 2
+    search_log_ref: g_l8gwas_002

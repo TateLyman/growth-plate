@@ -1,7 +1,71 @@
 id: missing_heritability_height
 name: Missing heritability of height
+aliases: [heritability gap]
 type: process
 layer: L8
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  "Missing heritability" named the early-GWAS gap between family-based
+  heritability estimates (~80%) and the variance captured by genome-wide
+  significant SNPs (a few percent in the first height GWAS). For height the gap
+  has since largely closed, and it closed for methodological rather than
+  biological reasons. Yang 2015 showed with GREML-LDMS on ~17 million imputed
+  variants in 44,126 unrelated individuals that 56% (SE 2.3%) of height variance
+  is tagged once variants are stratified by linkage-disequilibrium and minor
+  allele frequency, and argued true heritability is 60-70% - so the residual gap
+  against family estimates is small and is plausibly explained by imperfect
+  imputation of rare variants plus overestimation in family designs. Yengo 2022
+  closed the discovery side by resolving 12,111 independent SNPs capturing nearly
+  all common-SNP heritability. Height is therefore the trait where the missing
+  heritability problem was effectively solved, which makes it the reference case
+  against which other traits are judged. The residuum that remains is
+  concentrated in rare and structural variation and in the fact that
+  heritability estimated in one population does not transfer to another.
+quantitative:
+  - parameter: variance explained by first-generation genome-wide significant height SNPs
+    value: '5'
+    unit: '%'
+    conditions: >-
+      approximate figure for the earliest height GWAS era, cited as the
+      motivation for the missing-heritability problem
+    species: human
+    source_ref: yang2015
+    uncertainty: approximate; value_unverified pending retrieval of the primary early-GWAS figure
+    value_unverified: true
+  - parameter: residual gap between molecular and family-based heritability
+    value: 4-14
+    unit: percentage points
+    conditions: 56% tagged (SE 2.3%) versus inferred true 60-70%
+    species: human
+    source_ref: yang2015
+    uncertainty: derived from the reported range, not a stated CI
+localization:
+  - "human: population-level, not tissue-localized"
+human_evidence: direct
+human_evidence_note: >-
+  Human molecular and family-based variance decomposition; the entire question is
+  a human-population one.
+species_basis: [human]
+translation_risk: not_applicable
+translation_risk_reason: Population-genetic parameter specific to human cohorts.
+confidence: A
+key_refs:
+  - ref_id: yang2015
+    pmid: '26323059'
+    first_author: Yang J
+    year: 2015
+    type: primary
+    one_line_finding: >-
+      Stratifying imputed variants by LD and MAF recovers 56% of height variance,
+      leaving negligible missing heritability.
+  - ref_id: yengo2022
+    pmid: '36224396'
+    first_author: Yengo L
+    year: 2022
+    type: primary
+    one_line_finding: >-
+      12,111 independent SNPs account for nearly all common-SNP heritability,
+      closing the discovery side of the gap.
+open_questions: []
+contradicts: []
 last_verified: '2026-08-05'
