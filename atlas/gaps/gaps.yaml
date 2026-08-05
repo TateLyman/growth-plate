@@ -4653,3 +4653,1426 @@ gaps:
     the rise in lower-leg growth velocity; if the lesion is peripheral GH resistance, burst mass is normal at admission while
     IGF-1 is low, and IGF-1 rises without a change in GH secretion.
   tractability: 2
+- gap_id: g_l12b_001
+  question: Does any FGFR3-directed therapy - the oral TKI infigratinib or a CNP analogue - change attained final or near-adult
+    height in achondroplasia, and does treatment alter the ratio of bone age advance to chronological age in a way that would
+    erode the velocity benefit?
+  type: search_established
+  layer: L12
+  why_it_matters: Four agents (vosoritide, navepegritide, infigratinib, and combination navepegritide plus lonapegsomatropin)
+    now have positive 52-week velocity results, two are approved, and none has an adult-height number. g_l12pharm_001 established
+    this for CNP analogues; this gap extends it to the kinase inhibitor, which is mechanistically distinct because it acts
+    upstream on the receptor and therefore also on the FGFR3-dependent regulation of skeletal maturation itself. If the TKI
+    advances bone age while the CNP analogue does not (or vice versa), the two classes will diverge on adult height even though
+    they look identical on velocity, and the field will have licensed two drugs on an endpoint that cannot rank them.
+  what_is_known: Infigratinib +1.74 cm/yr (95% CI 1.31-2.17, n=114) at 52 weeks; vosoritide +1.57 cm/yr; navepegritide +1.49
+    cm/yr; class meta-analysis 1.36 cm/yr. Both approvals are accelerated and contingent on confirmatory verification of clinical
+    benefit. Extension studies NCT05145010 (infigratinib, enrolling by invitation, n=300), NCT03424018 and NCT03989947 are
+    registered and active.
+  what_is_missing: No published attained final or near-adult height for any FGFR3-directed agent, and no published treated-versus-untreated
+    comparison of bone-age-to-chronological-age ratio over the treatment period for the TKI class.
+  nearest_evidence:
+  - savarirayan2026infig
+  - kamrulhasan2026
+  - mcdonnell2026a
+  - nct05145010
+  discriminating_experiment: Follow the registered extension cohorts to epiphyseal closure with prespecified near-adult height,
+    and pair each with serial automated bone age read by a single algorithm, comparing against the ACHieve untreated natural-history
+    cohort matched on age and sex. TRUE HEIGHT GAIN - near-adult height exceeds matched natural history by approximately the
+    cumulative velocity integral, with bone age advancing at the control rate. REDISTRIBUTION - near-adult height converges
+    on natural history while bone age advances faster during treatment. CLASS DIVERGENCE - the TKI and CNP arms differ in
+    bone age trajectory even where their velocity gains matched, which would falsify the use of velocity as a common licensing
+    endpoint.
+  tractability: 4
+  search_log_ref: g_l12b_001
+- gap_id: g_l12b_002
+  question: What concentration does any systemically administered growth-modifying drug actually reach within human growth
+    plate cartilage, and how does that concentration vary with depth from the epiphyseal and metaphyseal vascular fronts?
+  type: search_established
+  layer: L12
+  why_it_matters: 'This is a class-wide audit finding, not a single-drug question. Twelve agents were checked - vosoritide,
+    navepegritide, infigratinib, recifercept, meclizine, rhGH, lonapegsomatropin, mecasermin, teriparatide, methotrexate,
+    glucocorticoids, bisphosphonates - and none has a published growth plate tissue concentration in any species. Every dose
+    in this layer was therefore selected on plasma exposure and a proportionality assumption that has never been tested in
+    a tissue that is avascular and has high fixed negative charge density. The cost is concrete: the recifercept failure cannot
+    be attributed between ligand-independence and non-delivery, and the near-identical efficacy of a 24-minute and a 5.3-day
+    CNP exposure cannot be explained.'
+  what_is_known: Complete plasma pharmacokinetics exist in FDA labelling for eight of the twelve agents. Bisphosphonate metaphyseal
+    banding shows that at least one class reaches the mineralising front in quantity. Spatially resolved mass spectrometry
+    imaging is established for bone and joint tissue, and site-directed delivery to the growth plate has been demonstrated
+    in mice with retinoid-impregnated nanoparticles.
+  what_is_missing: Any concentration-versus-depth profile for a therapeutic agent across the zones of a growth plate, in any
+    species, at any time point in a dosing cycle.
+  nearest_evidence:
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  - matsuoka2025
+  - nct04638153
+  discriminating_experiment: Dose a large animal with a growth plate of human-comparable thickness (pig or sheep; rodent plates
+    are too thin for diffusion limitation to be measurable) with two agents of contrasting physicochemistry - a small oral
+    TKI and a large recombinant protein - and perform MALDI or DESI imaging mass spectrometry on frozen undecalcified sections
+    at several points across a dosing interval, with phospho-ERK1/2 and phospho-VASP immunostaining by zone as the engagement
+    readout. DIFFUSION-LIMITED - the protein shows a steep concentration gradient with depth and negligible resting-zone concentration
+    while the small molecule is flat, predicting that decoys and antibodies cannot work by this route and that small molecules
+    can. FREE EQUILIBRATION - both profiles are flat and plasma AUC is an adequate surrogate for all agents, which would make
+    the recifercept failure a genuine mechanistic negative.
+  tractability: 3
+  search_log_ref: g_l12b_002
+- gap_id: g_l12b_003
+  question: Is the efficacy ceiling of NPR2 agonists set by receptor occupancy, or by the downstream availability of PKG-I/II,
+    which is hypertrophic-zone-biased while NPR2 itself is distributed uniformly across the zones?
+  type: known_unknown
+  layer: L12
+  why_it_matters: Every approved achondroplasia drug is an NPR2 agonist and all of them plateau at 1.4-1.7 cm/yr regardless
+    of exposure profile. If the limiting step is receptor occupancy, higher or more sustained exposure should help - and the
+    navepegritide-versus-vosoritide comparison says it does not. If the limiting step is PKG availability, then the drug's
+    action is confined to the zone where PKG is expressed, the resting and proliferative zones contribute little, and the
+    right next drug is a PKG-independent cGMP effector or a phosphodiesterase inhibitor rather than a better CNP.
+  what_is_known: Vosoritide urinary cGMP is near saturation and CXM maximal at 15 ug/kg/day per FDA labelling, so the systemic
+    pharmacodynamic readout is already on its plateau at the approved dose. The L3 layer records that FGFR3-to-NPR2 crosstalk
+    is post-translational only and that NPR2 is zonally uniform while PKG-I/II is hypertrophic-biased (contradiction C-L3-03).
+  what_is_missing: No zonally resolved measurement of cGMP or of PKG substrate phosphorylation in a growth plate exposed to
+    a therapeutic CNP analogue, in any species.
+  nearest_evidence:
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  - kamrulhasan2026
+  discriminating_experiment: Treat Fgfr3-Y367C/+ mice and a large-animal model with vosoritide or navepegritide at matched
+    total exposure, then quantify phospho-VASP (a PKG substrate) and cGMP by zone using immunofluorescence on the same sections
+    used for zonal morphometry. OCCUPANCY-LIMITED - phospho-VASP rises across all zones in proportion to dose. PKG-LIMITED
+    - phospho-VASP rises only in prehypertrophic and hypertrophic zones and saturates, while resting-zone cGMP rises without
+    a downstream signal, predicting that PDE inhibition or direct PKG activation would extend the ceiling and more CNP would
+    not.
+  tractability: 3
+- gap_id: g_l12b_004
+  question: Does infigratinib inhibit the FGFR3-N540K hypochondroplasia mutant potently enough to be therapeutic, or is it
+    a weak inhibitor of that specific allele?
+  type: contradiction
+  layer: L12
+  why_it_matters: Hypochondroplasia is the declared next indication for infigratinib and a phase 2 programme is predicated
+    on the affirmative answer. Two groups in the same journal within months give opposite answers about the same drug against
+    the same mutant. If the negative report is right, a trial is being designed on an allele the drug does not adequately
+    engage, and any null result will be misread as evidence against FGFR3 inhibition in general rather than against this compound
+    at this allele.
+  what_is_known: Demuynck 2025 reports in silico strong interaction, potent in vitro inhibition, and significant skeletal
+    improvement in Fgfr3-N534K/+ mice. Ursachi 2026 reports that infigratinib is a weak inhibitor of FGFR3-N540K. An independent
+    kinase panel shows infigratinib potency varies ~89-fold between K650E and K650M, establishing that strong allele-dependence
+    of this compound is real.
+  what_is_missing: A single head-to-head biochemical comparison of infigratinib against wild-type, G380R, N540K and N540K-equivalent
+    mouse N534K FGFR3 in one assay with stated ATP concentration, plus a matched cellular assay.
+  nearest_evidence:
+  - demuynck2025
+  - ursachi2026
+  - ryu2022
+  discriminating_experiment: Run all four FGFR3 variants side by side in a single laboratory using a microfluidic mobility-shift
+    kinase assay at ATP = Km and again at 1 mM ATP, paired with a BaF3 TEL-FGFR3 proliferation assay for each variant. THERAPEUTIC
+    - N540K IC50 within ~3-fold of wild-type at both ATP concentrations and cellular IC50 below achievable free plasma concentration
+    at 0.25 mg/kg/day. NOT THERAPEUTIC - N540K IC50 >20-fold weaker, in which case the hypochondroplasia programme needs a
+    different compound.
+  tractability: 5
+- gap_id: g_l12b_005
+  question: What is the IC50 of infigratinib against FGFR3-G380R, the achondroplasia allele it is licensed-track to treat,
+    measured at a stated ATP concentration?
+  type: quantitative_gap
+  layer: L12
+  why_it_matters: A phase 3 trial has been run and reported without a published potency value against the causal allele under
+    defined assay conditions. Without it there is no way to relate the 0.25 mg/kg/day dose to target engagement, no way to
+    estimate the therapeutic index against the off-target FGFR1/2 activity that reduced trabecular bone in mice, and no basis
+    for predicting whether the same dose would suffice for other FGFR3 alleles. The available numbers - 0.66 nM wild-type,
+    0.5 nM K650E, 44.4 nM K650M, 505.9 nM V555M - show the allele-dependence is large enough that extrapolating from wild-type
+    is unsafe.
+  what_is_known: A ChEMBL-curated microfluidic mobility-shift value of 1.0 nM against FGFR3 at ATP = Km, and a radiometric
+    panel giving wild-type, K650E, K650M and V555M values without stated ATP. K650M has ~3x the constitutive kinase activity
+    of the lethal K650E yet is 89-fold less well inhibited, so potency and severity are decoupled.
+  what_is_missing: Any published G380R-specific IC50 with ATP concentration, substrate and readout stated, and any free (unbound)
+    plasma concentration at the clinical dose against which to compare it.
+  nearest_evidence:
+  - ryu2022
+  - chembl_infigratinib
+  - guagnano2011
+  - tavormina1999
+  discriminating_experiment: Express G380R, wild-type and N540K FGFR3 intracellular domains, measure infigratinib IC50 at
+    ATP = Km and at 1 mM ATP (the physiological intracellular concentration), and pair with equilibrium dialysis to obtain
+    free fraction in paediatric plasma at 0.25 mg/kg/day. ADEQUATE MARGIN - free Cmin exceeds the 1 mM-ATP cellular IC50 for
+    G380R throughout the dosing interval. INADEQUATE - it does not, implying the clinical effect is driven by intermittent
+    partial inhibition and that the dose-response has not been explored.
+  tractability: 5
+- gap_id: g_l12b_006
+  question: Did recifercept fail because FGFR3-G380R signalling in the human growth plate is largely ligand-independent, or
+    because a ~100 kDa soluble decoy cannot reach chondrocytes inside avascular, proteoglycan-dense cartilage?
+  type: known_unknown
+  layer: L12
+  why_it_matters: This is the single most informative failure in the layer and it was left uninterpretable. If the answer
+    is ligand-independence, then every ligand-trap and anti-FGF antibody strategy for achondroplasia is dead on arrival and
+    the constitutive-dimerisation model of G380R is confirmed in humans. If the answer is delivery, then the mechanism is
+    untested and the entire class of large-molecule FGFR3 antagonists is still open but needs a delivery solution. The two
+    conclusions point research in opposite directions.
+  what_is_known: Two trials terminated the same day with the registry statement "lack of efficacy at any of the tested doses
+    ... not related to a safety concern". Posted results show observed/expected height ratio 1.0 (95% CI 0.8-1.1) at month
+    12 in all three arms spanning 1 mg/kg weekly to 1.5 mg/kg daily. The same molecule prevented premature synchondrosis ossification
+    in Fgfr3-ach/+ mice.
+  what_is_missing: Any measurement of recifercept concentration in growth plate cartilage in mouse or human, and any pharmacodynamic
+    biomarker of FGF ligand sequestration in treated children.
+  nearest_evidence:
+  - nct04638153
+  - nct05116046
+  - rignol2022
+  discriminating_experiment: Administer fluorophore- or isotope-labelled recifercept to a juvenile pig and image its distribution
+    across the growth plate by mass spectrometry imaging alongside phospho-ERK1/2 by zone; in parallel, test whether FGF ligand
+    neutralisation alters ERK output in G380R human iPSC-derived chondrocytes in monolayer where delivery is not limiting.
+    DELIVERY FAILURE - decoy absent from the plate in vivo but ligand neutralisation reduces ERK in monolayer. MECHANISM FAILURE
+    - decoy present in the plate at effective concentration yet ERK is unchanged in both settings, confirming ligand-independence.
+  tractability: 3
+- gap_id: g_l12b_007
+  question: Why do repurposed small molecules that increase bone growth in Fgfr3 mouse models - meclizine and statins - produce
+    no measurable linear growth effect in humans, and has any statin ever been given to a child with achondroplasia with a
+    growth endpoint?
+  type: search_established
+  layer: L12
+  why_it_matters: Both compounds were promoted as cheap oral alternatives to injected biologics on the strength of mouse and
+    human-iPSC data. Meclizine was then taken to a paediatric phase 2 with adequate, measured systemic exposure and moved
+    height velocity by about 0.1 cm/yr. The statin result has never been taken to a human trial at all, twelve years after
+    publication in a high-profile journal. Whether this reflects delivery failure, a genuine mouse-specific mechanism, or
+    an absence of commercial sponsorship determines whether the repurposing route is worth pursuing.
+  what_is_known: 'Meclizine phase 1b in 12 children: Cmax 167 ng/mL (95% CI 83-250), t1/2 7.4 h, AUC0-24 1170 ng*h/mL at 12.5
+    mg/day, no serious adverse events. Phase 2 in 9 children with concomitant GH: height velocity 4.35 to 4.46 cm/yr; arm
+    span velocity 6.93 cm/yr. Meclozine 2 mg/kg/d improved survival and long-bone length in Fgfr3-ach mice. Statins corrected
+    TD1 and achondroplasia iPSC chondrogenic cultures and increased bone growth in achondroplasia model mice.'
+  what_is_missing: No registered or published statin trial with a linear growth endpoint in FGFR3 skeletal dysplasia; no independent
+    replication of the statin iPSC result; no tissue concentration for either compound at the growth plate; and no controlled
+    meclizine trial without concomitant GH.
+  nearest_evidence:
+  - matsushita2025
+  - matsushita2023
+  - funahashi2024
+  - yamashita2014
+  discriminating_experiment: Run a placebo-controlled meclizine monotherapy trial (no concomitant GH) with paired plasma and,
+    in a consenting surgical subgroup undergoing limb lengthening osteotomy, direct assay of meclizine in resected periosteal
+    and physeal cartilage. DELIVERY FAILURE - drug undetectable or far below the in vitro active concentration in cartilage
+    despite therapeutic plasma levels. MOUSE-SPECIFIC MECHANISM - drug present at active concentration in cartilage and growth
+    still unchanged.
+  tractability: 3
+  search_log_ref: g_l12b_007
+- gap_id: g_l12b_009
+  question: By how much, if at all, does recombinant human growth hormone increase attained adult height in achondroplasia,
+    and does it do so by a mechanism that is additive to or occluded by CNP analogue therapy?
+  type: known_unknown
+  layer: L12
+  why_it_matters: GH is licensed for achondroplasia only in Japan, is described there as producing an unsatisfactory adult
+    height effect, and children are now being transitioned from GH to vosoritide - a switch made without a randomised comparison.
+    Meanwhile the COACH trial has gone the other way and combined a GH prodrug with a CNP prodrug, reporting AGV 8.69 versus
+    5.95 cm/yr for matched CNP monotherapy. Whether GH and NPR2 agonism act on separable steps in the FGFR3-constrained plate,
+    or whether GH simply drives a plate whose ceiling FGFR3 sets, determines whether combination therapy is rational or merely
+    additive on a surrogate.
+  what_is_known: rhGH raises velocity by 3-5 cm/yr across paediatric indications generally. In achondroplasia, Japanese licensure
+    exists with published statements that adult height benefit is unsatisfactory. Real-world cohorts document GH-to-vosoritide
+    transition with age-dependent effectiveness. COACH gives a combination AGV of 8.69 cm/yr against a matched external monotherapy
+    comparator, not a randomised one.
+  what_is_missing: No randomised comparison of GH, CNP analogue and their combination in achondroplasia, and no attained adult
+    height for GH-treated achondroplasia outside the Japanese experience.
+  nearest_evidence:
+  - martn2026
+  - shimada2026
+  - mcdonnell2026
+  - ying2026
+  discriminating_experiment: Randomise treatment-naive children with achondroplasia three ways - CNP analogue alone, GH alone,
+    both - with AGV at 52 weeks and near-adult height as co-primary endpoints, and measure serum CXM and IGF-1 in all arms.
+    SEPARABLE MECHANISMS - the combination arm exceeds the sum of the single-agent effects on CXM and the effect persists
+    to adult height. OCCLUDED - the combination equals the better single agent on CXM, indicating both drive the same FGFR3-limited
+    step.
+  tractability: 3
+- gap_id: g_l12b_011
+  question: Does IGF-1 administered on top of a full growth hormone dose add growth through a GH-independent action on the
+    growth plate, and does that increment persist to adult height?
+  type: known_unknown
+  layer: L12
+  why_it_matters: This is the direct test of whether IGF-1 is merely GH's messenger at the plate or an independent effector,
+    and it is the mechanistic question underneath the entire GH-IGF axis in L4. A six-year randomised trial was designed to
+    answer it, produced a dose-related first-year increment of about 1-2 cm/yr over GH alone, showed that increment narrowing
+    by year 4, and was then terminated for strategic reasons before adult height. The answer was within reach and was abandoned
+    for commercial rather than scientific reasons.
+  what_is_known: 'NCT00572156 posted year-1 mean height velocity: rhGH 45 ug/kg/day alone 9.3 cm/yr (SD 1.7); plus rhIGF-1
+    50 ug/kg 10.1 (1.3); plus 100 ug/kg 9.7 (2.5); plus 150 ug/kg 11.2 (2.1). By year 4 the arms had converged to 7.7 / 8.1
+    / 8.4 / 8.3 cm/yr. n=106 randomised; trial terminated. rhIGF-1 monotherapy in severe primary IGF-1 deficiency gives 0.9
+    height SDS to near-adult height.'
+  what_is_missing: Any adult height comparison of GH alone versus GH plus IGF-1, and any statistical test of the apparent
+    waning of the increment.
+  nearest_evidence:
+  - nct00572156
+  - ramonkrauel2026
+  - martn2026
+  discriminating_experiment: Re-run the design with adult height as the prespecified primary endpoint in a non-commercially-sponsored
+    setting, or, faster, re-analyse the existing NCT00572156 individual patient data for a dose-by-year interaction and for
+    height SDS at last observation. INDEPENDENT IGF-1 ACTION - the year-1 dose-response is monotonic after removing the non-monotonic
+    100 ug/kg arm and the height SDS advantage persists at last observation. MESSENGER ONLY - the increment is fully explained
+    by transient supraphysiological IGF-1 and disappears by year 3-4, as the posted means suggest.
+  tractability: 4
+- gap_id: g_l12b_012
+  question: What linear growth outcomes were achieved with mecasermin rinfabate (rhIGF-1/rhIGFBP-3 complex), and did complexing
+    IGF-1 with its binding protein change the growth response or only the hypoglycaemia risk?
+  type: search_established
+  layer: L12
+  why_it_matters: IGFBP-3 is the principal carrier of circulating IGF-1 and the complex determines how much free IGF-1 reaches
+    tissue. A licensed drug existed that manipulated exactly this variable in children, and its growth data are now effectively
+    unrecoverable from the indexed literature while the same molecule is being developed for preterm lung disease. This is
+    a lost human experiment on IGF-1 bioavailability, and its absence weakens every inference in L4 about free versus bound
+    IGF-1 at the plate.
+  what_is_known: The 1:1 rhIGF-1/rhIGFBP-3 complex was designed to extend circulating IGF-1 half-life and reduce hypoglycaemia,
+    permitting once-daily rather than twice-daily dosing, and was licensed in the mid-2000s for severe primary IGF-1 deficiency
+    before being withdrawn from that indication. The surviving indexed literature on the complex concerns myotonic dystrophy
+    and preterm bronchopulmonary dysplasia (OHB-607).
+  what_is_missing: Any retrievable cohort reporting height velocity or adult height on the complex, and any head-to-head comparison
+    of complexed versus uncomplexed IGF-1 on growth.
+  nearest_evidence:
+  - kemp2006
+  - fda_increlex_label_2025
+  - ramonkrauel2026
+  discriminating_experiment: Request the original BLA clinical review for mecasermin rinfabate from the FDA and extract the
+    height velocity tables; in parallel, compare free IGF-1 concentrations and growth response in children on twice-daily
+    mecasermin versus historical complex-treated patients. BIOAVAILABILITY MATTERS - the complex produced equal growth at
+    lower free IGF-1 exposure and fewer hypoglycaemic events. CARRIER IRRELEVANT TO GROWTH - growth tracked total IGF-1 exposure
+    regardless of complexation, and the complex bought only tolerability.
+  tractability: 2
+  search_log_ref: g_l12b_012
+- gap_id: g_l12b_014
+  question: In children with pituitary gigantism, does GH receptor blockade with pegvisomant limit final adult height more
+    effectively than suppression of GH secretion with a somatostatin analogue?
+  type: search_established
+  layer: L12
+  why_it_matters: 'This is the only human setting where the growth axis is deliberately switched off at two different levels
+    in the same disease, so it is the cleanest available dissection of whether the growth plate responds to circulating GH
+    concentration or to GH receptor occupancy. It also matters clinically: X-linked acrogigantism responds poorly to somatostatin
+    analogues, and a single patient has been carried to final height on pegvisomant monotherapy, but there is no cohort to
+    generalise from.'
+  what_is_known: Pegvisomant blocks GH receptor dimerisation and is titrated to IGF-1, not to GH, which rises during treatment;
+    Tmax 33-77 h, relative bioavailability 57%. Its paediatric safety and effectiveness are not established per FDA labelling.
+    One paediatric X-linked acrogigantism patient reached final height on pegvisomant monotherapy. Somatostatin analogue paediatric
+    experience is confined to case reports and small surgical series.
+  what_is_missing: No cohort of any size reporting final adult height in children treated with either agent as the primary
+    growth-limiting therapy, and no comparison between the two levels of blockade.
+  nearest_evidence:
+  - burren2023
+  - fda_somavert_label_2025
+  - yuen2026
+  discriminating_experiment: Build a multicentre retrospective registry of paediatric GH-excess (X-linked acrogigantism, AIP-mutation
+    macroadenoma, McCune-Albright) with attained final height, treatment modality and IGF-1 trajectory, and model final height
+    SDS on time-integrated IGF-1 versus time-integrated GH. RECEPTOR OCCUPANCY GOVERNS - final height tracks integrated IGF-1
+    regardless of the GH concentration, favouring receptor blockade. SECRETION GOVERNS - final height tracks integrated GH,
+    in which case pegvisomant's rising GH would be a liability.
+  tractability: 2
+  search_log_ref: g_l12b_014
+- gap_id: g_l12b_015
+  question: Why does the predicted-adult-height gain produced by aromatase inhibitors in the first year of treatment fail
+    to persist into years two and three?
+  type: known_unknown
+  layer: L12
+  why_it_matters: 'This is the best-documented instance in human pharmacology of an interim growth gain that does not convert,
+    and it is measured within a randomised trial rather than inferred across studies. Understanding it is directly transferable
+    to the CNP analogue and FGFR3 inhibitor programmes, whose entire evidence base currently consists of first-year gains.
+    Three mechanisms are candidates: tachyphylaxis of aromatase inhibition, compensatory hypothalamic-pituitary-gonadal escape
+    with rising testosterone driving maturation by an oestrogen-independent route, or regression of an initially over-optimistic
+    bone-age-based height prediction.'
+  what_is_known: In 79 pubertal boys with ISS randomised to letrozole 2.5 mg or anastrozole 1.0 mg for up to 3 years, predicted
+    adult height rose at year 1 in both arms and the rise did not persist at years 2 and 3; the 3-year combined gain was +1.3
+    cm (p=0.043) with no between-drug difference. Letrozole produced higher testosterone, lower oestradiol and IGF-1, slower
+    velocity and slower bone age advance than anastrozole yet no greater height gain.
+  what_is_missing: No measurement distinguishing regression of the prediction instrument from a real biological loss of effect,
+    and no attained adult height in the same randomised cohort.
+  nearest_evidence:
+  - zegarra2024
+  - cui2025
+  - alrayess2025
+  discriminating_experiment: Follow the same randomised cohort to attained adult height and compare it with the year-1, year-2
+    and year-3 predictions; simultaneously track serum oestradiol by a high-sensitivity assay and gonadotrophins across the
+    three years. PREDICTION ARTEFACT - attained height matches the year-3 prediction, and the year-1 value was simply an over-estimate
+    produced by acute bone-age deceleration. BIOLOGICAL ESCAPE - oestradiol recovers toward baseline by year 2 despite continued
+    dosing, and attained height falls short of even the year-3 prediction.
+  tractability: 4
+- gap_id: g_l12b_016
+  question: What fraction of a pharmacologically induced increment in annualised growth velocity is converted into attained
+    adult height, and does that conversion factor differ between agents that act on the plate directly and agents that act
+    by delaying maturation?
+  type: quantitative_gap
+  layer: L12
+  why_it_matters: 'Every regulatory decision in this layer implicitly assumes a conversion factor and none states one. Where
+    both measures exist the numbers are stark: GnRH agonists give +3.5 to +4.5 cm of adult height after years of treatment;
+    androgens +1.78 cm; rhIGF-1 +0.9 height SDS; inhaled budesonide -1.2 cm. Meanwhile velocity effects of 1.4-1.7 cm/yr sustained
+    over a decade would integrate to 14-17 cm if fully converted. The gap between those two orders of magnitude is the central
+    quantitative unknown of paediatric growth pharmacology.'
+  what_is_known: Attained adult height is available for GnRH agonists, androgens, rhIGF-1, aromatase inhibitors with GH, and
+    inhaled glucocorticoids. Annualised velocity effects are available for all agents. No single cohort reports both the full
+    velocity integral and the attained height with a control arm.
+  what_is_missing: A published conversion coefficient - centimetres of adult height per cumulative centimetre-year of velocity
+    increment - for any agent, with an uncertainty interval.
+  nearest_evidence:
+  - martn2026
+  - wang2026
+  - kelly2012
+  - ramonkrauel2026
+  discriminating_experiment: Assemble individual patient data from completed trials that measured both serial velocity and
+    attained adult height (CAMP for a negative agent, the GnRH agonist cohorts and androgen cohorts for positive ones), integrate
+    each participant's velocity deviation from their control-matched expectation, and regress attained height deviation on
+    that integral. FULL CONVERSION - slope near 1.0 with narrow CI, implying velocity is an unbiased surrogate. PARTIAL CONVERSION
+    - slope well below 1.0, and the estimate becomes the correction factor every accelerated approval currently lacks. DIVERGENT
+    BY CLASS - separate slopes for maturation-delaying and plate-acting agents would show the surrogate is not transferable
+    between mechanisms.
+  tractability: 4
+- gap_id: g_l12b_017
+  question: Do endocrine growth interventions operate on the plateau of a saturating exposure-response curve, such that dosing
+    schedule and formulation are irrelevant once suppression or agonism is achieved?
+  type: quantitative_gap
+  layer: L12
+  why_it_matters: 'Three independent classes now show the same pattern. CNP analogues: a 24-minute daily peak and a 5.3-day
+    continuous exposure give overlapping effects. GnRH agonists: monthly, quarterly and different agents give comparable outcomes,
+    and fixed dosing has replaced weight-based dosing on population PK grounds. Long-acting growth hormone: weekly is non-inferior
+    to daily. If this reflects a common saturation, then formulation innovation in this field has been largely wasted effort
+    and future gains must come from new targets rather than better exposure. If instead it reflects underpowered comparisons,
+    the field has been prematurely reassured.'
+  what_is_known: Vosoritide urinary cGMP is near saturation at the approved 15 ug/kg/day dose per FDA labelling. Vosoritide
+    +1.57 versus navepegritide +1.49 cm/yr. Lonapegsomatropin weekly beat daily somatropin by 0.91 cm/yr in one trial while
+    somavaratan failed non-inferiority entirely. Fixed-dose leuprolide is justified by population PK.
+  what_is_missing: A dose-response or exposure-response curve with more than two points for any agent in this layer using
+    annualised growth velocity as the response, and any formal test of whether the apparent equivalences are equivalences
+    or underpowered nulls.
+  nearest_evidence:
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  - ying2026
+  - nct02413138
+  discriminating_experiment: Run a four-arm randomised exposure-ranging trial of a single CNP analogue delivering matched
+    weekly total exposure in four different temporal patterns (daily bolus, twice-weekly, weekly bolus, continuous infusion)
+    with AGV and serum CXM as co-primary endpoints. SATURATED - all four arms overlap on both endpoints. PATTERN-SENSITIVE
+    - CXM and AGV separate by schedule, which would mean the current class equivalence is an artefact of comparing two schedules
+    that happen both to be adequate.
+  tractability: 3
+- gap_id: g_l12b_018
+  question: Does the age at which low-dose oestrogen is introduced in Turner syndrome measurably change attained adult height,
+    and where is the boundary between the growth-promoting and fusion-promoting arms of the oestrogen dose-response?
+  type: search_established
+  layer: L12
+  why_it_matters: Oestrogen is the only hormone in human biology with a documented biphasic action on linear growth, and Turner
+    syndrome is the setting in which clinicians deliberately titrate along that curve. The timing decision is made routinely,
+    guided by consensus rather than by a randomised comparison, and it trades adult height against pubertal timing and bone
+    mineral accrual. Establishing the boundary would also fix a parameter that L7 needs for any model of oestrogen-driven
+    plate senescence.
+  what_is_known: rhGH plus timed low-dose oestrogen is guideline-endorsed standard care in Turner syndrome and the timing
+    trade-off is explicitly described in current management reviews. Lower-dose, earlier oestrogen for pubertal induction
+    has been proposed. The complementary high-dose experiment - oestrogen given to reduce excessive height in constitutionally
+    tall adolescents - has largely been abandoned, removing the upper arm of the curve from contemporary data.
+  what_is_missing: No randomised comparison of oestrogen introduction ages or doses with attained adult height as the endpoint,
+    and no human dose-response relating serum oestradiol to rate of epiphyseal fusion.
+  nearest_evidence:
+  - turner2025
+  - guzzetti2024
+  - martn2026
+  discriminating_experiment: Randomise girls with Turner syndrome on established rhGH to oestradiol introduction at two prespecified
+    ages with identical escalation schedules, with attained adult height as primary endpoint and serial high-sensitivity oestradiol
+    plus automated bone age as mediators. TIMING MATTERS - adult height differs between arms and the difference is explained
+    by integrated oestradiol exposure before fusion. TIMING IRRELEVANT WITHIN THIS RANGE - no height difference, which would
+    free the decision to be made on pubertal and bone-health grounds alone.
+  tractability: 3
+  search_log_ref: g_l12b_018
+- gap_id: g_l12b_019
+  question: Does pharmacological PTH1R agonism expand the proliferative zone and increase linear growth in a human, as PTHrP-PTH1R
+    biology and the Jansen metaphyseal chondrodysplasia phenotype predict?
+  type: method_blocked
+  layer: L12
+  why_it_matters: 'PTH1R is the receptor through which the growth plate''s own pace-setting signal operates, and two PTH1R
+    agonists are approved drugs. Neither can be given to a growing child: both labels restrict use with open epiphyses because
+    of osteosarcoma risk. The atlas therefore has a structural hole exactly where its most mechanistically apt intervention
+    would be. Jansen metaphyseal chondrodysplasia - constitutive PTH1R activation in humans - shows the receptor does drive
+    a dramatic growth plate phenotype, so the untested prediction is not idle.'
+  what_is_known: Teriparatide labelling instructs avoidance with open epiphyses; abaloparatide is not recommended in paediatric
+    patients with open epiphyses; both state paediatric safety and effectiveness are not established. Paediatric exposure
+    exists only in hypoparathyroidism and rare calcium disorders, none with a growth endpoint. A mouse model of Jansen metaphyseal
+    chondrodysplasia is available for mechanistic work.
+  what_is_missing: Any human growth readout under PTH1R agonism, at any dose, at any age with open epiphyses.
+  nearest_evidence:
+  - fda_forteo_label_2025
+  - fda_tymlos_label_2025
+  - tantivit2026
+  - hppner2025
+  discriminating_experiment: Since a prospective trial is regulatorily blocked, extract growth data retrospectively from the
+    paediatric hypoparathyroidism and activating-CaSR-mutation cohorts already exposed to teriparatide or palopegteriparatide
+    - height velocity before and during treatment against the child's own pre-treatment trajectory - and pair it with growth
+    plate morphometry in the Jansen mouse under matched intermittent dosing. GROWTH-PROMOTING - treated children show velocity
+    above their own pre-treatment trajectory and the mouse shows proliferative zone expansion. NEUTRAL - neither, which would
+    decouple PTH1R agonism from linear growth and remove a major hypothesis.
+  tractability: 2
+- gap_id: g_l12b_020
+  question: Do bisphosphonates change linear growth in children, independently of the severity of the underlying bone disease
+    for which they are given?
+  type: known_unknown
+  layer: L12
+  why_it_matters: Bisphosphonates act precisely at the chondro-osseous junction, blocking the resorption of the mineralised
+    hypertrophic cartilage template - the step that converts plate output into bone. Blocking it could in principle either
+    retard growth by impeding the removal of the template or have no effect if resorption is not rate-limiting. Thousands
+    of children receive these drugs for years and the question has not been answered because treated children all have skeletal
+    disease that itself impairs growth.
+  what_is_known: Metaphyseal sclerotic bands timed to dosing cycles are a universal radiographic finding, proving the drugs
+    reach and persist at the mineralising front. One-year bone microstructure and strength changes in treated children with
+    osteogenesis imperfecta are comparable to matched healthy controls. In growing osteogenesis imperfecta mice, a CNP analogue
+    plus a bisphosphonate enhanced bone growth beyond either alone.
+  what_is_missing: Any human study that isolates a bisphosphonate effect on height from disease severity, and any human test
+    of the additive CNP-plus-bisphosphonate effect seen in mice.
+  nearest_evidence:
+  - mulcrone2026
+  - pereira2025
+  - hosseinitabata2026
+  discriminating_experiment: 'Use a within-condition, dose-varying design: in a large osteogenesis imperfecta registry stratified
+    by molecular type and baseline severity, regress height velocity on cumulative bisphosphonate dose with mixed models including
+    a patient-level random intercept, and confirm with an interrupted-time-series analysis around treatment initiation and
+    around treatment holidays. NO GROWTH EFFECT - velocity is flat in cumulative dose within strata. GROWTH RETARDATION -
+    a negative dose-slope survives adjustment and reverses during holidays, which would make resorption of the hypertrophic
+    template rate-limiting for elongation.'
+  tractability: 4
+- gap_id: g_l12b_021
+  question: Is a drug-induced deficit in growth velocity recovered by catch-up growth after the drug is stopped, and does
+    the answer depend on whether the agent acts on the plate directly or through appetite and nutrition?
+  type: known_unknown
+  layer: L12
+  why_it_matters: The atlas contains three growth-toxic agents with different mechanisms and different apparent reversibility.
+    Inhaled budesonide produced a deficit within two years that persisted unchanged to adult height - no recovery at all.
+    Imatinib produced a deficit with documented adolescent catch-up that was nonetheless insufficient - partial recovery.
+    Methylphenidate produces a height Z deficit whose fate is unknown, with a weight-to-height deficit ratio suggesting a
+    nutritional route that ought to be the most recoverable. If plate-acting agents are irreversible and nutrition-acting
+    agents are reversible, that is a strong statement about whether the plate has a fixed proliferative budget.
+  what_is_known: 'CAMP: budesonide adult height -1.2 cm, equal to the 2-year deficit, so no recovery and no progression. Imatinib:
+    height Z -0.6 to -1.1 to skeletal maturity despite catch-up, with the effect confined to prepubertal initiation. Methylphenidate:
+    height Z -0.13, weight Z -0.25, with no adult height data.'
+  what_is_missing: Adult height for methylphenidate-treated children, and any study measuring catch-up velocity after discontinuation
+    with a matched control for all three agents.
+  nearest_evidence:
+  - kelly2012
+  - sadanand2026
+  - cao2026
+  discriminating_experiment: Link national prescription registries to conscription or occupational adult height records for
+    stimulant-exposed, inhaled-glucocorticoid-exposed and unexposed cohorts, with exposure-duration and age-at-first-exposure
+    as covariates and sibling comparison to control for confounding. FIXED BUDGET - all three exposures leave proportionate
+    permanent deficits. MECHANISM-DEPENDENT - the nutritional exposure recovers fully while the plate-acting exposures do
+    not, showing that the plate can make up nutritionally lost growth but not pharmacologically suppressed proliferation.
+  tractability: 4
+- gap_id: g_l12b_022
+  question: In a childhood cancer survivor with short stature, what fraction of the height deficit is caused by direct cytotoxic
+    or radiation injury to the growth plate itself, and what fraction by hypothalamic-pituitary growth hormone deficiency?
+  type: known_unknown
+  layer: L12
+  why_it_matters: The two mechanisms call for different treatments. Endocrine deficiency is correctable with growth hormone
+    replacement; a directly damaged plate is not, and giving GH to it wastes the treatment window and exposes the survivor
+    to GH risks for no benefit. Growth hormone therapy after haematopoietic cell transplantation exists as an organised national
+    programme precisely because the two coexist, and its incomplete success is the clinical expression of the unpartitioned
+    mechanism.
+  what_is_known: Cranial and total body irradiation cause GH deficiency. High-dose methotrexate has direct antiproliferative
+    effects on chondrocytes and osteoblasts and a recognised osteopathy; cisplatin induces chondrocyte oxidative stress and
+    apoptosis in vitro. A prospective JIA cohort has examined methotrexate effects on growth plate development at conventional
+    doses. Post-transplant GH replacement partially but not fully restores growth.
+  what_is_missing: No study measures growth plate structure or function directly in treated survivors, and no analysis partitions
+    the height deficit between effector damage and endocrine deficiency.
+  nearest_evidence:
+  - shimomura2026
+  - ahirwar2025
+  - sokhan2026
+  - ferrari2026
+  discriminating_experiment: In survivors with documented GH deficiency, measure the height velocity response to a standardised
+    GH replacement dose and relate it to prior cumulative radiation dose to the lower limb plates and to cumulative alkylator
+    and antimetabolite exposure, with serum CXM as a direct marker of endochondral ossification activity. ENDOCRINE-DOMINANT
+    - velocity response and CXM rise are independent of local radiation dose. PLATE-DAMAGE-DOMINANT - both fall steeply with
+    local dose despite identical GH exposure and identical IGF-1 response, identifying a damaged effector.
+  tractability: 3
+- gap_id: g_l12b_023
+  question: Can glucocorticoid anti-inflammatory efficacy be separated from growth suppression at the human growth plate,
+    and does any dissociative steroid achieve that separation with an adult-height endpoint?
+  type: known_unknown
+  layer: L12
+  why_it_matters: Chronic glucocorticoid therapy is the most common iatrogenic cause of growth failure in children, and the
+    sparing strategies tried so far - alternative classical steroids, route change, dissociative agents - have each been adopted
+    on partial evidence. CAMP shows the route-change strategy still costs 1.2 cm of adult height. Deflazacort's US label carries
+    no growth-sparing claim. Vamorolone is designed for the separation but has been compared to classical steroids only across
+    trials, not against an adult-height endpoint. Without a definitive answer, children receive whichever steroid local practice
+    prefers.
+  what_is_known: 'CAMP: inhaled budesonide 400 ug/day reduced adult height by 1.2 cm (95% CI -1.9 to -0.5), dose-dependently
+    at -0.1 cm per ug/kg/day in the first 2 years, with prepubertal children most affected. Growth and motor function centiles
+    track together in corticosteroid-treated DMD. Vamorolone has been compared with prednisone and deflazacort by cross-trial
+    analysis of FOR-DMD, and real-world transition criteria have been published.'
+  what_is_missing: No randomised head-to-head of a dissociative steroid against a classical one with growth as a prespecified
+    endpoint, and no glucocorticoid study outside CAMP with attained adult height.
+  nearest_evidence:
+  - kelly2012
+  - clemens2026
+  - stimpson2025
+  - fda_emflaza_label_2025
+  discriminating_experiment: Randomise boys with DMD to vamorolone or deflazacort at matched anti-inflammatory potency with
+    height velocity at 24 months as primary endpoint and time-to-loss-of-ambulation as co-primary, powered for non-inferiority
+    on function and superiority on growth. DISSOCIATION ACHIEVED - equal function with significantly better height velocity.
+    NOT DISSOCIATED - the two endpoints move together, confirming that transactivation and transrepression are not separable
+    at clinically useful doses in this tissue.
+  tractability: 4
+- gap_id: g_l12b_024
+  question: Do the FDA multidisciplinary and pharmacology/toxicology review documents for vosoritide, navepegritide and infigratinib
+    contain animal tissue distribution data showing drug concentration in growth plate cartilage?
+  type: method_blocked
+  layer: L12
+  why_it_matters: Sponsors routinely perform quantitative whole-body autoradiography and tissue distribution studies in the
+    nonclinical package, and those data are summarised in the pharmacology/ toxicology review rather than in the label or
+    in any journal article. If growth plate concentrations exist anywhere, this is where they are. Retrieving them would immediately
+    resolve or sharply constrain gap g_l12b_002 for at least three agents, at no experimental cost.
+  what_is_known: Structured product labelling was retrieved for eight agents in this layer via the openFDA drug label API,
+    and Drugs@FDA overview metadata confirms NDA 214938 (vosoritide, approved 19 Nov 2021) and NDA 219164 (navepegritide)
+    have review documents on file. None of the labels contains tissue distribution data for the growth plate.
+  what_is_missing: The review PDFs themselves were not retrieved in this sweep, so their nonclinical distribution sections
+    remain unread.
+  nearest_evidence:
+  - fda_drugsatfda_voxzogo_2021
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  discriminating_experiment: Retrieve and read the pharmacology/toxicology review sections of NDA 214938, NDA 219164 and the
+    infigratinib application, specifically the tissue distribution and quantitative whole-body autoradiography subsections.
+    DATA EXIST - extract cartilage-to-plasma concentration ratios and close g_l12b_002 for those agents. DATA ABSENT - the
+    absence is then established at the regulatory level too, strengthening the systematic finding.
+  tractability: 5
+- gap_id: g_l12b_025
+  question: Do CNP analogues alter the rate and quality of regenerate bone formation during surgical limb lengthening, and
+    does concurrent pharmacotherapy change the fixator index or complication rate?
+  type: known_unknown
+  layer: L12
+  why_it_matters: Limb lengthening and CNP analogue therapy are now given to the same children, and they act on different
+    ossification mechanisms - distraction regenerate is intramembranous while the drug targets endochondral growth. Animal
+    work suggests CNP analogues affect bone mineral density and callus consolidation. If the drug accelerates consolidation,
+    fixation time (currently 37.1 days/cm and 7.71 months mean duration) could fall and the 56.1% complication rate with it;
+    if it produces premature consolidation, distraction could be compromised. The interaction is being run in clinical practice
+    ahead of the data.
+  what_is_known: 'Pooled lengthening outcomes in achondroplasia: femoral 8.85 cm (95% CI 7.42-10.28), tibial 7.36 cm, humeral
+    8.38 cm, fixator index 37.1 days/cm (95% CI 32.37-41.82), complication rate 56.1% (95% CI 26.9-85.2), across 14 studies
+    and 1149 patients. Reviews note animal evidence that CNP analogues affect bone density, callus consolidation and medullary
+    canal area, and international modified-Delphi expert opinion exists on combining vosoritide with limb surgery.'
+  what_is_missing: No study reports fixator index, consolidation index or complication rate stratified by concurrent CNP analogue
+    exposure.
+  nearest_evidence:
+  - hosny2026
+  - qian2026
+  - merchant2025
+  discriminating_experiment: Prospective multicentre cohort of achondroplasia limb lengthening stratified by concurrent CNP
+    analogue exposure, with fixator index, pixel-value-ratio consolidation index and complication rate as endpoints and surgeon
+    and technique as covariates. ACCELERATED CONSOLIDATION - fixator index falls in the exposed group and premature consolidation
+    events rise, requiring protocol adaptation. NO INTERACTION - indices are equivalent, and the two treatments can be combined
+    without modification.
+  tractability: 4
+- gap_id: g_l13b_001
+  question: Does any catalogued, publicly accessible biobank of human growth plate tissue exist, and if not, how much tissue
+    is being discarded annually in paediatric orthopaedic practice that could constitute one?
+  type: search_established
+  layer: L13
+  why_it_matters: A donor census of the entire published literature finds at most 102 postnatal human growth plates with stated
+    donor counts, against 919 mouse records in GEO alone. If the binding constraint on human growth plate biology were biological
+    scarcity, nothing could be done. But epiphysiodesis, guided-growth plating, polydactyly correction, limb lengthening and
+    amputation are routine procedures in which physeal tissue is discarded, so the constraint may be aggregation rather than
+    supply. Which of these it is determines whether the human evidence base can be enlarged at all.
+  what_is_known: 'Investigator-held single-centre collections exist and are visible only through the papers that used them:
+    a Stockholm epiphysiodesis series spanning nilsson1999, nilsson2003, ramesh2022, zhang2024a and chu2026; a Vienna polydactyly
+    series spanning walzer2014 and zoehrer2025; and single-specimen holdings (white2008, wang2014, sales2009). Donor counts
+    per study range from 1 to 24.'
+  what_is_missing: Any public catalogue, consent framework or age- and site-annotated repository of human physeal tissue;
+    and any published estimate of the volume of physeal tissue discarded in routine paediatric orthopaedic surgery.
+  nearest_evidence:
+  - human_gp_donor_census_20260805
+  - nilsson2003
+  - walzer2014
+  - gse288028
+  discriminating_experiment: Audit one year of theatre records at three tertiary paediatric orthopaedic centres, counting
+    procedures that resect or transect physeal cartilage (epiphysiodesis, guided growth, polydactyly, limb reconstruction,
+    tumour resection) and the mass of physeal tissue discarded. Under hypothesis A (biological scarcity) the annual discarded
+    tissue across three centres is of the same order as the entire historical literature, roughly 100 plates, and no biobank
+    is feasible. Under hypothesis B (aggregation failure) it exceeds the entire historical literature by an order of magnitude
+    in a single year, which converts the field's central constraint from a fact of nature into a logistics problem.
+  tractability: 5
+  search_log_ref: g_l13b_001
+- gap_id: g_l13b_002
+  question: Why does no reference human tissue resource - Human Cell Atlas, GTEx or Human Protein Atlas - contain growth plate
+    or cartilage, and what specific downstream analyses are foreclosed as a result?
+  type: search_established
+  layer: L13
+  why_it_matters: Height is among the most-studied human quantitative traits and its GWAS has over 12,000 independent signals,
+    but variant-to-function analysis requires expression and regulatory data from the tissue that produces the trait. GTEx
+    has 54 tissues, no cartilage and no donors under 20, so growth plate colocalisation is not possible; the atlas gaps g_l8gwas_001
+    and g_l8gwas_002 exist for this reason and cannot be closed with existing reference resources. The same absence explains
+    why human growth plate single-cell clusters are annotated against murine references.
+  what_is_known: The HCA organ vocabulary enumerated on 2026-08-05 contains bone marrow, bone tissue, bone element, femur,
+    hindlimb, limb, skeletal element and musculoskeletal system, and no cartilage or growth plate term. GTEx contains 54 tissue
+    sites of which the only skeletal one is skeletal muscle. Human Protein Atlas normal-tissue profiling returns no cartilage
+    compartment. The one human resource with spatially resolved cartilage is the embryonic limb atlas at 5-9 post-conception
+    weeks (zhang2024_2), which predates the growth plate.
+  what_is_missing: A paediatric, cartilage-containing reference expression and regulatory resource - the growth plate equivalent
+    of a GTEx tissue - with donors spanning the growing years.
+  nearest_evidence:
+  - geo_census_l13b_20260805
+  - zhang2024_2
+  - gse9160
+  - geo_census_20260805
+  discriminating_experiment: Assemble bulk RNA-seq plus ATAC-seq from 50 human growth plate biopsies spanning ages 5 to 16
+    and at least three anatomical sites, with donor genotypes, and test colocalisation of height GWAS signals against growth
+    plate eQTLs. Under the hypothesis that height variants act in the growth plate, colocalisation rates should exceed those
+    obtained in any GTEx tissue by a clear margin; under the alternative that height acts systemically through endocrine tissues,
+    growth plate colocalisation should not outperform liver, pituitary or adipose. The result determines whether the tissue-of-action
+    assumption that underlies most of this atlas is correct.
+  tractability: 3
+  search_log_ref: g_l13b_002
+- gap_id: g_l13b_003
+  question: What fraction of hypertrophic chondrocytes is lost during enzymatic dissociation of growth plate for single-cell
+    RNA-seq, and does the loss vary with donor age and zone?
+  type: quantitative_gap
+  layer: L13
+  why_it_matters: Every statement of the form "population X constitutes Y% of growth plate cells" derived from dissociated
+    scRNA-seq is a statement about cells that survived dissociation. If hypertrophic recovery is, say, 10% of true abundance,
+    then the apparent rarity of hypertrophic states in published datasets - and therefore inferences about the length of the
+    hypertrophic phase and about hypertrophic-to-osteoblast transition frequency - are artefacts. The bias is directional
+    and its magnitude is unknown, which is the worst combination.
+  what_is_known: Human terminal hypertrophic chondrocyte volume is about 5,900 um3, equivalent to roughly 22 um diameter (white2008),
+    against a droplet-capture particle ceiling of roughly 40-50 um; hypertrophic cells sit in calcifying matrix requiring
+    either longer digestion or decalcification; and methodological reviews name mineralised-matrix dissociation as the principal
+    barrier to skeletal single-cell work (li2025, delos2026). No study measures the loss.
+  what_is_missing: A paired experiment reporting zonal cell composition by histology and by scRNA-seq in the same growth plate,
+    and therefore a per-zone recovery coefficient.
+  nearest_evidence:
+  - white2008
+  - li2025
+  - delos2026
+  - gse76157
+  discriminating_experiment: 'Take paired halves of the same growth plate (rat or pig, where paired tissue is obtainable in
+    quantity). Half A: stereological counting of cells per zone on serial sections. Half B: standard enzymatic dissociation
+    followed by scRNA-seq with zonal assignment. Compute recovery per zone as scRNA-seq proportion divided by histological
+    proportion. Under the null of unbiased dissociation all zonal recovery coefficients are 1.0 within sampling error; under
+    the hypertrophic-loss hypothesis the hypertrophic coefficient falls well below 1 while resting and proliferative coefficients
+    rise above 1. Repeat with single-nucleus isolation to test whether nuclear protocols restore the ratio.'
+  tractability: 4
+- gap_id: g_l13b_004
+  question: Has any high-resolution three-dimensional imaging method - synchrotron phase-contrast tomography or equivalent
+    - ever been applied to a human growth plate, and what would chondrocyte-resolved 3D imaging of a human physis show that
+    sections cannot?
+  type: search_established
+  layer: L13
+  why_it_matters: Column architecture, clone geometry and the spatial pattern of bony bridging are three-dimensional properties
+    being inferred from two-dimensional sections. The one human physis measured stereologically was a closing distal tibia
+    in which cells were arranged in clusters with intervening acellular areas and 46% of the central region was already bridged
+    (white2008) - a geometry that a section plane can easily misrepresent. Synchrotron tomography resolves individual chondrocytes
+    in intact human cartilage at 0.65-2.75 um and has simply never been pointed at a physis.
+  what_is_known: Human articular cartilage from 49 donors imaged at 2.75 um voxel with 0.65 um validation (b2026); human osteochondral
+    interface lacunae segmented at 650 nm (xu2024). The one human growth plate study using synchrotron-class facilities used
+    nanoindentation, EDX and proteomics instead (xie2025).
+  what_is_missing: Any chondrocyte-resolved three-dimensional dataset from a human growth plate.
+  nearest_evidence:
+  - b2026
+  - xu2024
+  - white2008
+  - xie2025
+  discriminating_experiment: 'Image three human growth plate specimens obtained as surgical discard - one prepubertal, one
+    mid-pubertal, one closing - by synchrotron phase-contrast microtomography at 1-3 um voxel with mosaicking across the full
+    plate thickness, and segment chondrocytes in 3D. Primary readout: whether columns are genuinely linear stacks or helical/branching
+    structures, and whether apparent clusters in closing plates are true 3D clusters or section artefacts of oblique columns.
+    Under the column hypothesis, cell centroids in the proliferative zone lie on near-collinear axes; under the branching
+    hypothesis they do not, which would invalidate the one-progenitor-one-column model on which L2 rests.'
+  tractability: 3
+  search_log_ref: g_l13b_004
+- gap_id: g_l13b_005
+  question: Has in situ hybridization ever been used to build a zone-resolved transcript map of the HUMAN growth plate, and
+    would a modern branched-probe survey reproduce the murine zonal map?
+  type: search_established
+  layer: L13
+  why_it_matters: The zonal transcript map that the field reasons with - Ihh prehypertrophic, PTHrP resting, Col10a1 hypertrophic
+    - was built by in situ hybridization in mouse. Human zonal transcript data exist only from two donors by laser capture
+    (gse9160), and human zonal PROTEIN data come from immunohistochemistry whose artefact modes have already produced one
+    unresolved contradiction about estrogen receptor distribution. A human ISH survey would be the cheapest possible test
+    of whether the murine map transfers.
+  what_is_known: Screened zonal ISH studies are murine or non-mammalian without exception. Branched-probe chemistries tolerate
+    degraded RNA far better than classical riboprobes, and decalcified archival human physeal blocks exist in pathology departments.
+  what_is_missing: A systematic human zonal ISH or RNAscope survey of the canonical zonal markers.
+  nearest_evidence:
+  - gse9160
+  - stjacques1999
+  - nilsson2003
+  - giger2026
+  discriminating_experiment: Run a 12-target RNAscope panel (PTHRP, IHH, PTH1R, COL2A1, COL10A1, SOX9, RUNX2, MMP13, NPR2,
+    NPPC, FGFR3, SPP1) on decalcified archival human physeal blocks from at least six donors spanning prepubertal to peripubertal,
+    with zone boundaries assigned on adjacent H&E. Under the conservation hypothesis, each transcript occupies the zone predicted
+    from mouse; under the divergence hypothesis, at least one canonical marker occupies a different zone, which would require
+    re-derivation of every human zonal claim inherited from mouse.
+  tractability: 4
+  search_log_ref: g_l13b_005
+- gap_id: g_l13b_006
+  question: Why has single-nucleus RNA-seq never been applied to human growth plate tissue, when it is the standard solution
+    to mineralised-matrix dissociation and would unlock archival material?
+  type: search_established
+  layer: L13
+  why_it_matters: The human growth plate single-cell corpus is four donors with withheld raw data (gse288028). Single-nucleus
+    sequencing works on frozen and archival tissue and does not require the enzymatic digestion that destroys hypertrophic
+    cells, so it converts the binding constraint from fresh-tissue access to archive access - and archives are far larger
+    than the roughly 100 plates in the prospective literature. The absence is therefore not explained by difficulty.
+  what_is_known: Methodological reviews name snRNA-seq as the route around mineralised-matrix dissociation in skeletal tissue
+    (li2025, delos2026, giger2026). No human growth plate single-nucleus dataset exists in GEO or in the literature. No zone-resolved
+    human proteome exists either.
+  what_is_missing: Any human growth plate single-nucleus dataset, and any zone-resolved human growth plate proteome.
+  nearest_evidence:
+  - li2025
+  - delos2026
+  - giger2026
+  - gse288028
+  discriminating_experiment: Retrieve 20 archival decalcified human physeal blocks spanning ages 4-16 from paediatric pathology,
+    perform nuclear isolation and snRNA-seq, and compare the recovered zonal composition with the dissociation-based composition
+    in gse288028. Under the dissociation-bias hypothesis, hypertrophic and prehypertrophic nuclei are recovered at substantially
+    higher proportion than hypertrophic cells were in the dissociated data; under the null they match. Either result is informative,
+    and the experiment simultaneously multiplies the human donor base fivefold.
+  tractability: 4
+  search_log_ref: g_l13b_006
+- gap_id: g_l13b_007
+  question: Has proliferative kinetics ever been measured directly in a living human growth plate, and if the answer is permanently
+    no, what is the best achievable substitute?
+  type: search_established
+  layer: L13
+  why_it_matters: The 20-day human proliferative cycle time used throughout this atlas is not a measurement. It is 24 cells
+    per column divided by a radiographic elongation rate of 1.4 cm/year (kember1976). Every model of column kinetics, every
+    estimate of how many divisions a resting-zone progenitor has left, and the whole finite-proliferative-capacity framework
+    in L2 inherit that derived number. If it is wrong by a factor of two, the division budget in g_l2stem_008 is wrong by
+    a factor of two.
+  what_is_known: In vivo thymidine-analogue and tetracycline labelling are standard in animals (farnum1993, wilsman1996a,
+    farnum2003) and forbidden in children. The only human labelling study located is in vitro tritiated thymidine on human
+    and porcine tissue (thurston1985). Rodent cycle time is about 2 days, tenfold shorter (kember1976).
+  what_is_missing: Any direct measurement of human growth plate cell cycle time, growth fraction, or S-phase duration; and
+    any validated non-invasive surrogate.
+  nearest_evidence:
+  - kember1976
+  - thurston1985
+  - farnum1993
+  - wilsman1996a
+  discriminating_experiment: 'Two-arm approach. Arm 1: apply cumulative EdU labelling ex vivo to fresh human growth plate
+    explants from epiphysiodesis (the format already validated in gse246390 and ramesh2022) across a 0-72 h series, fitting
+    a labelled-fraction curve to recover S-phase duration and growth fraction. Arm 2: exploit natural experiments - measure
+    telomere attrition or somatic mutation burden per cell across zones in human physeal tissue as a division counter. Under
+    the 20-day hypothesis, the ex vivo labelling index at 24 h is about 5% of proliferative-zone cells; under a rodent-like
+    2-day cycle it approaches 50%, and the two are trivially distinguishable in a single experiment on tissue that is already
+    being collected.'
+  tractability: 4
+  search_log_ref: g_l13b_007
+- gap_id: g_l13b_008
+  question: Can a human iPSC-derived cartilage construct be driven to form stacked columnar architecture with unidirectional
+    elongation, and what boundary condition is missing - oxygen gradient, mechanical constraint, or a perichondrial ring?
+  type: known_unknown
+  layer: L13
+  why_it_matters: 'If a human growth plate could be built in vitro, every question in this layer that is blocked by tissue
+    scarcity becomes tractable, including allele-specific effects on column formation and on the hypertrophic volume set point.
+    The failure to build one is informative in itself: it says that zonal organisation is not cell-autonomous and requires
+    a boundary condition that current protocols do not supply.'
+  what_is_known: Human iPSC protocols reliably generate hypertrophic chondrocytes that transdifferentiate to osteoblasts and
+    mineralise (kamakura2023, GSE219215), and region-specific skeletal assembloids generate SP7+ growth plate chondrocytes
+    via PRRX1+ limb-bud mesenchyme. No protocol produces columnar zonal architecture; this is stated as an unmet challenge
+    in the field review (zhang2025_2).
+  what_is_missing: Identification of the sufficient boundary condition for columnar organisation in a human construct.
+  nearest_evidence:
+  - zhang2025_2
+  - kamakura2023
+  - gse267139
+  discriminating_experiment: 'Culture human iPSC-derived chondroprogenitor constructs under a factorial combination of three
+    candidate boundary conditions: an imposed oxygen gradient (hypoxic at one face), uniaxial mechanical confinement with
+    a free elongation axis, and a perichondrium-like collagen ring restricting lateral expansion. Readout: presence of stacked
+    columns by light-sheet or synchrotron imaging, and unidirectional length increase. Under the oxygen hypothesis, columns
+    require only the gradient; under the mechanical hypothesis, only confinement; under the perichondrial hypothesis, only
+    the ring. A null in all eight cells of the factorial would indicate that column formation requires a clonal history that
+    no aggregate construct can supply, which would be a strong argument for the resting-zone progenitor model.'
+  tractability: 3
+- gap_id: g_l13b_009
+  question: Does the rat zone-resolved growth plate transcriptome predict the human one, gene by gene, and what is the concordance
+    coefficient?
+  type: quantitative_gap
+  layer: L13
+  why_it_matters: 'Rodent zonal expression data are routinely substituted for human when interpreting human genetics: height
+    GWAS loci were prioritised by expression in rodent growth plate microarrays (lui2012). Both datasets exist and have existed
+    for over a decade - 35 rat arrays (gse16981) and 10 human arrays across five zones (gse9160) - and the concordance between
+    them has never been published. This is a computation, not an experiment, and it calibrates the single most common species-transfer
+    step in the field.'
+  what_is_known: GSE9160 gives zone-assigned expression for two human donors across resting, proliferative, prehypertrophic,
+    hypertrophic and perichondrium, with 12,193-18,454 probe sets present. GSE16981 gives the rat equivalent with 35 arrays.
+    Both are public with raw data.
+  what_is_missing: A published orthologue-matched, zone-matched correlation between the two, and a per-gene list of the transcripts
+    whose zonal assignment differs between species.
+  nearest_evidence:
+  - gse9160
+  - gse16981
+  - lui2012
+  discriminating_experiment: Map probes to orthologous genes, quantile-normalise within platform, compute zone-wise rank correlation
+    between human and rat for the ~10,000 shared expressed orthologues, and report both the global concordance and the tail
+    of discordant genes. Under the conservation hypothesis, zone-wise Spearman correlation exceeds 0.6 and the canonical markers
+    are concordant; under the divergence hypothesis it falls below 0.3 and the discordant tail is enriched for signalling
+    receptors, which would mean the rodent-based prioritisation of height genes needs redoing. The n=2 human sample size bounds
+    the achievable precision and is itself the result to report.
+  tractability: 5
+- gap_id: g_l13b_010
+  question: Because no human growth plate can be sampled twice, every human dataset is cross-sectional - what specific inferences
+    does this foreclose, and can any within-subject design substitute?
+  type: method_blocked
+  layer: L13
+  why_it_matters: Sampling a growth plate destroys it, so the same plate cannot be observed at two times. This makes trajectory
+    an inference from a cross-section of different children, which cannot distinguish a population that changes uniformly
+    from one in which subgroups change at different times - precisely the ambiguity at the centre of L7, where different plates
+    in the same individual fuse years apart (g_l7fuse_012). It also means that no human study can establish that resting-zone
+    depletion PRECEDES fusion rather than accompanying it (g_l2stem_006).
+  what_is_known: Exactly two within-subject human designs exist. Emons sampled the same girl at Tanner B2 and B3, obtaining
+    two growth plate specimens from one donor (emons2011_2, gse18338). Wang compared growth plates from limbs amputated before
+    and 17 months after denosumab treatment in one 9-year-old (wang2014). Both are n=1 and both were possible only because
+    of unusual clinical circumstances.
+  what_is_missing: Any repeated-measures human growth plate dataset with more than one donor, and any validated non-invasive
+    in vivo readout of intra-plate state that could substitute.
+  nearest_evidence:
+  - emons2011_2
+  - wang2014
+  - gse18338
+  - dymerska2018
+  discriminating_experiment: 'Two routes, both feasible. Route A: bilateral asymmetric surgery - in children undergoing staged
+    bilateral epiphysiodesis, sample one side at the first operation and the contralateral side at the second, giving a genuine
+    within-subject two-timepoint series in a paired plate. Route B: pair 7 T quantitative MRI of an intact contralateral physis
+    with histology of the resected side at the same visit, to calibrate a non-invasive proxy against ground truth; if quantitative
+    susceptibility or T1 maps track zone heights with acceptable error, the proxy can then be applied longitudinally. Route
+    B is the only pathway to a true human growth plate time series.'
+  tractability: 3
+- gap_id: g_l13b_011
+  question: How fast does RNA integrity fall in human physeal cartilage as a function of post-mortem or post-resection interval
+    and of decalcification protocol, and what is the maximum interval compatible with spatial transcriptomics?
+  type: quantitative_gap
+  layer: L13
+  why_it_matters: The single highest-value missing experiment identified in this layer - spatial transcriptomics of a human
+    growth plate (g_l13data_001) - is blocked by RNA quality, not by platform availability. PolyA-capture spatial platforms
+    require high RNA integrity, and physeal tissue must usually be decalcified. Without a measured RIN-versus-interval and
+    RIN-versus-decalcifier curve for cartilage specifically, every attempt is a gamble, which is a strong disincentive when
+    the tissue is nearly irreplaceable.
+  what_is_known: RNA-Rescue Spatial Transcriptomics was developed to recover spatial profiles from low-integrity samples and
+    is deposited with its benchmarking data (gse221571). Reviews of spatial transcriptomics in bone identify decalcification
+    and RNA integrity as the principal barriers (giger2026, delos2026). Cartilage-specific degradation kinetics were not located.
+  what_is_missing: A cartilage-specific curve of RNA integrity against time-to-fixation and against decalcification agent,
+    concentration and duration, with the threshold RIN at which each spatial platform still returns usable data.
+  nearest_evidence:
+  - gse221571
+  - giger2026
+  - delos2026
+  - gse9160
+  discriminating_experiment: 'Take porcine growth plate as the abundant surrogate. Vary time-to-fixation (0, 2, 6, 12, 24
+    h at 4 C and at room temperature) and decalcification (EDTA at two concentrations for 3, 7, 14 days; formic acid for 1,
+    2 days), measuring RIN and DV200 at every cell of the design, then run Visium and a probe-based platform at three representative
+    quality levels. Readout: genes detected per spot against RIN. Under the hypothesis that decalcification dominates, EDTA
+    duration explains most of the variance and short-EDTA protocols suffice; under the hypothesis that ischaemic time dominates,
+    time-to-fixation dominates and the operating room, not the histology laboratory, is where the protocol must change. Confirm
+    the winning protocol on two human specimens.'
+  tractability: 5
+- gap_id: g_l13b_012
+  question: Is there any imaging modality, present or foreseeable, that resolves an individual chondrocyte inside a living
+    human growth plate?
+  type: method_blocked
+  layer: L13
+  why_it_matters: The dimensional mismatch is the structural reason human growth plate biology is cross-sectional and inferential.
+    A chondrocyte is 10-20 um; zone heights are 100-1000 um; a plate is 1-10 mm. Methods that resolve the cell (histology
+    at 0.25 um, synchrotron at 0.65-2.75 um, AFM below 1 um) are all terminal. Methods that work in a living child (MRI, ultrasound)
+    resolve zones at best, and only at 7 T and only up to about age 13 (dymerska2018). Every cellular claim about a living
+    human growth plate is therefore an inference from tissue that was destroyed to make it.
+  what_is_known: 7 T phase imaging resolves veins and layers within human growth cartilage in children up to 13 (dymerska2018);
+    clinical MRI stages closure reliably but not cellular events (kvist2020, kvist2021); micro-CT images the mineral boundary
+    and requires contrast agents and terminal preparation for cartilage; synchrotron resolves chondrocytes in intact human
+    cartilage at 0.65-2.75 um but ex vivo only (b2026, xu2024).
+  what_is_missing: Any in vivo modality with cellular resolution at physeal depth, and any validated non-invasive proxy for
+    a cellular parameter such as zonal cell density or column length.
+  nearest_evidence:
+  - dymerska2018
+  - kvist2020
+  - b2026
+  - white2008
+  discriminating_experiment: Calibrate proxies rather than chase resolution. In children undergoing epiphysiodesis, acquire
+    7 T quantitative susceptibility and high-resolution T2* of the target physis immediately before surgery, then perform
+    stereological histology on the resected tissue, and regress histological zone heights and zonal cell densities on the
+    imaging parameters across at least 10 donors. Under the proxy hypothesis, at least one imaging parameter predicts zone
+    height with error small enough to detect the pubertal narrowing reported by emons2011_2; under the null, no MRI parameter
+    tracks zonal cellularity and the field must accept that living human growth plates are observable only at the tissue scale.
+  tractability: 3
+- gap_id: g_l9organism_001
+  question: Has any published model derived human height velocity in cm/yr from measured growth plate cell kinetics - chondrocyte
+    production rate, hypertrophic cell height and column density - in a way that reproduces the observed peak of 9.5 cm/yr
+    in boys and 8.3 cm/yr in girls?
+  type: scale_gap
+  layer: L9
+  why_it_matters: This is the join the whole atlas exists to make. Every L1-L7 parameter is measured in micrometres per day
+    in one plate of one rodent; every L9 target is centimetres per year of a whole human. If no published work spans the two,
+    then the consistency check the atlas proposes has never been attempted and every mechanistic claim about human stature
+    is currently unfalsifiable at the organism level.
+  what_is_known: 'The arithmetic components exist separately. Plate elongation rate equals chondrocyte production rate multiplied
+    by the mean height of the terminal hypertrophic cell (the Hunziker-Schenk formulation), and both quantities have been
+    measured in rat and pig (L1 elongation_budget, hypertrophic_volume_increase). Human plate-level velocities exist from
+    serial radiography: the distal femur contributes about 1.3 cm/yr after age 7. Organism-level velocity is measured precisely
+    in three independent SITAR cohorts (chun2024, galvo2025).'
+  what_is_missing: No retrieved work multiplies human column density by human chondrocyte production rate and human hypertrophic
+    cell height and compares the product against measured human height velocity, nor sums such a calculation across the contributing
+    plates. The screened literature is either clinical auxology with no cellular content or rodent cell biology with no organism
+    endpoint.
+  nearest_evidence:
+  - chun2024
+  - galvo2025
+  discriminating_experiment: 'Model system: human physeal tissue obtained at epiphysiodesis or limb reconstruction from children
+    of known chronological age, sex and pubertal stage, with same-admission standing height and a documented height velocity
+    over the preceding 6-12 months. Readout: (i) histomorphometric column density per mm2, mean terminal hypertrophic cell
+    height and hypertrophic zone height in the sampled plate; (ii) predicted elongation rate = production rate x terminal
+    cell height, with production rate estimated from hypertrophic zone height divided by the hypertrophic phase duration transferred
+    from rodent. Expected result under the hypothesis that plate kinetics fully explain organism velocity: the summed prediction
+    across the distal femur and proximal tibia falls within the measured lower-limb contribution to height velocity (roughly
+    65-70% of total). Under the alternative that a systematic factor is missing (for example matrix synthesis contributing
+    independently of cell enlargement), the prediction will be short by a constant fraction across ages, and that fraction
+    is itself the discovery.'
+  tractability: 2
+  search_log_ref: g_l9organism_001
+- gap_id: g_l9organism_002
+  question: When the ICP, Preece-Baines, JPA-2 and SITAR models are fitted to the same individual growth curves, what are
+    their residual standard deviations, and does any model fit better than the 6-7 mm that Preece-Baines and SITAR both achieve?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: The residual is the interesting number, because it bounds how much of a real growth curve is not captured
+    by any smooth parametric description and therefore how much room exists for biology such as saltatory growth, seasonality
+    or short-term mechanical gating. If four structurally different models all bottom out at 6-7 mm, that floor is a property
+    of the measurement or of the child, not of the models, and no mechanistic model should be asked to beat it.
+  what_is_known: Preece-Baines model 1 achieves a residual SD of 6-7 mm on individual pubertal curves (preece1978, quoted
+    in cole2010). SITAR achieves 0.79 cm on 129508 heights in 3245 boys and 0.6 cm in 105 girls with Turner syndrome, explicitly
+    matching the median PB residual (cole2010). Kernel regression, a triple logistic model and Preece-Baines have been compared
+    on 227 Fels participants for derived spurt parameters, but that comparison reported parameter differences rather than
+    residual SDs (guo1992). ICP and JPA-2 residuals were not located.
+  what_is_missing: A single paper fitting all four families to one longitudinal dataset and tabulating residual SD, and in
+    particular any residual figure at all for the ICP model or for JPA-2. Without it the common statement that one model fits
+    better than another is untraceable.
+  nearest_evidence:
+  - cole2010
+  - preece1978
+  - guo1992
+  discriminating_experiment: 'Model system: an existing dense longitudinal height series with at least 20 measurements per
+    child from age 2 to adult height - for example the Zurich Longitudinal Studies or the Fels series. Readout: residual SD,
+    AIC and the estimated age and magnitude of peak height velocity from ICP, Preece-Baines model 1, JPA-2 and SITAR fitted
+    to identical data, with a leave-one- measurement-out cross-validated residual as the primary comparison. Expected result
+    if the 6-7 mm floor is measurement noise: all four models converge to within 1 mm of each other and the cross-validated
+    residual equals the technical error of measurement of stadiometry. Expected result if the floor is biological: models
+    that can represent the mid-growth spurt (kernel, JPA-2) will show a systematically lower residual in the 6-9 year window
+    specifically.'
+  tractability: 5
+  search_log_ref: g_l9organism_002
+- gap_id: g_l9organism_003
+  question: What changes in the human growth plate between 6 and 12 months of age, when the ICP childhood component switches
+    on and growth becomes growth-hormone dependent?
+  type: known_unknown
+  layer: L9
+  why_it_matters: The infancy-to-childhood transition is the only point in postnatal life at which the dominant endocrine
+    control of linear growth is thought to change identity. If the plate is architecturally or transcriptionally different
+    before and after it, then plate parameters measured in juvenile animals cannot be applied to the first postnatal year,
+    and the two thirds of a metre gained in that year is governed by mechanisms the atlas has not described.
+  what_is_known: The childhood component begins at 6-12 months, the infancy component has effectively ceased by 3 years, the
+    spurt is absent in untreated GH deficiency and delayed in 30-50% of deprived or growth-disordered infants (karlberg1990).
+    During the overlapping mini-puberty window free testosterone is associated with infant growth velocity, one third of the
+    association mediated by IGF-I (pridik2026).
+  what_is_missing: Any measurement of human growth plate architecture, chondrocyte kinetics or GH/IGF-I receptor expression
+    across the 0-3 year window. Human physeal tissue in this age band is essentially unobtainable outside post-mortem material,
+    and no post-mortem series with the relevant measurements was retrieved.
+  nearest_evidence:
+  - karlberg1990
+  - pridik2026
+  - karlberg1987
+  discriminating_experiment: 'Model system: a curated paediatric post-mortem physeal collection spanning 0-36 months with
+    documented cause of death, birth length and last recorded length, sampling the distal femur. Readout: growth plate height,
+    hypertrophic zone height, column density and GHR/IGF1R immunolocalisation by zone, plotted against age. Expected result
+    if the ICP transition is a real change of control: a discontinuity in GHR staining intensity or zonal distribution between
+    6 and 12 months, with plate architecture otherwise continuous. Expected result if the transition is only a change in the
+    rate of an unchanged process: monotonic change in all architectural variables with no inflection at 6-12 months.'
+  tractability: 2
+- gap_id: g_l9organism_004
+  question: What is the predictive SD of corrected mid-parental target height in a population-representative sample outside
+    the single Jewish family cohort in which it has been measured?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: The predictive SD defines the threshold at which a child is investigated for a growth disorder. A single
+    measurement of 4.4-4.7 cm in a genetically narrow sample of 23 large families is currently the only direct empirical estimate,
+    and it is being used to argue that guideline bands are 50% too wide. If the true value in an outbred, ancestry-diverse
+    population is 5.5-6 cm, the guideline bands are approximately right and the argument collapses.
+  what_is_known: Residual SD about the fully corrected target height is 4.7 cm for sons and 4.4 cm for daughters across 303
+    adult children of 23 large nuclear families, with within-family values of 4.5 +/- 0.9 and 4.2 +/- 0.8 cm (zeevi2024).
+    A population-based Swedish regression gives a 95% prediction interval of about +/-10 cm, implying about 5.1 cm (luo1998).
+    Wright and Cheetham confirmed the 90%-within-1.5-SDS prediction in 419 UK children but did not report a residual SD (wright1999).
+  what_is_missing: A residual SD computed on measured adult heights of both parents and their adult offspring in a population-representative,
+    ancestry-diverse cohort with parental age correction and an explicit regression-to-the-mean adjustment. Existing biobank-scale
+    height data almost always lack measured (as opposed to self-reported) parental height.
+  nearest_evidence:
+  - zeevi2024
+  - luo1998
+  - wright1999
+  discriminating_experiment: 'Model system: a multi-ancestry biobank with measured standing height in both parents and at
+    least one adult offspring - for example a linked national health registry with directly measured conscription or occupational-health
+    heights across two generations. Readout: SD of the residual of adult offspring height about the age-, sex- and regression-corrected
+    mid-parental height, stratified by ancestry and by parental height decile. Expected result if the 4.4-4.7 cm figure generalises:
+    the residual SD lies between 4.3 and 5.0 cm in every stratum, and the +/-1.64 SDS guideline band is demonstrably too wide.
+    Expected result if the family cohort was unusually homogeneous: the residual SD exceeds 5.5 cm, and the guideline band
+    is vindicated.'
+  tractability: 4
+  search_log_ref: g_l9organism_004
+- gap_id: g_l9organism_005
+  question: Which is correct for clinical use, the +/-8.5 cm target-height band derived theoretically by Tanner, or the +/-1.64
+    SDS band (+/-10.6 cm girls, +/-11.7 cm boys) recommended by the growth hormone societies, given a measured residual SD
+    of 4.4-4.7 cm?
+  type: contradiction
+  layer: L9
+  why_it_matters: These are two different thresholds for the same clinical decision and they differ by up to 3.2 cm at the
+    boundary. A child 10 cm below target height has a 1.0-1.5% prior probability of that deviation under the measured SD,
+    which is inside the guideline band but outside the Tanner band. The discrepancy determines who is investigated and who
+    is treated.
+  what_is_known: The +/-8.5 cm band was derived from theoretical considerations as the 3rd-to-97th centile band, not measured,
+    and was later revised by its own authors to +/-9 cm for girls and +/-10 cm for boys (documented in zeevi2024, citing tanner1970).
+    The +/-1.64 SDS band recommended by the GH Research Society, LWPES and ESPE converts under CDC standards to +/-10.6 and
+    +/-11.7 cm (zeevi2024). The directly measured residual SD is 4.7 cm (sons) and 4.4 cm (daughters), which corresponds to
+    a 95% band of about +/-9.2 and +/-8.6 cm.
+  what_is_missing: No published reconciliation. The guideline band and the empirical SD have not been compared in a paper
+    that both cohorts' authors would accept, and no study has tested which threshold better separates children with a subsequently
+    identified pathological cause of short stature from those without.
+  nearest_evidence:
+  - zeevi2024
+  - luo1998
+  - tanner1970
+  discriminating_experiment: 'Model system: a retrospective cohort of children referred for short stature with measured parental
+    heights, complete diagnostic workup and eventual diagnosis (pathological versus familial/constitutional). Readout: sensitivity
+    and specificity for a pathological diagnosis of the three candidate thresholds (+/-8.5 cm, +/-1.64 SDS, +/-2 SD of the
+    measured 4.4-4.7 cm residual), with the corrected target height in all three cases. Expected result if the empirical SD
+    is right: the narrow threshold has materially higher sensitivity at acceptable specificity, and the guideline band is
+    missing pathology. Expected result if the guideline is right: the narrow threshold produces an unacceptable false-positive
+    rate without gaining sensitivity, implying the empirical SD is cohort-specific.'
+  tractability: 4
+- gap_id: g_l9organism_006
+  question: What is the absolute rate constant k of human catch-up growth, in units of reciprocal years, and does it scale
+    with the duration of the preceding growth suppression as the delayed growth plate senescence hypothesis predicts?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: A rate constant is the one number that distinguishes the two mechanistic accounts of catch-up. A systemic
+    neuroendocrine comparator predicts a k set by how far the child is from target, independent of what caused the deficit.
+    A plate-intrinsic delayed-senescence account predicts a k set by how much unspent proliferative capacity the plate retains,
+    which depends on how long the plate was suppressed. The published comparison shows k differs by disease with the same
+    endpoint, which is the signature the second model predicts, but no absolute value is reported.
+  what_is_known: Catch-up in coeliac disease, juvenile hypothyroidism and GH deficiency fits a monomolecular function in 83-90%
+    of episodes; k is higher in coeliac disease than in juvenile hypothyroidism (p=0.02) and than in GH deficiency (p=0.004),
+    while the asymptote reached is similar (wit2021). GH dose within the GHD group did not significantly change k. Emons and
+    colleagues tested the delayed senescence hypothesis in humans directly (emons2005) but the abstract is unavailable and
+    the paper is queued.
+  what_is_missing: Numerical values of k with confidence intervals, and any analysis regressing k on the duration of preceding
+    suppression rather than on the diagnostic label. Total n across the two non-coeliac conditions is 38 children.
+  nearest_evidence:
+  - wit2021
+  - wit2002
+  - emons2005
+  discriminating_experiment: 'Model system: a multicentre registry of children with a documented start and end date of growth
+    suppression from a single cause - for example treated congenital hypothyroidism diagnosed at different ages, or Crohn
+    disease with dated onset and remission - followed to adult height. Readout: monomolecular k fitted per child, regressed
+    on duration of suppression, age at suppression and height SDS deficit at release. Expected result under the plate-intrinsic
+    model: k falls as duration of suppression rises, because a longer suppression means less remaining capacity, and k is
+    independent of the deficit size. Expected result under the neuroendocrine model: k rises with the size of the deficit
+    and is independent of duration.'
+  tractability: 3
+  search_log_ref: g_l9organism_006
+- gap_id: g_l9organism_007
+  question: In a contemporary population measured against the WHO standard, what proportion of infants cross two or more major
+    length centiles upward and what proportion downward between birth and 2 years, and how large is the mean absolute shift
+    in SDS?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: Catch-down growth defines the initial condition the postnatal growth plate actually starts from. If a substantial
+    fraction of infants systematically decelerate off their birth centile, then birth length is the wrong initial condition
+    for any model of postnatal elongation, and the magnitude of the correction is exactly the number that fraction and shift
+    provide.
+  what_is_known: Smith and colleagues documented bidirectional channel shifting during infancy and concluded the realignment
+    is essentially complete by 2 years (smith1976), but the series is small, predates modern references, and the abstract
+    gives no rates. The parent-offspring regression slope of 0.75-0.79 (luo1998, zeevi2024) implies the size of the expected
+    regression toward the parental channel but not the distribution of individual shifts.
+  what_is_missing: Centile-crossing rates and SDS-shift distributions computed against the WHO standard in a modern birth
+    cohort, separated by direction, and related to parental height so that catch-down toward the genetic channel can be distinguished
+    from growth faltering.
+  nearest_evidence:
+  - smith1976
+  - who_velocity_2009
+  - luo1998
+  discriminating_experiment: 'Model system: an existing population birth cohort with WHO-standardised length at birth, 6,
+    12 and 24 months and measured parental heights. Readout: distribution of length SDS change from birth to 24 months, stratified
+    by the difference between birth-length SDS and target-height SDS. Expected result if catch-down is target-seeking: the
+    SDS change correlates negatively with (birth length SDS minus target height SDS) with a slope near -1 and residual scatter
+    around 0.5 SDS. Expected result if it is regression to the population mean rather than to the parental channel: the change
+    correlates with birth length SDS alone and parental height adds nothing.'
+  tractability: 5
+  search_log_ref: g_l9organism_007
+- gap_id: g_l9organism_008
+  question: Do the population differences in arm span/height ratio and sitting height ratio arise from differences in the
+    velocity of individual growth plates, or from differences in the duration over which each plate runs?
+  type: search_established
+  layer: L9
+  why_it_matters: This is the cleanest available test of whether a systemic growth signal is read uniformly by all plates.
+    If populations differ in ratio because the humeral plate runs faster relative to the femoral plate, then plate-intrinsic
+    sensitivity differs between populations and no single systemic parameter can explain proportion. If they differ because
+    the plates stop at different times, then the difference is in fusion timing, which is an L7 problem with a known endocrine
+    driver.
+  what_is_known: Japanese children have a lower arm span/height ratio than Dutch and Turkish children at every age from 5.5
+    to 18.5 years and reach the plateau earlier (hirano2025). Sitting height ratio references differ between national populations
+    and the ratio depends on height SDS within a population (fredriks2005). Human plate-specific growth shares are known from
+    radiographic series but only in North American and European cohorts (L1 distal_femur_plate, proximal_humerus_plate).
+  what_is_missing: Any study reporting site-specific physeal growth velocity or plate-specific contribution shares in two
+    or more ancestry groups measured by the same method. The screened literature contains population comparisons of anthropometric
+    ratios and separate radiographic contribution studies, but nothing that measures plate velocity across populations.
+  nearest_evidence:
+  - hirano2025
+  - fredriks2005
+  discriminating_experiment: 'Model system: two ancestry groups with contrasting arm span/height ratios, children aged 6-16,
+    imaged with a low-dose biplanar system (EOS) at 12-month intervals. Readout: annual increment in humeral, radial, femoral
+    and tibial length per child, converted to per-plate velocity using published contribution shares, plus a same-visit hand-wrist
+    bone age. Expected result under the velocity hypothesis: the humerus-to-femur velocity ratio differs between groups at
+    matched bone age. Expected result under the duration hypothesis: velocities match at matched bone age and the groups differ
+    only in the bone age at which each plate''s velocity falls below 1 mm/yr.'
+  tractability: 3
+  search_log_ref: g_l9organism_008
+- gap_id: g_l9organism_009
+  question: In a healthy population, what is the mean and SD of the difference between dental age and skeletal age in the
+    same child, expressed in years?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: The magnitude of the dental-skeletal dissociation is a quantitative constraint on any theory that a single
+    systemic maturational signal drives development. A large SD of the within-child difference means the two clocks are substantially
+    independent even in health; a small SD would mean the dissociation seen in GH deficiency is a disease-specific artefact
+    rather than evidence of independent control.
+  what_is_known: 'Under endocrine perturbation the clocks separate sharply: in untreated isolated GH deficiency bone age is
+    delayed 1.99 years while dental age is delayed 0.31 years, and the two delays are explicitly uncorrelated within individuals
+    (torliskawalkow2026, n=48 versus 48 controls). In healthy French-Canadian girls age at 90% dental maturity showed no significant
+    relationship with peak height velocity, menarche or 75% skeletal maturity (demirjian1985, n=50). Unselected cross-sectional
+    samples show dental-skeletal stage correlations of 0.78-0.85, driven by shared chronological age (floresmir2005, mohammadianras2026).'
+  what_is_missing: A Bland-Altman style analysis of dental age minus skeletal age in healthy children, giving mean bias and
+    limits of agreement in years by age band and sex. The screened literature reports correlation coefficients almost exclusively,
+    which are inflated by the shared age axis and cannot be converted to an SD of the within-child difference.
+  nearest_evidence:
+  - demirjian1985
+  - torliskawalkow2026
+  - floresmir2005
+  discriminating_experiment: 'Model system: an existing paediatric imaging archive with same-visit panoramic radiographs and
+    hand-wrist radiographs in healthy children aged 6-16, at least 500 per sex. Readout: Demirjian dental age and Greulich-Pyle
+    or TW3 skeletal age per child, analysed as difference against mean with limits of agreement, stratified by age band and
+    sex. Expected result if the clocks are substantially independent: limits of agreement wider than +/-2 years with no narrowing
+    at any age. Expected result if they are coupled and only separable under disease: limits of agreement within +/-1 year
+    in health, making the 1.68-year GHD dissociation a large and specific endocrine effect.'
+  tractability: 5
+  search_log_ref: g_l9organism_009
+- gap_id: g_l9organism_010
+  question: Why is dental mineralization insensitive to the endocrine and nutritional perturbations that delay skeletal maturation
+    by up to 2 years?
+  type: known_unknown
+  layer: L9
+  why_it_matters: Both odontoblasts and growth plate chondrocytes make and mineralise a collagenous matrix under systemic
+    hormonal exposure, yet one is delayed by GH deficiency and stunting and the other is not. Whatever explains that asymmetry
+    is a statement about which signals the growth plate is uniquely sensitive to, and it is a constraint the atlas can use
+    in reverse.
+  what_is_known: In GH deficiency bone age is delayed 1.99 y and dental age 0.31 y, uncorrelated within individuals (torliskawalkow2026).
+    Short children born SGA have delayed skeletal maturation and craniofacial hypoplasia but no dental delay (van1998). Stunting
+    sufficient to lower height for age in Peruvian schoolchildren shifted neither dental nor skeletal maturity stage (floresmir2005).
+    Structurally, tooth mineralization is a one-way morphological sequence with no proliferative compartment that can be arrested
+    and resumed.
+  what_is_missing: Any comparison of GHR, IGF1R or thyroid hormone receptor expression between human odontoblasts or dental
+    follicle and growth plate chondrocytes at matched developmental stages, and any test of whether tooth mineralization rate
+    is hormone-responsive at all in a controlled setting.
+  nearest_evidence:
+  - torliskawalkow2026
+  - van1998
+  - demirjian1985
+  discriminating_experiment: 'Model system: paired human tooth germ and growth plate tissue from the same paediatric donors
+    (post-mortem or from combined orthognathic/orthopaedic procedures). Readout: single-cell or bulk RNA sequencing of the
+    somatotropic and thyroid receptor modules in odontoblast/dental follicle versus resting and proliferative chondrocytes.
+    Expected result under the receptor- absence hypothesis: GHR and IGF1R expression is near-absent in the dental compartment.
+    Expected result under the no-proliferative-compartment hypothesis: receptors are expressed at comparable levels but the
+    dental compartment lacks the proliferative population through which the hormones act, so the clock cannot be slowed even
+    though the signal is received.'
+  tractability: 2
+- gap_id: g_l9organism_011
+  question: Does human skeletal muscle fix its myofibre number and complete myonuclear accretion early in postnatal life,
+    as mouse extensor digitorum longus does by postnatal day 21?
+  type: species_gap
+  layer: L9
+  why_it_matters: The entire mechanistic account of postnatal muscle growth in this layer rests on one fast muscle of one
+    mouse strain over an eight-week window. Human muscle grows for eighteen years. If human myonuclear accretion continues
+    through adolescence, then satellite cells remain rate-limiting for growth in a way they are not in the adult mouse, and
+    the analogy between the satellite cell pool and the growth plate resting zone changes character entirely.
+  what_is_known: In mouse EDL there is no net change in myofibre number from P7 to P56 while fibre volume rises 14.1-fold;
+    myonuclei per fibre rise about 5-fold between P3 and P21 and then stop, so the myonuclear domain triples thereafter to
+    26.5 x 10^3 um3; satellite cells per fibre fall from about 14 at P7 to about 5 by P21 (white2010). Human satellite cell
+    counts exist only in pathological muscle (dayanidhi2015).
+  what_is_missing: Any human developmental series counting myofibre number, myonuclei per fibre or satellite cells per fibre
+    across childhood and adolescence. Such counts require whole-muscle cross-sections or single-fibre preparations that are
+    not obtainable from routine biopsy.
+  nearest_evidence:
+  - white2010
+  - dayanidhi2015
+  discriminating_experiment: 'Model system: archived human muscle from paediatric post-mortem series spanning 1-18 years,
+    or intact muscle removed during limb reconstruction, sampled from a single named muscle for comparability. Readout: total
+    myofibre number on whole cross-section, myonuclear number per unit fibre length by dystrophin/laminin plus DAPI segmentation,
+    and Pax7-positive satellite cells per fibre. Expected result if human follows mouse: fibre number flat from the earliest
+    sample, myonuclei per unit length flat after early childhood, satellite cell density falling to an adult plateau before
+    puberty. Expected result if human differs: myonuclear number per unit length continues to rise through the pubertal spurt,
+    implicating satellite cell function directly in adolescent muscle growth.'
+  tractability: 2
+- gap_id: g_l9organism_012
+  question: Does loss of myostatin signalling in humans change long bone length, or only muscle mass?
+  type: known_unknown
+  layer: L9
+  why_it_matters: This is a decisive test of the mechanostat account of longitudinal growth. If muscle force is the proximate
+    driver of bone elongation, a person with lifelong myostatin loss of function should be measurably taller than their target
+    height. If they are not, then muscle force sets bone width and strength but not length, and mechanical modulation at the
+    plate (L6) is a modulator rather than a driver.
+  what_is_known: A single human MSTN loss-of-function case with gross muscle hypertrophy has been reported (schuelke2004);
+    the reported phenotype is muscular, and no skeletal length phenotype is described. Pharmacological ActRIIB blockade increases
+    thigh muscle volume in adults after disuse atrophy (rooks2017), an age at which stature cannot change. Peak lean mass
+    velocity predicts peak bone mineral accrual, but peak height velocity does not once lean mass is in the model (rauch2004).
+  what_is_missing: Height and target height for the reported human myostatin case and for any subsequently identified carriers,
+    and long bone length data from any trial of myostatin-axis blockade conducted in growing children.
+  nearest_evidence:
+  - schuelke2004
+  - rooks2017
+  - rauch2004
+  discriminating_experiment: 'Model system: carriers of rare MSTN or ACVR2B loss-of-function alleles identified in a biobank
+    with measured standing height, sitting height and, where available, parental heights. Readout: height SDS and sitting
+    height ratio SDS in carriers versus non-carrier relatives, and lean-mass-adjusted height. Expected result under the mechanostat
+    hypothesis: carriers exceed their target height, with the excess concentrated in the lower limb where loads are highest.
+    Expected result under the modulator hypothesis: carriers show increased lean mass and normal height SDS, with a normal
+    sitting height ratio.'
+  tractability: 4
+- gap_id: g_l9organism_013
+  question: Does muscle growth cause bone mineral accrual during the pubertal spurt, or are the two independently determined
+    and merely correlated in time?
+  type: contradiction
+  layer: L9
+  why_it_matters: Peak lean mass velocity precedes and statistically predicts peak bone mineral content velocity at every
+    anatomical site while peak height velocity does not, which is read as support for the mechanostat. The authors of the
+    primary explicitly state their data cannot exclude independent genetic determination of both. The two readings imply opposite
+    intervention strategies for bone accrual in childhood.
+  what_is_known: Peak lean mass velocity precedes peak bone mineral content velocity by 0.36 y (boys) and 0.51 y (girls) for
+    the total body, 0.63 and 0.71 y in the arms, and 0.48 and 0.22 y in the legs; peak lean mass velocity explains 41-61%
+    of the variance in regional peak bone mineral content velocity while peak height velocity and sex explain none independently
+    (rauch2004). The lag differs three-fold between the arms of boys and the legs of girls, which a single systemic driver
+    does not predict.
+  what_is_missing: Any intervention that changes muscle mass without changing hormonal status during growth and measures bone
+    accrual, and any genetically informed decomposition (twin or polygenic score) of the lean mass to bone mineral relationship
+    in growing children.
+  nearest_evidence:
+  - rauch2004
+  discriminating_experiment: 'Model system: a unilateral loading paradigm in growing adolescents - for example the dominant
+    versus non-dominant arm in racquet sport players, who differ in muscle mass within the same endocrine environment. Readout:
+    side-to-side difference in lean mass velocity and in bone mineral content velocity measured longitudinally through the
+    spurt. Expected result if muscle causes bone: the within-person side difference in lean mass velocity predicts the side
+    difference in bone mineral velocity with the same lag as the between-person relationship. Expected result if both are
+    independently determined: side differences in lean mass appear without a corresponding lagged bone response beyond the
+    known direct loading effect on cortical geometry.'
+  tractability: 4
+- gap_id: g_l9organism_014
+  question: Is there any shared timing mechanism between the brain growth trajectory, whose grey matter volume peaks at 5.9
+    years and white matter at 28.7 years, and the growth plate, whose velocity peaks at 11-13 years and which fuses by the
+    late teens?
+  type: scale_gap
+  layer: L9
+  why_it_matters: Brain growth and calvarial suture closure are the largest organism-level counterexamples to a single maturational
+    clock. Grey matter peaks six years before peak height velocity, white matter fifteen years after it, and up to 17% of
+    healthy children close a calvarial suture before adulthood. If no mechanism connects the two, then the L9 brain and skull
+    nodes cannot be linked to L1-L7 by an evidenced edge, and this gap is the explicit reason why.
+  what_is_known: Grey matter volume peaks at 5.9 y, cortical thickness at 1.7 y, total cerebrum volume at 12.5 y, subcortical
+    grey at 14.4 y and white matter at 28.7 y, with velocity peaks at 5.08 months and 2.4 y and no adolescent volume spurt
+    in any tissue class (bethlehem2022). Brain weight quadruples by 3 years and peaks near 19 (dekaban1978). Sagittal suture
+    patency falls from 99.3% under age 3 to 83% by age 9 (han2025). Height velocity peaks at 11.8 y in females and 13.5 y
+    in males (elhakeem2024).
+  what_is_missing: Any within-individual study relating a brain growth milestone to a physeal milestone, and any proposed
+    shared signal. The two literatures do not cite each other and no candidate mechanism was retrieved.
+  nearest_evidence:
+  - bethlehem2022
+  - han2025
+  - elhakeem2024
+  discriminating_experiment: 'Model system: an existing cohort with both serial brain MRI and serial standing height from
+    childhood through adolescence, for example the ABCD study or the Zurich Longitudinal Studies with imaging. Readout: within-individual
+    correlation between SITAR tempo (timing of the height spurt) and the individually estimated age at peak grey matter volume,
+    adjusted for sex. Expected result under a shared clock: tempo correlates positively with brain milestone age at r above
+    0.3. Expected result under independent clocks: the correlation is indistinguishable from zero, which would make brain
+    and skeletal maturation formally separate timers and justify treating brain growth as a boundary condition rather than
+    a coupled system.'
+  tractability: 4
+- gap_id: g_l9organism_015
+  question: Is there any evidenced mechanistic link between visceral organ growth trajectories and growth plate function,
+    or must the viscera be treated as an uncoupled parallel system in this atlas?
+  type: scale_gap
+  layer: L9
+  why_it_matters: The admission rule for this layer requires every retained node to connect to L1-L7 or to declare why it
+    cannot. Visceral organ growth and organ allometry supply organism-level numbers but no edge into the mechanistic layers
+    was found. Declaring the absence explicitly prevents a speculative edge from being invented later, and identifies what
+    evidence would justify one.
+  what_is_known: LMS-smoothed centile charts exist for eight infant organ weights from 1190 modelled cases out of 1525 consecutive
+    autopsies (pryce2014). Brain weight regressed on body height and weight across 23 age groups shows differential rates
+    of change (dekaban1978). No source connecting organ mass trajectories to chondrocyte kinetics, plate architecture or physeal
+    velocity was retrieved.
+  what_is_missing: Any measurement in the same individuals of both an organ mass trajectory and a physeal parameter, and any
+    candidate mediator such as a circulating factor of organ origin acting on the plate. The nearest candidates are endocrine
+    and already held in L4.
+  nearest_evidence:
+  - pryce2014
+  - dekaban1978
+  discriminating_experiment: 'Model system: a paediatric post-mortem series with fresh organ weights, body length and a sampled
+    distal femoral physis from the same donors, spanning 0-18 years. Readout: organ weight residuals for age and body length
+    against physeal height, hypertrophic zone height and column density in the same donor. Expected result under a coupled
+    hypothesis: a specific organ mass residual (for example liver, the dominant source of circulating IGF-I) predicts hypertrophic
+    zone height after adjustment for age and body length. Expected result under the uncoupled hypothesis: no organ residual
+    predicts any physeal parameter once age and body length are controlled, confirming that L9 visceral nodes are boundary
+    conditions rather than mechanism.'
+  tractability: 2
+- gap_id: g_l9organism_016
+  question: Do the craniofacial growth sites - the calvarial sutures, the cranial base synchondroses and the mandibular condylar
+    cartilage - share any control mechanism with the appendicular growth plate, given that they cease growing on three different
+    schedules within the same skull?
+  type: known_unknown
+  layer: L9
+  why_it_matters: Within one head, the metopic suture closes by 21 months, up to 17% of children close a further calvarial
+    suture before adulthood, the spheno-occipital synchondrosis fuses around peak height velocity, and the mandibular condyle
+    remains load-responsive into adulthood. Three different cessation schedules in adjacent bones is the strongest anatomical
+    argument that fusion timing is locally rather than systemically determined, which bears directly on L7.
+  what_is_known: Metopic closure exceeds 75% by 21 months and sagittal patency falls to 83% by age 9 in healthy children (han2025).
+    Spheno-occipital fusion stages 3-4 occur at 12.7-13.9 y in males and 11.0-12.5 y in females and correlate with cervical
+    vertebral maturation at Spearman 0.955-0.964 (kim2024). Mandibular condylar progenitors express osteoblast markers and
+    become chondrogenic under load in rodent (robinson2015). Growth restriction produces a patterned craniofacial shortfall
+    rather than uniform miniaturisation (van1998).
+  what_is_missing: Any study measuring estrogen receptor expression or estradiol responsiveness at the human spheno-occipital
+    synchondrosis and at a human appendicular physis in the same donors, which is the obvious test of whether the systemic
+    fusion trigger established in L7 acts on the cranial base too.
+  nearest_evidence:
+  - kim2024
+  - han2025
+  - robinson2015
+  - van1998
+  discriminating_experiment: 'Model system: human cranial base synchondrosis and distal femoral physis sampled from the same
+    paediatric post-mortem donors across the 8-16 year window. Readout: ESR1 and CYP19A1 expression and localisation by zone
+    in each site, plus histological fusion stage. Expected result if the systemic estrogen trigger is shared: ESR1 expression
+    rises in parallel at both sites and the synchondrosis fuses when local ESR1 reaches the level seen at the fusing physis.
+    Expected result if cessation is locally timed: ESR1 expression at the synchondrosis is unrelated to its fusion stage,
+    and the sex difference in synchondrosis timing must then be explained by a local mechanism.'
+  tractability: 2
+- gap_id: g_l9organism_017
+  question: What are the postnatal allometric scaling exponents of human organ mass on body mass, organ by organ, from birth
+    to adulthood?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: Non-isometric growth is the reason body shape changes with size, and the exponents are the compact quantitative
+    statement of it. Without them the atlas cannot check that a plate-level model reproducing stature does not simultaneously
+    imply isometric organism growth, which is demonstrably wrong.
+  what_is_known: Brain weight regressed on body height and body weight across 23 age groups shows clearly differential rates
+    of change (dekaban1978), and modern MRI milestones place brain volume peaks years before the skeletal spurt (bethlehem2022).
+    Infant organ weight centiles exist for eight organs (pryce2014). Allometric scaling is used extensively in paediatric
+    pharmacokinetics but with exponents assumed (typically 0.75 for clearance) rather than fitted to measured organ mass.
+  what_is_missing: Fitted exponents with confidence intervals for human postnatal organ mass on body mass. The screened literature
+    returns pharmacokinetic scaling with assumed exponents, comparative interspecies allometry, and plant or non-human animal
+    studies, but no human postnatal organ-by-organ fit.
+  nearest_evidence:
+  - dekaban1978
+  - pryce2014
+  - bethlehem2022
+  discriminating_experiment: 'Model system: a large paediatric autopsy archive with recorded fresh organ weights, body weight
+    and body length, spanning birth to 18 years, restricted to cases without organ pathology. Readout: log-log regression
+    of each organ mass on body mass with age as a covariate, giving an exponent per organ with confidence intervals, and a
+    test of whether the exponent is constant across the age range. Expected result if scaling is a fixed property: each organ
+    has a single exponent, brain well below 1 and skeletal muscle above 1. Expected result if scaling is age-dependent: the
+    exponents change at the infancy-childhood transition and at puberty, which would mean allometry is a description of successive
+    growth programmes rather than a law.'
+  tractability: 3
+  search_log_ref: g_l9organism_017

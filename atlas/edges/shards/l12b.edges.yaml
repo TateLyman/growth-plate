@@ -1,0 +1,509 @@
+# Edge shard for Layer L12 (pharmacology as mechanistic probe), shard l12b.
+# edge_ids are local; merge_shards.py renumbers globally.
+edges:
+- edge_id: e00001
+  source: navepegritide
+  target: npr2_receptor
+  relation: activates
+  sign: +
+  magnitude: released CNP steady-state plasma Cmax 36.0 pmol/L, weekly AUC 4410 h*pmol/L at 0.1 mg/kg/week
+  context: human, children with achondroplasia aged 2-11 y, once-weekly subcutaneous; plate concentration unmeasured
+  evidence_tier: T2
+  refs: [fda_yuviwel_label_2026]
+  confidence: A
+  notes: Released peptide is chemically identical to endogenous CNP, so affinity is native.
+- edge_id: e00002
+  source: navepegritide
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  magnitude: +1.49 cm/yr vs placebo (95% CI 1.05-1.93), LS mean 5.89 vs 4.41 cm/yr
+  context: human, APPROACH phase 2b RCT NCT05598320, n=84 (57/27), achondroplasia 2-11 y, 52 weeks
+  evidence_tier: T2
+  refs: [nct05598320, savarirayan2026]
+  confidence: A
+- edge_id: e00003
+  source: npr2_agonist_class
+  target: fgfr3_mapk_branch
+  relation: inhibits
+  sign: '-'
+  magnitude: inhibition at the RAF-1 step, per both approved labels
+  context: human growth plate chondrocytes; mechanism asserted in labelling from animal and biochemical work
+  evidence_tier: T2
+  refs: [fda_voxzogo_label_2025, fda_yuviwel_label_2026]
+  confidence: C
+  notes: Downstream antagonism of FGFR3 output, not correction of the receptor.
+- edge_id: e00004
+  source: npr2_agonist_class
+  target: cgmp_second_messenger
+  relation: activates
+  sign: +
+  magnitude: urinary cGMP near saturation at vosoritide 15 ug/kg/day; dose-dependent plasma cGMP rise 0.006-0.1 mg/kg/week for navepegritide
+  context: human, children with achondroplasia; systemic cGMP only, not plate cGMP
+  evidence_tier: T2
+  refs: [fda_voxzogo_label_2025, fda_yuviwel_label_2026]
+  confidence: A
+- edge_id: e00005
+  source: pkg2_kinase
+  target: npr2_agonist_class
+  relation: required_for
+  sign: +
+  magnitude: unquantified; hypothesised gating step downstream of NPR2
+  context: human growth plate, PKG-I/II hypertrophic-biased while NPR2 is zonally uniform (L3 contradiction C-L3-03)
+  evidence_tier: T2
+  refs: [fda_voxzogo_label_2025]
+  confidence: speculative
+  gap_id: g_l12b_003
+  relation_note: efficacy ceiling may be set downstream of the receptor the drug binds
+- edge_id: e00006
+  source: infigratinib_growth
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: IC50 1.0 nM (microfluidic mobility shift, ATP = Km); 0.66 nM wild-type, 0.5 nM K650E, 44.4 nM K650M, 505.9 nM V555M (radiometric, ATP not stated)
+  context: in vitro human recombinant FGFR3 kinase domain; no G380R value published
+  evidence_tier: T3
+  refs: [chembl_infigratinib, ryu2022]
+  confidence: D
+  notes: 89-fold potency loss on K650M, the allele with HIGHER constitutive activity than the lethal K650E.
+- edge_id: e00007
+  source: infigratinib_growth
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  magnitude: +1.74 cm/yr vs placebo (95% CI 1.31-2.17, p<0.001); height z-score +0.32 (96% CI 0.23-0.41)
+  context: human, phase 3 RCT NCT06164951, n=114 (75/39), achondroplasia 3-17 y, 0.25 mg/kg/day oral, 52 weeks
+  evidence_tier: T1
+  refs: [savarirayan2026infig, nct06164951]
+  confidence: A
+- edge_id: e00008
+  source: fgfr3_tyrosine_kinase_inhibitor
+  target: adult_height_attainment
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no attained adult height reported for any FGFR3 inhibitor
+  context: human, achondroplasia; extension NCT05145010 is the designed route and has not reported
+  evidence_tier: T2
+  refs: [nct05145010, savarirayan2026infig]
+  confidence: speculative
+  gap_id: g_l12b_001
+- edge_id: e00009
+  source: soluble_fgfr3_decoy
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: unknown
+  magnitude: observed/expected height change ratio 1.0 (95% CI 0.8-1.1) at month 12 in all three dose arms
+  context: human, NCT04638153 phase 2, n=60, achondroplasia; 1 mg/kg QW, 2 mg/kg BIW, 1.5 mg/kg QD
+  evidence_tier: T2
+  refs: [nct04638153, nct05116046]
+  confidence: A
+  notes: TERMINATED for lack of efficacy at any tested dose, explicitly not a safety termination. Null effect.
+- edge_id: e00010
+  source: soluble_fgfr3_decoy
+  target: growth_plate_drug_exposure
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: unmeasured; a ~100 kDa decoy into avascular charge-dense cartilage
+  context: human and mouse; failure cannot be attributed between ligand-independence and non-delivery
+  evidence_tier: T2
+  refs: [nct04638153, rignol2022]
+  confidence: speculative
+  gap_id: g_l12b_006
+- edge_id: e00011
+  source: meclizine_repurposing
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: unknown
+  magnitude: height velocity 4.35 to 4.46 cm/yr (change ~0.11 cm/yr); arm span velocity 6.93 cm/yr
+  context: human, open-label single-arm phase 2, n=9, achondroplasia 5-10 y, with concomitant growth hormone, 26 weeks
+  evidence_tier: T1
+  refs: [matsushita2025]
+  confidence: D
+  notes: Adequate measured plasma exposure (Cmax 167 ng/mL, t1/2 7.4 h) with no linear growth effect.
+- edge_id: e00012
+  source: recombinant_human_gh
+  target: gh_receptor
+  relation: binds
+  sign: +
+  magnitude: not quantified in paediatric growth studies
+  context: human, all licensed paediatric growth indications
+  evidence_tier: T5
+  refs: [guzzetti2024]
+  confidence: A
+- edge_id: e00013
+  source: recombinant_human_gh
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  magnitude: +3.0 to +5.0 cm/yr; height SDS +0.3 to +0.9
+  context: human, 20 studies, 21,812 participants aged 0-18 y, mixed growth disorders, 2016-2026
+  evidence_tier: T4
+  refs: [martn2026]
+  confidence: A
+- edge_id: e00014
+  source: transcon_growth_hormone
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  magnitude: AHV 10.66 +/- 0.22 vs 9.75 +/- 0.26 cm/yr for daily somatropin, difference +0.91 cm/yr (95% CI 0.37-1.45)
+  context: human, briGHt phase 3 NCT04326374, n=153 treatment-naive prepubertal Chinese children with GHD, 52 weeks
+  evidence_tier: T1
+  refs: [ying2026, fda_skytrofa_label_2026]
+  confidence: A
+  notes: Weekly dosing non-inferior AND superior to daily - the plate integrates GH exposure rather than requiring daily pulses.
+- edge_id: e00015
+  source: mecasermin_igf1
+  target: igf1_receptor
+  relation: binds
+  sign: +
+  magnitude: label states type 1 IGF-1 receptor activation drives chondrocyte growth at the epiphyseal plates
+  context: human, severe primary IGF-1 deficiency, 0.04-0.12 mg/kg twice daily subcutaneous
+  evidence_tier: T2
+  refs: [fda_increlex_label_2025]
+  confidence: B
+- edge_id: e00016
+  source: mecasermin_igf1
+  target: adult_height_attainment
+  relation: activates
+  sign: +
+  magnitude: +0.9 height SDS (SD 1.1) to near-adult height; +1.4 SDS (SD 1.0) in treatment-naive prepubertal patients
+  context: human, Global IGFD Registry NCT00903110, n=102 reaching near-adult height, mean age at start 11.8 y
+  evidence_tier: T1
+  refs: [ramonkrauel2026]
+  confidence: A
+  notes: Only 10.5% of Laron syndrome patients reached near-adult height within the normal range.
+- edge_id: e00017
+  source: igf1_gh_combination_therapy
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  magnitude: year-1 HV 9.3 (GH alone), 10.1 (+50), 9.7 (+100), 11.2 (+150 ug/kg rhIGF-1) cm/yr; arms converge to 7.7-8.4 by year 4
+  context: human, NCT00572156, n=106, children with short stature and IGF-1 deficiency; terminated for strategic reasons
+  evidence_tier: T2
+  refs: [nct00572156]
+  confidence: B
+  notes: Dose-response non-monotonic at year 1; increment wanes with time; adult height never measured.
+- edge_id: e00018
+  source: pegvisomant
+  target: gh_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: competitive blockade of receptor dimerisation; lowers IGF-1, free IGF-1, ALS and IGFBP-3
+  context: human, adults with acromegaly and off-label paediatric gigantism; Tmax 33-77 h, 57% relative bioavailability
+  evidence_tier: T2
+  refs: [fda_somavert_label_2025, yuen2026]
+  confidence: A
+- edge_id: e00019
+  source: pegvisomant
+  target: adult_height_attainment
+  relation: inhibits
+  sign: '-'
+  magnitude: growth arrested to final height in one paediatric patient
+  context: human, X-linked acrogigantism, long-term monotherapy with open epiphyses at start
+  evidence_tier: T1
+  refs: [burren2023]
+  confidence: D
+- edge_id: e00020
+  source: octreotide_somatostatin_analog
+  target: growth_hormone
+  relation: inhibits
+  sign: '-'
+  magnitude: not quantified in paediatric growth cohorts
+  context: human, paediatric GH-secreting adenoma and pituitary gigantism; case-level evidence only
+  evidence_tier: T1
+  refs: [burren2023]
+  confidence: D
+- edge_id: e00021
+  source: aromatase_inhibitor_letrozole
+  target: aromatase_cyp19a1
+  relation: inhibits
+  sign: '-'
+  magnitude: produced higher testosterone and lower oestradiol than anastrozole at 2.5 mg vs 1.0 mg daily
+  context: human, 79 pubertal boys with ISS, up to 3 years, open-label randomised
+  evidence_tier: T1
+  refs: [zegarra2024]
+  confidence: A
+- edge_id: e00022
+  source: aromatase_inhibitor_letrozole
+  target: bone_age
+  relation: inhibits
+  sign: '-'
+  magnitude: slower bone age advance than anastrozole; direction consistent, magnitude not tabulated in the abstract
+  context: human, same randomised trial, annual bone age
+  evidence_tier: T1
+  refs: [zegarra2024]
+  confidence: B
+- edge_id: e00023
+  source: aromatase_inhibitor_letrozole
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: +
+  magnitude: predicted adult height +1.3 cm over 3 years (both arms combined, p=0.043); year-1 gain did NOT persist to years 2-3
+  context: human, 79 pubertal boys with ISS; endpoint is PREDICTED not attained adult height
+  evidence_tier: T1
+  refs: [zegarra2024]
+  confidence: D
+  notes: The canonical documented instance of an interim surrogate gain failing to convert.
+- edge_id: e00024
+  source: aromatase_inhibitor_anastrozole
+  target: adult_height_attainment
+  relation: activates
+  sign: +
+  magnitude: adult height SDS adjusted for target height 0.81 +/- 0.34 with rhGH, vs 0.60 +/- 0.28 letrozole+rhGH and 0.48 +/- 0.17 GnRHa+rhGH
+  context: human, propensity-matched cohort, 32 boys per arm, ISS with bone age >=13 y, followed to adult height
+  evidence_tier: T1
+  refs: [cui2025]
+  confidence: C
+- edge_id: e00025
+  source: gnrh_analog_leuprolide
+  target: gnrh_hormone
+  relation: inhibits
+  sign: '-'
+  magnitude: continuous depot agonism desensitises pituitary gonadotrophs
+  context: human, children with central precocious puberty; fixed dosing justified by population PK
+  evidence_tier: T2
+  refs: [lim2026]
+  confidence: A
+- edge_id: e00026
+  source: gnrh_analog_leuprolide
+  target: adult_height_attainment
+  relation: activates
+  sign: +
+  magnitude: +3.5 to +4.5 cm final adult height (class); in boys, final height exceeded target height by only 1.2 +/- 5.9 cm
+  context: human, central precocious puberty; 20 studies/21,812 participants and a 92-boy single-centre cohort
+  evidence_tier: T4
+  refs: [martn2026, cho2026]
+  confidence: A
+  notes: The SD in the boys cohort is nearly five times the mean effect - individual response is close to unpredictable.
+- edge_id: e00027
+  source: gnrh_analog_leuprolide
+  target: bone_age
+  relation: inhibits
+  sign: '-'
+  magnitude: bone age minus chronological age narrowed by 1.1 +/- 0.9 years during treatment (p<0.001); class estimate -0.6 to -1.3 years
+  context: human, 92 boys with central precocious puberty, mean 2.7 +/- 1.3 y of treatment
+  evidence_tier: T1
+  refs: [cho2026, martn2026]
+  confidence: A
+- edge_id: e00028
+  source: gnrh_analog_triptorelin
+  target: gnrh_hormone
+  relation: inhibits
+  sign: '-'
+  magnitude: comparable suppression to leuprolide at 3-monthly dosing
+  context: human, children with central precocious puberty
+  evidence_tier: T1
+  refs: [thaneetrakool2025]
+  confidence: B
+- edge_id: e00029
+  source: oxandrolone
+  target: adult_height_attainment
+  relation: activates
+  sign: +
+  magnitude: androgen therapy overall +1.78 cm (95% CI 0.47-3.08); testosterone outperformed oxandrolone by 2.64 cm (95% CI 1.44-3.80)
+  context: human, meta-analysis of 13 retrospective cohorts, 803 boys with constitutional delay of growth and puberty
+  evidence_tier: T4
+  refs: [wang2026]
+  confidence: B
+  notes: The NON-aromatisable androgen was the weaker agent, implying an oestrogen requirement for full pubertal height gain.
+- edge_id: e00030
+  source: estrogen_low_dose_therapy
+  target: estrogen_biphasic_dose_effect
+  relation: correlates_with
+  sign: biphasic
+  magnitude: not quantified; the clinical timing decision is the operational expression of the biphasic curve
+  context: human, Turner syndrome on rhGH; guideline-based rather than randomised
+  evidence_tier: T5
+  refs: [turner2025]
+  confidence: C
+- edge_id: e00031
+  source: teriparatide
+  target: pth1r_receptor
+  relation: activates
+  sign: +
+  magnitude: same receptor affinity as PTH(1-84) N-terminal fragment; cAMP pathway activation
+  context: human, adult osteoporosis; barred from patients with open epiphyses
+  evidence_tier: T2
+  refs: [fda_forteo_label_2025]
+  confidence: A
+- edge_id: e00032
+  source: teriparatide
+  target: growth_velocity_longitudinal
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: no human growth readout exists at any dose or age with open epiphyses
+  context: human; regulatorily blocked by the osteosarcoma restriction
+  evidence_tier: T2
+  refs: [fda_forteo_label_2025, tantivit2026]
+  confidence: speculative
+  gap_id: g_l12b_019
+- edge_id: e00033
+  source: abaloparatide
+  target: pth1r_receptor
+  relation: activates
+  sign: +
+  magnitude: PTHrP(1-34) analogue, 80 mcg/day, cAMP pathway activation
+  context: human, adult osteoporosis; not recommended with open epiphyses
+  evidence_tier: T2
+  refs: [fda_tymlos_label_2025]
+  confidence: A
+- edge_id: e00034
+  source: bisphosphonate_growth_plate
+  target: chondro_osseous_junction
+  relation: inhibits
+  sign: '-'
+  magnitude: metaphyseal sclerotic bands, one per dosing cycle, in every treated growing child
+  context: human, children on cyclical pamidronate or zoledronate, chiefly osteogenesis imperfecta
+  evidence_tier: T5
+  refs: [pereira2025, hosseinitabata2026]
+  confidence: A
+  notes: The only routine human image of a drug arriving at the growth plate in quantity.
+- edge_id: e00035
+  source: methylphenidate_growth
+  target: growth_velocity_longitudinal
+  relation: inhibits
+  sign: '-'
+  magnitude: height Z -0.13 (95% CI -0.18 to -0.09); weight Z -0.25; BMI Z -0.26
+  context: human, 33 studies of children and adolescents with ADHD on methylphenidate monotherapy
+  evidence_tier: T4
+  refs: [cao2026]
+  confidence: A
+  notes: Weight deficit ~1.9x the height deficit - the signature of an appetite-mediated route.
+- edge_id: e00036
+  source: inhaled_corticosteroid_growth
+  target: adult_height_attainment
+  relation: inhibits
+  sign: '-'
+  magnitude: -1.2 cm adult height (95% CI -1.9 to -0.5, p=0.001); -0.1 cm per ug/kg/day of dose in the first 2 years
+  context: human, CAMP RCT, budesonide 400 ug/day for 4-6 y from age 5-13 y; adult height in 943 of 1041 at mean age 24.9 y
+  evidence_tier: T1
+  refs: [kelly2012, nct00000575]
+  confidence: A
+  notes: The 2-year deficit (-1.3 cm) equals the adult deficit - loss incurred early, neither recovered nor compounded.
+- edge_id: e00037
+  source: inhaled_corticosteroid_growth
+  target: glucocorticoid_receptor
+  relation: activates
+  sign: +
+  magnitude: not quantified at the growth plate
+  context: human; systemic absorption from inhaled budesonide acting on the plate and the GH-IGF-1 axis
+  evidence_tier: T1
+  refs: [kelly2012]
+  confidence: C
+- edge_id: e00038
+  source: tyrosine_kinase_inhibitor_growth_toxicity
+  target: adult_height_attainment
+  relation: inhibits
+  sign: '-'
+  magnitude: height Z -0.6 to -1.1 at skeletal maturity (p=0.04); -0.5 to -1.3 when started prepubertally (p=0.03), no significant change if started post-spurt (p=0.60)
+  context: human, 13 children with chronic-phase CML on imatinib, median 14.3 y therapy, 184.4 patient-years
+  evidence_tier: T1
+  refs: [sadanand2026]
+  confidence: B
+  notes: Adolescent catch-up occurred and was insufficient.
+- edge_id: e00039
+  source: tyrosine_kinase_inhibitor_growth_toxicity
+  target: fgfr3_tyrosine_kinase_inhibitor
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: off-target growth toxicity of chronic paediatric kinase inhibition, magnitude unknown for FGFR-selective agents
+  context: human; same drug class, same chronic paediatric dosing, same prepubertal window of susceptibility
+  evidence_tier: T1
+  refs: [sadanand2026, kot2026]
+  confidence: speculative
+  gap_id: g_l12b_005
+- edge_id: e00040
+  source: chemotherapy_growth_plate_toxicity
+  target: growth_velocity_longitudinal
+  relation: inhibits
+  sign: '-'
+  magnitude: not partitioned between direct plate injury and irradiation-induced GH deficiency
+  context: human, childhood cancer survivors including post-haematopoietic-cell-transplant cohorts
+  evidence_tier: T1
+  refs: [shimomura2026, ahirwar2025]
+  confidence: C
+- edge_id: e00041
+  source: deflazacort
+  target: glucocorticoid_receptor
+  relation: activates
+  sign: +
+  magnitude: via the active metabolite 21-desDFZ; 0.9 mg/kg/day oral
+  context: human, boys with Duchenne muscular dystrophy aged 2 y and older
+  evidence_tier: T2
+  refs: [fda_emflaza_label_2025]
+  confidence: A
+- edge_id: e00042
+  source: glucocorticoid_sparing_strategy
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: '-'
+  magnitude: residual cost of the inhaled-route strategy is -1.2 cm adult height (95% CI -1.9 to -0.5)
+  context: human; route change reduces but does not abolish the height cost
+  evidence_tier: T1
+  refs: [kelly2012, clemens2026]
+  confidence: B
+- edge_id: e00043
+  source: growth_plate_drug_exposure
+  target: npr2_agonist_class
+  relation: required_for
+  sign: unknown
+  magnitude: zero of twelve audited agents has a published growth plate tissue concentration in any species
+  context: human and animal; plasma AUC is used as the surrogate for plate AUC throughout the field
+  evidence_tier: T2
+  refs: [fda_voxzogo_label_2025, fda_yuviwel_label_2026, matsuoka2025]
+  confidence: speculative
+  gap_id: g_l12b_002
+- edge_id: e00044
+  source: trial_endpoint_annualized_growth_velocity
+  target: final_adult_height_endpoint
+  relation: precedes
+  sign: unknown
+  magnitude: conversion coefficient unknown; observed adult-height gains cluster at 1-4 cm against velocity integrals an order of magnitude larger
+  context: human, all growth pharmacology; both achondroplasia approvals are accelerated on the surrogate
+  evidence_tier: T2
+  refs: [fda_voxzogo_label_2025, martn2026, wang2026, kelly2012]
+  confidence: speculative
+  gap_id: g_l12b_016
+- edge_id: e00045
+  source: limb_lengthening_surgery
+  target: adult_height_attainment
+  relation: activates
+  sign: +
+  magnitude: femoral 8.85 cm (95% CI 7.42-10.28), tibial 7.36 cm (6.21-8.52), humeral 8.38 cm (7.01-9.74); complication rate 56.1%
+  context: human, 14 studies, 1149 patients with achondroplasia; regenerate bone is intramembranous, bypassing the growth plate
+  evidence_tier: T4
+  refs: [hosny2026]
+  confidence: A
+  notes: One to two orders of magnitude more effective per intervention than any drug in this layer, and correspondingly more harmful.
+- edge_id: e00046
+  source: cnp_analog_pk_challenge
+  target: npr2_agonist_class
+  relation: correlates_with
+  sign: unknown
+  magnitude: ~300-fold difference in exposure duration (24 min vs 5.3 d half-life) with overlapping efficacy (1.57 vs 1.49 cm/yr)
+  context: human, cross-trial comparison of vosoritide and navepegritide; no head-to-head trial exists
+  evidence_tier: T2
+  refs: [fda_voxzogo_label_2025, fda_yuviwel_label_2026, savarirayan2020, nct05598320]
+  confidence: B
+  notes: Argues the rate-limiting step is not CNP exposure. Formalised as gap g_l12b_017.
+- edge_id: e00047
+  source: statin_ipsc_achondroplasia
+  target: fgfr3_receptor
+  relation: degrades
+  sign: '-'
+  magnitude: not quantified; proposed mechanism is reduced accumulation of mutant FGFR3 rather than kinase inhibition
+  context: patient-derived iPSC chondrogenic cultures from thanatophoric dysplasia type I and achondroplasia, plus achondroplasia model mice
+  evidence_tier: T1
+  refs: [yamashita2014]
+  confidence: D
+  notes: Single study, not independently replicated in twelve years; no human in vivo data.
+- edge_id: e00048
+  source: transcon_growth_hormone
+  target: navepegritide
+  relation: correlates_with
+  sign: +
+  magnitude: combination AGV 8.69 cm/yr vs 5.95 cm/yr for matched navepegritide monotherapy, difference 2.74 cm/yr (p<0.0001)
+  context: human, COACH phase 2 NCT06433557, n=21, achondroplasia 2-11 y, 52 weeks; comparator is a matched external cohort
+  evidence_tier: T1
+  refs: [mcdonnell2026, nct06433557]
+  confidence: D

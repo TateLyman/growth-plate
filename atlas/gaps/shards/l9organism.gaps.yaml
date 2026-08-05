@@ -1,0 +1,662 @@
+gaps:
+
+- gap_id: g_l9organism_001
+  question: >-
+    Has any published model derived human height velocity in cm/yr from measured growth plate cell
+    kinetics - chondrocyte production rate, hypertrophic cell height and column density - in a way
+    that reproduces the observed peak of 9.5 cm/yr in boys and 8.3 cm/yr in girls?
+  type: scale_gap
+  layer: L9
+  why_it_matters: >-
+    This is the join the whole atlas exists to make. Every L1-L7 parameter is measured in
+    micrometres per day in one plate of one rodent; every L9 target is centimetres per year of a
+    whole human. If no published work spans the two, then the consistency check the atlas proposes
+    has never been attempted and every mechanistic claim about human stature is currently
+    unfalsifiable at the organism level.
+  what_is_known: >-
+    The arithmetic components exist separately. Plate elongation rate equals chondrocyte production
+    rate multiplied by the mean height of the terminal hypertrophic cell (the Hunziker-Schenk
+    formulation), and both quantities have been measured in rat and pig (L1 elongation_budget,
+    hypertrophic_volume_increase). Human plate-level velocities exist from serial radiography: the
+    distal femur contributes about 1.3 cm/yr after age 7. Organism-level velocity is measured
+    precisely in three independent SITAR cohorts (chun2024, galvo2025).
+  what_is_missing: >-
+    No retrieved work multiplies human column density by human chondrocyte production rate and
+    human hypertrophic cell height and compares the product against measured human height
+    velocity, nor sums such a calculation across the contributing plates. The screened literature
+    is either clinical auxology with no cellular content or rodent cell biology with no organism
+    endpoint.
+  nearest_evidence:
+  - chun2024
+  - galvo2025
+  discriminating_experiment: >-
+    Model system: human physeal tissue obtained at epiphysiodesis or limb reconstruction from
+    children of known chronological age, sex and pubertal stage, with same-admission standing
+    height and a documented height velocity over the preceding 6-12 months. Readout: (i)
+    histomorphometric column density per mm2, mean terminal hypertrophic cell height and
+    hypertrophic zone height in the sampled plate; (ii) predicted elongation rate = production rate
+    x terminal cell height, with production rate estimated from hypertrophic zone height divided by
+    the hypertrophic phase duration transferred from rodent. Expected result under the hypothesis
+    that plate kinetics fully explain organism velocity: the summed prediction across the distal
+    femur and proximal tibia falls within the measured lower-limb contribution to height velocity
+    (roughly 65-70% of total). Under the alternative that a systematic factor is missing (for
+    example matrix synthesis contributing independently of cell enlargement), the prediction will
+    be short by a constant fraction across ages, and that fraction is itself the discovery.
+  tractability: 2
+  search_log_ref: g_l9organism_001
+
+- gap_id: g_l9organism_002
+  question: >-
+    When the ICP, Preece-Baines, JPA-2 and SITAR models are fitted to the same individual growth
+    curves, what are their residual standard deviations, and does any model fit better than the
+    6-7 mm that Preece-Baines and SITAR both achieve?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: >-
+    The residual is the interesting number, because it bounds how much of a real growth curve is
+    not captured by any smooth parametric description and therefore how much room exists for
+    biology such as saltatory growth, seasonality or short-term mechanical gating. If four
+    structurally different models all bottom out at 6-7 mm, that floor is a property of the
+    measurement or of the child, not of the models, and no mechanistic model should be asked to
+    beat it.
+  what_is_known: >-
+    Preece-Baines model 1 achieves a residual SD of 6-7 mm on individual pubertal curves
+    (preece1978, quoted in cole2010). SITAR achieves 0.79 cm on 129508 heights in 3245 boys and
+    0.6 cm in 105 girls with Turner syndrome, explicitly matching the median PB residual
+    (cole2010). Kernel regression, a triple logistic model and Preece-Baines have been compared on
+    227 Fels participants for derived spurt parameters, but that comparison reported parameter
+    differences rather than residual SDs (guo1992). ICP and JPA-2 residuals were not located.
+  what_is_missing: >-
+    A single paper fitting all four families to one longitudinal dataset and tabulating residual
+    SD, and in particular any residual figure at all for the ICP model or for JPA-2. Without it the
+    common statement that one model fits better than another is untraceable.
+  nearest_evidence:
+  - cole2010
+  - preece1978
+  - guo1992
+  discriminating_experiment: >-
+    Model system: an existing dense longitudinal height series with at least 20 measurements per
+    child from age 2 to adult height - for example the Zurich Longitudinal Studies or the Fels
+    series. Readout: residual SD, AIC and the estimated age and magnitude of peak height velocity
+    from ICP, Preece-Baines model 1, JPA-2 and SITAR fitted to identical data, with a leave-one-
+    measurement-out cross-validated residual as the primary comparison. Expected result if the
+    6-7 mm floor is measurement noise: all four models converge to within 1 mm of each other and
+    the cross-validated residual equals the technical error of measurement of stadiometry. Expected
+    result if the floor is biological: models that can represent the mid-growth spurt (kernel,
+    JPA-2) will show a systematically lower residual in the 6-9 year window specifically.
+  tractability: 5
+  search_log_ref: g_l9organism_002
+
+- gap_id: g_l9organism_003
+  question: >-
+    What changes in the human growth plate between 6 and 12 months of age, when the ICP childhood
+    component switches on and growth becomes growth-hormone dependent?
+  type: known_unknown
+  layer: L9
+  why_it_matters: >-
+    The infancy-to-childhood transition is the only point in postnatal life at which the dominant
+    endocrine control of linear growth is thought to change identity. If the plate is
+    architecturally or transcriptionally different before and after it, then plate parameters
+    measured in juvenile animals cannot be applied to the first postnatal year, and the two
+    thirds of a metre gained in that year is governed by mechanisms the atlas has not described.
+  what_is_known: >-
+    The childhood component begins at 6-12 months, the infancy component has effectively ceased by
+    3 years, the spurt is absent in untreated GH deficiency and delayed in 30-50% of deprived or
+    growth-disordered infants (karlberg1990). During the overlapping mini-puberty window free
+    testosterone is associated with infant growth velocity, one third of the association mediated
+    by IGF-I (pridik2026).
+  what_is_missing: >-
+    Any measurement of human growth plate architecture, chondrocyte kinetics or GH/IGF-I receptor
+    expression across the 0-3 year window. Human physeal tissue in this age band is essentially
+    unobtainable outside post-mortem material, and no post-mortem series with the relevant
+    measurements was retrieved.
+  nearest_evidence:
+  - karlberg1990
+  - pridik2026
+  - karlberg1987
+  discriminating_experiment: >-
+    Model system: a curated paediatric post-mortem physeal collection spanning 0-36 months with
+    documented cause of death, birth length and last recorded length, sampling the distal femur.
+    Readout: growth plate height, hypertrophic zone height, column density and GHR/IGF1R
+    immunolocalisation by zone, plotted against age. Expected result if the ICP transition is a
+    real change of control: a discontinuity in GHR staining intensity or zonal distribution
+    between 6 and 12 months, with plate architecture otherwise continuous. Expected result if the
+    transition is only a change in the rate of an unchanged process: monotonic change in all
+    architectural variables with no inflection at 6-12 months.
+  tractability: 2
+
+- gap_id: g_l9organism_004
+  question: >-
+    What is the predictive SD of corrected mid-parental target height in a population-representative
+    sample outside the single Jewish family cohort in which it has been measured?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: >-
+    The predictive SD defines the threshold at which a child is investigated for a growth disorder.
+    A single measurement of 4.4-4.7 cm in a genetically narrow sample of 23 large families is
+    currently the only direct empirical estimate, and it is being used to argue that guideline
+    bands are 50% too wide. If the true value in an outbred, ancestry-diverse population is 5.5-6
+    cm, the guideline bands are approximately right and the argument collapses.
+  what_is_known: >-
+    Residual SD about the fully corrected target height is 4.7 cm for sons and 4.4 cm for daughters
+    across 303 adult children of 23 large nuclear families, with within-family values of 4.5 +/- 0.9
+    and 4.2 +/- 0.8 cm (zeevi2024). A population-based Swedish regression gives a 95% prediction
+    interval of about +/-10 cm, implying about 5.1 cm (luo1998). Wright and Cheetham confirmed the
+    90%-within-1.5-SDS prediction in 419 UK children but did not report a residual SD (wright1999).
+  what_is_missing: >-
+    A residual SD computed on measured adult heights of both parents and their adult offspring in a
+    population-representative, ancestry-diverse cohort with parental age correction and an explicit
+    regression-to-the-mean adjustment. Existing biobank-scale height data almost always lack
+    measured (as opposed to self-reported) parental height.
+  nearest_evidence:
+  - zeevi2024
+  - luo1998
+  - wright1999
+  discriminating_experiment: >-
+    Model system: a multi-ancestry biobank with measured standing height in both parents and at
+    least one adult offspring - for example a linked national health registry with directly
+    measured conscription or occupational-health heights across two generations. Readout: SD of the
+    residual of adult offspring height about the age-, sex- and regression-corrected mid-parental
+    height, stratified by ancestry and by parental height decile. Expected result if the 4.4-4.7 cm
+    figure generalises: the residual SD lies between 4.3 and 5.0 cm in every stratum, and the
+    +/-1.64 SDS guideline band is demonstrably too wide. Expected result if the family cohort was
+    unusually homogeneous: the residual SD exceeds 5.5 cm, and the guideline band is vindicated.
+  tractability: 4
+  search_log_ref: g_l9organism_004
+
+- gap_id: g_l9organism_005
+  question: >-
+    Which is correct for clinical use, the +/-8.5 cm target-height band derived theoretically by
+    Tanner, or the +/-1.64 SDS band (+/-10.6 cm girls, +/-11.7 cm boys) recommended by the growth
+    hormone societies, given a measured residual SD of 4.4-4.7 cm?
+  type: contradiction
+  layer: L9
+  why_it_matters: >-
+    These are two different thresholds for the same clinical decision and they differ by up to 3.2
+    cm at the boundary. A child 10 cm below target height has a 1.0-1.5% prior probability of that
+    deviation under the measured SD, which is inside the guideline band but outside the Tanner band.
+    The discrepancy determines who is investigated and who is treated.
+  what_is_known: >-
+    The +/-8.5 cm band was derived from theoretical considerations as the 3rd-to-97th centile band,
+    not measured, and was later revised by its own authors to +/-9 cm for girls and +/-10 cm for
+    boys (documented in zeevi2024, citing tanner1970). The +/-1.64 SDS band recommended by the GH
+    Research Society, LWPES and ESPE converts under CDC standards to +/-10.6 and +/-11.7 cm
+    (zeevi2024). The directly measured residual SD is 4.7 cm (sons) and 4.4 cm (daughters), which
+    corresponds to a 95% band of about +/-9.2 and +/-8.6 cm.
+  what_is_missing: >-
+    No published reconciliation. The guideline band and the empirical SD have not been compared in
+    a paper that both cohorts' authors would accept, and no study has tested which threshold better
+    separates children with a subsequently identified pathological cause of short stature from those
+    without.
+  nearest_evidence:
+  - zeevi2024
+  - luo1998
+  - tanner1970
+  discriminating_experiment: >-
+    Model system: a retrospective cohort of children referred for short stature with measured
+    parental heights, complete diagnostic workup and eventual diagnosis (pathological versus
+    familial/constitutional). Readout: sensitivity and specificity for a pathological diagnosis of
+    the three candidate thresholds (+/-8.5 cm, +/-1.64 SDS, +/-2 SD of the measured 4.4-4.7 cm
+    residual), with the corrected target height in all three cases. Expected result if the
+    empirical SD is right: the narrow threshold has materially higher sensitivity at acceptable
+    specificity, and the guideline band is missing pathology. Expected result if the guideline is
+    right: the narrow threshold produces an unacceptable false-positive rate without gaining
+    sensitivity, implying the empirical SD is cohort-specific.
+  tractability: 4
+
+- gap_id: g_l9organism_006
+  question: >-
+    What is the absolute rate constant k of human catch-up growth, in units of reciprocal years,
+    and does it scale with the duration of the preceding growth suppression as the delayed growth
+    plate senescence hypothesis predicts?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: >-
+    A rate constant is the one number that distinguishes the two mechanistic accounts of catch-up.
+    A systemic neuroendocrine comparator predicts a k set by how far the child is from target,
+    independent of what caused the deficit. A plate-intrinsic delayed-senescence account predicts a
+    k set by how much unspent proliferative capacity the plate retains, which depends on how long
+    the plate was suppressed. The published comparison shows k differs by disease with the same
+    endpoint, which is the signature the second model predicts, but no absolute value is reported.
+  what_is_known: >-
+    Catch-up in coeliac disease, juvenile hypothyroidism and GH deficiency fits a monomolecular
+    function in 83-90% of episodes; k is higher in coeliac disease than in juvenile hypothyroidism
+    (p=0.02) and than in GH deficiency (p=0.004), while the asymptote reached is similar (wit2021).
+    GH dose within the GHD group did not significantly change k. Emons and colleagues tested the
+    delayed senescence hypothesis in humans directly (emons2005) but the abstract is unavailable
+    and the paper is queued.
+  what_is_missing: >-
+    Numerical values of k with confidence intervals, and any analysis regressing k on the duration
+    of preceding suppression rather than on the diagnostic label. Total n across the two non-coeliac
+    conditions is 38 children.
+  nearest_evidence:
+  - wit2021
+  - wit2002
+  - emons2005
+  discriminating_experiment: >-
+    Model system: a multicentre registry of children with a documented start and end date of growth
+    suppression from a single cause - for example treated congenital hypothyroidism diagnosed at
+    different ages, or Crohn disease with dated onset and remission - followed to adult height.
+    Readout: monomolecular k fitted per child, regressed on duration of suppression, age at
+    suppression and height SDS deficit at release. Expected result under the plate-intrinsic model:
+    k falls as duration of suppression rises, because a longer suppression means less remaining
+    capacity, and k is independent of the deficit size. Expected result under the neuroendocrine
+    model: k rises with the size of the deficit and is independent of duration.
+  tractability: 3
+  search_log_ref: g_l9organism_006
+
+- gap_id: g_l9organism_007
+  question: >-
+    In a contemporary population measured against the WHO standard, what proportion of infants cross
+    two or more major length centiles upward and what proportion downward between birth and 2 years,
+    and how large is the mean absolute shift in SDS?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: >-
+    Catch-down growth defines the initial condition the postnatal growth plate actually starts from.
+    If a substantial fraction of infants systematically decelerate off their birth centile, then
+    birth length is the wrong initial condition for any model of postnatal elongation, and the
+    magnitude of the correction is exactly the number that fraction and shift provide.
+  what_is_known: >-
+    Smith and colleagues documented bidirectional channel shifting during infancy and concluded the
+    realignment is essentially complete by 2 years (smith1976), but the series is small, predates
+    modern references, and the abstract gives no rates. The parent-offspring regression slope of
+    0.75-0.79 (luo1998, zeevi2024) implies the size of the expected regression toward the parental
+    channel but not the distribution of individual shifts.
+  what_is_missing: >-
+    Centile-crossing rates and SDS-shift distributions computed against the WHO standard in a modern
+    birth cohort, separated by direction, and related to parental height so that catch-down toward
+    the genetic channel can be distinguished from growth faltering.
+  nearest_evidence:
+  - smith1976
+  - who_velocity_2009
+  - luo1998
+  discriminating_experiment: >-
+    Model system: an existing population birth cohort with WHO-standardised length at birth, 6, 12
+    and 24 months and measured parental heights. Readout: distribution of length SDS change from
+    birth to 24 months, stratified by the difference between birth-length SDS and target-height SDS.
+    Expected result if catch-down is target-seeking: the SDS change correlates negatively with
+    (birth length SDS minus target height SDS) with a slope near -1 and residual scatter around 0.5
+    SDS. Expected result if it is regression to the population mean rather than to the parental
+    channel: the change correlates with birth length SDS alone and parental height adds nothing.
+  tractability: 5
+  search_log_ref: g_l9organism_007
+
+- gap_id: g_l9organism_008
+  question: >-
+    Do the population differences in arm span/height ratio and sitting height ratio arise from
+    differences in the velocity of individual growth plates, or from differences in the duration
+    over which each plate runs?
+  type: search_established
+  layer: L9
+  why_it_matters: >-
+    This is the cleanest available test of whether a systemic growth signal is read uniformly by all
+    plates. If populations differ in ratio because the humeral plate runs faster relative to the
+    femoral plate, then plate-intrinsic sensitivity differs between populations and no single
+    systemic parameter can explain proportion. If they differ because the plates stop at different
+    times, then the difference is in fusion timing, which is an L7 problem with a known endocrine
+    driver.
+  what_is_known: >-
+    Japanese children have a lower arm span/height ratio than Dutch and Turkish children at every
+    age from 5.5 to 18.5 years and reach the plateau earlier (hirano2025). Sitting height ratio
+    references differ between national populations and the ratio depends on height SDS within a
+    population (fredriks2005). Human plate-specific growth shares are known from radiographic series
+    but only in North American and European cohorts (L1 distal_femur_plate, proximal_humerus_plate).
+  what_is_missing: >-
+    Any study reporting site-specific physeal growth velocity or plate-specific contribution shares
+    in two or more ancestry groups measured by the same method. The screened literature contains
+    population comparisons of anthropometric ratios and separate radiographic contribution studies,
+    but nothing that measures plate velocity across populations.
+  nearest_evidence:
+  - hirano2025
+  - fredriks2005
+  discriminating_experiment: >-
+    Model system: two ancestry groups with contrasting arm span/height ratios, children aged 6-16,
+    imaged with a low-dose biplanar system (EOS) at 12-month intervals. Readout: annual increment in
+    humeral, radial, femoral and tibial length per child, converted to per-plate velocity using
+    published contribution shares, plus a same-visit hand-wrist bone age. Expected result under the
+    velocity hypothesis: the humerus-to-femur velocity ratio differs between groups at matched bone
+    age. Expected result under the duration hypothesis: velocities match at matched bone age and the
+    groups differ only in the bone age at which each plate's velocity falls below 1 mm/yr.
+  tractability: 3
+  search_log_ref: g_l9organism_008
+
+- gap_id: g_l9organism_009
+  question: >-
+    In a healthy population, what is the mean and SD of the difference between dental age and
+    skeletal age in the same child, expressed in years?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: >-
+    The magnitude of the dental-skeletal dissociation is a quantitative constraint on any theory
+    that a single systemic maturational signal drives development. A large SD of the within-child
+    difference means the two clocks are substantially independent even in health; a small SD would
+    mean the dissociation seen in GH deficiency is a disease-specific artefact rather than evidence
+    of independent control.
+  what_is_known: >-
+    Under endocrine perturbation the clocks separate sharply: in untreated isolated GH deficiency
+    bone age is delayed 1.99 years while dental age is delayed 0.31 years, and the two delays are
+    explicitly uncorrelated within individuals (torliskawalkow2026, n=48 versus 48 controls). In
+    healthy French-Canadian girls age at 90% dental maturity showed no significant relationship
+    with peak height velocity, menarche or 75% skeletal maturity (demirjian1985, n=50). Unselected
+    cross-sectional samples show dental-skeletal stage correlations of 0.78-0.85, driven by shared
+    chronological age (floresmir2005, mohammadianras2026).
+  what_is_missing: >-
+    A Bland-Altman style analysis of dental age minus skeletal age in healthy children, giving mean
+    bias and limits of agreement in years by age band and sex. The screened literature reports
+    correlation coefficients almost exclusively, which are inflated by the shared age axis and
+    cannot be converted to an SD of the within-child difference.
+  nearest_evidence:
+  - demirjian1985
+  - torliskawalkow2026
+  - floresmir2005
+  discriminating_experiment: >-
+    Model system: an existing paediatric imaging archive with same-visit panoramic radiographs and
+    hand-wrist radiographs in healthy children aged 6-16, at least 500 per sex. Readout: Demirjian
+    dental age and Greulich-Pyle or TW3 skeletal age per child, analysed as difference against mean
+    with limits of agreement, stratified by age band and sex. Expected result if the clocks are
+    substantially independent: limits of agreement wider than +/-2 years with no narrowing at any
+    age. Expected result if they are coupled and only separable under disease: limits of agreement
+    within +/-1 year in health, making the 1.68-year GHD dissociation a large and specific
+    endocrine effect.
+  tractability: 5
+  search_log_ref: g_l9organism_009
+
+- gap_id: g_l9organism_010
+  question: >-
+    Why is dental mineralization insensitive to the endocrine and nutritional perturbations that
+    delay skeletal maturation by up to 2 years?
+  type: known_unknown
+  layer: L9
+  why_it_matters: >-
+    Both odontoblasts and growth plate chondrocytes make and mineralise a collagenous matrix under
+    systemic hormonal exposure, yet one is delayed by GH deficiency and stunting and the other is
+    not. Whatever explains that asymmetry is a statement about which signals the growth plate is
+    uniquely sensitive to, and it is a constraint the atlas can use in reverse.
+  what_is_known: >-
+    In GH deficiency bone age is delayed 1.99 y and dental age 0.31 y, uncorrelated within
+    individuals (torliskawalkow2026). Short children born SGA have delayed skeletal maturation and
+    craniofacial hypoplasia but no dental delay (van1998). Stunting sufficient to lower height for
+    age in Peruvian schoolchildren shifted neither dental nor skeletal maturity stage
+    (floresmir2005). Structurally, tooth mineralization is a one-way morphological sequence with no
+    proliferative compartment that can be arrested and resumed.
+  what_is_missing: >-
+    Any comparison of GHR, IGF1R or thyroid hormone receptor expression between human odontoblasts
+    or dental follicle and growth plate chondrocytes at matched developmental stages, and any test
+    of whether tooth mineralization rate is hormone-responsive at all in a controlled setting.
+  nearest_evidence:
+  - torliskawalkow2026
+  - van1998
+  - demirjian1985
+  discriminating_experiment: >-
+    Model system: paired human tooth germ and growth plate tissue from the same paediatric donors
+    (post-mortem or from combined orthognathic/orthopaedic procedures). Readout: single-cell or
+    bulk RNA sequencing of the somatotropic and thyroid receptor modules in odontoblast/dental
+    follicle versus resting and proliferative chondrocytes. Expected result under the receptor-
+    absence hypothesis: GHR and IGF1R expression is near-absent in the dental compartment.
+    Expected result under the no-proliferative-compartment hypothesis: receptors are expressed at
+    comparable levels but the dental compartment lacks the proliferative population through which
+    the hormones act, so the clock cannot be slowed even though the signal is received.
+  tractability: 2
+
+- gap_id: g_l9organism_011
+  question: >-
+    Does human skeletal muscle fix its myofibre number and complete myonuclear accretion early in
+    postnatal life, as mouse extensor digitorum longus does by postnatal day 21?
+  type: species_gap
+  layer: L9
+  why_it_matters: >-
+    The entire mechanistic account of postnatal muscle growth in this layer rests on one fast muscle
+    of one mouse strain over an eight-week window. Human muscle grows for eighteen years. If human
+    myonuclear accretion continues through adolescence, then satellite cells remain rate-limiting
+    for growth in a way they are not in the adult mouse, and the analogy between the satellite cell
+    pool and the growth plate resting zone changes character entirely.
+  what_is_known: >-
+    In mouse EDL there is no net change in myofibre number from P7 to P56 while fibre volume rises
+    14.1-fold; myonuclei per fibre rise about 5-fold between P3 and P21 and then stop, so the
+    myonuclear domain triples thereafter to 26.5 x 10^3 um3; satellite cells per fibre fall from
+    about 14 at P7 to about 5 by P21 (white2010). Human satellite cell counts exist only in
+    pathological muscle (dayanidhi2015).
+  what_is_missing: >-
+    Any human developmental series counting myofibre number, myonuclei per fibre or satellite cells
+    per fibre across childhood and adolescence. Such counts require whole-muscle cross-sections or
+    single-fibre preparations that are not obtainable from routine biopsy.
+  nearest_evidence:
+  - white2010
+  - dayanidhi2015
+  discriminating_experiment: >-
+    Model system: archived human muscle from paediatric post-mortem series spanning 1-18 years, or
+    intact muscle removed during limb reconstruction, sampled from a single named muscle for
+    comparability. Readout: total myofibre number on whole cross-section, myonuclear number per unit
+    fibre length by dystrophin/laminin plus DAPI segmentation, and Pax7-positive satellite cells per
+    fibre. Expected result if human follows mouse: fibre number flat from the earliest sample,
+    myonuclei per unit length flat after early childhood, satellite cell density falling to an adult
+    plateau before puberty. Expected result if human differs: myonuclear number per unit length
+    continues to rise through the pubertal spurt, implicating satellite cell function directly in
+    adolescent muscle growth.
+  tractability: 2
+
+- gap_id: g_l9organism_012
+  question: >-
+    Does loss of myostatin signalling in humans change long bone length, or only muscle mass?
+  type: known_unknown
+  layer: L9
+  why_it_matters: >-
+    This is a decisive test of the mechanostat account of longitudinal growth. If muscle force is
+    the proximate driver of bone elongation, a person with lifelong myostatin loss of function
+    should be measurably taller than their target height. If they are not, then muscle force sets
+    bone width and strength but not length, and mechanical modulation at the plate (L6) is a
+    modulator rather than a driver.
+  what_is_known: >-
+    A single human MSTN loss-of-function case with gross muscle hypertrophy has been reported
+    (schuelke2004); the reported phenotype is muscular, and no skeletal length phenotype is
+    described. Pharmacological ActRIIB blockade increases thigh muscle volume in adults after
+    disuse atrophy (rooks2017), an age at which stature cannot change. Peak lean mass velocity
+    predicts peak bone mineral accrual, but peak height velocity does not once lean mass is in the
+    model (rauch2004).
+  what_is_missing: >-
+    Height and target height for the reported human myostatin case and for any subsequently
+    identified carriers, and long bone length data from any trial of myostatin-axis blockade
+    conducted in growing children.
+  nearest_evidence:
+  - schuelke2004
+  - rooks2017
+  - rauch2004
+  discriminating_experiment: >-
+    Model system: carriers of rare MSTN or ACVR2B loss-of-function alleles identified in a biobank
+    with measured standing height, sitting height and, where available, parental heights. Readout:
+    height SDS and sitting height ratio SDS in carriers versus non-carrier relatives, and
+    lean-mass-adjusted height. Expected result under the mechanostat hypothesis: carriers exceed
+    their target height, with the excess concentrated in the lower limb where loads are highest.
+    Expected result under the modulator hypothesis: carriers show increased lean mass and normal
+    height SDS, with a normal sitting height ratio.
+  tractability: 4
+
+- gap_id: g_l9organism_013
+  question: >-
+    Does muscle growth cause bone mineral accrual during the pubertal spurt, or are the two
+    independently determined and merely correlated in time?
+  type: contradiction
+  layer: L9
+  why_it_matters: >-
+    Peak lean mass velocity precedes and statistically predicts peak bone mineral content velocity
+    at every anatomical site while peak height velocity does not, which is read as support for the
+    mechanostat. The authors of the primary explicitly state their data cannot exclude independent
+    genetic determination of both. The two readings imply opposite intervention strategies for bone
+    accrual in childhood.
+  what_is_known: >-
+    Peak lean mass velocity precedes peak bone mineral content velocity by 0.36 y (boys) and 0.51 y
+    (girls) for the total body, 0.63 and 0.71 y in the arms, and 0.48 and 0.22 y in the legs; peak
+    lean mass velocity explains 41-61% of the variance in regional peak bone mineral content
+    velocity while peak height velocity and sex explain none independently (rauch2004). The lag
+    differs three-fold between the arms of boys and the legs of girls, which a single systemic
+    driver does not predict.
+  what_is_missing: >-
+    Any intervention that changes muscle mass without changing hormonal status during growth and
+    measures bone accrual, and any genetically informed decomposition (twin or polygenic score) of
+    the lean mass to bone mineral relationship in growing children.
+  nearest_evidence:
+  - rauch2004
+  discriminating_experiment: >-
+    Model system: a unilateral loading paradigm in growing adolescents - for example the dominant
+    versus non-dominant arm in racquet sport players, who differ in muscle mass within the same
+    endocrine environment. Readout: side-to-side difference in lean mass velocity and in bone
+    mineral content velocity measured longitudinally through the spurt. Expected result if muscle
+    causes bone: the within-person side difference in lean mass velocity predicts the side
+    difference in bone mineral velocity with the same lag as the between-person relationship.
+    Expected result if both are independently determined: side differences in lean mass appear
+    without a corresponding lagged bone response beyond the known direct loading effect on
+    cortical geometry.
+  tractability: 4
+
+- gap_id: g_l9organism_014
+  question: >-
+    Is there any shared timing mechanism between the brain growth trajectory, whose grey matter
+    volume peaks at 5.9 years and white matter at 28.7 years, and the growth plate, whose velocity
+    peaks at 11-13 years and which fuses by the late teens?
+  type: scale_gap
+  layer: L9
+  why_it_matters: >-
+    Brain growth and calvarial suture closure are the largest organism-level counterexamples to a
+    single maturational clock. Grey matter peaks six years before peak height velocity, white matter
+    fifteen years after it, and up to 17% of healthy children close a calvarial suture before
+    adulthood. If no mechanism connects the two, then the L9 brain and skull nodes cannot be linked
+    to L1-L7 by an evidenced edge, and this gap is the explicit reason why.
+  what_is_known: >-
+    Grey matter volume peaks at 5.9 y, cortical thickness at 1.7 y, total cerebrum volume at 12.5 y,
+    subcortical grey at 14.4 y and white matter at 28.7 y, with velocity peaks at 5.08 months and
+    2.4 y and no adolescent volume spurt in any tissue class (bethlehem2022). Brain weight
+    quadruples by 3 years and peaks near 19 (dekaban1978). Sagittal suture patency falls from 99.3%
+    under age 3 to 83% by age 9 (han2025). Height velocity peaks at 11.8 y in females and 13.5 y in
+    males (elhakeem2024).
+  what_is_missing: >-
+    Any within-individual study relating a brain growth milestone to a physeal milestone, and any
+    proposed shared signal. The two literatures do not cite each other and no candidate mechanism
+    was retrieved.
+  nearest_evidence:
+  - bethlehem2022
+  - han2025
+  - elhakeem2024
+  discriminating_experiment: >-
+    Model system: an existing cohort with both serial brain MRI and serial standing height from
+    childhood through adolescence, for example the ABCD study or the Zurich Longitudinal Studies
+    with imaging. Readout: within-individual correlation between SITAR tempo (timing of the height
+    spurt) and the individually estimated age at peak grey matter volume, adjusted for sex.
+    Expected result under a shared clock: tempo correlates positively with brain milestone age at
+    r above 0.3. Expected result under independent clocks: the correlation is indistinguishable
+    from zero, which would make brain and skeletal maturation formally separate timers and justify
+    treating brain growth as a boundary condition rather than a coupled system.
+  tractability: 4
+
+- gap_id: g_l9organism_015
+  question: >-
+    Is there any evidenced mechanistic link between visceral organ growth trajectories and growth
+    plate function, or must the viscera be treated as an uncoupled parallel system in this atlas?
+  type: scale_gap
+  layer: L9
+  why_it_matters: >-
+    The admission rule for this layer requires every retained node to connect to L1-L7 or to declare
+    why it cannot. Visceral organ growth and organ allometry supply organism-level numbers but no
+    edge into the mechanistic layers was found. Declaring the absence explicitly prevents a
+    speculative edge from being invented later, and identifies what evidence would justify one.
+  what_is_known: >-
+    LMS-smoothed centile charts exist for eight infant organ weights from 1190 modelled cases out of
+    1525 consecutive autopsies (pryce2014). Brain weight regressed on body height and weight across
+    23 age groups shows differential rates of change (dekaban1978). No source connecting organ mass
+    trajectories to chondrocyte kinetics, plate architecture or physeal velocity was retrieved.
+  what_is_missing: >-
+    Any measurement in the same individuals of both an organ mass trajectory and a physeal parameter,
+    and any candidate mediator such as a circulating factor of organ origin acting on the plate. The
+    nearest candidates are endocrine and already held in L4.
+  nearest_evidence:
+  - pryce2014
+  - dekaban1978
+  discriminating_experiment: >-
+    Model system: a paediatric post-mortem series with fresh organ weights, body length and a
+    sampled distal femoral physis from the same donors, spanning 0-18 years. Readout: organ weight
+    residuals for age and body length against physeal height, hypertrophic zone height and column
+    density in the same donor. Expected result under a coupled hypothesis: a specific organ mass
+    residual (for example liver, the dominant source of circulating IGF-I) predicts hypertrophic
+    zone height after adjustment for age and body length. Expected result under the uncoupled
+    hypothesis: no organ residual predicts any physeal parameter once age and body length are
+    controlled, confirming that L9 visceral nodes are boundary conditions rather than mechanism.
+  tractability: 2
+
+- gap_id: g_l9organism_016
+  question: >-
+    Do the craniofacial growth sites - the calvarial sutures, the cranial base synchondroses and the
+    mandibular condylar cartilage - share any control mechanism with the appendicular growth plate,
+    given that they cease growing on three different schedules within the same skull?
+  type: known_unknown
+  layer: L9
+  why_it_matters: >-
+    Within one head, the metopic suture closes by 21 months, up to 17% of children close a further
+    calvarial suture before adulthood, the spheno-occipital synchondrosis fuses around peak height
+    velocity, and the mandibular condyle remains load-responsive into adulthood. Three different
+    cessation schedules in adjacent bones is the strongest anatomical argument that fusion timing is
+    locally rather than systemically determined, which bears directly on L7.
+  what_is_known: >-
+    Metopic closure exceeds 75% by 21 months and sagittal patency falls to 83% by age 9 in healthy
+    children (han2025). Spheno-occipital fusion stages 3-4 occur at 12.7-13.9 y in males and
+    11.0-12.5 y in females and correlate with cervical vertebral maturation at Spearman 0.955-0.964
+    (kim2024). Mandibular condylar progenitors express osteoblast markers and become chondrogenic
+    under load in rodent (robinson2015). Growth restriction produces a patterned craniofacial
+    shortfall rather than uniform miniaturisation (van1998).
+  what_is_missing: >-
+    Any study measuring estrogen receptor expression or estradiol responsiveness at the human
+    spheno-occipital synchondrosis and at a human appendicular physis in the same donors, which is
+    the obvious test of whether the systemic fusion trigger established in L7 acts on the cranial
+    base too.
+  nearest_evidence:
+  - kim2024
+  - han2025
+  - robinson2015
+  - van1998
+  discriminating_experiment: >-
+    Model system: human cranial base synchondrosis and distal femoral physis sampled from the same
+    paediatric post-mortem donors across the 8-16 year window. Readout: ESR1 and CYP19A1 expression
+    and localisation by zone in each site, plus histological fusion stage. Expected result if the
+    systemic estrogen trigger is shared: ESR1 expression rises in parallel at both sites and the
+    synchondrosis fuses when local ESR1 reaches the level seen at the fusing physis. Expected result
+    if cessation is locally timed: ESR1 expression at the synchondrosis is unrelated to its fusion
+    stage, and the sex difference in synchondrosis timing must then be explained by a local
+    mechanism.
+  tractability: 2
+
+- gap_id: g_l9organism_017
+  question: >-
+    What are the postnatal allometric scaling exponents of human organ mass on body mass, organ by
+    organ, from birth to adulthood?
+  type: quantitative_gap
+  layer: L9
+  why_it_matters: >-
+    Non-isometric growth is the reason body shape changes with size, and the exponents are the
+    compact quantitative statement of it. Without them the atlas cannot check that a plate-level
+    model reproducing stature does not simultaneously imply isometric organism growth, which is
+    demonstrably wrong.
+  what_is_known: >-
+    Brain weight regressed on body height and body weight across 23 age groups shows clearly
+    differential rates of change (dekaban1978), and modern MRI milestones place brain volume peaks
+    years before the skeletal spurt (bethlehem2022). Infant organ weight centiles exist for eight
+    organs (pryce2014). Allometric scaling is used extensively in paediatric pharmacokinetics but
+    with exponents assumed (typically 0.75 for clearance) rather than fitted to measured organ mass.
+  what_is_missing: >-
+    Fitted exponents with confidence intervals for human postnatal organ mass on body mass. The
+    screened literature returns pharmacokinetic scaling with assumed exponents, comparative
+    interspecies allometry, and plant or non-human animal studies, but no human postnatal
+    organ-by-organ fit.
+  nearest_evidence:
+  - dekaban1978
+  - pryce2014
+  - bethlehem2022
+  discriminating_experiment: >-
+    Model system: a large paediatric autopsy archive with recorded fresh organ weights, body weight
+    and body length, spanning birth to 18 years, restricted to cases without organ pathology.
+    Readout: log-log regression of each organ mass on body mass with age as a covariate, giving an
+    exponent per organ with confidence intervals, and a test of whether the exponent is constant
+    across the age range. Expected result if scaling is a fixed property: each organ has a single
+    exponent, brain well below 1 and skeletal muscle above 1. Expected result if scaling is
+    age-dependent: the exponents change at the infancy-childhood transition and at puberty, which
+    would mean allometry is a description of successive growth programmes rather than a law.
+  tractability: 3
+  search_log_ref: g_l9organism_017

@@ -1067,3 +1067,289 @@ searches:
     EDCs), a mouse prenatal EDC-mixture study of mandibular development (intramembranous and condylar, not endochondral long
     bone), a microplastic-and-bone-health review, an EDC-vitamin D biomarker association study, and general estrogen-receptor
     reviews. The endochondral growth plate is absent from the entire EDC experimental literature returned.'
+- gap_id: g_l12b_001
+  database: Europe PMC
+  exact_query_string: (infigratinib OR "FGFR3 inhibitor" OR vosoritide OR navepegritide) AND ("final adult height" OR "near-adult
+    height" OR "final height" OR "adult height attained")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 51
+  screened_count: 25
+  reason_none_qualified: 'No hit reports attained final or near-adult height in any patient treated with an FGFR3 inhibitor
+    or a CNP analogue. The nearest candidates were screened at title/abstract level and excluded: two conference abstracts
+    describing the PROPEL, PROPEL 2 and PROPEL OLE infigratinib studies report DESIGN AND STATUS only, with no height outcome;
+    the vosoritide systematic reviews and the CNP-analogue meta-analysis report annualised growth velocity, height Z-score,
+    standing height and upper-to-lower segment ratio; the ACHieve natural history paper reports untreated velocity trajectories,
+    not treated adult height; a phase 2 hypochondroplasia vosoritide trial reports velocity; the remainder are limb-surgery
+    integration studies, Delphi expert-opinion papers, weight-band population-PK modelling, spine morphometry and narrative
+    reviews. The absence tracks trial design rather than reporting failure - the relevant extensions (NCT05145010 infigratinib,
+    NCT03424018 and NCT03989947 vosoritide) are registered as active or enrolling by invitation and their cohorts have not
+    reached skeletal maturity.'
+  additional_source_checked: 'ClinicalTrials.gov API v2, query.term=infigratinib achondroplasia, 2026-08-05: five studies,
+    of which NCT06164951 (phase 3, n=114) is COMPLETED and NCT05145010 (n=300) is ENROLLING_BY_INVITATION; no posted results
+    for either. Query.term=navepegritide returned NCT05598320 COMPLETED with posted results whose outcome measures are AGV
+    and height Z-score at week 52 only.'
+- gap_id: g_l12b_002
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis OR "epiphyseal cartilage") AND (("drug concentration" OR "tissue concentration"
+    OR "mass spectrometry imaging" OR MALDI) AND (penetration OR diffusion OR distribution))
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 253
+  screened_count: 25
+  reason_none_qualified: 'No hit reports a measured drug concentration inside growth plate cartilage. The screened set contains
+    the relevant methods but applied elsewhere: spatial mass spectrometry imaging of subchondral bone in osteoarthritis, spatial
+    lipidomics of mouse joint tissue including growth plate (endogenous lipids, not drugs), multimodal imaging mass spectrometry
+    of Staphylococcus aureus osteomyelitis, and a randomised porcine study of cefepime/enmetazobactam target-tissue pharmacokinetics
+    in periprosthetic joint infection (bone and soft tissue, not physis). Two hits are drug-delivery engineering rather than
+    measurement: retinoid-impregnated nanoparticles for site-specific modulation of endochondral ossification in mice, and
+    microneedle transdermal systems for metabolic bone disease. The technique to answer this question demonstrably exists
+    and has not been pointed at the growth plate with a therapeutic agent.'
+  additional_source_checked: 'openFDA drug label API, 2026-08-05: structured labelling retrieved for VOXZOGO (NDA 214938),
+    YUVIWEL (NDA 219164), INCRELEX (BLA 021839), SKYTROFA (BLA 761177), FORTEO (NDA 021318), TYMLOS (NDA 208743), SOMAVERT
+    (BLA 021106) and EMFLAZA (NDA 208684/208685). All eight give plasma pharmacokinetics; none reports tissue distribution
+    to cartilage or growth plate. ClinicalTrials.gov posted results for NCT04638153 (recifercept) and NCT05598320 (navepegritide)
+    contain no tissue pharmacokinetic outcome measure.'
+- gap_id: g_l12b_007
+  database: Europe PMC
+  exact_query_string: (statin OR meclizine OR meclozine) AND (achondroplasia OR "FGFR3") AND (trial OR children OR patients)
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 248
+  screened_count: 25
+  reason_none_qualified: No hit reports a statin administered to a human with an FGFR3 skeletal dysplasia with any growth
+    endpoint. The only human interventional statin-adjacent material is the 2014 iPSC and mouse study itself, which contains
+    no human in vivo arm. Meclizine human material is limited to the phase 1b pharmacokinetic study (n=12) and the 26-week
+    open-label single-arm phase 2 (n=9, with concomitant growth hormone); no placebo-controlled meclizine trial and no meclizine
+    monotherapy growth trial was retrieved. The remaining hits are mouse studies of meclozine, reviews of achondroplasia therapy
+    that list statins as a preclinical candidate, and unrelated statin pharmacology. A contemporary review of achondroplasia
+    treatments in children aged 5 and older lists only vosoritide, infigratinib and navepegritide as clinical agents, with
+    statins absent from the clinical landscape entirely.
+- gap_id: g_l12b_012
+  database: Europe PMC
+  exact_query_string: ("mecasermin rinfabate" OR "iPlex" OR "rhIGF-1/rhIGFBP-3" OR "IGF-I/IGFBP-3 complex") AND (height OR
+    stature OR "growth velocity")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 865
+  screened_count: 25
+  reason_none_qualified: 'No hit reports height velocity or adult height in children treated with the rhIGF-1/rhIGFBP-3 complex
+    for short stature. The retrievable literature on the complex has migrated entirely to other indications: a phase 2b protocol
+    and phase 2 randomised trial of OHB-607 for bronchopulmonary dysplasia prevention in preterm neonates, continuous infusion
+    feasibility and pharmacokinetic modelling studies in extremely preterm infants, a post-hoc brain injury analysis, and
+    an open-label trial in myotonic dystrophy type 1. The term "iPlex" now retrieves the unrelated MassARRAY iPLEX genotyping
+    assay, which is why the query hit-count is high and the yield zero. The single on-topic retrieval is a 2006 narrative
+    appraisal of the efficacy and safety of mecasermin rinfabate, which is a review rather than a growth-outcome cohort and
+    is queued for hand retrieval.'
+- gap_id: g_l12b_014
+  database: Europe PMC
+  exact_query_string: (pegvisomant OR octreotide OR lanreotide OR pasireotide) AND (gigantism OR "GH-secreting") AND (children
+    OR pediatric OR paediatric OR adolescent) AND ("final height" OR "adult height")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 36
+  screened_count: 19
+  reason_none_qualified: 'Exactly one hit reports attained final height under a growth-limiting drug, and it is a single patient:
+    pegvisomant monotherapy carried to final height in paediatric X-linked acrogigantism. Every other hit is a case report,
+    a small surgical series, a genetics review or a case-series-plus-literature-review of McCune-Albright syndrome; none reports
+    final height in a cohort treated primarily with a somatostatin analogue, and none compares somatostatin analogue against
+    GH receptor blockade on any height endpoint. One hit describes the clinical profile and therapeutic responses of X-linked
+    acrogigantism, the syndrome in which somatostatin analogues are known to respond poorly, but without a final-height comparison.
+    The absence is a sample-size problem in an ultra-rare disease, not a reporting failure, which is why the discriminating
+    experiment proposed is a registry rather than a trial.'
+- gap_id: g_l12b_018
+  database: Europe PMC
+  exact_query_string: (estrogen OR oestrogen OR estradiol) AND "Turner syndrome" AND (timing OR "age at initiation") AND ("adult
+    height" OR "final height") AND (randomized OR randomised OR trial)
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 132
+  screened_count: 19
+  reason_none_qualified: No hit is a randomised comparison of oestrogen introduction age or dose with attained adult height
+    as the endpoint. The screened set consists of retrospective single-centre cohorts of growth hormone and near-final height
+    in Turner syndrome and SHOX deficiency, a 25-year single-centre lifespan experience, the Turner syndrome clinical practice
+    guidelines, a systematic review of hormonal treatments in growth disorders that pools GnRHa and rhGH but not oestrogen
+    timing, surveys of available oestradiol and progestogen preparations for puberty induction, and a proposal for earlier
+    lower-dose oestrogen for pubertal induction in Turner syndrome without gonadal function - which argues the case but reports
+    no randomised height comparison. Sex-steroid priming for GH stimulation testing appears but concerns diagnostic priming,
+    not growth outcome.
+- gap_id: g_l13b_001
+  database: Europe PMC (REST search, resultType=core)
+  exact_query_string: ("growth plate" OR physis OR "physeal cartilage") AND (biobank OR "tissue bank" OR biorepository OR
+    "tissue repository") AND (human) AND (paediatric OR pediatric OR children OR child)
+  filters: no date limit; pageSize=10 screened from 184 hits, ranked by relevance
+  date_run: '2026-08-05'
+  hit_count: 184
+  screened_count: 10
+  reason_none_qualified: 'No hit describes a catalogued repository of human growth plate or physeal tissue. Hits are paediatric
+    biobank studies of other tissues (leukaemia microDNA, stature GWAS across biobanks), MRI cohort protocols, and animal
+    chondrodysplasia genetics. The nearest relevant record is the EndoCompass research roadmap for growth disorders, which
+    sets priorities but describes no tissue resource. Cross-checked against the repository side: GEO, ArrayExpress/BioStudies
+    and the Human Cell Atlas contain deposited datasets but no tissue-bank registration, and the single human growth plate
+    scRNA-seq deposit (GSE288028) states that raw human files were withheld.'
+- gap_id: g_l13b_002
+  database: Human Cell Atlas Azul index (organ facet enumeration) and GTEx API v2 tissueSiteDetail
+  exact_query_string: GET https://service.azul.data.humancellatlas.org/index/projects?size=1 (organ termFacets enumerated);
+    GET https://gtexportal.org/api/v2/dataset/tissueSiteDetail?itemsPerPage=100
+  filters: default catalog dcp60; all 532 HCA projects indexed; all 54 GTEx tissue sites
+  date_run: '2026-08-05'
+  hit_count: 0
+  screened_count: 54
+  reason_none_qualified: 'The HCA organ vocabulary contains bone marrow (9 projects), bone tissue (6), bone element (1), femur
+    (1), hindlimb (3), limb (1), skeletal element (1) and musculoskeletal system (1), and contains no term for cartilage or
+    growth plate at all, so zero HCA projects can be indexed to physeal tissue. The 54 GTEx tissue sites contain no cartilage,
+    bone or growth plate entry (the only skeletal term is Muscle_Skeletal), and GTEx donors are aged 20-79, so no paediatric
+    growth plate exists there either. Confirmed against the Human Protein Atlas: querying COL2A1 returns tissue-specific expression
+    in epididymis, pituitary, retina and stomach, with no cartilage tissue in the normal-tissue panel.'
+- gap_id: g_l13b_004
+  database: Europe PMC (REST search, resultType=core)
+  exact_query_string: ("growth plate" OR physis) AND human AND (synchrotron)
+  filters: no date limit; pageSize=10 screened from 164 hits
+  date_run: '2026-08-05'
+  hit_count: 164
+  screened_count: 10
+  reason_none_qualified: No hit reports synchrotron imaging of a human growth plate. The one human growth plate paper returned
+    (xie2025) used nanoindentation, EDX and proteomics rather than synchrotron tomography. Other hits are murine, ovine, medaka
+    or human articular/subchondral tissue. Separately, the two human synchrotron cartilage studies located in this sweep (b2026
+    at 2.75 um voxel, xu2024 at 650 nm) imaged articular cartilage and the osteochondral interface, not physis.
+- gap_id: g_l13b_005
+  database: Europe PMC (REST search, resultType=core)
+  exact_query_string: ("growth plate" OR physis) AND human AND ("in situ hybridization" OR "in situ hybridisation" OR RNAscope)
+    AND (zone OR zonal OR resting OR proliferative OR hypertrophic)
+  filters: no date limit; pageSize=10 screened from 1173 hits, relevance-ranked
+  date_run: '2026-08-05'
+  hit_count: 1173
+  screened_count: 10
+  reason_none_qualified: Every screened hit that performs zonal in situ hybridization does so in mouse (Hhip1 conditional
+    knockout, Trpv4 mutant mice, ApoE resting-zone marker, Gli1 fetal murine limb) or in medaka/chicken. The word "human"
+    in these records refers to human disease being modelled, not to human tissue being hybridised. No systematic RNAscope
+    or ISH survey of human growth plate zones was found; human zonal transcript data in this atlas come from laser capture
+    microdissection (gse9160) instead.
+- gap_id: g_l13b_006
+  database: Europe PMC (REST search, resultType=core)
+  exact_query_string: (human) AND ("growth plate" OR physis) AND ("single-nucleus" OR "single nucleus" OR snRNA-seq)
+  filters: no date limit; pageSize=10 screened from 90 hits
+  date_run: '2026-08-05'
+  hit_count: 90
+  screened_count: 10
+  reason_none_qualified: 'No hit reports single-nucleus sequencing of human growth plate tissue. Returned records are deer
+    antler multi-omics, murine fetal limb Gli1 progenitors, human osteoarthritic articular cartilage progenitors, neural-crest-derived
+    craniofacial chondrogenic organoids, and reviews. Cross-checked in GEO: the human growth plate single-cell corpus (18
+    records) is dissociation-based; no single-nucleus human physis deposit exists.'
+- gap_id: g_l13b_007
+  database: Europe PMC (REST search, resultType=core)
+  exact_query_string: (human) AND ("growth plate" OR physis) AND (bromodeoxyuridine OR BrdU OR EdU OR "tritiated thymidine"
+    OR tetracycline) AND (in vivo OR labelling OR labeling)
+  filters: no date limit; pageSize=10 screened from 1431 hits, relevance-ranked
+  date_run: '2026-08-05'
+  hit_count: 1431
+  screened_count: 10
+  reason_none_qualified: No hit reports in vivo thymidine-analogue or tetracycline labelling of a human growth plate. All
+    labelling records screened are murine (miR-433, FGFR3/CREB resting zone turnover, retinoid antagonist injury, ADGRG6)
+    or in vitro. The only human labelling study located anywhere in this sweep is thurston1985, which used tritiated thymidine
+    on human growth plate IN VITRO alongside porcine tissue. In vivo administration of a mutagenic nucleoside analogue followed
+    by tissue harvest cannot be performed in a child, so the null here is method_blocked rather than merely unsearched.
+- gap_id: g_l9organism_001
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis) AND ("chondrocyte proliferation" OR "cell kinetics" OR "hypertrophic volume")
+    AND ("cm/year" OR "height velocity" OR "stature") AND (model OR simulation OR multiscale)
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 560
+  screened_count: 10
+  reason_none_qualified: The first ten hits, ranked by relevance, are clinical growth-hormone outcome studies (42243538, 42073123,
+    42279040), narrative reviews of short stature (40723048, 40310145) and murine growth plate molecular biology with no organism-level
+    endpoint (41342396, 41641077, 41864337). None computes a human height velocity in cm/yr from measured cellular parameters.
+    The corpus splits cleanly into clinical auxology without cell biology and rodent cell biology without a stature endpoint,
+    which is precisely the scale gap being asserted.
+- gap_id: g_l9organism_002
+  database: Europe PMC
+  exact_query_string: ("Preece-Baines" OR SITAR OR "ICP model" OR "JPA-2") AND (residual OR "goodness of fit" OR RMSE) AND
+    comparison AND (same OR identical) AND (cohort OR individuals)
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 132
+  screened_count: 10
+  reason_none_qualified: Hits are applications of a single model to a new cohort (40170793 Ethiopian SITAR, 38812046 Cracow,
+    40695558 antenatal steroids), a new method benchmarked against one comparator (41232372 People-Like-Me, 38302887 modified
+    Michaelis-Menten, P-splines preprint) or entirely off-topic (42164255, 41675598 equivalents). No paper fits ICP, Preece-Baines,
+    JPA-2 and SITAR to one dataset and tabulates residual SD for all four; in particular no residual SD for the ICP model
+    or for JPA-2 appears anywhere in the screened set.
+- gap_id: g_l9organism_004
+  database: Europe PMC
+  exact_query_string: ("target height" OR "midparental height") AND ("residual standard deviation" OR "prediction interval"
+    OR "limits of agreement") AND (adult height) AND (cohort OR population-based)
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 23
+  screened_count: 10
+  reason_none_qualified: Every screened hit concerns the accuracy of adult height PREDICTION FROM BONE AGE (36701990, 35103904,
+    41390355, 38169882) or is a conference abstract collection (40986224 and two untitled abstract records). None reports
+    the residual SD of adult offspring height about a corrected mid-parental target height in a population-representative
+    sample. The only direct empirical estimate located anywhere in this sweep remains zeevi2024 (23 large Jewish nuclear families),
+    which is exactly the narrowness the gap asserts.
+- gap_id: g_l9organism_006
+  database: Europe PMC
+  exact_query_string: '"catch-up growth" AND ("rate constant" OR "time constant" OR monomolecular OR "exponential") AND human
+    AND (children OR prepubertal)'
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 131
+  screened_count: 10
+  reason_none_qualified: The top hit is wit2021 itself (32936765), which reports that the rate constant k differs between
+    diseases but does not publish numerical k values or confidence intervals. The remaining hits are catch-up fat and thermogenesis
+    (40418496), altitude growth (41070017), twin cognitive-physical recovery (38303087) and unrelated clinical topics. No
+    paper reports an absolute rate constant for human linear catch-up growth, and none regresses k on the duration of the
+    preceding growth suppression.
+- gap_id: g_l9organism_007
+  database: Europe PMC
+  exact_query_string: (infant OR infancy) AND ("centile crossing" OR "channel shift" OR "catch-down") AND length AND (WHO
+    OR standard) AND (proportion OR percentage OR rate)
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 180
+  screened_count: 10
+  reason_none_qualified: All screened hits examine growth trajectories under a specific exposure - gestational diabetes (41462270,
+    39577834, 41869033), macrosomia (41132617), prematurity (42136589), size for gestational age (39135906) - and report mean
+    trajectories or z-score change, not the proportion of infants crossing two or more length centiles in each direction relative
+    to a parentally defined channel. None relates the shift to measured parental height, which is what distinguishes catch-down
+    from faltering.
+- gap_id: g_l9organism_008
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis) AND (velocity OR "growth rate") AND (population OR ethnic OR ancestry) AND
+    (difference OR variation) AND human
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 1190
+  screened_count: 10
+  reason_none_qualified: Screened hits are surgical guided-growth technique reviews (42299327, 41485130, 42246508, 42279114),
+    imaging methodology (38757966, 41929406), a population-genetics perspective piece on South American child growth with
+    no physeal measurement (41096569), and nutritional supplement trials (42064572, 42123928). No study measures site-specific
+    physeal growth velocity or plate-specific contribution shares in two or more ancestry groups by a common method, which
+    is what would decide between the velocity and duration explanations for population differences in body proportion.
+- gap_id: g_l9organism_009
+  database: Europe PMC
+  exact_query_string: ("dental age" AND "bone age") AND ("standard deviation" OR SD OR "limits of agreement") AND (discrepancy
+    OR difference) AND healthy
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 33
+  screened_count: 10
+  reason_none_qualified: Hits compare dental age estimation METHODS against chronological age (41928213 ChatGPT-5 versus Demirjian
+    and Willems, 41300576, 39061650, 40151703, 39775028) or study dental maturity in a named disease (41302932 GHD tooth eruption,
+    39441161 cleft lip and palate, 40583134 liver transplant). None reports the mean and SD, or limits of agreement, of dental
+    age minus skeletal age within the same healthy children. Correlation coefficients are reported almost universally instead,
+    and those are inflated by the shared chronological-age axis and cannot be converted to a within-child difference SD.
+- gap_id: g_l9organism_017
+  database: Europe PMC
+  exact_query_string: (allometric OR allometry) AND (exponent OR "scaling exponent") AND human AND (organ OR viscera OR kidney
+    OR liver) AND (postnatal OR children OR growth)
+  filters: format=json, resultType=lite, pageSize=10, no date limit
+  date_run: '2026-08-05'
+  hit_count: 587
+  screened_count: 10
+  reason_none_qualified: Screened hits are paediatric pharmacokinetic scaling with ASSUMED exponents (41255069, 42087498,
+    41824241), non-human allometry (41512279 mouse vocal folds, 42122839 Malus, 41290152 plant diaspores), an integrative
+    review of allometric theory (39644458), a weight-for-height scaling analysis that fits body-shape rather than organ exponents
+    (39024324) and heart-weight normalisation methodology (41844692). No source fits organ-by-organ postnatal allometric exponents
+    to measured human organ mass across development.

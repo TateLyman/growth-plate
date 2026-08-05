@@ -1,0 +1,106 @@
+id: articular_cartilage
+name: Articular cartilage
+type: tissue_structure
+layer: L9
+stub: false
+summary: 'Articular cartilage is the permanent cartilage at the epiphyseal surface, and during growth
+  it behaves as the growth plate''s opposite number: it thins while the plate is running and stabilises
+  once the plate closes. In 240 knee MRI scans of children aged 7-18 without chondral pathology, femoral
+  articular cartilage was significantly thicker in patients with open distal femoral physes than in those
+  with closing or closed physes at the medial condyle, lateral condyle and lateral trochlea (all p<0.001),
+  and linear regression showed an inverse association between femoral cartilage thickness and age. Patellar
+  cartilage, by contrast, was the thickest of all sites and did not vary with age or skeletal maturity,
+  so the thinning is site-specific rather than a whole-joint phenomenon. This node is retained in L9
+  because it supplies a quantitative organism-level dissociation the mechanistic layers must reproduce:
+  the same ciliary perturbation that shortens the mouse growth plate thickens articular cartilage (yuan2015,
+  the target of an existing L3 edge from ift80_protein), so plate output and articular thickness are not
+  two readouts of one chondrocyte programme. The human numbers are cross-sectional MRI, not histology,
+  and no human study has measured plate output and articular thickness in the same joint over time.'
+quantitative:
+- parameter: knee MRI scans contributing the paediatric articular cartilage reference
+  value: '240'
+  unit: knees
+  conditions: patients aged 7-18 without osteochondral lesions, chondral wear, intra-articular fracture
+    or prior knee surgery
+  species: human
+  source_ref: sidharthan2021
+  uncertainty: exact
+- parameter: lateral trochlear articular cartilage thickness, males
+  value: '4.4'
+  unit: mm
+  conditions: thickest femoral site; paediatric and adolescent knees
+  species: human
+  source_ref: sidharthan2021
+  uncertainty: SD 1.4 mm
+- parameter: lateral trochlear articular cartilage thickness, females
+  value: '3.6'
+  unit: mm
+  conditions: same site and cohort
+  species: human
+  source_ref: sidharthan2021
+  uncertainty: SD 1.3 mm; sex difference p<0.001
+- parameter: effect of physeal status on femoral articular cartilage thickness
+  value: thicker with open physes
+  unit: mm
+  conditions: medial femoral condyle, lateral femoral condyle and lateral trochlea, open vs closing/closed
+    distal femoral physis
+  species: human
+  source_ref: sidharthan2021
+  uncertainty: p<0.001 at all three sites; absolute difference not extracted from the abstract
+- parameter: association of patellar cartilage thickness with age or skeletal maturity
+  value: none
+  unit: not_applicable
+  conditions: patella is the thickest site in the joint
+  species: human
+  source_ref: sidharthan2021
+  uncertainty: reported as no strong correlation
+- parameter: effect of Ift80 deletion on articular versus growth plate cartilage
+  value: articular thickened, plate shortened
+  unit: not_applicable
+  conditions: mouse conditional Ift80 deletion; epiphyseal and articular cartilage formation impaired
+    through disrupted chondrocyte differentiation
+  species: mouse
+  source_ref: yuan2015
+  uncertainty: direction reported; magnitudes not extracted
+localization:
+- 'human knee: patellar, femoral condylar, trochlear and tibial plateau cartilage on MRI (sidharthan2021)'
+- 'mouse epiphysis: articular and growth plate cartilage under Ift80 deletion (yuan2015)'
+human_evidence: direct
+human_evidence_note: Normative articular cartilage thickness measured by MRI in 240 children and adolescents
+  with physeal status recorded on the same scans.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The human data are thickness on MRI with no cellular content; the dissociation
+  between articular and physeal responses to a single perturbation is established only in mouse.
+confidence: B
+claim_grades:
+- claim: Femoral articular cartilage is thicker while the distal femoral physis is open and thins with
+    age and skeletal maturity
+  grade: A
+  basis: Directly measured in 240 knee MRIs with physeal status scored on the same images, significant
+    at three femoral sites (p<0.001) and on linear regression against age.
+- claim: Articular cartilage thickness and growth plate output are separately controlled
+  grade: C
+  basis: Supported by the opposite-direction response of the two cartilages to Ift80 deletion in mouse
+    (yuan2015) and by the site-specific human pattern (patella invariant, femur age-dependent); no human
+    within-joint longitudinal test exists.
+key_refs:
+- ref_id: sidharthan2021
+  pmid: '34027446'
+  first_author: Sidharthan S
+  year: 2021
+  type: primary
+  one_line_finding: Femoral articular cartilage is thicker with open distal femoral physes and thins with
+    age, while patellar cartilage does not vary with age or maturity.
+- ref_id: yuan2015
+  pmid: '26098911'
+  first_author: Yuan X
+  year: 2015
+  type: primary
+  one_line_finding: Ift80 deletion impairs both epiphyseal and articular cartilage formation, thickening
+    articular cartilage while shortening the growth plate.
+open_questions:
+- g_l9organism_015
+last_verified: '2026-08-05'

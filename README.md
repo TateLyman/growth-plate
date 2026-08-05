@@ -38,13 +38,13 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 ## Coverage dashboard
 
 <!-- DASHBOARD:BEGIN -->
-**Totals** — 610 nodes (576 researched, 34 stubs) ·
-713 edges · 155 gaps (78 search logs) · 941 references
+**Totals** — 612 nodes (578 researched, 34 stubs) ·
+761 edges · 206 gaps (98 search logs) · 943 references
 
 ```
-nodes  ██████████░░░░░░░░░░ 610/1200 (50%)
-edges  █████░░░░░░░░░░░░░░░ 713/2500 (28%)
-gaps   ████████████████████ 155/150 (100%)
+nodes  ██████████░░░░░░░░░░ 612/1200 (51%)
+edges  ██████░░░░░░░░░░░░░░ 761/2500 (30%)
+gaps   ████████████████████ 206/150 (100%)
 ```
 
 | Layer | Name | Nodes | Researched | Edges out | Gaps | Quota | Doc | Fig |
@@ -52,24 +52,24 @@ gaps   ████████████████████ 155/150 (100
 | L0 | developmental_origin | 25 | 25 | 27 | 12 | ✅ | — | ✅ |
 | L1 | growth_plate_architecture | 48 | 48 | 45 | 14 | ✅ | — | ✅ |
 | L2 | stem_and_progenitor_biology | 35 | 35 | 42 | 11 | ✅ | ✅ | ✅ |
-| L3 | signaling_networks | 88 | 87 | 222 | 26 | ✅ | — | ✅ |
+| L3 | signaling_networks | 88 | 87 | 223 | 26 | ✅ | — | ✅ |
 | L4 | endocrine_and_systemic | 72 | 72 | 110 | 12 | ✅ | — | ✅ |
 | L5 | matrix_and_mineralization | 42 | 42 | 50 | 10 | ✅ | — | ✅ |
 | L6 | mechanobiology | 31 | 31 | 32 | 14 | ✅ | — | ✅ |
 | L7 | fusion_and_cessation | 34 | 34 | 33 | 13 | ✅ | — | ✅ |
 | L8 | genetics_and_heritability | 36 | 3 | 3 | 2 | 2/8·2/3 | — | — |
-| L9 | whole_organism_growth | 33 | 33 | 40 | 0 | 0/8·0/3 | — | — |
+| L9 | whole_organism_growth | 34 | 34 | 40 | 17 | ✅ | — | — |
 | L10 | environment_and_population | 34 | 34 | 55 | 12 | ✅ | — | — |
 | L11 | pathology_as_natural_experiment | 56 | 56 | 38 | 25 | ✅ | — | ✅ |
-| L12 | pharmacology_as_mechanistic_probe | 35 | 35 | 1 | 2 | 2/8·2/3 | — | — |
-| L13 | methods_and_data | 41 | 41 | 15 | 2 | 2/8·2/3 | — | — |
-| | **total** | **610** | **576** | **713** | **155** | | | |
+| L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 48 | 24 | ✅ | — | — |
+| L13 | methods_and_data | 41 | 41 | 15 | 14 | ✅ | — | — |
+| | **total** | **612** | **578** | **761** | **206** | | | |
 
-**Confidence distribution** (researched nodes): **A** 141 · **B** 169 · **C** 180 · **D** 73 · **E** 11 · **X** 2
+**Confidence distribution** (researched nodes): **A** 141 · **B** 171 · **C** 180 · **D** 73 · **E** 11 · **X** 2
 
-**Gap types**: `contradiction` 15 · `known_unknown` 28 · `method_blocked` 5 · `quantitative_gap` 43 · `scale_gap` 6 · `search_established` 44 · `species_gap` 14
+**Gap types**: `contradiction` 18 · `known_unknown` 43 · `method_blocked` 9 · `quantitative_gap` 55 · `scale_gap` 9 · `search_established` 57 · `species_gap` 15
 
-**Quantitative**: 1338 values on nodes · 811 rows in `quant/parameters.csv`
+**Quantitative**: 1350 values on nodes · 811 rows in `quant/parameters.csv`
 
 **Reference verification** (`tools/verify_refs.py`): 1 verified · 0 mismatched · 0 unresolved · 0 manual
 
@@ -81,11 +81,11 @@ A-count alongside rising propositional rigour is a successful run, not a shortfa
 
 | metric | value | target |
 |---|---:|---:|
-| `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **55.0%** | — |
-| `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **35.9%** | — |
-| `edges_per_node` | **1.17** | ≥3.0 |
-| `refs_per_researched` | **3.07** | ≥3.0 |
-| `quant_node_coverage` | **65.8%** | ≥60% |
+| `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **55.2%** | — |
+| `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **36.2%** | — |
+| `edges_per_node` | **1.24** | ≥3.0 |
+| `refs_per_researched` | **3.06** | ≥3.0 |
+| `quant_node_coverage` | **65.9%** | ≥60% |
 | `stub_fraction` | **5.6%** | 0% |
 
 | Layer | researched | human_evidence: direct | replicated human |
@@ -99,10 +99,10 @@ A-count alongside rising propositional rigour is a successful run, not a shortfa
 | L6 | 31 | 10 (32%) | 10 (32%) |
 | L7 | 34 | 26 (76%) | 26 (76%) |
 | L8 | 3 | 3 (100%) | 2 (67%) |
-| L9 | 33 | 29 (88%) | 20 (61%) |
+| L9 | 34 | 30 (88%) | 21 (62%) |
 | L10 | 34 | 29 (85%) | 18 (53%) |
 | L11 | 56 | 56 (100%) | 17 (30%) |
-| L12 | 35 | 29 (83%) | 25 (71%) |
+| L12 | 36 | 30 (83%) | 26 (72%) |
 | L13 | 41 | 19 (46%) | 13 (32%) |
 
 _Quota column: ≥8 gaps per layer, ≥3 of which are `search_established` or

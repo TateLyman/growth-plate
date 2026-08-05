@@ -54,10 +54,10 @@ plate inherits, (b) explains a site-, sex- or population-specific growth differe
 
 adipocyte_hyperplasia | DELETE | Cell-level fat-tissue parameter. Sets no initial condition for the physis, explains no site- or sex-specific difference in bone elongation, supplies no organism-level target. The only growth-relevant link (adiposity -> pubertal timing) is owned by L4 leptin_hormone and by L10.
 adipose_tissue_growth | DELETE | Body-fat trajectory is a covariate of pubertal timing, not a constraint on plate kinetics; the mechanism runs through L4 leptin_hormone. Would have been an L9 node with no edge into L1-L7 and no target number.
-articular_cartilage | DELETE | Structural rather than organism-level; epiphyseal/articular cartilage and its relation to the SOC are held by L1 (cartilage_canal, epiphyseal_vasculature) and L2 (skeletal_stem_cell). No organism-level number.
+articular_cartilage | KEEP (initially marked DELETE, reversed) | Deleted on the first pass as structural rather than organism-level, then restored: an existing canonical edge e00409 (L3 ift80_protein -> articular_cartilage) depends on it, and human MRI supplies a genuine organism-level dissociation - femoral articular cartilage is thicker while the distal femoral physis is open and thins with age, while patellar cartilage is invariant (sidharthan2021, n=240). Admission criterion (c) is met.
 costal_cartilage | DELETE | No quantitative organism-level target located and no initial condition inherited by the long-bone physis. Trunk growth is captured quantitatively by sitting_height_ratio, which is retained.
 craniosynostosis | DELETE | Pathology used as a natural experiment; L11 owns that role. The normative timing numbers a craniofacial growth model must reproduce are retained in suture_fusion_timing.
 follistatin_protein | DELETE | Molecular modifier of the myostatin/activin axis with no human organism-level growth number. Its role is summarised inside myostatin_mstn and activin_receptor_2b, both retained because human loss-of-function and pharmacological-blockade data give organism-level muscle-mass numbers.
 nasal_septal_cartilage | DELETE | The septum-as-midface-growth-centre claim rests on murine and surgical-series evidence and supplies no human organism-level number; midface growth is carried by craniofacial_growth and cranial_base_synchondrosis, both retained with human numbers.
 
-Deleted 7 of 40 L9 stubs; 33 retained and researched.
+Deleted 6 of 40 L9 stubs; 34 retained and researched.
