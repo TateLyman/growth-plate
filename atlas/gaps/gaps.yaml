@@ -3551,3 +3551,334 @@ gaps:
     at a lower total IGF-1; under a concentration model, height velocity tracks total or free IGF-1 mass and the bioactive
     fraction adds no independent information.
   tractability: 2
+- gap_id: g_l5matrix_001
+  question: What is the zonal elastic and aggregate modulus of the human weight-bearing growth plate, measured on hydrated
+    tissue at tissue scale, in kPa or MPa?
+  type: search_established
+  layer: L5
+  why_it_matters: Every mechanobiological model of the growth plate - Hueter-Volkmann loading, guided growth hardware, physeal
+    fracture risk, distraction osteogenesis - takes a modulus as input, and every published input is animal. The one human
+    dataset that exists was obtained with a 9 nm AFM tip loaded to 6 uN and reports 130.7 MPa for the resting zone and 416.2
+    MPa for the hypertrophic zone, which is 200-1000 fold above every animal tissue-scale measurement. If the human physis
+    really is that stiff, essentially all existing finite-element models of paediatric physeal loading are wrong by orders
+    of magnitude; if the discrepancy is methodological, then no human modulus exists at all and the models are running on
+    rabbit and pig numbers.
+  what_is_known: Rabbit proximal tibia microindentation gives a Hertz reduced modulus of 380-690 kPa with a peak in the upper
+    hypertrophic zone (eckstein2022). Rabbit cranial base AFM microindentation gives 0.57 +/- 0.05 MPa in the reserve zone
+    rising to 1.41 +/- 0.19 MPa in the mineralizing zone, with longitudinal indentation of the reserve zone giving 0.77 +/-
+    0.12 MPa (radhakrishnan2004). Newborn porcine distal ulna unconfined compression makes the reserve zone the stiffest zone
+    (sergerie2009). Human phalangeal and tibial growth plate cryosections give 130.70 +/- 36.56 MPa (RZ) and 416.20 +/- 107.18
+    MPa (HZ) by sharp-tip AFM (xie2025). Human physeal tensile data exist only for eight specimens from two cerebral palsy
+    patients (williams2001).
+  what_is_missing: Any hydrated, tissue-scale (spherical probe or confined/unconfined compression) modulus of a human weight-bearing
+    physis, zone-resolved, with the poroelastic parameters (aggregate modulus, permeability, Poisson ratio) that a biphasic
+    model actually requires.
+  nearest_evidence:
+  - xie2025
+  - eckstein2022
+  - radhakrishnan2004
+  - sergerie2009
+  - williams2001
+  discriminating_experiment: 'Take paediatric distal femoral or proximal tibial physeal tissue obtained at epiphysiodesis
+    or hemiepiphysiodesis (the same surgical source that yielded the human MMP and single-cell studies), keep it hydrated,
+    and run BOTH measurements on the same specimen: (a) confined and unconfined compression stress-relaxation on zone-dissected
+    discs, fitted with the transversely isotropic biphasic model used by sergerie2009, and (b) AFM with a 5 um spherical probe
+    at 1 nN peak force alongside a 10 nm sharp probe at 6 uN, on adjacent cryosections. If the human physis is genuinely stiff,
+    the spherical-probe and compression-derived moduli will also land in the tens of MPa and the animal literature is simply
+    about softer tissue. If the sharp-tip result is a length-scale and fluid-pressurisation artefact, the spherical-probe
+    and compression values will fall to 0.3-2 MPa and match rabbit and pig, and the 130-416 MPa figures should be reported
+    as local fibrillar-matrix moduli, not tissue moduli.'
+  tractability: 3
+  search_log_ref: g_l5matrix_001
+- gap_id: g_l5matrix_002
+  question: What are the concentrations of inorganic phosphate and inorganic pyrophosphate, and hence the Pi/PPi ratio, in
+    the extracellular fluid of each growth plate zone in situ?
+  type: search_established
+  layer: L5
+  why_it_matters: The Pi/PPi ratio is the stated control variable of the entire mineralization module of this layer, and every
+    genetic result (ALPL, ENPP1, ANKH, PHOSPHO1) is interpreted through it, yet the quantity itself has never been measured
+    in the tissue where it operates. Without it there is no way to know whether the resting zone is protected by high PPi,
+    by low Pi, by protein inhibitors (SPP1/AHSG), or simply by absence of TNAP - four mechanistically distinct possibilities
+    that current data cannot separate. It also blocks any dose calculation for PPi-directed therapeutics acting on the growth
+    plate rather than the vasculature.
+  what_is_known: Human plasma PPi is 3.50 +/- 0.11 umol/L (99% range 1.19-5.65) by isotope dilution in 73 adults (russell1971),
+    quoted as 1-6 uM by modern assay (milln2016, lundkvist2023). Porcine growth plate electron microprobe gives extracellular
+    Ca ~0.7% dry mass (~58 mmol/kg wet weight) constant across zones and extracellular P 0.1-0.2% dry mass, with the Ca x
+    P product far above the ~2 mM^2 in vitro mineralization threshold in every zone (althoff1982). Alkaline phosphatase activity
+    peaks in the hypertrophic zone (vnnen1980, althoff1982) and ALPL and ENPP1 protein are present at the human GP-metaphysis
+    interface (xie2025). Cultured growth plate chondrocytes respond to graded extracellular Pi with graded terminal differentiation
+    and apoptosis (kim2010).
+  what_is_missing: A zone-resolved measurement of free extracellular Pi and PPi in growth plate tissue. Microprobe measures
+    total elemental phosphorus, not the Pi/PPi speciation; plasma assays measure the wrong compartment; culture experiments
+    impose concentrations rather than reporting them.
+  nearest_evidence:
+  - althoff1982
+  - russell1971
+  - kim2010
+  - milln2016
+  - xie2025
+  discriminating_experiment: 'Apply matrix-assisted laser desorption ionisation imaging mass spectrometry in negative-ion
+    mode to fresh-frozen, undecalcified growth plate cryosections, with stable-isotope-labelled PPi and Pi standards sprayed
+    as internal calibrants - the same platform already validated on this tissue for lipids (tzvetkov2023). Cross-validate
+    against 31P magic-angle-spinning NMR on zone-microdissected tissue, which resolves the PPi resonance from orthophosphate.
+    Predictions: if PPi is the zonal gatekeeper, PPi will be high in RZ/PZ and fall sharply across the prehypertrophic boundary
+    while Pi rises, giving a Pi/PPi ratio that crosses a threshold at the mineralization front. If instead protein inhibitors
+    are the gatekeeper, Pi/PPi will be near-uniform across zones and the SPP1/AHSG gradient (xie2025) will carry the spatial
+    information. Run the same protocol on Alpl-/- and Enpp1-/- mice as positive and negative controls for the assay''s sensitivity.'
+  tractability: 3
+  search_log_ref: g_l5matrix_002
+- gap_id: g_l5matrix_003
+  question: What is the mass or molar stoichiometry of collagens II, IX and XI in human physeal cartilage, and does it differ
+    between resting, proliferative and hypertrophic zones?
+  type: search_established
+  layer: L5
+  why_it_matters: The "8:1:1" figure recited throughout the cartilage literature is a mass proportion of chick and bovine
+    embryonic growth cartilage, and it is routinely conflated with the independent eight-fold II:XI molar ceiling for fibril-diameter
+    control found in vitro. Neither number has been measured in human physis. Since COL11A1, COL11A2, COL9A1/2/3 and COL2A1
+    mutations all cause human chondrodysplasia with short stature, the dose of each chain in the human growth plate is the
+    quantity that connects those genotypes to height, and it is unknown.
+  what_is_known: Young growth cartilage is roughly <=80% collagen II, >=10% IX, >=10% XI by mass, shifting to >=90% II, ~3%
+    XI, ~1% IX in mature articular cartilage (eyre2002, from bovine and human articular tissue). Reconstitution shows uniform
+    ~20 nm fibrils only while the II:XI molar excess is under eight-fold (blaschke2000). In HUMAN juvenile rib growth plate,
+    collagen XI is restricted to fibrils under 25 nm and absent from thick fibrils, with thin fibrils in the hypertrophic
+    zone, thick fibrils in the resting zone and a mixture in the proliferative zone, while collagens II and IX decorate fibrils
+    of all diameters (keene1995). Human fetal epiphyseal growth plate synthesises II, IX, X and XI in organ culture (reginato1995).
+  what_is_missing: Quantitative composition. keene1995 establishes WHERE collagen XI is in the human physis but not HOW MUCH;
+    reginato1995 establishes that all four collagens are made but does not quantify their ratio; eyre2002 quantifies the ratio
+    but in bovine growth cartilage and human articular cartilage, not human physis. No zone-resolved human physeal collagen
+    quantitation exists.
+  nearest_evidence:
+  - keene1995
+  - eyre2002
+  - blaschke2000
+  - reginato1995
+  - mendler1989
+  discriminating_experiment: Laser-capture microdissect resting, proliferative and hypertrophic zones from human epiphysiodesis
+    specimens, digest with a fixed-ratio trypsin/chymotrypsin protocol, and quantify alpha1(II), alpha1(IX), alpha2(IX), alpha3(IX),
+    alpha1(XI), alpha2(XI) and alpha1(V) by parallel reaction monitoring mass spectrometry against heavy-labelled chain-specific
+    peptide standards, normalising to hydroxyproline. Under the conserved-ratio hypothesis, all three zones give roughly 80:10:10
+    and match bovine growth cartilage. Under the zonal-gradient hypothesis implied by keene1995, the hypertrophic zone will
+    be markedly XI-enriched (II:XI approaching or below 8:1 molar) and the resting zone XI-poor, in which case fibril diameter
+    and hence tensile behaviour are set zonally by collagen XI dose and the single-ratio description is wrong.
+  tractability: 3
+  search_log_ref: g_l5matrix_003
+- gap_id: g_l5matrix_004
+  question: What are the water content and the fixed charge density of each growth plate zone, and what swelling pressure
+    in kPa do they generate?
+  type: quantitative_gap
+  layer: L5
+  why_it_matters: Compressive stiffness, solute transport to the mineralization front, and the cell-volume environment of
+    the hypertrophic chondrocyte all depend on these two numbers, and neither has been measured zonally in a growth plate
+    of any species. Hypertrophy is in large part a volume phenomenon; a chondrocyte swelling nine-fold does so against a matrix
+    whose osmotic resistance is unquantified.
+  what_is_known: Direct in situ measurement in ARTICULAR cartilage gives a swelling pressure about one third of the ideal
+    Donnan prediction, with aggregate modulus rising threefold from 2 M to 0.001 M NaCl (bovine 0.420 +/- 0.109 to 1.266 +/-
+    0.438 MPa; human 0.499 +/- 0.208 to 1.597 +/- 0.455 MPa) (zimmerman2021). Sodium NMR gives FCD -0.28 +/- 0.03 M in calf
+    articular cartilage and -0.19 to -0.35 M in calf EPIPHYSEAL cartilage, varying with joint position in proportion to GAG
+    content (lesperance1992). Porcine growth plate microprobe data are normalised on an assumed 66% tissue fluid fraction
+    (althoff1982). MR T1 mapping can measure physeal water content to 97.3% accuracy against freeze-drying in pigs (shiguetomimedi2013).
+    Growth plate proteoglycan sulphur is constant at ~3.5% dry mass across zones and falls to 0.3% on mineralization (althoff1982).
+  what_is_missing: Zone-resolved water content (% wet weight) and FCD (mol/L) of a growth plate, and any direct swelling-pressure
+    measurement (kPa) on physeal rather than articular tissue.
+  nearest_evidence:
+  - zimmerman2021
+  - lesperance1992
+  - althoff1982
+  - shiguetomimedi2013
+  discriminating_experiment: 'On zone-dissected porcine or bovine physeal discs (thick enough plates to permit dissection):
+    measure water content by wet/dry weight, FCD by sodium NMR against ICP sodium, and swelling pressure directly by confined-compression
+    stress-relaxation across a bath osmolarity series using the zimmerman2021 protocol, then repeat FCD non-invasively by
+    sodium MRI on the intact plate to validate an in vivo route. If the growth plate behaves like epiphyseal cartilage, FCD
+    will be -0.19 to -0.35 M in all zones and swelling pressure will be of order 100-200 kPa. If the hypertrophic zone is
+    depleted of aggrecan before mineralization as the sulphur data suggest, FCD and swelling pressure should fall sharply
+    across the prehypertrophic boundary, which would mean the hypertrophic zone loses its osmotic load-bearing capacity precisely
+    where it is most compressed.'
+  tractability: 4
+- gap_id: g_l5matrix_005
+  question: Why is loss of collagen X, a collagen made exclusively and abundantly by hypertrophic chondrocytes, so mild in
+    three independent systems - and what does the hypertrophic pericellular network actually do?
+  type: known_unknown
+  layer: L5
+  why_it_matters: Collagen X is the defining molecular marker of the hypertrophic zone and is used as the readout of hypertrophy
+    in hundreds of studies, yet removing it barely matters. That mismatch is a direct challenge to the assumption that the
+    abundant, cell-type-specific matrix proteins of a zone are the ones doing that zone's mechanical work, and it means COL10A1
+    expression cannot be treated as a proxy for functional hypertrophy.
+  what_is_known: Col10a1-null mice were reported to have normal long bone growth (rosati1994); reanalysis found a compressed
+    growth plate and altered haematopoiesis (gress2000). Human COL10A1 haploinsufficiency causes Schmid metaphyseal chondrodysplasia,
+    which is mild with normal lifespan (warman1993, meng2025), and most alleles are cleared by nonsense-mediated decay so
+    the mechanism is true haploinsufficiency (bateman2003), though at least one frameshift acts dominant-negatively by blocking
+    NC1 trimerisation (yang2025). COL10A1-/- human iPSC-derived chondrocytes hypertrophy and ossify normally in vitro and
+    after transplantation (kamakura2023).
+  what_is_missing: A positive function. No study has demonstrated a mechanical, transport or signalling role for the collagen
+    X network that is lost when the gene is deleted, in any species. The candidate roles - haematopoietic niche formation,
+    matrix vesicle retention, controlling hypertrophic cell volume expansion, regulating vascular invasion - have not been
+    tested head to head.
+  nearest_evidence:
+  - rosati1994
+  - gress2000
+  - kamakura2023
+  - bateman2003
+  - meng2025
+  discriminating_experiment: 'Use the existing COL10A1-/- and COL10A1+/- human iPSC lines (kamakura2023) in a 3D hypertrophic
+    pellet under defined mechanical load, and read out four things the wild type does: (a) hypertrophic cell volume by confocal
+    morphometry, (b) pericellular matrix stiffness by AFM with a 5 um probe, (c) matrix vesicle retention and mineral nucleation
+    by TEM plus calcium uptake, and (d) after transplantation, marrow cavity formation and haematopoietic colonisation. If
+    collagen X is a mechanical restraint on hypertrophic swelling, COL10A1-/- cells will overswell and their PCM modulus will
+    drop. If it is a haematopoietic niche scaffold, cell volume and PCM will be normal and only marrow colonisation will fail,
+    matching the gress2000 phenotype. If all four readouts are normal, collagen X should be reclassified as a marker with
+    no demonstrated function, which is itself a publishable and atlas-relevant result.'
+  tractability: 3
+- gap_id: g_l5matrix_006
+  question: Does ANKH export inorganic pyrophosphate directly from growth plate chondrocytes, or does it export ATP that ENPP1
+    then converts to PPi extracellularly?
+  type: contradiction
+  layer: L5
+  why_it_matters: The two models predict opposite consequences for any intervention. If ANKH exports PPi, then ANKH activity
+    alone sets local PPi and ENPP1 is a parallel source. If ANKH exports ATP, then ENPP1 is obligatorily downstream of ANKH,
+    no ANKH-derived PPi exists without ENPP1, and purinergic signalling through the exported ATP is an unrecognised second
+    output of the same transporter - relevant because extracellular ATP acts on P2 receptors on chondrocytes. The entire growth
+    plate ANK literature was interpreted under the first model.
+  what_is_known: 'Under the PPi-transport model: blocking Ank transport or expression in terminally differentiated mineralizing
+    growth plate chondrocytes raises intra- AND extracellular PPi, lowers alkaline phosphatase and blocks mineralization,
+    and Ank overexpression in hypertrophic non-mineralizing chondrocytes lowers intra- and extracellular PPi and induces mineralization
+    (wang2005); ANK expression is HIF-1 and oxygen dependent in these cells (zaka2009). Under the ATP-export model: ANKH introduced
+    into ENPP1-knockout HEK293 cells produces robust ATP release with NO rise in extracellular PPi, Enpp1-/- mouse bone contains
+    under 2.5% of wild-type PPi despite intact Ank, and ANKH supplies about 25% of plasma PPi with ABCC6 supplying 60-70%,
+    both by NTP efflux (szeri2022). Consistently, NPP1 but not ANK localises to matrix vesicles (harmey2004).'
+  what_is_missing: The decisive experiment has been done in HEK293 overexpression, not in chondrocytes. No study has tested
+    ANK function in growth plate chondrocytes lacking ENPP1.
+  nearest_evidence:
+  - szeri2022
+  - wang2005
+  - harmey2004
+  - zaka2009
+  discriminating_experiment: Generate Enpp1-null primary growth plate chondrocytes (from Enpp1-/- mice or by CRISPR in a chondrocytic
+    line), then overexpress or silence Ank and measure extracellular ATP by luciferase and extracellular PPi by the ATP-sulfurylase
+    assay (lundkvist2023) in parallel, with matched Enpp1-intact controls. Under the ATP-export model, Ank manipulation will
+    change extracellular ATP in both genotypes but change extracellular PPi only in Enpp1-intact cells, and the mineralization
+    phenotype of wang2005 will be abolished in the Enpp1-null background. Under the PPi-transport model, Ank manipulation
+    will change extracellular PPi in both genotypes. Add an apyrase control to confirm that any PPi rise depends on released
+    ATP.
+  tractability: 4
+- gap_id: g_l5matrix_007
+  question: By what mechanism is aggrecan removed from the hypertrophic zone before mineralization, and what is its half-life
+    in growth plate as opposed to articular cartilage?
+  type: known_unknown
+  layer: L5
+  why_it_matters: Aggrecan carries essentially all the fixed charge of the matrix, and mineral cannot form where the proteoglycan
+    gel is intact - matrix sulphur falls from 3.5% to 0.3% of dry mass at the mineralization front. So aggrecan clearance
+    is a required step in longitudinal growth, and the two obvious protease families have both been formally excluded in mouse.
+  what_is_known: Mice carrying aggrecan resistant to MMP cleavage at N341-F342 develop normally, do not accumulate aggrecan,
+    and show no compensatory cleavage at alternative interglobular-domain sites (little2005). Adamts4/Adamts5 double-null
+    mice are physiologically normal (majumdar2007), although ADAMTS5 is the dominant aggrecanase in murine osteoarthritis
+    (glasson2005) and in human explants both ADAMTS-4 and -5 contribute (song2007). In bovine growth plate, aggrecan synthesis
+    and breakdown are both fastest in the resting/proliferative third and slowest in the lower hypertrophic third (shapses1994).
+    Human articular aggrecan monomer half-life is 3.4 years (maroudas1998), a figure that cannot apply to a tissue replaced
+    in weeks.
+  what_is_missing: Both the mechanism (which protease, or non-proteolytic loss by diffusion after G1 detachment, or hyaluronidase-driven
+    aggregate disassembly) and the number (physeal aggrecan half-life in days).
+  nearest_evidence:
+  - little2005
+  - majumdar2007
+  - shapses1994
+  - maroudas1998
+  - althoff1982
+  discriminating_experiment: 'Pulse-chase growing rats or lambs with 35S-sulphate or with heavy-water-labelled amino acids,
+    then microdissect the growth plate by zone at intervals and measure both the decay of label in aggregate-bound aggrecan
+    and the appearance of specific neoepitopes: NITEGE (MMP site), ARGSVIL (aggrecanase site), and free G1. Under a proteolytic
+    model one neoepitope will dominate at the hypertrophic boundary. Under a non-proteolytic model, intact full-length aggrecan
+    and free hyaluronan will be lost together with no neoepitope enrichment, which would point to hyaluronidase or HAS2 downregulation
+    as the clearance route. The same experiment yields the missing physeal half-life directly.'
+  tractability: 4
+- gap_id: g_l5matrix_008
+  question: Which zone of the growth plate is stiffest, and does the direction of the zonal stiffness gradient depend on species,
+    anatomical site, or measurement method?
+  type: contradiction
+  layer: L5
+  why_it_matters: Physeal fractures propagate through a mechanically weak plane, and guided-growth and distraction hardware
+    are designed around assumed stiffness gradients. The published gradients point in different directions, so the predicted
+    failure plane and the predicted strain distribution across the plate differ between studies that are all cited interchangeably.
+  what_is_known: 'Newborn porcine distal ulna, unconfined compression, transversely isotropic biphasic model: the RESERVE
+    zone is stiffest, with PZ and HZ half as stiff axially and about a third as stiff transversely, and three times as permeable
+    radially (sergerie2009). Nine-week rabbit proximal tibia, microindentation: modulus PEAKS in the UPPER HYPERTROPHIC zone,
+    range 380-690 kPa, with proteoglycan content correlating with compressive modulus (eckstein2022). Rabbit cranial base,
+    AFM microindentation: modulus increases MONOTONICALLY from reserve (0.57 MPa) to mineralizing zone (1.41 MPa) (radhakrishnan2004).
+    Human phalangeal and tibial growth plate, sharp-tip AFM: HZ (416 MPa) stiffer than RZ (131 MPa) (xie2025). Bovine tensile
+    failure runs from the upper columnar into the reserve zone, leaving chondrons intact on the metaphyseal side (williams2001).'
+  what_is_missing: A single study measuring more than one species, more than one anatomical site and more than one method
+    on comparable tissue. The five datasets differ simultaneously in species, site (weight-bearing long bone versus cranial
+    base versus phalanx), age, hydration, loading mode and constitutive model, so no variable can be isolated.
+  nearest_evidence:
+  - sergerie2009
+  - eckstein2022
+  - radhakrishnan2004
+  - xie2025
+  - williams2001
+  discriminating_experiment: 'A single-laboratory factorial study: proximal tibial and cranial base physes from rabbit and
+    pig at two ages, each specimen measured by (i) microindentation with a 100 um spherical probe, (ii) AFM with a 5 um spherical
+    probe, and (iii) zone-dissected unconfined compression, all hydrated in PBS, with paired Safranin-O and Raman proteoglycan
+    mapping. If the gradient direction is method-dependent, indentation and compression will disagree within the same specimen
+    and the field''s disagreement is an artefact of technique. If it is site-dependent, cranial base and long bone will differ
+    consistently across methods and species, and cranial-base data (radhakrishnan2004) should be excluded from long-bone models.
+    If it is age-dependent, the newborn porcine result (reserve stiffest) will reverse in older animals as the hypertrophic
+    zone begins to calcify.'
+  tractability: 4
+- gap_id: g_l5matrix_009
+  question: Which enzyme actually crosslinks collagen in the growth plate, and does crosslink density vary by zone?
+  type: known_unknown
+  layer: L5
+  why_it_matters: Covalent crosslinking is what makes the collagen network able to resist aggrecan swelling pressure, and
+    it is irreversible - a physeal fibril, once crosslinked, cannot be re-engineered by the cell. If crosslink density is
+    zonally graded it is a direct candidate explanation for the zonal stiffness gradient and for why physeal fractures propagate
+    where they do. The growth plate is also a steep oxygen gradient and lysyl oxidase is hypoxia-inducible, so a zonal LOX
+    gradient is mechanistically plausible and entirely untested.
+  what_is_known: Cartilage collagen II is crosslinked head-to-tail by hydroxylysyl pyridinoline at two telopeptide-to-helix
+    sites, and collagen IX carries at least six crosslink sites all occupied in the matrix pool (eyre2002). Human ARTICULAR
+    cartilage pyridinoline content has been measured across age (eyre1988). Lox-null mice die perinatally from aortic and
+    diaphragmatic failure (mki2002). Phospho1-/- bone shows altered DHLNL/HLNL and pyridinoline/deoxypyridinoline ratios alongside
+    hypomineralization (huesa2011), showing crosslink chemistry tracks mineralization status.
+  what_is_missing: Any zone-resolved measurement of LOX/LOXL isoform expression, LOX enzymatic activity, or pyridinoline/deoxypyridinoline
+    crosslink density in growth plate cartilage, in any species. No lathyrogen (beta-aminopropionitrile) dose-response on
+    physeal mechanical properties was located either.
+  nearest_evidence:
+  - eyre2002
+  - eyre1988
+  - mki2002
+  - huesa2011
+  discriminating_experiment: Microdissect resting, proliferative and hypertrophic zones from bovine or porcine physis, hydrolyse
+    and quantify HP and LP crosslinks per collagen molecule by HPLC with fluorescence detection, normalised to hydroxyproline;
+    in parallel measure LOX, LOXL1-4 transcript and LOX enzymatic activity per zone. Then test causality by feeding growing
+    rats beta-aminopropionitrile at graded doses and measuring zonal modulus by microindentation against crosslink density
+    in the same animals. If crosslink density explains the stiffness gradient, modulus will scale with pyridinoline content
+    across zones and BAPN will collapse the gradient dose-dependently. If it does not, the gradient is set by mineral and
+    proteoglycan content instead, which is what the Raman correlation in eckstein2022 suggests.
+  tractability: 4
+- gap_id: g_l5matrix_010
+  question: Does human growth plate matrix stiffness or composition change measurably before radiographic fusion, and can
+    any matrix parameter be measured non-invasively in a living child?
+  type: quantitative_gap
+  layer: L5
+  why_it_matters: Every human growth plate matrix measurement in this layer comes from a terminal surgical specimen - amputation,
+    epiphysiodesis, or post-mortem - so all of it is cross-sectional and none of it can be repeated in the same child. If
+    a matrix parameter (water content by MR T1 mapping, fixed charge density by sodium MRI, proteoglycan by dGEMRIC or T1rho)
+    tracked approaching fusion, it would convert this layer from descriptive anatomy into a clinically usable predictor of
+    remaining growth, which bone age currently does poorly.
+  what_is_known: MR T1 mapping measures cartilage and physeal water content with 97.3% accuracy against freeze-drying, with
+    in vivo CV 2.73 and interobserver CV 0.053, but has only been demonstrated in eight skeletally immature 30 kg pigs (shiguetomimedi2013).
+    Sodium NMR measures cartilage FCD non-destructively with essentially complete sodium visibility (NMR:ICP 1.02 +/- 0.04)
+    and the authors explicitly note applicability in vivo (lesperance1992). Human growth plate composition and modulus have
+    been mapped ex vivo in donors aged 0-14 years (xie2025).
+  what_is_missing: Any longitudinal in vivo measurement of growth plate matrix composition in children, and any demonstration
+    that such a measurement predicts remaining growth or time to fusion.
+  nearest_evidence:
+  - shiguetomimedi2013
+  - lesperance1992
+  - xie2025
+  discriminating_experiment: A prospective cohort of children aged 8-16 undergoing knee MRI for unrelated indications, scanned
+    annually with a protocol adding T1 mapping (water), T1rho or dGEMRIC (proteoglycan) and, at sites with the hardware, sodium
+    MRI (fixed charge density) over the distal femoral physis, with height velocity and Greulich-Pyle bone age at each visit
+    and adult height as the endpoint. If matrix composition changes ahead of radiographic fusion, physeal water content and
+    FCD will fall in the two years before fusion and will add predictive information about remaining growth beyond bone age
+    alone. If they do not change until the plate is already bridged, the matrix is not a leading indicator and imaging effort
+    should go to the resting zone instead.
+  tractability: 3
