@@ -35,6 +35,21 @@ Q = os.path.join(os.path.dirname(ROOT), "query")
 SIGN = {"+": 1, "-": -1}
 UNRELIABLE_THRESHOLD = 0.40   # annotation coverage below this => UNRELIABLE
 
+# Explicit-unknown markers written by the MR-004 context-fill campaign. An explicit
+# unknown is honest annotation and is queryable, but it is NOT coverage - the axis
+# still carries no value. classify() already returns UNANNOTATED for these because no
+# value pattern matches; these patterns exist so the two can be COUNTED separately.
+PROV = {"explicit_unknown": {
+    "zone": r"zone unknown", "sex": r"sex unknown",
+    "stage": r"age/stage unknown", "species": r"species unknown"}}
+
+# Where a zone annotation came from. Written inline on the edge by the fill campaign.
+ZONE_PROVENANCE = {
+    "resolved in the cited source": r"zones? resolved in source",
+    "inferred from endpoint localization records":
+        r"zonal localization of the interacting nodes",
+}
+
 AXES = {
     "zone": {
         "resting": r"\b(RZ|resting|reserve)\b",
@@ -137,15 +152,38 @@ def main():
     nodes, edges = load()
 
     if a.coverage_report:
+        n = len(edges)
         print("EDGE CONTEXT ANNOTATION COVERAGE (three-state)\n")
+        print("DETERMINED = the axis carries a value. An explicit 'zone unknown' is honest")
+        print("annotation and is NOT coverage - it classifies as UNANNOTATED here, which is")
+        print("why these numbers are already determined-only.\n")
         for ax in AXES:
-            c = {"annotated": 0, "unannotated": 0}
-            for e in edges:
-                v = classify(str(e.get("context") or ""), ax, None)
-                c["annotated" if v == "MATCH" else "unannotated"] += 1
-            n = len(edges)
-            print(f"  {ax:9s} annotated {c['annotated']:5d}/{n}  "
-                  f"= {100*c['annotated']/n:5.1f}%")
+            det = sum(1 for e in edges
+                      if classify(str(e.get("context") or ""), ax, None) == "MATCH")
+            unk = sum(1 for e in edges
+                      if re.search(PROV["explicit_unknown"][ax], str(e.get("context") or ""), re.I))
+            print(f"  {ax:9s} determined {det:5d}/{n} = {100*det/n:5.1f}%   "
+                  f"explicitly unknown {unk:5d} = {100*unk/n:5.1f}%")
+        print("\nZONE PROVENANCE - determined is not one thing, and the three tiers are")
+        print("not equally strong:")
+        tiers = {k: sum(1 for e in edges
+                        if re.search(v, str(e.get("context") or ""), re.I))
+                 for k, v in ZONE_PROVENANCE.items()}
+        zdet = sum(1 for e in edges
+                   if classify(str(e.get("context") or ""), "zone", None) == "MATCH")
+        tiers["definitional (an endpoint node IS a zone)"] = (
+            zdet - tiers["resolved in the cited source"]
+            - tiers["inferred from endpoint localization records"])
+        for k in ["resolved in the cited source",
+                  "definitional (an endpoint node IS a zone)",
+                  "inferred from endpoint localization records"]:
+            print(f"  {k:46s} {tiers[k]:5d} = {100*tiers[k]/n:5.1f}%")
+        strong = (tiers["resolved in the cited source"]
+                  + tiers["definitional (an endpoint node IS a zone)"])
+        print(f"  {'-> STRONG (source-resolved + definitional)':46s} {strong:5d} "
+              f"= {100*strong/n:5.1f}%")
+        print("\nA zone-filtered answer resting on the inferred tier is a statement about")
+        print("where the ENTITIES live, not where the INTERACTION was observed.")
         print(f"\nUNRELIABLE threshold: annotation coverage < "
               f"{UNRELIABLE_THRESHOLD:.0%} on the traversed subgraph")
         return 0

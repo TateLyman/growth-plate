@@ -137,14 +137,14 @@ number is too small to say anything.
 | Nodes | 614 (614 researched, 0 stubs) |
 | Edges | 1181 — **777 usable for perturbation reasoning**, 404 flagged unusable |
 | Gaps | 288, with 134 gap ids carrying reproducible search logs (147 log entries) |
-| References | 1049, all machine-resolved against Europe PMC/NCBI |
+| References | 1051, all machine-resolved against Europe PMC/NCBI |
 | Quantitative values on nodes | 1520 |
 
 **Context annotation, three-state** (MATCH / MISMATCH / UNANNOTATED — only MISMATCH excludes an edge; see `atlas/tools/context_filter.py`):
 
 | axis | annotated | of edges | MR-004 target |
 |---|---:|---:|---:|
-| zone | 637/1181 | 53.9% | 40% |
+| zone | 635/1181 | 53.8% | 40% |
 | sex | 360/1181 | 30.5% | 30% |
 | stage | 754/1181 | 63.8% | 40% |
 | species | 1133/1181 | 95.9% | — |

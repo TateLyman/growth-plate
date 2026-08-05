@@ -3641,14 +3641,24 @@ edges:
   target: congenital_hypothyroidism
   relation: required_for
   sign: +
-  context: human; untreated congenital hypothyroidism arrests terminal hypertrophy and gives epiphyseal dysgenesis;
-    both sexes (male and female), infant, pubertal (mean age 10.2 year; mean age 2 month)
+  context: human; congenital hypothyroidism, growth and final-height outcomes by treatment timing. zone not resolved
+    - neither cited cohort reports growth plate histology; both sexes (male and female), infant, juvenile, pubertal
   evidence_tier: T1
   refs:
   - karimian2024
   - kochar2025
-  confidence: A
+  confidence: B
   traversal_usable: true
+  magnitude: 'Treatment timing changes growth outcome: karimian2024 compares age at menarche and final-height SDS
+    in 207 female CH patients against 598 healthy controls; kochar2025 compares early-treated (<3 months) with late-treated
+    (>3 months) CH children on anthropometry and body proportionality. NEITHER reports epiphyseal dysgenesis or
+    arrest of terminal hypertrophy - that claim was asserted here without a source and has been removed.'
+  notes: ' FRAGILITY-VERIFY 2026-08-05 (audit/fragility.md): Was graded A while asserting "untreated congenital
+    hypothyroidism arrests terminal hypertrophy and gives epiphyseal dysgenesis". Epiphyseal dysgenesis is a real
+    classical radiological finding, but neither cited reference reports it; both are growth-outcome cohorts. Assertion
+    rewritten to what the references support and grade dropped A->B. If the histological claim is wanted it needs
+    its own primary. karimian2024 carries an erratum (Ann Pediatr Endocrinol Metab 2025;30(2):111) whose content
+    is not retrievable through the API - flagged for hand-check.'
 - edge_id: e00260
   source: mct8_transporter
   target: allan_herndon_dudley
@@ -5732,7 +5742,8 @@ edges:
   target: growth_hormone
   relation: inhibits
   sign: '-'
-  magnitude: octreotide abolished GH-stimulated but not IGF-I-stimulated tibial growth
+  magnitude: 'octreotide inhibited GH-stimulated but not IGF-I-stimulated bone growth in hypophysectomised rats:
+    tibial epiphyseal width -14%, bone growth rate -24%, body weight gain -31%, with serum IGF-I -26%.'
   context: hypophysectomised rat, systemic; human evidence from acromegaly pharmacology; zone unknown (not reported),
     sex unknown (not reported in source), age/stage unknown (not reported)
   evidence_tier: T1
@@ -5740,6 +5751,9 @@ edges:
   - zapf2002
   confidence: B
   traversal_usable: true
+  notes: ' FRAGILITY-VERIFY 2026-08-05 (audit/fragility.md): Magnitude previously said octreotide "abolished" GH-stimulated
+    tibial growth. zapf2002 reports inhibition of 14% in epiphyseal width and 24% in growth rate. Replaced with
+    the measured percentages.'
 - edge_id: e00418
   source: ghrelin_hormone
   target: ghsr_receptor
@@ -6666,14 +6680,25 @@ edges:
   target: parathyroid_hormone
   relation: inhibits
   sign: '-'
-  magnitude: CASR-mediated suppression of PTH secretion within minutes of a rise in ionised calcium
-  context: 'human parathyroid chief cell; zones resolved in source: hypertrophic zone, sex unknown (not reported
-    in source), age/stage unknown (not reported)'
+  magnitude: The human parathyroid calcium-sensing receptor was cloned and functionally expressed, and raising extracellular
+    calcium across the physiological range suppresses PTH secretion through it (garrett1995, human cDNA; brown1993,
+    bovine parathyroid, the original receptor characterisation). The KINETIC claim previously made here - suppression
+    "within minutes" - is NOT carried by either reference and has been removed rather than re-sourced.
+  context: human parathyroid chief cell and heterologous expression of the cloned human receptor; zone not applicable
+    - the parathyroid gland is not a growth plate compartment; sex unknown (not reported in source), age/stage unknown
+    (not reported)
   evidence_tier: T1
   refs:
-  - sabbagh2005
-  confidence: A
+  - garrett1995
+  - brown1993
+  confidence: B
   traversal_usable: true
+  notes: 'FRAGILITY-VERIFY 2026-08-05 (audit/fragility.md): Was graded A on sabbagh2005, which is "Hypophosphatemia
+    leads to rickets by impairing caspase-mediated apoptosis of hypertrophic chondrocytes" and says nothing about
+    CaSR or PTH secretion kinetics. The citation did not support the claim. Re-sourced to the human receptor cloning/expression
+    papers, the unsupported kinetic clause deleted, and the grade dropped A->B because what is now cited is molecular
+    and heterologous, not in vivo human secretion dynamics. The bogus "hypertrophic zone" context tag was an artefact
+    of inferring zone from endpoint node localisation on a node that is not in the growth plate.'
 - edge_id: e00486
   source: seasonality_growth_velocity
   target: growth_velocity_longitudinal
@@ -6805,14 +6830,22 @@ edges:
   target: glucocorticoid_cortisol
   relation: degrades
   sign: '-'
-  magnitude: cortisol-to-cortisone inactivation; no measurement in growth plate chondrocytes in any species
+  magnitude: HSD11B2 inactivates cortisol to cortisone. NO measurement of HSD11B2 expression or activity in growth
+    plate chondrocytes exists in any species, and P8-01 re-analysis of GSE9160 does not detect HSD11B2 transcript
+    in either human donor in any of the five compartments. The edge is therefore an inference from general endocrinology,
+    which is what grade E means.
   context: human placenta/kidney established; physis unmeasured; zone unknown (not reported), male only, age/stage
     unknown (not reported)
   evidence_tier: T1
   refs:
-  - baron1992
+  - gse9160
   confidence: E
   traversal_usable: true
+  notes: ' FRAGILITY-VERIFY 2026-08-05 (audit/fragility.md): Was cited to baron1992, "Dexamethasone acts locally
+    to inhibit longitudinal bone growth in rabbits", which concerns glucocorticoid action on the plate and not HSD11B2
+    at all. Re-pointed to the one piece of evidence that actually bears on the local question - the P8-01 non-detection
+    in human tissue - which supports the "never measured / not detectable" half of the statement and leaves the
+    enzymology as textbook inference. Grade E unchanged; it was already correct.'
 - edge_id: e00495
   source: insulin_hormone
   target: insulin_receptor
@@ -9233,15 +9266,20 @@ edges:
   target: calcium_homeostasis
   relation: activates
   sign: +
-  magnitude: milk-mineral (Ca, P) intake at the level of 1.5 L skim milk had no independent effect on serum IGF-1
-    or insulin
+  magnitude: NULL RESULT. In a 2x2 factorial randomised trial in 57 eight-year-old boys, milk minerals (Ca and P)
+    at the level contained in 1.5 L of skim milk had NO independent effect on fasting serum IGF-1 or insulin; the
+    effect of milk on the somatotropic axis tracked the protein fractions, not the mineral fractions (hoppe2009).
   context: human, 57 prepubertal boys, 2x2 factorial randomised trial; zone unknown (not reported)
   evidence_tier: T1
   refs:
   - hoppe2009
-  confidence: A
+  confidence: C
   notes: 'Negative result on the endocrine route: calcium''s entry into the atlas is via CASR/PTH/phosphate, not
-    via IGF-1.'
+    via IGF-1. FRAGILITY-VERIFY 2026-08-05 (audit/fragility.md): Was graded A on a signed positive edge whose sole
+    cited evidence is a NULL result about IGF-1. The sign remains + because dietary calcium raising calcium availability
+    is not in dispute, but the grade drops A->C: the reference supports a null on the somatotropic route, not a
+    measured positive effect on calcium homeostasis, and no reference in the atlas measures the latter. An A-grade
+    signed edge should not rest on a null.'
   traversal_usable: true
 - edge_id: e00658
   source: vitamin_a_growth
@@ -11269,9 +11307,10 @@ edges:
   target: mek1_erk_chondrocyte
   relation: activates
   sign: +
-  magnitude: germline gain-of-function PTPN11 (commonest), SOS1, RAF1 and RIT1 raise RAS/MAPK flux; birth length
-    is usually normal and growth failure is postnatal, with adult height approaching the lower limit of normal rather
-    than falling into the skeletal dysplasia range
+  magnitude: germline gain-of-function PTPN11 (commonest), SOS1, RAF1 and RIT1 raise RAS/MAPK flux. In the genotyped
+    101-patient cohort birth length was ALREADY REDUCED at -1.23 SDS [-1.74; -0.57], so growth failure is not purely
+    postnatal; adult height approaches the lower limit of normal rather than falling into the skeletal dysplasia
+    range.
   context: human, heterozygous germline, both sexes; MAPK flux has been measured in patient-derived non-cartilage
     cells only, never in human growth plate. Family-based cohorts carry a polygenic confounder - in a 101-patient
     genotyped cohort the fathers were themselves -0.33 SDS; zone unknown (not reported), neonatal, juvenile, pubertal
@@ -11284,7 +11323,10 @@ edges:
   confidence: B
   notes: 'Mechanistically adjacent to achondroplasia - the same cascade - and it bounds how much of the achondroplasia
     phenotype scalar MAPK activation alone can explain: raising RAS/MAPK flux germline costs roughly 1-2 SDS, not
-    the 6 SDS of achondroplasia.'
+    the 6 SDS of achondroplasia. FRAGILITY-VERIFY 2026-08-05 (audit/fragility.md): The magnitude statement previously
+    read "birth length is usually normal and growth failure is postnatal". Its own primary, jirova2026, reports
+    birth length -1.23 SDS in the same cohort the edge cites. Corrected to the measured value. This is the one defect
+    in the verified set where the edge contradicted the paper it cited rather than merely overreaching beyond it.'
   traversal_usable: true
 - edge_id: e00789
   source: marfan_syndrome

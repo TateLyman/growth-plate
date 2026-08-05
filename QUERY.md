@@ -243,3 +243,40 @@ should have anticipated and did not required an edge between layers. Any answer 
 chain crosses a layer boundary carries a higher risk of silent incompleteness than its
 node grades suggest, and §5's `[ATLAS-INFERRED]` tag must be accompanied by that
 statement.
+
+### 8.2 Chokepoints — say so when an answer rests on one edge
+
+`query/fragility.json` (`atlas/tools/fragility.py`) identifies every edge whose removal
+disconnects part of the graph, and every layer-pair connection resting on a single
+reference. **Every edge in `graph.json` carries a `chokepoint` field explicitly** —
+`false` when it is not one, an object when it is. Absence of a flag is a stated *no*,
+never a missing key.
+
+**Required operation.** After building a path, check `chokepoint` on every edge in it.
+If any is truthy, the answer must say so before the conclusion, in this form:
+
+> This chain passes through a chokepoint: `<edge_id>` is the only route from
+> `<layer A>` to `<layer B>` in the answerable graph, and it rests on `<n>` reference(s).
+> If that edge is wrong, the conclusion does not survive.
+
+The fields:
+
+| field | meaning |
+|---|---|
+| `bridge_answerable` | removing it disconnects part of the graph that can carry a directional answer — the graph queries actually traverse |
+| `bridge_structural` | removing it disconnects the full graph |
+| `single_source_seam` | every edge joining those two layers cites the same one reference |
+| `sole_layer_seam` | it is the only edge joining those two layers at all |
+| `pairs_destroyed` | ordered reachable node pairs lost if it is removed |
+
+**Why this is a required operation and not a nicety.** CORR-004 found a withdrawn paper
+carrying what the atlas called its only demonstrated environment-to-signalling entry
+point, and hand verification of the top 20 chokepoints (`atlas/audit/fragility.md`)
+found **6 citation defects in 24 objects, two of them on grade-A edges**. A chokepoint
+is where a single bad citation becomes a wrong answer instead of a small error, so the
+user is told before the conclusion, not after it.
+
+**This is orthogonal to `structural_confidence`.** That metric says how complete the
+graph is around a node. A chokepoint says how much of the answer rests on one object.
+A path can be dense, high-`structural_confidence`, and still funnel through a single
+edge backed by a single paper. Report both.
