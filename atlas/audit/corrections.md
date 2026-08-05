@@ -258,3 +258,82 @@ interpretation and to one grade.
 ## CORR-004 — reserved
 
 Next correction entry goes here. Corrections are appended, never overwritten.
+
+---
+
+## CORR-004 — a withdrawn paper was carrying an L10→L3 seam
+
+**Date traced:** 2026-08-05
+**Trigger:** the first full `verify_refs.py` run over all 1,049 references. Every prior
+run had been scoped, and the report on disk held **one** entry.
+**Finding:** `wu2013` (PMID 23940039, *J Biol Chem*) carries the Europe PMC publication
+type **Retracted Publication**. The notice is a **Withdrawal**, *J Biol Chem* 2020;
+295(37):13137, PMID 32917830.
+
+**Disposition: `both_invalid`.** The notice has no retrievable statement of reason, so
+there is no basis on which to keep the observation while discarding the interpretation.
+Where a retraction notice explains itself, `observation_stands` can be argued; here it
+cannot, and inventing a reason to preserve a convenient result is the failure this
+taxonomy exists to prevent.
+
+**`wu2012` (PMID 22696219), from the same laboratory, carries no retraction or
+correction notice and stands.** It was checked specifically, not assumed.
+
+### What the withdrawn paper was holding up
+
+`wu2013` was the **in vivo** half of the FGF21 story: four weeks of food restriction
+raising LEPROT/LEPROTL1 in liver *and* tibial growth plate, absent in `Fgf21`-knockout
+mice, restored by rhFGF21 add-back. That knockout-plus-rescue design is what made the
+pathway causal rather than correlative — and it was, on the atlas's own reading, *"the
+only DEMONSTRATED molecular entry point from the environment layer into a local
+signalling node that does not route through GH or IGF-1 systemically."*
+
+Removing it does not weaken a detail. It removes the demonstration.
+
+### Blast radius — traced
+
+| Object | Status | Action |
+|---|---|---|
+| `wu2013` (bibliography) | **Flagged** | `retracted: true`, notice PMID, disposition `both_invalid`, and a note recording that `wu2012` was checked and is clean. |
+| `klotho_beta_cofactor` (node) | **Corrected** | Summary rewritten to state plainly what stands and what has fallen away. Node confidence stays **D**. |
+| — claim 1, *KLB expressed in growth plate chondrocytes* | **C → D** | It was graded C for being replicated across `wu2012` and `wu2013`. The replication is gone, so it takes the one-grade drop to D. This is the propositional-replication rule running in reverse for the first time. |
+| — claim 2, *FGF21 mediates undernutrition GH insensitivity* | **C → X** | Rested entirely on `wu2013`. Graded **X** — circulates in the literature, not traceable to standing primary data — rather than deleted, because deleting it makes the atlas silent about a claim readers will still meet. |
+| — quantitative row *"4 weeks of food restriction"* | **Voided, tombstoned** | Value replaced with `WITHDRAWN`, `value_unverified: true`, and text explaining what happened, so a reader who saw the number in an earlier version can find out why it is gone. |
+| `e01055` `energy_availability_growth --activates--> klotho_beta_cofactor` | **`activates` C → `hypothesized_link` speculative** | Not regraded — reclassified. With no in vivo result there is no demonstration left to grade. `traversal_usable: false`, `gap_id: g_l0l9_009`. **The L10→L3 seam this edge carried is now open, and that is the true state.** |
+| `e01056` `energy_availability_growth --activates--> fgfr1_receptor` | **Kept at D, magnitude edited** | The siRNA epistasis is `wu2012` and unaffected. The LEPROT/LEPROTL1 clause was `wu2013` and has been removed from the magnitude statement; `wu2013` removed from refs. |
+| `e01057` `stunting --hypothesized_link--> klotho_beta_cofactor` | **Already speculative** | Magnitude annotated: the murine result that motivated the hypothesis is withdrawn, which weakens it further without removing it — the human exposure question was never answered either way. |
+| `g_l0l9_001`, `g_l0l9_009`, `g_para_007` | **Widened, not closed** | Each carries the withdrawal note and a statement of how its question changed. `g_l0l9_009` is the sharpest: it asked whether the FGF21 route is *mouse-specific*, and there is now no standing in vivo demonstration in the mouse either, so the comparison has lost one of its sides. |
+| `audit/paralog_audit.md` | **Cross-referenced** | Its `pde3b`-style reasoning for `klotho_beta_cofactor` cited `wu2013` as the ligand-selective result that made receptor identity secondary. Noted on the node. |
+
+### A second correction fell out of the same trace
+
+The `paralog_risk` note on `klotho_beta_cofactor` argued that FGFR3 must carry the
+effect **because FGFR1 is not expressed in the human growth plate** (`delezoide1998`).
+
+The P8-01 re-analysis of GSE9160 contradicts that premise: **FGFR1 is detected on 5 of 7
+probe sets in all five compartments of both human donors**, alongside FGFR3, FGFR4 and
+FGFR2. All four FGFRs are present in the human physis. The receptor-assignment question
+is therefore *open* in humans, not settled against FGFR1, and it can no longer be argued
+from absence in either direction. Recorded on the node and in `g_para_007`.
+
+### Verification performed
+
+- Retraction confirmed from the live Europe PMC record: pubtype `Retracted Publication`,
+  `commentCorrectionList` giving `Retraction in: J Biol Chem 2020;295(37):13137`.
+- Retraction notice retrieved (PMID 32917830, title begins "Withdrawal:"). No abstract or
+  reason text is available through the API; **no reason is asserted here.**
+- `wu2012` queried separately: pubtypes clean, `commentCorrectionList` null.
+- Repository-wide `grep` for `wu2013` across nodes, edges, gaps, shards, quant rows and
+  audit files; every hit is accounted for in the table above.
+
+### The check that would have caught this earlier, now installed
+
+`validate.py` now **errors** when a node cites a `ref_id` flagged `retracted` in the
+bibliography without declaring `retracted: true` on its own `key_ref`. Negative-tested:
+removing the declaration produces the error, restoring it clears it.
+
+This is the failure mode that gets *worse* with time rather than better. The paper stays
+resolvable, the PMID stays valid, `addref.py` stays happy, `verify_refs.py` reports `ok`
+— the retraction only shows up in a publication-type field that nothing was gating on.
+The lesson is not "check for retractions"; it is that **an anti-fabrication system built
+around *does this source exist* is silent about *is this source still standing*.**

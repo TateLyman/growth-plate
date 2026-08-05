@@ -181,6 +181,17 @@ def validate(quota=False):
                 # the citation is pointing at the wrong paper. This catches the
                 # merge-rewrite corruption class, which is otherwise silent because
                 # every id still resolves.
+                # A withdrawn or retracted source is the one defect that gets WORSE with
+                # time: the paper stays resolvable, the PMID stays valid, addref.py stays
+                # happy, and the claim quietly keeps circulating. Caught 2026-08-05 when a
+                # full verify_refs run flagged wu2013, withdrawn by J Biol Chem in 2020 and
+                # cited on a node, three edges and three gaps. An ERROR, not a warning: a
+                # node may keep the reference (flagged) but must declare it.
+                if rid in refs and refs[rid].get("retracted") and not kr.get("retracted"):
+                    r.err(rel, f"key_ref '{rid}' is RETRACTED/WITHDRAWN in bibliography.yaml "
+                               f"but this node does not declare it - add 'retracted: true' "
+                               f"to the key_ref and record the disposition in "
+                               f"audit/corrections.md")
                 npm = str(kr.get("pmid") or "").strip()
                 if rid in refs and npm:
                     bpm = str(refs[rid].get("pmid") or "").strip()

@@ -135,7 +135,7 @@ number is too small to say anything.
 | | |
 |---|---|
 | Nodes | 614 (614 researched, 0 stubs) |
-| Edges | 1181 — **778 usable for perturbation reasoning**, 403 flagged unusable |
+| Edges | 1181 — **777 usable for perturbation reasoning**, 404 flagged unusable |
 | Gaps | 288, with 134 gap ids carrying reproducible search logs (147 log entries) |
 | References | 1049, all machine-resolved against Europe PMC/NCBI |
 | Quantitative values on nodes | 1520 |
@@ -149,7 +149,7 @@ number is too small to say anything.
 | stage | 754/1181 | 63.8% | 40% |
 | species | 1133/1181 | 95.9% | — |
 
-Sign coverage on sign-bearing relations is the traversal gate and stands at **778/778 = 100%**. The 403 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
+Sign coverage on sign-bearing relations is the traversal gate and stands at **777/777 = 100%**. The 404 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
 <!-- COVERAGE:STRUCT:END -->
 
 ---
@@ -159,13 +159,13 @@ Sign coverage on sign-bearing relations is the traversal gate and stands at **77
 <!-- COVERAGE:QUANT:BEGIN -->
 | reliability class | rows | share |
 |---|---:|---:|
-| `single_source_with_uncertainty` | 1228 | 80.8% |
+| `single_source_with_uncertainty` | 1227 | 80.7% |
 | `range_value` | 118 | 7.8% |
 | **`single_source_point_no_uncertainty`** | **65** | 4.3% |
 | `spread_documented` | 55 | 3.6% |
 | `unverified` | 40 | 2.6% |
 | `multi_source` | 12 | 0.8% |
-| `superseded` | 2 | 0.1% |
+| `superseded` | 3 | 0.2% |
 | | **1520** | |
 
 `single_source_point_no_uncertainty` is the risk class: one source, a point value, and nothing to warn a reader. Phase 2e classified every row rather than hunting duplicate parameter names, because ~94% of parameter names appear exactly once — disagreement in this field is not encoded as duplicate rows.

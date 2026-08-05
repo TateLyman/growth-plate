@@ -71,7 +71,7 @@ gaps   ████████████████████ 288/150 (100
 
 **Quantitative**: 1520 values on nodes · 1520 rows in `quant/parameters.csv`
 
-**Reference verification** (`tools/verify_refs.py`): 1 verified · 0 mismatched · 0 unresolved · 0 manual
+**Reference verification** (`tools/verify_refs.py`): 1005 verified · 0 mismatched · 0 unresolved · 44 manual
 
 ### Evidence quality
 

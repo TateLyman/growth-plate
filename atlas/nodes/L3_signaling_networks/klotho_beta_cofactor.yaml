@@ -9,20 +9,22 @@ layer: L3
 stub: false
 summary: 'Beta-Klotho (KLB) is the single-pass transmembrane co-receptor that converts FGFR1 and FGFR3
   from heparin-dependent paracrine receptors into receptors for the endocrine ligand FGF21; without KLB,
-  FGF21 does not signal. Its relevance to this atlas is that it is the only demonstrated molecular entry
-  point by which systemic caloric state reaches the growth plate through the FGF receptor family rather
-  than through the GH/IGF-1 axis. Wu 2012 detected Fgf21, Fgfr1, Fgfr3 and Klb transcripts in fetal and
-  3-week-old MOUSE growth plate chondrocytes, and showed that recombinant human FGF21 at 5-10 ug/ml suppressed
-  thymidine incorporation and Col10a1 mRNA, abolished the GH-stimulated increase in both, and reduced
-  125I-GH binding; siRNA against FGFR1 or ERK1 prevented every one of these effects, which localises the
-  action to an FGFR1-ERK arm in the chondrocyte itself rather than to a systemic route. Wu 2013 completed
-  the circuit in vivo: four weeks of food restriction in wild-type mice raised LEPROT and LEPROTL1 mRNA
-  in liver AND in the tibial growth plate, Fgf21-knockout mice did not show that induction, and giving
-  rhFGF21 back to food-restricted Fgf21-null mice restored it - so FGF21 is necessary for the undernutrition-induced
-  growth-plate GH insensitivity, acting by trafficking GH receptor away from the chondrocyte surface.
-  Two limits are load-bearing and must not be smoothed over: the concentrations that inhibited chondrocytes
-  (5-10 ug/ml) are far above physiological circulating FGF21, and KLB has never been localised in human
-  growth plate cartilage by any method, so the human arm of this pathway is inferred, not shown.'
+  FGF21 does not signal. It entered this atlas as the one demonstrated molecular entry point by which
+  systemic caloric state reaches the growth plate outside the GH/IGF-1 axis. THAT DEMONSTRATION HAS BEEN
+  WITHDRAWN (CORR-004). What stands is wu2012, which carries no retraction or correction notice: Fgf21,
+  Fgfr1, Fgfr3 and Klb transcripts are detectable in fetal and 3-week-old MOUSE growth plate chondrocytes,
+  and recombinant human FGF21 at 5-10 ug/ml suppressed thymidine incorporation and Col10a1 mRNA, abolished
+  the GH-stimulated increase in both, and reduced 125I-GH binding; siRNA against FGFR1 or ERK1 prevented
+  each of these effects in culture. What has fallen away is the in vivo circuit. Wu 2013 reported that
+  four weeks of food restriction raised LEPROT and LEPROTL1 mRNA in liver and tibial growth plate, that
+  Fgf21-knockout mice did not show the induction, and that rhFGF21 add-back restored it - the knockout-plus-rescue
+  design that made this pathway causal rather than correlative. J Biol Chem withdrew that paper in 2020
+  (notice PMID 32917830) with no retrievable statement of reason, so there is no basis for keeping the
+  observation while discarding the interpretation. It is treated as both_invalid. Three limits are now
+  load-bearing. The concentrations that inhibited chondrocytes (5-10 ug/ml) are far above physiological
+  circulating FGF21. KLB has never been localised in human growth plate cartilage by any method. And there
+  is no longer any in vivo evidence, in any species, that FGF21 mediates undernutrition-induced growth-plate
+  GH insensitivity.'
 quantitative:
 - parameter: FGF21 concentration inhibiting chondrocyte thymidine incorporation and Col10a1 mRNA
   value: 5-10
@@ -32,12 +34,17 @@ quantitative:
   source_ref: wu2012
   uncertainty: lower concentrations (0.01-1 ug/ml) had no effect; no EC50 reported
 - parameter: duration of food restriction inducing growth-plate LEPROT/LEPROTL1
-  value: '4'
+  value: WITHDRAWN
   unit: weeks
-  conditions: wild-type versus Fgf21-knockout mice, tibial growth plate
+  conditions: was 4 weeks, wild-type versus Fgf21-knockout mouse tibial growth plate (wu2013)
   species: mouse
-  source_ref: wu2013
-  uncertainty: induction absent in Fgf21-KO; restored by rhFGF21 add-back
+  source_ref: wu2012
+  uncertainty: ROW VOIDED BY CORR-004. The source, wu2013, was withdrawn by J Biol Chem in 2020 (notice
+    PMID 32917830). Retained as a tombstone so that anyone who saw the number in an earlier version of
+    this atlas can find out what happened to it. Do not use the value. source_ref points at wu2012 only
+    because the schema requires a resolvable reference; wu2012 does not contain this measurement.
+  superseded_model: wu2013 in vivo LEPROT/LEPROTL1 induction - withdrawn, not superseded
+  value_unverified: true
 localization:
 - 'mouse growth plate chondrocyte: Klb, Fgfr1 and Fgfr3 mRNA confirmed at fetal and 3 weeks (wu2012)'
 - 'human growth plate: not examined - no protein, mRNA or in situ localization retrieved (gap g_l0l9_001)'
@@ -54,12 +61,17 @@ translation_risk_reason: The entire mechanism rests on two papers from one labor
 confidence: D
 claim_grades:
 - claim: Beta-Klotho is expressed in growth plate chondrocytes and permits FGF21 signalling there.
-  grade: C
-  basis: Mouse mRNA detection at two ages plus siRNA epistasis, replicated across two papers but from
-    a single laboratory.
+  grade: D
+  basis: Mouse mRNA detection at two ages plus siRNA epistasis in culture, from a single laboratory, in
+    ONE paper. It was graded C on the strength of being replicated across wu2012 and wu2013; wu2013 is
+    withdrawn, so the replication is gone and the grade falls one step to D. CORR-004.
 - claim: FGF21 acting through beta-Klotho/FGFR1 mediates growth-plate GH insensitivity during undernutrition.
-  grade: C
-  basis: Fgf21-knockout loss-of-induction with rhFGF21 add-back rescue in vivo (wu2013); mouse only.
+  grade: X
+  basis: WITHDRAWN. This claim rested entirely on wu2013 (Fgf21-null loss of induction with rhFGF21 add-back
+    rescue), withdrawn by J Biol Chem in 2020 with no retrievable reason. There is now no in vivo evidence
+    in any species. Graded X - repeated in the literature but not traceable to standing primary data -
+    and logged in audit/corrections.md as CORR-004 rather than deleted, because the claim continues to
+    circulate.
 - claim: This pathway operates in the human growth plate.
   grade: E
   basis: Inference from mouse only; no human localization or functional data exist.
@@ -78,18 +90,27 @@ key_refs:
   first_author: Wu S
   year: 2013
   type: primary
-  one_line_finding: FGF21 is required for the undernutrition-induced rise in LEPROT/LEPROTL1 in the mouse
-    tibial growth plate, the proposed mechanism of local GH insensitivity.
+  one_line_finding: 'WITHDRAWN 2020 (J Biol Chem 295:13137). Formerly: FGF21 is required for the undernutrition-induced
+    rise in LEPROT/LEPROTL1 in the mouse tibial growth plate. Kept in the reference list, flagged, so
+    the withdrawal is visible to anyone who follows the citation rather than silently absent.'
+  retracted: true
+  retraction_notice_pmid: '32917830'
 open_questions:
 - g_para_007
 - g_l0l9_001
 last_verified: '2026-08-05'
 paralog_audit: at_risk
 paralog_audit_date: '2026-08-05'
-paralog_risk: >-
-  The FGF21 effect is assigned to an FGFR1-ERK arm on FGFR1 siRNA alone. FGFR3 is co-detected in
-  the same chondrocytes by the same paper (wu2012), was never knocked down, and is the receptor
-  the human growth plate actually expresses - FGFR1 is NOT detected in human growth plate
-  chondrocytes (delezoide1998). The effects also required FGF21 at 5-10 ug/ml, far above
-  physiological. The Fgf21-null in vivo result (wu2013) is ligand-selective and does not depend on
-  which receptor carries it. See g_para_007.
+paralog_risk: 'The FGF21 effect is assigned to an FGFR1-ERK arm on FGFR1 siRNA alone. FGFR3 is co-detected
+  in the same chondrocytes by the same paper (wu2012), was never knocked down, and is the receptor the
+  human growth plate actually expresses - FGFR1 is NOT detected in human growth plate chondrocytes (delezoide1998).
+  The effects also required FGF21 at 5-10 ug/ml, far above physiological. The Fgf21-null in vivo result
+  (wu2013) is ligand-selective and does not depend on which receptor carries it. See g_para_007.
+
+  P8-01 UPDATE (2026-08-05): the premise that FGFR1 is not expressed in human growth plate chondrocytes
+  does not survive re-analysis of GSE9160. FGFR1 is detected on 5 of 7 probe sets in all five compartments
+  of both human donors, as are FGFR3 and FGFR4, and FGFR2 in two zones. All four FGFRs are present in
+  the human physis, so the receptor-assignment question is open in humans rather than settled against
+  FGFR1 - and it can no longer be argued from absence in either direction. Separately, CORR-004: the Fgf21-null
+  in vivo result that this note called ligand-selective is withdrawn, so the argument that receptor identity
+  does not matter for it no longer has a result to apply to.'
