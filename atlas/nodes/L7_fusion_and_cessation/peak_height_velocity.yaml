@@ -2,8 +2,84 @@ id: peak_height_velocity
 name: Peak height velocity
 type: phenotype
 layer: L7
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+stub: false
 aliases:
 - PHV
+- aPHV
+- pubertal growth spurt peak
+summary: |
+  Peak height velocity is the maximum rate of statural growth during the pubertal spurt, and its
+  timing (age at PHV) is the standard objective marker of pubertal tempo because it needs no
+  physical examination or self-report. Modelled with SITAR and a matched mixed-effects model for
+  Tanner stages in the Edinburgh Longitudinal Growth Study (103 boys, 74 girls), mean age at peak
+  velocity across six pubertal markers was 13.0-14.0 years in boys and 12.0-13.1 years in girls,
+  with a between-subject standard deviation of about 1 year; peak height velocity itself was 8-9
+  cm/year in both sexes (cole2014). The correlation of age at peak velocity across different
+  pubertal markers was 0.6-0.8 in boys and 0.8-0.92 in girls, significantly higher in girls
+  (p=0.005), whereas the correlations for peak velocity magnitude were much lower (-0.2 to 0.6) -
+  i.e. pubertal timing is a coherent individual trait but pubertal intensity is not (cole2014).
+  In a Chilean cohort of 549 girls followed twice yearly from age 6, mean age at PHV was 10.6
+  years (SD 1.1) with a peak velocity of 8 cm/year, considerably earlier than the Edinburgh
+  figures, which places population and secular differences on the same order as the
+  between-individual SD. SITAR-derived age at PHV is now the standard exposure variable in
+  large birth cohorts (frysz2018). PHV precedes fusion by roughly 3-6 years and is the last
+  point at which growth-modifying intervention has substantial leverage.
+quantitative:
+- parameter: mean age at peak velocity across six pubertal markers, boys
+  value: 13.0-14.0
+  unit: years
+  conditions: Edinburgh Longitudinal Growth Study, 103 boys, SITAR and mixed-effects logistic models
+  species: human
+  source_ref: cole2014
+  uncertainty: between-subject SD approximately 1 year
+- parameter: mean age at peak velocity across six pubertal markers, girls
+  value: 12.0-13.1
+  unit: years
+  conditions: Edinburgh Longitudinal Growth Study, 74 girls
+  species: human
+  source_ref: cole2014
+  uncertainty: between-subject SD approximately 1 year
+- parameter: peak height velocity magnitude
+  value: 8-9
+  unit: cm/year
+  conditions: both sexes, SITAR fixed effects
+  species: human
+  source_ref: cole2014
+  uncertainty: not decomposed by sex in the source abstract
+- parameter: correlation of age at peak velocity across pubertal markers
+  value: 0.6-0.8 (boys); 0.8-0.92 (girls)
+  unit: correlation coefficient
+  conditions: six markers - height, genital stage, breast stage, pubic hair stage, testis volume, menarche
+  species: human
+  source_ref: cole2014
+  uncertainty: sex difference p=0.005
+localization:
+- 'SYS: whole-body stature velocity, integrating all open growth plates'
+human_evidence: direct
+human_evidence_note: Derived from serial human anthropometry in longitudinal cohorts.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype measured directly.
+confidence: A
+key_refs:
+- ref_id: cole2014
+  pmid: '24313626'
+  first_author: Cole TJ
+  year: 2014
+  type: primary
+  one_line_finding: >-
+    Mean age at peak velocity was 13.0-14.0 y in boys and 12.0-13.1 y in girls with
+    between-subject SD about 1 year and peak height velocity 8-9 cm/year.
+- ref_id: frysz2018
+  pmid: '30345378'
+  first_author: Frysz M
+  year: 2018
+  type: primary
+  one_line_finding: >-
+    Describes SITAR-based derivation of age at peak height velocity as an objective pubertal
+    timing measure in the ALSPAC birth cohort.
+open_questions:
+- g_l7fuse_013
+contradicts: []
+last_verified: '2026-08-05'

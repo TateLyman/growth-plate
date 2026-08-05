@@ -1,7 +1,57 @@
 id: bone_modeling_drift
-name: Bone modeling drift
+name: Bone modelling drift
+aliases:
+- modelling drift
+- cortical drift
 type: process
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Modelling drift is the coordinated apposition on one surface and resorption on the opposite
+  surface that moves a bone cross-section through space without changing its shape, and it is what allows
+  the wide metaphysis produced by the growth plate to be reshaped into the narrow diaphysis as the plate
+  moves away. Where longitudinal growth is a cartilage process, drift is entirely an osteoblast-osteoclast
+  process on periosteal and endosteal surfaces, so the two can be dissociated pharmacologically and genetically:
+  a drug that blocks osteoclasts will leave elongation intact while preventing funnelisation, producing
+  the club-shaped metaphyses seen in osteopetrosis. Rauch frames longitudinal and appositional growth
+  as complementary determinants of bone stability, with drift providing the mechanical adaptation that
+  longitudinal growth alone cannot. This node is architectural context for the growth plate rather than
+  a growth plate mechanism, and its own quantitative parameters (drift rates, surface-specific apposition)
+  belong to bone remodelling rather than to physeal biology.'
+quantitative:
+- parameter: expansion-to-elongation ratio at the chondro-osseous junction, postnatal
+  value: 0-0.04
+  unit: dimensionless ratio
+  conditions: mouse distal femur and proximal tibia P32-P40; sets the width the drift process must subsequently
+    reshape
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: as reported
+localization:
+- 'human and rodent metaphysis and diaphysis: periosteal and endosteal surfaces'
+human_evidence: indirect
+human_evidence_note: Modelling drift in humans is inferred from bone histomorphometry and from the metaphyseal
+  deformities of osteoclast-deficient disorders rather than from direct measurement at the physis.
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: low
+translation_risk_reason: Surface-based modelling is a general vertebrate bone process well documented
+  in human histomorphometry; the risk here is only that this node is contextual rather than physeal.
+confidence: C
+key_refs:
+- ref_id: rauch2005
+  pmid: '16172510'
+  first_author: Rauch F
+  year: 2005
+  type: review
+  one_line_finding: Frames longitudinal and appositional growth and the modelling drift that reshapes
+    the metaphysis as complementary determinants of bone stability.
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: Quantifies the width of new bone generated at the chondro-osseous junction relative
+    to elongation across development.
 last_verified: '2026-08-05'

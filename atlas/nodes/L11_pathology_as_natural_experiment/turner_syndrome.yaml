@@ -1,7 +1,97 @@
 id: turner_syndrome
 name: Turner syndrome
+aliases:
+- 45,X
+- monosomy X
+- Ullrich-Turner syndrome
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Turner syndrome is the human SHOX gene-dosage experiment plus an estrogen-timing experiment in
+  the same patient. The primary skeletal lesion is haploinsufficiency for SHOX in the
+  pseudoautosomal region PAR1, which escapes X inactivation and is therefore normally expressed
+  from two copies; loss of one copy removes roughly the SHOX contribution to stature. A
+  biobank analysis of 928,605 individuals including 1,225 adults with sex-chromosome
+  aneuploidies (45,X n=95; 47,XXY n=505; 47,XYY n=290; 47,XXX n=335) separated the components
+  quantitatively: a unit increase in Y-chromosome dosage adds 3.1 cm (95% CI 1.9-4.3) more height
+  than a unit increase in inactive-X dosage, independent of hormonal variables, and this
+  asymmetry accounts for 22.6 percent of the 13 cm mean height difference between 46,XY men and
+  46,XX women. Because the same PAR1 dosage logic applies in reverse in Turner syndrome, this is
+  the strongest available human quantification of the SHOX contribution to stature. The second
+  lesion is gonadal: ovarian failure removes the pubertal estrogen surge, so untreated girls have
+  no growth spurt but also no early fusion, and growth continues into the late teens - a pattern
+  that is visible in the spontaneous-growth references built from girls never given GH or
+  oxandrolone (n=259 Brazilian, n=842 Turkish). Turner is therefore the disorder in which SHOX
+  dosage and estrogen timing can be dissociated by treatment.
+quantitative:
+- parameter: extra height per unit Y-chromosome dosage over inactive-X dosage
+  value: '3.1'
+  unit: cm
+  conditions: modelled across 45,X, 47,XXY, 47,XYY, 47,XXX and euploid adults; independent of male
+    sex hormones
+  species: human
+  source_ref: berry2025
+  uncertainty: 95% CI 1.9-4.3
+- parameter: share of the male-female adult height difference explained by this asymmetry
+  value: '22.6'
+  unit: percent
+  conditions: against an observed 13 cm mean difference between 46,XY and 46,XX adults
+  species: human
+  source_ref: berry2025
+  uncertainty: point estimate
+- parameter: adults with 45,X in the biobank analysis
+  value: '95'
+  unit: adults
+  conditions: part of 1,225 sex-chromosome aneuploidy adults within 928,605 individuals
+  species: human
+  source_ref: berry2025
+  uncertainty: n=95
+- parameter: girls contributing to the Brazilian spontaneous-growth Turner charts
+  value: '259'
+  unit: girls
+  conditions: never treated with GH or oxandrolone; 3,160 height and 2,918 weight measurements; births
+    1957-2014
+  species: human
+  source_ref: carpinidantas2025
+  uncertainty: n=259
+- parameter: girls contributing to the Turkish spontaneous-growth Turner charts
+  value: '842'
+  unit: girls
+  conditions: all measured before starting any therapy, ages 3 y to adulthood
+  species: human
+  source_ref: darendeliler2015
+  uncertainty: n=842
+localization:
+- 'human growth plate: not examined in Turner syndrome'
+human_evidence: direct
+human_evidence_note: Population-scale human aneuploidy modelling of PAR1 dosage plus two large untreated
+  national growth references.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: berry2025
+  pmid: '40388606'
+  first_author: Berry ASF
+  year: 2025
+  type: primary
+  one_line_finding: One extra Y adds 3.1 cm (95% CI 1.9-4.3) more than one extra inactive X; explains
+    22.6% of the sex difference in height.
+- ref_id: carpinidantas2025
+  pmid: '39489927'
+  first_author: Carpini-Dantas S
+  year: 2025
+  type: primary
+  one_line_finding: Brazilian Turner growth charts from 259 girls never treated with GH or oxandrolone.
+- ref_id: darendeliler2015
+  pmid: '26831551'
+  first_author: Darendeliler F
+  year: 2015
+  type: primary
+  one_line_finding: Turkish Turner growth charts from 842 girls measured before any therapy.
+open_questions:
+- g_l11path_014
 last_verified: '2026-08-05'

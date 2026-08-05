@@ -2,6 +2,97 @@ id: adult_height_attainment
 name: Adult height attainment
 type: phenotype
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- final height
+- near-adult height
+summary: |
+  Adult height is attained when the last contributing growth plate closes, and because fusion is
+  site-asynchronous the endpoint is a distribution rather than a date. MRI of 958 healthy subjects
+  bounds it directly: by age 17 in females, 97-98% of ankle plates and 85% of distal femoral
+  plates but only 75% of distal radial plates were completely fused; by age 19 in males the
+  distal radius had reached 90% and the other sites 95-98% (kvist2021). Complete fusion of the
+  last long-bone sites therefore falls around 16-18 years in females and 18-20 years in males,
+  approximately two years later, with the distal radius consistently last among the sites
+  examined. Because appendicular fusion precedes vertebral maturation, small further stature
+  gain continues after the long bones are closed. The estrogen dependence of the endpoint is
+  demonstrated by its failure: untreated men with aromatase deficiency continue slow linear growth
+  into their third decade and reach heights of 188-204 cm despite severely impaired GH secretion
+  and normal or low IGF-I, because delayed bone maturation extends the growth period
+  (rochira2010, morishima1995, singhania2022). In clinical cohorts, the reference values against
+  which final height is judged are population- and era-specific: adult height in a German cohort
+  of untreated constitutional delay was 170.4 cm (SD 5.4) in boys and 157.8 cm (SD 4.2) in girls
+  (brmswig1990), which is itself lower than contemporary population means because of the secular
+  trend.
+quantitative:
+- parameter: proportion of distal radial growth plates completely fused at age 17 (female) and 19 (male)
+  value: 75 (female, 17 y); 90 (male, 19 y)
+  unit: percent
+  conditions: MRI, healthy Swedish cohort aged 14.0-21.5 y
+  species: human
+  source_ref: kvist2021
+  uncertainty: n=958 across all ages
+- parameter: adult height, untreated aromatase-deficient men
+  value: 188-204
+  unit: cm
+  conditions: two independently reported cases with open epiphyses in the third decade
+  species: human
+  source_ref: singhania2022
+  uncertainty: n=2 cases quoted; 204 cm case from morishima1995
+- parameter: adult height in untreated constitutional delay of growth and puberty
+  value: 170.4 (boys); 157.8 (girls)
+  unit: cm
+  conditions: German cohort, adult height measured at mean 23.1 y (boys) and 21.1 y (girls)
+  species: human
+  source_ref: brmswig1990
+  uncertainty: SD 5.4 cm and 4.2 cm; n=37 and n=32
+localization:
+- 'human distal radius: last of the imaged sites to complete fusion (kvist2021)'
+- 'human spine: continues to contribute after appendicular fusion'
+human_evidence: direct
+human_evidence_note: >-
+  Direct imaging of fusion completion in 958 healthy subjects plus measured adult heights in
+  clinical cohorts and in estrogen-deficient men.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype measured directly in humans.
+confidence: A
+key_refs:
+- ref_id: kvist2021
+  pmid: '33047349'
+  first_author: Kvist O
+  year: 2021
+  type: primary
+  one_line_finding: >-
+    Site-specific completion percentages by age and sex place last-site fusion around 17-19 years
+    with the distal radius latest.
+- ref_id: rochira2010
+  pmid: '20164294'
+  first_author: Rochira V
+  year: 2010
+  type: primary
+  one_line_finding: >-
+    Aromatase-deficient men reach tall stature despite severe GH deficiency because delayed bone
+    maturation prolongs the growth period.
+- ref_id: singhania2022
+  pmid: '36504506'
+  first_author: Singhania P
+  year: 2022
+  type: primary
+  one_line_finding: >-
+    A 188 cm man with two novel CYP19A1 variants had open wrist and knee epiphyses at age 24 and
+    a history of continued growth after 18 years.
+- ref_id: brmswig1990
+  pmid: '2246686'
+  first_author: Brämswig JH
+  year: 1990
+  type: primary
+  one_line_finding: >-
+    Untreated constitutional delay reached adult heights of 170.4 (SD 5.4) cm in boys and 157.8
+    (SD 4.2) cm in girls.
+open_questions:
+- g_l7fuse_007
+- g_l7fuse_013
+contradicts: []
 last_verified: '2026-08-05'

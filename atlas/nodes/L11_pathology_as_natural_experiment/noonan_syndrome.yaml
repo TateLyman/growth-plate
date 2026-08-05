@@ -1,7 +1,81 @@
 id: noonan_syndrome
-name: Noonan syndrome
+name: Noonan syndrome and the RASopathies
+aliases:
+- PTPN11 short stature
+- RASopathy growth failure
+- Noonan syndrome spectrum disorders
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Noonan syndrome is the human test of what constitutive RAS/MAPK activation does to the growth
+  plate, and it is mechanistically adjacent to achondroplasia because FGFR3 signals through the
+  same cascade. Germline gain-of-function mutations in PTPN11 (the commonest), SOS1, RAF1, RIT1
+  and others increase RAS/MAPK flux; birth length is usually normal and growth failure is
+  postnatal, with adult height approaching the lower limit of normal rather than falling into the
+  dysplasia range. A genetically defined multicentre cohort of 101 patients (76 PTPN11, 7 SOS1,
+  18 other) on GH therapy, of whom 23 reached final height, found parental heights that were
+  themselves below average (fathers -0.33 SDS), which matters because it warns that the apparent
+  disease effect in family-based cohorts is partly polygenic background. A national Turkish
+  cohort of 67 patients reaching final height compared GH-treated and untreated patients
+  stratified by sex. Mechanistically the interesting feature is that GH response is modest and
+  genotype-dependent, consistent with the block being downstream of the receptor in the growth
+  plate itself rather than in GH secretion - the same argument that applies to hypochondroplasia.
+  Noonan patients have also been enrolled in a CNP-analogue basket trial, an explicit test of
+  whether the CNP axis can antagonise excess MAPK output in a non-FGFR3 RASopathy.
+quantitative:
+- parameter: patients in the genetically defined Noonan-spectrum GH cohort
+  value: '101'
+  unit: patients
+  conditions: 56 male; 76 PTPN11, 7 SOS1, 18 other; all completed at least one year of GH
+  species: human
+  source_ref: jirova2026
+  uncertainty: 23 reached final height
+- parameter: paternal height SDS in that cohort
+  value: '-0.33'
+  unit: SDS
+  conditions: fathers of Noonan-spectrum probands; P<0.01 vs population mean
+  species: human
+  source_ref: jirova2026
+  uncertainty: interquartile range -1.19 to 0.39
+- parameter: patients reaching final height in the Turkish national cohort
+  value: '67'
+  unit: patients
+  conditions: 14 centres, stratified by sex and by GH treatment
+  species: human
+  source_ref: klar2025
+  uncertainty: n=67
+localization:
+- 'human growth plate: not examined in Noonan syndrome'
+human_evidence: direct
+human_evidence_note: Genetically confirmed multicentre human cohorts followed to final height with
+  treated and untreated comparisons.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: jirova2026
+  pmid: '41577878'
+  first_author: Jirova B
+  year: 2026
+  type: primary_abstract_only
+  one_line_finding: 101 genetically defined Noonan-spectrum patients on GH; 23 to final height; parental
+    heights below average.
+- ref_id: klar2025
+  pmid: '39377546'
+  first_author: Şıklar Z
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: 67 Noonan patients reaching final height, stratified by sex and GH treatment.
+- ref_id: roberts1993
+  pmid: '20301303'
+  first_author: Roberts AE.
+  year: 1993
+  type: review
+  one_line_finding: 'GeneReviews: birth length usually normal; final adult height approaches the
+    lower limit of normal.'
+open_questions:
+- g_l11path_015
 last_verified: '2026-08-05'
