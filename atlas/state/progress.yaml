@@ -1,71 +1,113 @@
 # RESUME STATE. On session start read this and state/environment.md FIRST,
 # read nothing else, then execute next_3_actions. Never restart from scratch.
 
-current_phase: 2              # 0 scaffold | 1 skeleton_map | 2 layer_sweeps | 3 integration
-                              # 4 quantitative_consolidation | 5 redteam | 6 synthesis
-current_layer: [L1, L2, L3, L7, L4]
+current_phase: 8              # 0 scaffold | 1 skeleton_map | 2 layer_sweeps | 3 integration
+                              # 4 layer_syntheses | 5 query_layer | 6 quantitative_closure
+                              # 7 falsification | 8 primary_reanalysis
+current_layer: all_swept
 current_subtopic: >-
-  L1/L2/L3-core/L7 running as parallel subagent sweeps; L4 endocrine being built
-  in the main thread; L8 and L12 partially built.
+  Build closed. All 14 layers swept, integrated, synthesised and figured. Query layer,
+  quantitative closure, falsification baseline and one primary re-analysis complete.
+  Remaining work is extension, not completion - see open_work below.
 last_updated: '2026-08-05'
+
+state_at_close:
+  nodes: 614
+  stubs: 0
+  edges: 1181
+  gaps: 288
+  search_logs: 147
+  references: 1049
+  validator_errors: 0
+  sign_gate: "778/778 sign-bearing relations signed = 100%"
+  context_fill: "zone 53.9% · sex 30.5% · stage 63.8% · species 95.9% (all MR-004 targets met)"
+  confidence: {A: 156, B: 185, C: 184, D: 76, E: 11, X: 2}
+  human_evidence_fraction: '57.5%'
+  replicated_human_fraction: '40.2%'
+  falsification_hit_rate: '64.0% (32/50 scored, 63 held-out papers, cutoff 2026-02-01)'
 
 completed:
   - phase: 0
     name: scaffold
-    timestamp: '2026-08-05'
     note: >-
       Tree, schemas, vocabulary, validator, addref (machine-populated bibliography),
       verify_refs. Negative-tested: validator caught 10/10 injected defects, addref
-      refused a fabricated PMID. Network confirmed to NCBI/EPMC/DOI/CTgov.
+      refused a fabricated PMID.
   - phase: 1
     name: skeleton_map
-    timestamp: '2026-08-05'
+    note: 633 stub nodes across all 14 layers; sharding infrastructure so parallel sweeps cannot clobber shared files.
+  - phase: 2
+    name: layer_sweeps
     note: >-
-      633 stub nodes across all 14 layers, 0 validation errors. Exceeds the >=400
-      exit criterion. Sharding infrastructure added so parallel sweeps cannot
-      clobber shared files.
+      All 14 layers researched. 2c stub resolution to zero stubs. 2d canonical-mechanism
+      audit (4 CONFIRMED, 6 SCOPED, 2 SUPERSEDED, 21 refs upgraded from abstract-only to
+      primary; opened CORR-002 and CORR-003). 2e disputed-value policy re-run over all
+      1350 rows after the first criterion proved defective.
+  - phase: 3
+    name: integration
+    note: >-
+      Cross/intra edge ratio inverted 1.3:1 to 0.65:1, every seam populated. Propositional
+      replication rule exercised: 2 accepted, 10 rejected. 3b delivered as
+      docs/pathway_matrix.md - a five-axis matrix with no ranking anywhere.
+  - phase: 4
+    name: layer_syntheses
+    note: 14 docs, 38,159 words, each an argument with its discriminating experiments. All 14 figures generated.
+  - phase: 5
+    name: query_layer
+    note: >-
+      QUERY.md protocol, compiled artifacts in /query, 43-question benchmark plus 20
+      adversarial refusals. Two null-semantics defects found and fixed (reachability,
+      then context filtering) - the second had shipped a wrong answer.
+  - phase: 6
+    name: quantitative_closure
+    note: >-
+      flow_model.py halts by design on an unmeasured parameter; 98% of output uncertainty
+      rests on five never-measured quantities; docs/experimental_agenda.md ranks them.
+  - phase: 7
+    name: falsification
+    note: >-
+      64.0% hit rate on 63 blinded held-out papers. 16 SILENTLY_ABSENT, 14 of them
+      cross-layer. ZERO graph edits applied; 8 defects registered unapplied in
+      query/falsification_corrections.md.
+  - phase: 8
+    name: primary_reanalysis
+    note: >-
+      GSE9160 re-analysed under a committed preregistration. Four both-donor negatives
+      (NPPC, cGMP-PDEs, aromatase/ERbeta, MCT8) and the finding that the only public
+      zone-resolved human growth-plate transcriptome is, for zonal contrast, effectively n=1.
 
-in_flight:
-  subagent_sweeps:
-    - shard: l1arch
-      layer: L1
-      status: running
-      note: bibliography shard growing; nodes not yet written
-    - shard: l2stem
-      layer: L2
-      status: running
-    - shard: l3core
-      layer: L3
-      scope: PTHrP/IHH + CNP/NPR2/PDE + FGF/FGFR3 only (rest of L3 unassigned)
-      status: running
-    - shard: l7fuse
-      layer: L7
-      status: running
-  main_thread:
-    - "L8: height_gwas, height_heritability, missing_heritability_height written; 2 gaps + search logs"
-    - "L12: vosoritide written; 2 gaps + search logs"
-    - "Shards NOT yet merged - refs sit in sources/shards/*.yaml, so validate.py reports expected 'unknown ref' errors until merge_shards.py runs"
+in_flight: []
 
 next_3_actions:
-  - "When subagent sweeps report: run `python3 atlas/tools/merge_shards.py` then `python3 atlas/tools/validate.py --quota` and fix fallout"
-  - "Write docs/<layer>.md syntheses + figures/*.mmd for L1, L2, L3, L7; then commit per layer"
-  - "Continue Phase 2 into L4 (endocrine), L5, L0, L6, then L9-L11, L13; L3 still needs BMP/TGF-b, WNT, Notch, mTORC1, HIF-1a, SOX9/RUNX2, cilium subtopics assigned"
+  - >-
+    Wire the three cross-layer defects registered in query/falsification_corrections.md
+    (C-01 pharmacology is terminal, C-02 the atlas has one growth plate, C-03 L8 unwired)
+    by INGESTING the held-out papers through a normal sweep - never by hand-adding edges
+    from that document. Any hit rate quoted afterwards is a post-ingestion number and is
+    not comparable to the 64.0% baseline.
+  - >-
+    Run `redteam.py --sample 30 --seed 7` and do the manual pass it sets up. Every audit
+    this build that changed a grade worked by reading primary sources; the mechanised
+    checks changed nothing.
+  - >-
+    Continue Phase 8 against atlas/quant/dataset_inventory.csv. One of 61 datasets has
+    been re-analysed. Prioritise by the Phase 6c uncertainty ranking, and note that
+    GSE288028 - the flagship human scRNA-seq series - withheld its raw human files from
+    GEO for identifiability reasons and is only partly reusable.
 
-blocked_on:
-  - "access_queue #1 (P2): Yengo 2022 supplementary table to settle contradiction c001 (mean vs median segment size)"
-  - "User answers to the phase-2 question block (institutional access, Richard 2025 Cell full text, priority subsystem, L12 regulatory-dossier depth). Defaults are in effect and work is proceeding on them."
-
-known_debt:
-  - "docs/<layer>.md not yet written for any layer"
-  - "figures/*.mmd not yet generated"
-  - "No edges written yet in the main thread; edges/edges.yaml still empty pending subagent shards"
-  - "L3 only partially scoped to subagent (3 of ~10 subsystems)"
-  - "missing_heritability_height carries one value_unverified row (early-GWAS variance explained ~5%) awaiting a primary source"
-  - "Node pthrp_positive_resting_chondrocyte still holds the phase-0 PLACEHOLDER summary unless the l2stem sweep has rewritten it - verify after merge"
+open_work:
+  - "138 weak quantitative rows: 40 value_unverified, 98 abstract-only. Cause is paywalls, not curation."
+  - "26 orphan non-stub nodes reported every validator run, never triaged one by one."
+  - "structural_confidence is computed but uncalibrated - it orders neighbourhoods, it does not yet mean anything absolute."
+  - "Grade D is the ceiling on P8 findings, so a clean negative from the only dataset that exists grades like a single weak study. The scale has no way to say otherwise."
+  - "The exposure hole (MR-002): the atlas can say what a pathway does, rarely what concentration reaches a human chondrocyte. Phase 6 halts on exactly this."
+  - "Reachability and context filtering shipped the same null-as-exclusion defect in different fields. No third nullable field has been audited for it."
 
 conventions_reminder:
-  - "Never hand-write bibliography metadata; always `python3 atlas/tools/addref.py`"
+  - "Never hand-write bibliography metadata; always `python3 atlas/tools/addref.py`. 0 hand-written refs at close - keep it there."
   - "A gap of type search_established REQUIRES a search_log.yaml entry or the validator rejects it"
-  - "Commit message format: atlas(<layer>): <what changed> [+N nodes, +M edges, +K gaps]"
-  - "Every claim carries a species tag; mouse data never stated as human fact"
   - "Subagents write to shards only; merge with merge_shards.py, never hand-edit canonical files"
+  - "Run fix_citations.py after every merge - a real PMID on the wrong paper passes every existence check"
+  - "Every claim carries a species tag; mouse data never stated as human fact"
+  - "Regenerate README with dashboard.py and query/coverage.md with coverage_report.py before quoting any count"
+  - "DO NOT tune the graph to improve the falsification score. Record test-driven fixes in query/falsification_corrections.md and keep baseline and post-fix numbers distinguishable forever."
