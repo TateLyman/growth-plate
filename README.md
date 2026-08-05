@@ -57,12 +57,12 @@ gaps   ████████████████████ 288/150 (100
 | L5 | matrix_and_mineralization | 41 | 41 | 101 | 17 | ✅ | ✅ | ✅ |
 | L6 | mechanobiology | 31 | 31 | 94 | 23 | ✅ | ✅ | ✅ |
 | L7 | fusion_and_cessation | 34 | 34 | 33 | 18 | ✅ | ✅ | ✅ |
-| L8 | genetics_and_heritability | 39 | 39 | 66 | 22 | ✅ | ✅ | — |
-| L9 | whole_organism_growth | 34 | 34 | 47 | 17 | ✅ | ✅ | — |
-| L10 | environment_and_population | 34 | 34 | 58 | 13 | ✅ | ✅ | — |
+| L8 | genetics_and_heritability | 39 | 39 | 66 | 22 | ✅ | ✅ | ✅ |
+| L9 | whole_organism_growth | 34 | 34 | 47 | 17 | ✅ | ✅ | ✅ |
+| L10 | environment_and_population | 34 | 34 | 58 | 13 | ✅ | ✅ | ✅ |
 | L11 | pathology_as_natural_experiment | 56 | 56 | 83 | 26 | ✅ | ✅ | ✅ |
-| L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 79 | 30 | ✅ | ✅ | — |
-| L13 | methods_and_data | 41 | 41 | 40 | 14 | ✅ | — | — |
+| L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 79 | 30 | ✅ | ✅ | ✅ |
+| L13 | methods_and_data | 41 | 41 | 40 | 14 | ✅ | — | ✅ |
 | | **total** | **614** | **614** | **1181** | **288** | | | |
 
 **Confidence distribution** (researched nodes): **A** 156 · **B** 185 · **C** 184 · **D** 76 · **E** 11 · **X** 2

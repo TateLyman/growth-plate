@@ -1,0 +1,125 @@
+graph LR
+  npr2_heterozygous_short_stature["NPR2 heterozygous short stature"]
+  height_sds_z_score["Height standard deviation score"]
+  acromesomelic_dysplasia_maroteaux["Acromesomelic dysplasia, Maroteaux type"]
+  limb_segment_proportion["Limb segment proportions"]
+  laron_syndrome["Laron syndrome (growth hormone receptor deficiency)"]
+  celiac_disease_growth["Coeliac disease growth failure"]
+  catch_down_growth["Catch-down growth"]
+  juvenile_idiopathic_arthritis_growth["Juvenile idiopathic arthritis growth failure"]
+  growth_velocity_curve["Human height velocity curve"]
+  irradiation_growth_plate_damage["Irradiation damage to the growth plate"]
+  sitting_height_ratio["Sitting height ratio"]
+  mucopolysaccharidosis_growth["Mucopolysaccharidosis growth failure"]
+  marfan_syndrome["Marfan syndrome"]
+  ift80_protein["IFT80"]
+  articular_cartilage["Articular cartilage"]
+  growth_velocity_longitudinal["Longitudinal growth velocity at the physis"]
+  peak_height_velocity["Peak height velocity"]
+  site_specific_growth_rate["Site-specific growth rate (differential growth)"]
+  icp_growth_model["ICP (infancy-childhood-puberty) growth model"]
+  pubertal_growth_spurt["Pubertal growth spurt"]
+  preece_baines_model["Preece-Baines growth model"]
+  jpa2_model["JPA-2 asymptotic growth model"]
+  sitar_model["SITAR shape-invariant growth model"]
+  mid_parental_target_height["Mid-parental target height"]
+  adult_height_attainment["Adult height attainment"]
+  target_height_predictive_sd["Predictive SD of mid-parental target height"]
+  canalization_growth["Canalization of human growth"]
+  catch_up_growth["Catch-up growth"]
+  delayed_senescence_hypothesis["Delayed-senescence explanation of catch-up growth"]
+  vertebral_growth_plate["Vertebral growth plate"]
+  proximal_humerus_plate["Proximal humeral growth plate"]
+  distal_radius_plate["Distal radial growth plate"]
+  body_proportion_development["Body proportion development"]
+  remaining_growth_prediction["Remaining growth prediction"]
+  cdc_growth_reference["CDC 2000 growth reference"]
+  who_growth_standard["WHO Child Growth Standards"]
+  infancy_growth_nutrition_dependence["Nutrition dependence of infant growth"]
+  mini_puberty_infancy["Mini-puberty of infancy"]
+  testosterone_hormone["Testosterone"]
+  igf1_systemic["Systemic (hepatic) IGF-1"]
+  dental_development_clock["Dental development as an independent maturity clock"]
+  bone_age["Bone age"]
+  tooth_mineralization_stages["Tooth mineralization staging"]
+  skeletal_muscle_growth["Skeletal muscle growth"]
+  physeal_stress_in_vivo["In vivo physeal stress"]
+  muscle_bone_mechanical_coupling["Muscle-bone mechanical coupling"]
+  mechanical_modulation_growth["Mechanical modulation of longitudinal growth"]
+  satellite_cell["Muscle satellite cell"]
+  resting_zone["Resting (reserve) zone"]
+  muscle_hypertrophy_vs_hyperplasia["Muscle hypertrophy versus hyperplasia"]
+  hypertrophic_volume_increase["Hypertrophic chondrocyte volume increase"]
+  myostatin_mstn["Myostatin (MSTN, GDF8)"]
+  activin_receptor_2b["ActRIIB"]
+  craniofacial_growth["Craniofacial growth"]
+  cranial_base_synchondrosis["Cranial base synchondrosis"]
+  epiphyseal_fusion["Epiphyseal fusion"]
+  suture_fusion_timing["Cranial suture fusion timing"]
+  mandibular_condylar_cartilage["Mandibular condylar cartilage"]
+  sex_difference_fusion_timing["Sex difference in fusion timing"]
+  growth_cessation["Growth cessation"]
+  distal_femur_plate["Distal femoral growth plate"]
+  neuroendocrine_catchup_hypothesis["Neuroendocrine ('sizostat') explanation of catch-up growth"]
+  clonal_exhaustion["Clonal exhaustion of growth plate progenitors"]
+  growth_hormone["Growth hormone (GH1 / somatotropin)"]
+  brain_growth_trajectory["Brain growth trajectory"]
+  appositional_growth["Appositional (circumferential) growth"]
+  dxa_body_composition["DXA body composition and skeletal measurement"]
+  npr2_heterozygous_short_stature -->|"correlates_with (A)"| height_sds_z_score
+  acromesomelic_dysplasia_maroteaux -->|"correlates_with (A)"| limb_segment_proportion
+  laron_syndrome -->|"correlates_with (A)"| limb_segment_proportion
+  celiac_disease_growth -->|"correlates_with (B)"| catch_down_growth
+  juvenile_idiopathic_arthritis_growth -->|"correlates_with (C)"| growth_velocity_curve
+  irradiation_growth_plate_damage -->|"correlates_with (C)"| sitting_height_ratio
+  mucopolysaccharidosis_growth -->|"correlates_with (B)"| growth_velocity_curve
+  marfan_syndrome -->|"correlates_with (C)"| limb_segment_proportion
+  ift80_protein --x|"inhibits (D)"| articular_cartilage
+  growth_velocity_curve -->|"correlates_with (B)"| growth_velocity_longitudinal
+  growth_velocity_curve -->|"correlates_with (A)"| peak_height_velocity
+  growth_velocity_curve -->|"correlates_with (B)"| site_specific_growth_rate
+  icp_growth_model -->|"correlates_with (D)"| pubertal_growth_spurt
+  icp_growth_model -.->|"hypothesized_link (speculative)"| growth_velocity_longitudinal
+  preece_baines_model -->|"correlates_with (A)"| peak_height_velocity
+  jpa2_model -->|"correlates_with (D)"| peak_height_velocity
+  sitar_model -->|"correlates_with (A)"| peak_height_velocity
+  mid_parental_target_height -->|"correlates_with (A)"| adult_height_attainment
+  target_height_predictive_sd -->|"correlates_with (B)"| adult_height_attainment
+  canalization_growth -->|"correlates_with (B)"| catch_up_growth
+  canalization_growth -.->|"hypothesized_link (speculative)"| delayed_senescence_hypothesis
+  catch_down_growth -->|"correlates_with (C)"| catch_up_growth
+  sitting_height_ratio -->|"correlates_with (B)"| vertebral_growth_plate
+  sitting_height_ratio -->|"correlates_with (A)"| site_specific_growth_rate
+  limb_segment_proportion -->|"correlates_with (C)"| proximal_humerus_plate
+  limb_segment_proportion -->|"correlates_with (C)"| distal_radius_plate
+  body_proportion_development -->|"correlates_with (B)"| site_specific_growth_rate
+  height_sds_z_score -->|"required_for (A)"| remaining_growth_prediction
+  cdc_growth_reference -->|"required_for (A)"| remaining_growth_prediction
+  who_growth_standard -->|"correlates_with (A)"| growth_velocity_longitudinal
+  infancy_growth_nutrition_dependence -->|"correlates_with (C)"| growth_velocity_longitudinal
+  mini_puberty_infancy -->|"correlates_with (B)"| testosterone_hormone
+  mini_puberty_infancy -->|"correlates_with (C)"| igf1_systemic
+  dental_development_clock -->|"correlates_with (A)"| bone_age
+  tooth_mineralization_stages -->|"correlates_with (B)"| bone_age
+  skeletal_muscle_growth -->|"correlates_with (B)"| physeal_stress_in_vivo
+  muscle_bone_mechanical_coupling -->|"correlates_with (B)"| mechanical_modulation_growth
+  muscle_bone_mechanical_coupling -.->|"hypothesized_link (speculative)"| physeal_stress_in_vivo
+  satellite_cell -.->|"hypothesized_link (speculative)"| resting_zone
+  muscle_hypertrophy_vs_hyperplasia -.->|"hypothesized_link (speculative)"| hypertrophic_volume_increase
+  myostatin_mstn -.->|"hypothesized_link (speculative)"| mechanical_modulation_growth
+  activin_receptor_2b -.->|"hypothesized_link (speculative)"| mechanical_modulation_growth
+  craniofacial_growth -->|"correlates_with (C)"| bone_age
+  cranial_base_synchondrosis -->|"correlates_with (A)"| bone_age
+  cranial_base_synchondrosis -->|"precedes (B)"| epiphyseal_fusion
+  suture_fusion_timing -.->|"hypothesized_link (speculative)"| epiphyseal_fusion
+  mandibular_condylar_cartilage -.->|"hypothesized_link (speculative)"| mechanical_modulation_growth
+  growth_velocity_curve -->|"correlates_with (A)"| sex_difference_fusion_timing
+  growth_velocity_curve -->|"precedes (B)"| growth_cessation
+  articular_cartilage -->|"correlates_with (B)"| distal_femur_plate
+  growth_velocity_curve -.->|"hypothesized_link (speculative)"| hypertrophic_volume_increase
+  canalization_growth -->|"correlates_with (B)"| neuroendocrine_catchup_hypothesis
+  canalization_growth -.->|"hypothesized_link (speculative)"| clonal_exhaustion
+  dental_development_clock -->|"correlates_with (B)"| growth_hormone
+  brain_growth_trajectory -->|"correlates_with (A)"| pubertal_growth_spurt
+  muscle_bone_mechanical_coupling -->|"correlates_with (B)"| appositional_growth
+  dxa_body_composition -->|"required_for (B)"| muscle_bone_mechanical_coupling
