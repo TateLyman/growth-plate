@@ -1,100 +1,130 @@
 id: igf1_gh_combination_therapy
 name: Combined rhGH plus rhIGF-1 therapy
-aliases: [GH/IGF-1 combination, dual axis therapy]
+aliases:
+- GH/IGF-1 combination
+- dual axis therapy
 type: intervention
 layer: L12
 stub: false
-summary: |
-  Giving recombinant GH and recombinant IGF-1 together is the direct human test of whether
+summary: 'Giving recombinant GH and recombinant IGF-1 together is the direct human test of whether
+
   the growth plate responds to GH and to IGF-1 through separable mechanisms, or whether
-  IGF-1 is simply GH's messenger. If IGF-1 were purely downstream, adding it to a full GH
+
+  IGF-1 is simply GH''s messenger. If IGF-1 were purely downstream, adding it to a full GH
+
   dose should add nothing. A six-year randomised, multicentre, open-label dose-selection
+
   trial (NCT00572156, n=106) tested rhGH 45 ug/kg/day alone against rhGH 45 plus rhIGF-1 at
+
   50, 100 or 150 ug/kg/day in children with short stature and IGF-1 deficiency. The posted
+
   year-1 mean height velocities were 9.3 cm/yr (SD 1.7) for rhGH alone, 10.1 (1.3) with
+
   50 ug/kg rhIGF-1, 9.7 (2.5) with 100 and 11.2 (2.1) with 150 - a dose-related increment
+
   of roughly 1-2 cm/yr over GH alone, non-monotonic across the middle dose. The same rank
+
   order persisted at years 2-4 with the gaps narrowing (year 4: 7.7 vs 8.1, 8.4, 8.3 cm/yr).
+
   The trial was then terminated for "strategic reasons", so it never reached the adult
+
   height endpoint it was designed for. The combination therefore shows a real but
+
   diminishing incremental effect that was never converted into a height outcome, and the
+
   clean answer to the separability question was lost to a commercial decision rather than
+
   to biology.
+
+  '
 quantitative:
-  - parameter: year-1 mean height velocity, rhGH 45 ug/kg/day alone
-    value: '9.3'
-    unit: cm/yr
-    conditions: NCT00572156, children with short stature associated with IGF-1 deficiency, open-label randomised
-    species: human
-    source_ref: nct00572156
-    uncertainty: SD 1.7
-  - parameter: year-1 mean height velocity, rhGH 45 plus rhIGF-1 150 ug/kg/day
-    value: '11.2'
-    unit: cm/yr
-    conditions: same trial, highest combination arm
-    species: human
-    source_ref: nct00572156
-    uncertainty: SD 2.1
-  - parameter: year-1 mean height velocity, rhGH 45 plus rhIGF-1 50 and 100 ug/kg/day
-    value: 10.1 and 9.7
-    unit: cm/yr
-    conditions: same trial; the 100 ug/kg arm is below the 50 ug/kg arm, so the dose-response is non-monotonic at year 1
-    species: human
-    source_ref: nct00572156
-    uncertainty: SD 1.3 and 2.5 respectively
-  - parameter: year-4 mean height velocity across the four arms
-    value: 7.7 / 8.1 / 8.4 / 8.3
-    unit: cm/yr
-    conditions: GH alone / +50 / +100 / +150 ug/kg rhIGF-1; the between-arm spread narrows from ~1.9 cm/yr at year 1 to ~0.7 cm/yr at year 4
-    species: human
-    source_ref: nct00572156
-    uncertainty: SD 0.9 / 0.8 / 1.2 / 1.3
-  - parameter: participants randomised before termination
-    value: '106'
-    unit: participants
-    conditions: six-year trial terminated for strategic reasons; adult height never reported
-    species: human
-    source_ref: nct00572156
-    uncertainty: not applicable (count)
+- parameter: year-1 mean height velocity, rhGH 45 ug/kg/day alone
+  value: '9.3'
+  unit: cm/yr
+  conditions: NCT00572156, children with short stature associated with IGF-1 deficiency, open-label randomised
+  species: human
+  source_ref: nct00572156
+  uncertainty: SD 1.7
+- parameter: year-1 mean height velocity, rhGH 45 plus rhIGF-1 150 ug/kg/day
+  value: '11.2'
+  unit: cm/yr
+  conditions: same trial, highest combination arm
+  species: human
+  source_ref: nct00572156
+  uncertainty: SD 2.1
+- parameter: year-1 mean height velocity, rhGH 45 plus rhIGF-1 50 and 100 ug/kg/day
+  value: 10.1 and 9.7
+  unit: cm/yr
+  conditions: same trial; the 100 ug/kg arm is below the 50 ug/kg arm, so the dose-response is non-monotonic
+    at year 1
+  species: human
+  source_ref: nct00572156
+  uncertainty: SD 1.3 and 2.5 respectively
+- parameter: year-4 mean height velocity across the four arms
+  value: 7.7 / 8.1 / 8.4 / 8.3
+  unit: cm/yr
+  conditions: GH alone / +50 / +100 / +150 ug/kg rhIGF-1; the between-arm spread narrows from ~1.9 cm/yr
+    at year 1 to ~0.7 cm/yr at year 4
+  species: human
+  source_ref: nct00572156
+  uncertainty: SD 0.9 / 0.8 / 1.2 / 1.3
+- parameter: participants randomised before termination
+  value: '106'
+  unit: participants
+  conditions: six-year trial terminated for strategic reasons; adult height never reported
+  species: human
+  source_ref: nct00572156
+  uncertainty: not applicable (count)
 localization:
-  - "human growth plate: both agents presumed to act on chondrocytes; no tissue-level partition measured"
+- 'human growth plate: both agents presumed to act on chondrocytes; no tissue-level partition measured'
 human_evidence: direct
-human_evidence_note: >-
-  A randomised multi-arm dose-selection trial in 106 children with posted height-velocity
+human_evidence_note: A randomised multi-arm dose-selection trial in 106 children with posted height-velocity
   results by arm and year.
-species_basis: [human]
+species_basis:
+- human
 translation_risk: low
-translation_risk_reason: >-
-  Entirely human data. The unresolved part is not species translation but early
-  termination: velocity was measured for four years and adult height never.
+translation_risk_reason: 'Entirely human data. The unresolved part is not species translation but early
+  termination: velocity was measured for four years and adult height never.'
 confidence: B
 claim_grades:
-  - claim: Adding rhIGF-1 to a full rhGH dose increases first-year height velocity by roughly 1-2 cm/yr.
-    grade: B
-    basis: Randomised open-label multi-arm trial with posted results, n=106, but non-monotonic across doses and no confidence intervals posted.
-  - claim: The incremental effect of added rhIGF-1 wanes with continued treatment.
-    grade: C
-    basis: Between-arm spread narrows from ~1.9 cm/yr at year 1 to ~0.7 cm/yr at year 4 in the posted data; not formally tested for interaction.
-  - claim: Combination therapy increases adult height.
-    grade: X
-    basis: The trial was designed to answer this over six years and was terminated for strategic reasons; no adult-height data exist.
+- claim: Adding rhIGF-1 to a full rhGH dose increases first-year height velocity by roughly 1-2 cm/yr.
+  grade: B
+  basis: Randomised open-label multi-arm trial with posted results, n=106, but non-monotonic across doses
+    and no confidence intervals posted.
+- claim: The incremental effect of added rhIGF-1 wanes with continued treatment.
+  grade: C
+  basis: Between-arm spread narrows from ~1.9 cm/yr at year 1 to ~0.7 cm/yr at year 4 in the posted data;
+    not formally tested for interaction.
+- claim: Combination therapy increases adult height.
+  grade: X
+  basis: The trial was designed to answer this over six years and was terminated for strategic reasons;
+    no adult-height data exist.
 key_refs:
-  - ref_id: nct00572156
-    year: 2012
-    type: trial_registry
-    one_line_finding: Six-year randomised trial TERMINATED for strategic reasons; posted year-1 HV 9.3 / 10.1 / 9.7 / 11.2 cm/yr across GH-alone and three combination arms.
-  - ref_id: ramonkrauel2026
-    pmid: '40626687'
-    first_author: Ramon-Krauel M
-    year: 2026
-    type: primary
-    one_line_finding: rhIGF-1 monotherapy near-adult height data against which any combination benefit would have to be judged.
-  - ref_id: martn2026
-    pmid: '42187530'
-    first_author: Martín Pérez IM
-    year: 2026
-    type: systematic_review
-    one_line_finding: Systematic review of paediatric hormonal growth therapies; combination GH/IGF-1 does not appear among established regimens.
-open_questions: [g_l12b_011, g_l12b_011]
+- ref_id: nct00572156
+  year: 2012
+  type: trial_registry
+  one_line_finding: Six-year randomised trial TERMINATED for strategic reasons; posted year-1 HV 9.3 /
+    10.1 / 9.7 / 11.2 cm/yr across GH-alone and three combination arms.
+- ref_id: ramonkrauel2026
+  pmid: '40626687'
+  first_author: Ramon-Krauel M
+  year: 2026
+  type: primary
+  one_line_finding: rhIGF-1 monotherapy near-adult height data against which any combination benefit would
+    have to be judged.
+- ref_id: martn2026
+  pmid: '42187530'
+  first_author: Martín Pérez IM
+  year: 2026
+  type: systematic_review
+  one_line_finding: Systematic review of paediatric hormonal growth therapies; combination GH/IGF-1 does
+    not appear among established regimens.
+open_questions:
+- g_l12b_011
+- g_l12b_011
 contradicts: []
 last_verified: '2026-08-05'
+termination_reason: strategic
+termination_note: NCT00572156, a 6-year GH+IGF-1 trial, terminated for "strategic reasons" while posting
+  year-1 height velocities of 9.3/10.1/9.7/11.2 cm/yr. NOT evidence about biology - a 6-year dataset with
+  positive interim signal exists and appears unanalysed for this question. P1 access item.

@@ -1353,3 +1353,46 @@ searches:
     review of allometric theory (39644458), a weight-for-height scaling analysis that fits body-shape rather than organ exponents
     (39024324) and heart-weight normalisation methodology (41844692). No source fits organ-by-organ postnatal allometric exponents
     to measured human organ mass across development.
+- gap_id: g_mr002_h2
+  database: Europe PMC
+  exact_query_string: vosoritide AND achondroplasia AND (randomi* OR "growth velocity")
+  filters: resultType=core, pageSize=12, no date limit
+  date_run: '2026-08-05'
+  hit_count: 134
+  screened_count: 12
+  reason_none_qualified: No hit reports a measured drug concentration inside growth plate tissue for any CNP analogue in any
+    species. Population-PK and weight-band dosing papers model PLASMA exposure only. This is the same null recorded as g_l12pharm_002
+    and now promoted to a competing mechanistic hypothesis rather than a footnote.
+- gap_id: g_mr002_h3
+  database: Europe PMC
+  exact_query_string: vosoritide AND (TITLE:"dose-escalation" OR TITLE:"phase 2" OR TITLE:"dose escalation") AND achondroplasia
+  filters: resultType=core, pageSize=6
+  date_run: '2026-08-05'
+  hit_count: 6
+  screened_count: 6
+  reason_none_qualified: Retrieved the navepegritide four-arm dose escalation (ACcomplisH) and a vosoritide PK/PD analysis,
+    both of which were promoted to primary evidence. Neither states the basis on which the approved vosoritide dose was selected.
+    That basis lives in the FDA clinical pharmacology review, which was not retrievable as a PDF and is queued P1.
+- gap_id: g_mr002_h1
+  database: Europe PMC
+  exact_query_string: infigratinib AND (G380R OR "transmembrane") AND FGFR3
+  filters: resultType=core, pageSize=8
+  date_run: '2026-08-05'
+  hit_count: 284
+  screened_count: 8
+  reason_none_qualified: Run while investigating the allele-mismatch problem; no hit reports growth-plate cGMP or PKG-II at
+    defined receptor occupancy. Recorded here because the same screen established that published FGFR3-inhibitor potency data
+    are on KINASE-DOMAIN alleles (K650E, K650M, N540K/hypochondroplasia), not the transmembrane G380R of achondroplasia.
+- gap_id: g_mr002_allele
+  database: Europe PMC
+  exact_query_string: (FGFR3 AND G380R) AND (IC50 OR "inhibitor potency" OR "kinase assay")
+  filters: resultType=core, pageSize=8, no date limit
+  date_run: '2026-08-05'
+  hit_count: 29
+  screened_count: 8
+  reason_none_qualified: 'No hit reports an IC50 or cellular potency value against G380R-activated FGFR3. Screened hits are:
+    infigratinib in hypochondroplasia (N540K, kinase-domain); recifercept characterisation (a decoy, not a kinase inhibitor);
+    FGFR3 signalling biophysics (TIRF/GRB2 recruitment, no inhibitor potency); ER-stress processing of transmembrane receptors;
+    and oncology resistance work. A companion query "infigratinib AND (G380R OR transmembrane) AND FGFR3" returned 284 hits
+    of which the top 8 screened likewise report no G380R potency value. Patents and regulatory submissions were not searchable
+    here and are the most likely repository - flagged P1.'

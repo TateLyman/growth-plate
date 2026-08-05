@@ -53,5 +53,12 @@ key_refs:           # REQUIRED (STUB_EXEMPT). >=1 entry
 
 open_questions: []  # list of gap_ids in gaps/gaps.yaml
 contradicts: []     # node_ids or ref_ids where literature disagrees
+termination_reason: # intervention nodes only. vocab.termination_reason.
+                    # ONLY `scientific_null` may be cited as negative evidence about
+                    # biology. `strategic` and `logistical` stops carry no evidential
+                    # content, and a node treating one as a negative result is defective.
+termination_note:   # required when termination_reason is set: the whyStopped text and
+                    # any posted results that survive the termination
+
 pending_source:     # ref_id queued in sources/access_queue.md, if paywall-blocked
 last_verified:      # REQUIRED. ISO date YYYY-MM-DD
