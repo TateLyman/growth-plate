@@ -1,9 +1,75 @@
 id: pthrp_protein
 name: PTHrP
-type: protein
-layer: L3
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - PTHLH
+- parathyroid hormone-related protein
+type: protein
+layer: L3
+stub: false
+summary: |
+  PTHrP is encoded by PTHLH and secreted by periarticular/resting-zone chondrocytes and perichondrium.
+  Acting through PTH1R it holds chondrocytes in the proliferative pool and delays hypertrophy; mouse
+  Pthlh-null animals die at birth with markedly accelerated chondrocyte hypertrophy and premature
+  ossification (Lee 1996), and the same acceleration occurs cell-autonomously in PTH1R-null chondrocytes
+  transplanted into wild-type limbs (Chung 1998). Downstream, PTHrP-PTH1R signalling represses
+  hypertrophy by phosphorylation-dependent nuclear retention of HDAC4 and HDAC5 acting on MEF2
+  (Nishimori 2019), and by inducing ZFP521 and ECM1 (Correa 2010; Kong 2016). Human PTHLH deletions and
+  point mutations cause autosomal dominant brachydactyly type E with short stature, establishing that
+  human skeletal growth is PTHrP dose-sensitive (Klopocki 2010). A measured PTHrP protein gradient has
+  been demonstrated in mouse mandibular condylar cartilage (Tsutsumi-Arai 2024), but no equivalent
+  gradient measurement exists for the human long-bone growth plate.
+localization:
+- 'mouse periarticular chondrocytes and RZ: confirmed by ISH (vortkamp1996)'
+- 'mouse PERI: confirmed (lee1996)'
+- 'human RZ: unconfirmed'
+human_evidence: indirect
+human_evidence_note: Heterozygous PTHLH loss-of-function causes brachydactyly type E with short stature;
+  no direct measurement of PTHrP in human growth plate zones.
+species_basis:
+- mouse
+- chicken
+- human
+translation_risk: moderate
+translation_risk_reason: Mechanism is murine; human evidence is a dominant monogenic dosage phenotype
+  without tissue-level confirmation.
+confidence: B
+key_refs:
+- ref_id: lee1996
+  pmid: '8895385'
+  first_author: Lee K
+  year: 1996
+  type: primary
+  one_line_finding: PTHrP delays terminal differentiation; Pthlh-null mice show premature hypertrophy.
+- ref_id: chung1998
+  pmid: '9789035'
+  first_author: Chung UI
+  year: 1998
+  type: primary
+  one_line_finding: PTH1R-null chondrocytes hypertrophy prematurely cell-autonomously.
+- ref_id: nishimori2019
+  pmid: '30843886'
+  first_author: Nishimori S
+  year: 2019
+  type: primary
+  one_line_finding: PTHrP represses hypertrophy through HDAC4 and HDAC5.
+- ref_id: klopocki2010
+  pmid: '20170896'
+  first_author: Klopocki E
+  year: 2010
+  type: primary
+  one_line_finding: PTHLH deletions and point mutations cause human brachydactyly type E.
+- ref_id: correa2010
+  pmid: '20951345'
+  first_author: Correa D
+  year: 2010
+  type: primary
+  one_line_finding: Zfp521 is a direct PTHrP target effector in growth plate chondrocytes.
+- ref_id: tsutsumiarai2024
+  pmid: '38058151'
+  first_author: Tsutsumi-Arai C
+  year: 2024
+  type: primary
+  one_line_finding: A spatial PTHrP gradient drives condylar chondrogenesis via Runx2.
+open_questions:
+- g_l3core_001
+last_verified: '2026-08-05'

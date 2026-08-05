@@ -75,10 +75,12 @@ def main():
     ap.add_argument("--xgrade", action="store_true")
     ap.add_argument("--gapcheck", action="store_true")
     ap.add_argument("--unsourced", action="store_true")
+    ap.add_argument("--provenance", action="store_true")
     ap.add_argument("--all", action="store_true")
     a = ap.parse_args()
     if a.all:
         a.species = a.hedging = a.xgrade = a.gapcheck = a.unsourced = True
+        a.provenance = True
 
     nodes = load_nodes()
     full = {k: v for k, v in nodes.items() if not v.get("stub")}
@@ -213,6 +215,31 @@ def main():
                           f"ABSTRACT ONLY ({q.get('source_ref')})")
                     w += 1
         print(f"  ({w} weak rows)\n")
+
+    if a.provenance:
+        print("=== REFERENCE PROVENANCE (anti-fabrication) ===")
+        SIG = {"open_access", "has_full_text", "cited_by", "added", "is_preprint"}
+        allrefs = dict(refs)
+        for sp in glob.glob(os.path.join(ROOT, "sources", "shards", "*.yaml")):
+            allrefs.update((load(sp, {}) or {}).get("refs", {}) or {})
+        machine = manual = 0
+        hand = []
+        for k, v in allrefs.items():
+            if not isinstance(v, dict):
+                continue
+            if v.get("verify_by_hand"):
+                manual += 1
+            elif SIG & set(v.keys()):
+                machine += 1
+            else:
+                hand.append(k)
+        print(f"  machine-populated by addref.py from a live record : {machine}")
+        print(f"  manual / non-indexed, flagged verify_by_hand      : {manual}")
+        print(f"  HAND-WRITTEN with no machine signature            : {len(hand)}")
+        for k in hand[:20]:
+            print(f"    x {k}  <- provenance unverifiable, re-add via addref.py")
+        findings += len(hand)
+        print()
 
     print(f"TOTAL MECHANISED FINDINGS: {findings}")
     return 0
