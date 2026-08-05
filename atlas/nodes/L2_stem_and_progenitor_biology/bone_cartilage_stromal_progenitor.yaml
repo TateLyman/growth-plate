@@ -1,9 +1,79 @@
 id: bone_cartilage_stromal_progenitor
-name: Bone-cartilage-stromal progenitor
-type: cell_type
-layer: L2
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Bone, cartilage and stromal progenitor (BCSP)
 aliases:
 - BCSP
+- pre-BCSP
+- CD105+ skeletal progenitor
+type: cell_type
+summary: 'The BCSP is the multipotent but non-self-renewing tier immediately below the mSSC: CD45-Ter119-Tie2-AlphaV+Thy-6C3-CD105+,
+  with the CD105-CD200- pre-BCSP as an intermediate. Clonally it produces chondrocytes, osteogenic cells
+  and at least three stromal subsets, but it does not regenerate the mSSC, which is the operational difference
+  between a progenitor and a stem cell in this scheme. The earlier CD45-Tie2-AlphaV+CD105+Thy1- fetal
+  population recruits host vasculature and builds an ectopic ossicle containing a functional long-term
+  HSC niche when placed under the kidney capsule, which is the origin of the claim that endochondral ossification
+  is required to construct a marrow niche. In the growth plate, 27.4% of PTHrP-mCherry+ resting chondrocytes
+  carry the BCSP phenotype and 53.4% of BCSPs are PTHrP-mCherry+, so the immunophenotypic tiers and the
+  anatomical zones cut across each other rather than nesting cleanly.'
+quantitative:
+- parameter: PTHrP-mCherry+ growth plate cells with BCSP (CD105+) phenotype
+  value: '27.4'
+  unit: '%'
+  conditions: P9 mouse, CD45-Ter119-CD31-CD51+CD90- gate
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: SD 16.5
+- parameter: BCSPs that are PTHrP-mCherry+
+  value: '53.4'
+  unit: '%'
+  conditions: P9 mouse growth plate
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: SD 16.9
+- parameter: pre-BCSP fraction of PTHrP-mCherry+ cells
+  value: '23.4'
+  unit: '%'
+  conditions: P9 mouse growth plate, CD105-CD200- gate
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: SD 8.4
+localization:
+- 'mouse growth plate and metaphysis: confirmed by FACS (chan2013, mizuhashi2018)'
+- 'human fetal bone: hBCSP defined as PDPN+CD146-CD73+CD164- (chan2018)'
+human_evidence: indirect
+human_evidence_note: A human BCSP-equivalent tier was defined by surface phenotype and renal-capsule transplantation,
+  not by in-situ observation.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: Mouse and human BCSP tiers are defined by non-overlapping marker sets and both
+  are assayed ectopically.
+confidence: C
+key_refs:
+- ref_id: chan2013
+  pmid: '23858471'
+  doi: 10.1073/pnas.1310212110
+  first_author: Chan CK
+  year: 2013
+  type: primary_abstract_only
+  one_line_finding: Defines the BCSP as a clonal, lineage-restricted bone/cartilage/stroma progenitor
+- ref_id: chan2009
+  pmid: '19078959'
+  doi: 10.1038/nature07547
+  first_author: Chan CK
+  year: 2009
+  type: primary_abstract_only
+  one_line_finding: CD105+Thy1- fetal skeletal progenitors build ectopic bone with a functional HSC niche
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Quantifies the overlap between PTHrP+ resting chondrocytes and the mSSC/pre-BCSP/BCSP
+    tiers
+open_questions:
+- g_l2stem_004
+layer: L2
+stub: false
+last_verified: '2026-08-05'

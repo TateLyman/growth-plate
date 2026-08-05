@@ -1,9 +1,94 @@
 id: mouse_skeletal_stem_cell_hierarchy
-name: Mouse skeletal stem cell hierarchy (Chan/Longaker)
-type: hypothesis
-layer: L2
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Mouse skeletal stem cell (mSSC) hierarchy
 aliases:
-- mSSC
+- Chan-Longaker mSSC scheme
+- AlphaV+ skeletal hierarchy
+type: hypothesis
+summary: 'Dissociated mouse femoral growth plate was fractionated on CD45, Ter119, Tie2 and AlphaV (CD51),
+  and the CD45-Ter119-Tie2-AlphaV+ compartment further split on CD105, Thy (CD90), 6C3 and CD200 into
+  eight subpopulations. The apex population, CD45- Ter119- Tie2- AlphaV(CD51)+ Thy(CD90)- 6C3- CD105-
+  CD200+, generates all seven other subpopulations in a linear sequence both in vitro (25-day culture
+  then re-fractionation) and in vivo (renal capsule transplantation, explanted at one month), and single
+  sorted cells regenerate the full set including on secondary single-cell replating - the formal self-renewal
+  plus multipotency test. Its immediate descendants are pre-BCSP (CD105-CD200-) and BCSP (CD105+). The
+  hierarchy explicitly excludes fat, muscle and fibroblast output, which is where it collides with the
+  CD146+/MSC literature. Two structural caveats: transplanted single mSSCs engraft poorly without 5,000
+  carrier cells, so ''multipotency'' is measured in a supported niche; and the same CD200+CD105-Thy-6C3-
+  immunophenotype is carried by the CTSK-lineage periosteal stem cell, meaning the surface panel alone
+  does not specify anatomical identity.'
+quantitative:
+- parameter: Subpopulations resolved within the CD45-Ter119-Tie2-AlphaV+ compartment
+  value: '8'
+  unit: populations
+  conditions: mouse long bone, rib and sternum, FACS
+  species: mouse
+  source_ref: chan2015
+  uncertainty: not applicable
+- parameter: Carrier cells co-transplanted with a single mSSC for renal capsule engraftment
+  value: '5000'
+  unit: unsorted RFP+ cells
+  conditions: mouse renal capsule, 2-week explant
+  species: mouse
+  source_ref: chan2015
+  uncertainty: not reported
+- parameter: mSSCs co-expressing BMP2 and BMPR1a
+  value: '28'
+  unit: '% of mSSCs'
+  conditions: single-cell RNA sequencing, mouse
+  species: mouse
+  source_ref: chan2015
+  uncertainty: not reported
+localization:
+- 'mouse growth plate: confirmed, high frequency of AlphaV+ cells (chan2015)'
+- 'mouse fracture callus: confirmed expansion (chan2015)'
+- 'mouse periosteum: the same CD200+CD105- phenotype is present but Ctsk-lineage (debnath2018)'
+human_evidence: absent
+human_evidence_note: 'The mouse marker panel does not transfer: the human SSC was defined with an entirely
+  different set of antigens (PDPN, CD146, CD73, CD164).'
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: 6C3 and Thy1.1/1.2 have no directly usable human equivalents in this assay, and
+  CD105 and CD200 do not partition human skeletal progenitors the same way; the human scheme had to be
+  built de novo from transcriptional homology.
+confidence: C
+key_refs:
+- ref_id: chan2015
+  pmid: '25594184'
+  doi: 10.1016/j.cell.2014.12.002
+  first_author: Chan CK
+  year: 2015
+  type: primary
+  one_line_finding: Defines the mSSC as CD45- Ter119- Tie2- AlphaV(CD51)+ Thy(CD90)- 6C3- CD105- CD200+
+    and demonstrates single-cell self-renewal and multilineage output
+- ref_id: chan2013
+  pmid: '23858471'
+  doi: 10.1073/pnas.1310212110
+  first_author: Chan CK
+  year: 2013
+  type: primary_abstract_only
+  one_line_finding: Defines the downstream BCSP as a clonal, lineage-restricted skeletal progenitor
+- ref_id: chan2009
+  pmid: '19078959'
+  doi: 10.1038/nature07547
+  first_author: Chan CK
+  year: 2009
+  type: primary_abstract_only
+  one_line_finding: Earlier CD105+Thy1- fetal progenitor that forms ectopic bone and an HSC niche
+- ref_id: ambrosi2021
+  pmid: '34381212'
+  doi: 10.1038/s41586-021-03795-7
+  first_author: Ambrosi TH
+  year: 2021
+  type: primary_abstract_only
+  one_line_finding: Aged mSSCs lose osteochondral potential and generate an inflammatory niche
+open_questions:
+- g_l2stem_004
+- g_l2stem_009
+contradicts:
+- human_skeletal_stem_cell
+- periosteal_stem_cell
+- marrow_stromal_cell
+layer: L2
+stub: false
+last_verified: '2026-08-05'

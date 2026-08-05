@@ -1,7 +1,89 @@
 id: lepr_positive_stromal_cell
-name: LepR+ stromal cell
+name: LepR+ bone marrow stromal cell
+aliases:
+- LepR+ MSC
+- leptin receptor-expressing stromal cell
 type: cell_type
-layer: L2
-stub: true
+summary: 'LepR marks roughly 0.3% of mouse bone marrow cells; about 10% of these are CFU-F and they account
+  for 94% of all marrow CFU-F, making LepR the highest-purity prospective marker for marrow stroma. LepR+
+  cells are Scf-GFP+, Cxcl12-DsRed-high and Nestin-GFP-low, and form bone, cartilage and adipocytes in
+  culture and on transplantation. Their in vivo behaviour is strongly age-restricted: they contribute
+  little or nothing to developing bone or to growth plate cartilage, and become the main source of osteoblasts
+  only in adult mice - after adolescence, according to dual-recombinase fate mapping, where the dominant
+  osteoblast source switches from chondrocytes to LepR+ stroma and the switch begins in the diaphysis
+  and spreads to the metaphysis. This is why LepR+ cells cannot be the growth plate stem cell: they occupy
+  the wrong compartment at the wrong time. Their adipogenic competence also puts them on the opposite
+  side of the fat-or-no-fat disagreement from the mSSC and Grem1+ schemes.'
+quantitative:
+- parameter: LepR+ cells in mouse bone marrow
+  value: '0.3'
+  unit: '% of bone marrow cells'
+  conditions: adult mouse, flow cytometry
+  species: mouse
+  source_ref: zhou2014
+  uncertainty: approximate value as reported
+- parameter: CFU-F frequency within LepR+ cells
+  value: '10'
+  unit: '%'
+  conditions: adult mouse marrow
+  species: mouse
+  source_ref: zhou2014
+  uncertainty: approximate value as reported
+- parameter: Share of total marrow CFU-F that is LepR+
+  value: '94'
+  unit: '%'
+  conditions: adult mouse marrow
+  species: mouse
+  source_ref: zhou2014
+  uncertainty: approximate value as reported
+- parameter: Age at which LepR+ cells become the dominant osteoblast source
+  value: post-adolescent
+  unit: developmental stage
+  conditions: dual Cre/Dre recombinase fate mapping, mouse
+  species: mouse
+  source_ref: shu2021
+  uncertainty: transition begins in diaphysis, spreads to metaphysis
+localization:
+- 'mouse perisinusoidal marrow: confirmed by LepR-cre lineage (zhou2014)'
+- 'mouse growth plate cartilage: absent - LepR+ cells do not contribute to developing chondrocytes (worthley2015
+  citing zhou2014)'
 human_evidence: absent
+human_evidence_note: LepR lineage tracing is impossible in humans; no human LepR+ stromal population has
+  been functionally traced.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Defined entirely by mouse Cre lineage tracing; the human marrow stromal equivalent
+  is usually assigned to CD146+ cells by a different assay.
+confidence: C
+key_refs:
+- ref_id: zhou2014
+  pmid: '24953181'
+  doi: 10.1016/j.stem.2014.06.008
+  first_author: Zhou BO
+  year: 2014
+  type: primary_abstract_only
+  one_line_finding: LepR marks 0.3% of marrow cells containing 94% of CFU-F and is the main source of
+    adult bone
+- ref_id: shu2021
+  pmid: '34499868'
+  doi: 10.1016/j.stem.2021.08.010
+  first_author: Shu HS
+  year: 2021
+  type: primary_abstract_only
+  one_line_finding: Osteoblast origin switches from chondrocytes to LepR+ stroma at adolescence
+- ref_id: worthley2015
+  pmid: '25594183'
+  doi: 10.1016/j.cell.2014.11.042
+  first_author: Worthley DL
+  year: 2015
+  type: primary
+  one_line_finding: Reports that LepR+ perisinusoidal cells never contribute to normal developing chondrocytes
+open_questions:
+- g_l2stem_004
+contradicts:
+- gremlin1_lineage_cell
+- mouse_skeletal_stem_cell_hierarchy
+layer: L2
+stub: false
 last_verified: '2026-08-05'
