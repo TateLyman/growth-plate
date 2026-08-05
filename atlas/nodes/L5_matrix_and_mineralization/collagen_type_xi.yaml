@@ -53,17 +53,25 @@ quantitative:
   source_ref: eyre2002
   uncertainty: described as roughly equal amounts
   value_unverified: true
+- parameter: Fibril diameter carrying collagen XI in human growth plate
+  value: <25
+  unit: nm
+  conditions: human juvenile rib growth plate immuno-EM; XI absent from thick fibrils
+  species: human
+  source_ref: keene1995
+  uncertainty: threshold as reported
 localization:
-- inside the cartilage collagen fibril, antigenically masked (mendler1989)
-- enriched in the thinnest pericellular fibrils (eyre2002)
-human_evidence: indirect
-human_evidence_note: Human COL11A1/COL11A2 mutations cause Stickler II, Marshall, fibrochondrogenesis
-  and OSMED; the fibril biochemistry is avian, bovine and murine.
+- 'human growth plate HZ (thin fibrils): collagen XI present (keene1995)'
+- 'human growth plate RZ (thick fibrils): collagen XI absent (keene1995)'
+- inside the cartilage collagen fibril, antigenically masked in chick sternum (mendler1989)
+human_evidence: direct
+human_evidence_note: Collagen XI has been immunolocalised ultrastructurally in human juvenile rib growth
+  plate, in addition to the human COL11A1/2 disease genetics.
 species_basis:
+- human
 - mouse
 - chicken
 - bovine
-- human
 - in_vitro_animal_cell
 translation_risk: moderate
 translation_risk_reason: Human disease genetics confirm the gene matters, but the quantitative fibril-assembly
@@ -100,6 +108,13 @@ key_refs:
   type: primary_abstract_only
   one_line_finding: In cho/cho (Col11a1-null) mouse cartilage alpha1(V) substitutes for alpha1(XI) and
     fibrils are abnormally thick
+- ref_id: keene1995
+  pmid: '7560887'
+  first_author: Keene DR
+  year: 1995
+  type: primary
+  one_line_finding: In human juvenile rib growth plate collagen XI is restricted to fibrils <25 nm; hypertrophic
+    zone fibrils are thin, resting zone fibrils thick, proliferative zone mixed
 open_questions:
 - g_l5matrix_003
 last_verified: '2026-08-05'

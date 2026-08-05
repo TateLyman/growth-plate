@@ -20,7 +20,12 @@ summary: 'Cartilage fibrils are not pure collagen II. They are heterotypic copol
   embryonic sternum and bovine/foetal cartilage by CNBr peptide and antibody quantitation; no equivalent
   quantitation exists for human physeal cartilage specifically, and mammalian fibrils are additionally
   heterogeneous, with decorin-bearing and collagen IX-bearing fibril subpopulations occupying different
-  territories of the same tissue.'
+  territories of the same tissue. Human physeal tissue has however been examined ultrastructurally: in
+  human juvenile rib growth plate collagen XI is confined to fibrils under 25 nm and is absent from thick
+  fibrils even after chaotropic disruption, while collagens II and IX decorate fibrils of all diameters
+  - and the thin fibrils are concentrated in the HYPERTROPHIC zone, the thick ones in the resting zone,
+  with a mixture in the proliferative zone. So the II:XI ratio in the human growth plate is zonally graded,
+  lowest (most XI-rich) where mineralization is about to occur.'
 quantitative:
 - parameter: Collagen II mass fraction of fibrillar collagen, young growth cartilage
   value: <=80
@@ -76,20 +81,37 @@ quantitative:
   species: in_vitro_animal_cell
   source_ref: blaschke2000
   uncertainty: described as uniform; SD not reported
+- parameter: Cartilage fibril diameter carrying collagen XI, human growth plate
+  value: <25
+  unit: nm
+  conditions: human juvenile rib growth plate, immunoelectron microscopy with anti-alpha1(XI) telopeptide
+    and N-terminal antibodies; XI absent from thick fibrils even after chaotropic disruption
+  species: human
+  source_ref: keene1995
+  uncertainty: threshold as reported; collagens II and IX present on fibrils of all sizes
+- parameter: Fibril diameter of adult permanent cartilage versus growth plate/fetal cartilage
+  value: 30-200 vs <25
+  unit: nm
+  conditions: TEM survey, human and bovine
+  species: multiple
+  source_ref: keene1995
+  uncertainty: ranges as reported
 localization:
-- 'chick sternal cartilage fibrils: collagens II, IX and XI colocalised in the same fibril, confirmed
-  by immuno-EM (mendler1989)'
-- 'mammalian cartilage: fibril subpopulations differ, some decorin-bearing and some collagen IX-bearing
-  (hagg1998)'
-- 'human physeal cartilage: stoichiometry unquantified'
+- 'human growth plate HZ: thin fibrils, collagen XI enriched (keene1995)'
+- 'human growth plate RZ: thick fibrils, collagen XI absent (keene1995)'
+- 'human growth plate PZ: mixture of thin and thick fibrils (keene1995)'
+- 'chick sternal cartilage fibrils: collagens II, IX and XI colocalised in the same fibril by immuno-EM
+  (mendler1989)'
+- 'mammalian cartilage: decorin-bearing and collagen IX-bearing fibril subpopulations are distinct (hagg1998)'
+- 'human physeal cartilage: mass stoichiometry unquantified'
 human_evidence: indirect
-human_evidence_note: Human data are restricted to adult articular cartilage proportions and to the chondrodysplasia
-  phenotypes of COL9A1/2/3 and COL11A1/2 mutations; no quantitation of fibril stoichiometry in human growth
-  plate exists.
+human_evidence_note: Collagen XI, IX and II have been localised ultrastructurally in human juvenile rib
+  growth plate by immuno-EM, establishing the zonal fibril-diameter pattern; the mass stoichiometry has
+  still not been quantified in human physeal tissue.
 species_basis:
+- human
 - chicken
 - bovine
-- human
 - in_vitro_animal_cell
 translation_risk: moderate
 translation_risk_reason: The stoichiometry itself is likely conserved (the same three genes cause chondrodysplasia
@@ -127,6 +149,13 @@ key_refs:
   type: primary
   one_line_finding: Decorin and collagen IX occupy biochemically distinct fibril subpopulations within
     the same cartilage
+- ref_id: keene1995
+  pmid: '7560887'
+  first_author: Keene DR
+  year: 1995
+  type: primary
+  one_line_finding: In human juvenile rib growth plate collagen XI is restricted to fibrils <25 nm; hypertrophic
+    zone fibrils are thin, resting zone fibrils thick, proliferative zone mixed
 open_questions:
 - g_l5matrix_003
 last_verified: '2026-08-05'
