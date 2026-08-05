@@ -80,6 +80,10 @@ nothing.
 upgrade, it is citation-stacking, and is rejected.**
 
 ```yaml
+# STEP 0 (precondition, MR-004 item 3): ref_2 MUST NOT already appear in the
+# node's key_refs. Three of the first ten rejections failed here - the proposed
+# 'replication' was a reference the node already cited, i.e. evidence already
+# priced into the original grade. Check novelty BEFORE assessing propositionality.
 - node_id:
   proposition_tested:     # ONE falsifiable sentence. If you cannot state it in one
                           # sentence, the node is making several claims and needs
@@ -101,6 +105,37 @@ upgrade, it is citation-stacking, and is rejected.**
 quantifies how thin genuinely replicated human evidence is in this field, which is a
 finding this atlas is positioned to make and most reviews are not.
 
+
+### Rejection pattern analysis (MR-004 item 3) — the stated tally was wrong
+
+The Phase 3 report claimed two patterns covering all ten rejections, with counts 6 and 2.
+That sums to 8, and MR-004 was right to challenge it. Re-reading all ten rejection rows
+gives **five** patterns, not two — and the largest one had not been named at all.
+
+| # | pattern | count | rejections |
+|---|---|---:|---|
+| **B** | **NO NEW REFERENCE — the candidate "replication" was ALREADY cited on the node** | **3** | `npr2_receptor`, `cnp_protein`, `pth1r_receptor` |
+| A | node's grade was set by a **different claim** than the second paper tests | 4 | `aggrecan_acan`, `ihh_protein`, `fgfr3_receptor`, `comp_protein` |
+| C | second source **not independent** of the first (curation/aggregation) | 1 | `spondyloepiphyseal_dysplasia` (ClinGen curates the same primary) |
+| D | evidence **quality** insufficient — lone primary, remaining refs review/abstract-only | 1 | `collagen_type_ii` |
+| E | **species or developmental-window mismatch** between the two sources | 1 | `growth_plate_senescence` (rabbit; human methylome at 7–21 post-conception weeks) |
+
+**Pattern B is the unanticipated one, it is the most common, and it is the most
+informative.** In three of ten attempts the proposed "second primary" was a reference the
+node already cited. That is not a weak replication — it is **double-counting evidence
+already priced into the original grade**. An upgrade granted on pattern B would have
+inflated a grade using nothing new whatsoever, and no propositional test would have caught
+it, because the proposition genuinely is supported by that reference. What fails is
+*novelty*, not relevance.
+
+**Rule amendment, now in force:** before assessing propositional independence, check that
+ref_2 is **not already present in the node's `key_refs`**. This is a cheap mechanical
+precondition and it screens the single largest failure mode. Added as step 0 of the
+upgrade schema above.
+
+Corrected headline: **2 accepted, 10 rejected, five distinct failure patterns**, of which
+the largest — 3 of 10 — is a reference the node already had.
+
 ### Upgrades — accepted
 
 Recorded during the L8 completion sweep (shard `l8gen`, 2026-08-05). Twelve node/proposition pairs
@@ -112,6 +147,10 @@ were assessed against the admissibility rule above; two were admitted.
 | 2026-08-05 | `schmid_metaphyseal_chondrodysplasia` | Mutations in COL10A1 cause Schmid metaphyseal chondrodysplasia. | `warman1993` | `meng2025` | different method and different cohort | B → **A** |
 
 ```yaml
+# STEP 0 (precondition, MR-004 item 3): ref_2 MUST NOT already appear in the
+# node's key_refs. Three of the first ten rejections failed here - the proposed
+# 'replication' was a reference the node already cited, i.e. evidence already
+# priced into the original grade. Check novelty BEFORE assessing propositionality.
 - node_id: estrogen_receptor_alpha
   proposition_tested: >-
     ERalpha function is required for epiphyseal fusion, so losing it permits continued

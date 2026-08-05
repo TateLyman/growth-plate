@@ -52,7 +52,7 @@ An answer produced by the wrong operation is wrong even when it sounds right.
 |---|---|---|---|
 | 1 | **ENTITY** | "what is X" | Node read + `claim_grades` **if present**. Cheapest type — do not over-answer or traverse. |
 | 2 | **MECHANISM** | "how does X become Y" | Path trace. Carry **units at every step**. Report where the chain breaks or needs an unmeasured conversion factor. The breaks are the answer. |
-| 3 | **PERTURBATION** | "what if X is suppressed at age 11 in a female" | `derived.reachability[X]` with sign products, **filtered by context fields**. Compute it; do not eyeball it. **State which edges the filter excluded.** |
+| 3 | **PERTURBATION** | "what if X is suppressed at age 11 in a female" | `derived.reachability[X]` with sign products. If context is requested, use **`atlas/tools/context_filter.py`** — NOT a hand-written filter. Three-state semantics are mandatory (see below). **Report annotation coverage with every context-filtered answer.** |
 | 4 | **COMPARATIVE** | "does CNP or FGFR3 matter more" | The four-way ranking: velocity elasticity, final-height elasticity, GWAS enrichment, graph convergence. Report **all four and their disagreements**; never collapse to one. **STATUS: only graph convergence is currently computed.** Phase 3b has not run, so the two elasticity axes and the GWAS-enrichment axis do not exist in any artifact. Until they do, the correct answer to a comparative question is: report convergence, and state explicitly that three of the four axes are not yet computed — **do not substitute convergence for the ranking.** |
 | 5 | **EVIDENCE** | "how do we know estrogen drives fusion" | `key_refs` + `confidence` + `human_evidence` + `translation_risk`. Distinguish established-in-humans from inferred. |
 | 6 | **NEGATIVE** | "what don't we know about the resting zone" | `gaps.json` filtered by layer, **with search logs attached** so the user can see the gap is established, not assumed. |
@@ -96,6 +96,34 @@ computed and mean nothing.
 
 When a path is blocked because the only route runs through unusable edges, **say the graph
 cannot answer it directionally.** That is a real result.
+
+### Context filtering — THREE-STATE, never two
+
+Edge context is free text. Zone is annotated on **11.8%** of edges, sex on **11.8%**,
+stage on **22.4%**, species on 93.9%. A two-state filter (keep / drop) therefore drops
+the overwhelming majority of edges for **missing annotation**, not for context mismatch,
+and the residue looks exactly like a small, precise, context-specific answer.
+
+Every context filter classifies each edge into three states:
+
+| state | meaning | action |
+|---|---|---|
+| **MATCH** | context affirms the requested value | carry |
+| **MISMATCH** | context affirms a **different** value on that axis | **exclude** |
+| **UNANNOTATED** | the axis is not mentioned at all | **carry, and count** |
+
+**Only MISMATCH excludes.** Collapsing UNANNOTATED into MISMATCH is the bug that shipped
+a wrong answer in the first benchmark run (§ below).
+
+Every context-filtered answer must report `annotation_coverage` = MATCH / (MATCH +
+UNANNOTATED). **If coverage < 40%, the answer is returned as UNRELIABLE**, with the
+figure, and must not be presented as sex- or zone-specific. It is the unfiltered set
+minus the few edges that positively contradict the filter — which is a different object.
+
+```bash
+python3 atlas/tools/context_filter.py --node glucocorticoid_cortisol --sex female --age 11
+python3 atlas/tools/context_filter.py --coverage-report
+```
 
 ---
 
