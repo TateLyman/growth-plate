@@ -163,6 +163,28 @@ logged in `audit/contradictions.md` and treated as a finding, not filler.
 not undergo epiphyseal fusion. Every node carries `species_basis` and a
 `translation_risk` grade with a stated reason. Mouse data is never presented as human fact.
 
+## The ceiling
+
+**The atlas cannot exceed the measurement record.** Where no one has taken the reading,
+it returns the gap. It does not interpolate, it does not average across species to fill
+a hole, and it does not let a plausible sentence stand in for a number nobody has
+measured.
+
+What it can do, and what nothing else currently does, is **state exactly where the
+readings are missing, rank them by how much they matter, and say what it would take to
+get them.**
+
+That claim is now concrete rather than aspirational. The Phase 6 parameter-flow model
+(`atlas/quant/notebooks/flow_model.py`) does not run: seven of eight named sites halt
+at the same step, because terminal hypertrophic cell height in micrometres has never
+been measured in any species. Propagating the recorded spreads gives an output range of
+0.58–33.1 cm/yr — a 57-fold band — and **98% of that uncertainty rests on five
+parameters that have never been measured.** `docs/experimental_agenda.md` ranks them,
+names the discriminating experiment for each, and states the falsifiable prediction the
+top one would test.
+
+That is the ceiling, and it is worth reaching.
+
 ## Entry points
 
 - New here → this file, then `atlas/docs/L1_growth_plate_architecture.md`.
