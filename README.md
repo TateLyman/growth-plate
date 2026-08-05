@@ -84,7 +84,7 @@ A-count alongside rising propositional rigour is a successful run, not a shortfa
 | `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **57.5%** | — |
 | `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **40.2%** | — |
 | `edges_per_node` | **1.92** | ≥3.0 |
-| `refs_per_researched` | **3.10** | ≥3.0 |
+| `refs_per_researched` | **3.11** | ≥3.0 |
 | `quant_node_coverage` | **68.4%** | ≥60% |
 | `stub_fraction` | **0.0%** | 0% |
 

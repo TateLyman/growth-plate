@@ -18845,7 +18845,28 @@
    "stub": false,
    "summary": "FGFR3 is the brake on the growth plate: Fgfr3-null mice show skeletal overgrowth with expanded\nproliferative and hypertrophic zones (Colvin 1996; Deng 1996), and in human embryo-fetal long bones\nFGFR3 is the only one of the three receptors expressed in growth plate chondrocytes, FGFR1 and FGFR2\nbeing restricted to perichondrium and periosteum (Delezoide 1998). The achondroplasia allele G380R\nsits in the transmembrane domain, and the mechanism is best described as both ligand-independent\nactivation and failed termination; which component dominates is NOT settled. Naski 1996 and Webster 1996\nshowed graded ligand-independent kinase activation with thanatophoric alleles stronger than\nachondroplasia; Monsonego-Ornan 2000 showed that G380R dimerisation and activation are predominantly\nligand-dependent but that the mutant receptor is selectively resistant to ligand-mediated\ninternalisation and down-regulation, producing an expanded FGFR3 immunoreactive domain in transgenic\nmouse growth plate; Cho 2004 attributed the defect to reduced c-Cbl-mediated ubiquitination\ndiverting active receptor from lysosome to recycling - but this is contested in SIGN, not merely in\ndetail: Monsonego-Ornan et al. 2004 report INCREASED ubiquitination of the same mutants, and Cho\n2004 names the disparity, attributes it to Cos-7 versus HEK293, steady-state FGF2 versus pulsed\nFGF9 and retroviral versus transient expression, and states it cannot exclude the alternative\n(g_l2d_003). c-Cbl also does not bind FGFR3 directly: recruitment is via FRS2alpha and Grb2, and\nFRS2alpha binds FGFR1 far more strongly than FGFR3, so the recruitment step for this receptor is\nweakly established. Quantitative FRET adjudicates the DIMERISATION question only: G380R does not\nchange ligand-bound dimer configuration and increases unliganded dimerisation propensity by\n-1.8 kcal/mol (Sarabipour 2016). That experiment cannot speak to the down-regulation model, because\nthe construct is FGFR3 extracellular + transmembrane domain with the ENTIRE INTRACELLULAR KINASE\nDOMAIN REPLACED by a fluorescent protein, in CHO-derived vesicles - the machinery the competing\nmechanism runs on is structurally absent from the assay. The same paper reports that chemical\ncross-linking with Western blot did NOT detect increased G380R dimerisation, and that chemically\nproduced vesicles gave ~0.5 rather than 1.8 kcal/mol. The defensible reading is that G380R is a weak\nconstitutive activator that also fails to be switched off, with the relative weight of the two\ncontributions still unresolved.\n",
    "confidence": "B",
-   "claim_grades": null,
+   "claim_grades": [
+    {
+     "claim": "FGFR3 is a negative regulator of longitudinal bone growth: increasing its signalling shortens bone and reducing it lengthens bone.",
+     "grade": "A",
+     "basis": "Human gain of function across four graded disorders (shiang1994, bellus1995, tavormina1995) and human partial loss of function giving tall stature in CATSHL syndrome (toydemir2006), concordant with Fgfr3-null mouse overgrowth (colvin1996, deng1996). Both directions are now human."
+    },
+    {
+     "claim": "The achondroplasia allele acts primarily by ligand-independent constitutive kinase activation.",
+     "grade": "D",
+     "basis": "Contested. naski1996 and webster1996 report ligand-independent activation; monsonegoornan2000 reports G380R activation is predominantly ligand-DEPENDENT with failed down-regulation. Unresolved."
+    },
+    {
+     "claim": "The G380R receptor escapes degradation through reduced c-Cbl-mediated ubiquitination.",
+     "grade": "D",
+     "basis": "Contradicted in SIGN: cho2004 reports reduced ubiquitination, Monsonego-Ornan et al. 2004 report increased ubiquitination of the same mutants. Logged as g_l2d_003. This is the claim that sets the node grade."
+    },
+    {
+     "claim": "FGFR3 is the only FGF receptor expressed in human growth plate chondrocytes.",
+     "grade": "C",
+     "basis": "Single human fetal long-bone expression study (delezoide1998), abstract only, not replicated."
+    }
+   ],
    "human_evidence": "direct",
    "human_evidence_note": "FGFR3 expression and pathology have been examined directly in human fetal growth plate and in thanatophoric dysplasia cartilage, and the achondroplasia allele is the commonest human skeletal dysplasia mutation.",
    "species_basis": [
@@ -18932,6 +18953,15 @@
      "year": 1996,
      "type": "primary_abstract_only",
      "one_line_finding": "Fgfr3-null mice show enhanced long bone growth, establishing FGFR3 as a negative regulator."
+    },
+    {
+     "ref_id": "toydemir2006",
+     "pmid": "17033969",
+     "doi": "10.1086/508433",
+     "first_author": "Toydemir RM",
+     "year": 2006,
+     "type": "primary",
+     "one_line_finding": "FGFR3 p.R621H causes partial loss of kinase function and CATSHL syndrome with tall stature, supplying the human loss-of-function arm that matches the Fgfr3-null mouse."
     }
    ],
    "open_questions": [
@@ -19848,7 +19878,23 @@
    "stub": false,
    "summary": "IHH is secreted by prehypertrophic and early hypertrophic chondrocytes after cholesterol and\npalmitate modification; release requires DISP1 and its spread through cartilage matrix is limited by\nheparan sulfate proteoglycans (Koziel 2004; Tsiairis 2008). Ihh-null mice show severely reduced\nchondrocyte proliferation - the BrdU-positive fraction is approximately half that of wild-type\nlittermates from as early as 12.5 dpc, alongside a shortened proliferative zone - plus ectopic\nhypertrophic chondrocytes and complete failure of endochondral osteoblast development (St-Jacques\n1999). That entire characterisation is EMBRYONIC (12.5-18.5 dpc; the null dies at birth), so it\nconstrains cartilage morphogenesis and says nothing directly about the postnatal growth plate. Ihh has at least three separable outputs in the growth\nplate: it raises periarticular Pthlh (Vortkamp 1996; Karp 2000), it drives columnar proliferation\ndirectly through Smo in chondrocytes (Long 2001), and it drives periarticular chondrocyte\ndifferentiation into columnar chondrocytes and promotes hypertrophy independently of PTHrP\n(Kobayashi 2005; Mak 2008) - noting that Mak 2008 raises Hh signalling largely with Shh protein and\nPtch1 inactivation rather than with Ihh itself, so the specificity rests on pathway identity, not\nligand identity. Most of the signal is transduced by relief of GLI3 repressor: removing\nGli3 rescues most of the Ihh-null cartilage phenotype (Hilton 2005; Koziel 2005). Human IHH\nmutations give a dosage series - heterozygous missense causes brachydactyly type A1 (Gao 2001; Ma\n2011), homozygous hypomorphs cause acrocapitofemoral dysplasia (Hellemans 2003), and a homozygous\nvariant has been reported causing an acromesomelic-Maroteaux-like dysplasia (Hanif 2025).\n",
    "confidence": "B",
-   "claim_grades": null,
+   "claim_grades": [
+    {
+     "claim": "Reduced IHH gene dosage reduces human stature, with incomplete penetrance.",
+     "grade": "A",
+     "basis": "16 heterozygous IHH probands including the first complete gene deletion show mild-to-moderate short stature with fifth-finger changes, cosegregating in 13 of 16 families, with 5 carriers of normal height (sentchordimont2020); IHH is the commonest finding on growth-plate gene panels in idiopathic short stature at 4/102 (andrade2022)."
+    },
+    {
+     "claim": "IHH drives chondrocyte proliferation and raises periarticular PTHrP in the postnatal growth plate.",
+     "grade": "C",
+     "basis": "Established in mouse EMBRYO only (12.5-18.5 dpc; the Ihh null dies at birth) by stjacques1999, vortkamp1996 and kobayashi2005. No postnatal or human equivalent. This is the claim that sets the node grade."
+    },
+    {
+     "claim": "Most IHH signal is transduced by relief of GLI3 repressor.",
+     "grade": "C",
+     "basis": "Mouse genetic rescue of the Ihh-null cartilage phenotype by Gli3 removal (hilton2005, koziel2005); replicated in mouse, no human data."
+    }
+   ],
    "human_evidence": "indirect",
    "human_evidence_note": "A three-tier human IHH allelic series (BDA1, acrocapitofemoral dysplasia, acromesomelic dysplasia) establishes dosage-dependence, but no human growth plate ISH/IHC series has been mapped by zone.",
    "species_basis": [
@@ -19919,6 +19965,15 @@
      "year": 2004,
      "type": "primary_abstract_only",
      "one_line_finding": "Heparan sulfate limits Ihh range; Ihh acts as a long-range morphogen."
+    },
+    {
+     "ref_id": "sentchordimont2020",
+     "pmid": "32311039",
+     "doi": "10.1210/clinem/dgaa218",
+     "first_author": "Sentchordi-Montan\u00e9 L",
+     "year": 2020,
+     "type": "primary",
+     "one_line_finding": "16 probands with heterozygous IHH variants show mild-to-moderate short stature and fifth-finger middle-phalanx shortening; none had classical brachydactyly A-1 and five were of normal height."
     }
    ],
    "open_questions": [
