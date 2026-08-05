@@ -1,9 +1,135 @@
 id: tnap_alpl
-name: Tissue-nonspecific alkaline phosphatase
+name: Tissue-nonspecific alkaline phosphatase (TNAP/ALPL)
+aliases:
+- ALPL
+- TNAP
+- TNSALP
+- Akp2 (mouse)
 type: protein
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'TNAP is the GPI-anchored ectophosphatase on the outer membrane of matrix vesicles and of hypertrophic
+  chondrocytes and osteoblasts whose job is to destroy extracellular PPi so that hydroxyapatite can propagate.
+  It is a homodimer with three catalytic metal sites (Zn at M1/M2, Mg at M3) plus a structural M4 site;
+  the rising extracellular Ca gradient during mineralization first activates TNAP by replacing Mg with
+  Ca at M3 and then deactivates it as Ca displaces Zn from M1/M2, which is a built-in shut-off at the
+  completion of mineralization. Its activity in growth cartilage is restricted to the hypertrophic and
+  calcifying zones by immunohistochemistry and by X-ray microprobe, which finds maximal alkaline phosphatase
+  activity coincident with maximal extractable organically bound phosphorus in the hypertrophic zone of
+  the pig growth plate. Alpl-/- mice have under 1% of wild-type plasma activity, accumulate PPi, phosphoethanolamine
+  and pyridoxal-5-phosphate, and show developmental arrest of chondrocyte differentiation with diminished
+  or absent hypertrophic zones. High-resolution TEM in these mice places the defect precisely: mineral
+  crystals still initiate normally INSIDE matrix vesicles but fail to proliferate beyond the vesicle membrane,
+  so TNAP is required for the extravesicular, not the intravesicular, step. In humans this is hypophosphatasia,
+  and bone-targeted enzyme replacement with asfotase alfa raised one-year survival in perinatal and infantile
+  disease from 42% to 95%, which is the interventional human proof that TNAP activity is rate-limiting.'
+quantitative:
+- parameter: Plasma TNAP activity in Alpl-/- mice
+  value: <1
+  unit: '% of wild type'
+  conditions: homozygous null; heterozygotes ~50%
+  species: mouse
+  source_ref: fedde1999
+  uncertainty: upper bound stated
+- parameter: Age at radiographic onset of skeletal disease in Alpl-/- mice
+  value: ~10
+  unit: days
+  conditions: rachitic change, osteopenia, fracture
+  species: mouse
+  source_ref: fedde1999
+  uncertainty: approximate
+- parameter: One-year survival, perinatal/infantile hypophosphatasia on asfotase alfa vs historical controls
+  value: 95 vs 42
+  unit: '% surviving'
+  conditions: 37 treated patients vs 48 historical controls of similar age and severity
+  species: human
+  source_ref: whyte2016
+  uncertainty: p<0.0001 Kaplan-Meier log-rank
+- parameter: Five-year survival, perinatal/infantile hypophosphatasia on asfotase alfa vs historical controls
+  value: 84 vs 27
+  unit: '% surviving'
+  conditions: same cohorts, median treatment 2.7 years
+  species: human
+  source_ref: whyte2016
+  uncertainty: p<0.0001
+- parameter: Survival of ventilator-dependent infants, treated vs historical
+  value: 76 (16/21) vs 5 (1/20)
+  unit: '%'
+  conditions: requiring ventilatory assistance
+  species: human
+  source_ref: whyte2016
+  uncertainty: 12/16 survivors weaned from ventilation
+localization:
+- 'chicken epiphyseal growth cartilage: alkaline phosphatase confined to hypertrophic and calcifying zones
+  (vnnen1980)'
+- 'porcine growth plate HZ: maximal alkaline phosphatase activity coincident with maximal extractable
+  organic phosphorus (althoff1982)'
+- 'human growth plate metaphyseal boundary: ALPL protein detected at the mineralization-promoting GP-metaphysis
+  interface (xie2025)'
+- 'matrix vesicle outer membrane: TNAP is GPI-anchored there (anderson2004)'
+human_evidence: direct
+human_evidence_note: Human ALPL loss-of-function (hypophosphatasia) and its reversal by enzyme replacement
+  provide both observational and interventional human evidence, and ALPL protein has been detected at
+  the human growth plate-metaphysis interface.
+species_basis:
+- human
+- mouse
+- chicken
+- porcine
+translation_risk: low
+translation_risk_reason: Mouse null recapitulates infantile hypophosphatasia and the human therapeutic
+  response confirms the mechanism in humans.
+confidence: A
+key_refs:
+- ref_id: fedde1999
+  pmid: '10620060'
+  first_author: Fedde KN
+  year: 1999
+  type: primary
+  one_line_finding: Alpl-/- mice have <1% wild-type plasma TNAP, accumulate PPi/PEA/PLP, and have diminished
+    or absent hypertrophic zones
+- ref_id: anderson2004
+  pmid: '14982838'
+  first_author: Anderson HC
+  year: 2004
+  type: primary
+  one_line_finding: In Alpl-/- growth plate, mineral initiates normally inside matrix vesicles but fails
+    to propagate beyond the vesicle membrane
+- ref_id: whyte2016
+  pmid: '26529632'
+  first_author: Whyte MP
+  year: 2016
+  type: primary
+  one_line_finding: Asfotase alfa raised 1-year survival from 42% to 95% and 5-year survival from 27%
+    to 84% in perinatal/infantile HPP
+- ref_id: milln2016
+  pmid: '26590809'
+  first_author: Millan JL
+  year: 2016
+  type: review
+  one_line_finding: Human plasma PPi approximately 1-6 uM, urinary PPi >10 uM; the Pi/PPi ratio is presented
+    as the mineralization control variable
+- ref_id: vnnen1980
+  pmid: '6987196'
+  first_author: Vaananen HK
+  year: 1980
+  type: primary_abstract_only
+  one_line_finding: Alkaline phosphatase is immunolocalised to the hypertrophic and calcifying zones of
+    chicken epiphyseal cartilage
+- ref_id: althoff1982
+  pmid: '7107329'
+  first_author: Althoff J
+  year: 1982
+  type: primary
+  one_line_finding: 'X-ray microprobe of porcine growth plate: extracellular Ca ~0.7% dry mass (~58 mmol/kg
+    wet wt at 66% tissue fluid) constant across zones, rising to 1% at first mineralization foci'
+- ref_id: xie2025
+  pmid: '40781081'
+  first_author: Xie C
+  year: 2025
+  type: primary
+  one_line_finding: Human growth plate AFM modulus 130.7 MPa (RZ) and 416.2 MPa (HZ); SPP1/AHSG mark the
+    mineralization-inhibiting epiphyseal boundary and ENPP1/ALPL the promoting metaphyseal boundary
+open_questions:
+- g_l5matrix_002
 last_verified: '2026-08-05'
-aliases:
-- ALPL, TNAP

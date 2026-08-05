@@ -1,9 +1,123 @@
 id: inorganic_pyrophosphate
-name: Inorganic pyrophosphate
-type: metabolite
-layer: L5
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Inorganic pyrophosphate (PPi)
 aliases:
 - PPi
+- diphosphate
+type: metabolite
+layer: L5
+stub: false
+summary: 'PPi is the master physiological inhibitor of hydroxyapatite deposition. It adsorbs to nascent
+  apatite crystal faces and blocks crystal proliferation and growth, so mineralization occurs where PPi
+  is locally destroyed and is prevented everywhere else. Human plasma PPi is about 3.5 umol/L (99% range
+  1.19-5.65 umol/L in 73 healthy adults by isotope dilution), slightly higher in 0-15 year olds, and urinary
+  PPi exceeds 10 umol/L. Against a serum phosphate of roughly 1-2 mmol/L this makes the circulating Pi:PPi
+  ratio of order 300-600:1, and the local ratio in the extracellular fluid of the hypertrophic zone is
+  the actual control variable. The two ends of the human dose response are known experiments: loss of
+  TNAP (hypophosphatasia) raises PPi and produces rickets and osteomalacia with an unmineralized hypertrophic
+  zone, while loss of ENPP1 (generalized arterial calcification of infancy) lowers PPi and produces catastrophic
+  ectopic calcification, and the same ENPP1 alleles also produce autosomal recessive hypophosphatemic
+  rickets type 2, so PPi deficiency and PPi excess both damage the growth plate. In growth plate chondrocytes
+  PPi is not merely a physicochemical inhibitor: extracellular PPi suppresses and extracellular Pi stimulates
+  terminal differentiation and apoptosis, so PPi/Pi is a differentiation signal as well as a crystal poison.'
+quantitative:
+- parameter: Plasma inorganic pyrophosphate, healthy adults
+  value: '3.50'
+  unit: umol/L
+  conditions: isotope dilution with 32P-PPi, 73 men and women, no sex difference
+  species: human
+  source_ref: russell1971
+  uncertainty: SE 0.11; 99% range 1.19-5.65 umol/L
+- parameter: Plasma inorganic pyrophosphate, quoted working range
+  value: 1-6
+  unit: umol/L
+  conditions: human plasma, modern assays
+  species: human
+  source_ref: milln2016
+  uncertainty: review range, not a measured CI
+- parameter: Urinary inorganic pyrophosphate
+  value: '>10'
+  unit: umol/L
+  conditions: human urine
+  species: human
+  source_ref: milln2016
+  uncertainty: review lower bound
+- parameter: Bone PPi content in Enpp1-/- mice relative to wild type
+  value: <2.5
+  unit: '% of wild type'
+  conditions: whole bone PPi, Enpp1 null mouse
+  species: mouse
+  source_ref: szeri2022
+  uncertainty: upper bound stated
+- parameter: Fraction of plasma PPi attributable to ANKH-mediated NTP efflux
+  value: ~25
+  unit: '%'
+  conditions: mouse/cell models, by difference
+  species: mouse
+  source_ref: szeri2022
+  uncertainty: ABCC6 accounts for a further 60-70%
+- parameter: Plasma PPi in Alpl-/- mice and in human hypophosphatasia
+  value: raised
+  unit: qualitative direction, magnitude not extracted
+  conditions: Alpl null mouse; human HPP patients
+  species: multiple
+  source_ref: fedde1999
+  uncertainty: described as increased; absolute fold not reported in abstract
+localization:
+- 'systemic (SYS): plasma PPi 1-6 umol/L in humans (russell1971, milln2016)'
+- 'growth plate hypertrophic zone extracellular fluid: PPi concentration never measured in situ'
+human_evidence: direct
+human_evidence_note: Plasma PPi has been measured directly in healthy humans and in hypophosphatasia,
+  and both PPi-raising (ALPL) and PPi-lowering (ENPP1) human loss-of-function syndromes are characterised.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Both directions of the PPi axis are established by human loss-of-function genetics
+  with matching mouse models.
+confidence: A
+key_refs:
+- ref_id: russell1971
+  pmid: '4324072'
+  first_author: Russell RG
+  year: 1971
+  type: primary
+  one_line_finding: Plasma PPi in 73 healthy adults is 3.50 +/- 0.11 umol/L (99% range 1.19-5.65) and
+    is invariably raised in hypophosphatasia
+- ref_id: milln2016
+  pmid: '26590809'
+  first_author: Millan JL
+  year: 2016
+  type: review
+  one_line_finding: Human plasma PPi approximately 1-6 uM, urinary PPi >10 uM; the Pi/PPi ratio is presented
+    as the mineralization control variable
+- ref_id: szeri2022
+  pmid: '35147247'
+  first_author: Szeri F
+  year: 2022
+  type: primary
+  one_line_finding: ANKH exports ATP, not PPi; Enpp1-/- mouse bone contains <2.5% of wild-type PPi, so
+    ENPP1 is required for all ANK-dependent PPi
+- ref_id: fedde1999
+  pmid: '10620060'
+  first_author: Fedde KN
+  year: 1999
+  type: primary
+  one_line_finding: Alpl-/- mice have <1% wild-type plasma TNAP, accumulate PPi/PEA/PLP, and have diminished
+    or absent hypertrophic zones
+- ref_id: lorenzdepiereu2010
+  pmid: '20137773'
+  first_author: Lorenz-Depiereux B
+  year: 2010
+  type: primary_abstract_only
+  one_line_finding: ENPP1 loss-of-function causes both GACI and autosomal recessive hypophosphatemic rickets
+    type 2
+- ref_id: kim2010
+  pmid: '20601283'
+  first_author: Kim HJ
+  year: 2010
+  type: primary
+  one_line_finding: Extracellular Pi drives and PPi blocks growth plate chondrocyte terminal differentiation
+    and apoptosis, in a Pit-1-dependent, concentration-graded way
+open_questions:
+- g_l5matrix_002
+last_verified: '2026-08-05'

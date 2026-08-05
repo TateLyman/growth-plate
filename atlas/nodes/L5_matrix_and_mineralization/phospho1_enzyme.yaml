@@ -1,7 +1,108 @@
 id: phospho1_enzyme
 name: PHOSPHO1
+aliases:
+- PHOSPHO1
+- phosphoethanolamine/phosphocholine phosphatase
 type: protein
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'PHOSPHO1 is a cytosolic, matrix-vesicle-enclosed phosphatase specific for phosphoethanolamine
+  and phosphocholine. It supplies the intravesicular Pi that seeds the first apatite crystals inside matrix
+  vesicles, which is a different step from TNAP''s job of destroying extravesicular PPi. The division
+  of labour is proved by epistasis: Phospho1-/- mice have growth plate abnormalities, bowed long bones,
+  spontaneous fractures, osteomalacia and scoliosis, with reduced-mineralizing chondrocytes and matrix
+  vesicles and elevated plasma PPi; transgenic overexpression of TNAP normalises their plasma PPi but
+  does NOT correct their bone phenotype; and Phospho1/Alpl double-null mice show complete absence of skeletal
+  mineralization with perinatal lethality. Mechanically, Phospho1-/- tibiae deform plastically rather
+  than fracturing in three-point bending and have significantly lower elastic modulus and hardness by
+  nanoindentation with lower Raman mineral:matrix ratio. Spatial lipidomics confirms the substrate logic:
+  PHOSPHO1 ablation shifts the growth plate lipidome with accumulation of phosphatidylcholine, lysophosphatidylcholine,
+  sphingomyelin and phosphatidylethanolamine species across resting, proliferative and hypertrophic zones.
+  Independent chick work reproduces the mineralization defect on pharmacological inhibition.'
+quantitative:
+- parameter: Effect of TNAP transgenic overexpression on Phospho1-/- bone phenotype
+  value: '0'
+  unit: correction of bone phenotype
+  conditions: plasma PPi normalised in the same animals
+  species: mouse
+  source_ref: yadav2011
+  uncertainty: dissociation of plasma PPi from bone phenotype
+- parameter: Skeletal mineralization in Phospho1-/-;Alpl-/- double null mice
+  value: '0'
+  unit: detectable skeletal mineral
+  conditions: perinatal lethal
+  species: mouse
+  source_ref: yadav2011
+  uncertainty: described as complete absence
+- parameter: Differentially abundant lipid features in Phospho1-/- growth plate by zone (up/down)
+  value: RZ 272/155, PZ 306/220, HZ 296/190
+  unit: significant MALDI-IMS features (upregulated/downregulated)
+  conditions: MALDI imaging mass spectrometry, PHOSPHO1-KO vs WT mouse knee
+  species: mouse
+  source_ref: tzvetkov2023
+  uncertainty: multivariate significance threshold as reported
+- parameter: Esomeprazole IC50 against PHOSPHO1
+  value: '0.73'
+  unit: uM
+  conditions: in vitro enzyme assay; pantoprazole 19.27 uM; no TNAP inhibition
+  species: in_vitro_human_cell
+  source_ref: staines2021
+  uncertainty: single-study IC50s
+localization:
+- 'mouse growth plate: PHOSPHO1 highly expressed at sites of mineralization in cartilage and bone (huesa2011)'
+- 'matrix vesicle lumen: PHOSPHO1 present (roberts2007)'
+- 'mouse RZ, PZ and HZ: lipidome altered in all three zones on PHOSPHO1 ablation (tzvetkov2023)'
+human_evidence: indirect
+human_evidence_note: No human PHOSPHO1 loss-of-function syndrome is established; human relevance rests
+  on proton pump inhibitors inhibiting PHOSPHO1 at micromolar concentrations and on epidemiological PPI
+  fracture risk.
+species_basis:
+- mouse
+- chicken
+- in_vitro_human_cell
+translation_risk: high
+translation_risk_reason: Every skeletal phenotype is murine or avian; there is no human genetic proof
+  that PHOSPHO1 is required for human skeletal mineralization.
+confidence: C
+key_refs:
+- ref_id: yadav2011
+  pmid: '20684022'
+  first_author: Yadav MC
+  year: 2011
+  type: primary
+  one_line_finding: Phospho1/Alpl double-null mice show complete absence of skeletal mineralization and
+    perinatal lethality
+- ref_id: huesa2011
+  pmid: '21272676'
+  first_author: Huesa C
+  year: 2011
+  type: primary
+  one_line_finding: Phospho1-/- tibiae have reduced elastic modulus and hardness by nanoindentation and
+    lower Raman mineral:matrix ratio
+- ref_id: roberts2007
+  pmid: '17227223'
+  first_author: Roberts S
+  year: 2007
+  type: primary
+  one_line_finding: PHOSPHO1 is functionally involved in matrix-vesicle-mediated mineralization
+- ref_id: tzvetkov2023
+  pmid: '36824055'
+  first_author: Tzvetkov J
+  year: 2023
+  type: primary
+  one_line_finding: PHOSPHO1 ablation significantly alters the growth plate lipidome in all three zones
+    by MALDI imaging
+- ref_id: staines2021
+  pmid: '34213594'
+  first_author: Staines KA
+  year: 2021
+  type: primary
+  one_line_finding: Proton pump inhibitors inhibit PHOSPHO1 with IC50 0.73-19.27 uM without inhibiting
+    TNAP
+- ref_id: macrae2010
+  pmid: '20053388'
+  first_author: Macrae VE
+  year: 2010
+  type: primary_abstract_only
+  one_line_finding: PHOSPHO1 inhibition impairs skeletal mineralization in chick limb development
 last_verified: '2026-08-05'

@@ -1,7 +1,96 @@
 id: ankh_transporter
-name: ANKH
+name: ANKH / ANK (progressive ankylosis protein)
+aliases:
+- ANKH
+- Ank
+- progressive ankylosis protein
 type: protein
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: ANKH is a multipass plasma membrane protein of hypertrophic and terminally differentiating growth
+  plate chondrocytes that was for two decades described as a PPi transporter carrying intracellular PPi
+  to the extracellular space. That description is wrong in its mechanism. In HEK293 cells engineered to
+  lack ENPP1 entirely, introducing ANKH produces robust ATP release with NO increase in extracellular
+  PPi, and Enpp1-/- mouse bone contains under 2.5% of wild-type PPi despite intact Ank. ANKH therefore
+  exports nucleoside triphosphates, predominantly ATP, which ENPP1 then converts extracellularly to PPi
+  and AMP; the same is true of ABCC6, so both transporters that maintain plasma PPi do so by extruding
+  NTPs. ANKH supplies about 25% of plasma PPi and ABCC6 60-70%. This matters for the growth plate because
+  the older chondrocyte literature - blocking Ank raises intra- and extracellular PPi and blocks mineralization,
+  overexpressing Ank in hypertrophic cells lowers PPi and induces alkaline phosphatase, collagen I, osteocalcin
+  and mineralization - was interpreted as direct PPi transport and must be reread as ATP export plus local
+  ENPP1 activity. ANK expression in growth plate chondrocytes is oxygen-dependent and HIF-1 regulated,
+  tying the hypoxic gradient across the plate to PPi handling. In humans ANKH gain-of-function causes
+  craniometaphyseal dysplasia and chondrocalcinosis; loss causes a distinct skeletal phenotype.
+quantitative:
+- parameter: Extracellular PPi increase on ANKH expression in ENPP1-deficient HEK293 cells
+  value: '0'
+  unit: detectable increase
+  conditions: ENPP1-knockout HEK293, ANKH overexpression, ATP release confirmed
+  species: in_vitro_human_cell
+  source_ref: szeri2022
+  uncertainty: negative result; ATP release robust in the same cells
+- parameter: Fraction of mouse bone PPi attributable to Ank activity (older estimate)
+  value: ~75
+  unit: '%'
+  conditions: prior literature estimate, now reinterpreted as ANK-driven ATP feeding ENPP1
+  species: mouse
+  source_ref: szeri2022
+  uncertainty: cited by the authors as the figure their data reinterpret
+- parameter: Fraction of plasma PPi from ANKH
+  value: ~25
+  unit: '%'
+  conditions: mouse; ABCC6 supplies 60-70%
+  species: mouse
+  source_ref: szeri2022
+  uncertainty: not reported
+localization:
+- 'mouse/rat growth plate HZ and terminal HZ: Ank expressed, highest in terminally differentiated mineralizing
+  chondrocytes (wang2005)'
+- 'mouse matrix vesicles: ANK absent, unlike NPP1 (harmey2004)'
+- 'human growth plate: ANKH zonal protein localisation unconfirmed'
+human_evidence: indirect
+human_evidence_note: Human evidence is genetic (ANKH gain-of-function craniometaphyseal dysplasia and
+  chondrocalcinosis); the transport mechanism is established in human cell lines but not in human cartilage.
+species_basis:
+- mouse
+- rat
+- in_vitro_human_cell
+- human
+translation_risk: moderate
+translation_risk_reason: Mechanism established in HEK293 overexpression and mouse bone; whether ANKH-derived
+  ATP is the dominant PPi source in the human hypertrophic zone specifically is untested.
+confidence: B
+key_refs:
+- ref_id: szeri2022
+  pmid: '35147247'
+  first_author: Szeri F
+  year: 2022
+  type: primary
+  one_line_finding: ANKH exports ATP, not PPi; Enpp1-/- mouse bone contains <2.5% of wild-type PPi, so
+    ENPP1 is required for all ANK-dependent PPi
+- ref_id: wang2005
+  pmid: '15601852'
+  first_author: Wang W
+  year: 2005
+  type: primary
+  one_line_finding: Blocking Ank in terminal growth plate chondrocytes raises PPi and blocks mineralization;
+    Ank overexpression lowers PPi and induces mineralization
+- ref_id: harmey2004
+  pmid: '15039209'
+  first_author: Harmey D
+  year: 2004
+  type: primary
+  one_line_finding: TNAP, NPP1 and ANK coordinately set extracellular PPi and osteopontin; Enpp1 or ank
+    loss genetically rescues Akp2-/- hypomineralization
+- ref_id: zaka2009
+  pmid: '19419319'
+  first_author: Zaka R
+  year: 2009
+  type: primary_abstract_only
+  one_line_finding: ANK expression in growth plate chondrocytes is oxygen-tension dependent and HIF-1
+    mediated
+open_questions:
+- g_l5matrix_006
+contradicts:
+- wang2005
 last_verified: '2026-08-05'
