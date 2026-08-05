@@ -218,3 +218,28 @@ form of answer this atlas can give. Do not trade it for a fluent paragraph.
 Before answering in any layer, check its `human_evidence_fraction` in
 `query/coverage.md`. A user asking a question in a layer that is 80% rodent-derived
 should be told that **before** receiving the answer, not after.
+
+### 8.1 Evidence quality is not the same warning as predictive reliability
+
+Phase 7 measured, against 63 held-out post-cutoff papers, how often the graph
+anticipates a finding it has never seen. The result overturns the obvious heuristic:
+
+- **L8** — 97% direct human, 89% replicated, 0% translation risk — **20% hit rate**,
+  the worst in the atlas.
+- **L3** — 20% direct human, 56% high translation risk — **100% hit rate**.
+
+So there are now **two independent warnings to give, and they do not coincide**:
+
+1. **Evidence warning** — is this claim human? Read `human_evidence`, `species_basis`,
+   `translation_risk` on the node.
+2. **Structural warning** — can anything be *derived* here? Read the layer hit rate in
+   `query/coverage.md` and `structural_confidence` on the answer.
+
+A node graded A on impeccable human data can sit in a neighbourhood so weakly connected
+that no derived answer from it is trustworthy. That is L8's situation exactly.
+
+**The measured failure mode is cross-layer traversal.** 14 of the 16 findings the graph
+should have anticipated and did not required an edge between layers. Any answer whose
+chain crosses a layer boundary carries a higher risk of silent incompleteness than its
+node grades suggest, and §5's `[ATLAS-INFERRED]` tag must be accompanied by that
+statement.
