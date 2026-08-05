@@ -1,7 +1,94 @@
 id: ecm_remodeling_at_fusion
 name: ECM change at fusion
-type: process
+type: hypothesis
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- matrix remodelling model of fusion
+summary: |
+  Mechanism 5 of 6. Claim: the plate ends because its matrix stops being cartilage - proteoglycan
+  and collagen II are lost, mineral accumulates, and the residue is either resorbed or converted
+  to metaplastic bone. The best characterised matrix trajectory is murine and is, importantly,
+  the opposite of what a matrix-degradation model would predict: in mice the hypertrophic zone
+  mineral content (Ca, P) rose and the mineralised area expanded between 10 and 55 weeks, while
+  the degradative and hypertrophic machinery was lost - type X collagen and MMP-13 were present
+  in the hypertrophic zone at 10 weeks and absent at 55 weeks - and aggrecan and type II collagen
+  protein became sparse; the plate remained calcified cartilage rather than being replaced by
+  bone (yu2025, mouse). In humans, the equivalent step is Haines's observation that mineralisation
+  advances from both surfaces, engulfing intact cartilage columns, and that the first bony union
+  is by that mineralised cartilage as a form of metaplastic bone (haines1975, human and dog).
+  There is no human immunohistochemical or biochemical characterisation of matrix composition at
+  fusion - no collagen typing, no proteoglycan quantification, no MMP or ADAMTS profiling of a
+  fusing human plate. Discriminating experiment: matrix proteomics plus collagen II/X and
+  aggrecan-neoepitope immunohistochemistry on graded human physeal specimens. Under this
+  hypothesis matrix conversion precedes chondrocyte loss and MMP-13 or ADAMTS activity rises at
+  the bridging front; under the mouse-like pattern the degradative enzymes fall and mineral simply
+  accumulates, which would predict that human fusion needs an additional, non-matrix trigger.
+quantitative:
+- parameter: type X collagen and MMP-13 in hypertrophic zone, young versus aged mouse
+  value: present at 10 weeks, absent at 55 weeks
+  unit: immunohistochemical detection
+  conditions: mouse growth plate
+  species: mouse
+  source_ref: yu2025
+  uncertainty: two timepoints only
+- parameter: aggrecan and type II collagen protein, young versus aged mouse growth plate
+  value: expressed throughout at 10 weeks, sparse at 55 weeks
+  unit: immunohistochemical detection
+  conditions: mouse growth plate
+  species: mouse
+  source_ref: yu2025
+  uncertainty: two timepoints only
+- parameter: Ca and P concentration in hypertrophic zone with age
+  value: high and expanding between W10 and W55
+  unit: SEM-EDS elemental concentration
+  conditions: mouse growth plate
+  species: mouse
+  source_ref: yu2025
+  uncertainty: relative, not absolute wt%; two timepoints
+localization:
+- 'mouse HZ: mineral-rich bright zone expands with age while Col X and MMP-13 are lost (yu2025)'
+- 'human plate at union: mineralisation engulfs intact cartilage columns; union first by metaplastic bone (haines1975)'
+human_evidence: indirect
+human_evidence_note: >-
+  Human evidence is limited to classical histology of mineralisation and metaplastic bone at
+  union (haines1975); no human matrix composition data at fusion exist.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: >-
+  The only quantitative matrix data come from a species that does not complete fusion, and the
+  murine trajectory (loss of MMP-13 and Col X) is not obviously the trajectory of a plate that
+  is about to be replaced by bone.
+confidence: D
+key_refs:
+- ref_id: yu2025
+  pmid: '40478277'
+  first_author: Yu X
+  year: 2025
+  type: primary
+  one_line_finding: >-
+    Aged mouse growth plate calcifies while losing type X collagen, MMP-13, aggrecan and type II
+    collagen, and persists as calcified cartilage.
+- ref_id: haines1975
+  pmid: '1184450'
+  first_author: Haines RW
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    First union of a human epiphysis is by mineralised cartilage, a form of metaplastic bone,
+    with tide lines advancing from both surfaces.
+- ref_id: emons2011
+  pmid: '21540578'
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: >-
+    Reviews growth plate maturation including matrix change, and notes that the final steps of
+    fusion remain unestablished.
+open_questions:
+- g_l7fuse_004
+- g_l7fuse_002
+contradicts: []
 last_verified: '2026-08-05'

@@ -1,0 +1,76 @@
+id: hypoxia_necrosis_at_fusion
+name: Hypoxia and necrosis at fusion
+type: hypothesis
+layer: L7
+stub: false
+aliases:
+- non-apoptotic chondrocyte death at fusion
+summary: |
+  Mechanism 4b of 6, promoted from footnote status because it is what the single human fusing
+  specimen actually showed. Claim: terminal growth plate chondrocytes are removed by hypoxic,
+  non-apoptotic death as the plate is sealed off by the dense cortical-like bone that surrounds
+  it, rather than by a programmed cell-autonomous death pathway. Evidence: electron microscopy
+  of human growth plates across pubertal stages, including the fusing plate, found no typical
+  signs of apoptosis or autophagy but did find morphological signs of hypoxia and necrosis; the
+  fusing plate itself consisted of disorganised large chondrocytes surrounded by a border of
+  dense, cortical-like bone (emons2009, human, n=1 fusing plate). The rat terminal picture is
+  compatible: aged rat plates develop a bone band that seals the metaphyseal edge and extensive
+  acellular areas resistant to resorption (roach2003, rat). Hypoxia is listed as one of the four
+  candidate final steps in the standard review of the field (emons2011). What is missing is any
+  molecular corroboration in human tissue - no HIF1A, no lactate, no necroptosis marker has been
+  measured in a fusing human plate. Discriminating experiment: HIF1A stabilisation, pimonidazole
+  adduct or equivalent hypoxia readout plus RIPK3/MLKL staining on human physeal specimens at
+  successive MRI-defined fusion stages. Under this hypothesis hypoxia markers rise before
+  chondrocyte loss and track the encircling bone border; under the vascular-invasion hypothesis
+  the plate becomes better, not worse, perfused as bridges form.
+quantitative:
+- parameter: ultrastructural signs of apoptosis or autophagy in human growth plates including the fusing plate
+  value: none detected
+  unit: electron microscopy
+  conditions: human growth plate specimens across pubertal stages
+  species: human
+  source_ref: emons2009
+  uncertainty: n=1 fusing specimen among a small pubertal series
+localization:
+- 'human fusing plate: disorganised large chondrocytes bounded by dense cortical-like bone, with hypoxic/necrotic ultrastructure (emons2009)'
+- 'rat aged plate: metaphyseal edge sealed by a bone band, acellular regions (roach2003)'
+human_evidence: direct
+human_evidence_note: >-
+  Ultrastructural observation in human tissue including one fusing plate; entirely descriptive,
+  with no molecular hypoxia readout.
+species_basis:
+- human
+- rat
+translation_risk: not_applicable
+translation_risk_reason: >-
+  The observation is human; the limitation is that it is one specimen and purely morphological.
+confidence: D
+key_refs:
+- ref_id: emons2009
+  pmid: '19730156'
+  first_author: Emons J
+  year: 2009
+  type: primary
+  one_line_finding: >-
+    Human growth plates including the fusing plate showed morphological signs of hypoxia and
+    necrosis on electron microscopy, and none of apoptosis or autophagy.
+- ref_id: roach2003
+  pmid: '12588965'
+  first_author: Roach HI
+  year: 2003
+  type: primary
+  one_line_finding: >-
+    Aged rat growth plates are sealed at the metaphyseal edge by a bone band and contain
+    extensive acellular regions resistant to resorption.
+- ref_id: emons2011
+  pmid: '21540578'
+  first_author: Emons J
+  year: 2011
+  type: review
+  one_line_finding: Lists hypoxia among the four candidate final steps in epiphyseal fusion.
+open_questions:
+- g_l7fuse_006
+- g_l7fuse_002
+contradicts:
+- apoptosis_at_fusion
+last_verified: '2026-08-05'

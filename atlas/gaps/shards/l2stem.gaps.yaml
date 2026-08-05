@@ -1,0 +1,406 @@
+gaps:
+  - gap_id: g_l2stem_001
+    question: >-
+      Which cell in the human growth plate resting zone, if any, self-renews and clonally
+      generates chondrocyte columns over years, and does it express PTHLH?
+    type: method_blocked
+    layer: L2
+    why_it_matters: >-
+      Every functional statement in this layer - clonality, self-renewal, column founding,
+      lifespan - comes from tamoxifen-inducible Cre lineage tracing in mice. The entire
+      resting-zone-stem-cell edifice on which growth-plate exhaustion and fusion models rest is
+      therefore unvalidated in the species the atlas is about, and the one human study that
+      addresses it reports that the most stem-like human resting cells are PTHLH-negative,
+      contradicting the dominant mouse marker.
+    what_is_known: >-
+      Mouse PTHrP-creER-labelled resting chondrocytes form clonal columns for at least a year,
+      with ~2-3% showing long-term self-renewal (mizuhashi2018); FoxA2+ cells are a longer-lived
+      upstream population (muruganandan2022). Human adolescent resting zone contains
+      transcriptionally quiescent sub-populations (CHRDL2+, SFRP5+; avijgan2025) and two
+      stem-like populations of which the upper 'root' population is PTHLH-negative and maps to
+      mouse Prrx1+ cells (chu2026).
+    what_is_missing: >-
+      Any clonal or self-renewal measurement made on human cells in their own tissue. Human
+      evidence is entirely cross-sectional transcriptomics plus xenotransplantation of sorted
+      cells into mice.
+    nearest_evidence: >-
+      chu2026 (human single-cell and spatial identification plus mouse Prrx1 clonal tracing of a
+      transcriptionally matched population); chan2018 (human sorted cells assayed by serial renal
+      capsule transplantation).
+    discriminating_experiment: >-
+      Somatic-mutation phylogenetics on microdissected human growth plate. Take zone-resolved
+      laser-capture or single-cell samples from paediatric growth plate tissue (surgical
+      epiphysiodesis or post-mortem), deep-sequence to call somatic single-nucleotide variants,
+      and reconstruct clonal lineage trees. Under the resting-zone stem cell model, cells within
+      one column share private mutations absent from neighbouring columns, and resting-zone cells
+      sit at the root of those trees. Under a consumption model with no resident stem cell,
+      columns show no shared private variants distinguishing them from adjacent columns and
+      resting-zone cells are terminal branches, not roots. A PTHLH-expressing root would support
+      mouse-to-human marker transfer; a PTHLH-negative root would refute it.
+    tractability: 3
+    search_log_ref: g_l2stem_001
+
+  - gap_id: g_l2stem_002
+    question: >-
+      What fraction of human trabecular and endosteal osteoblasts is derived from hypertrophic
+      chondrocytes, and over what age range?
+    type: quantitative_gap
+    layer: L2
+    why_it_matters: >-
+      In mice this fraction is about 60%, which reassigns the majority of young trabecular bone
+      to a cartilage origin and changes what a growth plate is for. If the human fraction is
+      similar, growth plate biology is also bone-mass biology; if it is small, human bone
+      accrual and mouse bone accrual are driven by different cells and mouse osteoporosis and
+      growth models transfer poorly.
+    what_is_known: >-
+      Mouse: ~63% of trabecular and ~62% of endosteal osteocalcin+ osteoblasts at one month, and
+      ~60% trabecular / ~68% endosteal Col1a1(2.3kb)-GFP+ osteoblasts at three weeks, are
+      Col10a1-lineage (zhou2014a); confirmed qualitatively by independent inducible tracing
+      (yang2014); the contribution ends at adolescence, after which LepR+ stroma dominates
+      (shu2021).
+    what_is_missing: >-
+      Any human number at all. No study has quantified chondrocyte-derived osteoblasts in human
+      bone at any age.
+    nearest_evidence: >-
+      zhou2014a and yang2014 (mouse lineage tracing); shu2021 (mouse dual-recombinase timing).
+    discriminating_experiment: >-
+      Apply single-cell multi-omic lineage inference to paediatric human bone: profile
+      growth-plate hypertrophic chondrocytes and metaphyseal osteoblasts from the same specimen
+      for both transcriptome and mitochondrial or nuclear somatic variants, then test whether
+      osteoblast clones share variants with hypertrophic chondrocytes from the overlying plate.
+      Expected under the mouse-like model: a majority of metaphyseal osteoblast clones share
+      chondrocyte-private variants. Expected under a perichondrial-origin model: osteoblast
+      clones share variants with periosteal or LepR-equivalent stromal cells instead.
+    tractability: 2
+    search_log_ref: g_l2stem_002
+
+  - gap_id: g_l2stem_003
+    question: >-
+      Does secondary ossification centre formation causally confer stem-cell properties on
+      resting-zone chondrocytes, or does it merely coincide in time with an autonomous
+      developmental switch?
+    type: search_established
+    layer: L2
+    why_it_matters: >-
+      This claim is load-bearing for L7 fusion models, which use it to argue that the epiphyseal
+      niche has a defined start and therefore a definable end. It is currently supported only by
+      two temporal correlations in one species, and the atlas should not propagate a correlation
+      as a mechanism into a downstream layer.
+    what_is_known: >-
+      Mouse PTHrP-creER colony-forming cells acquire robust in vitro self-renewal between a P9
+      pulse (3.3% secondary colonies, none passageable) and a P12 pulse (16.3%, 12.5% of those
+      passageable nine times), described by the authors as coinciding with active SOC
+      development (mizuhashi2018). Independently, clonal tracing shows a switch from progenitor
+      depletion to stable monoclonal columns 'coinciding with the formation of the secondary
+      ossification centre' (newton2019). FoxA2+ long-term stem cells sit at the cartilage/SOC
+      interface (muruganandan2022).
+    what_is_missing: >-
+      Any experiment that perturbs SOC formation and then measures resting-zone stem cell
+      behaviour. A Europe PMC search on 2026-08-05 for studies combining SOC ablation, blockade,
+      prevention or delay with resting-zone or self-renewal readouts in mice returned zero
+      records.
+    nearest_evidence: >-
+      mizuhashi2018 and newton2019 (temporal coincidence only); chan2015 (VEGF blockade shifts
+      skeletal progenitor fate from bone to cartilage, showing vascular signals can steer
+      progenitor fate but not tested on the resting zone).
+    discriminating_experiment: >-
+      Delay SOC formation genetically or pharmacologically without disturbing the growth plate -
+      for example epiphysis-directed inhibition of cartilage-canal angiogenesis (local VEGF
+      trap or Vegfa deletion restricted to epiphyseal chondrocytes) initiated at P4 - then at
+      P12 and P18 assay (i) PTHrP-creER clonal column formation and (ii) secondary and serial
+      colony-forming capacity of sorted resting chondrocytes. If SOC formation is causal, delayed
+      SOC animals retain the P9-like phenotype (~3% secondary colonies, no serial passage) at
+      P12-P18 and form only short transient columns. If the switch is autonomous, they reach the
+      P12-like phenotype (~16% secondary colonies, passageable clones) on the normal schedule
+      despite an absent or delayed SOC. A comparative version tests the same prediction across
+      bones whose SOCs appear at different times within one animal.
+    tractability: 4
+    search_log_ref: g_l2stem_003
+
+  - gap_id: g_l2stem_004
+    question: >-
+      Are the five published skeletal stem cell schemes - mSSC, PTHrP+/FoxA2+ resting
+      chondrocytes, Grem1+ OCR cells, LepR+ stroma and CTSK-lineage periosteal stem cells -
+      distinct cell types, overlapping states of one lineage, or artefacts of different assays?
+    type: contradiction
+    layer: L2
+    why_it_matters: >-
+      Downstream layers need to know which cell to target and which mouse model reports on human
+      biology. The schemes disagree on anatomy, adipogenic potential, developmental window and
+      markers, and one immunophenotype (CD200+CD105-Thy-6C3-) is used for two anatomically
+      different 'stem cells'. Without reconciliation, any therapeutic inference from this layer
+      is arbitrary.
+    what_is_known: >-
+      mSSC is CD45-Ter119-Tie2-AlphaV+Thy-6C3-CD105-CD200+ and excludes fat (chan2015); the
+      periosteal stem cell carries the same CD200+CD105-Thy-6C3- phenotype but is Ctsk-lineage
+      and periosteal (debnath2018); Grem1+ OCR cells are metaphyseal, non-adipogenic and
+      non-overlapping with Nestin-GFP cells (worthley2015); LepR+ cells are perisinusoidal, make
+      adipocytes, contribute nothing to developing cartilage and become the dominant osteoblast
+      source only after adolescence (zhou2014, shu2021); PTHrP+ resting chondrocytes are
+      Grem1-negative (mizuhashi2018); the human CD146+ definition includes adipogenesis
+      (sacchetti2007, bianco2015) while the hSSC definition excludes it and reports CD146+ cells
+      as poorer colony formers (chan2018).
+    what_is_missing: >-
+      A single study that applies all marker panels and all Cre drivers to the same animals at
+      the same ages with the same functional assay, so that overlap can be measured rather than
+      inferred across papers.
+    nearest_evidence: >-
+      mizuhashi2018 (measures overlap between PTHrP+ cells and the mSSC/pre-BCSP/BCSP tiers and
+      excludes Grem1 co-expression) is the only cross-scheme quantification located.
+    discriminating_experiment: >-
+      Multiplexed intersectional fate mapping in one mouse cohort: combine Pthlh-creER,
+      Grem1-creER, Lepr-cre, Ctsk-cre and FoxA2-creER with orthogonal recombinases and distinct
+      reporters, plus full mSSC/PSC surface staining, sampling at P6, P12, P28 and 12 weeks, and
+      score anatomical position, marker phenotype and clonal output for each labelled cell.
+      Under the 'distinct cell types' model, reporters remain mutually exclusive at all ages and
+      each maps to one compartment. Under the 'states of one lineage' model, early labelled cells
+      convert between reporter identities with age in a directional sequence. Under the 'assay
+      artefact' model, surface phenotype fails to predict clonal output within any single Cre
+      lineage.
+    tractability: 2
+
+  - gap_id: g_l2stem_005
+    question: >-
+      Do human resting zone chondrocytes have a finite, division-denominated proliferative
+      capacity, or can they renew indefinitely until fusion terminates them?
+    type: search_established
+    layer: L2
+    why_it_matters: >-
+      This is the pivot between the two available accounts of why human growth stops. If capacity
+      is finite, adult height is set by a spendable budget and interventions that spare divisions
+      raise final height. If capacity is renewable, height is set by the timing of the fusion
+      trigger and sparing divisions achieves nothing.
+    what_is_known: >-
+      Rabbit resting zone chondrocytes fall in proliferation rate and number with age
+      (schrier2006), the decline is division-dependent rather than age-dependent (baron1994,
+      gafni2001, marino2008), and it is not a cell-autonomous Hayflick limit, since cultured
+      rabbit RZ chondrocyte population doublings are independent of donor age (nilsson2005).
+      Mouse clonal tracing found progenitors acquiring self-renewal postnatally rather than only
+      spending down a budget (newton2019).
+    what_is_missing: >-
+      Any measurement of proliferative capacity, division history or clone size in human growth
+      plate tissue. A Europe PMC search on 2026-08-05 combining human, growth plate/resting zone
+      and clonal/self-renewal/proliferative-capacity terms returned 213 records of which none was
+      a primary human measurement of resting-zone proliferative or clonal capacity.
+    nearest_evidence: >-
+      avijgan2025 (human resting cells can exit G0 ex vivo under defined conditions - the closest
+      existing functional readout on human tissue); nilsson2005 and schrier2006 (rabbit).
+    discriminating_experiment: >-
+      Paired-age human growth plate biopsies (early puberty vs late puberty, e.g. from
+      epiphysiodesis series) assayed two ways: (i) division-history reconstruction by somatic
+      mutation burden or by methylation-clock-based division counters in sorted resting-zone
+      cells; (ii) ex vivo serial colony formation of sorted resting-zone cells. Under finite
+      capacity, late-pubertal cells show higher accumulated division counts and markedly fewer
+      serial colonies than early-pubertal cells from the same anatomical site. Under renewable
+      capacity, serial colony output is preserved across pubertal stage and division counts
+      plateau.
+    tractability: 3
+    search_log_ref: g_l2stem_005
+
+  - gap_id: g_l2stem_006
+    question: >-
+      Is resting zone stem cell depletion a cause of epiphyseal fusion or a consequence of it?
+    type: known_unknown
+    layer: L2
+    why_it_matters: >-
+      L7 depends on the answer. If depletion causes fusion, the therapeutic target is progenitor
+      conservation. If fusion is imposed by an oestrogen-driven programme on a plate that still
+      has capacity, the target is the trigger, and every attempt to raise adult height by sparing
+      progenitors is misdirected.
+    what_is_known: >-
+      Rabbit resting-zone cells decline numerically and functionally with age (schrier2006) and
+      the field's canonical model states depletion then fusion (nilsson2004). Against a simple
+      causal chain: rodents senesce almost to cessation but never fuse (emons2011), so depletion
+      is not sufficient for fusion; and oestrogen accelerates senescence while slowing
+      resting-zone proliferation (schrier2006), the opposite of a pure consumption model.
+    what_is_missing: >-
+      A measurement of resting zone cell number and proliferative capacity at the moment of
+      fusion, compared between plates fusing early and late, in a species that fuses.
+    nearest_evidence: >-
+      schrier2006 (age- and treatment-dependent rabbit RZ depletion); emons2011 (the rodent
+      non-fusion argument).
+    discriminating_experiment: >-
+      In rabbits, induce early fusion with exogenous oestradiol and delay fusion with an
+      aromatase inhibitor, then at the histological moment of bony bridging in each group measure
+      resting zone cell number per unit area, BrdU labelling index, and ex vivo serial colony
+      capacity, against untreated animals at their own fusion point. If depletion causes fusion,
+      all groups fuse at the same low resting-cell number and colony capacity regardless of
+      chronological age. If fusion is imposed, oestradiol-treated plates fuse while retaining
+      significantly higher resting cell number and colony capacity than controls.
+    tractability: 4
+
+  - gap_id: g_l2stem_007
+    question: >-
+      Does telomere length shorten, or telomerase activity fall, in human growth plate
+      chondrocytes with age or with proximity to fusion?
+    type: search_established
+    layer: L2
+    why_it_matters: >-
+      Telomere attrition is the mechanism most often asserted in reviews for the growth plate's
+      finite proliferative capacity. If it is unmeasured in humans, the atlas must carry the
+      claim as grade X rather than as mechanism, and downstream reasoning about senolytics or
+      telomerase manipulation in growth disorders has no foundation.
+    what_is_known: >-
+      Mouse mTert-GFP marks a transitional skeletal progenitor population whose expression peaks
+      during adolescent bone growth (carlone2021). Rabbit resting-zone chondrocyte replicative
+      capacity in culture is independent of donor age, which is difficult to reconcile with
+      progressive telomere-driven exhaustion (nilsson2005).
+    what_is_missing: >-
+      Any primary measurement of telomere length or telomerase activity in human growth plate
+      chondrocytes. A Europe PMC search on 2026-08-05 returned 218 records, all of which were
+      osteoarthritic articular cartilage, general skeletal ageing reviews, or rodent studies.
+    nearest_evidence: >-
+      carlone2021 (mouse mTert reporter); nilsson2005 (rabbit, indirect and negative).
+    discriminating_experiment: >-
+      Zone-resolved telomere measurement on banked human growth plate tissue: apply quantitative
+      FISH for telomere signal intensity, plus TRAP or TERT in-situ detection, to resting,
+      proliferative and hypertrophic zones across a paediatric age series spanning pre-pubertal
+      to near-fusion. If telomere attrition underlies the finite capacity, resting-zone telomere
+      signal declines monotonically with age and is lowest near fusion. If the limit is
+      epigenetic rather than telomeric, resting-zone telomere signal is stable across the series
+      while global methylation falls, mirroring the rabbit result.
+    tractability: 4
+    search_log_ref: g_l2stem_007
+
+  - gap_id: g_l2stem_008
+    question: >-
+      How many cell divisions of proliferative capacity does a human growth plate resting-zone
+      progenitor start with, and how many are spent per centimetre of bone elongated?
+    type: quantitative_gap
+    layer: L2
+    why_it_matters: >-
+      The finite-capacity model is stated qualitatively everywhere and quantified nowhere. Without
+      a division budget and a cost-per-centimetre, the model makes no falsifiable prediction about
+      final height, cannot be used to estimate how much height a period of growth suppression
+      conserves, and cannot be compared across species.
+    what_is_known: >-
+      The model is division-dependent rather than age-dependent (baron1994, gafni2001,
+      marino2008), and resting-zone cells are numerically depleted with age in rabbit
+      (schrier2006). Mouse data give clone-level rather than division-level numbers: labelled
+      column number plateaus at about six months of chase and roughly 2-3% of PTHrP+
+      colony-forming cells self-renew long term (mizuhashi2018).
+    what_is_missing: >-
+      A division count. No study in any species reports the total number of divisions a
+      resting-zone progenitor undergoes, nor divisions consumed per unit of longitudinal growth.
+    nearest_evidence: >-
+      hallett2021 gives the per-division measurable (H2B-EGFP halves 2.03-fold per division, with
+      a label-retaining decay half-life of 0.99-1.18 weeks), which is the assay that could
+      generate the number in mouse.
+    discriminating_experiment: >-
+      Combine H2B-GFP dilution kinetics with quantified longitudinal growth in mice across the
+      whole growth period: measure divisions per resting-zone cell per week by label dilution,
+      and tibial elongation by calcein double-labelling, over P7 to 12 months, then compute
+      divisions per millimetre elongated and integrate to a lifetime budget. Repeat in rabbit,
+      which fuses, to test whether the budget is exhausted at fusion. A model in which capacity
+      is finite predicts a species-specific total that is reached at growth cessation; a model in
+      which capacity is renewable predicts no ceiling and a growth arrest that occurs at a
+      division count well below any plateau.
+    tractability: 3
+
+  - gap_id: g_l2stem_009
+    question: >-
+      Does the hSSC surface panel (PDPN+CD146-CD73+CD164+) label human resting zone chondrocytes,
+      or only pre-hypertrophic and hypertrophic zone cells as originally reported?
+    type: search_established
+    layer: L2
+    why_it_matters: >-
+      Mouse work places the growth plate stem cell in the resting zone; the human SSC was
+      localised to the pre-hypertrophic and hypertrophic zones of a fetal femur. Either the human
+      and mouse growth plate stem cells occupy different zones - a major biological difference -
+      or one of the two localisations is an assay artefact. Any translational use of the hSSC
+      panel for growth disorders depends on which.
+    what_is_known: >-
+      chan2018 scored human fetal femur cells against 76 mSSC/mBCSP orthologues and found the
+      highest homology in p-H2 and H1, then confirmed by flow cytometry that PDPN+CD146-CD73+CD164+
+      cells are enriched there and depleted in the diaphysis. Separately, human resting zone
+      stem-like populations have been described transcriptionally and are PTHLH-negative
+      (chu2026, avijgan2025), but their PDPN/CD73/CD164 status is not reported in the retrieved
+      material.
+    what_is_missing: >-
+      Direct co-localisation of the hSSC panel with resting-zone identity in postnatal human
+      growth plate. A Europe PMC search on 2026-08-05 combining PDPN, CD164, CD73 with resting
+      zone/reserve zone/PTHrP terms returned 36 records, all reviews or unrelated periosteal and
+      marrow studies; no primary study places the hSSC panel in the resting zone.
+    nearest_evidence: >-
+      chan2018 (fetal, pre-hypertrophic/hypertrophic localisation); ambrosi2025 (hSSC composition
+      across ten sites, but not zone-resolved within the growth plate).
+    discriminating_experiment: >-
+      Multiplex immunofluorescence and zone-resolved flow cytometry on postnatal human growth
+      plate (epiphysiodesis specimens), staining PDPN, CD146, CD73, CD164 alongside a resting-zone
+      identity marker set from human spatial transcriptomics, with microdissected zones sorted
+      and assayed for serial colony formation. If the hSSC is a resting-zone cell, the
+      PDPN+CD146-CD73+CD164+ fraction is enriched in the resting zone and carries the serial
+      colony activity. If the original localisation is correct, that fraction remains enriched in
+      the pre-hypertrophic/hypertrophic zones and resting-zone colony activity resides in a
+      panel-negative population - which would mean the human growth plate contains two unrelated
+      'stem cell' populations in different zones.
+    tractability: 3
+    search_log_ref: g_l2stem_009
+
+  - gap_id: g_l2stem_010
+    question: >-
+      What fraction of resting zone chondrocytes is genuinely long-term self-renewing in vivo,
+      and is the low in vitro figure (~2-3%) an underestimate imposed by culture?
+    type: quantitative_gap
+    layer: L2
+    why_it_matters: >-
+      The size of the true stem pool sets how much reserve a growth plate has and how much of
+      catch-up growth is possible. The only quantitative figures come from colony passaging,
+      which is an ex vivo proxy, and different markers give order-of-magnitude different answers
+      (2-3% for PTHrP+, 9% of colonies for FoxA2+), so the field currently has no agreed
+      denominator.
+    what_is_known: >-
+      PTHrP-creER P12-pulse colonies: 16/98 (16.3%) formed secondary colonies and 2/16 (12.5%)
+      passaged nine times, yielding the authors' ~2-3% long-term self-renewal figure
+      (mizuhashi2018). FoxA2+ colonies: 10/112 (8.9%) reached passage 9 or beyond versus 2/143
+      (1.4%) of PTHrP+ colonies reaching passage 5 (muruganandan2022). In vivo, labelled column
+      number declines to a plateau by about six months (mizuhashi2018) and the durable
+      label-retaining fraction plateaus at 2.6% (hallett2021).
+    what_is_missing: >-
+      An in vivo estimate of the self-renewing fraction that does not depend on culture. The
+      agreement between the 2.6% label-retaining plateau and the 2-3% colony figure is suggestive
+      but the two measure different things and have never been reconciled in the same animals.
+    nearest_evidence: >-
+      hallett2021 (label-retention kinetics in vivo); mizuhashi2018 and muruganandan2022 (ex vivo
+      colony passaging).
+    discriminating_experiment: >-
+      Very-low-density Confetti or Rainbow labelling in Pthlh-creER and FoxA2-creER mice with
+      quantitative clone-size distribution analysis at 1, 3, 6 and 12 months, fitted to a neutral
+      drift model to estimate the number of functional stem cells per plate directly. Under a
+      2-3% stem fraction, the fitted stem cell number matches 2-3% of resting-zone cells and clone
+      sizes follow the scaling expected for neutral competition. If culture is underestimating,
+      the fitted in vivo stem number is substantially larger and clone-size distributions are
+      broader than a 2-3% pool can generate.
+    tractability: 4
+
+  - gap_id: g_l2stem_011
+    question: >-
+      Does any non-murine mammal show the postnatal clonal switch to self-renewing resting-zone
+      progenitors, and specifically does it occur in a species that fuses its growth plates?
+    type: species_gap
+    layer: L2
+    why_it_matters: >-
+      Mice never fuse. Every clonal and self-renewal result in this layer therefore comes from an
+      animal that lacks the outcome the atlas is trying to explain. If the clonal switch is a
+      feature of non-fusing rodents, the whole resting-zone stem cell framework may not describe
+      human growth at all.
+    what_is_known: >-
+      The clonal switch and the SOC coincidence are documented only in mouse (mizuhashi2018,
+      newton2019). The only non-murine mammalian datum located is that FoxA2 immunoreactivity is
+      present at the equivalent anatomical position in rabbit, with no functional or clonal data
+      (muruganandan2022). Rabbits fuse; rodents do not (emons2011).
+    what_is_missing: >-
+      Clonal lineage tracing, or any equivalent clone-resolving measurement, in a fusing mammal.
+    nearest_evidence: >-
+      muruganandan2022 (rabbit FoxA2 immunostaining only); schrier2006 (rabbit resting-zone
+      kinetics, population-level not clonal).
+    discriminating_experiment: >-
+      Clone-resolving analysis in rabbit growth plate without transgenesis: use naturally
+      occurring somatic mutation or X-inactivation mosaicism in female rabbits, sampling
+      microdissected columns before SOC completion, mid-growth and at fusion, and test whether
+      columns become clonal after SOC formation as in mouse. If the switch is conserved, columns
+      sampled after SOC completion are monoclonal by mosaicism marker and remain so until fusion.
+      If it is a rodent peculiarity, rabbit columns remain polyclonal throughout, and the
+      resting-zone stem cell framework should be restricted to non-fusing species until human
+      data exist.
+    tractability: 2

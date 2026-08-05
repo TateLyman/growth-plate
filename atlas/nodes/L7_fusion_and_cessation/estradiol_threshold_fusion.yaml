@@ -1,0 +1,91 @@
+id: estradiol_threshold_fusion
+name: Serum estradiol threshold for epiphyseal closure
+type: process
+layer: L7
+stub: false
+aliases:
+- E2 threshold for fusion
+summary: |
+  Fusion in humans appears to be threshold-gated rather than dose-graded. The observation comes
+  from an accidental human dose-response: a 26-year-old man with compound heterozygous CYP19A1
+  mutations (23 bp deletion in exon IV and a point mutation at the first nucleotide of intron
+  IX) was followed for five years on transdermal estradiol with poor compliance, so serum
+  estradiol remained low but detectable for long periods. During that time neither bone age nor
+  the radiographic appearance of the growth plate changed. Closure of the epiphyseal cartilage,
+  normalisation of BMD and of bone turnover markers, and improvement in fasting insulin were all
+  achieved only once serum estradiol rose above 73 pmol/L (approximately 20 pg/mL) on the correct
+  transdermal dose (lanfranco2008, human, n=1). The same threshold shows up in an independent
+  and non-pathological setting: at genital Tanner stage 5, obese boys with median serum estradiol
+  34.8 pg/mL (range 25.6-41.1) had a mean bone age of about 18 years consistent with fused
+  epiphyses, while lean boys with median estradiol 15.7 pg/mL (range 13.2-21.0) had a mean bone
+  age of about 16 years with epiphyses still unfused (as summarised in rochira2015). The threshold
+  is clinically important because it defines the estradiol exposure that a growth-sparing therapy
+  must stay below, and because it is the only quantitative human dose parameter in this layer.
+  It rests on one case and one cross-sectional comparison, and it has never been estimated with a
+  confidence interval.
+quantitative:
+- parameter: serum estradiol required for epiphyseal closure
+  value: '>73'
+  unit: pmol/L
+  conditions: aromatase-deficient man on transdermal estradiol, 5-year follow-up with variable compliance
+  species: human
+  source_ref: lanfranco2008
+  uncertainty: n=1; threshold inferred from within-subject time course, no CI
+- parameter: serum estradiol at Tanner G5 in obese boys with fused epiphyses
+  value: '34.8'
+  unit: pg/mL (median)
+  conditions: cross-sectional, bone age approximately 18 y
+  species: human
+  source_ref: rochira2015
+  uncertainty: range 25.6-41.1 pg/mL; secondary summary of a primary not read directly
+  value_unverified: true
+- parameter: serum estradiol at Tanner G5 in lean boys with unfused epiphyses
+  value: '15.7'
+  unit: pg/mL (median)
+  conditions: cross-sectional, bone age approximately 16 y
+  species: human
+  source_ref: rochira2015
+  uncertainty: range 13.2-21.0 pg/mL; secondary summary of a primary not read directly
+  value_unverified: true
+localization:
+- 'SYS: circulating estradiol; the effective concentration at the growth plate has never been measured in humans'
+human_evidence: direct
+human_evidence_note: >-
+  Within-subject longitudinal human data from an aromatase-deficient man on variable estradiol
+  replacement, supported by a cross-sectional obese-versus-lean comparison at Tanner G5.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: >-
+  Human-only data. The risk is n=1 for the interventional element and the assay dependence of
+  low estradiol measurements, which differ substantially between immunoassay and LC-MS/MS.
+confidence: D
+key_refs:
+- ref_id: lanfranco2008
+  pmid: '18590994'
+  first_author: Lanfranco F
+  year: 2008
+  type: primary
+  one_line_finding: >-
+    Epiphyseal closure, BMD normalisation and turnover-marker normalisation occurred only when
+    serum estradiol exceeded 73 pmol/L in an aromatase-deficient man on transdermal estradiol.
+- ref_id: rochira2015
+  pmid: '25873947'
+  first_author: Rochira V
+  year: 2015
+  type: review
+  one_line_finding: >-
+    Argues from human models that a serum estradiol threshold of roughly 20 pg/mL separates
+    unfused from fused epiphyses at the end of male puberty.
+- ref_id: maffei2007
+  pmid: '17547681'
+  first_author: Maffei L
+  year: 2007
+  type: primary
+  one_line_finding: >-
+    A 25-year-old man with two novel compound heterozygous CYP19A1 mutations had undetectable
+    serum estradiol with continuing linear growth and eunuchoid habitus.
+open_questions:
+- g_l7fuse_007
+contradicts: []
+last_verified: '2026-08-05'

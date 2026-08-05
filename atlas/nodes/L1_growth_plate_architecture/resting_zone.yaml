@@ -1,9 +1,69 @@
 id: resting_zone
-name: Resting/reserve zone
+name: Resting (reserve) zone
+aliases:
+- reserve zone
+- germinal zone
+- RZ
 type: tissue_structure
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The resting zone is the epiphyseal-most stratum of the growth plate, containing small, rounded,
+  sparsely distributed chondrocytes in abundant matrix and singly or in pairs rather than in columns.
+  It is the source of the columnar clones: PTHrP-expressing resting-zone chondrocytes in mouse behave
+  as skeletal stem cells that acquire self-renewal and generate columnar clones only after the secondary
+  ossification centre has formed, which places the appearance of a true stem compartment after, not before,
+  the establishment of the plate. The zone is not uniformly quiescent: a systematic review of the primary
+  literature finds reported labelling indices and the operational definition of quiescence vary widely
+  between studies, so ''resting'' is a morphological label rather than an established kinetic state. Resting-zone
+  height is one of the histomorphometric parameters that correlates linearly with tibial length and growth
+  rate in mouse. The zone is also the most hypoxic and nutritionally remote part of the plate, since it
+  is furthest from the metaphyseal vasculature and depends on epiphyseal supply.'
+quantitative:
+- parameter: resting zone height correlation with tibial growth rate
+  value: high linear correlation
+  unit: qualitative
+  conditions: mouse proximal tibia, neonate to young adult, histomorphometry
+  species: mouse
+  source_ref: wilson2021
+  uncertainty: linear model reported; coefficient not extractable from abstract
+localization:
+- 'mouse RZ: PTHrP+ skeletal stem cells confirmed by lineage tracing (mizuhashi2018)'
+- 'human RZ: architecture described histologically, kinetics unmeasured (kember1976, thurston1985)'
+human_evidence: indirect
+human_evidence_note: Human resting zone morphology is described in histological series but no human study
+  establishes its stem-cell function or labelling index reliably.
+species_basis:
+- mouse
+- rat
+- human
+translation_risk: high
+translation_risk_reason: The stem-cell identity of resting-zone chondrocytes rests entirely on mouse lineage
+  tracing, which cannot be done in humans; and the secondary-ossification-centre dependence of that identity
+  means timing relative to human skeletal development is unestablished.
+confidence: C
+key_refs:
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: PTHrP+ resting zone chondrocytes are skeletal stem cells that form columnar clones
+    only after secondary ossification centre formation in mouse.
+- ref_id: avijgan2026
+  pmid: '41795828'
+  first_author: Avijgan M
+  year: 2026
+  type: systematic_review
+  one_line_finding: Systematic review finds the resting zone is not uniformly quiescent and that reported
+    labelling indices and definitions of quiescence vary widely.
+- ref_id: wilson2021
+  pmid: '31997656'
+  first_author: Wilson K
+  year: 2021
+  type: primary
+  one_line_finding: Resting zone height is among the growth plate parameters that correlate linearly with
+    tibial length and growth rate in mouse.
+open_questions:
+- g_l1arch_002
+- g_l1arch_012
 last_verified: '2026-08-05'
-aliases:
-- RZ, reserve zone

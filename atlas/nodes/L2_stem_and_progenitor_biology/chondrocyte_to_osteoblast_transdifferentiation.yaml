@@ -1,7 +1,108 @@
 id: chondrocyte_to_osteoblast_transdifferentiation
 name: Chondrocyte-to-osteoblast transdifferentiation
+aliases:
+- chondrocyte-derived osteoblast
+- cartilage-to-bone lineage continuum
 type: process
-layer: L2
-stub: true
+summary: 'A century-old question was settled in mice in 2014 by two independent groups using different
+  drivers. With Col10a1-Cre (constitutive, hypertrophic-chondrocyte-specific) and Agc1-CreERT2 (tamoxifen-inducible,
+  chondrocyte-specific), neither of which labels perichondrium, periosteum or any osteoblast-lineage cell
+  at induction, labelled descendants appear as osteocalcin-positive, 2.3kb-Col1a1-GFP-positive osteoblasts
+  on trabecular surfaces and endosteum and as embedded osteocytes. The magnitude is large: about 63% of
+  trabecular osteocalcin+ cells and 62% of endosteal osteocalcin+ cells were chondrocyte-derived in one-month-old
+  mice, and about 60% of trabecular and 68% of endosteal Col1-GFP+ osteoblasts in three-week-old mice.
+  Independent work using inducible recombination showed the same cells survive the cartilage-to-bone transition
+  and persist into adulthood. Dual-recombinase fate mapping later added the temporal boundary: chondrocytes
+  are the main osteoblast source only before adolescence, after which LepR+ marrow stroma takes over,
+  starting in the diaphysis. The residual controversy is quantitative and technical rather than existential
+  - the authors themselves flag that 60% could be an overestimate if Col10a1-Cre had any ectopic activity,
+  and Cre-driver specificity is the standing objection. No human measurement of this fraction exists.'
+quantitative:
+- parameter: Trabecular osteocalcin+ osteoblasts derived from hypertrophic chondrocytes
+  value: '63'
+  unit: '% of Ocn+ cells'
+  conditions: 1-month-old Col10a1-Cre;Osx-flox mouse femur, double IF
+  species: mouse
+  source_ref: zhou2014a
+  uncertainty: approximate value; n=4 mice, per-sample sums over trabecular images
+- parameter: Endosteal osteocalcin+ osteoblasts derived from hypertrophic chondrocytes
+  value: '62'
+  unit: '% of Ocn+ cells'
+  conditions: 1-month-old mouse femur endosteum
+  species: mouse
+  source_ref: zhou2014a
+  uncertainty: approximate value; n=3 mice
+- parameter: Trabecular Col1a1(2.3kb)-GFP+ osteoblasts that are chondrocyte-derived
+  value: '60'
+  unit: '% of EGFP+ cells'
+  conditions: 3-week-old Col10a1-Cre;2.3col1-GFP;ROSA-tdTomato mouse
+  species: mouse
+  source_ref: zhou2014a
+  uncertainty: approximate value
+- parameter: Endosteal Col1a1(2.3kb)-GFP+ osteoblasts that are chondrocyte-derived
+  value: '68'
+  unit: '% of EGFP+ cells'
+  conditions: 3-week-old triple transgenic mouse femur
+  species: mouse
+  source_ref: zhou2014a
+  uncertainty: approximate value
+- parameter: Developmental window in which chondrocytes are the dominant osteoblast source
+  value: birth to adolescence
+  unit: developmental stage
+  conditions: dual Cre/Dre recombinase fate mapping, mouse
+  species: mouse
+  source_ref: shu2021
+  uncertainty: transition spreads diaphysis to metaphysis
+localization:
+- 'mouse primary spongiosa, trabeculae and endosteum: confirmed by two independent Cre systems (zhou2014a,
+  yang2014)'
+- 'mouse fracture callus: confirmed (zhou2014a)'
+- 'human: unconfirmed - no lineage-resolving method available'
 human_evidence: absent
+human_evidence_note: The fraction of human osteoblasts derived from hypertrophic chondrocytes has never
+  been measured; the process is inferred in humans purely by analogy with mouse.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: The measurement requires irreversible genetic labelling of a transient cell state.
+  Humans also differ in the relevant window - human growth plates fuse, mouse plates do not - so even
+  the developmental boundary reported by dual-recombinase tracing has no direct human analogue.
+confidence: C
+key_refs:
+- ref_id: zhou2014a
+  pmid: '25474590'
+  doi: 10.1371/journal.pgen.1004820
+  first_author: Zhou X
+  year: 2014
+  type: primary
+  one_line_finding: ~60-63% of trabecular and endosteal osteoblasts in 3-4 week mice derive from Col10a1+
+    hypertrophic chondrocytes
+- ref_id: yang2014
+  pmid: '25092332'
+  doi: 10.1073/pnas.1302703111
+  first_author: Yang L
+  year: 2014
+  type: primary_abstract_only
+  one_line_finding: Independent inducible tracing shows hypertrophic chondrocytes survive the transition
+    and become osteoblasts and osteocytes persisting into adulthood
+- ref_id: shu2021
+  pmid: '34499868'
+  doi: 10.1016/j.stem.2021.08.010
+  first_author: Shu HS
+  year: 2021
+  type: primary_abstract_only
+  one_line_finding: Chondrocyte-derived osteoblasts dominate only before adolescence; LepR+ stroma takes
+    over afterwards
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: PTHrP+ resting chondrocyte descendants become Col1a1-GFP+ osteoblasts and Cxcl12-GFP+
+    stroma, linking the resting zone to this output
+open_questions:
+- g_l2stem_002
+layer: L2
+stub: false
 last_verified: '2026-08-05'

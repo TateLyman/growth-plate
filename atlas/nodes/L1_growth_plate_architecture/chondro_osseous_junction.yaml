@@ -1,7 +1,93 @@
 id: chondro_osseous_junction
 name: Chondro-osseous junction
+aliases:
+- COJ
+- chondro-osseous border
+- vascular invasion front
+- metaphyseal front
 type: tissue_structure
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The chondro-osseous junction is the interface at which the terminal hypertrophic chondrocyte
+  is removed, the transverse septum is breached and a metaphyseal capillary bud enters the emptied lacuna.
+  Serial-section analysis in swine and rat established the time sequence: metaphyseal endothelial cells
+  penetrate the non-calcified pericellular and territorial matrix rather than the mineralised longitudinal
+  septa, so the invasion is targeted rather than indiscriminate. Terminal hypertrophic chondrocytes are
+  alive up to this point; time-lapse differential interference contrast imaging of living explants shows
+  them viable at the junction, and they pass through a defined condensation stage immediately before removal.
+  The rate of removal is the mirror image of the production rate at the top of the plate: in the rat proximal
+  tibia in steady state, one chondrocyte per column is eliminated every 3 h, that is 8 cells per column
+  per day, and across the whole plate the calculated production and loss rates match. The junction is
+  therefore the point at which elongation rate is read out, and the point at which anything that blocks
+  resorption or angiogenesis will cause the plate to thicken.'
+quantitative:
+- parameter: chondrocyte elimination rate at the vascular front
+  value: 1 per 3
+  unit: cells per hour per column
+  conditions: rat proximal tibia, steady-state growth
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: equivalently 8 cells per column per day
+- parameter: agreement between calculated cell production and cell loss
+  value: approximately equal
+  unit: qualitative
+  conditions: four growth plates, 28-day-old rat; internal consistency check on the kinetic model
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: stated as approximate equality
+- parameter: matrix compartment penetrated by invading endothelial cells
+  value: non-calcified pericellular and territorial matrix
+  unit: qualitative
+  conditions: distal hypertrophic zone, swine and rat, serial light-microscopic sections
+  species: porcine
+  source_ref: farnum1989
+  uncertainty: descriptive
+localization:
+- 'swine and rat COJ: serial-section timing (farnum1989, farnum1989a)'
+- 'mouse COJ: septoclast and capillary bud biology (sivaraj2022)'
+- 'human COJ: mineral transition mapped (zoehrer2025); cellular kinetics unmeasured'
+human_evidence: indirect
+human_evidence_note: The human chondro-osseous junction has been characterised compositionally (zoehrer2025)
+  and immunohistochemically for vessels and RANK+ cells (walzer2014), but no human study measures cell
+  turnover rate at the junction.
+species_basis:
+- rat
+- porcine
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: The architecture of the junction is conserved and partly documented in human
+  tissue, but every turnover rate and every resorptive cell identity comes from rodents.
+confidence: C
+key_refs:
+- ref_id: farnum1989
+  pmid: '2760737'
+  first_author: Farnum CE
+  year: 1989
+  type: primary
+  one_line_finding: Serial-section analysis establishes the time sequence of terminal chondrocyte death
+    and endothelial penetration of non-calcified matrix at the chondro-osseous junction.
+- ref_id: farnum1989a
+  pmid: '2589219'
+  first_author: Farnum CE
+  year: 1989
+  type: primary
+  one_line_finding: Terminal hypertrophic chondrocytes undergo a distinct condensation stage at the chondro-osseous
+    junction in Yucatan swine.
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: Vascular invasion eliminates one chondrocyte per column every 3 h in rat proximal
+    tibia.
+- ref_id: sivaraj2022
+  pmid: '35091558'
+  first_author: Sivaraj KK
+  year: 2022
+  type: primary
+  one_line_finding: FABP5+ mesenchyme-derived septoclasts, not osteoclasts, mediate matrix degradation
+    and chondrocyte phagocytosis at the chondro-osseous border in mouse.
+open_questions:
+- g_l1arch_003
 last_verified: '2026-08-05'

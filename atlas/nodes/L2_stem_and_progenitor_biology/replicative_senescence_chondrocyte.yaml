@@ -1,7 +1,56 @@
 id: replicative_senescence_chondrocyte
-name: Chondrocyte replicative senescence
+name: Replicative (Hayflick) senescence of growth plate chondrocytes
 type: process
-layer: L2
-stub: true
+summary: 'The intuitive molecular explanation for a finite proliferative capacity is classical replicative
+  senescence - a cell-autonomous division counter of the Hayflick type. The decisive test was done and
+  it failed: rabbit resting zone chondrocytes harvested from young and old animals achieved the same number
+  of population doublings in culture, so the in vivo limit is not carried by the cells as a fixed replicative
+  reserve that survives explantation. The same study found that global DNA methylation declined with in
+  vivo growth plate senescence but not during rapid proliferation in vitro or across the resting-to-hypertrophic
+  transition, which argues for an epigenetic timer coupled specifically to slow in vivo resting-zone division
+  rather than for telomere-driven crisis. This node is therefore a negative result that is frequently
+  re-asserted as positive in secondary literature; treat ''growth plate chondrocytes undergo replicative
+  senescence'' as unsupported in its cell-autonomous form.'
+quantitative:
+- parameter: Population doublings of cultured rabbit RZ chondrocytes vs donor age
+  value: no dependence
+  unit: population doublings
+  conditions: rabbit resting zone chondrocytes in vitro
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: reported as independent of donor age; no effect size given
+localization:
+- 'rabbit RZ chondrocytes in vitro: tested and negative (nilsson2005)'
+- 'human chondrocytes: untested in growth plate'
 human_evidence: absent
+human_evidence_note: No human growth plate chondrocyte replicative-capacity measurement exists.
+species_basis:
+- rabbit
+translation_risk: high
+translation_risk_reason: Rabbit in vitro behaviour, and rodent telomere biology differs markedly from
+  human, so neither a positive nor a negative rodent result settles the human case.
+confidence: D
+key_refs:
+- ref_id: nilsson2005
+  pmid: '16002553'
+  doi: 10.1677/joe.1.06016
+  first_author: Nilsson O
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Population doublings of rabbit RZ chondrocytes in culture are independent of donor
+    age, arguing against cell-autonomous replicative senescence
+- ref_id: nilsson2004
+  pmid: '15380808'
+  doi: 10.1016/j.tem.2004.08.004
+  first_author: Nilsson O
+  year: 2004
+  type: review
+  one_line_finding: Contextualises the finite-capacity model that this negative result constrains
+open_questions:
+- g_l2stem_007
+- g_l2stem_008
+contradicts:
+- finite_proliferative_capacity_model
+layer: L2
+stub: false
 last_verified: '2026-08-05'

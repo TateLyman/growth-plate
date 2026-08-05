@@ -2,6 +2,169 @@ id: estrogen_driven_fusion
 name: Estrogen-driven fusion
 type: hypothesis
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- estrogen requirement for epiphyseal closure
+summary: |
+  That estrogen, not androgen, terminates the human growth plate is the only fusion mechanism
+  with direct human interventional evidence, and it rests on a handful of individuals. A
+  28-year-old man homozygous for a C-to-T transition at codon 157 of ESR1 (premature stop in
+  exon 2) was 204 cm tall, had incomplete epiphyseal closure and a history of continued linear
+  growth into adulthood despite normal pubertal development, with elevated serum estradiol and
+  estrone, normal testosterone, raised FSH and LH, and lumbar spine BMD 0.745 g/cm2 (3.1 SD
+  below age-matched normal women); six months of transdermal estrogen producing a 10-fold rise
+  in free estradiol had no detectable effect (smith1994, human, n=1). On longitudinal follow-up
+  his bone age advanced only from 15 to 17.5 years over 3.5 years while spine aBMD fell to
+  0.684 g/cm2 (Z -3.85) (smith2008, human, n=1). The mirror-image experiment is aromatase
+  deficiency, where the receptor is intact and the ligand absent: a 24 3/12-year-old man with a
+  novel CYP19A1 mutation was 204 cm (+3.7 SD) with eunuchoid proportions, testosterone 2015
+  ng/dL, estradiol and estrone below 7 pg/mL, and a bone age of 14 years at a chronological age
+  of 24.25 years (morishima1995, human, n=1 male sib; his 46,XX sister reached 177.6 cm, +2.5
+  SD). In these patients estradiol replacement closes the plates: transdermal estradiol produced
+  complete epiphyseal closure, final skeletal maturation and arrest of growth in height
+  (carani1997), whereas six months of high-dose testosterone given before diagnosis to the same
+  patient had no effect on bone age. The dissociation - receptor-defective man does not respond
+  to estrogen, ligand-deficient man does - is what makes the inference causal rather than
+  correlative, and it is the strongest single argument in this atlas that a rodent-derived
+  mechanism can be human-relevant. It is also n of roughly 20 worldwide.
+quantitative:
+- parameter: adult height, man with homozygous ESR1 nonsense mutation (codon 157 C to T)
+  value: '204'
+  unit: cm
+  conditions: 28-year-old man, normal pubertal development, incomplete epiphyseal closure
+  species: human
+  source_ref: smith1994
+  uncertainty: n=1
+- parameter: lumbar spine BMD, same ESR1 patient at age 28.5 y
+  value: '0.745'
+  unit: g/cm2
+  conditions: DXA; 3.1 SD below mean for age-matched normal women
+  species: human
+  source_ref: smith1994
+  uncertainty: n=1
+- parameter: lumbar spine aBMD after 3.5 y follow-up, same ESR1 patient
+  value: '0.684'
+  unit: g/cm2
+  conditions: DXA; Z score -3.85
+  species: human
+  source_ref: smith2008
+  uncertainty: n=1
+- parameter: bone age advance over 3.5 years without ER-alpha signalling
+  value: 15 to 17.5
+  unit: years of bone age
+  conditions: same ESR1 patient, serial hand radiographs
+  species: human
+  source_ref: smith2008
+  uncertainty: n=1
+- parameter: adult height, man with CYP19A1 aromatase deficiency
+  value: '204'
+  unit: cm
+  conditions: 24 3/12 y, +3.7 SD, eunuchoid proportions, macroorchidism
+  species: human
+  source_ref: morishima1995
+  uncertainty: n=1
+- parameter: bone age at chronological age 24.25 years in aromatase-deficient man
+  value: '14'
+  unit: years of bone age
+  conditions: untreated congenital aromatase deficiency
+  species: human
+  source_ref: morishima1995
+  uncertainty: n=1
+- parameter: adult height, 46,XX sister with same CYP19A1 mutation
+  value: '177.6'
+  unit: cm
+  conditions: 28 y, +2.5 SD, treated with hormone replacement after pubertal failure
+  species: human
+  source_ref: morishima1995
+  uncertainty: n=1
+- parameter: distal radius BMD in untreated aromatase-deficient man
+  value: '-4.7'
+  unit: SD below sex- and age-matched mean
+  conditions: cortical bone site, single photon densitometry
+  species: human
+  source_ref: morishima1995
+  uncertainty: n=1
+- parameter: adult height, second reported aromatase-deficient man (India, 2022)
+  value: '188'
+  unit: cm
+  conditions: 24 y, arm span 200 cm, US:LS 0.8, open wrist and knee epiphyses
+  species: human
+  source_ref: singhania2022
+  uncertainty: n=1
+- parameter: number of CYP19A1 mutation reports in males in the literature
+  value: '15'
+  unit: published male cases
+  conditions: tabulated review to 2022
+  species: human
+  source_ref: singhania2022
+  uncertainty: author count of published reports; not a systematic review
+localization:
+- 'SYS: circulating estradiol acting on ER-alpha; no human growth plate ER-alpha localisation at fusion has been reported'
+human_evidence: direct
+human_evidence_note: >-
+  Two complementary human loss-of-function experiments of nature with interventional follow-up:
+  ESR1 nonsense mutation (estrogen-unresponsive, plates stay open) and CYP19A1 mutations
+  (estrogen-deficient, plates close on estradiol replacement).
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: >-
+  The evidence is human genetic and human interventional. The residual risk is not species but
+  sample size and publication bias: single cases, no untreated control course, and treatment
+  responses reported without blinding.
+confidence: B
+key_refs:
+- ref_id: smith1994
+  pmid: '8090165'
+  first_author: Smith EP
+  year: 1994
+  type: primary
+  one_line_finding: >-
+    A 204 cm man homozygous for an ESR1 codon 157 stop mutation had incomplete epiphyseal
+    closure and no response to six months of transdermal estrogen.
+- ref_id: smith2008
+  pmid: '18505767'
+  first_author: Smith EP
+  year: 2008
+  type: primary
+  one_line_finding: >-
+    Longitudinal follow-up of the same propositus: bone age advanced 15 to 17.5 y over 3.5 y and
+    spine aBMD fell to Z -3.85; heterozygous carriers had normal spine aBMD.
+- ref_id: morishima1995
+  pmid: '8530621'
+  first_author: Morishima A
+  year: 1995
+  type: primary
+  one_line_finding: >-
+    CYP19A1 mutation in a brother-sister pair; the man was 204 cm with a bone age of 14 years at
+    chronological age 24.25 years and osteoporosis.
+- ref_id: carani1997
+  pmid: '9211678'
+  first_author: Carani C
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: >-
+    Showed that transdermal estradiol, but not testosterone, produced epiphyseal closure and
+    growth arrest in a man with aromatase deficiency.
+- ref_id: singhania2022
+  pmid: '36504506'
+  first_author: Singhania P
+  year: 2022
+  type: primary
+  one_line_finding: >-
+    A 188 cm 24-year-old man with two novel CYP19A1 variants and open epiphyses; tabulates 15
+    published male aromatase deficiency reports.
+- ref_id: rochira2009
+  pmid: '19707181'
+  first_author: Rochira V
+  year: 2009
+  type: review
+  one_line_finding: >-
+    All reported men with aromatase deficiency present with tall stature, delayed bone
+    maturation, unfused epiphyses, osteopenia or osteoporosis and eunuchoid proportions.
+pending_source: carani1997
+open_questions:
+- g_l7fuse_005
+- g_l7fuse_009
+contradicts: []
 last_verified: '2026-08-05'

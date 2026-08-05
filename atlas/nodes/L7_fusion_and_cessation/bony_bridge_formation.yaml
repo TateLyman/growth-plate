@@ -2,6 +2,94 @@ id: bony_bridge_formation
 name: Bony bridge formation
 type: process
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- transphyseal bridging
+- physeal bar
+summary: |
+  A bony bridge is a discrete column of bone crossing the growth plate and mechanically tethering
+  epiphysis to metaphysis. Bridges are the physical substrate of fusion: in humans, union begins
+  with mineralised cartilage uniting the two surfaces, then a restricted region is perforated and
+  replaced by bone and marrow, and the perforation enlarges - one perforation in small,
+  early-uniting epiphyses, multiple perforations in large, late-uniting ones (haines1975, human
+  and dog). Bridging can now be quantified non-destructively in three dimensions: synchrotron
+  X-ray computed microtomography resolves individual bridges and supports micron-scale finite
+  element modelling of the local stress they generate, and the method transfers to benchtop
+  micro-CT (staines2018). Bridging is not a human-specific event and is not by itself sufficient
+  for fusion: wild-type mice carry hundreds of bridges per tibial growth plate (495, SD 45, in
+  sham-operated wild types) at a bridge density of 1.2 (SD 0.5), while Socs2-/- mice with
+  de-repressed GH signalling had fewer but far denser bridges (187, SD 56; density 14.4, SD 0.7),
+  described by the authors as accelerated growth plate fusion (samvelyan2022, mouse) - yet the
+  mouse plate still persists as calcified cartilage at 55 weeks (yu2025). Pathological bridging
+  after physeal injury produces the clinical physeal bar, with growth arrest and angular
+  deformity, and transphyseal vascular communication after Salter-Harris injury is the recognised
+  risk factor. The unresolved question is whether physiological fusion bridges and traumatic
+  physeal bars share a cellular origin.
+quantitative:
+- parameter: bony bridge number, wild-type mouse tibial growth plate
+  value: '495'
+  unit: bridges
+  conditions: sham-operated wild-type mice, micro-CT
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: SD 45
+- parameter: bony bridge number, Socs2-/- mouse tibial growth plate
+  value: '187'
+  unit: bridges
+  conditions: sham-operated Socs2-/- mice, micro-CT
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: SD 56
+- parameter: bony bridge density, Socs2-/- versus wild-type
+  value: 14.4 versus 1.2
+  unit: bridges per unit area (study-defined)
+  conditions: sham-operated mice, micro-CT
+  species: mouse
+  source_ref: samvelyan2022
+  uncertainty: SD 0.7 and SD 0.5 respectively
+localization:
+- 'human plate at union: single or multiple perforations depending on epiphysis size (haines1975)'
+- 'mouse tibial plate: hundreds of discrete bridges detectable by micro-CT (samvelyan2022)'
+human_evidence: direct
+human_evidence_note: >-
+  Human bridging and perforation at union are described histologically (haines1975); no
+  quantitative 3D bridge counts have been published for human physes.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: >-
+  Bridge counting is well developed in mouse, where bridges never complete fusion; the human
+  quantitative equivalent does not exist, so bridge number cannot currently be used as a
+  cross-species surrogate for progress toward fusion.
+confidence: C
+key_refs:
+- ref_id: haines1975
+  pmid: '1184450'
+  first_author: Haines RW
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    Union proceeds through mineralised-cartilage bridging then perforation of the plate, with
+    single perforations in small epiphyses and multiple in large ones.
+- ref_id: staines2018
+  pmid: '29417047'
+  first_author: Staines KA
+  year: 2018
+  type: primary
+  one_line_finding: >-
+    Synchrotron micro-CT resolves individual growth plate bridges in 3D and enables micron-scale
+    finite element modelling of their mechanical effect.
+- ref_id: samvelyan2022
+  pmid: '35272487'
+  first_author: Samvelyan HJ
+  year: 2022
+  type: primary
+  one_line_finding: >-
+    Bridge number and density differ markedly between wild-type and Socs2-/- mouse tibiae,
+    interpreted as accelerated growth plate fusion with de-repressed GH signalling.
+open_questions:
+- g_l7fuse_002
+- g_l7fuse_009
+contradicts: []
 last_verified: '2026-08-05'

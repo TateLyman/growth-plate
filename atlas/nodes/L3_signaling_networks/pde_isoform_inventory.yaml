@@ -2,6 +2,79 @@ id: pde_isoform_inventory
 name: Phosphodiesterase isoform inventory in the growth plate
 type: process
 layer: L3
-stub: true
+stub: false
+summary: |
+  Signal duration in the CNP/NPR2 arm is set by cGMP hydrolysis, so the phosphodiesterase complement is
+  a rate-limiting variable, yet it is one of the least mapped parts of this network. Transcript-level
+  profiling of growth plate chondrocytes across human, mouse and chicken reports concordant expression
+  of PDE1B, PDE3B, PDE4B, PDE4D, PDE5A, PDE7A, PDE8A and PDE10A, with PDE6, PDE9 and PDE11 family genes
+  reported absent from skeletal tissue (Ursachi 2026, indexing Takacs 2023 and Kawabe 2025). Functional
+  assignment conflicts by species: in newborn rat epiphyseal chondrocytes PDE5 was the dominant
+  cGMP-hydrolysing activity, but three weeks of tadalafil raised tissue cGMP 52% without lengthening
+  bone (Wang 2018), whereas in mouse PDE3B was the functional target and the PDE3 inhibitor cilostazol
+  elongated cultured bones and enlarged juvenile animals (Kawabe 2025). Zone-resolved PDE data exist
+  only for articular, not growth plate, cartilage: PDE3B is enriched in the superficial zone and PDE7A
+  in the deep zone of human and bovine articular cartilage (Grogan 2013). No study reports PDE isoform
+  localisation by growth plate zone in human tissue - established by systematic search, gap
+  g_l3core_006. The stub isoforms PDE9A and PDE1C in particular have no primary growth plate
+  literature at all.
+localization:
+- 'mouse, human and chicken growth plate chondrocytes (bulk, not zonal): PDE1B, 3B, 4B, 4D, 5A, 7A, 8A,
+  10A transcripts reported (ursachi2026 index)'
+- 'rat epiphyseal chondrocytes (bulk): PDE5 dominant cGMP hydrolysis, confirmed by expression and tadalafil
+  pharmacology (wang2018)'
+- 'human articular cartilage superficial zone: PDE3B enriched (grogan2013)'
+- 'human articular cartilage deep zone: PDE7A enriched (grogan2013)'
+- 'human growth plate RZ/PZ/PHZ/HZ: no PDE isoform localisation reported in any study'
 human_evidence: absent
+human_evidence_note: Human PDE data in cartilage come from bulk transcriptomes and from articular, not
+  growth plate, zonal profiling; no human growth plate zonal PDE map exists.
+species_basis:
+- mouse
+- rat
+- human
+- chicken
+- bovine
+translation_risk: high
+translation_risk_reason: Functional isoform assignment already disagrees between rat and mouse, and the
+  human map is absent; extrapolating rodent PDE pharmacology to human growth plate is unsupported.
+confidence: D
+key_refs:
+- ref_id: ursachi2026
+  pmid: '41732176'
+  first_author: Ursachi VC
+  year: 2026
+  type: review
+  one_line_finding: Growth plate chondrocytes of human, mouse and chicken express PDE1B, 3B, 4B, 4D, 5A,
+    7A, 8A and 10A; PDE6/9/11 family genes reported absent from skeletal tissue.
+- ref_id: wang2018
+  pmid: '29920215'
+  first_author: Wang L
+  year: 2018
+  type: primary
+  one_line_finding: PDE5 is the major cGMP-hydrolysing PDE in newborn rat epiphyseal chondrocytes; tadalafil
+    raised cGMP but not bone length.
+- ref_id: kawabe2025
+  pmid: '40456620'
+  first_author: Kawabe T
+  year: 2025
+  type: primary
+  one_line_finding: PDE3B is the functional cGMP PDE in mouse growth plate; cilostazol elongates bone.
+- ref_id: grogan2013
+  pmid: '23124445'
+  first_author: Grogan SP
+  year: 2013
+  type: primary
+  one_line_finding: PDE3B is superficial-zone enriched and PDE7A deep-zone enriched in human and bovine
+    articular cartilage.
+- ref_id: takcs2023
+  pmid: '36987858'
+  first_author: Takács R
+  year: 2023
+  type: primary
+  one_line_finding: Temporal transcriptomic atlas of chondrogenesis reporting PDE isoform expression across
+    differentiation.
+open_questions:
+- g_l3core_006
+- g_l3core_007
 last_verified: '2026-08-05'

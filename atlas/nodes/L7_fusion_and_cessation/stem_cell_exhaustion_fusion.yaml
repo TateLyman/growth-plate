@@ -2,6 +2,100 @@ id: stem_cell_exhaustion_fusion
 name: Stem cell exhaustion model of fusion
 type: hypothesis
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- resting zone progenitor depletion
+- proliferative exhaustion
+summary: |
+  Mechanism 2 of 6, and the sharpest competitor to generic senescence. Claim: the growth plate
+  ends because the resting-zone progenitor pool that feeds the proliferative columns is
+  irreversibly depleted; estrogen acts by accelerating that depletion, not by acting on the
+  differentiated chondrocytes. Evidence: juvenile ovariectomised rabbits given estradiol
+  cypionate for 5 weeks and then left untreated for 5 weeks separate two effects. Structural
+  parameters (growth plate height, number of proliferative and hypertrophic chondrocytes)
+  remained advanced 5 weeks after estrogen withdrawal, i.e. irreversibly aged, and transient
+  estrogen exposure hastened fusion. Functional parameters (growth rate, proliferation rate,
+  hypertrophic cell size) all normalised after withdrawal, i.e. estrogen also exerts a separable
+  reversible suppression. Estrogen accelerated the normal age-related loss of resting-zone
+  chondrocytes, and this loss was maintained after withdrawal and did not appear to be apoptotic
+  (nilsson2014, rabbit). Human evidence: none for depletion. What now exists is a description of
+  the human resting zone in early puberty - single-cell and spatial profiling of surgical growth
+  plate specimens identified two stem-like resting-zone populations, including PTHrP-negative
+  "root" stem cells in a WNT- and TGF-beta-low niche, conserved with mouse (chu2026, human,
+  early pubertal). Nobody has counted those cells as a function of pubertal stage, so the central
+  quantity of this hypothesis has never been measured in a human. Discriminating experiment:
+  serial quantification of resting-zone stem cells (by the chu2026 markers) in human growth plate
+  specimens spanning Tanner 2 to fusion. Under this hypothesis root-cell number falls
+  monotonically to near zero before column collapse; under the senescence-of-differentiated-cells
+  hypothesis root-cell number is preserved while proliferative output falls; under the vascular
+  and apoptosis hypotheses root-cell loss is a late consequence, not an antecedent.
+quantitative:
+- parameter: duration of estrogen exposure producing irreversible structural senescence
+  value: '5'
+  unit: weeks of estradiol cypionate, followed by 5 weeks washout
+  conditions: juvenile ovariectomised rabbits
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: single exposure duration tested
+- parameter: number of stem-like populations identified in the human early-pubertal resting zone
+  value: '2'
+  unit: transcriptionally distinct populations
+  conditions: single-cell and spatial profiling of surgical human growth plate specimens
+  species: human
+  source_ref: chu2026
+  uncertainty: abstract only; specimen number not stated in abstract
+localization:
+- 'rabbit RZ: chondrocyte number falls with age and estrogen accelerates the loss, non-apoptotically (nilsson2014)'
+- 'human RZ: two stem-like populations, one PTHrP-negative root population in a WNT/TGF-beta-low niche (chu2026)'
+human_evidence: indirect
+human_evidence_note: >-
+  Human resting-zone stem cells have now been identified and profiled in early pubertal
+  specimens (chu2026), but no human study has measured their number or exhaustion as a function
+  of pubertal stage or at fusion.
+species_basis:
+- rabbit
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: >-
+  The depletion data are rabbit, in a species that does fuse; the human data establish that an
+  analogous progenitor compartment exists but say nothing about its fate. The bridging assumption
+  - that human root cells deplete the way rabbit resting-zone cells do - is untested.
+confidence: C
+key_refs:
+- ref_id: nilsson2014
+  pmid: '24708243'
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: >-
+    Transient estrogen in ovariectomised rabbits irreversibly advanced structural senescence and
+    resting-zone cell loss and hastened fusion, while reversibly suppressing growth plate function.
+- ref_id: chu2026
+  pmid: '41984930'
+  first_author: Chu NTL
+  year: 2026
+  type: primary_abstract_only
+  one_line_finding: >-
+    Single-cell and spatial profiling of human early-pubertal growth plate identifies two
+    resting-zone stem-like populations, including PTHrP-negative Prrx1-marked root stem cells.
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: >-
+    Fusion in rabbits occurred when the chondrocyte proliferation rate approached zero,
+    consistent with proliferative exhaustion as the trigger.
+- ref_id: gafni2001
+  pmid: '11641457'
+  first_author: Gafni RI
+  year: 2001
+  type: primary
+  one_line_finding: >-
+    Suppressing proliferation with dexamethasone delayed both senescence and fusion in rabbits.
+open_questions:
+- g_l7fuse_001
+- g_l7fuse_003
+contradicts: []
 last_verified: '2026-08-05'

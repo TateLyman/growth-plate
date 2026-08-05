@@ -2,6 +2,46 @@ id: pde1c
 name: PDE1C
 type: protein
 layer: L3
-stub: true
+stub: false
+summary: |
+  PDE1C is a Ca2+/calmodulin-stimulated dual-specificity phosphodiesterase that hydrolyses cAMP and
+  cGMP with similar Km values, and is of theoretical interest in the growth plate because CNP/NPR2
+  signalling drives TRPM7-mediated Ca2+ entry into chondrocytes (Miyazaki 2022), which would allow
+  Ca2+ to feed back onto cyclic nucleotide degradation. No primary study reports PDE1C expression,
+  localisation or function in growth plate cartilage in any species. Among PDE1 family members it is
+  PDE1B, not PDE1C, that is reported in growth plate chondrocyte transcriptomes across human, mouse
+  and chicken, and PDE1 genes have never been functionally connected to the skeleton (Ursachi 2026).
+  The Ca2+-to-PDE1 feedback arm of the CNP pathway is therefore hypothesised but untested; it is
+  logged as gap g_l3core_007.
+localization:
+- 'growth plate, any species: PDE1C not reported'
+- 'human, mouse and chicken growth plate chondrocytes: PDE1B (not PDE1C) transcript reported (ursachi2026
+  index)'
 human_evidence: absent
+human_evidence_note: No human PDE1C growth plate data of any kind.
+species_basis:
+- human
+- mouse
+- chicken
+translation_risk: unknown
+translation_risk_reason: No growth plate data in any species; nothing to translate.
+confidence: E
+key_refs:
+- ref_id: ursachi2026
+  pmid: '41732176'
+  first_author: Ursachi VC
+  year: 2026
+  type: review
+  one_line_finding: PDE1B rather than PDE1C is reported in growth plate chondrocytes; PDE1 genes have
+    never been functionally linked to the skeleton.
+- ref_id: miyazaki2022
+  pmid: '35287796'
+  first_author: Miyazaki Y
+  year: 2022
+  type: primary
+  one_line_finding: CNP/NPR2 drives TRPM7-mediated Ca2+ entry in growth plate chondrocytes, providing
+    the Ca2+ signal that a PDE1 isoform could read.
+open_questions:
+- g_l3core_006
+- g_l3core_007
 last_verified: '2026-08-05'

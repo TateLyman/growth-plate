@@ -1,9 +1,76 @@
 id: zone_provisional_calcification
 name: Zone of provisional calcification
-type: tissue_structure
-layer: L1
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
 - ZPC
+- calcified cartilage zone
+- zone of preparatory calcification
+type: tissue_structure
+layer: L1
+stub: false
+summary: 'The zone of provisional calcification is the thin stratum at the metaphyseal face of the plate
+  in which the longitudinal cartilage septa mineralise while the transverse septa remain unmineralised,
+  producing the scaffold on which the primary spongiosa is built. Time-of-flight secondary ion mass spectrometry
+  of human polydactyly growth plates shows the transition is compositionally abrupt rather than graded:
+  across the calcified cartilage interface there is a sharp decline in organic matrix ion fragments and
+  a concurrent rise in mineral fragments, with a highly significant peak in the calcium to organic-nitrogen
+  ratio. Correlations between organic and phosphate markers across the interface are consistent with progressive,
+  ordered mineralisation rather than a single nucleation event. Radiographically this zone is the dense
+  white line at the metaphyseal border of the physis and is the landmark used clinically to assess physeal
+  integrity and, when it is disrupted, to diagnose rickets and scurvy. The mineral chemistry and matrix
+  vesicle biology of this zone belong to the matrix and mineralisation layer; here it is treated as the
+  architectural boundary that determines where vascular invasion can occur.'
+quantitative:
+- parameter: statistical significance of the calcium-to-organic ratio peak at the calcified cartilage
+    interface
+  value: p < 0.0001
+  unit: p-value
+  conditions: human polydactyly growth plate specimens, ToF-SIMS large-area imaging, Dunn's multiple comparisons
+  species: human
+  source_ref: zoehrer2025
+  uncertainty: n = 3 specimens
+- parameter: number of human specimens analysed by ToF-SIMS
+  value: '3'
+  unit: specimens
+  conditions: human polydactyly digits
+  species: human
+  source_ref: zoehrer2025
+  uncertainty: n = 3
+localization:
+- 'human ZPC: compositional transition mapped by ToF-SIMS (zoehrer2025)'
+- 'rat/rabbit ZPC: oxygen tension and structure described (brighton1971)'
+human_evidence: direct
+human_evidence_note: The organic-to-mineral transition across the human zone of provisional calcification
+  has been mapped directly by ToF-SIMS in three polydactyly specimens (zoehrer2025).
+species_basis:
+- human
+- rat
+- rabbit
+translation_risk: low
+translation_risk_reason: The key compositional evidence in this node is from human tissue; the mineralisation
+  mechanism itself is cross-species conserved.
+confidence: B
+key_refs:
+- ref_id: zoehrer2025
+  pmid: '41253283'
+  first_author: Zoehrer R
+  year: 2025
+  type: primary
+  one_line_finding: ToF-SIMS mapping of three human polydactyly growth plates shows a sharp organic-to-mineral
+    transition at the calcified cartilage interface, with a highly significant Ca/organic ratio peak.
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: 'Human rib: cartilage septal thickness increases and the transition to bone trabeculae
+    is quantified across age.'
+- ref_id: brighton1971
+  pmid: '5580029'
+  first_author: Brighton CT
+  year: 1971
+  type: primary
+  one_line_finding: Measured oxygen tension by zone across the epiphyseal plate, metaphysis and diaphysis
+    in rat and rabbit.
+open_questions:
+- g_l1arch_007
+last_verified: '2026-08-05'

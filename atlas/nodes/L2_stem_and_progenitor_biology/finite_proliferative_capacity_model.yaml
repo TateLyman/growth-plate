@@ -1,7 +1,100 @@
 id: finite_proliferative_capacity_model
-name: Finite proliferative capacity model of plate lifespan
+name: Finite proliferative capacity model of growth plate lifespan
+aliases:
+- proliferative exhaustion model
+- Baron-Nilsson senescence model
 type: hypothesis
+summary: 'The model states that resting-zone stem-like cells possess a fixed, cell-division-denominated
+  quantity of proliferative capacity; growth slows as it is spent, and the decline depends on cumulative
+  divisions rather than chronological age. Its strongest support is that growth plate senescence is intrinsic
+  and dissociable from age: local glucocorticoid delivered to a single rabbit growth plate produces catch-up
+  growth confined to that plate, so the information is stored locally; dexamethasone-suppressed rabbits
+  and propylthiouracil-treated hypothyroid rats resume growth with plates that are structurally and functionally
+  less senescent than age-matched controls; and rabbit resting-zone cells decline in both proliferation
+  rate and number with age. The model''s own authors falsified its simplest molecular version: the number
+  of population doublings of rabbit resting-zone chondrocytes in culture did not depend on donor age,
+  so the in vivo limit is not a Hayflick limit carried by the cells. They proposed instead a progressive
+  loss of DNA methylation that tracks slow in vivo resting-zone proliferation and not rapid proliferative-zone
+  or in vitro division. The unresolved tension is with clonal tracing showing that mouse progenitors acquire
+  self-renewal postnatally rather than only spending down a fixed budget.'
+quantitative:
+- parameter: Dependence of rabbit RZ chondrocyte population doublings in vitro on donor age
+  value: none detected
+  unit: population doublings vs age
+  conditions: rabbit RZ chondrocytes in culture
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: reported as no dependence; effect size not given
+- parameter: Direction of DNA methylation change with growth plate senescence
+  value: decrease
+  unit: global DNA methylation
+  conditions: rabbit resting zone chondrocytes in vivo, across age
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: no change across RZ-to-HZ transition or in vitro
+localization:
+- 'rabbit RZ: measured (schrier2006, nilsson2005)'
+- 'rat growth plate: measured (marino2008)'
+- 'human growth plate: inferred only'
+human_evidence: indirect
+human_evidence_note: Human support is clinical and inferential - catch-up growth after treatment of hypothyroidism,
+  Cushing syndrome or coeliac disease is consistent with conserved proliferative capacity - but no human
+  growth plate proliferative capacity has been measured.
+species_basis:
+- rabbit
+- rat
+- human
+translation_risk: moderate
+translation_risk_reason: The core phenomenon (local, intrinsic, division-dependent senescence) is replicated
+  across rabbit and rat and matches human clinical catch-up growth, but the human growth plate has never
+  been assayed and the proposed molecular carrier (DNA methylation loss) is unverified in humans.
+confidence: C
+key_refs:
+- ref_id: baron1994
+  pmid: '7925098'
+  doi: 10.1210/endo.135.4.7925098
+  first_author: Baron J
+  year: 1994
+  type: primary_abstract_only
+  one_line_finding: Local glucocorticoid produces local catch-up growth, establishing that senescence
+    information is intrinsic to the plate
+- ref_id: gafni2001
+  pmid: '11641457'
+  doi: 10.1203/00006450-200111000-00014
+  first_author: Gafni RI
+  year: 2001
+  type: primary_abstract_only
+  one_line_finding: Catch-up growth after dexamethasone is accompanied by a less senescent rabbit growth
+    plate
+- ref_id: schrier2006
+  pmid: '16614378'
+  doi: 10.1677/joe.1.06489
+  first_author: Schrier L
+  year: 2006
+  type: primary_abstract_only
+  one_line_finding: Resting zone chondrocytes are numerically and functionally depleted with age in rabbit
+- ref_id: nilsson2005
+  pmid: '16002553'
+  doi: 10.1677/joe.1.06016
+  first_author: Nilsson O
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Refutes the in vitro Hayflick version of the model and proposes DNA methylation loss
+    instead
+- ref_id: nilsson2004
+  pmid: '15380808'
+  doi: 10.1016/j.tem.2004.08.004
+  first_author: Nilsson O
+  year: 2004
+  type: review
+  one_line_finding: Canonical statement of the model and its link to fusion
+open_questions:
+- g_l2stem_005
+- g_l2stem_008
+- g_l2stem_006
+contradicts:
+- soc_formation_triggers_stemness
+- replicative_senescence_chondrocyte
 layer: L2
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

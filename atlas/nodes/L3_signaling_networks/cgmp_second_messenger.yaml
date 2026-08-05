@@ -1,7 +1,78 @@
 id: cgmp_second_messenger
 name: cGMP
+aliases:
+- cyclic GMP
+- 3',5'-cyclic guanosine monophosphate
 type: metabolite
 layer: L3
-stub: true
+stub: false
+summary: |
+  cGMP is the sole second messenger of the CNP/NPR2 arm of growth plate control. Its concentration is
+  set by the balance of synthesis by NPR2 (and, at high CNP, by NPR1/GC-A) against hydrolysis by
+  cyclic-nucleotide phosphodiesterases, and it acts through PKG-II and PKG-I. Because production and
+  hydrolysis are both regulated, cGMP amplitude and duration - not receptor occupancy - are the
+  proximate variable, and both directions have been demonstrated in vivo: FGF signalling lowers growth
+  plate cGMP by dephosphorylating NPR2, measured directly in intact mouse tibia with a cGMP biosensor
+  (Shuhaibar 2017), while PDE inhibition raises it. In newborn rat epiphyseal chondrocytes tadalafil
+  raised the peak CNP-stimulated cGMP by 37% and whole-tissue cGMP by 52%, yet produced no increase in
+  long bone length over three weeks (Wang 2018), whereas in mouse the PDE3 inhibitor cilostazol raised
+  chondrocyte cGMP, elongated cultured bones and enlarged juvenile animals (Kawabe 2025). The
+  mismatch between measured cGMP elevation and growth output is unexplained and is the strongest
+  argument that compartmentalised, PDE-defined cGMP microdomains rather than bulk cGMP set growth.
+quantitative:
+- parameter: peak CNP-stimulated intracellular cGMP increase with 10 uM tadalafil
+  value: '37'
+  unit: '% above vehicle'
+  conditions: primary chondrocytes from newborn rat epiphyses, 2 min after CNP
+  species: rat
+  source_ref: wang2018
+  uncertainty: P<0.01
+- parameter: growth plate tissue cGMP increase with tadalafil 10 mg/kg/day
+  value: '52'
+  unit: '% above vehicle'
+  conditions: 1-month-old Sprague Dawley rats, 3 weeks of treatment
+  species: rat
+  source_ref: wang2018
+  uncertainty: P<0.01; no change in long bone length
+localization:
+- 'mouse growth plate, measured in intact tibia with a cGMP biosensor: confirmed (shuhaibar2017)'
+- 'human growth plate: cGMP has never been measured in situ'
 human_evidence: absent
+human_evidence_note: cGMP has never been measured in human growth plate tissue; human evidence for the
+  axis is genetic and pharmacological, not biochemical.
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: All direct cGMP measurements in cartilage are rodent; rat and mouse already disagree
+  on whether raising cGMP raises growth.
+confidence: C
+key_refs:
+- ref_id: shuhaibar2017
+  pmid: '29199951'
+  first_author: Shuhaibar LC
+  year: 2017
+  type: primary
+  one_line_finding: In vivo cGMP imaging in intact mouse tibia shows FGF lowers growth plate cGMP via
+    NPR2 dephosphorylation.
+- ref_id: wang2018
+  pmid: '29920215'
+  first_author: Wang L
+  year: 2018
+  type: primary
+  one_line_finding: Tadalafil raised rat chondrocyte cGMP 37% and tissue cGMP 52% without increasing long
+    bone length.
+- ref_id: kawabe2025
+  pmid: '40456620'
+  first_author: Kawabe T
+  year: 2025
+  type: primary
+  one_line_finding: PDE3 inhibitors raise chondrocyte cGMP, elongate cultured bones and enlarge juvenile
+    mice.
+open_questions:
+- g_l3core_006
+- g_l3core_007
+contradicts:
+- wang2018
+- kawabe2025
 last_verified: '2026-08-05'

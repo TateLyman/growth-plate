@@ -1,7 +1,64 @@
 id: borderline_zone
-name: Borderline/transition zone
+name: Borderline zone (peripheral borderline chondrocytes)
+aliases:
+- borderline chondrocytes
+- peripheral transition zone
 type: tissue_structure
 layer: L1
-stub: true
+stub: false
+summary: 'At the outer margin of the growth plate, immediately adjacent to the perichondrium and the groove
+  of Ranvier, sits a population of chondrocytes that are aligned perpendicular to the columnar chondrocytes
+  rather than parallel to the growth axis. Inducible lineage tracing in mouse shows these borderline chondrocytes
+  are not simply mis-oriented columnar cells: they behave as transient mesenchymal precursors, leaving
+  the cartilage and contributing to marrow stromal cells and osteoblasts in the metaphysis. This is a
+  route from cartilage to bone lineage that is distinct from the transdifferentiation of terminal hypertrophic
+  chondrocytes at the chondro-osseous junction. Independently, 3D clonal analysis in mouse finds that
+  postnatal growth plates retain small, disorganised, orthogonally oriented clusters specifically at the
+  outer edges while the interior is columnar, which is architecturally consistent with a distinct peripheral
+  compartment that supports lateral rather than longitudinal growth. Nothing equivalent has been shown
+  in human tissue; the borderline compartment is defined entirely by mouse genetics.'
+quantitative:
+- parameter: orientation of borderline chondrocytes relative to columnar chondrocytes
+  value: perpendicular
+  unit: qualitative
+  conditions: mouse growth plate periphery adjacent to perichondrium
+  species: mouse
+  source_ref: mizuhashi2019
+  uncertainty: descriptive
+- parameter: location of residual disorganised clusters in the postnatal growth plate
+  value: outer edges
+  unit: qualitative
+  conditions: P40 mouse distal femur and proximal tibia, 3D Confetti clonal analysis
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 1129 (distal femur) and 1154 (proximal tibia) clusters
+localization:
+- 'mouse BZ: lineage traced (mizuhashi2019)'
+- 'human BZ: not described'
 human_evidence: absent
+human_evidence_note: No study identifies a borderline chondrocyte population in human growth plate tissue;
+  the compartment is defined by mouse inducible lineage tracing.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Defined solely by mouse Cre-based lineage tracing, a method with no human equivalent,
+  and not yet corroborated by any human histological or single-cell description.
+confidence: D
+key_refs:
+- ref_id: mizuhashi2019
+  pmid: '30888720'
+  first_author: Mizuhashi K
+  year: 2019
+  type: primary
+  one_line_finding: Peripheral borderline chondrocytes, oriented perpendicular to columns, act as transient
+    mesenchymal precursors giving rise to marrow stromal cells and osteoblasts in mouse.
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: Postnatal mouse growth plates retain small disorganised clusters specifically at the
+    outer edges while the interior is columnar.
+open_questions:
+- g_l1arch_013
 last_verified: '2026-08-05'

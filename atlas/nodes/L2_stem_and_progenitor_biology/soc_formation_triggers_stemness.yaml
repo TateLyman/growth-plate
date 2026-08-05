@@ -1,7 +1,88 @@
 id: soc_formation_triggers_stemness
-name: SOC formation as trigger for RZ stem cell acquisition
+name: 'Hypothesis: secondary ossification centre formation triggers resting-zone stem cell acquisition'
+aliases:
+- SOC-niche hypothesis
 type: hypothesis
-layer: L2
-stub: true
+summary: The claim is that resting-zone chondrocytes are not stem cells from the outset but acquire self-renewal
+  when the secondary ossification centre forms, which in mouse is roughly the second postnatal week. The
+  evidence is entirely temporal coincidence in two mouse studies. First, PTHrP-mCherry+ resting chondrocytes
+  appear at P3 and expand sharply between P6 and P9, and PTHrP-creER colony-forming cells acquire robust
+  in vitro self-renewal between a P9 pulse (17/518, 3.3% secondary colonies, none passageable) and a P12
+  pulse (16/98, 16.3% secondary colonies, 2/16 passageable nine times) - the authors describe this as
+  occurring 'when the secondary ossification centre actively develops'. Second, multicolour clonal tracing
+  found that fetal and neonatal growth depletes chondroprogenitors whereas later growth produces large
+  stable monoclonal columns with symmetric division and stem cell marker expression, 'coinciding with
+  the formation of the secondary ossification centre'. Neither study manipulated the SOC. A targeted Europe
+  PMC search for any experiment that ablates, blocks, prevents or delays SOC formation and then assays
+  resting-zone stemness returned zero records (see search log for g_l2stem_003). The hypothesis is therefore
+  correlational in one species. It is load-bearing for fusion models in L7 and should be cited as a hypothesis,
+  not a mechanism.
+quantitative:
+- parameter: Secondary colony formation from PTHrP-creER cells pulsed at P9 (pre-SOC)
+  value: '3.3'
+  unit: '% (17/518 clones)'
+  conditions: mouse ex vivo colony assay
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: none survived further passage
+- parameter: Secondary colony formation from PTHrP-creER cells pulsed at P12 (SOC developing)
+  value: '16.3'
+  unit: '% (16/98 clones)'
+  conditions: mouse ex vivo colony assay
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: 2/16 passaged >=9 generations
+- parameter: Causal experiments manipulating SOC formation and assaying RZ stemness
+  value: '0'
+  unit: studies retrieved
+  conditions: Europe PMC, 2026-08-05, query in search log g_l2stem_003
+  species: not_applicable
+  source_ref: mizuhashi2018
+  uncertainty: null result of a literature search, not a measurement
+  value_unverified: true
+localization:
+- 'mouse RZ/SOC interface: temporal association only'
 human_evidence: absent
+human_evidence_note: Human SOC timing is well described radiographically and varies by bone (distal femur
+  around term, others through childhood), but no human study has related SOC appearance to any property
+  of resting zone cells.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Two mouse studies with coincident timing; humans form SOCs at bone-specific times
+  over years, which would predict staggered, bone-by-bone acquisition of resting-zone stemness - a prediction
+  nobody has tested.
+confidence: D
+key_refs:
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: In vitro self-renewability of PTHrP+ colony-forming cells rises between P9 and P12,
+    described as coinciding with active SOC development
+- ref_id: newton2019
+  pmid: '30814736'
+  doi: 10.1038/s41586-019-0989-6
+  first_author: Newton PT
+  year: 2019
+  type: primary_abstract_only
+  one_line_finding: Clonal switch from progenitor depletion to stable monoclonal columns is reported as
+    coinciding with SOC formation
+- ref_id: muruganandan2022
+  pmid: '35523895'
+  doi: 10.1038/s41467-022-30247-1
+  first_author: Muruganandan S
+  year: 2022
+  type: primary
+  one_line_finding: FoxA2+ long-term stem cells sit precisely at the cartilage/SOC interface, consistent
+    with but not demonstrating an SOC-derived niche
+open_questions:
+- g_l2stem_003
+- g_l2stem_011
+contradicts:
+- finite_proliferative_capacity_model
+layer: L2
+stub: false
 last_verified: '2026-08-05'

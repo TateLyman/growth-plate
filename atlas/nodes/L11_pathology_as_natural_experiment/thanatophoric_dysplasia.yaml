@@ -1,7 +1,106 @@
 id: thanatophoric_dysplasia
-name: Thanatophoric dysplasia
+name: Thanatophoric dysplasia types I and II
+aliases:
+- TD
+- TD1
+- TD2
+- FGFR3 R248C
+- FGFR3 K650E
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Thanatophoric dysplasia is the lethal end of the FGFR3 allelic series and the only member of
+  the series in which the human growth plate has actually been examined. Two mutation classes
+  map onto the two clinical types: type II is caused by Lys650Glu in the tyrosine kinase
+  activation loop, found in 16 of 16 TD2 cases in the defining study; type I is caused by
+  substitutions that create an unpaired cysteine in the extracellular domain, Arg248Cys in 22 of
+  39 cases plus Ser371Cys, which drive ligand-independent covalent dimerisation. Both classes
+  constitutively activate the receptor more strongly than the achondroplasia G380R allele, and
+  the biochemical ordering K650E > G380R matches the phenotypic ordering. In 91 registry cases
+  with matched radiology and histopathology, the mutation predicted the anatomy: K650E cases had
+  straight femora, craniosynostosis and frequently a cloverleaf skull, whereas all other
+  genotypes had curved femora; critically, the K650E growth plates were BETTER preserved than
+  the R248C and Y373C plates, so severity of receptor activation and severity of growth plate
+  disorganisation are not monotonically related. Death is normally in the perinatal period from
+  thoracic insufficiency, so no adult height exists; birth length is profoundly reduced and the
+  disorder affects about 1 in 20,000 live births.
+quantitative:
+- parameter: birth prevalence of thanatophoric dysplasia
+  value: 1 in 20,000
+  unit: live births
+  conditions: population estimate stated in the mutation-defining study
+  species: human
+  source_ref: tavormina1995
+  uncertainty: not reported with CI
+- parameter: K650E frequency in thanatophoric dysplasia type II
+  value: 16/16
+  unit: cases
+  conditions: sporadic TD2 cases sequenced
+  species: human
+  source_ref: tavormina1995
+  uncertainty: n=16
+- parameter: R248C frequency in thanatophoric dysplasia type I
+  value: 22/39
+  unit: cases
+  conditions: TD1 cases; one further case carried S371C
+  species: human
+  source_ref: tavormina1995
+  uncertainty: n=39
+- parameter: cases with matched genotype, radiology and histopathology
+  value: '91'
+  unit: cases
+  conditions: International Skeletal Dysplasia Registry; every case had an identifiable FGFR3 mutation
+  species: human
+  source_ref: wilcox1998
+  uncertainty: n=91
+- parameter: relative constitutive FGFR3 kinase activity, K650M vs K650E
+  value: ~3
+  unit: fold
+  conditions: transient transfection of FGFR3 mutant constructs
+  species: in_vitro_human_cell
+  source_ref: tavormina1999
+  uncertainty: fold-change as reported; no CI given
+localization:
+- 'human growth plate (autopsy): disorganised with shortened proliferative columns in all TD genotypes;
+  better preserved in K650E than in R248C/Y373C cases (wilcox1998)'
+human_evidence: direct
+human_evidence_note: Genotype-radiology-histopathology correlation was performed on 91 human cases
+  with autopsy growth plate material - the only place in the FGFR3 series where human growth plate
+  tissue has been systematically read.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node with human tissue evidence.
+confidence: A
+key_refs:
+- ref_id: tavormina1995
+  pmid: '7773297'
+  first_author: Tavormina PL
+  year: 1995
+  type: primary
+  one_line_finding: TD2 = K650E (16/16); TD1 = R248C (22/39) or S371C - different FGFR3 domains,
+    different lethal phenotypes.
+- ref_id: wilcox1998
+  pmid: '9677066'
+  first_author: Wilcox WR
+  year: 1998
+  type: primary
+  one_line_finding: '91 TD cases: K650E gives straight femora, craniosynostosis and BETTER-preserved
+    growth plates than R248C/Y373C.'
+- ref_id: naski1996
+  pmid: '8640234'
+  first_author: Naski MC
+  year: 1996
+  type: primary
+  one_line_finding: 'Graded constitutive activation: K650E (TD) exceeds G380R (achondroplasia).'
+- ref_id: tavormina1999
+  pmid: '10053006'
+  first_author: Tavormina PL
+  year: 1999
+  type: primary
+  one_line_finding: K650M gives ~3x the constitutive activity of K650E yet is non-lethal (SADDAN).
+open_questions:
+- g_l11path_004
 last_verified: '2026-08-05'

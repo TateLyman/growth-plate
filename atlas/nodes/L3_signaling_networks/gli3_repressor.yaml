@@ -1,7 +1,48 @@
 id: gli3_repressor
 name: GLI3R
+aliases:
+- GLI3 repressor
 type: protein
 layer: L3
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  In the absence of Hedgehog signalling, full-length GLI3 is proteolytically processed in the primary
+  cilium to a truncated repressor, GLI3R, which shuts down Hedgehog target transcription. GLI3R is the
+  dominant transducer of Ihh in growth plate cartilage: deleting Gli3 in Ihh-null mice restores
+  chondrocyte proliferation and the normal position of the hypertrophic transition, rescuing most of
+  the cartilage phenotype, although osteoblast and vascular defects persist and therefore require
+  additional Ihh effectors (Hilton 2005). Koziel 2005 separates two GLI3R-dependent steps - the onset
+  of hypertrophy and prehypertrophic maturation - showing that a single repressor gradient reads out at
+  more than one differentiation checkpoint. The practical consequence is that in this tissue Ihh works
+  mainly by derepression, so the amplitude of the Ihh signal is encoded as the local GLI3R
+  concentration; that concentration has never been measured across zones in any species.
+localization:
+- 'mouse PZ (high GLI3R away from Ihh source, low near it): inferred from genetics, not directly measured'
+- 'human growth plate: unconfirmed'
+human_evidence: indirect
+human_evidence_note: Human GLI3 mutations cause Greig cephalopolysyndactyly and Pallister-Hall syndrome,
+  which are limb-patterning phenotypes rather than characterised growth plate lesions.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Rescue genetics is murine; the human GLI3 phenotype reports limb patterning,
+  not growth plate zonal control.
+confidence: C
+key_refs:
+- ref_id: hilton2005
+  pmid: '16141219'
+  first_author: Hilton MJ
+  year: 2005
+  type: primary
+  one_line_finding: Gli3 removal rescues most of the Ihh-null cartilage phenotype but not osteoblast/vascular
+    defects.
+- ref_id: koziel2005
+  pmid: '16284117'
+  first_author: Koziel L
+  year: 2005
+  type: primary
+  one_line_finding: Gli3 repressor acts at two distinct steps of chondrocyte differentiation downstream
+    of Ihh.
+open_questions:
+- g_l3core_002
 last_verified: '2026-08-05'

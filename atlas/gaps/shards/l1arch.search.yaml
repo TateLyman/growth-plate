@@ -1,0 +1,91 @@
+searches:
+- gap_id: g_l1arch_001
+  database: PubMed
+  exact_query_string: (growth plate[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND humans[MeSH
+    Terms] AND (stereolog*[tiab] OR morphometr*[tiab] OR histomorphometr*[tiab]) AND (hypertroph*[tiab])
+    AND (elongation[tiab] OR "longitudinal growth"[tiab] OR "growth rate"[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 4
+  screened_count: 4
+  reason_none_qualified: Four hits. PMID 11033444 (Byers 2000) is human histomorphometry of rib growth
+    plate but reports zone heights only, not a partition of elongation. PMID 31997656 correlates growth
+    plate morphometry with tibial growth but the human arm is radiographic (plate height/width) with no
+    cellular stereology. PMIDs 15647824 and 10487224 are rodent. No human study partitions elongation
+    among division, matrix synthesis and hypertrophy.
+- gap_id: g_l1arch_003
+  database: Europe PMC
+  exact_query_string: septoclast*
+  filters: resultType=core, pageSize=60, no date limit
+  date_run: '2026-08-05'
+  hit_count: 54
+  screened_count: 54
+  reason_none_qualified: All 54 records screened by title and, where ambiguous, abstract. Every primary
+    observation of septoclasts is in mouse (35091558, 29464321, 33398436, 28500502, 35195769, 42324641,
+    41319243, 40387924, 19893052), rat (7730591, 35537657, 32816022, 24879443) or bovine calf costochondral
+    junction (33884197). The remainder are reviews, conference abstract collections, or unrelated osteoclast/vascular
+    papers. Not one reports septoclasts, FABP5+ chondro-osseous border cells, or an equivalent population
+    in human growth plate tissue. A narrower run of 'septoclast* AND (human OR "Homo sapiens")' returned
+    38 records, all of which were rodent-tissue studies or reviews that merely mention human relevance.
+- gap_id: g_l1arch_006
+  database: PubMed
+  exact_query_string: (("growth plate"[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND (elongation[tiab]
+    OR "growth velocity"[tiab] OR "growth rate"[tiab])) AND (implanted[tiab] OR marker[tiab] OR transducer[tiab]
+    OR radiostereometr*[tiab] OR tantalum[tiab]) AND humans[MeSH Terms] AND (daily[tiab] OR "short-term"[tiab]
+    OR continuous[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 2
+  screened_count: 2
+  reason_none_qualified: 'Two hits, neither relevant: PMID 40394920 is a serum miRNA panel as a surrogate
+    marker of GH response, and PMID 39674288 is a CDK8 inhibitor study in achondroplasia model mice. No
+    human study measures physeal elongation directly with implanted markers or transducers at daily resolution.
+    A companion PubMed query ''(saltation[tiab] OR saltatory[tiab] OR stasis[tiab]) AND (growth plate[tiab]
+    OR physis[tiab] OR "bone elongation"[tiab] OR "longitudinal bone growth"[tiab])'' returned 7 records,
+    of which the only direct high-frequency physeal measurements are in rabbit (8119172) and dog (21470252).'
+- gap_id: g_l1arch_007
+  database: PubMed
+  exact_query_string: ("oxygen tension"[tiab] OR pO2[tiab] OR "partial pressure of oxygen"[tiab]) AND
+    (growth plate[tiab] OR "epiphyseal plate"[tiab] OR physis[tiab]) AND humans[MeSH Terms]
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 4
+  screened_count: 4
+  reason_none_qualified: Four hits. PMID 41253283 is ToF-SIMS mineral/organic mapping of human growth
+    plate with no oxygen measurement; PMID 19419319 is an in vitro chondrocyte study of ANK expression
+    under imposed oxygen tensions, not a tissue measurement; PMID 16425255 is a review; PMID 711109 is
+    a 1978 non-English clinical paper on fracture effects. No study reports measured oxygen tension in
+    human growth plate tissue. The only zonal measurements in any species remain Brighton and Heppenstall
+    1971 in rat and rabbit, whose numeric values are not retrievable from any indexed abstract (queued
+    in access_queue).
+- gap_id: g_l1arch_008
+  database: PubMed
+  exact_query_string: (chondrocyte[tiab] AND (swelling[tiab] OR "dry mass"[tiab] OR "volume increase"[tiab]
+    OR hypertrophy[tiab])) AND (human[tiab] OR humans[MeSH Terms]) AND ("growth plate"[tiab] OR physis[tiab])
+    AND (quantitative phase[tiab] OR interferometr*[tiab] OR "cell volume"[tiab] OR density[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 6
+  screened_count: 6
+  reason_none_qualified: 'Six hits: a mathematical model of osteochondral regeneration (38908475), an
+    HDAC4/MMP-13 mouse study (27320207), an in vitro chondrocyte dedifferentiation study (23758619), a
+    BMP-2/Wnt signalling study (22513174), a chondrosarcoma type X collagen study (22116208) and a review
+    of steroid effects (19940493). None measures single-cell volume or dry mass density in human growth
+    plate chondrocytes. The three-phase enlargement trajectory remains described only in mouse and jerboa
+    (cooper2013).'
+- gap_id: g_l1arch_012
+  database: PubMed
+  exact_query_string: ("cell cycle"[tiab] OR "cycle time"[tiab] OR "labelling index"[tiab] OR "labeling
+    index"[tiab] OR bromodeoxyuridine[tiab] OR Ki-67[tiab]) AND ("growth plate"[tiab] OR physis[tiab]
+    OR "epiphyseal plate"[tiab]) AND humans[MeSH Terms] AND (proliferative zone[tiab] OR chondrocyte[tiab])
+  filters: no date limit, retmax=60, esearch db=pubmed
+  date_run: '2026-08-05'
+  hit_count: 19
+  screened_count: 19
+  reason_none_qualified: All 19 screened. Every record is either a mouse/rat genetic or pharmacological
+    study (32759468, 24551245, 17652426, 16869727, 20470884, 10098598, 2207391), an in vitro human chondrocyte
+    differentiation study without cell-cycle-phase timing (21538935, 19898608, 31601652, 19351720, 11739785),
+    or a review (34137454, 33064251, 10799356, 10372550, 7634645, 17098451, 16144844). None reports G1,
+    S, G2 or M duration, cumulative labelling index kinetics, or a growth fraction for human proliferative-zone
+    chondrocytes. The only human numbers remain a derived cycle time (kember1976) and an in vitro labelling
+    index in four subjects (thurston1985).

@@ -1,7 +1,82 @@
 id: clonal_exhaustion
 name: Clonal exhaustion of growth plate progenitors
 type: process
-layer: L2
-stub: true
+summary: 'Clonal exhaustion is the loss of individual founder clones from the growth plate over time,
+  as distinct from a fall in per-cell proliferation. It is directly visible in mouse lineage tracing:
+  after a single P6 PTHrP-creER pulse the number of labelled columns falls progressively until about six
+  months of chase and then plateaus, meaning most labelled founders stop contributing while a minority
+  persist for at least a year. In vitro the same asymmetry appears as a small tail of long-lived clones
+  - 12.5% of secondary colonies from a P12 pulse could be passaged nine times, giving roughly 2-3% of
+  PTHrP+ colony-forming cells with long-term self-renewal, and 9% of FoxA2+ colonies versus 1.4% of PTHrP+
+  colonies reaching late passage. Clonal exhaustion therefore behaves like neutral drift with a surviving
+  minority rather than synchronous failure of a whole compartment. Interventions that consume the pool
+  accelerate it: growth hormone reduces the slow-cycling label-retaining population by pushing cells into
+  transit-amplifying differentiation.'
+quantitative:
+- parameter: Time at which labelled column number plateaus after a single P6 pulse
+  value: '6'
+  unit: months of chase
+  conditions: PTHrP-creER;tdTomato mouse
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: columns still present at 12 months
+- parameter: Long-term self-renewing fraction among PTHrP+ colony-forming cells
+  value: 2-3
+  unit: '%'
+  conditions: serial passaging of P12-pulse colonies, mouse
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: authors' derived estimate
+- parameter: FoxA2+ colonies surviving to passage 9+ vs PTHrP+ colonies to passage 5
+  value: 8.9 vs 1.4
+  unit: '% of colonies'
+  conditions: P18 mouse, parallel assays
+  species: mouse
+  source_ref: muruganandan2022
+  uncertainty: 10/112 and 2/143 respectively
+localization:
+- 'mouse RZ and columns: confirmed by lineage tracing (mizuhashi2018)'
+- 'human: unmeasurable with current methods'
 human_evidence: absent
+human_evidence_note: Clone-level dynamics cannot be observed in human growth plate.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Clone counting requires genetic labelling; in humans neither the founder number
+  nor the clone lifetime is accessible.
+confidence: C
+key_refs:
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  doi: 10.1038/s41586-018-0662-5
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Labelled column number declines to a plateau, with a small long-lived founder minority
+- ref_id: newton2019
+  pmid: '30814736'
+  doi: 10.1038/s41586-019-0989-6
+  first_author: Newton PT
+  year: 2019
+  type: primary_abstract_only
+  one_line_finding: Fetal/neonatal growth depletes progenitors while later growth sustains stable clones
+- ref_id: chu2025
+  pmid: '41289405'
+  doi: 10.1073/pnas.2512316122
+  first_author: Chu NTL
+  year: 2025
+  type: primary
+  one_line_finding: Growth hormone accelerates consumption of the slow-cycling stem pool
+- ref_id: muruganandan2022
+  pmid: '35523895'
+  doi: 10.1038/s41467-022-30247-1
+  first_author: Muruganandan S
+  year: 2022
+  type: primary
+  one_line_finding: Quantifies differing clonal longevity between two resting zone populations
+open_questions:
+- g_l2stem_010
+- g_l2stem_005
+layer: L2
+stub: false
 last_verified: '2026-08-05'

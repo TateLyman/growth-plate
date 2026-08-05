@@ -2,6 +2,45 @@ id: ihh_bmp_crosstalk
 name: IHH-BMP crosstalk
 type: process
 layer: L3
-stub: true
+stub: false
+summary: |
+  BMP and Ihh/PTHrP signalling are interdependent controllers of the same two decisions - how long
+  chondrocytes proliferate and when they hypertrophy. In mouse and chick limb explants, BMP signalling
+  delays hypertrophy partly by maintaining Ihh expression, while Ihh in turn raises BMP transcription
+  in perichondrium and cartilage; blocking BMP shortens the proliferative column even when the
+  PTHrP arm is intact, so the two pathways act in parallel rather than in series (Minina 2001).
+  miR-433 targets both BMP and Indian hedgehog signalling to coordinate murine postnatal growth plate
+  dynamics, providing a shared post-transcriptional node (Thakore 2026). The crosstalk is documented as
+  a set of epistatic and explant results; no study has measured the relative contribution of the BMP
+  and Ihh arms to a single quantitative growth output such as elongation rate, in any species.
+localization:
+- 'mouse and chick PHZ/PERI: functionally confirmed in explant culture (minina2001)'
+- 'human growth plate: unconfirmed'
 human_evidence: absent
+human_evidence_note: No human data on IHH-BMP interaction in growth plate; human BMP-pathway skeletal
+  disorders have not been analysed for Ihh output.
+species_basis:
+- mouse
+- chicken
+translation_risk: high
+translation_risk_reason: Explant epistasis in mouse and chick only; no human tissue or genetic test of
+  the interaction.
+confidence: C
+key_refs:
+- ref_id: minina2001
+  pmid: '11714677'
+  first_author: Minina E
+  year: 2001
+  type: primary
+  one_line_finding: BMP and Ihh/PTHrP signalling interact to coordinate proliferation and hypertrophy;
+    BMP maintains Ihh expression.
+- ref_id: thakore2026
+  pmid: '41342396'
+  first_author: Thakore P
+  year: 2026
+  type: primary
+  one_line_finding: miR-433 targets both BMP and Indian hedgehog signalling in the murine postnatal growth
+    plate.
+open_questions:
+- g_l3core_009
 last_verified: '2026-08-05'

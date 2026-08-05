@@ -1,7 +1,137 @@
 id: cell_cycle_time_pz
-name: Proliferative zone cell cycle time
+name: Proliferative zone chondrocyte cell cycle time
+aliases:
+- PZ cycle time
+- chondrocyte cell cycle duration
 type: process
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Proliferative-zone chondrocytes are slow-cycling compared with most renewing tissues, and the
+  cycle length is set almost entirely by G1. In 28-day-old rats measured in vivo by repeated bromodeoxyuridine
+  pulses, total cycle time is 30.9 h in the fast proximal tibia, 34.0 h in the distal radius, 48.7 h in
+  the distal tibia and 76.3 h in the slow proximal radius; the proximal tibia and distal radius do not
+  differ significantly but all other pairwise differences do. S phase is 3.4-6.1 h, G2 is 3.0 h and M
+  is 0.5-0.6 h, so essentially the whole 2.5-fold spread in cycle time is G1. This makes G1 length a locally
+  controlled determinant of differential growth, in parallel with the hypertrophic volume set point. The
+  human situation is very different and much worse characterised: Kember and Sissons derived a mean cycle
+  time of about 20 days for the human distal femoral proliferative zone from a column length of 24 cells
+  and a radiographic growth rate of 1.4 cm/yr, and explicitly warned against extrapolating rodent kinetics
+  to humans. That figure is inferred, not measured; it assumes steady state and that every proliferative-zone
+  cell cycles. Thurston and Kember''s in vitro tritiated thymidine labelling of human plates found no
+  labelled cells at all in two of four subjects.'
+quantitative:
+- parameter: total cell cycle time, proliferative zone
+  value: '30.9'
+  unit: h
+  conditions: proximal tibia, 28-day-old rat, repeated BrdU pulse labelling, regression of labelling index
+    on inter-pulse interval
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not reported; differences among plates tested at p<0.05
+- parameter: total cell cycle time, proliferative zone
+  value: '34.0'
+  unit: h
+  conditions: distal radius, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not significantly different from proximal tibia
+- parameter: total cell cycle time, proliferative zone
+  value: '48.7'
+  unit: h
+  conditions: distal tibia, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: significantly different from proximal tibia, p<0.05
+- parameter: total cell cycle time, proliferative zone
+  value: '76.3'
+  unit: h
+  conditions: proximal radius, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: significantly different from all others, p<0.05
+- parameter: S phase duration
+  value: 3.4-6.1
+  unit: h
+  conditions: proliferative zone, four growth plates, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: range across four plates
+- parameter: G2 phase duration
+  value: '3.0'
+  unit: h
+  conditions: proliferative zone, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: not reported
+- parameter: M phase duration
+  value: 0.5-0.6
+  unit: h
+  conditions: proliferative zone, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996a
+  uncertainty: range across four plates
+- parameter: mean cell cycle time, proliferative zone (derived, not measured)
+  value: '20'
+  unit: days
+  conditions: human distal femur, derived from 24 cells per column and 1.4 cm/yr growth rate
+  species: human
+  source_ref: kember1976
+  uncertainty: derived quantity; assumes steady state and 100% growth fraction
+- parameter: mean cell cycle time, proliferative zone
+  value: '2'
+  unit: days
+  conditions: rodent, as quoted for comparison by the authors
+  species: rat
+  source_ref: kember1976
+  uncertainty: author's comparison figure
+localization:
+- 'rat PZ: measured in vivo (wilsman1996a)'
+- 'human distal femur PZ: derived only (kember1976)'
+- 'human PZ: never measured directly'
+human_evidence: indirect
+human_evidence_note: The only human figure is a ~20-day cycle time derived arithmetically from column
+  cell counts and radiographic growth rate (kember1976), supported by an in vitro labelling study in four
+  subjects in which two yielded no labelled cells (thurston1985).
+species_basis:
+- rat
+- human
+- porcine
+translation_risk: high
+translation_risk_reason: The human and rat values differ by roughly 16-fold and the human value is derived
+  rather than measured. Any inference about proliferation-targeting drug exposure windows, radiation sensitivity
+  or chemotherapy effects on the physis depends on which figure is right.
+confidence: C
+key_refs:
+- ref_id: wilsman1996a
+  pmid: '8764865'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Total PZ cycle time in rat ranges from 30.9 h to 76.3 h across four plates, with nearly
+    all the variation in G1.
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: 'Human distal femur: 24 cells per proliferative column and a derived mean cycle time
+    of ~20 days; explicit warning against rodent-to-human extrapolation.'
+- ref_id: thurston1985
+  pmid: '3864550'
+  first_author: Thurston MN
+  year: 1985
+  type: primary_abstract_only
+  one_line_finding: In vitro tritiated thymidine labelling of human and porcine growth plates; two of
+    four human subjects gave no labelled cells, and pig kinetics lie between human and rodent.
+- ref_id: farnum1993
+  pmid: '8443686'
+  first_author: Farnum CE
+  year: 1993
+  type: primary
+  one_line_finding: Established single- and repeated-pulse BrdU labelling as the method for measuring
+    growth plate proliferative kinetics in vivo.
+open_questions:
+- g_l1arch_002
+- g_l1arch_012
+pending_source: thurston1985
 last_verified: '2026-08-05'

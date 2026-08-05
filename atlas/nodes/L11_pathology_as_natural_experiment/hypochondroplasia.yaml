@@ -1,7 +1,106 @@
 id: hypochondroplasia
 name: Hypochondroplasia
+aliases:
+- HCH
+- FGFR3 N540K
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Hypochondroplasia is the weak allele of the FGFR3 series and therefore the human dose control
+  for achondroplasia. The commonest lesion is c.1620C>A or C>G giving Asn540Lys in the proximal
+  tyrosine kinase domain, found in 8 of 14 unrelated hypochondroplasia patients in the original
+  screen and accounting for 50-70 percent of cases; a second, rarer class sits at the Lys650
+  codon (K650N, K650Q) and produces weaker constitutive kinase activation than the K650E and
+  K650M substitutions that cause thanatophoric dysplasia type II and SADDAN. The molecular
+  consequence is the same as in achondroplasia - ligand-independent FGFR3 activity - but of
+  smaller magnitude, and the phenotype scales with it: milder rhizomelia, less lumbar
+  interpedicular narrowing, macrocephaly that may be absent, and adult stature that overlaps the
+  lower end of the normal range rather than falling to 130 cm. No human growth plate histology
+  has been reported for hypochondroplasia. Growth hormone raises first-year velocity but a
+  six-patient long-term series concluded the gain was not sufficient to secure an adequate final
+  height, consistent with an FGFR3-intrinsic ceiling rather than a GH-axis defect. Neurological
+  comorbidity (temporal lobe seizures, intellectual disability) is more frequent than in
+  achondroplasia, which is mechanistically notable because FGFR3 is also expressed in the
+  developing cortex.
+quantitative:
+- parameter: share of hypochondroplasia caused by FGFR3 Asn540Lys
+  value: 50-70
+  unit: percent
+  conditions: clinical cohorts; 8/14 in the original mutation screen
+  species: human
+  source_ref: bellus1995
+  uncertainty: n=14 unrelated patients in the discovery series
+- parameter: N540K frequency among reported hypochondroplasia cases
+  value: 60-70
+  unit: percent
+  conditions: Korean single-centre series framing
+  species: human
+  source_ref: kim2023
+  uncertainty: n=20 genetically confirmed N540K patients in that series
+- parameter: patients in the largest single-genotype (N540K) clinical series located
+  value: '20'
+  unit: patients
+  conditions: 7 men, 13 women; mean age at first visit 3.5 +/- 1.0 y; mean follow-up 6.8 +/- 0.6
+    y
+  species: human
+  source_ref: kim2023
+  uncertainty: means +/- SEM as reported
+- parameter: genu varum frequency in N540K hypochondroplasia
+  value: '55.0'
+  unit: percent
+  conditions: 11 of 20 patients
+  species: human
+  source_ref: kim2023
+  uncertainty: n=20
+- parameter: macrocephaly frequency in N540K hypochondroplasia
+  value: '45.0'
+  unit: percent
+  conditions: 9 of 20 patients
+  species: human
+  source_ref: kim2023
+  uncertainty: n=20
+localization:
+- 'human growth plate: no published histology in hypochondroplasia (see gap g_l11path_003)'
+human_evidence: direct
+human_evidence_note: Genotype and clinical phenotype are established directly in humans; the growth
+  plate cellular phenotype has never been described in a hypochondroplasia patient.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node. Mechanistic statements about zone-specific chondrocyte
+  behaviour derive from the Fgfr3 N534K mouse, not from human tissue.
+confidence: A
+key_refs:
+- ref_id: bellus1995
+  pmid: '7670477'
+  first_author: Bellus GA
+  year: 1995
+  type: primary
+  one_line_finding: FGFR3 N540K in 8/14 unrelated hypochondroplasia patients; hypochondroplasia is
+    allelic to achondroplasia.
+- ref_id: bellus2000
+  pmid: '11055896'
+  first_author: Bellus GA
+  year: 2000
+  type: primary
+  one_line_finding: K650N and K650Q give hypochondroplasia-like disease with weaker kinase activation
+    than K650E/K650M.
+- ref_id: kim2023
+  pmid: '36442838'
+  first_author: Kim HY
+  year: 2023
+  type: primary_abstract_only
+  one_line_finding: '20 Korean N540K patients: clinical spectrum and GH response.'
+- ref_id: bober1993
+  pmid: '20301650'
+  first_author: Bober MB
+  year: 1993
+  type: review
+  one_line_finding: GeneReviews clinical and radiological definition of hypochondroplasia.
+open_questions:
+- g_l11path_003
+- g_l11path_002
 last_verified: '2026-08-05'

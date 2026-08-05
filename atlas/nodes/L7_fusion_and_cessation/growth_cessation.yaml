@@ -2,6 +2,89 @@ id: growth_cessation
 name: Growth cessation
 type: process
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- cessation of longitudinal growth
+summary: |
+  Growth cessation and epiphyseal fusion are related but not identical, and conflating them is a
+  recurring error. In humans they are effectively simultaneous: fusion destroys the plate, so
+  growth at that site is over. In the rat they are dissociated: longitudinal growth ceases while
+  a histologically recognisable plate persists, sealed at the metaphyseal edge by a bone band,
+  with acellular regions and sporadic residual chondrocyte proliferation that cannot produce net
+  elongation (roach2003, rat). In the rabbit, cessation and fusion are coupled as in humans, and
+  fusion occurs precisely when the chondrocyte proliferation rate approaches zero (weise2001,
+  rabbit). This dissociation defines the correct endpoint hierarchy for the atlas: an intervention
+  that changes growth rate has not been shown to change fusion, and an intervention that changes
+  plate height has been shown to change neither. In humans, cessation is site-asynchronous - the
+  foot fuses before the knee, the knee before the wrist (kvist2021) - so whole-body stature stops
+  increasing only when the last major contributing plate closes, and the residual vertebral
+  contribution continues after long-bone fusion. Cessation is estrogen-gated: aromatase-deficient
+  men continue to grow slowly into adulthood despite severe GH deficiency, and stop when
+  estradiol replacement is adequate (rochira2010, lanfranco2008).
+quantitative:
+- parameter: proliferation rate at which longitudinal growth and fusion coincide
+  value: approaching zero
+  unit: chondrocyte proliferation rate
+  conditions: senescent rabbit growth plate
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: qualitative threshold
+- parameter: age at which rat longitudinal growth has ceased with plate still present
+  value: 62-80
+  unit: weeks
+  conditions: Wistar rat femur and tibia
+  species: rat
+  source_ref: roach2003
+  uncertainty: study age range
+localization:
+- 'human: site-asynchronous, ascending foot to wrist (kvist2021)'
+- 'rat: cessation without plate destruction (roach2003)'
+human_evidence: direct
+human_evidence_note: >-
+  Human cessation timing is measured directly by serial imaging of fusion status in cohorts of
+  hundreds (kvist2021) and by the continued growth of estrogen-deficient men until replacement.
+species_basis:
+- human
+- rat
+- rabbit
+translation_risk: moderate
+translation_risk_reason: >-
+  The human process is well described phenomenologically; the mechanistic account depends on
+  rabbit and rat data in which cessation and fusion are coupled differently.
+confidence: A
+key_refs:
+- ref_id: roach2003
+  pmid: '12588965'
+  first_author: Roach HI
+  year: 2003
+  type: primary
+  one_line_finding: >-
+    Rats cease longitudinal growth while retaining a histologically present growth plate.
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: >-
+    In rabbits, fusion occurs when the chondrocyte proliferation rate approaches zero, coupling
+    cessation to fusion.
+- ref_id: kvist2021
+  pmid: '33047349'
+  first_author: Kvist O
+  year: 2021
+  type: primary
+  one_line_finding: >-
+    Human growth plate fusion is site-asynchronous and occurs in an ascending order from foot to
+    wrist.
+- ref_id: rochira2010
+  pmid: '20164294'
+  first_author: Rochira V
+  year: 2010
+  type: primary
+  one_line_finding: >-
+    Four aromatase-deficient men reached tall stature despite severely impaired GH secretion,
+    because delayed bone maturation prolonged the growth period.
+open_questions:
+- g_l7fuse_011
+contradicts: []
 last_verified: '2026-08-05'
