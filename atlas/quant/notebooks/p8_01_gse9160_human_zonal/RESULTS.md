@@ -13,6 +13,10 @@ python3 posthoc_method_controls.py
 python3 donor_separation.py
 ```
 
+**Reproducibility checked, not assumed.** `_data/` was deleted and the whole chain
+re-run from a cold fetch of the live GEO records. Every committed file in `results/`
+came back byte-identical, including the background control (10,063 / 17,639).
+
 ---
 
 ## 0. The headline, before the detail
