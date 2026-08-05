@@ -597,17 +597,24 @@
    "layer": "L3",
    "why_it_matters": "Signal duration in the CNP arm is set by cGMP hydrolysis, so the PDE complement determines how much growth a given amount of CNP buys. PDE inhibitors are already given chronically to children - PDE5 inhibitors for pulmonary arterial hypertension, PDE3 inhibitors for heart failure - and PDE inhibition is being proposed as a repurposing route for short stature. All of that rests on a human zonal map that does not exist.",
    "what_is_known": "Bulk transcript profiling of growth plate chondrocytes across human, mouse and chicken reports PDE1B, 3B, 4B, 4D, 5A, 7A, 8A and 10A, with PDE6, 9 and 11 family genes reported absent from skeletal tissue (ursachi2026, indexing takcs2023 and kawabe2025). Functional assignment is species-split: PDE5 dominates cGMP hydrolysis in newborn rat epiphyseal chondrocytes (wang2018) whereas PDE3B is the functional target in mouse (kawabe2025). The only zone-resolved cartilage PDE data are from human and bovine ARTICULAR cartilage - PDE3B superficial, PDE7A deep (grogan2013).",
-   "what_is_missing": "No study localises any PDE isoform to a growth plate zone in human tissue, by immunohistochemistry, in situ hybridisation, laser-capture transcriptomics or spatial transcriptomics. No human growth plate PDE enzymatic activity assay exists. PDE9A and PDE1C, in particular, have no primary growth plate literature in any species.",
+   "what_is_missing": "Direct cGMP-hydrolysing activity measurement in human growth plate lysate with isoform-selective inhibitors, zone-resolved. Transcript-level re-analysis (P8-01) has excluded PDE1 and PDE5A as transcriptionally prominent and leaves PDE2A as the sole candidate to test first.",
    "nearest_evidence": [
     "ursachi2026",
     "wang2018",
     "kawabe2025",
     "grogan2013",
-    "takcs2023"
+    "takcs2023",
+    "gse9160"
    ],
    "discriminating_experiment": "Obtain human growth plate cartilage from guided-growth (hemiepiphysiodesis) or limb-lengthening surgery in children, laser-capture the resting, proliferative, prehypertrophic and hypertrophic zones, and run (a) targeted RNA-seq or Nanostring across all 21 PDE genes, and (b) selective inhibitor-resolved cGMP hydrolysis assays on zone lysates using cilostamide (PDE3), sildenafil (PDE5), PF-04447943 (PDE9) and vinpocetine (PDE1). Prediction if the mouse assignment holds: cilostamide removes most zonal cGMP-hydrolysing activity and PDE3B transcript peaks in the proliferative/prehypertrophic zones. Prediction if the rat assignment holds: sildenafil removes most activity and PDE5A is uniform. A third outcome - a PDE not on either list dominating in human - is not excluded by any current data.",
    "tractability": 3,
-   "search_log_ref": "g_l3core_006"
+   "search_log_ref": "g_l3core_006",
+   "reanalysis": "p8_01_gse9160_human_zonal",
+   "reanalysis_ref": "gse9160",
+   "reanalysis_date": "2026-08-05",
+   "reanalysis_disposition": "answered_by_reanalysis",
+   "reanalysis_finding": "Re-analysis of GSE9160 (2 donors, 5 laser-captured compartments, distal femur, 11y10m F and 13y3m M) detects NO cGMP-hydrolysing phosphodiesterase across the zonal axis in both donors. PDE5A is represented by 8 probe sets and PDE1A/1B/1C by 14; not one clears the array-specific background threshold in either donor. PDE9A, PDE10A, PDE11A likewise undetected. The phosphodiesterases that ARE detected are predominantly cAMP-preferring: PDE4A (all five compartments, both donors), PDE4B, PDE4C, PDE4D, PDE7A, PDE8A. PDE2A (cGMP-stimulated) is detected in resting zone and perichondrium only and is the single cGMP-relevant candidate the data leaves standing.",
+   "reanalysis_residue": "Which isoform carries the dominant cGMP-HYDROLYSING ACTIVITY is an enzymatic question that transcript abundance cannot answer, and a transporter or enzyme can be functionally decisive below a microarray's floor. What is now established is that the isoforms dominating the pharmacological literature are not transcriptionally prominent in human physeal tissue."
   },
   {
    "gap_id": "g_l3core_007",
@@ -1319,14 +1326,21 @@
    "layer": "L11",
    "why_it_matters": "MCT8 deficiency produces a state that no other human condition can: high serum T3 with tissue-level hypothyroidism restricted to MCT8-dependent cells. If chondrocytes are MCT8-dependent, patients are locally hypothyroid at the growth plate despite thyrotoxic serum, and thyromimetic therapy (TRIAC, which enters cells independently of MCT8) should rescue growth. If chondrocytes are MCT8-independent, they are exposed to the elevated serum T3 and are effectively thyrotoxic, which advances maturation and would predict a shortened growth period - the opposite therapeutic implication.",
    "what_is_known": "MCT8 deficiency gives high T3, low-normal T4 and normal or mildly raised TSH, with severe neurological disease and impaired growth and weight gain. Congenital hypothyroidism shows what complete absence of thyroid hormone action does to the growth plate: arrest of terminal hypertrophy and epiphyseal dysgenesis with profoundly delayed bone age. Alternative thyroid hormone transporters (OATP1C1, MCT10) have tissue-specific distributions established largely in rodents.",
-   "what_is_missing": "No study localises MCT8, MCT10 or OATP1C1 protein or transcript in human growth plate cartilage, and no systematic auxology of MCT8-deficient patients reports height SDS and bone age together, which is the phenotypic discriminator.",
+   "what_is_missing": "Functional T3 uptake measurement in human growth plate chondrocytes with system-L inhibition (BCH) versus MCT8 inhibition. P8-01 has narrowed the candidate set: MCT8, MCT10 and OATP1C1 are all transcriptionally undetectable while LAT1 is present in every zone.",
    "nearest_evidence": [
     "li2026_2",
     "karimian2024",
-    "kochar2025"
+    "kochar2025",
+    "gse9160"
    ],
    "discriminating_experiment": "Two steps: (i) map MCT8, MCT10 and OATP1C1 in normal human physeal tissue by immunohistochemistry and spatial transcriptomics; (ii) in an MCT8-deficiency cohort, report height SDS with bone age and follow the response to TRIAC. Under chondrocyte MCT8-dependence, bone age is DELAYED despite high serum T3, and TRIAC accelerates growth and maturation; under MCT8-independence, bone age is ADVANCED by the high serum T3 and TRIAC does not change it.",
-   "tractability": 3
+   "tractability": 3,
+   "reanalysis": "p8_01_gse9160_human_zonal",
+   "reanalysis_ref": "gse9160",
+   "reanalysis_date": "2026-08-05",
+   "reanalysis_disposition": "answered_by_reanalysis",
+   "reanalysis_finding": "The thyroid hormone machinery is present but the canonical transporter is not. THRA and THRB are detected in all five compartments of both donors (THRB hypertrophic-maximal in both). DIO2, which activates T4 to T3, is detected in resting zone, proliferative zone and perichondrium. SLC7A5 (LAT1) is detected in ALL FOUR ZONES of BOTH donors and SLC7A8 (LAT2) in resting zone, proliferative zone and perichondrium. SLC16A2 (MCT8) is NOT detected - one probe set, one marginal call in the more sensitive donor's proliferative zone only. SLC16A10 (MCT10, 3 probe sets) and SLCO1C1 (OATP1C1, 2 probe sets) are not detected. DIO1 and DIO3 are not detected. The human growth plate chondrocyte is therefore unlikely to depend on MCT8, and the system-L transporters are the leading alternative.",
+   "reanalysis_residue": "A transporter can be functionally decisive at transcript levels below a microarray's floor, so this is evidence against MCT8 dependence rather than proof of independence. Which transporter actually carries the flux requires a transport measurement."
   },
   {
    "gap_id": "g_l11path_024",
@@ -1465,16 +1479,23 @@
    "layer": "L3",
    "why_it_matters": "Sclerosteosis (SOST null) includes increased stature, and romosozumab is a licensed sclerostin antibody. If sclerostin never reaches the growth plate chondrocyte, the tall stature of sclerosteosis is a bone-envelope effect and sclerostin blockade in a growing child would not be expected to alter longitudinal growth directly - a materially different safety and efficacy prediction from the assumption that SOST is a physeal brake.",
    "what_is_known": "Poole 2005 localises sclerostin protein to embedded osteocytes in human bone and shows it is absent from early osteoblasts. Balemans 2001 identifies SOST deficiency as the cause of sclerosteosis. Li 2006 gives a bone dose-response for DKK1 in mouse. Ruscitto 2023 shows exogenous sclerostin delivered in a hydrogel restores chondrocyte identity in articular cartilage of several species, demonstrating chondrocytes can respond to sclerostin even if they do not normally see it.",
-   "what_is_missing": "No study localising SOST or DKK1 protein by zone within growth plate cartilage in human or mouse, and no chondrocyte-restricted Sost or Dkk1 deletion with a longitudinal growth readout.",
+   "what_is_missing": "SOST in situ hybridisation or zone-resolved qPCR in more than two human donors, with bone contamination controlled. P8-01 settles DKK1 (present in cartilage, hypertrophic-enriched) and leaves SOST as a specific, cheap, well-posed experiment.",
    "nearest_evidence": [
     "poole2005",
     "balemans2001",
     "li2006",
-    "ruscitto2023"
+    "ruscitto2023",
+    "gse9160"
    ],
    "discriminating_experiment": "Dual immunofluorescence for sclerostin and DKK1 with a chondrocyte marker on human growth plate sections spanning Tanner stages, with sclerostin-antibody-treated and untreated non-human primate or rat physes as positive/negative controls, plus in situ hybridisation for SOST and DKK1 mRNA. Under a direct-action hypothesis, antagonist protein is detectable within the cartilage and forms a gradient from the chondro-osseous junction; under an indirect hypothesis, signal stops at the bony margins.",
    "tractability": 4,
-   "search_log_ref": "g_l3rest_007"
+   "search_log_ref": "g_l3rest_007",
+   "reanalysis": "p8_01_gse9160_human_zonal",
+   "reanalysis_ref": "gse9160",
+   "reanalysis_date": "2026-08-05",
+   "reanalysis_disposition": "answered_by_reanalysis_for_DKK1__attempted_inconclusive_for_SOST",
+   "reanalysis_finding": "DKK1 IS present in growth plate cartilage itself, detected in proliferative, prehypertrophic and hypertrophic zones in both donors, rising ~30-fold from resting to hypertrophic zone in the donor whose dissection resolves zones (376 to 11,530 units). SOST gives the most extreme donor disagreement in the dataset and is NOT resolvable here: donor 1 shows 8-48 units across the four zones against a threshold near 700 (absent), while donor 2 shows 4,274-11,320 against a threshold near 300 (abundant) and only 151 in its perichondrium - the opposite of the bone-derived expectation. A ~100-fold discrepancy on a single probe set that is not explained by donor 2's ~2x sensitivity advantage nor by its dissection quality, which would blur signal rather than create it. Also detected: SFRP1 (RZ), SFRP2 (PC), SFRP4 (RZ, HZ), FRZB (RZ, PZ, PC), LRP6. Not detected: LRP5, DKK2, WIF1.",
+   "reanalysis_residue": "SOST specifically. Real inter-individual variation, a sample-specific artefact, and bone contamination of one donor's cartilage samples are not distinguishable in a two-donor dataset."
   },
   {
    "gap_id": "g_l3rest_008",
@@ -1499,15 +1520,22 @@
    "layer": "L3",
    "why_it_matters": "Notch is a druggable pathway with clinically used gamma-secretase inhibitors, and the mouse data say it acts at two separable steps with different downstream logic. Applying that model to a growing child requires knowing whether the human plate uses it at all, and the only human chondrocyte data available come from diseased adult articular cartilage.",
    "what_is_known": "Mead 2009, Kohn 2015 and Rutkowski 2016 define the mouse genetics: NICD gain of function blocks hypertrophy, Rbpj loss increases proliferation and hypertrophic cell number, the onset step is SOX9-dependent and the terminal step is not, and HES1/HES5 rather than HEY factors carry the output. Hosaka 2013 shows NICD1 and NICD2 nuclear translocation in human osteoarthritic articular chondrocytes. Simpson 2011 shows stabilising NOTCH2 mutations cause human Hajdu-Cheney syndrome.",
-   "what_is_missing": "No zonal NICD, RBPJ-target or HES1 measurement in human growth plate; no human physeal tissue has been exposed to Notch inhibition ex vivo.",
+   "what_is_missing": "Zone-resolved Notch target-gene readout in human growth plate from more than one usable donor, and any functional perturbation in human tissue. P8-01 establishes component presence and absence (NOTCH4, DLL3, DLL4, HES5 undetected) but cannot localise activity.",
    "nearest_evidence": [
     "mead2009",
     "kohn2015",
     "hosaka2013",
-    "rutkowski2016"
+    "rutkowski2016",
+    "gse9160"
    ],
    "discriminating_experiment": "Cleaved-NOTCH1 (Val1744) and HES1 immunostaining across zones of human growth plate specimens, paired with an ex vivo experiment in which human growth plate explants or human iPSC-derived cartilage pellets are treated with DAPT and scored for COL10A1 induction. Under a conserved model, Notch activity is highest around the prehypertrophic transition and DAPT accelerates COL10A1 induction; under a divergent model, activity is uniform and DAPT has no effect on hypertrophic markers.",
-   "tractability": 3
+   "tractability": 3,
+   "reanalysis": "p8_01_gse9160_human_zonal",
+   "reanalysis_ref": "gse9160",
+   "reanalysis_date": "2026-08-05",
+   "reanalysis_disposition": "partially_informed",
+   "reanalysis_finding": "The Notch machinery is present and is not zonally restricted at the level of its components. Detected in both donors: NOTCH1, NOTCH2, NOTCH3, JAG1, JAG2, DLL1, HES1, HEY1, HEY2, RBPJ, PSEN1. NOTCH2, RBPJ, PSEN1, JAG2 and HEY2 are detected in all five compartments of both donors. Not detected: NOTCH4, DLL3, DLL4, HES5. The donor with the clean dissection places the maximum in the RESTING zone for NOTCH1/2/3, JAG1, JAG2, HES1, HEY1 and PSEN1 (NOTCH3 at a 110-fold range); the other donor's profiles are flat (fold ranges 1.15-2.3) and that disagreement is uninformative because that donor's compartments are cross-contaminated (see P8-01 section 3).",
+   "reanalysis_residue": "WHERE the pathway is ACTIVE, as opposed to where its components are transcribed, needs target-gene readout in tissue that resolves zones. One donor's profile is not that. The question of whether Notch restrains hypertrophy in human tissue as in mouse is entirely untouched - that is functional."
   },
   {
    "gap_id": "g_l3rest_010",
@@ -1720,15 +1748,22 @@
    "layer": "L6",
    "why_it_matters": "PIEZO1 is the leading candidate physeal mechanotransducer and is already being pursued as a drug target for scoliosis, with mouse work showing that local PIEZO1 inhibition slows curve progression. All of that rests on mouse conditional knockouts. If PIEZO1 is not expressed in human growth plate chondrocytes, or is expressed in a different zone, the therapeutic rationale collapses; the question is answerable with existing archival tissue and costs almost nothing relative to what is being built on top of it.",
    "what_is_known": "Chondrocyte-specific Piezo1 deletion in mice abolishes trabecular bone under the growth plate and causes peri-physeal rib fractures, while Piezo2 deletion does nothing comparable (brylka2024). Hypertrophic-chondrocyte Piezo1 deletion raises osteoclast number in the primary spongiosa (tschaffonmller2026). Compression upregulates PIEZO1 in mouse vertebral growth plate chondrocytes and deletion slows scoliosis (chen2025a); PIEZO1 colocalises with the primary cilium there (chen2025). The only human cartilage PIEZO1 protein data are from osteophytes in osteoarthritis (brylka2024).",
-   "what_is_missing": "Any immunohistochemical, in situ hybridisation, single-cell or spatial transcriptomic report of PIEZO1 or PIEZO2 in human physeal tissue, resolved by zone.",
+   "what_is_missing": "Immunohistochemistry or RNAscope for PIEZO1 protein in human physeal tissue resolved by zone. P8-01 removes the prior uncertainty about whether PIEZO1 transcript is present at all - it is, everywhere - and makes PIEZO2 the lower-priority target.",
    "nearest_evidence": [
     "brylka2024",
     "chen2025a",
-    "chen2025"
+    "chen2025",
+    "gse9160"
    ],
    "discriminating_experiment": "Immunohistochemistry and RNAscope for PIEZO1 and PIEZO2 on human growth plate tissue obtained from epiphysiodesis, physeal bar resection, amputation or post-mortem specimens across at least three age bands, scored by zone (RZ, PZ, PHZ, HZ), with mouse growth plate as a positive control and PIEZO1-negative tissue as a specificity control; supplemented by reanalysis of existing human growth plate single-cell and spatial datasets for PIEZO1/PIEZO2 counts. Under marker transfer, PIEZO1 is detected in human proliferative and hypertrophic chondrocytes at levels comparable with mouse. Under species divergence, PIEZO1 is absent or confined to perichondrium and vasculature, which would place the mouse scoliosis target outside human physeal cartilage.",
    "tractability": 4,
-   "search_log_ref": "g_l6mech_007"
+   "search_log_ref": "g_l6mech_007",
+   "reanalysis": "p8_01_gse9160_human_zonal",
+   "reanalysis_ref": "gse9160",
+   "reanalysis_date": "2026-08-05",
+   "reanalysis_disposition": "partially_informed",
+   "reanalysis_finding": "At TRANSCRIPT level: PIEZO1 is robustly detected in all five compartments of both donors (probe set 202771_at at 8,986-24,442 and 8,572-16,411 units, an order of magnitude above background everywhere). PIEZO2 is represented by 6 probe sets and is detected in neither donor in any compartment. TRPV4 is detected in proliferative, prehypertrophic and hypertrophic zones, proliferative-maximal in both donors.",
+   "reanalysis_residue": "The gap asks about PROTEIN. Transcript cannot close it. What has changed is that the protein question is now sharply pointed rather than open-ended: PIEZO1 and TRPV4 are worth staining for in human physis, PIEZO2 is not, on this evidence."
   },
   {
    "gap_id": "g_l6mech_008",
@@ -1889,16 +1924,23 @@
    "layer": "L4",
    "why_it_matters": "Glucocorticoid growth suppression is the commonest iatrogenic cause of short stature in chronically ill children, and the rabbit unilateral-infusion experiments locate the effect inside the plate. Which zone is hit determines whether the deficit is recoverable: suppression of resting zone proliferation conserves progenitor capacity and permits catch-up, whereas hypertrophic-zone effects would translate directly into lost bone. Without zonal receptor data in human tissue, the choice between glucocorticoid-sparing strategies and rescue with GH is made on rabbit histology.",
    "what_is_known": "Local intra-plate dexamethasone (80 ng/uL at 1 uL/h) cut ipsilateral rabbit tibial growth rate by 77% versus the contralateral vehicle-infused plate (baron1992), and subsequent catch-up growth was also confined to the treated plate (baron1994). Dexamethasone slowed rabbit resting zone chondrocyte proliferation and their numerical depletion, conserving proliferative capacity (schrier2006). Against this, tamoxifen- inducible chondrocyte-specific GR knockout mice had normal growth plates, long bone length and bone microarchitecture at all ages tested, with impairment only in metaphyseal fracture healing (tu2014).",
-   "what_is_missing": "No study reports GR protein abundance, isoform composition (GRalpha versus GRbeta), or transcriptional output by zone in human growth plate tissue; there is no human ligand-occupancy or GR-target-gene measurement in the physis at any cortisol exposure.",
+   "what_is_missing": "Ligand-occupancy measurement of GR in human growth plate at physiological and therapeutic cortisol concentrations. The zonal-distribution half is answered by P8-01: GR is present in every compartment with modest hypertrophic-zone enrichment, and there is no local 11beta-HSD gate.",
    "nearest_evidence": [
     "baron1992",
     "baron1994",
     "schrier2006",
-    "tu2014"
+    "tu2014",
+    "gse9160"
    ],
    "discriminating_experiment": "Model system - archived and prospectively collected human growth plate tissue from epiphysiodesis, limb-lengthening and post-mortem series, stratified by documented systemic glucocorticoid exposure. Readout - laser-capture microdissection of the three zones with (i) quantitative GR immunohistochemistry and GRalpha/GRbeta isoform-specific RNA quantification, and (ii) a GR-target transcript panel (FKBP5, TSC22D3/GILZ, PER1) as a readout of actual receptor occupancy rather than expression. Expected result - under a resting-zone-suppression model, GR and its target transcripts are highest in the resting zone and rise with glucocorticoid exposure there, matching the rabbit catch-up phenotype; under a hypertrophic-zone model, GR target induction concentrates in prehypertrophic/hypertrophic cells, predicting irreversible loss; under a GR-independent model (consistent with tu2014) GR targets are induced weakly and uniformly and the growth effect must be sought in perichondrium or vasculature.",
    "tractability": 3,
-   "search_log_ref": "g_l4endo_003"
+   "search_log_ref": "g_l4endo_003",
+   "reanalysis": "p8_01_gse9160_human_zonal",
+   "reanalysis_ref": "gse9160",
+   "reanalysis_date": "2026-08-05",
+   "reanalysis_disposition": "answered_by_reanalysis",
+   "reanalysis_finding": "NR3C1 is detected in all five compartments of both donors on 4 of 5 probe sets and peaks in the HYPERTROPHIC zone in both donors independently (fold range 2.9 and 4.2) - one of very few genes where the poorly-dissected donor shows the larger range. NR3C2 (mineralocorticoid receptor) is not detected, so glucocorticoid action on the human physis is unlikely to run through MR. Neither HSD11B1 nor HSD11B2 is detected: there is no evidence of local pre-receptor cortisol interconversion, meaning the tissue is exposed to whatever the circulation delivers with no local gate.",
+   "reanalysis_residue": "The occupancy half of the question is untouched. What fraction of receptor is ligand-bound at physiological versus therapeutic cortisol exposure requires a binding or occupancy measurement, not an expression measurement."
   },
   {
    "gap_id": "g_l4endo_004",
@@ -1993,16 +2035,23 @@
    "layer": "L4",
    "why_it_matters": "The IGF bioavailability layer is demonstrably load-bearing in humans - PAPP-A2 loss raises total IGF-1 several-fold while cutting the bioactive fraction to 0.09-0.32% and producing heights of -2.16 to -3.81 SDS - yet the entire model is built on serum measurements. If IGFBP-5, which binds hydroxyapatite and matrix, forms a zonal reservoir in the plate, then the local free IGF-1 concentration is a matrix property rather than a circulating one, and PAPP-A2 replacement therapy would act by remodelling that reservoir rather than by raising serum free IGF-1.",
    "what_is_known": "In serum, human PAPPA2 deficiency raises IGFBP-3 to 4403-5912 ug/L (Tanner I reference 2206-4200) and IGFBP-5 to 645-997 ug/L (reference 211-707) while free IGF-1 falls (dauber2016), and IGFALS deficiency collapses IGFBP-3 with only mild short stature (domen2004). At the tissue level, PAPP-A is required for IGF-dependent chondrocyte differentiation and columnar organisation in mouse and zebrafish cartilage (harboe2024), implying substrate IGFBPs are present and functional there.",
-   "what_is_missing": "No zonal immunolocalisation or quantification of any IGFBP in human growth plate tissue, and no measurement of free versus bound IGF-1 in physeal interstitium in any species. Searching for zonal IGFBP localisation in human physis returns only serum-based clinical studies and rodent whole-plate work.",
+   "what_is_missing": "Zone-resolved measurement of FREE versus bound IGF-1 and IGF-2 protein in human growth plate. P8-01 establishes which components are present and that the restraint machinery (STC2, PAPPA2) is the zonally-patterned part; it cannot give the free concentration those components set.",
    "nearest_evidence": [
     "dauber2016",
     "domen2004",
     "harboe2024",
-    "kobber2022"
+    "kobber2022",
+    "gse9160"
    ],
    "discriminating_experiment": "Model system - human growth plate tissue from epiphysiodesis and limb-lengthening surgery across a range of ages, with rabbit proximal tibia as a functional companion. Readout - multiplexed immunofluorescence or imaging mass cytometry for IGFBP-2 through -6, ALS, PAPP-A, PAPP-A2 and STC2 across the three zones, quantified per cell and per unit matrix area, cross-validated by laser-capture zonal proteomics. Expected result - under a matrix-reservoir model, IGFBP-5 and PAPP-A2 are concentrated in the proliferative zone matrix and free IGF-1 (by zonal ultrafiltration) peaks where protease-to-inhibitor ratio is highest; under a serum-delivery model, IGFBP profile in the plate mirrors serum with no zonal structure and the free fraction is uniform.",
    "tractability": 3,
-   "search_log_ref": "g_l4endo_009"
+   "search_log_ref": "g_l4endo_009",
+   "reanalysis": "p8_01_gse9160_human_zonal",
+   "reanalysis_ref": "gse9160",
+   "reanalysis_date": "2026-08-05",
+   "reanalysis_disposition": "answered_by_reanalysis",
+   "reanalysis_finding": "A zonal gradient exists, and it is a gradient of IGF RESTRAINT more clearly than of the binding proteins. STC2 - an inhibitor of PAPP-A - is strongly hypertrophic-zone-enriched in BOTH donors (fold range 23.3 and 12.5, the most concordant large-amplitude signal in the module), while PAPPA2 peaks prehypertrophically in both. IGFBP3/4/5/6/7 are detected but donor-discordant in peak zone; IGFBP1 and IGFBP2 are not detected. IGF2 is robustly detected in all five compartments of both donors while IGF1 is detected only by the more sensitive donor's arrays - in this tissue at 11-13y IGF2 is the abundant local IGF and IGF1 is not.",
+   "reanalysis_residue": "Free versus bound IGF concentration per zone is a protein and binding measurement. Transcript abundance of the binding proteins does not give the free fraction."
   },
   {
    "gap_id": "g_l4endo_010",
@@ -4734,6 +4783,170 @@
    "discriminating_experiment": "In an existing paediatric cohort with serial hand-wrist radiographs and banked buccal or blood DNA, compute PedBE age acceleration and regress it on bone age minus chronological age, and separately on Sanders stage, at matched visits. Then test prediction: does baseline epigenetic age acceleration improve prediction of adult height over bone age alone in a held-out sample? Under a skeletal-maturation model epigenetic age acceleration correlates with bone-age advancement (r > 0.3) and adds incremental predictive value. Under a chronological-clock model the correlation with bone-age advancement is near zero and the clock adds nothing beyond chronological age, which would settle that the two maturational axes are independent - itself a finding, because it would mean systemic biological ageing and skeletal maturation are separately regulated.",
    "tractability": 4,
    "search_log_ref": "g_l8gen_014"
+  },
+  {
+   "gap_id": "g_para_001",
+   "question": "Does the chondrocyte cGMP pool that drives growth plate output come from NPR2/CNP alone, or does NPR1/ANP contribute a measurable share - and does a cartilage-specific Npr1;Npr2 double knockout differ from the Npr2 single knockout in hypertrophic layer thickness and long bone length?",
+   "type": "known_unknown",
+   "layer": "L3",
+   "why_it_matters": "The entire natriuretic-peptide arm of this atlas - CNP, NPR2, NPR3, cGMP, PKG-II, and the therapeutic reasoning around vosoritide - is built on the premise that NPR2 is the sole physiologically relevant guanylyl cyclase in the chondrocyte. zhou2024 shows that is not established: Corin- and Nppa(ANP)-null mice have impaired chondrocyte differentiation and shortened limb long bones, and ANP acts IN CHONDROCYTES through cGMP-dependent protein kinase G to suppress MAPK phosphorylation and raise phospho-GSK-3beta and beta-catenin. That is the same second messenger, the same kinase family and one of the same substrates (GSK-3beta) the atlas assigns wholly to the CNP arm. If a meaningful fraction of chondrocyte cGMP is ANP-derived, then the cGMP node has an unresolved SOURCE question sitting on top of its already unresolved EFFECTOR question (cGKI versus cGKII, g_l2d_001), and quantitative models of CNP dose-response are missing an input term.",
+   "what_is_known": "Cartilage-specific Npr2 deletion drops the type X collagen-positive layer to 23.0% of control and femur length to 45.3% of control (nakao2015). Human NPR2 is a graded three-state dosage locus (biallelic AMDM, heterozygous ISS, gain-of-function tall stature), so NPR2 requirement in humans is not in doubt. Npr2 transcript is similar across resting/proliferative (combined), hypertrophic and mineralized compartments (agoston2007). nakao2015's authors independently raise ANP/BNP cross-activation of GC-B as a live alternative, and note that the Nppc cKO is milder than the Npr2 cKO - currently explained by residual extra-cartilage CNP alone. zhou2024 supplies the genetic requirement for the ANP arm.",
+   "what_is_missing": "No study locates NPR1/GC-A protein or transcript by zone in growth plate of any species, so the relative abundance of the two receptor guanylyl cyclases in the tissue is unknown. No Npr1;Npr2 or Nppa;Nppc compound mutant exists in cartilage. No study partitions chondrocyte cGMP between the two ligand-receptor pairs. Whether the Nppc-cKO-versus-Npr2-cKO severity gap is extra-cartilage CNP, an ANP contribution, or both, has not been tested.",
+   "nearest_evidence": [
+    "zhou2024",
+    "nakao2015",
+    "agoston2007",
+    "miyazaki2022"
+   ],
+   "discriminating_experiment": "Generate Col2a1-Cre;Npr1(fl/fl);Npr2(fl/fl) mice alongside each single conditional and a wild-type control on one background. Readouts at 2 and 6 weeks: proximal tibial total growth plate height, type X collagen-positive hypertrophic layer height, BrdU index, femur and tibia length, and chondrocyte cGMP by immunoassay on micro-dissected zones. Under NPR2-only, the double is indistinguishable from the Npr2 single on every readout. Under a real ANP contribution, the double is significantly more severe than the Npr2 single, and the Npr1 single shows a partial phenotype in the direction zhou2024 reports. Pair with zonal NPR1 and NPR2 protein immunohistochemistry in mouse and, if tissue is obtainable, human physis.",
+   "tractability": 3,
+   "search_log_ref": "g_para_001"
+  },
+  {
+   "gap_id": "g_para_002",
+   "question": "Is the bone-elongating effect of PDE3 inhibition in the growth plate mediated by PDE3B, by PDE3A, or by both - and what is the growth plate zonal distribution of each isoform?",
+   "type": "search_established",
+   "layer": "L3",
+   "why_it_matters": "kawabe2025 is the strongest positive pharmacological result in the cGMP arm of this atlas: PDE3 inhibitors raise chondrocyte cGMP, activate cell-surface K+ channels via PKG-mediated phosphorylation, hyperpolarise the cell, increase the driving force for TRPM7-mediated Ca2+ entry, elongate cultured bones and enlarge juvenile mice. The atlas assigns all of it to PDE3B. The agents used are cilostazol and milrinone, which are PDE3-FAMILY inhibitors. rowley2024 quantifies why that assignment cannot be made: PDE3A and PDE3B share 48% overall identity and >95% ACTIVE-SITE homology, described as \"a massive obstacle for obtaining selectivity at the active site\", and every FDA-approved PDE3 inhibitor is family-selective only - obtaining a PDE3B-selective compound required a DNA-encoded library screen and novel boronic-acid chemistry. The alternative is not a bystander: PDE3A is the isoform carrying the HUMAN skeletal genetics, since gain-of-function PDE3A variants cause hypertension with brachydactyly type E and short stature (maass2015), and the direction fits - if PDE3A gain of function shortens metacarpals, PDE3A inhibition lengthening bone is exactly what a family inhibitor would produce. This is the same structure as CORR-001 and CORR-003: the mechanism was assigned in a system where the alternative was present and was never removed. It also matters therapeutically, because repositioning cilostazol for short stature is the explicit proposal of the primary paper, and PDE3A inhibition carries the proarrhythmic liability that motivated the search for PDE3B-selective agents.",
+   "what_is_known": "IMPC Pde3b-null mice have increased tibial length - a gene-selective genetic result, and the reason PDE3B is not excluded. PDE3B is superficial-zone enriched in human and bovine ARTICULAR cartilage (grogan2013), which is a different tissue. PDE3B was selected in kawabe2025 \"based on gene expression data\" from bulk profiling, not from a zonal measurement. PDE3A is recorded at moderate to negligible levels in whole-bone and osteocyte transcriptomes. Human PDE3A gain of function causes brachydactyly with short stature (maass2015). PDE3A and PDE3B share >95% active-site homology (rowley2024).",
+   "what_is_missing": "Neither isoform has been localised by growth plate zone in any species. No cartilage-specific Pde3a knockout exists, and no Pde3a;Pde3b compound mutant exists. No isoform-selective PDE3 compound has been applied to growth plate. The IMPC Pde3b-null tibial length result has not been paired with a matched Pde3a-null tibial length measurement, so the genetic comparison that would settle this has not been made even though both lines are in principle available.",
+   "nearest_evidence": [
+    "kawabe2025",
+    "rowley2024",
+    "maass2015",
+    "grogan2013",
+    "miyazaki2022"
+   ],
+   "discriminating_experiment": "Two arms. (1) Genetic: compare tibial and femoral length, growth plate zonal heights and chondrocyte cGMP in cartilage-specific Pde3a, Pde3b and Pde3a;Pde3b conditional knockouts on one background at 4 weeks. Under PDE3B-only, the Pde3b single reproduces the cilostazol phenotype and the Pde3a single is null. Under PDE3A-only, the reverse. Under joint contribution, only the double reaches the cilostazol effect size. (2) Pharmacological: administer the boronic-acid PDE3B-selective compounds of rowley2024 alongside cilostazol in the ex vivo tibia elongation assay of kawabe2025. If the selective compound reproduces cilostazol's elongation, PDE3B is sufficient; if it does not, the effect requires PDE3A inhibition. Pair either arm with isoform-specific immunohistochemistry across RZ/PZ/PHZ/HZ.",
+   "tractability": 4,
+   "search_log_ref": "g_para_002"
+  },
+  {
+   "gap_id": "g_para_003",
+   "question": "What fraction of IGF-1-binding receptor sites on the growth plate chondrocyte surface are IGF1R homodimers, INSR homodimers and INSR/IGF1R hybrid receptors, and how does that fraction vary by zone?",
+   "type": "quantitative_gap",
+   "layer": "L4",
+   "why_it_matters": "The atlas treats IGF1R as the convergence point at which the somatomedin and dual-effector accounts of GH action become indistinguishable at the chondrocyte. That framing assumes a receptor population whose composition has never been measured in this tissue. Hybrid INSR/IGF1R receptors bind IGF-1 with high affinity and insulin poorly, so they behave pharmacologically like IGF1R while being genetically half INSR - which means every conclusion drawn from an insulin-versus-IGF-1 comparison in cartilage, and every conclusion drawn from an Igf1r conditional deletion, carries an unquantified hybrid term. This is the residue of the IGF1R/insulin finding recorded in phase3_close: the one cartilage experiment coupling this family to mTORC1 used insulin, not IGF-1. That edge is already correctly graded speculative, so the atlas is not making a false claim - but the number that would let anyone reason quantitatively about it does not exist.",
+   "what_is_known": "IGF1R binds IGF-1 with roughly 100-fold higher affinity than insulin (alarid1992 framing). Hybrid receptors form wherever both receptors are co-expressed, and INSR is ubiquitous. Cartilage-specific Igf1r knockout - embryonic and tamoxifen-inducible postnatal - gives disorganised columns, delayed ossification and vascular invasion, reduced proliferation, increased apoptosis and increased Pthrp transcription (wang2011), establishing IGF1R necessity in chondrocytes by a gene-selective route. Biallelic human INSR loss (Donohue syndrome) causes severe growth failure that hyperinsulinaemia cannot rescue, establishing an INSR requirement separable from IGF1R. Human PAPP-A2 deficiency shows stature tracks free rather than total IGF-1 (dauber2016).",
+   "what_is_missing": "No study has quantified INSR, IGF1R or hybrid receptor abundance in growth plate tissue of any species, by zone or in bulk. No chondrocyte Insr;Igf1r compound mutant exists. The INSR-A versus INSR-B isoform split in chondrocytes is unmeasured, which matters because INSR-A binds IGF-2 with near-insulin affinity and IGF-2 remains abundant postnatally in humans but not in mice.",
+   "nearest_evidence": [
+    "wang2011",
+    "alarid1992",
+    "dauber2016",
+    "phornphutkul2008"
+   ],
+   "discriminating_experiment": "Apply the established immunoprecipitation-based hybrid quantification assay - capture with anti-INSR, detect with anti-IGF1R and reciprocally - to micro-dissected resting, proliferative and hypertrophic zones of postnatal mouse tibia, and to human physeal tissue from the donor census where available. Report the three receptor species as percentages of total alpha-subunit with n and CI. Expected outputs differ sharply: if hybrids are under 10% of sites the pharmacological ambiguity is negligible and the Igf1r conditional data can be read at face value; if hybrids exceed 40%, as they do in several insulin-target tissues, then Igf1r deletion removes a large share of INSR signalling capacity as a side effect and the two receptors cannot be treated as separable in this tissue at all.",
+   "tractability": 3,
+   "search_log_ref": "g_para_003"
+  },
+  {
+   "gap_id": "g_para_004",
+   "question": "Does the Mmp13-null growth plate phenotype persist into adult life or resolve by 12 weeks, and is collagen II cleavage in the lower hypertrophic zone attributable to MMP-13 alone or to MMP-13 acting synergistically with MMP-9?",
+   "type": "contradiction",
+   "layer": "L5",
+   "why_it_matters": "The atlas states that MMP-13 is \"the enzyme that cleaves the triple helix of collagen II in the lower growth plate\", and uses the persistence of the Mmp13-null phenotype into adulthood as the discriminator against the transient Mmp9-null. Both halves of that are in question. Two independently generated Mmp13-null lines, both reported in 2004, disagree on persistence: inada2004 reports growth plate abnormalities persisting into adult life, while stickens2004 reports that severity increased until about 5 weeks and COMPLETELY RESOLVED by 12 weeks. And stickens2004 made the Mmp9/Mmp13 DOUBLE null, which has severely impaired endochondral bone with diminished ECM remodelling, prolonged chondrocyte survival, delayed vascular recruitment and drastically shortened bones - the authors' conclusion being that \"degradation of cartilage collagen and aggrecan is a coordinated process in which MMP13 works synergistically with MMP9\". Exclusive attribution to MMP-13 does not survive a synergy result. The human situation is worse for exclusivity than the mouse: haeusler2005 finds MMP-1, -9, -10, -11 AND -13 all immunopositive in human hypertrophic chondrocytes, with MMP-14 the most prominent MMP in the human growth plate and present in all zones.",
+   "what_is_known": "stickens2004 confirms collagen II and aggrecan as in vivo MMP-13 substrates, so the substrate identification is strengthened, not weakened. Both lines agree that chondrocytes differentiate normally and that their exit from the plate is delayed, so the phenotype itself replicates; only its duration is disputed. Mmp9-null gives an ~8-fold lengthened plate that remodels after 3 weeks postnatal and is rescued by wild-type bone marrow transplantation (vu1998), establishing MMP-9's cellular source as marrow-derived rather than chondrocytic. MMP13 variants cause human metaphyseal anadysplasia and a frameshift short-stature allele (lu2026).",
+   "what_is_missing": "No head-to-head re-examination of the two Mmp13-null lines under one histomorphometric protocol with a stated time course to 12 weeks and beyond. No quantitative measurement of collagen II cleavage neoepitope by zone in either single or the double null. No human data assigning lower-plate collagen II cleavage to any specific MMP; the human evidence is co-localisation of at least five MMPs in the same zone.",
+   "nearest_evidence": [
+    "stickens2004",
+    "inada2004",
+    "vu1998",
+    "haeusler2005",
+    "little2005"
+   ],
+   "discriminating_experiment": "Phenotype Mmp13-null, Mmp9-null and Mmp9;Mmp13 double-null mice from both source lines on one background, with blinded histomorphometry of hypertrophic zone height and total plate height at 2, 5, 8, 12 and 20 weeks, plus collagen II 3/4-length neoepitope immunostaining quantified by zone. Under persistence (inada2004), Mmp13-null plate height remains elevated at 20 weeks; under resolution (stickens2004), it returns to control by 12 weeks. Under MMP-13 exclusivity, neoepitope loss in the Mmp13-null equals that in the double; under synergy, the double is significantly worse than either single. Pair with the human question by staining human physeal tissue for the same neoepitope alongside MMP-13 and MMP-14.",
+   "tractability": 3,
+   "search_log_ref": "g_para_004"
+  },
+  {
+   "gap_id": "g_para_005",
+   "question": "Which thyroid hormone receptor isoform carries the T3 response of the long-bone growth plate chondrocyte - and does a cartilage-restricted Thra;Thrb double deletion produce a phenotype that neither single deletion produces?",
+   "type": "contradiction",
+   "layer": "L4",
+   "why_it_matters": "This atlas already carries a logged contradiction between mouse and human on this point: rabier2006 found that ALL T3 responses were abolished in TRbeta-deficient mouse rib chondrocytes and preserved in TRalpha-deficient ones, while in humans it is dominant-negative THRA variants, not THRB variants, that cause short stature and delayed bone age - THRB resistance leaves adult stature largely normal. The paralog audit finds the resolving experiment already exists outside cartilage and points at a third answer: gthe1999 shows TRalpha1(-/-)beta(-/-) double-null mice have retarded growth and bone maturation NOT found in either single receptor-deficient mouse, and states that \"deletion of TRalpha1 or TRbeta individually reveals only a small proportion of the phenotypes that arise in hypothyroidism\", concluding the two isoforms cooperate with or substitute for each other. If that holds in cartilage, then neither single-null phenotype assigns the chondrocyte T3 response to an isoform, and the mouse-human contradiction may be an artefact of comparing two different compensation states rather than a real species difference. The ligand cannot help: T3 binds TRalpha1 and TRbeta1 with comparable affinity, so no pharmacological experiment can separate them.",
+   "what_is_known": "robson2000 places TRalpha1, TRalpha2 AND TRbeta1 protein together in reserve and proliferating rat chondrocytes, all absent from hypertrophic cells - so both receptors occupy the same cells with no relative abundance measurement. jorge2025 documents three children with heterozygous THRA variants, short stature, low free T4 and marked response to levothyroxine plus rhGH. gthe1999 supplies the double null outside cartilage. The atlas already lists rib-versus-long-bone chondrocyte differences, germline compensation, and a genuine species difference as the candidate explanations.",
+   "what_is_missing": "No cartilage-restricted Thra, Thrb or Thra;Thrb conditional deletion has been reported with a growth plate readout. No relative abundance measurement of TRalpha versus TRbeta protein in growth plate of any species. No human growth plate TR localisation at all. rabier2006's germline nulls cannot distinguish \"TRbeta carries the signal\" from \"TRalpha compensated during development in the TRalpha-null and could not in the TRbeta-null\".",
+   "nearest_evidence": [
+    "gthe1999",
+    "rabier2006",
+    "robson2000",
+    "jorge2025"
+   ],
+   "discriminating_experiment": "Generate Col2a1-CreERT2;Thra(fl/fl), ;Thrb(fl/fl) and ;Thra(fl/fl);Thrb(fl/fl) mice, induced postnatally to avoid developmental compensation, and measure tibial growth velocity by calcein double labelling, zonal heights and Col10a1 expression, with and without T3 challenge. Under isoform-specific signalling, one single conditional reproduces the T3-unresponsive phenotype and the other does not. Under the gthe1999 redundancy model, both singles are near-normal and only the double is unresponsive. Quantify TRalpha and TRbeta protein by zone in the same animals so the abundance question is answered alongside the functional one.",
+   "tractability": 3,
+   "search_log_ref": "g_para_005"
+  },
+  {
+   "gap_id": "g_para_006",
+   "question": "Is DIO1 expressed in growth plate cartilage, and what fraction of intracellular T3 in the growth plate chondrocyte is generated locally by DIO2 rather than imported from the circulation?",
+   "type": "search_established",
+   "layer": "L4",
+   "why_it_matters": "The pre-receptor amplification model - that the chondrocyte sets its own T3 exposure by local DIO2-mediated deiodination independently of serum T4 - is the step that determines whether a given systemic thyroid status is amplified or damped at the plate, and it is stated as fact throughout the thyroid literature. Two things are missing under it. First, DIO1 is the OTHER activating outer-ring deiodinase and is not mentioned in the atlas node at all, so the isoform assignment has never been tested. Second, the quantitative claim itself - the local versus imported fraction - has never been measured with zonal resolution in any species. Before this audit the dio2 node carried NO primary DIO2 growth plate reference: its only key_ref was robson2000, a thyroid hormone RECEPTOR localisation paper. That has now been repaired (dentice2005, shen2004) but the isoform and fraction questions remain open.",
+   "what_is_known": "dentice2005 shows the Hedgehog-inducible ubiquitin ligase subunit WSB-1 targets DIO2 for degradation in the developing growth plate, modulating local thyroid hormone activation and PTHrP secretion - primary evidence that DIO2 specifically is locally regulated in this tissue and is wired into the Ihh/PTHrP loop. shen2004 reports differential DIO2 expression in growth plates of chickens divergently selected for tibial dyschondroplasia. DIO3-mediated inactivation minimises T3 signalling in the early fetal skeleton. DIO2's substrate-induced ubiquitination gives it a short half-life, making local T3 production self-limiting as T4 rises.",
+   "what_is_missing": "No primary study reports DIO1 expression, activity or function in growth plate cartilage in any species. No study measures the locally generated versus imported T3 fraction in physeal tissue. No Dio1;Dio2 compound mutant with a growth plate readout. No human growth plate deiodinase measurement of any isoform.",
+   "nearest_evidence": [
+    "dentice2005",
+    "shen2004",
+    "robson2000",
+    "dauber2017"
+   ],
+   "discriminating_experiment": "Micro-dissect resting, proliferative and hypertrophic zones from postnatal mouse tibia and assay DIO1, DIO2 and DIO3 transcript and enzymatic activity per zone, using the standard outer- and inner-ring deiodination assays with propylthiouracil to distinguish DIO1 (PTU-sensitive) from DIO2 (PTU-resistant) - a pharmacological discriminator that does exist for this pair, unlike for GSK3 or PDE3. Then measure the local fraction directly by administering labelled T4 and quantifying zonal T3 generation in wild-type versus cartilage-specific Dio2 knockout. Under the local generation model, zonal T3 falls substantially in the Dio2 knockout; under an import model it does not, and DIO2's role reduces to fine-tuning.",
+   "tractability": 3,
+   "search_log_ref": "g_para_006"
+  },
+  {
+   "gap_id": "g_para_007",
+   "question": "Is the FGF21 effect on growth plate chondrocytes - suppression of proliferation and Col10a1, and induction of local GH insensitivity - transduced by FGFR1, by FGFR3, or by both?",
+   "type": "known_unknown",
+   "layer": "L3",
+   "why_it_matters": "beta-Klotho is the only demonstrated molecular entry point by which systemic caloric state reaches the growth plate through the FGF receptor family rather than through the GH/IGF-1 axis, so which receptor carries it determines where undernutrition-induced growth suppression sits in the network. The atlas assigns it to an FGFR1-ERK arm on the strength of FGFR1 siRNA. But wu2012 detected Fgfr1 AND Fgfr3 transcripts, with Klb and Fgf21, in the SAME mouse growth plate chondrocytes, and never knocked down FGFR3. The atlas's own fgfr3_receptor node states, from human in situ hybridisation, that FGFR1 is NOT detected in human growth plate chondrocytes and that the human plate is an FGFR3-dominant tissue (delezoide1998). So the receptor the mechanism is assigned to is the one the human expression map says is absent from this cell type - which makes this the specific point where the mouse mechanism is least likely to translate. The dose compounds it: the inhibitory effects required recombinant FGF21 at 5-10 ug/ml, far above physiological circulating concentrations, and at those concentrations FGF21's receptor preference and Klotho dependence both loosen.",
+   "what_is_known": "wu2012: Klb, Fgfr1, Fgfr3, Fgf21 transcripts in fetal and 3-week mouse growth plate chondrocytes; FGF21 at 5-10 ug/ml suppressed thymidine incorporation and Col10a1 mRNA, abolished the GH-stimulated increase in both, and reduced 125I-GH binding; siRNA against FGFR1 or ERK1 prevented every one of these effects. wu2013: four weeks of food restriction raised LEPROT and LEPROTL1 mRNA in liver and tibial growth plate, Fgf21-null mice did not show the induction, and rhFGF21 restored it in food-restricted Fgf21-null mice - a ligand-side necessity result that does not depend on which receptor carries it. delezoide1998: FGFR3 is the only FGFR in human growth plate chondrocytes.",
+   "what_is_missing": "No Fgfr3 knockdown or knockout control in the FGF21 chondrocyte system. No Fgfr1;Fgfr3 double perturbation in chondrocytes. No dose-response establishing whether any FGF21 effect occurs at physiological concentrations. KLB has never been localised in human growth plate cartilage by any method, so the human arm of the whole pathway is inferred rather than shown.",
+   "nearest_evidence": [
+    "wu2012",
+    "wu2013",
+    "delezoide1998"
+   ],
+   "discriminating_experiment": "Repeat the wu2012 chondrocyte assays with siRNA against Fgfr1, against Fgfr3, and against both, with knockdown efficiency reported for each, across an FGF21 dose range spanning physiological (ng/ml) to the published 5-10 ug/ml. Under an FGFR1-only mechanism, Fgfr3 knockdown has no effect at any dose. Under FGFR3 involvement, Fgfr3 knockdown attenuates the response, most likely at the lower doses where receptor preference is sharper. Confirm in vivo with cartilage-specific Fgfr1 versus Fgfr3 deletion under food restriction, reading out tibial LEPROT/LEPROTL1 induction - the wu2013 endpoint. Separately, attempt KLB localisation in human physeal tissue, which would tell us whether the pathway is present in humans at all.",
+   "tractability": 4,
+   "search_log_ref": "g_para_007"
+  },
+  {
+   "gap_id": "g_para_008",
+   "question": "Which GSK3-dependent chondrocyte phenotypes survive isoform-selective removal of GSK3B, given that the cartilage-specific Gsk3b single knockout is phenotypically normal with compensatory GSK3A upregulation?",
+   "type": "search_established",
+   "layer": "L3",
+   "why_it_matters": "The atlas's functional evidence for GSK3B in chondrocytes is lithium chloride (guidotti2015), which does not distinguish GSK3A from GSK3B at any concentration - it is a metal ion competing at the Mg2+ site with no isoform preference, and no ATP-competitive GSK3 inhibitor with meaningful GSK3A/B selectivity exists. This audit also found that the node's own statement - that no chondrocyte-restricted Gsk3b conditional knockout growth plate phenotype has been reported - is factually wrong. One exists, and its result is the informative part: cartilage-specific Gsk3b knockout mice are NORMAL except for elevated GSK3A protein (bali2021). The paralog does not merely co-exist, it upregulates to compensate. So the selective genetic removal of GSK3B does nothing, the non-selective chemical removal of both does something, and no evidence assigns any chondrocyte phenotype to GSK3B specifically. itoh2012 additionally shows the redundant GSK3 function in early chondrocyte differentiation runs through RelA Thr-254 phosphorylation INDEPENDENTLY of Wnt/beta-catenin, which weakens the atlas's framing of GSK3B in this tissue as primarily a destruction-complex kinase.",
+   "what_is_known": "bali2021: tamoxifen-inducible cartilage-specific Gsk3a/Gsk3b double knockout causes precocious growth plate remodelling, progressive loss of cellular and proteoglycan components, decreased SOX9, increased osteoclast recruitment and apoptosis, shorter long bones and growth retardation; articular cartilage changes are mild by comparison, indicating differential regulation of the two cartilages. itoh2012: Gsk3a(-/-) alone and Gsk3b(+/-) alone do not significantly affect skeletal development, while the compound Gsk3a(-/-);Gsk3b(+/-) causes dwarfism with impaired chondrocyte differentiation; the isoforms are redundant cell-autonomously and independently of Wnt/beta-catenin. guidotti2015: LiCl in human OA chondrocytes links GSK3 inactivation to oxidative DNA damage, matrix remodelling and terminal differentiation.",
+   "what_is_missing": "No zonal map of GSK3A or GSK3B protein in growth plate in any species, so the compensation reported by bali2021 has no spatial resolution. No isoform-selective chemical probe exists, so the redundancy cannot be broken acutely. No experiment determines whether the guidotti2015 LiCl phenotype - oxidative DNA damage and terminal differentiation - is reproduced by the genetic double knockout, which is the specific claim the atlas attaches to GSK3B. No human growth plate GSK3 measurement.",
+   "nearest_evidence": [
+    "bali2021",
+    "itoh2012",
+    "guidotti2015",
+    "akiyama2004"
+   ],
+   "discriminating_experiment": "Apply the guidotti2015 readouts - beta-catenin level, terminal differentiation markers, 8-oxo-dG oxidative DNA damage and matrix remodelling - to chondrocytes from the bali2021 cartilage-specific Gsk3a, Gsk3b and Gsk3a/Gsk3b conditional knockouts, alongside LiCl-treated wild-type cells. Under a GSK3B-specific mechanism the Gsk3b single knockout reproduces the LiCl phenotype; given bali2021 it almost certainly will not, in which case the atlas claim must be restated at the level of GSK3 activity rather than the GSK3B gene. Include a Wnt-independence control by repeating in beta-catenin-stabilised cells, since itoh2012 places the redundant function outside the canonical pathway.",
+   "tractability": 4,
+   "search_log_ref": "g_para_008"
+  },
+  {
+   "gap_id": "g_para_009",
+   "question": "Which BMP ligand or ligands does Noggin actually neutralise in growth plate explant experiments, and do the conclusions drawn from Noggin-based BMP-off experiments survive ligand-selective blockade?",
+   "type": "known_unknown",
+   "layer": "L3",
+   "why_it_matters": "This is a methodological paralog risk that propagates rather than sitting on one node. The noggin_antagonist node states it plainly: Noggin is widely used experimentally as the BMP-off reagent in growth plate explants, so a large fraction of \"BMP is required for X\" claims in this subsystem are Noggin-inference rather than receptor genetics. Noggin binds BMP2, BMP4, BMP7 and GDF5 without discriminating among them, so every downstream conclusion inherits that non-selectivity - including any claim about which BMP ligand matters in a given zone. The BMP layer of this atlas is otherwise in good shape: Bmp2 and Bmp4 were deleted separately in the same cartilage-specific system (shu2011), the Bmp2;Bmp4 double exists in limb mesenchyme and Bmp7 was tested on top of it (bandyopadhyay2006), and Noggin and Chordin have a published double (stottmann2001). The exposure is confined to the explant pharmacology, which is exactly where it is easiest to miss.",
+   "what_is_known": "Noggin-null mice have grossly enlarged fused cartilage elements with failure of joint formation (brunet1998); human heterozygous NOG loss causes proximal symphalangism and multiple synostoses (gong1999) - both gene-selective and both about BMP DOSE rather than any single ligand. Chordin shares substrate ligands with Noggin and the Noggin;Chordin double loses structures neither single loses (stottmann2001). Within cartilage, BMP2 is the non-redundant member of the BMP2/BMP4 pair (shu2011), while in limb mesenchyme the pair is redundant (bandyopadhyay2006) - so redundancy is compartment-specific and cannot be assumed from one compartment to another.",
+   "what_is_missing": "No growth plate explant study has compared Noggin against ligand-selective blockade - neutralising antibodies to BMP2 versus BMP4 versus BMP7, or ligand-specific traps - so no explant conclusion in this subsystem is resolved to a ligand. No inventory exists of which atlas claims descend from Noggin explant experiments as opposed to receptor or ligand genetics.",
+   "nearest_evidence": [
+    "brunet1998",
+    "gong1999",
+    "stottmann2001",
+    "shu2011",
+    "bandyopadhyay2006"
+   ],
+   "discriminating_experiment": "In cultured fetal metatarsals or tibial explants, compare Noggin against ligand-selective neutralising antibodies to BMP2, BMP4 and BMP7 individually and in combination, reading out longitudinal growth rate, hypertrophic zone height and pSMAD1/5/8 immunostaining. Under a single dominant ligand, one selective antibody reproduces the Noggin effect. Under genuine redundancy, only the combination does, and any published claim of the form \"BMP ligand X is required\" that rests on Noggin must be restated as \"BMP-SMAD1/5/8 output is required\". Use the result to audit and re-tag existing atlas edges whose evidence is Noggin-based.",
+   "tractability": 4,
+   "search_log_ref": "g_para_009"
   }
  ],
  "by_layer": {
@@ -4913,7 +5126,12 @@
    "g_l2d_008",
    "g_l4l3_002",
    "g_l4l3_006",
-   "g_l4l3_010"
+   "g_l4l3_010",
+   "g_para_001",
+   "g_para_002",
+   "g_para_007",
+   "g_para_008",
+   "g_para_009"
   ],
   "L4": [
    "g_l4endo_001",
@@ -4936,7 +5154,10 @@
    "g_l4l3_008",
    "g_l4l3_009",
    "g_l4l3_011",
-   "g_l4l3_012"
+   "g_l4l3_012",
+   "g_para_003",
+   "g_para_005",
+   "g_para_006"
   ],
   "L5": [
    "g_l5matrix_001",
@@ -4954,7 +5175,8 @@
    "g_l6l5_007",
    "g_l6l5_008",
    "g_l6l5_013",
-   "g_l6l5_015"
+   "g_l6l5_015",
+   "g_para_004"
   ],
   "L6": [
    "g_l6mech_001",
@@ -5070,7 +5292,9 @@
    "g_l2d_006",
    "g_l6l5_002",
    "g_l4l3_006",
-   "g_l4l3_009"
+   "g_l4l3_009",
+   "g_para_004",
+   "g_para_005"
   ],
   "known_unknown": [
    "g_l1arch_010",
@@ -5139,7 +5363,10 @@
    "g_l8gen_003",
    "g_l8gen_009",
    "g_l8gen_010",
-   "g_l8gen_012"
+   "g_l8gen_012",
+   "g_para_001",
+   "g_para_007",
+   "g_para_009"
   ],
   "method_blocked": [
    "g_l1arch_014",
@@ -5221,7 +5448,8 @@
    "g_l8gen_006",
    "g_l8gen_007",
    "g_l8gen_008",
-   "g_l8gen_011"
+   "g_l8gen_011",
+   "g_para_003"
   ],
   "scale_gap": [
    "g_l11path_022",
@@ -5313,7 +5541,10 @@
    "g_l8gen_001",
    "g_l8gen_004",
    "g_l8gen_013",
-   "g_l8gen_014"
+   "g_l8gen_014",
+   "g_para_002",
+   "g_para_006",
+   "g_para_008"
   ],
   "species_gap": [
    "g_l1arch_002",
@@ -5501,7 +5732,12 @@
    "g_l8gen_003",
    "g_l8gen_008",
    "g_l8gen_011",
-   "g_l8gen_012"
+   "g_l8gen_012",
+   "g_para_001",
+   "g_para_003",
+   "g_para_004",
+   "g_para_005",
+   "g_para_006"
   ],
   "4": [
    "g_l12pharm_001",
@@ -5605,7 +5841,11 @@
    "g_l8gen_006",
    "g_l8gen_007",
    "g_l8gen_009",
-   "g_l8gen_014"
+   "g_l8gen_014",
+   "g_para_002",
+   "g_para_007",
+   "g_para_008",
+   "g_para_009"
   ],
   "5": [
    "g_l3core_009",
@@ -7244,6 +7484,132 @@
     "hit_count": 11,
     "screened_count": 8,
     "reason_none_qualified": "Every hit that measures anything mTOR-related uses rapamycin as an autophagy INDUCER in an osteoarthritis model rather than measuring mTORC1 output after glucocorticoid exposure (PMID 24691715, 38286393, 36196702, 35129051, 31330080, 36969240). The two informative papers (PMID 24469312, 25535125) show RU486-blockable dexamethasone-induced autophagy in ATDC5 and N1511 chondrocytes but do not immunoblot phospho-S6K1, phospho-S6 or phospho-4E-BP1, so mTORC1 suppression is inferred, not shown. No study reports REDD1/DDIT4 or KLF15 in cartilage after glucocorticoid."
+   }
+  ],
+  "g_para_002": [
+   {
+    "gap_id": "g_para_002",
+    "database": "Europe PMC",
+    "exact_query_string": "TITLE_ABS:\"Pde3a\" AND (TITLE_ABS:\"cartilage\" OR TITLE_ABS:\"growth plate\" OR TITLE_ABS:\"chondrocyte\")",
+    "filters": "format=json, pageSize=25, resultType=lite, no date limit, no publication-type limit",
+    "date_run": "2026-08-05",
+    "hit_count": 3,
+    "screened_count": 3,
+    "reason_none_qualified": "No hit reports a cartilage-specific or skeletal Pde3a knockout, or any growth plate PDE3A localisation. The three hits are a hypertension-genetics personal retrospective, a review of non-GNAS causes of shortened fingers and toes (which mentions PDE3A gain-of-function as a human phenotype, already cited in the atlas as maass2015/reyes2020), and an osteoarthritic knee chondrocyte RNA-seq bioinformatics paper with no PDE3A-specific result. The genetic comparison that would settle the PDE3A-versus-PDE3B question - matched Pde3a and Pde3b null tibial lengths - has not been published, despite the IMPC Pde3b-null tibial length result being available."
+   },
+   {
+    "gap_id": "g_para_002",
+    "database": "Europe PMC",
+    "exact_query_string": "TITLE_ABS:\"Pde3b\" AND (TITLE_ABS:\"cartilage\" OR TITLE_ABS:\"growth plate\" OR TITLE_ABS:\"chondrocyte\" OR TITLE_ABS:\"bone\")",
+    "filters": "format=json, pageSize=25, resultType=lite, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 8,
+    "screened_count": 8,
+    "reason_none_qualified": "Confirms that kawabe2025 (\"Phosphodiesterase 3 inhibitors boost bone outgrowth\") is the ONLY skeletal PDE3B study, and its perturbation is cilostazol and milrinone. The other seven hits are non-skeletal (liposomal Pde3b gene therapy in collagen-induced arthritis, renin-dependent hypertension, brown-fat characteristics in white adipose, allergic airway inflammation, macrophage phagocytosis, multiple myeloma marrow genomics, an osteoarthritis compartment analysis). No cartilage-specific Pde3b genetic perturbation exists, so the only gene-selective PDE3B evidence in the skeleton remains the IMPC null tibial length."
+   },
+   {
+    "gap_id": "g_para_002",
+    "database": "PubMed ESearch",
+    "exact_query_string": "cilostazol AND (PDE3A OR PDE3B) AND selectiv*",
+    "filters": "db=pubmed, retmax=6, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 15,
+    "screened_count": 6,
+    "reason_none_qualified": "No hit reports a PDE3B-over-PDE3A selectivity ratio for cilostazol or milrinone, because none exists to report. The decisive record found instead is rowley2024 (PMID 38284310, J Med Chem), which states that PDE3A and PDE3B share 48% overall identity and >95% ACTIVE-SITE homology, calls that homology \"a massive obstacle for obtaining selectivity at the active site\", and notes that all FDA-approved PDE3 inhibitors are family-selective only - PDE3B selectivity required a DNA-encoded library screen and novel boronic-acid chemistry. This is recorded as a POSITIVE finding of ABSENCE of selectivity rather than as a null search: the fold-selectivity the audit asked for is documented not to exist."
+   }
+  ],
+  "g_para_006": [
+   {
+    "gap_id": "g_para_006",
+    "database": "Europe PMC",
+    "exact_query_string": "TITLE_ABS:\"deiodinase\" AND TITLE_ABS:\"growth plate\"",
+    "filters": "format=json, pageSize=25, resultType=lite, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 6,
+    "screened_count": 6,
+    "reason_none_qualified": "Not one of the six reports DIO1 in growth plate. Two qualified for DIO2 and have been added to the bibliography and to the dio2_deiodinase node, repairing a node that previously carried no primary deiodinase reference at all: dentice2005 (WSB-1 targets DIO2 for degradation in the developing growth plate, modulating local thyroid hormone activation and PTHrP secretion) and shen2004 (differential DIO2 expression in growth plates of chickens divergently selected for tibial dyschondroplasia). The remaining four are a DIO3-mediated fetal skeleton inactivation study, a growth plate morphology review, an ATDC5 thyroid hormone differentiation study and a DIO2 osteoarthritis susceptibility locus paper - none reporting DIO1, and none measuring the locally generated versus imported T3 fraction that is the quantitative half of this gap."
+   }
+  ],
+  "g_para_008": [
+   {
+    "gap_id": "g_para_008",
+    "database": "Europe PMC",
+    "exact_query_string": "(TITLE_ABS:\"Gsk3a\" OR TITLE_ABS:\"GSK-3alpha\" OR TITLE_ABS:\"GSK3 alpha\") AND (TITLE_ABS:\"chondrocyte\" OR TITLE_ABS:\"growth plate\" OR TITLE_ABS:\"cartilage\")",
+    "filters": "format=json, pageSize=25, resultType=lite, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 5,
+    "screened_count": 5,
+    "reason_none_qualified": "This search did NOT return a null - it overturned the gsk3b_kinase node's stated position that no chondrocyte-restricted Gsk3b conditional knockout had been reported. Two hits qualified and are now in the bibliography: bali2021 (PMID 33609145, tamoxifen-inducible cartilage-specific Gsk3a/Gsk3b double knockout causing precocious growth plate remodelling and growth retardation, and reporting that cartilage-specific Gsk3b SINGLE knockout mice are normal except for elevated GSK3A protein) and itoh2012 (PMID 22761446, GSK-3alpha and GSK-3beta functionally redundant in early chondrocyte differentiation via RelA Thr-254, independently of Wnt/beta-catenin; Gsk3a(-/-);Gsk3b(+/-) compound causes dwarfism while either alone does not). The remaining three are cardiomyocyte differentiation, a hops-derived compound inhibiting GSK-3/NF-kappaB, and a duplicate record. The gap is retained but REFRAMED: the double perturbation exists and shows redundancy with compensatory GSK3A upregulation, so what remains open is which chondrocyte phenotypes survive isoform-selective removal - which cannot currently be tested chemically, since no GSK3A/B-selective probe exists."
+   }
+  ],
+  "g_para_001": [
+   {
+    "gap_id": "g_para_001",
+    "database": "Europe PMC",
+    "exact_query_string": "(TITLE_ABS:\"Npr1\" OR TITLE_ABS:\"GC-A\" OR TITLE_ABS:\"natriuretic peptide receptor A\") AND (TITLE_ABS:\"growth plate\" OR TITLE_ABS:\"chondrocyte\")",
+    "filters": "format=json, pageSize=25, resultType=lite, no date limit. An untightened variant without TITLE_ABS: prefixes returned 6255 hits and was discarded as unreproducible.",
+    "date_run": "2026-08-05",
+    "hit_count": 175,
+    "screened_count": 25,
+    "reason_none_qualified": "Of the 25 screened, none reports NPR1/GC-A protein or transcript localisation in growth plate, and none reports an Npr1 cartilage perturbation. Every skeletal hit concerns NPR2/GC-B - NPR2 variant functional analyses, CNP therapeutic rationale, neprilysin inhibition acting via CNP/NPR-B, the CNP/TRPM7 Ca2+ entry mechanism (miyazaki2022, already in the atlas) - or is non-skeletal (vascular smooth muscle CNP/GC-B, atherosclerosis). The hit count is inflated by OR-expansion on the abbreviation \"GC-A\"; the tightened screening confirms the null. The relevant positive evidence for this gap was found by a different route (zhou2024, corin/ANP knockout chondrocyte phenotype), which is a ligand-side and protease-side result, not a receptor localisation - so the zonal NPR1 map remains genuinely absent."
+   },
+   {
+    "gap_id": "g_para_001",
+    "database": "PubMed ESearch",
+    "exact_query_string": "Vidal O[Author] AND estrogen receptor specificity skeletal growth",
+    "filters": "db=pubmed, retmax=8, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 3,
+    "screened_count": 3,
+    "reason_none_qualified": "Logged here as the CONFIRMING search for the estrogen receptor family, which produced a CLEAN verdict rather than a gap, and is recorded so the confirmation is reproducible: vidal2000 (PMID 10805804, PNAS) compared ERalpha-KO, ERbeta-KO and the DOUBLE ERalpha/beta-KO (DERKO) head to head - ERKO and DERKO, but NOT BERKO, showed decreased longitudinal and radial skeletal growth with decreased serum IGF-1. The paralog was removed singly and in combination and is not carrying the effect. Scope limit recorded on the node: vidal2000 is male mice and growth, whereas brjesson2012 is female mice and closure, so the double-knockout confirmation covers the growth arm and not the closure arm."
+   }
+  ],
+  "g_para_005": [
+   {
+    "gap_id": "g_para_005",
+    "database": "PubMed ESearch",
+    "exact_query_string": "Gothe S[Author] AND thyroid hormone receptors bone maturation",
+    "filters": "db=pubmed, retmax=8, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 2,
+    "screened_count": 2,
+    "reason_none_qualified": "This search was run to locate the thyroid receptor double perturbation and succeeded: gthe1999 (PMID 10346821, Genes Dev) reports TRalpha1(-/-)beta(-/-) mice with retarded growth and bone maturation not found in either single receptor-deficient mouse, and states that single deletions reveal only a small proportion of hypothyroid phenotypes. The second hit (PMID 15780976, increased marrow adipogenesis and decreased BMD in mice devoid of TRs) is a follow-up on the same line. Neither is cartilage-restricted, so the gap remains open for the tissue-specific question, but the systemic double null is now attached to both the thra_receptor and thrb_receptor nodes."
+   }
+  ],
+  "g_para_004": [
+   {
+    "gap_id": "g_para_004",
+    "database": "PubMed ESearch",
+    "exact_query_string": "Stickens D[Author] AND matrix metalloproteinase 13 endochondral",
+    "filters": "db=pubmed, retmax=8, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 1,
+    "screened_count": 1,
+    "reason_none_qualified": "Search succeeded rather than nulled. stickens2004 (PMID 15539485, Development) supplies both halves of this gap: the Mmp9/Mmp13 DOUBLE null with severely impaired endochondral bone and drastically shortened bones (\"MMP13 works synergistically with MMP9\"), and the contradicting time course on the Mmp13 single null - severity increasing until about 5 weeks and COMPLETELY RESOLVING by 12 weeks, against inada2004's report of persistence into adult life. Both were absent from the atlas. The reference is now attached to mmp13_protease and mmp9_protease and the persistence conflict is logged as a contradiction."
+   }
+  ],
+  "g_para_003": [
+   {
+    "gap_id": "g_para_003",
+    "database": "PubMed ESearch",
+    "exact_query_string": "Igf1r AND (chondrocyte-specific OR cartilage-specific OR Col2a1-Cre) AND growth plate",
+    "filters": "db=pubmed, retmax=6, no date limit. A second query, \"IGF-1R signaling in chondrocytes growth plate PTHrP Ihh\", returned 3 hits and located the target.",
+    "date_run": "2026-08-05",
+    "hit_count": 1094,
+    "screened_count": 9,
+    "reason_none_qualified": "No hit quantifies INSR/IGF1R hybrid receptor abundance in growth plate, which is the quantitative content of this gap - the hybrid fraction remains unmeasured in this tissue in any species. The searches did locate the cartilage-selective IGF1R perturbation the atlas lacked: wang2011 (PMID 21312270, JBMR) generated both embryonic and tamoxifen-inducible postnatal cartilage-specific Igf1r knockouts, now attached to the igf1_receptor node. The first query's hit count is inflated by loose AND-of-OR expansion and is recorded as run."
+   }
+  ],
+  "g_para_007": [
+   {
+    "gap_id": "g_para_007",
+    "database": "Europe PMC",
+    "exact_query_string": "(TITLE_ABS:\"Fgfr3\" AND TITLE_ABS:\"Fgf21\") OR (TITLE_ABS:\"FGF21\" AND TITLE_ABS:\"chondrocyte\" AND TITLE_ABS:\"FGFR1\")",
+    "filters": "format=json, pageSize=25, resultType=lite, no date limit",
+    "date_run": "2026-08-05",
+    "hit_count": 21,
+    "screened_count": 10,
+    "reason_none_qualified": "No hit reports an Fgfr3 knockdown or knockout control in the FGF21 chondrocyte system, and none reports an Fgfr1;Fgfr3 double perturbation in cartilage. The only growth plate hit is wu2012 itself (PMID 22696219, \"Fibroblast growth factor 21 inhibits chondrocyte function and growth hormone action directly at the growth plate\"), already in the atlas, which detected both receptors in the same cells and knocked down only FGFR1. Remaining hits are metabolic, hepatic, reproductive or reviews. The receptor assignment therefore rests on a single-paralog knockdown with the other paralog present, undisturbed and - per delezoide1998 - the one actually expressed in the human growth plate."
    }
   ]
  }

@@ -4913,6 +4913,42 @@
     "node_id": "laser_capture_microdissection_zonal",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "COL10A1 in resting-zone sample as percentage of same donor hypertrophic zone, donor 1",
+    "value": "0.6",
+    "unit": "%",
+    "conditions": "GSE9160, probe sets 205941_s_at and 217428_s_at, both give 0.6%",
+    "species": "human",
+    "source_ref": "gse9160",
+    "uncertainty": "reanalysis p8_01_gse9160_human_zonal",
+    "node_id": "laser_capture_microdissection_zonal",
+    "layer": "L13",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "COL10A1 in resting-zone sample as percentage of same donor hypertrophic zone, donor 2",
+    "value": "15.1-35.8",
+    "unit": "%",
+    "conditions": "GSE9160, probe sets 217428_s_at and 205941_s_at",
+    "species": "human",
+    "source_ref": "gse9160",
+    "uncertainty": "cross-contamination; reanalysis p8_01_gse9160_human_zonal",
+    "node_id": "laser_capture_microdissection_zonal",
+    "layer": "L13",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "fraction of probe sets varying more than five-fold across the zonal axis, donor 1 vs donor 2",
+    "value": "9.6 vs 1.0",
+    "unit": "%",
+    "conditions": "GSE9160, probe sets detected above background in all four zones (n=5161 and n=13792)",
+    "species": "human",
+    "source_ref": "gse9160",
+    "uncertainty": "reanalysis p8_01_gse9160_human_zonal",
+    "node_id": "laser_capture_microdissection_zonal",
+    "layer": "L13",
+    "reliability_class": "single_source_with_uncertainty"
    }
   ],
   "lineage_tracing_limitations": [
@@ -9011,6 +9047,18 @@
     "node_id": "cnp_protein",
     "layer": "L3",
     "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "NPPC transcript intensity, human growth plate, all five compartments",
+    "value": "4-20",
+    "unit": "MAS5 arbitrary units",
+    "conditions": "GSE9160, distal femur, 2 donors 11y10m F and 13y3m M, probe set 221348_at; array-specific detection thresholds 254-826 units",
+    "species": "human",
+    "source_ref": "gse9160",
+    "uncertainty": "below background on every array; single probe set; reanalysis p8_01_gse9160_human_zonal",
+    "node_id": "cnp_protein",
+    "layer": "L3",
+    "reliability_class": "range_value"
    }
   ],
   "evc_evc2_complex": [
@@ -19409,6 +19457,7 @@
   "across agreement ankle fusion inter knee mri observer score wrist",
   "across animal elongation four growth one plates range rates",
   "across arms four height mean velocity year",
+  "across axis donor donor five fold fraction more probe sets than varying zonal",
   "across baseline growth longitudinal range rate sites species studied unloaded",
   "across cell compared condensation different elements final length measurements number published skeletal volume",
   "across compared elongation four plates range rates",
@@ -19746,6 +19795,7 @@
   "alfa asfotase controls historical hypophosphatasia infantile one perinatal survival year",
   "alkaline collagen induction matrix mrna phosphatase time",
   "all captured common height heritability variants",
+  "all compartments five growth human intensity nppc plate transcript",
   "all continuous dose gain matched mixed pulsatile pulsatile total weight",
   "all extracellular growth plate porcine zones",
   "all fractures fractures paediatric physeal share",
@@ -20674,10 +20724,10 @@
   "secretion total"
  ],
  "reliability_classes": {
-  "single_source_with_uncertainty": 1226,
+  "single_source_with_uncertainty": 1228,
   "spread_documented": 55,
   "unverified": 40,
-  "range_value": 116,
+  "range_value": 118,
   "single_source_point_no_uncertainty": 65,
   "multi_source": 12,
   "superseded": 2

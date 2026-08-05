@@ -37,4 +37,41 @@ key_refs:
   one_line_finding: Establishes the receptor-bearing target zones on which any locally generated T3 would
     have to act.
   pmid: '11014246'
+- ref_id: dentice2005
+  pmid: '15965468'
+  first_author: Dentice M
+  year: 2005
+  type: primary
+  one_line_finding: The Hedgehog-inducible ubiquitin ligase subunit WSB-1 targets DIO2 for degradation
+    in the developing growth plate, modulating local thyroid hormone activation and PTHrP secretion -
+    primary evidence that DIO2 specifically is the locally regulated activating deiodinase in this tissue
+    and is wired into the Ihh/PTHrP loop.
+- ref_id: shen2004
+  pmid: '15025570'
+  first_author: Shen S
+  year: 2004
+  type: primary_abstract_only
+  one_line_finding: Iodothyronine deiodinase type 2 is differentially expressed in growth plates of chickens
+    divergently selected for tibial dyschondroplasia - a species-limited but direct DIO2 growth plate
+    expression measurement.
 last_verified: '2026-08-05'
+open_questions:
+- g_para_006
+paralog_audit: at_risk
+paralog_audit_date: '2026-08-05'
+paralog_risk: Local T3 generation is attributed to DIO2 with DIO1 - the other activating outer-ring deiodinase
+  - never measured or excluded in growth plate in any species. Before the paralog audit this node carried
+  NO primary deiodinase reference at all (its only key_ref was robson2000, a thyroid RECEPTOR paper);
+  dentice2005 and shen2004 now supply primary DIO2 growth plate evidence. The local-versus-imported T3
+  fraction remains unmeasured. See g_para_006.
+reanalysis_observations:
+- observation: 'P8-01: DIO2 IS detected in human growth plate (resting zone, proliferative zone and perichondrium,
+    both donors, 1 of 5 probe sets). DIO1 and DIO3 are NOT detected in either donor. That removes DIO1
+    as an unexcluded alternative in human tissue, which the paralog audit flagged as never having been
+    addressed on this node.'
+  reanalysis: p8_01_gse9160_human_zonal
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'
+  note: cross-reference added when the paralog audit and the P8 re-analysis landed together

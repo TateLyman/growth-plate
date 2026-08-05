@@ -1836,3 +1836,157 @@ searches:
     31330080, 36969240). The two informative papers (PMID 24469312, 25535125) show RU486-blockable dexamethasone-induced autophagy
     in ATDC5 and N1511 chondrocytes but do not immunoblot phospho-S6K1, phospho-S6 or phospho-4E-BP1, so mTORC1 suppression
     is inferred, not shown. No study reports REDD1/DDIT4 or KLF15 in cartilage after glucocorticoid.
+- gap_id: g_para_002
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:"Pde3a" AND (TITLE_ABS:"cartilage" OR TITLE_ABS:"growth plate" OR TITLE_ABS:"chondrocyte")
+  filters: format=json, pageSize=25, resultType=lite, no date limit, no publication-type limit
+  date_run: '2026-08-05'
+  hit_count: 3
+  screened_count: 3
+  reason_none_qualified: No hit reports a cartilage-specific or skeletal Pde3a knockout, or any growth plate PDE3A localisation.
+    The three hits are a hypertension-genetics personal retrospective, a review of non-GNAS causes of shortened fingers and
+    toes (which mentions PDE3A gain-of-function as a human phenotype, already cited in the atlas as maass2015/reyes2020),
+    and an osteoarthritic knee chondrocyte RNA-seq bioinformatics paper with no PDE3A-specific result. The genetic comparison
+    that would settle the PDE3A-versus-PDE3B question - matched Pde3a and Pde3b null tibial lengths - has not been published,
+    despite the IMPC Pde3b-null tibial length result being available.
+- gap_id: g_para_002
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:"Pde3b" AND (TITLE_ABS:"cartilage" OR TITLE_ABS:"growth plate" OR TITLE_ABS:"chondrocyte"
+    OR TITLE_ABS:"bone")
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 8
+  screened_count: 8
+  reason_none_qualified: Confirms that kawabe2025 ("Phosphodiesterase 3 inhibitors boost bone outgrowth") is the ONLY skeletal
+    PDE3B study, and its perturbation is cilostazol and milrinone. The other seven hits are non-skeletal (liposomal Pde3b
+    gene therapy in collagen-induced arthritis, renin-dependent hypertension, brown-fat characteristics in white adipose,
+    allergic airway inflammation, macrophage phagocytosis, multiple myeloma marrow genomics, an osteoarthritis compartment
+    analysis). No cartilage-specific Pde3b genetic perturbation exists, so the only gene-selective PDE3B evidence in the skeleton
+    remains the IMPC null tibial length.
+- gap_id: g_para_002
+  database: PubMed ESearch
+  exact_query_string: cilostazol AND (PDE3A OR PDE3B) AND selectiv*
+  filters: db=pubmed, retmax=6, no date limit
+  date_run: '2026-08-05'
+  hit_count: 15
+  screened_count: 6
+  reason_none_qualified: 'No hit reports a PDE3B-over-PDE3A selectivity ratio for cilostazol or milrinone, because none exists
+    to report. The decisive record found instead is rowley2024 (PMID 38284310, J Med Chem), which states that PDE3A and PDE3B
+    share 48% overall identity and >95% ACTIVE-SITE homology, calls that homology "a massive obstacle for obtaining selectivity
+    at the active site", and notes that all FDA-approved PDE3 inhibitors are family-selective only - PDE3B selectivity required
+    a DNA-encoded library screen and novel boronic-acid chemistry. This is recorded as a POSITIVE finding of ABSENCE of selectivity
+    rather than as a null search: the fold-selectivity the audit asked for is documented not to exist.'
+- gap_id: g_para_006
+  database: Europe PMC
+  exact_query_string: TITLE_ABS:"deiodinase" AND TITLE_ABS:"growth plate"
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 6
+  screened_count: 6
+  reason_none_qualified: 'Not one of the six reports DIO1 in growth plate. Two qualified for DIO2 and have been added to the
+    bibliography and to the dio2_deiodinase node, repairing a node that previously carried no primary deiodinase reference
+    at all: dentice2005 (WSB-1 targets DIO2 for degradation in the developing growth plate, modulating local thyroid hormone
+    activation and PTHrP secretion) and shen2004 (differential DIO2 expression in growth plates of chickens divergently selected
+    for tibial dyschondroplasia). The remaining four are a DIO3-mediated fetal skeleton inactivation study, a growth plate
+    morphology review, an ATDC5 thyroid hormone differentiation study and a DIO2 osteoarthritis susceptibility locus paper
+    - none reporting DIO1, and none measuring the locally generated versus imported T3 fraction that is the quantitative half
+    of this gap.'
+- gap_id: g_para_008
+  database: Europe PMC
+  exact_query_string: (TITLE_ABS:"Gsk3a" OR TITLE_ABS:"GSK-3alpha" OR TITLE_ABS:"GSK3 alpha") AND (TITLE_ABS:"chondrocyte"
+    OR TITLE_ABS:"growth plate" OR TITLE_ABS:"cartilage")
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 5
+  screened_count: 5
+  reason_none_qualified: 'This search did NOT return a null - it overturned the gsk3b_kinase node''s stated position that
+    no chondrocyte-restricted Gsk3b conditional knockout had been reported. Two hits qualified and are now in the bibliography:
+    bali2021 (PMID 33609145, tamoxifen-inducible cartilage-specific Gsk3a/Gsk3b double knockout causing precocious growth
+    plate remodelling and growth retardation, and reporting that cartilage-specific Gsk3b SINGLE knockout mice are normal
+    except for elevated GSK3A protein) and itoh2012 (PMID 22761446, GSK-3alpha and GSK-3beta functionally redundant in early
+    chondrocyte differentiation via RelA Thr-254, independently of Wnt/beta-catenin; Gsk3a(-/-);Gsk3b(+/-) compound causes
+    dwarfism while either alone does not). The remaining three are cardiomyocyte differentiation, a hops-derived compound
+    inhibiting GSK-3/NF-kappaB, and a duplicate record. The gap is retained but REFRAMED: the double perturbation exists and
+    shows redundancy with compensatory GSK3A upregulation, so what remains open is which chondrocyte phenotypes survive isoform-selective
+    removal - which cannot currently be tested chemically, since no GSK3A/B-selective probe exists.'
+- gap_id: g_para_001
+  database: Europe PMC
+  exact_query_string: (TITLE_ABS:"Npr1" OR TITLE_ABS:"GC-A" OR TITLE_ABS:"natriuretic peptide receptor A") AND (TITLE_ABS:"growth
+    plate" OR TITLE_ABS:"chondrocyte")
+  filters: 'format=json, pageSize=25, resultType=lite, no date limit. An untightened variant without TITLE_ABS: prefixes returned
+    6255 hits and was discarded as unreproducible.'
+  date_run: '2026-08-05'
+  hit_count: 175
+  screened_count: 25
+  reason_none_qualified: Of the 25 screened, none reports NPR1/GC-A protein or transcript localisation in growth plate, and
+    none reports an Npr1 cartilage perturbation. Every skeletal hit concerns NPR2/GC-B - NPR2 variant functional analyses,
+    CNP therapeutic rationale, neprilysin inhibition acting via CNP/NPR-B, the CNP/TRPM7 Ca2+ entry mechanism (miyazaki2022,
+    already in the atlas) - or is non-skeletal (vascular smooth muscle CNP/GC-B, atherosclerosis). The hit count is inflated
+    by OR-expansion on the abbreviation "GC-A"; the tightened screening confirms the null. The relevant positive evidence
+    for this gap was found by a different route (zhou2024, corin/ANP knockout chondrocyte phenotype), which is a ligand-side
+    and protease-side result, not a receptor localisation - so the zonal NPR1 map remains genuinely absent.
+- gap_id: g_para_005
+  database: PubMed ESearch
+  exact_query_string: Gothe S[Author] AND thyroid hormone receptors bone maturation
+  filters: db=pubmed, retmax=8, no date limit
+  date_run: '2026-08-05'
+  hit_count: 2
+  screened_count: 2
+  reason_none_qualified: 'This search was run to locate the thyroid receptor double perturbation and succeeded: gthe1999 (PMID
+    10346821, Genes Dev) reports TRalpha1(-/-)beta(-/-) mice with retarded growth and bone maturation not found in either
+    single receptor-deficient mouse, and states that single deletions reveal only a small proportion of hypothyroid phenotypes.
+    The second hit (PMID 15780976, increased marrow adipogenesis and decreased BMD in mice devoid of TRs) is a follow-up on
+    the same line. Neither is cartilage-restricted, so the gap remains open for the tissue-specific question, but the systemic
+    double null is now attached to both the thra_receptor and thrb_receptor nodes.'
+- gap_id: g_para_004
+  database: PubMed ESearch
+  exact_query_string: Stickens D[Author] AND matrix metalloproteinase 13 endochondral
+  filters: db=pubmed, retmax=8, no date limit
+  date_run: '2026-08-05'
+  hit_count: 1
+  screened_count: 1
+  reason_none_qualified: 'Search succeeded rather than nulled. stickens2004 (PMID 15539485, Development) supplies both halves
+    of this gap: the Mmp9/Mmp13 DOUBLE null with severely impaired endochondral bone and drastically shortened bones ("MMP13
+    works synergistically with MMP9"), and the contradicting time course on the Mmp13 single null - severity increasing until
+    about 5 weeks and COMPLETELY RESOLVING by 12 weeks, against inada2004''s report of persistence into adult life. Both were
+    absent from the atlas. The reference is now attached to mmp13_protease and mmp9_protease and the persistence conflict
+    is logged as a contradiction.'
+- gap_id: g_para_003
+  database: PubMed ESearch
+  exact_query_string: Igf1r AND (chondrocyte-specific OR cartilage-specific OR Col2a1-Cre) AND growth plate
+  filters: db=pubmed, retmax=6, no date limit. A second query, "IGF-1R signaling in chondrocytes growth plate PTHrP Ihh",
+    returned 3 hits and located the target.
+  date_run: '2026-08-05'
+  hit_count: 1094
+  screened_count: 9
+  reason_none_qualified: 'No hit quantifies INSR/IGF1R hybrid receptor abundance in growth plate, which is the quantitative
+    content of this gap - the hybrid fraction remains unmeasured in this tissue in any species. The searches did locate the
+    cartilage-selective IGF1R perturbation the atlas lacked: wang2011 (PMID 21312270, JBMR) generated both embryonic and tamoxifen-inducible
+    postnatal cartilage-specific Igf1r knockouts, now attached to the igf1_receptor node. The first query''s hit count is
+    inflated by loose AND-of-OR expansion and is recorded as run.'
+- gap_id: g_para_007
+  database: Europe PMC
+  exact_query_string: (TITLE_ABS:"Fgfr3" AND TITLE_ABS:"Fgf21") OR (TITLE_ABS:"FGF21" AND TITLE_ABS:"chondrocyte" AND TITLE_ABS:"FGFR1")
+  filters: format=json, pageSize=25, resultType=lite, no date limit
+  date_run: '2026-08-05'
+  hit_count: 21
+  screened_count: 10
+  reason_none_qualified: No hit reports an Fgfr3 knockdown or knockout control in the FGF21 chondrocyte system, and none reports
+    an Fgfr1;Fgfr3 double perturbation in cartilage. The only growth plate hit is wu2012 itself (PMID 22696219, "Fibroblast
+    growth factor 21 inhibits chondrocyte function and growth hormone action directly at the growth plate"), already in the
+    atlas, which detected both receptors in the same cells and knocked down only FGFR1. Remaining hits are metabolic, hepatic,
+    reproductive or reviews. The receptor assignment therefore rests on a single-paralog knockdown with the other paralog
+    present, undisturbed and - per delezoide1998 - the one actually expressed in the human growth plate.
+- gap_id: g_para_001
+  database: PubMed ESearch
+  exact_query_string: Vidal O[Author] AND estrogen receptor specificity skeletal growth
+  filters: db=pubmed, retmax=8, no date limit
+  date_run: '2026-08-05'
+  hit_count: 3
+  screened_count: 3
+  reason_none_qualified: 'Logged here as the CONFIRMING search for the estrogen receptor family, which produced a CLEAN verdict
+    rather than a gap, and is recorded so the confirmation is reproducible: vidal2000 (PMID 10805804, PNAS) compared ERalpha-KO,
+    ERbeta-KO and the DOUBLE ERalpha/beta-KO (DERKO) head to head - ERKO and DERKO, but NOT BERKO, showed decreased longitudinal
+    and radial skeletal growth with decreased serum IGF-1. The paralog was removed singly and in combination and is not carrying
+    the effect. Scope limit recorded on the node: vidal2000 is male mice and growth, whereas brjesson2012 is female mice and
+    closure, so the double-knockout confirmation covers the growth arm and not the closure arm.'

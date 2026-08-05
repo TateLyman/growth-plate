@@ -1,123 +1,219 @@
 # L2 — Stem and progenitor biology
 
-**35 nodes · 38 edges · 11 gaps · 44 references · 5 logged contradictions · 1 X-grade claim**
+**35 nodes (0 stubs) · 190 edges touching the layer · 28 gaps · 42 distinct refs · 62 quantitative rows**
+Confidence: A 0 · B 3 · C 20 · D 10 · E 1 · **X 1**.
+`human_evidence` direct 5 / indirect 9 / **absent 21**. `translation_risk` **high on 24 of 35**.
 
-Evidence profile: `human_evidence` **absent on 21 of 35 nodes**, indirect on 9, direct on 5.
-`translation_risk` **high on 24 of 35**. Confidence: A 1 · B 2 · C 20 · D 10 · E 1 · X 1.
-
-That profile is the layer's central fact and is not an artefact of incomplete searching.
-The defining technique of this field — inducible Cre-lox clonal lineage tracing — cannot
-be performed in humans. Nearly everything below is mouse, and the reader should hold that
-in mind before transferring any of it.
-
----
-
-## 1. What is actually established
-
-**The resting zone contains slowly-cycling cells that generate columns clonally, in mice.**
-PTHrP-expressing (Pthlh⁺) chondrocytes appear in the centre of the mouse growth plate around
-P3 and expand between P6 and P9. They are markedly less proliferative than the cells beneath
-them — 6.1% versus 30.5% EdU⁺ at P9, a ratio of 0.20 — and after a P6 pulse their descendants
-remain in the resting zone for roughly a week before generating first short (<10-cell) and
-then long (>10-cell) columns, continuing for at least a year. Confetti labelling shows each
-column is monochromatic, i.e. clonal.
-
-**Multipotency is acquired late, not held in reserve.** Descendants become
-Col1a1(2.3kb)-GFP⁺ osteoblasts and Cxcl12-GFP⁺ marrow stromal cells, but **not** adipocytes
-in vivo (0 of 443 cells scored under rosiglitazone plus high-fat diet). Whatever the resting
-zone cell is, it is not a classical tri-potent mesenchymal stem cell.
-
-**Only a small minority behave as long-term stem cells.** Of P12-pulsed colonies, 16.3%
-formed secondary colonies and 12.5% of those could be passaged nine times — roughly **2–3%
-of PTHrP⁺ colony-forming cells**. An independent method agrees on the order of magnitude:
-durable label-retaining chondrocytes plateau at **2.6% (SE 0.9)** after a doxycycline chase,
-decaying with a half-life of ~1.0–1.2 weeks. Two unrelated assays converging on ~2–3% is the
-strongest quantitative result in this layer.
-
-**Hypertrophic chondrocytes become osteoblasts, and in young mice they are the dominant
-source.** Col10a1-lineage tracing gives **63%** of trabecular and **62%** of endosteal
-osteocalcin⁺ osteoblasts at 1 month, and **60%/68%** of Col1a1(2.3kb)-GFP⁺ osteoblasts at
-3 weeks. Dual Cre/Dre fate mapping shows this dominance ends at adolescence. This overturns
-the older view that hypertrophic chondrocytes simply die.
+**Zero nodes in this layer have replicated human evidence** (`human_evidence: direct` plus
+≥2 independent human primaries). That is not a sampling failure. The defining technique —
+inducible Cre-lox clonal lineage tracing — cannot be performed in humans, and everything
+that follows is downstream of that fact.
 
 ---
 
-## 2. Where the field disagrees — and it disagrees more than reviews admit
+## 1. The settled core
 
-Five schemes claim to describe the skeletal stem cell. They are logged as an explicit
-`contradicts` network (C-L2-01…05) rather than blended into a consensus that does not exist.
+**Postnatal chondrocyte columns are monoclonal, in mice.** Confetti labelling gives
+monochromatic columns; a single P6 PTHrP-creER pulse generates short (<10-cell) columns
+peaking at P18, then long columns, with labelled column number plateauing at ~6 months and
+columns still present at 12 months (`mizuhashi2018`, node `monoclonal_column_formation`).
+Grade C.
 
-| Scheme | Marker definition | Problem |
+**Resting-zone cells cycle at one fifth the rate of proliferative cells.** 6.1% (SD 2.3) vs
+30.5% (SD 3.2) EdU⁺ at P9, ratio 0.20, n = 3 (`mizuhashi2018`, `resting_zone_niche`). An
+independent H2B-EGFP dilution measurement gives 2.03-fold signal loss per division
+(n = 4 mice, p < 0.0001) and confirms the resting zone as the slow compartment
+(`hallett2021`).
+
+**Only ~2–3% of resting-zone cells are long-term self-renewing, and two unrelated assays
+agree.** Serial passaging: 16.3% of P12-pulsed colonies formed secondary colonies and
+12.5% of those (2/16) passaged ≥9 generations, giving the authors' 2–3% estimate. Label
+retention: the durably label-retaining fraction plateaus at **2.6% (SE 0.9)** after
+doxycycline chase, decaying with half-life 0.99–1.18 weeks from a starting 86.5% (SE 1.3)
+(`hallett2021`). Two methods, two laboratories, same order of magnitude — the strongest
+quantitative result in L2.
+
+**Multipotency is acquired late and is not tri-potent.** PTHrP-lineage descendants become
+Col1a1(2.3kb)-GFP⁺ osteoblasts and Cxcl12-GFP⁺ stroma, but **0 of 443 scored cells** became
+adipocytes under rosiglitazone plus high-fat diet (`mizuhashi2018`). Grem1⁺ cells likewise:
+**0 of 19 clones** adipogenic (`worthley2015`). Whatever these cells are, they are not
+classical MSCs.
+
+**Hypertrophic chondrocytes become osteoblasts and, in young mice, are the dominant
+source.** Col10a1-lineage: **63%** of trabecular and **62%** of endosteal osteocalcin⁺
+osteoblasts at 1 month; **60%/68%** of Col1a1(2.3kb)-GFP⁺ osteoblasts at 3 weeks
+(`zhou2014a`, `yang2014`). Dual Cre/Dre fate mapping puts the end of that dominance at
+adolescence, after which LepR⁺ stroma takes over (`shu2021`). Grade C, and it overturns the
+older view that hypertrophic chondrocytes simply die.
+
+---
+
+## 2. The live disagreements
+
+**Five schemes claim the apex skeletal stem cell and they are mutually incompatible on four
+axes at once** (C-L2-01, gap `g_l2stem_004`):
+
+| Scheme | Definition | The incompatibility |
 |---|---|---|
-| mSSC (Chan/Longaker) | CD45⁻Ter119⁻Tie2⁻CD51⁺CD90⁻6C3⁻CD105⁻CD200⁺ | Panel is **identical to Debnath's periosteal PSC panel**, so it does not specify compartment |
-| hSSC (human) | CD45⁻CD235a⁻TIE2⁻CD31⁻PDPN⁺CD146⁻CD73⁺CD164⁺ | **No shared antigen with the mouse panel** |
-| PTHrP⁺ / FoxA2⁺ resting chondrocytes | reporter lineage | FoxA2⁺ and PTHrP⁺ barely overlap (0.017% double-positive at P18) |
-| Grem1⁺ OCR cells | reporter lineage | Non-adipogenic (0/19 clones), conflicts with LepR⁺ scheme |
-| LepR⁺ stroma / CTSK periosteal | reporter lineage | 94% of marrow CFU-F but a different compartment again |
+| mSSC (`chan2015`) | CD45⁻Ter119⁻Tie2⁻CD51⁺CD90⁻6C3⁻CD105⁻CD200⁺; 8 subpopulations resolved | **Identical panel** to `debnath2018`'s periosteal PSC — so the panel does not specify anatomical compartment |
+| hSSC (`chan2018`) | PDPN⁺CD146⁻CD73⁺CD164⁺ | **No shared antigen with the mouse panel**; discovery specimen is *one* 17-week fetal femur, scored on 76 mouse orthologues |
+| PTHrP⁺ / FoxA2⁺ resting chondrocytes | reporter lineage | FoxA2⁺ and PTHrP⁺ overlap at **0.017%** at P18, against a 0.014% double-negative background — i.e. background (`muruganandan2022`) |
+| Grem1⁺ OCR (`worthley2015`) | reporter lineage | 40% CD105⁺, non-adipogenic; conflicts with LepR⁺ |
+| LepR⁺ stroma (`zhou2014`) | reporter lineage | 0.3% of marrow, 94% of all marrow CFU-F — a different compartment entirely, dominant only post-adolescence |
 
-**The most consequential contradiction is anatomical.** The human SSC was localised to the
-**pre-hypertrophic/hypertrophic zone** of a 17-week fetal femur — not the resting zone where
-all the mouse stem-cell work points. A 2026 report further finds the human resting-zone
-"root" cell is **PTHLH-negative**. If both hold, the mouse resting-zone paradigm may not
-describe human tissue at all, and the discovery specimen was a *single* fetal femur.
+**And the human cell is in the wrong zone.** C-L2-03: the hSSC was localised to the second
+half of the prehypertrophic and first half of the hypertrophic zone of that single fetal
+femur — *not* the resting zone where every mouse result points. `chu2026` compounds it: the
+most stem-like population of the human pubertal resting zone is **PTHLH-negative**, sits in
+a WNT/TGF-β-low microenvironment, and maps to Prrx1⁺ mouse cells (C-L2-05). If both hold,
+the murine resting-zone paradigm may not describe human tissue at all. `chu2026` full text
+was inaccessible; the claim rests on its abstract and is queued P1. Note also that
+`avijgan2025`, cited by five nodes for human resting-zone sub-populations, is **T6 —
+an unrefereed preprint**. The human end of this layer is one fetal specimen, one
+abstract-only 2026 paper and one preprint.
 
----
+**Is capacity spent or acquired?** C-L2-04. `nilsson2004`/`schrier2006` hold that resting-zone
+progenitors have a finite budget monotonically spent, producing senescence. `newton2019`
+holds that chondroprogenitors are *depleted* fetally and then *acquire* self-renewal
+postnatally. The two literatures have never been run in one system (rabbit/rat population
+kinetics vs mouse clone counting). Worse, the finite-capacity model's own originators
+falsified its Hayflick reading: rabbit resting-zone population doublings in vitro are
+**independent of donor age** (`nilsson2005`). What does change with senescence is **global
+DNA methylation, which decreases**, with no change across the resting-to-hypertrophic
+transition — a result pointing at an epigenetic clock rather than a division counter.
 
-## 3. The claim this layer refuses to pass downstream
+**The mechanism audit removed the phrase this layer was built on.** `growth_plate_senescence`
+was SCOPED in Phase 2d: `marino2008`'s catch-up was **incomplete** (p < 0.001 residual
+deficit in body mass, tail and tibia length), and gonadal suppression by leuprolide was
+partial (uterine mass ≈0.16 g vs ≈0.1 g ovariectomised, ≈0.5 g intact), leaving oestrogen —
+the single most important alternative driver — present and unequal between arms. The node
+now reads "**partial** conservation of growth potential". `catch_up_growth` was also SCOPED:
+`marino2008` observed catch-up in heart, liver and kidney too, and the anti-central-sensor
+argument rests on `baron1994`, which could not be read (P1 in the access queue).
 
-**"Secondary ossification centre formation triggers resting-zone stem cell acquisition"
-has no causal evidence.** Both anchor papers report only that the two events coincide in
-time. A Europe PMC search for any SOC ablation, blockade, or delay experiment with a
-resting-zone stemness readout returned **zero hits** (logged, gap `g_l2stem_003`).
-
-This matters because L7 (fusion) would otherwise inherit it as mechanism. It is recorded as
-`hypothesized_link` edges carrying `confidence: speculative` and a linked gap — which the
-validator enforces — so it cannot be silently upgraded to fact by a later pass.
-
----
-
-## 4. Senescence, catch-up growth, and a model falsified by its own authors
-
-The finite-proliferative-capacity model holds that plates exhaust a fixed division budget.
-Catch-up growth supports the **division-dependent** version: catch-up is local to the
-growth plate, not systemically driven. But the model's own originators falsified its
-Hayflick-style reading — rabbit resting-zone population doublings in vitro are **independent
-of donor age**. What does change with senescence is **global DNA methylation, which
-decreases**, with no change across the resting-to-hypertrophic transition.
-
-**Telomere attrition is grade X.** It is the most commonly invoked molecular clock for this
-model and is routinely asserted in reviews, yet no primary measurement of telomere length or
-telomerase activity in *human* growth plate chondrocytes as a function of age could be
-traced. Nearest datum is murine and indirect. Logged as `x001`.
-
----
-
-## 5. The gaps that matter most
-
-Full register in `gaps/gaps.yaml` (`g_l2stem_001`–`011`). The four highest-value:
-
-1. **`g_l2stem_001`** *(method_blocked)* — which human resting-zone cell self-renews, and
-   does it express PTHLH? Blocked because clonal lineage tracing is impossible in humans.
-   Discriminating route: clonal somatic-mutation phylogenies from microdissected human
-   physeal tissue, which needs no genetic labelling.
-2. **`g_l2stem_002`** *(quantitative_gap)* — what fraction of *human* osteoblasts derives
-   from hypertrophic chondrocytes? The mouse number is 60–68%; no human number exists.
-3. **`g_l2stem_009`** *(search_established)* — does the hSSC panel label human resting-zone
-   cells, or only pre-hypertrophic/hypertrophic cells as originally reported?
-4. **`g_l2stem_011`** *(species_gap)* — does the postnatal clonal switch occur in any
-   species that actually **fuses** its growth plates? Every demonstration is in a species
-   that does not. This is the hinge between L2 and L7.
+**Telomere attrition is grade X.** The most commonly invoked molecular clock for the
+finite-capacity model. No primary measurement of telomere length or telomerase activity in
+*human* growth plate chondrocytes as a function of age could be traced; the search returns
+osteoarthritic articular cartilage, skeletal-ageing reviews and rodent work. Nearest datum
+is murine and indirect (`carlone2021`: mTert-GFP marks a transitional progenitor peaking
+during adolescent growth rather than persisting). Logged `x001`, search `g_l2stem_007`.
 
 ---
 
-## 6. How to read this layer
+## 3. The load-bearing assumption
 
-- Treat every marker panel as **species-specific until proven otherwise**; mSSC and hSSC
-  share no antigen, so "the skeletal stem cell" is not one entity across species.
-- Treat the ~2–3% long-term self-renewing fraction as the layer's most robust number, since
-  two independent methods agree.
-- Do not carry the SOC-triggers-stemness claim into any mechanistic argument.
-- Blocked at source: Chu 2026 (*Sci Transl Med*, **P1**) and Newton 2019 (*Nature*, **P2**)
-  are abstract-only. The Newton clonal kinetics and the human PTHLH panel could not be
-  verified at source; both nodes are flagged `pending_source` with confidence dropped one
-  grade, and both are queued in `sources/access_queue.md`.
+**That the mouse PTHrP⁺ resting chondrocyte is the functional equivalent of whatever cell
+performs the same job in the human growth plate.**
+
+Every downstream use of this layer runs through it: L7's inheritance of "resting-zone
+depletion causes fusion", L12's occasional framing of growth drugs as acting on a progenitor
+pool, and the entire interpretive value of the 2–3% self-renewing fraction as a human number.
+
+Its evidence is: shared marker overlap in mouse (49.2% of PTHrP-mCherry⁺ cells carry the
+mSSC CD105⁻CD200⁺ phenotype, SD 8.4; 27.4% carry the BCSP phenotype, SD 16.5 —
+`mizuhashi2018`), and nothing human. Against it: the hSSC is in the wrong zone (C-L2-03),
+the human root cell is reported PTHLH-negative (C-L2-05), and the mouse and human marker
+panels share **no antigen** (C-L2-02). Gap `g_l12l7_002` states the question directly and it
+is unanswered.
+
+The atlas's own defensive move is worth naming: **"SOC formation triggers resting-zone
+stemness" has no causal evidence.** Both anchor papers report only temporal coincidence
+(3.3% secondary-colony formation from a P9 pre-SOC pulse vs 16.3% from a P12 pulse during
+SOC development). A Europe PMC search for any SOC ablation, blockade or delay experiment
+with a resting-zone stemness readout returned **0 studies** (`g_l2stem_003`, logged). It is
+held as `hypothesized_link` edges with `confidence: speculative` and a linked gap, which the
+validator enforces, so L7 cannot silently inherit it as mechanism.
+
+---
+
+## 4. What would change everything
+
+A clonal phylogeny of the human growth plate built from somatic mutations. This needs no
+genetic labelling and is therefore not blocked by the method that blocks everything else
+here. Whole-genome sequencing of laser-microdissected human columns and resting-zone cells
+would return, in one experiment: whether human columns are monoclonal; how many divisions
+separate a resting cell from a terminal hypertrophic cell; whether a small long-lived
+population exists and at what frequency; and — by cross-referencing PTHLH expression in the
+same tissue — whether the human root cell is PTHrP⁺ or PTHrP⁻.
+
+Any of four outcomes rewrites the layer. Polyclonal human columns would invalidate the
+clonal-column framework transferred from mouse. A long-lived fraction far above 2–3% would
+mean the in vitro figure is a culture artefact (`g_l2stem_010`). A PTHLH-negative root would
+confirm `chu2026` and orphan the field's flagship marker. Division counts incompatible with a
+finite budget would close C-L2-04 against the senescence model that L7 depends on.
+
+---
+
+## 5. Numbers
+
+| Parameter | Value | Unit | Species | Spread / n | Source | Flag |
+|---|---|---|---|---|---|---|
+| RZ vs PZ EdU incorporation | 6.1 vs 30.5 (ratio 0.20) | % EdU⁺ | mouse, P9 distal femur | SD 2.3 / 3.2, n = 3 | `mizuhashi2018` | single source |
+| Label-retaining fraction, plateau | **2.6** | % of Col2a1 lineage | mouse | SE 0.9; from 86.5% (SE 1.3) | `hallett2021` | single source |
+| Label-retention decay half-life | 0.99–1.18 | weeks | mouse | fitted range | `hallett2021` | single source |
+| H2B-EGFP loss per division | 2.03 | fold | mouse, P35 | n = 4, p < 0.0001 | `hallett2021` | single source |
+| Long-term self-renewing fraction | **2–3** | % of CFU | mouse | derived by authors; 2/16 clones passaged ≥9 | `mizuhashi2018` | derived |
+| Secondary colony formation, P9 vs P12 pulse | 3.3 (17/518) vs 16.3 (16/98) | % of clones | mouse | none of the P9 clones survived further passage | `mizuhashi2018` | single source |
+| PTHrP⁺ vs FoxA2⁺ colonies at passage 5 / 9 | 1.4 (2/143) vs 8.9 (10/112) | % of colonies | mouse, P18 | n = 3 experiments | `muruganandan2022` | single source |
+| FoxA2⁺/PTHrP⁺ double positives | 0.017 | % of sorted cells | mouse, P18 | SD 0.004; background 0.014 | `muruganandan2022` | single source |
+| Adipocyte output in vivo | **0 / 443** | LipidTOX⁺ cells | mouse | rosiglitazone + high-fat diet | `mizuhashi2018` | single source |
+| Grem1⁺ clones making adipocytes | **0 / 19** | clones | mouse | polyclonal cultures also negative | `worthley2015` | single source |
+| Chondrocyte-derived osteoblasts | 62–63 (Ocn⁺) / 60–68 (Col1a1-GFP⁺) | % | mouse, 1 month / 3 weeks | n = 3–4 mice | `zhou2014a` | single source |
+| **Human** equivalent of the above | **not measured** | % | human | — | — | gap `g_l2stem_002` |
+| PTHrP⁺ cells with mSSC phenotype | 49.2 | % | mouse, P9 | SD 8.4 | `mizuhashi2018` | single source |
+| LepR⁺ share of marrow CFU-F | 94 | % | mouse | 0.3% of marrow cells | `zhou2014` | single source |
+| hSSC discovery specimen | **1** | 17-week fetal femur | human | 76 orthologue gene score | `chan2018` | **n = 1** |
+| Rabbit RZ doublings vs donor age | no dependence | — | rabbit | effect size not given | `nilsson2005` | single source |
+| DNA methylation with senescence | decrease | global 5mC | rabbit | no change across RZ→HZ | `nilsson2005` | single source |
+| Causal SOC-ablation stemness experiments | **0** | studies | any | full search screened | — | null, `g_l2stem_003` |
+| Human telomere/telomerase in physis | **0** | studies | human | — | — | **grade X** (`x001`) |
+
+---
+
+## 6. Top gaps and their discriminating experiments
+
+1. **`g_l2stem_001`** (method_blocked, tract 3) — which human resting-zone cell self-renews,
+   and does it express PTHLH? Route around the block: clonal somatic-mutation phylogenies
+   from microdissected human physeal tissue, which require no genetic labelling. Monoclonal
+   columns with long shared branches → a durable root cell exists; star phylogenies → columns
+   are seeded repeatedly from a large pool.
+2. **`g_l2stem_003`** (search_established, tract 4) — does SOC formation *cause* stemness?
+   Discriminator: delay SOC formation (VEGF blockade or epiphyseal *Hif1a* manipulation) at
+   P8–P10 and score secondary-colony formation from PTHrP-creER cells at P12. Causal model
+   predicts the P12 rate stays at the P9 value (3.3%); autonomous-clock model predicts it
+   rises to 16.3% regardless.
+3. **`g_l2stem_004`** (contradiction, tract 2) — are the five schemes distinct cells? The
+   experiment nobody has run: all five panels and all five Cre drivers applied to *one* cohort
+   at matched ages with *one* functional assay. Only `mizuhashi2018` has done any cross-scheme
+   quantification at all.
+4. **`g_l2stem_009`** (search_established) — does the hSSC panel label human resting-zone
+   cells? Discriminator: PDPN/CD146/CD73/CD164 immunostaining with zone annotation on
+   postnatal human physeal blocks. Resting-zone labelling reconciles mouse and human; renewed
+   prehypertrophic-only labelling makes C-L2-03 a real biological species difference.
+5. **`g_l2stem_011`** (species_gap, tract 2) — does the postnatal clonal switch occur in a
+   species that actually **fuses**? Every demonstration is in one that does not. This is the
+   hinge between L2 and L7 and it is currently unbolted.
+6. **`g_l2stem_010`** (quantitative_gap, tract 4) — is 2–3% an in vivo number or a culture
+   artefact? Discriminator: in vivo dilution kinetics at multiple chase lengths against
+   serial-transplant frequency in the same animals.
+
+---
+
+## 7. Human-translation status
+
+**21 of 35 nodes have `human_evidence: absent`; 24 of 35 carry high translation risk; 0 have
+replicated human evidence.** In practical terms: of the 62 quantitative rows in this layer,
+essentially every functional measurement — cycle fraction, label retention, self-renewal
+frequency, adipogenic output, osteoblast contribution, colony kinetics — is mouse or rabbit.
+
+The human contribution is three items and each is fragile. `chan2018`: **one** 17-week fetal
+femur, scored by transferring 76 mouse orthologues, localising the stem cell to the wrong
+zone relative to all mouse work. `chu2026`: abstract only, inaccessible full text, claiming
+the human root cell is PTHLH-negative. `avijgan2025`: **T6, unrefereed preprint**, cited by
+five nodes. `ambrosi2025` adds ten human anatomical sites but profiles composition rather
+than testing self-renewal in the physis.
+
+The correct reading of any L2 answer: **it is a statement about mice**, and the one place
+where human data exist, they disagree with the mouse on both the zone and the marker. This
+is the layer to distrust, and the atlas holds it at A 0 / B 3 precisely so that L7 and L12
+cannot borrow from it at a grade it has not earned.
