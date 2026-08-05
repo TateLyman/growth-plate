@@ -1,9 +1,97 @@
 id: growth_plate_height
 name: Growth plate height
+aliases:
+- physeal thickness
+- plate height
 type: phenotype
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Growth plate height is the axial thickness of the cartilage disc and is the most commonly measured
+  architectural variable, but it is a poor stand-alone proxy for growth rate. Hunziker and Schenk warned
+  explicitly that bulk measures including growth plate height bear little relationship to linear growth
+  rate and are useful only as indicators of total plate activity. Direct morphometry supports the caution:
+  in mouse proximal tibia total plate height, resting zone height and combined proliferative-plus-prehypertrophic
+  height correlate linearly with tibial length and growth rate, but hypertrophic zone height and plate
+  area do not, and in both mouse and human it is total plate width that correlates most strongly. In humans,
+  plate height falls with age: proliferative and hypertrophic zone heights and primary spongiosa height
+  all decrease from birth to adolescence in rib, most steeply in the first postnatal year. Regional heterogeneity
+  within one plate is substantial - histomorphometry of a human distal tibia undergoing physiological
+  epiphysiodesis showed physeal height varying by region alongside focal bony bar formation, so a single
+  height value for a human plate is an average over a structurally non-uniform sheet.'
+quantitative:
+- parameter: plate variables correlating linearly with tibial length and growth rate
+  value: total height, resting zone height, combined proliferative+prehypertrophic height, plate width,
+    proliferation activity
+  unit: qualitative list
+  conditions: mouse proximal tibia, neonate to young adult
+  species: mouse
+  source_ref: wilson2021
+  uncertainty: hypertrophic zone height and growth plate area did not correlate
+- parameter: direction of zone height change with age
+  value: decreasing
+  unit: qualitative
+  conditions: human rib proliferative and hypertrophic zones, birth to adolescence
+  species: human
+  source_ref: byers2000
+  uncertainty: greatest change in the first postnatal year
+- parameter: utility of growth plate height as an estimator of linear growth rate
+  value: limited
+  unit: qualitative
+  conditions: rat proximal tibia across 21, 35 and 80 days
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: authors state bulk parameters bear little relationship to linear growth rate
+- parameter: regional variation of physeal height within one human plate
+  value: present
+  unit: qualitative
+  conditions: single adolescent human distal tibia sampled anterior/central/posterior and medial/middle/lateral
+    during physiological epiphysiodesis
+  species: human
+  source_ref: white2008
+  uncertainty: n = 1 specimen
+localization:
+- 'human distal tibia: regional heights mapped (white2008)'
+- 'human rib: zone heights across age (byers2000)'
+- 'mouse proximal tibia: heights vs growth rate (wilson2021)'
+human_evidence: direct
+human_evidence_note: Human physeal heights have been measured histomorphometrically in rib across age
+  (byers2000) and regionally in a distal tibia at the onset of closure (white2008), and radiographically
+  in tibia (wilson2021).
+species_basis:
+- human
+- mouse
+- rat
+translation_risk: low
+translation_risk_reason: Human measurements exist directly; the main caution is that the human data are
+  from few specimens and from rib and distal tibia rather than the fast knee plates.
+confidence: B
+key_refs:
+- ref_id: wilson2021
+  pmid: '31997656'
+  first_author: Wilson K
+  year: 2021
+  type: primary
+  one_line_finding: Total height, resting zone height and plate width correlate with tibial growth rate
+    in mouse; hypertrophic zone height and plate area do not.
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: Human rib proliferative and hypertrophic zone heights fall with age, most steeply
+    in the first year.
+- ref_id: hunziker1989
+  pmid: '2607442'
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: Bulk parameters including growth plate height are of limited value as estimators of
+    linear growth rate.
+- ref_id: white2008
+  pmid: '19308560'
+  first_author: White JR
+  year: 2008
+  type: primary
+  one_line_finding: Stereological mapping of regional physeal height in a human distal tibia during physiological
+    epiphysiodesis.
 last_verified: '2026-08-05'
-aliases:
-- plate thickness

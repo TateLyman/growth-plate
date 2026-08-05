@@ -2,6 +2,76 @@ id: sanders_staging
 name: Sanders skeletal maturity staging
 type: method
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- simplified skeletal maturity scoring system
+- SSMS
+summary: |
+  Sanders staging reduces Tanner-Whitehouse-III RUS descriptors to a small ordinal set of stages
+  recognisable from the digital epiphyses on a hand radiograph, designed for use in a busy clinic
+  without an atlas or scoring sheet. It was developed and tested by six raters on thirty skeletal
+  age radiographs: average intra-observer unweighted kappa 0.88 and weighted kappa 0.96, with 89%
+  exact agreement on repeat reading and 100% of differences within one stage; average
+  inter-observer unweighted kappa 0.71 and weighted kappa 0.89, with 71% exact agreement between
+  two reviewers and 97% of differences within one stage or matching. Agreement was highest between
+  the most experienced raters and was not improved by supplying a classification-specific atlas
+  (sanders2008). Its clinical claim is that it tracks the growth event that matters better than
+  its competitors: correlation with the scoliosis curve acceleration phase in 22 girls with
+  idiopathic scoliosis was 0.91, and the authors report it correlating more strongly with
+  scoliosis behaviour than either the Risser sign or Greulich-Pyle skeletal age (sanders2008).
+  The validation sample is small (30 radiographs for reliability, 22 girls for the growth
+  correlation) and single-centre, and the system is defined only over the peripubertal range where
+  the digital epiphyses are changing, so it carries no information before capping begins or after
+  the distal radius fuses.
+quantitative:
+- parameter: intra-observer agreement, Sanders staging
+  value: 0.88 unweighted / 0.96 weighted
+  unit: kappa
+  conditions: 6 raters, 30 skeletal age radiographs, repeat reading
+  species: human
+  source_ref: sanders2008
+  uncertainty: 89% exact match; 100% of differences within one stage
+- parameter: inter-observer agreement, Sanders staging
+  value: 0.71 unweighted / 0.89 weighted
+  unit: kappa
+  conditions: 6 raters, 30 skeletal age radiographs
+  species: human
+  source_ref: sanders2008
+  uncertainty: 71% exact match; 97% within one stage
+- parameter: correlation of Sanders stage with scoliosis curve acceleration phase
+  value: '0.91'
+  unit: correlation coefficient
+  conditions: 22 girls with idiopathic scoliosis
+  species: human
+  source_ref: sanders2008
+  uncertainty: n=22; single centre
+localization:
+- 'human hand radiograph: digital epiphyses of the phalanges, plus distal radius'
+human_evidence: direct
+human_evidence_note: Developed, tested for reliability and validated against growth behaviour in human cohorts.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical method with no animal analogue.
+confidence: B
+key_refs:
+- ref_id: sanders2008
+  pmid: '18310704'
+  first_author: Sanders JO
+  year: 2008
+  type: primary
+  one_line_finding: >-
+    A simplified TW3-RUS-derived staging system achieved inter-observer weighted kappa 0.89 and
+    correlated 0.91 with the scoliosis curve acceleration phase.
+- ref_id: risser1958
+  pmid: '13561591'
+  first_author: RISSER JC
+  year: 1958
+  type: primary
+  one_line_finding: >-
+    Original description of the iliac apophysis sign as a maturity indicator in scoliosis
+    management, the comparator Sanders staging was designed to replace.
+open_questions:
+- g_l7fuse_008
+contradicts: []
 last_verified: '2026-08-05'

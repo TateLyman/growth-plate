@@ -1,9 +1,47 @@
 id: somatostatin_hormone
-name: Somatostatin
+name: Somatostatin (SST)
+aliases:
+- SST
+- somatotropin release-inhibiting factor
+- SRIF
 type: hormone
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Somatostatin is a cyclic peptide (SST-14 and SST-28) released from periventricular hypothalamic
+  neurons that inhibits somatotroph GH release through Gi-coupled SSTR2 and SSTR5. Its role in growth
+  is to sculpt the TROUGHS between GH bursts: burst timing in vivo is generated largely by episodic somatostatin
+  withdrawal rather than by GHRH pulses alone, which is why GH remains pulsatile in humans carrying an
+  inactivating GHRHR mutation. Pharmacological blockade separates pituitary from cartilage action cleanly
+  - the somatostatin analogue octreotide abolished GH-stimulated tibial growth in hypophysectomised rats
+  but had no effect on IGF-1-stimulated growth in the same model (zapf2002), placing somatostatin''s growth
+  effect entirely upstream of the plate. Trough depth also matters for the receptor: hepatic GHR and GHBP
+  levels in rat track the continuous (trough) component of the GH pattern (gevers1996).'
+localization:
+- 'human SYS: hypothalamic periventricular nucleus; also gut and pancreatic delta cells'
+- 'growth plate: no established local somatostatin action'
+human_evidence: indirect
+human_evidence_note: Human evidence is pharmacological and inferential (octreotide lowers GH and IGF-1
+  and is used to treat acromegaly); there is no human somatostatin loss-of-function growth phenotype.
+species_basis:
+- human
+- rat
+translation_risk: moderate
+translation_risk_reason: The dissection of pituitary versus cartilage action is rat pharmacology; human
+  data are limited to acromegaly treatment responses.
+confidence: B
+key_refs:
+- ref_id: zapf2002
+  first_author: Zapf J
+  year: 2002
+  type: primary
+  one_line_finding: Octreotide blocked GH-stimulated but not IGF-I-stimulated tibial growth in hypophysectomised
+    rats.
+  pmid: '12130560'
+- ref_id: gevers1996
+  first_author: Gevers EF
+  year: 1996
+  type: primary
+  one_line_finding: Hepatic GHR/GHBP track the trough component of a patterned GH infusion, the component
+    somatostatin sets.
+  pmid: '8603568'
 last_verified: '2026-08-05'
-aliases:
-- SRIF

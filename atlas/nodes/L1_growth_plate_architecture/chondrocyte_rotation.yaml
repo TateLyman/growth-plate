@@ -1,9 +1,90 @@
 id: chondrocyte_rotation
-name: Chondrocyte rotation after division
+name: Post-mitotic chondrocyte rotation
+aliases:
+- division plane rotation
+- daughter cell rotation
 type: process
 layer: L1
-stub: true
+stub: false
+summary: 'After a proliferative chondrocyte divides, the daughter pair remains attached and rotates so
+  that the axis joining the two nuclei swings from transverse toward parallel with the growth direction.
+  Live imaging of explanted growth plates showed this directly and ruled out the earlier convergent-extension
+  model in which cells were thought to intercalate between neighbours; the sister cells never intercalate,
+  they rotate and then separate. The rotation depends on integrin-based adhesion to the pericellular matrix
+  and on N-cadherin mediated cell-cell adhesion: chondrocyte-specific beta1 integrin deletion abolishes
+  rotation and simultaneously delays G1 progression and impairs cytokinesis, and alpha-parvin, a component
+  of the integrin-linked kinase complex, is likewise required. Quantitatively, rotation is a graded and
+  often incomplete process rather than a switch: measured as the elevation angle between neighbouring
+  clonal nuclei, only about a third to two fifths of postnatal divisions complete it and fewer than one
+  in ten reach 80-90 degrees. Because incomplete rotations accumulate within a clone, the cumulative fraction
+  determines whether the clone remains a column or expands laterally into a cluster.'
+quantitative:
+- parameter: elevation angle defining a completed rotation
+  value: 60-90
+  unit: degrees
+  conditions: operational threshold validated against orthogonal viewing angles in 3D clonal imaging
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: threshold set by the authors from two orthogonal views
+- parameter: proportion of divisions completing rotation, postnatal columns
+  value: 36.4-39.5
+  unit: '% of divisions'
+  conditions: P40 mouse proximal tibia and distal femur
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 512 and 737 columns
+- parameter: proportion of divisions completing rotation, embryonic clones
+  value: 17.6-19.4
+  unit: '% of doublets'
+  conditions: E18.5 mouse distal femur and proximal tibia
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 1044 and 805 doublets
+- parameter: Pearson correlation between nuclear and whole-cell elevation angle
+  value: '0.79'
+  unit: Pearson r
+  conditions: validation that nuclei can be used as a proxy for cells
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: n = 1278 clones
+localization:
+- 'mouse PZ: live-imaged and quantified in 3D (romereim2014, rubin2024)'
+- 'human PZ: not observed'
 human_evidence: absent
+human_evidence_note: Rotation has never been observed in human growth plate tissue; it requires live imaging
+  of explants and all published observations are murine.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Entirely mouse live-imaging and genetics; no human system exists in which the
+  manoeuvre could currently be observed.
+confidence: C
+key_refs:
+- ref_id: romereim2014
+  pmid: '24764078'
+  first_author: Romereim SM
+  year: 2014
+  type: primary
+  one_line_finding: Live imaging shows post-mitotic rotation on a dynamic adhesion surface, not intercalation.
+- ref_id: aszodi2003
+  pmid: '14522949'
+  first_author: Aszodi A
+  year: 2003
+  type: primary
+  one_line_finding: Beta1 integrin deletion abolishes rotation and delays G1 progression and cytokinesis.
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: Quantifies rotation completeness by elevation angle and shows most divisions do not
+    complete it.
+- ref_id: greer2024
+  pmid: '38294852'
+  first_author: Greer SE
+  year: 2024
+  type: primary
+  one_line_finding: N-cadherin and beta1 integrin coordinately regulate column architecture.
+open_questions:
+- g_l1arch_004
 last_verified: '2026-08-05'
-aliases:
-- cell intercalation

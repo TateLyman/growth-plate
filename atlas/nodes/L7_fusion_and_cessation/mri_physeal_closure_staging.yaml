@@ -1,0 +1,77 @@
+id: mri_physeal_closure_staging
+name: MRI staging of physeal closure
+type: method
+layer: L7
+stub: false
+aliases:
+- MRI growth plate fusion score
+summary: |
+  MRI grades the growth plate itself rather than inferring maturity from surrounding bone shape,
+  and it does so without ionising radiation, which is what makes it usable in healthy volunteer
+  cohorts. A prospective cross-sectional study imaged the wrist, knee and ankle of 958 healthy
+  subjects aged 14.0-21.5 years, graded each plate on an ordinal fusion scale by two radiologists,
+  and reported inter-observer kappa of 0.87-0.94 (kvist2021). Sequence choice matters more than
+  reader seniority for the knee: in 395 subjects, cartilage-weighted sequences gave inter- and
+  intra-observer agreement of 93% (kappa 0.86) and 89% (kappa 0.79) for the femur and 95% (kappa
+  0.90) and 91% (kappa 0.81) for the tibia, against T1-weighted agreement of 82% (kappa 0.73) and
+  77% (kappa 0.65) for the femur and 90% (kappa 0.82) and 87% (kappa 0.75) for the tibia among
+  paediatric radiologists; general radiologists reading T1-weighted images fell to 69% (kappa
+  0.56) for the femur and 56% (kappa 0.34) for the tibia (kvist2020). The practical implications
+  are that MRI physeal staging is at least as reproducible as hand radiograph bone age, that
+  cartilage sequences should be specified, and that paediatric radiology experience is required.
+  It is the only method in this layer that observes the fusion process directly rather than a
+  correlate of it, and it is therefore the natural stratifier for any future study that seeks
+  human physeal tissue at defined fusion stages.
+quantitative:
+- parameter: inter-observer agreement for MRI fusion score across wrist, knee and ankle
+  value: 0.87-0.94
+  unit: kappa
+  conditions: two radiologists, 958 healthy subjects aged 14.0-21.5 y
+  species: human
+  source_ref: kvist2021
+  uncertainty: range across sites
+- parameter: inter-observer agreement, cartilage sequence, femur and tibia
+  value: 0.86 (femur) / 0.90 (tibia)
+  unit: kappa
+  conditions: 395 subjects, paediatric radiologists
+  species: human
+  source_ref: kvist2020
+  uncertainty: 93% and 95% percent agreement respectively
+- parameter: inter-observer agreement, T1-weighted sequence, general radiologists
+  value: 0.56 (femur) / 0.34 (tibia)
+  unit: kappa
+  conditions: 395 subjects, general (non-paediatric) radiologists
+  species: human
+  source_ref: kvist2020
+  uncertainty: 69% and 56% percent agreement respectively
+localization:
+- 'human distal femur, proximal and distal tibia, calcaneus, distal radius: ordinal fusion staging'
+human_evidence: direct
+human_evidence_note: Prospective human volunteer cohorts of 395 and 958 subjects with published reader agreement.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human imaging method applied to the human endpoint directly.
+confidence: A
+key_refs:
+- ref_id: kvist2021
+  pmid: '33047349'
+  first_author: Kvist O
+  year: 2021
+  type: primary
+  one_line_finding: >-
+    MRI fusion staging of wrist, knee and ankle in 958 healthy subjects with inter-observer kappa
+    0.87-0.94, establishing site-specific and sex-specific fusion timing.
+- ref_id: kvist2020
+  pmid: '33088592'
+  first_author: Kvist OF
+  year: 2020
+  type: primary
+  one_line_finding: >-
+    Cartilage-weighted sequences give higher reader agreement than T1-weighted for knee growth
+    plate staging, and paediatric radiology experience substantially improves agreement.
+open_questions:
+- g_l7fuse_002
+- g_l7fuse_003
+contradicts: []
+last_verified: '2026-08-05'

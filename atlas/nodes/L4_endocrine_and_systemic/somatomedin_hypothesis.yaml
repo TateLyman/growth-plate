@@ -1,7 +1,96 @@
 id: somatomedin_hypothesis
 name: Somatomedin hypothesis
+aliases:
+- classical somatomedin hypothesis
+- endocrine IGF-1 hypothesis
 type: hypothesis
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The somatomedin hypothesis (Salmon and Daughaday, 1957) states that GH does not act on cartilage
+  itself but stimulates the liver to release a circulating mediator - later identified as IGF-1 - which
+  is the proximate growth stimulus at the plate. Two independent liver-specific Igf1 deletions in mouse
+  falsified the strong form. Yakar 1999 deleted hepatic Igf1 by Cre/loxP and found body weight, body length
+  and femoral length indistinguishable from littermates despite near-complete loss of hepatic Igf1 mRNA;
+  Sjogren 1999 obtained the same result with a 75% fall in serum IGF-1 (sjgren1999). Both confirm the
+  liver is the principal SOURCE of blood IGF-1 while denying that blood IGF-1 is the principal DRIVER
+  of postnatal growth. A weaker, threshold form survives: LID plus ALS-knockout double mutants, in which
+  serum IGF-1 falls further, do show reduced linear growth with a shorter total growth plate and shorter
+  proliferative and hypertrophic zones, 10% lower bone mineral density and >35% lower periosteal circumference,
+  all partly restored by 4 weeks of IGF-1 (yakar2002). These are mouse data. The equivalent partition
+  has never been made in humans.'
+quantitative:
+- parameter: reduction in serum IGF-1 after liver-specific Igf1 deletion
+  value: '75'
+  unit: '%'
+  conditions: LID mouse, albumin-Cre x Igf1 flox, postnatal
+  species: mouse
+  source_ref: sjgren1999
+  uncertainty: reported as ~75%; group sizes not read from abstract
+- parameter: change in body weight, body length and femoral length in liver-specific Igf1 knockout
+  value: '0'
+  unit: '% (no detectable difference from wild-type littermates)'
+  conditions: LID mouse vs littermate controls, postnatal growth
+  species: mouse
+  source_ref: yakar1999
+  uncertainty: stated as not different; effect-size CI not reported in abstract
+- parameter: reduction in serum IGF-1 in ALS knockout
+  value: '65'
+  unit: '%'
+  conditions: ALSKO mouse
+  species: mouse
+  source_ref: yakar2002
+  uncertainty: not reported
+- parameter: bone mineral density decrease in LID+ALSKO double mutant
+  value: '10'
+  unit: '%'
+  conditions: LID x ALSKO double knockout mouse vs control
+  species: mouse
+  source_ref: yakar2002
+  uncertainty: not reported
+- parameter: periosteal circumference and cortical thickness decrease in LID+ALSKO
+  value: '>35'
+  unit: '%'
+  conditions: LID x ALSKO double knockout mouse vs control
+  species: mouse
+  source_ref: yakar2002
+  uncertainty: not reported
+localization:
+- 'mouse SYS: hepatocyte-derived circulating IGF-1'
+- 'mouse growth plate: total, proliferative and hypertrophic zone heights reduced only when serum IGF-1
+  falls below the LID/ALSKO double-mutant threshold (yakar2002)'
+human_evidence: indirect
+human_evidence_note: Human IGF1, IGFALS, PAPPA2 and GHR mutations show that IGF-1 availability sets stature,
+  but no human experiment separates hepatic from locally produced IGF-1.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: The falsification and the surviving threshold form are both mouse-only; mice
+  reach adult size without epiphyseal fusion and their IGF-1 ternary complex biology differs quantitatively
+  from human. Reviews routinely state the LID result as if it were a general fact about mammals.
+confidence: C
+key_refs:
+- ref_id: yakar1999
+  first_author: Yakar S
+  year: 1999
+  type: primary
+  one_line_finding: Liver-specific Igf1 deletion left body weight, body length and femoral length unchanged
+    despite loss of hepatic Igf1.
+  pmid: '10377413'
+- ref_id: sjgren1999
+  first_author: Sjögren K
+  year: 1999
+  type: primary
+  one_line_finding: Hepatocyte Igf1 inactivation cut serum IGF-1 by 75% with no discernible effect on
+    postnatal body growth.
+  pmid: '10359843'
+- ref_id: yakar2002
+  first_author: Yakar S
+  year: 2002
+  type: primary
+  one_line_finding: LID+ALSKO double mutants fall below a circulating IGF-1 threshold and show shorter
+    growth plates, lower BMD and thinner cortices, partly rescued by IGF-1.
+  pmid: '12235108'
+contradicts:
+- dual_effector_hypothesis
 last_verified: '2026-08-05'

@@ -1,7 +1,57 @@
 id: ghrelin_hormone
 name: Ghrelin
+aliases:
+- GHRL
+- acyl-ghrelin
 type: hormone
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Ghrelin is a 28-residue stomach-derived peptide, octanoylated on Ser3 by GOAT, that activates
+  GHSR1a on somatotrophs and hypothalamic neurons and amplifies GH secretory bursts. Its role in skeletal
+  growth was long argued mainly from pharmacology; it now has a direct mechanistic demonstration. In rodents
+  fed identical total calories as discrete meals rather than by grazing, preprandial ghrelin surges tripled
+  GH secretion, raised burst height and added two extra GH bursts per day, and this preserved body length
+  and tibial epiphyseal plate width; the effect required ghrelin and GHS-R (hornsby2025). The same study
+  showed the converse in humans: continuous nasogastric feeding failed to suppress circulating ghrelin
+  and produced continuously elevated GH with minimal rhythmicity, whereas bolus enteral infusion restored
+  postprandial ghrelin troughs and ultradian GH rhythm. Ghrelin is therefore the best-characterised link
+  between feeding PATTERN, as distinct from total intake, and growth plate output.'
+quantitative:
+- parameter: increase in GH secretion with meal-feeding versus grazing at matched intake
+  value: '3'
+  unit: fold
+  conditions: male rats, automated feeding, deconvolution of GH profiles
+  species: rat
+  source_ref: hornsby2025
+  uncertainty: reported as 'tripled'; CI not read
+- parameter: additional GH secretory bursts per day with meal-feeding
+  value: '2'
+  unit: bursts/day
+  conditions: male rats, automated meal-feeding vs grazing
+  species: rat
+  source_ref: hornsby2025
+  uncertainty: not reported
+localization:
+- 'human SYS: gastric X/A-like cells -> circulation -> pituitary and hypothalamus'
+- 'growth plate: no established direct ghrelin action on chondrocytes'
+human_evidence: direct
+human_evidence_note: In human volunteers, continuous versus bolus enteral feeding changed circulating
+  ghrelin troughs and GH rhythmicity in the predicted directions; the skeletal endpoint was measured only
+  in rodents.
+species_basis:
+- rat
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: The GH-rhythm arm was replicated in humans, but the growth plate readout (epiphyseal
+  plate width, body length) exists only in rodents.
+confidence: B
+key_refs:
+- ref_id: hornsby2025
+  first_author: Hornsby AK
+  year: 2025
+  type: primary
+  one_line_finding: Meal-feeding tripled GH secretion via ghrelin/GHS-R and preserved tibial epiphyseal
+    plate width; continuous enteral feeding flattened GH rhythm in humans.
+  pmid: '40168099'
 last_verified: '2026-08-05'

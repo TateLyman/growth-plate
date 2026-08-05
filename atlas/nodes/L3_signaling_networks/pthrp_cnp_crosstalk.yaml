@@ -2,6 +2,60 @@ id: pthrp_cnp_crosstalk
 name: PTHrP-CNP crosstalk
 type: process
 layer: L3
-stub: true
+stub: false
+summary: |
+  The two dominant local control systems of the growth plate - PTHrP/PTH1R/cAMP and CNP/NPR2/cGMP -
+  have never been shown to interact directly, and the absence is established by systematic search
+  (gap g_l3core_005). A Europe PMC title/abstract query requiring both a PTHrP-pathway term and a
+  CNP-pathway term returns eight records, none of which reports a mechanistic interaction in growth
+  plate cartilage; the closest is a 2003 study of adrenomedullin, CNP and PTHrP effects on cultured
+  cells, in which the peptides were tested in parallel rather than in combination. Three indirect
+  convergence points are documented and are the reason to expect an interaction: PKG-II, the CNP
+  effector, blocks nuclear entry of SOX9 (Chikuda 2004) while PTHrP signalling maintains SOX9 and
+  represses hypertrophy through HDAC4/5-MEF2 (Nishimori 2019), so both pathways converge on the
+  hypertrophy switch from opposite directions; CNP acting through NPR2 also raises PKA activity in
+  hypertrophic chondrocytes (Hirota 2022), which is the same effector PTH1R uses; and PDE3A/PDE3B are
+  dual-specificity enzymes in which cGMP competitively inhibits cAMP hydrolysis, providing a
+  biochemical coupling that has never been tested in cartilage. This node is therefore a genuine
+  negative-space entry: the crosstalk is expected on mechanistic grounds and has not been looked for.
+localization:
+- 'growth plate, any species: direct PTHrP-CNP interaction not reported'
+- 'mouse HZ: PKA activation by CNP confirmed (hirota2022) - shared effector, not demonstrated crosstalk'
 human_evidence: absent
+human_evidence_note: No human study addresses PTHrP-CNP interaction; the human evidence for the two pathways
+  is entirely separate monogenic series.
+species_basis:
+- mouse
+translation_risk: unknown
+translation_risk_reason: There is no established mechanism in any species, so translation risk cannot
+  be graded.
+confidence: E
+key_refs:
+- ref_id: chikuda2004
+  pmid: '15466490'
+  first_author: Chikuda H
+  year: 2004
+  type: primary
+  one_line_finding: PKG-II, the CNP effector, blocks SOX9 nuclear entry to permit hypertrophy.
+- ref_id: nishimori2019
+  pmid: '30843886'
+  first_author: Nishimori S
+  year: 2019
+  type: primary
+  one_line_finding: PTHrP represses hypertrophy through HDAC4/HDAC5 acting on MEF2.
+- ref_id: hirota2022
+  pmid: '35041746'
+  first_author: Hirota K
+  year: 2022
+  type: primary
+  one_line_finding: CNP raises PKA activity in hypertrophic chondrocytes, the effector shared with PTH1R.
+- ref_id: ursachi2026
+  pmid: '41732176'
+  first_author: Ursachi VC
+  year: 2026
+  type: review
+  one_line_finding: PDE3 enzymes couple cAMP and cGMP hydrolysis, giving a candidate biochemical coupling
+    between the two arms.
+open_questions:
+- g_l3core_005
 last_verified: '2026-08-05'

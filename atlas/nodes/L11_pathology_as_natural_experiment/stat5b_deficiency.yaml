@@ -1,7 +1,81 @@
 id: stat5b_deficiency
 name: STAT5B deficiency
+aliases:
+- STAT5b GH insensitivity
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  STAT5B deficiency places the lesion one step below the GH receptor and shows that the entire
+  growth-promoting output of GH runs through a single transcription factor. In the second
+  reported case, a homozygous single-nucleotide insertion in STAT5B exon 10 caused a frameshift,
+  early termination and complete absence of immunodetectable STAT5b protein. The biochemical
+  signature is GH insensitivity with an intact receptor: GH and GH-binding protein normal to
+  elevated, IGF-I 7.2 ng/mL against a normal range of 242-600, IGFBP-3 543 ng/mL against
+  2500-4800, acid-labile subunit 1.22 ug/mL against 5.6-16, and no rise in an IGF-I generation
+  test. The stature outcome is extreme: 114 cm at age 16.4 years, a height SDS of -7.8. A
+  separate natural missense allele, A630P in the SH2 domain, was shown to be unable to function
+  either as a signal transducer or as a transcription factor, confirming that the growth defect
+  maps to loss of STAT5b transcriptional activity on the IGF1 locus rather than to some
+  secondary effect. STAT5B deficiency is also an immunodeficiency, because STAT5b transduces
+  IL-2 family cytokines - one of the clearest examples in this layer of a growth gene whose
+  pleiotropy is a mechanistic clue rather than noise.
+quantitative:
+- parameter: height at age 16.4 years in the index STAT5B-null patient
+  value: '114'
+  unit: cm
+  conditions: female, consanguineous pedigree, homozygous STAT5B exon 10 insertion
+  species: human
+  source_ref: hwa2005
+  uncertainty: height SDS -7.8; n=1
+- parameter: height SDS at age 16.4 years
+  value: '-7.8'
+  unit: SDS
+  conditions: same patient
+  species: human
+  source_ref: hwa2005
+  uncertainty: n=1
+- parameter: serum IGF-I
+  value: '7.2'
+  unit: ng/mL
+  conditions: normal range quoted 242-600; no rise on IGF-I generation test
+  species: human
+  source_ref: hwa2005
+  uncertainty: n=1
+- parameter: serum IGFBP-3
+  value: '543'
+  unit: ng/mL
+  conditions: normal range quoted 2500-4800
+  species: human
+  source_ref: hwa2005
+  uncertainty: n=1
+- parameter: serum acid-labile subunit
+  value: '1.22'
+  unit: ug/mL
+  conditions: normal range quoted 5.6-16
+  species: human
+  source_ref: hwa2005
+  uncertainty: n=1
+localization:
+- 'human growth plate: no published histology in STAT5B deficiency'
+human_evidence: direct
+human_evidence_note: Molecularly confirmed human null with complete hormonal profiling and measured
+  stature; a second human allele independently shown to abolish transducer and transcription-factor
+  function.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: hwa2005
+  pmid: '15827093'
+  first_author: Hwa V
+  year: 2005
+  type: primary
+  one_line_finding: 'STAT5B null: 114 cm (-7.8 SDS) at 16.4 y, IGF-I 7.2 ng/mL, flat IGF-I generation
+    test.'
+open_questions:
+- g_l11path_008
 last_verified: '2026-08-05'

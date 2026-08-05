@@ -9,7 +9,7 @@ script refuses to create the entry, so a fabricated citation cannot enter the
 atlas in the first place.
 
 Usage:
-  python3 atlas/tools/addref.py --pmid 30356214 --tier T1 --type primary
+  python3 atlas/tools/addref.py --pmid 30401834 --tier T1 --type primary
   python3 atlas/tools/addref.py --doi 10.1038/s41586-018-0662-5 --tier T1 --type primary
   python3 atlas/tools/addref.py --pmid 12345 --finding "CNP raises cGMP in PZ"
   python3 atlas/tools/addref.py --batch pmids.txt --tier T1 --type primary

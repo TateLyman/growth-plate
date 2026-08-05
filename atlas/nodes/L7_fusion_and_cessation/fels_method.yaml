@@ -2,6 +2,69 @@ id: fels_method
 name: Fels method
 type: method
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  The Fels method assesses skeletal maturity from graded indicators and ratios of hand-wrist
+  bones and, unlike Greulich-Pyle and Tanner-Whitehouse, returns a standard error alongside each
+  skeletal age estimate - the only widely used manual method that quantifies its own uncertainty
+  per case. It was developed on the Fels Longitudinal Study, a serially radiographed cohort of
+  residents of southwest Ohio, and the same cohort underpins the Roche-Wainer-Thissen and
+  Khamis-Roche adult stature prediction models (khamis1994). Its practical footprint has always
+  been small: a 1996 methodological survey judged Greulich-Pyle assessments often very
+  inaccurate, TW2 the method of choice at the time, and experience with Fels still very limited.
+  In this sweep no primary study reporting Fels inter-rater or intra-rater error in years with a
+  confidence interval was located, and the per-case standard error remains the method's
+  advertised rather than independently validated property; this is logged as part of the
+  quantitative gap on bone age error (g_l7fuse_008). Fels remains important chiefly because it is
+  the maturity scale on which the best-characterised adult height prediction equations were
+  calibrated, and because the Khamis-Roche variant of those equations - which omits skeletal age
+  entirely - provides the sharpest available test of how much bone age actually contributes to
+  remaining-growth prediction (remaining_growth_prediction).
+quantitative:
+- parameter: reference cohort for the Fels method
+  value: Fels Longitudinal Study, southwest Ohio, 223 white males and 210 white females in the prediction sample
+  unit: descriptive
+  conditions: serial radiographs every 6 months
+  species: human
+  source_ref: khamis1994
+  uncertainty: sample sizes as reported for the stature prediction models
+localization:
+- 'human left hand and wrist: graded maturity indicators plus bone-ratio measurements'
+human_evidence: direct
+human_evidence_note: Built and validated on a human longitudinal radiographic cohort.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical method with no animal analogue.
+confidence: D
+key_refs:
+- ref_id: khamis1994
+  pmid: '7936860'
+  first_author: Khamis HJ
+  year: 1994
+  type: primary
+  one_line_finding: >-
+    Built on the Fels Longitudinal Study, a stature prediction model omitting skeletal age had
+    errors only slightly larger than the Roche-Wainer-Thissen model that uses it.
+- ref_id: roche1975
+  pmid: '172855'
+  first_author: Roche AF
+  year: 1975
+  type: primary
+  one_line_finding: >-
+    The RWT method predicts adult stature from recumbent length, weight, midparent stature and
+    hand-wrist skeletal age, with smaller errors than Bayley-Pinneau.
+- ref_id: satoh2015
+  pmid: '26568655'
+  first_author: Satoh M
+  year: 2015
+  type: review
+  one_line_finding: >-
+    Reviews bone age methods and their clinical applications, including the position of Fels
+    relative to GP and TW.
+pending_source: khamis1994
+open_questions:
+- g_l7fuse_008
+- g_l7fuse_007
+contradicts: []
 last_verified: '2026-08-05'

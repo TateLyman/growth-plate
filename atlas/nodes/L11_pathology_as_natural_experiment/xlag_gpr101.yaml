@@ -1,9 +1,68 @@
 id: xlag_gpr101
-name: X-linked acrogigantism
+name: X-linked acrogigantism (X-LAG)
+aliases:
+- XLAG
+- Xq26.3 microduplication
+- GPR101 duplication
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  X-LAG is the earliest-onset human overgrowth disorder of the GH axis and a structural-variant
+  experiment in enhancer hijacking. Microduplications of chromosome Xq26.3 containing GPR101 were
+  found in 13 of 43 gigantism patients; four came from two unrelated kindreds and nine were
+  sporadic. The duplication contains four protein-coding genes but only GPR101 was overexpressed
+  in the patients' pituitary lesions, isolating the causal gene within the interval. The
+  mechanism is now understood as disruption of the topologically associating domain containing
+  GPR101 and formation of a neo-TAD that lets VGLL1-adjacent enhancers drive ectopic pituitary
+  GPR101 expression - which is why not every GPR101-containing duplication is pathogenic, a point
+  of direct clinical consequence in prenatal diagnosis. The phenotype is defined by age: every
+  X-LAG patient had disease onset in early childhood, whereas none of the gigantism patients
+  without an Xq26.3 duplication presented before age 5. Somatic mosaicism explains sporadic male
+  cases. X-LAG is therefore the human demonstration that the growth plate's total elongation
+  capacity is very large when GH drive begins in infancy rather than at puberty.
+quantitative:
+- parameter: gigantism patients with an Xq26.3 microduplication
+  value: 13/43
+  unit: patients
+  conditions: 4 from two unrelated kindreds, 9 sporadic
+  species: human
+  source_ref: trivellin2014
+  uncertainty: n=43 screened
+- parameter: protein-coding genes in the duplicated interval
+  value: '4'
+  unit: genes
+  conditions: only GPR101 was overexpressed in patients' pituitary lesions
+  species: human
+  source_ref: trivellin2014
+  uncertainty: n=13 duplications characterised
+- parameter: age at disease onset in X-LAG
+  value: early childhood (all patients)
+  unit: not_applicable
+  conditions: no non-duplicated gigantism patient presented before age 5
+  species: human
+  source_ref: trivellin2014
+  uncertainty: categorical as reported
+localization:
+- 'human pituitary lesion: GPR101 overexpressed (trivellin2014)'
+- 'human growth plate: not examined'
+human_evidence: direct
+human_evidence_note: Human structural variants with tissue-level expression evidence localising causality
+  to GPR101, replicated in independent cohorts.
+species_basis:
+- human
+- rat
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: trivellin2014
+  pmid: '25470569'
+  first_author: Trivellin G
+  year: 2014
+  type: primary
+  one_line_finding: Xq26.3 microduplication containing GPR101 in 13/43 gigantism patients, all with
+    onset in early childhood.
+open_questions:
+- g_l11path_009
 last_verified: '2026-08-05'
-aliases:
-- X-LAG

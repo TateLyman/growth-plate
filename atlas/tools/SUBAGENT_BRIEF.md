@@ -15,6 +15,18 @@ You are structurally prevented from doing so if you use the tooling: `addref.py`
 fetches metadata from the live Europe PMC/NCBI record and *refuses* an identifier that
 does not resolve. Use it for every reference. Do not hand-write bibliography entries.
 
+**The one thing `addref.py` CANNOT catch: a real PMID attached to the wrong paper.**
+The script verifies that an identifier *exists*, not that it is the paper you meant.
+A transposed digit usually still resolves - to somebody else's work. So: **read the
+title `addref.py` prints back.** If it is not the paper you intended, you have just
+found a mis-citation, which is far more insidious than a fabricated one because every
+automated check passes. Prefer citing by DOI where you have it, since DOIs are far
+less prone to silent near-miss collisions than PMIDs.
+
+This is not hypothetical. The anchor PMID in an earlier version of this brief was
+off by one digit-group and resolved to an unrelated cancer-biology paper; it was
+caught only because a sweep agent read the returned title and objected.
+
 If you are unsure whether a number is right: record it with `value_unverified: true`
 and add the source to `atlas/sources/access_queue.md`. **A missing number is a gap; a
 wrong number is a defect that poisons everything downstream.**
@@ -73,7 +85,7 @@ primaries conflict, that conflict is the interesting part: log it in
 ## 2. Adding references
 
 ```bash
-python3 atlas/tools/addref.py --pmid 30356214 --tier T1 --type primary \
+python3 atlas/tools/addref.py --pmid 30401834 --tier T1 --type primary \
     --finding "PTHrP+ RZ chondrocytes form columnar clones after SOC formation" \
     --bib <YOUR_SHARD>.yaml
 ```

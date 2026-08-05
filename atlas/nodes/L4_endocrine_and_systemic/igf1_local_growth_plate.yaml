@@ -1,7 +1,60 @@
 id: igf1_local_growth_plate
-name: Locally produced IGF-1 in the growth plate
+name: Locally produced growth plate IGF-1
+aliases:
+- autocrine/paracrine IGF-1
+- chondrocyte IGF-1
 type: hormone
 layer: L4
-stub: true
+stub: false
+summary: 'Growth plate chondrocytes synthesise IGF-1 themselves, and this pool is GH-regulated: GH treatment
+  of hypophysectomised rats increased the number of IGF-1-immunoreactive chondrocytes in the germinal
+  and proliferative zones (nilsson1986), and blocking somatomedin with antiserum abolished the local growth
+  response to intra-arterial GH (schlechter1986). The strongest argument for the local pool''s importance
+  is negative and comes from the liver-specific Igf1 knockouts: a 75% fall in circulating IGF-1 left mouse
+  body and femoral length unchanged (yakar1999, sjgren1999), which is only interpretable if a non-hepatic
+  IGF-1 source sustains growth. Local IGF-1 is also the node where thyroid hormone enters - T3-driven
+  chondrocyte differentiation requires IGF-1 modulation of beta-catenin (wang2010). What is missing is
+  quantity: no study reports the concentration of IGF-1 in growth plate interstitium, its gradient across
+  zones, or the fraction of chondrocyte IGF1R occupancy attributable to local versus circulating ligand,
+  in any species, and least of all in human tissue.'
+localization:
+- 'rat RZ/PZ: IGF-1 immunoreactivity present and GH-inducible (nilsson1986)'
+- 'human growth plate: IGF-1 protein concentration and zonal gradient not measured'
 human_evidence: absent
+human_evidence_note: There is no human measurement of growth-plate-derived IGF-1; human inference is entirely
+  by analogy from rodent conditional genetics.
+species_basis:
+- rat
+- mouse
+translation_risk: high
+translation_risk_reason: The concept rests on rat immunohistochemistry and mouse liver knockouts. Human
+  growth plate tissue is scarce and no equivalent measurement exists.
+confidence: C
+key_refs:
+- ref_id: nilsson1986
+  first_author: Nilsson A
+  year: 1986
+  type: primary
+  one_line_finding: GH increased the number of IGF-1-immunoreactive chondrocytes in the rat growth plate.
+  pmid: '3523759'
+- ref_id: schlechter1986
+  first_author: Schlechter NL
+  year: 1986
+  type: primary
+  one_line_finding: Somatomedin antiserum blocked the local cartilage response to GH.
+  pmid: '3464007'
+- ref_id: yakar1999
+  first_author: Yakar S
+  year: 1999
+  type: primary
+  one_line_finding: Normal growth despite loss of hepatic IGF-1 implies a non-hepatic (local) IGF-1 source
+    suffices in mouse.
+  pmid: '10377413'
+- ref_id: wang2010
+  first_author: Wang L
+  year: 2010
+  type: primary
+  one_line_finding: T3-driven growth plate chondrocyte growth and differentiation requires IGF-1 modulation
+    of beta-catenin signalling.
+  pmid: '20200966'
 last_verified: '2026-08-05'

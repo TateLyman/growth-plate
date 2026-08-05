@@ -1,9 +1,63 @@
 id: beta_catenin_ctnnb1
-name: Beta-catenin
-type: protein
-layer: L3
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: beta-catenin (CTNNB1)
 aliases:
 - CTNNB1
+type: protein
+layer: L3
+stub: false
+summary: 'beta-catenin is the transducer whose cytoplasmic pool is destroyed by the APC/AXIN/GSK3B destruction complex
+  unless WNT-receptor engagement inhibits it. In chondrocytes its level is read as a dose, not a switch. Deleting
+  it in committed growth plate chondrocytes lowers proliferation and delays hypertrophy; stabilising it accelerates
+  hypertrophy and, if raised further or earlier, blocks chondrogenesis altogether (Akiyama 2004; Dao 2012, mouse).
+  Deleting it only from Col10a1-expressing hypertrophic chondrocytes leaves hypertrophic zone height normal but reduces
+  Mmp13 and Vegfa and produces less trabecular bone, showing a distinct late requirement in the terminal cell (Golovchenko
+  2013, mouse). beta-catenin and SOX9 are mutually antagonistic: SOX9 binds beta-catenin through its C-terminal transactivation
+  domain, blocks TCF/LEF-dependent transcription and promotes beta-catenin degradation (Akiyama 2004), and SOX9 promotes
+  nuclear phosphorylation of beta-catenin to speed its turnover (Topol 2009). This reciprocal inhibition is the single
+  most important convergence in the layer: the same molecular ratio sets both chondrocyte identity and the hypertrophy
+  decision.'
+localization:
+- 'mouse HZ: functionally required for Mmp13/Vegfa expression in Col10a1+ cells (golovchenko2013)'
+- 'mouse PZ/PHZ: functionally required for normal proliferation and hypertrophy timing (akiyama2004, chen2008)'
+- 'human growth plate: unconfirmed'
+human_evidence: absent
+human_evidence_note: No human growth plate beta-catenin localisation or perturbation data; human CTNNB1 variants cause
+  neurodevelopmental disease, not a defined physeal phenotype.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: All causal data are mouse conditional alleles; the human dose-response is unmeasured.
+confidence: C
+key_refs:
+- ref_id: akiyama2004
+  pmid: '15132997'
+  first_author: Akiyama H
+  year: 2004
+  type: primary
+  one_line_finding: SOX9 binds beta-catenin via its C-terminal transactivation domain, inhibits TCF/LEF transcription
+    and promotes beta-catenin degradation.
+- ref_id: topol2009
+  pmid: '19047045'
+  first_author: Topol L
+  year: 2009
+  type: primary
+  one_line_finding: SOX9 inhibits WNT signalling by promoting phosphorylation of beta-catenin in the nucleus.
+- ref_id: golovchenko2013
+  pmid: '23567158'
+  first_author: Golovchenko S
+  year: 2013
+  type: primary_abstract_only
+  one_line_finding: Deleting beta-catenin only in Col10a1+ hypertrophic chondrocytes lowers Mmp13/Vegfa and reduces
+    trabecular bone without changing HZ size.
+- ref_id: dao2012
+  pmid: '22508079'
+  first_author: Dao DY
+  year: 2012
+  type: primary
+  one_line_finding: Cartilage-specific beta-catenin gain of function accelerates maturation and ossification centre
+    formation.
+open_questions:
+- g_l3rest_005
+contradicts:
+- sox9_tf
+last_verified: '2026-08-05'

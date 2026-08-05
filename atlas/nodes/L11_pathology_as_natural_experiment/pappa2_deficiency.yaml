@@ -1,7 +1,66 @@
 id: pappa2_deficiency
 name: PAPP-A2 deficiency
+aliases:
+- PAPPA2 mutation
+- IGFBP protease deficiency
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  PAPP-A2 deficiency is the human experiment that separates total IGF-I from BIOAVAILABLE IGF-I.
+  Members of two unrelated families carried homozygous PAPPA2 mutations, p.D643fs25* and
+  p.Ala1033Val, and both abolished PAPP-A2 proteolytic activity against IGFBP-3 and IGFBP-5 in
+  vitro. The resulting human biochemistry is diagnostic and counterintuitive: total IGF-I,
+  IGF-II, IGFBP-3, IGFBP-5 and acid-labile subunit are all ELEVATED, size-exclusion
+  chromatography shows significantly more IGF-I retained in the ternary complex, and free IGF-I
+  is DECREASED. The phenotype is progressive postnatal growth failure with moderate microcephaly,
+  thin long bones and mildly decreased bone density. This is the first pathogenic human mutation
+  in the IGFBP system or its regulators, and it is the cleanest available demonstration that the
+  growth plate responds to free rather than total IGF-I - a distinction that ordinary clinical
+  assays cannot make and that therefore silently mis-classifies patients. rhIGF-1 treatment
+  improved growth in two of the affected siblings, and plasma transfusion or recombinant PAPP-A2
+  raises free IGF-I, providing the pharmacological confirmation.
+quantitative:
+- parameter: distinct homozygous PAPPA2 mutations reported
+  value: '2'
+  unit: mutations
+  conditions: p.D643fs25* and p.Ala1033Val in two unrelated families
+  species: human
+  source_ref: dauber2016
+  uncertainty: both abolish proteolytic activity in vitro
+- parameter: PAPP-A2 proteolytic activity in mutant carriers
+  value: 0 (complete absence)
+  unit: percent of wild type
+  conditions: in vitro IGFBP-3 and IGFBP-5 cleavage assay
+  species: in_vitro_human_cell
+  source_ref: dauber2016
+  uncertainty: complete absence as reported
+- parameter: free IGF-I concentration relative to controls
+  value: decreased
+  unit: not_applicable
+  conditions: despite ELEVATED total IGF-I, IGF-II, IGFBP-3, IGFBP-5 and ALS
+  species: human
+  source_ref: dauber2016
+  uncertainty: direction reported; absolute values not in abstract
+localization:
+- 'human growth plate: no published histology in PAPP-A2 deficiency'
+human_evidence: direct
+human_evidence_note: Two unrelated human families with homozygous PAPPA2 mutations, functional proteolysis
+  assays and direct measurement of free versus total IGF-I.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: dauber2016
+  pmid: '26902202'
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: 'Homozygous PAPPA2 mutations abolish IGFBP-3/-5 proteolysis: growth failure with
+    HIGH total but LOW free IGF-I.'
+open_questions:
+- g_l11path_008
 last_verified: '2026-08-05'

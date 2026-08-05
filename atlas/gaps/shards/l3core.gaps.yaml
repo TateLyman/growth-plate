@@ -1,0 +1,395 @@
+# L3 signaling_networks - shard l3core
+# Subsystems: PTHrP/IHH feedback loop; CNP/NPR2/cGMP/PKG-II + phosphodiesterases; FGF/FGFR3.
+gaps:
+
+  - gap_id: g_l3core_001
+    question: >-
+      What is the loop gain of the PTHrP/IHH negative feedback loop - that is, by how many
+      micrometres does the position of the hypertrophic transition shift per unit change in Ihh
+      output - and what are the diffusion coefficient and decay length of IHH and PTHrP in growth
+      plate cartilage?
+    type: quantitative_gap
+    layer: L3
+    why_it_matters: >-
+      The loop is described everywhere as the device that sets proliferative column length, which is
+      a direct determinant of elongation rate. Without a measured gain or range the loop cannot be
+      used to predict the effect of a partial-loss allele, cannot be compared between skeletal sites
+      whose column lengths differ several-fold, and cannot be parameterised in any of the
+      computational growth plate models that already assume such values.
+    what_is_known: >-
+      Loop topology is established genetically in mouse and chick: Ihh from prehypertrophic cells
+      raises periarticular Pthlh (vortkamp1996, karp2000); PTHrP acting on PTH1R keeps cells cycling
+      and delays hypertrophy (lee1996, chung1998). Ihh behaves as a long-range morphogen directly
+      activating Pthlh, and its range is set by heparan sulfate - reducing Ext1 EXPANDS the range
+      (koziel2004) - and by DISP1-dependent release, with Disp1 hypomorphs establishing the same loop
+      over a shorter distance (tsiairis2008). A PTHrP protein gradient has been visualised in mouse
+      mandibular condylar cartilage (tsutsumiarai2024).
+    what_is_missing: >-
+      No numeric diffusion coefficient, decay length, source strength, receptor occupancy or transfer
+      function for either ligand, in any species. Range statements are ordinal ("expanded",
+      "shorter"), never metric. Consequently no measured loop gain exists, and the published
+      computational models (stoop2025) run on assumed parameters.
+    nearest_evidence: [koziel2004, tsiairis2008, tsutsumiarai2024, stoop2025]
+    discriminating_experiment: >-
+      In mouse proximal tibia at P7, use a genetically encoded Hedgehog-activity reporter
+      (Gli1-based, e.g. GBS-GFP) and quantitative Ptch1 smFISH to measure the spatial decay of Ihh
+      pathway output in micrometres from the prehypertrophic source, and a photoactivatable or
+      HaloTag-labelled IHH knock-in to measure the effective diffusion coefficient by FRAP in intact
+      cartilage. Then titrate Ihh output with an allelic series (Ihh+/-, Ihh-flox partial deletion,
+      Disp1 hypomorph) and plot the resulting shift in the hypertrophic transition position (um)
+      against measured Ihh pathway amplitude. Prediction under a high-gain loop: transition position
+      shifts >100 um per halving of Ihh output and Pthlh transcript scales steeply; under a low-gain
+      or saturated loop the transition position is nearly insensitive over the same range and column
+      length is set instead by PTHrP-independent Ihh effects on proliferation.
+    tractability: 3
+    search_log_ref: g_l3core_001
+
+  - gap_id: g_l3core_002
+    question: >-
+      What is the spatial profile of GLI3 repressor protein across the resting, proliferative,
+      prehypertrophic and hypertrophic zones of the growth plate, and does its concentration, rather
+      than GLI activator concentration, quantitatively predict where hypertrophy begins?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      Genetic rescue puts the essential Ihh output in relief of GLI3R rather than in GLI activator
+      gain (hilton2005, koziel2005). If GLI3R is the carrier of the signal, then the amplitude of
+      Ihh signalling in this tissue is encoded as a repressor concentration, and every statement
+      about "Ihh levels" in the growth plate is really a statement about a quantity nobody has
+      measured.
+    what_is_missing: >-
+      No zonal quantification of full-length GLI3 versus GLI3R protein by Western blot on
+      microdissected zones or by ratiometric imaging, in any species. Existing evidence is
+      whole-limb epistasis.
+    what_is_known: >-
+      Deleting Gli3 rescues most of the Ihh-null cartilage phenotype in mouse (hilton2005), and GLI3R
+      acts at two separable differentiation steps (koziel2005). GLI2/GLI3 also mediate
+      Hedgehog-TGF-beta crosstalk in skeletal progenitors (zhou2026).
+    nearest_evidence: [hilton2005, koziel2005, zhou2026]
+    discriminating_experiment: >-
+      Laser-capture microdissect the four zones from mouse P7 proximal tibia and from human
+      juvenile iliac crest or distal femur growth plate obtained at orthopaedic surgery, and run
+      quantitative Western blots for full-length GLI3 (190 kDa) and GLI3R (83 kDa) with a
+      recombinant standard curve. Prediction under the derepression model: GLI3R/GLI3-FL ratio is
+      high in the resting and early proliferative zones and falls monotonically toward the
+      prehypertrophic zone, with the inflection coinciding with the Col10a1 boundary. Prediction
+      under an activator-dominant model: the ratio is flat and GLI2 activator abundance instead
+      tracks the boundary.
+    tractability: 4
+
+  - gap_id: g_l3core_003
+    question: >-
+      In the human growth plate, what fraction of the CNP/NPR2 effect on elongation rate is
+      contributed by hypertrophic chondrocyte volume, by matrix synthesis in the proliferative zone,
+      and by proliferation rate?
+    type: quantitative_gap
+    layer: L3
+    why_it_matters: >-
+      Vosoritide and its successors are dosed against a growth velocity endpoint with no measurement
+      of which cellular process is being modulated in humans. If the human partition differs from the
+      mouse partition - for example if human CNP acts more on matrix and less on hypertrophic volume -
+      then the ceiling on achievable growth, the expected effect on body proportion, and the risk of
+      disproportionate segment growth all change.
+    what_is_known: >-
+      The mouse partition is measured and is strongly hypertrophic-zone weighted: cartilage-specific
+      Nppc deletion reduces hypertrophic layer thickness to 34.6% of control while the
+      non-hypertrophic layer falls only to 76.7%, and BrdU incorporation is only marginally reduced;
+      cartilage-specific Npr2 deletion gives 23.0% and 71.1% respectively with significantly reduced
+      BrdU (nakao2015). In mouse tibia organ culture CNP acts largely by expanding the hypertrophic
+      zone and zonal microarray shows far more CNP-regulated genes in hypertrophic than in
+      proliferative or resting cells (agoston2007). CNP also drives TRPM7-mediated Ca2+ entry that
+      supports matrix synthesis (miyazaki2022).
+    what_is_missing: >-
+      No human measurement of any of the three components under CNP-pathway perturbation. The only
+      human readout is whole-limb growth velocity (savarirayan2020).
+    nearest_evidence: [nakao2015, agoston2007, miyazaki2022, savarirayan2020]
+    discriminating_experiment: >-
+      Prospective paired analysis in children with achondroplasia receiving a CNP analogue: high
+      resolution peripheral quantitative CT or 7T MRI of the distal femoral physis before and at 6
+      and 12 months, extracting growth plate height and hypertrophic zone height, combined with
+      knemometry for short-term lower-leg growth rate and serum NTproCNP and collagen X marker
+      (CXM) as turnover readouts. Prediction under a hypertrophy-dominant human partition: total
+      physeal height and CXM rise proportionally with growth velocity and the increment is
+      attributable to the metaphyseal-most band. Prediction under a matrix-dominant partition:
+      growth velocity rises with little change in physeal height and with a disproportionate rise in
+      proteoglycan-sensitive MRI T1rho/T2 signal.
+    tractability: 2
+    search_log_ref: g_l3core_003
+
+  - gap_id: g_l3core_004
+    question: >-
+      Is NPR2 dephosphorylated in human growth plate cartilage carrying an activating FGFR3 allele,
+      as it is in mouse and rat?
+    type: species_gap
+    layer: L3
+    why_it_matters: >-
+      The entire mechanistic rationale for treating achondroplasia with CNP analogues is that FGFR3
+      inactivates NPR2 by dephosphorylation and that supplying more ligand overcomes it. If the human
+      lesion is quantitatively different - for example if human NPR2 is already near-maximally
+      dephosphorylated, or if the responsible phosphatase differs - then the observed ceiling on
+      vosoritide efficacy has a mechanistic explanation and a different drug target.
+    what_is_known: >-
+      FGF causes reversible dephosphorylation of the seven juxtamembrane serines and threonines of
+      GC-B in rat chondrosarcoma cells (robinson2017); this lowers cGMP in intact mouse tibia via a
+      PPP-family phosphatase (shuhaibar2017); and a non-dephosphorylatable GC-B(7E/7E) allele
+      restores long bone length and hypertrophic zone area in FGFR3-G380R mice (wagner2021). FGF does
+      not change GC-B protein abundance (ozasa2005), so the regulation is post-translational only.
+    what_is_missing: >-
+      NPR2 phosphorylation state has never been measured in human cartilage of any genotype. There is
+      no phospho-specific NPR2 immunoassay validated on human tissue, and no human achondroplasia
+      growth plate has been analysed biochemically.
+    nearest_evidence: [robinson2017, shuhaibar2017, wagner2021, ozasa2005]
+    discriminating_experiment: >-
+      Apply phospho-specific antibodies against the NPR2 juxtamembrane cluster (S489/T500/S502/S506/
+      S510/T513/S516 equivalent positions) to human growth plate cartilage obtained at guided-growth
+      or limb-lengthening surgery, comparing achondroplasia to age-matched non-dysplastic controls,
+      with Phos-tag SDS-PAGE on fresh microdissected tissue as the orthogonal readout. Prediction if
+      the rodent mechanism is conserved: achondroplasia cartilage shows a shifted, hypophosphorylated
+      NPR2 band and reduced basal cGMP; if not conserved, phosphorylation state is
+      indistinguishable and the human lesion must lie downstream of the receptor.
+    tractability: 2
+
+  - gap_id: g_l3core_005
+    question: >-
+      Does PTHrP/PTH1R signalling regulate CNP/NPR2 output, or vice versa, in growth plate
+      chondrocytes?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      These are the two dominant local control systems of the growth plate and both converge on the
+      same decision - when a proliferative chondrocyte becomes hypertrophic. If they are
+      independent, their therapeutic effects should be additive and CNP analogues should work in
+      PTH1R-pathway disorders; if they interact, the interaction sets the ceiling on combination
+      therapy and explains why some short-stature genotypes respond to CNP analogues and others do
+      not.
+    what_is_known: >-
+      Three indirect convergence points exist. PKG-II, the CNP effector, permits hypertrophy by
+      blocking SOX9 nuclear entry (chikuda2004), while PTHrP represses hypertrophy through
+      HDAC4/HDAC5 acting on MEF2 (nishimori2019). CNP acting through NPR2 raises PKA activity in
+      hypertrophic chondrocytes (hirota2022), the same effector PTH1R uses. PDE3 family enzymes are
+      dual-specificity, with cGMP competitively inhibiting cAMP hydrolysis, providing a candidate
+      biochemical coupling (ursachi2026).
+    what_is_missing: >-
+      No study reports a direct experimental test - no epistasis experiment, no compound mutant, no
+      measurement of cGMP under PTH1R manipulation or of cAMP under NPR2 manipulation in growth
+      plate cartilage, in any species. The nearest record tests adrenomedullin, CNP and PTHrP in
+      parallel on cultured cells with no combination arm (huang2003).
+    nearest_evidence: [chikuda2004, nishimori2019, hirota2022, huang2003, ursachi2026]
+    discriminating_experiment: >-
+      In mouse metatarsal or tibial explant culture from a cGMP-biosensor line, measure chondrocyte
+      cGMP during PTH1R agonism (PTHrP 1-36 or abaloparatide) and, reciprocally, measure cAMP with a
+      PKA FRET biosensor during CNP exposure; then test genetic epistasis by crossing Col2a1-Cre;
+      Npr2 fl/fl mice with the Jansen constitutively active PTH1R transgenic. Prediction if the
+      pathways are independent: cGMP is unaffected by PTH1R agonism and the compound mutant length
+      phenotype is the arithmetic sum of the singles. Prediction if PDE3-mediated coupling is real:
+      PTH1R agonism lowers cGMP (cAMP outcompeting cGMP at PDE3) and the compound phenotype is
+      sub-additive.
+    tractability: 4
+    search_log_ref: g_l3core_005
+
+  - gap_id: g_l3core_006
+    question: >-
+      Which cyclic-nucleotide phosphodiesterase isoforms are expressed in each zone of the HUMAN
+      growth plate, and which one carries the dominant cGMP-hydrolysing activity there?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      Signal duration in the CNP arm is set by cGMP hydrolysis, so the PDE complement determines how
+      much growth a given amount of CNP buys. PDE inhibitors are already given chronically to
+      children - PDE5 inhibitors for pulmonary arterial hypertension, PDE3 inhibitors for heart
+      failure - and PDE inhibition is being proposed as a repurposing route for short stature. All of
+      that rests on a human zonal map that does not exist.
+    what_is_known: >-
+      Bulk transcript profiling of growth plate chondrocytes across human, mouse and chicken reports
+      PDE1B, 3B, 4B, 4D, 5A, 7A, 8A and 10A, with PDE6, 9 and 11 family genes reported absent from
+      skeletal tissue (ursachi2026, indexing takcs2023 and kawabe2025). Functional assignment is
+      species-split: PDE5 dominates cGMP hydrolysis in newborn rat epiphyseal chondrocytes
+      (wang2018) whereas PDE3B is the functional target in mouse (kawabe2025). The only zone-resolved
+      cartilage PDE data are from human and bovine ARTICULAR cartilage - PDE3B superficial, PDE7A
+      deep (grogan2013).
+    what_is_missing: >-
+      No study localises any PDE isoform to a growth plate zone in human tissue, by
+      immunohistochemistry, in situ hybridisation, laser-capture transcriptomics or spatial
+      transcriptomics. No human growth plate PDE enzymatic activity assay exists. PDE9A and PDE1C, in
+      particular, have no primary growth plate literature in any species.
+    nearest_evidence: [ursachi2026, wang2018, kawabe2025, grogan2013, takcs2023]
+    discriminating_experiment: >-
+      Obtain human growth plate cartilage from guided-growth (hemiepiphysiodesis) or limb-lengthening
+      surgery in children, laser-capture the resting, proliferative, prehypertrophic and hypertrophic
+      zones, and run (a) targeted RNA-seq or Nanostring across all 21 PDE genes, and (b) selective
+      inhibitor-resolved cGMP hydrolysis assays on zone lysates using cilostamide (PDE3), sildenafil
+      (PDE5), PF-04447943 (PDE9) and vinpocetine (PDE1). Prediction if the mouse assignment holds:
+      cilostamide removes most zonal cGMP-hydrolysing activity and PDE3B transcript peaks in the
+      proliferative/prehypertrophic zones. Prediction if the rat assignment holds: sildenafil removes
+      most activity and PDE5A is uniform. A third outcome - a PDE not on either list dominating in
+      human - is not excluded by any current data.
+    tractability: 3
+    search_log_ref: g_l3core_006
+
+  - gap_id: g_l3core_007
+    question: >-
+      Does raising bulk cGMP in growth plate cartilage increase longitudinal bone growth? Rat and
+      mouse pharmacology give opposite answers.
+    type: contradiction
+    layer: L3
+    why_it_matters: >-
+      The premise of every cGMP-raising growth therapy - CNP analogues, NPR3 decoys, PDE inhibitors -
+      is that more cGMP means more growth. One well-controlled rodent experiment raised growth plate
+      cGMP by half and produced no growth at all, which if generalised means the relevant variable is
+      not bulk cGMP but a compartmentalised pool.
+    what_is_known: >-
+      In one-month-old rats, tadalafil at 10 mg/kg/day for 3 weeks raised tissue cGMP by 52% and peak
+      CNP-stimulated chondrocyte cGMP by 37%, yet produced no change in long bone length, cortical or
+      trabecular properties or growth plate histology (wang2018). In mouse, PDE3 inhibitors raised
+      chondrocyte cGMP, activated PKG-dependent K+ channels, promoted TRPM7-mediated Ca2+ entry,
+      elongated cultured bones and enlarged juvenile animals (kawabe2025, miyazaki2022). Genetic
+      elevation of NPR2 output raises bone length in mouse (wagner2021, shuhaibar2017).
+    what_is_missing: >-
+      No experiment resolves whether the discrepancy is species (rat versus mouse), isoform (PDE5
+      versus PDE3B), compartment (bulk versus microdomain cGMP), or dose/duration. No study has
+      measured subcellular cGMP microdomains in chondrocytes.
+    nearest_evidence: [wang2018, kawabe2025, miyazaki2022, shuhaibar2017, wagner2021]
+    discriminating_experiment: >-
+      Run the identical protocol - tadalafil and cilostazol, matched to equal whole-tissue cGMP
+      elevation measured by ELISA - side by side in rat and mouse of the same age, with tibial
+      length by microCT and growth plate zone morphometry as the primary endpoints, and with a
+      targeted cGMP FRET biosensor expressed at the plasma membrane versus in the cytosol to read
+      compartment-specific cGMP. Prediction under the microdomain hypothesis: PDE3 inhibition raises
+      membrane-proximal cGMP and growth in both species while PDE5 inhibition raises only cytosolic
+      cGMP and grows neither. Prediction under a species hypothesis: both drugs grow mouse and
+      neither grows rat.
+    tractability: 4
+
+  - gap_id: g_l3core_008
+    question: >-
+      Which downstream branch of FGFR3 - MAPK/ERK or STAT1 - carries the load in HUMAN achondroplasia
+      and thanatophoric dysplasia, given that human dysplastic chondrocytes do not show the
+      proliferation defect the STAT1 model predicts?
+    type: contradiction
+    layer: L3
+    why_it_matters: >-
+      Every FGFR3-directed drug programme picks a branch. CNP analogues and MEK-directed approaches
+      target MAPK; JAK/STAT-directed approaches target STAT1. If the human lesion is
+      apoptosis-and-differentiation rather than proliferation arrest, then mouse-derived
+      proliferation endpoints are the wrong preclinical readout.
+    what_is_known: >-
+      In rat chondrosarcoma cells and primary murine chondrocytes, FGF inhibits proliferation through
+      STAT1 and Stat1-null metatarsals do not arrest (sahni1999); the TD II K650E mutant
+      constitutively activates STAT1 (su1997). In mouse, constitutively active MEK1 reproduces
+      achondroplasia-like dwarfism with blocked hypertrophy and NORMAL proliferation, and deleting
+      Stat1 in achondroplasia-mutant mice restores proliferation but rescues neither the reduced
+      hypertrophic zone nor the dwarfism (murakami2004). In cultured human thanatophoric dysplasia
+      type I fetal chondrocytes, mitogenic response to FGF2 and FGF9 was NOT reduced relative to
+      controls; the observed lesion was ligand-independent STAT activation with nuclear STAT1 in
+      hypertrophic cells and increased apoptosis with raised BAX and reduced BCL-2
+      (legeaimallet1998).
+    what_is_missing: >-
+      No study measures proliferation index, phospho-ERK and phospho-STAT1 together, in situ and by
+      zone, in human achondroplasia or thanatophoric dysplasia growth plate against age-matched
+      controls. The human and mouse literatures have never been placed on the same measurement.
+    nearest_evidence: [sahni1999, su1997, murakami2004, legeaimallet1998]
+    discriminating_experiment: >-
+      Multiplex immunofluorescence (Ki-67 or phospho-histone H3, phospho-ERK1/2, phospho-STAT1 Y701,
+      cleaved caspase-3, COL10A1) on archival human fetal thanatophoric dysplasia and postnatal
+      achondroplasia growth plate sections with age-matched non-dysplastic controls, quantified per
+      zone. Prediction under the MAPK-dominant model: phospho-ERK is elevated across the
+      prehypertrophic/hypertrophic boundary, COL10A1 domain is compressed, and proliferation index is
+      unchanged. Prediction under the STAT1-dominant model: phospho-STAT1 and cleaved caspase-3 are
+      elevated and proliferation index is reduced in the proliferative zone.
+    tractability: 3
+
+  - gap_id: g_l3core_009
+    question: >-
+      What is the relative quantitative contribution of the BMP arm versus the Ihh arm to
+      proliferative column length, when both are titrated in the same preparation?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      BMP and Ihh/PTHrP are described as acting in parallel on the same two decisions, but "parallel"
+      has never been quantified. Without the relative weights, the effect of a partial BMP-pathway
+      lesion on growth cannot be predicted, and BMP-pathway skeletal disorders cannot be placed on
+      the same axis as Ihh-pathway ones.
+    what_is_known: >-
+      BMP signalling delays hypertrophy partly by maintaining Ihh expression and Ihh raises BMP
+      transcription in perichondrium and cartilage; blocking BMP shortens the proliferative column
+      even with the PTHrP arm intact (minina2001). miR-433 targets both arms simultaneously in the
+      murine postnatal growth plate (thakore2026).
+    what_is_missing: >-
+      No dose-response surface. Existing work is qualitative epistasis in explants with saturating
+      agonists or antagonists.
+    nearest_evidence: [minina2001, thakore2026]
+    discriminating_experiment: >-
+      Mouse metatarsal explant culture with a two-factor dose matrix of a BMP type I receptor
+      inhibitor (LDN-193189, 5 log-spaced doses) crossed with a smoothened antagonist (vismodegib, 5
+      doses), reading proliferative column length, Col10a1 domain length and total elongation over 6
+      days, and fitting a response surface. Prediction under additive parallel arms: no interaction
+      term. Prediction under the Minina serial model in which BMP acts through Ihh: strong negative
+      interaction, with the BMP inhibitor having little further effect once Hedgehog is blocked.
+    tractability: 5
+
+  - gap_id: g_l3core_010
+    question: >-
+      Which FGF ligand activates FGFR3 in the human growth plate?
+    type: species_gap
+    layer: L3
+    why_it_matters: >-
+      Ligand-trap and ligand-directed therapies for achondroplasia (soluble FGFR3 decoys) assume the
+      relevant ligand is present and accessible. The assignment of FGF18 as the physiological ligand
+      rests entirely on mouse knockout phenocopy.
+    what_is_known: >-
+      Fgf18-null mice phenocopy Fgfr3-null mice (liu2002, ohbayashi2002), and an Fgf9/Fgf18 allelic
+      series places Fgf18 as dominant in the growth plate and Fgf9 in vascularisation (hung2016). In
+      human fetal long bone, FGFR3 is expressed in growth plate chondrocytes while FGFR1 and FGFR2
+      are perichondrial and periosteal (delezoide1998).
+    what_is_missing: >-
+      No human FGF18 or FGF9 localisation in growth plate, no human FGF18/FGF9 monogenic skeletal
+      phenotype, and no measurement of which ligand occupies FGFR3 in human cartilage.
+    nearest_evidence: [liu2002, ohbayashi2002, hung2016, delezoide1998]
+    discriminating_experiment: >-
+      RNAscope for FGF18, FGF9, FGF2 and FGFR3 on human juvenile growth plate with perichondrium
+      intact, plus ligand-binding competition on human growth plate chondrocyte primary cultures
+      using labelled FGF18 against unlabelled FGF9/FGF2 and an FGFR3-blocking antibody. Prediction if
+      the mouse assignment translates: FGF18 transcript is perichondrial with a chondrocyte-facing
+      gradient and labelled FGF18 binding is FGFR3-competable. Prediction otherwise: FGF18 is absent
+      or non-perichondrial and another ligand accounts for FGFR3 occupancy.
+    tractability: 3
+
+  - gap_id: g_l3core_011
+    question: >-
+      What is the quantitative relationship between residual NPR2 guanylyl cyclase activity
+      (expressed as percent of wild-type cGMP output in a standardised assay) and adult height across
+      the full human NPR2 allelic series?
+    type: quantitative_gap
+    layer: L3
+    why_it_matters: >-
+      NPR2 is one of very few human loci with a measured three-state dosage series and an approved
+      pathway-targeted drug. A calibrated activity-to-height curve would convert an in vitro cGMP
+      assay on a novel variant into a predicted height effect, would say how much residual activity a
+      CNP analogue must restore to be worth giving, and would test whether the relationship is linear
+      or thresholded.
+    what_is_known: >-
+      Individual points exist but on incompatible scales. Biallelic loss gives adult heights around
+      120-134 cm (arya2020, with the 120 cm figure a secondary citation). Heterozygous carriers sit
+      at -1.8 +/- 1.1 SDS versus -0.4 +/- 0.8 in non-carrier relatives (olney2006) and -2.06 +/- 0.97
+      versus -1.37 +/- 0.59 in wild-type siblings (hanley2020), with individual dominant-negative
+      families spanning -4.5 to -1.7 SDS (vasques2013). Gain-of-function alleles give +1.30 to +2.77
+      SDS (lauffer2020) and extreme tall stature (hannema2013). Many of these variants have been
+      assayed for cGMP output in HEK293 cells or patient fibroblasts, but with different constructs,
+      ligand concentrations and normalisation.
+    what_is_missing: >-
+      No single study measures cGMP output for a panel of variants under one standardised protocol
+      and regresses it against measured height SDS with confidence intervals. Consequently the shape
+      of the dose-response - linear, thresholded, or saturating - is unknown.
+    nearest_evidence: [arya2020, olney2006, hanley2020, vasques2013, lauffer2020, hannema2013, wang2015]
+    discriminating_experiment: >-
+      Assemble the published NPR2 variant set (>60 alleles) and express each in a single NPR2-null
+      HEK293 line at matched surface expression measured by flow cytometry, assaying basal and
+      CNP-stimulated cGMP across a full ligand dose-response; for heterozygous alleles co-express
+      with wild-type at 1:1 to capture dominant-negative effects. Regress log(cGMP Emax, percent of
+      wild-type) against reported adult height SDS with a mixed model accounting for family and
+      ancestry. Prediction under a linear model: height SDS is proportional to residual activity
+      across the whole range. Prediction under a threshold model: height is insensitive above roughly
+      50% residual activity and falls steeply below it, which would explain why heterozygous carriers
+      cluster near -2 SDS rather than midway between normal and AMDM.
+    tractability: 4
+    search_log_ref: g_l3core_011

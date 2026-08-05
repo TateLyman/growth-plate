@@ -1,7 +1,86 @@
 id: igf1_systemic
 name: Systemic (hepatic) IGF-1
+aliases:
+- circulating IGF-1
+- endocrine IGF-1
+- somatomedin C
 type: hormone
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Circulating IGF-1 is a 70-residue single-chain peptide made predominantly by hepatocytes under
+  GH-STAT5B control and carried in blood almost entirely in a 150 kDa ternary complex with IGFBP-3 (or
+  IGFBP-5) and the acid-labile subunit ALS, which extends its half-life from minutes to hours. Free IGF-1
+  is under 1% of total. The liver is the dominant source: hepatocyte-specific Igf1 deletion cuts serum
+  IGF-1 by 75% in mouse (sjgren1999). But source and function dissociate - that same 75% fall left postnatal
+  body length unchanged (yakar1999). Circulating IGF-1 becomes growth-limiting only below a threshold,
+  reached in LID+ALSKO double mutants, where growth plate total height and proliferative and hypertrophic
+  zone heights all shrink and are restored by exogenous IGF-1 (yakar2002). In humans the assays that matter
+  are total IGF-1 (routine) and free or bioactive IGF-1 (research-grade); PAPPA2 deficiency shows these
+  can move in opposite directions and that height tracks the free fraction (dauber2016).'
+quantitative:
+- parameter: serum total IGF-1 in PAPP-A2-deficient children
+  value: 831-1060
+  unit: ug/L
+  conditions: affected children, family 2, Tanner I-II; laboratory Tanner I reference 91-225 ug/L
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values, n=5 affected
+- parameter: ratio of bioactive IGF to total IGF-1 in PAPP-A2 deficiency
+  value: 0.09-0.32
+  unit: '%'
+  conditions: affected individuals with frameshift or A1033V PAPPA2; healthy reference median 1.23% (range
+    0.46-2.59%)
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values, n=5 affected vs 95 healthy controls for the reference
+- parameter: reduction in serum IGF-1 after hepatocyte-specific Igf1 deletion
+  value: '75'
+  unit: '%'
+  conditions: LID mouse
+  species: mouse
+  source_ref: sjgren1999
+  uncertainty: approximate value as reported
+localization:
+- 'human SYS: hepatocyte-derived, measured in serum'
+- 'mouse growth plate: circulating IGF-1 becomes limiting for PZ and HZ height only below the LID+ALSKO
+  threshold (yakar2002)'
+human_evidence: direct
+human_evidence_note: Human IGF1, IGFALS, STAT5B, GHR and PAPPA2 defects all alter circulating IGF-1 and
+  stature concordantly, and recombinant IGF-1 (mecasermin) increases height velocity in severe primary
+  IGF-1 deficiency.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: Human genetics anchor the endpoint, but the quantitative partition between systemic
+  and local IGF-1 comes from mouse conditional knockouts with no human counterpart.
+confidence: A
+key_refs:
+- ref_id: sjgren1999
+  first_author: Sjögren K
+  year: 1999
+  type: primary
+  one_line_finding: Liver is the principal source of blood IGF-I (75% fall on hepatocyte deletion) yet
+    is not required for postnatal body growth in mice.
+  pmid: '10359843'
+- ref_id: yakar1999
+  first_author: Yakar S
+  year: 1999
+  type: primary
+  one_line_finding: Liver-specific Igf1 deletion left body and femoral length normal.
+  pmid: '10377413'
+- ref_id: yakar2002
+  first_author: Yakar S
+  year: 2002
+  type: primary
+  one_line_finding: Below a circulating IGF-1 threshold (LID+ALSKO) growth plate height, BMD and cortical
+    thickness fall and are restored by IGF-1.
+  pmid: '12235108'
+- ref_id: dauber2016
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: PAPP-A2 deficiency raises total IGF-1 several-fold while cutting the bioactive fraction
+    to 0.09-0.32%, with short stature.
+  pmid: '26902202'
 last_verified: '2026-08-05'

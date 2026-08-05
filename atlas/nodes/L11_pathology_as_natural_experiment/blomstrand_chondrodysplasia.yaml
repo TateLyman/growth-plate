@@ -1,7 +1,77 @@
 id: blomstrand_chondrodysplasia
 name: Blomstrand chondrodysplasia
+aliases:
+- BOCD
+- PTH1R inactivating mutation
+- Blomstrand lethal chondrodysplasia
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Blomstrand chondrodysplasia is the inactivating half of the PTH1R pair and the exact
+  phenotypic mirror of Jansen. Where Jansen delays chondrocyte hypertrophy and mineralisation,
+  Blomstrand ACCELERATES it: the defining feature is extremely advanced endochondral bone
+  maturation, lethal in the perinatal period. Two independent human mechanisms were reported in
+  1998. In one patient a homozygous P132L substitution in the receptor's N-terminal extracellular
+  domain abolished both PTH- and PTHrP-stimulated cAMP accumulation and radioligand binding, and
+  critically the mutant protein was shown to be expressed at the cell surface both in transfected
+  COS-1 cells and in growth plate chondrocytes taken from the affected infant - so the defect is
+  binding, not trafficking. In a second patient a point mutation created a novel splice site that
+  deleted the first 11 amino acids of exon M5 (transmembrane domain 5), and PTH-induced inositol
+  phosphate accumulation was undetectable as well as cAMP. Read against Jansen, the pair
+  establishes in humans what the Pthrp and Pth1r mouse knockouts establish in mice: PTH1R
+  signalling sets the timing of the proliferative-to-hypertrophic transition, more signal delays
+  it and less signal advances it, and human stature is the integral of that timing decision.
+quantitative:
+- parameter: PTH- and PTHrP-stimulated cAMP accumulation in P132L receptors
+  value: severely reduced to absent
+  unit: not_applicable
+  conditions: COS-7/COS-1 cells expressing mutant vs wild-type receptor
+  species: in_vitro_animal_cell
+  source_ref: karaplis1998
+  uncertainty: direction reported; EC50 not given
+- parameter: PTH-induced inositol phosphate accumulation in the exon M5 splice mutant
+  value: not detectable
+  unit: not_applicable
+  conditions: patient-derived mutant receptor cDNA expressed heterologously
+  species: in_vitro_animal_cell
+  source_ref: jobert1998
+  uncertainty: below detection
+localization:
+- 'human growth plate: mutant PTH1R protein detected at the surface of growth plate chondrocytes
+  from the affected infant (karaplis1998) - one of very few direct human growth plate observations
+  in this layer'
+human_evidence: direct
+human_evidence_note: Two independent human homozygous PTH1R loss-of-function alleles with binding
+  and second-messenger assays, one including immunodetection in the patient's own growth plate chondrocytes.
+species_basis:
+- human
+- in_vitro_animal_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: karaplis1998
+  pmid: '9832466'
+  first_author: Karaplis AC
+  year: 1998
+  type: primary
+  one_line_finding: Homozygous PTH1R P132L abolishes ligand binding and cAMP response; mutant protein
+    reaches the surface of the patient's growth plate chondrocytes.
+- ref_id: jobert1998
+  pmid: '9649554'
+  first_author: Jobert AS
+  year: 1998
+  type: primary
+  one_line_finding: A splice mutation deleting 11 residues of transmembrane domain 5 gives a non-functional
+    PTH/PTHrP receptor with advanced endochondral maturation.
+- ref_id: portalescastil2025
+  pmid: '40904804'
+  first_author: Portales-Castillo I
+  year: 2025
+  type: review
+  one_line_finding: Homozygous PTH1R allelic series from lethal Blomstrand to milder Eiken and primary
+    failure of tooth eruption.
+open_questions:
+- g_l11path_012
 last_verified: '2026-08-05'

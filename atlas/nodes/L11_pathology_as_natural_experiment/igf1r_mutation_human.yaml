@@ -1,7 +1,67 @@
 id: igf1r_mutation_human
-name: IGF1R mutation
+name: IGF1R mutations
+aliases:
+- IGF-I receptor mutation
+- IGF1R haploinsufficiency
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  IGF1R mutations move the lesion from the ligand to its receptor and give the reciprocal
+  biochemical signature: growth failure WITH high circulating IGF-I, because the feedback loop
+  cannot be closed. In the defining study two mechanisms were found in two children. One girl
+  was a compound heterozygote for Arg108Gln and Lys115Asn in exon 2, and her cultured fibroblasts
+  had reduced IGF-I receptor FUNCTION; one boy carried a nonsense Arg59stop allele that reduced
+  the NUMBER of receptors on fibroblasts. Both had intrauterine growth retardation followed by
+  poor postnatal growth, and neither mutation class was present in 43 birth-weight-normal
+  controls. The two mechanisms - fewer receptors versus worse receptors - producing the same
+  phenotype is the human demonstration that IGF-I signalling capacity, not receptor identity,
+  sets prenatal and postnatal skeletal growth. The screened populations were 42 children with
+  unexplained IUGR plus short stature and 50 short children with elevated circulating IGF-I; the
+  yield of one case each indicates that IGF1R defects are a rare but mechanistically decisive
+  cause. Adult heights are not reported as a cohort statistic, and no growth plate has been
+  examined.
+quantitative:
+- parameter: children screened with unexplained IUGR plus short stature
+  value: '42'
+  unit: children
+  conditions: single-strand conformation polymorphism plus direct sequencing of IGF1R
+  species: human
+  source_ref: abuzzahab2003
+  uncertainty: 1 compound heterozygote found
+- parameter: short children screened with elevated circulating IGF-I
+  value: '50'
+  unit: children
+  conditions: complete IGF1R sequencing performed in 9 of them
+  species: human
+  source_ref: abuzzahab2003
+  uncertainty: 1 nonsense mutation found
+- parameter: controls with normal birth weight screened
+  value: '43'
+  unit: children
+  conditions: no IGF1R mutations found
+  species: human
+  source_ref: abuzzahab2003
+  uncertainty: n=43
+localization:
+- 'human growth plate: no published histology in IGF1R deficiency'
+human_evidence: direct
+human_evidence_note: Two molecularly defined human cases with functional assays in patient fibroblasts
+  and a screened control group.
+species_basis:
+- human
+- in_vitro_human_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: abuzzahab2003
+  pmid: '14657428'
+  first_author: Abuzzahab MJ
+  year: 2003
+  type: primary
+  one_line_finding: IGF1R mutations reducing receptor function or number both cause intrauterine
+    plus postnatal growth retardation.
+open_questions:
+- g_l11path_008
 last_verified: '2026-08-05'

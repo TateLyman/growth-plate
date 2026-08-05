@@ -1,7 +1,120 @@
 id: bone_age_measurement_error
 name: Bone age measurement error
-type: process
+type: method
 layer: L7
-stub: true
-human_evidence: absent
+stub: false
+aliases:
+- bone age reliability
+summary: |
+  The measurement error of manual bone age is close to one year and is large relative to the
+  clinical decisions it supports. Interobserver: mean spread of results across three readers was
+  0.96 years for Greulich-Pyle and 0.74 years for Tanner-Whitehouse 2 on the same 50 films, a
+  difference not significant at the 5% level (king1994). Intra-observer: mean 0.33 years for TW2
+  but with 95% confidence limits of -0.87 to +1.53 years (king1994); on 362 consecutive clinical
+  radiographs the 95% limits of agreement were -1.41 to +1.43 years for TW2 and -2.46 to +2.18
+  years for GP (bull1999). Between-method: the 95% confidence interval for the GP-minus-TW2
+  difference spanned -1.52 to +2.28 years, so the two methods cannot be interchanged within a
+  patient's serial record (bull1999). Modern trained-reader studies look better on correlation
+  metrics without contradicting these limits: ICC exceeded 0.9 for both GP and TW3-RUS across
+  1725 radiographs and 12 readers, with mean absolute GP-versus-TW3-RUS differences of 2.5-3.3
+  months in most age bands but larger discrepancies above 180 months of age, i.e. in the fusion
+  window (tewattanarat2026). Automation collapses the reproducibility component: BoneXpert
+  returns the same value on a repeat radiograph with SD 0.17 years (95% CI 0.13-0.21), about a
+  fifth of the human interobserver spread (thodberg2009). What remains uneliminated is the
+  systematic component - the displacement of the reference standard relative to the population
+  being measured - which is 2.9 months in one modern US cohort with 95% limits of agreement of
+  about 2 years (guevel2026) and -2.2 months in an Australian one (paxton2013). No pooled
+  meta-analytic estimate of manual bone age error with a confidence interval was located in this
+  sweep (g_l7fuse_008).
+quantitative:
+- parameter: interobserver spread, GP versus TW2
+  value: 0.96 versus 0.74
+  unit: years
+  conditions: 3 readers, 50 radiographs, same films both methods
+  species: human
+  source_ref: king1994
+  uncertainty: difference not significant at 5%
+- parameter: intra-observer 95% limits of agreement, GP versus TW2
+  value: -2.46 to +2.18 versus -1.41 to +1.43
+  unit: years
+  conditions: 362 consecutive clinical radiographs, 10% re-read
+  species: human
+  source_ref: bull1999
+  uncertainty: 95% limits
+- parameter: 95% confidence interval for between-method difference (GP minus TW2)
+  value: -1.52 to +2.28
+  unit: years
+  conditions: 362 consecutive clinical radiographs
+  species: human
+  source_ref: bull1999
+  uncertainty: 95% CI
+- parameter: automated precision on repeat radiograph
+  value: '0.17'
+  unit: years SD
+  conditions: BoneXpert, inferred from six longitudinal series
+  species: human
+  source_ref: thodberg2009
+  uncertainty: 95% CI 0.13-0.21 years
+- parameter: 95% limits of agreement between GP bone age and chronological age
+  value: approximately 2
+  unit: years
+  conditions: 472 modern US paediatric patients, Bland-Altman analysis
+  species: human
+  source_ref: guevel2026
+  uncertainty: systematic bias 2.9 months (SD 12.8)
+localization:
+- 'SYS: applies to every clinical use of bone age, including growth prediction and forensic age estimation'
+human_evidence: direct
+human_evidence_note: >-
+  All error estimates come from human reader studies on human radiographs; the numbers are
+  directly measured, not modelled.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human measurement property.
+confidence: A
+key_refs:
+- ref_id: king1994
+  pmid: '7953224'
+  first_author: King DG
+  year: 1994
+  type: primary
+  one_line_finding: >-
+    Interobserver spread 0.96 y (GP) versus 0.74 y (TW2); TW2 intra-observer 0.33 y with 95%
+    limits -0.87 to +1.53 y.
+- ref_id: bull1999
+  pmid: '10490531'
+  first_author: Bull RK
+  year: 1999
+  type: primary
+  one_line_finding: >-
+    GP and TW2 differ with a 95% CI of -1.52 to +2.28 years and GP has the wider intra-observer
+    limits.
+- ref_id: thodberg2009
+  pmid: '19116188'
+  first_author: Thodberg HH
+  year: 2009
+  type: primary
+  one_line_finding: >-
+    Automated determination reduces the repeat-measurement SD to 0.17 years.
+- ref_id: tewattanarat2026
+  pmid: '42001038'
+  first_author: Tewattanarat N
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    ICC exceeded 0.9 for both GP and TW3-RUS among 12 trained readers, with the largest
+    method disagreement above 180 months of age.
+- ref_id: guevel2026
+  pmid: '42159483'
+  first_author: Guevel B
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    Bland-Altman 95% limits of agreement between GP bone age and chronological age were about 2
+    years in a modern US cohort.
+open_questions:
+- g_l7fuse_008
+- g_l7fuse_007
+contradicts: []
 last_verified: '2026-08-05'

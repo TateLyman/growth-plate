@@ -1,7 +1,84 @@
 id: jansen_metaphyseal_chondrodysplasia
 name: Jansen metaphyseal chondrodysplasia
+aliases:
+- JMC
+- PTH1R activating mutation
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Jansen metaphyseal chondrodysplasia is one half of a matched human activating/inactivating pair
+  at PTH1R; together with Blomstrand chondrodysplasia it tests the PTHrP/IHH negative-feedback
+  loop in humans without any animal model being required for the causal claim. The lesion is a
+  heterozygous activating mutation in PTH1R - His223Arg in the first intracellular loop was the
+  founding allele, and five activating mutations are now known (H223R in 18 of 24 patients in the
+  natural-history series, plus T410P, T410R in a father and two sons, I458R and I458K). The
+  molecular consequence is ligand-independent cAMP accumulation, shown directly in COS-7 cells
+  expressing the mutant receptor. The systemic consequence follows mechanistically: PTH- and
+  PTHrP-INDEPENDENT hypercalcaemia, hypercalciuria and hypophosphataemia, with nephrocalcinosis
+  and declining renal function later in life. The skeletal consequence is the interesting one for
+  this atlas: constitutive PTH1R signalling holds chondrocytes in the proliferative state and
+  DELAYS their exit into hypertrophy, giving markedly delayed and disorganised metaphyseal
+  mineralisation with severe short stature. Bone histomorphometry has now been performed in two
+  paediatric JMC patients, which is the only direct human bone-tissue characterisation in this
+  disorder; the growth plate itself remains undescribed in living patients.
+quantitative:
+- parameter: patients in the JMC natural history series
+  value: '24'
+  unit: patients
+  conditions: five activating PTH1R mutations represented
+  species: human
+  source_ref: saito2018
+  uncertainty: n=24
+- parameter: patients carrying the H223R activating allele
+  value: 18/24
+  unit: patients
+  conditions: T410P, I458R and I458K in single cases; T410R in a father and his two sons
+  species: human
+  source_ref: saito2018
+  uncertainty: n=24
+- parameter: paediatric JMC patients with bone histomorphometry
+  value: '2'
+  unit: patients
+  conditions: bone microarchitecture, formation and protein expression assessed
+  species: human
+  source_ref: pereira2025
+  uncertainty: n=2
+localization:
+- 'human growth plate: not described in living JMC patients'
+- 'human bone (iliac/biopsy): microarchitecture and turnover characterised in 2 paediatric patients
+  (pereira2025)'
+human_evidence: direct
+human_evidence_note: Human activating PTH1R alleles with in vitro cAMP assays, a 24-patient natural
+  history series and bone histomorphometry in two patients.
+species_basis:
+- human
+- in_vitro_animal_cell
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node; the COS-7 cAMP assay is a heterologous expression
+  system, not a species claim.
+confidence: A
+key_refs:
+- ref_id: schipani1995
+  pmid: '7701349'
+  first_author: Schipani E
+  year: 1995
+  type: primary
+  one_line_finding: PTH1R H223R gives ligand-independent cAMP accumulation - the founding activating
+    allele of JMC.
+- ref_id: saito2018
+  pmid: '29788189'
+  first_author: Saito H
+  year: 2018
+  type: primary
+  one_line_finding: 24 JMC patients across five activating PTH1R mutations with in vitro receptor
+    characterisation.
+- ref_id: pereira2025
+  pmid: '39950977'
+  first_author: Pereira RC
+  year: 2025
+  type: primary
+  one_line_finding: Bone histomorphometry and turnover markers in two paediatric JMC patients.
+open_questions:
+- g_l11path_012
 last_verified: '2026-08-05'

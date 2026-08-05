@@ -1,7 +1,59 @@
 id: aromatase_deficiency_human
-name: Aromatase deficiency
+name: Aromatase (CYP19A1) deficiency - stature outcome
+aliases:
+- CYP19A1 deficiency
+- estrogen synthesis deficiency
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Aromatase deficiency is the human estrogen-synthesis null and, with ESR1 estrogen resistance,
+  one of the two experiments that established estrogen rather than androgen as the fusion signal
+  in both sexes. Read from the L11 angle the chain is: biallelic CYP19A1 mutation -> failure to
+  aromatise androgens to estrogens, so estradiol is undetectable while testosterone and
+  gonadotropins are elevated -> the growth plate never receives the estrogen signal that drives
+  epiphyseal fusion -> absent pubertal growth spurt, delayed bone maturation, unfused epiphyses,
+  continued linear growth into adult life and tall final stature, in XX as well as XY individuals.
+  The pharmacological closure is what makes this decisive rather than correlative: in an
+  aromatase-deficient man, estradiol - not testosterone - advanced bone maturation and closed the
+  epiphyses. The detailed analysis of how estrogen terminates growth belongs to Layer L7 (fusion
+  and cessation) and is not duplicated here; this node exists to record the human perturbation,
+  its molecular consequence and its stature outcome, and to point at L7.
+quantitative:
+- parameter: index siblings in the defining aromatase deficiency report
+  value: '2'
+  unit: individuals
+  conditions: one 28-year-old XX proband and her XY brother, novel CYP19A1 mutation
+  species: human
+  source_ref: morishima1995
+  uncertainty: n=2
+localization:
+- 'human growth plate: not examined; the phenotype is read from bone age and epiphyseal closure on
+  radiographs'
+human_evidence: direct
+human_evidence_note: Molecularly defined human CYP19A1 mutations in both sexes with radiographic
+  epiphyseal status and an estradiol-versus-testosterone intervention in one patient.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: 'Human phenotype node. Cross-reference: the fusion mechanism is analysed
+  in L7, not here.'
+confidence: A
+key_refs:
+- ref_id: morishima1995
+  pmid: '8530621'
+  first_author: Morishima A
+  year: 1995
+  type: primary
+  one_line_finding: Novel CYP19A1 mutation in XX and XY siblings defines the human aromatase deficiency
+    syndrome.
+- ref_id: carani1997
+  pmid: '9211678'
+  first_author: Carani C
+  year: 1997
+  type: primary_abstract_only
+  one_line_finding: In an aromatase-deficient man, estradiol but not testosterone closed the epiphyses
+    and stopped linear growth.
+open_questions:
+- g_l11path_013
 last_verified: '2026-08-05'

@@ -1,7 +1,47 @@
 id: noggin_antagonist
-name: Noggin
+name: Noggin (NOG)
+aliases:
+- NOG
 type: protein
 layer: L3
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Noggin is a secreted BMP-binding antagonist. Mouse Nog-null embryos show grossly enlarged, fused cartilage
+  elements with failure of joint formation, i.e. unopposed BMP signalling expands the chondrogenic field (Brunet 1998).
+  Human heterozygous NOG loss-of-function causes proximal symphalangism and multiple synostoses syndrome - joint fusion
+  rather than dwarfism - which is the clearest human demonstration that BMP dose, not BMP presence, is what the skeleton
+  reads (Gong 1999). Noggin and Chordin are partially redundant: single nulls have distinct territories but the double
+  mutant loses structures neither single mutant loses (Stottmann 2001, mouse). Noggin is widely used experimentally
+  as the BMP-off reagent in growth plate explants, so a large fraction of ''BMP is required for X'' claims in this
+  subsystem are Noggin-inference rather than receptor genetics.'
+localization:
+- 'mouse joint interzone and perichondrium: confirmed (brunet1998)'
+- 'human: inferred from NOG haploinsufficiency phenotype (gong1999)'
+human_evidence: direct
+human_evidence_note: Heterozygous NOG mutations cause human proximal symphalangism/multiple synostoses, a joint-fusion
+  phenotype.
+species_basis:
+- mouse
+- human
+translation_risk: low
+translation_risk_reason: Human germline loss-of-function phenotype is concordant in direction with the mouse null.
+confidence: A
+key_refs:
+- ref_id: brunet1998
+  pmid: '9603738'
+  first_author: Brunet LJ
+  year: 1998
+  type: primary
+  one_line_finding: Noggin-null mice have enlarged cartilage elements and fail to form joints.
+- ref_id: gong1999
+  pmid: '10080184'
+  first_author: Gong Y
+  year: 1999
+  type: primary
+  one_line_finding: Heterozygous NOG mutations cause human proximal symphalangism and multiple synostoses syndrome.
+- ref_id: stottmann2001
+  pmid: '11784076'
+  first_author: Stottmann RW
+  year: 2001
+  type: primary
+  one_line_finding: Chordin and Noggin have essential but partly redundant roles in mouse skeletal morphogenesis.
 last_verified: '2026-08-05'

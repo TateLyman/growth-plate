@@ -1,9 +1,97 @@
 id: growth_hormone
-name: Growth hormone
+name: Growth hormone (GH1 / somatotropin)
+aliases:
+- hGH
+- somatotropin
+- GH1
 type: hormone
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'GH is a 191-residue, 22 kDa single-chain protein secreted in discrete bursts by anterior pituitary
+  somatotrophs. It reaches the growth plate as a systemic ligand and also acts on the plate directly:
+  unilateral intra-arterial infusion into hypophysectomised rats widened the tibial growth plate on the
+  infused side only, with the contralateral limb as internal control (isaksson1982). That direct action
+  is at least partly relayed by locally made IGF-1, because GH raised the number of IGF-1-immunoreactive
+  chondrocytes in the germinal/proliferative zone (nilsson1986) and a somatomedin antiserum abolished
+  the local growth response (schlechter1986). GH acts principally on the resting/germinal compartment:
+  it increases the NUMBER of chondrocytes entering proliferation rather than the labelling index of cells
+  already cycling (ohlsson1992, gevers1996a; rat). In humans the causal chain is established by loss-of-function
+  at every node - GH1, GHRHR, GHR, STAT5B, IGF1, IGFALS, PAPPA2 - each producing short stature of characteristic
+  severity. What GH does at the human growth plate has never been measured directly; all zonal data are
+  rodent or rabbit.'
+quantitative:
+- parameter: GH secretory burst frequency, 24 h
+  value: 13.7-13.8
+  unit: bursts/24 h
+  conditions: healthy middle-aged adults, 10-min sampling for 24 h, maximum-likelihood deconvolution
+  species: human
+  source_ref: van2016
+  uncertainty: 95% CI 12.1-15.7; n=37
+- parameter: fraction of 24-h GH output that is pulsatile rather than basal
+  value: '88'
+  unit: '%'
+  conditions: healthy middle-aged adults; pulsatile 151-191 vs basal 14.5-26.9 mU/L/24 h
+  species: human
+  source_ref: van2016
+  uncertainty: derived from group means; n=37
+- parameter: total 24-h GH secretion
+  value: 172-238
+  unit: mU/L per 24 h
+  conditions: middle-aged adults; long-lived-family offspring 172 (128-216) vs partners 238 (193-284)
+  species: human
+  source_ref: van2016
+  uncertainty: 95% CI shown; between-group P=0.04
+localization:
+- 'rat RZ: GH receptor present and GH-responsive proliferation confirmed (gevers2002, ohlsson1992)'
+- 'rat PZ: GH increases chondrocyte number, not labelling index (gevers1996a)'
+- 'human growth plate: GH action not directly measured'
+human_evidence: direct
+human_evidence_note: Human GH1, GHRHR and GHR loss-of-function each cause severe proportionate short stature
+  and recombinant GH restores growth - interventional human evidence for the axis, though not for GH's
+  zonal mechanism.
+species_basis:
+- human
+- rat
+- mouse
+- rabbit
+translation_risk: moderate
+translation_risk_reason: The systemic requirement for GH is proven in humans; the zonal mechanism (resting-zone
+  recruitment, local IGF-1 relay) rests entirely on rat and rabbit work, and rodents do not fuse their
+  epiphyses.
+confidence: A
+key_refs:
+- ref_id: isaksson1982
+  first_author: Isaksson OG
+  year: 1982
+  type: primary
+  one_line_finding: Unilateral intra-arterial GH infusion widened the growth plate only on the infused
+    side of hypophysectomised rats.
+  pmid: '7079756'
+- ref_id: nilsson1986
+  first_author: Nilsson A
+  year: 1986
+  type: primary
+  one_line_finding: GH increased the number of IGF-1-containing chondrocytes in the rat growth plate germinal
+    zone.
+  pmid: '3523759'
+- ref_id: schlechter1986
+  first_author: Schlechter NL
+  year: 1986
+  type: primary
+  one_line_finding: Somatomedin antiserum blocked the local growth response to intra-arterial GH.
+  pmid: '3464007'
+- ref_id: ohlsson1992
+  first_author: Ohlsson C
+  year: 1992
+  type: primary
+  one_line_finding: GH induces multiplication of the slowly cycling germinal cells of the rat tibial growth
+    plate.
+  pmid: '1409707'
+- ref_id: van2016
+  first_author: van der Spoel E
+  year: 2016
+  type: primary
+  one_line_finding: '24-h deconvolution: 13.7-13.8 GH bursts/24 h, ~88% of output pulsatile, in healthy
+    middle-aged humans.'
+  pmid: '27605408'
 last_verified: '2026-08-05'
-aliases:
-- GH, somatotropin

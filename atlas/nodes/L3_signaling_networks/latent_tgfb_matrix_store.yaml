@@ -1,7 +1,47 @@
 id: latent_tgfb_matrix_store
-name: Latent TGF-beta matrix store
+name: Latent TGF-beta matrix store (LAP/LTBP complex)
+aliases:
+- large latent complex
+- LTBP-bound TGF-beta
 type: process
 layer: L3
-stub: true
-human_evidence: absent
+stub: false
+summary: 'TGF-beta is secreted as a small latent complex (mature dimer non-covalently held by its latency-associated
+  peptide) covalently linked to a latent TGF-beta binding protein (LTBP1/3/4), which anchors it to fibrillin-containing
+  microfibrils in the extracellular matrix. Cartilage matrix therefore holds a reservoir of pre-made ligand whose
+  bioavailability is set by proteolytic, integrin-mediated and mechanical release rather than by transcription. Two
+  human genetic experiments bracket the store: TGFB1 mutations in the LAP domain destabilise latency and cause Camurati-Engelmann
+  disease with excess signalling (Kinoshita 2000), while biallelic LTBP3 loss of function causes brachyolmia with
+  short stature and reduced growth (Huckert 2015). This makes the latent store one of the few L3 nodes with human
+  bidirectional dose evidence. What has never been measured in any species is the absolute concentration of latent
+  TGF-beta per unit volume of growth plate matrix, or how much of it is released per loading cycle.'
+localization:
+- 'human bone/cartilage matrix: inferred from LTBP3 and TGFB1 human phenotypes'
+- 'growth plate zonal distribution of latent complex: unmeasured in any species'
+human_evidence: indirect
+human_evidence_note: Human LTBP3 and TGFB1 variant phenotypes imply a functional matrix latent store, but no direct
+  measurement in human physeal matrix exists.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: Inference from germline human variants; the biochemistry itself is largely from non-skeletal
+  tissue.
+confidence: C
+key_refs:
+- ref_id: kinoshita2000
+  pmid: '10973241'
+  first_author: Kinoshita A
+  year: 2000
+  type: primary
+  one_line_finding: TGFB1 LAP-domain mutations cause Camurati-Engelmann disease, implying release of latent TGF-beta
+    drives the phenotype.
+- ref_id: huckert2015
+  pmid: '25669657'
+  first_author: Huckert M
+  year: 2015
+  type: primary
+  one_line_finding: Biallelic LTBP3 mutations cause human brachyolmia with short stature.
+open_questions:
+- g_l3rest_004
 last_verified: '2026-08-05'

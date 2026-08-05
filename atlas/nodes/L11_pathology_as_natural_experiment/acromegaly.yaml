@@ -1,7 +1,66 @@
 id: acromegaly
 name: Acromegaly
+aliases:
+- GH excess after epiphyseal fusion
 type: phenotype
 layer: L11
-stub: true
-human_evidence: absent
+stub: false
+summary: |
+  Acromegaly is the same lesion as pituitary gigantism read after the growth plates have closed,
+  and is therefore this layer's cleanest human demonstration that epiphyseal fusion is
+  irreversible. GH and IGF-I excess of comparable magnitude produces no increase in height once
+  the physes are fused; instead it produces acral and periosteal apposition, soft-tissue
+  overgrowth and cartilage hypertrophy at articular rather than growth-plate sites. Onset before
+  versus after fusion is the only variable that separates the two syndromes, and overlapping
+  phenotypes occur when GH excess begins peripubertally. The genetic architecture partly overlaps
+  gigantism: a recurrent GPR101 p.E308D change was identified in 11 of 248 acromegaly patients,
+  mostly in tumour rather than germline DNA, and transfection of the mutation into rat GH3 cells
+  increased GH release and somatotroph proliferation. For the atlas, acromegaly is the boundary
+  condition for any claim about reactivating longitudinal growth in adults: an endogenous,
+  lifelong, high-amplitude GH/IGF-I stimulus does not lengthen a fused long bone in humans.
+quantitative:
+- parameter: acromegaly patients sequenced for GPR101
+  value: '248'
+  unit: patients
+  conditions: recurrent p.E308D found in 11, mostly in tumour tissue
+  species: human
+  source_ref: trivellin2014
+  uncertainty: n=248
+- parameter: frequency of the recurrent GPR101 p.E308D variant in acromegaly
+  value: 11/248
+  unit: patients
+  conditions: 4.4 percent; predominantly somatic
+  species: human
+  source_ref: trivellin2014
+  uncertainty: n=248
+localization:
+- 'human growth plate: fused; the target tissue of acromegalic overgrowth is periosteum, articular
+  cartilage and soft tissue, not the physis'
+human_evidence: direct
+human_evidence_note: Large human cohorts define the phenotype and its genetic contributors; the absence
+  of height gain after fusion is universally observed clinically.
+species_basis:
+- human
+- rat
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node; the GH3 cell work is rat and is used only for the
+  receptor mechanism.
+confidence: A
+key_refs:
+- ref_id: trivellin2014
+  pmid: '25470569'
+  first_author: Trivellin G
+  year: 2014
+  type: primary
+  one_line_finding: Recurrent GPR101 p.E308D in 11 of 248 acromegaly patients; increases GH release
+    in GH3 cells.
+- ref_id: rostomyan2015
+  pmid: '26187128'
+  first_author: Rostomyan L
+  year: 2015
+  type: primary
+  one_line_finding: Onset relative to epiphyseal fusion is the variable separating gigantism from
+    acromegaly.
+open_questions:
+- g_l11path_009
 last_verified: '2026-08-05'

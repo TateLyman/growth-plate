@@ -18,9 +18,29 @@ record rather than typed from memory (`tools/addref.py`), and every reference is
 re-resolved against NCBI/EPMC with author+year cross-check (`tools/verify_refs.py`).
 A fabricated PMID cannot enter the bibliography — verified by negative test.
 
+**Known limit of that guarantee, discovered 2026-08-05.** `addref.py` verifies that an
+identifier *exists*, not that it is the paper you meant. A mistyped PMID usually still
+resolves — to somebody else's work — and every downstream check then passes, because
+`verify_refs.py` cross-checks the stored author/year against the record that the same
+PMID returned, so the entry is self-consistent. Mis-attribution is therefore invisible
+to automation in a way that fabrication is not.
+
+Concretely: PMID 30356214 was hand-typed into an early subagent brief as the anchor for
+Mizuhashi 2018 (resting-zone skeletal stem cells). It resolves to Liu 2018, "Nuclear
+cGAS suppresses DNA repair and promotes tumorigenesis" — a real paper on an unrelated
+topic. The correct PMID is 30401834. The bibliography was never wrong, because that
+entry was created from the DOI and `addref.py` resolved the true PMID itself; the error
+lived only in hand-written documentation examples. It was caught by a sweep agent
+reading the returned title and objecting.
+
+Mitigations now in force: cite by DOI where available; the brief instructs agents to
+read the title `addref.py` prints back; and no identifier is ever hand-written into a
+node. The general lesson is that the machine-populated path is safe and the hand-typed
+path is not — which is the whole argument for `addref.py` existing.
+
 ## Toolchain — verified end-to-end 2026-08-05
 
-- `tools/addref.py` — accepted PMID 30356214 and DOI 10.1038/s41586-018-0662-5 with
+- `tools/addref.py` — accepted PMID 30401834 and DOI 10.1038/s41586-018-0662-5 with
   correct resolved metadata; **refused** fabricated PMID 99999999.
 - `tools/validate.py` — caught 10/10 deliberately injected defects (bad node type,
   bad confidence grade, ghost ref_id, dangling edge endpoints, bad relation, bad

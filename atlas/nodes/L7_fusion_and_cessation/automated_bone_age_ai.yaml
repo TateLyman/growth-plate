@@ -2,8 +2,110 @@ id: automated_bone_age_ai
 name: Automated/AI bone age assessment
 type: method
 layer: L7
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+stub: false
 aliases:
 - BoneXpert
+- deep learning bone age
+summary: |
+  Automated bone age determination now outperforms human readers on precision, which changes
+  where the residual error in remaining-growth prediction comes from. BoneXpert reconstructs the
+  borders of fifteen hand-wrist bones from a radiograph using an active appearance model,
+  computes intrinsic bone ages for thirteen of them (radius, ulna and eleven short bones), and
+  transforms these into Greulich-Pyle or Tanner-Whitehouse bone age; it rejects images with
+  abnormal morphology or poor quality rather than guessing. Developed on 1559 images, it
+  reproduced the Greulich-Pyle atlas over ages 2-17 with SD 0.42 years (95% CI 0.37-0.47) and
+  clinical TW ratings on 84 images with SD 0.80 years (95% CI 0.68-0.93). Critically, its
+  precision - the ability to return the same result on a repeat radiograph - was SD 0.17 years
+  (95% CI 0.13-0.21), roughly a fifth of the human interobserver spread of 0.74-0.96 years
+  (thodberg2009; compare king1994). Deep learning has since matched but not clearly beaten this:
+  in the RSNA Pediatric Bone Age Machine Learning Challenge, using 14,236 hand radiographs
+  (12,611 train, 1,425 validation, 200 test), the best five submissions achieved mean absolute
+  deviations from the reference standard of 4.2, 4.4, 4.4, 4.5 and 4.5 months (halabi2019). Head
+  to head in 292 Turkish children, BoneXpert and the deep-learning system VUNO Med-Bone Age were
+  indistinguishable from each other and from manual reading (ICC 0.994-0.995 in both sexes)
+  (zmen2025). A systematic review of 26 machine-learning bone age studies found the field almost
+  entirely confined to hand-wrist radiographs, with samples predominantly from the United States
+  and Western Europe and few studies exploring ethnic differences (dallora2019).
+quantitative:
+- parameter: BoneXpert accuracy against the Greulich-Pyle atlas
+  value: '0.42'
+  unit: years SD
+  conditions: ages 2-17 years
+  species: human
+  source_ref: thodberg2009
+  uncertainty: 95% CI 0.37-0.47 years
+- parameter: BoneXpert accuracy against clinical Tanner-Whitehouse ratings
+  value: '0.80'
+  unit: years SD
+  conditions: 84 clinical TW-rated images
+  species: human
+  source_ref: thodberg2009
+  uncertainty: 95% CI 0.68-0.93 years
+- parameter: BoneXpert precision on repeat radiograph
+  value: '0.17'
+  unit: years SD on a single determination
+  conditions: inferred from six longitudinal radiograph series
+  species: human
+  source_ref: thodberg2009
+  uncertainty: 95% CI 0.13-0.21 years
+- parameter: best deep-learning mean absolute deviation, RSNA challenge
+  value: '4.2'
+  unit: months
+  conditions: 200-image held-out test set; best five entries 4.2-4.5 months
+  species: human
+  source_ref: halabi2019
+  uncertainty: 14,236 images total; reference standard is expert reading
+- parameter: agreement of BoneXpert and VUNO Med-Bone Age with manual GP reading
+  value: 0.994-0.995
+  unit: intraclass correlation coefficient
+  conditions: 292 Turkish children aged 1-15 y, equal sex and age distribution
+  species: human
+  source_ref: zmen2025
+  uncertainty: no significant difference between the two AI systems
+localization:
+- 'human left hand and wrist radiograph: 15 bones segmented, 13 scored'
+human_evidence: direct
+human_evidence_note: Validated on human radiograph collections with human expert reference standards.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical method with no animal analogue.
+confidence: A
+key_refs:
+- ref_id: thodberg2009
+  pmid: '19116188'
+  first_author: Thodberg HH
+  year: 2009
+  type: primary
+  one_line_finding: >-
+    BoneXpert reproduces GP bone age with SD 0.42 y and has a repeat-radiograph precision of SD
+    0.17 y, far tighter than human readers.
+- ref_id: halabi2019
+  pmid: '30480490'
+  first_author: Halabi SS
+  year: 2019
+  type: primary
+  one_line_finding: >-
+    Best deep-learning entries in the RSNA challenge achieved mean absolute deviations of 4.2-4.5
+    months on a 200-image test set.
+- ref_id: zmen2025
+  pmid: '39221654'
+  first_author: Özmen E
+  year: 2025
+  type: primary
+  one_line_finding: >-
+    BoneXpert and VUNO Med-Bone Age agreed with manual GP reading at ICC 0.994-0.995 in 292
+    Turkish children with no superiority of either.
+- ref_id: dallora2019
+  pmid: '31344143'
+  first_author: Dallora AL
+  year: 2019
+  type: systematic_review
+  one_line_finding: >-
+    Systematic review and meta-analysis of 26 machine-learning bone age studies; samples were
+    predominantly US and West European and few explored ethnic differences.
+open_questions:
+- g_l7fuse_007
+- g_l7fuse_008
+contradicts: []
+last_verified: '2026-08-05'

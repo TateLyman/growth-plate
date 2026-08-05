@@ -1,7 +1,53 @@
 id: wnt_noncanonical_pcp
-name: Non-canonical WNT/planar cell polarity
+name: Non-canonical WNT / planar cell polarity in the growth plate
+aliases:
+- WNT-PCP
+- planar cell polarity, chondrocyte
 type: pathway
 layer: L3
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Column formation requires that daughter chondrocytes rotate and intercalate into a single file aligned with
+  the long axis; this is a planar-cell-polarity process, not a proliferation process. In mouse, non-canonical Frizzled
+  signalling controls chondrocyte polarity: manipulating Fzd/Wnt5a signalling disrupts the stereotyped rotation that
+  follows division and produces disorganised, non-columnar clones without necessarily changing proliferation rate
+  (Li and Dudley 2009). WNT5A acts as a graded cue: it induces ROR2-dependent phosphorylation of VANGL2, and the level
+  of VANGL2 phosphorylation encodes the position of a cell within a WNT5A gradient, converting a diffusible signal
+  into a vector (Gao 2011, mouse). Wnt5a and Wnt5b have distinct, non-interchangeable effects on the proliferation-to-hypertrophy
+  transition (Yang 2003, mouse). This subsystem explains the columnar architecture that L1 describes, and it is the
+  arm of WNT signalling least studied in human tissue - no human growth plate has been assayed for PCP protein asymmetry.'
+localization:
+- 'mouse PZ: confirmed - polarity and rotation defects on Fzd/Wnt5a perturbation (li2009)'
+- 'human PZ: unconfirmed - no PCP protein asymmetry data in human growth plate'
+human_evidence: indirect
+human_evidence_note: Human WNT5A and ROR2 mutations cause Robinow syndrome with limb shortening, but no human growth
+  plate PCP measurement exists.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: Mouse genetics and explant imaging; the human columnar organisation is described morphologically
+  but never mechanistically.
+confidence: C
+key_refs:
+- ref_id: li2009
+  pmid: '19224985'
+  first_author: Li Y
+  year: 2009
+  type: primary
+  one_line_finding: Non-canonical Frizzled signalling controls the post-mitotic rotation that builds chondrocyte columns
+    in mouse.
+- ref_id: gao2011
+  pmid: '21316585'
+  first_author: Gao B
+  year: 2011
+  type: primary
+  one_line_finding: A WNT5A gradient induces graded ROR2-dependent VANGL2 phosphorylation, converting concentration
+    into polarity.
+- ref_id: yang2003
+  pmid: '12538525'
+  first_author: Yang Y
+  year: 2003
+  type: primary
+  one_line_finding: Wnt5a and Wnt5b have distinct activities in coordinating chondrocyte proliferation and differentiation.
+open_questions:
+- g_l3rest_008
 last_verified: '2026-08-05'

@@ -1,7 +1,103 @@
 id: clonal_column
 name: Clonal chondrocyte column
+aliases:
+- chondrocyte column
+- cell column
+- clone
 type: tissue_structure
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The clonal column is the functional unit of the growth plate: a vertical stack of chondrocytes
+  all descended from one progenitor, in which the life history of a single cell is displayed in space.
+  Postnatally, after the secondary ossification centre forms, columns become monoclonal and originate
+  from PTHrP-expressing resting-zone cells; embryonic columns are multiclonal. Column length in the proliferative
+  zone is a measurable and species-distinctive quantity: 24 cells per column in the human distal femur.
+  Because a steady-state column loses one cell at its base for every cell added at its top, column length
+  together with the loss rate fixes the transit time; in the rat proximal tibia a column loses 8 cells
+  per day. Computer simulation of stem-cell plus amplification-division parameters reproduces rabbit column
+  structure, showing that observed column architecture is compatible with a simple hierarchical proliferation
+  model. 3D imaging has complicated the classical picture by showing that postnatal columns are composites
+  of ordered and disordered stacks and that they coexist with peripheral clusters, so ''column'' names
+  a statistical tendency rather than a crystalline structure.'
+quantitative:
+- parameter: cells per column, proliferative zone
+  value: '24'
+  unit: cells
+  conditions: human distal femur
+  species: human
+  source_ref: kember1976
+  uncertainty: single-study value
+- parameter: cells lost per column per day
+  value: '8'
+  unit: cells/day
+  conditions: rat proximal tibia in steady-state growth
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: one cell every 3 h
+- parameter: clonality of postnatal columns
+  value: monoclonal
+  unit: qualitative
+  conditions: mouse, after secondary ossification centre formation, PTHrP+ resting zone origin
+  species: mouse
+  source_ref: mizuhashi2018
+  uncertainty: lineage tracing
+- parameter: number of columns analysed in 3D at P40
+  value: 737 (distal femur), 512 (proximal tibia)
+  unit: columns
+  conditions: mouse, 3D Confetti clonal analysis
+  species: mouse
+  source_ref: rubin2024
+  uncertainty: sample sizes as reported
+localization:
+- 'human PZ: column length counted (kember1976)'
+- 'mouse: clonality and 3D structure (mizuhashi2018, rubin2024)'
+- 'rabbit: simulated and observed column structure (mosssalentijn1991)'
+human_evidence: direct
+human_evidence_note: Human proliferative column length has been counted directly on histological sections
+  of distal femur (kember1976).
+species_basis:
+- human
+- mouse
+- rat
+- rabbit
+translation_risk: moderate
+translation_risk_reason: Column length is measured in humans, but clonality, origin and 3D order are established
+  only in mouse.
+confidence: B
+key_refs:
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: 24 cells per proliferative column in the human distal femur.
+- ref_id: mizuhashi2018
+  pmid: '30401834'
+  first_author: Mizuhashi K
+  year: 2018
+  type: primary
+  one_line_finding: Postnatal columns are monoclonal and derive from PTHrP+ resting zone cells after secondary
+    ossification centre formation.
+- ref_id: rubin2024
+  pmid: '39269144'
+  first_author: Rubin S
+  year: 2024
+  type: primary
+  one_line_finding: Postnatal columns are composites of ordered and disordered stacks coexisting with
+    peripheral clusters.
+- ref_id: mosssalentijn1991
+  pmid: '2050577'
+  first_author: Moss-Salentijn L
+  year: 1991
+  type: primary
+  one_line_finding: Simulation of stem-cell and amplification-division parameters reproduces rabbit growth
+    plate column structure.
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: A steady-state rat column loses 8 chondrocytes per day at its base.
+open_questions:
+- g_l1arch_004
 last_verified: '2026-08-05'

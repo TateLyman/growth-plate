@@ -2,8 +2,108 @@ id: tanner_whitehouse_tw3
 name: Tanner-Whitehouse 3
 type: method
 layer: L7
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+stub: false
 aliases:
 - TW3
+- TW2
+- Tanner-Whitehouse point scoring
+summary: |
+  Tanner-Whitehouse scores each of a defined set of hand-wrist bones against illustrated stage
+  criteria, sums weighted stage scores to a maturity score, and converts that score to a bone
+  age against a reference population. Because it is a per-bone ordinal score, it resolves
+  maturity more finely than atlas matching and yields a continuous maturity score usable
+  independently of the age conversion. The reference sample is a British cohort of the 1950s-60s
+  (TW2), revised for secular change in TW3; the height-prediction equations were built on the
+  Harpenden Growth Study and the London International Children's Centre longitudinal series
+  (tanner1975, tanner1983). Reproducibility is somewhat better than atlas matching: interobserver
+  spread 0.74 years versus 0.96 for GP, intra-observer mean 0.33 years but with 95% confidence
+  limits of -0.87 to +1.53 years (king1994); intra-observer 95% limits of -1.41 to +1.43 years
+  versus -2.46 to +2.18 for GP (bull1999). The cost is time: 7.9 minutes per assessment versus
+  1.4 for GP (king1994). In a modern 1725-radiograph comparison by twelve trained readers, both
+  GP and TW3-RUS achieved excellent inter- and intra-observer reliability (ICC > 0.9), with mean
+  absolute differences between GP and TW3-RUS of approximately 2.5-3.3 months in most age bands
+  and larger discrepancies above 180 months of age, i.e. exactly where fusion decisions are made
+  (tewattanarat2026). TW3 and GP are not interchangeable within a patient's serial record
+  (bull1999).
+quantitative:
+- parameter: mean interobserver spread of TW2 bone age
+  value: '0.74'
+  unit: years
+  conditions: 3 radiology registrars, 50 radiographs
+  species: human
+  source_ref: king1994
+  uncertainty: GP comparator 0.96 y
+- parameter: mean intra-observer variation, TW2
+  value: '0.33'
+  unit: years
+  conditions: same reader, same film, repeat assessment
+  species: human
+  source_ref: king1994
+  uncertainty: 95% confidence limits -0.87 to +1.53 years
+- parameter: intra-observer 95% limits of agreement, TW2
+  value: -1.41 to +1.43
+  unit: years
+  conditions: 10% of 362 consecutive clinical radiographs re-analysed
+  species: human
+  source_ref: bull1999
+  uncertainty: 95% limits
+- parameter: mean absolute difference between GP and TW3-RUS
+  value: 2.5-3.3
+  unit: months
+  conditions: 1725 radiographs, 12 expert readers, most age bands; larger above 180 months
+  species: human
+  source_ref: tewattanarat2026
+  uncertainty: ICC > 0.9 for both methods
+- parameter: mean time to perform a TW2 assessment
+  value: '7.9'
+  unit: minutes
+  conditions: radiology registrars
+  species: human
+  source_ref: king1994
+  uncertainty: mean of 150 assessments
+localization:
+- 'human left hand and wrist: 20 bones (TW2 20-bone) or 13 bones (RUS subset)'
+human_evidence: direct
+human_evidence_note: Human radiographic method, validated only in human cohorts.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human clinical method with no animal analogue.
+confidence: A
+key_refs:
+- ref_id: king1994
+  pmid: '7953224'
+  first_author: King DG
+  year: 1994
+  type: primary
+  one_line_finding: >-
+    TW2 interobserver spread 0.74 y and intra-observer 0.33 y (95% limits -0.87 to +1.53 y), at
+    5.6 times the reading time of GP.
+- ref_id: bull1999
+  pmid: '10490531'
+  first_author: Bull RK
+  year: 1999
+  type: primary
+  one_line_finding: >-
+    TW2 has tighter intra-observer limits than GP and gives non-equivalent estimates, so methods
+    should not be mixed in serial measurement.
+- ref_id: tewattanarat2026
+  pmid: '42001038'
+  first_author: Tewattanarat N
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    In 1725 radiographs read by 12 experts, GP and TW3-RUS both reached ICC > 0.9 with mean
+    absolute differences of 2.5-3.3 months, widening above 180 months of age.
+- ref_id: tanner1983
+  pmid: '6639123'
+  first_author: Tanner JM
+  year: 1983
+  type: primary
+  one_line_finding: >-
+    TW Mark II height prediction equations built on a sample including very tall, very short and
+    very growth-delayed children.
+open_questions:
+- g_l7fuse_008
+contradicts: []
+last_verified: '2026-08-05'

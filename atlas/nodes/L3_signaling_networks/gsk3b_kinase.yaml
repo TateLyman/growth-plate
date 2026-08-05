@@ -1,7 +1,47 @@
 id: gsk3b_kinase
-name: GSK-3beta
+name: GSK3B
+aliases:
+- glycogen synthase kinase 3 beta
+- GSK-3beta
 type: protein
 layer: L3
-stub: true
-human_evidence: absent
+stub: false
+summary: 'GSK3B is the destruction-complex kinase that phosphorylates beta-catenin on the N-terminal degron and targets
+  it for beta-TrCP-mediated degradation; WNT-receptor engagement inhibits this activity and lets beta-catenin accumulate.
+  In chondrocytes, pharmacological GSK3 inhibition with lithium chloride raises beta-catenin and drives terminal differentiation
+  markers together with oxidative DNA damage and matrix remodelling in human OA chondrocytes in vitro (Guidotti 2015),
+  which is a chemical-genetics mirror of the beta-catenin gain-of-function mouse phenotype. GSK3B is not chondrocyte-specific
+  and sits downstream of many inputs, so any perturbation of it is a blunt instrument: it also regulates glycogen
+  metabolism, mTOR-adjacent signalling and microtubule dynamics in the same cell. No chondrocyte-restricted Gsk3b
+  conditional knockout growth plate phenotype has been reported that separates its WNT role from these other functions,
+  and no human growth plate GSK3B measurement exists.'
+localization:
+- 'in_vitro_human_cell (OA chondrocytes): activity manipulated pharmacologically (guidotti2015)'
+- 'human growth plate: unconfirmed'
+- 'mouse growth plate zonal distribution: unconfirmed'
+human_evidence: indirect
+human_evidence_note: Human evidence is in vitro pharmacology on cultured human articular chondrocytes, not growth
+  plate tissue.
+species_basis:
+- in_vitro_human_cell
+translation_risk: high
+translation_risk_reason: Lithium is a promiscuous inhibitor, the cells were articular and diseased, and no in vivo
+  physeal genetics exist.
+confidence: D
+key_refs:
+- ref_id: guidotti2015
+  pmid: '26618897'
+  first_author: Guidotti S
+  year: 2015
+  type: primary
+  one_line_finding: LiCl-dependent GSK3 inactivation in human chondrocytes links oxidative DNA damage to matrix remodelling
+    and terminal differentiation.
+- ref_id: akiyama2004
+  pmid: '15132997'
+  first_author: Akiyama H
+  year: 2004
+  type: primary
+  one_line_finding: Establishes that the level of beta-catenin - the GSK3B substrate - is what chondrocytes read.
+open_questions:
+- g_l3rest_005
 last_verified: '2026-08-05'

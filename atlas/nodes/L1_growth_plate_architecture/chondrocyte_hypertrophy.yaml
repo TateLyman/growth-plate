@@ -1,7 +1,103 @@
 id: chondrocyte_hypertrophy
 name: Chondrocyte hypertrophy
+aliases:
+- terminal differentiation
+- hypertrophic differentiation
 type: process
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Chondrocyte hypertrophy is the post-mitotic programme in which a flattened proliferative chondrocyte
+  becomes a large, axially elongated cell, and it is the single largest contributor to longitudinal growth.
+  Mechanically the enlargement is anisotropic: the cell increases its height in the growth direction far
+  more than its lateral diameter, because the surrounding longitudinal matrix channels constrain it. Hunziker
+  and Schenk showed in rat that this shape modulation, not volume as such, is what changes when growth
+  accelerates - between 21 and 35 days the final cell height rises and lateral diameter falls while final
+  cell volume is slightly reduced. The volume increase itself has three biophysically distinct phases,
+  of which the middle one is fluid uptake that dilutes dry mass by about 60%, so a large hypertrophic
+  chondrocyte is a diluted cell, not simply a bigger one. The whole programme is time-boxed: about two
+  days in rat regardless of growth rate, and roughly 24 h in mouse. Hypertrophic cells are metabolically
+  active throughout, with 2-5 fold expansion of secretory organelles, and remain alive to the chondro-osseous
+  junction.'
+quantitative:
+- parameter: change in final cell height during growth acceleration
+  value: increased
+  unit: qualitative
+  conditions: rat proximal tibia, 21 to 35 days; lateral diameter decreased, final volume slightly reduced
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: direction reported; magnitudes not in abstract
+- parameter: duration of the hypertrophic phase
+  value: '2'
+  unit: days
+  conditions: rat proximal tibia, constant across 21, 35 and 80 days
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: approximate
+- parameter: fraction of elongation contributed by hypertrophy
+  value: '59'
+  unit: '% of elongation'
+  conditions: proximal tibia, 28-day-old rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: falls to 44% in the slow proximal radius
+- parameter: dry mass dilution during the swelling phase
+  value: '60'
+  unit: '% reduction in density'
+  conditions: mouse hypertrophic chondrocytes, tomographic phase microscopy
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: approximate
+- parameter: expansion of rough endoplasmic reticulum, Golgi and mitochondria
+  value: 2-5
+  unit: fold
+  conditions: rat proximal tibia, proliferative to late hypertrophic
+  species: rat
+  source_ref: hunziker1987
+  uncertainty: range across compartments
+localization:
+- 'rat HZ: shape and organelle stereology (hunziker1987, hunziker1989)'
+- 'mouse HZ: volume and dry mass trajectory (cooper2013)'
+- 'human HZ: cell heights only (thurston1985)'
+human_evidence: indirect
+human_evidence_note: Human hypertrophic cell heights have been reported (thurston1985, abstract only);
+  the mechanics of enlargement have not been studied in human tissue.
+species_basis:
+- rat
+- mouse
+- porcine
+translation_risk: high
+translation_risk_reason: The three-phase mechanism, the volume set points and the time-boxing are all
+  rodent; no human measurement exists to anchor them.
+confidence: C
+key_refs:
+- ref_id: hunziker1989
+  pmid: '2607442'
+  first_author: Hunziker EB
+  year: 1989
+  type: primary
+  one_line_finding: Growth acceleration is achieved by cell-shape modulation - greater final height, smaller
+    lateral diameter - not by increased volume or proliferation.
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: Enlargement occurs in three phases, the middle one diluting dry mass by ~60%.
+- ref_id: hunziker1987
+  pmid: '3543020'
+  first_author: Hunziker EB
+  year: 1987
+  type: primary
+  one_line_finding: Hypertrophic cells expand secretory organelles 2-5 fold, indicating high biosynthetic
+    activity.
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Hypertrophy contributes 59% of elongation in the fast rat proximal tibia and 44% in
+    the slow proximal radius.
+open_questions:
+- g_l1arch_008
+- g_l1arch_009
 last_verified: '2026-08-05'

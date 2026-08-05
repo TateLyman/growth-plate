@@ -1,7 +1,86 @@
 id: column_density
-name: Chondrocyte column density
+name: Column density and cartilage septal number
+aliases:
+- columns per unit area
+- septal number
 type: phenotype
 layer: L1
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Column density - the number of chondrocyte columns per unit cross-sectional area of the plate,
+  measured histologically as cartilage septal number - determines how many parallel elongation units the
+  plate runs. It changes systematically with age in humans and it does so differently by zone: in human
+  rib, cartilage septal number falls with age in the proliferative zone but shows no significant change
+  in the hypertrophic zone, while septal thickness rises in both. That dissociation means the plate becomes
+  coarser (fewer, thicker units) at the proliferative level while preserving the number of units actually
+  delivering cartilage to the metaphysis. Because total plate width, not zone height, is the growth plate
+  parameter that correlates most strongly with tibial length and growth rate in both mouse and human,
+  the total number of columns a plate can run is plausibly the dominant scaling variable; but no study
+  has counted columns per unit area in a human plate and related it to a measured growth rate. Column
+  number is also the quantity that recovers or fails to recover after physeal injury, which is why it
+  matters clinically.'
+quantitative:
+- parameter: direction of cartilage septae number change with age, proliferative zone
+  value: decreasing
+  unit: qualitative
+  conditions: human rib growth plate, birth to adolescence
+  species: human
+  source_ref: byers2000
+  uncertainty: absolute counts not available from abstract
+- parameter: change in cartilage septae number with age, hypertrophic zone
+  value: no significant change
+  unit: qualitative
+  conditions: human rib growth plate, birth to adolescence
+  species: human
+  source_ref: byers2000
+  uncertainty: explicitly contrasted with the proliferative zone
+- parameter: growth plate parameter most strongly correlated with tibial length and growth rate
+  value: total growth plate width
+  unit: qualitative
+  conditions: mouse histomorphometry and human radiographs
+  species: multiple
+  source_ref: wilson2021
+  uncertainty: linear correlation reported
+- parameter: new chondrocytes produced per day per plate
+  value: 16400 (proximal tibia) vs 3700 (proximal radius)
+  unit: cells/day
+  conditions: 28-day-old rat; a 4.4-fold difference in total output between plates of one animal
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: not reported
+localization:
+- 'human rib: septal number quantified by zone (byers2000)'
+- 'rat: total daily chondrocyte output per plate (wilsman1996)'
+human_evidence: direct
+human_evidence_note: Cartilage septal number, the histological proxy for column density, has been quantified
+  by zone across age in human rib growth plates (byers2000).
+species_basis:
+- human
+- rat
+- mouse
+translation_risk: low
+translation_risk_reason: The primary evidence is human histomorphometry; the supporting kinetic comparison
+  is rodent and labelled as such.
+confidence: B
+key_refs:
+- ref_id: byers2000
+  pmid: '11033444'
+  first_author: Byers S
+  year: 2000
+  type: primary
+  one_line_finding: Cartilage septal number falls with age in the human proliferative zone but not in
+    the hypertrophic zone.
+- ref_id: wilson2021
+  pmid: '31997656'
+  first_author: Wilson K
+  year: 2021
+  type: primary
+  one_line_finding: Total growth plate width correlates most strongly with tibial length and growth rate
+    in mouse and human.
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Total daily chondrocyte output differs 4.4-fold between the proximal tibia and proximal
+    radius of a single rat.
 last_verified: '2026-08-05'

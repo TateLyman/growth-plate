@@ -1,7 +1,51 @@
 id: sleep_dependent_gh_release
 name: Sleep-dependent GH release
+aliases:
+- nocturnal GH surge
+- slow-wave-sleep-associated GH secretion
 type: process
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The largest GH secretory burst of the human 24-h cycle occurs shortly after sleep onset and
+  is temporally coupled to slow-wave sleep (SWS). The coupling is real but weaker than the textbook account
+  implies. In a within-subject randomised polysomnography experiment in 14 pubertal children, auditory
+  disruption cut SWS by 40.0 +/- 7.8% and lowered the GH pulse rate during N2 sleep relative to SWS (incidence
+  rate ratio 0.56, 95% CI 0.32-0.97), yet did NOT reduce total pulsatile GH secretion across the night
+  (calvert2022). The system therefore compensates: GH bursts redistribute rather than disappear when SWS
+  is fragmented for one night. Whether chronic sleep restriction reduces integrated GH exposure at the
+  growth plate and slows linear growth in children has not been tested with a growth endpoint.'
+quantitative:
+- parameter: reduction in slow-wave sleep achieved by auditory disruption
+  value: '40.0'
+  unit: '%'
+  conditions: 14 healthy pubertal children aged 11.3-14.1 y, within-subject crossover polysomnography
+  species: human
+  source_ref: calvert2022
+  uncertainty: SEM +/-7.8%
+- parameter: GH pulse rate during N2 sleep relative to slow-wave sleep
+  value: '0.56'
+  unit: incidence rate ratio
+  conditions: SWS-disrupted night, pubertal children, frequent blood sampling
+  species: human
+  source_ref: calvert2022
+  uncertainty: 95% CI 0.32-0.97
+localization:
+- 'human SYS: pituitary output measured in peripheral blood during polysomnography'
+human_evidence: direct
+human_evidence_note: Interventional human experiment in children with polysomnography plus frequent GH
+  sampling; the outcome measured was GH secretion, not growth.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human-only phenomenon as measured; rodents do not share the human sleep-architecture-to-GH
+  coupling.
+confidence: A
+key_refs:
+- ref_id: calvert2022
+  first_author: Calvert ME
+  year: 2022
+  type: primary
+  one_line_finding: Acute SWS disruption lowered GH pulse rate in N2 vs SWS (IRR 0.56) but did not diminish
+    total pulsatile GH in pubertal children.
+  pmid: '37283961'
 last_verified: '2026-08-05'

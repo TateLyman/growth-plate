@@ -3,28 +3,25 @@ name: IHH-BMP crosstalk
 type: process
 layer: L3
 stub: false
-summary: |
-  BMP and Ihh/PTHrP signalling are interdependent controllers of the same two decisions - how long
-  chondrocytes proliferate and when they hypertrophy. In mouse and chick limb explants, BMP signalling
-  delays hypertrophy partly by maintaining Ihh expression, while Ihh in turn raises BMP transcription
-  in perichondrium and cartilage; blocking BMP shortens the proliferative column even when the
-  PTHrP arm is intact, so the two pathways act in parallel rather than in series (Minina 2001).
-  miR-433 targets both BMP and Indian hedgehog signalling to coordinate murine postnatal growth plate
-  dynamics, providing a shared post-transcriptional node (Thakore 2026). The crosstalk is documented as
-  a set of epistatic and explant results; no study has measured the relative contribution of the BMP
-  and Ihh arms to a single quantitative growth output such as elongation rate, in any species.
+summary: 'BMP and Indian hedgehog signalling in the growth plate are interdependent but not serial. In mouse limb
+  explants, BMP2 beads raise Ihh expression, and Ihh signalling raises Bmp2/Bmp4 expression in the perichondrium,
+  so each arm can amplify the other. The decisive experiment is that BMP2 still increases chondrocyte proliferation
+  when Ihh signalling is blocked (and Ihh still acts when BMP signalling is blocked with Noggin), which places them
+  as parallel proliferative inputs converging on the same columnar chondrocytes rather than as one linear cascade
+  (Minina 2001, mouse). The two arms differ in what they control: Ihh/PTHrP sets the position of the hypertrophy boundary
+  through the negative feedback loop, whereas BMP raises proliferation rate and delays hypertrophy largely independently
+  of PTHrP. Minina 2002 adds the third input, showing FGF opposes BMP on both readouts in the same system. All of
+  this is mouse explant work; there is no human tissue equivalent.'
 localization:
-- 'mouse and chick PHZ/PERI: functionally confirmed in explant culture (minina2001)'
+- 'mouse PZ/PHZ and perichondrium: confirmed in limb explant culture (minina2001, minina2002)'
 - 'human growth plate: unconfirmed'
 human_evidence: absent
-human_evidence_note: No human data on IHH-BMP interaction in growth plate; human BMP-pathway skeletal
-  disorders have not been analysed for Ihh output.
+human_evidence_note: Crosstalk has never been tested in human tissue; no human explant or organoid experiment addresses
+  it.
 species_basis:
 - mouse
-- chicken
 translation_risk: high
-translation_risk_reason: Explant epistasis in mouse and chick only; no human tissue or genetic test of
-  the interaction.
+translation_risk_reason: Bead-implant explant pharmacology in embryonic mouse limbs; dose and diffusion are non-physiological.
 confidence: C
 key_refs:
 - ref_id: minina2001
@@ -32,15 +29,21 @@ key_refs:
   first_author: Minina E
   year: 2001
   type: primary
-  one_line_finding: BMP and Ihh/PTHrP signalling interact to coordinate proliferation and hypertrophy;
-    BMP maintains Ihh expression.
-- ref_id: thakore2026
-  pmid: '41342396'
-  first_author: Thakore P
-  year: 2026
+  one_line_finding: BMP and Ihh/PTHrP act as parallel, mutually reinforcing inputs on chondrocyte proliferation and
+    hypertrophy timing.
+- ref_id: minina2002
+  pmid: '12361605'
+  first_author: Minina E
+  year: 2002
   type: primary
-  one_line_finding: miR-433 targets both BMP and Indian hedgehog signalling in the murine postnatal growth
-    plate.
+  one_line_finding: FGF signalling antagonises BMP on proliferation and hypertrophy in mouse limb explants.
+- ref_id: stjacques1999
+  pmid: '10465785'
+  first_author: St-Jacques B
+  year: 1999
+  type: primary
+  one_line_finding: Ihh-null mice show reduced chondrocyte proliferation and failure of osteoblast development, defining
+    the Ihh arm.
 open_questions:
-- g_l3core_009
+- g_l3rest_001
 last_verified: '2026-08-05'

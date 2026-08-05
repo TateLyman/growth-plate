@@ -1,7 +1,64 @@
 id: bmp_signaling_growth_plate
-name: BMP signaling in the growth plate
+name: BMP signalling in the growth plate
+aliases:
+- bone morphogenetic protein signalling, chondrocyte
 type: pathway
 layer: L3
-stub: true
-human_evidence: absent
+stub: false
+summary: 'BMP ligands act on chondrocytes through the type I receptors BMPR1A and BMPR1B, which phosphorylate SMAD1/5/8;
+  Bmpr1a;Bmpr1b double-null mouse limbs form only condensations and generate essentially no cartilage, while either
+  single null is comparatively mild, establishing receptor redundancy (Yoon 2005, mouse). Downstream, chondrocyte-restricted
+  loss of Smad1 plus Smad5 in mouse reproduces a severe chondrodysplasia with a disorganised, thinned proliferative
+  zone, whereas Smad8 is dispensable (Retting 2009). In mouse limb explant culture BMP2 raises the proliferation rate
+  of columnar chondrocytes and delays the onset of hypertrophy, and it does so in part by raising Ihh expression -
+  yet BMP still increases proliferation in explants where Ihh signalling is blocked, so the BMP and Ihh/PTHrP arms
+  are parallel rather than strictly serial (Minina 2001, mouse). BMP signalling and FGFR3 signalling are antagonistic
+  on both proliferation and the hypertrophy decision in the same explant system (Minina 2002, mouse). The pathway
+  is dose-limited in vivo by the secreted antagonists Noggin and Chordin and by intracellular SMAD7. Human evidence
+  is genetic and indirect: NOG, GDF5, BMPR1B and LTBP3 variants cause recognisable skeletal phenotypes, but no human
+  growth plate has been assayed for zonal pSMAD1/5/8 activity.'
+localization:
+- 'mouse PZ: confirmed - Bmp2/Bmp6 expression and pSmad1/5/8 activity reported in proliferating and prehypertrophic
+  chondrocytes (minina2001, retting2009)'
+- 'mouse PERI: confirmed - Bmp2/Bmp4/Bmp7 expressed in perichondrium (bandyopadhyay2006)'
+- 'human growth plate: unconfirmed - no zonal pSMAD1/5/8 immunostaining series published'
+human_evidence: indirect
+human_evidence_note: Human evidence is entirely genetic (NOG symphalangism, GDF5/CDMP1 chondrodysplasia, LTBP3 brachyolmia);
+  no direct measurement of BMP pathway activity in human growth plate tissue.
+species_basis:
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: Receptor and SMAD genetics are mouse-only; the human read-out is dysmorphology from germline
+  variants, which cannot separate growth-plate-autonomous from patterning effects.
+confidence: B
+key_refs:
+- ref_id: yoon2005
+  pmid: '15781876'
+  first_author: Yoon BS
+  year: 2005
+  type: primary
+  one_line_finding: Bmpr1a/Bmpr1b double conditional-null mouse limbs fail to form cartilage; single nulls are mild.
+- ref_id: retting2009
+  pmid: '19224984'
+  first_author: Retting KN
+  year: 2009
+  type: primary
+  one_line_finding: Chondrocyte Smad1/Smad5 double deletion causes severe chondrodysplasia; Smad8 loss adds nothing.
+- ref_id: minina2001
+  pmid: '11714677'
+  first_author: Minina E
+  year: 2001
+  type: primary
+  one_line_finding: BMP2 in mouse limb explants increases chondrocyte proliferation and delays hypertrophy, partly
+    Ihh-independent.
+- ref_id: minina2002
+  pmid: '12361605'
+  first_author: Minina E
+  year: 2002
+  type: primary
+  one_line_finding: BMP and FGF signalling act antagonistically on proliferation and on the hypertrophy decision in
+    the same explants.
+open_questions:
+- g_l3rest_001
 last_verified: '2026-08-05'

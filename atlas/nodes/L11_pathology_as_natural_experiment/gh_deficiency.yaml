@@ -1,9 +1,62 @@
 id: gh_deficiency
-name: Growth hormone deficiency
-type: phenotype
-layer: L11
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Growth hormone deficiency (childhood-onset)
 aliases:
 - GHD
+- idiopathic isolated GH deficiency
+- IGHD
+type: phenotype
+layer: L11
+stub: false
+summary: |
+  GH deficiency is the reversible arm of the GH-IGF axis series: unlike Laron syndrome the
+  receptor is intact, so the lesion can be corrected pharmacologically and the counterfactual
+  adult height can be measured. The comparison that matters for this atlas is treated versus
+  untreated within the same diagnostic category. In a cohort of 169 individuals with idiopathic
+  GHD followed to adult height, rhGH-treated patients reached a higher adult height than
+  untreated patients with the same diagnosis, which is the human demonstration that the deficit
+  is a consequence of the hormone rather than of the condition that caused the deficiency. GH
+  acts on the growth plate through two routes that this layer can distinguish only indirectly:
+  endocrine IGF-I from the liver, and local IGF-I induced in the growth plate itself. Laron
+  syndrome (GHR null, no IGF-I) and STAT5B deficiency (no IGF1 transcription) bracket the
+  severity of complete axis failure at roughly -6 to -12 SDS in childhood, whereas idiopathic GHD
+  typically presents at -2 to -4 SDS, so partial and complete axis loss are quantitatively as
+  well as mechanistically distinct. A further human dissection comes from mid-puberty
+  withdrawal: adolescents with transient idiopathic GHD who stopped rhGH in mid-puberty reached
+  the same near-adult height as those who continued, showing that the axis requirement is not
+  uniform across the growth period.
+quantitative:
+- parameter: individuals with idiopathic GHD followed to adult height
+  value: '169'
+  unit: individuals
+  conditions: treated and untreated groups compared in the same cohort
+  species: human
+  source_ref: zhao2025
+  uncertainty: n=169
+localization:
+- 'human growth plate: no direct histological study of GH-deficient human physes'
+human_evidence: direct
+human_evidence_note: Adult-height outcomes in treated and untreated humans with the same diagnosis,
+  plus randomised and preference-based withdrawal studies.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human phenotype node.
+confidence: A
+key_refs:
+- ref_id: zhao2025
+  pmid: '40225070'
+  first_author: Zhao Q
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: '169 idiopathic GHD individuals to adult height: rhGH-treated exceed untreated
+    adult height.'
+- ref_id: martn2026
+  pmid: '42187530'
+  first_author: Martín Pérez IM
+  year: 2026
+  type: systematic_review
+  one_line_finding: Systematic review of hormonal treatment effectiveness across paediatric growth
+    disorders.
+open_questions:
+- g_l11path_008
+last_verified: '2026-08-05'
