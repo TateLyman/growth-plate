@@ -77,7 +77,13 @@ def main():
                 if correct and correct != rid:
                     changes.append((rid, correct))
                 else:
-                    unfixable.append((os.path.basename(p), rid, pm))
+                    # The ref_id resolves but the declared pmid matches nothing in
+                    # the bibliography. Almost always a typed-digit error rather than
+                    # a missing reference - report it as such, with what the ref_id
+                    # actually points at, so it can be judged rather than guessed.
+                    unfixable.append((os.path.basename(p), rid, pm,
+                                      str(bib[rid].get("pmid")),
+                                      str(bib[rid].get("title"))[:60]))
         if changes and not a.check:
             new = txt
             for old, cor in changes:
@@ -97,8 +103,13 @@ def main():
     if unfixable:
         print(f"\nUNFIXABLE ({len(unfixable)}) - node declares a pmid that is in no "
               f"bibliography entry; add it with addref.py:")
-        for f, rid, pm in unfixable[:20]:
-            print(f"  {f}: ref_id '{rid}' declares pmid {pm}")
+        for row in unfixable[:20]:
+            f, rid, pm = row[0], row[1], row[2]
+            canon = row[3] if len(row) > 3 else "?"
+            title = row[4] if len(row) > 4 else ""
+            print(f"  {f}: ref_id '{rid}' declares pmid {pm}, but that ref_id points "
+                  f"at pmid {canon} ({title}). PROBABLE TYPO - verify both pmids "
+                  f"against the live record before editing.")
     return 1 if (a.check and fixed) else 0
 
 

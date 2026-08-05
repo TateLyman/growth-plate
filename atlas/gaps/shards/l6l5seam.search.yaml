@@ -1,0 +1,102 @@
+searches:
+
+  - gap_id: g_l6l5_001
+    database: Europe PMC
+    exact_query_string: >-
+      human AND ("growth plate" OR physis OR physeal) AND (histomorphometry OR "zone height" OR
+      "hypertrophic zone" OR "cells per column") AND (tension-band OR hemiepiphysiodesis OR "guided
+      growth" OR tether OR "applied load" OR compression)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 716
+    screened_count: 25
+    reason_none_qualified: >-
+      No record reports zonal histomorphometry of a human growth plate with a known applied stress.
+      The screened records fall into four classes: (a) clinical guided-growth technique and outcome
+      reviews reporting angular correction only (42299327, tolk2026-class series); (b) large-animal
+      tethering studies with histology but non-human tissue (41417440 kyphotic swine multi-tether;
+      41041616 porcine periosteal resection; 41560384 and 40765624 rabbit); (c) computational models
+      that impose the animal stress-growth coefficient on human geometry; (d) unrelated paediatric
+      orthopaedic and pharmacology records retrieved on the term "growth plate". The two human tissue
+      histomorphometry references in the atlas (byers2000, rodriguez1992) have no mechanical history
+      attached to the specimens.
+
+  - gap_id: g_l6l5_003
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis OR physeal) AND (compression OR "mechanical loading" OR "compressive
+      stress" OR strain) AND ("alkaline phosphatase" OR TNAP OR ALPL OR pyrophosphate OR "matrix
+      vesicle" OR "provisional calcification")
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 2564
+    screened_count: 25
+    reason_none_qualified: >-
+      No record measures TNAP activity, extracellular pyrophosphate, matrix vesicle yield or vesicle
+      cargo in a mechanically loaded growth plate in any species. Screened records are: paediatric
+      fracture and trauma imaging series (42220951, 41399348, 42038782, 40496262) retrieved on
+      "physeal" plus "compression fracture"; hypophosphatasia and osteopontin genetics with no
+      mechanical arm (42137584, 41293326, 39728440); the human growth plate niche proteomics paper
+      (40781081 = xie2025) which is unloaded; and the PIEZO1-cilium compression paper (41194970 =
+      chen2025) which reads out degeneration and ossification, not mineralization chemistry. The
+      nearest existing result, chen2025a, measures ferroptosis rather than the Pi/PPi system.
+
+  - gap_id: g_l6l5_004
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis OR physeal) AND (compression OR "mechanical loading" OR tension OR
+      strain) AND ("collagen cross-link" OR "collagen crosslink" OR pyridinoline OR "lysyl oxidase"
+      OR LOX)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 517
+    screened_count: 25
+    reason_none_qualified: >-
+      Nothing measures collagen crosslink density or lysyl oxidase activity in a loaded growth plate.
+      Screened hits are crosslinking in other tissues (36302059 dystrophic muscle passive stiffness;
+      32071954 ovariectomised mouse bone; 37261462 perilacunar bone composition; 41303312 aortic
+      valve ECM), lysyl oxidase in non-physeal skeletal compartments (38635757 megakaryocyte-specific
+      Lox deletion; 37298730 cartilage calcification via matrix vesicles and LOX in CD11b deficiency),
+      articular cartilage tissue engineering under mechanical stimulus (38053849), and reviews. The
+      combination "growth plate" plus "crosslink" plus "load" returns no primary in any species.
+
+  - gap_id: g_l6l5_005
+    database: Europe PMC
+    exact_query_string: >-
+      ("growth plate" OR physis OR physeal) AND human AND (modulus OR stiffness OR "mechanical
+      properties") AND (hydrated OR "tissue level" OR indentation OR "unconfined compression") AND
+      (zone OR zonal OR reserve OR proliferative OR hypertrophic)
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 501
+    screened_count: 25
+    reason_none_qualified: >-
+      No record reports a tissue-scale, hydrated, zonally resolved modulus for a human weight-bearing
+      physis. The only human physeal modulus data retrieved is 40781081 (= xie2025), which is
+      NANOSCALE sharp-tip AFM on cryosections of phalangeal and tibial plates and returns 130.7 MPa
+      (RZ) and 416.2 MPa (HZ) - two to three orders above every tissue-scale animal measurement. The
+      remaining zonal mechanical records are animal (35245713 bovine growth plate material properties
+      by anatomic location; sergerie2009 porcine; eckstein2022 and radhakrishnan2004 rabbit), or
+      concern articular cartilage, engineered constructs and decellularised matrices. The
+      three-orders-of-magnitude spread and the disagreement about gradient DIRECTION therefore stand
+      unresolved, and no study measures both length scales on the same specimen.
+
+  - gap_id: g_l6l5_014
+    database: Europe PMC
+    exact_query_string: >-
+      human AND ("growth plate" OR physis OR physeal) AND (loaded OR loading OR compression) AND
+      (aggrecan OR proteoglycan OR "collagen II" OR glycosaminoglycan OR matrix) AND (biopsy OR
+      explant OR "in vivo")
+    filters: 'resultType=lite, pageSize=25, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 4398
+    screened_count: 25
+    reason_none_qualified: >-
+      No record assays matrix composition of human physeal tissue under a known applied load. The
+      screened set is dominated by articular cartilage and intervertebral disc mechanobiology
+      (42082961, 39934857, 41608144, 41376803, 42276983), tissue-engineered constructs (41767232,
+      41845215), animal tethering and growth modulation (41041616, 40836185 = halanski2026), paediatric
+      fracture fixation with finite element analysis (41723475), and a swine physeal allograft study
+      (41485130). The only human physeal loading experiment on record loads epiphysiodesis biopsies at
+      0.4 N and 0.77 Hz for 30 minutes and reads out transcription, not matrix composition. Human
+      physeal matrix has been characterised only WITHOUT load (xie2025, zoehrer2025).
