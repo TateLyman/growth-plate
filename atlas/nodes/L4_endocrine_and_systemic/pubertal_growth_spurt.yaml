@@ -1,7 +1,67 @@
 id: pubertal_growth_spurt
 name: Pubertal growth spurt
+aliases:
+- adolescent growth spurt
+- peak height velocity
 type: process
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'The pubertal growth spurt is the transient acceleration of height velocity produced by the simultaneous
+  rise of sex steroids and of GH/IGF-1, the latter itself amplified by estrogen acting on the somatotroph.
+  Its quantitative structure in humans has been fitted from 24-h hormone profiles against individually
+  modelled growth curves: growth velocity reaches half its maximum increment at morning estradiol 20 pmol/L
+  in girls (95% CI 13-31) and at testosterone 3.1 nmol/L (2.4-4.2) or estradiol 6.5 pmol/L (3.2-13) in
+  boys, and less than 25% of the potential growth remains once estradiol exceeds the Tanner B2 range (albin2012,
+  albin2013). The spurt and its termination are therefore driven by the same hormone across a narrow concentration
+  band, which is why interventions that shift pubertal timing (GnRH analogues, aromatase inhibitors, precocious
+  puberty) trade growth velocity against remaining growth time. LIN28B variants that advance menarche
+  by 0.12 years per allele also produce shorter adult height, the population-scale version of the same
+  trade (ong2009).'
+quantitative:
+- parameter: morning estradiol at half-maximal pubertal growth (girls)
+  value: '20'
+  unit: pmol/L
+  conditions: 27 healthy girls, 37 24-h profiles, growth fitted to PHV
+  species: human
+  source_ref: albin2012
+  uncertainty: 95% CI 13-31 pmol/L
+- parameter: morning testosterone at 50% growth velocity increase (boys)
+  value: '3.1'
+  unit: nmol/L
+  conditions: 26 healthy boys, 41 24-h profiles
+  species: human
+  source_ref: albin2013
+  uncertainty: 95% CI 2.4-4.2 nmol/L
+localization:
+- 'human SYS: measured as whole-body height velocity'
+- 'human growth plate: the cellular correlate of the spurt has never been observed in human tissue'
+human_evidence: direct
+human_evidence_note: Directly measured in humans by serial stadiometry with concurrent ultrasensitive
+  hormone profiling.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Rodents have no comparable pubertal height spurt and do not fuse their plates;
+  the spurt is a human/primate phenomenon.
+confidence: A
+key_refs:
+- ref_id: albin2012
+  first_author: Albin AK
+  year: 2012
+  type: primary
+  one_line_finding: Fitted estradiol dose-response for pubertal growth in girls, EC50 20 pmol/L.
+  pmid: '23075676'
+- ref_id: albin2013
+  first_author: Albin AK
+  year: 2013
+  type: primary
+  one_line_finding: Fitted testosterone and estradiol dose-responses for pubertal growth in boys.
+  pmid: '23988590'
+- ref_id: ong2009
+  first_author: Ong KK
+  year: 2009
+  type: primary
+  one_line_finding: LIN28B alleles that advance menarche also shorten adult height, quantifying the timing-versus-height
+    trade.
+  pmid: '19448623'
 last_verified: '2026-08-05'

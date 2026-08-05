@@ -1,7 +1,88 @@
 id: physeal_bar_formation
 name: Physeal bar formation
 type: phenotype
+aliases:
+- bony bridge
+- physeal bridge
+- partial growth arrest
+summary: 'A physeal bar is a bridge of bone spanning the growth plate that tethers one region while the
+  rest continues to grow, producing angular deformity, or that arrests growth entirely if extensive. It
+  is the pathological limit case of mechanical tethering: the bar imposes an internal, self-generated
+  tension band. Human incidence after physeal fracture is uncertain and probably higher than textbooks
+  state - a prospective cohort of 332 children found growth arrest in 30.1% overall, against up to 5.5%
+  in the prior literature, with 86% after distal femoral physeal fractures, older age and initial displacement
+  associated with arrest; the authors caution that diagnostic criteria for arrest vary and the true figure
+  may be lower. Physeal fractures themselves account for 18-30% of all paediatric fractures. Mechanistically,
+  a reproducible mouse distal femoral drill-hole model shows bone tissue accumulating in the defect over
+  42 days and identifies the cellular source: Pdgfra- and Pdgfrb-lineage cells, absent from the plate
+  before injury, migrate into the defect and contribute to the bar. This makes the bar a repair response
+  by perivascular/mesenchymal populations rather than transdifferentiation of resident chondrocytes.'
+quantitative:
+- parameter: growth arrest incidence after paediatric physeal fracture
+  value: '30.1'
+  unit: '%'
+  conditions: prospective cohort, 332 children, >=6 months follow-up or arrest within 6 months
+  species: human
+  source_ref: hooper2024
+  uncertainty: authors note diagnostic-criterion variation; prior literature reports up to 5.5%
+- parameter: growth arrest incidence after distal femoral physeal fracture
+  value: '86'
+  unit: '%'
+  conditions: same cohort
+  species: human
+  source_ref: hooper2024
+  uncertainty: highest of all sites; small subgroup
+- parameter: mean age, growth arrest vs no arrest
+  value: 12.8 vs 9.4
+  unit: years
+  conditions: same cohort
+  species: human
+  source_ref: hooper2024
+  uncertainty: displacement 59.0% vs 47.8%, angulation 47.0% vs 38.8%
+- parameter: physeal fractures as a share of all paediatric fractures
+  value: 18-30
+  unit: '%'
+  conditions: literature range quoted in the same study
+  species: human
+  source_ref: hooper2024
+  uncertainty: range across sources
+- parameter: time course of bony bar accumulation after drill-hole injury
+  value: '42'
+  unit: days of progressive bone formation
+  conditions: mouse distal femoral drill-hole model, micro-CT and histology, 5-point grading
+  species: mouse
+  source_ref: li2026_2
+  uncertainty: progressive increase; endpoint value not extracted
+localization:
+- 'human distal femoral physis: highest arrest rate (hooper2024)'
+- 'mouse distal femoral physis: Pdgfra and Pdgfrb lineage cells within the bar (li2026)'
+human_evidence: direct
+human_evidence_note: Human incidence and risk factors are measured prospectively; the cellular mechanism
+  is mouse only.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: Incidence data are human; the Pdgfra/Pdgfrb lineage attribution rests on mouse
+  reporter lines with no human counterpart.
+confidence: B
+key_refs:
+- ref_id: hooper2024
+  pmid: '38792486'
+  first_author: Hooper N
+  year: 2024
+  type: primary
+  one_line_finding: Growth arrest occurred in 30.1% of 332 prospectively followed physeal fractures and
+    86% of distal femoral fractures
+- ref_id: li2026_2
+  pmid: '41883142'
+  first_author: Li Z
+  year: 2026
+  type: primary
+  one_line_finding: Pdgfra and Pdgfrb lineage cells, absent from the uninjured plate, migrate in and build
+    the bony bar in a mouse drill-hole model
+open_questions:
+- g_l6mech_012
 layer: L6
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

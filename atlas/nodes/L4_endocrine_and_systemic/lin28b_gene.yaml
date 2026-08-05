@@ -1,7 +1,70 @@
 id: lin28b_gene
 name: LIN28B
+aliases:
+- LIN28B
 type: gene
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: LIN28B encodes an RNA-binding protein that blocks maturation of the let-7 microRNA family, and
+  it was the first locus shown by genome-wide association to set human pubertal timing. In 4,714 women
+  with replication in 16,373, each major allele at rs314276 was associated with 0.12 years earlier menarche
+  (95% CI 0.08-0.16; combined P=3.6x10-16), plus earlier breast development and voice breaking, faster
+  tempo of height growth in both sexes, and SHORTER adult height in women and men - the expected consequence
+  of earlier growth cessation (ong2009). A second, partially correlated variant tags effects that are
+  distinct and sex-specific, influencing prepubertal growth in girls and final height in boys, so LIN28B
+  affects the entire postnatal growth trajectory rather than only the timing of the spurt (widn2010).
+  Lin28a transgenic mice reproduce both the increased body size and the delayed puberty predicted from
+  the human association (zhu2010), a rare instance of successful reverse translation from a human GWAS
+  signal.
+quantitative:
+- parameter: effect of each major allele at LIN28B rs314276 on age at menarche
+  value: '-0.12'
+  unit: years
+  conditions: GWAS in 4,714 women, replication in 16,373 women
+  species: human
+  source_ref: ong2009
+  uncertainty: 95% CI 0.08-0.16 years; combined P=3.6x10^-16
+- parameter: association of the same allele with adult height
+  value: shorter
+  unit: direction of effect (magnitude not stated in abstract)
+  conditions: 17,274 women (P=3.6x10^-7) and 9,840 men (P=0.006)
+  species: human
+  source_ref: ong2009
+  uncertainty: effect size in cm or SD not reported in the abstract read
+  value_unverified: true
+localization:
+- 'human SYS: hypothalamus and other tissues; effect is on developmental timing'
+- 'growth plate: LIN28B expression in human physis not reported'
+human_evidence: direct
+human_evidence_note: Replicated genome-wide association with age at menarche, pubertal tempo and adult
+  height across tens of thousands of individuals.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: Human population genetics is primary and the mouse transgenic reproduces the
+  predicted phenotype.
+confidence: A
+key_refs:
+- ref_id: ong2009
+  first_author: Ong KK
+  year: 2009
+  type: primary
+  one_line_finding: LIN28B rs314276 major allele associated with 0.12 y earlier menarche and shorter adult
+    height.
+  pmid: '19448623'
+- ref_id: widn2010
+  first_author: Widén E
+  year: 2010
+  type: primary
+  one_line_finding: Partially correlated LIN28B variants tag distinct, sex-specific effects across the
+    whole postnatal growth trajectory.
+  pmid: '20398887'
+- ref_id: zhu2010
+  first_author: Zhu H
+  year: 2010
+  type: primary
+  one_line_finding: Lin28a transgenic mice reproduce the increased size and delayed puberty predicted
+    by the human association.
+  pmid: '20512147'
 last_verified: '2026-08-05'

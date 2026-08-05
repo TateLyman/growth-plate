@@ -1,0 +1,64 @@
+id: estrogen_gh_axis_amplification
+name: Estrogen amplification of GH secretion
+aliases:
+- estrogen-somatotroph interaction
+- sex steroid modulation of GH pulsatility
+type: process
+layer: L4
+stub: false
+summary: 'A substantial part of estrogen''s effect on the pubertal growth spurt is not exerted at the
+  plate at all but on the somatotroph axis, and the effect is on PULSATILE rather than basal GH. Under
+  a GnRH-antagonist gonadal clamp in 74 older men, estradiol addback during aromatase inhibition raised
+  basal, pulsatile and total overnight GH secretion by 60-70%, and log pulsatile GH correlated with concurrent
+  estradiol; estradiol did not potentiate GHRH/ghrelin/somatostatin-withdrawal stimuli, so the site of
+  action is likely hypothalamic rather than pituitary (roelfsema2018). A second mechanism is feedback
+  disinhibition: in 25 postmenopausal women, recombinant IGF-I dose-dependently suppressed pulsatile GH
+  by reducing burst mass and frequency, and 16 days of estradiol significantly blunted that suppression
+  (veldhuis2008). Together these explain why oral versus transdermal estrogen route matters clinically
+  (first-pass hepatic IGF-1 suppression) and why estrogen simultaneously raises GH and lowers hepatic
+  IGF-1 output. This node is the reason the estrogen dose-response at the plate cannot be read off serum
+  estradiol alone.'
+quantitative:
+- parameter: increase in overnight basal, pulsatile and total GH secretion with estradiol addback
+  value: 60-70
+  unit: '%'
+  conditions: 74 healthy men aged 57-77 under degarelix clamp with testosterone plus anastrozole; 10-min
+    overnight sampling, deconvolution
+  species: human
+  source_ref: roelfsema2018
+  uncertainty: P=0.046 basal, 0.020 pulsatile, 0.018 total
+- parameter: attenuation by estradiol of rhIGF-I suppression of pulsatile GH secretion
+  value: significant attenuation
+  unit: P value
+  conditions: 25 postmenopausal women randomised to 16 d estradiol or placebo, rhIGF-I 0/1.0/1.5/2.0 mg/m2
+    s.c.
+  species: human
+  source_ref: veldhuis2008
+  uncertainty: P=0.042; estradiol did not restore normal GH pulse frequency or ApEn
+localization:
+- 'human SYS: hypothalamic-pituitary; site inferred, not directly localised'
+- 'growth plate: not applicable - this node acts entirely upstream'
+human_evidence: direct
+human_evidence_note: Both experiments are randomised, clamped human interventional studies with 10-minute
+  sampling and deconvolution analysis.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human interventional physiology throughout.
+confidence: A
+key_refs:
+- ref_id: roelfsema2018
+  first_author: Roelfsema F
+  year: 2018
+  type: primary
+  one_line_finding: Estradiol addback under gonadal clamp raised nocturnal GH secretion 60-70% without
+    potentiating secretagogues.
+  pmid: '30032193'
+- ref_id: veldhuis2008
+  first_author: Veldhuis JD
+  year: 2008
+  type: primary
+  one_line_finding: Estradiol blunted rhIGF-I negative feedback on pulsatile GH secretion in postmenopausal
+    women.
+  pmid: '18728158'
+last_verified: '2026-08-05'

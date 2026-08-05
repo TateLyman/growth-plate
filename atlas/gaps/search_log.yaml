@@ -430,3 +430,205 @@ searches:
     studies using blood/plasma eQTL or pQTL panels as instruments, with no skeletal tissue sampled (e.g. PMID 41029778, 40996951,
     39747467); (4) rodent systems-genetics of bone mineral density (PMID 34099702). "Growth plate" appears in these records
     as background phrasing rather than as the sampled tissue.'
+- gap_id: g_l11path_001
+  database: Europe PMC
+  exact_query_string: achondroplasia AND (G380R OR Gly380Arg OR G375C) AND ("adult height" OR "final height") AND genotype
+  filters: format=json, pageSize=10, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 9
+  screened_count: 9
+  reason_none_qualified: "Nine hits, none reporting adult height stratified by FGFR3 allele. Screened at title/abstract\n\
+    \ level: three are conference abstract collections (11th International Conference on Children's\n Bone Health, ESHG 2024\
+    \ hybrid posters, APPES/JSPE 2016) with no extractable stratified height\n data; two are reviews of skeletal dysplasia\
+    \ generally (PMID 9875031, PMID 12900795); one is the\n achondroplasia clinical practice guideline (PMID 32029970), which\
+    \ gives population adult heights\n but explicitly does not stratify by allele; one is a mouse-model treatment-timing paper\
+    \ (PMID\n 39423254); one is a South American population-genetics perspective (PMID 41096569); one is an\n early-onset\
+    \ osteoporosis review (PMID 35949115). The absence is consistent with the field's\n working assumption that achondroplasia\
+    \ is a single-allele disorder, so the stratification has not\n been attempted rather than attempted and found null."
+  additional_source_checked: "A separate query 'achondroplasia AND (\"growth curves\" OR \"growth references\" OR \"height\n\
+    \ references\") AND (adult height)' (Europe PMC, 872 hits, top 15 screened, 2026-08-05) returned the\n growth-reference\
+    \ literature (Horton 1978, Merker 2018, Neumeyer 2021, Del Pino/Argentina) - all of\n which report pooled adult heights\
+    \ without genotype stratification."
+- gap_id: g_l11path_002
+  database: Europe PMC
+  exact_query_string: (achondroplasia OR hypochondroplasia OR SADDAN) AND ("growth plate" OR physis OR epiphyseal plate) AND
+    (histology OR histopathology OR histomorphometry OR biopsy) AND (human OR patient)
+  filters: format=json, pageSize=8, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 401
+  screened_count: 8
+  reason_none_qualified: "401 hits, top 8 by relevance screened; none reports growth plate histology from a living human\n\
+    \ with a non-lethal FGFR3 disorder. The screened set is entirely rodent-model pharmacology\n (infigratinib in Fgfr3N534K\
+    \ mice, TYRA-300 in Fgfr3Y367C and Fgfr3N534K mice, growth-plate-targeting\n nanoparticles, CREB/resting-zone turnover\
+    \ in achondroplasia mouse models, infigratinib in the\n Aga2/+ OI mouse), one review of protein misfolding in rare skeletal\
+    \ dysplasias, one unrelated\n giant cell tumour histopathology case report, and one research-roadmap document (EndoCompass).\n\
+    \ The only human FGFR3 growth plate histology in the literature is Wilcox 1998 (PMID 9677066), which\n is autopsy material\
+    \ from 91 THANATOPHORIC DYSPLASIA cases - i.e. the lethal alleles only. Since\n that same paper shows growth plate preservation\
+    \ differs by genotype within the lethal series, the\n lethal material cannot be assumed to represent achondroplasia."
+- gap_id: g_l11path_003
+  database: Europe PMC
+  exact_query_string: TITLE:"final height" AND hypochondroplasia
+  filters: format=json, pageSize=8, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 0
+  screened_count: 0
+  reason_none_qualified: "Zero hits. A broader query 'hypochondroplasia AND FGFR3 AND N540K AND (height OR stature)'\n (54\
+    \ hits, top 12 screened, same date) returned no cohort adult height in cm by sex: PMID 36442838\n (20 Korean N540K patients)\
+    \ reports age at presentation, follow-up duration, genu varum,\n macrocephaly and developmental delay frequencies and\
+    \ GH response but not attained adult height;\n PMID 29739731 (6 patients on long-term GH) reports a pre-treatment height\
+    \ SDS of -3.43 and states\n the gain was insufficient for adequate final height, without giving the final height; the\n\
+    \ remaining hits are single-case reports of novel FGFR3 variants, mouse-model therapeutics\n (infigratinib, TYRA-300),\
+    \ a GeneReviews entry and general reviews. Hypochondroplasia therefore has\n no published adult height number, which is\
+    \ why the FGFR3 dose ladder has a hole at its middle rung."
+- gap_id: g_l11path_005
+  database: Europe PMC
+  exact_query_string: (NPR2 OR NPPC OR "acromesomelic dysplasia") AND ("growth plate" OR physis) AND (histology OR histopathology
+    OR biopsy) AND (human OR patient)
+  filters: format=json, pageSize=8, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 67
+  screened_count: 8
+  reason_none_qualified: "67 hits, top 8 screened; every one that contains growth plate histology is non-human. The screened\n\
+    \ set includes a PRKG2 nonsense mutation in Dalmatian dogs, mouse and jerboa tail vertebral\n proportion, an ADAMTSL2\
+    \ mouse model, LB-100 phosphatase inhibition with BMN-111 in mice, combined\n ADAMTS10/ADAMTS17 mouse inactivation, circulatory\
+    \ CNP in an MPS mouse model, and - most directly -\n 'The cn/cn dwarf mouse. Histomorphometric, ultrastructural, and radiographic\
+    \ study in mutants\n corresponding to human acromesomelic dysplasia Maroteaux type (AMDM)', which is explicitly the\n\
+    \ MOUSE surrogate for the human disorder. The remaining hit is a gene-discovery review. No human\n AMDM, NPR2-haploinsufficient,\
+    \ NPR2 gain-of-function or NPPC-rearrangement growth plate has been\n described. A parallel query restricted to '(NPR2\
+    \ OR \"acromesomelic dysplasia\") AND (\"growth\n plate\") AND (human) AND (histology OR biopsy OR histopathology)' (64\
+    \ hits, 12 screened) gave the\n same result."
+- gap_id: g_l11path_007
+  database: Europe PMC
+  exact_query_string: ("Laron syndrome" OR "growth hormone receptor deficiency" OR "GH insensitivity") AND ("growth plate"
+    OR physis) AND (histology OR biopsy OR histopathology)
+  filters: format=json, pageSize=8, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 28
+  screened_count: 8
+  reason_none_qualified: "28 hits, top 8 screened; none reports human growth plate tissue from a GH-insensitive patient. The\n\
+    \ screened set is mouse (GH receptor disruption reducing osteoarthritis and chondrocyte hypertrophy;\n Tmem263 deletion\
+    \ disrupting the GH/IGF-1 axis), rat (neutrophil elastase and the epiphyseal growth\n plate in IBD-associated growth attenuation),\
+    \ or reviews of GH actions on adipose tissue, kidney,\n fibrosis and cancer, plus a paediatric oncology late-effects review\
+    \ and the EndoCompass roadmap.\n This is a striking null given that the Ecuadorian GHR-deficiency cohort has been followed\
+    \ for over\n three decades and comprises more than 100 affected individuals, and that its most recent\n publication (PMID\
+    \ 39607890, n=201 adults) reports DISproportionate growth - a finding that demands\n a tissue-level explanation which\
+    \ no one has sought."
+- gap_id: g_l11path_010
+  database: Europe PMC
+  exact_query_string: (ACAN OR aggrecan) AND ("growth plate" OR physis) AND (histology OR histopathology OR histomorphometry
+    OR biopsy) AND (patient OR "short stature")
+  filters: format=json, pageSize=8, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 458
+  screened_count: 8
+  reason_none_qualified: "458 hits, top 8 screened; none is human growth plate tissue from an ACAN-mutation carrier. The\n\
+    \ screened set comprises human iPSC-derived cartilage organoids, a Trpv4 mutant mouse rescue study,\n an osteochondritis\
+    \ dissecans management case report in an ACAN patient (clinical only, no\n cartilage histology), murine miR-433 growth\
+    \ plate dynamics, a costal cartilage regeneration\n systematic review, an iPSC model of MATN3-mutant MED, in vitro chondrogenesis\
+    \ of mesenchymal\n stromal cells, and a tissue-engineering mechanobiology study. The only mechanistic account of\n growth\
+    \ failure in aggrecan deficiency is Bendre 2025 (PMID 40685060), which is explicitly the\n heterozygous Acan+/- cartilage\
+    \ matrix deficiency MOUSE. A parallel query adding 'human' and\n '\"iliac crest\"' (1,139 hits, 10 screened) returned\
+    \ the same classes of study."
+- gap_id: g_l11path_025
+  database: Europe PMC
+  exact_query_string: (irradiation OR radiotherapy) AND ("growth plate" OR physis) AND (dosimetry OR "radiation dose") AND
+    (sitting height OR "leg length" OR segment) AND human
+  filters: format=json, pageSize=8, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 57
+  screened_count: 8
+  reason_none_qualified: "57 hits, top 8 screened; none links per-physis radiation dosimetry to segment-specific growth\n\
+    \ outcome within the same patient. Four of the eight are conference abstract books (E-Posters,\n EPOS/POSNA, SPR 2023,\
+    \ AOMSI) with no extractable data. The closest qualifying study is 'Response\n to GH Treatment After Radiation Therapy\
+    \ Depends on Location of Irradiation', which stratifies by\n irradiation LOCATION but not by delivered dose to the individual\
+    \ growth plate and reports GH\n response rather than segment-specific growth. The remainder are a GH-safety review in\
+    \ irradiated\n patients and an EOS biplanar imaging methods paper. The within-patient comparison of an irradiated\n against\
+    \ a non-irradiated physis under identical endocrine conditions - the design that would\n separate direct physeal injury\
+    \ from radiation-induced GH deficiency - has not been published,\n despite treatment-planning dosimetry being routinely\
+    \ archived."
+- gap_id: g_l3rest_011
+  database: Europe PMC REST search
+  exact_query_string: TITLE:("growth plate" OR physis OR "epiphyseal plate") AND ("oxygen tension" OR pO2 OR oximetry)
+  filters: format=json, pageSize=25, resultType=core, no date limit, no species limit
+  date_run: '2026-08-05'
+  hit_count: 21
+  screened_count: 21
+  reason_none_qualified: 'Only three records report direct oxygen measurement in epiphyseal cartilage, and all are non-human:
+    Brighton and Heppenstall 1971 (PMID 5580029, rats and rabbits, microelectrode, in vitro and in vivo), Brighton and Heppenstall
+    1971 companion study of the plate distal to an arteriovenous fistula (PMID 5133323, rabbit), and a 1991 study of oxygen
+    tension effects on proteoglycan synthesis in cultured mammalian growth plate chondrocytes (PMID 2045974). The remaining
+    records are tissue engineering reviews, murine mechanism papers, HIF-1alpha reviews, or in vitro culture-oxygen studies.
+    No record reports oxygen tension measured in a human growth plate by any method.'
+- gap_id: g_l3rest_011
+  database: Europe PMC REST search
+  exact_query_string: ("growth plate" OR physis OR "epiphyseal plate") AND human AND ("oxygen tension" OR "pO2" OR "oxygen
+    partial pressure" OR "oxygen microelectrode")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 452
+  screened_count: 25
+  reason_none_qualified: Top-ranked 25 records screened by title and abstract. All are reviews of hypoxia signalling, tissue
+    engineering or bone regeneration, murine models, or clinical case reports; the word "human" matches generic usage rather
+    than a human physeal measurement. No human growth plate oximetry study appears.
+- gap_id: g_l3rest_010
+  database: Europe PMC REST search
+  exact_query_string: ("human growth plate" OR "human physis" OR "human epiphyseal plate") AND (mTOR OR mTORC1 OR "phospho-S6"
+    OR "S6 kinase")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 15
+  screened_count: 15
+  reason_none_qualified: Fifteen records, of which five are conference abstract collections with no retrievable primary data,
+    six are narrative reviews (growth hormone signalling, skeletal stem cells, chondrocyte death in osteoarthritis, perlecan,
+    chondromodulin), and the remainder concern osteoarthritis, chondrosarcoma or Sotos syndrome MAPK signalling. None reports
+    phospho-S6, phospho-4E-BP1 or any other mTORC1 activity readout localised to zones of human growth plate tissue.
+- gap_id: g_l3rest_001
+  database: Europe PMC REST search
+  exact_query_string: ("human growth plate" OR "human physis" OR "human epiphyseal") AND (SMAD1 OR SMAD5 OR "SMAD1/5/8" OR
+    "BMP signaling") AND (immunohistochem* OR zonal OR "zone")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 25
+  screened_count: 25
+  reason_none_qualified: All 25 records screened. They comprise narrative reviews of growth plate regulation and BMP therapy,
+    heparan sulfate and osteochondroma work, zebrafish and murine studies, iPSC and mesenchymal stromal cell chondrogenesis
+    papers, and one conference abstract collection. The only zonally resolved BMP-activity study identified anywhere in this
+    sweep is Garrison 2017 (PMID 28467498), which is murine proximal tibia. No phospho-SMAD1/5/8 zonal series on human growth
+    plate tissue was found.
+- gap_id: g_l3rest_007
+  database: Europe PMC REST search
+  exact_query_string: (SOST OR sclerostin) AND ("growth plate" OR physis) AND (chondrocyte) AND (immunohistochemistry OR "in
+    situ hybridization" OR "expression in")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 639
+  screened_count: 25
+  reason_none_qualified: Top-ranked 25 screened. Records concern bone metabolism reviews, fracture healing, osteoblast and
+    osteocyte biology, ankylosing spondylitis and murine bone phenotypes. The nearest hit, Ruscitto 2023 (PMID 37683603),
+    shows exogenous sclerostin delivered in a hydrogel restores chondrocyte identity in temporomandibular and knee articular
+    cartilage of rabbit, rat and mini-pig - demonstrating chondrocyte responsiveness but not endogenous SOST presence in growth
+    plate cartilage. No record localises SOST or DKK1 protein or transcript by zone within growth plate cartilage in any species.
+- gap_id: g_l3rest_006
+  database: Europe PMC REST search
+  exact_query_string: (CTNNB1 OR "beta-catenin") AND ("human chondrocyte" OR "human growth plate") AND (dose OR "dose-response"
+    OR titration OR EC50 OR "concentration-dependent")
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 32
+  screened_count: 25
+  reason_none_qualified: Top-ranked 25 screened. All are osteoarthritis-focused (exosome therapeutics, macrophage-chondrocyte
+    crosstalk, chondroitin sulfate, laser irradiation), rodent metatarsal pharmacology (lithium rescue of dexamethasone-induced
+    growth failure, PMID 38684886), reviews, or single-compound screens. None titrates beta-catenin transcriptional activity
+    across a graded range in human growth plate chondrocytes with a differentiation readout, so no human dose-response curve
+    exists.
+- gap_id: g_l3rest_013
+  database: Europe PMC REST search
+  exact_query_string: (SIK3 OR "salt-inducible kinase" OR HDAC4) AND ("human growth plate" OR "human physis" OR "human epiphyseal
+    plate" OR "human cartilage") AND (chondrocyte OR hypertroph*)
+  filters: format=json, pageSize=25, resultType=core, no date limit
+  date_run: '2026-08-05'
+  hit_count: 79
+  screened_count: 16
+  reason_none_qualified: Top-ranked 16 screened. All concern osteoarthritis and ageing articular cartilage (HDAC4 and ER stress,
+    HIF-2alpha, histone modification landscapes), avian tibial dyschondroplasia, cartilage organoids, or reviews. None reports
+    HDAC4 subcellular localisation, nuclear:cytoplasmic ratio, or phospho-HDAC4 in human growth plate tissue by zone.

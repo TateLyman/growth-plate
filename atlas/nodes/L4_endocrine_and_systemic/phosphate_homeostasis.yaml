@@ -1,7 +1,63 @@
 id: phosphate_homeostasis
 name: Phosphate homeostasis
+aliases:
+- serum phosphate regulation
+- FGF23-Klotho-NaPi axis
 type: process
 layer: L4
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Serum phosphate is set by intestinal absorption (NaPi-2b, calcitriol-dependent), renal reabsorption
+  (NaPi-2a/2c, suppressed by PTH and FGF23) and bone exchange. Its growth plate role is not merely structural:
+  normal phosphate is required for caspase-9-mediated mitochondrial apoptosis of terminal hypertrophic
+  chondrocytes, and hypophosphataemia blocks that apoptosis, producing the expanded late hypertrophic
+  layer that is the histological definition of rickets. This was established by comparing three mouse
+  models - VDR-null, diet-induced hypophosphataemia with hypercalcaemia and suppressed PTH, and Phex-mutant
+  (Hyp) mice with normal calcium and PTH - which isolate phosphate as the common variable (sabbagh2005).
+  In humans the therapeutic test is X-linked hypophosphataemia: burosumab, an anti-FGF23 antibody that
+  restores phosphate, gave 0.085 Z-score/year additional height velocity in children and 0.121 Z-score/year
+  in adolescents versus burosumab-naive comparators across 641 participants (fukumoto2026).'
+quantitative:
+- parameter: additional growth velocity on burosumab, children
+  value: '0.085'
+  unit: height Z-score per year
+  conditions: XLH, ages 2-17 y, 498 burosumab-treated vs 143 naive, mixed regression, median 3.3 y follow-up
+  species: human
+  source_ref: fukumoto2026
+  uncertainty: P<0.0001; observational real-world design, not randomised
+- parameter: additional growth velocity on burosumab, adolescents
+  value: '0.121'
+  unit: height Z-score per year
+  conditions: XLH adolescent stratum of the same APEX analysis
+  species: human
+  source_ref: fukumoto2026
+  uncertainty: P<0.0001
+localization:
+- 'mouse HZ: phosphate required for caspase-9-dependent apoptosis of terminal hypertrophic chondrocytes
+  (sabbagh2005)'
+- 'human growth plate: local phosphate activity not measured'
+human_evidence: direct
+human_evidence_note: Human XLH cohorts with and without burosumab give quantified height-velocity effects
+  of correcting phosphate, and human nutritional and genetic hypophosphataemias produce radiographic rickets.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: The mechanism is mouse but the human therapeutic experiment produces the predicted
+  growth effect.
+confidence: A
+key_refs:
+- ref_id: sabbagh2005
+  first_author: Sabbagh Y
+  year: 2005
+  type: primary
+  one_line_finding: Hypophosphataemia causes rickets by blocking caspase-9-mediated hypertrophic chondrocyte
+    apoptosis.
+  pmid: '15976027'
+- ref_id: fukumoto2026
+  first_author: Fukumoto S
+  year: 2026
+  type: primary
+  one_line_finding: Burosumab added 0.085 (children) and 0.121 (adolescents) height Z-score/year in 641
+    XLH participants.
+  pmid: '41911946'
 last_verified: '2026-08-05'

@@ -1,7 +1,77 @@
 id: distraction_rate_dose_response
-name: Distraction rate dose-response
+name: Distraction rate and rhythm dose-response
 type: process
+summary: 'The canonical prescription - 1 mm per day in four increments - traces to a single primary source,
+  Ilizarov''s canine tibial series, and the primary source supports it. Three rates were compared at fixed
+  frequency: 0.5 mm/day often caused premature consolidation of the lengthening bone, 2.0 mm/day often
+  caused undesirable changes in the elongating soft tissues (fascia, muscle, vessels, nerve, skin), and
+  1.0 mm/day gave the best result. Frequency was varied independently at 1, 4 and 60 steps per day and
+  the finding was monotonic: the greater the frequency, the better the outcome, so 4 steps/day is a practical
+  compromise rather than an optimum - continuous distraction would be predicted to be better still. The
+  reported endpoints are histomorphological and biochemical grading of the regenerate and of the elongating
+  soft tissues, not a numeric growth rate, so no sensitivity coefficient (mm of regenerate per mm/day
+  of distraction) exists. The upper and lower failure modes are mechanistically distinct - premature consolidation
+  below the optimum is a bone problem, soft-tissue injury above it is a nerve/muscle/vessel problem -
+  which means the therapeutic window is set by two different tissues and should be expected to differ
+  by segment, age and species. Human practice inherited the 1 mm/day figure without an equivalent human
+  dose-finding study.'
+quantitative:
+- parameter: distraction rate causing premature consolidation
+  value: '0.5'
+  unit: mm/day
+  conditions: canine tibia, open osteotomy and closed osteoclasis, Ilizarov circular fixator
+  species: multiple
+  source_ref: ilizarov1989
+  uncertainty: '"often" - frequency not quantified in the report'
+- parameter: optimal distraction rate
+  value: '1.0'
+  unit: mm/day
+  conditions: same
+  species: multiple
+  source_ref: ilizarov1989
+  uncertainty: best of three rates tested; no confidence interval
+- parameter: distraction rate causing soft-tissue injury
+  value: '2.0'
+  unit: mm/day
+  conditions: same; changes in fascia, skeletal and smooth muscle, vessels, nerves, skin
+  species: multiple
+  source_ref: ilizarov1989
+  uncertainty: '"often" - frequency not quantified'
+- parameter: distraction frequencies tested at fixed 1.0 mm/day
+  value: 1, 4 and 60
+  unit: increments/day
+  conditions: canine tibia
+  species: multiple
+  source_ref: ilizarov1989
+  uncertainty: outcome improved monotonically with frequency; the clinical standard of 4/day is a compromise,
+    not the measured optimum
+human_evidence: indirect
+human_evidence_note: Human limb lengthening uses ~1 mm/day in 3-4 increments by inheritance from the canine
+  data; no human study has randomised rate or rhythm against a regenerate-quality endpoint.
+species_basis:
+- multiple
+translation_risk: moderate
+translation_risk_reason: A single canine series with qualitative endpoints underwrites a universal human
+  prescription; segment, age and pathology are known in clinical practice to shift the tolerable rate,
+  but that shift has not been quantified.
+confidence: C
+key_refs:
+- ref_id: ilizarov1989
+  pmid: '2912628'
+  first_author: Ilizarov GA
+  year: 1989
+  type: primary
+  one_line_finding: 0.5 mm/day premature consolidation, 2.0 mm/day soft-tissue damage, 1.0 mm/day optimal;
+    higher frequency always better
+- ref_id: ilizarov1989a
+  pmid: '2910611'
+  first_author: Ilizarov GA
+  year: 1989
+  type: primary
+  one_line_finding: Establishes the fixation-stability and tissue-preservation conditions under which
+    the rate/rhythm optimum holds
+open_questions:
+- g_l6mech_011
 layer: L6
-stub: true
-human_evidence: absent
+stub: false
 last_verified: '2026-08-05'

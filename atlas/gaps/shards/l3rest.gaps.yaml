@@ -1,0 +1,486 @@
+gaps:
+  - gap_id: g_l3rest_001
+    question: >-
+      Has BMP pathway ACTIVITY (nuclear phospho-SMAD1/5/8), as opposed to BMP ligand transcript
+      abundance, ever been measured zone-by-zone in human growth plate tissue?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      The BMP arm is drawn in every growth plate diagram, but in mouse the ligand gradient and the
+      signalling gradient run in OPPOSITE directions across the plate - Bmp2/Bmp6 mRNA peaks in the
+      hypertrophic zone while pSmad1/5/8 peaks in the proliferative and prehypertrophic zones, apparently
+      because SMAD7 is concentrated in the hypertrophic zone. If the human plate inverts differently, or
+      not at all, then every inference about where a BMP-directed therapeutic would act is wrong.
+      Transcript-level human atlases cannot resolve this because the discrepancy is post-transcriptional.
+    what_is_known: >-
+      Garrison 2017 performed laser-capture microdissection of six zones of postnatal MOUSE proximal
+      tibia with direct mRNA counting for 30 BMP-related genes, plus in situ hybridisation and
+      phospho-SMAD1/5/8 immunohistochemistry, establishing the ligand/activity inversion. Retting 2009
+      established that combined Smad1/Smad5 loss in mouse chondrocytes causes severe chondrodysplasia.
+      Human evidence for the BMP arm is confined to germline variant phenotypes (NOG, GDF5, LTBP3).
+    what_is_missing: >-
+      No phospho-SMAD1/5/8 immunostaining series, and no zonally resolved BMP/SMAD/antagonist expression
+      panel, on human growth plate tissue at any age. Searching human-restricted terms returns reviews,
+      heterotopic ossification and osteochondroma work, and mouse studies; nothing reports human physeal
+      zonal BMP activity.
+    nearest_evidence: [garrison2017, retting2009, huckert2015]
+    discriminating_experiment: >-
+      Formalin-fixed human growth plate from surgical epiphysiodesis or limb-lengthening specimens
+      (Tanner-staged donors, distal femur and proximal tibia), stained for phospho-SMAD1/5/8, SMAD7 and
+      total SMAD1, quantified by nuclear intensity per zone (RZ/PZ/PHZ/HZ) with the same antibody clones
+      used by Garrison 2017 on mouse controls run in parallel. Under the mouse-conserved hypothesis,
+      nuclear pSMAD1/5/8 is highest in PZ/PHZ and falls in HZ with reciprocal SMAD7. Under a
+      human-divergent hypothesis, activity tracks ligand and peaks in HZ.
+    tractability: 4
+    search_log_ref: g_l3rest_001
+
+  - gap_id: g_l3rest_002
+    question: >-
+      What is the per-allele effect size, in centimetres of adult height with a confidence interval, of
+      the GDF5-UQCC height-associated variants, and does that effect operate through the growth plate?
+    type: quantitative_gap
+    layer: L3
+    why_it_matters: >-
+      GDF5 is one of the very few L3 nodes with both a human loss-of-function chondrodysplasia and a
+      common-variant height association, making it the natural calibration point for converting molecular
+      pathway dose into centimetres. Without a verified effect size the node cannot be used quantitatively.
+    what_is_known: >-
+      Sanna 2008 reported association of common variants in the GDF5-UQCC region with adult stature in
+      European-ancestry cohorts. Thomas 1996 showed biallelic CDMP1/GDF5 mutations cause human
+      acromesomelic chondrodysplasia. The locus is shared with osteoarthritis risk.
+    what_is_missing: >-
+      The effect size recorded in this atlas (about 0.4 cm per allele) is flagged value_unverified
+      because it was taken from the abstract and not confirmed against the source tables, and the
+      confidence interval, the exact index SNP and the ancestry-specific estimates were not read. It is
+      also unknown whether the height effect is chondrocyte-autonomous or acts via UQCC.
+    nearest_evidence: [sanna2008, thomas1996]
+    discriminating_experiment: >-
+      Re-extract the index SNP, per-allele beta and standard error from the source tables and from the
+      current largest height GWAS meta-analysis, then test tissue attribution by asking whether the
+      credible-set variants overlap growth-plate chondrocyte open chromatin versus other tissues, and by
+      allele-specific expression of GDF5 versus UQCC in human chondrocyte material. If the effect is
+      chondrocyte-mediated the causal variant should lie in a chondrocyte enhancer and alter GDF5, not
+      UQCC, expression.
+    tractability: 4
+
+  - gap_id: g_l3rest_003
+    question: >-
+      Does chordin have any function in the postnatal growth plate, or is its skeletal role confined to
+      craniofacial and axial morphogenesis?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      Chordin is routinely listed alongside noggin as a BMP antagonist of cartilage, which implies a
+      redundancy structure that would change how a BMP-targeting therapy behaves. If chordin is in fact
+      absent from the physis, then noggin is a single point of control and BMP tone in the growth plate is
+      more fragile than the textbook suggests.
+    what_is_known: >-
+      Stottmann 2001 showed Chrd and Nog have essential but partly redundant roles in mouse mandibular and
+      skeletal morphogenesis, with the Chrd-null phenotype concentrated craniofacially. Brunet 1998
+      established the noggin-null cartilage overgrowth and joint failure phenotype. No CHRD human skeletal
+      dysplasia is established.
+    what_is_missing: >-
+      No zonal CHRD expression data in mouse or human growth plate, and no cartilage-restricted Chrd
+      conditional knockout with a long-bone growth read-out.
+    nearest_evidence: [stottmann2001, brunet1998]
+    discriminating_experiment: >-
+      Col2a1-CreERT2;Chrd-flox mice induced postnatally, with and without one Nog allele removed, measured
+      for tibial length, zone heights and pSmad1/5/8 intensity at 4 and 8 weeks. Under the redundancy
+      hypothesis the Chrd single mutant is normal and the Chrd;Nog compound mutant has expanded cartilage;
+      under the physeally-irrelevant hypothesis neither differs from control and only the noggin allele
+      matters.
+    tractability: 3
+
+  - gap_id: g_l3rest_004
+    question: >-
+      How much latent TGF-beta is stored per unit volume of human growth plate matrix, and what fraction
+      is liberated per physiological loading cycle?
+    type: quantitative_gap
+    layer: L3
+    why_it_matters: >-
+      The latent matrix store is the only mechanism in this layer by which a mechanical event can be
+      converted directly into a growth factor dose without transcription. Human genetics brackets the
+      store in both directions (TGFB1 latency-domain gain of function causes Camurati-Engelmann disease;
+      LTBP3 loss of function causes brachyolmia with short stature), so the store is load-bearing - but
+      with no concentration and no release fraction, it cannot be placed in any quantitative model linking
+      L6 mechanobiology to L3 signalling.
+    what_is_known: >-
+      Kinoshita 2000 and Huckert 2015 provide the two human bracketing phenotypes. The biochemistry of the
+      large latent complex (LAP plus LTBP anchored to fibrillin microfibrils) is established in
+      non-skeletal tissue.
+    what_is_missing: >-
+      No measurement, in any species, of latent TGF-beta concentration in growth plate matrix by zone, and
+      no measurement of active TGF-beta released per loading cycle from physeal cartilage.
+    nearest_evidence: [kinoshita2000, huckert2015, serra1997]
+    discriminating_experiment: >-
+      Explanted human or porcine growth plate cartilage cores subjected to defined cyclic compression in a
+      bioreactor, with active and total TGF-beta in the bathing medium quantified by a mink lung
+      epithelial reporter assay before and after transient acidification, normalised to wet mass and to
+      zone of origin. Readout: pg active TGF-beta released per mg tissue per loading cycle, versus total
+      extractable latent pool. A store that is mechanically mobilised gives a load-dependent active
+      fraction; an inert store gives constant background release.
+    tractability: 3
+
+  - gap_id: g_l3rest_005
+    question: >-
+      What sets the level of beta-catenin signalling in each growth plate zone - is the zonal profile
+      produced by WNT ligand availability, by antagonist gradients, or by SOX9-driven beta-catenin
+      degradation?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      The canonical WNT arm is dose-dependent with opposite phenotypes at the two extremes, so knowing the
+      resting set point in each zone is a precondition for any therapeutic that raises or lowers it.
+      Whether the set point is imposed from outside the cell (ligands and antagonists) or from inside
+      (SOX9-driven degradation) determines whether an extracellular biologic can move it at all.
+    what_is_known: >-
+      Akiyama 2004 and Topol 2009 show SOX9 binds beta-catenin, blocks TCF/LEF transcription and promotes
+      beta-catenin degradation, including by nuclear phosphorylation. Guo 2009 shows Wnt/beta-catenin
+      initiates hypertrophy by inhibiting PTHrP signalling. Ruscitto 2023 shows in temporomandibular
+      cartilage of several species that an LGR5-expressing secretory population forms a WNT-inhibitory
+      niche that keeps chondroprogenitors WNT-inactive.
+    what_is_missing: >-
+      No zonal quantification of nuclear beta-catenin, of WNT ligand and antagonist protein, or of TCF
+      reporter activity in the same growth plate, in any species. The relative contribution of the three
+      candidate mechanisms has never been partitioned.
+    nearest_evidence: [akiyama2004, topol2009, guo2009, ruscitto2023]
+    discriminating_experiment: >-
+      Axin2-CreERT2;R26-tdTomato or TCF/Lef:H2B-GFP reporter mice, zonally imaged, crossed onto (i) a
+      chondrocyte Sox9 hypomorph and (ii) a chondrocyte-restricted Wntless (Wls) deletion that blocks
+      local WNT secretion. If the zonal profile is ligand-imposed, Wls deletion flattens it; if it is
+      SOX9-imposed, the Sox9 hypomorph raises reporter activity in the resting and proliferative zones
+      while Wls deletion does not.
+    tractability: 4
+
+  - gap_id: g_l3rest_006
+    question: >-
+      What is the quantitative dose-response relationship between beta-catenin transcriptional activity
+      and chondrocyte fate (matrix gene expression, hypertrophy onset, osteoblastic conversion) in HUMAN
+      growth plate chondrocytes?
+    type: quantitative_gap
+    layer: L3
+    why_it_matters: >-
+      Every statement in this layer about WNT being "dose-dependent" in cartilage rests on mouse alleles
+      that are effectively two-point: null and stabilised. Between those two points sits the entire
+      physiological range, and that is where a drug would operate. Without a human dose-response curve
+      there is no way to predict whether a given degree of WNT modulation would lengthen or shorten a
+      human bone, and the mouse data predict opposite outcomes at the two ends.
+    what_is_known: >-
+      In mouse: chondrocyte beta-catenin loss gives dwarfism with reduced proliferation and delayed
+      hypertrophy (Akiyama 2004, Chen 2008); stabilisation gives severe chondrodysplasia or accelerated
+      maturation depending on stage (Akiyama 2004, Dao 2012); transient adult activation causes premature
+      growth plate closure (Yuasa 2009). At the progenitor stage beta-catenin is required for osteoblast
+      rather than chondrocyte fate (Hill 2005, Day 2005).
+    what_is_missing: >-
+      No graded, quantified perturbation in human chondrocytes. A search for human chondrocyte
+      beta-catenin dose-response returns 32 records, all either articular/osteoarthritis pharmacology,
+      rodent metatarsal work, or reviews - none titrates beta-catenin activity in human growth plate
+      chondrocytes against a differentiation readout.
+    nearest_evidence: [akiyama2004, chen2008, dao2012, yuasa2009]
+    discriminating_experiment: >-
+      Human iPSC-derived or primary paediatric growth plate chondrocytes carrying a doxycycline-titratable
+      degron-tagged stabilised CTNNB1 allele plus a TCF-luciferase reporter, cultured in 3D pellets across
+      at least six activity levels spanning the reporter range seen in untreated cells, with readouts of
+      COL2A1/ACAN, COL10A1/IHH, and RUNX2/SP7 by qPCR and of pellet size. Under a monotonic model, matrix
+      genes fall and hypertrophic genes rise linearly with activity. Under a biphasic model - which the
+      mouse data predict - hypertrophic markers peak at intermediate activity and collapse at high
+      activity as cells convert to an osteoblastic programme.
+    tractability: 4
+    search_log_ref: g_l3rest_006
+
+  - gap_id: g_l3rest_007
+    question: >-
+      Are the WNT antagonists sclerostin (SOST) and DKK1 present in growth plate cartilage itself, or do
+      they act on the physis only indirectly from bone?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      Sclerosteosis (SOST null) includes increased stature, and romosozumab is a licensed sclerostin
+      antibody. If sclerostin never reaches the growth plate chondrocyte, the tall stature of sclerosteosis
+      is a bone-envelope effect and sclerostin blockade in a growing child would not be expected to alter
+      longitudinal growth directly - a materially different safety and efficacy prediction from the
+      assumption that SOST is a physeal brake.
+    what_is_known: >-
+      Poole 2005 localises sclerostin protein to embedded osteocytes in human bone and shows it is absent
+      from early osteoblasts. Balemans 2001 identifies SOST deficiency as the cause of sclerosteosis.
+      Li 2006 gives a bone dose-response for DKK1 in mouse. Ruscitto 2023 shows exogenous sclerostin
+      delivered in a hydrogel restores chondrocyte identity in articular cartilage of several species,
+      demonstrating chondrocytes can respond to sclerostin even if they do not normally see it.
+    what_is_missing: >-
+      No study localising SOST or DKK1 protein by zone within growth plate cartilage in human or mouse,
+      and no chondrocyte-restricted Sost or Dkk1 deletion with a longitudinal growth readout.
+    nearest_evidence: [poole2005, balemans2001, li2006, ruscitto2023]
+    discriminating_experiment: >-
+      Dual immunofluorescence for sclerostin and DKK1 with a chondrocyte marker on human growth plate
+      sections spanning Tanner stages, with sclerostin-antibody-treated and untreated non-human primate
+      or rat physes as positive/negative controls, plus in situ hybridisation for SOST and DKK1 mRNA.
+      Under a direct-action hypothesis, antagonist protein is detectable within the cartilage and forms a
+      gradient from the chondro-osseous junction; under an indirect hypothesis, signal stops at the bony
+      margins.
+    tractability: 4
+    search_log_ref: g_l3rest_007
+
+  - gap_id: g_l3rest_008
+    question: >-
+      Is core planar cell polarity protein asymmetry (VANGL2, PRICKLE, FZD) detectable in human growth
+      plate chondrocytes, and does its orientation predict column direction?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      Columnar organisation is the architectural feature by which the growth plate converts proliferation
+      into unidirectional elongation, and in mouse it is a PCP process rather than a proliferation
+      process. Human growth plates are described morphologically as columnar, but the mechanism has never
+      been shown to be the same. If human columns are built differently, disorganisation-based dysplasias
+      would need a different explanation.
+    what_is_known: >-
+      Li and Dudley 2009 show non-canonical Frizzled signalling controls post-mitotic chondrocyte rotation
+      in mouse. Gao 2011 shows WNT5A gradients set graded ROR2-dependent VANGL2 phosphorylation. Yang 2003
+      shows Wnt5a and Wnt5b differ in their effect on the hypertrophy transition. Human WNT5A and ROR2
+      mutations cause Robinow syndrome with mesomelic shortening.
+    what_is_missing: >-
+      No immunolocalisation of any core PCP protein in human growth plate, and no measurement of
+      asymmetry relative to the long axis.
+    nearest_evidence: [li2009, gao2011, yang2003]
+    discriminating_experiment: >-
+      High-resolution confocal immunofluorescence for VANGL2 and PRICKLE1 with membrane and Golgi
+      counterstains on human proximal tibial growth plate, scoring the angular distribution of protein
+      enrichment relative to the proximodistal axis, in columnar (PZ) versus resting (RZ) cells. Under a
+      conserved-PCP hypothesis, PZ cells show significant axial polarisation absent from RZ cells; under a
+      divergent hypothesis, no orientation bias is detectable in either.
+    tractability: 3
+
+  - gap_id: g_l3rest_009
+    question: >-
+      Where is Notch signalling active across the zones of a human growth plate, and does it restrain
+      hypertrophy in human tissue as it does in mouse?
+    type: species_gap
+    layer: L3
+    why_it_matters: >-
+      Notch is a druggable pathway with clinically used gamma-secretase inhibitors, and the mouse data say
+      it acts at two separable steps with different downstream logic. Applying that model to a growing
+      child requires knowing whether the human plate uses it at all, and the only human chondrocyte data
+      available come from diseased adult articular cartilage.
+    what_is_known: >-
+      Mead 2009, Kohn 2015 and Rutkowski 2016 define the mouse genetics: NICD gain of function blocks
+      hypertrophy, Rbpj loss increases proliferation and hypertrophic cell number, the onset step is
+      SOX9-dependent and the terminal step is not, and HES1/HES5 rather than HEY factors carry the output.
+      Hosaka 2013 shows NICD1 and NICD2 nuclear translocation in human osteoarthritic articular
+      chondrocytes. Simpson 2011 shows stabilising NOTCH2 mutations cause human Hajdu-Cheney syndrome.
+    what_is_missing: >-
+      No zonal NICD, RBPJ-target or HES1 measurement in human growth plate; no human physeal tissue has
+      been exposed to Notch inhibition ex vivo.
+    nearest_evidence: [mead2009, kohn2015, hosaka2013, rutkowski2016]
+    discriminating_experiment: >-
+      Cleaved-NOTCH1 (Val1744) and HES1 immunostaining across zones of human growth plate specimens, paired
+      with an ex vivo experiment in which human growth plate explants or human iPSC-derived cartilage
+      pellets are treated with DAPT and scored for COL10A1 induction. Under a conserved model, Notch
+      activity is highest around the prehypertrophic transition and DAPT accelerates COL10A1 induction;
+      under a divergent model, activity is uniform and DAPT has no effect on hypertrophic markers.
+    tractability: 3
+
+  - gap_id: g_l3rest_010
+    question: >-
+      What is the zonal profile of mTORC1 activity in HUMAN growth plate tissue?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      Mouse work shows mTORC1 is actively SUPPRESSED in resting and proliferating chondrocytes and that
+      de-repressing it (Tsc1 deletion) expands the resting zone and gives those cells prehypertrophic
+      character, reversibly with rapamycin. If the same is true in human, then children on mTOR inhibitors
+      (for tuberous sclerosis, transplantation or vascular anomalies) are being given a drug that acts
+      directly on the compartment that sets growth duration - and the direction of the effect is not
+      obvious, because the drug reinforces a state the resting zone already maintains.
+    what_is_known: >-
+      Hsieh 2021 shows mTORC1 activity is low in mouse resting and proliferating zone chondrocytes and
+      that chondrocyte Tsc1 deletion activates it, expands the resting zone by increasing cell number and
+      size without changing proliferation, and raises PTH1R and IHH; rapamycin rescues. Chen and Long 2014
+      shows mTORC1 loss reduces chondrocyte size and matrix through lower protein synthesis. Srinivas 2009
+      places autophagy induction in the maturing zone under mTOR and AMPK control.
+    what_is_missing: >-
+      No phospho-S6 or phospho-4E-BP1 immunostaining series on human growth plate. A search restricted to
+      human growth plate terms plus mTOR terms returns 15 records, mostly reviews, conference abstract
+      collections and osteoarthritis work, with no human physeal mTORC1 activity map.
+    nearest_evidence: [hsieh2021, chen2014, srinivas2009]
+    discriminating_experiment: >-
+      Phospho-S6 (Ser235/236) and phospho-4E-BP1 (Thr37/46) immunohistochemistry on human growth plate
+      specimens across Tanner stages, quantified per zone, with mouse tissue processed in parallel as a
+      species control and rapamycin-treated mouse tissue as an assay-specificity control. Under the
+      conserved model, human RZ and PZ show low phospho-S6 with a sharp rise at the prehypertrophic
+      transition; under a divergent model, human RZ shows high baseline mTORC1 activity, which would
+      predict a different response to mTOR inhibitors in children.
+    tractability: 4
+    search_log_ref: g_l3rest_010
+
+  - gap_id: g_l3rest_011
+    question: >-
+      Has oxygen tension ever been measured directly across the zones of a HUMAN growth plate?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      The hypoxic gradient is treated throughout the field as an established property of the growth plate
+      and is used to justify HIF1A-centred models, hypoxic culture protocols for cartilage tissue
+      engineering, and metabolic interpretations of chondrocyte biology. If the gradient has never been
+      measured in human tissue, then a load-bearing premise of this layer rests on a rodent measurement
+      from 1971 plus genetic inference. It also matters dimensionally: a human adolescent growth plate is
+      far thicker than a mouse plate, so the diffusion distance - the variable that generates the gradient
+      - is not comparable, and the human gradient could be steeper, not merely similar.
+    what_is_known: >-
+      Brighton and Heppenstall 1971 measured oxygen tension with microelectrodes across zones of the
+      epiphyseal plate, metaphysis and diaphysis in RATS AND RABBITS, in vitro and in vivo; a companion
+      1971 paper measured plate oxygen tension distal to an arteriovenous fistula. Schipani 2001
+      established by chondrocyte Hif1a deletion that the mouse plate is hypoxic in its INTERIOR rather
+      than its periphery, and Schipani 2015 restates the gradient as accepted. Zhang 2023 shows
+      chondrocytes buffer their own oxygenation with KLF1-dependent, HIF-independent haemoglobin
+      condensates, so tissue oxygen is partly cell-autonomously controlled and cannot be predicted from
+      geometry alone.
+    what_is_missing: >-
+      No human measurement of any kind. A title-restricted search for growth plate/physis/epiphyseal plate
+      combined with oxygen tension, pO2 or oximetry returns 21 records; the only direct-measurement papers
+      are the two 1971 Brighton studies (rat, rabbit) and a 1991 study of oxygen tension effects on
+      proteoglycan synthesis in cultured cells. No record reports human physeal oximetry, and no modern
+      method (fibre-optic probe, EPR oximetry, phosphorescence quenching, blood-oxygen-level-dependent MRI)
+      has been applied to a human growth plate.
+    nearest_evidence: [brighton1971, schipani2001, schipani2015, zhang2023]
+    discriminating_experiment: >-
+      Intraoperative fibre-optic oxygen microprobe or EPR oximetry profiling during elective
+      epiphysiodesis or physeal bar resection in adolescents, advancing the probe across the plate under
+      fluoroscopic or ultrasound guidance and recording pO2 against depth, with the resected specimen
+      histologically zoned afterwards to assign each reading to RZ/PZ/PHZ/HZ. Under the standard model
+      pO2 falls monotonically from both vascularised margins to a minimum in the mid-plate; under a
+      buffered model (implied by the haemoglobin-condensate finding) the interior minimum is shallower
+      than diffusion modelling predicts. Non-invasive alternative: quantitative BOLD or oxygen-enhanced
+      MRI of the physis in healthy adolescents, calibrated against the intraoperative probe data.
+    tractability: 2
+    search_log_ref: g_l3rest_011
+
+  - gap_id: g_l3rest_012
+    question: >-
+      Is SOX9 required for chondrocyte hypertrophy, or must SOX9 be downregulated for hypertrophy to
+      occur?
+    type: contradiction
+    layer: L3
+    why_it_matters: >-
+      SOX9 is the most convergent node in this layer and the target of every upstream arm. The two
+      published positions imply opposite predictions for any intervention that raises SOX9: one predicts
+      more hypertrophy and faster bone formation, the other predicts a blocked, achondroplasia-like plate.
+      Achondroplasia therapeutics reasoning depends on which is correct.
+    what_is_known: >-
+      Dy 2012 shows, using doxycycline-inducible Cre and Sox9 conditional nulls in mouse, that SOX9 is
+      REQUIRED to maintain columnar proliferation and to generate hypertrophy, that SOX9 protein outlives
+      its mRNA into upper hypertrophic cells, and that it acts there with MEF2C to directly activate
+      Col10a1. Zhou 2015 shows that activated mutant FGFR3 impairs endochondral growth by PREVENTING SOX9
+      downregulation in differentiating chondrocytes, i.e. persistent SOX9 is the lesion. Kohn 2015 adds
+      that prolonged Notch signalling suppresses Sox9 and that this suppression is required for the onset
+      of maturation.
+    what_is_missing: >-
+      No experiment titrates SOX9 level within a single differentiating chondrocyte population and
+      measures hypertrophy as a continuous function of it. The two positions may be reconciled by a
+      biphasic requirement (SOX9 needed to license Col10a1 but needing to fall for terminal maturation),
+      but that reconciliation has not been tested.
+    nearest_evidence: [dy2012, zhou2015, kohn2015, akiyama2002]
+    discriminating_experiment: >-
+      A degron-tagged endogenous SOX9 allele in mouse or human chondrocytes allowing graded, reversible
+      protein reduction, applied at defined points along the differentiation trajectory, with live
+      readout of COL10A1 reporter and cell volume. Under the "required" hypothesis, reducing SOX9 at the
+      prehypertrophic step lowers COL10A1 monotonically. Under the "must fall" hypothesis, modest
+      reduction at that step raises COL10A1 and accelerates volume increase. A biphasic curve with a
+      maximum at intermediate SOX9 supports the reconciliation and gives the field a set point.
+    tractability: 4
+
+  - gap_id: g_l3rest_013
+    question: >-
+      What is the nuclear-to-cytoplasmic ratio of HDAC4 protein in each zone of the human growth plate,
+      and how does it change across puberty?
+    type: quantitative_gap
+    layer: L3
+    why_it_matters: >-
+      HDAC4 activity is encoded by its address in the cell, not its abundance - phosphorylation by SIK3 at
+      14-3-3 sites holds it in the cytoplasm and PTHrP-driven dephosphorylation lets it into the nucleus
+      to repress MEF2C and RUNX2. That ratio is therefore the single most information-dense readout of the
+      PTHrP arm in a fixed tissue section. Human HDAC4 haploinsufficiency causes brachydactyly type E in
+      48% of 2q37 deletion cases, so the human dose relationship exists; what is missing is the
+      quantitative state variable.
+    what_is_known: >-
+      Sasagawa 2012 shows HDAC4 is nuclear in Sik3-null chondrocytes and cytoplasmic in wild-type
+      hypertrophic chondrocytes (mouse). Kozhemyakina 2009 shows PTHrP/forskolin drives HDAC4 phospho-S246
+      dephosphorylation by PP2A and nuclear translocation. Nishimori 2019 and 2021 place SIK3 between PKA
+      and HDAC4 in vivo. Le 2019 gives the human haploinsufficiency phenotype frequencies.
+    what_is_missing: >-
+      No quantitative nuclear:cytoplasmic HDAC4 measurement by zone in any species, and none at all in
+      human tissue; no measurement of phospho-HDAC4 at the 14-3-3 sites in human growth plate.
+    nearest_evidence: [sasagawa2012, kozhemyakina2009, nishimori2021, le2019]
+    discriminating_experiment: >-
+      Quantitative immunofluorescence for total HDAC4 and phospho-HDAC4 (Ser246/Ser467/Ser632) with
+      nuclear segmentation on human growth plate sections from donors spanning Tanner 1 to 5, reporting
+      mean nuclear:cytoplasmic intensity ratio per zone with per-cell distributions, validated against
+      mouse Sik3-null (nuclear) and PTHrP-treated (nuclear) positive controls. Under the mouse-conserved
+      model the ratio falls sharply between the proliferative and hypertrophic zones. A ratio that does
+      not fall would mean the human hypertrophy switch is not HDAC4-localisation-gated.
+    tractability: 3
+    search_log_ref: g_l3rest_013
+
+  - gap_id: g_l3rest_014
+    question: >-
+      What fraction of human growth plate chondrocytes carry a primary cilium in each zone, and what is
+      the ciliary length distribution?
+    type: known_unknown
+    layer: L3
+    why_it_matters: >-
+      The cilium is where Hedgehog transduction happens, and mouse work shows it does not merely amplify
+      Hedgehog but confines it spatially - Kif3a-deficient plates lose internal hedgehog signalling while
+      the perichondrium gains it. Human ciliopathies (Jeune, Ellis-van Creveld) are among the strongest
+      human anchors in this layer, yet the organelle itself has not been quantified in human physeal
+      tissue, so there is no baseline against which a ciliopathy specimen could be scored.
+    what_is_known: >-
+      Haycraft 2007 and Koyama 2007 establish the requirement for IFT88 and KIF3A in mouse. Wang 2013
+      shows IFT80 is predominantly expressed in growth plate chondrocytes and that its loss lowers
+      Hedgehog and raises WNT. Ruiz-Perez 2007 localises EVC to the base of the chondrocyte cilium and
+      shows Evc-null cilia are present but signalling-defective. Beales 2007 and Ruiz-Perez 2000 supply
+      the human ciliopathy genetics.
+    what_is_missing: >-
+      No ciliary prevalence or length morphometry in human growth plate by zone, and no comparison between
+      a ciliopathy patient specimen and an age-matched control.
+    nearest_evidence: [haycraft2007, koyama2007, wang2013, ruizperez2007]
+    discriminating_experiment: >-
+      ARL13B and acetylated-alpha-tubulin immunofluorescence with gamma-tubulin basal body counterstain on
+      thick sections of human growth plate, imaged by confocal or expansion microscopy, reporting percent
+      ciliated cells and ciliary length per zone with n per donor, compared against archived Jeune or
+      Ellis-van Creveld specimens. Under the mouse-conserved model, prevalence is high in all zones and
+      length peaks in the prehypertrophic zone where Hedgehog transduction is most active; a ciliopathy
+      specimen with normal prevalence but abnormal EVC-zone composition would specifically support the
+      transduction-defect rather than ciliogenesis-defect model.
+    tractability: 3
+
+  - gap_id: g_l3rest_015
+    question: >-
+      Do the four proposed convergence nodes (SOX9, RUNX2, beta-catenin, HDAC4 localisation) actually
+      integrate their inputs within a single chondrocyte, or is the convergence an artefact of pooling
+      pairwise experiments performed in different genetic backgrounds, ages and skeletal sites?
+    type: scale_gap
+    layer: L3
+    why_it_matters: >-
+      The convergence claim is what makes this layer a network rather than a list, and it is the basis for
+      predicting that single-pathway interventions will have off-target effects on other arms. Every edge
+      in that claim is individually supported, but no experiment has measured more than two of these nodes
+      in the same cells at the same time. If integration is in fact partitioned by zone or by
+      subpopulation, then the network diagram overstates crosstalk and single-pathway drugs are cleaner
+      than predicted.
+    what_is_known: >-
+      Pairwise links are established: SOX9-beta-catenin mutual antagonism (Akiyama 2004, Topol 2009),
+      Notch-SOX9 epistasis (Kohn 2015), SOX9 restraint of Runx2 and beta-catenin (Dy 2012),
+      PTHrP-SIK3-HDAC4-MEF2C/RUNX2 (Nishimori 2021, Sasagawa 2012), RUNX2 transcription of Ihh
+      (Yoshida 2004), cilium-dependent Hedgehog/WNT reciprocity (Wang 2013), and SOX9-driven glutamine
+      metabolism (Stegen 2020).
+    what_is_missing: >-
+      No single-cell, multi-modal measurement of these nodes together in growth plate tissue, and no
+      perturbation experiment that reads out all four simultaneously.
+    nearest_evidence: [akiyama2004, kohn2015, dy2012, nishimori2021, wang2013]
+    discriminating_experiment: >-
+      Multiplexed single-cell spatial proteomics (for example CODEX or imaging mass cytometry) on intact
+      growth plate sections with a panel covering SOX9, RUNX2, nuclear beta-catenin, HDAC4 (nuclear and
+      cytoplasmic), MEF2C, phospho-S6 and GLI1, applied to control tissue and to tissue from mice carrying
+      a single-pathway perturbation (for example chondrocyte Rbpj deletion). Under a genuine convergence
+      model, the perturbation shifts three or more node states in the same cells and the node states are
+      correlated cell-by-cell within a zone. Under a partitioned model, node states are uncorrelated within
+      a zone and the perturbation moves only its own downstream node.
+    tractability: 3

@@ -1,0 +1,80 @@
+id: igf_ternary_complex
+name: IGF ternary complex and bioavailability layer
+aliases:
+- 150 kDa ternary complex
+- IGF bioavailability control
+- free IGF-1 regulation
+type: process
+layer: L4
+stub: false
+summary: 'Between ''how much IGF-1 is in the blood'' and ''how much IGF-1 reaches a chondrocyte receptor''
+  sits a control layer that most reviews skip. Over 99% of circulating IGF-1 is bound: mostly in a 150
+  kDa ternary complex of IGF-1, IGFBP-3 or IGFBP-5, and ALS, which cannot cross the capillary endothelium;
+  the remainder is in binary IGFBP complexes. Release requires local proteolysis - PAPP-A2 cleaves IGFBP-3
+  and IGFBP-5, PAPP-A cleaves IGFBP-4 - and those proteases are themselves shut off by stanniocalcin-2,
+  which covalently locks PAPP-A and excludes its substrate rather than blocking the catalytic site (kobber2022).
+  Human genetics shows this layer is load-bearing and can invert the usual reading of an IGF-1 result:
+  PAPPA2 loss of function raises total IGF-1 several fold while cutting the bioactive fraction to 0.09-0.32%
+  of total against a healthy median of 1.23%, and produces heights of -2.16 to -3.81 SDS (dauber2016).
+  IGFALS loss does the opposite, collapsing total IGF-1 with only mild short stature (domen2004). Total
+  IGF-1 is therefore a poor proxy for IGF action, and the direction of the error depends on which node
+  of this layer is disturbed.'
+quantitative:
+- parameter: bioactive IGF as a fraction of total IGF-1, healthy reference
+  value: '1.23'
+  unit: '%'
+  conditions: 95 healthy individuals, IGF-1 kinase receptor activation bioassay
+  species: human
+  source_ref: dauber2016
+  uncertainty: median; range 0.46-2.59%
+- parameter: bioactive IGF as a fraction of total IGF-1, PAPP-A2 deficiency
+  value: 0.09-0.32
+  unit: '%'
+  conditions: homozygous PAPPA2 loss of function, n=5
+  species: human
+  source_ref: dauber2016
+  uncertainty: individual values
+localization:
+- 'human SYS: plasma; complexes sized by neutral size-exclusion chromatography'
+- 'human growth plate: free IGF-1 concentration in physeal interstitium never measured'
+human_evidence: direct
+human_evidence_note: Human PAPPA2 and IGFALS null alleles produce opposite dissociations between total
+  IGF-1 and stature, which is the direct human evidence that bioavailability rather than concentration
+  is the controlled variable.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: low
+translation_risk_reason: The two decisive experiments are human null alleles with measured free/bioactive
+  IGF; mouse data are corroborative.
+confidence: A
+key_refs:
+- ref_id: dauber2016
+  first_author: Dauber A
+  year: 2016
+  type: primary
+  one_line_finding: 'PAPP-A2 loss traps IGF-1 in ternary complex: total IGF-1 rises, bioactive fraction
+    falls to 0.09-0.32%, height -2.16 to -3.81 SDS.'
+  pmid: '26902202'
+- ref_id: domen2004
+  first_author: Domené HM
+  year: 2004
+  type: primary
+  one_line_finding: ALS loss collapses total circulating IGF-1 and IGFBP-3 with disproportionately mild
+    short stature.
+  pmid: '14762184'
+- ref_id: kobber2022
+  first_author: Kobberø SD
+  year: 2022
+  type: primary
+  one_line_finding: STC2 inhibits PAPP-A by disulfide locking and substrate exclusion, defining the top
+    of the bioavailability layer.
+  pmid: '36257932'
+- ref_id: nimptsch2024
+  first_author: Nimptsch K
+  year: 2024
+  type: primary
+  one_line_finding: PAPP-A2 and STC2 but not PAPP-A associate with circulating total IGF-1 in human adults.
+  pmid: '38245583'
+last_verified: '2026-08-05'

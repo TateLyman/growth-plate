@@ -1,9 +1,51 @@
 id: focal_adhesion_kinase
-name: FAK
+name: Focal adhesion kinase (FAK/PTK2)
 type: protein
-layer: L6
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
 aliases:
+- FAK
 - PTK2
+summary: 'FAK is the obligatory kinase downstream of integrin engagement and is therefore the assumed
+  transducer converting growth plate matrix strain into intracellular signalling. The assumption is not
+  backed by a growth-plate experiment. The direct skeletal mechanotransduction evidence for FAK is in
+  osteocytes, where mechanosensitive FAK together with phosphodiesterase 8A sets intracellular cAMP in
+  response to load. In cartilage, cyclic tensile stress restores chondrocyte homeostasis through an integrin-FAK-RhoA/ROCK2
+  axis, but that work is in articular chondrocytes, and integrin-beta1/FAK/Akt signalling supports chondrogenic
+  activity in human chondrocyte culture rather than in a physis. No conditional Ptk2 deletion in a chondrocyte
+  Cre line with a longitudinal growth readout has been located, and there is no zonal FAK localisation
+  in human or animal growth plate. FAK is included here as a mechanistically necessary but experimentally
+  unvalidated node, and its confidence reflects that: the inference runs from integrin beta-1''s demonstrated
+  growth plate role, not from FAK data.'
+quantitative: []
+localization:
+- 'osteocytes: functional mechanotransduction evidence'
+- 'articular chondrocytes: functional evidence via integrin-FAK-RhoA/ROCK2'
+- 'growth plate, any species: no zonal localisation located'
+human_evidence: absent
+human_evidence_note: No human growth plate FAK data; human evidence is limited to cultured chondrocytes.
+species_basis:
+- mouse
+- in_vitro_human_cell
+translation_risk: unknown
+translation_risk_reason: The node is an inference from integrin biology; without a growth plate experiment
+  in any species the translation question cannot yet be posed properly.
+confidence: E
+key_refs:
+- ref_id: dietmar2025
+  pmid: '40379111'
+  first_author: Dietmar HF
+  year: 2025
+  type: primary
+  one_line_finding: Establishes that beta-1 integrin engagement is a genuine load-transduction route in
+    chondrocytes, the premise on which the FAK inference rests
+- ref_id: greer2024
+  pmid: '38294852'
+  first_author: Greer SE
+  year: 2024
+  type: primary
+  one_line_finding: Demonstrates the growth plate function of the integrin beta-1 receptor upstream of
+    FAK
+open_questions:
+- g_l6mech_008
+layer: L6
+stub: false
+last_verified: '2026-08-05'

@@ -1,9 +1,81 @@
 id: collagen_type_ii
-name: Collagen type II
-type: protein
-layer: L5
-stub: true
-human_evidence: absent
-last_verified: '2026-08-05'
+name: Collagen type II (COL2A1)
 aliases:
 - COL2A1
+- alpha1(II) collagen
+type: protein
+layer: L5
+stub: false
+summary: 'Collagen II is the fibril-forming backbone of all hyaline cartilage including every zone of
+  the growth plate, supplying roughly two-thirds of the dry mass of cartilage collagen and forming a 4D-staggered
+  polymer heavily crosslinked head-to-tail by hydroxylysyl pyridinoline at the two telopeptide-to-helix
+  sites. Two splice forms exist: IIA retains the cysteine-rich N-propeptide and is made by prechondrocytes
+  and perichondrium, IIB lacks it and is the form made by differentiated chondrocytes; the alpha3(XI)
+  chain of collagen XI is in fact an alternatively glycosylated alpha1(II)B product, so collagen II and
+  XI are not genetically independent. Collagen II is not the diameter-determining component: fibril width
+  is set by the collagen XI content and the II:XI ratio. Its mechanical role is to resist the swelling
+  pressure of the aggrecan gel, so tensile stiffness of cartilage depends on collagen network integrity
+  while compressive stiffness depends on proteoglycan charge. In the growth plate the collagen II network
+  is progressively lost from the lower hypertrophic zone as MMP-13 cleaves it, and the type II C-propeptide
+  accumulates there. Human COL2A1 mutations produce a graded series from lethal achondrogenesis II/hypochondrogenesis
+  through spondyloepiphyseal dysplasia congenita to Stickler syndrome and Kniest dysplasia, which is the
+  human proof that collagen II dosage and structure set long-bone length.'
+quantitative:
+- parameter: Collagen as fraction of adult articular cartilage dry mass
+  value: ~66
+  unit: '% dry weight'
+  conditions: adult human articular cartilage; collagen II is the large majority of this
+  species: human
+  source_ref: eyre2002
+  uncertainty: approximate, review figure
+  value_unverified: true
+- parameter: Collagen II mass fraction of fibrillar collagen, adult articular cartilage
+  value: '>=90'
+  unit: '%'
+  conditions: adult articular cartilage
+  species: human
+  source_ref: eyre2002
+  uncertainty: lower bound
+  value_unverified: true
+localization:
+- 'all growth plate zones: collagen II present RZ through HZ; progressively degraded in the lower HZ (little2005)'
+- 'growth plate lower HZ: type II collagen lost concomitant with rising MMP-13 (little2005)'
+human_evidence: direct
+human_evidence_note: COL2A1 mutations cause a well-characterised human allelic series (achondrogenesis
+  II, SEDC, Kniest, Stickler) with directly measured height deficits; the biochemistry is largely bovine/human
+  articular cartilage.
+species_basis:
+- human
+- bovine
+- mouse
+translation_risk: low
+translation_risk_reason: The gene, the splice forms and the disease series are established directly in
+  humans.
+confidence: B
+key_refs:
+- ref_id: eyre2002
+  pmid: '11879535'
+  doi: 10.1186/ar380
+  first_author: Eyre D
+  year: 2002
+  type: review
+  one_line_finding: Young growth cartilage fibrils are <=80% collagen II, >=10% IX, >=10% XI by mass;
+    mature articular cartilage is >=90% II, ~1% IX, ~3% XI
+- ref_id: little2005
+  pmid: '15798221'
+  first_author: Little CB
+  year: 2005
+  type: primary
+  one_line_finding: Growth plate composition shifts from epiphysis to metaphysis with loss of type II
+    collagen and rise in MMP-13 and type X collagen
+- ref_id: mendler1989
+  pmid: '2463256'
+  doi: 10.1083/jcb.108.1.191
+  first_author: Mendler M
+  year: 1989
+  type: primary_abstract_only
+  one_line_finding: Immunoelectron microscopy shows collagens II, IX and XI are all integral to the same
+    cartilage fibril, i.e. fibrils are heterotypic
+open_questions:
+- g_l5matrix_003
+last_verified: '2026-08-05'

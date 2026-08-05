@@ -176,6 +176,18 @@ def validate(quota=False):
                     r.err(rel, f"key_ref '{rid}' not in bibliography.yaml")
                 if kr.get("type") and kr["type"] not in ref_types:
                     r.err(rel, f"key_ref '{rid}' bad type '{kr.get('type')}'")
+                # CITATION INTEGRITY: the node states a pmid alongside the ref_id.
+                # If it disagrees with the bibliography entry that ref_id points at,
+                # the citation is pointing at the wrong paper. This catches the
+                # merge-rewrite corruption class, which is otherwise silent because
+                # every id still resolves.
+                npm = str(kr.get("pmid") or "").strip()
+                if rid in refs and npm:
+                    bpm = str(refs[rid].get("pmid") or "").strip()
+                    if bpm and npm != bpm:
+                        r.err(rel, f"CITATION MISMATCH: key_ref '{rid}' declares pmid "
+                                   f"{npm} but bibliography[{rid}] has pmid {bpm} "
+                                   f"- citation points at the wrong paper")
                 if not kr.get("one_line_finding"):
                     r.warn(rel, f"key_ref '{rid}' has no one_line_finding")
 

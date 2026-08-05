@@ -64,7 +64,10 @@ def merge_refs(dry):
                 hit = by_doi.get(doi)
             if hit:
                 if hit != rid:
-                    rewrite[rid] = hit
+                    # same paper already in canon under a different id. Rewriting
+                    # this token must be scoped to the supplying shard's layer:
+                    # another layer may legitimately use `rid` for a DIFFERENT paper.
+                    rewrite[rid] = (hit, os.path.splitext(os.path.basename(sp))[0])
                 dup += 1
                 # enrich canonical entry with any extra fields the shard learned
                 for k, v in rv.items():
@@ -72,12 +75,30 @@ def merge_refs(dry):
                         refs[hit][k] = v
                 continue
             new_id = rid
+            if new_id in refs:
+                # Manual / non-indexed entries (regulatory docs, GEO accessions,
+                # patents) have no pmid or doi, so the identifier de-dupe above
+                # cannot match them. Fall back to url/accession/title: if those
+                # agree it is the SAME entry being re-merged, not a collision.
+                ex = refs[new_id]
+                same = (
+                    (rv.get("accession") and rv.get("accession") == ex.get("accession"))
+                    or (rv.get("url") and rv.get("url") == ex.get("url"))
+                    or (rv.get("title") and rv.get("title") == ex.get("title"))
+                )
+                if same:
+                    for k, v in rv.items():
+                        if k not in ex or ex[k] in (None, "", []):
+                            ex[k] = v
+                    dup += 1
+                    continue
             if new_id in refs:                       # same id, different paper
                 n = 2
                 while f"{rid}_{n}" in refs:
                     n += 1
                 new_id = f"{rid}_{n}"
-                rewrite[rid] = new_id
+                shard_name = os.path.splitext(os.path.basename(sp))[0]
+                rewrite[rid] = (new_id, shard_name)
             rv["ref_id"] = new_id
             refs[new_id] = rv
             if pm:
@@ -141,11 +162,33 @@ def merge_listfile(pattern, canon_rel, key, id_field, dry, renumber=False, prefi
     return added, rewrite, len(items), skipped[0]
 
 
-def apply_rewrites(mapping, dry):
-    """Rewrite ref_id / gap_id references across all node, edge and gap files."""
+LAYER_OF_SHARD = {
+    "l1arch": "L1", "l2stem": "L2", "l3core": "L3", "l3rest": "L3",
+    "l4endo": "L4", "l5matrix": "L5", "l6mech": "L6", "l7fuse": "L7",
+    "l8gwas": "L8", "l11path": "L11", "l12pharm": "L12", "l13data": "L13",
+}
+
+
+def apply_rewrites(mapping, dry, scope_layers=None):
+    """Rewrite ref_id / gap_id references.
+
+    SCOPE MATTERS. A ref_id collision rename (zhang2023 -> zhang2023_2) means the
+    INCOMING shard's zhang2023 is a different paper from the canonical one. Rewriting
+    that token across every file in the repo therefore CORRUPTS every node that
+    legitimately cited the canonical paper - it silently repoints them at a different
+    study. This happened once (8 nodes, caught by cross-checking node key_ref pmids
+    against the bibliography) and is why scope_layers exists: only files belonging to
+    the layer that supplied the renamed entry are eligible.
+    """
     if not mapping:
         return 0
-    targets = (glob.glob(os.path.join(ROOT, "nodes", "**", "*.yaml"), recursive=True)
+    if scope_layers:
+        node_glob = []
+        for L in scope_layers:
+            node_glob += glob.glob(os.path.join(ROOT, "nodes", f"{L}_*", "*.yaml"))
+    else:
+        node_glob = glob.glob(os.path.join(ROOT, "nodes", "**", "*.yaml"), recursive=True)
+    targets = (node_glob
                + [os.path.join(ROOT, "edges", "edges.yaml"),
                   os.path.join(ROOT, "gaps", "gaps.yaml"),
                   os.path.join(ROOT, "gaps", "search_log.yaml")])
@@ -184,9 +227,19 @@ def main():
                                               "edges/edges.yaml", "edges", "edge_id", dry,
                                               renumber=True)
 
-    rw = {}
-    rw.update(r_rw); rw.update(g_rw)
-    touched = apply_rewrites(rw, dry)
+    # ref renames are scoped to the layer of the shard that supplied them
+    touched = 0
+    for old, val in r_rw.items():
+        if isinstance(val, tuple):
+            new_id, shard_name = val
+            L = LAYER_OF_SHARD.get(shard_name)
+            touched += apply_rewrites({old: new_id}, dry,
+                                      scope_layers=[L] if L else None)
+        else:
+            touched += apply_rewrites({old: val}, dry)
+    touched += apply_rewrites(g_rw, dry)
+    rw = {k: (v[0] if isinstance(v, tuple) else v) for k, v in r_rw.items()}
+    rw.update(g_rw)
 
     print(f"refs    +{r_add} new, {r_dup} already present  -> {r_tot} total")
     print(f"gaps    +{g_add} new, {g_sk} already merged      -> {g_tot} total")

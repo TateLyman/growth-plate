@@ -1,0 +1,92 @@
+searches:
+  - gap_id: g_l3rest_011
+    database: Europe PMC REST search
+    exact_query_string: 'TITLE:("growth plate" OR physis OR "epiphyseal plate") AND ("oxygen tension" OR pO2 OR oximetry)'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit, no species limit'
+    date_run: '2026-08-05'
+    hit_count: 21
+    screened_count: 21
+    reason_none_qualified: >-
+      Only three records report direct oxygen measurement in epiphyseal cartilage, and all are non-human:
+      Brighton and Heppenstall 1971 (PMID 5580029, rats and rabbits, microelectrode, in vitro and in
+      vivo), Brighton and Heppenstall 1971 companion study of the plate distal to an arteriovenous fistula
+      (PMID 5133323, rabbit), and a 1991 study of oxygen tension effects on proteoglycan synthesis in
+      cultured mammalian growth plate chondrocytes (PMID 2045974). The remaining records are tissue
+      engineering reviews, murine mechanism papers, HIF-1alpha reviews, or in vitro culture-oxygen
+      studies. No record reports oxygen tension measured in a human growth plate by any method.
+  - gap_id: g_l3rest_011
+    database: Europe PMC REST search
+    exact_query_string: '("growth plate" OR physis OR "epiphyseal plate") AND human AND ("oxygen tension" OR "pO2" OR "oxygen partial pressure" OR "oxygen microelectrode")'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 452
+    screened_count: 25
+    reason_none_qualified: >-
+      Top-ranked 25 records screened by title and abstract. All are reviews of hypoxia signalling, tissue
+      engineering or bone regeneration, murine models, or clinical case reports; the word "human" matches
+      generic usage rather than a human physeal measurement. No human growth plate oximetry study appears.
+  - gap_id: g_l3rest_010
+    database: Europe PMC REST search
+    exact_query_string: '("human growth plate" OR "human physis" OR "human epiphyseal plate") AND (mTOR OR mTORC1 OR "phospho-S6" OR "S6 kinase")'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 15
+    screened_count: 15
+    reason_none_qualified: >-
+      Fifteen records, of which five are conference abstract collections with no retrievable primary data,
+      six are narrative reviews (growth hormone signalling, skeletal stem cells, chondrocyte death in
+      osteoarthritis, perlecan, chondromodulin), and the remainder concern osteoarthritis, chondrosarcoma
+      or Sotos syndrome MAPK signalling. None reports phospho-S6, phospho-4E-BP1 or any other mTORC1
+      activity readout localised to zones of human growth plate tissue.
+  - gap_id: g_l3rest_001
+    database: Europe PMC REST search
+    exact_query_string: '("human growth plate" OR "human physis" OR "human epiphyseal") AND (SMAD1 OR SMAD5 OR "SMAD1/5/8" OR "BMP signaling") AND (immunohistochem* OR zonal OR "zone")'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 25
+    screened_count: 25
+    reason_none_qualified: >-
+      All 25 records screened. They comprise narrative reviews of growth plate regulation and BMP therapy,
+      heparan sulfate and osteochondroma work, zebrafish and murine studies, iPSC and mesenchymal stromal
+      cell chondrogenesis papers, and one conference abstract collection. The only zonally resolved
+      BMP-activity study identified anywhere in this sweep is Garrison 2017 (PMID 28467498), which is
+      murine proximal tibia. No phospho-SMAD1/5/8 zonal series on human growth plate tissue was found.
+  - gap_id: g_l3rest_007
+    database: Europe PMC REST search
+    exact_query_string: '(SOST OR sclerostin) AND ("growth plate" OR physis) AND (chondrocyte) AND (immunohistochemistry OR "in situ hybridization" OR "expression in")'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 639
+    screened_count: 25
+    reason_none_qualified: >-
+      Top-ranked 25 screened. Records concern bone metabolism reviews, fracture healing, osteoblast and
+      osteocyte biology, ankylosing spondylitis and murine bone phenotypes. The nearest hit, Ruscitto 2023
+      (PMID 37683603), shows exogenous sclerostin delivered in a hydrogel restores chondrocyte identity in
+      temporomandibular and knee articular cartilage of rabbit, rat and mini-pig - demonstrating
+      chondrocyte responsiveness but not endogenous SOST presence in growth plate cartilage. No record
+      localises SOST or DKK1 protein or transcript by zone within growth plate cartilage in any species.
+  - gap_id: g_l3rest_006
+    database: Europe PMC REST search
+    exact_query_string: '(CTNNB1 OR "beta-catenin") AND ("human chondrocyte" OR "human growth plate") AND (dose OR "dose-response" OR titration OR EC50 OR "concentration-dependent")'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 32
+    screened_count: 25
+    reason_none_qualified: >-
+      Top-ranked 25 screened. All are osteoarthritis-focused (exosome therapeutics, macrophage-chondrocyte
+      crosstalk, chondroitin sulfate, laser irradiation), rodent metatarsal pharmacology (lithium rescue of
+      dexamethasone-induced growth failure, PMID 38684886), reviews, or single-compound screens. None
+      titrates beta-catenin transcriptional activity across a graded range in human growth plate
+      chondrocytes with a differentiation readout, so no human dose-response curve exists.
+  - gap_id: g_l3rest_013
+    database: Europe PMC REST search
+    exact_query_string: '(SIK3 OR "salt-inducible kinase" OR HDAC4) AND ("human growth plate" OR "human physis" OR "human epiphyseal plate" OR "human cartilage") AND (chondrocyte OR hypertroph*)'
+    filters: 'format=json, pageSize=25, resultType=core, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 79
+    screened_count: 16
+    reason_none_qualified: >-
+      Top-ranked 16 screened. All concern osteoarthritis and ageing articular cartilage (HDAC4 and ER
+      stress, HIF-2alpha, histone modification landscapes), avian tibial dyschondroplasia, cartilage
+      organoids, or reviews. None reports HDAC4 subcellular localisation, nuclear:cytoplasmic ratio, or
+      phospho-HDAC4 in human growth plate tissue by zone.

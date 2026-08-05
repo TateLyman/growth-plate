@@ -1,7 +1,107 @@
 id: acan_dosage_effect
-name: ACAN dosage effect on stature
-type: process
+name: ACAN dosage effect on longitudinal growth
+aliases:
+- aggrecanopathy
+- ACAN haploinsufficiency
+type: phenotype
 layer: L5
-stub: true
-human_evidence: absent
+stub: false
+summary: 'Aggrecan is a dosage-sensitive determinant of human height. In the largest series, 103 individuals
+  from 20 families carrying heterozygous ACAN loss-of-function variants reached a median adult height
+  of -2.8 SDS (range -5.9 to -0.9), with childhood height less affected at -2.0 SDS and bone age advanced
+  by a median of +1.3 years. Independent exome studies found adult heights of -2.3 to -4.2 SDS in three
+  further families, and targeted screening established ACAN as one of the commonest monogenic causes of
+  idiopathic short stature. Whole-gene and multi-exon deletions produce a phenotype at the more severe
+  end with a high burden of osteochondritis dissecans and early osteoarthritis. The combination of short
+  stature with ADVANCED rather than delayed bone age is the diagnostic signature and is mechanistically
+  the important part: the plate is not simply slow, it is consumed early. The murine mechanism has been
+  resolved in the Acan+/- (cartilage matrix deficiency) mouse, where growth failure is postnatal and comes
+  from reduced extracellular matrix volume plus impaired chondrocyte hypertrophy with suppressed Akt signalling
+  and raised Camk1d, while proliferation is largely unaffected. Homozygous ACAN loss in humans and animals
+  is lethal or near-lethal (spondyloepimetaphyseal dysplasia aggrecan type), so the allelic series spans
+  normal, mild dominant short stature, and lethal chondrodysplasia.'
+quantitative:
+- parameter: Median adult height, heterozygous ACAN loss-of-function
+  value: '-2.8'
+  unit: SDS
+  conditions: 103 individuals, 20 families, mixed ancestry
+  species: human
+  source_ref: gkourogianni2017
+  uncertainty: range -5.9 to -0.9
+- parameter: Median childhood height, heterozygous ACAN loss-of-function
+  value: '-2.0'
+  unit: SDS
+  conditions: same cohort, paediatric measurements
+  species: human
+  source_ref: gkourogianni2017
+  uncertainty: range -4.2 to -0.6
+- parameter: Bone age advancement in ACAN heterozygotes
+  value: '+1.3'
+  unit: years (bone age minus chronological age)
+  conditions: children with ACAN mutations
+  species: human
+  source_ref: gkourogianni2017
+  uncertainty: range 0.0 to +3.7 years
+- parameter: Adult height in three exome-sequenced ACAN families
+  value: -2.3 to -4.2
+  unit: SDS
+  conditions: autosomal dominant short stature with advanced bone age
+  species: human
+  source_ref: nilsson2014_2
+  uncertainty: range across affected individuals
+- parameter: Effect of Acan heterozygosity on chondrocyte proliferation in mouse
+  value: '0'
+  unit: detectable change
+  conditions: Acan+/- cmd mouse, histomorphometry
+  species: mouse
+  source_ref: bendre2025
+  uncertainty: described as largely unaffected
+localization:
+- 'human growth plate: ACAN expressed in all zones; the dosage effect manifests as reduced matrix volume
+  and impaired hypertrophy'
+- 'mouse PHZ/HZ: suppressed Akt signalling in Acan+/- prehypertrophic and hypertrophic chondrocytes (bendre2025)'
+human_evidence: direct
+human_evidence_note: Direct measurement of height SDS and bone age in >100 genotyped heterozygotes across
+  independent cohorts.
+species_basis:
+- human
+- mouse
+translation_risk: not_applicable
+translation_risk_reason: The phenotype is defined in humans; the mouse is used only for mechanism.
+confidence: A
+key_refs:
+- ref_id: gkourogianni2017
+  pmid: '27870580'
+  first_author: Gkourogianni A
+  year: 2017
+  type: primary
+  one_line_finding: Median adult height -2.8 SDS and bone age +1.3 years in 103 ACAN heterozygotes
+- ref_id: nilsson2014_2
+  pmid: '24762113'
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: Heterozygous ACAN variants cause short stature with advanced bone age and early growth
+    cessation
+- ref_id: bendre2025
+  pmid: '40685060'
+  first_author: Bendre A
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: Acan+/- growth failure is due to reduced matrix and impaired hypertrophy with suppressed
+    Akt, not reduced proliferation
+- ref_id: sentchordimont2025
+  pmid: '40129139'
+  first_author: Sentchordi-Montane L
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: ACAN whole-gene and intragenic deletions give moderate-to-severe short stature with
+    severe joint disease
+- ref_id: hauer2017
+  pmid: '28939912'
+  first_author: Hauer NN
+  year: 2017
+  type: primary_abstract_only
+  one_line_finding: ACAN heterozygous mutations are a major cause of idiopathic short stature on targeted
+    screening
 last_verified: '2026-08-05'
