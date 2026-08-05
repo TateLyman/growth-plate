@@ -1,26 +1,32 @@
 # Coverage — what this atlas knows, at what depth, and what it cannot do
 
-Read this before trusting an answer. A question asked in a layer that is 69% rodent-derived
-should carry that warning **before** the answer, not after it.
+Read this before trusting an answer.
 
-Generated from the compiled artifacts. Regenerate with `atlas/tools/compile_query.py`.
+> **Every number in this file is generated.** Regenerate with
+> `python3 atlas/tools/coverage_report.py`; check for drift with `--check`. The
+> interpretive prose is hand-written and lives outside the generated blocks, because a
+> judgement about which layer to distrust is not something a script should invent.
+>
+> This became a rule after the Phase 7 falsification run found this file asserting 612
+> nodes, 764 edges and "L8 = 3 nodes" against an actual 614, 1,181 and 39. A stale
+> coverage file is worse than none: it warns about the wrong layers with the authority
+> of a measurement.
 
 ---
 
 ## Canonical denominator
 
-All coverage percentages in this atlas are stated against **`researched_non_stub_nodes`**
-unless a different base is named inline.
+All coverage percentages are stated against **`researched_non_stub_nodes`** unless a
+different base is named inline.
 
-Defined: a node file with `stub: false`. **As of Phase 3 close this equals the total node
-count, because stub resolution completed and zero stubs survive: 614 = 614.** Before that
-pass the two numbers differed (578 researched of 612 files, 34 stubs), and earlier reports
-in this build used 654 and 612 as bases at different moments. Any figure in this file
-predating the stub-resolution pass is restated below against the current 614.
+Defined: a node file with `stub: false`. **This now equals the total node count, because
+stub resolution completed and zero stubs survive.** Earlier reports in this build used
+654, 612 and 578 as bases at different moments; every figure in this file is against the
+current count.
 
 The one count that is still NOT interchangeable: **`claim_grades`** is populated on a
 minority of nodes, and coverage figures about claim-level grading must name that base
-explicitly rather than implying it applies to all 614.
+explicitly.
 
 ## The one-line boundary
 
@@ -31,114 +37,170 @@ satisfying than what a language model would otherwise produce.
 
 ---
 
-## Per-layer coverage and evidence quality
+## Per-layer coverage, evidence quality, and measured predictive performance
 
-| Layer | Name | nodes | direct human | **replicated human** | high transl. risk | gaps | A/B |
-|---|---|---:|---:|---:|---:|---:|---|
-| L0 | developmental_origin | 25 | 8 (32%) | 2 (8%) | 10 (40%) | 12 | 2/10 |
-| L1 | growth_plate_architecture | 48 | 20 (42%) | 19 (40%) | 25 (52%) | 14 | 4/11 |
-| **L2** | **stem_and_progenitor_biology** | 35 | 5 (14%) | **0 (0%)** | **24 (69%)** | 11 | 0/3 |
-| L3 | signaling_networks | 87 | 18 (21%) | 10 (11%) | 49 (56%) | 26 | 8/19 |
-| L4 | endocrine_and_systemic | 72 | 46 (64%) | 32 (44%) | 15 (21%) | 12 | 31/17 |
-| L5 | matrix_and_mineralization | 42 | 19 (45%) | 13 (31%) | 13 (31%) | 10 | 5/19 |
-| L6 | mechanobiology | 31 | 10 (32%) | 10 (32%) | 14 (45%) | 14 | 4/6 |
-| L7 | fusion_and_cessation | 34 | 26 (76%) | 26 (76%) | 4 (12%) | 13 | 15/6 |
-| L8 | genetics_and_heritability | 3 | 3 (100%) | 2 (67%) | 0 (0%) | 2 | 2/1 |
-| L9 | whole_organism_growth | 34 | 30 (88%) | 21 (62%) | 4 (12%) | 17 | 14/11 |
-| L10 | environment_and_population | 34 | 29 (85%) | 18 (53%) | 4 (12%) | 12 | 9/16 |
-| L11 | pathology_as_natural_experiment | 56 | 56 (100%) | 17 (30%) | 0 (0%) | 25 | 18/24 |
-| L12 | pharmacology_as_mechanistic_probe | 36 | 30 (83%) | 26 (72%) | 6 (17%) | 28 | 16/10 |
-| L13 | methods_and_data | 41 | 19 (46%) | 13 (32%) | 15 (37%) | 14 | 11/18 |
-| | **TOTAL** | **578** | **319 (55.2%)** | **209 (36.2%)** | | **210** | |
+<!-- COVERAGE:LAYERS:BEGIN -->
+| Layer | Name | nodes | direct human | **replicated human** | high transl. risk | gaps | A/B | **hit rate %** |
+|---|---|---:|---:|---:|---:|---:|---|---:|
+| L0 | developmental_origin | 25 | 8 (32%) | 2 (8%) | 10 (40%) | 13 | 2/10 | **100** |
+| L1 | growth_plate_architecture | 48 | 20 (41%) | 19 (39%) | 25 (52%) | 14 | 4/11 | **40** |
+| L2 | stem_and_progenitor_biology | 35 | 5 (14%) | 0 (0%) | 24 (68%) | 14 | 0/3 | **0 †** |
+| L3 | signaling_networks | 88 | 18 (20%) | 14 (15%) | 50 (56%) | 43 | 8/18 | **100** |
+| L4 | endocrine_and_systemic | 72 | 46 (63%) | 33 (45%) | 15 (20%) | 24 | 32/16 | **40** |
+| L5 | matrix_and_mineralization | 41 | 18 (43%) | 12 (29%) | 13 (31%) | 17 | 4/19 | **100** |
+| L6 | mechanobiology | 31 | 10 (32%) | 10 (32%) | 14 (45%) | 23 | 4/6 | **100** |
+| L7 | fusion_and_cessation | 34 | 26 (76%) | 26 (76%) | 4 (11%) | 18 | 15/6 | **75** |
+| L8 | genetics_and_heritability | 39 | 38 (97%) | 35 (89%) | 0 (0%) | 22 | 18/18 | **20** |
+| L9 | whole_organism_growth | 34 | 30 (88%) | 21 (61%) | 4 (11%) | 17 | 14/11 | **100** |
+| L10 | environment_and_population | 34 | 29 (85%) | 18 (52%) | 4 (11%) | 13 | 9/16 | **100** |
+| L11 | pathology_as_natural_experiment | 56 | 56 (100%) | 18 (32%) | 0 (0%) | 26 | 19/23 | **60** |
+| L12 | pharmacology_as_mechanistic_probe | 36 | 30 (83%) | 26 (72%) | 6 (16%) | 30 | 16/10 | **50** |
+| L13 | methods_and_data | 41 | 19 (46%) | 13 (31%) | 15 (36%) | 14 | 11/18 | **50** |
+| | **TOTAL** | **614** | **353 (57.5%)** | **247 (40.2%)** | | **288** | | **64.0** |
 
-`replicated human` = `human_evidence: direct` **and** ≥2 human primary sources.
+`replicated human` = `human_evidence: direct` **and** ≥2 human primary sources. `hit rate` is the Phase 7 measured value, CORRECT / (CORRECT + WRONG + SILENTLY_ABSENT) — source: query/falsification_baseline.md, cutoff 2026-02-01, 63 held-out papers. † L2's denominator is 1: two of its three held-out papers were correct refusals, so the 0 is a small-sample artefact and not a verdict.
+<!-- COVERAGE:LAYERS:END -->
 
-### How to read this table
+### How to read this table — and the finding that changed how to read it
 
-**L2 is the layer to distrust.** Stem and progenitor biology has **zero** nodes with
-replicated human evidence and 69% carrying high translation risk. Everything there is mouse
-lineage tracing, which cannot be done in humans at all. An answer about resting-zone stem
-cells is an answer about *mice*, and the atlas will say so.
+Until Phase 7 this section warned readers on the basis of **evidence quality**: distrust
+the layers that are mostly mouse, trust the layers that are mostly human. That heuristic
+was reasonable, it was stated with confidence, and the falsification run shows **it does
+not predict what the atlas actually gets wrong.**
 
-**L3 is the second warning.** Signalling is the densest layer (87 nodes, 26 gaps) and only
-11% replicated-human. This is where a language model's fluency is most dangerous, because
-the murine pathway literature is enormous and reads as settled.
+| | direct human | replicated human | high translation risk | **measured hit rate** |
+|---|---:|---:|---:|---:|
+| **L8** genetics | 97% | 89% | 0% | **20%** — the worst |
+| **L3** signalling | 20% | 15% | 56% | **100%** |
 
-**L11, L12, L9, L10 are the strong layers** — 83–100% direct human evidence, because they
-are built from human disease, human trials and human population data. L12 in particular is
-72% replicated-human: randomised human perturbation is the strongest causal evidence here.
+L8 is the most human, most replicated, lowest-translation-risk layer in the atlas, and it
+is the layer that failed hardest at anticipating findings it had not seen. L3 is the layer
+this file previously named as its second warning, and it did not miss anything.
 
-**L8 is nearly empty (3 nodes).** It has not been swept. Do not read low gap counts there as
-"few unknowns" — read them as "not yet examined."
+**Evidence quality and predictive power are different properties, and this atlas now
+measures both.** A node can be graded A on impeccable human data and still sit in a
+neighbourhood so weakly connected that nothing can be derived from it — which is exactly
+what `structural_confidence` was introduced to expose, and what L8's 0.27–0.38 range says.
+
+So the warnings now read:
+
+**Distrust answers that must cross a layer boundary.** 14 of the 16 findings the graph
+should have anticipated and did not were **cross-layer edges**. The layers are well built
+and weakly welded. Three sub-patterns, all measured:
+
+- **Pharmacology is terminal.** `recombinant_human_gh` has 5 outbound edges, all inside
+  the GH/IGF axis. `npr2_receptor` has 24 and not one reaches a named skeletal site.
+- **The atlas has exactly one growth plate.** Eight site-specific plate and synchondrosis
+  nodes receive no signalling or pharmacology edge at all.
+- **L8 is unwired.** 39 A-graded nodes with no edges to the L7/L9/L10 phenotypes they
+  exist to explain.
+
+**Distrust context-filtered answers until the fill rates below are met.** A Type 3 query
+filtered on zone or sex returns `UNRELIABLE` with its annotation coverage attached rather
+than a small, confident-looking result. That is the correct failure mode, but it is a
+failure mode.
+
+**L2 remains the layer with no replicated human evidence at all** — resting-zone stem cell
+biology is mouse lineage tracing, which cannot be done in humans. Its 0% hit rate is *not*
+evidence of that weakness: two of its three held-out papers were correct refusals, so the
+denominator is 1. The old warning about L2 was right for the right reason and the new
+number is too small to say anything.
 
 ---
 
 ## Structural coverage
 
+<!-- COVERAGE:STRUCT:BEGIN -->
 | | |
 |---|---|
-| Nodes | 612 (578 researched, 34 stubs) |
-| Edges | 764 — **468 usable for perturbation reasoning**, 296 flagged unusable |
-| Cycles | 27 — 17 negative/stabilising, 10 positive/amplifying |
-| Gaps | 210, with 102 reproducible search logs |
-| References | 946, all machine-resolved against Europe PMC/NCBI |
-| Quantitative rows | ~1,700 |
+| Nodes | 614 (614 researched, 0 stubs) |
+| Edges | 1181 — **778 usable for perturbation reasoning**, 403 flagged unusable |
+| Gaps | 288, with 134 gap ids carrying reproducible search logs (147 log entries) |
+| References | 1049, all machine-resolved against Europe PMC/NCBI |
+| Quantitative values on nodes | 1520 |
 
-### What the edge set can and cannot support
+**Context annotation, three-state** (MATCH / MISMATCH / UNANNOTATED — only MISMATCH excludes an edge; see `atlas/tools/context_filter.py`):
 
-Only **61.3%** of edges can carry a directional answer. The excluded 296 are `precedes`
-(temporal, no sign), `binds` (no direction), `correlates_with` (direction not inferable from
-relation type) and `hypothesized_link` (speculative). Traversing them would produce paths
-with no directional meaning, so the protocol forbids it.
+| axis | annotated | of edges | MR-004 target |
+|---|---:|---:|---:|
+| zone | 139/1181 | 11.8% | 40% |
+| sex | 139/1181 | 11.8% | 30% |
+| stage | 265/1181 | 22.4% | 40% |
+| species | 1109/1181 | 93.9% | — |
 
-**Context filtering is weak.** Edge context strings mention species 94% of the time, but
-zone only **5.5%**, developmental stage/age **11.3%**, and sex **6.2%**. A perturbation query
-filtered by zone or sex will therefore exclude most of the graph, and any such answer is
-weakly constrained. The protocol requires that this be stated in the answer.
+Sign coverage on sign-bearing relations is the traversal gate and stands at **778/778 = 100%**. The 403 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
+<!-- COVERAGE:STRUCT:END -->
 
-### Quantitative reliability
+---
 
-**1,264 parameters rest on a single source.** That is the majority of the quantitative
-record, and it is a property of the field rather than of this build — most growth-plate
-numbers have been measured once. Only 5 parameters have enough independent sources to
-register as disputed. 37 rows are flagged `value_unverified`; 1 is flagged
-`superseded_model` and retained for provenance only.
+## Quantitative reliability
+
+<!-- COVERAGE:QUANT:BEGIN -->
+| reliability class | rows | share |
+|---|---:|---:|
+| `single_source_with_uncertainty` | 1228 | 80.8% |
+| `range_value` | 118 | 7.8% |
+| **`single_source_point_no_uncertainty`** | **65** | 4.3% |
+| `spread_documented` | 55 | 3.6% |
+| `unverified` | 40 | 2.6% |
+| `multi_source` | 12 | 0.8% |
+| `superseded` | 2 | 0.1% |
+| | **1520** | |
+
+`single_source_point_no_uncertainty` is the risk class: one source, a point value, and nothing to warn a reader. Phase 2e classified every row rather than hunting duplicate parameter names, because ~94% of parameter names appear exactly once — disagreement in this field is not encoded as duplicate rows.
+<!-- COVERAGE:QUANT:END -->
+
+Only a handful of rows in the entire atlas are genuinely multi-source. That is a property
+of the field, not of this build: most growth-plate numbers have been measured once, by one
+group, using one method.
 
 ---
 
 ## What the atlas covers well
 
-1. **Negative space.** 210 gaps with 102 reproducible search logs. Asking what is *not*
-   known is the atlas's strongest query type, and the search logs make each null checkable.
-2. **Human pharmacological perturbation** (L12) — effect sizes, CIs, terminated programmes
-   with their stop reasons classified.
-3. **Species discipline.** Every node carries `species_basis` and `translation_risk`. The
-   mouse/human boundary is the thing this atlas is most careful about.
-4. **Disease as human experiment** (L11) — 100% direct human evidence, genotype→stature chains.
-5. **Known corrections.** ANKH, zonal stiffness, CNP exposure, target height and mouse
-   fusion are all held in their corrected form with the superseded version documented.
+1. **Negative space.** The gap register with reproducible search logs. Asking what is
+   *not* known is the atlas's strongest query type, and every `search_established` gap
+   carries the exact query, database, date and hit count so a reader can re-run it.
+2. **Human pharmacological perturbation** (L12) — effect sizes, confidence intervals, and
+   terminated programmes with their stop reasons classified as `scientific_null` /
+   `strategic` / `logistical`, because only the first is negative evidence.
+3. **Species discipline.** Every node carries `species_basis` and `translation_risk`.
+4. **Disease as human experiment** (L11) — 100% direct human evidence.
+5. **Known corrections, held in their corrected form** with the superseded version
+   documented and its blast radius traced object by object (`atlas/audit/corrections.md`).
+6. **Paralog attribution.** 91 nodes swept; 80 carry `paralog_audit: passed`, 9 carry
+   `paralog_risk`. A node that has been checked and held is now distinguishable from a
+   node that merely has not been contradicted.
+7. **Prioritised experimental agenda.** `docs/experimental_agenda.md` ranks unmeasured
+   parameters by their contribution to output uncertainty, with a discriminating
+   experiment written for each.
 
 ## What the atlas covers poorly
 
-1. **Zone-resolved anything in humans.** No human spatial transcriptomics exists; the only
-   zone-resolved human transcriptome is two children from 2007.
-2. **Context-filtered perturbation** — zone/stage/sex fill rates are too low (§ above).
-3. **L8 genetics** — 3 nodes, unswept.
-4. **Cross-layer traversal** — edge density is 1.25/node; intra-layer edges dominate, so
-   long mechanistic chains break at layer boundaries.
-5. **Anything outside human longitudinal skeletal growth** — see `adversarial.yaml` for the
-   shape of the boundary. Articular cartilage, oncology, veterinary, adult bone density,
-   forensic applications and surgical management are all out of scope.
+1. **Zone-resolved anything in humans.** The only zone-resolved human growth-plate
+   transcriptome is two children from 2007 — and the P8-01 re-analysis shows that for
+   zonal contrast it is effectively **one** child, because the second donor's laser
+   capture did not separate the compartments.
+2. **Cross-layer traversal.** Measured at a 25% silent-failure rate by Phase 7. This is
+   the single largest structural deficit and it is now quantified rather than suspected.
+3. **Context-filtered perturbation** — zone, sex and stage fill rates are below target.
+4. **Local concentration of anything.** The atlas can say what a pathway does; it can
+   rarely say what concentration reaches a chondrocyte in a living human. The Phase 6
+   flow model halts on exactly this.
+5. **Anything outside human longitudinal skeletal growth.** See `adversarial.yaml` for
+   the shape of the boundary — articular cartilage, oncology, veterinary, adult bone
+   density, forensic and surgical management are all out of scope, and the protocol
+   refuses rather than extrapolates.
 
 ---
 
 ## The honest summary
 
 This atlas is a **map of a mostly-murine literature with the human evidence explicitly
-marked**, plus a systematic register of what has never been measured. Its most valuable
-outputs are the gaps and the species tags, not the mechanisms — because the mechanisms are
-largely available elsewhere, and the honest accounting of which of them are human is not.
+marked**, plus a systematic register of what has never been measured, plus — since Phase
+7 — a measurement of how often it can anticipate a finding it has not seen. That number
+is **64%**, and the 36% is more informative than the 64%.
 
 Two numbers set the ceiling on everything here: **259 human growth plates have ever been
-examined histologically, 102 of them postnatal and growing, and exactly 2 at or immediately
-before fusion.** No synthesis can exceed that record.
+examined histologically, 102 of them postnatal and growing, and exactly 2 at or
+immediately before fusion.** No synthesis can exceed that record.
