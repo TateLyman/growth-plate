@@ -1,10 +1,12 @@
 # RESUME STATE. On session start read this and state/environment.md FIRST,
 # read nothing else, then execute next_3_actions. Never restart from scratch.
 
-current_phase: 1              # 0 scaffold | 1 skeleton_map | 2 layer_sweeps | 3 integration
+current_phase: 2              # 0 scaffold | 1 skeleton_map | 2 layer_sweeps | 3 integration
                               # 4 quantitative_consolidation | 5 redteam | 6 synthesis
-current_layer: null
-current_subtopic: null
+current_layer: [L1, L2, L3, L7, L4]
+current_subtopic: >-
+  L1/L2/L3-core/L7 running as parallel subagent sweeps; L4 endocrine being built
+  in the main thread; L8 and L12 partially built.
 last_updated: '2026-08-05'
 
 completed:
@@ -12,28 +14,58 @@ completed:
     name: scaffold
     timestamp: '2026-08-05'
     note: >-
-      Directory tree, node/edge schemas, controlled vocabulary, validator,
-      addref (machine-populated bibliography), verify_refs (anti-fabrication gate).
-      All three tools negative-tested: validator caught 10/10 injected defects,
-      addref refused a fabricated PMID. Network confirmed to NCBI/EPMC/DOI/CTgov.
+      Tree, schemas, vocabulary, validator, addref (machine-populated bibliography),
+      verify_refs. Negative-tested: validator caught 10/10 injected defects, addref
+      refused a fabricated PMID. Network confirmed to NCBI/EPMC/DOI/CTgov.
+  - phase: 1
+    name: skeleton_map
+    timestamp: '2026-08-05'
+    note: >-
+      633 stub nodes across all 14 layers, 0 validation errors. Exceeds the >=400
+      exit criterion. Sharding infrastructure added so parallel sweeps cannot
+      clobber shared files.
 
-in_flight: {}
+in_flight:
+  subagent_sweeps:
+    - shard: l1arch
+      layer: L1
+      status: running
+      note: bibliography shard growing; nodes not yet written
+    - shard: l2stem
+      layer: L2
+      status: running
+    - shard: l3core
+      layer: L3
+      scope: PTHrP/IHH + CNP/NPR2/PDE + FGF/FGFR3 only (rest of L3 unassigned)
+      status: running
+    - shard: l7fuse
+      layer: L7
+      status: running
+  main_thread:
+    - "L8: height_gwas, height_heritability, missing_heritability_height written; 2 gaps + search logs"
+    - "L12: vosoritide written; 2 gaps + search logs"
+    - "Shards NOT yet merged - refs sit in sources/shards/*.yaml, so validate.py reports expected 'unknown ref' errors until merge_shards.py runs"
 
 next_3_actions:
-  - "Phase 1: write stub nodes for every entity named in <scope> across all 14 layers (target >=400, no layer empty), using tools/mkstub.py"
-  - "Phase 1 exit check: python3 atlas/tools/validate.py --quota; commit"
-  - "Phase 2 begins with the load-bearing core in order L1, L2, L3, L7 — dispatch parallel subagents by subtopic, one domain and one output file each"
+  - "When subagent sweeps report: run `python3 atlas/tools/merge_shards.py` then `python3 atlas/tools/validate.py --quota` and fix fallout"
+  - "Write docs/<layer>.md syntheses + figures/*.mmd for L1, L2, L3, L7; then commit per layer"
+  - "Continue Phase 2 into L4 (endocrine), L5, L0, L6, then L9-L11, L13; L3 still needs BMP/TGF-b, WNT, Notch, mTORC1, HIF-1a, SOX9/RUNX2, cilium subtopics assigned"
 
-blocked_on: []
+blocked_on:
+  - "access_queue #1 (P2): Yengo 2022 supplementary table to settle contradiction c001 (mean vs median segment size)"
+  - "User answers to the phase-2 question block (institutional access, Richard 2025 Cell full text, priority subsystem, L12 regulatory-dossier depth). Defaults are in effect and work is proceeding on them."
 
 known_debt:
-  - "quant/parameters.csv is header-only until Phase 2 layer sweeps populate it"
   - "docs/<layer>.md not yet written for any layer"
   - "figures/*.mmd not yet generated"
-  - "Test node pthrp_positive_resting_chondrocyte carries a PLACEHOLDER summary and must be fully rewritten during the L2 sweep"
+  - "No edges written yet in the main thread; edges/edges.yaml still empty pending subagent shards"
+  - "L3 only partially scoped to subagent (3 of ~10 subsystems)"
+  - "missing_heritability_height carries one value_unverified row (early-GWAS variance explained ~5%) awaiting a primary source"
+  - "Node pthrp_positive_resting_chondrocyte still holds the phase-0 PLACEHOLDER summary unless the l2stem sweep has rewritten it - verify after merge"
 
 conventions_reminder:
   - "Never hand-write bibliography metadata; always `python3 atlas/tools/addref.py`"
   - "A gap of type search_established REQUIRES a search_log.yaml entry or the validator rejects it"
   - "Commit message format: atlas(<layer>): <what changed> [+N nodes, +M edges, +K gaps]"
   - "Every claim carries a species tag; mouse data never stated as human fact"
+  - "Subagents write to shards only; merge with merge_shards.py, never hand-edit canonical files"
