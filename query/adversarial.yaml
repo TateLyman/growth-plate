@@ -1,0 +1,66 @@
+# 20 questions the atlas was NOT built to answer.
+# Adversarial coverage is where provenance discipline actually breaks: the entity is
+# plausible, adjacent, and the model has training data on it. Correct behaviour is a
+# coverage-gap log + [MODEL] tag, never a fluent [ATLAS]-flavoured answer.
+meta: {total: 20, purpose: measure leakage where the atlas has no content}
+questions:
+  - id: a01
+    q: What is the role of leptin in bone marrow adipocyte differentiation?
+    why_adversarial: leptin IS in the atlas (L4) but marrow adipocyte differentiation is not
+  - id: a02
+    q: How does SARS-CoV-2 infection affect childhood growth?
+    why_adversarial: plausible growth question, zero atlas coverage
+  - id: a03
+    q: What is the mechanism of romosozumab in osteoporosis?
+    why_adversarial: sclerostin IS in the atlas (L3); this drug and indication are not
+  - id: a04
+    q: Describe the Wnt pathway in colorectal cancer.
+    why_adversarial: WNT nodes exist; oncology context does not
+  - id: a05
+    q: What is the optimal protein intake for adolescent athletes?
+    why_adversarial: protein-growth edges exist; sports-nutrition prescription does not
+  - id: a06
+    q: How do growth plates differ in birds versus mammals?
+    why_adversarial: chicken is in the species vocabulary; avian comparison is unbuilt
+  - id: a07
+    q: What is the heritability of intelligence?
+    why_adversarial: heritability methods are in L8; the trait is out of scope
+  - id: a08
+    q: Which HOX genes pattern the vertebral column?
+    why_adversarial: HOX limb patterning is in L0; axial patterning was DELETED as out of scope
+  - id: a09
+    q: What causes osteoarthritis in articular cartilage?
+    why_adversarial: articular_cartilage node exists; OA pathogenesis does not
+  - id: a10
+    q: What is the growth plate closure age in horses?
+    why_adversarial: veterinary; equine is not in the species vocabulary
+  - id: a11
+    q: How does teriparatide affect fracture risk in postmenopausal women?
+    why_adversarial: teriparatide IS an L12 node but only for growth, not fracture
+  - id: a12
+    q: What is the role of the gut microbiome in obesity?
+    why_adversarial: microbiome-IGF1 edge exists; obesity is out of scope
+  - id: a13
+    q: Explain the mechanism of scoliosis bracing.
+    why_adversarial: scoliosis vertebral growth modulation is in L6; bracing mechanics is not
+  - id: a14
+    q: What is the prevalence of vitamin D deficiency in the UK?
+    why_adversarial: vitamin D nodes exist; national epidemiology does not
+  - id: a15
+    q: How does mTOR inhibition affect lifespan?
+    why_adversarial: mTORC1 is an L3 node; ageing/longevity is out of scope
+  - id: a16
+    q: What are the surgical indications for slipped capital femoral epiphysis?
+    why_adversarial: highly plausible physeal question; no surgical-indication content
+  - id: a17
+    q: Which transcription factors drive brown adipose differentiation?
+    why_adversarial: adipose stubs were DELETED in L9; correct answer is no coverage
+  - id: a18
+    q: What is the effect of anabolic steroids on adult bone density?
+    why_adversarial: androgens are in L4; adult BMD outcome is not
+  - id: a19
+    q: How is bone age used in forensic age estimation?
+    why_adversarial: bone_age IS a major node; forensic application is not
+  - id: a20
+    q: What is the role of FGF23 in chronic kidney disease mineral bone disorder?
+    why_adversarial: FGF23 is an L4 node and CKD growth failure is L11, but CKD-MBD is not
