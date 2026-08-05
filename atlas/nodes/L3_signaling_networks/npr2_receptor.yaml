@@ -161,8 +161,8 @@ quantitative:
   uncertainty: n=3, one family
 localization:
 - 'mouse PHZ: prehypertrophic GC-B protein is asserted by the Kyoto group but is NOT data in nakao2015
-  - that paper cites it to earlier work and uses GC-B IHC only to confirm knock-down. True primary
-  unidentified (g_l2d_002)'
+  - that paper cites it to earlier work and uses GC-B IHC only to confirm knock-down. True primary unidentified
+  (g_l2d_002)'
 - 'mouse resting/proliferative (combined) vs hypertrophic vs mineralized: Npr2 transcript similar across
   these three compartments by zonal microarray (agoston2007). This study makes NO resting-versus-proliferative
   comparison; the atlas previously mis-stated its compartments as RZ/PZ/HZ'
@@ -246,6 +246,16 @@ key_refs:
   one_line_finding: Npr2/Nppc/Npr3 mRNA similar across resting-proliferative (combined), hypertrophic
     and mineralized compartments; Prkg1 5.9-fold and Prkg2 4.4-fold hypertrophic-enriched (mRNA only);
     CNP induces Npr3 16-fold in the hypertrophic zone alone.
+- ref_id: zhou2024
+  pmid: '39443661'
+  first_author: Zhou Z
+  year: 2024
+  type: primary
+  one_line_finding: Corin- and Nppa(ANP)-null mice have impaired chondrocyte differentiation and SHORTENED
+    limb long bones with reduced adult bone density; ANP acts IN CHONDROCYTES via cGMP-dependent protein
+    kinase G to inhibit MAPK phosphorylation and raise phospho-GSK-3beta and beta-catenin - a genetic
+    requirement for the NPR1/GC-A ligand arm in the same cGMP-PKG readout the atlas attributes wholly
+    to CNP/NPR2.
 open_questions:
 - g_l3core_003
 - g_l3core_004
@@ -255,9 +265,29 @@ contradicts:
 - nakao2015
 - agoston2007
 audited: '2026-08-05'
-audit_note: >-
-  Phase 2d canonical-mechanism audit, shard l2daudit. nakao2015, agoston2007, chikuda2004 and lauffer2020
-  read in FULL. Verdict SCOPED - two source-attribution errors corrected (prehypertrophic GC-B IHC not
-  attributable to nakao2015; agoston2007 compartments are not RZ/PZ/HZ) and the PKG-II zonal explanation
-  retracted per CORR-003.
+audit_note: Phase 2d canonical-mechanism audit, shard l2daudit. nakao2015, agoston2007, chikuda2004 and
+  lauffer2020 read in FULL. Verdict SCOPED - two source-attribution errors corrected (prehypertrophic
+  GC-B IHC not attributable to nakao2015; agoston2007 compartments are not RZ/PZ/HZ) and the PKG-II zonal
+  explanation retracted per CORR-003.
 last_verified: '2026-08-05'
+paralog_audit: at_risk
+paralog_audit_date: '2026-08-05'
+paralog_risk: 'The chondrocyte cGMP-PKG pool is attributed entirely to NPR2; NPR1/ANP is a genetically
+  required parallel source in the same cell (zhou2024: Corin- and Nppa-null mice have impaired chondrocyte
+  differentiation and shortened long bones, ANP acting in chondrocytes via cGMP-dependent protein kinase
+  G) and has never been removed in the same animal. No NPR1 zonal map exists in any species. See g_para_001.'
+reanalysis_observations:
+- observation: NPR2 is detected in proliferative, prehypertrophic and hypertrophic zones of both human
+    donors, prehypertrophic-maximal in the donor whose dissection resolves zones (144, 926, 1208, 333
+    units across RZ/PZ/PHZ/HZ). NPR3, the clearance receptor, is detected in the hypertrophic zone with
+    fold ranges of 27.4 and 10.1. NPR1 is detected in the resting zone only. The ligand NPPC is not detected
+    in either donor in any compartment.
+  interpretation: Receptor and clearance receptor are both present and zonally patterned in human tissue;
+    the ligand transcript is not detectable. Whatever sets local cGMP tone at the human physis, the source
+    of the ligand is not established by local transcription.
+  caveats: Two donors, one platform, transcript only. See notebook section 3 on dissection quality.
+  reanalysis: p8_01_gse9160_human_zonal
+  source_ref: gse9160
+  species: human
+  grade: D
+  date: '2026-08-05'
