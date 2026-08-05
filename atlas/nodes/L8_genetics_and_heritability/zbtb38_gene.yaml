@@ -7,45 +7,83 @@ aliases:
 type: gene
 layer: L8
 stub: false
-summary: 'ZBTB38 is one of the 20 loci in the first-generation height GWAS (Weedon 2008) and is retained
-  in this layer for a specific reason: it is a methyl-CpG-binding zinc-finger transcription factor, so
-  it is the one top height locus whose annotated molecular function is the reading of DNA methylation
-  - the same mark that tracks growth plate senescence in rabbit and that is required for normal bone length
-  in mouse. That makes ZBTB38 the natural place to test whether the height-associated methylation biology
-  and the height-associated genetic biology are the same system, and no retrieved study has done so. The
-  association itself is solid and has been replicated outside the discovery ancestry: rs724016 is associated
-  with height in individuals of African ancestry with sickle cell anaemia, in a sample where it is also
-  associated with fetal haemoglobin. What is missing is everything downstream. No human growth-plate expression,
-  no chondrocyte eQTL, and no functional experiment linking ZBTB38 genotype to any growth plate parameter
-  was retrieved, so the node stands as a well-replicated association with an unexploited mechanistic handle
-  rather than as a characterised growth gene.'
+summary: 'ZBTB38 is one of the 20 loci in the first-generation height GWAS (Weedon 2008) and is
+  retained in this layer for a specific reason: it is a methyl-CpG-binding zinc-finger transcription
+  factor, so it is the one top height locus whose annotated molecular function is the reading
+  of DNA methylation - the same mark that tracks growth plate senescence in rabbit and that is
+  required for normal bone length in mouse. That makes ZBTB38 the natural place to test whether
+  the height-associated methylation biology and the height-associated genetic biology are the
+  same system, and no retrieved study has done so. The association itself is solid and has been
+  replicated outside the discovery ancestry: rs724016 is associated with height in individuals
+  of African ancestry with sickle cell anaemia, in a sample where it is also associated with fetal
+  haemoglobin. What is missing is everything downstream. No human growth-plate expression, no
+  chondrocyte eQTL, and no functional experiment linking ZBTB38 genotype to any growth plate parameter
+  was retrieved, so the node stands as a well-replicated association with an unexploited mechanistic
+  handle rather than as a characterised growth gene.
+
+
+  Direct functional work on the locus does exist, and it moved this node''s grade. Parsons 2022
+
+  genotyped rs6764769 and rs724016 in 261 idiopathic-short-stature patients, showed the two SNPs
+  are
+
+  in linkage disequilibrium, and found the rs724016 GG genotype associated with lower birth length
+
+  (P = 0.01) and with a smaller height SDS gain over the first year of recombinant human growth
+
+  hormone in 93 treated patients (P = 0.02); ZBTB38 expression rose with age across 87 normal
+
+  children and young adults, and siRNA knockdown in SiHA cells increased proliferation without
+
+  altering MCM10 expression. So ZBTB38 genotype tracks a prenatal growth measure and a treatment
+
+  response, not only adult stature. What is still missing is a per-allele centimetre effect for
+
+  ZBTB38 in a general population and any demonstration that the gene acts in chondrocytes.'
 quantitative:
-- parameter: height variance explained jointly by the 20 first-generation GWAS loci including ZBTB38
+- parameter: height variance explained jointly by the 20 first-generation GWAS loci including
+    ZBTB38
   value: '3'
   unit: '%'
   conditions: n=13,665 discovery + 16,482 replication, European ancestry
   species: human
   source_ref: weedon2008
   uncertainty: ~5 cm separates the 6.2% carrying <=17 tall alleles from the 5.5% carrying >=27
+- parameter: idiopathic short stature patients genotyped for ZBTB38 rs724016 and rs6764769
+  value: '261'
+  unit: patients
+  conditions: 93 of them assessed for first-year rhGH response
+  species: human
+  source_ref: parsons2022
+  uncertainty: not applicable (count)
+- parameter: effect of rs724016 GG genotype on first-year height SDS gain on rhGH
+  value: lower
+  unit: qualitative
+  conditions: 93 treated ISS patients
+  species: human
+  source_ref: parsons2022
+  uncertainty: P=0.02; magnitude not stated in abstract
 localization:
 - 'human: germline; no growth plate expression data retrieved (gap g_l0l9_005)'
 human_evidence: direct
-human_evidence_note: Association established in ~30,000 humans with measured height and replicated in
-  an African-ancestry sample.
+human_evidence_note: Association established in ~30,000 humans with measured height and replicated
+  in an African-ancestry sample.
 species_basis:
 - human
 translation_risk: not_applicable
 translation_risk_reason: Human association genetics only; no animal claim is made.
 confidence: B
 claim_grades:
-- claim: Common variation at ZBTB38 is associated with adult height.
+- claim: Common variation at ZBTB38 is associated with adult height at genome-wide significance.
   grade: A
-  basis: Genome-wide significant in the discovery-plus-replication design of weedon2008 and replicated
-    in an independent ancestry (costajnior2024).
-- claim: ZBTB38 influences height by reading DNA methylation in growth plate chondrocytes.
+  basis: weedon2008 discovery plus follow-up genotyping; the locus persists in yengo2022.
+- claim: ZBTB38 genotype also tracks birth length and growth hormone treatment response.
+  grade: D
+  basis: Single cohort of 261 ISS patients with 93 treated (parsons2022); not replicated.
+- claim: ZBTB38 influences height through the growth plate.
   grade: E
-  basis: Inference from the gene's annotated methyl-CpG-binding function; no growth-plate data of any
-    kind (gap g_l0l9_005).
+  basis: No chondrocyte expression or perturbation evidence; the only functional work is siRNA
+    knockdown in a cervical carcinoma line. Flagged as inference. See gap g_l8gen_009.
 key_refs:
 - ref_id: weedon2008
   pmid: '18391952'
@@ -53,16 +91,25 @@ key_refs:
   first_author: Weedon MN
   year: 2008
   type: primary
-  one_line_finding: ZBTB38 is among 20 loci associated with adult height in the first-generation GWAS,
-    which together explain ~3% of height variance.
+  one_line_finding: ZBTB38 is among 20 loci associated with adult height in the first-generation
+    GWAS, which together explain ~3% of height variance.
 - ref_id: costajnior2024
   pmid: '38800625'
   doi: 10.1016/j.ymgmr.2024.101086
   first_author: Costa-Júnior DA
   year: 2024
   type: primary
-  one_line_finding: rs724016 at ZBTB38 is associated with height in an African-ancestry sickle cell anaemia
-    cohort, replicating the locus outside the discovery ancestry.
+  one_line_finding: rs724016 at ZBTB38 is associated with height in an African-ancestry sickle
+    cell anaemia cohort, replicating the locus outside the discovery ancestry.
+- ref_id: parsons2022
+  pmid: '35178492'
+  doi: 10.1210/jendso/bvac006
+  first_author: Parsons S
+  year: 2022
+  type: primary
+  one_line_finding: rs724016 GG in 261 ISS patients is associated with lower birth length (P=0.01)
+    and smaller first-year height SDS gain on rhGH (P=0.02); ZBTB38 expression rises with age
+    in normal children.
 open_questions:
 - g_l0l9_005
 last_verified: '2026-08-05'

@@ -43,6 +43,25 @@ As of this writing **every** flagged collision is a false positive of substring
 matching. That is worth stating explicitly so a later pass does not assume the
 detector found real problems and start merging.
 
+**Correction, Phase 3 (shard l0l9seam, 2026-08-05): the paragraph above was wrong.**
+One genuine duplicate existed and the detector never flagged it, because the two
+copies shared no substring: `acan_dosage_effect` (L5) and `acan_related_short_stature`
+(L11) were the same human phenotype — same cohort (gkourogianni2017, 103 individuals
+from 20 families), same three headline numbers, same mouse mechanism reference, two
+aliases held verbatim in common. Both were fully researched, which is why eight
+parallel sweeps did not notice. They were merged into the L11 node, with one edge
+redirected and five `quant/parameters.csv` rows repointed.
+
+The general lesson for later passes: `graph.py --duplicates` matches on shared
+substrings between ids and aliases, so it is good at catching gene/protein pairs
+(which D1 says to leave alone) and blind to the failure mode that actually matters —
+the same entity given two *different* names by two different sweeps. Cross-layer
+duplicates must be found by comparing cohorts, numbers and key_refs, not by name.
+The four stub merges made in the same pass (`giant_consortium` and
+`polygenic_architecture_height` into `height_gwas`, `pgs_ancestry_transferability`
+into `height_polygenic_score`, `uniparental_disomy_growth` into
+`genomic_imprinting_growth`) were likewise invisible to the substring matcher.
+
 ## D3 — Stub nodes are exempt from full schema, but not from vocabulary
 
 A stub carries only `id/name/type/layer/aliases/human_evidence/last_verified` and

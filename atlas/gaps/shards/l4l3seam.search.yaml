@@ -1,0 +1,95 @@
+searches:
+  - gap_id: g_l4l3_001
+    database: Europe PMC
+    exact_query_string: 'ABSTRACT:"growth plate" AND (ABSTRACT:estrogen OR ABSTRACT:estradiol) AND (ABSTRACT:Ihh OR ABSTRACT:"Indian hedgehog")'
+    filters: 'format=json, resultType=core, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 4
+    screened_count: 4
+    reason_none_qualified: >-
+      Of four hits, two are narrative reviews (PMID 14671005 Systemic and local regulation of
+      the growth plate; PMID 12682916 is an osteoblast MG63 study in which Indian hedgehog was
+      explicitly UNCHANGED by estrogen), one concerns the orphan receptor ERR-alpha rather
+      than ERalpha/ERbeta (PMID 17170100), and one (PMID 34014834, jin2021) reports only that
+      Ihh and PTHrP "differed among these groups" after ER antagonist treatment without stating
+      direction or magnitude. No primary study measures IHH after manipulating estradiol or an
+      estrogen receptor in a growth plate.
+  - gap_id: g_l4l3_001
+    database: Europe PMC
+    exact_query_string: '(ABSTRACT:estrogen OR ABSTRACT:estradiol) AND (ABSTRACT:"growth plate" OR ABSTRACT:chondrocyte) AND (ABSTRACT:"beta-catenin" OR ABSTRACT:Wnt OR ABSTRACT:Ihh OR ABSTRACT:"Indian hedgehog" OR ABSTRACT:Sox9)'
+    filters: 'format=json, resultType=core, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 17
+    screened_count: 10
+    reason_none_qualified: >-
+      Broader query to catch estrogen-to-local-pathway links generally. The ten most-cited hits
+      are articular-cartilage or osteoblast studies (ERalpha66 driving COL2A1 through Sp1/Sp3
+      and SOX9 in articular chondrocytes; ERbeta and mandibular condylar cartilage; ERR-alpha
+      and Sox9), a tamoxifen-inducible beta-catenin transgene in which the estrogen receptor
+      ligand-binding domain is only a genetic tool, or reviews. None reports growth plate IHH
+      after estrogen manipulation.
+
+  - gap_id: g_l4l3_002
+    database: Europe PMC
+    exact_query_string: '(ABSTRACT:"IGF-1" OR ABSTRACT:"IGF-I" OR ABSTRACT:IGF1R) AND ABSTRACT:"growth plate" AND (ABSTRACT:mTORC1 OR ABSTRACT:mTOR)'
+    filters: 'format=json, resultType=core, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 2
+    screened_count: 2
+    reason_none_qualified: >-
+      Only two records exist. PMID 19144108 (rapamycin in young rats) measures serum IGF-I as a
+      covariate and does not stimulate with IGF-1 or measure mTORC1 output in chondrocytes.
+      PMID 33668846 is a narrative review of the "Protein-Stat". Neither demonstrates IGF1R
+      activation of mTORC1 in cartilage.
+  - gap_id: g_l4l3_002
+    database: Europe PMC
+    exact_query_string: '(ABSTRACT:"IGF-1" OR ABSTRACT:"IGF-I" OR ABSTRACT:"insulin-like growth factor") AND ABSTRACT:chondrocyte AND (ABSTRACT:mTOR OR ABSTRACT:mTORC1 OR ABSTRACT:"S6 kinase")'
+    filters: 'format=json, resultType=core, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 5
+    screened_count: 5
+    reason_none_qualified: >-
+      All five are osteoarthritis or cartilage-repair studies in articular chondrocytes or
+      periosteal cells (SirT1/PTP1B, miR-206, HIF-1alpha in repair tissue, a rabbit scaffold
+      study, and the rapamycin rat study). None uses growth plate chondrocytes and none tests
+      whether mTORC1 is required for an IGF-1 effect.
+
+  - gap_id: g_l4l3_003
+    database: Europe PMC
+    exact_query_string: '(ABSTRACT:"thyroid hormone" OR ABSTRACT:T3 OR ABSTRACT:triiodothyronine) AND ABSTRACT:"growth plate" AND (ABSTRACT:Runx2 OR ABSTRACT:Mef2c)'
+    filters: 'format=json, resultType=core, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 3
+    screened_count: 3
+    reason_none_qualified: >-
+      PMID 17708712 (wang2007) is the T3/Wnt-beta-catenin paper and mentions Runx2 only in
+      passing; PMID 17259668 is a PPARgamma adipogenic-transdifferentiation study; PMID
+      31731600 is an HT-2 mycotoxin study in the C-28/I2 human chondrocyte line. None reports
+      Runx2 or Mef2c as a function of thyroid status in a growth plate.
+  - gap_id: g_l4l3_003
+    database: Europe PMC
+    exact_query_string: 'ABSTRACT:"thyroid hormone" AND (ABSTRACT:chondrocyte OR ABSTRACT:"growth plate") AND (ABSTRACT:Mef2c OR ABSTRACT:"Mef2" OR ABSTRACT:Hdac4)'
+    filters: 'format=json, resultType=core, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 1
+    screened_count: 1
+    reason_none_qualified: >-
+      The single hit (PMID 17659995) is a narrative review of endochondral ossification that
+      lists both thyroid hormone and MEF2/HDAC4 without linking them experimentally. There is
+      no primary study connecting thyroid hormone to MEF2C or HDAC4 in cartilage.
+
+  - gap_id: g_l4l3_010
+    database: Europe PMC
+    exact_query_string: '(ABSTRACT:dexamethasone OR ABSTRACT:glucocorticoid) AND (ABSTRACT:"growth plate" OR ABSTRACT:chondrocyte) AND (ABSTRACT:autophagy OR ABSTRACT:mTOR)'
+    filters: 'format=json, resultType=core, sort=CITED desc, no date limit'
+    date_run: '2026-08-05'
+    hit_count: 11
+    screened_count: 8
+    reason_none_qualified: >-
+      Every hit that measures anything mTOR-related uses rapamycin as an autophagy INDUCER in
+      an osteoarthritis model rather than measuring mTORC1 output after glucocorticoid
+      exposure (PMID 24691715, 38286393, 36196702, 35129051, 31330080, 36969240). The two
+      informative papers (PMID 24469312, 25535125) show RU486-blockable dexamethasone-induced
+      autophagy in ATDC5 and N1511 chondrocytes but do not immunoblot phospho-S6K1,
+      phospho-S6 or phospho-4E-BP1, so mTORC1 suppression is inferred, not shown. No study
+      reports REDD1/DDIT4 or KLF15 in cartilage after glucocorticoid.

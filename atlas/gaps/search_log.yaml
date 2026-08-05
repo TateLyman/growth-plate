@@ -1678,3 +1678,161 @@ searches:
     (41485130). The only human physeal loading experiment on record loads epiphysiodesis biopsies at 0.4 N and 0.77 Hz for
     30 minutes and reads out transcription, not matrix composition. Human physeal matrix has been characterised only WITHOUT
     load (xie2025, zoehrer2025).
+- gap_id: g_l8gen_001
+  database: Europe PMC
+  exact_query_string: (height OR stature) AND ("genome-wide association") AND ("pathway enrichment" OR "gene-set enrichment"
+    OR "tissue enrichment") AND (somatotropic OR "growth hormone receptor" OR GHR OR STAT5B OR IGFALS)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 114
+  screened_count: 25
+  reason_none_qualified: No hit performs a human height GWAS pathway-enrichment analysis that returns the somatotropic/GH-IGF
+    axis as an enriched set. Hits are dominated by livestock GWAS (deer antler weight, goat body conformation, cattle body
+    conformation, sheep growth), unrelated human traits (asthma, obesity subtyping, placental biology), and one relevant but
+    non-enrichment human paper (rare CNVs in GH/IGF-1 insensitivity, 2020). A parallel search substituting "pathway enrichment"
+    with the individual axis gene names returned the same pattern. The negative is therefore established at the level of the
+    published enrichment lists, not at the level of a formal test.
+- gap_id: g_l8gen_004
+  database: Europe PMC
+  exact_query_string: SHOX AND ("growth plate" OR physis OR chondrocyte) AND (human) AND (immunohistochemistry OR "in situ
+    hybridization" OR expression) AND (zone OR zonal OR resting OR proliferative OR hypertrophic)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 37
+  screened_count: 25
+  reason_none_qualified: No hit reports zone-resolved SHOX localization in human growth plate cartilage. The closest are a
+    hypothesis paper using SHOX expression and methylation in knee cartilage and cultured chondrocytes to argue for a sex
+    difference in dosage (no zonal resolution), and clinical genotype-phenotype series. Human growth plate tissue scarcity
+    (see human_growth_plate_tissue_scarcity) is the proximate reason.
+- gap_id: g_l8gen_005
+  database: Europe PMC
+  exact_query_string: COL2A1 AND ("height SDS" OR "height standard deviation score" OR "adult height") AND (missense OR "glycine
+    substitution") AND (haploinsufficiency OR deletion)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 44
+  screened_count: 25
+  reason_none_qualified: All qualifying hits are small case series, mixed-gene short-stature panels or narrative reviews.
+    None reports adult height stratified by COL2A1 mutation class. The largest relevant series (Zhan 2025, n=7 families; Turkish
+    series n=6) give childhood heights or GH responses only. The COL10A1 equivalent analysis (Meng 2025, n=128) has no COL2A1
+    counterpart.
+- gap_id: g_l8gen_011
+  database: Europe PMC
+  exact_query_string: ("assortative mating" OR homogamy) AND height AND (heritability OR "genetic variance") AND (bias OR
+    inflation OR overestimat)
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 378
+  screened_count: 25
+  reason_none_qualified: Hits are dominated by educational-attainment assortment, method papers on admixture and population
+    structure, and general assortative-mating theory. Several confirm the qualitative direction (assortment raises genetic
+    variance and relative similarity) but none reports a height-specific inflation factor for heritability, nor a corrected-versus-uncorrected
+    twin heritability comparison for stature. Sunde 2024 comes closest and is used as the nearest evidence.
+- gap_id: g_l8gen_013
+  database: Europe PMC
+  exact_query_string: ("growth plate" OR physis) AND ("DNA methylation" OR methylome OR "methylation array") AND (human) AND
+    (chondrocyte) AND (FIRST_PDATE:[2005-01-01 TO 2026-12-31])
+  filters: resultType=core, pageSize=25, date-limited 2005-2026
+  date_run: '2026-08-05'
+  hit_count: 306
+  screened_count: 25
+  reason_none_qualified: The screened hits are osteoarthritis articular-cartilage methylation studies, reviews of epigenetics
+    in skeletal disease, and rodent work (for example Dnmt1 and bone length in mouse growth plate chondrocytes, 2025). The
+    only human growth-plate-relevant methylome is McDonnell 2024, which covers 7-21 post-conception weeks only. No dataset
+    covers the human postnatal physis. Human growth plate tissue scarcity is the proximate cause.
+- gap_id: g_l8gen_014
+  database: Europe PMC
+  exact_query_string: ("epigenetic clock" OR "DNA methylation age" OR "epigenetic age acceleration") AND ("bone age" OR "skeletal
+    age" OR "Greulich" OR "epiphyseal fusion" OR "growth plate closure")
+  filters: resultType=core, pageSize=25, no date limit
+  date_run: '2026-08-05'
+  hit_count: 33
+  screened_count: 25
+  reason_none_qualified: 'None of the 33 hits relates an epigenetic clock to radiographic bone age or epiphyseal fusion in
+    humans. The set comprises non-human clocks (common dolphin, marsupials), forensic age estimation, adult bone-aging twin
+    studies, a 6-month GH-treatment epigenetic-age study in GH-deficient children without a bone-age endpoint, and general
+    longevity reviews. NOTE: a broader query on the same day did return two genuine growth-endpoint primaries (Simpkin 2017
+    height and Kim 2024 peak height velocity), which is why this gap is scoped to the skeletal-maturation endpoints specifically
+    and why the epigenetic_clock_growth node was re-graded from X to D.'
+- gap_id: g_l4l3_001
+  database: Europe PMC
+  exact_query_string: ABSTRACT:"growth plate" AND (ABSTRACT:estrogen OR ABSTRACT:estradiol) AND (ABSTRACT:Ihh OR ABSTRACT:"Indian
+    hedgehog")
+  filters: format=json, resultType=core, sort=CITED desc, no date limit
+  date_run: '2026-08-05'
+  hit_count: 4
+  screened_count: 4
+  reason_none_qualified: Of four hits, two are narrative reviews (PMID 14671005 Systemic and local regulation of the growth
+    plate; PMID 12682916 is an osteoblast MG63 study in which Indian hedgehog was explicitly UNCHANGED by estrogen), one concerns
+    the orphan receptor ERR-alpha rather than ERalpha/ERbeta (PMID 17170100), and one (PMID 34014834, jin2021) reports only
+    that Ihh and PTHrP "differed among these groups" after ER antagonist treatment without stating direction or magnitude.
+    No primary study measures IHH after manipulating estradiol or an estrogen receptor in a growth plate.
+- gap_id: g_l4l3_001
+  database: Europe PMC
+  exact_query_string: (ABSTRACT:estrogen OR ABSTRACT:estradiol) AND (ABSTRACT:"growth plate" OR ABSTRACT:chondrocyte) AND
+    (ABSTRACT:"beta-catenin" OR ABSTRACT:Wnt OR ABSTRACT:Ihh OR ABSTRACT:"Indian hedgehog" OR ABSTRACT:Sox9)
+  filters: format=json, resultType=core, sort=CITED desc, no date limit
+  date_run: '2026-08-05'
+  hit_count: 17
+  screened_count: 10
+  reason_none_qualified: Broader query to catch estrogen-to-local-pathway links generally. The ten most-cited hits are articular-cartilage
+    or osteoblast studies (ERalpha66 driving COL2A1 through Sp1/Sp3 and SOX9 in articular chondrocytes; ERbeta and mandibular
+    condylar cartilage; ERR-alpha and Sox9), a tamoxifen-inducible beta-catenin transgene in which the estrogen receptor ligand-binding
+    domain is only a genetic tool, or reviews. None reports growth plate IHH after estrogen manipulation.
+- gap_id: g_l4l3_002
+  database: Europe PMC
+  exact_query_string: (ABSTRACT:"IGF-1" OR ABSTRACT:"IGF-I" OR ABSTRACT:IGF1R) AND ABSTRACT:"growth plate" AND (ABSTRACT:mTORC1
+    OR ABSTRACT:mTOR)
+  filters: format=json, resultType=core, sort=CITED desc, no date limit
+  date_run: '2026-08-05'
+  hit_count: 2
+  screened_count: 2
+  reason_none_qualified: Only two records exist. PMID 19144108 (rapamycin in young rats) measures serum IGF-I as a covariate
+    and does not stimulate with IGF-1 or measure mTORC1 output in chondrocytes. PMID 33668846 is a narrative review of the
+    "Protein-Stat". Neither demonstrates IGF1R activation of mTORC1 in cartilage.
+- gap_id: g_l4l3_002
+  database: Europe PMC
+  exact_query_string: (ABSTRACT:"IGF-1" OR ABSTRACT:"IGF-I" OR ABSTRACT:"insulin-like growth factor") AND ABSTRACT:chondrocyte
+    AND (ABSTRACT:mTOR OR ABSTRACT:mTORC1 OR ABSTRACT:"S6 kinase")
+  filters: format=json, resultType=core, sort=CITED desc, no date limit
+  date_run: '2026-08-05'
+  hit_count: 5
+  screened_count: 5
+  reason_none_qualified: All five are osteoarthritis or cartilage-repair studies in articular chondrocytes or periosteal cells
+    (SirT1/PTP1B, miR-206, HIF-1alpha in repair tissue, a rabbit scaffold study, and the rapamycin rat study). None uses growth
+    plate chondrocytes and none tests whether mTORC1 is required for an IGF-1 effect.
+- gap_id: g_l4l3_003
+  database: Europe PMC
+  exact_query_string: (ABSTRACT:"thyroid hormone" OR ABSTRACT:T3 OR ABSTRACT:triiodothyronine) AND ABSTRACT:"growth plate"
+    AND (ABSTRACT:Runx2 OR ABSTRACT:Mef2c)
+  filters: format=json, resultType=core, sort=CITED desc, no date limit
+  date_run: '2026-08-05'
+  hit_count: 3
+  screened_count: 3
+  reason_none_qualified: PMID 17708712 (wang2007) is the T3/Wnt-beta-catenin paper and mentions Runx2 only in passing; PMID
+    17259668 is a PPARgamma adipogenic-transdifferentiation study; PMID 31731600 is an HT-2 mycotoxin study in the C-28/I2
+    human chondrocyte line. None reports Runx2 or Mef2c as a function of thyroid status in a growth plate.
+- gap_id: g_l4l3_003
+  database: Europe PMC
+  exact_query_string: ABSTRACT:"thyroid hormone" AND (ABSTRACT:chondrocyte OR ABSTRACT:"growth plate") AND (ABSTRACT:Mef2c
+    OR ABSTRACT:"Mef2" OR ABSTRACT:Hdac4)
+  filters: format=json, resultType=core, sort=CITED desc, no date limit
+  date_run: '2026-08-05'
+  hit_count: 1
+  screened_count: 1
+  reason_none_qualified: The single hit (PMID 17659995) is a narrative review of endochondral ossification that lists both
+    thyroid hormone and MEF2/HDAC4 without linking them experimentally. There is no primary study connecting thyroid hormone
+    to MEF2C or HDAC4 in cartilage.
+- gap_id: g_l4l3_010
+  database: Europe PMC
+  exact_query_string: (ABSTRACT:dexamethasone OR ABSTRACT:glucocorticoid) AND (ABSTRACT:"growth plate" OR ABSTRACT:chondrocyte)
+    AND (ABSTRACT:autophagy OR ABSTRACT:mTOR)
+  filters: format=json, resultType=core, sort=CITED desc, no date limit
+  date_run: '2026-08-05'
+  hit_count: 11
+  screened_count: 8
+  reason_none_qualified: Every hit that measures anything mTOR-related uses rapamycin as an autophagy INDUCER in an osteoarthritis
+    model rather than measuring mTORC1 output after glucocorticoid exposure (PMID 24691715, 38286393, 36196702, 35129051,
+    31330080, 36969240). The two informative papers (PMID 24469312, 25535125) show RU486-blockable dexamethasone-induced autophagy
+    in ATDC5 and N1511 chondrocytes but do not immunoblot phospho-S6K1, phospho-S6 or phospho-4E-BP1, so mTORC1 suppression
+    is inferred, not shown. No study reports REDD1/DDIT4 or KLF15 in cartilage after glucocorticoid.

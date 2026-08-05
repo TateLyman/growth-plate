@@ -7,16 +7,38 @@ aliases:
 type: protein
 layer: L4
 stub: false
-summary: 'ERalpha is the nuclear receptor that carries the growth-terminating action of estrogen. It transactivates
-  through two activation functions, AF-1 (ligand-independent, N-terminal) and AF-2 (ligand-dependent).
-  Mouse genetics dissociates them sharply: old female ERalpha-null mice continue growing, with tibiae
-  8.3% longer (P<0.01) and growth plate height 18% greater (P<0.05) than wild type, phenocopying human
-  ESR1 and aromatase deficiency; whereas mice lacking only ERalphaAF-1 have SHORTER tibiae (-4.9%, P<0.01)
-  and closed proximal tibial growth plates in every animal while all wild-type plates remained open (brjesson2012).
-  AF-1 deletion therefore yields a HYPERactive ERalpha for the closure function, meaning growth plate
-  closure is driven by ERalpha functions that do not require AF-1 and is actively opposed by AF-1. This
-  is a rare instance where a mouse experiment makes a mechanistic prediction that the human experiments
-  of nature (ESR1 inactivation, aromatase deficiency - covered in L7) then match phenotypically.'
+summary: 'ERalpha is the nuclear receptor that carries the growth-terminating action of estrogen.
+  It transactivates through two activation functions, AF-1 (ligand-independent, N-terminal) and
+  AF-2 (ligand-dependent). Mouse genetics dissociates them sharply: old female ERalpha-null mice
+  continue growing, with tibiae 8.3% longer (P<0.01) and growth plate height 18% greater (P<0.05)
+  than wild type, phenocopying human ESR1 and aromatase deficiency; whereas mice lacking only
+  ERalphaAF-1 have SHORTER tibiae (-4.9%, P<0.01) and closed proximal tibial growth plates in
+  every animal while all wild-type plates remained open (brjesson2012). AF-1 deletion therefore
+  yields a HYPERactive ERalpha for the closure function, meaning growth plate closure is driven
+  by ERalpha functions that do not require AF-1 and is actively opposed by AF-1. This is a rare
+  instance where a mouse experiment makes a mechanistic prediction that the human experiments
+  of nature (ESR1 inactivation, aromatase deficiency - covered in L7) then match phenotypically.
+
+
+  The human arm of that prediction is now attached rather than merely asserted. Smith 1994 described
+  a
+
+  28-year-old man homozygous for a disruptive ESR1 mutation who reached 204 cm with radiographically
+
+  incomplete epiphyseal closure and a documented history of continued linear growth into adulthood,
+
+  despite elevated serum estradiol and estrone, normal testosterone, and normal masculinisation
+  - so
+
+  the ligand was present, the androgen axis was intact, and only the receptor was missing. Lumbar
+
+  spine bone mineral density was 0.745 g/cm2, 3.1 SD below the young adult mean. Bernard 2017
+  adds
+
+  three homozygous ESR1 R394H siblings with delayed bone maturation. The mouse deletion and the
+  human
+
+  null therefore make the same statement about the same proposition by different routes.'
 quantitative:
 - parameter: tibial length in old female ERalpha-null vs wild-type mice
   value: '+8.3'
@@ -35,30 +57,75 @@ quantitative:
 - parameter: tibial length in old female ERalphaAF-1-null vs wild-type mice
   value: '-4.9'
   unit: '%'
-  conditions: 16-19 month old female mice; proximal tibial plates CLOSED in all AF-1-null and OPEN in
-    all wild type
+  conditions: 16-19 month old female mice; proximal tibial plates CLOSED in all AF-1-null and
+    OPEN in all wild type
   species: mouse
   source_ref: brjesson2012
   uncertainty: P<0.01
+- parameter: adult height, human homozygous ESR1 disruptive mutation
+  value: '204'
+  unit: cm
+  conditions: 28-year-old man, normal masculinisation, elevated estradiol and estrone, normal
+    testosterone
+  species: human
+  source_ref: smith1994
+  uncertainty: n=1
+- parameter: lumbar spine bone mineral density, same patient
+  value: '0.745'
+  unit: g/cm2
+  conditions: dual-energy absorptiometry
+  species: human
+  source_ref: smith1994
+  uncertainty: 3.1 SD below the young adult mean
 localization:
 - 'mouse growth plate: ERalpha required for closure; AF-1 opposes closure (brjesson2012)'
 - 'human growth plate: ERalpha protein not quantified by zone'
 human_evidence: direct
-human_evidence_note: Human ESR1 inactivating mutations cause continued growth and unfused epiphyses in
-  adulthood; those case reports are held in L7 and are not duplicated here.
+human_evidence_note: A human ESR1 loss-of-function male with measured adult height, radiographic
+  epiphyseal status, gonadotropins and bone density, plus independent ESR1 loss-of-function families.
 species_basis:
-- mouse
 - human
+- mouse
 translation_risk: low
 translation_risk_reason: Unusually, the mouse loss-of-function phenotype matches the human experiment
   of nature; the AF-1/AF-2 dissection, however, is mouse-only.
-confidence: B
+confidence: A
 key_refs:
 - ref_id: brjesson2012
   first_author: Börjesson AE
   year: 2012
   type: primary
-  one_line_finding: ERalpha-null female mice keep growing (tibia +8.3%, plate height +18%) while ERalphaAF-1-null
-    mice close their growth plates and have shorter tibiae (-4.9%).
+  one_line_finding: ERalpha-null female mice keep growing (tibia +8.3%, plate height +18%) while
+    ERalphaAF-1-null mice close their growth plates and have shorter tibiae (-4.9%).
   pmid: '22414805'
+- ref_id: smith1994
+  pmid: '8090165'
+  doi: 10.1056/nejm199410203311604
+  first_author: Smith EP
+  year: 1994
+  type: primary
+  one_line_finding: A man homozygous for a disruptive ESR1 mutation reached 204 cm with incomplete
+    epiphyseal closure and continued linear growth into adulthood, despite elevated estradiol
+    and normal testosterone.
+- ref_id: bernard2017
+  pmid: '27754803'
+  doi: 10.1210/jc.2016-2749
+  first_author: Bernard V
+  year: 2017
+  type: primary
+  one_line_finding: Two sisters and one brother homozygous for ESR1 R394H failed to enter puberty
+    and had delayed bone maturation.
 last_verified: '2026-08-05'
+claim_grades:
+- claim: ERalpha function is required for epiphyseal fusion, and losing it permits continued longitudinal
+    growth past the normal age of closure.
+  grade: A
+  basis: Mouse germline ERalpha-null females keep growing (tibia +8.3%, plate height +18%; brjesson2012)
+    and a human ESR1-null male reached 204 cm with unfused epiphyses despite elevated estradiol
+    (smith1994), with independent ESR1 loss-of-function families showing delayed bone maturation
+    (bernard2017).
+- claim: Growth plate closure is driven by ERalpha functions that do not require AF-1 and is actively
+    opposed by AF-1.
+  grade: D
+  basis: Single mouse study dissociating AF-1 from AF-2 (brjesson2012); no human allele separates
+    the activation functions.

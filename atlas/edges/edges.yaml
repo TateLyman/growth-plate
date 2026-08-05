@@ -9921,6 +9921,7 @@ edges:
   confidence: A
   notes: 'Severity ordering across DOMAINS holds: K650E (kinase domain, lethal) activates more strongly than G380R (transmembrane,
     viable). It does NOT hold within the K650 pair - see e00004.'
+  traversal_usable: true
 - edge_id: e00766
   source: hypochondroplasia
   target: fgfr3_receptor
@@ -9938,6 +9939,7 @@ edges:
   confidence: A
   notes: 'The weak allele of the series and therefore the human dose control for achondroplasia: same molecular lesion class,
     smaller magnitude, adult stature overlapping the lower normal range.'
+  traversal_usable: true
 - edge_id: e00767
   source: thanatophoric_dysplasia
   target: fgfr3_receptor
@@ -9956,6 +9958,7 @@ edges:
   confidence: A
   notes: 'Critically non-monotonic at the tissue level: K650E growth plates were BETTER preserved than R248C and Y373C plates,
     so severity of receptor activation and severity of growth plate disorganisation are not monotonically related.'
+  traversal_usable: true
 - edge_id: e00768
   source: saddan_syndrome
   target: fgfr3_receptor
@@ -9973,6 +9976,7 @@ edges:
   notes: 'LOAD-BEARING SCOPE LIMIT for every FGFR3-inhibitor edge in this atlas: phenotype severity is NOT monotonic in kinase
     output within the K650E/K650M pair, even though it is monotonic across K650E vs G380R. Reducing scalar kinase output is
     therefore not by itself predictive of benefit.'
+  traversal_usable: true
 - edge_id: e00769
   source: achondroplasia
   target: fgfr3_mapk_branch
@@ -9991,6 +9995,7 @@ edges:
   - murakami2004
   confidence: B
   gap_id: g_l3core_008
+  traversal_usable: true
 - edge_id: e00770
   source: thanatophoric_dysplasia
   target: fgfr3_mapk_branch
@@ -10003,6 +10008,7 @@ edges:
   refs:
   - krejci2008
   confidence: B
+  traversal_usable: true
 - edge_id: e00771
   source: hypochondroplasia
   target: fgfr3_mapk_branch
@@ -10018,6 +10024,7 @@ edges:
   confidence: B
   notes: ERK activation strength does not order the clinical series either - N540K (mildest) activates ERK comparably to K650E
     (lethal). Whatever grades the phenotype is not scalar ERK output alone.
+  traversal_usable: true
 - edge_id: e00772
   source: thanatophoric_dysplasia
   target: fgfr3_stat1_branch
@@ -10039,6 +10046,7 @@ edges:
   notes: 'CONTRADICTION: krejci2008 found the TD1 allele R248C does NOT activate STAT1 in RCS/293T, whereas legeaimallet1998
     reported ligand-independent STAT1 activation in human TD1 fetal chondrocytes. The disagreement is cell-background versus
     human-cell and is unresolved.'
+  traversal_usable: true
 - edge_id: e00773
   source: achondroplasia
   target: fgfr3_stat1_branch
@@ -10056,6 +10064,7 @@ edges:
   notes: Negative evidence. The STAT1 arm must NOT be assumed engaged by the achondroplasia allele; STAT1 activation appears
     restricted to K650E/K650M, which together account for a small minority of FGFR3-related skeletal dysplasia. Recorded as
     an unsigned correlation so it is not traversed as a signed mechanism.
+  traversal_usable: false
 - edge_id: e00774
   source: saddan_syndrome
   target: fgfr3_stat1_branch
@@ -10070,6 +10079,7 @@ edges:
   confidence: D
   notes: 'Relevant to the K650E/K650M lethality dissociation: both alleles activate STAT1 and both activate ERK, so neither
     branch''s on/off state explains why K650M is survivable and K650E is not.'
+  traversal_usable: true
 - edge_id: e00775
   source: achondroplasia
   target: npr2_receptor
@@ -10090,6 +10100,7 @@ edges:
   gap_id: g_l12l7_008
   notes: Crosstalk is post-translational only - GC-B protein levels are unchanged - which is why the receptor is still present
     to be agonised by CNP analogues in achondroplasia.
+  traversal_usable: true
 - edge_id: e00776
   source: acromesomelic_dysplasia_maroteaux
   target: npr2_receptor
@@ -10104,6 +10115,7 @@ edges:
   - bartels2004
   confidence: A
   notes: The zero point of the human CNP dosage series and the mechanistic negative control for vosoritide.
+  traversal_usable: true
 - edge_id: e00777
   source: acromesomelic_dysplasia_maroteaux
   target: cgmp_second_messenger
@@ -10119,6 +10131,7 @@ edges:
   - bartels2004
   - olney2006
   confidence: B
+  traversal_usable: true
 - edge_id: e00778
   source: npr2_heterozygous_short_stature
   target: npr2_receptor
@@ -10136,6 +10149,7 @@ edges:
   - hisadooliva2015
   - bartels2004
   confidence: A
+  traversal_usable: true
 - edge_id: e00779
   source: npr2_gain_of_function_tall
   target: npr2_receptor
@@ -10156,6 +10170,7 @@ edges:
   notes: V883M (tall WITH scoliosis and macrodactyly) and R655C (tall WITHOUT skeletal deformity) show that ligand-independent
     basal signalling and amplified ligand-dependent signalling are not interchangeable in the growth plate. No pooled effect
     size in cm or SDS exists for NPR2 gain of function.
+  traversal_usable: true
 - edge_id: e00780
   source: npr2_gain_of_function_tall
   target: cgmp_second_messenger
@@ -10172,6 +10187,7 @@ edges:
   - miura2012
   - hannema2013
   confidence: B
+  traversal_usable: true
 - edge_id: e00781
   source: nppc_duplication_tall_stature
   target: cnp_protein
@@ -10187,6 +10203,7 @@ edges:
   - bocciardi2007
   - ko2015
   confidence: A
+  traversal_usable: true
 - edge_id: e00782
   source: nppc_duplication_tall_stature
   target: npr2_receptor
@@ -10204,6 +10221,7 @@ edges:
   confidence: C
   notes: Written at C rather than A because no receptor-level or cGMP measurement exists in NPPC-duplication patients; the
     ligand-to-receptor step is inferred from the dose-response of the series as a whole.
+  traversal_usable: true
 - edge_id: e00783
   source: jansen_metaphyseal_chondrodysplasia
   target: pth1r_receptor
@@ -10220,6 +10238,7 @@ edges:
   - saito2018
   confidence: A
   notes: HALF 1 OF 2 of the matched human PTH1R pair. Partner edge e00020 carries the opposite sign.
+  traversal_usable: true
 - edge_id: e00784
   source: blomstrand_chondrodysplasia
   target: pth1r_receptor
@@ -10239,6 +10258,7 @@ edges:
   confidence: A
   notes: HALF 2 OF 2 of the matched human PTH1R pair. Jansen and Blomstrand are the same receptor perturbed in opposite directions
     in humans, and together they establish the direction of the timing control without requiring any animal model.
+  traversal_usable: true
 - edge_id: e00785
   source: jansen_metaphyseal_chondrodysplasia
   target: pthrp_ihh_feedback_loop
@@ -10255,6 +10275,7 @@ edges:
   - saito2018
   - schipani1997
   confidence: B
+  traversal_usable: true
 - edge_id: e00786
   source: blomstrand_chondrodysplasia
   target: pthrp_ihh_feedback_loop
@@ -10272,6 +10293,7 @@ edges:
   notes: 'Read against e00021, the pair establishes in humans what the mouse knockouts establish in mice: PTH1R signalling
     sets the timing of the proliferative-to-hypertrophic transition, more signal delays it and less signal advances it, and
     stature is the integral of that timing decision.'
+  traversal_usable: true
 - edge_id: e00787
   source: pseudohypoparathyroidism
   target: pthrp_ihh_feedback_loop
@@ -10290,6 +10312,7 @@ edges:
   confidence: B
   notes: 'The third member of the human PTH1R series: reduced PTHrP-PTH1R-cAMP signalling accelerates exit of proliferative
     chondrocytes into hypertrophy, the exact opposite of Jansen.'
+  traversal_usable: true
 - edge_id: e00788
   source: noonan_syndrome
   target: mek1_erk_chondrocyte
@@ -10309,6 +10332,7 @@ edges:
   confidence: B
   notes: 'Mechanistically adjacent to achondroplasia - the same cascade - and it bounds how much of the achondroplasia phenotype
     scalar MAPK activation alone can explain: raising RAS/MAPK flux germline costs roughly 1-2 SDS, not the 6 SDS of achondroplasia.'
+  traversal_usable: true
 - edge_id: e00789
   source: marfan_syndrome
   target: tgfb_signaling_chondrocyte
@@ -10327,6 +10351,7 @@ edges:
   notes: Sign is opposite to every other structural-matrix disorder in L11. Consistent in direction with the mouse result
     that the canonical TGF-beta arm restrains terminal differentiation, so more signal should delay hypertrophy and lengthen
     the growth period - but that chain is inferred, not measured.
+  traversal_usable: true
 - edge_id: e00790
   source: loeys_dietz_syndrome
   target: tgfbr2_receptor
@@ -10346,6 +10371,7 @@ edges:
     an overgrowth phenotype resembling ligand excess. One human double perturbation is on record - the t(1;2)(q41;q37.1) patient
     carried both an NPPC gain and TGFB2 haploinsufficiency, so that individual''s overgrowth cannot be attributed to either
     lesion alone.'
+  traversal_usable: true
 - edge_id: e00791
   source: cleidocranial_dysplasia
   target: runx2_tf
@@ -10363,6 +10389,7 @@ edges:
   confidence: A
   notes: 'The asymmetric dose sensitivity is the point: one functional RUNX2 allele is nearly sufficient for the hypertrophic
     transition in the growth plate while being clearly insufficient for intramembranous bone, in the same individual.'
+  traversal_usable: true
 - edge_id: e00792
   source: acan_related_short_stature
   target: aggrecan_acan
@@ -10381,6 +10408,7 @@ edges:
   notes: Dissociates height from skeletal maturation. Advanced bone age is not obligate - ACAN mutations also occur in nonfamilial
     short stature without accelerated skeletal maturation. The cellular mechanism (reduced matrix and impaired hypertrophy
     with proliferation spared) is MOUSE only.
+  traversal_usable: true
 - edge_id: e00793
   source: schmid_metaphyseal_chondrodysplasia
   target: collagen_type_x
@@ -10398,6 +10426,7 @@ edges:
   notes: 'Abstract-only source for the mutation series. The structure-function mapping is among the sharpest in human skeletal
     genetics: the zone in which a matrix gene is expressed predicts which radiographic compartment fails. Eliminating a hypertrophic-zone
     matrix protein costs surprisingly little final height.'
+  traversal_usable: true
 - edge_id: e00794
   source: laron_syndrome
   target: gh_receptor
@@ -10411,6 +10440,7 @@ edges:
   refs:
   - guevaraaguirre2025
   confidence: A
+  traversal_usable: true
 - edge_id: e00795
   source: laron_syndrome
   target: igf1_systemic
@@ -10427,6 +10457,7 @@ edges:
   confidence: A
   notes: GH-IGF-I loss produces DISproportionate growth, contradicting the textbook assumption that the axis scales the body
     uniformly - it acts preferentially on the long bones of the lower limb.
+  traversal_usable: true
 - edge_id: e00796
   source: laron_syndrome
   target: jak2_kinase
@@ -10441,6 +10472,7 @@ edges:
   - guevaraaguirre2025
   - hwa2005
   confidence: E
+  traversal_usable: true
 - edge_id: e00797
   source: stat5b_deficiency
   target: stat5b_tf
@@ -10458,6 +10490,7 @@ edges:
   notes: Places the lesion one step below the GH receptor and shows the entire growth-promoting output of GH runs through
     a single transcription factor. STAT5B deficiency is also an immunodeficiency - the pleiotropy is a mechanistic clue, not
     noise.
+  traversal_usable: true
 - edge_id: e00798
   source: stat5b_deficiency
   target: igf1_systemic
@@ -10471,6 +10504,7 @@ edges:
   refs:
   - hwa2005
   confidence: A
+  traversal_usable: true
 - edge_id: e00799
   source: stat5b_deficiency
   target: igfbp3
@@ -10483,6 +10517,7 @@ edges:
   refs:
   - hwa2005
   confidence: A
+  traversal_usable: true
 - edge_id: e00800
   source: stat5b_deficiency
   target: als_igfals
@@ -10497,6 +10532,7 @@ edges:
   confidence: A
   notes: With e00034 and e00035 this shows STAT5b drives the whole ternary complex, not IGF-I alone - which is why the circulating
     IGF-I deficit is not simply correctable by giving IGF-I.
+  traversal_usable: true
 - edge_id: e00801
   source: aromatase_deficiency_human
   target: aromatase_cyp19a1
@@ -10511,6 +10547,7 @@ edges:
   - morishima1995
   - carani1997
   confidence: A
+  traversal_usable: true
 - edge_id: e00802
   source: estrogen_resistance_esr1
   target: estrogen_receptor_alpha
@@ -10527,6 +10564,7 @@ edges:
   confidence: B
   notes: The receptor-side counterpart of aromatase deficiency; rules out the alternative that aromatase deficiency acts through
     some non-estrogenic product of the enzyme.
+  traversal_usable: true
 - edge_id: e00803
   source: igf1r_mutation_human
   target: igf1_receptor
@@ -10543,6 +10581,7 @@ edges:
   confidence: B
   notes: Fewer receptors versus worse receptors producing the same phenotype is the human demonstration that IGF-I signalling
     CAPACITY, not receptor identity, sets prenatal and postnatal skeletal growth.
+  traversal_usable: true
 - edge_id: e00804
   source: pappa2_deficiency
   target: pappa2_protease
@@ -10559,6 +10598,7 @@ edges:
   confidence: B
   notes: The cleanest human demonstration that the growth plate responds to FREE rather than total IGF-I - a distinction invisible
     to every routine assay.
+  traversal_usable: true
 - edge_id: e00805
   source: vosoritide
   target: cgmp_second_messenger
@@ -10578,6 +10618,7 @@ edges:
   gap_id: g_mr002_h3
   notes: Exposure predicts systemic target ENGAGEMENT but not EFFECT. This is one of the three legs of contradiction C-L3-03
     and must not be read as showing the gating question is settled.
+  traversal_usable: false
 - edge_id: e00806
   source: vosoritide
   target: pkg2_kinase
@@ -10596,6 +10637,7 @@ edges:
   gap_id: g_mr002_h1
   notes: One of three competing hypotheses for why CNP-analogue efficacy may be gated DOWNSTREAM of the receptor the drug
     binds (contradiction C-L3-03). This edge asserts the link is UNTESTED, not that it is absent.
+  traversal_usable: false
 - edge_id: e00807
   source: navepegritide
   target: pkg2_kinase
@@ -10611,6 +10653,7 @@ edges:
   - agoston2007
   confidence: speculative
   gap_id: g_mr002_h1
+  traversal_usable: false
 - edge_id: e00808
   source: navepegritide
   target: cgmp_second_messenger
@@ -10625,6 +10668,7 @@ edges:
   - fda_yuviwel_label_2026
   - nct05598320
   confidence: A
+  traversal_usable: true
 - edge_id: e00809
   source: npr2_agonist_class
   target: npr2_receptor
@@ -10643,6 +10687,7 @@ edges:
   - fda_yuviwel_label_2026
   - ozasa2005
   confidence: A
+  traversal_usable: true
 - edge_id: e00810
   source: vosoritide
   target: fgfr3_mapk_branch
@@ -10661,6 +10706,7 @@ edges:
   confidence: C
   notes: 'This is a DOWNSTREAM BYPASS, not a correction of the causal receptor: it does not reduce FGFR3 signalling, it opposes
     its output.'
+  traversal_usable: true
 - edge_id: e00811
   source: cnp_analog_pk_challenge
   target: npr2_receptor
@@ -10680,6 +10726,7 @@ edges:
   - fda_voxzogo_label_2025
   confidence: speculative
   gap_id: g_mr002_h2
+  traversal_usable: false
 - edge_id: e00812
   source: soluble_fgfr3_decoy
   target: fgfr3_receptor
@@ -10705,6 +10752,7 @@ edges:
     FGFR3-G380R signalling in the human growth plate is substantially ligand-INDEPENDENT - consistent with the FRET finding
     that G380R raises unliganded dimerisation - or (b) a ~100 kDa glycoprotein cannot reach chondrocytes inside avascular,
     proteoglycan-dense cartilage. These were never distinguished because plate exposure was never measured.
+  traversal_usable: true
 - edge_id: e00813
   source: fgfr3_tyrosine_kinase_inhibitor
   target: fgfr3_receptor
@@ -10726,6 +10774,7 @@ edges:
   gap_id: g_mr002_allele
   notes: The class rests on a premise the human genetics does not support - that phenotype severity tracks kinase output monotonically.
     See e00004.
+  traversal_usable: true
 - edge_id: e00814
   source: infigratinib_growth
   target: fgfr3_mapk_branch
@@ -10740,6 +10789,7 @@ edges:
   - savarirayan2026infig
   - krejci2008
   confidence: E
+  traversal_usable: true
 - edge_id: e00815
   source: infigratinib_growth
   target: fgfr1_receptor
@@ -10758,6 +10808,7 @@ edges:
   notes: 'Relevant to the imatinib growth-toxicity precedent: chronic ATP-competitive kinase inhibition across childhood cost
     -0.5 height Z overall and -0.8 Z when started prepubertally, attributed to off-target PDGFR/KIT inhibition. The net effect
     of an FGFR3 TKI is an on-target gain minus an off-target loss that no achondroplasia trial has run long enough to separate.'
+  traversal_usable: true
 - edge_id: e00816
   source: infigratinib_growth
   target: fgfr2_receptor
@@ -10773,6 +10824,7 @@ edges:
   - ryu2022
   - delezoide1998
   confidence: D
+  traversal_usable: true
 - edge_id: e00817
   source: meclizine_repurposing
   target: fgfr3_receptor
@@ -10794,6 +10846,7 @@ edges:
   notes: An agent with documented adequate systemic exposure and no toxicity that still produced no measurable human linear-growth
     effect. The single-arm design cannot exclude a small effect, and the arm-span/height dissociation (6/9 exceeding 6 cm/yr
     for arm span versus 1/9 for height) is uninterpretable at this sample size.
+  traversal_usable: true
 - edge_id: e00818
   source: abaloparatide
   target: pthrp_ihh_feedback_loop
@@ -10810,6 +10863,7 @@ edges:
   - hppner2025
   confidence: speculative
   gap_id: g_l12l7_006
+  traversal_usable: false
 - edge_id: e00819
   source: teriparatide
   target: pthrp_ihh_feedback_loop
@@ -10831,6 +10885,7 @@ edges:
   gap_id: g_l12l7_006
   notes: The near-miss datum is confounded by two different underlying diseases with different intrinsic growth trajectories
     and has no untreated control, so it cannot be read as a PTH1R growth effect.
+  traversal_usable: false
 - edge_id: e00820
   source: recombinant_human_gh
   target: stat5b_tf
@@ -10846,6 +10901,7 @@ edges:
   - hwa2005
   - martn2026
   confidence: B
+  traversal_usable: true
 - edge_id: e00821
   source: recombinant_human_gh
   target: jak2_kinase
@@ -10858,6 +10914,7 @@ edges:
   refs:
   - hwa2005
   confidence: E
+  traversal_usable: true
 - edge_id: e00822
   source: recombinant_human_gh
   target: igf1_systemic
@@ -10873,6 +10930,7 @@ edges:
   - fda_skytrofa_label_2026
   - martn2026
   confidence: A
+  traversal_usable: true
 - edge_id: e00823
   source: transcon_growth_hormone
   target: gh_receptor
@@ -10887,6 +10945,7 @@ edges:
   - fda_skytrofa_label_2026
   - ying2026
   confidence: A
+  traversal_usable: true
 - edge_id: e00824
   source: transcon_growth_hormone
   target: igf1_systemic
@@ -10899,6 +10958,7 @@ edges:
   refs:
   - fda_skytrofa_label_2026
   confidence: A
+  traversal_usable: true
 - edge_id: e00825
   source: transcon_growth_hormone
   target: gh_pulse_pattern_hypothesis
@@ -10920,6 +10980,7 @@ edges:
     hypothesis node and the relation is evidential, not mechanistic. COUNTERWEIGHT: somavaratan, a different long-acting GH
     construct, was terminated because "the primary endpoint of non-inferiority to daily therapy was not achieved" (termination_reason
     scientific_null), so long-acting GH is not automatically equivalent and this result is construct-specific.'
+  traversal_usable: false
 - edge_id: e00826
   source: igf1_gh_combination_therapy
   target: igf1_receptor
@@ -10940,6 +11001,7 @@ edges:
   notes: The trial was stopped for "strategic reasons", which carries NO evidential content about the biology. A six-year
     dataset with a positive interim signal exists and appears unanalysed for the separability question. This must never be
     cited as a negative result.
+  traversal_usable: true
 - edge_id: e00827
   source: pegvisomant
   target: igf1_systemic
@@ -10958,6 +11020,7 @@ edges:
   notes: 'Runs the growth axis backwards and is the only agent in L12 used deliberately to REDUCE growth. With octreotide
     it dissects source suppression from receptor blockade: X-linked acrogigantism responds poorly to somatostatin analogues
     but is controlled by GH receptor blockade, so the two are not interchangeable in humans.'
+  traversal_usable: true
 - edge_id: e00828
   source: aromatase_inhibitor_anastrozole
   target: aromatase_cyp19a1
@@ -10975,6 +11038,7 @@ edges:
   confidence: A
   notes: 'The dissociation is the finding: a threefold difference in the intensity of oestrogen suppression bought no additional
     predicted height, which argues that oestrogen suppression is not the rate-limiting variable for height gain in this population.'
+  traversal_usable: true
 - edge_id: e00829
   source: aromatase_inhibitor_letrozole
   target: estradiol_hormone
@@ -10989,6 +11053,7 @@ edges:
   - zegarra2024
   confidence: A
   notes: The clearest example in L12 of an interim surrogate gain that does not convert.
+  traversal_usable: true
 - edge_id: e00830
   source: aromatase_inhibitor_anastrozole
   target: estradiol_hormone
@@ -11002,6 +11067,7 @@ edges:
   - zegarra2024
   - alrayess2025
   confidence: A
+  traversal_usable: true
 - edge_id: e00831
   source: oxandrolone
   target: androgen_receptor
@@ -11019,6 +11085,7 @@ edges:
   confidence: B
   notes: The non-aromatisable androgen was the WEAKER agent, which is the opposite of what a pure-androgen model predicts
     and is human pharmacological evidence for a genuine oestrogen requirement in the pubertal height gain.
+  traversal_usable: true
 - edge_id: e00832
   source: estrogen_low_dose_therapy
   target: estrogen_receptor_alpha
@@ -11037,6 +11104,7 @@ edges:
   notes: The clearest clinical demonstration that plate closure is a dose- and duration-dependent pharmacological endpoint
     rather than a fixed developmental clock. The complementary upper arm of the dose-response - high-dose oestrogen to reduce
     excessive height - has been abandoned in practice, removing it from contemporary human data.
+  traversal_usable: true
 - edge_id: e00833
   source: chemotherapy_growth_plate_toxicity
   target: growth_hormone
@@ -11055,6 +11123,7 @@ edges:
   notes: 'The reason GH replacement only partially rescues these children: an irradiated plate is a damaged EFFECTOR, so restoring
     the systemic signal cannot restore the response. Quantifying the split between direct plate injury and endocrine deficiency
     in an individual survivor remains unsolved.'
+  traversal_usable: true
 - edge_id: e00834
   source: hif1a_chondrocyte
   target: hypoxia_necrosis_at_fusion
@@ -11072,6 +11141,7 @@ edges:
   - schipani2001
   confidence: speculative
   gap_id: g_l12l7_003
+  traversal_usable: false
 - edge_id: e00835
   source: vegfa_growth_plate
   target: bony_bridge_formation
@@ -11095,6 +11165,7 @@ edges:
   notes: 'The morphological basis in humans is classical: mineralisation demarcated by tide lines spreads inward from BOTH
     plate surfaces, first union is by mineralised cartilage as a form of metaplastic bone, and only afterwards is a restricted
     region perforated and replaced by bone and marrow.'
+  traversal_usable: false
 - edge_id: e00836
   source: runx2_tf
   target: bony_bridge_formation
@@ -11113,6 +11184,7 @@ edges:
   - samvelyan2022
   confidence: speculative
   gap_id: g_l12l7_010
+  traversal_usable: false
 - edge_id: e00837
   source: estrogen_receptor_alpha
   target: epiphyseal_fusion
@@ -11134,6 +11206,7 @@ edges:
   notes: Growth plate closure is driven by ERalpha functions that do NOT require AF-1 and is actively OPPOSED by AF-1 - a
     rare case where a mouse experiment makes a mechanistic prediction that the human experiments of nature then match phenotypically.
     Not marked speculative because the human loss-of- function phenotype is itself a direct fusion-endpoint observation.
+  traversal_usable: true
 - edge_id: e00838
   source: aromatase_cyp19a1
   target: epiphyseal_fusion
@@ -11153,6 +11226,7 @@ edges:
   confidence: A
   notes: With e00073 this is the only fusion mechanism in the atlas with direct human interventional evidence, and it rests
     on a handful of individuals.
+  traversal_usable: true
 - edge_id: e00839
   source: estradiol_hormone
   target: epiphyseal_fusion
@@ -11175,6 +11249,7 @@ edges:
   notes: The stimulating and terminating actions of estradiol are separated by well under one order of magnitude - half-maximal
     pubertal growth acceleration at 20 pmol/L in girls and 6.5 pmol/L in boys, against a closure threshold near 73 pmol/L.
     This defines the exposure a growth-sparing therapy must stay below. Confidence D because the threshold rests on n=1.
+  traversal_usable: true
 - edge_id: e00840
   source: clonal_exhaustion
   target: growth_cessation
@@ -11194,6 +11269,7 @@ edges:
   - chu2025
   confidence: speculative
   gap_id: g_l12l7_001
+  traversal_usable: false
 - edge_id: e00841
   source: clonal_exhaustion
   target: stem_cell_exhaustion_fusion
@@ -11210,6 +11286,7 @@ edges:
   - newton2019
   confidence: speculative
   gap_id: g_l12l7_001
+  traversal_usable: false
 - edge_id: e00842
   source: rz_depletion_causes_fusion
   target: epiphyseal_fusion
@@ -11233,6 +11310,7 @@ edges:
   notes: 'Two readings of the same correlation compete: depletion CAUSES fusion, or depletion is the state of the plate at
     an independently triggered (in humans, oestrogen-driven) fusion event. No human resting-zone count at fusion exists to
     discriminate.'
+  traversal_usable: false
 - edge_id: e00843
   source: pthrp_positive_resting_chondrocyte
   target: stem_cell_exhaustion_fusion
@@ -11251,6 +11329,7 @@ edges:
   - chu2026
   confidence: speculative
   gap_id: g_l12l7_002
+  traversal_usable: false
 - edge_id: e00844
   source: human_resting_zone_chondrocyte
   target: stem_cell_exhaustion_fusion
@@ -11269,6 +11348,7 @@ edges:
   - avijgan2026
   confidence: speculative
   gap_id: g_l12l7_002
+  traversal_usable: false
 - edge_id: e00845
   source: soc_formation_triggers_stemness
   target: stem_cell_exhaustion_fusion
@@ -11288,6 +11368,7 @@ edges:
   confidence: speculative
   gap_id: g_l2stem_003
   notes: Load-bearing for fusion models in L7 and must be cited as a hypothesis, not a mechanism.
+  traversal_usable: false
 - edge_id: e00846
   source: finite_proliferative_capacity_model
   target: growth_cessation
@@ -11311,6 +11392,7 @@ edges:
   gap_id: g_l12l7_009
   notes: Unresolved tension with mouse clonal tracing showing progenitors ACQUIRE self-renewal postnatally rather than only
     spending down a fixed budget.
+  traversal_usable: false
 - edge_id: e00847
   source: replicative_senescence_chondrocyte
   target: growth_cessation
@@ -11329,6 +11411,7 @@ edges:
   notes: The decisive test of cell-autonomous replicative senescence in the growth plate was done and it failed. "Growth plate
     chondrocytes undergo replicative senescence" should be treated as UNSUPPORTED in its cell-autonomous form despite being
     routinely re-asserted as positive in secondary literature.
+  traversal_usable: false
 - edge_id: e00848
   source: telomere_attrition_chondrocyte
   target: growth_cessation
@@ -11349,6 +11432,7 @@ edges:
   gap_id: g_l2stem_007
   notes: 'Grade X: commonly repeated in reviews, untraceable to primary data in its human form. Recorded so that the claim
     is visible and marked, not so that it can be traversed.'
+  traversal_usable: false
 - edge_id: e00849
   source: delayed_senescence_hypothesis
   target: epiphyseal_fusion
@@ -11368,6 +11452,7 @@ edges:
   notes: 'The reciprocal of the oestrogen experiment: oestrogen accelerates the senescent decline and fusion occurs earlier,
     glucocorticoid slows it and fusion occurs later. Together they support a proliferation-counting clock rather than a chronological
     one - in rabbit.'
+  traversal_usable: true
 - edge_id: e00850
   source: chondrocyte_apoptosis_hz
   target: apoptosis_at_fusion
@@ -11387,6 +11472,7 @@ edges:
   notes: The only one of the six candidate fusion mechanisms that has been tested in human fusing tissue, and it failed. Directly
     contradicts the apoptosis-centred account that dominates the rodent hypertrophic- chondrocyte literature. No second human
     fusing plate has ever been reported, so it cannot be replicated.
+  traversal_usable: false
 - edge_id: e00851
   source: hueter_volkmann_law
   target: growth_velocity_longitudinal
@@ -11405,6 +11491,7 @@ edges:
   notes: The coefficient is invariant across a 12-fold range of baseline growth rate (30-366 um/day), which is why it is applied
     to humans. No human measurement of the coefficient exists and no human physeal stress has ever been measured in vivo (g_l6mech_001,
     g_l6mech_003), so the human application is extrapolation across three species and two skeletal sites.
+  traversal_usable: false
 - edge_id: e00852
   source: hueter_volkmann_law
   target: growth_plate_height
@@ -11422,6 +11509,7 @@ edges:
   confidence: C
   notes: Plate height is a poor proxy for growth rate in general, but under load it moves in the same direction as growth
     rate because the same zonal parameters drive both.
+  traversal_usable: false
 - edge_id: e00853
   source: mechanical_modulation_growth
   target: chondrocyte_hypertrophy
@@ -11435,6 +11523,7 @@ edges:
   refs:
   - stokes2002
   confidence: C
+  traversal_usable: true
 - edge_id: e00854
   source: mechanical_modulation_growth
   target: hypertrophic_volume_increase
@@ -11451,6 +11540,7 @@ edges:
   confidence: C
   notes: Load acts on the same variable that dominates unloaded elongation, so mechanical modulation is not a separate mechanism
     but a shift along the existing hypertrophy axis.
+  traversal_usable: true
 - edge_id: e00855
   source: mechanical_modulation_growth
   target: chondrocyte_proliferation_rate
@@ -11464,6 +11554,7 @@ edges:
   refs:
   - stokes2007
   confidence: C
+  traversal_usable: true
 - edge_id: e00856
   source: mechanical_modulation_growth
   target: elongation_budget
@@ -11479,6 +11570,7 @@ edges:
   confidence: C
   notes: Load redistributes the elongation budget between the division and hypertrophy terms; whether it touches the matrix-synthesis
     term is untested in any species.
+  traversal_usable: false
 - edge_id: e00857
   source: static_vs_dynamic_loading
   target: proliferative_zone
@@ -11494,6 +11586,7 @@ edges:
   confidence: C
   notes: Waveform dissociates growth-rate suppression (equal under both) from architectural damage (static only). This is
     the strongest argument for dynamic tethering strategies.
+  traversal_usable: true
 - edge_id: e00858
   source: static_vs_dynamic_loading
   target: growth_plate_height
@@ -11507,6 +11600,7 @@ edges:
   refs:
   - valteau2011
   confidence: C
+  traversal_usable: true
 - edge_id: e00859
   source: static_vs_dynamic_loading
   target: chondrocyte_column_formation
@@ -11525,6 +11619,7 @@ edges:
   notes: Directly opposite in sign to valteau2011 in vivo, where static is the architecturally damaging waveform. Explant
     (no perfusion, cut boundaries, 48 h) vs in vivo (2 weeks) is the obvious confound but has not been tested. Logged as a
     contradiction.
+  traversal_usable: false
 - edge_id: e00860
   source: strain_magnitude_dependence
   target: growth_velocity_longitudinal
@@ -11540,6 +11635,7 @@ edges:
   confidence: C
   notes: The stress range was set by the apparatus rather than by physiology, so linearity outside 0.02-0.2 MPa is untested
     (g_l6mech_002).
+  traversal_usable: false
 - edge_id: e00861
   source: strain_rate_dependence
   target: hypertrophic_chondrocyte
@@ -11555,6 +11651,7 @@ edges:
   confidence: C
   notes: 'This is the mechanistic root of the static/dynamic distinction: the cell, not the tissue, sees a different strain
     state under the two waveforms even when the tissue-level input is matched.'
+  traversal_usable: false
 - edge_id: e00862
   source: strain_frequency_dependence
   target: growth_plate
@@ -11570,6 +11667,7 @@ edges:
   confidence: D
   notes: An upper bound on tolerable dynamic amplitude, from a group that failed rather than from a dose-response design.
     n=3.
+  traversal_usable: true
 - edge_id: e00863
   source: static_vs_dynamic_loading
   target: hypertrophic_chondrocyte
@@ -11586,6 +11684,7 @@ edges:
   confidence: C
   notes: 'Sets the ceiling on explant loading protocols: above it an experiment measures cell death, not mechanobiology. Relevant
     to interpreting sergerie2011 and kaviani2016.'
+  traversal_usable: true
 - edge_id: e00864
   source: loading_effect_plate_height
   target: hypertrophic_zone
@@ -11598,6 +11697,7 @@ edges:
   refs:
   - stokes2002
   confidence: C
+  traversal_usable: false
 - edge_id: e00865
   source: loading_effect_plate_height
   target: proliferative_zone
@@ -11612,6 +11712,7 @@ edges:
   - valteau2011
   - stokes2007
   confidence: C
+  traversal_usable: false
 - edge_id: e00866
   source: disuse_growth_effect
   target: growth_plate_height
@@ -11627,6 +11728,7 @@ edges:
   confidence: C
   notes: Mechanical modulation of the rat plate is fully reversible on this timescale. Whether a human physis tethered for
     the 1-3 years typical of guided growth recovers equally is unknown.
+  traversal_usable: false
 - edge_id: e00867
   source: disuse_growth_effect
   target: hypertrophic_zone
@@ -11642,6 +11744,7 @@ edges:
   confidence: C
   notes: Unloading is protective here, not growth-promoting - the disruptive stimulus in the adolescent plate is ordinary
     physiological load.
+  traversal_usable: false
 - edge_id: e00868
   source: physeal_bar_formation
   target: growth_velocity_longitudinal
@@ -11657,6 +11760,7 @@ edges:
   confidence: B
   notes: The authors caution that diagnostic criteria for arrest vary and the true figure may be lower. Physeal fractures
     are 18-30% of all paediatric fractures.
+  traversal_usable: true
 - edge_id: e00869
   source: physeal_bar_formation
   target: distal_femur_plate
@@ -11671,6 +11775,7 @@ edges:
   confidence: B
   notes: 'Site specificity is real but confounded: the distal femur is also the fastest human plate, so a given bar tethers
     a larger absolute growth increment.'
+  traversal_usable: true
 - edge_id: e00870
   source: physeal_bar_formation
   target: growth_plate
@@ -11687,6 +11792,7 @@ edges:
   confidence: B
   notes: The bar is a repair response by perivascular/mesenchymal populations, not transdifferentiation of resident chondrocytes
     - so it is an externally imposed tether on the plate, mechanically equivalent to a surgical tension band.
+  traversal_usable: true
 - edge_id: e00871
   source: guided_growth_tension_band
   target: growth_velocity_longitudinal
@@ -11702,6 +11808,7 @@ edges:
   confidence: A
   notes: The cleanest human demonstration that a physis is mechanically modulable. The applied stress is never measured, so
     this is a demonstration of sign, not of dose.
+  traversal_usable: true
 - edge_id: e00872
   source: guided_growth_tension_band
   target: distal_femur_plate
@@ -11714,6 +11821,7 @@ edges:
   refs:
   - tolk2026
   confidence: A
+  traversal_usable: true
 - edge_id: e00873
   source: guided_growth_tension_band
   target: proximal_tibia_plate
@@ -11726,6 +11834,7 @@ edges:
   refs:
   - tolk2026
   confidence: A
+  traversal_usable: true
 - edge_id: e00874
   source: guided_growth_tension_band
   target: site_specific_growth_rate
@@ -11742,6 +11851,7 @@ edges:
     tracks the sites' baseline growth velocities, so it does NOT establish that the two plates differ in mechanosensitivity
     - baseline rate and mechanosensitivity are not separable without a stress measurement. SD is 60-90% of the mean at both
     sites.
+  traversal_usable: false
 - edge_id: e00875
   source: blount_disease
   target: proximal_tibia_plate
@@ -11757,6 +11867,7 @@ edges:
   notes: Cited here to the guided-growth cohort in which non-idiopathic (largely Blount and related) deformity corrected less
     completely than idiopathic (66.3% vs 78.2%, p=0.02). Blount is the standard human illustration of Hueter-Volkmann but
     its causal direction - does varus cause the medial suppression or vice versa - is not resolved by any of these data.
+  traversal_usable: true
 - edge_id: e00876
   source: scoliosis_vertebral_growth
   target: vertebral_growth_plate
@@ -11772,6 +11883,7 @@ edges:
   confidence: C
   notes: The escape from load-dependence after 2 weeks is the important result and is unexplained (g_l6mech_005). It is the
     reason clinical vertebral body tethering under-corrects.
+  traversal_usable: true
 - edge_id: e00877
   source: scoliosis_vertebral_growth
   target: vertebral_growth_plate
@@ -11789,6 +11901,7 @@ edges:
   confidence: C
   notes: A molecular route from compression to premature ossification of the vertebral plate, i.e. the vicious cycle expressed
     as cell death rather than as growth-rate modulation. Systemic PIEZO1 inhibition caused osteoporosis as an off-target effect.
+  traversal_usable: true
 - edge_id: e00878
   source: sport_specific_loading_human
   target: distal_radius_plate
@@ -11806,6 +11919,7 @@ edges:
   notes: 'Evidence tier is limited by source type: a narrative review plus a systematic review/ meta-analysis of wrist pain
     epidemiology. The ulnar-variance comparison is the strongest human internal control in this layer because the two bones
     of one forearm share age, sex, nutrition, hormones and genotype and differ only in load.'
+  traversal_usable: true
 - edge_id: e00879
   source: sport_specific_loading_human
   target: growth_velocity_longitudinal
@@ -11824,6 +11938,7 @@ edges:
     static/dynamic distinction: impact loading is intermittent and axial, wrist weight-bearing in gymnastics is sustained
     and compressive. Small, single-centre, unblinded, and the mediation analysis (beta -0.442, 95% CI -1.474 to -0.009) is
     fragile.'
+  traversal_usable: true
 - edge_id: e00880
   source: sport_specific_loading_human
   target: appositional_growth
@@ -11841,6 +11956,7 @@ edges:
   notes: 'A within-subject human loading experiment on appositional (periosteal/cortical) growth, which is the arm of skeletal
     growth where Wolff''s law is well supported. The same design has NEVER been used to read out longitudinal physeal output,
     which is the asymmetry this seam exposes: human loading data are strong for bone width and absent for bone length.'
+  traversal_usable: true
 - edge_id: e00881
   source: gymnastics_stature_effect
   target: growth_velocity_longitudinal
@@ -11859,6 +11975,7 @@ edges:
   confidence: D
   notes: 'Selection versus causation is unresolved: short, late-maturing girls are also selected INTO elite gymnastics. Directly
     contradicts the jumping-intervention edge e00029; the atlas records both rather than choosing.'
+  traversal_usable: false
 - edge_id: e00882
   source: gymnastics_stature_effect
   target: site_specific_growth_rate
@@ -11876,6 +11993,7 @@ edges:
   notes: The deficit is disproportionately axial (trunk/vertebral plates) rather than appendicular, which is the pattern predicted
     if sustained axial compression is the mediator - but energy availability suppresses trunk growth preferentially too, so
     the finding does not discriminate.
+  traversal_usable: false
 - edge_id: e00883
   source: primary_cilium_mechanosensing
   target: chondrocyte_column_formation
@@ -11891,6 +12009,7 @@ edges:
   confidence: C
   notes: Column formation depends on the 90-degree post-mitotic rotation, and the cilium is one of only two structures (with
     integrin beta-1) shown to be required for it.
+  traversal_usable: true
 - edge_id: e00884
   source: primary_cilium_mechanosensing
   target: chondrocyte_hypertrophy
@@ -11907,6 +12026,7 @@ edges:
   notes: 'Two controls make this a mechanical rather than a signalling phenotype: raising physiological load in control mice
     reproduced it, and limb immobilisation abolished it. This is the cleanest loading-controlled cilium experiment in a growth
     plate.'
+  traversal_usable: true
 - edge_id: e00885
   source: primary_cilium_mechanosensing
   target: chondro_osseous_junction
@@ -11920,6 +12040,7 @@ edges:
   refs:
   - coveney2022
   confidence: C
+  traversal_usable: true
 - edge_id: e00886
   source: integrin_beta1_chondrocyte
   target: chondrocyte_rotation
@@ -11934,6 +12055,7 @@ edges:
   refs:
   - greer2024
   confidence: C
+  traversal_usable: true
 - edge_id: e00887
   source: integrin_beta1_chondrocyte
   target: chondrocyte_column_formation
@@ -11948,6 +12070,7 @@ edges:
   - aszodi2003
   - greer2024
   confidence: C
+  traversal_usable: true
 - edge_id: e00888
   source: integrin_beta1_chondrocyte
   target: chondrocyte_proliferation_rate
@@ -11963,6 +12086,7 @@ edges:
   confidence: C
   notes: A direct mechanical-adhesion input onto the FGFR3 axis that dominates L3, and one of the few places where mechanobiology
     and the achondroplasia pathway are experimentally joined.
+  traversal_usable: true
 - edge_id: e00889
   source: cytoskeletal_tension_chondrocyte
   target: chondrocyte_rotation
@@ -11979,6 +12103,7 @@ edges:
   confidence: C
   notes: 'The one hard structural result in this node: the actin/adhesion machinery is load-bearing for growth plate architecture.
     It is inferred from integrin loss, not from direct manipulation of cytoskeletal tension.'
+  traversal_usable: true
 - edge_id: e00890
   source: piezo1_channel
   target: primary_spongiosa
@@ -11994,6 +12119,7 @@ edges:
   - brylka2024
   - tschaffonmller2026
   confidence: C
+  traversal_usable: true
 - edge_id: e00891
   source: piezo1_channel
   target: growth_velocity_longitudinal
@@ -12008,6 +12134,7 @@ edges:
   confidence: C
   notes: 'A dissociation edge: PIEZO1 is required for the bone the plate produces far more than for the plate''s own longitudinal
     output. Cited as a caution against reading trabecular phenotypes as growth phenotypes.'
+  traversal_usable: false
 - edge_id: e00892
   source: piezo2_channel
   target: growth_plate
@@ -12023,6 +12150,7 @@ edges:
   confidence: D
   notes: A negative result recorded deliberately. PIEZO2 is repeatedly listed as a growth plate mechanotransducer; the only
     experiment done inside the plate says otherwise.
+  traversal_usable: false
 - edge_id: e00893
   source: trpv4_channel
   target: chondrocyte_proliferation_rate
@@ -12039,6 +12167,7 @@ edges:
   confidence: D
   notes: 'The species-and-stage caveat is the point: no study has applied a defined mechanical stimulus to a POSTNATAL growth
     plate and shown a TRPV4-dependent change in longitudinal growth rate.'
+  traversal_usable: true
 - edge_id: e00894
   source: trpv4_channel
   target: growth_plate
@@ -12057,6 +12186,7 @@ edges:
   notes: The strongest human evidence for any candidate physeal mechanotransducer - but it is genetic, not mechanical. Small-molecule
     TRPV4 inhibition rescues the mouse phenotype, so it is the channel's activity level and not its presence that sets plate
     output.
+  traversal_usable: false
 - edge_id: e00895
   source: distraction_osteogenesis
   target: growth_plate
@@ -12075,6 +12205,7 @@ edges:
     growth; the primary source explicitly denies the structural identity. Its real contribution is that the tension vector,
     not the bone's mechanical axis, sets the direction of new bone formation - tension is instructive for skeletal tissue,
     outside a physis.
+  traversal_usable: false
 - edge_id: e00896
   source: diurnal_stature_variation
   target: growth_velocity_longitudinal
@@ -12095,6 +12226,7 @@ edges:
   notes: 'This is a MEASUREMENT relation, not a physeal one: the diurnal swing exceeds a week of true longitudinal growth
     in a mid-childhood child, so any stature-velocity estimate over short intervals is dominated by it unless time of day
     is fixed. The swing is intervertebral disc fluid; no measurement partitions any of it to the vertebral physis (g_l6l5_010).'
+  traversal_usable: false
 - edge_id: e00897
   source: physeal_stress_in_vivo
   target: growth_velocity_longitudinal
@@ -12112,6 +12244,7 @@ edges:
     a living human at any age. All human figures in the literature are finite-element model output, and the models'' authors
     state they are not fully participant-specific. The edge is written speculative deliberately: the animal coefficient is
     the only number available and applying it to a human is an assumption, not a result.'
+  traversal_usable: false
 - edge_id: e00898
   source: spaceflight_microgravity_growth
   target: growth_velocity_longitudinal
@@ -12129,6 +12262,7 @@ edges:
     up to 11%. In adults with fused physes that gain is spinal unloading and contains no endochondral component. The mechanistic
     argument that unloading acts on the physis comes from mice (simulated microgravity reverses PIEZO1-driven growth plate
     ossification), not from humans.
+  traversal_usable: false
 - edge_id: e00899
   source: gravity_posture_spinal_loading
   target: vertebral_growth_plate
@@ -12146,6 +12280,7 @@ edges:
     is titratable without surgery (recumbency, shoulder loads of 2.5-40 kg produce nonlinear shrinkage). Whether ANY of the
     resulting axial stress reaches the vertebral physis, as opposed to being absorbed by the discs, is unmeasured. Over 130
     human vertebral plates generate the trunk segment, so the question is not marginal.
+  traversal_usable: false
 - edge_id: e00900
   source: focal_adhesion_kinase
   target: chondrocyte_column_formation
@@ -12161,6 +12296,7 @@ edges:
   gap_id: g_l6l5_011
   notes: Integrin beta-1 is required for the rotation that builds columns (e00036, e00037) and FAK is the obligatory kinase
     downstream of integrin engagement in every other tissue. The inference is strong and completely untested inside a physis.
+  traversal_usable: false
 - edge_id: e00901
   source: yap_taz_chondrocyte
   target: chondrocyte_hypertrophy
@@ -12177,6 +12313,7 @@ edges:
   notes: YAP/TAZ are the canonical stiffness- and tension-responsive transcriptional co-activators, and the growth plate has
     a steep (if disputed) zonal stiffness gradient plus a stereotyped stiffness-to-hypertrophy correspondence. That coincidence
     is the entire basis for the link.
+  traversal_usable: false
 - edge_id: e00902
   source: static_vs_dynamic_loading
   target: aggrecan_acan
@@ -12194,6 +12331,7 @@ edges:
   notes: The only study that reads out growth plate matrix protein against a controlled static/dynamic contrast. Readout is
     semi-quantitative immunohistochemistry with no reported effect size, in one species, at one age, for 48 h. It carries
     the whole loading-to-matrix seam.
+  traversal_usable: false
 - edge_id: e00903
   source: static_vs_dynamic_loading
   target: collagen_type_ii
@@ -12207,6 +12345,7 @@ edges:
   refs:
   - sergerie2011
   confidence: D
+  traversal_usable: false
 - edge_id: e00904
   source: static_vs_dynamic_loading
   target: collagen_type_x
@@ -12222,6 +12361,7 @@ edges:
   confidence: D
   notes: 'Consistent with the in vivo finding that compression shortens hypertrophic cells and thins the hypertrophic zone
     (e00003, e00014): the hypertrophic programme, not just its geometry, is suppressed.'
+  traversal_usable: true
 - edge_id: e00905
   source: strain_magnitude_dependence
   target: chondron
@@ -12240,6 +12380,7 @@ edges:
     bending. The authors propose that bending at the RZ/PZ interface is what aligns dividing cells longitudinally - i.e. that
     the matrix unit converts tissue compression into the rotation cue for column formation. That last step is a proposal,
     not a result.
+  traversal_usable: false
 - edge_id: e00906
   source: strain_magnitude_dependence
   target: pericellular_matrix
@@ -12256,6 +12397,7 @@ edges:
   confidence: D
   notes: The pericellular matrix through which load reaches the chondrocyte surface is itself built in a mechanoresponsive
     way, so the transducer and the transmission medium are not independent. Not demonstrated zonally in a growth plate.
+  traversal_usable: true
 - edge_id: e00907
   source: integrin_beta1_chondrocyte
   target: collagen_type_ii
@@ -12270,6 +12412,7 @@ edges:
   - aszodi2003
   confidence: C
   notes: Identifies collagen II as the specific matrix ligand through which growth plate architecture is mechanically anchored.
+  traversal_usable: false
 - edge_id: e00908
   source: integrin_beta1_chondrocyte
   target: fibronectin_cartilage
@@ -12284,6 +12427,7 @@ edges:
   - aszodi2003
   - enomotoiwamoto1997
   confidence: C
+  traversal_usable: false
 - edge_id: e00909
   source: strain_rate_dependence
   target: zonal_stiffness_gradient
@@ -12301,6 +12445,7 @@ edges:
   confidence: C
   notes: A stiffness value for the physis without a stated loading rate is not interpretable. Combined with the length-scale
     problem (e00097) this is most of why published moduli span three orders of magnitude.
+  traversal_usable: false
 - edge_id: e00910
   source: gravity_posture_spinal_loading
   target: matrix_water_content_zonal
@@ -12316,6 +12461,7 @@ edges:
   notes: The diurnal stature swing is fluid exudation. Cartilage is 66-80% water and the growth plate is poroelastic, so daily
     axial loading must move fluid in and out of physeal matrix - but water is the least-quantified variable in L5 and no one
     has measured a diurnal change in a physis.
+  traversal_usable: false
 - edge_id: e00911
   source: mechanical_modulation_growth
   target: collagen_crosslinking
@@ -12333,6 +12479,7 @@ edges:
     are what carry tensile load in cartilage. A Europe PMC sweep found no study measuring crosslink density or lysyl oxidase
     activity in a mechanically loaded growth plate in any species (g_l6l5_004). Written as speculative rather than omitted
     because the quantity is measurable with existing methods.
+  traversal_usable: false
 - edge_id: e00912
   source: mechanical_modulation_growth
   target: proteoglycan_turnover
@@ -12350,6 +12497,7 @@ edges:
   notes: sergerie2011 shows aggrecan immunostaining falls under static compression, which is consistent with either reduced
     synthesis or increased breakdown - the two possibilities the aggrecan turnover literature exists to separate, and which
     have never been separated under load.
+  traversal_usable: false
 - edge_id: e00913
   source: collagen_type_x
   target: hypertrophic_zone
@@ -12367,6 +12515,7 @@ edges:
   confidence: D
   notes: Two reports on the same null disagree on whether there is a phenotype at all. The atlas records the phenotype as
     real but subtle and incompletely penetrant, not as established.
+  traversal_usable: true
 - edge_id: e00914
   source: collagen_type_x
   target: chondrocyte_hypertrophy
@@ -12383,6 +12532,7 @@ edges:
   notes: The decisive negative of this layer, and it is HUMAN. Collagen X is the canonical marker of hypertrophy and is largely
     dispensable FOR hypertrophy. Any model that makes collagen X the structural prerequisite for hypertrophy or for cartilage
     mineralization is contradicted by mouse null, human iPSC deletion and the mildness of Schmid MCD independently.
+  traversal_usable: false
 - edge_id: e00915
   source: aggrecan_acan
   target: chondrocyte_hypertrophy
@@ -12398,6 +12548,7 @@ edges:
   confidence: B
   notes: 'Aggrecan is dosage-sensitive and the mechanism is architectural, not signalling: less matrix, smaller hypertrophic
     cells, less elongation. The heterozygote is the correct model because human ACAN disease is haploinsufficiency.'
+  traversal_usable: true
 - edge_id: e00916
   source: aggrecan_acan
   target: growth_plate_height
@@ -12410,8 +12561,9 @@ edges:
   refs:
   - bendre2025
   confidence: C
+  traversal_usable: false
 - edge_id: e00917
-  source: acan_dosage_effect
+  source: acan_related_short_stature
   target: growth_velocity_longitudinal
   relation: correlates_with
   sign: +
@@ -12426,6 +12578,7 @@ edges:
   confidence: A
   notes: One of the few places where a single matrix protein's dosage is quantitatively tied to human adult stature. ACAN
     haploinsufficiency is among the commonest monogenic causes of idiopathic short stature.
+  traversal_usable: false
 - edge_id: e00918
   source: hyaluronan_matrix
   target: chondrocyte_column_formation
@@ -12441,6 +12594,7 @@ edges:
   confidence: B
   notes: Hyaluronan is the backbone filament of the aggrecan aggregate, so this is also the aggregate's architectural phenotype
     - aggrecan cannot be retained without it.
+  traversal_usable: true
 - edge_id: e00919
   source: hyaluronan_matrix
   target: chondrocyte_hypertrophy
@@ -12454,6 +12608,7 @@ edges:
   refs:
   - matsumoto2009
   confidence: B
+  traversal_usable: true
 - edge_id: e00920
   source: hyaluronan_matrix
   target: growth_velocity_longitudinal
@@ -12467,6 +12622,7 @@ edges:
   refs:
   - matsumoto2009
   confidence: B
+  traversal_usable: true
 - edge_id: e00921
   source: link_protein_hapln1
   target: hypertrophic_zone
@@ -12484,6 +12640,7 @@ edges:
   notes: Link protein does nothing but clamp the aggrecan G1 domain onto hyaluronan, so its null phenotype isolates the contribution
     of AGGREGATE STABILITY (as opposed to aggrecan abundance) to zonal architecture. The radiographic picture is a spondyloepiphyseal
     dysplasia.
+  traversal_usable: true
 - edge_id: e00922
   source: link_protein_hapln1
   target: prehypertrophic_zone
@@ -12496,6 +12653,7 @@ edges:
   refs:
   - watanabe1999
   confidence: C
+  traversal_usable: true
 - edge_id: e00923
   source: perlecan_hspg2
   target: chondrocyte_column_formation
@@ -12514,6 +12672,7 @@ edges:
   confidence: B
   notes: Perlecan is a core pericellular matrix component and also the reservoir that presents FGF-2 to the chondrocyte, so
     the architectural phenotype is not cleanly structural.
+  traversal_usable: true
 - edge_id: e00924
   source: perlecan_hspg2
   target: growth_plate_height
@@ -12528,6 +12687,7 @@ edges:
   - costell1999
   - nicole2000
   confidence: C
+  traversal_usable: false
 - edge_id: e00925
   source: collagen_type_ii
   target: growth_plate
@@ -12544,6 +12704,7 @@ edges:
   notes: 'The most absolute matrix requirement in this seam: without collagen II there is no growth plate to have architecture.
     Human COL2A1 mutations are hypomorphic or dominant-negative rather than null, which is why type II collagenopathies are
     epiphyseal/vertebral dysplasias rather than absence of endochondral bone.'
+  traversal_usable: true
 - edge_id: e00926
   source: collagen_fibril_stoichiometry
   target: hypertrophic_zone
@@ -12562,6 +12723,7 @@ edges:
   confidence: C
   notes: 'A rare zonally resolved HUMAN matrix-architecture measurement: fibril composition is not constant across the plate,
     so a single set of matrix material properties cannot be correct for all zones.'
+  traversal_usable: false
 - edge_id: e00927
   source: collagen_type_ix
   target: growth_plate
@@ -12579,6 +12741,7 @@ edges:
   confidence: C
   notes: Negative for the plate, positive for the epiphysis - the same protein separates two compartments that are usually
     conflated.
+  traversal_usable: false
 - edge_id: e00928
   source: comp_protein
   target: growth_plate
@@ -12599,6 +12762,7 @@ edges:
   notes: 'Recorded because it inverts the naive matrix logic: the plate fails from a chondrocyte proteostasis defect caused
     by a matrix gene, so ''matrix protein knockout'' intuitions do not transfer. In MED the plate fails structurally without
     costing much height.'
+  traversal_usable: false
 - edge_id: e00929
   source: matrilin3
   target: growth_plate
@@ -12619,6 +12783,7 @@ edges:
   notes: Same proteostasis mechanism as COMP, in a protein that physically sits on the collagen IX surface - and matrilin-3
     fails to integrate into matrix at all in collagen IX-null mice, so the COMP/MATN3/COL9 dysplasias are one adaptor network
     failing in three places.
+  traversal_usable: false
 - edge_id: e00930
   source: biglycan_protein
   target: growth_velocity_longitudinal
@@ -12633,6 +12798,7 @@ edges:
   - xu1998
   - hua2025
   confidence: C
+  traversal_usable: false
 - edge_id: e00931
   source: decorin_protein
   target: growth_plate
@@ -12649,6 +12815,7 @@ edges:
   confidence: D
   notes: 'A deliberate negative that separates the two class I SLRPs: they are structurally near-identical and skeletally
     non-equivalent.'
+  traversal_usable: false
 - edge_id: e00932
   source: fibronectin_cartilage
   target: chondrocyte_proliferation_rate
@@ -12663,6 +12830,7 @@ edges:
   - enomotoiwamoto1997
   - lee2017
   confidence: D
+  traversal_usable: false
 - edge_id: e00933
   source: tnap_alpl
   target: zone_provisional_calcification
@@ -12684,6 +12852,7 @@ edges:
   notes: TNAP is required for the EXTRAvesicular step, not the intravesicular one. This is the sharpest mechanistic localisation
     in the whole mineralization module and it is why hypophosphatasia and XLH produce superficially similar rickets from opposite
     causes.
+  traversal_usable: true
 - edge_id: e00934
   source: tnap_alpl
   target: hypertrophic_zone
@@ -12698,6 +12867,7 @@ edges:
   - fedde1999
   - sala2026
   confidence: B
+  traversal_usable: true
 - edge_id: e00935
   source: inorganic_pyrophosphate
   target: zone_provisional_calcification
@@ -12716,6 +12886,7 @@ edges:
   confidence: B
   notes: Mineralization in the plate is not controlled by mineral supply - the extracellular Ca x P ion product in pig growth
     plate is far above the ~2 mM^2 needed in vitro. It is controlled by where the inhibitor is destroyed.
+  traversal_usable: true
 - edge_id: e00936
   source: pi_ppi_ratio
   target: chondrocyte_hypertrophy
@@ -12733,6 +12904,7 @@ edges:
   confidence: C
   notes: 'Makes phosphate an instructive signal rather than a substrate: the Pi/PPi ratio sets the timing of terminal differentiation,
     not merely whether apatite forms. Directly relevant to why XLH (low Pi) impairs hypertrophy as well as mineralization.'
+  traversal_usable: true
 - edge_id: e00937
   source: pi_ppi_ratio
   target: hypertrophic_chondrocyte
@@ -12746,6 +12918,7 @@ edges:
   - kim2010
   confidence: C
   notes: Ties the mineralization module to the terminal fate decision at the chondro-osseous junction.
+  traversal_usable: true
 - edge_id: e00938
   source: matrix_vesicle
   target: zone_provisional_calcification
@@ -12764,6 +12937,7 @@ edges:
   confidence: B
   notes: 'Genetically separable two-stage model: intravesicular initiation (PHOSPHO1, Pi influx) then extravesicular propagation
     (TNAP holding PPi low). The double null is the proof that these are the only two routes.'
+  traversal_usable: true
 - edge_id: e00939
   source: phospho1_enzyme
   target: zone_provisional_calcification
@@ -12783,6 +12957,7 @@ edges:
   - huesa2011
   - tzvetkov2023
   confidence: C
+  traversal_usable: true
 - edge_id: e00940
   source: enpp1_enzyme
   target: zone_provisional_calcification
@@ -12801,6 +12976,7 @@ edges:
   confidence: B
   notes: The opposing arm to TNAP on the same PPi pool. The 2022 revision showed ANKH exports ATP rather than PPi, so ENPP1
     rather than ANKH is the proximate PPi generator.
+  traversal_usable: true
 - edge_id: e00941
   source: ankh_transporter
   target: zone_provisional_calcification
@@ -12818,6 +12994,7 @@ edges:
   confidence: C
   notes: 'Mechanism revised in 2022: ANKH is an ATP exporter, not a PPi transporter, so its effect on physeal PPi is indirect
     via ENPP1 substrate supply. ANK is absent from matrix vesicles, which is why ank loss cannot rescue Alpl-/-.'
+  traversal_usable: true
 - edge_id: e00942
   source: osteopontin_spp1
   target: zone_provisional_calcification
@@ -12835,6 +13012,7 @@ edges:
   - speer2002
   - xie2025
   confidence: B
+  traversal_usable: true
 - edge_id: e00943
   source: matrix_gla_protein
   target: growth_plate
@@ -12854,6 +13032,7 @@ edges:
   notes: 'The mirror-image experiment to hypophosphatasia: removing an inhibitor mineralizes the wrong zones, removing the
     inhibitor-destroyer leaves the right zone unmineralized. Zonal mineralization is set by inhibitor placement, not by mineral
     availability.'
+  traversal_usable: true
 - edge_id: e00944
   source: fetuin_a_ahsg
   target: zone_provisional_calcification
@@ -12871,6 +13050,7 @@ edges:
   - schafer2003
   - heiss2003
   confidence: B
+  traversal_usable: true
 - edge_id: e00945
   source: mineralization_front
   target: chondro_osseous_junction
@@ -12889,6 +13069,7 @@ edges:
   confidence: B
   notes: The plate is mineralization-POLARISED, not merely mineralization-terminated. Both boundaries carry inhibitors; what
     differs is whether TNAP and ENPP1 are present to override them.
+  traversal_usable: false
 - edge_id: e00946
   source: hydroxyapatite_nucleation
   target: zone_provisional_calcification
@@ -12904,6 +13085,7 @@ edges:
   - althoff1982
   - wuthier1992
   confidence: C
+  traversal_usable: true
 - edge_id: e00947
   source: zonal_stiffness_gradient
   target: chondron
@@ -12922,6 +13104,7 @@ edges:
   confidence: D
   notes: Two species, two methods, one inferred correspondence. Recorded at low confidence because the DIRECTION of the zonal
     stiffness gradient is itself disputed (see e00098).
+  traversal_usable: false
 - edge_id: e00948
   source: zonal_stiffness_gradient
   target: chondrocyte_hypertrophy
@@ -12943,6 +13126,7 @@ edges:
     the reserve zone stiffest, rabbit microindentation puts the peak in the upper hypertrophic zone, rabbit cranial base AFM
     has modulus rising monotonically to the mineralizing zone. Until that is resolved, no stiffness-to-behaviour relation
     in the plate can be stated with a sign, which is why this edge is written speculative rather than given a direction.'
+  traversal_usable: false
 - edge_id: e00949
   source: mmp9_protease
   target: growth_plate_height
@@ -12958,6 +13142,7 @@ edges:
   confidence: C
   notes: The largest single-gene effect on growth plate height in this atlas, and it is a REMOVAL rate defect, not a production
     defect. No human MMP9 deficiency syndrome is known, so the mechanism has no human genetic anchor.
+  traversal_usable: true
 - edge_id: e00950
   source: mmp9_protease
   target: chondro_osseous_junction
@@ -12971,6 +13156,7 @@ edges:
   refs:
   - vu1998
   confidence: C
+  traversal_usable: true
 - edge_id: e00951
   source: mmp9_protease
   target: metaphyseal_vasculature
@@ -12983,6 +13169,7 @@ edges:
   refs:
   - vu1998
   confidence: C
+  traversal_usable: true
 - edge_id: e00952
   source: mmp13_protease
   target: hypertrophic_zone
@@ -12999,6 +13186,7 @@ edges:
   confidence: B
   notes: 'Contrast with Mmp9: MMP-13 is made by the chondrocyte and its loss is permanent; MMP-9 comes from invading marrow
     cells and its loss is compensated after 3 weeks. Different cellular sources, different persistence.'
+  traversal_usable: true
 - edge_id: e00953
   source: mmp13_protease
   target: cartilage_septum_resorption
@@ -13013,6 +13201,7 @@ edges:
   - inada2004
   - dangelo2001
   confidence: C
+  traversal_usable: true
 - edge_id: e00954
   source: mmp13_protease
   target: growth_velocity_longitudinal
@@ -13028,6 +13217,7 @@ edges:
   confidence: C
   notes: Sign is left unknown deliberately. The mouse null (more hypertrophic zone) and the human variant (short stature)
     do not have a common direction because the human mechanism is proteostatic, like COMP and MATN3, rather than proteolytic.
+  traversal_usable: false
 - edge_id: e00955
   source: mmp14_mt1mmp
   target: growth_plate
@@ -13046,6 +13236,7 @@ edges:
   confidence: C
   notes: 'The severity is partly non-chondrocytic: global but not chondrocyte-specific MT1-MMP deficiency causes the inflammatory
     arthritis, so the dwarfism and the arthritis are separable.'
+  traversal_usable: true
 - edge_id: e00956
   source: cartilage_osmotic_swelling
   target: hypertrophic_volume_increase
@@ -13066,6 +13257,7 @@ edges:
     one third of the ideal Donnan prediction. Whether the swelling gradient is generated cell-autonomously by intracellular
     solute accumulation or by a change in matrix fixed charge around the hypertrophying cell has not been tested - the measurements
     exist in different tissues and have never been made in the same specimen.
+  traversal_usable: false
 - edge_id: e00957
   source: pericellular_matrix
   target: hypertrophic_volume_increase
@@ -13085,6 +13277,7 @@ edges:
     matrix channels volume increase along the growth axis. The pericellular matrix has a modulus about 0.35x that of the interterritorial
     matrix and chondrons bend rather than compress uniformly, both of which bear on that account, but no experiment has tested
     it.
+  traversal_usable: false
 - edge_id: e00958
   source: proteoglycan_turnover
   target: cartilage_septum_resorption
@@ -13105,6 +13298,7 @@ edges:
     in days. These two numbers cannot both describe growth plate proteoglycan, and no growth-plate-specific human turnover
     measurement exists. This is a scale gap, and quoting articular half-lives for physeal matrix is a defect that appears
     in reviews.
+  traversal_usable: false
 - edge_id: e00959
   source: adamts5
   target: growth_plate
@@ -13123,6 +13317,7 @@ edges:
   notes: 'A double negative with real consequences: neither aggrecanase-mediated nor MMP-mediated aggrecanolysis is required
     to remove aggrecan from the hypertrophic zone before mineralization, so the actual removal mechanism is unidentified (g_l6l5_006).
     Dilution by matrix expansion and ADAMTS cleavage at Glu373-Ala374 in a redundant configuration are the surviving candidates.'
+  traversal_usable: false
 - edge_id: e00960
   source: matrix_water_content_zonal
   target: nutrient_diffusion_growth_plate
@@ -13140,6 +13335,7 @@ edges:
   notes: 'The plate is avascular, so every solute a chondrocyte needs crosses a dense polyanionic gel by diffusion, and water
     is the medium. Water content is the least quantified variable in L5: 66% is an assumed value in the microprobe study,
     and MR T1 mapping can measure physeal water to 97.3% accuracy against freeze-drying but has not been applied zonally.'
+  traversal_usable: false
 - edge_id: e00961
   source: aggrecan_acan
   target: nutrient_diffusion_growth_plate
@@ -13157,6 +13353,7 @@ edges:
   notes: Aggrecan carries essentially all the fixed negative charge of cartilage (-0.19 to -0.35 M), which must retard anionic
     solutes and concentrate cations by Donnan partition. Oxygen and glucose gradients across the plate are measured; the charge-dependence
     of solute transport in physeal matrix specifically is not.
+  traversal_usable: false
 - edge_id: e00962
   source: lysyl_oxidase
   target: growth_plate
@@ -13174,6 +13371,7 @@ edges:
   notes: Lysyl oxidase initiates every covalent collagen crosslink, and cartilage collagen II is crosslinked head-to-tail
     by hydroxylysyl pyridinoline at two telopeptide sites. The global null dies before the growth plate can be assessed, so
     a cartilage-specific conditional is the missing experiment. This is a method-blocked gap, not an absence of interest.
+  traversal_usable: false
 - edge_id: e00963
   source: x_linked_hypophosphatemia
   target: pi_ppi_ratio
@@ -13191,6 +13389,7 @@ edges:
   notes: 'The mirror of hypophosphatasia: in HPP the inhibitor is not destroyed, in XLH the substrate is not supplied. Both
     give rachitic widening of the unmineralized zone, from opposite sides of the same equation - which is why serum phosphate,
     not radiographs, distinguishes them.'
+  traversal_usable: true
 - edge_id: e00964
   source: x_linked_hypophosphatemia
   target: hydroxyapatite_nucleation
@@ -13208,6 +13407,7 @@ edges:
   confidence: B
   notes: 'The hypertrophy component is not merely a consequence of failed mineralization: extracellular Pi independently drives
     terminal differentiation via Pit-1 (kim2010), so low Pi hits both steps.'
+  traversal_usable: true
 - edge_id: e00965
   source: mucopolysaccharidosis_growth
   target: proteoglycan_turnover
@@ -13226,6 +13426,7 @@ edges:
   notes: The only human experiment in which growth plate matrix is progressively poisoned from within by undegraded substrate
     rather than by a missing structural component. Keratan sulphate and chondroitin-6-sulphate are the aggrecan glycosaminoglycans,
     so MPS IVA is in effect a defect of aggrecan CATABOLISM - the step that e00109 shows is otherwise unidentified.
+  traversal_usable: true
 - edge_id: e00966
   source: matrilin3
   target: multiple_epiphyseal_dysplasia
@@ -13243,6 +13444,7 @@ edges:
   - taner2026
   confidence: A
   notes: Fills the MATN3 arm of the MED aetiology that the existing COMP-only edges left open.
+  traversal_usable: true
 - edge_id: e00967
   source: collagen_type_ix
   target: multiple_epiphyseal_dysplasia
@@ -13258,6 +13460,7 @@ edges:
   confidence: B
   notes: Human dominant COL9 alleles cause epiphyseal disease that the mouse null does not - a dominant-negative rather than
     loss-of-function mechanism, consistent with matrilin-3 failing to integrate into matrix when collagen IX is absent.
+  traversal_usable: true
 - edge_id: e00968
   source: atomic_force_microscopy_cartilage
   target: zonal_stiffness_gradient
@@ -13281,6 +13484,7 @@ edges:
     tip probes local mineralised/fibrillar matrix with no time for interstitial fluid to redistribute, while tissue-scale
     indentation probes a poroelastic continuum. These are different physical quantities reported under one word. Any L6 model
     that consumes a modulus must state the length scale.'
+  traversal_usable: false
 - edge_id: e00969
   source: porcine_growth_plate_model
   target: zonal_stiffness_gradient
@@ -13298,6 +13502,7 @@ edges:
   notes: Opposite in DIRECTION to rabbit microindentation (peak in upper hypertrophic zone) and to human sharp-tip AFM (monotonic
     rise to the hypertrophic zone). Species, age, hydration, loading rate and constitutive model all differ; none of the three
     is a human weight-bearing physis measured hydrated at tissue scale.
+  traversal_usable: false
 - edge_id: e00970
   source: finite_element_model_physis
   target: physeal_stress_in_vivo
@@ -13315,6 +13520,7 @@ edges:
   confidence: C
   notes: The models are unavoidable - the measurement is impossible (g_l6mech_003) - but they consume the animal stress-growth
     coefficient as an input, so a model cannot be used to validate the coefficient without circularity.
+  traversal_usable: false
 - edge_id: e00971
   source: growth_plate_explant_culture
   target: static_vs_dynamic_loading
@@ -13332,6 +13538,7 @@ edges:
   notes: Explants are the only format in which a defined stimulus can be applied to a growth plate without systemic confounding,
     and they are also where the static/dynamic result INVERTS relative to in vivo (e00009). Method and finding cannot be separated
     here.
+  traversal_usable: true
 - edge_id: e00972
   source: growth_plate_explant_culture
   target: hypertrophic_chondrocyte
@@ -13347,6 +13554,7 @@ edges:
   confidence: B
   notes: 'A method-artefact edge: above a threshold an explant loading experiment measures zonal cell death rather than mechanobiology,
     and the most sensitive zones are exactly the ones whose architecture is scored.'
+  traversal_usable: true
 - edge_id: e00973
   source: porcine_growth_plate_model
   target: hueter_volkmann_law
@@ -13363,6 +13571,7 @@ edges:
   confidence: C
   notes: The pig is the only model whose physeal dimensions and loading approach human scale, and it reproduces both the law
     and its two-week escape.
+  traversal_usable: false
 - edge_id: e00974
   source: rat_growth_plate_model
   target: strain_magnitude_dependence
@@ -13379,6 +13588,7 @@ edges:
   notes: The applied stress range was chosen for the apparatus, not for physiology, so the linear window is an artefact of
     the method as much as a property of the plate (g_l6mech_002). Rats do not fuse their physes, which further limits what
     an 8-day rat window can say about a human plate that must run for 15 years and then close.
+  traversal_usable: true
 - edge_id: e00975
   source: micro_ct_growth_plate
   target: physeal_bar_formation
@@ -13395,6 +13605,7 @@ edges:
   confidence: B
   notes: Micro-CT reports the plate as a radiolucent gap, so it measures the bar and the gap geometry well and the cartilage
     itself not at all. Every quantitative bar phenotype in this atlas is therefore a mineral measurement.
+  traversal_usable: true
 - edge_id: e00976
   source: proteomics_growth_plate
   target: mineralization_front
@@ -13412,6 +13623,7 @@ edges:
   confidence: C
   notes: The most important recent human result in L5 has n=10 donors and no independent replication. Four of the ten are
     polydactylous digits, which are not weight-bearing physes.
+  traversal_usable: true
 - edge_id: e00977
   source: human_growth_plate_tissue_scarcity
   target: zonal_stiffness_gradient
@@ -13430,6 +13642,7 @@ edges:
   confidence: B
   notes: The reason no human weight-bearing physis has been measured hydrated at tissue scale is supply, not method. This
     is what makes g_l6l5_005 a method-and-material problem rather than a question awaiting a better instrument.
+  traversal_usable: true
 - edge_id: e00978
   source: immunohistochemistry_cartilage_artifact
   target: collagen_type_x
@@ -13448,6 +13661,7 @@ edges:
   notes: Collagen X is chosen as the target because it is the canonical hypertrophic marker AND is localised in exactly the
     decalcified compartment. The same caveat applies to every human zonal matrix protein claim in L5, including the sergerie2011
     loading result which is also IHC-based.
+  traversal_usable: true
 - edge_id: e00979
   source: synchrotron_imaging_cartilage
   target: chondron
@@ -13464,6 +13678,7 @@ edges:
   confidence: B
   notes: Applied to articular, not physeal, cartilage so far. It is the obvious instrument for resolving the chondron-bending
     account of column formation (e00055) in a human plate.
+  traversal_usable: true
 - edge_id: e00980
   source: tetracycline_labeling
   target: mineralization_front
@@ -13481,6 +13696,7 @@ edges:
   confidence: B
   notes: 'The method that makes the L6 seam quantitative at all: every percent-per-MPa figure in this shard is ultimately
     a distance between two tetracycline lines. It cannot be used in children.'
+  traversal_usable: true
 - edge_id: e00981
   source: cnp_protein
   target: pkg2_kinase
@@ -13492,6 +13708,7 @@ edges:
   refs:
   - agoston2007
   confidence: C
+  traversal_usable: true
 - edge_id: e00982
   source: aggrecan_acan
   target: growth_velocity_longitudinal
@@ -13508,6 +13725,7 @@ edges:
   confidence: A
   notes: One of the few places where a single matrix protein's dosage is quantitatively tied to human adult stature. ACAN
     haploinsufficiency is among the commonest monogenic causes of idiopathic short stature.
+  traversal_usable: false
 - edge_id: e00983
   source: npr2_gene
   target: npr2_receptor
@@ -13524,6 +13742,7 @@ edges:
   timescale: lifetime (birth to adult height)
   notes: 'Gene dosage sets receptor function: three tested AMDM missense alleles have markedly deficient guanylyl cyclase
     activity, and obligate carriers are below matched-control height.'
+  traversal_usable: true
 - edge_id: e00984
   source: npr2_gene
   target: cgmp_second_messenger
@@ -13538,6 +13757,7 @@ edges:
   - vasques2013
   confidence: A
   notes: Establishes the dominant-negative component of heterozygous NPR2 alleles, not merely halved dose.
+  traversal_usable: true
 - edge_id: e00985
   source: npr2_gene
   target: npr2_receptor
@@ -13555,6 +13775,7 @@ edges:
   timescale: lifetime
   notes: Opposite-direction human dosage arm. Together with olney2006 this makes NPR2 a two-sided human dose experiment on
     the same receptor.
+  traversal_usable: true
 - edge_id: e00986
   source: nppc_gene
   target: cnp_protein
@@ -13570,6 +13791,7 @@ edges:
   confidence: A
   notes: Three independent chromosomal partners converge on NPPC overexpression, proposed to separate the gene from a negative
     regulatory element.
+  traversal_usable: true
 - edge_id: e00987
   source: nppc_gene
   target: npr2_receptor
@@ -13583,6 +13805,7 @@ edges:
   - hisadooliva2018
   confidence: B
   notes: Ligand-side loss of function reduces receptor output; effect size in SDS not reported.
+  traversal_usable: true
 - edge_id: e00988
   source: fgfr3_gene
   target: fgfr3_receptor
@@ -13599,6 +13822,7 @@ edges:
   confidence: A
   timescale: effect established within the first two postnatal years
   notes: 'Sign is negative because FGFR3 is a negative regulator of bone growth: activating the receptor shortens the bone.'
+  traversal_usable: true
 - edge_id: e00989
   source: fgfr3_gene
   target: fgfr3_receptor
@@ -13614,6 +13838,7 @@ edges:
   timescale: lifetime
   notes: 'The loss-of-function arm. Sign is positive on growth: reducing FGFR3 signalling lengthens bone. Graded B because
     the original report is one family, with one independent confirmatory family since.'
+  traversal_usable: true
 - edge_id: e00990
   source: ihh_gene
   target: ihh_protein
@@ -13631,11 +13856,12 @@ edges:
   timescale: lifetime
   notes: 'Penetrance is incomplete: 5 of 16 heterozygous carriers were of normal height. IHH is nonetheless the commonest
     gene found on growth-plate panels in idiopathic short stature (4/102).'
+  traversal_usable: true
 - edge_id: e00991
   source: ihh_gene
   target: ihh_protein
   relation: activates
-  sign: unknown
+  sign: +
   magnitude: three mutated residues predicted to be adjacent on the IHH surface; middle phalanges shortened or absent
   context: human, three large families with heterozygous missense mutations in the IHH amino-terminal signalling domain; brachydactyly
     type A-1
@@ -13645,6 +13871,8 @@ edges:
   confidence: B
   notes: 'Sign recorded as unknown deliberately: BDA-1 missense alleles do not phenocopy IHH haploinsufficiency, so they are
     not simple loss of function and the direction of effect on Hedgehog output is not established.'
+  traversal_usable: true
+  sign_basis: 'entailed: a gene node activating its protein product is expression; sign is positive by definition'
 - edge_id: e00992
   source: pth1r_gene
   target: pth1r_receptor
@@ -13661,6 +13889,7 @@ edges:
   timescale: prenatal onset, lifelong
   notes: Gain of function delays hypertrophic differentiation and shortens limbs, the direction predicted by the PTHrP-IHH
     loop.
+  traversal_usable: true
 - edge_id: e00993
   source: pth1r_gene
   target: pth1r_receptor
@@ -13676,6 +13905,7 @@ edges:
   confidence: D
   notes: Single patient, and the null state arose from allele-specific non-expression rather than biallelic mutation. Graded
     D on that basis despite the clarity of the biochemistry.
+  traversal_usable: true
 - edge_id: e00994
   source: hdac4_gene
   target: hdac4_protein
@@ -13692,6 +13922,7 @@ edges:
   timescale: childhood through adult stature
   notes: Losing a repressor of chondrocyte hypertrophy shortens the digits, the direction expected if hypertrophic differentiation
     is advanced rather than extended.
+  traversal_usable: true
 - edge_id: e00995
   source: acan_gene
   target: aggrecan_acan
@@ -13708,6 +13939,7 @@ edges:
   timescale: deficit widens from childhood to adult height, with premature growth cessation
   notes: Perfect cosegregation of variant and phenotype across 20 families. Bone age is ADVANCED, not delayed, so the mechanism
     is a shortened growth window rather than a slowed plate.
+  traversal_usable: true
 - edge_id: e00996
   source: col10a1_gene
   target: collagen_type_x
@@ -13725,6 +13957,7 @@ edges:
   timescale: onset median 12 months for NC1-domain variants versus 72 months for non-NC1 (P=0.0014)
   notes: 'The only locus in this atlas where dominant-negative and haploinsufficient alleles of one gene have measured stature
     effects in the same cohort: interference costs ~1.6 SDS more than losing a copy.'
+  traversal_usable: true
 - edge_id: e00997
   source: col10a1_gene
   target: hypertrophic_chondrocyte
@@ -13739,6 +13972,7 @@ edges:
   confidence: C
   notes: In vitro human-protein assay; the link to the hypertrophic chondrocyte is by restricted expression of collagen X
     rather than by direct tissue measurement.
+  traversal_usable: true
 - edge_id: e00998
   source: col2a1_gene
   target: collagen_type_ii
@@ -13753,6 +13987,7 @@ edges:
   confidence: B
   notes: No published mean adult height SDS by COL2A1 mutation class exists, which is why no magnitude in SDS is given here.
     See gap g_l8gen_005.
+  traversal_usable: true
 - edge_id: e00999
   source: comp_gene
   target: comp_protein
@@ -13769,6 +14004,7 @@ edges:
   confidence: B
   notes: 'Mechanism is misfolding and ER retention of the pentamer, not dosage: this is why COMP missense alleles are far
     more severe than null alleles.'
+  traversal_usable: true
 - edge_id: e01000
   source: ghr_gene
   target: gh_receptor
@@ -13786,6 +14022,7 @@ edges:
   timescale: postnatal; birth size is near-normal because fetal growth is largely GH-independent
   notes: 'The largest monogenic stature effect in this atlas. Fixes the causal direction of the somatomedin hypothesis in
     humans: abolishing the receptor while the ligand is elevated produces near-complete growth failure.'
+  traversal_usable: true
 - edge_id: e01001
   source: stat5b_gene
   target: stat5b_tf
@@ -13803,6 +14040,7 @@ edges:
   timescale: postnatal growth failure with growth hormone insensitivity
   notes: 'Places the lesion below the GH receptor: GH and GH-binding protein are normal to elevated while IGF-1 generation
     fails. Immune dysfunction accompanies it because STAT5B also transduces IL-2 receptor signalling.'
+  traversal_usable: true
 - edge_id: e01002
   source: igfals_gene
   target: als_igfals
@@ -13818,6 +14056,7 @@ edges:
   timescale: postnatal, prepubertal onset
   notes: 'The key quantitative point is how MILD this is: near-total collapse of the circulating IGF ternary complex costs
     only ~1.4 SDS, which argues the plate is driven by local rather than circulating IGF-1.'
+  traversal_usable: true
 - edge_id: e01003
   source: igfals_gene
   target: igf_ternary_complex
@@ -13832,6 +14071,7 @@ edges:
   - domen2009
   confidence: A
   notes: ALS loss disrupts the entire circulating IGF system, not one component.
+  traversal_usable: true
 - edge_id: e01004
   source: pappa2_gene
   target: pappa2_protease
@@ -13847,6 +14087,7 @@ edges:
   confidence: B
   notes: Inverts the usual biochemical signature of short stature and falsifies the use of total serum IGF-1 as a proxy for
     IGF-1 action.
+  traversal_usable: true
 - edge_id: e01005
   source: pappa2_gene
   target: igf_ternary_complex
@@ -13859,6 +14100,7 @@ edges:
   - dauber2016
   confidence: B
   notes: Direct human demonstration that the protease liberates IGF-1 from the ternary complex.
+  traversal_usable: true
 - edge_id: e01006
   source: igf1r_gene
   target: igf1_receptor
@@ -13874,6 +14116,7 @@ edges:
   confidence: B
   timescale: prenatal and postnatal
   notes: 'The mirror image of the GHR/Laron signature: low birth size, no catch-up, normal-to-high IGF-1, blunted rhGH response.'
+  traversal_usable: true
 - edge_id: e01007
   source: igf1_gene
   target: igf1_systemic
@@ -13888,6 +14131,7 @@ edges:
   confidence: D
   timescale: prenatal onset, persisting postnatally
   notes: Single patient. Places IGF1 downstream of the point at which the somatotropic axis becomes GH-dependent.
+  traversal_usable: true
 - edge_id: e01008
   source: igf1_gene
   target: adult_height_attainment
@@ -13903,6 +14147,7 @@ edges:
   timescale: childhood through adult height
   notes: The population-scale counterpart to the Laron and IGFALS phenotypes. The gap between a catastrophic null and a 0.09
     SD/SD slope quantifies how strongly buffered this axis is.
+  traversal_usable: false
 - edge_id: e01009
   source: esr1_gene
   target: estrogen_receptor_alpha
@@ -13919,6 +14164,7 @@ edges:
   timescale: growth continues past the normal age of fusion
   notes: Establishes in humans that estrogen acting through ESR1, not androgen and not circulating estrogen concentration,
     closes the growth plate in both sexes.
+  traversal_usable: true
 - edge_id: e01010
   source: esr1_gene
   target: epiphyseal_fusion
@@ -13932,6 +14178,7 @@ edges:
   confidence: B
   timescale: fusion fails to occur at the normal age
   notes: Receptor-side arm of the estrogen-fusion pair; the ligand-side arm is cyp19a1_gene.
+  traversal_usable: true
 - edge_id: e01011
   source: cyp19a1_gene
   target: aromatase_cyp19a1
@@ -13948,6 +14195,7 @@ edges:
   timescale: tall stature accrues through failure of timely fusion
   notes: Ligand-side arm of the estrogen-fusion pair. Rochira 2010 adds the constraint that these men are tall DESPITE a severely
     impaired GH response to GHRH-arginine and low IGF-1.
+  traversal_usable: true
 - edge_id: e01012
   source: cyp19a1_gene
   target: estradiol_hormone
@@ -13963,6 +14211,7 @@ edges:
   timescale: months of hormone replacement
   notes: 'The intervention arm that closes the loop: it is the estrogen product, not the androgen substrate, that acts on
     the skeleton.'
+  traversal_usable: true
 - edge_id: e01013
   source: shox_gene
   target: shox_haploinsufficiency
@@ -13981,6 +14230,7 @@ edges:
   timescale: childhood through adult height
   notes: A monotonic 0/1/2-copy human dose series. SHOX has no rodent orthologue, so this series has no animal counterpart
     to launder.
+  traversal_usable: true
 - edge_id: e01014
   source: shox_gene
   target: turner_syndrome
@@ -13995,6 +14245,7 @@ edges:
   confidence: B
   notes: SHOX haploinsufficiency is the mechanism by which loss of one sex chromosome shortens stature; it does not account
     for the whole Turner height deficit.
+  traversal_usable: true
 - edge_id: e01015
   source: acan_gene
   target: acan_related_short_stature
@@ -14007,6 +14258,7 @@ edges:
   - gkourogianni2017
   confidence: A
   timescale: lifetime, with premature growth cessation
+  traversal_usable: true
 - edge_id: e01016
   source: col10a1_gene
   target: schmid_metaphyseal_chondrodysplasia
@@ -14020,6 +14272,7 @@ edges:
   - meng2025
   confidence: A
   timescale: onset median 12 months (NC1-domain) or 72 months (non-NC1)
+  traversal_usable: true
 - edge_id: e01017
   source: comp_gene
   target: pseudoachondroplasia
@@ -14032,6 +14285,7 @@ edges:
   - briggs1995
   - ni2026
   confidence: A
+  traversal_usable: true
 - edge_id: e01018
   source: comp_gene
   target: multiple_epiphyseal_dysplasia
@@ -14044,6 +14298,7 @@ edges:
   - briggs1995
   - ni2026
   confidence: A
+  traversal_usable: true
 - edge_id: e01019
   source: col2a1_gene
   target: spondyloepiphyseal_dysplasia
@@ -14058,6 +14313,7 @@ edges:
   - webb2026
   confidence: A
   timescale: GH response measured over 3-3.5 years
+  traversal_usable: true
 - edge_id: e01020
   source: ghr_gene
   target: laron_syndrome
@@ -14071,6 +14327,7 @@ edges:
   - godowski1989
   - amselem1989
   confidence: A
+  traversal_usable: true
 - edge_id: e01021
   source: stat5b_gene
   target: stat5b_deficiency
@@ -14083,6 +14340,7 @@ edges:
   - kofoed2003
   - hwa2005
   confidence: A
+  traversal_usable: true
 - edge_id: e01022
   source: pappa2_gene
   target: pappa2_deficiency
@@ -14094,6 +14352,7 @@ edges:
   refs:
   - dauber2016
   confidence: A
+  traversal_usable: true
 - edge_id: e01023
   source: igf1r_gene
   target: igf1r_mutation_human
@@ -14105,6 +14364,7 @@ edges:
   refs:
   - abuzzahab2003
   confidence: A
+  traversal_usable: true
 - edge_id: e01024
   source: igf1_gene
   target: igf1_deficiency_human
@@ -14116,6 +14376,7 @@ edges:
   refs:
   - woods1996
   confidence: B
+  traversal_usable: true
 - edge_id: e01025
   source: esr1_gene
   target: estrogen_resistance_esr1
@@ -14128,6 +14389,7 @@ edges:
   - smith1994
   - quaynor2013
   confidence: A
+  traversal_usable: true
 - edge_id: e01026
   source: cyp19a1_gene
   target: aromatase_deficiency_human
@@ -14141,6 +14403,7 @@ edges:
   - carani1997
   - rochira2010
   confidence: A
+  traversal_usable: true
 - edge_id: e01027
   source: fgfr3_gene
   target: achondroplasia
@@ -14153,6 +14416,7 @@ edges:
   - shiang1994
   - rousseau1994
   confidence: A
+  traversal_usable: true
 - edge_id: e01028
   source: fgfr3_gene
   target: hypochondroplasia
@@ -14164,6 +14428,7 @@ edges:
   refs:
   - bellus1995
   confidence: A
+  traversal_usable: true
 - edge_id: e01029
   source: npr2_gene
   target: npr2_heterozygous_short_stature
@@ -14177,6 +14442,7 @@ edges:
   - vasques2013
   - hisadooliva2015
   confidence: A
+  traversal_usable: true
 - edge_id: e01030
   source: npr2_gene
   target: npr2_gain_of_function_tall
@@ -14189,6 +14455,7 @@ edges:
   - miura2012
   - hannema2013
   confidence: A
+  traversal_usable: true
 - edge_id: e01031
   source: nppc_gene
   target: nppc_duplication_tall_stature
@@ -14201,6 +14468,7 @@ edges:
   - bocciardi2007
   - moncla2007
   confidence: A
+  traversal_usable: true
 - edge_id: e01032
   source: pth1r_gene
   target: jansen_metaphyseal_chondrodysplasia
@@ -14212,6 +14480,7 @@ edges:
   refs:
   - schipani1995
   confidence: A
+  traversal_usable: true
 - edge_id: e01033
   source: pth1r_gene
   target: blomstrand_chondrodysplasia
@@ -14224,6 +14493,7 @@ edges:
   - jobert1998
   confidence: D
   notes: Single patient; graded D.
+  traversal_usable: true
 - edge_id: e01034
   source: igfals_gene
   target: igf1_deficiency_human
@@ -14236,6 +14506,7 @@ edges:
   - domen2009
   confidence: B
   notes: The dissociation between circulating IGF-1 and stature is the informative part.
+  traversal_usable: false
 - edge_id: e01035
   source: hdac4_gene
   target: idiopathic_short_stature
@@ -14250,6 +14521,7 @@ edges:
   confidence: C
   notes: Graded C because no mean height SDS specific to HDAC4-mutation carriers, as distinct from whole-2q37-deletion carriers,
     has been published.
+  traversal_usable: false
 - edge_id: e01036
   source: height_gwas
   target: height_polygenic_score
@@ -14261,6 +14533,7 @@ edges:
   refs:
   - yengo2022
   confidence: A
+  traversal_usable: true
 - edge_id: e01037
   source: assortative_mating_height
   target: height_heritability
@@ -14275,6 +14548,7 @@ edges:
   timescale: cumulative across generations
   notes: 'Direction is positive: assortment raises trait genetic variance and relative similarity, inflating heritability
     estimated from relatives. Magnitude specific to height is not published.'
+  traversal_usable: false
 - edge_id: e01038
   source: rare_variant_height
   target: missing_heritability_height
@@ -14288,6 +14562,7 @@ edges:
   - hawkes2024
   confidence: A
   notes: 'Sign is positive on explained heritability: including rare variants closes most of the gap.'
+  traversal_usable: true
 - edge_id: e01039
   source: height_gwas
   target: common_vs_rare_pathway_divergence
@@ -14306,6 +14581,7 @@ edges:
   confidence: C
   notes: Records the divergence as an observation. The explanatory mechanism is untested and is held at grade E on the target
     node.
+  traversal_usable: false
 - edge_id: e01040
   source: de_novo_variant_growth
   target: fgfr3_gene
@@ -14323,6 +14599,7 @@ edges:
   timescale: accumulates across the reproductive lifespan (1.67 mutations/year/haploid genome)
   notes: 'Mechanistic basis of the paternal age effect in achondroplasia: the mutation is selected for in spermatogonia, not
     merely tolerated.'
+  traversal_usable: true
 - edge_id: e01041
   source: igf2_h19_imprinting
   target: russell_silver_syndrome
@@ -14334,6 +14611,7 @@ edges:
   refs:
   - abi2019
   confidence: B
+  traversal_usable: true
 - edge_id: e01042
   source: igf2_h19_imprinting
   target: beckwith_wiedemann_syndrome
@@ -14346,8 +14624,9 @@ edges:
   - abi2019
   confidence: B
   notes: Reciprocal to the Silver-Russell lesion at the same 11p15.5 element.
+  traversal_usable: true
 - edge_id: e01043
-  source: uniparental_disomy_growth
+  source: genomic_imprinting_growth
   target: igf2_h19_imprinting
   relation: inhibits
   sign: '-'
@@ -14359,8 +14638,10 @@ edges:
   - abi2019
   - ogawa2025
   confidence: D
-  notes: Single transcriptional-profiling study for the trans effect; graded D on that basis even though the Temple phenotype
-    itself is A-grade.
+  notes: 'Single transcriptional-profiling study for the trans effect; graded D on that basis even though the Temple phenotype
+    itself is A-grade. [endpoint redirected: uniparental_disomy_growth merged into genomic_imprinting_growth during phase
+    2c stub resolution]'
+  traversal_usable: true
 - edge_id: e01044
   source: dna_methylation_growth_plate
   target: height_gwas
@@ -14377,3 +14658,2286 @@ edges:
   timescale: 7-21 post-conception weeks
   notes: Identifies a developmental-only regulatory class that would be invisible in adult-tissue eQTL catalogues - a specific
     route by which height-associated non-coding variants could act.
+  traversal_usable: false
+- edge_id: e01045
+  source: secondary_ossification_center
+  target: soc_formation_triggers_stemness
+  relation: hypothesized_link
+  sign: +
+  magnitude: 'temporal coincidence only: PTHrP-creER resting chondrocytes go from 3.3% secondary colony-forming (17/518, none
+    passageable) at a P9 pulse to robust self-renewal at a P12 pulse, spanning the days in which the murine SOC forms. No
+    experiment has advanced, delayed or ablated SOC formation and measured the clonal consequence'
+  context: mouse proximal tibia and distal femur, P9-P12, sex not stated; resting zone. The human SOC of the distal femur
+    is already present in 100% of fetuses after 35 weeks gestation, so the mouse temporal window has no human counterpart
+    and the coincidence argument does not transfer
+  timescale: days (mouse P9 to P12); prenatal in humans
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - newton2019
+  - funaki2020
+  confidence: speculative
+  gap_id: g_l2stem_003
+  notes: 'Written as hypothesized_link deliberately. This is the load-bearing claim of the L2 stem-cell story and it currently
+    rests on two mouse studies that report a correlation in time and nothing else. The species mismatch makes it worse rather
+    than better: in humans the SOC forms before birth while the resting zone continues to function for another fifteen years.'
+  traversal_usable: false
+- edge_id: e01046
+  source: vascular_invasion_poc
+  target: stem_cell_niche_vascular_coupling
+  relation: required_for
+  sign: +
+  magnitude: Osterix-expressing osteoprogenitors migrate INTO the cartilage template along the invading vessels and become
+    trabecular osteoblasts, whereas mature osteoblasts do not migrate; type H (CD31-high, endomucin-high) capillaries in the
+    metaphysis are surrounded by osteoprogenitors and decline with age in parallel with bone formation
+  context: mouse embryonic and postnatal long bone, both sexes; primary ossification centre and metaphysis. Not demonstrated
+    in human tissue
+  timescale: hours to days for progenitor co-migration with the vascular front
+  evidence_tier: T1
+  refs:
+  - maes2010
+  - kusumbe2014
+  confidence: C
+  notes: The first vascular invasion event is what installs the progenitor-carrying vasculature the later niche depends on;
+    the coupling node itself is metaphyseal and postnatal, so this edge is the developmental antecedent rather than a restatement
+    of it.
+  traversal_usable: true
+- edge_id: e01047
+  source: endochondral_ossification
+  target: chondrocyte_to_osteoblast_transdifferentiation
+  relation: required_for
+  sign: +
+  magnitude: Col10a1- and Aggrecan-creER lineage tracing shows hypertrophic chondrocytes survive the chondro-osseous junction
+    and become osteoblasts and osteocytes in the primary spongiosa during development, postnatal growth and fracture repair,
+    so a fraction of trabecular bone is chondrocyte-derived rather than derived from perichondrial osteoprogenitors
+  context: mouse long bone, embryonic through postnatal, both sexes; hypertrophic zone and primary spongiosa
+  timescale: days (label appears in metaphyseal osteoblasts within ~3-7 days of a hypertrophic-zone pulse)
+  evidence_tier: T1
+  refs:
+  - yang2014
+  - zhou2014a
+  confidence: C
+  notes: 'Two independent groups reaching the same conclusion with different Cre drivers in the same year. Still mouse-only:
+    no human lineage tracing exists (see lineage_tracing_limitations), so the human fraction of chondrocyte-derived osteoblasts
+    is unknown.'
+  traversal_usable: true
+- edge_id: e01048
+  source: mesenchymal_condensation
+  target: clonal_exhaustion
+  relation: hypothesized_link
+  sign: +
+  magnitude: unmeasured. Fgfr3-creER pulsed at the condensation stage marks descendants that stay dorsally restricted in the
+    resting and proliferative zones for the life of the plate, establishing that condensation-stage partitioning IS inherited;
+    whether founder NUMBER sets the total division budget has never been measured in any species
+  context: mouse limb bud condensation to postnatal growth plate, both sexes; whole element. The quantitative link asserted
+    here has no measurement in mouse or human
+  timescale: the full growth period - embryonic condensation to fusion, i.e. weeks in mouse and ~15-18 years in human
+  evidence_tier: T1
+  refs:
+  - lui2018
+  - gafni2001
+  - mizuhashi2018
+  confidence: speculative
+  gap_id: g_l0l9_008
+  notes: This is the embryonic initial condition the finite-proliferative-capacity model needs and does not have. Recorded
+    as hypothesized_link rather than omitted because the two halves of the claim are each demonstrated separately and only
+    their product is missing.
+  traversal_usable: false
+- edge_id: e01049
+  source: growth_velocity_curve
+  target: hypertrophic_volume_increase
+  relation: hypothesized_link
+  sign: +
+  magnitude: 'the arithmetic that must close and never has: organism peak height velocity is 9.61 cm/yr at 12.46 y in boys
+    and 8.32 cm/yr at 10.99 y in girls, and under the Hunziker formulation plate elongation equals chondrocyte production
+    rate multiplied by terminal hypertrophic cell height. No published calculation multiplies HUMAN column density by HUMAN
+    production rate by HUMAN terminal cell height and compares the product to measured human height velocity'
+  context: human, both sexes, puberty (organism side) versus rat and pig hypertrophic zone (cellular side); the species and
+    the scale both change across this edge
+  timescale: cm/yr at the organism against um/day at the cell - a 10^4 gap in the time unit, which is why the join has never
+    been made
+  evidence_tier: T1
+  refs:
+  - chun2024
+  - galvo2025
+  - hunziker1987
+  - hunziker1989
+  confidence: speculative
+  gap_id: g_l9organism_001
+  notes: Distinct from e00001 in the canonical set (growth_velocity_curve -> growth_velocity_longitudinal), which is the summation
+    across plates. This edge is the cell-kinetic decomposition WITHIN a plate, and it is the one the atlas exists to test.
+  traversal_usable: false
+- edge_id: e01050
+  source: canalization_growth
+  target: neuroendocrine_catchup_hypothesis
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'a null that discriminates: 83-90% of catch-up episodes are fitted by a monomolecular function, the rate constant
+    k differs by diagnosis (higher in coeliac disease than in either juvenile hypothyroidism or GH deficiency), but GH DOSE
+    has no significant effect on k. The deficit, not the systemic drive, sets the catch-up rate'
+  context: human, prepubertal, both sexes, treated coeliac disease vs juvenile hypothyroidism vs GH deficiency
+  timescale: k is expressed in reciprocal years; catch-up episodes run over 1-3 years and infant realignment onto the parental
+    channel completes by about 2 years
+  evidence_tier: T1
+  refs:
+  - wit2021
+  - smith1976
+  confidence: B
+  notes: The existing canonical edge canalization_growth -> delayed_senescence_hypothesis records the hypothesis this result
+    SUPPORTS; this edge records the one it constrains. A neuroendocrine sizostat that senses the deficit and drives the endocrine
+    axis harder predicts that raising GH dose raises k. It does not.
+  traversal_usable: false
+- edge_id: e01051
+  source: canalization_growth
+  target: clonal_exhaustion
+  relation: hypothesized_link
+  sign: +
+  magnitude: unmeasured in either direction. Catch-up in rabbit is accompanied by DELAYED growth plate senescence (capacity
+    apparently conserved), while the finite-capacity model as usually stated implies catch-up spends capacity. No cohort has
+    been followed from a resolved growth insult to attained adult height and physeal closure with both endpoints measured
+  context: human prepubertal catch-up (wit2021, smith1976) against rabbit growth-restriction catch-up (gafni2001); no human
+    plate-level capacity readout exists at any age
+  timescale: catch-up over 1-3 years; the cost, if any, would be paid 5-15 years later at fusion
+  evidence_tier: T1
+  refs:
+  - wit2021
+  - gafni2001
+  - nilsson2004
+  confidence: speculative
+  gap_id: g_l0l9_010
+  notes: This is the edge that decides whether L12's growth-promoting endpoints are honest. Every near-adult-height trial
+    assumes catch-up is free.
+  traversal_usable: false
+- edge_id: e01052
+  source: dental_development_clock
+  target: growth_hormone
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'a dissociation of 1.68 years: in untreated isolated GH deficiency, bone age is delayed by 1.99 years but dental
+    age by only 0.31 years, and the extent of dental delay does not correlate with the extent of bone age delay. Independently,
+    age at 90% dental maturity shows no significant correlation with peak height velocity'
+  context: human children with untreated isolated GH deficiency, both sexes (torliskawalkow2026); human mixed-sex maturity
+    series (demirjian1985)
+  timescale: years - both clocks are read in years of maturational age, which is what makes the 1.68-year dissociation interpretable
+  evidence_tier: T1
+  refs:
+  - torliskawalkow2026
+  - demirjian1985
+  confidence: B
+  notes: 'An organism-level readout that bounds where GH acts. Dental development is a maturational clock that runs largely
+    independently of the GH axis, so any model in which GH sets a global somatic maturation rate is falsified. It also supplies
+    the control the bone-age literature lacks: a second, GH-insensitive maturity clock in the same child.'
+  traversal_usable: false
+- edge_id: e01053
+  source: brain_growth_trajectory
+  target: pubertal_growth_spurt
+  relation: correlates_with
+  sign: unknown
+  magnitude: zero of the brain tissue classes show an adolescent volume spurt. Peak grey matter volume occurs at 5.9 years
+    and peak white matter volume at 28.7 years, with peak total cerebrum volume at 12.5 years, against peak height velocity
+    at 12.46 years (boys) and 10.99 years (girls). The organ that consumes the largest share of childhood energy does not
+    participate in the pubertal spurt
+  context: human, both sexes, birth to old age; brain MRI normative modelling of >100,000 scans (bethlehem2022) against SITAR
+    height velocity cohorts (chun2024)
+  timescale: years; the brain trajectory peaks are separated from peak height velocity by 6.6 years (grey matter) and 16 years
+    (white matter)
+  evidence_tier: T1
+  refs:
+  - bethlehem2022
+  - chun2024
+  confidence: A
+  notes: 'Constrains L4: whatever produces the pubertal height spurt is a skeletal-tissue-specific signal, not a general anabolic
+    or maturational drive, because the brain sees the same hormonal environment and does not spurt. Total cerebrum volume
+    peaking at 12.5 y is a passive consequence of white matter still accruing, not a spurt.'
+  traversal_usable: false
+- edge_id: e01054
+  source: muscle_bone_mechanical_coupling
+  target: appositional_growth
+  relation: correlates_with
+  sign: +
+  magnitude: peak lean mass velocity leads peak total-body bone mineral content velocity by 0.36 years in girls and 0.51 years
+    in boys (0.71/0.63 y at the arms, 0.22/0.48 y at the legs), and peak lean mass velocity explains 50% of the variance in
+    peak BMC velocity; peak HEIGHT velocity shows no independent association with peak BMC velocity once lean mass is accounted
+    for
+  context: human adolescents, both sexes, pubertal growth spurt; whole body and limb-segment DXA
+  timescale: months to years - the lead time is 0.22-0.71 years depending on site and sex
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  confidence: B
+  notes: 'Directs the muscle-bone coupling to the periosteal/appositional compartment rather than to the physis: bone MASS
+    accrual follows muscle force with a measurable lag, while longitudinal growth velocity contributes nothing independent.
+    This is an organism-level argument that mechanical loading acts on the bone envelope, not on plate elongation.'
+  traversal_usable: false
+- edge_id: e01055
+  source: energy_availability_growth
+  target: klotho_beta_cofactor
+  relation: activates
+  sign: +
+  magnitude: 'four weeks of food restriction in wild-type mice raises LEPROT and LEPROTL1 mRNA in the tibial growth plate
+    as well as the liver; Fgf21-knockout mice show no such induction, and giving rhFGF21 back to food-restricted Fgf21-null
+    mice restores it. The receptor complex is present: Klb, Fgfr1 and Fgfr3 mRNA are all detected in fetal and 3-week-old
+    mouse growth plate chondrocytes'
+  context: mouse, 3 weeks to adult, sex not stated; tibial growth plate and primary growth plate chondrocyte culture. Not
+    shown in human tissue
+  timescale: weeks - the in vivo induction requires 4 weeks of restriction
+  evidence_tier: T1
+  refs:
+  - wu2013
+  - wu2012
+  confidence: C
+  notes: The only DEMONSTRATED molecular entry point from the environment layer into a local signalling node that does not
+    route through GH or IGF-1 systemically. It is included because the knockout-plus-rescue design is genuinely causal, and
+    graded C rather than higher because both papers come from a single laboratory and the tissue is mouse.
+  traversal_usable: true
+- edge_id: e01056
+  source: energy_availability_growth
+  target: fgfr1_receptor
+  relation: activates
+  sign: +
+  magnitude: 'siRNA epistasis places the effect on FGFR1: knocking down FGFR1 (or ERK1) in cultured mouse growth plate chondrocytes
+    abolishes every FGF21 action - the fall in thymidine incorporation and Col10a1, the block on GH-stimulated proliferation,
+    the reduction in 125I-GH binding, and the induction of LEPROT/LEPROTL1'
+  context: cultured mouse growth plate chondrocytes, fetal and 3-week-old; rhFGF21 5-10 ug/ml
+  timescale: hours to days in culture
+  evidence_tier: T1
+  refs:
+  - wu2012
+  - wu2013
+  confidence: D
+  notes: Names the receptor arm rather than restating e00011. Graded D and not higher because the concentrations required
+    (5-10 ug/ml) are orders of magnitude above human circulating FGF21 even in starvation, so the receptor assignment is secure
+    but its physiological relevance is not.
+  traversal_usable: true
+- edge_id: e01057
+  source: stunting
+  target: klotho_beta_cofactor
+  relation: hypothesized_link
+  sign: +
+  magnitude: untested in humans. The mouse mechanism requires FGF21 at 5-10 ug/ml to inhibit chondrocytes, which is far above
+    human circulating FGF21 even in starvation, and KLB has never been detected in human physeal cartilage. No study has measured
+    FGF21 alongside height velocity in undernourished children
+  context: human stunted children (the exposure) against mouse growth plate chondrocytes (the only place the mechanism has
+    been shown); no human physeal tissue has been examined
+  timescale: stunting accumulates over months to years; the murine mechanism operates over 4 weeks of restriction
+  evidence_tier: T1
+  refs:
+  - wu2013
+  - htet2026
+  - madigan2026
+  confidence: speculative
+  gap_id: g_l0l9_009
+  notes: Recorded as hypothesized_link, not as an edge with a sign one could act on. The human stunting literature attributes
+    growth failure entirely to the GH/IGF-1 axis; this is the competing route and it has never been looked for in a child.
+  traversal_usable: false
+- edge_id: e01058
+  source: human_growth_plate_tissue_scarcity
+  target: epiphyseal_fusion
+  relation: required_for
+  sign: +
+  magnitude: exactly TWO human growth plates have ever been examined histologically while physiological fusion was in progress
+    - one distal tibia undergoing physiological epiphysiodesis studied by stereological histomorphometry (white2008, n=1)
+    and one fusing plate within an apoptosis and electron-microscopy series (emons2009, n=1) - out of 30 catalogued human
+    growth-plate studies
+  context: human, adolescent, at physeal closure; whole plate. Provenance is surgical waste and autopsy, with no biobank
+  timescale: the fusion process itself takes months to a few years per site, and the two available specimens are single time
+    points within it
+  evidence_tier: T3
+  refs:
+  - human_gp_donor_census_20260805
+  - white2008
+  - emons2009
+  confidence: A
+  notes: Hard ceiling on the whole of L7. Every mechanistic statement about how the human growth plate closes - bony bridge
+    formation, apoptosis at fusion, hypoxia and necrosis, ECM remodelling - is downstream of n=2. This is a supply constraint,
+    not a knowledge gap that more analysis can close.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01059
+  source: spatial_transcriptomics_growth_plate
+  target: pde_isoform_inventory
+  relation: required_for
+  sign: +
+  magnitude: no human growth plate spatial transcriptomics exists. Every human zonal molecular assignment in this atlas derives
+    either from laser-capture microdissection of n=2 donors (gse9160, distal femur, 11y10m female and 13y3m male, five zones)
+    or from mouse spatial data, so any claim that a particular PDE isoform is zonally restricted in the human plate is an
+    inference across both method and species
+  context: human distal femur, peripubertal; RZ/PZ/PHZ/HZ/PERI. Mouse spatial data exist; human do not
+  timescale: not applicable - a static expression-map constraint
+  evidence_tier: T3
+  refs:
+  - gse9160
+  - geo_census_20260805
+  - chu2026
+  confidence: A
+  notes: Chosen as the target because the PDE inventory is where the atlas most wants zonal resolution (it determines which
+    phosphodiesterase inhibitor could raise cGMP in the right zone) and where it has least.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01060
+  source: lineage_tracing_limitations
+  target: human_skeletal_stem_cell
+  relation: required_for
+  sign: +
+  magnitude: no genetic fate mapping is possible in humans, so every human skeletal stem cell claim rests on prospective marker-based
+    isolation followed by xenotransplantation, or on inference from single-cell and spatial profiling of static tissue - never
+    on watching a labelled cell and its progeny in situ
+  context: human, fetal and paediatric skeletal tissue; whole plate. The mouse hierarchy that defines the concept is built
+    entirely on Cre-lox tracing that cannot be repeated in human
+  timescale: the unobservable quantity is precisely the long one - clone lifetime and self-renewal over months to years
+  evidence_tier: T1
+  refs:
+  - chan2018
+  - chu2026
+  - mizuhashi2018
+  confidence: A
+  notes: 'The asymmetry is the point: the mouse skeletal stem cell hierarchy is a lineage claim, the human one is a marker-and-transplant
+    claim, and they are not the same kind of evidence. Any edge running from mouse SSC biology to human SSC biology inherits
+    this.'
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01061
+  source: lineage_tracing_limitations
+  target: clonal_column
+  relation: required_for
+  sign: +
+  magnitude: the monoclonality of the human chondrocyte column has never been demonstrated. In mouse it is established by
+    multicolour clonal reporters; in human it is inferred from column morphology and from static single-cell and spatial profiling
+    of four donors aged 11-14 years
+  context: human growth plate, peripubertal; proliferative zone columns
+  timescale: a column represents days to weeks of clonal output; that history is exactly what static human data cannot recover
+  evidence_tier: T1
+  refs:
+  - chu2026
+  - mizuhashi2018
+  - zhou2014a
+  confidence: A
+  notes: Marked as a method constraint on an L1 structural claim, because the word "clonal" in clonal_column is doing mouse
+    work inside a human node.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01062
+  source: chondrocyte_dissociation_bias
+  target: hypertrophic_chondrocyte_survival
+  relation: inhibits
+  sign: '-'
+  magnitude: hypertrophic chondrocytes are the cells most severely under-recovered by enzymatic dissociation - they are large,
+    fragile and embedded in mineralising matrix - so the question of whether they survive the chondro-osseous junction or
+    die there is the question that dissociation-based single-cell RNA-seq is structurally least able to answer
+  context: multiple species, dissociation-based scRNA-seq of growth plate; hypertrophic zone and chondro-osseous junction
+  timescale: the transit through the hypertrophic zone takes hours to a few days, so the cells in question are a small and
+    short-lived fraction even before dissociation loss
+  evidence_tier: T1
+  refs:
+  - white2008
+  - li2025
+  - delos2026
+  confidence: B
+  notes: 'Distinct from the existing canonical edge chondrocyte_dissociation_bias -> hypertrophic_chondrocyte, which records
+    the cell-recovery bias itself. This edge records what that bias does to a specific contested L2 claim: the survival-versus-apoptosis
+    question at the junction cannot be settled by the method most often used to argue it.'
+  traversal_usable: true
+- edge_id: e01063
+  source: stadiometry_measurement_error
+  target: saltation_stasis_growth
+  relation: required_for
+  sign: +
+  magnitude: the saltation-and-stasis claim asserts that growth occurs in discrete increments separated by days to weeks of
+    stasis, and the increments asserted are of the same order as the measurement error of the instruments used to detect them;
+    diurnal variation in standing height alone is several millimetres
+  context: human infants and children, both sexes; whole-organism stature by stadiometry and knemometry. The dispute is entirely
+    about measurement, not about biology
+  timescale: the contested unit is exactly the sampling interval - daily to weekly measurement produces saltation, less frequent
+    measurement does not
+  evidence_tier: T1
+  refs:
+  - lampl1992
+  - klein1994
+  - reilly1984
+  - ahmed1995
+  confidence: A
+  notes: One of the few places in this atlas where a whole L1 hypothesis node is downstream of an instrument's noise floor
+    rather than of a biological uncertainty. Recorded so the hypothesis is not read as settled biology.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01064
+  source: immunohistochemistry_cartilage_artifact
+  target: estrogen_receptor_alpha
+  relation: required_for
+  sign: +
+  magnitude: the entire human zonal map of oestrogen receptor expression in the growth plate rests on immunohistochemistry
+    in 32 donors across three studies (n=24 Tanner 1-5 proximal tibia; n=4 pubertal tibia and femur; n=4, two prepubertal
+    girls and two adolescent boys), with no orthogonal confirmation by in situ hybridization or zonal transcriptomics
+  context: human proximal tibia and distal femur, Tanner 1-5, both sexes; all zones
+  timescale: not applicable - a static localization constraint
+  evidence_tier: T1
+  refs:
+  - nilsson2003
+  - nilsson1999
+  - egerbacher2002
+  confidence: A
+  notes: Oestrogen action on the human plate is the mechanism on which the whole of L7 fusion and much of L12 aromatase-inhibitor
+    pharmacology depends, and its zonal anatomy is an IHC result in 32 children. Cartilage IHC has specific artefact modes
+    (endogenous biotin, matrix trapping, fixation-dependent epitope loss) that this node catalogues.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01065
+  source: growth_velocity_measurement_interval
+  target: seasonality_growth_velocity
+  relation: required_for
+  sign: +
+  magnitude: a seasonal amplitude in height velocity can only be resolved if the measurement interval is shorter than the
+    season being claimed; annualised velocities are mathematically incapable of showing it, and sub-annual intervals inflate
+    apparent velocity variance because measurement error is divided by a shorter time base
+  context: human children, both sexes, longitudinal auxology; whole organism
+  timescale: the constraint IS a timescale - seasonal claims require intervals well under 3 months
+  evidence_tier: T1
+  refs:
+  - lampl1992
+  - ahmed1995
+  - shulman2013
+  confidence: B
+  notes: L13 -> L4 was empty before this edge. Seasonality of growth velocity is a real and repeatedly reported phenomenon
+    whose effect size is not separable from the sampling design used to measure it.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01066
+  source: in_situ_hybridization_cartilage
+  target: ihh_protein
+  relation: required_for
+  sign: +
+  magnitude: the prehypertrophic restriction of Ihh expression - the spatial fact on which the entire PTHrP/IHH negative feedback
+    loop is built - is an in situ hybridization result. The human counterpart rests on IHC in a pubertal series with donor
+    number not stated, plus the two-donor laser-capture zonal array
+  context: mouse embryonic and postnatal long bone (stjacques1999, long2001) with human pubertal confirmation of uncertain
+    n (kindblom2002); prehypertrophic zone
+  timescale: not applicable - a static expression-domain constraint
+  evidence_tier: T1
+  refs:
+  - stjacques1999
+  - long2001
+  - kindblom2002
+  - gse9160
+  confidence: A
+  notes: L13 -> L3 was empty. The feedback loop is usually drawn as though the expression domains were measured directly in
+    human; they were not.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01067
+  source: atomic_force_microscopy_cartilage
+  target: zonal_stiffness_gradient
+  relation: required_for
+  sign: +
+  magnitude: 'the zonal modulus gradient of the human plate is an AFM nanoindentation result on hydrated cryosections: resting-zone
+    cartilage 130.70 MPa (SD 36.56) stepping to 11920 MPa (SD 6.60 GPa) at epiphyseal bone, n=3 per interface with 4 areas
+    each across 10 donors. Tip geometry, section thickness and hydration state each move the absolute values substantially'
+  context: human phalangeal and tibial growth plates, paediatric, both sexes; all zones and both interfaces
+  timescale: indentation rate dependence matters - cartilage is poroviscoelastic, so the modulus reported depends on the loading
+    timescale of the measurement
+  evidence_tier: T1
+  refs:
+  - xie2025
+  - darling2010
+  - radhakrishnan2004
+  confidence: B
+  notes: L13 -> L5 was empty. Every finite-element model of the physis takes its material properties from measurements of
+    this kind, so the modelling layer inherits the method's assumptions without restating them.
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01068
+  source: dxa_body_composition
+  target: muscle_bone_mechanical_coupling
+  relation: required_for
+  sign: +
+  magnitude: 'the muscle-bone unit argument at puberty is a DXA result: peak lean mass velocity leading peak bone mineral
+    content velocity by 0.22-0.71 years depending on site and sex, with 50% of peak BMC velocity variance explained. DXA measures
+    areal rather than volumetric density and conflates size with density in growing children, which biases exactly the growth-phase
+    comparison being made'
+  context: human adolescents, both sexes, pubertal spurt; whole body, arms and legs
+  timescale: the lead time being measured (0.22-0.71 y) is of the same order as the spacing of annual DXA scans, so it is
+    near the design's resolution
+  evidence_tier: T1
+  refs:
+  - rauch2004
+  - hodgson2025
+  confidence: B
+  notes: 'L13 -> L9 was empty. This edge and e00010 are deliberately paired: the organism-level conclusion and the instrument
+    that produced it should not be separated.'
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01069
+  source: metatarsal_explant_culture
+  target: npr2_agonist_class
+  relation: required_for
+  sign: +
+  magnitude: the fetal metatarsal explant is the assay in which CNP and its analogues were shown to lengthen cartilage directly,
+    and it is the bridge every NPR2 agonist programme crossed between receptor pharmacology and animal growth. It is a fetal,
+    rodent, avascular, unloaded explant with no secondary ossification centre and no resting zone niche of the kind the postnatal
+    human plate has
+  context: fetal mouse and rat metatarsal, embryonic; whole rudiment. Applied to a class of drugs given to human children
+    aged 2-15 with an intact postnatal physis
+  timescale: explant assays run over days; the clinical endpoint they are used to predict is annualised growth velocity over
+    years
+  evidence_tier: T1
+  refs:
+  - chagin2009
+  - sahni1999
+  - reno2025
+  confidence: B
+  notes: 'L13 -> L12 was empty. The mismatch matters for the atlas''s own CNP-analogue puzzle: an assay with no resting zone
+    cannot report on resting-zone-mediated effects, which is one of the candidate explanations for why plasma exposure and
+    growth response decouple in the clinic.'
+  sign_basis: entailed_by_relation
+  traversal_usable: true
+- edge_id: e01070
+  source: resting_zone
+  target: resting_zone_niche
+  relation: required_for
+  sign: +
+  magnitude: 'the niche is defined by position within the zone: PTHrP-expressing chondrocytes occupy the resting zone specifically,
+    and the zone provides the WNT-inhibitory microenvironment in which those cells stay undifferentiated. Removing the zone
+    removes the niche by construction, and resting zone transplantation experiments show the zone induces columnar organisation
+    in the tissue beneath it'
+  context: mouse distal femur and proximal tibia, postnatal, both sexes; resting zone
+  timescale: the niche property is a standing state maintained over the whole growth period, not an event
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - hallett2021
+  - newton2019
+  confidence: C
+  notes: L1 -> L2 had zero edges before this. The architectural zone and the stem-cell niche are deliberately separate nodes
+    - one is a histological compartment, the other a functional claim about the cells in it - and the dependency between them
+    was never written down.
+  traversal_usable: true
+- edge_id: e01071
+  source: epiphyseal_vasculature
+  target: stem_cell_niche_vascular_coupling
+  relation: required_for
+  sign: +
+  magnitude: the epiphyseal vessels reaching the plate through cartilage canals are the delivery route for the vascular signals
+    the niche depends on; type H capillaries are surrounded by osteoprogenitors and their decline with age parallels the decline
+    in bone formation
+  context: mouse metaphysis and epiphysis, postnatal to aged, both sexes; type H vessel compartment. The human cartilage canal
+    is described anatomically but the coupling is not demonstrated in human
+  timescale: the type H decline runs over the animal's lifespan (months in mouse), so this is a slow structural variable,
+    not a signalling event
+  evidence_tier: T1
+  refs:
+  - kusumbe2014
+  - chan2015
+  confidence: C
+  notes: Complements e00002, which is the developmental installation of the same coupling. This edge is its postnatal maintenance.
+  traversal_usable: true
+- edge_id: e01072
+  source: hypertrophic_chondrocyte
+  target: chondrocyte_to_osteoblast_transdifferentiation
+  relation: differentiates_into
+  sign: +
+  magnitude: a defined fraction of hypertrophic chondrocytes escape apoptosis at the chondro-osseous junction and become osteoblasts
+    and osteocytes in the primary spongiosa, demonstrated independently with Col10a1-creER and with Aggrecan-creER lineage
+    tracing
+  context: mouse long bone, embryonic through postnatal growth and fracture repair, both sexes; hypertrophic zone
+  timescale: days - labelled progeny appear in metaphyseal bone within roughly one week of a pulse
+  evidence_tier: T1
+  refs:
+  - yang2014
+  - zhou2014a
+  - hallett2021_2
+  confidence: C
+  notes: The cell-type-to-process edge that L1 and L2 both needed and neither carried. Mouse only; the human fraction is unknown
+    because no human lineage tracing is possible (see e00016, e00017).
+  traversal_usable: true
+- edge_id: e01073
+  source: pthrp_positive_resting_chondrocyte
+  target: clonal_column
+  relation: differentiates_into
+  sign: +
+  magnitude: PTHrP-creER-marked resting chondrocytes generate the columnar clones of the proliferative zone after the secondary
+    ossification centre forms; before it, the same pulse produces short-lived clones that are not maintained. The switch is
+    sharp between a P9 and a P12 pulse
+  context: mouse distal femur and proximal tibia, P9 onward, both sexes; resting to proliferative zone
+  timescale: clones become detectable as columns over days and are maintained for weeks to months in mouse
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - newton2019
+  confidence: C
+  notes: L2 -> L1 had zero edges before this. This is the single most consequential cross-layer claim in the stem-cell story
+    - it is what makes the resting zone a source rather than a reserve - and it was previously implicit.
+  traversal_usable: true
+- edge_id: e01074
+  source: growth_plate_senescence
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  magnitude: 'senescence is a coordinated programme, not a passive failure: functional, structural and molecular senescent
+    changes occur EARLIER in the plates of small bones (metacarpals, phalanges) than of large bones (femur, tibia), with corresponding
+    modulation of IGF, BMP and WNT paracrine signalling, and this differential timing helps set skeletal proportions. Suppressing
+    proliferation with dexamethasone in rabbit DELAYS both senescence and fusion, showing the decline is indexed to divisions
+    rather than to elapsed time'
+  context: mouse and rat, postnatal, small versus large bones (lui2018); rabbit, growth-restricted and control (gafni2001);
+    all zones
+  timescale: weeks to months in rodent and rabbit; the equivalent human process runs over years and has never been measured
+    directly
+  evidence_tier: T1
+  refs:
+  - lui2018
+  - gafni2001
+  - nilsson2004
+  confidence: C
+  notes: 'The direction matters: senescence is written here as acting ON proliferation rate, which is what the replication-counting
+    model requires, rather than as a synonym for slow growth.'
+  traversal_usable: true
+- edge_id: e01075
+  source: monoclonal_column_formation
+  target: chondrocyte_column_formation
+  relation: required_for
+  sign: +
+  magnitude: 'the architectural process of column formation - post-mitotic rotation and stacking of daughter cells into a
+    single file - is downstream of the clonal process: a column is the physical trace of one progenitor''s output, so the
+    clonality result constrains what column-forming mechanisms are admissible'
+  context: mouse postnatal growth plate, both sexes; resting to proliferative zone transition
+  timescale: a daughter pair rotates into column alignment within hours of division; the column accumulates over days
+  evidence_tier: T1
+  refs:
+  - mizuhashi2018
+  - newton2019
+  - chu2026
+  confidence: C
+  notes: Written as required_for rather than correlates_with because a polyclonal column would falsify the mechanism, not
+    merely weaken the correlation.
+  traversal_usable: true
+- edge_id: e01076
+  source: gh_receptor
+  target: chondrocyte_proliferation_rate
+  relation: required_for
+  sign: +
+  magnitude: tibial linear growth rate reduced ~65% in Ghr-null vs ~35% in Igf1-null between P20 and P40; chondrocyte proliferation
+    and chondrocyte number significantly reduced in Ghr-null only
+  context: mouse, proximal tibial growth plate, proliferative zone, postnatal days 20-40 (peak GH effect); sex not stated
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - wang2004
+  - sims2000
+  confidence: B
+  notes: 'The Ghr-null/Igf1-null contrast is the cleanest available separation of GH-dependent from IGF-1-dependent chondrocyte
+    proliferation: proliferation is normal in Igf1-null but reduced in Ghr-null.'
+  traversal_usable: true
+- edge_id: e01077
+  source: gh_receptor
+  target: resting_zone
+  relation: required_for
+  sign: +
+  magnitude: germinal (resting) zone hypoplastic in Ghr-null mice; the same zone is ENLARGED in Igf1-null mice
+  context: mouse, proximal tibial growth plate, resting/germinal zone, postnatal days 20-40
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - wang2004
+  confidence: C
+  notes: Opposite-direction phenotypes in Ghr-null and Igf1-null germinal zones are the strongest single argument that GH
+    acts on the resting zone by an IGF-1-independent route.
+  traversal_usable: true
+- edge_id: e01078
+  source: growth_hormone
+  target: label_retaining_chondrocyte
+  relation: activates
+  sign: +
+  magnitude: labelled-cell ratio (GH leg / contralateral control leg) 1.95 +/- 0.13 after 12 d local intratibial GH (1 ug/day)
+    with continuous [3H]thymidine
+  context: hypophysectomised rat, proximal tibial germinal (resting) zone, local unilateral infusion; contralateral leg internal
+    control
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - ohlsson1992
+  - chu2025
+  confidence: C
+  notes: Chu 2025 reaches the opposite net effect on pool size in mouse (GH DEPLETES the slow-cycling pool by driving committed
+    division) while agreeing that GH acts directly on these cells; the two are reconcilable if GH drives their division rather
+    than their self-renewal.
+  traversal_usable: true
+- edge_id: e01079
+  source: igf1_local_growth_plate
+  target: label_retaining_chondrocyte
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'NULL RESULT: labelled-cell ratio 0.96 +/- 0.04 after 12 d local intratibial IGF-I (10 ug/day) - no stimulation
+    of the slowly cycling germinal cells, versus 1.95 +/- 0.13 for GH in the same experiment'
+  context: hypophysectomised rat, proximal tibial germinal/resting zone, local unilateral infusion
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - ohlsson1992
+  confidence: C
+  notes: 'This is a scientific null and is the discriminating datum for the dual effector hypothesis: IGF-I acts only on the
+    proliferation of chondrocytes already recruited out of the germinal layer.'
+  traversal_usable: false
+- edge_id: e01080
+  source: gh_receptor
+  target: label_retaining_chondrocyte
+  relation: required_for
+  sign: +
+  magnitude: conditional Ghr deletion in growth plate stem cells impairs their ability to generate chondrocytes; GH reduces
+    the slow-cycling label-retaining pool by promoting committed division
+  context: mouse, growth plate resting zone stem cells, postnatal; multiple transgenic lineage-tracing lines
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - chu2025
+  - orikasa2026
+  confidence: C
+  notes: 'Offers a mechanistic account of the declining long-term efficacy of GH therapy: sustained GH depletes the stem pool.'
+  traversal_usable: true
+- edge_id: e01081
+  source: gh_secretion_pulsatility
+  target: igf1_local_growth_plate
+  relation: activates
+  sign: +
+  magnitude: pulsatile GH (1.5 U/kg/day, one pulse per 3 h, 5 d) raised IGF-I mRNA 3-5 fold in rib growth plate and skeletal
+    muscle; continuous infusion at the same dose was much less effective. In liver both patterns were equally effective.
+  context: hypophysectomised male rat on T4 and glucocorticoid replacement, rib growth plate; 5-day patterned i.v. infusion
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - isgaard1988
+  confidence: C
+  notes: 'Tissue-specific pattern decoding: the growth plate reads GH pulse shape, the liver does not. Direct experimental
+    support for gh_pulse_pattern_hypothesis at the plate.'
+  traversal_usable: true
+- edge_id: e01082
+  source: stat5b_tf
+  target: igf1_local_growth_plate
+  relation: transcribes
+  sign: +
+  magnitude: GH-stimulated IGF-1 expression in growth plate chondrocytes requires Stat5b; NF-kB p65 co-immunoprecipitates
+    with Stat5b and the NF-kB inhibitor PDTC neutralises GH-driven metatarsal elongation and chondrogenesis
+  context: rat, cultured metatarsal bones and primary growth plate chondrocytes
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - wu2011
+  confidence: C
+  traversal_usable: true
+- edge_id: e01083
+  source: stat5b_tf
+  target: bmp2_ligand
+  relation: transcribes
+  sign: +
+  magnitude: GH induction of BMP-2 expression in growth plate chondrocytes is lost when NF-kB p65 (a Stat5b partner) is inhibited
+  context: rat, growth plate chondrocytes and cultured metatarsals
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - wu2011
+  confidence: D
+  notes: One of very few demonstrated routes from a systemic hormone into the BMP arm of the local network.
+  traversal_usable: true
+- edge_id: e01084
+  source: growth_hormone
+  target: socs2_protein
+  relation: transcribes
+  sign: +
+  magnitude: SOCS2, but not SOCS1 or SOCS3, transcript increased in cultured chondrocytes after GH challenge
+  context: mouse, primary epiphyseal/growth plate chondrocytes and embryonic metatarsals
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - pass2012
+  confidence: C
+  notes: Establishes the delayed negative-feedback loop locally within cartilage, not only in liver.
+  traversal_usable: true
+- edge_id: e01085
+  source: socs2_protein
+  target: stat5b_tf
+  relation: inhibits
+  sign: '-'
+  magnitude: GH-stimulated chondrocyte STAT1, STAT3 and STAT5 phosphorylation increased in Socs2-/- chondrocytes and abolished
+    in SOCS2-overexpressing cells
+  context: mouse, primary chondrocytes; gain- and loss-of-function
+  timescale: minutes
+  evidence_tier: T1
+  refs:
+  - pass2012
+  confidence: C
+  traversal_usable: true
+- edge_id: e01086
+  source: socs2_protein
+  target: growth_plate_height
+  relation: inhibits
+  sign: '-'
+  magnitude: Socs2-/- growth plates 24% wider (P<0.001); tibiae 8% longer (P<0.001) and 18% broader (P<0.001); mice 6% longer
+    overall
+  context: mouse, 7-week-old Socs2-/- vs wild-type littermates, tibia
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - macrae2009
+  - pass2012
+  confidence: C
+  traversal_usable: true
+- edge_id: e01087
+  source: socs2_protein
+  target: proliferative_zone
+  relation: inhibits
+  sign: '-'
+  magnitude: proliferative zone 10% wider (P<0.05) in Socs2-/- tibia; chondrocyte proliferation increased in Socs2-/- at 6
+    weeks
+  context: mouse, 6-7 week-old Socs2-/- vs wild-type, tibial growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - macrae2009
+  - pass2012
+  confidence: C
+  traversal_usable: true
+- edge_id: e01088
+  source: socs2_protein
+  target: hypertrophic_zone
+  relation: inhibits
+  sign: '-'
+  magnitude: hypertrophic zone 14% wider (P<0.001) in Socs2-/- tibia; increased number of phospho-STAT5-positive hypertrophic
+    chondrocytes
+  context: mouse, 6-7 week-old Socs2-/- vs wild-type, tibial growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - macrae2009
+  - pass2012
+  confidence: C
+  traversal_usable: true
+- edge_id: e01089
+  source: growth_hormone
+  target: igf2_hormone
+  relation: activates
+  sign: +
+  magnitude: Igf2 expression elevated by GH in Socs2-/- (but not wild-type) metatarsals, while Igf1 transcript and protein
+    were unchanged; GH failed to promote growth when the IGF receptor was blocked
+  context: mouse, embryonic and postnatal metatarsal organ culture, 12 days
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - dobie2015
+  confidence: D
+  notes: Suggests the local GH growth effect is IGF-receptor-dependent but IGF-1-INdependent, with IGF-2 as the candidate
+    ligand.
+  traversal_usable: true
+- edge_id: e01090
+  source: jak2_kinase
+  target: igf1_local_growth_plate
+  relation: correlates_with
+  sign: +
+  magnitude: in uraemic rats growth plate JAK2 protein fell while GHR and STAT5 protein were unchanged, alongside reduced
+    growth plate IGF-I and VEGF immunostaining and a widened hypertrophic zone
+  context: rat, 5/6 nephrectomy vs pair-fed control, 20 days old, tibial growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - troib2013
+  confidence: D
+  notes: Locates the lesion of uraemic GH resistance at JAK2 within the plate, not at the receptor.
+  traversal_usable: false
+- edge_id: e01091
+  source: socs2_protein
+  target: growth_plate_senescence
+  relation: inhibits
+  sign: '-'
+  magnitude: Socs2-/- mice show accelerated growth plate fusion and increased osteoarthritis vulnerability despite greater
+    bone length
+  context: mouse, Socs2-/- vs wild type, postnatal to adult
+  timescale: months
+  evidence_tier: T1
+  refs:
+  - samvelyan2022
+  confidence: D
+  notes: 'SOCS2 presence DELAYS fusion: its loss accelerates it. Growth acceleration and premature fusion travel together
+    here, which is the same trade-off seen with estrogen.'
+  traversal_usable: true
+- edge_id: e01092
+  source: igf1_systemic
+  target: cell_cycle_time_pz
+  relation: inhibits
+  sign: '-'
+  magnitude: proliferating chondrocyte cycle time shortened from 11 d (untreated hypophysectomised) to 4.5 d with IGF-I and
+    to 3 d with GH; stem-cell cycle time 50 d -> 15 d (IGF-I) and 8 d (GH)
+  context: hypophysectomised rat, proximal tibial growth plate, proliferative and germinal zones; quantitative autoradiography
+    and stereology
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - hunziker1994
+  confidence: C
+  notes: 'Sign ''-'' because the parameter is a duration: IGF-I shortens it. The rare case where an endocrine input is quantified
+    as a cell-cycle time rather than a labelling index.'
+  traversal_usable: true
+- edge_id: e01093
+  source: growth_hormone
+  target: cell_cycle_time_pz
+  relation: inhibits
+  sign: '-'
+  magnitude: proliferating cell cycle time 11 d -> 3 d; stem cell cycle time 50 d -> 8 d under GH infusion
+  context: hypophysectomised rat, proximal tibial growth plate, germinal and proliferative zones
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - hunziker1994
+  confidence: C
+  traversal_usable: true
+- edge_id: e01094
+  source: igf1_systemic
+  target: hypertrophic_phase_duration
+  relation: inhibits
+  sign: '-'
+  magnitude: duration of the hypertrophic phase shortened from 6 d to 4 d with IGF-I and to 2.8 d with GH
+  context: hypophysectomised rat, proximal tibial hypertrophic zone
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - hunziker1994
+  confidence: C
+  traversal_usable: true
+- edge_id: e01095
+  source: growth_hormone
+  target: hypertrophic_phase_duration
+  relation: inhibits
+  sign: '-'
+  magnitude: hypertrophic phase duration 6 d -> 2.8 d under GH
+  context: hypophysectomised rat, proximal tibial hypertrophic zone
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - hunziker1994
+  confidence: C
+  traversal_usable: true
+- edge_id: e01096
+  source: igf1_systemic
+  target: hypertrophic_volume_increase
+  relation: activates
+  sign: +
+  magnitude: terminal hypertrophic chondrocytes 30% smaller in linear dimension in Igf1-null mice, accounting for most of
+    the 35% deficit in long bone growth rate; hypertrophic cells smaller at every level of the zone
+  context: mouse, Igf1-null vs wild type, hypertrophic zone of long bone growth plate, postnatal
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - wang1999
+  - cooper2013
+  confidence: C
+  notes: Cooper 2013 localises the IGF-dependence to the third (proportional dry-mass) phase of hypertrophic enlargement,
+    which is also the phase that varies most between fast- and slow-elongating plates.
+  traversal_usable: true
+- edge_id: e01097
+  source: igf1_systemic
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: +
+  magnitude: IGF-I (100 ng/mL) increased hypertrophic zone length ~3-fold over 10 d in fetal mouse metatarsal culture; GH
+    (100 ng/mL) had no effect in the same system
+  context: fetal mouse (E17) metatarsal organ culture, 10 days
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - mushtaq2004
+  confidence: C
+  notes: The IGF-I-driven gain came at the cost of a shifted proliferative:hypertrophic balance, which is why growth acceleration
+    and plate architecture must be scored separately.
+  traversal_usable: true
+- edge_id: e01098
+  source: igf1_systemic
+  target: gsk3b_kinase
+  relation: inhibits
+  sign: '-'
+  magnitude: GSK3-beta hypo-phosphorylated in Igf1-null chondrocytes; GLUT4 expression significantly decreased, glycogen decreased
+    and ribosomal RNA reduced by ~75%
+  context: mouse, Igf1-null growth plate chondrocytes, hypertrophic zone
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - wang1999
+  confidence: D
+  notes: 'Inferred from loss of function: IGF-1 normally drives the inhibitory Ser9 phosphorylation of GSK3B. Consistent with
+    wang2010, in which T3 acts through IGF-1-dependent PI3K/Akt/GSK-3beta.'
+  traversal_usable: true
+- edge_id: e01099
+  source: igf1_receptor
+  target: beta_catenin_ctnnb1
+  relation: activates
+  sign: +
+  magnitude: IGF-1 and IGF1R stimulate beta-catenin activation in growth plate chondrocytes; the pro-proliferative and pro-differentiation
+    effects are partially blocked by the WNT antagonists sFRP3 and DKK1
+  context: rat, primary growth plate chondrocytes undergoing proliferation and transition to prehypertrophy
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - wang2010
+  confidence: C
+  traversal_usable: true
+- edge_id: e01100
+  source: igf1_receptor
+  target: wnt_canonical_chondrocyte
+  relation: activates
+  sign: +
+  magnitude: IGF-1/IGF1R stimulate Wnt-4 expression; PI3K/Akt/GSK-3beta is the connecting module
+  context: rat, primary growth plate chondrocytes, proliferative-to-prehypertrophic transition
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - wang2010
+  - wang2007
+  confidence: C
+  notes: This is the only well-supported route from the somatotropic axis into canonical WNT inside the plate.
+  traversal_usable: true
+- edge_id: e01101
+  source: igf1_receptor
+  target: mek1_erk_chondrocyte
+  relation: activates
+  sign: +
+  magnitude: IGF-I induced ERK phosphorylation in growth plate chondrocytes; IL-1beta, IL-6 or TNF-alpha attenuated the IGF-I-induced
+    ERK phosphorylation by 50-75% and AKT phosphorylation by 30-50%, with 50% loss of IGF-I-driven proliferation
+  context: rat chondrogenic growth plate model RCJ3.1C5.18 in vitro
+  timescale: minutes
+  evidence_tier: T1
+  refs:
+  - choukair2014
+  confidence: D
+  traversal_usable: true
+- edge_id: e01102
+  source: igf1_systemic
+  target: ihh_protein
+  relation: activates
+  sign: +
+  magnitude: Ihh expression reduced in Igf1-null long bones and spine, with reciprocally increased PTHrP; fewer and smaller
+    type X collagen-expressing hypertrophic chondrocytes
+  context: mouse, Igf1-null embryos, E14.5-E18.5, long bone growth plate and spinal ossification centre
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - wang2006
+  confidence: C
+  traversal_usable: true
+- edge_id: e01103
+  source: igf1_systemic
+  target: pthrp_protein
+  relation: inhibits
+  sign: '-'
+  magnitude: PTHrP expression increased in Igf1-null mice, i.e. the IHH/PTHrP feedback loop is shifted toward PTHrP when IGF-1
+    is absent
+  context: mouse, Igf1-null embryos E14.5-E18.5
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - wang2006
+  confidence: C
+  traversal_usable: true
+- edge_id: e01104
+  source: igf1_systemic
+  target: pthrp_ihh_feedback_loop
+  relation: required_for
+  sign: +
+  magnitude: the loop is altered in both directions in Igf1-null embryos (Ihh down, PTHrP up)
+  context: mouse, Igf1-null embryos E14.5-E18.5
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - wang2006
+  confidence: C
+  traversal_usable: true
+- edge_id: e01105
+  source: igf1_systemic
+  target: chondrocyte_proliferation_rate
+  relation: activates
+  sign: +
+  magnitude: reduced chondrocyte proliferation in Igf1-null mouse growth plate; in cultured HUMAN long-bone growth plate chondrocytes
+    IGF-I and IGF-II were among the most potent stimulators of [3H]thymidine uptake
+  context: mouse Igf1-null embryo growth plate AND cultured human long-bone growth plate chondrocytes (paediatric surgical
+    tissue)
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - wang2006
+  - olney2004
+  confidence: B
+  notes: One of the few L4->L1 relations with direct human growth-plate-cell evidence rather than rodent-only support.
+  traversal_usable: true
+- edge_id: e01106
+  source: igf1_systemic
+  target: chondrocyte_apoptosis_hz
+  relation: inhibits
+  sign: '-'
+  magnitude: increased chondrocyte apoptosis in the Igf1-null growth plate; IGF-I (100 ng/mL) reduced dexamethasone-induced
+    apoptosis back to control levels in HCS-2/8 chondrocytes
+  context: mouse Igf1-null embryo growth plate; human chondrocytic cell line HCS-2/8 in vitro
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - wang2006
+  - chrysis2005
+  confidence: C
+  traversal_usable: true
+- edge_id: e01107
+  source: igf1_systemic
+  target: resting_zone
+  relation: inhibits
+  sign: '-'
+  magnitude: significant ENLARGEMENT of the germinal (resting) zone in Igf1-null mice, the opposite of the germinal hypoplasia
+    of Ghr-null mice
+  context: mouse, Igf1-null vs Ghr-null vs wild type, proximal tibia, postnatal days 20-40
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - wang2004
+  confidence: C
+  notes: 'Counter-intuitive direction: removing IGF-1 expands rather than depletes the resting zone, because cells are not
+    being consumed into the proliferative pool at the normal rate.'
+  traversal_usable: true
+- edge_id: e01108
+  source: igf1_systemic
+  target: growth_plate_height
+  relation: activates
+  sign: +
+  magnitude: cartilage-targeted antibody-IGF-1 fusion protein increased overall growth plate height in GH-deficient (lit/lit)
+    mice without increasing proliferation in kidney cortical cells; alternate-day dosing sufficed
+  context: mouse, lit/lit GH-deficient model, subcutaneous dosing; also organ culture
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - lui2019
+  confidence: C
+  traversal_usable: true
+- edge_id: e01109
+  source: igf2_hormone
+  target: resting_zone
+  relation: hypothesized_link
+  sign: +
+  magnitude: not measured
+  context: mouse, germinal/resting zone; hypothesis raised to explain why the Igf1-null germinal zone is enlarged and proliferation
+    preserved
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - wang2004
+  - dobie2015
+  confidence: speculative
+  gap_id: g_l4l3_005
+  notes: IGF-2 is highly expressed in germinal and proliferative zones and is GH-inducible in Socs2-null metatarsals, but
+    no experiment has removed IGF-2 from the plate and measured germinal zone size.
+  traversal_usable: false
+- edge_id: e01110
+  source: igf1_receptor
+  target: mtorc1_chondrocyte
+  relation: hypothesized_link
+  sign: +
+  magnitude: not measured
+  context: growth plate chondrocyte; asserted in reviews, not demonstrated in cartilage
+  timescale: minutes
+  evidence_tier: T5
+  refs:
+  - phornphutkul2008
+  confidence: speculative
+  gap_id: g_l4l3_002
+  notes: The only cartilage experiment that couples an IGF-family ligand to mTORC1 used INSULIN, not IGF-1 (see e00036). The
+    IGF1R->mTORC1 arrow that appears in every review of growth plate biology is not backed by a cartilage measurement.
+  traversal_usable: false
+- edge_id: e01111
+  source: insulin_hormone
+  target: mtorc1_chondrocyte
+  relation: activates
+  sign: +
+  magnitude: insulin significantly enhanced fetal rat metatarsal growth; rapamycin abolished the insulin response with a selective
+    effect on the hypertrophic zone and no change in BrdU incorporation
+  context: fetal rat (E19-E20) metatarsal explant and in situ injection; ATDC5 line for the molecular arm
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - phornphutkul2008
+  confidence: C
+  notes: Same paper shows rapamycin lowers Ihh content in chondrocytes and that exogenous Ihh reverses the rapamycin effect
+    - i.e. the nutrient/insulin -> mTOR arm feeds the hedgehog arm.
+  traversal_usable: true
+- edge_id: e01112
+  source: pappa_protease
+  target: sox9_tf
+  relation: activates
+  sign: +
+  magnitude: sox9a expression markedly reduced in Meckel's cartilage of pappaa-knockout zebrafish; phenotype mimicked by pharmacological
+    IGF-receptor inhibition and rescued by recombinant IGF-I
+  context: zebrafish pappaa-null, Meckel's cartilage; parallel femoral shortening and column disorganisation in PAPP-A-knockout
+    mouse
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - harboe2024
+  confidence: D
+  notes: 'Species caution: the SOX9 readout is zebrafish; the mouse arm of the same paper reports column disorganisation but
+    not sox9.'
+  traversal_usable: true
+- edge_id: e01113
+  source: pappa_protease
+  target: ihh_protein
+  relation: activates
+  sign: +
+  magnitude: ihha expression markedly affected in Meckel's cartilage of pappaa-knockout zebrafish, alongside col10a1
+  context: zebrafish pappaa-null, Meckel's cartilage
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - harboe2024
+  confidence: D
+  traversal_usable: true
+- edge_id: e01114
+  source: thyroid_hormone_t3
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  magnitude: T3 inhibited chondrocyte proliferation and clonal expansion in agarose suspension culture while simultaneously
+    inducing alkaline phosphatase, collagen X mRNA and alcian-blue-positive matrix from day 7
+  context: rat, 21-day-old tibial growth plate chondrocytes in agarose suspension; TRalpha1, TRalpha2 and TRbeta1 expressed
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - robson2000
+  confidence: C
+  notes: 'Reciprocal regulation: the same hormone concurrently suppresses growth and accelerates differentiation. This is
+    why hyperthyroid children advance bone age faster than height.'
+  traversal_usable: true
+- edge_id: e01115
+  source: thyroid_hormone_t3
+  target: clonal_column
+  relation: inhibits
+  sign: '-'
+  magnitude: clonal expansion and colony formation inhibited by T3 in suspension culture
+  context: rat tibial growth plate chondrocytes, in vitro, 7-21 days
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - robson2000
+  confidence: D
+  traversal_usable: true
+- edge_id: e01116
+  source: thra_receptor
+  target: resting_chondrocyte
+  relation: correlates_with
+  sign: +
+  magnitude: TRalpha1, TRalpha2 and TRbeta1 protein localised to reserve-zone progenitor cells and proliferating chondrocytes
+    but NOT to hypertrophic cells
+  context: rat, 21-day-old tibial growth plate, immunohistochemistry
+  timescale: not_applicable
+  evidence_tier: T1
+  refs:
+  - robson2000
+  - stevens2000
+  confidence: C
+  notes: Zonal receptor distribution says the direct T3 target cell is the resting/proliferative chondrocyte, not the hypertrophic
+    one - so T3-driven hypertrophy must be an indirect, relayed effect.
+  traversal_usable: false
+- edge_id: e01117
+  source: thyroid_hormone_t3
+  target: pthrp_protein
+  relation: inhibits
+  sign: '-'
+  magnitude: PTHrP mRNA increased in hypothyroid rat growth plates and normalised by T4 replacement; hypertrophic differentiation
+    failed to progress and collagen X was absent
+  context: rat, tibial growth plate; control vs hypothyroid vs thyrotoxic vs hypothyroid+T4
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - stevens2000
+  confidence: C
+  traversal_usable: true
+- edge_id: e01118
+  source: thyroid_hormone_t3
+  target: pth1r_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: PTHrP receptor (PTH1R) mRNA undetectable in thyrotoxic rat growth plates
+  context: rat, tibial growth plate, thyrotoxic state induced at 6 weeks and examined at 12 weeks
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - stevens2000
+  confidence: C
+  notes: The single strongest demonstrated point of contact between the thyroid axis and the PTHrP arm of the local network.
+  traversal_usable: true
+- edge_id: e01119
+  source: thyroid_hormone_t3
+  target: pthrp_ihh_feedback_loop
+  relation: required_for
+  sign: +
+  magnitude: hypothyroid plates show dysregulated IHH/PTHrP feedback with an abnormal heparan-sulfate-rich matrix; thyroid
+    status also sets growth plate heparan sulfate proteoglycan expression, on which both IHH and FGF signalling depend
+  context: rat tibial growth plate; congenitally hypothyroid Pax8-null mice; TRalpha/TRbeta double-null mice
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - stevens2000
+  - bassett2006
+  confidence: C
+  notes: 'Two independent mechanisms converge: direct transcriptional effects on PTHrP/PTH1R and an indirect matrix effect
+    through HSPG availability that changes how far IHH can travel.'
+  traversal_usable: true
+- edge_id: e01120
+  source: thyroid_hormone_t3
+  target: ihh_protein
+  relation: activates
+  sign: +
+  magnitude: TH treatment of TH-deficient Tshr-/- mice induced Ihh in Col2-expressing epiphyseal chondrocytes by day 7; the
+    TRbeta1-selective agonist GC1 (0.2 ug/day) raised epiphyseal Ihh mRNA ~100-fold, osterix 15-fold and osteocalcin 59-fold
+  context: mouse, proximal tibial epiphysis and secondary ossification centre, postnatal days 5-14; Tshr-/- hypothyroid model
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - xing2014
+  - xing2016
+  confidence: C
+  notes: Demonstrated in the epiphysis/SOC rather than the growth plate proper; the SOC context is explicit and should not
+    be silently generalised to the physis.
+  traversal_usable: true
+- edge_id: e01121
+  source: thrb_receptor
+  target: ihh_protein
+  relation: transcribes
+  sign: +
+  magnitude: a putative thyroid hormone response element in the distal mouse Ihh promoter binds THRbeta1 in gel shift; GC1
+    at 1 nM raised Ihh distal promoter activity 20-fold at 48 h in chondrocytes
+  context: mouse chondrocytes and proximal tibial epiphysis; TRbeta1-selective agonist GC1
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - xing2016
+  confidence: C
+  traversal_usable: true
+- edge_id: e01122
+  source: thra_receptor
+  target: ihh_protein
+  relation: inhibits
+  sign: '-'
+  magnitude: in vitro, TRalpha1 activation promoted SHH expression while TRbeta1 activation increased IHH and inhibited SHH;
+    SHH promoted immature-chondrocyte markers and inhibited hypertrophy whereas IHH promoted hypertrophy
+  context: mouse epiphyseal chondrocytes in vitro plus postnatal day 7-10 epiphysis
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - aghajanian2017
+  confidence: D
+  notes: 'Isoform antagonism: the same hormone tunes the SHH:IHH balance in opposite directions through its two receptors.
+    Sign here refers to the TRalpha arm only.'
+  traversal_usable: true
+- edge_id: e01123
+  source: thyroid_hormone_t3
+  target: chondrocyte_to_osteoblast_transdifferentiation
+  relation: required_for
+  sign: +
+  magnitude: Col2-CreERT2 lineage tracing showed the same Col2+ chondrocytes sequentially expressed prehypertrophic, hypertrophic
+    and then osteoblast markers (Col1, BSP) in euthyroid but NOT hypothyroid mice
+  context: mouse epiphysis, postnatal days 7-10, when serum TH rises
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - aghajanian2017
+  confidence: C
+  traversal_usable: true
+- edge_id: e01124
+  source: thyroid_hormone_t3
+  target: fgfr3_receptor
+  relation: activates
+  sign: +
+  magnitude: T3 stimulated expression of the single FGFR3 splice variant (and of two FGFR1 and four FGFR2 variants) during
+    the first 6-12 days of ATDC5 chondrogenesis
+  context: mouse ATDC5 chondrogenic cell line, days 0-12 of a defined chondrogenesis programme
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - barnard2005
+  confidence: D
+  notes: If confirmed in vivo this makes thyroid status an upstream gain control on the FGFR3 brake - relevant to why hypothyroid
+    and achondroplastic plates look superficially similar.
+  traversal_usable: true
+- edge_id: e01125
+  source: thyroid_hormone_t3
+  target: fgfr1_receptor
+  relation: activates
+  sign: +
+  magnitude: two FGFR1 mRNA splice variants stimulated by T3 during early ATDC5 chondrogenesis
+  context: mouse ATDC5 chondrogenic cell line, days 0-12
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - barnard2005
+  confidence: D
+  traversal_usable: true
+- edge_id: e01126
+  source: thyroid_hormone_t3
+  target: wnt_canonical_chondrocyte
+  relation: activates
+  sign: +
+  magnitude: T3 activates Wnt-4 expression and Wnt/beta-catenin signalling in growth plate chondrocytes; the WNT antagonists
+    Frzb/sFRP3 and DKK1 block both T3-induced beta-catenin activation and the maturation-promoting effect of T3
+  context: rat, primary growth plate chondrocytes, terminal differentiation
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - wang2007
+  - wang2010
+  confidence: C
+  traversal_usable: true
+- edge_id: e01127
+  source: thyroid_hormone_t3
+  target: beta_catenin_ctnnb1
+  relation: activates
+  sign: +
+  magnitude: T3 activates beta-catenin in growth plate chondrocytes; the effect requires IGF-1/IGF1R and IGF-1-dependent PI3K/Akt/GSK-3beta
+    signalling
+  context: rat, primary growth plate chondrocytes in proliferation and transition to prehypertrophy
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - wang2010
+  - wang2007
+  confidence: C
+  notes: The T3 -> IGF-1 -> PI3K/Akt/GSK3B -> beta-catenin chain is the best-documented multi-step relay across this seam.
+  traversal_usable: true
+- edge_id: e01128
+  source: thyroid_hormone_t3
+  target: igf1_receptor
+  relation: activates
+  sign: +
+  magnitude: T3 is a known stimulator of IGF-1 receptor expression and activates IGF-1/IGF1R signalling in growth plate chondrocytes
+  context: rat, primary growth plate chondrocytes
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - wang2010
+  confidence: C
+  traversal_usable: true
+- edge_id: e01129
+  source: thyroid_hormone_t3
+  target: gsk3b_kinase
+  relation: inhibits
+  sign: '-'
+  magnitude: T3 activates IGF-1-dependent PI3K/Akt/GSK-3beta signalling in growth plate chondrocytes
+  context: rat, primary growth plate chondrocytes
+  timescale: minutes
+  evidence_tier: T1
+  refs:
+  - wang2010
+  confidence: D
+  traversal_usable: true
+- edge_id: e01130
+  source: thyroid_hormone_t3
+  target: gh_receptor
+  relation: activates
+  sign: +
+  magnitude: T3+T4 delivered by osmotic minipump to hypophysectomised rats induced a layer of GHR-positive and GHBP-positive
+    early maturing chondrocytes; GH plus thyroid hormone restored a normal-width GHR-positive layer
+  context: hypophysectomised rat, tibial growth plate, interface between proliferative and hypertrophic zones
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - gevers2002
+  confidence: C
+  notes: Thyroid status therefore sets the plate's SENSITIVITY to GH, not just its differentiation programme - a mechanism
+    for the clinical rule that GH therapy fails in untreated hypothyroidism.
+  traversal_usable: true
+- edge_id: e01131
+  source: thyroid_hormone_t3
+  target: growth_plate_senescence
+  relation: activates
+  sign: +
+  magnitude: 'catch-up growth after transient hypothyroidism is explained by DELAYED growth plate senescence: the hypothyroid
+    plate is held at a younger developmental state and retains proliferative capacity'
+  context: rat, propylthiouracil-induced hypothyroidism and recovery; tibial growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - marino2008
+  confidence: C
+  notes: Positions T3 as a consumer of finite proliferative capacity, not merely an accelerator of differentiation.
+  traversal_usable: true
+- edge_id: e01132
+  source: thrb_receptor
+  target: chondrocyte_hypertrophy
+  relation: required_for
+  sign: +
+  magnitude: T3 decreased proliferation and accelerated differentiation in wild-type and TRalpha-deficient rib chondrocytes,
+    but ALL T3 responses were abrogated in TRbeta-deficient chondrocytes; T3 also raised TRbeta1 expression
+  context: mouse, primary neonatal rib chondrocytes from TRalpha-null and TRbeta-null mice, in vitro
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - rabier2006
+  confidence: D
+  notes: CONTRADICTION with the in vivo skeletal literature, in which TRalpha1 dominates the cartilage phenotype. The discrepancy
+    may be cell-autonomous versus systemic, or rib versus long bone. Logged as g_l4l3_009 territory; treat neither isoform
+    assignment as settled.
+  traversal_usable: true
+- edge_id: e01133
+  source: thyroid_hormone_t3
+  target: thrb_receptor
+  relation: transcribes
+  sign: +
+  magnitude: T3 increased TRbeta1 expression 2.1-fold at 24 h and 13-fold at 72 h in serum-free tibia culture; 2-day TH treatment
+    of Tshr-/- mice raised epiphyseal THRbeta1 mRNA 3.4-fold with no change in THRalpha1
+  context: mouse, 3-day-old tibia organ culture and proximal tibial epiphysis of Tshr-/- mice
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - xing2016
+  - rabier2006
+  confidence: C
+  notes: 'Feed-forward amplification: T3 upregulates its own receptor selectively in cartilage.'
+  traversal_usable: true
+- edge_id: e01134
+  source: dio2_deiodinase
+  target: pthrp_protein
+  relation: inhibits
+  sign: '-'
+  magnitude: Hedgehog-driven ubiquitination and destruction of D2 by the ECS(WSB-1) E3 ligase in the developing tibial growth
+    plate INDUCES PTHrP; i.e. local D2 activity restrains PTHrP
+  context: chicken and mouse developing tibial growth plate, embryonic
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - dentice2005
+  confidence: C
+  notes: 'This is the mechanistic hinge of the whole L4-L3 seam for thyroid hormone: it explains how a SYSTEMIC hormone is
+    converted into a LOCAL, spatially patterned signal inside the plate.'
+  traversal_usable: true
+- edge_id: e01135
+  source: ihh_protein
+  target: dio2_deiodinase
+  relation: degrades
+  sign: '-'
+  magnitude: Hedgehog signalling induces WSB-1, whose WD-40 propeller recognises an 18-residue loop in D2 and whose SOCS box
+    recruits an Elongin BC-Cul5-Rbx1 catalytic core to ubiquitinate D2
+  context: chicken embryonic tibial growth plate; mechanism reconstituted biochemically
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - dentice2005
+  confidence: C
+  notes: 'Reverse-direction seam edge (L3 -> L4): the local hedgehog network sets its own local thyroid hormone supply. Very
+    few such edges exist in this atlas.'
+  traversal_usable: true
+- edge_id: e01136
+  source: dio2_deiodinase
+  target: pthrp_ihh_feedback_loop
+  relation: required_for
+  sign: '-'
+  magnitude: ECS(WSB-1)-mediated D2 turnover is the route by which systemic thyroid hormone exerts local control of the Hedgehog-PTHrP
+    negative feedback loop
+  context: chicken and mouse developing growth plate, embryonic
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - dentice2005
+  confidence: C
+  traversal_usable: true
+- edge_id: e01137
+  source: glucocorticoid_cortisol
+  target: gh_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: dexamethasone treatment of normal rats reduced growth plate GHR and GHBP immunostaining; in primary rat growth
+    plate chondrocytes dexamethasone suppressed GHR mRNA and protein dose-dependently over 1e-12 to 1e-7 M
+  context: rat, tibial growth plate in vivo and primary growth plate chondrocytes in vitro
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - gevers2002
+  - jux1998
+  confidence: C
+  traversal_usable: true
+- edge_id: e01138
+  source: glucocorticoid_cortisol
+  target: igf1_local_growth_plate
+  relation: inhibits
+  sign: '-'
+  magnitude: GH raised IGF-I in chondrocyte-conditioned medium and dexamethasone reversed it; in ATDC5 microarray, 1e-6 M
+    dexamethasone for 24 h downregulated Igf1 and secreted frizzled-related protein
+  context: rat primary growth plate chondrocytes; mouse ATDC5 chondrogenic line
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - jux1998
+  - owen2008
+  confidence: C
+  notes: Together with e00062 this makes the glucocorticoid lesion a LOCAL GH-resistance state inside the plate, matching
+    Baron's demonstration that GC growth suppression is plate-intrinsic.
+  traversal_usable: true
+- edge_id: e01139
+  source: glucocorticoid_cortisol
+  target: igf1_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: dexamethasone did not change basal type I IGF receptor but blocked the IGF-I-induced increase in IGF binding
+    and IGF1R immunostaining
+  context: rat, primary growth plate chondrocytes in vitro
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - jux1998
+  confidence: D
+  notes: 'Note the specificity: the block is on ligand-induced receptor upregulation, not on baseline receptor number.'
+  traversal_usable: true
+- edge_id: e01140
+  source: glucocorticoid_cortisol
+  target: ihh_protein
+  relation: inhibits
+  sign: '-'
+  magnitude: glucocorticoid treatment reduced Indian hedgehog expression in growth plates of wild-type mice; this was prevented
+    in humanin-overexpressing or humanin-treated mice, and the hedgehog antagonist vismodegib reproduced the growth suppression
+  context: mouse growth plate in vivo and cultured rat metatarsal bones
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - zaman2019
+  confidence: C
+  notes: Pharmacological closure of the loop (vismodegib phenocopies, humanin rescues both GC and vismodegib effects) makes
+    this one of the better-supported hormone->pathway edges at this seam.
+  traversal_usable: true
+- edge_id: e01141
+  source: glucocorticoid_cortisol
+  target: sox9_tf
+  relation: activates
+  sign: biphasic
+  magnitude: 'LOW dose: dexamethasone enhanced Sox9 mRNA and protein in newborn mouse rib chondrocytes within 24 h, threshold
+    0.1 nM and maximal at 10 nM, with parallel Col2a1 induction and no change in Sox9 mRNA half-life (~45 min). HIGH dose:
+    100 uM glucocorticoid suppressed SOX9, COL2 and aggrecan in human articular chondrocytes, time- and dose-dependently,
+    via p38 inactivation.'
+  context: mouse newborn rib chondrocytes (nM range) versus human knee articular chondrocytes (100 uM range), both in vitro
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - sekiya2001
+  - song2012
+  confidence: D
+  gap_id: g_l4l3_006
+  notes: Direct contradiction in sign, spanning a 10,000-fold concentration range, two species and two cartilage types. Reported
+    as biphasic rather than resolved; see g_l4l3_006. Physiological cortisol in cartilage is nearer the nM than the 100 uM
+    end, so the low-dose (SOX9-enhancing) limb is the one that matters for growth.
+  traversal_usable: true
+- edge_id: e01142
+  source: glucocorticoid_cortisol
+  target: wnt_canonical_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: dexamethasone suppressed TCF/LEF reporter transcription and beta-catenin protein that normally rise during insulin-transferrin-selenite-induced
+    chondrogenic differentiation of ATDC5
+  context: mouse ATDC5 chondrogenic progenitor line, in vitro differentiation
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - naito2015
+  confidence: D
+  traversal_usable: true
+- edge_id: e01143
+  source: glucocorticoid_cortisol
+  target: beta_catenin_ctnnb1
+  relation: inhibits
+  sign: '-'
+  magnitude: beta-catenin protein levels reduced by dexamethasone during ATDC5 chondrogenesis; a constitutively active beta-catenin
+    mutant (dN90) rescued Alcian blue staining and Sox9, Col2a, aggrecan, Col10 and Alpl expression
+  context: mouse ATDC5 chondrogenic progenitor line
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - naito2015
+  confidence: D
+  traversal_usable: true
+- edge_id: e01144
+  source: glucocorticoid_receptor
+  target: autophagy_chondrocyte
+  relation: activates
+  sign: +
+  magnitude: dexamethasone 1-100 uM induced autophagy in ATDC5 and 5 uM-1 mM in N1511 chondrocytes; induction blocked by the
+    GR antagonist RU486 and by 3-methyladenine; at the highest doses autophagy accompanied reduced viability
+  context: mouse chondrocyte lines ATDC5 and N1511, in vitro
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - zhao2014
+  confidence: D
+  notes: RU486 sensitivity is what makes this a GR-mediated edge rather than a generic steroid effect. Doses are supraphysiological;
+    the direction in vivo is untested.
+  traversal_usable: true
+- edge_id: e01145
+  source: glucocorticoid_cortisol
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  magnitude: dexamethasone 1e-6 M decreased proliferation in fetal mouse metatarsals (more marked in perichondrium than in
+    the growth plate itself); GC suppressed chondrocyte proliferation in vivo in mice, prevented by humanin
+  context: fetal mouse metatarsal culture and mouse growth plate in vivo; also rat metatarsal bones
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - mushtaq2004
+  - zaman2019
+  confidence: B
+  traversal_usable: true
+- edge_id: e01146
+  source: glucocorticoid_cortisol
+  target: proliferative_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: dexamethasone 25 uM increased apoptosis by 39% at 48 h and 45% at 72 h with caspase-8 activation at 12 h, caspase-9
+    at 36 h, PARP and alpha-fodrin cleavage; Akt phosphorylation fell 93% and the p85alpha subunit rose 4-fold; IGF-I 100
+    ng/mL restored control apoptosis levels
+  context: human chondrocytic cell line HCS-2/8 (proliferative phenotype), in vitro
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - chrysis2005
+  confidence: D
+  notes: Places the glucocorticoid lesion squarely on the PI3K-Akt arm - the same arm IGF-1 uses - which is why IGF-I rescues
+    and GH does not.
+  traversal_usable: true
+- edge_id: e01147
+  source: glucocorticoid_receptor
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  magnitude: lipocalin-2 induced 40-fold at 24 h, 75-fold at 48 h and 84-fold at 96 h by 1e-6 M dexamethasone in ATDC5; response
+    blocked by RU-486; lipocalin-2 overexpression reduced proliferation by 49% (P<0.05) and raised collagen X 4-fold
+  context: mouse ATDC5 and primary chondrocytes; lipocalin-2 immunolocalised to proliferative and hypertrophic zones
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - owen2008
+  confidence: D
+  notes: Names a specific GR-dependent effector (lipocalin-2/LCN2) between the receptor and the proliferation phenotype.
+  traversal_usable: true
+- edge_id: e01148
+  source: glucocorticoid_cortisol
+  target: growth_plate_senescence
+  relation: inhibits
+  sign: '-'
+  magnitude: catch-up growth after glucocorticoid excess is intrinsic to the growth plate and is explained by the plate having
+    been held back rather than exhausted
+  context: rabbit, local and systemic glucocorticoid excess and recovery, proximal tibia
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - baron1994
+  - baron1992
+  confidence: B
+  notes: Contrast with estrogen (nilsson2014), which ACCELERATES senescence irreversibly. Glucocorticoid suppression is a
+    pause; estrogen exposure is a spend.
+  traversal_usable: true
+- edge_id: e01149
+  source: gper1_receptor
+  target: pthrp_protein
+  relation: activates
+  sign: +
+  magnitude: the GPER-1 agonist G1 raised the growth plate PTHrP/IHH ratio at 4 and 8 weeks; the antagonist G15 and chondrocyte-specific
+    Col2a1-Cre GPER-1 knockout lowered it; confirmed at protein level in 3D micromass culture
+  context: mouse, tibial growth plate, 4- and 8-week-old males and females (n=48 total)
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - chou2025
+  confidence: C
+  notes: The clearest demonstrated route from any estrogen receptor into the IHH/PTHrP loop. Note it is the MEMBRANE receptor,
+    not ERalpha, that carries it.
+  traversal_usable: true
+- edge_id: e01150
+  source: gper1_receptor
+  target: pthrp_ihh_feedback_loop
+  relation: activates
+  sign: +
+  magnitude: PTHrP/IHH ratio raised by GPER-1 activation and lowered by GPER-1 blockade or deletion, in both sexes
+  context: mouse, tibial growth plate, early puberty (4 and 8 weeks), both sexes
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - chou2025
+  confidence: C
+  traversal_usable: true
+- edge_id: e01151
+  source: gper1_receptor
+  target: chondrocyte_hypertrophy
+  relation: inhibits
+  sign: '-'
+  magnitude: G1 treatment decreased hypertrophic zone thickness and type X collagen-stained area in 4-week-old mice; GPER-1
+    deficiency expanded the hypertrophic zone
+  context: mouse, tibial growth plate, 4 and 8 weeks, both sexes
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - chou2025
+  confidence: C
+  traversal_usable: true
+- edge_id: e01152
+  source: gper1_receptor
+  target: chondrocyte_proliferation_rate
+  relation: activates
+  sign: +
+  magnitude: chondrocyte-specific GPER-1 knockout (80% reduction in growth plate GPER-1) reduced PCNA- and Ki67-positive chondrocytes,
+    proliferative zone cell number and thickness, and shortened tibia and femur at 8 weeks
+  context: mouse, tibial growth plate, female pubertal (4-8 weeks) in chou2021; both sexes in chou2025
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - chou2021
+  - chou2025
+  confidence: C
+  traversal_usable: true
+- edge_id: e01153
+  source: estrogen_receptor_beta
+  target: sox9_tf
+  relation: inhibits
+  sign: '-'
+  magnitude: an ERbeta antagonist significantly increased growth plate Sox9, collagen II and aggrecan expression (P<0.05)
+    in female mice
+  context: mouse, female, pubertal, appendicular growth plate (ERs blocked pharmacologically)
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - jin2021
+  confidence: D
+  traversal_usable: true
+- edge_id: e01154
+  source: estrogen_receptor_beta
+  target: runx2_tf
+  relation: inhibits
+  sign: '-'
+  magnitude: ERbeta antagonist significantly increased growth plate Runx2, collagen X and MMP13 expression (P<0.05)
+  context: mouse, female, pubertal, appendicular growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - jin2021
+  confidence: D
+  notes: The only demonstrated route from a sex-steroid receptor onto RUNX2 in the growth plate that this sweep could find.
+  traversal_usable: true
+- edge_id: e01155
+  source: estrogen_receptor_beta
+  target: growth_velocity_longitudinal
+  relation: inhibits
+  sign: '-'
+  magnitude: ERbeta blockade INCREASED appendicular longitudinal elongation (P<0.01); ERalpha blockade suppressed it (P<0.05);
+    neither affected axial (vertebral) growth
+  context: mouse, female, pubertal; appendicular versus axial growth plates compared directly
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - jin2021
+  confidence: D
+  notes: 'Site-specificity is the finding: the same receptor blockade changes limb growth but not spine growth, so ER effects
+    are not uniform across the skeleton.'
+  traversal_usable: true
+- edge_id: e01156
+  source: estrogen_receptor_alpha
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  magnitude: ERalpha blockade suppressed appendicular longitudinal elongation (P<0.05) in pubertal female mice
+  context: mouse, female, pubertal, appendicular growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - jin2021
+  confidence: D
+  notes: 'Complements, rather than contradicts, ERalpha''s fusion-promoting role (e00156, e00464): during puberty ERalpha
+    supports elongation, at the end of puberty it terminates it. This is the receptor-level expression of the biphasic dose
+    effect.'
+  traversal_usable: true
+- edge_id: e01157
+  source: estrogen_receptor_beta
+  target: igf1_local_growth_plate
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'NULL RESULT: no significant difference in local growth plate IGF-1 expression between ER-antagonist-treated
+    and control mice (P>0.05), despite significant changes in Sox9, Runx2, Ihh and PTHrP'
+  context: mouse, female, pubertal appendicular growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - jin2021
+  confidence: D
+  notes: Argues that ER effects on the plate are NOT relayed through local IGF-1, contrary to the common assumption.
+  traversal_usable: false
+- edge_id: e01158
+  source: parathyroid_hormone
+  target: pth1r_receptor
+  relation: binds
+  sign: +
+  magnitude: the cloned 585-residue PTH/PTHrP receptor binds PTH and PTHrP with EQUAL affinity and both ligands equivalently
+    stimulate adenylate cyclase
+  context: opossum kidney cDNA expressed in COS-7 cells; receptor subsequently shown to be the same molecule expressed by
+    late proliferative and prehypertrophic chondrocytes in human and mouse
+  timescale: seconds
+  evidence_tier: T1
+  refs:
+  - jppner1991
+  confidence: A
+  notes: 'Equal affinity is the crux: the growth plate cannot distinguish endocrine PTH from paracrine PTHrP at the receptor,
+    so systemic hyperparathyroidism is pharmacologically equivalent to raising local PTHrP tone at any chondrocyte the hormone
+    reaches. Whether circulating PTH actually reaches the avascular mid-plate at signalling concentrations is a separate,
+    unanswered question (g_l4l3_011).'
+  traversal_usable: false
+- edge_id: e01159
+  source: parathyroid_hormone
+  target: pth1r_receptor
+  relation: activates
+  sign: +
+  magnitude: PTH and PTHrP equivalently stimulate adenylate cyclase through the shared receptor; human loss of PTH1R function
+    (Blomstrand chondrodysplasia) produces accelerated chondrocyte differentiation and a lethal skeletal phenotype
+  context: human (Blomstrand chondrodysplasia, biallelic PTH1R loss of function) and heterologous expression systems
+  timescale: seconds
+  evidence_tier: T1
+  refs:
+  - jppner1991
+  - karaplis1998
+  - jobert1998
+  confidence: A
+  traversal_usable: true
+- edge_id: e01160
+  source: vitamin_d_receptor
+  target: epiphyseal_vasculature
+  relation: required_for
+  sign: +
+  magnitude: chondrocyte-specific VDR deletion impaired vascular invasion and reduced osteoclast number in juvenile mice,
+    giving increased trabecular bone mass; in vitro VDR signalling in chondrocytes induced RANKL
+  context: mouse, Col2-Cre conditional Vdr deletion, juvenile; growth plate chondro-osseous junction
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - masuyama2006
+  confidence: C
+  notes: 'Note the accompanying NULL: growth plate chondrocyte DEVELOPMENT itself was not affected by loss of chondrocyte
+    VDR. The vitamin D requirement for normal plate architecture is therefore mineral-ion-mediated, not chondrocyte-cell-autonomous.'
+  traversal_usable: true
+- edge_id: e01161
+  source: vitamin_d_receptor
+  target: hypertrophic_zone
+  relation: inhibits
+  sign: '-'
+  magnitude: the hypertrophic zone expansion of Npt2a-null mice at 2 weeks resolves by 5 weeks in parallel with rising circulating
+    1,25(OH)2D, and fails to resolve when the mice are crossed to Vdr-null or made vitamin D deficient
+  context: mouse, Npt2a-null crossed with Vdr-null or vitamin D depleted; tibial growth plate at 2 and 5 weeks
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - miedlich2010
+  confidence: C
+  traversal_usable: true
+- edge_id: e01162
+  source: vitamin_d_calcitriol
+  target: hypertrophic_zone
+  relation: inhibits
+  sign: '-'
+  magnitude: rising 1,25(OH)2D between 2 and 5 weeks coincides with resolution of rachitic hypertrophic zone expansion in
+    Npt2a-null mice; the effect is VDR-dependent
+  context: mouse Npt2a-null model of hypophosphataemia, tibial growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - miedlich2010
+  confidence: C
+  traversal_usable: true
+- edge_id: e01163
+  source: fgf23_hormone
+  target: fgfr3_receptor
+  relation: binds
+  sign: +
+  magnitude: FGF23 binding to FGFR3 was ENHANCED in the presence of soluble alpha-Klotho; knocking down FGFR3 abolished the
+    FGF23/sKL suppression of metatarsal growth, as did neutralising anti-FGF23 antibody
+  context: mouse metatarsal explants and chondrocytes ex vivo; sKL complexes with FGF23 through the KL1 internal repeat
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - kawai2013
+  confidence: C
+  notes: 'Answers the question directly: in CARTILAGE the FGF23 receptor is FGFR3, not the FGFR1c used in the proximal renal
+    tubule. FGF23 therefore converges on exactly the receptor whose gain-of-function causes achondroplasia.'
+  traversal_usable: false
+- edge_id: e01164
+  source: klotho_alpha
+  target: fgfr3_receptor
+  relation: required_for
+  sign: +
+  magnitude: FGF23 alone did not suppress metatarsal growth; suppression required co-incubation with soluble alpha-Klotho,
+    which forms a complex with FGF23 via the KL1 repeat and enhances FGF23-FGFR3 binding
+  context: mouse metatarsal explant culture; Hyp mouse in vivo for the sKL arm
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - kawai2013
+  confidence: C
+  traversal_usable: true
+- edge_id: e01165
+  source: fgf23_hormone
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  magnitude: FGF23 plus soluble alpha-Klotho suppressed metatarsal linear growth and reduced chondrocyte proliferation; intraperitoneal
+    sKL in Hyp mice shortened the proliferating zone and reduced proliferation WITHOUT altering circulating phosphate
+  context: mouse, metatarsal explants and Hyp (XLH model) mice in vivo; proliferative zone
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - kawai2013
+  confidence: C
+  notes: 'Phosphate-independent: this dissociates the growth defect of XLH from the mineralisation defect, and predicts that
+    burosumab should improve growth by more than phosphate correction alone.'
+  traversal_usable: true
+- edge_id: e01166
+  source: fgf23_hormone
+  target: proliferative_zone
+  relation: inhibits
+  sign: '-'
+  magnitude: length of the proliferating zone diminished by FGF23/sKL ex vivo and by i.p. sKL in Hyp mice
+  context: mouse, tibial/metatarsal growth plate, proliferative zone
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - kawai2013
+  confidence: C
+  traversal_usable: true
+- edge_id: e01167
+  source: fgf23_hormone
+  target: ihh_protein
+  relation: inhibits
+  sign: '-'
+  magnitude: FGF23/sKL suppressed Ihh expression and exogenous Ihh protein PARTIALLY rescued the suppression of metatarsal
+    growth
+  context: mouse metatarsal explant culture
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - kawai2013
+  confidence: C
+  notes: IHH is therefore a shared downstream node for FGF23, glucocorticoid (e00065) and mTORC1/nutrition (e00036) - three
+    unrelated systemic inputs converging on one local ligand.
+  traversal_usable: true
+- edge_id: e01168
+  source: fgf23_hormone
+  target: fgfr1_receptor
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: not measured
+  context: growth plate cartilage; FGF23, Klotho and FGFR1 are all detectable in porcine growth plate by qPCR and immunohistochemistry,
+    but no functional test of FGFR1 as the cartilage FGF23 receptor exists
+  timescale: hours
+  evidence_tier: T1
+  refs:
+  - raimann2013
+  confidence: speculative
+  gap_id: g_l4l3_004
+  notes: Raimann shows the components are co-located; Kawai shows the FUNCTION runs through FGFR3. Whether FGFR1c carries
+    any of the signal in cartilage is untested.
+  traversal_usable: false
+- edge_id: e01169
+  source: fgf23_hormone
+  target: klotho_alpha
+  relation: binds
+  sign: +
+  magnitude: FGF23 forms a protein complex with soluble alpha-Klotho through the KL1 internal repeat
+  context: mouse; biochemical complex formation and functional ex vivo assay
+  timescale: minutes
+  evidence_tier: T1
+  refs:
+  - kawai2013
+  confidence: C
+  traversal_usable: false
+- edge_id: e01170
+  source: leptin_hormone
+  target: chondrocyte_proliferation_rate
+  relation: activates
+  sign: biphasic
+  magnitude: leptin 0.5-1.0 ug/mL widened the chondroprogenitor zone by up to 64% in a dose-dependent manner with increased
+    BrdU incorporation; HIGHER concentrations were inhibitory. Leptin also stimulated proliferation of isolated fetal rat
+    osteoblasts and chondrocytes at >=1e-11 M.
+  context: mouse mandibular condyle growth centre (endochondral) organ culture; rat isolated chondrocytes
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - maor2002
+  - cornish2002
+  confidence: D
+  notes: Genuinely biphasic in the same experiment, which matters because obese children have chronically high leptin - the
+    descending limb may be the physiologically relevant one.
+  traversal_usable: true
+- edge_id: e01171
+  source: leptin_hormone
+  target: igf1_receptor
+  relation: activates
+  sign: +
+  magnitude: leptin increased IGF-I receptor protein and mRNA in condylar chondrocytes and the progenitor population; in calorie-restricted
+    mice leptin produced a marked increase in growth plate IGF-IR expression
+  context: mouse mandibular condyle and tibial growth plate; 60%-of-normal chow restriction model
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - maor2002
+  - gatyablonski2004
+  confidence: C
+  notes: A concrete mechanism for how an adipose-derived energy signal sets the plate's GAIN on the somatotropic axis rather
+    than acting as a growth factor in its own right.
+  traversal_usable: true
+- edge_id: e01172
+  source: leptin_hormone
+  target: growth_plate_height
+  relation: activates
+  sign: +
+  magnitude: leptin increased overall epiphyseal growth plate size by 11% and gave significantly greater tibial length than
+    untreated pair-fed animals; in adult male mice 20 injections of 43 ug/day over 4 weeks increased growth plate thickness
+  context: mouse, ad libitum and 60% calorie-restricted feeding, tibia; separate adult male mouse cohort
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - gatyablonski2004
+  - cornish2002
+  confidence: C
+  traversal_usable: true
+- edge_id: e01173
+  source: leptin_receptor
+  target: chondrocyte_hypertrophy
+  relation: required_for
+  sign: +
+  magnitude: Ob-Rb localised to hypertrophic chondrocytes; ob/ob growth plates showed decreased type X collagen, disturbed
+    columnar structure, less organised collagen fibrils, increased apoptosis and premature mineralisation, and broke at the
+    chondro-osseous junction under mechanical test; leptin repletion increased femoral and humeral length and reduced the
+    calcified fraction of the hypertrophic zone
+  context: mouse, ob/ob versus wild type, femoral and humeral growth plates, hypertrophic zone; leptin in prehypertrophic
+    chondrocytes and Ob-Rb in hypertrophic chondrocytes
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - kishida2005
+  confidence: C
+  traversal_usable: true
+- edge_id: e01174
+  source: leptin_receptor
+  target: chondrocyte_column_formation
+  relation: required_for
+  sign: +
+  magnitude: disturbed columnar structure and disorganised collagen fibril arrangement in ob/ob growth plates
+  context: mouse, ob/ob versus wild type, long bone growth plate
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - kishida2005
+  confidence: D
+  traversal_usable: true
+- edge_id: e01175
+  source: leptin_receptor
+  target: chondrocyte_apoptosis_hz
+  relation: inhibits
+  sign: '-'
+  magnitude: increased apoptosis and premature matrix mineralisation in ob/ob growth plates; exogenous leptin 10 ng/mL abolished
+    the excess mineralisation of ob/ob primary chondrocytes
+  context: mouse, ob/ob versus wild type; primary chondrocyte and ATDC5 culture
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - kishida2005
+  confidence: D
+  traversal_usable: true
+- edge_id: e01176
+  source: testosterone_hormone
+  target: chondrocyte_proliferation_rate
+  relation: inhibits
+  sign: '-'
+  magnitude: testosterone INHIBITED [3H]thymidine uptake by cultured human long-bone growth plate chondrocytes, in the same
+    screen in which IGF-I, IGF-II, TGF-beta, FGF-1, FGF-2, FGF-18 and PDGF-BB were potent stimulators and FGF-10 and BMP-2/-4/-6
+    were inhibitors
+  context: human long-bone growth plate chondrocytes in primary culture (paediatric surgical tissue)
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - olney2004
+  confidence: D
+  notes: Direction is opposite to the clinical picture of the male pubertal growth spurt, and consistent with the view that
+    the spurt is driven by AROMATISED estrogen plus GH amplification rather than by androgen acting on the chondrocyte. Reinforced
+    by chagin2009, in which AR agonism and antagonism had no effect on cultured fetal rat metatarsal elongation.
+  traversal_usable: true
+- edge_id: e01177
+  source: androgen_receptor
+  target: chondrocyte_proliferation_rate
+  relation: correlates_with
+  sign: unknown
+  magnitude: 'NULL RESULT: neither AR agonists nor AR antagonists altered longitudinal growth of cultured fetal rat metatarsal
+    bones, despite AR protein being demonstrable in 41-65% of human growth plate chondrocytes depending on zone'
+  context: fetal rat metatarsal organ culture (functional test) versus human proximal tibial growth plate biopsies, Tanner
+    1-5, both sexes (expression)
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - chagin2009
+  - nilsson2003
+  confidence: C
+  gap_id: g_l4l3_009
+  notes: Receptor presence without demonstrable function. The largest unexplained discrepancy in the sex-steroid arm of this
+    seam.
+  traversal_usable: false
+- edge_id: e01178
+  source: insulin_hormone
+  target: chondrocyte_hypertrophy
+  relation: activates
+  sign: +
+  magnitude: insulin significantly enhanced fetal rat metatarsal growth, and rapamycin abolished the response through a selective
+    effect on the hypertrophic zone with no change in BrdU incorporation
+  context: fetal rat (E19-E20) metatarsal explant
+  timescale: days
+  evidence_tier: T1
+  refs:
+  - phornphutkul2008
+  confidence: C
+  traversal_usable: true
+- edge_id: e01179
+  source: socs2_protein
+  target: gh_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: in human primary chondrocytes FGF21 upregulated basal and GH-induced SOCS2 and inhibited GH-induced STAT5 phosphorylation
+    and GH-induced COL2 and ALP expression; serum FGF21 was inversely associated with change in length SD score in very preterm
+    infants (beta -0.415, P<0.005)
+  context: human paediatric primary chondrocytes in vitro; observational cohort of very preterm infants from birth to term-equivalent
+    age
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - guasti2014
+  confidence: B
+  notes: 'Supersedes nothing but adds the human arm: SOCS2-mediated local GH resistance in cartilage is demonstrable in HUMAN
+    chondrocytes and correlates with human linear growth failure, not only in Socs2-null mice.'
+  traversal_usable: true
+- edge_id: e01180
+  source: mct8_transporter
+  target: thyroid_hormone_t3
+  relation: hypothesized_link
+  sign: +
+  magnitude: not measured
+  context: growth plate chondrocyte; MCT8 is the canonical T3 transporter but growth is largely normal in human MCT8 deficiency,
+    and in mouse ATDC5 cells and resting-zone chondrocytes Mct10 (not Mct8) is the abundant transporter, with Mct10 knockdown
+    reducing T3 uptake by up to 44% (P<0.05)
+  timescale: minutes
+  evidence_tier: T1
+  refs:
+  - abe2012
+  confidence: speculative
+  gap_id: g_l4l3_007
+  notes: The transporter that actually gates T3 entry into human growth plate chondrocytes has not been identified. If it
+    is MCT10 rather than MCT8, the normal stature of Allan-Herndon-Dudley patients is explained and the cartilage T3 supply
+    is under separate genetic control from brain T3 supply.
+  traversal_usable: false
+- edge_id: e01181
+  source: genomic_imprinting_growth
+  target: igf2_h19_imprinting
+  relation: inhibits
+  sign: '-'
+  magnitude: 14q32.2 hypomethylation lowers IGF2 expression at 11p15.5, producing a transcriptional signature shared with
+    Silver-Russell syndrome
+  context: human, 60 genetically confirmed Temple syndrome patients (31 UPD(14)mat, 22 epimutation, 5 deletion)
+  evidence_tier: T1
+  refs:
+  - abi2019
+  - ogawa2025
+  confidence: D
+  notes: Single transcriptional-profiling study for the trans effect; graded D on that basis even though the Temple phenotype
+    itself is A-grade.
+  traversal_usable: true

@@ -1,0 +1,412 @@
+gaps:
+  - gap_id: g_l4l3_001
+    question: >-
+      Does estrogen, acting through ERalpha or ERbeta, change Indian hedgehog expression
+      or IHH pathway output in the mammalian growth plate?
+    type: search_established
+    layer: L4
+    why_it_matters: >-
+      Estrogen is the hormone that both accelerates and terminates growth, and IHH is the
+      master local ligand that sets the pace of hypertrophic differentiation. Essentially
+      every review draws an arrow from estrogen to the IHH/PTHrP loop. If that arrow has
+      never been measured, the mechanistic account of the pubertal growth spurt and of
+      epiphyseal fusion has a hole exactly where it is most often asserted to be solid.
+    what_is_known: >-
+      ERalpha and ERbeta protein are present in resting, proliferative and hypertrophic
+      chondrocytes of the human growth plate at all Tanner stages (nilsson2003,
+      egerbacher2002). ERalpha loss delays fusion and increases growth plate height in
+      aged female mice (brjesson2012). Estradiol raises VEGFA in the growth plate
+      (emons2010). The MEMBRANE estrogen receptor GPER-1 does change the PTHrP/IHH ratio
+      (chou2025). IHH itself is well localised in human growth plate (kindblom2002).
+    what_is_missing: >-
+      No primary study measures IHH transcript or protein in a growth plate after
+      manipulating estradiol or ERalpha/ERbeta. The one study that comes close (jin2021)
+      reports that Ihh and PTHrP "differed among groups" after ER antagonist treatment but
+      does not give direction or magnitude for Ihh.
+    nearest_evidence: [chou2025, jin2021, brjesson2012]
+    discriminating_experiment: >-
+      Ovariectomise 3-week-old female mice, give vehicle or 17beta-estradiol at a
+      growth-accelerating dose (low) and a growth-terminating dose (high), and quantify Ihh,
+      Ptch1, Gli1 and Pthlh transcripts by in-situ hybridisation with zonal segmentation of
+      the proximal tibial plate at 7 and 21 days. Repeat in chondrocyte-specific Esr1 and
+      Esr2 knockouts. If estrogen acts through IHH, the low dose should raise Ihh/Ptch1 in
+      the prehypertrophic zone and the high dose should collapse the whole loop as the plate
+      senesces; if it does not, Ihh should track growth plate height passively and be
+      unchanged relative to plate architecture, placing estrogen's action elsewhere
+      (WNT, senescence machinery, or vasculature).
+    tractability: 4
+    search_log_ref: g_l4l3_001
+
+  - gap_id: g_l4l3_002
+    question: >-
+      Does IGF-1 acting through IGF1R activate mTORC1 in growth plate chondrocytes, and is
+      mTORC1 required for the IGF-1 effect on chondrocyte hypertrophy?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      mTORC1 is the node that sets chondrocyte biosynthetic capacity and hypertrophic cell
+      size (Raptor deletion shrinks cells and cuts protein synthesis), and IGF-1 is the
+      systemic signal that sets hypertrophic cell size (Igf1-null terminal chondrocytes are
+      30% shorter). These are almost certainly the same axis, and every pathway diagram
+      draws IGF1R->PI3K->AKT->mTORC1 inside the chondrocyte. But if the connection has never
+      been tested in cartilage, the entire nutritional-endocrine convergence story rests on
+      an inference from other tissues.
+    what_is_known: >-
+      Chondrocyte-restricted deletion of mTOR or Raptor reduces hypertrophic cell size and
+      protein synthesis without changing proliferation or survival. Rapamycin shortens rat
+      and rabbit growth plates with selective loss of hypertrophic and proliferative zone
+      height. INSULIN-stimulated fetal rat metatarsal growth is rapamycin-sensitive
+      (phornphutkul2008). IGF-1 activates AKT in growth plate chondrocytes (choukair2014).
+    what_is_missing: >-
+      No study measures phospho-S6K1 or phospho-4E-BP1 in growth plate chondrocytes after
+      IGF-1 stimulation, and no study asks whether rapamycin or Raptor deletion blocks the
+      IGF-1-driven increase in hypertrophic cell size.
+    nearest_evidence: [phornphutkul2008, choukair2014, wang1999]
+    discriminating_experiment: >-
+      Culture fetal mouse metatarsals from Col2a1-CreERT2;Raptor-flox animals with and
+      without tamoxifen, treat with IGF-1 100 ng/mL for 10 days, and measure hypertrophic
+      zone length and terminal chondrocyte height by stereology, with phospho-S6 immunoblot
+      at 30 min as the proximal readout. If IGF-1 works through mTORC1, the 3-fold expansion
+      of the hypertrophic zone seen by mushtaq2004 should be abolished in Raptor-deleted
+      explants; if IGF-1 enlarges cells by an mTORC1-independent route (for example through
+      the GLUT4/glycogen arm implicated by wang1999), the expansion should persist.
+    tractability: 4
+    search_log_ref: g_l4l3_002
+
+  - gap_id: g_l4l3_003
+    question: >-
+      Does thyroid hormone regulate RUNX2 or MEF2C, the two transcription factors that
+      license chondrocyte hypertrophy, in the growth plate?
+    type: search_established
+    layer: L4
+    why_it_matters: >-
+      T3 is the single most potent inducer of hypertrophic differentiation in the plate, and
+      RUNX2/RUNX3 and MEF2C are the transcription factors that execute hypertrophy. The
+      obvious hypothesis is that T3 acts through them. If it does not, then T3-driven
+      hypertrophy must be relayed entirely through IHH/PTHrP, WNT and FGFR, which changes
+      what a thyroid-hormone-mimetic drug would be expected to do to the plate.
+    what_is_known: >-
+      T3 promotes hypertrophic differentiation and induces collagen X and alkaline
+      phosphatase directly in isolated rat growth plate chondrocytes (robson2000). T3 acts on
+      the PTHrP/PTH1R arm (stevens2000), on Wnt-4/beta-catenin (wang2007, wang2010), on FGFR
+      expression (barnard2005) and on Ihh in the epiphysis (xing2014, xing2016). An ERbeta
+      antagonist raises growth plate Runx2 (jin2021), so Runx2 is measurable in this setting.
+    what_is_missing: >-
+      No primary study reports Runx2, Runx3 or Mef2c expression or activity in a growth plate
+      after altering thyroid status, nor a TRE in the Runx2 or Mef2c promoter in chondrocytes.
+    nearest_evidence: [robson2000, stevens2000, jin2021]
+    discriminating_experiment: >-
+      Render 6-week-old rats hypothyroid (propylthiouracil) or thyrotoxic (T3) for 6 weeks and
+      quantify Runx2, Runx3, Mef2c and Hdac4 transcripts by laser-capture microdissection of
+      the prehypertrophic and hypertrophic zones of the proximal tibia, with ChIP for THRalpha1
+      and THRbeta1 at the Runx2 P1/P2 and Mef2c promoters. If T3 acts through the hypertrophy
+      transcription factors, Runx2/Mef2c should track thyroid status in the prehypertrophic
+      zone and show receptor occupancy; if hypertrophy induction is fully relayed, Runx2 and
+      Mef2c should be unchanged per prehypertrophic cell while collagen X still rises.
+    tractability: 3
+    search_log_ref: g_l4l3_003
+
+  - gap_id: g_l4l3_004
+    question: >-
+      Does FGF23 signal through FGFR1c in growth plate cartilage, as it does in the proximal
+      renal tubule, in addition to the FGFR3 route that has been demonstrated?
+    type: known_unknown
+    layer: L4
+    why_it_matters: >-
+      Which receptor FGF23 uses in cartilage determines whether pan-FGFR inhibitors and
+      FGFR3-selective inhibitors developed for achondroplasia would also correct the growth
+      failure of X-linked hypophosphataemia, and whether burosumab and vosoritide are
+      mechanistically redundant or additive in XLH.
+    what_is_known: >-
+      FGF23 requires soluble alpha-Klotho to bind FGFR3 in mouse chondrocytes, and FGFR3
+      knockdown or anti-FGF23 antibody abolishes FGF23/sKL suppression of metatarsal growth
+      and of Ihh (kawai2013). FGF23, Klotho and FGFR1 transcript and protein are all present in
+      porcine growth plate cartilage (raimann2013). In the kidney FGF23 signals through
+      FGFR1c/alpha-Klotho. A pan-FGFR inhibitor ameliorates FGF23-mediated hypophosphataemic
+      rickets, but its skeletal effect cannot be attributed to a receptor isoform.
+    what_is_missing: >-
+      No cartilage experiment isolates FGFR1. FGFR1 knockdown was not performed alongside the
+      FGFR3 knockdown in kawai2013, and no chondrocyte-specific Fgfr1 deletion has been
+      challenged with FGF23/sKL.
+    nearest_evidence: [kawai2013, raimann2013]
+    discriminating_experiment: >-
+      Treat metatarsal explants from Col2a1-Cre;Fgfr1-flox, Fgfr3-null, and double-mutant mice
+      with FGF23 plus soluble alpha-Klotho and measure linear growth, proliferative zone length
+      and Ihh transcript at 6 days. If FGFR3 is the sole cartilage receptor, Fgfr3 loss should
+      abolish the response and Fgfr1 loss should leave it intact; residual suppression in
+      Fgfr3-null explants that is removed by additional Fgfr1 deletion would establish a
+      parallel FGFR1c route and predict that FGFR3-selective drugs will under-treat XLH.
+    tractability: 4
+
+  - gap_id: g_l4l3_005
+    question: >-
+      Is IGF-2 the ligand that maintains the germinal (resting) zone under GH stimulation
+      when IGF-1 is absent?
+    type: known_unknown
+    layer: L4
+    why_it_matters: >-
+      The Igf1-null growth plate has an ENLARGED germinal zone and normal chondrocyte
+      proliferation, while the Ghr-null plate has a hypoplastic germinal zone and reduced
+      proliferation. Something GH-dependent and IGF-1-independent maintains the resting zone.
+      If it is IGF-2, then the human resting zone - which sees far more IGF-2 than the mouse
+      does, IGF-2 being 3-5 fold more abundant than IGF-1 in adult human serum - may be under
+      a control regime that mouse genetics systematically misrepresents.
+    what_is_known: >-
+      IGF-2 is highly expressed in the germinal and proliferative zones of the mouse growth
+      plate. GH raises Igf2 (but not Igf1) transcript in Socs2-null metatarsals, and the GH
+      growth effect there is abolished by IGF-receptor blockade (dobie2015). Ghr-null and
+      Igf1-null germinal zones differ in opposite directions (wang2004).
+    what_is_missing: >-
+      No experiment removes IGF-2 from the growth plate and measures germinal zone size, and
+      no experiment tests whether exogenous IGF-2 rescues the Ghr-null germinal zone.
+    nearest_evidence: [wang2004, dobie2015]
+    discriminating_experiment: >-
+      Cross Col2a1-CreERT2;Igf2-flox mice onto the Igf1-null background, delete Igf2 in
+      cartilage at P10, and score germinal zone height, label-retaining cell number by
+      long-chase EdU, and clonal column output at P24. If IGF-2 maintains the resting zone,
+      the enlarged Igf1-null germinal zone should collapse toward the Ghr-null phenotype; if
+      it does not, the GH-dependent germinal-zone factor is something other than an IGF and
+      the dual effector hypothesis needs a third component.
+    tractability: 3
+
+  - gap_id: g_l4l3_006
+    question: >-
+      Do glucocorticoids raise or lower SOX9 in chondrocytes, and does the direction reverse
+      between nanomolar and micromolar concentrations?
+    type: contradiction
+    layer: L3
+    why_it_matters: >-
+      SOX9 is the master chondrogenic transcription factor and glucocorticoid excess is the
+      most potent single suppressor of childhood linear growth. If dexamethasone RAISES SOX9
+      at physiological concentrations, then glucocorticoid growth suppression cannot be
+      explained by loss of chondrogenic identity and must run through IGF-1 resistance, IHH
+      suppression and apoptosis instead. Standard chondrogenic differentiation media contain
+      100 nM dexamethasone precisely because it is pro-chondrogenic, which is difficult to
+      reconcile with the clinical phenotype.
+    what_is_known: >-
+      Dexamethasone enhanced Sox9 mRNA and protein in newborn mouse rib chondrocytes within
+      24 h, threshold 0.1 nM, maximal at 10 nM, with parallel Col2a1 induction and no change
+      in Sox9 mRNA half-life (sekiya2001). Glucocorticoid at 100 uM suppressed SOX9, COL2 and
+      aggrecan in human knee articular chondrocytes, time- and dose-dependently, through p38
+      inactivation, before any apoptotic effect appeared (song2012).
+    what_is_missing: >-
+      No study runs a full concentration-response for SOX9 across 0.1 nM to 100 uM in a single
+      cell type, and no study measures SOX9 zonally in a growth plate after in-vivo
+      glucocorticoid exposure at a dose that suppresses growth.
+    nearest_evidence: [sekiya2001, song2012, baron1992]
+    discriminating_experiment: >-
+      Infuse dexamethasone directly into one rabbit proximal tibial growth plate at the
+      80 ng/uL, 1 uL/h rate shown by baron1992 to cut growth by 77%, with vehicle
+      contralaterally, and quantify SOX9 protein by zonal immunohistochemistry at 7 days,
+      alongside a 6-point concentration-response for SOX9 in the same primary chondrocytes in
+      vitro. Monophasic suppression in vivo would retire the pro-chondrogenic reading;
+      unchanged or raised SOX9 in vivo despite a 77% growth deficit would establish that
+      glucocorticoid growth arrest is not a SOX9 lesion at all.
+    tractability: 4
+
+  - gap_id: g_l4l3_007
+    question: >-
+      Which thyroid hormone transporter carries T3 into human growth plate chondrocytes -
+      MCT8, MCT10, or another?
+    type: species_gap
+    layer: L4
+    why_it_matters: >-
+      Thyroid hormone is not membrane-permeant, so the transporter sets the intracellular T3
+      concentration and therefore the entire T3 arm of this seam. Patients with MCT8
+      (SLC16A2) loss of function have devastating neurological disease but largely normal
+      linear growth, which is unexplained if MCT8 were the cartilage transporter. Getting this
+      right determines whether thyromimetics such as Triac, already used in MCT8 deficiency,
+      reach the growth plate at all.
+    what_is_known: >-
+      In mouse ATDC5 cells Mct10 is the most abundant of the highly T3-specific transporters,
+      falls with chondrocyte differentiation, and is most abundant in resting zone chondrocytes
+      in vivo; Mct10 knockdown reduced [125I]T3 uptake by up to 44% (P<0.05) and abolished
+      known T3 effects (abe2012). Mct10-null male mice have altered trabecular bone. Human
+      MCT8 deficiency spares growth.
+    what_is_missing: >-
+      No measurement of SLC16A2 or SLC16A10 transcript or protein in human growth plate
+      cartilage, and no uptake measurement in human growth plate chondrocytes.
+    nearest_evidence: [abe2012]
+    discriminating_experiment: >-
+      Quantify SLC16A2, SLC16A10 and SLCO1C1 by RNAscope with zonal segmentation on archived
+      human proximal tibial growth plate biopsies (epiphysiodesis surgical tissue, Tanner 1-5),
+      and measure [125I]T3 uptake in primary human growth plate chondrocytes with and without
+      the MCT10-preferring inhibitor. Predominant SLC16A10 with MCT8 near-absent would explain
+      the preserved stature of Allan-Herndon-Dudley syndrome and would predict that Triac,
+      which is MCT8-independent, should be growth-neutral rather than growth-promoting.
+    tractability: 3
+
+  - gap_id: g_l4l3_008
+    question: >-
+      What is the intracellular T3 concentration, and the DIO2 and DIO3 activity, inside each
+      zone of a growth plate?
+    type: quantitative_gap
+    layer: L4
+    why_it_matters: >-
+      The whole logic of the thyroid arm of this seam - that a systemic hormone is converted
+      into a spatially patterned local signal by hedgehog-driven D2 turnover - depends on there
+      being a T3 gradient across the plate. No such gradient has ever been measured. Without a
+      number, every claim about local versus systemic thyroid hormone control of the plate is
+      qualitative, and no dose can be predicted for a thyromimetic aimed at cartilage.
+    what_is_known: >-
+      D2 is present in growth plate cartilage and is destroyed by the Hedgehog-induced
+      ECS(WSB-1) ubiquitin ligase, which raises PTHrP (dentice2005). DIO2 expression in
+      chicken growth plates with tibial dyschondroplasia is one-eighth of unaffected birds.
+      DIO3 is an imprinted gene of the DLK1-DIO3 domain and is expressed in cartilage.
+      Circulating total and free T3 are routinely measured; cartilage T3 is not.
+    what_is_missing: >-
+      No value, in any species, for cartilage T3 or T4 concentration, for the T3:T4 ratio
+      across zones, or for D2/D3 enzyme activity (as opposed to transcript) in growth plate
+      tissue.
+    nearest_evidence: [dentice2005, abe2012]
+    discriminating_experiment: >-
+      Apply LC-MS/MS thyroid hormone quantification to laser-capture-microdissected resting,
+      proliferative, prehypertrophic and hypertrophic zones from rat proximal tibia (pooling
+      across animals for sensitivity), in euthyroid, hypothyroid and thyrotoxic states, with
+      paired D2 and D3 activity assays on adjacent tissue. A rising T3 gradient toward the
+      prehypertrophic zone would confirm the D2-patterning model; a flat gradient would mean
+      the plate reads circulating T3 directly and D2 acts only as a local amplifier of
+      timing, not of position.
+    tractability: 2
+
+  - gap_id: g_l4l3_009
+    question: >-
+      Why does androgen receptor modulation have no effect on longitudinal growth in cultured
+      metatarsals when AR protein is present in 41-65% of human growth plate chondrocytes?
+    type: contradiction
+    layer: L4
+    why_it_matters: >-
+      Whether androgens act directly on the plate or only after aromatisation to estrogen
+      determines whether non-aromatisable androgens (oxandrolone, DHT) can be used to gain
+      height without advancing bone age, and whether aromatase inhibitors in boys act purely
+      by removing an estrogen brake. The receptor-expression literature and the functional
+      literature currently point in opposite directions.
+    what_is_known: >-
+      AR is immunolocalised in human growth plate chondrocytes with zonal structure - 65% of
+      resting, 41% of proliferative and 58% of hypertrophic cells positive, with no sex
+      difference and no Tanner-stage trend (nilsson2003) - and in rat tibial growth plate with
+      a sex difference (van2002). Yet neither AR agonism nor AR antagonism altered elongation
+      of cultured fetal rat metatarsals (chagin2009), and testosterone actually INHIBITED
+      proliferation of cultured human growth plate chondrocytes (olney2004). Complete androgen
+      insensitivity syndrome is compatible with a normal female growth spurt.
+    what_is_missing: >-
+      No chondrocyte-specific Ar deletion has been reported with growth plate morphometry, and
+      no experiment has tested a non-aromatisable androgen on the plate in the presence and
+      absence of aromatase.
+    nearest_evidence: [chagin2009, nilsson2003, olney2004, van2002]
+    discriminating_experiment: >-
+      Generate Col2a1-CreERT2;Ar-flox mice, delete AR in cartilage at P14 in both sexes, and
+      measure tibial elongation rate by calcein double-labelling, zonal heights, and time to
+      growth cessation, with an orchidectomy plus DHT arm to remove the aromatisable substrate.
+      Normal growth and normal fusion timing in cartilage-AR-null males would settle the
+      question in favour of the aromatisation route; a shortened proliferative zone would mean
+      the metatarsal explant assay simply lacks the relevant readout or timeframe.
+    tractability: 3
+
+  - gap_id: g_l4l3_010
+    question: >-
+      Do glucocorticoids suppress mTORC1 signalling in growth plate chondrocytes?
+    type: search_established
+    layer: L3
+    why_it_matters: >-
+      mTORC1 sets hypertrophic chondrocyte size and cartilage protein synthesis, and
+      glucocorticoids are the most potent suppressor of linear growth. Glucocorticoids inhibit
+      mTORC1 in muscle and lymphocytes through REDD1/KLF15. If the same holds in cartilage it
+      would give a single mechanism for the reduced matrix synthesis and reduced hypertrophic
+      cell size of glucocorticoid-treated children, and would nominate an existing drug class
+      for rescue. If it does not hold, the cartilage lesion is specifically the PI3K-AKT and
+      IHH arms, which is what the existing data suggest.
+    what_is_known: >-
+      Dexamethasone induces autophagy in ATDC5 and N1511 chondrocytes in a RU486-blockable
+      manner (zhao2014), and rapamycin also induces autophagy - consistent with, but not proof
+      of, mTORC1 suppression. Dexamethasone reduces AKT phosphorylation by 93% in HCS-2/8
+      chondrocytes (chrysis2005), which is upstream of mTORC1. Raptor deletion in cartilage
+      reduces chondrocyte size and protein synthesis.
+    what_is_missing: >-
+      No study measures phospho-S6K1, phospho-S6 or phospho-4E-BP1 in chondrocytes or growth
+      plate after glucocorticoid exposure, and no study tests REDD1/DDIT4 or KLF15 induction in
+      cartilage.
+    nearest_evidence: [zhao2014, chrysis2005, phornphutkul2008]
+    discriminating_experiment: >-
+      Treat cultured rat metatarsals and primary growth plate chondrocytes with dexamethasone
+      at 1e-9 to 1e-6 M and immunoblot phospho-S6 (Ser235/236) and phospho-4E-BP1 at 1, 6 and
+      24 h, with DDIT4 transcript as the candidate mediator and Ddit4 knockdown as the rescue
+      arm; in parallel score hypertrophic cell height by stereology at 10 days. Loss of
+      phospho-S6 with DDIT4 induction, rescued by Ddit4 knockdown, would establish the
+      REDD1-mTORC1 route in cartilage; preserved phospho-S6 despite full growth suppression
+      would exclude it and leave IGF-1 resistance and IHH loss as the operative mechanisms.
+    tractability: 5
+    search_log_ref: g_l4l3_010
+
+  - gap_id: g_l4l3_011
+    question: >-
+      Does circulating PTH reach growth plate chondrocytes at concentrations that activate
+      PTH1R in vivo, given that PTH and PTHrP bind the receptor with equal affinity?
+    type: known_unknown
+    layer: L4
+    why_it_matters: >-
+      PTH1R cannot discriminate PTH from PTHrP. If endocrine PTH reaches the plate, then
+      hyperparathyroidism - common in chronic kidney disease and in vitamin D deficiency -
+      should act on the plate exactly like raised local PTHrP, delaying hypertrophy and
+      widening the proliferative zone, and teriparatide should do the same. If PTH does not
+      penetrate the avascular mid-plate, then the growth failure of renal osteodystrophy is
+      entirely indirect and PTH-lowering therapy would not be expected to act on the plate at
+      all. This determines the interpretation of every clinical correlation between PTH level
+      and height velocity.
+    what_is_known: >-
+      PTH1R binds PTH and PTHrP with equal affinity and both equivalently stimulate adenylate
+      cyclase (jppner1991). PTH1R is expressed most strongly in late proliferative and
+      prehypertrophic chondrocytes. Serum PTH correlates with growth failure in paediatric
+      dialysis patients (imaizumi2026), and teriparatide has been used in children with
+      hypoparathyroidism (tantivit2026). The growth plate is avascular; solute access is by
+      diffusion from the epiphyseal and metaphyseal margins.
+    what_is_missing: >-
+      No measurement of PTH concentration or of PTH1R occupancy/cAMP response within growth
+      plate cartilage as a function of circulating PTH, and no experiment separating the
+      skeletal effects of endocrine PTH from those of local PTHrP at the same receptor.
+    nearest_evidence: [jppner1991, karaplis1998, jobert1998]
+    discriminating_experiment: >-
+      Infuse fluorescently or radio-labelled PTH(1-34) systemically into growing rats at
+      concentrations spanning the physiological and secondary-hyperparathyroid range, and map
+      penetration depth into the proximal tibial plate by autoradiography alongside a
+      PKA-activity biosensor or phospho-CREB immunostaining with zonal segmentation. Deep
+      penetration with prehypertrophic phospho-CREB induction would make endocrine PTH a real
+      L4->L3 input and reframe renal growth failure; restriction of signal to the first two or
+      three cell layers at the metaphyseal margin would show that the plate is shielded from
+      systemic PTH and that PTHrP's paracrine monopoly is anatomically enforced.
+    tractability: 3
+
+  - gap_id: g_l4l3_012
+    question: >-
+      What is the response time of each endocrine input at the growth plate - do hormones act
+      on the plate over minutes, days, or only across weeks of cumulative exposure?
+    type: quantitative_gap
+    layer: L4
+    why_it_matters: >-
+      Dose-timing is the whole of endocrine pharmacology at the plate: GH works better
+      pulsatile than continuous, estrogen accelerates growth at low and terminates it at high
+      concentration, and glucocorticoid growth suppression is reversible while estrogen-driven
+      senescence is not. Yet almost no study reports the latency between a hormone step and a
+      measurable change in a local pathway. Without latencies, the network cannot be simulated
+      and the difference between a signal the plate integrates and a signal it tracks cannot
+      be stated.
+    what_is_known: >-
+      A few latencies exist: pulsatile GH raises growth plate Igf1 mRNA within 5 days
+      (isgaard1988); T3 raises TRbeta1 2.1-fold at 24 h and 13-fold at 72 h in tibia culture
+      (xing2016); dexamethasone raises lipocalin-2 40-fold by 24 h (owen2008); IGF-I shortens
+      the proliferative cell cycle from 11 to 4.5 days (hunziker1994). Knemometry can resolve
+      human lower-leg growth changes within days of a glucocorticoid dose.
+    what_is_missing: >-
+      No systematic time-course, in any single preparation, comparing the latency of the GH,
+      T3, glucocorticoid, estrogen and FGF23 arms onto a common set of local readouts
+      (IHH, PTHrP, phospho-STAT5, beta-catenin, phospho-S6).
+    nearest_evidence: [isgaard1988, xing2016, owen2008, hunziker1994]
+    discriminating_experiment: >-
+      Use a single cultured fetal rat metatarsal platform, apply GH, T3, dexamethasone,
+      estradiol and FGF23/sKL as step changes, and sample at 15 min, 1 h, 6 h, 24 h, 72 h and
+      10 days for phospho-STAT5, phospho-S6, active beta-catenin, Ihh and Pthlh transcripts
+      plus daily length. Hormones that move a proximal readout within an hour but a length
+      readout only after days are integrators; hormones whose length effect tracks the
+      proximal readout within a day are trackers. The classification is what a
+      pulse-versus-infusion dosing decision actually requires.
+    tractability: 4
