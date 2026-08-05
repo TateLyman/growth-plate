@@ -39,11 +39,11 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 
 <!-- DASHBOARD:BEGIN -->
 **Totals** — 612 nodes (578 researched, 34 stubs) ·
-761 edges · 206 gaps (98 search logs) · 943 references
+762 edges · 206 gaps (98 search logs) · 943 references
 
 ```
 nodes  ██████████░░░░░░░░░░ 612/1200 (51%)
-edges  ██████░░░░░░░░░░░░░░ 761/2500 (30%)
+edges  ██████░░░░░░░░░░░░░░ 762/2500 (30%)
 gaps   ████████████████████ 206/150 (100%)
 ```
 
@@ -58,12 +58,12 @@ gaps   ████████████████████ 206/150 (100
 | L6 | mechanobiology | 31 | 31 | 32 | 14 | ✅ | — | ✅ |
 | L7 | fusion_and_cessation | 34 | 34 | 33 | 13 | ✅ | — | ✅ |
 | L8 | genetics_and_heritability | 36 | 3 | 3 | 2 | 2/8·2/3 | — | — |
-| L9 | whole_organism_growth | 34 | 34 | 40 | 17 | ✅ | — | — |
+| L9 | whole_organism_growth | 34 | 34 | 41 | 17 | ✅ | — | — |
 | L10 | environment_and_population | 34 | 34 | 55 | 12 | ✅ | — | — |
 | L11 | pathology_as_natural_experiment | 56 | 56 | 38 | 25 | ✅ | — | ✅ |
 | L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 48 | 24 | ✅ | — | — |
 | L13 | methods_and_data | 41 | 41 | 15 | 14 | ✅ | — | — |
-| | **total** | **612** | **578** | **761** | **206** | | | |
+| | **total** | **612** | **578** | **762** | **206** | | | |
 
 **Confidence distribution** (researched nodes): **A** 141 · **B** 171 · **C** 180 · **D** 73 · **E** 11 · **X** 2
 
@@ -83,7 +83,7 @@ A-count alongside rising propositional rigour is a successful run, not a shortfa
 |---|---:|---:|
 | `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **55.2%** | — |
 | `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **36.2%** | — |
-| `edges_per_node` | **1.24** | ≥3.0 |
+| `edges_per_node` | **1.25** | ≥3.0 |
 | `refs_per_researched` | **3.06** | ≥3.0 |
 | `quant_node_coverage` | **65.9%** | ≥60% |
 | `stub_fraction` | **5.6%** | 0% |
