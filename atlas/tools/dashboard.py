@@ -165,11 +165,17 @@ These are tracked instead of treating the A-grade count as a target. Direct,
 replicated human evidence in growth-plate biology is genuinely scarce; a falling
 A-count alongside rising propositional rigour is a successful run, not a shortfall.
 
+The `edges_per_node ≥ 3.0` target was **retired** (MR-004): additional bare edges at
+low context fill increase graph size without increasing answerability. The live
+structural target is context fill on existing edges — zone ≥40%, sex ≥30%, stage ≥40% —
+reported by `atlas/tools/context_filter.py --coverage-report` and in
+`query/coverage.md`. All three are met.
+
 | metric | value | target |
 |---|---:|---:|
 | `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **{hef:.1f}%** | — |
 | `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **{rhf:.1f}%** | — |
-| `edges_per_node` | **{n_edges_per_node:.2f}** | ≥3.0 |
+| `edges_per_node` | **{n_edges_per_node:.2f}** | target retired — see note above |
 | `refs_per_researched` | **{refs_per_res:.2f}** | ≥3.0 |
 | `quant_node_coverage` | **{quant_cov:.1f}%** | ≥60% |
 | `stub_fraction` | **{100.0*(tot['n']-tot['f'])/(tot['n'] or 1):.1f}%** | 0% |

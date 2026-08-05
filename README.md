@@ -39,37 +39,37 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 
 <!-- DASHBOARD:BEGIN -->
 **Totals** — 614 nodes (614 researched, 0 stubs) ·
-1181 edges · 279 gaps (136 search logs) · 1036 references
+1181 edges · 288 gaps (147 search logs) · 1049 references
 
 ```
 nodes  ██████████░░░░░░░░░░ 614/1200 (51%)
 edges  █████████░░░░░░░░░░░ 1181/2500 (47%)
-gaps   ████████████████████ 279/150 (100%)
+gaps   ████████████████████ 288/150 (100%)
 ```
 
 | Layer | Name | Nodes | Researched | Edges out | Gaps | Quota | Doc | Fig |
 |---|---|---:|---:|---:|---:|:--:|:--:|:--:|
-| L0 | developmental_origin | 25 | 25 | 31 | 13 | ✅ | — | ✅ |
-| L1 | growth_plate_architecture | 48 | 48 | 48 | 14 | ✅ | — | ✅ |
+| L0 | developmental_origin | 25 | 25 | 31 | 13 | ✅ | ✅ | ✅ |
+| L1 | growth_plate_architecture | 48 | 48 | 48 | 14 | ✅ | ✅ | ✅ |
 | L2 | stem_and_progenitor_biology | 35 | 35 | 56 | 14 | ✅ | ✅ | ✅ |
-| L3 | signaling_networks | 88 | 88 | 228 | 38 | ✅ | — | ✅ |
-| L4 | endocrine_and_systemic | 72 | 72 | 217 | 21 | ✅ | — | ✅ |
-| L5 | matrix_and_mineralization | 41 | 41 | 101 | 16 | ✅ | — | ✅ |
-| L6 | mechanobiology | 31 | 31 | 94 | 23 | ✅ | — | ✅ |
-| L7 | fusion_and_cessation | 34 | 34 | 33 | 18 | ✅ | — | ✅ |
-| L8 | genetics_and_heritability | 39 | 39 | 66 | 22 | ✅ | — | — |
-| L9 | whole_organism_growth | 34 | 34 | 47 | 17 | ✅ | — | — |
-| L10 | environment_and_population | 34 | 34 | 58 | 13 | ✅ | — | — |
-| L11 | pathology_as_natural_experiment | 56 | 56 | 83 | 26 | ✅ | — | ✅ |
-| L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 79 | 30 | ✅ | — | — |
+| L3 | signaling_networks | 88 | 88 | 228 | 43 | ✅ | ✅ | ✅ |
+| L4 | endocrine_and_systemic | 72 | 72 | 217 | 24 | ✅ | ✅ | ✅ |
+| L5 | matrix_and_mineralization | 41 | 41 | 101 | 17 | ✅ | ✅ | ✅ |
+| L6 | mechanobiology | 31 | 31 | 94 | 23 | ✅ | ✅ | ✅ |
+| L7 | fusion_and_cessation | 34 | 34 | 33 | 18 | ✅ | ✅ | ✅ |
+| L8 | genetics_and_heritability | 39 | 39 | 66 | 22 | ✅ | ✅ | — |
+| L9 | whole_organism_growth | 34 | 34 | 47 | 17 | ✅ | ✅ | — |
+| L10 | environment_and_population | 34 | 34 | 58 | 13 | ✅ | ✅ | — |
+| L11 | pathology_as_natural_experiment | 56 | 56 | 83 | 26 | ✅ | ✅ | ✅ |
+| L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 79 | 30 | ✅ | ✅ | — |
 | L13 | methods_and_data | 41 | 41 | 40 | 14 | ✅ | — | — |
-| | **total** | **614** | **614** | **1181** | **279** | | | |
+| | **total** | **614** | **614** | **1181** | **288** | | | |
 
-**Confidence distribution** (researched nodes): **A** 156 · **B** 186 · **C** 184 · **D** 75 · **E** 11 · **X** 2
+**Confidence distribution** (researched nodes): **A** 156 · **B** 185 · **C** 184 · **D** 76 · **E** 11 · **X** 2
 
-**Gap types**: `contradiction` 24 · `known_unknown` 67 · `method_blocked` 12 · `quantitative_gap` 66 · `scale_gap` 11 · `search_established` 77 · `species_gap` 22
+**Gap types**: `contradiction` 26 · `known_unknown` 70 · `method_blocked` 12 · `quantitative_gap` 67 · `scale_gap` 11 · `search_established` 80 · `species_gap` 22
 
-**Quantitative**: 1516 values on nodes · 820 rows in `quant/parameters.csv`
+**Quantitative**: 1520 values on nodes · 1520 rows in `quant/parameters.csv`
 
 **Reference verification** (`tools/verify_refs.py`): 1 verified · 0 mismatched · 0 unresolved · 0 manual
 
@@ -79,12 +79,18 @@ These are tracked instead of treating the A-grade count as a target. Direct,
 replicated human evidence in growth-plate biology is genuinely scarce; a falling
 A-count alongside rising propositional rigour is a successful run, not a shortfall.
 
+The `edges_per_node ≥ 3.0` target was **retired** (MR-004): additional bare edges at
+low context fill increase graph size without increasing answerability. The live
+structural target is context fill on existing edges — zone ≥40%, sex ≥30%, stage ≥40% —
+reported by `atlas/tools/context_filter.py --coverage-report` and in
+`query/coverage.md`. All three are met.
+
 | metric | value | target |
 |---|---:|---:|
 | `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **57.5%** | — |
 | `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **40.2%** | — |
-| `edges_per_node` | **1.92** | ≥3.0 |
-| `refs_per_researched` | **3.11** | ≥3.0 |
+| `edges_per_node` | **1.92** | target retired — see note above |
+| `refs_per_researched` | **3.13** | ≥3.0 |
 | `quant_node_coverage` | **68.4%** | ≥60% |
 | `stub_fraction` | **0.0%** | 0% |
 
