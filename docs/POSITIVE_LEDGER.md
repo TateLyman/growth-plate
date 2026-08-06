@@ -116,29 +116,54 @@ demonstrated +25 cm version.
 
 ---
 
-## 6. So the question is not "can height be raised." It is this
+## 6. Why the pharmacological lever is not the genetic one — a switch, not a slope
 
-> **Why is the pharmacological duration lever ten times weaker than the genetic one?**
+**Revised 2026-08-06.** This section previously blamed the ten-fold gap on three addressable
+differences: timing, depth of blockade, and duration. **Two independent lines now say the gap is
+mostly something else.**
 
-Genetic: complete, lifelong, from conception → +25 cm.
-Pharmacological: partial, 2–3 years, started mid-puberty → +1.3 to +3.5 cm.
+**The common-variant test.** If duration were the bigger lever, graded genetic variation in it
+should move height more than graded variation in the velocity axis. I looked both up in the GIANT
+2022 European summary statistics (1.37 M SNPs, up to 1.6 M people), ±100 kb windows, lead common
+variant by minimum P:
 
-Three differences, all in principle addressable, none tested:
+| axis | genes | median lead-variant effect | max |
+|---|---|---|---|
+| **duration** (CYP19A1, ESR1, ESR2, HSD17B3, SHBG, CYP17A1, LIN28B, MKRN3, KISS1, KISS1R, TACR3) | 11 | **0.0222 SD/allele** | 0.0538 |
+| **velocity** (NPR2, NPPC, NPR3, FGFR3, MME, GHR, IGF1, IGF1R, IGFALS, STAT5B, PAPPA2, GH1) | 12 | **0.0276 SD/allele** | 0.0632 |
+| structure (ACAN, COL2A1, COL10A1, IHH) | 4 | 0.0313 | 0.1367 |
+| top known height loci (GDF5, HMGA2, ZBTB38, LCORL) | 4 | 0.0583 | 0.0684 |
+| negative controls | 4 | 0.0047 | 0.0138 |
 
-1. **Timing.** Letrozole and anastrozole trials start in already-pubertal boys. The genetic nulls
-   never had the signal at all. Nobody has run an aromatase inhibitor across the *whole* growing
-   period.
-2. **Depth of blockade.** Aromatase inhibitors are partial. The window in §5 is narrow enough
-   that partial blockade may land on the *wrong side* of the biphasic curve.
-3. **Duration.** 2–3 years against 20.
+**Difference between the two axes: 0.005 SD, permutation p = 0.53.** In graded variation they are
+indistinguishable. Both sit ~5× above negative controls and ~2× below the top height loci.
 
-And one that is not addressable, and must be stated because it bounds the whole class:
+**The size of the non-linearity.** The lead common *CYP19A1* variant moves height 0.054 SD per
+allele — both copies ≈ **0.8 cm**. Complete loss of the same gene moves it ≈ **+4 SD**. A ~70-fold
+gap between graded and complete perturbation of one gene.
 
-4. **The bone cost is real and it is severe.** BMD Z of −3.85 and −4.7 SD. Any duration
-   extension is paid for in mineralization. The genetic nulls are the proof of concept *and*
-   the warning.
+**So fusion behaves like a threshold, not a slope** — which is what the biphasic oestrogen
+dose-response in §5 already implied. Partial reduction moves along a flat part of the curve; only
+removal crosses. That reframes the therapeutic question from **when to start** to **how hard to
+block**.
 
----
+**And it predicts, correctly, what the trials show.** A threshold model says depth beats duration:
+the more potent inhibitor should win at a real endpoint. Letrozole vs anastrozole at near-final
+height: **+4.2 vs +0.8 cm, P = 0.013**. On a 3-year randomised comparison using *predicted* height:
+no difference, combined gain +1.3 cm, **and the year-1 gain did not persist**.
+
+It also predicts the CAH null in §7 — a partial block does not cross the threshold *no matter how
+early it starts*.
+
+### Caveats, because this is my own analysis
+
+Windowed lookup, no LD model, 11 genes against 12, median of maxima, permutation test with little
+power. It can exclude a *large* difference between the axes; it cannot establish their equality. And
+the 70-fold figure is a ratio of **phenotypes**, not of doses — rs1902586 is a tag whose effect on
+aromatase activity is unmeasured, so the curve's shape is inferred, not measured. Graded **D** and
+**E** in the atlas. A first version of this analysis selected lead SNPs by effect size, which picks
+rare high-variance noise — a negative control then out-scored every positive control — and was not
+reported.
 
 ## 7. Combining them — tried five times, and the two duration classes behave differently
 

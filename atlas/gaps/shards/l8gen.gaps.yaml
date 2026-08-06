@@ -1,28 +1,26 @@
 gaps:
 - gap_id: g_l8gen_001
-  question: Do the pathways enriched in common-variant height signal and the pathways enriched in monogenic
-    short stature rank the same gene classes, and specifically why is the GH-IGF endocrine axis absent
-    from every published height GWAS pathway-enrichment list despite producing the largest monogenic stature
-    effects in medicine?
+  question: Do the pathways enriched in common-variant height signal and the pathways enriched in monogenic short
+    stature rank the same gene classes, and specifically why is the GH-IGF endocrine axis absent from every published
+    height GWAS pathway-enrichment list despite producing the largest monogenic stature effects in medicine?
   type: search_established
   layer: L8
-  why_it_matters: 'If the two rankings diverge systematically, then the pathways an atlas prioritises
-    depend on which evidence tier it reads, and a therapeutic target chosen from GWAS enrichment is a
-    different target from one chosen from Mendelian disease. It also bears directly on the omnigenic model:
-    a locus can be biologically central and contribute almost no common-variant variance.'
-  what_is_known: Weedon 2008 (20 loci) reports Hedgehog (IHH, HHIP, PTCH1), extracellular matrix (EFEMP1,
-    ADAMTSL3, ACAN) and cell-cycle genes; Lango Allen 2010 (180 loci) reports enrichment for genes underlying
-    skeletal growth defects; Wood 2014 (697 variants, n=253,288) reports FGF signalling, WNT/beta-catenin,
-    chondroitin-sulfate genes, mTOR, osteoglycin and hyaluronic acid binding. Marouli 2017 reports proteoglycan
-    and glycosaminoglycan synthesis at the rare-coding tier and notes overlap with monogenic growth-disorder
-    genes. The 2023 nosology lists 771 disorders across 552 genes, and ClinGen names COL1A1, COL1A2, COL2A1,
-    FGFR3, SLC26A2, TRPV4, COMP, ALPL and SOX9 as the genes behind the commonest dysplasias. The GH-IGF
-    axis (GHR -4 to -10 SDS, STAT5B -7.8 SDS, IGFALS, PAPPA2, IGF1, IGF1R) supplies the largest monogenic
-    effects.
-  what_is_missing: No publication performs the comparison directly. No height GWAS pathway-enrichment
-    analysis names the somatotropic axis, but no paper states that as a result, tests whether the absence
-    is significant, or quantifies the rank correlation between a GWAS-derived pathway ranking and a Mendelian-burden-derived
-    one. The buffering explanation offered on common_vs_rare_pathway_divergence is untested.
+  why_it_matters: 'If the two rankings diverge systematically, then the pathways an atlas prioritises depend on
+    which evidence tier it reads, and a therapeutic target chosen from GWAS enrichment is a different target from
+    one chosen from Mendelian disease. It also bears directly on the omnigenic model: a locus can be biologically
+    central and contribute almost no common-variant variance.'
+  what_is_known: Weedon 2008 (20 loci) reports Hedgehog (IHH, HHIP, PTCH1), extracellular matrix (EFEMP1, ADAMTSL3,
+    ACAN) and cell-cycle genes; Lango Allen 2010 (180 loci) reports enrichment for genes underlying skeletal growth
+    defects; Wood 2014 (697 variants, n=253,288) reports FGF signalling, WNT/beta-catenin, chondroitin-sulfate genes,
+    mTOR, osteoglycin and hyaluronic acid binding. Marouli 2017 reports proteoglycan and glycosaminoglycan synthesis
+    at the rare-coding tier and notes overlap with monogenic growth-disorder genes. The 2023 nosology lists 771
+    disorders across 552 genes, and ClinGen names COL1A1, COL1A2, COL2A1, FGFR3, SLC26A2, TRPV4, COMP, ALPL and
+    SOX9 as the genes behind the commonest dysplasias. The GH-IGF axis (GHR -4 to -10 SDS, STAT5B -7.8 SDS, IGFALS,
+    PAPPA2, IGF1, IGF1R) supplies the largest monogenic effects.
+  what_is_missing: No publication performs the comparison directly. No height GWAS pathway-enrichment analysis names
+    the somatotropic axis, but no paper states that as a result, tests whether the absence is significant, or quantifies
+    the rank correlation between a GWAS-derived pathway ranking and a Mendelian-burden-derived one. The buffering
+    explanation offered on common_vs_rare_pathway_divergence is untested.
   nearest_evidence:
   - wood2014
   - weedon2008
@@ -31,287 +29,272 @@ gaps:
   - unger2023
   - webb2026
   - laron2015
-  discriminating_experiment: 'Compute two rankings over a fixed pathway ontology (e.g. Reactome plus a
-    curated growth-plate module set). Ranking A: stratified LD-score regression or MAGMA gene-set enrichment
-    on Yengo 2022 height summary statistics. Ranking B: per-gene-set count of ClinGen-definitive short-stature
-    and skeletal-dysplasia gene-disease relationships from the 2023 nosology, weighted by the published
-    mean height SDS of each disorder. Compare by Spearman correlation with a permutation null that preserves
-    gene-set size. Under a shared-architecture model the two rankings correlate strongly (rho > 0.6) and
-    the GH-IGF axis ranks highly in both. Under the buffering hypothesis the correlation is weak or absent
-    (rho < 0.3) and the residual is structured: endocrine and feedback-regulated sets rank high in B and
-    low in A, while paracrine and matrix sets rank high in both. A direct test of buffering itself: check
-    whether cis-eQTL effect sizes on GH-IGF axis genes are systematically smaller, or their expression
+  discriminating_experiment: 'Compute two rankings over a fixed pathway ontology (e.g. Reactome plus a curated growth-plate
+    module set). Ranking A: stratified LD-score regression or MAGMA gene-set enrichment on Yengo 2022 height summary
+    statistics. Ranking B: per-gene-set count of ClinGen-definitive short-stature and skeletal-dysplasia gene-disease
+    relationships from the 2023 nosology, weighted by the published mean height SDS of each disorder. Compare by
+    Spearman correlation with a permutation null that preserves gene-set size. Under a shared-architecture model
+    the two rankings correlate strongly (rho > 0.6) and the GH-IGF axis ranks highly in both. Under the buffering
+    hypothesis the correlation is weak or absent (rho < 0.3) and the residual is structured: endocrine and feedback-regulated
+    sets rank high in B and low in A, while paracrine and matrix sets rank high in both. A direct test of buffering
+    itself: check whether cis-eQTL effect sizes on GH-IGF axis genes are systematically smaller, or their expression
     variance narrower, than for matched paracrine growth-plate genes in the same tissue.'
   tractability: 4
   search_log_ref: g_l8gen_001
 - gap_id: g_l8gen_002
   question: What is the adult height deficit in standard deviation scores of heterozygous NPPC loss-of-function
-    carriers, and does it differ from the deficit of heterozygous NPR2 loss-of-function carriers in the
-    same population?
+    carriers, and does it differ from the deficit of heterozygous NPR2 loss-of-function carriers in the same population?
   type: quantitative_gap
   layer: L8
-  why_it_matters: CNP and NPR2 are ligand and receptor on one axis and both are drug targets - vosoritide
-    is a CNP analogue and the NPR2 agonist class is in development. If ligand-side and receptor-side haploinsufficiency
-    give different stature deficits, the axis is not simply linear in signal and the dose-response for
-    a CNP analogue cannot be read off the NPR2 genotype data.
-  what_is_known: Heterozygous NPR2 carriers measure -1.8 +/- 1.1 height z against -0.4 +/- 0.8 in non-carriers
-    within one family (Olney 2006, 16 vs 23). Hisado-Oliva 2018 identified two heterozygous NPPC mutations
-    in the conserved CNP ring from a screen of 668 patients plus 29 families, both reducing cGMP synthesis
-    and cosegregating with short stature and small hands. Gain-of-function on both sides raises stature
-    (NPPC overexpression, Bocciardi 2007 and Moncla 2007; NPR2 activating alleles, Miura 2012 and Hannema
-    2013).
-  what_is_missing: No height SDS is reported for the NPPC heterozygotes, and the two carrier groups have
-    never been measured in the same study or against a common reference. The comparison that would establish
-    whether the axis is ligand-limited or receptor-limited in humans does not exist.
+  why_it_matters: CNP and NPR2 are ligand and receptor on one axis and both are drug targets - vosoritide is a CNP
+    analogue and the NPR2 agonist class is in development. If ligand-side and receptor-side haploinsufficiency give
+    different stature deficits, the axis is not simply linear in signal and the dose-response for a CNP analogue
+    cannot be read off the NPR2 genotype data.
+  what_is_known: Heterozygous NPR2 carriers measure -1.8 +/- 1.1 height z against -0.4 +/- 0.8 in non-carriers within
+    one family (Olney 2006, 16 vs 23). Hisado-Oliva 2018 identified two heterozygous NPPC mutations in the conserved
+    CNP ring from a screen of 668 patients plus 29 families, both reducing cGMP synthesis and cosegregating with
+    short stature and small hands. Gain-of-function on both sides raises stature (NPPC overexpression, Bocciardi
+    2007 and Moncla 2007; NPR2 activating alleles, Miura 2012 and Hannema 2013).
+  what_is_missing: No height SDS is reported for the NPPC heterozygotes, and the two carrier groups have never been
+    measured in the same study or against a common reference. The comparison that would establish whether the axis
+    is ligand-limited or receptor-limited in humans does not exist.
   nearest_evidence:
   - hisadooliva2018
   - olney2006
   - vasques2013
   - bocciardi2007
-  discriminating_experiment: 'Assemble NPPC and NPR2 heterozygous carriers from the existing short-stature
-    genetic registries, measure standing height against a single national reference, and compare mean
-    height SDS with family-based controls in both groups, adjusting for age, sex and midparental height.
-    Under a ligand-limited model NPPC heterozygotes are as short as or shorter than NPR2 heterozygotes;
-    under a receptor-limited model with ligand reserve, NPPC heterozygotes are significantly less affected.
-    Pair with plasma NT-proCNP measurement in both groups: if NPPC heterozygotes have halved NT-proCNP
-    but a milder stature deficit than NPR2 heterozygotes, the ligand is in excess and a CNP analogue should
-    be dosed against receptor occupancy, not against endogenous CNP.'
+  discriminating_experiment: 'Assemble NPPC and NPR2 heterozygous carriers from the existing short-stature genetic
+    registries, measure standing height against a single national reference, and compare mean height SDS with family-based
+    controls in both groups, adjusting for age, sex and midparental height. Under a ligand-limited model NPPC heterozygotes
+    are as short as or shorter than NPR2 heterozygotes; under a receptor-limited model with ligand reserve, NPPC
+    heterozygotes are significantly less affected. Pair with plasma NT-proCNP measurement in both groups: if NPPC
+    heterozygotes have halved NT-proCNP but a milder stature deficit than NPR2 heterozygotes, the ligand is in excess
+    and a CNP analogue should be dosed against receptor occupancy, not against endogenous CNP.'
   tractability: 3
 - gap_id: g_l8gen_003
   question: Does complete absence of PTH1R function in human chondrocytes accelerate hypertrophic differentiation,
-    or does the advanced endochondral maturation of Blomstrand chondrodysplasia arise from a separate
-    consequence of losing PTHrP signalling?
+    or does the advanced endochondral maturation of Blomstrand chondrodysplasia arise from a separate consequence
+    of losing PTHrP signalling?
   type: known_unknown
   layer: L8
-  why_it_matters: The PTHrP-IHH negative feedback loop is the central pacing circuit of the growth plate
-    in this atlas, and the human null allele is the only direct test of what happens when the receptor
-    arm is removed entirely. If the human null phenotype is driven by something other than accelerated
-    hypertrophy, the loop as drawn is wrong for humans.
-  what_is_known: 'Jobert 1998 characterised one Blomstrand patient: a maternal splice-altering PTH1R allele
-    producing a well-expressed receptor that binds neither PTH nor PTHrP and gives no cAMP or inositol
-    phosphate response, with the paternal allele unexpressed, so chondrocytes carried functionally zero
-    receptor. The phenotype is lethal with advanced endochondral bone maturation. The opposite allele,
-    constitutively active H223R (Schipani 1995), gives Jansen chondrodysplasia with delayed hypertrophy.'
-  what_is_missing: A single patient, in whom nullizygosity arose by allele-specific non-expression rather
-    than biallelic mutation, so the genotype is not reproducible. No human Blomstrand growth plate has
-    been examined with zone-resolved markers of hypertrophic commitment (COL10A1, IHH, PTHrP) to establish
-    that the accelerated maturation is chondrocyte-autonomous rather than secondary to the severe calcium
-    and skeletal phenotype.
+  why_it_matters: The PTHrP-IHH negative feedback loop is the central pacing circuit of the growth plate in this
+    atlas, and the human null allele is the only direct test of what happens when the receptor arm is removed entirely.
+    If the human null phenotype is driven by something other than accelerated hypertrophy, the loop as drawn is
+    wrong for humans.
+  what_is_known: 'Jobert 1998 characterised one Blomstrand patient: a maternal splice-altering PTH1R allele producing
+    a well-expressed receptor that binds neither PTH nor PTHrP and gives no cAMP or inositol phosphate response,
+    with the paternal allele unexpressed, so chondrocytes carried functionally zero receptor. The phenotype is lethal
+    with advanced endochondral bone maturation. The opposite allele, constitutively active H223R (Schipani 1995),
+    gives Jansen chondrodysplasia with delayed hypertrophy.'
+  what_is_missing: A single patient, in whom nullizygosity arose by allele-specific non-expression rather than biallelic
+    mutation, so the genotype is not reproducible. No human Blomstrand growth plate has been examined with zone-resolved
+    markers of hypertrophic commitment (COL10A1, IHH, PTHrP) to establish that the accelerated maturation is chondrocyte-autonomous
+    rather than secondary to the severe calcium and skeletal phenotype.
   nearest_evidence:
   - jobert1998
   - schipani1995
-  discriminating_experiment: Zonal immunohistochemistry and in situ hybridisation on archived Blomstrand
-    chondrodysplasia autopsy growth plate for PTHrP, IHH, COL10A1 and PPR, benchmarked against gestational-age-matched
-    control physes, complemented by generating PTH1R-null human iPSC-derived chondrogenic pellets and
-    measuring the fraction of cells reaching COL10A1 positivity per unit time. Under a chondrocyte-autonomous
-    pacing model the null plate shows a compressed proliferative zone with COL10A1 expression displaced
-    toward the resting zone, and null iPSC pellets hypertrophy earlier than isogenic controls. Under a
-    secondary model the plate architecture is disorganised without a proximal shift of the hypertrophic
-    marker boundary, and the iPSC pellets show normal hypertrophy timing.
+  discriminating_experiment: Zonal immunohistochemistry and in situ hybridisation on archived Blomstrand chondrodysplasia
+    autopsy growth plate for PTHrP, IHH, COL10A1 and PPR, benchmarked against gestational-age-matched control physes,
+    complemented by generating PTH1R-null human iPSC-derived chondrogenic pellets and measuring the fraction of
+    cells reaching COL10A1 positivity per unit time. Under a chondrocyte-autonomous pacing model the null plate
+    shows a compressed proliferative zone with COL10A1 expression displaced toward the resting zone, and null iPSC
+    pellets hypertrophy earlier than isogenic controls. Under a secondary model the plate architecture is disorganised
+    without a proximal shift of the hypertrophic marker boundary, and the iPSC pellets show normal hypertrophy timing.
   tractability: 3
 - gap_id: g_l8gen_004
   question: Is the SHOX protein expressed in human growth plate chondrocytes, and in which zone?
   type: search_established
   layer: L8
-  why_it_matters: SHOX gives the cleanest 0/1/2-copy human stature dose series in this atlas and has no
-    rodent orthologue, so if its site of action in the human physis were established it would be one of
-    the very few growth-plate mechanisms with no translation risk at all. At present the atlas can state
-    the dose-response but cannot attach it to a zone.
+  why_it_matters: SHOX gives the cleanest 0/1/2-copy human stature dose series in this atlas and has no rodent orthologue,
+    so if its site of action in the human physis were established it would be one of the very few growth-plate mechanisms
+    with no translation risk at all. At present the atlas can state the dose-response but cannot attach it to a
+    zone.
   what_is_known: SHOX haploinsufficiency gives mesomelic short stature with median height SDS -2.4, nullizygosity
-    gives -6.3, and the affected segments are the forearm and lower leg (Rao 1997, Shears 1998, Dogan
-    Ari 2026). SHOX is a homeodomain transcription factor in PAR1 that escapes X-inactivation. Indirect
-    human evidence exists that SHOX expression and methylation differ between sexes in knee cartilage
-    tissue and cultured chondrocytes, which has been used to argue that a persistent dosage difference
-    underlies part of the sex difference in adult height.
-  what_is_missing: No primary study localising SHOX protein or transcript by zone within human growth
-    plate cartilage was reached in this sweep. Because there is no mouse orthologue there is also no murine
-    surrogate to fall back on, so the zonal question is entirely open.
+    gives -6.3, and the affected segments are the forearm and lower leg (Rao 1997, Shears 1998, Dogan Ari 2026).
+    SHOX is a homeodomain transcription factor in PAR1 that escapes X-inactivation. Indirect human evidence exists
+    that SHOX expression and methylation differ between sexes in knee cartilage tissue and cultured chondrocytes,
+    which has been used to argue that a persistent dosage difference underlies part of the sex difference in adult
+    height.
+  what_is_missing: No primary study localising SHOX protein or transcript by zone within human growth plate cartilage
+    was reached in this sweep. Because there is no mouse orthologue there is also no murine surrogate to fall back
+    on, so the zonal question is entirely open.
   nearest_evidence:
   - rao1997
   - shears1998
   - doan2026
-  discriminating_experiment: 'Immunohistochemistry and RNAscope for SHOX on human growth plate from the
-    existing paediatric physeal biobank, at three anatomical sites of differing mesomelic contribution
-    (distal radius, proximal tibia, proximal humerus), scored by zone with cell counts. Under a resting/proliferative-zone
-    model SHOX signal is highest in RZ and PZ and falls before hypertrophy; under a prehypertrophic-switch
-    model the signal peaks in PHZ. Site comparison discriminates the mesomelic specificity: if SHOX drives
-    zeugopod growth specifically, distal radius plates show higher SHOX per chondrocyte than proximal
-    humerus plates from the same donor.'
+  discriminating_experiment: 'Immunohistochemistry and RNAscope for SHOX on human growth plate from the existing
+    paediatric physeal biobank, at three anatomical sites of differing mesomelic contribution (distal radius, proximal
+    tibia, proximal humerus), scored by zone with cell counts. Under a resting/proliferative-zone model SHOX signal
+    is highest in RZ and PZ and falls before hypertrophy; under a prehypertrophic-switch model the signal peaks
+    in PHZ. Site comparison discriminates the mesomelic specificity: if SHOX drives zeugopod growth specifically,
+    distal radius plates show higher SHOX per chondrocyte than proximal humerus plates from the same donor.'
   tractability: 2
   search_log_ref: g_l8gen_004
 - gap_id: g_l8gen_005
-  question: What is the mean adult height, in centimetres or SDS, of COL2A1 mutation carriers stratified
-    by mutation class (triple-helical glycine substitution versus whole-gene deletion or truncating allele)?
+  question: What is the mean adult height, in centimetres or SDS, of COL2A1 mutation carriers stratified by mutation
+    class (triple-helical glycine substitution versus whole-gene deletion or truncating allele)?
   type: quantitative_gap
   layer: L8
   why_it_matters: COL10A1 shows a measured 1.6 SDS stature premium for dominant-negative over haploinsufficient
-    alleles in the same cohort. If COL2A1 shows the same premium the dominant-negative rule generalises
-    across fibrillar and non-fibrillar collagens; if it does not, the rule is locus-specific and the atlas
-    must not apply it by analogy. It also determines whether whole-gene-deletion patients should be counselled
-    and treated as a distinct group.
-  what_is_known: Zhan 2025 reports six triple-helical glycine substitutions plus one intronic variant
-    across seven unrelated SEDC families, all with disproportionate short stature; two treated children
-    gained +0.76 and +0.27 height SDS on GH over 3.5 and 3 years. The severity gradient across type II
-    collagenopathies (achondrogenesis II, SEDC, Kniest, Stickler) is widely described as tracking substitution
-    position and steric bulk, and whole-gene deletions are associated with the mild Stickler end. ClinGen
-    classifies COL2A1 as definitively associated with skeletal disease.
-  what_is_missing: No published series reports mean adult height by COL2A1 mutation class. Reported cohorts
-    are small, heterogeneous in diagnosis label, and give childhood heights or treatment responses rather
-    than attained adult stature, and none contrasts glycine-substitution against null carriers within
-    one cohort.
+    alleles in the same cohort. If COL2A1 shows the same premium the dominant-negative rule generalises across fibrillar
+    and non-fibrillar collagens; if it does not, the rule is locus-specific and the atlas must not apply it by analogy.
+    It also determines whether whole-gene-deletion patients should be counselled and treated as a distinct group.
+  what_is_known: Zhan 2025 reports six triple-helical glycine substitutions plus one intronic variant across seven
+    unrelated SEDC families, all with disproportionate short stature; two treated children gained +0.76 and +0.27
+    height SDS on GH over 3.5 and 3 years. The severity gradient across type II collagenopathies (achondrogenesis
+    II, SEDC, Kniest, Stickler) is widely described as tracking substitution position and steric bulk, and whole-gene
+    deletions are associated with the mild Stickler end. ClinGen classifies COL2A1 as definitively associated with
+    skeletal disease.
+  what_is_missing: No published series reports mean adult height by COL2A1 mutation class. Reported cohorts are
+    small, heterogeneous in diagnosis label, and give childhood heights or treatment responses rather than attained
+    adult stature, and none contrasts glycine-substitution against null carriers within one cohort.
   nearest_evidence:
   - zhan2025
   - webb2026
   - meng2025
-  discriminating_experiment: Retrospective multicentre collection of genotyped COL2A1 carriers who have
-    reached adult height, classified as (a) triple-helical glycine substitution, (b) other missense, (c)
-    truncating or whole-gene deletion, with adult height expressed as SDS against a single national reference
-    and analysed by linear model adjusting for sex and midparental height. Under a generalised dominant-negative
-    rule, class (a) is at least 1 SDS shorter than class (c), mirroring COL10A1. Under a locus-specific
-    rule the classes do not separate, or separate in the opposite direction because null alleles of a
-    homotrimeric structural collagen halve the matrix rather than poisoning it.
+  discriminating_experiment: Retrospective multicentre collection of genotyped COL2A1 carriers who have reached
+    adult height, classified as (a) triple-helical glycine substitution, (b) other missense, (c) truncating or whole-gene
+    deletion, with adult height expressed as SDS against a single national reference and analysed by linear model
+    adjusting for sex and midparental height. Under a generalised dominant-negative rule, class (a) is at least
+    1 SDS shorter than class (c), mirroring COL10A1. Under a locus-specific rule the classes do not separate, or
+    separate in the opposite direction because null alleles of a homotrimeric structural collagen halve the matrix
+    rather than poisoning it.
   tractability: 4
   search_log_ref: g_l8gen_005
 - gap_id: g_l8gen_006
-  question: What is the mean adult height of genotype-confirmed pseudoachondroplasia patients, and does
-    it differ by COMP domain or by variant class?
+  question: What is the mean adult height of genotype-confirmed pseudoachondroplasia patients, and does it differ
+    by COMP domain or by variant class?
   type: quantitative_gap
   layer: L8
-  why_it_matters: Pseudoachondroplasia is one of the commonest non-FGFR3 skeletal dysplasias and is a
-    candidate indication for growth-promoting therapy, but the atlas cannot state its stature effect in
-    the same units used for ACAN, NPR2, SHOX and COL10A1. Without an adult-height baseline, no growth-promoting
-    intervention in PSACH has a meaningful effect-size target.
-  what_is_known: Ni 2026 aggregated 830 genetically diagnosed PSACH/EDM1 patients (471 probands, 224 COMP
-    variants) and reports that 80.8% of variants are missense, 87.7% of probands carry one in the type-3
-    calcium-binding repeat, 38.9% in exon 13, and that PSACH patients are significantly shorter and earlier-onset
-    than EDM1 patients (both P < 0.001). Briggs 1995 established the allelism. The mechanism is misfolding
-    and endoplasmic reticulum retention rather than dosage.
-  what_is_missing: The 830-case aggregation reports stature only as a between-group significance test,
-    not as a mean adult height in centimetres or SDS, and does not stratify height by COMP domain. Because
-    the PSACH/EDM1 label is itself partly assigned on the basis of stature, the between-group comparison
-    is also circular for this purpose.
+  why_it_matters: Pseudoachondroplasia is one of the commonest non-FGFR3 skeletal dysplasias and is a candidate
+    indication for growth-promoting therapy, but the atlas cannot state its stature effect in the same units used
+    for ACAN, NPR2, SHOX and COL10A1. Without an adult-height baseline, no growth-promoting intervention in PSACH
+    has a meaningful effect-size target.
+  what_is_known: Ni 2026 aggregated 830 genetically diagnosed PSACH/EDM1 patients (471 probands, 224 COMP variants)
+    and reports that 80.8% of variants are missense, 87.7% of probands carry one in the type-3 calcium-binding repeat,
+    38.9% in exon 13, and that PSACH patients are significantly shorter and earlier-onset than EDM1 patients (both
+    P < 0.001). Briggs 1995 established the allelism. The mechanism is misfolding and endoplasmic reticulum retention
+    rather than dosage.
+  what_is_missing: The 830-case aggregation reports stature only as a between-group significance test, not as a
+    mean adult height in centimetres or SDS, and does not stratify height by COMP domain. Because the PSACH/EDM1
+    label is itself partly assigned on the basis of stature, the between-group comparison is also circular for this
+    purpose.
   nearest_evidence:
   - ni2026
   - briggs1995
   - webb2026
   discriminating_experiment: Prospective or registry-based measurement of attained adult height in genotype-confirmed
-    COMP carriers, reported as mean and SD in centimetres and SDS by sex, stratified by (a) type-3 repeat
-    versus C-terminal domain and (b) missense versus in-frame deletion, with the diagnostic label recorded
-    but not used as a stratifier. Under a domain-graded misfolding model, type-3 repeat variants give
-    a lower mean adult height than C-terminal variants by a measurable margin. Under a label-driven artefact
-    model the domain strata do not separate once the PSACH/EDM1 label is removed from the analysis.
+    COMP carriers, reported as mean and SD in centimetres and SDS by sex, stratified by (a) type-3 repeat versus
+    C-terminal domain and (b) missense versus in-frame deletion, with the diagnostic label recorded but not used
+    as a stratifier. Under a domain-graded misfolding model, type-3 repeat variants give a lower mean adult height
+    than C-terminal variants by a measurable margin. Under a label-driven artefact model the domain strata do not
+    separate once the PSACH/EDM1 label is removed from the analysis.
   tractability: 4
 - gap_id: g_l8gen_007
-  question: What is the mean height SDS of heterozygous IGF1R loss-of-function carriers, and how much
-    of the deficit is prenatal versus postnatal?
+  question: What is the mean height SDS of heterozygous IGF1R loss-of-function carriers, and how much of the deficit
+    is prenatal versus postnatal?
   type: quantitative_gap
   layer: L8
-  why_it_matters: IGF1R heterozygotes are a recognised subgroup of small-for-gestational-age children
-    who fail to catch up and respond poorly to growth hormone, and they are exactly the group for whom
-    a decision to treat or not to treat carries the most cost. The atlas can describe the phenotype qualitatively
-    but cannot state its size, unlike GHR, STAT5B, IGFALS and PAPPA2 in the same axis.
-  what_is_known: Abuzzahab 2003 identified a compound heterozygote from 42 patients with unexplained IUGR
-    plus short stature and 50 with short stature and elevated IGF-1, with reduced IGF-I binding in patient
-    fibroblasts. Heterozygous nonsense and deletion alleles are now recurrently reported in severe short
-    stature with poor rhGH response and normal-to-high IGF-1. Mendelian randomization gives 0.09 SD height
-    per SD of circulating IGF-1, the continuous counterpart of the axis.
-  what_is_missing: No genotype-defined IGF1R cohort with mean birth length SDS and mean adult height SDS
-    was reached in this sweep. Case reports give individual values (-3.99 SDS at 9.6 years in one recent
-    case) but there is no pooled estimate and no partition of the deficit between the prenatal and postnatal
-    epochs.
+  why_it_matters: IGF1R heterozygotes are a recognised subgroup of small-for-gestational-age children who fail to
+    catch up and respond poorly to growth hormone, and they are exactly the group for whom a decision to treat or
+    not to treat carries the most cost. The atlas can describe the phenotype qualitatively but cannot state its
+    size, unlike GHR, STAT5B, IGFALS and PAPPA2 in the same axis.
+  what_is_known: Abuzzahab 2003 identified a compound heterozygote from 42 patients with unexplained IUGR plus short
+    stature and 50 with short stature and elevated IGF-1, with reduced IGF-I binding in patient fibroblasts. Heterozygous
+    nonsense and deletion alleles are now recurrently reported in severe short stature with poor rhGH response and
+    normal-to-high IGF-1. Mendelian randomization gives 0.09 SD height per SD of circulating IGF-1, the continuous
+    counterpart of the axis.
+  what_is_missing: No genotype-defined IGF1R cohort with mean birth length SDS and mean adult height SDS was reached
+    in this sweep. Case reports give individual values (-3.99 SDS at 9.6 years in one recent case) but there is
+    no pooled estimate and no partition of the deficit between the prenatal and postnatal epochs.
   nearest_evidence:
   - abuzzahab2003
   - de2026
   - woods1996
-  discriminating_experiment: Registry-based pooling of IGF1R variant carriers with birth length SDS, height
-    SDS at 2 years, and adult height SDS, restricted to variants with demonstrated functional impairment.
-    Partition the deficit by comparing birth length SDS to adult height SDS within carriers. Under a prenatal-dominant
-    model most of the deficit is present at birth and the SDS trajectory is flat thereafter; under a continuing-postnatal-requirement
-    model the SDS declines further between birth and adulthood, as it does for ACAN. The comparison with
-    GHR carriers, whose birth size is near-normal, isolates the GH-independent component of IGF-1 receptor
-    signalling.
+  discriminating_experiment: Registry-based pooling of IGF1R variant carriers with birth length SDS, height SDS
+    at 2 years, and adult height SDS, restricted to variants with demonstrated functional impairment. Partition
+    the deficit by comparing birth length SDS to adult height SDS within carriers. Under a prenatal-dominant model
+    most of the deficit is present at birth and the SDS trajectory is flat thereafter; under a continuing-postnatal-requirement
+    model the SDS declines further between birth and adulthood, as it does for ACAN. The comparison with GHR carriers,
+    whose birth size is near-normal, isolates the GH-independent component of IGF-1 receptor signalling.
   tractability: 4
 - gap_id: g_l8gen_008
-  question: What is the mean height SDS of individuals carrying an intragenic HDAC4 loss-of-function variant,
-    as distinct from individuals carrying a whole 2q37 deletion?
+  question: What is the mean height SDS of individuals carrying an intragenic HDAC4 loss-of-function variant, as
+    distinct from individuals carrying a whole 2q37 deletion?
   type: quantitative_gap
   layer: L8
-  why_it_matters: HDAC4 is the only chromatin-level repressor of chondrocyte hypertrophy with a defined
-    human haploinsufficiency phenotype, so it is the human test of whether restraining hypertrophy is
-    quantitatively important for stature. But whole-2q37 deletions remove 20 or more genes, so any height
-    figure taken from deletion carriers cannot be attributed to HDAC4.
-  what_is_known: 'Williams 2010 narrowed the 2q37.3 critical region to HDAC4 using six overlapping deletions
-    and then found de novo intragenic HDAC4 lesions (a splice-disrupting deletion and a frameshift insertion)
-    in deletion-negative patients with the same phenotype. Le 2019 quantified penetrance across 103 individuals
-    with 2q37 deletion: brachydactyly type E 48%, overweight/obesity 34%, craniofacial dysmorphism 86%,
-    cognitive-behavioural issues 79%. Short stature is listed among the features but not quantified separately.'
-  what_is_missing: No mean height SDS is published for the intragenic-HDAC4 subgroup, and the published
-    2q37 series do not separate stature by whether HDAC4 is deleted alone or with neighbours. Reports
-    of intragenic HDAC4 variants remain individual families.
+  why_it_matters: HDAC4 is the only chromatin-level repressor of chondrocyte hypertrophy with a defined human haploinsufficiency
+    phenotype, so it is the human test of whether restraining hypertrophy is quantitatively important for stature.
+    But whole-2q37 deletions remove 20 or more genes, so any height figure taken from deletion carriers cannot be
+    attributed to HDAC4.
+  what_is_known: 'Williams 2010 narrowed the 2q37.3 critical region to HDAC4 using six overlapping deletions and
+    then found de novo intragenic HDAC4 lesions (a splice-disrupting deletion and a frameshift insertion) in deletion-negative
+    patients with the same phenotype. Le 2019 quantified penetrance across 103 individuals with 2q37 deletion: brachydactyly
+    type E 48%, overweight/obesity 34%, craniofacial dysmorphism 86%, cognitive-behavioural issues 79%. Short stature
+    is listed among the features but not quantified separately.'
+  what_is_missing: No mean height SDS is published for the intragenic-HDAC4 subgroup, and the published 2q37 series
+    do not separate stature by whether HDAC4 is deleted alone or with neighbours. Reports of intragenic HDAC4 variants
+    remain individual families.
   nearest_evidence:
   - williams2010
   - le2019
-  discriminating_experiment: Assemble intragenic HDAC4 variant carriers from clinical exome laboratories
-    and compare mean height SDS with (a) HDAC4-inclusive whole-2q37 deletion carriers and (b) 2q37.3 deletion
-    carriers distal to HDAC4, all measured against one reference and adjusted for midparental height.
-    Under an HDAC4-attributable model the intragenic group is as short as the HDAC4-inclusive deletion
-    group and the distal-deletion group is unaffected. Under a contiguous-gene model the intragenic group
-    is significantly taller than the whole-deletion group, and HDAC4 contributes the brachydactyly but
-    not the stature deficit.
+  discriminating_experiment: Assemble intragenic HDAC4 variant carriers from clinical exome laboratories and compare
+    mean height SDS with (a) HDAC4-inclusive whole-2q37 deletion carriers and (b) 2q37.3 deletion carriers distal
+    to HDAC4, all measured against one reference and adjusted for midparental height. Under an HDAC4-attributable
+    model the intragenic group is as short as the HDAC4-inclusive deletion group and the distal-deletion group is
+    unaffected. Under a contiguous-gene model the intragenic group is significantly taller than the whole-deletion
+    group, and HDAC4 contributes the brachydactyly but not the stature deficit.
   tractability: 3
 - gap_id: g_l8gen_009
-  question: Is ZBTB38 expressed in human growth plate chondrocytes, and what is its per-allele effect
-    on adult height in centimetres in a general population?
+  question: Is ZBTB38 expressed in human growth plate chondrocytes, and what is its per-allele effect on adult height
+    in centimetres in a general population?
   type: known_unknown
   layer: L8
-  why_it_matters: ZBTB38 has been a genome-wide-significant height locus since 2008 and is a top-ranked
-    height gene by every subsequent GWAS, yet it has no established growth-plate function. It is the canonical
-    example of a height locus whose route to the plate is unknown, and it is therefore the natural test
-    case for the omnigenic prediction that most height variance acts through peripheral rather than core
-    genes.
-  what_is_known: Weedon 2008 identified ZBTB38 among 20 height loci whose combined effect is ~3% of height
-    variance and ~5 cm between allele-count extremes. Parsons 2022 genotyped rs6764769 and rs724016 in
-    261 idiopathic-short-stature patients, found rs724016 GG associated with lower birth length (P=0.01)
-    and smaller first-year height SDS gain on rhGH in 93 treated patients (P=0.02), showed ZBTB38 expression
-    rises with age in 87 normal children, and found siRNA knockdown increases proliferation in SiHA cells
-    without altering MCM10. The gene encodes a methyl-CpG-binding zinc finger transcriptional regulator
-    and its expression associates with epigenetic age across five clocks in adolescent blood.
-  what_is_missing: No per-allele centimetre effect for a ZBTB38 variant in a general population has been
-    extracted separately from the joint 20-locus figure, and no study reports ZBTB38 expression or perturbation
-    in chondrocytes of any species. The only functional work is knockdown in a cervical carcinoma line.
+  why_it_matters: ZBTB38 has been a genome-wide-significant height locus since 2008 and is a top-ranked height gene
+    by every subsequent GWAS, yet it has no established growth-plate function. It is the canonical example of a
+    height locus whose route to the plate is unknown, and it is therefore the natural test case for the omnigenic
+    prediction that most height variance acts through peripheral rather than core genes.
+  what_is_known: Weedon 2008 identified ZBTB38 among 20 height loci whose combined effect is ~3% of height variance
+    and ~5 cm between allele-count extremes. Parsons 2022 genotyped rs6764769 and rs724016 in 261 idiopathic-short-stature
+    patients, found rs724016 GG associated with lower birth length (P=0.01) and smaller first-year height SDS gain
+    on rhGH in 93 treated patients (P=0.02), showed ZBTB38 expression rises with age in 87 normal children, and
+    found siRNA knockdown increases proliferation in SiHA cells without altering MCM10. The gene encodes a methyl-CpG-binding
+    zinc finger transcriptional regulator and its expression associates with epigenetic age across five clocks in
+    adolescent blood.
+  what_is_missing: No per-allele centimetre effect for a ZBTB38 variant in a general population has been extracted
+    separately from the joint 20-locus figure, and no study reports ZBTB38 expression or perturbation in chondrocytes
+    of any species. The only functional work is knockdown in a cervical carcinoma line.
   nearest_evidence:
   - weedon2008
   - parsons2022
   - yengo2022
-  discriminating_experiment: Two parts. (1) Extract the per-allele beta for rs724016 and rs6764769 from
-    Yengo 2022 summary statistics in a single-ancestry stratum and convert to centimetres using that stratum
-    height SD, with a bootstrap CI. (2) Measure ZBTB38 expression in human growth plate chondrocytes by
-    zone using the existing physeal biobank and single-cell datasets, and knock it down in human iPSC-derived
-    chondrogenic pellets with hypertrophy readouts (COL10A1, cell volume, matrix mineralisation). Under
-    a chondrocyte-autonomous model ZBTB38 is expressed in the plate and knockdown alters hypertrophy timing.
-    Under a peripheral-gene model ZBTB38 is absent or uniformly low in chondrocytes and the height effect
-    must be sought in another tissue, which would be a concrete instance supporting the omnigenic reading.
+  discriminating_experiment: Two parts. (1) Extract the per-allele beta for rs724016 and rs6764769 from Yengo 2022
+    summary statistics in a single-ancestry stratum and convert to centimetres using that stratum height SD, with
+    a bootstrap CI. (2) Measure ZBTB38 expression in human growth plate chondrocytes by zone using the existing
+    physeal biobank and single-cell datasets, and knock it down in human iPSC-derived chondrogenic pellets with
+    hypertrophy readouts (COL10A1, cell volume, matrix mineralisation). Under a chondrocyte-autonomous model ZBTB38
+    is expressed in the plate and knockdown alters hypertrophy timing. Under a peripheral-gene model ZBTB38 is absent
+    or uniformly low in chondrocytes and the height effect must be sought in another tissue, which would be a concrete
+    instance supporting the omnigenic reading.
   tractability: 4
 - gap_id: g_l8gen_010
   question: Do peripheral height-associated loci act on stature by altering the expression of core growth-plate
     genes in chondrocytes, as the omnigenic model requires?
   type: known_unknown
   layer: L8
-  why_it_matters: The omnigenic model is the standing interpretation of why height GWAS signal covers
-    21% of the genome, and this atlas is organised around a core set of growth-plate mechanisms. If peripheral
-    loci do not converge on those mechanisms, then the atlas covers the biology of monogenic stature but
-    not the biology of population stature variation, and that limitation should be stated explicitly rather
-    than assumed away.
-  what_is_known: Boyle 2017 proposed the model. Yengo 2022 shows 12,111 independent SNPs across 7,209
-    segments covering ~21% of the genome. Wood 2014 shows 697 variants capture one fifth of heritability
-    while all common variants capture 60%. Loci with clear skeletal function (GDF5-UQCC, 0.44 cm per allele)
-    and loci with none (HMGA2, 0.4 cm per allele) contribute indistinguishable effects. Richard 2025 and
-    Darbellay 2024 establish that chondrocyte regulatory elements are enriched for height signal; McDonnell
-    2024 identifies developmental-only regulatory effects in human cartilage.
-  what_is_missing: Enrichment is not convergence. No study has taken a set of peripheral height loci with
-    no known skeletal function and shown that they alter the expression of core growth-plate genes in
-    chondrocytes, nor measured what fraction of peripheral-locus effect on height is mediated through
-    any core gene.
+  why_it_matters: The omnigenic model is the standing interpretation of why height GWAS signal covers 21% of the
+    genome, and this atlas is organised around a core set of growth-plate mechanisms. If peripheral loci do not
+    converge on those mechanisms, then the atlas covers the biology of monogenic stature but not the biology of
+    population stature variation, and that limitation should be stated explicitly rather than assumed away.
+  what_is_known: Boyle 2017 proposed the model. Yengo 2022 shows 12,111 independent SNPs across 7,209 segments covering
+    ~21% of the genome. Wood 2014 shows 697 variants capture one fifth of heritability while all common variants
+    capture 60%. Loci with clear skeletal function (GDF5-UQCC, 0.44 cm per allele) and loci with none (HMGA2, 0.4
+    cm per allele) contribute indistinguishable effects. Richard 2025 and Darbellay 2024 establish that chondrocyte
+    regulatory elements are enriched for height signal; McDonnell 2024 identifies developmental-only regulatory
+    effects in human cartilage.
+  what_is_missing: Enrichment is not convergence. No study has taken a set of peripheral height loci with no known
+    skeletal function and shown that they alter the expression of core growth-plate genes in chondrocytes, nor measured
+    what fraction of peripheral-locus effect on height is mediated through any core gene.
   nearest_evidence:
   - boyle2017
   - yengo2022
@@ -319,151 +302,179 @@ gaps:
   - richard2025
   - darbellay2024
   - mcdonnell2024
-  discriminating_experiment: Perform a CRISPR-interference screen in human iPSC-derived chondrocytes tiling
-    200 peripheral height loci (genome-wide significant, no annotated skeletal function) and 20 core loci
-    (IHH, NPR2, ACAN, FGFR3 and equivalents), with single-cell RNA readout, and quantify the fraction
-    of peripheral perturbations that shift a core-gene expression module beyond the null distribution
-    set by 200 matched non-associated loci. Under the omnigenic model a large majority of peripheral perturbations
-    move the core module in a consistent direction. Under a parallel-pathways model the peripheral perturbations
-    affect chondrocyte transcription without converging on core genes, or do not affect chondrocyte transcription
-    at all - in which case the height effect is being exerted in another tissue and the mediated fraction
-    through the plate is directly estimable by comparing the same screen run in myotubes and hepatocytes.
+  discriminating_experiment: Perform a CRISPR-interference screen in human iPSC-derived chondrocytes tiling 200
+    peripheral height loci (genome-wide significant, no annotated skeletal function) and 20 core loci (IHH, NPR2,
+    ACAN, FGFR3 and equivalents), with single-cell RNA readout, and quantify the fraction of peripheral perturbations
+    that shift a core-gene expression module beyond the null distribution set by 200 matched non-associated loci.
+    Under the omnigenic model a large majority of peripheral perturbations move the core module in a consistent
+    direction. Under a parallel-pathways model the peripheral perturbations affect chondrocyte transcription without
+    converging on core genes, or do not affect chondrocyte transcription at all - in which case the height effect
+    is being exerted in another tissue and the mediated fraction through the plate is directly estimable by comparing
+    the same screen run in myotubes and hepatocytes.
   tractability: 2
 - gap_id: g_l8gen_011
-  question: By how much does assortative mating for height inflate twin- and pedigree-based estimates
-    of height heritability, and does correcting for it reconcile the twin estimate (0.69-0.84) with the
-    sibling identity-by-descent estimate (0.76)?
+  question: By how much does assortative mating for height inflate twin- and pedigree-based estimates of height
+    heritability, and does correcting for it reconcile the twin estimate (0.69-0.84) with the sibling identity-by-descent
+    estimate (0.76)?
   type: quantitative_gap
   layer: L8
-  why_it_matters: Every heritability figure in this layer, and every polygenic score weight trained on
-    a population sample, inherits whatever bias assortative mating introduces. Because height is one of
-    the traits with the strongest documented genetic assortment, the size of that bias sets the precision
-    with which the atlas can state its most-cited number.
-  what_is_known: Sunde 2024 shows theoretically and empirically that assortative mating raises trait-specific
-    genetic variance and genetic similarity between relatives, with distant relatives more affected than
-    close ones, and detects genetic assortative mating in 9 of 16 traits among 47,135 MoBa co-parents;
-    for 6 of the 9 the offspring genetic variance is inconsistent with stable long-run assortment. Jelenkovic
-    2016 gives twin-based adult height heritability of 0.69-0.84 (men) and 0.53-0.78 (women) across 143,390
-    pairs. Sidorenko 2024 gives 0.76 +/- 0.05 from sibling IBD sharing.
-  what_is_missing: No published estimate of the height-specific inflation factor. The two design families
-    agree to within their standard errors, which could mean the bias is small or could mean two opposing
-    biases cancel; nothing in the retrieved literature distinguishes those.
+  why_it_matters: Every heritability figure in this layer, and every polygenic score weight trained on a population
+    sample, inherits whatever bias assortative mating introduces. Because height is one of the traits with the strongest
+    documented genetic assortment, the size of that bias sets the precision with which the atlas can state its most-cited
+    number.
+  what_is_known: Sunde 2024 shows theoretically and empirically that assortative mating raises trait-specific genetic
+    variance and genetic similarity between relatives, with distant relatives more affected than close ones, and
+    detects genetic assortative mating in 9 of 16 traits among 47,135 MoBa co-parents; for 6 of the 9 the offspring
+    genetic variance is inconsistent with stable long-run assortment. Jelenkovic 2016 gives twin-based adult height
+    heritability of 0.69-0.84 (men) and 0.53-0.78 (women) across 143,390 pairs. Sidorenko 2024 gives 0.76 +/- 0.05
+    from sibling IBD sharing.
+  what_is_missing: No published estimate of the height-specific inflation factor. The two design families agree
+    to within their standard errors, which could mean the bias is small or could mean two opposing biases cancel;
+    nothing in the retrieved literature distinguishes those.
   nearest_evidence:
   - sunde2024
   - jelenkovic2016a
   - sidorenko2024
-  discriminating_experiment: Estimate the genotypic spousal correlation for height directly in a biobank
-    with genotyped mate pairs, then re-fit the twin ACE model with the spousal correlation as a fixed
-    parameter rather than assuming random mating, and compare the corrected twin heritability with the
-    sibling IBD estimate in the same population. Under a substantial-inflation model the uncorrected twin
-    estimate exceeds the IBD estimate by more than 0.05 and correction closes the gap. Under a negligible-inflation
-    model the corrected and uncorrected twin estimates differ by less than 0.02, and the agreement with
-    the IBD estimate was not a coincidence. The same spousal correlation, applied to a height PGS, gives
-    the corresponding bias in polygenic score weights.
+  discriminating_experiment: Estimate the genotypic spousal correlation for height directly in a biobank with genotyped
+    mate pairs, then re-fit the twin ACE model with the spousal correlation as a fixed parameter rather than assuming
+    random mating, and compare the corrected twin heritability with the sibling IBD estimate in the same population.
+    Under a substantial-inflation model the uncorrected twin estimate exceeds the IBD estimate by more than 0.05
+    and correction closes the gap. Under a negligible-inflation model the corrected and uncorrected twin estimates
+    differ by less than 0.02, and the agreement with the IBD estimate was not a coincidence. The same spousal correlation,
+    applied to a height PGS, gives the corresponding bias in polygenic score weights.
   tractability: 3
   search_log_ref: g_l8gen_011
 - gap_id: g_l8gen_012
-  question: Is there any environmental exposure for which the heritability of adult height demonstrably
-    differs, given that living standards, birth cohort, geographic region and parental education all fail
-    to moderate it?
+  question: Is there any environmental exposure for which the heritability of adult height demonstrably differs,
+    given that living standards, birth cohort, geographic region and parental education all fail to moderate it?
   type: known_unknown
   layer: L8
-  why_it_matters: Gene-environment interaction is the standard explanation offered when a genetic model
-    underperforms, and for height it has now failed three large pre-registered-scale tests. Establishing
-    whether ANY exposure moderates height heritability determines whether the additive model can be used
-    without qualification in this layer, which in turn licenses or forbids applying European-derived effect
-    sizes to other settings after adjusting only for allele frequency and linkage disequilibrium.
-  what_is_known: Jelenkovic 2016 (143,390 twin pairs, birth years 1886-1994) finds no secular change in
-    height heritability and similar heritability proportions across Europe, North America and Australia,
-    and East Asia, despite total variance differing between regions. Jelenkovic 2020 (29 cohorts, 65,978
-    pairs) finds parental education raises mean offspring height from mid-childhood but shows no consistent
-    relation to the variance components, with only a weak meta-regression trend toward greater shared-environmental
-    variance in low-education families. The developmental analysis (45 cohorts) locates shared-environment
-    variance in early childhood rather than in any exposure category.
-  what_is_missing: All three tests used exposures that are proxies (birth year, region, parental education)
-    rather than measured biological exposures. No study has tested moderation of height heritability by
-    measured undernutrition, infection burden, or enteric dysfunction in a population where those exposures
-    are severe - and those are precisely the populations where the shared-environment component should
-    be largest.
+  why_it_matters: Gene-environment interaction is the standard explanation offered when a genetic model underperforms,
+    and for height it has now failed three large pre-registered-scale tests. Establishing whether ANY exposure moderates
+    height heritability determines whether the additive model can be used without qualification in this layer, which
+    in turn licenses or forbids applying European-derived effect sizes to other settings after adjusting only for
+    allele frequency and linkage disequilibrium.
+  what_is_known: Jelenkovic 2016 (143,390 twin pairs, birth years 1886-1994) finds no secular change in height heritability
+    and similar heritability proportions across Europe, North America and Australia, and East Asia, despite total
+    variance differing between regions. Jelenkovic 2020 (29 cohorts, 65,978 pairs) finds parental education raises
+    mean offspring height from mid-childhood but shows no consistent relation to the variance components, with only
+    a weak meta-regression trend toward greater shared-environmental variance in low-education families. The developmental
+    analysis (45 cohorts) locates shared-environment variance in early childhood rather than in any exposure category.
+  what_is_missing: All three tests used exposures that are proxies (birth year, region, parental education) rather
+    than measured biological exposures. No study has tested moderation of height heritability by measured undernutrition,
+    infection burden, or enteric dysfunction in a population where those exposures are severe - and those are precisely
+    the populations where the shared-environment component should be largest.
   nearest_evidence:
   - jelenkovic2016a
   - jelenkovic2020
   - jelenkovic2016
-  discriminating_experiment: A twin or sibling study of height variance decomposition in a population
-    with documented severe stunting (for example a cohort with measured environmental enteric dysfunction
-    biomarkers and prospective anthropometry), with exposure measured at the individual rather than the
-    ecological level, compared against a low-exposure cohort measured on the same instruments. Under a
-    moderation model the high-exposure stratum shows a substantially larger shared-environmental component
-    and lower heritability. Under a scale-shift model both strata show the same variance decomposition
-    and the exposure moves only the mean - which is what the three existing proxy-based tests imply and
-    what would license unqualified use of the additive model.
+  discriminating_experiment: A twin or sibling study of height variance decomposition in a population with documented
+    severe stunting (for example a cohort with measured environmental enteric dysfunction biomarkers and prospective
+    anthropometry), with exposure measured at the individual rather than the ecological level, compared against
+    a low-exposure cohort measured on the same instruments. Under a moderation model the high-exposure stratum shows
+    a substantially larger shared-environmental component and lower heritability. Under a scale-shift model both
+    strata show the same variance decomposition and the exposure moves only the mean - which is what the three existing
+    proxy-based tests imply and what would license unqualified use of the additive model.
   tractability: 3
 - gap_id: g_l8gen_013
-  question: Does DNA methylation change across the human postnatal growth plate as it approaches fusion,
-    as it does in rabbit growth plate senescence?
+  question: Does DNA methylation change across the human postnatal growth plate as it approaches fusion, as it does
+    in rabbit growth plate senescence?
   type: search_established
   layer: L8
-  why_it_matters: Growth plate senescence is the central explanatory construct for growth deceleration
-    and catch-up growth in this atlas, and progressive loss of DNA methylation is the leading molecular
-    account of it. That account rests entirely on rabbit. If the human postnatal physis does not show
-    the same methylation trajectory, the senescence model as written is a species-specific claim and several
-    downstream nodes need re-grading.
-  what_is_known: Nilsson 2005 showed growth plate senescence in rabbit is associated with loss of DNA
-    methylation. McDonnell 2024 mapped ~700,000 CpGs in 72 human developing chondrocyte samples from 7
-    to 21 post-conception weeks, finding significant change at 3% of CpGs, more than 8,200 developmental
-    differentially methylated regions, and 24 loci where osteoarthritis risk variants colocalise with
-    methylation QTLs, and separated developmental-only from life-course regulatory effects by integrating
-    mature chondrocyte datasets.
-  what_is_missing: The human methylome is characterised in fetal cartilage (7-21 post-conception weeks)
-    and in adult articular cartilage, with nothing in between. No dataset spans the postnatal growing
-    physis from infancy through adolescence to fusion, so the human trajectory across the epoch where
-    senescence is supposed to occur is entirely unmeasured.
+  why_it_matters: Growth plate senescence is the central explanatory construct for growth deceleration and catch-up
+    growth in this atlas, and progressive loss of DNA methylation is the leading molecular account of it. That account
+    rests entirely on rabbit. If the human postnatal physis does not show the same methylation trajectory, the senescence
+    model as written is a species-specific claim and several downstream nodes need re-grading.
+  what_is_known: Nilsson 2005 showed growth plate senescence in rabbit is associated with loss of DNA methylation.
+    McDonnell 2024 mapped ~700,000 CpGs in 72 human developing chondrocyte samples from 7 to 21 post-conception
+    weeks, finding significant change at 3% of CpGs, more than 8,200 developmental differentially methylated regions,
+    and 24 loci where osteoarthritis risk variants colocalise with methylation QTLs, and separated developmental-only
+    from life-course regulatory effects by integrating mature chondrocyte datasets.
+  what_is_missing: The human methylome is characterised in fetal cartilage (7-21 post-conception weeks) and in adult
+    articular cartilage, with nothing in between. No dataset spans the postnatal growing physis from infancy through
+    adolescence to fusion, so the human trajectory across the epoch where senescence is supposed to occur is entirely
+    unmeasured.
   nearest_evidence:
   - mcdonnell2024
   - nilsson2005
   - richard2025
   discriminating_experiment: Reduced-representation or EPIC-array methylation profiling of laser-capture-microdissected
-    resting and proliferative zone chondrocytes from human growth plate specimens spanning infancy to
-    late adolescence, obtained through the paediatric physeal biobank and surgical waste from epiphysiodesis
-    and limb-lengthening procedures, with donor age and Sanders stage recorded. Under the senescence-demethylation
-    model global methylation falls monotonically with donor age and with proximity to fusion, most steeply
-    in the resting zone, mirroring the rabbit trajectory. Under a species-specific model human methylation
-    is stable or rises with age, in which case the rabbit finding does not transfer and growth_plate_senescence
-    must carry a species_gap flag.
+    resting and proliferative zone chondrocytes from human growth plate specimens spanning infancy to late adolescence,
+    obtained through the paediatric physeal biobank and surgical waste from epiphysiodesis and limb-lengthening
+    procedures, with donor age and Sanders stage recorded. Under the senescence-demethylation model global methylation
+    falls monotonically with donor age and with proximity to fusion, most steeply in the resting zone, mirroring
+    the rabbit trajectory. Under a species-specific model human methylation is stable or rises with age, in which
+    case the rabbit finding does not transfer and growth_plate_senescence must carry a species_gap flag.
   tractability: 2
   search_log_ref: g_l8gen_013
 - gap_id: g_l8gen_014
-  question: Does epigenetic age acceleration track radiographic bone age or predict the timing of epiphyseal
-    fusion in children?
+  question: Does epigenetic age acceleration track radiographic bone age or predict the timing of epiphyseal fusion
+    in children?
   type: search_established
   layer: L8
-  why_it_matters: Bone age is the field standard for skeletal maturity but is a radiographic, reader-dependent
-    measure with known inter-observer error. A methylation-based maturational index would be non-invasive,
-    continuous and reader-independent, and would let the growth-remaining problem be restated in molecular
-    terms. The claim that epigenetic clocks index skeletal maturation is frequently implied and has never
-    been tested.
-  what_is_known: McEwen 2020 built the PedBE clock from 1,721 profiles across 11 cohorts, 94 CpGs, median
-    absolute error 0.35 years in an independent 689-sample test set. Simpkin 2017 found in ALSPAC (n=1,018)
-    that age acceleration at 7 years was associated with higher average height (0.23 cm per year of AA,
-    95% CI 0.04-0.41) but with conflicting directions for change measures. Kim 2024 found in 135 children
-    that epigenetic age acceleration was associated with higher peak height velocity (beta 0.018, P=0.0008)
-    but not with age at peak height velocity (P=0.067), and described the effect as small.
-  what_is_missing: Neither growth study used a skeletal-maturation endpoint. No study relates any epigenetic
-    clock to Greulich-Pyle or Tanner-Whitehouse bone age, to Sanders or Risser staging, or to MRI-assessed
-    physeal closure. The two endpoints that would make an epigenetic clock useful for growth prediction
-    are untested.
+  why_it_matters: Bone age is the field standard for skeletal maturity but is a radiographic, reader-dependent measure
+    with known inter-observer error. A methylation-based maturational index would be non-invasive, continuous and
+    reader-independent, and would let the growth-remaining problem be restated in molecular terms. The claim that
+    epigenetic clocks index skeletal maturation is frequently implied and has never been tested.
+  what_is_known: McEwen 2020 built the PedBE clock from 1,721 profiles across 11 cohorts, 94 CpGs, median absolute
+    error 0.35 years in an independent 689-sample test set. Simpkin 2017 found in ALSPAC (n=1,018) that age acceleration
+    at 7 years was associated with higher average height (0.23 cm per year of AA, 95% CI 0.04-0.41) but with conflicting
+    directions for change measures. Kim 2024 found in 135 children that epigenetic age acceleration was associated
+    with higher peak height velocity (beta 0.018, P=0.0008) but not with age at peak height velocity (P=0.067),
+    and described the effect as small.
+  what_is_missing: Neither growth study used a skeletal-maturation endpoint. No study relates any epigenetic clock
+    to Greulich-Pyle or Tanner-Whitehouse bone age, to Sanders or Risser staging, or to MRI-assessed physeal closure.
+    The two endpoints that would make an epigenetic clock useful for growth prediction are untested.
   nearest_evidence:
   - mcewen2020
   - simpkin2017
   - kim2024
-  discriminating_experiment: 'In an existing paediatric cohort with serial hand-wrist radiographs and
-    banked buccal or blood DNA, compute PedBE age acceleration and regress it on bone age minus chronological
-    age, and separately on Sanders stage, at matched visits. Then test prediction: does baseline epigenetic
-    age acceleration improve prediction of adult height over bone age alone in a held-out sample? Under
-    a skeletal-maturation model epigenetic age acceleration correlates with bone-age advancement (r >
-    0.3) and adds incremental predictive value. Under a chronological-clock model the correlation with
-    bone-age advancement is near zero and the clock adds nothing beyond chronological age, which would
-    settle that the two maturational axes are independent - itself a finding, because it would mean systemic
-    biological ageing and skeletal maturation are separately regulated.'
+  discriminating_experiment: 'In an existing paediatric cohort with serial hand-wrist radiographs and banked buccal
+    or blood DNA, compute PedBE age acceleration and regress it on bone age minus chronological age, and separately
+    on Sanders stage, at matched visits. Then test prediction: does baseline epigenetic age acceleration improve
+    prediction of adult height over bone age alone in a held-out sample? Under a skeletal-maturation model epigenetic
+    age acceleration correlates with bone-age advancement (r > 0.3) and adds incremental predictive value. Under
+    a chronological-clock model the correlation with bone-age advancement is near zero and the clock adds nothing
+    beyond chronological age, which would settle that the two maturational axes are independent - itself a finding,
+    because it would mean systemic biological ageing and skeletal maturation are separately regulated.'
   tractability: 4
   search_log_ref: g_l8gen_014
+- gap_id: g_l8_duration_threshold_dose
+  type: quantitative_gap
+  layer: L8
+  tractability: 2
+  question: What depth of oestrogen suppression is needed to cross the fusion threshold, and do current aromatase
+    inhibitor doses reach it?
+  why_it_matters: If fusion is a threshold rather than a slope - which the seventy-fold gap between common CYP19A1
+    variation and complete CYP19A1 loss, and the biphasic oestrogen dose-response, both suggest - then the therapeutic
+    question is not when to start but how hard to block. Letrozole 2.5 mg and anastrozole 1 mg are ADULT ONCOLOGY
+    DOSES chosen to suppress oestrogen in postmenopausal breast cancer, not doses titrated against a paediatric
+    growth-plate threshold that nobody has located. The one real-endpoint comparison finds the more potent drug
+    wins (letrozole +4.2 vs anastrozole +0.8 cm near-final height, P=0.013) while the randomised comparison on a
+    surrogate finds nothing - which is what a threshold predicts.
+  what_is_known: 'carusonicolett1985: growth velocity TRIPLES at a serum estradiol of about 10 pg/mL and does not
+    at 16 or 96 pg/mL - the growth-promoting and fusion-promoting limbs are separated by less than an order of magnitude.
+    albin2012: half-maximal pubertal growth acceleration in girls at a morning estradiol of 20 pmol/L. neely2024:
+    letrozole produces lower estradiol and slower bone age advance than anastrozole, with no difference in predicted
+    adult height over 3 years and a combined gain of +1.3 cm that did not persist from year 1. Complete loss of
+    CYP19A1 gives +4 SD; the lead common variant gives 0.054 SD per allele.'
+  what_is_missing: (1) THE THRESHOLD ITSELF. No study has related achieved serum or local oestradiol to subsequent
+    bone-age advance across a dose range in growing children. (2) WHETHER STANDARD DOSES SATURATE AROMATASE IN A
+    PUBERTAL BOY. The oncology doses were chosen for postmenopausal women with a fraction of the substrate. (3)
+    A DOSE-RANGING STUDY OF ANY KIND. Every paediatric aromatase inhibitor trial uses a single fixed adult dose.
+    (4) THE SAFETY CEILING - vertebral morphometry and BMD across a dose range, given that complete lifelong loss
+    carries a lumbar BMD Z of -3.85.
+  nearest_evidence:
+  - carusonicolett1985
+  - neely2024
+  - nearfinal2026
+  - yengo2022
+  nearest_evidence_note: The biphasic human dose-response exists and stops at three doses in five boys over four
+    days. Nothing connects it to bone age or to adult height.
+  discriminating_experiment: THE OBSERVATIONAL VERSION FIRST AND IT NEEDS NO NEW DOSING. Both the Stanford randomised
+    comparison and the near-final-height cohort measured achieved oestradiol AND bone-age advance in the same children.
+    REGRESS BONE-AGE ADVANCE ON ACHIEVED OESTRADIOL, in individuals, and look for a knee. A linear relationship
+    refutes the threshold model; a flat region followed by a fall confirms it and LOCATES the threshold in units
+    a clinician can dose against. Both datasets already exist. THEN, and only then, a dose-ranging study with vertebral
+    morphometry as a co-primary - which the threshold model says is the trial that has never been run, in place
+    of the earlier-start trial the atlas previously argued for.
