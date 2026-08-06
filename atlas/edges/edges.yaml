@@ -18502,3 +18502,109 @@ edges:
     not a demonstration that FGF23 causes the growth failure, and signing it would assert more than the study shows.
     traversal_usable stays false by relation type, which is the correct consequence.'
   traversal_usable: false
+- edge_id: e01185
+  source: erdafitinib
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: ATP-competitive inhibition of FGFR1, 2, 3 and 4. Not FGFR3-selective, and P8-01 finds all four FGFRs
+    present in human growth plate
+  context: human, oral; zone unknown (organism-level readout, no zonal resolution); both sexes (male and female);
+    juvenile, pubertal, adult
+  timescale: hours - tmax 3 h; skeletal readouts at weeks to months
+  evidence_tier: T1
+  refs:
+  - hartmann2025
+  - brizini2024
+  confidence: C
+  notes: Class-level target engagement. The atlas cannot attribute either the growth acceleration or the SCFE to
+    a specific FGFR paralog - see paralog_risk on fgfr3_receptor.
+  traversal_usable: true
+- edge_id: e01186
+  source: erdafitinib
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  magnitude: unexpected linear growth acceleration on starting therapy, INDEPENDENT of sex steroids and IGF-1, in
+    paediatric CNS-tumour patients with severe pre-existing growth impairment. No effect size, no control group
+  context: human, paediatric neuro-oncology compassionate use, retrospective; zone unknown (organism-level readout,
+    no zonal resolution); sex unknown (not reported in source); juvenile, pubertal
+  timescale: weeks - acceleration observed shortly after initiation
+  evidence_tier: T1
+  refs:
+  - hartmann2025
+  confidence: D
+  notes: 'The ONLY human observation of FGFR-inhibition-driven growth acceleration. Graded D: uncontrolled series,
+    and catch-up growth in previously growth-impaired children is an unexcluded confounder.'
+  traversal_usable: true
+- edge_id: e01187
+  source: erdafitinib
+  target: hypertrophic_zone
+  relation: activates
+  sign: +
+  magnitude: distinct widening of the growth plate with enhanced metaphyseal mineralization, radiographic, shortly
+    after starting therapy
+  context: 'human, paediatric, radiographic; zones resolved in source: hypertrophic zone; sex unknown (not reported
+    in source); juvenile, pubertal'
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - hartmann2025
+  confidence: D
+  notes: 'This edge is the mechanistic bridge to the toxicity: SCFE displaces through the hypertrophic zone, so
+    a widened hypertrophic zone is the plausible substrate for e-SCFE. The atlas cannot quantify that because the
+    zonal stiffness direction is an open contradiction (g_l5matrix_008).'
+  traversal_usable: true
+- edge_id: e01188
+  source: erdafitinib
+  target: phosphate_homeostasis
+  relation: activates
+  sign: +
+  magnitude: pan-FGFR inhibition blocks renal FGF23-FGFR1/alpha-Klotho signalling, raising serum phosphate; hyperphosphataemia
+    is the commonest on-target class effect and at the extreme causes calcinosis cutis and calciphylaxis (10 reviewed
+    cases across the class)
+  context: human, oral, adults and children; zone not applicable - renal phosphate handling; both sexes (male and
+    female); juvenile, adult
+  timescale: days - hyperphosphataemia within 10 days of starting a class member in the reported case
+  evidence_tier: T1
+  refs:
+  - ghimire2025
+  confidence: B
+  notes: THE HIDDEN ARM. Phosphate is not a bystander in the growth plate - hypertrophic chondrocyte apoptosis and
+    the mineralisation front are phosphate-dependent (sabbagh2005) - so this drug removes the FGFR3 brake AND raises
+    the substrate for terminal mineralisation at the same time.
+  traversal_usable: true
+- edge_id: e01189
+  source: tadalafil
+  target: cgmp_second_messenger
+  relation: activates
+  sign: +
+  magnitude: +52% growth-plate tissue cGMP after 3 weeks at 10 mg/kg/day; +37% peak CNP-stimulated intracellular
+    cGMP in vitro
+  context: 'rat, one month old, 3 weeks oral; zones resolved in source: resting zone, proliferative zone, hypertrophic
+    zone; sex unknown (not reported in source); juvenile'
+  timescale: weeks
+  evidence_tier: T1
+  refs:
+  - wang2018
+  confidence: D
+  notes: Target engagement is demonstrated. The next edge is why that does not matter.
+  traversal_usable: true
+- edge_id: e01190
+  source: tadalafil
+  target: growth_velocity_longitudinal
+  relation: correlates_with
+  sign: unknown
+  magnitude: NULL RESULT. Three weeks of tadalafil 10 mg/kg/day in one-month-old rats raised tissue cGMP 52% and
+    produced NO change in long bone length, cortical or trabecular bone properties, or growth plate histology
+  context: rat, one month old; zone unknown (organism-level readout, no zonal resolution); sex unknown (not reported
+    in source); juvenile
+  timescale: weeks - 3 week exposure
+  evidence_tier: T1
+  refs:
+  - wang2018
+  confidence: D
+  notes: 'correlates_with with sign UNKNOWN because the measured effect is zero. Signing this + would assert an
+    effect the only experiment refutes, and signing it - would assert harm nobody measured. A null is not a sign.
+    traversal_usable false is the correct consequence: this edge must not propagate.'
+  traversal_usable: false

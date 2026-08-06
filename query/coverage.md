@@ -54,9 +54,9 @@ satisfying than what a language model would otherwise produce.
 | L9 | whole_organism_growth | 34 | 30 (88%) | 21 (61%) | 4 (11%) | 17 | 14/11 | **100** |
 | L10 | environment_and_population | 34 | 29 (85%) | 18 (52%) | 4 (11%) | 13 | 9/16 | **100** |
 | L11 | pathology_as_natural_experiment | 56 | 56 (100%) | 18 (32%) | 0 (0%) | 26 | 19/23 | **60** |
-| L12 | pharmacology_as_mechanistic_probe | 36 | 30 (83%) | 26 (72%) | 6 (16%) | 30 | 16/10 | **50** |
+| L12 | pharmacology_as_mechanistic_probe | 38 | 31 (81%) | 27 (71%) | 7 (18%) | 30 | 16/10 | **50** |
 | L13 | methods_and_data | 41 | 19 (46%) | 13 (31%) | 15 (36%) | 14 | 11/18 | **50** |
-| | **TOTAL** | **615** | **353 (57.4%)** | **247 (40.2%)** | | **289** | | **64.0** |
+| | **TOTAL** | **617** | **354 (57.4%)** | **248 (40.2%)** | | **289** | | **64.0** |
 
 `replicated human` = `human_evidence: direct` **and** ≥2 human primary sources. `hit rate` is the Phase 7 measured value, CORRECT / (CORRECT + WRONG + SILENTLY_ABSENT) — source: query/falsification_baseline.md, cutoff 2026-02-01, 63 held-out papers. † L2's denominator is 1: two of its three held-out papers were correct refusals, so the 0 is a small-sample artefact and not a verdict.
 <!-- COVERAGE:LAYERS:END -->
@@ -134,11 +134,11 @@ number is too small to say anything.
 <!-- COVERAGE:STRUCT:BEGIN -->
 | | |
 |---|---|
-| Nodes | 615 (615 researched, 0 stubs) |
-| Edges | 1184 — **779 usable for perturbation reasoning**, 405 flagged unusable |
+| Nodes | 617 (617 researched, 0 stubs) |
+| Edges | 1190 — **784 usable for perturbation reasoning**, 406 flagged unusable |
 | Gaps | 289, with 135 gap ids carrying reproducible search logs (148 log entries) |
-| References | 1053, all machine-resolved against Europe PMC/NCBI |
-| Quantitative values on nodes | 1521 |
+| References | 1059, all machine-resolved against Europe PMC/NCBI |
+| Quantitative values on nodes | 1528 |
 
 **Context annotation, three-state** (MATCH / MISMATCH / UNANNOTATED — only MISMATCH excludes an edge; see `atlas/tools/context_filter.py`):
 
@@ -146,21 +146,21 @@ number is too small to say anything.
 
 | axis | determined | of edges | explicitly `unknown` | MR-004 target |
 |---|---:|---:|---:|---:|
-| zone | 636/1184 | 53.7% | 546 (46.1%) | 40% |
-| sex | 362/1184 | 30.6% | 822 (69.4%) | 30% |
-| stage | 757/1184 | 63.9% | 427 (36.1%) | 40% |
-| species | 1136/1184 | 95.9% | 40 (3.4%) | — |
+| zone | 638/1190 | 53.6% | 549 (46.1%) | 40% |
+| sex | 364/1190 | 30.6% | 826 (69.4%) | 30% |
+| stage | 763/1190 | 64.1% | 427 (35.9%) | 40% |
+| species | 1142/1190 | 96.0% | 40 (3.4%) | — |
 
 **Zone provenance — `determined` is not one thing.** A zone inferred from the endpoint nodes' localisation records says where the *entities* live, not where the *interaction* was observed, and it is where an incoherent tag can hide (see `audit/fragility.md` §4).
 
 | provenance | edges | of edges |
 |---|---:|---:|
-| resolved in the cited source | 60 | 5.1% |
-| definitional — an endpoint node **is** a zone | 315 | 26.6% |
-| **inferred from endpoint localization records** | **261** | **22.0%** |
-| → strong (source-resolved + definitional) | 375 | 31.7% |
+| resolved in the cited source | 62 | 5.2% |
+| definitional — an endpoint node **is** a zone | 315 | 26.5% |
+| **inferred from endpoint localization records** | **261** | **21.9%** |
+| → strong (source-resolved + definitional) | 377 | 31.7% |
 
-Sign coverage on sign-bearing relations is the traversal gate and stands at **779/779 = 100%**. The 405 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
+Sign coverage on sign-bearing relations is the traversal gate and stands at **784/784 = 100%**. The 406 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
 <!-- COVERAGE:STRUCT:END -->
 
 ---
@@ -170,14 +170,14 @@ Sign coverage on sign-bearing relations is the traversal gate and stands at **77
 <!-- COVERAGE:QUANT:BEGIN -->
 | reliability class | rows | share |
 |---|---:|---:|
-| `single_source_with_uncertainty` | 1228 | 80.7% |
-| `range_value` | 118 | 7.8% |
+| `single_source_with_uncertainty` | 1234 | 80.8% |
+| `range_value` | 119 | 7.8% |
 | **`single_source_point_no_uncertainty`** | **65** | 4.3% |
 | `spread_documented` | 55 | 3.6% |
 | `unverified` | 40 | 2.6% |
 | `multi_source` | 12 | 0.8% |
 | `superseded` | 3 | 0.2% |
-| | **1521** | |
+| | **1528** | |
 
 `single_source_point_no_uncertainty` is the risk class: one source, a point value, and nothing to warn a reader. Phase 2e classified every row rather than hunting duplicate parameter names, because ~94% of parameter names appear exactly once — disagreement in this field is not encoded as duplicate rows.
 <!-- COVERAGE:QUANT:END -->

@@ -1,0 +1,85 @@
+id: tadalafil
+name: Tadalafil (PDE5 inhibitor)
+aliases:
+- Cialis
+- Adcirca
+- PDE5 inhibitor
+- PDE5i
+- tadalafil
+type: intervention
+layer: L12
+stub: false
+summary: 'Tadalafil is a long-acting PDE5 inhibitor. In this atlas it is the compound that tests the most
+  attractive and least supported idea in growth pharmacology: that raising cGMP downstream of NPR2 is
+  sufficient to lengthen bone.
+
+  THE DIRECTLY RELEVANT RESULT IS NEGATIVE. In one-month-old rats, three weeks of tadalafil at 10 mg/kg/day
+  raised growth-plate tissue cGMP by 52% and produced NO change in long bone length, cortical or trabecular
+  bone properties, or growth plate histology - despite the same drug raising peak CNP-stimulated intracellular
+  cGMP by 37% in vitro (wang2018). Bulk cGMP is not the rate-limiting variable. That negative stands against
+  the positive mouse result obtained with PDE3 inhibition.
+
+  THE TARGET MAY NOT BE THERE. P8-01 found PDE5A undetectable across all 8 HG-U133 Plus 2.0 probe sets
+  in both donors of the only zone-resolved human growth-plate transcriptome. P8-02 then found PDE5A at
+  the 91st percentile in one independent human series and absent in two others - a four-platform disagreement
+  recorded as a contradiction rather than averaged. Which cGMP-hydrolysing activity the human physis actually
+  carries is unresolved (g_l3core_006), and the isoforms consistently detected are PDE3B and PDE2A, not
+  PDE5A.
+
+  THE HIDDEN PHARMACOLOGY IS PDE11. Tadalafil is the one marketed PDE5 inhibitor with meaningful PDE11A
+  cross-reactivity, which is why its off-target profile differs from sildenafil''s. P8-02 corroborates
+  PDE11A as absent from human growth plate across all four datasets, so in this tissue the cross-reactivity
+  is probably inert - but that is an argument from a bounded transcript negative, not a measurement.
+
+  CHRONIC PAEDIATRIC EXPOSURE ALREADY EXISTS AND HAS NEVER BEEN READ OUT. Children with pulmonary arterial
+  hypertension take PDE5 inhibitors for years, at doses far above the 5 mg once-daily urological dose,
+  with routine growth monitoring. No height-velocity analysis of that cohort has been reported. It is
+  the cheapest available human test of the whole cGMP hypothesis and nobody has run it.'
+quantitative:
+- parameter: growth-plate tissue cGMP increase, tadalafil 10 mg/kg/day for 3 weeks
+  value: '52'
+  unit: '% increase'
+  conditions: one-month-old rats
+  species: rat
+  source_ref: wang2018
+  uncertainty: abstract-level; see redteam weak-row list
+- parameter: change in long bone length with tadalafil despite the cGMP rise
+  value: '0'
+  unit: no change
+  conditions: one-month-old rats, 3 weeks, 10 mg/kg/day; no change in bone properties or plate histology
+  species: rat
+  source_ref: wang2018
+  uncertainty: a NEGATIVE result and the load-bearing one for this node
+human_evidence: absent
+human_evidence_note: No human growth-plate pharmacology for any PDE5 inhibitor. The chronic paediatric
+  PAH population is an existing, unexamined natural experiment.
+species_basis:
+- rat
+- in_vitro_animal_cell
+translation_risk: high
+translation_risk_reason: The only functional readout is rat and it is negative; the human target PDE5A
+  has a four-platform detection disagreement; and the human physis consistently expresses PDE3B and PDE2A
+  instead. Transferring a cGMP-raising rationale to human growth would be inference on top of a negative.
+confidence: D
+claim_grades:
+- claim: Raising growth-plate cGMP with a PDE5 inhibitor lengthens bone.
+  grade: D
+  basis: 'REFUTED in the only functional test: rat, 3 weeks, +52% tissue cGMP, zero change in bone length
+    (wang2018).'
+- claim: PDE5A is the dominant cGMP-hydrolysing activity of the human growth plate.
+  grade: D
+  basis: Contested. Four platforms disagree on whether PDE5A transcript is present at all; no activity
+    measurement exists in human tissue. g_l3core_006.
+key_refs:
+- ref_id: wang2018
+  first_author: Wang
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: Tadalafil raised rat growth-plate cGMP 52% over 3 weeks with no change in long bone
+    length, bone properties or plate histology.
+open_questions:
+- g_l3core_006
+last_verified: '2026-08-06'
+provenance_note: Created 2026-08-06 in response to a compound-simulation query. Tadalafil existed in the
+  atlas only as a quantitative row on pde5a; the compound had no node, so a query naming it resolved to
+  nothing.

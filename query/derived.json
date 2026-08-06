@@ -463,6 +463,12 @@
   "emflaza": "deflazacort",
   "21-desdfz": "deflazacort",
   "oxazoline glucocorticoid": "deflazacort",
+  "erdafitinib": "erdafitinib",
+  "erdafitinib (pan-fgfr1-4 inhibitor)": "erdafitinib",
+  "jnj-42756493": "erdafitinib",
+  "balversa": "erdafitinib",
+  "pan-fgfr tki": "erdafitinib",
+  "pan-fgfr inhibitor": "erdafitinib",
   "estrogen_low_dose_therapy": "estrogen_low_dose_therapy",
   "low-dose oestrogen therapy": "estrogen_low_dose_therapy",
   "low-dose estradiol": "estrogen_low_dose_therapy",
@@ -576,6 +582,12 @@
   "statins in ipsc models of fgfr3 skeletal dysplasia": "statin_ipsc_achondroplasia",
   "rosuvastatin achondroplasia": "statin_ipsc_achondroplasia",
   "statin rescue of fgfr3 chondrocytes": "statin_ipsc_achondroplasia",
+  "tadalafil": "tadalafil",
+  "tadalafil (pde5 inhibitor)": "tadalafil",
+  "cialis": "tadalafil",
+  "adcirca": "tadalafil",
+  "pde5 inhibitor": "tadalafil",
+  "pde5i": "tadalafil",
   "teriparatide": "teriparatide",
   "teriparatide (pth 1-34)": "teriparatide",
   "forteo": "teriparatide",
@@ -2400,6 +2412,7 @@
   "chemotherapy_growth_plate_toxicity": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/chemotherapy_growth_plate_toxicity.yaml",
   "cnp_analog_pk_challenge": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/cnp_analog_pk_challenge.yaml",
   "deflazacort": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/deflazacort.yaml",
+  "erdafitinib": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/erdafitinib.yaml",
   "estrogen_low_dose_therapy": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/estrogen_low_dose_therapy.yaml",
   "fgfr3_tyrosine_kinase_inhibitor": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/fgfr3_tyrosine_kinase_inhibitor.yaml",
   "final_adult_height_endpoint": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/final_adult_height_endpoint.yaml",
@@ -2424,6 +2437,7 @@
   "regulatory_review_document": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/regulatory_review_document.yaml",
   "soluble_fgfr3_decoy": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/soluble_fgfr3_decoy.yaml",
   "statin_ipsc_achondroplasia": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/statin_ipsc_achondroplasia.yaml",
+  "tadalafil": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/tadalafil.yaml",
   "teriparatide": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/teriparatide.yaml",
   "transcon_growth_hormone": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/transcon_growth_hormone.yaml",
   "trial_endpoint_annualized_growth_velocity": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/trial_endpoint_annualized_growth_velocity.yaml",
@@ -7131,7 +7145,7 @@
  "convergence": [
   {
    "node": "growth_velocity_longitudinal",
-   "inbound": 43,
+   "inbound": 45,
    "n_layers": 10,
    "layers": [
     "L0",
@@ -7219,7 +7233,7 @@
   },
   {
    "node": "fgfr3_receptor",
-   "inbound": 22,
+   "inbound": 23,
    "n_layers": 5,
    "layers": [
     "L11",
@@ -7295,11 +7309,12 @@
   },
   {
    "node": "hypertrophic_zone",
-   "inbound": 14,
-   "n_layers": 6,
+   "inbound": 15,
+   "n_layers": 7,
    "layers": [
     "L1",
     "L11",
+    "L12",
     "L3",
     "L4",
     "L5",
@@ -7320,6 +7335,18 @@
    "layer": "L3"
   },
   {
+   "node": "cgmp_second_messenger",
+   "inbound": 14,
+   "n_layers": 4,
+   "layers": [
+    "L11",
+    "L12",
+    "L3",
+    "L8"
+   ],
+   "layer": "L3"
+  },
+  {
    "node": "chondrocyte_column_formation",
    "inbound": 13,
    "n_layers": 7,
@@ -7333,18 +7360,6 @@
     "L6"
    ],
    "layer": "L1"
-  },
-  {
-   "node": "cgmp_second_messenger",
-   "inbound": 13,
-   "n_layers": 4,
-   "layers": [
-    "L11",
-    "L12",
-    "L3",
-    "L8"
-   ],
-   "layer": "L3"
   },
   {
    "node": "mechanical_modulation_growth",
@@ -8092,7 +8107,7 @@
   "L11->L1": 3,
   "L8->L11": 27,
   "L11->L9": 8,
-  "L12->L3": 23,
+  "L12->L3": 25,
   "L4->L11": 18,
   "L7->L11": 1,
   "L11->L11": 8,
@@ -8126,11 +8141,11 @@
   "L13->L1": 12,
   "L13->L7": 2,
   "L13->L13": 2,
-  "L12->L1": 11,
+  "L12->L1": 14,
   "L3->L12": 1,
   "L12->L7": 13,
   "L12->L12": 7,
-  "L12->L4": 25,
+  "L12->L4": 26,
   "L11->L3": 27,
   "L11->L4": 11,
   "L6->L1": 51,
@@ -23247,6 +23262,532 @@
     ]
    }
   },
+  "erdafitinib": {
+   "fgfr3_receptor": {
+    "sign": -1,
+    "depth": 1,
+    "path": [
+     "e01185"
+    ]
+   },
+   "growth_velocity_longitudinal": {
+    "sign": 1,
+    "depth": 1,
+    "path": [
+     "e01186"
+    ]
+   },
+   "hypertrophic_zone": {
+    "sign": 1,
+    "depth": 1,
+    "path": [
+     "e01187"
+    ]
+   },
+   "phosphate_homeostasis": {
+    "sign": 1,
+    "depth": 1,
+    "path": [
+     "e01188"
+    ]
+   },
+   "chondrocyte_apoptosis_hz": {
+    "sign": 1,
+    "depth": 2,
+    "path": [
+     "e01188",
+     "e00480"
+    ]
+   },
+   "chondrocyte_to_osteoblast_transdifferentiation": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01188",
+     "e00480",
+     "e00049"
+    ]
+   },
+   "cxcl12_abundant_reticular_cell": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01188",
+     "e00480",
+     "e00049",
+     "e00073"
+    ]
+   },
+   "fgfr3_mapk_branch": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00128"
+    ]
+   },
+   "fgfr3_stat1_branch": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00129"
+    ]
+   },
+   "pthrp_ihh_feedback_loop": {
+    "sign": 1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00133"
+    ]
+   },
+   "fgfr3_npr2_crosstalk": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00139"
+    ]
+   },
+   "npr2_receptor": {
+    "sign": 1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00152"
+    ]
+   },
+   "achondroplasia": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00200"
+    ]
+   },
+   "thanatophoric_dysplasia": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00202"
+    ]
+   },
+   "hypochondroplasia": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00204"
+    ]
+   },
+   "saddan_syndrome": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00205"
+    ]
+   },
+   "bmp_signaling_growth_plate": {
+    "sign": 1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00298"
+    ]
+   },
+   "sox9_tf": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01185",
+     "e00370"
+    ]
+   },
+   "beta_catenin_ctnnb1": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00314"
+    ]
+   },
+   "amino_acid_sensing_chondrocyte": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00344"
+    ]
+   },
+   "sox5_tf": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00359"
+    ]
+   },
+   "sox6_tf": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00360"
+    ]
+   },
+   "sox_trio": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00361"
+    ]
+   },
+   "chondrocyte_column_formation": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00366"
+    ]
+   },
+   "runx2_tf": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00367"
+    ]
+   },
+   "sox9_chondrogenic_commitment": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00369"
+    ]
+   },
+   "pathway_convergence_node": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00411"
+    ]
+   },
+   "growth_plate": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00369",
+     "e00591"
+    ]
+   },
+   "chondrocyte_hypertrophy": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00367",
+     "e00371"
+    ]
+   },
+   "ihh_protein": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00102"
+    ]
+   },
+   "collagen_type_x": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00367",
+     "e00374"
+    ]
+   },
+   "mmp13_protease": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00367",
+     "e00375"
+    ]
+   },
+   "clonal_column": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00366",
+     "e00016"
+    ]
+   },
+   "collagen_type_ii": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00361",
+     "e00364"
+    ]
+   },
+   "aggrecan_acan": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00361",
+     "e00365"
+    ]
+   },
+   "mtorc1_chondrocyte": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00344",
+     "e00343"
+    ]
+   },
+   "vegfa_growth_plate": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00314",
+     "e00317"
+    ]
+   },
+   "bmp2_ligand": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00314",
+     "e00318"
+    ]
+   },
+   "epiphyseal_fusion": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00370",
+     "e00314",
+     "e00320"
+    ]
+   },
+   "smad1_5_8": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00284"
+    ]
+   },
+   "ihh_bmp_crosstalk": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00295"
+    ]
+   },
+   "chondrocyte_proliferation_rate": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00297"
+    ]
+   },
+   "elongation_budget": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00297",
+     "e00011"
+    ]
+   },
+   "pthrp_protein": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00102",
+     "e00086"
+    ]
+   },
+   "smoothened": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00102",
+     "e00097"
+    ]
+   },
+   "gli1_tf": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00102",
+     "e00150"
+    ]
+   },
+   "dio2_deiodinase": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00298",
+     "e00102",
+     "e01135"
+    ]
+   },
+   "cgmp_second_messenger": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00152",
+     "e00107"
+    ]
+   },
+   "acromesomelic_dysplasia_maroteaux": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00152",
+     "e00207"
+    ]
+   },
+   "pkg2_kinase": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00152",
+     "e00107",
+     "e00108"
+    ]
+   },
+   "mek1_erk_chondrocyte": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00128",
+     "e00130"
+    ]
+   },
+   "npr2_gain_of_function_tall": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00152",
+     "e00107",
+     "e00210"
+    ]
+   },
+   "jansen_metaphyseal_chondrodysplasia": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00133",
+     "e00233"
+    ]
+   },
+   "blomstrand_chondrodysplasia": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00133",
+     "e00234"
+    ]
+   },
+   "hdac4_protein": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01185",
+     "e00133",
+     "e00388"
+    ]
+   },
+   "mef2c_tf": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00133",
+     "e00388",
+     "e00099"
+    ]
+   },
+   "pth1r_receptor": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00133",
+     "e00234",
+     "e00784"
+    ]
+   },
+   "noonan_syndrome": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01185",
+     "e00128",
+     "e00130",
+     "e00268"
+    ]
+   }
+  },
   "estrogen_low_dose_therapy": {
    "estrogen_receptor_alpha": {
     "sign": 1,
@@ -28807,6 +29348,293 @@
      "e00128",
      "e00130",
      "e00268"
+    ]
+   }
+  },
+  "tadalafil": {
+   "cgmp_second_messenger": {
+    "sign": 1,
+    "depth": 1,
+    "path": [
+     "e01189"
+    ]
+   },
+   "pkg2_kinase": {
+    "sign": 1,
+    "depth": 2,
+    "path": [
+     "e01189",
+     "e00108"
+    ]
+   },
+   "mek1_erk_chondrocyte": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01189",
+     "e00143"
+    ]
+   },
+   "npr2_gain_of_function_tall": {
+    "sign": 1,
+    "depth": 2,
+    "path": [
+     "e01189",
+     "e00210"
+    ]
+   },
+   "npr2_receptor": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01189",
+     "e00210",
+     "e00779"
+    ]
+   },
+   "fgfr3_receptor": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131"
+    ]
+   },
+   "acromesomelic_dysplasia_maroteaux": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00210",
+     "e00779",
+     "e00207"
+    ]
+   },
+   "noonan_syndrome": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00268"
+    ]
+   },
+   "fgfr3_mapk_branch": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00128"
+    ]
+   },
+   "fgfr3_stat1_branch": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00129"
+    ]
+   },
+   "pthrp_ihh_feedback_loop": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00133"
+    ]
+   },
+   "fgfr3_npr2_crosstalk": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00139"
+    ]
+   },
+   "achondroplasia": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00200"
+    ]
+   },
+   "thanatophoric_dysplasia": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00202"
+    ]
+   },
+   "hypochondroplasia": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00204"
+    ]
+   },
+   "saddan_syndrome": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00205"
+    ]
+   },
+   "bmp_signaling_growth_plate": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00143",
+     "e00131",
+     "e00298"
+    ]
+   },
+   "sox9_tf": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109"
+    ]
+   },
+   "gsk3b_kinase": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00110"
+    ]
+   },
+   "npr2_agonist_class": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00718"
+    ]
+   },
+   "beta_catenin_ctnnb1": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00110",
+     "e00306"
+    ]
+   },
+   "amino_acid_sensing_chondrocyte": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00344"
+    ]
+   },
+   "sox5_tf": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00359"
+    ]
+   },
+   "sox6_tf": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00360"
+    ]
+   },
+   "sox_trio": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00361"
+    ]
+   },
+   "chondrocyte_column_formation": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00366"
+    ]
+   },
+   "runx2_tf": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00367"
+    ]
+   },
+   "chondrocyte_to_osteoblast_transdifferentiation": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00368"
+    ]
+   },
+   "sox9_chondrogenic_commitment": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00369"
+    ]
+   },
+   "pathway_convergence_node": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01189",
+     "e00108",
+     "e00109",
+     "e00411"
     ]
    }
   },
@@ -77296,21 +78124,21 @@
   "zebrafish_skeletal_model"
  ],
  "edge_usability": {
-  "usable": 779,
-  "unusable": 405,
+  "usable": 784,
+  "unusable": 406,
   "reason": "sign-exempt relation (precedes/binds/correlates_with/hypothesized_link) or unsigned"
  },
  "structural_confidence": {
   "apical_ectodermal_ridge": {
-   "structural_confidence": 0.902,
+   "structural_confidence": 0.9,
    "band": "high",
    "components": {
-    "local_density": 0.662,
+    "local_density": 0.657,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 69,
+   "neighbourhood_nodes": 71,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77329,7 +78157,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -77372,10 +78200,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "endochondral_ossification": {
-   "structural_confidence": 0.876,
+   "structural_confidence": 0.875,
    "band": "high",
    "components": {
-    "local_density": 0.589,
+    "local_density": 0.588,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.998
@@ -77392,15 +78220,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "gdf5_gene": {
-   "structural_confidence": 0.943,
+   "structural_confidence": 0.939,
    "band": "high",
    "components": {
-    "local_density": 0.79,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 48,
+   "neighbourhood_nodes": 50,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77419,7 +78247,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -77435,7 +78263,7 @@
    "structural_confidence": 0.888,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -77455,7 +78283,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -77468,15 +78296,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "hoxd11_gene": {
-   "structural_confidence": 0.91,
+   "structural_confidence": 0.907,
    "band": "high",
    "components": {
-    "local_density": 0.685,
+    "local_density": 0.676,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 44,
+   "neighbourhood_nodes": 46,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77495,7 +78323,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -77508,10 +78336,52 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "interzone_formation": {
+   "structural_confidence": 0.899,
+   "band": "high",
+   "components": {
+    "local_density": 0.653,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.999
+   },
+   "neighbourhood_nodes": 73,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L11",
+    "L12",
+    "L13",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "intramembranous_ossification": {
+   "structural_confidence": 0.816,
+   "band": "high",
+   "components": {
+    "local_density": 0.444,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 1.0
+   },
+   "neighbourhood_nodes": 7,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L6",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "limb_bud_initiation": {
    "structural_confidence": 0.9,
    "band": "high",
    "components": {
-    "local_density": 0.658,
+    "local_density": 0.657,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -77531,58 +78401,16 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "intramembranous_ossification": {
-   "structural_confidence": 0.817,
-   "band": "high",
-   "components": {
-    "local_density": 0.445,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 1.0
-   },
-   "neighbourhood_nodes": 7,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L6",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "limb_bud_initiation": {
-   "structural_confidence": 0.902,
-   "band": "high",
-   "components": {
-    "local_density": 0.662,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.999
-   },
-   "neighbourhood_nodes": 69,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L11",
-    "L12",
-    "L13",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
   "mesenchymal_condensation": {
-   "structural_confidence": 0.895,
+   "structural_confidence": 0.893,
    "band": "high",
    "components": {
-    "local_density": 0.697,
+    "local_density": 0.691,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 85,
+   "neighbourhood_nodes": 87,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77600,10 +78428,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "pitx1_gene": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -77620,7 +78448,7 @@
    "structural_confidence": 0.979,
    "band": "high",
    "components": {
-    "local_density": 0.92,
+    "local_density": 0.918,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -77654,15 +78482,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "secondary_ossification_center": {
-   "structural_confidence": 0.999,
+   "structural_confidence": 0.997,
    "band": "high",
    "components": {
-    "local_density": 0.996,
+    "local_density": 0.991,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 132,
+   "neighbourhood_nodes": 134,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77680,15 +78508,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "sox9_chondrogenic_commitment": {
-   "structural_confidence": 0.906,
+   "structural_confidence": 0.905,
    "band": "high",
    "components": {
-    "local_density": 0.675,
+    "local_density": 0.67,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 70,
+   "neighbourhood_nodes": 72,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77707,7 +78535,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -77723,7 +78551,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -77738,10 +78566,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "vascular_invasion_poc": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -77762,7 +78590,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -77778,7 +78606,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -77794,7 +78622,7 @@
    "structural_confidence": 0.599,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.25,
     "layer_completeness": 0.995
@@ -77815,7 +78643,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.897
    },
-   "neighbourhood_nodes": 49,
+   "neighbourhood_nodes": 50,
    "layers_crossed": [
     "L1",
     "L10",
@@ -77833,7 +78661,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -77876,7 +78704,7 @@
    "structural_confidence": 0.25,
    "band": "very_low",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -77897,7 +78725,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
    },
-   "neighbourhood_nodes": 91,
+   "neighbourhood_nodes": 92,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77921,7 +78749,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 223,
+   "neighbourhood_nodes": 224,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77949,7 +78777,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 233,
+   "neighbourhood_nodes": 235,
    "layers_crossed": [
     "L0",
     "L1",
@@ -77977,7 +78805,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 234,
+   "neighbourhood_nodes": 236,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78005,7 +78833,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 231,
+   "neighbourhood_nodes": 233,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78033,7 +78861,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 235,
+   "neighbourhood_nodes": 237,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78061,7 +78889,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 238,
+   "neighbourhood_nodes": 240,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78104,7 +78932,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 233,
+   "neighbourhood_nodes": 235,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78127,7 +78955,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78148,7 +78976,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 233,
+   "neighbourhood_nodes": 235,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78171,7 +78999,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78191,7 +79019,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 264,
+   "neighbourhood_nodes": 266,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78214,7 +79042,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -78229,7 +79057,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78244,7 +79072,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78260,7 +79088,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78272,15 +79100,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "preterm_birth_growth": {
-   "structural_confidence": 0.987,
+   "structural_confidence": 0.984,
    "band": "high",
    "components": {
-    "local_density": 0.951,
+    "local_density": 0.94,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 89,
+   "neighbourhood_nodes": 91,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78307,7 +79135,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 233,
+   "neighbourhood_nodes": 235,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78335,7 +79163,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 106,
+   "neighbourhood_nodes": 107,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78358,7 +79186,7 @@
    "structural_confidence": 0.675,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -78373,7 +79201,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -78388,7 +79216,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78418,7 +79246,7 @@
    "structural_confidence": 0.903,
    "band": "high",
    "components": {
-    "local_density": 0.668,
+    "local_density": 0.667,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.997
@@ -78435,7 +79263,7 @@
    "structural_confidence": 0.737,
    "band": "moderate",
    "components": {
-    "local_density": 0.668,
+    "local_density": 0.667,
     "stub_penalty": 1.0,
     "sign_coverage": 0.444,
     "layer_completeness": 0.997
@@ -78452,7 +79280,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78465,20 +79293,21 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "vitamin_d_deficiency_rickets": {
-   "structural_confidence": 0.905,
+   "structural_confidence": 0.907,
    "band": "high",
    "components": {
-    "local_density": 0.67,
+    "local_density": 0.678,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 38,
+   "neighbourhood_nodes": 39,
    "layers_crossed": [
     "L0",
     "L1",
     "L10",
     "L11",
+    "L12",
     "L2",
     "L3",
     "L4",
@@ -78492,7 +79321,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78505,15 +79334,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "acan_related_short_stature": {
-   "structural_confidence": 0.967,
+   "structural_confidence": 0.965,
    "band": "high",
    "components": {
-    "local_density": 0.947,
+    "local_density": 0.942,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78539,7 +79368,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 200,
+   "neighbourhood_nodes": 202,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78562,7 +79391,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78583,7 +79412,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 163,
+   "neighbourhood_nodes": 165,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78603,10 +79432,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "allan_herndon_dudley": {
-   "structural_confidence": 0.714,
+   "structural_confidence": 0.713,
    "band": "moderate",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -78627,7 +79456,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 105,
+   "neighbourhood_nodes": 106,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78650,7 +79479,7 @@
    "structural_confidence": 0.911,
    "band": "high",
    "components": {
-    "local_density": 0.779,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.884
@@ -78714,7 +79543,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78730,7 +79559,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78745,7 +79574,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78799,7 +79628,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 198,
+   "neighbourhood_nodes": 200,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78822,7 +79651,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78835,10 +79664,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "congenital_hypothyroidism": {
-   "structural_confidence": 0.714,
+   "structural_confidence": 0.713,
    "band": "moderate",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -78851,10 +79680,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "cushing_syndrome_growth": {
-   "structural_confidence": 0.714,
+   "structural_confidence": 0.713,
    "band": "moderate",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -78870,7 +79699,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78883,15 +79712,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "estrogen_resistance_esr1": {
-   "structural_confidence": 0.97,
+   "structural_confidence": 0.967,
    "band": "high",
    "components": {
-    "local_density": 0.947,
+    "local_density": 0.937,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78914,7 +79743,7 @@
    "structural_confidence": 0.25,
    "band": "very_low",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -78930,7 +79759,7 @@
    "structural_confidence": 0.811,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -78952,7 +79781,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 204,
+   "neighbourhood_nodes": 206,
    "layers_crossed": [
     "L0",
     "L1",
@@ -78991,7 +79820,7 @@
    "structural_confidence": 0.214,
    "band": "very_low",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.54
@@ -79004,10 +79833,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "igf1_deficiency_human": {
-   "structural_confidence": 0.721,
+   "structural_confidence": 0.72,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.75,
     "layer_completeness": 0.693
@@ -79029,7 +79858,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 213,
+   "neighbourhood_nodes": 214,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79052,7 +79881,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -79093,7 +79922,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -79131,7 +79960,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 231,
+   "neighbourhood_nodes": 233,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79154,7 +79983,7 @@
    "structural_confidence": 0.982,
    "band": "high",
    "components": {
-    "local_density": 0.932,
+    "local_density": 0.931,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -79172,15 +80001,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "marfan_syndrome": {
-   "structural_confidence": 0.976,
+   "structural_confidence": 0.973,
    "band": "high",
    "components": {
-    "local_density": 0.909,
+    "local_density": 0.898,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 80,
+   "neighbourhood_nodes": 82,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79199,7 +80028,7 @@
    "structural_confidence": 0.811,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -79218,7 +80047,7 @@
    "structural_confidence": 0.795,
    "band": "high",
    "components": {
-    "local_density": 0.693,
+    "local_density": 0.691,
     "stub_penalty": 1.0,
     "sign_coverage": 0.75,
     "layer_completeness": 0.77
@@ -79233,62 +80062,6 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "noonan_syndrome": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 161,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "nppc_duplication_tall_stature": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 164,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "npr2_gain_of_function_tall": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -79316,7 +80089,35 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "npr2_heterozygous_short_stature": {
+  "nppc_duplication_tall_stature": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 166,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "npr2_gain_of_function_tall": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -79344,11 +80145,39 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
+  "npr2_heterozygous_short_stature": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 167,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
   "osteogenesis_imperfecta_growth": {
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -79364,7 +80193,7 @@
    "structural_confidence": 0.944,
    "band": "high",
    "components": {
-    "local_density": 0.917,
+    "local_density": 0.915,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.867
@@ -79401,7 +80230,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -79416,7 +80245,7 @@
    "structural_confidence": 0.774,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.693
@@ -79482,7 +80311,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 227,
+   "neighbourhood_nodes": 228,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79505,15 +80334,16 @@
    "structural_confidence": 0.925,
    "band": "high",
    "components": {
-    "local_density": 0.827,
+    "local_density": 0.815,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.884
+    "layer_completeness": 0.897
    },
-   "neighbourhood_nodes": 27,
+   "neighbourhood_nodes": 28,
    "layers_crossed": [
     "L1",
     "L11",
+    "L12",
     "L13",
     "L3",
     "L4",
@@ -79527,7 +80357,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -79543,7 +80373,7 @@
    "structural_confidence": 0.774,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.693
@@ -79565,7 +80395,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 235,
+   "neighbourhood_nodes": 237,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79593,7 +80423,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 212,
+   "neighbourhood_nodes": 214,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79613,10 +80443,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "turner_syndrome": {
-   "structural_confidence": 0.721,
+   "structural_confidence": 0.72,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.75,
     "layer_completeness": 0.693
@@ -79638,7 +80468,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 127,
+   "neighbourhood_nodes": 129,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79706,7 +80536,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 149,
+   "neighbourhood_nodes": 150,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79726,15 +80556,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "aromatase_inhibitor_letrozole": {
-   "structural_confidence": 0.954,
+   "structural_confidence": 0.953,
    "band": "high",
    "components": {
-    "local_density": 0.885,
+    "local_density": 0.884,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 128,
+   "neighbourhood_nodes": 129,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79754,10 +80584,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "bisphosphonate_growth_plate": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -79781,7 +80611,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 179,
+   "neighbourhood_nodes": 181,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79804,7 +80634,7 @@
    "structural_confidence": 0.644,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.333,
     "layer_completeness": 0.995
@@ -79817,15 +80647,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "deflazacort": {
-   "structural_confidence": 0.987,
+   "structural_confidence": 0.984,
    "band": "high",
    "components": {
-    "local_density": 0.951,
+    "local_density": 0.94,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 89,
+   "neighbourhood_nodes": 91,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79843,16 +80673,44 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "estrogen_low_dose_therapy": {
-   "structural_confidence": 0.971,
+  "erdafitinib": {
+   "structural_confidence": 0.983,
    "band": "high",
    "components": {
-    "local_density": 0.953,
+    "local_density": 1.0,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 103,
+   "neighbourhood_nodes": 260,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "estrogen_low_dose_therapy": {
+   "structural_confidence": 0.969,
+   "band": "high",
+   "components": {
+    "local_density": 0.943,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 105,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79880,7 +80738,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 228,
+   "neighbourhood_nodes": 229,
    "layers_crossed": [
     "L0",
     "L1",
@@ -79919,7 +80777,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -79935,7 +80793,7 @@
    "structural_confidence": 0.851,
    "band": "high",
    "components": {
-    "local_density": 0.604,
+    "local_density": 0.603,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.869
@@ -79956,7 +80814,7 @@
    "structural_confidence": 0.811,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -79978,7 +80836,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 96,
+   "neighbourhood_nodes": 98,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80004,7 +80862,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 237,
+   "neighbourhood_nodes": 239,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80032,7 +80890,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 222,
+   "neighbourhood_nodes": 224,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80052,15 +80910,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "inhaled_corticosteroid_growth": {
-   "structural_confidence": 0.955,
+   "structural_confidence": 0.953,
    "band": "high",
    "components": {
-    "local_density": 0.89,
+    "local_density": 0.882,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 115,
+   "neighbourhood_nodes": 117,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80080,10 +80938,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "limb_lengthening_surgery": {
-   "structural_confidence": 0.807,
+   "structural_confidence": 0.806,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.816
@@ -80102,7 +80960,7 @@
    "structural_confidence": 0.814,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.847
@@ -80122,7 +80980,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -80135,239 +80993,6 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "meclizine_repurposing": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 227,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "methylphenidate_growth": {
-   "structural_confidence": 0.91,
-   "band": "high",
-   "components": {
-    "local_density": 0.685,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.999
-   },
-   "neighbourhood_nodes": 44,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L11",
-    "L12",
-    "L13",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "navepegritide": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 193,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "npr2_agonist_class": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 163,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "octreotide_somatostatin_analog": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 151,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "oxandrolone": {
-   "structural_confidence": 0.882,
-   "band": "high",
-   "components": {
-    "local_density": 0.655,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.922
-   },
-   "neighbourhood_nodes": 73,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L11",
-    "L12",
-    "L13",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "pegvisomant": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 255,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "recombinant_human_gh": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 232,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "regulatory_review_document": {
-   "structural_confidence": 0.226,
-   "band": "very_low",
-   "components": {
-    "local_density": 0.26,
-    "stub_penalty": 1.0,
-    "sign_coverage": 0.0,
-    "layer_completeness": 1.0
-   },
-   "neighbourhood_nodes": 2,
-   "layers_crossed": [
-    "L12"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "soluble_fgfr3_decoy": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -80395,6 +81020,239 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
+  "methylphenidate_growth": {
+   "structural_confidence": 0.907,
+   "band": "high",
+   "components": {
+    "local_density": 0.676,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.999
+   },
+   "neighbourhood_nodes": 46,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L11",
+    "L12",
+    "L13",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "navepegritide": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 195,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "npr2_agonist_class": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 165,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "octreotide_somatostatin_analog": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 152,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "oxandrolone": {
+   "structural_confidence": 0.88,
+   "band": "high",
+   "components": {
+    "local_density": 0.65,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.922
+   },
+   "neighbourhood_nodes": 75,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L11",
+    "L12",
+    "L13",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "pegvisomant": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 257,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "recombinant_human_gh": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 234,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "regulatory_review_document": {
+   "structural_confidence": 0.226,
+   "band": "very_low",
+   "components": {
+    "local_density": 0.259,
+    "stub_penalty": 1.0,
+    "sign_coverage": 0.0,
+    "layer_completeness": 1.0
+   },
+   "neighbourhood_nodes": 2,
+   "layers_crossed": [
+    "L12"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "soluble_fgfr3_decoy": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 229,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
   "statin_ipsc_achondroplasia": {
    "structural_confidence": 0.983,
    "band": "high",
@@ -80404,7 +81262,35 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 227,
+   "neighbourhood_nodes": 228,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "tadalafil": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 131,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80457,7 +81343,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 235,
+   "neighbourhood_nodes": 237,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80480,7 +81366,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -80492,10 +81378,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "tyrosine_kinase_inhibitor_growth_toxicity": {
-   "structural_confidence": 0.807,
+   "structural_confidence": 0.806,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.816
@@ -80519,7 +81405,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 163,
+   "neighbourhood_nodes": 165,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80542,7 +81428,7 @@
    "structural_confidence": 0.869,
    "band": "high",
    "components": {
-    "local_density": 0.571,
+    "local_density": 0.57,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -80560,7 +81446,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -80577,7 +81463,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -80593,7 +81479,7 @@
    "structural_confidence": 0.87,
    "band": "high",
    "components": {
-    "local_density": 0.632,
+    "local_density": 0.631,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
@@ -80632,7 +81518,7 @@
    "structural_confidence": 0.885,
    "band": "high",
    "components": {
-    "local_density": 0.614,
+    "local_density": 0.613,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -80653,7 +81539,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -80700,19 +81586,20 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "growth_plate_explant_culture": {
-   "structural_confidence": 0.978,
+   "structural_confidence": 0.98,
    "band": "high",
    "components": {
     "local_density": 1.0,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.915
+    "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 65,
+   "neighbourhood_nodes": 66,
    "layers_crossed": [
     "L0",
     "L1",
     "L11",
+    "L12",
     "L13",
     "L2",
     "L3",
@@ -80775,7 +81662,7 @@
    "structural_confidence": 0.915,
    "band": "high",
    "components": {
-    "local_density": 0.767,
+    "local_density": 0.765,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.915
@@ -80800,7 +81687,7 @@
    "structural_confidence": 0.915,
    "band": "high",
    "components": {
-    "local_density": 0.767,
+    "local_density": 0.765,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.915
@@ -80830,7 +81717,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 124,
+   "neighbourhood_nodes": 126,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80858,7 +81745,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 185,
+   "neighbourhood_nodes": 186,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80895,7 +81782,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -80911,7 +81798,7 @@
    "structural_confidence": 0.978,
    "band": "high",
    "components": {
-    "local_density": 0.917,
+    "local_density": 0.916,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -80933,7 +81820,7 @@
    "structural_confidence": 0.869,
    "band": "high",
    "components": {
-    "local_density": 0.571,
+    "local_density": 0.57,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -80956,7 +81843,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 95,
+   "neighbourhood_nodes": 97,
    "layers_crossed": [
     "L0",
     "L1",
@@ -80974,15 +81861,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "micro_ct_growth_plate": {
-   "structural_confidence": 0.911,
+   "structural_confidence": 0.909,
    "band": "high",
    "components": {
-    "local_density": 0.688,
+    "local_density": 0.683,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 77,
+   "neighbourhood_nodes": 79,
    "layers_crossed": [
     "L0",
     "L1",
@@ -81016,7 +81903,7 @@
    "structural_confidence": 0.911,
    "band": "high",
    "components": {
-    "local_density": 0.779,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.884
@@ -81100,7 +81987,7 @@
    "structural_confidence": 0.888,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81114,15 +82001,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "rabbit_growth_plate_model": {
-   "structural_confidence": 0.984,
+   "structural_confidence": 0.981,
    "band": "high",
    "components": {
-    "local_density": 0.939,
+    "local_density": 0.926,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 73,
+   "neighbourhood_nodes": 75,
    "layers_crossed": [
     "L0",
     "L1",
@@ -81143,7 +82030,7 @@
    "structural_confidence": 0.906,
    "band": "high",
    "components": {
-    "local_density": 0.675,
+    "local_density": 0.674,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81176,7 +82063,7 @@
    "structural_confidence": 0.87,
    "band": "high",
    "components": {
-    "local_density": 0.632,
+    "local_density": 0.631,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
@@ -81200,7 +82087,7 @@
    "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.997
@@ -81230,10 +82117,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "stereology_growth_plate": {
-   "structural_confidence": 0.868,
+   "structural_confidence": 0.867,
    "band": "high",
    "components": {
-    "local_density": 0.567,
+    "local_density": 0.566,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -81254,7 +82141,7 @@
    "structural_confidence": 0.888,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81286,7 +82173,7 @@
    "structural_confidence": 0.888,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81315,10 +82202,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "appositional_growth": {
-   "structural_confidence": 0.687,
+   "structural_confidence": 0.686,
    "band": "moderate",
    "components": {
-    "local_density": 0.445,
+    "local_density": 0.444,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -81351,7 +82238,7 @@
    "structural_confidence": 0.803,
    "band": "high",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81367,7 +82254,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -81382,7 +82269,7 @@
    "structural_confidence": 0.866,
    "band": "high",
    "components": {
-    "local_density": 0.563,
+    "local_density": 0.562,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81401,7 +82288,7 @@
    "structural_confidence": 0.747,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.75,
     "layer_completeness": 1.0
@@ -81418,7 +82305,7 @@
    "structural_confidence": 0.767,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.667,
     "layer_completeness": 1.0
@@ -81452,7 +82339,7 @@
    "structural_confidence": 0.88,
    "band": "high",
    "components": {
-    "local_density": 0.601,
+    "local_density": 0.6,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -81470,15 +82357,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "chondrocyte_hypertrophy": {
-   "structural_confidence": 0.982,
+   "structural_confidence": 0.978,
    "band": "high",
    "components": {
-    "local_density": 0.929,
+    "local_density": 0.917,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 76,
+   "neighbourhood_nodes": 78,
    "layers_crossed": [
     "L0",
     "L1",
@@ -81494,15 +82381,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "chondrocyte_proliferation_rate": {
-   "structural_confidence": 0.974,
+   "structural_confidence": 0.97,
    "band": "high",
    "components": {
-    "local_density": 0.901,
+    "local_density": 0.888,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 64,
+   "neighbourhood_nodes": 66,
    "layers_crossed": [
     "L0",
     "L1",
@@ -81522,7 +82409,7 @@
    "structural_confidence": 0.893,
    "band": "high",
    "components": {
-    "local_density": 0.637,
+    "local_density": 0.636,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -81543,7 +82430,7 @@
    "structural_confidence": 0.767,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 0.8,
     "layer_completeness": 1.0
@@ -81561,7 +82448,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -81576,7 +82463,7 @@
    "structural_confidence": 0.747,
    "band": "moderate",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -81593,7 +82480,7 @@
    "structural_confidence": 0.675,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -81608,15 +82495,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "elongation_budget": {
-   "structural_confidence": 0.943,
+   "structural_confidence": 0.939,
    "band": "high",
    "components": {
-    "local_density": 0.79,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 48,
+   "neighbourhood_nodes": 50,
    "layers_crossed": [
     "L0",
     "L1",
@@ -81632,10 +82519,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "epiphyseal_vasculature": {
-   "structural_confidence": 0.973,
+   "structural_confidence": 0.972,
    "band": "high",
    "components": {
-    "local_density": 0.896,
+    "local_density": 0.895,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -81672,15 +82559,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "growth_plate": {
-   "structural_confidence": 0.902,
+   "structural_confidence": 0.9,
    "band": "high",
    "components": {
-    "local_density": 0.662,
+    "local_density": 0.657,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 69,
+   "neighbourhood_nodes": 71,
    "layers_crossed": [
     "L0",
     "L1",
@@ -81699,7 +82586,7 @@
    "structural_confidence": 0.714,
    "band": "moderate",
    "components": {
-    "local_density": 0.631,
+    "local_density": 0.63,
     "stub_penalty": 1.0,
     "sign_coverage": 0.412,
     "layer_completeness": 1.0
@@ -81715,15 +82602,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "growth_velocity_longitudinal": {
-   "structural_confidence": 0.744,
+   "structural_confidence": 0.742,
    "band": "moderate",
    "components": {
-    "local_density": 0.685,
+    "local_density": 0.676,
     "stub_penalty": 1.0,
-    "sign_coverage": 0.448,
+    "sign_coverage": 0.45,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 44,
+   "neighbourhood_nodes": 46,
    "layers_crossed": [
     "L0",
     "L1",
@@ -81742,7 +82629,7 @@
    "structural_confidence": 0.874,
    "band": "high",
    "components": {
-    "local_density": 0.643,
+    "local_density": 0.642,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
@@ -81766,7 +82653,7 @@
    "structural_confidence": 0.866,
    "band": "high",
    "components": {
-    "local_density": 0.563,
+    "local_density": 0.562,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -81784,10 +82671,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "hypertrophic_volume_increase": {
-   "structural_confidence": 0.73,
+   "structural_confidence": 0.729,
    "band": "moderate",
    "components": {
-    "local_density": 0.567,
+    "local_density": 0.566,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 0.999
@@ -81805,18 +82692,19 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "hypertrophic_zone": {
-   "structural_confidence": 0.79,
+   "structural_confidence": 0.793,
    "band": "high",
    "components": {
-    "local_density": 0.584,
+    "local_density": 0.579,
     "stub_penalty": 1.0,
-    "sign_coverage": 0.667,
-    "layer_completeness": 0.998
+    "sign_coverage": 0.684,
+    "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 16,
+   "neighbourhood_nodes": 17,
    "layers_crossed": [
     "L1",
     "L11",
+    "L12",
     "L3",
     "L4",
     "L5",
@@ -81828,7 +82716,7 @@
    "structural_confidence": 0.675,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -81841,10 +82729,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "metaphyseal_funnelization": {
-   "structural_confidence": 0.714,
+   "structural_confidence": 0.713,
    "band": "moderate",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81856,10 +82744,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "metaphyseal_vasculature": {
-   "structural_confidence": 0.898,
+   "structural_confidence": 0.897,
    "band": "high",
    "components": {
-    "local_density": 0.649,
+    "local_density": 0.648,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -81878,7 +82766,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.997
@@ -81927,7 +82815,7 @@
    "structural_confidence": 0.87,
    "band": "high",
    "components": {
-    "local_density": 0.632,
+    "local_density": 0.631,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
@@ -81948,10 +82836,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "prehypertrophic_zone": {
-   "structural_confidence": 0.714,
+   "structural_confidence": 0.713,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -81967,7 +82855,7 @@
    "structural_confidence": 0.747,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.75,
     "layer_completeness": 1.0
@@ -81983,7 +82871,7 @@
    "structural_confidence": 0.881,
    "band": "high",
    "components": {
-    "local_density": 0.665,
+    "local_density": 0.664,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
@@ -82007,7 +82895,7 @@
    "structural_confidence": 0.776,
    "band": "high",
    "components": {
-    "local_density": 0.571,
+    "local_density": 0.57,
     "stub_penalty": 1.0,
     "sign_coverage": 0.636,
     "layer_completeness": 1.0
@@ -82040,7 +82928,7 @@
    "structural_confidence": 0.747,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.6,
     "layer_completeness": 1.0
@@ -82057,7 +82945,7 @@
    "structural_confidence": 0.882,
    "band": "high",
    "components": {
-    "local_density": 0.668,
+    "local_density": 0.667,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
@@ -82078,10 +82966,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "resting_zone": {
-   "structural_confidence": 0.971,
+   "structural_confidence": 0.97,
    "band": "high",
    "components": {
-    "local_density": 0.889,
+    "local_density": 0.888,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82121,7 +83009,7 @@
    "structural_confidence": 0.894,
    "band": "high",
    "components": {
-    "local_density": 0.639,
+    "local_density": 0.638,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -82140,7 +83028,7 @@
    "structural_confidence": 0.513,
    "band": "moderate",
    "components": {
-    "local_density": 0.589,
+    "local_density": 0.588,
     "stub_penalty": 1.0,
     "sign_coverage": 0.118,
     "layer_completeness": 1.0
@@ -82158,7 +83046,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82173,7 +83061,7 @@
    "structural_confidence": 0.905,
    "band": "high",
    "components": {
-    "local_density": 0.672,
+    "local_density": 0.671,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.998
@@ -82193,7 +83081,7 @@
    "structural_confidence": 0.675,
    "band": "moderate",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 0.333,
     "layer_completeness": 1.0
@@ -82210,7 +83098,7 @@
    "structural_confidence": 0.912,
    "band": "high",
    "components": {
-    "local_density": 0.822,
+    "local_density": 0.821,
     "stub_penalty": 1.0,
     "sign_coverage": 0.842,
     "layer_completeness": 1.0
@@ -82226,7 +83114,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82241,7 +83129,7 @@
    "structural_confidence": 0.767,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.667,
     "layer_completeness": 1.0
@@ -82253,10 +83141,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "catch_up_growth": {
-   "structural_confidence": 0.621,
+   "structural_confidence": 0.62,
    "band": "moderate",
    "components": {
-    "local_density": 0.668,
+    "local_density": 0.667,
     "stub_penalty": 1.0,
     "sign_coverage": 0.222,
     "layer_completeness": 1.0
@@ -82273,7 +83161,7 @@
    "structural_confidence": 0.897,
    "band": "high",
    "components": {
-    "local_density": 0.649,
+    "local_density": 0.648,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.998
@@ -82293,7 +83181,7 @@
    "structural_confidence": 0.879,
    "band": "high",
    "components": {
-    "local_density": 0.599,
+    "local_density": 0.598,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.998
@@ -82313,7 +83201,7 @@
    "structural_confidence": 0.976,
    "band": "high",
    "components": {
-    "local_density": 0.909,
+    "local_density": 0.907,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82334,15 +83222,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "clonal_exhaustion": {
-   "structural_confidence": 0.986,
+   "structural_confidence": 0.983,
    "band": "high",
    "components": {
-    "local_density": 0.946,
+    "local_density": 0.933,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 78,
+   "neighbourhood_nodes": 80,
    "layers_crossed": [
     "L0",
     "L1",
@@ -82360,10 +83248,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "clonal_lineage_tracing": {
-   "structural_confidence": 0.884,
+   "structural_confidence": 0.883,
    "band": "high",
    "components": {
-    "local_density": 0.61,
+    "local_density": 0.609,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82381,10 +83269,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "confetti_reporter": {
-   "structural_confidence": 0.884,
+   "structural_confidence": 0.883,
    "band": "high",
    "components": {
-    "local_density": 0.61,
+    "local_density": 0.609,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82417,10 +83305,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "delayed_senescence_hypothesis": {
-   "structural_confidence": 0.922,
+   "structural_confidence": 0.921,
    "band": "high",
    "components": {
-    "local_density": 0.816,
+    "local_density": 0.815,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.884
@@ -82442,7 +83330,7 @@
    "structural_confidence": 0.6,
    "band": "moderate",
    "components": {
-    "local_density": 0.649,
+    "local_density": 0.648,
     "stub_penalty": 1.0,
     "sign_coverage": 0.2,
     "layer_completeness": 1.0
@@ -82458,7 +83346,7 @@
    "structural_confidence": 0.897,
    "band": "high",
    "components": {
-    "local_density": 0.649,
+    "local_density": 0.648,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82492,15 +83380,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "growth_plate_senescence": {
-   "structural_confidence": 0.984,
+   "structural_confidence": 0.981,
    "band": "high",
    "components": {
-    "local_density": 0.939,
+    "local_density": 0.926,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 73,
+   "neighbourhood_nodes": 75,
    "layers_crossed": [
     "L0",
     "L1",
@@ -82521,7 +83409,7 @@
    "structural_confidence": 0.714,
    "band": "moderate",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.667,
     "layer_completeness": 1.0
@@ -82535,10 +83423,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "human_skeletal_stem_cell": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -82554,7 +83442,7 @@
    "structural_confidence": 0.888,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82575,7 +83463,7 @@
    "structural_confidence": 0.747,
    "band": "moderate",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -82591,7 +83479,7 @@
    "structural_confidence": 0.25,
    "band": "very_low",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82622,7 +83510,7 @@
    "structural_confidence": 0.885,
    "band": "high",
    "components": {
-    "local_density": 0.614,
+    "local_density": 0.613,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82640,10 +83528,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "mouse_skeletal_stem_cell_hierarchy": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -82658,7 +83546,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82673,7 +83561,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82689,7 +83577,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82704,7 +83592,7 @@
    "structural_confidence": 0.79,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -82721,7 +83609,7 @@
    "structural_confidence": 0.897,
    "band": "high",
    "components": {
-    "local_density": 0.649,
+    "local_density": 0.648,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82743,7 +83631,7 @@
    "structural_confidence": 0.923,
    "band": "high",
    "components": {
-    "local_density": 0.727,
+    "local_density": 0.726,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -82759,7 +83647,7 @@
    "structural_confidence": 0.982,
    "band": "high",
    "components": {
-    "local_density": 0.93,
+    "local_density": 0.929,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82783,7 +83671,7 @@
    "structural_confidence": 0.281,
    "band": "very_low",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82812,10 +83700,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "soc_formation_triggers_stemness": {
-   "structural_confidence": 0.543,
+   "structural_confidence": 0.542,
    "band": "moderate",
    "components": {
-    "local_density": 0.606,
+    "local_density": 0.605,
     "stub_penalty": 1.0,
     "sign_coverage": 0.143,
     "layer_completeness": 1.0
@@ -82832,7 +83720,7 @@
    "structural_confidence": 0.714,
    "band": "moderate",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.667,
     "layer_completeness": 1.0
@@ -82849,7 +83737,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -82870,7 +83758,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 233,
+   "neighbourhood_nodes": 235,
    "layers_crossed": [
     "L0",
     "L1",
@@ -82893,7 +83781,7 @@
    "structural_confidence": 0.892,
    "band": "high",
    "components": {
-    "local_density": 0.635,
+    "local_density": 0.634,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -82911,15 +83799,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "beta2_adrenoceptor_chondrocyte": {
-   "structural_confidence": 0.91,
+   "structural_confidence": 0.908,
    "band": "high",
    "components": {
-    "local_density": 0.739,
+    "local_density": 0.731,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 64,
+   "neighbourhood_nodes": 66,
    "layers_crossed": [
     "L0",
     "L1",
@@ -82946,7 +83834,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 209,
+   "neighbourhood_nodes": 211,
    "layers_crossed": [
     "L0",
     "L1",
@@ -82974,7 +83862,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 161,
+   "neighbourhood_nodes": 163,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83002,7 +83890,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 161,
+   "neighbourhood_nodes": 163,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83030,7 +83918,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 161,
+   "neighbourhood_nodes": 163,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83058,7 +83946,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 214,
+   "neighbourhood_nodes": 216,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83086,7 +83974,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 170,
+   "neighbourhood_nodes": 172,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83114,7 +84002,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 161,
+   "neighbourhood_nodes": 163,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83142,7 +84030,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 209,
+   "neighbourhood_nodes": 211,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83196,7 +84084,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 112,
+   "neighbourhood_nodes": 114,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83217,7 +84105,7 @@
    "structural_confidence": 0.225,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.99
@@ -83232,7 +84120,7 @@
    "structural_confidence": 0.225,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.99
@@ -83247,7 +84135,7 @@
    "structural_confidence": 0.225,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.99
@@ -83267,7 +84155,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 162,
+   "neighbourhood_nodes": 164,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83290,7 +84178,7 @@
    "structural_confidence": 0.766,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.667,
     "layer_completeness": 0.995
@@ -83311,7 +84199,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 163,
+   "neighbourhood_nodes": 165,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83339,7 +84227,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 163,
+   "neighbourhood_nodes": 165,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83367,7 +84255,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 223,
+   "neighbourhood_nodes": 225,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83395,7 +84283,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 227,
+   "neighbourhood_nodes": 228,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83415,15 +84303,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "foxa_family_chondrocyte": {
-   "structural_confidence": 0.964,
+   "structural_confidence": 0.963,
    "band": "high",
    "components": {
-    "local_density": 0.944,
+    "local_density": 0.94,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.915
    },
-   "neighbourhood_nodes": 132,
+   "neighbourhood_nodes": 134,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83448,7 +84336,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 112,
+   "neighbourhood_nodes": 114,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83476,7 +84364,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 185,
+   "neighbourhood_nodes": 187,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83499,7 +84387,7 @@
    "structural_confidence": 0.788,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.99
@@ -83511,10 +84399,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "gli2_tf": {
-   "structural_confidence": 0.91,
+   "structural_confidence": 0.909,
    "band": "high",
    "components": {
-    "local_density": 0.693,
+    "local_density": 0.691,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.99
@@ -83534,7 +84422,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 185,
+   "neighbourhood_nodes": 186,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83561,7 +84449,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 201,
+   "neighbourhood_nodes": 202,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83589,7 +84477,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 197,
+   "neighbourhood_nodes": 199,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83617,7 +84505,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 185,
+   "neighbourhood_nodes": 186,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83644,7 +84532,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 217,
+   "neighbourhood_nodes": 219,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83667,12 +84555,12 @@
    "structural_confidence": 0.998,
    "band": "high",
    "components": {
-    "local_density": 0.995,
+    "local_density": 0.994,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 118,
+   "neighbourhood_nodes": 120,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83691,15 +84579,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "hypoxic_gradient_signaling": {
-   "structural_confidence": 1.0,
+   "structural_confidence": 0.999,
    "band": "high",
    "components": {
-    "local_density": 1.0,
+    "local_density": 0.998,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 119,
+   "neighbourhood_nodes": 121,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83726,7 +84614,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 192,
+   "neighbourhood_nodes": 194,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83777,7 +84665,7 @@
    "structural_confidence": 0.937,
    "band": "high",
    "components": {
-    "local_density": 0.909,
+    "local_density": 0.907,
     "stub_penalty": 1.0,
     "sign_coverage": 0.857,
     "layer_completeness": 0.99
@@ -83797,7 +84685,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 218,
+   "neighbourhood_nodes": 219,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83825,7 +84713,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 200,
+   "neighbourhood_nodes": 202,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83848,7 +84736,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.995
@@ -83861,15 +84749,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "latent_tgfb_matrix_store": {
-   "structural_confidence": 0.979,
+   "structural_confidence": 0.976,
    "band": "high",
    "components": {
-    "local_density": 0.919,
+    "local_density": 0.907,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 78,
+   "neighbourhood_nodes": 80,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83893,7 +84781,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 174,
+   "neighbourhood_nodes": 175,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83921,7 +84809,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 174,
+   "neighbourhood_nodes": 175,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83949,7 +84837,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 197,
+   "neighbourhood_nodes": 199,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83977,7 +84865,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 229,
+   "neighbourhood_nodes": 230,
    "layers_crossed": [
     "L0",
     "L1",
@@ -83997,10 +84885,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "mtorc1_chondrocyte": {
-   "structural_confidence": 0.912,
+   "structural_confidence": 0.911,
    "band": "high",
    "components": {
-    "local_density": 0.749,
+    "local_density": 0.748,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
@@ -84031,7 +84919,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 184,
+   "neighbourhood_nodes": 186,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84059,7 +84947,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 218,
+   "neighbourhood_nodes": 220,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84087,7 +84975,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 231,
+   "neighbourhood_nodes": 233,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84115,7 +85003,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 164,
+   "neighbourhood_nodes": 166,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84175,7 +85063,7 @@
    "structural_confidence": 0.225,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.99
@@ -84220,7 +85108,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 130,
+   "neighbourhood_nodes": 132,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84248,7 +85136,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 128,
+   "neighbourhood_nodes": 130,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84271,7 +85159,7 @@
    "structural_confidence": 0.225,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.99
@@ -84286,7 +85174,7 @@
    "structural_confidence": 0.674,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.4,
     "layer_completeness": 0.995
@@ -84307,7 +85195,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 203,
+   "neighbourhood_nodes": 205,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84335,7 +85223,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 177,
+   "neighbourhood_nodes": 178,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84363,7 +85251,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 145,
+   "neighbourhood_nodes": 147,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84404,7 +85292,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 145,
+   "neighbourhood_nodes": 147,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84430,7 +85318,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 234,
+   "neighbourhood_nodes": 236,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84453,7 +85341,7 @@
    "structural_confidence": 0.913,
    "band": "high",
    "components": {
-    "local_density": 0.754,
+    "local_density": 0.753,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
@@ -84484,7 +85372,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 208,
+   "neighbourhood_nodes": 210,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84512,7 +85400,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 247,
+   "neighbourhood_nodes": 249,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84532,15 +85420,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "runx3_tf": {
-   "structural_confidence": 0.982,
+   "structural_confidence": 0.978,
    "band": "high",
    "components": {
-    "local_density": 0.929,
+    "local_density": 0.917,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 76,
+   "neighbourhood_nodes": 78,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84564,7 +85452,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 165,
+   "neighbourhood_nodes": 167,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84591,7 +85479,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 174,
+   "neighbourhood_nodes": 175,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84619,7 +85507,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 105,
+   "neighbourhood_nodes": 107,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84637,15 +85525,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "smad2_3": {
-   "structural_confidence": 0.98,
+   "structural_confidence": 0.977,
    "band": "high",
    "components": {
-    "local_density": 0.924,
+    "local_density": 0.912,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 77,
+   "neighbourhood_nodes": 79,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84688,15 +85576,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "sox5_tf": {
-   "structural_confidence": 0.969,
+   "structural_confidence": 0.968,
    "band": "high",
    "components": {
-    "local_density": 0.957,
+    "local_density": 0.952,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 133,
+   "neighbourhood_nodes": 135,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84714,15 +85602,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "sox6_tf": {
-   "structural_confidence": 0.969,
+   "structural_confidence": 0.968,
    "band": "high",
    "components": {
-    "local_density": 0.957,
+    "local_density": 0.952,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 133,
+   "neighbourhood_nodes": 135,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84748,7 +85636,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 211,
+   "neighbourhood_nodes": 213,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84768,15 +85656,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "sox_trio": {
-   "structural_confidence": 0.969,
+   "structural_confidence": 0.968,
    "band": "high",
    "components": {
-    "local_density": 0.957,
+    "local_density": 0.952,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 133,
+   "neighbourhood_nodes": 135,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84802,7 +85690,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 161,
+   "neighbourhood_nodes": 163,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84847,15 +85735,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "tgfb_signaling_chondrocyte": {
-   "structural_confidence": 0.979,
+   "structural_confidence": 0.976,
    "band": "high",
    "components": {
-    "local_density": 0.919,
+    "local_density": 0.907,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 78,
+   "neighbourhood_nodes": 80,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84871,15 +85759,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "tgfbr2_receptor": {
-   "structural_confidence": 0.981,
+   "structural_confidence": 0.978,
    "band": "high",
    "components": {
-    "local_density": 0.926,
+    "local_density": 0.914,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 78,
+   "neighbourhood_nodes": 80,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84924,7 +85812,7 @@
    "structural_confidence": 0.897,
    "band": "high",
    "components": {
-    "local_density": 0.649,
+    "local_density": 0.648,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -84942,15 +85830,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "vegfa_growth_plate": {
-   "structural_confidence": 0.93,
+   "structural_confidence": 0.932,
    "band": "high",
    "components": {
-    "local_density": 0.75,
+    "local_density": 0.754,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 54,
+   "neighbourhood_nodes": 55,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84969,12 +85857,12 @@
    "structural_confidence": 0.999,
    "band": "high",
    "components": {
-    "local_density": 0.999,
+    "local_density": 0.998,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 117,
+   "neighbourhood_nodes": 119,
    "layers_crossed": [
     "L0",
     "L1",
@@ -84993,15 +85881,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "wnt5a_ligand": {
-   "structural_confidence": 0.996,
+   "structural_confidence": 0.993,
    "band": "high",
    "components": {
-    "local_density": 0.984,
+    "local_density": 0.973,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 95,
+   "neighbourhood_nodes": 97,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85026,7 +85914,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 178,
+   "neighbourhood_nodes": 179,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85048,7 +85936,7 @@
    "structural_confidence": 0.897,
    "band": "high",
    "components": {
-    "local_density": 0.649,
+    "local_density": 0.648,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -85074,7 +85962,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 197,
+   "neighbourhood_nodes": 199,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85117,7 +86005,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 149,
+   "neighbourhood_nodes": 150,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85137,15 +86025,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "androgen_receptor": {
-   "structural_confidence": 0.913,
+   "structural_confidence": 0.911,
    "band": "high",
    "components": {
-    "local_density": 0.696,
+    "local_density": 0.688,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 47,
+   "neighbourhood_nodes": 49,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85161,15 +86049,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "aromatase_cyp19a1": {
-   "structural_confidence": 0.954,
+   "structural_confidence": 0.953,
    "band": "high",
    "components": {
-    "local_density": 0.885,
+    "local_density": 0.884,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 128,
+   "neighbourhood_nodes": 129,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85197,7 +86085,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.907
    },
-   "neighbourhood_nodes": 75,
+   "neighbourhood_nodes": 76,
    "layers_crossed": [
     "L1",
     "L10",
@@ -85216,7 +86104,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -85229,10 +86117,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "dheas_hormone": {
-   "structural_confidence": 0.714,
+   "structural_confidence": 0.713,
    "band": "moderate",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -85247,7 +86135,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -85295,7 +86183,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 244,
+   "neighbourhood_nodes": 245,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85318,7 +86206,7 @@
    "structural_confidence": 0.811,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -85335,7 +86223,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -85347,15 +86235,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "estradiol_hormone": {
-   "structural_confidence": 0.956,
+   "structural_confidence": 0.955,
    "band": "high",
    "components": {
-    "local_density": 0.899,
+    "local_density": 0.898,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 137,
+   "neighbourhood_nodes": 138,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85377,7 +86265,7 @@
    "structural_confidence": 0.6,
    "band": "moderate",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.333,
     "layer_completeness": 1.0
@@ -85390,233 +86278,6 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "estrogen_gh_axis_amplification": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 106,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "estrogen_receptor_alpha": {
-   "structural_confidence": 0.97,
-   "band": "high",
-   "components": {
-    "local_density": 0.947,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 102,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "estrogen_receptor_beta": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 206,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "fgf23_hormone": {
-   "structural_confidence": 0.981,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.928
-   },
-   "neighbourhood_nodes": 190,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "gh_pulse_pattern_hypothesis": {
-   "structural_confidence": 0.645,
-   "band": "moderate",
-   "components": {
-    "local_density": 0.519,
-    "stub_penalty": 1.0,
-    "sign_coverage": 0.333,
-    "layer_completeness": 1.0
-   },
-   "neighbourhood_nodes": 3,
-   "layers_crossed": [
-    "L1",
-    "L12",
-    "L4"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "gh_receptor": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 234,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "gh_secretion_pulsatility": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 155,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "ghrelin_hormone": {
-   "structural_confidence": 0.226,
-   "band": "very_low",
-   "components": {
-    "local_density": 0.26,
-    "stub_penalty": 1.0,
-    "sign_coverage": 0.0,
-    "layer_completeness": 1.0
-   },
-   "neighbourhood_nodes": 2,
-   "layers_crossed": [
-    "L4"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "ghrh_hormone": {
-   "structural_confidence": 0.983,
-   "band": "high",
-   "components": {
-    "local_density": 1.0,
-    "stub_penalty": 1.0,
-    "sign_coverage": 1.0,
-    "layer_completeness": 0.934
-   },
-   "neighbourhood_nodes": 151,
-   "layers_crossed": [
-    "L0",
-    "L1",
-    "L10",
-    "L11",
-    "L12",
-    "L13",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-    "L9"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "ghsr_receptor": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -85644,16 +86305,16 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "glucocorticoid_cortisol": {
-   "structural_confidence": 0.983,
+  "estrogen_receptor_alpha": {
+   "structural_confidence": 0.967,
    "band": "high",
    "components": {
-    "local_density": 1.0,
+    "local_density": 0.937,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 241,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85672,16 +86333,16 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "glucocorticoid_receptor": {
-   "structural_confidence": 0.986,
+  "estrogen_receptor_beta": {
+   "structural_confidence": 0.983,
    "band": "high",
    "components": {
-    "local_density": 0.947,
+    "local_density": 1.0,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.999
+    "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 90,
+   "neighbourhood_nodes": 208,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85695,28 +86356,56 @@
     "L5",
     "L6",
     "L7",
+    "L8",
     "L9"
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "gnrh_hormone": {
-   "structural_confidence": 0.767,
+  "fgf23_hormone": {
+   "structural_confidence": 0.981,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 1.0,
     "stub_penalty": 1.0,
-    "sign_coverage": 0.8,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.928
+   },
+   "neighbourhood_nodes": 191,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "gh_pulse_pattern_hypothesis": {
+   "structural_confidence": 0.644,
+   "band": "moderate",
+   "components": {
+    "local_density": 0.518,
+    "stub_penalty": 1.0,
+    "sign_coverage": 0.333,
     "layer_completeness": 1.0
    },
-   "neighbourhood_nodes": 6,
+   "neighbourhood_nodes": 3,
    "layers_crossed": [
-    "L10",
+    "L1",
     "L12",
     "L4"
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "gper1_receptor": {
+  "gh_receptor": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -85725,7 +86414,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 233,
+   "neighbourhood_nodes": 236,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85744,7 +86433,7 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "growth_hormone": {
+  "gh_secretion_pulsatility": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -85753,7 +86442,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 210,
+   "neighbourhood_nodes": 156,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85772,11 +86461,11 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "hsd11b1_enzyme": {
+  "ghrelin_hormone": {
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -85787,7 +86476,7 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "hsd11b2_enzyme": {
+  "ghrh_hormone": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -85796,7 +86485,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 245,
+   "neighbourhood_nodes": 152,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85815,23 +86504,7 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "igf1_local_growth_plate": {
-   "structural_confidence": 0.831,
-   "band": "high",
-   "components": {
-    "local_density": 0.779,
-    "stub_penalty": 1.0,
-    "sign_coverage": 0.611,
-    "layer_completeness": 1.0
-   },
-   "neighbourhood_nodes": 12,
-   "layers_crossed": [
-    "L2",
-    "L4"
-   ],
-   "semantics": "graph completeness in this region; NOT evidence quality"
-  },
-  "igf1_receptor": {
+  "ghsr_receptor": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -85840,7 +86513,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 189,
+   "neighbourhood_nodes": 108,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85859,7 +86532,7 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
-  "igf1_systemic": {
+  "glucocorticoid_cortisol": {
    "structural_confidence": 0.983,
    "band": "high",
    "components": {
@@ -85887,11 +86560,226 @@
    ],
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
+  "glucocorticoid_receptor": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 0.936,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.999
+   },
+   "neighbourhood_nodes": 92,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "gnrh_hormone": {
+   "structural_confidence": 0.767,
+   "band": "high",
+   "components": {
+    "local_density": 0.432,
+    "stub_penalty": 1.0,
+    "sign_coverage": 0.8,
+    "layer_completeness": 1.0
+   },
+   "neighbourhood_nodes": 6,
+   "layers_crossed": [
+    "L10",
+    "L12",
+    "L4"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "gper1_receptor": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 235,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "growth_hormone": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 211,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "hsd11b1_enzyme": {
+   "structural_confidence": 0.226,
+   "band": "very_low",
+   "components": {
+    "local_density": 0.259,
+    "stub_penalty": 1.0,
+    "sign_coverage": 0.0,
+    "layer_completeness": 1.0
+   },
+   "neighbourhood_nodes": 2,
+   "layers_crossed": [
+    "L4"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "hsd11b2_enzyme": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 247,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "igf1_local_growth_plate": {
+   "structural_confidence": 0.83,
+   "band": "high",
+   "components": {
+    "local_density": 0.778,
+    "stub_penalty": 1.0,
+    "sign_coverage": 0.611,
+    "layer_completeness": 1.0
+   },
+   "neighbourhood_nodes": 12,
+   "layers_crossed": [
+    "L2",
+    "L4"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "igf1_receptor": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 191,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
+  "igf1_systemic": {
+   "structural_confidence": 0.983,
+   "band": "high",
+   "components": {
+    "local_density": 1.0,
+    "stub_penalty": 1.0,
+    "sign_coverage": 1.0,
+    "layer_completeness": 0.934
+   },
+   "neighbourhood_nodes": 245,
+   "layers_crossed": [
+    "L0",
+    "L1",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9"
+   ],
+   "semantics": "graph completeness in this region; NOT evidence quality"
+  },
   "igf2_hormone": {
    "structural_confidence": 0.828,
    "band": "high",
    "components": {
-    "local_density": 0.577,
+    "local_density": 0.576,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.816
@@ -85915,7 +86803,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 218,
+   "neighbourhood_nodes": 219,
    "layers_crossed": [
     "L0",
     "L1",
@@ -85938,7 +86826,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -85953,7 +86841,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -85973,7 +86861,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 153,
+   "neighbourhood_nodes": 154,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86001,7 +86889,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 213,
+   "neighbourhood_nodes": 214,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86039,7 +86927,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -86059,7 +86947,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 235,
+   "neighbourhood_nodes": 237,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86079,10 +86967,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "insulin_receptor": {
-   "structural_confidence": 0.645,
+   "structural_confidence": 0.644,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.333,
     "layer_completeness": 1.0
@@ -86102,7 +86990,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 206,
+   "neighbourhood_nodes": 207,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86122,10 +87010,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "kiss1r_receptor": {
-   "structural_confidence": 0.817,
+   "structural_confidence": 0.816,
    "band": "high",
    "components": {
-    "local_density": 0.445,
+    "local_density": 0.444,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -86142,7 +87030,7 @@
    "structural_confidence": 0.714,
    "band": "moderate",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.667,
     "layer_completeness": 1.0
@@ -86162,7 +87050,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 232,
+   "neighbourhood_nodes": 233,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86190,7 +87078,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 216,
+   "neighbourhood_nodes": 217,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86210,15 +87098,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "leptin_receptor": {
-   "structural_confidence": 0.996,
+   "structural_confidence": 0.995,
    "band": "high",
    "components": {
-    "local_density": 0.986,
+    "local_density": 0.981,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 109,
+   "neighbourhood_nodes": 111,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86239,7 +87127,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -86259,7 +87147,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 241,
+   "neighbourhood_nodes": 242,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86282,7 +87170,7 @@
    "structural_confidence": 0.79,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -86297,7 +87185,7 @@
    "structural_confidence": 0.977,
    "band": "high",
    "components": {
-    "local_density": 0.997,
+    "local_density": 0.995,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.915
@@ -86327,7 +87215,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 192,
+   "neighbourhood_nodes": 193,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86354,7 +87242,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 98,
+   "neighbourhood_nodes": 99,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86372,19 +87260,20 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "phosphate_homeostasis": {
-   "structural_confidence": 0.893,
+   "structural_confidence": 0.891,
    "band": "high",
    "components": {
-    "local_density": 0.637,
+    "local_density": 0.631,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 22,
+   "neighbourhood_nodes": 23,
    "layers_crossed": [
     "L0",
     "L1",
     "L10",
+    "L12",
     "L2",
     "L3",
     "L4",
@@ -86393,10 +87282,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "pubertal_growth_spurt": {
-   "structural_confidence": 0.257,
+   "structural_confidence": 0.256,
    "band": "very_low",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -86430,7 +87319,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -86450,7 +87339,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 232,
+   "neighbourhood_nodes": 234,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86473,7 +87362,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -86493,7 +87382,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 151,
+   "neighbourhood_nodes": 152,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86548,7 +87437,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 201,
+   "neighbourhood_nodes": 202,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86568,15 +87457,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "testosterone_hormone": {
-   "structural_confidence": 0.973,
+   "structural_confidence": 0.969,
    "band": "high",
    "components": {
-    "local_density": 0.897,
+    "local_density": 0.884,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 66,
+   "neighbourhood_nodes": 68,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86601,7 +87490,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 186,
+   "neighbourhood_nodes": 187,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86628,7 +87517,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 213,
+   "neighbourhood_nodes": 215,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86656,7 +87545,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 225,
+   "neighbourhood_nodes": 226,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86679,7 +87568,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -86691,19 +87580,20 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "vitamin_d_calcitriol": {
-   "structural_confidence": 0.871,
+   "structural_confidence": 0.87,
    "band": "high",
    "components": {
-    "local_density": 0.577,
+    "local_density": 0.573,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 18,
+   "neighbourhood_nodes": 19,
    "layers_crossed": [
     "L1",
     "L10",
     "L11",
+    "L12",
     "L3",
     "L4",
     "L5",
@@ -86720,7 +87610,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 205,
+   "neighbourhood_nodes": 207,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86740,15 +87630,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "adamts4": {
-   "structural_confidence": 0.967,
+   "structural_confidence": 0.965,
    "band": "high",
    "components": {
-    "local_density": 0.947,
+    "local_density": 0.942,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86766,15 +87656,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "adamts5": {
-   "structural_confidence": 0.966,
+   "structural_confidence": 0.964,
    "band": "high",
    "components": {
-    "local_density": 0.943,
+    "local_density": 0.938,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 103,
+   "neighbourhood_nodes": 105,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86792,15 +87682,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "aggrecan_acan": {
-   "structural_confidence": 0.967,
+   "structural_confidence": 0.965,
    "band": "high",
    "components": {
-    "local_density": 0.947,
+    "local_density": 0.942,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86821,7 +87711,7 @@
    "structural_confidence": 0.952,
    "band": "high",
    "components": {
-    "local_density": 0.822,
+    "local_density": 0.821,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -86834,10 +87724,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "biglycan_protein": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -86854,7 +87744,7 @@
    "structural_confidence": 0.675,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -86870,7 +87760,7 @@
    "structural_confidence": 0.747,
    "band": "moderate",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 0.5,
     "layer_completeness": 1.0
@@ -86887,7 +87777,7 @@
    "structural_confidence": 0.714,
    "band": "moderate",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 0.6,
     "layer_completeness": 1.0
@@ -86904,7 +87794,7 @@
    "structural_confidence": 0.714,
    "band": "moderate",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 0.6,
     "layer_completeness": 1.0
@@ -86917,15 +87807,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "collagen_type_ii": {
-   "structural_confidence": 0.89,
+   "structural_confidence": 0.888,
    "band": "high",
    "components": {
-    "local_density": 0.686,
+    "local_density": 0.68,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.915
    },
-   "neighbourhood_nodes": 75,
+   "neighbourhood_nodes": 77,
    "layers_crossed": [
     "L0",
     "L1",
@@ -86945,7 +87835,7 @@
    "structural_confidence": 0.88,
    "band": "high",
    "components": {
-    "local_density": 0.736,
+    "local_density": 0.735,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.816
@@ -86964,15 +87854,16 @@
    "structural_confidence": 0.925,
    "band": "high",
    "components": {
-    "local_density": 0.827,
+    "local_density": 0.815,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.884
+    "layer_completeness": 0.897
    },
-   "neighbourhood_nodes": 27,
+   "neighbourhood_nodes": 28,
    "layers_crossed": [
     "L1",
     "L11",
+    "L12",
     "L13",
     "L3",
     "L4",
@@ -86986,7 +87877,7 @@
    "structural_confidence": 0.811,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87002,7 +87893,7 @@
    "structural_confidence": 0.901,
    "band": "high",
    "components": {
-    "local_density": 0.808,
+    "local_density": 0.807,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.816
@@ -87018,10 +87909,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "decorin_protein": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87037,7 +87928,7 @@
    "structural_confidence": 0.939,
    "band": "high",
    "components": {
-    "local_density": 0.779,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87054,7 +87945,7 @@
    "structural_confidence": 0.967,
    "band": "high",
    "components": {
-    "local_density": 0.875,
+    "local_density": 0.873,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87071,7 +87962,7 @@
    "structural_confidence": 0.6,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.25,
     "layer_completeness": 1.0
@@ -87088,7 +87979,7 @@
    "structural_confidence": 0.811,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87101,15 +87992,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "hyaluronan_matrix": {
-   "structural_confidence": 0.979,
+   "structural_confidence": 0.978,
    "band": "high",
    "components": {
-    "local_density": 0.99,
+    "local_density": 0.984,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 116,
+   "neighbourhood_nodes": 118,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87131,7 +88022,7 @@
    "structural_confidence": 0.934,
    "band": "high",
    "components": {
-    "local_density": 0.762,
+    "local_density": 0.76,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87148,7 +88039,7 @@
    "structural_confidence": 0.939,
    "band": "high",
    "components": {
-    "local_density": 0.779,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87162,18 +88053,19 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "link_protein_hapln1": {
-   "structural_confidence": 0.921,
+   "structural_confidence": 0.918,
    "band": "high",
    "components": {
-    "local_density": 0.721,
+    "local_density": 0.71,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.998
+    "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 18,
+   "neighbourhood_nodes": 19,
    "layers_crossed": [
     "L1",
     "L11",
+    "L12",
     "L3",
     "L4",
     "L5",
@@ -87182,10 +88074,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "lysyl_oxidase": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87203,7 +88095,7 @@
    "structural_confidence": 0.88,
    "band": "high",
    "components": {
-    "local_density": 0.736,
+    "local_density": 0.735,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.816
@@ -87219,15 +88111,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "matrix_gla_protein": {
-   "structural_confidence": 0.917,
+   "structural_confidence": 0.918,
    "band": "high",
    "components": {
-    "local_density": 0.709,
+    "local_density": 0.71,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 82,
+   "neighbourhood_nodes": 84,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87246,7 +88138,7 @@
    "structural_confidence": 0.939,
    "band": "high",
    "components": {
-    "local_density": 0.779,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87277,10 +88169,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "mineralization_front": {
-   "structural_confidence": 0.827,
+   "structural_confidence": 0.826,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 0.75,
     "layer_completeness": 1.0
@@ -87294,15 +88186,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "mmp13_protease": {
-   "structural_confidence": 0.922,
+   "structural_confidence": 0.921,
    "band": "high",
    "components": {
-    "local_density": 0.789,
+    "local_density": 0.788,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.915
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87319,15 +88211,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "mmp14_mt1mmp": {
-   "structural_confidence": 0.923,
+   "structural_confidence": 0.921,
    "band": "high",
    "components": {
-    "local_density": 0.726,
+    "local_density": 0.719,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 73,
+   "neighbourhood_nodes": 75,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87343,10 +88235,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "mmp9_protease": {
-   "structural_confidence": 0.933,
+   "structural_confidence": 0.932,
    "band": "high",
    "components": {
-    "local_density": 0.757,
+    "local_density": 0.756,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87367,7 +88259,7 @@
    "structural_confidence": 0.934,
    "band": "high",
    "components": {
-    "local_density": 0.762,
+    "local_density": 0.76,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87384,7 +88276,7 @@
    "structural_confidence": 0.878,
    "band": "high",
    "components": {
-    "local_density": 0.594,
+    "local_density": 0.593,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87402,7 +88294,7 @@
    "structural_confidence": 0.894,
    "band": "high",
    "components": {
-    "local_density": 0.639,
+    "local_density": 0.638,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -87423,7 +88315,7 @@
    "structural_confidence": 0.939,
    "band": "high",
    "components": {
-    "local_density": 0.779,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87445,7 +88337,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 116,
+   "neighbourhood_nodes": 118,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87467,7 +88359,7 @@
    "structural_confidence": 0.568,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.25,
     "layer_completeness": 1.0
@@ -87482,19 +88374,20 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "timp_family": {
-   "structural_confidence": 0.97,
+   "structural_confidence": 0.972,
    "band": "high",
    "components": {
-    "local_density": 0.985,
+    "local_density": 0.984,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.897
+    "layer_completeness": 0.907
    },
-   "neighbourhood_nodes": 68,
+   "neighbourhood_nodes": 69,
    "layers_crossed": [
     "L0",
     "L1",
     "L11",
+    "L12",
     "L3",
     "L4",
     "L5",
@@ -87513,7 +88406,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 126,
+   "neighbourhood_nodes": 128,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87535,7 +88428,7 @@
    "structural_confidence": 0.568,
    "band": "moderate",
    "components": {
-    "local_density": 0.571,
+    "local_density": 0.57,
     "stub_penalty": 1.0,
     "sign_coverage": 0.182,
     "layer_completeness": 1.0
@@ -87553,7 +88446,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -87568,7 +88461,7 @@
    "structural_confidence": 0.882,
    "band": "high",
    "components": {
-    "local_density": 0.606,
+    "local_density": 0.605,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87582,15 +88475,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "cytoskeletal_tension_chondrocyte": {
-   "structural_confidence": 0.996,
+   "structural_confidence": 0.994,
    "band": "high",
    "components": {
-    "local_density": 0.985,
+    "local_density": 0.979,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 87,
+   "neighbourhood_nodes": 89,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87626,7 +88519,7 @@
    "structural_confidence": 0.79,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87647,7 +88540,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 128,
+   "neighbourhood_nodes": 130,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87683,7 +88576,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -87711,10 +88604,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "gravity_posture_spinal_loading": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -87728,15 +88621,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "guided_growth_tension_band": {
-   "structural_confidence": 0.923,
+   "structural_confidence": 0.92,
    "band": "high",
    "components": {
-    "local_density": 0.727,
+    "local_density": 0.718,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 50,
+   "neighbourhood_nodes": 52,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87755,7 +88648,7 @@
    "structural_confidence": 0.6,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.25,
     "layer_completeness": 1.0
@@ -87768,15 +88661,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "hueter_volkmann_law": {
-   "structural_confidence": 0.988,
+   "structural_confidence": 0.986,
    "band": "high",
    "components": {
-    "local_density": 0.955,
+    "local_density": 0.945,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 117,
+   "neighbourhood_nodes": 119,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87793,15 +88686,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "integrin_beta1_chondrocyte": {
-   "structural_confidence": 0.996,
+   "structural_confidence": 0.994,
    "band": "high",
    "components": {
-    "local_density": 0.985,
+    "local_density": 0.979,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 87,
+   "neighbourhood_nodes": 89,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87818,10 +88711,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "loading_effect_plate_height": {
-   "structural_confidence": 0.645,
+   "structural_confidence": 0.644,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.333,
     "layer_completeness": 1.0
@@ -87834,15 +88727,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "mechanical_modulation_growth": {
-   "structural_confidence": 0.985,
+   "structural_confidence": 0.982,
    "band": "high",
    "components": {
-    "local_density": 0.942,
+    "local_density": 0.932,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87859,15 +88752,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "physeal_bar_formation": {
-   "structural_confidence": 0.911,
+   "structural_confidence": 0.909,
    "band": "high",
    "components": {
-    "local_density": 0.688,
+    "local_density": 0.683,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 77,
+   "neighbourhood_nodes": 79,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87883,15 +88776,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "physeal_stress_in_vivo": {
-   "structural_confidence": 0.986,
+   "structural_confidence": 0.984,
    "band": "high",
    "components": {
-    "local_density": 0.948,
+    "local_density": 0.939,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 120,
+   "neighbourhood_nodes": 122,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87908,15 +88801,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "piezo1_channel": {
-   "structural_confidence": 0.982,
+   "structural_confidence": 0.98,
    "band": "high",
    "components": {
-    "local_density": 0.932,
+    "local_density": 0.923,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 107,
+   "neighbourhood_nodes": 109,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87949,15 +88842,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "primary_cilium_mechanosensing": {
-   "structural_confidence": 0.999,
+   "structural_confidence": 0.997,
    "band": "high",
    "components": {
-    "local_density": 0.998,
+    "local_density": 0.988,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 126,
+   "neighbourhood_nodes": 128,
    "layers_crossed": [
     "L0",
     "L1",
@@ -87974,10 +88867,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "scoliosis_vertebral_growth": {
-   "structural_confidence": 0.976,
+   "structural_confidence": 0.975,
    "band": "high",
    "components": {
-    "local_density": 0.907,
+    "local_density": 0.906,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
@@ -88013,15 +88906,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "sport_specific_loading_human": {
-   "structural_confidence": 0.929,
+   "structural_confidence": 0.926,
    "band": "high",
    "components": {
-    "local_density": 0.746,
+    "local_density": 0.737,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 55,
+   "neighbourhood_nodes": 57,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88037,19 +88930,20 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "static_vs_dynamic_loading": {
-   "structural_confidence": 0.978,
+   "structural_confidence": 0.98,
    "band": "high",
    "components": {
     "local_density": 1.0,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.915
+    "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 65,
+   "neighbourhood_nodes": 66,
    "layers_crossed": [
     "L0",
     "L1",
     "L11",
+    "L12",
     "L13",
     "L2",
     "L3",
@@ -88062,15 +88956,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "strain_frequency_dependence": {
-   "structural_confidence": 0.921,
+   "structural_confidence": 0.919,
    "band": "high",
    "components": {
-    "local_density": 0.72,
+    "local_density": 0.713,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 70,
+   "neighbourhood_nodes": 72,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88089,7 +88983,7 @@
    "structural_confidence": 0.906,
    "band": "high",
    "components": {
-    "local_density": 0.675,
+    "local_density": 0.674,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -88104,19 +88998,20 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "strain_rate_dependence": {
-   "structural_confidence": 0.978,
+   "structural_confidence": 0.98,
    "band": "high",
    "components": {
     "local_density": 1.0,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.915
+    "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 66,
+   "neighbourhood_nodes": 67,
    "layers_crossed": [
     "L0",
     "L1",
     "L11",
+    "L12",
     "L13",
     "L2",
     "L3",
@@ -88129,15 +89024,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "trpv4_channel": {
-   "structural_confidence": 0.985,
+   "structural_confidence": 0.982,
    "band": "high",
    "components": {
-    "local_density": 0.942,
+    "local_density": 0.932,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.999
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88157,7 +89052,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88169,10 +89064,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "yap_taz_chondrocyte": {
-   "structural_confidence": 0.645,
+   "structural_confidence": 0.644,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.333,
     "layer_completeness": 1.0
@@ -88188,7 +89083,7 @@
    "structural_confidence": 0.595,
    "band": "moderate",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.296,
     "layer_completeness": 0.816
@@ -88223,7 +89118,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88238,7 +89133,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.995
@@ -88254,7 +89149,7 @@
    "structural_confidence": 0.873,
    "band": "high",
    "components": {
-    "local_density": 0.582,
+    "local_density": 0.581,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -88273,7 +89168,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88288,7 +89183,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.997
@@ -88305,7 +89200,7 @@
    "structural_confidence": 0.79,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -88320,7 +89215,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88335,7 +89230,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88351,7 +89246,7 @@
    "structural_confidence": 0.77,
    "band": "high",
    "components": {
-    "local_density": 0.779,
+    "local_density": 0.778,
     "stub_penalty": 1.0,
     "sign_coverage": 0.511,
     "layer_completeness": 0.884
@@ -88373,7 +89268,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88385,10 +89280,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "estrogen_accelerated_senescence": {
-   "structural_confidence": 0.849,
+   "structural_confidence": 0.848,
    "band": "high",
    "components": {
-    "local_density": 0.693,
+    "local_density": 0.691,
     "stub_penalty": 1.0,
     "sign_coverage": 0.75,
     "layer_completeness": 1.0
@@ -88420,7 +89315,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88435,7 +89330,7 @@
    "structural_confidence": 0.25,
    "band": "very_low",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88450,7 +89345,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88465,7 +89360,7 @@
    "structural_confidence": 0.568,
    "band": "moderate",
    "components": {
-    "local_density": 0.727,
+    "local_density": 0.726,
     "stub_penalty": 1.0,
     "sign_coverage": 0.143,
     "layer_completeness": 1.0
@@ -88499,7 +89394,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88514,7 +89409,7 @@
    "structural_confidence": 0.79,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -88529,7 +89424,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88544,7 +89439,7 @@
    "structural_confidence": 0.258,
    "band": "very_low",
    "components": {
-    "local_density": 0.445,
+    "local_density": 0.444,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88561,7 +89456,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88576,7 +89471,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88591,7 +89486,7 @@
    "structural_confidence": 0.79,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -88606,7 +89501,7 @@
    "structural_confidence": 0.714,
    "band": "moderate",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 0.6,
     "layer_completeness": 1.0
@@ -88623,7 +89518,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88638,7 +89533,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88653,7 +89548,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88684,7 +89579,7 @@
    "structural_confidence": 0.79,
    "band": "high",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -88699,7 +89594,7 @@
    "structural_confidence": 0.278,
    "band": "very_low",
    "components": {
-    "local_density": 0.594,
+    "local_density": 0.593,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88715,7 +89610,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -88727,15 +89622,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "acan_gene": {
-   "structural_confidence": 0.967,
+   "structural_confidence": 0.965,
    "band": "high",
    "components": {
-    "local_density": 0.947,
+    "local_density": 0.942,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88756,7 +89651,7 @@
    "structural_confidence": 0.12,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.08
@@ -88768,19 +89663,20 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "col10a1_gene": {
-   "structural_confidence": 0.953,
+   "structural_confidence": 0.952,
    "band": "high",
    "components": {
-    "local_density": 0.9,
+    "local_density": 0.89,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
-    "layer_completeness": 0.915
+    "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 45,
+   "neighbourhood_nodes": 46,
    "layers_crossed": [
     "L0",
     "L1",
     "L11",
+    "L12",
     "L13",
     "L2",
     "L3",
@@ -88793,15 +89689,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "col2a1_gene": {
-   "structural_confidence": 0.89,
+   "structural_confidence": 0.888,
    "band": "high",
    "components": {
-    "local_density": 0.686,
+    "local_density": 0.68,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.915
    },
-   "neighbourhood_nodes": 75,
+   "neighbourhood_nodes": 77,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88821,7 +89717,7 @@
    "structural_confidence": 0.12,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.08
@@ -88836,7 +89732,7 @@
    "structural_confidence": 0.901,
    "band": "high",
    "components": {
-    "local_density": 0.808,
+    "local_density": 0.807,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.816
@@ -88852,15 +89748,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "cyp19a1_gene": {
-   "structural_confidence": 0.954,
+   "structural_confidence": 0.953,
    "band": "high",
    "components": {
-    "local_density": 0.885,
+    "local_density": 0.884,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 128,
+   "neighbourhood_nodes": 129,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88888,7 +89784,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 162,
+   "neighbourhood_nodes": 164,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88911,7 +89807,7 @@
    "structural_confidence": 0.12,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.08
@@ -88953,15 +89849,15 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "esr1_gene": {
-   "structural_confidence": 0.97,
+   "structural_confidence": 0.967,
    "band": "high",
    "components": {
-    "local_density": 0.947,
+    "local_density": 0.937,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 102,
+   "neighbourhood_nodes": 104,
    "layers_crossed": [
     "L0",
     "L1",
@@ -88989,7 +89885,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 205,
+   "neighbourhood_nodes": 207,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89012,7 +89908,7 @@
    "structural_confidence": 0.193,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.535
@@ -89040,10 +89936,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "genomic_imprinting_growth": {
-   "structural_confidence": 0.811,
+   "structural_confidence": 0.81,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.693
@@ -89093,7 +89989,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.922
    },
-   "neighbourhood_nodes": 141,
+   "neighbourhood_nodes": 143,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89114,7 +90010,7 @@
    "structural_confidence": 0.42,
    "band": "low",
    "components": {
-    "local_density": 0.39,
+    "local_density": 0.389,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.08
@@ -89129,7 +90025,7 @@
    "structural_confidence": 0.12,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 0.08
@@ -89141,10 +90037,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "height_polygenic_score": {
-   "structural_confidence": 0.38,
+   "structural_confidence": 0.379,
    "band": "low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.08
@@ -89179,7 +90075,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 234,
+   "neighbourhood_nodes": 236,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89207,7 +90103,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 213,
+   "neighbourhood_nodes": 214,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89227,10 +90123,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "igf2_h19_imprinting": {
-   "structural_confidence": 0.811,
+   "structural_confidence": 0.81,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.693
@@ -89252,7 +90148,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 150,
+   "neighbourhood_nodes": 151,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89280,7 +90176,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.928
    },
-   "neighbourhood_nodes": 185,
+   "neighbourhood_nodes": 186,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89314,10 +90210,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "missing_heritability_height": {
-   "structural_confidence": 0.38,
+   "structural_confidence": 0.379,
    "band": "low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.08
@@ -89337,7 +90233,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 164,
+   "neighbourhood_nodes": 166,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89365,7 +90261,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 165,
+   "neighbourhood_nodes": 167,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89408,7 +90304,7 @@
     "sign_coverage": 1.0,
     "layer_completeness": 0.934
    },
-   "neighbourhood_nodes": 155,
+   "neighbourhood_nodes": 156,
    "layers_crossed": [
     "L0",
     "L1",
@@ -89453,10 +90349,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "rare_variant_height": {
-   "structural_confidence": 0.38,
+   "structural_confidence": 0.379,
    "band": "low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.08
@@ -89468,10 +90364,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "shox_gene": {
-   "structural_confidence": 0.811,
+   "structural_confidence": 0.81,
    "band": "high",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.693
@@ -89488,7 +90384,7 @@
    "structural_confidence": 0.774,
    "band": "high",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 0.693
@@ -89548,7 +90444,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89596,7 +90492,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89612,7 +90508,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89628,7 +90524,7 @@
    "structural_confidence": 0.568,
    "band": "moderate",
    "components": {
-    "local_density": 0.623,
+    "local_density": 0.622,
     "stub_penalty": 1.0,
     "sign_coverage": 0.167,
     "layer_completeness": 1.0
@@ -89661,7 +90557,7 @@
    "structural_confidence": 0.811,
    "band": "high",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -89678,7 +90574,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89694,7 +90590,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89727,7 +90623,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89757,10 +90653,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "height_sds_z_score": {
-   "structural_confidence": 0.817,
+   "structural_confidence": 0.816,
    "band": "high",
    "components": {
-    "local_density": 0.445,
+    "local_density": 0.444,
     "stub_penalty": 1.0,
     "sign_coverage": 1.0,
     "layer_completeness": 1.0
@@ -89795,7 +90691,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89811,7 +90707,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89824,10 +90720,10 @@
    "semantics": "graph completeness in this region; NOT evidence quality"
   },
   "limb_segment_proportion": {
-   "structural_confidence": 0.257,
+   "structural_confidence": 0.256,
    "band": "very_low",
    "components": {
-    "local_density": 0.433,
+    "local_density": 0.432,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89844,7 +90740,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89860,7 +90756,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89892,7 +90788,7 @@
    "structural_confidence": 0.568,
    "band": "moderate",
    "components": {
-    "local_density": 0.416,
+    "local_density": 0.415,
     "stub_penalty": 1.0,
     "sign_coverage": 0.25,
     "layer_completeness": 1.0
@@ -89910,7 +90806,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89926,7 +90822,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89942,7 +90838,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89958,7 +90854,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89974,7 +90870,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -89990,7 +90886,7 @@
    "structural_confidence": 0.268,
    "band": "very_low",
    "components": {
-    "local_density": 0.519,
+    "local_density": 0.518,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -90007,7 +90903,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -90023,7 +90919,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -90039,7 +90935,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -90055,7 +90951,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0
@@ -90086,7 +90982,7 @@
    "structural_confidence": 0.226,
    "band": "very_low",
    "components": {
-    "local_density": 0.26,
+    "local_density": 0.259,
     "stub_penalty": 1.0,
     "sign_coverage": 0.0,
     "layer_completeness": 1.0

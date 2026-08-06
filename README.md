@@ -38,12 +38,12 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 ## Coverage dashboard
 
 <!-- DASHBOARD:BEGIN -->
-**Totals** — 615 nodes (615 researched, 0 stubs) ·
-1184 edges · 289 gaps (148 search logs) · 1053 references
+**Totals** — 617 nodes (617 researched, 0 stubs) ·
+1190 edges · 289 gaps (148 search logs) · 1059 references
 
 ```
-nodes  ██████████░░░░░░░░░░ 615/1200 (51%)
-edges  █████████░░░░░░░░░░░ 1184/2500 (47%)
+nodes  ██████████░░░░░░░░░░ 617/1200 (51%)
+edges  █████████░░░░░░░░░░░ 1190/2500 (47%)
 gaps   ████████████████████ 289/150 (100%)
 ```
 
@@ -61,15 +61,15 @@ gaps   ████████████████████ 289/150 (100
 | L9 | whole_organism_growth | 34 | 34 | 47 | 17 | ✅ | ✅ | ✅ |
 | L10 | environment_and_population | 34 | 34 | 58 | 13 | ✅ | ✅ | ✅ |
 | L11 | pathology_as_natural_experiment | 56 | 56 | 83 | 26 | ✅ | ✅ | ✅ |
-| L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 79 | 30 | ✅ | ✅ | ✅ |
+| L12 | pharmacology_as_mechanistic_probe | 38 | 38 | 85 | 30 | ✅ | ✅ | ✅ |
 | L13 | methods_and_data | 41 | 41 | 40 | 14 | ✅ | ✅ | ✅ |
-| | **total** | **615** | **615** | **1184** | **289** | | | |
+| | **total** | **617** | **617** | **1190** | **289** | | | |
 
-**Confidence distribution** (researched nodes): **A** 156 · **B** 185 · **C** 184 · **D** 77 · **E** 11 · **X** 2
+**Confidence distribution** (researched nodes): **A** 156 · **B** 185 · **C** 185 · **D** 78 · **E** 11 · **X** 2
 
 **Gap types**: `contradiction` 26 · `known_unknown` 70 · `method_blocked` 12 · `quantitative_gap` 67 · `scale_gap` 11 · `search_established` 80 · `species_gap` 23
 
-**Quantitative**: 1521 values on nodes · 1520 rows in `quant/parameters.csv`
+**Quantitative**: 1528 values on nodes · 1521 rows in `quant/parameters.csv`
 
 **Reference verification** (`tools/verify_refs.py`): 1005 verified · 0 mismatched · 0 unresolved · 44 manual
 
@@ -91,7 +91,7 @@ reported by `atlas/tools/context_filter.py --coverage-report` and in
 | `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **40.2%** | — |
 | `edges_per_node` | **1.93** | target retired — see note above |
 | `refs_per_researched` | **3.13** | ≥3.0 |
-| `quant_node_coverage` | **68.5%** | ≥60% |
+| `quant_node_coverage` | **68.6%** | ≥60% |
 | `stub_fraction` | **0.0%** | 0% |
 
 | Layer | researched | human_evidence: direct | replicated human |
@@ -108,7 +108,7 @@ reported by `atlas/tools/context_filter.py --coverage-report` and in
 | L9 | 34 | 30 (88%) | 21 (62%) |
 | L10 | 34 | 29 (85%) | 18 (53%) |
 | L11 | 56 | 56 (100%) | 18 (32%) |
-| L12 | 36 | 30 (83%) | 26 (72%) |
+| L12 | 38 | 31 (82%) | 27 (71%) |
 | L13 | 41 | 19 (46%) | 13 (32%) |
 
 _Quota column: ≥8 gaps per layer, ≥3 of which are `search_established` or
