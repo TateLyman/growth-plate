@@ -276,3 +276,74 @@ help h_term, and human LoF causes short stature.
 Stage 4 is worth stating plainly because nobody applies it: the exposure problem that
 kills most growth-plate candidates is not uniform across compounds. **Net charge at
 pH 7.4 predicts cartilage partitioning**, and it is a free filter on all 105.
+
+---
+
+# ROUND 2 RESULT — the arbiter ran, validated, and killed two of my own rows
+
+`atlas/tools/height_genetics.py`, 20 of 25 screen targets resolved against Open Targets.
+
+## Validation: every gene with known human stature genetics returns correctly
+
+| gene | tall | short | known human biology |
+|---|---|---|---|
+| GHR | — | 7 | Laron syndrome, GHR LoF → short ✓ |
+| IGF1 | — | 4 | IGF1 deficiency → severe short ✓ |
+| IGF1R | 2 | 1 | deletion → short, duplication → tall ✓ |
+| FGFR3 | 2 | 7 | **both, correctly** — GoF achondroplasia (0.82) short, LoF CATSHL tall ✓ |
+| PTHLH | — | 11 | PTHrP LoF → brachydactyly/short ✓ |
+
+The arbiter works. That makes its negative verdicts credible.
+
+## It kills two rows the screen produced
+
+**TRPV4 — dead.** Screen predicted TRPV4 **agonists** raise h_term. Human genetics:
+autosomal dominant brachyolmia **(0.71)**, parastremmatic dwarfism **(0.65)**, brachyolmia
+(0.51) — and the TRPV4 skeletal dysplasias are **gain-of-function**. So TRPV4 activation
+causes *short* stature in humans. My earlier note that "LoF → shorter, so agonism →
+taller" was wrong about which direction the mutations run. **Row withdrawn.**
+
+**MAPK1/ERK — contradicted.** Screen predicted MEK/ERK inhibition helps N_p. Human
+genetics: `MAPK1 → Short stature (0.48)`. Disrupting ERK2 shortens humans. **Row
+downgraded.**
+
+## TGFBR1 — still the top row, and the primary is now *more* necessary, not less
+
+| | |
+|---|---|
+| TALL | Marfan syndrome (0.44), **Marfan syndrome type 2 (0.38)**, **Proportionate tall stature (0.27)**, Disproportionate tall stature (0.12) |
+| SHORT | **none** |
+
+Four tall associations, zero short. But "Marfan syndrome type 2" is the ontology's name
+for **Loeys-Dietz**, and that carries a trap I have to state against my own candidate:
+
+> **The Loeys-Dietz paradox.** LDS is caused by TGFBR1/TGFBR2 mutations that are
+> kinase-impairing at the receptor, yet the affected tissues show *increased* TGF-β
+> signalling. The mutations are missense with dominant-negative behaviour, not clean
+> null alleles. **A pharmacological TGFBR1 inhibitor therefore may not phenocopy the tall
+> stature at all** — it may do the opposite of what the syndrome's downstream biology
+> does.
+
+So the genetic signal is real and one-directional, and it still does not establish that
+inhibiting TGFBR1 makes anyone taller. Combined with `chu2025pre` (TGFβ activation is
+part of how GH works in human explants), the honest status of my top candidate is
+**unresolved, with three lines of evidence pointing in three different directions.**
+
+## And the arbiter is silent exactly where I most needed it
+
+**EGLN1, ADAMTS5, NOTCH1, NOTCH2: no stature association at all.** Not refuted —
+absence here is dominated by what has been studied — but it means the approved-drug row
+(EGLN1) and the only-class-that-reaches-cartilage row (ADAMTS5) have **nothing but
+grade-C animal evidence supporting them**, and no human genetic check is available.
+
+That raises rather than lowers the value of `schipani2001` and `glasson2005`: they are
+now the *entire* evidential basis for the two most practically interesting candidates.
+
+## Net effect on the request list
+
+| paper | why it moved |
+|---|---|
+| **PMID 15731757 / 16928994** (Loeys-Dietz) | unchanged as #1, but now needs the **allele class** as well as the stature numbers — missense vs null decides whether an inhibitor is a phenocopy or an anti-phenocopy |
+| **PMID 11731479** (schipani2001) | **promoted** — sole support for the approved-drug row |
+| **PMID 15800624** (glasson2005) | **promoted** — sole support for the cartilage-penetrant row |
+| TRPV4 primaries | **no longer needed** — row withdrawn |
