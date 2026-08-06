@@ -11,7 +11,7 @@ and Chu et al., Sci Transl Med 2026;18:eadw3590.)*
 
 Dear Dr Newton, Prof. Chagin, Prof. Sävendahl and Dr Mirzazadeh,
 
-I'm an independent researcher building a quantitative, citation-grounded map of the mechanisms
+I'm a student building a quantitative, citation-grounded map of the mechanisms
 that set human height — every parameter traced to a primary source and graded, with the
 unknowns recorded as first-class entries rather than omitted. Working through it, I keep
 arriving at two questions that your two 2026 papers are, as far as I can tell, uniquely
@@ -78,6 +78,6 @@ grades, and the specific arithmetic — in whatever form is easiest.
 
 With thanks for two papers that changed how I had this modelled,
 
-[YOUR NAME]
-[affiliation or "independent researcher", city]
+Tate Lyman
+Student
 hello@tateprograms.com

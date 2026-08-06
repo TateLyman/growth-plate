@@ -38,5 +38,6 @@ Happy to do the work, hand it over entirely, or simply leave it with you.
 
 With thanks,
 
-[YOUR NAME]
+Tate Lyman
+Student
 hello@tateprograms.com
