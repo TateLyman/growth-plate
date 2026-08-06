@@ -10186,3 +10186,76 @@ gaps:
     a table the authors already have. (3) A systematic re-reading of all 15 reported aromatase-deficient males for
     height at diagnosis, height at treatment start and any pre-treatment growth velocity converts a set of censored
     observations into a survival problem with a estimable endpoint. ALL THREE ARE DESK WORK ON DATA THAT EXISTS.
+- gap_id: g_l2_human_progenitor_reservoir
+  type: species_gap
+  layer: L2
+  tractability: 1
+  question: Does a human growth plate have a progenitor reservoir outside the cartilage, and can it be seen in tissue
+    that is already collected?
+  why_it_matters: qu2025 shows in mouse that the long-lived progenitors driving postnatal growth descend from Gli1+
+    cells that are dormant through fetal life, that damage to the cartilage recruits them, and that they originate
+    from Pdgfra+ cells OUTSIDE the cartilage. If a human equivalent exists, the division budget is not a closed
+    quantity and can in principle be added to - which is the only mechanism this atlas holds that could raise the
+    ceiling rather than merely defer it. If no human equivalent exists, the budget is closed and the ceiling stands.
+  what_is_known: 'qu2025, mouse: Gli1-lineage cells expand into the cartilage with a resting-zone bias under cartilage-targeted
+    p21 arrest, enrich the Ki67+ fraction and restore normal growth; the reparative cells arise from Pdgfra+ cells
+    outside the cartilage. nilsson2005, rabbit: resting-zone chondrocyte population doublings do not depend on donor
+    age, so the proliferative limit is not carried by the cell. This atlas already holds groove_of_ranvier and perichondrial
+    nodes describing the anatomical neighbourhood in which such a reservoir would sit.'
+  what_is_missing: (1) ANY HUMAN OBSERVATION. No human growth plate tissue has been examined for GLI1+ or PDGFRA+
+    progenitors outside the cartilage. (2) WHETHER THE RESERVOIR PERSISTS POSTNATALLY IN HUMANS, since the mouse
+    demonstration is fetal. (3) WHETHER IT IS STILL PRESENT NEAR FUSION - the age at which it would matter most
+    is the age at which it is least likely to remain.
+  nearest_evidence:
+  - qu2025
+  - avijgan2026br
+  - chu2026
+  - nilsson2005
+  nearest_evidence_note: The mouse result is strong and the human tissue that could test it has already been collected
+    and sequenced by two groups for other purposes.
+  discriminating_experiment: LOOK IN DATA THAT ALREADY EXISTS. avijgan2026br applied Visium and Visium HD to human
+    growth plate biopsies and their sections span the plate AND the surrounding tissue and secondary ossification
+    centre - the spatial data therefore already contains whatever GLI1+ or PDGFRA+ population sits outside the cartilage,
+    and their code and data are public on GitHub. chu2026 sequenced 23,625 cells from four donors including non-chondrocyte
+    clusters. ASKING WHETHER GLI1 AND PDGFRA MARK A POPULATION ADJACENT TO THE HUMAN RESTING ZONE IS A RE-ANALYSIS
+    OF PUBLISHED DATA AND COSTS NOTHING. A positive answer justifies everything downstream; a negative answer closes
+    the most promising route in this atlas, cheaply.
+- gap_id: g_l2_recruit_reserve_pharmacologically
+  type: known_unknown
+  layer: L2
+  tractability: 3
+  question: Can the progenitor reservoir be recruited without damaging the plate - and does recruiting it produce
+    a LONGER bone rather than merely a normal one?
+  why_it_matters: 'In qu2025 the reserve is mobilised by injury: cartilage-targeted cell-cycle arrest. The compensation
+    restores NORMAL growth, it does not exceed it. Two things therefore remain unknown and they are the whole therapeutic
+    question. Whether the trigger can be supplied pharmacologically rather than by damage, and whether a reservoir
+    recruited into an UNDAMAGED plate adds length or is simply held in reserve unused. A repair mechanism that restores
+    normal is not the same as a mechanism that exceeds normal, and this atlas should not conflate them.'
+  what_is_known: 'qu2025: Gli1+ cells expand and normalise growth after p21-induced arrest, arising from Pdgfra+
+    cells outside the cartilage; the authors state the aim as "stimulating the expansion of the pool of LLCPs at
+    the right time and location". osk2026: AAV-delivered OSK in mouse knee lowers chondrocyte senescence and DNMT
+    expression through TET2 WITHOUT inducing stemness genes - a demonstrated in vivo reprogramming technique in
+    cartilage. chu2025: the growth plate stem pool renews by population asymmetry, so its number is a regulated
+    variable and GH moves it downward.'
+  what_is_missing: (1) A NON-DAMAGING TRIGGER. Every mobilisation shown is injury-driven. (2) WHETHER RECRUITMENT
+    INTO A HEALTHY PLATE LENGTHENS IT. Nobody has expanded the pool in an undamaged animal and measured bone length.
+    (3) THE SIGNAL. Hedgehog is implied by the Gli1 marker but the paper does not show that Hedgehog agonism recruits
+    the reserve. (4) OSK IN A GROWTH PLATE. Never delivered; the tissue differs from articular cartilage in exactly
+    the property at issue. (5) THE OBVIOUS HAZARD - Gli1 and Hedgehog signalling are oncogenic in bone and cartilage,
+    and osteosarcoma arises from this lineage during rapid growth. No route here is safe by default.
+  nearest_evidence:
+  - qu2025
+  - osk2026
+  - chu2025
+  - chu2026
+  nearest_evidence_note: Two demonstrated techniques - reserve mobilisation by injury, and local partial reprogramming
+    - neither aimed at elongation and neither combined.
+  discriminating_experiment: THE ORDER MATTERS AND THE CHEAP STEP COMES FIRST. (1) Re-analyse the published human
+    spatial and single-cell data for a GLI1+/PDGFRA+ population adjacent to the human resting zone - gap g_l2_human_progenitor_reservoir
+    - because a negative answer stops the programme. (2) IN THE HUMAN EXPLANT, which survives two months and has
+    a cartilage-expansion endpoint, test whether a Hedgehog agonist or AAV-OSK changes the resting-zone label-retaining
+    fraction. The explant is already an injured tissue - it has been cut - so it may be a permissive rather than
+    a neutral setting, and that must be controlled with uncut organ culture. (3) ONLY THEN the animal question,
+    and it must be asked in an UNDAMAGED animal with BONE LENGTH as the endpoint, because restoring normal growth
+    after injury and exceeding normal growth are different results and the first has been mistaken for the second
+    before.

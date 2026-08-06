@@ -1,0 +1,130 @@
+id: progenitor_reservoir_outside_the_plate
+name: The growth plate progenitor pool is refillable from outside the cartilage
+type: process
+layer: L2
+stub: false
+summary: 'Everything in this atlas about the division budget has assumed a closed system: a pool of resting-zone progenitors,
+  finite, spent by division, and gone when spent. qu2025 shows the system is not closed. THREE FINDINGS, IN ORDER
+  OF CONSEQUENCE. First, the long-lived cartilage progenitors that drive postnatal growth are NOT the fetal ones -
+  in fetuses and neonates reserve-zone progenitors do not self-renew, so a cell recruited into a column exhausts rapidly
+  and columns are short; at about three postnatal weeks, progenitors BEGIN to self-renew and long columns appear.
+  Second, those long-lived progenitors descend from Gli1+ cells that sit mostly DORMANT through fetal life. Third,
+  and decisively, when the cartilage is damaged - mosaic overexpression of p21, a genetic cell-cycle arrest - the
+  Gli1+ population EXPANDS INSIDE THE CARTILAGE, biased toward the resting zone, enriches the cycling fraction, and
+  RESTORES NORMAL GROWTH. And the reparative cells come from Pdgfra+ cells OUTSIDE the cartilage entirely. SO THERE
+  IS A RESERVOIR, IT LIVES IN THE SURROUNDING STROMA, AND DAMAGE TO THE PLATE RECRUITS IT. That is a mechanism for
+  adding to the budget rather than merely spending it more slowly, and it is the first thing in this atlas that could
+  do so. It also supplies a mechanism for catch-up growth that the atlas did not hold: catch-up may not be only a
+  paused clock, it may be a REFILLED POOL. The atlas already held the fact that makes this plausible and never used
+  it - nilsson2005 found that rabbit resting-zone chondrocytes from old and young donors undergo the SAME number of
+  population doublings in culture. THE PROLIFERATIVE LIMIT IS NOT CARRIED BY THE CELL. It is imposed by the plate.
+  A limit that is imposed can in principle be lifted; a limit carried in the cell cannot.'
+quantitative:
+- parameter: THE LONG-LIVED PROGENITORS THAT DRIVE POSTNATAL GROWTH ARE NOT PRESENT AT BIRTH
+  value: reserve-zone progenitors do not self-renew in fetus or neonate; self-renewal begins at about 3 postnatal
+    weeks
+  unit: qualitative
+  conditions: mouse; before self-renewal begins, a progenitor recruited into a proliferative column exhausts rapidly
+    and columns are short. After about three weeks - possibly in response to secondary ossification centre signals
+    - long clonal columns appear
+  species: mouse
+  source_ref: qu2025
+  uncertainty: THIS REFRAMES THE BUDGET. The pool that determines final height is CONSTITUTED postnatally, not inherited
+    from the embryo, so there is a window in which its size is being set rather than merely spent. The atlas's clonal_exhaustion
+    and stem_pool_population_asymmetry nodes both describe the spending and neither describes the constitution. Mouse,
+    and the mouse plate never closes.
+- parameter: DAMAGE TO THE PLATE RECRUITS A DORMANT RESERVE AND RESTORES NORMAL GROWTH
+  value: Gli1+ cells expand within the cartilage, biased to the resting zone, and growth is normal despite the arrest
+  unit: qualitative
+  conditions: cartilage-targeted mosaic overexpression of p21, which blocks the cell cycle in G1, using Pitx2-Cre
+    with Col2a1-rtTA and a Tigre Dragon-p21 allele; Gli1-lineage contribution rises in both resting and proliferative
+    zones with a resting-zone bias, and the Ki67+ cycling population becomes enriched in Gli1-lineage cells
+  species: mouse
+  source_ref: qu2025
+  uncertainty: THE COMPENSATION IS THE RESULT AND ITS NECESSITY WAS TESTED - the authors built a Gli1-targeted inducible
+    diphtheria toxin line to ask whether Gli1-derived chondrocytes are REQUIRED for it. This atlas has read the design
+    and has not read the outcome figures, so the requirement is recorded as TESTED, not as ESTABLISHED. The perturbation
+    is genetic and fetal; nothing here shows the reserve can be recruited pharmacologically, or postnatally, or in
+    a plate that closes.
+- parameter: WHERE THE RESERVE COMES FROM
+  value: Pdgfra+ cells OUTSIDE the cartilage
+  unit: none
+  conditions: lineage tracing from Gli1-CreER induced at E12.5 and E13.5, with reporter cells quantified inside and
+    outside the cartilage
+  species: mouse
+  source_ref: qu2025
+  uncertainty: THE MOST CONSEQUENTIAL SENTENCE IN THE PAPER FOR THIS ATLAS, because it means the growth plate's progenitor
+    supply is not a closed compartment. The surrounding stroma - the same anatomical neighbourhood as the groove of
+    Ranvier and the perichondrium, both of which this atlas already holds as nodes - is a source. WHETHER A HUMAN
+    EQUIVALENT EXISTS IS COMPLETELY UNKNOWN and no human tissue has been examined for it.
+- parameter: the proliferative limit is not carried by the cell
+  value: population doublings in culture do not depend on donor age
+  unit: none
+  conditions: rabbit resting-zone chondrocytes from young and old donors, expanded in vitro
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: 'HELD BY THIS ATLAS SINCE PHASE 1 AND NEVER PUT TO WORK. The finite-capacity model''s own authors falsified
+    its simplest version: the in vivo limit is NOT a Hayflick limit resident in the cell. Taken with qu2025 the implication
+    is that the limit is a property of the PLATE, not of the chondrocyte - and an imposed limit is a target in a way
+    an intrinsic one is not. The authors'' alternative proposal, a progressive loss of DNA methylation tracking slow
+    in vivo proliferation, remains untested sixteen years later and is the specific molecular hypothesis a reprogramming
+    experiment would address.'
+- parameter: partial epigenetic reprogramming works in cartilage in vivo, without dedifferentiation
+  value: senescence and DNA methyltransferase expression markedly diminished; no increase in stemness genes
+  unit: qualitative
+  conditions: AAV-delivered Oct4, Sox2 and Klf4 expressed locally in the mouse knee joint; TET2 identified as the
+    pivotal mediator; cartilage integrity improved and fibrocartilage hyalinised
+  species: mouse
+  source_ref: osk2026
+  uncertainty: 'THE SAFETY RESULT MATTERS AS MUCH AS THE EFFICACY ONE: chondrocytes kept their identity and did not
+    upregulate stemness genes, which is the failure mode that makes in vivo reprogramming dangerous. BUT THIS IS ARTICULAR
+    CARTILAGE IN OSTEOARTHRITIS, NOT GROWTH PLATE, and the endpoint is joint integrity, not elongation. Nobody has
+    delivered OSK to a growth plate, and the two tissues differ in exactly the property at issue - the growth plate
+    is a proliferative, transient structure and articular cartilage is not. Recorded as a demonstrated TECHNIQUE in
+    the right tissue class, not as a growth result.'
+localization:
+- resting zone; and the stroma outside the cartilage, including the perichondrial neighbourhood
+human_evidence: absent
+human_evidence_note: 'Entirely mouse and rabbit. No human tissue has been examined for a Gli1+ or PDGFRA+ progenitor
+  reservoir outside the growth plate, and no human growth plate has been reprogrammed. The two human resources that
+  could begin it already exist: chu2026''s two-month growth plate explant and avijgan2026br''s spatial transcriptomics,
+  which covers the tissue immediately surrounding the plate as well as the plate itself.'
+species_basis:
+- mouse
+- rabbit
+translation_risk: high
+translation_risk_reason: The demonstration is genetic, fetal, and in a species whose growth plate never closes. The
+  reservoir is recruited by damage, not by a drug. And the human question - whether an equivalent reservoir exists
+  at all - has not been asked.
+confidence: C
+confidence_note: C. qu2025 is a strong primary in Nature Communications with lineage tracing, a genetic perturbation,
+  a necessity test and an external-origin result, and osk2026 is a clean in vivo demonstration in the right tissue
+  class. It is not B because every element is mouse, the compensation is triggered genetically rather than pharmacologically,
+  this atlas has read the design of the necessity experiment but not its outcome figures, and the reprogramming work
+  is in articular cartilage with a joint endpoint. The node's value is that it identifies a mechanism by which the
+  budget could be ADDED TO, which nothing else in this atlas does.
+key_refs:
+- ref_id: qu2025
+  pmid: '41253754'
+  first_author: Qu X
+  year: 2025
+  type: primary
+  one_line_finding: Gli1+ dormant precursors expand into the cartilage on damage and restore normal growth, and they
+    come from Pdgfra+ cells OUTSIDE the cartilage.
+- ref_id: nilsson2005
+  first_author: Nilsson O
+  year: 2005
+  type: primary
+  one_line_finding: Rabbit resting-zone chondrocyte population doublings do not depend on donor age - the proliferative
+    limit is not carried by the cell.
+- ref_id: osk2026
+  pmid: '41786976'
+  first_author: see title
+  year: 2026
+  type: primary
+  one_line_finding: AAV-OSK in mouse knee lowers chondrocyte senescence and DNMT expression via TET2 without inducing
+    stemness genes.
+open_questions:
+- g_l2_human_progenitor_reservoir
+- g_l2_recruit_reserve_pharmacologically
+last_verified: '2026-08-06'

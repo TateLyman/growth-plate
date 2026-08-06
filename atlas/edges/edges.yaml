@@ -19019,3 +19019,44 @@ edges:
   confidence: C
   notes: Recorded as unresolved rather than as a direction.
   traversal_usable: false
+- edge_id: e01224
+  source: progenitor_reservoir_outside_the_plate
+  target: clonal_exhaustion
+  relation: inhibits
+  sign: '-'
+  context: a dormant Gli1+ reserve outside the cartilage is recruited on damage and restores growth, so the progenitor
+    supply is not a closed compartment
+  evidence_tier: T1
+  refs:
+  - qu2025
+  confidence: C
+  notes: Mouse, fetal, injury-triggered. The compensation restores normal growth; it has not been shown to exceed
+    it.
+  traversal_usable: true
+- edge_id: e01225
+  source: progenitor_reservoir_outside_the_plate
+  target: catch_up_growth
+  relation: correlates_with
+  sign: +
+  context: supplies a mechanism for catch-up that is not merely a paused clock - the pool may be refilled rather than
+    conserved
+  evidence_tier: T1
+  refs:
+  - qu2025
+  confidence: D
+  notes: Hypothesis-bearing. No catch-up experiment has tested progenitor recruitment.
+  traversal_usable: false
+- edge_id: e01226
+  source: stem_pool_population_asymmetry
+  target: progenitor_reservoir_outside_the_plate
+  relation: correlates_with
+  sign: +
+  context: population asymmetry makes the pool size a regulated variable; an external reservoir is a route by which
+    it could be regulated upward
+  evidence_tier: T1
+  refs:
+  - chu2025
+  - qu2025
+  confidence: D
+  notes: Two mouse results joined by inference, not by an experiment that tested both.
+  traversal_usable: false
