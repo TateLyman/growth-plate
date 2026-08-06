@@ -237,6 +237,45 @@ quantitative:
     lateral anisotropy; that was wrong. Located via villemure2009 used as an index, which is what reviews
     are for. What remains genuinely unmeasured is whether the ratio CHANGES with growth rate - a static
     anisotropy explains how a cell could be shaped, not why the shaping varies.'
+- parameter: volume versus height as predictors of longitudinal bone growth
+  value: volume is the better predictor
+  unit: qualitative
+  conditions: mouse proximal tibia, distal tibia and distal ulna compared against each other; hundreds of
+    thousands of chondrocytes by PACT-deCAL clearing, light-sheet imaging and 3D segmentation (3D MAPs)
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'DIRECTLY CONTRADICTS the premise of this node, in the best-powered measurement available.
+    The authors state that hypertrophic cell volume is a better predictor of longitudinal bone growth than
+    hypertrophic cell height, with cell diameter correlated to only some of the differences. THE COMPARISON
+    IS BETWEEN GROWTH PLATES, however - proximal tibia versus distal tibia versus distal ulna - which is
+    the same spatial axis on which breur1991 found r=0.98 for volume. hunziker1989 compared one plate at
+    two AGES and found volume falling 13% while growth rose 20%. So the two need not conflict: volume may
+    predict between plates while height carries change within a plate over time. Nobody has applied a
+    modern 3D method to the within-plate temporal comparison, and until someone does, this node rests on
+    a single unreplicated n=6 study from 1989 against a 10^5-cell 3D dataset pointing the other way.'
+- parameter: fraction of total chondrocyte volume increase occurring BEFORE the hypertrophic zone
+  value: '65'
+  unit: '%'
+  conditions: mouse growth plates; volume rises 20% resting to proliferative, 74% proliferative to
+    prehypertrophic, 50% prehypertrophic to hypertrophic, about ninefold overall. Surface area rises
+    fivefold with 70% of the increase before the hypertrophic zone
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'contradicts the standing paradigm that most enlargement happens in the hypertrophic zone,
+    which is an assumption embedded in the atlas flow model''s h_term term and in every therapeutic
+    programme aimed at hypertrophic enlargement. If most of the volume is acquired prehypertrophically,
+    the terminal cell height is a readout of an earlier process rather than the process itself.'
+- parameter: aspect ratio, resting versus hypertrophic chondrocytes
+  value: the same
+  unit: dimensionless
+  conditions: mouse; cells go round (resting) to flat and elongated (proliferative) to round and large
+    (hypertrophic), so shape changes only across the first three zones and returns
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'the authors note this means chondrocytes could in theory have grown isometrically
+    throughout, and suggest the allometric route is chosen TO PREVENT EXPANSION OF THE BONE CIRCUMFERENCE
+    DURING ELONGATION - which is the anisotropic-constraint argument stated from the cell''s side rather
+    than the matrix''s. Measured across the differentiation axis, not across growth rates.'
 - parameter: human terminal cell height and diameter
   value: not measured together
   unit: none
@@ -264,7 +303,7 @@ translation_risk: high
 translation_risk_reason: A single unreplicated rat study is the whole evidential basis. The human plate
   differs from rat in cycle time by roughly an order of magnitude and carries a large inert zone rat lacks,
   and human terminal cell height is itself contested by 61%.
-confidence: C
+confidence: D
 key_refs:
 - ref_id: hunziker1989
   pmid: '2607442'
@@ -274,6 +313,14 @@ key_refs:
   one_line_finding: A 20% rise in rat growth rate is carried by a 23% rise in terminal cell height with
     diameter falling 14% and volume falling 13%; matrix per cell, turnover and hypertrophic-phase duration
     unchanged.
+- ref_id: rubin2021
+  pmid: '34508093'
+  first_author: Rubin S
+  year: 2021
+  type: primary
+  one_line_finding: 3D light-sheet morphometry of ~10^5 mouse chondrocytes finds hypertrophic cell VOLUME
+    a better predictor of bone growth than cell HEIGHT, and 65% of volume increase occurring before the
+    hypertrophic zone.
 - ref_id: cohen1998
   pmid: '10412420'
   first_author: Cohen B
@@ -317,4 +364,5 @@ open_questions:
 - g_l1arch_009
 contradicts:
 - breur1991
+- rubin2021
 last_verified: '2026-08-06'

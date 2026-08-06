@@ -913,3 +913,81 @@ available suggests the approved agents push the other axis.
 The next measurement is small, specific, and uses tissue that already exists: **terminal
 cell height AND diameter, in the same sections, in hormone-treated versus control
 animals.** That single number decides whether the reframing is real.
+
+---
+
+# ROUND 9 — I went looking, and found the paper that undercuts my own reframing
+
+Asked to look for what I needed, I searched for anyone who had measured terminal cell
+height *and* diameter together. The best-powered such measurement exists, it is open
+access, I fetched it myself, and **it contains a direct head-to-head test of the claim
+this document has been building for five rounds — which the claim loses.**
+
+## `rubin2021` (Nat Commun, PMC8433335)
+
+3D MAPs: PACT-deCAL clearing, light-sheet imaging, segmentation, **hundreds of thousands
+of chondrocytes** across mouse proximal tibia, distal tibia and distal ulna.
+
+> *"these results … show that **hypertrophic cell volume is a better predictor of
+> longitudinal bone growth than hypertrophic cell height**"* — with cell diameter
+> correlated to only some of the differences.
+
+Two further findings that matter as much:
+
+- **65 % of total chondrocyte volume increase occurs *before* the hypertrophic zone**
+  (volume rises 20 % RZ→PZ, 74 % PZ→PHZ, 50 % PHZ→HZ; ~9-fold overall). That is against
+  the standing paradigm, and it is the paradigm embedded in this atlas's `h_term` term
+  and in every drug programme aimed at hypertrophic enlargement.
+- **Resting and hypertrophic chondrocytes have the same aspect ratio.** Cells go round →
+  flat → round; shape changes only across the first three zones and returns. The authors
+  suggest the allometric route exists *"to prevent expansion of the bone circumference
+  during elongation"* — which is the anisotropic-constraint argument, stated from the
+  cell's side instead of the matrix's.
+
+## Is it actually a contradiction? Probably not — and the resolution is the axis
+
+| study | comparison | result |
+|---|---|---|
+| `rubin2021`, `breur1991` | **between plates** (spatial) | **volume** predicts |
+| `hunziker1989` | **one plate, two ages** (temporal) | height ↑23 %, **volume ↓13 %**, growth ↑20 % |
+| `stokes2007` | mechanical modulation | height beats proliferation; **volume not measured** |
+
+This is the same distinction I drew in round 4 against `breur1991` — and `rubin2021` is a
+far stronger version of the between-plate result. **Volume may predict between plates
+while height carries change within a plate over time.** The datasets do not overlap and
+neither refutes the other.
+
+But the honest weighting is not close: **one unreplicated n = 6 study from 1989, in 2D,
+against a 10⁵-cell 3D dataset pointing the other way.** `terminal_cell_shape_modulation`
+is downgraded **C → D** and the disagreement is recorded as contradiction **C-L1-08**.
+
+## The experiment that settles it, and it needs no new method
+
+**Apply `rubin2021`'s own pipeline to `hunziker1989`'s design** — one growth plate, two
+ages spanning a growth-rate change, 3D morphometry of height, diameter and volume in the
+same cells. Nobody has run the within-plate temporal comparison with a modern method. The
+pipeline exists, is published, and would answer it unchanged.
+
+## Standing after nine rounds
+
+| | |
+|---|---|
+| compounds | **2 of 7**, both grade C, neither with a human stature association |
+| the shape reframing | **downgraded to D** — contradicted by the best-powered measurement, rescued only by an axis-of-comparison argument |
+| the mechanism | intact and measured — 9.7× matrix anisotropy (`cohen1998`), soft pericellular shell (`prein2016`) — but it explains *how* a cell could be shaped, and `rubin2021` says shape is not what predicts growth |
+| what the drugs do | GH/IGF-I raise volume to or above normal (`hunziker1994`) — which, if `rubin2021` is right, is the **correct** axis after all |
+
+That last line is worth stating plainly, because it reverses round 8's conclusion.
+I wrote there that the existing pharmacology "is loading the axis that does not carry
+physiological growth change." On `rubin2021`'s evidence, volume *is* the axis that
+predicts growth, and GH is loading it correctly. **Round 8's most quotable sentence is
+the one most likely to be wrong.**
+
+## What I still want
+
+| | why |
+|---|---|
+| **PMID 21559968** — Wosu 2012, *"Mechanical properties of the porcine growth plate vary with developmental stage"* | the one paper that appears to ask whether the anisotropy changes with age — the exact gap in `g_l1arch_016` |
+| **PMID 29573446** — Bylski-Austrow 2018, scoliosis growth-plate histomorphometry | reports hypertrophic cell height **and** width, in **human** tissue |
+| **PMID 3761364** — Cruz-Orive & Hunziker 1986, *"Stereology for anisotropic cells"* | the method under every Hunziker number; would show whether the 1989 height/diameter estimates are as robust as the volume ones |
+| **PMID 3944163** — Buckwalter 1986, *"Morphometric analysis of chondrocyte hypertrophy"* | an independent morphometry of the same question, pre-dating both camps |

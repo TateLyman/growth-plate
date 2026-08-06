@@ -8913,6 +8913,42 @@
     "reliability_class": "spread_documented"
    },
    {
+    "parameter": "volume versus height as predictors of longitudinal bone growth",
+    "value": "volume is the better predictor",
+    "unit": "qualitative",
+    "conditions": "mouse proximal tibia, distal tibia and distal ulna compared against each other; hundreds of thousands of chondrocytes by PACT-deCAL clearing, light-sheet imaging and 3D segmentation (3D MAPs)",
+    "species": "mouse",
+    "source_ref": "rubin2021",
+    "uncertainty": "DIRECTLY CONTRADICTS the premise of this node, in the best-powered measurement available. The authors state that hypertrophic cell volume is a better predictor of longitudinal bone growth than hypertrophic cell height, with cell diameter correlated to only some of the differences. THE COMPARISON IS BETWEEN GROWTH PLATES, however - proximal tibia versus distal tibia versus distal ulna - which is the same spatial axis on which breur1991 found r=0.98 for volume. hunziker1989 compared one plate at two AGES and found volume falling 13% while growth rose 20%. So the two need not conflict: volume may predict between plates while height carries change within a plate over time. Nobody has applied a modern 3D method to the within-plate temporal comparison, and until someone does, this node rests on a single unreplicated n=6 study from 1989 against a 10^5-cell 3D dataset pointing the other way.",
+    "node_id": "terminal_cell_shape_modulation",
+    "layer": "L1",
+    "reliability_class": "spread_documented"
+   },
+   {
+    "parameter": "fraction of total chondrocyte volume increase occurring BEFORE the hypertrophic zone",
+    "value": "65",
+    "unit": "%",
+    "conditions": "mouse growth plates; volume rises 20% resting to proliferative, 74% proliferative to prehypertrophic, 50% prehypertrophic to hypertrophic, about ninefold overall. Surface area rises fivefold with 70% of the increase before the hypertrophic zone",
+    "species": "mouse",
+    "source_ref": "rubin2021",
+    "uncertainty": "contradicts the standing paradigm that most enlargement happens in the hypertrophic zone, which is an assumption embedded in the atlas flow model's h_term term and in every therapeutic programme aimed at hypertrophic enlargement. If most of the volume is acquired prehypertrophically, the terminal cell height is a readout of an earlier process rather than the process itself.",
+    "node_id": "terminal_cell_shape_modulation",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "aspect ratio, resting versus hypertrophic chondrocytes",
+    "value": "the same",
+    "unit": "dimensionless",
+    "conditions": "mouse; cells go round (resting) to flat and elongated (proliferative) to round and large (hypertrophic), so shape changes only across the first three zones and returns",
+    "species": "mouse",
+    "source_ref": "rubin2021",
+    "uncertainty": "the authors note this means chondrocytes could in theory have grown isometrically throughout, and suggest the allometric route is chosen TO PREVENT EXPANSION OF THE BONE CIRCUMFERENCE DURING ELONGATION - which is the anisotropic-constraint argument stated from the cell's side rather than the matrix's. Measured across the differentiation axis, not across growth rates.",
+    "node_id": "terminal_cell_shape_modulation",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
     "parameter": "human terminal cell height and diameter",
     "value": "not measured together",
     "unit": "none",
@@ -21116,6 +21152,7 @@
   "asn540lys caused fgfr3 hypochondroplasia share",
   "aspect cell diameter height ratio terminal",
   "aspect cell hormone implied ratio rescue terminal under",
+  "aspect chondrocytes hypertrophic ratio resting",
   "assay fgfr3 ic50 infigratinib microfluidic mobility shift",
   "assay hsscs renewal self serial transplanted vivo",
   "assayed chondrocytes cpgs developing human",
@@ -21175,6 +21212,7 @@
   "been distinct donors examined growth has human plate stated studies tissue whose",
   "before change growth height imatinib pubertal score spurt started",
   "before chondro dwell junction osseous size terminal time turnover",
+  "before chondrocyte fraction hypertrophic increase occurring total volume zone",
   "before dwell removal size terminal time",
   "before enrolled extension participants phase plus termination",
   "before examined fusion growth histologically human immediately plates",
@@ -21253,6 +21291,7 @@
   "bone conventionalisation effect free germ growth long longitudinal mice term",
   "bone effect overexpression phenotype phospho1 tnap transgenic",
   "bone elongation fraction metacarpal proximal rate rate tibial",
+  "bone growth height longitudinal predictors volume",
   "bone hca indexed marrow projects",
   "bone hca indexed projects tissue",
   "bone histomorphometry jmc paediatric patients",
@@ -21937,8 +21976,8 @@
   "secretion total"
  ],
  "reliability_classes": {
-  "single_source_with_uncertainty": 1277,
-  "spread_documented": 58,
+  "single_source_with_uncertainty": 1279,
+  "spread_documented": 59,
   "unverified": 40,
   "range_value": 131,
   "single_source_point_no_uncertainty": 65,
