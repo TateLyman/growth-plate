@@ -1171,3 +1171,71 @@ long-axis length scores 3/3 while alignment differs between DU and PT, the publi
 conclusion inverts and the target class moves to column alignment. If intrinsic length still
 scores 1/3, terminal cell elongation genuinely does not predict growth between plates and
 volume stands unqualified.
+
+---
+
+## CORR-011 — the measurement `g_l1arch_018` said nobody had made was made in 1996, and the human link may run backwards
+
+**Found**: 2026-08-06, hours after opening `g_l1arch_018`, by searching for the thing the gap
+declared missing instead of asking for it. Both findings are from **abstracts only** — the
+full texts have been requested and no number below has been entered as a value.
+
+### Correction 1 — the "no measurement exists" claim was wrong
+
+`lysyl_oxidase` (grade E) and `collagen_crosslinking` (grade C) both stated that **no
+zone-resolved cross-link density measurement in growth plate cartilage of any species was
+located**, and `g_l1arch_018` was built on that absence.
+
+It exists. `farquharson1996` (PMID 8765127, *Biochim Biophys Acta* 1290:250–6) quantified
+pyridinium cross-links by **HPLC in sequential transverse sections through the chick growth
+plate**, alongside ALP histochemistry and collagen X immunostaining. Its abstract states the
+proliferating zone carries **approximately ten times the pyridinoline concentration of the
+mature hypertrophic zone**, and that deoxypyridinoline first appears in the prehypertrophic
+ALP-positive zone, before collagen X is detectable.
+
+If that survives reading the full text, it is not a minor addition — it is a **measured
+zone-resolved gradient in exactly the variable `g_l1arch_018` proposes as the converter,
+running in the direction the hypothesis needs**: the collagen network is progressively less
+cross-linked where the cell has to expand. Two further sources found in the same search:
+`rucklidge1996` (collagen X cross-links in growth plate, and the effect of
+β-aminopropionitrile on collagen X solubility) and `orth1994` below.
+
+The general defect is the same one CORR-009 and CORR-010 turned on, in a new place: **the
+atlas recorded "no measurement was located in this sweep" and the gap then treated it as "no
+measurement exists."** A failed search is a statement about the search.
+
+### Correction 2 — and the human link may run the opposite way
+
+`g_l1arch_018` step (v) leaned on classical homocystinuria: homocysteine is *thought to
+interfere with* collagen and fibrillin cross-linking, and the phenotype is tall stature. That
+is the standard account, and it is what the atlas's own `homocystinuria_tall` node says.
+
+`orth1994` (PMID 8002899, *Avian Dis* 38:44–9) reports that in **homocysteine-induced tibial
+dyschondroplasia** in chicks, hydroxylysylpyridinoline is **over ten-fold GREATER** in
+dyschondroplastic cartilage than in normal growth-plate cartilage.
+
+So in growth plate cartilage, homocysteine is associated with **more** cross-linking, not
+less — and with a growth plate lesion. That is the opposite sign from the step the gap rests
+on. It does not kill the hypothesis: avian tibial dyschondroplasia is a specific lesion, the
+human Marfanoid phenotype may be fibrillin- rather than collagen-mediated, and cross-link
+*concentration* in a diseased zone is not the same quantity as cross-link *competence*. But
+**the direction of the only human step in the chain is now unsafe**, and it was unsafe when
+the gap was written.
+
+### What changes
+
+- `g_l1arch_018` — `what_is_known` gains `farquharson1996`; `what_is_missing` no longer claims
+  the measurement does not exist, and now says what is actually missing: cross-link density
+  and mechanical anisotropy **in the same specimens**, which `farquharson1996` does not do.
+  Step (v) is demoted and the contradicting sign recorded.
+- `lysyl_oxidase`, `collagen_crosslinking` — the "no measurement located" sentence corrected
+  in both.
+- Seven references added: `farquharson1996`, `orth1994`, `mudd1985`, `cohen1992`, `fujii2000`,
+  `williams2001`, `rucklidge1996`.
+
+### The uncomfortable part
+
+`g_l1arch_018` was opened, committed and pushed roughly two hours before this search was run.
+Nothing in it was fabricated — every observation in the chain was sourced — but its central
+"nobody has measured this" was an artefact of not having looked, and the one human step in it
+points the other way. **The gap should have been opened after the search, not before it.**
