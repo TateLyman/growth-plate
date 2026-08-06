@@ -2742,6 +2742,68 @@
     "reliability_class": "single_source_with_uncertainty"
    }
   ],
+  "cartilage_targeted_delivery": [
+   {
+    "parameter": "WYRGRL peptide affinity for human collagen II",
+    "value": "1.2",
+    "unit": "uM",
+    "conditions": "DSPE-PEG2k-WYRGRL against immobilised recombinant human COL2A1 (~12,600 RU), surface plasmon resonance, 0.31-20 uM analyte, 1:1 Langmuir fit",
+    "species": "not_applicable",
+    "source_ref": "ye2026",
+    "uncertainty": "reported as approximate; no CI given; a 1:1 Langmuir fit to a peptide-collagen interaction is a strong model assumption. This is the one measurement in the study made against a HUMAN protein.",
+    "node_id": "cartilage_targeted_delivery",
+    "layer": "L12",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "purmorphamine encapsulation efficiency",
+    "value": "72.59",
+    "unit": "%",
+    "conditions": "microemulsion, PLGA:purmorphamine mass ratio 10:1, the optimised condition",
+    "species": "not_applicable",
+    "source_ref": "ye2026",
+    "uncertainty": "n=5; best of a ratio series, so an optimised rather than a typical value",
+    "node_id": "cartilage_targeted_delivery",
+    "layer": "L12",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "time to peak nanoparticle signal in the distal femoral region",
+    "value": "24",
+    "unit": "h",
+    "conditions": "single intravenous injection of 100 ug DiR-labelled nanoparticles, mouse, ex vivo IVIS of the distal femur; all four formulations peaked at the same time",
+    "species": "mouse",
+    "source_ref": "ye2026",
+    "uncertainty": "n=6 regions from 3 mice; the readout is normalised radiant efficiency of a membrane dye, not drug. A carbocyanine dye can dissociate from its carrier, so this is the kinetics of the LABEL.",
+    "node_id": "cartilage_targeted_delivery",
+    "layer": "L12",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "body length after targeted purmorphamine",
+    "value": "8.94",
+    "unit": "cm",
+    "conditions": "Fgfr3 V376D/+ mice, CT-CM-NPs-PM 1 mg/kg intravenously every two days for five weeks, naso-anal length; reported as not significantly different from Fgfr3 +/+",
+    "species": "mouse",
+    "source_ref": "ye2026",
+    "uncertainty": "n=8 per group; the untreated mutant and wild-type values are in the figure and not stated in the text, so the effect SIZE cannot be read from the paper's prose alone",
+    "node_id": "cartilage_targeted_delivery",
+    "layer": "L12",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "drug concentration measured in growth-plate cartilage",
+    "value": "not reported",
+    "unit": "none",
+    "conditions": "whole study; delivery is quantified only as normalised DiR fluorescence radiant efficiency",
+    "species": "mouse",
+    "source_ref": "ye2026",
+    "uncertainty": "RECORDED AS AN ABSENCE, deliberately. No ng/g, no ug/g, no AUC, no half-life, no percent injected dose per gram appears anywhere in the paper. This row exists so that the node cannot later be read as supplying an exposure figure.",
+    "node_id": "cartilage_targeted_delivery",
+    "layer": "L12",
+    "reliability_class": "single_source_with_uncertainty"
+   }
+  ],
   "chemotherapy_growth_plate_toxicity": [
    {
     "parameter": "measurements of cytotoxic drug concentration within human growth plate cartilage",
@@ -5139,7 +5201,8 @@
     "conditions": "mean of fusion competence 5, architecture 2, scale 4, tempo 5",
     "species": "mouse",
     "source_ref": "yu2025",
-    "uncertainty": "scoring scheme defined in this node",
+    "uncertainty": "ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined in this node and the axis scores are this atlas's judgement. source_ref names the anchor primary for the model (yu2025); that paper does not contain this number and must not be cited for it.",
+    "atlas_derived": true,
     "node_id": "mouse_model_translation_risk",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
@@ -5203,7 +5266,8 @@
     "conditions": "mean of fusion competence 2, architecture 1, scale 1, tempo 1",
     "species": "multiple",
     "source_ref": "li2023",
-    "uncertainty": "scoring scheme defined in mouse_model_translation_risk",
+    "uncertainty": "ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined in mouse_model_translation_risk and the axis scores are this atlas's judgement. source_ref names the anchor primary for the model (li2023); that paper does not contain this number and must not be cited for it.",
+    "atlas_derived": true,
     "node_id": "nonhuman_primate_growth",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
@@ -5229,7 +5293,8 @@
     "conditions": "mean of fusion competence 3, architecture 1, scale 1, tempo 2",
     "species": "ovine",
     "source_ref": "williams2001",
-    "uncertainty": "scoring scheme defined in mouse_model_translation_risk",
+    "uncertainty": "ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined in mouse_model_translation_risk and the axis scores are this atlas's judgement. source_ref names the anchor primary for the model (williams2001); that paper does not contain this number and must not be cited for it.",
+    "atlas_derived": true,
     "node_id": "ovine_growth_plate_model",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
@@ -5243,10 +5308,47 @@
     "conditions": "mean of fusion competence 2, architecture 1, scale 1, tempo 2",
     "species": "porcine",
     "source_ref": "thurston1985",
-    "uncertainty": "scoring scheme defined in mouse_model_translation_risk",
+    "uncertainty": "ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined in mouse_model_translation_risk and the axis scores are this atlas's judgement. source_ref names the anchor primary for the model (thurston1985); that paper does not contain this number and must not be cited for it.",
+    "atlas_derived": true,
     "node_id": "porcine_growth_plate_model",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "labelling index, proliferation zone",
+    "value": "4.0-10.6",
+    "unit": "%",
+    "conditions": "distal femur, five pigs; 10.6% at 8.0 months, 8.5% at 8.5 months, 7.3% at 10.5 months in the three precisely aged animals; 5.6% and 4.0% in two abattoir animals of uncertain age",
+    "species": "porcine",
+    "source_ref": "thurston1985",
+    "uncertainty": "range across five animals; the two lowest values come from the two animals whose ages the authors could not establish, and the authors themselves discount those two",
+    "node_id": "porcine_growth_plate_model",
+    "layer": "L13",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "proliferation zone cells per column",
+    "value": "30-36",
+    "unit": "cells",
+    "conditions": "distal femur, five pigs, estimated from the labelling profiles",
+    "species": "porcine",
+    "source_ref": "thurston1985",
+    "uncertainty": "range across five animals (30, 36, 31, 34, 30); estimated from histogram shape, no dispersion reported",
+    "node_id": "porcine_growth_plate_model",
+    "layer": "L13",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height along the growth axis",
+    "value": "22-35",
+    "unit": "um",
+    "conditions": "distal femur, five pigs, mean of 20 cells each along the metaphyseal border",
+    "species": "porcine",
+    "source_ref": "thurston1985",
+    "uncertainty": "range across five animals (29, 22, 27, 35, 32 um); decalcified paraffin histology",
+    "node_id": "porcine_growth_plate_model",
+    "layer": "L13",
+    "reliability_class": "range_value"
    }
   ],
   "proteomics_growth_plate": [
@@ -5295,7 +5397,8 @@
     "conditions": "mean of fusion competence 1, architecture 2, scale 3, tempo 3",
     "species": "rabbit",
     "source_ref": "weise2001",
-    "uncertainty": "scoring scheme defined in mouse_model_translation_risk",
+    "uncertainty": "ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined in mouse_model_translation_risk and the axis scores are this atlas's judgement. source_ref names the anchor primary for the model (weise2001); that paper does not contain this number and must not be cited for it.",
+    "atlas_derived": true,
     "node_id": "rabbit_growth_plate_model",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
@@ -5309,7 +5412,8 @@
     "conditions": "mean of fusion competence 5, architecture 2, scale 3, tempo 4",
     "species": "rat",
     "source_ref": "roach2003",
-    "uncertainty": "scoring scheme defined in mouse_model_translation_risk",
+    "uncertainty": "ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined in mouse_model_translation_risk and the axis scores are this atlas's judgement. source_ref names the anchor primary for the model (roach2003); that paper does not contain this number and must not be cited for it.",
+    "atlas_derived": true,
     "node_id": "rat_growth_plate_model",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
@@ -5543,7 +5647,8 @@
     "conditions": "mean of fusion competence 5, architecture 5, scale 5, tempo 5",
     "species": "zebrafish",
     "source_ref": "le2022",
-    "uncertainty": "scoring scheme defined in mouse_model_translation_risk",
+    "uncertainty": "ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is defined in mouse_model_translation_risk and the axis scores are this atlas's judgement. source_ref names the anchor primary for the model (le2022); that paper does not contain this number and must not be cited for it.",
+    "atlas_derived": true,
     "node_id": "zebrafish_skeletal_model",
     "layer": "L13",
     "reliability_class": "single_source_with_uncertainty"
@@ -5798,7 +5903,91 @@
     "uncertainty": "derived quantity; assumes steady state and 100% growth fraction",
     "node_id": "cell_cycle_time_pz",
     "layer": "L1",
+    "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
+    "value": "15",
+    "unit": "days",
+    "conditions": "human distal femur, 10-year-old girl; 28 measured proliferation-zone cells divided by 1.9 cells/day, where 1.9 = 38 um/day growth contribution / 20.5 um measured hypertrophic cell height",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "derived quantity, and derived from the growth rate it would be used to predict; assumes steady state and a 100% growth fraction; n=1 subject",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "S phase duration (derived, not measured)",
+    "value": "16",
+    "unit": "h",
+    "conditions": "human distal femur, from a 4.4% labelling index assuming cell age distribution proportional to phase duration",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "the authors state explicitly that S-phase duration cannot be measured by this single-pulse method; this figure is an inference from the labelling index under an assumption the same paragraph calls doubtful for human tissue",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
     "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "S phase duration (derived, not measured)",
+    "value": "22",
+    "unit": "h",
+    "conditions": "human distal femur, the 16 h figure after a +40% correction for a more probable cell age distribution taken from a rat computer simulation (Kember 1969)",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "the correction factor is rodent-derived and the authors doubt its applicability to man; the resulting value is longer than reported for any other human tissue, which the authors read as either method error or genuine hypoxic slowing",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "labelling index, proliferation zone",
+    "value": "4.4",
+    "unit": "%",
+    "conditions": "human distal femur, 10-year-old girl, 1 h in vitro tritiated thymidine, >=100 labelled cells scored",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "n=1 subject; in vitro labelling of explanted tissue",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "labelling index, proliferation zone",
+    "value": "3.4-4.0",
+    "unit": "%",
+    "conditions": "human metatarsals (3.4%) and distal fibula (4.0%), 18-month-old girl",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "n=1 subject; the fibula is described by the authors as grossly abnormal",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "labelling index, proliferation zone",
+    "value": "10-15",
+    "unit": "%",
+    "conditions": "rodent during active growth, quoted by the authors as the comparison figure",
+    "species": "rat",
+    "source_ref": "thurston1985",
+    "uncertainty": "quoted from a review (Kember 1983) rather than measured in this study; recorded only as the comparator the authors used",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "labelling index, proliferation zone",
+    "value": "4.0-10.6",
+    "unit": "%",
+    "conditions": "pig distal femur, five animals; 10.6% at 8.0 months, 8.5% at 8.5 months and 7.3% at 10.5 months in the three precisely aged animals, i.e. falling with age",
+    "species": "porcine",
+    "source_ref": "thurston1985",
+    "uncertainty": "two of the five animals were abattoir specimens of uncertain age and gave the two lowest indices; range across animals",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "range_value"
    },
    {
     "parameter": "mean cell cycle time, proliferative zone",
@@ -6159,6 +6348,18 @@
     "reliability_class": "single_source_with_uncertainty"
    },
    {
+    "parameter": "chondrocytes produced per column per day (derived, not measured)",
+    "value": "1.9",
+    "unit": "cells/day",
+    "conditions": "human distal femur, 10-year-old girl; 38 um/day mean growth contribution divided by the measured 20.5 um terminal hypertrophic cell height",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "derived from the growth rate, so it cannot be used to predict the growth rate; the 38 um/day is the midpoint of a 1.1-1.7 cm/yr radiographic range for 10-year-old girls, not a measurement on this subject; n=1",
+    "node_id": "chondrocyte_proliferation_rate",
+    "layer": "L1",
+    "reliability_class": "spread_documented"
+   },
+   {
     "parameter": "direct contribution of proliferation to elongation",
     "value": "9",
     "unit": "% of elongation",
@@ -6402,6 +6603,30 @@
     "species": "human",
     "source_ref": "kember1976",
     "uncertainty": "single-study value",
+    "node_id": "distal_femur_plate",
+    "layer": "L1",
+    "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "cells per proliferative column",
+    "value": "28",
+    "unit": "cells",
+    "conditions": "human distal femur, 10-year-old girl; counted from the position-resolved tritiated-thymidine labelling profile, taking the run of positions with the highest labelling frequency",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "read off a labelling histogram rather than counted cell by cell, and the authors write \"about twenty-eight\"; n=1 subject. It is an independent estimate from kember1976's 24 by a different method on a different subject, so the two together bracket the human value at roughly 24-28 rather than confirming either.",
+    "node_id": "distal_femur_plate",
+    "layer": "L1",
+    "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height along the growth axis",
+    "value": "20.5",
+    "unit": "um",
+    "conditions": "human distal femur, 10-year-old girl, mean of 20 cells along the metaphyseal border",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "no dispersion reported; n=1 subject; decalcified paraffin histology, which shrinks hypertrophic lacunae by an unquantified amount, so this is a lower bound",
     "node_id": "distal_femur_plate",
     "layer": "L1",
     "reliability_class": "single_source_with_uncertainty"
@@ -6889,6 +7114,42 @@
     "node_id": "hypertrophic_chondrocyte",
     "layer": "L1",
     "reliability_class": "single_source_point_no_uncertainty"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height along the growth axis",
+    "value": "20.5",
+    "unit": "um",
+    "conditions": "human distal femur, 10-year-old girl (osteosarcoma of contralateral tibia), mean of 20 cells along the metaphyseal border measured with an eyepiece graticule; formal saline fixation, neutral EDTA decalcification, paraffin section",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "no dispersion reported; n=1 subject, 20 cells; decalcified paraffin histology shrinks hypertrophic lacunae by an unreported amount, so this is a lower bound on the in vivo height",
+    "node_id": "hypertrophic_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height along the growth axis",
+    "value": "26",
+    "unit": "um",
+    "conditions": "human metatarsals, 18-month-old girl (congenital absence of tibia), same method; the distal fibula of the same child gave the same value but that bone is described by the authors as grossly abnormal",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "no dispersion reported; n=1 subject; the child's underlying diagnosis is a limb malformation, so this is not a normal-development value",
+    "node_id": "hypertrophic_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height along the growth axis",
+    "value": "22-35",
+    "unit": "um",
+    "conditions": "pig distal femur, five animals aged 8.0-10.5 months (two of the five undated), same graticule method",
+    "species": "porcine",
+    "source_ref": "thurston1985",
+    "uncertainty": "range across five animals (29, 22, 27, 35, 32 um); no within-animal dispersion reported",
+    "node_id": "hypertrophic_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "range_value"
    },
    {
     "parameter": "correlation of final volume with elongation rate",
@@ -7672,7 +7933,7 @@
     "uncertainty": "not reported; single-study value",
     "node_id": "proliferative_zone",
     "layer": "L1",
-    "reliability_class": "single_source_with_uncertainty"
+    "reliability_class": "multi_source"
    },
    {
     "parameter": "total cell cycle time",
@@ -7904,6 +8165,54 @@
     "species": "human",
     "source_ref": "thurston1985",
     "uncertainty": "author-reported; possible technical failure discussed by the authors",
+    "node_id": "resting_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "labelled cells in the inert (reserve) zone after 1 h tritiated thymidine",
+    "value": "none detected",
+    "unit": "qualitative",
+    "conditions": "human distal femur (10 y) and metatarsals/fibula (18 mo), the two specimens in which the columnar zone labelled successfully; 1 h in vitro pulse",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "a 1 h pulse detects only cells in S phase during that hour, so this bounds the instantaneous labelling index rather than demonstrating quiescence: a cell cycling once a month would be missed with high probability. No cell count for the inert zone is reported, so the upper bound cannot be quantified. n=2 subjects.",
+    "node_id": "resting_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "labelled cells in the inert (reserve) zone after 1 h tritiated thymidine",
+    "value": "present in 5 of 5",
+    "unit": "animals",
+    "conditions": "pig distal femur, five animals, same 1 h in vitro pulse and same processing as the human specimens",
+    "species": "porcine",
+    "source_ref": "thurston1985",
+    "uncertainty": "presence/absence only; no inert-zone labelling index reported",
+    "node_id": "resting_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "inert (reserve) zone width",
+    "value": "700-1000",
+    "unit": "um",
+    "conditions": "human distal femur, 10-year-old girl",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "range across the section; n=1 subject; decalcified paraffin histology",
+    "node_id": "resting_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "inert (reserve) zone width",
+    "value": "1000",
+    "unit": "um",
+    "conditions": "human metatarsals, 18-month-old girl; the distal fibula of the same child, described as grossly abnormal, measured about 500 um",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "n=1 subject; the child's diagnosis is congenital absence of the tibia",
     "node_id": "resting_chondrocyte",
     "layer": "L1",
     "reliability_class": "single_source_with_uncertainty"
@@ -10831,6 +11140,80 @@
     "source_ref": "zimmerman2021",
     "uncertainty": "SD 0.455",
     "node_id": "cartilage_osmotic_swelling",
+    "layer": "L5",
+    "reliability_class": "single_source_with_uncertainty"
+   }
+  ],
+  "cellular_contribution_to_cartilage_stiffness": [
+   {
+    "parameter": "tensile Young's modulus, native ear lipocartilage",
+    "value": "3.27",
+    "unit": "MPa",
+    "conditions": "rat ear, microdissected, uniaxial tension to failure at 1% strain/s, Instron 5565",
+    "species": "rat",
+    "source_ref": "ramos2025",
+    "uncertainty": "+/- 0.52, n=8; TENSILE, not compressive - the growth-plate modulus record is compressive and the two are not interchangeable. NOT growth plate.",
+    "node_id": "cellular_contribution_to_cartilage_stiffness",
+    "layer": "L5",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "tensile Young's modulus, delipified ear lipocartilage",
+    "value": "5.79",
+    "unit": "MPa",
+    "conditions": "same tissue after chloroform/methanol delipification, paired design",
+    "species": "rat",
+    "source_ref": "ramos2025",
+    "uncertainty": "+/- 0.99, n=8, Welch p=0.0004; a 1.77-fold increase from removing cell contents alone. NOT growth plate.",
+    "node_id": "cellular_contribution_to_cartilage_stiffness",
+    "layer": "L5",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "ultimate tensile strength, native vs delipified ear lipocartilage",
+    "value": "1.91 vs 4.53",
+    "unit": "MPa",
+    "conditions": "rat ear, paired",
+    "species": "rat",
+    "source_ref": "ramos2025",
+    "uncertainty": "+/- 0.22 and +/- 0.92, n=8, Welch p=0.0259. NOT growth plate.",
+    "node_id": "cellular_contribution_to_cartilage_stiffness",
+    "layer": "L5",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "resilience, native vs delipified ear lipocartilage",
+    "value": "0.38 vs 1.77",
+    "unit": "MJ/m3",
+    "conditions": "rat ear, paired",
+    "species": "rat",
+    "source_ref": "ramos2025",
+    "uncertainty": "+/- 0.06 and +/- 0.48, n=8, Welch p=0.0228; a 4.7-fold change, the largest of the three. NOT growth plate.",
+    "node_id": "cellular_contribution_to_cartilage_stiffness",
+    "layer": "L5",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "tensile Young's modulus, lipid-devoid cartilage comparators",
+    "value": "23.86-23.94",
+    "unit": "MPa",
+    "conditions": "mouse rib cartilage (23.86 +/- 4.32, n=8) and knee meniscus (23.94 +/- 5.14, n=7), same tensile protocol; the authors note these fall within previously reported values for fibrous and hyaline cartilage",
+    "species": "mouse",
+    "source_ref": "ramos2025",
+    "uncertainty": "recorded as a SCALE COMPARATOR only. These are tensile moduli of non-physeal cartilage. The atlas growth-plate modulus record spans 380 kPa to 416 MPa in compression, so this row bounds neither end of that dispute and must not be used to.",
+    "node_id": "cellular_contribution_to_cartilage_stiffness",
+    "layer": "L5",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "growth-plate tissue examined",
+    "value": "none",
+    "unit": "qualitative",
+    "conditions": "whole study",
+    "species": "not_applicable",
+    "source_ref": "ramos2025",
+    "uncertainty": "RECORDED AS AN ABSENCE. The words growth plate, physis and epiphysis do not appear anywhere in the paper. This row exists so the node cannot be read as evidence about the physis.",
+    "node_id": "cellular_contribution_to_cartilage_stiffness",
     "layer": "L5",
     "reliability_class": "single_source_with_uncertainty"
    }
@@ -19283,6 +19666,88 @@
    ],
    "unit_clash": true
   },
+  "cell cycle derived mean measured not proliferative time zone": {
+   "rows": [
+    {
+     "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
+     "value": "20",
+     "unit": "days",
+     "conditions": "human distal femur, derived from 24 cells per column and 1.4 cm/yr growth rate",
+     "species": "human",
+     "source_ref": "kember1976",
+     "uncertainty": "derived quantity; assumes steady state and 100% growth fraction",
+     "node_id": "cell_cycle_time_pz",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
+     "value": "15",
+     "unit": "days",
+     "conditions": "human distal femur, 10-year-old girl; 28 measured proliferation-zone cells divided by 1.9 cells/day, where 1.9 = 38 um/day growth contribution / 20.5 um measured hypertrophic cell height",
+     "species": "human",
+     "source_ref": "thurston1985",
+     "uncertainty": "derived quantity, and derived from the growth rate it would be used to predict; assumes steady state and a 100% growth fraction; n=1 subject",
+     "node_id": "cell_cycle_time_pz",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    }
+   ],
+   "n_sources": 2,
+   "value_spread_ratio": 1.3333333333333333,
+   "direction_conflict": false,
+   "units": [
+    "days"
+   ],
+   "unit_clash": false
+  },
+  "cells column proliferative": {
+   "rows": [
+    {
+     "parameter": "cells per proliferative column",
+     "value": "24",
+     "unit": "cells",
+     "conditions": "human distal femur histology",
+     "species": "human",
+     "source_ref": "kember1976",
+     "uncertainty": "single-study value",
+     "node_id": "distal_femur_plate",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "cells per proliferative column",
+     "value": "28",
+     "unit": "cells",
+     "conditions": "human distal femur, 10-year-old girl; counted from the position-resolved tritiated-thymidine labelling profile, taking the run of positions with the highest labelling frequency",
+     "species": "human",
+     "source_ref": "thurston1985",
+     "uncertainty": "read off a labelling histogram rather than counted cell by cell, and the authors write \"about twenty-eight\"; n=1 subject. It is an independent estimate from kember1976's 24 by a different method on a different subject, so the two together bracket the human value at roughly 24-28 rather than confirming either.",
+     "node_id": "distal_femur_plate",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "cells per proliferative column",
+     "value": "24",
+     "unit": "cells",
+     "conditions": "human distal femur, cell counts on histological sections",
+     "species": "human",
+     "source_ref": "kember1976",
+     "uncertainty": "not reported; single-study value",
+     "node_id": "proliferative_zone",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    }
+   ],
+   "n_sources": 2,
+   "value_spread_ratio": 1.1666666666666667,
+   "direction_conflict": false,
+   "units": [
+    "cells"
+   ],
+   "unit_clash": false
+  },
   "adult aged boys height interval mark prediction": {
    "rows": [
     {
@@ -19724,6 +20189,7 @@
   "advancement american bosnian epiphyseal males north union",
   "advantage after birth duration growth male velocity",
   "advantage anthropometry human measurement over precision proximal rabbit tibial",
+  "affinity collagen human peptide wyrgrl",
   "afm anisotropy elastic indentation longitudinal modulus reserve zone",
   "afm chondrocyte contact diameter radius relative scale",
   "afm elastic growth human hypertrophic modulus plate sharp tip zone",
@@ -19741,6 +20207,7 @@
   "after auc0 day day dosing meclizine repeated",
   "after before chloral chondrocytes cilia growth hydrate plate positive",
   "after before deficiency mct8 serum triac",
+  "after body length purmorphamine targeted",
   "after bone change day length long tadalafil weeks",
   "after capital epiphysis erdafitinib femoral slipped starting time",
   "after casein change days igf level milk serum skim",
@@ -20265,7 +20732,9 @@
   "cartilage collagen collagen fibrillar fraction growth mass young",
   "cartilage collagen diameter double fibril matrilin matrilin mice null",
   "cartilage collagen hypertrophic knockout layer non nppc specific thickness type",
+  "cartilage comparators devoid lipid modulus tensile young",
   "cartilage concentration cytotoxic drug growth human measurements plate within",
+  "cartilage concentration drug growth measured plate",
   "cartilage control femur knockout length npr2 specific",
   "cartilage control hypertrophic knockout layer non npr2 specific thickness",
   "cartilage control hypertrophic knockout nppc specific thickness zone",
@@ -20305,7 +20774,6 @@
   "cell contribution division elongation",
   "cell correlation growth height hypertrophic maximum rate",
   "cell correlation growth number proliferative rate unit width",
-  "cell cycle derived mean measured not proliferative time zone",
   "cell cycle derived mean proliferative time",
   "cell cycle mean proliferative time zone",
   "cell enlargement hypertrophic start volume",
@@ -20322,6 +20790,7 @@
   "cells column day lost",
   "cells column dynamic growth plate proliferative static thickness",
   "cells column human proliferative zone",
+  "cells column proliferation zone",
   "cells column proliferative zone",
   "cells columns creer peak pthrp pulse short",
   "cells columns duration generating keep labelled over resting which",
@@ -20416,6 +20885,7 @@
   "chondrocytes col10a1 differentiation effect human hypertrophic ipsc markers",
   "chondrocytes col2a1 egfp fraction h2b label lineage plateau retaining",
   "chondrocytes col2a1 fraction initial label lineage retaining",
+  "chondrocytes column day derived measured not produced",
   "chondrocytes column day lost produced",
   "chondrocytes column front lost vascular",
   "chondrocytes creer edu fraction labelled pthrp resting",
@@ -20595,6 +21065,9 @@
   "deleted interval par1 short stature",
   "deletion domain extracellular ghr large laron patients",
   "deletion effect element has2 length limb mesenchyme skeletal",
+  "delipified ear lipocartilage modulus tensile young",
+  "delipified ear lipocartilage native resilience",
+  "delipified ear lipocartilage native strength tensile ultimate",
   "delivery evidence intracellular marginal oxygen requiring storage",
   "demonstrated linearity over range stress was which",
   "demonstrating growth human plate studies type vessels",
@@ -20623,6 +21096,7 @@
   "discovery sample size",
   "distal femoral femoral growth share",
   "distal femoral growth mean rate",
+  "distal femoral nanoparticle peak region signal time",
   "distal final jerboa metatarsal volume",
   "distal final metatarsal mouse volume",
   "distal growth longitudinal physis share ulnar ulnar",
@@ -20670,6 +21144,7 @@
   "dysplasia frequency k650e thanatophoric type",
   "dysplasia frequency r248c thanatophoric type",
   "dysplasia height langer median mesomelic nullizygous sds shox",
+  "ear lipocartilage modulus native tensile young",
   "earlier girls height increase onset peak pubertal velocity year",
   "early human identified like number populations pubertal resting stem zone",
   "ec50 growth increase morning testosterone velocity",
@@ -20687,6 +21162,7 @@
   "effect random sitar velocity",
   "effect random size syndrome turner",
   "effect random syndrome tempo turner",
+  "efficiency encapsulation purmorphamine",
   "elongation partition",
   "end phase swelling volume",
   "end phase volume",
@@ -20707,6 +21183,7 @@
   "estimated model number parameters",
   "estimator growth growth height linear plate rate utility",
   "estradiol girls growth half maximal morning pubertal",
+  "examined growth plate tissue",
   "experiments genetic growth human lineage plate published tracing",
   "explained first generation genome height significant snps variance wide",
   "explained first generation gwas height including jointly loci variance zbtb38",
@@ -20851,12 +21328,12 @@
   "secretion total"
  ],
  "reliability_classes": {
-  "single_source_with_uncertainty": 1235,
-  "spread_documented": 55,
+  "single_source_with_uncertainty": 1251,
+  "spread_documented": 56,
   "unverified": 40,
-  "range_value": 119,
+  "range_value": 128,
   "single_source_point_no_uncertainty": 65,
-  "multi_source": 12,
+  "multi_source": 17,
   "superseded": 3
  },
  "reliability_policy": "Phase 2e. Disputes in this atlas are NOT encoded as duplicate rows - ~94% of parameter names appear once. They are encoded in the row's own uncertainty/conditions text or in a range-valued `value`. single_source_point_no_uncertainty is the RISK class: one source, a point value, and no stated uncertainty.",

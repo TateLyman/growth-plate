@@ -1,7 +1,7 @@
 {
  "meta": {
-  "nodes": 618,
-  "edges": 1191,
+  "nodes": 620,
+  "edges": 1196,
   "generated_from": "atlas/nodes/**, atlas/edges/edges.yaml",
   "warning": "COMPILED ARTIFACT - never hand-edit; regenerate with tools/compile_query.py"
  },
@@ -7126,6 +7126,52 @@
     "paediatric bisphosphonate therapy"
    ]
   },
+  "cartilage_targeted_delivery": {
+   "id": "cartilage_targeted_delivery",
+   "name": "Cartilage-targeted nanoparticle delivery to the growth plate",
+   "type": "intervention",
+   "layer": "L12",
+   "stub": false,
+   "summary": "The growth plate is avascular and alymphatic, so every systemic agent reaches it by diffusion through a dense proteoglycan matrix. That is the exposure problem, and it is the reason the atlas records no measured drug concentration in growth-plate cartilage for any compound in any species (g_l12b_002). Cartilage-targeted carriers are the only class of intervention that attacks the exposure term itself rather than the target. The best-characterised construct is a PLGA core coated with primary chondrocyte plasma membrane and decorated with DSPE-PEG2k conjugated to WYRGRL, a collagen-II-binding peptide whose affinity for recombinant human COL2A1 is about 1.2 uM by surface plasmon resonance. Loaded with the Hedgehog agonist purmorphamine and given intravenously at 1 mg/kg every two days for five weeks, it restored body length in Fgfr3 V376D/+ hypochondroplasia mice to a value not significantly different from wild-type littermates. The two components do different jobs: the peptide drives enrichment around cartilage, the membrane coat drives retention inside it, and neither alone reproduces the combination. What the study does NOT provide is an exposure measurement. Every growth-plate number in it is normalised fluorescence radiant efficiency of DiR, a lipophilic carbocyanine membrane dye that reports where the particle label is and not how much drug arrived. There is no concentration in any absolute unit, no AUC, no half-life, and no free-versus-bound fraction. The authors state that they could not obtain human growth-plate cartilage to validate any of it.",
+   "confidence": "D",
+   "claim_grades": null,
+   "human_evidence": "absent",
+   "human_evidence_note": "No human tissue and no human subject. The single human-relevant measurement is the 1.2 uM affinity of the targeting peptide for recombinant human collagen II, which says the ligand should bind human cartilage matrix and says nothing about whether a particle penetrates a human physis, which is thicker, slower and more heavily loaded than a mouse one.",
+   "species_basis": [
+    "mouse",
+    "rat"
+   ],
+   "translation_risk": "high",
+   "translation_risk_reason": "Diffusion into avascular cartilage scales badly with thickness, and the human growth plate is far thicker than the mouse plate that was treated - the human inert zone alone is 700-1000 um (thurston1985), which is more than the full height of a mouse plate. A carrier that penetrates a mouse physis in 24 h has not been shown to penetrate a human one at all, and the study contains no concentration measurement with which to model the scaling.",
+   "localization": [
+    "mouse distal femoral growth plate: DiR signal detected on hard-tissue cryosections (ye2026)",
+    "human growth plate: never tested; the authors state the tissue was unobtainable"
+   ],
+   "key_refs": [
+    {
+     "ref_id": "ye2026",
+     "pmid": "42338508",
+     "first_author": "Ye SH",
+     "year": 2026,
+     "type": "primary",
+     "one_line_finding": "Chondrocyte-membrane-coated, collagen-II-targeted PLGA nanoparticles carried purmorphamine to mouse growth plate and normalised body length in Fgfr3 V376D/+ mice, with delivery quantified only as normalised dye fluorescence."
+    }
+   ],
+   "open_questions": [
+    "g_l12b_002",
+    "g_l12b_026"
+   ],
+   "contradicts": [],
+   "termination_reason": null,
+   "termination_note": null,
+   "pending_source": null,
+   "last_verified": "2026-08-06",
+   "aliases": [
+    "CT-CM-NPs",
+    "collagen-II-targeting nanoparticle",
+    "chondrocyte membrane-coated nanoparticle"
+   ]
+  },
   "chemotherapy_growth_plate_toxicity": {
    "id": "chemotherapy_growth_plate_toxicity",
    "name": "Chemotherapy and growth plate toxicity",
@@ -11560,11 +11606,11 @@
    "type": "process",
    "layer": "L13",
    "stub": false,
-   "summary": "The pig is the large-animal model whose growth plate most closely matches human dimensions\nand loading, and it is the model of choice for physeal mechanics. Unconfined compression of\nporcine growth plate and its three zones has been used to derive zone-specific mechanical\nproperties (sergerie2009), and porcine explants have supplied the controlled loading\nexperiments the human plate cannot be subjected to: compressive modulation alters\nchondrocyte viability (kaviani2015), static and dynamic loading produce different strain\nfields (kaviani2016), and in situ chondrocyte deformation has been measured under stress-\ncontrolled static versus dynamic compression (zimmermann2017). Morphological and X-ray\nmicroprobe studies of the porcine plate established zonal mineral chemistry (althoff1982),\nand porcine tissue supplied the T1-mapping calibration used to infer water content by MRI\n(shiguetomimedi2013). Human comparative data exist directly: in vitro thymidine labelling\nwas performed in human AND porcine growth plates in the same study (thurston1985). Scored on\nthe four-axis scheme defined in mouse_model_translation_risk (fusion competence, plate\narchitecture, scale, tempo; each 1-5, mean reported). Pig scores A=2, B=1, C=1, D=2, mean\n1.5, giving translation_risk moderate; the residual risk is that pig growth completes far\nfaster than human and that pigs are usually studied as juveniles well before any fusion\nevent.\n",
+   "summary": "The pig is the large-animal model whose growth plate most closely matches human dimensions\nand loading, and it is the model of choice for physeal mechanics. Unconfined compression of\nporcine growth plate and its three zones has been used to derive zone-specific mechanical\nproperties (sergerie2009), and porcine explants have supplied the controlled loading\nexperiments the human plate cannot be subjected to: compressive modulation alters\nchondrocyte viability (kaviani2015), static and dynamic loading produce different strain\nfields (kaviani2016), and in situ chondrocyte deformation has been measured under stress-\ncontrolled static versus dynamic compression (zimmermann2017). Morphological and X-ray\nmicroprobe studies of the porcine plate established zonal mineral chemistry (althoff1982),\nand porcine tissue supplied the T1-mapping calibration used to infer water content by MRI\n(shiguetomimedi2013). Human comparative data exist directly: in vitro thymidine labelling\nwas performed in human AND porcine growth plates in the same study, with the same pulse and\nthe same processing (thurston1985), and that study is the reason the pig is scored as\narchitecturally intermediate rather than merely dimensionally similar. It found the pig\nplate to sit between human and rodent on every axis it measured: a prominent inert zone\nbut narrower than man's, regular columns as in rodents, fine well-ordered primary spongiosa\nprojecting into the metaphysis as in rodents rather than the few coarse trabeculae of the\nhuman plate, labelling indices of 4.0-10.6% between the human 3.4-4.4% and the rodent 10-15%,\n30-36 proliferation-zone cells against 13-28 in human, and terminal hypertrophic heights of\n22-35 um against 20.5-26 um in human. One difference is not intermediate but opposite:\nlabelled cells were present in the inert zone of all five pigs and in neither human specimen.\nScored on\nthe four-axis scheme defined in mouse_model_translation_risk (fusion competence, plate\narchitecture, scale, tempo; each 1-5, mean reported). Pig scores A=2, B=1, C=1, D=2, mean\n1.5, giving translation_risk moderate; the residual risk is that pig growth completes far\nfaster than human and that pigs are usually studied as juveniles well before any fusion\nevent.\n",
    "confidence": "B",
    "claim_grades": null,
    "human_evidence": "indirect",
-   "human_evidence_note": "One study labelled human and porcine growth plates side by side, which is the strongest direct human-porcine comparison available.",
+   "human_evidence_note": "One study labelled human and porcine growth plates side by side with the same pulse and the same processing (thurston1985), which is the strongest direct human-porcine comparison available and the only one in which a species difference cannot be an inter-laboratory difference. It rests on five pigs against two usable human subjects.",
    "species_basis": [
     "porcine",
     "human"
@@ -11572,7 +11618,8 @@
    "translation_risk": "moderate",
    "translation_risk_reason": "Dimensional and mechanical similarity to human is high, but pigs are studied juvenile, growth completes much faster, and fusion is rarely the endpoint.",
    "localization": [
-    "porcine RZ/PZ/HZ: zone-specific compressive properties measured"
+    "porcine RZ/PZ/HZ: zone-specific compressive properties measured",
+    "porcine inert zone: labelled cells present in all five animals, unlike human (thurston1985)"
    ],
    "key_refs": [
     {
@@ -11598,10 +11645,11 @@
     },
     {
      "ref_id": "thurston1985",
-     "first_author": "Thurston AJ",
+     "pmid": "3864550",
+     "first_author": "Thurston MN",
      "year": 1985,
      "type": "primary",
-     "one_line_finding": "Thymidine labelling performed in human and porcine growth plates in the same study."
+     "one_line_finding": "Thymidine labelling performed in human and porcine growth plates in the same study; pig labelling index, proliferation zone size and hypertrophic cell height all lie between human and rodent values."
     }
    ],
    "open_questions": [
@@ -12597,11 +12645,11 @@
    "type": "process",
    "layer": "L1",
    "stub": false,
-   "summary": "Proliferative-zone chondrocytes are slow-cycling compared with most renewing tissues, and the cycle length is set almost entirely by G1. In 28-day-old rats measured in vivo by repeated bromodeoxyuridine pulses, total cycle time is 30.9 h in the fast proximal tibia, 34.0 h in the distal radius, 48.7 h in the distal tibia and 76.3 h in the slow proximal radius; the proximal tibia and distal radius do not differ significantly but all other pairwise differences do. S phase is 3.4-6.1 h, G2 is 3.0 h and M is 0.5-0.6 h, so essentially the whole 2.5-fold spread in cycle time is G1. This makes G1 length a locally controlled determinant of differential growth, in parallel with the hypertrophic volume set point. The human situation is very different and much worse characterised: Kember and Sissons derived a mean cycle time of about 20 days for the human distal femoral proliferative zone from a column length of 24 cells and a radiographic growth rate of 1.4 cm/yr, and explicitly warned against extrapolating rodent kinetics to humans. That figure is inferred, not measured; it assumes steady state and that every proliferative-zone cell cycles. Thurston and Kember's in vitro tritiated thymidine labelling of human plates found no labelled cells at all in two of four subjects.",
+   "summary": "Proliferative-zone chondrocytes are slow-cycling compared with most renewing tissues, and the cycle length is set almost entirely by G1. In 28-day-old rats measured in vivo by repeated bromodeoxyuridine pulses, total cycle time is 30.9 h in the fast proximal tibia, 34.0 h in the distal radius, 48.7 h in the distal tibia and 76.3 h in the slow proximal radius; the proximal tibia and distal radius do not differ significantly but all other pairwise differences do. S phase is 3.4-6.1 h, G2 is 3.0 h and M is 0.5-0.6 h, so essentially the whole 2.5-fold spread in cycle time is G1. This makes G1 length a locally controlled determinant of differential growth, in parallel with the hypertrophic volume set point. The human situation is very different and much worse characterised: Kember and Sissons derived a mean cycle time of about 20 days for the human distal femoral proliferative zone from a column length of 24 cells and a radiographic growth rate of 1.4 cm/yr, and explicitly warned against extrapolating rodent kinetics to humans. That figure is inferred, not measured; it assumes steady state and that every proliferative-zone cell cycles. Thurston and Kember's in vitro tritiated thymidine labelling of human plates found no labelled cells at all in two of four subjects. The two that did label give the only human numbers of their kind: a labelling index of 4.4% and a proliferation zone of 28 cells in the distal femur of a 10-year-old girl, and 3.4-4.0% with 13 proliferation-zone cells in the metatarsals and distal fibula of an 18-month-old girl - against 10-15% in actively growing rodents. From those the authors recomputed the human cycle time as roughly 15 days (28 cells / 1.9 cells per day), which supersedes the 20-day figure but reproduces its circularity exactly: the 1.9 cells/day comes from dividing a radiographic growth rate by the measured cell height, so the cycle time still cannot independently predict growth. The authors also state plainly that S-phase duration cannot be measured by a single-pulse method; their 16 h estimate, or 22 h after a +40% age-distribution correction taken from a rat computer simulation, is longer than any other human tissue, which they attribute either to method artefact or to the large hypoxic inert zone slowing metabolism.",
    "confidence": "C",
    "claim_grades": null,
    "human_evidence": "indirect",
-   "human_evidence_note": "The only human figure is a ~20-day cycle time derived arithmetically from column cell counts and radiographic growth rate (kember1976), supported by an in vitro labelling study in four subjects in which two yielded no labelled cells (thurston1985).",
+   "human_evidence_note": "Two human cycle-time figures now exist and both are derived: ~20 days from column counts plus a radiographic growth rate (kember1976) and ~15 days from a measured 28-cell proliferation zone plus a measured 20.5 um hypertrophic cell height and the same radiographic growth rate (thurston1985). The inputs to the second are real measurements; the output is still an arithmetic consequence of the growth rate, so neither can be used to predict elongation without circularity. What is genuinely measured in human tissue is the labelling index (3.4-4.4%) and the proliferation-zone cell count (13-28), and the labelling failed entirely in two of four subjects.",
    "species_basis": [
     "rat",
     "human",
@@ -12611,8 +12659,8 @@
    "translation_risk_reason": "The human and rat values differ by roughly 16-fold and the human value is derived rather than measured. Any inference about proliferation-targeting drug exposure windows, radiation sensitivity or chemotherapy effects on the physis depends on which figure is right.",
    "localization": [
     "rat PZ: measured in vivo (wilsman1996a)",
-    "human distal femur PZ: derived only (kember1976)",
-    "human PZ: never measured directly"
+    "human distal femur PZ: labelling index and cell count measured; cycle time derived from them (thurston1985)",
+    "human PZ: cycle time still never measured directly"
    ],
    "key_refs": [
     {
@@ -12636,8 +12684,8 @@
      "pmid": "3864550",
      "first_author": "Thurston MN",
      "year": 1985,
-     "type": "primary_abstract_only",
-     "one_line_finding": "In vitro tritiated thymidine labelling of human and porcine growth plates; two of four human subjects gave no labelled cells, and pig kinetics lie between human and rodent."
+     "type": "primary",
+     "one_line_finding": "Human proliferation zone is 28 cells with a 4.4% labelling index in a 10-year-old distal femur, giving a re-derived cycle time of ~15 days; two of four human subjects gave no labelled cells at all, and S-phase duration is explicitly beyond the method."
     },
     {
      "ref_id": "farnum1993",
@@ -12655,7 +12703,7 @@
    "contradicts": null,
    "termination_reason": null,
    "termination_note": null,
-   "pending_source": "thurston1985",
+   "pending_source": null,
    "last_verified": "2026-08-05",
    "aliases": [
     "PZ cycle time",
@@ -12990,6 +13038,14 @@
      "year": 2003,
      "type": "primary",
      "one_line_finding": "Catch-up growth after fasting in rats is achieved by increases in chondrocyte production and hypertrophic volume."
+    },
+    {
+     "ref_id": "thurston1985",
+     "pmid": "3864550",
+     "first_author": "Thurston MN",
+     "year": 1985,
+     "type": "primary",
+     "one_line_finding": "A measured 20.5 um human terminal hypertrophic cell height turns the 38 um/day distal-femoral growth contribution into 1.9 cells/day per column - the only human column production figure, and still a derived one."
     }
    ],
    "open_questions": [
@@ -13248,6 +13304,14 @@
      "year": 1976,
      "type": "primary",
      "one_line_finding": "Distal femoral growth of 1.4 cm/yr at ages 5-8 with 24 cells per proliferative column and a derived 20-day cycle time."
+    },
+    {
+     "ref_id": "thurston1985",
+     "pmid": "3864550",
+     "first_author": "Thurston MN",
+     "year": 1985,
+     "type": "primary",
+     "one_line_finding": "Distal femur of a 10-year-old girl - 28 proliferation-zone cells, 4.4% labelling index and a 20.5 um terminal hypertrophic cell height, giving a re-derived cycle time of about 15 days."
     },
     {
      "ref_id": "shao2022",
@@ -13775,16 +13839,17 @@
    "type": "cell_type",
    "layer": "L1",
    "stub": false,
-   "summary": "The hypertrophic chondrocyte is the cell whose volume increase produces most of the elongation of a long bone. In mouse proximal tibia it reaches about 14,000 fl from a starting volume of about 600 fl, a roughly 23-fold increase, achieved by three sequential mechanisms: proportionate biosynthetic growth, then a swelling phase that dilutes dry mass density from 0.183 to about 0.07 pg/fl, then renewed proportionate growth at that low density. In rat the same process is described stereologically as a 4-fold height and 10-fold volume increase accompanied by 2-5 fold increases in rough endoplasmic reticulum, Golgi and mitochondrial compartments, so these are not degenerate cells; time-lapse imaging confirms they remain alive up to the chondro-osseous junction, passing through a discrete condensation stage immediately before removal. Final volume correlates linearly with elongation rate across four plates and two ages in rat (r=0.98) and pig (r=0.83), with a species-specific slope, and the relationship fails altogether in birds. No human hypertrophic chondrocyte volume has been reported with unbiased stereology.",
+   "summary": "The hypertrophic chondrocyte is the cell whose volume increase produces most of the elongation of a long bone. In mouse proximal tibia it reaches about 14,000 fl from a starting volume of about 600 fl, a roughly 23-fold increase, achieved by three sequential mechanisms: proportionate biosynthetic growth, then a swelling phase that dilutes dry mass density from 0.183 to about 0.07 pg/fl, then renewed proportionate growth at that low density. In rat the same process is described stereologically as a 4-fold height and 10-fold volume increase accompanied by 2-5 fold increases in rough endoplasmic reticulum, Golgi and mitochondrial compartments, so these are not degenerate cells; time-lapse imaging confirms they remain alive up to the chondro-osseous junction, passing through a discrete condensation stage immediately before removal. Final volume correlates linearly with elongation rate across four plates and two ages in rat (r=0.98) and pig (r=0.83), with a species-specific slope, and the relationship fails altogether in birds. No human hypertrophic chondrocyte volume has been reported with unbiased stereology. The human terminal cell HEIGHT along the growth axis, however, has been measured directly: 20.5 um in the distal femur of a 10-year-old girl and 26 um in the metatarsals and distal fibula of an 18-month-old girl, each the mean of twenty cells along the metaphyseal border read with an eyepiece graticule (thurston1985). This is the only absolute axial height recorded for a human plate, and it is the conversion factor the atlas flow model previously halted on.",
    "confidence": "C",
    "claim_grades": null,
-   "human_evidence": "indirect",
-   "human_evidence_note": "Human hypertrophic cell heights were measured in an in vitro labelling study (thurston1985, abstract only); no human volume measurement exists.",
+   "human_evidence": "direct",
+   "human_evidence_note": "Human terminal hypertrophic cell height is measured, not inferred - 20.5 um in a 10-year-old distal femur and 26 um in an 18-month-old metatarsal (thurston1985, full text). What remains absent is a human VOLUME, because height without a transverse cross-sectional area cannot give one, and the transverse dimension was not measured in that study or any other human study found. The two subjects also carry disease context (osteosarcoma of the contralateral tibia; congenital absence of the tibia), and the tissue was decalcified paraffin, which shrinks hypertrophic lacunae by an amount nobody has quantified.",
    "species_basis": [
     "mouse",
     "rat",
     "porcine",
-    "chicken"
+    "chicken",
+    "human"
    ],
    "translation_risk": "high",
    "translation_risk_reason": "The volume-versus-growth-rate relationship that makes this cell the central lever has a species-specific slope between rat and pig and does not hold in birds, so human values cannot be predicted from rodent data.",
@@ -13792,7 +13857,7 @@
     "mouse HZ: single-cell volume and density measured (cooper2013)",
     "rat HZ: stereology and ultrastructure (hunziker1987)",
     "swine HZ: terminal condensation stage described (farnum1989a)",
-    "human HZ: cell heights reported but not volumes (thurston1985)"
+    "human HZ: axial cell heights measured, 20.5-26 um; no volume (thurston1985)"
    ],
    "key_refs": [
     {
@@ -13834,6 +13899,14 @@
      "year": 1994,
      "type": "primary",
      "one_line_finding": "The mammalian volume/growth-rate relationship does not hold in ducklings and chicks."
+    },
+    {
+     "ref_id": "thurston1985",
+     "pmid": "3864550",
+     "first_author": "Thurston MN",
+     "year": 1985,
+     "type": "primary",
+     "one_line_finding": "Terminal hypertrophic cell height in human growth plate is 20.5 um (distal femur, 10 y) and 26 um (metatarsals, 18 mo), and 22-35 um across five pig distal femora."
     }
    ],
    "open_questions": [
@@ -14920,20 +14993,22 @@
    "type": "cell_type",
    "layer": "L1",
    "stub": false,
-   "summary": "Resting chondrocytes are small, rounded cells lying singly or in pairs in abundant matrix at the epiphyseal end of the plate. In mouse they include a PTHrP-expressing subpopulation with formal skeletal stem cell properties: these cells self-renew and generate the columnar clones of the proliferative zone, but they acquire that behaviour only after the secondary ossification centre forms, which means the stem compartment is a postnatal acquisition rather than a property of the embryonic plate. The label 'resting' overstates their quiescence. A systematic review of the primary data finds that reported labelling indices and even the operational definition of quiescence differ widely between studies, so the zone contains cycling cells at rates that are not agreed. A separate mouse population at the plate periphery, the borderline chondrocytes, leaves the cartilage altogether and becomes marrow stroma and osteoblasts. In human tissue none of this has been demonstrated: the human resting zone is described morphologically, and the only human proliferation data come from an in vitro thymidine labelling study in which two of four specimens produced no labelled cells anywhere in the plate.",
+   "summary": "Resting chondrocytes are small, rounded cells lying singly or in pairs in abundant matrix at the epiphyseal end of the plate. In mouse they include a PTHrP-expressing subpopulation with formal skeletal stem cell properties: these cells self-renew and generate the columnar clones of the proliferative zone, but they acquire that behaviour only after the secondary ossification centre forms, which means the stem compartment is a postnatal acquisition rather than a property of the embryonic plate. The label 'resting' overstates their quiescence. A systematic review of the primary data finds that reported labelling indices and even the operational definition of quiescence differ widely between studies, so the zone contains cycling cells at rates that are not agreed. A separate mouse population at the plate periphery, the borderline chondrocytes, leaves the cartilage altogether and becomes marrow stroma and osteoblasts. In human tissue none of this has been demonstrated: the human resting zone is described morphologically, and the only human proliferation data come from an in vitro thymidine labelling study in which two of four specimens produced no labelled cells anywhere in the plate. That study also reports the one direct observation on human resting-zone proliferation that exists: in the two specimens that did label, no labelled cells were found anywhere in the wide, low-density epiphyseal region the authors call the inert zone - while in all five pig plates processed identically, labelled cells were present in the inert zone. If both observations are taken at face value the human reserve compartment is quieter than the pig's, not merely quieter than the columnar zone, and the difference is a species difference in the same experiment rather than across studies. The human inert zone is also large: 700-1000 um in the distal femur and 1000 um in the metatarsals, wider than in pig and far wider than in rodents.",
    "confidence": "C",
    "claim_grades": null,
    "human_evidence": "absent",
-   "human_evidence_note": "No human study demonstrates stem or progenitor behaviour of resting zone chondrocytes; the human evidence is descriptive histology only.",
+   "human_evidence_note": "No human study demonstrates stem or progenitor behaviour of resting zone chondrocytes; the human evidence is descriptive histology plus one non-detection of S-phase cells on a 1 h pulse in two subjects, which bounds the instantaneous labelling index but cannot establish quiescence.",
    "species_basis": [
     "mouse",
-    "human"
+    "human",
+    "porcine"
    ],
    "translation_risk": "high",
    "translation_risk_reason": "Stem identity rests on inducible Cre lineage tracing in mouse, and it is conditional on secondary ossification centre formation - a developmental milestone whose human timing relative to plate maturation has not been mapped onto this biology.",
    "localization": [
     "mouse RZ: PTHrP+ skeletal stem cells confirmed by lineage tracing (mizuhashi2018)",
-    "human RZ: morphology described, stem identity unconfirmed"
+    "human RZ: morphology and width described; no labelled cells detected on a 1 h pulse (thurston1985)",
+    "pig RZ: labelled cells present in all five animals on the same 1 h pulse (thurston1985)"
    ],
    "key_refs": [
     {
@@ -14957,8 +15032,8 @@
      "pmid": "3864550",
      "first_author": "Thurston MN",
      "year": 1985,
-     "type": "primary_abstract_only",
-     "one_line_finding": "In vitro thymidine labelling of human growth plates gave no labelled cells in two of four subjects."
+     "type": "primary",
+     "one_line_finding": "In vitro thymidine labelling of human growth plates gave no labelled cells in two of four subjects, and none in the inert zone of the two that worked, while all five pig inert zones labelled."
     }
    ],
    "open_questions": [
@@ -14967,7 +15042,7 @@
    "contradicts": null,
    "termination_reason": null,
    "termination_note": null,
-   "pending_source": "thurston1985",
+   "pending_source": null,
    "last_verified": "2026-08-05",
    "aliases": [
     "reserve chondrocyte",
@@ -27652,6 +27727,59 @@
    "aliases": [
     "Donnan osmotic pressure",
     "swelling pressure"
+   ]
+  },
+  "cellular_contribution_to_cartilage_stiffness": {
+   "id": "cellular_contribution_to_cartilage_stiffness",
+   "name": "Cellular contribution to cartilage stiffness (hypothesis)",
+   "type": "hypothesis",
+   "layer": "L5",
+   "stub": false,
+   "summary": "Cartilage mechanics are conventionally modelled with continuum theory, which assumes the extracellular matrix is homogeneous and the mechanical contribution of the cells themselves is negligible. Lipocartilage falsifies that assumption in at least one tissue: ear, nose and tracheal cartilage in mammals is built from lipid-filled lipochondrocytes with minimal matrix, and emptying their lipid vacuoles raises the tensile Young's modulus from 3.27 to 5.79 MPa, the ultimate tensile strength from 1.91 to 4.53 MPa and the resilience from 0.38 to 1.77 MJ/m3 - the cell contents, not the matrix, set the compliance, and removing them moves the tissue toward the values of naturally lipid-free meniscus and rib. THE GROWTH PLATE WAS NOT EXAMINED IN THAT STUDY and no equivalent experiment has been done in physeal cartilage. This node exists because the growth plate is the cartilage with the largest cellular volume fraction and the most extreme intracellular change - the hypertrophic chondrocyte swells roughly 23-fold while diluting its dry mass density from 0.183 to about 0.07 pg/fl - and because the atlas holds an unresolved contradiction about which zone of the growth plate is stiffest, in which the disagreement runs both between species and between measurement methods that probe matrix and composite at different scales. A cellular contribution to physeal stiffness would explain why a sharp AFM tip and an unconfined-compression platen disagree, because they weight matrix and cells differently. That is an inference from a different tissue and it is graded E accordingly: no experiment in this node's summary was performed on a growth plate.",
+   "confidence": "E",
+   "claim_grades": null,
+   "human_evidence": "absent",
+   "human_evidence_note": "Lipochondrocytes are reported in humans, but in ear/nose/tracheal cartilage and by histology rather than mechanics. No human mechanical measurement here, and no growth-plate measurement in any species.",
+   "species_basis": [
+    "mouse",
+    "rat"
+   ],
+   "translation_risk": "high",
+   "translation_risk_reason": "This node is an inference ACROSS TISSUES, not across species, which is the larger jump. Elastic ear cartilage and physeal cartilage differ in matrix composition, cell type, loading mode and function; that cells dominate mechanics in one is not evidence that they do in the other.",
+   "localization": [
+    "mammalian ear, nose and tracheal cartilage: lipochondrocytes present, including in humans (ramos2025)",
+    "growth plate: never examined by any study of lipochondrocytes"
+   ],
+   "key_refs": [
+    {
+     "ref_id": "ramos2025",
+     "pmid": "39787221",
+     "first_author": "Ramos R",
+     "year": 2025,
+     "type": "primary",
+     "one_line_finding": "Lipid vacuoles inside lipochondrocytes set the stiffness, strength and resilience of ear cartilage; delipification raises all three, so cells rather than matrix carry the mechanics in that tissue."
+    },
+    {
+     "ref_id": "cooper2013",
+     "pmid": "23485973",
+     "first_author": "Cooper KL",
+     "year": 2013,
+     "type": "primary",
+     "one_line_finding": "The hypertrophic chondrocyte dilutes its dry mass density from 0.183 to ~0.07 pg/fl while swelling, an intracellular compositional change of a different mechanism from lipid accumulation."
+    }
+   ],
+   "open_questions": [
+    "g_l1arch_015",
+    "g_l5matrix_008"
+   ],
+   "contradicts": [],
+   "termination_reason": null,
+   "termination_note": null,
+   "pending_source": null,
+   "last_verified": "2026-08-06",
+   "aliases": [
+    "cells as load-bearing elements in cartilage",
+    "non-continuum cartilage mechanics"
    ]
   },
   "chondron": {
@@ -58903,6 +59031,81 @@
    "gap_id": "g_l5igf_001",
    "notes": "Recorded as hypothesized_link and speculative, which is what it is. It is in the graph because it is the only route the atlas can find from an existing human-addressable drug target to the variable carrying 45% of the output uncertainty.",
    "traversal_usable": false
+  },
+  {
+   "edge_id": "e01192",
+   "source": "cartilage_targeted_delivery",
+   "target": "collagen_type_ii",
+   "relation": "binds",
+   "context": "in vitro surface plasmon resonance against immobilised recombinant human COL2A1; no tissue, no age, no sex",
+   "evidence_tier": "T1",
+   "refs": [
+    "ye2026"
+   ],
+   "confidence": "D",
+   "notes": "The WYRGRL peptide on DSPE-PEG2k binds human collagen II with K_D ~1.2 uM by SPR (1:1 Langmuir). This is the targeting mechanism and the only human-protein measurement in the construct. Sign-exempt relation: a binding event has no direction of effect and signing it would be fabrication.",
+   "traversal_usable": false
+  },
+  {
+   "edge_id": "e01193",
+   "source": "cartilage_targeted_delivery",
+   "target": "smoothened",
+   "relation": "activates",
+   "sign": "+",
+   "context": "mouse growth plate chondrocytes and Fgfr3 V376D/+ mice, 1 mg/kg IV every two days for five weeks; both sexes not separated; zone not resolved",
+   "evidence_tier": "T1",
+   "refs": [
+    "ye2026"
+   ],
+   "confidence": "D",
+   "notes": "The carrier's cargo is purmorphamine, a Smoothened agonist; the delivered agent raised GLI1 protein and Hedgehog target transcripts (Ptch1, Gli1, Hhip) in chondrocytes. The edge is the DELIVERED DRUG's action, not the carrier's - the carrier contributes exposure, which is unmeasured (g_l12b_002). Single study, single laboratory, mouse only.",
+   "traversal_usable": true
+  },
+  {
+   "edge_id": "e01194",
+   "source": "cartilage_targeted_delivery",
+   "target": "hypochondroplasia",
+   "relation": "inhibits",
+   "sign": "-",
+   "context": "Fgfr3 V376D/+ mouse model of hypochondroplasia, 4 weeks of age at start, five weeks of treatment; naso-anal and femur length endpoints; sexes not separated",
+   "evidence_tier": "T1",
+   "refs": [
+    "ye2026"
+   ],
+   "confidence": "D",
+   "notes": "Body length reached 8.94 cm, reported as not significantly different from Fgfr3 +/+ littermates (n=8). A mouse disease-model rescue, not a human outcome; graded D because it is one study from one laboratory in one model, and because the delivery it depends on is quantified only as dye fluorescence.",
+   "traversal_usable": true
+  },
+  {
+   "edge_id": "e01195",
+   "source": "hypertrophic_chondrocyte",
+   "target": "cellular_contribution_to_cartilage_stiffness",
+   "relation": "hypothesized_link",
+   "context": "growth plate, species unknown - the hypothesis has never been tested in any physis; the supporting mechanics come from rodent ear cartilage",
+   "evidence_tier": "T4",
+   "refs": [
+    "ramos2025",
+    "cooper2013"
+   ],
+   "confidence": "speculative",
+   "notes": "SPECULATIVE, and marked so. The growth plate has the largest cellular volume fraction of any cartilage and the hypertrophic cell dilutes its dry mass to ~0.07 pg/fl while swelling ~23-fold (cooper2013). ramos2025 shows that in ear cartilage the cell contents rather than the matrix set stiffness, strength and resilience - but never examines a growth plate. The link is an inference across tissues. Sign-exempt relation.",
+   "traversal_usable": false,
+   "gap_id": "g_l1arch_015"
+  },
+  {
+   "edge_id": "e01196",
+   "source": "cellular_contribution_to_cartilage_stiffness",
+   "target": "zonal_stiffness_gradient",
+   "relation": "hypothesized_link",
+   "context": "growth plate, cross-species; bears on a contradiction whose disagreement runs between porcine unconfined compression and human sharp-tip AFM",
+   "evidence_tier": "T4",
+   "refs": [
+    "ramos2025"
+   ],
+   "confidence": "speculative",
+   "notes": "If cells carry load, then a sharp AFM tip (which probes matrix) and an unconfined-compression platen (which probes the composite) would be expected to disagree about which zone is stiffest - which is the observed contradiction g_l5matrix_008. Offered as a candidate explanation for a disagreement, NOT as evidence for either side of it. Sign-exempt relation.",
+   "traversal_usable": false,
+   "gap_id": "g_l5matrix_008"
   }
  ],
  "refs": {
@@ -70547,19 +70750,22 @@
    "year": 2026
   },
   "ramos2025": {
+   "access_route": "user-supplied full-text PDF (NIHMS author manuscript), 2026-08-06",
    "added": "2026-08-06",
    "cited_by": 15,
    "doi": "10.1126/science.ads9960",
    "first_author": "Ramos R",
+   "full_text_read": "2026-08-06",
    "has_full_text": true,
    "is_preprint": false,
    "journal": "Science (New York, N.Y.)",
+   "one_line_finding": "Lipid-filled lipochondrocytes build ear, nose and tracheal cartilage and lower its stiffness, strength and resilience; delipification raises all three. THE GROWTH PLATE IS NEVER EXAMINED - the words growth plate, physis and epiphysis do not appear in the paper",
    "open_access": false,
    "pmid": "39787221",
    "ref_id": "ramos2025",
-   "tier": null,
+   "tier": "T1",
    "title": "Superstable lipid vacuoles endow cartilage with its shape and biomechanics",
-   "type": null,
+   "type": "primary",
    "year": 2025
   },
   "rani2026": {
@@ -73830,10 +74036,12 @@
    "year": 2001
   },
   "thurston1985": {
+   "access_route": "user-supplied full-text PDF, 2026-08-06; publisher copy, not a preprint or scraped copy",
    "added": "2026-08-05",
    "cited_by": 8,
    "doi": "10.1111/j.1365-2184.1985.tb00700.x",
    "first_author": "Thurston MN",
+   "full_text_read": "2026-08-06",
    "has_full_text": true,
    "is_preprint": false,
    "journal": "Cell and tissue kinetics",
@@ -73843,7 +74051,7 @@
    "ref_id": "thurston1985",
    "tier": "T1",
    "title": "In vitro thymidine labelling in human and porcine growth plates",
-   "type": "primary_abstract_only",
+   "type": "primary",
    "year": 1985
   },
   "tkachenko2026": {
@@ -76097,14 +76305,16 @@
    "year": 2004
   },
   "ye2026": {
+   "access_route": "user-supplied full-text PDF, 2026-08-06",
    "added": "2026-08-05",
    "cited_by": 0,
    "doi": "10.1016/j.bioactmat.2026.06.018",
    "first_author": "Ye SH",
+   "full_text_read": "2026-08-06",
    "has_full_text": true,
    "is_preprint": false,
    "journal": "Bioactive materials",
-   "one_line_finding": "Chondrocyte-membrane-coated collagen-II-targeting nanoparticles delivered purmorphamine INTO growth plate cartilage in an HCH mouse model - plate delivery is measurable",
+   "one_line_finding": "Chondrocyte-membrane-coated collagen-II-targeting nanoparticles carried purmorphamine to mouse growth plate cartilage and normalised body length in Fgfr3 V376D/+ mice. DELIVERY IS QUANTIFIED ONLY AS NORMALISED DiR FLUORESCENCE - no drug concentration in any absolute unit, no AUC, no half-life, and the authors state they could not obtain human growth plate to validate in",
    "open_access": true,
    "pmid": "42338508",
    "ref_id": "ye2026",

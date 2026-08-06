@@ -18,7 +18,17 @@ summary: 'Proliferative-zone chondrocytes are slow-cycling compared with most re
   and a radiographic growth rate of 1.4 cm/yr, and explicitly warned against extrapolating rodent kinetics
   to humans. That figure is inferred, not measured; it assumes steady state and that every proliferative-zone
   cell cycles. Thurston and Kember''s in vitro tritiated thymidine labelling of human plates found no
-  labelled cells at all in two of four subjects.'
+  labelled cells at all in two of four subjects. The two that did label give the only human numbers of
+  their kind: a labelling index of 4.4% and a proliferation zone of 28 cells in the distal femur of a
+  10-year-old girl, and 3.4-4.0% with 13 proliferation-zone cells in the metatarsals and distal fibula
+  of an 18-month-old girl - against 10-15% in actively growing rodents. From those the authors recomputed
+  the human cycle time as roughly 15 days (28 cells / 1.9 cells per day), which supersedes the 20-day
+  figure but reproduces its circularity exactly: the 1.9 cells/day comes from dividing a radiographic
+  growth rate by the measured cell height, so the cycle time still cannot independently predict growth.
+  The authors also state plainly that S-phase duration cannot be measured by a single-pulse method; their
+  16 h estimate, or 22 h after a +40% age-distribution correction taken from a rat computer simulation,
+  is longer than any other human tissue, which they attribute either to method artefact or to the large
+  hypoxic inert zone slowing metabolism.'
 quantitative:
 - parameter: total cell cycle time, proliferative zone
   value: '30.9'
@@ -77,6 +87,67 @@ quantitative:
   species: human
   source_ref: kember1976
   uncertainty: derived quantity; assumes steady state and 100% growth fraction
+- parameter: mean cell cycle time, proliferative zone (derived, not measured)
+  value: '15'
+  unit: days
+  conditions: human distal femur, 10-year-old girl; 28 measured proliferation-zone cells divided by 1.9
+    cells/day, where 1.9 = 38 um/day growth contribution / 20.5 um measured hypertrophic cell height
+  species: human
+  source_ref: thurston1985
+  uncertainty: derived quantity, and derived from the growth rate it would be used to predict; assumes
+    steady state and a 100% growth fraction; n=1 subject
+- parameter: S phase duration (derived, not measured)
+  value: '16'
+  unit: h
+  conditions: human distal femur, from a 4.4% labelling index assuming cell age distribution proportional
+    to phase duration
+  species: human
+  source_ref: thurston1985
+  uncertainty: the authors state explicitly that S-phase duration cannot be measured by this single-pulse
+    method; this figure is an inference from the labelling index under an assumption the same paragraph
+    calls doubtful for human tissue
+- parameter: S phase duration (derived, not measured)
+  value: '22'
+  unit: h
+  conditions: human distal femur, the 16 h figure after a +40% correction for a more probable cell age
+    distribution taken from a rat computer simulation (Kember 1969)
+  species: human
+  source_ref: thurston1985
+  uncertainty: the correction factor is rodent-derived and the authors doubt its applicability to man;
+    the resulting value is longer than reported for any other human tissue, which the authors read as either
+    method error or genuine hypoxic slowing
+- parameter: labelling index, proliferation zone
+  value: '4.4'
+  unit: '%'
+  conditions: human distal femur, 10-year-old girl, 1 h in vitro tritiated thymidine, >=100 labelled cells
+    scored
+  species: human
+  source_ref: thurston1985
+  uncertainty: n=1 subject; in vitro labelling of explanted tissue
+- parameter: labelling index, proliferation zone
+  value: 3.4-4.0
+  unit: '%'
+  conditions: human metatarsals (3.4%) and distal fibula (4.0%), 18-month-old girl
+  species: human
+  source_ref: thurston1985
+  uncertainty: n=1 subject; the fibula is described by the authors as grossly abnormal
+- parameter: labelling index, proliferation zone
+  value: 10-15
+  unit: '%'
+  conditions: rodent during active growth, quoted by the authors as the comparison figure
+  species: rat
+  source_ref: thurston1985
+  uncertainty: quoted from a review (Kember 1983) rather than measured in this study; recorded only as
+    the comparator the authors used
+- parameter: labelling index, proliferation zone
+  value: 4.0-10.6
+  unit: '%'
+  conditions: pig distal femur, five animals; 10.6% at 8.0 months, 8.5% at 8.5 months and 7.3% at 10.5
+    months in the three precisely aged animals, i.e. falling with age
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: two of the five animals were abattoir specimens of uncertain age and gave the two lowest
+    indices; range across animals
 - parameter: mean cell cycle time, proliferative zone
   value: '2'
   unit: days
@@ -86,12 +157,16 @@ quantitative:
   uncertainty: author's comparison figure
 localization:
 - 'rat PZ: measured in vivo (wilsman1996a)'
-- 'human distal femur PZ: derived only (kember1976)'
-- 'human PZ: never measured directly'
+- 'human distal femur PZ: labelling index and cell count measured; cycle time derived from them (thurston1985)'
+- 'human PZ: cycle time still never measured directly'
 human_evidence: indirect
-human_evidence_note: The only human figure is a ~20-day cycle time derived arithmetically from column
-  cell counts and radiographic growth rate (kember1976), supported by an in vitro labelling study in four
-  subjects in which two yielded no labelled cells (thurston1985).
+human_evidence_note: 'Two human cycle-time figures now exist and both are derived: ~20 days from column
+  counts plus a radiographic growth rate (kember1976) and ~15 days from a measured 28-cell proliferation
+  zone plus a measured 20.5 um hypertrophic cell height and the same radiographic growth rate (thurston1985).
+  The inputs to the second are real measurements; the output is still an arithmetic consequence of the
+  growth rate, so neither can be used to predict elongation without circularity. What is genuinely measured
+  in human tissue is the labelling index (3.4-4.4%) and the proliferation-zone cell count (13-28), and
+  the labelling failed entirely in two of four subjects.'
 species_basis:
 - rat
 - human
@@ -120,9 +195,10 @@ key_refs:
   pmid: '3864550'
   first_author: Thurston MN
   year: 1985
-  type: primary_abstract_only
-  one_line_finding: In vitro tritiated thymidine labelling of human and porcine growth plates; two of
-    four human subjects gave no labelled cells, and pig kinetics lie between human and rodent.
+  type: primary
+  one_line_finding: Human proliferation zone is 28 cells with a 4.4% labelling index in a 10-year-old
+    distal femur, giving a re-derived cycle time of ~15 days; two of four human subjects gave no labelled
+    cells at all, and S-phase duration is explicitly beyond the method.
 - ref_id: farnum1993
   pmid: '8443686'
   first_author: Farnum CE
@@ -133,5 +209,4 @@ key_refs:
 open_questions:
 - g_l1arch_002
 - g_l1arch_012
-pending_source: thurston1985
 last_verified: '2026-08-05'

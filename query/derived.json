@@ -450,6 +450,11 @@
   "pamidronate": "bisphosphonate_growth_plate",
   "zoledronate": "bisphosphonate_growth_plate",
   "paediatric bisphosphonate therapy": "bisphosphonate_growth_plate",
+  "cartilage_targeted_delivery": "cartilage_targeted_delivery",
+  "cartilage-targeted nanoparticle delivery to the growth plate": "cartilage_targeted_delivery",
+  "ct-cm-nps": "cartilage_targeted_delivery",
+  "collagen-ii-targeting nanoparticle": "cartilage_targeted_delivery",
+  "chondrocyte membrane-coated nanoparticle": "cartilage_targeted_delivery",
   "chemotherapy_growth_plate_toxicity": "chemotherapy_growth_plate_toxicity",
   "chemotherapy and growth plate toxicity": "chemotherapy_growth_plate_toxicity",
   "methotrexate osteopathy": "chemotherapy_growth_plate_toxicity",
@@ -1670,6 +1675,10 @@
   "cartilage osmotic swelling pressure": "cartilage_osmotic_swelling",
   "donnan osmotic pressure": "cartilage_osmotic_swelling",
   "swelling pressure": "cartilage_osmotic_swelling",
+  "cellular_contribution_to_cartilage_stiffness": "cellular_contribution_to_cartilage_stiffness",
+  "cellular contribution to cartilage stiffness (hypothesis)": "cellular_contribution_to_cartilage_stiffness",
+  "cells as load-bearing elements in cartilage": "cellular_contribution_to_cartilage_stiffness",
+  "non-continuum cartilage mechanics": "cellular_contribution_to_cartilage_stiffness",
   "chondron": "chondron",
   "chondrocyte plus pericellular capsule": "chondron",
   "collagen_crosslinking": "collagen_crosslinking",
@@ -2414,6 +2423,7 @@
   "aromatase_inhibitor_anastrozole": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/aromatase_inhibitor_anastrozole.yaml",
   "aromatase_inhibitor_letrozole": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/aromatase_inhibitor_letrozole.yaml",
   "bisphosphonate_growth_plate": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/bisphosphonate_growth_plate.yaml",
+  "cartilage_targeted_delivery": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/cartilage_targeted_delivery.yaml",
   "chemotherapy_growth_plate_toxicity": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/chemotherapy_growth_plate_toxicity.yaml",
   "cnp_analog_pk_challenge": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/cnp_analog_pk_challenge.yaml",
   "deflazacort": "atlas/nodes/L12_pharmacology_as_mechanistic_probe/deflazacort.yaml",
@@ -2739,6 +2749,7 @@
   "ankh_transporter": "atlas/nodes/L5_matrix_and_mineralization/ankh_transporter.yaml",
   "biglycan_protein": "atlas/nodes/L5_matrix_and_mineralization/biglycan_protein.yaml",
   "cartilage_osmotic_swelling": "atlas/nodes/L5_matrix_and_mineralization/cartilage_osmotic_swelling.yaml",
+  "cellular_contribution_to_cartilage_stiffness": "atlas/nodes/L5_matrix_and_mineralization/cellular_contribution_to_cartilage_stiffness.yaml",
   "chondron": "atlas/nodes/L5_matrix_and_mineralization/chondron.yaml",
   "collagen_crosslinking": "atlas/nodes/L5_matrix_and_mineralization/collagen_crosslinking.yaml",
   "collagen_fibril_stoichiometry": "atlas/nodes/L5_matrix_and_mineralization/collagen_fibril_stoichiometry.yaml",
@@ -7456,6 +7467,17 @@
    "layer": "L1"
   },
   {
+   "node": "zonal_stiffness_gradient",
+   "inbound": 10,
+   "n_layers": 3,
+   "layers": [
+    "L13",
+    "L5",
+    "L6"
+   ],
+   "layer": "L5"
+  },
+  {
    "node": "zone_provisional_calcification",
    "inbound": 10,
    "n_layers": 2,
@@ -7489,17 +7511,6 @@
     "L5",
     "L6",
     "L8"
-   ],
-   "layer": "L5"
-  },
-  {
-   "node": "zonal_stiffness_gradient",
-   "inbound": 9,
-   "n_layers": 3,
-   "layers": [
-    "L13",
-    "L5",
-    "L6"
    ],
    "layer": "L5"
   },
@@ -7630,6 +7641,19 @@
    "layer": "L1"
   },
   {
+   "node": "collagen_type_ii",
+   "inbound": 7,
+   "n_layers": 5,
+   "layers": [
+    "L12",
+    "L3",
+    "L5",
+    "L6",
+    "L8"
+   ],
+   "layer": "L5"
+  },
+  {
    "node": "mek1_erk_chondrocyte",
    "inbound": 7,
    "n_layers": 4,
@@ -7724,18 +7748,6 @@
     "L8"
    ],
    "layer": "L4"
-  },
-  {
-   "node": "collagen_type_ii",
-   "inbound": 6,
-   "n_layers": 4,
-   "layers": [
-    "L3",
-    "L5",
-    "L6",
-    "L8"
-   ],
-   "layer": "L5"
   },
   {
    "node": "catch_up_growth",
@@ -7852,6 +7864,16 @@
    "layers": [
     "L3",
     "L4"
+   ],
+   "layer": "L3"
+  },
+  {
+   "node": "smoothened",
+   "inbound": 5,
+   "n_layers": 2,
+   "layers": [
+    "L12",
+    "L3"
    ],
    "layer": "L3"
   },
@@ -8084,17 +8106,6 @@
     "L6"
    ],
    "layer": "L5"
-  },
-  {
-   "node": "npr2_agonist_class",
-   "inbound": 4,
-   "n_layers": 3,
-   "layers": [
-    "L12",
-    "L13",
-    "L3"
-   ],
-   "layer": "L12"
   }
  ],
  "layer_adjacency": {
@@ -8113,7 +8124,7 @@
   "L11->L1": 3,
   "L8->L11": 27,
   "L11->L9": 8,
-  "L12->L3": 25,
+  "L12->L3": 26,
   "L4->L11": 18,
   "L7->L11": 1,
   "L11->L11": 8,
@@ -8131,7 +8142,7 @@
   "L4->L1": 52,
   "L4->L2": 12,
   "L6->L6": 32,
-  "L5->L5": 42,
+  "L5->L5": 43,
   "L0->L1": 22,
   "L0->L2": 8,
   "L0->L6": 1,
@@ -8171,7 +8182,10 @@
   "L13->L12": 1,
   "L1->L2": 3,
   "L2->L1": 3,
-  "L3->L4": 1
+  "L3->L4": 1,
+  "L12->L5": 1,
+  "L12->L11": 1,
+  "L1->L5": 1
  },
  "reachability": {
   "apical_ectodermal_ridge": {
@@ -22923,6 +22937,392 @@
     "depth": 1,
     "path": [
      "e00747"
+    ]
+   }
+  },
+  "cartilage_targeted_delivery": {
+   "smoothened": {
+    "sign": 1,
+    "depth": 1,
+    "path": [
+     "e01193"
+    ]
+   },
+   "hypochondroplasia": {
+    "sign": -1,
+    "depth": 1,
+    "path": [
+     "e01194"
+    ]
+   },
+   "fgfr3_receptor": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01194",
+     "e00766"
+    ]
+   },
+   "fgfr3_mapk_branch": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01194",
+     "e00771"
+    ]
+   },
+   "mek1_erk_chondrocyte": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00771",
+     "e00130"
+    ]
+   },
+   "npr2_receptor": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00771",
+     "e00140"
+    ]
+   },
+   "achondroplasia": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00771",
+     "e00206"
+    ]
+   },
+   "cgmp_second_messenger": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00771",
+     "e00140",
+     "e00107"
+    ]
+   },
+   "acromesomelic_dysplasia_maroteaux": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00771",
+     "e00140",
+     "e00207"
+    ]
+   },
+   "noonan_syndrome": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00771",
+     "e00130",
+     "e00268"
+    ]
+   },
+   "fgfr3_stat1_branch": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00129"
+    ]
+   },
+   "pthrp_ihh_feedback_loop": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00133"
+    ]
+   },
+   "fgfr3_npr2_crosstalk": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00139"
+    ]
+   },
+   "thanatophoric_dysplasia": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00202"
+    ]
+   },
+   "saddan_syndrome": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00205"
+    ]
+   },
+   "bmp_signaling_growth_plate": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00298"
+    ]
+   },
+   "sox9_tf": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370"
+    ]
+   },
+   "beta_catenin_ctnnb1": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00314"
+    ]
+   },
+   "amino_acid_sensing_chondrocyte": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00344"
+    ]
+   },
+   "sox5_tf": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00359"
+    ]
+   },
+   "sox6_tf": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00360"
+    ]
+   },
+   "sox_trio": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00361"
+    ]
+   },
+   "chondrocyte_column_formation": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00366"
+    ]
+   },
+   "runx2_tf": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00367"
+    ]
+   },
+   "chondrocyte_to_osteoblast_transdifferentiation": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00368"
+    ]
+   },
+   "sox9_chondrogenic_commitment": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00369"
+    ]
+   },
+   "pathway_convergence_node": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00370",
+     "e00411"
+    ]
+   },
+   "ihh_protein": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01193",
+     "e00089",
+     "e00090"
+    ]
+   },
+   "smad1_5_8": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00298",
+     "e00284"
+    ]
+   },
+   "ihh_bmp_crosstalk": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00298",
+     "e00295"
+    ]
+   },
+   "chondrocyte_proliferation_rate": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00298",
+     "e00297"
+    ]
+   },
+   "hypertrophic_zone": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00202",
+     "e00203"
+    ]
+   },
+   "jansen_metaphyseal_chondrodysplasia": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00133",
+     "e00233"
+    ]
+   },
+   "blomstrand_chondrodysplasia": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00133",
+     "e00234"
+    ]
+   },
+   "hdac4_protein": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01194",
+     "e00766",
+     "e00133",
+     "e00388"
+    ]
+   },
+   "gli3_repressor": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01193",
+     "e00089"
+    ]
+   },
+   "gli2_tf": {
+    "sign": 1,
+    "depth": 2,
+    "path": [
+     "e01193",
+     "e00091"
+    ]
+   },
+   "gli1_tf": {
+    "sign": 1,
+    "depth": 3,
+    "path": [
+     "e01193",
+     "e00091",
+     "e00092"
+    ]
+   },
+   "pthrp_protein": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01193",
+     "e00089",
+     "e00090",
+     "e00086"
+    ]
+   },
+   "bmp2_ligand": {
+    "sign": 1,
+    "depth": 4,
+    "path": [
+     "e01193",
+     "e00089",
+     "e00090",
+     "e00294"
+    ]
+   },
+   "dio2_deiodinase": {
+    "sign": -1,
+    "depth": 4,
+    "path": [
+     "e01193",
+     "e00089",
+     "e00090",
+     "e01135"
     ]
    }
   },
@@ -71032,6 +71432,7 @@
    }
   },
   "cartilage_osmotic_swelling": {},
+  "cellular_contribution_to_cartilage_stiffness": {},
   "chondron": {},
   "collagen_crosslinking": {},
   "collagen_fibril_stoichiometry": {},
@@ -78131,8 +78532,8 @@
   "zebrafish_skeletal_model"
  ],
  "edge_usability": {
-  "usable": 784,
-  "unusable": 407,
+  "usable": 786,
+  "unusable": 410,
   "reason": "sign-exempt relation (precedes/binds/correlates_with/hypothesized_link) or unsigned"
  }
 }

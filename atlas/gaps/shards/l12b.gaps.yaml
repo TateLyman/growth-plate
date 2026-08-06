@@ -1,756 +1,667 @@
-# Gap shard for Layer L12 (pharmacology as mechanistic probe), shard l12b.
-# Builds on g_l12pharm_001 (CNP surrogate endpoint) and g_l12pharm_002 (CNP plate exposure)
-# without duplicating them.
 gaps:
 - gap_id: g_l12b_001
-  question: >-
-    Does any FGFR3-directed therapy - the oral TKI infigratinib or a CNP analogue - change
-    attained final or near-adult height in achondroplasia, and does treatment alter the ratio
-    of bone age advance to chronological age in a way that would erode the velocity benefit?
+  question: Does any FGFR3-directed therapy - the oral TKI infigratinib or a CNP analogue - change attained final
+    or near-adult height in achondroplasia, and does treatment alter the ratio of bone age advance to chronological
+    age in a way that would erode the velocity benefit?
   type: search_established
   layer: L12
-  why_it_matters: >-
-    Four agents (vosoritide, navepegritide, infigratinib, and combination navepegritide plus
-    lonapegsomatropin) now have positive 52-week velocity results, two are approved, and none
-    has an adult-height number. g_l12pharm_001 established this for CNP analogues; this gap
-    extends it to the kinase inhibitor, which is mechanistically distinct because it acts
-    upstream on the receptor and therefore also on the FGFR3-dependent regulation of skeletal
-    maturation itself. If the TKI advances bone age while the CNP analogue does not (or vice
-    versa), the two classes will diverge on adult height even though they look identical on
-    velocity, and the field will have licensed two drugs on an endpoint that cannot rank them.
-  what_is_known: >-
-    Infigratinib +1.74 cm/yr (95% CI 1.31-2.17, n=114) at 52 weeks; vosoritide +1.57 cm/yr;
-    navepegritide +1.49 cm/yr; class meta-analysis 1.36 cm/yr. Both approvals are accelerated
-    and contingent on confirmatory verification of clinical benefit. Extension studies
-    NCT05145010 (infigratinib, enrolling by invitation, n=300), NCT03424018 and NCT03989947
-    are registered and active.
-  what_is_missing: >-
-    No published attained final or near-adult height for any FGFR3-directed agent, and no
-    published treated-versus-untreated comparison of bone-age-to-chronological-age ratio over
-    the treatment period for the TKI class.
-  nearest_evidence: [savarirayan2026infig, kamrulhasan2026, mcdonnell2026a, nct05145010]
-  discriminating_experiment: >-
-    Follow the registered extension cohorts to epiphyseal closure with prespecified near-adult
-    height, and pair each with serial automated bone age read by a single algorithm, comparing
-    against the ACHieve untreated natural-history cohort matched on age and sex. TRUE HEIGHT
-    GAIN - near-adult height exceeds matched natural history by approximately the cumulative
-    velocity integral, with bone age advancing at the control rate. REDISTRIBUTION - near-adult
-    height converges on natural history while bone age advances faster during treatment.
-    CLASS DIVERGENCE - the TKI and CNP arms differ in bone age trajectory even where their
-    velocity gains matched, which would falsify the use of velocity as a common licensing endpoint.
+  why_it_matters: Four agents (vosoritide, navepegritide, infigratinib, and combination navepegritide plus lonapegsomatropin)
+    now have positive 52-week velocity results, two are approved, and none has an adult-height number. g_l12pharm_001
+    established this for CNP analogues; this gap extends it to the kinase inhibitor, which is mechanistically
+    distinct because it acts upstream on the receptor and therefore also on the FGFR3-dependent regulation of
+    skeletal maturation itself. If the TKI advances bone age while the CNP analogue does not (or vice versa),
+    the two classes will diverge on adult height even though they look identical on velocity, and the field will
+    have licensed two drugs on an endpoint that cannot rank them.
+  what_is_known: Infigratinib +1.74 cm/yr (95% CI 1.31-2.17, n=114) at 52 weeks; vosoritide +1.57 cm/yr; navepegritide
+    +1.49 cm/yr; class meta-analysis 1.36 cm/yr. Both approvals are accelerated and contingent on confirmatory
+    verification of clinical benefit. Extension studies NCT05145010 (infigratinib, enrolling by invitation, n=300),
+    NCT03424018 and NCT03989947 are registered and active.
+  what_is_missing: No published attained final or near-adult height for any FGFR3-directed agent, and no published
+    treated-versus-untreated comparison of bone-age-to-chronological-age ratio over the treatment period for the
+    TKI class.
+  nearest_evidence:
+  - savarirayan2026infig
+  - kamrulhasan2026
+  - mcdonnell2026a
+  - nct05145010
+  discriminating_experiment: Follow the registered extension cohorts to epiphyseal closure with prespecified near-adult
+    height, and pair each with serial automated bone age read by a single algorithm, comparing against the ACHieve
+    untreated natural-history cohort matched on age and sex. TRUE HEIGHT GAIN - near-adult height exceeds matched
+    natural history by approximately the cumulative velocity integral, with bone age advancing at the control
+    rate. REDISTRIBUTION - near-adult height converges on natural history while bone age advances faster during
+    treatment. CLASS DIVERGENCE - the TKI and CNP arms differ in bone age trajectory even where their velocity
+    gains matched, which would falsify the use of velocity as a common licensing endpoint.
   tractability: 4
   search_log_ref: g_l12b_001
-
 - gap_id: g_l12b_002
-  question: >-
-    What concentration does any systemically administered growth-modifying drug actually reach
-    within human growth plate cartilage, and how does that concentration vary with depth from
-    the epiphyseal and metaphyseal vascular fronts?
+  question: What concentration does any systemically administered growth-modifying drug actually reach within
+    human growth plate cartilage, and how does that concentration vary with depth from the epiphyseal and metaphyseal
+    vascular fronts?
   type: search_established
   layer: L12
-  why_it_matters: >-
-    This is a class-wide audit finding, not a single-drug question. Twelve agents were checked -
-    vosoritide, navepegritide, infigratinib, recifercept, meclizine, rhGH, lonapegsomatropin,
-    mecasermin, teriparatide, methotrexate, glucocorticoids, bisphosphonates - and none has a
-    published growth plate tissue concentration in any species. Every dose in this layer was
-    therefore selected on plasma exposure and a proportionality assumption that has never been
-    tested in a tissue that is avascular and has high fixed negative charge density. The cost
-    is concrete: the recifercept failure cannot be attributed between ligand-independence and
-    non-delivery, and the near-identical efficacy of a 24-minute and a 5.3-day CNP exposure
-    cannot be explained.
-  what_is_known: >-
-    Complete plasma pharmacokinetics exist in FDA labelling for eight of the twelve agents.
-    Bisphosphonate metaphyseal banding shows that at least one class reaches the mineralising
-    front in quantity. Spatially resolved mass spectrometry imaging is established for bone and
-    joint tissue, and site-directed delivery to the growth plate has been demonstrated in mice
-    with retinoid-impregnated nanoparticles.
-  what_is_missing: >-
-    Any concentration-versus-depth profile for a therapeutic agent across the zones of a growth
+  why_it_matters: 'This is a class-wide audit finding, not a single-drug question. Twelve agents were checked
+    - vosoritide, navepegritide, infigratinib, recifercept, meclizine, rhGH, lonapegsomatropin, mecasermin, teriparatide,
+    methotrexate, glucocorticoids, bisphosphonates - and none has a published growth plate tissue concentration
+    in any species. Every dose in this layer was therefore selected on plasma exposure and a proportionality assumption
+    that has never been tested in a tissue that is avascular and has high fixed negative charge density. The cost
+    is concrete: the recifercept failure cannot be attributed between ligand-independence and non-delivery, and
+    the near-identical efficacy of a 24-minute and a 5.3-day CNP exposure cannot be explained.'
+  what_is_known: Complete plasma pharmacokinetics exist in FDA labelling for eight of the twelve agents. Bisphosphonate
+    metaphyseal banding shows that at least one class reaches the mineralising front in quantity. Spatially resolved
+    mass spectrometry imaging is established for bone and joint tissue, and site-directed delivery to the growth
+    plate has been demonstrated in mice with retinoid-impregnated nanoparticles.
+  what_is_missing: Any concentration-versus-depth profile for a therapeutic agent across the zones of a growth
     plate, in any species, at any time point in a dosing cycle.
-  nearest_evidence: [fda_voxzogo_label_2025, fda_yuviwel_label_2026, matsuoka2025, nct04638153]
-  discriminating_experiment: >-
-    Dose a large animal with a growth plate of human-comparable thickness (pig or sheep; rodent
-    plates are too thin for diffusion limitation to be measurable) with two agents of contrasting
-    physicochemistry - a small oral TKI and a large recombinant protein - and perform MALDI or
-    DESI imaging mass spectrometry on frozen undecalcified sections at several points across a
-    dosing interval, with phospho-ERK1/2 and phospho-VASP immunostaining by zone as the
-    engagement readout. DIFFUSION-LIMITED - the protein shows a steep concentration gradient with
-    depth and negligible resting-zone concentration while the small molecule is flat, predicting
-    that decoys and antibodies cannot work by this route and that small molecules can.
-    FREE EQUILIBRATION - both profiles are flat and plasma AUC is an adequate surrogate for all
-    agents, which would make the recifercept failure a genuine mechanistic negative.
+  nearest_evidence:
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  - matsuoka2025
+  - nct04638153
+  discriminating_experiment: Dose a large animal with a growth plate of human-comparable thickness (pig or sheep;
+    rodent plates are too thin for diffusion limitation to be measurable) with two agents of contrasting physicochemistry
+    - a small oral TKI and a large recombinant protein - and perform MALDI or DESI imaging mass spectrometry on
+    frozen undecalcified sections at several points across a dosing interval, with phospho-ERK1/2 and phospho-VASP
+    immunostaining by zone as the engagement readout. DIFFUSION-LIMITED - the protein shows a steep concentration
+    gradient with depth and negligible resting-zone concentration while the small molecule is flat, predicting
+    that decoys and antibodies cannot work by this route and that small molecules can. FREE EQUILIBRATION - both
+    profiles are flat and plasma AUC is an adequate surrogate for all agents, which would make the recifercept
+    failure a genuine mechanistic negative.
   tractability: 3
   search_log_ref: g_l12b_002
-
 - gap_id: g_l12b_003
-  question: >-
-    Is the efficacy ceiling of NPR2 agonists set by receptor occupancy, or by the downstream
-    availability of PKG-I/II, which is hypertrophic-zone-biased while NPR2 itself is distributed
-    uniformly across the zones?
+  question: Is the efficacy ceiling of NPR2 agonists set by receptor occupancy, or by the downstream availability
+    of PKG-I/II, which is hypertrophic-zone-biased while NPR2 itself is distributed uniformly across the zones?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    Every approved achondroplasia drug is an NPR2 agonist and all of them plateau at 1.4-1.7 cm/yr
-    regardless of exposure profile. If the limiting step is receptor occupancy, higher or more
-    sustained exposure should help - and the navepegritide-versus-vosoritide comparison says it
-    does not. If the limiting step is PKG availability, then the drug's action is confined to the
-    zone where PKG is expressed, the resting and proliferative zones contribute little, and the
-    right next drug is a PKG-independent cGMP effector or a phosphodiesterase inhibitor rather
-    than a better CNP.
-  what_is_known: >-
-    Vosoritide urinary cGMP is near saturation and CXM maximal at 15 ug/kg/day per FDA labelling,
-    so the systemic pharmacodynamic readout is already on its plateau at the approved dose. The
-    L3 layer records that FGFR3-to-NPR2 crosstalk is post-translational only and that NPR2 is
-    zonally uniform while PKG-I/II is hypertrophic-biased (contradiction C-L3-03).
-  what_is_missing: >-
-    No zonally resolved measurement of cGMP or of PKG substrate phosphorylation in a growth plate
+  why_it_matters: Every approved achondroplasia drug is an NPR2 agonist and all of them plateau at 1.4-1.7 cm/yr
+    regardless of exposure profile. If the limiting step is receptor occupancy, higher or more sustained exposure
+    should help - and the navepegritide-versus-vosoritide comparison says it does not. If the limiting step is
+    PKG availability, then the drug's action is confined to the zone where PKG is expressed, the resting and proliferative
+    zones contribute little, and the right next drug is a PKG-independent cGMP effector or a phosphodiesterase
+    inhibitor rather than a better CNP.
+  what_is_known: Vosoritide urinary cGMP is near saturation and CXM maximal at 15 ug/kg/day per FDA labelling,
+    so the systemic pharmacodynamic readout is already on its plateau at the approved dose. The L3 layer records
+    that FGFR3-to-NPR2 crosstalk is post-translational only and that NPR2 is zonally uniform while PKG-I/II is
+    hypertrophic-biased (contradiction C-L3-03).
+  what_is_missing: No zonally resolved measurement of cGMP or of PKG substrate phosphorylation in a growth plate
     exposed to a therapeutic CNP analogue, in any species.
-  nearest_evidence: [fda_voxzogo_label_2025, fda_yuviwel_label_2026, kamrulhasan2026]
-  discriminating_experiment: >-
-    Treat Fgfr3-Y367C/+ mice and a large-animal model with vosoritide or navepegritide at matched
-    total exposure, then quantify phospho-VASP (a PKG substrate) and cGMP by zone using
-    immunofluorescence on the same sections used for zonal morphometry. OCCUPANCY-LIMITED -
-    phospho-VASP rises across all zones in proportion to dose. PKG-LIMITED - phospho-VASP rises
-    only in prehypertrophic and hypertrophic zones and saturates, while resting-zone cGMP rises
-    without a downstream signal, predicting that PDE inhibition or direct PKG activation would
-    extend the ceiling and more CNP would not.
+  nearest_evidence:
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  - kamrulhasan2026
+  discriminating_experiment: Treat Fgfr3-Y367C/+ mice and a large-animal model with vosoritide or navepegritide
+    at matched total exposure, then quantify phospho-VASP (a PKG substrate) and cGMP by zone using immunofluorescence
+    on the same sections used for zonal morphometry. OCCUPANCY-LIMITED - phospho-VASP rises across all zones in
+    proportion to dose. PKG-LIMITED - phospho-VASP rises only in prehypertrophic and hypertrophic zones and saturates,
+    while resting-zone cGMP rises without a downstream signal, predicting that PDE inhibition or direct PKG activation
+    would extend the ceiling and more CNP would not.
   tractability: 3
-
 - gap_id: g_l12b_004
-  question: >-
-    Does infigratinib inhibit the FGFR3-N540K hypochondroplasia mutant potently enough to be
-    therapeutic, or is it a weak inhibitor of that specific allele?
+  question: Does infigratinib inhibit the FGFR3-N540K hypochondroplasia mutant potently enough to be therapeutic,
+    or is it a weak inhibitor of that specific allele?
   type: contradiction
   layer: L12
-  why_it_matters: >-
-    Hypochondroplasia is the declared next indication for infigratinib and a phase 2 programme is
-    predicated on the affirmative answer. Two groups in the same journal within months give
-    opposite answers about the same drug against the same mutant. If the negative report is right,
-    a trial is being designed on an allele the drug does not adequately engage, and any null
-    result will be misread as evidence against FGFR3 inhibition in general rather than against
-    this compound at this allele.
-  what_is_known: >-
-    Demuynck 2025 reports in silico strong interaction, potent in vitro inhibition, and significant
-    skeletal improvement in Fgfr3-N534K/+ mice. Ursachi 2026 reports that infigratinib is a weak
-    inhibitor of FGFR3-N540K. An independent kinase panel shows infigratinib potency varies ~89-fold
-    between K650E and K650M, establishing that strong allele-dependence of this compound is real.
-  what_is_missing: >-
-    A single head-to-head biochemical comparison of infigratinib against wild-type, G380R, N540K
-    and N540K-equivalent mouse N534K FGFR3 in one assay with stated ATP concentration, plus a
-    matched cellular assay.
-  nearest_evidence: [demuynck2025, ursachi2026_2, ryu2022]
-  discriminating_experiment: >-
-    Run all four FGFR3 variants side by side in a single laboratory using a microfluidic
-    mobility-shift kinase assay at ATP = Km and again at 1 mM ATP, paired with a BaF3
-    TEL-FGFR3 proliferation assay for each variant. THERAPEUTIC - N540K IC50 within ~3-fold of
-    wild-type at both ATP concentrations and cellular IC50 below achievable free plasma
-    concentration at 0.25 mg/kg/day. NOT THERAPEUTIC - N540K IC50 >20-fold weaker, in which case
-    the hypochondroplasia programme needs a different compound.
+  why_it_matters: Hypochondroplasia is the declared next indication for infigratinib and a phase 2 programme is
+    predicated on the affirmative answer. Two groups in the same journal within months give opposite answers about
+    the same drug against the same mutant. If the negative report is right, a trial is being designed on an allele
+    the drug does not adequately engage, and any null result will be misread as evidence against FGFR3 inhibition
+    in general rather than against this compound at this allele.
+  what_is_known: Demuynck 2025 reports in silico strong interaction, potent in vitro inhibition, and significant
+    skeletal improvement in Fgfr3-N534K/+ mice. Ursachi 2026 reports that infigratinib is a weak inhibitor of
+    FGFR3-N540K. An independent kinase panel shows infigratinib potency varies ~89-fold between K650E and K650M,
+    establishing that strong allele-dependence of this compound is real.
+  what_is_missing: A single head-to-head biochemical comparison of infigratinib against wild-type, G380R, N540K
+    and N540K-equivalent mouse N534K FGFR3 in one assay with stated ATP concentration, plus a matched cellular
+    assay.
+  nearest_evidence:
+  - demuynck2025
+  - ursachi2026_2
+  - ryu2022
+  discriminating_experiment: Run all four FGFR3 variants side by side in a single laboratory using a microfluidic
+    mobility-shift kinase assay at ATP = Km and again at 1 mM ATP, paired with a BaF3 TEL-FGFR3 proliferation
+    assay for each variant. THERAPEUTIC - N540K IC50 within ~3-fold of wild-type at both ATP concentrations and
+    cellular IC50 below achievable free plasma concentration at 0.25 mg/kg/day. NOT THERAPEUTIC - N540K IC50 >20-fold
+    weaker, in which case the hypochondroplasia programme needs a different compound.
   tractability: 5
-
 - gap_id: g_l12b_005
-  question: >-
-    What is the IC50 of infigratinib against FGFR3-G380R, the achondroplasia allele it is
-    licensed-track to treat, measured at a stated ATP concentration?
+  question: What is the IC50 of infigratinib against FGFR3-G380R, the achondroplasia allele it is licensed-track
+    to treat, measured at a stated ATP concentration?
   type: quantitative_gap
   layer: L12
-  why_it_matters: >-
-    A phase 3 trial has been run and reported without a published potency value against the
-    causal allele under defined assay conditions. Without it there is no way to relate the
-    0.25 mg/kg/day dose to target engagement, no way to estimate the therapeutic index against
-    the off-target FGFR1/2 activity that reduced trabecular bone in mice, and no basis for
-    predicting whether the same dose would suffice for other FGFR3 alleles. The available
-    numbers - 0.66 nM wild-type, 0.5 nM K650E, 44.4 nM K650M, 505.9 nM V555M - show the
-    allele-dependence is large enough that extrapolating from wild-type is unsafe.
-  what_is_known: >-
-    A ChEMBL-curated microfluidic mobility-shift value of 1.0 nM against FGFR3 at ATP = Km, and
-    a radiometric panel giving wild-type, K650E, K650M and V555M values without stated ATP.
-    K650M has ~3x the constitutive kinase activity of the lethal K650E yet is 89-fold less well
-    inhibited, so potency and severity are decoupled.
-  what_is_missing: >-
-    Any published G380R-specific IC50 with ATP concentration, substrate and readout stated, and
+  why_it_matters: A phase 3 trial has been run and reported without a published potency value against the causal
+    allele under defined assay conditions. Without it there is no way to relate the 0.25 mg/kg/day dose to target
+    engagement, no way to estimate the therapeutic index against the off-target FGFR1/2 activity that reduced
+    trabecular bone in mice, and no basis for predicting whether the same dose would suffice for other FGFR3 alleles.
+    The available numbers - 0.66 nM wild-type, 0.5 nM K650E, 44.4 nM K650M, 505.9 nM V555M - show the allele-dependence
+    is large enough that extrapolating from wild-type is unsafe.
+  what_is_known: A ChEMBL-curated microfluidic mobility-shift value of 1.0 nM against FGFR3 at ATP = Km, and a
+    radiometric panel giving wild-type, K650E, K650M and V555M values without stated ATP. K650M has ~3x the constitutive
+    kinase activity of the lethal K650E yet is 89-fold less well inhibited, so potency and severity are decoupled.
+  what_is_missing: Any published G380R-specific IC50 with ATP concentration, substrate and readout stated, and
     any free (unbound) plasma concentration at the clinical dose against which to compare it.
-  nearest_evidence: [ryu2022, chembl_infigratinib, guagnano2011, tavormina1999]
-  discriminating_experiment: >-
-    Express G380R, wild-type and N540K FGFR3 intracellular domains, measure infigratinib IC50 at
-    ATP = Km and at 1 mM ATP (the physiological intracellular concentration), and pair with
-    equilibrium dialysis to obtain free fraction in paediatric plasma at 0.25 mg/kg/day.
-    ADEQUATE MARGIN - free Cmin exceeds the 1 mM-ATP cellular IC50 for G380R throughout the
-    dosing interval. INADEQUATE - it does not, implying the clinical effect is driven by
-    intermittent partial inhibition and that the dose-response has not been explored.
+  nearest_evidence:
+  - ryu2022
+  - chembl_infigratinib
+  - guagnano2011
+  - tavormina1999
+  discriminating_experiment: Express G380R, wild-type and N540K FGFR3 intracellular domains, measure infigratinib
+    IC50 at ATP = Km and at 1 mM ATP (the physiological intracellular concentration), and pair with equilibrium
+    dialysis to obtain free fraction in paediatric plasma at 0.25 mg/kg/day. ADEQUATE MARGIN - free Cmin exceeds
+    the 1 mM-ATP cellular IC50 for G380R throughout the dosing interval. INADEQUATE - it does not, implying the
+    clinical effect is driven by intermittent partial inhibition and that the dose-response has not been explored.
   tractability: 5
-
 - gap_id: g_l12b_006
-  question: >-
-    Did recifercept fail because FGFR3-G380R signalling in the human growth plate is largely
-    ligand-independent, or because a ~100 kDa soluble decoy cannot reach chondrocytes inside
-    avascular, proteoglycan-dense cartilage?
+  question: Did recifercept fail because FGFR3-G380R signalling in the human growth plate is largely ligand-independent,
+    or because a ~100 kDa soluble decoy cannot reach chondrocytes inside avascular, proteoglycan-dense cartilage?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    This is the single most informative failure in the layer and it was left uninterpretable.
-    If the answer is ligand-independence, then every ligand-trap and anti-FGF antibody strategy
-    for achondroplasia is dead on arrival and the constitutive-dimerisation model of G380R is
-    confirmed in humans. If the answer is delivery, then the mechanism is untested and the
-    entire class of large-molecule FGFR3 antagonists is still open but needs a delivery
-    solution. The two conclusions point research in opposite directions.
-  what_is_known: >-
-    Two trials terminated the same day with the registry statement "lack of efficacy at any of
-    the tested doses ... not related to a safety concern". Posted results show observed/expected
-    height ratio 1.0 (95% CI 0.8-1.1) at month 12 in all three arms spanning 1 mg/kg weekly to
-    1.5 mg/kg daily. The same molecule prevented premature synchondrosis ossification in
-    Fgfr3-ach/+ mice.
-  what_is_missing: >-
-    Any measurement of recifercept concentration in growth plate cartilage in mouse or human,
-    and any pharmacodynamic biomarker of FGF ligand sequestration in treated children.
-  nearest_evidence: [nct04638153, nct05116046, rignol2022]
-  discriminating_experiment: >-
-    Administer fluorophore- or isotope-labelled recifercept to a juvenile pig and image its
-    distribution across the growth plate by mass spectrometry imaging alongside phospho-ERK1/2
-    by zone; in parallel, test whether FGF ligand neutralisation alters ERK output in G380R
-    human iPSC-derived chondrocytes in monolayer where delivery is not limiting.
-    DELIVERY FAILURE - decoy absent from the plate in vivo but ligand neutralisation reduces
-    ERK in monolayer. MECHANISM FAILURE - decoy present in the plate at effective concentration
+  why_it_matters: This is the single most informative failure in the layer and it was left uninterpretable. If
+    the answer is ligand-independence, then every ligand-trap and anti-FGF antibody strategy for achondroplasia
+    is dead on arrival and the constitutive-dimerisation model of G380R is confirmed in humans. If the answer
+    is delivery, then the mechanism is untested and the entire class of large-molecule FGFR3 antagonists is still
+    open but needs a delivery solution. The two conclusions point research in opposite directions.
+  what_is_known: Two trials terminated the same day with the registry statement "lack of efficacy at any of the
+    tested doses ... not related to a safety concern". Posted results show observed/expected height ratio 1.0
+    (95% CI 0.8-1.1) at month 12 in all three arms spanning 1 mg/kg weekly to 1.5 mg/kg daily. The same molecule
+    prevented premature synchondrosis ossification in Fgfr3-ach/+ mice.
+  what_is_missing: Any measurement of recifercept concentration in growth plate cartilage in mouse or human, and
+    any pharmacodynamic biomarker of FGF ligand sequestration in treated children.
+  nearest_evidence:
+  - nct04638153
+  - nct05116046
+  - rignol2022
+  discriminating_experiment: Administer fluorophore- or isotope-labelled recifercept to a juvenile pig and image
+    its distribution across the growth plate by mass spectrometry imaging alongside phospho-ERK1/2 by zone; in
+    parallel, test whether FGF ligand neutralisation alters ERK output in G380R human iPSC-derived chondrocytes
+    in monolayer where delivery is not limiting. DELIVERY FAILURE - decoy absent from the plate in vivo but ligand
+    neutralisation reduces ERK in monolayer. MECHANISM FAILURE - decoy present in the plate at effective concentration
     yet ERK is unchanged in both settings, confirming ligand-independence.
   tractability: 3
-
 - gap_id: g_l12b_007
-  question: >-
-    Why do repurposed small molecules that increase bone growth in Fgfr3 mouse models -
-    meclizine and statins - produce no measurable linear growth effect in humans, and has any
-    statin ever been given to a child with achondroplasia with a growth endpoint?
+  question: Why do repurposed small molecules that increase bone growth in Fgfr3 mouse models - meclizine and
+    statins - produce no measurable linear growth effect in humans, and has any statin ever been given to a child
+    with achondroplasia with a growth endpoint?
   type: search_established
   layer: L12
-  why_it_matters: >-
-    Both compounds were promoted as cheap oral alternatives to injected biologics on the strength
-    of mouse and human-iPSC data. Meclizine was then taken to a paediatric phase 2 with adequate,
-    measured systemic exposure and moved height velocity by about 0.1 cm/yr. The statin result
-    has never been taken to a human trial at all, twelve years after publication in a high-profile
-    journal. Whether this reflects delivery failure, a genuine mouse-specific mechanism, or an
-    absence of commercial sponsorship determines whether the repurposing route is worth pursuing.
-  what_is_known: >-
-    Meclizine phase 1b in 12 children: Cmax 167 ng/mL (95% CI 83-250), t1/2 7.4 h, AUC0-24
-    1170 ng*h/mL at 12.5 mg/day, no serious adverse events. Phase 2 in 9 children with concomitant
-    GH: height velocity 4.35 to 4.46 cm/yr; arm span velocity 6.93 cm/yr. Meclozine 2 mg/kg/d
-    improved survival and long-bone length in Fgfr3-ach mice. Statins corrected TD1 and
-    achondroplasia iPSC chondrogenic cultures and increased bone growth in achondroplasia model mice.
-  what_is_missing: >-
-    No registered or published statin trial with a linear growth endpoint in FGFR3 skeletal
-    dysplasia; no independent replication of the statin iPSC result; no tissue concentration for
-    either compound at the growth plate; and no controlled meclizine trial without concomitant GH.
-  nearest_evidence: [matsushita2025, matsushita2023, funahashi2024, yamashita2014]
-  discriminating_experiment: >-
-    Run a placebo-controlled meclizine monotherapy trial (no concomitant GH) with paired plasma
-    and, in a consenting surgical subgroup undergoing limb lengthening osteotomy, direct assay of
-    meclizine in resected periosteal and physeal cartilage. DELIVERY FAILURE - drug undetectable
-    or far below the in vitro active concentration in cartilage despite therapeutic plasma levels.
-    MOUSE-SPECIFIC MECHANISM - drug present at active concentration in cartilage and growth still
-    unchanged.
+  why_it_matters: Both compounds were promoted as cheap oral alternatives to injected biologics on the strength
+    of mouse and human-iPSC data. Meclizine was then taken to a paediatric phase 2 with adequate, measured systemic
+    exposure and moved height velocity by about 0.1 cm/yr. The statin result has never been taken to a human trial
+    at all, twelve years after publication in a high-profile journal. Whether this reflects delivery failure,
+    a genuine mouse-specific mechanism, or an absence of commercial sponsorship determines whether the repurposing
+    route is worth pursuing.
+  what_is_known: 'Meclizine phase 1b in 12 children: Cmax 167 ng/mL (95% CI 83-250), t1/2 7.4 h, AUC0-24 1170
+    ng*h/mL at 12.5 mg/day, no serious adverse events. Phase 2 in 9 children with concomitant GH: height velocity
+    4.35 to 4.46 cm/yr; arm span velocity 6.93 cm/yr. Meclozine 2 mg/kg/d improved survival and long-bone length
+    in Fgfr3-ach mice. Statins corrected TD1 and achondroplasia iPSC chondrogenic cultures and increased bone
+    growth in achondroplasia model mice.'
+  what_is_missing: No registered or published statin trial with a linear growth endpoint in FGFR3 skeletal dysplasia;
+    no independent replication of the statin iPSC result; no tissue concentration for either compound at the growth
+    plate; and no controlled meclizine trial without concomitant GH.
+  nearest_evidence:
+  - matsushita2025
+  - matsushita2023
+  - funahashi2024
+  - yamashita2014
+  discriminating_experiment: Run a placebo-controlled meclizine monotherapy trial (no concomitant GH) with paired
+    plasma and, in a consenting surgical subgroup undergoing limb lengthening osteotomy, direct assay of meclizine
+    in resected periosteal and physeal cartilage. DELIVERY FAILURE - drug undetectable or far below the in vitro
+    active concentration in cartilage despite therapeutic plasma levels. MOUSE-SPECIFIC MECHANISM - drug present
+    at active concentration in cartilage and growth still unchanged.
   tractability: 3
   search_log_ref: g_l12b_007
-
 - gap_id: g_l12b_009
-  question: >-
-    By how much, if at all, does recombinant human growth hormone increase attained adult height
-    in achondroplasia, and does it do so by a mechanism that is additive to or occluded by CNP
-    analogue therapy?
+  question: By how much, if at all, does recombinant human growth hormone increase attained adult height in achondroplasia,
+    and does it do so by a mechanism that is additive to or occluded by CNP analogue therapy?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    GH is licensed for achondroplasia only in Japan, is described there as producing an
-    unsatisfactory adult height effect, and children are now being transitioned from GH to
-    vosoritide - a switch made without a randomised comparison. Meanwhile the COACH trial has gone
-    the other way and combined a GH prodrug with a CNP prodrug, reporting AGV 8.69 versus
-    5.95 cm/yr for matched CNP monotherapy. Whether GH and NPR2 agonism act on separable steps in
-    the FGFR3-constrained plate, or whether GH simply drives a plate whose ceiling FGFR3 sets,
-    determines whether combination therapy is rational or merely additive on a surrogate.
-  what_is_known: >-
-    rhGH raises velocity by 3-5 cm/yr across paediatric indications generally. In achondroplasia,
-    Japanese licensure exists with published statements that adult height benefit is
-    unsatisfactory. Real-world cohorts document GH-to-vosoritide transition with age-dependent
-    effectiveness. COACH gives a combination AGV of 8.69 cm/yr against a matched external
-    monotherapy comparator, not a randomised one.
-  what_is_missing: >-
-    No randomised comparison of GH, CNP analogue and their combination in achondroplasia, and no
+  why_it_matters: GH is licensed for achondroplasia only in Japan, is described there as producing an unsatisfactory
+    adult height effect, and children are now being transitioned from GH to vosoritide - a switch made without
+    a randomised comparison. Meanwhile the COACH trial has gone the other way and combined a GH prodrug with a
+    CNP prodrug, reporting AGV 8.69 versus 5.95 cm/yr for matched CNP monotherapy. Whether GH and NPR2 agonism
+    act on separable steps in the FGFR3-constrained plate, or whether GH simply drives a plate whose ceiling FGFR3
+    sets, determines whether combination therapy is rational or merely additive on a surrogate.
+  what_is_known: rhGH raises velocity by 3-5 cm/yr across paediatric indications generally. In achondroplasia,
+    Japanese licensure exists with published statements that adult height benefit is unsatisfactory. Real-world
+    cohorts document GH-to-vosoritide transition with age-dependent effectiveness. COACH gives a combination AGV
+    of 8.69 cm/yr against a matched external monotherapy comparator, not a randomised one.
+  what_is_missing: No randomised comparison of GH, CNP analogue and their combination in achondroplasia, and no
     attained adult height for GH-treated achondroplasia outside the Japanese experience.
-  nearest_evidence: [martn2026, shimada2026, mcdonnell2026, ying2026]
-  discriminating_experiment: >-
-    Randomise treatment-naive children with achondroplasia three ways - CNP analogue alone, GH
-    alone, both - with AGV at 52 weeks and near-adult height as co-primary endpoints, and measure
-    serum CXM and IGF-1 in all arms. SEPARABLE MECHANISMS - the combination arm exceeds the sum of
-    the single-agent effects on CXM and the effect persists to adult height. OCCLUDED - the
-    combination equals the better single agent on CXM, indicating both drive the same
-    FGFR3-limited step.
+  nearest_evidence:
+  - martn2026
+  - shimada2026
+  - mcdonnell2026
+  - ying2026
+  discriminating_experiment: Randomise treatment-naive children with achondroplasia three ways - CNP analogue
+    alone, GH alone, both - with AGV at 52 weeks and near-adult height as co-primary endpoints, and measure serum
+    CXM and IGF-1 in all arms. SEPARABLE MECHANISMS - the combination arm exceeds the sum of the single-agent
+    effects on CXM and the effect persists to adult height. OCCLUDED - the combination equals the better single
+    agent on CXM, indicating both drive the same FGFR3-limited step.
   tractability: 3
-
 - gap_id: g_l12b_011
-  question: >-
-    Does IGF-1 administered on top of a full growth hormone dose add growth through a
-    GH-independent action on the growth plate, and does that increment persist to adult height?
+  question: Does IGF-1 administered on top of a full growth hormone dose add growth through a GH-independent action
+    on the growth plate, and does that increment persist to adult height?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    This is the direct test of whether IGF-1 is merely GH's messenger at the plate or an
-    independent effector, and it is the mechanistic question underneath the entire GH-IGF axis in
-    L4. A six-year randomised trial was designed to answer it, produced a dose-related first-year
-    increment of about 1-2 cm/yr over GH alone, showed that increment narrowing by year 4, and was
-    then terminated for strategic reasons before adult height. The answer was within reach and was
-    abandoned for commercial rather than scientific reasons.
-  what_is_known: >-
-    NCT00572156 posted year-1 mean height velocity: rhGH 45 ug/kg/day alone 9.3 cm/yr (SD 1.7);
-    plus rhIGF-1 50 ug/kg 10.1 (1.3); plus 100 ug/kg 9.7 (2.5); plus 150 ug/kg 11.2 (2.1). By
-    year 4 the arms had converged to 7.7 / 8.1 / 8.4 / 8.3 cm/yr. n=106 randomised; trial
-    terminated. rhIGF-1 monotherapy in severe primary IGF-1 deficiency gives 0.9 height SDS to
-    near-adult height.
-  what_is_missing: >-
-    Any adult height comparison of GH alone versus GH plus IGF-1, and any statistical test of
-    the apparent waning of the increment.
-  nearest_evidence: [nct00572156, ramonkrauel2026, martn2026]
-  discriminating_experiment: >-
-    Re-run the design with adult height as the prespecified primary endpoint in a
-    non-commercially-sponsored setting, or, faster, re-analyse the existing NCT00572156
-    individual patient data for a dose-by-year interaction and for height SDS at last observation.
-    INDEPENDENT IGF-1 ACTION - the year-1 dose-response is monotonic after removing the
-    non-monotonic 100 ug/kg arm and the height SDS advantage persists at last observation.
-    MESSENGER ONLY - the increment is fully explained by transient supraphysiological IGF-1 and
-    disappears by year 3-4, as the posted means suggest.
+  why_it_matters: This is the direct test of whether IGF-1 is merely GH's messenger at the plate or an independent
+    effector, and it is the mechanistic question underneath the entire GH-IGF axis in L4. A six-year randomised
+    trial was designed to answer it, produced a dose-related first-year increment of about 1-2 cm/yr over GH alone,
+    showed that increment narrowing by year 4, and was then terminated for strategic reasons before adult height.
+    The answer was within reach and was abandoned for commercial rather than scientific reasons.
+  what_is_known: 'NCT00572156 posted year-1 mean height velocity: rhGH 45 ug/kg/day alone 9.3 cm/yr (SD 1.7);
+    plus rhIGF-1 50 ug/kg 10.1 (1.3); plus 100 ug/kg 9.7 (2.5); plus 150 ug/kg 11.2 (2.1). By year 4 the arms
+    had converged to 7.7 / 8.1 / 8.4 / 8.3 cm/yr. n=106 randomised; trial terminated. rhIGF-1 monotherapy in severe
+    primary IGF-1 deficiency gives 0.9 height SDS to near-adult height.'
+  what_is_missing: Any adult height comparison of GH alone versus GH plus IGF-1, and any statistical test of the
+    apparent waning of the increment.
+  nearest_evidence:
+  - nct00572156
+  - ramonkrauel2026
+  - martn2026
+  discriminating_experiment: Re-run the design with adult height as the prespecified primary endpoint in a non-commercially-sponsored
+    setting, or, faster, re-analyse the existing NCT00572156 individual patient data for a dose-by-year interaction
+    and for height SDS at last observation. INDEPENDENT IGF-1 ACTION - the year-1 dose-response is monotonic after
+    removing the non-monotonic 100 ug/kg arm and the height SDS advantage persists at last observation. MESSENGER
+    ONLY - the increment is fully explained by transient supraphysiological IGF-1 and disappears by year 3-4,
+    as the posted means suggest.
   tractability: 4
-
 - gap_id: g_l12b_012
-  question: >-
-    What linear growth outcomes were achieved with mecasermin rinfabate (rhIGF-1/rhIGFBP-3
-    complex), and did complexing IGF-1 with its binding protein change the growth response or
-    only the hypoglycaemia risk?
+  question: What linear growth outcomes were achieved with mecasermin rinfabate (rhIGF-1/rhIGFBP-3 complex), and
+    did complexing IGF-1 with its binding protein change the growth response or only the hypoglycaemia risk?
   type: search_established
   layer: L12
-  why_it_matters: >-
-    IGFBP-3 is the principal carrier of circulating IGF-1 and the complex determines how much
-    free IGF-1 reaches tissue. A licensed drug existed that manipulated exactly this variable in
-    children, and its growth data are now effectively unrecoverable from the indexed literature
-    while the same molecule is being developed for preterm lung disease. This is a lost human
-    experiment on IGF-1 bioavailability, and its absence weakens every inference in L4 about
-    free versus bound IGF-1 at the plate.
-  what_is_known: >-
-    The 1:1 rhIGF-1/rhIGFBP-3 complex was designed to extend circulating IGF-1 half-life and
-    reduce hypoglycaemia, permitting once-daily rather than twice-daily dosing, and was licensed
-    in the mid-2000s for severe primary IGF-1 deficiency before being withdrawn from that
-    indication. The surviving indexed literature on the complex concerns myotonic dystrophy and
-    preterm bronchopulmonary dysplasia (OHB-607).
-  what_is_missing: >-
-    Any retrievable cohort reporting height velocity or adult height on the complex, and any
-    head-to-head comparison of complexed versus uncomplexed IGF-1 on growth.
-  nearest_evidence: [kemp2006, fda_increlex_label_2025, ramonkrauel2026]
-  discriminating_experiment: >-
-    Request the original BLA clinical review for mecasermin rinfabate from the FDA and extract
-    the height velocity tables; in parallel, compare free IGF-1 concentrations and growth
-    response in children on twice-daily mecasermin versus historical complex-treated patients.
-    BIOAVAILABILITY MATTERS - the complex produced equal growth at lower free IGF-1 exposure and
-    fewer hypoglycaemic events. CARRIER IRRELEVANT TO GROWTH - growth tracked total IGF-1
-    exposure regardless of complexation, and the complex bought only tolerability.
+  why_it_matters: IGFBP-3 is the principal carrier of circulating IGF-1 and the complex determines how much free
+    IGF-1 reaches tissue. A licensed drug existed that manipulated exactly this variable in children, and its
+    growth data are now effectively unrecoverable from the indexed literature while the same molecule is being
+    developed for preterm lung disease. This is a lost human experiment on IGF-1 bioavailability, and its absence
+    weakens every inference in L4 about free versus bound IGF-1 at the plate.
+  what_is_known: The 1:1 rhIGF-1/rhIGFBP-3 complex was designed to extend circulating IGF-1 half-life and reduce
+    hypoglycaemia, permitting once-daily rather than twice-daily dosing, and was licensed in the mid-2000s for
+    severe primary IGF-1 deficiency before being withdrawn from that indication. The surviving indexed literature
+    on the complex concerns myotonic dystrophy and preterm bronchopulmonary dysplasia (OHB-607).
+  what_is_missing: Any retrievable cohort reporting height velocity or adult height on the complex, and any head-to-head
+    comparison of complexed versus uncomplexed IGF-1 on growth.
+  nearest_evidence:
+  - kemp2006
+  - fda_increlex_label_2025
+  - ramonkrauel2026
+  discriminating_experiment: Request the original BLA clinical review for mecasermin rinfabate from the FDA and
+    extract the height velocity tables; in parallel, compare free IGF-1 concentrations and growth response in
+    children on twice-daily mecasermin versus historical complex-treated patients. BIOAVAILABILITY MATTERS - the
+    complex produced equal growth at lower free IGF-1 exposure and fewer hypoglycaemic events. CARRIER IRRELEVANT
+    TO GROWTH - growth tracked total IGF-1 exposure regardless of complexation, and the complex bought only tolerability.
   tractability: 2
   search_log_ref: g_l12b_012
-
 - gap_id: g_l12b_014
-  question: >-
-    In children with pituitary gigantism, does GH receptor blockade with pegvisomant limit final
-    adult height more effectively than suppression of GH secretion with a somatostatin analogue?
+  question: In children with pituitary gigantism, does GH receptor blockade with pegvisomant limit final adult
+    height more effectively than suppression of GH secretion with a somatostatin analogue?
   type: search_established
   layer: L12
-  why_it_matters: >-
-    This is the only human setting where the growth axis is deliberately switched off at two
-    different levels in the same disease, so it is the cleanest available dissection of whether
-    the growth plate responds to circulating GH concentration or to GH receptor occupancy. It
-    also matters clinically: X-linked acrogigantism responds poorly to somatostatin analogues,
-    and a single patient has been carried to final height on pegvisomant monotherapy, but there
-    is no cohort to generalise from.
-  what_is_known: >-
-    Pegvisomant blocks GH receptor dimerisation and is titrated to IGF-1, not to GH, which rises
-    during treatment; Tmax 33-77 h, relative bioavailability 57%. Its paediatric safety and
-    effectiveness are not established per FDA labelling. One paediatric X-linked acrogigantism
-    patient reached final height on pegvisomant monotherapy. Somatostatin analogue paediatric
-    experience is confined to case reports and small surgical series.
-  what_is_missing: >-
-    No cohort of any size reporting final adult height in children treated with either agent as
+  why_it_matters: 'This is the only human setting where the growth axis is deliberately switched off at two different
+    levels in the same disease, so it is the cleanest available dissection of whether the growth plate responds
+    to circulating GH concentration or to GH receptor occupancy. It also matters clinically: X-linked acrogigantism
+    responds poorly to somatostatin analogues, and a single patient has been carried to final height on pegvisomant
+    monotherapy, but there is no cohort to generalise from.'
+  what_is_known: Pegvisomant blocks GH receptor dimerisation and is titrated to IGF-1, not to GH, which rises
+    during treatment; Tmax 33-77 h, relative bioavailability 57%. Its paediatric safety and effectiveness are
+    not established per FDA labelling. One paediatric X-linked acrogigantism patient reached final height on pegvisomant
+    monotherapy. Somatostatin analogue paediatric experience is confined to case reports and small surgical series.
+  what_is_missing: No cohort of any size reporting final adult height in children treated with either agent as
     the primary growth-limiting therapy, and no comparison between the two levels of blockade.
-  nearest_evidence: [burren2023, fda_somavert_label_2025, yuen2026]
-  discriminating_experiment: >-
-    Build a multicentre retrospective registry of paediatric GH-excess (X-linked acrogigantism,
-    AIP-mutation macroadenoma, McCune-Albright) with attained final height, treatment modality
-    and IGF-1 trajectory, and model final height SDS on time-integrated IGF-1 versus
-    time-integrated GH. RECEPTOR OCCUPANCY GOVERNS - final height tracks integrated IGF-1
-    regardless of the GH concentration, favouring receptor blockade. SECRETION GOVERNS - final
-    height tracks integrated GH, in which case pegvisomant's rising GH would be a liability.
+  nearest_evidence:
+  - burren2023
+  - fda_somavert_label_2025
+  - yuen2026
+  discriminating_experiment: Build a multicentre retrospective registry of paediatric GH-excess (X-linked acrogigantism,
+    AIP-mutation macroadenoma, McCune-Albright) with attained final height, treatment modality and IGF-1 trajectory,
+    and model final height SDS on time-integrated IGF-1 versus time-integrated GH. RECEPTOR OCCUPANCY GOVERNS
+    - final height tracks integrated IGF-1 regardless of the GH concentration, favouring receptor blockade. SECRETION
+    GOVERNS - final height tracks integrated GH, in which case pegvisomant's rising GH would be a liability.
   tractability: 2
   search_log_ref: g_l12b_014
-
 - gap_id: g_l12b_015
-  question: >-
-    Why does the predicted-adult-height gain produced by aromatase inhibitors in the first year
-    of treatment fail to persist into years two and three?
+  question: Why does the predicted-adult-height gain produced by aromatase inhibitors in the first year of treatment
+    fail to persist into years two and three?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    This is the best-documented instance in human pharmacology of an interim growth gain that
-    does not convert, and it is measured within a randomised trial rather than inferred across
-    studies. Understanding it is directly transferable to the CNP analogue and FGFR3 inhibitor
-    programmes, whose entire evidence base currently consists of first-year gains. Three
-    mechanisms are candidates: tachyphylaxis of aromatase inhibition, compensatory
-    hypothalamic-pituitary-gonadal escape with rising testosterone driving maturation by an
-    oestrogen-independent route, or regression of an initially over-optimistic bone-age-based
-    height prediction.
-  what_is_known: >-
-    In 79 pubertal boys with ISS randomised to letrozole 2.5 mg or anastrozole 1.0 mg for up to
-    3 years, predicted adult height rose at year 1 in both arms and the rise did not persist at
-    years 2 and 3; the 3-year combined gain was +1.3 cm (p=0.043) with no between-drug difference.
-    Letrozole produced higher testosterone, lower oestradiol and IGF-1, slower velocity and
-    slower bone age advance than anastrozole yet no greater height gain.
-  what_is_missing: >-
-    No measurement distinguishing regression of the prediction instrument from a real biological
+  why_it_matters: 'This is the best-documented instance in human pharmacology of an interim growth gain that does
+    not convert, and it is measured within a randomised trial rather than inferred across studies. Understanding
+    it is directly transferable to the CNP analogue and FGFR3 inhibitor programmes, whose entire evidence base
+    currently consists of first-year gains. Three mechanisms are candidates: tachyphylaxis of aromatase inhibition,
+    compensatory hypothalamic-pituitary-gonadal escape with rising testosterone driving maturation by an oestrogen-independent
+    route, or regression of an initially over-optimistic bone-age-based height prediction.'
+  what_is_known: In 79 pubertal boys with ISS randomised to letrozole 2.5 mg or anastrozole 1.0 mg for up to 3
+    years, predicted adult height rose at year 1 in both arms and the rise did not persist at years 2 and 3; the
+    3-year combined gain was +1.3 cm (p=0.043) with no between-drug difference. Letrozole produced higher testosterone,
+    lower oestradiol and IGF-1, slower velocity and slower bone age advance than anastrozole yet no greater height
+    gain.
+  what_is_missing: No measurement distinguishing regression of the prediction instrument from a real biological
     loss of effect, and no attained adult height in the same randomised cohort.
-  nearest_evidence: [zegarra2024, cui2025, alrayess2025]
-  discriminating_experiment: >-
-    Follow the same randomised cohort to attained adult height and compare it with the year-1,
-    year-2 and year-3 predictions; simultaneously track serum oestradiol by a
-    high-sensitivity assay and gonadotrophins across the three years.
-    PREDICTION ARTEFACT - attained height matches the year-3 prediction, and the year-1 value was
-    simply an over-estimate produced by acute bone-age deceleration. BIOLOGICAL ESCAPE - oestradiol
-    recovers toward baseline by year 2 despite continued dosing, and attained height falls short
+  nearest_evidence:
+  - zegarra2024
+  - cui2025
+  - alrayess2025
+  discriminating_experiment: Follow the same randomised cohort to attained adult height and compare it with the
+    year-1, year-2 and year-3 predictions; simultaneously track serum oestradiol by a high-sensitivity assay and
+    gonadotrophins across the three years. PREDICTION ARTEFACT - attained height matches the year-3 prediction,
+    and the year-1 value was simply an over-estimate produced by acute bone-age deceleration. BIOLOGICAL ESCAPE
+    - oestradiol recovers toward baseline by year 2 despite continued dosing, and attained height falls short
     of even the year-3 prediction.
   tractability: 4
-
 - gap_id: g_l12b_016
-  question: >-
-    What fraction of a pharmacologically induced increment in annualised growth velocity is
-    converted into attained adult height, and does that conversion factor differ between agents
-    that act on the plate directly and agents that act by delaying maturation?
+  question: What fraction of a pharmacologically induced increment in annualised growth velocity is converted
+    into attained adult height, and does that conversion factor differ between agents that act on the plate directly
+    and agents that act by delaying maturation?
   type: quantitative_gap
   layer: L12
-  why_it_matters: >-
-    Every regulatory decision in this layer implicitly assumes a conversion factor and none
-    states one. Where both measures exist the numbers are stark: GnRH agonists give +3.5 to
-    +4.5 cm of adult height after years of treatment; androgens +1.78 cm; rhIGF-1 +0.9 height SDS;
-    inhaled budesonide -1.2 cm. Meanwhile velocity effects of 1.4-1.7 cm/yr sustained over a
-    decade would integrate to 14-17 cm if fully converted. The gap between those two orders of
-    magnitude is the central quantitative unknown of paediatric growth pharmacology.
-  what_is_known: >-
-    Attained adult height is available for GnRH agonists, androgens, rhIGF-1, aromatase inhibitors
-    with GH, and inhaled glucocorticoids. Annualised velocity effects are available for all
-    agents. No single cohort reports both the full velocity integral and the attained height with
-    a control arm.
-  what_is_missing: >-
-    A published conversion coefficient - centimetres of adult height per cumulative
-    centimetre-year of velocity increment - for any agent, with an uncertainty interval.
-  nearest_evidence: [martn2026, wang2026, kelly2012, ramonkrauel2026]
-  discriminating_experiment: >-
-    Assemble individual patient data from completed trials that measured both serial velocity and
-    attained adult height (CAMP for a negative agent, the GnRH agonist cohorts and androgen
-    cohorts for positive ones), integrate each participant's velocity deviation from their
-    control-matched expectation, and regress attained height deviation on that integral.
-    FULL CONVERSION - slope near 1.0 with narrow CI, implying velocity is an unbiased surrogate.
-    PARTIAL CONVERSION - slope well below 1.0, and the estimate becomes the correction factor
-    every accelerated approval currently lacks. DIVERGENT BY CLASS - separate slopes for
-    maturation-delaying and plate-acting agents would show the surrogate is not transferable
-    between mechanisms.
+  why_it_matters: 'Every regulatory decision in this layer implicitly assumes a conversion factor and none states
+    one. Where both measures exist the numbers are stark: GnRH agonists give +3.5 to +4.5 cm of adult height after
+    years of treatment; androgens +1.78 cm; rhIGF-1 +0.9 height SDS; inhaled budesonide -1.2 cm. Meanwhile velocity
+    effects of 1.4-1.7 cm/yr sustained over a decade would integrate to 14-17 cm if fully converted. The gap between
+    those two orders of magnitude is the central quantitative unknown of paediatric growth pharmacology.'
+  what_is_known: Attained adult height is available for GnRH agonists, androgens, rhIGF-1, aromatase inhibitors
+    with GH, and inhaled glucocorticoids. Annualised velocity effects are available for all agents. No single
+    cohort reports both the full velocity integral and the attained height with a control arm.
+  what_is_missing: A published conversion coefficient - centimetres of adult height per cumulative centimetre-year
+    of velocity increment - for any agent, with an uncertainty interval.
+  nearest_evidence:
+  - martn2026
+  - wang2026
+  - kelly2012
+  - ramonkrauel2026
+  discriminating_experiment: Assemble individual patient data from completed trials that measured both serial
+    velocity and attained adult height (CAMP for a negative agent, the GnRH agonist cohorts and androgen cohorts
+    for positive ones), integrate each participant's velocity deviation from their control-matched expectation,
+    and regress attained height deviation on that integral. FULL CONVERSION - slope near 1.0 with narrow CI, implying
+    velocity is an unbiased surrogate. PARTIAL CONVERSION - slope well below 1.0, and the estimate becomes the
+    correction factor every accelerated approval currently lacks. DIVERGENT BY CLASS - separate slopes for maturation-delaying
+    and plate-acting agents would show the surrogate is not transferable between mechanisms.
   tractability: 4
-
 - gap_id: g_l12b_017
-  question: >-
-    Do endocrine growth interventions operate on the plateau of a saturating exposure-response
-    curve, such that dosing schedule and formulation are irrelevant once suppression or agonism
-    is achieved?
+  question: Do endocrine growth interventions operate on the plateau of a saturating exposure-response curve,
+    such that dosing schedule and formulation are irrelevant once suppression or agonism is achieved?
   type: quantitative_gap
   layer: L12
-  why_it_matters: >-
-    Three independent classes now show the same pattern. CNP analogues: a 24-minute daily peak
-    and a 5.3-day continuous exposure give overlapping effects. GnRH agonists: monthly, quarterly
-    and different agents give comparable outcomes, and fixed dosing has replaced weight-based
-    dosing on population PK grounds. Long-acting growth hormone: weekly is non-inferior to daily.
-    If this reflects a common saturation, then formulation innovation in this field has been
-    largely wasted effort and future gains must come from new targets rather than better exposure.
-    If instead it reflects underpowered comparisons, the field has been prematurely reassured.
-  what_is_known: >-
-    Vosoritide urinary cGMP is near saturation at the approved 15 ug/kg/day dose per FDA labelling.
-    Vosoritide +1.57 versus navepegritide +1.49 cm/yr. Lonapegsomatropin weekly beat daily
-    somatropin by 0.91 cm/yr in one trial while somavaratan failed non-inferiority entirely.
-    Fixed-dose leuprolide is justified by population PK.
-  what_is_missing: >-
-    A dose-response or exposure-response curve with more than two points for any agent in this
-    layer using annualised growth velocity as the response, and any formal test of whether the
-    apparent equivalences are equivalences or underpowered nulls.
-  nearest_evidence: [fda_voxzogo_label_2025, fda_yuviwel_label_2026, ying2026, nct02413138]
-  discriminating_experiment: >-
-    Run a four-arm randomised exposure-ranging trial of a single CNP analogue delivering matched
-    weekly total exposure in four different temporal patterns (daily bolus, twice-weekly,
-    weekly bolus, continuous infusion) with AGV and serum CXM as co-primary endpoints.
-    SATURATED - all four arms overlap on both endpoints. PATTERN-SENSITIVE - CXM and AGV separate
-    by schedule, which would mean the current class equivalence is an artefact of comparing two
-    schedules that happen both to be adequate.
+  why_it_matters: 'Three independent classes now show the same pattern. CNP analogues: a 24-minute daily peak
+    and a 5.3-day continuous exposure give overlapping effects. GnRH agonists: monthly, quarterly and different
+    agents give comparable outcomes, and fixed dosing has replaced weight-based dosing on population PK grounds.
+    Long-acting growth hormone: weekly is non-inferior to daily. If this reflects a common saturation, then formulation
+    innovation in this field has been largely wasted effort and future gains must come from new targets rather
+    than better exposure. If instead it reflects underpowered comparisons, the field has been prematurely reassured.'
+  what_is_known: Vosoritide urinary cGMP is near saturation at the approved 15 ug/kg/day dose per FDA labelling.
+    Vosoritide +1.57 versus navepegritide +1.49 cm/yr. Lonapegsomatropin weekly beat daily somatropin by 0.91
+    cm/yr in one trial while somavaratan failed non-inferiority entirely. Fixed-dose leuprolide is justified by
+    population PK.
+  what_is_missing: A dose-response or exposure-response curve with more than two points for any agent in this
+    layer using annualised growth velocity as the response, and any formal test of whether the apparent equivalences
+    are equivalences or underpowered nulls.
+  nearest_evidence:
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  - ying2026
+  - nct02413138
+  discriminating_experiment: Run a four-arm randomised exposure-ranging trial of a single CNP analogue delivering
+    matched weekly total exposure in four different temporal patterns (daily bolus, twice-weekly, weekly bolus,
+    continuous infusion) with AGV and serum CXM as co-primary endpoints. SATURATED - all four arms overlap on
+    both endpoints. PATTERN-SENSITIVE - CXM and AGV separate by schedule, which would mean the current class equivalence
+    is an artefact of comparing two schedules that happen both to be adequate.
   tractability: 3
-
 - gap_id: g_l12b_018
-  question: >-
-    Does the age at which low-dose oestrogen is introduced in Turner syndrome measurably change
-    attained adult height, and where is the boundary between the growth-promoting and
-    fusion-promoting arms of the oestrogen dose-response?
+  question: Does the age at which low-dose oestrogen is introduced in Turner syndrome measurably change attained
+    adult height, and where is the boundary between the growth-promoting and fusion-promoting arms of the oestrogen
+    dose-response?
   type: search_established
   layer: L12
-  why_it_matters: >-
-    Oestrogen is the only hormone in human biology with a documented biphasic action on linear
-    growth, and Turner syndrome is the setting in which clinicians deliberately titrate along
-    that curve. The timing decision is made routinely, guided by consensus rather than by a
-    randomised comparison, and it trades adult height against pubertal timing and bone mineral
-    accrual. Establishing the boundary would also fix a parameter that L7 needs for any model of
-    oestrogen-driven plate senescence.
-  what_is_known: >-
-    rhGH plus timed low-dose oestrogen is guideline-endorsed standard care in Turner syndrome and
-    the timing trade-off is explicitly described in current management reviews. Lower-dose,
-    earlier oestrogen for pubertal induction has been proposed. The complementary high-dose
-    experiment - oestrogen given to reduce excessive height in constitutionally tall adolescents -
-    has largely been abandoned, removing the upper arm of the curve from contemporary data.
-  what_is_missing: >-
-    No randomised comparison of oestrogen introduction ages or doses with attained adult height
-    as the endpoint, and no human dose-response relating serum oestradiol to rate of epiphyseal
-    fusion.
-  nearest_evidence: [turner2025, guzzetti2024, martn2026]
-  discriminating_experiment: >-
-    Randomise girls with Turner syndrome on established rhGH to oestradiol introduction at two
-    prespecified ages with identical escalation schedules, with attained adult height as primary
-    endpoint and serial high-sensitivity oestradiol plus automated bone age as mediators.
-    TIMING MATTERS - adult height differs between arms and the difference is explained by
-    integrated oestradiol exposure before fusion. TIMING IRRELEVANT WITHIN THIS RANGE - no height
-    difference, which would free the decision to be made on pubertal and bone-health grounds alone.
+  why_it_matters: Oestrogen is the only hormone in human biology with a documented biphasic action on linear growth,
+    and Turner syndrome is the setting in which clinicians deliberately titrate along that curve. The timing decision
+    is made routinely, guided by consensus rather than by a randomised comparison, and it trades adult height
+    against pubertal timing and bone mineral accrual. Establishing the boundary would also fix a parameter that
+    L7 needs for any model of oestrogen-driven plate senescence.
+  what_is_known: rhGH plus timed low-dose oestrogen is guideline-endorsed standard care in Turner syndrome and
+    the timing trade-off is explicitly described in current management reviews. Lower-dose, earlier oestrogen
+    for pubertal induction has been proposed. The complementary high-dose experiment - oestrogen given to reduce
+    excessive height in constitutionally tall adolescents - has largely been abandoned, removing the upper arm
+    of the curve from contemporary data.
+  what_is_missing: No randomised comparison of oestrogen introduction ages or doses with attained adult height
+    as the endpoint, and no human dose-response relating serum oestradiol to rate of epiphyseal fusion.
+  nearest_evidence:
+  - turner2025
+  - guzzetti2024
+  - martn2026
+  discriminating_experiment: Randomise girls with Turner syndrome on established rhGH to oestradiol introduction
+    at two prespecified ages with identical escalation schedules, with attained adult height as primary endpoint
+    and serial high-sensitivity oestradiol plus automated bone age as mediators. TIMING MATTERS - adult height
+    differs between arms and the difference is explained by integrated oestradiol exposure before fusion. TIMING
+    IRRELEVANT WITHIN THIS RANGE - no height difference, which would free the decision to be made on pubertal
+    and bone-health grounds alone.
   tractability: 3
   search_log_ref: g_l12b_018
-
 - gap_id: g_l12b_019
-  question: >-
-    Does pharmacological PTH1R agonism expand the proliferative zone and increase linear growth
-    in a human, as PTHrP-PTH1R biology and the Jansen metaphyseal chondrodysplasia phenotype
-    predict?
+  question: Does pharmacological PTH1R agonism expand the proliferative zone and increase linear growth in a human,
+    as PTHrP-PTH1R biology and the Jansen metaphyseal chondrodysplasia phenotype predict?
   type: method_blocked
   layer: L12
-  why_it_matters: >-
-    PTH1R is the receptor through which the growth plate's own pace-setting signal operates, and
-    two PTH1R agonists are approved drugs. Neither can be given to a growing child: both labels
-    restrict use with open epiphyses because of osteosarcoma risk. The atlas therefore has a
-    structural hole exactly where its most mechanistically apt intervention would be. Jansen
-    metaphyseal chondrodysplasia - constitutive PTH1R activation in humans - shows the receptor
-    does drive a dramatic growth plate phenotype, so the untested prediction is not idle.
-  what_is_known: >-
-    Teriparatide labelling instructs avoidance with open epiphyses; abaloparatide is not
-    recommended in paediatric patients with open epiphyses; both state paediatric safety and
-    effectiveness are not established. Paediatric exposure exists only in hypoparathyroidism and
-    rare calcium disorders, none with a growth endpoint. A mouse model of Jansen metaphyseal
-    chondrodysplasia is available for mechanistic work.
-  what_is_missing: >-
-    Any human growth readout under PTH1R agonism, at any dose, at any age with open epiphyses.
-  nearest_evidence: [fda_forteo_label_2025, fda_tymlos_label_2025, tantivit2026, hppner2025]
-  discriminating_experiment: >-
-    Since a prospective trial is regulatorily blocked, extract growth data retrospectively from
-    the paediatric hypoparathyroidism and activating-CaSR-mutation cohorts already exposed to
-    teriparatide or palopegteriparatide - height velocity before and during treatment against
-    the child's own pre-treatment trajectory - and pair it with growth plate morphometry in the
-    Jansen mouse under matched intermittent dosing. GROWTH-PROMOTING - treated children show
-    velocity above their own pre-treatment trajectory and the mouse shows proliferative zone
-    expansion. NEUTRAL - neither, which would decouple PTH1R agonism from linear growth and
+  why_it_matters: 'PTH1R is the receptor through which the growth plate''s own pace-setting signal operates, and
+    two PTH1R agonists are approved drugs. Neither can be given to a growing child: both labels restrict use with
+    open epiphyses because of osteosarcoma risk. The atlas therefore has a structural hole exactly where its most
+    mechanistically apt intervention would be. Jansen metaphyseal chondrodysplasia - constitutive PTH1R activation
+    in humans - shows the receptor does drive a dramatic growth plate phenotype, so the untested prediction is
+    not idle.'
+  what_is_known: Teriparatide labelling instructs avoidance with open epiphyses; abaloparatide is not recommended
+    in paediatric patients with open epiphyses; both state paediatric safety and effectiveness are not established.
+    Paediatric exposure exists only in hypoparathyroidism and rare calcium disorders, none with a growth endpoint.
+    A mouse model of Jansen metaphyseal chondrodysplasia is available for mechanistic work.
+  what_is_missing: Any human growth readout under PTH1R agonism, at any dose, at any age with open epiphyses.
+  nearest_evidence:
+  - fda_forteo_label_2025
+  - fda_tymlos_label_2025
+  - tantivit2026
+  - hppner2025
+  discriminating_experiment: Since a prospective trial is regulatorily blocked, extract growth data retrospectively
+    from the paediatric hypoparathyroidism and activating-CaSR-mutation cohorts already exposed to teriparatide
+    or palopegteriparatide - height velocity before and during treatment against the child's own pre-treatment
+    trajectory - and pair it with growth plate morphometry in the Jansen mouse under matched intermittent dosing.
+    GROWTH-PROMOTING - treated children show velocity above their own pre-treatment trajectory and the mouse shows
+    proliferative zone expansion. NEUTRAL - neither, which would decouple PTH1R agonism from linear growth and
     remove a major hypothesis.
   tractability: 2
-
 - gap_id: g_l12b_020
-  question: >-
-    Do bisphosphonates change linear growth in children, independently of the severity of the
-    underlying bone disease for which they are given?
+  question: Do bisphosphonates change linear growth in children, independently of the severity of the underlying
+    bone disease for which they are given?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    Bisphosphonates act precisely at the chondro-osseous junction, blocking the resorption of the
-    mineralised hypertrophic cartilage template - the step that converts plate output into bone.
-    Blocking it could in principle either retard growth by impeding the removal of the template or
-    have no effect if resorption is not rate-limiting. Thousands of children receive these drugs
-    for years and the question has not been answered because treated children all have skeletal
-    disease that itself impairs growth.
-  what_is_known: >-
-    Metaphyseal sclerotic bands timed to dosing cycles are a universal radiographic finding,
-    proving the drugs reach and persist at the mineralising front. One-year bone microstructure
-    and strength changes in treated children with osteogenesis imperfecta are comparable to
-    matched healthy controls. In growing osteogenesis imperfecta mice, a CNP analogue plus a
-    bisphosphonate enhanced bone growth beyond either alone.
-  what_is_missing: >-
-    Any human study that isolates a bisphosphonate effect on height from disease severity, and
+  why_it_matters: Bisphosphonates act precisely at the chondro-osseous junction, blocking the resorption of the
+    mineralised hypertrophic cartilage template - the step that converts plate output into bone. Blocking it could
+    in principle either retard growth by impeding the removal of the template or have no effect if resorption
+    is not rate-limiting. Thousands of children receive these drugs for years and the question has not been answered
+    because treated children all have skeletal disease that itself impairs growth.
+  what_is_known: Metaphyseal sclerotic bands timed to dosing cycles are a universal radiographic finding, proving
+    the drugs reach and persist at the mineralising front. One-year bone microstructure and strength changes in
+    treated children with osteogenesis imperfecta are comparable to matched healthy controls. In growing osteogenesis
+    imperfecta mice, a CNP analogue plus a bisphosphonate enhanced bone growth beyond either alone.
+  what_is_missing: Any human study that isolates a bisphosphonate effect on height from disease severity, and
     any human test of the additive CNP-plus-bisphosphonate effect seen in mice.
-  nearest_evidence: [mulcrone2026, pereira2025_2, hosseinitabata2026]
-  discriminating_experiment: >-
-    Use a within-condition, dose-varying design: in a large osteogenesis imperfecta registry
-    stratified by molecular type and baseline severity, regress height velocity on cumulative
-    bisphosphonate dose with mixed models including a patient-level random intercept, and confirm
-    with an interrupted-time-series analysis around treatment initiation and around treatment
-    holidays. NO GROWTH EFFECT - velocity is flat in cumulative dose within strata.
-    GROWTH RETARDATION - a negative dose-slope survives adjustment and reverses during holidays,
-    which would make resorption of the hypertrophic template rate-limiting for elongation.
+  nearest_evidence:
+  - mulcrone2026
+  - pereira2025_2
+  - hosseinitabata2026
+  discriminating_experiment: 'Use a within-condition, dose-varying design: in a large osteogenesis imperfecta
+    registry stratified by molecular type and baseline severity, regress height velocity on cumulative bisphosphonate
+    dose with mixed models including a patient-level random intercept, and confirm with an interrupted-time-series
+    analysis around treatment initiation and around treatment holidays. NO GROWTH EFFECT - velocity is flat in
+    cumulative dose within strata. GROWTH RETARDATION - a negative dose-slope survives adjustment and reverses
+    during holidays, which would make resorption of the hypertrophic template rate-limiting for elongation.'
   tractability: 4
-
 - gap_id: g_l12b_021
-  question: >-
-    Is a drug-induced deficit in growth velocity recovered by catch-up growth after the drug is
-    stopped, and does the answer depend on whether the agent acts on the plate directly or through
-    appetite and nutrition?
+  question: Is a drug-induced deficit in growth velocity recovered by catch-up growth after the drug is stopped,
+    and does the answer depend on whether the agent acts on the plate directly or through appetite and nutrition?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    The atlas contains three growth-toxic agents with different mechanisms and different apparent
-    reversibility. Inhaled budesonide produced a deficit within two years that persisted unchanged
-    to adult height - no recovery at all. Imatinib produced a deficit with documented adolescent
-    catch-up that was nonetheless insufficient - partial recovery. Methylphenidate produces a
-    height Z deficit whose fate is unknown, with a weight-to-height deficit ratio suggesting a
-    nutritional route that ought to be the most recoverable. If plate-acting agents are
-    irreversible and nutrition-acting agents are reversible, that is a strong statement about
-    whether the plate has a fixed proliferative budget.
-  what_is_known: >-
-    CAMP: budesonide adult height -1.2 cm, equal to the 2-year deficit, so no recovery and no
-    progression. Imatinib: height Z -0.6 to -1.1 to skeletal maturity despite catch-up, with the
-    effect confined to prepubertal initiation. Methylphenidate: height Z -0.13, weight Z -0.25,
-    with no adult height data.
-  what_is_missing: >-
-    Adult height for methylphenidate-treated children, and any study measuring catch-up velocity
+  why_it_matters: The atlas contains three growth-toxic agents with different mechanisms and different apparent
+    reversibility. Inhaled budesonide produced a deficit within two years that persisted unchanged to adult height
+    - no recovery at all. Imatinib produced a deficit with documented adolescent catch-up that was nonetheless
+    insufficient - partial recovery. Methylphenidate produces a height Z deficit whose fate is unknown, with a
+    weight-to-height deficit ratio suggesting a nutritional route that ought to be the most recoverable. If plate-acting
+    agents are irreversible and nutrition-acting agents are reversible, that is a strong statement about whether
+    the plate has a fixed proliferative budget.
+  what_is_known: 'CAMP: budesonide adult height -1.2 cm, equal to the 2-year deficit, so no recovery and no progression.
+    Imatinib: height Z -0.6 to -1.1 to skeletal maturity despite catch-up, with the effect confined to prepubertal
+    initiation. Methylphenidate: height Z -0.13, weight Z -0.25, with no adult height data.'
+  what_is_missing: Adult height for methylphenidate-treated children, and any study measuring catch-up velocity
     after discontinuation with a matched control for all three agents.
-  nearest_evidence: [kelly2012, sadanand2026, cao2026]
-  discriminating_experiment: >-
-    Link national prescription registries to conscription or occupational adult height records
-    for stimulant-exposed, inhaled-glucocorticoid-exposed and unexposed cohorts, with
-    exposure-duration and age-at-first-exposure as covariates and sibling comparison to control
-    for confounding. FIXED BUDGET - all three exposures leave proportionate permanent deficits.
-    MECHANISM-DEPENDENT - the nutritional exposure recovers fully while the plate-acting exposures
-    do not, showing that the plate can make up nutritionally lost growth but not
-    pharmacologically suppressed proliferation.
+  nearest_evidence:
+  - kelly2012
+  - sadanand2026
+  - cao2026
+  discriminating_experiment: Link national prescription registries to conscription or occupational adult height
+    records for stimulant-exposed, inhaled-glucocorticoid-exposed and unexposed cohorts, with exposure-duration
+    and age-at-first-exposure as covariates and sibling comparison to control for confounding. FIXED BUDGET -
+    all three exposures leave proportionate permanent deficits. MECHANISM-DEPENDENT - the nutritional exposure
+    recovers fully while the plate-acting exposures do not, showing that the plate can make up nutritionally lost
+    growth but not pharmacologically suppressed proliferation.
   tractability: 4
-
 - gap_id: g_l12b_022
-  question: >-
-    In a childhood cancer survivor with short stature, what fraction of the height deficit is
-    caused by direct cytotoxic or radiation injury to the growth plate itself, and what fraction
-    by hypothalamic-pituitary growth hormone deficiency?
+  question: In a childhood cancer survivor with short stature, what fraction of the height deficit is caused by
+    direct cytotoxic or radiation injury to the growth plate itself, and what fraction by hypothalamic-pituitary
+    growth hormone deficiency?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    The two mechanisms call for different treatments. Endocrine deficiency is correctable with
-    growth hormone replacement; a directly damaged plate is not, and giving GH to it wastes the
-    treatment window and exposes the survivor to GH risks for no benefit. Growth hormone therapy
-    after haematopoietic cell transplantation exists as an organised national programme precisely
-    because the two coexist, and its incomplete success is the clinical expression of the
-    unpartitioned mechanism.
-  what_is_known: >-
-    Cranial and total body irradiation cause GH deficiency. High-dose methotrexate has direct
-    antiproliferative effects on chondrocytes and osteoblasts and a recognised osteopathy;
-    cisplatin induces chondrocyte oxidative stress and apoptosis in vitro. A prospective JIA
-    cohort has examined methotrexate effects on growth plate development at conventional doses.
-    Post-transplant GH replacement partially but not fully restores growth.
-  what_is_missing: >-
-    No study measures growth plate structure or function directly in treated survivors, and no
+  why_it_matters: The two mechanisms call for different treatments. Endocrine deficiency is correctable with growth
+    hormone replacement; a directly damaged plate is not, and giving GH to it wastes the treatment window and
+    exposes the survivor to GH risks for no benefit. Growth hormone therapy after haematopoietic cell transplantation
+    exists as an organised national programme precisely because the two coexist, and its incomplete success is
+    the clinical expression of the unpartitioned mechanism.
+  what_is_known: Cranial and total body irradiation cause GH deficiency. High-dose methotrexate has direct antiproliferative
+    effects on chondrocytes and osteoblasts and a recognised osteopathy; cisplatin induces chondrocyte oxidative
+    stress and apoptosis in vitro. A prospective JIA cohort has examined methotrexate effects on growth plate
+    development at conventional doses. Post-transplant GH replacement partially but not fully restores growth.
+  what_is_missing: No study measures growth plate structure or function directly in treated survivors, and no
     analysis partitions the height deficit between effector damage and endocrine deficiency.
-  nearest_evidence: [shimomura2026, ahirwar2025, sokhan2026, ferrari2026]
-  discriminating_experiment: >-
-    In survivors with documented GH deficiency, measure the height velocity response to a
-    standardised GH replacement dose and relate it to prior cumulative radiation dose to the
-    lower limb plates and to cumulative alkylator and antimetabolite exposure, with serum CXM as
-    a direct marker of endochondral ossification activity. ENDOCRINE-DOMINANT - velocity
-    response and CXM rise are independent of local radiation dose. PLATE-DAMAGE-DOMINANT - both
-    fall steeply with local dose despite identical GH exposure and identical IGF-1 response,
-    identifying a damaged effector.
+  nearest_evidence:
+  - shimomura2026
+  - ahirwar2025
+  - sokhan2026
+  - ferrari2026
+  discriminating_experiment: In survivors with documented GH deficiency, measure the height velocity response
+    to a standardised GH replacement dose and relate it to prior cumulative radiation dose to the lower limb plates
+    and to cumulative alkylator and antimetabolite exposure, with serum CXM as a direct marker of endochondral
+    ossification activity. ENDOCRINE-DOMINANT - velocity response and CXM rise are independent of local radiation
+    dose. PLATE-DAMAGE-DOMINANT - both fall steeply with local dose despite identical GH exposure and identical
+    IGF-1 response, identifying a damaged effector.
   tractability: 3
-
 - gap_id: g_l12b_023
-  question: >-
-    Can glucocorticoid anti-inflammatory efficacy be separated from growth suppression at the
-    human growth plate, and does any dissociative steroid achieve that separation with an
-    adult-height endpoint?
+  question: Can glucocorticoid anti-inflammatory efficacy be separated from growth suppression at the human growth
+    plate, and does any dissociative steroid achieve that separation with an adult-height endpoint?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    Chronic glucocorticoid therapy is the most common iatrogenic cause of growth failure in
-    children, and the sparing strategies tried so far - alternative classical steroids, route
-    change, dissociative agents - have each been adopted on partial evidence. CAMP shows the
-    route-change strategy still costs 1.2 cm of adult height. Deflazacort's US label carries no
-    growth-sparing claim. Vamorolone is designed for the separation but has been compared to
-    classical steroids only across trials, not against an adult-height endpoint. Without a
-    definitive answer, children receive whichever steroid local practice prefers.
-  what_is_known: >-
-    CAMP: inhaled budesonide 400 ug/day reduced adult height by 1.2 cm (95% CI -1.9 to -0.5),
-    dose-dependently at -0.1 cm per ug/kg/day in the first 2 years, with prepubertal children
-    most affected. Growth and motor function centiles track together in corticosteroid-treated
-    DMD. Vamorolone has been compared with prednisone and deflazacort by cross-trial analysis of
-    FOR-DMD, and real-world transition criteria have been published.
-  what_is_missing: >-
-    No randomised head-to-head of a dissociative steroid against a classical one with growth as
+  why_it_matters: Chronic glucocorticoid therapy is the most common iatrogenic cause of growth failure in children,
+    and the sparing strategies tried so far - alternative classical steroids, route change, dissociative agents
+    - have each been adopted on partial evidence. CAMP shows the route-change strategy still costs 1.2 cm of adult
+    height. Deflazacort's US label carries no growth-sparing claim. Vamorolone is designed for the separation
+    but has been compared to classical steroids only across trials, not against an adult-height endpoint. Without
+    a definitive answer, children receive whichever steroid local practice prefers.
+  what_is_known: 'CAMP: inhaled budesonide 400 ug/day reduced adult height by 1.2 cm (95% CI -1.9 to -0.5), dose-dependently
+    at -0.1 cm per ug/kg/day in the first 2 years, with prepubertal children most affected. Growth and motor function
+    centiles track together in corticosteroid-treated DMD. Vamorolone has been compared with prednisone and deflazacort
+    by cross-trial analysis of FOR-DMD, and real-world transition criteria have been published.'
+  what_is_missing: No randomised head-to-head of a dissociative steroid against a classical one with growth as
     a prespecified endpoint, and no glucocorticoid study outside CAMP with attained adult height.
-  nearest_evidence: [kelly2012, clemens2026, stimpson2025, fda_emflaza_label_2025]
-  discriminating_experiment: >-
-    Randomise boys with DMD to vamorolone or deflazacort at matched anti-inflammatory potency
-    with height velocity at 24 months as primary endpoint and time-to-loss-of-ambulation as
-    co-primary, powered for non-inferiority on function and superiority on growth.
-    DISSOCIATION ACHIEVED - equal function with significantly better height velocity.
-    NOT DISSOCIATED - the two endpoints move together, confirming that transactivation and
-    transrepression are not separable at clinically useful doses in this tissue.
+  nearest_evidence:
+  - kelly2012
+  - clemens2026
+  - stimpson2025
+  - fda_emflaza_label_2025
+  discriminating_experiment: Randomise boys with DMD to vamorolone or deflazacort at matched anti-inflammatory
+    potency with height velocity at 24 months as primary endpoint and time-to-loss-of-ambulation as co-primary,
+    powered for non-inferiority on function and superiority on growth. DISSOCIATION ACHIEVED - equal function
+    with significantly better height velocity. NOT DISSOCIATED - the two endpoints move together, confirming that
+    transactivation and transrepression are not separable at clinically useful doses in this tissue.
   tractability: 4
-
 - gap_id: g_l12b_024
-  question: >-
-    Do the FDA multidisciplinary and pharmacology/toxicology review documents for vosoritide,
-    navepegritide and infigratinib contain animal tissue distribution data showing drug
-    concentration in growth plate cartilage?
+  question: Do the FDA multidisciplinary and pharmacology/toxicology review documents for vosoritide, navepegritide
+    and infigratinib contain animal tissue distribution data showing drug concentration in growth plate cartilage?
   type: method_blocked
   layer: L12
-  why_it_matters: >-
-    Sponsors routinely perform quantitative whole-body autoradiography and tissue distribution
-    studies in the nonclinical package, and those data are summarised in the pharmacology/
-    toxicology review rather than in the label or in any journal article. If growth plate
-    concentrations exist anywhere, this is where they are. Retrieving them would immediately
-    resolve or sharply constrain gap g_l12b_002 for at least three agents, at no experimental cost.
-  what_is_known: >-
-    Structured product labelling was retrieved for eight agents in this layer via the openFDA
-    drug label API, and Drugs@FDA overview metadata confirms NDA 214938 (vosoritide, approved
-    19 Nov 2021) and NDA 219164 (navepegritide) have review documents on file. None of the
-    labels contains tissue distribution data for the growth plate.
-  what_is_missing: >-
-    The review PDFs themselves were not retrieved in this sweep, so their nonclinical
-    distribution sections remain unread.
-  nearest_evidence: [fda_drugsatfda_voxzogo_2021, fda_voxzogo_label_2025, fda_yuviwel_label_2026]
-  discriminating_experiment: >-
-    Retrieve and read the pharmacology/toxicology review sections of NDA 214938, NDA 219164 and
-    the infigratinib application, specifically the tissue distribution and quantitative whole-body
-    autoradiography subsections. DATA EXIST - extract cartilage-to-plasma concentration ratios and
-    close g_l12b_002 for those agents. DATA ABSENT - the absence is then established at the
-    regulatory level too, strengthening the systematic finding.
+  why_it_matters: Sponsors routinely perform quantitative whole-body autoradiography and tissue distribution studies
+    in the nonclinical package, and those data are summarised in the pharmacology/ toxicology review rather than
+    in the label or in any journal article. If growth plate concentrations exist anywhere, this is where they
+    are. Retrieving them would immediately resolve or sharply constrain gap g_l12b_002 for at least three agents,
+    at no experimental cost.
+  what_is_known: Structured product labelling was retrieved for eight agents in this layer via the openFDA drug
+    label API, and Drugs@FDA overview metadata confirms NDA 214938 (vosoritide, approved 19 Nov 2021) and NDA
+    219164 (navepegritide) have review documents on file. None of the labels contains tissue distribution data
+    for the growth plate.
+  what_is_missing: The review PDFs themselves were not retrieved in this sweep, so their nonclinical distribution
+    sections remain unread.
+  nearest_evidence:
+  - fda_drugsatfda_voxzogo_2021
+  - fda_voxzogo_label_2025
+  - fda_yuviwel_label_2026
+  discriminating_experiment: Retrieve and read the pharmacology/toxicology review sections of NDA 214938, NDA
+    219164 and the infigratinib application, specifically the tissue distribution and quantitative whole-body
+    autoradiography subsections. DATA EXIST - extract cartilage-to-plasma concentration ratios and close g_l12b_002
+    for those agents. DATA ABSENT - the absence is then established at the regulatory level too, strengthening
+    the systematic finding.
   tractability: 5
-
 - gap_id: g_l12b_025
-  question: >-
-    Do CNP analogues alter the rate and quality of regenerate bone formation during surgical limb
-    lengthening, and does concurrent pharmacotherapy change the fixator index or complication rate?
+  question: Do CNP analogues alter the rate and quality of regenerate bone formation during surgical limb lengthening,
+    and does concurrent pharmacotherapy change the fixator index or complication rate?
   type: known_unknown
   layer: L12
-  why_it_matters: >-
-    Limb lengthening and CNP analogue therapy are now given to the same children, and they act on
-    different ossification mechanisms - distraction regenerate is intramembranous while the drug
-    targets endochondral growth. Animal work suggests CNP analogues affect bone mineral density and
-    callus consolidation. If the drug accelerates consolidation, fixation time (currently 37.1
-    days/cm and 7.71 months mean duration) could fall and the 56.1% complication rate with it; if
-    it produces premature consolidation, distraction could be compromised. The interaction is
-    being run in clinical practice ahead of the data.
-  what_is_known: >-
-    Pooled lengthening outcomes in achondroplasia: femoral 8.85 cm (95% CI 7.42-10.28), tibial
-    7.36 cm, humeral 8.38 cm, fixator index 37.1 days/cm (95% CI 32.37-41.82), complication rate
-    56.1% (95% CI 26.9-85.2), across 14 studies and 1149 patients. Reviews note animal evidence
-    that CNP analogues affect bone density, callus consolidation and medullary canal area, and
-    international modified-Delphi expert opinion exists on combining vosoritide with limb surgery.
-  what_is_missing: >-
-    No study reports fixator index, consolidation index or complication rate stratified by
-    concurrent CNP analogue exposure.
-  nearest_evidence: [hosny2026, qian2026, merchant2025]
-  discriminating_experiment: >-
-    Prospective multicentre cohort of achondroplasia limb lengthening stratified by concurrent CNP
-    analogue exposure, with fixator index, pixel-value-ratio consolidation index and complication
-    rate as endpoints and surgeon and technique as covariates. ACCELERATED CONSOLIDATION - fixator
-    index falls in the exposed group and premature consolidation events rise, requiring protocol
-    adaptation. NO INTERACTION - indices are equivalent, and the two treatments can be combined
-    without modification.
+  why_it_matters: Limb lengthening and CNP analogue therapy are now given to the same children, and they act on
+    different ossification mechanisms - distraction regenerate is intramembranous while the drug targets endochondral
+    growth. Animal work suggests CNP analogues affect bone mineral density and callus consolidation. If the drug
+    accelerates consolidation, fixation time (currently 37.1 days/cm and 7.71 months mean duration) could fall
+    and the 56.1% complication rate with it; if it produces premature consolidation, distraction could be compromised.
+    The interaction is being run in clinical practice ahead of the data.
+  what_is_known: 'Pooled lengthening outcomes in achondroplasia: femoral 8.85 cm (95% CI 7.42-10.28), tibial 7.36
+    cm, humeral 8.38 cm, fixator index 37.1 days/cm (95% CI 32.37-41.82), complication rate 56.1% (95% CI 26.9-85.2),
+    across 14 studies and 1149 patients. Reviews note animal evidence that CNP analogues affect bone density,
+    callus consolidation and medullary canal area, and international modified-Delphi expert opinion exists on
+    combining vosoritide with limb surgery.'
+  what_is_missing: No study reports fixator index, consolidation index or complication rate stratified by concurrent
+    CNP analogue exposure.
+  nearest_evidence:
+  - hosny2026
+  - qian2026
+  - merchant2025
+  discriminating_experiment: Prospective multicentre cohort of achondroplasia limb lengthening stratified by concurrent
+    CNP analogue exposure, with fixator index, pixel-value-ratio consolidation index and complication rate as
+    endpoints and surgeon and technique as covariates. ACCELERATED CONSOLIDATION - fixator index falls in the
+    exposed group and premature consolidation events rise, requiring protocol adaptation. NO INTERACTION - indices
+    are equivalent, and the two treatments can be combined without modification.
   tractability: 4
+- gap_id: g_l12b_026
+  question: Does a cartilage-targeted carrier that penetrates a mouse growth plate penetrate a HUMAN one, whose
+    inert zone alone is thicker than the entire mouse plate?
+  type: species_gap
+  layer: L12
+  why_it_matters: Delivery carriers are the only intervention class that attacks the exposure term rather than
+    the target, and exposure is the term the atlas cannot measure for any growth-modifying drug in any species
+    (g_l12b_002). If carriers work in human physes they change what is dosable, including agents whose systemic
+    toxicity currently caps the dose. If they do not, the entire class is a mouse result and the exposure problem
+    is untouched.
+  what_is_known: A PLGA core with a chondrocyte-membrane coat and a WYRGRL collagen-II-binding peptide (K_D about
+    1.2 uM against recombinant human COL2A1) reached the mouse distal femoral growth plate after intravenous injection,
+    peaking at 24 h, and delivered purmorphamine well enough to restore body length in Fgfr3 V376D/+ mice at 1
+    mg/kg every two days for five weeks (ye2026). The peptide drives enrichment around cartilage; the membrane
+    coat drives retention within it.
+  what_is_missing: Everything quantitative about penetration depth in human-scale tissue. The mouse result is
+    measured as normalised DiR fluorescence radiant efficiency, a membrane dye, so there is no concentration,
+    no depth profile in um, no AUC and no free fraction to scale from. Diffusion into avascular cartilage scales
+    badly with thickness and the human inert zone alone is 700-1000 um (thurston1985), exceeding the full height
+    of the mouse plate that was treated. The authors state explicitly that human growth-plate cartilage was unobtainable,
+    so no human tissue has been exposed to this or any comparable carrier.
+  nearest_evidence:
+  - ye2026
+  - thurston1985
+  nearest_evidence_note: ye2026 (mouse, dye-based, single laboratory, single disease model); thurston1985 (the
+    human plate dimensions that set the scaling problem).
+  discriminating_experiment: Expose surgically obtained human physeal cartilage explants (epiphysiodesis waste,
+    the same stream gap g_l1arch_002 needs) to fluorophore-loaded and drug-loaded carriers under matrix-preserving
+    culture, and measure BOTH a depth-resolved fluorescence profile in um from the epiphyseal surface AND the
+    drug concentration by LC-MS/MS in serially cryosectioned slabs, so the label and the drug are measured separately
+    in the same tissue. Comparing the two answers the dye-dissociation question at the same time. A penetration
+    depth that falls short of the inert zone would show that a carrier optimised on mouse tissue does not reach
+    the human proliferative zone at all, which is the outcome the thickness scaling predicts and which no published
+    study can currently exclude.
+  tractability: 3

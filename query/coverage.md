@@ -43,20 +43,20 @@ satisfying than what a language model would otherwise produce.
 | Layer | Name | nodes | direct human | **replicated human** | high transl. risk | gaps | A/B | **hit rate %** |
 |---|---|---:|---:|---:|---:|---:|---|---:|
 | L0 | developmental_origin | 25 | 8 (32%) | 2 (8%) | 10 (40%) | 13 | 2/10 | **100** |
-| L1 | growth_plate_architecture | 48 | 20 (41%) | 19 (39%) | 25 (52%) | 14 | 4/11 | **40** |
+| L1 | growth_plate_architecture | 48 | 21 (43%) | 20 (41%) | 25 (52%) | 15 | 4/11 | **40** |
 | L2 | stem_and_progenitor_biology | 35 | 5 (14%) | 0 (0%) | 24 (68%) | 14 | 0/3 | **0 †** |
 | L3 | signaling_networks | 89 | 18 (20%) | 14 (15%) | 51 (57%) | 44 | 8/18 | **100** |
 | L4 | endocrine_and_systemic | 72 | 46 (63%) | 33 (45%) | 15 (20%) | 24 | 32/16 | **40** |
-| L5 | matrix_and_mineralization | 42 | 18 (42%) | 12 (28%) | 13 (30%) | 18 | 4/19 | **100** |
+| L5 | matrix_and_mineralization | 43 | 18 (41%) | 12 (27%) | 14 (32%) | 18 | 4/19 | **100** |
 | L6 | mechanobiology | 31 | 10 (32%) | 10 (32%) | 14 (45%) | 23 | 4/6 | **100** |
 | L7 | fusion_and_cessation | 34 | 26 (76%) | 26 (76%) | 4 (11%) | 18 | 15/6 | **75** |
 | L8 | genetics_and_heritability | 39 | 38 (97%) | 35 (89%) | 0 (0%) | 22 | 18/18 | **20** |
 | L9 | whole_organism_growth | 34 | 30 (88%) | 21 (61%) | 4 (11%) | 17 | 14/11 | **100** |
 | L10 | environment_and_population | 34 | 29 (85%) | 18 (52%) | 4 (11%) | 13 | 9/16 | **100** |
 | L11 | pathology_as_natural_experiment | 56 | 56 (100%) | 18 (32%) | 0 (0%) | 26 | 19/23 | **60** |
-| L12 | pharmacology_as_mechanistic_probe | 38 | 31 (81%) | 27 (71%) | 7 (18%) | 30 | 16/10 | **50** |
+| L12 | pharmacology_as_mechanistic_probe | 39 | 31 (79%) | 27 (69%) | 8 (20%) | 31 | 16/10 | **50** |
 | L13 | methods_and_data | 41 | 19 (46%) | 13 (31%) | 15 (36%) | 14 | 11/18 | **50** |
-| | **TOTAL** | **618** | **354 (57.3%)** | **248 (40.1%)** | | **290** | | **64.0** |
+| | **TOTAL** | **620** | **355 (57.3%)** | **249 (40.2%)** | | **292** | | **64.0** |
 
 `replicated human` = `human_evidence: direct` **and** ≥2 human primary sources. `hit rate` is the Phase 7 measured value, CORRECT / (CORRECT + WRONG + SILENTLY_ABSENT) — source: query/falsification_baseline.md, cutoff 2026-02-01, 63 held-out papers. † L2's denominator is 1: two of its three held-out papers were correct refusals, so the 0 is a small-sample artefact and not a verdict.
 <!-- COVERAGE:LAYERS:END -->
@@ -134,11 +134,11 @@ number is too small to say anything.
 <!-- COVERAGE:STRUCT:BEGIN -->
 | | |
 |---|---|
-| Nodes | 618 (618 researched, 0 stubs) |
-| Edges | 1191 — **784 usable for perturbation reasoning**, 407 flagged unusable |
-| Gaps | 290, with 135 gap ids carrying reproducible search logs (148 log entries) |
+| Nodes | 620 (620 researched, 0 stubs) |
+| Edges | 1196 — **786 usable for perturbation reasoning**, 410 flagged unusable |
+| Gaps | 292, with 135 gap ids carrying reproducible search logs (148 log entries) |
 | References | 1060, all machine-resolved against Europe PMC/NCBI |
-| Quantitative values on nodes | 1529 |
+| Quantitative values on nodes | 1560 |
 
 **Context annotation, three-state** (MATCH / MISMATCH / UNANNOTATED — only MISMATCH excludes an edge; see `atlas/tools/context_filter.py`):
 
@@ -146,21 +146,21 @@ number is too small to say anything.
 
 | axis | determined | of edges | explicitly `unknown` | MR-004 target |
 |---|---:|---:|---:|---:|
-| zone | 639/1191 | 53.7% | 549 (46.1%) | 40% |
-| sex | 364/1191 | 30.6% | 827 (69.4%) | 30% |
-| stage | 764/1191 | 64.1% | 427 (35.9%) | 40% |
-| species | 1143/1191 | 96.0% | 40 (3.4%) | — |
+| zone | 639/1196 | 53.4% | 549 (45.9%) | 40% |
+| sex | 365/1196 | 30.5% | 827 (69.1%) | 30% |
+| stage | 764/1196 | 63.9% | 427 (35.7%) | 40% |
+| species | 1147/1196 | 95.9% | 41 (3.4%) | — |
 
 **Zone provenance — `determined` is not one thing.** A zone inferred from the endpoint nodes' localisation records says where the *entities* live, not where the *interaction* was observed, and it is where an incoherent tag can hide (see `audit/fragility.md` §4).
 
 | provenance | edges | of edges |
 |---|---:|---:|
 | resolved in the cited source | 63 | 5.3% |
-| definitional — an endpoint node **is** a zone | 315 | 26.4% |
-| **inferred from endpoint localization records** | **261** | **21.9%** |
-| → strong (source-resolved + definitional) | 378 | 31.7% |
+| definitional — an endpoint node **is** a zone | 315 | 26.3% |
+| **inferred from endpoint localization records** | **261** | **21.8%** |
+| → strong (source-resolved + definitional) | 378 | 31.6% |
 
-Sign coverage on sign-bearing relations is the traversal gate and stands at **784/784 = 100%**. The 407 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
+Sign coverage on sign-bearing relations is the traversal gate and stands at **786/786 = 100%**. The 410 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
 <!-- COVERAGE:STRUCT:END -->
 
 ---
@@ -170,14 +170,14 @@ Sign coverage on sign-bearing relations is the traversal gate and stands at **78
 <!-- COVERAGE:QUANT:BEGIN -->
 | reliability class | rows | share |
 |---|---:|---:|
-| `single_source_with_uncertainty` | 1235 | 80.8% |
-| `range_value` | 119 | 7.8% |
-| **`single_source_point_no_uncertainty`** | **65** | 4.3% |
-| `spread_documented` | 55 | 3.6% |
+| `single_source_with_uncertainty` | 1251 | 80.2% |
+| `range_value` | 128 | 8.2% |
+| **`single_source_point_no_uncertainty`** | **65** | 4.2% |
+| `spread_documented` | 56 | 3.6% |
 | `unverified` | 40 | 2.6% |
-| `multi_source` | 12 | 0.8% |
+| `multi_source` | 17 | 1.1% |
 | `superseded` | 3 | 0.2% |
-| | **1529** | |
+| | **1560** | |
 
 `single_source_point_no_uncertainty` is the risk class: one source, a point value, and nothing to warn a reader. Phase 2e classified every row rather than hunting duplicate parameter names, because ~94% of parameter names appear exactly once — disagreement in this field is not encoded as duplicate rows.
 <!-- COVERAGE:QUANT:END -->

@@ -17,7 +17,15 @@ summary: 'Resting chondrocytes are small, rounded cells lying singly or in pairs
   periphery, the borderline chondrocytes, leaves the cartilage altogether and becomes marrow stroma and
   osteoblasts. In human tissue none of this has been demonstrated: the human resting zone is described
   morphologically, and the only human proliferation data come from an in vitro thymidine labelling study
-  in which two of four specimens produced no labelled cells anywhere in the plate.'
+  in which two of four specimens produced no labelled cells anywhere in the plate. That study also reports
+  the one direct observation on human resting-zone proliferation that exists: in the two specimens that
+  did label, no labelled cells were found anywhere in the wide, low-density epiphyseal region the authors
+  call the inert zone - while in all five pig plates processed identically, labelled cells were present
+  in the inert zone. If both observations are taken at face value the human reserve compartment is
+  quieter than the pig''s, not merely quieter than the columnar zone, and the difference is a species
+  difference in the same experiment rather than across studies. The human inert zone is also large:
+  700-1000 um in the distal femur and 1000 um in the metatarsals, wider than in pig and far wider than
+  in rodents.'
 quantitative:
 - parameter: human specimens yielding no labelled cells after in vitro tritiated thymidine exposure
   value: 2 of 4
@@ -26,15 +34,52 @@ quantitative:
   species: human
   source_ref: thurston1985
   uncertainty: author-reported; possible technical failure discussed by the authors
+- parameter: labelled cells in the inert (reserve) zone after 1 h tritiated thymidine
+  value: none detected
+  unit: qualitative
+  conditions: human distal femur (10 y) and metatarsals/fibula (18 mo), the two specimens in which the
+    columnar zone labelled successfully; 1 h in vitro pulse
+  species: human
+  source_ref: thurston1985
+  uncertainty: 'a 1 h pulse detects only cells in S phase during that hour, so this bounds the instantaneous
+    labelling index rather than demonstrating quiescence: a cell cycling once a month would be missed with
+    high probability. No cell count for the inert zone is reported, so the upper bound cannot be quantified.
+    n=2 subjects.'
+- parameter: labelled cells in the inert (reserve) zone after 1 h tritiated thymidine
+  value: present in 5 of 5
+  unit: animals
+  conditions: pig distal femur, five animals, same 1 h in vitro pulse and same processing as the human
+    specimens
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: presence/absence only; no inert-zone labelling index reported
+- parameter: inert (reserve) zone width
+  value: 700-1000
+  unit: um
+  conditions: human distal femur, 10-year-old girl
+  species: human
+  source_ref: thurston1985
+  uncertainty: range across the section; n=1 subject; decalcified paraffin histology
+- parameter: inert (reserve) zone width
+  value: '1000'
+  unit: um
+  conditions: human metatarsals, 18-month-old girl; the distal fibula of the same child, described as grossly
+    abnormal, measured about 500 um
+  species: human
+  source_ref: thurston1985
+  uncertainty: n=1 subject; the child's diagnosis is congenital absence of the tibia
 localization:
 - 'mouse RZ: PTHrP+ skeletal stem cells confirmed by lineage tracing (mizuhashi2018)'
-- 'human RZ: morphology described, stem identity unconfirmed'
+- 'human RZ: morphology and width described; no labelled cells detected on a 1 h pulse (thurston1985)'
+- 'pig RZ: labelled cells present in all five animals on the same 1 h pulse (thurston1985)'
 human_evidence: absent
 human_evidence_note: No human study demonstrates stem or progenitor behaviour of resting zone chondrocytes;
-  the human evidence is descriptive histology only.
+  the human evidence is descriptive histology plus one non-detection of S-phase cells on a 1 h pulse in
+  two subjects, which bounds the instantaneous labelling index but cannot establish quiescence.
 species_basis:
 - mouse
 - human
+- porcine
 translation_risk: high
 translation_risk_reason: Stem identity rests on inducible Cre lineage tracing in mouse, and it is conditional
   on secondary ossification centre formation - a developmental milestone whose human timing relative to
@@ -59,10 +104,10 @@ key_refs:
   pmid: '3864550'
   first_author: Thurston MN
   year: 1985
-  type: primary_abstract_only
+  type: primary
   one_line_finding: In vitro thymidine labelling of human growth plates gave no labelled cells in two
-    of four subjects.
+    of four subjects, and none in the inert zone of the two that worked, while all five pig inert zones
+    labelled.
 open_questions:
 - g_l1arch_012
-pending_source: thurston1985
 last_verified: '2026-08-05'

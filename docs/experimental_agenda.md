@@ -428,3 +428,113 @@ reaches inside human growth-plate cartilage"* into *"microdialysis and matched
 tissue-sampling protocols exist, the tissue is obtained surgically, and nobody has run
 them."* A gap with a named method attached is a proposal. A gap without one is a
 complaint.
+
+---
+
+# ANNEX 2 — the Tier 1 prediction was tested, and it failed by 9.6 % (2026-08-06)
+
+Everything above this line is left as written. An agenda that quietly edits its
+predictions after seeing the answer is not an agenda.
+
+## What was predicted, and what was measured
+
+| | |
+|---|---|
+| **predicted** (this document, §"A single, specific, testable prediction to falsify first") | human terminal hypertrophic chondrocytes **13.9–18.7 µm tall** |
+| **measured** (thurston1985, full text, human distal femur, 10-year-old girl) | **20.5 µm** |
+| **verdict** | **FAILED.** 20.5 > 18.7 by 9.6 % |
+
+A second human value exists — **26 µm**, metatarsals of an 18-month-old — and is *not*
+scored, because the atlas holds no metatarsal elongation rate to close against.
+
+**The measurement was published in 1985.** The atlas held the paper as
+`primary_abstract_only` and recorded in three nodes and two gaps that the numbers were
+paywalled. They were not unavailable; they were unread.
+
+## What the failure is worth, which is more than the success would have been
+
+The band was not a guess. It was the closure of this document's own chain:
+
+| step | value |
+|---|---|
+| observed distal femoral elongation (kember1976) | 38 µm/day |
+| production, 24 cells / 20 d (kember1976) | 1.20 cells/day |
+| ⇒ axial length required per cell cycle | **31.67 µm** |
+| × rat hypertrophic share 44–59 % (wilsman1996) | **13.9 – 18.7 µm** |
+
+Inverting it on the measurement:
+
+> **implied human hypertrophic share = 20.5 / 31.67 = 64.7 %**, against a rat range of
+> **44 – 59 %**.
+
+The human distal femur puts a *larger* fraction of its elongation into terminal
+hypertrophic cell height than even the fastest rat plate, leaving **35 %** for matrix
+synthesis and cell division together against **41 %** in the rat proximal tibia. That is a
+first-principles cross-species prediction with no free parameters missing by under 10 %,
+with a residual that points in a single interpretable direction. It is the first
+quantitative statement the atlas can make about `g_l1arch_001`, the human elongation
+partition — a gap that has no human measurement at all.
+
+**It also corrects a qualitative claim this document made elsewhere.** The reasoning that
+a slow human plate implies *small* terminal cells is wrong. Human terminal cells
+(20.5–26 µm) are of ordinary mammalian size. The human plate is slow **with ordinary-sized
+terminal cells**, which puts the entire human/rodent difference into cell flux — the one
+term the human record cannot measure.
+
+## What it did to the ranking
+
+| parameter | share of output uncertainty BEFORE | AFTER |
+|---|---:|---:|
+| **terminal hypertrophic cell height** | **45 %** | **0 %** |
+| **human proliferative cell cycle time** | 40 % | **80 %** |
+| cells per column | 6 % | 9 % |
+| in vivo physeal stress | 4 % | 5 % |
+| zonal stiffness ratio | 3 % | 4 % |
+
+**Experiment 1 above is retired in its height half and survives in its volume half.** The
+height is measured; the *volume* is not, and cannot be derived, because no transverse
+cross-sectional area has ever been reported for a human hypertrophic chondrocyte. The
+volume is what places human plates on the mammalian volume-versus-growth-rate regression,
+so `g_l1arch_009` remains open with a narrowed scope — and with a cheap first step that
+did not exist before: **measure the transverse diameter on the same decalcified archival
+sections the heights came from.** That converts an existing measurement into a volume
+with no new tissue.
+
+## The new number one, and the reason it is now much sharper
+
+**Experiment 2 — direct measurement of the human proliferative-zone cell cycle time — is
+now 80 % of the model's uncertainty on its own,** and the measurement has made the
+question sharper rather than merely more urgent.
+
+Both published human cycle times come from `rate = (N_p / T_c) × h_term` solved for `T_c`.
+That identity has no matrix-synthesis term and no division term, so it assumes the
+hypertrophic share is exactly 1.0. Read against the measured height:
+
+| set | production | axial length/cycle | implied hypertrophic share |
+|---|---:|---:|---:|
+| kember1976 — 24 cells, 20 d | 1.20 cells/day | 31.7 µm | **64.7 %** |
+| thurston1985 — 28 cells, 15 d | 1.87 cells/day | 20.4 µm | **101 %** |
+| *rat, directly measured* | — | — | *44 – 59 %* |
+
+thurston1985 revised the cycle time **downward** — newer number, better-measured specimen
+— and the revision is the one the rest of the record cannot accommodate. Under the rat
+partition the same measured inputs give a human cycle time of **22–34 days**, longer than
+either published figure.
+
+So the experiment now has three live hypotheses to separate rather than one to confirm,
+and the EdU cumulative-labelling design in §2 separates all three because **it measures
+`T_c` without using the growth rate** — which is precisely what breaks the circularity
+that makes both published figures untestable:
+
+| saturation time | reading |
+|---|---|
+| **2–3 days** | both published figures are wrong; the plate has a small growth fraction and a fast cycle, not a slow one |
+| **~15–20 days** | the published derivations are right and the human hypertrophic share is 65–100 %, i.e. unlike any measured rodent plate |
+| **> 26 days** | the partition-corrected reading is right, the human share is rat-like, and both published human cycle times are too short |
+
+Report the growth fraction separately. A long average dwell time in a mostly quiescent
+pool is not a slow cycle, and the atlas currently cannot tell the two apart.
+
+*Trace: `atlas/audit/corrections.md` CORR-006. Model: `flow_model.py --site
+human_distal_femur` (blocked, prints the closure) and `--site
+human_distal_femur_thurston` (runs, halts at the partition).*

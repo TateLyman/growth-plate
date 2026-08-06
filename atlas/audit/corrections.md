@@ -405,3 +405,301 @@ omission, found by the round that was built to attack it.
 `PREREGISTRATION.md` §4.5 of P8-02 committed, before any number was seen, to reporting a
 refutation with the same prominence as a corroboration. This entry is that promise being
 kept.
+
+---
+
+## CORR-006 — the parameter that carried 45 % of the model's uncertainty was measured in 1985, and my prediction about it was wrong
+
+**Date traced:** 2026-08-06
+**Trigger:** the user supplied the full text of thurston1985 (Thurston MN & Kember NF,
+*In vitro thymidine labelling in human and porcine growth plates*, Cell Tissue Kinet
+18:575–582, PMID 3864550). The atlas had carried it as `primary_abstract_only` and had
+recorded, in three separate places, that the human hypertrophic cell heights it reports
+were behind a paywall.
+
+This entry has three parts, in descending order of how badly they reflect on the atlas.
+
+### Part 1 — a prediction the atlas committed to in writing is falsified, by 9.6 %
+
+`docs/experimental_agenda.md` stated, before the measurement was available:
+
+> human terminal hypertrophic chondrocytes should be of ordinary mammalian size,
+> **~13.9–18.7 µm tall**. That is one number, from one stain, on tissue that is already
+> being discarded.
+
+| | value |
+|---|---|
+| predicted band | **13.9 – 18.7 µm** |
+| measured, human distal femur, 10 y | **20.5 µm** |
+| miss against the upper bound | **+9.6 %** |
+
+**The prediction is outside its band and is scored as failed.** No re-reading rescues it:
+20.5 > 18.7.
+
+**Where the band came from, stated exactly, because the first draft of this entry got it
+wrong.** The band is *not* the flow model's `DECLARED_SPAN` for `h_term_um` — that span
+was 4.0–73.2 µm (mouse volumes 5,000–23,000 fl over a declared 20–40 µm diameter) and the
+measurement sits comfortably inside it, so that span is not falsified by anything here. It
+is far too wide to be falsified by anything at all, which is its own criticism.
+
+The 13.9–18.7 µm band is the **closure** prediction, and it is much sharper:
+
+| step | value | source |
+|---|---|---|
+| observed distal femoral elongation | 38 µm/day | kember1976 |
+| column production | 24 cells / 20 d = **1.20 cells/day** | kember1976 |
+| ⇒ axial length per cell cycle | **31.67 µm** | arithmetic |
+| × rat hypertrophic share, 44–59 % | **13.9 – 18.7 µm** | wilsman1996 |
+
+So the prediction was: *the human distal femur partitions its elongation the way a rat
+plate does.* The measurement says it does not, but it very nearly does:
+
+> measured 20.5 µm ÷ 31.67 µm per cycle ⇒ **human hypertrophic share = 64.7 %**,
+> against a rat range of **44 % (slow radius) – 59 % (fast tibia)**.
+
+**The residual is small and it points one way.** The human distal femur delivers a
+somewhat *larger* fraction of its elongation as terminal hypertrophic cell height than
+even the fastest rat plate, leaving 35 % for matrix synthesis and division against 41 %
+in the rat proximal tibia. That is a 9.6 % miss on a first-principles cross-species
+prediction with no free parameters, and the direction of the residual is interpretable
+rather than noise.
+
+**Where the qualitative framing was wrong, and that error was larger than the numeric
+one.** The prediction was headlined "human terminal hypertrophic chondrocytes should be
+of **ordinary mammalian size**" — and that part is right, and the paper says so in the
+same sentence as the numbers: human 20.5–26 µm against 19–27 µm mouse and 19–32 µm rat
+(the authors quote those rodent figures without attribution, so they are recorded here
+only as their comparator, never as data). But the atlas elsewhere reasoned that a slow
+human plate implied *small* terminal cells. It does not. The human plate is slow with
+ordinary-sized terminal cells, which relocates the entire human/rodent difference into
+**cell flux** — and cell flux is exactly the term the human record cannot measure.
+
+**The second human value cannot be scored at all.** The 26 µm metatarsal figure comes
+from a different site with a different elongation rate in a different child, and the
+atlas holds no metatarsal growth rate to close against. It is entered as a measurement
+and explicitly not used to test the prediction.
+
+### Part 2 — a defect the measurement exposed in the model's own wiring
+
+Entering the measurement made `flow_model.py` step 2 run for the first time. It produced
+**24.6 µm/day** of hypertrophic length for the human distal femur, against a measured
+total elongation of 38 µm/day. That number is worthless, and the reason is instructive.
+
+The chain is `elongation = (N_p / T_c) × h_term`. The human record supplies only two of
+those three independently:
+
+| source | N_p | T_c | axial length per cycle it requires | h_term |
+|---|---:|---:|---:|---|
+| kember1976 | 24 | 20 d | **31.7 µm** — never stated in the paper | *not measured* |
+| thurston1985 | 28 | 15 d | **20.4 µm** | **20.5 µm measured** |
+
+`T_c` has never been measured in a human. Both published figures are back-calculated
+from the **same** observed 38 µm/day, and each therefore silently fixes the axial length
+one cell cycle must contribute. Thurston's set makes that length equal the measured cell
+height, which is only correct if nothing else contributes any length. Kember's set makes
+it 55 % larger than the measured cell height, which is what you would expect if matrix
+synthesis and division contribute the rest.
+
+**The two cycle times are not two estimates of one quantity — they are one quantity
+computed under two different assumptions about the partition.** Multiplying Kember's
+`T_c` by Thurston's `h_term` in a *forward* chain deletes that 55 % without saying so and
+returns 24.6 µm/day where 38 was observed: it looks like a failed prediction and is
+actually a mis-assembled one.
+
+The same two rows read as a *closure* rather than a prediction are perfectly legitimate,
+and that reading is Part 1's 64.7 % — the difference is entirely in which direction the
+arithmetic runs, which is why the model now blocks one and prints the other.
+
+The model now refuses. A new exception class `IncoherentDerivation` halts step 2 whenever
+step 1's cycle time is flagged derived and its `source_ref` differs from `h_term`'s, and
+prints the implied height and the inflation factor. This is a different failure mode from
+`MissingParameter`: not an absent input but a **mis-assembled** one, and the model had no
+guard against it until a real measurement arrived to trigger it.
+
+A second site, `human_distal_femur_thurston`, carries the internally coherent set
+(N_p 28, T_c 15 d, h_term 20.5 µm) so the circularity is visible rather than hidden.
+
+### Part 3 — the measurement adjudicates between the two derived cycle times, and it favours the older one
+
+Run through thurston1985's own internally coherent set, the chain returns **38.27 µm/day**
+against an observed **38 µm/day**. It reproduces its own input to 0.7 %, which is what
+perfect circularity looks like — but the reproduction is exact only if the **hypertrophic
+share of elongation is 100 %**.
+
+Read the same measured height through each of the two published cycle times:
+
+| set | N_p | T_c | production | axial length/cycle | implied hypertrophic share |
+|---|---:|---:|---:|---:|---:|
+| kember1976 | 24 | 20 d | 1.20 cells/day | 31.7 µm | **64.7 %** |
+| thurston1985 | 28 | 15 d | 1.87 cells/day | 20.4 µm | **101 %** |
+| *rat, measured* | — | — | — | — | *44 % – 59 %* |
+
+**This is the finding, and it runs against the direction of publication.** thurston1985
+revised kember1976's cycle time *downward*, from 20 days to 15, and the revision is the
+newer number from the better-measured specimen. But the revision was produced by solving
+`rate = (N_p / T_c) × h_term` for `T_c` — an identity with **no matrix-synthesis term and
+no division term**, which therefore assumes the hypertrophic share is exactly 1.0. Rat
+stereology puts matrix synthesis at 32–49 % of elongation and division at 9 %
+(wilsman1996). The assumption is not a small one and it is never stated.
+
+Kember's 20 days, which makes no such demand, implies 64.7 % — just outside the rat range
+and plausibly human. **Thurston's 15 days implies 101 %, which no measured plate of any
+species approaches.** The measurement Thurston made is what exposes the problem with the
+cycle time Thurston derived from it.
+
+Closing the same measured height against the observed rate under the rat partition instead:
+
+> **human proliferative cell cycle time = 22–34 days** (22–29 d at N_p 24, 26–34 d at N_p 28)
+
+longer than both published figures. This is a consequence, not a result: it inherits the
+rat partition as an assumption and it is recorded with that assumption named. What it is
+enough to establish is narrower and firmer — **of the two published human cycle times, the
+newer one is the less compatible with everything else the atlas holds**, and neither is a
+measurement.
+
+### Blast radius — traced
+
+| Object | Status | Action |
+|---|---|---|
+| `thurston1985` (bibliography, ×2 shards) | **Promoted** | `primary_abstract_only` → `primary`; `access_route` and `full_text_read` recorded. |
+| `hypertrophic_chondrocyte` | **Human height entered** | 20.5 µm and 26 µm human, 22–35 µm porcine. `human_evidence` `indirect` → **`direct`**. `species_basis` gains `human`. The remaining absence is a human *volume*, which needs a transverse area nobody has recorded. |
+| `distal_femur_plate` | **Two rows added** | N_p = 28 (independent of kember1976's 24, different method, different subject) and h_term = 20.5 µm, which is the row the flow model now binds. |
+| `cell_cycle_time_pz` | **Rewritten** | Adds the 15-day re-derivation, the 4.4 % / 3.4–4.0 % human labelling indices, the pig 4.0–10.6 % series, and the two S-phase inferences (16 h, 22 h) with the authors' own statement that the method cannot reach S-phase duration. `pending_source` cleared. |
+| `chondrocyte_proliferation_rate` | **Human row added** | 1.9 cells/day/column, stamped derived-from-the-growth-rate. |
+| `resting_chondrocyte` | **Species contrast added** | No labelled cells in either human inert zone; labelled cells in **all five** pig inert zones, same pulse, same processing, same paper. Inert-zone width 700–1000 µm (femur) and 1000 µm (metatarsal). `pending_source` cleared. |
+| `porcine_growth_plate_model` | **Corrected and extended** | `first_author` was **`Thurston AJ`**; the author is **`Thurston MN`**. Missing `pmid` added. Pig labelling index, PZ cell count and hypertrophic height entered. |
+| `flow_model.py` step 2 | **Un-halted for two sites** | Uses the measured height. Every other site still halts: the paper's own two human sites differ by 27 %, so the femoral value is not transferable. |
+| `flow_model.py` step 3 | **Closure consequence emitted** | Prints the implied hypertrophic share and the 26–34 day consequence whenever the site carries an observed rate. |
+| `h_term_um` declared span | **DECLARED_SPAN → MEASURED_SPREAD** | 20.5–26 µm. Stamped as between-**site** range, not dispersion, and as a **lower bound** (decalcified paraffin shrinks lacunae). |
+| `T_c_human_d` declared span | **Widened upward** | 1.29 d → **34.3 d** (was → 20 d), on the partition argument in Part 3. |
+| `g_l1arch_009` | **Rewritten** | Height is measured; the gap is now the volume, the transverse area, and site/age resolution. |
+| `g_l1arch_002` | **Re-scoped** | Now the top-ranked unknown in the model at 80 %. |
+| Uncertainty ranking | **Restructured** | See below. |
+
+### What the measurement did to the experimental agenda
+
+| parameter | share of output uncertainty BEFORE | AFTER |
+|---|---:|---:|
+| terminal hypertrophic cell height | **45 %** | **0 %** |
+| human proliferative cell cycle time | 40 % | **80 %** |
+| cells per column | 6 % | 9 % |
+| in vivo physeal stress | 4 % | 5 % |
+| zonal stiffness ratio | 3 % | 4 % |
+
+One 1985 measurement removed the largest single source of uncertainty in the model and
+concentrated 80 % of what remains into one parameter — which is now also the parameter
+the same paper says its method cannot reach.
+
+### The generalisable lesson
+
+**The atlas predicted a number, wrote the prediction down where it could be checked, and
+the prediction was wrong by 10–39 %.** That is the intended behaviour of a falsifiable
+agenda and it is the second time in this project that a committed prediction has been
+overturned by evidence rather than by re-reading (CORR-005 was the first).
+
+The narrower lesson is about `primary_abstract_only`. Three nodes and two gaps recorded
+that this paper's numbers were paywalled, and the flow model built a **declared span** to
+stand in for them. The declared span was wrong and the paper had contained the right
+answer since 1985. A `pending_source` marker is not a neutral placeholder — it is an
+unmeasured parameter with a known address, and it should be ranked by what it blocks.
+`atlas/sources/access_queue.md` now carries that ordering.
+
+---
+
+## CORR-007 — three expectations tested against three PDFs; one paid, two failed, and two tools were found to be unsafe
+
+**Date traced:** 2026-08-06
+
+Five full texts arrived together. Before opening them the atlas had recorded what each was
+expected to supply. Recording the score rather than only the yield is the point.
+
+| source | what the atlas expected | what it actually contains | verdict |
+|---|---|---|---|
+| **thurston1985** | human hypertrophic cell heights, **13.9–18.7 µm** | **20.5 µm** and 26 µm, plus labelling indices, column counts and inert-zone widths for human and pig | **paid, and falsified the predicted band by 9.6 %** — CORR-006 |
+| **ye2026** | *"the first growth-plate drug exposure ever recorded"*, closing `g_l12b_002` | **no drug concentration at all.** Delivery is quantified solely as normalised DiR fluorescence radiant efficiency — a lipophilic membrane dye. No ng/g, no µg/g, no AUC, no half-life, no %ID/g anywhere in 19 pages | **expectation wrong; `g_l12b_002` stays open** |
+| **ramos2025** | whether lipochondrocytes exist **in the growth plate** | the growth plate is never examined. The strings *growth plate*, *physis* and *epiphysis* do not occur in the paper | **expectation wrong; question is untouched, not answered** |
+
+### Why the two failures are different from each other
+
+**ye2026 is a measurement-class error.** The atlas read "delivered purmorphamine to the
+growth plate" and recorded it as exposure. Fluorescence of a carbocyanine dye is not
+exposure: it locates the *label*, and DiR can dissociate from its carrier, so it is not
+even reliably the particle. `cartilage_targeted_delivery` therefore carries an explicit
+`drug concentration measured in growth-plate cartilage: not reported` row, so no later
+reader can mistake the node for one that holds a concentration.
+
+**ramos2025 is a scope error, and it converts a hoped-for answer into a real gap.** The
+study that established lipochondrocytes never looked at the physis. That makes
+`g_l1arch_015` a `known_unknown` created by the scope of a discovery paper rather than by
+a failed search — the cheapest kind of gap to close, and one nobody has.
+
+The two papers still earned nodes, for what they *do* support rather than what was hoped:
+`cartilage_targeted_delivery` (D) and `cellular_contribution_to_cartilage_stiffness` (E,
+a hypothesis node whose every measurement is stamped **NOT growth plate**).
+
+### Tooling defect 1 — `merge_shards.py` would have silently doubled the graph
+
+Running the documented merge workflow reported **`edges +1018 new … → 2209 total`** against
+a canonical graph of **1191** edges. The validator reported **zero errors**, because every
+duplicate received a fresh sequential `edge_id`.
+
+The cause is that the semantic identity key was `(source, target, relation, context[:120])`
+and **`context` is enriched on canonical edges after the merge.** The context-fill pass
+appends zone, age and sex qualifiers; the shards keep what they were authored with. By
+today, 1018 of 1191 canonical edges had drifted, so the key matched almost nothing.
+
+The first fix — keying on refs instead — was **also wrong**, and diagnosing why is the
+useful part. It left 19 edges still reading as new, and every one of them turned out to be
+a *pre-correction* copy:
+
+| drift source | example |
+|---|---|
+| id-collision rewrites | canonical `zhang2023_2`, shard `zhang2023` |
+| citation corrections | e00494 canonical `gse9160`, shard `baron1992`; e00485 canonical `garrett1995`+`brown1993`, shard `sabbagh2005` |
+| **CORR-004 itself** | `energy_availability_growth → klotho_beta_cofactor`: canonical is `hypothesized_link`/speculative after the wu2013 withdrawal; **the shard still says `activates`, confidence C** |
+
+So refs drift, and **the relation drifts too**. A merge keyed on either would have
+resurrected the withdrawn-paper edge alongside its own correction.
+
+**The fix is a staleness guard on `(source, target)`** — the one field pair no correction
+pass rewrites, because a correction changes what an edge *claims*, not which two nodes it
+runs between. A node pair already in canonical now means *"merged once, corrected since"*,
+never *"new"*, and each is printed as `DRIFT (not merged) … canonical wins`. Re-running now
+reports **`edges +0 new, 1159 already merged → 1191 total`**, and a real run leaves
+`edges.yaml` byte-comparable in content to its previous state (verified by parsing both
+revisions and comparing structures, not diffs).
+
+**The generalisable rule: an idempotency key must be built only from fields that no
+downstream pass rewrites.** Every field this tool originally keyed on was one the atlas
+deliberately improves over time.
+
+### Tooling defect 2 — `addref.py` attached a finding to the wrong paper
+
+`--pmid 39325866 --ref-id ramos2025 --finding "Lipid-filled lipochondrocytes give ear,
+nose and tracheal cartilage its shape and mechanics…"` resolved to **Lu Y 2024, *Structural
+basis for inositol pyrophosphate gating of the phosphate channel XPR1***, took the id
+`ramos2025a` because `ramos2025` was occupied, and wrote the lipochondrocyte finding onto
+it. The PMID was mine and it was wrong.
+
+**Nothing was fabricated** — every metadata field came from the live record, which is the
+tool working as designed. But the bibliography ended up asserting that a phosphate-channel
+paper reports lipochondrocyte mechanics: a citation defect of exactly the class
+`verify_refs.py` exists to catch three steps downstream. The bad entry was removed.
+
+`--ref-id` is a **checkable claim about which paper an identifier names**, because a ref_id
+in this atlas is `<surname><year>`. `addref.py` now refuses when the resolved record's
+author or year disagrees with the requested id, and refuses rather than silently suffixing
+when the requested id is already held by a different paper. Both refusals were
+negative-tested; correct calls, and re-adds of an already-present PMID, still pass.
+
+### Tooling defect 3 — seven parameter rows cited papers that do not contain them
+
+Every animal-model node carried a row like `pig translation risk score = 1.5` with
+`source_ref: thurston1985`. **The scoring scheme is this atlas's own** and none of the
+seven cited papers contains the number. The rows now carry `atlas_derived: true` and an
+`uncertainty` field stating in full that `source_ref` names the anchor primary for the
+model and **must not be cited for this value**. Found while editing one of them for an
+unrelated reason, which is the least reassuring way to find a systematic defect.
+
+Separately, `porcine_growth_plate_model` cited **`Thurston AJ`**; the author is **Thurston
+MN**, and the entry carried no PMID to cross-check against. Both corrected.

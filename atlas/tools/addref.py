@@ -95,6 +95,39 @@ def add_one(bib, pmid=None, doi=None, tier=None, rtype=None, finding=None,
             return rid, "already present (doi)"
 
     rid = force_id or slug(first_author, year)
+
+    # IDENTITY GUARD on --ref-id.
+    #
+    # `--ref-id X` is a claim about WHICH PAPER the caller believes the identifier
+    # resolves to, and it is checkable: a ref_id in this atlas is <first author
+    # surname><year>, so if the resolved record's author and year do not match the
+    # requested id, the caller has supplied the wrong PMID or DOI.
+    #
+    # This has already happened once and it silently produced a defect: `--pmid
+    # 39325866 --ref-id ramos2025 --finding "lipochondrocytes ..."` resolved to a
+    # paper by Lu on phosphate-channel gating, took the id `ramos2025a` because
+    # `ramos2025` was occupied, and wrote the lipochondrocyte finding onto it. Nothing
+    # was fabricated by the tool - every field came from the live record - but the
+    # bibliography ended up asserting that a phosphate-channel paper reports
+    # lipochondrocyte mechanics, which is a citation defect of exactly the kind
+    # `verify_refs.py` exists to catch downstream. Catch it at the door instead.
+    if force_id:
+        want = re.match(r"([a-z]+)(\d{4})", force_id.lower())
+        got_surname = first_author.split()[0].lower() if first_author else ""
+        if want and (want.group(1) != got_surname or want.group(2) != year):
+            return None, (f"REFUSED (--ref-id does not match the resolved record): you "
+                          f"asked for '{force_id}' but {pmid or doi} resolves to "
+                          f"{first_author} {year}, '{rec.get('title','')[:70]}...'. "
+                          f"Either the identifier is wrong or the ref_id is. Nothing "
+                          f"was written - re-check the identifier against the record it "
+                          f"claims to name.")
+        if force_id in bib["refs"]:
+            return None, (f"REFUSED (--ref-id '{force_id}' is taken by a different "
+                          f"paper): it currently holds pmid "
+                          f"{bib['refs'][force_id].get('pmid')}. Silently suffixing it "
+                          f"to '{force_id}a' would hide the collision. Choose an "
+                          f"explicit id.")
+
     base, i = rid, 1
     while rid in bib["refs"]:
         i += 1

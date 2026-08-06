@@ -1,0 +1,111 @@
+id: cellular_contribution_to_cartilage_stiffness
+name: Cellular contribution to cartilage stiffness (hypothesis)
+aliases:
+- cells as load-bearing elements in cartilage
+- non-continuum cartilage mechanics
+type: hypothesis
+layer: L5
+stub: false
+summary: 'Cartilage mechanics are conventionally modelled with continuum theory, which assumes the extracellular
+  matrix is homogeneous and the mechanical contribution of the cells themselves is negligible. Lipocartilage
+  falsifies that assumption in at least one tissue: ear, nose and tracheal cartilage in mammals is built
+  from lipid-filled lipochondrocytes with minimal matrix, and emptying their lipid vacuoles raises the
+  tensile Young''s modulus from 3.27 to 5.79 MPa, the ultimate tensile strength from 1.91 to 4.53 MPa and
+  the resilience from 0.38 to 1.77 MJ/m3 - the cell contents, not the matrix, set the compliance, and
+  removing them moves the tissue toward the values of naturally lipid-free meniscus and rib. THE GROWTH
+  PLATE WAS NOT EXAMINED IN THAT STUDY and no equivalent experiment has been done in physeal cartilage.
+  This node exists because the growth plate is the cartilage with the largest cellular volume fraction and
+  the most extreme intracellular change - the hypertrophic chondrocyte swells roughly 23-fold while diluting
+  its dry mass density from 0.183 to about 0.07 pg/fl - and because the atlas holds an unresolved contradiction
+  about which zone of the growth plate is stiffest, in which the disagreement runs both between species and
+  between measurement methods that probe matrix and composite at different scales. A cellular contribution
+  to physeal stiffness would explain why a sharp AFM tip and an unconfined-compression platen disagree,
+  because they weight matrix and cells differently. That is an inference from a different tissue and it is
+  graded E accordingly: no experiment in this node''s summary was performed on a growth plate.'
+quantitative:
+- parameter: tensile Young's modulus, native ear lipocartilage
+  value: '3.27'
+  unit: MPa
+  conditions: rat ear, microdissected, uniaxial tension to failure at 1% strain/s, Instron 5565
+  species: rat
+  source_ref: ramos2025
+  uncertainty: '+/- 0.52, n=8; TENSILE, not compressive - the growth-plate modulus record is compressive
+    and the two are not interchangeable. NOT growth plate.'
+- parameter: tensile Young's modulus, delipified ear lipocartilage
+  value: '5.79'
+  unit: MPa
+  conditions: same tissue after chloroform/methanol delipification, paired design
+  species: rat
+  source_ref: ramos2025
+  uncertainty: +/- 0.99, n=8, Welch p=0.0004; a 1.77-fold increase from removing cell contents alone. NOT
+    growth plate.
+- parameter: ultimate tensile strength, native vs delipified ear lipocartilage
+  value: 1.91 vs 4.53
+  unit: MPa
+  conditions: rat ear, paired
+  species: rat
+  source_ref: ramos2025
+  uncertainty: +/- 0.22 and +/- 0.92, n=8, Welch p=0.0259. NOT growth plate.
+- parameter: resilience, native vs delipified ear lipocartilage
+  value: 0.38 vs 1.77
+  unit: MJ/m3
+  conditions: rat ear, paired
+  species: rat
+  source_ref: ramos2025
+  uncertainty: +/- 0.06 and +/- 0.48, n=8, Welch p=0.0228; a 4.7-fold change, the largest of the three.
+    NOT growth plate.
+- parameter: tensile Young's modulus, lipid-devoid cartilage comparators
+  value: 23.86-23.94
+  unit: MPa
+  conditions: mouse rib cartilage (23.86 +/- 4.32, n=8) and knee meniscus (23.94 +/- 5.14, n=7), same
+    tensile protocol; the authors note these fall within previously reported values for fibrous and hyaline
+    cartilage
+  species: mouse
+  source_ref: ramos2025
+  uncertainty: 'recorded as a SCALE COMPARATOR only. These are tensile moduli of non-physeal cartilage.
+    The atlas growth-plate modulus record spans 380 kPa to 416 MPa in compression, so this row bounds
+    neither end of that dispute and must not be used to.'
+- parameter: growth-plate tissue examined
+  value: none
+  unit: qualitative
+  conditions: whole study
+  species: not_applicable
+  source_ref: ramos2025
+  uncertainty: RECORDED AS AN ABSENCE. The words growth plate, physis and epiphysis do not appear anywhere
+    in the paper. This row exists so the node cannot be read as evidence about the physis.
+localization:
+- 'mammalian ear, nose and tracheal cartilage: lipochondrocytes present, including in humans (ramos2025)'
+- 'growth plate: never examined by any study of lipochondrocytes'
+human_evidence: absent
+human_evidence_note: Lipochondrocytes are reported in humans, but in ear/nose/tracheal cartilage and by
+  histology rather than mechanics. No human mechanical measurement here, and no growth-plate measurement
+  in any species.
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: This node is an inference ACROSS TISSUES, not across species, which is the larger
+  jump. Elastic ear cartilage and physeal cartilage differ in matrix composition, cell type, loading mode
+  and function; that cells dominate mechanics in one is not evidence that they do in the other.
+confidence: E
+key_refs:
+- ref_id: ramos2025
+  pmid: '39787221'
+  first_author: Ramos R
+  year: 2025
+  type: primary
+  one_line_finding: Lipid vacuoles inside lipochondrocytes set the stiffness, strength and resilience of
+    ear cartilage; delipification raises all three, so cells rather than matrix carry the mechanics in
+    that tissue.
+- ref_id: cooper2013
+  pmid: '23485973'
+  first_author: Cooper KL
+  year: 2013
+  type: primary
+  one_line_finding: The hypertrophic chondrocyte dilutes its dry mass density from 0.183 to ~0.07 pg/fl
+    while swelling, an intracellular compositional change of a different mechanism from lipid accumulation.
+open_questions:
+- g_l1arch_015
+- g_l5matrix_008
+contradicts: []
+last_verified: '2026-08-06'

@@ -16,7 +16,12 @@ summary: 'The hypertrophic chondrocyte is the cell whose volume increase produce
   they remain alive up to the chondro-osseous junction, passing through a discrete condensation stage
   immediately before removal. Final volume correlates linearly with elongation rate across four plates
   and two ages in rat (r=0.98) and pig (r=0.83), with a species-specific slope, and the relationship fails
-  altogether in birds. No human hypertrophic chondrocyte volume has been reported with unbiased stereology.'
+  altogether in birds. No human hypertrophic chondrocyte volume has been reported with unbiased stereology.
+  The human terminal cell HEIGHT along the growth axis, however, has been measured directly: 20.5 um in
+  the distal femur of a 10-year-old girl and 26 um in the metatarsals and distal fibula of an 18-month-old
+  girl, each the mean of twenty cells along the metaphyseal border read with an eyepiece graticule
+  (thurston1985). This is the only absolute axial height recorded for a human plate, and it is the
+  conversion factor the atlas flow model previously halted on.'
 quantitative:
 - parameter: final volume, fast plate
   value: '14000'
@@ -60,6 +65,33 @@ quantitative:
   species: rat
   source_ref: hunziker1987
   uncertainty: not reported
+- parameter: terminal hypertrophic cell height along the growth axis
+  value: '20.5'
+  unit: um
+  conditions: human distal femur, 10-year-old girl (osteosarcoma of contralateral tibia), mean of 20 cells
+    along the metaphyseal border measured with an eyepiece graticule; formal saline fixation, neutral EDTA
+    decalcification, paraffin section
+  species: human
+  source_ref: thurston1985
+  uncertainty: no dispersion reported; n=1 subject, 20 cells; decalcified paraffin histology shrinks hypertrophic
+    lacunae by an unreported amount, so this is a lower bound on the in vivo height
+- parameter: terminal hypertrophic cell height along the growth axis
+  value: '26'
+  unit: um
+  conditions: human metatarsals, 18-month-old girl (congenital absence of tibia), same method; the distal
+    fibula of the same child gave the same value but that bone is described by the authors as grossly abnormal
+  species: human
+  source_ref: thurston1985
+  uncertainty: no dispersion reported; n=1 subject; the child's underlying diagnosis is a limb malformation,
+    so this is not a normal-development value
+- parameter: terminal hypertrophic cell height along the growth axis
+  value: 22-35
+  unit: um
+  conditions: pig distal femur, five animals aged 8.0-10.5 months (two of the five undated), same graticule
+    method
+  species: porcine
+  source_ref: thurston1985
+  uncertainty: range across five animals (29, 22, 27, 35, 32 um); no within-animal dispersion reported
 - parameter: correlation of final volume with elongation rate
   value: '0.98'
   unit: Pearson r
@@ -78,15 +110,20 @@ localization:
 - 'mouse HZ: single-cell volume and density measured (cooper2013)'
 - 'rat HZ: stereology and ultrastructure (hunziker1987)'
 - 'swine HZ: terminal condensation stage described (farnum1989a)'
-- 'human HZ: cell heights reported but not volumes (thurston1985)'
-human_evidence: indirect
-human_evidence_note: Human hypertrophic cell heights were measured in an in vitro labelling study (thurston1985,
-  abstract only); no human volume measurement exists.
+- 'human HZ: axial cell heights measured, 20.5-26 um; no volume (thurston1985)'
+human_evidence: direct
+human_evidence_note: Human terminal hypertrophic cell height is measured, not inferred - 20.5 um in a 10-year-old
+  distal femur and 26 um in an 18-month-old metatarsal (thurston1985, full text). What remains absent is
+  a human VOLUME, because height without a transverse cross-sectional area cannot give one, and the transverse
+  dimension was not measured in that study or any other human study found. The two subjects also carry
+  disease context (osteosarcoma of the contralateral tibia; congenital absence of the tibia), and the tissue
+  was decalcified paraffin, which shrinks hypertrophic lacunae by an amount nobody has quantified.
 species_basis:
 - mouse
 - rat
 - porcine
 - chicken
+- human
 translation_risk: high
 translation_risk_reason: The volume-versus-growth-rate relationship that makes this cell the central lever
   has a species-specific slope between rat and pig and does not hold in birds, so human values cannot
@@ -127,6 +164,13 @@ key_refs:
   year: 1994
   type: primary
   one_line_finding: The mammalian volume/growth-rate relationship does not hold in ducklings and chicks.
+- ref_id: thurston1985
+  pmid: '3864550'
+  first_author: Thurston MN
+  year: 1985
+  type: primary
+  one_line_finding: Terminal hypertrophic cell height in human growth plate is 20.5 um (distal femur, 10
+    y) and 26 um (metatarsals, 18 mo), and 22-35 um across five pig distal femora.
 open_questions:
 - g_l1arch_009
 - g_l1arch_008

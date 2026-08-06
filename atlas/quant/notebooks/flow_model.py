@@ -292,6 +292,36 @@ class MissingParameter(Exception):
         return "\n".join(L)
 
 
+class IncoherentDerivation(Exception):
+    """Two inputs that are individually fine but cannot be multiplied together.
+
+    Not a missing parameter - a mis-assembled one. The chain
+        elongation = (N_p / T_c) x h_term
+    has three inputs of which the human record supplies only two independently.
+    T_c has never been measured in a human; both human figures are back-calculated
+    from the SAME observed elongation rate under an ASSUMED h_term. Combining a T_c
+    derived under one assumed height with a different, measured height double-counts
+    the growth rate and produces a number that looks like a prediction and is not.
+
+    kember1976  : N_p 24, T_c 20 d  ->  1.20 cells/day, which at 38 um/day implies an
+                  assumed terminal height of 31.7 um. That height is never stated in
+                  the paper; it is what the arithmetic requires.
+    thurston1985: measured that height at 20.5 um and re-derived T_c to 15 d, giving
+                  1.9 cells/day.
+    The two T_c values are not two estimates of one quantity. They are the same
+    quantity computed under two different heights, and only thurston1985's pairs with
+    thurston1985's height.
+    """
+
+    def __init__(self, step: str, detail: str):
+        self.step, self.detail = step, detail
+        super().__init__("\n" + "=" * 78 +
+                         "\nMODEL HALTED - INPUTS CANNOT BE COMBINED\n" + "=" * 78 +
+                         f"\n  step : {step}\n{detail}\n" +
+                         "  NOT SUBSTITUTED, NOT AVERAGED. The chain stops here.\n" +
+                         "=" * 78)
+
+
 # The unmeasured factors this chain needs, each bound to its gap register entry.
 MISSING = {
     "h_term_um": dict(
@@ -453,24 +483,49 @@ def declared_spans() -> dict[str, DeclaredSpan]:
     # range (cooper2013 p_be99ba5726 5000 fl slow plate .. p_89512304c6 23000 fl jerboa) under a
     # transverse diameter of 20-40 um. The diameter itself is unrecorded, which is why
     # this is a DECLARED_SPAN and not a measurement.
-    v_lo = fl_to_um3(r.get("p_be99ba5726").num)      # 5000 um^3
-    v_hi = fl_to_um3(r.get("p_89512304c6").num)      # 23000 um^3
-    d_lo, d_hi = 20.0, 40.0                    # DECLARED, not measured
-    h_lo = v_lo / (math.pi * (d_hi / 2) ** 2)
-    h_hi = v_hi / (math.pi * (d_lo / 2) ** 2)
-    S["h_term_um"] = DeclaredSpan("h_term_um", h_lo, h_hi, "um/cell", "DECLARED_SPAN",
-        f"UNMEASURED. Bracketed from recorded terminal volumes {v_lo:.0f}-{v_hi:.0f} um^3 "
-        f"(cooper2013 p_be99ba5726/p_89512304c6) under a DECLARED transverse diameter of "
-        f"{d_lo:.0f}-{d_hi:.0f} um. No human value; no cross-sectional area recorded for "
-        f"any species.", "g_l1arch_009")
+    # MEASURED as of 2026-08-06. This was the model's largest declared span - 45 % of
+    # output uncertainty - and it is now a measurement. thurston1985 read the terminal
+    # hypertrophic cell height directly off human sections with an eyepiece graticule:
+    # 20.5 um in the distal femur of a 10-year-old and 26 um in the metatarsals of an
+    # 18-month-old. The span is the between-SITE range, not a dispersion: neither value
+    # carries one, and both come from n=1 subjects.
+    h_lo = r.get("p_d71f9c2a58").num                 # 20.5 um, human distal femur
+    h_hi = r.get("p_26bf92aaf6").num                 # 26 um, human metatarsal
+    S["h_term_um"] = DeclaredSpan("h_term_um", h_lo, h_hi, "um/cell", "MEASURED_SPREAD",
+        f"MEASURED IN HUMAN. {h_lo:g} um distal femur at 10 y, {h_hi:g} um metatarsal at "
+        f"18 mo (thurston1985 p_d71f9c2a58/p_26bf92aaf6), each the mean of 20 cells. The "
+        f"span is between-site variation, NOT dispersion - no dispersion is reported for "
+        f"either. Both are LOWER BOUNDS: decalcified paraffin shrinks hypertrophic "
+        f"lacunae by an unquantified amount. Both subjects carry disease (osteosarcoma "
+        f"of the contralateral tibia; congenital absence of the tibia). What remains "
+        f"unmeasured is a human VOLUME, which needs a transverse area nobody has "
+        f"recorded.", "g_l1arch_009")
 
+    # Upper bound WIDENED 2026-08-06 and the reason is worth stating in full, because it
+    # runs opposite to the direction the newest primary source points.
+    #
+    # Both human cycle-time figures come from the identity  rate = (N_p / T_c) x h_term.
+    # That identity has no matrix-synthesis term and no division term, so solving it for
+    # T_c assumes the hypertrophic share of elongation is 1.0. The only direct
+    # measurements of that share, in rat, are 0.44 and 0.59 (p_03591cde3d/p_53c796311c),
+    # with 32-49 % from matrix synthesis. If the human share is anywhere in the rat
+    # range, the same measured N_p and h_term give a cycle time of 26-34 days - LONGER
+    # than either published human figure, and longer than thurston1985's own revision
+    # downward from 20 d to 15 d. The span must cover that.
+    _np, _h = r.get("p_7fe2e26d6c").num, r.get("p_d71f9c2a58").num       # 28 cells, 20.5 um
+    _rate = r.get("p_1c34689beb").num                                    # 38 um/day
+    _tc_hi = _np / (_rate * percent_to_fraction(r.get("p_03591cde3d").num) / _h)
     S["T_c_human_d"] = DeclaredSpan("T_c_human_d", hours_to_days(r.get("p_206d079d10").num),
-        r.get("p_61f79e4fdb").num, "days", "DECLARED_SPAN",
-        f"UNMEASURED IN HUMAN. Bracketed by the measured rat fast-plate value "
-        f"({r.get('p_206d079d10').num} h = {hours_to_days(r.get('p_206d079d10').num):.2f} d, p_206d079d10) "
-        f"and the DERIVED human figure (20 d, p_61f79e4fdb). ~16-fold. The human end of this "
-        f"span is itself derived from the growth rate, so it cannot independently "
-        f"predict it.", "g_l1arch_002")
+        _tc_hi, "days", "DECLARED_SPAN",
+        f"UNMEASURED IN HUMAN. Lower bound = the measured rat fast-plate value "
+        f"({r.get('p_206d079d10').num} h = {hours_to_days(r.get('p_206d079d10').num):.2f} d, p_206d079d10). "
+        f"Upper bound {_tc_hi:.1f} d = the same measured human N_p ({_np:g} cells, "
+        f"p_7fe2e26d6c) and h_term ({_h:g} um, p_d71f9c2a58) closed against the observed "
+        f"{_rate:g} um/day under the SLOWEST measured rat hypertrophic share (44 %, "
+        f"p_03591cde3d) instead of the 100 % that both published human derivations "
+        f"assume without saying so. The two published human figures, 20 d (p_61f79e4fdb) "
+        f"and 15 d (p_ab0e23b3fc), sit inside this span but are not independent of the "
+        f"growth rate they would be used to predict.", "g_l1arch_002")
 
     S["N_p_cells"] = DeclaredSpan("N_p_cells", 12.0, 36.0, "cells", "DECLARED_SPAN",
         "kember1976 p_18c99a7ad2 records 24 cells/proliferative column with uncertainty "
@@ -511,6 +566,7 @@ class Site:
     p_cycle_time: Optional[str] = None
     p_cycle_time_unit: str = ""
     p_production_direct: Optional[str] = None      # cells/day/column measured directly
+    p_h_term: Optional[str] = None                 # terminal hypertrophic cell HEIGHT, um/cell
     # partition
     p_f_hyp: Optional[str] = None
     p_f_matrix: Optional[str] = None
@@ -529,12 +585,14 @@ SITES: dict[str, Site] = {
     "human_distal_femur": Site(
         key="human_distal_femur", label="human distal femur", species="human",
         p_cells_per_column="p_18c99a7ad2", p_cycle_time="p_61f79e4fdb", p_cycle_time_unit="days",
+        p_h_term="p_d71f9c2a58",
         p_rate_um_day="p_1c34689beb", p_rate_cm_yr="p_456dd2428e", p_share_of_bone="p_8a1d1c6c9c",
         bone="femur", age_note="kember1976 ages 5-8 y; pritchett1992 age 7 to maturity"),
     "human_distal_femur_pritchett": Site(
         key="human_distal_femur_pritchett", label="human distal femur (pritchett1992)",
         species="human", p_cells_per_column="p_18c99a7ad2", p_cycle_time="p_61f79e4fdb",
-        p_cycle_time_unit="days", p_rate_cm_yr="p_75b3d4fa3b", p_share_of_bone="p_8a1d1c6c9c",
+        p_cycle_time_unit="days", p_h_term="p_d71f9c2a58",
+        p_rate_cm_yr="p_75b3d4fa3b", p_share_of_bone="p_8a1d1c6c9c",
         bone="femur", age_note="age 7 to skeletal maturity"),
     "human_proximal_tibia": Site(
         key="human_proximal_tibia", label="human proximal tibia", species="human",
@@ -555,6 +613,15 @@ SITES: dict[str, Site] = {
         species="human", p_cells_per_column="p_18c99a7ad2", p_cycle_time="p_61f79e4fdb",
         p_cycle_time_unit="days", p_rate_cm_yr="p_de3fd37974", p_share_of_bone="p_d2af0e126c",
         bone="humerus", sex="male", age_note="age 7 to skeletal maturity"),
+    "human_distal_femur_thurston": Site(
+        key="human_distal_femur_thurston",
+        label="human distal femur (thurston1985 coherent set)", species="human",
+        p_cells_per_column="p_7fe2e26d6c", p_cycle_time="p_ab0e23b3fc",
+        p_cycle_time_unit="days", p_h_term="p_d71f9c2a58",
+        p_rate_um_day="p_1c34689beb", p_rate_cm_yr="p_456dd2428e",
+        p_share_of_bone="p_8a1d1c6c9c", bone="femur",
+        age_note="10-year-old girl; N_p, h_term and the labelling index all measured in "
+                 "the same specimen, T_c derived from them and the 38 um/day rate"),
     "rat_proximal_tibia": Site(
         key="rat_proximal_tibia", label="rat proximal tibia (fast plate)", species="rat",
         p_cycle_time="p_206d079d10", p_cycle_time_unit="h", p_production_direct="p_ac972fbc3f",
@@ -643,6 +710,10 @@ class Chain:
         "p_e0ba1f702a": (r"direction.{0,18}?proliferative.{0,18}?zone.{0,18}?height", 'qualitative'),
         "p_e8cec37611": (r"growth.{0,18}?rate.{0,18}?sensitivity.{0,18}?sustained", None),
         "p_ebe9a640c0": (r"final.{0,18}?volume.{0,18}?fast.{0,18}?plate", 'fl'),
+        "p_d71f9c2a58": (r"terminal.{0,18}?hypertrophic.{0,18}?cell.{0,18}?height", 'um'),
+        "p_26bf92aaf6": (r"terminal.{0,18}?hypertrophic.{0,18}?cell.{0,18}?height", 'um'),
+        "p_7fe2e26d6c": (r"cells.{0,18}?proliferative.{0,18}?column", 'cells'),
+        "p_ab0e23b3fc": (r"mean.{0,18}?cell.{0,18}?cycle.{0,18}?time", 'days'),
     }
 
     def _p(self, pid: str) -> Param:
@@ -726,10 +797,10 @@ class Chain:
                 f"N_p / T_c = {pn.num} cells / {tc_d:g} days"]
         if "derived" in (pc.uncertainty or "").lower():
             status = "derived"
-            prov.append("CIRCULARITY WARNING: this cycle time was itself derived from "
-                        "column count and growth rate (kember1976). Any elongation rate "
-                        "computed from it is not an independent prediction of the "
-                        "elongation rate. See gap g_l1arch_002.")
+            prov.append(f"CIRCULARITY WARNING: this cycle time was itself derived from "
+                        f"column count and growth rate ({pc.source_ref}). Any elongation "
+                        f"rate computed from it is not an independent prediction of the "
+                        f"elongation rate. See gap g_l1arch_002.")
             self.results["circular"] = True
         self._emit(Step(1, "PROLIFERATIVE OUTPUT",
                         "cells per proliferative column / cell cycle time", rate,
@@ -738,30 +809,126 @@ class Chain:
         return rate
 
     def step2_length_per_cell(self, prod: float) -> float:
-        """cells/day -> um/day of hypertrophic column length. Needs h_term."""
+        """cells/day -> um/day of hypertrophic column length. Needs h_term.
+
+        Until 2026-08-06 this step halted for every site. thurston1985 measures the
+        terminal hypertrophic cell height directly in human tissue - 20.5 um in the
+        distal femur of a 10-year-old girl, 26 um in the metatarsals of an 18-month-old
+        - so the two distal-femur sites now carry a MEASURED conversion factor and run.
+        Every other site still halts, because the height is site-specific: the same
+        paper's two human sites differ by 27 %, so substituting the femoral value for
+        the radius or the tibia would be a transfer, not a measurement.
+        """
+        s = self.site
+        if not s.p_h_term:
+            self._emit(Step(2, "HYPERTROPHIC VOLUME EXPANSION -> AXIAL LENGTH",
+                            "cells/day x terminal hypertrophic cell height (um/cell) "
+                            "= um/day of hypertrophic length", None, "", [
+                                self._p("p_ebe9a640c0").cite(),
+                                self._p("p_be99ba5726").cite(),
+                                self._p("p_9137beb338").cite(),
+                                self._p("p_d71f9c2a58").cite() +
+                                "  <- MEASURED, but human distal femur only",
+                                self._p("p_26bf92aaf6").cite() +
+                                "  <- MEASURED, human metatarsal; 27 % above the femoral "
+                                "value, which is why it is not transferred",
+                                "volume (fl == um^3) cannot become an axial height without "
+                                "a transverse cross-sectional area, which is unrecorded."],
+                            "halt"))
+            fail("h_term_um", "step 2: hypertrophic volume expansion -> axial length")
+        ph = self._p(s.p_h_term)
+
+        # COHERENCE GATE. If step 1's cycle time was back-calculated from the observed
+        # elongation rate, it already contains an assumed terminal cell height. Feeding
+        # a DIFFERENT height in here multiplies the growth rate by the ratio of the two
+        # heights and calls the result a prediction. Refuse.
+        pc = self._p(s.p_cycle_time) if s.p_cycle_time else None
+        if (self.results.get("circular") and pc is not None
+                and pc.source_ref != ph.source_ref):
+            implied = (self._p(s.p_rate_um_day).num / prod) if s.p_rate_um_day else None
+            det = [f"    cycle time  : {pc.param_id} = {pc.num:g} d  ({pc.source_ref}) "
+                   f"- DERIVED from the elongation rate",
+                   f"    cell height : {ph.param_id} = {ph.num:g} um ({ph.source_ref}) "
+                   f"- MEASURED"]
+            if implied:
+                det += [f"    That cycle time requires each cell cycle to contribute "
+                        f"{implied:.1f} um of axial length. The measured CELL is "
+                        f"{ph.num:g} um tall, {100*ph.num/implied:.0f} % of it.",
+                        "    A forward chain multiplying these two would silently delete "
+                        f"the remaining {100*(1-ph.num/implied):.0f} % and return "
+                        f"{prod*ph.num:.1f} um/day where "
+                        f"{self._p(s.p_rate_um_day).num:g} was observed. That is not a "
+                        "failed prediction, it is a mis-assembled one. BLOCKED.",
+                        "",
+                        "    READ AS A CLOSURE INSTEAD - same two rows, arithmetic run "
+                        "the other way, and this IS legitimate:",
+                        f"      implied hypertrophic share of elongation = "
+                        f"{ph.num:g} / {implied:.2f} = {100*ph.num/implied:.1f} %",
+                        "      rat, directly measured: 44 % (slow proximal radius) to "
+                        "59 % (fast proximal tibia), wilsman1996",
+                        "      matrix synthesis 32-49 % and division 9 % make up the "
+                        "rest in rat; this closure leaves "
+                        f"{100*(1-ph.num/implied):.0f} % for both in human."]
+            det += ["",
+                    "    To run the chain FORWARD, use a site whose cycle time and height "
+                    "come from the same derivation (human_distal_femur_thurston) - and "
+                    "note that that set implies a hypertrophic share of 100 %, which no "
+                    "measured plate of any species approaches. Or measure T_c: "
+                    "g_l1arch_002."]
+            raise IncoherentDerivation(
+                "step 2: hypertrophic volume expansion -> axial length", "\n".join(det))
+
+        hyp = prod * ph.num
         self._emit(Step(2, "HYPERTROPHIC VOLUME EXPANSION -> AXIAL LENGTH",
-                        "cells/day x terminal hypertrophic cell height (um/cell) "
-                        "= um/day of hypertrophic length", None, "", [
-                            self._p("p_ebe9a640c0").cite(),
-                            self._p("p_be99ba5726").cite(),
-                            self._p("p_9137beb338").cite(),
-                            "volume (fl == um^3) cannot become an axial height without a "
-                            "transverse cross-sectional area, which is unrecorded."],
-                        "halt"))
-        fail("h_term_um", "step 2: hypertrophic volume expansion -> axial length")
-        return 0.0  # unreachable
+                        f"{prod:.3f} cells/day x {ph.num:g} um/cell", hyp, "um/day", [
+                            ph.cite(),
+                            "MEASURED, not declared: mean of 20 terminal cells along the "
+                            "metaphyseal border, eyepiece graticule, n=1 subject.",
+                            "LOWER BOUND. Decalcified paraffin histology shrinks "
+                            "hypertrophic lacunae by an amount this paper does not "
+                            "quantify and no human study has. The true height is >= this.",
+                            "The subject had osteosarcoma of the contralateral tibia. "
+                            "Whether that alters femoral physeal kinetics is unknown."]))
+        return hyp
 
     def step3_partition(self, hyp_um_day: float) -> float:
         s = self.site
         if s.species == "human" or s.p_f_hyp is None:
+            prov = [self._p("p_53c796311c").cite(),
+                    self._p("p_03591cde3d").cite(),
+                    self._p("p_def18e2a21").cite(),
+                    self._p("p_30bbb4b516").cite(),
+                    self._p("p_677f954703").cite()]
+            # CLOSURE CONSEQUENCE. If the site also carries an OBSERVED elongation rate,
+            # the partition is no longer free: the hypertrophic increment computed in
+            # step 2 divided by the observed total IS the implied hypertrophic share.
+            # Report it, because it is the one thing this chain can say about a human
+            # parameter that has never been measured in a human.
+            if s.p_rate_um_day and hyp_um_day:
+                obs = self._p(s.p_rate_um_day)
+                f_impl = hyp_um_day / obs.num
+                self.results["f_hyp_implied"] = f_impl
+                prov += ["-" * 66,
+                         f"CLOSURE: step 2 gives {hyp_um_day:.2f} um/day of hypertrophic "
+                         f"length against an OBSERVED total of {obs.num:g} um/day "
+                         f"({obs.source_ref}), so this chain implies a hypertrophic share "
+                         f"of {100*f_impl:.0f} %.",
+                         "The only direct measurements of that share, in rat, are 44 % "
+                         "(slow proximal radius) and 59 % (fast proximal tibia), with "
+                         "32-49 % from matrix synthesis and 9 % from division.",
+                         "THE TWO CANNOT BOTH BE RIGHT. Either the human plate delivers "
+                         "essentially all of its elongation as terminal cell height and "
+                         "the rat partition does not transfer, or the arithmetic that "
+                         "produced this cycle time is structurally wrong because it has "
+                         "no matrix-synthesis term - in which case the true human cycle "
+                         "time is LONGER than the derived value by 1/f_hyp, i.e. "
+                         f"{(28/(obs.num*0.59/20.5)):.0f}-{(28/(obs.num*0.44/20.5)):.0f} "
+                         "days rather than 15 or 20.",
+                         "This is a testable consequence, not a result. See g_l1arch_001 "
+                         "and g_l1arch_002."]
             self._emit(Step(3, "MATRIX SYNTHESIS + DIVISION -> TOTAL ELONGATION",
                             "total elongation = hypertrophic increment / hypertrophic "
-                            "share of the elongation budget", None, "", [
-                                self._p("p_53c796311c").cite(),
-                                self._p("p_03591cde3d").cite(),
-                                self._p("p_def18e2a21").cite(),
-                                self._p("p_30bbb4b516").cite(),
-                                self._p("p_677f954703").cite()], "halt"))
+                            "share of the elongation budget", None, "", prov, "halt"))
             fail("f_hyp_human", "step 3: elongation partition")
         pf = self._p(s.p_f_hyp)
         f = percent_to_fraction(pf.num)
@@ -867,6 +1034,13 @@ class Chain:
             self.results["completed"] = False
             if self.verbose:
                 print(e.render())
+        except IncoherentDerivation as e:
+            self.halted_at = e.step
+            self.halt_exc = e
+            self.results["completed"] = False
+            self.results["incoherent"] = True
+            if self.verbose:
+                print(str(e))
         if self.verbose and self.risk_flags:
             print(f"  RISK-CLASS ROWS USED (single_source_point_no_uncertainty): "
                   f"{', '.join(sorted(set(self.risk_flags)))}")
@@ -1185,7 +1359,11 @@ def sensitivity(n: int = 40000, seed: int = 20260805, verbose: bool = True,
             "SCENARIO human_ignorance: no human partition has ever been measured "
             "(gap g_l1arch_001). The rat spread 44-59 % (p_53c796311c/p_03591cde3d) describes "
             "variation between two RAT plates, not the human value. Span declared "
-            "0.20-0.80 to represent genuine human ignorance.", "g_l1arch_001")
+            "0.20-0.80 to represent genuine human ignorance. NOTE: both published human "
+            "cycle times implicitly set this parameter to 1.0, which is outside this "
+            "span at the top. That is not evidence for a human value near 1.0 - it is "
+            "an unstated assumption in an identity with no matrix term - and it is why "
+            "the T_c_human_d span was widened upward rather than this one.", "g_l1arch_001")
     elif scenario != "recorded_spreads":
         raise ValueError(f"unknown scenario {scenario}")
     rng = random.Random(seed)

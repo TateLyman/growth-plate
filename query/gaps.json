@@ -89,19 +89,19 @@
   },
   {
    "gap_id": "g_l1arch_002",
-   "question": "What is the true cell cycle time of human proliferative-zone chondrocytes, and is the ~20-day figure inferred by Kember and Sissons correct?",
+   "question": "What is the true cell cycle time of human proliferative-zone chondrocytes? Every published human figure is back-calculated from the growth rate under an unstated assumption that the hypertrophic share of elongation is 100 per cent, and that assumption is contradicted by the only direct measurements of it.",
    "type": "species_gap",
    "layer": "L1",
-   "why_it_matters": "Kember and Sissons calculated ~20 days for the human distal femur from column cell counts plus a radiographic growth rate; Wilsman et al. measured 30.9 h directly in the rat proximal tibia by repeated BrdU pulses. That is a ~16-fold difference. If real, it means the human growth plate is a slow, low-turnover tissue and rodent proliferation-targeted pharmacology and rodent toxicology windows do not scale.",
-   "what_is_known": "Human: 24 cells per proliferative column and a derived mean cycle time of ~20 days in distal femur (kember1976); labelling index and PZ cell numbers reported in vitro for human plates by thurston1985, which also places pig kinetics between human and rodent. Rat: total cycle 30.9 h (proximal tibia) to 76.3 h (proximal radius), with S 3.4-6.1 h, G2 3.0 h, M 0.5-0.6 h and nearly all variation in G1 (wilsman1996a).",
-   "what_is_missing": "A direct measurement in human tissue. The Kember figure is a derived quantity, not an observation: it assumes steady state, a fixed column length, and that every PZ cell cycles. The systematic review avijgan2026 shows the analogous assumption of resting-zone quiescence is itself unsafe.",
+   "why_it_matters": "This is now the single largest source of uncertainty in the atlas flow model - 80 per cent of output variance, up from 40, because the parameter that used to dominate (terminal hypertrophic cell height) has been measured. If the human cycle time is really 15-20 days the human growth plate is a slow low-turnover tissue and rodent proliferation-targeted pharmacology and rodent toxicology windows do not scale. If it is 26-34 days the mismatch is worse. If it is closer to the rat 1.3 days with a small growth fraction, it is not a slow cycle at all but a mostly non-cycling pool, which is a different biology with different drug consequences.",
+   "what_is_known": "Human, MEASURED - proliferation-zone length 24 cells (kember1976) and 28 cells (thurston1985, independent method and subject); labelling index 4.4 per cent in a 10-year-old distal femur and 3.4-4.0 per cent in an 18-month-old metatarsal and fibula, against 10-15 per cent quoted for actively growing rodents; terminal hypertrophic cell height 20.5 um. Human, DERIVED - about 20 days (kember1976) and about 15 days (thurston1985). Rat, MEASURED directly - total cycle 30.9 h in the proximal tibia to 76.3 h in the proximal radius, with S 3.4-6.1 h, G2 3.0 h, M 0.5-0.6 h and nearly all the variation in G1 (wilsman1996a).",
+   "what_is_missing": "A direct measurement. Both human figures come from the identity rate = (N_p / T_c) x h_term, solved for T_c. That identity contains NO matrix-synthesis term and NO division term, so solving it assumes the hypertrophic share of elongation is 1.0. Rat stereology puts matrix synthesis at 32-49 per cent of elongation and division at 9 per cent (wilsman1996). Closing the same measured human N_p of 28 and h_term of 20.5 um against the same observed 38 um/day under the rat partition instead gives a human cycle time of 26-34 days - LONGER than both published figures, and in the opposite direction from thurston1985's own revision of kember1976 from 20 days down to 15. The two published figures are also not independent of each other or of the growth rate they would be used to predict; they are one quantity computed under two different assumed cell heights, kember1976's arithmetic silently requiring 31.7 um where thurston1985 measured 20.5 um and re-derived. thurston1985 states explicitly that S-phase duration cannot be measured by its single-pulse method, so its 16 h and 22 h figures are inferences under a rat-derived age-distribution correction the authors themselves doubt.",
    "nearest_evidence": [
-    "kember1976",
     "thurston1985",
+    "kember1976",
     "wilsman1996a"
    ],
-   "nearest_evidence_note": "thurston1985 (human explants labelled in vitro with tritiated thymidine; no labelled cells found in 2 of 4 human subjects), kember1976 (derived), wilsman1996a (rat, direct).",
-   "discriminating_experiment": "Label surgically obtained human physeal cartilage explants (epiphysiodesis or hemiepiphysiodesis waste tissue) with EdU under near-physiological oxygen (2-5% O2) and matrix-preserving culture, then fix at a graded series of times (6 h to 14 d) and fit the percent-labelled-mitoses or cumulative-labelling curve. A cumulative labelling index that saturates within 2-3 days would falsify the 20-day estimate and indicate that the human plate simply has a smaller growth fraction; saturation only after >2 weeks would confirm a genuinely long human cycle.",
+   "nearest_evidence_note": "thurston1985 (human, labelling index and column length measured, cycle time derived, S-phase explicitly beyond the method, no labelled cells in 2 of 4 subjects), kember1976 (human, derived under an unstated cell height), wilsman1996a (rat, direct).",
+   "discriminating_experiment": "Label surgically obtained human physeal cartilage explants (epiphysiodesis or hemiepiphysiodesis waste tissue) with EdU under near-physiological oxygen (2-5 per cent O2) and matrix-preserving culture, then fix at a graded series of times (6 h to 14 d) and fit the percent-labelled-mitoses or cumulative-labelling curve. This measures T_c WITHOUT the growth rate, which is what breaks the circularity - any curve-fit answer is an independent test of both derived figures at once. A cumulative labelling index saturating within 2-3 days would falsify both and indicate the human plate simply has a smaller growth fraction; saturation only after more than two weeks would confirm a genuinely long cycle; saturation beyond 26 days would support the partition-corrected reading and simultaneously imply the human hypertrophic share is rat-like rather than 100 per cent. Report the growth fraction separately, because a long average dwell time in a mostly quiescent pool is not a slow cycle.",
    "tractability": 3,
    "search_log_ref": "g_l1arch_012"
   },
@@ -214,20 +214,21 @@
   },
   {
    "gap_id": "g_l1arch_009",
-   "question": "What is the final volume and height of the terminal hypertrophic chondrocyte in human growth plates, per anatomical site and per age?",
+   "question": "What is the final VOLUME of the terminal hypertrophic chondrocyte in human growth plates, per anatomical site and per age, and what is its transverse cross-sectional area?",
    "type": "quantitative_gap",
    "layer": "L1",
-   "why_it_matters": "Final hypertrophic volume is the single strongest correlate of elongation rate in every mammal in which it has been measured, and it is the parameter that CNP analogues and FGFR3 inhibitors are believed to act on. It has never been reported for a human plate with a stated site, age and elongation rate.",
-   "what_is_known": "Rat and pig: final hypertrophic volume correlates with growth rate at r=0.98 and r=0.83 respectively, with a species-specific slope (breur1991). Mouse: 14,000 fl in fast proximal tibia versus ~5000 fl in slow proximal radius (cooper2013). Bird plates break the mammalian relationship entirely (barreto1994). Human hypertrophic cell heights were measured by Thurston and Kember but the values are behind a paywall (thurston1985).",
-   "what_is_missing": "Human volumes obtained with unbiased stereology (the disector or nucleator) in well-fixed, non-decalcified tissue, paired with site and age. Ordinary decalcified paraffin histology shrinks hypertrophic lacunae unpredictably and cannot give a volume.",
+   "why_it_matters": "Final hypertrophic volume is the single strongest correlate of elongation rate in every mammal in which it has been measured, and it is the parameter that CNP analogues and FGFR3 inhibitors are believed to act on. The axial HEIGHT is now measured in human tissue; the volume is not, and the two are not interchangeable, because volume is height times a transverse area that has never been reported for a human hypertrophic chondrocyte.",
+   "what_is_known": "Human, MEASURED - terminal hypertrophic cell height 20.5 um in the distal femur of a 10-year-old girl and 26 um in the metatarsals of an 18-month-old girl, each the mean of 20 cells read with an eyepiece graticule (thurston1985). The same paper gives 22-35 um across five pig distal femora. Rat and pig: final hypertrophic volume correlates with growth rate at r=0.98 and r=0.83 respectively, with a species-specific slope (breur1991). Mouse: 14,000 fl in fast proximal tibia versus ~5000 fl in slow proximal radius (cooper2013). Bird plates break the mammalian relationship entirely (barreto1994).",
+   "what_is_missing": "Three separable things. (i) A transverse cross-sectional area or diameter for a human hypertrophic chondrocyte, without which the measured heights cannot become volumes and cannot be placed on the mammalian volume-versus-growth-rate regression at all. (ii) An unbiased-stereology volume (disector or nucleator) in well-fixed, non-decalcified human tissue - the two heights that exist come from decalcified paraffin, which shrinks hypertrophic lacunae by an unquantified amount, so both are lower bounds. (iii) Site and age resolution - n=1 subject per site, two sites, 10 years and 18 months, and both children carry skeletal disease (osteosarcoma of the contralateral tibia; congenital absence of the tibia).",
    "nearest_evidence": [
+    "thurston1985",
     "breur1991",
-    "cooper2013",
-    "thurston1985"
+    "cooper2013"
    ],
-   "nearest_evidence_note": "breur1991, cooper2013 (rodent); thurston1985 and byers2000 (human, heights/zone dimensions only).",
-   "discriminating_experiment": "Apply Hunziker's high-pressure-freezing/ruthenium-hexammine fixation and the physical disector to human physeal blocks from at least three sites (distal femur, proximal tibia, distal radius) and two age bands, reporting mean final hypertrophic volume with CI. Test whether human values fall on the mammalian volume-versus-growth-rate regression when human site-specific elongation rates from pritchett1992 and pritchett1991 are used as the abscissa. A large negative residual would show that humans achieve their (slow) growth rates by a different mixture of parameters than rodents.",
-   "tractability": 3
+   "nearest_evidence_note": "thurston1985 (human, HEIGHT measured, no area, no volume, n=1 per site, decalcified); breur1991 and cooper2013 (rodent and pig volumes); byers2000 (human zone dimensions only).",
+   "discriminating_experiment": "Apply Hunziker's high-pressure-freezing/ruthenium-hexammine fixation and the physical disector to human physeal blocks from at least three sites (distal femur, proximal tibia, distal radius) and two age bands, reporting mean final hypertrophic volume with CI AND the transverse diameter. Test whether human values fall on the mammalian volume-versus-growth-rate regression when human site-specific elongation rates from pritchett1992 and pritchett1991 are used as the abscissa. A large negative residual would show that humans achieve their (slow) growth rates by a different mixture of parameters than rodents. A cheaper first step reaches part of it - measure the transverse diameter on the SAME decalcified archival sections the heights came from, which converts an existing measurement into a volume without new tissue and tests directly whether the 20-40 um diameter this atlas declared, and which the height measurement falsified indirectly, was wrong at the top, the bottom or both.",
+   "tractability": 3,
+   "superseded_scope": "Until 2026-08-06 this gap asked for the height AND the volume and recorded the height as paywalled. The thurston1985 full text supplies the height. See audit/corrections.md CORR-006 - the atlas had predicted 13.9-18.7 um and the measurements are 20.5 and 26 um."
   },
   {
    "gap_id": "g_l1arch_010",
@@ -4983,6 +4984,38 @@
    ],
    "discriminating_experiment": "Two steps, both on epiphysiodesis waste tissue. (1) Zonal immunohistochemistry or laser-capture proteomics for STC2, PAPP-A, PAPP-A2 and free IGF-1 across RZ, PZ, PHZ and HZ in human physis - establishes whether the restraint is real at protein level. (2) Human growth-plate explant culture with recombinant PAPP-A2 or STC2-neutralising antibody, reading out terminal chondrocyte HEIGHT by stereology on the same blocks. Under the hypothesis, relieving restraint lengthens phase 3 and increases terminal cell height; under the protective reading, it does not, or it increases hypertrophic-zone height without increasing elongation. Either outcome also yields the first human terminal cell height measurement, which is the parameter the flow model halts on (g_l1arch_009).",
    "tractability": 3
+  },
+  {
+   "gap_id": "g_l12b_026",
+   "question": "Does a cartilage-targeted carrier that penetrates a mouse growth plate penetrate a HUMAN one, whose inert zone alone is thicker than the entire mouse plate?",
+   "type": "species_gap",
+   "layer": "L12",
+   "why_it_matters": "Delivery carriers are the only intervention class that attacks the exposure term rather than the target, and exposure is the term the atlas cannot measure for any growth-modifying drug in any species (g_l12b_002). If carriers work in human physes they change what is dosable, including agents whose systemic toxicity currently caps the dose. If they do not, the entire class is a mouse result and the exposure problem is untouched.",
+   "what_is_known": "A PLGA core with a chondrocyte-membrane coat and a WYRGRL collagen-II-binding peptide (K_D about 1.2 uM against recombinant human COL2A1) reached the mouse distal femoral growth plate after intravenous injection, peaking at 24 h, and delivered purmorphamine well enough to restore body length in Fgfr3 V376D/+ mice at 1 mg/kg every two days for five weeks (ye2026). The peptide drives enrichment around cartilage; the membrane coat drives retention within it.",
+   "what_is_missing": "Everything quantitative about penetration depth in human-scale tissue. The mouse result is measured as normalised DiR fluorescence radiant efficiency, a membrane dye, so there is no concentration, no depth profile in um, no AUC and no free fraction to scale from. Diffusion into avascular cartilage scales badly with thickness and the human inert zone alone is 700-1000 um (thurston1985), exceeding the full height of the mouse plate that was treated. The authors state explicitly that human growth-plate cartilage was unobtainable, so no human tissue has been exposed to this or any comparable carrier.",
+   "nearest_evidence": [
+    "ye2026",
+    "thurston1985"
+   ],
+   "nearest_evidence_note": "ye2026 (mouse, dye-based, single laboratory, single disease model); thurston1985 (the human plate dimensions that set the scaling problem).",
+   "discriminating_experiment": "Expose surgically obtained human physeal cartilage explants (epiphysiodesis waste, the same stream gap g_l1arch_002 needs) to fluorophore-loaded and drug-loaded carriers under matrix-preserving culture, and measure BOTH a depth-resolved fluorescence profile in um from the epiphyseal surface AND the drug concentration by LC-MS/MS in serially cryosectioned slabs, so the label and the drug are measured separately in the same tissue. Comparing the two answers the dye-dissociation question at the same time. A penetration depth that falls short of the inert zone would show that a carrier optimised on mouse tissue does not reach the human proliferative zone at all, which is the outcome the thickness scaling predicts and which no published study can currently exclude.",
+   "tractability": 3
+  },
+  {
+   "gap_id": "g_l1arch_015",
+   "question": "Does the growth plate contain lipochondrocytes, and if not, why does one cartilage lineage build its mechanics from intracellular lipid vacuoles while the physis does not?",
+   "type": "known_unknown",
+   "layer": "L1",
+   "why_it_matters": "Lipochondrocytes overturn the assumption that cartilage mechanics are set by extracellular matrix alone - in ear cartilage the cells themselves set stiffness, strength and resilience, and emptying their vacuoles nearly doubles the Young's modulus. The growth plate is the cartilage in which cells occupy the largest volume fraction and swell the most, so if intracellular contents can dominate cartilage mechanics anywhere, the hypertrophic zone is the obvious candidate. It bears directly on contradiction g_l5matrix_008, where the zonal stiffness gradient disagrees in direction between species and between measurement methods.",
+   "what_is_known": "Lipochondrocytes were characterised in mouse and rat ear, nose and trachea and confirmed in multiple mammals including humans, but not in non-mammalian tetrapods. They make lipid exclusively by de novo lipogenesis, do not enlarge with obesity, do not shrink with starvation, and lack lipid-mobilisation factors. Ear lipocartilage has a tensile Young's modulus of 3.25 +/- 0.38 MPa against 23.9 MPa for lipid-devoid meniscus and rib; delipification raises lipocartilage modulus from 3.27 to 5.79 MPa, tensile strength from 1.91 to 4.53 MPa and resilience from 0.38 to 1.77 MJ/m3 (ramos2025). Separately, the growth-plate hypertrophic chondrocyte is known to dilute its dry mass density from 0.183 to about 0.07 pg/fl during a swelling phase (cooper2013) - a large intracellular compositional change of a different kind.",
+   "what_is_missing": "The question has not been asked. ramos2025 is the study that established the cell type and it never examines the growth plate - the words growth plate, physis and epiphysis do not appear in it. So there is no positive evidence, no negative evidence, and no search. This is a known_unknown created by the scope of the discovery paper rather than by a failed search.",
+   "nearest_evidence": [
+    "ramos2025",
+    "cooper2013"
+   ],
+   "nearest_evidence_note": "ramos2025 (ear, nose, trachea; growth plate never examined); cooper2013 (growth plate, intracellular density change of a different mechanism - dilution, not lipid accumulation).",
+   "discriminating_experiment": "Stain murine and human growth-plate sections for neutral lipid (BODIPY, Oil Red O) alongside the lipochondrocyte markers ramos2025 defines, in the same sections and with ear cartilage as a positive control on the same slide. A negative in the physis is informative and cheap: it would establish that the hypertrophic chondrocyte's volume increase is not a lipid phenomenon, which the dry-mass-dilution data already suggest but do not test directly. A positive in any zone would mean growth-plate mechanics have an intracellular determinant that no existing physeal finite-element model represents.",
+   "tractability": 5
   }
  ],
  "by_layer": {
@@ -5015,7 +5048,8 @@
    "g_l1arch_011",
    "g_l1arch_012",
    "g_l1arch_013",
-   "g_l1arch_014"
+   "g_l1arch_014",
+   "g_l1arch_015"
   ],
   "L10": [
    "g_l10env_001",
@@ -5090,7 +5124,8 @@
    "g_mr002_h1",
    "g_mr002_allele",
    "g_l12l7_006",
-   "g_l12l7_007"
+   "g_l12l7_007",
+   "g_l12b_026"
   ],
   "L13": [
    "g_l13data_001",
@@ -5405,7 +5440,8 @@
    "g_para_001",
    "g_para_007",
    "g_para_009",
-   "g_l5igf_001"
+   "g_l5igf_001",
+   "g_l1arch_015"
   ],
   "method_blocked": [
    "g_l1arch_014",
@@ -5608,7 +5644,8 @@
    "g_l6l5_001",
    "g_l6l5_009",
    "g_l4l3_007",
-   "g_l3adrn_001"
+   "g_l3adrn_001",
+   "g_l12b_026"
   ]
  },
  "by_tractability": {
@@ -5778,7 +5815,8 @@
    "g_para_004",
    "g_para_005",
    "g_para_006",
-   "g_l5igf_001"
+   "g_l5igf_001",
+   "g_l12b_026"
   ],
   "4": [
    "g_l12pharm_001",
@@ -5908,7 +5946,8 @@
    "g_l9organism_009",
    "g_mr002_h3",
    "g_l2d_002",
-   "g_l4l3_010"
+   "g_l4l3_010",
+   "g_l1arch_015"
   ]
  },
  "search_logs": {

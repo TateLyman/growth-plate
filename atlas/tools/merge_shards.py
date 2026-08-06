@@ -124,9 +124,47 @@ def merge_listfile(pattern, canon_rel, key, id_field, dry, renumber=False, prefi
         return i.get(id_field)
 
     have = {dkey(i) for i in items if isinstance(i, dict)}
-    seen_keys = {(i.get("source"), i.get("target"), i.get("relation"),
-                  str(i.get("context"))[:120])
-                 for i in items if isinstance(i, dict)}
+
+    # SEMANTIC IDENTITY OF AN EDGE, and why `context` is NOT part of it.
+    #
+    # This key used to be (source, target, relation, context[:120]). That was wrong
+    # and it was a live landmine: `context` is ENRICHED on canonical edges after the
+    # merge (the context-fill pass appends zone, age and sex qualifiers), while the
+    # shards keep whatever context they were authored with. By 2026-08-06 the canonical
+    # context of e00001 read "...both sexes not separated; resting zone, pro..." against
+    # the shard's "...both sexes not separated". 1018 of 1191 canonical edges had
+    # drifted this way, so a re-run of the documented merge workflow would have matched
+    # nothing and appended a near-complete SECOND COPY of the graph - 1191 -> 2209 edges,
+    # with the validator reporting zero errors because every duplicate carried a fresh
+    # sequential edge_id.
+    #
+    # An identity key must be built from fields that downstream passes do not touch.
+    # (source, target, relation) is that: 1184 distinct triples over 1191 edges, with
+    # 7 legitimate duplicate triples distinguished by their refs. So refs joins the key
+    # and context leaves it.
+    def semkey(i):
+        return (i.get("source"), i.get("target"), i.get("relation"),
+                tuple(sorted(str(r) for r in (i.get("refs") or []))))
+
+    seen_keys = {semkey(i) for i in items if isinstance(i, dict)}
+
+    # STALENESS GUARD. Refs drift for the same reason context does, and worse: the
+    # id-collision rewrite map renames refs in canonical (zhang2023 -> zhang2023_2)
+    # and correction passes REPLACE them outright (e00494's dexamethasone paper became
+    # gse9160; e00485's went from sabbagh2005 to garrett1995+brown1993). The relation
+    # itself is corrected too - CORR-004 downgraded e01055 from `activates` C to
+    # `hypothesized_link` speculative after wu2013 was withdrawn, and the shard still
+    # holds the `activates` version. Keying on refs or relation therefore reads every
+    # corrected edge as a new one and re-merging RESURRECTS THE PRE-CORRECTION VERSION
+    # alongside the corrected one.
+    #
+    # The only field pair no correction pass rewrites is (source, target): a correction
+    # changes what an edge CLAIMS, not which two nodes it runs between. So an ordered
+    # node pair already present in canonical means "this edge has been merged and has
+    # since been edited", never "this is new".
+    seen_pairs = {(i.get("source"), i.get("target"))
+                  for i in items if isinstance(i, dict)}
+    drifted = [0]
     rewrite, added, skipped = {}, 0, [0]
 
     for sp in sorted(glob.glob(os.path.join(ROOT, pattern))):
@@ -140,12 +178,20 @@ def merge_listfile(pattern, canon_rel, key, id_field, dry, renumber=False, prefi
                 # NB: must not be named `key` - that is the function parameter
                 # naming the YAML list ("edges"/"gaps"); shadowing it silently
                 # breaks shard.get(key) for every subsequent shard file.
-                semkey = (it.get("source"), it.get("target"), it.get("relation"),
-                          str(it.get("context"))[:120])
-                if semkey in seen_keys:
+                sk = semkey(it)
+                if sk in seen_keys:
                     skipped[0] += 1      # already merged - idempotent re-run
                     continue
-                seen_keys.add(semkey)
+                if (it.get("source"), it.get("target")) in seen_pairs:
+                    # Merged once, corrected since. Do NOT append.
+                    drifted[0] += 1
+                    print(f"    DRIFT (not merged) {os.path.basename(sp)} "
+                          f"{iid}: {it.get('source')} -> {it.get('target')} "
+                          f"({it.get('relation')}) already in canonical with different "
+                          f"relation or refs - canonical wins")
+                    continue
+                seen_keys.add(sk)
+                seen_pairs.add((it.get("source"), it.get("target")))
                 new = f"{prefix}{len(items) + 1:05d}"
                 if iid and iid != new:
                     rewrite[f"{os.path.basename(sp)}::{iid}"] = new
