@@ -9733,3 +9733,80 @@ gaps:
     of sacubitril across the whole growing period in a normal animal with FEMUR LENGTH as the endpoint - the same
     measurement nobody has taken for losartan.
   tractability: 1
+- gap_id: g_l2stem_population_asymmetry_human
+  question: Does the human growth plate stem pool renew by population asymmetry, and if so what is the self-renewal
+    probability and the equilibrium pool size?
+  type: known_unknown
+  layer: L2
+  why_it_matters: This is the question that decides whether final height has a fixed ceiling. If human growth plate
+    stem cells renew by INVARIANT asymmetry, the pool size is a constant of the tissue and the only levers on height
+    are velocity and duration - which is where every intervention in this atlas already lives, and where every one
+    of them tops out at 2-4%. If they renew by POPULATION asymmetry, the pool size is a set-point determined by
+    the ratio of self-renewing to lineage-restricted divisions, and that ratio becomes a target that nothing has
+    ever been aimed at. chu2025 shows the mouse uses population asymmetry. The mouse growth plate never closes.
+  what_is_known: 'chu2025, mouse: labelling all Col2a1+ cells in Col2-CreERT2;R26R-Confetti and chasing a month
+    gives the population-asymmetry signature - clone number falls while clone size rises. GH shifts divisions toward
+    the committed side and depletes the slow-cycling label-retaining pool and the PTHrP+ population, and GHR deletion
+    in PTHrP+ cells impairs clone formation, so the shift is cell-autonomous. mizuhashi2018 independently shows
+    labelled column number falling to a plateau by 6 months with a persisting minority, which is the same signature
+    seen from the exhaustion end, and puts long-term self-renewing cells at roughly 2-3% of PTHrP+ colony-forming
+    cells.'
+  what_is_missing: (1) ANY HUMAN OBSERVATION. Clonal genetic labelling cannot be done in a person, so the direct
+    experiment is unavailable and the question has simply never been asked. (2) A FITTED PARAMETER IN ANY SPECIES.
+    The mouse result is a qualitative signature. No self-renewal probability, loss rate or equilibrium pool size
+    has been fitted, so nothing from this can enter a quantitative model of final height. (3) THE SAME MEASUREMENT
+    IN A PLATE THAT CLOSES. Every clonal number in this atlas comes from mouse, whose growth plate remains open
+    for life. Rat, rabbit and sheep plates cease growing and fuse; none has been clonally traced. (4) WHETHER THE
+    RENEWAL FRACTION CAN BE MOVED UPWARD. GH moves it downward. Nothing has been tested for the opposite direction,
+    and that is the untried half of the only lever that is not velocity or duration.
+  nearest_evidence:
+  - chu2025
+  - mizuhashi2018
+  nearest_evidence_note: chu2025 establishes the renewal mode in mouse and that it is drug-movable. mizuhashi2018
+    supplies the only long-chase clone-loss curve. Neither has a human counterpart and neither fits a parameter.
+  discriminating_experiment: SOMATIC MUTATION PHYLOGENY IN HUMAN GROWTH PLATE. Clone structure has been reconstructed
+    in human blood, gut, liver and skin from somatic mutations accumulated in single cells or microdissected clones,
+    without any genetic labelling. The same approach applied to growth plate tissue - which is obtainable from epiphysiodesis
+    surgery, the source of the only human growth plate scRNA-seq that exists - would give clone-size distributions
+    directly, and clone-size distribution is exactly what separates invariant from population asymmetry. It requires
+    laser-capture or single-cell whole-genome sequencing rather than transcriptomics, and it requires more than
+    one donor age. FAILING THAT, the cheaper animal experiment is Confetti-equivalent clonal tracing in a RAT, whose
+    growth plate actually ceases growing, to test whether the mouse renewal mode is a property of growth plates
+    or a property of a plate that never has to close.
+  tractability: 3
+- gap_id: g_l2stem_renewal_fraction_lever
+  question: Can the ratio of self-renewing to lineage-restricted stem cell divisions in the growth plate be shifted
+    TOWARD self-renewal, and does doing so raise final bone length?
+  type: known_unknown
+  layer: L2
+  why_it_matters: 'Every pharmacological lever in this atlas acts on velocity or on duration and each tops out at
+    a few per cent. Population asymmetry opens a third: the size of the stem compartment itself. It is known to
+    be movable because growth hormone moves it - downward. NOBODY HAS TRIED TO MOVE IT UPWARD. That is a gap in
+    the experimental record rather than a negative result, and it is the single most direct restatement of the question
+    this atlas exists to answer.'
+  what_is_known: 'chu2025: GH shifts growth plate stem cell divisions toward the lineage-restricted side, reducing
+    label-retaining cells and PTHrP+ cell number while raising clone size in all zones. The shift is cell-autonomous
+    - GHR deletion in PTHrP+ cells impairs clone formation. So the division-fate ratio is under endocrine control
+    and responds within 10 days. growth_plate_senescence holds that plate senescence is DIVISION-dependent rather
+    than time-dependent, which is what makes the size of the pool and the rate at which it is spent the same currency.'
+  what_is_missing: (1) ANY AGENT TESTED FOR THE OPPOSITE DIRECTION. No compound, schedule or genetic manipulation
+    has been assayed for INCREASING the self-renewing fraction in growth plate. (2) WHETHER A LARGER POOL PRODUCES
+    A LONGER BONE. The causal link from pool size to final length is assumed throughout the field and has not been
+    demonstrated by expanding the pool and measuring the bone. It could saturate. (3) SCHEDULE. GH is given daily
+    for years. If depletion tracks cumulative committed divisions, intermittent dosing might buy the same velocity
+    for less of the pool - and intermittent versus daily GH has been compared for height but never for the stem
+    compartment. (4) THE CEILING. Whether the pool or something downstream of it is what actually limits final height
+    in a human is not established, so an intervention that expanded the pool might change nothing.
+  nearest_evidence:
+  - chu2025
+  - mizuhashi2018
+  nearest_evidence_note: chu2025 is the only demonstration that the division-fate ratio in growth plate is movable
+    at all, and it moves it the wrong way for height.
+  discriminating_experiment: 'THE CHEAP VERSION FIRST, AND IT NEEDS NO NEW ANIMAL: re-analyse the existing intermittent-versus-daily
+    GH comparisons for anything that reports growth AFTER treatment stops, since a spent pool should show up as
+    a shorter remaining growth period rather than a lower velocity during treatment. THEN the animal experiment:
+    in Pthrp-mCherry or H2B-GFP mice, screen candidate agents for an INCREASE in label-retaining cell number after
+    a fixed exposure - the same readout chu2025 used to detect the decrease, run in the opposite direction. Any
+    hit is then taken to a bone-length endpoint in an animal whose plate closes, because a larger pool that never
+    converts to a longer bone is not a height intervention.'
+  tractability: 2

@@ -18794,3 +18794,46 @@ edges:
   confidence: C
   notes: Ligand-side control of NPR2 signalling, parallel to NPR3-mediated clearance.
   traversal_usable: true
+- edge_id: e01208
+  source: growth_hormone
+  target: stem_pool_population_asymmetry
+  relation: inhibits
+  sign: '-'
+  context: GH 5 mg/kg/d for 10 d in mouse shifts growth plate stem cell divisions from self-renewing toward lineage-restricted,
+    reducing label-retaining cells and PTHrP+ cell number while raising clone size in all zones
+  evidence_tier: T1
+  refs:
+  - chu2025
+  confidence: C
+  notes: The sign is NEGATIVE ON THE POOL and positive on velocity - the same drug moves the two in opposite directions.
+    Magnitudes are in figures not read by this atlas. [relation recorded as 'inhibits' to stay inside the schema vocabulary;
+    the literal claim is 'modulates'.]
+  traversal_usable: true
+- edge_id: e01209
+  source: stem_pool_population_asymmetry
+  target: clonal_exhaustion
+  relation: correlates_with
+  sign: +
+  context: population asymmetry predicts falling clone number with rising clone size, which is the signature mizuhashi2018
+    observed as labelled column loss to a plateau by 6 months
+  evidence_tier: T1
+  refs:
+  - chu2025
+  - mizuhashi2018
+  confidence: C
+  notes: Two studies, one phenomenon seen from opposite ends. Mouse only. [relation recorded as 'correlates_with'
+    to stay inside the schema vocabulary; the literal claim is 'explains'.]
+  traversal_usable: true
+- edge_id: e01210
+  source: stem_pool_population_asymmetry
+  target: resting_chondrocyte
+  relation: correlates_with
+  sign: unknown
+  context: the renewal mode of the resting-zone stem compartment, in mouse
+  evidence_tier: T1
+  refs:
+  - chu2025
+  confidence: C
+  notes: Structural, not causal. [relation recorded as 'correlates_with' to stay inside the schema vocabulary; the
+    literal claim is 'describes'.]
+  traversal_usable: false
