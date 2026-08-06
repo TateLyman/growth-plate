@@ -91,3 +91,50 @@ Recorded because the first run produced a clean, confident, wrong answer.
 4. **A patch inserted a warning block mid-loop**, silently making the row-builder the body of
    an `if` that was never true, so the writer got an empty list and truncated the previous
    output to zero bytes. There is now a `if not rows: HALT` guard rather than an overwrite.
+
+---
+
+## Addendum, same day — the largest class in this screen was dismissed on an assumption, and the assumption broke
+
+Round 17 put **14 of the 45** hits in `connective_tissue` and set them aside with the line:
+*"tall through dolichostenomelia — a structural fibrillin/collagen defect producing
+disproportionate limb length — not through a growth plate that runs faster or longer."*
+
+That sentence is an assumption wearing the clothes of a classification. It was never checked,
+and checking it broke it.
+
+The evidence arrived sideways, through homocystinuria — a disorder that reaches the same axis
+by a different route, since homocysteine modifies **fibrillin-1**, the Marfan protein:
+
+- **The overgrowth is postnatal, therefore physeal.** 48 pyridoxine-nonresponsive patients have
+  **normal birth weight** and reach ~**+1 SD** above the population in height and weight with no
+  BMI difference; within the disease the late-diagnosed are **+7.97 cm at 18 years** versus
+  newborn-screened (P = 0.0204), the divergence complete before age 10 (`purcell2017`). Length
+  accrued after birth is length accrued at the growth plate.
+- **The animal counterpart localises it.** Chicks fed 0.6 % homocysteine grow faster with
+  **significantly longer tibiae** (P < 0.01) and radiographic **accelerated epiphyseal
+  ossification** — the authors' own phrase is *"epiphyseal growth plate lesions."* The bones are
+  stronger only in proportion to their extra length and cortical thickness (`mass2003`).
+- **The target is fibrillin-1, not collagen.** Homocysteinylation — but not cysteinylation —
+  disrupts fibrillin-1 multimerisation and greatly reduces microfibril deposition by human
+  fibroblasts (`hubmacher2010`), while cartilage cross-links stay unchanged (`orth1994`).
+
+So the class contains the only pathway in the whole screen that is **mapped, human-validated,
+directionally known, and already drugged** — losartan is an approved AT1 blocker used in Marfan
+precisely to push TGF-β signalling *down*.
+
+All 14 rows are reclassified `connective_tissue_DISPUTED` and the question is opened as
+**`g_l1arch_019`, tractability 1** — because the first decisive step is not an experiment but a
+literature extraction: Marfan mouse models have been characterised exhaustively for aorta and
+barely at all for limb length, and the answer may already be sitting in them.
+
+**The honest headline of round 17 was wrong.** It was not that the human tall-stature gene space
+is exhausted. It was that **two-thirds of it had been excluded by a definition rather than by
+evidence**, and the largest excluded block is the one with a drug in it.
+
+**And the direction is the problem, not the opportunity.** This is the aortic aneurysm axis.
+Marfan, Loeys-Dietz and homocystinuria all buy their height alongside aortic root dilatation,
+ectopia lentis, scoliosis and osteoporosis. Any lever here runs *toward* a disease. The
+immediate practical question is the inverse one and it matters to real patients: if this axis
+drives physeal elongation, **children on long-term losartan for Marfan should be shorter**, and
+that is checkable in existing paediatric trial data before anyone runs anything new.
