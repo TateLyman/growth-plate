@@ -110,6 +110,69 @@ quantitative:
   species: bovine
   source_ref: williams2001
   uncertainty: ultimate strain not different by region
+- parameter: tangent modulus by zone, tension along the growth axis
+  value: resting 27.0; proliferating 14.9; hypertrophic 15.1; whole plate 17.7
+  unit: MPa
+  conditions: rabbit distal radius and ulna, 20 animals aged 8 weeks, epiphysis-growth plate-metaphysis complex loaded
+    to failure with four dye markers tracked by video dimension analyser so strain could be resolved per zone
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: mean +/- SE. The RESTING zone is roughly 80% stiffer than the two zones below it, and it fails at less
+    than half the strain (0.043 against 0.081 and 0.096) with under half the energy absorption (32.9 against 66.2
+    and 88.5 kJ/m3). So the compliant, extensible part of the plate is the proliferative-plus-hypertrophic region
+    - the part that has to accommodate cell expansion.
+- parameter: collagen fibre orientation by zone
+  value: proliferative and hypertrophic fibres aligned parallel to the long axis; resting random
+  unit: ellipse long/short axis ratio, direction relative to the bone axis
+  conditions: same rabbit specimens; fibre architecture scored microscopically per zone
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: 'p<0.01 for longitudinal alignment in proliferative and hypertrophic zones; the mean direction did
+    not differ significantly between zones but the CONCENTRATION of directions did. AWKWARD FOR ANY SIMPLE FIBRE-ALIGNMENT
+    ACCOUNT OF STIFFNESS: the resting zone is the least aligned and the STIFFEST in axial tension, which is the opposite
+    of what aligned load-bearing fibres would predict. Whatever sets the zonal modulus here, it is not fibre alignment
+    alone.'
+- parameter: total collagen by zone
+  value: radius 250.6, 294.5, 399.6, 332.7, 207.2; ulna 234.2, 273.8, 345.6, 267.5, 207.2
+  unit: ug hydroxyproline per mg dry tissue, zones I-V epiphyseal to metaphyseal
+  conditions: rabbit distal radius and ulna, same animals as the mechanical testing
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: Collagen peaks in the middle of the plate (zone III) and falls by roughly half at the metaphyseal end
+    in both bones. Note the collagen peak does not coincide with the stiffness peak, which is at the epiphyseal end.
+- parameter: ultimate tensile stress, radius versus ulna in the same animals
+  value: 1.05 vs 1.03
+  unit: MPa
+  conditions: rabbit distal radial and ulnar growth plates, 20 animals, both plates from each animal; cross-sectional
+    areas 29.7 and 27.9 mm2
+  species: rabbit
+  source_ref: fujii2000
+  uncertainty: 'NOT SIGNIFICANTLY DIFFERENT, p>0.1. THIS IS A NULL RESULT AGAINST g_l1arch_018 AND IS THE CLOSEST
+    EXISTING TEST OF ITS BETWEEN-PLATE PREDICTION: two plates of different growth rate, same animals, same age - and
+    no difference in axial tensile strength. It is not a direct refutation, because the quantity predicted to differ
+    is the transverse-to-axial modulus RATIO and what was compared here is axial ultimate stress alone, with the modulus
+    pooled across both bones. But nothing in this dataset supports the prediction either.'
+- parameter: change in physeal tensile properties with age
+  value: 25% thinner, 34% stronger, 65% greater failure strain in the older animals
+  unit: '% change, 5-month calves to 12-18-month heifers'
+  conditions: bovine proximal tibia, 21 specimens from 12-18-month and 19 from 5-month animals, four matched anatomic
+    sites, tension at 0.004 mm/s
+  species: bovine
+  source_ref: williams2001
+  uncertainty: The plate gets axially STRONGER as the animal ages and growth slows. Consistent in direction with wosu2012,
+    where the transverse-to-axial modulus ratio collapses over development, but NOT the same measurement - wosu2012
+    measured transverse tension and out-of-plane compression, this is axial tension - and the two should not be pooled.
+- parameter: human physeal tensile strength against bovine
+  value: about twice as thick and about half as strong, with similar ultimate strain
+  unit: relative to bovine proximal tibia
+  conditions: 8 samples from the femoral capital growth plate of two cerebral palsy patients, tested identically to
+    the bovine specimens
+  species: human
+  source_ref: williams2001
+  uncertainty: A RARE HUMAN PHYSEAL MECHANICAL MEASUREMENT and the only one this atlas holds. Two patients, both with
+    cerebral palsy, so the specimens come from limbs with abnormal loading history and probably abnormal growth; capital
+    femoral physis, not a long-bone metaphyseal plate. Directional only - no absolute value is quoted here because
+    the sample cannot support one.
 localization:
 - 'rabbit proximal tibia: modulus peak in upper hypertrophic zone (eckstein2022)'
 - 'rabbit cranial base: modulus increases monotonically RZ -> mineralizing zone (radhakrishnan2004)'

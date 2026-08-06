@@ -1239,3 +1239,74 @@ the gap was written.
 Nothing in it was fabricated — every observation in the chain was sourced — but its central
 "nobody has measured this" was an artefact of not having looked, and the one human step in it
 points the other way. **The gap should have been opened after the search, not before it.**
+
+---
+
+## CORR-012 — CORR-011 was written from an abstract and got the sign wrong
+
+**Found**: 2026-08-06, on reading the five full texts that CORR-011 had requested. CORR-011
+flagged its own exposure — *"both findings are from abstracts only"* — and the exposure paid
+out on one of the two.
+
+### What CORR-011 Part 2 claimed
+
+That `orth1994` showed homocysteine **raises** collagen cross-linking in growth plate
+cartilage, so the homocystinuria step of `g_l1arch_018` — which assumes homocysteine
+*impairs* cross-linking — ran backwards.
+
+### What the paper actually reports
+
+Two things the abstract does not make clear.
+
+**1. The elevation belongs to the lesion, not to homocysteine.** Tibial dyschondroplasia was
+induced **four separate ways** — genetic predisposition, copper-deficient diet, thiram, and
+dietary homocysteine — and *all four* raised collagen and hydroxylysylpyridinoline in the
+lesion above normal growth-plate cartilage. A change produced by four unrelated causes is a
+property of the lesion.
+
+**2. Experiment 3 is the decisive one, and it is a negative.** In birds with
+homocysteine-induced TD, non-lesional cartilage was **normal**:
+
+| tissue | homocysteine-fed | control |
+|---|---|---|
+| sternal HP | 0.355 | 0.409 |
+| articular HP | 0.603 | 0.573 |
+| sternal collagen | 266 | 273 µg/mg |
+| articular collagen | 417 | 439 µg/mg |
+
+(moles HP per mole collagen, n = 5 per group.) The paper says it plainly: the cartilage
+*"appeared normal, having similar HP concentrations."*
+
+**So homocysteine does not systemically raise cartilage cross-linking, and CORR-011 Part 2 is
+withdrawn.** The homocystinuria step of `g_l1arch_018` is restored to where it was — unverified
+as to mechanism, but no longer contradicted.
+
+### What CORR-011 Part 1 got right, and then overshot
+
+Part 1 stands: `farquharson1996` exists and the atlas twice said it did not. Reading it in full
+makes it stronger and more interesting than the abstract suggested — pyridinoline peaks at
+**0.55 residues/collagen molecule** in the proliferative zone and collapses to **0.03** exactly
+at the collagen X boundary, an 18-fold span, while deoxypyridinoline runs the *other* way and
+becomes the principal cross-link in the most differentiated sections. Total pyridinium
+cross-links fall ~0.55 → ~0.03 and recover only to ~0.12.
+
+But CORR-011's *revised* statement of what remains missing — that nobody has paired composition
+with mechanics in the same growth plate — is **also wrong**, and `cohen1992` was in the same
+request batch. It regresses ultimate stress and both tangent moduli on collagen content across
+anatomical regions of the bovine distal femur and reports greater collagen where the plate is
+stiffest and strongest. What is genuinely unpaired is **cross-link density** with mechanics —
+and `farquharson1996` shows why that distinction matters, since collagen concentration varies
+about 5-fold through the chick plate while pyridinoline varies about 18-fold, in a different
+pattern.
+
+### The pattern, three corrections running
+
+CORR-009: read the method paper behind the number. CORR-010: apply that to *both* sides of a
+dispute. CORR-011: a failed search is a statement about the search. And now CORR-012: **an
+abstract is a claim about a paper, not the paper.** Each correction has been the previous one's
+lesson applied one level further out, and each was found by doing the thing the previous
+correction said to do.
+
+The operational rule this adds: **a correction written from an abstract must not change a
+grade or invert a sign.** It may record that a paper exists and must be read. CORR-011 Part 2
+inverted a sign on abstract evidence and was wrong within hours.
