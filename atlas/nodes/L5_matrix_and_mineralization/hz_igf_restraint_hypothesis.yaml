@@ -1,0 +1,91 @@
+id: hz_igf_restraint_hypothesis
+name: 'Hypothesis: local IGF restraint in the hypertrophic zone caps phase 3'
+aliases:
+- STC2 phase 3 hypothesis
+- hypertrophic zone IGF bioavailability ceiling
+- phase 3 duration hypothesis
+type: hypothesis
+layer: L5
+stub: false
+summary: 'GENERATED 2026-08-06 by joining three things the atlas already held and had never connected.
+  It is a HYPOTHESIS, graded E, and it is recorded because it is the only route this atlas can find to
+  the dominant unmeasured variable.
+
+  1. Terminal chondrocyte enlargement resolves into three phases, and it is PHASE 3 - resumed proportional
+  dry-mass growth at low density - whose duration varies most between rapidly and slowly elongating plates.
+  The slow mouse proximal radius omits phase 3 entirely; the jerboa metatarsal extends it to ~23,000 fl;
+  Igf1-deficient cells stop at ~7,000 fl. Phase 3 is locally regulated by an IGF-dependent mechanism (cooper2013).
+
+  2. The flow model''s variance decomposition puts 45% of the uncertainty in human elongation on terminal
+  hypertrophic cell HEIGHT - i.e. on the output of phase 3 - and the chain is multiplicative, so a 20%
+  change in that term is a 20% change in elongation.
+
+  3. P8-01 re-analysis of the only zone-resolved human growth-plate transcriptome found STC2 - an inhibitor
+  of PAPP-A, the protease that liberates IGF-1 from IGFBP-3/-5 - STRONGLY HYPERTROPHIC-ZONE ENRICHED IN
+  BOTH DONORS (fold range 23.3 and 12.5, the most concordant large-amplitude signal in the IGF module),
+  while PAPPA2 peaks prehypertrophically.
+
+  THE HYPOTHESIS: the human hypertrophic zone actively RESTRAINS local IGF bioavailability precisely where
+  and when the IGF-dependent phase of cell enlargement occurs. If so, the ceiling on terminal cell height
+  is not IGF supply - which is what GH therapy raises - but pericellular IGF RELEASE, and the untried
+  lever is the PAPP-A/STC2 axis in the hypertrophic zone rather than the somatotropic axis.
+
+  WHY IT IS NOT A FINDING. STC2''s HZ enrichment is a transcript localisation in two donors. Whether STC2
+  protein restrains PAPP-A activity in that compartment, whether free IGF-1 is actually lower there, and
+  whether phase 3 duration responds to it, are three untested steps. The direction could also be protective:
+  restraining hypertrophy where the plate is mechanically weakest may be why physes do not routinely slip.
+
+  WHAT MAKES IT WORTH RECORDING. Human PAPP-A2 loss of function REDUCES free IGF-1 with ELEVATED total
+  IGF-1 and causes progressive postnatal growth failure, and recombinant PAPP-A2 raises free IGF-1 (dauber2016)
+  - so the axis is pharmacologically addressable in humans TODAY, in the correct direction, with an existing
+  biologic.'
+quantitative:
+- parameter: STC2 hypertrophic-zone fold enrichment, human, two donors
+  value: 23.3 and 12.5
+  unit: fold range across zones
+  conditions: GSE9160 P8-01 re-analysis, distal femur, 11y10m F and 13y3m M; concordant HZ maximum in
+    both donors
+  species: human
+  source_ref: gse9160
+  uncertainty: transcript, two donors, one platform; reanalysis p8_01_gse9160_human_zonal, grade D
+localization:
+- 'human hypertrophic zone: STC2 transcript maximal in both donors (P8-01)'
+- 'human prehypertrophic zone: PAPPA2 transcript maximal in both donors (P8-01)'
+human_evidence: indirect
+human_evidence_note: Every component is human - the STC2 localisation, the PAPP-A2 loss-of-function phenotype,
+  the free-versus-total IGF-1 dissociation - but the joining claim has never been tested in any species.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The phase structure is mouse (cooper2013) and the STC2 localisation is human;
+  the hypothesis requires both to hold in the same tissue, which nothing has shown.
+confidence: E
+claim_grades:
+- claim: Phase 3 duration sets terminal hypertrophic cell size and is IGF-dependent.
+  grade: C
+  basis: cooper2013 quantitative phase microscopy, mouse, with the Igf1-deficient truncation as the internal
+    control. Replicated across four plates of differing growth rate within the same study.
+- claim: STC2 restrains local IGF bioavailability in the human hypertrophic zone.
+  grade: E
+  basis: Inference. STC2 transcript is HZ-enriched in two human donors (P8-01) and STC2 inhibits PAPP-A
+    biochemically. No protein, no activity, no free-IGF measurement in the compartment.
+- claim: Relieving hypertrophic-zone IGF restraint would increase terminal cell height.
+  grade: E
+  basis: Untested in any species. This is the discriminating claim and the reason the node exists.
+key_refs:
+- ref_id: cooper2013
+  type: primary
+  one_line_finding: Three phases of chondrocyte volume increase; phase 3 duration varies most between
+    fast and slow plates and is locally IGF-dependent.
+- ref_id: dauber2016
+  type: primary
+  one_line_finding: 'Human PAPP-A2 loss of function: elevated total IGF-1, reduced FREE IGF-1, progressive
+    postnatal growth failure; recombinant PAPP-A2 raises free IGF-1.'
+- ref_id: gse9160
+  type: dataset
+  one_line_finding: 'P8-01 re-analysis: STC2 strongly hypertrophic-zone-enriched in both human donors;
+    PAPPA2 prehypertrophic-maximal.'
+open_questions:
+- g_l5igf_001
+last_verified: '2026-08-06'

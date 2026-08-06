@@ -1738,6 +1738,11 @@
   "hydroxyapatite nucleation and mineral maturation": "hydroxyapatite_nucleation",
   "apatite nucleation": "hydroxyapatite_nucleation",
   "acp-to-ha transformation": "hydroxyapatite_nucleation",
+  "hz_igf_restraint_hypothesis": "hz_igf_restraint_hypothesis",
+  "hypothesis: local igf restraint in the hypertrophic zone caps phase 3": "hz_igf_restraint_hypothesis",
+  "stc2 phase 3 hypothesis": "hz_igf_restraint_hypothesis",
+  "hypertrophic zone igf bioavailability ceiling": "hz_igf_restraint_hypothesis",
+  "phase 3 duration hypothesis": "hz_igf_restraint_hypothesis",
   "inorganic_pyrophosphate": "inorganic_pyrophosphate",
   "inorganic pyrophosphate (ppi)": "inorganic_pyrophosphate",
   "ppi": "inorganic_pyrophosphate",
@@ -2749,6 +2754,7 @@
   "fixed_charge_density": "atlas/nodes/L5_matrix_and_mineralization/fixed_charge_density.yaml",
   "hyaluronan_matrix": "atlas/nodes/L5_matrix_and_mineralization/hyaluronan_matrix.yaml",
   "hydroxyapatite_nucleation": "atlas/nodes/L5_matrix_and_mineralization/hydroxyapatite_nucleation.yaml",
+  "hz_igf_restraint_hypothesis": "atlas/nodes/L5_matrix_and_mineralization/hz_igf_restraint_hypothesis.yaml",
   "inorganic_pyrophosphate": "atlas/nodes/L5_matrix_and_mineralization/inorganic_pyrophosphate.yaml",
   "link_protein_hapln1": "atlas/nodes/L5_matrix_and_mineralization/link_protein_hapln1.yaml",
   "lysyl_oxidase": "atlas/nodes/L5_matrix_and_mineralization/lysyl_oxidase.yaml",
@@ -7435,18 +7441,8 @@
    "layer": "L3"
   },
   {
-   "node": "zone_provisional_calcification",
-   "inbound": 10,
-   "n_layers": 2,
-   "layers": [
-    "L1",
-    "L5"
-   ],
-   "layer": "L1"
-  },
-  {
    "node": "hypertrophic_volume_increase",
-   "inbound": 9,
+   "inbound": 10,
    "n_layers": 7,
    "layers": [
     "L1",
@@ -7456,6 +7452,16 @@
     "L5",
     "L6",
     "L9"
+   ],
+   "layer": "L1"
+  },
+  {
+   "node": "zone_provisional_calcification",
+   "inbound": 10,
+   "n_layers": 2,
+   "layers": [
+    "L1",
+    "L5"
    ],
    "layer": "L1"
   },
@@ -8150,7 +8156,7 @@
   "L11->L4": 11,
   "L6->L1": 51,
   "L6->L5": 11,
-  "L5->L1": 49,
+  "L5->L1": 50,
   "L13->L5": 8,
   "L13->L6": 5,
   "L8->L3": 12,
@@ -71282,6 +71288,7 @@
     ]
    }
   },
+  "hz_igf_restraint_hypothesis": {},
   "inorganic_pyrophosphate": {
    "hypophosphatasia": {
     "sign": 1,
@@ -78125,7 +78132,7 @@
  ],
  "edge_usability": {
   "usable": 784,
-  "unusable": 406,
+  "unusable": 407,
   "reason": "sign-exempt relation (precedes/binds/correlates_with/hypothesized_link) or unsigned"
  }
 }
