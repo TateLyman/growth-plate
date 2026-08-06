@@ -830,3 +830,86 @@ thing than a signalling node.
 | **PMID 8132746** — Hunziker 1994 full text | PMC deposit is abstract-only. The tables carry cell height and volume per treatment group — the only drug × shape numbers that exist | not obtained |
 | **PMID 17532281** — Stokes 2007 full text | PMC deposit is abstract-only. Per-species cell height tables | not obtained |
 | ~~PMID 3543020~~ Hunziker 1987 | **dropped.** Stokes 2007 replicates the ranking independently, so the 1987 method paper is no longer load-bearing | unobtainable |
+
+---
+
+# ROUND 8 — all four primaries obtained; the mechanism holds and the drug data cuts a new way
+
+## 1. Cohen 1998 — the anisotropy, from the source
+
+| bovine distal ulnar growth plate | value |
+|---|---|
+| **E₃, axial, in compression** | **0.47 ± 0.11 MPa** |
+| **E₁, transverse, in tension** | **4.55 ± 1.21 MPa** |
+| ratio | **9.7×** |
+| ν₂₁ / ν₃₁ | 0.30 ± 0.20 / **0** |
+| permeability, axial vs radial | 3.4 ± 1.6 vs 5.0 ± 1.8 ×10⁻¹⁵ m⁴/N·s |
+
+n = 20 paired. Chondroepiphysis gives 1.07 and 10.63 MPa — **the same 9.9× ratio**, so
+the anisotropy is a property of the cartilage, not of the plate specifically.
+
+**The loading modes differ and that must not be glossed.** E₁ is *tensile*, E₃ is
+*compressive*; this is not one property measured in two directions. But those are exactly
+the modes a swelling cell imposes: expanding radially loads the surrounding matrix in
+**circumferential tension**, expanding axially loads the matrix above and below in
+**compression**. So the comparison is the right one, and the reading survives: **a cell
+meets roughly ten times more resistance going sideways than going up.**
+
+Permeability is similar in both directions, so **the anisotropy is in the solid matrix,
+not in fluid transport.**
+
+## 2. Hunziker 1994 — the only drug × cell-shape data that exists, and it cuts a new way
+
+Hypophysectomised rat, 8-day infusion. Figure 1 legend, in full:
+
+| terminal hypertrophic cell | NaCl | IGF-I | GH | normal |
+|---|---:|---:|---:|---:|
+| height (µm) | **19.5** | 27.3 | 26.5 | **29.8** |
+| volume (µm³) | **6,370** | 9,890 | 11,140 | **10,246** |
+| *implied aspect ratio* | *0.96* | *1.27* | *1.15* | *1.42* |
+
+*(aspect ratio derived here assuming a right circular cylinder — the paper reports height
+and volume and never diameter. It is not a measurement.)*
+
+**Read that bottom row.** GH drives volume **above** normal (11,140 vs 10,246) while
+reaching an aspect ratio of only 1.15 against a normal 1.42. IGF-I does better on shape
+(1.27) with less volume. **Hormones restore size more completely than shape**, which
+matches the authors' own finding that cell productivity did not reach normal with either
+agent.
+
+If that holds, it says something specific and useful: **the existing pharmacology is
+loading the axis that does not carry physiological growth change.** GH inflates the cell;
+physiological acceleration elongates it. Those are different operations, and the drug does
+the one Hunziker 1989 showed does not track growth rate.
+
+**This is a derived quantity resting on a geometric assumption.** It is the single most
+consequential inference in this document and the least secure. Measuring the terminal cell
+diameter in hormone-treated animals would settle it, and it is a measurement on archived
+material.
+
+## 3. Stokes 2007 uses the same identity everyone uses
+
+`Growth = N × h_max` — new chondrocytes per day times maximum chondrocytic height. The
+same structure as Kember 1976, Thurston 1985, and this atlas's flow model. Every published
+account of longitudinal growth is that product, and **none of them carries a term for cell
+shape**, which is why the variable stayed invisible until Hunziker measured height and
+diameter separately.
+
+## 4. Where this leaves the whole exercise
+
+| | |
+|---|---|
+| the mechanism | **plausible and measured**: 9.7× anisotropic matrix, softer pericellular shell, cell goes up rather than out |
+| the physiological result | **replicated in ranking** (Stokes 2007, 3 species), **not in the height/volume dissociation** (only Hunziker measured both) |
+| the drug data | GH and IGF-I raise volume to or above normal but under-restore aspect ratio — **derived, needs a diameter measurement** |
+| the candidate list | 2 of 7 standing, both grade C |
+| the target class | a **material property** — the axial/transverse stiffness ratio — not a receptor |
+
+**The most valuable thing to come out of this is not a compound.** It is that the field's
+governing identity has no shape term, one 1989 paper says shape is what moves, the
+mechanism for it was measured in 1998 and never connected, and the only drug data
+available suggests the approved agents push the other axis.
+
+The next measurement is small, specific, and uses tissue that already exists: **terminal
+cell height AND diameter, in the same sections, in hormone-treated versus control
+animals.** That single number decides whether the reframing is real.

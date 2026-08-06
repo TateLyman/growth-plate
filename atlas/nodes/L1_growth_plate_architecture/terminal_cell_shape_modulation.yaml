@@ -149,6 +149,78 @@ quantitative:
     the first time - but it is a radial measurement in the proliferative zone, and nobody has measured
     whether the constraint differs axially versus laterally, which is what would actually channel
     expansion into height.'
+- parameter: out-of-plane (axial) Young's modulus, growth plate
+  value: 0.47
+  unit: MPa
+  conditions: newborn bovine distal ulnar growth plate, 4 mm disks, unconfined and confined compression
+    stress-relaxation to 10% strain, transversely isotropic biphasic fit; E3, measured IN COMPRESSION
+    along the growth axis. n=20 paired
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: '+/- 0.11 SD. Chondroepiphysis is 1.07 +/- 0.27, so growth plate is half as stiff and
+    twice as permeable. Poisson ratio nu31 = 0 for both tissues; nu21 = 0.30 +/- 0.20.'
+- parameter: transverse Young's modulus, growth plate
+  value: '4.55'
+  unit: MPa
+  conditions: same specimens; E1, measured IN TENSION in the transverse plane
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: '+/- 1.21 SD; chondroepiphysis 10.63 +/- 2.72.'
+- parameter: transverse-to-axial modulus ratio, growth plate
+  value: '9.7'
+  unit: ratio
+  conditions: E1/E3 = 4.55/0.47 for bovine growth plate; the same ratio in chondroepiphysis is 9.9
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: 'DERIVED BY THIS ATLAS from the two reported moduli; the paper does not state a ratio. THE
+    LOADING MODES DIFFER AND THAT MUST NOT BE GLOSSED: E1 is a TENSILE modulus in the transverse plane
+    and E3 a COMPRESSIVE modulus along the axis, so this is not one property measured in two directions.
+    It is nevertheless the comparison the shape hypothesis needs, because those are precisely the modes a
+    swelling cell imposes - expanding radially loads the surrounding matrix in circumferential TENSION,
+    expanding axially loads the matrix above and below in COMPRESSION. A cell therefore meets roughly ten
+    times more resistance going sideways than going up. Whether the ratio CHANGES with growth rate, age
+    or load is unmeasured; cohen1998 and sergerie2009 each characterise a single state.'
+- parameter: permeability, axial vs radial
+  value: 3.4 vs 5.0
+  unit: 1e-15 m^4/N.s
+  conditions: bovine growth plate; axial k3 from confined compression, radial k1 from the unconfined fit
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: +/- 1.6 and +/- 1.8. Similar magnitude in both directions, so the anisotropy is in the
+    solid matrix stiffness and not in fluid transport.
+- parameter: terminal hypertrophic cell height under hormone rescue
+  value: 19.5 / 27.3 / 26.5 / 29.8
+  unit: um
+  conditions: hypophysectomised rat proximal tibia after 8 d infusion - NaCl / IGF-I / GH / normal
+    littermate. Proliferative phase 6.8 / 9.8 / 9.9 / 8.9; resting phase 3.9 / 3.9 / 4.7 / 5.9
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: 'NaCl significantly below the other three at proliferative and hypertrophic phases; the
+    other three not significantly different from each other. Resting phase showed no significant
+    difference between any group.'
+- parameter: terminal hypertrophic cell volume under hormone rescue
+  value: 6370 / 9890 / 11140 / 10246
+  unit: um^3
+  conditions: same animals and groups as the height row - NaCl / IGF-I / GH / normal
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: NaCl significantly below the other three; the other three not different from each other.
+    Net matrix production per cell did not differ by group OR by phase.
+- parameter: implied aspect ratio of the terminal cell under hormone rescue
+  value: 0.96 / 1.27 / 1.15 / 1.42
+  unit: dimensionless
+  conditions: NaCl / IGF-I / GH / normal, from the reported heights and volumes assuming a right circular
+    cylinder
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: 'DERIVED BY THIS ATLAS under a geometric assumption the paper does not make - it reports
+    height and volume and never diameter, so the diameter is back-calculated as 2*sqrt(V/pi*h). Read with
+    that caveat, the pattern is that HORMONES RESTORE SIZE MORE COMPLETELY THAN SHAPE: IGF-I and GH bring
+    volume to or above normal (9,890 and 11,140 against 10,246) while the aspect ratio reaches only 1.27
+    and 1.15 against a normal 1.42. This is consistent with the authors'' own statement that cell
+    productivity did not reach normal with either agent, and it suggests size and shape are separately
+    regulated axes - which is the whole premise of this node. It is a derived quantity resting on one
+    geometric assumption and should not be cited as a measurement.'
 - parameter: axial vs transverse compliance of growth plate matrix
   value: ~10-fold more compliant axially
   unit: ratio
