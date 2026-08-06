@@ -8949,13 +8949,49 @@
     "reliability_class": "single_source_with_uncertainty"
    },
    {
+    "parameter": "transverse-to-axial modulus ratio across developmental stage",
+    "value": "11.0, 10.3, 0.72, 0.80, 1.15",
+    "unit": "ratio",
+    "conditions": "porcine distal ulnar growth plate at newborn (n=24), 4 weeks group A (n=11), 4 weeks group B (n=15), 8 weeks (n=28) and 18 weeks (n=14); E1/E3 from a transversely isotropic biphasic fit using the cohen1998 model",
+    "species": "porcine",
+    "source_ref": "wosu2012",
+    "uncertainty": "DERIVED BY THIS ATLAS as E1/E3 from the paper's Table 2; the paper reports the moduli separately and never the ratio. THE ANISOTROPY COLLAPSES ROUGHLY TEN-FOLD ACROSS DEVELOPMENT, from strongly transversely stiff at birth to essentially isotropic by 8-18 weeks, over exactly the period in which porcine growth rate falls. The newborn value of 11.0 independently reproduces cohen1998's 9.7 in newborn bovine. THIS IS A CORRELATION ACROSS AGES, NOT AN INTERVENTION - plate thickness falls 3508 to 1800 um over the same period and many things fall with age. The 4-week animals split into two subgroups whose E1 differs 24-fold (9.74 vs 0.41 MPa) at the same nominal age, which the authors attribute to rapid developmental change at 3-4 weeks and which means developmental stage is not cleanly defined there.",
+    "node_id": "terminal_cell_shape_modulation",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "out-of-plane and transverse moduli by developmental stage",
+    "value": "E3 0.52/0.95/0.57/0.49/0.34; E1 5.72/9.74/0.41/0.39/0.39",
+    "unit": "MPa",
+    "conditions": "porcine distal ulna at newborn, 4W(a), 4W(b), 8W, 18W; mean with 95% CI in the source",
+    "species": "porcine",
+    "source_ref": "wosu2012",
+    "uncertainty": "95% CIs 0.05-0.14 on E3 and 0.06-2.11 on E1. A second fitting method gives somewhat different E1 (6.71 newborn, 0.52 at 18W) but the same direction and the same collapse.",
+    "node_id": "terminal_cell_shape_modulation",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "human terminal hypertrophic cell HEIGHT and WIDTH in the same cells",
+    "value": "height 8.5 vs 12.8; width 14.9 vs 15.0",
+    "unit": "um",
+    "conditions": "human vertebral body physis; 13 severe-scoliosis patients sampled at the convex-side apex (mean curve 67 +/- 23 degrees) against 5 age-matched autopsy controls without scoliosis. Hypertrophic zone height 152 +/- 34 vs 180 +/- 42 um (p=0.21, ns)",
+    "species": "human",
+    "source_ref": "bylskiaustrow2018",
+    "uncertainty": "THE FIRST HUMAN MEASUREMENT OF CELL HEIGHT AND WIDTH IN THE SAME CELLS. Height differs by 34% (p<0.0005) while WIDTH IS ESSENTIALLY IDENTICAL (14.9 +/- 1.5 vs 15.0 +/- 2.5, ns). Implied aspect ratios 0.57 and 0.85, a 33% difference. Caveats that matter: this is VERTEBRAL not long-bone physis; the scoliosis group is heterogeneous by aetiology (idiopathic, congenital, neurofibromatosis, neuromuscular, Marfan); controls are n=5 autopsy specimens; and no growth rate was measured in either group, so this shows height varying where width does not, NOT height tracking growth.",
+    "node_id": "terminal_cell_shape_modulation",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
     "parameter": "human terminal cell height and diameter",
     "value": "not measured together",
     "unit": "none",
     "conditions": "human growth plate, any site, any age",
     "species": "human",
     "source_ref": "thurston1985",
-    "uncertainty": "RECORDED AS AN ABSENCE. thurston1985 and kember1976 both report a human hypertrophic cell HEIGHT (and disagree, 20.5 vs 33 um, contradiction C-L1-07). Neither reports the transverse diameter in the same cells, so no human aspect ratio exists and the one quantity hunziker1989 identifies as the carrier of growth-rate change has never been measured in a human.",
+    "uncertainty": "PARTLY SUPERSEDED 2026-08-06 by bylskiaustrow2018, which measures both in human VERTEBRAL physis. For LONG BONE the absence stands. RECORDED AS AN ABSENCE. thurston1985 and kember1976 both report a human hypertrophic cell HEIGHT (and disagree, 20.5 vs 33 um, contradiction C-L1-07). Neither reports the transverse diameter in the same cells, so no human aspect ratio exists and the one quantity hunziker1989 identifies as the carrier of growth-rate change has never been measured in a human.",
     "node_id": "terminal_cell_shape_modulation",
     "layer": "L1",
     "reliability_class": "spread_documented"
@@ -20658,6 +20694,7 @@
   "across all division elongation enlargement four matrix partition plates",
   "across animal elongation four growth one plates range rates",
   "across arms four height mean velocity year",
+  "across axial developmental modulus ratio stage transverse",
   "across axis donor donor five fold fraction more probe sets than varying zonal",
   "across baseline growth longitudinal range rate sites species studied unloaded",
   "across cell compared condensation different elements final length measurements number published skeletal volume",
@@ -21396,6 +21433,7 @@
   "cd105 cd200 cells mcherry mssc phenotype pthrp",
   "cdc correction factor fitting heights matched multiplicative percentile sex",
   "cdc guideline range sds standards target under",
+  "cell cells height human hypertrophic same terminal width",
   "cell chondro fraction junction osseous removed volume",
   "cell chondro junction osseous removed share volume",
   "cell chondrocyte cycle proliferating time",
@@ -21726,6 +21764,7 @@
   "descent design height heritability identity sibling",
   "design height heritability ibd sibling",
   "developmental differentially methylated regions",
+  "developmental moduli out plane stage transverse",
   "dexamethasone dose local rate used",
   "dexamethasone growth infusion local proximal rate reduction tibial",
   "diameter fibrils heterotypic reconstituted",
@@ -21976,7 +22015,7 @@
   "secretion total"
  ],
  "reliability_classes": {
-  "single_source_with_uncertainty": 1279,
+  "single_source_with_uncertainty": 1282,
   "spread_documented": 59,
   "unverified": 40,
   "range_value": 131,

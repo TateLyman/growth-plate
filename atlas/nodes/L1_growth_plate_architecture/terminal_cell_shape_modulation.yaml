@@ -276,20 +276,60 @@ quantitative:
     throughout, and suggest the allometric route is chosen TO PREVENT EXPANSION OF THE BONE CIRCUMFERENCE
     DURING ELONGATION - which is the anisotropic-constraint argument stated from the cell''s side rather
     than the matrix''s. Measured across the differentiation axis, not across growth rates.'
+- parameter: transverse-to-axial modulus ratio across developmental stage
+  value: 11.0, 10.3, 0.72, 0.80, 1.15
+  unit: ratio
+  conditions: porcine distal ulnar growth plate at newborn (n=24), 4 weeks group A (n=11), 4 weeks group
+    B (n=15), 8 weeks (n=28) and 18 weeks (n=14); E1/E3 from a transversely isotropic biphasic fit using
+    the cohen1998 model
+  species: porcine
+  source_ref: wosu2012
+  uncertainty: 'DERIVED BY THIS ATLAS as E1/E3 from the paper''s Table 2; the paper reports the moduli
+    separately and never the ratio. THE ANISOTROPY COLLAPSES ROUGHLY TEN-FOLD ACROSS DEVELOPMENT, from
+    strongly transversely stiff at birth to essentially isotropic by 8-18 weeks, over exactly the period
+    in which porcine growth rate falls. The newborn value of 11.0 independently reproduces cohen1998''s
+    9.7 in newborn bovine. THIS IS A CORRELATION ACROSS AGES, NOT AN INTERVENTION - plate thickness falls
+    3508 to 1800 um over the same period and many things fall with age. The 4-week animals split into two
+    subgroups whose E1 differs 24-fold (9.74 vs 0.41 MPa) at the same nominal age, which the authors
+    attribute to rapid developmental change at 3-4 weeks and which means developmental stage is not
+    cleanly defined there.'
+- parameter: out-of-plane and transverse moduli by developmental stage
+  value: 'E3 0.52/0.95/0.57/0.49/0.34; E1 5.72/9.74/0.41/0.39/0.39'
+  unit: MPa
+  conditions: porcine distal ulna at newborn, 4W(a), 4W(b), 8W, 18W; mean with 95% CI in the source
+  species: porcine
+  source_ref: wosu2012
+  uncertainty: 95% CIs 0.05-0.14 on E3 and 0.06-2.11 on E1. A second fitting method gives somewhat
+    different E1 (6.71 newborn, 0.52 at 18W) but the same direction and the same collapse.
+- parameter: human terminal hypertrophic cell HEIGHT and WIDTH in the same cells
+  value: height 8.5 vs 12.8; width 14.9 vs 15.0
+  unit: um
+  conditions: human vertebral body physis; 13 severe-scoliosis patients sampled at the convex-side apex
+    (mean curve 67 +/- 23 degrees) against 5 age-matched autopsy controls without scoliosis. Hypertrophic
+    zone height 152 +/- 34 vs 180 +/- 42 um (p=0.21, ns)
+  species: human
+  source_ref: bylskiaustrow2018
+  uncertainty: 'THE FIRST HUMAN MEASUREMENT OF CELL HEIGHT AND WIDTH IN THE SAME CELLS. Height differs by
+    34% (p<0.0005) while WIDTH IS ESSENTIALLY IDENTICAL (14.9 +/- 1.5 vs 15.0 +/- 2.5, ns). Implied
+    aspect ratios 0.57 and 0.85, a 33% difference. Caveats that matter: this is VERTEBRAL not long-bone
+    physis; the scoliosis group is heterogeneous by aetiology (idiopathic, congenital, neurofibromatosis,
+    neuromuscular, Marfan); controls are n=5 autopsy specimens; and no growth rate was measured in either
+    group, so this shows height varying where width does not, NOT height tracking growth.'
 - parameter: human terminal cell height and diameter
   value: not measured together
   unit: none
   conditions: human growth plate, any site, any age
   species: human
   source_ref: thurston1985
-  uncertainty: 'RECORDED AS AN ABSENCE. thurston1985 and kember1976 both report a human hypertrophic cell
+  uncertainty: 'PARTLY SUPERSEDED 2026-08-06 by bylskiaustrow2018, which measures both in human VERTEBRAL
+    physis. For LONG BONE the absence stands. RECORDED AS AN ABSENCE. thurston1985 and kember1976 both report a human hypertrophic cell
     HEIGHT (and disagree, 20.5 vs 33 um, contradiction C-L1-07). Neither reports the transverse diameter
     in the same cells, so no human aspect ratio exists and the one quantity hunziker1989 identifies as
     the carrier of growth-rate change has never been measured in a human.'
 localization:
 - 'rat proximal tibia hypertrophic zone: height, diameter and volume measured separately (hunziker1989)'
 - 'human: height measured, diameter never measured, aspect ratio unknown'
-human_evidence: absent
+human_evidence: indirect
 human_evidence_note: No human study reports terminal hypertrophic cell height and transverse diameter in
   the same specimen, so the human aspect ratio is unknown and its relationship to human growth rate is
   untested. The entire result rests on one rat study, which no one has repeated in any species.
@@ -299,6 +339,7 @@ species_basis:
 - bovine
 - rabbit
 - porcine
+- human
 translation_risk: high
 translation_risk_reason: A single unreplicated rat study is the whole evidential basis. The human plate
   differs from rat in cycle time by roughly an order of magnitude and carries a large inert zone rat lacks,
@@ -313,6 +354,20 @@ key_refs:
   one_line_finding: A 20% rise in rat growth rate is carried by a 23% rise in terminal cell height with
     diameter falling 14% and volume falling 13%; matrix per cell, turnover and hypertrophic-phase duration
     unchanged.
+- ref_id: wosu2012
+  pmid: '21559968'
+  first_author: Wosu R
+  year: 2012
+  type: primary
+  one_line_finding: Porcine growth plate transverse-to-axial modulus ratio collapses from about 11 at
+    birth to about 1 by 8-18 weeks, i.e. the tissue becomes isotropic as growth slows.
+- ref_id: bylskiaustrow2018
+  pmid: '29573446'
+  first_author: Bylski-Austrow DI
+  year: 2018
+  type: primary
+  one_line_finding: First human measurement of hypertrophic cell height and width together - height
+    differs 34% between scoliosis and control vertebral physes while width is identical.
 - ref_id: rubin2021
   pmid: '34508093'
   first_author: Rubin S

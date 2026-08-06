@@ -9462,14 +9462,18 @@ gaps:
     pericellular matrix and a lattice of longitudinal septa that could in principle impose the anisotropy: perlecan
     is required for the pericellular matrix and for column formation (costell1999, arikawahirasaw2001), integrin
     beta1 is required for chondrocyte rotation and column formation (aszodi2003, greer2024), and cytoskeletal
-    tension is required for rotation (greer2024).'
-  what_is_missing: 'Everything causal. No experiment has manipulated pericellular matrix stiffness, septal anisotropy,
-    cytoskeletal tension or cell-volume regulation and then measured terminal cell HEIGHT AND DIAMETER SEPARATELY
-    together with bone elongation in the same animal. The atlas holds no node with a signed edge into cell height
-    or aspect ratio at all - every shape-adjacent route (pericellular_matrix, cartilage_osmotic_swelling) terminates
-    in hypertrophic_volume_increase and both are speculative and traversal-unusable. In human tissue the aspect
-    ratio has never been measured: two studies report a height and disagree by 61% (C-L1-07) and neither reports
-    the transverse diameter of the same cells. hunziker1989 itself has never been replicated in any species.'
+    tension is required for rotation (greer2024). PARTLY ANSWERED 2026-08-06: the constraint anisotropy is measured
+    and it VARIES. Transverse-to-axial modulus ratio is 9.7 in newborn bovine (cohen1998) and collapses from 11.0
+    at birth to 0.72-1.15 by 4-18 weeks in porcine distal ulna (wosu2012), i.e. the tissue becomes isotropic over
+    the period growth rate falls. And in human vertebral physis, hypertrophic cell WIDTH is invariant (14.9 vs
+    15.0 um, ns) while HEIGHT differs 34% (8.5 vs 12.8 um, p<0.0005) between scoliosis and controls (bylskiaustrow2018).'
+  what_is_missing: 'The causal step. Every measurement above is a correlation across ages, species or disease
+    states; nobody has manipulated the anisotropy and measured the resulting cell dimensions and bone length.
+    And rubin2021 finds cell VOLUME a better predictor of bone growth than cell HEIGHT in a 10^5-cell 3D dataset
+    - a BETWEEN-plate comparison, where hunziker1989''s dissociation is WITHIN a plate across ages. The single
+    decisive experiment is now cheap and needs no new method: apply rubin2021''s published 3D MAPs pipeline to
+    hunziker1989''s design - one plate, two ages spanning a growth-rate change, measuring height, width and volume
+    in the same cells. See contradiction C-L1-08.'
   nearest_evidence:
   - hunziker1989
   - greer2024

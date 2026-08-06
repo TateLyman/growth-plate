@@ -991,3 +991,93 @@ the one most likely to be wrong.**
 | **PMID 29573446** — Bylski-Austrow 2018, scoliosis growth-plate histomorphometry | reports hypertrophic cell height **and** width, in **human** tissue |
 | **PMID 3761364** — Cruz-Orive & Hunziker 1986, *"Stereology for anisotropic cells"* | the method under every Hunziker number; would show whether the 1989 height/diameter estimates are as robust as the volume ones |
 | **PMID 3944163** — Buckwalter 1986, *"Morphometric analysis of chondrocyte hypertrophy"* | an independent morphometry of the same question, pre-dating both camps |
+
+---
+
+# ROUND 10 — two of the three land, and both cut FOR the mechanism
+
+`cruzorive1986` obtained (the anisotropic-cell stereology method under every Hunziker
+number). `buckwalter1986` not found. The other two are the important ones.
+
+## 1. `wosu2012` — the anisotropy DOES change, and by ten-fold
+
+I wrote in round 7 that nobody had measured whether the axial/transverse ratio changes
+with growth rate or age. **It was measured, in the same tissue and with `cohen1998`'s own
+model.** Porcine distal ulna, four developmental stages, E1/E3 derived here from the
+paper's Table 2:
+
+| stage | n | plate thickness | E₃ axial | E₁ transverse | **E₁/E₃** |
+|---|---:|---:|---:|---:|---:|
+| **newborn** | 24 | 3508 µm | 0.52 | 5.72 | **11.0** |
+| 4 wk (group A) | 11 | 2523 µm | 0.95 | 9.74 | **10.3** |
+| 4 wk (group B) | 15 | 2299 µm | 0.57 | 0.41 | **0.72** |
+| 8 wk | 28 | 2007 µm | 0.49 | 0.39 | **0.80** |
+| **18 wk** | 14 | 1800 µm | 0.34 | 0.39 | **1.15** |
+
+**The tissue goes from strongly transversely stiff to essentially isotropic** across
+exactly the period in which porcine growth rate falls. The newborn value of 11.0
+independently reproduces `cohen1998`'s 9.7 in newborn bovine.
+
+That is the prediction the anisotropic-constraint account makes: the constraint that
+channels expansion axially is strongest when growth is fastest and disappears as growth
+slows.
+
+**Three things keep this honest.** It is a correlation across ages, not an intervention —
+plate thickness halves over the same period and everything falls with age. The 4-week
+animals split into two subgroups whose E₁ differs **24-fold at the same nominal age**, so
+"developmental stage" is not cleanly defined there. And the ratio is derived here; the
+paper reports the moduli separately and never computes it.
+
+## 2. `bylskiaustrow2018` — the first human height AND width, and width does not move
+
+Human **vertebral** physis, 13 severe-scoliosis patients (convex-side apex, mean curve
+67 ± 23°) vs 5 age-matched autopsy controls:
+
+| | scoliosis | control | p |
+|---|---:|---:|---|
+| hypertrophic zone height | 152 ± 34 µm | 180 ± 42 µm | 0.21 (ns) |
+| **cell height** | **8.5 ± 1.1 µm** | **12.8 ± 1.2 µm** | **< 0.0005** |
+| **cell width** | **14.9 ± 1.5 µm** | **15.0 ± 2.5 µm** | **ns** |
+| *implied aspect ratio* | *0.57* | *0.85* | — |
+
+**Height differs by 34 %. Width differs by 0.7 %.** This is the first time anyone has
+measured both in human tissue, and the answer is that **width is the invariant and height
+is the variable.**
+
+Caveats: vertebral not long-bone physis; the scoliosis group is heterogeneous by
+aetiology; controls are n = 5 autopsy; and **no growth rate was measured in either group**,
+so this shows height varying where width does not — it does not show height tracking
+growth.
+
+## 3. What this does to the Rubin contradiction
+
+If **width is fixed**, then within a plate volume ∝ height, and volume and height are the
+*same variable* — they cannot be distinguished as predictors. `rubin2021` found volume the
+better predictor by comparing **different plates**, where width is free to differ.
+
+So the reconciliation sharpens: **within a plate, height and volume are one quantity;
+between plates, they separate and volume wins.** That is consistent with every dataset
+here, and it means the Hunziker/Rubin disagreement is not about biology but about which
+contrast was run.
+
+It does not rescue everything. `hunziker1989` reports width *falling* 14 %, so width is
+not always invariant — different species, different bone, different perturbation. The
+clean statement is narrower: **nobody has shown height and volume dissociating in the same
+plate with a modern method**, and until they do, `terminal_cell_shape_modulation` stays at
+**D**.
+
+## 4. Standing after ten rounds
+
+| | |
+|---|---|
+| anisotropic constraint exists | **measured twice** — 9.7× bovine (`cohen1998`), 11.0× porcine newborn (`wosu2012`) |
+| it varies with developmental stage | **yes, ~10-fold collapse**, tracking growth rate (`wosu2012`) |
+| human cell width vs height | **width invariant, height varies 34 %** (`bylskiaustrow2018`) |
+| height vs volume as the causal variable | **unresolved** — C-L1-08, needs one within-plate 3D experiment |
+| compounds | 2 of 7 standing, both grade C |
+
+The mechanism is now better evidenced than the phenomenon it was invoked to explain.
+Three independent measurements say the growth plate is a strongly anisotropic constraint
+that relaxes as growth slows, and one human dataset says cell width is fixed while height
+moves. What is still missing is the single experiment that would tie them to growth rate
+directly.
