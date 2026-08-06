@@ -6,29 +6,35 @@ aliases:
 type: tissue_structure
 layer: L5
 stub: false
-summary: 'There is no single number for growth plate stiffness, and the published values span three orders
-  of magnitude because the methods measure different things at different length scales on differently
-  prepared tissue. Tissue-scale hydrated measurements give hundreds of kilopascals to low megapascals:
-  microindentation of 9-week rabbit proximal tibial physis gives a Hertz reduced modulus of 380-690 kPa;
-  AFM microindentation of rabbit cranial base growth plate gives 0.57 +/- 0.05 MPa in the reserve zone
-  rising to 1.41 +/- 0.19 MPa in the mineralizing zone. Nanoscale sharp-tip AFM on human growth plate
-  cryosections gives 130.7 +/- 36.6 MPa in the resting zone and 416.2 +/- 107.2 MPa in the hypertrophic
-  zone - two to three orders of magnitude higher, because a 9 nm tip loaded to 6 uN probes the local mineralised/fibrillar
-  matrix rather than the poroelastic tissue, and because the interstitial fluid cannot redistribute at
-  that scale. Worse, the DIRECTION of the gradient is not agreed. Porcine unconfined compression makes
-  the reserve zone the stiffest zone, with proliferative and hypertrophic zones half as stiff axially.
-  Rabbit microindentation puts the peak in the upper hypertrophic zone. Rabbit cranial base AFM has modulus
-  increasing monotonically from reserve to mineralizing zone. Species, site, age, hydration, loading rate
-  and constitutive model all differ between these, and none of them is a human weight-bearing physis measured
-  hydrated at tissue scale. The growth plate is also mechanically anisotropic - longitudinal indentation
-  of the rabbit reserve zone gives 0.77 +/- 0.12 MPa versus 0.57 MPa transversely - and permeability differs
-  threefold between zones, so a scalar modulus is an incomplete description in any case.'
+summary: 'There is no single number for growth plate stiffness, and the published values span three orders of magnitude
+  because the methods measure different things at different length scales on differently prepared tissue. Tissue-scale
+  hydrated measurements give hundreds of kilopascals to low megapascals: microindentation of 9-week rabbit proximal
+  tibial physis gives a Hertz reduced modulus of 380-690 kPa; AFM microindentation of rabbit cranial base growth plate
+  gives 0.57 +/- 0.05 MPa in the reserve zone rising to 1.41 +/- 0.19 MPa in the mineralizing zone. Nanoscale sharp-tip
+  AFM on human growth plate cryosections gives 130.7 +/- 36.6 MPa in the resting zone and 416.2 +/- 107.2 MPa in the
+  hypertrophic zone - two to three orders of magnitude higher, because a 9 nm tip loaded to 6 uN probes the local
+  mineralised/fibrillar matrix rather than the poroelastic tissue, and because the interstitial fluid cannot redistribute
+  at that scale. Worse, the DIRECTION of the gradient is not agreed. Porcine unconfined compression makes the reserve
+  zone the stiffest zone, with proliferative and hypertrophic zones half as stiff axially. Rabbit microindentation
+  puts the peak in the upper hypertrophic zone. Rabbit cranial base AFM has modulus increasing monotonically from
+  reserve to mineralizing zone. Species, site, age, hydration, loading rate and constitutive model all differ between
+  these, and none of them is a human weight-bearing physis measured hydrated at tissue scale. The growth plate is
+  also mechanically anisotropic - longitudinal indentation of the rabbit reserve zone gives 0.77 +/- 0.12 MPa versus
+  0.57 MPa transversely - and permeability differs threefold between zones, so a scalar modulus is an incomplete description
+  in any case. LINKED 2026-08-06 to gap g_l1arch_018: this node is the enzymatic determinant in a five-step chain
+  that would make tissue mechanical ANISOTROPY the converter from isotropic chondrocyte enlargement into axial bone
+  length. The chain is (i) the plate is ~10x more compliant along the growth axis than transversely at birth (cohen1998,
+  wosu2012); (ii) that ratio collapses to ~1 as growth slows (wosu2012); (iii) chondrocyte enlargement is near-isotropic,
+  per-cell allometric slopes 0.345/0.373/0.351 against an isometric 1/3 over 29,162 cells (re-analysis of rubin2021
+  by this atlas, grade D); (iv) the axis pointing along the bone is the cell''s SHORT one, and it thickens fastest
+  with volume; (v) in classical homocystinuria, interference with collagen and fibrillin cross-linking accompanies
+  TALL STATURE in humans. The missing link is between (v) and (i) - nobody has measured cross-link density and mechanical
+  anisotropy in the same growth plate in any species, which is why this node is graded E.'
 quantitative:
 - parameter: Hertz reduced modulus, growth plate, microindentation
   value: 380-690
   unit: kPa
-  conditions: 9-week New Zealand White rabbit proximal tibia, n=15, hydrated, peak in upper hypertrophic
-    zone
+  conditions: 9-week New Zealand White rabbit proximal tibia, n=15, hydrated, peak in upper hypertrophic zone
   species: rabbit
   source_ref: eckstein2022
   uncertainty: range of zonal means; neighbouring zones differ at p<0.05
@@ -56,8 +62,8 @@ quantitative:
 - parameter: Elastic modulus, resting zone, sharp-tip AFM on human growth plate
   value: '130.70'
   unit: MPa
-  conditions: 150 um hydrated cryosections in PBS, 9 nm tip radius, 26 N/m cantilever, 6 uN peak force,
-    Hertz conical fit; phalangeal (0-5 y) and tibial (6-14 y) growth plates, 10 donors, n=3 per interface
+  conditions: 150 um hydrated cryosections in PBS, 9 nm tip radius, 26 N/m cantilever, 6 uN peak force, Hertz conical
+    fit; phalangeal (0-5 y) and tibial (6-14 y) growth plates, 10 donors, n=3 per interface
   species: human
   source_ref: xie2025
   uncertainty: SD 36.56
@@ -71,8 +77,8 @@ quantitative:
 - parameter: Axial stiffness of proliferative and hypertrophic zones relative to reserve zone
   value: '0.5'
   unit: fold (PZ,HZ relative to RZ)
-  conditions: newborn porcine distal ulna, unconfined compression stress relaxation, transversely isotropic
-    biphasic model
+  conditions: newborn porcine distal ulna, unconfined compression stress relaxation, transversely isotropic biphasic
+    model
   species: porcine
   source_ref: sergerie2009
   uncertainty: absolute moduli not available from the abstract
@@ -93,8 +99,7 @@ quantitative:
 - parameter: Human capital femoral physis tensile strength relative to bovine proximal tibial physis
   value: ~0.5
   unit: fold
-  conditions: 8 specimens from 2 cerebral palsy patients vs bovine controls; human specimens twice as
-    thick
+  conditions: 8 specimens from 2 cerebral palsy patients vs bovine controls; human specimens twice as thick
   species: human
   source_ref: williams2001
   uncertainty: n=2 patients; absolute values not in abstract
@@ -111,17 +116,16 @@ localization:
 - 'porcine distal ulna: reserve zone stiffest (sergerie2009)'
 - 'human phalangeal and tibial growth plate: RZ softer than HZ at nanoscale (xie2025)'
 human_evidence: direct
-human_evidence_note: One study measures modulus directly in human growth plate tissue, but at nanoscale
-  with a sharp tip; no hydrated tissue-scale modulus of a human weight-bearing physis exists.
+human_evidence_note: One study measures modulus directly in human growth plate tissue, but at nanoscale with a sharp
+  tip; no hydrated tissue-scale modulus of a human weight-bearing physis exists.
 species_basis:
 - rabbit
 - porcine
 - bovine
 - human
 translation_risk: high
-translation_risk_reason: The only human numbers were obtained by a method whose values are 200-1000 fold
-  above every animal tissue-scale measurement, so human and animal data cannot currently be reconciled
-  or pooled.
+translation_risk_reason: The only human numbers were obtained by a method whose values are 200-1000 fold above every
+  animal tissue-scale measurement, so human and animal data cannot currently be reconciled or pooled.
 confidence: D
 key_refs:
 - ref_id: eckstein2022
@@ -129,37 +133,38 @@ key_refs:
   first_author: Eckstein KN
   year: 2022
   type: primary
-  one_line_finding: 'Microindentation of 9-week rabbit proximal tibial growth plate: Hertz reduced modulus
-    380-690 kPa with a PEAK in the upper hypertrophic zone'
+  one_line_finding: 'Microindentation of 9-week rabbit proximal tibial growth plate: Hertz reduced modulus 380-690
+    kPa with a PEAK in the upper hypertrophic zone'
 - ref_id: radhakrishnan2004
   pmid: '15008376'
   first_author: Radhakrishnan P
   year: 2004
   type: primary
-  one_line_finding: 'AFM microindentation of rabbit cranial base growth plate: modulus rises 0.57 -> 1.41
-    MPa from reserve to mineralizing zone'
+  one_line_finding: 'AFM microindentation of rabbit cranial base growth plate: modulus rises 0.57 -> 1.41 MPa from
+    reserve to mineralizing zone'
 - ref_id: sergerie2009
   pmid: '19185303'
   first_author: Sergerie K
   year: 2009
   type: primary_abstract_only
-  one_line_finding: 'Newborn porcine ulnar growth plate: reserve zone is the STIFFEST zone, proliferative
-    and hypertrophic zones half as stiff axially and a third as stiff transversely'
+  one_line_finding: 'Newborn porcine ulnar growth plate: reserve zone is the STIFFEST zone, proliferative and hypertrophic
+    zones half as stiff axially and a third as stiff transversely'
 - ref_id: xie2025
   pmid: '40781081'
   first_author: Xie C
   year: 2025
   type: primary
-  one_line_finding: 'Human growth plate AFM (sharp tip, 26 N/m cantilever, 6 uN, hydrated cryosections):
-    RZ 130.7 +/- 36.6 MPa, HZ 416.2 +/- 107.2 MPa'
+  one_line_finding: 'Human growth plate AFM (sharp tip, 26 N/m cantilever, 6 uN, hydrated cryosections): RZ 130.7
+    +/- 36.6 MPa, HZ 416.2 +/- 107.2 MPa'
 - ref_id: williams2001
   pmid: '11781003'
   first_author: Williams JL
   year: 2001
   type: primary_abstract_only
-  one_line_finding: Bovine physeal tensile strength varies 33% by anatomic site and with strain rate;
-    two human capital femoral physis specimens were twice as thick and about half as strong as bovine
+  one_line_finding: Bovine physeal tensile strength varies 33% by anatomic site and with strain rate; two human capital
+    femoral physis specimens were twice as thick and about half as strong as bovine
 open_questions:
+- g_l1arch_018
 - g_l5matrix_001
 - g_l5matrix_008
 contradicts:
@@ -167,4 +172,4 @@ contradicts:
 - eckstein2022
 - radhakrishnan2004
 - xie2025
-last_verified: '2026-08-05'
+last_verified: '2026-08-06'
