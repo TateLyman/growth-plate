@@ -638,3 +638,113 @@ is built on it.
 | **PMID 20550897** — Darling 2010, chondrocyte pericellular matrix mechanics | the only proposed mechanism for anisotropic constraint; held abstract-level |
 | **PMID 10579729** — Costell 1999, perlecan null | currently `primary_abstract_only`; perlecan is the strongest PCM lead |
 | PCM / collagen VI growth-plate micromechanics (e.g. Prein *et al.*, *Matrix Biol* 2016) | not in the atlas at all |
+
+---
+
+# ROUND 6 — the replication exists, and it is a different lab, a different perturbation and three species
+
+## 1. What was NOT obtained
+
+**`hunziker1987` (PMID 3543020) is still unread.** The supplied PDF is a *Literature
+Abstracts* listing page from *J Pediatr Orthop* 1987 which cites the paper by title and
+journal and carries **no abstract and no body text**. The bibliography records this
+explicitly so the row is not later mistaken for a read source.
+
+## 2. Item #2 found, and it survives
+
+I asked for "any replication of height-and-diameter-measured-separately at two growth
+rates" and could not name one. Two exist, from a different group, and the stronger is
+**interventional** rather than observational.
+
+**`stokes2007` (PMID 17532281)** — rat and cattle vertebrae, rat/cattle/rabbit proximal
+tibia, sustained compression or distraction altering growth rate by up to 53 %:
+
+| predictor of altered growth rate | correlation | regression coefficient |
+|---|---:|---:|
+| **final maximum chondrocytic height** | **0.56** | **1.39** |
+| number of proliferative chondrocytes per unit width | 0.38 | 0.72 |
+
+> *"chondrocytic enlargement made a greater contribution to altered growth rates"*
+
+**This replicates hunziker1989's ranking — cell enlargement over proliferation — in a
+different laboratory, under a mechanical rather than developmental perturbation, across
+three species and two anatomical sites.** It does not replicate the *height/volume
+dissociation*, because Stokes measured only height.
+
+**`stokes2002a` (PMID 15456065)** agrees in direction (mean cell height r = 0.41) and
+**cuts against a pure shape account**: the authors state the percentage changes in
+chondrocyte dimensions were **smaller** than the percentage changes in growth velocity.
+Under mechanical loading, cell height does *not* fully account for the growth change —
+unlike Hunziker's physiological comparison, where +23 % height carried +20 % growth almost
+exactly. Effects were also larger for compression than distraction.
+
+**Verdict: the ranking replicates; the completeness does not.** Cell height is the largest
+single contributor to a growth-rate change in every design tested, and it is sufficient in
+one of them.
+
+## 3. `hunziker1994` — and this one corrects me
+
+Hypophysectomised rats infused with IGF-I or GH, same laboratory, same stereology:
+
+| parameter | untreated | IGF-I | GH |
+|---|---:|---:|---:|
+| stem cell cycle time | 50 d | 15 d | **8 d** |
+| proliferating cell cycle time | 11 d | 4.5 d | **3 d** |
+| **duration of hypertrophic phase** | 6 d | 4 d | **2.8 d** |
+| matrix volume per cell | \-\-\- unchanged in all groups \-\-\- | | |
+| cell height and volume | reduced | **restored** | **restored** |
+
+**In round 4 I recorded hypertrophic-phase duration as "an invariant of the system,
+about two days regardless." That was wrong as a general claim.** It is invariant across
+*physiological* states in normal rats (45–51 h, `hunziker1989`); GH **more than halves it**
+in a hypophysectomised one. Likewise `hunziker1989` found cycle-time changes cancelling
+against growth fraction — under hormone rescue they do not cancel at all.
+
+> **Pharmacology moves parameters that physiological variation holds fixed.**
+
+That is the most encouraging single finding of this whole exercise for the compound
+question, and it cuts directly against the conclusion I was drifting toward — that the
+system is homeostatically defended on every axis. It is not. It is defended against
+*physiological* perturbation.
+
+The honest limit: everything here is **rescue from deficiency**, not augmentation above a
+normal baseline. Cell height was *restored*, never exceeded, and cell productivity did not
+reach normal with either agent. Whether any of these parameters can be pushed above
+normal is untested by this design.
+
+## 4. The shape mechanism now has its first measured numbers
+
+`prein2016`, AFM on mouse growth plate:
+
+| | |
+|---|---|
+| pericellular / territorial matrix | **1.6 ± 0.01 kPa** |
+| interterritorial matrix | **3.6 ± 0.1 kPa** |
+| chondrocyte shape index | **1.57** |
+
+**The cell sits in a soft shell inside a matrix 2.25× stiffer.** That is the mechanical
+architecture an anisotropic-constraint account of shape modulation requires, measured for
+the first time. The gap that remains is exactly specified: this is a *radial* measurement
+in the proliferative zone, and **nobody has measured whether the constraint differs
+axially versus laterally**, which is the only thing that would channel expansion into
+height rather than width.
+
+`costell1999` closes one route: the perlecan null is a **chondrodysplasia** — reduced and
+shortened fibrillar collagen — so perlecan loss shortens bone and is not a height lever.
+`darling2010` is **articular** cartilage, not growth plate, and is recorded as such.
+
+## 5. Where this leaves the compound question
+
+| claim | status after round 6 |
+|---|---|
+| cell height is the dominant contributor to growth-rate change | **replicated**, 3 species, 2 designs, 2 labs |
+| height and volume dissociate | **unreplicated** — only Hunziker measured both |
+| hypertrophic-phase duration is invariant | **false as stated** — GH halves it |
+| the parameters are pharmacologically movable | **yes**, at least from deficiency |
+| what sets the aspect ratio | **still unknown**; PCM/ITM stiffness ratio measured, axial vs lateral anisotropy never measured |
+
+The screenable target is now specific enough to state: **an agent that increases the
+axial-to-lateral stiffness ratio of the constraint around a terminal hypertrophic
+chondrocyte, or that biases its volume increase along the growth axis.** No compound in
+the atlas's L12 layer acts on either, and `g_l1arch_016` records the experiment that would
+test it.

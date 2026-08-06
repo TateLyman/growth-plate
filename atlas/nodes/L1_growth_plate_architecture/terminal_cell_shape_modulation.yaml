@@ -68,6 +68,82 @@ quantitative:
   uncertainty: 'not significantly different in either comparison. Matrix is a large contributor to
     elongation but is not a regulator of it - the authors'' own conclusion is that cartilage matrix
     plays a subordinate role in regulating growth rate.'
+- parameter: contribution of cell height vs proliferative cell number to MECHANICALLY altered growth rate
+  value: 1.39 vs 0.72
+  unit: standardised regression coefficient
+  conditions: rat and cattle vertebral and proximal tibial plates plus rabbit proximal tibia, sustained
+    compression or distraction altering growth rate by up to 53%; final (maximum) chondrocytic height in
+    the hypertrophic zone against number of proliferative chondrocytes per unit width
+  species: multiple
+  source_ref: stokes2007
+  uncertainty: 'overall correlation coefficients 0.38 (proliferative number) and 0.56 (chondrocytic
+    height). REPLICATES hunziker1989''s ranking - cell enlargement contributes more than proliferation -
+    in a DIFFERENT laboratory, a DIFFERENT perturbation (mechanical rather than developmental) and three
+    species. It does not replicate the height/volume dissociation, because only height was measured.'
+- parameter: correlation of mean hypertrophic cell height with mechanically modulated growth rate
+  value: '0.41'
+  unit: Pearson r
+  conditions: rat caudal vertebrae, 60% bodyweight compression (n=3) or distraction (n=4) for four weeks;
+    growth 53% and 110% of control respectively. Hypertrophic zone height r=0.69, regression slope of cell
+    height on position r=0.37
+  species: rat
+  source_ref: stokes2002a
+  uncertainty: 'CUTS AGAINST a pure shape account: the authors state the percentage changes in chondrocyte
+    dimensions were SMALLER than the percentage changes in growth velocity, so under mechanical loading
+    cell height does NOT fully account for the growth change - unlike hunziker1989''s physiological
+    comparison, where +23% height carried +20% growth almost exactly. Effects were also larger for
+    compression than distraction, i.e. asymmetric.'
+- parameter: hypertrophic phase duration under pharmacological rescue
+  value: 6 -> 4 -> 2.8
+  unit: days
+  conditions: hypophysectomised rat, untreated then infused with IGF-I then with GH
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: 'DIRECTLY QUALIFIES the invariance recorded from hunziker1989. Hypertrophic phase duration
+    is constant at 45-51 h across PHYSIOLOGICAL states in normal rats, but GH more than halves it in a
+    hypophysectomised one. Pharmacology moves a parameter physiology holds fixed. Whether the same is
+    possible above a normal baseline, rather than in rescue from deficiency, is untested.'
+- parameter: proliferating and stem cell cycle time under pharmacological rescue
+  value: proliferating 11 -> 4.5 -> 3; stem 50 -> 15 -> 8
+  unit: days
+  conditions: hypophysectomised rat, untreated then IGF-I then GH
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: 'GH shortens the proliferating cell cycle nearly four-fold and the stem cycle six-fold.
+    hunziker1989 found cycle time changes cancelled against growth fraction during PHYSIOLOGICAL
+    acceleration; under hormone rescue they do not cancel. The two regimes use different levers.'
+- parameter: terminal cell height and volume under pharmacological rescue
+  value: restored to physiological values
+  unit: qualitative
+  conditions: hypophysectomised rat; both mean cell volume and cell height were significantly reduced by
+    hypophysectomy at proliferative and hypertrophic stages and restored by either IGF-I or GH
+  species: rat
+  source_ref: hunziker1994
+  uncertainty: 'restored, not exceeded - the experiment cannot say whether either agent pushes height
+    ABOVE normal. Cell productivity (increase in volume, height and matrix per unit time) did NOT reach
+    normal with either agent and was inversely proportional to cycle time. Matrix volume per cell was
+    similar in normal, treated and untreated groups, consistent with hunziker1989.'
+- parameter: chondrocyte shape index, proliferative zone
+  value: '1.57'
+  unit: dimensionless
+  conditions: mouse tibia at E15.5, atomic force microscopy overview images; cells 5-7 um long axis,
+    moderately flattened, oriented along the mediolateral axis before columns have formed
+  species: mouse
+  source_ref: prein2016
+  uncertainty: embryonic and proliferative-zone, so not the terminal hypertrophic cell this node is about;
+    recorded because it is the only directly measured chondrocyte shape index in growth plate cartilage
+- parameter: elastic modulus of pericellular vs interterritorial matrix
+  value: 1.6 vs 3.6
+  unit: kPa
+  conditions: mouse growth plate mid-proliferative zone, AFM; territorial matrix-PCM 1.6 +/- 0.01 kPa,
+    interterritorial matrix 3.6 +/- 0.1 kPa, tracking collagen fibril density
+  species: mouse
+  source_ref: prein2016
+  uncertainty: 'the cell sits in a SOFTER shell inside a STIFFER matrix, a 2.25-fold ratio. This is the
+    mechanical architecture an anisotropic-constraint account of shape modulation requires, measured for
+    the first time - but it is a radial measurement in the proliferative zone, and nobody has measured
+    whether the constraint differs axially versus laterally, which is what would actually channel
+    expansion into height.'
 - parameter: human terminal cell height and diameter
   value: not measured together
   unit: none
@@ -87,6 +163,9 @@ human_evidence_note: No human study reports terminal hypertrophic cell height an
   untested. The entire result rests on one rat study, which no one has repeated in any species.
 species_basis:
 - rat
+- mouse
+- bovine
+- rabbit
 translation_risk: high
 translation_risk_reason: A single unreplicated rat study is the whole evidential basis. The human plate
   differs from rat in cycle time by roughly an order of magnitude and carries a large inert zone rat lacks,
@@ -101,6 +180,29 @@ key_refs:
   one_line_finding: A 20% rise in rat growth rate is carried by a 23% rise in terminal cell height with
     diameter falling 14% and volume falling 13%; matrix per cell, turnover and hypertrophic-phase duration
     unchanged.
+- ref_id: stokes2007
+  pmid: '17532281'
+  first_author: Stokes IA
+  year: 2007
+  type: primary
+  one_line_finding: Under mechanical growth modulation in three species, final hypertrophic cell height
+    contributes more to altered growth rate than proliferative cell number (regression coefficients 1.39
+    vs 0.72), replicating hunziker1989's ranking by a different perturbation.
+- ref_id: hunziker1994
+  pmid: '8132746'
+  first_author: Hunziker EB
+  year: 1994
+  type: primary
+  one_line_finding: IGF-I and GH in hypophysectomised rats shorten stem and proliferating cell cycle times
+    and the hypertrophic phase duration, and restore cell height and volume - so pharmacology moves
+    parameters physiological variation holds constant.
+- ref_id: prein2016
+  pmid: '26454027'
+  first_author: Prein C
+  year: 2016
+  type: primary
+  one_line_finding: AFM of mouse growth plate gives a pericellular matrix modulus of 1.6 kPa inside a 3.6
+    kPa interterritorial matrix, and a chondrocyte shape index of 1.57.
 - ref_id: breur1991
   pmid: '2010838'
   first_author: Breur GJ
