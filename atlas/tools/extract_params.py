@@ -19,14 +19,14 @@ Usage:
   python3 atlas/tools/extract_params.py            # write CSV + report
   python3 atlas/tools/extract_params.py --check    # report only, no write
 """
-import os, sys, csv, glob, re, argparse
+import os, sys, csv, glob, re, argparse, hashlib
 from collections import defaultdict
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "quant", "parameters.csv")
 
-FIELDS = ["param_id", "layer", "node_id", "parameter", "value", "value_min",
+FIELDS = ["param_id", "row_index", "layer", "node_id", "parameter", "value", "value_min",
           "value_max", "unit", "conditions", "species", "site", "age", "sex",
           "source_ref", "uncertainty", "value_unverified", "superseded_model", "notes"]
 
@@ -84,11 +84,20 @@ def main():
             if not isinstance(q, dict):
                 continue
             n += 1
-            pid = f"p{n:05d}"
+            # STABLE, CONTENT-ADDRESSED id. It used to be f"p{n:05d}" - a running counter
+            # over sorted node files - so adding one quantitative row to any node shifted
+            # every id after it. On 2026-08-05 a regeneration (820 -> 1520 rows) silently
+            # repointed all 41 ids that flow_model.py depends on, and the model went on
+            # producing numbers from the wrong rows. A positional identifier is not an
+            # identifier. This hash changes only if the measurement itself changes.
+            pid = "p_" + hashlib.sha1("|".join([
+                str(node.get("id")), str(q.get("parameter")), str(q.get("unit")),
+                str(q.get("source_ref")), str(q.get("value")),
+                str(q.get("conditions"))]).encode()).hexdigest()[:10]
             point, lo, hi = num(q.get("value"))
             unit = str(q.get("unit") or "").strip()
             row = {
-                "param_id": pid, "layer": node.get("layer"),
+                "param_id": pid, "row_index": f"p{n:05d}", "layer": node.get("layer"),
                 "node_id": node.get("id"), "parameter": q.get("parameter"),
                 "value": q.get("value"), "value_min": lo, "value_max": hi,
                 "unit": unit, "conditions": q.get("conditions"),
