@@ -6,27 +6,42 @@ aliases:
 type: cell_type
 layer: L1
 stub: false
-summary: 'Resting chondrocytes are small, rounded cells lying singly or in pairs in abundant matrix at
-  the epiphyseal end of the plate. In mouse they include a PTHrP-expressing subpopulation with formal
-  skeletal stem cell properties: these cells self-renew and generate the columnar clones of the proliferative
-  zone, but they acquire that behaviour only after the secondary ossification centre forms, which means
-  the stem compartment is a postnatal acquisition rather than a property of the embryonic plate. The label
-  ''resting'' overstates their quiescence. A systematic review of the primary data finds that reported
-  labelling indices and even the operational definition of quiescence differ widely between studies, so
-  the zone contains cycling cells at rates that are not agreed. A separate mouse population at the plate
-  periphery, the borderline chondrocytes, leaves the cartilage altogether and becomes marrow stroma and
-  osteoblasts. In human tissue none of this has been demonstrated: the human resting zone is described
-  morphologically, and the only human proliferation data come from an in vitro thymidine labelling study
-  in which two of four specimens produced no labelled cells anywhere in the plate. That study also reports
-  the one direct observation on human resting-zone proliferation that exists: in the two specimens that
-  did label, no labelled cells were found anywhere in the wide, low-density epiphyseal region the authors
-  call the inert zone - while in all five pig plates processed identically, labelled cells were present
-  in the inert zone. If both observations are taken at face value the human reserve compartment is
-  quieter than the pig''s, not merely quieter than the columnar zone, and the difference is a species
-  difference in the same experiment rather than across studies. The human inert zone is also large:
-  700-1000 um in the distal femur and 1000 um in the metatarsals, wider than in pig and far wider than
-  in rodents.'
+summary: 'Resting chondrocytes are small, rounded cells lying singly or in pairs in abundant matrix at the epiphyseal
+  end of the plate. In mouse they include a PTHrP-expressing subpopulation with formal skeletal stem cell properties:
+  these cells self-renew and generate the columnar clones of the proliferative zone, but they acquire that behaviour
+  only after the secondary ossification centre forms, which means the stem compartment is a postnatal acquisition
+  rather than a property of the embryonic plate. The label ''resting'' overstates their quiescence. A systematic review
+  of the primary data finds that reported labelling indices and even the operational definition of quiescence differ
+  widely between studies, so the zone contains cycling cells at rates that are not agreed. A separate mouse population
+  at the plate periphery, the borderline chondrocytes, leaves the cartilage altogether and becomes marrow stroma and
+  osteoblasts. In human tissue none of this has been demonstrated: the human resting zone is described morphologically,
+  and the only human proliferation data come from an in vitro thymidine labelling study in which two of four specimens
+  produced no labelled cells anywhere in the plate. That study also reports the one direct observation on human resting-zone
+  proliferation that exists: in the two specimens that did label, no labelled cells were found anywhere in the wide,
+  low-density epiphyseal region the authors call the inert zone - while in all five pig plates processed identically,
+  labelled cells were present in the inert zone. If both observations are taken at face value the human reserve compartment
+  is quieter than the pig''s, not merely quieter than the columnar zone, and the difference is a species difference
+  in the same experiment rather than across studies. The human inert zone is also large: 700-1000 um in the distal
+  femur and 1000 um in the metatarsals, wider than in pig and far wider than in rodents.'
 quantitative:
+- parameter: ARE HUMAN RESTING ZONE CELLS ACTUALLY QUIESCENT - measured in human tissue
+  value: yes, a subset is functionally quiescent in vivo and can be released from it
+  unit: qualitative, four independent readouts
+  conditions: 8 growth plate biopsies from healthy adolescents aged 12 y 2 m to 14 y 6 m, Tanner stage 2-4, distal
+    femur, taken at epiphysiodesis for idiopathic tall stature. Visium and Visium HD spatial transcriptomics by the
+    RNA-Rescue protocol, plus electron microscopy, RNAscope and ex vivo sequential thymidine-analogue labelling of
+    intact biopsies
+  species: human
+  source_ref: avijgan2026br
+  uncertainty: 'THE FOUR READOUTS ARE THE STRENGTH: resting zone cells carry the least mRNA of any zone (UMI per spot
+    lowest in RZ in every one of 17 sections), the mRNA is predominantly NUCLEAR, the nuclei carry abundant heterochromatin
+    on electron microscopy, and in overnight ex vivo culture few RZ cells take up EdU while IdU and CldU given on
+    subsequent days ARE taken up - reversible cell cycle arrest, the behaviour of muscle satellite, haematopoietic
+    and neural stem cells released from their niche. CHRDL2+ and/or SFRP5+ sub-populations are the LEAST quiescent,
+    which gives a hierarchy rather than a uniform compartment. LIMITS THE AUTHORS STATE: a prolonged G1 cannot be
+    excluded by thymidine analogues alone, and the release is observed in culture rather than in the body. LIMIT THIS
+    ATLAS ADDS: all 8 donors were operated on to PREVENT tall stature, so this is quiescence measured in plates selected
+    for growing too much, and there is no normal-stature comparison because no such tissue is obtainable.'
 - parameter: human specimens yielding no labelled cells after in vitro tritiated thymidine exposure
   value: 2 of 4
   unit: specimens
@@ -37,19 +52,17 @@ quantitative:
 - parameter: labelled cells in the inert (reserve) zone after 1 h tritiated thymidine
   value: none detected
   unit: qualitative
-  conditions: human distal femur (10 y) and metatarsals/fibula (18 mo), the two specimens in which the
-    columnar zone labelled successfully; 1 h in vitro pulse
+  conditions: human distal femur (10 y) and metatarsals/fibula (18 mo), the two specimens in which the columnar zone
+    labelled successfully; 1 h in vitro pulse
   species: human
   source_ref: thurston1985
-  uncertainty: 'a 1 h pulse detects only cells in S phase during that hour, so this bounds the instantaneous
-    labelling index rather than demonstrating quiescence: a cell cycling once a month would be missed with
-    high probability. No cell count for the inert zone is reported, so the upper bound cannot be quantified.
-    n=2 subjects.'
+  uncertainty: 'a 1 h pulse detects only cells in S phase during that hour, so this bounds the instantaneous labelling
+    index rather than demonstrating quiescence: a cell cycling once a month would be missed with high probability.
+    No cell count for the inert zone is reported, so the upper bound cannot be quantified. n=2 subjects.'
 - parameter: labelled cells in the inert (reserve) zone after 1 h tritiated thymidine
   value: present in 5 of 5
   unit: animals
-  conditions: pig distal femur, five animals, same 1 h in vitro pulse and same processing as the human
-    specimens
+  conditions: pig distal femur, five animals, same 1 h in vitro pulse and same processing as the human specimens
   species: porcine
   source_ref: thurston1985
   uncertainty: presence/absence only; no inert-zone labelling index reported
@@ -63,8 +76,8 @@ quantitative:
 - parameter: inert (reserve) zone width
   value: '1000'
   unit: um
-  conditions: human metatarsals, 18-month-old girl; the distal fibula of the same child, described as grossly
-    abnormal, measured about 500 um
+  conditions: human metatarsals, 18-month-old girl; the distal fibula of the same child, described as grossly abnormal,
+    measured about 500 um
   species: human
   source_ref: thurston1985
   uncertainty: n=1 subject; the child's diagnosis is congenital absence of the tibia
@@ -72,18 +85,20 @@ localization:
 - 'mouse RZ: PTHrP+ skeletal stem cells confirmed by lineage tracing (mizuhashi2018)'
 - 'human RZ: morphology and width described; no labelled cells detected on a 1 h pulse (thurston1985)'
 - 'pig RZ: labelled cells present in all five animals on the same 1 h pulse (thurston1985)'
-human_evidence: absent
-human_evidence_note: No human study demonstrates stem or progenitor behaviour of resting zone chondrocytes;
-  the human evidence is descriptive histology plus one non-detection of S-phase cells on a 1 h pulse in
-  two subjects, which bounds the instantaneous labelling index but cannot establish quiescence.
+human_evidence: direct
+human_evidence_note: UPGRADED FROM ABSENT 2026-08-06. avijgan2026br measures quiescence directly in human growth plate
+  tissue - 8 adolescent donors, four independent readouts (mRNA quantity, nuclear mRNA localisation, heterochromatin,
+  and reversible failure to incorporate EdU) - and finds a functionally quiescent subset with a hierarchy in which
+  CHRDL2+/SFRP5+ cells are the least quiescent. The atlas previously recorded that none of this had been demonstrated
+  in human tissue. It now has been, in donors selected for idiopathic tall stature.
 species_basis:
-- mouse
 - human
+- mouse
 - porcine
 translation_risk: high
-translation_risk_reason: Stem identity rests on inducible Cre lineage tracing in mouse, and it is conditional
-  on secondary ossification centre formation - a developmental milestone whose human timing relative to
-  plate maturation has not been mapped onto this biology.
+translation_risk_reason: Stem identity rests on inducible Cre lineage tracing in mouse, and it is conditional on secondary
+  ossification centre formation - a developmental milestone whose human timing relative to plate maturation has not
+  been mapped onto this biology.
 confidence: C
 key_refs:
 - ref_id: mizuhashi2018
@@ -91,23 +106,29 @@ key_refs:
   first_author: Mizuhashi K
   year: 2018
   type: primary
-  one_line_finding: PTHrP+ resting zone chondrocytes are skeletal stem cells forming columnar clones after
-    secondary ossification centre formation.
+  one_line_finding: PTHrP+ resting zone chondrocytes are skeletal stem cells forming columnar clones after secondary
+    ossification centre formation.
 - ref_id: avijgan2026
   pmid: '41795828'
   first_author: Avijgan M
   year: 2026
   type: systematic_review
-  one_line_finding: Reported labelling indices and definitions of quiescence in the resting zone vary
-    widely across the primary literature.
+  one_line_finding: Reported labelling indices and definitions of quiescence in the resting zone vary widely across
+    the primary literature.
 - ref_id: thurston1985
   pmid: '3864550'
   first_author: Thurston MN
   year: 1985
   type: primary
-  one_line_finding: In vitro thymidine labelling of human growth plates gave no labelled cells in two
-    of four subjects, and none in the inert zone of the two that worked, while all five pig inert zones
-    labelled.
+  one_line_finding: In vitro thymidine labelling of human growth plates gave no labelled cells in two of four subjects,
+    and none in the inert zone of the two that worked, while all five pig inert zones labelled.
+- ref_id: avijgan2026br
+  pmid: '42552306'
+  first_author: Avijgan M
+  year: 2026
+  type: primary
+  one_line_finding: 'Human adolescent growth plate: resting zone chondrocytes are functionally quiescent in vivo and
+    re-enter the cycle ex vivo; CHRDL2+/SFRP5+ subsets are least quiescent.'
 open_questions:
 - g_l1arch_012
-last_verified: '2026-08-05'
+last_verified: '2026-08-06'

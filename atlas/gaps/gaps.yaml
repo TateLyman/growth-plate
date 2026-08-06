@@ -9810,3 +9810,118 @@ gaps:
     hit is then taken to a bone-length endpoint in an animal whose plate closes, because a larger pool that never
     converts to a longer bone is not a height intervention.'
   tractability: 2
+- gap_id: g_l1arch_human_age_series_modern
+  type: known_unknown
+  layer: L1
+  tractability: 3
+  question: What are the zone heights, cell numbers per column and terminal cell dimensions of the human growth
+    plate at each year of age from 1 to 18, at a LONG BONE, measured with modern methods?
+  why_it_matters: The atlas can now describe the human growth plate across childhood, and the description rests
+    on 58 individuals measured between 1976 and 2000 by manual point counting on autopsy tissue, with one person
+    per age above one year in the larger series and twelve subjects in total in the smaller. Every quantitative
+    claim about how the human plate changes with age - including the two that most constrain the flow model, that
+    terminal cell height does not vary and that zone height collapses in the first year - has that as its entire
+    evidential base. Neither series resolves puberty, which is when the question of how much height is still available
+    is actually decided.
+  what_is_known: 'byers2000: 46 human rib costochondral junctions, 11 days to 13.5 years; proliferative zone height
+    to 34% and hypertrophic to 26% of day-11 values, most of it in year 1; lacunar diameter unchanged; matrix volume
+    fraction and septal thickness up. kember1976: 12 human distal femora, birth to 14 years with paired Harpenden
+    growth rates; hypertrophic cell height 29-38 um with no age dependence; column cell number falling from 62 at
+    birth to about 36 at 5-8 years; derived cycle time 20 days.'
+  what_is_missing: (1) n PER AGE. Above one year byers2000 has a single individual at each of ten ages and kember1976
+    has twelve subjects across the whole range. No variance estimate at any childhood age exists. (2) A LONG BONE
+    ACROSS THE FULL RANGE. byers2000 is rib; kember1976 is distal femur but with twelve people. (3) PUBERTY. byers2000
+    did not record pubertal status; kember1976 declines to estimate cycle time at 13-14 years because growth rates
+    scatter too widely. The only human growth plate tissue now being collected - epiphysiodesis biopsies - is all
+    Tanner 2-4, i.e. exactly and only the interval both old series miss, and it is being profiled transcriptionally
+    rather than histomorphometrically. (4) MODERN MORPHOMETRY. Both series are manual point counting on decalcified
+    sections; neither used 3D reconstruction, and kember1976 measured a 13% processing shrinkage that byers2000
+    does not report correcting for at all.
+  nearest_evidence:
+  - byers2000
+  - kember1976
+  - avijgan2026br
+  nearest_evidence_note: The two old series are the whole of it. avijgan2026br has the right tissue at the right
+    age but reports transcriptomics, not morphometry, from 8 donors within a 2-year age window.
+  discriminating_experiment: 'NO NEW TISSUE COLLECTION IS NEEDED FOR THE FIRST STEP. Paediatric autopsy archives
+    hold decades of decalcified long-bone blocks; byers2000 drew 46 cases from one Adelaide service in the 1990s.
+    Re-cutting archival blocks across the age range and applying automated morphometry to zone heights, column cell
+    counts and axial cell dimensions would multiply n per age by an order of magnitude at the cost of sectioning.
+    THE SECOND STEP IS FREE: the epiphysiodesis biopsies already being taken for transcriptomics are fixed tissue
+    and could be measured histomorphometrically as well, which would put a modern number on the pubertal plate that
+    neither old series reaches. Report shrinkage.'
+- gap_id: g_l1arch_human_cycle_time_measured
+  type: known_unknown
+  layer: L1
+  tractability: 3
+  question: Can human growth plate chondrocyte cycle time be MEASURED rather than derived, and does it shorten during
+    the pubertal spurt?
+  why_it_matters: If human terminal cell height does not vary with age (kember1976) and column cell number only
+    falls, then cycle time is the only remaining free variable in the human plate, and the pubertal growth spurt
+    has to be produced by shortening it. That is the single most consequential quantitative claim the atlas can
+    now make about human growth, and it rests on an argument from absence in twelve necropsy subjects plus a derivation
+    with a rabbit-imported assumption. The rat value is 2 days and the human derivation is 20; anything built on
+    rodent kinetics is out by an order of magnitude if the derivation is right, and out by an unknown amount if
+    it is wrong.
+  what_is_known: kember1976 derives 20 days at ages 5-8 in human distal femur, with a floor near 16 days, from growth
+    rate, terminal cell height and column cell counts; and reports no increase in proliferative cell number during
+    the spurt. wilsman1996a measures 30.9-76.3 HOURS by BrdU in 28-day rat across four plates. Rat labelling shows
+    the zone is heterogeneous - central cells 50-60% per day, epiphyseal-end cells 5-10% per day - so any single
+    human figure is a mean over a wide range.
+  what_is_missing: (1) ANY LABEL-BASED HUMAN MEASUREMENT. None exists, and thymidine analogues cannot be given to
+    healthy children. (2) THE SPURT. No human cycle-time estimate exists at any pubertal age; kember1976 explicitly
+    refuses to make one. (3) THE PROLIFERATIVE FRACTION OF THE COLUMN, which is the weakest step in the derivation
+    and is currently a rabbit number. (4) WHETHER THE DERIVATION IS EVEN INTERNALLY VALID at ages where growth rate
+    is changing fast, since it assumes steady state.
+  nearest_evidence:
+  - kember1976
+  - wilsman1996a
+  - avijgan2026br
+  nearest_evidence_note: kember1976 is the only human estimate. avijgan2026br demonstrates that ex vivo sequential
+    thymidine-analogue labelling of intact HUMAN growth plate biopsies works - EdU overnight, then IdU, then CldU
+    - which is the technique the measurement would need.
+  discriminating_experiment: 'avijgan2026br HAS ALREADY DONE THE HARD PART. They cultured intact human growth plate
+    biopsies from epiphysiodesis and labelled them with three sequential thymidine analogues over several days,
+    in order to ask whether resting zone cells re-enter the cycle. The SAME experiment read out on the PROLIFERATIVE
+    zone, with the analogue-to-analogue interval varied, gives a percent-labelled-mitoses-style estimate of human
+    cycle time directly - and the tissue is Tanner 2-4, i.e. the pubertal window no other method can reach. The
+    confounds are real and must be stated in advance: explant culture releases cells from their niche (the paper
+    shows exactly that for the resting zone), so a cultured cycle time is a lower bound on the in vivo one, and
+    the donors are selected for tall stature. A LOWER BOUND WOULD STILL SETTLE THE ORDER OF MAGNITUDE against the
+    rat.'
+- gap_id: g_l12_kigs_depletion_test
+  type: known_unknown
+  layer: L12
+  tractability: 4
+  question: In children treated with growth hormone, does higher cumulative exposure shorten the remaining growth
+    period - reaching near-adult height earlier, at the same or lower final height?
+  why_it_matters: 'chu2025 shows in mouse that GH shifts growth plate stem cells from self-renewing toward lineage-restricted
+    division and depletes the label-retaining pool. If that transfers, GH does not simply add height - it trades
+    duration for velocity, and the trade would be visible as first-year gain that does not carry through to the
+    end. The KIGS aggregate tables are consistent with exactly that shape: the first year delivers 35-41% of the
+    lifetime gain, and a 43% higher US dose gives more first-year gain and identical near-adult height. They are
+    equally consistent with catch-up growth toward a genetic target and no depletion at all, and aggregates cannot
+    separate the two.'
+  what_is_known: 'maghnie2022 full KIGS cohort, 83,803 children. IGHD prepubertal at start: Europe 0.21 mg/kg/wk
+    gives +0.69 height SDS in year 1 and +1.97 at near-adult height; USA 0.30 mg/kg/wk gives +0.75 and +1.96, from
+    near-identical baselines. chu2025 supplies the mechanism in mouse. growth_plate_senescence holds that plate
+    senescence is division-dependent rather than time-dependent, which is what makes velocity and duration the same
+    currency.'
+  what_is_missing: (1) INDIVIDUAL-LEVEL DATA. The test needs per-child cumulative dose, treatment duration, bone
+    age trajectory and age at final height. All were collected. None is published. (2) A CONTROL FOR DIFFERENTIAL
+    FOLLOW-UP. 31% of the European cohort reaches near-adult height against 9.5% of the American, which can generate
+    the observed dose-endpoint null on its own. (3) THE WITHIN-PERSON TRAJECTORY. Every published row is a median
+    of a different subset. (4) BONE AGE ADVANCE PER CENTIMETRE GAINED, which is the direct registry proxy for spending
+    duration to buy velocity and is recorded in KIGS at baseline but not reported longitudinally against dose.
+  nearest_evidence:
+  - maghnie2022
+  - chu2025
+  nearest_evidence_note: maghnie2022 has the population and not the resolution; chu2025 has the mechanism and not
+    the species. Nothing sits between them.
+  discriminating_experiment: 'REQUEST THE KIGS INDIVIDUAL PARTICIPANT DATA THROUGH Vivli OR CSDR and fit, within
+    diagnosis, age at attainment of near-adult height and total height gain against cumulative GH exposure, with
+    treatment duration and baseline bone-age delay as covariates. THE PREDICTION IS SHARP AND FALSIFIABLE: depletion
+    predicts that cumulative exposure is associated with EARLIER attainment at no greater final height, i.e. a negative
+    partial correlation between exposure and remaining growth period; catch-up-to-target predicts no association
+    with timing once baseline deficit is controlled. The same design runs on any national GH registry with final-height
+    records. It requires a named researcher and an institutional affiliation, which is the barrier, not the data.'

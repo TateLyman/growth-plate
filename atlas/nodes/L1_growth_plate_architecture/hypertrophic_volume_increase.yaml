@@ -21,6 +21,31 @@ summary: 'Terminal chondrocyte enlargement is the largest single contributor to 
   junction. Stereologically, the rat proximal tibia shows a 4-fold height and 10-fold volume increase from proliferative
   to late hypertrophic stage. None of this has been measured in human cells.'
 quantitative:
+- parameter: HUMAN terminal hypertrophic cell height, and whether it varies with age
+  value: 29-38 across birth to 13 years, NO AGE DEPENDENCE; 33 +/- 5 at ages 5-8
+  unit: um
+  conditions: human distal femur, 12 necropsy subjects; maximum dimension of the cell spaces in the direction of growth,
+    five groups of ten cells per specimen along the metaphyseal border; celloidin, 15 um sections, 13% linear processing
+    shrinkage measured and corrected
+  species: human
+  source_ref: kember1976
+  uncertainty: 'ADDED 2026-08-06. THIS NODE PREVIOUSLY RECORDED human_evidence AS ABSENT while the human measurement
+    had existed since 1976. The finding that matters is the NULL: across the whole of human childhood the parameter
+    this node calls the largest single contributor to elongation does not move. The only departures are the two 14-year-olds
+    with closure in progress (39 um male, 25 um female). n = 12 subjects, 1-2 per age, so this bounds a trend loosely
+    rather than tightly.'
+- parameter: RAT terminal cell size and whether it varies with age
+  value: yes - lower hypertrophic zone cells reach 40 um at 2-4 weeks and are ABSENT in old rats
+  unit: um
+  conditions: Wistar rat femur and tibia, ages 2-16 weeks against 62-80 weeks; growth plate height maximal at 2 and
+    4 weeks
+  species: rat
+  source_ref: roach2003
+  uncertainty: THE SPECIES DISSOCIATION IS THE POINT. In old rats all growth plate cells are the size of the PROLIFERATIVE
+    cells of young plates - the capacity for volume increase is lost - and the authors conclude that absence of the
+    volume increase is the main factor associated with deceleration and eventually cessation of growth. In human the
+    same parameter is flat from birth to 13 years while growth velocity varies several-fold. THE VARIABLE THAT SHUTS
+    GROWTH DOWN IN THE RAT IS THE ONE THE HUMAN HOLDS CONSTANT. Recorded as contradiction C-L1-09.
 - parameter: chondrocyte volume at start of enlargement
   value: '600'
   unit: fl
@@ -175,15 +200,17 @@ localization:
 - 'mouse HZ: measured on dissociated live cells (cooper2013)'
 - 'rat HZ: measured by stereology (hunziker1987)'
 - 'human HZ: unmeasured'
-human_evidence: absent
-human_evidence_note: No quantitative phase, interferometric or stereological measurement of human hypertrophic chondrocyte
-  volume or dry mass density exists; a targeted PubMed search returned six records, none in human growth plate tissue
-  (search log g_l1arch_008).
+human_evidence: direct
+human_evidence_note: UPGRADED FROM ABSENT 2026-08-06 on reading kember1976 in full. Human terminal hypertrophic cell
+  height is 29-38 um from birth to 13 years with no detectable age dependence, 33 +/- 5 um at ages 5-8, measured directly
+  in the direction of growth with a measured shrinkage correction. The human evidence is therefore a NULL on the age
+  axis, which is the opposite of what the rodent literature in this node would predict.
 species_basis:
+- human
 - mouse
-- rat
-- porcine
 - multiple
+- porcine
+- rat
 translation_risk: high
 translation_risk_reason: Every number in this node is rodent (or jerboa). The mammalian volume-versus-growth-rate
   relationship already fails in birds (barreto1994) and has a species-specific slope between rat and pig (breur1991),
@@ -225,10 +252,28 @@ key_refs:
   type: primary
   one_line_finding: In ducklings and chicks the mammalian hypertrophic-volume/growth-rate relationship does not hold,
     showing it is not a universal amniote rule.
+- ref_id: roach2003
+  pmid: '12588965'
+  first_author: Roach HI
+  year: 2003
+  type: primary
+  one_line_finding: Rat growth ceases while the physis persists; loss of the large hydrated lower-hypertrophic cells
+    is the main correlate of deceleration and cessation.
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: Human terminal hypertrophic cell height 29-38 um with no age dependence, birth to 13 years.
 open_questions:
 - g_l1arch_008
 - g_l1arch_009
 - g_l1arch_010
 contradicts:
 - barreto1994
-last_verified: '2026-08-05'
+last_verified: '2026-08-06'
+confidence_note: 'HELD AT C on 2026-08-06. Adding a human measurement does not raise the grade because the human measurement
+  is a null in 12 subjects and the node''s positive claims remain rodent. What it does is bound the node''s transferability:
+  the claim that terminal cell enlargement is the largest single contributor to elongation is well supported across
+  mammals as a BETWEEN-species and between-site regression, and is not supported as a WITHIN-human developmental variable,
+  because in humans it does not vary.'

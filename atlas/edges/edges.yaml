@@ -18837,3 +18837,90 @@ edges:
   notes: Structural, not causal. [relation recorded as 'correlates_with' to stay inside the schema vocabulary; the
     literal claim is 'describes'.]
   traversal_usable: false
+- edge_id: e01211
+  source: human_growth_plate_age_trajectory
+  target: cell_cycle_time_pz
+  relation: required_for
+  sign: +
+  context: 'human distal femur ages 5-8: with terminal cell height fixed at 33 um and column cell number only falling
+    with age, cycle time is the remaining free variable that must carry velocity, including the pubertal spurt'
+  evidence_tier: T1
+  refs:
+  - kember1976
+  confidence: C
+  notes: An argument from two human nulls in 12-46 subjects, not a measurement of cycle time. Relation recorded as
+    'required_for' to stay inside the schema vocabulary; the literal claim is that cycle time is the only remaining
+    degree of freedom.
+  traversal_usable: true
+- edge_id: e01212
+  source: human_growth_plate_age_trajectory
+  target: hypertrophic_volume_increase
+  relation: correlates_with
+  sign: unknown
+  context: human terminal hypertrophic cell height is 29-38 um from birth to 13 years with no age dependence, while
+    growth velocity varies several-fold over the same interval
+  evidence_tier: T1
+  refs:
+  - kember1976
+  - byers2000
+  confidence: B
+  notes: 'A NULL EDGE and it is the informative kind: in human this parameter does not track growth rate developmentally,
+    which is the opposite of the rat (roach2003). Contradiction C-L1-09.'
+  traversal_usable: true
+- edge_id: e01213
+  source: growth_hormone
+  target: gh_dose_versus_final_height
+  relation: correlates_with
+  sign: +
+  context: 'KIGS, 83,803 children: a 43% higher median dose gives more first-year height SDS gain (0.75 vs 0.69) and
+    identical near-adult height gain (1.96 vs 1.97)'
+  evidence_tier: T2
+  refs:
+  - maghnie2022
+  confidence: D
+  notes: Observational, between continents, with 31% vs 9.5% follow-through to the endpoint. The atlas records the
+    shape, not a causal claim.
+  traversal_usable: false
+- edge_id: e01214
+  source: stem_pool_population_asymmetry
+  target: gh_dose_versus_final_height
+  relation: hypothesized_link
+  sign: unknown
+  context: IF the mouse mechanism transfers, GH trades growth duration for velocity by spending the stem pool, which
+    would appear in registry data as first-year gain that does not carry to final height
+  evidence_tier: T3
+  refs:
+  - chu2025
+  - maghnie2022
+  confidence: speculative
+  notes: Explicitly a hypothesis linking a mouse mechanism to a human registry pattern that has at least one sufficient
+    alternative explanation (catch-up to a genetic target). Gap g_l12_kigs_depletion_test.
+  traversal_usable: false
+  gap_id: g_l12_kigs_depletion_test
+- edge_id: e01215
+  source: resting_zone
+  target: stem_pool_population_asymmetry
+  relation: correlates_with
+  sign: +
+  context: human resting zone chondrocytes are functionally quiescent in vivo and re-enter the cycle ex vivo, which
+    is the human counterpart of the slow-cycling label-retaining pool GH depletes in mouse
+  evidence_tier: T1
+  refs:
+  - avijgan2026br
+  - chu2025
+  confidence: C
+  notes: Links a human observation to a mouse mechanism; the renewal MODE remains untested in human.
+  traversal_usable: true
+- edge_id: e01216
+  source: rat_growth_cessation_without_fusion
+  target: hypertrophic_volume_increase
+  relation: required_for
+  sign: +
+  context: in rat, loss of the capacity for hypertrophic cell volume increase is the main correlate of deceleration
+    and eventual cessation; in old rats all plate cells are proliferative-cell sized
+  evidence_tier: T1
+  refs:
+  - roach2003
+  confidence: C
+  notes: The rat half of contradiction C-L1-09. Human shows no such age dependence.
+  traversal_usable: true
