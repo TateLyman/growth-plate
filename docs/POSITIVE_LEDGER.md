@@ -140,23 +140,52 @@ And one that is not addressable, and must be stated because it bounds the whole 
 
 ---
 
-## 7. What we know about combining them
+## 7. Combining them — tried five times, and the two duration classes behave differently
 
-Nothing. And the prior is good, because the two lever classes act on **different terms of the
-same product** — velocity and duration — so they should multiply rather than compete.
+**Corrected 2026-08-06 (CORR-016).** This section previously said the combination had never been
+tried. It has, five times; three posted results. I had read an absence off a corpus built from
+outcome-text queries, which is a record of what a query matched and not of what exists.
 
-Two facts support the prior:
-- Estrogen and GH already show amplification (`estrogen_gh_axis_amplification`, grade A).
-- Every positive adult-height result in §5 is *already* a combination — low-dose estrogen **plus
-  GH** — not either alone.
+| trial | combination | n | endpoint | result |
+|---|---|---|---|---|
+| **NCT00355030** | leuprorelin + somatropin, pubertal ISS | 91 | **attained adult height** | **−1.8 vs −1.9 SDS — null** |
+| **NCT01248416** | AI + somatropin, ISS boys 12–18 | 76 | change in **predicted** adult height | **+7.4** vs +4.9 (GH) vs +0.5 (AI) cm |
+| NCT00001521 | testolactone regimen from age 2, CAH | 66 | **attained adult height** | −0.34 vs −0.60 SDS |
+| NCT00133354 | anastrozole + GH, GHD boys | 53 | predicted adult height | **never posted** |
+| NCT00840944 | GH + GnRH agonist, 4 years | 44 | height | **never posted** |
 
-One fact constrains it: sacubitril and CNP are **non-additive** in mouse (they saturate the same
-step). Levers on the *same* term don't stack. Levers on *different* terms have not been tried.
+**The two duration classes are not interchangeable, and the trials' own data says why.** A GnRH
+analogue suppresses puberty entirely — it removes the growth spurt along with the fusion signal.
+In NCT00355030 the combination arm's height velocity runs *below* GH alone during treatment
+(4.9 vs 7.8 cm/yr) and above it afterwards, and the two cancel to nothing. An aromatase inhibitor
+blocks oestrogen synthesis while leaving androgen and the GH/IGF-1 amplification intact — it
+removes the fusion signal without removing the spurt.
 
-**No trial has ever combined a duration-extending agent with a velocity agent and measured adult
-height.** That is the largest untried experiment in the field, and it needs no new molecule.
+**But the positive result is on a surrogate.** This atlas already holds, at grade A, that
+letrozole predicted-adult-height gains **are not sustained**. The trial with a true attained
+endpoint is the null one. And by my own arithmetic the combination beats the best single agent by
++2.5 cm (p ≈ 0.05) while the excess over simple additivity is +2.0 cm (p ≈ 0.22) — **consistent
+with the two agents just adding; synergy is not established.**
 
----
+**Bone was measured**, which is the minimum this lever class requires: height-adjusted BMD
+z-change −1.061 (AI alone), −0.586 (GH), −0.605 (both), ANOVA p = 0.906. Underpowered at ~25 per
+arm; the ordering is suggestive and is not evidence.
+
+### And the age gradient exists — but cannot be interpreted
+
+Predicted-height gain from aromatase inhibition by age at start: ages 2–13 **+6.21 cm**
+(testotoxicosis); from age 2 **≈ +1.8 cm attained** (CAH, with 1.08 more years of bone age held
+unchanged); ages 12–18 **+0.5 cm** (ISS).
+
+That is exactly the gradient the timing hypothesis predicts, **and it proves nothing.** Every
+trial that started an aromatase inhibitor in a young child did so because that child had a
+disorder of steroid **excess** — testotoxicosis, CAH, McCune-Albright. "Works better started
+early" and "works only where there is pathological oestrogen to remove" predict the same gradient
+and are perfectly confounded in every existing trial.
+
+**Nobody has given an aromatase inhibitor to a young child with normal steroidogenesis.** That
+single fact is why the pharmacological duration lever cannot currently be compared with the
+genetic one.
 
 ## 8. The three newest facts, and where they fit
 
@@ -198,19 +227,22 @@ proliferative pool has idle capacity to recruit while the timer runs.
 
 ---
 
-## 10. What follows — ranked by (size of the known effect) × (nearness of the evidence)
+## 10. What follows — ranked, and two of these are correspondence
 
-1. **Reconstruct the aromatase-inhibitor literature to an adult-height endpoint, by age at
-   start.** The prediction from §6 is that effect size scales with how much of the growing
-   period is covered. If the published trials show that gradient, the timing hypothesis is
-   supported without a new trial. This is a re-analysis of existing data, and the **506-trial
-   corpus already downloaded** in Round 18 is where it starts.
-2. **Test whether any existing cohort combined a duration agent with a velocity agent.** Same
-   corpus. If none did, that absence is itself the finding.
-3. **Settle the human growth fraction** (the Karolinska ask, already drafted).
-4. **Test whether GH's pool depletion is visible in humans** (the KIGS request, already drafted).
+1. **Ask for the adult heights that already exist.** NCT01248416 completed; those boys reached
+   adult height years ago. The measurement either exists unpublished or was never taken. And
+   **two completed combination trials have never posted results at all** — NCT00133354
+   (anastrozole + GH in GH-deficient boys, n=53, predicted adult height primary) and NCT00840944
+   (4-year GH + GnRH agonist, n=44). Under FDAAA these are reportable. **This is the cheapest
+   high-value action in the atlas: it converts a surrogate into an endpoint at the cost of
+   letters.**
+2. **Break the age-at-start confound observationally.** Aromatase inhibitors are prescribed
+   off-label across a range of ages within single indications. A retrospective multicentre cohort
+   with *attained* adult height as the endpoint and age at start as the exposure, **within one
+   indication**, separates "started early" from "had oestrogen excess" without a new trial.
+3. **Settle the human growth fraction** (Karolinska letter, drafted).
+4. **Test GH pool depletion in humans** (KIGS request, drafted).
 5. **Sacubitril in the human explant** — the only novel-mechanism velocity candidate with an
    approved paediatric drug attached.
 
-Items 1 and 2 need no new tissue, no new trial and no new permission. They run on data that is
-already on this disk.
+Items 1 and 2 need no tissue, no trial and no funding.

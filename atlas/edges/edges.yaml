@@ -18978,3 +18978,44 @@ edges:
   confidence: B
   notes: The assay positive control. Its failure in some donors is the assay power limit.
   traversal_usable: true
+- edge_id: e01221
+  source: aromatase_inhibitor_anastrozole
+  target: duration_velocity_combination
+  relation: activates
+  sign: +
+  context: added to growth hormone in 76 adolescent boys with idiopathic short stature, an aromatase inhibitor raises
+    the change in PREDICTED adult height from +4.9 to +7.4 cm
+  evidence_tier: T2
+  refs:
+  - nct01248416
+  confidence: C
+  notes: Surrogate endpoint. The same drug class has a grade-A record of predicted-height gains that are not sustained.
+    Consistent with plain additivity; synergy not established.
+  traversal_usable: true
+- edge_id: e01222
+  source: gnrh_analog_leuprolide
+  target: duration_velocity_combination
+  relation: correlates_with
+  sign: unknown
+  context: added to growth hormone in 91 pubertal children with idiopathic short stature, a GnRH analogue gives adult
+    height SDS -1.8 vs -1.9 - null on the primary
+  evidence_tier: T2
+  refs:
+  - nct00355030
+  confidence: B
+  notes: 'The null is on TRUE attained adult height, which makes it the stronger endpoint in this node. The trial''s
+    velocity data shows the cancellation: lower velocity during treatment, higher after.'
+  traversal_usable: true
+- edge_id: e01223
+  source: duration_velocity_combination
+  target: adult_height_attainment
+  relation: correlates_with
+  sign: unknown
+  context: two randomised tests of combining the lever classes disagree, on different endpoints
+  evidence_tier: T2
+  refs:
+  - nct01248416
+  - nct00355030
+  confidence: C
+  notes: Recorded as unresolved rather than as a direction.
+  traversal_usable: false

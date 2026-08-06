@@ -1478,3 +1478,56 @@ is not irrelevance under perturbation. Added as `thurston1985cn`.
 entry for that `ref_id`** — not against a fresh literature search. The bibliography already
 carries PMID, DOI and journal for every ref. A want-list item is a request to a person and costs
 their time; it should be generated from the record, not re-derived.
+
+---
+
+## CORR-016 — 2026-08-06 — "no trial has ever combined the two lever classes." Five have.
+
+**What the atlas said, one round earlier.** In `docs/POSITIVE_LEDGER.md` §7: *"No trial has
+ever combined a duration-extending agent with a velocity agent and measured adult height. That
+is the largest untried experiment in the field."*
+
+**It has been tried five times.** Three posted results.
+
+| trial | combination | n | endpoint | result |
+|---|---|---|---|---|
+| NCT00355030 | leuprorelin + somatropin | 91 | **attained adult height SDS** | −1.8 vs −1.9 — **null** |
+| NCT01248416 | anastrozole/letrozole + somatropin | 76 | change in **predicted** adult height | +7.4 vs +4.9 vs +0.5 cm |
+| NCT00001521 | testolactone-containing, from age 2 | 66 | **attained adult height SDS** | −0.34 vs −0.60 |
+| NCT00133354 | anastrozole + GH, GHD boys | 53 | predicted adult height | **no results posted** |
+| NCT00840944 | GH + GnRH agonist, 4 years | 44 | height | **no results posted** |
+
+**Why the atlas missed them.** The Round 18 corpus was built from five **outcome-text** queries
+on ClinicalTrials.gov. That census is a record of what those queries matched, not of what exists
+— and it missed histrelin entirely (`NCT00779103`). I then used it as a *denominator* and read an
+absence off it.
+
+**The guard caught this, not me.** `lever_classes.py` declared before running that all five
+reference agents must appear, and refused to report when histrelin did not. Rebuilding the census
+by **intervention name** returned 4,495 trials against the old 2,585, and the combinations
+appeared immediately.
+
+### The failure mode
+
+| | CORR-009 → 013 | CORR-014 | **CORR-016** |
+|---|---|---|---|
+| what was missed | a source | a bound on a source | **the completeness of a corpus** |
+| the error | didn't read | didn't check precision | **used a search result as a census** |
+
+A sweep answers the question *"what did this query match."* It never answers *"what exists."*
+Reading an absence off a sweep converts a query's coverage into a claim about the world.
+CORR-011 was the same error at the level of one paper; this is it at the level of 2,585.
+
+### The rule this adds
+
+**An absence may only be claimed from a census built on the entity being counted.** To claim no
+trial combined two drug classes, enumerate by *intervention name*, not by outcome text. And
+every such claim must carry a positive control — a case known to exist that the census must
+recover.
+
+### Actioned
+
+- New node `duration_velocity_combination` (L12, grade **B**), 5 rows.
+- 8 trial-registry refs added.
+- Gaps `g_l12_ai_normal_steroidogenesis` and `g_l12_combination_adult_height`.
+- `docs/POSITIVE_LEDGER.md` §7 rewritten.

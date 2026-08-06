@@ -1,0 +1,135 @@
+id: duration_velocity_combination
+name: Combining a duration agent with a velocity agent - it has been tried, and the two duration classes behave differently
+type: intervention
+layer: L12
+stub: false
+summary: 'This atlas asserted on 2026-08-06 that no trial had ever combined a duration-extending agent with a velocity
+  agent and measured adult height. THAT WAS WRONG. A census of ClinicalTrials.gov by INTERVENTION NAME rather than
+  by outcome text finds 4,495 trials of a lever-class agent, 279 paediatric trials with a height endpoint, and FIVE
+  paediatric trials that combine the two classes - three of them with results posted. The two trials that answer the
+  question disagree, and the disagreement is mechanistically legible. A GnRH ANALOGUE added to growth hormone in pubertal
+  idiopathic short stature is NULL on attained adult height: -1.8 against -1.9 SDS, about 0.7 cm, in 91 children.
+  An AROMATASE INHIBITOR added to growth hormone in adolescent boys with idiopathic short stature adds 2.5 cm of PREDICTED
+  adult height over growth hormone alone - 7.4 against 4.9 cm - in 76 children. THE MECHANISTIC READING IS VISIBLE
+  IN THE TRIAL''S OWN VELOCITY DATA. A GnRH analogue suppresses puberty entirely, so it removes the pubertal growth
+  spurt along with the fusion signal: height velocity in the combination arm runs BELOW the growth-hormone-alone arm
+  during treatment (4.9 vs 7.8 cm/yr at one visit) and above it afterwards, and the two cancel. An aromatase inhibitor
+  blocks oestrogen synthesis while leaving androgen and the GH/IGF-1 amplification intact, so it removes the fusion
+  signal without removing the spurt. Duration agents are not one class.'
+quantitative:
+- parameter: GnRH ANALOGUE plus growth hormone, ATTAINED ADULT HEIGHT
+  value: -1.8 combination vs -1.9 growth hormone alone
+  unit: adult height SDS
+  conditions: NCT00355030, 91 pubertal children with idiopathic short stature randomised to somatropin 0.05 mg/kg/day
+    plus 3-monthly leuprorelin 11.25 mg, or somatropin alone. PRIMARY endpoint, results posted
+  species: human
+  source_ref: nct00355030
+  uncertainty: 'A NULL ON THE ENDPOINT THAT MATTERS, and it is the only trial in the set with a TRUE ATTAINED adult
+    height as its primary. SD 0.53 and 0.77, so the 0.1 SDS difference is well inside noise. The secondary readouts
+    show the mechanism working and cancelling: bone age is consistently lower in the combination arm (15.2 vs 17.0
+    years at one visit), height velocity is lower during treatment and higher afterwards, and the percentage reaching
+    a normal adult height SDS is 26.7 vs 25.6. One secondary favours the combination - adult height minus TARGET height
+    -0.6 vs -1.2 - which the atlas records without weighting, because the primary is null and selecting a favourable
+    secondary after seeing a null primary is the defect this atlas exists to avoid.'
+- parameter: AROMATASE INHIBITOR plus growth hormone, PREDICTED adult height
+  value: AI alone +0.5, GH alone +4.9, COMBINATION +7.4
+  unit: cm, least-squares mean change in predicted adult height
+  conditions: 'NCT01248416, 76 adolescent boys with idiopathic short stature, ages 12-18, three arms: anastrozole
+    1 mg or letrozole 2.5 mg daily; somatropin 0.3 mg/kg/week; or both, for 2-3 years. Standard errors 1.0, 0.9 and
+    0.9. Actual height change over the same period was 14.0, 17.1 and 18.9 cm, ANCOVA p<0.006'
+  species: human
+  source_ref: nct01248416
+  uncertainty: 'THE ENDPOINT IS PREDICTED ADULT HEIGHT AND THAT IS THE WHOLE PROBLEM. This atlas already holds, at
+    grade A, that the letrozole predicted-adult-height gain IS NOT SUSTAINED. A drug class whose surrogate gains have
+    a track record of evaporating has produced another surrogate gain. ARITHMETIC BY THIS ATLAS: combination minus
+    best single agent is +2.5 cm, SE about 1.27 by quadrature, t about 1.97, p about 0.05 - borderline. Against simple
+    additivity (0.5 + 4.9 = 5.4) the excess is +2.0 cm, SE about 1.62, p about 0.22, so THE APPARENT SYNERGY IS NOT
+    SUPPORTED; the data are consistent with the two agents simply adding. No adult-height follow-up has been posted.'
+- parameter: bone density cost of the combination
+  value: AI alone -1.061, GH alone -0.586, combination -0.605
+  unit: change in height-adjusted bone density z-score
+  conditions: NCT01248416, same three arms, 2-3 years
+  species: human
+  source_ref: nct01248416
+  uncertainty: ANOVA p = 0.906 - NO DIFFERENCE BETWEEN ARMS WAS DETECTED, and with roughly 25 per arm this trial cannot
+    resolve one. The point estimates are suggestive in a direction that matters - the aromatase inhibitor alone is
+    the worst for bone and the combination looks like growth hormone alone - but a non-significant ordering is not
+    evidence that growth hormone offsets the bone cost, and this atlas does not claim it does. What the row establishes
+    is that THE BONE COST WAS MEASURED, which is the minimum any duration-extension programme must do, given that
+    the genetic proof of concept for this lever carries a BMD Z of -3.85.
+- parameter: EARLY-START aromatase inhibition, TRUE attained adult height
+  value: -0.34 investigational vs -0.60 standard, a gain of about 0.26 SDS
+  unit: adult height SDS relative to the general population
+  conditions: 'NCT00001521, 66 children with congenital adrenal hyperplasia enrolled from age 2, randomised to testolactone
+    (aromatase inhibitor) plus flutamide plus reduced-dose hydrocortisone, or conventional treatment, followed to
+    adult height. Years of bone age held unchanged: 3.86 vs 2.78'
+  species: human
+  source_ref: nct00001521
+  uncertainty: 'THE ONLY TRUE-ADULT-HEIGHT RESULT FROM EARLY AROMATASE INHIBITION, and about 0.26 SDS is roughly 1.8
+    cm. SD 0.93 and 0.89 on n=66, so it is not a demonstrated difference; the atlas records the point estimate and
+    its direction. THE MECHANISTIC READOUT IS THE STRONGER PART: the investigational arm held bone age unchanged for
+    1.08 more years, which is the duration lever doing exactly what it is supposed to do, measured. Average annual
+    growth velocity SDS was LOWER in the investigational arm (-1.01 vs -0.34), so again the gain is bought in time,
+    not in rate. Three drugs changed at once; the aromatase inhibitor''s own contribution is not isolable.'
+- parameter: THE CONFOUND THAT MAKES THE AGE GRADIENT UNTESTABLE IN EXISTING TRIALS
+  value: 'predicted-height gain by age at start: ages 2-13 +6.21 cm; ages 2-18 about +1.8 cm attained; ages 12-18
+    +0.5 cm'
+  unit: cm
+  conditions: NCT00094328 testotoxicosis, ages 2-13, bicalutamide plus anastrozole, n=14, single arm, change in predicted
+    adult height +6.21 cm (SD 3.93); NCT00001521 congenital adrenal hyperplasia from age 2; NCT01248416 idiopathic
+    short stature ages 12-18
+  species: human
+  source_ref: nct00094328
+  uncertainty: THE GRADIENT IS IN THE DIRECTION THE TIMING HYPOTHESIS PREDICTS AND IT PROVES NOTHING, BECAUSE AGE
+    AT START IS PERFECTLY CONFOUNDED WITH INDICATION. Every trial that started an aromatase inhibitor in a young child
+    did so because that child had a disorder of steroid EXCESS - testotoxicosis, congenital adrenal hyperplasia, McCune-Albright.
+    In those children the drug corrects a pathological excess. In idiopathic short stature at 12-18 it blocks normal
+    physiology. 'Works better when started early' and 'works only when there is pathological oestrogen to remove'
+    predict the same gradient and cannot be separated in any existing trial. NOBODY HAS GIVEN AN AROMATASE INHIBITOR
+    TO A YOUNG CHILD WITH NORMAL STEROIDOGENESIS, which is the single reason the pharmacological duration lever cannot
+    currently be compared with the genetic one.
+localization:
+- systemic
+human_evidence: direct
+human_evidence_note: 'Entirely human and entirely randomised or prospectively controlled, except the single-arm testotoxicosis
+  study. The weakness is not the evidence type but the endpoint: only two of the five trials carry a TRUE attained
+  adult height, and the one with the largest effect uses predicted adult height, a surrogate this drug class has previously
+  failed to convert.'
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: Human trials throughout. The risk is surrogate-to-endpoint, not species-to-species.
+confidence: B
+confidence_note: B. Five trials, three with posted results, two randomised with adult-height or predicted-adult-height
+  primaries, and the mechanistic reading is supported by the trials' own velocity and bone-age secondaries rather
+  than by assertion. Not A because the two informative trials disagree, the positive one uses a surrogate with a poor
+  conversion record in this exact drug class, the negative one is a single trial of 91 children, and the apparent
+  synergy does not survive this atlas's own arithmetic. Individual rows are graded within the node.
+key_refs:
+- ref_id: nct00355030
+  first_author: ClinicalTrials.gov
+  year: 2006
+  type: trial_registry
+  one_line_finding: 'Leuprorelin added to somatropin in 91 pubertal ISS children: adult height SDS -1.8 vs -1.9, null.'
+- ref_id: nct01248416
+  first_author: ClinicalTrials.gov
+  year: 2010
+  type: trial_registry
+  one_line_finding: 'Aromatase inhibitor plus growth hormone in 76 adolescent ISS boys: predicted adult height +7.4
+    cm vs +4.9 for GH alone and +0.5 for AI alone.'
+- ref_id: nct00001521
+  first_author: ClinicalTrials.gov
+  year: 1996
+  type: trial_registry
+  one_line_finding: 'Testolactone-containing regimen from age 2 in 66 children with CAH: adult height -0.34 vs -0.60
+    SDS, with 1.08 more years of bone age held unchanged.'
+- ref_id: nct00094328
+  first_author: ClinicalTrials.gov
+  year: 2004
+  type: trial_registry
+  one_line_finding: 'Bicalutamide plus anastrozole from age 2 in testotoxicosis: +6.21 cm predicted adult height,
+    single arm, n=14.'
+open_questions:
+- g_l12_ai_normal_steroidogenesis
+- g_l12_combination_adult_height
+last_verified: '2026-08-06'
