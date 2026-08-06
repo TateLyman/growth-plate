@@ -73,6 +73,39 @@ quantitative:
   species: rat
   source_ref: wilsman1996
   uncertainty: not reported
+- parameter: contribution of cell division to elongation
+  value: '7'
+  unit: '% of elongation'
+  conditions: proximal radius (slowest plate, 47 um/day), 28-day-old Long-Evans rat
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: as stated in the text; the value computed from the paper's own Tables 5 and 6 is 8.1%
+- parameter: elongation partition across all four plates (division / matrix / enlargement)
+  value: 9/32/59, 9/32/58, 9/41/50, 8/49/43
+  unit: '% of elongation'
+  conditions: proximal tibia (396 um/day), distal radius (269), distal tibia (138), proximal radius (47);
+    28-day-old Long-Evans rat, unit-cylinder model
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'DERIVED BY THIS ATLAS from the paper''s Tables 5 and 6 - the text states only the two
+    extreme plates (9/32/59 and 7/49/44) and Figure 1 carries the middle two. Computed as division =
+    T5 cell volume / T6 total, matrix = T6 matrix / T6 total, enlargement = (T6 cell - T5 cell) / T6
+    total. The derivation reproduces the paper''s independently reported hypertrophic volume fractions
+    (0.685 / 0.675 / 0.595 / 0.504) to within rounding, which is the check that it is the intended
+    decomposition. Middle two plates carry no published dispersion.'
+- parameter: cell share of the volume removed at the chondro-osseous junction
+  value: 68.5, 67.8, 59.3, 51.4
+  unit: '% of elongation'
+  conditions: proximal tibia, distal radius, distal tibia, proximal radius; equals division plus enlargement,
+    i.e. all of the removed volume that is cell rather than matrix
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'DERIVED as division + enlargement from the rows above; matches the paper''s directly
+    measured hypertrophic volume fractions 0.685/0.675/0.595/0.504. THIS IS THE QUANTITY TO COMPARE A
+    MEASURED TERMINAL CELL HEIGHT AGAINST, not the 44-59% enlargement figure - a histological cell
+    height includes the volume the cell already had on leaving the proliferative zone. It is also a
+    LOWER bound on the axial-height share, because longitudinal septal matrix adds volume without adding
+    axial length.'
 - parameter: range of elongation rates across the four plates compared
   value: 50-400
   unit: um/24 h

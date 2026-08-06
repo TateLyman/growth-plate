@@ -138,7 +138,7 @@ number is too small to say anything.
 | Edges | 1196 — **786 usable for perturbation reasoning**, 410 flagged unusable |
 | Gaps | 292, with 135 gap ids carrying reproducible search logs (148 log entries) |
 | References | 1060, all machine-resolved against Europe PMC/NCBI |
-| Quantitative values on nodes | 1560 |
+| Quantitative values on nodes | 1572 |
 
 **Context annotation, three-state** (MATCH / MISMATCH / UNANNOTATED — only MISMATCH excludes an edge; see `atlas/tools/context_filter.py`):
 
@@ -170,14 +170,14 @@ Sign coverage on sign-bearing relations is the traversal gate and stands at **78
 <!-- COVERAGE:QUANT:BEGIN -->
 | reliability class | rows | share |
 |---|---:|---:|
-| `single_source_with_uncertainty` | 1251 | 80.2% |
-| `range_value` | 128 | 8.2% |
-| **`single_source_point_no_uncertainty`** | **65** | 4.2% |
+| `single_source_with_uncertainty` | 1253 | 79.7% |
+| `range_value` | 130 | 8.3% |
+| **`single_source_point_no_uncertainty`** | **65** | 4.1% |
 | `spread_documented` | 56 | 3.6% |
-| `unverified` | 40 | 2.6% |
-| `multi_source` | 17 | 1.1% |
+| `unverified` | 40 | 2.5% |
+| `multi_source` | 25 | 1.6% |
 | `superseded` | 3 | 0.2% |
-| | **1560** | |
+| | **1572** | |
 
 `single_source_point_no_uncertainty` is the risk class: one source, a point value, and nothing to warn a reader. Phase 2e classified every row rather than hunting duplicate parameter names, because ~94% of parameter names appear exactly once — disagreement in this field is not encoded as duplicate rows.
 <!-- COVERAGE:QUANT:END -->

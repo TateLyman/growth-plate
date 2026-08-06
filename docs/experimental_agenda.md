@@ -538,3 +538,85 @@ pool is not a slow cycle, and the atlas currently cannot tell the two apart.
 *Trace: `atlas/audit/corrections.md` CORR-006. Model: `flow_model.py --site
 human_distal_femur` (blocked, prints the closure) and `--site
 human_distal_femur_thurston` (runs, halts at the partition).*
+
+---
+
+# ANNEX 3 — the two ⛔ papers arrived; the prediction failed worse, and for a different reason (2026-08-06)
+
+ANNEX 2 scored the Tier 1 prediction as **failed by 9.6 %**. With `kember1976` and
+`wilsman1996` in full text, that scoring is itself wrong. Corrected here rather than
+edited above.
+
+## The band was built by dividing by the wrong number
+
+| | |
+|---|---|
+| predicted | 13.9 – 18.7 µm, as `31.67 µm × rat hypertrophic share 0.44–0.59` |
+| the error | **0.44–0.59 is the ENLARGEMENT share.** A histologically measured cell height is the *whole cell*, so the right factor is `division + enlargement` — the cell's share of the volume removed at the junction |
+| corrected band | `31.67 × 0.504–0.685` = **16.0 – 21.7 µm**, and that is a *lower* bound, because longitudinal septa add volume without adding axial length. Honest bracket: **21.7 – 31.7 µm** |
+
+Wilsman's four-plate decomposition, with the cell share computed from its Tables 5 and 6:
+
+| plate | rate µm/day | division | matrix | enlargement | **cell** |
+|---|---:|---:|---:|---:|---:|
+| proximal tibia | 396 | 9.0 % | 31.5 % | 59.5 % | **68.5 %** |
+| distal radius | 269 | 9.5 % | 32.2 % | 58.3 % | **67.8 %** |
+| distal tibia | 138 | 9.3 % | 40.7 % | 50.0 % | **59.3 %** |
+| proximal radius | 47 | 8.1 % | 48.6 % | 43.2 % | **51.4 %** |
+
+The same error was live in `flow_model.py`, which divided by `f_hyp` and so inflated
+predicted elongation by up to **1.4×**. The chain now divides by `f_cell`.
+
+## And the measurement it was scored against is contested
+
+`kember1976` measured this quantity too — **twelve subjects**, not one — and got a
+different answer:
+
+| | kember1976 | thurston1985 |
+|---|---|---|
+| **33 ± 5 µm** (series 29–38) | **20.5 µm** |
+| 12 subjects | 1 subject |
+| ~50 cells each | 20 cells |
+| celloidin, **13 % shrinkage measured and corrected** | paraffin, decalcified, **no correction reported** |
+
+**61 % disagreement.** Kember's 33 µm sits at the top of the corrected bracket;
+Thurston's 20.5 µm sits below the bottom. Recorded as contradiction **C-L1-07**, not
+averaged.
+
+## Tier 1 experiment 1 is not retired. It is re-specified, and it got cheaper.
+
+ANNEX 2 said the height half was done. It is not: **two human measurements of it disagree
+by 61 %, and neither reports the transverse diameter that would give a volume.** The
+experiment is now a *decision* between two existing numbers plus one new one:
+
+> On archival human physeal sections — including, if obtainable, the originals — measure
+> the terminal cell's **axial height and transverse diameter** in the same field, with a
+> **measured, stated shrinkage correction** and a declared embedding medium. That
+> resolves C-L1-07 and yields the first human hypertrophic *volume* in one pass, with no
+> new tissue.
+
+## The new number one is sharper still, and there is a second species transfer inside it
+
+`T_c_human_d` remains ~80 % of model uncertainty; its span widens to **1.29 – 41.4 days**.
+Closing kember1976's own coherent pair (24 cells, its own 33 µm, its own 38 µm/day) under
+the rat cell share instead of the implicit 100 % gives **30–41 days**.
+
+Both published human derivations assume the cell height is the *entire* axial advance —
+they differ only in which height they use, and neither states the assumption. And
+**N_p = 24 is not a count**: the measured human quantity is **36** maturing-plus-
+proliferating cells, and the two-thirds split is taken from the **rabbit**, because no
+morphological criterion separates the populations in a stained human section. Kember's own
+lower bound of 20 cells gives 16 days.
+
+One assumption survived: rat proliferative-zone **growth fraction is 0.89–0.99**, measured
+to plateau by cumulative BrdU (`wilsman1996`) — so "every PZ cell cycles" is measured, not
+assumed, in rat, and is lowest in the slowest plate.
+
+The EdU cumulative-labelling design in §2 still separates every live hypothesis, because
+it measures `T_c` **without** the growth rate. Its saturation windows now read:
+
+| saturation | reading |
+|---|---|
+| **2–3 d** | both published figures wrong; small growth fraction, fast cycle |
+| **16–20 d** | the published derivations are right, and the human cell height really is the whole axial advance — unlike any measured rodent plate |
+| **30–41 d** | the cell-share-corrected reading is right, human partition is rat-like, and both published human cycle times are too short |

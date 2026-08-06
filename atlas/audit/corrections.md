@@ -703,3 +703,186 @@ unrelated reason, which is the least reassuring way to find a systematic defect.
 
 Separately, `porcine_growth_plate_model` cited **`Thurston AJ`**; the author is **Thurston
 MN**, and the entry carried no PMID to cross-check against. Both corrected.
+
+---
+
+## CORR-008 — the two ⛔ papers arrived and overturned CORR-006, including the part I was most confident about
+
+**Date traced:** 2026-08-06
+**Trigger:** the user supplied full texts of **kember1976** (PMID 1018028) and **wilsman1996**
+(PMID 8982136), the two rows CORR-007 had marked ⛔ as blocking a model parameter.
+
+Both were right to be marked. Between them they falsify three separate claims made in
+CORR-006 **eighteen hours earlier**, and the largest of those claims was the one stated
+most confidently.
+
+---
+
+### Overturned claim 1 — Kember did not "silently assume" a cell height. Kember MEASURED it.
+
+CORR-006 Part 2 asserted:
+
+> | kember1976 | 24 | 20 d | **31.7 µm** — never stated in the paper | *not measured* |
+
+**That is wrong, and the paper is entirely explicit.** Its Methods:
+
+> *"The height of hypertrophic cartilage cells was also measured — that is, the maximum
+> dimension of the cell spaces in the direction of growth of the bone."*
+
+Its Results:
+
+> *"The mean heights of hypertrophic cells, from birth to thirteen years of age, were all
+> within the range 29 to 38 µm… For the age range five to eight years, the mean value was
+> **33 ± 5 µm**."*
+
+And the derivation, stated step by step:
+
+> *"the mean cell cycle time is equal to the number of proliferating cells per column
+> divided by the rate of new cell production, and this can be obtained from the observed
+> growth rate of the plate and **the mean height of hypertrophic cells** in the columns"*
+
+38 µm/day ÷ 33 µm = **1.15 cells/day**, which the paper rounds to 1.2; 24 ÷ 1.2 = **20
+days**. My "31.7 µm implied, never stated" was a back-calculation from the *rounded* 1.2,
+and it recovered a number the paper had actually printed 5 pages earlier.
+
+**How the error happened, because the mechanism matters more than the number.** The atlas
+held kember1976 as a cited source with several rows extracted from it, and `verify_refs`
+passed it every time — the PMID resolves, the authors match, the title matches. **Every
+identity check the atlas runs was satisfied by a source whose most important number had
+never been read.** Existence-checking a citation and having read it are different
+properties, and only the first was ever tested.
+
+---
+
+### Overturned claim 2 — there is no 61 %/101 % split between the two derivations. Both assume the same thing.
+
+CORR-006 Part 3 built this table and drew a conclusion from it:
+
+| set | implied hypertrophic share | *(as published in CORR-006)* |
+|---|---:|---|
+| kember1976 — 24 cells, 20 d | 64.7 % | "plausible" |
+| thurston1985 — 28 cells, 15 d | 101 % | "no measured plate approaches this" |
+
+**The 64.7 % is an artefact of pairing Kember's cycle time with *Thurston's* height** —
+precisely the mixing the same entry had just built an `IncoherentDerivation` guard to
+forbid. The guard fired on the forward chain and I performed the same substitution by hand
+one section later.
+
+With each paper's **own** height:
+
+| set | h_term used | per-cycle advance | implied cell share |
+|---|---:|---:|---:|
+| kember1976 — 24 cells, 20 d | **33 µm (its own)** | 31.7 µm | **~100 %** |
+| thurston1985 — 28 cells, 15 d | **20.5 µm (its own)** | 20.4 µm | **~100 %** |
+
+**Both derivations assume the cell height is the entire axial advance.** Neither is "more
+compatible with the rest of the record"; they share the identical structural assumption.
+CORR-006's conclusion that *"of the two published human cycle times, the newer one is the
+less compatible"* is **withdrawn**.
+
+---
+
+### Overturned claim 3 — the prediction failed by more than 9.6 %, and against the wrong yardstick
+
+The band was `31.67 µm × rat hypertrophic share 0.44–0.59 = 13.9–18.7 µm`. **The 0.44–0.59
+is the wrong factor**, and wilsman1996's full text is what shows it.
+
+Wilsman partitions elongation into **three** parts, not two:
+
+| plate | rate (µm/day) | division | matrix | enlargement | **cell = div + enlarge** | *published v_V hyp* |
+|---|---:|---:|---:|---:|---:|---:|
+| proximal tibia | 396 | 9.0 % | 31.5 % | 59.5 % | **68.5 %** | *0.685* |
+| distal radius | 269 | 9.5 % | 32.2 % | 58.3 % | **67.8 %** | *0.675* |
+| distal tibia | 138 | 9.3 % | 40.7 % | 50.0 % | **59.3 %** | *0.595* |
+| proximal radius | 47 | 8.1 % | 48.6 % | 43.2 % | **51.4 %** | *0.504* |
+
+*(division/matrix/enlargement derived here from the paper's Tables 5 and 6 — the text gives
+only the two extreme plates, 9/32/59 and 7/49/44, with the middle two in Figure 1 alone.
+The derivation reproduces the paper's independently reported hypertrophic volume fractions
+to within rounding, which is the check that it is the intended decomposition.)*
+
+**A histologically measured cell height is the whole cell.** It therefore corresponds to
+`division + enlargement` — the cell's share of the volume removed at the junction — **not
+to enlargement alone**. The enlargement figure excludes the volume the cell already had
+when it left the proliferative zone, and that volume is physically present in the section
+being measured.
+
+So the corrected band is `31.67 × 0.504–0.685 = **16.0–21.7 µm**`, and even that is a
+**lower** bound on the axial share, because longitudinal septal matrix adds volume without
+adding axial length. The honest bracket runs **21.7 µm to 31.7 µm**.
+
+Scoring both human measurements against it:
+
+| | measured | vs corrected bracket 21.7–31.7 µm |
+|---|---:|---|
+| kember1976 (n=12, celloidin, shrinkage-corrected) | **33 ± 5 µm** | at/just above the top |
+| thurston1985 (n=1, paraffin, no correction) | **20.5 µm** | below the bottom |
+
+The prediction failed **because the atlas divided by the wrong fraction**, not because
+human cells are unusual. That error was also live in `flow_model.py`, whose step 3 divided
+the step-2 cell-height flux by `f_hyp` — inflating predicted elongation by up to **1.4×**.
+The chain now carries a separate `f_cell` (0.504–0.685) as the step-3 denominator, with
+`f_hyp` retained as a recorded quantity that is explicitly *not* the conversion factor.
+
+---
+
+### The new finding: two human measurements of one quantity, disagreeing by 61 %
+
+| | kember1976 | thurston1985 |
+|---|---|---|
+| value | **33 ± 5 µm** (series 29–38 µm) | **20.5 µm** |
+| subjects | **12**, birth to 14 y | **1** |
+| cells measured | 5 groups of 10 per specimen | 20 |
+| embedding | **celloidin**, 15 µm | **paraffin**, EDTA-decalcified |
+| shrinkage | **measured at 13 % and corrected** | **not reported** |
+| source of material | necropsy, accident/acute illness | osteosarcoma of contralateral tibia |
+
+**The lower value lies outside the entire range of the larger series**, and getting from
+33 µm to 20.5 µm requires **38 % linear shrinkage**. The methodological asymmetry runs one
+way on every axis. That is not the same as being settled, and it is recorded as
+contradiction **C-L1-07** rather than averaged. The flow model's `h_term_um` span is
+stamped `CONTRADICTION`, not `MEASURED_SPREAD`.
+
+### Consequence for the 80 % parameter
+
+Closing kember1976's own coherent pair (24 cells, its own 33 µm) against its own
+38 µm/day, under the rat **cell** share instead of the implicit 100 %:
+
+> **human proliferative cell cycle time = 30–41 days**
+
+longer than every published figure, and longer than CORR-006's 22–34 day estimate, which
+used the wrong height and the wrong fraction. `T_c_human_d` upper bound: 34.3 d → **41.4 d**.
+
+There is a second species transfer buried inside the human number, and kember1976 states
+it plainly: **N_p = 24 is not a count.** The measured human quantity is **36** combined
+maturing-plus-proliferating cells; the two-thirds split is taken from the **rabbit**,
+because no morphological criterion separates the two populations in a stained human
+section. Both rows are now recorded separately, with the transfer named.
+
+One assumption survives contact with the new data: wilsman1996 measures the rat
+proliferative-zone **growth fraction to plateau** at **0.89–0.99**, so "every PZ cell
+cycles" is measured rather than assumed — in rat, and at its lowest in the slowest plate,
+which is the direction that matters for a slow human plate.
+
+### Two model defects this exposed, beyond the arithmetic
+
+1. **Step 2's caveats were hardcoded.** Rebinding the human sites from thurston1985 to
+   kember1976 left Thurston's caveats — *"n=1 subject"*, *"decalcified paraffin"*,
+   *"osteosarcoma of the contralateral tibia"* — printing underneath Kember's
+   twelve-subject celloidin value. Provenance text now reads the row's own `conditions`
+   and `uncertainty` at run time, and auto-detects contradicting rows for the same
+   quantity and species. **A caveat that does not travel with its row will eventually
+   describe the wrong row.**
+2. **Content addressing worked, loudly.** Editing the `conditions` text on the 20.5 µm row
+   changed its content hash; the model raised `KeyError: param_id p_d71f9c2a58 is not in
+   parameters.csv` and refused to run rather than reading a neighbouring row. That is the
+   failure mode the positional-id defect caused silently in Phase 6.
+
+### What CORR-006 got right, for the record
+
+Its Part 2 diagnosis was correct in structure even where wrong in detail: the two
+derivations *are* mutually incompatible, mixing them *does* corrupt the chain, and the
+`IncoherentDerivation` guard is still the right object. And its headline stands unchanged
+— **the atlas wrote down a falsifiable number and the number was wrong.** It was wrong by
+more than reported, for a different reason than reported, and both facts were found by
+reading the two papers it had been citing without reading.

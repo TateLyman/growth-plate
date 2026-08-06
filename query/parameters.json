@@ -5348,7 +5348,7 @@
     "uncertainty": "range across five animals (29, 22, 27, 35, 32 um); decalcified paraffin histology",
     "node_id": "porcine_growth_plate_model",
     "layer": "L13",
-    "reliability_class": "range_value"
+    "reliability_class": "multi_source"
    }
   ],
   "proteomics_growth_plate": [
@@ -5897,13 +5897,49 @@
     "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
     "value": "20",
     "unit": "days",
-    "conditions": "human distal femur, derived from 24 cells per column and 1.4 cm/yr growth rate",
+    "conditions": "human distal femur, ages 5-8 y; the derivation is stated in full - new cells per day = growth rate / mean hypertrophic cell height = 38 um/day / 33 um = 1.2 per day, and cycle time = 24 proliferating cells / 1.2 = 20 days",
     "species": "human",
     "source_ref": "kember1976",
-    "uncertainty": "derived quantity; assumes steady state and 100% growth fraction",
+    "uncertainty": "derived quantity, and derived from the growth rate it would be used to predict. Two further assumptions are load-bearing and both are stated by the authors: (i) the cell height IS the whole axial advance per cycle, i.e. matrix synthesis contributes nothing to elongation, which rat stereology contradicts (wilsman1996: cells are 50-69% of the volume removed at the junction); (ii) the proliferating fraction of the columnar zone is two-thirds, a ratio taken from the RABBIT, applied to a measured human count of 36 maturing-plus-proliferating cells to give 24.",
     "node_id": "cell_cycle_time_pz",
     "layer": "L1",
     "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "mean cell cycle time, proliferative zone (lower bound, author-stated)",
+    "value": "16",
+    "unit": "days",
+    "conditions": "human distal femur, ages 5-8 y; the authors' own lower bound, from their statement that it is unlikely that fewer than twenty cells lie in the proliferation zone",
+    "species": "human",
+    "source_ref": "kember1976",
+    "uncertainty": "a bound on the N_p input only; it does not relax the assumption that the cell height is the whole axial advance, which is the assumption that would raise the estimate rather than lower it",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
+    "value": "30",
+    "unit": "days",
+    "conditions": "human distal femur, 3.5-year-old specimen; same method, which the authors describe as less reliable data",
+    "species": "human",
+    "source_ref": "kember1976",
+    "uncertainty": "single specimen; the authors give 20 days at 2 years and 30 days at 3.5 years and decline to estimate at all for the 13- and 14-year-olds because of growth-spurt variability",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "growth fraction, proliferative zone",
+    "value": "0.89-0.99",
+    "unit": "fraction",
+    "conditions": "28-day-old Long-Evans rat, four growth plates; maximum cumulative BrdU labelling index, 0.99 proximal tibia, 0.99 distal radius, 0.98 distal tibia, 0.89 proximal radius",
+    "species": "rat",
+    "source_ref": "wilsman1996",
+    "uncertainty": "the labelling index is followed to plateau (43-81-99% at 12-24-48 h in the proximal tibia), so this is a measured saturation, not an assumption. It is the strongest available support for the 100%-growth-fraction assumption in the human derivations - in RAT, and lowest in the slowest plate, which is the direction that matters for a slow human plate.",
+    "node_id": "cell_cycle_time_pz",
+    "layer": "L1",
+    "reliability_class": "range_value"
    },
    {
     "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
@@ -6599,13 +6635,25 @@
     "parameter": "cells per proliferative column",
     "value": "24",
     "unit": "cells",
-    "conditions": "human distal femur histology",
+    "conditions": "human distal femur, ages 5-8 y; two-thirds of a MEASURED 36 maturing-plus-proliferating cells per column, the two-thirds ratio taken from the rabbit growth plate because no morphological criterion distinguishes proliferating from maturing cells in a stained human section",
     "species": "human",
     "source_ref": "kember1976",
-    "uncertainty": "single-study value",
+    "uncertainty": "NOT a direct count. The human measurement is 36 combined cells; the split into 24 proliferating is a RABBIT-derived fraction applied to it, and the paper says so. The authors give a lower bound of 20 cells, which would make the cycle time 16 days. This is a species transfer sitting inside the atlas's only human column-length number.",
     "node_id": "distal_femur_plate",
     "layer": "L1",
     "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "maturing plus proliferating cells per column (directly counted)",
+    "value": "36",
+    "unit": "cells",
+    "conditions": "human distal femur, ages 5-8 y; counted on approximately every fiftieth column, hypertrophic cells counted separately",
+    "species": "human",
+    "source_ref": "kember1976",
+    "uncertainty": "the directly measured quantity, before the rabbit-derived two-thirds split. Across the 12-subject series this count falls with age (62 at birth to 21-28 at 13-14 y) but the paper notes no marked decline until the plate closes. Counts are described by the authors as \"to some extent subjective\", involving judgement about where a column ends and where hypertrophy begins.",
+    "node_id": "distal_femur_plate",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
    },
    {
     "parameter": "cells per proliferative column",
@@ -6621,15 +6669,27 @@
    },
    {
     "parameter": "terminal hypertrophic cell height along the growth axis",
-    "value": "20.5",
+    "value": "33",
     "unit": "um",
-    "conditions": "human distal femur, 10-year-old girl, mean of 20 cells along the metaphyseal border",
+    "conditions": "human distal femur, ages 5-8 years, necropsy material; maximum dimension of the cell space along the growth axis, averaged over five groups of ten cells at regular intervals along the metaphyseal border; celloidin embedding, 15 um sections, and a measured 13% linear processing shrinkage corrected for",
     "species": "human",
-    "source_ref": "thurston1985",
-    "uncertainty": "no dispersion reported; n=1 subject; decalcified paraffin histology, which shrinks hypertrophic lacunae by an unquantified amount, so this is a lower bound",
+    "source_ref": "kember1976",
+    "uncertainty": "+/- 5 um SD across the three specimens in the 5-8 y band; the full series of 12 subjects from birth to 13 y spans 29-38 um with no age dependence, and the two 14-year-olds gave 39 um (male) and 25 um (female) with closure in progress. THIS IS THE ROW THE 20-DAY CYCLE TIME IS DERIVED FROM and the paper states the derivation explicitly. It CONTRADICTS thurston1985's 20.5 um by 61%.",
     "node_id": "distal_femur_plate",
     "layer": "L1",
-    "reliability_class": "single_source_with_uncertainty"
+    "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height along the growth axis",
+    "value": "20.5",
+    "unit": "um",
+    "conditions": "human distal femur, 10-year-old girl, mean of 20 cells along the metaphyseal border; decalcified paraffin, no shrinkage correction reported",
+    "species": "human",
+    "source_ref": "thurston1985",
+    "uncertainty": "no dispersion reported; n=1 subject. CONTRADICTS kember1976's 33 +/- 5 um (n=12 subjects, ~50 cells each) by 61%, and lies outside that series' entire 29-38 um range. Reaching 20.5 from 33 requires 38% linear shrinkage; kember1976 measured its own shrinkage at 13% and corrected for it, thurston1985 reports none. Method asymmetry favours the higher value but does not settle it - see contradiction C-L1-07 and gap g_l1arch_009.",
+    "node_id": "distal_femur_plate",
+    "layer": "L1",
+    "reliability_class": "multi_source"
    },
    {
     "parameter": "derived mean proliferative cell cycle time",
@@ -6814,6 +6874,42 @@
     "node_id": "elongation_budget",
     "layer": "L1",
     "reliability_class": "single_source_point_no_uncertainty"
+   },
+   {
+    "parameter": "contribution of cell division to elongation",
+    "value": "7",
+    "unit": "% of elongation",
+    "conditions": "proximal radius (slowest plate, 47 um/day), 28-day-old Long-Evans rat",
+    "species": "rat",
+    "source_ref": "wilsman1996",
+    "uncertainty": "as stated in the text; the value computed from the paper's own Tables 5 and 6 is 8.1%",
+    "node_id": "elongation_budget",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "elongation partition across all four plates (division / matrix / enlargement)",
+    "value": "9/32/59, 9/32/58, 9/41/50, 8/49/43",
+    "unit": "% of elongation",
+    "conditions": "proximal tibia (396 um/day), distal radius (269), distal tibia (138), proximal radius (47); 28-day-old Long-Evans rat, unit-cylinder model",
+    "species": "rat",
+    "source_ref": "wilsman1996",
+    "uncertainty": "DERIVED BY THIS ATLAS from the paper's Tables 5 and 6 - the text states only the two extreme plates (9/32/59 and 7/49/44) and Figure 1 carries the middle two. Computed as division = T5 cell volume / T6 total, matrix = T6 matrix / T6 total, enlargement = (T6 cell - T5 cell) / T6 total. The derivation reproduces the paper's independently reported hypertrophic volume fractions (0.685 / 0.675 / 0.595 / 0.504) to within rounding, which is the check that it is the intended decomposition. Middle two plates carry no published dispersion.",
+    "node_id": "elongation_budget",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
+   },
+   {
+    "parameter": "cell share of the volume removed at the chondro-osseous junction",
+    "value": "68.5, 67.8, 59.3, 51.4",
+    "unit": "% of elongation",
+    "conditions": "proximal tibia, distal radius, distal tibia, proximal radius; equals division plus enlargement, i.e. all of the removed volume that is cell rather than matrix",
+    "species": "rat",
+    "source_ref": "wilsman1996",
+    "uncertainty": "DERIVED as division + enlargement from the rows above; matches the paper's directly measured hypertrophic volume fractions 0.685/0.675/0.595/0.504. THIS IS THE QUANTITY TO COMPARE A MEASURED TERMINAL CELL HEIGHT AGAINST, not the 44-59% enlargement figure - a histological cell height includes the volume the cell already had on leaving the proliferative zone. It is also a LOWER bound on the axial-height share, because longitudinal septal matrix adds volume without adding axial length.",
+    "node_id": "elongation_budget",
+    "layer": "L1",
+    "reliability_class": "single_source_with_uncertainty"
    },
    {
     "parameter": "range of elongation rates across the four plates compared",
@@ -7117,15 +7213,63 @@
    },
    {
     "parameter": "terminal hypertrophic cell height along the growth axis",
+    "value": "33",
+    "unit": "um",
+    "conditions": "human distal femur, ages 5-8 y, necropsy; maximum dimension of the cell space along the growth axis, five groups of ten cells per specimen; celloidin, 13% linear shrinkage measured and corrected",
+    "species": "human",
+    "source_ref": "kember1976",
+    "uncertainty": "+/- 5 um SD; 12 subjects birth to 14 y give 29-38 um with no age dependence. Contradicts thurston1985 (20.5 um, n=1, decalcified paraffin, no shrinkage correction) by 61%.",
+    "node_id": "hypertrophic_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "multi_source"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height, full human series",
+    "value": "29-38",
+    "unit": "um",
+    "conditions": "human distal femur, 12 subjects from birth to 13 years; no evidence of age dependence across the series. The two 14-year-olds, with closure in progress, gave 39 um (male) and 25 um (female)",
+    "species": "human",
+    "source_ref": "kember1976",
+    "uncertainty": "range of per-subject means; this is the only multi-subject human series of this measurement in existence",
+    "node_id": "hypertrophic_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "terminal hypertrophic cell volume",
+    "value": "4135-14997",
+    "unit": "um^3",
+    "conditions": "28-day-old Long-Evans rat, four growth plates; 14,997 proximal tibia (fastest, 396 um/day) to 4,135 proximal radius (slowest, 47 um/day), volume-weighted mean cell volume by stereology",
+    "species": "rat",
+    "source_ref": "wilsman1996",
+    "uncertainty": "SD 1,970 / 2,220 / 1,570 / 510 respectively; correlates with elongation rate across plates",
+    "node_id": "hypertrophic_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "cell fraction of the volume removed at the chondro-osseous junction",
+    "value": "0.504-0.685",
+    "unit": "fraction",
+    "conditions": "28-day-old rat; hypertrophic-zone volume fraction, 0.685 proximal tibia, 0.675 distal radius, 0.595 distal tibia, 0.504 proximal radius",
+    "species": "rat",
+    "source_ref": "wilsman1996",
+    "uncertainty": "SD 0.021-0.042. THIS, NOT THE 44-59% ENLARGEMENT FIGURE, is the quantity to compare a measured terminal cell HEIGHT against: it equals cell division plus cell enlargement (9+59=68.5%, 8+43=51.4%) and is a LOWER bound on the axial-height fraction, because longitudinal septa add volume without adding axial length.",
+    "node_id": "hypertrophic_chondrocyte",
+    "layer": "L1",
+    "reliability_class": "range_value"
+   },
+   {
+    "parameter": "terminal hypertrophic cell height along the growth axis",
     "value": "20.5",
     "unit": "um",
-    "conditions": "human distal femur, 10-year-old girl (osteosarcoma of contralateral tibia), mean of 20 cells along the metaphyseal border measured with an eyepiece graticule; formal saline fixation, neutral EDTA decalcification, paraffin section",
+    "conditions": "human distal femur, 10-year-old girl (osteosarcoma of contralateral tibia), mean of 20 cells along the metaphyseal border measured with an eyepiece graticule; formal saline fixation, neutral EDTA decalcification, paraffin section, no shrinkage correction reported",
     "species": "human",
     "source_ref": "thurston1985",
     "uncertainty": "no dispersion reported; n=1 subject, 20 cells; decalcified paraffin histology shrinks hypertrophic lacunae by an unreported amount, so this is a lower bound on the in vivo height",
     "node_id": "hypertrophic_chondrocyte",
     "layer": "L1",
-    "reliability_class": "single_source_with_uncertainty"
+    "reliability_class": "multi_source"
    },
    {
     "parameter": "terminal hypertrophic cell height along the growth axis",
@@ -7137,7 +7281,7 @@
     "uncertainty": "no dispersion reported; n=1 subject; the child's underlying diagnosis is a limb malformation, so this is not a normal-development value",
     "node_id": "hypertrophic_chondrocyte",
     "layer": "L1",
-    "reliability_class": "single_source_with_uncertainty"
+    "reliability_class": "multi_source"
    },
    {
     "parameter": "terminal hypertrophic cell height along the growth axis",
@@ -7149,7 +7293,7 @@
     "uncertainty": "range across five animals (29, 22, 27, 35, 32 um); no within-animal dispersion reported",
     "node_id": "hypertrophic_chondrocyte",
     "layer": "L1",
-    "reliability_class": "range_value"
+    "reliability_class": "multi_source"
    },
    {
     "parameter": "correlation of final volume with elongation rate",
@@ -19666,16 +19810,123 @@
    ],
    "unit_clash": true
   },
+  "along axis cell growth height hypertrophic terminal": {
+   "rows": [
+    {
+     "parameter": "terminal hypertrophic cell height along the growth axis",
+     "value": "22-35",
+     "unit": "um",
+     "conditions": "distal femur, five pigs, mean of 20 cells each along the metaphyseal border",
+     "species": "porcine",
+     "source_ref": "thurston1985",
+     "uncertainty": "range across five animals (29, 22, 27, 35, 32 um); decalcified paraffin histology",
+     "node_id": "porcine_growth_plate_model",
+     "layer": "L13",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "terminal hypertrophic cell height along the growth axis",
+     "value": "33",
+     "unit": "um",
+     "conditions": "human distal femur, ages 5-8 years, necropsy material; maximum dimension of the cell space along the growth axis, averaged over five groups of ten cells at regular intervals along the metaphyseal border; celloidin embedding, 15 um sections, and a measured 13% linear processing shrinkage corrected for",
+     "species": "human",
+     "source_ref": "kember1976",
+     "uncertainty": "+/- 5 um SD across the three specimens in the 5-8 y band; the full series of 12 subjects from birth to 13 y spans 29-38 um with no age dependence, and the two 14-year-olds gave 39 um (male) and 25 um (female) with closure in progress. THIS IS THE ROW THE 20-DAY CYCLE TIME IS DERIVED FROM and the paper states the derivation explicitly. It CONTRADICTS thurston1985's 20.5 um by 61%.",
+     "node_id": "distal_femur_plate",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "terminal hypertrophic cell height along the growth axis",
+     "value": "20.5",
+     "unit": "um",
+     "conditions": "human distal femur, 10-year-old girl, mean of 20 cells along the metaphyseal border; decalcified paraffin, no shrinkage correction reported",
+     "species": "human",
+     "source_ref": "thurston1985",
+     "uncertainty": "no dispersion reported; n=1 subject. CONTRADICTS kember1976's 33 +/- 5 um (n=12 subjects, ~50 cells each) by 61%, and lies outside that series' entire 29-38 um range. Reaching 20.5 from 33 requires 38% linear shrinkage; kember1976 measured its own shrinkage at 13% and corrected for it, thurston1985 reports none. Method asymmetry favours the higher value but does not settle it - see contradiction C-L1-07 and gap g_l1arch_009.",
+     "node_id": "distal_femur_plate",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "terminal hypertrophic cell height along the growth axis",
+     "value": "33",
+     "unit": "um",
+     "conditions": "human distal femur, ages 5-8 y, necropsy; maximum dimension of the cell space along the growth axis, five groups of ten cells per specimen; celloidin, 13% linear shrinkage measured and corrected",
+     "species": "human",
+     "source_ref": "kember1976",
+     "uncertainty": "+/- 5 um SD; 12 subjects birth to 14 y give 29-38 um with no age dependence. Contradicts thurston1985 (20.5 um, n=1, decalcified paraffin, no shrinkage correction) by 61%.",
+     "node_id": "hypertrophic_chondrocyte",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "terminal hypertrophic cell height along the growth axis",
+     "value": "20.5",
+     "unit": "um",
+     "conditions": "human distal femur, 10-year-old girl (osteosarcoma of contralateral tibia), mean of 20 cells along the metaphyseal border measured with an eyepiece graticule; formal saline fixation, neutral EDTA decalcification, paraffin section, no shrinkage correction reported",
+     "species": "human",
+     "source_ref": "thurston1985",
+     "uncertainty": "no dispersion reported; n=1 subject, 20 cells; decalcified paraffin histology shrinks hypertrophic lacunae by an unreported amount, so this is a lower bound on the in vivo height",
+     "node_id": "hypertrophic_chondrocyte",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "terminal hypertrophic cell height along the growth axis",
+     "value": "26",
+     "unit": "um",
+     "conditions": "human metatarsals, 18-month-old girl (congenital absence of tibia), same method; the distal fibula of the same child gave the same value but that bone is described by the authors as grossly abnormal",
+     "species": "human",
+     "source_ref": "thurston1985",
+     "uncertainty": "no dispersion reported; n=1 subject; the child's underlying diagnosis is a limb malformation, so this is not a normal-development value",
+     "node_id": "hypertrophic_chondrocyte",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "terminal hypertrophic cell height along the growth axis",
+     "value": "22-35",
+     "unit": "um",
+     "conditions": "pig distal femur, five animals aged 8.0-10.5 months (two of the five undated), same graticule method",
+     "species": "porcine",
+     "source_ref": "thurston1985",
+     "uncertainty": "range across five animals (29, 22, 27, 35, 32 um); no within-animal dispersion reported",
+     "node_id": "hypertrophic_chondrocyte",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    }
+   ],
+   "n_sources": 2,
+   "value_spread_ratio": 1.6097560975609757,
+   "direction_conflict": false,
+   "units": [
+    "um"
+   ],
+   "unit_clash": false
+  },
   "cell cycle derived mean measured not proliferative time zone": {
    "rows": [
     {
      "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
      "value": "20",
      "unit": "days",
-     "conditions": "human distal femur, derived from 24 cells per column and 1.4 cm/yr growth rate",
+     "conditions": "human distal femur, ages 5-8 y; the derivation is stated in full - new cells per day = growth rate / mean hypertrophic cell height = 38 um/day / 33 um = 1.2 per day, and cycle time = 24 proliferating cells / 1.2 = 20 days",
      "species": "human",
      "source_ref": "kember1976",
-     "uncertainty": "derived quantity; assumes steady state and 100% growth fraction",
+     "uncertainty": "derived quantity, and derived from the growth rate it would be used to predict. Two further assumptions are load-bearing and both are stated by the authors: (i) the cell height IS the whole axial advance per cycle, i.e. matrix synthesis contributes nothing to elongation, which rat stereology contradicts (wilsman1996: cells are 50-69% of the volume removed at the junction); (ii) the proliferating fraction of the columnar zone is two-thirds, a ratio taken from the RABBIT, applied to a measured human count of 36 maturing-plus-proliferating cells to give 24.",
+     "node_id": "cell_cycle_time_pz",
+     "layer": "L1",
+     "reliability_class": "multi_source"
+    },
+    {
+     "parameter": "mean cell cycle time, proliferative zone (derived, not measured)",
+     "value": "30",
+     "unit": "days",
+     "conditions": "human distal femur, 3.5-year-old specimen; same method, which the authors describe as less reliable data",
+     "species": "human",
+     "source_ref": "kember1976",
+     "uncertainty": "single specimen; the authors give 20 days at 2 years and 30 days at 3.5 years and decline to estimate at all for the 13- and 14-year-olds because of growth-spurt variability",
      "node_id": "cell_cycle_time_pz",
      "layer": "L1",
      "reliability_class": "multi_source"
@@ -19694,7 +19945,7 @@
     }
    ],
    "n_sources": 2,
-   "value_spread_ratio": 1.3333333333333333,
+   "value_spread_ratio": 2.0,
    "direction_conflict": false,
    "units": [
     "days"
@@ -19707,10 +19958,10 @@
      "parameter": "cells per proliferative column",
      "value": "24",
      "unit": "cells",
-     "conditions": "human distal femur histology",
+     "conditions": "human distal femur, ages 5-8 y; two-thirds of a MEASURED 36 maturing-plus-proliferating cells per column, the two-thirds ratio taken from the rabbit growth plate because no morphological criterion distinguishes proliferating from maturing cells in a stained human section",
      "species": "human",
      "source_ref": "kember1976",
-     "uncertainty": "single-study value",
+     "uncertainty": "NOT a direct count. The human measurement is 36 combined cells; the split into 24 proliferating is a RABBIT-derived fraction applied to it, and the paper says so. The authors give a lower bound of 20 cells, which would make the cycle time 16 days. This is a species transfer sitting inside the atlas's only human column-length number.",
      "node_id": "distal_femur_plate",
      "layer": "L1",
      "reliability_class": "multi_source"
@@ -20038,6 +20289,7 @@
   "across age correlation markers peak pubertal velocity",
   "across age girls markers mean peak pubertal six velocity",
   "across agreement ankle fusion inter knee mri observer score wrist",
+  "across all division elongation enlargement four matrix partition plates",
   "across animal elongation four growth one plates range rates",
   "across arms four height mean velocity year",
   "across axis donor donor five fold fraction more probe sets than varying zonal",
@@ -20562,6 +20814,7 @@
   "attributable growth individuals linear proportion sites variance within",
   "attributable growth linear proportion site study variance",
   "auc carbamazepine cyp2c9 cyp3a4 dual free inducer reduction",
+  "author bound cell cycle lower mean proliferative stated time zone",
   "automated precision radiograph repeat",
   "autopsy contributing distinct donors fetal growth perinatal plate",
   "available collagen gap intrafibrillar length nucleation zone",
@@ -20767,19 +21020,22 @@
   "cd105 cd200 cells mcherry mssc phenotype pthrp",
   "cdc correction factor fitting heights matched multiplicative percentile sex",
   "cdc guideline range sds standards target under",
+  "cell chondro fraction junction osseous removed volume",
+  "cell chondro junction osseous removed share volume",
   "cell coefficient final growth height hypertrophic multiple rate regression",
   "cell coefficient growth multiple number proliferative rate regression unit width",
   "cell contractured human muscle number satellite",
   "cell contribution direct division elongation",
-  "cell contribution division elongation",
   "cell correlation growth height hypertrophic maximum rate",
   "cell correlation growth number proliferative rate unit width",
   "cell cycle derived mean proliferative time",
   "cell cycle mean proliferative time zone",
   "cell enlargement hypertrophic start volume",
+  "cell full height human hypertrophic series terminal",
   "cell height hypertrophic igf1 null reduction",
   "cell height hypertrophic increase jerboa metatarsal mouse",
   "cell height hypertrophic jerboa metatarsal mouse",
+  "cell hypertrophic terminal volume",
   "cell increase matrix mean volume",
   "cells cfu frequency lepr within",
   "cells chondrocyte cxcl12 derived gfp plateau stromal time",
@@ -20787,6 +21043,7 @@
   "cells colony creer developing formation p12 pthrp pulsed secondary soc",
   "cells colony creer formation pre pthrp pulsed secondary soc",
   "cells colony forming fraction long pthrp renewing self term",
+  "cells column counted directly maturing plus proliferating",
   "cells column day lost",
   "cells column dynamic growth plate proliferative static thickness",
   "cells column human proliferative zone",
@@ -21216,6 +21473,7 @@
   "fold increase total volume",
   "follow gymnasts height over sds trajectory",
   "found function heterozygous loss mutations nppc",
+  "fraction growth proliferative zone",
   "fraction height humerus standing",
   "fraction height radius standing",
   "free igf",
@@ -21328,12 +21586,12 @@
   "secretion total"
  ],
  "reliability_classes": {
-  "single_source_with_uncertainty": 1251,
+  "single_source_with_uncertainty": 1253,
   "spread_documented": 56,
   "unverified": 40,
-  "range_value": 128,
+  "range_value": 130,
   "single_source_point_no_uncertainty": 65,
-  "multi_source": 17,
+  "multi_source": 25,
   "superseded": 3
  },
  "reliability_policy": "Phase 2e. Disputes in this atlas are NOT encoded as duplicate rows - ~94% of parameter names appear once. They are encoded in the row's own uncertainty/conditions text or in a range-valued `value`. single_source_point_no_uncertainty is the RISK class: one source, a point value, and no stated uncertainty.",

@@ -83,10 +83,46 @@ quantitative:
 - parameter: mean cell cycle time, proliferative zone (derived, not measured)
   value: '20'
   unit: days
-  conditions: human distal femur, derived from 24 cells per column and 1.4 cm/yr growth rate
+  conditions: 'human distal femur, ages 5-8 y; the derivation is stated in full - new cells per day =
+    growth rate / mean hypertrophic cell height = 38 um/day / 33 um = 1.2 per day, and cycle time =
+    24 proliferating cells / 1.2 = 20 days'
   species: human
   source_ref: kember1976
-  uncertainty: derived quantity; assumes steady state and 100% growth fraction
+  uncertainty: 'derived quantity, and derived from the growth rate it would be used to predict. Two
+    further assumptions are load-bearing and both are stated by the authors: (i) the cell height IS the
+    whole axial advance per cycle, i.e. matrix synthesis contributes nothing to elongation, which rat
+    stereology contradicts (wilsman1996: cells are 50-69% of the volume removed at the junction); (ii)
+    the proliferating fraction of the columnar zone is two-thirds, a ratio taken from the RABBIT, applied
+    to a measured human count of 36 maturing-plus-proliferating cells to give 24.'
+- parameter: mean cell cycle time, proliferative zone (lower bound, author-stated)
+  value: '16'
+  unit: days
+  conditions: human distal femur, ages 5-8 y; the authors' own lower bound, from their statement that it
+    is unlikely that fewer than twenty cells lie in the proliferation zone
+  species: human
+  source_ref: kember1976
+  uncertainty: a bound on the N_p input only; it does not relax the assumption that the cell height is
+    the whole axial advance, which is the assumption that would raise the estimate rather than lower it
+- parameter: mean cell cycle time, proliferative zone (derived, not measured)
+  value: '30'
+  unit: days
+  conditions: human distal femur, 3.5-year-old specimen; same method, which the authors describe as less
+    reliable data
+  species: human
+  source_ref: kember1976
+  uncertainty: single specimen; the authors give 20 days at 2 years and 30 days at 3.5 years and decline
+    to estimate at all for the 13- and 14-year-olds because of growth-spurt variability
+- parameter: growth fraction, proliferative zone
+  value: 0.89-0.99
+  unit: fraction
+  conditions: 28-day-old Long-Evans rat, four growth plates; maximum cumulative BrdU labelling index,
+    0.99 proximal tibia, 0.99 distal radius, 0.98 distal tibia, 0.89 proximal radius
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'the labelling index is followed to plateau (43-81-99% at 12-24-48 h in the proximal tibia),
+    so this is a measured saturation, not an assumption. It is the strongest available support for the
+    100%-growth-fraction assumption in the human derivations - in RAT, and lowest in the slowest plate,
+    which is the direction that matters for a slow human plate.'
 - parameter: mean cell cycle time, proliferative zone (derived, not measured)
   value: '15'
   unit: days
@@ -189,8 +225,17 @@ key_refs:
   first_author: Kember NF
   year: 1976
   type: primary
-  one_line_finding: 'Human distal femur: 24 cells per proliferative column and a derived mean cycle time
-    of ~20 days; explicit warning against rodent-to-human extrapolation.'
+  one_line_finding: 'Human distal femur, 12 subjects: hypertrophic cell height MEASURED at 33 +/- 5 um,
+    1.2 new cells/day, 24 proliferating cells (two-thirds of a measured 36, the ratio taken from rabbit)
+    and a derived mean cycle time of ~20 days with a stated 16-day lower bound; explicit warning against
+    rodent-to-human extrapolation.'
+- ref_id: wilsman1996
+  pmid: '8982136'
+  first_author: Wilsman NJ
+  year: 1996
+  type: primary
+  one_line_finding: Rat proliferative-zone growth fraction reaches 0.89-0.99 by cumulative BrdU labelling,
+    measured to plateau rather than assumed.
 - ref_id: thurston1985
   pmid: '3864550'
   first_author: Thurston MN
