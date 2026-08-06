@@ -1122,3 +1122,52 @@ audited to its estimator, `rubin2021` was accepted from its abstract, and `stoke
 the same day, sitting in the atlas with `full_text_read: 2026-08-06` — was not checked for
 whether it answered the question the correction declared unanswered. **A correction is a
 claim like any other and inherits the obligation it was written to enforce.**
+
+### CORR-010 addendum — the supplement arrived and it settles half of it
+
+`rubin2021`'s Supplementary Information was supplied 2026-08-06. Two things follow.
+
+**1. `rubin2021`'s conclusion is supported by its own data, and CORR-010's wording objection
+was cosmetic.** Scoring both metrics against the growth ranking (PT and DU more active than
+DT):
+
+| comparison | growth | cell volume (Fig. 2C) | bounding-box height (Supp. Fig. 4A, HZ) |
+|---|---|---|---|
+| PT vs DT | PT > DT | p = 0.0279 ✓ | **not significant in the HZ** ✗ |
+| DU vs DT | DU > DT | p = 0.0045 ✓ | p = 2.0e-03 ✓ |
+| PT vs DU | ≈ equal | p = 0.4834, ns ✓ | **p = 2.0e-03, DU > PT** ✗ |
+
+**Volume 3/3, height 1/3.** Peak hypertrophic bounding-box heights ≈ 23 µm (PT), 22 µm (DT),
+26 µm (DU). CORR-010 noted that the paper's comparative sentence says *diameter* where its
+conclusion says *height*; the substance holds regardless, and that objection is withdrawn.
+
+**2. The supplement also supplies the reason the two metrics diverge, and the authors state
+it themselves.** Supplementary Fig. 4A's caption: the height of the cell bounding box
+*"is influenced by cell orientation"*, illustrated with three cells that yield the same h —
+a wide flat ellipse, a tall narrow ellipse, and a **tilted** elongated ellipse.
+
+    axial extent  =  intrinsic long-axis length  ×  alignment with the P-D axis
+
+Volume is orientation-free by construction. Axial extent is not. `cruzorive1986` §10.5 names
+the identical confound for `hunziker1989`'s 2D estimators. **In both of the only two studies
+that compare these variables, volume is measured without the confound and height with it** —
+which is a mechanistic reason for "volume beats height" that is independent of biology.
+
+This is not a rescue of the height hypothesis. It is a statement that the comparison as run
+cannot separate *the cells got longer* from *the cells straightened up*, and those have
+different targets: cell-volume regulation and pericellular compliance for the first, column
+alignment (integrin β1, cytoskeletal tension, chondrocyte rotation) for the second.
+
+**3. The data to separate them is already published.** Supplementary Table 1 lists
+**PC1/PC2/PC3 coefficient** *and* **PC1/PC2/PC3 orientation** among the per-cell features.
+Supplementary Figs 2–3 quantify per-feature segmentation error including the PC coefficients;
+Supplementary Fig. 5 shows PC1 orientation is reproducible across two orthogonal imaging
+angles. Code is on Zenodo, sample data on Figshare, full feature tables stated available from
+the corresponding author on request.
+
+So the decisive test for the height half of C-L1-08 is a **re-analysis, not an experiment** —
+opened as `g_l1arch_017`, the only tractability-1 item in this dispute. If mean intrinsic
+long-axis length scores 3/3 while alignment differs between DU and PT, the published
+conclusion inverts and the target class moves to column alignment. If intrinsic length still
+scores 1/3, terminal cell elongation genuinely does not predict growth between plates and
+volume stands unqualified.

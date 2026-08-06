@@ -1295,3 +1295,87 @@ CORR-009 said: read the method paper behind the number you are citing. CORR-010 
 because CORR-009 did that for one side of a dispute and not the other, and declared a
 question unanswered without checking a paper it had read the same morning. **A correction is
 a claim like any other and inherits the obligation it was written to enforce.**
+
+---
+
+# Round 13 — the supplement confirms their result and hands over the reason it happened
+
+`rubin2021`'s Supplementary Information arrived. It does two things at once: it **confirms**
+the paper's conclusion against round 12's objection, and it **explains** the result in a way
+that reopens the question on already-published data.
+
+## 1. Their conclusion holds. Round 12's objection was cosmetic.
+
+Scored against the growth ranking (PT and DU more active than DT):
+
+| comparison | growth | volume (Fig. 2C) | bounding-box height (Supp. Fig. 4A, HZ) |
+|---|---|---|---|
+| PT vs DT | PT > DT | p = 0.0279 ✓ | **ns in the HZ** ✗ |
+| DU vs DT | DU > DT | p = 0.0045 ✓ | p = 2.0e-03 ✓ |
+| PT vs DU | ≈ equal | p = 0.4834 ns ✓ | **p = 2.0e-03, DU > PT** ✗ |
+
+**Volume 3/3. Height 1/3.** Peak HZ bounding-box heights ≈ 23 (PT), 22 (DT), 26 µm (DU).
+Round 12 noted the paper's comparative sentence says *diameter* where its conclusion says
+*height*. True, and irrelevant — the substance holds. Withdrawn.
+
+## 2. And the caption explains why
+
+Supplementary Fig. 4A, in the authors' own words: the height of the cell bounding box
+**"is influenced by cell orientation"** — beside an illustration of three cells yielding the
+same h: a wide flat ellipse, a tall narrow ellipse, and a **tilted** elongated one.
+
+```
+axial extent  =  intrinsic long-axis length  ×  alignment with the P-D axis
+```
+
+Volume is orientation-free by construction. Axial extent is not. `cruzorive1986` §10.5 names
+the identical confound for `hunziker1989`'s 2D estimators, in 1986.
+
+> **In both of the only two studies that put these variables head to head, volume is measured
+> without the orientation confound and height with it.**
+
+That is a mechanistic reason for "volume beats height" that owes nothing to biology. It does
+not rescue the height hypothesis. It says the comparison as run cannot separate *the cells got
+longer* from *the cells straightened up* — and those two have different targets. Cell-volume
+regulation and pericellular compliance for the first; column alignment — integrin β1,
+cytoskeletal tension, chondrocyte rotation — for the second.
+
+## 3. The data to separate them is already published
+
+Supplementary Table 1 lists, per cell: **PC1/PC2/PC3 coefficient** *and* **PC1/PC2/PC3
+orientation**. Supp. Figs 2–3 quantify per-feature segmentation error including the PC
+coefficients. Supp. Fig. 5 shows PC1 orientation reproduces across two orthogonal imaging
+angles. Code on Zenodo, sample data on Figshare, full tables from the corresponding author.
+
+They had an orientation-free axis length for every cell and used bounding-box height for the
+predictor comparison instead.
+
+**So the decisive test is a re-analysis, not an experiment.** For each hypertrophic cell:
+take PC1 coefficient and the angle between PC1 orientation and the P-D axis; compute mean
+intrinsic length, mean alignment, and their product per plate; correlate each against the
+same three growth values.
+
+- If **intrinsic length scores 3/3** and alignment differs between DU and PT → cell
+  elongation does track growth, the published metric was defeated by rotation, and the target
+  class moves to **column alignment**.
+- If **intrinsic length still scores 1/3** → terminal cell elongation genuinely does not
+  predict growth between plates and volume stands unqualified.
+
+Either result closes the height half of C-L1-08. Opened as `g_l1arch_017` — **tractability 1,
+the only one in this dispute.**
+
+## 4. Standing after thirteen rounds
+
+| | |
+|---|---|
+| volume predicts growth between plates | **3/3, verified from the source figures** |
+| axial extent predicts growth between plates | **1/3, verified** |
+| but axial extent is orientation-confounded | **stated by the authors** |
+| the same confound in `hunziker1989` | **stated by `cruzorive1986` §10.5, 1986** |
+| intrinsic length vs alignment, decomposed | **never reported by anyone** |
+| the data to do it | **already collected** |
+| `terminal_cell_shape_modulation` | still **D** |
+
+Three rounds of correction in one day, and the net movement is not toward height or toward
+volume. It is that the field has been comparing an orientation-free variable against an
+orientation-confounded one and reading the difference as biology.
