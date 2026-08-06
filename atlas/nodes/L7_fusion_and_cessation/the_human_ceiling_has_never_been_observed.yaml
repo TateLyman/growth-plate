@@ -18,7 +18,14 @@ summary: 'This atlas has been treating 204 cm as the ceiling of the duration lev
   COMPLICATES THE PICTURE RATHER THAN CONFIRMING IT. 88 patients with combined 17-hydroxylase/17,20-lyase deficiency
   - complete absence of sex steroid synthesis from birth - give final heights for 51: 77% at or above the 50th percentile
   and 39% at or above the 90th, not 204 cm. Most were treated. So total lifelong sex-steroid absence does NOT reliably
-  produce extreme stature, and the two 204 cm men are the tail of a distribution rather than its centre.'
+  produce extreme stature, and the two 204 cm men are the tail of a distribution rather than its centre. A SYSTEMATIC
+  CENSUS ON 2026-08-06 SETTLES THE QUESTION AND THE ANSWER IS THAT NOBODY HAS EVER LOOKED. Across 743 records screened
+  and 45 full texts read, at least twenty people are documented with complete loss of oestrogen signal or synthesis
+  - six with ESR1 loss of function, fourteen males with aromatase deficiency - and NOT ONE has a reported final height
+  reached without intervention. Eleven of the fourteen aromatase males are described at the time of report as tall,
+  with delayed skeletal age, or with unfused epiphyses. The two people whose signal cannot be restored by any means
+  - the Smith propositus and the female of brakta2020, who failed 2.5 years of diethylstilbestrol after 75 compounds
+  were screened - were followed to about 31 and to 24 respectively, and neither has a published endpoint.'
 quantitative:
 - parameter: FINAL HEIGHT under complete lifelong absence of sex steroid synthesis
   value: 77% at or above the 50th percentile; 39% at or above the 90th; 8% at or below the 25th
@@ -71,6 +78,66 @@ quantitative:
     censored by treatment. THE HONEST STATEMENT IS THAT THE CEILING OF THE DURATION LEVER IS UNKNOWN IN BOTH DIRECTIONS
     - it may be lower than 204 cm typically, and it has never been observed at its upper end in the one person who
     could show it.
+- parameter: CENSUS - every human with complete loss of oestrogen signal or synthesis, and whether any reached a spontaneous
+    endpoint
+  value: at least 20 people; ZERO reported final heights reached without intervention
+  unit: count
+  conditions: 'systematic Europe PMC census 2026-08-06, 743 records screened, 45 open-access full texts read. ESR1
+    LOSS OF FUNCTION, at least 6 people: the Smith propositus (male, USA); two sisters and one brother in a consanguineous
+    Algerian family, homozygous R394H (bernard2017); the first reported female, followed 8 years (brakta2020); a 13-year-old
+    girl (2024). AROMATASE DEFICIENCY, 14 male cases tabulated in a 2022 review, of which 11 are described at report
+    as tall, with delayed skeletal age, or with UNFUSED or OPEN epiphyses'
+  species: human
+  source_ref: aromdef2022
+  uncertainty: THE CENSUS IS THE FINDING. In roughly twenty people worldwide with complete loss of oestrogen signal
+    or synthesis, NOT ONE HAS BEEN FOLLOWED TO A SPONTANEOUS CESSATION OF GROWTH. Every one was either given oestrogen
+    - which closes the plate and is the standard of care, and in the aromatase cases is given explicitly to stop growth
+    - or was last reported still growing with open epiphyses. THE ENDPOINT DOES NOT EXIST IN THE HUMAN RECORD. This
+    is a census of published reports, not of people; unpublished follow-up may exist in clinical records, which is
+    precisely why the question is answerable by correspondence rather than by experiment. The count of 14 male aromatase
+    cases is one review's tabulation and may be incomplete.
+- parameter: the two people whose oestrogen signal cannot be restored, and how far each was followed
+  value: 'Smith propositus: 204 cm at 28, bone age 15 to 17.5 by about 31, no report since. Brakta patient: followed
+    8 years to age 24, treatment failed, no height reported'
+  unit: none
+  conditions: the Smith propositus did not respond to six months of transdermal oestrogen raising free oestradiol
+    tenfold. The brakta2020 patient was screened against 75 compounds for transactivation of her variant receptor;
+    diethylstilbestrol worked in vitro and failed in her over 2.5 years
+  species: human
+  source_ref: brakta2020
+  uncertainty: THESE ARE THE ONLY TWO PEOPLE IN THE RECORD WHOSE GROWTH PLATES COULD NOT BE SWITCHED OFF BY ANY AVAILABLE
+    MEANS, and neither has a reported endpoint. The Smith propositus was last reported in 2008 with a 2010 review;
+    he would now be in his sixties. brakta2020 followed her patient for eight years and reports bone density and endocrinology
+    but no adult height. THE SINGLE MOST INFORMATIVE MEASUREMENT IN THIS FIELD IS A NUMBER IN TWO SETS OF CLINICAL
+    NOTES.
+- parameter: WHAT ADVANCES BONE AGE WITHOUT ER-ALPHA - named by the people who studied him
+  value: ER-beta, truncated ER-alpha forms, non-classical oestrogen receptors, and androgen acting on epiphyseal growth
+  unit: candidate mechanisms
+  conditions: the propositus advanced 2.5 years of bone age in 3.5 chronological years with no functional ER-alpha.
+    His mutation is a premature stop in exon 2, which permits downstream translation initiation and therefore a truncated
+    receptor
+  species: human
+  source_ref: smith2010
+  uncertainty: THIS IS THE OESTROGEN-INDEPENDENT COMPONENT OF FUSION AND IT IS THE UNBLOCKED TERM. Smith and Korach
+    name four candidates and resolve none of them; sixteen years later none has been resolved. It matters because
+    if ER-alpha blockade is bounded by its bone cost, the residual route is what is still closing the plate in the
+    one person in whom the main route is absent - and nobody has identified which of the four it is. Androgen is the
+    candidate the review singles out as augmenting epiphyseal growth, which would make it a growth-promoting rather
+    than a fusion-promoting term, so the four are not equivalent hypotheses.
+- parameter: IS THE BONE COST PERMANENT
+  value: aBMD may normalise on late oestrogen replacement; architecture and strength recovery are uncertain
+  unit: qualitative
+  conditions: oestrogen replacement given even late in the third decade, in ER-alpha-deficient and aromatase-deficient
+    individuals
+  species: human
+  source_ref: smith2010
+  uncertainty: 'IF THIS HOLDS IT CHANGES THE THERAPEUTIC ARITHMETIC OF THE WHOLE DURATION LEVER, because the -3.85
+    BMD Z that this atlas has been treating as the fixed price of oestrogen blockade would then be a TEMPORARY price
+    recoverable after growth is complete. THE QUALIFICATION IS THE AUTHORS'' OWN AND IS NOT MINOR: areal BMD is not
+    architecture, and they say explicitly that complete recovery of architecture and strength is less certain. Cortical
+    thinning, low trabecular thickness and an activation frequency of 0.099/yr are structural, and a normalised areal
+    density can conceal them. Stated as a possibility that changes the calculus if true, and as an open question,
+    not as a licence.'
 localization:
 - systemic
 human_evidence: direct
@@ -81,11 +148,12 @@ species_basis:
 translation_risk: low
 translation_risk_reason: Human observations. The risk is that censored observations were read as endpoints, which
   is what this node corrects.
-confidence: C
-confidence_note: C. The cohort is real and large and its abstract is unambiguous about the final-height distribution;
-  the treatment-to-close sentence is quoted from a primary; the ESR1 follow-up is published. It is not higher because
-  the decisive quantities are all missing rather than measured - untreated final heights are not separated in the
-  cohort, no later height exists for the ESR1 patient, and the node's central claim is about what has NOT been observed.
+confidence: B
+confidence_note: 'RAISED C to B on 2026-08-06 after the systematic census. The central claim is now a negative one
+  supported by an exhaustive search rather than by two case reports: 743 records screened, 45 full texts read, one
+  published tabulation of all male aromatase cases, and no spontaneous endpoint anywhere. B not A because a literature
+  census cannot exclude unpublished clinical follow-up - which is the point, since that is where the answer would
+  be - and because the count of male aromatase cases is one review''s tabulation.'
 key_refs:
 - ref_id: cyp17d2025
   pmid: '40350803'
@@ -106,6 +174,27 @@ key_refs:
   year: 2008
   type: primary
   one_line_finding: 'ESR1-null man: bone age 15 to 17.5 over 3.5 years, epiphyses still open at about 31.'
+- ref_id: brakta2020
+  pmid: '32152632'
+  first_author: Brakta S
+  year: 2020
+  type: primary
+  one_line_finding: Female ESR1-null followed 8 years; 75 compounds screened, DES failed over 2.5 years; no final
+    height reported.
+- ref_id: bernard2017
+  pmid: '27754803'
+  first_author: Bernard V
+  year: 2017
+  type: primary
+  one_line_finding: Three further ESR1-null humans in one family, all with delayed bone maturation and no pubertal
+    entry.
+- ref_id: smith2010
+  pmid: '19900547'
+  first_author: Smith EP
+  year: 2010
+  type: review
+  one_line_finding: Names the oestrogen-independent maturation route (ERbeta, truncated ERalpha, non-classical receptors,
+    androgen) and reports that late oestrogen replacement may normalise aBMD.
 open_questions:
 - g_l7_untreated_oestrogen_null_ceiling
 last_verified: '2026-08-06'
