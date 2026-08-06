@@ -98,3 +98,37 @@ summary: FINAL-01 item H. Nine in-scope targets from the query layer's own cover
   as C-01..C-08 and are deferred there for the reason given in that file - their only warrant is the held-out
   paper. Searches were run live against Europe PMC on 2026-08-06 and hit counts are recorded so any of
   them can be re-run.
+
+benchmark_recheck:
+  scope: >-
+    TARGETED re-check of the two questions the item-H sweep closed, NOT a blind re-run of
+    the 43-question benchmark. A targeted re-check can only move in one direction, so it is
+    reported as a check that the closures landed and never as a benchmark score. The
+    benchmark number stands at what the blind run produced; nothing here revises it.
+  date: '2026-08-06'
+  results:
+    - question: Does sympathetic / adrenergic input regulate longitudinal bone growth at the physis?
+      before: >-
+        UNANSWERABLE. 'adrenergic' and 'catecholamine' resolved to 0 nodes across 614, and no
+        gap asserted the absence - so a negative-space query could not even report the hole.
+      after: >-
+        ANSWERABLE as [ATLAS] and partly as [ATLAS-INFERRED]. beta2_adrenoceptor_chondrocyte
+        resolves on both aliases and carries two traversal_usable signed edges - inhibits(-)
+        to hypertrophic_chondrocyte and required_for(+) to growth_velocity_longitudinal. The
+        answer the protocol should now give is 'yes in mouse at grade D, nothing human, and
+        here is the discriminating experiment' (g_l3adrn_001), which is a correct answer
+        rather than a hole.
+    - question: What is the role of FGF23 in chronic kidney disease mineral bone disorder?
+      before: >-
+        PARTIALLY ANSWERABLE. Both endpoint nodes existed and no edge joined them, so the
+        connection could be asserted from node prose but not traversed.
+      after: >-
+        ANSWERABLE as [ATLAS]. e01184 joins fgf23_hormone to chronic_kidney_disease_growth on
+        perwad2026. It is DELIBERATELY correlates_with with sign unknown and
+        traversal_usable false, so it is still not derivable - and that is the correct
+        outcome, not a shortfall. An observational trajectory association should not become a
+        signed causal edge because it would be more convenient to traverse.
+  note: >-
+    The second result is the more instructive one. Closing a coverage gap does not always
+    make a question derivable; sometimes it makes the atlas able to say precisely why it is
+    not derivable, which is the better answer.
