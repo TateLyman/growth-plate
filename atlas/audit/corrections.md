@@ -1531,3 +1531,72 @@ recover.
 - 8 trial-registry refs added.
 - Gaps `g_l12_ai_normal_steroidogenesis` and `g_l12_combination_adult_height`.
 - `docs/POSITIVE_LEDGER.md` §7 rewritten.
+
+---
+
+## CORR-017 — 2026-08-06 — "no results posted" is not "no results exist", and the answer had already been published
+
+**What the atlas said, in the same session, hours earlier.** CORR-016 and
+`docs/POSITIVE_LEDGER.md` §10 named as *"the cheapest high-value action in the atlas"*: writing
+to investigators for the adult heights of NCT01248416, and for the never-posted results of
+NCT00133354 and NCT00840944.
+
+**All three had been published.** I had checked ClinicalTrials.gov's results-posting field and
+inferred absence in the world.
+
+| trial | registry says | reality |
+|---|---|---|
+| NCT01248416 | results posted, 2–3 y surrogate | **near-final height published 2016** (mauras2016, n=71) |
+| NCT00133354 | **no results posted** | **published 2008** (mauras2008) — randomised, *placebo*-controlled |
+| NCT00840944 | **no results posted** | **published 2023** (dotremont2023) — followed to adult height |
+
+The registry's own `referencesModule` listed two of them. I queried the results section and not
+the references section of the same record.
+
+### What the published record actually says — and it answers the question
+
+- **The combination converted.** At near-final height (97.6% attained, n=71): height SDS −1.0
+  (AI+GH) vs −1.4 (either alone), P=0.06; absolute change +22.5 / +20.6 / +18.2 cm, P=0.01,
+  against +13.0 cm expected. A second independent matched cohort at *true* adult height agrees:
+  173.1 vs 169.8 cm, but only with ≥2 years of exposure (P=0.044; overall null at P=0.071).
+- **The timing hypothesis is supported and the prize is bounded.** A 2026 retrospective of 72
+  males to near-final height finds earlier pubertal stage (P=0.012), longer treatment (P=0.005)
+  and concurrent GH (P=0.022) each independently predict greater gain — all three differences
+  this atlas had hypothesised. **Overall median gain: +1.2 cm** (IQR −1.9 to 4.2); best subgroup
+  (letrozole) median +4.2 cm.
+- **The one prepubertal-start randomised trial with a true adult-height endpoint is NULL.**
+  Merke 2025: 0.26 SDS, 95% CI −0.29 to 0.82, P=0.35; *"does not result in taller adult stature
+  … and is not recommended."* The predicted-height advantage at pubertal onset (P=0.049) did not
+  convert.
+
+**And a correction inside the correction.** I had recorded the CAH result as *"a gain of about
+0.26 SDS"* from the registry's two point estimates. The publication supplies the interval and
+the authors' conclusion, and both are negative. **Reading point estimates off a registry without
+the interval manufactured a positive result out of a null.**
+
+### The failure mode
+
+| | CORR-016 | CORR-017 |
+|---|---|---|
+| the census | outcome-text queries | one *field* of one registry |
+| the inference | "no trial did this" | "the data does not exist" |
+| what was actually there | five trials | four publications, one in the same record |
+
+CORR-016 taught that a sweep answers *"what did this query match."* CORR-017 is the same lesson
+one level down: **a database field answers what that field records.** ClinicalTrials.gov's
+results-posting status is a compliance fact, not a scientific one. A completed trial with no
+posted results is, more often than not, simply published elsewhere.
+
+### The rule this adds
+
+**Before claiming a result does not exist, search for the publication by trial ID, by
+investigator, and by intervention — and read the registry's own references field.** And **never
+record a point estimate from a registry without its interval**: the registry reports arm means
+and the publication reports whether they differ.
+
+### Actioned
+
+- `duration_velocity_combination` rewritten: 8 rows, 12 refs, summary replaced.
+- 8 publications added to the bibliography.
+- `docs/POSITIVE_LEDGER.md` §§6, 7, 10 rewritten.
+- The three letters I was about to draft are cancelled. Two remain and they are different letters.

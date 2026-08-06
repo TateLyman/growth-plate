@@ -227,22 +227,34 @@ proliferative pool has idle capacity to recruit while the timer runs.
 
 ---
 
-## 10. What follows — ranked, and two of these are correspondence
+## 10. What follows
 
-1. **Ask for the adult heights that already exist.** NCT01248416 completed; those boys reached
-   adult height years ago. The measurement either exists unpublished or was never taken. And
-   **two completed combination trials have never posted results at all** — NCT00133354
-   (anastrozole + GH in GH-deficient boys, n=53, predicted adult height primary) and NCT00840944
-   (4-year GH + GnRH agonist, n=44). Under FDAAA these are reportable. **This is the cheapest
-   high-value action in the atlas: it converts a surrogate into an endpoint at the cost of
-   letters.**
-2. **Break the age-at-start confound observationally.** Aromatase inhibitors are prescribed
-   off-label across a range of ages within single indications. A retrospective multicentre cohort
-   with *attained* adult height as the endpoint and age at start as the exposure, **within one
-   indication**, separates "started early" from "had oestrogen excess" without a new trial.
-3. **Settle the human growth fraction** (Karolinska letter, drafted).
-4. **Test GH pool depletion in humans** (KIGS request, drafted).
+**Revised 2026-08-06 (CORR-017).** The three "cheapest actions" listed here an hour earlier —
+letters asking for unposted or uncaptured adult heights — were **cancelled**: all three results
+had already been published. The registry's results-posting field records compliance, not science.
+
+What is actually left, ranked:
+
+1. **Break the age-at-start confound within a single diagnosis.** `nearfinal2026` shows earlier
+   pubertal stage predicts greater near-final-height gain (P=0.012) across a mixed cohort. Whether
+   that gradient holds *within* one indication is the difference between "start earlier" and "had
+   a different disorder" — and it is a re-analysis of a dataset that exists. Letter drafted
+   (`outreach/04`).
+2. **True final height and lifetime bone density for the one combination trial that converted.**
+   `mauras2016` stopped at 97.6% of adult height with the SDS difference at P=0.06, and measured
+   bone over 24–36 months against a genetic comparator carrying BMD Z −3.85 over a lifetime.
+   Letter drafted (`outreach/05`).
+3. **Settle the human growth fraction** (Karolinska letter, `outreach/01`).
+4. **Test GH pool depletion in humans** (KIGS request, `outreach/02`–`03`).
 5. **Sacubitril in the human explant** — the only novel-mechanism velocity candidate with an
    approved paediatric drug attached.
 
-Items 1 and 2 need no tissue, no trial and no funding.
+**And the honest bottom line on the duration lever.** Optimising everything the published record
+identifies — letrozole rather than anastrozole, earlier pubertal stage, longer exposure,
+concurrent GH — reaches a median of about **+4 cm**, with an overall cohort median of **+1.2 cm**.
+The 25 cm of the ESR1 and CYP19A1 nulls remains unapproached, and the only prepubertal-start
+randomised trial with a true adult-height endpoint is **null, with its authors recommending
+against the regimen**. The gap between the genetic and the pharmacological lever is real, it is
+not explained by timing or dose or duration alone, and nobody has yet tested the one condition
+that distinguishes them: oestrogen blockade begun **before puberty in a child with normal
+steroidogenesis**.

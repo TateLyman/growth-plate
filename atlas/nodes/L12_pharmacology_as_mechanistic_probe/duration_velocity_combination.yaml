@@ -4,18 +4,23 @@ type: intervention
 layer: L12
 stub: false
 summary: 'This atlas asserted on 2026-08-06 that no trial had ever combined a duration-extending agent with a velocity
-  agent and measured adult height. THAT WAS WRONG. A census of ClinicalTrials.gov by INTERVENTION NAME rather than
-  by outcome text finds 4,495 trials of a lever-class agent, 279 paediatric trials with a height endpoint, and FIVE
-  paediatric trials that combine the two classes - three of them with results posted. The two trials that answer the
-  question disagree, and the disagreement is mechanistically legible. A GnRH ANALOGUE added to growth hormone in pubertal
-  idiopathic short stature is NULL on attained adult height: -1.8 against -1.9 SDS, about 0.7 cm, in 91 children.
-  An AROMATASE INHIBITOR added to growth hormone in adolescent boys with idiopathic short stature adds 2.5 cm of PREDICTED
-  adult height over growth hormone alone - 7.4 against 4.9 cm - in 76 children. THE MECHANISTIC READING IS VISIBLE
-  IN THE TRIAL''S OWN VELOCITY DATA. A GnRH analogue suppresses puberty entirely, so it removes the pubertal growth
-  spurt along with the fusion signal: height velocity in the combination arm runs BELOW the growth-hormone-alone arm
-  during treatment (4.9 vs 7.8 cm/yr at one visit) and above it afterwards, and the two cancel. An aromatase inhibitor
-  blocks oestrogen synthesis while leaving androgen and the GH/IGF-1 amplification intact, so it removes the fusion
-  signal without removing the spurt. Duration agents are not one class.'
+  agent and measured adult height, then - having found five such trials - asserted that the adult-height data either
+  did not exist or had never been posted. BOTH WERE WRONG (CORR-016, CORR-017). Every one of the informative trials
+  was published, and between them they answer the question. COMBINING AN AROMATASE INHIBITOR WITH GROWTH HORMONE WORKS,
+  MODESTLY, AND THE SURROGATE CONVERTED. At near-final height in 71 pubertal boys with idiopathic short stature, height
+  SDS was -1.0 on the combination against -1.4 on either agent alone (P=0.06), and absolute height change was +22.5
+  cm against +20.6 for growth hormone and +18.2 for the aromatase inhibitor (P=0.01), where +13.0 cm was expected.
+  A second, independent matched cohort reaching TRUE adult height agrees, at 173.1 against 169.8 cm, but only in those
+  exposed for at least two years. COMBINING A GnRH ANALOGUE WITH GROWTH HORMONE DOES NOT, in the one randomised test
+  with a true endpoint: -1.8 against -1.9 SDS in 91 children. Its own velocity data shows why - a GnRH analogue removes
+  the pubertal spurt along with the fusion signal, and the two cancel. Duration agents are not one class. AND THE
+  PRIZE IS BOUNDED. A 2026 retrospective of 72 males followed to near-final height finds that earlier pubertal stage
+  at start (P=0.012), longer treatment (P=0.005) and concurrent growth hormone (P=0.022) each independently predict
+  greater gain - confirming all three differences this atlas had hypothesised between the pharmacological and the
+  genetic lever - while the overall median gain is +1.2 cm and the best subgroup, letrozole, reaches a median +4.2
+  cm. Optimising every identified factor gets to single-digit centimetres. The 25 cm of the ESR1 and CYP19A1 nulls
+  remains unapproached, and the one trial that started before puberty (in congenital adrenal hyperplasia) is NULL
+  on adult height and its authors recommend against the regimen.'
 quantitative:
 - parameter: GnRH ANALOGUE plus growth hormone, ATTAINED ADULT HEIGHT
   value: -1.8 combination vs -1.9 growth hormone alone
@@ -39,12 +44,14 @@ quantitative:
     0.9. Actual height change over the same period was 14.0, 17.1 and 18.9 cm, ANCOVA p<0.006'
   species: human
   source_ref: nct01248416
-  uncertainty: 'THE ENDPOINT IS PREDICTED ADULT HEIGHT AND THAT IS THE WHOLE PROBLEM. This atlas already holds, at
-    grade A, that the letrozole predicted-adult-height gain IS NOT SUSTAINED. A drug class whose surrogate gains have
-    a track record of evaporating has produced another surrogate gain. ARITHMETIC BY THIS ATLAS: combination minus
-    best single agent is +2.5 cm, SE about 1.27 by quadrature, t about 1.97, p about 0.05 - borderline. Against simple
-    additivity (0.5 + 4.9 = 5.4) the excess is +2.0 cm, SE about 1.62, p about 0.22, so THE APPARENT SYNERGY IS NOT
-    SUPPORTED; the data are consistent with the two agents simply adding. No adult-height follow-up has been posted.'
+  uncertainty: 'UPDATED 2026-08-06 - THE NEAR-FINAL HEIGHT WAS PUBLISHED IN 2016 AND THIS ATLAS SAID IT MIGHT NOT
+    EXIST (CORR-017). mauras2016, n=71 at age 17.4 years with about 97.6% of adult height achieved: height SDS AI
+    -1.4, GH -1.4, AI/GH -1.0 (P=0.06); absolute height change +18.2, +20.6, +22.5 cm (P=0.01) against an expected
+    +13.0 cm at -2.0 SDS. SO THE SURROGATE LARGELY CONVERTED: the +2.5 cm predicted-height advantage of the combination
+    over growth hormone alone came back as about +1.9 cm of real height, and the SDS advantage is +0.4 at P=0.06.
+    Bone health, safety labs and adverse events were similar across all three arms over 24-36 months. WHAT IS STILL
+    MISSING is true final height rather than 97.6% of it, and bone density measured at final height rather than at
+    three years.'
 - parameter: bone density cost of the combination
   value: AI alone -1.061, GH alone -0.586, combination -0.605
   unit: change in height-adjusted bone density z-score
@@ -58,19 +65,22 @@ quantitative:
     is that THE BONE COST WAS MEASURED, which is the minimum any duration-extension programme must do, given that
     the genetic proof of concept for this lever carries a BMD Z of -3.85.
 - parameter: EARLY-START aromatase inhibition, TRUE attained adult height
-  value: -0.34 investigational vs -0.60 standard, a gain of about 0.26 SDS
+  value: NO DIFFERENCE. -0.34 vs -0.60 SDS, mean difference 0.26 (95% CI -0.29 to 0.82), P = 0.35
   unit: adult height SDS relative to the general population
   conditions: 'NCT00001521, 66 children with congenital adrenal hyperplasia enrolled from age 2, randomised to testolactone
     (aromatase inhibitor) plus flutamide plus reduced-dose hydrocortisone, or conventional treatment, followed to
     adult height. Years of bone age held unchanged: 3.86 vs 2.78'
   species: human
-  source_ref: nct00001521
-  uncertainty: 'THE ONLY TRUE-ADULT-HEIGHT RESULT FROM EARLY AROMATASE INHIBITION, and about 0.26 SDS is roughly 1.8
-    cm. SD 0.93 and 0.89 on n=66, so it is not a demonstrated difference; the atlas records the point estimate and
-    its direction. THE MECHANISTIC READOUT IS THE STRONGER PART: the investigational arm held bone age unchanged for
-    1.08 more years, which is the duration lever doing exactly what it is supposed to do, measured. Average annual
-    growth velocity SDS was LOWER in the investigational arm (-1.01 vs -0.34), so again the gain is bought in time,
-    not in rate. Three drugs changed at once; the aromatase inhibitor''s own contribution is not isolable.'
+  source_ref: merke2025
+  uncertainty: 'CORRECTED 2026-08-06 (CORR-017). This atlas first read the two point estimates off the registry and
+    recorded ''a gain of about 0.26 SDS''. THE PUBLICATION GIVES THE INTERVAL AND THE AUTHORS'' CONCLUSION AND BOTH
+    ARE NEGATIVE: 95% CI -0.29 to 0.82, P = 0.35, and ''does not result in taller adult stature than those treated
+    with standard therapy, and is not recommended''. THIS IS THE DECISIVE RESULT IN THE NODE. It is the earliest-start
+    aromatase-inhibitor trial with a TRUE adult height endpoint, predicted adult height improved more in the investigational
+    arm at pubertal onset (P=0.049), and THE PREDICTED GAIN DID NOT CONVERT. One subgroup did benefit: girls continued
+    on antiandrogen through puberty reached adult minus midparental height of -0.7 vs -5.6 cm (P=0.046). Three drugs
+    changed at once and the indication is a steroid-excess disorder, so the aromatase inhibitor''s own contribution
+    is still not isolable.'
 - parameter: THE CONFOUND THAT MAKES THE AGE GRADIENT UNTESTABLE IN EXISTING TRIALS
   value: 'predicted-height gain by age at start: ages 2-13 +6.21 cm; ages 2-18 about +1.8 cm attained; ages 12-18
     +0.5 cm'
@@ -88,6 +98,50 @@ quantitative:
     predict the same gradient and cannot be separated in any existing trial. NOBODY HAS GIVEN AN AROMATASE INHIBITOR
     TO A YOUNG CHILD WITH NORMAL STEROIDOGENESIS, which is the single reason the pharmacological duration lever cannot
     currently be compared with the genetic one.
+- parameter: DOES THE EFFECT DEPEND ON WHEN YOU START - measured, at near-final height
+  value: earlier pubertal stage P=0.012; longer treatment P=0.005; concurrent growth hormone P=0.022. Overall median
+    gain +1.2 cm
+  unit: cm, near-final height minus initial predicted adult height
+  conditions: 'retrospective chart review of 72 males with advanced or rapidly advancing bone age and compromised
+    predicted adult height; 82% anastrozole, 15% letrozole; median treatment 25 months (IQR 18-32); growth hormone
+    used in 66%. Diagnoses: GH deficiency 31%, early puberty and premature adrenarche 18%, idiopathic short stature
+    15%, overweight/obesity 14%'
+  species: human
+  source_ref: nearfinal2026
+  uncertainty: 'THIS IS THE DIRECT ANSWER TO THE QUESTION THIS ATLAS POSED, and it supports all three of the differences
+    the atlas had hypothesised between the genetic and pharmacological duration levers - timing, duration of exposure,
+    and combination with a velocity agent - each independently significant in the same cohort. AND IT BOUNDS THE PRIZE:
+    the overall median gain is +1.2 cm with an interquartile range that crosses zero (-1.9 to 4.2). The letrozole
+    subgroup reaches a median +4.2 cm (IQR 0.6-13) against anastrozole +0.8 cm, P=0.013. RETROSPECTIVE, no control
+    arm, no randomisation, medians not means, and ''earlier pubertal stage'' still means WITHIN puberty - not one
+    patient started prepubertally. Optimising every factor this study identifies gets to single-digit centimetres,
+    not to the 25 cm of the genetic nulls.'
+- parameter: THE SURROGATE RANKED TWO DRUGS BACKWARDS FROM THE REAL ENDPOINT
+  value: 'at 1 year on PREDICTED height: anastrozole +4.2 vs letrozole +1.4 cm (P=0.03). At NEAR-FINAL height: letrozole
+    +4.2 vs anastrozole +0.8 cm (P=0.013)'
+  unit: cm
+  conditions: neely2014, 39 boys, first-year predicted adult height; nearfinal2026, 72 males, near-final height
+  species: human
+  source_ref: nearfinal2026
+  uncertainty: THE CLEANEST DEMONSTRATION IN THIS ATLAS OF WHY PREDICTED ADULT HEIGHT CANNOT BE TRUSTED IN THIS DRUG
+    CLASS. The same two drugs, compared on a surrogate at one year and on near-final height years later, come out
+    in OPPOSITE ORDERS, both times with P around 0.01-0.03. Different cohorts, different designs, both retrospective
+    or preliminary - so this is not a paired comparison and does not prove the surrogate is invalid. It does mean
+    that no ranking of agents in this class based on predicted adult height should be carried forward, which is what
+    most of the literature reports.
+- parameter: anastrozole plus growth hormone, TRUE adult height, by duration of exposure
+  value: no difference overall (P=0.071); at least 2 years of anastrozole, 173.1 vs 169.8 cm (P=0.044)
+  unit: cm adult height
+  conditions: matched retrospective, 24 pubertal boys on growth hormone plus anastrozole against 24 on growth hormone
+    alone, matched for chronological and bone age, pubertal stage, pre-treatment height, treatment duration and midparental
+    height; bone age advance 1.37 vs 1.81 years, P=0.001
+  species: human
+  source_ref: tanriverdi2023
+  uncertainty: A SECOND, INDEPENDENT TRUE-ADULT-HEIGHT RESULT AGREEING WITH mauras2016 AND WITH THE DURATION DEPENDENCE.
+    The overall comparison is null and only the pre-specified-sounding subgroup of at least 2 years' exposure reaches
+    significance, which is exactly the analysis most likely to be a false positive - 24 per group, retrospective,
+    matched rather than randomised, and a subgroup defined on treatment received. The bone-age deceleration (P=0.001)
+    is the more robust part and it is the mechanism, not the outcome.
 localization:
 - systemic
 human_evidence: direct
@@ -100,11 +154,12 @@ species_basis:
 translation_risk: low
 translation_risk_reason: Human trials throughout. The risk is surrogate-to-endpoint, not species-to-species.
 confidence: B
-confidence_note: B. Five trials, three with posted results, two randomised with adult-height or predicted-adult-height
-  primaries, and the mechanistic reading is supported by the trials' own velocity and bone-age secondaries rather
-  than by assertion. Not A because the two informative trials disagree, the positive one uses a surrogate with a poor
-  conversion record in this exact drug class, the negative one is a single trial of 91 children, and the apparent
-  synergy does not survive this atlas's own arithmetic. Individual rows are graded within the node.
+confidence_note: B, and better supported than when the node was created, because every trial in it turned out to be
+  published and two independent cohorts reach a true or near-final height endpoint with concordant results. Not A
+  because the positive combination evidence is one open-label randomised trial at 97.6% of adult height plus one matched
+  retrospective whose overall comparison is null, the timing evidence is a retrospective chart review without a control
+  arm, and the only prepubertal-start randomised trial with a true adult-height endpoint is negative and its authors
+  recommend against the regimen.
 key_refs:
 - ref_id: nct00355030
   first_author: ClinicalTrials.gov
@@ -129,6 +184,61 @@ key_refs:
   type: trial_registry
   one_line_finding: 'Bicalutamide plus anastrozole from age 2 in testotoxicosis: +6.21 cm predicted adult height,
     single arm, n=14.'
+- ref_id: mauras2016
+  pmid: '27710241'
+  first_author: Mauras N
+  year: 2016
+  type: primary
+  one_line_finding: 'Near-final height in the AI/GH trial: SDS -1.0 combination vs -1.4 either alone (P=0.06); absolute
+    change +22.5/+20.6/+18.2 cm (P=0.01).'
+- ref_id: merke2025
+  pmid: '39672600'
+  first_author: Merke DP
+  year: 2025
+  type: primary
+  one_line_finding: 'Prepubertal AI-containing regimen in CAH: adult height NULL (0.26 SDS, 95% CI -0.29 to 0.82,
+    P=0.35); authors recommend against.'
+- ref_id: nearfinal2026
+  pmid: '41537284'
+  first_author: see title
+  year: 2026
+  type: primary
+  one_line_finding: '72 males to near-final height: earlier pubertal stage (P=0.012), longer treatment (P=0.005) and
+    concurrent GH (P=0.022) each predict greater gain; overall median +1.2 cm.'
+- ref_id: tanriverdi2023
+  pmid: '37988665'
+  first_author: see title
+  year: 2023
+  type: primary
+  one_line_finding: 'GH+anastrozole vs GH alone to true adult height: null overall (P=0.071), 173.1 vs 169.8 cm in
+    those exposed at least 2 years (P=0.044).'
+- ref_id: dotremont2023
+  pmid: '37008942'
+  first_author: Dotremont H
+  year: 2023
+  type: primary
+  one_line_finding: 'GH+GnRHa 4 years in 16 girls to adult height: 159.8 vs 153.2 cm, but against non-randomised controls.'
+- ref_id: mauras2008
+  pmid: '18165285'
+  first_author: Mauras N
+  year: 2008
+  type: primary
+  one_line_finding: 'Anastrozole vs PLACEBO on top of GH in 52 GHD boys: predicted adult height +6.7 vs +1 cm at 36
+    months; bone age advance halved.'
+- ref_id: neely2014
+  pmid: '25137428'
+  first_author: Neely EK
+  year: 2014
+  type: primary
+  one_line_finding: First-year predicted-height gain greater on anastrozole than letrozole (+4.2 vs +1.4 cm) - the
+    reverse of the near-final-height ranking.
+- ref_id: cochrane2015ai
+  pmid: '26447646'
+  first_author: Cochrane
+  year: 2015
+  type: systematic_review
+  one_line_finding: Four RCTs, 207 participants; meta-analysis impossible for clinical heterogeneity; narrative synthesis
+    only.
 open_questions:
 - g_l12_ai_normal_steroidogenesis
 - g_l12_combination_adult_height
