@@ -1476,3 +1476,48 @@ Four rounds, four corrections, and the last one cost me my own hypothesis. The n
 is better than any of the framings that preceded it: the field's two candidate variables may
 be one variable seen two ways, and the only place they could genuinely separate is the axis
 nobody has measured with a modern method.
+
+---
+
+# Round 15 — the data-availability audit, and what is actually reachable
+
+Round 14 needed the proximal-tibia and distal-tibia feature tables. Every public route was
+checked. None has them.
+
+| source | contents | verdict |
+|---|---|---|
+| figshare `10.6084/m9.figshare.14903052.v1` | distal ulna, 21 tiles, 29,162 cells, full per-cell features | **used in round 14** |
+| figshare `10.6084/m9.figshare.14932503.v1` | preprocessing inputs for DU tiles 19–20 | same sample |
+| Nat Commun **Source Data**, 371 MB | S1–S7: XPIWIT binaries, demo `.vff`/`.tif`, ImageJ macros. S8: a two-way ANOVA of SMAD-positive counts | **no figure data** |
+| Zenodo ×8 (Agrawal 2024, eLife 95289) | ~250 GB raw Imaris `Col2creER;Confetti` stacks, PT + distal femur, **E18.5 and P40** | raw images, other label scheme |
+
+Two things worth stating plainly.
+
+**The Source Data archive does not contain source data.** For a paper whose central claim is
+a morphometric comparison, "source data are provided with this paper" resolves to the
+segmentation software and demo images. None of the values behind Fig. 2 or Supplementary
+Fig. 4A are in it. Reaching it at all took a detour: the PMC download link returns a
+JavaScript interstitial, and the file only came down through Europe PMC's
+`supplementaryFiles` endpoint.
+
+**The most interesting object found was in the follow-up paper.** The eLife 2024 Zenodo
+deposits are proximal tibia and distal femur at **E18.5 and P40** — one plate, two ages,
+spanning a large change in growth rate. That is `hunziker1989`'s own design. If 3D MAPs
+cell-morphology output exists for those samples, it would be **the first modern 3D test of
+the shape-modulation claim** — a better prize than the PT-vs-DT comparison that started this.
+The deposits themselves are raw Confetti clonal stacks under a different labelling scheme, so
+they cannot be used without rerunning the pipeline.
+
+Both were requested from the corresponding authors on 2026-08-06. `g_l1arch_017` moves from
+tractability **1 to 2**: the analysis is written and validated, but the input now depends on
+someone answering an email.
+
+## Standing after fifteen rounds
+
+| | |
+|---|---|
+| within-plate orientation confound | **measured, immaterial** (round 14) |
+| within-plate enlargement | **near-isotropic** (round 14) |
+| between-plate comparison | blocked on data that exists but is not public |
+| `hunziker1989`'s own axis, in 3D | **possibly already imaged**, in the 2024 deposits |
+| `terminal_cell_shape_modulation` | still **D** |
