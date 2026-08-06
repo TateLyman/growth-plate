@@ -99,3 +99,87 @@ Per-zone scoring rather than whole-plate: the expression filter currently asks "
 transcribed anywhere in the plate", when the question is "is it transcribed in the zone
 the path runs through". That needs the zonal cluster assignments from Chu 2026
 (PMID 41984930), which is the top open row in `atlas/sources/access_queue.md`.
+
+---
+
+# ROUND 1 AMENDMENT — the Chu preprint arrived and demoted the top hit (2026-08-06)
+
+Source: **Chu TL *et al.*, bioRxiv 2025.03.14.642964** (`chu2025pre`, tier T6). This is
+the **preprint** of `chu2026` (PMID 41984930), not the published paper — same study,
+different title, not peer-reviewed, numbers may have moved. Every value below is
+preprint-derived and flagged as such.
+
+## 1. TGFBR1 — the grade-B, "no predicted harm" row now has a harm, and it is human
+
+The screen ranked TGFBR1 inhibitors first: `tgfb_signaling_chondrocyte —inhibits[−]→
+chondrocyte_hypertrophy`, grade **B**, refs `serra1997` + `yang2001` — both **mouse
+genetics**. Disinhibit hypertrophy, get bigger terminal cells.
+
+The preprint reports, in **human growth-plate explants**:
+
+- the quiescent stem population **GP1** sits in a **TGFβ-low** niche and actively
+  suppresses the pathway, upregulating the soluble inhibitors **THBS1, THBS2, THBS4,
+  DCN** — the most highly expressed TGFβ-related genes in that cluster;
+- **GH stimulates explant growth and resting-zone proliferation by *activating* TGFβ**,
+  autocrine, alongside JAK/STAT and ERK;
+- EdU labelling in 7 vehicle vs 6 GH-treated patients: **P = 0.013 in one zone,
+  P = 0.79 in the other**.
+
+So in human tissue, TGFβ activation is part of how the principal growth hormone works,
+and TGFβ-low is the signature of *quiescence*. **A TGFBR1 inhibitor is therefore
+predicted to hold stem cells quiescent** — a harm to N_p and proliferation that the
+graph had no edge for, so the screen's harm column was empty. Human tissue outranks
+mouse genetics here.
+
+**The row is not deleted, because the two claims concern different variables** —
+TGFβ may restrain *hypertrophy* (mouse) while sustaining *stem-cell proliferation*
+(human). But "grade B, no predicted harm" was wrong, and the corrected reading is a
+velocity-versus-duration trade:
+
+> TGFβ inhibition → fewer, larger terminal cells and a better-preserved stem pool.
+> Whether that nets positive depends entirely on the time axis the flow model does not
+> have, since a preserved resting zone delays exhaustion and therefore fusion
+> (`rz_depletion_causes_fusion`, `stem_cell_exhaustion_fusion`).
+
+That is a genuinely testable prediction and it was not visible before this paper.
+
+## 2. GH acts on the resting zone, not the proliferative zone
+
+One of the two EdU zones is significant and the other is flatly not (P = 0.79). Read
+with the abstract's "promoted stem cell proliferation", GH's direct action is on the
+**stem compartment**. Mapped onto the flow model, GH raises **N_p** — cells fed into the
+column — rather than shortening **T_c**. That is consistent with `hunziker1989`
+(acceleration without increased proliferation rate) and it means the 80 %-of-uncertainty
+parameter may not be the one GH moves at all.
+
+*Caveat: which zone carries which p-value is read from the figure panel text in the
+extracted PDF and has not been confirmed against the published figure.*
+
+## 3. The donors are children being operated on for being too tall
+
+The biopsies come from **epiphysiodesis to prevent idiopathic tall stature** in
+Scandinavian adolescents. Every expression value in
+`query/human_growth_plate_expression.csv` — and therefore every "target is expressed in
+human growth plate" filter decision in this document — comes from plates selected for
+growing too much. There is no normal-stature paediatric growth-plate scRNA-seq to
+compare against. This caveat is now in the tool's own header.
+
+## 4. Per-zone expression now exists
+
+`query/human_growth_plate_expression.byzone.csv`, built with the preprint's published
+markers — GP1/2 stem (SFRP5, APOE, GAS1), GP3 proliferative (CCND1), GP4
+pre-hypertrophic (IHH, MEF2C), GP5 hypertrophic (COL10A1). It is a **marker-score
+approximation, not their clustering**: their labels are not in the GEO deposit, GP1 and
+GP2 cannot be separated by markers alone, and they regressed cell-cycle signal out of
+their embedding while this does not.
+
+Zone assignment is also wildly donor-dependent — GP5 runs 448 / 2,388 / **4,021** / 51
+cells across the four — so per-zone rates must be compared within a donor and agreed
+across donors, never pooled.
+
+## 5. What this changes about what to get next
+
+Chu is no longer the top ask. The screen's remaining weakness is that **six of seven
+surviving rows are grade C — one animal study at the weakest link.** The next request is
+the primary papers behind those links, and `schipani2001` (EGLN1/HIF) first, because it
+is the one whose compound class is already approved and orally dosed.

@@ -13,8 +13,19 @@ in none, and the difference is free to compute.
 
 SOURCE
 ------
-GSE288028 (Chagin / Savendahl). FOUR human epiphysiodesis needle biopsies, ages 11-14,
-described by the submitters as otherwise physiologically healthy. This script uses ONLY
+GSE288028 (Chagin / Savendahl). FOUR human epiphysiodesis needle biopsies from children
+in puberty stages B2-B4.
+
+**THE DONORS ARE NOT TYPICAL CHILDREN AND THIS PROPAGATES INTO EVERY ROW.** The surgery
+was performed to PREVENT IDIOPATHIC TALL STATURE (Chu et al. 2025 preprint, Results).
+These are constitutionally very tall Scandinavian adolescents whose growth plates were
+being deliberately ablated. Any expression value here is from a plate selected for
+growing too much. Whether that biases the transcriptome is unknown and untestable from
+this dataset, because there is no normal-stature paediatric growth-plate scRNA-seq to
+compare against - which is itself the reason this is the only such table in existence.
+
+The GEO record describes the donors as ages 11-14; the preprint text says 12-15. The
+discrepancy is unresolved and is recorded rather than reconciled. This script uses ONLY
 the four samples processed directly:
 
     GSM9328218 donor1   GSM9328221 donor2   GSM9328224 donor3   GSM9328229 donor4
@@ -57,6 +68,33 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 OUT_CSV = os.path.join(ROOT, "query", "human_growth_plate_expression.csv")
 
+# ZONAL ASSIGNMENT, and what it is not.
+#
+# Chu et al. 2025 (bioRxiv 2025.03.14.642964, the PREPRINT of the Sci Transl Med paper)
+# resolve the human pubertal growth plate into five chondrocyte subclusters GP1-GP5 and
+# publish their markers: GP1/GP2 progenitors (SFRP5, APOE; GAS1 marks the quiescent
+# GP1), GP3 proliferating (CCND1), GP4 pre-hypertrophic (IHH, MEF2C), GP5 hypertrophic
+# (COL10A1).
+#
+# What follows is a MARKER-SCORE APPROXIMATION of those zones, not their clustering.
+# Their cluster labels are not in the GEO deposit, so each cell is assigned to whichever
+# marker set scores highest per 10k counts. That is cruder than their pipeline in three
+# ways worth stating: it has no batch correction, it cannot separate GP1 from GP2 (the
+# two share SFRP5/APOE and the distinction is a whole-transcriptome one), and it assigns
+# every gated cell to some zone rather than leaving ambiguous cells out.
+#
+# The authors also regressed cell-cycle and stress signatures out of their embedding.
+# This script does NOT, because the cycling signal is the thing a proliferation-related
+# screen most needs - but that means the GP3 assignment here and theirs are not the
+# same object.
+ZONE_MARKERS = {
+    "GP1_2_stem":          ["SFRP5", "APOE", "GAS1"],
+    "GP3_proliferative":   ["CCND1", "MKI67", "TOP2A", "PCNA"],
+    "GP4_prehypertrophic": ["IHH", "MEF2C"],
+    "GP5_hypertrophic":    ["COL10A1", "IBSP", "SPP1"],
+}
+CHONDRO_GATE = ["COL2A1", "ACAN"]
+
 FRESH = {  # ONLY the directly-processed human samples
     "GSM9328218_P30453_1001.h5": "donor1",
     "GSM9328221_P31011_1001.h5": "donor2",
@@ -69,6 +107,8 @@ DETECT_PCT = 1.0          # a gene counts as detected in a donor at >=1% of cell
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--h5dir", required=True)
+    ap.add_argument("--zonal", action="store_true",
+                    help="also emit per-zone detection using the Chu marker sets")
     a = ap.parse_args()
     import h5py, numpy as np, scipy.sparse as sp
 
@@ -91,6 +131,50 @@ def main():
             ncells[dn] = int(shape[1])
             per[dn] = 100.0 * np.asarray((M > 0).sum(axis=1)).ravel() / shape[1]
         print(f"  {dn}: {ncells[dn]} cells")
+
+    if a.zonal:
+        zrows, zmeta = {}, {}
+        for fn, dn in FRESH.items():
+            with h5py.File(os.path.join(a.h5dir, fn), "r") as f:
+                g = f["matrix"]
+                shape = tuple(g["shape"][:])
+                M = sp.csc_matrix((g["data"][:], g["indices"][:], g["indptr"][:]),
+                                  shape=shape).tocsr()
+                names = np.array([x.decode() for x in g["features/name"][:]])
+                ix = {n: i for i, n in enumerate(names)}
+                tot = np.asarray(M.sum(axis=0)).ravel()
+                tot[tot == 0] = 1
+                S = np.vstack([
+                    np.asarray(M[[ix[m] for m in ms if m in ix], :].sum(axis=0)).ravel()
+                    / tot for ms in ZONE_MARKERS.values()])
+                gate = np.asarray(M[[ix[m] for m in CHONDRO_GATE if m in ix], :]
+                                  .sum(axis=0)).ravel() > 0
+                lab = np.array(list(ZONE_MARKERS))[S.argmax(axis=0)].astype(object)
+                lab[~gate] = "non_chondrocyte"
+                lab[(S.max(axis=0) == 0) & gate] = "unassigned"
+                lab = lab.astype(str)
+                zmeta[dn] = {z: int((lab == z).sum()) for z in np.unique(lab)}
+                for z in ZONE_MARKERS:
+                    sel = np.where(lab == z)[0]
+                    if len(sel) < 30:          # too few cells to quote a rate
+                        continue
+                    sub = M[:, sel]
+                    zrows.setdefault(z, {})[dn] = (
+                        100.0 * np.asarray((sub > 0).sum(axis=1)).ravel() / len(sel))
+            print(f"  {dn} zones: {zmeta[dn]}")
+        zp = OUT_CSV.replace(".csv", ".byzone.csv")
+        with open(zp, "w", newline="") as fh:
+            w = csv.writer(fh)
+            zs = list(ZONE_MARKERS)
+            w.writerow(["gene"] + [f"{z}__{d}" for z in zs for d in zrows.get(z, {})])
+            cols = [(z, d) for z in zs for d in zrows.get(z, {})]
+            for i in range(len(names0)):
+                vals = [zrows[z][d][i] for z, d in cols]
+                if max(vals) < 1.0:
+                    continue
+                w.writerow([names0[i]] + [f"{v:.2f}" for v in vals])
+        json.dump(zmeta, open(zp.replace(".csv", ".meta.json"), "w"), indent=1)
+        print(f"wrote {zp}")
 
     donors = list(FRESH.values())
     keep = np.zeros(len(names0), dtype=bool)
