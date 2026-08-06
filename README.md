@@ -38,13 +38,13 @@ Unverified is acceptable and is marked (`value_unverified: true`). Invented is f
 ## Coverage dashboard
 
 <!-- DASHBOARD:BEGIN -->
-**Totals** — 614 nodes (614 researched, 0 stubs) ·
-1181 edges · 288 gaps (147 search logs) · 1051 references
+**Totals** — 615 nodes (615 researched, 0 stubs) ·
+1184 edges · 289 gaps (148 search logs) · 1053 references
 
 ```
-nodes  ██████████░░░░░░░░░░ 614/1200 (51%)
-edges  █████████░░░░░░░░░░░ 1181/2500 (47%)
-gaps   ████████████████████ 288/150 (100%)
+nodes  ██████████░░░░░░░░░░ 615/1200 (51%)
+edges  █████████░░░░░░░░░░░ 1184/2500 (47%)
+gaps   ████████████████████ 289/150 (100%)
 ```
 
 | Layer | Name | Nodes | Researched | Edges out | Gaps | Quota | Doc | Fig |
@@ -52,8 +52,8 @@ gaps   ████████████████████ 288/150 (100
 | L0 | developmental_origin | 25 | 25 | 31 | 13 | ✅ | ✅ | ✅ |
 | L1 | growth_plate_architecture | 48 | 48 | 48 | 14 | ✅ | ✅ | ✅ |
 | L2 | stem_and_progenitor_biology | 35 | 35 | 56 | 14 | ✅ | ✅ | ✅ |
-| L3 | signaling_networks | 88 | 88 | 228 | 43 | ✅ | ✅ | ✅ |
-| L4 | endocrine_and_systemic | 72 | 72 | 217 | 24 | ✅ | ✅ | ✅ |
+| L3 | signaling_networks | 89 | 89 | 230 | 44 | ✅ | ✅ | ✅ |
+| L4 | endocrine_and_systemic | 72 | 72 | 218 | 24 | ✅ | ✅ | ✅ |
 | L5 | matrix_and_mineralization | 41 | 41 | 101 | 17 | ✅ | ✅ | ✅ |
 | L6 | mechanobiology | 31 | 31 | 94 | 23 | ✅ | ✅ | ✅ |
 | L7 | fusion_and_cessation | 34 | 34 | 33 | 18 | ✅ | ✅ | ✅ |
@@ -63,13 +63,13 @@ gaps   ████████████████████ 288/150 (100
 | L11 | pathology_as_natural_experiment | 56 | 56 | 83 | 26 | ✅ | ✅ | ✅ |
 | L12 | pharmacology_as_mechanistic_probe | 36 | 36 | 79 | 30 | ✅ | ✅ | ✅ |
 | L13 | methods_and_data | 41 | 41 | 40 | 14 | ✅ | ✅ | ✅ |
-| | **total** | **614** | **614** | **1181** | **288** | | | |
+| | **total** | **615** | **615** | **1184** | **289** | | | |
 
-**Confidence distribution** (researched nodes): **A** 156 · **B** 185 · **C** 184 · **D** 76 · **E** 11 · **X** 2
+**Confidence distribution** (researched nodes): **A** 156 · **B** 185 · **C** 184 · **D** 77 · **E** 11 · **X** 2
 
-**Gap types**: `contradiction` 26 · `known_unknown` 70 · `method_blocked` 12 · `quantitative_gap` 67 · `scale_gap` 11 · `search_established` 80 · `species_gap` 22
+**Gap types**: `contradiction` 26 · `known_unknown` 70 · `method_blocked` 12 · `quantitative_gap` 67 · `scale_gap` 11 · `search_established` 80 · `species_gap` 23
 
-**Quantitative**: 1520 values on nodes · 1520 rows in `quant/parameters.csv`
+**Quantitative**: 1521 values on nodes · 1520 rows in `quant/parameters.csv`
 
 **Reference verification** (`tools/verify_refs.py`): 1005 verified · 0 mismatched · 0 unresolved · 44 manual
 
@@ -87,11 +87,11 @@ reported by `atlas/tools/context_filter.py --coverage-report` and in
 
 | metric | value | target |
 |---|---:|---:|
-| `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **57.5%** | — |
+| `human_evidence_fraction` — researched nodes with `human_evidence: direct` | **57.4%** | — |
 | `replicated_human_fraction` — direct human evidence **and** ≥2 human primaries | **40.2%** | — |
-| `edges_per_node` | **1.92** | target retired — see note above |
+| `edges_per_node` | **1.93** | target retired — see note above |
 | `refs_per_researched` | **3.13** | ≥3.0 |
-| `quant_node_coverage` | **68.4%** | ≥60% |
+| `quant_node_coverage` | **68.5%** | ≥60% |
 | `stub_fraction` | **0.0%** | 0% |
 
 | Layer | researched | human_evidence: direct | replicated human |
@@ -99,7 +99,7 @@ reported by `atlas/tools/context_filter.py --coverage-report` and in
 | L0 | 25 | 8 (32%) | 2 (8%) |
 | L1 | 48 | 20 (42%) | 19 (40%) |
 | L2 | 35 | 5 (14%) | 0 (0%) |
-| L3 | 88 | 18 (20%) | 14 (16%) |
+| L3 | 89 | 18 (20%) | 14 (16%) |
 | L4 | 72 | 46 (64%) | 33 (46%) |
 | L5 | 41 | 18 (44%) | 12 (29%) |
 | L6 | 31 | 10 (32%) | 10 (32%) |

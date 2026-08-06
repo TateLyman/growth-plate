@@ -1058,6 +1058,14 @@
   "glutamine metabolism, chondrocyte": "amino_acid_sensing_chondrocyte",
   "autophagy_chondrocyte": "autophagy_chondrocyte",
   "autophagy in growth plate chondrocytes": "autophagy_chondrocyte",
+  "beta2_adrenoceptor_chondrocyte": "beta2_adrenoceptor_chondrocyte",
+  "beta-2 adrenoceptor in chondrocytes": "beta2_adrenoceptor_chondrocyte",
+  "adrb2": "beta2_adrenoceptor_chondrocyte",
+  "beta2-ar": "beta2_adrenoceptor_chondrocyte",
+  "b2-adrenoceptor": "beta2_adrenoceptor_chondrocyte",
+  "adrenergic input to the growth plate": "beta2_adrenoceptor_chondrocyte",
+  "sympathetic input to the physis": "beta2_adrenoceptor_chondrocyte",
+  "catecholamine signalling in cartilage": "beta2_adrenoceptor_chondrocyte",
   "beta_catenin_ctnnb1": "beta_catenin_ctnnb1",
   "beta-catenin (ctnnb1)": "beta_catenin_ctnnb1",
   "ctnnb1": "beta_catenin_ctnnb1",
@@ -2547,6 +2555,7 @@
   "telomere_attrition_chondrocyte": "atlas/nodes/L2_stem_and_progenitor_biology/telomere_attrition_chondrocyte.yaml",
   "amino_acid_sensing_chondrocyte": "atlas/nodes/L3_signaling_networks/amino_acid_sensing_chondrocyte.yaml",
   "autophagy_chondrocyte": "atlas/nodes/L3_signaling_networks/autophagy_chondrocyte.yaml",
+  "beta2_adrenoceptor_chondrocyte": "atlas/nodes/L3_signaling_networks/beta2_adrenoceptor_chondrocyte.yaml",
   "beta_catenin_ctnnb1": "atlas/nodes/L3_signaling_networks/beta_catenin_ctnnb1.yaml",
   "bmp2_ligand": "atlas/nodes/L3_signaling_networks/bmp2_ligand.yaml",
   "bmp6_ligand": "atlas/nodes/L3_signaling_networks/bmp6_ligand.yaml",
@@ -7122,14 +7131,15 @@
  "convergence": [
   {
    "node": "growth_velocity_longitudinal",
-   "inbound": 42,
-   "n_layers": 9,
+   "inbound": 43,
+   "n_layers": 10,
    "layers": [
     "L0",
     "L1",
     "L11",
     "L12",
     "L13",
+    "L3",
     "L4",
     "L5",
     "L6",
@@ -7473,6 +7483,20 @@
    "layer": "L5"
   },
   {
+   "node": "hypertrophic_chondrocyte",
+   "inbound": 8,
+   "n_layers": 6,
+   "layers": [
+    "L1",
+    "L13",
+    "L3",
+    "L5",
+    "L6",
+    "L8"
+   ],
+   "layer": "L1"
+  },
+  {
    "node": "chondrocyte_to_osteoblast_transdifferentiation",
    "inbound": 8,
    "n_layers": 5,
@@ -7570,19 +7594,6 @@
     "L4"
    ],
    "layer": "L4"
-  },
-  {
-   "node": "hypertrophic_chondrocyte",
-   "inbound": 7,
-   "n_layers": 5,
-   "layers": [
-    "L1",
-    "L13",
-    "L5",
-    "L6",
-    "L8"
-   ],
-   "layer": "L1"
   },
   {
    "node": "chondro_osseous_junction",
@@ -8082,12 +8093,12 @@
   "L8->L11": 27,
   "L11->L9": 8,
   "L12->L3": 23,
-  "L4->L11": 17,
+  "L4->L11": 18,
   "L7->L11": 1,
   "L11->L11": 8,
   "L5->L11": 10,
   "L11->L5": 7,
-  "L3->L1": 31,
+  "L3->L1": 33,
   "L3->L0": 5,
   "L3->L8": 1,
   "L3->L5": 9,
@@ -32523,6 +32534,39 @@
     "path": [
      "e00346",
      "e00048",
+     "e00073"
+    ]
+   }
+  },
+  "beta2_adrenoceptor_chondrocyte": {
+   "hypertrophic_chondrocyte": {
+    "sign": -1,
+    "depth": 1,
+    "path": [
+     "e01182"
+    ]
+   },
+   "growth_velocity_longitudinal": {
+    "sign": 1,
+    "depth": 1,
+    "path": [
+     "e01183"
+    ]
+   },
+   "chondrocyte_to_osteoblast_transdifferentiation": {
+    "sign": -1,
+    "depth": 2,
+    "path": [
+     "e01182",
+     "e01072"
+    ]
+   },
+   "cxcl12_abundant_reticular_cell": {
+    "sign": -1,
+    "depth": 3,
+    "path": [
+     "e01182",
+     "e01072",
      "e00073"
     ]
    }
@@ -77252,8 +77296,8 @@
   "zebrafish_skeletal_model"
  ],
  "edge_usability": {
-  "usable": 777,
-  "unusable": 404,
+  "usable": 779,
+  "unusable": 405,
   "reason": "sign-exempt relation (precedes/binds/correlates_with/hypothesized_link) or unsigned"
  }
 }

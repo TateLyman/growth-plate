@@ -4952,6 +4952,21 @@
    "discriminating_experiment": "In cultured fetal metatarsals or tibial explants, compare Noggin against ligand-selective neutralising antibodies to BMP2, BMP4 and BMP7 individually and in combination, reading out longitudinal growth rate, hypertrophic zone height and pSMAD1/5/8 immunostaining. Under a single dominant ligand, one selective antibody reproduces the Noggin effect. Under genuine redundancy, only the combination does, and any published claim of the form \"BMP ligand X is required\" that rests on Noggin must be restated as \"BMP-SMAD1/5/8 output is required\". Use the result to audit and re-tag existing atlas edges whose evidence is Noggin-based.",
    "tractability": 4,
    "search_log_ref": "g_para_009"
+  },
+  {
+   "gap_id": "g_l3adrn_001",
+   "type": "species_gap",
+   "layer": "L3",
+   "question": "Does sympathetic / adrenergic input regulate longitudinal bone growth at the human physis, and do beta-blockers prescribed to children affect stature?",
+   "why_it_matters": "Chondrocyte-specific beta-2 adrenoceptor knockout reduces long bone growth in mouse (kuhn2026), and beta-blockers are prescribed to children for arrhythmia, migraine prophylaxis, infantile haemangioma (propranolol, often for months in infancy) and Marfan syndrome. If the mouse direction transfers, a widely used paediatric drug class acts on the growth plate and nobody has measured it. The systemic and osteoblast-specific knockouts move bone mass the OPPOSITE way, so the sign cannot be assumed.",
+   "what_is_known": "One mouse conditional knockout: chondrocyte-specific Adrb2 deletion reduces long bone growth via a faster proliferative-to-hypertrophic transition, with osteopenia at 40 weeks and delayed fracture healing (kuhn2026).",
+   "what_is_missing": "Any human observation. No growth-velocity data in children on chronic beta-blockade, no ADRB2 stature association reported in this atlas, and no human physeal expression of ADRB2.",
+   "nearest_evidence": [
+    "kuhn2026"
+   ],
+   "discriminating_experiment": "Retrospective height-velocity analysis of infants treated with propranolol for infantile haemangioma - a large, well-documented, months-long paediatric beta-blockade exposure with routine growth monitoring - against matched untreated haemangioma controls. Under transfer, treated infants show reduced height velocity during exposure; under species divergence or receptor absence, no difference. ADRB2 immunostaining on archival human physeal tissue would establish the precondition at far lower cost.",
+   "tractability": 4,
+   "search_log_ref": "g_l3adrn_001"
   }
  ],
  "by_layer": {
@@ -5136,7 +5151,8 @@
    "g_para_002",
    "g_para_007",
    "g_para_008",
-   "g_para_009"
+   "g_para_009",
+   "g_l3adrn_001"
   ],
   "L4": [
    "g_l4endo_001",
@@ -5573,7 +5589,8 @@
    "g_l0l9_009",
    "g_l6l5_001",
    "g_l6l5_009",
-   "g_l4l3_007"
+   "g_l4l3_007",
+   "g_l3adrn_001"
   ]
  },
  "by_tractability": {
@@ -5850,7 +5867,8 @@
    "g_para_002",
    "g_para_007",
    "g_para_008",
-   "g_para_009"
+   "g_para_009",
+   "g_l3adrn_001"
   ],
   "5": [
    "g_l3core_009",
@@ -7615,6 +7633,18 @@
     "hit_count": 21,
     "screened_count": 10,
     "reason_none_qualified": "No hit reports an Fgfr3 knockdown or knockout control in the FGF21 chondrocyte system, and none reports an Fgfr1;Fgfr3 double perturbation in cartilage. The only growth plate hit is wu2012 itself (PMID 22696219, \"Fibroblast growth factor 21 inhibits chondrocyte function and growth hormone action directly at the growth plate\"), already in the atlas, which detected both receptors in the same cells and knocked down only FGFR1. Remaining hits are metabolic, hepatic, reproductive or reviews. The receptor assignment therefore rests on a single-paralog knockdown with the other paralog present, undisturbed and - per delezoide1998 - the one actually expressed in the human growth plate."
+   }
+  ],
+  "g_l3adrn_001": [
+   {
+    "gap_id": "g_l3adrn_001",
+    "database": "Europe PMC",
+    "exact_query_string": "(adrenergic OR sympathetic OR catecholamine OR \"beta-blocker\") AND (\"growth plate\" OR physis OR \"longitudinal bone growth\" OR \"bone elongation\") NOT PUB_TYPE:\"Review\"",
+    "filters": "resultType=core, pageSize=8, no date limit",
+    "date_run": "2026-08-06",
+    "hit_count": 889,
+    "screened_count": 8,
+    "reason_none_qualified": "Top-ranked records screened. kuhn2026 is the one primary directly on point and is now cited on beta2_adrenoceptor_chondrocyte; it is MOUSE. The remaining screened records are sympathetic innervation of the TMJ and knee joint, neutrophil-specific adrenoreceptor knockout in fracture healing, locus coeruleus endothelial heterogeneity, and a rat fetal aripiprazole exposure - none is a human physeal or growth-velocity observation. No human evidence retrieved."
    }
   ]
  }

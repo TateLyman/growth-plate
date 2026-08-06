@@ -18446,3 +18446,59 @@ edges:
   notes: Single transcriptional-profiling study for the trans effect; graded D on that basis even though the Temple
     phenotype itself is A-grade.
   traversal_usable: true
+- edge_id: e01182
+  source: beta2_adrenoceptor_chondrocyte
+  target: hypertrophic_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: chondrocyte-specific Adrb2 knockout accelerates the proliferative-to-hypertrophic transition, which
+    the authors give as the most likely cause of the reduced long bone growth; so intact beta-2 signalling RESTRAINS
+    the transition. Direction only - no rate was extracted
+  context: 'mouse, chondrocyte-specific conditional knockout, tibia and femur at 6, 12 and 40 weeks; both sexes
+    (male and female); zones resolved in source: proliferative zone, prehypertrophic zone, hypertrophic zone; juvenile,
+    adult'
+  timescale: weeks to months - phenotype read at 6, 12 and 40 weeks
+  evidence_tier: T1
+  refs:
+  - kuhn2026
+  confidence: D
+  notes: 'Closes the coverage gap the Phase 7 run generated: the atlas had NO autonomic input to the growth plate
+    and no gap asserting the absence. Graded D - one conditional knockout, no replication, no human data. The systemic
+    and osteoblast-specific knockouts of the same receptor move bone mass the OPPOSITE way, so this sign is specific
+    to the cartilage compartment.'
+  traversal_usable: true
+- edge_id: e01183
+  source: beta2_adrenoceptor_chondrocyte
+  target: growth_velocity_longitudinal
+  relation: required_for
+  sign: +
+  magnitude: chondrocyte-specific Adrb2 knockout reduces long bone growth (direction only)
+  context: mouse, chondrocyte-specific conditional knockout; both sexes (male and female); zone unknown (organism-level
+    readout, no zonal resolution); juvenile, adult
+  timescale: weeks to months
+  evidence_tier: T1
+  refs:
+  - kuhn2026
+  confidence: D
+  notes: See g_l3adrn_001 - no human observation of any kind exists for this link.
+  traversal_usable: true
+- edge_id: e01184
+  source: fgf23_hormone
+  target: chronic_kidney_disease_growth
+  relation: correlates_with
+  sign: unknown
+  magnitude: in 543 children with CKD stages 2-4 with 2-3 biannual measurements each, plasma c-terminal FGF23 was
+    stable in most; children in rapidly-rising FGF23 trajectory groups had lower eGFR, higher serum phosphorus,
+    proteinuria and anaemia, and FGF23 trajectory independently predicted progression to kidney failure
+  context: human, 543 children, CKD in Children (CKiD) study, median age 12 y at enrolment, CKD stages 2-4; zone
+    unknown (organism-level readout, no zonal resolution); sex unknown (not reported in source); juvenile, pubertal
+  timescale: years - biannual sampling with longitudinal trajectory modelling
+  evidence_tier: T1
+  refs:
+  - perwad2026
+  confidence: B
+  notes: 'Closes the FGF23/CKD-MBD coverage gap: both endpoint nodes existed and no edge joined them. correlates_with
+    and sign unknown DELIBERATELY - this is an observational trajectory association with kidney-failure progression,
+    not a demonstration that FGF23 causes the growth failure, and signing it would assert more than the study shows.
+    traversal_usable stays false by relation type, which is the correct consequence.'
+  traversal_usable: false

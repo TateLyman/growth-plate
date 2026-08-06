@@ -1,7 +1,7 @@
 {
  "meta": {
-  "nodes": 614,
-  "edges": 1181,
+  "nodes": 615,
+  "edges": 1184,
   "generated_from": "atlas/nodes/**, atlas/edges/edges.yaml",
   "warning": "COMPILED ARTIFACT - never hand-edit; regenerate with tools/compile_query.py"
  },
@@ -17790,6 +17790,69 @@
    "pending_source": null,
    "last_verified": "2026-08-05",
    "aliases": null
+  },
+  "beta2_adrenoceptor_chondrocyte": {
+   "id": "beta2_adrenoceptor_chondrocyte",
+   "name": "Beta-2 adrenoceptor in chondrocytes",
+   "type": "protein",
+   "layer": "L3",
+   "stub": false,
+   "summary": "The atlas had NO autonomic or neural input to the growth plate at all - the strings 'adrenergic' and 'catecholamine' resolved to zero nodes across 614 - and no gap asserted the absence. The Phase 7 falsification run found the hole (item P08) and it was logged as a coverage gap; this node closes it with the primary that motivated the search.\nChondrocyte-specific deletion of the beta-2 adrenoceptor in mouse REDUCES long bone growth, and the authors attribute it to a FASTER transition of proliferative to hypertrophic chondrocytes rather than to a proliferation deficit - which places catecholamine input on the same control variable (time spent proliferating before hypertrophy) that thyroid hormone, CNP and glucocorticoid act on. Tibiae and femora were analysed at 6, 12 and 40 weeks in both sexes. Older knockouts additionally showed an osteopenic phenotype with reduced osteoblast number, and fracture healing was delayed with reduced cartilage area at an intermediate time point. An in vitro expression experiment implicated WNT and TGF-beta signalling (kuhn2026).\nThe wider context is that systemic and osteoblast-specific beta-2 adrenoceptor knockouts INCREASE bone mass, so the cartilage-specific effect is not the same sign as the skeletal one and cannot be inferred from it - which is exactly why a chondrocyte-specific allele was needed.\nNOTHING HUMAN. There is no human genetic, pharmacological or observational evidence in this atlas connecting beta-blockade or sympathetic tone to longitudinal growth, and beta-blockers are prescribed to children. That is a gap this node opens rather than closes.",
+   "confidence": "D",
+   "claim_grades": [
+    {
+     "claim": "Beta-2 adrenoceptor signalling in chondrocytes is required for normal long bone growth.",
+     "grade": "D",
+     "basis": "One mouse conditional knockout, both sexes, three ages (kuhn2026). No replication."
+    },
+    {
+     "claim": "The mechanism is a faster proliferative-to-hypertrophic transition rather than reduced proliferation.",
+     "grade": "D",
+     "basis": "Author interpretation of the same single study; stated as \"most likely\" in the source and not independently tested."
+    },
+    {
+     "claim": "Sympathetic tone or beta-blockade affects human longitudinal growth.",
+     "grade": "X",
+     "basis": "Not traceable to any primary data in humans. Recorded because beta-blockers are prescribed to children and the question has apparently not been asked."
+    }
+   ],
+   "human_evidence": "absent",
+   "human_evidence_note": "No human data of any kind. The mechanism is one mouse conditional knockout.",
+   "species_basis": [
+    "mouse"
+   ],
+   "translation_risk": "high",
+   "translation_risk_reason": "A single mouse conditional knockout, with the additional complication that the systemic and osteoblast-specific knockouts of the same receptor move bone mass in the OPPOSITE direction. Nothing licenses transferring the cartilage-specific sign to humans.",
+   "localization": [
+    "mouse growth plate chondrocyte: functional requirement demonstrated by conditional deletion (kuhn2026)",
+    "human growth plate: not examined by any retrieved study"
+   ],
+   "key_refs": [
+    {
+     "ref_id": "kuhn2026",
+     "pmid": "41809686",
+     "first_author": "Kuhn MR",
+     "year": 2026,
+     "type": "primary",
+     "one_line_finding": "Chondrocyte-specific beta-2 adrenoceptor knockout reduces long bone growth in mouse, attributed to faster proliferative-to-hypertrophic transition; osteopenia at 40 weeks and delayed fracture healing."
+    }
+   ],
+   "open_questions": [
+    "g_l3adrn_001"
+   ],
+   "contradicts": null,
+   "termination_reason": null,
+   "termination_note": null,
+   "pending_source": null,
+   "last_verified": "2026-08-06",
+   "aliases": [
+    "ADRB2",
+    "beta2-AR",
+    "b2-adrenoceptor",
+    "adrenergic input to the growth plate",
+    "sympathetic input to the physis",
+    "catecholamine signalling in cartilage"
+   ]
   },
   "beta_catenin_ctnnb1": {
    "id": "beta_catenin_ctnnb1",
@@ -58439,6 +58502,57 @@
    "confidence": "D",
    "notes": "Single transcriptional-profiling study for the trans effect; graded D on that basis even though the Temple phenotype itself is A-grade.",
    "traversal_usable": true
+  },
+  {
+   "edge_id": "e01182",
+   "source": "beta2_adrenoceptor_chondrocyte",
+   "target": "hypertrophic_chondrocyte",
+   "relation": "inhibits",
+   "sign": "-",
+   "magnitude": "chondrocyte-specific Adrb2 knockout accelerates the proliferative-to-hypertrophic transition, which the authors give as the most likely cause of the reduced long bone growth; so intact beta-2 signalling RESTRAINS the transition. Direction only - no rate was extracted",
+   "context": "mouse, chondrocyte-specific conditional knockout, tibia and femur at 6, 12 and 40 weeks; both sexes (male and female); zones resolved in source: proliferative zone, prehypertrophic zone, hypertrophic zone; juvenile, adult",
+   "timescale": "weeks to months - phenotype read at 6, 12 and 40 weeks",
+   "evidence_tier": "T1",
+   "refs": [
+    "kuhn2026"
+   ],
+   "confidence": "D",
+   "notes": "Closes the coverage gap the Phase 7 run generated: the atlas had NO autonomic input to the growth plate and no gap asserting the absence. Graded D - one conditional knockout, no replication, no human data. The systemic and osteoblast-specific knockouts of the same receptor move bone mass the OPPOSITE way, so this sign is specific to the cartilage compartment.",
+   "traversal_usable": true
+  },
+  {
+   "edge_id": "e01183",
+   "source": "beta2_adrenoceptor_chondrocyte",
+   "target": "growth_velocity_longitudinal",
+   "relation": "required_for",
+   "sign": "+",
+   "magnitude": "chondrocyte-specific Adrb2 knockout reduces long bone growth (direction only)",
+   "context": "mouse, chondrocyte-specific conditional knockout; both sexes (male and female); zone unknown (organism-level readout, no zonal resolution); juvenile, adult",
+   "timescale": "weeks to months",
+   "evidence_tier": "T1",
+   "refs": [
+    "kuhn2026"
+   ],
+   "confidence": "D",
+   "notes": "See g_l3adrn_001 - no human observation of any kind exists for this link.",
+   "traversal_usable": true
+  },
+  {
+   "edge_id": "e01184",
+   "source": "fgf23_hormone",
+   "target": "chronic_kidney_disease_growth",
+   "relation": "correlates_with",
+   "sign": "unknown",
+   "magnitude": "in 543 children with CKD stages 2-4 with 2-3 biannual measurements each, plasma c-terminal FGF23 was stable in most; children in rapidly-rising FGF23 trajectory groups had lower eGFR, higher serum phosphorus, proteinuria and anaemia, and FGF23 trajectory independently predicted progression to kidney failure",
+   "context": "human, 543 children, CKD in Children (CKiD) study, median age 12 y at enrolment, CKD stages 2-4; zone unknown (organism-level readout, no zonal resolution); sex unknown (not reported in source); juvenile, pubertal",
+   "timescale": "years - biannual sampling with longitudinal trajectory modelling",
+   "evidence_tier": "T1",
+   "refs": [
+    "perwad2026"
+   ],
+   "confidence": "B",
+   "notes": "Closes the FGF23/CKD-MBD coverage gap: both endpoint nodes existed and no edge joined them. correlates_with and sign unknown DELIBERATELY - this is an observational trajectory association with kidney-failure progression, not a demonstration that FGF23 causes the growth failure, and signing it would assert more than the study shows. traversal_usable stays false by relation type, which is the correct consequence.",
+   "traversal_usable": false
   }
  ],
  "refs": {
@@ -66146,6 +66260,22 @@
    "type": "primary",
    "year": 2002
   },
+  "kuhn2026": {
+   "added": "2026-08-06",
+   "cited_by": 0,
+   "doi": "10.1093/jbmrpl/ziag021",
+   "first_author": "Kuhn MR",
+   "has_full_text": true,
+   "is_preprint": false,
+   "journal": "JBMR plus",
+   "open_access": true,
+   "pmid": "41809686",
+   "ref_id": "kuhn2026",
+   "tier": null,
+   "title": "\u03b2&lt;sub&gt;2&lt;/sub&gt;-adrenoceptor signaling in chondrocytes regulates long bone growth, bone homeostasis, and fracture healing in mice",
+   "type": null,
+   "year": 2026
+  },
   "kusumbe2014": {
    "added": "2026-08-05",
    "cited_by": 1598,
@@ -69368,6 +69498,22 @@
    "title": "Impaired growth plate function in bmp-6 null mice",
    "type": "primary",
    "year": 2008
+  },
+  "perwad2026": {
+   "added": "2026-08-06",
+   "cited_by": 0,
+   "doi": "10.2215/cjn.0000000954",
+   "first_author": "Perwad F",
+   "has_full_text": true,
+   "is_preprint": false,
+   "journal": "Clinical journal of the American Society of Nephrology : CJASN",
+   "open_access": false,
+   "pmid": "41642661",
+   "ref_id": "perwad2026",
+   "tier": null,
+   "title": "Fibroblast Growth Factor 23 Trajectories in Children and Association with CKD Progression: The CKD in Children Study",
+   "type": null,
+   "year": 2026
   },
   "pfander2004": {
    "added": "2026-08-05",
@@ -74798,16 +74944,16 @@
    "ref_id": "wu2013",
    "retracted": true,
    "retraction_disposition": "both_invalid",
+   "retraction_ground": "data_integrity_image_duplication_and_splice",
    "retraction_note": "Europe PMC pubtype \"Retracted Publication\"; Crossref labels the notice both \"withdrawal\" (source: publisher) and \"retraction\" (source: retraction-watch, record 24175). The notice body was retrieved from PMC7489917 - see retraction_reason_resolved. wu2012 (PMID 22696219) carries no retraction, correction or concern notice and stands.",
    "retraction_notice": "Withdrawal: J Biol Chem 2020 Sep 11;295(37):13137. doi:10.1074/jbc.W120.015607",
    "retraction_notice_pmid": "32917830",
+   "retraction_reason_resolved": "AUTHOR WITHDRAWAL for DATA INTEGRITY, not editorial retraction and not an interpretation failure. Withdrawn by Wu, Kharitonenkov, Dam, Jockers and De Luca; Tal Grunwald could not be reached. Stated grounds, verbatim in substance: in Fig 1C lanes 1 and 2 of the actin immunoblot are the same as lanes 3 and 4; in Fig 2C lanes 1 and 4 of the LEPROT immunoblot are the same and lanes 1 and 3 of the LEPROTL1 immunoblot are the same; and there is a splice in the LEPROTL1 immunoblot. The authors affirm the results and conclusions reflect the work done in their laboratory, and withdrew to preserve the accuracy of the literature. DISPOSITION CONSEQUENCE: the duplicated and spliced blots ARE the LEPROT/LEPROTL1 measurement the atlas depended on, so the observation does not survive the interpretation. both_invalid is now EVIDENCED rather than defaulted.",
+   "retraction_type": "author_withdrawal",
    "tier": "T1",
    "title": "Increased expression of fibroblast growth factor 21 (FGF21) during chronic undernutrition causes growth hormone insensitivity in chondrocytes by inducing leptin receptor overlapping transcript (LEPROT) and leptin receptor overlapping transcript-like 1 (LEPROTL1) expression",
    "type": "primary",
-   "year": 2013,
-   "retraction_type": "author_withdrawal",
-   "retraction_ground": "data_integrity_image_duplication_and_splice",
-   "retraction_reason_resolved": "AUTHOR WITHDRAWAL for DATA INTEGRITY, not editorial retraction and not an interpretation failure. Withdrawn by Wu, Kharitonenkov, Dam, Jockers and De Luca; Tal Grunwald could not be reached. Stated grounds, verbatim in substance: in Fig 1C lanes 1 and 2 of the actin immunoblot are the same as lanes 3 and 4; in Fig 2C lanes 1 and 4 of the LEPROT immunoblot are the same and lanes 1 and 3 of the LEPROTL1 immunoblot are the same; and there is a splice in the LEPROTL1 immunoblot. The authors affirm the results and conclusions reflect the work done in their laboratory, and withdrew to preserve the accuracy of the literature. DISPOSITION CONSEQUENCE: the duplicated and spliced blots ARE the LEPROT/LEPROTL1 measurement the atlas depended on, so the observation does not survive the interpretation. both_invalid is now EVIDENCED rather than defaulted."
+   "year": 2013
   },
   "wu2025": {
    "added": "2026-08-05",
