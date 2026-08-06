@@ -1600,3 +1600,55 @@ and the publication reports whether they differ.
 - 8 publications added to the bibliography.
 - `docs/POSITIVE_LEDGER.md` §§6, 7, 10 rewritten.
 - The three letters I was about to draft are cancelled. Two remain and they are different letters.
+
+---
+
+## CORR-018 — 2026-08-06 — a screen that failed its own guards twice, reported as a failure
+
+**What was attempted.** `atlas/tools/reservoir_screen.py`: test whether human growth plate
+tissue contains a GLI1+/PDGFRA+ population that is **not** chondrocyte — the human counterpart
+of the `qu2025` reservoir. Data: GSE288028, four fresh human epiphysiodesis biopsies.
+
+**Result: the screen does not report.** Its pre-declared guard G1 (the stromal gate must be
+enriched for THY1, which is not in the gate) failed on both runs.
+
+| run | gate | THY1 stromal vs chondrocyte |
+|---|---|---|
+| 1 | binary detection (>0 counts) | 18.37 vs 19.87 — **fail** |
+| 2 | count threshold (≥3 counts) | 16.49 vs 21.02 — **fail** |
+
+**Why the first run failed, and why the fix was legitimate.** The biopsy is ~95% chondrocyte, so
+ambient COL2A1 appears in nearly every droplet and a "NOT COL2A1" gate selects **low-RNA-content
+cells**, not stromal ones. Moving to count thresholds is standard practice for ambient
+contamination, was declared in the script header before re-running, and **left the guards
+unchanged.** That is a method fix, not a tuned result.
+
+**Why it stopped there.** The script's own header committed: *"If the guards fail again the
+result is reported as a failure of this dataset to answer the question, not retuned further."*
+THY1 was chosen as a guard before any result was seen. Changing a guard after watching it fail
+twice is precisely the defect guards exist to prevent, so the primary result was **not read out.**
+
+**What can honestly be said.** Three of four guard families passed — PDGFRB enrichment, cartilage
+collagen (COL9A1/COL11A1) depletion, and Hedgehog coherence (PTCH1 enriched in GLI1+ cells) — and
+only THY1 failed. **That is diagnostic information, not the finding**, and the finding stays
+unreported. In hindsight THY1 was a poor guard: it is an MSC marker that is also expressed on
+chondrocytes, so it was never a clean separator. **Recognising that after it failed is not a
+licence to drop it.**
+
+**What the dataset itself shows about its own limits:** stromal cells were 5.1%, 4.0%, **0.0%**
+and 21.4% across the four donors. Donor 3 returns *zero* — every cell passes the chondrocyte gate,
+consistent with the ambient-heavy library this atlas already flagged. Donor 4 has 383 cells total.
+**Dissociated scRNA-seq of a cartilage-dominated biopsy is the wrong instrument for an adjacency
+question**, which is a spatial one.
+
+### The rule this adds
+
+**Pick guards that could fail for the right reason.** A guard whose marker is shared between the
+two populations being separated cannot discriminate, and choosing it wastes the run. Guards should
+be selected for specificity to the contrast, not for familiarity.
+
+### Actioned
+
+- The screen is committed as-is, failing, with its header documenting both runs.
+- The question moves to the instrument that measures adjacency directly: `avijgan2026br`'s Visium
+  and Visium HD data, obtained from the authors' public repository.
