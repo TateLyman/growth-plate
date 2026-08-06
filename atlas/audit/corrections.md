@@ -1697,3 +1697,84 @@ test it. That is a statement about instruments, and it is worth more than a forc
    the GEO deposit. **This is a request to the authors, not an experiment.**
 2. Failing that, unsupervised clustering of GSE288028 to recover those populations independently.
 3. Or a deeper spatial platform — Xenium, or ISS with a targeted Hedgehog panel — on growth plate.
+
+---
+
+## CORR-020 — 2026-08-06 — a swallowed exception silently downgraded the method, and the log line said the wrong reason
+
+`cluster_gse288028.py` wrapped batch correction in a bare `try/except`:
+
+```python
+try:
+    import harmonypy
+    sc.external.pp.harmony_integrate(A, "donor"); rep="X_pca_harmony"
+except Exception:
+    rep="X_pca"; print("  batch correction: NONE (harmonypy unavailable) ...")
+```
+
+harmonypy **was** installed (2.0.0) and harmony **did** run to convergence. What raised was the
+line *after* it, inside scanpy: harmonypy 2.0 returns `Z_corr` as cells × PCs, scanpy still
+transposes it for the pre-2.0 PCs × cells layout, and anndata rejects the shape. The `except`
+caught it and clustered on **uncorrected PCA** — while printing *"harmonypy unavailable"*, which
+was false. The run reported four donors and 33 clusters and looked entirely normal.
+
+**Two failures, and the second is the worse one.** The bare `except` is ordinary sloppiness. The
+message inside it asserted a *cause* — an absent dependency — that the exception had not
+established. A log line that names a reason it did not check is a fabricated finding in the same
+sense as a fabricated citation; it just happens to be about my own tooling.
+
+**Fixed** by calling harmonypy directly, orienting `Z_corr` by shape against an explicit
+expectation, raising on any other shape, and asserting the correction actually moved the
+coordinates (`mean |shift| = 0.5356`). No `except`.
+
+**What re-running changed.** The stromal cluster got *better* on every marker — COL1A1 mean
+29.5 → 101.0, all four donors present instead of one cell from donor4 — so the uncorrected run
+had understated it. And one reported number reversed sign: **GLI3 was 5.05× enriched in the
+stromal population and is 0.72× on corrected clusters.** The v1 sentence "only GLI3, predominantly
+a Hedgehog repressor, is up" is **withdrawn**; no Hedgehog gene is up. The primary verdict —
+GLI1 depleted — held and strengthened (0.47 → 0.30).
+
+**Standing rule.** No bare `except` around a method step. If a correction, normalisation or
+integration step can fail, it fails loudly, and any fallback prints the exception it actually
+caught, never an inferred cause.
+
+---
+
+## CORR-021 — 2026-08-06 — ambient RNA is a property of a library, and I measured it globally
+
+CORR-018/019 established the fix for ambient contamination in a ~95%-cartilage biopsy: immune
+cells cannot transcribe COL2A1, so their COL2A1 level *is* the ambient floor, measured with no
+parameter to choose. That method is right. **I then applied it to the whole experiment at once.**
+
+Fixing CORR-020 exposed it. On corrected clusters the stromal population failed its COL2A1 guard
+at 15.1× ambient against a 5× ceiling — after having *passed* at 2.3× on uncorrected clusters,
+with worse markers. The guard was correct and the reference was wrong:
+
+| | immune clusters | cells of donor3 |
+|---|---|---|
+| donor1 ambient COL2A1 | 2.00 | |
+| donor2 ambient COL2A1 | 2.71 | |
+| donor4 ambient COL2A1 | 0.62 | |
+| donor3 | **9 immune cells in the entire library** | 106 in the stromal cluster |
+
+The immune compartment is ~99% donor1+donor2. donor3 is the cartilage-saturated library — its
+chondrocyte clusters carry 900–2,270 COL2A1 counts against 375 in the donor1/2-dominated one.
+Batch correction did its job and merged donor3 cells into the stromal cluster; scoring them
+against a donor1/2 floor then inflated the cluster's apparent COL2A1 sixfold. **A global floor
+under-corrects the dirty library and over-corrects the clean one.**
+
+**The fix is not a looser ceiling.** It is a per-donor floor (`reservoir_v2.py`, guard G0): a
+donor is judged only if its own ambient is measurable, ≥30 immune cells. **donor3 has 9, so
+donor3 is dropped entirely rather than compared against someone else's floor** — which costs the
+most cartilage-rich library and shrinks the chondrocyte comparison group from ~7,900 cells to 890.
+That cost is the honest price and is carried in the node.
+
+**The near-miss.** Had I not fixed the harmony bug, v1's guards would have passed on a global
+floor and I would have published a stromal population whose COL2A1 clearance was an artefact of
+which donors happened to land in it. It passed *because* the clustering was broken — the
+uncorrected run left donor3 out of the stromal cluster, so the global floor happened to fit.
+**A guard that passes for a reason you have not checked has not passed.**
+
+**Standing rule.** An internal reference must be measured in the same batch as the thing it
+judges. Where it cannot be, the unjudgeable cells are excluded and the exclusion is reported —
+they are never scored against another batch's reference.

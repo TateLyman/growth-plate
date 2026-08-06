@@ -10202,10 +10202,19 @@ gaps:
     outside the cartilage. nilsson2005, rabbit: resting-zone chondrocyte population doublings do not depend on donor
     age, so the proliferative limit is not carried by the cell. This atlas already holds groove_of_ranvier and perichondrial
     nodes describing the anatomical neighbourhood in which such a reservoir would sit.'
-  what_is_missing: (1) ANY HUMAN OBSERVATION. No human growth plate tissue has been examined for GLI1+ or PDGFRA+
-    progenitors outside the cartilage. (2) WHETHER THE RESERVOIR PERSISTS POSTNATALLY IN HUMANS, since the mouse
-    demonstration is fetal. (3) WHETHER IT IS STILL PRESENT NEAR FUSION - the age at which it would matter most
-    is the age at which it is least likely to remain.
+  what_is_missing: 'PARTLY ANSWERED 2026-08-06 BY THIS ATLAS''S OWN RE-ANALYSIS, AND THE ANSWER SPLITS THE QUESTION
+    IN TWO. (1) A HUMAN STROMAL POPULATION EXISTS - GSE288028, four directly processed libraries, 27,620 cells,
+    harmony-corrected, per-library ambient reference; cluster 0, 1,374 cells in three donors, COL1A1 573x enriched
+    over chondrocytes, PRRX1 13x, PDGFRA-positive in 78%, COL2A1 at its own donors'' ambient floor. (2) IT IS
+    HEDGEHOG-NEGATIVE. GLI1 0.30, PTCH1 0.08, HHIP 0.03, GLI2 0.22 relative to chondrocytes. Every direct target
+    is DEPLETED, and GLI1 is the marker by which the mouse reserve is identified, traced and recruited. STILL
+    MISSING - (a) POSITION, since dissociated scRNA-seq infers "outside the cartilage" from transcriptome and no
+    image places these cells relative to the plate; (b) WHETHER THE POPULATION IS RECRUITABLE, since qu2025 recruits
+    it by cartilage DAMAGE and no human sample can be taken under that condition, so a population that is
+    Hedgehog-off at rest is not thereby shown to be Hedgehog-unresponsive; (c) THE CONSTITUTION WINDOW, since the
+    biopsies are 12-14 y and Tanner 2-4 while the mouse reserve is constituted at about 3 postnatal weeks;
+    (d) DONOR3, the most cartilage-rich library, is EXCLUDED because it holds 9 immune cells and its ambient floor
+    cannot be measured (CORR-021); (e) INDEPENDENT REPLICATION in a second human cohort.'
   nearest_evidence:
   - qu2025
   - avijgan2026br
@@ -10217,9 +10226,15 @@ gaps:
     growth plate biopsies and their sections span the plate AND the surrounding tissue and secondary ossification
     centre - the spatial data therefore already contains whatever GLI1+ or PDGFRA+ population sits outside the cartilage,
     and their code and data are public on GitHub. chu2026 sequenced 23,625 cells from four donors including non-chondrocyte
-    clusters. ASKING WHETHER GLI1 AND PDGFRA MARK A POPULATION ADJACENT TO THE HUMAN RESTING ZONE IS A RE-ANALYSIS
-    OF PUBLISHED DATA AND COSTS NOTHING. A positive answer justifies everything downstream; a negative answer closes
-    the most promising route in this atlas, cheaply.
+    clusters. THE RE-ANALYSIS HAS NOW BEEN RUN AND THE CHEAP ROUTE IS SPENT - it took three instruments,
+    four guard failures and four corrections (CORR-018 through CORR-021) to reach a readable answer, and the spatial
+    data proved too shallow for Hedgehog components at PTCH1 45 and GLI1 60 pooled counts across 14 sections. THE
+    REMAINING EXPERIMENT IS NO LONGER FREE AND IS NOW SPECIFIC. (1) A targeted in-situ panel - Xenium or RNAscope -
+    for GLI1, PTCH1, PDGFRA, COL1A1 and COL2A1 on an INTACT human growth plate section, which supplies the position
+    that dissociation destroys and the depth that RRST lacks. (2) chu2026's explant, which survives two months,
+    INJURED and then assayed for GLI1 induction - the mouse result is about recruitment on damage, and nothing
+    observed at rest can test it. (3) A younger human cohort, to sample the window in which the reserve would be
+    constituted rather than the pubertal window in which it would already be spent.
 - gap_id: g_l2_recruit_reserve_pharmacologically
   type: known_unknown
   layer: L2

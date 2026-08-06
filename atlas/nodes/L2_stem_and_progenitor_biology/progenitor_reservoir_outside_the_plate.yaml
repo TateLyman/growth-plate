@@ -18,7 +18,15 @@ summary: 'Everything in this atlas about the division budget has assumed a close
   paused clock, it may be a REFILLED POOL. The atlas already held the fact that makes this plausible and never used
   it - nilsson2005 found that rabbit resting-zone chondrocytes from old and young donors undergo the SAME number of
   population doublings in culture. THE PROLIFERATIVE LIMIT IS NOT CARRIED BY THE CELL. It is imposed by the plate.
-  A limit that is imposed can in principle be lifted; a limit carried in the cell cannot.'
+  A limit that is imposed can in principle be lifted; a limit carried in the cell cannot. THE HUMAN QUESTION HAS NOW
+  BEEN ASKED, BY THIS ATLAS, AND THE ANSWER IS SPLIT. Re-analysis of GSE288028 recovers a genuine human stromal population
+  beside the pubertal growth plate - COL1A1 573x enriched, PRRX1 13x, PDGFRA-positive in 78% of cells, COL2A1 at its
+  own libraries'' ambient floor, present in three donors. So the anatomical counterpart of the mouse reservoir is
+  there. BUT EVERY DIRECT HEDGEHOG TARGET IS DEPLETED IN IT, NOT ENRICHED: GLI1 0.30, PTCH1 0.08, HHIP 0.03. The mouse
+  reservoir is DEFINED by Gli1 - it is found, traced and recruited through Hedgehog responsiveness - and the human
+  population that matches it on every stromal marker does not match it on the property that makes it a reservoir.
+  In human, GLI1 instead sits INSIDE the cartilage, highest in the clusters carrying the resting-zone marker SFRP5.
+  The reservoir hypothesis as posed does not transfer; the cells it would need do exist.'
 quantitative:
 - parameter: THE LONG-LIVED PROGENITORS THAT DRIVE POSTNATAL GROWTH ARE NOT PRESENT AT BIRTH
   value: reserve-zone progenitors do not self-renew in fetus or neonate; self-renewal begins at about 3 postnatal
@@ -69,6 +77,54 @@ quantitative:
     an intrinsic one is not. The authors'' alternative proposal, a progressive loss of DNA methylation tracking slow
     in vivo proliferation, remains untested sixteen years later and is the specific molecular hypothesis a reprogramming
     experiment would address.'
+- parameter: A HUMAN STROMAL POPULATION EXISTS ALONGSIDE THE GROWTH PLATE — COL1A1+, PRRX1+, PDGFRA+, COL2A1-negative
+  value: 1,374 cells; COL1A1 572.8x enriched over chondrocytes, PRRX1 13.3x, PDGFRA 1.2x; COL2A1 at 3.6x its own donors'
+    ambient floor against 579 mean counts in chondrocytes
+  unit: fold enrichment
+  conditions: human distal femur growth plate biopsies, GSE288028, the four DIRECTLY PROCESSED libraries only (the
+    other ten are 24 h explant arms); 27,620 cells after QC; harmony batch correction on donor; leiden resolution 1.0,
+    28 clusters; the population is cluster 0 and carries three donors (797/495/82)
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE ANATOMICAL COUNTERPART OF THE MOUSE RESERVOIR EXISTS IN HUMAN TISSUE. This is re-analysis of a
+    public deposit by this atlas, not a published result, and is graded accordingly. Dissociated scRNA-seq infers "outside
+    the cartilage" from transcriptome, not position: these cells are COL2A1-negative and COL1A1-high, which is a cell
+    identity, and no image places them relative to the plate. PDGFRA enrichment is only 1.2x by mean, though 78% of
+    the cluster is PDGFRA-positive - PDGFRA is not what separates this population, COL1A1 and PRRX1 are.'
+- parameter: BUT HEDGEHOG SIGNALLING IS OFF IN IT — THE MOUSE RESERVOIR'S DEFINING PROPERTY DOES NOT TRANSFER
+  value: 'stromal/chondrocyte expression ratio: GLI1 0.30, PTCH1 0.08, HHIP 0.03, GLI2 0.22, GLI3 0.72'
+  unit: ratio
+  conditions: same libraries and clustering; comparison restricted to the three donors with a measurable per-library
+    ambient floor; 1,374 stromal against 890 chondrocyte cells; GLI1 233 pooled counts, clearing a pre-declared 50-count
+    floor
+  species: human
+  source_ref: chu2026
+  uncertainty: 'EVERY DIRECT HEDGEHOG TARGET IS DEPLETED IN THE STROMAL POPULATION, NOT ENRICHED. qu2025''s reservoir
+    is defined by Gli1 - the mouse population is found, traced and recruited through Hedgehog responsiveness. The human
+    population that matches it on COL1A1, PRRX1 and PDGFRA does not match it on the property that defines it. The three
+    strongest reads are PTCH1 (0.08, 1,082 vs 8,710 counts) and HHIP (0.03) and GLI1 (0.30), which are the three genes
+    a Hedgehog-responsive cell must carry. THIS DOES NOT SHOW NO HUMAN RESERVOIR EXISTS - it shows that if one does,
+    GLI1 is the wrong handle on which to find or recruit it in human. Caveats carried: donor3, the most cartilage-rich
+    library, is EXCLUDED because it holds 9 immune cells and its ambient floor cannot be measured (CORR-021), which
+    cuts the chondrocyte comparison group to 890 cells; the biopsies are 12-14 y and Tanner 2-4, so this is the pubertal
+    plate and not the 3-week window in which the mouse reserve is constituted; and a population that is transcriptionally
+    Hedgehog-off at rest could still be Hedgehog-responsive on damage, which is the condition qu2025 actually tested
+    and no human sample can be taken under.'
+- parameter: IN HUMAN, HEDGEHOG RESPONSIVENESS SITS INSIDE THE CARTILAGE, WITH THE RESTING-ZONE MARKER
+  value: GLI1 mean by cluster - highest is cluster 6 at 0.289 (SFRP5 1.831) and cluster 12 at 0.283; the only two clusters
+    with SFRP5 above 0.08 are cluster 6 (1.831) and cluster 7 (4.279), and both are in the top four of 28 clusters
+    for GLI1; the stromal cluster is 0.053 and immune clusters run 0.004-0.052
+  unit: mean counts per cell
+  conditions: same clustering, retained donors, clusters of at least 20 cells
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE HEDGEHOG-RESPONSIVE COMPARTMENT IS THE RESTING ZONE ITSELF. Recorded as a DESCRIPTIVE ORDERING,
+    not a correlation: GLI1 is also high in cluster 12, a COL2A1-high cluster with SFRP5 at 0.074, so this is not a
+    clean GLI1-SFRP5 axis, and with 28 clusters a rank statistic on two SFRP5-positive clusters would be a weak test
+    that I have not run. What the table supports is the negative direction of the reservoir claim: whatever GLI1 marks
+    in the human pubertal plate, it is not the extra-cartilaginous stroma. avijgan2026br independently places SFRP5+
+    cells in the resting zone and finds them the least quiescent subset, which is consistent, and is a different sample
+    set and a different instrument.'
 - parameter: partial epigenetic reprogramming works in cartilage in vivo, without dedifferentiation
   value: senescence and DNA methyltransferase expression markedly diminished; no increase in stemness genes
   unit: qualitative
@@ -84,25 +140,38 @@ quantitative:
     the right tissue class, not as a growth result.'
 localization:
 - resting zone; and the stroma outside the cartilage, including the perichondrial neighbourhood
-human_evidence: absent
-human_evidence_note: 'Entirely mouse and rabbit. No human tissue has been examined for a Gli1+ or PDGFRA+ progenitor
-  reservoir outside the growth plate, and no human growth plate has been reprogrammed. The two human resources that
-  could begin it already exist: chu2026''s two-month growth plate explant and avijgan2026br''s spatial transcriptomics,
-  which covers the tissue immediately surrounding the plate as well as the plate itself.'
+human_evidence: direct
+human_evidence_note: 'The mechanism is mouse and rabbit; the human question has been asked by this atlas and answered
+  in one direction. Human tissue HAS now been examined for a GLI1+/PDGFRA+ stromal population - re-analysis of the four
+  directly processed GSE288028 libraries, 27,620 cells, harmony-corrected, with a per-library ambient reference built
+  on immune cells, which cannot transcribe COL2A1. A COL1A1+/PRRX1+/PDGFRA+ COL2A1-negative population is present in
+  three donors, and it is Hedgehog-negative on all of GLI1, PTCH1, HHIP and GLI2. THE RE-ANALYSIS IS THIS ATLAS''S OWN
+  AND IS GRADED AS SUCH: the finding is D-grade on its own, and it does not license a claim that no human reservoir
+  exists - only that GLI1 does not mark one in the pubertal human plate. No human growth plate has been reprogrammed.
+  What no dissociated dataset can supply is position: "outside the cartilage" is inferred from transcriptome. avijgan2026br''s
+  spatial data covers the surrounding tissue but is too shallow for Hedgehog components - PTCH1 45 and GLI1 60 pooled
+  counts across 14 sections (CORR-019).'
 species_basis:
 - mouse
 - rabbit
+- human
 translation_risk: high
-translation_risk_reason: The demonstration is genetic, fetal, and in a species whose growth plate never closes. The
-  reservoir is recruited by damage, not by a drug. And the human question - whether an equivalent reservoir exists
-  at all - has not been asked.
+translation_risk_reason: The demonstration is genetic, fetal, and in a species whose growth plate never closes; the
+  reservoir is recruited by damage, not by a drug. And the human test that has now been run cuts against the transfer -
+  the human stromal population beside the pubertal plate is Hedgehog-negative, so the marker by which the mouse reserve
+  is identified and recruited does not label its human counterpart.
 confidence: C
 confidence_note: C. qu2025 is a strong primary in Nature Communications with lineage tracing, a genetic perturbation,
   a necessity test and an external-origin result, and osk2026 is a clean in vivo demonstration in the right tissue
   class. It is not B because every element is mouse, the compensation is triggered genetically rather than pharmacologically,
   this atlas has read the design of the necessity experiment but not its outcome figures, and the reprogramming work
   is in articular cartilage with a joint endpoint. The node's value is that it identifies a mechanism by which the
-  budget could be ADDED TO, which nothing else in this atlas does.
+  budget could be ADDED TO, which nothing else in this atlas does. THE THREE HUMAN ROWS ARE THIS ATLAS'S OWN RE-ANALYSIS
+  AND ARE GRADED D INDIVIDUALLY, not C - one public dataset, four libraries of which one is excluded, no positional
+  information, no replication in an independent cohort, and no published cluster annotation to check against. They
+  do not raise the node's grade and they are not permitted to - a re-analysis is graded as anyone else's would be.
+  They change the node's REACH, from a mouse mechanism with no human counterpart examined to a mouse mechanism whose
+  human counterpart has been examined once and fails on its defining marker.
 key_refs:
 - ref_id: qu2025
   pmid: '41253754'

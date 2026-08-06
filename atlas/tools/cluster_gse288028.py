@@ -69,12 +69,28 @@ def main(d, outdir):
     A=A[:,A.var.highly_variable].copy()
     sc.pp.scale(A, max_value=10)
     sc.tl.pca(A, n_comps=50, svd_solver="arpack")
-    try:
-        import harmonypy  # noqa
-        sc.external.pp.harmony_integrate(A, "donor"); rep="X_pca_harmony"
-        print("  batch correction: harmony")
-    except Exception:
-        rep="X_pca"; print("  batch correction: NONE (harmonypy unavailable) - donor composition reported per cluster")
+    # Batch correction. sc.external.pp.harmony_integrate is BROKEN against
+    # harmonypy 2.0: harmonypy now returns Z_corr as (cells x PCs) but scanpy
+    # still transposes it for the old (PCs x cells) layout, so the assignment
+    # raises a shape error. The first run of this script swallowed that
+    # exception and clustered on UNCORRECTED PCA (CORR-020). Call harmonypy
+    # directly, orient by shape, and let any failure be loud.
+    import harmonypy
+    ho = harmonypy.run_harmony(A.obsm["X_pca"], A.obs, ["donor"])
+    Z = np.asarray(ho.Z_corr)
+    if Z.shape == (A.n_obs, A.obsm["X_pca"].shape[1]):
+        pass
+    elif Z.T.shape == (A.n_obs, A.obsm["X_pca"].shape[1]):
+        Z = Z.T
+    else:
+        raise RuntimeError(f"harmony returned {Z.shape}, expected "
+                           f"{(A.n_obs, A.obsm['X_pca'].shape[1])} in some orientation")
+    A.obsm["X_pca_harmony"] = Z
+    rep = "X_pca_harmony"
+    shift = float(np.abs(Z - A.obsm["X_pca"]).mean())
+    print(f"  batch correction: harmony (mean |shift| per PC coordinate {shift:.4f})")
+    if shift == 0.0:
+        raise RuntimeError("harmony returned the input unchanged - correction did not apply")
     sc.pp.neighbors(A, n_neighbors=15, use_rep=rep)
     sc.tl.leiden(A, resolution=1.0, key_added="leiden", flavor="igraph", n_iterations=2, directed=False)
     n=A.obs.leiden.nunique(); print(f"\nLeiden: {n} clusters at resolution 1.0")
