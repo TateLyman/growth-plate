@@ -9426,14 +9426,28 @@ gaps:
     in Supplementary Table 1, with per-feature segmentation error quantified in Supplementary Figs 2 and 3, and
     PC1 orientation shown robust to imaging angle in Supplementary Fig. 5. The same confound is present on the other
     side of the contradiction: cruzorive1986 section 10.5 states that hunziker1989''s height and width estimators
-    carry opposite-signed bias whose magnitude is set by cell tilt.'
-  what_is_missing: The decomposition. No study has reported intrinsic terminal-cell long-axis length and axis alignment
-    SEPARATELY against growth rate, in any species. rubin2021 has both quantities for every cell and reports neither
-    in the predictor comparison; hunziker1989's method cannot produce them at all. So it is unknown whether the
-    DU-versus-PT hypertrophic height difference - the single comparison that breaks the height-growth correlation
-    and thereby carries rubin2021's headline - is a size difference or an alignment difference. If it is alignment,
-    intrinsic length scores 3 of 3 and the paper's conclusion inverts. If it is size, the conclusion is confirmed
-    on a metric that finally means what it says.
+    carry opposite-signed bias whose magnitude is set by cell tilt. PARTLY ANSWERED 2026-08-06 BY THIS ATLAS, from
+    rubin2021''s own Figshare deposit (10.6084/m9.figshare.14903052.v1), which turned out to contain the per-cell
+    feature tables for one growth plate - distal ulna DU_S84_m3_wt, 21 tiles, 29,162 segmented cells, with PC_range,
+    PCA_coeff, ellipsoid radii and eigenvectors, volume and centroids all present. atlas/tools/rubin_decompose.py
+    reconstructs the published bounding-box height profile for that sample as a validation guard (10.13 um over
+    the first half of the axis against a published trace near 9-10; 27.55 um hypertrophic peak against a published
+    peak near 26) and refuses to report if it fails. RESULT: within this plate the orientation confound does NOT
+    bite. Mean alignment |cos(PC1, P-D)| moves only 0.322 to 0.384 from resting to hypertrophic zone, both far below
+    the 0.500 expected for uniformly random axes. A counterfactual swap - hypertrophic cell shapes wearing resting-zone
+    orientations, and the reverse - attributes 96.7% of the log rise in axial extent to ELONGATION and 15.0% to
+    REALIGNMENT. AND THE ENLARGEMENT IS NEAR-ISOTROPIC: principal axis folds 2.17, 2.27, 2.38 against a cube-root-of-
+    volume fold of 2.12, all within 12%, with the SHORT axis growing marginally fastest.'
+  what_is_missing: 'The between-plate half, which is the half that carries rubin2021''s conclusion. The deposit
+    holds no proximal tibia and no distal tibia, so it cannot be said whether the DU-versus-PT hypertrophic height
+    difference - the one comparison that breaks the height-growth correlation - is a size difference or an alignment
+    difference. The three-plate feature tables are stated to be available from the corresponding author on request,
+    and the analysis is already written. SEPARATELY, the within-plate result raises a sharper question than the
+    one this gap opened with: if chondrocyte enlargement is isotropic then height is volume^(1/3) times a constant,
+    height and volume are not independent variables at all, and the recurring ''volume is the better predictor''
+    result is simply a statement about which of two views of one variable is measured better. Whether the enlargement
+    is isotropic in a plate whose GROWTH RATE is changing - hunziker1989''s axis, where an anisotropic change is
+    claimed - is untested in any species by any method.'
   nearest_evidence:
   - rubin2021
   - cruzorive1986

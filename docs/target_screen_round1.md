@@ -1379,3 +1379,100 @@ the only one in this dispute.**
 Three rounds of correction in one day, and the net movement is not toward height or toward
 volume. It is that the field has been comparing an orientation-free variable against an
 orientation-confounded one and reading the difference as biology.
+
+---
+
+# Round 14 — I ran the re-analysis, and it refuted my own hypothesis
+
+Round 13 said the decisive test was a re-analysis, not an experiment, and guessed the raw
+data was out of reach. It wasn't. `rubin2021`'s Figshare deposit
+(`10.6084/m9.figshare.14903052.v1`), labelled "sample data to test the codes", is **1.37 GB
+of per-cell feature tables** — `PC_range`, `PCA_coeff`, `ellipsoid_radii`,
+`ellipsoid_evecs`, `volume`, `surface_area`, `sphericity`, `centroids` — for one growth
+plate: distal ulna `DU_S84_m3_wt`, 21 tiles, **29,162 segmented cells**.
+
+Two traps in it, both silent: the tiles mix MATLAB v5 and v7.3 in the same directory (15
+open only with `scipy`, 6 only with `h5py` — reading with either alone drops two thirds of
+the sample), and cell centroids are **local to each 900×900 px tile**, so without the
+`Tile_coordinates.xlsx` offsets all 21 stacks pile up on each other.
+
+## The validation guard
+
+Before reporting anything, `atlas/tools/rubin_decompose.py` reconstructs their **own
+published** profile for this sample (Supp Fig 4A) and refuses to continue if it misses:
+
+| | reconstructed | published trace |
+|---|---|---|
+| mean bounding-box height, first half of axis | **10.13 µm** | ~9–10 |
+| hypertrophic peak | **27.55 µm** | ~26 |
+
+Passed. The registration and P-D axis convention are right.
+
+## Result 1 — the confound does not bite. My hypothesis was wrong.
+
+Round 13 proposed that "volume beats height" might be an artefact of the orientation
+confound the authors flag. Within this plate it is not.
+
+Mean alignment `|cos(PC1, P-D)|` moves only **0.322 → 0.384** from resting to hypertrophic
+zone — and both are far below the **0.500** expected for uniformly random axes in 3D.
+Chondrocyte long axes stay preferentially **in the plane of the plate**, even in the
+hypertrophic zone. Across bins 0–34 the profile is flat at 0.31–0.39; the apparent doubling
+in my first pass came entirely from a 24-cell terminal bin.
+
+Counterfactual swap — hypertrophic cell **shapes** wearing resting-zone **orientations**,
+and the reverse (1,841 RZ vs 456 HZ cells):
+
+| | axial extent | fold |
+|---|---|---|
+| resting zone, observed | 9.67 µm | — |
+| HZ shapes, RZ orientations | 18.68 µm | **×1.93** ← elongation alone |
+| RZ shapes, HZ orientations | 10.71 µm | **×1.11** ← realignment alone |
+| hypertrophic zone, observed | 19.10 µm | ×1.98 |
+
+**Elongation 96.7 % of the log rise, realignment 15.0 %, interaction −11.7 %.**
+
+## Result 2 — and this one is bigger: the enlargement is near-isotropic
+
+| | fold, RZ → HZ peak |
+|---|---|
+| principal axis 1 (long) | **×2.171** (15.86 → 34.44 µm) |
+| principal axis 2 | **×2.273** (10.47 → 23.79 µm) |
+| principal axis 3 (short) | **×2.378** (7.49 → 17.82 µm) |
+| **cube root of the volume fold** | **×2.124** |
+
+All four within 12 %, and the **short** axis grows marginally fastest.
+
+> **If enlargement is isotropic, then within a plate height ≈ volume<sup>1/3</sup> × a
+> constant. Height and volume are not independent variables, so they cannot be independent
+> predictors — and "volume is the better predictor" reduces to "volume is the better-measured
+> view of one variable."**
+
+That is a mechanistic account of the recurring result that needs **no** orientation confound.
+It is a cleaner answer than the one I was hunting for, and it arrived by the hypothesis
+failing.
+
+## What it does not do
+
+One plate. No proximal tibia, no distal tibia — so the **DU-vs-PT** difference that carries
+`rubin2021`'s headline is still untestable. And RZ→HZ is a **differentiation** axis;
+`hunziker1989`'s is one zone at two growth rates. His claim is precisely that the change
+there is **anisotropic** (height +23 % with volume −13 %). No such anisotropy exists along
+the axis this dataset can see — which is not a refutation, because it is not the same axis.
+
+Graded **D**: my own re-analysis, one sample, unreplicated. Same standard as anyone else's.
+
+## Standing after fourteen rounds
+
+| | |
+|---|---|
+| orientation confound in the height metric | **real, and immaterial within a plate** — measured |
+| RZ→HZ enlargement | **near-isotropic**, 4 independent estimates within 12 % |
+| height vs volume as independent predictors | **they may not be independent at all** |
+| the between-plate comparison | **still open** — needs PT and DT feature tables |
+| `hunziker1989`'s anisotropic claim | **untested along its own axis in any species** |
+| `terminal_cell_shape_modulation` | still **D** |
+
+Four rounds, four corrections, and the last one cost me my own hypothesis. The net position
+is better than any of the framings that preceded it: the field's two candidate variables may
+be one variable seen two ways, and the only place they could genuinely separate is the axis
+nobody has measured with a modern method.

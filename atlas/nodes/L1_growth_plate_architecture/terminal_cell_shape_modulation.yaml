@@ -400,6 +400,43 @@ quantitative:
     axial extent into intrinsic long-axis length and alignment, and the predictor comparison uses neither. This makes
     the decisive test for the height half of C-L1-08 a RE-ANALYSIS OF PUBLISHED DATA rather than a new experiment
     - the only tractability-1 item in this dispute. See g_l1arch_017.
+- parameter: 'RE-ANALYSIS of rubin2021 raw data: does the orientation confound actually bite?'
+  value: no. elongation 96.7%, realignment 15.0%, interaction -11.7% of the log rise in axial extent
+  unit: '% of log rise, resting zone to hypertrophic zone'
+  conditions: 'mouse distal ulna, sample DU_S84_m3_wt, the only growth plate in rubin2021''s Figshare deposit 10.6084/m9.figshare.14903052.v1;
+    21 tiles, 29,162 segmented cells; RZ window 1,841 cells (P-D 0.00-0.25) against HZ window 456 cells (P-D 0.78-0.90).
+    Counterfactual swap: hypertrophic cell SHAPES wearing resting-zone ORIENTATIONS give 18.68 um axial extent (x1.93)
+    against 9.67 um observed in the RZ; resting shapes wearing hypertrophic orientations give 10.71 um (x1.11); observed
+    HZ 19.10 um (x1.98)'
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'DERIVED BY THIS ATLAS, 2026-08-06, unreplicated, ONE growth plate - grade D, and it is a NEGATIVE
+    result against this atlas''s own round-13 hypothesis. The hypothesis was that ''volume beats height'' might be
+    an artefact of the orientation confound the authors flag. Within this plate it is not: mean alignment |cos(PC1,
+    P-D)| moves only 0.322 to 0.384, both far below the 0.500 expected for uniformly random axes, so chondrocyte long
+    axes stay preferentially IN THE PLANE of the plate even in the hypertrophic zone. VALIDATION: the reconstruction
+    reproduces rubin2021''s own published profile for this sample (Supplementary Fig. 4A) - 10.13 um mean bounding-box
+    height over the first half of the axis against a published trace near 9-10, and a 27.55 um hypertrophic peak against
+    a published peak near 26 - and the tool refuses to report the decomposition if it does not. WHAT THIS CANNOT DO:
+    the deposit holds no proximal or distal tibia, so the DU-versus-PT difference that carries rubin2021''s headline
+    is untestable here, and a resting-to-hypertrophic contrast is a DIFFERENTIATION axis, not a growth-rate contrast.'
+- parameter: 'RE-ANALYSIS of rubin2021 raw data: chondrocyte enlargement is near-isotropic'
+  value: axis folds 2.17, 2.27, 2.38; cube root of the volume fold 2.12
+  unit: fold change, resting zone to hypertrophic peak
+  conditions: same sample and windows as the row above. Principal axis lengths 15.86 -> 34.44 um (PC1), 10.47 -> 23.79
+    um (PC2), 7.49 -> 17.82 um (PC3); cell volume 460 -> 4,407 um^3, a 9.58-fold rise whose cube root is 2.12; sphericity
+    0.779 -> 0.698
+  species: mouse
+  source_ref: rubin2021
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated, one plate - grade D. ALL FOUR FIGURES AGREE TO WITHIN 12%, and
+    the SHORT axis grows marginally FASTER than the long one. THE CONSEQUENCE MATTERS MORE THAN THE NUMBER: if enlargement
+    is isotropic then within a plate height is volume^(1/3) times a constant, so height and volume are not independent
+    variables and cannot be independent predictors. The only thing separating them is which is measured better - and
+    in both rubin2021 and hunziker1989 that is volume. This is a mechanistic account of why ''volume beats height''
+    keeps recurring, and it does NOT require the orientation confound. It also sharpens the disagreement with hunziker1989,
+    which reports an ANISOTROPIC change (height +23% with volume -13%): no such anisotropy appears along the differentiation
+    axis here. Different axes of comparison, so not a direct contradiction - but the shape-modulation phenomenon is
+    invisible in the direction this dataset can see.'
 - parameter: fraction of total chondrocyte volume increase occurring BEFORE the hypertrophic zone
   value: '65'
   unit: '%'
