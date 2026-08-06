@@ -835,19 +835,25 @@ gaps:
     the best-validated growth pathway in human skeletal medicine - NPR2 gain of function causes human tall stature,
     NPR2 loss causes acromesomelic dysplasia, NPPC duplication causes tall stature, and vosoritide is approved.
     The atlas already held the OTHER clearance arm, NPR3, from the start.'
-  what_is_missing: '(1) THE MAGNITUDE. No effect size has been read - the abstract gives direction and dose-dependence
-    but no lengths, and the full text has not been obtained. Nothing from this line should enter a model until it
-    has. (2) THE HUMAN WINDOW. Mouse 3-4 weeks is peri-pubertal, but the mouse plate never closes and the human
-    plate does, so the timelines are not superimposable. Whether the human equivalent is infancy, mid-childhood
-    or the pubertal spurt is unknown, and it is answerable from existing human tissue: chu2026 provides a single-cell
-    and spatial transcriptional atlas of the EARLY PUBERTAL HUMAN GROWTH PLATE, so MME and NPPC expression by zone
-    and age could be read out of it directly. (3) ANY HUMAN MEASUREMENT AT ALL. Sacubitril/valsartan is approved
-    for paediatric heart failure. No trial, registry or case series reporting height, growth velocity or bone age
-    in treated children was located. Those children are on the drug for years during growth; the measurement is
-    being taken at every clinic visit and never analysed - the same situation as the Pediatric Heart Network losartan
-    trial, and in that case the data turned out to be posted publicly and simply unexamined. (4) WHETHER THE TWO
-    CLEARANCE ARMS ARE ADDITIVE. NPR3 blockade and neprilysin inhibition remove different routes of CNP disposal.
-    Nobody has combined them, and if the arms are independent the combination is the obvious experiment.'
+  what_is_missing: 'PARTLY ANSWERED THE SAME DAY, FROM DATA ALREADY ON DISK. chu2026''s deposited dataset IS GSE288028,
+    which this atlas has been using since Phase 5 - confirmed from the GEO record, whose title is ''Growth hormone
+    directly stimulates cartilage stem cells in the human pubertal growth plate''. Re-analysis of it answers the
+    presence half of the window question: MME is expressed in 3 of 4 donors across every zone of the EARLY PUBERTAL
+    HUMAN growth plate, mean 7.97% of cells against 1.55% for NPR3 - a 5.1-fold difference, with MME exceeding NPR3
+    in 9 of 11 zone-donor pairs. So in human pubertal cartilage the ENZYMATIC clearance arm looks more prominent
+    than the RECEPTOR arm, and it is the enzymatic arm sacubitril blocks. NPR2 is present in all four donors. WHAT
+    THAT LEAVES. (1) NPPC ITSELF IS AT THE DETECTION FLOOR - 0.04 to 0.52% of cells, zero donors above threshold.
+    Local CNP production in the human plate is minimal in these samples, so the mouse rationale of inhibiting NEP
+    where CNP and NEP are co-expressed does not transfer intact, and any human effect would depend on protecting
+    CIRCULATING CNP. Droplet scRNA-seq under-detects secreted peptides, so this is weak evidence of absence and
+    should be checked by in situ or ELISA rather than treated as settled. (2) THE AGE WINDOW IN HUMANS IS STILL
+    UNKNOWN. These donors are at the pubertal spurt, which is the plausible equivalent of mouse 3-4 weeks, but the
+    atlas holds no younger or older human growth plate to compare against, so the shape of the human window is unmeasured.
+    (3) NO HUMAN HAS BEEN MEASURED FOR HEIGHT ON THE DRUG despite paediatric approval of sacubitril/valsartan for
+    heart failure - the same unexamined-data situation as the losartan trial, and worth checking whether the paediatric
+    trials posted anthropometric outcomes. (4) THE CEILING IS NOW KNOWN AND IT IS LOW: sacubitril gives 2-3% of
+    body length in mouse, about half what exogenous CNP gives, and the two are NOT ADDITIVE, so this cannot be stacked
+    on a CNP analogue.'
   nearest_evidence:
   - hakata2024
   - chu2026
