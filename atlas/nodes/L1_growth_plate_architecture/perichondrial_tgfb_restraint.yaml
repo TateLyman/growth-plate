@@ -7,176 +7,249 @@ aliases:
 type: process
 layer: L1
 stub: false
-summary: 'Long bone length is set in part from OUTSIDE the growth plate, by the outer layer of the
-  perichondrium, through a fibrillin-1 / latent-TGF-beta-binding-protein / TGF-beta / Smad2 module that
-  RESTRAINS elongation. Removing the restraint lengthens the bone and restoring it shortens it again.
-  This is the mechanism behind the most conspicuous feature of Marfan syndrome - disproportionate tall
-  stature - and until 2022 essentially nobody had worked on it, because the field''s effort went to the
-  aorta. Sedes and colleagues used Cre-LoxP with metatarsal organ culture to localise the responsible
-  tissue to the OUTER PERICHONDRIUM, not the growth plate itself: fibrillin-1 deficiency there is
-  accompanied by decreased accumulation of LTBP-3 and LTBP-4 and reduced phosphorylated Smad2, so the
-  signalling change is LOSS of TGF-beta activity rather than the excess that the cardiovascular Marfan
-  literature made famous. Mutant metatarsals grew LONGER in vitro and released LESS TGF-beta, and adding
-  recombinant TGF-beta1 back NORMALISED their linear growth. That add-back is the causal step, and it
-  fixes the sign: LESS TGF-BETA MEANS A LONGER BONE. The rest of the pathway is consistent. TGF-beta via
-  Smad3 represses terminal hypertrophic differentiation, and Smad3-null mice show enhanced terminal
-  differentiation of growth plate chondrocytes, so lowering TGF-beta releases the brake on hypertrophy.
-  Losartan, an approved angiotensin receptor blocker used in Marfan precisely to lower this axis,
-  produces an ELONGATED HYPERTROPHIC ZONE with raised Col10a1 and minimal change in proliferation when
-  given to wild-type mice. Fibrillin microfibrils are present throughout the plate, with fibrillin-1
-  more abundant in the resting and proliferative zones than the hypertrophic zone. THE AXIS IS
-  BIDIRECTIONAL AND THAT IS THE CENTRAL CAUTION: FBN1 mutations cause tall stature in Marfan and SHORT
-  stature in Weill-Marchesani, acromicric and geleophysic dysplasia, so the gene does not have a
-  direction - alleles do, exactly as for FGFR3. What is not established is the step everyone will want
-  to assume: no study has shown that lowering this axis increases BONE LENGTH in a normal animal.
-  chen2015 measured hypertrophic zone height and bone mass, not length, and an elongated hypertrophic
-  zone is equally consistent with slower clearance at the chondro-osseous junction.'
+summary: 'Long bone length is set in part from OUTSIDE the growth plate, by the outer layer of the perichondrium,
+  through a fibrillin-1 / latent-TGF-beta-binding-protein / TGF-beta / Smad2 module that RESTRAINS elongation. Removing
+  the restraint lengthens the bone and restoring it shortens it again. This is the mechanism behind the most conspicuous
+  feature of Marfan syndrome - disproportionate tall stature - and until 2022 essentially nobody had worked on it,
+  because the field''s effort went to the aorta. Sedes and colleagues used Cre-LoxP with metatarsal organ culture
+  to localise the responsible tissue to the OUTER PERICHONDRIUM, not the growth plate itself: fibrillin-1 deficiency
+  there is accompanied by decreased accumulation of LTBP-3 and LTBP-4 and reduced phosphorylated Smad2, so the signalling
+  change is LOSS of TGF-beta activity rather than the excess that the cardiovascular Marfan literature made famous.
+  Mutant metatarsals grew LONGER in vitro and released LESS TGF-beta, and adding recombinant TGF-beta1 back NORMALISED
+  their linear growth. That add-back is the causal step, and it fixes the sign: LESS TGF-BETA MEANS A LONGER BONE.
+  The rest of the pathway is consistent. TGF-beta via Smad3 represses terminal hypertrophic differentiation, and Smad3-null
+  mice show enhanced terminal differentiation of growth plate chondrocytes, so lowering TGF-beta releases the brake
+  on hypertrophy. Losartan, an approved angiotensin receptor blocker used in Marfan precisely to lower this axis,
+  produces an ELONGATED HYPERTROPHIC ZONE with raised Col10a1 and minimal change in proliferation when given to wild-type
+  mice. Fibrillin microfibrils are present throughout the plate, with fibrillin-1 more abundant in the resting and
+  proliferative zones than the hypertrophic zone. THE AXIS IS BIDIRECTIONAL AND THAT IS THE CENTRAL CAUTION: FBN1
+  mutations cause tall stature in Marfan and SHORT stature in Weill-Marchesani, acromicric and geleophysic dysplasia,
+  so the gene does not have a direction - alleles do, exactly as for FGFR3. READ IN FULL 2026-08-06 AND THE PAPER
+  IS FAR STRONGER THAN ITS ABSTRACT. Fbn1 loss in limb mesenchyme gives limb bones about 7% LONGER than wild-type
+  in vivo, normal at birth and diverging between 1 and 3 months. Four conditional deletions localise the source, and
+  the negative control is the decisive one: deleting fibrillin-1 from the CHONDROCYTES THEMSELVES produces NO overgrowth,
+  while deleting it from the scleraxis lineage does. THE CONTROL OF LONG BONE LENGTH IS EXTRINSIC TO THE PLATE. At
+  the plate the effect is dual-term - proliferative zone LENGTH unchanged but proliferation increased, and the hypertrophic
+  zone significantly expanded - which in a multiplicative flow model is worth more than moving either term alone.
+  What is STILL not established is the step everyone will want to assume: no study has shown that lowering this axis
+  pharmacologically increases BONE LENGTH in a normal animal. chen2015 was read in full and measured growth plate
+  zone lengths and bone MASS; total growth plate length was unchanged, resting and proliferative zones unchanged,
+  the post-proliferative zone expanded - and bone length was never measured. An expanded hypertrophic zone remains
+  equally consistent with faster transit and with slower clearance at the chondro-osseous junction.'
 quantitative:
-- parameter: tissue responsible for long bone overgrowth in Marfan mice
-  value: the outer layer of the perichondrium
-  unit: qualitative, tissue-level localisation
-  conditions: Cre-LoxP conditional inactivation of Fbn1 combined with metatarsal bone organ culture,
-    mouse model of Marfan syndrome
+- parameter: limb bone overgrowth from fibrillin-1 loss in limb mesenchyme
+  value: about 7
+  unit: '% greater length than wild-type littermates'
+  conditions: Fbn1 inactivated in early limb mesenchyme with Prx1-Cre; tibia, humerus and ulna at 3 months (n=5-6
+    per genotype) and femur at 1, 2 and 3 months (n=4-10 per genotype). Bones were UNREMARKABLE AT BIRTH and became
+    gradually longer between 1 and 3 months
   species: mouse
   source_ref: sedes2022
-  uncertainty: 'THE LOCALISATION IS THE FINDING: the tissue that sets the overgrowth is NOT the growth
-    plate but the layer wrapped around it, which means a purely intra-plate account of Marfan tall
-    stature is wrong. Organ culture plus conditional genetics; no in vivo limb-length series is reported
-    in the abstract, and the full text has not been obtained.'
+  uncertainty: IN VIVO LIMB LENGTH, which the abstract does not mention and which this atlas previously recorded as
+    missing. Normal at birth with divergence over the postnatal growth period means the effect is on growth itself
+    rather than on patterning. The authors anchor it to humans by citing an early report that Marfan adolescents average
+    an ~8% increase in height over the general population - a CITATION, not a measurement in this paper, and not verified
+    here.
+- parameter: which tissue carries the overgrowth, by conditional deletion
+  value: Scx lineage YES; osteoblast NO; CHONDROCYTE NO
+  unit: femur length at 3 months, significant or not
+  conditions: femur length in wild-type (n=20), Fbn1-Osx-/- (osteoblast, n=9), Fbn1-Col2-/- (chondrocyte, n=6) and
+    Fbn1-Scx+/- (scleraxis lineage, n=9) mice. Tibia, humerus and ulna were also longer in Fbn1-Scx+/- (n=10 WT vs
+    6 mutant)
+  species: mouse
+  source_ref: sedes2022
+  uncertainty: 'THE NEGATIVE CONTROL IS THE POINT AND IT IS DECISIVE FOR THIS WHOLE FIELD: deleting fibrillin-1 from
+    the CHONDROCYTES THEMSELVES - the growth plate - produces NO overgrowth, while deleting it from the scleraxis
+    lineage does. The control of long bone length here is EXTRINSIC to the plate. Any account that looks only inside
+    the growth plate cannot explain the most conspicuous skeletal phenotype in Marfan syndrome. Caveat: Col2 n=6 is
+    small for a negative, and Scx+/- is a heterozygote while Osx and Col2 are homozygous nulls, so the comparison
+    is not dose-matched.'
+- parameter: growth plate phenotype from perichondrial fibrillin-1 loss
+  value: proliferative zone length UNCHANGED; hypertrophic zone significantly EXPANDED; proliferation and hypertrophic
+    transit both increased
+  unit: zone length and EdU labelling
+  conditions: Fbn1-Scx-/- versus wild-type tibia at P4 and P10 (n=14-17 and 13-15 per genotype); no PZ difference
+    at either timepoint; HZ expanded between P4 and P10 with a matching expansion of the type X collagen expressing
+    zone; EdU gave MORE proliferating PZ cells at 3 h (n=5-6) and MORE EdU-positive HZ cells at 72 h (n=5). Longer
+    HZ also seen in P4 ribs (n=10-12) and in metatarsal rudiments cultured 14 days (n=19-40)
+  species: mouse
+  source_ref: sedes2022
+  uncertainty: 'A DUAL-TERM EFFECT, WHICH IS RARE IN THIS LITERATURE. Proliferation rises AND the hypertrophic compartment
+    expands, while proliferative zone LENGTH stays fixed. In the flow model those are separate multiplicative terms,
+    so an intervention that moves both is worth more than one that moves either. THE AMBIGUITY THAT REMAINS IS THE
+    SAME ONE hunziker1989 AND wilsman1996 TURN ON: an expanded hypertrophic zone with more EdU-positive cells at 72
+    h is consistent with faster transit AND with slower clearance at the chondro-osseous junction, and this paper
+    does not separate them.'
+- parameter: TGF-beta1 add-back that normalises mutant elongation
+  value: '2'
+  unit: ng/ml recombinant mouse TGF-beta1
+  conditions: newborn metatarsal rudiments in alphaMEM with BSA, ascorbate, beta-glycerophosphate, medium changed
+    daily, length by ImageJ over a 14-day culture; total TGF-beta1 in conditioned medium by ELISA. Mutant metatarsals
+    grew longer and released less TGF-beta1 than wild-type
+  species: mouse
+  source_ref: sedes2022
+  uncertainty: 'THE CAUSAL STEP: a correlation between low TGF-beta and long bones could run either way; an add-back
+    that normalises growth cannot. One concentration, no dose-response reported, organ culture rather than a living
+    animal, and metatarsals rather than a weight-bearing long bone.'
+- parameter: where fibrillin-1 and the latent TGF-beta binding proteins sit
+  value: exclusively in the OUTER layer of the perichondrium; LTBP-3 and LTBP-4 reduced, LTBP-1 not
+  unit: immunohistochemical signal intensity
+  conditions: immunohistochemistry of fibrillin-1 with LTBP-1, -3 and -4 in mouse perichondrium
+  species: mouse
+  source_ref: sedes2022
+  uncertainty: The selectivity for LTBP-3 and -4 over LTBP-1 matches what the same group found in the fibrillin-1-deficient
+    aorta, so the sequestration defect is a property of the fibrillin-LTBP interaction rather than of this tissue.
+- parameter: transcriptional consequence in the fibrillin-1-deficient perichondrium
+  value: 1114 genes down, 529 up; TGF-beta signalling predicted DOWN and KDM5A predicted UP
+  unit: differentially expressed genes
+  conditions: RNA-seq of perichondral tissue isolated by laser capture microdissection from P4 Fbn1-Scx-/- and wild-type
+    mice; Reactome enrichment dominated by ECM assembly including elastic and collagen fibre formation; qPCR confirmed
+    significant decreases in Tgfb1 and its targets Col1a1 and SerpinF1
+  species: mouse
+  source_ref: sedes2022
+  uncertainty: KDM5A, A HISTONE DEMETHYLASE, CAME OUT AS THE JOINT TOP DYSREGULATED PATHWAY AND THE AUTHORS EXPLICITLY
+    DID NOT PURSUE IT - "KDM5A contribution to bone lengthening was not further explored in this study". That is a
+    named, unexplored lead on long bone length sitting in the paper that solved the mechanism, and it is druggable
+    as a class.
+- parameter: prior organ-culture result the mechanism explains
+  value: perichondrium removal lengthens bones; recombinant TGF-beta shortens them
+  unit: qualitative, embryonic bone rudiment culture
+  conditions: cited by sedes2022 as established prior work, with the perichondrium shown to mediate the inhibitory
+    effect of exogenous TGF-beta on BOTH proliferation and terminal differentiation of growth plate chondrocytes
+  species: mouse
+  source_ref: sedes2022
+  uncertainty: SECONDARY CITATION, not measured in sedes2022 - recorded because it means the direction was known in
+    organ culture long before the fibrillin mechanism was found, and because the double action on proliferation and
+    differentiation is what makes this a two-term lever.
 - parameter: direction of the TGF-beta change in fibrillin-1-deficient perichondrium
   value: decreased LTBP-3 and LTBP-4 accumulation with reduced phosphorylated Smad2
   unit: qualitative, immunohistochemistry
   conditions: outer perichondrium of Fbn1-deficient mice
   species: mouse
   source_ref: sedes2022
-  uncertainty: 'THIS IS LOSS OF TGF-BETA SIGNALLING, NOT EXCESS, and it runs against the account most
-    readers will bring from the aortic Marfan literature, where excess TGF-beta is the standard story.
-    The two need not conflict - different tissue, different LTBP complement - but any argument that
-    imports the aortic direction into bone is importing the wrong sign.'
-- parameter: effect of restoring TGF-beta on mutant bone elongation
-  value: recombinant TGF-beta1 normalised the linear growth of mutant metatarsals
-  unit: qualitative rescue
-  conditions: Fbn1-deficient mouse metatarsals in organ culture, which grew longer and released less
-    TGF-beta than wild-type before the add-back
-  species: mouse
-  source_ref: sedes2022
-  uncertainty: 'THE CAUSAL STEP AND THE ONE THAT FIXES THE SIGN. A correlation between low TGF-beta and
-    long bones could run either way; an add-back that normalises growth cannot. LESS TGF-BETA MEANS A
-    LONGER BONE in this system. Limits that matter: organ culture rather than a whole animal,
-    metatarsals rather than a major long bone, recombinant protein at a chosen concentration, and no
-    dose-response reported in the abstract.'
+  uncertainty: THIS IS LOSS OF TGF-BETA SIGNALLING, NOT EXCESS, and it runs against the account most readers will
+    bring from the aortic Marfan literature, where excess TGF-beta is the standard story. The two need not conflict
+    - different tissue, different LTBP complement - but any argument that imports the aortic direction into bone is
+    importing the wrong sign.
 - parameter: effect of losartan on the growth plate of normal mice
   value: elongated hypertrophic zone with increased Col10a1 and minimal change in proliferation
   unit: qualitative histomorphometry
-  conditions: wild-type mice treated with losartan in utero from conception to 1 day of age; a separate
-    cohort treated from birth to 6 weeks gave trabecular BV/TV +98% and cortical thickness +9% through
-    reduced osteoclastogenesis
+  conditions: wild-type mice treated with losartan in utero from conception to 1 day of age; a separate cohort treated
+    from birth to 6 weeks gave trabecular BV/TV +98% and cortical thickness +9% through reduced osteoclastogenesis
   species: mouse
   source_ref: chen2015
-  uncertainty: 'READ THE ENDPOINT CAREFULLY. This paper measured hypertrophic zone HEIGHT and bone MASS.
-    IT DID NOT MEASURE BONE LENGTH. An elongated hypertrophic zone is equally consistent with faster
-    hypertrophy and with slower clearance at the chondro-osseous junction, and those have opposite
-    consequences for elongation - hunziker1989 and wilsman1996 both turn on exactly that distinction. So
-    this row establishes that an approved drug reaches the growth plate and changes it, and establishes
-    nothing about height.'
+  uncertainty: READ THE ENDPOINT CAREFULLY. This paper measured hypertrophic zone HEIGHT and bone MASS. IT DID NOT
+    MEASURE BONE LENGTH. An elongated hypertrophic zone is equally consistent with faster hypertrophy and with slower
+    clearance at the chondro-osseous junction, and those have opposite consequences for elongation - hunziker1989
+    and wilsman1996 both turn on exactly that distinction. So this row establishes that an approved drug reaches the
+    growth plate and changes it, and establishes nothing about height.
 - parameter: direction of TGF-beta/Smad3 action on terminal hypertrophic differentiation
   value: repression
   unit: qualitative
-  conditions: Smad3 exon 8 targeted disruption in mouse; growth plate chondrocytes examined shortly
-    after weaning, plus embryonic metatarsal rudiment culture with TGF-beta1
+  conditions: Smad3 exon 8 targeted disruption in mouse; growth plate chondrocytes examined shortly after weaning,
+    plus embryonic metatarsal rudiment culture with TGF-beta1
   species: mouse
   source_ref: yang2001
-  uncertainty: 'Smad3-null mice show ENHANCED terminal differentiation of growth plate chondrocytes and
-    abnormally increased numbers of collagen X expressing cells, and TGF-beta1 significantly inhibits
-    differentiation of wild-type metatarsal rudiments while the inhibition is lost in Smad3-null
-    rudiments. So the brake is real and Smad3-dependent. The same mice develop degenerative joint
-    disease resembling osteoarthritis, which is the standing cost of removing this brake and is not a
-    side note.'
+  uncertainty: Smad3-null mice show ENHANCED terminal differentiation of growth plate chondrocytes and abnormally
+    increased numbers of collagen X expressing cells, and TGF-beta1 significantly inhibits differentiation of wild-type
+    metatarsal rudiments while the inhibition is lost in Smad3-null rudiments. So the brake is real and Smad3-dependent.
+    The same mice develop degenerative joint disease resembling osteoarthritis, which is the standing cost of removing
+    this brake and is not a side note.
 - parameter: distribution of fibrillin microfibrils across growth plate zones
-  value: fibrillin-1 more abundant in resting and proliferative zones than hypertrophic; fibrillin-2
-    highest in the calcified region
+  value: fibrillin-1 more abundant in resting and proliferative zones than hypertrophic; fibrillin-2 highest in the
+    calcified region
   unit: qualitative immunolocalisation
-  conditions: calf metacarpal and vertebral growth plate, dual immunostaining of fibrillin-1 with
-    elastin, with fibrillin-2, and with collagen X
+  conditions: calf metacarpal and vertebral growth plate, dual immunostaining of fibrillin-1 with elastin, with fibrillin-2,
+    and with collagen X
   species: bovine
   source_ref: yu2013
-  uncertainty: 'No elastin fibres were found in either the proliferative or hypertrophic zone, so these
-    are microfibrils acting without elastin - consistent with a growth-factor-sequestering rather than
-    an elastic role, though the authors note a mechanical role is also possible. The zonal pattern puts
-    fibrillin-1 where the cells are still cycling rather than where they enlarge.'
+  uncertainty: No elastin fibres were found in either the proliferative or hypertrophic zone, so these are microfibrils
+    acting without elastin - consistent with a growth-factor-sequestering rather than an elastic role, though the
+    authors note a mechanical role is also possible. The zonal pattern puts fibrillin-1 where the cells are still
+    cycling rather than where they enlarge.
 - parameter: stature direction of FBN1 mutations in humans
   value: tall in Marfan; SHORT in Weill-Marchesani, acromicric dysplasia and geleophysic dysplasia
   unit: qualitative, opposite directions from one gene
-  conditions: human clinical genetics, as summarised in the context of fibrillin microfibril
-    organisation in the growth plate
+  conditions: human clinical genetics, as summarised in the context of fibrillin microfibril organisation in the growth
+    plate
   species: human
   source_ref: yu2013
-  uncertainty: 'THE REASON NO SCREEN MAY EVER ASSIGN A DIRECTION TO THIS GENE. FBN1 behaves like FGFR3:
-    the gene is implicated in stature in both directions and only the allele carries a sign. Any
-    therapeutic reasoning that treats FBN1 or its pathway as directionally "pro-growth" because Marfan
-    patients are tall is making the error target_screen.py was rebuilt to prevent.'
+  uncertainty: 'THE REASON NO SCREEN MAY EVER ASSIGN A DIRECTION TO THIS GENE. FBN1 behaves like FGFR3: the gene is
+    implicated in stature in both directions and only the allele carries a sign. Any therapeutic reasoning that treats
+    FBN1 or its pathway as directionally "pro-growth" because Marfan patients are tall is making the error target_screen.py
+    was rebuilt to prevent.'
 localization:
 - 'outer perichondrium: the tissue that carries the overgrowth (sedes2022)'
 - 'growth plate resting and proliferative zones: where fibrillin-1 is most abundant (yu2013)'
 - 'hypertrophic zone: where the losartan-induced change appears (chen2015)'
 human_evidence: indirect
-human_evidence_note: The human evidence is the phenotype only - disproportionate tall stature is the
-  most evident manifestation of Marfan syndrome, and homocystinuria reaches the same axis by modifying
-  fibrillin-1 chemically with a measured height excess of about 1 SD and a 7.97 cm within-disease
-  difference by exposure duration. No human study has measured perichondrial TGF-beta signalling, and no
-  trial has reported height as an outcome of lowering this axis.
+human_evidence_note: 'The human evidence is the phenotype only - disproportionate tall stature is the most evident
+  manifestation of Marfan syndrome, and homocystinuria reaches the same axis by modifying fibrillin-1 chemically with
+  a measured height excess of about 1 SD and a 7.97 cm within-disease difference by exposure duration. No human study
+  has measured perichondrial TGF-beta signalling, and no trial has reported height as an outcome of lowering this
+  axis. CHECKED 2026-08-06: robertson2023, the Pediatric Heart Network losartan-versus-atenolol trial report, contains
+  ZERO occurrences of height, stature or weight. It does compute body surface area, which cannot be derived without
+  height - so height was measured in a multi-year randomised trial of a drug that lowers this axis in growing children,
+  and has never been reported.'
 species_basis:
 - mouse
 - bovine
 - human
 translation_risk: high
-translation_risk_reason: The causal chain is mouse organ culture; the human end is a syndrome phenotype.
-  The one approved drug that lowers this axis has been given to growing mice and to growing children
-  without long bone length being the reported endpoint in either.
-confidence: C
-confidence_note: 'C rather than B because the load-bearing experiment - TGF-beta1 add-back normalising
-  mutant metatarsal growth - is a single organ-culture result read from an abstract, and the full text
-  has not been obtained. C rather than D because the direction is supported independently by three
-  further sources: Smad3-null enhanced terminal differentiation, losartan elongating the hypertrophic
-  zone, and the human Marfan phenotype itself.'
+translation_risk_reason: The causal chain is mouse organ culture; the human end is a syndrome phenotype. The one approved
+  drug that lowers this axis has been given to growing mice and to growing children without long bone length being
+  the reported endpoint in either.
+confidence: B
+confidence_note: RAISED C to B on 2026-08-06 after reading sedes2022 in full rather than from its abstract. The abstract
+  describes organ culture; the paper reports IN VIVO limb length across four conditional deletions with a chondrocyte-specific
+  NEGATIVE control, a growth plate phenotype at two postnatal timepoints with EdU, laser-capture RNA-seq of the responsible
+  tissue, and a TGF-beta1 add-back rescue. B rather than A because it is one laboratory, one species, and no measurement
+  of the axis exists in a human growth plate.
 key_refs:
 - ref_id: sedes2022
   pmid: '35567544'
   first_author: Sedes L
   year: 2022
   type: primary
-  one_line_finding: The outer perichondrium, not the growth plate, carries long bone overgrowth in
-    Marfan mice, via reduced LTBP-3/4 and phospho-Smad2; TGF-beta1 add-back normalises mutant elongation.
+  one_line_finding: The outer perichondrium, not the growth plate, carries long bone overgrowth in Marfan mice, via
+    reduced LTBP-3/4 and phospho-Smad2; TGF-beta1 add-back normalises mutant elongation.
 - ref_id: chen2015
   pmid: '25779879'
   first_author: Chen S
   year: 2015
   type: primary
-  one_line_finding: Losartan in wild-type mice elongates the hypertrophic zone and raises Col10a1 with
-    minimal proliferation change, and raises bone mass through reduced osteoclastogenesis - bone LENGTH
-    was not measured.
+  one_line_finding: Losartan in wild-type mice elongates the hypertrophic zone and raises Col10a1 with minimal proliferation
+    change, and raises bone mass through reduced osteoclastogenesis - bone LENGTH was not measured.
 - ref_id: yang2001
   pmid: '11285272'
   first_author: Yang X
   year: 2001
   type: primary
-  one_line_finding: TGF-beta/Smad3 represses terminal hypertrophic differentiation; Smad3-null growth
-    plates show enhanced terminal differentiation and the mice develop osteoarthritis-like disease.
+  one_line_finding: TGF-beta/Smad3 represses terminal hypertrophic differentiation; Smad3-null growth plates show
+    enhanced terminal differentiation and the mice develop osteoarthritis-like disease.
 - ref_id: yu2013
   pmid: '24117386'
   first_author: Yu J
   year: 2013
   type: primary
-  one_line_finding: Fibrillin microfibrils occur throughout the growth plate with fibrillin-1 richest in
-    resting and proliferative zones, and FBN1 mutations cause tall stature in Marfan but short stature
-    in Weill-Marchesani, acromicric and geleophysic dysplasia.
+  one_line_finding: Fibrillin microfibrils occur throughout the growth plate with fibrillin-1 richest in resting and
+    proliferative zones, and FBN1 mutations cause tall stature in Marfan but short stature in Weill-Marchesani, acromicric
+    and geleophysic dysplasia.
 - ref_id: purcell2017
   pmid: '29270317'
   first_author: Purcell O
   year: 2017
   type: primary
-  one_line_finding: Homocystinuria, which chemically modifies fibrillin-1, runs about 1 SD taller than
-    the population with normal birth weight and a 7.97 cm within-disease difference by exposure duration.
+  one_line_finding: Homocystinuria, which chemically modifies fibrillin-1, runs about 1 SD taller than the population
+    with normal birth weight and a 7.97 cm within-disease difference by exposure duration.
+- ref_id: robertson2023
+  pmid: '35902413'
+  first_author: Robertson DM
+  year: 2023
+  type: primary
+  one_line_finding: Pediatric Heart Network randomised trial of losartan vs atenolol in children and young adults
+    with Marfan syndrome - reports body surface area, which requires height, but reports no height, stature or weight
+    outcome anywhere.
 open_questions:
 - g_l1arch_019
 last_verified: '2026-08-06'
