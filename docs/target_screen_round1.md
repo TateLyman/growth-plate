@@ -183,3 +183,96 @@ Chu is no longer the top ask. The screen's remaining weakness is that **six of s
 surviving rows are grade C — one animal study at the weakest link.** The next request is
 the primary papers behind those links, and `schipani2001` (EGLN1/HIF) first, because it
 is the one whose compound class is already approved and orally dosed.
+
+---
+
+# ROUND 2 — the connectivity route is blocked; human genetics is the arbiter
+
+## A. What I tried, and it failed
+
+GSE288028 contains the only human growth-plate **drug-response** experiment in existence:
+GH vs vehicle explants, 24 h, **3 paired patients**. If a GH signature could be derived
+from the tissue GH demonstrably grows, it would be a template — find compounds whose
+transcriptional signature resembles it (LINCS/CMap logic). SigCom-LINCS, Enrichr and
+L1000CDS2 are all reachable.
+
+**It does not work on this deposit.** Canonical GH/STAT5 targets, log2FC per patient:
+
+| gene | pt1 | pt2 | pt3 |
+|---|---:|---:|---:|
+| SOCS2 | 0.10 | −0.15 | 0.12 |
+| CISH | −0.17 | 0.01 | **2.00** |
+| IGF1 | 0.24 | −0.88 | **2.31** |
+
+**One patient of three responds.** Restricting to the stem zone — where the preprint says
+GH acts — does not rescue it; SOCS2 goes *down* there (mean −1.09). And cell composition
+swings ~5-fold between paired libraries of the same patient (stem zone pt3: 524 vehicle
+vs 2,885 GH), so a pseudobulk contrast is confounded by capture, not biology.
+
+**This does not refute the preprint.** Their positive result is EdU incorporation
+(P = 0.013), a protein-level readout, with their own integration and batch correction on
+data I don't have. My method is cruder and it failed. Recorded because a blocked route
+that looks promising will otherwise be attempted again.
+
+## B. The structural problem the screen was solving the wrong version of
+
+| compartment | incoming signed, traversable edges |
+|---|---:|
+| `chondrocyte_hypertrophy` | 31 |
+| stem / resting-zone nodes (8 nodes combined) | **13, and ZERO from L3 signalling** |
+
+Only 8 of 39 L12 compounds reach the stem compartment at all, and all 8 are the already-
+known axes (GH, AIs, oestrogen, octreotide, pegvisomant).
+
+So round 1 generated 105 candidates against **hypertrophy and proliferation — the
+well-connected parts of the graph — while two independent results say the movable lever
+is the stem compartment**: Chu's EdU (GH acts on the resting zone, P = 0.013 vs P = 0.79)
+and `hunziker1989` (acceleration without increased proliferation rate). The screen looked
+where the light was.
+
+## C. The arbiter: human height genetics
+
+**Human genetics is a lifetime, whole-organism, population-scale dose-response experiment
+on every gene, already run.** It is the only readout that integrates velocity *and*
+duration — precisely what the flow model cannot do, since `growth_velocity_longitudinal`
+is a sink. A gene whose loss-of-function makes people taller has already answered the
+question the atlas is structurally unable to ask.
+
+First result, and it reverses a reversal:
+
+| target | Open Targets height association | reading |
+|---|---|---|
+| **TGFBR1** | **Proportionate tall stature (0.27)**, Disproportionate tall stature (0.12) | LoF → **taller** |
+| **TRPV4** | Mild short stature (0.12) | LoF → shorter, so agonism → taller |
+
+TGFBR1 tall-stature association is consistent with **Loeys-Dietz syndrome** (TGFBR1/TGFBR2
+loss-of-function, marfanoid tall habitus) — *needs the primary to confirm direction and
+effect size, and is recorded as unconfirmed until then.*
+
+**TGFBR1 has now moved three times in one session:**
+
+1. ranked **#1** — mouse genetics, TGFβ restrains hypertrophy (`serra1997`, `yang2001`)
+2. **demoted** — human explant, TGFβ activation is part of how GH works (`chu2025pre`)
+3. **back up** — human genetics, LoF associated with tall stature
+
+Three lines, two of them human, pointing 2:1 toward *inhibition raises height*. The
+explant objection stands and is not dissolved — it predicts a cost in stem-cell
+proliferation — but a whole-organism human genetic readout outranks a 24 h explant
+transcriptome, and it already integrates whatever that cost is.
+
+TRPV4 is internally consistent with the screen: the screen predicted TRPV4 **agonists**
+help h_term, and human LoF causes short stature.
+
+## D. The pipeline from here
+
+| stage | status |
+|---|---|
+| 1. graph mechanism screen | done — 105 candidates |
+| 2. human growth-plate expression, per zone | done |
+| 3. **human height genetics as arbiter** | running across all screen targets |
+| 4. cartilage exposure filter — cartilage is polyanionic (aggrecan GAG fixed charge), so cations partition *in* by Donnan equilibrium; computable from ChEMBL properties | not built |
+| 5. hand-audit of primaries for survivors | needs the papers |
+
+Stage 4 is worth stating plainly because nobody applies it: the exposure problem that
+kills most growth-plate candidates is not uniform across compounds. **Net charge at
+pH 7.4 predicts cartilage partitioning**, and it is a free filter on all 105.
