@@ -170,14 +170,44 @@ DRUGGABLE_TYPES = {"gene", "protein", "hormone", "metabolite"}
 # rows and looked like "no mTOR drugs exist" rather than "the resolver missed it".
 # These mappings are CURATED, declared here, and deliberately few: each names the
 # subunit a drug actually binds, not the whole complex.
+#
+# EACH CURATED GENE CARRIES A POLARITY, and omitting it inverted a conclusion.
+#
+# +1 means agonising the gene agonises the node. -1 means the gene is a NEGATIVE
+# regulator, so a drug ChEMBL calls an INHIBITOR of it ACTIVATES the node.
+#
+# This was found by reading schipani2001, the sole primary under the screen's only
+# approved-drug candidate. EGLN1/PHD2 hydroxylates HIF-1a for degradation, so a PHD
+# inhibitor RAISES hypoxic signalling. The screen had EGLN1 at implicit +1, applied
+# ChEMBL's "INHIBITOR" as -1 to the node `hypoxic_gradient_signaling`, and returned
+# roxadustat/vadadustat/daprodustat as predicted to INCREASE proliferation. The atlas
+# edge is correct and negative (e00353, hif1a --inhibits--> proliferation, refs
+# schipani2001, which reports INCREASED BrdU in HIF-1a-null growth plates). With the
+# polarity restored the same drugs are predicted to DECREASE it.
+#
+# This is the third instance of one bug: a compound attached to a node that is not its
+# target. Phenotype nodes encoded loss of function; pathway nodes had no symbol; and now
+# a negative-regulator subunit inverts the sign. The general rule the screen enforces:
+# a drug may only be attached to a node whose relationship to the drug's actual target
+# is IDENTITY, or to a curated node with an explicit declared polarity.
 CURATED_GENES = {
-    "mtorc1_chondrocyte": ["MTOR", "RPTOR"],
-    "mek1_erk_chondrocyte": ["MAP2K1", "MAPK1", "MAPK3"],
-    "notch_signaling_chondrocyte": ["NOTCH1", "NOTCH2", "PSEN1"],
-    "tgfb_signaling_chondrocyte": ["TGFBR1", "TGFBR2"],
-    "hypoxic_gradient_signaling": ["HIF1A", "EGLN1"],
-    "pi_ppi_ratio": ["ENPP1", "ALPL", "SLC20A1"],
+    "mtorc1_chondrocyte": [("MTOR", +1), ("RPTOR", +1)],
+    "mek1_erk_chondrocyte": [("MAP2K1", +1), ("MAPK1", +1), ("MAPK3", +1)],
+    "notch_signaling_chondrocyte": [("NOTCH1", +1), ("NOTCH2", +1), ("PSEN1", +1)],
+    "tgfb_signaling_chondrocyte": [("TGFBR1", +1), ("TGFBR2", +1)],
+    "hypoxic_gradient_signaling": [("HIF1A", +1), ("EGLN1", -1)],   # PHD degrades HIF
+    "pi_ppi_ratio": [("ENPP1", -1),      # generates PPi, lowers the Pi/PPi ratio
+                     ("ALPL", +1),       # hydrolyses PPi, raises it
+                     ("SLC20A1", +1)],   # imports Pi
 }
+
+
+def gene_polarity(node_id, gene):
+    """+1 if agonising `gene` agonises the node; -1 if it inverts. See CURATED_GENES."""
+    for g, p in CURATED_GENES.get(node_id, []):
+        if g == gene:
+            return p
+    return 1
 
 
 def gene_candidates(node):
@@ -189,7 +219,7 @@ def gene_candidates(node):
     """
     nid_ = node.get("id", "")
     if nid_ in CURATED_GENES:
-        return list(CURATED_GENES[nid_])
+        return [g for g, _ in CURATED_GENES[nid_]]
     if node.get("type") not in DRUGGABLE_TYPES:
         return []
     out = []
@@ -334,7 +364,8 @@ def main():
                     if act is None:
                         continue
                     mol = cache.get("mol:" + m["molecule_chembl_id"], {})
-                    pred = act * rec["net_sign"] * elas
+                    pol = gene_polarity(r["node"], g)
+                    pred = act * pol * rec["net_sign"] * elas
                     cands.append({
                         "predicted_height_direction": "+" if pred > 0 else "-",
                         "outcome": oc, "target_gene": g,
@@ -343,6 +374,7 @@ def main():
                         "chembl_id": m["molecule_chembl_id"],
                         "max_phase": mol.get("max_phase"),
                         "action_type": m.get("action_type"),
+                        "gene_polarity_to_node": pol,
                         "path_net_sign": rec["net_sign"],
                         "elasticity": elas,
                         "weakest_grade_on_path": rec["weakest_grade"],

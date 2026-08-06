@@ -347,3 +347,120 @@ now the *entire* evidential basis for the two most practically interesting candi
 | **PMID 11731479** (schipani2001) | **promoted** — sole support for the approved-drug row |
 | **PMID 15800624** (glasson2005) | **promoted** — sole support for the cartilage-penetrant row |
 | TRPV4 primaries | **no longer needed** — row withdrawn |
+
+---
+
+# ROUND 3 — the three primaries arrived and killed both top candidates
+
+`serra1997` (PMID 9334353), `loeys2005` (PMID 15731757), `schipani2001` (PMID 11731479),
+supplied as full text. Each was requested because it was the sole or founding support for
+a candidate. Each removed the candidate it was supporting.
+
+## 1. TGFBR1 — dead. The mouse paper never measured the thing I inferred.
+
+The screen's #1 row rested on `serra1997` via `tgfb_signaling_chondrocyte —inhibits[−]→
+chondrocyte_hypertrophy`. **The atlas edge is correct.** DNIIR mice do show increased
+type X collagen, a thicker hypertrophic zone, increased IHH and reduced proteoglycan.
+
+What the paper does **not** contain is the step I inferred from it:
+
+- The only statement about bone size is *"MT-DNIIR **newborn** mice do not have
+  detectable defects in the size or shape of specific bones"* — qualitative, from skeletal
+  preparations, **at birth**.
+- The growth-plate phenotype appears at **4 and 8 weeks**. **No long-bone length is
+  measured at those ages, or at any age.** Three mentions of femur/tibia in the whole
+  paper, none of them a measurement.
+- The transgene is expressed in **periosteum/perichondrium, synovium and articular
+  cartilage**, with *"lower levels ... in growth plate cartilage"* — so even the growth
+  plate changes may be secondary to perichondrial signalling.
+
+**"More hypertrophy → longer bone" was my inference, and it has never been tested in this
+model.** The flow model's h_term elasticity of +1 made it feel like arithmetic; it is not.
+
+## 2. TGFBR1 — the human genetics is weaker than the association score implied
+
+`loeys2005`, the founding LDS paper, on the two things I asked for:
+
+**Allele class.** Heterozygous **missense mutations in the kinase domain**, loss of
+function in transfection assay. And the paper explicitly forecloses the reading a drug
+would need:
+
+> *"acute responsiveness is preserved in cells heterozygous with respect to
+> loss-of-function mutations ... and effectively **exclude the possibility that the
+> phenotype ... results from either potent dominant-negative interference or gain of
+> function**"*
+
+while simultaneously reporting **increased nuclear phosphorylated Smad2** in the aortic
+wall. Heterozygous receptor LoF, *raised* downstream signalling in tissue. **A
+pharmacological TGFBR1 inhibitor is not a phenocopy of this genotype** — it is closer to
+its opposite.
+
+**Stature.** There is **no height measurement anywhere in the paper.** The skeletal table
+reports dolichostenomelia **4/14 (29 %)** and arachnodactyly **8/14 (57 %)** — marfanoid
+habitus features, in a minority, with no centimetres and no SDS. The Open Targets
+"proportionate tall stature (0.27)" association is not backed by stature data in the
+founding primary.
+
+**All four lines under TGFBR1 have now failed:** mouse never measured length; human
+genetics has no stature numbers and an allele class that inverts the pharmacology; the
+human explant says TGFβ activation is part of how GH works. **Row withdrawn.**
+
+## 3. EGLN1 — the sign was backwards, and the atlas was right while the screen was wrong
+
+`schipani2001` reports that cartilage-specific `Hif1a` deletion causes interior cell
+death, **decreased p57, and INCREASED BrdU incorporation** — HIF-1α *induces growth
+arrest*. The atlas edge encodes this correctly: `e00353 hif1a_chondrocyte —inhibits[−]→
+chondrocyte_proliferation_rate`.
+
+**The screen inverted it.** EGLN1/PHD2 degrades HIF-1α, so a PHD inhibitor *raises*
+hypoxic signalling — but the screen applied ChEMBL's `INHIBITOR` as −1 against the node
+`hypoxic_gradient_signaling`, and returned vadadustat/roxadustat/daprodustat as predicted
+to **increase** proliferation. With the polarity restored they are predicted to
+**decrease** it, which is what schipani2001 implies.
+
+I had also flagged, from mechanism alone, that HIF stabilisation drives VEGF and that
+vascular invasion terminates the plate. `schipani2001` confirms ectopic angiogenesis
+around the dying cells. Both the proliferation arm and the vascular arm point the same
+way. **Row withdrawn.**
+
+### The third instance of one bug
+
+| variant | what went wrong |
+|---|---|
+| **phenotype nodes** | `aromatase_deficiency_human` encoded loss of function; inhibitor double-negated → anastrozole predicted to *decrease* height |
+| **pathway nodes** | `mtorc1_chondrocyte` had no bare gene symbol → the mTOR control silently produced zero rows |
+| **negative-regulator subunits** | `EGLN1` degrades its own pathway → PHD inhibitors predicted with the wrong sign |
+
+All three are the same error: **a compound attached to a node that is not its target.**
+Curated genes now carry an explicit **polarity**, and the rule is stated in the tool: a
+drug may be attached only to a node whose relationship to its actual target is identity,
+or to a curated node with a declared polarity.
+
+## 4. What is left
+
+| target | status |
+|---|---|
+| ~~TGFBR1~~ | withdrawn — round 3 |
+| ~~EGLN1~~ | withdrawn — round 3, sign inverted |
+| ~~TRPV4~~ | withdrawn — round 2, human genetics |
+| ~~MAPK1/ERK~~ | downgraded — round 2 |
+| **ADAMTS5** | **standing.** Grade C, no human stature association either way, and still the only class designed to reach cartilage. `glasson2005` not yet read. |
+| **NOTCH1/2** | standing. Grade C, helps all four variables, no human stature association. |
+| **LEPR** | standing. Grade C, approved drug (metreleptin). |
+
+**Four of seven rows are gone, and every one was removed by a paper I asked for rather
+than by re-reading what I already had.** That is the screen working as designed: it
+generates hypotheses cheaply and they are meant to be cheap to kill.
+
+## 5. The finding that outranks all of the above
+
+`serra1997` increased hypertrophy and **never measured bone length**. `hunziker1989`
+reports growth acceleration **without** increased proliferation. `chu2025pre` puts GH's
+action in the resting zone, not the proliferative zone.
+
+Three independent results converge on the same warning: **the flow model's clean ±1
+elasticities describe an identity, not a causal chain.** Moving h_term or proliferation
+in a mouse has repeatedly failed to move length, or has never been checked. Until a
+compound is shown to change a growth-plate variable *and* the resulting bone length in
+the same animal, every row this screen produces is an arithmetic prediction about a
+system that has not been shown to behave arithmetically.
