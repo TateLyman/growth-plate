@@ -28,7 +28,7 @@ summary: 'Proliferative-zone chondrocytes are slow-cycling compared with most re
   tissue, which they attribute either to method artefact or to the large hypoxic inert zone slowing metabolism.'
 quantitative:
 - parameter: TOTAL CELL CYCLE TIME, PROLIFERATIVE ZONE, HUMAN
-  value: 20 (floor about 16)
+  value: 20, about +/-50% (i.e. 10-30); floor about 16 days
   unit: days
   conditions: human distal femur at ages 5-8 years. Derived from measured distal-femoral growth rate 1.4 cm/yr = 38
     um/day (Harris growth-arrest lines on serial Harpenden Growth Study radiographs), terminal cell height 33 um giving
@@ -41,7 +41,12 @@ quantitative:
     20 days is 480 h against 30.9 h in fast rat proximal tibia, a roughly 15-fold difference in the same parameter.
     It is a derivation and not a measurement - no human growth plate has been labelled - and its weakest step, the
     proliferative fraction of the column, is imported from rabbit; the authors give at least 20 proliferative cells
-    as a floor, hence about 16 days. It is also a MEAN over a heterogeneous zone.'
+    as a floor, hence about 16 days. It is also a MEAN over a heterogeneous zone. QUALIFIED 2026-08-06 (CORR-014).
+    kember1993 gives the method''s precision as about +/-50% and states that the low human labelling percentage does
+    NOT unequivocally mean slower cycling, because the human growth fraction may be low and the cells in cycle could
+    be dividing as fast as in rodents - undecidable while human S-phase duration remains unmeasured. THE COMPARISON
+    WITH THE RAT ROWS IN THIS NODE IS THEREFORE BETWEEN A MEAN OVER A WHOLE ZONE (human, derived) AND A CYCLE TIME
+    OF CYCLING CELLS (rat, BrdU-measured), and those are not the same quantity.'
 - parameter: total cell cycle time, proliferative zone
   value: '30.9'
   unit: h
@@ -257,6 +262,13 @@ key_refs:
   type: primary
   one_line_finding: Established single- and repeated-pulse BrdU labelling as the method for measuring growth plate
     proliferative kinetics in vivo.
+- ref_id: kember1993
+  pmid: '8219479'
+  first_author: Kember NF
+  year: 1993
+  type: review
+  one_line_finding: Method precision +/-50%; low human labelling may reflect a low growth fraction rather than slow
+    cycling.
 open_questions:
 - g_l1arch_002
 - g_l1arch_012
@@ -264,4 +276,6 @@ last_verified: '2026-08-06'
 confidence_note: 'HELD AT C on 2026-08-06 after adding the human row. The human value is a derivation with an imported
   rabbit assumption and n=12 subjects, and the rat values it sits beside are properly measured - so the node''s grade
   is not raised by adding it. What the addition changes is the node''s reach: any model that carries a cycle time
-  from rodent into human is now carrying a 15-fold error, and the atlas can say so.'
+  from rodent into human is now carrying a 15-fold error, and the atlas can say so. Further qualified 2026-08-06 (CORR-014):
+  the human row is a zone mean of unknown growth fraction, the rat rows are measured cycle times of cycling cells,
+  and the node does not claim they are commensurable.'

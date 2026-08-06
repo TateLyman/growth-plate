@@ -46,6 +46,21 @@ quantitative:
     volume increase is the main factor associated with deceleration and eventually cessation of growth. In human the
     same parameter is flat from birth to 13 years while growth velocity varies several-fold. THE VARIABLE THAT SHUTS
     GROWTH DOWN IN THE RAT IS THE ONE THE HUMAN HOLDS CONSTANT. Recorded as contradiction C-L1-09.
+- parameter: terminal cell size across nine bird species, against their growth rates
+  value: 10 to 18 um (22 um in one chicken), with NO CLEAR TREND against growth rate
+  unit: um, mean diameter in the plane of growth
+  conditions: 68 growth plates - tarsometatarsus and a phalangeal bone - across a range of avian species including
+    rhea, Abdim's stork and budgerigar, with growth rates from serial external measurement [schema vocabulary has
+    no "bird"; the literal basis is nine avian species]
+  species: multiple
+  source_ref: kember1990
+  uncertainty: PRIMARY, AND IT IS THE CLEANEST TEST OF THIS NODE'S CENTRAL CLAIM THAT THE ATLAS HOLDS. The authors
+    state the variation in terminal cell size was NOT a major cause of differences in growth rate and that the differences
+    seen were within biological variation, sampling error and processing shrinkage; labelling percentage was likewise
+    similar at 10-15%; and the major cause of between-species growth rate differences was THE SIZE OF THE FLAT CELL
+    ZONE. Birds also have SMALLER hypertrophic cells than mammals while growing faster. Growth rate per flat cell
+    did not scale with adult body weight (r = -0.22, n = 6, not significant), so cycle time appears independent of
+    body size and metabolic rate. Between-clade comparison of a shrinkage-sensitive measurement.
 - parameter: chondrocyte volume at start of enlargement
   value: '600'
   unit: fl
@@ -206,6 +221,7 @@ human_evidence_note: UPGRADED FROM ABSENT 2026-08-06 on reading kember1976 in fu
   in the direction of growth with a measured shrinkage correction. The human evidence is therefore a NULL on the age
   axis, which is the opposite of what the rodent literature in this node would predict.
 species_basis:
+- chicken
 - human
 - mouse
 - multiple
@@ -265,6 +281,19 @@ key_refs:
   year: 1976
   type: primary
   one_line_finding: Human terminal hypertrophic cell height 29-38 um with no age dependence, birth to 13 years.
+- ref_id: kember1990
+  pmid: '2267417'
+  first_author: Kember NF
+  year: 1990
+  type: primary
+  one_line_finding: Across nine bird species terminal cell size shows no trend against growth rate; flat cell zone
+    size is the main driver.
+- ref_id: kember1987
+  pmid: '3502931'
+  first_author: Kember NF
+  year: 1987
+  type: primary
+  one_line_finding: 'Chicken: ~1000 um/day on 15 um terminal cells.'
 open_questions:
 - g_l1arch_008
 - g_l1arch_009
@@ -276,4 +305,8 @@ confidence_note: 'HELD AT C on 2026-08-06. Adding a human measurement does not r
   is a null in 12 subjects and the node''s positive claims remain rodent. What it does is bound the node''s transferability:
   the claim that terminal cell enlargement is the largest single contributor to elongation is well supported across
   mammals as a BETWEEN-species and between-site regression, and is not supported as a WITHIN-human developmental variable,
-  because in humans it does not vary.'
+  because in humans it does not vary. Further constrained 2026-08-06 by kember1990 and kember1987: across nine bird
+  species terminal cell size does not track growth rate, and a chicken plate elongates about 26 times faster than
+  a human distal femur on cells less than half the height. The node''s claim now stands as a BETWEEN-SITE and WITHIN-species-and-age
+  regression in mammals, and is contradicted as a general determinant of growth rate both across birds and across
+  human development.'

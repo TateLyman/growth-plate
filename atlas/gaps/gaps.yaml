@@ -9925,3 +9925,107 @@ gaps:
     partial correlation between exposure and remaining growth period; catch-up-to-target predicts no association
     with timing once baseline deficit is controlled. The same design runs on any national GH registry with final-height
     records. It requires a named researcher and an institutional affiliation, which is the barrier, not the data.'
+- gap_id: g_l1arch_human_growth_fraction
+  type: known_unknown
+  layer: L1
+  tractability: 2
+  question: What fraction of human proliferative-zone chondrocytes is actually in the division cycle, and can that
+    fraction be raised?
+  why_it_matters: 'Cell production is growth fraction times cycle speed, and the human plate labels three times
+    below the lowest of nine bird species. If the human number is low because the cells cycle slowly, raising growth
+    means accelerating the cell cycle of a differentiated cell - hard, with no precedent. If it is low because most
+    of the compartment is idle, then RECRUITMENT is a multiplicative lever currently sitting far below one, in a
+    compartment already shown to be releasable: human resting zone cells held out of cycle in a child re-enter it
+    within days of explant. These are different worlds for anyone trying to raise final height, and no measurement
+    distinguishes them.'
+  what_is_known: Human proliferative-zone labelling is 4.4% and 3.4% in the few amputation specimens ever measured;
+    nine bird species give 10-15% with maxima of 20% and little variation; kember1976 derives a zone-mean cycle
+    time of 20 days against 2 days in rat. kember1993 states the low human figure is not unequivocal evidence of
+    slow cycling and that the growth fraction may be low. avijgan2026br shows human resting zone arrest is reversible
+    ex vivo. chu2026 shows GH raises the S-phase fraction of human flat chondrocytes in explant at 24 h (P < 0.0001).
+  what_is_missing: (1) A CUMULATIVE-LABELLING EXPERIMENT ON HUMAN TISSUE. A single pulse gives labelling percentage,
+    which confounds the two factors. Labelling continuously or with repeated analogues until the labelled fraction
+    plateaus gives the growth fraction directly - the plateau IS the growth fraction. Nobody has run it on human
+    growth plate. (2) HUMAN S-PHASE DURATION, without which no single-pulse measurement can be converted. (3) WHETHER
+    THE FRACTION VARIES WITH AGE, and specifically whether it rises at the pubertal spurt - which would answer how
+    the spurt is produced, a question kember1993 poses explicitly and leaves open. (4) ANY AGENT TESTED FOR RAISING
+    IT.
+  nearest_evidence:
+  - kember1993
+  - kember1990
+  - avijgan2026br
+  - chu2026
+  nearest_evidence_note: kember1993 poses the question and says it is unanswered. avijgan2026br and chu2026 between
+    them supply the tissue, the viability and the labelling protocol that would answer it.
+  discriminating_experiment: 'CUMULATIVE LABELLING IN HUMAN GROWTH PLATE EXPLANT. avijgan2026br already pulse intact
+    human biopsies with EdU, then IdU, then CldU on successive days. Extending that to a continuous or repeated
+    label over a week and counting the labelled fraction in the PROLIFERATIVE zone until it plateaus returns the
+    growth fraction as the plateau height and the cycle time as the approach rate - the classical decomposition,
+    on human tissue, with a protocol already shown to work. PRE-REGISTER THE CONFOUND: explanting itself releases
+    arrest, which the same paper demonstrates, so the measured fraction is an UPPER BOUND on the in vivo one. That
+    is still decisive, because the hypothesis at issue is that the in vivo fraction is LOW: an upper bound near
+    1 refutes it, and an upper bound near 0.2 establishes it despite the release.'
+- gap_id: g_l1arch_human_s_phase
+  type: known_unknown
+  layer: L1
+  tractability: 2
+  question: What is the duration of S phase in human growth plate chondrocytes?
+  why_it_matters: It is the conversion constant between everything that has ever been measured in a human growth
+    plate - labelling percentages - and the quantity anyone actually wants, the proliferation rate. kember1993 names
+    it as never measured and needed for both the thymidine and the bromodeoxyuridine route. Every cross-species
+    kinetic comparison in this atlas, including the one it made and then withdrew in CORR-014, assumes S-phase duration
+    does not differ much between species. That assumption has never been tested in the one species that matters.
+  what_is_known: 'Rat: S phase 3.4-6.1 h, G2 3.0 h, total cycle 30.9-76.3 h across four plates at 28 days (wilsman1996a).
+    Human: nothing. kember1990 note the labelling-to-rate proportionality holds only if S-phase duration is similar
+    between species, and treat that as an assumption rather than a result.'
+  what_is_missing: A double-label or percent-labelled-mitoses measurement in human growth plate tissue. It has never
+    been done, and until chu2026 and avijgan2026br there was no preparation in which to do it.
+  nearest_evidence:
+  - kember1993
+  - wilsman1996a
+  - avijgan2026br
+  nearest_evidence_note: kember1993 states the absence; wilsman1996a is the rat value the field substitutes for
+    it.
+  discriminating_experiment: DOUBLE-LABEL WITH TWO THYMIDINE ANALOGUES AT A SHORT, KNOWN INTERVAL in human growth
+    plate explant, and count cells positive for the first label only. The single-to-double ratio against interval
+    gives S-phase duration directly. avijgan2026br have already established that sequential EdU/IdU/CldU labelling
+    works on this tissue; the only change is to shorten the interval from days to hours. This is the cheapest unmeasured
+    constant in human growth biology.
+- gap_id: g_l13_human_explant_screen
+  type: known_unknown
+  layer: L13
+  tractability: 2
+  question: What happens if the compounds this atlas has nominated are tested on human growth plate explants rather
+    than on mice?
+  why_it_matters: Every candidate in this atlas has been judged on mouse growth, human genetics, or a transcript
+    detected in the right human cells - never on whether it makes human cartilage grow, because no assay of that
+    was known to be available here. chu2026 maintains human growth plate cartilage for two months ex vivo with a
+    cartilage-expansion endpoint and a positive control that works. The screen that this atlas has been unable to
+    run is runnable.
+  what_is_known: 'chu2026: 1 mm slices of human growth plate cartilage, 2 months viable, preserved histology and
+    proteoglycan; GH expands the cartilage and raises PZ proliferation (P = 0.013) and the 24-h S-phase fraction
+    (P < 0.0001); bone does not expand, which is the internal negative control. avijgan2026br supply the proliferation
+    readout on the same tissue. The atlas holds a screened set of candidates from rounds 11-17 and a nominated mechanism
+    - neprilysin inhibition - with an approved paediatric drug attached.'
+  what_is_missing: (1) THE SCREEN ITSELF. Nobody has used the platform for one. (2) POWER. GH, the best-validated
+    growth drug in medicine, FAILED TO PRODUCE AN EFFECT IN SOME DONORS in chu2026 - so donor-to-donor variance
+    is large enough to hide a positive control, and any screen needs several donors per arm and is underpowered
+    for anything weaker than GH. That is a design constraint and it is not stated in either paper. (3) TISSUE SUPPLY,
+    which is limited to epiphysiodesis surgery on adolescents being operated on to prevent tall stature. (4) WHETHER
+    EXPLANT GROWTH PREDICTS ANYTHING. No compound has been run in this assay and then in a person, so the assay
+    has no validated predictive record.
+  nearest_evidence:
+  - chu2026
+  - avijgan2026br
+  - hakata2024
+  nearest_evidence_note: chu2026 is the assay with its positive control. hakata2024 is the strongest untested candidate
+    the atlas holds and it acts locally - it works on fetal tibial explants in organ culture with no endocrine axis,
+    which is exactly what an explant assay can detect.
+  discriminating_experiment: 'RUN SACUBITRIL IN THE chu2026 EXPLANT, against vehicle, with GH as the positive control
+    and several donors per arm. The mechanism predicts it should work in this preparation specifically - hakata2024
+    showed the effect survives in isolated bone with no circulation, pituitary or liver. The atlas also holds the
+    complication and it must be measured in the same experiment: NPPC, the CNP gene, sits at the detection floor
+    in human growth plate scRNA-seq, so if the local ligand is genuinely absent an inhibitor of its degradation
+    should do NOTHING here while still being able to work in a child through circulating CNP. THAT MAKES THE EXPLANT
+    A TEST OF THE LOCAL-LIGAND QUESTION AS WELL AS OF THE DRUG, and a null is informative rather than merely disappointing
+    - which is the condition this atlas requires before nominating an experiment.'

@@ -1,81 +1,98 @@
 gaps:
-  - gap_id: g_l13data_001
-    question: >-
-      Has spatial transcriptomics ever been applied to human growth plate tissue,
-      and if not, what zonal questions remain unanswerable as a direct consequence?
-    type: search_established
-    layer: L13
-    why_it_matters: >-
-      Spatial transcriptomics is the modality that directly answers "which gene is
-      expressed in which zone" without dissociation bias or the antibody-specificity
-      problems that plague cartilage immunohistochemistry. Multiple gaps elsewhere in
-      this atlas - human zonal PDE isoform distribution, zonal receptor expression,
-      the oxygen-responsive transcriptional gradient - are gaps precisely because
-      this measurement has not been made in humans. They are therefore not
-      independent unknowns but a single missing measurement expressed several times,
-      which matters for prioritisation: one dataset would close several gaps at once.
-    what_is_known: >-
-      A GEO DataSets census on 2026-08-05 finds 7 records matching growth plate AND
-      spatial, all non-human (mouse-dominated), including GSE288529 (ApoE as a marker
-      of resting zone chondrocytes) and GSE275252 (ADGRG6 in growth plate
-      homeostasis). Human growth plate single-cell data does exist (18 records,
-      including GSE267139 human cartilage development and GSE288028 on GH action in
-      the human pubertal growth plate), so human tissue is not wholly unobtainable -
-      it is the spatially resolved modality specifically that is absent.
-    what_is_missing: >-
-      Any publicly deposited spatially resolved transcriptomic dataset from human
-      growth plate tissue, at any age or anatomical site.
-    nearest_evidence: [geo_census_20260805, gse267139, gse288028]
-    discriminating_experiment: >-
-      Apply a spatial platform tolerant of dense mineralising matrix and low RNA
-      integrity - Visium HD or Xenium on decalcified FFPE, with an RNA-quality
-      pre-screen - to human physeal tissue obtained as surgical discard from
-      epiphysiodesis or limb realignment, sampling at least three anatomical sites
-      and three age bands spanning pre- and peri-pubertal. Readout: zone-resolved
-      expression profiles registered to histological zone boundaries. Primary test:
-      whether human zonal marker distributions recapitulate the mouse pattern
-      (validating the ~6.5:1 murine literature this atlas leans on) or diverge
-      (invalidating a large body of transferred claims). Either result is decisive,
-      which is what makes this the single highest-value experiment identified in
-      this layer. The binding constraint is tissue access and RNA degradation in
-      decalcified bone, not platform availability.
-    tractability: 3
-    search_log_ref: g_l13data_001
-
-  - gap_id: g_l13data_002
-    question: >-
-      What fraction of published growth plate mechanism rests on mouse data, and is
-      that fraction acknowledged in the sources that transfer it to humans?
-    type: quantitative_gap
-    layer: L13
-    why_it_matters: >-
-      This atlas assigns a translation_risk grade to every node. Those grades are
-      currently reasoned case by case. A measured, field-wide species-composition
-      figure would let translation risk be calibrated rather than asserted, and
-      would quantify how much of "what is known about human growth" is in fact known
-      about mouse growth. It also bears directly on L7: mice do not undergo
-      epiphyseal fusion, so any fusion mechanism inherited from mouse work carries
-      a structural, not merely statistical, transfer risk.
-    what_is_known: >-
-      The GEO census gives a data-deposition ratio of roughly 6.5 mouse records per
-      human record for growth plate (919 vs 141), rising to a complete absence of
-      human records in the spatial modality (0 of 7). This measures deposited
-      datasets, which is a proxy for, not a measurement of, the mechanistic
-      literature.
-    what_is_missing: >-
-      A systematic audit of the growth plate mechanistic literature classifying each
-      primary mechanistic claim by the species it was demonstrated in, and recording
-      whether the citing review states that species. No such audit was located.
-    nearest_evidence: [geo_census_20260805]
-    discriminating_experiment: >-
-      Sample ~300 mechanistic claims at random from the reference lists of the ten
-      most-cited growth plate reviews of the last decade, trace each to its primary
-      source, and record (a) the species of the primary experiment and (b) whether
-      the citing review states that species within the same sentence or the adjacent
-      one. Readout: the proportion of mouse-derived claims presented without species
-      attribution. If that proportion is low, the field self-polices and transferred
-      claims can be trusted at moderate confidence; if it is high, every
-      review-sourced claim in this atlas needs its species re-derived from the
-      primary, and the atlas's X-grade population is larger than currently recorded.
-    tractability: 4
-    search_log_ref: g_l13data_002
+- gap_id: g_l13data_001
+  question: Has spatial transcriptomics ever been applied to human growth plate tissue, and if not, what zonal questions
+    remain unanswerable as a direct consequence?
+  type: search_established
+  layer: L13
+  why_it_matters: 'Spatial transcriptomics is the modality that directly answers "which gene is expressed in which
+    zone" without dissociation bias or the antibody-specificity problems that plague cartilage immunohistochemistry.
+    Multiple gaps elsewhere in this atlas - human zonal PDE isoform distribution, zonal receptor expression, the
+    oxygen-responsive transcriptional gradient - are gaps precisely because this measurement has not been made in
+    humans. They are therefore not independent unknowns but a single missing measurement expressed several times,
+    which matters for prioritisation: one dataset would close several gaps at once.'
+  what_is_known: A GEO DataSets census on 2026-08-05 finds 7 records matching growth plate AND spatial, all non-human
+    (mouse-dominated), including GSE288529 (ApoE as a marker of resting zone chondrocytes) and GSE275252 (ADGRG6
+    in growth plate homeostasis). Human growth plate single-cell data does exist (18 records, including GSE267139
+    human cartilage development and GSE288028 on GH action in the human pubertal growth plate), so human tissue
+    is not wholly unobtainable - it is the spatially resolved modality specifically that is absent.
+  what_is_missing: Any publicly deposited spatially resolved transcriptomic dataset from human growth plate tissue,
+    at any age or anatomical site.
+  nearest_evidence:
+  - geo_census_20260805
+  - gse267139
+  - gse288028
+  discriminating_experiment: 'Apply a spatial platform tolerant of dense mineralising matrix and low RNA integrity
+    - Visium HD or Xenium on decalcified FFPE, with an RNA-quality pre-screen - to human physeal tissue obtained
+    as surgical discard from epiphysiodesis or limb realignment, sampling at least three anatomical sites and three
+    age bands spanning pre- and peri-pubertal. Readout: zone-resolved expression profiles registered to histological
+    zone boundaries. Primary test: whether human zonal marker distributions recapitulate the mouse pattern (validating
+    the ~6.5:1 murine literature this atlas leans on) or diverge (invalidating a large body of transferred claims).
+    Either result is decisive, which is what makes this the single highest-value experiment identified in this layer.
+    The binding constraint is tissue access and RNA degradation in decalcified bone, not platform availability.'
+  tractability: 3
+  search_log_ref: g_l13data_001
+- gap_id: g_l13data_002
+  question: What fraction of published growth plate mechanism rests on mouse data, and is that fraction acknowledged
+    in the sources that transfer it to humans?
+  type: quantitative_gap
+  layer: L13
+  why_it_matters: 'This atlas assigns a translation_risk grade to every node. Those grades are currently reasoned
+    case by case. A measured, field-wide species-composition figure would let translation risk be calibrated rather
+    than asserted, and would quantify how much of "what is known about human growth" is in fact known about mouse
+    growth. It also bears directly on L7: mice do not undergo epiphyseal fusion, so any fusion mechanism inherited
+    from mouse work carries a structural, not merely statistical, transfer risk.'
+  what_is_known: The GEO census gives a data-deposition ratio of roughly 6.5 mouse records per human record for
+    growth plate (919 vs 141), rising to a complete absence of human records in the spatial modality (0 of 7). This
+    measures deposited datasets, which is a proxy for, not a measurement of, the mechanistic literature.
+  what_is_missing: A systematic audit of the growth plate mechanistic literature classifying each primary mechanistic
+    claim by the species it was demonstrated in, and recording whether the citing review states that species. No
+    such audit was located.
+  nearest_evidence:
+  - geo_census_20260805
+  discriminating_experiment: 'Sample ~300 mechanistic claims at random from the reference lists of the ten most-cited
+    growth plate reviews of the last decade, trace each to its primary source, and record (a) the species of the
+    primary experiment and (b) whether the citing review states that species within the same sentence or the adjacent
+    one. Readout: the proportion of mouse-derived claims presented without species attribution. If that proportion
+    is low, the field self-polices and transferred claims can be trusted at moderate confidence; if it is high,
+    every review-sourced claim in this atlas needs its species re-derived from the primary, and the atlas''s X-grade
+    population is larger than currently recorded.'
+  tractability: 4
+  search_log_ref: g_l13data_002
+- gap_id: g_l13_human_explant_screen
+  type: known_unknown
+  layer: L13
+  tractability: 2
+  question: What happens if the compounds this atlas has nominated are tested on human growth plate explants rather
+    than on mice?
+  why_it_matters: Every candidate in this atlas has been judged on mouse growth, human genetics, or a transcript
+    detected in the right human cells - never on whether it makes human cartilage grow, because no assay of that
+    was known to be available here. chu2026 maintains human growth plate cartilage for two months ex vivo with a
+    cartilage-expansion endpoint and a positive control that works. The screen that this atlas has been unable to
+    run is runnable.
+  what_is_known: 'chu2026: 1 mm slices of human growth plate cartilage, 2 months viable, preserved histology and
+    proteoglycan; GH expands the cartilage and raises PZ proliferation (P = 0.013) and the 24-h S-phase fraction
+    (P < 0.0001); bone does not expand, which is the internal negative control. avijgan2026br supply the proliferation
+    readout on the same tissue. The atlas holds a screened set of candidates from rounds 11-17 and a nominated mechanism
+    - neprilysin inhibition - with an approved paediatric drug attached.'
+  what_is_missing: (1) THE SCREEN ITSELF. Nobody has used the platform for one. (2) POWER. GH, the best-validated
+    growth drug in medicine, FAILED TO PRODUCE AN EFFECT IN SOME DONORS in chu2026 - so donor-to-donor variance
+    is large enough to hide a positive control, and any screen needs several donors per arm and is underpowered
+    for anything weaker than GH. That is a design constraint and it is not stated in either paper. (3) TISSUE SUPPLY,
+    which is limited to epiphysiodesis surgery on adolescents being operated on to prevent tall stature. (4) WHETHER
+    EXPLANT GROWTH PREDICTS ANYTHING. No compound has been run in this assay and then in a person, so the assay
+    has no validated predictive record.
+  nearest_evidence:
+  - chu2026
+  - avijgan2026br
+  - hakata2024
+  nearest_evidence_note: chu2026 is the assay with its positive control. hakata2024 is the strongest untested candidate
+    the atlas holds and it acts locally - it works on fetal tibial explants in organ culture with no endocrine axis,
+    which is exactly what an explant assay can detect.
+  discriminating_experiment: 'RUN SACUBITRIL IN THE chu2026 EXPLANT, against vehicle, with GH as the positive control
+    and several donors per arm. The mechanism predicts it should work in this preparation specifically - hakata2024
+    showed the effect survives in isolated bone with no circulation, pituitary or liver. The atlas also holds the
+    complication and it must be measured in the same experiment: NPPC, the CNP gene, sits at the detection floor
+    in human growth plate scRNA-seq, so if the local ligand is genuinely absent an inhibitor of its degradation
+    should do NOTHING here while still being able to work in a child through circulating CNP. THAT MAKES THE EXPLANT
+    A TEST OF THE LOCAL-LIGAND QUESTION AS WELL AS OF THE DRUG, and a null is informative rather than merely disappointing
+    - which is the condition this atlas requires before nominating an experiment.'

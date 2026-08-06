@@ -1374,3 +1374,72 @@ instinct — but nothing ever re-reads those notes against later questions.
 Every sweep's `reason_none_qualified` should be re-read whenever a new question opens. There
 are 148 search logs in this atlas. This one gave up the best lead in it, in a sentence, two
 sweeps ago.
+
+---
+
+## CORR-014 — 2026-08-06 — a precision bound and an alternative explanation, both from the
+## same author, both quoted back at a claim this atlas made the same day
+
+**What the atlas said, one round earlier.** *"Human proliferative cell cycle time is 20 days.
+The rat figure is 2 days"* — presented as a ten- to fifteen-fold **species difference in
+cycling speed**, and as the finding that made rodent kinetics unsafe to transfer. And:
+*"Human terminal hypertrophic cell height … with **no** age dependence"* — presented as an
+invariant.
+
+**What was wrong with it.** Both statements come from `kember1976`. `kember1993` is Kember
+reviewing his own method seventeen years later, and it supplies two things that were quoted
+without:
+
+1. **Precision.** The Sissons cell-production chain gives data of *about ±50%*. Twenty days
+   is **10–30 days**. And *changes smaller than 20% are beyond the limits of detection* in
+   quantitative histology of this kind — so "no age dependence" means **no trend larger than
+   roughly 20% was detectable in twelve subjects**, not that the parameter is fixed. The
+   observed 29–38 µm span is itself ±14% around 33.
+
+2. **An alternative explanation, stated by the author, that the atlas did not consider.**
+   The low human labelling percentage *"is not unequivocal evidence that the dividing cells
+   cycle more slowly."* Human chondrocytes may have a **low growth fraction** — a large
+   proportion of proliferative-zone cells not in cycle at all — and *"the cells in cycle
+   could be dividing as rapidly as in rodents."* The two readings cannot be separated,
+   because **the duration of S phase in human growth cartilage has never been measured**,
+   and every route from labelling percentage to proliferation rate requires it.
+
+**What is withdrawn.** The claim of a ten- to fifteen-fold species difference in *cycling
+speed*. What survives is a ten- to fifteen-fold difference in **mean cell production per
+proliferative-zone cell**, which is a different quantity and does not license the mechanistic
+gloss.
+
+**What survives untouched.** The load-bearing claim of the node — that human terminal cell
+size does not move anywhere near enough to carry the several-fold variation in growth
+velocity across childhood, so cell production must. A ±20% detection limit does not rescue a
+parameter asked to explain a several-fold change. Grades held; nothing downstream reversed.
+
+### The failure mode, which is not the same as CORR-009 to CORR-013
+
+Those five were all *a source existed and was not read*. This one is different and worse in
+one specific way: **the source was read, in full, that same day — and the qualifying
+sentences were in a different paper by the same author.** Reading a primary in full does not
+retrieve the author's own later assessment of its precision. Nothing in the atlas's process
+looks for that.
+
+| | CORR-009 → 013 | CORR-014 |
+|---|---|---|
+| what was missed | a source | a *bound* on a source that was read |
+| where it lived | the literature | the same author, later, elsewhere |
+| what would have caught it | reading the primary | reading the author's own methods review |
+
+### Actioned
+
+- New node `growth_fraction_human_proliferative_zone` (L1, grade **D**) — the decomposition
+  the atlas cannot currently make, with the size of the consequence attached.
+- New node `human_growth_plate_explant_assay` (L13, grade **B**) — the human tissue platform
+  that could now settle it.
+- Both qualifications written into `human_growth_plate_age_trajectory` and
+  `cell_cycle_time_pz` at the row level, not only in the notes.
+
+### The standing rule this adds
+
+**Before quoting a derived kinetic parameter, look for the deriving author's own later
+assessment of the method.** A 1976 number and a 1993 review of how good 1976 numbers are will
+never be found by the same literature search, because they do not share a topic — only an
+author.

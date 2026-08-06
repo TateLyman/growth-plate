@@ -18924,3 +18924,57 @@ edges:
   confidence: C
   notes: The rat half of contradiction C-L1-09. Human shows no such age dependence.
   traversal_usable: true
+- edge_id: e01217
+  source: growth_fraction_human_proliferative_zone
+  target: cell_cycle_time_pz
+  relation: correlates_with
+  sign: unknown
+  context: a labelling percentage bounds the PRODUCT of growth fraction and cycle speed; the human 20-day figure is
+    a zone mean that does not separate them, and human S-phase duration is unmeasured
+  evidence_tier: T4
+  refs:
+  - kember1993
+  confidence: D
+  notes: The atlas withdrew a cycling-speed claim on this basis (CORR-014).
+  traversal_usable: false
+- edge_id: e01218
+  source: growth_fraction_human_proliferative_zone
+  target: growth_velocity_longitudinal
+  relation: required_for
+  sign: +
+  context: cell production per column is growth fraction times division rate; if the human growth fraction is low,
+    recruitment is an unexploited multiplicative term
+  evidence_tier: T4
+  refs:
+  - kember1993
+  - kember1990
+  confidence: D
+  notes: Hypothesis-bearing and graded D. Nothing has measured the human growth fraction.
+  traversal_usable: false
+- edge_id: e01219
+  source: human_growth_plate_explant_assay
+  target: growth_fraction_human_proliferative_zone
+  relation: required_for
+  sign: +
+  context: cumulative labelling in human growth plate explant returns the growth fraction as the plateau of the labelled
+    fraction; the sequential-analogue protocol already works on this tissue
+  evidence_tier: T1
+  refs:
+  - chu2026
+  - avijgan2026br
+  confidence: B
+  notes: A methods dependency, not a biological claim. Explanting releases arrest, so the result is an upper bound.
+  traversal_usable: false
+- edge_id: e01220
+  source: growth_hormone
+  target: human_growth_plate_explant_assay
+  relation: activates
+  sign: +
+  context: GH expands human growth plate cartilage over 2 months ex vivo and raises PZ proliferation (P = 0.013) and
+    the 24-h S-phase fraction (P < 0.0001), though not in every donor
+  evidence_tier: T1
+  refs:
+  - chu2026
+  confidence: B
+  notes: The assay positive control. Its failure in some donors is the assay power limit.
+  traversal_usable: true

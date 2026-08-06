@@ -59,7 +59,12 @@ quantitative:
     the atlas did not hold: the authors state there was no evidence of it across the whole series. The two 14-year-olds,
     with plate closure in progress, give 39 um (male) and 25 um (female) - the only departures, and they are at closure.
     n is 12 subjects and the per-age n is 1-2, so ''no age dependence'' means no trend detectable in 12 people, not
-    a tight bound.'
+    a tight bound. DETECTION LIMIT ADDED 2026-08-06 (CORR-014): Kember states that in quantitative histology of this
+    kind, changes smaller than 20% are beyond the limits of detection. ''No age dependence'' therefore means NO TREND
+    LARGER THAN ROUGHLY 20% WAS DETECTABLE IN TWELVE SUBJECTS, not that the parameter is fixed. The observed span
+    29-38 um is itself about +/-14% around 33. The claim the atlas can support is that human terminal cell height
+    does not vary with age ANYWHERE NEAR enough to account for the several-fold variation in growth velocity over
+    the same interval - which is still decisive for the flow model, and is weaker than ''invariant''.'
 - parameter: chondrocyte lacunar diameter with age, human rib
   value: 'proliferative zone: no significant change. hypertrophic zone: 0.043 at 11 days to 0.036 at 1 year and 0.036
     at 12.4 years, not significant'
@@ -75,7 +80,7 @@ quantitative:
     it collapse. The collapse is therefore in CELL NUMBER per column and in the matrix between columns, not in cell
     size.'
 - parameter: HUMAN PROLIFERATIVE ZONE CELL CYCLE TIME
-  value: '20'
+  value: 20 (about +/-50%, i.e. 10-30); floor about 16 on the cell-count assumption alone
   unit: days
   conditions: 'distal femur at ages 5-8 years. Derived by the authors from three quantities they measured: growth
     rate 1.4 cm/yr = 38 um/day (Harris growth-arrest lines on serial Harpenden Growth Study radiographs, magnification
@@ -92,7 +97,16 @@ quantitative:
     which the authors'' own conclusion is that it is unwise to extrapolate this tissue from mouse to man. They also
     note the cycle time is a MEAN over a heterogeneous zone: in rat, central proliferative cells divide 50-60% per
     day while cells at the epiphyseal end divide 5-10% per day, so in human some cells might divide every 10 days
-    and others once every 100.'
+    and others once every 100. QUALIFIED 2026-08-06 ON READING kember1993 (CORR-014). TWO THINGS THE ATLAS QUOTED
+    THIS FIGURE WITHOUT. (1) PRECISION: Kember states this method gives data of about +/-50% precision, so 20 days
+    is 10 to 30 days. (2) INTERPRETATION, WHICH MATTERS MORE: 20 days is a MEAN OVER THE WHOLE PROLIFERATIVE ZONE,
+    and it does not follow that human chondrocytes cycle slowly. Kember says explicitly that the low human labelling
+    percentage is not unequivocal evidence of slow cycling, because the human GROWTH FRACTION may be low - a large
+    proportion of proliferative-zone cells may not be in cycle at all - and ''the cells in cycle could be dividing
+    as rapidly as in rodents''. The two readings cannot be separated because the duration of S phase in human growth
+    cartilage has never been measured. THE ATLAS''S EARLIER PHRASING - a ten to fifteen fold species difference in
+    cycling speed - IS WITHDRAWN; what is established is a ten to fifteen fold difference in MEAN CELL PRODUCTION
+    PER PROLIFERATIVE CELL. See node growth_fraction_human_proliferative_zone.'
 - parameter: how the human adolescent growth spurt is produced
   value: by faster cycling, not by more proliferative cells
   unit: qualitative
@@ -130,6 +144,23 @@ quantitative:
     rise only until age 1 and then plateau (volume fraction 25% to 40%; septal thickness 0.014 to 0.024 mm), and septal
     NUMBER does not change with age at all - so the zone where cartilage is actually converted to bone is the one
     that stops remodelling first.
+- parameter: cross-species check on terminal cell height as a driver of growth rate
+  value: chicken tibiotarsus ~1000 um/day on 15 um terminal cells; human distal femur 38 um/day on 33 um terminal
+    cells
+  unit: um/day and um
+  conditions: 'kember1987: three 7-day-old chickens, growth 1.14 cm/week by serial radiography with 60% assigned to
+    the proximal end; mean hypertrophic dimension in the direction of growth 15 um (SE 0.4, 75 cells); about 60 new
+    cells per output channel per day against about 82 flat cells, giving a cycle time near 1 day. Human figures from
+    kember1976 as above'
+  species: chicken
+  source_ref: kember1987
+  uncertainty: 'THE COMPARISON IS THE POINT AND IT IS ROBUST TO ITS OWN SLOPPINESS: a chicken plate elongates roughly
+    26 times faster than a human distal femur using cells LESS THAN HALF THE HEIGHT. Terminal cell height cannot be
+    what sets growth rate across species, and the human has the largest cells and the slowest growth. kember1990 adds
+    the within-clade version across 68 growth plates and nine bird species: hypertrophic cell size 10-18 um with no
+    clear trend, and the authors attribute between-species growth rate differences mainly to the SIZE OF THE FLAT
+    CELL ZONE. The chicken figure carries an assumed 60% proximal share and the human figure is a different bone in
+    a different class of animal; neither is a controlled comparison.'
 localization:
 - human rib costochondral junction (byers2000); human distal femur (kember1976)
 human_evidence: direct
@@ -140,17 +171,23 @@ human_evidence_note: 'Both sources are human primary tissue with quantitative hi
   explicitly declines to estimate cycle time at 13-14 years because of the spread of growth rates during and after
   the spurt.'
 species_basis:
+- chicken
 - human
 translation_risk: low
 translation_risk_reason: The measurements are human. The risk here runs the other way - these data are what other
   species should be checked against.
 confidence: B
-confidence_note: B, not A. Two independent laboratories, two skeletal sites, two eras and two methods agree on the
+confidence_note: 'B, not A. Two independent laboratories, two skeletal sites, two eras and two methods agree on the
   central claim that terminal cell size does not change with age while zone height collapses, and the zone-height
   regressions are properly powered (n=46, p<0.001). It is not A because the childhood portion of byers2000 rests on
   ten individuals one per age, kember1976 has twelve subjects in total, the cell cycle time is a derivation with an
   imported rabbit assumption rather than a measurement, and neither study resolves puberty. Both are pre-2001 histomorphometry
-  on autopsy tissue and no modern replication exists - which is itself the finding.
+  on autopsy tissue and no modern replication exists - which is itself the finding. QUALIFIED 2026-08-06 (CORR-014)
+  without changing the grade. Two rows were overstated when written: the cycle time was quoted without its +/-50%
+  precision and without the growth-fraction alternative, and ''no age dependence'' was quoted without the method''s
+  ~20% detection limit. Both are now bounded. The node''s central claim - that human terminal cell size does not move
+  anywhere near enough to carry the observed variation in growth velocity, so cell production must - survives both
+  qualifications, which is why the grade is held rather than lowered.'
 key_refs:
 - ref_id: byers2000
   pmid: '11033444'
@@ -168,6 +205,19 @@ key_refs:
   one_line_finding: '12 human distal femora birth to 14 years with paired Harpenden growth rates: hypertrophic cell
     height 29-38 um with NO age dependence, 33 +/- 5 um at 5-8 years, and a derived proliferative cell cycle time
     of 20 days against 2 days in rat.'
+- ref_id: kember1993
+  pmid: '8219479'
+  first_author: Kember NF
+  year: 1993
+  type: review
+  one_line_finding: Supplies the precision of the cell-production method (+/-50%), its ~20% detection limit, and the
+    growth-fraction alternative to slow human cycling.
+- ref_id: kember1987
+  pmid: '3502931'
+  first_author: Kember NF
+  year: 1987
+  type: primary
+  one_line_finding: Chicken tibiotarsus grows ~1000 um/day on 15 um terminal cells with a cycle time near 1 day.
 open_questions:
 - g_l1arch_human_age_series_modern
 - g_l1arch_human_cycle_time_measured
