@@ -597,7 +597,7 @@
    "layer": "L3",
    "why_it_matters": "Signal duration in the CNP arm is set by cGMP hydrolysis, so the PDE complement determines how much growth a given amount of CNP buys. PDE inhibitors are already given chronically to children - PDE5 inhibitors for pulmonary arterial hypertension, PDE3 inhibitors for heart failure - and PDE inhibition is being proposed as a repurposing route for short stature. All of that rests on a human zonal map that does not exist.",
    "what_is_known": "Bulk transcript profiling of growth plate chondrocytes across human, mouse and chicken reports PDE1B, 3B, 4B, 4D, 5A, 7A, 8A and 10A, with PDE6, 9 and 11 family genes reported absent from skeletal tissue (ursachi2026, indexing takcs2023 and kawabe2025). Functional assignment is species-split: PDE5 dominates cGMP hydrolysis in newborn rat epiphyseal chondrocytes (wang2018) whereas PDE3B is the functional target in mouse (kawabe2025). The only zone-resolved cartilage PDE data are from human and bovine ARTICULAR cartilage - PDE3B superficial, PDE7A deep (grogan2013).",
-   "what_is_missing": "Direct cGMP-hydrolysing activity measurement in human growth plate lysate with isoform-selective inhibitors, zone-resolved. Transcript-level re-analysis (P8-01) has excluded PDE1 and PDE5A as transcriptionally prominent and leaves PDE2A as the sole candidate to test first.",
+   "what_is_missing": "Direct cGMP-hydrolysing activity measurement in human growth plate lysate with isoform-selective inhibitors. The transcript record now points at PDE3B and PDE2A as the candidates present in human tissue, and at PDE1C/PDE3A/PDE10A/PDE11A as consistently absent; PDE5A is contested between platforms and cannot be ruled in or out from expression data.",
    "nearest_evidence": [
     "ursachi2026",
     "wang2018",
@@ -612,9 +612,10 @@
    "reanalysis": "p8_01_gse9160_human_zonal",
    "reanalysis_ref": "gse9160",
    "reanalysis_date": "2026-08-05",
-   "reanalysis_disposition": "answered_by_reanalysis",
+   "reanalysis_disposition": "partially_informed_after_p8_02",
    "reanalysis_finding": "Re-analysis of GSE9160 (2 donors, 5 laser-captured compartments, distal femur, 11y10m F and 13y3m M) detects NO cGMP-hydrolysing phosphodiesterase across the zonal axis in both donors. PDE5A is represented by 8 probe sets and PDE1A/1B/1C by 14; not one clears the array-specific background threshold in either donor. PDE9A, PDE10A, PDE11A likewise undetected. The phosphodiesterases that ARE detected are predominantly cAMP-preferring: PDE4A (all five compartments, both donors), PDE4B, PDE4C, PDE4D, PDE7A, PDE8A. PDE2A (cGMP-stimulated) is detected in resting zone and perichondrium only and is the single cGMP-relevant candidate the data leaves standing.",
-   "reanalysis_residue": "Which isoform carries the dominant cGMP-HYDROLYSING ACTIVITY is an enzymatic question that transcript abundance cannot answer, and a transporter or enzyme can be functionally decisive below a microarray's floor. What is now established is that the isoforms dominating the pharmacological literature are not transcriptionally prominent in human physeal tissue."
+   "reanalysis_residue": "Which isoform carries the dominant cGMP-HYDROLYSING ACTIVITY is an enzymatic question that transcript abundance cannot answer, and a transporter or enzyme can be functionally decisive below a microarray's floor. What is now established is that the isoforms dominating the pharmacological literature are not transcriptionally prominent in human physeal tissue.",
+   "reanalysis_reversal": "CORR-005. Downgraded from answered_by_reanalysis. The P8-01 blanket negative - no cGMP-hydrolysing PDE detectable - is refuted as stated: PDE3B is detected in all three independent human series and PDE5A at the 91st percentile in one of them. What survives across all four datasets is the absence of PDE1C, PDE3A, PDE10A and PDE11A. PDE5A's disagreement across platforms is recorded as a contradiction."
   },
   {
    "gap_id": "g_l3core_007",
@@ -1326,7 +1327,7 @@
    "layer": "L11",
    "why_it_matters": "MCT8 deficiency produces a state that no other human condition can: high serum T3 with tissue-level hypothyroidism restricted to MCT8-dependent cells. If chondrocytes are MCT8-dependent, patients are locally hypothyroid at the growth plate despite thyrotoxic serum, and thyromimetic therapy (TRIAC, which enters cells independently of MCT8) should rescue growth. If chondrocytes are MCT8-independent, they are exposed to the elevated serum T3 and are effectively thyrotoxic, which advances maturation and would predict a shortened growth period - the opposite therapeutic implication.",
    "what_is_known": "MCT8 deficiency gives high T3, low-normal T4 and normal or mildly raised TSH, with severe neurological disease and impaired growth and weight gain. Congenital hypothyroidism shows what complete absence of thyroid hormone action does to the growth plate: arrest of terminal hypertrophy and epiphyseal dysgenesis with profoundly delayed bone age. Alternative thyroid hormone transporters (OATP1C1, MCT10) have tissue-specific distributions established largely in rodents.",
-   "what_is_missing": "Functional T3 uptake measurement in human growth plate chondrocytes with system-L inhibition (BCH) versus MCT8 inhibition. P8-01 has narrowed the candidate set: MCT8, MCT10 and OATP1C1 are all transcriptionally undetectable while LAT1 is present in every zone.",
+   "what_is_missing": "Functional T3 uptake measurement in human growth plate chondrocytes with system-L inhibition (BCH) versus MCT8 inhibition. BOTH candidate routes are now known to be transcriptionally present, so the question can no longer be narrowed by absence and requires the transport measurement directly.",
    "nearest_evidence": [
     "li2026_2",
     "karimian2024",
@@ -1338,9 +1339,10 @@
    "reanalysis": "p8_01_gse9160_human_zonal",
    "reanalysis_ref": "gse9160",
    "reanalysis_date": "2026-08-05",
-   "reanalysis_disposition": "answered_by_reanalysis",
+   "reanalysis_disposition": "REOPENED_by_p8_02",
    "reanalysis_finding": "The thyroid hormone machinery is present but the canonical transporter is not. THRA and THRB are detected in all five compartments of both donors (THRB hypertrophic-maximal in both). DIO2, which activates T4 to T3, is detected in resting zone, proliferative zone and perichondrium. SLC7A5 (LAT1) is detected in ALL FOUR ZONES of BOTH donors and SLC7A8 (LAT2) in resting zone, proliferative zone and perichondrium. SLC16A2 (MCT8) is NOT detected - one probe set, one marginal call in the more sensitive donor's proliferative zone only. SLC16A10 (MCT10, 3 probe sets) and SLCO1C1 (OATP1C1, 2 probe sets) are not detected. DIO1 and DIO3 are not detected. The human growth plate chondrocyte is therefore unlikely to depend on MCT8, and the system-L transporters are the leading alternative.",
-   "reanalysis_residue": "A transporter can be functionally decisive at transcript levels below a microarray's floor, so this is evidence against MCT8 dependence rather than proof of independence. Which transporter actually carries the flux requires a transport measurement."
+   "reanalysis_residue": "A transporter can be functionally decisive at transcript levels below a microarray's floor, so this is evidence against MCT8 dependence rather than proof of independence. Which transporter actually carries the flux requires a transport measurement.",
+   "reanalysis_reversal": "CORR-005. The P8-01 disposition answered_by_reanalysis is REVERSED. It rested on SLC16A2 (MCT8) being undetectable in human growth plate, on a single HG-U133 Plus 2.0 probe set. P8-02 detects SLC16A2 in all three independent human growth-plate series at every stringency (74.8 / 63.1 / 59.9 percentile). MCT8 transcript is present. The system-L alternative still stands on its own evidence - SLC7A5 at the 78th-95th percentile in all three - but the argument from MCT8's absence is gone and the question is open on both sides."
   },
   {
    "gap_id": "g_l11path_024",

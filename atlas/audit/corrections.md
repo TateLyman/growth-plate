@@ -337,3 +337,71 @@ resolvable, the PMID stays valid, `addref.py` stays happy, `verify_refs.py` repo
 — the retraction only shows up in a publication-type field that nothing was gating on.
 The lesson is not "check for retractions"; it is that **an anti-fabrication system built
 around *does this source exist* is silent about *is this source still standing*.**
+
+---
+
+## CORR-005 — three of my own four negatives did not survive independent platforms
+
+**Date traced:** 2026-08-06
+**Trigger:** P8-02, run for the purpose of trying to break P8-01's results
+(`atlas/quant/notebooks/p8_02_independent_corroboration/`).
+**Superseded model:** four both-donor non-detections in human growth plate, reported by
+P8-01 on Affymetrix HG-U133 Plus 2.0 in two donors, and entered into the graph at grade
+D on 2026-08-05.
+
+**Disposition: `both_invalid` for N1 and N4, `interpretation_superseded` for N2,
+`observation_stands and strengthened` for N3.**
+
+### What was tested
+
+Three human growth-plate expression series sharing **no donor and no platform** with
+GSE9160: GSE22855 (Illumina HumanWG-6), GSE32398 (Affymetrix GPL9828, prepubertal),
+GSE18338 (Agilent, one girl through puberty). 13 growth-plate arrays, three platform
+families, at least eight donors. All three passed the preregistered tissue gate with
+COL2A1 at the 100th percentile of every array.
+
+### Result
+
+| claim | verdict | action |
+|---|---|---|
+| **N1** NPPC (CNP) undetectable | **REFUTED** — detected at the ~70th percentile in 2 of 3, at every stringency | withdrawn |
+| **N2** no cGMP-hydrolysing PDE detectable | **REFUTED as a blanket** — PDE3B in all 3, PDE5A at the 91st percentile in 1 | rewritten gene by gene |
+| **N3** no CYP19A1, no ESR2 | **CORROBORATED** at every stringency in all 3, with ESR1 detected as internal control | **D → C** |
+| **N4** MCT8 undetectable | **REFUTED** — SLC16A2 detected in all 3 at every stringency | withdrawn, gap re-opened |
+
+### Blast radius — traced
+
+| Object | Action |
+|---|---|
+| `cnp_protein` | NPPC non-detection observation and its quantitative row **removed**; replaced with the refutation, the percentiles, and the probe-set explanation. The species discrepancy P8-01 raised against the mouse cartilage-specific *Nppc* knockout is **withdrawn with it** — local CNP message is present in human plate, as in mouse. |
+| `mct8_transporter` | MCT8 non-detection **removed**. The system-L alternative survives on its own evidence (SLC7A5 at the 78th–95th percentile in all three), not on MCT8's absence. |
+| `g_l11path_023` | **RE-OPENED.** `answered_by_reanalysis` reversed to `REOPENED_by_p8_02`. `what_is_missing` rewritten: both candidate routes are transcriptionally present, so the question can no longer be narrowed by absence. |
+| `g_l3core_006` | Downgraded `answered_by_reanalysis` → `partially_informed_after_p8_02`. |
+| `aromatase_cyp19a1`, `estrogen_receptor_beta` | **D → C.** Four datasets, four platform families, ~10 donors, working internal control. Explicitly **not** B: a non-detection in bulk tissue is neither human genetic nor interventional evidence. |
+| `pde_isoform_inventory` | Blanket claim replaced by the gene-by-gene table. |
+| `pde5a` | Platform disagreement recorded as a contradiction, not averaged. Grade unchanged at D. |
+| `pde3b` | **Reading inverted.** PDE3B is present in human growth plate on every platform; PDE3A is absent on all four. The paralog audit's AT_RISK verdict is not removed — it is pointed at PDE3B rather than PDE3A. |
+
+### The design error, named
+
+| claim | probe sets behind the P8-01 negative | outcome |
+|---|---:|---|
+| N1 NPPC | **1** | refuted |
+| N4 SLC16A2 | **1** | refuted |
+| N3 CYP19A1 + ESR2 | **13** | corroborated |
+
+**A single-probe non-detection is not a negative.** P8-01 reported every probe count
+honestly and then treated a 1-probe non-detection as the same kind of object as a
+13-probe one. The rule now stated: *a non-detection may enter the graph only if the
+platform carries more than one probe for the transcript, or a second platform agrees.*
+
+### What this says about the P8-01 preregistration
+
+It worked. The design was strong enough that the numbers could be checked, the probe
+counts were on the table for anyone to notice, and the refutation was possible precisely
+because nothing was hidden. What it lacked was the multi-probe rule above — a design
+omission, found by the round that was built to attack it.
+
+`PREREGISTRATION.md` §4.5 of P8-02 committed, before any number was seen, to reporting a
+refutation with the same prominence as a corroboration. This entry is that promise being
+kept.

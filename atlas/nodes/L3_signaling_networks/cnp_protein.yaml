@@ -86,14 +86,15 @@ quantitative:
   species: human
   source_ref: savarirayan2020
   uncertainty: 95% CI 1.22-1.93; n=121 randomised (60 vosoritide, 61 placebo)
-- parameter: NPPC transcript intensity, human growth plate, all five compartments
-  value: 4-20
-  unit: MAS5 arbitrary units
-  conditions: GSE9160, distal femur, 2 donors 11y10m F and 13y3m M, probe set 221348_at; array-specific
-    detection thresholds 254-826 units
+- parameter: NPPC transcript detection, human growth plate, percentile within array
+  value: 60-70
+  unit: percentile
+  conditions: 'P8-02: GSE22855 59.9 (not detected), GSE32398 69.8 (detected), GSE18338 67.8 (detected);
+    three platforms, whole-plate bulk. SUPERSEDES the P8-01 row that recorded NPPC as below background
+    on GPL570.'
   species: human
   source_ref: gse9160
-  uncertainty: below background on every array; single probe set; reanalysis p8_01_gse9160_human_zonal
+  uncertainty: reanalysis p8_02_independent_corroboration; CORR-005 reverses the P8-01 negative
 localization:
 - 'mouse non-hypertrophic chondrocyte layers (RZ/PZ): confirmed by IHC and cartilage-specific KO (nakao2015).
   The CNP IHC in that paper demonstrates knock-down; it is not a quantitative zonal map'
@@ -194,23 +195,22 @@ paralog_risk: ANP is genetically required for chondrocyte differentiation via ch
   the Nppc-cKO-versus-Npr2-cKO severity gap is currently explained by residual extra-cartilage CNP alone,
   with the ANP arm unexcluded. No Nppa;Nppc compound cartilage mutant exists. See g_para_001.
 reanalysis_observations:
-- observation: NPPC transcript is NOT detectable in human growth plate tissue. Across two donors (11y10m
-    F, 13y3m M) and all five laser-captured compartments of the distal femoral physis, the single NPPC
-    probe set on HG-U133 Plus 2.0 (221348_at) reads 8-20 units in donor 1 and 4-9 in donor 2, against
-    array-specific detection thresholds of 646-826 and 254-451 respectively - one to two orders of magnitude
-    BELOW background. The receptor NPR2 and the clearance receptor NPR3 are robustly detected in the same
-    samples, as is IHH at up to 20,856 units, so the assay is working.
-  interpretation: This does not show that CNP is absent from the human growth plate. It shows that at
-    11-13 years the local transcript is not detectable by this platform, on one probe set, in two donors.
-    Read against the mouse result that cartilage-specific Nppc deletion reproduces the whole systemic
-    dwarfism - i.e. that the autocrine pool is the physiological driver in mouse - it is a species discrepancy
-    worth resolving, and it bears on why a CNP analogue must be given systemically.
-  caveats: Single probe set; a 2003-design array; T7 linear amplification with 3-prime bias; NPPC is a
-    small transcript. A both-donor non-detection is the strongest negative this design produces (donor
-    2's arrays are ~2x more sensitive and account for 87% of all one-donor calls genome-wide), but it
-    remains bounded by platform sensitivity.
-  reanalysis: p8_01_gse9160_human_zonal
+- observation: WITHDRAWN AND REVERSED (CORR-005). P8-01 reported that NPPC transcript is not detectable
+    in human growth plate. P8-02 tested that on three independent human growth-plate series with no donor
+    or platform shared with GSE9160, and NPPC is DETECTED at roughly the 70th percentile of the array
+    in GSE32398 (Affymetrix GPL9828, 5 prepubertal donors) and GSE18338 (Agilent, tibia through puberty),
+    surviving every stringency tested. It is not detected in GSE22855 (Illumina, 2 donors, 60th percentile).
+    CNP TRANSCRIPT IS DETECTABLE IN HUMAN GROWTH PLATE.
+  interpretation: 'The P8-01 negative rested on the single NPPC probe set that HG-U133 Plus 2.0 carries
+    (221348_at). One oligonucleotide failing is indistinguishable from a transcript being absent until
+    a second platform is asked, and the second and third platforms disagree with it. The species discrepancy
+    P8-01 raised against the mouse cartilage-specific Nppc knockout is therefore removed: local CNP message
+    is present in human plate, as in mouse.'
+  caveats: Transcript, not peptide. Whole-plate bulk, so no zonal information. None of the three platforms
+    has a validated positive control for its detection rule - see P8-02 RESULTS section 4.
+  reanalysis: p8_02_independent_corroboration
   source_ref: gse9160
   species: human
   grade: D
   date: '2026-08-05'
+  supersedes: p8_01_gse9160_human_zonal NPPC non-detection

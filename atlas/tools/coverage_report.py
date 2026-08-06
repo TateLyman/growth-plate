@@ -160,14 +160,48 @@ def struct_block(nodes, researched, gaps, slogs, edges, bib):
         "**Context annotation, three-state** (MATCH / MISMATCH / UNANNOTATED — only "
         "MISMATCH excludes an edge; see `atlas/tools/context_filter.py`):",
         "",
-        "| axis | annotated | of edges | MR-004 target |",
-        "|---|---:|---:|---:|",
+        "**DETERMINED** = the axis carries a value. An explicit `zone unknown` is honest, "
+        "queryable annotation and is **not** coverage; it is counted separately and never "
+        "in the numerator.",
+        "",
+        "| axis | determined | of edges | explicitly `unknown` | MR-004 target |",
+        "|---|---:|---:|---:|---:|",
     ]
     targets = {"zone": "40%", "sex": "30%", "stage": "40%", "species": "—"}
+    import re as _re
     for ax in ["zone", "sex", "stage", "species"]:
         c = ctx.get(ax, 0)
+        unk = sum(1 for e in edges
+                  if _re.search(cf.PROV["explicit_unknown"][ax],
+                                str(e.get("context") or ""), _re.I))
         rows.append(f"| {ax} | {c}/{len(edges)} | {100.0*c/max(1,len(edges)):.1f}% | "
-                    f"{targets[ax]} |")
+                    f"{unk} ({100.0*unk/max(1,len(edges)):.1f}%) | {targets[ax]} |")
+    zdet = ctx.get("zone", 0)
+    t_src = sum(1 for e in edges
+                if _re.search(cf.ZONE_PROVENANCE["resolved in the cited source"],
+                              str(e.get("context") or ""), _re.I))
+    t_inf = sum(1 for e in edges
+                if _re.search(
+                    cf.ZONE_PROVENANCE["inferred from endpoint localization records"],
+                    str(e.get("context") or ""), _re.I))
+    t_def = zdet - t_src - t_inf
+    rows += [
+        "",
+        "**Zone provenance — `determined` is not one thing.** A zone inferred from the "
+        "endpoint nodes' localisation records says where the *entities* live, not where "
+        "the *interaction* was observed, and it is where an incoherent tag can hide "
+        "(see `audit/fragility.md` §4).",
+        "",
+        "| provenance | edges | of edges |",
+        "|---|---:|---:|",
+        f"| resolved in the cited source | {t_src} | {100.0*t_src/max(1,len(edges)):.1f}% |",
+        f"| definitional — an endpoint node **is** a zone | {t_def} | "
+        f"{100.0*t_def/max(1,len(edges)):.1f}% |",
+        f"| **inferred from endpoint localization records** | **{t_inf}** | "
+        f"**{100.0*t_inf/max(1,len(edges)):.1f}%** |",
+        f"| → strong (source-resolved + definitional) | {t_src+t_def} | "
+        f"{100.0*(t_src+t_def)/max(1,len(edges)):.1f}% |",
+    ]
     rows += [
         "",
         f"Sign coverage on sign-bearing relations is the traversal gate and stands at "

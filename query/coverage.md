@@ -142,12 +142,23 @@ number is too small to say anything.
 
 **Context annotation, three-state** (MATCH / MISMATCH / UNANNOTATED — only MISMATCH excludes an edge; see `atlas/tools/context_filter.py`):
 
-| axis | annotated | of edges | MR-004 target |
-|---|---:|---:|---:|
-| zone | 635/1181 | 53.8% | 40% |
-| sex | 360/1181 | 30.5% | 30% |
-| stage | 754/1181 | 63.8% | 40% |
-| species | 1133/1181 | 95.9% | — |
+**DETERMINED** = the axis carries a value. An explicit `zone unknown` is honest, queryable annotation and is **not** coverage; it is counted separately and never in the numerator.
+
+| axis | determined | of edges | explicitly `unknown` | MR-004 target |
+|---|---:|---:|---:|---:|
+| zone | 635/1181 | 53.8% | 544 (46.1%) | 40% |
+| sex | 360/1181 | 30.5% | 821 (69.5%) | 30% |
+| stage | 754/1181 | 63.8% | 427 (36.2%) | 40% |
+| species | 1133/1181 | 95.9% | 40 (3.4%) | — |
+
+**Zone provenance — `determined` is not one thing.** A zone inferred from the endpoint nodes' localisation records says where the *entities* live, not where the *interaction* was observed, and it is where an incoherent tag can hide (see `audit/fragility.md` §4).
+
+| provenance | edges | of edges |
+|---|---:|---:|
+| resolved in the cited source | 59 | 5.0% |
+| definitional — an endpoint node **is** a zone | 315 | 26.7% |
+| **inferred from endpoint localization records** | **261** | **22.1%** |
+| → strong (source-resolved + definitional) | 374 | 31.7% |
 
 Sign coverage on sign-bearing relations is the traversal gate and stands at **777/777 = 100%**. The 404 excluded edges are `precedes` (temporal), `binds` (no direction), `correlates_with` and `hypothesized_link` — signing them would be fabrication, so they are flagged `traversal_usable: false` rather than traversed.
 <!-- COVERAGE:STRUCT:END -->
