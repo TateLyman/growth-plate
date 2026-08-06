@@ -556,3 +556,85 @@ in growth rate.
 already held.** Two rows survive on grade-C animal evidence alone, and the most useful
 output of the exercise is not a candidate at all — it is that `hunziker1989` says the
 objective function was wrong.
+
+---
+
+# ROUND 5 — the shape screen, and why it returns nothing
+
+Following `hunziker1989`, the objective was re-pointed from hypertrophic *volume* to
+terminal cell *aspect ratio*. Two attempts, one negative result each, and the second is
+the useful one.
+
+## A. Deriving the shape machinery from human tissue — the dataset cannot support it
+
+`atlas/tools/shape_screen.py` contrasts the human hypertrophic zone against the
+proliferative zone, per donor, in GSE288028. It was run three times and **the first two
+results were contamination signatures**:
+
+| version | top hits | what they actually were |
+|---|---|---|
+| 1 — GP5 markers `COL10A1, IBSP, SPP1` | BGLAP, DMP1, MEPE, SATB2, COL1A1/2 | **osteoblasts.** IBSP and SPP1 are bone matrix genes; I added them to the marker set myself. Chu's published GP5 marker is COL10A1 alone. |
+| 2 — Chu markers, osteoblasts excluded | LAPTM5, FYB1, SAMHD1, CXCR4, CD44 | **marrow.** The chondro-osseous junction is continuous with marrow and a COL2A1-positive gate does not exclude leukocytes. |
+| 3 — blood excluded, marker threshold enforced | — | **refuses to report** |
+
+At defensible stringency only **one of four donors** yields both a GP3 and a GP5 pool.
+The tool now halts rather than reporting, because relaxing the gate is precisely what
+produced versions 1 and 2.
+
+The reason is not depth alone — the four libraries are not comparable tissue:
+
+| donor | cells | median UMI | COL10A1 > 200 cpm |
+|---|---:|---:|---:|
+| d1 | 5,295 | 5,008 | 118 (**2 %**) |
+| d2 | 12,911 | 4,906 | 501 (**4 %**) |
+| **d3** | 9,115 | **10,041** | 6,433 (**71 %**) |
+| d4 | 383 | 3,339 | 15 (4 %) |
+
+Donor 3 has twice the depth *and* a twenty-fold different zonal composition. Any
+cross-donor contrast is donor 3 alone.
+
+**This is the third independent failure of GSE288028 as a reuse substrate** — after the
+GH signature (1 of 3 patients responding) and the 5-fold composition swings between
+paired vehicle/GH libraries. It is the only human growth-plate scRNA-seq that exists, and
+it will not carry this weight.
+
+## B. Screening the graph for shape — zero hits, and that is the result
+
+A node now exists for the variable: **`terminal_cell_shape_modulation`**, carrying
+Hunziker's height (31.2 → 38.5 µm), diameter (29.9 → 25.6 µm), volume (−13 %), and a
+derived aspect ratio **1.04 → 1.50**. It is wired to `growth_velocity_longitudinal`
+(grade C) and records the volume dissociation explicitly as a **dissociation, not a
+dependency**.
+
+`target_screen.py` now carries `shape` as an outcome. Re-run:
+
+> **0 of 209 upstream nodes have a signed, traversable path into it.**
+
+Every shape-adjacent route in the atlas — `pericellular_matrix`,
+`cartilage_osmotic_swelling`, `cytoskeletal_tension_chondrocyte` — terminates in
+`hypertrophic_volume_increase`, and both of the relevant edges are speculative and
+traversal-unusable. There was no node for cell height or aspect ratio anywhere in 621
+nodes before today.
+
+**So the screen cannot be run, and the reason is not a tooling limit: nobody has mapped
+what controls the aspect ratio of a hypertrophic chondrocyte.** Opened as
+`g_l1arch_016`.
+
+## C. What that changes about the request
+
+The bottleneck is no longer compound identification. It is that **the causal layer under
+the one variable that demonstrably carries growth-rate change is empty**, and it is empty
+in the literature, not just in this atlas.
+
+The honest first move is also the cheapest: **`hunziker1989` has never been replicated,
+in any species, and the entire reframing rests on it.** Six of the seven candidates from
+round 1 were killed by primaries; this reframing deserves the same treatment before more
+is built on it.
+
+| want | why |
+|---|---|
+| **PMID 3543020** — Hunziker, Schenk & Cruz-Orive 1987, the companion stereology paper | baseline height, diameter and volume by zone, and the method behind the 1989 numbers. Held as `primary` with no full text read. |
+| any **replication** of height-and-diameter-measured-separately at two growth rates | the reframing rests on one 1989 study with n=6 |
+| **PMID 20550897** — Darling 2010, chondrocyte pericellular matrix mechanics | the only proposed mechanism for anisotropic constraint; held abstract-level |
+| **PMID 10579729** — Costell 1999, perlecan null | currently `primary_abstract_only`; perlecan is the strongest PCM lead |
+| PCM / collagen VI growth-plate micromechanics (e.g. Prein *et al.*, *Matrix Biol* 2016) | not in the atlas at all |

@@ -936,6 +936,11 @@
   "site-specific growth rate (differential growth)": "site_specific_growth_rate",
   "differential growth": "site_specific_growth_rate",
   "plate-specific elongation rate": "site_specific_growth_rate",
+  "terminal_cell_shape_modulation": "terminal_cell_shape_modulation",
+  "terminal hypertrophic cell shape modulation (height vs diameter)": "terminal_cell_shape_modulation",
+  "phenotype modulation": "terminal_cell_shape_modulation",
+  "chondrocyte aspect ratio": "terminal_cell_shape_modulation",
+  "cell-shape modelling": "terminal_cell_shape_modulation",
   "transphyseal_canal": "transphyseal_canal",
   "transphyseal canal": "transphyseal_canal",
   "transphyseal vessel": "transphyseal_canal",
@@ -2543,6 +2548,7 @@
   "saltation_stasis_growth": "atlas/nodes/L1_growth_plate_architecture/saltation_stasis_growth.yaml",
   "septoclast": "atlas/nodes/L1_growth_plate_architecture/septoclast.yaml",
   "site_specific_growth_rate": "atlas/nodes/L1_growth_plate_architecture/site_specific_growth_rate.yaml",
+  "terminal_cell_shape_modulation": "atlas/nodes/L1_growth_plate_architecture/terminal_cell_shape_modulation.yaml",
   "transphyseal_canal": "atlas/nodes/L1_growth_plate_architecture/transphyseal_canal.yaml",
   "type_h_vessel": "atlas/nodes/L1_growth_plate_architecture/type_h_vessel.yaml",
   "vertebral_growth_plate": "atlas/nodes/L1_growth_plate_architecture/vertebral_growth_plate.yaml",
@@ -7162,7 +7168,7 @@
  "convergence": [
   {
    "node": "growth_velocity_longitudinal",
-   "inbound": 45,
+   "inbound": 46,
    "n_layers": 10,
    "layers": [
     "L0",
@@ -7415,6 +7421,21 @@
    "layer": "L3"
   },
   {
+   "node": "hypertrophic_volume_increase",
+   "inbound": 11,
+   "n_layers": 7,
+   "layers": [
+    "L1",
+    "L13",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L9"
+   ],
+   "layer": "L1"
+  },
+  {
    "node": "resting_zone",
    "inbound": 11,
    "n_layers": 6,
@@ -7450,21 +7471,6 @@
     "L4"
    ],
    "layer": "L3"
-  },
-  {
-   "node": "hypertrophic_volume_increase",
-   "inbound": 10,
-   "n_layers": 7,
-   "layers": [
-    "L1",
-    "L13",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L9"
-   ],
-   "layer": "L1"
   },
   {
    "node": "zonal_stiffness_gradient",
@@ -8109,7 +8115,7 @@
   }
  ],
  "layer_adjacency": {
-  "L1->L1": 44,
+  "L1->L1": 46,
   "L2->L2": 38,
   "L3->L3": 151,
   "L4->L7": 9,
@@ -8165,9 +8171,9 @@
   "L12->L4": 26,
   "L11->L3": 27,
   "L11->L4": 11,
-  "L6->L1": 51,
+  "L6->L1": 52,
   "L6->L5": 11,
-  "L5->L1": 50,
+  "L5->L1": 51,
   "L13->L5": 8,
   "L13->L6": 5,
   "L8->L3": 12,
@@ -32850,6 +32856,15 @@
    }
   },
   "site_specific_growth_rate": {},
+  "terminal_cell_shape_modulation": {
+   "growth_velocity_longitudinal": {
+    "sign": 1,
+    "depth": 1,
+    "path": [
+     "e01197"
+    ]
+   }
+  },
   "transphyseal_canal": {},
   "type_h_vessel": {
    "metaphyseal_vasculature": {
@@ -78532,8 +78547,8 @@
   "zebrafish_skeletal_model"
  ],
  "edge_usability": {
-  "usable": 786,
-  "unusable": 410,
+  "usable": 787,
+  "unusable": 413,
   "reason": "sign-exempt relation (precedes/binds/correlates_with/hypothesized_link) or unsigned"
  }
 }

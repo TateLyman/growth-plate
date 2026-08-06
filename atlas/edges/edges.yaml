@@ -19109,3 +19109,64 @@ edges:
     NOT as evidence for either side of it. Sign-exempt relation.
   traversal_usable: false
   gap_id: g_l5matrix_008
+- edge_id: e01197
+  source: terminal_cell_shape_modulation
+  target: growth_velocity_longitudinal
+  relation: activates
+  sign: +
+  context: rat proximal tibia, 21 to 35 days, both sexes not stated; hypertrophic zone; the only measurement
+    of this relationship in any species
+  evidence_tier: T1
+  refs:
+  - hunziker1989
+  confidence: C
+  notes: A 23% rise in terminal cell height with a 14% fall in lateral diameter accounts for a 20% rise
+    in growth rate, while final cell VOLUME falls 13%. Graded C rather than higher because it is a single
+    unreplicated study in one species, and because the comparison is observational across ages rather
+    than an intervention.
+  traversal_usable: true
+- edge_id: e01198
+  source: terminal_cell_shape_modulation
+  target: hypertrophic_volume_increase
+  relation: hypothesized_link
+  context: rat proximal tibia; the two quantities move in OPPOSITE directions during growth acceleration
+  evidence_tier: T1
+  refs:
+  - hunziker1989
+  - breur1991
+  confidence: speculative
+  gap_id: g_l1arch_016
+  notes: 'Recorded as a DISSOCIATION, not a dependency. Height rises 23% while volume falls 13% during
+    acceleration, so the between-plate volume/growth correlation (breur1991 r=0.98) cannot be the within-plate
+    causal relationship. Sign-exempt: there is no consistent direction between them.'
+  traversal_usable: false
+- edge_id: e01199
+  source: pericellular_matrix
+  target: terminal_cell_shape_modulation
+  relation: hypothesized_link
+  context: growth plate, species unknown - no experiment has manipulated the pericellular matrix and measured
+    terminal cell height and diameter separately
+  evidence_tier: T4
+  refs:
+  - darling2010
+  - costell1999
+  confidence: speculative
+  gap_id: g_l1arch_016
+  notes: SPECULATIVE and marked so. A pressurised cell inside an anisotropic constraint would convert
+    a volume increase into height rather than width, which is the only mechanism currently proposed for
+    the hunziker1989 observation. Nothing tests it.
+  traversal_usable: false
+- edge_id: e01200
+  source: cytoskeletal_tension_chondrocyte
+  target: terminal_cell_shape_modulation
+  relation: hypothesized_link
+  context: growth plate, mouse for the cytoskeletal evidence; the link to terminal cell aspect ratio is
+    untested in any species
+  evidence_tier: T4
+  refs:
+  - greer2024
+  confidence: speculative
+  gap_id: g_l1arch_016
+  notes: SPECULATIVE. Cytoskeletal tension is required for chondrocyte ROTATION (greer2024), a different
+    shape-related process. Whether it sets terminal aspect ratio is unknown.
+  traversal_usable: false

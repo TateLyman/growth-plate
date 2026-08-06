@@ -71,6 +71,12 @@ OUTCOMES = {
     # Delaying fusion lengthens the integral of velocity over time. The flow model has
     # no time axis at all, so this is scored SEPARATELY and never summed with the rest.
     "fusion": (["epiphyseal_fusion", "growth_plate_senescence"], -1),
+    # ADDED after hunziker1989. This, not h_term-as-volume, is the variable a
+    # physiological change in growth rate actually moves: +23 % cell height with -14 %
+    # diameter and -13 % VOLUME carries a +20 % growth rate. Scored separately from
+    # h_term because the two dissociate - during acceleration they move in opposite
+    # directions - and summing them would double-count in the wrong direction.
+    "shape": (["terminal_cell_shape_modulation"], +1),
 }
 SIGNV = {"+": 1, "-": -1}
 GRADE_ORDER = ["A", "B", "C", "D", "E", "speculative", "X"]

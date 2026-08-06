@@ -5016,6 +5016,24 @@
    "nearest_evidence_note": "ramos2025 (ear, nose, trachea; growth plate never examined); cooper2013 (growth plate, intracellular density change of a different mechanism - dilution, not lipid accumulation).",
    "discriminating_experiment": "Stain murine and human growth-plate sections for neutral lipid (BODIPY, Oil Red O) alongside the lipochondrocyte markers ramos2025 defines, in the same sections and with ear cartilage as a positive control on the same slide. A negative in the physis is informative and cheap: it would establish that the hypertrophic chondrocyte's volume increase is not a lipid phenomenon, which the dry-mass-dilution data already suggest but do not test directly. A positive in any zone would mean growth-plate mechanics have an intracellular determinant that no existing physeal finite-element model represents.",
    "tractability": 5
+  },
+  {
+   "gap_id": "g_l1arch_016",
+   "question": "What sets the aspect ratio of the terminal hypertrophic chondrocyte - the height-to-diameter ratio that hunziker1989 shows carries physiological change in growth rate - and can it be manipulated independently of cell volume?",
+   "type": "known_unknown",
+   "layer": "L1",
+   "why_it_matters": "This is the variable a physiological growth change actually moves, and no therapeutic programme targets it. CNP analogues and FGFR3 inhibitors are aimed at hypertrophic ENLARGEMENT, but hunziker1989 measured cell volume FALLING 13% while growth rate rose 20%. If aspect ratio rather than volume is the lever, the entire pharmacology of this field is aimed one axis away from the mechanism, and a compound that made terminal cells taller and narrower at constant volume would be a different class of agent from anything in development.",
+   "what_is_known": "Rat proximal tibia, 21 to 35 days, growth rate +20%: final cell height +23% (31.2 to 38.5 um, P<0.02), final lateral diameter -14% (29.9 to 25.6 um, P<0.03), final cell volume -13% (P<0.03), matrix per cell unchanged, cells produced per column per day unchanged, hypertrophic-phase duration unchanged at about two days (hunziker1989, n=6 per age). Derived aspect ratio rises from 1.04 to 1.50. The cell sits inside a pericellular matrix and a lattice of longitudinal septa that could in principle impose the anisotropy: perlecan is required for the pericellular matrix and for column formation (costell1999, arikawahirasaw2001), integrin beta1 is required for chondrocyte rotation and column formation (aszodi2003, greer2024), and cytoskeletal tension is required for rotation (greer2024).",
+   "what_is_missing": "Everything causal. No experiment has manipulated pericellular matrix stiffness, septal anisotropy, cytoskeletal tension or cell-volume regulation and then measured terminal cell HEIGHT AND DIAMETER SEPARATELY together with bone elongation in the same animal. The atlas holds no node with a signed edge into cell height or aspect ratio at all - every shape-adjacent route (pericellular_matrix, cartilage_osmotic_swelling) terminates in hypertrophic_volume_increase and both are speculative and traversal-unusable. In human tissue the aspect ratio has never been measured: two studies report a height and disagree by 61% (C-L1-07) and neither reports the transverse diameter of the same cells. hunziker1989 itself has never been replicated in any species.",
+   "nearest_evidence": [
+    "hunziker1989",
+    "greer2024",
+    "costell1999",
+    "breur1991"
+   ],
+   "nearest_evidence_note": "hunziker1989 (rat, the only measurement of the phenomenon); greer2024 and aszodi2003 (cytoskeleton and integrin control of chondrocyte ROTATION, which is a shape-related process but not aspect ratio); costell1999 (perlecan and the pericellular matrix); breur1991 (the between-plate volume correlation this contradicts).",
+   "discriminating_experiment": "Two steps, the first of which is cheap. (i) REPLICATE hunziker1989 in a second species and a second laboratory, measuring terminal cell height and transverse diameter separately by stereology at two growth rates in the same animals. The entire reframing rests on one unreplicated 1989 study and it should not carry that weight. (ii) Then manipulate the candidate constraint - pericellular matrix stiffness by perlecan or collagen VI perturbation, septal anisotropy by controlled MMP exposure, or cell-volume regulation by an osmotic or ion-transport agent - and measure height, diameter, volume AND bone length in the same animals. The decisive outcome is any intervention that raises the height-to-diameter ratio at constant volume: if bone length rises with it, aspect ratio is a lever and a drug target; if bone length does not move, then hunziker1989's correlation is a consequence of growth rate rather than a cause of it, and the reframing is wrong.",
+   "tractability": 3
   }
  ],
  "by_layer": {
@@ -5049,7 +5067,8 @@
    "g_l1arch_012",
    "g_l1arch_013",
    "g_l1arch_014",
-   "g_l1arch_015"
+   "g_l1arch_015",
+   "g_l1arch_016"
   ],
   "L10": [
    "g_l10env_001",
@@ -5441,7 +5460,8 @@
    "g_para_007",
    "g_para_009",
    "g_l5igf_001",
-   "g_l1arch_015"
+   "g_l1arch_015",
+   "g_l1arch_016"
   ],
   "method_blocked": [
    "g_l1arch_014",
@@ -5816,7 +5836,8 @@
    "g_para_005",
    "g_para_006",
    "g_l5igf_001",
-   "g_l12b_026"
+   "g_l12b_026",
+   "g_l1arch_016"
   ],
   "4": [
    "g_l12pharm_001",

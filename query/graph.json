@@ -1,7 +1,7 @@
 {
  "meta": {
-  "nodes": 620,
-  "edges": 1196,
+  "nodes": 621,
+  "edges": 1200,
   "generated_from": "atlas/nodes/**, atlas/edges/edges.yaml",
   "warning": "COMPILED ARTIFACT - never hand-edit; regenerate with tools/compile_query.py"
  },
@@ -15404,6 +15404,61 @@
    "aliases": [
     "differential growth",
     "plate-specific elongation rate"
+   ]
+  },
+  "terminal_cell_shape_modulation": {
+   "id": "terminal_cell_shape_modulation",
+   "name": "Terminal hypertrophic cell shape modulation (height vs diameter)",
+   "type": "process",
+   "layer": "L1",
+   "stub": false,
+   "summary": "Physiological change in longitudinal growth rate is carried by a change in the SHAPE of the terminal hypertrophic chondrocyte, not its size. In rat proximal tibia between 21 and 35 days, a 20% rise in growth rate is accounted for almost entirely by a 23% rise in final cell height (31.2 to 38.5 um, P<0.02) accompanied by a 14% FALL in final lateral diameter (29.9 to 25.6 um, P<0.03) and a 13% FALL in final cell volume (P<0.03). Matrix produced per cell, cells produced per column per day, and the duration of the hypertrophic phase are all unchanged. Hunziker and Schenk call this phenotype modulation, and it is the single most direct measurement of which variable carries a physiological change in growth rate in any species. It matters because it dissociates height from volume: the two move in OPPOSITE directions during acceleration, so the between-plate correlation of final hypertrophic VOLUME with elongation rate (r=0.98 in rat, r=0.83 in pig, breur1991) cannot be the causal relationship within a plate over time. Growth deceleration is not the mirror image - between 35 and 80 days height, volume, and cell turnover all fall together - so the system is asymmetric, and only acceleration isolates shape as the lever. What sets the aspect ratio is unknown. The cell is a pressurised object inside a constraining pericellular matrix and a lattice of longitudinal septa, so an anisotropic constraint could convert a fixed volume increase into height rather than width, but no experiment has manipulated the constraint and measured the resulting cell dimensions or bone length.",
+   "confidence": "C",
+   "claim_grades": null,
+   "human_evidence": "absent",
+   "human_evidence_note": "No human study reports terminal hypertrophic cell height and transverse diameter in the same specimen, so the human aspect ratio is unknown and its relationship to human growth rate is untested. The entire result rests on one rat study, which no one has repeated in any species.",
+   "species_basis": [
+    "rat"
+   ],
+   "translation_risk": "high",
+   "translation_risk_reason": "A single unreplicated rat study is the whole evidential basis. The human plate differs from rat in cycle time by roughly an order of magnitude and carries a large inert zone rat lacks, and human terminal cell height is itself contested by 61%.",
+   "localization": [
+    "rat proximal tibia hypertrophic zone: height, diameter and volume measured separately (hunziker1989)",
+    "human: height measured, diameter never measured, aspect ratio unknown"
+   ],
+   "key_refs": [
+    {
+     "ref_id": "hunziker1989",
+     "pmid": "2607442",
+     "first_author": "Hunziker EB",
+     "year": 1989,
+     "type": "primary",
+     "one_line_finding": "A 20% rise in rat growth rate is carried by a 23% rise in terminal cell height with diameter falling 14% and volume falling 13%; matrix per cell, turnover and hypertrophic-phase duration unchanged."
+    },
+    {
+     "ref_id": "breur1991",
+     "pmid": "2010838",
+     "first_author": "Breur GJ",
+     "year": 1991,
+     "type": "primary",
+     "one_line_finding": "Final hypertrophic VOLUME correlates with elongation rate across plates (r=0.98 rat, 0.83 pig) - a between-plate relationship that hunziker1989 shows does not hold within a plate over time."
+    }
+   ],
+   "open_questions": [
+    "g_l1arch_016",
+    "g_l1arch_009"
+   ],
+   "contradicts": [
+    "breur1991"
+   ],
+   "termination_reason": null,
+   "termination_note": null,
+   "pending_source": null,
+   "last_verified": "2026-08-06",
+   "aliases": [
+    "phenotype modulation",
+    "chondrocyte aspect ratio",
+    "cell-shape modelling"
    ]
   },
   "transphyseal_canal": {
@@ -59133,6 +59188,68 @@
    "notes": "If cells carry load, then a sharp AFM tip (which probes matrix) and an unconfined-compression platen (which probes the composite) would be expected to disagree about which zone is stiffest - which is the observed contradiction g_l5matrix_008. Offered as a candidate explanation for a disagreement, NOT as evidence for either side of it. Sign-exempt relation.",
    "traversal_usable": false,
    "gap_id": "g_l5matrix_008"
+  },
+  {
+   "edge_id": "e01197",
+   "source": "terminal_cell_shape_modulation",
+   "target": "growth_velocity_longitudinal",
+   "relation": "activates",
+   "sign": "+",
+   "context": "rat proximal tibia, 21 to 35 days, both sexes not stated; hypertrophic zone; the only measurement of this relationship in any species",
+   "evidence_tier": "T1",
+   "refs": [
+    "hunziker1989"
+   ],
+   "confidence": "C",
+   "notes": "A 23% rise in terminal cell height with a 14% fall in lateral diameter accounts for a 20% rise in growth rate, while final cell VOLUME falls 13%. Graded C rather than higher because it is a single unreplicated study in one species, and because the comparison is observational across ages rather than an intervention.",
+   "traversal_usable": true
+  },
+  {
+   "edge_id": "e01198",
+   "source": "terminal_cell_shape_modulation",
+   "target": "hypertrophic_volume_increase",
+   "relation": "hypothesized_link",
+   "context": "rat proximal tibia; the two quantities move in OPPOSITE directions during growth acceleration",
+   "evidence_tier": "T1",
+   "refs": [
+    "hunziker1989",
+    "breur1991"
+   ],
+   "confidence": "speculative",
+   "gap_id": "g_l1arch_016",
+   "notes": "Recorded as a DISSOCIATION, not a dependency. Height rises 23% while volume falls 13% during acceleration, so the between-plate volume/growth correlation (breur1991 r=0.98) cannot be the within-plate causal relationship. Sign-exempt: there is no consistent direction between them.",
+   "traversal_usable": false
+  },
+  {
+   "edge_id": "e01199",
+   "source": "pericellular_matrix",
+   "target": "terminal_cell_shape_modulation",
+   "relation": "hypothesized_link",
+   "context": "growth plate, species unknown - no experiment has manipulated the pericellular matrix and measured terminal cell height and diameter separately",
+   "evidence_tier": "T4",
+   "refs": [
+    "darling2010",
+    "costell1999"
+   ],
+   "confidence": "speculative",
+   "gap_id": "g_l1arch_016",
+   "notes": "SPECULATIVE and marked so. A pressurised cell inside an anisotropic constraint would convert a volume increase into height rather than width, which is the only mechanism currently proposed for the hunziker1989 observation. Nothing tests it.",
+   "traversal_usable": false
+  },
+  {
+   "edge_id": "e01200",
+   "source": "cytoskeletal_tension_chondrocyte",
+   "target": "terminal_cell_shape_modulation",
+   "relation": "hypothesized_link",
+   "context": "growth plate, mouse for the cytoskeletal evidence; the link to terminal cell aspect ratio is untested in any species",
+   "evidence_tier": "T4",
+   "refs": [
+    "greer2024"
+   ],
+   "confidence": "speculative",
+   "gap_id": "g_l1arch_016",
+   "notes": "SPECULATIVE. Cytoskeletal tension is required for chondrocyte ROTATION (greer2024), a different shape-related process. Whether it sets terminal aspect ratio is unknown.",
+   "traversal_usable": false
   }
  ],
  "refs": {
@@ -61515,6 +61632,23 @@
    "tier": "T1",
    "title": "Growth hormone regulates the stem cell population in the growth plate",
    "type": "primary",
+   "year": 2025
+  },
+  "chu2025pre": {
+   "added": "2026-08-06",
+   "cited_by": 1,
+   "doi": "10.1101/2025.03.14.642964",
+   "first_author": "Chu TL",
+   "has_full_text": true,
+   "is_preprint": false,
+   "journal": "bioRxiv",
+   "one_line_finding": "Preprint of chu2026. Human pubertal growth plate scRNA-seq resolves five chondrocyte clusters GP1-GP5; GP1 is a quiescent stem population in a Wnt-low and TGFb-low niche actively expressing THBS1/2/4 and DCN; GH stimulates explant growth and resting-zone proliferation via JAK/STAT, autocrine TGFb and ERK",
+   "open_access": false,
+   "pmid": null,
+   "ref_id": "chu2025pre",
+   "tier": "T6",
+   "title": "A transcriptional atlas of the pubertal human growth plate reveals direct stimulation of cartilage stem cells by growth hormone",
+   "type": "preprint",
    "year": 2025
   },
   "chu2026": {
