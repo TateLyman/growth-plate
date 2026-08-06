@@ -20,9 +20,14 @@ summary: 'Physiological change in longitudinal growth rate is carried by a chang
   Growth deceleration is not the mirror image - between 35 and 80 days height, volume, and cell turnover
   all fall together - so the system is asymmetric, and only acceleration isolates shape as the lever. What
   sets the aspect ratio is unknown. The cell is a pressurised object inside a constraining pericellular
-  matrix and a lattice of longitudinal septa, so an anisotropic constraint could convert a fixed volume
-  increase into height rather than width, but no experiment has manipulated the constraint and measured
-  the resulting cell dimensions or bone length.'
+  matrix and a lattice of longitudinal septa, and that constraint is measurably anisotropic: the growth
+  plate is about ten times more compliant in the axial growth direction than in the transverse direction
+  (cohen1998), and the pericellular matrix immediately around the cell is softer (1.6 kPa) than the
+  interterritorial matrix beyond it (3.6 kPa, prein2016). A cell expanding inside that architecture goes
+  up rather than out without needing any active shaping machinery. What no experiment has done is
+  manipulate the anisotropy and measure the resulting cell dimensions and bone length, or test whether
+  the anisotropy ratio itself changes with growth rate - a static anisotropy explains how a cell could
+  be shaped, not why the shaping varies between a 21-day and a 35-day rat.'
 quantitative:
 - parameter: final terminal cell height during growth acceleration
   value: 31.2 -> 38.5
@@ -144,6 +149,22 @@ quantitative:
     the first time - but it is a radial measurement in the proliferative zone, and nobody has measured
     whether the constraint differs axially versus laterally, which is what would actually channel
     expansion into height.'
+- parameter: axial vs transverse compliance of growth plate matrix
+  value: ~10-fold more compliant axially
+  unit: ratio
+  conditions: bovine growth plate and chondroepiphysis, unconfined compression fitted with a transversely
+    isotropic biphasic model; axial = the longitudinal growth direction, transverse = radial. Permeability
+    is of similar range in both directions but more variable axially, and the transverse Poisson's ratio
+    is 2-3x the out-of-plane ratio
+  species: bovine
+  source_ref: cohen1998
+  uncertainty: 'THE MECHANICAL ARCHITECTURE THE SHAPE HYPOTHESIS REQUIRES, AND IT WAS ALREADY MEASURED.
+    A cell whose surrounding matrix resists lateral expansion roughly ten times more than axial expansion
+    will convert a volume increase into HEIGHT rather than WIDTH with no active machinery at all. This
+    atlas stated in docs/target_screen_round1.md rounds 5 and 6 that nobody had measured axial versus
+    lateral anisotropy; that was wrong. Located via villemure2009 used as an index, which is what reviews
+    are for. What remains genuinely unmeasured is whether the ratio CHANGES with growth rate - a static
+    anisotropy explains how a cell could be shaped, not why the shaping varies.'
 - parameter: human terminal cell height and diameter
   value: not measured together
   unit: none
@@ -166,6 +187,7 @@ species_basis:
 - mouse
 - bovine
 - rabbit
+- porcine
 translation_risk: high
 translation_risk_reason: A single unreplicated rat study is the whole evidential basis. The human plate
   differs from rat in cycle time by roughly an order of magnitude and carries a large inert zone rat lacks,
@@ -180,6 +202,13 @@ key_refs:
   one_line_finding: A 20% rise in rat growth rate is carried by a 23% rise in terminal cell height with
     diameter falling 14% and volume falling 13%; matrix per cell, turnover and hypertrophic-phase duration
     unchanged.
+- ref_id: cohen1998
+  pmid: '10412420'
+  first_author: Cohen B
+  year: 1998
+  type: primary
+  one_line_finding: Growth plate is about ten times more compliant in the axial (growth) direction than
+    in the transverse direction, by transversely isotropic biphasic modelling of unconfined compression.
 - ref_id: stokes2007
   pmid: '17532281'
   first_author: Stokes IA

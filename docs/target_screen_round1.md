@@ -748,3 +748,85 @@ axial-to-lateral stiffness ratio of the constraint around a terminal hypertrophi
 chondrocyte, or that biases its volume increase along the growth axis.** No compound in
 the atlas's L12 layer acts on either, and `g_l1arch_016` records the experiment that would
 test it.
+
+---
+
+# ROUND 7 — the anisotropy was already measured, and I said it wasn't
+
+## The correction
+
+Rounds 5 and 6 of this document state that nobody has measured whether the constraint
+around a hypertrophic chondrocyte differs axially versus laterally, and call that the
+decisive gap. **That is wrong.** It was measured in 1998.
+
+`villemure2009`, a survey of growth plate mechanics, used as an **index** rather than a
+source — which is what this atlas's source policy says reviews are for — points to:
+
+> **The growth plate is about ten times more compliant in the axial (longitudinal growth)
+> direction than in its transverse (radial) direction** — `cohen1998` (PMID 10412420),
+> transversely isotropic biphasic model of unconfined compression; corroborated by
+> `sergerie2009`.
+
+Permeability is similar in both directions; the transverse Poisson's ratio is 2–3× the
+out-of-plane ratio.
+
+I could have found this at any point by asking the field's own review what had been
+measured, instead of asking whether the *graph* contained it. The graph's silence was
+taken for the literature's silence. That is the same error as round 1's "look where the
+light is," one level up.
+
+## What it does to the hypothesis — it strengthens it, and simplifies it
+
+The shape result needed a mechanism, and the mechanism is now three measured facts that
+fit together:
+
+| | |
+|---|---|
+| matrix is **~10× more compliant axially** than transversely | `cohen1998` |
+| pericellular matrix **1.6 kPa** inside interterritorial **3.6 kPa** | `prein2016` |
+| terminal cell gets **taller (+23 %) and narrower (−14 %) at −13 % volume** during a +20 % growth acceleration | `hunziker1989` |
+
+**A cell expanding inside a matrix that resists lateral expansion ten times more than
+axial expansion goes up rather than out, with no active shaping machinery required.**
+Hunziker's "phenotype modulation" may not be a cellular program at all — it may be what a
+pressurised object does inside an anisotropic shell.
+
+That is a *simpler* hypothesis than a shape-control pathway, and it is more tractable:
+the lever is the **matrix**, not a receptor.
+
+## What is still genuinely missing, stated correctly this time
+
+A **static** anisotropy explains how a cell could be shaped. It does not explain why the
+shaping *varies* — why a 35-day rat's terminal cells are 23 % taller than a 21-day rat's.
+That requires the anisotropy ratio itself, or the cell's expansion pressure, to change
+with growth rate.
+
+> **Nobody has measured whether the axial/transverse anisotropy ratio changes with growth
+> rate, age, or load.** `cohen1998` and `sergerie2009` each characterise the tissue at one
+> state.
+
+That is the gap, and it is narrower and more answerable than the one I wrote in round 5.
+
+## Consequences for the compound question
+
+If the anisotropy is the lever, the target class changes again — away from receptors and
+toward the matrix that sets the ratio:
+
+- collagen fibril orientation and crosslinking in the longitudinal septa (LOX, LOXL)
+- proteoglycan content and fixed charge density, which sets swelling pressure
+- MMP/aggrecanase remodelling of the septa specifically
+- anything that changes tissue hydration or osmotic pressure
+
+None of these is in the atlas's L12 layer, and all of them are systemic-toxicity-prone.
+But the target is now a **material property**, which is a different and more measurable
+thing than a signalling node.
+
+## Ask
+
+| want | why | status |
+|---|---|---|
+| **PMID 10412420** — Cohen, Lai & Mow 1998 | the source of the 10× figure. I have it only through a review. | not obtained |
+| **PMID 19185303** — Sergerie 2009 | already queued for Table 2 (absolute moduli per zone); now also the corroboration of the anisotropy | not obtained |
+| **PMID 8132746** — Hunziker 1994 full text | PMC deposit is abstract-only. The tables carry cell height and volume per treatment group — the only drug × shape numbers that exist | not obtained |
+| **PMID 17532281** — Stokes 2007 full text | PMC deposit is abstract-only. Per-species cell height tables | not obtained |
+| ~~PMID 3543020~~ Hunziker 1987 | **dropped.** Stokes 2007 replicates the ranking independently, so the 1987 method paper is no longer load-bearing | unobtainable |
