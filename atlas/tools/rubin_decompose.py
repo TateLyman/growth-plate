@@ -348,8 +348,13 @@ def main():
     print(f"\n  zone windows: RZ = bins 0-{a.bins//4-1} ({int(rz_m.sum())} cells, "
           f"P-D 0.00-{(a.bins//4)/a.bins:.2f}); HZ = bins {b_lo}-{b_hi} "
           f"({int(hz_m.sum())} cells, P-D {b_lo/a.bins:.2f}-{(b_hi+1)/a.bins:.2f})")
-    print(f"  mean alignment |cos| : RZ {align[rz_m].mean():.3f}  HZ {align[hz_m].mean():.3f}"
-          f"   (0.500 is the value for uniformly random axes in 3D)")
+    # Alignment of ALL THREE axes, not just the long one. Which axis points along the bone is
+    # the mechanistically interesting question and it is not the one the long axis answers.
+    al3 = np.abs(uz_p)                                     # (N, 3) |cos| for PC1, PC2, PC3
+    print("  mean |cos| with the P-D axis   (0.500 = uniformly random axes in 3D)")
+    for k in range(3):
+        nm = ("PC1 long", "PC2 medium", "PC3 short")[k]
+        print(f"    {nm:12s}  RZ {al3[rz_m, k].mean():.3f}   HZ {al3[hz_m, k].mean():.3f}")
 
     def ext(radii, axes):
         uz = np.einsum("nij,j->ni", axes, zaxis)
@@ -378,6 +383,50 @@ def main():
     print(f"\n    share of the log rise from ELONGATION   {sh_pct:6.1f} %")
     print(f"    share from REALIGNMENT                 {or_pct:6.1f} %")
     print(f"    share from their interaction           {100-sh_pct-or_pct:6.1f} %")
+
+    # ---- per-cell allometry: the binned test above, done properly -----------------------
+    # Forty binned means can look isometric while individual cells are not. The per-cell
+    # regression log(axis length) ~ log(volume) has slope exactly 1/3 for every axis under
+    # isometric scaling; any axis that departs is where the shape change lives. This is also
+    # the test that can falsify the round-14 claim, which is why it is here.
+    def ols(x, y):
+        x = np.asarray(x, float); y = np.asarray(y, float)
+        m = np.isfinite(x) & np.isfinite(y)
+        x, y = x[m], y[m]
+        b = np.polyfit(x, y, 1)
+        r = np.corrcoef(x, y)[0, 1]
+        return b[0], r ** 2, len(x)
+
+    print(f"\n  PER-CELL ALLOMETRY  log(length) ~ log(volume);  isometry predicts slope = "
+          f"{1/3:.3f}")
+    for label, m in (("all cells", np.ones(N, bool)), ("resting window", rz_m),
+                     ("hypertrophic window", hz_m)):
+        lv = np.log(vol[m])
+        parts = []
+        for k in range(3):
+            sl, r2, n = ols(lv, np.log(pcr[k, m]))
+            parts.append(f"PC{k+1} {sl:6.3f} (R2 {r2:.2f})")
+        sl_a, r2_a, n = ols(lv, np.log(axial[m]))
+        print(f"    {label:22s} n={n:6d}   " + "  ".join(parts))
+        print(f"    {'':22s}            axial extent {sl_a:6.3f} (R2 {r2_a:.2f})")
+
+    # ---- are height and volume one variable or two? -------------------------------------
+    # If enlargement is isometric then axial extent is volume^(1/3) times a constant, and a
+    # predictor comparison between them is a comparison between two views of one quantity.
+    # What is left of axial extent once volume is accounted for is the part that could carry
+    # independent information - so it is worth asking what that residual is made of.
+    lv_hz = np.log(vol[hz_m])
+    la_hz = np.log(axial[hz_m])
+    sl, r2_vol, _ = ols(lv_hz, la_hz)
+    resid = la_hz - np.polyval(np.polyfit(lv_hz, la_hz, 1), lv_hz)
+    r_align = np.corrcoef(resid, align[hz_m])[0, 1]
+    r_L1 = np.corrcoef(resid, np.log(pcr[0, hz_m]))[0, 1]
+    print(f"\n  WITHIN THE HYPERTROPHIC WINDOW (n={int(hz_m.sum())})")
+    print(f"    variance of log axial extent explained by log volume alone : {r2_vol*100:5.1f} %")
+    print(f"    what is left correlates with ALIGNMENT at r                = {r_align:+.3f} "
+          f"({r_align**2*100:.1f} % of the residual)")
+    print(f"    what is left correlates with INTRINSIC LENGTH at r         = {r_L1:+.3f} "
+          f"({r_L1**2*100:.1f} % of the residual)")
 
     # ---- is the enlargement isotropic? -------------------------------------------------
     # If the cell scales by the same factor on all three axes, then volume^(1/3) and the long
@@ -429,6 +478,19 @@ def main():
                             "zones while holding each cell's own radii fixed.",
         "axis_length_folds": [round(float(x), 4) for x in f_L],
         "cube_root_volume_fold": round(float(f_vol ** (1 / 3)), 4),
+        "per_cell_allometry_hz": {
+            "slope_pc1": round(float(ols(np.log(vol[hz_m]), np.log(pcr[0, hz_m]))[0]), 4),
+            "slope_pc2": round(float(ols(np.log(vol[hz_m]), np.log(pcr[1, hz_m]))[0]), 4),
+            "slope_pc3": round(float(ols(np.log(vol[hz_m]), np.log(pcr[2, hz_m]))[0]), 4),
+            "slope_axial_extent": round(float(sl), 4),
+            "isometric_prediction": round(1 / 3, 4),
+            "r2_axial_on_volume": round(float(r2_vol), 4),
+            "residual_r_with_alignment": round(float(r_align), 4),
+            "residual_r_with_intrinsic_length": round(float(r_L1), 4)},
+        "axis_alignment_with_pd": {
+            "rz": [round(float(al3[rz_m, k].mean()), 4) for k in range(3)],
+            "hz": [round(float(al3[hz_m, k].mean()), 4) for k in range(3)],
+            "note": "order is PC1 long, PC2 medium, PC3 short; 0.500 is the uniformly random value"},
         "SCOPE": "ONE growth plate - distal ulna DU_S84_m3_wt, the only sample in the "
                  "rubin2021 Figshare deposit. This is a WITHIN-plate decomposition along the "
                  "differentiation axis. It is NOT the three-plate predictor comparison that "

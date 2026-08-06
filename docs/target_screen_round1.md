@@ -1521,3 +1521,85 @@ someone answering an email.
 | between-plate comparison | blocked on data that exists but is not public |
 | `hunziker1989`'s own axis, in 3D | **possibly already imaged**, in the 2024 deposits |
 | `terminal_cell_shape_modulation` | still **D** |
+
+---
+
+# Round 16 — the per-cell test corrects me again, and finds the better question
+
+Round 14 rested on forty binned means. Forty means can look isometric while the cells inside
+them are not, so I ran the test that could falsify it: per-cell regression of log axis length
+on log volume, where isometry predicts a slope of exactly **1/3**.
+
+## Corroborated — and no longer one plate
+
+| window | PC1 | PC2 | PC3 | axial extent |
+|---|---|---|---|---|
+| all 29,162 cells | 0.345 | 0.373 | 0.351 | 0.311 |
+| resting (n=1,841) | 0.374 | 0.356 | 0.339 | 0.280 |
+| hypertrophic (n=456) | 0.341 | 0.352 | **0.421** | 0.326 |
+
+Isometry survives per cell. And `rubin2021`'s own Fig. 3 reaches it by a different statistic
+on **all three plates** — HZ growth isometric in PT (slope 0, p = 0.937), DT (0, p = 0.903),
+DU (0.01, p = 0.301). That half of round 14 is replicated by the authors themselves.
+
+## Corrected — round 14's consequence was too strong
+
+I wrote that if enlargement is isometric, height and volume are not independent variables.
+Within the HZ, **log volume explains only 43.2 % of the variance in log axial extent.** At the
+level of single cells they are plainly two variables. The claim holds only for zone means —
+which happens to be the level `rubin2021`'s comparison operates at, so the argument survives
+where it was aimed and fails where I stated it.
+
+## And the residual is orientation
+
+What volume leaves unexplained in the HZ:
+
+- correlates with **alignment at r = +0.664** — 44 % of the residual
+- correlates with intrinsic length at r = +0.076 — 0.6 %
+
+> **The orientation confound is weak between zones and dominant between cells.** Round 14 asked
+> whether realignment drives the *rise in the mean* — it does not, alignment is flat. This asks
+> what makes one hypertrophic cell's axial extent differ from another's — and after volume,
+> almost all of it is orientation.
+
+Which means whether the confound contaminates the between-plate comparison turns entirely on
+**whether mean alignment differs between plates** — a number nobody has reported and which the
+public deposit cannot give, because it holds only the distal ulna. The email is better
+motivated now than when it was sent.
+
+## The finding I did not expect
+
+| axis | resting | hypertrophic |
+|---|---|---|
+| PC1 long | 0.322 | 0.384 |
+| PC2 medium | 0.490 | 0.472 |
+| **PC3 short** | **0.660** | **0.625** |
+
+**The short axis is the one that points along the bone** — in both zones, against 0.500 for
+random. The chondrocyte is a disc lying in the plane of the plate whose *thin* direction is
+the growth direction, and longitudinal growth comes from that thin axis thickening — at slope
+**0.421**, faster than isometry, as the cell enlarges.
+
+So the quantity this entire literature calls **"hypertrophic cell height" is the extent along
+the cell's shortest principal axis**, not its longest.
+
+With one caveat that is itself a new question. This is embryonic mouse (E16.5) distal ulna.
+`hunziker1989`'s postnatal rat terminal cell is **38.5 µm tall against 25.6 µm wide** — taller
+than wide, which would put the *long* axis up the bone. Different species, different age, and
+`rubin2021`'s terminal bins are too sparse to compare. Not a contradiction:
+
+> **Nobody has measured whether, or where, the terminal chondrocyte turns its long axis up the
+> bone.** If it does, that is the shape modulation Hunziker described, and it happens somewhere
+> between an embryonic mouse ulna and a 35-day rat tibia.
+
+## Standing after sixteen rounds
+
+| | |
+|---|---|
+| isometry, per cell and across three plates | **corroborated** |
+| height and volume as one variable | **true for zone means, false per cell** |
+| orientation confound | **weak between zones, dominant between cells** |
+| between-plate mean alignment | the pivotal number — **never reported** |
+| which axis points along the bone | **the short one**, in embryonic mouse |
+| does the terminal cell ever stand up? | **unmeasured in any species** |
+| `terminal_cell_shape_modulation` | still **D** |
