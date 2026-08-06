@@ -1,0 +1,50 @@
+{
+ "question": "Is there a GLI1+/PDGFRA+ Hedgehog-responsive population adjacent to the human resting zone?",
+ "verdict": "NOT ANSWERABLE from any public human growth plate spatial dataset. Hedgehog pathway activity is below the detection floor.",
+ "instruments_tried": [
+  {
+   "instrument": "dissociated scRNA-seq, GSE288028, 4 donors",
+   "outcome": "failed pre-declared THY1 stromal-gate guard on both runs; ambient COL2A1 in a ~95% chondrocyte biopsy makes a NOT-COL2A1 gate select low-RNA cells",
+   "reported": false
+  },
+  {
+   "instrument": "Visium HD bin2cell, avijgan2026br, 1 section, 2787 cells",
+   "outcome": "failed GLI1/PTCH1 coherence guard at rho=-1.00; GLI1 had 21 counts in the whole section in 6 of 2787 cells; median depth 82 counts/cell",
+   "reported": false
+  },
+  {
+   "instrument": "standard Visium, avijgan2026br, 14 sections, 8450 spots",
+   "outcome": "failed detection-floor guard; only 1 of 4 Hedgehog targets above 100 pooled counts",
+   "reported": false
+  }
+ ],
+ "visium_pooled_counts_across_14_sections": {
+  "PTCH1": 45,
+  "GLI1": 60,
+  "HHIP": 101,
+  "PTCH2": 20,
+  "PDGFRA": 275,
+  "PRRX1": 291,
+  "PDGFRB": 296,
+  "SFRP5": 211,
+  "ACTB": 2322,
+  "COL1A1": 311232,
+  "COL2A1": 201138,
+  "COL10A1": 9444,
+  "ACAN": 4548
+ },
+ "spots_by_area": {
+  "RZ": 4068,
+  "SOC": 2066,
+  "PZ": 1584,
+  "HZ": 732
+ },
+ "median_counts_per_spot": 95,
+ "why": "RRST on RNA-poor mineralised tissue. The top-expressed genes are all cartilage and bone collagens (COL1A1 62k, COL2A1 47k in the deepest section), so the tissue and annotations are correct - the libraries are simply shallow, and Hedgehog components are low expressors.",
+ "design_error_found": "GAPDH and RPL13A were chosen as housekeeping negative controls and are NOT IN THIS PANEL, so their zero counts were an artefact of the gene list rather than of expression. ACTB and B2M are in the panel and should have been used.",
+ "what_would_answer_it": [
+  "chu2026's own cell-type cluster assignments for GSE288028. In their 10x scRNA-seq GLI1 IS detectable (3.0-8.1% of cells across all four donors) - the failure there was the stromal GATE, not detection. The authors resolved T cells, myeloid, NK, plasma, B, endothelial, vascular smooth muscle and an MSC/osteoblast cluster; those labels are not in the GEO deposit.",
+  "Alternatively, unsupervised clustering of GSE288028 to recover those populations independently.",
+  "Or a deeper spatial platform on growth plate tissue - Xenium or single-cell resolution ISS with a targeted Hedgehog panel."
+ ]
+}

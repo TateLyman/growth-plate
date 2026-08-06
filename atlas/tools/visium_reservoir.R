@@ -1,42 +1,40 @@
-# Read avijgan2026br's Visium sections and pseudobulk the Hedgehog/stromal panel
-# by annotated area. Standard Visium spots carry far more depth than the
-# bin2cell-segmented Visium HD object, in which GLI1 had 21 counts in an entire
-# section and the analysis was refused.
-#
-# This script only EXPORTS. All guards and all interpretation stay in Python so
-# that the pre-registered checks are applied in one place.
-suppressWarnings(suppressMessages({ ok <- require(Seurat, quietly=TRUE) }))
+# Export avijgan2026br's Visium sections. Uses DIRECT SLOT ACCESS, not Seurat
+# functions: SeuratObject alone can hold the object, and GetAssayData lives in
+# Seurat, which is a much heavier dependency and is not needed to read counts.
+suppressWarnings(suppressMessages(library(SeuratObject)))
 args <- commandArgs(trailingOnly=TRUE)
-outdir <- if (length(args)>1) args[2] else "visium_export"
+indir  <- args[1]; outdir <- if (length(args)>1) args[2] else "visium_export"
 dir.create(outdir, showWarnings=FALSE)
-files <- list.files(args[1], pattern="\\.rds$", full.names=TRUE)
+files <- list.files(indir, pattern="\\.rds$", full.names=TRUE)
 cat("sections found:", length(files), "\n")
 for (f in files) {
   nm <- tools::file_path_sans_ext(basename(f))
-  o <- tryCatch(readRDS(f), error=function(e){cat("  FAIL", nm, conditionMessage(e), "\n"); NULL})
+  o <- tryCatch(readRDS(f), error=function(e){cat(" FAIL",nm,conditionMessage(e),"\n"); NULL})
   if (is.null(o)) next
-  cat("\n===", nm, "| class:", class(o)[1], "\n")
-  if (inherits(o, "Seurat")) {
-    cat("  assays:", paste(names(o@assays), collapse=", "), "\n")
-    cat("  meta cols:", paste(colnames(o@meta.data), collapse=", "), "\n")
-    cat("  n spots:", ncol(o), " n features:", nrow(o), "\n")
-    for (cc in colnames(o@meta.data)) {
-      v <- o@meta.data[[cc]]
-      if ((is.factor(v) || is.character(v)) && length(unique(v)) <= 12) {
-        cat("   ", cc, ":", paste(names(table(v)), table(v), sep="=", collapse=" "), "\n")
-      }
-    }
-    a <- names(o@assays)[1]
-    m <- tryCatch(Seurat::GetAssayData(o, assay=a, layer="counts"), error=function(e) NULL)
-    if (is.null(m)) m <- tryCatch(Seurat::GetAssayData(o, assay=a, slot="counts"), error=function(e) NULL)
-    if (!is.null(m)) {
-      write.csv(as.matrix(o@meta.data), file.path(outdir, paste0(nm,".meta.csv")))
-      Matrix::writeMM(m, file.path(outdir, paste0(nm,".counts.mtx")))
-      write.csv(rownames(m), file.path(outdir, paste0(nm,".genes.csv")), row.names=FALSE)
-      write.csv(colnames(m), file.path(outdir, paste0(nm,".spots.csv")), row.names=FALSE)
-      cat("  exported counts", nrow(m), "x", ncol(m), "\n")
-    }
-  } else {
-    cat("  not a Seurat object; names:", paste(utils::head(names(o),20), collapse=", "), "\n")
+  md <- o@meta.data
+  a  <- o@assays[["Spatial"]]
+  if (is.null(a)) a <- o@assays[[1]]
+  m <- NULL
+  if (.hasSlot(a,"counts")) m <- a@counts
+  if ((is.null(m) || !length(m)) && .hasSlot(a,"layers")) {
+    L <- a@layers; k <- grep("^counts", names(L), value=TRUE)
+    if (length(k)) m <- L[[k[1]]]
   }
+  if (is.null(m) || !length(m)) { cat(" ",nm,"no counts found\n"); next }
+  gn <- if (.hasSlot(a,"features")) rownames(a@features) else rownames(m)
+  cn <- if (.hasSlot(a,"cells")) rownames(a@cells) else colnames(m)
+  if (is.null(gn)) gn <- rownames(m); if (is.null(cn)) cn <- colnames(m)
+  # spot coordinates, if an image is attached
+  coords <- NULL
+  if (length(o@images)) {
+    im <- o@images[[1]]
+    if (.hasSlot(im,"coordinates")) coords <- im@coordinates
+  }
+  write.csv(md, file.path(outdir,paste0(nm,".meta.csv")))
+  Matrix::writeMM(m, file.path(outdir,paste0(nm,".counts.mtx")))
+  write.csv(data.frame(x=gn), file.path(outdir,paste0(nm,".genes.csv")), row.names=FALSE)
+  write.csv(data.frame(x=cn), file.path(outdir,paste0(nm,".spots.csv")), row.names=FALSE)
+  if (!is.null(coords)) write.csv(coords, file.path(outdir,paste0(nm,".coords.csv")))
+  areas <- if ("area" %in% colnames(md)) paste(names(table(md$area)), table(md$area), sep="=", collapse=" ") else "no area column"
+  cat(sprintf("  %-22s %6d spots x %5d genes | %s\n", nm, ncol(m), nrow(m), areas))
 }

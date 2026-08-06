@@ -1652,3 +1652,48 @@ be selected for specificity to the contrast, not for familiarity.
 - The screen is committed as-is, failing, with its header documenting both runs.
 - The question moves to the instrument that measures adjacency directly: `avijgan2026br`'s Visium
   and Visium HD data, obtained from the authors' public repository.
+
+---
+
+## CORR-019 — 2026-08-06 — three instruments, three refusals, and the question is not answerable from public data
+
+**The question.** Step 1 of the clock programme: does a GLI1+/PDGFRA+ Hedgehog-responsive
+population sit adjacent to the **human** resting zone, as `qu2025` shows in mouse? I said this
+was answerable from published data at zero cost. **It is not**, and here is the accounting.
+
+| instrument | scale | outcome |
+|---|---|---|
+| dissociated scRNA-seq (GSE288028) | 4 donors | THY1 stromal-gate guard failed **twice** — CORR-018 |
+| Visium HD, bin2cell (`avijgan2026br`) | 2,787 cells, 1 section | GLI1/PTCH1 coherence rho = **−1.00**; **GLI1 = 21 counts in the whole section** |
+| standard Visium (`avijgan2026br`) | **8,450 spots, 14 sections** | detection-floor guard failed: **1 of 4** Hedgehog targets above 100 pooled counts |
+
+**Pooled counts across all 14 Visium sections:** PTCH1 **45**, GLI1 **60**, PTCH2 **20**, HHIP
+101. Against COL1A1 311,232 and COL2A1 201,138 in the same matrices.
+
+**The tissue is right and the annotations are sound.** Every spot is labelled RZ/PZ/HZ/SOC
+(4,068 / 1,584 / 732 / 2,066), and the top-expressed genes are all cartilage and bone collagens.
+**The libraries are simply shallow** — median 95 counts per spot — because RRST on mineralised,
+RNA-poor tissue is what it is. Hedgehog components are low expressors and fall under the floor.
+
+### A design error found in my own guard
+
+**GAPDH and RPL13A were chosen as housekeeping negative controls and are NOT IN THIS GENE PANEL.**
+Their zero counts were an artefact of the feature list, not of expression. ACTB (2,322 counts) and
+B2M are in the panel and should have been used. **Verifying a control gene is present before
+trusting its absence** is now a standing check — the same class of error as CORR-016 and CORR-017,
+at the level of a single gene.
+
+### What this does and does not mean
+
+It does **not** refute the reservoir hypothesis. It says the three public human datasets cannot
+test it. That is a statement about instruments, and it is worth more than a forced answer.
+
+### What would answer it
+
+1. **`chu2026`'s own cell-type cluster labels for GSE288028.** In their 10x scRNA-seq **GLI1 *is*
+   detectable — 3.0%, 3.7%, 8.1%, 6.8% of cells across all four donors.** Detection was never the
+   problem there; my stromal *gate* was. The authors resolved T-cell, myeloid, NK, plasma, B,
+   endothelial, vascular smooth muscle and **MSC/osteoblast** clusters, and those labels are not in
+   the GEO deposit. **This is a request to the authors, not an experiment.**
+2. Failing that, unsupervised clustering of GSE288028 to recover those populations independently.
+3. Or a deeper spatial platform — Xenium, or ISS with a targeted Hedgehog panel — on growth plate.
