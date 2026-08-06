@@ -464,3 +464,95 @@ in a mouse has repeatedly failed to move length, or has never been checked. Unti
 compound is shown to change a growth-plate variable *and* the resulting bone length in
 the same animal, every row this screen produces is an arithmetic prediction about a
 system that has not been shown to behave arithmetically.
+
+---
+
+# ROUND 4 — `hunziker1989` reframes the objective, and `glasson2005` kills the last strong row
+
+## 1. ADAMTS5 — withdrawn
+
+`glasson2005`, on the knockout, in its own words:
+
+> *"There were **no abnormalities in total body weight** ... or histological appearance of
+> **any tissue examined**, indicating that **ADAMTS5 enzyme activity is not critical for
+> normal development and growth**."*
+
+Femur and sternum were among the tissues examined, and proximal tibial growth plates were
+analysed specifically. An ADAMTS5 inhibitor is predicted to do nothing to height.
+**Five of seven rows are now gone.** Standing: NOTCH1/2 and LEPR, both grade C, neither
+with a human stature association.
+
+## 2. `hunziker1989` — the screen was optimising the wrong objective
+
+Rat proximal tibia, n = 6 per age, stereology + fluorochrome labelling + ³H-thymidine
+autoradiography. **Table 4, recovered in full:**
+
+| parameter | 21→35 d (**+20 % growth**) | 35→80 d (**−75 % growth**) |
+|---|---:|---:|
+| **final cell HEIGHT** | **+23 %** | −53 % |
+| final lateral diameter | **−14 %** | +13 % |
+| **final cell VOLUME** | **−13 %** | −56 % |
+| matrix volume per cell | **0** | **0** |
+| cell cycle time | −33 % | 0 |
+| **cells produced per column per day** | **0** | −50 % |
+| columnar growth fraction | −33 % | −50 % |
+| duration of hypertrophic activity | **0** | **0** |
+
+Height 31.2 → 38.5 µm (P < 0.02); diameter 29.9 → 25.6 µm (P < 0.03); volume −13 %
+(P < 0.03).
+
+### Three consequences, in ascending order of importance
+
+**(a) Volume is not the causal variable — height is, and they move in opposite
+directions.** Growth rate rises 20 % while terminal cell *volume falls 13 %*. The field's
+central quantitative claim — final hypertrophic **volume** is the strongest correlate of
+elongation rate (`breur1991` r = 0.98, `cooper2013`) — is a *between-plate* correlation.
+*Within* a plate across ages, volume and height dissociate and **only height tracks
+growth**. My rewrite of `g_l1arch_009` to prioritise obtaining a human *volume* was
+therefore aimed at the wrong quantity; the human **height** contradiction (33 vs 20.5 µm,
+C-L1-07) is the one that matters.
+
+**(b) `N_p` and `T_c` are not independent — they cancel.** Cycle time falls 33 % (81 → 54 h)
+and the columnar growth fraction falls 33 % (27 → 18 cells), so **cells produced per
+column per day is unchanged**. The only data that exist on their joint behaviour say they
+are anticorrelated with a conserved ratio. **`flow_model.py` samples them independently**,
+which inflates the uncertainty of their product and is why `T_c` scores 80 %. That
+ranking is an artefact of an independence assumption this paper contradicts.
+
+**(c) The pharmacological objective is a SHAPE change, not a size change.** Physiological
+acceleration makes the terminal chondrocyte **taller and narrower at constant-or-lower
+volume**. Hunziker's term is *phenotype modulation*. The entire CNP/FGFR3 therapeutic
+programme targets hypertrophic **enlargement**. **Nothing in the atlas's L12 layer targets
+cell shape**, and the machinery that sets a chondrocyte's aspect ratio — cytoskeleton,
+cell-volume regulation, the pericellular matrix that constrains lateral expansion — is
+where the screen should have been pointed.
+
+That is a different target class from anything round 1 produced, and it follows directly
+from the one paper that measured which variable actually carries a physiological change
+in growth rate.
+
+## 3. Also entered
+
+- **hypertrophic phase duration is an invariant**: 51 / 45 / 48 h across a four-fold
+  range of growth rate (CE 4.1–8.7 %). About two days, regardless.
+- **matrix per cell is unchanged in BOTH directions**, so matrix synthesis is a large
+  *contributor* to elongation but not a *regulator* of it. The "matrix is an unmoved
+  lever" idea from round 1 §5 is withdrawn — it is unmoved because physiology does not
+  move it either.
+- `byers2000` is **human RIB**, not long bone. Proliferative and hypertrophic zone heights
+  fall with age, matrix volume fraction and septal thickness rise. Useful, but it is not
+  the distal-femur dimension set the flow model wanted, and is recorded as rib.
+
+## 4. Score after four rounds
+
+| round | candidates standing |
+|---|---|
+| 1 (graph screen) | 7 |
+| 2 (human genetics) | 5 — TRPV4, MAPK1 out |
+| 3 (three primaries) | 3 — TGFBR1, EGLN1 out |
+| 4 (`glasson2005`) | **2** — ADAMTS5 out |
+
+**Every removal came from a paper requested and read, not from re-reading what was
+already held.** Two rows survive on grade-C animal evidence alone, and the most useful
+output of the exercise is not a candidate at all — it is that `hunziker1989` says the
+objective function was wrong.

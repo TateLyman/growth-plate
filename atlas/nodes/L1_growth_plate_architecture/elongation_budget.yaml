@@ -106,6 +106,63 @@ quantitative:
     height includes the volume the cell already had on leaving the proliferative zone. It is also a
     LOWER bound on the axial-height share, because longitudinal septal matrix adds volume without adding
     axial length.'
+- parameter: partition of PHYSIOLOGICAL growth acceleration (21 to 35 days) among cell parameters
+  value: height +23, diameter -14, volume -13, matrix/cell 0, turnover 0, hyp duration 0
+  unit: '% change'
+  conditions: rat proximal tibia, suckling (21 d) to pre-pubertal growth spurt (35 d), n=6 per age;
+    growth rate +20%; stereology plus fluorochrome labelling plus 3H-thymidine autoradiography
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'THE SINGLE MOST DIRECT TEST OF WHICH VARIABLE CARRIES PHYSIOLOGICAL GROWTH CHANGE. A
+    20% rise in growth rate is accounted for almost entirely by a 23% rise in terminal cell HEIGHT
+    (31.2 -> 38.5 um, P<0.02) with a 14% FALL in lateral diameter (29.9 -> 25.6 um, P<0.03). Final cell
+    VOLUME FALLS 13% (P<0.03) while growth rises - so volume and height DISSOCIATE and only height
+    tracks growth rate. Matrix per cell, cell turnover per column and hypertrophic-phase duration are
+    all unchanged. Coefficients of error 3.7-14.3% between animals.'
+- parameter: cell cycle time and growth fraction move together and cancel
+  value: T_c -33, growth fraction -33, turnover 0
+  unit: '% change'
+  conditions: rat proximal tibia, 21 to 35 days; cycle time 81 -> 54 h, proliferating cells per column
+    27 -> 18
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'A 33% fall in cycle time is offset by a 33% fall in the columnar growth fraction, so
+    cells produced per column per day is UNCHANGED. The only data on the joint behaviour of N_p and
+    T_c say they are ANTICORRELATED and their ratio is conserved. Any model that samples them
+    independently overstates the uncertainty of their product - which is what flow_model.py does.'
+- parameter: partition of physiological growth deceleration (35 to 80 days)
+  value: height -53, diameter +13, volume -56, matrix/cell 0, turnover -50, growth fraction -50
+  unit: '% change'
+  conditions: rat proximal tibia, pre-pubertal (35 d) to mature (80 d); growth rate -75%
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'deceleration is NOT the mirror image of acceleration - here height AND volume AND
+    turnover all fall together, whereas acceleration moved height alone. Matrix per cell is again
+    unchanged, in both directions.'
+- parameter: duration of the hypertrophic activity phase
+  value: 45-51
+  unit: h
+  conditions: rat proximal tibia at 21, 35 and 80 days (51, 45, 48 h); unchanged across a 4-fold range
+    of growth rate
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'CE 4.1-8.7% between six animals. An invariant of the system: the terminal cell takes
+    about two days to do its work regardless of how fast the bone is growing.'
+- parameter: proliferative cells per column (columnar growth fraction)
+  value: 27, 18, 9
+  unit: cells
+  conditions: rat proximal tibia at 21, 35 and 80 days respectively
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: CE 6.3-13.1%, n=6 per age. Directly measured by 3H-thymidine autoradiography rather than
+    inferred from a rabbit ratio, which is how the human figure (24) is obtained.
+- parameter: cell cycle time of a proliferating chondrocyte
+  value: 81, 54, 54
+  unit: h
+  conditions: rat proximal tibia at 21, 35 and 80 days respectively
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: CE 9.5-14.3%, n=6 per age
 - parameter: range of elongation rates across the four plates compared
   value: 50-400
   unit: um/24 h
