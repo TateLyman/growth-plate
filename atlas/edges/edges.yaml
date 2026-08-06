@@ -18754,3 +18754,43 @@ edges:
   notes: Homocystinuria reaches the same axis chemically rather than genetically, which is why it shares long bone
     overgrowth, scoliosis and ectopia lentis with Marfan despite an unrelated primary defect.
   traversal_usable: true
+- edge_id: e01205
+  source: neprilysin_cnp_clearance
+  target: cnp_protein
+  relation: inhibits
+  sign: '-'
+  context: neprilysin is the endopeptidase that catalyses degradation of C-type natriuretic peptide; mouse, growth
+    plate and systemic, age/stage as reported in source
+  evidence_tier: T1
+  refs:
+  - hakata2024
+  confidence: B
+  notes: Established enzymology; the growth-relevant consequence is shown by inhibitor rescue.
+  traversal_usable: true
+- edge_id: e01206
+  source: neprilysin_cnp_clearance
+  target: growth_velocity_longitudinal
+  relation: inhibits
+  sign: '-'
+  context: wild-type C57BL/6 mice given the neprilysin inhibitor sacubitril show dose-dependent skeletal overgrowth,
+    only at 3-4 weeks of age; abolished by cartilage-specific NPR-B knockout
+  evidence_tier: T1
+  refs:
+  - hakata2024
+  confidence: C
+  notes: Inhibiting the enzyme INCREASES growth, so the enzyme restrains it. Effect size unread - abstract only. Conditional
+    on an age window whose human equivalent is unknown.
+  traversal_usable: true
+- edge_id: e01207
+  source: neprilysin_cnp_clearance
+  target: npr2_receptor
+  relation: inhibits
+  sign: '-'
+  context: by removing the ligand rather than the receptor; the sacubitril growth effect is abolished in cartilage-specific
+    NPR-B knockout mice
+  evidence_tier: T1
+  refs:
+  - hakata2024
+  confidence: C
+  notes: Ligand-side control of NPR2 signalling, parallel to NPR3-mediated clearance.
+  traversal_usable: true

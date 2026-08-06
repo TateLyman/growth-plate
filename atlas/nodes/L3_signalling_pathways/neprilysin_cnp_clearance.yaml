@@ -1,0 +1,125 @@
+id: neprilysin_cnp_clearance
+name: Neprilysin (MME) - enzymatic clearance of CNP
+aliases:
+- NEP
+- membrane metalloendopeptidase
+- MME
+- CD10
+- enkephalinase
+type: protein
+layer: L3
+stub: false
+summary: 'Neprilysin is the zinc metalloendopeptidase that DEGRADES C-type natriuretic peptide, and it is
+  the second of the two arms by which CNP is cleared - the other being receptor-mediated uptake by NPR3.
+  The atlas held NPR3 from the start and did not hold this one until 2026-08-06, which was a hole in the
+  most therapeutically advanced pathway in the field. It matters because inhibiting neprilysin raises
+  ENDOGENOUS CNP rather than infusing an analogue, and because the drug that does it is already approved
+  and already given to children. Sacubitril, the neprilysin inhibitor component of sacubitril/valsartan,
+  produces DOSE-DEPENDENT SKELETAL OVERGROWTH in wild-type mice, with thickening of BOTH the
+  hypertrophic and proliferative zones that mirrors what CNP administration does. The effect is
+  abolished by cartilage-specific knockout of NPR-B, which is a clean genetic epistasis test placing it
+  squarely on the CNP/NPR-B axis rather than on any of neprilysin''s many other substrates. It also
+  works on fetal tibial explants in organ culture, so it does not require an intact endocrine axis. The
+  finding carries one strong constraint and one strong caveat. The constraint is a WINDOW: sacubitril
+  promoted growth in mice only at 3 to 4 weeks of age, the period when endogenous CNP and neprilysin
+  expression were highest in lumbar vertebrae - so the effect is conditional on the substrate being
+  there to protect, and an agent that raises a peptide the tissue is not making will do nothing. The
+  caveat is that no bone-length or stature measurement exists in any human given sacubitril, at any age,
+  despite the drug being in paediatric use for heart failure. The authors end by calling for exactly
+  that investigation.'
+quantitative:
+- parameter: effect of neprilysin inhibition on skeletal growth
+  value: dose-dependent skeletal overgrowth
+  unit: qualitative, dose-dependent
+  conditions: sacubitril administered to wild-type C57BL/6 mice
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: 'The phenotype is overgrowth of the skeleton, dose-dependent, in a normal animal rather
+    than a disease model - which is the configuration this atlas has been looking for and had not found.
+    No absolute lengths are given in the abstract and the full text has not been obtained, so the
+    MAGNITUDE is unknown and nothing here should be quoted as an effect size.'
+- parameter: growth plate response to neprilysin inhibition
+  value: thickening of BOTH the hypertrophic and the proliferative zones
+  unit: qualitative histology
+  conditions: growth plate histology of sacubitril-treated wild-type mice, explicitly described as
+    mirroring the changes induced by CNP administration
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: 'A DUAL-ZONE EFFECT. In the flow model proliferative and hypertrophic contributions are
+    separate multiplicative terms, so an agent that thickens both is doing more than one thing. It also
+    matches what CNP itself does, which is the internal consistency check that the mechanism is the one
+    claimed.'
+- parameter: genetic test of the pathway
+  value: effect abolished by cartilage-specific NPR-B knockout
+  unit: qualitative epistasis
+  conditions: sacubitril given to mice lacking natriuretic peptide receptor B in cartilage
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: 'THE CLEANEST PART OF THE PAPER. Neprilysin degrades many peptides - natriuretic
+    peptides, enkephalins, substance P, bradykinin, amyloid beta - so an inhibitor could act through any
+    of them. Abolition by a CARTILAGE-SPECIFIC receptor knockout localises the effect to chondrocyte
+    NPR-B and excludes the rest.'
+- parameter: age window in which neprilysin inhibition works
+  value: 3 to 4 weeks of age only
+  unit: weeks, mouse
+  conditions: the period when endogenous CNP and neprilysin expression were highest in lumbar vertebrae;
+    no growth promotion outside this window
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: 'THE MOST IMPORTANT ROW FOR ANY TRANSLATION ATTEMPT AND THE EASIEST TO OVERLOOK. The
+    drug protects a peptide the tissue must already be making; where CNP and NEP expression are low it
+    has nothing to act on. Whether the human equivalent window is infancy, mid-childhood or the pubertal
+    growth spurt is UNKNOWN, and getting it wrong would produce a null that looks like a refuted
+    mechanism. Mouse 3-4 weeks is peri-pubertal and roughly the peak growth period, but mouse and human
+    growth plate timelines are not superimposable - the human plate closes, the mouse plate does not.'
+- parameter: independence from the endocrine axis
+  value: promotes endochondral growth in organ culture
+  unit: qualitative
+  conditions: tibial explants from fetal mice
+  species: mouse
+  source_ref: hakata2024
+  uncertainty: An isolated bone with no circulation, pituitary or liver still responds, so the mechanism
+    is local to the cartilage and does not require GH, IGF-1 or any systemic mediator.
+- parameter: human bone length or stature on a neprilysin inhibitor
+  value: never measured
+  unit: none
+  conditions: sacubitril is approved and in paediatric use as sacubitril/valsartan for heart failure,
+    including in children
+  species: human
+  source_ref: hakata2024
+  uncertainty: 'RECORDED AS AN ABSENCE, and it is the same absence as the losartan one but with a
+    cleaner mechanism behind it. The paper''s closing sentence calls for investigation in people with
+    short stature. No trial, registry or case series reporting height in sacubitril-treated children was
+    located by this atlas on 2026-08-06.'
+localization:
+- 'growth plate cartilage: expression highest in lumbar vertebrae at 3-4 weeks in mouse, coincident
+  with peak CNP'
+human_evidence: absent
+human_evidence_note: No human measurement of bone length, growth velocity or stature on a neprilysin
+  inhibitor exists at any age, despite paediatric approval of sacubitril/valsartan for heart failure.
+  The entire case is mouse, and the human relevance rests on the CNP/NPR-B pathway being the same one
+  that vosoritide targets in achondroplasia.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: One laboratory, one species, no magnitude available without the full text, and
+  an explicit age window whose human equivalent is unknown. Against that, the target pathway is the
+  best-validated growth pathway in human skeletal medicine.
+confidence: C
+confidence_note: 'C on abstract-only reading, 2026-08-06. The design is strong - dose-dependence, a
+  cartilage-specific receptor knockout that abolishes the effect, an organ-culture replication and a
+  declared age window - but no effect size has been read, and CORR-012 exists in this atlas precisely
+  because a sign was once inverted on abstract evidence. Grade will be revisited when the full text is
+  read; it should not rise above C until then, and no number from this node should enter a model.'
+key_refs:
+- ref_id: hakata2024
+  pmid: '38752331'
+  first_author: Hakata T
+  year: 2024
+  type: primary
+  one_line_finding: Sacubitril, an approved neprilysin inhibitor, causes dose-dependent skeletal
+    overgrowth in wild-type mice with thickening of both proliferative and hypertrophic zones, abolished
+    by cartilage-specific NPR-B knockout, and only at 3-4 weeks of age.
+open_questions:
+- g_l3_neprilysin_window
+last_verified: '2026-08-06'

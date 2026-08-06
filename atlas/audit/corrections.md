@@ -1310,3 +1310,67 @@ correction said to do.
 The operational rule this adds: **a correction written from an abstract must not change a
 grade or invert a sign.** It may record that a paper exists and must be read. CORR-011 Part 2
 inverted a sign on abstract evidence and was wrong within hours.
+
+---
+
+## CORR-013 — a sweep saw the best lead in the atlas and filtered it out as off-target
+
+**Found**: 2026-08-06, only because the user pushed back on a claim I had just made. I had
+written that the losartan × bone-length experiment does not exist and closed the question. It
+does not exist — five targeted searches confirmed that. But running them surfaced something
+the atlas should already have held.
+
+### What was missed
+
+`hakata2024` (*Endocrinology* 165:bqae058): **sacubitril**, the approved neprilysin inhibitor,
+produces **dose-dependent skeletal overgrowth in wild-type mice**, with thickening of both the
+proliferative and hypertrophic zones, abolished by cartilage-specific NPR-B knockout, working
+in fetal tibial organ culture, and confined to a 3–4 week age window when endogenous CNP and
+neprilysin expression peak.
+
+Before today the atlas had **622 nodes**, held `npr3_clearance_receptor` — the *other* CNP
+clearance arm — from the beginning, and contained the word *sacubitril* **zero times**.
+
+### Where it was seen and discarded
+
+`atlas/gaps/shards/paralog.search.yaml`, gap `g_para_004`. A sweep screening 25 records for
+**NPR1/GC-A localisation in growth plate** wrote its own rejection note:
+
+> *"Every skeletal hit concerns NPR2/GC-B — NPR2 variant functional analyses, CNP therapeutic
+> rationale, **neprilysin inhibition acting via CNP/NPR-B**, the CNP/TRPM7 Ca²⁺ entry
+> mechanism — or is non-skeletal."*
+
+The sweep saw it, named it correctly, and discarded it **because it did not match the query**.
+The filter was working exactly as designed. The design was the defect: a screen built to
+answer one question threw away the answer to a better one, and recorded the discard in a
+sentence nobody re-read.
+
+### The pattern this completes
+
+This is the third instance of one failure mode in this atlas, each at a different level:
+
+| | what was excluded | by what |
+|---|---|---|
+| CORR-011 | a measurement that existed | *"no measurement was located"* read as *"none exists"* |
+| round 17 | 14 of 45 screen hits | a **classification** stated as if it were evidence |
+| **CORR-013** | the strongest pharmacological lead found | a **query filter** doing its job |
+
+In all three the machinery behaved correctly and the loss happened at the boundary between
+what was asked and what was found. **A negative result from a filter is a statement about the
+filter.** The atlas records `reason_none_qualified` for every sweep, which is the right
+instinct — but nothing ever re-reads those notes against later questions.
+
+### Actioned
+
+- New node `neprilysin_cnp_clearance` (L3, grade **C**, 6 rows), 3 edges to `cnp_protein`,
+  `npr2_receptor` and `growth_velocity_longitudinal`.
+- New gap `g_l3_neprilysin_window`, tractability **1** — the window question is answerable from
+  `chu2026`'s human pubertal growth plate atlas without a new experiment.
+- Grade held at **C** on abstract-only reading. CORR-012 is why: a sign was once inverted in
+  this atlas on abstract evidence, and no effect size has been read here.
+
+### The standing recommendation
+
+Every sweep's `reason_none_qualified` should be re-read whenever a new question opens. There
+are 148 search logs in this atlas. This one gave up the best lead in it, in a sentence, two
+sweeps ago.
