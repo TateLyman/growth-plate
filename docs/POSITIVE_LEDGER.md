@@ -72,23 +72,39 @@ lever in existence approaches a tenth of that.
 
 ---
 
-## 4. The fact that reorganises everything
+## 4. The fact that reorganises everything — and its correction
 
-> **The ESR1-null man was still growing at 28 years old, with a bone age of 17.5.
-> The aromatase-deficient man had a bone age of 14 at chronological age 24.**
+> **The ESR1-null man was still growing at 28, with a bone age of 17.5. The
+> aromatase-deficient man had a bone age of 14 at chronological age 24.**
 
 In a normal human, growth stops because the plate is **switched off**, not because it has run
 out. At 204 cm and age 28, the plate still had capacity.
 
-This is the single most consequential positive fact in the ledger, and it cuts against the
-framing the rest of this atlas has been built around. The division-budget model — senescence is
-division-dependent, the stem pool is finite, GH spends it — is well supported in mouse and it
-may well be true. **But in a normal human it is not the binding constraint. Fusion arrives
-first, and it arrives with capacity to spare.**
+**But 204 cm is not a ceiling, and §3 was wrong to treat it as one.** Corrected 2026-08-06:
 
-Which means: *the ceiling on human height is not a resource limit. It is a timer.*
+1. **It is a censored observation, not an endpoint.** A 2022 case report of a 24-year-old with
+   undetectable oestradiol, progressive increase in height and open wrist and knee epiphyses
+   states that he was started on estradiol valerate *"for epiphyseal closure to prevent further
+   increase in height."* **Every aromatase-deficient man is treatable and is treated on
+   diagnosis.** The published heights are the heights at which clinicians stopped them.
+2. **The large cohort does not show extreme stature.** 88 patients with 17α-hydroxylase/17,20-
+   lyase deficiency — complete absence of sex-steroid synthesis from birth — give final heights
+   for 51: **77% at or above the 50th percentile, 39% at or above the 90th.** Not 204 cm. Most
+   were treated, and the untreated subgroup is not separated.
+3. **One human could not be stopped.** The ESR1-null man's receptor is absent; six months of
+   transdermal oestrogen raising free oestradiol tenfold did nothing. At ~31 his bone age was
+   17.5 and his epiphyses were open. **He had not run out.** No later height for him has been
+   located.
 
----
+So the ceiling of the duration lever is **unknown in both directions** — plausibly lower than
+204 cm typically, and never observed at its upper end in the one person who could show it.
+
+And this resolves the tension between §3 and the atlas's division-budget model. `estrogen_
+accelerated_senescence` holds that oestrogen does not ossify the plate — it **accelerates a
+pre-existing senescence programme**, and fusion occurs when proliferation reaches zero. The timer
+and the budget are not two constraints. **Oestrogen is a rate multiplier on the spending of one
+budget.** Remove it and you spend the budget slowly; you do not get an unlimited plate, you get a
+late one. Where "late" ends is the number nobody has.
 
 ## 5. The timer is estrogen, and it is biphasic with a narrow window
 
