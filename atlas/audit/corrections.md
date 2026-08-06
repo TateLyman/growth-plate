@@ -886,3 +886,138 @@ derivations *are* mutually incompatible, mixing them *does* corrupt the chain, a
 — **the atlas wrote down a falsifiable number and the number was wrong.** It was wrong by
 more than reported, for a different reason than reported, and both facts were found by
 reading the two papers it had been citing without reading.
+
+---
+
+## CORR-009 — the atlas's central shape claim rests on a number that was never measured
+
+**Found**: 2026-08-06, by reading `cruzorive1986` — the stereological method paper that
+`hunziker1989` cites for every estimator it uses. It was requested three rounds earlier
+for a stated reason: *"the method under every Hunziker number; would show whether the 1989
+height/diameter estimates are as robust as the volume ones."* They are not.
+
+### What the atlas said
+
+`terminal_cell_shape_modulation` called `hunziker1989` **"the single most direct
+measurement of which variable carries a physiological change in growth rate in any
+species,"** and contradiction **C-L1-08** described it as *"the only study that measured
+height and diameter in the same cells."* Both statements were used to outrank `rubin2021`,
+whose 3D light-sheet morphometry of ~10⁵ mouse chondrocytes finds cell **volume** the
+better predictor.
+
+### What is actually true
+
+`hunziker1989` measured neither height nor diameter. Its own Methods say so:
+
+> vertical cell height *"cannot be determined by direct measurement on histological sections"*
+
+and, having no unbiased procedure, *"the methods applied are necessarily
+assumption-dependent."* The terminal cell height is the output of a **super-egg model of
+revolution**, `cruzorive1986` equation 8.11 at exponent n = 2.9:
+
+    X(0°)  =  5 · v̄_N(c)  /  ( π · E{X²(90°)} )
+
+i.e. **cell volume divided by a cell-width second moment**, times a constant fixed by a
+shape exponent nobody measured. Reproduced against the method paper's own worked example:
+5 × 10 760 µm³ / (π × 484.9 µm²) = **35.32 µm** against the **35.3 µm** it prints in
+Table 5.
+
+What `hunziker1989` did measure, by estimators its method paper calls unbiased
+*irrespective of cell size, shape, orientation, section thickness and resolution*, is
+**cell volume** (disector + point counting), **surface area** (vertical sections + cycloid
+arcs) and **numerical density** (disector).
+
+### Which parts of the finding survive, and which do not
+
+| claim | estimator | status |
+|---|---|---|
+| terminal cell **volume falls 13 %** while growth rate rises 20 % | unbiased | **stands** |
+| matrix volume per cell unchanged | unbiased | **stands** |
+| surface area falls 13 % | unbiased | **stands** |
+| terminal cell **height rises 23 %** | super-egg model | **model output, not a measurement** |
+| lateral diameter falls 14 % | N_A(90°)/N_V | **model-dependent, biased HIGH in this zone** |
+| cells produced per column per day unchanged | derived, see below | **not independent** |
+
+### Three specific reasons the height claim is weaker than it looked
+
+1. **Opposite-signed orientation bias.** `cruzorive1986` §10.5: because cells are tilted,
+   no unbiased estimator of either diameter exists, and the direct estimator *"will tend to
+   underestimate X(90°) for proliferative cells and to overestimate X(90°) for hypertrophic
+   cells, and the opposite will be the case for X(0°)."* The bias magnitude is set by the
+   **tilt distribution**, which was never measured and is not held constant between the two
+   ages compared. A change in tilt alone moves estimated height and estimated width in
+   opposite directions — which is exactly the reported signature (height +23 %, width
+   −14 %).
+
+2. **The fixed shape exponent errs toward the conclusion.** The prefactor
+   P(n) = (π/4)·Γ(1+1/n)·Γ(1+2/n)/Γ(1+3/n) rises monotonically with n — computed here at
+   0.524 (n = 2, spheroid), 0.626 (n = 2.9, the value used), 0.785 (n = ∞, cylinder). Since
+   height = v / (P·E{X²}), holding n fixed while a cell genuinely becomes more cylindrical
+   **overstates** the height rise. n = 2.9 was fixed once, on one animal at one age, and
+   held across all three ages of the 1989 study.
+
+3. **The elongation budget does not independently corroborate it.** Reconstructing the
+   budget from Tables 1–3:
+
+   > rate = (PZ height / proliferative cell height) × (24 / T_c) × terminal cell height
+
+   closes to **93.5 %, 92.4 %, 90.5 %** at 21, 35 and 80 days — good coherence. But
+   proliferative cells per column is itself PZ height ÷ the model-estimated *proliferative*
+   cell height (226/8.1 = 27.9 vs 27 printed; 171/9.6 = 17.8 vs 18; 78/8.2 = 9.5 vs 9). The
+   height estimator therefore appears in both numerator and denominator and enters **only
+   as the ratio h_term/h_prolif**, in which any common multiplicative bias cancels exactly.
+   That ratio rises **4.1 %** (3.85 → 4.01), not 23 %. Factorised this way the +19.6 %
+   growth rise is 0.638 × 1.500 × 1.234 — a 36 % fall in proliferative cells per column, a
+   50 % rise in cycles per day, and the height term. Same arithmetic, different attribution.
+   *"Almost exclusively cell height"* holds only if turnover per column is treated as a
+   measured invariant rather than as n_prolif/T_c; the printed "8 and 8" is 8.27 and 7.92
+   before the paper's stated rounding to the nearest integer.
+
+### An internal inconsistency the reading exposed
+
+Back-solving E{X²(90°)} = 5v/(π·X(0°)) from the printed terminal height, diameter and
+volume, and comparing with the square of the printed diameter — a ratio that must be ≥ 1
+for any distribution:
+
+| age | implied E{X²} | (printed diameter)² | ratio | implied diameter CV |
+|---|---|---|---|---|
+| 21 d | 1018.9 µm² | 894.0 µm² | 1.140 | 0.374 |
+| 35 d | 719.3 | 655.4 | 1.098 | 0.312 |
+| 80 d | 662.5 | 835.2 | **0.793** | **impossible** |
+
+At 80 days the printed diameter exceeds the maximum the other two columns permit, by 12 %.
+That is the direction and roughly the size of the bias §10.5 attributes to this estimator
+in hypertrophic cells, so the likeliest reading is a known, variable, zone-dependent width
+bias rather than an arithmetic error. Two alternatives cannot be excluded from the
+published tables: E{X²(90°)} may have come from the unfolding algorithm rather than from
+the printed diameter row, or a different exponent may have been used at 80 days. Under any
+of them, **the printed height and diameter columns are not mutually consistent under one
+fixed shape model.**
+
+### Blast radius
+
+- `terminal_cell_shape_modulation` — summary rewritten, seven quantitative rows added,
+  `confidence_note` added. Confidence **stays D**, deliberately: E is for this atlas's own
+  flagged inferences, and this is a published primary result with a p-value, reproducible
+  from its tables, independently ranked the same way by a different perturbation in three
+  species (`stokes2007`). What is removed is its claim to outrank a direct measurement.
+- **C-L1-08** — resolution rewritten. The contradiction was framed as measurement vs
+  measurement across two comparison axes. It is not: one side is a direct 3D measurement,
+  the other is a model output. But this does **not** hand the argument to volume, because
+  `hunziker1989`'s volume number is its *best*-quality measurement and it falls 13 % while
+  growth rises 20 %. Neither variable is established as the carrier.
+- **C-L1-07** (human terminal height 33 vs 20.5 µm) — unaffected; both human figures are
+  direct profile measurements, not stereological model outputs.
+- `g_l1arch_016` — `what_is_missing` rewritten: the decisive experiment is no longer only
+  "apply a 3D pipeline at two ages", it is "measure terminal cell height without a shape
+  model at all", because no existing measurement of it in any species is model-free.
+- The flow model is **not** affected. Its `h_term` span is sourced from `kember1976` and
+  `thurston1985` human profile measurements, not from `hunziker1989`.
+
+### The general lesson, which is the same one as CORR-006 and CORR-008
+
+Three atlas rounds cited `hunziker1989` as the anchor of a reframing, and one of them
+proposed a whole compound class on the strength of it, before anyone read the forty-page
+methods paper it points at in its second sentence. **A number's grade is a property of how
+it was obtained, and that is usually documented somewhere other than the paper you are
+citing.** The atlas has a `has_full_text` flag; it needs the transitive one.

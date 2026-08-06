@@ -1081,3 +1081,133 @@ Three independent measurements say the growth plate is a strongly anisotropic co
 that relaxes as growth slows, and one human dataset says cell width is fixed while height
 moves. What is still missing is the single experiment that would tie them to growth rate
 directly.
+
+---
+
+# Round 11 — the anchor was never a measurement
+
+The fourth paper of round 10 was `cruzorive1986`, *Stereology for anisotropic cells:
+application to growth cartilage*. I asked for it three rounds earlier with a stated
+purpose: *"the method under every Hunziker number; would show whether the 1989
+height/diameter estimates are as robust as the volume ones."*
+
+They are not. The answer inverts the last four rounds of this document.
+
+## 1. `hunziker1989` did not measure cell height
+
+Its own Methods say so. Vertical cell height *"cannot be determined by direct measurement
+on histological sections"*; no unbiased model-free procedure exists; *"the methods applied
+are necessarily assumption-dependent."* The number comes from `cruzorive1986` eq. 8.11, a
+**super-egg of revolution** at fixed exponent n = 2.9:
+
+```
+X(0°)  =  5 · v̄ / ( π · E{X²(90°)} )
+```
+
+**Cell volume divided by a cell-width second moment.** I reproduced the method paper's own
+worked example — 5 × 10 760 µm³ / (π × 484.9 µm²) = 35.32 µm against its printed 35.3 µm.
+
+So the two headline numbers this document has been treating as an *observed dissociation* —
+height +23 %, volume −13 % — are not independent observations of the same cells. One is
+computed from the other.
+
+What `hunziker1989` **did** measure, with estimators the method paper calls unbiased
+irrespective of cell size, shape, orientation, section thickness and resolution: cell
+**volume**, **surface area**, **numerical density**.
+
+| | estimator | status |
+|---|---|---|
+| volume −13 % while growth +20 % | disector + point counting | **stands** |
+| matrix per cell unchanged | unbiased | **stands** |
+| surface area −13 % | vertical sections + cycloids | **stands** |
+| height +23 % | super-egg model | **model output** |
+| diameter −14 % | N_A(90°)/N_V | **model-dependent, biased high in this zone** |
+
+## 2. Three ways the height claim is softer than it looked
+
+**Tilt bias runs in opposite directions for the two parameters.** §10.5: no unbiased
+estimator of either diameter exists, and the direct estimator *"will tend to underestimate
+X(90°) for proliferative cells and to overestimate X(90°) for hypertrophic cells, and the
+opposite will be the case for X(0°)."* The magnitude is set by the cell-tilt distribution —
+never measured, not held constant across the two ages. **A change in tilt alone produces
+height↑ / width↓**, which is exactly the reported signature.
+
+**The fixed exponent errs toward the conclusion.** P(n) = (π/4)Γ(1+1/n)Γ(1+2/n)/Γ(1+3/n)
+= 0.524 at n = 2 (spheroid), 0.626 at n = 2.9 (used), 0.785 at n = ∞ (cylinder). Height =
+v/(P·E{X²}), so holding n fixed while the cell genuinely becomes more cylindrical
+**overstates** the height rise.
+
+**The elongation budget is not independent corroboration.** Reconstructed from Tables 1–3:
+
+```
+rate = (PZ height / proliferative cell height) × (24 / T_c) × terminal cell height
+```
+
+| age | predicted | measured | closure |
+|---|---|---|---|
+| 21 d | 258 | 276 | 93.5 % |
+| 35 d | 305 | 330 | 92.4 % |
+| 80 d | 77 | 85 | 90.5 % |
+
+Good coherence — but *proliferative cells per column* is itself PZ height ÷ the
+model-estimated **proliferative** cell height (226/8.1 = 27.9 vs 27 printed; 171/9.6 = 17.8
+vs 18; 78/8.2 = 9.5 vs 9). The height estimator sits on both sides and enters only as the
+**ratio** h_term/h_prolif, where a common multiplicative bias cancels exactly. That ratio
+rises **4.1 %** (3.85 → 4.01), not 23 %. Factorised that way, +19.6 % growth =
+0.638 × 1.500 × 1.234 — mostly a 50 % rise in cycles/day against a 36 % fall in
+proliferative cells per column. Same arithmetic, different attribution.
+
+## 3. An inconsistency in Table 2
+
+E{X²} must be ≥ (mean)² for any distribution. Back-solving E{X²(90°)} = 5v/(π·X(0°)) from
+the printed triples:
+
+| age | implied E{X²} | (printed diameter)² | ratio |
+|---|---|---|---|
+| 21 d | 1018.9 | 894.0 | 1.140 ✓ |
+| 35 d | 719.3 | 655.4 | 1.098 ✓ |
+| 80 d | 662.5 | 835.2 | **0.793 ✗** |
+
+At 80 days the printed diameter exceeds what the other two columns permit, by 12 % — the
+direction and roughly the size of the bias §10.5 attributes to that estimator in
+hypertrophic cells.
+
+## 4. What this does to the compound programme
+
+Rounds 5–10 were built on a reframe: *stop targeting hypertrophic enlargement, target the
+aspect ratio, because Hunziker measured shape and not size as the carrier.* The
+observational basis for that reframe is now one grade weaker than it was, and the honest
+statement of C-L1-08 changes from *two measurements on different axes* to:
+
+> **Neither height nor volume is established as the carrier of a within-plate temporal
+> change in growth rate.** `rubin2021` measured all three dimensions directly in 3D but
+> only between plates. `hunziker1989` ran the within-plate contrast but derived height and
+> width from volume and width-moments through a shape model with no unbiased version. Its
+> most reliable number — volume falling 13 % while growth rises 20 % — still contradicts
+> `breur1991` and `rubin2021` head-on.
+
+The anisotropy work of rounds 7–10 is **untouched**: `cohen1998`, `wosu2012` and
+`bylskiaustrow2018` are direct mechanical and morphometric measurements, not stereological
+model outputs. What they explain is now less certain than they are.
+
+The compound implication is unchanged in list but changed in confidence: an agent that
+raises terminal cell aspect ratio at constant volume remains the only untried class here,
+and it is now aimed at a phenomenon whose existence rests on a model rather than a ruler.
+The decisive experiment did not change design — `rubin2021`'s MAPs pipeline on
+`hunziker1989`'s two-age design — but its motive got stronger. It would be **the first
+model-free measurement of terminal chondrocyte height in any species.**
+
+## 5. Standing after eleven rounds
+
+| | |
+|---|---|
+| anisotropic constraint exists and varies ~10-fold | **measured** (`cohen1998`, `wosu2012`) |
+| human cell width invariant while height varies 34 % | **measured** (`bylskiaustrow2018`) |
+| terminal cell height at two growth rates | **never measured model-free, in any species** |
+| height vs volume as carrier | **neither established** — C-L1-08 rewritten, CORR-009 |
+| compounds | 2 of 7 standing, both grade C |
+
+Three rounds of this document leaned on `hunziker1989` before anyone read the forty-page
+methods paper it cites in its second sentence. That is the same failure as CORR-006 and
+CORR-008: **a number's grade is a property of how it was obtained, and that is usually
+documented somewhere other than the paper you are citing.**

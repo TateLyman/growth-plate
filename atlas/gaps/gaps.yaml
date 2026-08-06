@@ -9467,19 +9467,26 @@ gaps:
     at birth to 0.72-1.15 by 4-18 weeks in porcine distal ulna (wosu2012), i.e. the tissue becomes isotropic over
     the period growth rate falls. And in human vertebral physis, hypertrophic cell WIDTH is invariant (14.9 vs
     15.0 um, ns) while HEIGHT differs 34% (8.5 vs 12.8 um, p<0.0005) between scoliosis and controls (bylskiaustrow2018).'
-  what_is_missing: 'The causal step. Every measurement above is a correlation across ages, species or disease
-    states; nobody has manipulated the anisotropy and measured the resulting cell dimensions and bone length.
-    And rubin2021 finds cell VOLUME a better predictor of bone growth than cell HEIGHT in a 10^5-cell 3D dataset
-    - a BETWEEN-plate comparison, where hunziker1989''s dissociation is WITHIN a plate across ages. The single
-    decisive experiment is now cheap and needs no new method: apply rubin2021''s published 3D MAPs pipeline to
-    hunziker1989''s design - one plate, two ages spanning a growth-rate change, measuring height, width and volume
-    in the same cells. See contradiction C-L1-08.'
+  what_is_missing: 'Two things now, and the first is more basic than the second. (i) A MODEL-FREE MEASUREMENT
+    OF TERMINAL CELL HEIGHT AT TWO GROWTH RATES IN ONE PLATE. Reading cruzorive1986 on 2026-08-06 established
+    that hunziker1989 never measured height or diameter: both are shape-model outputs, height being cell volume
+    divided by a cell-width second moment at a fixed unmeasured exponent, and the method paper states that no
+    unbiased estimator of either exists and that in hypertrophic cells the two carry opposite-signed tilt bias.
+    So the aspect ratio that this gap asks about has never been measured without a model in any species at two
+    growth rates. rubin2021 measures all three dimensions directly in 3D but only BETWEEN plates. Applying its
+    published MAPs pipeline to hunziker1989''s two-age design is still the decisive experiment; it is now
+    decisive for a stronger reason, because it would be the first model-free measurement of the quantity, not
+    merely a second one. (ii) The causal step. Every measurement above is a correlation across ages, species or
+    disease states; nobody has manipulated the anisotropy and measured the resulting cell dimensions and bone
+    length. See contradiction C-L1-08 and CORR-009.'
   nearest_evidence:
   - hunziker1989
+  - cruzorive1986
   - greer2024
   - costell1999
   - breur1991
-  nearest_evidence_note: hunziker1989 (rat, the only measurement of the phenomenon); greer2024 and aszodi2003
+  nearest_evidence_note: hunziker1989 (rat, the only report of the phenomenon, its height and diameter
+    model-derived); cruzorive1986 (its method paper - no unbiased estimator of cell height or diameter exists); greer2024 and aszodi2003
     (cytoskeleton and integrin control of chondrocyte ROTATION, which is a shape-related process but not aspect
     ratio); costell1999 (perlecan and the pericellular matrix); breur1991 (the between-plate volume correlation
     this contradicts).

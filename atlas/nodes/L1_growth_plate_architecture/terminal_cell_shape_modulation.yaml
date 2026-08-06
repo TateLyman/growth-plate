@@ -13,8 +13,16 @@ summary: 'Physiological change in longitudinal growth rate is carried by a chang
   accompanied by a 14% FALL in final lateral diameter (29.9 to 25.6 um, P<0.03) and a 13% FALL in final
   cell volume (P<0.03). Matrix produced per cell, cells produced per column per day, and the duration of
   the hypertrophic phase are all unchanged. Hunziker and Schenk call this phenotype modulation, and it
-  is the single most direct measurement of which variable carries a physiological change in growth rate
-  in any species. It matters because it dissociates height from volume: the two move in OPPOSITE directions
+  was until 2026-08-06 recorded here as the single most direct measurement of which variable carries a
+  physiological change in growth rate in any species. IT IS NOT A MEASUREMENT. Reading the method paper
+  it cites (cruzorive1986) shows the height is a super-egg model output, computed as cell VOLUME divided
+  by a cell-WIDTH second moment; hunziker1989 says so in its own Methods, and says that no unbiased
+  model-free estimator of vertical cell height exists. So the height and the volume in this node are not
+  two independent observations of the same cells, and the method paper further states that the height and
+  width estimators carry opposite-signed orientation bias in hypertrophic cells, with magnitudes set by a
+  cell-tilt distribution nobody measured. See CORR-009. What survives unchanged is the VOLUME result,
+  which comes from an estimator the method paper calls unbiased irrespective of cell shape or orientation.
+  It matters because it dissociates height from volume: the two move in OPPOSITE directions
   during acceleration, so the between-plate correlation of final hypertrophic VOLUME with elongation rate
   (r=0.98 in rat, r=0.83 in pig, breur1991) cannot be the causal relationship within a plate over time.
   Growth deceleration is not the mirror image - between 35 and 80 days height, volume, and cell turnover
@@ -36,7 +44,10 @@ quantitative:
     n=6 per age; growth rate rose 20% over the same interval
   species: rat
   source_ref: hunziker1989
-  uncertainty: +23%, P<0.02; coefficients of error between animals 3.7-14.3% across the parameter set
+  uncertainty: '+23%, P<0.02 (Wilcoxon signed rank); between-animal coefficients of error 6.6% at 21 d
+    and 5.3% at 35 d. NOT A DIRECT MEASUREMENT - see the estimator rows below. hunziker1989 states in
+    its own Methods that vertical cell height "cannot be determined by direct measurement on histological
+    sections" and that the model-based route used instead is "necessarily assumption-dependent".'
 - parameter: final terminal cell lateral diameter during growth acceleration
   value: 29.9 -> 25.6
   unit: um
@@ -62,7 +73,97 @@ quantitative:
   source_ref: hunziker1989
   uncertainty: DERIVED BY THIS ATLAS from two reported means; the paper does not report a ratio and no
     dispersion can be propagated from the published summary statistics. A 44% rise in aspect ratio
-    accompanies a 20% rise in growth rate.
+    accompanies a 20% rise in growth rate. Both inputs are model-derived, not measured - see the
+    estimator rows immediately below.
+- parameter: estimator behind every terminal cell HEIGHT value in hunziker1989
+  value: X(0deg) = 5 * mean cell volume / (pi * E{X^2(90deg)})
+  unit: um
+  conditions: 'super-egg of revolution about the vertical axis, shape exponent n=2.9, equation 8.11 of
+    the method paper; oblate spheroid used instead for proliferative cells. hunziker1989 cites this paper
+    for the procedure and states that no unbiased model-free estimator of vertical cell height exists.'
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: 'THE HEIGHT IS NOT A MEASUREMENT - it is mean cell VOLUME divided by a cell-WIDTH second
+    moment, times a constant fixed by a shape exponent nobody measured. Verified by this atlas against
+    the method paper''s own worked example: 5 x 10760 um^3 / (pi x 484.9 um^2) = 35.32 um, against the
+    35.3 um printed in its Table 5. The volume and the width moment are both estimated by procedures the
+    same paper calls unbiased; the height is not an additional observation on top of them.'
+- parameter: coefficient of error of each estimator, one animal, five blocks
+  value: height 19.3 / 23.8; width 4.3 / 10.4; mean cell volume 3.1 / 7.8; numerical density 2.1 / 6.8
+  unit: '% (proliferative / hypertrophic)'
+  conditions: rat proximal tibia, 80-100 g female Wistar, Table 5 of the method paper; a single animal,
+    CEs computed across five blocks
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: 'The height estimator is the least precise quantity in the table, by 3-6x. THIS IS NOT
+    COMPARABLE TO hunziker1989''s CEs, which are BETWEEN-ANIMAL over six animals (5.3-6.6% for height)
+    - a different quantity, and the reason hunziker1989''s P<0.02 is not attacked by this row. What this
+    row bears on is estimator quality, not statistical significance.'
+- parameter: orientation bias of the shape estimators, by zone
+  value: hypertrophic width biased HIGH and height biased LOW; proliferative the reverse
+  unit: direction only
+  conditions: 'section 10.5 of the method paper, on cells tilted away from the vertical axis: no unbiased
+    estimator of either mean cell diameter exists, and the direct estimator "will tend to underestimate
+    X(90deg) for proliferative cells and to overestimate X(90deg) for hypertrophic cells, and the opposite
+    will be the case for X(0deg)".'
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: 'The bias magnitude is set by the distribution of cell and column TILT, which was never
+    measured and is not held constant between the two ages hunziker1989 compares. A change in tilt alone
+    moves the estimated height and the estimated width in OPPOSITE directions - which is the exact
+    signature reported as evidence for shape modulation (height +23%, width -14%). This does not show
+    the finding is wrong; it shows the finding is not protected against a confound the method paper
+    names.'
+- parameter: direction in which the fixed shape exponent biases the reported height change
+  value: upward
+  unit: direction only
+  conditions: 'prefactor P(n) = (pi/4) x Gamma(1+1/n) x Gamma(1+2/n) / Gamma(1+3/n) in v = P(n) x X(0deg)
+    x E{X^2(90deg)}; computed by this atlas at 0.524 (n=2, spheroid), 0.626 (n=2.9, the value used),
+    0.785 (n=infinity, cylinder). Height = v / (P x E{X^2}), so P and the estimated height move
+    oppositely.'
+  species: rat
+  source_ref: cruzorive1986
+  uncertainty: 'DERIVED BY THIS ATLAS. n=2.9 was fixed once, on one animal at one age, and held for all
+    three ages. A cell that becomes taller relative to its width is by construction moving toward the
+    cylinder end of the family, i.e. toward higher n and higher P, so holding n fixed OVERSTATES the
+    height rise. The estimator''s fixed-shape assumption errs in the same direction as the claim it is
+    used to support. Magnitude unknown, because nobody measured n at either age.'
+- parameter: growth-rate budget reconstructed from hunziker1989's own tables
+  value: rate = (PZ height / proliferative cell height) x (24 / T_c) x terminal cell height
+  unit: um/day
+  conditions: 'reconstructed by this atlas from Tables 1-3 of hunziker1989. 21 d: 27.90 x 0.2963 x 31.2
+    = 258 vs 276 measured (93.5%). 35 d: 17.81 x 0.4444 x 38.5 = 305 vs 330 (92.4%). 80 d: 9.51 x 0.4444
+    x 18.2 = 77 vs 85 (90.5%).'
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated. The budget closes to 90-94% at all three ages, which
+    is good internal coherence. But it shows that "cells produced per column per day is unchanged" is not
+    an independent measurement: proliferative cells per column is itself PZ height divided by the
+    model-estimated PROLIFERATIVE cell height (226/8.1=27.9 vs 27 printed; 171/9.6=17.8 vs 18; 78/8.2=9.5
+    vs 9). So the height estimator sits in both the numerator and the denominator of the budget, and
+    enters only as the RATIO h_term/h_prolif, in which any common multiplicative bias cancels exactly.
+    That ratio rises just 4.1% (3.85 to 4.01) between 21 and 35 days, against the +23% headline. Under
+    this factorisation the +19.6% growth rise is 0.638 x 1.500 x 1.234 - a 36% fall in proliferative
+    cells per column, a 50% rise in cycles per day, and the height term. Same arithmetic, different
+    attribution; "almost exclusively cell height" holds only if turnover is treated as measured rather
+    than derived.'
+- parameter: internal consistency of hunziker1989 Table 2 under its own estimator
+  value: 21 d ratio 1.140; 35 d ratio 1.098; 80 d ratio 0.793
+  unit: implied E{X^2(90deg)} divided by the square of the reported mean diameter
+  conditions: back-solving E{X^2(90deg)} = 5v / (pi x X(0deg)) from the printed terminal height, diameter
+    and volume at each age, and comparing with the square of the printed diameter. E{X^2} must be greater
+    than or equal to the square of the mean for any distribution.
+  species: rat
+  source_ref: hunziker1989
+  uncertainty: 'DERIVED BY THIS ATLAS, unreplicated. At 21 and 35 days the triples are feasible and imply
+    a diameter CV of 0.374 and 0.312. At 80 days they are NOT: the required E{X^2} is 21% below the
+    square of the printed mean, which no distribution permits. The reported 80 d diameter would have to
+    overstate the true width by at least 12%. That is precisely the bias the method paper attributes to
+    this estimator in hypertrophic cells, so the most likely reading is a known, variable, zone-dependent
+    width bias rather than an arithmetic error. The alternative readings - that E{X^2(90deg)} came from
+    the unfolding algorithm rather than from the printed diameter row, or that a different exponent was
+    used at 80 days - cannot be separated from the published tables. Either way the printed height and
+    diameter columns are not mutually consistent under one fixed shape model.'
 - parameter: matrix volume produced per cell
   value: '0'
   unit: '% change'
@@ -327,12 +428,16 @@ quantitative:
     in the same cells, so no human aspect ratio exists and the one quantity hunziker1989 identifies as
     the carrier of growth-rate change has never been measured in a human.'
 localization:
-- 'rat proximal tibia hypertrophic zone: height, diameter and volume measured separately (hunziker1989)'
-- 'human: height measured, diameter never measured, aspect ratio unknown'
+- 'rat proximal tibia hypertrophic zone: cell VOLUME, surface area and numerical density measured by
+  unbiased estimators; height and diameter DERIVED from them through shape models (hunziker1989 via
+  cruzorive1986)'
+- 'human: height measured, diameter never measured in long bone, aspect ratio unknown'
 human_evidence: indirect
 human_evidence_note: No human study reports terminal hypertrophic cell height and transverse diameter in
-  the same specimen, so the human aspect ratio is unknown and its relationship to human growth rate is
-  untested. The entire result rests on one rat study, which no one has repeated in any species.
+  the same LONG BONE specimen, so the human aspect ratio is unknown and its relationship to human growth
+  rate is untested (bylskiaustrow2018 reports both in human VERTEBRAL physis, without a growth rate). The
+  entire rat result rests on one study, which no one has repeated in any species, and whose height and
+  diameter are model outputs rather than measurements.
 species_basis:
 - rat
 - mouse
@@ -341,10 +446,19 @@ species_basis:
 - porcine
 - human
 translation_risk: high
-translation_risk_reason: A single unreplicated rat study is the whole evidential basis. The human plate
-  differs from rat in cycle time by roughly an order of magnitude and carries a large inert zone rat lacks,
-  and human terminal cell height is itself contested by 61%.
+translation_risk_reason: A single unreplicated rat study is the whole evidential basis, and its two shape
+  parameters are model outputs rather than measurements, from a family of estimators their own method
+  paper says has no unbiased member. The human plate differs from rat in cycle time by roughly an order
+  of magnitude and carries a large inert zone rat lacks, and human terminal cell height is itself
+  contested by 61%.
 confidence: D
+confidence_note: 'Stays at D on 2026-08-06 rather than dropping to E, and the reason is worth stating.
+  E is for a flagged inference of this atlas''s own making; this is a published primary result, reported
+  with a p-value, reproducible from the paper''s tables, and independently ranked the same way by a
+  different perturbation in a different set of species (stokes2007). What the cruzorive1986 reading
+  removes is the claim that it is a MEASUREMENT and therefore outranks rubin2021''s direct 3D
+  morphometry. It cannot rise above D until someone measures terminal cell height without a shape model
+  at two growth rates in one plate.'
 key_refs:
 - ref_id: hunziker1989
   pmid: '2607442'
@@ -354,6 +468,14 @@ key_refs:
   one_line_finding: A 20% rise in rat growth rate is carried by a 23% rise in terminal cell height with
     diameter falling 14% and volume falling 13%; matrix per cell, turnover and hypertrophic-phase duration
     unchanged.
+- ref_id: cruzorive1986
+  pmid: '3761364'
+  first_author: Cruz-Orive LM
+  year: 1986
+  type: primary
+  one_line_finding: The method paper for hunziker1989 - cell volume, surface and number have unbiased
+    orientation-independent estimators, cell HEIGHT and DIAMETER have none, and the shape estimators
+    used carry opposite-signed tilt bias in the two zones.
 - ref_id: wosu2012
   pmid: '21559968'
   first_author: Wosu R
