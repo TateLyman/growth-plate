@@ -76,8 +76,27 @@ SEARCH_D = ('query($q:String!){search(queryString:$q,entityNames:["disease"],pag
 ASSOC_T = ('query($id:String!,$i:Int!){disease(efoId:$id){name associatedTargets('
            'page:{index:$i,size:50}){count rows{score target{id approvedSymbol}}}}}')
 DRUGS = ('query($id:String!){target(ensemblId:$id){approvedSymbol '
-         'knownDrugs(size:25){count rows{drugId prefName mechanismOfAction phase status '
-         'drugType}}}}')
+         'drugAndClinicalCandidates{count rows{maxClinicalStage drug{id name drugType '
+         'mechanismsOfAction{rows{mechanismOfAction actionType}}}}}}}')
+
+# The positive control. This screen once reported "0 with a known drug" across all 141 genes
+# it asked about, which was not a result: Target.knownDrugs had been removed from the API, so
+# every call returned HTTP 400, and a bare `except Exception: pass` turned each 400 into an
+# empty drug list. A silent zero is indistinguishable from a real negative, and this project
+# has already been bitten by exactly that once (the mTOR control in target_screen.py that
+# produced no rows and was read as passing). So the query is now run against a gene whose
+# answer is known before any real work happens, and the run HALTS if it does not come back.
+STAGE_RANK = {"APPROVAL": 5, "PHASE_IV": 5, "PHASE_III": 4, "PHASE_II": 3, "PHASE_I": 2,
+              "EARLY_PHASE_I": 1, "PRECLINICAL": 0, None: -1, "": -1}
+
+
+def stage_rank(v):
+    """Order clinical stages. Sorting the raw strings would rank PHASE_I above APPROVAL."""
+    return STAGE_RANK.get((v or "").upper(), 0)
+
+
+CONTROL_ENSEMBL = "ENSG00000137869"          # CYP19A1
+CONTROL_EXPECT = "ANASTROZOLE"               # among its approved inhibitors
 
 
 def gql(query, variables, tries=4):
@@ -91,6 +110,39 @@ def gql(query, variables, tries=4):
             if k == tries - 1:
                 raise
             time.sleep(2 * (k + 1))
+
+
+def fetch_drugs(ensembl):
+    """[(drug name, mechanism, max clinical stage), ...] or None if the QUERY FAILED.
+
+    None and [] mean different things and the caller must not conflate them: [] is "this gene
+    has no drug", None is "we did not find out". Returning [] on error is how this screen
+    previously reported a clean zero across every gene it asked about.
+    """
+    try:
+        d = gql(DRUGS, {"id": ensembl})
+    except Exception:
+        return None
+    if not isinstance(d, dict) or d.get("errors") or not (d.get("data") or {}).get("target"):
+        return None
+    out = []
+    for r in ((d["data"]["target"].get("drugAndClinicalCandidates") or {}).get("rows") or []):
+        drug = r.get("drug") or {}
+        moa = [m.get("mechanismOfAction")
+               for m in ((drug.get("mechanismsOfAction") or {}).get("rows") or [])]
+        out.append((drug.get("name"), moa[0] if moa else None, r.get("maxClinicalStage")))
+    return out
+
+
+def positive_control():
+    """Halt the run unless a gene with a known answer comes back with it."""
+    got = fetch_drugs(CONTROL_ENSEMBL)
+    if got is None:
+        return False, "the control query itself failed"
+    names = {(n or "").upper() for n, _, _ in got}
+    if CONTROL_EXPECT not in names:
+        return False, f"CYP19A1 returned {len(got)} drugs and {CONTROL_EXPECT} was not among them"
+    return True, f"CYP19A1 -> {len(got)} drugs including {CONTROL_EXPECT}"
 
 
 def gp_expression():
@@ -190,8 +242,16 @@ def main():
     print(f"\n{len(tgt)} distinct targets across all terms")
 
     # ---- 3. annotate: growth plate expression, existing drugs, atlas coverage ---------------
+    ok, msg = positive_control()
+    print(f"\npositive control: {msg}")
+    if not ok:
+        print("HALTING. The drug query does not work, so every gene would be reported as "
+              "having no drug and the screen would return a clean, wrong negative.")
+        return 1
+
     expr, atlas = gp_expression(), atlas_genes()
     dcache = cache_load("drugs.json") or {}
+    n_query_failures = [0]
 
     # The knownDrugs query costs ~20 s per target against this API, so asking it of all 1,596
     # harvested genes takes eight hours. It is also the wrong order of operations: a gene not
@@ -225,23 +285,21 @@ def main():
         elif sym in dcache:
             drugs = [tuple(d) for d in dcache[sym]]
         else:
-            drugs = []
-            try:
-                kd = gql(DRUGS, {"id": e["ensembl"]})["data"]["target"]
-                for r in (kd or {}).get("knownDrugs", {}).get("rows", []) or []:
-                    drugs.append((r.get("prefName"), r.get("mechanismOfAction"), r.get("phase")))
-            except Exception:
-                pass
-            dcache[sym] = drugs
-            if i % 20 == 0:
-                cache_save("drugs.json", dcache)
+            drugs = fetch_drugs(e["ensembl"])
+            if drugs is None:                 # the query FAILED - do not cache it as empty
+                n_query_failures[0] += 1
+            else:
+                dcache[sym] = drugs
+                if i % 20 == 0:
+                    cache_save("drugs.json", dcache)
+
         seen, uniq = set(), []
         for d in (drugs or []):
             k = (d[0], d[1])
             if k not in seen:
                 seen.add(k)
                 uniq.append(d)
-        top = sorted(uniq, key=lambda d: -(d[2] or 0))[:4]
+        top = sorted(uniq, key=lambda d: -stage_rank(d[2]))[:4]
         rows.append({
             "gene": sym,
             "best_assoc_score": round(e["best"], 4),
@@ -251,7 +309,7 @@ def main():
             "gp_donors_detected": expr.get(sym, ""),
             "in_atlas": atlas.get(sym.upper(), ""),
             "n_known_drugs": len(uniq) if drugs is not None else "",
-            "max_phase": (max([d[2] or 0 for d in uniq], default="")
+            "max_phase": (max((d[2] for d in uniq), key=stage_rank, default="")
                           if drugs is not None else ""),
             "example_drugs": "; ".join(f"{d[0]} [{d[1]}] ph{d[2]}" for d in top),
             "direction": "UNRESOLVED",
@@ -262,6 +320,14 @@ def main():
         if sym not in dcache or not dcache.get(sym):
             time.sleep(0.05)
     cache_save("drugs.json", dcache)
+    if n_query_failures[0]:
+        print(f"\nWARNING: {n_query_failures[0]} drug queries FAILED. Those genes are reported "
+              f"BLANK, not zero.")
+
+    if not rows:
+        print("\nHALTING: no rows were built. Refusing to write an empty targets.csv over a "
+              "previous result.")
+        return 1
 
     os.makedirs(OUT, exist_ok=True)
     p = os.path.join(OUT, "targets.csv")
@@ -277,6 +343,8 @@ def main():
         "n_targets": len(rows),
         "n_expressed_in_human_gp": sum(1 for r in rows if r["gp_donors_detected"] not in ("", 0)),
         "n_asked_for_drugs": len(ask),
+        "n_drug_queries_failed": n_query_failures[0],
+        "positive_control": msg,
         "filter_thresholds": {"min_assoc_score": MIN_ASSOC, "min_gp_donors": MIN_DONORS,
                               "rationale": "min_assoc is the 90th percentile of the harvest's "
                                            "own score distribution (median 0.058, p90 0.118, "
@@ -309,10 +377,10 @@ def main():
           f" with a known drug | {len(triple)} meeting all three")
     print(f"wrote {p}\n")
     print("targets meeting all three necessary conditions (NOT candidates - direction unread):")
-    print(f"  {'gene':10s} {'assoc':>6s} {'GP':>3s} {'drugs':>5s} {'ph':>3s}  terms")
+    print(f"  {'gene':10s} {'assoc':>6s} {'GP':>3s} {'drugs':>5s} {'stage':>9s}  terms")
     for r in sorted(triple, key=lambda x: -x["best_assoc_score"])[:40]:
         print(f"  {r['gene']:10s} {r['best_assoc_score']:6.3f} {r['gp_donors_detected']:>3} "
-              f"{r['n_known_drugs']:5d} {str(r['max_phase']):>3}  {r['top_terms'][:70]}")
+              f"{r['n_known_drugs']:5d} {str(r['max_phase'])[:9]:>9}  {r['top_terms'][:62]}")
     return 0
 
 
