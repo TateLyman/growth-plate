@@ -7,21 +7,19 @@ aliases:
 type: process
 layer: L1
 stub: false
-summary: 'Terminal chondrocyte enlargement is the largest single contributor to longitudinal elongation
-  and the parameter that correlates best with growth rate across mammals. Quantitative phase microscopy
-  of live dissociated mouse chondrocytes resolves the enlargement into three phases with distinct biophysics.
-  Phase 1 is true hypertrophy: volume rises from about 600 fl to 2000 fl with dry mass density held at
-  0.183 pg/fl, the normal value for healthy cells. Phase 2 is swelling: volume rises from about 2000 fl
-  to 8000 fl while dry mass production continues at a lower relative rate, so density falls to about 0.07
-  pg/fl, a roughly 60% dilution confirmed independently by tomographic phase microscopy. Phase 3 resumes
-  proportional growth at the new low density, taking mouse proximal tibial cells from 8000 fl to about
-  14,000 fl. Which phases a plate executes determines its growth rate: the slow mouse proximal radius
-  truncates phase 2 at about 5000 fl and omits phase 3 entirely, the jerboa metatarsal extends phase 3
-  to about 23,000 fl, and Igf1-deficient cells stop at about 7000 fl. Volume increase is fast and time-boxed:
-  proximal tibial cell height more than triples within roughly 12 h and cells then sit at terminal size
-  for roughly another 12 h before being removed at the chondro-osseous junction. Stereologically, the
-  rat proximal tibia shows a 4-fold height and 10-fold volume increase from proliferative to late hypertrophic
-  stage. None of this has been measured in human cells.'
+summary: 'Terminal chondrocyte enlargement is the largest single contributor to longitudinal elongation and the parameter
+  that correlates best with growth rate across mammals. Quantitative phase microscopy of live dissociated mouse chondrocytes
+  resolves the enlargement into three phases with distinct biophysics. Phase 1 is true hypertrophy: volume rises from
+  about 600 fl to 2000 fl with dry mass density held at 0.183 pg/fl, the normal value for healthy cells. Phase 2 is
+  swelling: volume rises from about 2000 fl to 8000 fl while dry mass production continues at a lower relative rate,
+  so density falls to about 0.07 pg/fl, a roughly 60% dilution confirmed independently by tomographic phase microscopy.
+  Phase 3 resumes proportional growth at the new low density, taking mouse proximal tibial cells from 8000 fl to about
+  14,000 fl. Which phases a plate executes determines its growth rate: the slow mouse proximal radius truncates phase
+  2 at about 5000 fl and omits phase 3 entirely, the jerboa metatarsal extends phase 3 to about 23,000 fl, and Igf1-deficient
+  cells stop at about 7000 fl. Volume increase is fast and time-boxed: proximal tibial cell height more than triples
+  within roughly 12 h and cells then sit at terminal size for roughly another 12 h before being removed at the chondro-osseous
+  junction. Stereologically, the rat proximal tibia shows a 4-fold height and 10-fold volume increase from proliferative
+  to late hypertrophic stage. None of this has been measured in human cells.'
 quantitative:
 - parameter: chondrocyte volume at start of enlargement
   value: '600'
@@ -110,8 +108,7 @@ quantitative:
 - parameter: reduction in hypertrophic cell height, Igf1 null
   value: '30'
   unit: '% shorter'
-  conditions: direction of elongation; Igf1-null mice are 35% smaller with unchanged hypertrophic cell
-    number
+  conditions: direction of elongation; Igf1-null mice are 35% smaller with unchanged hypertrophic cell number
   species: mouse
   source_ref: cooper2013
   uncertainty: not reported
@@ -135,7 +132,17 @@ quantitative:
   conditions: proximal tibia, rat, stereology on optimally fixed tissue
   species: rat
   source_ref: hunziker1987
-  uncertainty: not reported
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: hunziker1987 is by
+    the same laboratory and uses the same stereological estimators as hunziker1989, whose Methods state that vertical
+    cell height ''cannot be determined by direct measurement on histological sections'' and cite cruzorive1986 for
+    a super-egg / oblate-spheroid model in its place, and which further states that some of its 35-day estimators
+    had already appeared in hunziker1987. So ANY CELL HEIGHT FIGURE FROM THIS SOURCE IS A SHAPE-MODEL OUTPUT, not
+    a measurement, and inherits the biases set out in CORR-009 - height computed as volume divided by a width second
+    moment at a fixed unmeasured shape exponent, with opposite-signed tilt bias on height and width in the hypertrophic
+    zone. NOT VERIFIED AGAINST hunziker1987''s OWN METHODS SECTION: its full text has never been obtained (the PDF
+    supplied 2026-08-06 was a Literature Abstracts listing page). The inheritance is inferred from hunziker1989 and
+    cruzorive1986, and is graded accordingly. VOLUME figures from this source are not affected - that estimator is
+    unbiased.'
 - parameter: mean cell volume increase, proliferative to late hypertrophic
   value: '10'
   unit: fold
@@ -169,9 +176,9 @@ localization:
 - 'rat HZ: measured by stereology (hunziker1987)'
 - 'human HZ: unmeasured'
 human_evidence: absent
-human_evidence_note: No quantitative phase, interferometric or stereological measurement of human hypertrophic
-  chondrocyte volume or dry mass density exists; a targeted PubMed search returned six records, none in
-  human growth plate tissue (search log g_l1arch_008).
+human_evidence_note: No quantitative phase, interferometric or stereological measurement of human hypertrophic chondrocyte
+  volume or dry mass density exists; a targeted PubMed search returned six records, none in human growth plate tissue
+  (search log g_l1arch_008).
 species_basis:
 - mouse
 - rat
@@ -179,8 +186,8 @@ species_basis:
 - multiple
 translation_risk: high
 translation_risk_reason: Every number in this node is rodent (or jerboa). The mammalian volume-versus-growth-rate
-  relationship already fails in birds (barreto1994) and has a species-specific slope between rat and pig
-  (breur1991), so the mouse volume set points cannot be applied to human plates without measurement.
+  relationship already fails in birds (barreto1994) and has a species-specific slope between rat and pig (breur1991),
+  so the mouse volume set points cannot be applied to human plates without measurement.
 confidence: C
 key_refs:
 - ref_id: cooper2013
@@ -188,36 +195,36 @@ key_refs:
   first_author: Cooper KL
   year: 2013
   type: primary
-  one_line_finding: Three phases of chondrocyte enlargement, including a dry-mass-diluting swelling phase;
-    phase 3 duration is IGF-dependent and sets differential growth.
+  one_line_finding: Three phases of chondrocyte enlargement, including a dry-mass-diluting swelling phase; phase 3
+    duration is IGF-dependent and sets differential growth.
 - ref_id: hunziker1987
   pmid: '3543020'
   first_author: Hunziker EB
   year: 1987
   type: primary
-  one_line_finding: 4-fold height and 10-fold volume increase from proliferative to late hypertrophic
-    chondrocyte in rat proximal tibia.
+  one_line_finding: 4-fold height and 10-fold volume increase from proliferative to late hypertrophic chondrocyte
+    in rat proximal tibia.
 - ref_id: breur1991
   pmid: '2010838'
   first_author: Breur GJ
   year: 1991
   type: primary
-  one_line_finding: Linear relationship between final hypertrophic volume and elongation rate in rat and
-    pig, with species-specific slope.
+  one_line_finding: Linear relationship between final hypertrophic volume and elongation rate in rat and pig, with
+    species-specific slope.
 - ref_id: breur1994
   pmid: '7943757'
   first_author: Breur GJ
   year: 1994
   type: primary
-  one_line_finding: Serial-section and stereological reconstruction localises where in the plate the chondrocyte
-    volume and shape change begins and ends.
+  one_line_finding: Serial-section and stereological reconstruction localises where in the plate the chondrocyte volume
+    and shape change begins and ends.
 - ref_id: barreto1994
   pmid: '8146454'
   first_author: Barreto C
   year: 1994
   type: primary
-  one_line_finding: In ducklings and chicks the mammalian hypertrophic-volume/growth-rate relationship
-    does not hold, showing it is not a universal amniote rule.
+  one_line_finding: In ducklings and chicks the mammalian hypertrophic-volume/growth-rate relationship does not hold,
+    showing it is not a universal amniote rule.
 open_questions:
 - g_l1arch_008
 - g_l1arch_009

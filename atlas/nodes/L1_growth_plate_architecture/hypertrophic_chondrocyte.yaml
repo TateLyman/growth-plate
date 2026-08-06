@@ -6,28 +6,26 @@ aliases:
 type: cell_type
 layer: L1
 stub: false
-summary: 'The hypertrophic chondrocyte is the cell whose volume increase produces most of the elongation
-  of a long bone. In mouse proximal tibia it reaches about 14,000 fl from a starting volume of about 600
-  fl, a roughly 23-fold increase, achieved by three sequential mechanisms: proportionate biosynthetic
-  growth, then a swelling phase that dilutes dry mass density from 0.183 to about 0.07 pg/fl, then renewed
-  proportionate growth at that low density. In rat the same process is described stereologically as a
-  4-fold height and 10-fold volume increase accompanied by 2-5 fold increases in rough endoplasmic reticulum,
-  Golgi and mitochondrial compartments, so these are not degenerate cells; time-lapse imaging confirms
-  they remain alive up to the chondro-osseous junction, passing through a discrete condensation stage
-  immediately before removal. Final volume correlates linearly with elongation rate across four plates
-  and two ages in rat (r=0.98) and pig (r=0.83), with a species-specific slope, and the relationship fails
-  altogether in birds. No human hypertrophic chondrocyte volume has been reported with unbiased stereology.
-  The human terminal cell HEIGHT along the growth axis has been measured twice, and the two measurements
-  do not agree. Kember and Sissons report 33 +/- 5 um for the distal femur at ages 5-8 and 29-38 um across
-  twelve subjects from birth to thirteen years with no age dependence, from celloidin sections with a
-  measured 13% linear processing shrinkage corrected for. Thurston and Kember report 20.5 um from one
-  10-year-old distal femur and 26 um from one 18-month-old metatarsal, from decalcified paraffin with no
-  shrinkage correction stated. The disagreement is 61%, and the smaller value lies outside the entire range
-  of the larger series. Reaching 20.5 um from 33 um requires 38% linear shrinkage. The method asymmetry
-  runs one way - more subjects, more cells per subject, less shrinkage-prone embedding and an explicit
-  correction all favour the higher value - but nothing in either paper settles it, and it is recorded as
-  a contradiction rather than averaged. The distinction matters because this height is the conversion factor
-  that turns a cell flux into a length flux in every derivation of the human cell cycle time.'
+summary: 'The hypertrophic chondrocyte is the cell whose volume increase produces most of the elongation of a long
+  bone. In mouse proximal tibia it reaches about 14,000 fl from a starting volume of about 600 fl, a roughly 23-fold
+  increase, achieved by three sequential mechanisms: proportionate biosynthetic growth, then a swelling phase that
+  dilutes dry mass density from 0.183 to about 0.07 pg/fl, then renewed proportionate growth at that low density.
+  In rat the same process is described stereologically as a 4-fold height and 10-fold volume increase accompanied
+  by 2-5 fold increases in rough endoplasmic reticulum, Golgi and mitochondrial compartments, so these are not degenerate
+  cells; time-lapse imaging confirms they remain alive up to the chondro-osseous junction, passing through a discrete
+  condensation stage immediately before removal. Final volume correlates linearly with elongation rate across four
+  plates and two ages in rat (r=0.98) and pig (r=0.83), with a species-specific slope, and the relationship fails
+  altogether in birds. No human hypertrophic chondrocyte volume has been reported with unbiased stereology. The human
+  terminal cell HEIGHT along the growth axis has been measured twice, and the two measurements do not agree. Kember
+  and Sissons report 33 +/- 5 um for the distal femur at ages 5-8 and 29-38 um across twelve subjects from birth to
+  thirteen years with no age dependence, from celloidin sections with a measured 13% linear processing shrinkage corrected
+  for. Thurston and Kember report 20.5 um from one 10-year-old distal femur and 26 um from one 18-month-old metatarsal,
+  from decalcified paraffin with no shrinkage correction stated. The disagreement is 61%, and the smaller value lies
+  outside the entire range of the larger series. Reaching 20.5 um from 33 um requires 38% linear shrinkage. The method
+  asymmetry runs one way - more subjects, more cells per subject, less shrinkage-prone embedding and an explicit correction
+  all favour the higher value - but nothing in either paper settles it, and it is recorded as a contradiction rather
+  than averaged. The distinction matters because this height is the conversion factor that turns a cell flux into
+  a length flux in every derivation of the human cell cycle time.'
 quantitative:
 - parameter: final volume, fast plate
   value: '14000'
@@ -63,7 +61,17 @@ quantitative:
   conditions: rat proximal tibia, stereology
   species: rat
   source_ref: hunziker1987
-  uncertainty: not reported
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: hunziker1987 is by
+    the same laboratory and uses the same stereological estimators as hunziker1989, whose Methods state that vertical
+    cell height ''cannot be determined by direct measurement on histological sections'' and cite cruzorive1986 for
+    a super-egg / oblate-spheroid model in its place, and which further states that some of its 35-day estimators
+    had already appeared in hunziker1987. So ANY CELL HEIGHT FIGURE FROM THIS SOURCE IS A SHAPE-MODEL OUTPUT, not
+    a measurement, and inherits the biases set out in CORR-009 - height computed as volume divided by a width second
+    moment at a fixed unmeasured shape exponent, with opposite-signed tilt bias on height and width in the hypertrophic
+    zone. NOT VERIFIED AGAINST hunziker1987''s OWN METHODS SECTION: its full text has never been obtained (the PDF
+    supplied 2026-08-06 was a Literature Abstracts listing page). The inheritance is inferred from hunziker1989 and
+    cruzorive1986, and is graded accordingly. VOLUME figures from this source are not affected - that estimator is
+    unbiased.'
 - parameter: mean cell volume increase, proliferative to late hypertrophic
   value: '10'
   unit: fold
@@ -74,46 +82,44 @@ quantitative:
 - parameter: terminal hypertrophic cell height along the growth axis
   value: '33'
   unit: um
-  conditions: human distal femur, ages 5-8 y, necropsy; maximum dimension of the cell space along the growth
-    axis, five groups of ten cells per specimen; celloidin, 13% linear shrinkage measured and corrected
+  conditions: human distal femur, ages 5-8 y, necropsy; maximum dimension of the cell space along the growth axis,
+    five groups of ten cells per specimen; celloidin, 13% linear shrinkage measured and corrected
   species: human
   source_ref: kember1976
-  uncertainty: +/- 5 um SD; 12 subjects birth to 14 y give 29-38 um with no age dependence. Contradicts
-    thurston1985 (20.5 um, n=1, decalcified paraffin, no shrinkage correction) by 61%.
+  uncertainty: +/- 5 um SD; 12 subjects birth to 14 y give 29-38 um with no age dependence. Contradicts thurston1985
+    (20.5 um, n=1, decalcified paraffin, no shrinkage correction) by 61%.
 - parameter: terminal hypertrophic cell height, full human series
   value: 29-38
   unit: um
-  conditions: human distal femur, 12 subjects from birth to 13 years; no evidence of age dependence across
-    the series. The two 14-year-olds, with closure in progress, gave 39 um (male) and 25 um (female)
+  conditions: human distal femur, 12 subjects from birth to 13 years; no evidence of age dependence across the series.
+    The two 14-year-olds, with closure in progress, gave 39 um (male) and 25 um (female)
   species: human
   source_ref: kember1976
-  uncertainty: range of per-subject means; this is the only multi-subject human series of this measurement
-    in existence
+  uncertainty: range of per-subject means; this is the only multi-subject human series of this measurement in existence
 - parameter: terminal hypertrophic cell volume
   value: 4135-14997
   unit: um^3
-  conditions: 28-day-old Long-Evans rat, four growth plates; 14,997 proximal tibia (fastest, 396 um/day)
-    to 4,135 proximal radius (slowest, 47 um/day), volume-weighted mean cell volume by stereology
+  conditions: 28-day-old Long-Evans rat, four growth plates; 14,997 proximal tibia (fastest, 396 um/day) to 4,135
+    proximal radius (slowest, 47 um/day), volume-weighted mean cell volume by stereology
   species: rat
   source_ref: wilsman1996
   uncertainty: SD 1,970 / 2,220 / 1,570 / 510 respectively; correlates with elongation rate across plates
 - parameter: cell fraction of the volume removed at the chondro-osseous junction
   value: 0.504-0.685
   unit: fraction
-  conditions: 28-day-old rat; hypertrophic-zone volume fraction, 0.685 proximal tibia, 0.675 distal radius,
-    0.595 distal tibia, 0.504 proximal radius
+  conditions: 28-day-old rat; hypertrophic-zone volume fraction, 0.685 proximal tibia, 0.675 distal radius, 0.595
+    distal tibia, 0.504 proximal radius
   species: rat
   source_ref: wilsman1996
-  uncertainty: 'SD 0.021-0.042. THIS, NOT THE 44-59% ENLARGEMENT FIGURE, is the quantity to compare a
-    measured terminal cell HEIGHT against: it equals cell division plus cell enlargement (9+59=68.5%,
-    8+43=51.4%) and is a LOWER bound on the axial-height fraction, because longitudinal septa add volume
-    without adding axial length.'
+  uncertainty: 'SD 0.021-0.042. THIS, NOT THE 44-59% ENLARGEMENT FIGURE, is the quantity to compare a measured terminal
+    cell HEIGHT against: it equals cell division plus cell enlargement (9+59=68.5%, 8+43=51.4%) and is a LOWER bound
+    on the axial-height fraction, because longitudinal septa add volume without adding axial length.'
 - parameter: terminal hypertrophic cell height along the growth axis
   value: '20.5'
   unit: um
-  conditions: human distal femur, 10-year-old girl (osteosarcoma of contralateral tibia), mean of 20 cells
-    along the metaphyseal border measured with an eyepiece graticule; formal saline fixation, neutral EDTA
-    decalcification, paraffin section, no shrinkage correction reported
+  conditions: human distal femur, 10-year-old girl (osteosarcoma of contralateral tibia), mean of 20 cells along the
+    metaphyseal border measured with an eyepiece graticule; formal saline fixation, neutral EDTA decalcification,
+    paraffin section, no shrinkage correction reported
   species: human
   source_ref: thurston1985
   uncertainty: no dispersion reported; n=1 subject, 20 cells; decalcified paraffin histology shrinks hypertrophic
@@ -121,17 +127,16 @@ quantitative:
 - parameter: terminal hypertrophic cell height along the growth axis
   value: '26'
   unit: um
-  conditions: human metatarsals, 18-month-old girl (congenital absence of tibia), same method; the distal
-    fibula of the same child gave the same value but that bone is described by the authors as grossly abnormal
+  conditions: human metatarsals, 18-month-old girl (congenital absence of tibia), same method; the distal fibula of
+    the same child gave the same value but that bone is described by the authors as grossly abnormal
   species: human
   source_ref: thurston1985
-  uncertainty: no dispersion reported; n=1 subject; the child's underlying diagnosis is a limb malformation,
-    so this is not a normal-development value
+  uncertainty: no dispersion reported; n=1 subject; the child's underlying diagnosis is a limb malformation, so this
+    is not a normal-development value
 - parameter: terminal hypertrophic cell height along the growth axis
   value: 22-35
   unit: um
-  conditions: pig distal femur, five animals aged 8.0-10.5 months (two of the five undated), same graticule
-    method
+  conditions: pig distal femur, five animals aged 8.0-10.5 months (two of the five undated), same graticule method
   species: porcine
   source_ref: thurston1985
   uncertainty: range across five animals (29, 22, 27, 35, 32 um); no within-animal dispersion reported
@@ -157,13 +162,13 @@ localization:
 - 'human HZ distal femur: axial cell height 20.5 um, n=1 subject (thurston1985) - CONTRADICTS the above'
 - 'rat HZ: cell volumes 4,135-14,997 um3 and cell volume fraction 0.504-0.685 at the junction (wilsman1996)'
 human_evidence: direct
-human_evidence_note: Human terminal hypertrophic cell height is measured, not inferred, but the two human
-  measurements disagree by 61% - 33 +/- 5 um over twelve subjects (kember1976) against 20.5 um in one
-  (thurston1985), with the methodological asymmetry running one way. What remains absent is
-  a human VOLUME, because height without a transverse cross-sectional area cannot give one, and the transverse
-  dimension was not measured in that study or any other human study found. The two subjects also carry
-  disease context (osteosarcoma of the contralateral tibia; congenital absence of the tibia), and the tissue
-  was decalcified paraffin, which shrinks hypertrophic lacunae by an amount nobody has quantified.
+human_evidence_note: Human terminal hypertrophic cell height is measured, not inferred, but the two human measurements
+  disagree by 61% - 33 +/- 5 um over twelve subjects (kember1976) against 20.5 um in one (thurston1985), with the
+  methodological asymmetry running one way. What remains absent is a human VOLUME, because height without a transverse
+  cross-sectional area cannot give one, and the transverse dimension was not measured in that study or any other human
+  study found. The two subjects also carry disease context (osteosarcoma of the contralateral tibia; congenital absence
+  of the tibia), and the tissue was decalcified paraffin, which shrinks hypertrophic lacunae by an amount nobody has
+  quantified.
 species_basis:
 - mouse
 - rat
@@ -171,9 +176,8 @@ species_basis:
 - chicken
 - human
 translation_risk: high
-translation_risk_reason: The volume-versus-growth-rate relationship that makes this cell the central lever
-  has a species-specific slope between rat and pig and does not hold in birds, so human values cannot
-  be predicted from rodent data.
+translation_risk_reason: The volume-versus-growth-rate relationship that makes this cell the central lever has a species-specific
+  slope between rat and pig and does not hold in birds, so human values cannot be predicted from rodent data.
 confidence: C
 key_refs:
 - ref_id: cooper2013
@@ -188,22 +192,20 @@ key_refs:
   first_author: Hunziker EB
   year: 1987
   type: primary
-  one_line_finding: 4-fold height, 10-fold volume and 2-5 fold organelle increases in rat hypertrophic
-    chondrocytes.
+  one_line_finding: 4-fold height, 10-fold volume and 2-5 fold organelle increases in rat hypertrophic chondrocytes.
 - ref_id: breur1991
   pmid: '2010838'
   first_author: Breur GJ
   year: 1991
   type: primary
-  one_line_finding: Final hypertrophic volume correlates linearly with elongation rate in rat and pig
-    with different slopes.
+  one_line_finding: Final hypertrophic volume correlates linearly with elongation rate in rat and pig with different
+    slopes.
 - ref_id: farnum1990
   pmid: '2201757'
   first_author: Farnum CE
   year: 1990
   type: primary
-  one_line_finding: Terminal hypertrophic chondrocytes are viable living cells at the chondro-osseous
-    junction.
+  one_line_finding: Terminal hypertrophic chondrocytes are viable living cells at the chondro-osseous junction.
 - ref_id: barreto1994
   pmid: '8146454'
   first_author: Barreto C
@@ -215,22 +217,22 @@ key_refs:
   first_author: Kember NF
   year: 1976
   type: primary
-  one_line_finding: Human terminal hypertrophic cell height is 33 +/- 5 um at ages 5-8 and 29-38 um across
-    12 subjects from birth to 13 y, with no age dependence; celloidin with a measured 13% shrinkage correction.
+  one_line_finding: Human terminal hypertrophic cell height is 33 +/- 5 um at ages 5-8 and 29-38 um across 12 subjects
+    from birth to 13 y, with no age dependence; celloidin with a measured 13% shrinkage correction.
 - ref_id: wilsman1996
   pmid: '8982136'
   first_author: Wilsman NJ
   year: 1996
   type: primary
-  one_line_finding: Terminal hypertrophic cell volume ranges 4,135-14,997 um3 across four rat plates and
-    the cell occupies 50-69% of the volume removed at the chondro-osseous junction.
+  one_line_finding: Terminal hypertrophic cell volume ranges 4,135-14,997 um3 across four rat plates and the cell
+    occupies 50-69% of the volume removed at the chondro-osseous junction.
 - ref_id: thurston1985
   pmid: '3864550'
   first_author: Thurston MN
   year: 1985
   type: primary
-  one_line_finding: Terminal hypertrophic cell height in human growth plate is 20.5 um (distal femur, 10
-    y) and 26 um (metatarsals, 18 mo), and 22-35 um across five pig distal femora.
+  one_line_finding: Terminal hypertrophic cell height in human growth plate is 20.5 um (distal femur, 10 y) and 26
+    um (metatarsals, 18 mo), and 22-35 um across five pig distal femora.
 open_questions:
 - g_l1arch_009
 - g_l1arch_008

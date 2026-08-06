@@ -5,16 +5,15 @@ aliases:
 type: tissue_structure
 layer: L1
 stub: false
-summary: 'The proximal tibial physis is the second fastest human plate and the workhorse of experimental
-  growth biology, because in rodents it is the fastest plate and is easy to access. In humans it supplies
-  about 57% of tibial length overall, rising from 50% at age 7 to 80% at 14 in girls and to 80% at 16
-  in boys. In the rat it is the reference plate for essentially every quantitative statement in this layer:
-  elongating at the top of the 50-400 um/24 h range, with a proliferative cycle time of 30.9 h, an elongation
-  partition of 9% division / 32% matrix / 59% hypertrophy, production of about 16,400 new chondrocytes
-  per day, and loss of one cell per column every 3 h. In the mouse it is where the three-phase hypertrophic
-  enlargement trajectory was defined, reaching a final chondrocyte volume of about 14,000 fl. The gap
-  between this richly characterised rodent plate and the human plate of the same name is the central translational
-  problem of the layer: the human proximal tibia has none of these parameters measured.'
+summary: 'The proximal tibial physis is the second fastest human plate and the workhorse of experimental growth biology,
+  because in rodents it is the fastest plate and is easy to access. In humans it supplies about 57% of tibial length
+  overall, rising from 50% at age 7 to 80% at 14 in girls and to 80% at 16 in boys. In the rat it is the reference
+  plate for essentially every quantitative statement in this layer: elongating at the top of the 50-400 um/24 h range,
+  with a proliferative cycle time of 30.9 h, an elongation partition of 9% division / 32% matrix / 59% hypertrophy,
+  production of about 16,400 new chondrocytes per day, and loss of one cell per column every 3 h. In the mouse it
+  is where the three-phase hypertrophic enlargement trajectory was defined, reaching a final chondrocyte volume of
+  about 14,000 fl. The gap between this richly characterised rodent plate and the human plate of the same name is
+  the central translational problem of the layer: the human proximal tibia has none of these parameters measured.'
 quantitative:
 - parameter: share of tibial longitudinal growth
   value: '57'
@@ -36,7 +35,15 @@ quantitative:
   conditions: 28-day-old rat
   species: rat
   source_ref: wilsman1996
-  uncertainty: not reported
+  uncertainty: 'not reported PROVENANCE FLAG, added 2026-08-06 by the transitive method audit: THIS IS A CALCULATED
+    PARTITION, NOT A MEASUREMENT, and the paper states its assumptions plainly - ''the calculation of the relative
+    contributions to elongation ... requires making two assumptions. First, we continue to assume steady-state kinetics
+    over a short time span (24 hours). Second, we assume that the growth plate is modeled as a two-compartment system
+    (cells and matrix).'' The proliferative zones are further ''modeled as circular cylinders of diameter 1''. THE
+    THREE SHARES ARE NOT INDEPENDENT ESTIMATES: they are one volume budget divided three ways and sum to 100% by construction,
+    and matrix volume per cell is obtained as the COMPLEMENT of the cell volume fraction, (1 - Vv) x V_total / N,
+    rather than measured. Any error in the cell volume or numerical density moves all three shares together. Nothing
+    downstream may treat them as three independent measurements or propagate independent uncertainties on them.'
 - parameter: new chondrocytes produced per day
   value: '16400'
   unit: cells/day
@@ -70,16 +77,16 @@ localization:
 - 'rat proximal tibia: reference plate for kinetics (wilsman1996, hunziker1987)'
 - 'mouse proximal tibia: reference plate for hypertrophic volume (cooper2013)'
 human_evidence: direct
-human_evidence_note: The human proximal tibial contribution to tibial length is measured radiographically
-  in 244 children (pritchett1992); all cellular parameters attributed to this plate are rodent.
+human_evidence_note: The human proximal tibial contribution to tibial length is measured radiographically in 244 children
+  (pritchett1992); all cellular parameters attributed to this plate are rodent.
 species_basis:
 - human
 - rat
 - mouse
 - ovine
 translation_risk: high
-translation_risk_reason: Almost everything quantitative known about the proximal tibial plate is rat or
-  mouse; the human plate of the same name has only a share-of-segment-growth figure.
+translation_risk_reason: Almost everything quantitative known about the proximal tibial plate is rat or mouse; the
+  human plate of the same name has only a share-of-segment-growth figure.
 confidence: B
 key_refs:
 - ref_id: pritchett1992
@@ -87,15 +94,14 @@ key_refs:
   first_author: Pritchett JW
   year: 1992
   type: primary
-  one_line_finding: Proximal tibia supplies ~57% of tibial growth in 244 children, rising from 50% at
-    age 7 to 80% at maturity.
+  one_line_finding: Proximal tibia supplies ~57% of tibial growth in 244 children, rising from 50% at age 7 to 80%
+    at maturity.
 - ref_id: wilsman1996
   pmid: '8982136'
   first_author: Wilsman NJ
   year: 1996
   type: primary
-  one_line_finding: Rat proximal tibial elongation partition of 9/32/59 and daily production of 16,400
-    chondrocytes.
+  one_line_finding: Rat proximal tibial elongation partition of 9/32/59 and daily production of 16,400 chondrocytes.
 - ref_id: wilsman1996a
   pmid: '8764865'
   first_author: Wilsman NJ
