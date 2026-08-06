@@ -93,3 +93,83 @@ conceal. Recorded as a possibility that changes the calculus **if true**, not as
 Items 1–3 are correspondence and desk work on data that exists. Item 4 is a research programme,
 and the human tissue to start it on — Chu's two-month growth-plate explant — is already
 characterised.
+
+---
+
+# Part 2 — the analyses, run
+
+## A. Survival on age: sixteen observations, zero events
+
+The intended analysis was a survival curve on **height**. It cannot be done: only **1 of the 14**
+tabulated male aromatase cases reports a height in its abstract, and the rest are old, paywalled
+case reports. **Ages are recoverable where heights are not.**
+
+Ages at last observation with open epiphyses or ongoing growth:
+**17.0, 24.0, 24.0, 24.25, 25.0, 27.0, 27.0, 29.0, 31.5, 37.0 years.**
+
+| | |
+|---|---|
+| observations | 16 |
+| with a recoverable age | 10 |
+| **events (spontaneous closure)** | **0** |
+| all observations | **right-censored** |
+| maximum age with open epiphyses | **37 years** |
+
+**Kaplan-Meier: S(t) = 1.00 at every observed age. Median age at closure: undefined.**
+
+That is the formal statement of the census — *the survival function never falls*. Six of the
+sixteen have no recoverable age at all, so 37 years is a floor on what the **literature** contains,
+not on what the **clinical records** contain.
+
+## B. The one measured rate, and what it predicts
+
+The Smith propositus is the only person in the entire record with **two bone ages**:
+
+**15 → 17.5 over 3.5 chronological years = 0.71 bone-age years per year — 71% of normal, with no
+functional ERα.**
+
+Extrapolating: from bone age 17.5 at ~31.5, he reaches **18 at ~32** and **19 — where male fusion
+is typically complete — at ~34**.
+
+> **So even the man whose growth plate could not be switched off was probably within a few years
+> of stopping when last seen.** At 204 cm at 28 and a declining terminal velocity of 1–2 cm/yr over
+> the remaining five to eight years, **a final height around 208–215 cm follows.**
+
+n=1, two points, and read as an order of magnitude rather than a prediction. **His own numbers say
+the rate is not constant** — a lifetime average (bone age 15 at 28) is 0.54 y/y against the 0.71
+measured in his late twenties. **The residual maturation appears to accelerate with age**, which is
+what an androgen-driven route would do and an intrinsic clock would not.
+
+## C. The residual route: the logic is clean and the data is one point short
+
+|  | ligand | ERα | ERβ / non-classical |
+|---|---|---|---|
+| **ESR1-null** | present, in excess | **absent** | liganded, functional |
+| **Aromatase-null** | **absent** | intact | unliganded |
+
+If residual maturation ran through **ERβ or a non-classical receptor**, the aromatase-deficient man
+— who has no ligand at all — should mature **more slowly** than the ESR1-null man. **Matching rates
+would exclude every ligand-dependent oestrogen route** and leave androgen or the intrinsic
+senescence programme.
+
+**The test needs two bone ages in an aromatase-deficient patient. No published case has them.**
+Morishima gives one point (bone age 14 at 24.25); a single point yields no velocity without
+assuming when divergence began, and that assumption swings the answer between 0.16 and 0.58 y/y —
+which spans the entire question.
+
+**A second bone age in any living aromatase-deficient patient would settle it, and roughly fifteen
+are described in the literature.** That is a radiograph.
+
+## What this changes
+
+The honest ceiling is **not unlimited and probably not far above 210 cm** — because removing
+oestrogen does not stop skeletal maturation, it slows it to about 71%. The intrinsic programme
+runs regardless. **Oestrogen is an accelerator on a clock that ticks anyway.**
+
+Which means the height question resolves into two, and only the second is open:
+
+1. **Slow the accelerator** — oestrogen blockade. Ceiling ≈ +30 cm, threshold-gated, bone cost
+   possibly recoverable. *Bounded, and now roughly quantified.*
+2. **Slow the clock itself** — the intrinsic, division-dependent senescence programme. **Never
+   attempted in any species.** This is where the remaining headroom is, and it is the same
+   quantity as the stem-cell budget, the growth fraction, and population asymmetry.
