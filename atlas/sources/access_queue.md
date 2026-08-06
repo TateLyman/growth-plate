@@ -101,3 +101,63 @@ Every row below blocked a specific audit question in `atlas/audit/mechanism_audi
 | P2 | Pfeifer A, Aszodi A, Seidler U, Ruth P, Hofmann F, Fassler R. Intestinal secretory defects and dwarfism in mice lacking cGMP-dependent protein kinase II. Science 1996;274:2082-2086. PMID 8953039 | 10.1126/science.274.5295.2082 | **The growth plate histology panel and any zone measurements**: whether the Prkg2-null mouse plate is expanded as in the KMI rat, and by how much. This is the mouse counterpart of the sign conflict in CORR-003 and gap g_l2d_001; without it the conflict rests on one species | l2daudit |
 | P3 | Schrier L, Ferns SP, Barnes KM, et al. Depletion of resting zone chondrocytes during growth plate senescence. J Endocrinol 2006;189:27-36. PMID 16614378 | 10.1677/joe.1.06489 | **The resting-zone cell-count-versus-age table**: cells per unit area or per column by age with n, and the proliferation-rate series. `growth_plate_senescence` states "fewer resting zone cells per unit area" with no number attached | l2daudit |
 | P3 | Jobert AS, Zhang P, Couvineau A, et al. Absence of functional receptors for parathyroid hormone and parathyroid hormone-related peptide in Blomstrand chondrodysplasia. J Clin Invest 1998;102:34-40. PMID 9649554 | 10.1172/JCI2918 | **The paternal-allele analysis only**: what was done to establish non-expression of the paternal PTH1R allele and what was excluded. PMC509062 is a scanned page-image deposit with no machine-readable body. Needed for gap g_l2d_007 | l2daudit |
+
+
+---
+
+## Published corrections whose NOTICE BODY could not be retrieved (added 2026-08-06)
+
+The standing sweep (`atlas/tools/standing.py`) found **33 references carrying a published
+correction or erratum**, and **not one notice body is retrievable through the open API** —
+Europe PMC indexes the notice's existence and title (`Department of Error`, `Publisher
+Correction: ...`) and nothing else. An erratum can silently change a figure this atlas
+quotes a number from, so each is flagged `has_published_correction: true` with
+`correction_checked: false` in the bibliography and listed here.
+
+**21 of the 33 supply quantitative rows.** Those are the ones where an unread correction
+can move a number, and they are ordered by how many rows depend on them.
+
+| Pri | Ref | quant rows | notice types | Nodes affected |
+|---|---|---:|---|---|
+| P1 | `bethlehem2022` | 13 | comment, correction, erratum, preprint_in | allometry_organ_scaling, brain_growth_trajectory, head_circumference_growth |
+| P1 | `smith1994` | 8 | comment, erratum | central_precocious_puberty, esr1_gene, estrogen_driven_fusion, estrogen_receptor_alpha |
+| P1 | `ogawa2025` | 7 | erratum | genomic_imprinting_growth, igf2_h19_imprinting |
+| P1 | `karlberg1995` | 6 | erratum | intrauterine_growth_restriction, sga_catch_up, small_for_gestational_age |
+| P1 | `wilson2021` | 5 | correction, erratum | column_density, growth_plate, growth_plate_height, hypertrophic_zone |
+| P1 | `savarirayan2020` | 5 | erratum | cnp_analog_pk_challenge, cnp_protein, fgfr3_npr2_crosstalk, vosoritide |
+| P2 | `zhang2023` | 4 | correction, erratum | hypoxic_gradient_signaling, nutrient_diffusion_growth_plate, oxygen_gradient_growth_plate |
+| P2 | `williams2001` | 3 | erratum | chondron, finite_element_model_physis, ovine_growth_plate_model, zonal_stiffness_gradient |
+| P2 | `kusumbe2014` | 3 | comment, erratum | metaphyseal_funnelization, metaphyseal_vasculature, primary_spongiosa, stem_cell_niche_vascular_coupling |
+| P2 | `domen2009` | 3 | erratum | als_igfals, igfals_gene |
+| P2 | `preece1978` | 2 | erratum | preece_baines_model |
+| P2 | `matsushita2025` | 2 | correction, erratum | meclizine_repurposing |
+| P2 | `khamis1994` | 2 | erratum | fels_method, remaining_growth_prediction |
+| P2 | `cui2025` | 2 | erratum | aromatase_inhibitor_anastrozole, aromatase_inhibitor_letrozole |
+| P2 | `wolthers2017` | 1 | erratum | knemometry |
+| P2 | `ruizperez2000` | 1 | comment, erratum | evc_evc2_complex |
+| P2 | `glasson2005` | 1 | erratum | adamts5 |
+| P2 | `frisancho1991` | 1 | erratum | lead_exposure_growth |
+| P2 | `farebrother2018` | 1 | erratum | iodine_deficiency_growth |
+| P2 | `clemens2026` | 1 | correction, erratum | deflazacort, glucocorticoid_sparing_strategy |
+| P2 | `anderson2004` | 1 | erratum | matrix_vesicle, pi_ppi_ratio, tnap_alpl |
+| P3 | `victora2008` | 0 | erratum | dohad_hypothesis, intrauterine_growth_restriction, maternal_nutrition_offspring_height, placental_function_growth |
+| P3 | `stjacques1999` | 0 | erratum | bone_collar_formation, ihh_bmp_crosstalk, ihh_protein, in_situ_hybridization_cartilage |
+| P3 | `sjgren2000` | 0 | erratum | gh_receptor |
+| P3 | `sayers2013` | 0 | erratum | preece_baines_model |
+| P3 | `savarirayan2026` | 0 | erratum | infigratinib_growth, navepegritide, tyrosine_kinase_inhibitor_growth_toxicity |
+| P3 | `sacchetti2007` | 0 | erratum | human_skeletal_stem_cell, marrow_stromal_cell |
+| P3 | `martin2019` | 0 | comment, correction, erratum, preprint_in | — |
+| P3 | `legeaimallet1998` | 0 | erratum | fgf9_ligand, fgfr3_receptor, fgfr3_stat1_branch |
+| P3 | `kawasaki2008` | 0 | erratum | pkg2_kinase |
+| P3 | `karimian2024` | 0 | correction, erratum | congenital_hypothyroidism |
+| P3 | `hoppe2006` | 0 | erratum | milk_consumption_height |
+| P3 | `basson1997` | 0 | correction, erratum | limb_bud_initiation, pitx1_gene, tbx5_gene |
+
+What is needed from each: **the notice body**, and specifically whether it changes any
+numeric value, figure or table that this atlas cites. Three were spot-checked and even
+their titles are uninformative — `savarirayan2020` (the vosoritide phase 3, 5 quant rows)
+carries a Lancet *Department of Error*; `wilson2021` (growth-plate morphometry, 5 quant
+rows) carries a corrigendum on the very morphometric parameters the atlas quotes.
+
+Until these are read, every number sourced from a flagged reference should be treated as
+`value_unverified` in spirit even where the field says otherwise.

@@ -368,3 +368,63 @@ tall.** That is one number, from one stain, on tissue that is already being disc
 40 000 draws, freeze-one variance decomposition on log output, common random numbers, seed
 20260805. Rankings should be recomputed as spans close. Full method and residual analysis:
 `atlas/quant/notebooks/consistency_report.md`.*
+
+
+---
+
+# ANNEX — feasibility, added 2026-08-06 (FINAL-01 item I)
+
+Ranking by uncertainty contribution says **what to measure**. It does not say whether the
+measurement is *possible*, and "nobody has measured this" is a much weaker claim than
+"**this is measurable by X and nobody has done it**". The second is actionable and the
+first is a complaint. Every Tier 1–3 item is annotated below with: does a technique exist
+that could make the measurement in human tissue **today**; what tissue it would need; and
+whether the same measurement has already been made in another species or tissue by a
+method that would transfer.
+
+Searches run live against Europe PMC on 2026-08-06; hit counts recorded so each is
+re-runnable.
+
+| # | measurement | technique exists for human? | tissue / sample requirement | already done elsewhere by a transferable method? |
+|---|---|---|---|---|
+| **1** | terminal hypertrophic cell **height** | **Yes** — stereology / optical disector on histological sections, entirely routine | a few fixed blocks of human physis; **epiphysiodesis and physeal-bar resection discard exactly this tissue routinely** (297 hits on human physeal surgery, e.g. arthroscopy-assisted bar resection, Xiao 2025) | **Yes, extensively** — 818 hits for growth-plate stereology/histomorphometry, essentially all rodent. The method is mature; only the human specimen is missing. |
+| **2** | human proliferative **cell cycle time** | **Partly** — cumulative EdU/BrdU labelling needs living tissue over hours to days, so *in vivo* human measurement is out. **Ex vivo explant labelling of surgical waste at 2–5 % O₂ is the only route.** | fresh (not fixed) human physeal tissue, transported live | **Barely** — only **43** hits for cumulative labelling + cycle time in chondrocytes across all species. This is a thin methodological literature, which is itself why the human number has never been produced. |
+| **3** | per-plate **vertebral growth rate** | **Yes** — serial calibrated radiography or low-dose EOS in children already under spinal surveillance | no tissue; imaging already being acquired for clinical reasons | Yes — the porcine and ovine tether literature measures per-plate growth directly (Halanski 2026 on biphasic tether-tension effects). |
+| **4** | absolute **tibial elongation rate**, age-resolved | **Yes** — knemometry and serial imaging; both already in the atlas as methods | none | Yes — the human femur figure exists; the tibia simply was not extracted. |
+| **5** | **columns per plate** / areal density | **Yes** — same sections as item 1, a different count on the same slide | shares item 1's specimen entirely | Yes, rodent. |
+| **6** | **zonal stiffness** direction | **Yes** — AFM and nanoindentation on cartilage are routine (**1,187** hits, including human articular cartilage and chondrocyte-level measurements) | fresh human physeal tissue, unfixed, ideally the same surgical stream as item 2 | **Yes, in the wrong tissue.** The method is established on human *articular* cartilage and on animal physis. The human *physeal* measurement is the gap, not the technique. |
+| **7** | **in vivo physeal stress** in a human | **Yes, indirectly and already being done** — musculoskeletal inverse dynamics driven by gait analysis, coupled to a subject-specific finite-element model. **Koller 2026 computes femoral growth-plate mechanics in humans from foot-progression-angle modifications**; Valkani 2026 addresses trans-physeal bridges as a mechanical "base isolation" | none — imaging plus motion capture in living children | **Yes.** This is the one Tier-3 item where the human measurement is not merely feasible but has begun. What the atlas lacks is the *extraction*, not the method. |
+| **8** | human elongation **partition** | **Yes** — it is arithmetic on items 1, 2 and 5 | none beyond items 1–2 | n/a — it is derived, not measured. |
+
+## What the annex changes
+
+**Six of the eight are limited by specimen access or by extraction effort, not by
+technique.** None of the Tier 1–3 items requires a method that does not exist.
+
+That reframes the whole agenda. The correct sentence is **not** "the field cannot measure
+these". It is:
+
+> **The two measurements carrying 85 % of the uncertainty in human longitudinal growth
+> can be made with a microtome and a fluorescent label, on tissue that paediatric
+> orthopaedic surgeons already remove and discard, and the reason they have not been made
+> is that nobody has asked for the specimens.**
+
+The one genuine methodological constraint is item 2: cumulative labelling needs *living*
+tissue, which makes it an ex-vivo explant measurement with all the caveats that carries,
+and the 43-hit literature says the technique itself is under-developed rather than merely
+unapplied.
+
+The one item that is further along than the atlas assumed is item 7: human in-vivo
+physeal stress is being computed today by inverse dynamics plus subject-specific FE
+modelling. `flow_model.py` halts on this parameter recording it as "not measured", and
+that is now known to be a **gap in the atlas's extraction, not a gap in the field.** It is
+the cheapest item on this list to close and it should be closed first.
+
+## The same upgrade applied to the exposure finding
+
+This annex does to the parameter agenda what was already done to the 0-of-12 exposure
+result: it converts *"nobody has measured the concentration a growth-modifying drug
+reaches inside human growth-plate cartilage"* into *"microdialysis and matched
+tissue-sampling protocols exist, the tissue is obtained surgically, and nobody has run
+them."* A gap with a named method attached is a proposal. A gap without one is a
+complaint.

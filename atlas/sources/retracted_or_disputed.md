@@ -10,6 +10,28 @@ claim is graded above D. Findings are logged here with the node ids affected.
 Result: **1,005 resolved OK · 0 metadata mismatches · 0 unresolved · 44 manual
 (non-indexed, `verify_by_hand`) · 1 retraction-related.**
 
+**Extended to standing surveillance on 2026-08-06** (`atlas/tools/standing.py`), which
+reads Europe PMC publication types *and* the comment/correction list *and* Crossref's
+`updated-by` relation — the last of which carries the Retraction Watch database. Over all
+1,051 references:
+
+| status | count | meaning |
+|---|---:|---|
+| **FATAL** | **1** | retraction / withdrawal — `wu2013`, CORR-004 |
+| SERIOUS | 0 | expression of concern |
+| **CHECK** | **33** | a published correction or erratum the atlas has never read |
+| OK | 973 | no notice of any kind |
+| no identifier | 44 | accessions, FDA labels, registry entries — **uncheckable by this tool, which is not the same as clean** |
+
+**PubPeer was NOT checked.** It requires a developer key (`PUBPEER_DEVKEY`) that is not
+set in this environment, so every reference above is *unchecked* on PubPeer rather than
+clean on PubPeer, and the tool records it that way rather than omitting the field.
+
+The 33 CHECK entries are listed with their dependent nodes in
+`atlas/sources/access_queue.md`; 21 of them supply quantitative rows. **None of the notice
+bodies is retrievable through the open API** — Europe PMC indexes that a Lancet
+*Department of Error* exists and not what it says.
+
 | Ref | Status | Evidence | Nodes affected | Action taken |
 |-----|--------|----------|----------------|--------------|
 | `wu2013` — Wu S *et al.* 2013, *J Biol Chem*, PMID 23940039 | **WITHDRAWN** | Europe PMC pubtype `Retracted Publication`; `Retraction in: J Biol Chem 2020;295(37):13137`, notice PMID **32917830**, title begins "Withdrawal:". No reason text is retrievable and none is asserted here. | `klotho_beta_cofactor`; edges `e01055`, `e01056`, `e01057`; gaps `g_l0l9_001`, `g_l0l9_009`, `g_para_007` | **CORR-004.** Disposition `both_invalid`. Claim *"FGF21 mediates undernutrition-induced growth-plate GH insensitivity"* **C → X**. Claim *"KLB is expressed in growth plate chondrocytes"* **C → D** (its replication was `wu2013`). Quantitative row voided and tombstoned. Edge `e01055` reclassified `activates`/C → `hypothesized_link`/speculative, reopening the L10→L3 seam. Reference retained and flagged rather than deleted. |

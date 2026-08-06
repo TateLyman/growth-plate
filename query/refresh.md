@@ -107,3 +107,64 @@ The **gaps and their search logs** are timestamped evidence of a null at a momen
 not become wrong — they become *dated*. A search log from 2026-08-05 remains a true record
 that the query returned nothing on that date, which is why the exact query string is stored.
 Re-running it is cheap; re-deriving the gap is not.
+
+
+---
+
+## 6. Cadence — activated 2026-08-06 (FINAL-01 item J)
+
+The protocol existed and was not running. It runs now, on this schedule:
+
+| axis | tool | cadence | why that interval |
+|---|---|---|---|
+| **source standing** — retractions, withdrawals, expressions of concern, errata | `atlas/tools/standing.py` | **quarterly**, and before any release | The measured event rate is ~3.4 % of the bibliography carrying a post-publication notice. A retraction is the one defect that gets *worse* with time and is invisible to every other gate. |
+| reference resolution / metadata drift | `atlas/tools/verify_refs.py` | **twice yearly**, and before any release | Slower-moving: metadata drift is rare and non-silent. |
+| `last_verified` decay on A/B nodes | the §1 snippet | **quarterly**, acting on nodes >12 months | See §1. |
+| X-grade claims | every re-sweep | unchanged | An X exists because the primary could not be traced; a new primary resolves it. |
+| watch list | §2 | on any trigger in §3 | unchanged |
+| **chokepoints** | `atlas/tools/fragility.py` | **on any merge that adds or removes edges** | A new bridge edge is a new single point of failure and should not appear silently. |
+
+Each cycle writes `query/refresh_cycle_NNN.json` so the decay rate itself becomes a
+measured quantity rather than an assumption.
+
+## 7. Cycle 001 — 2026-08-06, and it measured the wrong axis first
+
+**`last_verified` decay is not measurable on a build this young.** 341 A/B nodes, maximum
+`last_verified` age **1 day**, **0 stale**. Every node was verified during the build, so
+the 12-month rule has nothing to act on and will not for a year. Recording a "0 stale, all
+clear" would be true and worthless.
+
+**What had actually decayed was source standing, and it was decaying the whole time.**
+
+| | count | of 1,009 indexed refs |
+|---|---:|---:|
+| **FATAL** — retraction / withdrawal | **1** | 0.1 % |
+| SERIOUS — expression of concern | 0 | 0 % |
+| **CHECK** — published correction or erratum | **33** | **3.3 %** |
+| OK | 973 | 96.4 % |
+| no identifier (accessions, labels, registries — **uncheckable**, not clean) | 44 | — |
+
+**3.4 % of this bibliography carries a post-publication notice, and the atlas had looked
+at none of them before today.** The one FATAL is `wu2013` (CORR-004). The 33 CHECK
+entries are new: 21 of them supply quantitative rows, and none of their notice bodies is
+retrievable through the open API — they are escalated in
+`atlas/sources/access_queue.md` and flagged `has_published_correction: true` with
+`correction_checked: false` in the bibliography.
+
+Worst cases by dependency: `bethlehem2022` (13 quant rows), `smith1994` (8, and it is the
+ESR1-null case on which the whole L7 estrogen argument rests), `ogawa2025` (7),
+`karlberg1995` (6), `wilson2021` (5 — and the corrigendum is on the growth-plate
+morphometric parameters the atlas quotes), `savarirayan2020` (5 — the vosoritide phase 3).
+
+### The lesson for the cadence
+
+The first cycle measured a decay rate of **zero** on the axis the protocol was written
+around, and **3.4 %** on an axis it did not have. `last_verified` tracks *when the atlas
+last looked*. It does not track *whether the world moved*. Those are different clocks and
+only the second one was running.
+
+**X-grade nodes re-checked this cycle** (`mecasermin_rinfabate`,
+`telomere_attrition_chondrocyte`): both still X; their references are standing; no primary
+published since `last_verified` resolves either.
+
+Raw: `query/refresh_cycle_001.json`, `atlas/sources/standing_report.yaml`.
