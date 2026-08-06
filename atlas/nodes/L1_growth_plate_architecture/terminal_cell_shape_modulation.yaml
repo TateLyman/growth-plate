@@ -22,6 +22,16 @@ summary: 'Physiological change in longitudinal growth rate is carried by a chang
   width estimators carry opposite-signed orientation bias in hypertrophic cells, with magnitudes set by a
   cell-tilt distribution nobody measured. See CORR-009. What survives unchanged is the VOLUME result,
   which comes from an estimator the method paper calls unbiased irrespective of cell shape or orientation.
+  CORR-010, written the same day, reverses part of that. Terminal cell height HAS been measured without any
+  shape model: stokes2007 reads it directly off segmented profiles in 146 paired within-animal comparisons
+  across rat, rabbit and calf, with growth rate measured in the same specimen, and finds it tracks growth
+  (r=0.56, beta=1.39) better than proliferative cell number. And rubin2021, the study on the other side, is
+  not the direct 10^5-cell measurement recorded here: its predictor comparison spans three plate types, its
+  growth values come from previously published data on other animals, and its height is a bounding box on a
+  fitted ellipsoid while its volume is a direct mesh integral. In BOTH studies that compare the two variables
+  volume is the better-estimated one, which is how an estimator-quality difference would look. The live gap
+  is not the age of the 1989 paper but that HEIGHT AND VOLUME HAVE NEVER BEEN MEASURED AGAINST EACH OTHER BY
+  ESTIMATORS OF EQUAL QUALITY.
   It matters because it dissociates height from volume: the two move in OPPOSITE directions
   during acceleration, so the between-plate correlation of final hypertrophic VOLUME with elongation rate
   (r=0.98 in rat, r=0.83 in pig, breur1991) cannot be the causal relationship within a plate over time.
@@ -185,7 +195,21 @@ quantitative:
   uncertainty: 'overall correlation coefficients 0.38 (proliferative number) and 0.56 (chondrocytic
     height). REPLICATES hunziker1989''s ranking - cell enlargement contributes more than proliferation -
     in a DIFFERENT laboratory, a DIFFERENT perturbation (mechanical rather than developmental) and three
-    species. It does not replicate the height/volume dissociation, because only height was measured.'
+    species. It does not replicate the height/volume dissociation, because only height was measured.
+    UPGRADED IN READING 2026-08-06 (CORR-010): THIS IS A DIRECT, SHAPE-MODEL-FREE MEASUREMENT OF
+    TERMINAL CELL HEIGHT, and it is the largest one that exists. Hypertrophic cell profiles are
+    segmented automatically in 1.5 um sections with the stage rotated to align the growth axis, filtered
+    by form factor > 0.3, with partially sectioned and coalesced cells manually removed; measured
+    profile height is regressed against depth in the zone by a logistic fit and h_max read at the
+    chondro-osseous junction. No spheroid, super-egg or ellipsoid is fitted to the cell. 41 rats, 39
+    rabbits and 18 calves; 146 paired comparisons for h_max; the control plate is WITHIN THE SAME ANIMAL
+    (contralateral tibia, or adjacent vertebrae); and the growth rate is measured in the same specimen
+    by calcein / xylenol orange double labelling. So the claim written into this atlas on 2026-08-06 -
+    that terminal cell height has never been measured model-free at two growth rates in any species -
+    was WRONG, and this row is why. Residual limits: a 2D profile height still underestimates true cell
+    height unless the cell is cut centrally, and the paired design cancels that only if loading does not
+    itself change cell tilt or column alignment; and only height was measured, so this cannot adjudicate
+    height against volume.'
 - parameter: correlation of mean hypertrophic cell height with mechanically modulated growth rate
   value: '0.41'
   unit: Pearson r
@@ -345,15 +369,24 @@ quantitative:
     thousands of chondrocytes by PACT-deCAL clearing, light-sheet imaging and 3D segmentation (3D MAPs)
   species: mouse
   source_ref: rubin2021
-  uncertainty: 'DIRECTLY CONTRADICTS the premise of this node, in the best-powered measurement available.
-    The authors state that hypertrophic cell volume is a better predictor of longitudinal bone growth than
-    hypertrophic cell height, with cell diameter correlated to only some of the differences. THE COMPARISON
-    IS BETWEEN GROWTH PLATES, however - proximal tibia versus distal tibia versus distal ulna - which is
-    the same spatial axis on which breur1991 found r=0.98 for volume. hunziker1989 compared one plate at
-    two AGES and found volume falling 13% while growth rose 20%. So the two need not conflict: volume may
-    predict between plates while height carries change within a plate over time. Nobody has applied a
-    modern 3D method to the within-plate temporal comparison, and until someone does, this node rests on
-    a single unreplicated n=6 study from 1989 against a 10^5-cell 3D dataset pointing the other way.'
+  uncertainty: 'REWEIGHTED 2026-08-06 (CORR-010) after reading the paper rather than its abstract. The
+    conclusion sentence is as quoted, but the test behind it is much smaller than "10^5 chondrocytes"
+    suggests, and this atlas had been carrying the cell count as if it were the power of the predictor
+    comparison. FOUR THINGS. (1) The correlation is across THREE growth plate TYPES - proximal tibia,
+    distal tibia, distal ulna - so n=3 for the predictor question, whatever the cell count within each.
+    (2) The growth values are not measured in these animals: growth from E16.5 to P40 was taken from
+    previously published data, and correlated against morphology measured at E16.5 - an embryonic
+    snapshot against a lifetime-integrated growth figure. (3) The reported statistics are three pairwise
+    t-tests on the largest 10% of HZ cell volumes: DT vs PT p=0.0279, DT vs DU p=0.0045, PT vs DU
+    p=0.4834 (ns). (4) The sentence that does the comparative work says volume was correlated with all
+    the growth differences "whereas cell DIAMETER was correlated only with some of these differences",
+    and the conclusion drawn one sentence later is about cell HEIGHT. AND THE ESTIMATOR ASYMMETRY RUNS
+    THE SAME WAY AS IN hunziker1989: volume here is the direct mesh volume by the divergence theorem,
+    model-free; height is the height of a BOUNDING BOX FITTED TO AN ELLIPSOID FITTED TO EACH CELL. In
+    both of the two studies that compare these variables, volume is the better-estimated one. A
+    "volume is the better predictor" result is exactly what an estimator-quality difference would
+    produce. THE BETWEEN-PLATE / WITHIN-PLATE AXIS DISTINCTION REMAINS REAL and is still the cleanest
+    reason the two studies need not conflict.'
 - parameter: fraction of total chondrocyte volume increase occurring BEFORE the hypertrophic zone
   value: '65'
   unit: '%'

@@ -9467,18 +9467,21 @@ gaps:
     at birth to 0.72-1.15 by 4-18 weeks in porcine distal ulna (wosu2012), i.e. the tissue becomes isotropic over
     the period growth rate falls. And in human vertebral physis, hypertrophic cell WIDTH is invariant (14.9 vs
     15.0 um, ns) while HEIGHT differs 34% (8.5 vs 12.8 um, p<0.0005) between scoliosis and controls (bylskiaustrow2018).'
-  what_is_missing: 'Two things now, and the first is more basic than the second. (i) A MODEL-FREE MEASUREMENT
-    OF TERMINAL CELL HEIGHT AT TWO GROWTH RATES IN ONE PLATE. Reading cruzorive1986 on 2026-08-06 established
-    that hunziker1989 never measured height or diameter: both are shape-model outputs, height being cell volume
-    divided by a cell-width second moment at a fixed unmeasured exponent, and the method paper states that no
-    unbiased estimator of either exists and that in hypertrophic cells the two carry opposite-signed tilt bias.
-    So the aspect ratio that this gap asks about has never been measured without a model in any species at two
-    growth rates. rubin2021 measures all three dimensions directly in 3D but only BETWEEN plates. Applying its
-    published MAPs pipeline to hunziker1989''s two-age design is still the decisive experiment; it is now
-    decisive for a stronger reason, because it would be the first model-free measurement of the quantity, not
-    merely a second one. (ii) The causal step. Every measurement above is a correlation across ages, species or
-    disease states; nobody has manipulated the anisotropy and measured the resulting cell dimensions and bone
-    length. See contradiction C-L1-08 and CORR-009.'
+  what_is_missing: 'Two things, and the first was misstated here earlier on 2026-08-06 and corrected the same
+    day - see CORR-010. (i) HEIGHT AND VOLUME MEASURED IN THE SAME CELLS BY ESTIMATORS INDEPENDENT OF EACH
+    OTHER. Not "a model-free height", which stokes2007 already provides: 146 paired within-animal comparisons
+    across rat, rabbit and calf, cell height read directly off segmented profiles with no shape model, growth
+    rate measured in the same specimen. What no study has is height and volume estimated independently.
+    hunziker1989 has both but its height is literally computed FROM its volume (super-egg model, cruzorive1986
+    eq. 8.11). rubin2021 has both in 3D but its volume is a direct mesh integral while its height is a bounding
+    box on a fitted ellipsoid, its predictor comparison is across only three plate types, and its growth values
+    come from previously published data on other animals. stokes2007 has only height. In BOTH studies that
+    compare the two variables, volume is the better-estimated one, which is the configuration that can
+    manufacture a "volume is the better predictor" result out of estimator quality. Applying rubin2021''s MAPs
+    pipeline to hunziker1989''s two-age within-plate design remains the decisive experiment. (ii) The causal
+    step. Every measurement above is a correlation across ages, species, loads or disease states; nobody has
+    manipulated the anisotropy and measured the resulting cell dimensions and bone length. See C-L1-08,
+    CORR-009 and CORR-010.'
   nearest_evidence:
   - hunziker1989
   - cruzorive1986

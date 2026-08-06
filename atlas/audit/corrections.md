@@ -1021,3 +1021,104 @@ proposed a whole compound class on the strength of it, before anyone read the fo
 methods paper it points at in its second sentence. **A number's grade is a property of how
 it was obtained, and that is usually documented somewhere other than the paper you are
 citing.** The atlas has a `has_full_text` flag; it needs the transitive one.
+
+---
+
+## CORR-010 — CORR-009 over-corrected, and the paper on the other side is weaker than its abstract
+
+**Found**: 2026-08-06, same day as CORR-009 and prompted by it. Having established that
+`hunziker1989`'s cell height is a shape-model output, the obvious next question is whether
+*anyone* has measured it without a shape model. CORR-009 and the round-11 write-up asserted
+that nobody has, in any species. **That is wrong.** `stokes2007` did, at scale, and the atlas
+already held its full text.
+
+### Correction 1 — the claim I wrote one turn earlier
+
+`stokes2007` measures terminal chondrocyte height **directly, with no shape model at all**:
+
+- hypertrophic cell profiles segmented automatically in 1.5 µm sections, microscope stage
+  rotated to align the growth axis with the image frame;
+- filtered by form factor (4π·area/circumference²) > 0.3, then a manual pass removing
+  non-viable, partially sectioned and coalesced cells;
+- **measured profile height** regressed against depth in the zone by a logistic fit, with
+  h_max read at the chondro-osseous junction.
+
+No spheroid, no super-egg, no ellipsoid. The paper says it plainly: *"Growth and final
+chondrocytic height h_max were measured directly."*
+
+And the design is the strongest of the three studies in this dispute:
+
+| | |
+|---|---|
+| animals | 41 rats, 39 rabbits, 18 calves |
+| paired comparisons for h_max | **146** |
+| control | **within the same animal** — contralateral tibia, or adjacent vertebrae |
+| growth rate | measured **in the same specimen**, calcein / xylenol orange double label |
+| perturbation | sustained compression or distraction, growth altered up to 53 % |
+| result | h_max correlates with growth change at **r = 0.56**, β = **1.39**, against 0.38 / 0.72 for proliferative cell number |
+
+So the sentence written into `g_l1arch_016` and `docs/target_screen_round1.md` on
+2026-08-06 — *"the aspect ratio has never been measured without a model in any species at
+two growth rates"* — is withdrawn. Height has been. **What has never been measured is
+height and volume in the same cells by estimators independent of one another.**
+
+Two residual limits keep `stokes2007` from settling C-L1-08 on its own: a 2D profile height
+underestimates true cell height unless the cell is cut centrally, and the paired design
+cancels that only if loading does not itself change cell tilt or column alignment; and
+**only height was measured**, so it cannot adjudicate height against volume.
+
+### Correction 2 — `rubin2021` is not what the atlas recorded
+
+The atlas carried it as *"a 10⁵-cell 3D dataset pointing the other way"* and used the cell
+count as if it were the power of the predictor comparison. Reading the paper rather than the
+abstract:
+
+1. **n = 3 for the predictor question.** The correlation is across three growth plate
+   *types* — proximal tibia, distal tibia, distal ulna — however many cells sit inside each.
+2. **The growth values were not measured in these animals.** Growth from E16.5 to P40 was
+   taken from previously published data and correlated against morphology measured at
+   **E16.5** — an embryonic snapshot against a lifetime-integrated growth figure.
+3. **The reported statistics are three pairwise t-tests** on the largest 10 % of HZ cell
+   volumes: DT vs PT p = 0.0279, DT vs DU p = 0.0045, **PT vs DU p = 0.4834 (ns)**.
+4. **The comparative sentence and the conclusion name different variables.** Volume
+   correlated with all the growth differences *"whereas cell **diameter** was correlated only
+   with some of these differences"*; the conclusion one sentence later is about cell
+   **height**.
+
+### The estimator asymmetry runs the same way in both studies
+
+| | volume | height |
+|---|---|---|
+| `hunziker1989` | disector + point counting, unbiased | **super-egg model output** |
+| `rubin2021` | direct mesh volume, divergence theorem | **bounding box fitted to an ellipsoid fitted to the cell** |
+
+In **both** of the only two studies that compare these variables, volume is the
+better-estimated one. That is precisely the configuration in which "volume is the better
+predictor" can be manufactured by estimator quality rather than by biology — and it means
+CORR-009's framing, that `hunziker1989`'s model-derived height should not outrank
+`rubin2021`'s "direct measurement", was itself resting on an unchecked assumption about
+`rubin2021`.
+
+### Where C-L1-08 actually stands now
+
+- **Height tracks growth rate**: supported by `stokes2007` — direct measurement, 146 paired
+  within-animal comparisons, three species, growth measured in the same specimen — and, more
+  weakly, by `hunziker1989`'s model-derived figure.
+- **Volume beats height**: rests on `rubin2021`, n = 3 plates, embryonic morphology against
+  literature growth, with volume the better-estimated variable and the key sentence naming
+  diameter.
+- **Still unexplained by anybody**: `hunziker1989`'s best-estimated number — terminal cell
+  volume falling 13 % while growth rises 20 % within one plate over age.
+
+Round 11 moved the weight too far toward volume. The corrected position is that **the two
+variables have never been measured against each other by estimators of equal quality**, and
+that is the gap, not the axis of comparison and not the age of the 1989 paper.
+
+### The lesson, which is the mirror of CORR-009's
+
+CORR-009's lesson was *read the method paper behind the number you are citing*. Its own
+failure was to apply that to one side of a dispute and not the other: `hunziker1989` was
+audited to its estimator, `rubin2021` was accepted from its abstract, and `stokes2007` — read
+the same day, sitting in the atlas with `full_text_read: 2026-08-06` — was not checked for
+whether it answered the question the correction declared unanswered. **A correction is a
+claim like any other and inherits the obligation it was written to enforce.**

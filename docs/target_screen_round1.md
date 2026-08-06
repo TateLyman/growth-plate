@@ -1211,3 +1211,87 @@ Three rounds of this document leaned on `hunziker1989` before anyone read the fo
 methods paper it cites in its second sentence. That is the same failure as CORR-006 and
 CORR-008: **a number's grade is a property of how it was obtained, and that is usually
 documented somewhere other than the paper you are citing.**
+
+---
+
+# Round 12 — round 11 over-corrected, and the paper on the other side is weaker too
+
+Round 11 ended by asserting that terminal cell height has never been measured without a
+shape model in any species. The obvious next move was to check that claim rather than
+publish it. Checking it took twenty minutes and it is **wrong**.
+
+## 1. `stokes2007` measured it directly, at scale, and the atlas already had the PDF
+
+*"Growth and final chondrocytic height h_max were measured directly."* The method: cell
+profiles segmented automatically in 1.5 µm sections with the microscope stage rotated to
+align the growth axis; form-factor filter > 0.3; manual removal of non-viable, partially
+sectioned and coalesced cells; measured profile height regressed against depth by a logistic
+fit; h_max read at the chondro-osseous junction. **No spheroid, no super-egg, no ellipsoid.**
+
+| | |
+|---|---|
+| animals | 41 rats, 39 rabbits, 18 calves |
+| paired comparisons for h_max | **146** |
+| control | **within the same animal** |
+| growth rate | measured **in the same specimen**, calcein / xylenol orange |
+| result | h_max **r = 0.56, β = 1.39** vs 0.38 / 0.72 for proliferative cell number |
+
+That is a stronger dataset on "does terminal cell height track growth rate" than anything
+else in this dispute — different laboratory, different perturbation, three species. It
+cannot adjudicate height vs volume, because only height was measured.
+
+## 2. `rubin2021` is not the 10⁵-cell measurement the atlas recorded
+
+The cell count is real; it is not the power of the predictor comparison.
+
+1. **n = 3** — the correlation runs across three growth plate *types*, PT / DT / DU.
+2. **Growth was not measured in these animals** — taken from previously published data,
+   E16.5 → P40, correlated against morphology at **E16.5**.
+3. **Three pairwise t-tests** on the largest 10 % of HZ volumes: DT–PT p = 0.0279, DT–DU
+   p = 0.0045, **PT–DU p = 0.4834 (ns)**.
+4. **The comparative sentence names a different variable from the conclusion** — volume
+   correlated with all differences *"whereas cell **diameter** was correlated only with some
+   of these differences"*; the conclusion is about cell **height**.
+
+## 3. The asymmetry that matters, and it runs the same way in both papers
+
+| | volume | height |
+|---|---|---|
+| `hunziker1989` | disector + point counting, unbiased | **super-egg model output** |
+| `rubin2021` | direct mesh volume, divergence theorem | **bounding box on a fitted ellipsoid** |
+
+In **both** of the only two studies that put these variables head to head, volume is the
+better-estimated one. *"Volume is the better predictor"* is exactly what an
+estimator-quality difference produces. Round 11's framing — model-derived height should not
+outrank a direct measurement — applied the audit to one side only.
+
+## 4. Corrected standing of C-L1-08
+
+- **Height tracks growth rate** — well supported. `stokes2007`, model-free, 146 paired
+  comparisons, three species, growth measured in the same specimen.
+- **Volume beats height** — rests on n = 3 plates, an embryonic snapshot against literature
+  growth, and a sentence about diameter.
+- **Unexplained by anyone** — `hunziker1989`'s *best*-estimated number: terminal cell volume
+  falling 13 % while growth rises 20 % within one plate over age.
+
+**The gap is not the axis of comparison and not the age of the 1989 paper. It is that height
+and volume have never been measured against each other by estimators of equal quality.**
+`rubin2021`'s MAPs pipeline on `hunziker1989`'s two-age within-plate design would close it.
+
+## 5. What this does to the compound programme
+
+It puts the aspect-ratio reframe back roughly where rounds 7–10 had it, on better footing
+than round 11 left it. An agent that raises terminal cell height at constant volume is still
+the untried class, and the phenomenon it targets now has a 146-plate model-free measurement
+behind it rather than one 1989 stereology paper.
+
+`terminal_cell_shape_modulation` stays at **D** through all of this. Nothing here is a human
+measurement, nothing is a manipulation, and the one quantity that would decide it has not
+been measured.
+
+## 6. Two corrections in one day, in opposite directions
+
+CORR-009 said: read the method paper behind the number you are citing. CORR-010 exists
+because CORR-009 did that for one side of a dispute and not the other, and declared a
+question unanswered without checking a paper it had read the same morning. **A correction is
+a claim like any other and inherits the obligation it was written to enforce.**
