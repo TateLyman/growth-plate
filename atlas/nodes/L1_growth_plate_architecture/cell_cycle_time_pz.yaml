@@ -47,6 +47,18 @@ quantitative:
     be dividing as fast as in rodents - undecidable while human S-phase duration remains unmeasured. THE COMPARISON
     WITH THE RAT ROWS IN THIS NODE IS THEREFORE BETWEEN A MEAN OVER A WHOLE ZONE (human, derived) AND A CYCLE TIME
     OF CYCLING CELLS (rat, BrdU-measured), and those are not the same quantity.'
+- parameter: growth fraction in the same four rat plates, which is what makes the rat cycle times commensurable with
+    a human zone mean
+  value: 0.99, 0.99, 0.98, 0.89
+  unit: fraction of proliferative-zone cells in cycle
+  conditions: proximal tibia, distal radius, distal tibia, proximal radius; continuous BrdU by osmotic pump, labelling
+    index followed to plateau at 12, 24, 48 and 72 h
+  species: rat
+  source_ref: wilsman1996
+  uncertainty: 'ADDED 2026-08-06. THIS RESOLVES HALF OF THE COMMENSURABILITY PROBLEM THIS NODE RECORDED THE SAME DAY:
+    because the rat growth fraction is essentially 1, the rat cycle times ARE the rat zone means, and the comparison
+    with the human 20-day zone mean is legitimate on the rat side. It remains illegitimate on the human side, where
+    the growth fraction is unmeasured. The one plate below 0.99 is the slowest-growing.'
 - parameter: total cell cycle time, proliferative zone
   value: '30.9'
   unit: h
@@ -278,4 +290,7 @@ confidence_note: 'HELD AT C on 2026-08-06 after adding the human row. The human 
   is not raised by adding it. What the addition changes is the node''s reach: any model that carries a cycle time
   from rodent into human is now carrying a 15-fold error, and the atlas can say so. Further qualified 2026-08-06 (CORR-014):
   the human row is a zone mean of unknown growth fraction, the rat rows are measured cycle times of cycling cells,
-  and the node does not claim they are commensurable.'
+  and the node does not claim they are commensurable. Partially resolved 2026-08-06: wilsman1996 measures the rat
+  growth fraction at 0.89-0.99, so the rat cycle times and the human zone mean differ by at most 11% on that account
+  in rat. The human growth fraction is still unmeasured, so the comparison is still not clean - but the ambiguity
+  now lives entirely on the human side.'

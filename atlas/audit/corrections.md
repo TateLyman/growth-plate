@@ -1443,3 +1443,38 @@ looks for that.
 assessment of the method.** A 1976 number and a 1993 review of how good 1976 numbers are will
 never be found by the same literature search, because they do not share a topic — only an
 author.
+
+---
+
+## CORR-015 — 2026-08-06 — the atlas asked for the wrong paper, and said so wrongly to the user
+
+**What happened.** Round 20 listed as a want-list item: *"Thurston MN, Johnson DR, Kember NF,
+1985 — PMID 3840788 or 4066480 … the 20.5 µm side of contradiction C-L1-07."*
+
+Both of those PMIDs are **mouse** papers — cell kinetics of achondroplastic (`cn`) and
+spondylo-metaphyseal (`smc`) mutant mice. Neither contains a human measurement.
+
+The atlas's actual `thurston1985` is a **third** 1985 Thurston paper — *"In vitro thymidine
+labelling in human and porcine growth plates"*, Cell & Tissue Kinetics, **PMID 3864550** — which
+was already held, already read in full on 2026-08-05, and correctly recorded with its DOI,
+journal and access route.
+
+**So the atlas was right and the request was wrong.** I searched by author-and-year, found
+Thurston 1985 papers, and quoted PMIDs without checking them against the bibliography entry that
+was already sitting in the atlas with the correct one.
+
+**Cost.** One wasted request to the user, and a supplied paper that does not answer the question
+it was asked for. No atlas content was wrong and nothing downstream is affected.
+
+**Salvage.** The supplied paper is a genuine primary the atlas did not hold, and it earns a place
+on its own merits: Type I `cn` mice are dwarfed with **reduced hypertrophic cell height alone** —
+proliferation-zone cell number hardly reduced, mitotic rate normal. That is the counterweight to
+C-L1-09 and it is now a row in `hypertrophic_volume_increase`. Invariance under normal physiology
+is not irrelevance under perturbation. Added as `thurston1985cn`.
+
+### The rule this adds
+
+**Before asking anyone for a source, resolve the request against the atlas's own bibliography
+entry for that `ref_id`** — not against a fresh literature search. The bibliography already
+carries PMID, DOI and journal for every ref. A want-list item is a request to a person and costs
+their time; it should be generated from the record, not re-derived.

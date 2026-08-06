@@ -61,6 +61,22 @@ quantitative:
     ZONE. Birds also have SMALLER hypertrophic cells than mammals while growing faster. Growth rate per flat cell
     did not scale with adult body weight (r = -0.22, n = 6, not significant), so cycle time appears independent of
     body size and metabolic rate. Between-clade comparison of a shrinkage-sensitive measurement.
+- parameter: a dwarfing mutation that acts on terminal cell height ALONE
+  value: 'Type I cn: hypertrophic cell height reduced, proliferation-zone cell number hardly reduced, mitotic rate
+    normal'
+  unit: qualitative
+  conditions: achondroplastic (cn) homozygous mice aged 16-34 days against normal littermates; tritiated thymidine
+    1 h before cull, labelling profiles from >=100 labelled cells per profile, heights of 100 hypertrophic cells per
+    section. Normal mouse labelling index 9-13%
+  species: mouse
+  source_ref: thurston1985cn
+  uncertainty: THE OTHER DIRECTION OF C-L1-09 AND IT MATTERS. Human development does not vary terminal cell height,
+    and across bird species it does not track growth rate - but BREAKING it is sufficient to dwarf an animal with
+    proliferation untouched. Invariance under physiology is not the same as irrelevance under perturbation, and this
+    node should not be read as saying h_term does not matter. The same paper reports a Type II phenotype in which
+    proliferation-zone cell size, mitotic index AND hypertrophic cell height are all reduced, and the two types cannot
+    be told apart by body size - so the mutation's expressivity is itself heterogeneous and the authors attribute
+    this to a second unidentified factor in some colonies.
 - parameter: chondrocyte volume at start of enlargement
   value: '600'
   unit: fl
@@ -294,6 +310,13 @@ key_refs:
   year: 1987
   type: primary
   one_line_finding: 'Chicken: ~1000 um/day on 15 um terminal cells.'
+- ref_id: thurston1985cn
+  pmid: '3840788'
+  first_author: Thurston MN
+  year: 1985
+  type: primary
+  one_line_finding: Type I achondroplastic (cn) mice are dwarfed with reduced hypertrophic cell height alone - normal
+    proliferative cell number and normal mitotic rate.
 open_questions:
 - g_l1arch_008
 - g_l1arch_009
