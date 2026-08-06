@@ -121,10 +121,28 @@ def atlas_genes():
     return out
 
 
+CACHE = os.path.join(OUT, "_cache")
+
+
+def cache_load(name):
+    p = os.path.join(CACHE, name)
+    return json.load(open(p)) if os.path.exists(p) else None
+
+
+def cache_save(name, obj):
+    os.makedirs(CACHE, exist_ok=True)
+    json.dump(obj, open(os.path.join(CACHE, name), "w"))
+
+
 def main():
     # ---- 1. resolve the disease set -------------------------------------------------------
+    # Everything below checkpoints to query/overgrowth_screen/_cache. The first version of
+    # this script wrote only at the end and was killed by a timeout after ~50 minutes of live
+    # API calls, losing all of it. A long screen that cannot be resumed is a screen that gets
+    # run once and then never re-run when a source updates.
+    cached = cache_load("harvest.json")
     diseases = {}
-    for t in TERMS:
+    for t in ([] if cached else TERMS):
         try:
             hits = gql(SEARCH_D, {"q": t})["data"]["search"]["hits"]
         except Exception as ex:
@@ -134,11 +152,19 @@ def main():
             if KEEP_NAME.search(h["name"]) and not DROP_NAME.search(h["name"]):
                 diseases[h["id"]] = h["name"]
         time.sleep(0.3)
+    if cached:
+        diseases, tgt = cached["diseases"], cached["targets"]
+        # JSON has no tuples: the (disease, score) pairs come back as lists, which are
+        # unhashable, and the dedup below is a set(). Restore them on the way in rather than
+        # working around it at every use site.
+        for _e in tgt.values():
+            _e["diseases"] = [tuple(x) for x in _e["diseases"]]
+        print(f"resumed from cache: {len(diseases)} disease terms, {len(tgt)} targets")
     print(f"{len(diseases)} overgrowth / tall-stature disease terms resolved")
 
     # ---- 2. harvest every associated target ------------------------------------------------
-    tgt = {}
-    for n, (did, dname) in enumerate(sorted(diseases.items()), 1):
+    tgt = tgt if cached else {}
+    for n, (did, dname) in enumerate([] if cached else sorted(diseases.items()), 1):
         try:
             page, total = 0, None
             while True:
@@ -158,22 +184,59 @@ def main():
             print(f"  {n:3d}/{len(diseases)} {dname[:52]:52s} {total} targets", flush=True)
         except Exception as ex:
             print(f"  {n:3d}/{len(diseases)} {dname[:52]:52s} ERR {type(ex).__name__}")
-        time.sleep(0.3)
+        time.sleep(0.15)
+    if not cached:
+        cache_save("harvest.json", {"diseases": diseases, "targets": tgt})
     print(f"\n{len(tgt)} distinct targets across all terms")
 
     # ---- 3. annotate: growth plate expression, existing drugs, atlas coverage ---------------
     expr, atlas = gp_expression(), atlas_genes()
+    dcache = cache_load("drugs.json") or {}
+
+    # The knownDrugs query costs ~20 s per target against this API, so asking it of all 1,596
+    # harvested genes takes eight hours. It is also the wrong order of operations: a gene not
+    # present in a human growth plate is not a lead whatever drugs exist for it. So the
+    # expensive call is made ONLY for genes that clear the free local filters first. Genes that
+    # do not clear them are still written out, with n_known_drugs left BLANK rather than zero -
+    # blank means NOT ASKED, and conflating that with "no drug exists" would quietly turn an
+    # unrun query into a negative result.
+    # Thresholds taken from the harvest's own score distribution rather than picked. Over the
+    # 1,596 targets the median association score is 0.058 and the 90th percentile is 0.118,
+    # with a cliff to 0.396 at p95 - i.e. the bottom nine tenths is the tier where a gene was
+    # mentioned near a disease name once. Cutting at p90 and requiring the gene in 3 of 4
+    # human growth plate donors leaves 141 targets. A looser cut (0.02, 2 donors) left 1,131,
+    # which at ~20 s per drug query is six hours of API time spent ranking noise.
+    MIN_ASSOC, MIN_DONORS = 0.10, 3
+
+    def worth_asking(sym, e):
+        return expr.get(sym, 0) >= MIN_DONORS and e["best"] >= MIN_ASSOC
+
+    ask = [s_ for s_, e_ in tgt.items() if worth_asking(s_, e_)]
+    print(f"{len(ask)} of {len(tgt)} targets clear the free filters "
+          f"(detected in >={MIN_DONORS}/4 human growth plate donors AND association "
+          f"score >={MIN_ASSOC}, the harvest's own 90th percentile); "
+          f"only these get the drug query", flush=True)
+
     rows = []
     for i, (sym, e) in enumerate(sorted(tgt.items(), key=lambda x: -x[1]["best"]), 1):
-        drugs = []
-        try:
-            kd = gql(DRUGS, {"id": e["ensembl"]})["data"]["target"]
-            for r in (kd or {}).get("knownDrugs", {}).get("rows", []) or []:
-                drugs.append((r.get("prefName"), r.get("mechanismOfAction"), r.get("phase")))
-        except Exception:
-            pass
+        asked = worth_asking(sym, e)
+        if not asked:
+            drugs = None
+        elif sym in dcache:
+            drugs = [tuple(d) for d in dcache[sym]]
+        else:
+            drugs = []
+            try:
+                kd = gql(DRUGS, {"id": e["ensembl"]})["data"]["target"]
+                for r in (kd or {}).get("knownDrugs", {}).get("rows", []) or []:
+                    drugs.append((r.get("prefName"), r.get("mechanismOfAction"), r.get("phase")))
+            except Exception:
+                pass
+            dcache[sym] = drugs
+            if i % 20 == 0:
+                cache_save("drugs.json", dcache)
         seen, uniq = set(), []
-        for d in drugs:
+        for d in (drugs or []):
             k = (d[0], d[1])
             if k not in seen:
                 seen.add(k)
@@ -187,15 +250,18 @@ def main():
                                    sorted(set(e["diseases"]), key=lambda x: -x[1])[:3]),
             "gp_donors_detected": expr.get(sym, ""),
             "in_atlas": atlas.get(sym.upper(), ""),
-            "n_known_drugs": len(uniq),
-            "max_phase": max([d[2] or 0 for d in uniq], default=""),
+            "n_known_drugs": len(uniq) if drugs is not None else "",
+            "max_phase": (max([d[2] or 0 for d in uniq], default="")
+                          if drugs is not None else ""),
             "example_drugs": "; ".join(f"{d[0]} [{d[1]}] ph{d[2]}" for d in top),
             "direction": "UNRESOLVED",
             "mechanism_class": "",
         })
-        if i % 25 == 0:
-            print(f"  annotated {i}/{len(tgt)}", flush=True)
-        time.sleep(0.2)
+        if asked and i % 10 == 0:
+            print(f"  {i}/{len(tgt)} scanned", flush=True)
+        if sym not in dcache or not dcache.get(sym):
+            time.sleep(0.05)
+    cache_save("drugs.json", dcache)
 
     os.makedirs(OUT, exist_ok=True)
     p = os.path.join(OUT, "targets.csv")
@@ -205,12 +271,21 @@ def main():
         w.writerows(rows)
 
     triple = [r for r in rows if r["gp_donors_detected"] not in ("", 0)
-              and r["n_known_drugs"] > 0]
+              and isinstance(r["n_known_drugs"], int) and r["n_known_drugs"] > 0]
     json.dump({
         "n_disease_terms": len(diseases), "disease_terms": sorted(diseases.values()),
         "n_targets": len(rows),
         "n_expressed_in_human_gp": sum(1 for r in rows if r["gp_donors_detected"] not in ("", 0)),
-        "n_with_a_known_drug": sum(1 for r in rows if r["n_known_drugs"] > 0),
+        "n_asked_for_drugs": len(ask),
+        "filter_thresholds": {"min_assoc_score": MIN_ASSOC, "min_gp_donors": MIN_DONORS,
+                              "rationale": "min_assoc is the 90th percentile of the harvest's "
+                                           "own score distribution (median 0.058, p90 0.118, "
+                                           "p95 0.396) - not a chosen number"},
+        "n_with_a_known_drug": sum(1 for r in rows if isinstance(r["n_known_drugs"], int)
+                                   and r["n_known_drugs"] > 0),
+        "BLANK_n_known_drugs_MEANS": "the drug query was NOT RUN for this gene because it did "
+                                     "not clear the free filters. It does not mean no drug "
+                                     "exists.",
         "n_meeting_all_three": len(triple),
         "WARNING_DIRECTION": "every row is direction UNRESOLVED. An association does not say "
                              "whether loss or gain of function causes the tall phenotype, so it "
@@ -229,7 +304,8 @@ def main():
     }, open(os.path.join(OUT, "summary.json"), "w"), indent=1)
 
     print(f"\n{len(rows)} targets | {sum(1 for r in rows if r['gp_donors_detected'] not in ('',0))}"
-          f" expressed in human growth plate | {sum(1 for r in rows if r['n_known_drugs']>0)}"
+          f" expressed in human growth plate | "
+          f"{sum(1 for r in rows if isinstance(r['n_known_drugs'],int) and r['n_known_drugs']>0)}"
           f" with a known drug | {len(triple)} meeting all three")
     print(f"wrote {p}\n")
     print("targets meeting all three necessary conditions (NOT candidates - direction unread):")
