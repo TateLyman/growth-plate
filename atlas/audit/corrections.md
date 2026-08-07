@@ -2557,3 +2557,39 @@ answered in direction.** That is CORR-034 again, third occurrence.
 **The compound rule.** Before reporting any per-cell-type expression number from a tissue biopsy, gate on
 the cell type. And before opening a gap, grep the bibliography's own one-line findings for the question —
 not just the ref_ids.
+
+## CORR-043 — the phosphate-titration advantage I gave erdafitinib is arithmetically self-defeating
+
+Round 36 proposed that erdafitinib is uniquely suited to growth use because its hyperphosphatemia is a
+**same-day, on-target readout of FGFR1 engagement**, so the dose could be titrated to just below the
+phosphate threshold — maximising FGFR3 while keeping FGFR1 subclinical. I called it "the specific
+untested proposal."
+
+**It cannot work, and the numbers were in front of me when I wrote it.**
+
+| receptor | erdafitinib IC50 |
+|---|---|
+| **FGFR1** | **1.20 nM** |
+| FGFR3 | 3.00 nM |
+| FGFR4 | 5.70 nM |
+
+Receptors engage in ascending IC50 order as dose rises. FGFR1 has the **lowest** IC50, so **phosphate
+rises first — before FGFR3, long before FGFR4.** A dose held just below the phosphate threshold is a dose
+**below the FGFR3 IC50**: essentially no FGFR3 and no FGFR4 engagement.
+
+**Hyperphosphatemia is not a guardrail you titrate up to. It is the entry ticket you must pass through**
+to reach any FGFR3 effect at all — which is exactly why oncology dosing titrates *upward* against a
+phosphate target of ~5.5–7.0 mg/dL.
+
+**I had already written the ordering into the atlas one round earlier**, as the counter-argument to the
+FGFR4 case ("as the dose falls FGFR4 engagement is lost first and FGFR1 last"). I then proposed the
+titration strategy in the same node without applying the ordering I had just recorded. **Two claims in
+one document, mutually inconsistent, neither checked against the other.**
+
+**The wider pattern this belongs to.** Across rounds 32–38 this atlas corrected itself four times in
+erdafitinib's favour — CORR-038 (potency), CORR-040 (FGFR4 direction), CORR-042 (FGFR4 localisation),
+and jacob2006 (FGFR1 direction). Each was legitimate on its own facts. **But all four are mechanism, and
+the outcome evidence did not move once.** A run of corrections that all point one way, in a conversation
+where the user holds a strong prior in that direction, is a signal to audit — not to extrapolate. That
+audit is `erdafitinib_versus_the_alternatives_decision`, and its conclusion is that the evidence does not
+currently support the choice the mechanism keeps arguing for.

@@ -1,0 +1,156 @@
+id: erdafitinib_versus_the_alternatives_decision
+name: Erdafitinib has the best mechanism story and the worst evidence — and those two facts have been drifting apart
+type: hypothesis
+layer: L12
+stub: false
+summary: 'THIS NODE EXISTS BECAUSE THE ARGUMENT HAS BEEN MOVING IN ONE DIRECTION FOR FIVE ROUNDS AND THAT
+  IS ITSELF INFORMATION. Across rounds 32 to 38 this atlas corrected itself FOUR TIMES in erdafitinib''s
+  favour: the potency comparison (CORR-038, it is more potent at every FGFR), the FGFR4 dismissal
+  (CORR-040, FGFR4 restrains cartilage so blocking it should help), the FGFR4 target localisation
+  (CORR-042, FGFR4 is chondrocyte-EXCLUSIVE, 35- to 80-fold enriched), and the FGFR1 direction
+  (jacob2006, deletion DELAYS hypertrophic maturation, which is an h_term action). Every one of those
+  corrections was legitimate on its own facts. BUT ALL FOUR ARE MECHANISM, AND THE OUTCOME EVIDENCE HAS
+  NOT MOVED AT ALL. That asymmetry is the finding. ON MECHANISM erdafitinib now has the richest story of
+  any agent here - three plausible pro-growth targets. ON EVIDENCE it has ONE child who grew 19.06 cm/year
+  and FIVE postmarketing cases in which the drug was PERMANENTLY DISCONTINUED and THREE required surgery,
+  with NO FINAL HEIGHT ANYWHERE. Against that, infigratinib has a randomised placebo-controlled phase 3
+  (n=74 against 39, +1.74 cm/year, no accelerated bone age, no FGFR1 or FGFR2 signal) and TYRA-300 is the
+  only agent shown to lengthen bone in a WILD-TYPE animal. AND THE ONE STRUCTURAL ADVANTAGE THIS ATLAS
+  CLAIMED FOR ERDAFITINIB IS WRONG. Round 36 proposed titrating erdafitinib to just below the
+  hyperphosphatemia threshold, using phosphate as a real-time readout of the FGFR1 boundary. The
+  selectivity ordering makes that self-defeating: FGFR1 IC50 is 1.20 nM, BELOW FGFR3 at 3.00 and FGFR4 at
+  5.70, so phosphate rises FIRST and a dose below the phosphate threshold is a dose below the FGFR3 and
+  FGFR4 IC50s. Hyperphosphatemia is not a guardrail, it is the ENTRY TICKET. THE HONEST VERDICT: the
+  evidence does not currently support erdafitinib as the right choice, and the case for it is an
+  accumulation of mechanistic arguments that have never been tested against an outcome.'
+quantitative:
+- parameter: MECHANISM AGAINST EVIDENCE — THE TWO COLUMNS HAVE DIVERGED
+  value: 'ERDAFITINIB MECHANISM: FGFR3 IC50 3.00 nM (most potent clinical agent); FGFR4 5.70 nM and FGFR4
+    is chondrocyte-exclusive in human growth plate (35-80x enriched); FGFR1 1.20 nM and Fgfr1 deletion
+    delays hypertrophic maturation. ERDAFITINIB EVIDENCE: n = 1 child, 19.06 cm/year over 9 months, no
+    baseline bone age, no final height; FIVE postmarketing cases, ALL permanently discontinued, THREE
+    requiring surgery, median onset 137 days. INFIGRATINIB EVIDENCE: randomised placebo-controlled phase
+    3, n = 74 against 39, +1.74 cm/year (95% CI 1.31-2.17, P < 0.0001), no accelerated bone age, no
+    FGFR1/FGFR2 signal. TYRA-300: lengthens bone in WILD-TYPE mice. LIFETIME COMPARISON: partial FGFR3
+    loss gives about +2.8 SD adult height against +4.9 to +5.2 SD for CNP-axis gain'
+  unit: mixed - IC50 nM, cm/year, SD, case counts
+  conditions: assembled across erdachild2024, nadeaunguyen2026, propel3_2026, tyra300_2025, toydemir2006,
+    hannema2013, moffatt2025 and this atlas's ChEMBL and GSE288028 re-analyses
+  species: human
+  source_ref: nadeaunguyen2026
+  uncertainty: 'THE ASYMMETRY IS THE POINT AND IT SHOULD NOT BE READ AS A TIE. Mechanistic plausibility is
+    the cheapest thing in pharmacology and the least predictive; this atlas has already recorded one drug
+    class - growth hormone - whose mechanism is impeccable and whose final-height dose-response saturates.
+    Erdafitinib''s three targets are three hypotheses, two of which (FGFR4 direction in cartilage, FGFR1
+    direction on bone length) have NO measured sign, and one of which (FGFR1 via jacob2006) rests on an
+    ABSTRACT with a lineage-wide deletion and NO LENGTH ENDPOINT. THE FIVE POSTMARKETING CASES ARE NOT
+    FIVE PEOPLE WHO GREW - they are five people harmed enough to stop the drug, and three cut open.
+    THE ONE COMPARISON THAT MEASURES THE THING WE ACTUALLY WANT - adult height after lifelong maximal
+    pathway perturbation - FAVOURS THE CNP AXIS BY ABOUT TWO STANDARD DEVIATIONS, and the CNP figures are
+    floors because both individuals were surgically stopped. The counter that CATSHL is only PARTIAL
+    FGFR3 loss is real and is why this is not a settled negative.'
+- parameter: AND THE PHOSPHATE-TITRATION ADVANTAGE THIS ATLAS CLAIMED IS SELF-DEFEATING
+  value: 'erdafitinib IC50 ordering is FGFR1 1.20 < FGFR3 3.00 < FGFR4 5.70 nM. Receptors engage in
+    ascending IC50 order as dose rises, and hyperphosphatemia is the FGFR1 readout, so phosphate rises
+    BEFORE FGFR3 and long before FGFR4. A dose held just below the phosphate threshold is a dose below
+    the FGFR3 IC50'
+  unit: nM
+  conditions: ChEMBL curated median IC50 values; reasoning by this atlas
+  species: in_vitro_human_cell
+  source_ref: propel3_2026
+  atlas_derived: true
+  uncertainty: 'ROUND 36 PROPOSED PHOSPHATE-GUIDED DOSING AS THE ONE THING ERDAFITINIB UNIQUELY OFFERS.
+    IT DOES NOT WORK. Because FGFR1 is the most potently inhibited receptor, its toxicity marker is the
+    FIRST thing to appear, not the last - so hyperphosphatemia is not a ceiling you titrate up to, it is
+    a floor you must pass through to reach any FGFR3 or FGFR4 effect at all. THE CLINICAL PRACTICE
+    CONFIRMS THIS READING: erdafitinib is dosed UP against a serum phosphate target of roughly 5.5-7.0
+    mg/dL in oncology precisely because effective FGFR3 engagement lies beyond it. LIMITS OF THE
+    ARGUMENT: these are biochemical IC50 values in cell-free or cell-line assays and do not account for
+    tissue distribution, and erdafitinib is highly protein-bound so free-drug concentrations differ from
+    total - the ORDERING is likely preserved but the absolute margins are not reliable. And PROPEL3
+    shows that at 0.25 mg/kg infigratinib produced a real growth effect with no clinical FGFR1 signal,
+    which proves the two CAN be separated in practice for at least one molecule with a wider margin.'
+- parameter: WHAT WOULD ACTUALLY DECIDE IT — THREE MEASUREMENTS, NONE OF WHICH EXIST
+  value: '(1) FINAL ADULT HEIGHT on any FGFR inhibitor, in anyone. (2) The SIGN of local FGFR1 and FGFR4
+    inhibition on bone LENGTH, from chondrocyte-restricted deletions - jacob2006 is lineage-wide and
+    reports no length; no Fgfr4 skeletal phenotype exists in any species. (3) Whether the growth plate
+    WIDENING that accompanies the growth is the mechanism or the toxicity - erdaseries2025 observes the
+    widening, williams2001 shows a thicker plate is a mechanically weaker one, and erdachild2024 reports
+    the cord compression'
+  unit: qualitative - the three missing measurements
+  conditions: the state of the literature as searched on 2026-08-07
+  species: human
+  source_ref: erdaseries2025
+  uncertainty: 'ITEM 3 IS THE ONE THAT COULD END THE PROGRAMME RATHER THAN REFINE IT. The proposed h_term
+    benefit of FGFR1 inhibition is DELAYED HYPERTROPHIC MATURATION. A plate whose hypertrophic cells
+    mature more slowly is a THICKER plate. erdaseries2025 observed exactly that widening under
+    erdafitinib. williams2001 measured that ultimate tensile stress falls linearly with plate thickness.
+    So on the current evidence THE MECHANISM AND THE TOXICITY MAY BE THE SAME PHYSICAL EVENT, in which
+    case no dose separates them and no delivery vehicle helps, because the harm is at the target site.
+    That is a structurally different objection from a side effect and it has never been tested. It is
+    also the strongest available argument for the CNP arm, whose slipped epiphyses occur at a far lower
+    rate.'
+localization:
+- growth plate, all zones; and kidney for the FGF23 phosphate axis
+human_evidence: direct
+human_evidence_note: Both sides have direct human evidence and it is of very different quality - a
+  randomised placebo-controlled phase 3 for infigratinib against a single case report and a five-case
+  pharmacovigilance series for erdafitinib. No agent in this class has a final adult height in anyone.
+species_basis:
+- human
+- mouse
+- in_vitro_human_cell
+translation_risk: high
+translation_risk_reason: The mechanistic case rests on two receptors whose direction of effect on bone
+  length has never been measured, one supporting result that is abstract-only with the wrong genetic
+  specificity, and a species divergence in beta-klotho that may invalidate a supporting mechanism.
+confidence: C
+confidence_note: 'C. The quantities are real and sourced - IC50 values from a curated database,
+  expression from a re-analysis of human tissue, trial results from a phase 3, case counts from an FDA
+  pharmacovigilance review. What is graded C rather than higher is the CONCLUSION, which is a judgement
+  about where the weight of evidence sits and not a measurement. It is not B because the central
+  comparison is between evidence types that cannot be pooled - n=1 against n=113 - and because two of the
+  three mechanistic legs have no measured sign. It is not D because every input is a primary quantitative
+  result and the reasoning from IC50 ordering to phosphate-as-entry-ticket is arithmetic rather than
+  argument.'
+key_refs:
+- ref_id: nadeaunguyen2026
+  pmid: '41449965'
+  first_author: Nadeau Nguyen M
+  year: 2026
+  type: primary
+  one_line_finding: Five paediatric erdafitinib skeletal-toxicity cases, all permanently discontinued and
+    three requiring surgery, median onset 137 days - the outcome column against which the mechanism is
+    being weighed.
+- ref_id: propel3_2026
+  first_author: Savarirayan R
+  year: 2026
+  type: conference_abstract
+  one_line_finding: Randomised placebo-controlled phase 3 of infigratinib, +1.74 cm/year with no
+    accelerated bone age and no FGFR1 or FGFR2 signal - the strongest evidence any FGFR inhibitor has.
+- ref_id: erdachild2024
+  pmid: '38841436'
+  first_author: Wong ATC
+  year: 2024
+  type: primary
+  one_line_finding: The single case of 19.06 cm/year on erdafitinib, ended by kyphoscoliosis with cord
+    compression - the entire positive efficacy evidence for the drug in growth.
+- ref_id: jacob2006
+  pmid: '16815385'
+  first_author: Jacob AL
+  year: 2006
+  type: primary
+  one_line_finding: Fgfr1 deletion delays hypertrophic chondrocyte maturation - the h_term argument for
+    FGFR1 inhibition, abstract-only, lineage-wide, with no bone length reported.
+- ref_id: toydemir2006
+  pmid: '17033969'
+  first_author: Toydemir RM
+  year: 2006
+  type: primary
+  one_line_finding: Lifelong partial FGFR3 loss gives adult male height about +2.8 SD, against +4.9 to
+    +5.2 SD for CNP-axis gain - the only lifetime comparison, and it favours the other axis.
+open_questions:
+- g_l3_local_fgfr1_sign_in_growth_plate
+- g_l1_raise_terminal_cell_volume
+- g_l12_cartilage_targeted_cnp
+last_verified: '2026-08-07'
