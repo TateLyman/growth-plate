@@ -1,0 +1,175 @@
+id: terminal_cell_volume_is_the_undefended_term
+name: The budget is paid in progenitors but the output is measured in micrometres — and terminal cell volume is the exchange rate nothing defends
+type: hypothesis
+layer: L1
+stub: false
+summary: 'THIS NODE IS A SYNTHESIS, NOT A FINDING. It assembles results the atlas already held and one
+  re-analysis it performed, and it names a target. THE ARGUMENT. Height is bounded because the growth plate
+  spends a finite pool of resting-zone progenitors and fuses when proliferation reaches zero (weise2001).
+  So the currency of the budget is CELLS and the currency of the output is MICROMETRES, and what converts
+  one into the other is the YIELD. The yield factorises exactly: micrometres per progenitor = (terminal
+  cells produced per progenitor) x (height of each terminal cell). Call these AMPLIFICATION and h_term.
+  EVERY LEVER THIS PROJECT HAS EXAMINED ACTS ON AMPLIFICATION, AND AMPLIFICATION IS THE TERM THAT COSTS
+  BUDGET. More proliferation drains the pool faster and hastens fusion (nilsson2014). Slowing senescence
+  works only by inhibiting growth, and four weeks of inhibition buys two (forcinito2011). More IGF or BMP
+  does nothing to long-bone chondrocytes because they are already at ceiling for both (lui2018). h_term IS
+  DIFFERENT IN FOUR WAYS AND EVERY ONE OF THEM POINTS THE SAME DIRECTION. FIRST, IT IS NOT WHAT NATURE
+  VARIES. This atlas decomposed the yield from lui2018''s raw per-animal values and found that of the
+  tenfold gap between a mouse metacarpal about to fuse and a femur that never will, AMPLIFICATION CARRIES
+  86% AND TERMINAL CELL SIZE CARRIES 14%. At 2 weeks, before the metacarpal collapses, its terminal cells
+  are 91% the size of the femur''s while it obtains one tenth the length per progenitor. SECOND, IN HUMANS
+  IT IS FLAT. Terminal hypertrophic cell height is 29-38 micrometres from birth to 13 years with no age
+  dependence (kember1976), and rib chondrocyte lacunar diameter likewise does not change (byers2000),
+  across an interval in which human growth velocity varies several-fold and then spikes at puberty. Humans
+  do not use this parameter to set growth rate. THIRD, IT IS NOT AT A CEILING. Terminal chondrocyte volume
+  spans at least 4.6-fold across mammalian growth plates - about 5000 femtolitres in the slow mouse
+  proximal radius against about 23000 in the jerboa metatarsal. FOURTH, AND THIS IS THE PART THAT MAKES IT
+  A BUDGET ARGUMENT RATHER THAN A WISH: THE LARGEST COMPONENT OF THE ENLARGEMENT IS SWELLING, NOT
+  BIOSYNTHESIS. Phase 2 takes the cell from about 2000 to 8000 femtolitres while dry mass density falls to
+  about 0.07 pg/fl, a roughly 60% dilution. A cell that gets bigger by taking on water spends no divisions.
+  THEREFORE: h_term enters height linearly with elasticity 1, varies several-fold between mammals, is held
+  flat across human childhood, and is achieved largely osmotically. It is the one term in the height
+  equation that is large, movable, and FREE - it buys micrometres without spending the pool that fusion is
+  waiting on. THE OBVIOUS OBJECTION IS THE RIGHT ONE TO TEST. An invariant parameter may be invariant
+  because nothing varies it, or because something DEFENDS it. This node asserts the first and cannot yet
+  exclude the second, and the discriminator already exists in humans - CNP analogues expand the
+  hypertrophic zone (agoston2007) and one is approved.'
+quantitative:
+- parameter: THE DECOMPOSITION — 86 PER CENT OF THE YIELD GAP IS AMPLIFICATION, 14 PER CENT IS CELL SIZE
+  value: 'over the same 2-to-3-week interval in the same mice, femur against metacarpal: YIELD ratio 10.40x;
+    terminal hypertrophic cell height ratio 1.38x (27.9 against 20.2 micrometres, interval means); residual
+    amplification ratio 7.54x. On a log scale terminal cell size carries 14 per cent of the gap and
+    amplification 86 per cent. AT 2 WEEKS ALONE, before the metacarpal terminal cell collapses, the ratio is
+    only 1.10x (27.0 against 24.5 micrometres)'
+  unit: fold ratio and per cent of the log gap
+  conditions: RE-ANALYSIS BY THIS ATLAS of lui2018 S1 Data per-animal values (CC-BY), C57BL/6 mouse,
+    n = 4-6 per age per bone. Yield from atlas/tools/yield_lui2018.py; terminal hypertrophic cell height
+    from the same workbook, sheet Fig1C
+  species: mouse
+  source_ref: lui2018
+  value_unverified: true
+  uncertainty: 'THE DECOMPOSITION IS EXACT AS ARITHMETIC AND APPROXIMATE AS BIOLOGY. Yield divided by
+    h_term gives terminal cells per progenitor PER COLUMN multiplied by the number of columns across the
+    measured width, and column density was not measured, so the amplification RATIO between two bones is
+    only equal to the residual if the two bones carry similar column density. That assumption is untested
+    and it is the main weakness of this row - if the metacarpal has substantially fewer columns per 500
+    micrometres, part of the 7.54x is geometry rather than amplification. THE YIELD ITSELF INHERITS EVERY
+    LIMIT FROM ITS OWN NODE, the load-bearing one being that a fall in a standing stock is net rather than
+    gross so the yields are upper bounds. AND A DIRECTIONAL CAUTION THAT CUTS AGAINST THE NODE''S OWN
+    THESIS: a 14 per cent share means nature does NOT use terminal cell size to differentiate bones, which
+    is the evidence offered here that it is undefended - but it is equally consistent with terminal cell
+    size being CONSTRAINED, and the two readings are not separated by this calculation.'
+- parameter: IN HUMANS THE PARAMETER IS FLAT ACROSS THE WHOLE OF CHILDHOOD
+  value: human distal femoral terminal hypertrophic cell height 29-38 micrometres from birth to 13 years
+    with no evidence of age dependence, 33 +/- 5 micrometres at ages 5-8; human rib chondrocyte lacunar
+    diameter shows no significant change with age in either zone
+  unit: micrometres
+  conditions: kember1976, 12 subjects, measured in the direction of growth over five groups of ten cells per
+    specimen with a measured 13 per cent processing shrinkage corrected for; byers2000, 46 subjects, rib
+  species: human
+  source_ref: kember1976
+  uncertainty: 'THIS IS THE LOAD-BEARING HUMAN OBSERVATION AND IT IS ALSO ONE HALF OF CONTRADICTION C-L1-09,
+    which this node does not resolve. In rat the same parameter FALLS with age and its loss is what
+    roach2003 identifies as driving cessation; in rabbit it falls too (weise2001). So the claim that
+    h_term is a free parameter is a claim about HUMANS specifically, resting on 12 subjects with 1-2 per
+    age in kember1976 and on a transverse dimension in RIB in byers2000. "No age dependence" at that n is a
+    weak bound, not a demonstration of invariance. If the rodent pattern is the general one and the human
+    flatness is a power failure, the central premise of this node is wrong.'
+- parameter: AND IT IS NOT AT A CEILING — MAMMALIAN TERMINAL VOLUME SPANS AT LEAST 4.6-FOLD
+  value: about 5000 femtolitres in the slow mouse proximal radius, which truncates phase 2 and omits phase 3
+    entirely; about 14000 in mouse proximal tibia; about 23000 in the jerboa metatarsal, which extends phase
+    3; Igf1-deficient cells stop at about 7000
+  unit: femtolitres
+  conditions: quantitative phase microscopy of live dissociated chondrocytes; held on hypertrophic_volume_increase
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: 'THE EXISTENCE OF THE JERBOA IS THE ARGUMENT AGAINST A HARD STRUCTURAL CEILING - a mammalian
+    growth plate can operate a terminal cell 4.6 times the volume of another mammalian growth plate without
+    the tissue failing. What it does NOT establish is that a GIVEN plate can be pushed there, since the
+    jerboa metatarsal is a different tissue with a matrix and a chondro-osseous junction adapted to it. The
+    volumes are also cross-sectional across species and preparations rather than a dose-response within one
+    plate.'
+- parameter: THE LARGEST COMPONENT IS SWELLING — DRY MASS IS DILUTED 60 PER CENT
+  value: phase 1 is true hypertrophy, about 600 to 2000 femtolitres at constant dry mass density 0.183 pg/fl;
+    PHASE 2 IS SWELLING, about 2000 to 8000 femtolitres with density falling to about 0.07 pg/fl, a roughly
+    60 per cent dilution confirmed independently by tomographic phase microscopy; phase 3 resumes
+    proportional growth at the new low density
+  unit: femtolitres and pg/fl
+  conditions: quantitative phase microscopy of live dissociated mouse chondrocytes
+  species: mouse
+  source_ref: cooper2013
+  uncertainty: 'THIS IS WHY THE ARGUMENT IS A BUDGET ARGUMENT AND NOT A WISH. If terminal enlargement were
+    biosynthesis, it would cost the same resource that proliferation costs and the two terms would not be
+    independent. A 60 per cent dilution says the dominant phase is osmotic, and water is not a resource the
+    growth plate runs out of. THE CAVEAT IS THAT CHEAP IS NOT THE SAME AS FREE: swelling requires
+    osmolyte accumulation and matrix compliance, hypertrophy is time-boxed at roughly 12 hours to triple
+    height plus roughly 12 hours at terminal size, and if larger cells take proportionally longer to
+    make and clear then velocity does not rise with volume. NONE OF THIS HAS BEEN MEASURED IN HUMAN CELLS.'
+localization:
+- hypertrophic zone, terminal cell; the chondro-osseous junction sets the removal rate
+human_evidence: indirect
+human_evidence_note: 'The human evidence is the INVARIANCE (kember1976, byers2000) and it is the weakest
+  kind of positive evidence - an absence of change at small n. Every mechanistic result on terminal cell
+  enlargement is mouse. No human chondrocyte has been measured by quantitative phase microscopy, no human
+  terminal cell volume is on record, and the only human intervention that acts on this compartment is a CNP
+  analogue whose effect on terminal cell size in humans has never been measured because it would require a
+  growth plate biopsy.'
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: The mechanism is entirely mouse and the therapeutic premise depends on a HUMAN
+  claim - that terminal cell height is flat across childhood - which rests on 12 subjects and directly
+  contradicts the rat and rabbit pattern (C-L1-09). If the human flatness is a power failure rather than a
+  fact, the node's central premise fails.
+confidence: C
+confidence_note: 'C, and it is a hypothesis node rather than a result. The individual components are solid -
+  the flow model with elasticity 1, the cross-species volume range, the phase-2 dilution, the human
+  invariance, and the atlas''s own yield decomposition. WHAT IS NOT ESTABLISHED IS THE JOIN. That h_term is
+  undefended rather than constrained is an INFERENCE from its invariance, and invariance is equally
+  consistent with tight defence; that is the whole question and this node does not settle it. It is not B
+  because no experiment has raised terminal cell volume in any plate and measured the length gained, because
+  the decomposition carries an untested column-density assumption, and because the human premise sits on one
+  side of an unresolved contradiction. It is not D because every input is a measured quantity from a primary
+  source, the arithmetic is explicit and reproducible, and the argument makes a falsifiable prediction.'
+key_refs:
+- ref_id: lui2018
+  pmid: '30036371'
+  first_author: Lui JC
+  year: 2018
+  type: primary
+  one_line_finding: Per-animal raw values from which this atlas computed the yield and decomposed it -
+    amplification carries 86 per cent of the between-bone gap and terminal cell size 14 per cent.
+- ref_id: kember1976
+  pmid: '1018028'
+  first_author: Kember NF
+  year: 1976
+  type: primary
+  one_line_finding: Human terminal hypertrophic cell height is 29-38 micrometres from birth to 13 years with
+    no evidence of age dependence, across an interval in which growth velocity varies several-fold.
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: Fusion occurs when chondrocyte proliferation approaches zero - which is what makes the
+    budget a budget of progenitors rather than of micrometres.
+- ref_id: forcinito2011
+  pmid: '20974641'
+  first_author: Forcinito P
+  year: 2011
+  type: primary
+  one_line_finding: Senescence tracks growth rather than time, so every known way to slow the clock works by
+    not growing - the trap that only a yield lever escapes.
+- ref_id: agoston2007
+  pmid: '17374144'
+  first_author: Agoston H
+  year: 2007
+  type: primary
+  one_line_finding: CNP acts on the growth plate largely by expanding the hypertrophic zone, with far more
+    CNP-regulated genes in hypertrophic than in resting and proliferative cartilage combined.
+open_questions:
+- g_l1_raise_terminal_cell_volume
+- g_l2_raise_the_yield_per_progenitor
+- g_l1arch_human_age_series_modern
+last_verified: '2026-08-07'
