@@ -16,8 +16,8 @@ fitted to the cell.
 
 The lesson both times: A NUMBER'S GRADE IS A PROPERTY OF HOW IT WAS OBTAINED, AND THAT IS
 USUALLY DOCUMENTED SOMEWHERE OTHER THAN THE PAPER YOU ARE CITING. The atlas has a
-`has_full_text` flag per reference. It has no flag for whether the METHOD behind the number
-was ever checked, and at the time of writing 1,006 of 1,068 references carry `has_full_text`
+`in_epmc` flag per reference. It has no flag for whether the METHOD behind the number
+was ever checked, and at the time of writing 1,006 of 1,068 references carry `in_epmc`
 against 19 carrying `full_text_read`.
 
 WHAT THIS TOOL IS, AND WHAT IT IS EMPHATICALLY NOT
@@ -166,7 +166,7 @@ def main():
         "n_quant_rows_total": len(rows),
         "n_rows_with_stake": len(scored),
         "n_refs": len(refs),
-        "n_refs_has_full_text": sum(1 for v in refs.values() if v.get("has_full_text")),
+        "n_refs_in_epmc": sum(1 for v in refs.values() if v.get("in_epmc")),
         "n_refs_full_text_read": sum(1 for v in refs.values() if v.get("full_text_read")),
         "weights": WEIGHTS,
         "WHAT_A_SCORE_IS": "a reading assignment, ranked by what would be at stake if the "
@@ -183,7 +183,7 @@ def main():
     print(f"{len(rows)} quantitative rows; {len(scored)} carry stake "
           f"(in a contradiction, in the flow model, on an A/B node, or in the compound screen)")
     print(f"references: {len(refs)} total, "
-          f"{sum(1 for v in refs.values() if v.get('has_full_text'))} with full text obtained, "
+          f"{sum(1 for v in refs.values() if v.get('in_epmc'))} with full text obtained, "
           f"{sum(1 for v in refs.values() if v.get('full_text_read'))} marked as READ")
     print(f"wrote {p}\n")
     print(f"top {a.top} reading assignments (NOT findings):")

@@ -291,6 +291,29 @@ def validate(quota=False):
         linked.add(e.get("source")); linked.add(e.get("target"))
     orphans = [n for n in nodes if n not in linked and not nodes[n].get("stub")]
 
+    # ---- held-but-unread (CORR-035) ----
+    # `in_epmc` (formerly misnamed has_full_text) is Europe PMC metadata and says
+    # nothing about what this atlas possesses. `local_pdf` says the file is on disk.
+    # A reference whose PDF is HELD, whose type is still primary_abstract_only, and
+    # which a node cites, is a claim resting on an abstract that could be resolved by
+    # opening a file already in hand. That is exactly the schrier2006 failure: its
+    # oestrogen arm - a null against one of this atlas's load-bearing claims - sat
+    # unread on disk for two days while five nodes cited the paper.
+    cited_refs = set()
+    for nid, n in nodes.items():
+        for kr in (n.get("key_refs") or []):
+            if isinstance(kr, dict) and kr.get("ref_id"):
+                cited_refs.add(kr["ref_id"])
+        for q in (n.get("quantitative") or []):
+            if isinstance(q, dict) and q.get("source_ref"):
+                cited_refs.add(q["source_ref"])
+    for rid in sorted(cited_refs):
+        rv = refs.get(rid) or {}
+        if rv.get("local_pdf") and rv.get("type") == "primary_abstract_only":
+            r.warn(f"held_but_unread/{rid}",
+                   "PDF is on disk (local_pdf) but type is still primary_abstract_only "
+                   "and nodes cite it - read the full text or drop the citation")
+
     # ---- quota ----
     if quota:
         for L in sorted(layers, key=lambda x: int(x[1:])):

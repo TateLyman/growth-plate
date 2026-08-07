@@ -242,7 +242,7 @@ def main():
 
     if a.provenance:
         print("=== REFERENCE PROVENANCE (anti-fabrication) ===")
-        SIG = {"open_access", "has_full_text", "cited_by", "added", "is_preprint"}
+        SIG = {"open_access", "in_epmc", "cited_by", "added", "is_preprint"}
         allrefs = dict(refs)
         for sp in glob.glob(os.path.join(ROOT, "sources", "shards", "*.yaml")):
             allrefs.update((load(sp, {}) or {}).get("refs", {}) or {})

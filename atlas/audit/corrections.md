@@ -2207,3 +2207,81 @@ findings were in the atlas. The field records that a PDF was obtained, not that 
 from it — and five references have carried it falsely (CORR-033). A field that tracks acquisition while
 being read as tracking knowledge is worse than no field. It should be replaced by a per-reference list
 of the nodes that cite it, which cannot be set without the extraction having happened.
+
+## CORR-035 — the abstract of `schrier2006` hid the half of the paper the atlas most needed, and the atlas cited it five times anyway
+
+`schrier2006` was read in full on 2026-08-07, two days after it entered the bibliography and one round
+after CORR-034 recorded that it had never been extracted. The full text contains a result that is
+absent from the abstract and that changes the standing of a claim four nodes rest on.
+
+**What the abstract says.** Resting zone proliferation and cell number decline with age; dexamethasone
+slows both. That is what the atlas recorded, and it is accurate.
+
+**What the abstract omits.** The paper has a third arm. Schrier pre-specified the two mechanisms by
+which oestrogen could accelerate senescence through the resting zone — faster resting zone
+proliferation, or faster numerical depletion of resting zone cells — treated 4-week-old male rabbits
+with estradiol cypionate 70 µg/kg i.m. weekly for two weeks, and measured both. In their words,
+**oestrogen did neither.** The BrdU index *fell* (P = 0.011) and cell number was unchanged.
+
+**Why that matters more than the dexamethasone result the atlas came for.** It is the elimination that
+motivates the yield hypothesis. With both observables excluded by measurement, what remains is loss of
+proliferative capacity per cell cycle — which is exactly what the authors then propose, in 2006, eight
+years before `nilsson2014` restated it. The atlas had been treating the yield as an inference drawn
+from a discussion paragraph. It is the residual of a completed elimination, and that is a stronger
+epistemic object.
+
+**And it cuts the other way too.** The same result contradicts `nilsson2014` on the sign of the
+load-bearing parameter — same laboratory, same compound, same dose, same route, opposite outcome on
+resting zone cell number, at two weeks versus five. Logged as `C-L2-06` and opened as
+`g_l2_oestrogen_depletion_time_course`. The atlas has been asserting oestrogen-driven numerical
+depletion without knowing that its own bibliography held a null against it.
+
+**The failure is not the reading; it is the two days.** Nothing went wrong on 2026-08-07. What went
+wrong is that between 2026-08-05 and 2026-08-07 the atlas cited `schrier2006` from five nodes, carried
+its dexamethasone result at second hand from a paper that cites it, and never noticed that a reference
+it possessed contained a null against one of its own load-bearing claims. Both the supporting result
+and the contradicting result were in the same PDF, on disk, unread.
+
+**What this adds to CORR-034's structural note.** The general lesson is that **an abstract is a lossy
+summary written to sell the paper's main claim, and the finding that matters to a reader with a
+different question is systematically the one the abstract drops.** `type: primary_abstract_only` is
+therefore not a mild caveat on a citation — it is a statement that the atlas does not know what is in
+the paper. **237 references carry it, and 214 of those are cited by at least one node.** Each is a
+place where a result like this one could be sitting.
+
+**And checking that number exposed something worse, which corrects CORR-034 itself.** CORR-034 said
+`has_full_text: true` "records that a PDF was obtained, not that anything was extracted from it." That
+is wrong, and too generous. The field is set in `atlas/tools/addref.py:150` as:
+
+```python
+"has_full_text": rec.get("hasTextMinedTerms") == "Y" or rec.get("inEPMC") == "Y",
+```
+
+Both are Europe PMC metadata. The flag means **a full text exists in Europe PMC** — a fact about Europe
+PMC's holdings, not about this atlas's. It has never at any point recorded that this project obtained,
+possessed or opened anything. That is why 1,006 of 1,068 references carried it: most papers are in
+EPMC. The atlas actually holds on the order of 85 PDFs. **A field named `has_full_text`, read
+throughout this log as a claim about possession, is a claim about a third party's database.**
+
+**The rule this entry wanted to state was unstatable, so the schema was changed instead.** The intended
+rule — do not cite a reference as `primary_abstract_only` when the atlas holds its PDF — depends on
+knowing which PDFs the atlas holds, and until now no field recorded that. Three changes, all made in
+this round:
+
+1. **`has_full_text` renamed to `in_epmc`** across the bibliography, all 26 shards and three tools. It
+   now says what it measures. Any inference previously drawn from it as evidence of possession is void.
+2. **`local_pdf: true` added**, set only where a file is genuinely on disk and its basename matches the
+   ref_id exactly. **38 references qualify** — against 1,006 that carried the old flag. That ratio is
+   the size of the error.
+3. **A validator check added** (`held_but_unread`): a reference with `local_pdf: true`, type still
+   `primary_abstract_only`, and at least one node citing it.
+
+**It fired on two references immediately: `glasson2005` and `williams2001`.** Both have PDFs on disk,
+both are cited from nodes on their abstracts, neither has been read. They are the same failure as
+`schrier2006`, still live, and they were invisible until the field that was supposed to surface them
+was replaced with one that means what its name says.
+
+**Two honest limits on the fix.** `local_pdf` is set by filename match, so it under-counts — held PDFs
+with non-matching filenames are missed, and 38 is a floor. And it does not distinguish a PDF that was
+read from one that was opened; only `full_text_read` does that, and it is set on exactly one reference
+so far.

@@ -147,7 +147,7 @@ def add_one(bib, pmid=None, doi=None, tier=None, rtype=None, finding=None,
         "type": rtype or ("preprint" if is_preprint else None),
         "is_preprint": is_preprint,
         "open_access": rec.get("isOpenAccess") == "Y",
-        "has_full_text": rec.get("hasTextMinedTerms") == "Y" or rec.get("inEPMC") == "Y",
+        "in_epmc": rec.get("hasTextMinedTerms") == "Y" or rec.get("inEPMC") == "Y",
         "cited_by": rec.get("citedByCount"),
         "added": time.strftime("%Y-%m-%d"),
     }

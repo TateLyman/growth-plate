@@ -20,7 +20,20 @@ summary: 'nilsson2014 is the direct test of this atlas''s central model and it r
   differentiation to proliferative cells. THE EXCHANGE RATE BETWEEN GROWING AND SPENDING THE POOL IS THEREFORE NOT
   FIXED - two hormones move it in opposite directions. Height is not pool size alone; it is POOL SIZE TIMES YIELD
   PER CELL SPENT. Every intervention this atlas has examined changes the pool or the exit rate. NOTHING HAS EVER TARGETED
-  THE YIELD.'
+  THE YIELD - AND THE IDEA IS NOT THIS ATLAS''S. schrier2006 proposed it twenty years ago, in the same paper that
+  measured the dexamethasone effect, when they found that oestrogen and dexamethasone BOTH slow resting-zone
+  proliferation yet move senescence in opposite directions, and speculated that oestrogen acts either by a
+  proliferation-independent mechanism or BY INCREASING THE LOSS OF PROLIFERATIVE CAPACITY PER CELL CYCLE. That
+  second clause is the yield term. It was stated in 2006, restated by nilsson2014 in 2014, and has never been
+  measured in any species. AND THE FULL TEXT OF schrier2006, NOW READ, SHOWS THE YIELD HYPOTHESIS WAS NOT A
+  SPECULATION BUT A FORCED MOVE. Schrier went in with two candidate mechanisms for how oestrogen accelerates
+  senescence - it speeds resting zone proliferation, or it speeds the numerical loss of resting zone cells - and
+  in their own words, OESTROGEN DID NEITHER. It DECREASED resting zone proliferation (P = 0.011) and had NO
+  significant effect on resting zone cell number, at the same dose, compound and route nilsson2014 later used.
+  So after two weeks of oestrogen, the two measurable state variables of the pool - how fast it divides and how
+  many cells it holds - are moving the WRONG WAY and NOT AT ALL respectively, while senescence accelerates.
+  Something is being spent that neither number sees. That residual is the yield, and it is the only term left
+  standing once both observables are excluded by measurement rather than by argument.'
 quantitative:
 - parameter: WHAT REVERSES AND WHAT DOES NOT, AFTER A FIVE-WEEK WASHOUT
   value: 'REVERSIBLE - tibial growth rate, chondrocyte proliferation rate and hypertrophic cell size all normalised
@@ -64,21 +77,84 @@ quantitative:
     how much column growth is obtained per progenitor consumed. Height is pool size times yield, and the entire therapeutic
     literature has worked on the first term. Recorded as a DERIVED INFERENCE from the authors, flagged as unquantified,
     and it should not be treated as a measured parameter until someone measures it.'
-- parameter: AND DEXAMETHASONE MOVES THE EXCHANGE RATE THE OTHER WAY — IT CONSERVES THE POOL
-  value: dexamethasone slows resting zone chondrocyte proliferation but, unlike oestrogen, CONSERVES the number of
-    resting zone chondrocytes, apparently by additionally inhibiting differentiation of resting to proliferative chondrocytes
-  unit: qualitative, direction
-  conditions: cited by nilsson2014 from prior work in their reference 13; glucocorticoid excess and hypothyroidism
-    are both described as slowing resting zone chondrocyte depletion
+- parameter: AND DEXAMETHASONE MOVES THE EXCHANGE RATE THE OTHER WAY — MEASURED, NOT INFERRED
+  value: the BrdU-labelling index in the resting zone DECREASED with dexamethasone (P < 0.001) while the NUMBER of
+    resting zone chondrocytes was GREATER than in controls (P = 0.016); serum IGF-I was unchanged (112 +/- 8 against
+    108 +/- 6 ng/mL, not significant)
+  unit: P values on labelling index and cell number
+  conditions: 4-week-old rabbits, dexamethasone 0.5 mg/kg subcutaneously daily for two weeks, a supraphysiological
+    dose previously shown to inhibit growth; n = 6-7 per group; effects measured in both the epiphyseal and reserve
+    regions of the resting zone
   species: rabbit
-  source_ref: nilsson2014
-  uncertainty: 'THIS IS THE EXISTENCE PROOF THAT THE COUPLING BETWEEN GROWING AND SPENDING IS NOT FIXED, and it is
-    the single most encouraging sentence this atlas has recorded. Two hormones both slow resting zone proliferation;
-    one drains the pool and the other conserves it, because they differ in their effect on EXIT rather than on renewal.
-    THE COST IS THE OBVIOUS ONE - dexamethasone conserves the pool by suppressing growth, so it buys capacity by not
-    using it, which is not a height therapy. What it demonstrates is that exit rate is separately addressable from
-    renewal rate. RECORDED AT SECOND HAND: this is nilsson2014 citing another paper, which this atlas has not read,
-    so the primary evidence for pool conservation under dexamethasone is not held here.'
+  source_ref: schrier2006
+  uncertainty: 'THE EXISTENCE PROOF THAT THE COUPLING BETWEEN GROWING AND SPENDING IS NOT FIXED, AND IT IS A DIRECT
+    MEASUREMENT. The authors state the inference plainly - the increased number of resting zone cells occurred DESPITE
+    decreased proliferation, so dexamethasone must slow the transition from resting to proliferative chondrocytes,
+    conserving the pool. Two hormones both slow resting-zone proliferation; one drains the pool and the other fills
+    it, and they differ in their effect on EXIT rather than on renewal. Unchanged IGF-I argues the effect is local
+    rather than systemic. THE COST IS THE OBVIOUS ONE - the dose is supraphysiological and chosen because it inhibits
+    growth, so dexamethasone buys capacity by not using it, which is not a height therapy. Two weeks, one dose, n =
+    6-7, rabbit. PREVIOUSLY RECORDED HERE AT SECOND HAND from nilsson2014; the primary is now read, and it says slows
+    the numerical depletion rather than conserves outright, which is the weaker and more accurate phrasing.'
+- parameter: THE OESTROGEN ARM OF THE SAME EXPERIMENT — A DOUBLE NULL THAT LEAVES ONLY THE YIELD
+  value: 'oestrogen DECREASED the resting zone BrdU-labelling index (P = 0.011) and had NO significant effect on the
+    number of resting zone chondrocytes. Serum estradiol 11 +/- 2 pg/mL against under 5 pg/mL in vehicle; serum IGF-I
+    88 +/- 6 against 108 +/- 6 ng/mL, not significant'
+  unit: P values on labelling index and cell number; pg/mL and ng/mL
+  conditions: 4-week-old MALE rabbits, estradiol cypionate 70 micrograms/kg intramuscularly WEEKLY for two weeks,
+    cottonseed-oil vehicle control, n = 6-7 per group; BrdU infused continuously during the second week; distal femur,
+    proximal tibia and distal tibia
+  species: rabbit
+  source_ref: schrier2006
+  uncertainty: 'THIS IS THE ROW THE NODE TURNS ON AND IT IS A PAIR OF NULLS, WHICH IS NORMALLY THE WEAKEST THING A
+    PAPER CAN OFFER. It carries weight here only because of what it is a null AGAINST: the authors pre-specified the
+    two mechanisms by which oestrogen could accelerate senescence through the resting zone - faster proliferation
+    spending capacity sooner, or faster numerical depletion - and reported that oestrogen did neither. Excluding both
+    observables by measurement is what promotes a per-cell-cycle capacity loss from a speculation to the residual.
+    THE HONEST LIMITS ARE SEVERE. A null on cell number at n = 6-7 over two weeks is not evidence of no effect, and
+    the study reports no power calculation; serum estradiol of 11 pg/mL is a modest exposure; and the same dose and
+    route run for FIVE weeks in nilsson2014 DID deplete resting zone cell number irreversibly. The most likely
+    reconciliation is simply DURATION - two weeks is not long enough to register the loss - which would make this a
+    bound on the rate of depletion rather than a contradiction, but sex (male here, ovariectomised female there) and
+    age at start (4 weeks against 11) also differ. Logged as contradiction C-L2-06. If duration is the answer, the
+    double null is weakened but not destroyed: senescence is already accelerating at two weeks while neither
+    observable has moved.'
+- parameter: RESTING ZONE PROLIFERATION DOES NOT DECLINE GRADUALLY — IT COLLAPSES BEFORE 5 WEEKS AND THEN FLATTENS
+  value: distal femur resting zone BrdU-labelling index 95.6 +/- 0.8% at 0 weeks (late fetal), 9.2 +/- 1.2% at 5 weeks,
+    9.2 +/- 1.1% at 9 weeks, 7.6 +/- 1.5% at 17 weeks (P < 0.001 for age). The number of resting zone chondrocytes
+    per mm of growth plate width also fell with age in the overall, epiphyseal and reserve resting zone (all P < 0.001)
+  unit: percent BrdU-labelled; cells per mm growth plate width
+  conditions: 0-, 5-, 9- and 17-week-old rabbits, n = 6-12 per group, one week of CONTINUOUS BrdU infusion; resting
+    zone scored as a whole and subdivided into an epiphyseal region and a reserve region
+  species: rabbit
+  source_ref: schrier2006
+  uncertainty: 'THE SHAPE OF THE CURVE MATTERS MORE THAN THE FACT OF THE DECLINE, AND IT IS NOT THE SHAPE THE
+    DEPLETION MODEL IMPLIES. A tenfold fall between the fetal plate and 5 weeks, then essentially NOTHING between 5
+    and 17 weeks, is not a resource being drawn down at a steady rate; it is a step change early in life followed by
+    a long plateau, over an interval during which the rabbit is still growing and will eventually fuse. If resting
+    zone proliferation is flat from 5 to 17 weeks while senescence continues, then falling resting zone proliferation
+    cannot be the variable that drives senescence over most of the growing period - which is a second, independent
+    reason the driver has to be something other than the two observables. LIMITS: four timepoints, the fetal point is
+    a different tissue architecture (no secondary ossification centre, so the fetal CELL COUNT is reported by the
+    authors as a lower bound only), the 5-to-17-week interval was not analysed for trend separately from the overall
+    ANOVA, and the labelling index at 95.6% is at ceiling so the fetal-to-5-week fall is partly a ceiling effect.'
+- parameter: AND THE TWO DRUGS ACT ON DIFFERENT HALVES OF THE RESTING ZONE
+  value: 'dexamethasone raised cell number in the RESERVE resting zone (P < 0.001) but not in the epiphyseal resting
+    zone; oestrogen lowered the labelling index in the EPIPHYSEAL resting zone (P = 0.008) but not significantly in
+    the reserve resting zone (P = 0.06). Dexamethasone lowered proliferation in both (P < 0.001 each)'
+  unit: P values by subregion
+  conditions: same two-week treatment series; the resting zone divided into an epiphyseal region adjacent to the
+    secondary ossification centre and a reserve region adjacent to the proliferative zone
+  species: rabbit
+  source_ref: schrier2006
+  uncertainty: 'RECORDED BECAUSE THE ATLAS HAS TREATED THE RESTING ZONE AS ONE COMPARTMENT AND THIS SAYS IT IS AT
+    LEAST TWO. The pool-conserving effect of dexamethasone is a RESERVE-zone effect; oestrogen''s antiproliferative
+    effect is an EPIPHYSEAL-zone effect. If those subregions differ in what they contribute to the columns, then
+    pool size is the wrong single number and every count in this node is an average over two populations that are
+    being manipulated differently. THIS IS A WEAK BASIS FOR A STRONG STATEMENT: the oestrogen reserve-zone result at
+    P = 0.06 is a failure to reach significance and not a demonstration of absence, the two subregions were not
+    formally compared against each other, and the authors themselves declined to test between growth plates on power
+    grounds. It is flagged as a structural question the atlas was not asking, not as an established dissociation.'
 - parameter: SENESCENCE IS GROWTH-DEPENDENT, NOT TIME-DEPENDENT — AND FOUR WEEKS OF INHIBITION BUYS ABOUT TWO
   value: structural, functional AND molecular markers of growth plate senescence were all delayed by prior tryptophan
     deficiency; the delay was approximately 2 weeks, similar in magnitude across structural and molecular markers
@@ -108,16 +184,31 @@ species_basis:
 - rat
 translation_risk: moderate
 translation_risk_reason: Rabbit is the right species for fusion and the washout design is strong, but every quantity
-  here is animal, the yield term is derived rather than measured, and the dexamethasone comparison is second-hand.
+  here is animal and the yield term is derived rather than measured. Both primaries are now read in full, so the
+  earlier second-hand transmission of the dexamethasone result no longer applies.
 confidence: B
-confidence_note: B. The reversible-versus-irreversible dissociation is carried by a washout in a controlled design
-  with concurrent measurement of both classes of parameter in the same animals, which is a strong structure, and the
-  growth-dependence claim is supported by three mechanistically unrelated growth inhibitors. It is not A because the
-  yield term - the quantity the node is named for - is an inference in a discussion rather than a measurement, because
-  the dexamethasone result is cited rather than read, because there is one dose and one species per experiment, and
-  because five weeks of washout cannot establish permanence. It is not C because the central dissociation is directly
-  measured and because the resting zone loss was tested against apoptosis rather than assumed.
+confidence_note: 'B. The reversible-versus-irreversible dissociation is carried by a washout in a controlled design
+  with concurrent measurement of both classes of parameter in the same animals, which is a strong structure; the
+  dexamethasone result is now read in the primary rather than through nilsson2014; and the growth-dependence claim
+  is supported by three mechanistically unrelated growth inhibitors. It is not A because the yield term - the
+  quantity the node is named for - is a residual that survives the exclusion of two observables rather than anything
+  measured, because the exclusion rests on a PAIR OF NULLS at n = 6-7 with no power calculation, because schrier2006
+  and nilsson2014 disagree on whether oestrogen depletes resting zone cell number at all (C-L2-06, probably a
+  duration difference but not shown to be), because there is one dose and one species per experiment, and because
+  five weeks of washout cannot establish permanence. It is not C because the central dissociation is directly
+  measured, because the resting zone loss was tested against apoptosis rather than assumed, and because the two
+  candidate mechanisms the yield hypothesis replaces were pre-specified by the authors and then excluded by
+  measurement rather than dismissed.'
 key_refs:
+- ref_id: schrier2006
+  pmid: '16614378'
+  first_author: Schrier L
+  year: 2006
+  type: primary
+  one_line_finding: Dexamethasone lowers resting-zone proliferation yet RAISES resting zone cell number, so it must
+    slow the resting-to-proliferative transition; oestrogen at the same two weeks did NEITHER of the two things the
+    authors predicted - it lowered proliferation and left cell number unchanged - leaving loss of proliferative
+    capacity per cell cycle as the residual mechanism.
 - ref_id: nilsson2014
   pmid: '24708243'
   first_author: Nilsson O
