@@ -10556,3 +10556,58 @@ gaps:
     reading the same kinase in different cells and would resolve the paradox rather than just measuring it. The
     limiting resource is human growth plate tissue from epiphysiodesis, which is exactly the tissue chu2026 and
     the atlas re-analysis of GSE288028 already use.'
+- gap_id: g_l7_residual_physeal_reserve_at_late_bone_age
+  type: known_unknown
+  layer: L7
+  tractability: 5
+  question: At bone age 16 and above, how much physis is actually LEFT in this individual at the sites that carry the
+    remaining growth - and can it be MEASURED rather than predicted, so that a decision to start a growth
+    intervention rests on the plate rather than on a population map?
+  why_it_matters: 'EVERY LATE-START STACK TURNS ENTIRELY ON THIS NUMBER AND NOBODY MEASURES IT. Bone age is
+    hand-wrist, mapped from a population atlas, and carries roughly half a year of reader error; it says nothing
+    about the distal femur, the proximal tibia or the vertebral ring apophysis, which are where the remaining growth
+    at that maturity actually is. AND THE PREDICTION ERROR SWALLOWS THE INTERVENTION: tanner1983 gives 95 per cent
+    intervals of about +/- 6 cm for boys at 15, narrowing to about +/- 4 cm only if the previous year''s increment
+    is known - larger than any effect a growth stack could plausibly produce at that age. So an individual treated
+    at bone age 16 cannot be told afterwards whether it worked. THE SECOND REASON IS SAFETY AND IT IS SPECIFIC TO
+    THE FGFR ARM. Erdafitinib drives every ENDOCHONDRAL plate at once and spares the membranous cranial vault, so
+    the LATER treatment starts, the larger the share of its output that is routed into the vertebral column,
+    because the long bones are spent and the spine is not. The single catastrophic outcome on record - erdachild2024,
+    kyphoscoliosis with cord compression and cervical myelopathy - is that failure mode, and canopyspine2026
+    established that spinal deformity is DOSE-dependent rather than axis-dependent. A residual-reserve measurement
+    that covered knee AND spine would say whether a given patient is in the favourable configuration or the worst
+    one. THIRD, IT DELIVERS THE TITRATION ENDPOINT g_l12_physeal_thickness_as_titration_endpoint ALREADY NEEDS.'
+  what_is_known: 'kvist2020: MRI closure staging of the human physis is reliable ACROSS READERS with
+    cartilage-weighted and T1-weighted sequences. kvist2021: cross-sectional MRI cohorts have been used to
+    determine what governs closure timing. dymerska2018: at 7 T, growth cartilage LAYERS are resolvable in children
+    up to age 13 but individual chondrocytes are not at any usable field strength. Plate thickness (1-10 mm) and
+    zone heights (100-1000 um) are within reach; a 10-20 um chondrocyte is not. tanner1983 and brmswig1990 give the
+    prediction errors that make measurement necessary. weise2001 supplies the reason it matters biologically -
+    fusion is proliferative EXHAUSTION, so a lever that releases a brake needs a plate with something left to
+    release.'
+  what_is_missing: '(a) NO NORMATIVE MRI DATA on residual physeal area or volume by bone age at the distal femur,
+    proximal tibia or vertebral ring - closure has been STAGED but reserve has never been QUANTIFIED. (b) NO STUDY
+    relating a measured residual physeal quantity to SUBSEQUENT ACHIEVED GROWTH in the same individuals, which is
+    the validation that would turn staging into a decision tool. (c) NOTHING AT ALL FOR THE SPINE: vertebral ring
+    apophyseal status is not part of any skeletal maturity system in routine use for this purpose, so the site that
+    carries most of the late remaining growth - and all of the late risk on the FGFR arm - is unmeasured. (d) No
+    measurement of whether a plate that is radiographically open at bone age 16 is PROLIFERATIVELY COMPETENT or
+    merely not yet fused, which is the weise2001 distinction and is the whole question.'
+  nearest_evidence:
+  - kvist2020
+  - dymerska2018
+  - tanner1983
+  - weise2001
+  nearest_evidence_note: The imaging is validated for STAGING and the arithmetic for why staging is not enough is
+    already in the atlas; nobody has joined them into a reserve measurement.
+  discriminating_experiment: 'A PROSPECTIVE COHORT THAT NEEDS NO DRUG AND NO NEW MODALITY. Enrol adolescents across
+    bone age 13-17, image knee physes and the vertebral ring apophyses by MRI at entry, then follow standing height,
+    SITTING HEIGHT and leg length to adult height. Regress achieved remaining growth - decomposed into trunk and
+    leg - on measured residual physeal area at each site, against bone age alone as the comparator. Readouts under
+    competing hypotheses - MEASUREMENT WINS: residual physeal area predicts remaining growth with a materially
+    narrower interval than the +/- 6 cm of bone-age-based prediction, and the decision to treat late becomes
+    evidence-based. NO GAIN: the interval does not narrow, which would mean the irreducible variance is biological
+    rather than measurement error and that late-start decisions cannot be individualised at all - a negative worth
+    knowing before anyone doses a 16-year-old. SITE DISSOCIATION: knee and spine reserve diverge, which is the
+    result that most changes practice, because it would identify the patients in whom an FGFR inhibitor would drive
+    predominantly the spine and should not be given.'
