@@ -3450,3 +3450,53 @@ kidney 54.6% and tail 82.9%. In an animal sitting near half of control on every 
 bone growth is the most completely restored quantity in the body.** The plate does not merely participate in
 catch-up — it recovers preferentially. That ordering is far outside digitisation error and it is the most
 encouraging observation in this arm.
+
+## CORR-070 — a second reconstruction beat mine on method, and both of us stopped one step short of the number that matters
+
+The user ran an independent digitisation of the same figures and it is better than mine in three specific
+ways. Recording them because they are reusable, not as courtesy.
+
+**1. Calibration instead of eyeballing.** Axes calibrated from actual tick spacing with marker-centroid
+detection. Against that, my Marino control reads were good (within 0.6 mm at every age) but my **8-week PTU
+point was 1.7 mm high — 22.0 against 20.30**. That single error understated the initial deficit as 14.0
+rather than 15.59 and so understated recovery as 70% rather than 74.5%.
+
+**2. An internal validation I did not know existed.** Finite-differencing the reconstructed Fig 2 lengths
+reproduces the *independently plotted* growth rates in Marino **Fig 5** almost exactly — control
+3.75/1.52/0.74/0.46/−0.15/0.24 mm/wk against Fig 5 values of ~3.7/1.5/0.75/0.45–0.5/−0.1/0.2, and PTU
+2.61/1.94/0.74/0.31 against ~2.6/1.9/0.75/0.3. A reconstruction whose derivative matches a separate panel of
+the same paper is validated in a way careful eyeballing cannot claim. I had read Fig 5 referenced in the
+text and never thought to use it as a check.
+
+**3. An external anchor against a printed value.** The Lui 2010 tibia reconstruction lands at 26.75 and
+16.47 mm at 4 weeks where `forcinito2011` **prints** 26.6 ± 0.2 and 16.5 ± 0.4 — 0.15 and 0.03 mm from a
+known number, validating the pixel scale directly.
+
+**Where the two reconstructions agree, and it matters that they do.** My Fig 1B integration gives Trp− a
+gain of 8.90 mm and a residual of 1.20; the Lui absolute curve gives 8.41 and 1.87; `gafni2001` *measured*
+1.6 ± 1.6 mm (NS) in a different species with a different inhibitor. **Three routes with different error
+modes, all landing between 1.2 and 1.9 mm.** That is the strongest quantitative result this arm has, and
+neither reconstruction alone would have earned it.
+
+**And the step both of us stopped short of.** Everything above is expressed in millimetres of rat tibia,
+where a residual of ~1.9 mm reads as trivially small. As a **fraction of final bone length** it is **4.1%** —
+and Gafni's is ~1.9%, Marino's ≥10% and still closing. Applied as a fraction to a 175 cm human, 4.1% costs
+roughly 1.6 cm of tibia and 2.0 cm of femur: **about 3.5 cm of leg before counting the spine.** Those are the
+same magnitudes as the entire pharmacological stack *gains*.
+
+So both of my previous positions were wrong in opposite directions. Round 70's "height-negative" was too
+harsh; round 76's "approximately height-neutral" was too generous. **The honest position is a small but real
+net loss, which shrinks the later, shorter and milder the suppression** — 74.5% recovered for eight weeks of
+hypothyroidism from day one, 81.8% for four weeks of tryptophan deficiency from birth, 90.8% for five weeks
+of dexamethasone begun at five weeks of age, with only that last residual statistically indistinguishable
+from zero.
+
+**One point of disagreement, and it is narrow.** The other reconstruction says *"neither published trajectory
+actually demonstrates complete equality by the final measured point."* Correct as stated. But "not
+demonstrated equal" and "demonstrated unequal" are different claims, and Gafni's 1.6 ± 1.6 mm is **not
+statistically significant** — that one residual is indistinguishable from zero, and it is also the latest and
+mildest protocol of the three. The trend and the one null point the same way.
+
+**Standing rule added.** Figure-derived values are labelled `reconstructed_from_figure` in the node
+`conditions` field and never merged with printed values, whoever produced them. `atlas/tools/compare_recon.py`
+holds both reconstructions side by side so any future correction re-runs against both.

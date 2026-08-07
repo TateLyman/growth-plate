@@ -48,10 +48,11 @@ summary: 'The atlas has treated arm 3 as a closed door - the resting zone holds 
   is a dial, not a wall, and the atlas has been describing it as a wall. THIS ARM IS NOT CLOSED AND MUST
   NOT BE WRITTEN UP AS THOUGH IT WERE. What is established is that the counter can be slowed, that the
   terminal event can be deferred, and - once the figures are digitised and integrated - that suppress-then-
-  release is approximately height-NEUTRAL rather than height-negative: two of the three experiments ran
-  until growth stopped and both closed their deficits to within a couple of millimetres (CORR-069). The
-  sub-unity exchange rate does not bound the outcome, because the recovery-phase overshoot compensates for
-  it. What is still NOT established is any route to more length than the animal would have reached anyway.
+  release costs a SMALL BUT REAL amount of final length - three independent routes put the residual at 1.2
+  to 1.9 mm, which is 2 to 4 per cent of final bone length and, scaled to a human, the same magnitude as
+  the entire pharmacological stack gains (CORR-069, CORR-070). The sub-unity exchange rate does not bound
+  the outcome, because the recovery-phase overshoot largely compensates - but largely is not wholly, and
+  the shortfall shrinks the later, shorter and milder the suppression. What is still NOT established is any route to more length than the animal would have reached anyway.
   The arm stays open until an intervention exists that slows the counter while the plate keeps producing.'
 quantitative:
 - parameter: resting-zone BrdU labelling index, late fetal versus 5, 9 and 17 weeks
@@ -479,6 +480,65 @@ quantitative:
     is why g_l2_pool_preservation_versus_pool_expansion exists: a count inside a zone whose boundary is set
     by the advancing secondary ossification centre cannot separate progenitors spared, progenitors made,
     and territory not yet taken.'
+- parameter: 'CALIBRATED RECONSTRUCTION of Marino Fig 2 tibia, with an internal validation the atlas
+    did not know was available'
+  value: deficit 15.59 mm at 8 weeks falling to 3.97 mm at 21 weeks
+  unit: mm, 74.5 per cent of the deficit recovered
+  conditions: 'axes calibrated from tick spacing with marker-centroid detection rather than eyeballing;
+    control 21.60, 32.85, 35.89, 38.11, 39.03, 38.57, 39.77 mm and PTU 20.30, 28.15, 32.02, 34.23, 35.80 mm
+    at 3, 6, 8, 11, 13, 16 and 21 weeks. VALIDATED by finite-differencing the reconstructed lengths against
+    the independently plotted growth rates in Marino Fig 5: control 3.75/1.52/0.74/0.46/-0.15/0.24 mm/wk
+    against Fig 5 visual values of ~3.7/1.5/0.75/0.45-0.5/-0.1/0.2, and PTU 2.61/1.94/0.74/0.31 against
+    ~2.6/1.9/0.75/0.3.'
+  species: rat
+  source_ref: marino2008
+  uncertainty: 'RECONSTRUCTED FROM THE PUBLISHED FIGURE, NOT AUTHOR SOURCE DATA - the distinction is kept
+    explicitly because these numbers will otherwise be quoted as though they were printed. Digitisation
+    error roughly +/-0.10-0.20 mm on marker centres, not counting biological SEM. This SUPERSEDES the
+    atlas own round-76 figure reads, which agreed on control to within 0.6 mm but put the 8-week PTU point
+    at 22.0 against 20.30 - a 1.7 mm error that understated the initial deficit and so understated recovery
+    as 70 per cent rather than 74.5. The Fig 5 cross-check is the reason to prefer the calibrated version:
+    an independent panel in the same paper reproduces the derivative of the reconstruction almost exactly,
+    which no amount of careful eyeballing can claim.'
+- parameter: 'CROSS-VALIDATION of the Forcinito endpoint by three methods that do not share an error mode'
+  value: residual deficit 1.2 to 1.9 mm
+  unit: mm out of an initial 10.1-10.3 mm deficit
+  conditions: 'method 1 - integrate the atlas own reads of Forcinito Fig 1B growth rates from 4 to 18 weeks,
+    giving control 18.60 and Trp- 27.50 mm, a gain of 8.90 against a printed 10.1 deficit, residual 1.20 mm.
+    Method 2 - reconstruct the absolute tibia curve from Lui 2010, which uses the same tryptophan paradigm,
+    giving control 18.69 and Trp- 27.10 mm from 4 to 20 weeks, a gain of 8.41 against a reconstructed 10.28
+    deficit, residual 1.87 mm. Method 3 - gafni2001 measured 1.6 +/- 1.6 mm by caliper in rabbit femur with
+    a different inhibitor, NOT SIGNIFICANT.'
+  species: multiple
+  source_ref: forcinito2011
+  uncertainty: 'THE ANCHOR THAT MAKES METHOD 2 TRUSTWORTHY: the Lui reconstruction puts 4-week tibiae at
+    26.75 and 16.47 mm where forcinito2011 PRINTS 26.6 +/- 0.2 and 16.5 +/- 0.4 - agreement to 0.15 and
+    0.03 mm against a known value, which validates the pixel scale directly. Caution retained: Lui sampling
+    ages are not identical to Forcinito, so this is a paradigm-level check and not proof of a shared cohort.
+    Three routes with different error modes landing between 1.2 and 1.9 mm is the strongest quantitative
+    result this arm has.'
+- parameter: 'WHAT THE RESIDUAL IS AS A FRACTION OF FINAL BONE LENGTH - the framing neither reconstruction
+    stated'
+  value: about 2 to 4
+  unit: per cent of final bone length
+  conditions: Gafni residual 1.6 mm on a rabbit femur of roughly 85 mm, about 1.9 per cent and not
+    statistically significant; Lui/Forcinito residual 1.87 mm on a 45.4 mm rat tibia, 4.1 per cent; Marino
+    residual 3.97 mm on a 39.8 mm tibia, 10 per cent, but that curve had not plateaued so it is an upper
+    bound on the true loss rather than a final value
+  species: multiple
+  source_ref: gafni2001
+  uncertainty: 'THIS IS THE NUMBER THAT DECIDES WHETHER SUPPRESS-THEN-RELEASE IS USABLE AND BOTH
+    RECONSTRUCTIONS STOPPED SHORT OF IT (CORR-070). A residual of 2-4 per cent of final bone length is
+    small against the insult - 75 to 91 per cent of a very large deficit was recovered - but it is LARGE
+    against what this project is trying to gain. Applied as a fraction to a 175 cm human, 4.1 per cent
+    costs roughly 1.6 cm of tibia and 2.0 cm of femur, about 3.5 cm of leg before counting the spine; even
+    the 1.9 per cent figure costs about 1.6 cm of leg. Those are the same magnitudes as the entire
+    pharmacological stack GAINS. So the round-76 phrasing approximately height-neutral was too generous
+    and the round-70 phrasing height-negative was too harsh: the honest position is a SMALL BUT REAL NET
+    LOSS that shrinks the later, shorter and milder the suppression - 74.5 per cent recovered for eight
+    weeks of hypothyroidism from day one, 81.8 for four weeks of tryptophan deficiency from birth, 90.8
+    for five weeks of dexamethasone begun at five weeks of age, with only that last residual statistically
+    indistinguishable from zero.'
 localization:
 - 'growth plate resting zone: where the program is cashed out into height; pool size and labelling index
   both fall with age'
