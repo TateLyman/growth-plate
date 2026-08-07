@@ -3239,3 +3239,41 @@ spatially organised charge, not maximally cationic, and the node has been rewrit
 One further caution the paper supplies against the atlas's own habit: partition coefficients in human and
 bovine cartilage are nearly identical (10.9 vs 11.2) but the human binding rate constant is about
 **fivefold slower** (1.2×10⁻⁵ vs 6.4×10⁻⁵ s⁻¹). Equilibrium transfers across species; kinetics does not.
+
+## CORR-064 — I wrote "closes the last gap." Nothing here closes. The arm stays open.
+
+At the end of round 71 I told the user that one more figure "closes the last gap in this corpus." That
+framing is wrong twice over and the user corrected it.
+
+**Wrong on the facts.** The figure in question was already in a paper I had. Marino's Figure 2 is the
+growth-curve panel and Figure 4 the histology, both in `marino2008`, which had been sitting converted on
+disk since round 70. I asked for data I was holding. The failure is the same one as CORR-058 — *holding a
+source and not reading across it* — at a one-round distance instead of a several-month one.
+
+**Wrong on the frame, which matters more.** An arm is not closed by an experiment that answers one of its
+questions. What reading these four papers established is that the counter can be slowed and that the
+terminal event can be deferred — `gafni2001`, 88% of controls fused against 14% of treated. What it did not
+establish, and what no experiment in the corpus establishes, is whether any of that converts into greater
+final length. Three independent inhibitors now give the exchange rate and all three are **below one**:
+tryptophan 4 weeks spent for ~2 bought, dexamethasone 5 for ~3, hypothyroidism 8 for ~5. You never buy back
+more programme-time than you spend in growth-time, so length recovery cannot come from the shift alone — it
+depends on the recovery-phase growth rate running supranormal, which is why the same manoeuvre closed the
+gap in a juvenile rabbit and did not in a neonatally hypothyroid rat.
+
+The node now says so in its own summary rather than leaving it to prose: *the arm stays open until an
+intervention exists that slows the counter while the plate keeps producing.* Standing rule added — **no
+gap, arm or question in this atlas is described as closed, settled or answered while its discriminating
+experiment remains unrun.** Answering a sub-question is progress and gets recorded as progress.
+
+**And the thing I nearly walked past.** Marino's Figure 4 legend reports that PTU-treated animals had a
+**greater number of resting-zone cells and a larger resting-zone height** — the pool, the one quantity in
+the height equation that has never moved. It is the second such observation, after `schrier2006` found
+dexamethasone slowed the numerical depletion of resting-zone cells in rabbit. Two species, two inhibitors,
+same direction.
+
+It is also ambiguous in precisely the way that decides whether it is a lead, and the authors supply the
+caveat themselves: they attribute the wide resting zone to **delayed epiphyseal ossification**. A cell count
+in a zone whose upper boundary is the advancing secondary ossification centre cannot separate progenitors
+spared, progenitors made, and cells still inside the zone only because the boundary has not moved. Only the
+middle one is pool expansion. Logged as `g_l2_pool_preservation_versus_pool_expansion` with a lineage-tracing
+design that separates the three, rather than written up as an arm-3 result.

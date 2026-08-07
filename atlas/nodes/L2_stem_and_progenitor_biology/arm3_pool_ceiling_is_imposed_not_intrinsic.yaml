@@ -45,7 +45,12 @@ summary: 'The atlas has treated arm 3 as a closed door - the resting zone holds 
   arm-3 target, stated precisely for the first time, is to decouple the program''s progression from growth
   output: to run the counter slowly while the plate keeps producing. Nothing does this. But a ceiling that
   is epigenetic, growth-driven, reversible in culture, and set at different rates in different species
-  is a dial, not a wall, and the atlas has been describing it as a wall.'
+  is a dial, not a wall, and the atlas has been describing it as a wall. THIS ARM IS NOT CLOSED AND MUST
+  NOT BE WRITTEN UP AS THOUGH IT WERE. What is established is that the counter can be slowed and that the
+  terminal event can be deferred. What is NOT established is whether any of that converts into greater
+  final length, because the exchange rate is below one in all three experiments that measure it and every
+  known way to slow the counter also slows growth. The arm stays open until an intervention exists that
+  slows the counter while the plate keeps producing.'
 quantitative:
 - parameter: resting-zone BrdU labelling index, late fetal versus 5, 9 and 17 weeks
   value: 95.6, 9.2, 9.2, 7.6
@@ -356,6 +361,62 @@ quantitative:
     of a younger child normal curve; a STEEPER curve would mean additional mechanisms. The authors conclude
     the coeliac pattern is consistent with delayed senescence. Read carefully this is a two-edged result -
     it supports the mechanism, and it means human catch-up is the SAME curve shifted, not extra growth.'
+- parameter: 'THE POOL ITSELF, CONSERVED. Number of resting-zone chondrocytes and resting-zone height
+    at the end of growth inhibition'
+  value: greater in treated animals
+  unit: cells and micrometres
+  conditions: proximal tibial growth plate at the 8-week timepoint, immediately at the end of PTU-induced
+    hypothyroidism from day 1 of life; Masson trichrome, female rats, all animals on depot leuprolide from
+    3 weeks to hold oestrogen effects
+  species: rat
+  source_ref: marino2008
+  uncertainty: 'THIS IS ARM 3 MEASURED DIRECTLY, AND THE AUTHORS SUPPLY THE CAVEAT THEMSELVES. Treated
+    animals had a greater NUMBER of resting-zone cells and a larger resting-zone height, but the paper
+    attributes the wide resting zone to DELAYED EPIPHYSEAL OSSIFICATION - so part of the gain is territory
+    that the secondary ossification centre had not yet taken, rather than progenitors that were made. The
+    atlas must not read this as pool expansion. It is pool PRESERVATION with an anatomical component of
+    unknown size, and separating the two requires a lineage or label-retention readout that this study does
+    not have.'
+- parameter: 'age-dependent decline in resting-zone chondrocyte NUMBER, delayed by prior growth inhibition'
+  value: significantly delayed
+  unit: qualitative
+  conditions: measured from 3 to 21 weeks of age alongside growth plate height, resting zone height,
+    proliferative and hypertrophic cells per column, terminal hypertrophic cell height, column density and
+    chondrocyte proliferation rate; the decline was significant for every measure in controls (P<0.001) and
+    significantly delayed for every measure in previously hypothyroid animals
+  species: rat
+  source_ref: marino2008
+  uncertainty: 'THE SECOND INDEPENDENT DEMONSTRATION THAT THE POOL CAN BE CONSERVED IN VIVO. schrier2006
+    showed dexamethasone slowed the numerical depletion of resting-zone cells in rabbit; marino2008 shows
+    hypothyroidism delayed the same decline in rat. Two different growth-inhibiting conditions, two species,
+    same quantity. Both bought it by suppressing growth, which is the whole problem.'
+- parameter: 'time shift in the rate of longitudinal bone growth after 8 weeks of hypothyroidism'
+  value: about 5
+  unit: weeks
+  conditions: assessed by tibial length and tail length; PTU from day 1 to 8 weeks of age; animals killed
+    at 8, 11, 13, 16 and 21 weeks (n=8-16 per group), with the growth t-test performed at 8 and 21 weeks
+    and the tail-length t-test at 16 weeks because tails were measured only in the 16-week cohort
+  species: rat
+  source_ref: marino2008
+  uncertainty: 'Completes the exchange-rate series. THREE INDEPENDENT INHIBITORS NOW GIVE THE SAME RATIO,
+    ALL BELOW ONE: tryptophan deficiency 4 weeks spent for about 2 bought (forcinito2011, ratio ~0.5),
+    dexamethasone 5 weeks for about 3 (gafni2001, ~0.6), hypothyroidism 8 weeks for about 5 (marino2008,
+    ~0.63). You never buy back more programme-time than you spend in growth-time. Length recovery therefore
+    cannot come from the shift alone - it depends on the growth rate during recovery running SUPRANORMAL,
+    which is exactly what gafni2001 and forcinito2011 both observed. That is why the same manoeuvre closed
+    the gap in a juvenile rabbit and did not in a neonatally hypothyroid rat: the shift is proportionate,
+    the overshoot is not.'
+- parameter: 'age at which Marino catch-up was still incomplete, and the recovery interval available'
+  value: 21 weeks of age, after 13 weeks of recovery
+  unit: weeks
+  conditions: PTU stopped at 8 weeks; final growth measurement at 21 weeks; significant differences remained
+    in body mass, tail length, tibia length and heart, liver and kidney mass (P<0.001 each)
+  species: rat
+  source_ref: marino2008
+  uncertainty: 'The authors write incomplete AT THAT TIME and do not claim a permanent deficit. Thirteen
+    weeks of recovery after eight weeks of near-total suppression from the first day of life. Whether the
+    gap would have closed with longer follow-up is not knowable from this design, and the atlas records it
+    as an open question rather than as a negative result.'
 localization:
 - 'growth plate resting zone: where the program is cashed out into height; pool size and labelling index
   both fall with age'
@@ -496,5 +557,6 @@ open_questions:
 - g_l2_decouple_the_counter_from_growth
 - g_l2_mir29_causality_for_skeletal_length
 - g_l2_maintenance_methylation_as_the_pool_lever
+- g_l2_pool_preservation_versus_pool_expansion
 contradicts: []
 last_verified: '2026-08-07'
