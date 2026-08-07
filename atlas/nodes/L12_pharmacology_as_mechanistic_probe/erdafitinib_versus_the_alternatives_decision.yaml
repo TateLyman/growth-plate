@@ -1,5 +1,5 @@
 id: erdafitinib_versus_the_alternatives_decision
-name: Erdafitinib has the best mechanism story and the worst evidence — and those two facts have been drifting apart
+name: The FGFR axis is defensible and the spine fear was overstated — but erdafitinib specifically cannot be dosed into the window
 type: hypothesis
 layer: L12
 stub: false
@@ -20,9 +20,21 @@ summary: 'THIS NODE EXISTS BECAUSE THE ARGUMENT HAS BEEN MOVING IN ONE DIRECTION
   hyperphosphatemia threshold, using phosphate as a real-time readout of the FGFR1 boundary. The
   selectivity ordering makes that self-defeating: FGFR1 IC50 is 1.20 nM, BELOW FGFR3 at 3.00 and FGFR4 at
   5.70, so phosphate rises FIRST and a dose below the phosphate threshold is a dose below the FGFR3 and
-  FGFR4 IC50s. Hyperphosphatemia is not a guardrail, it is the ENTRY TICKET. THE HONEST VERDICT: the
-  evidence does not currently support erdafitinib as the right choice, and the case for it is an
-  accumulation of mechanistic arguments that have never been tested against an outcome.'
+  FGFR4 IC50s. Hyperphosphatemia is not a guardrail, it is the ENTRY TICKET. TWO CHECKS RUN ON
+  2026-08-07 THEN SETTLED THE REST, AND ONE REFUTED THIS NODE''S OWN STRONGEST OBJECTION. FIRST, THE
+  SPINE ARGUMENT IS WRONG AT THERAPEUTIC DOSES: a randomised placebo-controlled trial measuring spinal
+  radiographs directly (canopyspine2026, n = 75) found vosoritide IMPROVED spinal canal width (+1.433 mm
+  at L4, P = .002) and HALVED pathological thoracolumbar kyphosis (33.3 against 59.3 per cent, P = .037),
+  and TYRA-300 increased vertebral length and improved disc shape. Spinal deformity is a function of HOW
+  HARD the plate is driven, not of WHICH AXIS drives it, so the axis-based safety argument against FGFR
+  inhibition is WITHDRAWN. SECOND, NO AGENT ON EITHER AXIS HAS A FINAL ADULT HEIGHT IN ANYONE - confirmed
+  from a 2026 systematic review stating the vosoritide cohorts are still being followed to final height.
+  And on the only velocity numbers available the CNP arm is the SMALLER effect: pooled CNP analogs
+  +1.36 cm/year against infigratinib''s +1.74. THE HONEST VERDICT, NARROWED: the FGFR axis is not the
+  wrong axis and may be the better one, and the spine fear was overstated. What the evidence does not
+  support is ERDAFITINIB SPECIFICALLY, because its FGFR1-first selectivity ordering means it cannot be
+  dosed into the therapeutic window without leading with the receptor that carries the liability - which
+  is exactly the problem a selective or low-dose FGFR3-preferential agent does not have.'
 quantitative:
 - parameter: MECHANISM AGAINST EVIDENCE — THE TWO COLUMNS HAVE DIVERGED
   value: 'ERDAFITINIB MECHANISM: FGFR3 IC50 3.00 nM (most potent clinical agent); FGFR4 5.70 nM and FGFR4
@@ -70,6 +82,51 @@ quantitative:
     total - the ORDERING is likely preserved but the absolute margins are not reliable. And PROPEL3
     shows that at 0.25 mg/kg infigratinib produced a real growth effect with no clinical FGFR1 signal,
     which proves the two CAN be separated in practice for at least one molecule with a wider margin.'
+- parameter: THE SPINE OBJECTION IS REFUTED FOR THERAPEUTIC DOSING — VOSORITIDE IMPROVES THE SPINE
+  value: 'CANOPY ACH-2I, RANDOMISED DOUBLE-BLIND PLACEBO-CONTROLLED, 75 children aged 0 to under 5, spinal
+    radiographs at baseline and 1 year. L4 sagittal spinal canal width LSM difference +1.433 mm (95% CI
+    0.547-2.320, P = .002); interpedicular distance +0.509 mm (-0.034 to 1.052, P = .066). Thoracolumbar
+    kyphosis REDUCED: 33.3 per cent of vosoritide-treated children had a pathological TLK angle of 20
+    degrees or more against 59.3 per cent on placebo, P = .037. Separately TYRA-300 increased lumbar
+    vertebral length and improved intervertebral disc shape in two mouse models'
+  unit: mm and per cent of children with pathological kyphosis
+  conditions: canopyspine2026, phase 2 RCT in achondroplasia; tyra300_2025, mouse
+  species: human
+  source_ref: canopyspine2026
+  uncertainty: 'THIS REFUTES THE STRONGEST OBJECTION THIS NODE RAISED, AND IT SHOULD BE SAID PLAINLY. The
+    previous row argued that the growth and the spinal deformity might be the same physical event, so that
+    no dose could separate them. A randomised placebo-controlled trial measuring the spine directly finds
+    the OPPOSITE: vosoritide improved canal dimensions and HALVED the rate of pathological kyphosis, and
+    the FGFR3-selective agent improved vertebral length and disc shape. AT THERAPEUTIC DOSES THE GROWTH
+    DRUGS IMPROVE THE SPINE RATHER THAN DEFORMING IT. THE RECONCILIATION WITH THE ERDAFITINIB CASE IS
+    DOSE, NOT MECHANISM. Erdafitinib at an ONCOLOGY dose produced kyphoscoliosis with cord compression;
+    the genetic extremes on BOTH axes - CATSHL, NPR2 activating, NPR3 loss - all carry scoliosis. So
+    spinal deformity is a function of HOW HARD the plate is driven, not of which axis drives it, and the
+    axis-based safety argument against FGFR inhibition is withdrawn. THE CAVEAT THAT KEEPS THIS HONEST:
+    achondroplasia has a pathologically NARROW canal and a high baseline kyphosis rate, so vosoritide is
+    correcting a deficit, and this says nothing about what either drug does to a NORMAL spine driven
+    above normal. Children aged 0 to under 5, one year.'
+- parameter: AND FINAL ADULT HEIGHT DOES NOT EXIST FOR ANY AGENT ON EITHER AXIS — CONFIRMED, NOT ASSUMED
+  value: 'a 2026 systematic review and meta-analysis of CNP analogs - 11 studies, N = 542, 4 RCTs (n = 326)
+    at low risk of bias - states that long-term studies are needed to define the effect on ADULT HEIGHT,
+    and that children in vosoritide studies WILL BE FOLLOWED UNTIL THEY ACHIEVE FINAL ADULT HEIGHT. Its
+    pooled effect: AGV +1.36 cm/year (95% CI 1.05-1.68, P < .00001) and standing height +1.24 cm (0.47-2.01,
+    P = .002). Against this, infigratinib PROPEL3 gives +1.74 cm/year (1.31-2.17)'
+  unit: cm/year
+  conditions: cnpmeta2026, meta-analysis of randomised and real-world CNP analog studies in achondroplasia;
+    propel3_2026 for the comparator
+  species: human
+  source_ref: cnpmeta2026
+  uncertainty: 'THE ABSENCE IS NOW CONFIRMED FROM A SYSTEMATIC REVIEW RATHER THAN INFERRED FROM THIS
+    ATLAS FAILING TO FIND IT, which is a materially stronger statement. NO AGENT ON EITHER AXIS HAS A
+    FINAL ADULT HEIGHT IN ANYONE, and the follow-up is explicitly still running. Every comparison in this
+    node and every therapeutic claim in this atlas therefore rests on VELOCITY, which this project has
+    repeatedly shown does not predict final height - the KIGS growth hormone dose-response is the standing
+    counterexample. AND THE VELOCITY COMPARISON DOES NOT FAVOUR THE CNP AXIS: pooled CNP analogs give
+    +1.36 cm/year against infigratinib''s +1.74. Those are separate trials in the same disease and not a
+    head-to-head, the confidence intervals overlap, and a meta-analytic pooled estimate is not comparable
+    to a single trial - but the atlas should stop implying the CNP arm is the larger effect, because on
+    the only numbers available it is the smaller one.'
 - parameter: WHAT WOULD ACTUALLY DECIDE IT — THREE MEASUREMENTS, NONE OF WHICH EXIST
   value: '(1) FINAL ADULT HEIGHT on any FGFR inhibitor, in anyone. (2) The SIGN of local FGFR1 and FGFR4
     inhibition on bone LENGTH, from chondrocyte-restricted deletions - jacob2006 is lineage-wide and
