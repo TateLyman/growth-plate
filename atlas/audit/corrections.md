@@ -2942,3 +2942,49 @@ What has changed is the shape of the question: the second half is no longer "has
 CORR-050 and CORR-051 are unaffected and remain the binding constraint: SMO agonism is the mirror image of a
 drug regulators restricted *because* of growth-plate effects, and the target population is the osteochondroma
 cell of origin.
+
+## CORR-053 — "pool expansion is welded to disorganisation" was wrong, and it is the third recurrence of the failure CORR-046 already named
+
+Round 59 concluded that the mTORC1/PI3K arm couples pool expansion to disorganisation inseparably —
+Tsc1 ablation expanding the CD73 zone while disorganising the resting zone in `newton2019`, PROS adding
+centimetres as a lipomatous vascular malformation in humans, mouse and human agreeing.
+
+**`choi2026` separates them, and the separator is timing.** The authors state that previous studies
+deleting Tsc1 with osteoblast or mesenchymal Cre drivers *"generally showed higher bone mass accompanied
+by disorganized bone structure."* Using the doxycycline Turn-Off system in Osx-Cre to withhold deletion
+until 2 months of age, **postnatal Tsc1 deletion from 2 to 5 months produced robust cortical and
+trabecular bone gains in femur, calvariae and vertebrae — with greater bone mass *and strength*.**
+
+**Developmental mTORC1 hyperactivation disorganises. Postnatal mTORC1 hyperactivation builds.**
+
+**This is the third time in this project that a developmental result has been applied to postnatal
+pharmacology, and CORR-046 already named the error in those words** — *"germline and developmental
+deletions applied to postnatal partial pharmacology... complete developmental loss being harmful does not
+imply partial postnatal inhibition is harmful."* It recurred at CORR-051 (the Hedgehog age gate, where
+the truth was the reverse: SAG suppresses early and enhances late) and it has recurred here. **The
+pattern is not carelessness about one paper — it is a standing bias toward treating the earliest and most
+complete manipulation as the definitive one.** Every remaining arm-3 claim in this atlas must be checked
+for whether its evidence is developmental or postnatal before it is used to argue about a drug.
+
+**What survives.** PROS is still a malformation, and the human evidence there is unchanged — but PROS is
+a *postzygotic embryonic* mosaic lesion, i.e. developmental, so it now sits on the same side of the line
+as the disorganising mouse models rather than standing as independent confirmation. The honest statement
+is that **no postnatal, transient activation of this axis has ever been tested for orderly bone
+elongation**, and the two experiments closest to it — `choi2026`'s postnatal Tsc1 and `trompet2024`'s
+3-week SAG pulse — both produced ordered gains.
+
+## CORR-054 — the epigenetic overgrowth lead, raised and closed in the same round
+
+I reasoned by inference that the epigenetic overgrowth syndromes (NSD1/Sotos, EZH2/Weaver,
+DNMT3A/Tatton-Brown-Rahman, NFIX/Malan) might be the route to *orderly* tall stature, since they produce
+overgrowth without skeletal malformation.
+
+**`choi2024` closes it.** 57 children with genetically confirmed Sotos syndrome, 339 measurements over a
+mean 4.3 years: taller than matched controls before age 12.0 in males and 17.0 in females — but **bone
+age advanced in 40% of males**, and **predicted and target adult heights were not significantly different
+between groups.**
+
+Sotos is childhood overgrowth that **does not convert to adult height**. It is a maturational tempo
+effect — a big child and a normal adult — which is the same surrogate-that-does-not-convert pattern as
+the aromatase-inhibitor trials. Recorded because a lead raised and killed inside one round is worth more
+in the log than out of it, and because it removes an entire syndrome class from the search.
