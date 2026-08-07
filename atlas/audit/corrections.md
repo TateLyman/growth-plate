@@ -1988,3 +1988,34 @@ the plate stays open is exactly what division-dependent depletion predicts and w
 oestrogen-clock model cannot produce. Together with `carani1997`'s threefold velocity decay it gives
 two independent human demonstrations that **the plate exhausts itself with the duration lever fully
 open.** The node's therapeutic conclusion is not softened by this; it is made worse, and more honest.
+
+---
+
+## CORR-029 — I put an unverified PMID into a request to a person, and it cost them the effort
+
+Asking a collaborator to obtain Rochira 2000, I wrote: *"Rochira 2000 (JCEM 85:1841, PMID 10843163)."*
+
+The journal, volume and page range were right. **The PMID was wrong by one digit.** 10843163 is
+**Plotkin et al., "Pamidronate treatment of severe osteogenesis imperfecta in children under 3 years
+of age," JCEM 85:1846–1850** — the immediately adjacent article in the same issue. The correct
+identifier is **10843162**.
+
+They searched the PMID I gave, obtained Plotkin, and sent it. **The paper is unusable for the question
+and the effort was wasted, because of an identifier I did not check.**
+
+**Why this is a new failure and not a repeat of CORR-023.** CORR-023 established that identifiers
+arriving *from a secondary source or a summarisation step* are unverified data until resolved against
+the primary record. This one did not arrive from anywhere — **I generated it from memory** and put it
+straight into an outbound request. The existing rule did not cover identifiers I author myself, and
+the surrounding metadata being correct is exactly what made it invisible: journal, volume and pages
+all checked out, so nothing looked wrong.
+
+**And the cost landed outside the system.** Every prior citation defect was caught inside the atlas by
+a validator or a verification pass. This one bypassed all of that by leaving through a channel that
+has no validator on it — a message to a human, who then spent real effort acting on it.
+
+**Standing rule, extended.** **An outbound request is a publication.** Every identifier — PMID, DOI,
+accession, dataset ID — must be resolved against the primary record *before* it goes into a request to
+another person, exactly as before it goes into a node. Where an identifier cannot be verified in the
+moment, cite the paper by author, year, journal and pages and say the PMID is unverified, so the
+recipient searches on the durable fields rather than the fragile one.
