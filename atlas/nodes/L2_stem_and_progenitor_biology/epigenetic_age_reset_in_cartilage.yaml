@@ -1,0 +1,135 @@
+id: epigenetic_age_reset_in_cartilage
+name: The cartilage epigenetic clock is real, human, and resettable — and resetting it has never bought a division
+type: process
+layer: L2
+stub: false
+summary: 'nilsson2005 proposed that the growth plate''s proliferative limit is carried by a progressive change in DNA
+  methylation tracking division, and this atlas has recorded that proposal as untested for twenty years. IT IS NOW
+  HALF-TESTED, AND THE HALF THAT CAME BACK IS THE DISCOURAGING ONE. THE CLOCK EXISTS AND IT IS HUMAN. sarkar2023 built
+  a DNA-methylation age predictor across human chondrocyte ontogeny from 8 fetal and 22 adult uncultured chondrocytes,
+  r = 0.97 - so chondrocyte methylation does carry age, in human tissue, accurately. THE CLOCK CAN BE MOVED, BY TWO
+  INDEPENDENT ROUTES. A STAT3 agonist (423F) applied to aged adult human chondrocytes for two weeks lowered predicted
+  methylation age in 5 of 6 donors, and STAT3 ablation in fetal chondrocytes drove global HYPERmethylation in the
+  opposite direction. And liu2026osk delivered Oct4/Sox2/Klf4 by AAV into mouse cartilage in vivo, lowering predicted
+  methylation age with DNMT3a down and TET2 up. THE SAFETY RESULT IS BETTER THAN EXPECTED: OSK-expressing chondrocytes
+  kept their chondrocyte markers, showed no rise in stemness genes, and produced no dedifferentiation and no tumour.
+  AND THEN THE POINT OF THE WHOLE EXERCISE FAILS. liu2026osk measured proliferation directly and found the percentage
+  of Ki67-positive chondrocytes DID NOT DIFFER between OSK and mock. sarkar2023 reports no quantified proliferation
+  data at all. SO: THE EPIGENETIC AGE OF A CHONDROCYTE CAN BE LOWERED IN VIVO, AND NO EXPERIMENT HAS YET SHOWN THAT
+  DOING SO RESTORES ITS CAPACITY TO DIVIDE. The link on which the entire "reverse the clock to regain height" argument
+  depends - epigenetic age to proliferative capacity - is the one link nobody has demonstrated. AND NEITHER STUDY TOUCHED
+  A GROWTH PLATE. Both are articular cartilage in adults, a tissue whose chondrocytes barely divide at baseline, which
+  is also the reason the Ki67 null cannot be read as strongly as it first appears.'
+quantitative:
+- parameter: A HUMAN CHONDROCYTE METHYLATION CLOCK EXISTS AND IS ACCURATE
+  value: r = 0.97, p = 2.4e-14 for predicted against chronological age
+  unit: correlation
+  conditions: 8 fetal and 22 adult NON-CULTURED human chondrocytes, spanning fetal to adult; articular cartilage
+  species: human
+  source_ref: sarkar2023
+  uncertainty: 'THIS IS THE INSTRUMENT nilsson2005''s hypothesis needed and never had. Two limits before it is used
+    for anything. FIRST, 30 samples across a fetal-to-adult span is a wide age range with few points, and a clock trained
+    on a range that wide will predict age well for trivial reasons - fetal and adult chondrocytes differ enormously.
+    SECOND, and decisively for this atlas: the clock relates methylation to CHRONOLOGICAL age, not to DIVISIONS. nilsson2005''s
+    claim is specifically about a counter that tracks division, and growth plate senescence is division-dependent rather
+    than time-dependent. A clock calibrated on time does not test a hypothesis about counting divisions unless the two
+    are separated, and here they are not.'
+- parameter: THE CLOCK CAN BE MOVED PHARMACOLOGICALLY IN HUMAN CELLS
+  value: predicted methylation age decreased in 5 of 6 adult donors after 2 weeks of the STAT3 agonist 423F; STAT3
+    ablation in fetal chondrocytes produced global hypermethylation
+  unit: donors showing a decrease
+  conditions: aged adult human articular chondrocytes in culture; the reciprocal experiment is genetic ablation in
+    fetal chondrocytes
+  species: human
+  source_ref: sarkar2023
+  uncertainty: FIVE OF SIX IS A COUNT, NOT AN EFFECT SIZE, and the magnitude of the age shift is not recorded here
+    because it was not reported in what was read. The reciprocal direction is the strength of this row - an agonist
+    lowers and ablation raises, which is harder to explain by drift than a single direction would be. In culture, not
+    in vivo, and articular rather than growth plate.
+- parameter: AND IN VIVO, BY PARTIAL REPROGRAMMING, WITH NO DEDIFFERENTIATION AND NO TUMOUR
+  value: predicted methylation age reduced relative to control, with DNMT3a decreased and TET2 increased; chondrocyte
+    markers retained and no rise in stemness-associated genes
+  unit: qualitative with direction
+  conditions: mouse, 12-week-old male C57BL/6, intra-articular AAV-OSK at over 1e11 genome copies per joint, dosed
+    at day 0 and week 4, assessed at 8 weeks; osteoarthritis model
+  species: mouse
+  source_ref: liu2026osk
+  uncertainty: THE SAFETY RESULT IS THE GENUINELY ENCOURAGING PART AND IT IS NOT NOTHING - the standing objection to
+    reprogramming in a growth tissue is dedifferentiation and teratoma, and in cartilage neither appeared over 8 weeks.
+    But 8 weeks is short, an OA joint is an inflamed tissue rather than a growing one, and expression was sustained
+    rather than cyclic, which is the schedule most reprogramming work avoids. Nothing here establishes safety in a
+    growing skeleton, where the whole point would be to act on dividing cells.
+- parameter: 'AND THE LINK THE ARGUMENT DEPENDS ON: EPIGENETIC AGE FELL AND PROLIFERATION DID NOT RISE'
+  value: the percentage of Ki67-positive chondrocytes did not differ between AAV-OSK and AAV-Mock
+  unit: percentage of Ki67-positive cells
+  conditions: same mouse experiment; proliferation measured directly by Ki67 immunostaining at 8 weeks
+  species: mouse
+  source_ref: liu2026osk
+  uncertainty: 'THE MOST IMPORTANT NEGATIVE IN THIS NODE, AND IT MUST NOT BE OVERREAD. THIS IS A NULL, AND THIS ATLAS
+    DOES NOT TREAT A NULL AS A DEMONSTRATION OF NO EFFECT. Three reasons it is weak. FIRST, adult articular chondrocytes
+    have a Ki67 fraction near zero at baseline, so the assay has a floor and the study was not designed or powered
+    to detect an increase. SECOND, no quantitative values are given beyond the statement of no difference. THIRD, articular
+    cartilage is not the growth plate and its chondrocytes are not the cells whose division budget sets height. WHAT
+    THE ROW ESTABLISHES IS NOT "REPROGRAMMING CANNOT RESTORE PROLIFERATION" BUT "THE ONE EXPERIMENT THAT LOWERED CHONDROCYTE
+    EPIGENETIC AGE IN VIVO AND THEN LOOKED FOR MORE DIVISION DID NOT FIND IT." That is the honest state of the link,
+    and the link is currently the weakest joint in the entire reverse-the-clock argument.'
+- parameter: NO GROWTH PLATE HAS EVER BEEN REPROGRAMMED
+  value: 0 studies
+  unit: count
+  conditions: sarkar2023 and liu2026osk are both articular cartilage; neither examined growth plate chondrocytes, zone
+    heights, or bone length
+  species: not_applicable
+  source_ref: liu2026osk
+  uncertainty: 'RECORDED AS AN ABSENCE THIS ATLAS HAS CHECKED RATHER THAN ASSUMED, and the check is narrow: it rests
+    on the two studies read here plus a search of the reprogramming-and-cartilage literature, not on a systematic census
+    of the kind CORR-016 demands before an absence claim is made at strength. It is stated as "none found in the searches
+    run" rather than "none exists". The searched terms are recorded in the gap.'
+localization:
+- articular cartilage, adult; the growth plate is untested
+human_evidence: direct
+human_evidence_note: The clock itself is HUMAN - sarkar2023 built it on 30 uncultured human chondrocytes and moved
+  it with a small molecule in human cells. The in vivo reset, the safety data and the proliferation null are all mouse.
+  Nothing in either study is growth plate, in either species, so the human evidence is direct for the existence and
+  movability of a cartilage methylation clock and ABSENT for anything about growth plate proliferative capacity.
+species_basis:
+- human
+- mouse
+translation_risk: high
+translation_risk_reason: The tissue is wrong. Both studies are adult articular cartilage, whose chondrocytes are
+  effectively non-dividing and whose ageing question is degenerative rather than developmental. The growth plate's
+  clock is division-dependent, and a clock calibrated on chronological age in a non-dividing tissue may measure a
+  different thing entirely. Sustained rather than cyclic OSK expression is also the schedule with the worst safety
+  record elsewhere.
+confidence: C
+confidence_note: C. Two primaries, one human and one mouse, both read through summarisation rather than directly
+  (see the bibliography notes), on a tissue adjacent to the one this atlas cares about. The positive claims - a clock
+  exists, it is accurate, it can be moved in two directions, and no dedifferentiation followed - are each carried
+  by a single study. The central negative is a null in an assay with a floor. It is not D because the reciprocal
+  STAT3 result and the independent OSK route give the movability claim two unrelated lines of support, and because
+  the Ki67 measurement was made and reported rather than omitted. It is not B because nothing here is growth plate
+  and because a 30-sample fetal-to-adult clock is a weak instrument for a division counter.
+key_refs:
+- ref_id: sarkar2023
+  pmid: '36638270'
+  first_author: Sarkar A
+  year: 2023
+  type: primary
+  one_line_finding: A DNA-methylation clock built across human chondrocyte ontogeny predicts age at r = 0.97, and a
+    STAT3 agonist lowers predicted age in 5 of 6 aged adult donors while STAT3 ablation raises it.
+- ref_id: liu2026osk
+  pmid: '41786976'
+  first_author: Liu YW
+  year: 2026
+  type: primary
+  one_line_finding: AAV-delivered OSK lowers predicted methylation age of mouse cartilage in vivo without dedifferentiation
+    or tumour, and the Ki67-positive chondrocyte fraction does not differ from control.
+- ref_id: nilsson2005
+  first_author: Nilsson O
+  year: 2005
+  type: primary
+  one_line_finding: Rabbit resting-zone chondrocyte population doublings do not depend on donor age, and the authors
+    propose a progressive DNA methylation change tracking division as the counter.
+open_questions:
+- g_l2_reprogram_the_growth_plate
+- g_l2_larger_pool_with_intact_flux
+last_verified: '2026-08-07'
