@@ -3731,3 +3731,85 @@ this same hole for *Caetano-Silva* and recorded that hyphenated first authors "f
 which is precisely backwards: the guard was disabled for exactly the names most likely to be mistyped. The
 comparison now strips non-alpha characters before matching. Fixed rather than noted, because noting it once
 already failed to prevent the recurrence.
+
+---
+
+## CORR-077 — the wild-type null was not the only wild-type data, and the refuting paper was already in the bibliography, already read, on the same day
+
+Round 84 committed under the title *"the FGFR arm does nothing in a wild-type animal"*. Its load-bearing
+row in `vosoritide_versus_cilostazol_decision.yaml` said, of komla-ebri's one-clause parenthetical:
+
+> BUT IT IS THE ONLY WILD-TYPE FGFR-INHIBITOR SKELETAL DATA THAT EXISTS
+
+It was not. `tyra300_2025` — Starrett et al., JCI Insight 2025;10(9):e189307, senior author **Legeai-Mallet,
+the same laboratory as komlaebri2016** — was added to the bibliography on **2026-08-07**, marked
+`full_text_read: '2026-08-07'`, `local_pdf: true`, and carried a `one_line_finding` reading, in capitals,
+"increased nasoanal length and tibia and femur length in WILD-TYPE mice … the demonstration that FGFR3
+inhibition grows a NORMAL growth plate." Round 84 wrote the opposite claim the same day.
+
+**What the paper actually reports.** Female C57BL/6J mice, oral gavage once daily from 4 to 8 weeks of age,
+n = 11–12 per group, randomised at 28 days by nasoanal length. At 12 mg/kg tibia **+3.9 %** and femur
+**+5.0 %**; at 14 mg/kg nasoanal **+7.3 %**, tibia **+6.4 %**, femur **+8.2 %**; 8 and 10 mg/kg also
+significant (P < 0.05, data not shown). **No body weight difference** between groups. A titrated
+dose-response in a pathway-intact animal — the experiment the atlas had been calling for.
+
+**The reconciliation, and its limits.** Four differences from komlaebri2016 and all run the same way:
+(1) *reporting* — one parenthetical "data not shown", no n, no numbers, no test statistic, in a Discussion
+paragraph arguing target specificity, which is where a null is convenient; (2) *dose* — 2 mg/kg against
+8–14 mg/kg, with the wild-type effect dose-dependent across that range; (3) *age* — neonatal against
+4–8 weeks; (4) *selectivity* — pan-FGFR1/2/3 against FGFR3-selective. The consequence worth keeping is that
+**the wild-type plate needs more FGFR3 blockade than the mutant plate**, because the mutant plate is being
+returned to normal while the normal plate is being pushed below it. What the reconciliation is *not*: the
+mg/kg figures are not comparable across two molecules, two routes, and an unknown oral bioavailability.
+
+**The rule that was already on the books and was broken.** CORR-059 established that a claim resting on a
+negative quotes the test statistic or is not made. komla-ebri's WT null has no statistic. Round 84 did not
+need the new paper to know better; it needed to apply its own rule.
+
+**Structural fix, not a promise.** This is the fourth instance of the class (CORR-058, CORR-064, CORR-065,
+now this). The CORR-065 validator check only fires on refs that **nothing** cites — `tyra300_2025` was cited
+by a gap, so `cited_refs` contained it and the check passed. The common element across all four is not
+orphanhood, it is the **exclusivity claim**: a sentence asserting some evidence is unique or absent. That is
+a claim about the entire corpus, it is the easiest kind to get wrong, and it is never checkable from the
+sentence itself. `validate.py` now flags any node asserting uniqueness or absence of evidence that does not
+name how that was established. It fires on the round-84 sentence. It currently fires on **43 other nodes**,
+which is the real size of the habit and is now a visible backlog rather than an invisible one.
+
+## CORR-078 — a duplicate-merge left chimeric bibliography records: right PMID, wrong DOI, wrong author
+
+Checking `tyra300_2025` against Europe PMC to confirm the Starrett identity exposed that the entry carried
+`doi: 10.1172/jci.insight.188472` and `first_author: Wang Y` against a correct `pmid: 40178985`. The DOI
+resolves to nothing in Europe PMC. Auditing all nine entries carrying a CORR-047 duplicate-merge note found
+the merge had kept one paper's identity fields alongside the other's PMID in four of them:
+
+| ref_id | field | was | is |
+|---|---|---|---|
+| `tyra300_2025` | doi, first_author, title | 10.1172/jci.insight.188472, Wang Y | 10.1172/jci.insight.189307, Starrett JH |
+| `erdaseries2025` | doi, first_author, journal | 10.1093/jcem/dgae521, Stepien KM, J Clin Endocrinol Metab | 10.1159/000540485, Hartmann G, Horm Res Paediatr |
+| `cnpmeta2026` | doi, journal | 10.1210/clinem/dgaf553 | 10.1210/jendso/bvag121, J Endocr Soc |
+| `nadeaunguyen2026` | doi | 10.1002/pbc.70046 | 10.1002/1545-5017.70046 |
+| `osk2026` | first_author | "see title" | Liu YW |
+
+A chimeric record is worse than a missing one: it is citable, it validates, and it points a reader at the
+wrong paper. All nine merged entries now carry `metadata_verified: '2026-08-07'`, checked against Europe PMC
+by PMID. `first_author: "see title"` should never have passed — it is a placeholder that survived into a
+record the atlas cites.
+
+## CORR-079 — the 19.06 cm/year was not produced at full oncology dosing, and the "no lower-dose data" claim was about that same paper
+
+Two nodes stated that erdachild2024's 19.06 cm/year came from **FULL ONCOLOGY DOSING**, and
+`erdafitinib_versus_the_alternatives_decision.yaml` added "THERE IS NO DATA ON ERDAFITINIB AT A LOWER DOSE
+FOR GROWTH, IN ANY SPECIES". The paper says otherwise, in the clinical history: the initial dose was
+**7 mg daily for 5 months with frequent interruptions** for hyperphosphataemia, then **5 mg daily** for the
+remaining four months with fewer interruptions. The BALVERSA label starting dose is **8 mg, up-titrated to
+9 mg**. So the entire human growth signal for this molecule was generated between 5 and 7 mg with time off
+drug — at most 87 % of the starting dose, and materially less after interruptions. The lower-dose growth
+data the atlas said did not exist *is the single case it was already citing*.
+
+Two things this does not license. First, no velocity can be attributed to 7 mg rather than 5 mg: the paper
+reports one total, 14.3 cm over 9 months, and no per-period figure — the CORR-062 rule forbids splitting it.
+Second, **a lower dose is not a demonstrated safe dose, only a demonstrated active one**: spinal deformity
+progressed on serial MRI at 2, 5 and 9 months, so the harm accrued inside the 5–7 mg range as well.
+
+What it does change is the shape of the dosing question. It is no longer "can this drug work below the
+exposure that hurt someone" — the exposure that hurt someone was already below label.

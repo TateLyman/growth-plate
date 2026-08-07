@@ -19,7 +19,7 @@ Usage:
   python3 atlas/tools/validate.py --json     # machine-readable
   python3 atlas/tools/validate.py --quota    # include per-layer gap quota check
 """
-import sys, os, json, glob, argparse
+import sys, os, json, glob, argparse, re
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # -> atlas/
@@ -371,6 +371,34 @@ def validate(quota=False):
         r.warn("finding_never_used/backlog",
                f"{len(orphan_findings)} refs carry extracted findings that nothing "
                f"cites - work the backlog before opening new gaps in their subject areas")
+
+    # CORR-077. The CORR-065 check above only fires on refs NOTHING cites. It could not
+    # catch round 84, where a node asserted "THE ONLY WILD-TYPE FGFR-INHIBITOR SKELETAL
+    # DATA THAT EXISTS" while the refuting paper sat in the bibliography, fully read, cited
+    # by a gap - so cited_refs contained it and the orphan check passed. The common element
+    # across CORR-058, CORR-064, CORR-065 and CORR-077 is not orphanhood, it is the
+    # EXCLUSIVITY CLAIM: a sentence asserting that some evidence is unique or absent. Such a
+    # sentence is a claim about the whole corpus, it is the easiest kind of claim to get
+    # wrong, and it is never checkable from the sentence itself. So it must name its basis.
+    EXCLUSIVITY = re.compile(
+        r"(the only\s+\w[\w \-]{0,40}(?:that exists|in existence|there is|ever (?:done|run|"
+        r"performed|reported|measured))"
+        r"|no\s+(?:such\s+)?(?:study|trial|experiment|data|evidence|paper|result|measurement)"
+        r"s?\s+(?:of\s+(?:it|this)\s+)?exists?"
+        r"|nobody has (?:ever )?(?:done|run|measured|tested|reported|published)"
+        r"|has never been (?:done|run|measured|tested|reported|published)"
+        r"|there (?:is|are) no (?:published |human |animal )*(?:study|trial|data|evidence))",
+        re.I)
+    BASIS = re.compile(r"null established by search|exclusivity_basis|established by a targeted search"
+                       r"|search_log", re.I)
+    for nid, n in sorted(nodes.items()):
+        text = yaml.safe_dump(n, default_flow_style=False, allow_unicode=True)
+        hits = EXCLUSIVITY.findall(text)
+        if hits and not BASIS.search(text):
+            r.warn(f"unbased_exclusivity/{nid}",
+                   f"asserts that evidence is unique or absent ({hits[0][:60]!r}) without "
+                   f"naming how that was established - add 'null established by search' with "
+                   f"the search recorded, or drop the exclusivity (CORR-077)")
 
     for rid in sorted(cited_refs):
         rv = refs.get(rid) or {}
