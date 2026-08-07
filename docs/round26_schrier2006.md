@@ -154,3 +154,59 @@ that survived an elimination and that **nobody has measured in any species since
 is unchanged and still cheap: count resting zone cells per mm and proliferative divisions per column
 in one animal series, take the ratio, then perturb with dexamethasone. Two papers each measured one
 numerator. Neither reported the quotient.
+
+## Addendum — the gap misstated what `nilsson2014` contains, and the yield is closer than recorded
+
+Following the round through to the gap's discriminating experiment, I re-read `nilsson2014` to check
+its claim that *"`nilsson2014` and `lui2018` each measured one of the two numerators and neither
+reported the quotient."*
+
+**That is wrong about `nilsson2014`, which measured both.** In the same animals, at the same
+timepoints, reported as adjacent panels of one figure:
+
+| term | where |
+|---|---|
+| proliferative chondrocytes per column | Figure 2 C, D |
+| resting zone chondrocytes per mm growth plate width | Figure 2 G, H |
+| proliferation rate (BrdU-labelled cells per proliferative column) | Figure 3 |
+
+Oestrogen and vehicle, proximal tibia and distal radius, 16 and 21 weeks. **Every term needed to
+construct a yield is in one paper.** The gap has been recording a two-paper synthesis problem when it
+is a one-paper arithmetic problem.
+
+**Two things stop it from being done in this round, and both are stated rather than worked around.**
+
+1. **Mechanical.** Both figures are raster images in the PDF the atlas holds — there is no source data
+   table and no supplemental values. I checked for vector coordinates in both papers; `schrier2006`'s
+   pages carry 130–209 vector objects but they are body-text glyph outlines, not plot markers, and the
+   figures themselves are embedded images. Recovering the values means pixel digitisation with axis
+   calibration, which carries read error. Any number from that route is a **re-analysis of plotted
+   values, not a measurement**, and would be graded as such. Asking the authors for the underlying
+   values is the clean route and is cheap.
+
+2. **Conceptual, and it would have been an easy error.** Cells per column and cells per mm are
+   **standing stocks**. A yield is a flux over a flux. The ratio of two stocks at one timepoint is not
+   the quantity — the correct construction is proliferative divisions *accumulated over an interval*
+   divided by resting zone cells *lost over that interval*. That is why the 16-week and 21-week pair
+   matters, and why a single-timepoint quotient would produce a confident wrong number.
+
+Both are now recorded in the gap's `discriminating_experiment`, along with the correction to
+`nearest_evidence_note`.
+
+**One free precision improvement while in the file.** The node's TUNEL row carried the qualitative
+statement that apoptosis did not account for the resting zone loss. The numbers are in the text:
+**4.6 ± 0.6 % (oestrogen) vs 4.4 ± 1.0 % (vehicle), P = 0.87**, n = 6 per group, two sections each,
+counted blinded. Now recorded.
+
+## What I need next
+
+The single highest-value item is **the source data behind `nilsson2014` Figures 2 and 3** — the
+per-animal or per-group values for proliferative chondrocytes per column, resting zone chondrocytes per
+mm, and proliferation rate. With those, the yield is computed rather than estimated, and the claim that
+oestrogen lowers it becomes tested rather than asserted. That is a request to the corresponding author,
+not a paper to download.
+
+Failing that: `lui2018` (PMID 30036371) in full text. It is currently in the atlas at
+`primary_abstract_only` and carries the fold-changes and statistics behind the three-pathway senescence
+signature, which the `senescence_rate_is_a_regulated_variable` node explicitly records as missing
+because that paper was read through a summarisation step.
