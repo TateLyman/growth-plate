@@ -202,14 +202,14 @@ quantitative:
     FGFR3 loss is real and is why this is not a settled negative.'
 - parameter: THE LYSOSOMAL-TRAPPING ARGUMENT, ENGAGED PROPERLY — AND IT STRENGTHENS THE CASE AGAINST
   value: 'the argument: growth plate cartilage is AVASCULAR AND ALYMPHATIC and drug delivery to it is
-    severely limited (ctcmnp2026), so a weak base that is trapped in lysosomes and released slowly could
+    severely limited (ye2026), so a weak base that is trapped in lysosomes and released slowly could
     reach and hold intracellular concentrations far above plasma - which would mean the plasma-derived
     IC50 ordering does not describe what happens in cartilage'
   unit: qualitative, pharmacokinetic argument
   conditions: raised by the user; assessed against this atlas's receptor ledger and the avascularity
     finding. No erdafitinib-specific lysosomal trapping paper was located in three Europe PMC searches
   species: not_applicable
-  source_ref: ctcmnp2026
+  source_ref: ye2026
   atlas_derived: true
   uncertainty: 'THIS ATLAS PREVIOUSLY DISMISSED THIS AS "a PK property that does not change which term of
     the yield moves," WHICH WAS NOT AN ENGAGEMENT WITH THE ARGUMENT. Taken seriously it is the strongest
@@ -315,6 +315,103 @@ quantitative:
     That is a structurally different objection from a side effect and it has never been tested. It is
     also the strongest available argument for the CNP arm, whose slipped epiphyses occur at a far lower
     rate.'
+- parameter: THE SLIPPED-EPIPHYSIS RATE FINALLY HAS A DENOMINATOR ON BOTH AXES
+  value: 'FGFR-TKI ARM (farouk2023, MSKCC retrospective, patients under 18 with recurrent or refractory
+    FGFR-altered gliomas, n = 7): SLIPPED CAPITAL FEMORAL EPIPHYSIS IN THREE OF SEVEN, reported together
+    with increased linear growth velocity, and called by the authors a MAJOR ON-TARGET adverse event.
+    CNP ARM (dauber2026, phase 2 basket trial, N = 30 ENROLLED): SCFE IN THREE OF THIRTY, at treatment
+    days 493, 1078 and 1633. Crude per-patient incidence 43 per cent against 10 per cent, a ratio of
+    about 4.3. TIME TO ONSET SEPARATES THEM FURTHER IN THE SAME DIRECTION: median 137 days, range 84-274,
+    across the five FAERS erdafitinib cases (nadeaunguyen2026), against 493 to 1633 days under
+    vosoritide.'
+  unit: SCFE cases per treated patient, and days on treatment to onset
+  conditions: two non-randomised human cohorts in different diseases, pooled by nobody but this atlas;
+    the FGFR time-to-onset figure comes from a THIRD series (FAERS) rather than from farouk2023's seven
+    patients, so the incidence and the latency are spliced from different populations
+  species: human
+  source_ref: farouk2023
+  uncertainty: 'UNTIL THIS ROUND EVERY FGFR-TKI SKELETAL RECORD IN THIS ATLAS WAS A NUMERATOR WITHOUT A
+    DENOMINATOR - brizini2024 one case, erdachild2024 one case, nadeaunguyen2026 five spontaneous reports
+    with no population behind them. You cannot compare a case series to a trial, and the node had been
+    doing exactly that while asserting the CNP arm slips at "a far lower rate". It does, in absolute
+    terms, and now there is a number for it. THE CAVEATS ARE SEVERE AND SOME ARE FATAL TO PRECISION.
+    n = 7 against N = 30. The glioma cohort is heavily pretreated and many such children receive
+    corticosteroids and cranial or craniospinal irradiation, both independent SCFE risk factors, and
+    neither series adjusts for obesity, which is the dominant risk factor in the general paediatric
+    population. The vosoritide cohort is not clean either: FOUR OF THE FIVE subjects who discontinued had
+    AGGRECAN DEFICIENCY, a skeletal dysplasia with its own joint and physeal liability, and two of the
+    three who slipped had ALREADY had guided-growth surgery for severe genu valgum before slipping.
+    A spontaneous-reporting series (FAERS) and a single centre that went looking are subject to opposite
+    detection biases. THIS IS AN ORDER-OF-MAGNITUDE COMPARISON AND SHOULD NEVER BE QUOTED AS A RATE.'
+- parameter: NORMALISED PER CENTIMETRE OF EXTRA GROWTH, THE TWO AXES COST ROUGHLY THE SAME SLIP RISK — WHICH IS THE ARGUMENT THAT THE RISK TRACKS THE GROWTH AND NOT THE DRUG
+  value: 'ATLAS COMPUTATION, NOT A REPORTED RESULT. Vosoritide increment (dauber2026): 4.53 to 8.09
+    cm/year, +3.56 cm/year. The three subjects slipped at days 493, 1078 and 1633, so the EXTRA growth
+    accumulated before slipping was about 4.8, 10.5 and 15.9 cm. Erdafitinib increment (erdachild2024):
+    19.06 cm/year annualised, with NO REPORTED BASELINE VELOCITY, so the increment is BOUNDED rather
+    than measured - even at an implausibly high pre-treatment 5 cm/year the increment is 14 cm/year, and
+    at the low velocities erdaseries2025 describes for these severely growth-impaired children it
+    approaches 17; take 14-17 cm/year. At the FAERS median onset of 137 days (0.375 year) that is about
+    5.3 to 6.4 cm of EXTRA growth accumulated before slipping. SO THE SLIPS ON BOTH AXES OCCUR AFTER A
+    BROADLY SIMILAR AMOUNT OF ACCUMULATED EXTRA GROWTH, of order 5 to 16 cm, and the FOUR-FOLD difference
+    in per-patient incidence is largely explained by the FOUR- TO FIVE-FOLD difference in the rate at
+    which that growth is delivered.'
+  unit: centimetres of drug-attributable growth accumulated before slip
+  conditions: computed by this atlas from dauber2026 (velocity increment and per-subject slip days),
+    erdachild2024 (annualised velocity, baseline bounded not measured) and nadeaunguyen2026 (median time
+    to onset); the erdafitinib latency and the erdafitinib velocity come from DIFFERENT patients
+  species: human
+  source_ref: dauber2026
+  uncertainty: 'THIS IS THE MOST DECISION-RELEVANT NUMBER IN THE NODE AND IT IS ALSO THE MOST FRAGILE, SO
+    IT IS WRITTEN OUT IN FULL RATHER THAN ASSERTED. It rests on one bounded quantity (the erdafitinib
+    baseline velocity, which nobody measured) and one splice (velocity from erdachild2024, latency from
+    nadeaunguyen2026 - different children). It assumes drug-attributable growth accumulates linearly and
+    that time on drug is a proxy for it, which fails if the effect wanes. n is 3 and 3. IT CANNOT BEAR A
+    RATIO; it can bear a DIRECTION, which is that the per-centimetre costs are of the same order rather
+    than orders apart. IF IT SURVIVES BETTER DATA IT REFRAMES THE WHOLE COMPARISON. "Erdafitinib or
+    vosoritide" would then be partly the wrong question, because the variable that predicts the harm is
+    HOW HARD THE PLATE IS DRIVEN, not which receptor is used to drive it - the same conclusion round 43
+    reached independently for spinal deformity from canopyspine2026, arrived at here from a different
+    endpoint and a different dataset. THE COROLLARY IS PRACTICAL: the choice between the axes should then
+    be made on everything OTHER than the slip - off-target burden, dose headroom, route, cost, and
+    reversibility - and on those grounds the two drugs differ enormously. THE OBVIOUS TEST IS CHEAP.
+    erdaseries2025 already observed DISTINCT WIDENING OF THE GROWTH PLATE under erdafitinib and
+    williams2001 measured that ultimate tensile stress falls linearly with plate thickness, so PHYSEAL
+    THICKNESS ON IMAGING is the candidate common mediator and the candidate titration endpoint. It is
+    measurable in children already being treated on both axes, retrospectively, from scans that in many
+    cases already exist. See g_l12_physeal_thickness_as_titration_endpoint.'
+- parameter: WHAT THE FDA ANIMAL RECORD ACTUALLY SAYS — CORRECTING ROUND 44
+  value: 'THE REVIEWER STATES TWICE THAT "no stand-alone toxicology studies were conducted in juvenile
+    animals" (fda_balversa_review_2019, sections on Pediatrics and Assessment of Effects on Growth, and
+    on Pediatrics). The label heading "Juvenile Animal Toxicity Data" is populated ENTIRELY from the
+    ordinary 4- and 13-week repeat-dose studies. THE CARTILAGE LESION SITES ARE AIRWAY, NOT PHYSIS: the
+    reviewer''s own rat site list is "chondroid dysplasia (larynx, trachea)", the lesion table adds tail
+    intervertebral disc, and the only femoral entry is DECREASED BONE MARROW CELLULARITY. The label
+    phrase "multiple bones (vertebrae, sternebrae, ribs)" belongs to the EMBRYO-FETAL study - ossification
+    delay in fetuses - not to the postnatal repeat-dose studies. NO GROWTH-PLATE LESION IS REPORTED
+    ANYWHERE IN THE RECOVERABLE TEXT. THE DOSE-LIMITING TOXICITY IS THE PHOSPHATE AXIS: deaths at the top
+    rat dose were attributed to MINERALIZATION OF HEART, AORTA AND LUNGS, with hyperphosphatemia and
+    disturbance of FGF23, 1,25-dihydroxyvitamin D3, PTH and calcium plus raised ALP, CTx, NTx and urinary
+    deoxypyridinoline in BOTH species. EXPOSURE: rat top-dose AUC 1910 and dog 1300 ng.h/mL against a
+    HUMAN CLINICAL AUC OF 29268; rat deaths occurred at 0.003 times human clinical AUC.'
+  unit: ng.h/mL for AUC; lesion sites otherwise
+  conditions: NDA 212018 Multi-disciplinary Review (2019) and the 2025 BALVERSA label; two pages of the
+    rat histopathology table have no text layer and could contain sites this atlas cannot read, so
+    "no growth-plate lesion reported" is a statement about the RECOVERABLE text
+  species: multiple
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'ROUND 44 SAID THE JUVENILE EXPERIMENT "WAS SUBSTANTIALLY ALREADY RUN". IT WAS NOT, AND
+    THE ERROR CHANGES THE ANSWER (CORR-047). What exists is adult-pattern general toxicology in growing
+    animals, read through a label heading that compresses it. The distinction is not pedantic: this atlas
+    let "bone toxicity at an exposure less than the human exposure" stand in for GROWTH-PLATE DAMAGE, and
+    the reviewer localises the cartilage lesion to LARYNX AND TRACHEA - hyaline airway cartilage, which is
+    not the tissue in question and is not under load. THE NET EFFECT IS TO WEAKEN THE ANIMAL HALF OF THE
+    CASE AGAINST ERDAFITINIB AND TO LEAVE THE HUMAN HALF UNTOUCHED, and the human half was always the
+    stronger half: three of seven children slipped (farouk2023), five of five FAERS cases were
+    permanently discontinued and three needed surgery (nadeaunguyen2026). THE ONE PLACE THIS CUTS AGAINST
+    ERDAFITINIB IS THE DOSE-LIMITING TOXICITY: ectopic mineralization driven by the FGF23-phosphate axis
+    is an FGFR1 effect, which is precisely the burden a narrowly FGFR3-selective agent does not carry.
+    It does NOT reopen the phosphate-titration proposal - CORR-043 stands, the IC50 ordering is
+    arithmetic and puts FGFR1 first.'
 localization:
 - growth plate, all zones; and kidney for the FGF23 phosphate axis
 human_evidence: direct
@@ -374,8 +471,24 @@ key_refs:
   type: primary
   one_line_finding: Lifelong partial FGFR3 loss gives adult male height about +2.8 SD, against +4.9 to
     +5.2 SD for CNP-axis gain - the only lifetime comparison, and it favours the other axis.
+- ref_id: farouk2023
+  pmid: '37158537'
+  first_author: Farouk Sait S
+  year: 2023
+  type: primary_abstract_only
+  one_line_finding: Slipped capital femoral epiphysis in three of seven children on FGFR TKIs, with
+    increased linear growth velocity - the first DENOMINATOR the FGFR axis has had, against three of
+    thirty on vosoritide.
+- ref_id: fda_balversa_review_2019
+  first_author: US Food and Drug Administration
+  year: 2019
+  type: regulatory
+  one_line_finding: The reviewer states NO stand-alone juvenile toxicology study was conducted, localises
+    the cartilage lesion to LARYNX AND TRACHEA rather than physis, and records deaths from ectopic
+    mineralization at 0.003 times human clinical AUC.
 open_questions:
 - g_l3_local_fgfr1_sign_in_growth_plate
 - g_l1_raise_terminal_cell_volume
 - g_l12_cartilage_targeted_cnp
+- g_l12_physeal_thickness_as_titration_endpoint
 last_verified: '2026-08-07'

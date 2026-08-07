@@ -2711,3 +2711,75 @@ paediatric cases were permanently discontinued and three required surgery. What 
 and the corollary is stated in the next round: the 19 cm/year is evidence about the **dose-response of
 FGFR3 blockade**, not about erdafitinib's molecular uniqueness, and the selective agents have never been
 dosed anywhere near that exposure.
+
+## CORR-047 — I read a label heading as an experiment, and let airway cartilage stand in for the growth plate
+
+Round 44 told the user the erdafitinib juvenile experiment "was substantially already run" by the
+sponsor, on the strength of the BALVERSA label's section headed **Juvenile Animal Toxicity Data**.
+Going back into the 264-page Multi-disciplinary Review for NDA 212018 shows three errors, and they
+compound.
+
+**1. There was no juvenile study.** The reviewer states it twice, in the *Pediatrics and Assessment of
+Effects on Growth* section and again under *Pediatrics*: **"no stand-alone toxicology studies were
+conducted in juvenile animals."** FDA granted a full paediatric waiver in December 2018. The label
+heading is a labelling convention — the section is populated entirely from the ordinary 4- and 13-week
+repeat-dose studies. **I mistook a heading for a study design.**
+
+**2. The cartilage lesion is not in the growth plate.** The reviewer's own site attribution for the rat
+is *"chondroid dysplasia (larynx, trachea)"*; the lesion table adds tail intervertebral disc; the only
+femoral entry anywhere is **decreased bone marrow cellularity**. The label's phrase "chondroid
+dysplasia/metaplasia in multiple bones" compresses this, and its "multiple bones (vertebrae, sternebrae,
+ribs)" belongs to the **embryo-fetal** study — ossification delay in fetuses, a different study at a
+different life stage. **No growth-plate lesion is reported anywhere in the recoverable text.** Two pages
+of the rat histopathology table have no text layer, so this is a statement about what can be read; it is
+not a claim that the tables are silent.
+
+**3. The dose-limiting toxicity is the phosphate axis, not cartilage.** Deaths at the top rat dose were
+attributed to **mineralization of heart, aorta and lungs**, with hyperphosphatemia and disturbed FGF23,
+1,25-dihydroxyvitamin D₃, PTH and calcium, plus raised ALP, CTx, NTx and urinary deoxypyridinoline, in
+**both** species.
+
+**What this changes.** It weakens the *animal* half of the case against erdafitinib and leaves the
+*human* half untouched — and the human half was always the stronger half. Epiphysiolysis and fractures
+in an actual paediatric study, five FAERS cases all permanently discontinued with three surgical
+(`nadeaunguyen2026`), and now three of seven (`farouk2023`). **The one place the review cuts against
+erdafitinib is new**: ectopic mineralization via FGF23/phosphate is an **FGFR1** effect, which is exactly
+the burden a narrowly FGFR3-selective agent does not carry. It does **not** reopen phosphate titration —
+CORR-043 stands, the IC50 ordering is arithmetic and puts FGFR1 first.
+
+**The generalisable failure.** I read the summary document (the label) and treated it as the source, when
+the review that generated it was open in the same session. **A label is an index, not a source** — the
+same rule this project already applies to review articles, applied to a regulatory document, where I
+did not think to apply it.
+
+## CORR-048 — the same paper was in the bibliography nine times over, under two names each
+
+The CORR-033 duplicate-key loader catches the same **key** twice. It cannot catch the same **paper**
+under two different keys, and nine had accumulated:
+
+| kept | absorbed | paper |
+|---|---|---|
+| `singhania2022` | `aromdef2022` | aromatase deficiency in a tall man |
+| `erdaseries2025` | `hartmann2025` | accelerated linear growth on erdafitinib |
+| `zegarra2024` | `neely2024` | anastrozole vs letrozole in ISS |
+| `giannopoulou2024` | `aexs2024` | aromatase excess, long-term AI |
+| `tyra300_2025` | `starrett2025` | TYRA-300 in wild-type and Fgfr3 mice |
+| `nadeaunguyen2026` | `nadeau2026` | FDA postmarketing skeletal toxicity |
+| `osk2026` | `liu2026osk` | local OSK reprogramming in cartilage |
+| `cnpmeta2026` | `kamrulhasan2026` | CNP analogue meta-analysis |
+| `ye2026` | `ctcmnp2026` | growth-plate-targeting nanoparticles |
+
+The pattern is mechanical: one id minted by `addref.py` in author-year form, one hand-authored in
+descriptive form for the same PMID, days apart. All eighteen ids were **actively cited** — 66 citations
+had to be repointed.
+
+**Why this is a defect and not untidiness.** A duplicate is a **second vote for the same evidence**. Two
+nodes citing the two aliases look like independent corroboration and are one paper. It also splits the
+record against itself: `cnpmeta2026` was **tier T2 and read**, `kamrulhasan2026` **tier T4 and unread**,
+for the identical meta-analysis — the atlas held two incompatible gradings of one source and had no way
+to see the conflict. `giannopoulou2024` was typed `primary_abstract_only` while `aexs2024` was `primary`.
+
+**Fixed and hardened.** Entries merged (surviving record keeps the read provenance and absorbs the
+loser's fields and finding), citations repointed across all YAML — historical `.md` round documents and
+this log were deliberately left alone, since they are dated records — and `validate.py` now **errors** on
+any two ref_ids sharing a `pmid` or a `doi`. Bibliography 1158 → 1149 before the round's one addition.

@@ -321,6 +321,33 @@ def validate(quota=False):
                   "full_text_read/access_route is set but type is still "
                   "primary_abstract_only - the record contradicts itself")
 
+    # ---- the same paper held twice under two ref_ids (CORR-047) ----
+    # The duplicate-key loader catches the same KEY twice. It cannot catch the same
+    # PAPER under two different keys, and nine of them had accumulated: one entry
+    # minted by addref.py in author-year form (hartmann2025, nadeau2026, starrett2025)
+    # and one hand-authored in descriptive form (erdaseries2025, nadeaunguyen2026,
+    # tyra300_2025). The harm is not untidiness. A duplicate is a SECOND VOTE FOR THE
+    # SAME EVIDENCE: two nodes citing the two aliases look like independent corroboration
+    # and are one paper. It also splits the record - cnpmeta2026 was tier T2 and read,
+    # kamrulhasan2026 was tier T4 and unread, for the identical meta-analysis, so the
+    # atlas held two incompatible gradings of one source and could not see the conflict.
+    for field in ("pmid", "doi"):
+        seen = {}
+        for rid, rv in sorted(refs.items()):
+            if not isinstance(rv, dict):
+                continue
+            val = rv.get(field)
+            if not val:
+                continue
+            key = str(val).strip().lower()
+            if key in seen:
+                r.err("bibliography/duplicate",
+                      f"'{rid}' and '{seen[key]}' are the same paper "
+                      f"({field} {key}) held under two ref_ids - merge them; a "
+                      f"duplicate double-counts one source as two")
+            else:
+                seen[key] = rid
+
     for rid in sorted(cited_refs):
         rv = refs.get(rid) or {}
         if rv.get("local_pdf") and rv.get("type") == "primary_abstract_only":
