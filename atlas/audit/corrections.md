@@ -1950,3 +1950,41 @@ were computed here, from printed pairs, and are shown with their inputs so they 
 paper — it was a *layer* between the paper and the record. **Where a primary can be read directly, the
 summarisation layer should be removed rather than audited.** Requesting the PDF is cheaper than
 verifying a summary of it.
+
+---
+
+## CORR-028 — "the human ceiling has never been observed" was wrong, and the sentence that falsifies it was in a paper the atlas already listed
+
+The node `the_human_ceiling_has_never_been_observed` carried, as its headline, that **no oestrogen-null
+human has a reported final height reached without intervention**. A 743-record census, 45 full texts
+and a formal survival analysis stood behind it.
+
+`herrmann2002`, read in full on 2026-08-07, says:
+
+> At 14 yr of age he was 170 cm tall (97th percentile), and **he continued to grow until the age of 24 yr.**
+
+At presentation aged **27, still untreated**, he was **197 cm**, arm span 204 cm, **bone age 16**, and a
+hand X-ray showed **open epiphyses**.
+
+**Growth ceased spontaneously at 24. The plates were still open at 27.** That is an observed endpoint,
+and it is the human counterpart of `rat_growth_cessation_without_fusion`.
+
+**What was actually wrong, and what was not.** The census's *survival analysis* is untouched on its own
+terms — its event was **spontaneous epiphyseal closure**, and there are still **zero** of those. The
+error was in the node's prose, which slid from "no spontaneous *closure*" to "no observed *ceiling*."
+**Those are different events, and the whole therapeutic question turns on the second one.** A plate that
+stops growing while remaining open ends the person's height just as effectively as one that fuses.
+
+**How it was missed.** The atlas's 14-case table listed this patient — via `herrmann2005`, the follow-up
+paper in *Horm Metab Res*. **The 2002 JCEM paper is the primary case description, and it was never
+read.** CORR-026 recorded that the census searched abstracts where the heights were in the bodies; this
+is the same defect one level up — the census indexed *patients* by whichever paper the search returned,
+not by the paper that describes them. **When a patient appears in more than one publication, the
+primary case description is the one that must be read**, and a census must record which paper each
+patient's data came from.
+
+**And the correction strengthens the underlying model rather than weakening it.** Growth stopping while
+the plate stays open is exactly what division-dependent depletion predicts and what a pure
+oestrogen-clock model cannot produce. Together with `carani1997`'s threefold velocity decay it gives
+two independent human demonstrations that **the plate exhausts itself with the duration lever fully
+open.** The node's therapeutic conclusion is not softened by this; it is made worse, and more honest.

@@ -244,3 +244,74 @@ New node `residual_maturation_route_is_oestrogen_dependent` (C). New gap
 `g_l7_residual_maturation_route`, whose cheapest step is a **Western blot** for truncated ER-α in the
 Smith propositus's archived material — a positive result collapses three candidates into one with no
 new patient.
+
+---
+
+# Part 4 — 2026-08-07, second batch: the ceiling *has* been observed
+
+Four more full texts. One of them **falsifies this document's headline.**
+
+## A. The endpoint — `herrmann2002`
+
+> *"At 14 yr of age he was 170 cm tall (97th percentile), and **he continued to grow until the age of
+> 24 yr.**"*
+
+At **27, untreated**: **197 cm**, arm span 204 cm, **bone age 16**, hand X-ray showing **open epiphyses**.
+
+**Growth stopped at 24. The plates were still open three years later.** That is the first observed
+spontaneous endpoint in the oestrogen-null literature — and it came **without fusion**, the human
+counterpart of `rat_growth_cessation_without_fusion`.
+
+**The survival analysis is untouched**: its event was *spontaneous epiphyseal closure*, and there are
+still **zero**. The error was sliding from "no closure" to "no ceiling." **Different events — and the
+therapeutic question turns on the second.** See CORR-028.
+
+The atlas listed this patient all along, via the 2005 follow-up paper. **The 2002 primary was never
+read.** CORR-026 one level up: index patients by the paper that *describes* them.
+
+## B. The threshold — `lanfranco2008`
+
+A five-year follow-up made informative by **the patient not taking his medication**:
+
+| serum oestradiol | outcome |
+|---|---|
+| 60.6 pmol/L (16.5 pg/mL) | **ineffective** — maturation incomplete |
+| **above 73 pmol/L (20 pg/mL)** | maturation, BMD and turnover normalise |
+
+Height 193.0 cm at 26.8 → 193.6 at 33.6. Bone age 15.5 (TW2), unfused. **Arm span and the
+upper-to-lower segment ratio kept rising through 24 months of undertreatment** while standing height
+barely moved. Complete maturation took >20 months.
+
+**A human serum-oestradiol threshold for the duration lever — the number any regimen intending to hold
+plates open would have to sit beneath.** From one uncontrolled compliance failure, at concentrations
+where the authors themselves flag immunoassay accuracy.
+
+## C. Oestrogen does not stop growth on starting — `bouillon2004`
+
+The youngest treated case: **17 years old, bone age 12, 172 cm.** On oestrogen: **176 → 185 → 188 →
+191 cm (+8.5%)**, with closure only at **20 y 5 m**. Roughly **15 cm accrued while the plates closed.**
+
+Against `carani1997`'s nine months to closure from bone age 14.8 at 38: the closing response depends
+on how much maturation is left to run, and a young plate with a large bone-age deficit takes **years**
+and delivers substantial height on the way.
+
+## D. ER-β is dispensable — `langmuritano2018`
+
+The authors' own side-by-side table:
+
+| | bone age |
+|---|---|
+| **ESR2** loss of function | **15.5 at CA 16.5**, epiphyses **closed** |
+| ESR1 patient 1 (Smith) | 15 at CA **28**; effect of E2: **no epiphyseal fusion** |
+| ESR1 patients 2–5 | 11–12 @ 15.4 · 13 @ 19 · 13 @ 21 · 11 @ 18 |
+
+**ER-α is necessary for fusion; ER-β is not.** But this does *not* eliminate ER-β as the *residual*
+route — her ER-α is intact and may be doing all the work. **The candidate list stays at three.** What
+changed is that the field's default backup now has to explain why losing it costs nothing.
+
+## Where the ceiling question stands
+
+- **One observed endpoint: ~197 cm at 24, untreated, without fusion.**
+- **One measured decay: 1.31 → 0.43 cm/yr** (`carani1997`).
+- Every other observation still right-censored by treatment.
+- **The plate exhausts itself with the duration lever fully open.**
