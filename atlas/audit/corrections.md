@@ -3318,3 +3318,52 @@ question that decides whether this is an intervention or just a mechanism.
 `one_line_finding` at add time and the validator already tracks `cited_by`. Before opening or editing any
 gap, the `what_is_missing` field must be checked against every bibliography entry whose `one_line_finding`
 matches the gap's subject terms — a mechanical check the tooling can do and I evidently cannot.
+
+## CORR-066 — "four converging lines" was two, and the weakest leg measures no methylation at all
+
+Rounds 69-73 justified the maintenance-methylation lead as four independent lines all pointing the same
+way. Reading the sources, it is two.
+
+**`cheung2001` is not evidence about methylation.** The atlas cited it as *"5-azacytidine, a demethylating
+agent, drives growth plate chondrocytes into hypertrophic differentiation"* — a sentence I took from
+`nilsson2005`'s one-line citation and never checked. The paper is *A Novel Cell Culture Model of
+Chondrocyte Differentiation*, JBMR 2001. Its purpose is to build an in vitro system for endochondral
+ossification; aza-C is the tool that starts it. **No methylation is measured anywhere in the paper.** The
+authors write that *"the mechanism by which aza-C induces the chondrocytes to differentiate in culture is
+not known"* and that *"it is still obscure how aza-C exerts its demethylating effect,"* and they offer an
+explicit alternative — that aza-C switches on a single early gene which then triggers the whole programme.
+Add that aza-C is a cytotoxic antileukaemia cytidine analogue incorporated into DNA, that the cells are
+**fetal bovine epiphyseal chondrocytes in monolayer** rather than postnatal resting zone in vivo, and that
+a chondrocytic phenotype appeared in treated *and untreated* cultures. Inadmissible for the sign.
+
+**And the PASG/HELLS leg is still second-hand.** Sun et al. 2004 has been cited twice in this atlas through
+`nilsson2005`'s summary and has never been read. It stays flagged as such rather than counted.
+
+What survives is `yanagihara2025` and `nilsson2005`. That is still a real lead — a gene deletion with
+cell-type controls and a bone-length endpoint, plus a human locus association — but two lines is not four,
+and the difference is entirely down to **citing a citation**. This is CORR-047's failure ("a label is an
+index, not a source") in its purest form: the intermediate source was accurate about what Cheung *did*, and
+I inferred from it something Cheung never claimed.
+
+## CORR-067 — the Abad regeneration numbers were conflated, and the clean group is the weaker one
+
+Round 66 recorded, and the commit message announced, that *"a plate with only its resting zone rebuilds
+itself in two weeks — 7 of 12 rabbit plates."* The full text gives two separate series and the atlas merged
+them:
+
+- Incision located **in the reserve cartilage** — the clean condition — a complete growth plate regenerated
+  in **5 of 12**.
+- Incision starting in the resting zone but **traversing into the proliferative zone**, so that in the
+  authors' words *"some proliferative chondrocytes were reinserted into the ulna along with resting zone
+  cartilage"* — **7 of 13** regenerated a well-organised plate, 6 were poorly organised or lacked a
+  hypertrophic zone.
+
+So 7+6=13, not 12, and the 7 belongs to the **contaminated** group. The best-performing series is the one
+carrying reinserted proliferative chondrocytes; the series that actually isolates resting zone gives a
+minority, 5 of 12. Timing was also wrong: animals were killed **6-10 days** after surgery, not two weeks,
+though the authors do state that a complete proliferative and hypertrophic zone *often* regenerated within
+one week.
+
+The qualitative claim survives — resting zone can rebuild a plate, fast — and it is still the basis for
+treating the resting zone as the limiting resource. What does not survive is the impression of a majority
+result in the clean condition. Node corrected in place.

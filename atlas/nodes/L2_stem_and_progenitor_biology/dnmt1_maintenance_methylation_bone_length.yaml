@@ -17,17 +17,22 @@ summary: 'The maintenance-methylation hypothesis that this atlas built across ro
   mineralisation, increased primary trabecular bone, enhanced osteoclastogenesis, and what the authors
   describe as loss of growth plates. Shortening was present at birth and became more pronounced over the
   first several weeks, and the authors conclude explicitly that Dnmt1 matters MORE postnatally than
-  embryonically. THE CELL-TYPE CONTROL IS CLEAN. Osx-Cre deletion, restricted to osteoblasts, gave NO
-  difference in bone length. Col2a1-Cre deletion, restricted to chondrocytes, reproduced the shortening.
-  The effect is chondrocyte-autonomous. THE MECHANISM IS NOT THE ONE ANYBODY EXPECTED. Integrated RNA-Seq
+  embryonically. THE CELL-TYPE CONTROL DISSOCIATES THE LINEAGES BUT IS NOT AGE-MATCHED. Osx-Cre deletion,
+  restricted to osteoblasts, gave NO difference in bone length - measured at 10-11 weeks. Col2a1-Cre
+  deletion, restricted to chondrocytes, reproduced the shortening - measured at 3 weeks, because those
+  animals survive poorly and are born at non-Mendelian rates. The effect is chondrocyte-autonomous in
+  direction, on a control weaker than an age-matched pair. THE MECHANISM IS NOT THE ONE ANYBODY EXPECTED. Integrated RNA-Seq
   and MBD-Seq show that reduced methylation raises expression of energy-metabolism and ossification genes,
   and metabolomics confirms that nearly all energy metabolites rose. So maintenance methylation restrains
   bone growth through metabolic set-point rather than through a senescence clock, which connects this lead
   to the nutrient-sensing arm the atlas already holds. WHAT THIS DOES AND DOES NOT ESTABLISH. It establishes
   that maintenance methylation is REQUIRED for normal longitudinal growth, in a chondrocyte-autonomous way,
-  with a human genetic association at the same locus - four independent lines now point the same direction,
-  counting 5-azacytidine driving chondrocytes to hypertrophy and PASG/HELLS loss causing growth retardation.
-  It does NOT establish sufficiency. Every one of those four is a LOSS of methylation producing a LOSS of
+  with a human genetic association at the same locus. THE ATLAS PREVIOUSLY CALLED THIS FOUR CONVERGING LINES
+  AND IT IS TWO (CORR-066). cheung2001, cited second-hand as demethylation driving chondrocytes to
+  hypertrophy, measures no methylation at all, uses a cytotoxic antileukaemia drug on fetal bovine
+  chondrocytes in monolayer, and states that its own mechanism is unknown. The PASG/HELLS result remains
+  cited second-hand and unread. What stands is yanagihara2025 and nilsson2005.
+  It does NOT establish sufficiency. Both of the surviving lines run from a LOSS of methylation to a LOSS of
   growth. Nobody has raised maintenance methylation postnatally and measured bone length. That asymmetry
   is the whole remaining question for this lead and it is now precisely specifiable.'
 quantitative:
@@ -74,8 +79,9 @@ quantitative:
     with enhanced osteoclastogenesis; in vivo BrdU 100 mg/kg intraperitoneally 24 h before sampling
   species: mouse
   source_ref: yanagihara2025
-  uncertainty: 'This is the phenotype nilsson2005 predicts and that 5-azacytidine produces in vitro - lose
-    methylation, chondrocytes stop proliferating and differentiate. Uhrf1 is co-stained because it is
+  uncertainty: 'This is the phenotype nilsson2005 predicts - lose methylation, chondrocytes stop
+    proliferating and differentiate. It is NOT corroborated by cheung2001, which measures no methylation
+    (CORR-066). Uhrf1 is co-stained because it is
     DNMT1''s obligate partner for hemimethylated-DNA recognition, which makes UHRF1 a second node on the
     same axis that the atlas has not examined.'
 - parameter: transcriptional and metabolic consequence of reduced maintenance methylation
@@ -90,6 +96,40 @@ quantitative:
     energy metabolism, and lifting that restraint accelerates differentiation. That connects this lead to
     the nutrient-sensing arm the atlas already holds (mTORC1, load-gating) rather than to the Baron
     senescence corpus, and the two may be the same axis seen from different ends.'
+- parameter: 'CORRECTED - what the 5-azacytidine leg actually is'
+  value: no methylation measured anywhere in the paper
+  unit: none
+  conditions: fetal bovine epiphyseal chondrocytes in monolayer culture, 5-azacytidine for 48 h then washed
+    out; PTHrP and its receptor expressed days 5-9, type X collagen from day 11, a 14-fold increase in cell
+    volume by day 15, alkaline phosphatase rising days 14-28; PTHrP added at day 14 downregulated type X
+    collagen 6-fold
+  species: bovine
+  source_ref: cheung2001
+  uncertainty: 'CORR-066. The atlas counted this as one of four converging lines fixing the SIGN of the
+    methylation arrow - demethylation spends the plate. On reading it, that is not what the paper is. It
+    is a cell-culture MODEL paper whose purpose is to build an in vitro system for endochondral ossification,
+    aza-C is the tool that starts it, and the authors write that the mechanism by which aza-C induces the
+    chondrocytes to differentiate is not known and that it is still obscure how aza-C exerts its
+    demethylating effect. They offer an explicit alternative - that aza-C acts on a single early gene which
+    then triggers the whole programme. NO METHYLATION IS MEASURED IN THE PAPER AT ALL. Add that aza-C is a
+    cytotoxic antileukaemia cytidine analogue incorporated into DNA, that the cells are FETAL BOVINE
+    epiphyseal chondrocytes in monolayer rather than postnatal resting zone in vivo, and that a chondrocytic
+    phenotype was seen in treated AND untreated cultures. This leg is inadmissible for the sign. The atlas
+    reached it through nilsson2005 one-sentence citation and never checked the source - the CORR-047 failure
+    exactly.'
+- parameter: 'the cell-type dissociation, with its age confound stated'
+  value: Osx-Cre null at 10-11 weeks, Col2a1-Cre positive at 3 weeks
+  unit: weeks of age at measurement
+  conditions: Supplementary Fig 1F-1H; femoral length; birth rates from Osx-Cre and Col2a1-Cre crosses
+    tabulated because Col2a1-Cre;Dnmt1 fl/fl departed from Mendelian expectation
+  species: mouse
+  source_ref: yanagihara2025
+  uncertainty: 'READ FROM THE SUPPLEMENTARY, AND IT WEAKENS WHAT THE ATLAS CALLED A CLEAN DISSOCIATION. The
+    two Cre lines were measured at DIFFERENT AGES - osteoblast-specific animals at 10-11 weeks, chondrocyte-
+    specific at 3 weeks, because the latter survive poorly. A null at one age against a positive at another
+    is a weaker control than an age-matched pair, though the direction is unaffected: an osteoblast deletion
+    surviving to 10-11 weeks with no length phenotype is still informative. Note also that the supplementary
+    panels report FEMORAL length while the 44.7 per cent figure in the main text is TIBIAL.'
 - parameter: 'whether RAISING maintenance methylation postnatally lengthens bone'
   value: never tested
   unit: none
@@ -131,7 +171,8 @@ claim_grades:
 - claim: Raising maintenance methylation would increase bone length.
   grade: E
   basis: NOT TESTED IN ANY SPECIES. Recorded as an explicit inference so it cannot be read out of the
-    requirement result. Four converging lines all run loss-to-loss.
+    requirement result. The lines that do exist all run loss-to-loss, and there are two of them, not the
+    four the node originally claimed (CORR-066).
 key_refs:
 - ref_id: yanagihara2025
   pmid: '41188231'
@@ -141,6 +182,13 @@ key_refs:
   one_line_finding: Chondrocyte-autonomous Dnmt1 loss shortens tibiae to 44.7 per cent of control by
     narrowing the proliferative zone and accelerating hypertrophy, via raised energy metabolism, with the
     DNMT1 locus associated with human height at P < 4.2e-35.
+- ref_id: cheung2001
+  pmid: '11204431'
+  first_author: Cheung JO
+  year: 2001
+  type: primary
+  one_line_finding: A bovine cell-culture model of endochondral ossification started with 5-azacytidine -
+    no methylation measured, and the authors state the mechanism is unknown.
 - ref_id: nilsson2005
   pmid: '16002553'
   first_author: Nilsson O
