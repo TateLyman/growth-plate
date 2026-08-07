@@ -3140,3 +3140,45 @@ then wrote a summary for the user in which the hedges did not survive. The node 
 marked `abstract only` — and the prose I sent was not. The abstracts were right about direction and wrong
 about strength in one case and about mechanism in the other, which is exactly the failure mode
 `primary_abstract_only` exists to flag.
+
+## CORR-061 — two legs I leaned on turned out weak on full text, and the paper that should have settled the central question doesn't
+
+Three items, all from reading the full texts of papers the atlas had held at abstract level.
+
+**1. The telomere leg is close to uninformative for humans.** `nwosu2005` was cited as "no measurable
+telomere shortening in mouse resting-zone chondrocytes, 1 to 56 weeks." The full text: the oldest group is
+**n = 4**, the authors write that **minimal shortening may be present at 56 weeks**, and — decisively —
+they raise the objection themselves: **mice express telomerase in normal somatic tissues in vivo and have
+telomeres of roughly 100 kb against 10–15 kb in humans.** A null in an animal with somatic telomerase and
+ten-fold longer telomeres says very little about whether a human plate is telomere-limited. The conclusion
+survives on a different leg, which the authors cite rather than measure: **telomerase-deficient mice show
+no abnormality of skeletal growth** until telomeres shorten across successive generations. Node updated to
+rest on that.
+
+**2. The size law is a gradient, not a cutoff, and I stated it as a cutoff.** `farnum2006` full text gives
+the partition fractions: fluorescein (332 Da) reaches **concentrations comparable to the vasculature**,
+3 kDa dextran **~60%**, 10 kDa dextran **~10%**, 40 kDa **undetectable**. Round 67 recorded "up to 10 kDa
+enters" and placed vosoritide (~4 kDa) and IGF-1 (7.6 kDa) inside the permissive band. On the real curve
+they sit on the steep decline — 10 kDa is already down to a tenth. The small-molecule/biologic split I drew
+is *sharper* than I said, so the error was not consequential in direction, but "enters" and "enters at a
+tenth of plasma" are not the same claim and the node said the first.
+
+Two things the full text adds that strengthen round 67: fluorescein **saturates the plate within five
+minutes**, and when tracer reached only the epiphyseal vasculature it still **accessed the full length of
+the plate** — so it is not merely that both fronts are permissive, either front alone suffices. The
+resting zone's delivery disadvantage is doubly dead.
+
+**3. The catch-up literature does not report the endpoint it exists to justify.** `forcinito2011` is the
+best-designed member of the corpus: tryptophan deficiency birth to 4 weeks, then recovery, with tibial
+length measured at nine timepoints out to 20 weeks and senescence markers scored blind. It establishes that
+**four weeks of near-total growth arrest — a tibial deficit of 16.5 vs 26.6 mm, about 38% — bought roughly
+two weeks of delay in the senescence program.** Growth plate height and tibial growth rate both overshot
+control during recovery. But **no comparison of final tibial length between groups appears in the text.**
+The whole corpus is built on trajectory and marker delay; the number that decides whether
+suppress-then-release is height-neutral, height-positive or height-negative is not analysed.
+
+**What that means for a strategy the atlas was carrying.** The charge-discharge cycling idea has, for the
+first time, a measured exchange rate on both sides: **4 weeks spent for ~2 weeks bought.** If that ratio is
+real, cycling is height-*negative*, not neutral. Recorded in the node as an inference from the ratio of two
+measured quantities, explicitly not as a measured adult height, and paired with a `not reported` row so the
+absence cannot later be read as a null.

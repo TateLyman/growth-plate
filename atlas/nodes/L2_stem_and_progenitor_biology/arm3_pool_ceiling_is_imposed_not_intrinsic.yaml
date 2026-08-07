@@ -18,8 +18,10 @@ summary: 'The atlas has treated arm 3 as a closed door - the resting zone holds 
   therefore not an obligate consequence of chondrocyte division; it is a property of the SLOW replication
   of the resting zone inside its niche, and putting the cell in culture restores maintenance methylation
   (nilsson2005).
-  SECOND, it is not telomeric: telomere restriction fragment length in mouse resting-zone chondrocytes
-  did not shorten measurably between 1 and 56 weeks (nwosu2005). THIRD, the counter is body-wide rather
+  SECOND, it is not telomeric - though on the full text this leg rests on telomerase-deficient mice having
+  normal skeletal growth rather than on the TRF measurement itself, which has n=4 at the oldest timepoint
+  and comes from an animal with roughly 100 kb telomeres and somatic telomerase activity, unlike a human
+  (nwosu2005, CORR-061). THIRD, the counter is body-wide rather
   than plate-specific. A common program downregulates hundreds of growth-promoting genes simultaneously
   in kidney, lung, liver and heart with declining H3K4 trimethylation at their promoters (finkielstain2009,
   lui2010, lui2014), it includes an eleven-gene imprinted network - Igf2, H19, Plagl1, Mest, Peg3, Dlk1,
@@ -137,11 +139,18 @@ quantitative:
 - parameter: telomere restriction fragment length in resting-zone chondrocytes, 1 to 56 weeks
   value: no measurable shortening
   unit: kb
-  conditions: Mus casteneus at 1, 4, 8 and 56 weeks
+  conditions: Mus casteneus rib resting zone at 1 week (n=12), 4 weeks (n=11), 6 weeks (n=6), 8 weeks (n=9)
+    and 56 weeks (n=4); 6-week M. musculus (n=3) as a strain control
   species: mouse
   source_ref: nwosu2005
-  uncertainty: abstract only; a negative result with unstated power, so it bounds rather than excludes
-    a telomeric contribution
+  uncertainty: 'WEAKENED ON FULL-TEXT READING (CORR-061). Three problems the abstract hides. The oldest
+    group is n=4 and the authors themselves write that minimal shortening MAY be present at 56 weeks. More
+    importantly the model is close to unusable for the human question: mouse telomeres are approximately
+    100 kb against 10-15 kb in humans, and mice - unlike humans - express telomerase in normal somatic
+    tissues in vivo, which the authors raise as an alternative explanation for their own null. THE STRONGER
+    ARGUMENT IS THE ONE THEY CITE RATHER THAN THE ONE THEY MEASURE: telomerase-deficient mice show no
+    abnormality of skeletal growth until telomeres shorten across successive generations. The atlas keeps
+    the conclusion that growth plate senescence is not telomeric, but on that leg, not this measurement.'
 - parameter: imprinted genes coordinately downregulated with age across multiple organs
   value: '11'
   unit: genes
@@ -233,6 +242,51 @@ quantitative:
     with direct hypertrophic-chondrocyte-to-osteoblast transdifferentiation via PHEX+ intermediates. The
     authors state plainly that this defies the conventional paradigm, which depends on AVASCULAR growth
     plates.'
+- parameter: 'THE EXCHANGE RATE. Growth arrest spent versus senescence deferral bought'
+  value: 4 weeks spent, about 2 weeks bought
+  unit: weeks
+  conditions: newborn Sprague-Dawley rats, tryptophan-deficient diet via the lactating mother from birth
+    to 4 weeks, then regular chow; killed at 1, 3, 4, 5, 6, 8, 12, 16 and 20 weeks; tibial length by digital
+    caliper; structural, functional and molecular senescence markers scored by a blinded observer
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: 'THE MOST DECISION-RELEVANT ROW IN THE NODE. Four weeks of near-total growth arrest bought
+    a delay in the senescence program of about two weeks - at 9 weeks of age the treated rats grew at the
+    rate of a 7-week-old control, and the structural and molecular marker delays were of the same magnitude.
+    If that exchange rate is real, deliberate suppress-then-release is height-NEGATIVE rather than
+    height-neutral, and the charge-discharge cycling idea the atlas has been carrying for arm 3 is worse
+    than doing nothing. RECORDED AS AN INFERENCE ABOUT THE RATIO OF TWO MEASURED QUANTITIES, NOT AS A
+    MEASURED ADULT HEIGHT. See the next row for what the paper does not report.'
+- parameter: tibial length at the end of the growth-arrest period
+  value: 16.5 versus 26.6
+  unit: mm, treated versus control
+  conditions: 4 weeks of age, immediately at the end of tryptophan deficiency; P<0.001
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: a deficit of 10.1 mm, about 38 per cent of control tibial length, which is the size of the
+    hole that the subsequent catch-up has to fill
+- parameter: 'adult tibial length, treated versus control, at the end of follow-up'
+  value: not reported
+  unit: none
+  conditions: tibial length was measured at every timepoint out to 20 weeks and appears in Figure 1B, but
+    no comparison of final length between groups is stated in the text
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: 'RECORDED AS AN ABSENCE, DELIBERATELY. This is the paper that comes closest in the entire
+    catch-up literature to answering whether suppression-then-release is height-neutral, and it does not
+    answer it. The whole corpus is built on trajectory and on senescence markers; the endpoint that decides
+    whether cycling is a strategy - final length against a concurrent control - is not analysed. The atlas
+    must not fill this in by eye from a figure.'
+- parameter: growth plate height and tibial growth rate during recovery
+  value: both exceeded control
+  unit: qualitative
+  conditions: growth plate height at 6-8 weeks of age exceeded control after the deficiency resolved; tibial
+    growth rate in previously deprived animals ran above control
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: 'This is genuine catch-up machinery and it is why the height-neutral question is open rather
+    than settled against cycling - the plate does overshoot. What is unknown is whether the overshoot
+    integrates to the full 10.1 mm.'
 localization:
 - 'growth plate resting zone: where the program is cashed out into height; pool size and labelling index
   both fall with age'

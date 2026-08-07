@@ -10,10 +10,13 @@ stub: false
 summary: 'Every agent in this atlas has been chosen and argued about by its TARGET. This node asks the
   other question: what must a molecule BE to act on a growth plate at all, independent of what it hits.
   Three properties are measured, and each of them has an in vivo experiment behind it. SIZE: intracardiac
-  fluorescein and fluoresceinated dextrans imaged live in the murine proximal tibial plate show that solutes
-  up to 10 kDa enter from all three vascular fronts - epiphyseal, metaphyseal and the perichondrial ring
-  - and that the epiphyseal and metaphyseal sides are EQUALLY permissive, while 40 kDa and larger dextrans
-  do not enter at all within a detection limit of a few percent of vascular concentration (farnum2006).
+  fluorescein and fluoresceinated dextrans imaged live in the murine proximal tibial plate give a steep
+  PARTITION GRADIENT rather than a threshold - fluorescein at 332 Da reaches concentrations comparable to
+  the vasculature, 3 kDa dextran about 60 per cent, 10 kDa dextran about a tenth, and 40 kDa and above are
+  undetectable. Entry is from all three vascular fronts, the epiphyseal and metaphyseal sides are EQUALLY
+  permissive, either front alone can supply the whole length of the plate, and fluorescein saturates the
+  plate within five minutes (farnum2006). Small molecules sit on the plateau of that curve; every peptide
+  in the stack sits on its steep decline.
   CHARGE: in growing piglet knees at 3 T, the neutral gadolinium chelate gadoteridol gave significantly
   higher enhancement of the physis, epiphyseal cartilage and secondary ossification centre than the doubly
   anionic gadopentetate at matched size, and the authors conclude the ionic agent is the one that reports
@@ -25,8 +28,10 @@ summary: 'Every agent in this atlas has been chosen and argued about by its TARG
   before its target is even discussed. TWO CONSEQUENCES FOR THIS PROJECT. First, the exposure caveat the
   atlas correctly attaches to peptides, PEGylated prodrugs and nanoparticles does NOT transfer to the
   small molecules in the stack: erdafitinib (446.5 Da), anastrozole (293.4 Da), cilostazol (369.5 Da),
-  tadalafil (389.4 Da) and melatonin (232.3 Da) are all more than an order of magnitude below the permissive
-  band, so for them the plate is not a delivery problem. Second, and against a hypothesis this node was
+  tadalafil (389.4 Da) and melatonin (232.3 Da) all sit at the plateau of the partition curve, so for them
+  the plate is not a delivery problem. The corollary is sharper than it first looked: vosoritide at about
+  4 kDa is NOT comfortably inside the permissive band, it is partway down the slope, and IGF-1 at 7.6 kDa
+  is close to the tenth. Second, and against a hypothesis this node was
   written to test, the resting zone is NOT pharmacologically privileged: farnum2006 finds the epiphyseal
   and metaphyseal routes equally permissive for small solutes, so arm 3 has not failed because drugs cannot
   reach the reserve pool. That explanation is dead. WHAT IS NEW FOR ERDAFITINIB. The FDA multidisciplinary
@@ -52,10 +57,46 @@ quantitative:
     observed from all three vascular directions at or below this size
   species: mouse
   source_ref: farnum2006
-  uncertainty: 'abstract only - the full text is paywalled and the depth-versus-time curves have not been
-    read. Dextran is a random coil, so its hydrodynamic radius at a given mass is roughly twice that of
-    a globular protein; this cutoff is a RADIUS cutoff expressed in dextran mass and must not be applied
-    to proteins by mass alone.'
+  uncertainty: 'FULL TEXT NOW READ - and it shows this row was the wrong way to state the result. Entry
+    is a steep partition GRADIENT, not a threshold; see the next row. Dextran is a random coil, so its
+    hydrodynamic radius at a given mass is roughly twice that of a globular protein, and this is a RADIUS
+    relationship expressed in dextran mass that must not be applied to proteins by mass alone.'
+- parameter: 'partition of tracer into the growth plate as a fraction of vascular concentration - the
+    gradient, not the cutoff'
+  value: about 100, 60, 10, 0
+  unit: per cent of vascular concentration, for fluorescein 332 Da, 3 kDa, 10 kDa and 40 kDa dextran
+  conditions: intracardiac injection, live multiphoton imaging of the murine proximal tibial plate; fluorescein
+    reached levels comparable to the vasculature, 3 kDa dextran about 60 per cent, 10 kDa dextran about a
+    tenth, and nothing detectable at 40 kDa or above
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'ADDED ON FULL-TEXT READING AND IT REFINES ROUND 67 SUBSTANTIALLY. Entry is not a binary
+    cutoff at 10 kDa - it is a steep partition gradient, and 10 kDa is already down to a tenth. The
+    consequence for the stack: every small molecule (232-447 Da) sits on the PLATEAU of this curve at
+    essentially full vascular concentration, while every peptide sits on the steep decline. Vosoritide at
+    about 4 kDa is not comfortably inside the permissive band as the atlas previously implied - it is
+    partway down the slope - and IGF-1 at 7.6 kDa is close to the tenth. The small-molecule versus biologic
+    split is sharper than round 67 stated, and in the direction that favours the small-molecule arms.'
+- parameter: time for tracer to saturate the growth plate after intracardiac injection
+  value: '5'
+  unit: minutes
+  conditions: fluorescein, entering simultaneously and instantaneously from both the epiphyseal and metaphyseal
+    chondro-osseous junctions
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'Mouse plate, imaged to 200 um depth. Equilibration this fast means plasma concentration and
+    plate concentration track each other closely in a rodent, so the plate has no kinetic buffering of its
+    own at this scale. The human plate is far thicker and diffusion time scales with the square of distance,
+    so this number must not be carried across.'
+- parameter: 'whether a single vascular front can supply the whole plate'
+  value: 'yes'
+  unit: qualitative
+  conditions: in experiments where tracer arrival to one vasculature was significantly delayed, tracer present
+    in only the epiphyseal vasculature still accessed the full length of the growth plate
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'Strengthens the round-67 finding that the resting zone has no delivery disadvantage. It is
+    not merely that both fronts are permissive - either front alone suffices.'
 - parameter: solute size at which entry into the growth plate becomes undetectable
   value: '40'
   unit: kDa
