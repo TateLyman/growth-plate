@@ -41,6 +41,60 @@ summary: 'THIS NODE EXISTS BECAUSE THE ARGUMENT HAS BEEN MOVING IN ONE DIRECTION
   receptor is an anti-growth one and its net effect is the FGFR3 benefit minus an FGFR1 cost. That
   converts the argument for a selective agent from a dosing inconvenience into a mechanism.'
 quantitative:
+- parameter: THE LEDGER WAS WEIGHTED WRONG — FGFR3 IS NOT ONE OF THREE BRAKES, IT IS THE BRAKE
+  value: 'ADULT HUMAN STATURE EFFECT OF A SINGLE GERMLINE LESION. FGFR3 GAIN (achondroplasia): mean adult
+    height about 131 cm in men and 124 cm in women, roughly 45-50 cm below population mean. FGFR3 PARTIAL
+    LOSS (CATSHL): 195.6 cm in men, about +20 cm and +2.8 SD. So FGFR3 spans ROUGHLY 65 CM OF ADULT HUMAN
+    HEIGHT between its two directions. FGFR1 chondrocyte deletion: mouse only, "reduced tibial length",
+    no magnitude given. FGFR4 germline null: mouse only, failed autophagy and decreased Col2, NO BONE
+    LENGTH REPORTED AT ALL. NEITHER FGFR1 NOR FGFR4 HAS ANY REPORTED HUMAN STATURE PHENOTYPE'
+  unit: cm of adult human height
+  conditions: assembled from cnpmeta2026 (achondroplasia natural history), toydemir2006 (CATSHL),
+    karolak2015 and cinque2015
+  species: human
+  source_ref: toydemir2006
+  atlas_derived: true
+  uncertainty: 'THIS IS THE ARGUMENT THAT SHOULD HAVE COME FIRST AND ITS ABSENCE IS WHY THE PREVIOUS ROWS
+    REACHED THE WRONG CONCLUSION (CORR-046). Those rows treated three receptor directions as ADDITIVE AND
+    EQUALLY WEIGHTED while holding a magnitude for NONE of them. FGFR3 carries a 65 cm span of adult human
+    height; FGFR1 and FGFR4 carry no measured human stature phenotype at all. A pan-FGFR inhibitor''s net
+    effect is therefore DOMINATED BY FGFR3 RELIEF, which is precisely what erdafitinib produced -
+    19.06 cm/year in a child, with "accelerated growth" added to the US label off a five-case series.
+    AND THE DEEPER ERROR WAS EPISTEMIC: a ledger assembled from mouse GERMLINE and DEVELOPMENTAL deletions
+    was used to overrule a DIRECT HUMAN MEASUREMENT of the net effect. karolak2015 uses Col2a1-Cre from
+    embryonic cartilage and cinque2015 is germline - both ask whether a receptor is required to BUILD a
+    growth plate, not what partial inhibition does to an already-built adolescent one. When a mechanistic
+    ledger and a measurement disagree, THE LEDGER IS WHAT IS WRONG OR INCOMPLETE. WHAT THIS DOES NOT
+    OVERTURN: the IC50 ordering is arithmetic and stands (CORR-043), and five of five paediatric
+    erdafitinib cases were permanently discontinued with three requiring surgery. The case for a selective
+    agent survives - but it is now a SAFETY AND MARGIN argument, not a claim that erdafitinib''s net
+    mechanism is unfavourable.'
+- parameter: AND WHAT IS UNIQUE TO ERDAFITINIB IS PROBABLY EXPOSURE, NOT SELECTIVITY
+  value: 'infigratinib in achondroplasia is dosed at 0.25 mg/kg/day - for a 20 kg child about 5 mg -
+    against an oncology dose of 125 mg daily; erdafitinib in the paediatric cases was used at ONCOLOGY
+    dosing, titrated upward against serum phosphate. The observed velocities are +1.74 cm/year for
+    infigratinib in a randomised phase 3 and 19.06 cm/year in the erdafitinib case, an ELEVENFOLD
+    difference across the same axis'
+  unit: mg/kg/day and cm/year
+  conditions: propel3_2026 dosing against erdachild2024 and nadeaunguyen2026; the oncology dose comparison
+    is approximate and mixes flat and weight-based dosing across different ages
+  species: human
+  source_ref: erdachild2024
+  atlas_derived: true
+  uncertainty: 'THE MOST LIKELY ANSWER TO "WHAT IS UNIQUE ABOUT ERDAFITINIB" IS THAT IT IS THE ONLY FGFR
+    INHIBITOR EVER PUSHED TO FULL ONCOLOGY-LEVEL OCCUPANCY IN A GROWING CHILD. The selective agents are
+    dosed for safety in a disease population, roughly an order of magnitude below their own oncology
+    exposures, so the elevenfold velocity gap may be almost entirely DOSE rather than molecule. IF THAT IS
+    RIGHT, THE 19 CM/YEAR IS EVIDENCE ABOUT THE DOSE-RESPONSE OF FGFR3 BLOCKADE RATHER THAN ABOUT
+    ERDAFITINIB, and the important implication runs the other way from the drug choice: the selective
+    agents have never been tested anywhere near the exposure that produced dramatic growth, so their
+    +1.74 cm/year is a floor set by regulatory caution, NOT a ceiling set by biology. A SECOND CANDIDATE
+    THIS ATLAS COULD NOT VERIFY: erdafitinib has a long terminal half-life giving continuous rather than
+    intermittent FGFR3 coverage, and if FGFR3 restraint recovers between doses then continuous blockade
+    could differ qualitatively rather than only quantitatively. THE HALF-LIFE FIGURE COULD NOT BE
+    CONFIRMED FROM ANY SOURCE THIS ATLAS RETRIEVED and is recorded as unverified rather than asserted.
+    The dose comparison itself is rough - flat oncology dosing against weight-based paediatric dosing
+    across different ages and different molecules - and n = 1 for the 19.06 figure.'
 - parameter: FGFR4 IS SETTLED TOO — AND IT IS ALSO ANTI-GROWTH TO INHIBIT, SO THE RECEPTOR LEDGER CLOSES
   value: 'AUTOPHAGY IS NECESSARY FOR BONE GROWTH - Atg7 deletion in limb mesenchyme (Prx1-Cre) or cartilage
     (Col2a1-Cre) reduces femoral and tibial length from P9 - and postnatal chondrocyte autophagy is induced

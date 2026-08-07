@@ -2666,3 +2666,48 @@ narrowly FGFR3-selective agent is.
 avoid doing the work. Categories are not arguments. The test should have been: *does this change any
 number in the case I am making?* It would have — the IC50 ordering is the whole case, and the ordering
 argument silently assumes plasma equals tissue. **A load-bearing assumption I had never written down.**
+
+## CORR-046 — I used a ledger of mouse germline knockouts to override a human measurement, and weighted three receptors as if they were equals
+
+Round 41 concluded that erdafitinib is mechanistically wrong because the receptor ledger reads **one
+pro-growth target (FGFR3) and two anti-growth targets (FGFR1, FGFR4)**. The user pushed back that this
+does not line up with the evidence, since erdafitinib produced **19.06 cm/year** in one child and a
+five-case series in which "accelerated growth" was added to the US label.
+
+**They are right, and the error is structural.**
+
+**1. The ledger was built from germline and developmental deletions and applied to postnatal partial
+pharmacology.** `karolak2015` uses Col2a1-Cre — deletion from embryonic cartilage. `cinque2015`'s
+*Fgfr4*⁻/⁻ is germline. Both ask **"is this receptor required to BUILD a growth plate?"** Erdafitinib
+asks **"what happens if I partially inhibit these receptors in an already-built adolescent plate?"**
+Those are different questions, and complete developmental loss being harmful does not imply partial
+postnatal inhibition is harmful. **I conflated them.**
+
+**2. I treated three directions as additive and equally weighted, having magnitudes for none of them.**
+
+| lesion | adult human stature effect |
+|---|---|
+| FGFR3 gain (achondroplasia) | **≈ −45 to −50 cm** |
+| FGFR3 partial loss (CATSHL) | **≈ +20 cm (+2.8 SD)** |
+| FGFR1 chondrocyte deletion | mouse only; "reduced tibial length", no magnitude |
+| FGFR4 germline null | mouse only; **no bone length reported at all** |
+
+**FGFR3 spans roughly 65 cm of adult human height between its two directions. Neither FGFR1 nor FGFR4
+has any reported human stature phenotype.** FGFR3 is not one of three brakes — it is *the* brake, and
+the other two are second-order terms of unmeasured size. A pan-inhibitor's net is therefore dominated by
+FGFR3 relief, which is exactly what was observed in the child.
+
+**3. And the deepest version: a mechanistic ledger contradicted a direct measurement, and I sided with
+the ledger.** The net effect of erdafitinib on a growing human *was measured*. It was large and positive.
+This atlas's own standing rule is that velocity endpoints do not predict final height — but that is an
+argument about *which* outcome to trust, not a licence to overrule an observed outcome with a prediction
+assembled from three mouse knockouts. **When the ledger and the measurement disagree, the ledger is the
+thing that is wrong or incomplete.**
+
+**What this does and does not change.** It does **not** restore the phosphate-titration argument
+(CORR-043 stands — the IC50 ordering is arithmetic) and it does not make erdafitinib safe: five of five
+paediatric cases were permanently discontinued and three required surgery. What it changes is the
+*reason* for preferring a selective agent. That reason is now **safety and margin, not net mechanism** —
+and the corollary is stated in the next round: the 19 cm/year is evidence about the **dose-response of
+FGFR3 blockade**, not about erdafitinib's molecular uniqueness, and the selective agents have never been
+dosed anywhere near that exposure.
