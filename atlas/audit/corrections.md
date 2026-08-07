@@ -2850,3 +2850,44 @@ Limits are serious: rat and mouse only, magnitudes in figures and not read off, 
 And a hazard the paper does not discuss — **SMO is the target vismodegib blocks in basal cell carcinoma, and
 Hedgehog activation drives medulloblastoma**, so systemic Hh agonism in a growing child is not a candidate at any
 dose. That is an argument for the local route, not against the target.
+
+## CORR-051 — I named Hedgehog-driven pool recruitment as the single highest-value target, and three independent lines say the Hedgehog-responsive state is a juvenile property that ends at maturation
+
+Last round I told the user the one thing worth finding was whether the PDGFRA⁺/PRRX1⁺ perichondrial
+reservoir persists at bone age 16+ **and can be switched on**, on the strength of `trompet2024` (SAG beads,
+rat leg longer at 1, 2 and 6 months from a stimulus gone by 3 weeks) and `qu2025` (the mouse pool refills
+from outside the cartilage). A systematic sweep has moved the prior against the second half of that.
+
+**Three independent lines, none of which cite each other:**
+
+1. **`saito2026`** — p21⁺ juvenile metaphyseal osteoblasts associate with growth-plate **Indian hedgehog**
+   and **decline after growth plate maturation** or Hedgehog inhibition. c-Myc-driven proliferation of
+   juvenile osteoblasts stays **Hedgehog-dependent and ceases after growth plate maturation.**
+2. **`luzzi2023`** — Hedgehog drives regenerative enthesis healing **in young animals**; in **older**
+   animals the same injuries heal by fibrovascular scar **without participation of Hedgehog signalling.**
+   Different tissue, different lab, same age gate.
+3. **This atlas's own re-analysis of GSE288028** — the human PDGFRA⁺ stromal population is
+   **Hedgehog-negative at rest**: GLI1 0.30, PTCH1 0.08, HHIP 0.03, GLI2 0.22 relative to chondrocytes.
+
+**What this does and does not change.** It does not refute the target — nobody has tested perichondrial
+chondroprogenitors at bone age 16+, `saito2026` is about osteoblasts rather than chondroprogenitors, and
+off-at-rest is not unresponsive. But the honest statement is now the reverse of last round's: **the
+default expectation is that the Hedgehog-responsive state has already closed by the maturity in question,
+and the burden of proof sits with anyone claiming otherwise.** I gave the user a single highest-value
+target without having run this sweep first, and the sweep should have come before the recommendation.
+
+**And a second hazard was found for the same target.** `mundy2026`: the cell of origin of osteochondromas
+is the **PDGFRα⁺ inner perichondrial layer** — Pdgfrα-CreER;Ext1^f/f mice formed tumours by 4–8 weeks,
+Fgf18-CreER (outer layer only) formed none. The human candidate population this atlas identified is
+**PDGFRA-positive in 78%**. So the population proposed for recruitment is, in mice, the population that
+forms cartilage tumours next to the growth plate. Stacked on the Hedgehog oncology hazard already recorded
+in CORR-050 (SMO is what vismodegib blocks; Hh activation drives medulloblastoma), the safety case for
+pharmacological pool recruitment is now two independent oncogenic mechanisms, not one.
+
+**What went the other way in the same sweep, and it is the more useful finding.** `yuan2026` — a
+prospective cohort followed to **final adult height** with a concurrent control, in boys at **bone age
+≥ 14 y, Tanner IV–V, growth velocity < 6 cm/yr**, with epiphyseal closure and GH deficiency excluded, and
+dosing banded by bone age up to **BA ≥ 15.5 y**. Males on rhGH gained **7.20 cm from baseline against
+2.00 cm** in controls (P = 0.01) and **5.21 cm over predicted adult height against 0.80 cm** (P = 0.008);
+16 of 22 exceeded prediction by ≥ 1 SDS against 0 of 5. n = 22 vs 5, non-randomised, single population —
+but it is final-height evidence at the maturity in question, and this atlas had nothing of the kind.
