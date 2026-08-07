@@ -9,17 +9,23 @@ layer: L2
 stub: false
 summary: 'The atlas has treated arm 3 as a closed door - the resting zone holds a finite number of divisions,
   they are spent, and that is that. Three independent measurements say the ceiling is NOT carried inside
-  the cell, and they change what arm 3 is. FIRST, replicative capacity comes back in culture. The number
-  of population doublings of rabbit resting-zone chondrocytes in vitro did not depend on the age of the
-  animal they were harvested from, and the same paper found that DNA methylation in resting-zone chondrocytes
-  decreases with age in vivo - specifically with the slow proliferation of the resting zone, and not in
-  the rapidly proliferating proliferative zone, not in culture, and not in growing liver (nilsson2005).
+  the cell, and they change what arm 3 is. FIRST - and REVISED once the full text was read - the strongest thing nilsson2005
+  shows is not the donor-age comparison, which is a marginal P=0.068 and which this node previously
+  overstated as a clean null (CORR-059). It is the TRIPLE SPECIFICITY of the methylation loss. Global
+  DNA methylation falls with age in resting-zone cartilage, but it does NOT differ between the resting
+  and hypertrophic zones at any single age, does NOT fall during the far more rapid replication of the
+  same cells in culture, and does NOT fall with growth of the liver in vivo. Loss of methylation is
+  therefore not an obligate consequence of chondrocyte division; it is a property of the SLOW replication
+  of the resting zone inside its niche, and putting the cell in culture restores maintenance methylation
+  (nilsson2005).
   SECOND, it is not telomeric: telomere restriction fragment length in mouse resting-zone chondrocytes
   did not shorten measurably between 1 and 56 weeks (nwosu2005). THIRD, the counter is body-wide rather
   than plate-specific. A common program downregulates hundreds of growth-promoting genes simultaneously
   in kidney, lung, liver and heart with declining H3K4 trimethylation at their promoters (finkielstain2009,
   lui2010, lui2014), it includes an eleven-gene imprinted network - Igf2, H19, Plagl1, Mest, Peg3, Dlk1,
-  Gtl2, Grb10, Ndn, Cdkn1c, Slc38a4 - whose decline tracks the decline in growth rate (lui2008), and its
+  Gtl2, Grb10, Ndn, Cdkn1c, Slc38a4 - whose decline tracks the decline in growth rate - though lui2008 TESTED
+  and REFUTED the obvious mechanism for that arm, finding promoter methylation of Mest, Peg3 and Plagl1
+  unchanged with age (CORR-060), and its
   targets are enriched for miR-29 binding sites while all three miR-29 family members rise steeply from
   1 to 6 weeks of age (kamran2015). CRUCIALLY THE PROGRAM IS DRIVEN BY GROWTH, NOT BY TIME. A tryptophan-deficient
   diet that stalled growth for four weeks DELAYED the program (lui2010); propylthiouracil-induced hypothyroidism
@@ -30,7 +36,10 @@ summary: 'The atlas has treated arm 3 as a closed door - the resting zone holds 
   gene set appears in juvenile sheep kidney and lung as in mouse and rat, but plays out over years rather
   than weeks, which is offered as the reason large mammals get large (delaney2014). WHAT THIS MEANS FOR
   ARM 3. Every intervention that slows the program does so BY SLOWING GROWTH, which is why catch-up growth
-  restores a trajectory rather than exceeding it - the divisions are spent more slowly, not spared. The
+  restores a trajectory rather than exceeding it - the divisions are spent more slowly, not spared. The tryptophan
+  experiment is the sharpest version: 159 of 235 uniformly age-downregulated genes were significantly
+  delayed by four weeks of prior deprivation, and the comparison was made at MATCHED BODY SIZE precisely
+  to separate prior growth history from concurrent malnutrition (lui2010). The
   arm-3 target, stated precisely for the first time, is to decouple the program''s progression from growth
   output: to run the counter slowly while the plate keeps producing. Nothing does this. But a ceiling that
   is epigenetic, growth-driven, reversible in culture, and set at different rates in different species
@@ -70,16 +79,61 @@ quantitative:
     acts by a proliferation-independent route or by raising the loss of capacity per cell cycle. That
     unresolved sign is a real problem for the atlas, because anastrozole is in the stack on the assumption
     that oestrogen depletes the pool.'
-- parameter: population doublings of resting-zone chondrocytes in culture as a function of donor age
-  value: no dependence
+- parameter: maximal population doublings of cultured resting-zone chondrocytes before plateau
+  value: '14'
   unit: population doublings
-  conditions: rabbit resting-zone chondrocytes harvested across ages and cultured
+  conditions: rib resting-zone cartilage from fetal, 4- and 16-week-old male rabbits; approximately 50
+    days and three passages to plateau, with senescence-associated beta-galactosidase appearing as the
+    plateau was approached
   species: rabbit
   source_ref: nilsson2005
-  uncertainty: 'abstract only; the doubling numbers themselves have not been read. THIS IS THE SINGLE
-    MOST IMPORTANT ROW IN THE NODE. If the ceiling were a Hayflick limit carried in the cell, old cells
-    would double fewer times. They do not. The limiting state is imposed by the tissue and released by
-    removal from it.'
+  uncertainty: 'For comparison the authors cite 8-10 doublings for adult rabbit ARTICULAR chondrocytes
+    and 35-40 for young adult human articular chondrocytes (Evans & Georgescu 1983). So growth plate
+    resting-zone cells do undergo the Hayflick phenomenon in culture; they are not immortal.'
+- parameter: effect of donor age on maximal population doublings in culture
+  value: 'P = 0.068'
+  unit: Kruskal-Wallis
+  conditions: fetal versus 4-week versus 16-week donor rabbits
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: 'CORRECTED ROUND 69 (CORR-059). The atlas previously reported this as a clean null showing
+    the ceiling is not carried in the cell. It is NOT clean - P=0.068 is a marginal near-miss with three
+    small donor groups, and the direction is the one the intrinsic hypothesis predicts. The authors
+    conclude no dependence; the atlas grades it as WEAK EVIDENCE AGAINST a cell-intrinsic limit, not as
+    proof. This is the CORR-056 failure repeated: a negative treated as strong when it is marginal.'
+- parameter: global DNA methylation versus age, resting zone
+  value: decreased
+  unit: fraction methyl-dCMP
+  conditions: rib growth plate resting zone from fetal, 4- and 16-week rabbits, n=9 per group, P=0.004;
+    and all three zones of distal ulnar plates fetal versus 4 weeks, P<0.001
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: association with age, not a causal test
+- parameter: 'the zone- and context-specificity of the methylation loss - the finding that actually
+    localises the counter'
+  value: resting zone in vivo only
+  unit: qualitative
+  conditions: within each age, methylation did NOT differ between resting zone and hypertrophic zone;
+    methylation did NOT fall during in vitro replication of the same cells; and it did NOT fall with
+    growth of the liver in vivo
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: 'THIS IS THE MOST INFORMATIVE ROW IN THE NODE AND IT REPLACES THE OVERSTATED ONE ABOVE.
+    Methylation is lost specifically during the SLOW replication of resting-zone chondrocytes in vivo,
+    and not during the far more rapid replication of the proliferative zone, not in culture, and not in
+    growing liver. Loss of methylation is therefore not an obligate consequence of chondrocyte division -
+    it is a property of the resting zone in its niche. The authors infer that maintenance methylases are
+    upregulated when the cells are placed in culture. That is a mechanistic statement of what "imposed
+    rather than intrinsic" means: the niche fails to maintain the mark, and removing the cell restores
+    maintenance.'
+- parameter: proliferative-zone BrdU-labelled cells per column versus age
+  value: about 7-fold decline
+  unit: fold
+  conditions: approximately 3-fold from fetal to 5 weeks (P<0.001) and a further 2.5-fold from 5 to 16
+    weeks (P=0.002); rabbit, 90 min BrdU at 50 mg/kg, 25 columns per animal, n=3 per age group
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: none stated
 - parameter: telomere restriction fragment length in resting-zone chondrocytes, 1 to 56 weeks
   value: no measurable shortening
   unit: kb
@@ -93,18 +147,59 @@ quantitative:
   unit: genes
   conditions: Igf2, H19, Plagl1, Mest, Peg3, Dlk1, Gtl2, Grb10, Ndn, Cdkn1c, Slc38a4; temporal pattern
     similar to the decline in growth rate
-  species: rat
+  species: mouse
   source_ref: lui2008
-  uncertainty: abstract only; expression-level association across organs, not a causal test
-- parameter: effect of four weeks of tryptophan-deficient diet on the growth-limiting genetic program
-  value: program delayed
-  unit: qualitative
-  conditions: newborn rats, growth temporarily inhibited for 4 weeks, then microarray
+  uncertainty: 'AND THE OBVIOUS MECHANISM WAS TESTED AND REFUTED IN THE SAME PAPER. The authors
+    hypothesised that the coordinate decline in these imprinted genes is caused by altered methylation
+    silencing the expressed allele, and state plainly that contrary to the hypothesis, the methylation
+    status of the promoter regions of Mest, Peg3 and Plagl1 did not change with age. The imprinted network
+    declines in EXPRESSION without a promoter methylation change, so it is not a second instance of the
+    nilsson2005 methylation mechanism and must not be cited as one.'
+- parameter: genes in the growth-limiting program significantly delayed by prior tryptophan deficiency
+  value: 159 of 235
+  unit: genes, 68 per cent, each P<0.05
+  conditions: newborn Sprague-Dawley rats, tryptophan-deficient diet 0-4 weeks then recovery; the critical
+    comparison is made at MATCHED BODY SIZE - deprived animals at 8-9 weeks against controls at 5-6 weeks -
+    explicitly in order to isolate prior growth history from concurrent malnutrition
   species: rat
   source_ref: lui2010
-  uncertainty: 'abstract only. THE EXPERIMENT THAT SEPARATES TIME FROM GROWTH. The program tracks growth,
-    not the calendar, which is why the plate can be paused - and also why pausing it is height-neutral
-    unless the pause is spent buying something else.'
+  uncertainty: 'THE EXPERIMENT THAT SEPARATES TIME FROM GROWTH, AND THE MATCHED-SIZE DESIGN IS WHAT MAKES
+    IT WORK. The program tracks growth, not the calendar. Body mass, tail length, tibia length and organ
+    BrdU-labelling index were all measured through the deprivation and recovery. Down-regulated genes in
+    the program show declining promoter H3K4 trimethylation with age, and siRNA knockdown of Mest, Plagl1
+    and Peg3 in cultured hepatocytes confirmed they are growth-promoting.'
+- parameter: proliferation in juvenile organs transplanted into adult recipients
+  value: continues rapidly
+  unit: qualitative
+  conditions: cited by lui2010 as the evidence that declining growth rate is an intrinsic property of the
+    organ rather than of the host environment
+  species: multiple
+  source_ref: lui2010
+  uncertainty: 'RECORDED BECAUSE IT IS THE MOST ENCOURAGING FACT IN THE CORPUS FOR ARM 3. A young organ
+    put into an old animal keeps growing - the program is not driven by a systemic ageing signal and an
+    old host does not accelerate it. Cited rather than performed in this paper, so the atlas holds it at
+    second hand until the primary sources are read.'
+- parameter: pace of the same genetic program across species
+  value: mouse fastest, rat intermediate, sheep slowest
+  unit: rank order
+  conditions: expression microarray and real-time PCR on the overlapping age-downregulated gene set;
+    C57BL/6 mice, Sprague-Dawley rats and female Suffolk sheep; the shared gene set is conserved across
+    the roughly 80 million years since sheep and rodents diverged
+  species: multiple
+  source_ref: delaney2014
+  uncertainty: 'Three species, one laboratory, expression only - so this is consistent with the hypothesis
+    that program pace sets adult size rather than a demonstration of it. The authors say as much and call
+    for more species. But it is the only evidence in this atlas that the rate is a settable parameter.'
+- parameter: miR-29 target validation against growth genes
+  value: 3 of 3 suppressed
+  unit: luciferase reporters
+  conditions: 3'UTRs of Igf1, Imp1 and Mest each placed in a luciferase reporter; miR-29 mimics suppressed
+    activity for all three, and suppression was diminished by mutating the predicted target sequences
+  species: in_vitro_animal_cell
+  source_ref: kamran2015
+  uncertainty: 'Direct molecular target validation, which is stronger than the atlas previously credited -
+    Igf1 is a validated miR-29 target. What is still absent is any organismal test: no miR-29 gain- or
+    loss-of-function animal has had a bone measured (g_l2_mir29_causality_for_skeletal_length).'
 - parameter: adult height in Beckwith-Wiedemann spectrum, the human imprinted-overgrowth natural experiment
   value: 180.6 and 166.3
   unit: cm at 18 years, males and females
@@ -277,5 +372,6 @@ open_questions:
 - g_l2_larger_pool_with_intact_flux
 - g_l2_decouple_the_counter_from_growth
 - g_l2_mir29_causality_for_skeletal_length
+- g_l2_maintenance_methylation_as_the_pool_lever
 contradicts: []
 last_verified: '2026-08-07'

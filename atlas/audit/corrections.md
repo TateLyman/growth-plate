@@ -3100,3 +3100,43 @@ evidence, and saying so is the point of the node.
 resting-zone proliferation, which the authors could not reconcile with oestrogen accelerating senescence.
 Anastrozole sits in the stack partly on the premise that oestrogen depletes the pool. That premise now has
 a contradicting measurement against it and is flagged in the node rather than left implicit.
+
+## CORR-059 — I reported a P=0.068 as a clean null, one round after logging CORR-056 for exactly that
+
+Round 68 built the case that the resting-zone ceiling is "not carried in the cell" on three legs, and put
+this one first: *"population doublings of rabbit resting-zone chondrocytes in culture do not depend on
+donor age."* The full text of `nilsson2005` gives the actual result: **the effect of donor age on maximal
+population doublings was P = 0.068** by Kruskal–Wallis, across three small donor groups, in the direction
+the cell-intrinsic hypothesis predicts. The authors' prose says no dependence; the statistic is a marginal
+near-miss.
+
+**This is CORR-056 repeated one round later** — a weak negative stated as strong — and it is worse this
+time because CORR-056 had already named the failure and I still reported the authors' framing instead of
+their number. The rule that follows: **when a claim rests on a negative, quote the test statistic in the
+node or do not make the claim.** The row now carries the P value and grades it as weak evidence against a
+cell-intrinsic limit rather than as proof.
+
+**The conclusion survives, on a better leg.** The full text supplies something much stronger than the
+donor-age comparison: methylation loss in the resting zone has a **triple specificity**. It does not
+differ between resting and hypertrophic zones at any one age, does not occur during the far more rapid
+replication of the same cells in culture, and does not occur with growth of the liver in vivo. So it is
+not a consequence of division per se — it is a property of the resting zone *in its niche*, and removing
+the cell restores maintenance methylation. That is a mechanism, not an absence, and it is now the load-
+bearing row.
+
+## CORR-060 — the imprinted network was in the node as epigenetic evidence, and its own paper had refuted that
+
+The round-68 node listed the eleven-gene imprinted network (`lui2008`) alongside the H3K4me3 and DNA
+methylation findings as evidence that the growth-limiting program is "epigenetically encoded." The full
+text states the opposite about methylation specifically: the authors hypothesised that the coordinate
+decline in these genes is caused by altered methylation silencing the expressed allele, and report that
+**contrary to the hypothesis, promoter methylation of Mest, Peg3 and Plagl1 did not change with age.**
+
+The imprinted network declines in *expression* without a promoter methylation change. It is therefore not
+a second instance of the `nilsson2005` mechanism and must not be cited as one. Fixed in the node.
+
+**Both corrections have the same origin.** I built round 68 out of abstracts, said so in the grading, and
+then wrote a summary for the user in which the hedges did not survive. The node was honest — every row was
+marked `abstract only` — and the prose I sent was not. The abstracts were right about direction and wrong
+about strength in one case and about mechanism in the other, which is exactly the failure mode
+`primary_abstract_only` exists to flag.
