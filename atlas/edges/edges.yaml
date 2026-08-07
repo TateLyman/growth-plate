@@ -19163,3 +19163,32 @@ edges:
   confidence: B
   notes: Three independently collected human observations fit a model built on rabbit data without having informed it.
   traversal_usable: true
+- edge_id: e01234
+  source: senescence_rate_is_a_regulated_variable
+  target: fusion_is_proliferative_exhaustion
+  relation: precedes
+  sign: '+'
+  context: within one mouse, phalanges and metacarpals fuse at 2-3 weeks while femurs and tibias remain unfused at 12
+    weeks; the rate of approach to zero proliferation differs by site and is separable from the fusion event itself
+  evidence_tier: T2
+  refs:
+  - lui2018
+  - weise2001
+  confidence: C
+  notes: The within-animal design controls every systemic confounder, so whatever sets the rate is local to the plate.
+  traversal_usable: true
+- edge_id: e01235
+  source: igf1_local_growth_plate
+  target: senescence_rate_is_a_regulated_variable
+  relation: activates
+  sign: '+'
+  context: exogenous IGF1 stimulated phalangeal chondrocytes and had no effect on tibial ones, and exogenous BMP2
+    raised hypertrophy in metatarsals but not tibias, which the authors read as saturation of these pathways in the
+    large bones
+  evidence_tier: T3
+  refs:
+  - lui2018
+  confidence: D
+  notes: Two nulls in monolayer or explant culture with no dose-response and no power analysis; recorded as a
+    hypothesis with an experiment behind it, not a demonstration.
+  traversal_usable: false

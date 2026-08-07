@@ -2103,3 +2103,27 @@ lesson again: **the thing I needed was in the full text, and I wrote the caveat 
 burden as any other. Either cite the exposure data, or write "exposure relationship not checked" —
 never a directional guess dressed as a limitation. And where a limitation would lead a reader to
 discount a harm, the burden is higher, not lower.
+
+---
+
+## CORR-032 — I guessed a PMCID and fetched a crystallography paper; the guard caught it in one step
+
+Fetching `lui2018` I constructed the URL `pmc.ncbi.nlm.nih.gov/articles/PMC6072997/` from nothing —
+**I did not look the PMCID up.** It returned a study of a pillar[5]arene host-guest complex. The real
+identifier is **PMC6056026**, obtained in the next call by querying Europe PMC.
+
+**Recorded because it is the fourth instance of one failure** (CORR-023, 029, 030, and this), and
+because the pattern across them is now unambiguous: **whenever an identifier is needed and not to
+hand, I generate a plausible one instead of looking it up.** PMID, DOI, PMCID — the format differs,
+the behaviour is identical.
+
+**What is different here is that nothing escaped.** The fetch returned content that could not possibly
+be the paper, and the mismatch was visible in one step. That is the guard working — not judgement, but
+**the mechanical fact that a fetched document either is or is not about growth plates.** CORR-029 and
+CORR-030 escaped precisely because a citation in a *message* has no equivalent check: nothing comes
+back to contradict it.
+
+**The rule is unchanged and the scope widens.** Never construct an identifier of any kind. Look it up,
+in the same turn, or do not use it. And where an identifier must be used to retrieve something,
+**verify the retrieved content is the intended paper before extracting from it** — which here cost one
+call and saved a fabricated finding.
