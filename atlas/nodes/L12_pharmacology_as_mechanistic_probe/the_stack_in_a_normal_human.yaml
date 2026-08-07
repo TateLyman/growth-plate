@@ -451,6 +451,92 @@ quantitative:
     say the converse, and it does not say GH is useless in an intact axis - mcdonnell2026 shows it adds
     2.74 cm/year on top of a CNP analogue. Two siblings, abstract only in this atlas, and a severe
     biallelic phenotype is the hardest possible test of any growth agent.'
+- parameter: THE GH-PLUS-FGFR-INHIBITION COMBINATION HAS BEEN RUN AND IT IS NEGATIVE ON LENGTH — THIS NODE'S RISKIEST CALL HELD
+  value: 'MECLOZINE (an FGFR3-signalling inhibitor) 2 mg/kg/day AND/OR GROWTH HORMONE 0.35 mg/kg/day in
+    achondroplasia model mice from P7 to P56. Both agents significantly increased body and bone length.
+    THERE WAS NO ADDITIVE EFFECT OF THE COMBINATION ON BONE GROWTH. Bone mineral density, by contrast,
+    WAS additively increased. Growth plate width rose with both agents, but THE HYPERTROPHIC ZONE WAS
+    ENLARGED BY MECLOZINE AND NOT BY GH.'
+  unit: mg/kg/day; qualitative additivity
+  conditions: sawamura2025, achondroplasia transgenic mice, P7-P56, micro-CT for bone length and BMD and
+    histology for zone width; n not stated in the abstract, which is all this atlas has read
+  species: mouse
+  source_ref: sawamura2025
+  uncertainty: 'THIS NODE FLAGGED THE EXCLUSION OF GROWTH HORMONE AS "THE LEAST OBVIOUS PART AND THE ONE
+    MOST LIKELY TO BE WRONG" AND STATED THE REASONING IN FULL SO IT COULD BE FALSIFIED. THE EXPERIMENT
+    EXISTS AND IT AGREES. That is worth saying plainly because it is the first prospectively-stated call
+    in this node that a later search has tested. AND THE ZONAL DATA GIVE THE REASON, WHICH IS BETTER THAN
+    THE RESULT: both agents widen the plate, so both raise proliferation, but only the FGFR3 arm enlarges
+    the HYPERTROPHIC zone. GH therefore has nothing left to add to an FGFR3 inhibitor - its whole
+    contribution is already in the package. THE SAME PARTITION EXPLAINS THE OPPOSITE RESULT ON THE OTHER
+    AXIS: mcdonnell2026 gets +2.74 cm/year adding lonapegsomatropin to navepegritide, because a CNP
+    analogue acts on hypertrophy and LEAVES PROLIFERATION FREE for GH to take. So GH is additive with CNP
+    and redundant with FGFR3 blockade, and that is a mechanistic prediction, not a coincidence of two
+    trials. LIMITS, AND THEY ARE REAL. Meclozine is NOT erdafitinib - a repositioned antihistamine acting
+    DOWNSTREAM of the receptor, far weaker and far less specific, and horike2026 now shows FGFR3 signals
+    to CREB by a route INDEPENDENT of ERK, which a downstream agent would miss and a receptor-level
+    inhibitor would not. An achondroplasia transgenic sits near a rescue ceiling where non-additivity is
+    easier to produce than in a normal plate. n is not stated. SO THIS DOES NOT PROVE GH IS REDUNDANT
+    WITH ERDAFITINIB; it proves the closest available version of that experiment came out negative, which
+    is the strongest evidence the question has.'
+- parameter: AND THE SPECIFIC REASON GH IS THE WRONG PARTNER FOR ERDAFITINIB — IT RESTORES THE ONE SIGNAL ERDAFITINIB SUPPRESSES THAT PROTECTS THE POOL
+  value: 'THREE RESULTS THIS ATLAS ALREADY HELD, NEVER PUT TOGETHER. erdachild2024: erdafitinib at 100 nM
+    reduced BOTH phospho-ERK1/2 and phospho-AKT in the patient''s own fibroblasts, and IGF-I RE-ACTIVATED
+    AKT AT EVERY ERDAFITINIB CONCENTRATION, SUSTAINED TO 48 HOURS, while it could NOT re-activate ERK1/2.
+    oichi2023: nutrient deprivation lowers resting-zone phospho-Akt and BANKS Axin2+ progenitors, and
+    exogenous IGF-1 restores pAkt and DRIVES THE POOLED PROGENITORS OUT, decreasing their number.
+    chu2025: GH shifts growth-plate stem cell divisions toward the committed side and DEPLETES the pool,
+    cell-autonomously via GHR. PUT TOGETHER: of erdafitinib''s two suppressed arms, IGF-I can restore
+    exactly one - AKT - and AKT is the arm that empties the progenitor pool. ERK, the arm that carries
+    the harm, stays off regardless.'
+  unit: qualitative, phosphorylation state and progenitor number
+  conditions: an inference by this atlas across three papers in three preparations - human dermal
+    fibroblasts (erdachild2024), mouse resting zone in vivo (oichi2023), mouse growth plate stem cells
+    (chu2025); no experiment has given GH and an FGFR inhibitor together and counted progenitors
+  species: multiple
+  source_ref: erdachild2024
+  uncertainty: 'THE INFERENCE IS THE CONTRIBUTION AND IT IS ALSO THE WEAKNESS. It chains three
+    preparations, and the load-bearing link - that erdafitinib lowers phospho-AKT in RESTING ZONE
+    CHONDROCYTES - was measured in DERMAL FIBROBLASTS, which the authors themselves flag as a surrogate
+    used only because chondrocytes were unavailable. If erdafitinib does not lower resting-zone pAkt in
+    vivo, the argument evaporates. IT IS ALSO OPPOSED BY A REAL COUNTER-MECHANISM, which is stated here
+    rather than left out: FGFR3 blockade raises flux out of the resting zone into columns, and under
+    population asymmetry (chu2025) every differentiation event is a withdrawal, so erdafitinib may SPEND
+    the pool through the front door while sparing it through the back. WHICH DOMINATES IS UNMEASURED, and
+    it is the shape of the missing experiment - count progenitors, not centimetres, under an FGFR
+    inhibitor with and without GH. WHAT THE INFERENCE DOES DO IS RAISE THE COST OF GUESSING WRONG ON THE
+    GH QUESTION FROM "a redundant drug" TO "a drug that may specifically undo the budget-sparing half of
+    its partner", and sawamura2025''s null on length is consistent with that without demonstrating it.'
+- parameter: THE POOL ARM GAINS A MOLECULE AND LOSES IT IN THE SAME PAPER — AND AN EXPANDED RESTING ZONE IS NOT A BIGGER POOL
+  value: 'horike2026, Fgfr3-Ach G380R KNOCK-IN mouse. Excess FGFR3 signalling EXPANDS the resting zone
+    while DISRUPTING its turnover and stem-cell-like behaviour - so the achondroplasia plate ACCUMULATES
+    resting-zone cells AND IS SHORT. The mediator is CREB and it is INDEPENDENT OF THE ERK PATHWAY. CREB
+    inhibitor 666-15 at 10 mg/kg from P7 to P27 partially and significantly restored weight, bone growth
+    and plate structure, raised COL2 and COL10 area, raised resting-zone CD73 (recovery of stem-cell
+    properties), and DECREASED resting zone height while INCREASING proliferative and hypertrophic zone
+    heights. BUT IN CONTROL MICE 666-15 CHANGED NEITHER WEIGHT NOR FEMUR LENGTH NOR RESTING-ZONE CD73,
+    and the authors state it is not effective in a physiological condition.'
+  unit: mg/kg; zone heights; qualitative marker expression
+  conditions: horike2026, knock-in achondroplasia mouse, intraperitoneal 666-15 P7-P27, analysed P28,
+    with a wild-type control arm reported in Supplementary Fig. 16
+  species: mouse
+  source_ref: horike2026
+  uncertainty: 'THREE THINGS, AND THE ATLAS WANTED ONLY TWO OF THEM. FIRST, THE STANDING HAZARD: THIS
+    NODE''S ARM 3 IS "EXPAND THE POOL", AND HERE IS A PLATE WITH AN EXPANDED RESTING ZONE AND SHORT
+    BONES, because the accumulation is a TURNOVER FAILURE and not a reserve. That is the exact analogue
+    of CORR-044, where an enlarged HYPERTROPHIC zone was read as more growth, one zone up. Any protocol
+    that proposes to verify pool expansion by counting resting-zone cells is measuring the wrong thing,
+    and this atlas came close to writing one. SECOND, A REAL ADVANTAGE FOR RECEPTOR-LEVEL INHIBITION:
+    FGFR3 signals to CREB INDEPENDENTLY OF ERK, so an inhibitor at the receptor blocks a limb that every
+    downstream agent misses - CNP analogues act at the RAF-1/ERK step, meclozine acts downstream too.
+    That is a specific, newly available argument for erdafitinib, infigratinib and TYRA-300 over the
+    pathway-level agents, and it is the first mechanistic advantage of the FGFR arm that does not depend
+    on potency. THIRD, THE PART THE ATLAS DID NOT WANT: THE WILD-TYPE ARM WAS RUN AND WAS NULL. 666-15
+    does nothing to femur length in a normal mouse. So CREB inhibition is a CORRECTOR, not an enhancer,
+    and it does NOT enter this stack for a normal child. By the same logic it constrains the FGFR case
+    itself - the pool defect FGFR3 blockade relieves is one a normal plate does not have, so in a normal
+    child erdafitinib and its selective cousins are YIELD levers and not POOL levers, and arm 3 is still
+    empty. TYRA-300 remains the only agent on either axis with wild-type growth data.'
 localization:
 - growth plate; the CNP arm acts on the hypertrophic zone and the FGFR3/GH arm on the proliferative zone
 human_evidence: direct
@@ -510,8 +596,26 @@ key_refs:
   type: primary
   one_line_finding: A collagen-binding CNP fusion localises to cartilage, built because hypotension is the
     liability of systemic CNP - the clearest unmet compound need in this atlas.
+- ref_id: sawamura2025
+  pmid: '39514089'
+  first_author: Sawamura K
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: Meclozine plus growth hormone in achondroplasia mice - NO ADDITIVE EFFECT ON BONE
+    GROWTH, additive only on bone mineral density, with the hypertrophic zone enlarged by the FGFR3 arm
+    and not by GH; the closest test of this node's riskiest exclusion, and it agrees with it.
+- ref_id: horike2026
+  pmid: '41748604'
+  first_author: Horike N
+  year: 2026
+  type: primary
+  one_line_finding: Excess FGFR3 EXPANDS the resting zone while breaking its turnover, via CREB and
+    INDEPENDENTLY of ERK; CREB inhibitor 666-15 rescues the model but does nothing to femur length in
+    wild-type mice - a corrector, not an enhancer, so arm 3 is still empty.
 open_questions:
 - g_l12_cartilage_targeted_cnp
 - g_l1_raise_terminal_cell_volume
 - g_l2_larger_pool_with_intact_flux
+- g_l12_fgfr_plus_cnp_combination
+- g_l2_cycling_the_progenitor_pool
 last_verified: '2026-08-07'
