@@ -1,0 +1,194 @@
+import yaml, os
+ROOT="/home/user/growth-plate/atlas"
+
+gaps=[
+dict(gap_id="g_l1arch_001", type="quantitative_gap", layer="L1",
+ question="In a human growth plate, what fraction of daily longitudinal elongation is contributed by (a) chondrocyte division, (b) matrix synthesis, and (c) hypertrophic cell volume increase, and does the partition differ between the distal femur and a slow plate such as the proximal radius?",
+ why_it_matters="The 9% / 32% / 59% partition that the whole field quotes comes from a single stereological study of four growth plates in 28-day-old Long-Evans rats. Every therapeutic argument that targets hypertrophy rather than proliferation (CNP analogues, FGFR3 inhibitors, GH) rests on the assumption that this partition transfers to humans. The rat proximal tibia elongates at ~350-400 um/day; the human distal femur at ~38 um/day. A ten-fold difference in velocity with a twenty-fold longer proliferative cell cycle makes the transfer non-obvious.",
+ what_is_known="Wilsman et al. 1996 measured, in 28-day rat, proximal tibia 9% division / 32% matrix / 59% hypertrophy, with hypertrophy falling to 44% and matrix rising to 49% in the slow proximal radius (wilsman1996). Hunziker & Schenk 1989 independently concluded in rat that matrix production per cell is essentially invariant across growth rates and that cell-shape modulation dominates (hunziker1989). Breur et al. 1991 showed final hypertrophic volume correlates with growth rate at r=0.98 in rat and r=0.83 in pig, with a species-specific slope (breur1991). Human histomorphometry exists (byers2000, thurston1985, kember1976) but none of it partitions elongation.",
+ what_is_missing="No human study has combined (i) a measured in vivo elongation rate for the same specimen, (ii) stereological chondrocyte production rate, and (iii) final hypertrophic cell volume — the three quantities needed to close the budget equation. Human physes cannot be fluorochrome-labelled in vivo for research.",
+ nearest_evidence="Rat (wilsman1996, hunziker1989, hunziker1987), pig (breur1991, thurston1985 places porcine kinetics between human and rodent), mouse (cooper2013).",
+ discriminating_experiment="Obtain human physeal specimens at the time of elective epiphysiodesis or limb-lengthening osteotomy from patients who have received a tetracycline or calcein double label for an unrelated clinical indication (or a research-consented single tetracycline label), giving a directly measured elongation rate for that plate. Apply the Wilsman/Hunziker stereological estimators (chondrocyte production rate from column height and cell height; final hypertrophic volume by the disector) to the same block. If the human partition matches the rat (hypertrophy ~59%), the rodent-derived therapeutic logic transfers. If matrix synthesis dominates (>50%, as in the slow rat proximal radius), then agents acting on hypertrophic volume should have proportionally smaller effects in humans than in mouse models — which would predict the observed shortfall between mouse and human responses to CNP analogues.",
+ tractability=3, search_log_ref="s_l1arch_001",
+ nearest_refs=["wilsman1996","hunziker1989","breur1991","byers2000"]),
+
+dict(gap_id="g_l1arch_002", type="species_gap", layer="L1",
+ question="What is the true cell cycle time of human proliferative-zone chondrocytes, and is the ~20-day figure inferred by Kember and Sissons correct?",
+ why_it_matters="Kember and Sissons calculated ~20 days for the human distal femur from column cell counts plus a radiographic growth rate; Wilsman et al. measured 30.9 h directly in the rat proximal tibia by repeated BrdU pulses. That is a ~16-fold difference. If real, it means the human growth plate is a slow, low-turnover tissue and rodent proliferation-targeted pharmacology and rodent toxicology windows do not scale.",
+ what_is_known="Human: 24 cells per proliferative column and a derived mean cycle time of ~20 days in distal femur (kember1976); labelling index and PZ cell numbers reported in vitro for human plates by thurston1985, which also places pig kinetics between human and rodent. Rat: total cycle 30.9 h (proximal tibia) to 76.3 h (proximal radius), with S 3.4-6.1 h, G2 3.0 h, M 0.5-0.6 h and nearly all variation in G1 (wilsman1996a).",
+ what_is_missing="A direct measurement in human tissue. The Kember figure is a derived quantity, not an observation: it assumes steady state, a fixed column length, and that every PZ cell cycles. The systematic review avijgan2026 shows the analogous assumption of resting-zone quiescence is itself unsafe.",
+ nearest_evidence="thurston1985 (human explants labelled in vitro with tritiated thymidine; no labelled cells found in 2 of 4 human subjects), kember1976 (derived), wilsman1996a (rat, direct).",
+ discriminating_experiment="Label surgically obtained human physeal cartilage explants (epiphysiodesis or hemiepiphysiodesis waste tissue) with EdU under near-physiological oxygen (2-5% O2) and matrix-preserving culture, then fix at a graded series of times (6 h to 14 d) and fit the percent-labelled-mitoses or cumulative-labelling curve. A cumulative labelling index that saturates within 2-3 days would falsify the 20-day estimate and indicate that the human plate simply has a smaller growth fraction; saturation only after >2 weeks would confirm a genuinely long human cycle.",
+ tractability=3, search_log_ref="s_l1arch_012",
+ nearest_refs=["kember1976","thurston1985","wilsman1996a"]),
+
+dict(gap_id="g_l1arch_003", type="search_established", layer="L1",
+ question="Do septoclasts — FABP5+/cathepsin-B-rich, mesenchyme-derived, non-osteoclastic cells that resorb the longitudinal cartilage septa — exist in the human growth plate?",
+ why_it_matters="Septoclasts, not osteoclasts, are the proposed executors of longitudinal septum removal at the chondro-osseous junction in rodents, and they require endothelial Dll4-Notch signalling. If they exist in humans they are a druggable node controlling the rate at which the plate is consumed; if the human junction uses osteoclasts/chondroclasts instead, then anti-resorptive drugs given to children would act on the growth plate through a completely different route than rodent data imply.",
+ what_is_known="Septoclasts were defined in rat as cathepsin B-rich cells at the chondro-osseous junction (lee1995); they are FABP5+, mesenchymal in origin, Dll4-dependent, disappear in adult mice and reappear in fracture callus (sivaraj2022); their origin has been traced to pericytes/perichondrium in mouse (bando2018, bando2021).",
+ what_is_missing="Not one primary study reports septoclasts, FABP5+ chondro-osseous border cells, or an equivalent population in human physeal tissue. Every primary observation in the literature is mouse, rat, or bovine.",
+ nearest_evidence="Rodent only (lee1995, sivaraj2022, bando2018, bando2021, yamamoto2022); the closest human tissue study of the chondro-osseous region (walzer2014) stained for CD34/CD31/RANK but not for any septoclast marker.",
+ discriminating_experiment="Immunostain human physeal specimens (polydactyly digits, epiphysiodesis waste, or paediatric autopsy rib) for FABP5, cathepsin B, PDGFRb and NG2 together with CD68/vATPase and endomucin. If mononuclear, spindle-shaped FABP5+/CD68- cells sit at the chondro-osseous border in contact with capillary buds, human septoclasts exist and rodent Dll4 pharmacology is relevant. If only multinucleated CD68+/vATPase+ cells are present at the septa, the human junction is osteoclast-driven and septoclast biology does not transfer.",
+ tractability=4, search_log_ref="s_l1arch_003",
+ nearest_refs=["lee1995","sivaraj2022","walzer2014"]),
+
+dict(gap_id="g_l1arch_004", type="contradiction", layer="L1",
+ question="Are chondrocyte columns actually required for longitudinal elongation, given that they are rare in the embryonic growth plate at the time elongation is fastest?",
+ why_it_matters="Column architecture is the canonical explanation for how hypertrophic volume increase is channelled into the longitudinal axis. If bones elongate fastest at a stage when fewer than one in five clonal doublets is correctly stacked, the causal role of columns — and the interpretation of every chondrodysplasia described as a 'column disorganisation' phenotype — needs revision.",
+ what_is_known="Rubin et al. 2024 analysed 1044 distal-femur and 805 proximal-tibia clonal doublets in E18.5 mouse by 3D Confetti imaging and found only 17.6% and 19.4% respectively were stacked at elevation angles of 60-90 degrees; most clones were ellipsoidal clusters oriented orthogonal to the growth axis (rubin2024). Postnatally (P40) complete rotations rose to ~36-40% within columns, and perfect (80-90 degree) rotations were still under 10%. In parallel, the classical literature (aszodi2003, romereim2014, greer2024, yuan2023) treats column formation as necessary, and mutants that fail to form columns are short.",
+ what_is_missing="A direct test of whether elongation rate depends on columnar order at fixed hypertrophic cell volume. Existing column mutants also perturb cell shape, matrix and proliferation, so shortening cannot be attributed to loss of stacking alone.",
+ nearest_evidence="rubin2024 (mouse, 3D clonal); romereim2014 and aszodi2003 (mouse, rotation mechanism); reno2025 (metatarsals and pisiform grow from a single plate, showing plate architecture is not stereotyped).",
+ discriminating_experiment="In an allelic series that graduates column disorder without changing chondrocyte volume (for example titrated chondrocyte-specific Itgb1 or Cdh2 alleles), measure by 3D imaging both the fraction of correctly stacked doublets and the final hypertrophic cell volume, and measure elongation by calcein double labelling. If elongation rate scales with hypertrophic volume and is insensitive to stacking fraction over a 20-60% range, columns are a lateral-confinement convenience rather than the elongation engine. If elongation falls with stacking fraction at matched cell volume, columns are causal.",
+ tractability=3, search_log_ref=None,
+ nearest_refs=["rubin2024","aszodi2003","romereim2014"]),
+
+dict(gap_id="g_l1arch_005", type="contradiction", layer="L1",
+ question="Is longitudinal bone growth genuinely saltatory — alternating true-zero-velocity stasis with discrete elongation bursts — or continuous with measurement noise, at the level of the growth plate itself?",
+ why_it_matters="Saltation implies a switch that can arrest and restart the entire chondrocyte differentiation cascade synchronously across all plates within a day. No such switch is known, and its existence would reframe growth-hormone pharmacodynamics, catch-up growth and the interpretation of any short-interval auxological endpoint (including knemometry endpoints used in inhaled-corticosteroid safety trials).",
+ what_is_known="Lampl et al. 1992 reported 0.5-2.5 cm saltations in infant length separated by 2-63 day stasis intervals, with 90-95% of days growth-free (lampl1992). Klein et al. 1994 measured rabbit proximal tibial elongation directly, with ~15-fold better precision than human anthropometry, and found a single Gaussian distribution of daily velocities — continuous, not bimodal (klein1994). Heinrichs et al. 1995 published a further critique (heinrichs1995). Johnson et al. 1996 showed by simulation that frequency-distribution shape cannot exclude saltation (johnson1996). Hermanussen 1998 reported chaotic mini growth spurts in rat rather than true stasis (hermanussen1998). McBrien et al. 2011 reported that canine proximal tibial growth follows saltation and stasis (mcbrien2011). Noonan et al. 2004 showed with implanted microtransducers that at least 90% of lamb tibial elongation happens during recumbency, giving a real, mechanically gated discontinuity on a diurnal timescale (noonan2004).",
+ what_is_missing="A measurement in the same species and with the same instrument that can distinguish (i) diurnal load-gated discontinuity, which is established, from (ii) multi-day stasis with a true zero, which is contested. The two camps have never measured the same preparation.",
+ nearest_evidence="klein1994 (rabbit, continuous), noonan2004 (lamb, load-gated diurnal), lampl1992 and mcbrien2011 (saltatory), hermanussen1998 (chaotic mini-spurts).",
+ discriminating_experiment="Implant the Noonan/Wilsman microtransducer across a lamb or rabbit proximal tibial physis and record continuously for 30 days while simultaneously (a) logging posture and (b) delivering weekly fluorochrome labels. Analyse velocity after regressing out posture. If posture-corrected velocity still contains multi-day intervals with velocity indistinguishable from zero and a bimodal distribution, saltation is real at the tissue level; if the posture-corrected residual is unimodal Gaussian, saltation is a compound of load gating and anthropometric measurement error.",
+ tractability=4, search_log_ref="s_l1arch_006",
+ nearest_refs=["lampl1992","klein1994","noonan2004","mcbrien2011"]),
+
+dict(gap_id="g_l1arch_006", type="search_established", layer="L1",
+ question="Has human physeal elongation ever been measured directly at sub-weekly resolution, rather than inferred from total limb or stature anthropometry?",
+ why_it_matters="Every claim about the temporal pattern of human growth — saltation, mini-spurts, nocturnal growth, acute drug effects in knemometry trials — rests on external measurements whose technical error exceeds the mean daily increment. Without a direct physeal measurement the whole temporal-pattern literature is unfalsifiable in humans.",
+ what_is_known="Direct implanted-marker or transducer measurement of physeal elongation has been done in lamb (noonan2004), rabbit (klein1994) and dog (mcbrien2011). In humans only surface anthropometry and knemometry exist. Radiographic marker methods (Pritchett's roentgenstereophotogrammetric analysis, pritchett1992) resolve months, not days.",
+ what_is_missing="No human study with implanted physeal markers or equivalent, at daily resolution. Implanting markers across a healthy child's physis is not ethically available; the only plausible route is opportunistic — children who already have transphyseal hardware or external fixators.",
+ nearest_evidence="pritchett1992 and pritchett1991 (human, 6-month radiographic intervals), knemometry literature (external, lower-leg length), klein1994 and noonan2004 (animal, direct).",
+ discriminating_experiment="In children already undergoing guided-growth or limb-lengthening with radiopaque implants spanning the physis, acquire low-dose biplanar radiographs at 48-hour intervals for 4 weeks and compute physeal separation by radiostereometric analysis (precision ~50 um). Compare the frequency distribution of interval velocities against the Gaussian and bimodal predictions. Expected under continuous growth: unimodal distribution centred on ~40 um/day for the distal femur; under saltation: a mode at zero plus a high-velocity mode.",
+ tractability=2, search_log_ref="s_l1arch_006",
+ nearest_refs=["pritchett1992","klein1994","noonan2004"]),
+
+dict(gap_id="g_l1arch_007", type="quantitative_gap", layer="L1",
+ question="What is the absolute oxygen tension, in mmHg, at each zone of the human growth plate?",
+ why_it_matters="The entire HIF-1alpha/VEGF axis in cartilage, the interpretation of chondrocyte metabolism, the design of ex vivo human physeal culture (routinely done at 21% O2), and the newly described chondrocyte haemoglobin body all depend on knowing how hypoxic the human plate actually is. Human physes are thicker than rodent ones, so diffusion distances — and therefore the gradient — are not transferable.",
+ what_is_known="Brighton and Heppenstall 1971 measured oxygen tension across the epiphyseal plate, metaphysis and diaphysis in rat and rabbit (brighton1971); this is the source of essentially every 'the growth plate is hypoxic' statement in the field. HIF-1alpha is required for survival of the plate interior in mouse (schipani2001) and VEGFA for chondrocyte survival (zelzer2004). Mouse chondrocytes form haemoglobin bodies with a left-shifted P50 of 27.6-27.9 mmHg versus 58.2 mmHg for red cells of the same animals (zhang2023).",
+ what_is_missing="No measurement in human tissue, and the Brighton values themselves are not retrievable from any indexed abstract (see access_queue). Modelling from diffusion distance requires human-specific plate height and consumption rate, neither of which is established.",
+ nearest_evidence="brighton1971 (rat, rabbit), zhang2023 (mouse, indirect via haemoglobin P50), schipani2001 and zelzer2004 (mouse, genetic).",
+ discriminating_experiment="Insert a fibre-optic or Clark-type microelectrode along the epiphysis-to-metaphysis axis of a freshly resected human physeal block (polydactyly digit or epiphysiodesis specimen) held at 37 C under a defined surface gas tension, and record the profile at 100 um steps. Alternatively, administer pimonidazole to a patient before an elective physeal procedure and quantify adduct staining by zone. If the resting/inner proliferative zone is below 10 mmHg, human physeal explants cultured at 21% O2 are hyperoxic by a factor of 15 and all such data need reinterpretation.",
+ tractability=3, search_log_ref="s_l1arch_007",
+ nearest_refs=["brighton1971","zhang2023","schipani2001"]),
+
+dict(gap_id="g_l1arch_008", type="search_established", layer="L1",
+ question="Do human hypertrophic chondrocytes enlarge by the same three-phase trajectory (true hypertrophy, then dry-mass-diluting swelling, then proportional growth at low density) described in mouse?",
+ why_it_matters="The three-phase model localises the growth-rate-determining step to phase 3, which is IGF-dependent. If human cells lack phase 3 or spend their volume budget differently, IGF-1 based therapies and the interpretation of IGF1/IGF1R mutations in short stature target a step that does not exist as described.",
+ what_is_known="In mouse, proximal tibial chondrocytes go from ~600 fl to ~14,000 fl in three phases: phase 1 ~600-2000 fl at constant density 0.183 pg/fl; phase 2 ~2000-8000 fl with density diluted to ~0.07 pg/fl (a ~60% fall confirmed tomographically); phase 3 >8000 fl to ~14,000 fl at the low density. The slow proximal radius stops at ~5000 fl and omits phase 3; jerboa metatarsal extends phase 3 to ~23,000 fl; Igf1-null cells stop at ~7000 fl (cooper2013).",
+ what_is_missing="No quantitative phase or interferometric measurement of dry mass density in human growth plate chondrocytes at any volume. Searches for human chondrocyte dry mass or cell-volume trajectories return nothing.",
+ nearest_evidence="cooper2013 (mouse, jerboa); human hypertrophic cell heights reported only as static histology (thurston1985).",
+ discriminating_experiment="Dissociate chondrocytes from freshly obtained human physeal cartilage (polydactyly or epiphysiodesis waste) and measure single-cell volume and dry mass by quantitative phase microscopy across the full size range. Plot dry mass density against volume. If a swelling phase with density falling to ~0.07-0.10 pg/fl is present, the mouse model transfers; a monotonic constant-density relationship would mean human chondrocytes achieve their final volume by true hypertrophy alone and that osmotic/aquaporin-directed strategies are misdirected in humans.",
+ tractability=3, search_log_ref="s_l1arch_008",
+ nearest_refs=["cooper2013","thurston1985"]),
+
+dict(gap_id="g_l1arch_009", type="quantitative_gap", layer="L1",
+ question="What is the final volume and height of the terminal hypertrophic chondrocyte in human growth plates, per anatomical site and per age?",
+ why_it_matters="Final hypertrophic volume is the single strongest correlate of elongation rate in every mammal in which it has been measured, and it is the parameter that CNP analogues and FGFR3 inhibitors are believed to act on. It has never been reported for a human plate with a stated site, age and elongation rate.",
+ what_is_known="Rat and pig: final hypertrophic volume correlates with growth rate at r=0.98 and r=0.83 respectively, with a species-specific slope (breur1991). Mouse: 14,000 fl in fast proximal tibia versus ~5000 fl in slow proximal radius (cooper2013). Bird plates break the mammalian relationship entirely (barreto1994). Human hypertrophic cell heights were measured by Thurston and Kember but the values are behind a paywall (thurston1985).",
+ what_is_missing="Human volumes obtained with unbiased stereology (the disector or nucleator) in well-fixed, non-decalcified tissue, paired with site and age. Ordinary decalcified paraffin histology shrinks hypertrophic lacunae unpredictably and cannot give a volume.",
+ nearest_evidence="breur1991, cooper2013 (rodent); thurston1985 and byers2000 (human, heights/zone dimensions only).",
+ discriminating_experiment="Apply Hunziker's high-pressure-freezing/ruthenium-hexammine fixation and the physical disector to human physeal blocks from at least three sites (distal femur, proximal tibia, distal radius) and two age bands, reporting mean final hypertrophic volume with CI. Test whether human values fall on the mammalian volume-versus-growth-rate regression when human site-specific elongation rates from pritchett1992 and pritchett1991 are used as the abscissa. A large negative residual would show that humans achieve their (slow) growth rates by a different mixture of parameters than rodents.",
+ tractability=3, search_log_ref=None,
+ nearest_refs=["breur1991","cooper2013","thurston1985"]),
+
+dict(gap_id="g_l1arch_010", type="known_unknown", layer="L1",
+ question="What local signal sets the site-specific hypertrophic volume set point that makes the distal femur elongate faster than the proximal femur in the same individual at the same time?",
+ why_it_matters="Differential growth is the reason limb proportions exist and the reason a systemic hormone produces non-uniform skeletal effects. Any systemic therapy for short stature is filtered through this local set point, which is why growth-promoting agents change proportions rather than scaling the skeleton uniformly.",
+ what_is_known="Eight independent chondrocytic variables differ between plates in the same rat, seven of which vary by site (wilsman1996). Cell cycle differences are almost entirely in G1 (wilsman1996a). Differential growth is not present at birth in rat but emerges postnatally (wilsman2008). In mouse the site difference maps onto whether phase 3 of hypertrophy is executed or truncated, and phase 3 is IGF-dependent (cooper2013). Positional Hox identity is the obvious upstream candidate but has not been connected quantitatively to the volume set point.",
+ what_is_missing="A causal chain from positional identity to a measurable change in the phase-3 duration or the volume set point. No experiment has transplanted or reprogrammed positional identity and then measured hypertrophic volume.",
+ nearest_evidence="wilsman1996, wilsman2008, cooper2013, reno2025 (metatarsal/pisiform plates show that positional information can even determine which end of a bone carries a plate).",
+ discriminating_experiment="Heterotopically graft a slow-growing plate (proximal radius) into the fast-growing site (proximal tibia) with its perichondrium intact and, separately, without it; after 10 days measure final hypertrophic volume by stereology and elongation by calcein labelling. If the graft keeps its donor volume set point, the set point is cell-autonomous positional memory; if it adopts the host value, it is set by the local niche, and the perichondrium-stripped arm identifies whether the groove of Ranvier/perichondrium carries the signal.",
+ tractability=3, search_log_ref=None,
+ nearest_refs=["wilsman1996","cooper2013","wilsman2008"]),
+
+dict(gap_id="g_l1arch_011", type="quantitative_gap", layer="L1",
+ question="How much longitudinal growth, in mm per year, does each individual vertebral growth plate contribute in humans, and how does that vary along the T1-S1 segment and with age?",
+ why_it_matters="The human vertebral column carries more than 130 growth plates and contributes roughly a third of standing height, yet the entire growth-modulation field (vertebral body tethering, growing rods, scoliosis natural history) works from segment-level radiographic measurements rather than per-plate growth rates. Without per-plate rates it is impossible to predict how a tether at one level redistributes growth.",
+ what_is_known="Human spinal growth is non-linear with three postnatal phases and the column contains more than 130 growth plates (dimeglio2020). Vertebral endplate growth modulation follows a biphasic response to tether tension in porcine models. Appendicular per-plate contributions are well established (pritchett1992, pritchett1991) but no equivalent exists for the spine.",
+ what_is_missing="Per-plate (superior versus inferior endplate, per level) growth rates in humans. Segment lengths measured radiographically conflate disc height change with physeal growth.",
+ nearest_evidence="dimeglio2020 (human, segment level); porcine vertebral tethering studies (site-level, not per-plate).",
+ discriminating_experiment="Use serial low-dose biplanar (EOS) imaging in a cohort of children imaged for non-spinal indications to measure ossified vertebral body height per level at 6-month intervals from age 5 to maturity, separating disc from bone by MRI in a subset. Report mm/yr per level and per endplate. Prediction under the classical model: cranial thoracic levels grow fastest per level in early childhood, with a lumbar-dominant pattern at puberty; a flat profile would falsify the assumption underlying level-selective tethering.",
+ tractability=4, search_log_ref=None,
+ nearest_refs=["dimeglio2020","pritchett1992"]),
+
+dict(gap_id="g_l1arch_012", type="search_established", layer="L1",
+ question="Has the cell-cycle structure (G1, S, G2, M durations and growth fraction) of human proliferative-zone chondrocytes ever been measured in vivo or in freshly explanted human tissue?",
+ why_it_matters="A drug that arrests chondrocytes in G1 would be far more dangerous in a tissue whose G1 occupies 90% of a 30-hour cycle than in one whose cells cycle every 20 days. The paediatric safety inference from rodent proliferation data depends on knowing the human cycle structure.",
+ what_is_known="Rat: full cycle decomposition by repeated BrdU pulses (wilsman1996a, farnum1993). Human: only a derived cycle time from column cell counts (kember1976) and an in vitro tritiated-thymidine labelling index in four subjects, two of whom yielded no labelled cells at all (thurston1985).",
+ what_is_missing="No human study reports G1, S, G2 or M durations, and none reports a growth fraction for the human proliferative zone. A PubMed search combining cell-cycle/labelling terms with growth plate and the humans MeSH filter returns no primary human cell-cycle measurement.",
+ nearest_evidence="thurston1985 (human, labelling index only, abstract-level), kember1976 (human, derived), wilsman1996a (rat, complete).",
+ discriminating_experiment="Perform double-labelling (EdU then BrdU at a defined interval) on freshly harvested human physeal explants maintained under matrix-preserving, 2-5% O2 conditions, and estimate S-phase duration from the relative-movement method and total cycle time from cumulative labelling. Report the growth fraction separately by zone. A short S with a very small growth fraction would indicate the 20-day 'cycle time' is really a long average dwell time in a mostly non-cycling pool, which is a different biology from a slow cycle.",
+ tractability=3, search_log_ref="s_l1arch_012",
+ nearest_refs=["thurston1985","kember1976","wilsman1996a"]),
+
+dict(gap_id="g_l1arch_013", type="known_unknown", layer="L1",
+ question="How much of the latitudinal (circumferential) enlargement of a human growth plate is contributed by the groove of Ranvier, and does the groove also supply chondrocytes to the columnar population?",
+ why_it_matters="If the groove supplies the plate with progenitors, it is an alternative stem source to the PTHrP+ resting zone and a target for restoring growth after physeal injury; iatrogenic damage to the groove during surgery is a recognised cause of angular deformity, but the quantitative contribution has never been established.",
+ what_is_known="The groove is a wedge of densely cellular tissue continuous with the perichondrium (shapiro1977, rabbit) and is present in developing human calcaneus and talus (cheng1995). It harbours CD90+/CD105+ mesenchymal progenitors and mature alpha-SMA-covered vessels in human digits (walzer2014). Its disorganisation causes hyperostosis in piglets, and its damage is linked to angular deformity and osteochondroma (langenskild1998). Postnatal mouse plates show clusters restricted to the outer edges, consistent with a peripherally driven expansion mechanism (rubin2024).",
+ what_is_missing="No lineage tracing from a groove-specific marker into the columnar chondrocyte population, and no quantitative estimate of the fraction of plate diameter increase attributable to the groove versus interstitial appositional growth. In humans nothing beyond descriptive histology exists.",
+ nearest_evidence="shapiro1977 (rabbit), cheng1995 and walzer2014 (human, descriptive), rubin2024 (mouse, peripheral clusters).",
+ discriminating_experiment="Identify a groove-of-Ranvier-restricted driver in mouse (candidates from Gli1+ or periosteal PDGFRa+ perichondrial populations) and perform inducible lineage tracing at P7, scoring at P28 (i) the fraction of labelled cells inside columns versus at the plate margin and (ii) plate diameter. In parallel, microsurgically excise the groove unilaterally and measure the change in plate diameter growth rate versus elongation rate. If diameter growth falls while elongation is preserved, the groove is a dedicated latitudinal-growth organ and not a column progenitor source.",
+ tractability=3, search_log_ref=None,
+ nearest_refs=["shapiro1977","walzer2014","cheng1995"]),
+
+dict(gap_id="g_l1arch_014", type="method_blocked", layer="L1",
+ question="Can chondrocyte kinetics be measured non-invasively in a living human growth plate?",
+ why_it_matters="Every human number in this layer is either post-mortem, surgical waste, or derived from external anthropometry. Without an in vivo readout there is no way to relate a drug's effect on stature to its effect on the tissue, and no way to detect a plate-level response before months of height data accumulate.",
+ what_is_known="Human physeal architecture can be resolved by MRI and the plate can be seen to close, and radiographic marker methods give month-scale elongation (pritchett1992). Growth plate height and width correlate with tibial growth rate in both mouse and human radiographs (wilson2021). Nothing images cell turnover.",
+ what_is_missing="An in vivo readout of proliferation, hypertrophic volume, or matrix turnover in human physeal cartilage. Sodium and gagCEST MRI measure matrix proteoglycan but have not been validated against physeal kinetics; no PET tracer targets chondrocyte proliferation with sufficient resolution against adjacent bone uptake.",
+ nearest_evidence="wilson2021 (human radiographic morphometry), MRI physeal imaging literature, circulating markers such as collagen X neoepitope and miRNA panels proposed but not anchored to a plate-level measurement.",
+ discriminating_experiment="Validate a candidate readout against ground truth in a large-animal model: in growing lambs with implanted microtransducers measuring elongation continuously, acquire serial ultra-high-field sodium/gagCEST MRI and matched serum collagen X neoepitope, then terminally measure hypertrophic cell volume stereologically. A readout that tracks measured elongation with r>0.8 across a manipulated range of growth rates (for example dexamethasone-suppressed versus control) is a candidate for human translation; anything weaker means human plate-level pharmacodynamics remain inaccessible.",
+ tractability=2, search_log_ref=None,
+ nearest_refs=["pritchett1992","wilson2021"]),
+]
+
+for g in gaps:
+    if g.get("search_log_ref") is None:
+        g.pop("search_log_ref")
+
+searches=[
+dict(gap_id="s_l1arch_001", database="PubMed",
+ exact_query_string='(growth plate[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND humans[MeSH Terms] AND (stereolog*[tiab] OR morphometr*[tiab] OR histomorphometr*[tiab]) AND (hypertroph*[tiab]) AND (elongation[tiab] OR "longitudinal growth"[tiab] OR "growth rate"[tiab])',
+ filters="no date limit, retmax=60, esearch db=pubmed", date_run="2026-08-05",
+ hit_count=4, screened_count=4,
+ reason_none_qualified="Four hits. PMID 11033444 (Byers 2000) is human histomorphometry of rib growth plate but reports zone heights only, not a partition of elongation. PMID 31997656 correlates growth plate morphometry with tibial growth but the human arm is radiographic (plate height/width) with no cellular stereology. PMIDs 15647824 and 10487224 are rodent. No human study partitions elongation among division, matrix synthesis and hypertrophy."),
+
+dict(gap_id="s_l1arch_003", database="Europe PMC",
+ exact_query_string='septoclast*',
+ filters="resultType=core, pageSize=60, no date limit", date_run="2026-08-05",
+ hit_count=54, screened_count=54,
+ reason_none_qualified="All 54 records screened by title and, where ambiguous, abstract. Every primary observation of septoclasts is in mouse (35091558, 29464321, 33398436, 28500502, 35195769, 42324641, 41319243, 40387924, 19893052), rat (7730591, 35537657, 32816022, 24879443) or bovine calf costochondral junction (33884197). The remainder are reviews, conference abstract collections, or unrelated osteoclast/vascular papers. Not one reports septoclasts, FABP5+ chondro-osseous border cells, or an equivalent population in human growth plate tissue. A narrower run of 'septoclast* AND (human OR \"Homo sapiens\")' returned 38 records, all of which were rodent-tissue studies or reviews that merely mention human relevance."),
+
+dict(gap_id="s_l1arch_006", database="PubMed",
+ exact_query_string='(("growth plate"[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND (elongation[tiab] OR "growth velocity"[tiab] OR "growth rate"[tiab])) AND (implanted[tiab] OR marker[tiab] OR transducer[tiab] OR radiostereometr*[tiab] OR tantalum[tiab]) AND humans[MeSH Terms] AND (daily[tiab] OR "short-term"[tiab] OR continuous[tiab])',
+ filters="no date limit, retmax=60, esearch db=pubmed", date_run="2026-08-05",
+ hit_count=2, screened_count=2,
+ reason_none_qualified="Two hits, neither relevant: PMID 40394920 is a serum miRNA panel as a surrogate marker of GH response, and PMID 39674288 is a CDK8 inhibitor study in achondroplasia model mice. No human study measures physeal elongation directly with implanted markers or transducers at daily resolution. A companion PubMed query '(saltation[tiab] OR saltatory[tiab] OR stasis[tiab]) AND (growth plate[tiab] OR physis[tiab] OR \"bone elongation\"[tiab] OR \"longitudinal bone growth\"[tiab])' returned 7 records, of which the only direct high-frequency physeal measurements are in rabbit (8119172) and dog (21470252)."),
+
+dict(gap_id="s_l1arch_007", database="PubMed",
+ exact_query_string='("oxygen tension"[tiab] OR pO2[tiab] OR "partial pressure of oxygen"[tiab]) AND (growth plate[tiab] OR "epiphyseal plate"[tiab] OR physis[tiab]) AND humans[MeSH Terms]',
+ filters="no date limit, retmax=60, esearch db=pubmed", date_run="2026-08-05",
+ hit_count=4, screened_count=4,
+ reason_none_qualified="Four hits. PMID 41253283 is ToF-SIMS mineral/organic mapping of human growth plate with no oxygen measurement; PMID 19419319 is an in vitro chondrocyte study of ANK expression under imposed oxygen tensions, not a tissue measurement; PMID 16425255 is a review; PMID 711109 is a 1978 non-English clinical paper on fracture effects. No study reports measured oxygen tension in human growth plate tissue. The only zonal measurements in any species remain Brighton and Heppenstall 1971 in rat and rabbit, whose numeric values are not retrievable from any indexed abstract (queued in access_queue)."),
+
+dict(gap_id="s_l1arch_008", database="PubMed",
+ exact_query_string='(chondrocyte[tiab] AND (swelling[tiab] OR "dry mass"[tiab] OR "volume increase"[tiab] OR hypertrophy[tiab])) AND (human[tiab] OR humans[MeSH Terms]) AND ("growth plate"[tiab] OR physis[tiab]) AND (quantitative phase[tiab] OR interferometr*[tiab] OR "cell volume"[tiab] OR density[tiab])',
+ filters="no date limit, retmax=60, esearch db=pubmed", date_run="2026-08-05",
+ hit_count=6, screened_count=6,
+ reason_none_qualified="Six hits: a mathematical model of osteochondral regeneration (38908475), an HDAC4/MMP-13 mouse study (27320207), an in vitro chondrocyte dedifferentiation study (23758619), a BMP-2/Wnt signalling study (22513174), a chondrosarcoma type X collagen study (22116208) and a review of steroid effects (19940493). None measures single-cell volume or dry mass density in human growth plate chondrocytes. The three-phase enlargement trajectory remains described only in mouse and jerboa (cooper2013)."),
+
+dict(gap_id="s_l1arch_012", database="PubMed",
+ exact_query_string='("cell cycle"[tiab] OR "cycle time"[tiab] OR "labelling index"[tiab] OR "labeling index"[tiab] OR bromodeoxyuridine[tiab] OR Ki-67[tiab]) AND ("growth plate"[tiab] OR physis[tiab] OR "epiphyseal plate"[tiab]) AND humans[MeSH Terms] AND (proliferative zone[tiab] OR chondrocyte[tiab])',
+ filters="no date limit, retmax=60, esearch db=pubmed", date_run="2026-08-05",
+ hit_count=19, screened_count=19,
+ reason_none_qualified="All 19 screened. Every record is either a mouse/rat genetic or pharmacological study (32759468, 24551245, 17652426, 16869727, 20470884, 10098598, 2207391), an in vitro human chondrocyte differentiation study without cell-cycle-phase timing (21538935, 19898608, 31601652, 19351720, 11739785), or a review (34137454, 33064251, 10799356, 10372550, 7634645, 17098451, 16144844). None reports G1, S, G2 or M duration, cumulative labelling index kinetics, or a growth fraction for human proliferative-zone chondrocytes. The only human numbers remain a derived cycle time (kember1976) and an in vitro labelling index in four subjects (thurston1985)."),
+]
+
+os.makedirs(os.path.join(ROOT,"gaps","shards"),exist_ok=True)
+with open(os.path.join(ROOT,"gaps","shards","l1arch.gaps.yaml"),"w") as f:
+    yaml.safe_dump({"gaps":gaps},f,sort_keys=False,default_flow_style=False,width=100,allow_unicode=True)
+with open(os.path.join(ROOT,"gaps","shards","l1arch.search.yaml"),"w") as f:
+    yaml.safe_dump({"searches":searches},f,sort_keys=False,default_flow_style=False,width=100,allow_unicode=True)
+print("gaps",len(gaps),"searches",len(searches))
+print("hard types:",sum(1 for g in gaps if g["type"] in ("search_established","quantitative_gap")))

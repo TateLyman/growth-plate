@@ -113,7 +113,13 @@ def add_one(bib, pmid=None, doi=None, tier=None, rtype=None, finding=None,
     # `verify_refs.py` exists to catch downstream. Catch it at the door instead.
     if force_id:
         want = re.match(r"([a-z]+)(\d{4})", force_id.lower())
-        got_surname = first_author.split()[0].lower() if first_author else ""
+        # CORR-056 flagged this and CORR-076 fixed it: hyphenated and apostrophed
+        # surnames (Komla-Ebri, O'Brien, Caetano-Silva) can never match a pure-alpha
+        # ref_id, so the guard refused every possible id and forced the UNGUARDED
+        # path for exactly the authors whose names are easiest to mistype. Strip
+        # non-alpha characters before comparing.
+        raw_surname = first_author.split()[0].lower() if first_author else ""
+        got_surname = re.sub(r"[^a-z]", "", raw_surname)
         if want and (want.group(1) != got_surname or want.group(2) != year):
             return None, (f"REFUSED (--ref-id does not match the resolved record): you "
                           f"asked for '{force_id}' but {pmid or doi} resolves to "

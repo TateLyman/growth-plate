@@ -3676,3 +3676,58 @@ severe genu valgum twice, coxa valga once. The paper records that two subjects w
 after developing severe genu valgum and both subsequently slipped. That is the natural experiment defining
 what the stopping trigger should have been, and it converts an unquantified catastrophic risk into a
 monitorable one. Logged as `g_l12_compounding_scfe_hazard_in_the_stack`.
+
+## CORR-075 — the FGFR arm does nothing in a normal animal, and the dose-response I was about to extrapolate is not a curve
+
+Two documents arrived and both cut against the direction round 83 was heading.
+
+**1. The per-cohort PROPEL 2 data refutes the "still climbing" inference.** Round 83 read "effect in cohort 5
+only" and concluded the dose-response had no plateau, so more FGFR coverage should buy more growth — and
+used that to argue erdafitinib at 2.1× IC50 sits further up a climbing curve than infigratinib at 0.97×.
+The EU trial registry publishes the actual per-cohort numbers (change from baseline in AHV, month 18):
+
+| dose mg/kg | 0.016 | 0.032 | 0.064 | 0.128 | 0.25 |
+|---|---|---|---|---|---|
+| cm/yr | −1.01 | +0.85 | +0.95 | **−0.26** | +2.50 |
+
+**It is not monotonic.** A dose four times the lowest active one produced nothing, and doubling that again
+produced the largest effect. With n = 8–19 per cohort and SDs of 0.9–3.8, the cohorts are not separable, so
+the honest reading is that this dose-response is **uninformative**, not that it is biphasic. Either way it
+cannot be extrapolated upward and the round-83 argument has no support.
+
+**2. And the finding that reframes the whole arm.** `komlaebri2016` is infigratinib's founding preclinical
+paper (NVP-BGJ398 is the same molecule). At 2 mg/kg subcutaneously it gave, in Fgfr3^Y367C/+ achondroplasia
+mice, **tail +26.5%, femur +20.9%, tibia +32.6%, L4–L6 +12.1%** over vehicle — explicitly 2–3× what BMN111
+(vosoritide) achieved in the same model. And then, in one parenthetical:
+
+> *"NVP-BGJ398 (2 mg/kg) treatment of WT mice did not affect skeletal growth (data not shown)."*
+
+**A dose that lengthens an FGFR3-mutant mouse by a fifth to a third does nothing to a normal one.**
+
+The reporting is the weakest possible — "data not shown", one dose, one strain, neonatal animals, a 10–15
+day window, no numbers, no power, and a mild incentive to report a null that strengthens the paper's
+specificity claim. It must be quoted with all of that attached. But **it is the only wild-type
+FGFR-inhibitor skeletal data in existence**, and it says the FGFR arm *corrects a pathological excess*
+rather than *stimulates a normal plate*. That is why dose escalation was the wrong question: the issue is
+not how far up the curve you climb, it is whether the curve exists in a plate with normal FGFR3.
+
+**What this does to the ranking for a pathway-intact subject.** Three agents, three tests of the only
+question that matters here:
+
+- **cilostazol** — +1.82% naso-anal length in **wild-type** juvenile mice, P<0.05 (`kawabe2025`)
+- **vosoritide** — +3.56 cm/yr in humans **without** achondroplasia (`dauber2026`), though all had MAPK
+  excess or an NPR2 defect
+- **FGFR inhibitor** — **no effect in wild-type mice** (`komlaebri2016`)
+
+The arm the stack was built around is the one with a null in the only relevant background, and the two
+agents I have spent rounds treating as optional extras are the two with positive data outside FGFR3
+pathology. This is the largest single reversal in the project and it was sitting in a 2016 parenthetical.
+
+## CORR-076 — fixed the ref_id guard hole instead of working around it for the second time
+
+`addref.py` refused `komlaebri2016` because its guard compared the ref_id's alpha prefix against
+`first_author.split()[0].lower()` — "komla-ebri" — which no pure-alpha ref_id can match. CORR-056 logged
+this same hole for *Caetano-Silva* and recorded that hyphenated first authors "force the unguarded path",
+which is precisely backwards: the guard was disabled for exactly the names most likely to be mistyped. The
+comparison now strips non-alpha characters before matching. Fixed rather than noted, because noting it once
+already failed to prevent the recurrence.
