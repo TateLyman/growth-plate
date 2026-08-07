@@ -2511,3 +2511,49 @@ liability acting through FGF23 and phosphate. It is also a **local** action on t
 **Rule.** Before building a therapeutic argument on a pathway, check that the pathway's ligand and
 required co-receptors are expressed in the tissue being targeted. The atlas has a tool for this
 (`gp_expression.py`) and it went unused for two rounds while I argued from mechanism.
+
+## CORR-042 — "the FGFR4 case collapses" was too strong, and I nearly published a contamination artefact as a finding
+
+CORR-041, written one round ago, concluded that the FGFR4 argument **"largely collapses"** because
+β-klotho and FGF19 are absent from human growth plate. Two things were wrong with how that was done.
+
+**1. I did not gate on chondrocytes.** A growth-plate needle biopsy contains perichondrium, periosteum
+and marrow. `delezoide1998` — held in this atlas — reports that in human embryo-fetal long bones
+**FGFR1 and FGFR2 are restricted to perichondrium and periosteum**, with only FGFR3 in chondrocytes. If
+that held here, my headline "FGFR1 is the most abundant FGFR in human growth plate" was **counting
+contaminating non-cartilage cells.**
+
+Gating on COL2A1⁺ACAN⁺ (chondrocyte fractions 41.6 / 25.0 / 99.5 / 23.0 %):
+
+| gene | chondrocyte-gated | non-chondrocyte |
+|---|---|---|
+| **FGFR1** | 49.6 / 29.5 / 36.5 / 67.1 % | 32.5 / 21.1 / 29.6 / 36.3 % |
+| **FGFR4** | 11.5 / 12.7 / 24.9 / 25.0 % | **0.29 / 0.71 / 0.00 / 0.34 %** |
+| KLB | 1.00 / 2.50 / 0.20 / 0.00 % | 0.61 / 2.14 / 0.00 / 0.34 % |
+
+**The FGFR1 finding survives** — higher inside the gate than outside, in all four donors. But I ran the
+check only after `delezoide1998` surfaced, and I had already reported the ungated number as a finding.
+**The gate should have been the first thing, not the second.**
+
+**2. And the gate reversed part of my conclusion.** **FGFR4 is essentially chondrocyte-exclusive** —
+35- to 80-fold enriched inside the gate. That makes it a *more* specifically cartilage receptor than
+FGFR1 or FGFR3. So: **the FGFR4 target is real and better localised than I said; the FGF19/KLB mechanism
+I built on it is still dead.** "The case collapses" conflated a target with a mechanism. Only the
+mechanism collapsed.
+
+**3. A species divergence the atlas should carry rather than resolve.** `wu2012` reports FGF21, FGFR1
+**and β-klotho** expressed in *mouse* growth plate chondrocytes, where FGF21 blocks GH action directly at
+the plate. My measurement says KLB is absent from *human* growth plate chondrocytes even when gated.
+**The FGF21 growth-inhibition mechanism may be mouse-specific**, which would mean blocking it in humans
+buys nothing — and that bears directly on whether FGFR1 inhibition helps.
+
+**4. And `jacob2006` had the answer to my own open question, unextracted.** Last round I opened a gap
+asking the sign of local FGFR1 inhibition and proposed that if FGFR1 restrains terminal differentiation,
+blocking it would be an h_term action. The atlas has held `jacob2006` — *"Fgfr1 deletion in the
+osteo-chondrogenic lineage **delays hypertrophic chondrocyte maturation**"* — as `primary_abstract_only`
+the whole time. **I asked the user for an experiment that a reference in the bibliography had already
+answered in direction.** That is CORR-034 again, third occurrence.
+
+**The compound rule.** Before reporting any per-cell-type expression number from a tissue biopsy, gate on
+the cell type. And before opening a gap, grep the bibliography's own one-line findings for the question —
+not just the ref_ids.

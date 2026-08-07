@@ -51,6 +51,10 @@ PANELS = {
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--h5dir", required=True)
+    ap.add_argument("--ungated", action="store_true",
+                    help="ALSO show all-cell values. The chondrocyte gate is the default because "
+                         "a growth-plate needle biopsy contains perichondrium, periosteum and marrow, "
+                         "and an ungated number was once reported here as a finding (CORR-042).")
     a = ap.parse_args()
     import h5py, numpy as np, scipy.sparse as sp
 
@@ -68,15 +72,26 @@ def main():
             M = sp.csc_matrix((g["data"][:], g["indices"][:], g["indptr"][:]),
                               shape=shape).tocsr()
             names = np.array([x.decode() for x in g["features/name"][:]])
-        ncells[dn] = int(shape[1])
+        def _row(gn):
+            i = np.where(names == gn)[0]
+            return None if len(i) == 0 else M[i[0]].toarray().ravel()
+
+        c2, ac = _row("COL2A1"), _row("ACAN")
+        gate = (c2 > 0) & (ac > 0)          # chondrocyte gate - see CORR-042
+        ncells[dn] = (int(shape[1]), int(gate.sum()))
         for gene in genes:
-            idx = np.where(names == gene)[0]
-            res[gene][dn] = (None if len(idx) == 0 else
-                             100.0 * np.count_nonzero(M[idx[0]].toarray().ravel()) / shape[1])
+            r = _row(gene)
+            if r is None:
+                res[gene][dn] = None
+                continue
+            sel = r if a.ungated else r[gate]
+            n = len(sel) if len(sel) else 1
+            res[gene][dn] = 100.0 * np.count_nonzero(sel) / n
 
     dns = ["donor1", "donor2", "donor3", "donor4"]
     print("GSE288028 - four fresh human growth plate biopsies (epiphysiodesis for TALL stature)")
-    print("cells per donor:", {d: ncells[d] for d in dns})
+    print("MODE:", "ALL CELLS (ungated)" if a.ungated else "CHONDROCYTE-GATED (COL2A1>0 AND ACAN>0)")
+    print("cells per donor (total, chondrocyte):", {d: ncells[d] for d in dns})
     print(f"detection threshold: >= {DETECT_PCT}% of cells\n")
     for title, panel in PANELS.items():
         print(title)
@@ -88,6 +103,13 @@ def main():
             det = sum(1 for d in dns if r[d] is not None and r[d] >= DETECT_PCT)
             print(f"  {gene:<9}{cells}   {det}/4")
         print()
+    print("THE GATE IS THE DEFAULT AND THAT IS DELIBERATE (CORR-042): an ungated FGFR1 number was")
+    print("once reported from this dataset as a finding before anyone checked whether it was")
+    print("perichondrial contamination. It was not - FGFR1 is higher inside the gate - but the")
+    print("check came second. A COL2A1/ACAN gate also EXCLUDES resting-zone cells, which have the")
+    print("lowest mRNA content of any zone, so gated fractions are biased to proliferative and")
+    print("hypertrophic cells.")
+    print()
     print("READ THIS BEFORE USING THE TABLE: donor3 is by far the most chondrocyte-pure and")
     print("hypertrophic-rich sample (COL2A1 100%, COL10A1 94%), so its values are not")
     print("comparable to the others - a gene high only in donor3 is plausibly hypertrophic-zone")
