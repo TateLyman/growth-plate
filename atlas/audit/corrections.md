@@ -2469,3 +2469,45 @@ a yield lever from a velocity lever, and named the infigratinib phase 3 as the d
 arrived: **PROPEL3 reports no accelerated bone-age progression** — and vosoritide reports the same.
 **Both candidates pass, so the test does not discriminate.** It is a necessary condition, not a
 separator, and presenting it as decisive across four rounds overstated it.
+
+## CORR-041 — the FGFR4 argument I made one round ago does not survive its own first check
+
+CORR-040 recorded that I had wrongly called erdafitinib's FGFR4 potency a liability, and replaced it
+with the opposite claim: that **FGFR4 inhibition should be pro-growth**, because `fgf19cart2025` shows
+FGF19 signalling through FGFR4 with β-klotho restraining cartilage growth. I flagged the check that
+could kill it — **is β-klotho even present in growth plate cartilage?** — and asked the user for it.
+
+I then ran it myself against data the atlas already held. GSE288028, four fresh human growth plate
+biopsies, per cent of cells with detected transcript:
+
+| gene | donor1 | donor2 | donor3 | donor4 | detected ≥1% |
+|---|---|---|---|---|---|
+| **KLB** (β-klotho) | 0.77 | 2.23 | 0.20 | 0.26 | **1/4** |
+| **FGF19** (ligand) | 0.00 | 0.01 | 0.00 | 0.00 | **0/4** |
+| FGFR4 | 4.97 | 3.71 | 24.78 | 6.01 | 4/4 |
+
+**The ligand is absent and the obligate co-receptor is essentially absent.** FGF19 is an endocrine FGF
+made in the ileum, so the endocrine route is closed from both ends — circulating FGF19 cannot signal
+without KLB in the target tissue. **The mechanism I imported is not operating in a human growth plate,
+and the therapeutic inference built on it loses its stated basis.**
+
+**The pattern across CORR-040 and CORR-041 is the same defect twice, in opposite directions.** In
+CORR-040 I asserted FGFR4 was irrelevant to cartilage without searching. In CORR-041 I asserted FGFR4
+was a target without checking whether its pathway is expressed there. **Both were reasoning about a
+tissue from a pathway's general biology instead of measuring the tissue** — and in both cases the
+measurement was one command away, against data already on disk.
+
+**What survives.** FGFR4 is expressed in all four donors and reaches 24.78 % in the most
+hypertrophic-rich sample, so it may signal through paracrine FGFs, which do not need KLB. That is a
+weaker and different claim than the one I made, and no FGFR4 loss-of-function skeletal phenotype could
+be located to settle it.
+
+**And the same check produced something I had assumed away.** **FGFR1 is the most widely detected FGFR
+in human growth plate** (23–43 % of cells, 4/4), above FGFR3 in three of four donors. Every argument
+this atlas has made for or against a pan-FGFR agent has treated FGFR1 blockade as a purely *systemic*
+liability acting through FGF23 and phosphate. It is also a **local** action on the target tissue, and
+**the atlas holds no direction for it.** That is a gap, not a caveat.
+
+**Rule.** Before building a therapeutic argument on a pathway, check that the pathway's ligand and
+required co-receptors are expressed in the tissue being targeted. The atlas has a tool for this
+(`gp_expression.py`) and it went unused for two rounds while I argued from mechanism.
