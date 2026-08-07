@@ -2593,3 +2593,40 @@ the outcome evidence did not move once.** A run of corrections that all point on
 where the user holds a strong prior in that direction, is a signal to audit — not to extrapolate. That
 audit is `erdafitinib_versus_the_alternatives_decision`, and its conclusion is that the evidence does not
 currently support the choice the mechanism keeps arguing for.
+
+## CORR-044 — an enlarged hypertrophic zone is not more growth, and I read one as the other
+
+`jacob2006` reports that Fgfr1 deletion **delays hypertrophic chondrocyte maturation**. Across rounds 38
+and 39 I read that as an **h_term action and therefore pro-growth**, and built on it: it became the third
+pro-growth mechanism for erdafitinib and the reason its FGFR1 potency might be a feature.
+
+`karolak2015` — a **chondrocyte-restricted** Fgfr1 deletion, which is the experiment I twice said did not
+exist — reports the same enlarged hypertrophic zone **and measures the bone:**
+
+> Fgfr1<sup>Col2cKO</sup> mice had **reduced stature (by P4), body weight (by P9) and tibial length
+> (P18)** compared with WT littermates, **despite the increased size of their hypertrophic zone**
+
+**The zone got bigger and the bone got shorter.**
+
+**The error is a units confusion I should not have made.** Growth rate is *cells produced per unit time*
+× *terminal cell height*. **Zone height is a standing stock** — it rises when clearance slows and cells
+accumulate. A zone can thicken while elongation falls. This atlas had already recorded the caveat —
+"hypertrophy is time-boxed, so if bigger cells take proportionally longer to make and clear then velocity
+does not rise with volume" — as a limitation on the h_term node, and then failed to apply it to the very
+next result.
+
+**It is the same class of error as CORR-035's yield construction**, where I noted that a ratio of two
+standing stocks is not a flux and then had to avoid exactly that mistake. Here I did not avoid it.
+
+**What survives, and it is sharper than what was lost.** `shuhaibar2021` shows the productive direction
+in the same round: LB-100 + BMN-111 increased **hypertrophic CELL AREA by 32 %** over BMN-111 alone *and*
+increased bone length 16 %. **Cell size up with length up; zone size up with length down.** The
+distinction between *cell* enlargement and *zone* enlargement is now load-bearing, and the h_term thesis
+should only ever have been about the first.
+
+**And the correction settles the erdafitinib question in the opposite direction to the last four.**
+Local FGFR1 blockade **shortens bones**. Erdafitinib engages FGFR1 most potently of all (1.20 nM, below
+FGFR3 at 3.00), so its net effect is the FGFR3 benefit **minus** an FGFR1 cost that a selective agent
+does not pay. After four consecutive corrections in erdafitinib's favour, this one goes the other way —
+and it is the only one of the five resting on a genetic experiment with a length endpoint rather than on
+inference from expression or potency.
