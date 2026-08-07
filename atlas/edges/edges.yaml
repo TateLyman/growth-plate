@@ -19261,3 +19261,53 @@ edges:
     The fusion prolonged AKT signalling relative to IGF-1 and the prolongation was abolished by matrilin-3 knockout, and at
     equimolar dose IGF-1 lowered blood glucose while the fusion did not. Therapeutic index moved because distribution moved.
   traversal_usable: true
+- edge_id: e01254
+  source: arm3_pool_ceiling_is_imposed_not_intrinsic
+  target: resting_zone_niche
+  relation: required_for
+  context: rabbit distal femur, proximal tibia and distal tibia across late fetal, 5, 9 and 17 weeks, castrated at 6 weeks
+    to remove gonadal steroid confounding
+  evidence_tier: T1
+  refs:
+  - schrier2006
+  - nilsson2005
+  - nwosu2005
+  confidence: C
+  notes: 'Resting-zone labelling index falls from 95.6 per cent late fetal to 7.6 per cent at 17 weeks and cell number per mm
+    falls with age, so the pool is measurably depleted. But donor age does not affect population doublings in culture and
+    telomeres do not shorten, so the ceiling is imposed by the tissue rather than carried in the cell. Sign-exempt relation:
+    this is a constraint on the niche, not a directional effect.'
+  traversal_usable: true
+- edge_id: e01255
+  source: arm3_pool_ceiling_is_imposed_not_intrinsic
+  target: growth_cessation
+  relation: precedes
+  context: rat, mouse and sheep kidney, lung, liver and heart; program markers, imprinted gene panel and promoter H3K4me3
+  evidence_tier: T1
+  refs:
+  - lui2010
+  - lui2008
+  - finkielstain2009
+  - delaney2014
+  - baron1994
+  confidence: B
+  notes: The counter that ends growth is a body-wide epigenetic program running in multiple organs at once, driven by growth
+    itself rather than by time, and running at species-specific speeds. Local glucocorticoid producing catch-up restricted to
+    the treated plate excludes a neuroendocrine set-point.
+  traversal_usable: true
+- edge_id: e01256
+  source: arm3_pool_ceiling_is_imposed_not_intrinsic
+  target: igf1_systemic
+  relation: hypothesized_link
+  sign: '-'
+  context: mouse kidney, lung, liver and heart, 1 to 6 weeks; bioinformatic target enrichment plus expression microarray and
+    real-time PCR
+  evidence_tier: T1
+  refs:
+  - kamran2015
+  confidence: speculative
+  gap_id: g_l2_mir29_causality_for_skeletal_length
+  notes: miR-29 target sites are over-represented among age-downregulated growth genes and Igf1 is a predicted target, making
+    miR-29 the single candidate druggable orchestrator of the growth-limiting program. Recorded as speculative because the
+    evidence is correlative and because no miR-29 loss-of-function animal has ever had a bone measured.
+  traversal_usable: false

@@ -10710,3 +10710,89 @@ gaps:
   - L12
   - L10
   status: open
+- gap_id: g_l2_decouple_the_counter_from_growth
+  type: known_unknown
+  layer: L2
+  tractability: 2
+  question: Is the growth-limiting genetic program driven by cell division itself, or by a separable signal
+    that correlates with growth - and if separable, can the counter be slowed while the plate keeps producing?
+  why_it_matters: 'THIS IS ARM 3 STATED PRECISELY, AND IT IS THE ONLY ROUTE TO A LARGE NUMBER. Every
+    manipulation known to delay the program - tryptophan deficiency (lui2010), propylthiouracil
+    (finkielstain2009, marino2008), dexamethasone (gafni2001, schrier2006) - works BY SLOWING GROWTH.
+    That is why catch-up growth restores a trajectory rather than exceeding it: the divisions are spent
+    more slowly, not spared, and the net effect on adult height is neutral. If the program is counting
+    divisions, arm 3 is closed and the best any stack can do is spend a fixed pool at higher yield per
+    division. If instead the program is driven by a separable mediator - and kamran2015 nominates miR-29
+    as exactly that, a single node whose up-regulation is proposed to orchestrate the downregulation of
+    hundreds of growth-promoting genes - then blocking the mediator would hold the program open while
+    growth continues, and adult size becomes a function of how long the program is held rather than of
+    how fast the pool is spent. THE EXISTENCE PROOF IS ALREADY IN THE LITERATURE. delaney2014 reports the
+    same age-downregulated gene set in sheep as in mouse and rat, running over years instead of weeks.
+    Evolution has set this rate to different values in different mammals. A parameter that varies between
+    species is a dial. WHAT MAKES IT TRACTABLE-2 RATHER THAN LOWER. The read-out is cheap - the program
+    has published molecular markers (marino2008) and the imprinted eleven-gene panel (lui2008) - but the
+    manipulation requires holding growth constant while perturbing a candidate mediator, which needs a
+    genetic model rather than a drug.'
+  what_is_known: 'A multi-organ program downregulates hundreds of growth-promoting genes simultaneously in
+    kidney, lung, liver and heart with declining promoter H3K4me3 (finkielstain2009, lui2010, lui2014); it
+    includes an eleven-gene imprinted network whose decline tracks the growth-rate decline (lui2008); miR-29
+    target sites are over-represented among the downregulated genes and all three family members rise from
+    1 to 6 weeks (kamran2015); the program is delayed by growth inhibition rather than by the passage of
+    time (lui2010); its time course differs between rodents and sheep (delaney2014); and locally delivered
+    glucocorticoid produces catch-up restricted to the treated plate, excluding a neuroendocrine set-point
+    (baron1994). The resting-zone ceiling is not telomeric (nwosu2005) and is not carried in the cell, since
+    donor age does not affect population doublings in culture (nilsson2005).'
+  what_is_missing: 'No experiment has ever separated the two hypotheses. Every delaying manipulation on
+    record also slows growth, so division-counting and mediator-driven models make identical predictions in
+    all published data. No study has run a full suppress-then-release cycle through to ADULT height with a
+    concurrent untreated control, so even the claim that catch-up is height-neutral is inference rather than
+    measurement. And no study reports body length or bone length in any miR-29 knockout, despite such mice
+    existing in at least three laboratories for muscle, skin and behavioural work.'
+  discriminating_experiment: 'Two arms. ARM A, the cheap one: measure nose-to-tail and tibial length in the
+    existing miR-29ab1 and miR-29b2c knockout lines and in the TuD-29 inhibitor model. If blocking the
+    proposed orchestrator lengthens bone, the program has a druggable mediator; if body length is untouched
+    while muscle and skin phenotypes appear, miR-29 is a passenger and the field should stop nominating it.
+    ARM B, the discriminating one: hold growth rate constant while perturbing the candidate mediator - for
+    example pair-feed or pharmacologically clamp growth velocity in mediator-blocked and control animals so
+    that the two groups grow at the same rate, then score the molecular senescence markers. DISCRIMINATION:
+    if program markers advance identically in both groups at matched growth rate, the counter reads
+    divisions and arm 3 is closed to pharmacology; if the blocked group advances more slowly at the same
+    growth rate, the counter is separable and adult height becomes a function of how long it is held.'
+  blocking_layers:
+  - L2
+  - L9
+  status: open
+- gap_id: g_l2_mir29_causality_for_skeletal_length
+  type: search_established
+  layer: L2
+  tractability: 5
+  question: Does any miR-29 loss-of-function animal have longer bones or a larger body, and has anyone
+    ever measured it?
+  why_it_matters: 'A SPECIFIC, CHEAP, UNASKED QUESTION SITTING ON TOP OF THE ONLY DRUGGABLE NODE IN THE
+    GROWTH-LIMITING PROGRAM. kamran2015 nominates miR-29 as the orchestrator of postnatal body growth
+    deceleration on bioinformatic and expression grounds, with Igf1, Imp1 and Mest among the predicted
+    targets. Igf1 is the central growth gene in this atlas. If miR-29 up-regulation is causal rather than
+    correlative, an antagonist is a body-size intervention rather than a plate intervention, and antisense
+    and decoy modalities already exist - antagomirs, a transgene-encoded tough-decoy inhibitor used in mouse
+    heart, and a chitosan-packaged mimic dosed systemically at 200 ug/kg in the opposite direction.
+    THE STRIKING PART IS THE ABSENCE. miR-29ab1 and miR-29b2c knockout mice have been generated
+    independently for skeletal-muscle atrophy, cutaneous wound healing, cardiac fibrosis and hypothalamic
+    behaviour. Every one of those papers had cohorts of mice of defined age and every one of them could
+    have measured a bone. None reports body or bone length. The answer may already exist unpublished in a
+    freezer or a photograph.'
+  what_is_known: 'kamran2015 established the expression and bioinformatic case in mouse kidney, lung, liver
+    and heart. Multiple independent miR-29 knockout lines exist and are phenotyped for non-skeletal traits.
+    Pharmacological inhibition (tough-decoy TuD-29, AAV-delivered) and systemic mimic delivery are both
+    demonstrated in vivo in mice.'
+  what_is_missing: 'A skeletal measurement. No published miR-29 loss-of-function study reports body length,
+    bone length, growth plate height or growth velocity. The atlas records this as a null established by
+    search rather than as an absence of effect - nobody has looked.'
+  discriminating_experiment: 'Contact the groups holding the miR-29ab1 and miR-29b2c lines and ask for
+    femoral and tibial length and nose-anus length in existing cohorts, or radiograph archived carcasses.
+    If length is unchanged, miR-29 is a passenger and the program needs a different candidate mediator.
+    If length is increased, the next step is inducible postnatal knockdown to separate a developmental
+    effect from a growth-deceleration effect - the developmental-versus-postnatal distinction that this
+    atlas has already got wrong three times (CORR-046, CORR-053).'
+  blocking_layers:
+  - L2
+  status: open

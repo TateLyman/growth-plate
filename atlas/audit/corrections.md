@@ -3059,3 +3059,44 @@ permissive** for solutes up to 10 kDa. The hypothesis was dead before it was wri
 is recorded as a killed hypothesis (edge `e01250`, `speculative`, sign `unknown`) rather than quietly
 dropped — because the absence of that asymmetry is itself the useful result: **arm 3 has no pharmacokinetic
 excuse.**
+
+## CORR-058 — I told the user arm 3 was a wall; it is a dial, and the evidence was twenty years old
+
+In the round-67 summary I wrote that arm 3 "fails for biological reasons we don't understand" and that the
+pool is "finite… and that is that." That framing is wrong on the evidence, and the evidence was not hard
+to find — it is the Baron/Nilsson/Lui corpus at the NICHD, published between 1994 and 2015, and several
+of its papers were **already in this bibliography** (`baron1994`, `gafni2001`, `schrier2006`, `nilsson2005`,
+`marino2008`, `emons2005`, `nilsson2004`, `lui2011`).
+
+Three measurements say the ceiling is **imposed rather than cell-intrinsic**:
+
+1. `nilsson2005` — population doublings of rabbit resting-zone chondrocytes **in culture did not depend on
+   the age of the donor animal**. If a Hayflick limit were carried in the cell, old cells would double fewer
+   times. They do not.
+2. `nwosu2005` — **no measurable telomere shortening** in mouse resting-zone chondrocytes between 1 and 56
+   weeks.
+3. `delaney2014` — the same age-downregulated gene set runs in **sheep over years** and in rodents over
+   weeks. A parameter that evolution sets to different values in different mammals is a dial.
+
+**What the failure was.** I had eight of these references in the bibliography and had never read them as a
+group. Each had been ingested for a local purpose — oestrogen and closure, catch-up growth, senescence —
+and the corpus's actual claim, that growth cessation is a **body-wide epigenetic program driven by growth
+rather than time**, was never assembled. This is not the CORR-047 failure of trusting an index over a
+source; it is the opposite and arguably worse: **holding the sources and never reading across them.** The
+atlas is a graph precisely so that this cannot happen, and the graph did not catch it because the papers
+were attached to different nodes and no edge connected them.
+
+**The remedy applied.** New node `arm3_pool_ceiling_is_imposed_not_intrinsic` states the corpus's joint
+claim, with the three negatives that carry it. Two new gaps name what is actually missing.
+
+**And a correction to the correction, so this does not overshoot.** "Imposed rather than intrinsic" does
+not mean liftable. Every manipulation on record that delays the program does so **by slowing growth**, so
+catch-up restores a trajectory rather than exceeding it. That claim is graded **E — inference** in the new
+node, because no study has ever run a suppress-then-release cycle through to adult height against a
+concurrent control. The single assumption on which the whole late-start strategy rests is ungraded
+evidence, and saying so is the point of the node.
+
+**Second item.** `schrier2006` reports that estradiol cypionate at near-physiological adult levels *slowed*
+resting-zone proliferation, which the authors could not reconcile with oestrogen accelerating senescence.
+Anastrozole sits in the stack partly on the premise that oestrogen depletes the pool. That premise now has
+a contradicting measurement against it and is flagged in the node rather than left implicit.

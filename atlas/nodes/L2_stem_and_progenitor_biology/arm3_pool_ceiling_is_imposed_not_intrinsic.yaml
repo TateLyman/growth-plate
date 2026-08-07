@@ -1,0 +1,281 @@
+id: arm3_pool_ceiling_is_imposed_not_intrinsic
+name: The resting-zone pool ceiling is imposed, not cell-intrinsic
+aliases:
+- arm 3 restated
+- growth-limiting genetic program
+- why the pool runs out
+type: process
+layer: L2
+stub: false
+summary: 'The atlas has treated arm 3 as a closed door - the resting zone holds a finite number of divisions,
+  they are spent, and that is that. Three independent measurements say the ceiling is NOT carried inside
+  the cell, and they change what arm 3 is. FIRST, replicative capacity comes back in culture. The number
+  of population doublings of rabbit resting-zone chondrocytes in vitro did not depend on the age of the
+  animal they were harvested from, and the same paper found that DNA methylation in resting-zone chondrocytes
+  decreases with age in vivo - specifically with the slow proliferation of the resting zone, and not in
+  the rapidly proliferating proliferative zone, not in culture, and not in growing liver (nilsson2005).
+  SECOND, it is not telomeric: telomere restriction fragment length in mouse resting-zone chondrocytes
+  did not shorten measurably between 1 and 56 weeks (nwosu2005). THIRD, the counter is body-wide rather
+  than plate-specific. A common program downregulates hundreds of growth-promoting genes simultaneously
+  in kidney, lung, liver and heart with declining H3K4 trimethylation at their promoters (finkielstain2009,
+  lui2010, lui2014), it includes an eleven-gene imprinted network - Igf2, H19, Plagl1, Mest, Peg3, Dlk1,
+  Gtl2, Grb10, Ndn, Cdkn1c, Slc38a4 - whose decline tracks the decline in growth rate (lui2008), and its
+  targets are enriched for miR-29 binding sites while all three miR-29 family members rise steeply from
+  1 to 6 weeks of age (kamran2015). CRUCIALLY THE PROGRAM IS DRIVEN BY GROWTH, NOT BY TIME. A tryptophan-deficient
+  diet that stalled growth for four weeks DELAYED the program (lui2010); propylthiouracil-induced hypothyroidism
+  delayed it (finkielstain2009, marino2008); dexamethasone delayed growth-plate senescence and epiphyseal
+  fusion (gafni2001); and locally administered glucocorticoid produced catch-up growth restricted to the
+  treated plate, which is what proves the mechanism is intrinsic to the plate rather than a neuroendocrine
+  set-point (baron1994). AND THE PROGRAM RUNS AT DIFFERENT SPEEDS IN DIFFERENT SPECIES. The same downregulated
+  gene set appears in juvenile sheep kidney and lung as in mouse and rat, but plays out over years rather
+  than weeks, which is offered as the reason large mammals get large (delaney2014). WHAT THIS MEANS FOR
+  ARM 3. Every intervention that slows the program does so BY SLOWING GROWTH, which is why catch-up growth
+  restores a trajectory rather than exceeding it - the divisions are spent more slowly, not spared. The
+  arm-3 target, stated precisely for the first time, is to decouple the program''s progression from growth
+  output: to run the counter slowly while the plate keeps producing. Nothing does this. But a ceiling that
+  is epigenetic, growth-driven, reversible in culture, and set at different rates in different species
+  is a dial, not a wall, and the atlas has been describing it as a wall.'
+quantitative:
+- parameter: resting-zone BrdU labelling index, late fetal versus 5, 9 and 17 weeks
+  value: 95.6, 9.2, 9.2, 7.6
+  unit: '% of resting-zone cells labelled'
+  conditions: distal femur, New Zealand White rabbits, one-week continuous BrdU infusion by osmotic minipump
+    at 200 ug/kg/h; animals at 9 and 17 weeks castrated at 6 weeks to remove gonadal steroid confounding;
+    n=6-12 per group; P<0.001 by ANOVA
+  species: rabbit
+  source_ref: schrier2006
+  uncertainty: 'SEM 0.8, 1.2, 1.1 and 1.5 respectively. THE SHAPE OF THIS CURVE MATTERS MORE THAN ITS
+    ENDPOINTS. The resting zone does not wind down gradually across childhood - it collapses more than
+    tenfold before 5 weeks and then coasts near 8-9 per cent. By the time any growth intervention could
+    be given, the pool has long since stopped cycling fast and is simply being consumed.'
+- parameter: number of resting-zone chondrocytes per mm of growth plate versus age
+  value: decreases
+  unit: cells per mm, measured perpendicular to the long axis
+  conditions: same animals; significant in the overall resting zone, the epiphyseal region and the reserve
+    region separately, each P<0.001; distal femur, proximal tibia and distal tibia
+  species: rabbit
+  source_ref: schrier2006
+  uncertainty: 'Figure values not extractable from text. This is the only direct measurement of POOL SIZE
+    against age that the atlas has, and it is the quantity arm 3 exists to change.'
+- parameter: effect of dexamethasone on resting-zone proliferation and on numerical depletion
+  value: both decreased
+  unit: qualitative
+  conditions: 0.5 mg/kg s.c. daily for two weeks from 4 weeks of age, supraphysiological; n=6-7 per group;
+    estradiol cypionate 70 ug/kg i.m. weekly as the comparator arm
+  species: rabbit
+  source_ref: schrier2006
+  uncertainty: 'A drug that conserves the pool - but by suppressing it, so the conservation is bought
+    with growth. Estradiol at near-physiological adult levels ALSO slowed resting-zone proliferation,
+    which the authors could not reconcile with oestrogen accelerating senescence; they speculate oestrogen
+    acts by a proliferation-independent route or by raising the loss of capacity per cell cycle. That
+    unresolved sign is a real problem for the atlas, because anastrozole is in the stack on the assumption
+    that oestrogen depletes the pool.'
+- parameter: population doublings of resting-zone chondrocytes in culture as a function of donor age
+  value: no dependence
+  unit: population doublings
+  conditions: rabbit resting-zone chondrocytes harvested across ages and cultured
+  species: rabbit
+  source_ref: nilsson2005
+  uncertainty: 'abstract only; the doubling numbers themselves have not been read. THIS IS THE SINGLE
+    MOST IMPORTANT ROW IN THE NODE. If the ceiling were a Hayflick limit carried in the cell, old cells
+    would double fewer times. They do not. The limiting state is imposed by the tissue and released by
+    removal from it.'
+- parameter: telomere restriction fragment length in resting-zone chondrocytes, 1 to 56 weeks
+  value: no measurable shortening
+  unit: kb
+  conditions: Mus casteneus at 1, 4, 8 and 56 weeks
+  species: mouse
+  source_ref: nwosu2005
+  uncertainty: abstract only; a negative result with unstated power, so it bounds rather than excludes
+    a telomeric contribution
+- parameter: imprinted genes coordinately downregulated with age across multiple organs
+  value: '11'
+  unit: genes
+  conditions: Igf2, H19, Plagl1, Mest, Peg3, Dlk1, Gtl2, Grb10, Ndn, Cdkn1c, Slc38a4; temporal pattern
+    similar to the decline in growth rate
+  species: rat
+  source_ref: lui2008
+  uncertainty: abstract only; expression-level association across organs, not a causal test
+- parameter: effect of four weeks of tryptophan-deficient diet on the growth-limiting genetic program
+  value: program delayed
+  unit: qualitative
+  conditions: newborn rats, growth temporarily inhibited for 4 weeks, then microarray
+  species: rat
+  source_ref: lui2010
+  uncertainty: 'abstract only. THE EXPERIMENT THAT SEPARATES TIME FROM GROWTH. The program tracks growth,
+    not the calendar, which is why the plate can be paused - and also why pausing it is height-neutral
+    unless the pause is spent buying something else.'
+- parameter: adult height in Beckwith-Wiedemann spectrum, the human imprinted-overgrowth natural experiment
+  value: 180.6 and 166.3
+  unit: cm at 18 years, males and females
+  conditions: 581 individuals from the Netherlands, Italy and the United States; GAMLSS modelling; +0.6
+    and +0.5 SDS against WHO charts; enhanced growth rate reported during puberty and adolescence
+  species: human
+  source_ref: maas2025
+  uncertainty: 'abstract only. THE POINT OF THIS ROW IS THAT THE OVERGROWTH PERSISTS. This is not the
+    CORR-054 trap - in Sotos, predicted and adult heights were not significantly different, whereas here
+    adult height is genuinely shifted. But the shift is +0.6 SDS, roughly 4 cm, from disrupting the entire
+    11p15.5 imprinting apparatus and accepting embryonal tumour risk. It sets the SCALE of what the imprinted
+    arm of the program is worth, and the scale is modest.'
+- parameter: elongation rate of deer antler versus human growth plate
+  value: 2 per day versus about 2 per year
+  unit: cm
+  conditions: sika deer antler growth centre; stated by the authors as over 300-fold
+  species: multiple
+  source_ref: ba2025
+  uncertainty: 'The comparator is a whole-organ rate against a single-plate rate and the tissues are not
+    homologous, so the 300-fold figure is an order-of-magnitude statement, not a controlled comparison.'
+- parameter: 'the three innovations the antler uses, per the authors'
+  value: 3
+  unit: named mechanisms
+  conditions: snRNA-seq, snATAC-seq (57,722 nuclei) and Stereo-seq (57,311 cells); 87.6% cell-type agreement
+    across modalities; PHEX+ cells about 5% and osteoblasts about 13% of the growth centre
+  species: multiple
+  source_ref: ba2025
+  uncertainty: 'The three are: extensive progenitor proliferation with intrinsically low tumorigenic potential
+    (MYC driving a non-oncogenic program, balanced by apoptosis rather than by enhanced DNA repair); VASCULARIZED
+    CARTILAGE meeting the metabolic demand; and hybrid ossification combining endochondral ossification
+    with direct hypertrophic-chondrocyte-to-osteoblast transdifferentiation via PHEX+ intermediates. The
+    authors state plainly that this defies the conventional paradigm, which depends on AVASCULAR growth
+    plates.'
+localization:
+- 'growth plate resting zone: where the program is cashed out into height; pool size and labelling index
+  both fall with age'
+- 'kidney, lung, liver, heart: the same growth-limiting program runs simultaneously, which is what makes
+  it a body-wide counter rather than a plate-specific one'
+- 'deer antler growth centre: a mammalian endochondral tissue with a vascularized cartilage matrix and
+  a large progenitor pool'
+human_evidence: indirect
+human_evidence_note: The pool measurements are rabbit, the program is rat, mouse and sheep, and the antler
+  is deer. The one direct human readout is Beckwith-Wiedemann adult height, which perturbs one arm of
+  the program (the 11p15.5 imprinted locus) and moves adult height by about +0.6 SDS.
+species_basis:
+- rabbit
+- rat
+- mouse
+- ovine
+- human
+- multiple
+translation_risk: high
+translation_risk_reason: 'Two distinct risks. The program itself is explicitly claimed to be conserved
+  with a species-specific TIME COURSE (delaney2014), so its existence should transfer while its rate will
+  not - a mouse experiment measures the program in fast-forward. The antler is worse: antler stem cells
+  are cranial neural crest derived, the organ is seasonal and shed annually, and its cartilage is vascularized,
+  which in a human growth plate is not a feature but the definition of closure. Nothing about the antler
+  should be assumed to transfer; it is being read as an existence proof about what a mammalian endochondral
+  tissue CAN do, not as a template.'
+confidence: B
+claim_grades:
+- claim: The limit on resting-zone replicative capacity is not a cell-intrinsic Hayflick limit and is
+    not telomeric.
+  grade: C
+  basis: Two independent negative results in two species - donor-age-independent population doublings
+    in rabbit culture, and no telomere shortening in mouse. Both read at abstract level, both negatives,
+    so graded C rather than B.
+- claim: Growth deceleration is driven by a multi-organ, epigenetically encoded genetic program rather
+    than by a systemic hormonal signal or by time.
+  grade: B
+  basis: Replicated across organs, across three rodent studies and one ruminant, with converging chromatin
+    (H3K4me3, H3K27me3), DNA methylation, imprinted-gene and microRNA evidence, plus the local-glucocorticoid
+    experiment that excludes a neuroendocrine set-point.
+- claim: The program's progression is a function of growth itself, so it can be delayed by anything that
+    slows growth.
+  grade: B
+  basis: Three independent growth-inhibiting manipulations - tryptophan deficiency, propylthiouracil and
+    dexamethasone - each delayed the program or growth-plate senescence, in three separate studies.
+- claim: Delaying the program by slowing growth is therefore height-neutral rather than height-additive.
+  grade: E
+  basis: 'INFERENCE, and the most consequential one in the node. It follows from the program being division-
+    or growth-counted, but no study has run a full charge-then-discharge cycle to adult height and compared
+    the total against untreated controls. If it is wrong, cycling is a lever; if it is right, cycling
+    only buys time in which to spend the pool at higher yield. This is the single assumption the whole
+    late-start strategy rests on and it is ungraded evidence.'
+- claim: Adult body size differences between mammalian species are set by the speed of this program.
+  grade: D
+  basis: One study comparing sheep against mouse and rat by expression microarray, offered as consistent
+    with the hypothesis. A two-species comparison cannot establish that the program's rate is the causal
+    determinant of adult size.
+- claim: The antler achieves a large progenitor pool by vascularizing its cartilage, which the growth
+    plate cannot do without closing.
+  grade: D
+  basis: One single-cell multi-omics study in one species with no perturbation. The incompatibility with
+    growth-plate biology is the atlas's inference, not the authors' claim.
+key_refs:
+- ref_id: nilsson2005
+  pmid: '16002553'
+  first_author: Nilsson O
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: Population doublings of rabbit resting-zone chondrocytes in culture did not depend
+    on donor age, while DNA methylation in the resting zone fell with age in vivo - the ceiling is not
+    carried in the cell.
+- ref_id: nwosu2005
+  pmid: '15795509'
+  first_author: Nwosu BU
+  year: 2005
+  type: primary_abstract_only
+  one_line_finding: No measurable telomere shortening in mouse resting-zone chondrocytes between 1 and
+    56 weeks.
+- ref_id: schrier2006
+  pmid: '16614378'
+  first_author: Schrier L
+  year: 2006
+  type: primary
+  one_line_finding: Resting-zone labelling index falls from 95.6% late fetal to 7.6% at 17 weeks and cell
+    number per mm falls with age; dexamethasone slows both, and oestrogen unexpectedly also slows proliferation.
+- ref_id: baron1994
+  pmid: '7925098'
+  first_author: Baron J
+  year: 1994
+  type: primary_abstract_only
+  one_line_finding: Local glucocorticoid to one plate produced catch-up growth restricted to that plate,
+    excluding a neuroendocrine set-point and proving the counter is intrinsic to the growth plate.
+- ref_id: lui2010
+  pmid: '20371622'
+  first_author: Lui JC
+  year: 2010
+  type: primary_abstract_only
+  one_line_finding: A common growth-limiting program across lung, kidney and liver with declining H3K4
+    trimethylation; four weeks of tryptophan deficiency delayed it, showing it is driven by growth rather
+    than age.
+- ref_id: lui2008
+  pmid: '18448610'
+  first_author: Lui JC
+  year: 2008
+  type: primary_abstract_only
+  one_line_finding: Eleven imprinted genes downregulated with age across multiple organs on a time course
+    matching the decline in growth rate.
+- ref_id: kamran2015
+  pmid: '25866874'
+  first_author: Kamran F
+  year: 2015
+  type: primary_abstract_only
+  one_line_finding: miR-29 target sites are over-represented among age-downregulated growth genes and
+    all three miR-29 family members rise from 1 to 6 weeks - a single candidate orchestrator of the program.
+- ref_id: delaney2014
+  pmid: '24776848'
+  first_author: Delaney A
+  year: 2014
+  type: primary_abstract_only
+  one_line_finding: The same age-downregulated gene set appears in juvenile sheep kidney and lung as in
+    rodents but plays out over years, offered as the reason large mammals grow larger.
+- ref_id: maas2025
+  pmid: '40183198'
+  first_author: Maas SM
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: Beckwith-Wiedemann growth charts from 581 individuals - modelled height at 18 years
+    180.6 cm in males, +0.6 SDS against WHO, with enhanced growth through puberty and adolescence.
+- ref_id: ba2025
+  pmid: '41472858'
+  first_author: Ba H
+  year: 2025
+  type: primary
+  one_line_finding: Single-cell multi-omics of the deer antler growth centre - a vast progenitor pool with
+    low tumorigenic potential, vascularized cartilage, and hybrid ossification driving 2 cm/day.
+open_questions:
+- g_l2_larger_pool_with_intact_flux
+- g_l2_decouple_the_counter_from_growth
+- g_l2_mir29_causality_for_skeletal_length
+contradicts: []
+last_verified: '2026-08-07'
