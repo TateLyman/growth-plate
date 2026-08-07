@@ -2070,3 +2070,36 @@ The only remedy that has ever worked in this project is mechanical: the validato
 the atlas. **Nothing catches what leaves in a message, and that is where both CORR-029 and CORR-030
 escaped.** Every outbound citation from now on is either accompanied by a verification tool call in
 the same turn, or explicitly flagged unverified.
+
+---
+
+## CORR-031 — my translation caveat was exactly backwards, and it would have understated a harm
+
+Writing `tamoxifen_at_the_growth_plate` from abstracts, I recorded as a limitation:
+
+> *"The dose is 40 mg/kg/day in a rat, which cannot be mapped to 20 mg/day in a child without exposure data."*
+
+The exposure data was in the full text, and it runs the other way. `chagin2007` states it directly:
+children on **20–40 mg/day reach serum tamoxifen of roughly 1.0 µM** — the concentration used in the
+metatarsal experiments — while **the doses used in animal experiments give serum 1–10 nM, "10 to 100
+times less than in Tam-treated humans."**
+
+So the in vitro concentration that caused **permanent growth arrest is the human paediatric exposure**,
+and the in vivo rats that ended **permanently shorter were systemically under-dosed relative to treated
+children by one to two orders of magnitude.**
+
+**The direction of the error is what makes it serious.** A caveat that reads "the animal dose is
+probably too high to be relevant" tells a reader to discount the harm. The truth is the opposite: the
+animals got less drug than the children do and were still permanently shortened. **I wrote a
+reassurance where the data supported an alarm.**
+
+**Why it happened.** I applied a generic heuristic — *rodent mg/kg doses usually exceed human ones* —
+in place of the paper's own pharmacokinetics, and stated it as a property of these studies rather than
+as an assumption I had not checked. It is CORR-024's lesson (a derived quantity from a summary is
+unverified) applied to a derived *inference* rather than a derived *number*, and it is CORR-026's
+lesson again: **the thing I needed was in the full text, and I wrote the caveat instead of reading it.**
+
+**Standing rule.** A translation or dose-relevance caveat is a QUANTITATIVE CLAIM and carries the same
+burden as any other. Either cite the exposure data, or write "exposure relationship not checked" —
+never a directional guess dressed as a limitation. And where a limitation would lead a reader to
+discount a harm, the burden is higher, not lower.

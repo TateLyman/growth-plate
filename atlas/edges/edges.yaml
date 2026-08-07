@@ -19135,3 +19135,31 @@ edges:
   confidence: C
   notes: Closes the cheapest version of the SERM route; does not close the class.
   traversal_usable: true
+- edge_id: e01232
+  source: estrogen_accelerated_senescence
+  target: fusion_is_proliferative_exhaustion
+  relation: precedes
+  sign: '+'
+  context: juvenile ovariectomised rabbits; senescence declines spontaneously in vehicle animals and oestrogen
+    accelerates all seven measured components, with fusion occurring when chondrocyte proliferation approaches zero
+  evidence_tier: T1
+  refs:
+  - weise2001
+  confidence: B
+  notes: Oestrogen is a rate multiplier on a programme already running; the control arm carries the causal claim.
+  traversal_usable: true
+- edge_id: e01233
+  source: fusion_is_proliferative_exhaustion
+  target: the_human_ceiling_has_never_been_observed
+  relation: required_for
+  sign: '+'
+  context: the exhaustion model predicts growth cessation without fusion when proliferation reaches zero in the
+    absence of an oestrogen signal, which is what herrmann2002 observed at age 24 with epiphyses still open at 27
+  evidence_tier: T2
+  refs:
+  - weise2001
+  - herrmann2002
+  - carani1997
+  confidence: B
+  notes: Three independently collected human observations fit a model built on rabbit data without having informed it.
+  traversal_usable: true

@@ -1,0 +1,133 @@
+id: fusion_is_proliferative_exhaustion
+name: Fusion happens when proliferation reaches zero — oestrogen sets the rate of approach, not the event
+type: process
+layer: L7
+stub: false
+summary: 'This atlas has been running on weise2001''s model since Phase 1 without having read it. Read in full, it
+  is the keystone, and it says three things that reorganise everything else. FIRST, SENESCENCE IS SPONTANEOUS. In
+  VEHICLE-treated juvenile rabbits there was already a gradual senescent decline in growth rate, chondrocyte proliferation
+  rate, growth plate height, proliferative cell number, hypertrophic cell number, TERMINAL HYPERTROPHIC CELL SIZE
+  and column density. Nothing had to be done to the animals for the plate to start running down. SECOND, OESTROGEN
+  ACCELERATES EVERY ONE OF THOSE PARAMETERS AND CAUSES NONE OF THEM. It is a rate multiplier on a programme already
+  running, which is exactly the reading this atlas reached from the human data and could not previously source. THIRD,
+  AND THIS IS THE SENTENCE THE WHOLE PROJECT TURNS ON: FUSION OCCURRED WHEN THE RATE OF CHONDROCYTE PROLIFERATION
+  APPROACHED ZERO, and it was an ABRUPT event in which all remaining chondrocytes were rapidly replaced by bone. Fusion
+  is not a thing oestrogen does to a plate. It is what happens to a plate that has run out. THE MODEL ALSO EXPLAINS
+  A TIMING PARADOX THE ATLAS HAD NOTICED WITHOUT RESOLVING. The old accelerated-ossification hypothesis predicts prompt
+  fusion on oestrogen exposure; clinically, children take YEARS while oestrogen-deficient ADULTS fuse in months. Under
+  the exhaustion model that is not a paradox - the adult plate is already near zero, so a small push finishes it,
+  while a child''s plate has years of capacity left. carani1997 closing in nine months at 38 and bouillon2004 taking
+  three years from 17 are the same mechanism at two points on one curve. AND IT PREDICTS herrmann2002: a man whose
+  plates were never closed stopped growing at 24 with the epiphyses still open, because proliferation reached zero
+  and nothing was there to convert the plate to bone.'
+quantitative:
+- parameter: SENESCENCE RUNS WITHOUT OESTROGEN — SEVEN PARAMETERS DECLINE IN VEHICLE ANIMALS
+  value: gradual senescent decline in tibial growth rate, rate of chondrocyte proliferation, growth plate height,
+    number of proliferative chondrocytes, number of hypertrophic chondrocytes, size of terminal hypertrophic chondrocytes,
+    and column density
+  unit: qualitative, seven parameters
+  conditions: juvenile OVARIECTOMISED female rabbits given vehicle intramuscularly once weekly; growth plates of proximal
+    tibia, distal tibia and distal femur analysed at 2, 4, 6 and 8 weeks
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: 'THE CONTROLS ARE THE RESULT. These animals were OVARIECTOMISED, so the decline occurred with the ovarian
+    oestrogen source removed - which is what makes it a demonstration that the programme is intrinsic rather than
+    oestrogen-driven. Rabbits were chosen deliberately because, like humans and unlike rodents, they fuse their epiphyses
+    at sexual maturity, so this is the best available species model for the human event. Ovariectomy is not oestrogen
+    ABSENCE - adrenal and local aromatisation persist - so this shows senescence proceeds at low oestrogen, not at
+    zero. NOTE ALSO that terminal hypertrophic cell size DECLINES here, as it does in rat (roach2003), against the
+    human invariance recorded in byers2000; this adds rabbit to the declining side of contradiction C-L1-09.'
+- parameter: OESTROGEN ACCELERATES ALL SEVEN AND INITIATES NONE
+  value: oestrogen treatment accelerated the senescent decline in every one of the seven parameters
+  unit: qualitative
+  conditions: same design; estradiol cypionate intramuscularly once weekly for 2 to 8 weeks
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: THE DISTINCTION BETWEEN ACCELERATING AND CAUSING IS THE WHOLE THERAPEUTIC POINT AND IT IS CARRIED BY
+    THE CONTROL ARM RATHER THAN THE TREATED ONE. If oestrogen initiated senescence the vehicle animals would not
+    senesce, and they do. What this cannot say is whether the acceleration is proportional across parameters or whether
+    oestrogen acts on one upstream variable that drags the rest - the design measures outcomes, not the coupling
+    between them. A single dose level, so no dose-response.
+- parameter: 'FUSION OCCURS AT ZERO PROLIFERATION, AND IT IS ABRUPT'
+  value: fusion occurred when the rate of chondrocyte proliferation approached zero; epiphyseal fusion appeared to
+    be an abrupt event in which all remaining chondrocytes were rapidly replaced by bone elements
+  unit: qualitative
+  conditions: senescent growth plates in the same rabbit series
+  species: rabbit
+  source_ref: weise2001
+  uncertainty: 'THE LOAD-BEARING CLAIM OF THIS NODE AND OF SEVERAL OTHERS THAT DEPEND ON IT. It converts fusion from
+    an event with a cause into a threshold crossing with a queue behind it, and it is what makes "the plate spends
+    a budget" a mechanism rather than a metaphor. Limits: approached zero is a description of a trend across group
+    means at four timepoints, not a measured proliferation rate at the moment of fusion in an individual plate, and
+    abrupt is inferred from a bimodal distribution across animals rather than watched happening. Rabbit. And the claim
+    that nothing else can fuse a plate does not follow - it says exhaustion is SUFFICIENT, not that it is necessary,
+    and retinoid and warfarin toxicity are noted by the authors as causing premature fusion by other routes.'
+- parameter: WHY CHILDREN TAKE YEARS AND OESTROGEN-DEFICIENT ADULTS TAKE MONTHS
+  value: prompt fusion occurs only in oestrogen-deficient adults treated with oestrogen; in children epiphyseal fusion
+    occurs only after years of oestrogen exposure
+  unit: qualitative
+  conditions: the authors' framing of the clinical literature, offered as the observation the accelerated-ossification
+    hypothesis fails to explain and the exhaustion model does
+  species: human
+  source_ref: weise2001
+  uncertainty: 'RECORDED BECAUSE IT RECONCILES TWO NUMBERS THIS ATLAS HOLDS FROM DIFFERENT PAPERS AND HAD NOT CONNECTED.
+    carani1997 achieved complete epiphyseal closure in NINE MONTHS in a 38-year-old whose plate had been running down
+    untreated for two decades; bouillon2004 took THREE YEARS in a 17-year-old with bone age 12. Under an exhaustion
+    model these are one curve, not two results. THIS ROW IS THE AUTHORS'' SYNTHESIS OF PRIOR CLINICAL REPORTS, NOT
+    A MEASUREMENT MADE IN THIS STUDY, and is graded accordingly - it is an argument this atlas finds persuasive because
+    its own independently collected human timings fit it, which is corroboration rather than proof.'
+localization:
+- growth plate, all zones; the proliferative compartment is where the terminal variable sits
+human_evidence: indirect
+human_evidence_note: The experiment is rabbit, chosen because rabbits fuse at sexual maturity as humans do and rodents
+  do not. The human evidence is the fit - herrmann2002's man stopping at 24 with open plates, carani1997's velocity
+  decaying threefold then closing in nine months at 38, bouillon2004 taking three years from bone age 12 - all of
+  which this model predicts and none of which was used to build it.
+species_basis:
+- rabbit
+- human
+translation_risk: moderate
+translation_risk_reason: Rabbit is the right species for the fusion event and the wrong one for everything about
+  human timescale and hormone milieu. The model's central claim is about a threshold that has never been measured
+  in a human growth plate, because human proliferation rates at fusion cannot be measured.
+confidence: B
+confidence_note: B. The control arm carries the main claim, the design is prospective with four timepoints and three
+  sites, and the species was chosen for the right reason. It is not A because it is a single species at a single
+  oestrogen dose, because "proliferation approached zero" is a trend across group means rather than a measurement
+  at the moment of fusion, and because the timing argument that makes it so persuasive is the authors' reading of
+  other people's clinical data rather than data collected here. It is not C because the spontaneous decline in
+  ovariectomised controls is a direct observation that decides the causal question, and because three independent
+  human observations this atlas collected separately fit the model without having informed it.
+key_refs:
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: Growth plate senescence proceeds spontaneously in ovariectomised rabbits, oestrogen accelerates
+    all seven of its components, and fusion is an abrupt event occurring when chondrocyte proliferation approaches zero.
+- ref_id: herrmann2002
+  pmid: '12466340'
+  first_author: Herrmann BL
+  year: 2002
+  type: primary
+  one_line_finding: An aromatase-deficient man stopped growing at 24 with epiphyses still open at 27 - proliferative
+    exhaustion without the oestrogen signal that would have converted the plate to bone.
+- ref_id: carani1997
+  pmid: '9211678'
+  first_author: Carani C
+  year: 1997
+  type: primary
+  one_line_finding: Growth velocity decayed from 1.31 to 0.43 cm/yr across two untreated decades, then oestradiol
+    closed the plate in nine months at 38.
+- ref_id: bouillon2004
+  pmid: '15579754'
+  first_author: Bouillon R
+  year: 2004
+  type: primary
+  one_line_finding: Oestrogen started at 17 with bone age 12 took three years to close the plates and delivered 15 cm
+    on the way.
+open_questions:
+- g_l2_larger_pool_with_intact_flux
+- g_l7_residual_maturation_route
+last_verified: '2026-08-07'
