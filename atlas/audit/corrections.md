@@ -2891,3 +2891,54 @@ dosing banded by bone age up to **BA ≥ 15.5 y**. Males on rhGH gained **7.20 c
 2.00 cm** in controls (P = 0.01) and **5.21 cm over predicted adult height against 0.80 cm** (P = 0.008);
 16 of 22 exceeded prediction by ≥ 1 SDS against 0 of 5. n = 22 vs 5, non-randomised, single population —
 but it is final-height evidence at the maturity in question, and this atlas had nothing of the kind.
+
+## CORR-052 — CORR-051 was wrong on all three legs, and it failed the exact way CORR-047 already named
+
+One round ago I told the user that the Hedgehog target I had recommended was probably closed by bone age
+16+, on three independent lines. The user supplied the full texts. **All three legs collapse, and two of
+them point the opposite way.**
+
+**Leg 1 — `saito2026`.** I quoted the abstract: *"remains Hedgehog-dependent and ceases after growth plate
+maturation."* The full text says the **growth plate stops making IHH** — IHH is expressed by prehypertrophic
+chondrocytes of the juvenile plate and is markedly reduced in adult chondrocyte-lineage cells, and Gli1/Gli2
+in osteoblasts fall with **distance from the growth plate**, i.e. it is a ligand gradient. That is loss of
+**ligand**, not loss of **competence**, and the two have opposite consequences: a SMO agonist acts
+*downstream* of both ligand and PTCH1 and would substitute for what is missing. **The word "agonist" does
+not appear in the paper** — SAG, purmorphamine and smoothened agonist are all absent; every manipulation is
+inhibition (vismodegib) or oncogene induction. And p53 inactivation gave sustained Hedgehog-**independent**
+proliferation and osteosarcoma in **adult** mice from 8 weeks, so the adult cells' proliferative machinery
+is intact; they lack an input.
+
+**Leg 2 — `luzzi2023`.** I used the young-versus-older sentence. That sentence is **background describing the
+endogenous programme**. The **experiment** gave a microsphere-encapsulated Hedgehog agonist to **78 adult
+rats** and it worked: Gli1 1.70× (P = .029) and Smo 2.06× (P = .0173) at day 3; **SOX9 2.95×, COL2 3.18×,
+COLX 1.85×** at day 14; fibrocartilage formation by day 28; **work to failure 29.01 vs 18.09 mJ** (P = .030).
+Adult tissue responded to exogenous SMO agonism with a chondrogenic programme and a functional gain.
+
+**Leg 3 — this atlas's own GLI1/PTCH1-low finding.** GLI1 and PTCH1 are Hedgehog **target** genes. Low
+expression at rest is what absent ligand looks like, not what an absent receptor looks like. I read a
+readout of pathway **activity** as a readout of pathway **capacity**.
+
+**And the human evidence settles the competence question outright.** `robinson2017`, found in `mundy2026`'s
+reference list: three children given **vismodegib**, a SMO inhibitor, developed **widespread growth plate
+fusions that persisted long after stopping the drug**, with profound short stature and disproportionate
+growth; fusions appeared only after **> 140 days** of exposure, and the findings forced a trial amendment
+restricting the agent to **skeletally mature patients** plus a label warning. **Blocking Hedgehog fuses the
+human growth plate.** The pathway is competent, live and load-bearing in human physis — that is a clinical
+result, not a mouse inference. It does *not* show that agonism opens or extends a plate; it fixes the
+direction of the arrow and leaves the converse untested.
+
+**The failure mode is the one I already named and then repeated.** CORR-047: *"a label is an index, not a
+source — the same rule this project applies to review articles, applied to a regulatory document, where I
+did not think to apply it."* Here it was an **abstract**, twice, in the round immediately after. An abstract
+is a summary written to compress; the compression is exactly where the ligand-versus-competence distinction
+was lost. **The rule now has to be stated without a qualifier: do not build a correction on text that is not
+the source.** CORR-051's conclusion should never have been written from two abstracts.
+
+**Net effect on the recommendation.** The target I named two rounds ago — does the perichondrial reservoir
+persist at bone age 16+ and can it be switched on — **stands, and is better supported than when I named it.**
+What has changed is the shape of the question: the second half is no longer "has the machinery closed" but
+**"is there enough of it left, and can an exogenous agonist reach it locally."** The two hazards recorded in
+CORR-050 and CORR-051 are unaffected and remain the binding constraint: SMO agonism is the mirror image of a
+drug regulators restricted *because* of growth-plate effects, and the target population is the osteochondroma
+cell of origin.
