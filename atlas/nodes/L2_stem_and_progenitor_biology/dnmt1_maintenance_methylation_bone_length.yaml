@@ -3,7 +3,7 @@ name: DNMT1 maintenance methylation sets bone length
 aliases:
 - Dnmt1 chondrocyte
 - maintenance methylation lead
-- the arm-3 mechanism candidate
+- NOT an arm-3 result - see CORR-071
 type: gene
 layer: L2
 stub: false
@@ -39,6 +39,19 @@ summary: 'The maintenance-methylation hypothesis that this atlas built across ro
   growth. Nobody has raised maintenance methylation postnatally and measured bone length. That asymmetry
   is the whole remaining question for this lead and it is now precisely specifiable.'
 quantitative:
+- parameter: 'resting-zone measurements in yanagihara2025'
+  value: none
+  unit: none
+  conditions: full text searched - the words resting zone, reserve zone and Pthrp appear ZERO times; the
+    measured phenotype is a narrowed PROLIFERATIVE zone with accelerated hypertrophy and mineralisation
+  species: mouse
+  source_ref: yanagihara2025
+  uncertainty: 'CORR-071. This node was created with the alias the arm-3 mechanism candidate and that was
+    wrong. Arm 3 is POOL SIZE - the number of resting-zone progenitors. yanagihara2025 measures the rate at
+    which the pool is SPENT (proliferative zone width, transit to hypertrophy, bone length), not how many
+    progenitors there are. It is a strong result about the counter and about arms 1 and 2. It is not
+    evidence about arm 3, and the atlas must stop filing it there. Whether maintenance methylation controls
+    resting-zone NUMBER is untested by this paper and by any other.'
 - parameter: gene-level association of the DNMT1 locus with height
   value: 4.2e-35
   unit: P value, MAGMA gene analysis, two-sided

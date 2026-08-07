@@ -3500,3 +3500,47 @@ mildest protocol of the three. The trend and the one null point the same way.
 **Standing rule added.** Figure-derived values are labelled `reconstructed_from_figure` in the node
 `conditions` field and never merged with printed values, whoever produced them. `atlas/tools/compare_recon.py`
 holds both reconstructions side by side so any future correction re-runs against both.
+
+## CORR-071 — scope drift: most of rounds 70-77 was not arm 3, and the DNMT1 node was misfiled
+
+The user asked what arm 3 is. Auditing the last ten rounds against the definition, most of them were not
+working on it.
+
+**Arm 3 is pool size: the number of progenitors in the resting zone, raised in a wild-type animal with
+intact flux.** In `height = pool × amplification × h_term`, it is the first term and only the first term.
+
+**What in rounds 68-77 was actually arm 3:**
+
+- Three independent observations of more resting-zone cells under growth inhibition — `schrier2006`
+  (dexamethasone slows the numerical depletion, rabbit), `marino2008` (greater RZ cell number and wider RZ,
+  rat), `forcinito2011` (RZ height 76 vs 46 µm; RZ chondrocytes 41 vs 26 per 200 µm, P=0.002, rat). This is
+  the only direct evidence in the entire corpus that the pool term moves at all.
+- The confound that makes all three uninterpretable — a count inside a zone whose boundary is the advancing
+  secondary ossification centre (`g_l2_pool_preservation_versus_pool_expansion`).
+- The SOC-timing link (`g_l2_soc_timing_as_the_shared_intermediate`).
+
+**What was not arm 3, despite occupying most of the effort:**
+
+- The entire catch-up / exchange-rate / figure-digitisation sequence, rounds 70 through 77. That work asks
+  whether *deferred spending of the pool is recovered*. It is a question about the depletion schedule, and
+  its own answer — 75-91% recovered, a small net loss — confirms it **never adds pool**. Useful, correct,
+  and not arm 3.
+- **`yanagihara2025`.** The node built for it in round 73 carried the alias *"the arm-3 mechanism
+  candidate."* The full text contains the phrase "resting zone" **zero times**; "reserve zone" zero;
+  "Pthrp" zero. What it measures is a narrowed **proliferative** zone, accelerated hypertrophy, and bone
+  length. That is the rate at which the pool is spent, not how large it is. Strong result, wrong arm. Alias
+  and node corrected.
+
+**The reframe this audit produces, which is the substantive part.** `newton2019` reports that resting-zone
+chondrocytes acquire self-renewing stem-cell behaviour **at secondary ossification centre formation** — the
+pool is not a reservoir that exists from the start and drains, it is *founded* at a particular
+developmental moment. If that is right, arm 3's question is not "how do we add cells to an existing pool"
+but **"how many cells are recruited when the pool is founded, and is that moment manipulable."** That
+reading also explains why all three pool observations come from perturbations that delay SOC formation, and
+it raises a consequence the atlas has been avoiding: in a subject at bone age 16, SOC formation is many
+years past, so arm 3 as founding-recruitment may be structurally unavailable in this case regardless of
+whether it is solvable in principle.
+
+**Procedural note.** The `finding_never_used` check (CORR-065) catches sources reasoned past. It does not
+catch work drifting off the question it was started for. Each round's commit should state which arm it
+advances, and "none" is an acceptable answer that should be written down rather than avoided.
