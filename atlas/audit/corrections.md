@@ -3544,3 +3544,47 @@ whether it is solvable in principle.
 **Procedural note.** The `finding_never_used` check (CORR-065) catches sources reasoned past. It does not
 catch work drifting off the question it was started for. Each round's commit should state which arm it
 advances, and "none" is an acceptable answer that should be written down rather than avoided.
+
+## CORR-072 — the arm ranking was wrong for late bone age, and the cilostazol case rested on a premise the atlas already held falsified
+
+Two items, both from being asked to state things plainly.
+
+**1. The ranking.** Since round 46 the project has run on `height = pool × amplification × h_term` with pool
+named "arm 3" and treated as the prize. That decomposition is incomplete — there are **seven** terms, not
+three, and they are different kinds of thing: three rate terms (pool, amplification, h_term), a duration
+term (time to fusion), a site term (which plates remain), a non-endochondral term, and a gate (delivery).
+
+More importantly the ranking that followed was wrong for a subject at bone age 16. The atlas has carried
+two positions that cannot both be simply true: `weise2001`/`herrmann2002` say fusion is proliferative
+exhaustion, while `smith1994` records a man with disruptive ESR1 mutation at **204 cm with unfused
+epiphyses at 28, still growing, normally masculinised** — and aromatase deficiency gives the mirror result
+that *is* rescued by oestrogen. If the pool were spent at normal fusion age, removing oestrogen would buy
+nothing. It buys a decade.
+
+Both are true at different limits: **exhaustion is the ultimate ceiling, and in a normal human oestrogen
+closes the plate before that ceiling is reached.** So a normally fusing plate carries residual pool. The
+arm-3 question at late bone age therefore changes from *expand* the pool — for which nothing exists, and
+whose founding moment (`newton2019`, SOC formation) is years past — to **release the reserve that closure
+would strand**, which is the duration arm. New node `the_arms_reordered_for_late_bone_age`. The quantity
+that decides whether this is right is `g_l7_residual_physeal_reserve_at_late_bone_age`, never measured.
+
+**2. Cilostazol.** Round 67 introduced PDE3 inhibition as a cheap oral route to the h_term arm on the
+reasoning that it raises chondrocyte cGMP. **`wang2018` had been in this bibliography since before round 67
+and states that the sufficiency test was run and failed:** in newborn rat epiphyseal chondrocytes, PDE5 —
+not PDE3 — is the major cGMP-hydrolysing phosphodiesterase, and tadalafil raised peak CNP-stimulated cGMP
+by **37%** and tissue cGMP by **52%** while producing **no increase in rat long bone length over three
+weeks**. Target engagement confirmed, outcome null. Raising bulk cGMP is not sufficient.
+
+That has a constructive consequence rather than only a negative one: if bulk cGMP is inert and receptor
+agonism is not, the active variable is **compartmentalised signalling at the NPR-B guanylyl cyclase**, and
+no phosphodiesterase inhibitor can reproduce it because it acts on the pool rather than the source.
+
+`kawabe2025` is not thereby refuted — its proposed route is PKG → potassium channel → hyperpolarisation →
+TRPM7 calcium influx, not bulk cGMP — but it is a single abstract-only mouse study, and the only human PDE3
+lesion on record (`maass2015`) is a **cAMP** lesion whose skeletal phenotype is **brachydactyly**.
+
+**This is the fourth instance of the CORR-065 pattern** — a source held, its finding extracted into
+`one_line_finding`, and then reasoned past. `wang2018` still shows `full_text_read: None`. The
+`finding_never_used` check does not catch this class, because `wang2018` *was* cited; it was cited without
+its content being allowed to bear on a conclusion drawn in the same layer. That is a harder failure to
+automate against and it is recorded here without a tooling fix, which is itself worth noting.

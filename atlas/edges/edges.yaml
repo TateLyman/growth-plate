@@ -19341,3 +19341,51 @@ edges:
   notes: P < 4.2e-35. A gene-level aggregate over a locus rather than a causal variant, and MSK-KP aggregates published GWAS
     so the signal rides on the very large height GWAS. Recorded because it is the only human leg this lead has.
   traversal_usable: true
+- edge_id: e01259
+  source: the_arms_reordered_for_late_bone_age
+  target: growth_cessation
+  relation: precedes
+  context: human genetic natural experiments on the oestrogen axis - ESR1 resistance and aromatase deficiency - against animal
+    evidence that proliferative exhaustion alone can stop growth
+  evidence_tier: T1
+  refs:
+  - smith1994
+  - weise2001
+  - newton2019
+  confidence: B
+  notes: Exhaustion is the ultimate ceiling; oestrogen closes the normal human plate before that ceiling is reached, so a
+    normally fusing plate carries residual pool. That reorders the arms at late bone age - the target becomes releasing
+    reserve that closure would strand, not expanding a pool whose founding moment has passed.
+  traversal_usable: true
+- edge_id: e01260
+  source: vosoritide_versus_cilostazol_decision
+  target: npr2_receptor
+  relation: activates
+  sign: +
+  context: rat epiphyseal chondrocytes for the phosphodiesterase comparison; human randomised trial for the CNP analogue arm
+  evidence_tier: T1
+  refs:
+  - wang2018
+  - kawabe2025
+  - dauber2026
+  confidence: C
+  notes: The decision turns on a falsified premise rather than on relative potency. wang2018 raised chondrocyte cGMP 37-52 per
+    cent with a PDE5 inhibitor and got no length gain, so bulk cGMP elevation is not sufficient and a PDE inhibitor is not
+    equivalent to receptor agonism. Compartmentalised signalling at the NPR-B guanylyl cyclase is the implied active variable.
+  traversal_usable: true
+- edge_id: e01261
+  source: vosoritide_versus_cilostazol_decision
+  target: erdafitinib
+  relation: correlates_with
+  sign: +
+  context: human clinical pharmacology; erdafitinib unbound Cmax 6.3 nM against an FGFR3 IC50 of 3.0 nM at the approved 8 mg
+    dose, with phosphate as the dose-limiting on-target effect
+  evidence_tier: T2
+  refs:
+  - fda_balversa_review_2019
+  confidence: C
+  notes: 'Two reasons the pairing favours the peptide. First, erdafitinib is not saturating at its target, so a second agent
+    acting downstream in the same cascade is dose-sparing rather than redundant. Second, erdafitinib is a CYP3A4
+    time-dependent inhibitor AND inducer and cilostazol is a CYP3A4 substrate, so their combination has an unpredictable and
+    time-varying effect on cilostazol exposure; vosoritide is a peptide and has no such interaction.'
+  traversal_usable: true

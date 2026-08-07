@@ -1,0 +1,142 @@
+id: the_arms_reordered_for_late_bone_age
+name: The arms, reordered - closure is the binding constraint at bone age 16, not pool
+aliases:
+- arm ranking
+- what actually limits height at BA16
+- pool release rather than pool expansion
+type: process
+layer: L12
+stub: false
+summary: 'THE PROJECT HAS CARRIED THE WRONG PRIORITY SINCE ROUND 46. The working decomposition was height
+  = pool x amplification x h_term, with pool named arm 3 and treated as the prize because it multiplies
+  rather than adds. That decomposition is incomplete and the ranking that followed from it is wrong for
+  a subject at bone age 16. THE FULL SET IS SEVEN, NOT THREE, AND THEY ARE NOT THE SAME KIND OF THING.
+  Three are RATE terms - pool size, amplification (divisions per progenitor spent) and h_term (terminal
+  hypertrophic cell volume). One is a DURATION term - time until fusion. One is SITE - which plates are
+  still open and what reserve each holds. One is NON-ENDOCHONDRAL - disc height, posture, and at the
+  extreme, distraction. And one is not an arm at all but a gate on every other: delivery, the size-charge-
+  residence filter. WHY THE RANKING INVERTS. The atlas has held two positions that cannot both be true.
+  weise2001 and herrmann2002 say fusion is proliferative exhaustion - the pool runs out. But smith1994
+  records a man with a disruptive ESR1 mutation at 204 cm with unfused epiphyses at 28, still growing,
+  otherwise normally masculinised, and aromatase deficiency gives the mirror-image result that IS rescued
+  by oestrogen. If the pool were spent at normal fusion age, removing oestrogen would buy nothing. It buys
+  a decade. THE RECONCILIATION IS THAT BOTH ARE TRUE AT DIFFERENT LIMITS: exhaustion sets an ultimate
+  ceiling, and in a normal human oestrogen closes the plate BEFORE that ceiling is reached. So the normal
+  plate fuses with pool remaining. WHAT THAT MEANS FOR ARM 3. The problem at bone age 16 is not that the
+  pool is too small - it is that the pool still there is about to be locked away by closure. The arm-3
+  question changes from EXPAND the pool, for which nothing exists, to RELEASE the reserve that closure
+  would strand, for which there is a human proof of extreme magnitude. Arm 3 as founding-recruitment
+  (newton2019: the self-renewing pool is created at secondary ossification centre formation) is
+  structurally unavailable at bone age 16 because that moment is years past. Arm 3 as reserve-release is
+  the same intervention as the duration arm. THE REORDERED RANKING FOR THIS CASE, BY PROVEN HUMAN EFFECT
+  SIZE PER UNIT OF REMAINING RISK: (1) closure timing, largest and partially exploited; (2) amplification,
+  real numbers and dose-limited; (3) h_term, best-served pharmacologically and closest to solved;
+  (4) site, identified and untouched; (5) pool expansion, empty and probably not the binding constraint
+  here; (6) non-endochondral, real centimetres but not growth; (7) delivery, a solved gate for small
+  molecules and a live one for peptides.'
+quantitative:
+- parameter: adult height with a disruptive ESR1 mutation, epiphyses unfused
+  value: '204'
+  unit: cm
+  conditions: 28-year-old male, homozygous disruptive ESR1 mutation, incomplete epiphyseal closure
+    documented radiographically, otherwise normal masculinisation; exogenous oestrogen did not rescue
+    fusion because he was resistant rather than deficient
+  species: human
+  source_ref: smith1994
+  uncertainty: 'n=1, AND IT IS THE LARGEST SINGLE HUMAN NUMBER IN THIS ATLAS FOR ANY MECHANISM. The
+    dissociation is what carries it: androgen action was intact and did not fuse the plates, so this is
+    an oestrogen-specific result and not a general sex-steroid one. The mirror case - aromatase deficiency,
+    where fusion IS rescued by giving oestrogen - closes the loop from the other side.'
+- parameter: 'the contradiction that forces the reordering'
+  value: exhaustion versus oestrogen
+  unit: qualitative
+  conditions: weise2001 and herrmann2002 establish that the plate exhausts and that exhaustion alone can
+    stop growth; smith1994 and the aromatase-deficiency cases establish that removing oestrogen keeps
+    plates open and growth running into the third decade
+  species: human
+  source_ref: weise2001
+  uncertainty: 'BOTH ARE TRUE AND THE ATLAS HAS NEVER STATED THE RELATION. Exhaustion is the ultimate
+    ceiling; oestrogen is the proximate cause of closure in a normal human, and it fires first. The
+    testable consequence is that a normally fusing plate contains RESIDUAL POOL at the moment it closes -
+    which is exactly the quantity g_l7_residual_physeal_reserve_at_late_bone_age asks for and nobody has
+    measured. If that residual is large, the duration arm is the whole game at late bone age. If it is
+    near zero, oestrogen blockade buys time the plate cannot use, and the ranking reverts.'
+- parameter: 'why arm 3 as pool expansion is probably unavailable at bone age 16'
+  value: the pool is founded at SOC formation
+  unit: qualitative
+  conditions: newton2019 reports resting-zone chondrocytes acquire self-renewing stem-cell behaviour at
+    secondary ossification centre formation, a radical switch in clonality; all three observations of a
+    larger resting-zone pool (schrier2006, marino2008, forcinito2011) come from perturbations that DELAY
+    SOC formation
+  species: mouse
+  source_ref: newton2019
+  uncertainty: 'If the pool is founded rather than drained, then the only demonstrated way to enlarge it
+    acts at a developmental moment that a bone-age-16 subject passed years ago. That does not prove the
+    founded pool cannot be added to afterwards - that is precisely what
+    g_l2_pool_preservation_versus_pool_expansion does not resolve - but it means arm 3 as expansion has no
+    available entry point in this case, while arm 3 as RELEASE does.'
+- parameter: 'remaining reserve by site at bone age 16'
+  value: spine 4-6 years behind the hand
+  unit: years of skeletal maturity
+  conditions: costa2021 reports thoracolumbar ring apophysis at stage 1 of 4 in 15-year-old males, while
+    the hand-wrist atlas reads near-mature
+  species: human
+  source_ref: costa2021
+  uncertainty: The site arm is identified and completely untouched pharmacologically. It also carries the
+    largest hazard, because an FGFR inhibitor drives every endochondral plate at once and the later
+    treatment starts the larger the share of output routed into the vertebral column.
+localization:
+- 'growth plate: all seven arms terminate here except non-endochondral height'
+- 'systemic: the duration arm is set by circulating oestrogen acting on the plate, not by a local signal'
+human_evidence: direct
+human_evidence_note: The reordering rests on human genetic natural experiments - ESR1 resistance and
+  aromatase deficiency - with measured adult heights and radiographic epiphyseal status.
+species_basis:
+- human
+- mouse
+translation_risk: not_applicable
+translation_risk_reason: The load-bearing evidence for the reordering is human. The pool-founding claim
+  that demotes arm 3 is murine and is flagged as such.
+confidence: B
+claim_grades:
+- claim: In a normal human the plate closes because of oestrogen before it closes from exhaustion, so
+    residual pool exists at the moment of normal fusion.
+  grade: B
+  basis: Two independent human genetic lesions on the same axis - receptor-side (ESR1) and ligand-side
+    (aromatase) - with continued growth into the third decade, against animal evidence that exhaustion
+    alone can stop growth. Graded B not A because the residual pool at fusion has never been measured
+    directly in a human.
+- claim: At bone age 16 the duration arm has a larger available effect than the pool arm.
+  grade: C
+  basis: Follows from the claim above plus the absence of any intervention that expands the pool. It is a
+    ranking argument built on one n=1 human case and a null, not a head-to-head comparison.
+- claim: Arm 3 as pool expansion has no entry point at bone age 16.
+  grade: E
+  basis: Inference from newton2019's founding model plus the observation that every positive pool result
+    comes from a perturbation that delays SOC formation. Explicitly not established - see
+    g_l2_pool_preservation_versus_pool_expansion.
+key_refs:
+- ref_id: smith1994
+  first_author: Smith EP
+  year: 1994
+  type: primary
+  one_line_finding: Disruptive ESR1 mutation - 204 cm, unfused epiphyses and continued growth at 28 with
+    normal masculinisation.
+- ref_id: newton2019
+  type: primary
+  one_line_finding: Resting-zone chondrocytes switch to self-renewing clonal behaviour at secondary
+    ossification centre formation.
+- ref_id: weise2001
+  type: primary
+  one_line_finding: Growth plate senescence is a function of proliferation, establishing exhaustion as a
+    real limit.
+- ref_id: costa2021
+  type: primary
+  one_line_finding: Thoracolumbar ring apophysis is at stage 1 of 4 in 15-year-old males, so spinal
+    reserve persists long after the hand reads mature.
+open_questions:
+- g_l7_residual_physeal_reserve_at_late_bone_age
+- g_l7_untreated_oestrogen_null_ceiling
+- g_l2_pool_preservation_versus_pool_expansion
+contradicts: []
+last_verified: '2026-08-07'
