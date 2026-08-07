@@ -46,11 +46,13 @@ summary: 'The atlas has treated arm 3 as a closed door - the resting zone holds 
   output: to run the counter slowly while the plate keeps producing. Nothing does this. But a ceiling that
   is epigenetic, growth-driven, reversible in culture, and set at different rates in different species
   is a dial, not a wall, and the atlas has been describing it as a wall. THIS ARM IS NOT CLOSED AND MUST
-  NOT BE WRITTEN UP AS THOUGH IT WERE. What is established is that the counter can be slowed and that the
-  terminal event can be deferred. What is NOT established is whether any of that converts into greater
-  final length, because the exchange rate is below one in all three experiments that measure it and every
-  known way to slow the counter also slows growth. The arm stays open until an intervention exists that
-  slows the counter while the plate keeps producing.'
+  NOT BE WRITTEN UP AS THOUGH IT WERE. What is established is that the counter can be slowed, that the
+  terminal event can be deferred, and - once the figures are digitised and integrated - that suppress-then-
+  release is approximately height-NEUTRAL rather than height-negative: two of the three experiments ran
+  until growth stopped and both closed their deficits to within a couple of millimetres (CORR-069). The
+  sub-unity exchange rate does not bound the outcome, because the recovery-phase overshoot compensates for
+  it. What is still NOT established is any route to more length than the animal would have reached anyway.
+  The arm stays open until an intervention exists that slows the counter while the plate keeps producing.'
 quantitative:
 - parameter: resting-zone BrdU labelling index, late fetal versus 5, 9 and 17 weeks
   value: 95.6, 9.2, 9.2, 7.6
@@ -417,6 +419,66 @@ quantitative:
     weeks of recovery after eight weeks of near-total suppression from the first day of life. Whether the
     gap would have closed with longer follow-up is not knowable from this design, and the atlas records it
     as an open question rather than as a negative result.'
+- parameter: 'THE ENDPOINT, COMPUTED. Forcinito Fig 1B integrated - residual tibial deficit when both
+    groups stop growing'
+  value: about 1
+  unit: mm residual out of a 10.1 mm deficit, about 88 per cent recovered
+  conditions: 'digitised from the published figure and integrated by trapezoid (atlas/tools/catchup_math.py).
+    Tibial growth rate from 4 weeks (end of tryptophan deficiency) to 18 weeks: control integrates to about
+    18.6 mm, Trp- to about 27.5 mm, so the deprived animals gain about 8.9 mm on controls against a measured
+    10.1 mm deficit. Both curves reach approximately 0 mm/wk by 16-18 weeks.'
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: 'THIS IS THE NUMBER THE CORPUS COLLECTED AND NEVER REPORTED, AND IT IS A FIGURE READ, NOT A
+    PUBLISHED VALUE. Point estimates carry roughly 10-15 per cent reading error which compounds through the
+    integration, so the residual should be read as ON THE ORDER OF 1-2 mm rather than as 1.2. What makes it
+    trustworthy is not its precision but its agreement: gafni2001 measured 1.6 +/- 1.6 mm (NS) by direct
+    caliper in a different species with a different inhibitor. Two independent experiments, both run until
+    growth stopped, both landing within a couple of millimetres of complete recovery. AND BOTH CURVES ARE
+    FLAT AT THE END - these animals had finished growing, so this is a final value and not a snapshot.'
+- parameter: 'why Marino disagrees - its animals had not stopped growing'
+  value: 4.2 mm deficit at 21 weeks, gap still closing at 0.29 mm/wk
+  unit: mm and mm per week
+  conditions: 'digitised from Fig 2 tibia panel: deficit 14.0 mm at 8 weeks (end of PTU, control 36.0
+    versus PTU 22.0) narrowing to 4.2 mm at 21 weeks (39.7 versus 35.5), about 70 per cent recovered;
+    growth rate 13-21 weeks is 0.15 mm/wk in controls against 0.44 mm/wk in PTU animals'
+  species: rat
+  source_ref: marino2008
+  uncertainty: 'NEITHER CURVE IS FLAT AT THE LAST TIMEPOINT, so incomplete at 21 weeks is not the same as
+    permanently incomplete - which is exactly what the authors wrote (incomplete AT THAT TIME) and exactly
+    what the atlas should have taken them to mean. The PTU animals are growing three times faster than
+    controls when the experiment ends. The insult was also far harsher and earlier - eight weeks of
+    hypothyroidism from the first day of life, against four weeks of tryptophan deficiency and five weeks
+    of dexamethasone in the two that closed.'
+- parameter: 'THE PLATE RECOVERS BETTER THAN ANY OTHER TISSUE IN THE SAME ANIMALS'
+  value: tibia 89 per cent of control, against 55 per cent for body mass and 55-58 per cent for organs
+  unit: per cent of control at the last measurement
+  conditions: 'digitised from Fig 2: tibia length 89.4 per cent at 21 weeks, tail length 82.9 per cent at
+    16 weeks, body mass 54.5 per cent at 16 weeks, heart 58.0, liver 56.9 and kidney 54.6 per cent at 21
+    weeks'
+  species: rat
+  source_ref: marino2008
+  uncertainty: 'AN ORDERING NOBODY IN THIS LITERATURE HAS COMMENTED ON AND IT IS THE MOST ENCOURAGING ROW
+    IN THE NODE. In an animal whose body mass and every organ mass sit near half of control, LONGITUDINAL
+    BONE GROWTH IS THE MOST COMPLETELY RESTORED MEASURE IN THE BODY. The growth plate does not merely
+    participate in catch-up; it recovers preferentially. Whatever the plate is protecting, it protects
+    better than the soma does. Figure-read percentages with the usual reading error, but the ORDERING is
+    far outside that error - 89 against 55 is not a digitisation artefact.'
+- parameter: 'the THIRD independent observation of a larger resting-zone pool under growth inhibition'
+  value: RZ height 76 versus 46 um; RZ chondrocytes 41 versus 26 per 200 um
+  unit: micrometres and cells per 200 um
+  conditions: Forcinito Fig 1A at 4 weeks of age, immediately at the end of tryptophan deficiency; reported
+    P values are P=0.05 for RZ height and P=0.002 and P=0.02 for RZ chondrocyte number; growth plate height,
+    PZ height, PZ and HZ chondrocytes per column and terminal HZ chondrocyte size were all likewise delayed,
+    while HZ column density was not significant
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: 'THREE INHIBITORS, THREE MODELS, SAME DIRECTION - dexamethasone in rabbit (schrier2006),
+    hypothyroidism in rat (marino2008) and now tryptophan deficiency in rat. Resting-zone cell number is
+    among the most significant of all the structural measures here (P=0.002). The confound is unchanged and
+    is why g_l2_pool_preservation_versus_pool_expansion exists: a count inside a zone whose boundary is set
+    by the advancing secondary ossification centre cannot separate progenitors spared, progenitors made,
+    and territory not yet taken.'
 localization:
 - 'growth plate resting zone: where the program is cashed out into height; pool size and labelling index
   both fall with age'

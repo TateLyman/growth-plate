@@ -3407,3 +3407,46 @@ resting chondrocytes self-renewing, in which case a wider resting zone holds mor
 kind and the `marino2008` observation is explained away rather than banked. Logged as
 `g_l2_soc_timing_as_the_shared_intermediate`, graded E, with a lineage-tracing design that scores at matched
 SOC *stage* rather than matched age and separates the two readings by clone count.
+
+## CORR-069 — the exchange-rate worry was misplaced: the overshoot compensates, and the corpus had the answer in its figures
+
+Rounds 70 and 72 built a constraint out of the three published exchange rates — tryptophan 4 weeks spent
+for ~2 bought, dexamethasone 5 for ~3, hypothyroidism 8 for ~5 — and concluded *"you never buy back more
+programme-time than you spend in growth-time… the shift is proportionate, the overshoot is not."* Round 70
+went further and called cycling height-negative; CORR-062 walked that back to open. The figures, digitised
+and integrated, settle it the other way.
+
+**Forcinito Fig 1B integrated** (`atlas/tools/catchup_math.py`): from 4 weeks to 18 weeks, control tibial
+growth integrates to ~18.6 mm and Trp− to ~27.5 mm, so the deprived animals gain **~8.9 mm on controls
+against a measured 10.1 mm deficit** — about **88% recovered, residual on the order of 1–2 mm**. And both
+growth-rate curves reach ~0 mm/wk by 16–18 weeks, so **the animals had finished growing**: this is a final
+value, not a snapshot.
+
+That agrees with `gafni2001`, which measured **1.6 ± 1.6 mm (NS)** by direct caliper — different species,
+different inhibitor, independently arrived at the same place. Two experiments run to plateau, both closing
+to within a couple of millimetres.
+
+**Marino disagrees for a reason the figure makes plain.** Its deficit narrows from 14.0 mm at 8 weeks to
+4.2 mm at 21 weeks (~70%), but **neither curve is flat at the last timepoint** — PTU animals are growing at
+0.44 mm/wk against 0.15 in controls, three times faster, when the experiment ends. "Incomplete at that time"
+is exactly what the authors wrote, and I should have taken them at their word instead of treating it as a
+permanent deficit. Its insult was also far harsher and earlier: eight weeks of hypothyroidism from day one,
+against four weeks of tryptophan deficiency and five of dexamethasone in the two that closed.
+
+**So the sub-unity exchange rate does not bound the length outcome.** The recovery-phase overshoot
+compensates for it, and the reasoning error was treating a ratio between two *programme-time* quantities as
+though it constrained a *length* quantity. The atlas's conclusion moves from "possibly height-negative,
+unresolved" to **approximately height-neutral, on two independent experiments run to plateau**. What is
+still unestablished — and unchanged — is any route to *more* length than the animal would have reached
+anyway.
+
+**Caveat carried in the node, not buried here.** These are figure reads with roughly 10–15% point error
+compounding through integration. The residual is "on the order of 1–2 mm," not 1.2. What makes it usable is
+concordance with an independently measured value, not its own precision.
+
+**And one thing nobody in this literature appears to have noticed.** In Marino's animals at the last
+measurement, tibia length is **89.4%** of control while body mass is **54.5%**, heart 58.0%, liver 56.9%,
+kidney 54.6% and tail 82.9%. In an animal sitting near half of control on every mass measure, **longitudinal
+bone growth is the most completely restored quantity in the body.** The plate does not merely participate in
+catch-up — it recovers preferentially. That ordering is far outside digitisation error and it is the most
+encouraging observation in this arm.
