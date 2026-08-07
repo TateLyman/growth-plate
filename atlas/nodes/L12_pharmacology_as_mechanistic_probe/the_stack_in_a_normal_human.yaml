@@ -1276,6 +1276,96 @@ quantitative:
     LIMITS: abad2002 is rabbit, acute surgical ablation rather than senescence, and 7 of 12 is not
     universal; korpershoek2026 is a feasibility study whose own control arm failed to form the bars it was
     designed to model, which the authors flag as limiting reliability.'
+- parameter: ROUND 67 - THE PROPERTY SCREEN. Solute size at which entry into the growth plate stops
+  value: between 10 and 40
+  unit: kDa
+  conditions: live multiphoton imaging of the murine proximal tibial plate after intracardiac injection
+    of fluorescein and 3, 10, 40 and 70 kDa fluoresceinated dextrans; entry from all three vascular fronts
+    at or below 10 kDa, no detectable entry at 40 kDa and above
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'THE STACK HAS BEEN ARGUED ENTIRELY BY TARGET. This is the first row that asks what a molecule
+    must BE. Every small molecule in the stack - erdafitinib 446.5 Da, anastrozole 293.4, cilostazol 369.5,
+    tadalafil 389.4, melatonin 232.3 - sits more than an order of magnitude below the permissive band,
+    so the exposure caveat the atlas attaches to peptides and nanoparticles does not weaken the small-molecule
+    arms. Dextran is a random coil and its radius at a given mass is about twice that of a globular protein,
+    so this cutoff must NOT be applied to proteins by mass alone.'
+- parameter: 'ROUND 67 - a hypothesis killed: relative permissiveness of the epiphyseal versus metaphyseal
+    front for solutes up to 10 kDa'
+  value: equal
+  unit: qualitative
+  conditions: same experiment; directionality and rate of arrival imaged live for each tracer
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'If the resting zone were behind a delivery barrier the hypertrophic zone lacks, arm 3 would
+    have a pharmacokinetic excuse for its failure. It does not. The reserve pool is as reachable as anything
+    else in the plate, so arm 3 fails for biological reasons and no amount of delivery engineering rescues
+    it. This row is here because it removes an explanation the atlas would otherwise have reached for.'
+- parameter: 'ROUND 67 - erdafitinib unbound fraction, healthy versus cancer, and the consequence for dosing'
+  value: 0.51 versus 0.32
+  unit: '%'
+  conditions: FDA multidisciplinary review; total Cmax and AUC0-24h are 48 and 44 per cent HIGHER in cancer
+    patients at the same single dose, and the population model finds a 50 per cent fall in AGP raises total
+    clearance by 50 per cent while leaving FREE clearance unchanged
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'THE PRACTICAL RULE THIS ROUND PRODUCES. Every clinical erdafitinib number in this atlas
+    - efficacy, the phosphate DLT, the SCFE cases - was generated in cancer patients, whose AGP is high
+    and whose free fraction is therefore 1.6-fold lower. Because free clearance does not move with AGP,
+    free exposure translates to a healthy adolescent on a MILLIGRAM basis, while a total-concentration
+    assay in that adolescent reads 44-48 per cent lower and would be misread as underdosing. Do not monitor
+    total concentration. The label serum-phosphate titration is a free-drug pharmacodynamic readout and
+    self-corrects for AGP, which makes it the correct variable - arrived at by the label for other reasons.'
+- parameter: 'ROUND 67 - erdafitinib unbound Cmax at the approved 8 mg dose against its FGFR3 IC50'
+  value: 6.3 against 3.0
+  unit: nM
+  conditions: FDA review; enzymatic IC50s FGFR1 1.2, FGFR2 2.5, FGFR3 3.0, FGFR4 5.7 nM; the reviewer
+    cites the 6.3 nM figure to note that RET (Kd 0.94 nM) and fifteen further kinases at 3.4-45 nM are
+    engaged at clinical exposure
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'The top of the approved label delivers roughly twice the free concentration needed for
+    half-maximal FGFR3 inhibition and no more. The drug is not in excess at its target even at maximum
+    dose, which bounds how much of the arm-2 effect can be attributed to FGFR3 and makes the off-target
+    kinase set a co-equal candidate rather than a footnote.'
+- parameter: 'ROUND 67 - physeal enhancement, neutral versus anionic contrast agent at matched size'
+  value: higher for the neutral agent
+  unit: enhancement ratio, P < 0.05
+  conditions: 3 T MRI of 3-week-old piglet knees, intravenous gadoteridol (neutral) versus gadopentetate
+    dimeglumine (anionic); significant in physis, epiphyseal cartilage and secondary ossification centre
+  species: porcine
+  source_ref: menezes2006
+  uncertainty: 'The second property axis, and the only in vivo charge-isolating comparison available in
+    a LARGE-ANIMAL growing physis. Charge changes distribution into the plate independently of size, because
+    aggrecan gives the matrix a high fixed negative charge. Nothing in the stack was selected with this
+    in mind, and no agent in it was chosen for being cationic.'
+- parameter: 'ROUND 67 - matrix binding converts a short receptor pulse into a long one'
+  value: prolonged AKT activation, abolished by matrilin-3 knockout
+  unit: qualitative with genetic control
+  conditions: matrilin-3 scFv-IGF-1 fusion CV1574-1 versus IGF-1; mouse; and at equimolar 39 nmol/kg subcutaneous,
+    IGF-1 lowered blood glucose while the fusion did not
+  species: mouse
+  source_ref: tailor2024
+  uncertainty: 'THE THIRD PROPERTY AXIS AND THE MOST IMPORTANT ONE. Residence time at the target was changed
+    by an affinity property, not by changing the ligand, and it moved efficacy and toxicity in opposite
+    directions at the same molar dose. The plate is alymphatic, so anything that binds the matrix is cleared
+    only by back-diffusion. This is the mechanism behind trompet2024 - a bead whose stimulus is undetectable
+    at three weeks driving an effect still widening at six months - and it says the exposure variable for
+    this organ is residence, not plasma half-life. No agent in the current stack was selected for matrix
+    affinity, and erdafitinib has an effective half-life of 58.9 h with once-daily dosing, i.e. a deliberately
+    FLAT profile.'
+- parameter: 'ROUND 67 - the supplement column, read by physicochemistry: icariin versus its aglycone'
+  value: 676.7 Da / TPSA 234 versus 368.4 Da / TPSA 96.2
+  unit: Da and square angstrom
+  conditions: PubChem computed descriptors for icariin and icaritin
+  species: not_applicable
+  source_ref: pubchem_compound_properties
+  uncertainty: 'Icariin as dosed sits far outside the polar-surface-area range associated with good oral
+    absorption; the aglycone sits inside it. The reviews consistently describe icariin as poorly bioavailable
+    with icaritin and icariside II as the active metabolites, so the 60 mg icariin in the supplement column
+    is a prodrug whose conversion depends on gut deglycosylation and is not measured. FLAGGED AS INFERENCE:
+    no primary human icariin pharmacokinetic study has been read, and this row must not be cited as a
+    measured bioavailability.'
 localization:
 - growth plate; the CNP arm acts on the hypertrophic zone and the FGFR3/GH arm on the proliferative zone
 human_evidence: direct

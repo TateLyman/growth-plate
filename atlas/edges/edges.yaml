@@ -19183,3 +19183,81 @@ edges:
   notes: CATSHL is partial FGFR3 loss so the lifetime comparison does not bound maximal inhibition; this is a weighing of
     evidence, not a measurement.
   traversal_usable: false
+- edge_id: e01249
+  source: drug_property_screen
+  target: growth_plate_drug_exposure
+  relation: required_for
+  context: mouse proximal tibial growth plate imaged live by multiphoton microscopy after intracardiac tracer injection;
+    piglet knee physis at 3 T after intravenous gadolinium chelate
+  evidence_tier: T1
+  refs:
+  - farnum2006
+  - menezes2006
+  confidence: C
+  notes: 'Size and charge are the gate on exposure. Solutes up to 10 kDa enter the plate from all three vascular fronts and
+    40 kDa and larger dextrans do not; at matched size a neutral chelate reaches the physis better than an anionic one.
+    Sign-exempt relation: this is a permissive constraint on the exposure term, not a directional effect on growth.'
+  traversal_usable: true
+- edge_id: e01250
+  source: drug_property_screen
+  target: resting_zone_niche
+  relation: hypothesized_link
+  sign: unknown
+  context: mouse, 4-5 week Col2-GFP proximal tibia; directionality of tracer arrival compared between the epiphyseal and
+    metaphyseal vascular fronts
+  evidence_tier: T1
+  refs:
+  - farnum2006
+  confidence: speculative
+  gap_id: g_l12_size_charge_law_in_human_physis
+  notes: RECORDED AS A KILLED HYPOTHESIS. If the resting zone sat behind a delivery barrier the other zones lacked, the
+    failure of pool-expansion strategies would have a pharmacokinetic explanation. farnum2006 reports the epiphyseal and
+    metaphyseal sides EQUALLY permissive for solutes up to 10 kDa, so that explanation is unavailable and arm 3 fails for
+    biological reasons. The edge is speculative and sign unknown because it encodes an absence of asymmetry in one species.
+  traversal_usable: false
+- edge_id: e01251
+  source: alpha1_acid_glycoprotein
+  target: erdafitinib
+  relation: binds
+  context: human plasma; mean unbound fraction 0.51 per cent in healthy subjects and 0.32 per cent in cancer patients, and
+    a population model in which a 50 per cent fall in AGP leaves FREE clearance unchanged
+  evidence_tier: T2
+  refs:
+  - fda_balversa_review_2019
+  - fda_balversa_label_2025
+  confidence: A
+  notes: 'The pharmacologically active species is the 0.3-0.5 per cent that is unbound, and only unbound drug diffuses into
+    avascular cartilage. Because free clearance is invariant to AGP, free exposure translates from the oncology population
+    to a healthy adolescent on a milligram basis while TOTAL plasma concentration reads 44-48 per cent lower in the same
+    person. Sign-exempt relation: a binding event has no direction of effect.'
+  traversal_usable: true
+- edge_id: e01252
+  source: alpha1_acid_glycoprotein
+  target: infection_burden_growth
+  relation: correlates_with
+  sign: '-'
+  context: human; AGP is an acute-phase reactant, and in a cross-sectional cohort of 740 children CRP and AGP were the
+    strongest negative correlates of IGF-1
+  evidence_tier: T1
+  refs:
+  - madigan2026
+  confidence: B
+  notes: THE COLLISION THIS NODE EXISTS TO RECORD. One acute-phase protein sits on both sides of the stack. An inflammatory
+    episode raises AGP, which lowers IGF-1 and simultaneously lowers the free fraction of erdafitinib. The two facts live
+    in unconnected literatures - paediatric nutrition and oncology clinical pharmacology - and nothing in either field
+    would surface the interaction.
+  traversal_usable: true
+- edge_id: e01253
+  source: cartilage_targeted_delivery
+  target: drug_property_screen
+  relation: correlates_with
+  sign: +
+  context: mouse; matrilin-3-targeted IGF-1 fusion versus equimolar IGF-1, 39 nmol/kg subcutaneous, C57BL/6
+  evidence_tier: T1
+  refs:
+  - tailor2024
+  confidence: C
+  notes: Matrix affinity is a residence-time property and it changed both efficacy and toxicity without changing the ligand.
+    The fusion prolonged AKT signalling relative to IGF-1 and the prolongation was abolished by matrilin-3 knockout, and at
+    equimolar dose IGF-1 lowered blood glucose while the fusion did not. Therapeutic index moved because distribution moved.
+  traversal_usable: true

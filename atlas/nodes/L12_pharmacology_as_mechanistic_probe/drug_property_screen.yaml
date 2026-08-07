@@ -1,0 +1,289 @@
+id: drug_property_screen
+name: Physicochemical properties as the selection variable for growth-plate pharmacology
+aliases:
+- size charge residence law
+- what a molecule needs to be, not what it needs to hit
+- free fraction at the plate
+type: process
+layer: L12
+stub: false
+summary: 'Every agent in this atlas has been chosen and argued about by its TARGET. This node asks the
+  other question: what must a molecule BE to act on a growth plate at all, independent of what it hits.
+  Three properties are measured, and each of them has an in vivo experiment behind it. SIZE: intracardiac
+  fluorescein and fluoresceinated dextrans imaged live in the murine proximal tibial plate show that solutes
+  up to 10 kDa enter from all three vascular fronts - epiphyseal, metaphyseal and the perichondrial ring
+  - and that the epiphyseal and metaphyseal sides are EQUALLY permissive, while 40 kDa and larger dextrans
+  do not enter at all within a detection limit of a few percent of vascular concentration (farnum2006).
+  CHARGE: in growing piglet knees at 3 T, the neutral gadolinium chelate gadoteridol gave significantly
+  higher enhancement of the physis, epiphyseal cartilage and secondary ossification centre than the doubly
+  anionic gadopentetate at matched size, and the authors conclude the ionic agent is the one that reports
+  fixed charge density rather than anatomy (menezes2006). RESIDENCE: an IGF-1 fused to a matrilin-3-binding
+  antibody fragment produced a PROLONGED increase in AKT signalling relative to IGF-1 itself, and the
+  prolongation was abolished when matrilin-3 was knocked out - matrix affinity, not ligand chemistry,
+  set the duration of receptor activation (tailor2024). Put together these say the plate selects for small,
+  neutral-to-cationic, matrix-binding molecules, and that a large anionic non-binding molecule is disqualified
+  before its target is even discussed. TWO CONSEQUENCES FOR THIS PROJECT. First, the exposure caveat the
+  atlas correctly attaches to peptides, PEGylated prodrugs and nanoparticles does NOT transfer to the
+  small molecules in the stack: erdafitinib (446.5 Da), anastrozole (293.4 Da), cilostazol (369.5 Da),
+  tadalafil (389.4 Da) and melatonin (232.3 Da) are all more than an order of magnitude below the permissive
+  band, so for them the plate is not a delivery problem. Second, and against a hypothesis this node was
+  written to test, the resting zone is NOT pharmacologically privileged: farnum2006 finds the epiphyseal
+  and metaphyseal routes equally permissive for small solutes, so arm 3 has not failed because drugs cannot
+  reach the reserve pool. That explanation is dead. WHAT IS NEW FOR ERDAFITINIB. The FDA multidisciplinary
+  review states that erdafitinib is 99.7% bound, preferentially to alpha-1-acid glycoprotein, and that
+  the mean unbound fraction is 0.51% in HEALTHY subjects against 0.32% in CANCER patients - the population
+  in which every efficacy, toxicity and SCFE number in this atlas was generated. Because only unbound
+  drug diffuses into avascular cartilage, and because the applicant''s own population model found that
+  a 50% fall in AGP raises total clearance by 50% but leaves FREE clearance unchanged, free exposure translates
+  from the oncology population to a healthy adolescent on a milligram basis while TOTAL plasma concentration
+  in the same person will read about 44-48% lower. Therapeutic drug monitoring on total concentration
+  would therefore read as underdosing and invite a dose increase that is not warranted. The label''s serum-phosphate
+  titration, by contrast, is a free-drug pharmacodynamic readout and is self-correcting for AGP - which
+  makes it the right variable by accident. The same review reports unbound Cmax at the approved 8 mg dose
+  as 6.3 nM against an FGFR3 enzymatic IC50 of 3.0 nM, so the approved dose delivers roughly twice the
+  free concentration needed for half-maximal FGFR3 inhibition and no more - the drug is not in excess
+  at its target even at the top of its label.'
+quantitative:
+- parameter: upper solute size that enters the growth plate from the systemic vasculature
+  value: '10'
+  unit: kDa
+  conditions: intracardiac injection of fluorescein (332.3 Da) or fluoresceinated dextrans of 3, 10, 40
+    and 70 kDa; live multiphoton imaging of the proximal tibial plate in 4-5 week Col2-GFP mice; entry
+    observed from all three vascular directions at or below this size
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'abstract only - the full text is paywalled and the depth-versus-time curves have not been
+    read. Dextran is a random coil, so its hydrodynamic radius at a given mass is roughly twice that of
+    a globular protein; this cutoff is a RADIUS cutoff expressed in dextran mass and must not be applied
+    to proteins by mass alone.'
+- parameter: solute size at which entry into the growth plate becomes undetectable
+  value: '40'
+  unit: kDa
+  conditions: same experiment; 40 and 70 kDa fluoresceinated dextrans
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: detection limit stated as a few percent of vascular concentration, so this is an upper bound
+    on entry rather than proof of zero
+- parameter: relative permissiveness of the epiphyseal versus the metaphyseal vascular front for solutes
+    up to 10 kDa
+  value: equal
+  unit: qualitative
+  conditions: same experiment; directionality and rate of arrival imaged in real time for each tracer
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'RECORDED BECAUSE IT KILLS A HYPOTHESIS. If the resting zone were behind a delivery barrier
+    that the hypertrophic zone was not, arm 3 would have a pharmacokinetic excuse. It does not.'
+- parameter: physeal enhancement, neutral versus anionic gadolinium chelate of comparable size
+  value: higher for the neutral agent
+  unit: enhancement ratio, P < 0.05
+  conditions: 3 T MRI of normal piglet knees, 3 weeks old, intravenous gadoteridol (nonionic, n=6) versus
+    gadopentetate dimeglumine (ionic, n=6); significant in physis, epiphyseal cartilage and secondary
+    ossification centre
+  species: porcine
+  source_ref: menezes2006
+  uncertainty: 'abstract only; enhancement ratio values not read. This is the cleanest available in vivo
+    charge-isolating comparison in a LARGE-ANIMAL growing physis, which is the species class the atlas
+    needs and rodents cannot supply.'
+- parameter: erdafitinib plasma protein binding
+  value: '99.7'
+  unit: '%'
+  conditions: patients; binding is preferential to alpha-1-acid glycoprotein
+  species: human
+  source_ref: fda_balversa_label_2025
+  uncertainty: none stated
+- parameter: erdafitinib mean unbound fraction in healthy subjects
+  value: '0.51'
+  unit: '%'
+  conditions: FDA multidisciplinary review, Table 10 of the Clinical Pharmacology Summary
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: CV 39.4%
+- parameter: erdafitinib mean unbound fraction in cancer patients
+  value: '0.32'
+  unit: '%'
+  conditions: same source; the population in which every clinical erdafitinib number in this atlas was
+    generated
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: CV 64.0%; ratio to healthy is 1.6-fold
+- parameter: change in erdafitinib FREE clearance for a 50% fall in alpha-1-acid glycoprotein
+  value: '0'
+  unit: percent change
+  conditions: applicant population PK model; the same 50% AGP fall raises V2tot/F by 38.8% and total CL/F
+    by 50%
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'model estimate, not a measurement. This is the row that makes the oncology dose translate:
+    free AUC = dose x F / CLfree, and CLfree does not move with AGP.'
+- parameter: difference in erdafitinib total Cmax and AUC0-24h, cancer patients versus healthy subjects
+  value: 48 and 44
+  unit: percent higher in cancer, single dose
+  conditions: FDA review; attributed by the applicant to AGP concentration and protein binding
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: single-dose comparison across studies, not a randomised crossover
+- parameter: erdafitinib unbound Cmax at the approved 8 mg dose
+  value: '6.3'
+  unit: nM
+  conditions: patients; stated as 2.8 ng/mL in the same sentence of the FDA review
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'the reviewer cites this figure to argue that several non-FGFR kinases are engaged at clinical
+    exposure, since RET binds at Kd 0.94 nM and a further fifteen kinases between 3.4 and 45 nM.'
+- parameter: erdafitinib enzymatic IC50 against FGFR3
+  value: '3.0'
+  unit: nM
+  conditions: time-resolved fluorescence kinase assay; FGFR1 1.2, FGFR2 2.5, FGFR4 5.7 nM in the same
+    assay
+  species: not_applicable
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'enzymatic, cell-free. Read against the row above: free Cmax at the top label dose is about
+    2x this value.'
+- parameter: erdafitinib mean effective half-life
+  value: '58.9'
+  unit: h
+  conditions: patients
+  species: human
+  source_ref: fda_balversa_review_2019
+  uncertainty: 'effective rather than terminal; with once-daily dosing this predicts a relatively flat
+    free-concentration profile, i.e. NOT a pulsatile exposure'
+- parameter: molecular weight of the small molecules in the current stack
+  value: 232.3-446.5
+  unit: Da
+  conditions: PubChem computed properties - melatonin 232.28, anastrozole 293.35, cilostazol 369.47, tadalafil
+    389.4, erdafitinib 446.5
+  species: not_applicable
+  source_ref: pubchem_compound_properties
+  uncertainty: 'computed physicochemical descriptors from a public database, not experimental partition
+    data. Recorded to make the point that the entire small-molecule arm sits more than an order of magnitude
+    below the 10 kDa permissive band.'
+- parameter: icariin molecular weight and topological polar surface area
+  value: 676.7 and 234
+  unit: Da and square angstrom
+  conditions: PubChem computed properties; the aglycone icaritin is 368.4 Da with TPSA 96.2
+  species: not_applicable
+  source_ref: pubchem_compound_properties
+  uncertainty: 'TPSA of 234 is far outside the <=140 range associated with good oral absorption, and the
+    glycoside carries three sugar-derived hydrogen-bond networks the aglycone does not. This is an inference
+    from descriptors, NOT a measured bioavailability - no primary human icariin PK study has been read.
+    Flagged as such in claim_grades.'
+localization:
+- 'growth plate, all zones: entry of solutes up to 10 kDa occurs from epiphyseal, metaphyseal and perichondrial
+  ring vasculature, with epiphyseal and metaphyseal equally permissive (farnum2006, mouse)'
+- 'physis and epiphyseal cartilage, porcine: neutral gadolinium chelate enhances more than an anionic
+  one of comparable size (menezes2006)'
+- 'systemic: alpha-1-acid glycoprotein is the compartment that holds 99.7% of circulating erdafitinib
+  and therefore sets the concentration available to diffuse into cartilage'
+human_evidence: indirect
+human_evidence_note: The transport law is murine and the charge result porcine; no human growth plate
+  has been used to measure solute entry. The erdafitinib protein-binding and free-clearance data are human
+  and clinical, but they are plasma measurements from which exposure at the plate is inferred, not measured.
+species_basis:
+- mouse
+- porcine
+- human
+- in_vitro_human_cell
+translation_risk: moderate
+translation_risk_reason: Size and charge selectivity arise from aggrecan fixed charge density and matrix
+  pore structure, which are conserved features of hyaline cartilage rather than species-specific ones,
+  so the DIRECTION of the law should transfer. The magnitudes will not. Diffusion time scales with the
+  square of distance and the human plate is far thicker than the mouse plate in which the size cutoff
+  was measured, so a solute that equilibrates across a mouse plate in minutes may take hours across a
+  human one. The piglet charge result is the only measurement here made in a large-animal physis, which
+  is why it is weighted despite being abstract-only.
+confidence: B
+claim_grades:
+- claim: Solutes up to about 10 kDa reach growth plate chondrocytes from the systemic circulation; solutes
+    of 40 kDa and above effectively do not.
+  grade: C
+  basis: One in vivo imaging study in one species, read at abstract level. Replicated in neither a second
+    laboratory nor a second species. Graded C rather than B because the atlas has not read the depth-versus-time
+    data.
+- claim: The epiphyseal and metaphyseal vascular fronts are equally permissive to small solutes, so the
+    resting zone is not behind a delivery barrier that other zones lack.
+  grade: C
+  basis: Same single study. Recorded because it REMOVES a candidate explanation for the failure of pool-expansion
+    strategies rather than because it supports one.
+- claim: Molecular charge changes distribution into growing cartilage independently of size.
+  grade: C
+  basis: One in vivo large-animal MRI comparison of two chelates matched for size and differing in charge,
+    plus two ex vivo cartilage studies establishing the Donnan mechanism in human and bovine tissue.
+- claim: Matrix binding prolongs receptor activation at the growth plate independently of the ligand's
+    intrinsic pharmacology.
+  grade: C
+  basis: 'One mouse study with an internal genetic control - the prolongation of AKT signalling was abolished
+    by matrilin-3 knockout, which is the right control for this claim.'
+- claim: Free erdafitinib exposure translates from cancer patients to healthy subjects on a milligram
+    basis, while total plasma concentration in a healthy subject reads about 44-48% lower.
+  grade: B
+  basis: Human clinical pharmacology from a regulatory dossier, including a population model in which
+    free clearance is explicitly invariant to AGP. Graded B not A because the free-clearance invariance
+    is a model output and no healthy adolescent has ever been dosed.
+- claim: Serum phosphate titration is a free-drug readout and therefore self-corrects for alpha-1-acid
+    glycoprotein variation, whereas total-concentration monitoring does not.
+  grade: E
+  basis: Inference from two sourced facts - phosphate is the label's titration endpoint and is an on-target
+    FGFR pharmacodynamic effect, and free drug is what engages the receptor. No study has compared the
+    two monitoring strategies. Explicitly an inference.
+- claim: Icariin as dosed is a poorly absorbed glycoside whose activity depends on conversion to icaritin
+    or icariside II.
+  grade: E
+  basis: Computed descriptors from PubChem place icariin outside the range associated with good oral absorption
+    and the aglycone inside it. No primary human pharmacokinetic study has been read. Recorded as an inference
+    to be checked, not as a finding.
+key_refs:
+- ref_id: farnum2006
+  pmid: '16342207'
+  first_author: Farnum CE
+  year: 2006
+  type: primary_abstract_only
+  one_line_finding: Live multiphoton imaging of tracer entry into the murine growth plate - solutes up
+    to 10 kDa enter from all three vascular routes with epiphyseal and metaphyseal sides equally permissive,
+    40 kDa and larger dextrans do not enter.
+- ref_id: menezes2006
+  pmid: '16641351'
+  first_author: Menezes NM
+  year: 2006
+  type: primary_abstract_only
+  one_line_finding: In growing piglet knees a neutral gadolinium chelate enhanced physis, epiphyseal cartilage
+    and secondary ossification centre significantly more than an anionic chelate of comparable size.
+- ref_id: krishnan2018
+  pmid: '30173104'
+  first_author: Krishnan Y
+  year: 2018
+  type: primary_abstract_only
+  one_line_finding: Supercharged GFP variants isolate carrier charge from size and shape and identify
+    optimal net positive charges for matrix versus chondrocyte targets in living human knee cartilage,
+    without harming viability or biosynthesis.
+- ref_id: hakim2025
+  pmid: '40968533'
+  first_author: Hakim B
+  year: 2025
+  type: primary_abstract_only
+  one_line_finding: For cationic carriers, evenly distributed positive charge and minimal hydrophobicity
+    give the deepest and longest-lasting cartilage penetration; clustering raises diffusivity but weakens
+    binding.
+- ref_id: tailor2024
+  pmid: '39850478'
+  first_author: Tailor K
+  year: 2024
+  type: primary
+  one_line_finding: A matrilin-3-targeted IGF-1 fusion restored growth plate height in GH-resistant mice
+    without raising kidney proliferation, did not cause the hypoglycaemia that equimolar IGF-1 caused,
+    and prolonged AKT signalling in a matrilin-3-dependent manner.
+- ref_id: fda_balversa_review_2019
+  year: 2019
+  type: regulatory
+  one_line_finding: Erdafitinib unbound fraction 0.51% healthy versus 0.32% cancer, free clearance invariant
+    to AGP, unbound Cmax 6.3 nM at 8 mg against an FGFR3 IC50 of 3.0 nM.
+- ref_id: pubchem_compound_properties
+  year: 2026
+  type: dataset
+  one_line_finding: Computed molecular weight, XLogP and topological polar surface area for the agents
+    in the stack, retrieved from the PubChem PUG REST property service.
+open_questions:
+- g_l12b_002
+- g_l12_size_charge_law_in_human_physis
+- g_l12_agp_free_fraction_in_adolescents
+contradicts: []
+last_verified: '2026-08-07'

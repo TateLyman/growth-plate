@@ -10611,3 +10611,102 @@ gaps:
     knowing before anyone doses a 16-year-old. SITE DISSOCIATION: knee and spine reserve diverge, which is the
     result that most changes practice, because it would identify the patients in whom an FGFR inhibitor would drive
     predominantly the spine and should not be given.'
+- gap_id: g_l12_size_charge_law_in_human_physis
+  type: quantitative_gap
+  layer: L12
+  tractability: 3
+  question: Does the size-and-charge selectivity measured in the mouse and piglet physis hold in a HUMAN
+    growth plate, and what is the effective solute cutoff and the charge partition coefficient in tissue
+    that is several times thicker?
+  why_it_matters: 'THE ONLY TRANSPORT LAW THE ATLAS HAS IS MURINE AND ABSTRACT-ONLY. farnum2006 gives a
+    clean answer in the mouse - up to 10 kDa enters from all three vascular fronts, 40 kDa and above does
+    not - and menezes2006 shows in a growing piglet that a neutral chelate reaches the physis better than
+    an anionic one of the same size. Both are directional laws that arise from aggrecan fixed charge density
+    and matrix pore structure, which are conserved. The MAGNITUDES are not conserved, because diffusion
+    time scales with the square of path length and the human plate is far thicker than the mouse plate
+    in which the cutoff was measured; the human inert zone alone is 700-1000 um (thurston1985), which is
+    more than the full height of a mouse plate. WHY IT DECIDES SOMETHING. If the human cutoff sits where
+    the mouse cutoff sits, every small molecule in the stack is unaffected by delivery and the exposure
+    caveat belongs only to the peptide and nanoparticle arms - which is how this atlas currently reasons.
+    If human thickness pushes the practical cutoff well below 10 kDa, then vosoritide at about 4 kDa and
+    IGF-1 at 7.6 kDa are partly delivery-limited in humans and their dose-response curves have been misread
+    as receptor biology. WHAT WOULD SETTLE IT. Human growth plate is obtainable at epiphysiodesis, limb
+    lengthening and amputation. An ex vivo equilibrium-uptake and depth-of-penetration series on human
+    physeal cartilage using a graded solute panel - the design krishnan2018 already ran on human ARTICULAR
+    cartilage - would produce the partition coefficients directly. Nothing new needs inventing; the assay
+    exists and has simply never been pointed at the physis.'
+  what_is_known: 'farnum2006: in 4-5 week Col2-GFP mice imaged live by multiphoton microscopy after
+    intracardiac injection, fluorescein (332 Da) and 3 and 10 kDa fluoresceinated dextrans entered the
+    proximal tibial growth plate from all three vascular fronts, with the epiphyseal and metaphyseal sides
+    equally permissive, while 40 and 70 kDa dextrans did not enter within a detection limit of a few percent
+    of vascular concentration. menezes2006: in 3-week-old piglet knees at 3 T, the neutral chelate gadoteridol
+    enhanced physis, epiphyseal cartilage and secondary ossification centre significantly more (P < 0.05)
+    than the anionic gadopentetate dimeglumine. krishnan2018 and hakim2025 establish the Donnan mechanism
+    quantitatively in human and bovine ARTICULAR cartilage.'
+  what_is_missing: 'Any measurement in HUMAN growth plate cartilage. There is no human physeal partition
+    coefficient, no depth-of-penetration profile, and no solute size series. The two in vivo results are
+    murine and porcine and both were read at abstract level. Because diffusion time scales with the square
+    of path length and the human inert zone alone is 700-1000 um (thurston1985), the magnitudes cannot be
+    carried across even though the direction of the law should be.'
+  discriminating_experiment: 'Human growth plate obtained at epiphysiodesis, guided-growth hardware removal,
+    limb lengthening or amputation. Run the equilibrium-uptake, depth-of-penetration and non-equilibrium
+    diffusion series that krishnan2018 already ran on human articular cartilage, using a graded solute
+    panel spanning 0.3 to 70 kDa at matched charge and a charge series at matched size. Outputs are a
+    partition coefficient and an effective cutoff for human physis. DISCRIMINATION: if the human cutoff
+    sits at or above 10 kDa, delivery is not a limitation for any small molecule or for vosoritide and
+    the exposure caveat belongs only to the nanoparticle and PEGylated arms; if it falls well below 10
+    kDa, then vosoritide (about 4 kDa) and IGF-1 (7.6 kDa) are partly delivery-limited in humans and their
+    clinical dose-response curves have been misread as receptor biology.'
+  blocking_layers:
+  - L12
+  - L6
+  status: open
+- gap_id: g_l12_agp_free_fraction_in_adolescents
+  type: quantitative_gap
+  layer: L12
+  tractability: 5
+  question: What is the alpha-1-acid glycoprotein concentration, and therefore the erdafitinib unbound
+    fraction, in healthy adolescents - and how far does it move with training load, intercurrent infection
+    and puberty?
+  why_it_matters: 'THIS IS THE ONE PARAMETER THAT CONVERTS THE ONCOLOGY DOSE INTO AN ADOLESCENT DOSE AND
+    IT HAS NEVER BEEN MEASURED IN THE RELEVANT POPULATION. Erdafitinib is 99.7% bound, preferentially to
+    AGP. The FDA review reports an unbound fraction of 0.51% in healthy subjects against 0.32% in cancer
+    patients, and the applicant population model finds that a 50% fall in AGP raises total clearance by
+    50% while leaving FREE clearance unchanged. Free exposure therefore translates on a milligram basis
+    and total plasma concentration does not - a healthy person on the same dose will read 44-48% lower on
+    a total assay while receiving the same active exposure. ANYONE MEASURING TOTAL CONCENTRATION WOULD
+    CONCLUDE UNDERDOSING AND RAISE THE DOSE. That is a foreseeable and avoidable overdose, and it follows
+    from a property rather than from anything about FGFR3. THE SECOND REASON IS DAY-TO-DAY VARIANCE. AGP
+    is an acute-phase reactant; it rises with infection, injury and inflammatory load. The atlas already
+    records AGP in a completely different role - in a stunting cohort, CRP and AGP were the strongest
+    negative correlates of IGF-1 (madigan2026, infection_burden_growth). So an inflammatory episode hits
+    growth twice through one protein: it lowers IGF-1 and it lowers free erdafitinib. Nobody has connected
+    those two facts because they sit in different literatures. WHAT WOULD SETTLE IT. AGP is a routine
+    clinical chemistry assay. A reference series in healthy adolescents across Tanner stages, with repeat
+    sampling around heavy training blocks and minor illness, is an observational study with no intervention
+    and no drug exposure, and it would set the dosing and monitoring rule before anyone is dosed at all.'
+  what_is_known: 'Erdafitinib is 99.7% plasma protein bound, preferentially to alpha-1-acid glycoprotein
+    (fda_balversa_label_2025). The FDA multidisciplinary review reports a mean unbound fraction of 0.51%
+    (CV 39.4%) in healthy subjects and 0.32% (CV 64.0%) in cancer patients, total Cmax and AUC0-24h 48%
+    and 44% higher in cancer patients at the same single dose, and a population model in which a 50% fall
+    in AGP raises V2tot/F by 38.8% and total CL/F by 50% while leaving FREE clearance unchanged. Unbound
+    Cmax at the approved 8 mg dose is 6.3 nM against an FGFR3 enzymatic IC50 of 3.0 nM. Separately,
+    madigan2026 found CRP and AGP the strongest negative correlates of IGF-1 in a stunting cohort.'
+  what_is_missing: 'AGP has never been measured in the population that would actually be dosed. There is
+    no reference series for AGP or for erdafitinib unbound fraction in healthy adolescents, no data on how
+    far it moves across Tanner stages, and no data on its excursion with training load or intercurrent
+    infection. Nobody has ever dosed erdafitinib in a healthy adolescent, so the free fraction in that
+    population is an extrapolation from healthy adult volunteers.'
+  discriminating_experiment: 'Observational, no drug. Measure serum AGP with CRP in healthy adolescents
+    across Tanner stages, with repeat sampling before and after a heavy training block and during minor
+    intercurrent illness, and determine erdafitinib unbound fraction ex vivo by equilibrium dialysis of
+    spiked plasma from the same samples. DISCRIMINATION: if adolescent AGP tracks the healthy-adult value
+    and is stable within subject, then the milligram dose translates directly, phosphate titration is
+    sufficient monitoring, and total-concentration assays should be explicitly prohibited because they will
+    read as underdosing. If AGP swings widely with training or illness, then free exposure swings with it,
+    a fixed milligram dose is the wrong design, and titration must be tied to a pharmacodynamic endpoint
+    sampled on the same cadence as the swings.'
+  blocking_layers:
+  - L12
+  - L10
+  status: open

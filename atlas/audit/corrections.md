@@ -3025,3 +3025,37 @@ ref_id can ever match, so the guard refuses every possible id and the paper cann
 check enabled. I added it without `--ref-id` and verified the written record immediately, which is the
 fallback CORR-055 requires. The guard should compare on a hyphen-stripped surname; until it does,
 hyphenated first authors force the unguarded path.
+
+## CORR-057 — the exposure node explained the mouse/human translation gap with the wrong physics
+
+`growth_plate_drug_exposure` carried this as its translation-risk reason: *"Rodent growth plates are thin
+enough that diffusion limitation may be negligible, so even a positive animal delivery result would not
+transfer to the much thicker human plate."*
+
+The premise is wrong. **`farnum2006` finds a hard size cutoff inside the mouse plate itself** — solutes up
+to 10 kDa enter from all three vascular fronts, 40 kDa and larger dextrans do not enter at all, within a
+detection limit of a few percent of vascular concentration. If diffusion limitation were negligible in a
+rodent plate there would be no cutoff to find. Exclusion is set by **matrix pore structure and aggrecan
+fixed charge**, which are present at any thickness; what thickness changes is the **time** to equilibrate,
+not whether a solute is admitted at all.
+
+The conclusion — high translation risk, measurement must be made in a large-animal or human plate — survives
+intact. Only the reasoning was wrong, and it was wrong in a way that would have licensed a bad inference:
+under the old premise, a *negative* delivery result in a mouse would have been dismissed as an artefact of
+a plate too thin to test anything, when in fact the mouse plate does discriminate.
+
+**Generalisable failure:** *I wrote a plausible physical argument in place of looking for the measurement.*
+The transport experiment was published in 2006, is indexed under "growth plate" and "delivery", and answers
+the question directly. This is the same shape as CORR-047 ("a label is an index, not a source") and CORR-051
+("three legs that all collapsed"): a confident mechanistic sentence standing where a citation should be.
+The rule that would have caught it — **a physical claim about a tissue is a claim, and gets a source or a
+`value_unverified` flag like any other** — now applies to `translation_risk_reason` fields, which had been
+treated as commentary rather than as assertions.
+
+**Second item, not a correction but a near miss.** Round 67 opened by hypothesising that arm 3 might be
+failing because the resting zone sits behind the epiphyseal vascular front and is pharmacologically harder
+to reach than the hypertrophic zone. `farnum2006` reports the epiphyseal and metaphyseal sides **equally
+permissive** for solutes up to 10 kDa. The hypothesis was dead before it was written into anything, and it
+is recorded as a killed hypothesis (edge `e01250`, `speculative`, sign `unknown`) rather than quietly
+dropped — because the absence of that asymmetry is itself the useful result: **arm 3 has no pharmacokinetic
+excuse.**
