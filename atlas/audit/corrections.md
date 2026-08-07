@@ -2783,3 +2783,70 @@ to see the conflict. `giannopoulou2024` was typed `primary_abstract_only` while 
 loser's fields and finding), citations repointed across all YAML — historical `.md` round documents and
 this log were deliberately left alone, since they are dated records — and `validate.py` now **errors** on
 any two ref_ids sharing a `pmid` or a `doi`. Bibliography 1158 → 1149 before the round's one addition.
+
+## CORR-049 — I argued against GH from a mouse mechanism while a human measurement saying the opposite sat read in this bibliography
+
+Round 46 gave a specific reason GH is the wrong partner for erdafitinib: **erdafitinib suppresses AKT, IGF-I
+restores it, and AKT is the arm that empties the progenitor pool.** The chain was `erdachild2024` (human dermal
+fibroblasts) → `oichi2023` (mouse resting zone, IGF-1 restores pAkt and drives progenitors out) → `chu2025`
+(mouse, GH depletes the pool).
+
+**`chu2026` measured GH on human growth plate tissue and it does the opposite.** Human pubertal explants
+(11–14 y, Tanner 2–4, four donors) in organ culture: **GH causes measurable cartilage expansion**, with increased
+proliferative-zone proliferation (P = .013) and more S-phase cells at 24 h (P < .0001), acting via JAK/STAT,
+TGF-β/Smad2-3 and ERK1/2 — **and inhibiting AKT.** Direct GH on human growth plate *lowers* AKT and *grows* the
+tissue.
+
+The two routes are not strictly contradictory — an explant has no liver, so direct GH on cartilage and systemic
+GH raising hepatic IGF-1 are different experiments, and in a treated child both happen. But Round 46 asserted the
+systemic route as though it were established. It isn't. The direct route is *measured, in human tissue*, and runs
+the other way — and `chu2025` found serum IGF-1 **falling** during pharmacological GH in mice.
+
+**Same failure class as CORR-046 — a mouse mechanism overruling a human measurement — with one aggravating
+detail: no search was needed.** `chu2026` was in the bibliography, marked `full_text_read: 2026-08-06`, four days
+before Round 46, with *"inhibiting AKT"* written into its one-line finding.
+
+**Three further things Round 46 omitted about `chu2025`,** found on re-reading the full text:
+1. **The GH dose was 5 mg/kg/day** — roughly **100×** a human therapeutic dose (~0.05 mg/kg/day). The authors call
+   it "excess" and "pharmacological" throughout.
+2. **The GHR conditional knockout did not change bone length** — tibia 18.3 ± 0.2 vs 17.9 ± 0.3 mm, P = 0.31;
+   femur 13.2 ± 0.2 vs 12.8 ± 0.3, P = 0.35. The pool phenotype has no demonstrated organ-level consequence in
+   the animals carrying it.
+3. **The paper's claim is dual and half of it is pro-GH**: *loss* of GHR **reduces** stem cells' ability to form
+   chondrocytes. GH signalling is **required** for the pool to function. GH also raised clone size in **every zone
+   including the resting zone**. And the authors' clinical proposal is not avoidance but **schedule** — they
+   "warrant exploration of intermittent GH therapy strategies, especially in non-GH-deficient children," which is
+   `g_l2_cycling_the_progenitor_pool` arriving from the pharmacology side.
+
+**What survives is the conclusion, not the reason.** GH still looks like the wrong partner for an FGFR inhibitor —
+but because of an **ERK collision**: `chu2026` shows GH grows human cartilage partly *through* ERK1/2, and an FGFR
+inhibitor's whole action at the plate is deleting FGFR-driven ERK signalling. That reason is better than the one
+it replaces, because it is human and because it **predicts** the `sawamura2025` null instead of being assembled
+after it. It also opens a contradiction the atlas had never written down — FGFR3→ERK is growth-inhibitory, CNP
+works by inhibiting the RAF-1 step, and GH→ERK is growth-promoting, all three pro-growth. New gap
+`g_l3_erk_sign_in_the_human_growth_plate`.
+
+## CORR-050 — "arm 3 is still empty" was wrong when written, and the paper that refutes it was already in the bibliography
+
+Round 46 closed with *"no pharmacological recruiter exists"* and *"arm 3 is still empty."* `trompet2024` (JCI
+Insight, open access) was already held, with its abstract recorded.
+
+Smoothened agonist SAG, systemically or mimicked genetically by *Ptch1* ablation, expands epiphyseal skeletal stem
+cell clones. **SAG-containing beads implanted into the distal femoral secondary ossification centre of one rat leg
+increased femur length by 1 month and further at 2 and 6 months, tibia at 2 and 6 months, and total leg length at
+every timepoint**, against the contralateral vehicle-bead leg (n = 6, 9, 8).
+
+**The shape of the result is why this belongs in arm 3 rather than arm 2: the Gli1-LacZ bead signal vanished
+within 3 weeks and the length divergence kept widening to 6 months.** A velocity lever stops paying when it stops.
+A lever that banks progenitors keeps paying — and this one did. Short *systemic* SAG expanded the pool but did not
+change bone length (tibia P = 0.29, femur P = 0.247), so it is the local sustained release that worked.
+
+**And it converges with the human data from the other direction**: SAG makes the niche **Wnt-inhibitory** (Wnt
+among the top 2 downregulated pathways), and `chu2026` finds the human quiescent stem niche is **Wnt-low and
+TGF-β-low**. Two papers, two species, the same niche signature, neither citing the other for it.
+
+Limits are serious: rat and mouse only, magnitudes in figures and not read off, an invasive route, and a
+**sign-flipping age window** (SAG P6–P18 *decreased* proliferation in the uppermost 50 µm; P25–P38 increased it).
+And a hazard the paper does not discuss — **SMO is the target vismodegib blocks in basal cell carcinoma, and
+Hedgehog activation drives medulloblastoma**, so systemic Hh agonism in a growing child is not a candidate at any
+dose. That is an argument for the local route, not against the target.
