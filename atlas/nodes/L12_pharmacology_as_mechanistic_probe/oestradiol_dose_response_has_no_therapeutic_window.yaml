@@ -1,0 +1,167 @@
+id: oestradiol_dose_response_has_no_therapeutic_window
+name: The dose that keeps the plate open is the dose at which bone is being lost — the curves cross at the same number
+type: process
+layer: L12
+stub: false
+summary: 'This atlas has spent several rounds asking whether the bone cost of the duration lever can be separated from
+  its height benefit. kang2020 answered that it cannot be bought at the RECEPTOR-SUBTYPE level, because ER-alpha carries
+  both effects. rochira2000 and lanfranco2008 now answer that IT CANNOT BE BOUGHT BY DOSE EITHER, and they do it in
+  two different men whose numbers agree. rochira2000 is a four-phase dose-descending protocol in the carani1997 patient:
+  no treatment, then 50, then 25, then 12.5 micrograms of transdermal oestradiol twice weekly, with serum oestradiol,
+  gonadotropins, testosterone, lumbar BMD and serial radiographs at every phase. THE BONE OPTIMUM IS AT SERUM OESTRADIOL
+  24 pg/mL. Lumbar BMD ran 0.933 untreated, rose to 1.173, PEAKED AT 1.275 on 25 micrograms twice weekly - and then
+  FELL to 1.029 on 12.5 micrograms twice weekly, where serum oestradiol was 15 pg/mL. At the top dose serum oestradiol
+  was 97 pg/mL and serum testosterone was CRUSHED to 21 ng/dL against a 360-900 normal range. INDEPENDENTLY, lanfranco2008
+  found in a different man that bone maturation FAILED to complete at 16.5 pg/mL and completed only above 20 pg/mL.
+  PUT THE TWO TOGETHER AND THE TRAP IS ARITHMETIC. Below about 20 pg/mL the plate stays open and bone is actively being
+  LOST. At about 24 pg/mL bone is maximal and the plate closes. THE THRESHOLD FOR KEEPING A PLATE OPEN AND THE THRESHOLD
+  FOR MAINTAINING BONE ARE THE SAME NUMBER, approached from opposite sides, in two unrelated patients. There is no
+  serum concentration at which a human male keeps growing and keeps his skeleton. Any dissociation must therefore be
+  TISSUE-selective - a compound that antagonises at the growth plate while agonising in bone - because it is available
+  neither by receptor subtype nor by dose.'
+quantitative:
+- parameter: THE FOUR-PHASE DOSE-DESCENDING PROTOCOL, WITH SERUM LEVELS
+  value: 'serum oestradiol by phase: untreated below 10 pg/mL; 50 micrograms twice weekly = 97; 25 micrograms twice
+    weekly = 24; 12.5 micrograms twice weekly = 15. Serum testosterone across the same phases: 523, 21, 415, 574 ng/dL
+    against a 360-900 normal range. LH 5.6, 0.8, 3.1, 8.4; FSH 17.1, 1.0, 8.1, 14.8'
+  unit: pg/mL and ng/dL
+  conditions: the carani1997 patient, homozygous R365Q CYP19A1, aged 39 at study start, 189-190 cm, 101 kg; transdermal
+    oestradiol (Estraderm) at 0.95, 0.47 and 0.23 micrograms per kg per week; phase 2 for 6 months, phases 3 and 4
+    for 9 months each; normal ranges oestradiol 10-40 pg/mL
+  species: human
+  source_ref: rochira2000
+  uncertainty: 'A PROPER WITHIN-SUBJECT DOSE-RESPONSE, WHICH IS RARE IN THIS LITERATURE AND IS WHY THIS PAPER IS WORTH
+    MORE THAN ITS n=1 SUGGESTS. Each dose ran for 6-9 months with the same assay in the same laboratory, so the levels
+    are comparable across phases in a way that cross-study comparisons never are. Two limits. THE DESIGN IS DESCENDING
+    AND UNRANDOMISED, so dose and time are confounded - phase 4 is both the lowest dose and the latest, and a declining
+    time trend would look identical. AND THE TOP DOSE IS NOT A CLEAN OESTROGEN ARM: at 97 pg/mL the gonadotropins were
+    suppressed below normal and testosterone fell to 21 ng/dL, so phase 2 is oestrogen excess PLUS profound androgen
+    deficiency, and its bone effect cannot be attributed to oestradiol alone.'
+- parameter: BONE MINERAL DENSITY PEAKS AT 24 pg/mL AND FALLS BELOW IT
+  value: lumbar spine BMD 0.933 g/cm2 untreated; 1.051 at 4 months and 1.173 at 7 months; MAXIMUM 1.275 at 14 months
+    on 25 micrograms twice weekly; then 1.180 and finally 1.029 on 12.5 micrograms twice weekly
+  unit: g/cm2
+  conditions: lumbar spine L2-L4 by DXA, same instrument throughout; increases from baseline of 12.6%, 25.7% and 36.6%
+    at 4, 7 and 14 months
+  species: human
+  source_ref: rochira2000
+  uncertainty: 'THE FALL IS THE INFORMATIVE PART AND IT IS ALSO THE PART MOST EXPOSED TO THE DESIGN FLAW. Losing 19%
+    of peak BMD while still taking oestrogen, at a serum level of 15 pg/mL, is the observation that closes the therapeutic
+    window - it says a dose low enough to leave a plate open is a dose at which the skeleton is decaying. But because
+    the protocol descends monotonically, an alternative reading is that the early rise was a remineralisation transient
+    in a profoundly deficient skeleton and the later fall is regression toward a lower steady state that would have
+    happened at any maintenance dose. Nothing in a single descending series can separate those. The authors themselves
+    frame 25 micrograms twice weekly as the recommended maintenance dose rather than as a demonstrated optimum.'
+- parameter: AND AN INDEPENDENT PATIENT PUTS THE MATURATION THRESHOLD AT THE SAME PLACE
+  value: bone maturation failed to complete at serum oestradiol 60.6 pmol/L (16.5 pg/mL) and completed only above 73
+    pmol/L (20 pg/mL)
+  unit: pg/mL
+  conditions: lanfranco2008, a different man with compound heterozygous CYP19A1, on transdermal oestradiol gel 0.75
+    mg/day with poor compliance producing the low levels; five-year follow-up
+  species: human
+  source_ref: lanfranco2008
+  uncertainty: 'THE CONVERGENCE IS THE ARGUMENT. Two unrelated patients, two laboratories, two formulations and two
+    entirely different reasons for landing at a low serum level - a deliberate dose reduction in one and a compliance
+    failure in the other - put the boundary within a few pg/mL of each other, from opposite directions. One asks where
+    bone starts to fail and finds 15 pg/mL is too low; the other asks where maturation starts to work and finds 16.5
+    is too low and above 20 suffices. NEITHER IS A MEASURED INFLECTION - both are boundaries bracketed between two
+    observed levels, and both authors flag immunoassay accuracy at these concentrations. The claim is therefore that
+    the two thresholds are INDISTINGUISHABLE at the resolution available, not that they are identical.'
+- parameter: THE HAND CLOSES BEFORE THE KNEE — BONE AGE UNDERSTATES REMAINING HEIGHT
+  value: hand and wrist epiphyses closed after 6 to 9 months of treatment; complete bilateral closure of the DISTAL
+    FEMORAL and PROXIMAL TIBIAL epiphyses was achieved only after 15 months
+  unit: months of continuous treatment to closure
+  conditions: same patient, same continuous transdermal oestradiol course; the authors note explicitly a modest delay
+    of epiphyseal closure at distal femur and proximal tibia compared with hand and wrist
+  species: human
+  source_ref: rochira2000
+  uncertainty: 'A SMALL OBSERVATION WITH A DISPROPORTIONATE CLINICAL CONSEQUENCE. Bone age is read at the HAND, and
+    the hand is not where height comes from - the distal femur and proximal tibia are. In this man they closed roughly
+    six months after the hand did, which means a hand radiograph declaring skeletal maturity was wrong about the plates
+    that matter, in the conservative direction, by about half a year of treatment. Any decision to stop or start growth-limiting
+    therapy taken on hand bone age is therefore acting on the wrong joint. ONE PATIENT AND A QUALITATIVE RADIOGRAPHIC
+    ENDPOINT, and the three papers on this man report closure at 6, 9 and 15 months at different sites, which is consistent
+    but is also a reminder that "closure" is a reading rather than a measurement.'
+- parameter: THE THIRD COST — CONGENITAL OESTROGEN ABSENCE IS ASSOCIATED WITH SEVERE GH DEFICIENCY
+  value: GH peak below 3 micrograms/L after insulin tolerance test and below 9 micrograms/L after GHRH plus arginine,
+    with basal GH 0.02 and below 0.01; IGF-I normal but at the bottom of the range at 15.8, 16.7 and 17.3 nmol/L against
+    15-44
+  unit: micrograms/L
+  conditions: same patient at 39; provocative testing repeated at all three phases; oestradiol replacement did NOT
+    correct the GH response at any dose; PRL and TSH secretion also described as impaired to a lesser degree
+  species: human
+  source_ref: rochira2002
+  uncertainty: 'A COST OF THE DURATION LEVER THAT THIS ATLAS HAD NOT COUNTED, and it is a mechanism rather than a side
+    effect: the authors propose that oestrogen is required for development and function of the somatotroph axis, noting
+    ER-alpha expression in GHRH neurons. If congenital absence of oestrogen action impairs GH secretion, then any regimen
+    that blocks oestrogen to buy duration may also be spending velocity. THE CRITICAL CAVEAT IS THE AUTHORS OWN AND
+    IT CUTS AGAINST OVERREADING THIS: they judge the GH deficiency to be ADULT-ONSET precisely BECAUSE he reached tall
+    stature, so it cannot be assumed to have depressed his childhood growth. It is also n=1, IGF-I was normal throughout,
+    and lanfranco2008 independently records a documented GH deficiency in a second aromatase-deficient man who also
+    reached 193 cm - which is a second observation of the association and equally cannot date its onset.'
+- parameter: AND A VASCULAR COMPLICATION THAT PREDATES TREATMENT
+  value: bilateral established necrosis of the femoral heads, evident on x-ray in phase 1 and unchanged thereafter
+  unit: none
+  conditions: pelvis radiographs performed before oestradiol and again 24 months into treatment
+  species: human
+  source_ref: rochira2000
+  uncertainty: RECORDED WITH ITS TIMING STATED PRECISELY BECAUSE THE TIMING IS THE WHOLE POINT - the necrosis was ALREADY
+    ESTABLISHED BEFORE the first dose of oestradiol and did not progress on treatment, so it is a candidate consequence
+    of decades of untreated oestrogen deficiency rather than of oestrogen therapy. The authors speculate about a permissive
+    role of absent oestrogen action on the femoral head vasculature. n=1, no other aromatase-deficient man in this atlas
+    is reported with avascular necrosis, and the patient is obese, which is itself associated with osteonecrosis. It
+    is a flag on the natural history of the untreated state, not an established complication.
+localization:
+- growth plate, lumbar spine, femoral head, and the pituitary somatotroph axis
+human_evidence: direct
+human_evidence_note: Entirely human and entirely within-subject for the dose-response, which is the unusual strength
+  here. The bone and maturation thresholds come from two different men in two different laboratories and agree. The
+  GH deficiency and the femoral head necrosis are single observations in one of them.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: The evidence is human, in the human disease, using the human drug at doses a clinician would
+  prescribe. The risk is not translation but generalisation - a descending unrandomised series in one man, and a
+  threshold bracketed rather than measured.
+confidence: C
+confidence_note: C. The dose-response is within-subject with consistent assays, which is worth more than the n suggests,
+  and the maturation threshold replicates in an independent patient from the opposite direction. It is not B because
+  the protocol descends monotonically so dose is confounded with time, because the top dose is contaminated by profound
+  androgen suppression, because both thresholds are bracketed between observed levels rather than measured, and because
+  the BMD fall admits a regression-to-steady-state reading that the design cannot exclude. It is not D because two
+  unrelated patients converge on the same boundary and because every value is a measurement rather than a report.
+key_refs:
+- ref_id: rochira2000
+  pmid: '10843162'
+  first_author: Rochira V
+  year: 2000
+  type: primary
+  one_line_finding: A four-phase descending dose protocol in one aromatase-deficient man - lumbar BMD peaked at 1.275
+    on 25 micrograms twice weekly (serum oestradiol 24 pg/mL) and fell to 1.029 on 12.5 micrograms (15 pg/mL), with
+    knee epiphyses closing only at 15 months against 6-9 months for the hand.
+- ref_id: rochira2002
+  pmid: '12050263'
+  first_author: Rochira V
+  year: 2002
+  type: primary
+  one_line_finding: The same man has severe GH deficiency on provocative testing - peak below 3 micrograms/L after
+    ITT - with normal IGF-I, uncorrected by oestradiol at any dose, suggesting oestrogen is required for somatotroph
+    function.
+- ref_id: lanfranco2008
+  pmid: '18590994'
+  first_author: Lanfranco F
+  year: 2008
+  type: primary
+  one_line_finding: In a second man, bone maturation failed at serum oestradiol 16.5 pg/mL and completed only above
+    20 pg/mL.
+- ref_id: kang2020
+  pmid: '33230983'
+  first_author: Kang BH
+  year: 2020
+  type: primary
+  one_line_finding: An ER-alpha-selective agonist raised BMD in ovariectomised rats and an ER-beta-selective one did
+    not, so the bone effect and the fusion effect run through the same receptor.
+open_questions:
+- g_l12_tissue_selective_serm_for_the_plate
+- g_l7_residual_maturation_route
+last_verified: '2026-08-07'

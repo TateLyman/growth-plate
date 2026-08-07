@@ -19060,3 +19060,49 @@ edges:
   confidence: D
   notes: Two mouse results joined by inference, not by an experiment that tested both.
   traversal_usable: false
+- edge_id: e01227
+  source: estrogen_receptor_alpha
+  target: oestradiol_dose_response_has_no_therapeutic_window
+  relation: required_for
+  sign: '+'
+  context: human male, congenital aromatase deficiency, transdermal oestradiol at 50, 25 and 12.5 micrograms twice
+    weekly; the same receptor carries both the bone-maintaining and the plate-closing effect, which is why no dose
+    separates them
+  evidence_tier: T1
+  refs:
+  - rochira2000
+  - lanfranco2008
+  - kang2020
+  confidence: C
+  notes: Serum oestradiol optimum for lumbar BMD at 24 pg/mL with BMD falling at 15; maturation threshold above 20
+    pg/mL in an independent patient.
+  traversal_usable: true
+- edge_id: e01228
+  source: oestradiol_dose_response_has_no_therapeutic_window
+  target: the_human_ceiling_has_never_been_observed
+  relation: correlates_with
+  sign: '-'
+  context: the dose-response constrains the duration lever - a serum oestradiol low enough to leave a plate open is
+    one at which lumbar BMD declines, so the observed ceiling cannot be pushed pharmacologically without a tissue-selective
+    compound
+  evidence_tier: T1
+  refs:
+  - rochira2000
+  - lanfranco2008
+  confidence: C
+  notes: Links the quantitative dose-response to the census of oestrogen-null humans.
+  traversal_usable: true
+- edge_id: e01229
+  source: oestradiol_dose_response_has_no_therapeutic_window
+  target: growth_hormone
+  relation: required_for
+  sign: '+'
+  context: human male with congenital aromatase deficiency; severe GH deficiency on provocative testing with normal
+    IGF-I, uncorrected by oestradiol at any dose, suggesting oestrogen is required for somatotroph function
+  evidence_tier: T2
+  refs:
+  - rochira2002
+  confidence: D
+  notes: n=1 and the authors judge the GH deficiency adult-onset because the patient reached tall stature, so it cannot
+    be read as a cause of reduced childhood velocity.
+  traversal_usable: false
