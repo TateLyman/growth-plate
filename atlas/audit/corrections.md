@@ -1894,3 +1894,59 @@ paid for itself here. Renamed to `chen2015arom`; both entries verified present a
 **Standing rule.** Author-year ref_ids collide — common surnames and productive years guarantee it.
 **Check the bibliography for the key before minting it**, and treat a first-author-plus-year string
 as a candidate, not an identifier.
+
+---
+
+## CORR-026 — the census said the heights did not exist; they were in the full texts all along
+
+`docs/CEILING_CENSUS.md` concluded, formally, that a survival analysis on **height** could not be done:
+
+> only **1 of the 14** tabulated male aromatase cases reports a height in its abstract, and the rest
+> are old, paywalled case reports. **Ages are recoverable where heights are not.**
+
+Five of those paywalled papers were supplied on 2026-08-07 and read in full. **Every one of them
+contains the height.** Several contain serial heights with ages, and two contain serial bone ages —
+the exact quantities the census recorded as unavailable.
+
+| | recovered |
+|---|---|
+| `morishima1995` | 170.2 cm at 14 y 8 m → **204.0 cm at 24 y 3 m, still growing** |
+| `carani1997` | 170 cm at 18 → 187 at 31 → **190 at 38**; bone age 14.8 frozen across the last 7 years |
+| `maffei2004` | 172 cm at 21 → 183.5 at 29; **bone age 15 at every phase from 25 to 29** |
+| `maffei2007` | 191.8 cm at 25, bone age 15.3, unfused |
+| `miedlich2016` | a four-point date/dose/age/**bone age**/height series |
+
+**What was actually wrong.** Not the conclusion — every observation is still right-censored by
+treatment. The **method**: the census searched abstracts, found heights absent, and recorded the
+absence as a property of *the literature* rather than of *the search*. Abstracts of case reports
+routinely omit the anthropometry that is the point of the case. This is CORR-016's lesson at a new
+level: **a census over abstracts answers "what do abstracts contain", and that is not the question.**
+
+**And it cost something real.** The atlas extrapolated a ceiling for the Smith propositus assuming a
+terminal velocity of 1–2 cm/yr, choosing that range in the absence of data. `carani1997` had the
+measurement: **1.31 cm/yr from 18 to 31 and 0.43 cm/yr from 31 to 38.** The assumed range was not far
+wrong, but it was a guess standing in for a number that existed in print in 1997.
+
+**Standing rule.** For a quantity that a case report would state in its body but not its abstract —
+heights, ages, bone ages, doses, durations — **an abstract-level census establishes nothing and must
+be recorded as "not searched" rather than "not reported."** Where full texts are unreachable, say
+which ones, so the gap is addressable rather than mistaken for a fact about the world.
+
+---
+
+## CORR-027 — I nearly recorded a growth velocity that a summarisation step had inflated fourfold, twice
+
+CORR-024 recorded that a summarisation step reported `chen2015arom`'s velocity as "10.5 cm/year" when
+the primaries it also reported gave **2.6 cm/year**. Reading the five supplied PDFs directly produced
+the same class of near-miss in reverse: the directly-read numbers **disagree with nothing**, because
+this time there was no summarisation step between the paper and the atlas.
+
+That is worth recording as a positive control rather than a defect. Across five papers read directly,
+every extracted value — seven height series, four bone-age series, two androgen regimens — went into
+the atlas as printed, and the two derived quantities (1.31 and 0.43 cm/yr; 0.86 bone-age years/yr)
+were computed here, from printed pairs, and are shown with their inputs so they can be rechecked.
+
+**The rule this confirms.** The failure mode in CORR-023 and CORR-024 was never the model reading the
+paper — it was a *layer* between the paper and the record. **Where a primary can be read directly, the
+summarisation layer should be removed rather than audited.** Requesting the PDF is cheaper than
+verifying a summary of it.

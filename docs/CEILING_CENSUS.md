@@ -173,3 +173,74 @@ Which means the height question resolves into two, and only the second is open:
 2. **Slow the clock itself** — the intrinsic, division-dependent senescence programme. **Never
    attempted in any species.** This is where the remaining headroom is, and it is the same
    quantity as the stem-cell budget, the growth fraction, and population asymmetry.
+
+---
+
+# Part 3 — 2026-08-07: five full texts, and the analysis the census said could not be run
+
+Five of the paywalled case reports were supplied and **read in full**. Part 2 concluded that a
+survival analysis on height was impossible because the heights were not in the abstracts. **They were
+in the bodies.** See CORR-026.
+
+## A. The untreated trajectories
+
+| patient | untreated heights | velocity | bone age |
+|---|---|---|---|
+| `morishima1995` brother | 170.2 cm @ 14y8m → **204.0 @ 24y3m** | 3.53 cm/yr | ~14 @ 24y3m, **still growing** |
+| `carani1997` | 170 @ 18 → 187 @ 31 → **190 @ 38** | **1.31 → 0.43 cm/yr** | 14.8 @ 31, **frozen to 38** |
+| `maffei2004` | 172 @ 21 → 177 @ 25 → 183.5 @ 29 | 1.25 → 1.63 cm/yr | 15, **frozen 25→29** |
+| `chen2015arom` | 172 @ 20 → 182.5 @ 24 | 2.6 cm/yr | delayed 6–8 y @ 24 |
+| `maffei2007` | **191.8 @ 25** | — | 15.3, unfused |
+| `baykan2013` | 187 @ 27 | — | 15, open |
+| `miedlich2016` | 180 @ 25y2m | — | 15.0 |
+
+**All seven are still censored.** Every one was treated or last seen growing. The conclusion of
+Part 1 stands — only the analysis is now possible.
+
+## B. The velocity decays
+
+`carani1997` is the only man followed far enough to show a trajectory rather than a point:
+
+> **1.31 cm/yr from 18 to 31, then 0.43 cm/yr from 31 to 38.**
+
+A threefold fall across two decades in a man whose plates were never closed. Extrapolating from
+190 cm at 38 gives a few more centimetres at most. **The duration lever has an asymptote.** One man,
+two intervals, and the earlier one includes the tail of his pubertal growth — so this is a shape, not
+a curve.
+
+## C. And the deceleration is not the oestrogen clock
+
+This is the part that matters most. In both men with serial bone ages, **bone age did not move at
+all** — 14.8 for seven years, 15 for four — while height kept rising and, where followed, kept
+slowing.
+
+> **The maturation clock was stopped and the growth slowed anyway.**
+
+Which is exactly what division-dependent depletion predicts and what a pure clock model does not.
+**Stopping the clock does not stop the spending.**
+
+## D. Androgen is out
+
+Two men, ~33 patient-months of physiological-to-supraphysiological testosterone, in a background where
+none of it can be aromatised:
+
+- `carani1997`: 250 mg enanthate q10d × 6 months → *"His bone age did not change."*
+- `maffei2004`: 250 mg q21d ×6mo, then q15d ×8mo, then transdermal 6 mg/d ×13mo → **bone age 15 at
+  every phase.**
+
+Meanwhile transdermal oestradiol closed the same two men's plates in **nine** and **six** months.
+
+Of Smith & Korach's four candidates for the residual route, **androgen is eliminated by direct
+intervention.** The three that remain — ER-β, truncated ER-α, non-classical receptors — are all
+oestrogen-mediated, which is what the ligand-versus-receptor contrast independently predicts:
+
+| condition | ligand | ER-α | bone-age velocity |
+|---|---|---|---|
+| aromatase deficiency, untreated | **absent** | intact | **≈ 0** |
+| ESR1-null (Smith propositus) | present | **absent** | **0.71 /yr** |
+| aromatase deficiency + oestradiol | restored | intact | 0.86 – ≥2.1 /yr |
+
+New node `residual_maturation_route_is_oestrogen_dependent` (C). New gap
+`g_l7_residual_maturation_route`, whose cheapest step is a **Western blot** for truncated ER-α in the
+Smith propositus's archived material — a positive result collapses three candidates into one with no
+new patient.
