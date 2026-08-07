@@ -10833,9 +10833,12 @@ gaps:
     (lui2010, lui2014). Critically, lui2008 TESTED promoter methylation at three imprinted genes in the
     program - Mest, Peg3 and Plagl1 - and found NO change with age, so the imprinted arm of the program is
     not a second instance of this mechanism.'
-  what_is_missing: 'Everything causal. Methylation loss is measured as an association with age; no study
-    has raised or lowered maintenance methylation in a growing animal and measured growth plate senescence,
-    plate height or bone length. Nobody has measured whether methyl-donor availability affects growth plate
+  what_is_missing: 'CORRECTED ROUND 73 (CORR-065). This gap originally read that no study had raised or
+    lowered maintenance methylation in a growing animal and measured bone length. That was false when
+    written: yanagihara2025 had LOWERED it - chondrocyte-autonomous Dnmt1 deletion, tibiae at 44.7 per cent
+    of control - and the paper was already in this bibliography, added two days earlier, with a one-line
+    finding saying so. What remains missing is only the other direction. No study has RAISED maintenance
+    methylation in a growing animal and measured bone length; see g_l2_dnmt1_gain_of_function_postnatal. Nobody has measured whether methyl-donor availability affects growth plate
     methylation at all. There is no locus-resolved methylation map of the resting zone - the nilsson2005
     measurement is GLOBAL methyl-dCMP, so which genes lose the mark is unknown twenty years on. And no
     human growth plate has ever been assayed.'
@@ -10904,4 +10907,55 @@ gaps:
   blocking_layers:
   - L2
   - L1
+  status: open
+- gap_id: g_l2_dnmt1_gain_of_function_postnatal
+  type: known_unknown
+  layer: L2
+  tractability: 3
+  question: Does RAISING maintenance DNA methylation in growth plate chondrocytes after birth lengthen
+    bone, or is DNMT1 merely required for normal growth and unresponsive to being pushed above normal?
+  why_it_matters: 'EVERY RESULT ON THIS AXIS RUNS LOSS-TO-LOSS, AND REQUIREMENT IS NOT SUFFICIENCY.
+    Four independent lines now say the same thing in the same direction: chondrocyte-autonomous Dnmt1
+    deletion shortens tibiae to 44.7 per cent of control with a narrowed proliferative zone and accelerated
+    hypertrophy (yanagihara2025); 5-azacytidine drives growth plate chondrocytes into hypertrophic
+    differentiation; loss of PASG/HELLS, required for maintenance methylation, causes growth retardation
+    and premature ageing; and global methylation falls in the resting zone as it senesces, specifically
+    during slow in vivo replication and not during faster replication elsewhere (nilsson2005). The human
+    DNMT1 locus is associated with height at P < 4.2e-35, its top phenotype. That is a well-supported
+    mechanism and it licenses nothing, because a pathway can be necessary for normal growth and completely
+    unresponsive to elevation. THE ATLAS HAS BEEN BURNED BY EXACTLY THIS BEFORE: mTORC1 is required for
+    normal growth, and forcing it gave wider, denser and SHORTER bone (wu2017). Until someone pushes
+    maintenance methylation up rather than down, this lead supports a mechanism and supports no
+    intervention. AND THE ROUTE MATTERS AS MUCH AS THE ANSWER, because the accessible handle is not a drug
+    but substrate supply - DNMT1 methylates using S-adenosylmethionine, whose availability is set by
+    one-carbon metabolism, so folate, B12, betaine, choline and methionine are the dietary variables
+    sitting on this axis. Whether SAM availability is ever rate-limiting for chondrocyte maintenance
+    methylation in vivo is unmeasured in any species.'
+  what_is_known: 'yanagihara2025: Prrx1-Cre and Col2a1-Cre Dnmt1 deletion shorten long bones, Osx-Cre
+    (osteoblast) deletion does not, so the effect is chondrocyte-autonomous; reduced methylation raises
+    energy-metabolism and ossification gene expression and nearly all energy metabolites; the deficit
+    widens postnatally and the authors conclude the postnatal role exceeds the embryonic one. nilsson2005:
+    methylation loss is a property of slow resting-zone replication in vivo, absent in the proliferative
+    zone, absent in culture, absent in growing liver. Data are public as GSE270640 (RNA-Seq, n=22) and
+    GSE270641 (MBD-Seq, n=6).'
+  what_is_missing: 'No gain-of-function in any species. No inducible POSTNATAL Dnmt1 manipulation, so the
+    existing knockouts cannot separate a developmental lesion from an ongoing postnatal requirement. No
+    measurement of whether S-adenosylmethionine or any methyl donor is rate-limiting in growth plate
+    chondrocytes. No locus-resolved methylation map of the resting zone across age in any species - the
+    twenty-year-old nilsson2005 measurement is still global methyl-dCMP. And nothing on UHRF1, DNMT1s
+    obligate partner for hemimethylated-DNA recognition, which yanagihara2025 stains but does not perturb.'
+  discriminating_experiment: 'Three tiers. TIER 1, in silico and free: reanalyse GSE270641 against GSE270640
+    to ask WHICH loci lose methylation and whether they overlap the growth-promoting gene set that the
+    multi-organ juvenile programme downregulates (lui2010, finkielstain2009). If the same genes appear, the
+    two literatures are one axis. TIER 2, substrate: vary methyl-donor supply across the juvenile growth
+    period at CONSTANT energy and protein - constancy is the whole design, since growth restriction alone
+    already delays the programme - and score growth plate methylation, plate height and tibial length.
+    TIER 3, genetic: inducible chondrocyte-specific Dnmt1 or Uhrf1 OVEREXPRESSION started postnatally,
+    with bone length as the endpoint. DISCRIMINATION: bone lengthens on elevation means maintenance
+    methylation is a lever and the pool ceiling has a handle; bone unchanged means DNMT1 is required and
+    saturated at wild-type, the lead closes as an intervention, and the search returns to the pool
+    architecture questions.'
+  blocking_layers:
+  - L2
+  - L5
   status: open

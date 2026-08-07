@@ -3277,3 +3277,44 @@ in a zone whose upper boundary is the advancing secondary ossification centre ca
 spared, progenitors made, and cells still inside the zone only because the boundary has not moved. Only the
 middle one is pool expansion. Logged as `g_l2_pool_preservation_versus_pool_expansion` with a lineage-tracing
 design that separates the three, rather than written up as an arm-3 result.
+
+## CORR-065 — I wrote a gap saying the experiment had never been done, while the paper was in my own bibliography
+
+Round 69 created `g_l2_maintenance_methylation_as_the_pool_lever` with this in `what_is_missing`:
+
+> *"Everything causal. Methylation loss is measured as an association with age; no study has raised or
+> lowered maintenance methylation in a growing animal and measured growth plate senescence, plate height
+> or bone length."*
+
+**That was false at the moment I wrote it.** `yanagihara2025` — *Dnmt1 determines bone length by regulating
+energy metabolism of growth plate chondrocytes*, Nature Communications, open access — had been added to
+this bibliography on **2026-08-05**, two days earlier, carrying the one-line finding *"Dnmt1 deletion in
+limb mesenchyme shortens long bones via reduced chondrocyte proliferation and accelerated differentiation."*
+Its `cited_by` count was **0**. I then spent rounds 69 through 72 building the maintenance-methylation lead
+out of a twenty-year-old global-methylation measurement, a 5-azacytidine observation cited second-hand, and
+a PASG mouse cited second-hand — while the direct gene test sat unread in my own bibliography with a
+one-line summary that says exactly what it refutes.
+
+**This is the third instance of the same failure** (CORR-058, CORR-064, now this), and it is the worst of
+the three because the earlier two were about not reading *across* sources I held. This one is about not
+reading a source whose one-line finding I had already written and which bore directly on a gap I was
+authoring in the same week.
+
+**What the paper actually gives, now that it has been read.** Chondrocyte-autonomous — Osx-Cre osteoblast
+deletion gives no length phenotype, Col2a1-Cre chondrocyte deletion reproduces it. Tibiae at 6 weeks
+**44.7% of control**. Narrowed proliferative zone, accelerated hypertrophy and mineralisation. Mechanism
+is **energy metabolism**, not a senescence clock — which redirects the lead toward the nutrient-sensing arm
+the atlas already holds. And a human leg the atlas did not have: the **DNMT1 locus associates with height at
+P < 4.2e-35**, its top phenotype in the Musculoskeletal Knowledge Portal.
+
+**What survives unchanged is the thing that matters.** All four lines on this axis run **loss-to-loss** —
+Dnmt1 deletion, 5-azacytidine, PASG/HELLS loss, and age-related methylation decline. Requirement is not
+sufficiency, and mTORC1 is the standing example of a pathway required for normal growth that gives wider,
+denser and *shorter* bone when forced (`wu2017`). The gap has been split: the old one keeps the
+locus-resolution and substrate questions, and `g_l2_dnmt1_gain_of_function_postnatal` now carries the only
+question that decides whether this is an intervention or just a mechanism.
+
+**Procedural fix, since exhortation has not worked three times running.** `addref.py` records
+`one_line_finding` at add time and the validator already tracks `cited_by`. Before opening or editing any
+gap, the `what_is_missing` field must be checked against every bibliography entry whose `one_line_finding`
+matches the gap's subject terms — a mechanical check the tooling can do and I evidently cannot.

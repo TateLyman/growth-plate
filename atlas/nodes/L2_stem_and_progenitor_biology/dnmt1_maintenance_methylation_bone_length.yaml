@@ -1,0 +1,155 @@
+id: dnmt1_maintenance_methylation_bone_length
+name: DNMT1 maintenance methylation sets bone length
+aliases:
+- Dnmt1 chondrocyte
+- maintenance methylation lead
+- the arm-3 mechanism candidate
+type: gene
+layer: L2
+stub: false
+summary: 'The maintenance-methylation hypothesis that this atlas built across rounds 69-72 from nilsson2005
+  already had a direct test, published in Nature Communications in October 2025, and it lands the way the
+  hypothesis predicts. THE HUMAN LEG FIRST. In the Musculoskeletal Knowledge Portal, gene-level MAGMA
+  analysis of SNPs at the DNMT1 locus gives its most significant association with HEIGHT, P < 4.2e-35 -
+  not with bone density, not with fracture, with height. THE MOUSE LEG. Deleting Dnmt1 in limb mesenchyme
+  (Prrx1-Cre) shortens long bones: tibiae at 6 weeks were 44.7 per cent of control length. The mechanism
+  is the one the atlas cares about - a NARROWED PROLIFERATIVE ZONE with accelerated hypertrophy and
+  mineralisation, increased primary trabecular bone, enhanced osteoclastogenesis, and what the authors
+  describe as loss of growth plates. Shortening was present at birth and became more pronounced over the
+  first several weeks, and the authors conclude explicitly that Dnmt1 matters MORE postnatally than
+  embryonically. THE CELL-TYPE CONTROL IS CLEAN. Osx-Cre deletion, restricted to osteoblasts, gave NO
+  difference in bone length. Col2a1-Cre deletion, restricted to chondrocytes, reproduced the shortening.
+  The effect is chondrocyte-autonomous. THE MECHANISM IS NOT THE ONE ANYBODY EXPECTED. Integrated RNA-Seq
+  and MBD-Seq show that reduced methylation raises expression of energy-metabolism and ossification genes,
+  and metabolomics confirms that nearly all energy metabolites rose. So maintenance methylation restrains
+  bone growth through metabolic set-point rather than through a senescence clock, which connects this lead
+  to the nutrient-sensing arm the atlas already holds. WHAT THIS DOES AND DOES NOT ESTABLISH. It establishes
+  that maintenance methylation is REQUIRED for normal longitudinal growth, in a chondrocyte-autonomous way,
+  with a human genetic association at the same locus - four independent lines now point the same direction,
+  counting 5-azacytidine driving chondrocytes to hypertrophy and PASG/HELLS loss causing growth retardation.
+  It does NOT establish sufficiency. Every one of those four is a LOSS of methylation producing a LOSS of
+  growth. Nobody has raised maintenance methylation postnatally and measured bone length. That asymmetry
+  is the whole remaining question for this lead and it is now precisely specifiable.'
+quantitative:
+- parameter: gene-level association of the DNMT1 locus with height
+  value: 4.2e-35
+  unit: P value, MAGMA gene analysis, two-sided
+  conditions: Musculoskeletal Knowledge Portal, gene-level association of SNPs across the DNMT1 locus;
+    height was the most significant phenotype for this gene
+  species: human
+  source_ref: yanagihara2025
+  uncertainty: 'A gene-level aggregate over a locus, not a causal variant, and MSK-KP aggregates published
+    GWAS so the height signal is driven by the very large height GWAS. It says the locus is associated,
+    not that DNMT1 activity is the mediator. But it is a HUMAN association at exactly the gene the mouse
+    work manipulates, and height was its top hit.'
+- parameter: tibial length at 6 weeks, chondrocyte-lineage Dnmt1 deletion versus floxed control
+  value: '44.7'
+  unit: per cent of control
+  conditions: Dnmt1 delta-Prx1 (Prrx1-Cre) versus Dnmt1 flox; n=15 control and n=13 knockout at 6 weeks,
+    n=7 and 7 at 1 week; unpaired two-sided t-tests; length by soft X-ray or electronic caliper and uCT
+  species: mouse
+  source_ref: yanagihara2025
+  uncertainty: 'Less than half the control tibial length. A constitutive deletion from the limb bud, so
+    developmental and postnatal contributions are not separated by design - though the authors note the
+    deficit widens over the first several weeks and conclude the postnatal role is the larger one. The
+    atlas has now made the developmental-versus-postnatal error three times (CORR-046, CORR-053, CORR-058)
+    and flags it here rather than repeating it: this is a REQUIREMENT result, and an inducible postnatal
+    deletion has not been done.'
+- parameter: cell type carrying the effect - osteoblast versus chondrocyte
+  value: chondrocyte
+  unit: qualitative, with an internal negative control
+  conditions: Osx-Cre;Dnmt1 fl/fl (osteoblast) showed NO difference in bone length against Cre controls;
+    Col2a1-Cre;Dnmt1 fl/fl (chondrocyte) reproduced the shortening, though with very low birth rates
+    departing from Mendelian expectation and poor survival to adulthood
+  species: mouse
+  source_ref: yanagihara2025
+  uncertainty: 'THE CONTROL THAT MAKES THE RESULT USABLE. Two Cre lines dissociating the lineages, with the
+    osteoblast arm null. The Col2a1 line''s non-Mendelian birth rate means the surviving animals are a
+    selected subset, which weakens quantitation from that arm while leaving the qualitative dissociation
+    intact.'
+- parameter: 'zone architecture under reduced maintenance methylation'
+  value: proliferative zone narrowed, hypertrophy and mineralisation accelerated
+  unit: qualitative
+  conditions: histology and immunohistochemistry for Dnmt1 and Uhrf1; increased primary trabecular bone
+    with enhanced osteoclastogenesis; in vivo BrdU 100 mg/kg intraperitoneally 24 h before sampling
+  species: mouse
+  source_ref: yanagihara2025
+  uncertainty: 'This is the phenotype nilsson2005 predicts and that 5-azacytidine produces in vitro - lose
+    methylation, chondrocytes stop proliferating and differentiate. Uhrf1 is co-stained because it is
+    DNMT1''s obligate partner for hemimethylated-DNA recognition, which makes UHRF1 a second node on the
+    same axis that the atlas has not examined.'
+- parameter: transcriptional and metabolic consequence of reduced maintenance methylation
+  value: energy metabolism and ossification genes up, nearly all energy metabolites up
+  unit: qualitative
+  conditions: integrated RNA-Seq (GSE270640, n=22) and MBD-Seq (GSE270641, n=6) plus metabolomics on
+    Dnmt1 delta-Prx1 chondrocytes
+  species: mouse
+  source_ref: yanagihara2025
+  uncertainty: 'UNEXPECTED AND IT REDIRECTS THE LEAD. The atlas assumed maintenance methylation would act
+    through a senescence programme. The measured route is metabolic set-point - methylation restrains
+    energy metabolism, and lifting that restraint accelerates differentiation. That connects this lead to
+    the nutrient-sensing arm the atlas already holds (mTORC1, load-gating) rather than to the Baron
+    senescence corpus, and the two may be the same axis seen from different ends.'
+- parameter: 'whether RAISING maintenance methylation postnatally lengthens bone'
+  value: never tested
+  unit: none
+  conditions: all four converging lines - Dnmt1 deletion, Col2a1-Cre deletion, 5-azacytidine, PASG/HELLS
+    loss - are LOSS of methylation producing LOSS of growth
+  species: not_applicable
+  source_ref: yanagihara2025
+  uncertainty: 'RECORDED AS AN ABSENCE, AND IT IS THE WHOLE REMAINING QUESTION. Requirement is not
+    sufficiency. A pathway can be necessary for normal growth and completely unresponsive to being pushed
+    above normal - which is the same trap that killed the mTORC1 arm, where wu2017 gave wider, denser and
+    SHORTER. Until a gain-of-function exists, this lead supports the mechanism and licenses no intervention.'
+localization:
+- 'growth plate proliferative zone: narrowed on Dnmt1 loss, with accelerated transit to hypertrophy'
+- 'chondrocytes: the cell type carrying the effect, dissociated from osteoblasts by Osx-Cre versus Col2a1-Cre'
+- 'human DNMT1 locus: gene-level association whose top phenotype is height'
+human_evidence: indirect
+human_evidence_note: The human evidence is a gene-level GWAS aggregation at the DNMT1 locus, not a measured
+  methylation or growth phenotype in a human growth plate. All mechanism is mouse.
+species_basis:
+- mouse
+- human
+translation_risk: moderate
+translation_risk_reason: The direction should transfer because maintenance methylation is a housekeeping
+  mechanism conserved across mammals, the phenotype is chondrocyte-autonomous, and there is a human
+  genetic association at the same locus. What will not transfer is magnitude, and more importantly the
+  DIRECTION OF USEFUL MANIPULATION is untested in any species - every result here is loss of function.
+confidence: B
+claim_grades:
+- claim: Maintenance DNA methylation by DNMT1 is required in chondrocytes for normal longitudinal bone
+    growth.
+  grade: B
+  basis: Mouse conditional knockout with two independent Cre lines, an osteoblast-specific negative control,
+    integrated methylation and expression sequencing, metabolomics, and a human gene-level association at
+    the same locus with height as its top phenotype.
+- claim: The mechanism runs through metabolic set-point rather than through a senescence programme.
+  grade: C
+  basis: One study, integrating RNA-Seq, MBD-Seq and metabolomics in one model. No perturbation of the
+    metabolic arm to test necessity.
+- claim: Raising maintenance methylation would increase bone length.
+  grade: E
+  basis: NOT TESTED IN ANY SPECIES. Recorded as an explicit inference so it cannot be read out of the
+    requirement result. Four converging lines all run loss-to-loss.
+key_refs:
+- ref_id: yanagihara2025
+  pmid: '41188231'
+  first_author: Yanagihara Y
+  year: 2025
+  type: primary
+  one_line_finding: Chondrocyte-autonomous Dnmt1 loss shortens tibiae to 44.7 per cent of control by
+    narrowing the proliferative zone and accelerating hypertrophy, via raised energy metabolism, with the
+    DNMT1 locus associated with human height at P < 4.2e-35.
+- ref_id: nilsson2005
+  pmid: '16002553'
+  first_author: Nilsson O
+  year: 2005
+  type: primary
+  one_line_finding: Methylation loss in the resting zone is specific to slow in vivo replication and is
+    reversed by culture - the observation this gene test was needed to interpret.
+open_questions:
+- g_l2_maintenance_methylation_as_the_pool_lever
+- g_l2_dnmt1_gain_of_function_postnatal
+contradicts: []
+last_verified: '2026-08-07'

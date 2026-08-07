@@ -19311,3 +19311,33 @@ edges:
     miR-29 the single candidate druggable orchestrator of the growth-limiting program. Recorded as speculative because the
     evidence is correlative and because no miR-29 loss-of-function animal has ever had a bone measured.
   traversal_usable: false
+- edge_id: e01257
+  source: dnmt1_maintenance_methylation_bone_length
+  target: arm3_pool_ceiling_is_imposed_not_intrinsic
+  relation: required_for
+  context: mouse limb mesenchyme (Prrx1-Cre) and chondrocyte (Col2a1-Cre) Dnmt1 deletion, with Osx-Cre osteoblast deletion as
+    a null internal control; tibiae at 6 weeks, n=15 control and n=13 knockout
+  evidence_tier: T1
+  refs:
+  - yanagihara2025
+  - nilsson2005
+  confidence: B
+  notes: 'Maintenance methylation is the only mechanism the atlas holds that could in principle slow the counter without
+    slowing growth, and it now has a direct gene test running in the predicted direction - loss of Dnmt1 narrows the
+    proliferative zone, accelerates hypertrophy and shortens tibiae to 44.7 per cent of control. Sign-exempt relation: this is
+    a requirement, and the useful direction (elevation) is untested.'
+  traversal_usable: true
+- edge_id: e01258
+  source: dnmt1_maintenance_methylation_bone_length
+  target: height_gwas
+  relation: correlates_with
+  sign: +
+  context: human; gene-level MAGMA association of SNPs across the DNMT1 locus in the Musculoskeletal Knowledge Portal, with
+    height the most significant phenotype for the gene
+  evidence_tier: T3
+  refs:
+  - yanagihara2025
+  confidence: C
+  notes: P < 4.2e-35. A gene-level aggregate over a locus rather than a causal variant, and MSK-KP aggregates published GWAS
+    so the signal rides on the very large height GWAS. Recorded because it is the only human leg this lead has.
+  traversal_usable: true

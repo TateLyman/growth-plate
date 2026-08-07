@@ -348,6 +348,30 @@ def validate(quota=False):
             else:
                 seen[key] = rid
 
+    # CORR-065. Three times now (CORR-058, CORR-064, CORR-065) the atlas has held a
+    # source, written its one_line_finding, and then reasoned for rounds as though the
+    # paper did not exist - the worst instance being a gap whose what_is_missing said an
+    # experiment had never been done while the paper reporting it sat in the bibliography
+    # with a one-line summary saying exactly that. Exhortation has failed three times, so
+    # this is mechanical. A ref carrying a one_line_finding is a paper someone has already
+    # extracted a claim from; if nothing cites it, that claim is invisible to every node
+    # and every gap, which is precisely the blind spot.
+    orphan_findings = []
+    for rid, rv in sorted(refs.items()):
+        if not isinstance(rv, dict):
+            continue
+        if rv.get("one_line_finding") and rid not in cited_refs:
+            orphan_findings.append(rid)
+    for rid in orphan_findings:
+        r.warn(f"finding_never_used/{rid}",
+               "has a one_line_finding but no node or gap cites it - a claim was "
+               "extracted from this paper and then left invisible; cite it or clear "
+               "the finding (CORR-065)")
+    if len(orphan_findings) > 20:
+        r.warn("finding_never_used/backlog",
+               f"{len(orphan_findings)} refs carry extracted findings that nothing "
+               f"cites - work the backlog before opening new gaps in their subject areas")
+
     for rid in sorted(cited_refs):
         rv = refs.get(rid) or {}
         if rv.get("local_pdf") and rv.get("type") == "primary_abstract_only":
