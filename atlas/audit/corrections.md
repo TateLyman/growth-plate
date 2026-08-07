@@ -3638,3 +3638,41 @@ sentence was *"vosoritide, and it is not close,"* written from two abstracts. Th
 fourth time** (CORR-059, CORR-060, CORR-062, now this). The standing rule from CORR-062 said a `not
 reported` row forbids a verdict in prose; it needs extending: **an `abstract_only` row forbids a
 comparative verdict in prose.**
+
+## CORR-074 — I called achondroplasia an upper bound on vosoritide. It is 2.3× short of the real number.
+
+Round 79 recorded vosoritide's +1.57 cm/yr in achondroplasia and reasoned: *"a subject with normal FGFR3 has
+no such excess to correct, so this number is an upper bound and probably a loose one."*
+
+`dauber2026` at full text: annualised growth velocity **4.53 ± 1.61 → 8.09 ± 1.58 cm/yr, an increase of
+3.56 cm/yr, P<0.0001** — with a **4.0 SD** rise in age- and sex-adjusted velocity Z-score (95% CI 3.08–4.91)
+and **+0.65 SD** height (0.53–0.77). Six-month observation then twelve-month treatment, each child their own
+control, 99.3% adherence, and the increase seen in **all** genetic subgroups.
+
+**The number was wrong. The reasoning was not, and that distinction matters.** All three cohorts carry a
+defect vosoritide corrects: RASopathies activate Ras-MAPK; ACAN deficiency raises activated MAPK in growth
+plate cartilage per the chick model the authors cite; NPR2 deficiency is partial loss of the drug's own
+receptor, so treatment there is ligand supplementation. **A subject with intact FGFR3, MAPK, NPR2 and
+aggrecan is still untested** — and a Europe PMC sweep run today returns no such trial. The prediction failed
+because I assumed achondroplasia was the most correctable pathology; it is not.
+
+**And the paper contains a property the atlas had never recorded.** Over twelve months there was **no
+significant change in the bone-age to chronological-age ratio.** Velocity rose four standard deviations
+without a matching advance in skeletal maturation, so the height is not being borrowed from remaining growth
+time — which is the failure mode of every androgen- or nutrition-driven acceleration. Twelve months is short
+for a bone-age endpoint and it needs replication, but it is the single most favourable property any agent in
+this stack has shown.
+
+**The finding that changes the stack, though, is the harm.** Three slipped capital femoral epiphyses in
+thirty children, plus four cases of genu valgum, five discontinuations. Background SCFE incidence is on the
+order of 10 per 100,000 per year. Two features make this *worse* for a bone-age-16 subject: these were
+**prepubertal children aged 3 to 11** who slipped anyway, while SCFE incidence peaks in adolescence — and the
+atlas already carries an SCFE signal for erdafitinib, so the stack compounds one specific hazard at one
+specific site.
+
+Two features make it tractable. Four of the five discontinuations had **ACAN aggrecan deficiency**, a matrix
+defect a pathway-intact subject does not have. And **every SCFE was preceded by a visible antecedent** —
+severe genu valgum twice, coxa valga once. The paper records that two subjects were *continued* on treatment
+after developing severe genu valgum and both subsequently slipped. That is the natural experiment defining
+what the stopping trigger should have been, and it converts an unquantified catastrophic risk into a
+monitorable one. Logged as `g_l12_compounding_scfe_hazard_in_the_stack`.
