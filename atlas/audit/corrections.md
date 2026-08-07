@@ -1778,3 +1778,74 @@ uncorrected run left donor3 out of the stromal cluster, so the global floor happ
 **Standing rule.** An internal reference must be measured in the same batch as the thing it
 judges. Where it cannot be, the unjudgeable cells are excluded and the exclusion is reported —
 they are never scored against another batch's reference.
+
+---
+
+## CORR-022 — an absolute threshold deleted the resting zone, and produced a clean positive on the wrong cells
+
+`reservoir_v2.py` and `stem_module_human.py` both called chondrocyte clusters at `COL2A1 mean >= 500`,
+an absolute count picked because it obviously separated cartilage from everything else. It does. It
+also **excluded clusters 6 and 7 — the resting zone** — at COL2A1 358 and 270.
+
+That is not bad luck. `avijgan2026br` established that the human resting zone carries **the lowest
+mRNA content of any zone**, in every one of 17 sections. An absolute expression bar therefore
+deletes the resting zone *by construction*, and the resting zone is the compartment every question
+in this round is about. The threshold encoded the opposite of a known fact about the tissue.
+
+**Fixed** by calling cartilage at **100× the per-donor ambient floor** — the same internal reference
+used everywhere else in this analysis — rather than at an absolute number. Clusters 6, 7, 11, 13 and
+14 join 9, 10 and 12; the chondrocyte group goes from 890 to 1,907 cells.
+
+**What it changed.** Two things, in opposite directions.
+
+The Hedgehog verdict **strengthened**: GLI1 0.30 → **0.28**, HHIP 0.03 → 0.02, GLI2 0.22 → 0.15,
+because the resting zone is where GLI1 is highest and adding it raised the chondrocyte side.
+Enrichment figures for the stromal population fell (COL1A1 573× → 350×, PRRX1 13.3× → 12.0×) because
+the comparison is now against all cartilage rather than part of it.
+
+And a **result I would have reported was destroyed.** With the resting zone excluded, the Wnt-module
+test (P1) identified cluster 12 as "resting zone" on 10 PTHLH counts, and returned **2 of 2** module
+genes enriched — a clean confirmation that the mouse niche module transfers to human. With the real
+resting zone in place it returns **1 of 4**: WIF1 2.80×, FZD6 1.45×, SFRP1 1.25×, and **DKK2 going
+the wrong way at 0.56× on 972 counts.** The module is partly conserved, not transplanted. The clean
+positive was an artefact of testing the wrong cells.
+
+**This is the third time in two days** that a guard or a test passed for a reason I had not checked
+(CORR-019, CORR-021, and now this). The pattern is specific enough to name: **a threshold chosen
+because it looks obviously right encodes an assumption about the tissue, and that assumption needs a
+citation like any other.** Prefer a reference measured inside the sample to a number chosen outside it.
+
+---
+
+## CORR-023 — three fabricated PMIDs, in my own tool, from a review's citation table
+
+`stem_module_human.py` was built to test externally-derived marker sets, and its docstring credited
+each marker to the primary that established it. Three of the identifiers were wrong:
+
+| I wrote | what that PMID actually is | correct PMID |
+|---|---|---|
+| Newton 2019 Nature = 30894746 | a MYCN/BRCA1 RNA-polymerase paper | **30814736** |
+| Muruganandan 2022 Nat Commun = 35523776 | a study of response to electroconvulsive therapy | **35523895** |
+| Hallett 2021 eLife = 34881694 | larval ecology of *Aedes mariae* | **34309509** |
+
+**Where they came from.** A review's citation table, read through a summarisation step, transcribed
+into my docstring without being checked against the record. The papers are all real and the marker
+attributions are all correct — Newton did establish CD73, Muruganandan did establish FoxA2, Hallett
+did establish the Wnt-inhibitory module. **Only the identifiers were invented**, which is the most
+dangerous form of the error, because everything around them is true and nothing looks wrong.
+
+**Caught** by running every PMID in this round through Europe PMC before use. Three of ten failed.
+
+**Standing rule, and it is absolute.** An identifier — PMID, DOI, accession — that arrives through a
+secondary source or through any summarisation step is **unverified data, not a citation**, until it
+has been resolved against the primary record and the returned title matches the paper meant. This
+holds for identifiers I write in tooling and comments exactly as it holds for the bibliography;
+a fabricated PMID in a docstring propagates into the next thing that reads it, which is what a
+bibliography is for preventing.
+
+**A note on provenance for `orikasa2024`.** Its full text was accessed at PMC but read *through a
+summarisation step*, not by me directly, and no figure was inspected. Its bibliography entry says so.
+The quantitative rows drawn from it are second-hand from a summary of a primary — weaker than a read
+primary, stronger than an abstract — and the bone-length null it supplies is a reported
+non-significance, not an equivalence bound. This is the same defect class as the `byers2000`
+provenance note, recorded at the time rather than found later.

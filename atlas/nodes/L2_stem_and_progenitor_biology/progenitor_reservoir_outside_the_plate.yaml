@@ -26,7 +26,15 @@ summary: 'Everything in this atlas about the division budget has assumed a close
   reservoir is DEFINED by Gli1 - it is found, traced and recruited through Hedgehog responsiveness - and the human
   population that matches it on every stromal marker does not match it on the property that makes it a reservoir.
   In human, GLI1 instead sits INSIDE the cartilage, highest in the clusters carrying the resting-zone marker SFRP5.
-  The reservoir hypothesis as posed does not transfer; the cells it would need do exist.'
+  AND THE SECOND HANDLE FAILS THE SAME WAY. A separate, prospectively declared prediction - that this population is
+  the groove-of-Ranvier counterpart and should therefore be AXIN2-positive and Wnt-RESPONSIVE even while Hedgehog-negative
+  - also failed: AXIN2 0.52, with NKD1 0.05 and TCF7 0.57 agreeing. Across a panel of five mouse stem markers taken
+  from the primaries that established them, ALL are depleted in the human stroma and enriched inside the cartilage
+  (PTHLH 0.10, FOXA2 0.01, CHRDL2 0.01, SFRP5 0.00, NT5E 0.65). What remains is a population that looks like ordinary
+  perichondrial fibroblast-lineage stroma carrying no known progenitor programme. THE REST OF THE ANSWER IS IN
+  stem_pool_size_versus_flux: even where a reservoir does exist, three mouse perturbations show pool size and bone
+  growth moving in OPPOSITE directions, so enlarging a pool is not by itself a route to height. The reservoir hypothesis
+  as posed does not transfer; the cells it would need do exist and carry none of its marks.'
 quantitative:
 - parameter: THE LONG-LIVED PROGENITORS THAT DRIVE POSTNATAL GROWTH ARE NOT PRESENT AT BIRTH
   value: reserve-zone progenitors do not self-renew in fetus or neonate; self-renewal begins at about 3 postnatal
@@ -89,13 +97,16 @@ quantitative:
   uncertainty: 'THE ANATOMICAL COUNTERPART OF THE MOUSE RESERVOIR EXISTS IN HUMAN TISSUE. This is re-analysis of a
     public deposit by this atlas, not a published result, and is graded accordingly. Dissociated scRNA-seq infers "outside
     the cartilage" from transcriptome, not position: these cells are COL2A1-negative and COL1A1-high, which is a cell
-    identity, and no image places them relative to the plate. PDGFRA enrichment is only 1.2x by mean, though 78% of
-    the cluster is PDGFRA-positive - PDGFRA is not what separates this population, COL1A1 and PRRX1 are.'
+    identity, and no image places them relative to the plate. PDGFRA enrichment is only 1.7x by mean, though 78% of
+    the cluster is PDGFRA-positive - PDGFRA is not what separates this population, COL1A1 and PRRX1 are. The enrichment
+    figures are lower than an earlier run reported (COL1A1 573x, PRRX1 13.3x) because the chondrocyte comparison group
+    now INCLUDES the resting zone, which an absolute COL2A1 threshold had excluded (CORR-022); the identity and the
+    direction are unchanged, and the comparison is now against the whole cartilage rather than part of it.'
 - parameter: BUT HEDGEHOG SIGNALLING IS OFF IN IT — THE MOUSE RESERVOIR'S DEFINING PROPERTY DOES NOT TRANSFER
-  value: 'stromal/chondrocyte expression ratio: GLI1 0.30, PTCH1 0.08, HHIP 0.03, GLI2 0.22, GLI3 0.72'
+  value: 'stromal/chondrocyte expression ratio: GLI1 0.28, PTCH1 0.08, HHIP 0.02, GLI2 0.15, GLI3 0.88'
   unit: ratio
   conditions: same libraries and clustering; comparison restricted to the three donors with a measurable per-library
-    ambient floor; 1,374 stromal against 890 chondrocyte cells; GLI1 233 pooled counts, clearing a pre-declared 50-count
+    ambient floor; 1,374 stromal against 1,907 chondrocyte cells; GLI1 431 pooled counts, clearing a pre-declared 50-count
     floor
   species: human
   source_ref: chu2026
@@ -110,6 +121,46 @@ quantitative:
     plate and not the 3-week window in which the mouse reserve is constituted; and a population that is transcriptionally
     Hedgehog-off at rest could still be Hedgehog-responsive on damage, which is the condition qu2025 actually tested
     and no human sample can be taken under.'
+- parameter: AND SO IS EVERY OTHER MOUSE STEM MARKER — FIVE MARKERS, TWO PATHWAYS, ALL DEPLETED IN THE HUMAN STROMA
+  value: 'stromal/chondrocyte ratio for the pre-specified mouse marker panel: PTHLH 0.10, FOXA2 0.01, CHRDL2 0.01,
+    SFRP5 0.00, AXIN2 0.52, NT5E 0.65, APOE 5.08. Wnt-pathway readouts in the same comparison: NKD1 0.05, TCF7 0.57,
+    RSPO2 1.02, RSPO3 1.06, LGR5 below the count floor'
+  unit: ratio
+  conditions: 'same libraries, clustering and per-donor ambient reference; every gene declared BEFORE the numbers were
+    read, each taken from the primary lineage-tracing paper that established it - PTHLH mizuhashi2018, NT5E newton2019,
+    AXIN2 usami2019, FOXA2 muruganandan2022, APOE kodama2025. The pre-declared prediction was SPECIFIC: if this population
+    is the human groove-of-Ranvier counterpart it should be AXIN2-positive, Wnt-RESPONSIVE, even though it is Hedgehog-negative.
+    Genes below 50 pooled counts were not compared'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE PREDICTION FAILED AND IT FAILED THE SAME WAY THE HEDGEHOG ONE DID. AXIN2 is 0.52 - not enriched
+    - and the two independent Wnt readouts agree, NKD1 at 0.05 and TCF7 at 0.57, so the population is not Wnt-responsive
+    either. Both mouse handles on a growth plate progenitor, Hedgehog and Wnt, are therefore negative in the same human
+    cells, tested separately and prospectively. Every resting-zone stem marker is DEPLETED in the stroma and enriched
+    inside the cartilage. APOE at 5.08 is the one enrichment and it is NOT read as evidence of stemness: APOE is a
+    high-expressing stromal and myeloid gene in any tissue, it is 11.15 in a neighbouring non-stromal cluster here,
+    and kodama2025 established it as a marker WITHIN growth plate cartilage, where its meaning does not carry outside.
+    WHAT THE PANEL LEAVES IS A POPULATION THAT LOOKS LIKE ORDINARY PERICHONDRIAL FIBROBLAST-LINEAGE STROMA - COL1A1,
+    PRRX1, PDGFRA - AND CARRIES NO KNOWN PROGENITOR PROGRAMME. This is a stronger negative than the Hedgehog row alone
+    because it is two prospectively declared predictions from unrelated pathways failing in the same direction, but
+    it remains a marker argument on one dataset: absence of a known programme is not absence of a progenitor.'
+- parameter: THE HUMAN RESTING ZONE PARTLY CARRIES THE MOUSE WNT-INHIBITORY NICHE MODULE, AND ONLY PARTLY
+  value: 'resting zone versus other chondrocyte clusters: SFRP5 10.29, WIF1 2.80, FZD6 1.45, SFRP1 1.25, DKK2 0.56;
+    NOTUM below the count floor. By the pre-declared 1.5-fold criterion, 1 of 4 testable module genes'
+  unit: ratio
+  conditions: module taken whole from hallett2021, which established it in mouse; resting-zone clusters identified
+    ONLY by PTHLH and CHRDL2 so that no module gene was used to define the compartment it is then tested in; SFRP5
+    is a module member and is the marker avijgan2026br used to call the human resting zone, so it was held out of identification
+    and reported separately
+  species: human
+  source_ref: chu2026
+  uncertainty: 'A MIXED RESULT REPORTED AT ITS PRE-DECLARED CRITERION RATHER THAN AT A FLATTERING ONE. Only WIF1 clears
+    1.5-fold among the four testable module genes; FZD6 at 1.45 falls just under; SFRP1 is flat; and DKK2 goes the
+    WRONG WAY at 0.56 on 972 counts, which is well powered and is a genuine miss. Held-out SFRP5 is the strongest signal
+    in the panel at 10.29. So the human resting zone is Wnt-inhibited by SFRP5 and WIF1 and not by DKK2 - the module
+    is PARTLY conserved, not transplanted. AN EARLIER RUN OF THIS TEST RETURNED 2 OF 2 AND WAS WRONG: it identified
+    the resting zone as cluster 12 because an absolute COL2A1 threshold had excluded the real resting-zone clusters
+    (CORR-022). The clean positive was an artefact of testing the wrong cells.'
 - parameter: IN HUMAN, HEDGEHOG RESPONSIVENESS SITS INSIDE THE CARTILAGE, WITH THE RESTING-ZONE MARKER
   value: GLI1 mean by cluster - highest is cluster 6 at 0.289 (SFRP5 1.831) and cluster 12 at 0.283; the only two clusters
     with SFRP5 above 0.08 are cluster 6 (1.831) and cluster 7 (4.279), and both are in the top four of 28 clusters
@@ -142,7 +193,7 @@ localization:
 - resting zone; and the stroma outside the cartilage, including the perichondrial neighbourhood
 human_evidence: direct
 human_evidence_note: 'The mechanism is mouse and rabbit; the human question has been asked by this atlas and answered
-  in one direction. Human tissue HAS now been examined for a GLI1+/PDGFRA+ stromal population - re-analysis of the four
+  in one direction, twice, on two unrelated pathways. Human tissue HAS now been examined for a GLI1+/PDGFRA+ stromal population - re-analysis of the four
   directly processed GSE288028 libraries, 27,620 cells, harmony-corrected, with a per-library ambient reference built
   on immune cells, which cannot transcribe COL2A1. A COL1A1+/PRRX1+/PDGFRA+ COL2A1-negative population is present in
   three donors, and it is Hedgehog-negative on all of GLI1, PTCH1, HHIP and GLI2. THE RE-ANALYSIS IS THIS ATLAS''S OWN

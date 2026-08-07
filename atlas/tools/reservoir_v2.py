@@ -66,8 +66,8 @@ def pcd(mask,g):
 # immune and chondrocyte clusters are identified on ALL cells; they define the
 # two reference compartments, not the result.
 immune=[c for c in cls if pcd(LE==c,"PTPRC")>=85 and mn(LE==c,"PTPRC")>=3]
-chond =[c for c in cls if mn(LE==c,"COL2A1")>=500]
-if not immune or not chond:
+chond =None  # defined after the ambient floor exists - see CORR-022
+if not immune:
     print("no immune or no chondrocyte cluster; cannot build ambient reference"); sys.exit(1)
 imm_mask=np.isin(LE,immune)
 
@@ -88,6 +88,16 @@ print(f"\nretained donors: {keep}   dropped: {[d for d in sorted(set(DO)) if d n
 K=np.isin(DO,keep)
 
 amb=float(np.mean([amb_d[d] for d in keep]))
+# CORR-022: chondrocyte clusters are called at 100x THE AMBIENT FLOOR, not at an
+# absolute count. The original >=500 bar excluded clusters 6 and 7 - the
+# CHRDL2/SFRP5/PTHLH-high RESTING ZONE - because avijgan2026br's finding that the
+# resting zone carries the lowest mRNA content of any zone makes an absolute
+# threshold delete it by construction. Including it can only LOWER the stromal
+# GLI1 ratio, since the resting zone is where GLI1 is highest.
+CHTHR=100*amb
+chond=[c for c in cls if mn((LE==c)&K,"COL2A1")>=CHTHR and int(((LE==c)&K).sum())>=20]
+print(f"chondrocyte clusters at COL2A1 >= {CHTHR:.0f} (100x ambient): {chond}")
+if not chond: print("no chondrocyte cluster; cannot proceed"); sys.exit(1)
 chm=mn(np.isin(LE,chond)&K,"COL2A1")
 print(f"\nG1 ambient {amb:.2f} vs chondrocyte {chm:.1f}  -> {chm/amb:.0f}x separation")
 fail=[]
