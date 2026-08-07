@@ -19083,3 +19083,52 @@ edges:
   notes: hypertrophic ZONE expansion is not the same measurement as terminal CELL height, and CNP has never been shown to
     raise terminal cell size in humans.
   traversal_usable: false
+- edge_id: e01243
+  source: cnp_protein
+  target: the_stack_in_a_normal_human
+  relation: hypothesized_link
+  sign: +
+  context: the CNP/NPR2 axis partitions onto the hypertrophic zone (Npr2 loss takes the type X layer to 23.0% of control
+    against 71.1% for non-hypertrophic), which is why it is assigned to the h_term term of the stack rather than the amplification
+    term
+  evidence_tier: T2
+  refs:
+  - nakao2015
+  - dauber2026
+  confidence: speculative
+  gap_id: g_l12_cartilage_targeted_cnp
+  notes: the zonal partition is a loss-of-function readout used to infer where gain acts; not shown symmetric.
+  traversal_usable: false
+- edge_id: e01244
+  source: the_stack_in_a_normal_human
+  target: terminal_cell_volume_is_the_undefended_term
+  relation: hypothesized_link
+  sign: +
+  context: the stack is organised by which term of the yield each agent moves, and the h_term arm is the only one with a
+    demonstrated human bone-age-sparing effect (dauber2026)
+  evidence_tier: T2
+  refs:
+  - dauber2026
+  - mcdonnell2026
+  confidence: speculative
+  gap_id: g_l1_raise_terminal_cell_volume
+  notes: no combination or monotherapy study has reached final height in any population.
+  traversal_usable: false
+- edge_id: e01245
+  source: fgfr3_npr2_crosstalk
+  target: the_stack_in_a_normal_human
+  relation: hypothesized_link
+  sign: +
+  context: FGFR3 restrains growth partly by dephosphorylating NPR2 and lowering cGMP, so FGFR3 inhibition converges on the
+    CNP node - but it also restrains proliferation directly, so it raises BOTH terms of the yield and is less term-selective
+    than a CNP analogue
+  evidence_tier: T2
+  refs:
+  - ozasa2005
+  - robinson2017
+  - kot2026
+  confidence: speculative
+  gap_id: g_l1_raise_terminal_cell_volume
+  notes: the zone assignment for the FGFR3 arm rests on kot2026, an osteogenesis imperfecta model that also reported reduced
+    male trabecular bone.
+  traversal_usable: false

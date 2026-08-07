@@ -2372,3 +2372,39 @@ the science, the checks caught the bookkeeping, and neither would have caught th
 erratum. Europe PMC confirms an Erratum linked to PMID 15800624 but returns neither identifier nor
 title, so it could not be retrieved on 2026-08-07 and the flag stays set. Every number this round takes
 from that paper is quoted without knowing what the erratum changed, and the node says so.
+
+## CORR-038 — I got the erdafitinib/infigratinib potency comparison backwards, from memory, in a user-facing message
+
+Asked whether erdafitinib was relevant, I wrote that infigratinib is "the FGFR-selective one" and framed
+erdafitinib as the less suitable molecule, implying comparable or better FGFR3 potency for infigratinib.
+The user pushed back that erdafitinib is "much stronger for almost no apparent reasons besides strength."
+
+**They were right and I was wrong.** ChEMBL median IC50 values, all curated activities, nM:
+
+| target | erdafitinib | infigratinib | erdafitinib is |
+|---|---|---|---|
+| FGFR1 | 1.20 (n=15) | 2.90 (n=29) | 2.4× more potent |
+| FGFR2 | 2.50 (n=21) | 4.95 (n=28) | 2.0× more potent |
+| **FGFR3** | **3.00 (n=25)** | **10.00 (n=36)** | **3.3× more potent** |
+| FGFR4 | 5.70 (n=15) | 61.00 (n=18) | 10.7× more potent |
+
+**Erdafitinib is more potent at every FGFR.** I asserted the opposite from recollection rather than
+querying a database I had access to the whole time.
+
+**What I said that survives, and what does not.** The claim that erdafitinib is "pan-FGFR1–4" and
+infigratinib "FGFR1–3" was directionally right about *selectivity* — erdafitinib hits FGFR4 nearly
+11× harder — but I used it to imply infigratinib is FGFR3-selective, and **neither compound is**. Both
+inhibit FGFR1 *more* potently than FGFR3 (erdafitinib 2.5-fold, infigratinib 3.4-fold). That is why
+hyperphosphatemia is on-target and unavoidable for the class, and it is a better argument than the one
+I made.
+
+**The real reason the two differ clinically is not the molecule.** Infigratinib for achondroplasia is
+dosed at 0.25 mg/kg/day — a small fraction of its oncology dose — while erdafitinib is titrated *upward*
+against serum phosphate to maximum tolerated exposure. The user's intuition that erdafitinib is "much
+stronger" is about **realised exposure**, not intrinsic potency, and on that they are also right.
+
+**Standing rule, and it is CORR-034's rule not yet learned.** CORR-034 said: any claim about what a
+source contains is a factual claim, and if the source is in hand, read it. A curated bioactivity
+database reachable by one HTTP call is "in hand." **Comparative potency claims must be queried, never
+recalled** — and the failure recurred in a user-facing message, which remains the channel with no
+mechanical check on it (CORR-029, CORR-030).
