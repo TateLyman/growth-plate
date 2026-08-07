@@ -19220,3 +19220,33 @@ edges:
   confidence: B
   notes: Links the pool-depletion mechanism to the fusion threshold it eventually causes to be crossed.
   traversal_usable: true
+- edge_id: e01238
+  source: resting_chondrocyte
+  target: resting_zone_regenerates_the_plate
+  relation: sufficient_for
+  sign: '+'
+  context: rabbit distal ulna in vivo; with proliferative and hypertrophic zones surgically removed, resting zone
+    cartilage alone regenerated a complete growth plate in 7 of 12 plates by two weeks
+  evidence_tier: T1
+  refs:
+  - abad2002
+  confidence: C
+  notes: The proliferative and hypertrophic zones are an output the resting zone rebuilds, not a resource that runs
+    out - which places the entire budget in the resting zone.
+  traversal_usable: true
+- edge_id: e01239
+  source: resting_zone_regenerates_the_plate
+  target: the_exchange_rate_between_growth_and_pool_depletion
+  relation: hypothesized_link
+  sign: '+'
+  context: a resting-zone-derived morphogen inhibiting terminal differentiation would let a proliferative clone divide
+    more times before hypertrophy, which is the yield term nilsson2014 named and nobody has measured
+  evidence_tier: T4
+  refs:
+  - abad2002
+  - nilsson2014
+  confidence: speculative
+  gap_id: g_l2_raise_the_yield_per_progenitor
+  notes: Abad's hypertrophy-inhibition claim is an appearance in histology with a stated alternative; the PTHrP
+    identification is this atlas's inference, not Abad's finding.
+  traversal_usable: false

@@ -1,6 +1,6 @@
 id: rz_depletion_causes_fusion
 name: 'Hypothesis: resting zone stem cell depletion causes epiphyseal fusion'
-type: hypothesis
+type: process
 summary: 'Two readings of the same correlation compete. In the causal reading, resting zone progenitors
   have a finite proliferative capacity; when it is exhausted, chondrocyte production stops and the plate
   is resorbed and bridged by bone. In the consequence reading, fusion is an independently triggered event
@@ -11,11 +11,63 @@ summary: 'Two readings of the same correlation compete. In the causal reading, r
   it: growth plate senescence in rodents proceeds to near-cessation without fusion at all, so depletion
   is clearly not sufficient for fusion in every mammal; and oestrogen accelerates senescence while simultaneously
   slowing resting-zone proliferation, which is the opposite of what a pure proliferation-consumption model
-  predicts. What discriminates: measure resting-zone cell number and proliferative capacity in human or
-  rabbit plates at matched chronological age with and without oestrogen exposure. If depletion causes
-  fusion, plates that fuse early under oestrogen must be more depleted at the moment of fusion; if fusion
-  is imposed, they will fuse while less depleted than age-matched controls.'
-quantitative: []
+  predicts. RESOLVED 2026-08-07 IN FAVOUR OF THE CAUSAL READING, BY THE EXPERIMENT THIS NODE ITSELF
+  SPECIFIED. The node asked for resting-zone cell number measured in rabbit plates with and without
+  oestrogen exposure, predicting that if depletion causes fusion then oestrogen-exposed plates must be more
+  depleted. nilsson2014 did precisely that, in juvenile ovariectomised rabbits, WITH A FIVE-WEEK WASHOUT.
+  Oestrogen accelerated the loss of resting zone chondrocytes, the loss PERSISTED five weeks after
+  treatment stopped, and transient exposure permanently hastened fusion. AND THE OBJECTION THIS NODE RAISED
+  AGAINST THE CAUSAL READING DISSOLVES ON THE SAME DATA. The node objected that oestrogen accelerates
+  senescence while slowing resting-zone proliferation, which a pure consumption model cannot explain. It
+  can, once RENEWAL and EXIT are separated: oestrogen slows resting-zone proliferation - that is,
+  self-renewal - WITHOUT delaying, and possibly while accelerating, differentiation out of the resting
+  zone. The pool drains because the outflow is unchanged while the inflow falls. A model that tracked only
+  proliferation-consumed was the wrong model, not the wrong conclusion. WHAT SURVIVES UNRESOLVED is the
+  rodent objection: senescence proceeds to near-cessation without fusion in rodents, and herrmann2002 now
+  shows the same dissociation in a human - growth ceased at 24 with the epiphyses still open at 27.
+  Depletion is therefore SUFFICIENT TO STOP GROWTH and NOT SUFFICIENT TO FUSE A PLATE; fusion additionally
+  requires the oestrogen signal that converts an exhausted plate to bone. That is a narrower and
+  better-supported claim than either of the two readings this node was built to arbitrate.'
+quantitative:
+- parameter: THE DISCRIMINATING EXPERIMENT THIS NODE ASKED FOR, PERFORMED
+  value: oestrogen accelerated the loss of resting zone chondrocytes; the decrease was MAINTAINED five weeks after
+    treatment stopped; transient exposure hastened epiphyseal fusion
+  unit: qualitative with washout
+  conditions: juvenile ovariectomised female rabbits, weekly estradiol cypionate 70 micrograms/kg or vehicle for 5
+    weeks then 5 weeks untreated; resting zone chondrocytes counted per mm growth plate width; TUNEL performed and
+    did not account for the loss
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: 'THIS IS THE NODE''S OWN SPECIFIED TEST AND IT FAVOURS THE CAUSAL READING, which is the strongest
+    form of support a hypothesis node can receive - a prediction registered before the data were read. The washout
+    is what makes it decisive - transient exposure produced permanent depletion and permanently earlier fusion, which
+    the consequence reading cannot generate. Rabbit, one dose, and five weeks is a washout rather than a lifetime.'
+- parameter: AND THE OBJECTION AGAINST THE CAUSAL READING DISSOLVES ONCE RENEWAL AND EXIT ARE SEPARATED
+  value: oestrogen decreases proliferation of resting zone chondrocytes - self-renewal - without delaying, and possibly
+    while accelerating, their differentiation to proliferative chondrocytes
+  unit: qualitative, direction of two fluxes
+  conditions: the authors' mechanism, from concurrent measurement of resting zone cell number and proliferative
+    chondrocytes per column in the same animals; dexamethasone is contrasted as slowing resting-zone proliferation
+    while CONSERVING resting zone cell number, attributed to additional inhibition of differentiation out
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: 'THE PARADOX THAT KEPT THIS NODE AT GRADE E WAS AN ARTEFACT OF A ONE-FLUX MODEL. Pool size is inflow
+    minus outflow, and oestrogen lowers inflow while leaving outflow alone - so slower resting-zone proliferation and
+    faster depletion are not contradictory. The dexamethasone contrast proves the two fluxes are separately
+    addressable, and is recorded AT SECOND HAND: nilsson2014 cites schrier2006 for it, and this atlas has held
+    schrier2006 since 2026-08-05 without ever extracting that result into a node.'
+- parameter: BUT DEPLETION STOPS GROWTH WITHOUT FUSING THE PLATE — IN RODENT AND NOW IN HUMAN
+  value: growth ceased at age 24 with epiphyses still open at 27 in an untreated aromatase-deficient man
+  unit: years
+  conditions: herrmann2002; bone age 16 and open epiphyses on hand radiograph at 27, three years after growth is
+    reported to have stopped
+  species: human
+  source_ref: herrmann2002
+  uncertainty: THIS IS WHAT REMAINS OF THE ORIGINAL OBJECTION AND IT IS CORRECT. Rodents senesce to near-cessation
+    without fusing, and a human with no oestrogen signal did the same. Exhaustion is SUFFICIENT TO END GROWTH and
+    INSUFFICIENT TO FUSE A PLATE - fusion needs the oestrogen signal to convert an exhausted plate to bone. The human
+    observation is a single history statement in a case report, but it agrees with the rodent literature and with
+    weise2001's finding that fusion FOLLOWS proliferation reaching zero rather than causing it.
 localization:
 - 'rabbit RZ: age-related numerical depletion measured (schrier2006)'
 - 'human RZ: unmeasured across the fusion transition'
@@ -29,8 +81,22 @@ species_basis:
 translation_risk: high
 translation_risk_reason: Rodents do not fuse, so the species in which senescence is best measured cannot
   exhibit the outcome being explained; rabbits fuse but have not been examined with modern clonal tools.
-confidence: E
+confidence: C
 key_refs:
+- ref_id: nilsson2014
+  pmid: '24708243'
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: Oestrogen irreversibly depletes resting zone chondrocyte number across a five-week washout while
+    its functional suppression fully reverses, and transient exposure permanently hastens fusion.
+- ref_id: herrmann2002
+  pmid: '12466340'
+  first_author: Herrmann BL
+  year: 2002
+  type: primary
+  one_line_finding: An aromatase-deficient man stopped growing at 24 with epiphyses still open at 27 - exhaustion
+    without fusion, in a human.
 - ref_id: schrier2006
   pmid: '16614378'
   doi: 10.1677/joe.1.06489
@@ -68,4 +134,4 @@ contradicts:
 - finite_proliferative_capacity_model
 layer: L2
 stub: false
-last_verified: '2026-08-05'
+last_verified: '2026-08-07'

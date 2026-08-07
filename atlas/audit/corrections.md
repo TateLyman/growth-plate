@@ -2163,3 +2163,47 @@ repair is a test, not a resolution.**
 `carani1997` and `maffei2007`. That flag has now been wrong on five separate references, which makes it
 an unreliable field rather than an unlucky one; it should be replaced by something that cannot be set
 without evidence, such as a required extraction note.
+
+---
+
+## CORR-034 — I named a reference number without opening the reference list I already had, and asked for a paper the atlas already held
+
+Requesting the source for dexamethasone conserving resting-zone cell number, I wrote:
+
+> *"That's the paper Nilsson cites as reference 13"* — naming **Abad 2002**.
+
+**Nilsson 2014's reference 13 is Schrier L, Ferns SP, Barnes KM et al., "Depletion of resting zone
+chondrocytes during growth plate senescence," J Endocrinol 2006;189(1):27–36.** Abad 2002 is not cited
+at that number at all.
+
+**Two failures, and the second is worse than the first.**
+
+**I had the PDF open.** Nilsson 2014 was supplied in the previous message and its reference list was one
+extraction away — the same `pdfplumber` call I had already run four times on that file. I asserted a
+reference number from inference instead of reading a document in my possession. This is not the
+memory-fabrication of CORR-030; it is worse, because **the primary source was already in hand and I did
+not look.**
+
+**And `schrier2006` has been in the atlas since 2026-08-05**, cited by five nodes. I asked for a paper
+the atlas already held. The dexamethasone-conservation result was never extracted from it into any node,
+which is why it read as missing — **an unextracted finding in a held reference is invisible in exactly
+the way an absent reference is**, and nothing in the atlas distinguishes them.
+
+**The cost was borne by someone else again**, and the correction that was supposed to prevent this —
+CORR-029, "an outbound request is a publication" — covered identifiers, not claims *about* sources. The
+scope was too narrow.
+
+**Standing rule, widened.** Before requesting a source, check whether the atlas already holds it —
+mechanically, by ref_id and by PMID, not from memory. And any claim about what a paper cites, says or
+contains is a factual claim about a document: **if the document is in hand, read it; if it is not, say
+the claim is unverified.**
+
+**What it cost, and what it bought.** The wrong paper arrived, and it turned out to matter more than the
+right one — `abad2002` shows the resting zone regenerating an entire growth plate. That is luck, not
+process, and it does not retire the rule.
+
+**A structural note this log has now earned.** `has_full_text: true` on `schrier2006` did not mean its
+findings were in the atlas. The field records that a PDF was obtained, not that anything was extracted
+from it — and five references have carried it falsely (CORR-033). A field that tracks acquisition while
+being read as tracking knowledge is worse than no field. It should be replaced by a per-reference list
+of the nodes that cite it, which cannot be set without the extraction having happened.
