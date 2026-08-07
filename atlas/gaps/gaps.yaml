@@ -9906,6 +9906,58 @@ gaps:
     TOTAL INTAKE IS THE CRITICAL CONTROL, since otherwise the result is confounded by total nutrition. The
     pharmacological version, once the schedule is validated, substitutes a transient resting-zone
     IGF-1/Akt block for the restriction phase.'
+- gap_id: g_l12_erdafitinib_low_dose_growth
+  type: known_unknown
+  layer: L12
+  tractability: 5
+  question: Is there a LOW dose of erdafitinib at which FGFR3 relief produces growth WITHOUT the physeal
+    failure seen at oncology dosing - and given that FGFR1 engages before FGFR3, does dosing down deliver
+    a smaller share of the benefit or a larger share of the cost?
+  why_it_matters: 'THIS IS THE ONLY QUESTION THAT WOULD MAKE THE ACCESSIBLE DRUG THE RIGHT ONE. Erdafitinib
+    is approved, obtainable and has an established dose, and it is the only FGFR inhibitor with a
+    demonstrated large human growth effect - 19.06 cm/year. But that figure comes from FULL ONCOLOGY
+    DOSING IN A CHILD, and the same exposure caused kyphoscoliosis with spinal cord compression requiring
+    surgery. NOBODY HAS EVER GIVEN ERDAFITINIB AT A LOW DOSE AND MEASURED A GROWTH PLATE, IN ANY SPECIES.
+    So the practical case for the accessible molecule rests entirely on an exposure that is known to be
+    harmful, and the entire safe-dose region is uncharacterised. THE PHARMACOLOGY MAKES THIS NON-OBVIOUS
+    RATHER THAN MERELY UNTESTED: because FGFR1 IC50 (1.20 nM) sits BELOW FGFR3 (3.00 nM), the ratio of
+    FGFR1 to FGFR3 occupancy is WORST at low doses - so a reduced dose may deliver proportionally more
+    of the anti-growth FGFR1 blockade (karolak2015) and less of the pro-growth FGFR3 relief. Dose
+    reduction is the standard way to make an oncology drug tolerable, and it is the strategy this
+    particular molecule is least suited to.'
+  what_is_known: 'erdachild2024, human n=1: full oncology dose, 19.06 cm/year, cord compression.
+    nadeaunguyen2026, FDA: five paediatric cases, median onset 137 days, all permanently discontinued,
+    three surgical. erdaseries2025: further cases with growth acceleration independent of sex steroids and
+    IGF1, with distinct growth plate WIDENING. ChEMBL: erdafitinib FGFR1 1.20 < FGFR3 3.00 < FGFR4 5.70 nM.
+    karolak2015: chondrocyte-specific Fgfr1 deletion SHORTENS tibiae. propel3_2026: infigratinib at
+    0.25 mg/kg gives +1.74 cm/year with NO clinical evidence of FGFR1 or FGFR2 inhibition - the
+    demonstration that a favourable low-dose window EXISTS for a molecule with a wider FGFR1/FGFR3 margin.'
+  what_is_missing: '(a) NO ERDAFITINIB DOSE-RESPONSE FOR BONE GROWTH in any species - the entire curve
+    below oncology dosing is blank. (b) NO MEASUREMENT of whether physeal failure tracks the DOSE or
+    tracks the GROWTH: if it tracks growth, no dose of any FGFR inhibitor separates them and the arm has a
+    mechanical ceiling; if it tracks dose, a window may exist. (c) No cartilage occupancy measurement for
+    erdafitinib, so FGFR1 and FGFR3 engagement at a given plasma level is inferred from biochemical IC50
+    rather than measured in the target tissue - and lysosomal trapping, if real, would break that
+    inference. (d) Whether the FGFR1/FGFR3 ratio argument survives in tissue at all, since it assumes free
+    drug equilibrates and erdafitinib is highly protein-bound.'
+  nearest_evidence:
+  - erdachild2024
+  - nadeaunguyen2026
+  - propel3_2026
+  - karolak2015
+  nearest_evidence_note: One exposure has been characterised and it is the harmful one. The comparator
+    molecule has a characterised favourable low-dose window, which is the specific thing erdafitinib lacks.
+  discriminating_experiment: 'A DOSE-RESPONSE IN WILD-TYPE GROWING MICE, WHICH NOBODY HAS RUN AND WHICH
+    NEEDS NO NEW MOLECULE. Give erdafitinib across at least five doses spanning two orders of magnitude
+    below the oncology-equivalent exposure, and at each dose measure bone length, growth plate thickness,
+    terminal hypertrophic cell height, resting zone cell count, AND the mechanical integrity of the
+    capital femoral physis. THE SHAPE OF THE CURVE IS THE ANSWER. If growth appears at doses below the
+    threshold for physeal widening, a therapeutic window exists and the accessible drug becomes usable.
+    IF GROWTH AND WIDENING RISE TOGETHER WITH NO SEPARATION AT ANY DOSE, then the harm is inseparable from
+    the benefit for this molecule and the accessibility advantage is worthless. RUN THE SAME CURVE FOR AN
+    FGFR3-SELECTIVE AGENT IN PARALLEL: any difference in the growth-to-widening ratio between the two is
+    the FGFR1 and FGFR4 contribution, isolated - which simultaneously settles g_l3_local_fgfr1_sign_in_
+    growth_plate and g_l12_fgfr3_blockade_dose_response.'
 - gap_id: g_l12_fgfr3_blockade_dose_response
   type: known_unknown
   layer: L12
