@@ -3182,3 +3182,60 @@ first time, a measured exchange rate on both sides: **4 weeks spent for ~2 weeks
 real, cycling is height-*negative*, not neutral. Recorded in the node as an inference from the ratio of two
 measured quantities, explicitly not as a measured adult height, and paired with a `not reported` row so the
 absence cannot later be read as a null.
+
+## CORR-062 — the round-70 headline was wrong: the endpoint exists, and cycling is not height-negative
+
+Round 70 read `forcinito2011` — four weeks of growth arrest bought about two weeks of senescence deferral —
+and concluded that **"if that ratio holds, cycling is height-negative."** `gafni2001` at full text refutes it.
+
+Male New Zealand White rabbits, dexamethasone 0.5 mg/kg/day for five weeks from five weeks of age,
+deliberately timed so that retardation *and* recovery would finish before rabbits fuse at ~6 months:
+
+- Femoral deficit at end of treatment: **17.4 ± 1.4 mm** (P<0.001)
+- Deficit at 16 weeks of recovery: **1.6 ± 1.6 mm, not significant** — about 91% recovered
+- Senescence curves right-shifted by **~3 weeks**
+- Epiphyseal fusion at 16 weeks: **88% of controls fused, 14% of treated** (P<0.01, blinded, explicit criteria)
+
+So five weeks of arrest bought three weeks of deferral, the length came back, and 86% of treated plates
+were still open at a point when 88% of controls had shut. That is not a losing trade.
+
+**Where the round-70 reasoning failed.** I took a ratio from an experiment that did not report its endpoint
+and let it stand as a conclusion about the endpoint. The correct move — which the node itself made, with a
+`not reported` row — was to hold the question open until an experiment that measured it turned up. The
+summary I sent the user did not hold it open. **Third round running that the node was properly hedged and
+the prose was not** (CORR-059, CORR-060). The pattern is now unambiguous and the rule is: *if a row in the
+node says `not reported`, the user-facing sentence about it may not contain a verdict.*
+
+**What survives, and what is now genuinely open.** At the final measurement the treated rabbits were level
+on length (1.6 ± 1.6 mm, NS) while holding six times more open plates than controls, and the animals were
+killed at ~21 weeks with rabbits fusing at ~26. Roughly five weeks of potential growth went unobserved. A
+group that is level on length with open plates has residual capacity the control group does not — so this
+is the first result in the project pointing at height-**positive** rather than merely neutral. Graded E in
+the node, as an inference from an experiment that stopped early.
+
+**And the discrepancy that explains the corpus.** `marino2008` — eight weeks of hypothyroidism from the
+first day of life — reports catch-up **incomplete at the last measurement** in every measure (P<0.001).
+Gafni's five weeks of dexamethasone in a juvenile gave near-complete recovery plus delayed fusion. The two
+papers do not conflict; they bracket a dose-response in **how long, how early and how global** the
+suppression is. That distinction is favourable to any deliberate protocol, which would be short, late and
+targeted rather than eight weeks of neonatal hypothyroidism.
+
+## CORR-063 — "cationic is better" was the wrong rule; the optimum is interior and the variable is distribution
+
+Round 67 established charge as a design axis and implied more cationic means better cartilage delivery.
+`krishnan2018` measures it properly, with supercharged GFP variants of +9, +15, +25 and +36 that hold mass,
+structure and shape constant:
+
+- Uptake is **non-monotonic**. +9 and +15 had significantly higher uptake ratios than +25 and +36, and
+  penetrated the full thickness of tissue much earlier. Excess charge binds at the surface and stops moving.
+- The optimum is **species-specific**: +9 in bovine cartilage, **+15 in human**.
+- And net charge is not even the right variable. **Janus GFP — net charge zero, but one large positive and
+  one large negative surface patch — had an uptake ratio of 10.1 ± 1.3 against ~1 for net-neutral controls
+  with the same zero net charge distributed as many small patches.** Tenfold, at zero net charge.
+
+Same conclusion `hakim2025` reached from the opposite direction. The rule is *optimally* cationic with
+spatially organised charge, not maximally cationic, and the node has been rewritten accordingly.
+
+One further caution the paper supplies against the atlas's own habit: partition coefficients in human and
+bovine cartilage are nearly identical (10.9 vs 11.2) but the human binding rate constant is about
+**fivefold slower** (1.2×10⁻⁵ vs 6.4×10⁻⁵ s⁻¹). Equilibrium transfers across species; kinetics does not.

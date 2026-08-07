@@ -24,7 +24,10 @@ summary: 'Every agent in this atlas has been chosen and argued about by its TARG
   antibody fragment produced a PROLONGED increase in AKT signalling relative to IGF-1 itself, and the
   prolongation was abolished when matrilin-3 was knocked out - matrix affinity, not ligand chemistry,
   set the duration of receptor activation (tailor2024). Put together these say the plate selects for small,
-  neutral-to-cationic, matrix-binding molecules, and that a large anionic non-binding molecule is disqualified
+  optimally-cationic, matrix-binding molecules - optimally, not maximally, because krishnan2018 shows
+  cartilage uptake peaks around +9 to +15 and FALLS at +25 and +36, and because a net-NEUTRAL carrier with
+  one positive and one negative surface patch took up tenfold more than net-neutral controls with the same
+  zero net charge. The variable is the spatial arrangement of charge, not the sum of it, and that a large anionic non-binding molecule is disqualified
   before its target is even discussed. TWO CONSEQUENCES FOR THIS PROJECT. First, the exposure caveat the
   atlas correctly attaches to peptides, PEGylated prodrugs and nanoparticles does NOT transfer to the
   small molecules in the stack: erdafitinib (446.5 Da), anastrozole (293.4 Da), cilostazol (369.5 Da),
@@ -125,6 +128,52 @@ quantitative:
   uncertainty: 'abstract only; enhancement ratio values not read. This is the cleanest available in vivo
     charge-isolating comparison in a LARGE-ANIMAL growing physis, which is the species class the atlas
     needs and rodents cannot supply.'
+- parameter: 'cartilage uptake ratio versus carrier net charge - and it is NOT monotonic'
+  value: about 25 at +9, lower at +25 and +36, about 1 for net-neutral
+  unit: uptake ratio, tissue concentration over bath concentration
+  conditions: supercharged GFP variants of +9, +15, +25 and +36 with near-identical mass, structure and
+    shape; 24 h incubation, 37 C; bovine and living HUMAN knee cartilage explants, groups of 5 matched
+    for position along the joint surface
+  species: in_vitro_human_cell
+  source_ref: krishnan2018
+  uncertainty: 'THIS CORRECTS THE ROUND-67 IMPLICATION THAT CATIONIC IS SIMPLY BETTER. Uptake peaks and
+    then falls: +9 and +15 had significantly higher uptake than +25 and +36, and also penetrated the full
+    thickness of the tissue much earlier. Excess charge binds too avidly at the surface and stops the
+    carrier moving. In HUMAN cartilage the optimum was +15 rather than the +9 that was optimal in bovine,
+    so even the optimum is species-specific. The design controls what matters - these variants differ in
+    charge while holding mass, structure and shape constant.'
+- parameter: 'uptake of a NET-NEUTRAL carrier whose charge is spatially polarised'
+  value: 10.1
+  unit: uptake ratio, versus about 1 for the other net-neutral variants
+  conditions: Janus GFP, net charge zero but with one large positive and one large negative surface patch,
+    against Non-Patch and Homogeneous-Patch controls which carry multiple small patches summing to zero;
+    bovine cartilage, 24 h
+  species: in_vitro_animal_cell
+  source_ref: krishnan2018
+  uncertainty: 'SEM 1.3. A tenfold uptake enhancement at ZERO net charge. Net charge is therefore not
+    even the right variable - the spatial arrangement of charge is, which is the same conclusion hakim2025
+    reached from the opposite direction with arginine-rich peptides. Nothing in the current stack has ever
+    been considered in these terms.'
+- parameter: 'binding rate constant in human versus bovine cartilage'
+  value: 1.2e-5 versus 6.4e-5
+  unit: per second
+  conditions: dynamic uptake experiment with model fit; partition coefficient 10.9 human and 11.2 bovine
+  species: multiple
+  source_ref: krishnan2018
+  uncertainty: 'The partition coefficients are nearly identical but the human rate constant is about
+    fivefold slower, and the authors state plainly that the time required to enter and penetrate human
+    joint cartilage will be a hurdle in translation. Equilibrium behaviour transfers between species;
+    kinetics does not. This is the same warning the atlas attaches to carrying the murine transport law
+    into a human plate, arrived at independently in a different tissue.'
+- parameter: 'carrier concentration needed, against the concentration at which harm appears'
+  value: 10-100 nM needed, 1 uM threshold for adverse effects
+  unit: molar concentration in the surrounding bath
+  conditions: measured cell viability, metabolism, cartilage biosynthesis and matrix degradation; no adverse
+    effects at delivery doses
+  species: in_vitro_human_cell
+  source_ref: krishnan2018
+  uncertainty: at least an order of magnitude between the effective and the harmful concentration, in explant
+    culture only and over days rather than months
 - parameter: erdafitinib plasma protein binding
   value: '99.7'
   unit: '%'
