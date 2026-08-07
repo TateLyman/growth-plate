@@ -2988,3 +2988,21 @@ Sotos is childhood overgrowth that **does not convert to adult height**. It is a
 effect — a big child and a normal adult — which is the same surrogate-that-does-not-convert pattern as
 the aromatase-inhibitor trials. Recorded because a lead raised and killed inside one round is worth more
 in the log than out of it, and because it removes an entire syndrome class from the search.
+
+## CORR-055 — I guessed a PMID and attached Newton's growth-plate data to a paper about medical education
+
+Adding `newton2018` I passed **29963611** without looking it up. That PMID is *"Medical Education for
+'Generation Z': Everything online?! — An analysis of Internet-based media use by teachers in medicine."*
+`addref.py` fetched the real record and wrote my Tsc1 tibial-length findings into it as `vogelsang2018`.
+Caught within one command, deleted, re-added under the correct **29955624**.
+
+**This is CORR-039 again** — there I invented a DOI for a paper the atlas already held. **The duplicate-key
+loader caught that one; nothing caught this one.** `addref.py`'s `--ref-id` guard compares the ref_id to
+the resolved record and refuses on mismatch, which is why it has worked every other time this session.
+**It cannot fire when no `--ref-id` is passed**, and it has no way to check a *finding* against a record.
+
+**Two things follow.** First, the operational rule: **never pass an identifier I have not seen resolved in
+this session's output.** Both PMIDs were available from the same search I was already running — guessing
+saved one API call and produced a fabricated citation. Second, the guard gap is real but not closable in
+general: no tool can verify that a finding belongs to a paper. The only defence is passing `--ref-id`
+every time, which forces the comparison. Doing that here would have refused the write.
