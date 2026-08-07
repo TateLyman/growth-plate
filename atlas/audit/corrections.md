@@ -2438,3 +2438,34 @@ added.
 the case that produced this: **a lookup by PMID that would have prevented the duplicate ever being
 written.** `addref.py` should refuse to add a record whose PMID or DOI already exists under a different
 ref_id, and should never accept a hand-typed DOI when a PMID is available to resolve it from.
+
+## CORR-040 — I called erdafitinib's FGFR4 potency "a pure liability with no growth-plate benefit." It is the opposite.
+
+Twice — in `the_stack_in_a_normal_human` and in a user-facing message — I wrote that erdafitinib's
+~11-fold greater FGFR4 potency (5.70 nM vs infigratinib's 61.00 nM) was **"an added liability with no
+growth-plate benefit."**
+
+`fgf19cart2025` shows the reverse. **FGF19 signalling through FGFR4, with β-klotho, impairs chondrocyte
+maturation and decreases growth plate thickness**, by upregulating the β-catenin antagonists SFRP1,
+WIF1 and DKK2 and so suppressing Wnt/β-catenin. **FGFR4 restrains cartilage growth. Inhibiting it should
+be pro-growth.**
+
+So erdafitinib has **two** pro-growth FGFR targets, not one, and it is the only clinically available FGFR
+inhibitor that reaches FGFR4 at achievable concentrations.
+
+**Why I got it wrong.** I reasoned from FGFR4's *systemic* biology — FGF19/FGFR4 is the bile-acid and
+hepatic axis — and assumed it had no cartilage role because none was in the atlas. **Absence of a node
+was treated as absence of a function.** That is the same error class as CORR-034 (an unextracted finding
+in a held reference is invisible in the way an absent reference is), one level up: an unsearched biology
+is invisible in the way an absent biology is.
+
+**And the convergence I missed is sharper than the correction.** The antagonists FGF19/FGFR4 induces —
+**SFRP1, WIF1, DKK2** — are the same Wnt-antagonist axis `lui2018` found separating fast-senescing from
+slow-senescing bones (phalanx-high Wif1 +2.08/+3.12, Dkk3 +2.51/+1.66). The atlas held both facts and
+never connected them.
+
+**A second correction in the same round.** Round 29 proposed Δheight ÷ Δbone-age as the test separating
+a yield lever from a velocity lever, and named the infigratinib phase 3 as the decisive document. It
+arrived: **PROPEL3 reports no accelerated bone-age progression** — and vosoritide reports the same.
+**Both candidates pass, so the test does not discriminate.** It is a necessary condition, not a
+separator, and presenting it as decisive across four rounds overstated it.
