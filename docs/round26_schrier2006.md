@@ -210,3 +210,108 @@ Failing that: `lui2018` (PMID 30036371) in full text. It is currently in the atl
 `primary_abstract_only` and carries the fold-changes and statistics behind the three-pathway senescence
 signature, which the `senescence_rate_is_a_regulated_variable` node explicitly records as missing
 because that paper was read through a summarisation step.
+
+---
+
+# Round 27 — the yield, computed
+
+The user supplied `lui2018` and asked whether I could recreate the source data from the figures rather
+than obtain it. The answer turned out to be better than that: **`lui2018` is PLoS Biology, CC-BY, and
+publishes its per-animal raw values as an open supplementary workbook.** No digitisation was needed.
+`S1 Data` (s020) downloaded, vendored at `atlas/data/lui2018/` with attribution, and it contains — in
+the same mice at the same ages — both terms of the yield:
+
+| term | sheet | units |
+|---|---|---|
+| calcein-labelled bone growth rate | `Fig1C` | µm/day |
+| resting zone cell count | `Fig2B-G` | cells per **500 µm** plate width |
+
+## The construction
+
+A yield is a flux over a flux, so the single-timepoint ratio of two standing stocks — the obvious move,
+and the wrong one — would have produced a confident wrong number. Over an interval:
+
+> **yield = µm of bone elongated between t₁ and t₂ ÷ resting zone cells lost between t₁ and t₂**
+
+Physically: take a 500 µm-wide slab of plate. It elongates by *L* µm while its resting zone loses *N*
+cells. *L/N* is µm of bone per progenitor. Implemented in `atlas/tools/yield_lui2018.py`; 20,000-resample
+bootstrap over animals.
+
+## The result
+
+**The 1–2 week interval is excluded, not down-weighted.** `lui2018` defines the resting zone's upper
+margin as the *future* secondary ossification centre at 1 week and as the *lower margin of the actual
+SOC* from 2 weeks on. The 50–60 % fall in RZ count across that interval is substantially the SOC
+forming, not progenitors being spent — an inflated denominator, which is why all four bones returned a
+suspiciously uniform 20–28 there. Dropped.
+
+What survives, over the **same interval, in the same mice, by the same method**:
+
+| bone | interval | grown (µm) | RZ lost | **yield** | 95 % CI |
+|---|---|---|---|---|---|
+| **metacarpal** — fuses at 2–3 wk | 2–3 wk | 344 | 24.6 | **14** | [12, 18] |
+| **femur** — never fuses | 2–3 wk | 1840 | 12.6 | **146** | [110, 208] |
+| tibia — never fuses | 2–3 wk | 2042 | 8.3 | 247 | [98, 2774] |
+| femur | 3–4 wk | 1494 | 19.0 | 78 | [65, 98] |
+| femur | 4–8 wk | 3054 | 13.9 | 219 | [164, 318] |
+| tibia | 3–4 wk | 1715 | 9.4 | 183 | [120, 410] |
+| tibia | 4–8 wk | 3282 | 22.1 | 148 | [125, 176] |
+
+**A bone about to fuse gets roughly a tenth as much length per progenitor spent as a bone that will
+keep growing for months — inside one animal, with non-overlapping confidence intervals.**
+
+The tibia's 2–3 wk interval has a denominator of 8.3 cells and a CI spanning 28-fold; only the femur and
+metacarpal rows are tight enough to carry weight. The headline is the femur/metacarpal pair.
+
+## Why it matters
+
+`schrier2006` predicted exactly this shape. Having excluded both observables — oestrogen neither sped
+resting zone proliferation nor depleted resting zone number — they proposed **loss of proliferative
+capacity per cell cycle**. That is efficiency, and this is the first number this atlas holds that is
+consistent with efficiency being the variable: in the run-up to fusion, **growth falls faster than the
+pool empties.** Constant-efficiency exhaustion would not look like that.
+
+## What this is not
+
+Recorded on the node as `value_unverified: true` and graded as a re-analysis, per the standing rule that
+a re-analysis enters the graph at the grade its data support and no higher. The limits, all carried with
+the number:
+
+1. **Net is not gross.** A fall in a standing stock is outflow minus self-renewal, so true consumption is
+   at least the denominator used. **Every value here is an upper bound.**
+2. **Two separate cohorts.** Calcein and histology animals are not the same mice; numerator and
+   denominator are matched by age and bone, not by individual.
+3. **Density, not count.** Cells per 500 µm is a density, and the plate widens with age.
+4. **Part of the gap is not progenitor efficiency at all.** `lui2018` reports smaller terminal
+   hypertrophic cells in the small bones, which lowers µm per division independently of how many
+   divisions a progenitor yields. This atlas cannot decompose the two without matched terminal-cell and
+   progenitor data in one cohort.
+5. **A circularity, stated plainly.** The metacarpal is fusing, so both terms are collapsing, and a low
+   ratio partly restates that. The non-trivial content is the *direction*.
+6. **Mouse**, and mouse femur and tibia never fuse — their yields are not spend-to-exhaustion curves.
+
+## What changed in the atlas
+
+- `the_exchange_rate_between_growth_and_pool_depletion` — new quantitative row with the computed yields;
+  summary rewritten to lead with the number. Node stays at **B**; the row is `value_unverified`.
+- `g_l2_raise_the_yield_per_progenitor` — **partially closed.** "Never measured in any species" is still
+  true of *measurement* and no longer true of *estimation*. Sub-question (b), whether the yield varies
+  between bones, is now answered in the affirmative. **Sub-question (c) — whether anything raises it — is
+  untouched and is now the whole gap.** The estimate is observational: it says the yield *differs*, not
+  that it can be *moved*.
+- `lui2018` — `primary_abstract_only` → `primary`, `full_text_read`, `local_pdf`; note rewritten. The
+  transcriptomic fold-changes are still unextracted and that is stated.
+- `senescence_rate_is_a_regulated_variable` — the "read through a summarisation step" caveat partly
+  retired; the node stays at **C** because its central claim still rests on two culture nulls.
+- `atlas/data/lui2018/` — S1 Data vendored under CC-BY with `SOURCE.md` attribution, so the computation
+  reproduces without a network fetch.
+
+## The question this now opens
+
+Every intervention this atlas has examined moves pool size or exit rate. The yield varies tenfold
+between bones in one animal, which means it is **a real regulated quantity with a large dynamic range** —
+and nothing has ever been tested for its effect on it. The next question is no longer *is there a yield*
+but **what raises it**, and the cheapest first probe is the one `schrier2006` already handed us:
+dexamethasone conserves the pool by slowing exit, so does it preserve yield or spend it? That experiment
+needs RZ counts and growth rate in one cohort under dexamethasone — which is `schrier2006`'s design plus
+a calcein injection.

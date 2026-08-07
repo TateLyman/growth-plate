@@ -24,8 +24,17 @@ summary: 'nilsson2014 is the direct test of this atlas''s central model and it r
   measured the dexamethasone effect, when they found that oestrogen and dexamethasone BOTH slow resting-zone
   proliferation yet move senescence in opposite directions, and speculated that oestrogen acts either by a
   proliferation-independent mechanism or BY INCREASING THE LOSS OF PROLIFERATIVE CAPACITY PER CELL CYCLE. That
-  second clause is the yield term. It was stated in 2006, restated by nilsson2014 in 2014, and has never been
-  measured in any species. AND THE FULL TEXT OF schrier2006, NOW READ, SHOWS THE YIELD HYPOTHESIS WAS NOT A
+  second clause is the yield term. It was stated in 2006, restated by nilsson2014 in 2014, and until this round had
+  never been given a number in any species. IT NOW HAS ONE, AND IT IS THIS ATLAS''S ARITHMETIC RATHER THAN ANYONE''S
+  MEASUREMENT. lui2018 published its per-animal values as an open supplementary workbook, and those values happen to
+  contain both terms in the same mice at the same ages - calcein bone growth in micrometres per day, and resting zone
+  cell count per 500 micrometres of plate width. Over the SAME 2-to-3-week interval in the SAME animals, the METACARPAL,
+  which fuses at 2-3 weeks, returns 14 micrometres of bone per resting zone cell spent (95% CI 12-18); the FEMUR, which
+  never fuses, returns 146 (110-208). A TENFOLD DIFFERENCE WITH NON-OVERLAPPING INTERVALS, INSIDE ONE ANIMAL. The bone
+  that is running out is not merely spending its pool faster - it is getting an order of magnitude less length for each
+  cell it spends, which is efficiency loss and is exactly what schrier2006 proposed. It is graded as a re-analysis,
+  flagged value_unverified, and every value is an UPPER BOUND because a fall in a standing stock understates gross
+  consumption. AND THE FULL TEXT OF schrier2006, NOW READ, SHOWS THE YIELD HYPOTHESIS WAS NOT A
   SPECULATION BUT A FORCED MOVE. Schrier went in with two candidate mechanisms for how oestrogen accelerates
   senescence - it speeds resting zone proliferation, or it speeds the numerical loss of resting zone cells - and
   in their own words, OESTROGEN DID NEITHER. It DECREASED resting zone proliferation (P = 0.011) and had NO
@@ -157,6 +166,41 @@ quantitative:
     P = 0.06 is a failure to reach significance and not a demonstration of absence, the two subregions were not
     formally compared against each other, and the authors themselves declined to test between growth plates on power
     grounds. It is flagged as a structural question the atlas was not asking, not as an established dissociation.'
+- parameter: THE YIELD, COMPUTED — 14 MICROMETRES PER CELL IN A BONE THAT IS FUSING, 146 IN ONE THAT IS NOT
+  value: 'micrometres of bone elongation obtained per resting zone chondrocyte lost, per 500 micrometre growth plate
+    width, over the SAME 2-to-3-week interval in the SAME mice: METACARPAL 14 (95% CI 12-18), which fuses at 2-3 weeks;
+    FEMUR 146 (95% CI 110-208) and TIBIA 247 (95% CI 98-2774), which do not fuse. Femur across later intervals: 78
+    (65-98) at 3-4 weeks and 219 (164-318) at 4-8 weeks; tibia 183 (120-410) and 148 (125-176)'
+  unit: micrometres of bone per resting zone chondrocyte lost, per 500 micrometre plate width
+  conditions: 'RE-ANALYSIS BY THIS ATLAS of the per-animal values published as lui2018 S1 Data (CC-BY), computed by
+    atlas/tools/yield_lui2018.py. Numerator is calcein-labelled bone growth rate in micrometres per day, trapezoid-integrated
+    across the interval; denominator is the fall in resting zone cell count per 500 micrometre plate width across the
+    same interval. C57BL/6 mouse, n = 4-6 per age per bone, 20000-resample bootstrap over animals. The 1-to-2-week
+    interval was EXCLUDED because lui2018 defines the resting zone upper margin as the FUTURE secondary ossification
+    centre at 1 week and as the LOWER MARGIN of the actual centre from 2 weeks, so the 50-60% fall across that interval
+    is substantially the ossification centre forming rather than progenitors being spent'
+  species: mouse
+  source_ref: lui2018
+  value_unverified: true
+  uncertainty: 'THIS IS THE QUANTITY THE ATLAS HAS CALLED UNMEASURED FOR THIRTY ROUNDS, AND IT IS THIS ATLAS''S
+    ARITHMETIC RATHER THAN ANYONE''S MEASUREMENT - graded accordingly and flagged value_unverified. WHAT IT SHOWS:
+    within one animal, over one interval, by one method, a bone that is about to fuse obtains about a TENTH as much
+    length per progenitor spent as a bone that will keep growing for months, and the femur and metacarpal confidence
+    intervals do not overlap. That is the first evidence this atlas holds that the yield is a real, bone-specific,
+    order-of-magnitude-variable quantity rather than a term in an argument. IT IS ALSO WHAT schrier2006 PREDICTED -
+    efficiency lost per cell spent, not just cells lost faster. THE LIMITS ARE SERIOUS AND NONE IS RHETORICAL.
+    (a) NET IS NOT GROSS: a fall in a standing stock is outflow minus self-renewal, so true consumption is at least
+    the denominator used and EVERY VALUE HERE IS AN UPPER BOUND. (b) The tibia 2-3 week interval has a denominator of
+    8.3 cells and a bootstrap interval spanning 28-fold; only the femur and metacarpal rows are tight enough to carry
+    weight. (c) Calcein and histology were done in SEPARATE COHORTS, so numerator and denominator are matched by age
+    and bone, not by animal. (d) Cells per 500 micrometres is a DENSITY and the plate widens with age. (e) PART OF THE
+    GAP IS NOT PROGENITOR EFFICIENCY AT ALL - lui2018 reports smaller terminal hypertrophic cells in the small bones,
+    which lowers micrometres per division independently of how many divisions a progenitor yields, and this atlas
+    cannot decompose the two without matched terminal-cell and progenitor data in one cohort. (f) A CIRCULARITY WORTH
+    STATING PLAINLY: the metacarpal is fusing, so both terms are collapsing, and a low ratio partly restates that.
+    The non-trivial content is the DIRECTION - growth falls FASTER than the pool empties, which is what efficiency
+    loss looks like and is not what constant-efficiency exhaustion would look like. (g) Mouse, and mouse femur and
+    tibia never fuse, so their yields are not spend-to-exhaustion curves.'
 - parameter: SENESCENCE IS GROWTH-DEPENDENT, NOT TIME-DEPENDENT — AND FOUR WEEKS OF INHIBITION BUYS ABOUT TWO
   value: structural, functional AND molecular markers of growth plate senescence were all delayed by prior tryptophan
     deficiency; the delay was approximately 2 weeks, similar in magnitude across structural and molecular markers
