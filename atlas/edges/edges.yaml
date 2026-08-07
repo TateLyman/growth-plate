@@ -19106,3 +19106,32 @@ edges:
   notes: n=1 and the authors judge the GH deficiency adult-onset because the patient reached tall stature, so it cannot
     be read as a cause of reduced childhood velocity.
   traversal_usable: false
+- edge_id: e01230
+  source: tamoxifen_at_the_growth_plate
+  target: resting_chondrocyte
+  relation: degrades
+  sign: '-'
+  context: cultured fetal rat metatarsals and young male rats; tamoxifen selectively induces apoptosis in resting-zone
+    and hypertrophic chondrocytes, producing growth retardation with no catch-up after washout
+  evidence_tier: T2
+  refs:
+  - chagin2007
+  - karimian2008
+  confidence: C
+  notes: Both rodent papers are abstract-only in this atlas. The mechanism spends the stem pool irreversibly, which is
+    why no catch-up follows.
+  traversal_usable: true
+- edge_id: e01231
+  source: tamoxifen_at_the_growth_plate
+  target: oestradiol_dose_response_has_no_therapeutic_window
+  relation: correlates_with
+  sign: '-'
+  context: the tissue-selective route proposed after subtype and dose were eliminated; tamoxifen is the first-generation
+    SERM and it is destructive at the plate rather than sparing of it
+  evidence_tier: T2
+  refs:
+  - chagin2007
+  - eugster2003
+  confidence: C
+  notes: Closes the cheapest version of the SERM route; does not close the class.
+  traversal_usable: true
