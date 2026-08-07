@@ -2630,3 +2630,39 @@ FGFR3 at 3.00), so its net effect is the FGFR3 benefit **minus** an FGFR1 cost t
 does not pay. After four consecutive corrections in erdafitinib's favour, this one goes the other way —
 and it is the only one of the five resting on a genetic experiment with a length endpoint rather than on
 inference from expression or potency.
+
+## CORR-045 — I waved away the lysosomal-trapping argument instead of engaging it
+
+When the user raised erdafitinib's lysosomal trapping, I searched for supporting literature, found none,
+and then wrote that it was **"the wrong axis of comparison anyway — prolonged target engagement is a PK
+property. It affects dosing convenience, not which term of the yield moves."**
+
+**That was a dismissal, not an assessment, and it was wrong on its own terms.**
+
+The argument's real form is not about duration. It is about **tissue concentration in an avascular
+tissue**: the growth plate is avascular and alymphatic and drug delivery to it is severely limited
+(`ctcmnp2026` states this outright). A weak base trapped in lysosomes could hold intracellular
+concentrations far above plasma — **which would mean the plasma-derived IC50 ordering I built the entire
+case against erdafitinib on does not describe what happens in cartilage.** That is the strongest
+available objection to my own argument, and I did not notice it because I stopped at "PK, therefore not
+pharmacodynamics."
+
+**Assessed properly, three things count against it, and one is decisive.**
+
+1. Lysosomal sequestration is classically a **resistance** mechanism — it moves drug *away* from
+   cytosolic and membrane targets. FGFR kinase domains face the cytosol.
+2. **Accumulation is tissue selectivity, not receptor selectivity.** All four FGFRs sit in the same
+   chondrocyte and see the same intracellular concentration. Concentrating erdafitinib in cartilage
+   raises FGFR1 and FGFR4 engagement **exactly as much as** FGFR3 — and FGFR1 blockade shortens bones
+   (`karolak2015`), FGFR4 blockade blocks the autophagy bone growth requires (`cinque2015`). **The
+   ordering is preserved under any uniform scaling.**
+3. It remains unverified for erdafitinib specifically.
+
+**So the argument is real, was wrongly waved away, and on inspection cuts the other way** — it would be
+a *strong* argument for a drug whose cartilage targets were all pro-growth, which is exactly what a
+narrowly FGFR3-selective agent is.
+
+**The generalisable failure.** "That's a PK property, not a PD one" is a category label, and I used it to
+avoid doing the work. Categories are not arguments. The test should have been: *does this change any
+number in the case I am making?* It would have — the IC50 ordering is the whole case, and the ordering
+argument silently assumes plasma equals tissue. **A load-bearing assumption I had never written down.**
