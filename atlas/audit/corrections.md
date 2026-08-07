@@ -1849,3 +1849,48 @@ The quantitative rows drawn from it are second-hand from a summary of a primary 
 primary, stronger than an abstract — and the bone-length null it supplies is a reported
 non-significance, not an equivalence bound. This is the same defect class as the `byers2000`
 provenance note, recorded at the time rather than found later.
+
+---
+
+## CORR-024 — a summarisation step reported a derived number that was wrong by a factor of four
+
+Extracting `chen2015arom` from PMC4457386, the summarisation step returned the patient's heights
+correctly — **172 cm at age 20, 182.5 cm at age 24** — and then reported, in the same answer:
+
+> growth velocity of approximately **10.5 cm/year** between ages 20-24
+
+10.5 cm is the **total** gain over **four** years. The velocity is **2.6 cm/year**. The error is a
+factor of four, and it is in the single most consequential number in the entire ceiling census —
+the first adult growth velocity ever recovered from an untreated oestrogen-null man. Had it gone in
+at 10.5 cm/yr it would have implied roughly 50 cm of remaining growth over the same interval and
+would have corrupted every ceiling estimate downstream.
+
+**Caught** because the primaries were reported alongside the derivative and the subtraction is one
+line. **CORR-023 established that identifiers from a summarisation step are unverified data.** This
+extends it to arithmetic: **a derived quantity from a summarisation step is unverified data too, and
+must be recomputed from the primaries in the same answer.** Where the primaries are not also
+returned, the derived number cannot be used at all.
+
+The generalisation worth keeping: a summarisation step is reliable for *transcription* and unreliable
+for *inference*, and the two arrive looking identical.
+
+---
+
+## CORR-025 — I minted a ref_id that already existed, which silently rebinds someone else's citation
+
+Adding the aromatase case report I created bibliography key **`chen2015`**. That key was already in
+use for **Chen et al. 2015, PMID 25779879, "Losartan increases bone mass and accelerates chondrocyte
+hypertrophy"**, cited by `perichondrial_tgfb_restraint`.
+
+YAML resolves duplicate keys silently to the last one. The file parsed cleanly, and
+`perichondrial_tgfb_restraint`'s citation would have been **rebound to an aromatase case report**
+with nothing in the document to show it. A node would have carried a source that did not say what
+it was cited for — the same end state as a fabricated citation, reached by a different route.
+
+**Caught** by the validator's citation-mismatch check, which compares a node's declared PMID against
+the bibliography's and refuses a disagreement. That check exists because of earlier rounds and it
+paid for itself here. Renamed to `chen2015arom`; both entries verified present and correct afterwards.
+
+**Standing rule.** Author-year ref_ids collide — common surnames and productive years guarantee it.
+**Check the bibliography for the key before minting it**, and treat a first-author-plus-year string
+as a candidate, not an identifier.
