@@ -3367,3 +3367,43 @@ one week.
 The qualitative claim survives — resting zone can rebuild a plate, fast — and it is still the basis for
 treating the resting zone as the limiting resource. What does not survive is the impression of a majority
 result in the clean condition. Node corrected in place.
+
+## CORR-068 — I downgraded the methylation lead to two lines before reading the third; it is three, of unequal quality
+
+CORR-066 cut "four converging lines" to two after finding that `cheung2001` measures no methylation. That
+cut was right about Cheung and wrong about the count, because I applied it while `sun2004` was still
+unread and *presumed* it would fail the same way. It does not.
+
+**What `sun2004` actually measures.** Global methyl-cytosine in PASG (lsh/SMARCA6/HELLS) mutant embryos at
+**56% and 32% of wild-type — a 43% decrease**, directly assayed, with heterozygotes normal. And it measures
+bone: **shorter femurs and tibiae, smaller epiphyses, reduced bone mineral density**. On both counts it is
+the opposite of Cheung, which measured neither.
+
+**What it cannot do.** It is a constitutive whole-body germline knockout, and the animal has low birth
+weight, failure to thrive, cachexia, kyphosis, osteoporosis, greying, hair loss and premature death. Short
+bones in a cachectic progeroid mouse are weak evidence for a chondrocyte-autonomous mechanism. It is
+systemic corroboration, not a plate result.
+
+So the honest count is **three lines of unequal quality**: `yanagihara2025` strongly (chondrocyte-autonomous,
+cell-type controls, bone-length endpoint, human locus), `nilsson2005` moderately (measured methylation in
+the resting zone with its triple specificity, association only), `sun2004` as systemic corroboration.
+`cheung2001` stays out.
+
+**The lesson is narrower than the last few and worth stating.** CORR-066 was a correction made in the right
+direction for the right reason, and it still overshot, because I let one debunked leg license a presumption
+about an unread one. *A correction is a claim and needs the same evidence as the thing it corrects.*
+
+**And the thing this paper gave that I was not looking for.** `sun2004` reports that hypomethylation
+**delays secondary ossification** of the tibial epiphyses — von Kossa at 15 days shows fully formed
+calcified trabecular bone in wild-type and only calcified cartilage in the mutant. `marino2008` attributes
+its wider resting zone with more resting-zone cells to **delayed epiphyseal ossification**. `newton2019`,
+already in this atlas, reports that resting-zone chondrocytes acquire self-renewing behaviour **at SOC
+formation**. Three papers, no mutual citations, one candidate intermediate: **SOC timing may be where both
+leads meet.**
+
+The direction is not obviously favourable, which is exactly why it is worth testing. Delaying SOC formation
+could leave more uncommitted territory and a larger reservoir — or it could postpone the switch that makes
+resting chondrocytes self-renewing, in which case a wider resting zone holds more cells of a *less capable*
+kind and the `marino2008` observation is explained away rather than banked. Logged as
+`g_l2_soc_timing_as_the_shared_intermediate`, graded E, with a lineage-tracing design that scores at matched
+SOC *stage* rather than matched age and separates the two readings by clone count.

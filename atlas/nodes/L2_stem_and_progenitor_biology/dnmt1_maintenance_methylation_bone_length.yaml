@@ -27,11 +27,14 @@ summary: 'The maintenance-methylation hypothesis that this atlas built across ro
   bone growth through metabolic set-point rather than through a senescence clock, which connects this lead
   to the nutrient-sensing arm the atlas already holds. WHAT THIS DOES AND DOES NOT ESTABLISH. It establishes
   that maintenance methylation is REQUIRED for normal longitudinal growth, in a chondrocyte-autonomous way,
-  with a human genetic association at the same locus. THE ATLAS PREVIOUSLY CALLED THIS FOUR CONVERGING LINES
-  AND IT IS TWO (CORR-066). cheung2001, cited second-hand as demethylation driving chondrocytes to
+  with a human genetic association at the same locus. THE ATLAS CALLED THIS FOUR CONVERGING LINES, THEN TWO, AND ON
+  READING ALL OF THEM IT IS THREE OF UNEQUAL QUALITY (CORR-066, CORR-068). cheung2001, cited second-hand as demethylation driving chondrocytes to
   hypertrophy, measures no methylation at all, uses a cytotoxic antileukaemia drug on fetal bovine
-  chondrocytes in monolayer, and states that its own mechanism is unknown. The PASG/HELLS result remains
-  cited second-hand and unread. What stands is yanagihara2025 and nilsson2005.
+  chondrocytes in monolayer, and states that its own mechanism is unknown. sun2004 (PASG/HELLS), finally read, DOES measure methylation - 56 and 32 per cent of
+  wild-type methyl-cytosine - and DOES measure bone, reporting shorter femurs and tibiae with smaller
+  epiphyses; but it is a whole-body germline knockout in a cachectic progeroid animal, so it cannot
+  attribute the short bones to chondrocytes. What stands is yanagihara2025 strongly, nilsson2005 moderately,
+  and sun2004 as systemic corroboration.
   It does NOT establish sufficiency. Both of the surviving lines run from a LOSS of methylation to a LOSS of
   growth. Nobody has raised maintenance methylation postnatally and measured bone length. That asymmetry
   is the whole remaining question for this lead and it is now precisely specifiable.'
@@ -130,6 +133,52 @@ quantitative:
     is a weaker control than an age-matched pair, though the direction is unaffected: an osteoblast deletion
     surviving to 10-11 weeks with no length phenotype is still informative. Note also that the supplementary
     panels report FEMORAL length while the 44.7 per cent figure in the main text is TIBIAL.'
+- parameter: 'the PASG/HELLS leg, now read - global methyl-cytosine in the mutant'
+  value: 56 and 32
+  unit: per cent of wild-type methyl-cytosine level, a 43 per cent decrease
+  conditions: PASG (lsh/SMARCA6/HELLS) germline disruption; methyl-cytosine measured directly in mutant
+    embryos; heterozygotes similar to wild-type
+  species: mouse
+  source_ref: sun2004
+  uncertainty: 'READ ROUND 75 AND IT RESTORES A LEG THAT CORR-066 HAD REMOVED - the count is three lines
+    of unequal quality, not two (CORR-068). Unlike cheung2001 this paper MEASURES methylation, and unlike
+    cheung2001 it measures bone: PASG-null mice have shorter femurs and tibiae, smaller epiphyses and
+    reduced bone mineral density. What it cannot do is attribute any of that to chondrocytes. This is a
+    constitutive whole-body germline knockout in an animal with low birth weight, failure to thrive,
+    cachexia, kyphosis, osteoporosis, greying, hair loss and premature death - a progeroid syndrome, in
+    which short bones are weak evidence for a plate-autonomous mechanism.'
+- parameter: 'p16INK4a promoter methylation in the hypomethylated mutant'
+  value: unmethylated in BOTH mutant and wild-type
+  unit: 25 CpG sites, bisulfite sequencing
+  conditions: 5-prime promoter region of p16INK4a sequenced from methylation-specific PCR products of
+    bisulfite-modified DNA; p16INK4a expression is markedly raised in the mutant and the authors attribute
+    it instead to downregulation of bmi-1
+  species: mouse
+  source_ref: sun2004
+  uncertainty: 'A PATTERN THE ATLAS SHOULD NOW EXPECT RATHER THAN BE SURPRISED BY. This is the second time
+    the flagship gene of a methylation-loss phenotype turns out NOT to be controlled by its own promoter
+    methylation - lui2008 tested Mest, Peg3 and Plagl1 in the growth-limiting programme and found promoter
+    methylation unchanged with age (CORR-060). Global hypomethylation produces its phenotypes through
+    indirect routes, so any experiment designed around demethylation of a named effector promoter is
+    likely to look in the wrong place.'
+- parameter: 'THE LINK BETWEEN THE TWO LEADS - hypomethylation delays secondary ossification'
+  value: delayed
+  unit: qualitative
+  conditions: von Kossa staining of tibiae from 15-day-old mice - calcified trabecular bone fully formed
+    in wild-type, only calcified cartilage in PASG-null; epiphyses smaller
+  species: mouse
+  source_ref: sun2004
+  uncertainty: 'THIS IS WHERE THE TWO LEADS MEET AND THE ATLAS HAD NOT SEEN IT. Lead 2 rests on marino2008
+    reporting a wider resting zone with more resting-zone cells, which the authors attribute to DELAYED
+    EPIPHYSEAL OSSIFICATION. Lead 1 now supplies a second perturbation - loss of maintenance methylation -
+    that also DELAYS SECONDARY OSSIFICATION. And newton2019, already in this atlas, reports that resting
+    zone chondrocytes acquire self-renewing stem cell behaviour AT secondary ossification centre formation.
+    If SOC timing is what sets the pool, then methylation state and growth inhibition may be acting on the
+    pool through the same intermediate rather than through two separate mechanisms. GRADED E - this is an
+    inference joining three papers that never cite each other, and the direction is not even obviously
+    favourable: delaying SOC formation might enlarge the reservoir or might delay the switch that creates
+    self-renewing cells in the first place. It is recorded because it is testable and because it changes
+    which experiment is worth running.'
 - parameter: 'whether RAISING maintenance methylation postnatally lengthens bone'
   value: never tested
   unit: none
@@ -182,6 +231,14 @@ key_refs:
   one_line_finding: Chondrocyte-autonomous Dnmt1 loss shortens tibiae to 44.7 per cent of control by
     narrowing the proliferative zone and accelerating hypertrophy, via raised energy metabolism, with the
     DNMT1 locus associated with human height at P < 4.2e-35.
+- ref_id: sun2004
+  pmid: '15105378'
+  first_author: Sun LQ
+  year: 2004
+  type: primary
+  one_line_finding: PASG/HELLS disruption gives global hypomethylation (methyl-cytosine 56 and 32 per cent
+    of wild-type), shorter femurs and tibiae, smaller epiphyses and DELAYED secondary ossification - in a
+    whole-body progeroid animal, and with p16INK4a upregulation shown to be promoter-methylation-independent.
 - ref_id: cheung2001
   pmid: '11204431'
   first_author: Cheung JO
@@ -199,5 +256,6 @@ key_refs:
 open_questions:
 - g_l2_maintenance_methylation_as_the_pool_lever
 - g_l2_dnmt1_gain_of_function_postnatal
+- g_l2_soc_timing_as_the_shared_intermediate
 contradicts: []
 last_verified: '2026-08-07'
