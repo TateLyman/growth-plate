@@ -6,9 +6,13 @@ type: process
 summary: |
   Sheep are used where a large, weight-bearing, surgically accessible physis is needed over
   months rather than weeks, principally for mechanically modulated growth and for tissue
-  mechanics. Tensile properties of the physis were characterised across anatomical location,
-  thickness, strain rate and age in ovine tissue alongside human comparison, establishing that
-  physeal tensile behaviour is site-dependent and strain-rate dependent (williams2001). Ovine
+  mechanics. CORRECTION 2026-08-07 (CORR-036): this node previously stated that physeal tensile
+  properties were characterised "in ovine tissue" by williams2001. THAT PAPER CONTAINS NO SHEEP.
+  It is BOVINE - 12-18-month heifers and 5-month calves, proximal tibia - plus eight human capital
+  femoral specimens from two cerebral palsy patients. The claim was read into the node from a title
+  that names no species, and it stood as the anchor primary for a sheep model. The bovine and human
+  findings are now held on zonal_stiffness_gradient and chondron, where the species is stated
+  correctly, and williams2001 is no longer a key reference here. Ovine
   and bovine cartilage supplied the zonal biochemistry that underpins matrix models -
   differential aggrecan synthesis and breakdown rates by zone (shapses1994) and collagen
   fibril composition (mendler1989, keene1995). Growth modulation by sustained compression has
@@ -27,32 +31,39 @@ quantitative:
   unit: score
   conditions: mean of fusion competence 3, architecture 1, scale 1, tempo 2
   species: ovine
-  source_ref: williams2001
+  source_ref: stokes2006
   uncertainty: ATLAS-ASSIGNED SCORE, NOT A REPORTED VALUE. The scoring scheme is
     defined in mouse_model_translation_risk and the axis scores are this atlas's judgement.
-    source_ref names the anchor primary for the model (williams2001); that paper does not contain
-    this number and must not be cited for it.
+    source_ref formerly named williams2001 as the anchor primary for this model, which was wrong
+    on two counts - that paper contains no sheep (CORR-036), and it does not contain this number
+    either. It now names stokes2006, which is genuinely ovine among its three species. NO PRIMARY
+    CONTAINS THIS SCORE; it must not be cited for it.
   atlas_derived: true
 localization:
-- 'ovine PHZ: tensile failure occurs preferentially near the hypertrophic zone'
-human_evidence: indirect
-human_evidence_note: Ovine physeal tensile data were generated alongside human comparison in the
-  same study.
+- 'ovine physis: no zonal tensile failure data located. The claim previously recorded here - that
+  failure occurs preferentially near the HYPERTROPHIC zone - was wrong twice over (CORR-036): it
+  was sourced to a bovine paper, and that paper reports the opposite end of the plate. williams2001
+  found failure in the zone of columnation just below the resting zone, sometimes deviating INTO the
+  reserve zone.'
+human_evidence: absent
+human_evidence_note: 'NO HUMAN OVINE-COMPARISON EXISTS. This field previously read that ovine
+  physeal tensile data were generated alongside human comparison in the same study; the study
+  (williams2001) compared HUMAN against BOVINE and included no sheep at all. The human physeal
+  mechanical data this atlas holds are recorded on zonal_stiffness_gradient.'
 species_basis:
 - ovine
 - bovine
-- human
 translation_risk: moderate
 translation_risk_reason: Large weight-bearing physis with human-comparable dimensions, but terminal
   fusion biology is uncharacterised in sheep.
 confidence: C
 key_refs:
-- ref_id: williams2001
-  first_author: Williams JL
-  year: 2001
+- ref_id: stokes2006
+  first_author: Stokes IA
+  year: 2006
   type: primary
-  one_line_finding: Physeal tensile properties vary with anatomical location, thickness, strain rate
-    and age.
+  one_line_finding: Sustained compression suppresses growth across three species at two anatomical
+    sites - the closest thing to a cross-species dose-response, and genuinely ovine in part.
 - ref_id: stokes2006
   first_author: Stokes IA
   year: 2006

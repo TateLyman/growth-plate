@@ -8,10 +8,15 @@ summary: 'weise2001 establishes that fusion happens when proliferation reaches z
   in the same animal senesce at different rates, so the rate is a regulated variable and its regulators can be read
   off by comparing bones. In mice, phalanges and metacarpals FUSE AT 2-3 WEEKS while femurs and tibias are still
   unfused at 12 weeks. At 1 week of age the metacarpal grows at 49% of the tibial rate with proliferation per column
-  at 46%. THREE PATHWAYS SEPARATE THE FAST-SENESCING SMALL BONES FROM THE SLOW-SENESCING LONG ONES. IGF: phalanges
-  carry high Igfbp4, Igfbp5 and Igfbp7 - inhibitors - while tibias carry high Igf2. BMP: tibias carry high Bmp6 with
-  low Bmp3 and Bmper antagonists and show higher phosphorylated SMAD1/5/9. WNT: tibias carry high Wnt4, Wnt5a and
-  Wnt5b with low Wif1 and Dkk3. AND THEN THE FUNCTIONAL TEST, WHICH IS THE PART THAT MATTERS AND WHICH CUTS AGAINST
+  at 46%. THREE PATHWAYS SEPARATE THE FAST-SENESCING SMALL BONES FROM THE SLOW-SENESCING LONG ONES, AND THE
+  SUPPLEMENTARY TABLES HAVE NOW BEEN READ SO THE MAGNITUDES ARE HERE RATHER THAN JUST THE DIRECTIONS. Nine genes are
+  FDR-corrected AND replicated in BOTH mouse and rat. IGF: phalanges carry high Igfbp4 (log2 +1.47 mouse, +2.77 rat)
+  and Igfbp5 (+1.73/+2.81), both inhibitors. BMP: tibias carry high Bmp6 (-2.36/-1.74) against phalanx-high Bmp3
+  (+1.62/+2.22) and Bmper (+1.82/+2.10) antagonists, with higher phosphorylated SMAD1/5/9. WNT: tibias carry high
+  Wnt4 (-1.32/-1.34) and Wnt5b (-1.49/-1.90) against phalanx-high Wif1 (+2.08/+3.12) and Dkk3 (+2.51/+1.66). READING
+  THE TABLES ALSO CORRECTED THE LIST. Igfbp7 and Wnt5a are AGE-axis genes, not between-bone genes, and IGF2 IS ON
+  NEITHER LIST - it is 17.66 in 1-week phalanx against 17.78 in 1-week tibia, no difference at all, so this atlas''s
+  previous claim that tibias carry high Igf2 was wrong as a between-bone statement. AND THEN THE FUNCTIONAL TEST, WHICH IS THE PART THAT MATTERS AND WHICH CUTS AGAINST
   US. EXOGENOUS IGF1 STIMULATED PHALANGEAL CHONDROCYTES AND DID NOTHING TO TIBIAL ONES. EXOGENOUS BMP2 INCREASED
   HYPERTROPHY IN METATARSALS AND NOT IN TIBIAS. The authors read this as signalling already being optimal in the
   large bones, and if that is right it is a mechanistic explanation for something this atlas found empirically and
@@ -44,19 +49,33 @@ quantitative:
     timepoint. Because the rates differ from the outset, the difference in time-to-fusion is not purely a difference
     in when senescence starts - the small bones are slower AND finish sooner, which is what a smaller initial capacity
     spent at a lower rate would look like, and this study does not separate initial capacity from rate of spending.
-- parameter: THE MOLECULAR SIGNATURE THAT SEPARATES SLOW-SENESCING FROM FAST-SENESCING PLATES
-  value: 'phalanx-high: Igfbp4, Igfbp5, Igfbp7, Bmp3, Bmper, Wif1, Dkk3 — all inhibitors or antagonists. Tibia-high:
-    Igf2, Bmp6, Wnt4, Wnt5a, Wnt5b, and higher phosphorylated SMAD1/5/9'
-  unit: differential expression, direction only
-  conditions: transcriptional profiling of growth plate cartilage from small versus large bones, with Western blotting
-    for phosphorylated SMAD1/5/9
+- parameter: THE MOLECULAR SIGNATURE THAT SEPARATES SLOW-SENESCING FROM FAST-SENESCING PLATES — NOW WITH MAGNITUDES
+  value: 'BONE AXIS, tibia against phalanx at 1 week, log2 fold change as mouse / rat, all FDR-corrected and replicated
+    in BOTH species. PHALANX-HIGH (antagonists and inhibitors): Igfbp4 +1.47/+2.77, Igfbp5 +1.73/+2.81, Wif1
+    +2.08/+3.12 in proliferative zone and +1.28/+3.19 in hypertrophic, Dkk3 +2.51/+1.66, Bmp3 +1.62/+2.22, Bmper
+    +1.82/+2.10. TIBIA-HIGH (agonists): Wnt4 -1.32/-1.34, Bmp6 -2.36/-1.74, Wnt5b -1.49/-1.90. Plus higher
+    phosphorylated SMAD1/5/9 in tibia by Western blot'
+  unit: log2 fold change, phalanx relative to tibia (positive = phalanx-high)
+  conditions: RNA-seq of laser-capture-microdissected proliferative and hypertrophic zones, 1-week tibia against
+    1-week proximal forelimb phalanx, n = 4-5 per group; selection >2-fold, FDR < 0.05, IN BOTH MOUSE AND RAT.
+    Values read from lui2018 S5 Table (proliferative zone, 160 genes) and S6 Table (hypertrophic zone, 403 genes),
+    downloaded 2026-08-07
   species: mouse
   source_ref: lui2018
-  uncertainty: 'A COHERENT PICTURE ACROSS THREE UNRELATED PATHWAYS, WHICH IS HARDER TO GET BY CHANCE THAN A SINGLE
-    HIT - in every one, the slow-senescing bone has more agonist and less antagonist. Recorded as DIRECTIONS RATHER
-    THAN MAGNITUDES because the fold-changes were not captured in the reading. Differential expression between two
-    tissues that differ in a dozen ways is correlational; the functional tests in the next row are what give it any
-    causal weight, and they were done on only two of the three pathways.'
+  uncertainty: 'MAGNITUDES NOW RECORDED - the earlier version of this row carried DIRECTIONS ONLY because the paper had
+    been read through a summarisation step. Reading the supplementary tables both strengthened and corrected it.
+    STRENGTHENED: nine genes across three unrelated pathways are FDR-corrected and REPLICATED IN A SECOND SPECIES,
+    which is much harder to get by chance than the direction-only version implied, and in every case the slow-senescing
+    bone carries more agonist and less antagonist. CORRECTED, AND THIS MATTERS: THREE OF THE TWELVE GENES THIS ATLAS
+    LISTED AS BONE-AXIS DIFFERENCES ARE NOT ON THE BONE-AXIS LISTS AT ALL. Igfbp7 (+1.15/+1.96) and Wnt5a
+    (-1.79/-2.01) belong to the AGE axis - lui2018 S3 Table, 1-week against 4-week tibia - and not to the
+    tibia-against-phalanx comparison. IGF2 IS ON NEITHER LIST: in the paper''s own per-sample counts it is 17.66 in
+    1-week phalanx proliferative zone against 17.78 in 1-week tibia, which is no difference at all, while it falls to
+    12.5 in 4-week tibia. So "tibias carry high Igf2" was wrong as a between-bone claim; Igf2 is an age gene, and it
+    did not survive the both-species filter. The confusion is understandable because lui2018''s own thesis is that the
+    two axes CORRELATE, but the atlas had presented all twelve as between-bone differences and only nine are. THE
+    STANDING LIMIT IS UNCHANGED: differential expression between two tissues that differ in a dozen ways is
+    correlational, and the functional tests in the next row were done on only two of the three pathways.'
 - parameter: THE LONG BONES DO NOT RESPOND TO MORE IGF OR MORE BMP — THEY ARE ALREADY AT CEILING
   value: exogenous IGF1 stimulated phalangeal chondrocytes and did NOT stimulate tibial chondrocytes; exogenous BMP2
     increased hypertrophy in metatarsals and NOT in tibias

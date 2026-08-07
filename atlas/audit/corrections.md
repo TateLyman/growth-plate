@@ -2285,3 +2285,90 @@ was replaced with one that means what its name says.
 with non-matching filenames are missed, and 38 is a floor. And it does not distinguish a PDF that was
 read from one that was opened; only `full_text_read` does that, and it is set on exactly one reference
 so far.
+
+## CORR-036 — a node about sheep was anchored on a study of cattle, and it reported the fracture at the wrong end of the plate
+
+`williams2001` (PMID 11781003, *Tensile properties of the physis vary with anatomic location,
+thickness, strain rate and age*) was held from 2026-08-05 and cited by four nodes on its abstract.
+Read in full on 2026-08-07. **It contains no sheep.**
+
+The study is **bovine** — 12–18-month heifers and 5-month calves, proximal tibia — plus eight human
+capital femoral specimens from two cerebral palsy patients. `ovine_growth_plate_model` stated that
+physeal tensile properties were characterised *"in ovine tissue alongside human comparison"*, named
+`williams2001` as its anchor primary, and listed it as the `source_ref` for the node's translation-risk
+score.
+
+**Two errors, and the second is worse.** The node's `localization` field read:
+
+> *"ovine PHZ: tensile failure occurs preferentially near the hypertrophic zone"*
+
+The paper reports the **opposite end of the plate**: failure runs through the zone of columnation just
+below the resting zone, sometimes deviating *into* the reserve zone. So the atlas asserted a zonal
+mechanical claim that was wrong in species and reversed in anatomy, and the two errors were
+independent — getting the species right would not have caught the zone.
+
+**How it happened.** The title names no species. The abstract does — "bovine" appears four times — but
+the node was built from a one-line finding, and "physeal tensile properties by location, thickness,
+strain rate and age" reads as generic large-animal work. Nothing in the schema requires that a node's
+`species_basis` be reconciled against the species of its own key references.
+
+**What it cost, and what reading it bought.** Three quantitative recoveries the atlas did not have:
+the regression `ultimate stress (MPa) = 3.2 − 2.8 × thickness (mm)` (R² 0.55, P < 0.0001) — thicker
+plates are *weaker*; absolute human physeal values (ultimate stress 0.98 ± 0.29 MPa, modulus
+4.16 ± 1.22 MPa, strain 31 ± 7 %, thickness 1.35 ± 0.33 mm), where the atlas had recorded *"absolute
+values not in abstract"*; and **the human reserve zone occupying 60–80 % of plate thickness against
+~30 % in bovine** — a rare human resting-zone measurement in a project built on the resting zone,
+though from two cerebral palsy patients at the capital femoral physis and not usable as a norm.
+
+**A fourth correction fell out of the same reading.** The atlas carried the regional strength contrast
+as "+33 %, lateral vs medial" from the abstract. The paper's Results give 30 % for that comparison
+**at P = 0.08 — not significant**. The significant contrast is lateral vs *centre*, 40 %, P = 0.02.
+The abstract and the Results disagree on the magnitude, and the atlas had the non-significant
+comparison as its headline.
+
+**Standing rule.** A node's `species_basis` must be reconcilable against the species actually studied
+in its `key_refs`. Where they diverge, one of the two is wrong.
+
+## CORR-037 — `full_text_read` was set on a paper whose abstract says the opposite of its own result
+
+`glasson2005` (PMID 15800624, Nature) carried `full_text_read: '2026-08-06'` **and**
+`access_route: user-supplied full-text PDF, 2026-08-06` **and** `type: primary_abstract_only`,
+simultaneously, while `adamts5` cited it. Nothing detected the contradiction, because no check
+compared those fields.
+
+**The cost was a claim that is the inverse of the paper's.** The abstract is entirely about ADAMTS5 and
+osteoarthritis. The growth-plate result is in the body, and it reverses:
+
+> the aggrecanase neoepitope G1-TEGE373 stained strongly in wild-type growth plate and was **negligible
+> in ADAMTS4−/−**, while **ADAMTS5−/− growth plates looked like wild type**
+
+**ADAMTS4, not ADAMTS5, does the visible aggrecan cleavage in the murine growth plate.** The atlas had
+recorded the joint hierarchy and let it stand for the plate.
+
+**It sharpens this layer's stated hole rather than filling it.** The `adamts5` node already said the
+mechanism of aggrecan removal from the growth plate is unestablished. The sharper version: ADAMTS4−/−
+abolishes the neoepitope and the bones still reach normal length with normal plate histology, and
+`majumdar2007`'s double null is normal too. **The cleavage that can be seen is dispensable.**
+
+**This corrects CORR-035's own proposed fix.** CORR-035 said `full_text_read` should be "set only when
+extraction happens" and implied the atlas was gaining that field. It already existed, on 53 records —
+and on `glasson2005` it was set while the paper went unextracted. **The field I proposed as the remedy
+had already failed in the same way as the field it replaced.** A date stamp records that someone
+believed they had read something. It does not record that anything was extracted, and nothing about
+naming it better fixes that.
+
+**What is actually enforceable, and is now enforced.** `full_text_read` or `access_route` set alongside
+`type: primary_abstract_only` is a record contradicting itself, and is now a validator **error**, not a
+warning. It found the state on `glasson2005` the moment it existed. Also added earlier this session:
+`held_but_unread` (`local_pdf` + abstract-only + cited), which is what surfaced both this paper and
+`williams2001` in the first place.
+
+**And the duplicate-key loader earned its place again.** Deduplicating these records, my own edit wrote
+`full_text_read` and `local_pdf` twice into `glasson2005`. The CORR-033 loader caught it on the next
+run. Three separate mechanical checks caught three separate defects in one round; **the reading caught
+the science, the checks caught the bookkeeping, and neither would have caught the other's.**
+
+**One thing is NOT cleared.** `glasson2005` carries `correction_checked: false` against a published
+erratum. Europe PMC confirms an Erratum linked to PMID 15800624 but returns neither identifier nor
+title, so it could not be retrieved on 2026-08-07 and the flag stays set. Every number this round takes
+from that paper is quoted without knowing what the erratum changed, and the node says so.

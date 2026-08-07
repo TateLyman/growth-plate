@@ -307,6 +307,20 @@ def validate(quota=False):
         for q in (n.get("quantitative") or []):
             if isinstance(q, dict) and q.get("source_ref"):
                 cited_refs.add(q["source_ref"])
+    # A record that says its full text was read while still typed abstract-only is
+    # SELF-CONTRADICTORY, and that is an error rather than a warning. glasson2005 sat in
+    # exactly that state - full_text_read 2026-08-06, type primary_abstract_only - while a
+    # node cited it from an abstract that states the OPPOSITE of its growth-plate result.
+    # Nothing detected it, because no check compared the two fields (CORR-037).
+    for rid, rv in sorted(refs.items()):
+        if not isinstance(rv, dict):
+            continue
+        if (rv.get("full_text_read") or rv.get("access_route")) and \
+                rv.get("type") == "primary_abstract_only":
+            r.err(f"bibliography/{rid}",
+                  "full_text_read/access_route is set but type is still "
+                  "primary_abstract_only - the record contradicts itself")
+
     for rid in sorted(cited_refs):
         rv = refs.get(rid) or {}
         if rv.get("local_pdf") and rv.get("type") == "primary_abstract_only":

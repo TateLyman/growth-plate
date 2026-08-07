@@ -96,20 +96,67 @@ quantitative:
   species: porcine
   source_ref: sergerie2009
   uncertainty: as reported
-- parameter: Human capital femoral physis tensile strength relative to bovine proximal tibial physis
-  value: ~0.5
-  unit: fold
-  conditions: 8 specimens from 2 cerebral palsy patients vs bovine controls; human specimens twice as thick
+- parameter: THE ABSOLUTE HUMAN PHYSEAL TENSILE NUMBERS — FULL TEXT NOW READ
+  value: ultimate stress 0.98 +/- 0.29 MPa; tangent modulus 4.16 +/- 1.22 MPa; ultimate strain 31 +/- 7 per cent;
+    growth plate thickness 1.35 +/- 0.33 mm
+  unit: MPa, per cent, mm
+  conditions: human capital femoral physis, 8 specimens that failed through cartilage out of 40 prepared, from TWO
+    cerebral palsy patients with spastic quadriplegia aged 8 and 14 (one specimen from the 8-year-old, seven from the
+    14-year-old); tension at 0.003 per second, tested identically to the bovine specimens
   species: human
   source_ref: williams2001
-  uncertainty: n=2 patients; absolute values not in abstract
-- parameter: Regional variation in bovine physeal tensile strength, lateral vs medial
-  value: '+33'
-  unit: '% (strength); tangent modulus +25%'
-  conditions: 12-18 month heifer proximal tibia, 70 specimens, 3 strain rates
+  uncertainty: 'THE ONLY ABSOLUTE HUMAN PHYSEAL TENSILE VALUES THIS ATLAS HOLDS, and they were sitting in a PDF on
+    disk while the atlas recorded "absolute values not in abstract" (CORR-035 class). Against bovine proximal tibia
+    the human plate is about twice as thick, about half as strong and about half as stiff, with the SAME ultimate
+    strain. THE SAMPLE IS AS BAD AS IT LOOKS: two patients, both with cerebral palsy and chronic painful hip
+    dislocation, so in vivo loading history is abnormal and the authors say so; 32 of 40 specimens failed in bone
+    rather than cartilage because the epiphyseal bone was riddled with cysts, so the eight analysed are a survivor
+    subset; and the capital femoral physis is not a long-bone metaphyseal plate. The authors note the mean ultimate
+    tensile stress is close to a published estimate of the ultimate SHEAR stress of the same physis without
+    perichondrium, 0.8 MPa at age six to 1 MPa at age twelve.'
+- parameter: AND THE HUMAN RESTING ZONE IS TWO TO THREE TIMES THE PROPORTION OF THE PLATE THAT BOVINE IS
+  value: the reserve zone occupied 60-80 per cent of growth plate thickness in the human capital femoral physis,
+    against about 30 per cent in both the 5-month and 12-18-month bovine proximal tibial growth plate
+  unit: per cent of growth plate thickness
+  conditions: light microscopy and scanning electron microscopy of the same specimens used for tensile testing
+  species: human
+  source_ref: williams2001
+  uncertainty: 'RECORDED HERE BECAUSE IT IS A HUMAN RESTING-ZONE MEASUREMENT AND THIS ATLAS HAS ALMOST NONE, not
+    because it is a mechanical result. If the human resting zone really is 60-80 per cent of the plate against 30 per
+    cent in cattle, then the compartment this entire project treats as the limiting resource is proportionally far
+    larger in humans than in the animal models the depletion literature is built on, and cross-species transfer of
+    resting zone counts is worse than assumed. THE CAVEATS ARE SEVERE ENOUGH THAT THIS SHOULD NOT BE TREATED AS A
+    HUMAN NORM: two cerebral palsy patients aged 8 and 14, the capital femoral physis specifically - a site whose
+    architecture is atypical and which is prone to slipped epiphysis - abnormal loading, and a range rather than a
+    mean with no per-specimen values. It is a flag for a question, not an established proportion.'
+- parameter: Regional variation in bovine physeal tensile strength
+  value: 'lateral against CENTRE: up to 40 per cent stronger (P = 0.02) and tangent modulus 34 per cent greater
+    (P < 0.001). Lateral against MEDIAL: 30 per cent stronger but P = 0.08, NOT significant, and tangent modulus 25
+    per cent greater (P = 0.05). No difference between centre and medial in strength (P = 0.8) or modulus (P = 0.2).
+    Ultimate stress by region and rate 1.64-3.46 MPa; tangent modulus 9.53-15.78 MPa'
+  unit: per cent difference and MPa
+  conditions: 12-18-month heifer proximal tibia, 70 specimens, three strain rates 0.0007, 0.007 and 0.07 per second
   species: bovine
   source_ref: williams2001
-  uncertainty: ultimate strain not different by region
+  uncertainty: 'CORRECTED ON READING THE FULL TEXT. This row previously read "+33 per cent, lateral vs medial" with
+    no P value, taken from the abstract. The abstract does say 33 per cent; the RESULTS say 30 per cent for that
+    comparison AT P = 0.08, which is not significant. The comparison that IS significant is lateral against CENTRE
+    at 40 per cent, P = 0.02. So the atlas was carrying a non-significant contrast as the headline regional effect,
+    and the abstract and results disagree on its magnitude. Ultimate strain did not differ by region (P = 0.51) or
+    strain rate; strength and modulus both rose with strain rate.'
+- parameter: THICKER GROWTH PLATES ARE WEAKER, AND IT IS A REGRESSION NOT AN IMPRESSION
+  value: ultimate stress (MPa) = 3.2 - 2.8 x growth plate thickness (mm), R-squared 0.55, P < 0.0001
+  unit: MPa per mm
+  conditions: all 40 specimens of the bovine age-comparison study pooled across the 5-month and 12-18-month groups,
+    pooled because the regression slopes for each age group were the same
+  species: bovine
+  source_ref: williams2001
+  uncertainty: 'A QUANTITATIVE STRUCTURE-PROPERTY RELATION THE ATLAS DID NOT HOLD, and it runs opposite to intuition -
+    a thicker plate is a WEAKER one, not a more substantial one. It is the mechanical counterpart of the age result
+    in the next row, where the older plate is simultaneously thinner and stronger. Limits: bovine proximal tibia only,
+    thickness spans a narrow range, R-squared 0.55 leaves nearly half the variance unexplained, and the relation is
+    extrapolated to zero strength at 1.14 mm which is within the range of human plate thickness measured in this same
+    paper (1.35 mm) - so the linear form cannot be correct across species.'
 - parameter: tangent modulus by zone, tension along the growth axis
   value: resting 27.0; proliferating 14.9; hypertrophic 15.1; whole plate 17.7
   unit: MPa
