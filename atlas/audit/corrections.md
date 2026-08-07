@@ -3588,3 +3588,53 @@ lesion on record (`maass2015`) is a **cAMP** lesion whose skeletal phenotype is 
 `finding_never_used` check does not catch this class, because `wang2018` *was* cited; it was cited without
 its content being allowed to bear on a conclusion drawn in the same layer. That is a harder failure to
 automate against and it is recorded here without a tooling fix, which is itself worth noting.
+
+## CORR-073 — I used a PDE5 null to condemn a PDE3 drug, and the paper I was condemning had predicted that null in advance
+
+Round 79 concluded *vosoritide, and it is not close*, on the reasoning that `wang2018` had run the
+sufficiency test for cGMP and it failed, so cilostazol's premise was falsified. Both full texts arrived and
+the reasoning does not survive.
+
+**`wang2018` tested tadalafil — a PDE5 inhibitor.** Its own finding is that PDE5 is the major
+cGMP-hydrolysing PDE in rat epiphyseal chondrocytes, and the null is a PDE5 null.
+
+**`kawabe2025` predicted exactly that null before testing anything.** It cites International Mouse
+Phenotyping Consortium records that **Pde5a-null mice have small body size** and **Pde9a-null mice normal
+body size**, and reasons in print that *"inhibitors of PDE5A and PDE9A are unlikely to stimulate bone
+growth."* It contrasts **Pde3b-null mice, which show enlargement of the tibia.** Opposite knockout
+phenotypes, opposite predictions, both confirmed experimentally.
+
+So the two papers never conflicted. Together they say something stronger and more useful than either alone:
+**the PDE isoform is the variable and bulk cGMP is not.** I collapsed that into "cGMP elevation is
+insufficient" and used one isoform's null to condemn another isoform's drug.
+
+**The sizes, now measured rather than inferred.**
+
+- `wang2018`: rats at 1 month, tadalafil 10 mg/kg/day × 3 weeks. Tissue cGMP **+52%** (p<0.01), body-weight
+  gain **−9%** (p<0.01), and long bone length, cortical and trabecular properties and histology **all
+  unaltered.** The null is real and the target engagement is confirmed — it just isn't about PDE3.
+- `kawabe2025`: juvenile mice from weaning, cilostazol 10 mg/kg/day i.p. × 4 weeks. Naso-anal length
+  **93.6 ± 0.3 mm vehicle vs 95.3 ± 0.5 mm treated, P<0.05** — **+1.7 mm, 1.82% of body length, in a
+  WILD-TYPE animal.** Mechanism dissected pharmacologically and genetically: PKG → BK channel →
+  hyperpolarisation → TRPM7 Ca²⁺ → CaMKII, blocked by KT5823, paxilline and FTY720 respectively.
+- Allometrically, 10 mg/kg/day in mouse is ~**57 mg/day** in a 70 kg human, about a **third** of the
+  200 mg/day taken long-term for claudication. The effective exposure sits below routine dosing rather than
+  above it, which is the reverse of the usual situation.
+
+**And the stacking argument flips with it.** Both CNP-analogue labels put their mechanism at the **RAF-1
+step of the FGFR3–MAPK cascade** — where erdafitinib already acts. The cilostazol chain runs through a
+potassium channel and a calcium channel to matrix synthesis, orthogonal to MAPK. By the atlas's own rule,
+**cilostazol is the better partner for erdafitinib and vosoritide the better standalone** — the opposite of
+what round 79 concluded. The caveat is that CNP–NPR2 also drives PKG, so the two converge upstream.
+
+**What does not change:** erdafitinib is a CYP3A4 time-dependent inhibitor *and* inducer, cilostazol is a
+CYP3A4/2C19 substrate, and vosoritide as a peptide has no such interaction. That remains the one hard strike
+against cilostazol in this particular stack.
+
+**The failure pattern.** This is not a source I failed to read — it is a source I read at abstract level and
+then generalised beyond what it said, in the direction that made a tidier conclusion. Round 79's verdict
+sentence was *"vosoritide, and it is not close,"* written from two abstracts. The node itself carried
+`primary_abstract_only` on both. **The confidence in the prose exceeded the grade on the row, for the
+fourth time** (CORR-059, CORR-060, CORR-062, now this). The standing rule from CORR-062 said a `not
+reported` row forbids a verdict in prose; it needs extending: **an `abstract_only` row forbids a
+comparative verdict in prose.**
