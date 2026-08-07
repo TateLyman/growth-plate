@@ -3006,3 +3006,22 @@ this session's output.** Both PMIDs were available from the same search I was al
 saved one API call and produced a fabricated citation. Second, the guard gap is real but not closable in
 general: no tool can verify that a finding belongs to a paper. The only defence is passing `--ref-id`
 every time, which forces the comparison. Doing that here would have refused the write.
+
+## CORR-056 — "one positive length result in the entire literature" was wrong, and the ref_id guard has a hole
+
+Round 61 closed with: *"arm 3 reduces to one positive length result in the entire literature: trompet2024's
+SAG beads in rat."* **`li2021` is a second one** — Ihh ablated in Aggrecan⁺ cells by Acan-creERT, and
+**smoothened agonist rescued chondrocyte proliferation and differentiation, restoring bone growth** (and
+reducing enchondroma incidence). Three sweeps across `("smoothened agonist" OR SAG OR purmorphamine …)
+AND (bone length OR limb length OR longitudinal growth …)` did not surface it, because the paper is
+indexed as a *chondrodysplasia rescue* rather than as bone lengthening. **A negative from my own searches
+is weak evidence, and I stated it as though it were strong.** It is a rescue of a deficient model rather
+than growth above wild-type — which is the same distinction that disqualified `666-15` in round 46 — so
+it does not make SAG a growth agent. It does make "only one" false.
+
+**And a tooling hole worth recording.** `addref.py`'s `--ref-id` guard compares the ref_id's alpha prefix
+to `first_author.split()[0].lower()`. For **hyphenated surnames** — here *Caetano-Silva* — no pure-alpha
+ref_id can ever match, so the guard refuses every possible id and the paper cannot be added with the
+check enabled. I added it without `--ref-id` and verified the written record immediately, which is the
+fallback CORR-055 requires. The guard should compare on a hyphen-stripped surname; until it does,
+hyphenated first authors force the unguarded path.
