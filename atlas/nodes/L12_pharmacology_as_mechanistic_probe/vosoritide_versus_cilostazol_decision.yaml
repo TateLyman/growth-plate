@@ -330,6 +330,71 @@ quantitative:
     so this is the closest any FGFR agent gets to a near-normal receptor background - the direction the
     atlas needs. It is still a gain-of-function lesion and still not a pathway-intact subject. Abstract
     level; the clinical effect size has not been read.'
+- parameter: 'PROPEL 3 PRIMARY ENDPOINT - the FGFR arm placebo-adjusted, at last'
+  value: 1.74 LS mean, 2.10 raw
+  unit: cm/year difference in change from baseline versus placebo at week 52
+  conditions: 'randomised double-blind placebo-controlled phase 3, 114 randomised (74 infigratinib, 39
+    placebo), children 3 to <18 with genetically confirmed achondroplasia, 0.25 mg/kg/day orally for 52
+    weeks. Annualised height velocity: infigratinib baseline 4.28 (SE 0.16) to 5.75 (SE 0.15) at week 52;
+    placebo 4.57 (SE 0.23) to 3.95 (SE 0.14). Mean change +1.48 (SE 0.22) against -0.62 (SE 0.29). LS mean
+    change +1.58 (0.19) against -0.16 (0.23); LS mean difference 1.74, 95 per cent CI 1.31 to 2.1'
+  species: human
+  source_ref: savarirayan2026infig
+  uncertainty: 'THIS REFUTES THE NARRATIVE-REVIEW FIGURE THE ATLAS REFUSED TO ADMIT LAST ROUND, AND THE
+    REFUSAL WAS CORRECT. zakheim2025 printed 6.0 cm/yr for infigratinib against 1.7 for vosoritide; the
+    primary source gives a placebo-adjusted 1.74 cm/yr, and vosoritide pivotal gives 1.57 cm/yr on the same
+    metric in the same disease. THE TWO ARMS ARE EQUIVALENT IN ACHONDROPLASIA, not several-fold apart.
+    Round 82 speculated the FGFR arm might be much larger and explicitly declined to bank it - that call
+    saved a substantial error.'
+- parameter: 'PROPEL 2 dose-response shape - the decisive fact for whether more FGFR blockade buys more'
+  value: effect only at the top dose
+  unit: five cohorts
+  conditions: 0.016, 0.032, 0.064, 0.128 and 0.25 mg/kg/day (n=8, 19, 16, 16, 13) for 6 months then 12
+    months extension; an increased annualised height velocity was observed in COHORT 5 ONLY, mean change
+    from baseline at 18 months +2.50 cm/yr (95 per cent CI 1.22-3.79, P=0.001), height z-score +0.54
+    (0.35-0.72) against an untreated achondroplasia reference, upper-to-lower segment ratio -0.12
+  species: human
+  source_ref: savarirayan2025
+  uncertainty: 'THE HIGHEST DOSE TESTED IS THE FIRST DOSE THAT WORKS. There is no plateau in this
+    dose-response - the curve is still climbing where the programme stopped. The authors note that doses
+    10 to 100-fold lower than oncology exposure have been used in achondroplasia, and oncology went to 200
+    mg/day, so the characterised headroom above the proven growth dose is large. That single fact is what
+    makes target-coverage arithmetic worth doing rather than academic.'
+- parameter: 'TARGET COVERAGE AT PROVEN-EFFECTIVE DOSES - infigratinib against erdafitinib'
+  value: 0.97 versus 2.1
+  unit: multiples of the FGFR3 IC50 at free Cmax
+  conditions: 'infigratinib FGFR3 IC50 about 2 nM biochemically and 1.99 +/- 0.32 nM against the
+    achondroplasia G380R mutant, 3.01 +/- 1.81 nM across nine hypochondroplasia variants; plasma protein
+    binding 96.8 per cent; oncology 125 mg/day gives total Cmax 282.5 ng/mL = about 504 nM, so free Cmax
+    about 16 nM = 8x IC50. Scaling dose-proportionally to 0.25 mg/kg gives about 15 mg for a 60 kg subject,
+    free Cmax about 1.9 nM = 0.97x IC50. Erdafitinib at 8 mg has a MEASURED free Cmax of 6.3 nM against an
+    FGFR3 IC50 of 3.0 nM = 2.1x. Computation in atlas/tools/fgfr_exposure.py'
+  species: human
+  source_ref: savarirayan2026infig
+  uncertainty: 'THE RESULT IS COUNTERINTUITIVE AND MATTERS. The FGFR inhibitor with a positive phase 3
+    achieves only ABOUT HALF-MAXIMAL FGFR3 inhibition at its proven dose, while erdafitinib at 8 mg
+    achieves roughly twice that coverage. Read with the PROPEL 2 dose-response, which is still climbing,
+    this argues that the FGFR arm is UNDER-DOSED at the dose that works - and that erdafitinib at 8 mg sits
+    further up the same curve. CAVEATS THAT MUST TRAVEL WITH IT: infigratinib PK is scaled here
+    dose-proportionally from an oncology anchor and its protein binding is reported concentration-dependent;
+    free plasma concentration is not intracellular kinase-site concentration; and the two drugs differ in
+    selectivity, with erdafitinib far more potent on FGFR4 (5.7 nM against 61 nM for infigratinib) and
+    binding RET at 0.94 nM, tighter than its own FGFR3. More coverage is not automatically more benefit.'
+- parameter: 'the asymmetry that decides what vosoritide adds'
+  value: 3.56 against no comparator
+  unit: cm/year outside achondroplasia
+  conditions: vosoritide gives +3.56 cm/yr in RASopathies, ACAN and NPR2 deficiency (dauber2026), which is
+    2.3 times its own achondroplasia effect; no infigratinib trial outside achondroplasia exists, and the
+    closest is demuynck2025 in hypochondroplasia, which is in silico, in vitro and Fgfr3 N534K/+ mouse with
+    no clinical effect size reported
+  species: human
+  source_ref: dauber2026
+  uncertainty: 'THIS INVERTS THE ROUND-82 ANSWER TO WHAT DOES VOSORITIDE ADD. In achondroplasia the two
+    arms are equivalent. OUTSIDE achondroplasia vosoritide is the only agent with human efficacy data, and
+    its effect there is more than twice its achondroplasia effect. For a subject who does not have
+    achondroplasia, vosoritide is the arm with relevant evidence and the FGFR arm is the one extrapolating.
+    The caveat from CORR-074 stands unchanged: every dauber2026 subject had MAPK excess or an NPR2 defect,
+    so pathway-intact remains untested for BOTH agents.'
 localization:
 - 'growth plate hypertrophic zone: where CNP-NPR-B signalling acts on terminal cell volume'
 - 'growth plate chondrocytes: where wang2018 measured cGMP and identified PDE5 dominance'
