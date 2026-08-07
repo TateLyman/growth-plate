@@ -2408,3 +2408,33 @@ source contains is a factual claim, and if the source is in hand, read it. A cur
 database reachable by one HTTP call is "in hand." **Comparative potency claims must be queried, never
 recalled** — and the failure recurred in a user-facing message, which remains the channel with no
 mechanical check on it (CORR-029, CORR-030).
+
+## CORR-039 — I invented a DOI while adding a reference the atlas already held
+
+Adding `toydemir2006` (CATSHL syndrome) I wrote `doi: 10.1086/510020`. **The correct DOI is
+10.1086/508433**, and I know that because the atlas had held the reference since 2026-08-05 with the
+correct value. I did not look. I generated a plausible-looking AJHG DOI and typed it.
+
+**Two failures, and both are repeats.**
+
+1. **A fabricated identifier** — the CORR-032 class, where I constructed a PMCID from nothing and
+   fetched a crystallography paper. The rule from that entry was that identifiers are looked up, never
+   composed. I composed one.
+2. **Adding a reference the atlas already held** — the CORR-033/CORR-034 class. I searched Europe PMC
+   for CATSHL, found PMID 17033969, and added it without checking the bibliography for that PMID first.
+   The standing rule from CORR-034 is explicit: *before requesting or adding a source, check whether the
+   atlas already holds it — mechanically, by ref_id and by PMID, not from memory.*
+
+**What caught it: the duplicate-key loader, again** (CORR-033). That is the third defect it has caught,
+and the second one of mine in two rounds. Without it PyYAML would have silently kept my entry, and the
+atlas would now carry a **wrong DOI**, a `cited_by` reset from 112 to 0, and a fabricated `added` date —
+while looking clean.
+
+**Fixed by merging**, not by replacing: the original `added`, `cited_by: 112` and correct DOI are kept,
+and only the genuinely new content — the extracted adult heights and the full-text-read provenance — was
+added.
+
+**The gap in the machinery is now specific.** The validator catches a duplicate *key*. It does not catch
+the case that produced this: **a lookup by PMID that would have prevented the duplicate ever being
+written.** `addref.py` should refuse to add a record whose PMID or DOI already exists under a different
+ref_id, and should never accept a hand-typed DOI when a PMID is available to resolve it from.
