@@ -1,0 +1,154 @@
+id: the_exchange_rate_between_growth_and_pool_depletion
+name: Height is pool size TIMES yield per cell spent — and oestrogen lowers the yield while dexamethasone raises it
+type: process
+layer: L2
+stub: false
+summary: 'nilsson2014 is the direct test of this atlas''s central model and it returns a DISSOCIATION that reorganises
+  the therapeutic question. Juvenile ovariectomised rabbits got estradiol or vehicle for 5 weeks and were then LEFT
+  UNTREATED FOR 5 MORE - a washout, which is what makes irreversibility testable. WHAT CAME BACK: growth rate, chondrocyte
+  proliferation rate and hypertrophic cell size ALL NORMALISED. WHAT DID NOT: growth plate height, the number of proliferative
+  and hypertrophic chondrocytes, and THE NUMBER OF RESTING ZONE CHONDROCYTES all remained advanced, and transient
+  exposure hastened fusion permanently. OESTROGEN THEREFORE DOES TWO SEPARABLE THINGS - a REVERSIBLE suppression of
+  growth plate FUNCTION and an IRREVERSIBLE depletion of the POOL - and only the second is banked. AND THE CELLS DO
+  NOT DIE. TUNEL was negative; the resting zone empties by DIFFERENTIATION, not apoptosis, which is exactly what population
+  asymmetry predicts and what distinguishes this from tamoxifen, which kills them outright. THE MECHANISM THE AUTHORS
+  PROPOSE IS THE PART THAT MATTERS. Oestrogen decreases proliferation of resting zone chondrocytes WITHOUT delaying,
+  and possibly while accelerating, their differentiation out - so the pool drains faster than it refills. AND, in
+  their words, there are FEWER PROLIFERATIVE CHONDROCYTE REPLICATIONS PER LOST RESTING ZONE CHONDROCYTE. That is a
+  YIELD, and oestrogen lowers it. THEN THE COMPARISON THAT OPENS A DOOR: dexamethasone also slows resting zone proliferation
+  but, UNLIKE OESTROGEN, CONSERVES the number of resting zone chondrocytes, because it additionally inhibits their
+  differentiation to proliferative cells. THE EXCHANGE RATE BETWEEN GROWING AND SPENDING THE POOL IS THEREFORE NOT
+  FIXED - two hormones move it in opposite directions. Height is not pool size alone; it is POOL SIZE TIMES YIELD
+  PER CELL SPENT. Every intervention this atlas has examined changes the pool or the exit rate. NOTHING HAS EVER TARGETED
+  THE YIELD.'
+quantitative:
+- parameter: WHAT REVERSES AND WHAT DOES NOT, AFTER A FIVE-WEEK WASHOUT
+  value: 'REVERSIBLE - tibial growth rate, chondrocyte proliferation rate and hypertrophic cell size all normalised
+    5 weeks after stopping oestrogen. IRREVERSIBLE - growth plate height, number of proliferative chondrocytes per
+    column, number of hypertrophic chondrocytes and NUMBER OF RESTING ZONE CHONDROCYTES per mm growth plate width
+    all remained advanced; transient exposure hastened epiphyseal fusion'
+  unit: qualitative, reversibility
+  conditions: juvenile ovariectomised female rabbits from 11 weeks of age, weekly intramuscular estradiol cypionate
+    70 micrograms/kg or cottonseed-oil vehicle for 5 weeks, then 5 weeks untreated; proximal tibia and distal radius;
+    proliferation by BrdU-labelled cells per column
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: 'THE WASHOUT IS THE DESIGN FEATURE THAT MAKES THIS DECISIVE AND IT IS WHY THIS NODE EXISTS. Without
+    it, an advanced structural parameter could simply be ongoing suppression; with it, structure stays advanced while
+    function returns to normal in the same animals, which is a dissociation rather than a difference of degree. Limits:
+    five weeks is a washout, not a lifetime, so IRREVERSIBLE means not recovered within five weeks rather than never;
+    rabbit; a single oestrogen dose with no dose-response; and the resting zone cell count is per mm of growth plate
+    WIDTH, a density measure, so a fall could in principle reflect changed geometry rather than lost cells, though
+    the concurrent fall in every other structural parameter argues against that.'
+- parameter: THE RESTING ZONE EMPTIES BY DIFFERENTIATION, NOT BY DEATH
+  value: the percentage of TUNEL-positive resting zone chondrocytes did not account for the loss
+  unit: percent apoptotic
+  conditions: TUNEL staining of resting zone in oestrogen- and vehicle-treated animals
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: A NEGATIVE RESULT THAT CARRIES REAL WEIGHT BECAUSE IT SEPARATES TWO MECHANISMS THE ATLAS OTHERWISE
+    CONFLATES. Oestrogen empties the pool by recruitment; chagin2007's tamoxifen empties it by apoptosis. Same endpoint,
+    different route, and different reversibility profiles follow. TUNEL detects a brief window of late apoptosis, so
+    a slow trickle of death spread over five weeks could be missed entirely - this shows apoptosis is not the DOMINANT
+    route, not that it is absent.
+- parameter: OESTROGEN LOWERS THE YIELD — FEWER PROLIFERATIVE DIVISIONS PER RESTING CELL SPENT
+  value: fewer proliferative chondrocyte replications per lost resting zone chondrocyte during oestrogen exposure
+  unit: proliferative replications per resting zone cell consumed
+  conditions: inferred by the authors from the concurrent measurements of resting zone cell number and proliferative
+    chondrocytes per column in the same animals
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: 'THE MOST IMPORTANT QUANTITY IN THIS NODE AND THE ONE LEAST DIRECTLY MEASURED. It is a RATIO the authors
+    derive from two separately measured parameters in their discussion, not an experimental readout, and no number
+    is attached to it. This atlas records it because it names a variable nobody is optimising: the AMPLIFICATION FACTOR,
+    how much column growth is obtained per progenitor consumed. Height is pool size times yield, and the entire therapeutic
+    literature has worked on the first term. Recorded as a DERIVED INFERENCE from the authors, flagged as unquantified,
+    and it should not be treated as a measured parameter until someone measures it.'
+- parameter: AND DEXAMETHASONE MOVES THE EXCHANGE RATE THE OTHER WAY — IT CONSERVES THE POOL
+  value: dexamethasone slows resting zone chondrocyte proliferation but, unlike oestrogen, CONSERVES the number of
+    resting zone chondrocytes, apparently by additionally inhibiting differentiation of resting to proliferative chondrocytes
+  unit: qualitative, direction
+  conditions: cited by nilsson2014 from prior work in their reference 13; glucocorticoid excess and hypothyroidism
+    are both described as slowing resting zone chondrocyte depletion
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: 'THIS IS THE EXISTENCE PROOF THAT THE COUPLING BETWEEN GROWING AND SPENDING IS NOT FIXED, and it is
+    the single most encouraging sentence this atlas has recorded. Two hormones both slow resting zone proliferation;
+    one drains the pool and the other conserves it, because they differ in their effect on EXIT rather than on renewal.
+    THE COST IS THE OBVIOUS ONE - dexamethasone conserves the pool by suppressing growth, so it buys capacity by not
+    using it, which is not a height therapy. What it demonstrates is that exit rate is separately addressable from
+    renewal rate. RECORDED AT SECOND HAND: this is nilsson2014 citing another paper, which this atlas has not read,
+    so the primary evidence for pool conservation under dexamethasone is not held here.'
+- parameter: SENESCENCE IS GROWTH-DEPENDENT, NOT TIME-DEPENDENT — AND FOUR WEEKS OF INHIBITION BUYS ABOUT TWO
+  value: structural, functional AND molecular markers of growth plate senescence were all delayed by prior tryptophan
+    deficiency; the delay was approximately 2 weeks, similar in magnitude across structural and molecular markers
+  unit: weeks of senescence delayed
+  conditions: male rat pups made tryptophan deficient via the lactating mother from birth to 4 weeks of age, then
+    repleted and allowed to recover; molecular markers included Igf2, Asb4 and RxRg, which fall with senescence; the
+    design deliberately used a NON-endocrine growth inhibitor to test whether the earlier hypothyroid result was
+    thyroid-specific
+  species: rat
+  source_ref: forcinito2011
+  uncertainty: 'THE DESIGN IS THE ARGUMENT: tryptophan deficiency shares no mechanism with hypothyroidism or glucocorticoid
+    excess except that all three inhibit growth, so three unrelated inhibitors delaying senescence establishes that
+    senescence tracks GROWTH rather than TIME. That is the properly sourced version of a claim this atlas has carried
+    since Phase 1. THE ARITHMETIC IS SOBERING AND SHOULD BE STATED: four weeks of severe growth inhibition delayed
+    senescence by about two weeks, so the programme continued to run at a substantial fraction of normal speed while
+    growth was suppressed. Growth inhibition does not freeze the clock, it slows it - and this atlas has no measurement
+    of how much growth was actually lost, so the exchange rate cannot be computed from what is recorded here.'
+localization:
+- resting zone, and the resting-to-proliferative transition
+human_evidence: absent
+human_evidence_note: Rabbit and rat throughout. The human connection is indirect and this atlas holds it separately -
+  catch-up growth after coeliac disease follows a pattern consistent with delayed senescence, and the KIGS pattern
+  of a front-loaded GH response with a saturating endpoint is what a fixed integrated capacity spent at an adjustable
+  rate looks like. No human measurement of resting zone cell number over time exists.
+species_basis:
+- rabbit
+- rat
+translation_risk: moderate
+translation_risk_reason: Rabbit is the right species for fusion and the washout design is strong, but every quantity
+  here is animal, the yield term is derived rather than measured, and the dexamethasone comparison is second-hand.
+confidence: B
+confidence_note: B. The reversible-versus-irreversible dissociation is carried by a washout in a controlled design
+  with concurrent measurement of both classes of parameter in the same animals, which is a strong structure, and the
+  growth-dependence claim is supported by three mechanistically unrelated growth inhibitors. It is not A because the
+  yield term - the quantity the node is named for - is an inference in a discussion rather than a measurement, because
+  the dexamethasone result is cited rather than read, because there is one dose and one species per experiment, and
+  because five weeks of washout cannot establish permanence. It is not C because the central dissociation is directly
+  measured and because the resting zone loss was tested against apoptosis rather than assumed.
+key_refs:
+- ref_id: nilsson2014
+  pmid: '24708243'
+  first_author: Nilsson O
+  year: 2014
+  type: primary
+  one_line_finding: After a 5-week washout, oestrogen's suppression of growth rate, proliferation rate and hypertrophic
+    cell size fully reversed while growth plate structure and resting zone cell number stayed depleted - and the cells
+    were lost by differentiation, not apoptosis.
+- ref_id: forcinito2011
+  pmid: '20974641'
+  first_author: Forcinito P
+  year: 2011
+  type: primary
+  one_line_finding: Tryptophan deficiency, sharing no mechanism with hypothyroidism or glucocorticoid excess except
+    growth inhibition, delayed structural, functional and molecular senescence markers by about 2 weeks - so senescence
+    tracks growth, not time.
+- ref_id: weise2001
+  pmid: '11381135'
+  first_author: Weise M
+  year: 2001
+  type: primary
+  one_line_finding: Fusion occurs when chondrocyte proliferation approaches zero, and oestrogen accelerates a
+    spontaneous programme rather than initiating it.
+- ref_id: chu2025
+  pmid: '41289405'
+  first_author: Chu NTL
+  year: 2025
+  type: primary
+  one_line_finding: Growth plate stem cells renew by population asymmetry and GH drives them into committed division,
+    depleting the pool.
+open_questions:
+- g_l2_raise_the_yield_per_progenitor
+- g_l2_larger_pool_with_intact_flux
+last_verified: '2026-08-07'

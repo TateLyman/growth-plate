@@ -2127,3 +2127,39 @@ back to contradict it.
 in the same turn, or do not use it. And where an identifier must be used to retrieve something,
 **verify the retrieved content is the intended paper before extracting from it** — which here cost one
 call and saved a fabricated finding.
+
+---
+
+## CORR-033 — I created three duplicate bibliography entries and the validator could not see them
+
+Adding `nilsson2014`, `lui2018` and `weise2001`, I did not check whether the atlas already held them. **It
+held all three** — added 2026-08-05, with citation counts of 56, 55 and 220. My insertion routine places
+a new block at its alphabetical position, which put each duplicate immediately after the original.
+
+**PyYAML silently keeps the LAST of a repeated key.** So the file parsed cleanly, the validator reported
+zero errors, and the atlas's loaded bibliography quietly replaced three well-attested entries with my
+newer, thinner ones — discarding their citation counts and their existing provenance.
+
+**This is CORR-025 recurring, and the reason it recurred is that CORR-025 was fixed as a fact and not as
+a check.** That entry ended with "check the bibliography for the key before minting it," a rule that
+depends on me remembering. I did not. The one thing that caught the earlier collision was the
+validator's PMID-mismatch test, and it only fired because the two entries pointed at *different papers*;
+here the duplicates pointed at the *same* paper, so nothing disagreed and nothing fired.
+
+**Fixed twice over.** The three entries were merged — original kept, with the full-text note from mine
+grafted on and `has_full_text` corrected — and `atlas/tools/validate.py` now loads every YAML file
+through a `SafeLoader` subclass that **raises on any duplicate mapping key** rather than silently
+keeping the last. Planting a test duplicate confirms it fires; running it against the real bibliography
+is what surfaced `weise2001`, which I had not noticed at all.
+
+**The general lesson, and it is the one this log keeps arriving at.** A rule written in prose is not a
+control. Of the citation defects recorded here, every one that was *caught* was caught by a mechanical
+check — the validator, or a fetched document that could not be the paper. Every one that *escaped*
+escaped through a channel with no check on it. **When a correction identifies a class of error, the
+repair is a test, not a resolution.**
+
+**A provenance note.** The pre-existing `nilsson2014` and `weise2001` were both flagged
+`has_full_text: true` before this session, and neither had been read — the same defect as `byers2000`,
+`carani1997` and `maffei2007`. That flag has now been wrong on five separate references, which makes it
+an unreliable field rather than an unlucky one; it should be replaced by something that cannot be set
+without evidence, such as a required extraction note.

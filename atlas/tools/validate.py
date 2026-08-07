@@ -37,11 +37,39 @@ GAP_QUOTA_HARD_TYPES = {"search_established", "quantitative_gap"}
 GAP_QUOTA_HARD_MIN = 3
 
 
+class _DupKeyLoader(yaml.SafeLoader):
+    """SafeLoader that refuses duplicate mapping keys.
+
+    PyYAML silently keeps the LAST of a repeated key, so a second entry for an
+    existing ref_id or gap_id parses cleanly and overwrites the first with no
+    error anywhere. That is how a bibliography entry was silently rebound
+    (CORR-025) and how two refs were duplicated with the originals' citation
+    counts discarded (CORR-033). Duplicate keys are now a hard error.
+    """
+
+
+def _no_duplicate_keys(loader, node, deep=False):
+    mapping = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        if key in mapping:
+            raise yaml.constructor.ConstructorError(
+                "while constructing a mapping", node.start_mark,
+                f"duplicate key {key!r} - PyYAML would silently keep the last one",
+                key_node.start_mark)
+        mapping[key] = loader.construct_object(value_node, deep=deep)
+    return mapping
+
+
+_DupKeyLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _no_duplicate_keys)
+
+
 def load(path, default=None):
     if not os.path.exists(path):
         return default
     with open(path) as f:
-        return yaml.safe_load(f) or default
+        return yaml.load(f, Loader=_DupKeyLoader) or default
 
 
 class Report:
