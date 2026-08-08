@@ -118,9 +118,28 @@ def add_one(bib, pmid=None, doi=None, tier=None, rtype=None, finding=None,
         # ref_id, so the guard refused every possible id and forced the UNGUARDED
         # path for exactly the authors whose names are easiest to mistype. Strip
         # non-alpha characters before comparing.
-        raw_surname = first_author.split()[0].lower() if first_author else ""
-        got_surname = re.sub(r"[^a-z]", "", raw_surname)
-        if want and (want.group(1) != got_surname or want.group(2) != year):
+        # CORR-090. Third instance of this guard misfiring (CORR-056 Caetano-Silva,
+        # CORR-076 Komla-Ebri, now De Benedetti). Europe PMC renders the author string
+        # surname-first, so `.split()[0]` takes only the FIRST token - "De" out of
+        # "De Benedetti F" - and any sensible ref_id is refused. A surname may be
+        # several tokens; the initials are the terminator. Accept any prefix of the
+        # concatenated pre-initial tokens, so both 'de2015' and 'debenedetti2015' pass.
+        toks = first_author.split() if first_author else []
+        name_toks = []
+        for tok in toks:
+            # initials look like "F", "F.", "FJ", "F.J." - short and all-caps
+            bare = re.sub(r"[^A-Za-z]", "", tok)
+            if bare and bare.isupper() and len(bare) <= 3 and name_toks:
+                break
+            name_toks.append(tok)
+        surname_variants = set()
+        joined = re.sub(r"[^a-z]", "", "".join(name_toks).lower())
+        if joined:
+            surname_variants.add(joined)
+        if name_toks:
+            surname_variants.add(re.sub(r"[^a-z]", "", name_toks[0].lower()))
+        surname_variants.discard("")
+        if want and (want.group(1) not in surname_variants or want.group(2) != year):
             return None, (f"REFUSED (--ref-id does not match the resolved record): you "
                           f"asked for '{force_id}' but {pmid or doi} resolves to "
                           f"{first_author} {year}, '{rec.get('title','')[:70]}...'. "

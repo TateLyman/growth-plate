@@ -4069,3 +4069,48 @@ SOCS3 docking site. If that is right, RCGD 423 engages the same arm chronic infl
 would behave at a growth plate like the JIA phenotype rather than like the Stat3C phenotype. The two
 candidate mechanisms for this molecule map exactly onto the two gp130 output arms that the human and mouse
 evidence already pull apart.
+
+---
+
+## CORR-090 — the addref identity guard has now misfired three times on the same class of name
+
+`--pmid 25504861 --ref-id debenedetti2015` was **refused**: "resolves to De Benedetti F 2015". Europe PMC
+renders `authorString` surname-first, and the guard took `first_author.split()[0]` — **"De"** — so the only
+ref_id it would accept was `de2015`, which is useless as an identifier.
+
+This is the third instance: CORR-056 flagged it for *Caetano-Silva*, CORR-076 fixed the hyphen case for
+*Komla-Ebri* by stripping non-alpha characters, and neither noticed that the tokenisation itself is wrong
+for **multi-word surnames**. A surname may be several tokens; the *initials* are the terminator. The guard
+now walks tokens until it hits something short and all-caps, and accepts either the first token or the full
+concatenation — so `de2015` and `debenedetti2015` both pass, `vandereerden2020` passes, and `smith1994`
+still rejects `jones1994`.
+
+Verified against De Benedetti, Komla-Ebri, Caetano-Silva, Smith and van der Eerden. The entry created as
+`de2015` has been renamed to `debenedetti2015`.
+
+## CORR-091 — the RCGD 423 "contradiction" was substantially a naming collision, and I spent two rounds treating it as a mechanistic dispute
+
+Rounds 89, 90 and 91 held the sign of RCGD 423 as the blocking question on the strongest new axis in the
+project — `shkhyan2018`/`sarkar2023`/`liu2022gp130` calling it a STAT3 activator, `he2024gp130` reporting
+Y759/SHP2/SOCS3 recruitment that *inhibits* STAT3. Round 91 sharpened this into an argument that the two
+mechanisms map onto the two gp130 output arms.
+
+The patent family says the scaffold produces **both signs, by analogue**. WO2019169135A1 Figure 19A-B sorts
+test chemicals into **activators, neutral effectors and inhibitors of pSTAT3 and MYC** in porcine
+chondrocytes by Western blot, and Figure 20 states plainly that **"423F is the positive control drug"** for
+the activating phenotype. The inhibitory analogues bind the *same pocket* — CX-011/B8 is predicted to bind
+where RCGD423 binds while locking domain 2 into a non-permissive conformation, and molecule 826 inhibits
+downstream JAK2, **SHP2**, NF-κB and SRC.
+
+And the patents name **MPA-1/RCGD 423F**, **MPA-2/RCGD 423N** and **MPA-4/RCGD 423/RCGD 423B** as *distinct
+compounds*. `sarkar2023` used "423F"; `he2024gp130` used "RCGD423". **If those are different members of the
+family, both groups may be reporting correctly about different molecules** — and the atlas built three
+rounds of argument on the assumption that a shared informal name meant a shared chemical entity.
+
+The practical consequence is larger than the correction: **any sourcing of this molecule must specify which
+analogue**, because two of them do opposite things at the same pocket. What is still missing is unchanged —
+an independent pSTAT3 measurement on a named, CAS-identified compound.
+
+Chemical identity now held: **423F = N-(4-fluorophenyl)-4-phenylthiazol-2-amine**, C15H11FN2S, **270.3 Da**
+— below fluorescein, so firmly on the plateau of the growth-plate partition curve. Matrix entry is not a
+limiting step for this compound.
