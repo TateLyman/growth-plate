@@ -3882,3 +3882,69 @@ One thing the round-87 request did not get: **osk2026 reports WGBS as differenti
 gives no global 5mC percentage anywhere.** The single number asked for does not exist in the paper. The
 DNMT-expression directions substitute for it, and they agree, which is why this is graded resolved rather
 than suggestive.
+
+---
+
+## CORR-083 — I called the LB-100 combination "supra-additive". Read directly, it is additive.
+
+`every_axis_checked_against_the_stack` ranked PP2A inhibition as the top unhit item and described it as a
+"DEMONSTRATED SUPRA-ADDITIVE EFFECT". shuhaibar2021 read in full gives the three growth ratios, and they
+do not support that word.
+
+| treatment | growth ratio vs vehicle | excess over vehicle |
+|---|---|---|
+| BMN-111 alone | 1.78 | 0.78 |
+| LB-100 alone | **1.30** | 0.30 |
+| BMN-111 + LB-100 | 2.06 | 1.06 |
+
+Additive on the excess predicts 1 + 0.78 + 0.30 = **2.08**. Observed **2.06**. Multiplicative would
+predict 1.78 × 1.30 = 2.31. The combination is almost exactly **additive and clearly sub-multiplicative**.
+The paper's own figure title says the two "act synergistically"; the numbers in its own results section do
+not, and this atlas should have checked rather than inherited the word.
+
+Three further things the full text changes, and one of them may disqualify the lead for *this* stack:
+
+- **It is E16.5 fetal femur in 6-day organ culture**, in `Fgfr3`^Y367C/+ — embryonic, ex vivo, in an
+  achondroplasia background. Not a live animal and not wild-type.
+- **The useful number was the one nobody quoted**: LB-100 *alone* gave 1.30×. Since our stack contains an
+  FGFR inhibitor rather than a CNP analogue, the monotherapy figure is the relevant one.
+- **The redundancy risk is real.** LB-100's stated mechanism is to counteract *FGF-induced* dephosphorylation
+  of NPR2. If FGFR3 is already blocked by erdafitinib, much of that substrate is gone — which would make
+  LB-100 + erdafitinib a stack *within* one control point, the thing this atlas's own rule forbids. Basal
+  PPP-family activity may persist independently of FGF, so this is a risk rather than a refutation, but it
+  reverses the round-86 framing of LB-100 as the ideal partner.
+
+## CORR-084 — the CB-839 rescue has no length endpoint, verified at source-data level, and its BMD effect is bimodal
+
+Round 88 stated that yanagihara2025 measured no bone length under CB-839. The Source Data file confirms it
+directly: the CB-839 in vivo experiment appears only as `Figure 5G` (Tb.BMD, Tb.N, Tb.Sp, Tb.Th) and
+`Figure 5H` (Ct.BMD, Ct.Th). **There is no length sheet for that cohort anywhere in the workbook.** The
+caveat is now verified rather than inferred.
+
+The source data also shows something the bar chart cannot. Tb.BMD, per animal:
+
+- DMSO: 85.3, 87.6, 104.3, 108.0, 120.9, 156.7 (mean 110.5)
+- CB-839: **51.2, 55.1, 56.1**, **96.5, 98.9, 99.3** (mean 76.2)
+
+The CB-839 group is **perfectly bimodal** — three animals at ~51–56 and three at ~96–99, and the second
+triplet sits squarely inside the DMSO range. Welch *t* = 2.35, df ≈ 9.9. The reported significant decrease
+is carried entirely by three of six animals with nothing in between. That is an all-or-nothing split, not a
+graded drug effect, and with n = 6 it is a weak foundation for the paper's causal claim. Ct.BMD was
+genuinely unchanged (*t* = −0.66).
+
+Independently verified from the same file: tibial length at 1 week 5.75 vs 3.59 mm = **62.4 %**, and at 16
+weeks 15.83 vs 7.08 mm = **44.7 %** — confirming CORR-080 at source-data level.
+
+## CORR-085 — the gain-of-function I asked for does not exist, and the direction it points is oncogenic
+
+Round 88 named the missing experiment: does *raising* maintenance methylation lengthen bone, or does it only
+prevent the null phenotype? `dev157412` (Yamashita 2018, the Uhrf1 paper) is the closest available and it is
+**loss-of-function only** — Prx1-Cre conditional knockout, no overexpression arm, no gain-of-function bone
+length in any species for either DNMT1 or UHRF1.
+
+Worse for the axis, that paper's own introduction supplies the reason nobody has run it: **Uhrf1
+overexpression is associated with progression of breast, pancreatic, bladder and colon cancer**, acting by
+dysregulating promoter methylation to facilitate proliferation. The direction this atlas needs on the
+maintenance-methylation axis is an oncogenic direction — structurally the same problem the pool term already
+has, where all three control points (SMO, mTORC1, the PDGFRA-positive perichondrium) are tumour-suppressor
+adjacent.

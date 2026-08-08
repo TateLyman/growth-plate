@@ -1,0 +1,194 @@
+id: gp130_stat3_controls_pool_and_fusion
+name: gp130/STAT3 is the first axis found that controls the progenitor pool AND fusion timing together, postnatally and chondrocyte-autonomously - and its small molecule has a contested sign
+aliases:
+- the gp130 lead
+- RCGD 423 / 423F
+- STAT3 in the growth plate
+type: pathway
+layer: L3
+stub: false
+summary: 'THIS IS THE STRONGEST NEW LEAD IN THE PROJECT AND IT LANDS ON THE TERM THE ROUND-86 COVERAGE
+  AUDIT CALLED COMPLETELY UNHIT. liu2022gp130 deleted Stat3 in chondrocytes POSTNATALLY and got SEVERELY
+  REDUCED PROLIFERATION, INCREASED HYPERTROPHY, GROWTH PLATE FUSION AND STUNTING, with progressive
+  articular dysfunction. Chondrocyte-specific deletion of gp130, the IL-6-family co-receptor that
+  activates Stat3, PHENOCOPIED it; deleting Lifr, one of many gp130 co-receptors, gave a milder
+  phenotype. The authors frame the tissue exactly as this atlas does - "growth of long bones and
+  vertebrae is maintained postnatally by a long-lasting pool of progenitor cells" - and conclude that
+  IL-6 family cytokines have a PIVOTAL POSITIVE function in the skeleton. WHY THAT MATTERS MORE THAN
+  ANOTHER PATHWAY. Every other candidate in this atlas moves ONE term. This one moves two that the
+  atlas had been treating as separate arms: losing it costs proliferation (the pool and amplification
+  terms) AND closes the plate (the duration term). Nothing else held here does both, and it does them
+  CHONDROCYTE-AUTONOMOUSLY and POSTNATALLY - not from the limb bud, which is the caveat that weakened
+  the Dnmt1 and Uhrf1 results. THE MOLECULE EXISTS AND IS PATENTED. shkhyan2018 screened 170,000
+  compounds and found RCGD 423, a small-molecule gp130 modulator, which INCREASED PROLIFERATION while
+  REDUCING APOPTOSIS AND HYPERTROPHY in adult chondrocytes - the exact profile a growth plate wants.
+  It is the same compound sarkar2023 calls "the STAT3 agonist 423F". AND ITS SIGN IS CONTESTED, WHICH
+  IS THE REASON THIS NODE IS GRADED D RATHER THAN B. he2024gp130 reports that RCGD423 drives gp130
+  homodimerisation and phosphorylation of Y759, that Y759 RECRUITS SHP2 AND SOCS3 AND INHIBITS
+  ACTIVATION OF THE STAT3 PATHWAY, and that its effects run through ERK and AKT. Two groups, one
+  molecule, opposite claims about whether STAT3 goes up or down. IF he2024gp130 IS RIGHT, THEN GIVING
+  RCGD 423 TO A GROWING PLATE WOULD REPRODUCE THE liu2022gp130 DELETION PHENOTYPE - reduced
+  proliferation, increased hypertrophy, PREMATURE FUSION. That is the same class of sign error CORR-082
+  caught on the methylation axis one round ago, and it must be resolved before this is treated as a
+  candidate rather than a question. NO GROWTH PLATE, NO BONE LENGTH, NO GROWING ANIMAL HAS EVER SEEN
+  THIS MOLECULE.'
+quantitative:
+- parameter: 'POSTNATAL chondrocyte-specific Stat3 deletion - the phenotype, and it is both terms at once'
+  value: severely reduced proliferation, increased hypertrophy, GROWTH PLATE FUSION, stunting
+  unit: qualitative
+  conditions: postnatal chondrocyte-specific deletion of Stat3 in mouse; chondrocyte-specific deletion of
+    gp130 phenocopied it; deletion of Lifr, one of many co-receptors signalling through gp130, produced a
+    MILDER phenotype. The effect is sexually dimorphic, with females more strongly affected than males.
+    Articular cartilage showed signs of progressive dysfunction in the same animals
+  species: mouse
+  source_ref: liu2022gp130
+  uncertainty: 'THE DESIGN IS BETTER THAN ANYTHING ELSE THIS ATLAS HOLDS ON THE POOL TERM AND THAT IS WHY
+    IT MATTERS: it is POSTNATAL and CHONDROCYTE-SPECIFIC, so it does not carry the developmental
+    confound that weakens the Dnmt1 (Prrx1-Cre limb bud) and Uhrf1 results, and the gp130 deletion
+    phenocopying the Stat3 deletion makes the receptor-to-transcription-factor link genetic rather than
+    pharmacological. WHAT IT IS NOT: a LOSS-of-function result, so it establishes that the pathway is
+    REQUIRED and says nothing about whether MORE of it grows a longer bone. The atlas has made exactly
+    that leap before and been wrong. The sexual dimorphism is unexplained and is a warning that the
+    pathway interacts with sex steroid, which is the arm anastrozole is already acting on. And no bone
+    length is reported here in a gain-of-function direction because no gain-of-function was run.'
+- parameter: 'THE MOLECULE - a gp130 modulator from a 170,000-compound screen, with the right in vitro
+    profile and the wrong tissue'
+  value: increased proliferation, reduced apoptosis, reduced hypertrophic responses
+  unit: qualitative, adult chondrocytes in vitro
+  conditions: RCGD 423 (Regulator of Cartilage Growth and Differentiation), identified by high-throughput
+    screening of 170,000 compounds for the ability to decrease a hypertrophy reporter; described as
+    biasing gp130 signalling toward the anti-inflammatory and pro-regenerative output. Tested in adult
+    chondrocytes in vitro and in a rat partial meniscectomy model. This is the compound sarkar2023 applied
+    to aged human chondrocytes as "the STAT3 agonist 423F", where it lowered predicted methylation age in
+    5 of 6 donors
+  species: rat
+  source_ref: shkhyan2018
+  uncertainty: 'THE PROFILE IS THE ONE A GROWTH PLATE WANTS - more proliferation, less hypertrophy - AND
+    IT HAS NEVER BEEN NEAR A GROWTH PLATE. Every experiment is adult articular cartilage or a joint
+    injury model. NO BONE LENGTH ENDPOINT EXISTS FOR THIS MOLECULE IN ANY SPECIES, and no growing animal
+    has received it. Two further limits. The osteoarthritis programme selects for compounds that REDUCE
+    hypertrophy, which is desirable in a joint and is only conditionally desirable in a growth plate,
+    where terminal hypertrophy is the step that produces the height. And the sarkar2023 methylation
+    result, which is the only human data on the molecule, moves methylation in the ARTICULAR direction -
+    which CORR-082 established is the reverse of the growth plate direction.'
+- parameter: 'THE SIGN CONTRADICTION - two groups, one molecule, opposite claims about STAT3'
+  value: STAT3 agonist versus SHP2/ERK activator that INHIBITS STAT3
+  unit: qualitative, direction
+  conditions: 'shkhyan2018 and sarkar2023 (same laboratory) describe RCGD 423 / 423F as biasing gp130
+    toward STAT3 and use it as a STAT3 AGONIST. he2024gp130 (independent group) reports that RCGD423
+    drives gp130 homodimerisation and phosphorylation of residue Y759 without IL-6 or IL-6R, that
+    phosphorylated Y759 recruits SHP2 and SOCS3 and INHIBITS activation of the STAT3 pathway, and that
+    the functional effects run through ERK and AKT. A third paper from the originating group
+    (Science Translational Medicine 2023) describes a DIFFERENT molecule, R805, acting by INHIBITING
+    gp130 Y814 upstream of SRC and MAPK'
+  species: multiple
+  source_ref: he2024gp130
+  uncertainty: 'THIS IS DECISIVE AND UNRESOLVED. gp130 has multiple phosphotyrosines with opposing
+    outputs - the STAT3 arm and the Y759-SHP2-RAS-MAPK arm - so "modulator" is doing a great deal of work
+    and a molecule that biases between them can be described accurately as an agonist of one and an
+    inhibitor of the other. THE CONSEQUENCE FOR THIS PROJECT IS ASYMMETRIC AND THAT IS WHY IT BLOCKS.
+    If RCGD 423 raises STAT3 output, it is pointed at the liu2022gp130 phenotype from the protective
+    side. If he2024gp130 is right that it suppresses STAT3, then in a growth plate it would move toward
+    the DELETION phenotype - reduced proliferation, increased hypertrophy, PREMATURE FUSION - which is
+    the worst possible outcome for a bone-age-16 subject and would be indistinguishable from doing
+    nothing until the plate had already closed. CORR-082 caught exactly this class of error on the
+    methylation axis one round earlier. The atlas does not adopt this molecule until the direction is
+    measured in chondrocytes with a STAT3 phosphorylation readout.'
+- parameter: 'THE METABOLIC READING OF THE SAME TERM - glycolytic flux holds a stem pool, oxidative flux
+    spends it, and MPC1 is the switch'
+  value: Ldha deletion PREVENTED stem cell activation; Mpc1 deletion ACCELERATED it
+  unit: qualitative, direction
+  conditions: 'flores2017, mouse hair follicle stem cells - HFSCs use glycolytic metabolism and produce
+    significantly more lactate than other epidermal cells; deleting lactate dehydrogenase Ldha prevented
+    their activation; genetically promoting lactate by deleting the mitochondrial pyruvate carrier Mpc1
+    accelerated activation; and small molecules raising lactate by stimulating Myc or INHIBITING MPC1
+    reproduced the effect topically. Set against yanagihara2025, where Dnmt1-null chondrocytes show
+    INCREASED oxygen consumption, ATP production and nearly all TCA metabolites, and differentiate and
+    calcify PREMATURELY with arrested elongation'
+  species: mouse
+  source_ref: flores2017
+  uncertainty: 'TWO COMPLETELY INDEPENDENT TISSUES POINT THE SAME WAY AND THAT IS THE WHOLE VALUE OF THE
+    ROW: glycolytic flux is the progenitor state, oxidative flux is the differentiating state. It gives
+    the yanagihara2025 result a reading beyond its own model - the Dnmt1-null plate is not merely
+    dysregulated, it is METABOLICALLY PUSHED OUT OF THE PROGENITOR STATE - and it names a druggable
+    node, MPC1, for which tool compounds exist and which nothing in this atlas has touched. THE LIMITS
+    ARE SEVERE AND THE ROW IS GRADED E. Hair follicle is not growth plate; no MPC inhibitor has ever
+    been given to a growth plate in any species; the growth plate resting zone is already hypoxic and
+    glycolytic at baseline, so it may have no headroom on this axis at all; and pushing a plate further
+    toward the progenitor state could as easily mean LESS terminal hypertrophy, which is the term that
+    produces the height. It is a hypothesis with a named target, not a candidate.'
+localization:
+- 'growth plate: liu2022gp130 deleted Stat3 and gp130 in chondrocytes postnatally and got fusion'
+- 'articular cartilage: where every RCGD 423 experiment was actually done'
+human_evidence: absent
+human_evidence_note: The genetics are mouse and the molecule has been tested in rat, canine and adult
+  human articular chondrocytes in culture. No human growth-plate or stature data exist for this axis, and
+  the only human experiment with the molecule measured methylation age rather than growth.
+species_basis:
+- mouse
+- rat
+- human
+translation_risk: high
+translation_risk_reason: The axis is defined entirely by loss-of-function in mouse; the molecule has a
+  contested mechanism, has never been given to a growing animal, and was optimised against a hypertrophy
+  reporter in a disease where suppressing hypertrophy is the goal - the opposite of what a growth plate
+  needs from its terminal zone.
+confidence: D
+confidence_note: D. The genetic result is strong and unusually well designed - postnatal,
+  chondrocyte-specific, with a receptor deletion phenocopying the transcription factor deletion. But
+  everything that would make it actionable is missing or contested - it is loss-of-function only, the
+  molecule's sign is disputed between two groups, and no bone length endpoint exists for the axis in any
+  species. Not C, because the sign contradiction is not a detail - it determines whether the compound
+  helps or causes premature fusion.
+claim_grades:
+- claim: gp130/STAT3 signalling is required postnatally in chondrocytes for growth plate proliferation
+    and for keeping the plate open.
+  grade: B
+  basis: Postnatal chondrocyte-specific deletion of Stat3, phenocopied by chondrocyte-specific deletion
+    of gp130, with a graded milder phenotype for Lifr. Mouse only, loss-of-function only.
+- claim: Raising gp130/STAT3 output would lengthen bone.
+  grade: E
+  basis: No gain-of-function experiment exists, in any species, with any endpoint. This is the inverse
+    inference from a requirement result and the atlas has made that error before.
+- claim: RCGD 423 raises STAT3 output.
+  grade: E
+  basis: Asserted by the originating laboratory in two papers, contradicted by an independent group
+    reporting Y759-SHP2 recruitment that inhibits STAT3. Unresolved.
+key_refs:
+- ref_id: liu2022gp130
+  first_author: Liu NQ
+  year: 2022
+  type: primary
+  one_line_finding: Postnatal chondrocyte-specific Stat3 deletion causes reduced proliferation, increased
+    hypertrophy, growth plate FUSION and stunting; gp130 deletion phenocopies it.
+- ref_id: shkhyan2018
+  first_author: Shkhyan R
+  year: 2018
+  type: primary
+  one_line_finding: RCGD 423, a gp130 modulator from a 170,000-compound screen, increases chondrocyte
+    proliferation and reduces hypertrophy in vitro - no growth plate, no length endpoint.
+- ref_id: he2024gp130
+  first_author: He Y
+  year: 2024
+  type: primary
+  one_line_finding: Reports RCGD423 phosphorylating gp130 Y759, recruiting SHP2 and SOCS3 and INHIBITING
+    STAT3 - the opposite mechanism to the originating group's claim.
+- ref_id: flores2017
+  first_author: Flores A
+  year: 2017
+  type: primary
+  one_line_finding: Glycolytic lactate production activates a stem pool and Mpc1 deletion accelerates it -
+    naming MPC1 as a switch between progenitor and differentiating metabolic states.
+- ref_id: sarkar2023
+  first_author: Sarkar A
+  year: 2023
+  type: primary
+  one_line_finding: The same molecule, called 423F, lowered predicted methylation age in 5 of 6 aged human
+    chondrocyte donors - in the articular direction, which CORR-082 established is the reverse of the
+    growth plate's.
+open_questions:
+- g_l2_pool_preservation_versus_pool_expansion
+- g_l2_larger_pool_with_intact_flux
+- g_l7_residual_physeal_reserve_at_late_bone_age
+contradicts: []
+last_verified: '2026-08-08'
