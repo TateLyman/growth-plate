@@ -47,12 +47,21 @@ summary: 'THREAD 3 SAYS THE CNP ARM IS CAPPED BY A SYSTEMIC EXPOSURE MARGIN WHIL
   cartilage-targeted ligand would. It buys tissue selectivity ONLY IF the ligand it amplifies is
   distributed unevenly - that is, only if the plate carries a higher local CNP concentration than the
   vasculature does.
-  WHICH MAKES THE UNRESOLVED QUESTION THE CRUX RATHER THAN A CURIOSITY. Whether the growth plate PRODUCES
-  its own CNP or merely CONSUMES what arrives is exactly the question cnp_zonal_system.py was written to
-  test and could not answer - see CORR-114. If the plate is a local producer, a PAM is preferentially a
-  growth-plate drug and this becomes the best entry in the atlas. If the plate is a consumer of a
-  circulating ligand that bathes the vasculature at the same concentration, a PAM amplifies the liability
-  and the efficacy in the same ratio, and it is worth little. The same measurement decides both.'
+  THE CRUX WAS MEASURED IN THE SAME ROUND AND THE ANSWER DEMOTES THIS NODE. Whether the plate PRODUCES
+  its own CNP or merely CONSUMES what arrives decides whether a PAM is selective. It is now measured:
+  the_plate_consumes_cnp_it_does_not_make_it reports NPPC at array floor across all five microdissected
+  compartments of the human growth plate, perichondrium included, on a platform that detects PTHLH at
+  308.6 and GDF5 at 603.8 while NPPC never exceeds 19.8. THE PLATE IS A CONSUMER. With no local
+  production, plate ligand cannot exceed vascular ligand, so a systemic PAM raises signalling at the
+  vascular liability at least as much as at the target and approximates a dose increase - the one thing
+  the cardiovascular margin forbids. THE SELECTIVITY ARGUMENT FOR THIS ROUTE IS GONE.
+  WHAT IS LEFT OF IT, HONESTLY. Two things, and neither is established here. FIRST, the human dose-response
+  in receptor activity (jeong2026) is untouched by the measurement - NPR2 gain still maps onto stature
+  near-linearly, so the TARGET is not in question, only the delivery logic that made a PAM attractive over
+  a ligand. SECOND, a small molecule may accumulate in cartilage on its own physicochemistry, cartilage
+  being densely polyanionic, which would restore selectivity by a completely different mechanism. That is
+  a property of a specific compound, MCUF-42 has not been characterised for it, and it is the only route
+  by which this node returns to the top of the list.'
 quantitative:
 - parameter: 'NPR2 RECEPTOR ACTIVITY MAPS NEAR-LINEARLY ONTO ADULT STANDING HEIGHT IN HUMANS'
   value: 'R squared 0.438, P = 5.8e-10, across 245 functionally scored missense variants'
@@ -127,12 +136,17 @@ claim_grades:
     GC-B/CNP binding affinity. Graded B rather than A because this is a single report of a single tool
     compound with no independent replication located, and the atlas has not read the full text.
 - claim: An NPR2 PAM would preferentially act on the growth plate rather than on vasculature.
-  grade: E
-  basis: 'INFERENCE ONLY, AND IT DEPENDS ENTIRELY ON AN UNRESOLVED MEASUREMENT. A PAM amplifies where
-    ligand meets receptor. It is growth-plate-selective only if local CNP concentration at the plate
-    exceeds that at the vasculature, which requires the plate to be a local PRODUCER of CNP. That question
-    was tested this round and the test was VOID - see CORR-114 and
-    g_l12_does_the_human_plate_produce_its_own_cnp.'
+  grade: X
+  basis: 'THE MEASUREMENT CAME BACK AND IT GOES AGAINST THIS. A PAM amplifies where ligand meets receptor,
+    so it is growth-plate-selective only if local CNP at the plate exceeds CNP at the vasculature, which
+    requires the plate to be a local PRODUCER. the_plate_consumes_cnp_it_does_not_make_it measured NPPC
+    across five microdissected compartments of the human growth plate INCLUDING PERICHONDRIUM, on a
+    platform that detects PTHLH and GDF5, and found it at floor everywhere - maximum 19.8 against PTHLH
+    308.6 and GDF5 603.8. With no local production, plate ligand cannot exceed vascular ligand, and a
+    systemic PAM approximates a DOSE INCREASE - precisely what the cardiovascular margin in thread 3
+    forbids. THE SELECTIVITY ARGUMENT IS DEAD. What survives is a different and untested one: that a
+    small molecule might accumulate in cartilage on its own physicochemistry, cartilage being polyanionic.
+    MCUF-42 has not been characterised for that and this node does not assert it.'
 - claim: A small molecule would solve the delivery deficit that thread 3 describes.
   grade: D
   basis: 'farnum2006 puts 332 Da at roughly 100 per cent partition into the plate against about 60 per
@@ -160,5 +174,6 @@ key_refs:
     entirely in cardiac fibroblasts
 open_questions:
 - g_l12_does_the_human_plate_produce_its_own_cnp
+- g_l12_does_a_small_molecule_accumulate_in_cartilage
 contradicts: []
 last_verified: '2026-08-08'

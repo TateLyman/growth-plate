@@ -1,0 +1,162 @@
+id: the_plate_consumes_cnp_it_does_not_make_it
+name: THE MEASUREMENT - the human growth plate does not transcribe NPPC in any zone including
+  perichondrium, so it consumes circulating CNP while expressing the machinery to destroy it
+aliases:
+- does the growth plate make its own CNP
+- is the plate a producer or consumer of CNP
+- NPPC in human growth plate
+- GSE9160 NPPC
+type: process
+layer: L3
+stub: false
+summary: 'THIS CLOSES g_l12_does_the_human_plate_produce_its_own_cnp, WHICH WAS THE CRUX BETWEEN TWO
+  ROUTES OUT OF THE CNP DOSE CEILING. A cartilage-TARGETED LIGAND is worth most if the plate is a
+  CONSUMER; an NPR2 POSITIVE ALLOSTERIC MODULATOR is worth most if the plate is a PRODUCER carrying more
+  local ligand than the blood. The answer is CONSUMER.
+  WHY THE PREVIOUS ATTEMPTS COULD NOT ANSWER IT. Round 98 found NPPC absent in 0 of 4 donors of the
+  GSE288028 human growth-plate scRNA-seq and drew an inference from it; round 117 re-derived the same
+  result with cnp_zonal_system.py. BOTH WERE UNINTERPRETABLE, because droplet scRNA-seq puts PTHLH at
+  0.43-1.40 per cent of cells and GDF5 at 0.20-0.34 per cent - the canonical growth-plate paracrine factor
+  and a known essential secreted regulator, at the same floor as NPPC. Absence on that platform means
+  nothing for this class of transcript (CORR-114).
+  THE PLATFORM THAT CAN ANSWER IT. GSE9160 is laser-capture microdissected, zone-resolved Affymetrix
+  HG-U133 Plus 2.0 profiling of DISTAL FEMORAL GROWTH PLATE from two normal children - female 11y10m and
+  male 13y3m - across five compartments: reserve, proliferative, prehypertrophic, hypertrophic AND
+  PERICHONDRIUM. No droplet dropout. The perichondrium arm tests the atlas own alternative hypothesis,
+  recorded in the_cnp_axis_mapped_end_to_end, that CNP might reach the plate from perichondrium or
+  endothelium rather than from chondrocytes.
+  THE RESULT. NPPC NEVER EXCEEDS 19.8 IN ANY COMPARTMENT OF EITHER DONOR - the ten values run 4.4 to 19.8
+  on an array globally scaled to a trimmed mean of 100. It is flat: no zonal structure, no perichondrial
+  peak, nothing above floor anywhere. The calibrators chosen BEFORE the values were extracted behave
+  differently: PTHLH reaches 308.6 and GDF5 reaches 603.8, each with clear peaks in particular
+  compartments, so the platform demonstrably detects low-abundance secreted regulators that droplet data
+  cannot. The assay is reading real growth plate - COL2A1 above 100,000, ACAN near 59,000, COL10A1 rising
+  from 433 in reserve to 72,039 in hypertrophic in the same donor, IHH peaking at 20,856 in hypertrophic,
+  and PECAM1 highest in perichondrium and the vascular-invasion front.
+  AND THE PLATE EXPRESSES THE MACHINERY TO DESTROY WHAT ARRIVES. In the same samples NPR2 reaches 1262,
+  NPR3 - the clearance receptor - reaches 979, and MME - neprilysin - reaches 1062. So the compartment
+  makes no ligand, carries the signalling receptor, and carries two independent routes for degrading
+  ligand that arrives, at transcript levels comparable to the receptor itself.
+  WHAT THIS DOES TO THE TWO ROUTES. IT DEMOTES THE NPR2 PAM ON ITS SELECTIVITY ARGUMENT. A PAM amplifies
+  wherever ligand meets receptor. If the plate makes no CNP and is fed by the circulation, then plate
+  ligand cannot exceed vascular ligand, and a systemic PAM raises signalling at vascular NPR2 at least as
+  much as at plate NPR2 - which makes it approximately equivalent to a dose increase, and a dose increase
+  is exactly what the cardiovascular margin in thread 3 forbids. The PAM survives only on a property this
+  node cannot test: whether a given small molecule ACCUMULATES in cartilage on its own physicochemistry.
+  IT PROMOTES THE TWO ROUTES THAT RAISE LOCAL CONCENTRATION WITHOUT RAISING SYSTEMIC CONCENTRATION - a
+  cartilage-targeted ligand, and blockade of local clearance. The atlas already ranks NPR3 blockade as the
+  highest-value unhit target (clean_gwas_search_for_unhit_targets, graded D) and already holds that NPR3
+  loss-of-function causes extreme tall stature in humans. This measurement supplies the missing premise
+  for that ranking: there IS circulating ligand arriving, the plate does not top it up locally, and the
+  plate expresses the clearance receptor at a level comparable to the signalling receptor.'
+quantitative:
+- parameter: 'NPPC TRANSCRIPT ACROSS FIVE COMPARTMENTS OF THE HUMAN GROWTH PLATE, AGAINST CALIBRATORS
+    FIXED BEFORE EXTRACTION'
+  value: 'NPPC maximum 19.8 (range 4.4-19.8 across 5 zones x 2 donors); PTHLH maximum 308.6; GDF5 maximum
+    603.8; NPR2 1262; NPR3 979; MME 1062; COL2A1 104,438'
+  unit: MAS5 signal, linear scale, arrays globally scaled to trimmed mean target intensity 100
+  conditions: 'GSE9160 (gse9160), GPL570 Affymetrix HG-U133 Plus 2.0. Laser-microdissected distal femoral
+    growth plate, reserve / proliferative / prehypertrophic / hypertrophic / perichondrium, from a
+    female aged 11y10m and a male aged 13y3m, both obtained at epiphysiodesis and described as
+    morphologically normal. Extracted by atlas/tools/cnp_source_bulk.py, which fixes the calibrator panel
+    and the reading in its docstring before any value is read. NEGATIVE CONTROLS: NPPA maximum 985.5 but
+    FLAT across all ten samples, which is the signature of cross-hybridisation rather than expression;
+    NPPB maximum 300.2. ASSAY SANITY: COL10A1 rises 433 to 72,039 from reserve to hypertrophic within
+    donor1; IHH peaks at 20,856 in hypertrophic; PECAM1 is highest in perichondrium; FGFR3 is high in the
+    chondrocyte zones and falls in perichondrium.'
+  species: human
+  source_ref: gse9160
+  uncertainty: 'THE THREE LIMITS, AND THE FIRST IS THE ONE THAT COULD OVERTURN THIS. (1) THERE IS EXACTLY
+    ONE NPPC PROBE SET ON GPL570, 221348_at. A single failing probe would produce precisely this result,
+    and nothing in this dataset can exclude that. Every other gene in the panel had two or more probe sets
+    to cross-check; NPPC had none. This is the single most important caveat and it is not resolvable
+    without a second platform. (2) n = 2 DONORS. No statistics are computed and none would mean anything;
+    the claim rests on both donors agreeing and on the flatness across five compartments within each.
+    (3) TRANSCRIPT IS NOT PROTEIN, and for a secreted peptide with a short half-life the gap is larger
+    than usual - though the direction of that error would have to be extreme to convert a flat floor
+    signal into a functionally dominant local source. NOTE ALSO that the separation from the calibrators
+    is one of DYNAMIC RANGE rather than of a clean threshold: several individual PTHLH values (7.2, 12.9,
+    14.6) sit in the NPPC range. What distinguishes them is that PTHLH and GDF5 each RISE somewhere -
+    to 309 and 604 - while NPPC rises nowhere.'
+- parameter: 'THE TWO PLATFORMS NOW AGREE, AND ONLY THE SECOND ONE COULD CARRY THE CLAIM'
+  value: 'NPPC at floor in 4/4 donors of droplet scRNA-seq (GSE288028) and in 2/2 donors x 5 compartments
+    of microdissected microarray (GSE9160)'
+  unit: qualitative agreement across independent cohorts and platforms
+  conditions: 'GSE288028 is four epiphysiodesis biopsies from children being treated for idiopathic tall
+    stature, 10x droplet; GSE9160 is two morphologically normal distal femoral growth plates, laser
+    capture plus microarray. Independent cohorts, independent platforms, opposite failure modes.'
+  species: human
+  source_ref: gse288028
+  uncertainty: 'THE AGREEMENT IS WORTH LESS THAN IT LOOKS AND MUST NOT BE DOUBLE-COUNTED. The scRNA-seq
+    result was uninterpretable ON ITS OWN because its floor was never calibrated - that is CORR-114, and
+    it applies equally to the round-98 use of the same result. Corroboration by a platform that CAN detect
+    PTHLH and GDF5 is what makes the pair informative; the droplet data contributes cohort independence,
+    not independent evidential weight. Stated plainly: one measurement carries this, and it has one probe
+    set.'
+localization:
+- 'measured in five separately microdissected compartments - reserve, proliferative, prehypertrophic and
+  hypertrophic zones plus perichondrium - and NPPC is at floor in all five, so the negative covers the
+  perichondrial source hypothesis as well as the chondrocyte one'
+human_evidence: direct
+human_evidence_note: Both datasets are human growth plate. No animal data is used for the central claim,
+  which matters because the mouse literature points the other way and is the reason this was worth
+  measuring.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: 'The measurement is human and the question is about human tissue, so there is no
+  species inference in the result itself. The risk sits in the opposite direction - the MOUSE literature
+  says cartilage-specific Nppc deletion reproduces essentially the whole dwarfing phenotype, which is
+  hard to reconcile with a human plate that does not transcribe NPPC. Either the species differ, or the
+  age differs (mouse work is largely neonatal, these donors are 11-13 years), or the probe fails.'
+confidence: C
+claim_grades:
+- claim: NPPC transcript is at array floor in every compartment of the human pubertal growth plate,
+    including perichondrium, on a platform that detects PTHLH and GDF5.
+  grade: C
+  basis: 'Directly measured in GSE9160, both donors, all five compartments, against a calibrator panel
+    fixed before extraction. Graded C rather than B because n=2 and because a single probe set carries
+    the negative - the result is replicated across compartments and donors but not across probes or
+    platforms of comparable sensitivity.'
+- claim: The human growth plate is a net CONSUMER of circulating CNP rather than a local producer.
+  grade: D
+  basis: 'This is the interpretation, not the measurement, and it goes one step further than the data. The
+    transcript result plus the presence of NPR2, NPR3 and MME is consistent with a consumer, and the
+    perichondrial arm removes the most obvious alternative local source. But no CNP CONCENTRATION has
+    been measured in human cartilage or in paired plasma, which is what the gap actually asked for; and
+    the mouse cartilage-specific Nppc deletion phenotype argues the other way in another species.'
+- claim: This result demotes the NPR2 positive allosteric modulator route.
+  grade: C
+  basis: 'It removes the PAM tissue-selectivity argument specifically. A PAM amplifies where ligand meets
+    receptor; with no local ligand production, plate ligand cannot exceed vascular ligand, so a systemic
+    PAM approximates a dose increase - the thing the cardiovascular margin forbids. The demotion is of
+    the SELECTIVITY argument only. A PAM that accumulated in cartilage on its own physicochemistry would
+    escape this, and MCUF-42 has not been characterised for that.'
+- claim: This result strengthens the case for NPR3 blockade.
+  grade: D
+  basis: 'It supplies a missing premise - circulating ligand arrives, is not topped up locally, and the
+    plate expresses the clearance receptor at a transcript level comparable to the signalling receptor,
+    so local clearance blockade would raise local concentration without raising systemic concentration.
+    It does not supply the thing that is actually missing, which the atlas already records: no NPR3
+    antagonist with a bone endpoint exists, the available compounds are research reagents, and the
+    redundancy question with an FGFR inhibitor is unresolved.'
+key_refs:
+- ref_id: gse9160
+  year: 2007
+  type: dataset
+  role: the measurement - laser-microdissected zone-resolved human growth plate including perichondrium,
+    on a platform without droplet dropout
+- ref_id: gse288028
+  year: 2025
+  type: dataset
+  role: the independent cohort whose NPPC floor was uninterpretable alone and is corroborative here
+open_questions:
+- g_l12_does_the_human_plate_produce_its_own_cnp
+contradicts:
+- 'STANDS AGAINST THE MOUSE LITERATURE HELD IN cnp_protein, WHICH IS NOT RESOLVED HERE. That node records
+  that CNP is produced by growth-plate chondrocytes and acts locally, with cartilage-specific Nppc
+  deletion reproducing essentially the phenotype and Nppc-null mice severely dwarfed. A human plate that
+  does not transcribe NPPC at any age sampled here is hard to reconcile with that. The candidate
+  reconciliations - species difference, age difference between neonatal mouse and pubertal human, or
+  failure of the single GPL570 probe set - are not distinguished by any data in this atlas.'
+last_verified: '2026-08-08'

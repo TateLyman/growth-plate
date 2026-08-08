@@ -4837,3 +4837,44 @@ the floor class, and NPPB is exactly zero everywhere, so the panel was reading r
 producer-versus-consumer question is now `g_l12_does_the_human_plate_produce_its_own_cnp`, with three
 discriminating routes and a pre-registered reading that this time is anchored to a paired plasma
 comparison rather than to a detection floor.
+
+## CORR-115 — the measurement CORR-114 said was needed, and what it does to two rounds of prior reasoning
+
+CORR-114 voided the scRNA-seq test of whether the human growth plate makes its own CNP: NPPC came back at
+the droplet detection floor, but so did PTHLH and GDF5, so absence on that platform meant nothing. The
+instruction was to get the measurement anyway. It was already obtainable and nobody in this project had
+gone for it.
+
+**GSE9160** — laser-capture microdissected, zone-resolved Affymetrix profiling of human distal femoral
+growth plate from two normal children, across reserve, proliferative, prehypertrophic, hypertrophic **and
+perichondrium** — has been inventoried in this atlas since the GEO census and was never queried for this.
+The perichondrium arm is exactly the alternative source the atlas itself had proposed.
+
+**Result: NPPC never exceeds 19.8 in any compartment of either donor**, on arrays scaled to a trimmed mean
+of 100, with no zonal structure and no perichondrial peak. The calibrators — fixed in the tool docstring
+before any value was extracted, which is the control that was missing last time — reach 308.6 (PTHLH) and
+603.8 (GDF5), each peaking somewhere. NPR2 reaches 1262, NPR3 979, MME 1062. Every sanity control behaves
+like real growth plate. The pre-registered reading returns **CONSUMER**.
+
+**What this corrects, and it is not what I expected.** The round-98 inference from NPPC-absence and my own
+round-117 re-derivation were both *unwarranted at the time* and both turn out to be *right*. That is the
+uncomfortable shape of this correction: the conclusion survives, the reasoning that produced it does not.
+An unfalsifiable measurement that happens to agree with a later good one was still not evidence when it was
+used, and the atlas had built on it twice.
+
+**What it costs.** The NPR2 PAM route, which I ranked first one round ago, loses its selectivity argument
+outright — regraded E to X. A PAM amplifies where ligand meets receptor; with no local production, plate
+ligand cannot exceed vascular ligand, so a systemic PAM approximates a dose increase, which is the one
+thing the cardiovascular margin in thread 3 forbids. The human dose-response in receptor activity
+(jeong2026) is untouched — the target is not in question, only the delivery logic that made a PAM more
+attractive than a ligand.
+
+**The honest limit, stated because it could overturn the whole thing.** GPL570 carries **exactly one NPPC
+probe set**. Every other gene in the panel had two or more to cross-check against. A single failing probe
+produces precisely this result and nothing in this dataset excludes it. n = 2 donors, and transcript is not
+protein. The claim is graded C for the measurement and D for the consumer interpretation for those reasons.
+
+**Rule carried forward:** before running a new assay to answer a question, check whether an existing
+inventoried dataset already answers it on a platform with the right failure mode. `geo_accession_inventory`
+had the right dataset listed; two rounds were spent on a platform that structurally could not answer the
+question while one that could sat in the atlas's own index.

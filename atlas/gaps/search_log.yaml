@@ -2245,3 +2245,37 @@ searches:
     (4) A DATASET-WIDE CAVEAT worth carrying forward: COL2A1 ranges 31 to 947 CP10K across the four
     donors, a 20 to 30-fold spread on the canonical chondrocyte marker, so absolute CP10K is not
     comparable across donors in GSE288028 and only within-donor ratios should be used.'
+- gap_id: g_l12_does_a_small_molecule_accumulate_in_cartilage
+  database: GSE9160 via NCBI GEO series matrix and GPL570 platform table
+  exact_query_string: 'Re-analysis, not a literature query. atlas/tools/cnp_source_bulk.py extracts MAS5
+    signal for NPPC, NPR2, NPR3, MME, FURIN with PTHLH and GDF5 as low-abundance calibrators, NPPA and
+    NPPB as negative controls, and COL2A1/COL10A1/ACAN as assay-sanity controls, across all five
+    laser-microdissected compartments and both donors. Calibrator panel and reading fixed in the docstring
+    BEFORE any value was extracted, which is the control CORR-114 says was missing last time.'
+  filters: all 10 samples used; every probe set for a panel gene printed rather than averaged
+  date_run: '2026-08-08'
+  hit_count: 10 samples, 5 compartments x 2 donors
+  screened_count: 21 probe sets across 13 genes
+  reason_none_qualified: 'THIS ENTRY RECORDS A MEASUREMENT THAT SUCCEEDED, AND ONE THAT IT OPENS.
+    RESULT: NPPC never exceeds 19.8 in any compartment of either donor (range 4.4-19.8) on an array
+    globally scaled to trimmed mean 100, with NO zonal structure and no perichondrial peak. The
+    calibrators fixed beforehand separate cleanly on DYNAMIC RANGE - PTHLH reaches 308.6 and GDF5 reaches
+    603.8, each peaking somewhere, while NPPC rises nowhere. NPR2 reaches 1262, NPR3 979, MME 1062.
+    Assay sanity passed on every control: COL2A1 above 100,000, COL10A1 rising 433 to 72,039 from reserve
+    to hypertrophic within one donor, IHH peaking at 20,856 in hypertrophic, PECAM1 highest in
+    perichondrium. Pre-registered reading returns CONSUMER. THE SINGLE-PROBE CAVEAT IS THE REAL LIMIT:
+    GPL570 carries exactly ONE NPPC probe set, 221348_at, so a failing probe would produce this exact
+    result and nothing here excludes it - every other panel gene had two or more probe sets to
+    cross-check. WHAT IT OPENS: the demotion of the NPR2 PAM selectivity argument leaves cartilage
+    self-accumulation as the only route back for that class, and no physicochemistry for MCUF-42 has been
+    extracted - ma2024 was read at abstract level only.'
+  additional_source_checked: 'NPR3 BLOCKADE WAS CHECKED AGAINST THE ATLAS BEFORE BEING PRESENTED AS A
+    CONSEQUENCE, PER THE CORR-112 RULE, AND IT IS ALREADY HELD. clean_gwas_search_for_unhit_targets
+    already grades "NPR3 blockade is the highest-value unhit target for this stack" at D, and
+    every_drug_on_the_cnp_axis already enumerates the available compounds as research reagents with no
+    product - osteocrin, C-ANF(4-23), AP-811, SC-46542. This measurement is therefore NOT a new route; it
+    supplies a premise that ranking was previously missing, namely that circulating ligand arrives, the
+    plate does not top it up locally, and the plate expresses the clearance receptor at a transcript level
+    comparable to the signalling receptor. The blocking objections recorded there are untouched: no NPR3
+    antagonist with a bone endpoint exists, and the redundancy question with an FGFR inhibitor is the same
+    unresolved one that removed vosoritide.'
