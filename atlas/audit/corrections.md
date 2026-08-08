@@ -5089,3 +5089,36 @@ magnitude to a single velocity uncertain by about fivefold, with the answer flip
 point of use and test it against an independent observable in the same paper before building on it. I
 recorded that D and v were co-fitted in the round-127 node's uncertainty field and then used v as though it
 were measured anyway.
+
+## CORR-122 — the ligand branch closes: the transport asymmetry is real, small, and not worth building for
+
+Rounds 121–128 kept the dual-resistant CNP analogue alive on one argument: that removing a local sink
+raises plate concentration disproportionately, giving a therapeutic-index gain a plain dose increase cannot
+buy. Two things settle it.
+
+**serrat2009 full text, retrieved from PMC.** At physiological limb temperature, fluorescein is distributed
+at ~20% in each of five regions — four growth-plate zones *plus* the vasculature — so **plate concentration
+matches vascular concentration, zonally uniform**, with plate and vascular signal correlated at r = 0.94.
+In the cold arm, where supply is deliberately throttled, the zonal order is reserve 15.7, proliferative
+15.8, transition 18.6, **hypertrophic 21.0** — the target zone is the *least* depleted, which is the
+opposite of what a consumption-limited hypertrophic zone would show.
+
+**And the size of the prize, computed with a velocity that is not co-fitted.** Both independent
+equilibration observations — williams2007's 5-minute saturation and serrat2009's 8-minute vascular matching
+— give an effective velocity of **0.3–0.5 µm/s**, not the 2.5 µm/s co-fit. At those velocities Da = 0.08–1.54,
+and **halving the local sink raises delivered concentration by 1.04–2.16×, centrally ~1.2×.**
+
+**That is the answer.** The asymmetry exists and is not zero, but ~1.2× is not a therapeutic-index
+transformation — and a ligand-side fix buys it while raising systemic exposure proportionally, which is the
+exact quantity the cardiovascular margin constrains. The 6–30× claimed at round 125 was an artefact of a
+diffusivity seven-fold too low.
+
+**The ligand branch of thread 3 is closed**, and it closes for the same reason as the three candidates
+before it: everything that raises plate concentration by this route raises systemic concentration at least
+as much.
+
+**What I could not get, stated plainly:** the raw williams2007 image series, which would allow refitting the
+transport model *with* an uptake term and settle the co-fitted velocity directly. Not deposited, no data
+availability statement, supplementary endpoint empty. That remains the only way to measure v rather than
+infer it — but it no longer changes the decision, because even the most favourable velocity in the range
+yields ~2× at best.
