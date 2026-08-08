@@ -7389,14 +7389,19 @@ gaps:
     the human dose-limiting dose of 3.1. If achievable exposure sits below the concentration needed in cartilage,
     the branch is a target with no chronic drug and the search should move to subunit-selective inhibition or to
     a cartilage-targeted prodrug.
-  what_is_known: shuhaibar2021 needs 5 to 10 micromolar LB-100 ex vivo, with 1 micromolar inactive. rollema2025
-    shows LB-100 is a prodrug of endothall, IC50 95 nM, hydrolysing with a 3.2 to 4.9 hour half-life at 37 degrees,
-    so the ex vivo active species and its concentration are both unknown. feng2023 validated a human plasma assay
-    for both analytes over 2.5 to 500 ng/mL and ran it on NCT04560972 samples. chung2017 gives the tolerated human
-    doses but is paywalled for PK.
-  what_is_missing: The feng2023 patient concentrations have not been read. No cartilage concentration of endothall
-    has ever been measured in any species. No juvenile chronic toxicology study of endothall or LB-100 with a bone
-    endpoint exists.
+  what_is_known: 'THE PLASMA HALF OF THIS GAP IS ANSWERED AS OF ROUND 134 AND THE ANSWER IS NEGATIVE. chung2017
+    Table 3 measures endothall at the human MTD of 2.33 mg/m2: Cmax 11.5 and 34.3 ng/mL on days 1 and 3 in one
+    patient, 14.8 in a second, below the 5 ng/mL limit in a third - 62 to 184 nM against a 95 nM PP2A IC50.
+    feng2023 Figure 4 corroborates at 1.25 mg/m2 with about 8.5 ng/mL on day 1 and 13 on day 3. shuhaibar2021
+    needs 5 to 10 micromolar LB-100 ex vivo with 1 micromolar inactive; complete hydrolysis of a 10 micromolar
+    load gives up to 10 micromolar endothall, 54 to 162 times the human numbers, and even the inactive 1
+    micromolar is 5 to 16 times above them.'
+  what_is_missing: 'Three things, and they are what keeps this open rather than closed. (1) NO CARTILAGE
+    CONCENTRATION of endothall has ever been measured in any species, and chung2017 argues tissue target
+    engagement outlasts plasma - maximum xenograft PP2A inhibition at 2 to 4 hours with recovery taking 24 -
+    so plasma may be a poor proxy. (2) TRUE human Cmax is unmeasured: in every patient in both trials the
+    endothall maximum fell at the last sampling point, and it accumulates across days. (3) No juvenile chronic
+    toxicology study of endothall or LB-100 with a bone endpoint exists in any species.'
   nearest_evidence:
   - rollema2025
   - feng2023
@@ -7427,12 +7432,15 @@ gaps:
   - shuhaibar2021
   - fenton2023
   - wagner2021
-  discriminating_experiment: 'Wild-type juvenile mice, both sexes, vehicle against the highest tolerated phosphatase-inhibitor
-    dose from a pilot, dosed from weaning to skeletal maturity, with femur and tibia length, body length, cranial
-    width and body weight all measured - the same panel shuhaibar2017 used for 7E, so the pharmacological effect
-    can be read directly against the genetic ceiling. Prediction: if the drug reproduces even a third of the 4.3
-    to 8.8 per cent genetic effect at a tolerated dose, the branch is live; if it reproduces none, the ex vivo result
-    was a culture artefact or the exposure is unreachable.'
+  discriminating_experiment: 'Wild-type juvenile mice, both sexes, vehicle against LB-100 delivered by IMPLANTED
+    OSMOTIC MINIPUMP rather than bolus - martiniova2011 tolerated 1.5 mg/kg/day continuous for 14 days in adults,
+    three times the daily dose of the bolus regimen that killed 42 per cent of juveniles in fenton2023, so the
+    format is the variable to change. Dose from weaning towards skeletal maturity, measuring femur and tibia length,
+    body length, cranial width and body weight - the same panel shuhaibar2017 used for 7E, so the pharmacological
+    effect reads directly against the genetic ceiling - plus terminal plasma and cartilage endothall. Prediction:
+    if the drug reproduces even a third of the 4.3 to 8.8 per cent genetic effect at a tolerated continuous dose,
+    the branch is live and the problem was always the dosing format; if it reproduces none, the ex vivo result was
+    a culture artefact or the exposure is unreachable at any tolerable rate.'
   tractability: 3
 - gap_id: g_l2d_004
   question: Which specific PPP-family phosphatase catalyses FGF-driven dephosphorylation of NPR2 in growth plate

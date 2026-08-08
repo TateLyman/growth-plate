@@ -5276,3 +5276,63 @@ the primary data.
 **No new rule** — this is the existing "reviews and citing sentences are an index, not a source" rule
 working correctly. Recorded because the citing sentence came from a primary paper this atlas had already
 read in full, which is a softer target than a review and was nearly trusted on that basis.
+
+## CORR-129 — "no cardiovascular event appears" was written from an abstract and the full paper has five (round 134)
+
+Round 133 read chung2017 through its Europe PMC abstract, which enumerates only the **grade 3** drug-related
+events, and recorded: *"no hypotension or cardiovascular event."*
+
+The full paper's **Table 2** lists grade 1–2 events, and among them:
+
+- **Accelerated hypertension** — 1 patient (3.4%)
+- **Ejection fraction decreased** — 1 (3.4%)
+- **ECG QT prolonged** — 1 (3.4%)
+- **Sinus tachycardia** — 2 (6.9%)
+- **Chest pain** — 1 (3.4%)
+
+So low-grade cardiovascular events exist. **Two features of the corrected picture are stronger than the
+original claim, not weaker**, and both were invisible from the abstract:
+
+1. Patients were **cardiac-monitored by protocol** — ECG, MUGA or echocardiogram, cardiac troponins and BNP
+   before every cycle — *because animal toxicology showed cardiac toxicity at high doses*. The absence of
+   grade 3+ cardiac events is therefore a **monitored** absence.
+2. The one blood-pressure event is **hypertension**, the opposite direction from the CNP-analogue fear that
+   motivated the question.
+
+**Rule tightened:** an abstract that enumerates events "of grade N or higher" cannot support a claim about
+events of *any* grade. Where a safety claim is about absence, the row must record which grades the source
+actually reports. Both chung2017 and feng2023 are now `full_text_read` and typed `primary`.
+
+**Third correction embedded in the same round, no separate number:** the round-134 exposure row was graded
+**E** and reasoned from feng2023's *calibration range* because the patient data were paywalled. The paywalled
+papers then arrived and the real numbers are 62–184 nM. The inference was in the right direction but the
+row has been replaced by the measurement, as the grading policy requires — inference is a placeholder for a
+number, never a substitute once the number exists.
+
+## CORR-130 — the round-134 "exposure gap" conclusion was written before two facts that partly reverse it (same round, recorded rather than silently revised)
+
+Within round 134 I wrote, on the strength of chung2017's endothall concentrations, that the branch is
+"a target with no deliverable molecule… separated from usefulness by a factor of fifty." Two further
+sources found in the same round change how that sentence should be read, and both are now in the node:
+
+1. **martiniova2011** — the same compound (the paper states LB1 and LB-100 are the same, supplied by
+   Lixte) given by **continuous intraperitoneal osmotic-pump infusion at 1.5 mg/kg/day for 14 days** in
+   adult mice, with *no apparent toxicity and no significant weight loss*. That is **three times the daily
+   dose** of the bolus regimen that killed 5 of 12 juvenile mice in fenton2023. Cumulative exposure
+   therefore cannot be the killer; **peak concentration is**. And the bone effect needs *sustained*
+   exposure, which is what an infusion gives and a bolus does not.
+
+2. **epa_endothall_red_2005** — endothall is a registered herbicide with a complete chronic mammalian
+   package: chronic RfD **0.007 mg/kg/day**, chronic LOAEL **2 mg/kg/day** on *proliferative gastric
+   epithelial lesions*, offspring NOAEL **9.41 mg/kg/day**, **not likely to be carcinogenic**, no
+   mutagenicity, no neurotoxicity, no developmental toxicity, no bioaccumulation. The chronic ceiling is a
+   **local oral** effect, which a parenteral route bypasses.
+
+Neither fact closes the ~50× concentration gap, and the growth-relevant endpoint in the EPA dossier points
+the wrong way (decreased pup body weight at 60 mg/kg/day). But "no deliverable molecule" was too flat a
+conclusion: the accurate statement is **the wrong molecule in the wrong format** — the prodrug given as a
+bolus — and the untested option is **endothall itself, delivered continuously and not orally**.
+
+**Rule applied, not tightened:** a conclusion reached mid-round is provisional until the round's searching
+stops. This is recorded as a correction rather than edited away because the earlier framing was pushed to
+the user in conversation before the later sources were found.

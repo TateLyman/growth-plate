@@ -176,7 +176,11 @@ Until these are read, every number sourced from a flagged reference should be tr
 Both are paywalled and both were attempted through lawful routes only (Europe PMC, publisher
 landing page). No paywall was bypassed. AACR returned HTTP 403 to a plain request.
 
-| P0 | `feng2023` | PMID 37584370, DOI 10.4155/bio-2023-0078, *Bioanalysis* | **The patient
+**RESOLVED 2026-08-08 — both P0 and P1 below were supplied by the project owner as PDFs and read in
+full. Endothall Cmax at the human MTD is 11.5–34.3 ng/mL (62–184 nM). The entries are kept for the
+record; the P2 items remain open.**
+
+| P0 (resolved) | `feng2023` | PMID 37584370, DOI 10.4155/bio-2023-0078, *Bioanalysis* | **The patient
 concentration–time data for LB-100 and endothall from NCT04560972.** This is the single number
 `g_l12_endothall_exposure_and_juvenile_tolerability` turns on: whether achievable human plasma
 endothall clears the 95 nM IC50. The abstract gives only the validated calibration range,
@@ -184,7 +188,7 @@ endothall clears the 95 nM IC50. The abstract gives only the validated calibrati
 anything. Everything the atlas currently says about clinical exposure on this branch is
 inference from that range and is graded E. |
 
-| P1 | `chung2017` | PMID 28039265, DOI 10.1158/1078-0432.CCR-16-2299, *Clin Cancer Res* | **The
+| P1 (resolved) | `chung2017` | PMID 28039265, DOI 10.1158/1078-0432.CCR-16-2299, *Clin Cancer Res* | **The
 pharmacokinetics section.** The abstract gives doses, DLT and RP2D — all already in the atlas —
 but no Cmax, no AUC, no half-life. With the PK, the mouse-to-human body-surface-area conversion
 in `the_tool_compound_is_a_prodrug_and_it_kills_juvenile_mice` could be replaced by a direct
