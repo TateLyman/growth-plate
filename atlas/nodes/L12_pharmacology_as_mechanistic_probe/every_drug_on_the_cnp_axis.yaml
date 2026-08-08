@@ -120,6 +120,75 @@ quantitative:
     and one organ-culture arm. GUCY1A1 and GUCY1B1 expression in human growth plate has never been checked
     by this atlas and should be, since if the soluble cyclase is not expressed in chondrocytes the lead
     closes for free.'
+- parameter: 'THE ONLY DOCUMENTED ADDITIVE PARTNER ON THIS AXIS - preventing NPR2 dephosphorylation, with
+    genetic validation, pharmacology, and human target expression'
+  value: 'genetic rescue to WILD-TYPE bone length; LB-100 alone 1.30x vehicle and additive with a CNP
+    analogue; PPP2CA and PPP2CB detected in 4 of 4 human donors'
+  unit: multiple
+  conditions: 'THREE INDEPENDENT LAYERS ON ONE NODE. (1) MECHANISM - shuhaibar2017: FGF lowers growth
+    plate cGMP by DEPHOSPHORYLATING NPR2, blocked by cantharidin, implicating a PPP-family phosphatase.
+    (2) GENETIC VALIDATION - wagner2021: a phospho-mimetic GC-B-7E/7E allele crossed into FGFR3-G380R mice
+    RESTORES LONG BONE LENGTH AND HYPERTROPHIC ZONE AREA TO WILD-TYPE, so NPR2 dephosphorylation is
+    REQUIRED for the achondroplasia phenotype. (3) PHARMACOLOGY - shuhaibar2021: in E16.5 Fgfr3-Y367C/+
+    femur culture, BMN-111 alone gave 1.78x vehicle, LB-100 ALONE gave 1.30x, and the combination 2.06x,
+    against an additive prediction of 2.08 - additive, and the ONLY combination on this axis that beat its
+    own monotherapy on a length endpoint. (4) HUMAN TARGET EXPRESSION, computed here from GSE288028:
+    PPP2CA in 4/4 donors at 29.2-39.4 per cent of cells, PPP2CB in 4/4 at 25.1-67.2 per cent.'
+  species: multiple
+  source_ref: wagner2021
+  uncertainty: 'THIS IS THE BEST-SUPPORTED PAIRING CANDIDATE ON THE AXIS AND IT IS STILL PRECLINICAL.
+    What makes it stronger than every other downstream option is that all four layers exist - a mechanism,
+    a genetic rescue to wild-type, an additive pharmacological combination with a length endpoint, and
+    confirmation that the drug target is transcribed in human growth plate. Nothing else on this axis has
+    more than one layer. THE LIMITS ARE SERIOUS. The combination was run in E16.5 FETAL femur ORGAN
+    CULTURE over 6 days, in an Fgfr3 GAIN-OF-FUNCTION background, with a CNP analogue rather than with the
+    FGFR inhibitor the stack actually contains. LB-100 is a clinical-stage ONCOLOGY agent and PP2A is a
+    tumour suppressor, so the therapeutic index is the opposite of benign. shuhaibar2017 could only narrow
+    the phosphatase to the PPP FAMILY - cantharidin at 100 micromolar inhibits PPP1, PPP2, PPP4 and PPP5
+    together - and PPP1CA is also expressed in all four human donors, so PP2A is not established as the
+    specific enzyme. AND THE REDUNDANCY OBJECTION FROM CORR-083 STANDS: LB-100 works by counteracting
+    FGF-INDUCED dephosphorylation, so in a subject already taking an FGFR inhibitor much of its substrate
+    may be gone.'
+- parameter: 'THE DOWNSTREAM AND PARALLEL POINTS ARE EMPTY - no bone length endpoint exists for any of them'
+  value: 0 studies with a bone length or growth plate endpoint for BK openers, TRPM7 modulators or sGC
+    stimulators
+  unit: count
+  conditions: 'Europe PMC 2026-08-08. BK channel openers and TRPM7 modulators (NS1619, NS11021,
+    BMS-204352, naltriben) crossed against bone, chondrocyte, growth plate, skeletal and cartilage - 389
+    hits, all vascular calcification, diabetic osteopenia, glioblastoma or osteoarthritis; NOTHING with a
+    growth endpoint. sGC stimulators (riociguat, vericiguat, cinaciguat) crossed against chondrocyte,
+    growth plate, endochondral and longitudinal growth - 84 hits, nothing skeletal; the nearest is PKG2
+    activation restoring bone MASS in glucocorticoid osteoporosis, which is a density endpoint not a
+    length one. NPR3 antagonism crossed against bone length, growth plate, longitudinal growth, stature
+    and elongation - no antagonist has ever been given with a growth endpoint.'
+  species: not_applicable
+  source_ref: wang2018
+  uncertainty: 'THESE ARE THE POINTS WHERE THE ARCHITECTURE SAYS AN AGENT WOULD BE NON-REDUNDANT AND THE
+    LITERATURE IS SIMPLY BLANK. BK, TRPM7 and CaMKII sit DOWNSTREAM of the cGMP convergence, so an agent
+    acting there would by construction not duplicate either a CNP analogue or an FGFR inhibitor - and my
+    human expression check makes the target case unusually strong: KCNMA1 4/4, TRPM7 4/4 at 27.9-53.7 per
+    cent, and CAMK2D 4/4 at 39.3-65.8 per cent, which is among the best-detected genes in the whole table.
+    THE REASON THIS IS NOT A RECOMMENDATION is that expression is necessary and not sufficient, and this
+    atlas holds the proof in the same tissue: PDE5A and PDE10A are both 4/4 and their inhibitors do
+    nothing to bone length, one of them with confirmed target engagement. A blank literature at a
+    well-expressed node is a research proposal, not a candidate.'
+- parameter: 'AND NEPRILYSIN IS NOT THE DOMINANT CNP-DEGRADING ENZYME IN HUMAN GROWTH PLATE BY EXPRESSION'
+  value: 'ECE1 4/4 at 2.7-25.0 per cent and IDE 4/4 at 15.9-17.9 per cent, against MME 3/4 at 0.9-9.9'
+  unit: per cent of cells, donors detected
+  conditions: computed here from GSE288028. Neprilysin (MME) is the target sacubitril blocks; endothelin
+    converting enzyme 1 and insulin degrading enzyme both also degrade natriuretic peptides and both are
+    detected in ALL FOUR donors at higher rates than MME
+  species: human
+  source_ref: chu2026
+  uncertainty: 'A MECHANISTIC ARGUMENT AGAINST SACUBITRIL THAT THIS ATLAS HAD NOT MADE. If two other
+    peptidases capable of degrading natriuretic peptides are more abundantly transcribed in the target
+    tissue than neprilysin is, then blocking neprilysin alone leaves the larger degradation routes intact,
+    and the ceiling on the enzymatic-clearance strategy is lower than the mouse data suggest. IT IS AN
+    EXPRESSION ARGUMENT AND THEREFORE WEAK IN THE USUAL WAY - transcript abundance is not enzyme activity,
+    substrate preference matters more than abundance, ECE1 and IDE have broad substrate ranges in which
+    CNP may be minor, and hakata2024 showed a real sacubitril effect in mouse where the same objection
+    would apply. It lowers the prior on sacubitril; it does not refute it. It also stacks with the
+    round-99 zonal finding that MME peaks in the STEM zone where NPR2 is least present.'
 localization:
 - 'growth plate proliferative and prehypertrophic zones: where NPR2/GC-B sits and where a CNP agent acts'
 - 'growth plate hypertrophic zone: where the CNP PKA arm acts and where cilostazol cannot reach'
