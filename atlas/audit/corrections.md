@@ -4720,3 +4720,41 @@ Fixed in the following commit. The rule that already existed — run `validate.p
 BEFORE `git push`, not in the same compound command — is the rule I broke. Chaining validate and push in
 one shell invocation is what makes it possible to see the error only after the push has happened, so the
 two must be separate calls.
+
+## CORR-112 — I reopened thread 2, ran the salvage search, and re-derived four things the atlas already held. Eighth instance of the class, one round after CORR-109 wrote the rule against it
+
+Instructed to reopen the temperature/delivery thread and find any obscure salvage angle, I ran searches on
+five angles. Four of them returned material already on disk:
+
+- **Regional hyperaemia as a human natural experiment** (AV malformation, Parkes Weber, Klippel-Trenaunay,
+  post-fracture overgrowth). Already in `local_limb_warming_is_a_free_delivery_and_growth_lever.yaml`
+  lines 168–195, including the strongest form of the observation — the **ipsilateral UNFRACTURED femur**
+  overgrowing in 66 per cent of children after a tibial fracture — and including the confound I would have
+  had to add anyway, that PIK3CA/RASA1 mosaicism drives tissue overgrowth through its own signalling and
+  not only through flow.
+- **Exercise as a substitute for applied heat.** Already held as `serrat2010`, with its elegant control
+  (runners' limbs lengthened at either housing temperature while tail length tracked only temperature).
+- **The CNP-adjuvant reframe** — that warming's value is not as a standalone lever but as a delivery
+  multiplier on the peptide arm. Already written into the same node at lines 36–42, including the
+  observation that vosoritide at ~4 kDa sits partway down the partition slope and that navepegritide is a
+  prodrug in the same size class.
+- **ACcomplisH dose-response non-saturation**, the fact that makes an exposure multiplier worth anything.
+  Already in `edges.yaml:11586` and `cnp_analog_pk_challenge.yaml:16`, with the AGV table and the
+  conclusion stated outright: *the drug is NOT saturated below its top dose* — together with the
+  counterweight I had not yet re-found, that vosoritide exposure did not correlate with response.
+
+CORR-109 adopted a standing rule one round earlier: **grep the bibliography's `one_line_finding` for the
+thread's endpoint term before opening or extending a thread.** I did grep — but I grepped `atlas/` for
+*topic* words (`overgrowth`, `fracture`, `fistula`) and correctly found the hyperaemia material, then
+stopped checking and ran the remaining angles blind. The rule fired for one angle and I did not apply it
+to the rest.
+
+**Refinement of the rule:** the pre-check is not one grep at thread open, it is one grep **per angle**,
+run before the search rather than after it. The angles are enumerable in advance; checking four costs four
+commands.
+
+**What the reopening actually produced** is recorded in the thread-status node: no salvage, one genuine
+narrowing (the partition ceiling below), and one lead that failed verification and was therefore not
+entered — the claim, seen only in a search-engine paraphrase, that isolated limb perfusion at 39.5 vs
+37 °C doubles platinum concentration in tumour tissue while tumour-free tissue does not gain. I could not
+resolve it to a primary source in Europe PMC and did not enter the number in any form.
