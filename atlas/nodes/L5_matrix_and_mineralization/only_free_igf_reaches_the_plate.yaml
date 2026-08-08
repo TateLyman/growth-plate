@@ -1,0 +1,203 @@
+id: only_free_igf_reaches_the_plate
+name: The measurement nobody has made, recreated as far as transcriptomes allow - the restraint on phase 3 is NOT binding-protein excess inside the plate, it is SIZE EXCLUSION at the matrix, and there is already a wild-type gain-of-function on the axis
+aliases:
+- free IGF versus total IGF
+- the IGF delivery argument
+- why GH may not reach phase 3
+- rhPAPP-A2 in wild-type
+type: hypothesis
+layer: L5
+stub: false
+summary: 'THE TASK WAS TO FIND OR RECREATE THE MEASUREMENT THAT DECIDES WHETHER PHASE 3 IS LIMITED BY LOCAL
+  IGF-1. IT DOES NOT EXIST - three independent Europe PMC angles returned no free-versus-total IGF-1
+  measurement in growth-plate zones in any species. So it was recreated as far as a transcriptome allows,
+  with atlas/tools/igf_zonal_balance.py, and THE RECREATION KILLED THE HYPOTHESIS IT WAS BUILT TO TEST
+  WHILE HANDING BACK A BETTER ONE.
+  FIRST, A CORRECTION TO MY OWN PRIOR ROUND. CORR-103 claimed IGFBP3 and IGFBP5 rise into the hypertrophic
+  zone while PAPPA falls, and called that a sequestration argument. Those figures were DETECTION RATES -
+  the percentage of cells with a non-zero count - which are driven by sequencing depth and cannot be
+  summed or ratioed across genes. Recomputed as CP10K MEAN EXPRESSION from the same raw matrices with the
+  same zone calls, the binder-to-ligand ratio does NOT rise into hypertrophy: donor1 13.84 to 3.27, donor2
+  6.33 to 6.37, donor3 3.26 to 4.35. Two of three flat or the wrong way. The kill criterion was written
+  into the script before it was run and it is met. CORR-104.
+  AND THE HYPOTHESIS FAILS IN A SECOND, SHARPER WAY: IGF1 TRANSCRIPT RISES INTO HYPERTROPHY IN ALL THREE
+  USABLE DONORS (0.04 to 0.36, 0.10 to 0.24, 0.00 to 0.06 CP10K). Local IGF-1 production goes UP exactly
+  where phase 3 happens. That is the opposite of local restraint.
+  WHAT THE RECREATION RETURNED INSTEAD IS UNAMBIGUOUS AND HAD NEVER BEEN JOINED UP. IGFALS - the acid
+  labile subunit - is 0.00 CP10K in EVERY donor and EVERY zone. It is hepatic, which is expected; the
+  consequence is not. In circulation the great majority of IGF-1 travels as a 140-150 kDa TERNARY COMPLEX
+  with IGFBP-3 and ALS. Against the partition curve this atlas already holds (farnum2006: 332 Da about
+  100 per cent, 3 kDa about 60, 10 kDa about 10, 40 kDa undetectable), and with mature masses confirmed
+  from UniProt this round, the ternary complex at 140-150 kDa CANNOT ENTER A GROWTH PLATE, binary
+  IGF-1/IGFBP complexes at roughly 36-52 kDa cannot either, and FREE IGF-1 at 7.6 kDa enters at only about
+  a tenth. The plate cannot assemble the ternary complex locally either, because ALS is not transcribed
+  there. SO THE PLATE ONLY EVER SEES THE FREE FRACTION, AND SEES IT POORLY.
+  THAT EXPLAINS TWO RESULTS THE ATLAS HELD AND COULD NOT RECONCILE. lui2018 reports long-bone chondrocytes
+  ALREADY AT CEILING for IGF; erdaseries2025 patient 2 grew at 10 cm/year with IGF-1 at MINUS 3.8 SDS.
+  Both follow if total IGF-1 is a poor proxy for what reaches phase 3. It also predicts that GROWTH
+  HORMONE IS AN INEFFICIENT WAY TO SUPPLY PHASE 3, because what GH raises is overwhelmingly ternary-complex
+  IGF-1 that is too large to partition - which would mean the GH arm in this stack does not occupy the
+  variable component of h_term, and the coverage audit entry marking IGF BIOAVAILABILITY unhit is live.
+  AND THERE IS ALREADY A WILD-TYPE GAIN-OF-FUNCTION ON THIS AXIS, WHICH IS RARE IN THIS PROJECT.
+  fernndezarjona2026 gave daily rhPAPP-A2 to mice from postnatal day 5 to 35 and found INCREASED BODY
+  LENGTH IN WILD-TYPE ANIMALS - not only in the Pappa2 knockouts it was designed to rescue - and in
+  wild-type males it raised LENGTH WITHOUT RAISING WEIGHT. PAPP-A2 cleaves IGFBP-3 and IGFBP-5, releasing
+  free IGF-1, which is precisely the species the partition curve admits. Set against
+  harboe2024, where PAPP-A knockout shortens the mouse femur about 7 per cent, the axis now has a
+  loss-of-function, a human loss-of-function phenotype, a deficiency rescue, and a WILD-TYPE gain.
+  WHAT IS STILL MISSING IS THE SAME ONE THING: nobody has measured free versus total IGF-1 across
+  growth-plate zones, and nobody has measured hypertrophic CELL SIZE under any of these manipulations, so
+  none of it yet touches phase 3 directly. harboe2024 did not measure cell size and its lesion is in the
+  PROLIFERATIVE zone - fewer intact columns, reduced cell density - not in hypertrophy. That is a warning
+  against reading the PAPP-A axis as an h_term lever on present evidence.'
+quantitative:
+- parameter: 'THE RECREATION - zone-resolved binder-to-ligand balance, computed properly, and it does NOT
+    support restraint'
+  value: 'sum(IGFBP1-6)/sum(IGF1+IGF2) proliferative to hypertrophic: donor1 13.84 to 3.27, donor2 6.33 to
+    6.37, donor3 3.26 to 4.35'
+  unit: ratio of CP10K-normalised mean expression
+  conditions: 'Computed here, atlas/tools/igf_zonal_balance.py, from the GSE288028 raw filtered count
+    matrices for the four fresh donors, using the SAME marker-based zone calls as gp_expression.py so the
+    two tables are comparable. Cells per zone: donor1 269/601/1889/448, donor2 2455/853/4130/2388, donor3
+    870/2515/1674/4021, donor4 44/13/62/51 - donor4 is excluded from every ratio because it contributes 13
+    cells to the proliferative zone. Zone calls validate on COL10A1, which rises 0.06 to 2.60, 0.11 to
+    1.12 and 2.60 to 69.24 CP10K from proliferative to hypertrophic. COMPONENTS, proliferative to
+    hypertrophic, all three usable donors: IGF1 0.04-0.36 / 0.10-0.24 / 0.00-0.06 (RISES in all three);
+    IGFBP5 0.74-1.06 / 0.34-1.26 / 0.21-0.25 (rises in all three); PAPPA 2.32-1.18 / 0.40-0.25 / 0.48-0.46
+    (falls in all three); IGFBP3 0.01-0.06 / 0.17-0.19 / 0.02-0.02 (barely moves); STC2 falls in two
+    donors and rises in one; PAPPA2 at or below 0.04 everywhere; IGFALS 0.00 everywhere.'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THIS IS A NEGATIVE RESULT ON A HYPOTHESIS THIS ATLAS GENERATED, AND THE KILL CRITERION WAS
+    PRE-REGISTERED IN THE SCRIPT DOCSTRING BEFORE IT WAS RUN. It is also a correction of my own previous
+    round, which built the same argument out of detection rates that cannot legitimately be ratioed
+    (CORR-104). WHAT THE NEGATIVE DOES AND DOES NOT ESTABLISH. It does not measure free IGF-1 and cannot:
+    transcript is not protein; IGFBPs are stable SECRETED proteins whose local concentration reflects
+    accumulated secretion and delivery from serum rather than the transcription of the nearest cell; and
+    for anything diffusible, zone-of-transcription is not zone-of-protein. Droplet protocols also
+    under-recover terminal hypertrophic chondrocytes, so the hypertrophic column is the least reliable one
+    and it is the column of interest. WHAT IT DOES ESTABLISH is that the only observation the restraint
+    hypothesis rested on does not survive being computed correctly in the best human dataset available,
+    and that the residue - IGFBP5 up, PAPPA down, in all three donors - is far smaller than the effect I
+    claimed and is not supported by the ratio.'
+- parameter: 'THE SIZE FILTER - only free IGF-1 can enter a growth plate, and only at about a tenth'
+  value: 'free IGF-1 7.6 kDa at roughly 10 per cent partition; binary IGF-1/IGFBP about 36-52 kDa at
+    approximately zero; ternary IGF-1/IGFBP-3/ALS about 140-150 kDa at zero'
+  unit: kDa and predicted matrix partition
+  conditions: 'Partition curve from farnum2006, already held by this atlas - intracardiac fluorescein and
+    fluoresceinated dextrans imaged live in murine proximal tibia, 332 Da reaching concentrations
+    comparable to the vasculature, 3 kDa about 60 per cent, 10 kDa about a tenth, 40 kDa and above
+    undetectable, with epiphyseal and metaphyseal fronts equally permissive. Mature masses confirmed from
+    UniProt this round: IGF-1 P05019 mature chain residues 49-118, 70 aa, about 7.6 kDa; IGFBP-3 P17936
+    mature 28-291, about 28.7 kDa before heavy glycosylation; IGFBP-5 P24593 mature 21-272, about 28.5
+    kDa; ALS P35858 mature 28-605, about 63 kDa before glycosylation. IGFALS transcript 0.00 CP10K in all
+    four donors and all zones, computed here.'
+  species: multiple
+  source_ref: farnum2006
+  uncertainty: 'THE PARTITION CURVE IS MOUSE AND THE COMPLEX STOICHIOMETRY IS TEXTBOOK BIOCHEMISTRY, NOT A
+    MEASUREMENT IN CARTILAGE - no study has measured IGF-1 partition into a growth plate at all, in either
+    the free or the bound state, so the 10 per cent figure is INTERPOLATED from dextran standards of
+    similar mass and is not a measurement of this ligand. Dextrans are flexible random coils and a
+    globular 7.6 kDa protein does not necessarily behave like a 10 kDa dextran; the true value could be
+    several-fold either way. IGF-1 is also cationic at physiological pH and the same node that holds the
+    partition curve holds krishnan2018 showing cartilage uptake rises with positive charge, which would
+    push the true partition UP relative to a neutral dextran of matched size. THE DIRECTION OF THE
+    ARGUMENT IS ROBUST EVEN SO: whatever the exact free-IGF partition, a 140-150 kDa ternary complex is an
+    order of magnitude beyond the 40 kDa zero point, and ALS is not made locally. The ratio between what
+    circulates and what can enter is large. That is enough to make total IGF-1 a poor proxy without
+    needing the exact number.'
+- parameter: 'THE WILD-TYPE GAIN-OF-FUNCTION - rhPAPP-A2 raised body length in PATHWAY-INTACT mice, and in
+    males it raised length without weight'
+  value: increased body length in wild-type males and females; no body-weight increase in wild-type males
+  unit: direction of effect on body length
+  conditions: 'fernndezarjona2026. Daily recombinant human GH, IGF-1 or PAPP-A2 from postnatal day 5 to
+    35, in Pappa2 knockout AND Pappa2 wild-type mice of both sexes, n=7-15 per group. Overall treatment
+    effect on BODY LENGTH in wild-type males from PND5 for rhGH and rhPAPP-A2, and from PND20 for rhIGF1;
+    a treatment effect on body length in wild-type females for all three from PND5. Per-timepoint
+    univariate analysis put the rhPAPP-A2 effect at PND32-35. On body WEIGHT in wild-type males, rhGH
+    raised it but rhIGF1 and rhPAPP-A2 did NOT. Read against harboe2024, where PAPP-A knockout shortens the
+    mouse femur about 7 per cent (p=0.03) at 4, 6 and 18 weeks.'
+  species: mouse
+  source_ref: fernndezarjona2026
+  uncertainty: 'THE WILD-TYPE ARM IS WHY THIS ROW EXISTS - this project has repeatedly been burned by
+    treating correction of a deficiency as evidence of gain in an intact system (CORR-077), and here the
+    intact arm was run and was positive. THE LIMITS ARE HEAVY AND SEVERAL. It is an OVERALL TREATMENT
+    EFFECT from a factorial ANOVA; the per-timepoint significance in males appears only at PND32-35, at
+    the very end. Absolute bone lengths are not given in the text - the skeletal data are reported as
+    RATIOS to body weight and body length - so the magnitude cannot be extracted from what was read.
+    Body length in a mouse is not femur length. PND5 to PND35 is the fast juvenile phase, which is the
+    OPPOSITE end of the age axis from a bone-age-16 subject, and nothing here runs to skeletal maturity.
+    AND DECISIVELY FOR THE THREAD THIS NODE SITS IN: no growth plate histology and no hypertrophic cell
+    size was measured, so this does not test phase 3. It shows the axis can be pushed upward in an intact
+    animal. It does not show it acts on h_term.'
+localization:
+- 'growth plate matrix: the size filter, entry from epiphyseal and metaphyseal fronts equally'
+- 'growth plate hypertrophic zone: where IGF1 transcript rises and where phase 3 occurs'
+- 'liver: where ALS is made and where the ternary complex that cannot enter the plate is assembled'
+human_evidence: indirect
+human_evidence_note: The expression recreation is human and is the best dataset in existence for the
+  question, but it is transcript. The partition curve is mouse. The gain-of-function is mouse. No human
+  free-IGF measurement in cartilage exists.
+species_basis:
+- human
+- mouse
+translation_risk: high
+translation_risk_reason: The central inference chains a mouse partition curve measured with dextrans onto
+  human transcript data and textbook complex stoichiometry, and the supporting gain-of-function is a
+  juvenile mouse without any growth-plate readout.
+confidence: D
+claim_grades:
+- claim: Local IGF bioavailability is restrained in the human hypertrophic zone by binding-protein excess.
+  grade: X
+  basis: RETRACTED, CORR-104. Computed as CP10K mean expression the binder-to-ligand ratio does not rise
+    into hypertrophy in two of three usable donors, and IGF1 transcript RISES into hypertrophy in all
+    three. The prior support was detection rates used as if they were expression levels.
+- claim: Only free IGF-1 can enter the growth plate matrix in useful quantity, so circulating total IGF-1
+    is a poor proxy for what phase 3 receives.
+  grade: D
+  basis: An inference joining a mouse dextran partition curve, UniProt mature masses, and the observation
+    computed here that IGFALS is 0.00 in all donors and zones. No measurement of IGF-1 partition into
+    cartilage exists in any form, and IGF-1's positive charge would push its true partition above a
+    matched neutral dextran. The direction survives the uncertainty; the magnitude does not.
+- claim: Raising the FREE IGF-1 fraction increases longitudinal growth in a pathway-intact animal.
+  grade: C
+  basis: fernndezarjona2026, rhPAPP-A2 in wild-type mice, overall treatment effect on body length in both
+    sexes and length without weight in males. Factorial ANOVA main effect with per-timepoint significance
+    only at PND32-35, no absolute bone lengths in the text, juvenile mouse, and no growth-plate readout.
+- claim: This establishes the PAPP-A axis as an h_term or phase 3 lever.
+  grade: E
+  basis: NO. Neither harboe2024 nor fernndezarjona2026 measured hypertrophic cell size, and harboe2024's
+    actual lesion is in the PROLIFERATIVE zone - fewer intact columns, reduced cell and column density,
+    with total growth plate height unchanged at 273.2 against 268.6 micrometres. On present evidence this
+    axis acts on columnar organisation, not on terminal cell height.
+key_refs:
+- ref_id: fernndezarjona2026
+  year: 2026
+  type: primary
+  one_line_finding: rhPAPP-A2 increased body length in WILD-TYPE mice of both sexes, and in males without
+    increasing body weight - the rare pathway-intact gain-of-function on this axis.
+- ref_id: harboe2024
+  year: 2024
+  type: primary
+  one_line_finding: PAPP-A knockout shortens the mouse femur about 7 per cent with total growth plate
+    height unchanged; the lesion is proliferative-zone columnar disorganisation, and hypertrophic cell
+    size was not measured.
+- ref_id: farnum2006
+  year: 2006
+  type: primary
+  one_line_finding: Live partition curve in murine proximal tibia - 332 Da about 100 per cent, 3 kDa about
+    60, 10 kDa about 10, 40 kDa undetectable, epiphyseal and metaphyseal fronts equally permissive.
+- ref_id: cooper2013
+  year: 2013
+  type: primary
+  one_line_finding: Phase 3 is the variable phase of terminal enlargement and is abolished in Igf1-null
+    mice, which is why local IGF supply is the question this node exists to test.
+- ref_id: chu2026
+  year: 2026
+  type: dataset
+  one_line_finding: GSE288028, the four-donor human growth-plate single-cell dataset the recreation was
+    computed from.
+open_questions:
+- g_l5_is_phase3_local_igf_the_real_h_term_lever
+contradicts: []
+last_verified: '2026-08-08'

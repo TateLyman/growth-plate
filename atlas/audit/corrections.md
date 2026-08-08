@@ -4522,3 +4522,69 @@ initiates.
 Consequence: the node's STC2 claim is regraded, and the therapeutic reading changes from "inhibit STC2"
 to "raise pericellular free IGF-1 in the hypertrophic zone", where the existing human-addressable agent
 (recombinant PAPP-A2, dauber2016) is aimed at the wrong pappalysin for this tissue by expression.
+
+## CORR-104 — I used DETECTION RATES as if they were expression levels, and when the calculation is done properly my own support for the IGF-restraint hypothesis disappears
+
+CORR-103 reported that "IGFBP3 (H/P 3.98) and IGFBP5 (H/P 2.50) rise into hypertrophy while PAPPA falls
+(H/P 0.52)" and called this "a stronger form of the restraint hypothesis than the STC2 version". Those
+numbers came from `human_growth_plate_expression.byzone.csv`, whose values are the **percentage of cells
+with a non-zero count** — a droplet DETECTION RATE, driven by sequencing depth and capture efficiency as
+much as by biology. The tool's own docstring says so. **Detection rates cannot be summed or ratioed across
+genes**, and I did exactly that to build a sequestration argument.
+
+Recomputed properly with `atlas/tools/igf_zonal_balance.py`, written this round: CP10K-normalised **mean
+expression** per zone per donor, from the same raw GSE288028 matrices, using the identical zone calls.
+
+**Binder:ligand ratio, sum(IGFBP1–6) / sum(IGF1+IGF2), proliferative → hypertrophic:**
+
+| donor | stem | prolif | prehyp | **hyper** | direction |
+|---|---|---|---|---|---|
+| donor1 | 4.89 | 13.84 | 3.41 | **3.27** | falls 4× |
+| donor2 | 3.40 | 6.33 | 1.93 | **6.37** | flat |
+| donor3 | 3.20 | 3.26 | 5.87 | **4.35** | rises 1.3× |
+| donor4 | 22.16 | — (13 cells) | 100.18 | 8.43 | unusable |
+
+**Not concordant. Two of three donors go flat or the wrong way.** The kill criterion I wrote into the
+script before running it — *if the binder:ligand ratio does not rise into the hypertrophic zone, the
+restraint hypothesis loses its only supporting observation* — is met.
+
+Worse for the hypothesis: **IGF1 transcript RISES into hypertrophy in all three usable donors**
+(0.04→0.36, 0.10→0.24, 0.00→0.06 CP10K). Local IGF-1 production goes UP exactly where phase 3 happens.
+That is the opposite of local restraint. On CP10K, IGFBP3 barely moves (0.01→0.06, 0.17→0.19, 0.02→0.02)
+— the "H/P 3.98" was a detection artefact. Only IGFBP5 rises in all three (0.74→1.06, 0.34→1.26,
+0.21→0.25) and PAPPA falls in all three (2.32→1.18, 0.40→0.25, 0.48→0.46), which is a real but much
+smaller residue than I claimed. STC2 is non-concordant (falls in two donors, rises in one).
+
+Zone calls validate: COL10A1 rises 0.06→2.60, 0.11→1.12, 2.60→69.24.
+
+**Status: the IGF-restraint-by-binding-protein hypothesis is not supported by the best available human
+data, computed correctly. It should not be carried forward as an expression argument.**
+
+## CORR-105 — the real constraint is not sequestration inside the plate, it is SIZE EXCLUSION at the matrix, and the atlas already held the curve
+
+The recreation returned one flatly unambiguous result: **IGFALS is 0.00 CP10K in every donor and every
+zone** (and 0 of 4 donors by detection). The acid-labile subunit is hepatic, as expected — but the
+consequence had not been drawn.
+
+Against the partition curve this atlas already holds (farnum2006, live intracardiac fluorescein and
+fluoresceinated dextrans in murine proximal tibia: 332 Da ≈ 100 %, 3 kDa ≈ 60 %, 10 kDa ≈ 10 %, 40 kDa
+undetectable), with mature masses confirmed from UniProt this round:
+
+| species | mass | predicted partition |
+|---|---|---|
+| **free IGF-1** (P05019, mature 70 aa) | ~7.6 kDa | ~10 %, on the steep decline |
+| IGF-1 + IGFBP-5 binary (P24593 mature ~28.5 kDa) | ~36 kDa | ≈ 0 |
+| IGF-1 + IGFBP-3 binary (P17936 mature ~28.7 kDa, heavily glycosylated) | ~36–52 kDa | ≈ 0 |
+| ternary IGF-1/IGFBP-3/ALS (P35858 mature ~63 kDa, glycosylated) | ~140–150 kDa | 0 |
+
+In circulation the great majority of IGF-1 travels in the ternary complex. **None of that reservoir can
+enter a growth plate, and the plate cannot assemble it locally either because ALS is not transcribed
+there.** Only FREE IGF-1 enters, and only at roughly a tenth.
+
+This reframes the whole thread and it is consistent with two things the atlas already holds and could not
+explain: lui2018 reporting long-bone chondrocytes "already at ceiling for IGF", and erdaseries2025 patient
+2 growing at 10 cm/year with IGF-1 at −3.8 SDS. **If the plate only ever sees the free fraction, total
+IGF-1 SDS is a poor proxy for what reaches phase 3** — which is why raising total IGF-1 can look
+saturated while the plate is not.
+
+The restraint is real. It is the matrix acting as a size filter, not IGFBP excess inside the tissue.

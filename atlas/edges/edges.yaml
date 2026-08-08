@@ -19552,3 +19552,57 @@ edges:
     to a reduced chondrocyte VOLUME SET-POINT, which makes the target a regulated quantity rather than a
     pump. Both inhibitor concentrations are far above selective range and the full text is needed.
   traversal_usable: false
+- edge_id: e01271
+  source: only_free_igf_reaches_the_plate
+  target: hz_igf_restraint_hypothesis
+  relation: correlates_with
+  sign: '-'
+  magnitude: binder-to-ligand ratio proliferative to hypertrophic 13.84 to 3.27, 6.33 to 6.37 and 3.26 to
+    4.35 in the three usable donors - not concordant
+  context: human, GSE288028 four donors, CP10K mean expression per zone computed in this atlas with
+    atlas/tools/igf_zonal_balance.py against a kill criterion pre-registered in the script
+  evidence_tier: T2
+  refs:
+  - chu2026
+  confidence: C
+  notes: A NEGATIVE edge against an atlas-generated hypothesis. The restraint idea rested on binding
+    protein excess in the hypertrophic zone; computed correctly it does not hold, and IGF1 transcript
+    RISES into hypertrophy in all three donors. Supersedes the detection-rate version in CORR-103.
+  traversal_usable: true
+- edge_id: e01272
+  source: only_free_igf_reaches_the_plate
+  target: drug_property_screen
+  relation: required_for
+  sign: +
+  magnitude: free IGF-1 7.6 kDa at roughly 10 per cent partition against binary complexes 36-52 kDa and
+    ternary 140-150 kDa at approximately zero
+  context: farnum2006 partition curve in murine proximal tibia, UniProt mature masses, and IGFALS 0.00
+    CP10K in all four human donors and all zones
+  evidence_tier: T2
+  refs:
+  - farnum2006
+  - chu2026
+  confidence: C
+  notes: The delivery term applied to IGF for the first time. If the plate admits only the free fraction
+    then circulating total IGF-1 is a poor proxy for what phase 3 receives, which is consistent with
+    lui2018's IGF ceiling and with erdaseries2025 patient 2 growing at 10 cm/yr at IGF-1 minus 3.8 SDS.
+    Interpolated from dextran standards, not measured for this ligand; IGF-1's positive charge would push
+    the true value up.
+  traversal_usable: true
+- edge_id: e01273
+  source: only_free_igf_reaches_the_plate
+  target: growth_hormone
+  relation: correlates_with
+  sign: '-'
+  magnitude: increased body length in WILD-TYPE mice on rhPAPP-A2, without increased body weight in males
+  context: mouse, postnatal day 5 to 35, daily rhGH, rhIGF1 or rhPAPP-A2 in Pappa2 wild-type and knockout,
+    n=7-15 per group
+  evidence_tier: T1
+  refs:
+  - fernndezarjona2026
+  confidence: C
+  notes: Signed negative because the implication is that GH is an inefficient route to this endpoint, not
+    that it is harmful - what GH raises is largely ternary-complex IGF-1 that cannot enter the plate,
+    whereas PAPP-A2 raises the free fraction that can. The wild-type arm is what makes this worth an edge;
+    but no growth-plate histology and no hypertrophic cell size were measured, so it does not reach phase 3.
+  traversal_usable: false
