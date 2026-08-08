@@ -4708,3 +4708,15 @@ machnicki2022 is the experiment the whole thread was proposing, run by the group
 white2023, the same group's review, gives the endpoint: childhood obesity produces "growth acceleration, **premature growth cessation**, and ultimately, **diminished bone quality**, while systemic IGF-1 levels remain normal."
 
 So the intervention has effectively been performed. Raising local growth-plate IGF-I bioavailability accelerates elongation, disorganises the plate, ends growth early and degrades bone quality. For a goal defined as **adult** height at a late bone age, that is not a partial success — it is the specific failure this project has been guarding against since round 1.
+
+## CORR-111 — I pushed a YAML-breaking node again, second time in this project
+
+Commit 89d2046 went to the remote with `thread_status_igf_versus_temperature.yaml` unparseable — an
+unterminated single-quoted scalar in a `basis` field, the same failure mode as the apostrophe-in-scalar
+break pushed earlier in `every_axis_checked_against_the_stack.yaml`. The validator caught it in the same
+command as the push, so the error was visible in the output and I pushed anyway rather than fixing first.
+
+Fixed in the following commit. The rule that already existed — run `validate.py` and read the result
+BEFORE `git push`, not in the same compound command — is the rule I broke. Chaining validate and push in
+one shell invocation is what makes it possible to see the error only after the push has happened, so the
+two must be separate calls.
