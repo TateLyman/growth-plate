@@ -1,0 +1,156 @@
+id: the_transport_asymmetry_probably_fails
+name: MODELLED - the transport asymmetry that was the last escape for the dual-resistant CNP analogue is
+  more likely to fail than to hold, and one unmeasured length dominates the answer
+aliases:
+- does evading NPR-C help the plate more than the vasculature
+- Thiele modulus growth plate
+- is the growth plate diffusion limited
+- transport asymmetry
+type: hypothesis
+layer: L12
+stub: false
+summary: 'ROUND 121 LEFT THE DUAL-RESISTANT CNP ANALOGUE STANDING ON ONE ASSUMPTION. Three candidates had
+  already died on the same trap - a higher dose, an NPR2 allosteric modulator and systemic clearance
+  blockade all raise systemic exposure, which is what the cardiovascular margin forbids. The dual-resistant
+  analogue escaped only if removing a LOCAL sink raises concentration more in the growth plate than in the
+  vasculature. That was flagged as transport physics rather than measurement. This node models it.
+  THE QUESTION HAS A CLOSED FORM AND REDUCES TO ONE NUMBER. The vasculature is well mixed, so its
+  concentration is set by plasma and removing a local sink changes nothing there. The plate is an
+  avascular slab fed by diffusion from the epiphyseal and metaphyseal faces while consuming ligand
+  internally. Steady state is the classical reaction-diffusion result, C(x)/C_surface = cosh(phi x/L) /
+  cosh(phi), with the THIELE MODULUS phi = L sqrt(k/D). Small phi means the plate equilibrates with plasma
+  before consuming much and behaves like the vasculature - the asymmetry does not exist. Large phi means
+  ligand is consumed before it penetrates, and cutting consumption raises interior concentration steeply.
+  THE ANSWER, OVER 48 PARAMETER COMBINATIONS SPANNING THE PLAUSIBLE RANGE: 40 PER CENT OF THE SPACE IS
+  WELL-MIXED WITH NO ASYMMETRY AT ALL, 40 PER CENT IS TRANSITIONAL, AND ONLY 21 PER CENT IS
+  DIFFUSION-LIMITED. And the size of the prize tracks phi brutally. Reducing local consumption TENFOLD
+  raises centre concentration by only 1.03-fold at phi = 0.25, 1.11-fold at phi = 0.5 and 1.47-fold at
+  phi = 1 - therapeutically nothing. It only becomes worth having at phi of 2 or more (3.1-fold) and
+  transformative at phi = 5 (29-fold). So the argument does not merely need the asymmetry to exist, it
+  needs the plate to sit in the least likely fifth of the parameter space.
+  ONE LENGTH DOMINATES, AND THIS ATLAS DOES NOT HOLD IT. phi scales as L to the first power against D to
+  the minus one half and k to the one half, so the HALF-THICKNESS OF THE CARTILAGE DISC is the dominant
+  lever and the only one that moves the answer linearly. At L = 100 micrometres almost the whole space is
+  well mixed; at L = 1000 micrometres most of it is diffusion-limited. THE ATLAS HAS NO NUMERIC HUMAN
+  PHYSEAL THICKNESS - growth_plate_height carries only qualitative rows - and two literature searches this
+  round failed to return one. That single number is worth more to this question than any other datum
+  named in this node.
+  AN INDEPENDENT EMPIRICAL CHECK POINTS THE SAME WAY, TOWARD SMALL phi. If the plate were strongly
+  diffusion-limited, exposure DURATION would dominate outcome, because the model also shows that at
+  L of 500 micrometres or more with low diffusivity the equilibration time is 69 to 833 minutes against
+  vosoritide plasma half-life of 27.9 minutes - the plate would never see the peak at all. Navepegritide
+  releases CNP with a half-life of 5.3 days, roughly 300-fold longer than vosoritide, and the two produce
+  SIMILAR annualised growth velocities. That is weak evidence - the atlas grades the cross-trial comparison
+  as corroboration only and the weakest available design - but it points away from strong diffusion
+  limitation. So does the within-cohort vosoritide finding that exposure correlated with urine cGMP but
+  not with growth.
+  THE CONSEQUENCE FOR THE THREAD. The ligand branch should be treated as PROVISIONALLY CLOSED rather than
+  pursued. The dual-resistant analogue remains the correct molecule IF the plate is diffusion-limited, and
+  the chemistry for it exists, but the modelling says that is the minority case and the empirical hints
+  agree. What the model also surfaces is that the alternative lever - EXPOSURE DURATION rather than
+  affinity engineering - is already occupied by navepegritide, so even the favourable branch does not
+  point at an unbuilt molecule as strongly as round 121 implied.'
+quantitative:
+- parameter: 'REGIME CENSUS OVER THE PLAUSIBLE PARAMETER SPACE - THE ASYMMETRY IS THE MINORITY CASE'
+  value: 'well-mixed (phi<0.5) 40 per cent; transitional 40 per cent; diffusion-limited (phi>=2) 21 per
+    cent of 48 combinations'
+  unit: per cent of parameter combinations, and fold rise in centre concentration per tenfold cut in
+    local consumption
+  conditions: 'atlas/tools/plate_transport_model.py. Grid: half-thickness L 100, 250, 500, 1000
+    micrometres; effective diffusivity D 1e-7, 3e-7, 1e-6 cm2/s; local consumption half-life 10, 30, 120,
+    600 minutes. GAIN FROM A TENFOLD CUT IN CONSUMPTION, at the plate centre: 1.03-fold at phi 0.25,
+    1.11 at phi 0.5, 1.47 at phi 1, 3.12 at phi 2, 6.78 at phi 3, 29.3 at phi 5. SENSITIVITY: phi scales
+    as L^1, D^-0.5, k^0.5, so L is the dominant and only linear lever - at the grid midpoint phi runs
+    0.36, 0.90, 1.79, 3.58 across the four thicknesses.'
+  species: not_applicable
+  source_ref: farnum2006
+  uncertainty: 'THIS IS A MODEL OVER PARAMETERS THE ATLAS DOES NOT HOLD, NOT A MEASUREMENT, AND NONE OF THE
+    THREE INPUTS IS SOURCED TO A NUMBER HERE. L is unmeasured in this atlas and was not returned by
+    literature search this round. D for a 4 kDa solute in PHYSEAL as opposed to articular matrix is
+    explicitly recorded as never measured in the existing gap set. k, local consumption, is not measured
+    anywhere and was bounded only by the whole-body elimination rate of vosoritide, which must exceed it.
+    The grid was chosen to bracket plausibility, not from data, so the 40/40/21 split is a property of the
+    grid as much as of the biology and MUST NOT be read as a probability. The source_ref is nominal -
+    farnum2006 supplies the partition curve that motivates the question, not the parameters. The model
+    also assumes first-order consumption, a symmetric slab with both faces at plasma concentration, and
+    steady state - and its own transient section shows the steady-state assumption fails for part of the
+    grid.'
+- parameter: 'THE STERIC-VERSUS-CONSUMPTION AMBIGUITY THE MODEL CANNOT RESOLVE, AND WHICH DECIDES
+    EVERYTHING'
+  value: 'a flat depth profile implies steric exclusion and small phi; a U-shaped profile implies
+    consumption and allows phi to be fitted directly'
+  unit: qualitative shape of the depth-concentration profile
+  conditions: 'farnum2006 reports partition as a single number per molecular size - 332 Da about 100 per
+    cent of vascular concentration, 3 kDa about 60, 10 kDa about 10, 40 kDa undetectable. Those means are
+    equally consistent with equilibrium steric exclusion at entry, which gives a FLAT reduced profile
+    through the depth, and with internal consumption, which gives a U-SHAPED profile depleted at the
+    centre. The two predict the same mean and opposite answers to this node question.'
+  species: mouse
+  source_ref: farnum2006
+  uncertainty: 'NO DEPTH PROFILE FOR ANY SOLUTE IN A GROWTH PLATE IS HELD IN THIS ATLAS. serrat2014 images
+    tracers in a live plate by multiphoton at a DELIBERATELY STANDARDISED depth, 50 micrometres below the
+    deepest edge of the perichondrium, which is the right method used in a way that discards exactly the
+    variable needed here. Whether the raw image stacks would permit the profile to be recovered
+    retrospectively is unknown.'
+localization:
+- 'the whole question is about the difference between two compartments - a well-mixed vasculature whose
+  concentration is set by plasma, and an avascular diffusion-fed cartilage slab - so the answer is a
+  property of geometry and transport rather than of any molecule'
+human_evidence: absent
+human_evidence_note: 'No human data enters the model. The parameters are unsourced ranges, the partition
+  curve motivating it is mouse, and the empirical cross-checks - the navepegritide versus vosoritide
+  half-life comparison and the vosoritide exposure-response null - are human but are weak comparative
+  designs the atlas already grades as corroboration only.'
+species_basis:
+- in_silico
+translation_risk: high
+translation_risk_reason: A model whose three inputs are all unmeasured cannot be translated to a decision
+  on its own; its output is a ranking of what to measure, not a prediction to act on.
+confidence: D
+claim_grades:
+- claim: The transport asymmetry, if it exists, is described by the Thiele modulus and its magnitude is
+    calculable once L, D and k are known.
+  grade: B
+  basis: Standard reaction-diffusion result for a slab with first-order consumption; the functional form
+    is not in question. Graded B rather than A only because the growth plate departs from the idealisation
+    - it is not a uniform slab, consumption is receptor-mediated and therefore saturable rather than
+    strictly first-order, and the two faces are not identical.
+- claim: The transport asymmetry is likely to be large enough to rescue the dual-resistant CNP analogue.
+  grade: X
+  basis: 'THE MODELLING SAYS IT PROBABLY IS NOT. Meaningful gain requires phi of 2 or more, which is 21
+    per cent of the swept space, and below phi = 1 a tenfold cut in local consumption buys under
+    1.5-fold at the plate centre. Two independent empirical hints point the same way - a roughly 300-fold
+    half-life difference between navepegritide and vosoritide producing similar growth velocity, and
+    vosoritide exposure predicting urine cGMP but not growth within cohort. Neither hint is strong, and
+    the sweep is a grid rather than a probability distribution, so this is a demotion rather than a
+    refutation.'
+- claim: Growth-plate half-thickness is the parameter that most changes the answer.
+  grade: B
+  basis: phi scales as L to the first power while depending on D and k only as square roots, so L is the
+    sole linear lever; across the grid midpoint phi runs 0.36 to 3.58 over a tenfold change in L, crossing
+    the entire decision range. This is arithmetic on the closed form rather than an empirical claim.
+- claim: This node closes the ligand branch of thread 3.
+  grade: D
+  basis: 'It provisionally closes it, which is a weaker and more accurate statement. The dual-resistant
+    analogue remains the right molecule in the diffusion-limited branch, the chemistry exists, and no
+    measurement has been made - the case for closing rests on a parameter sweep over unmeasured inputs
+    plus two weak empirical hints. One depth profile would settle it in either direction.'
+key_refs:
+- ref_id: farnum2006
+  year: 2006
+  type: primary
+  role: the partition curve that motivates the question, and the source of the steric-versus-consumption
+    ambiguity the model cannot resolve
+- ref_id: ema_voxzogo_epar_2021
+  year: 2021
+  type: regulatory
+  role: the vosoritide plasma half-life of 27.9 minutes used to bound local consumption and to run the
+    transient comparison
+open_questions:
+- g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+contradicts:
+- 'DEMOTES THE ARGUMENT ADDED TO the_compound_this_thread_needs IN ROUND 121. That node stated the
+  transport asymmetry as the escape from the systemic-exposure trap and flagged it as inference. The
+  modelling here does not refute it but makes it the minority case, so the compound specification should be
+  read with this node attached rather than on its own.'
+last_verified: '2026-08-08'
