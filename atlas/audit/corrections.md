@@ -4911,3 +4911,29 @@ reports where the pharmacology actually lives.
 multi-disciplinary review before opening new questions about its pharmacology. They routinely contain
 receptor-selectivity panels, biodistribution, dose-proportionality and the sponsor's own interaction
 analysis — none of which appear in the label or in the primary literature.
+
+## CORR-117 — I passed a PMID I had not seen returned by a search, for the second time, and it created a reference to a calcium-signalling paper
+
+Adding the Williams solute-transport paper, I typed `--pmid 17496042` from a guess at the accession
+adjacent to the one I had. It resolved, and `addref.py` did exactly what it is built to do — wrote canonical
+metadata from the resolved record — producing `rdiger2007`, *"Hybrid stochastic and deterministic
+simulations of calcium blips."* The correct PMID, returned by the Europe PMC title search in the same
+command, was **17496046**.
+
+This is a direct recurrence of **CORR-106**, whose standing rule reads: *never pass a PMID not returned by
+a search in the same session.* I had the correct PMID on screen, in the output of the search I ran
+immediately before, and typed a different one anyway.
+
+**Caught and removed** before anything cited it — verified uncited by grep across nodes, edges and gaps
+before deletion — and replaced with `williams2007` (17496046) and `yun2018` (30032590), both resolved from
+search output.
+
+**Why the guard did not fire.** `addref.py` refuses to create an entry for a PMID that does not exist. It
+cannot refuse one that exists and is the wrong paper, and that is the whole failure mode of typing an
+accession from memory. The script's own docstring says fabricated citations cannot enter the atlas; it
+should say fabricated citations to *non-existent* records cannot enter. A mistyped digit in a dense
+accession space lands on a real paper more often than not.
+
+**Rule tightened:** pass PMIDs by copy from search output in the same command, never retyped. Where a
+title search has already returned the record, prefer resolving by title or DOI over the numeric accession
+entirely — this round the DOI and the exact title were both available and either would have failed safe.
