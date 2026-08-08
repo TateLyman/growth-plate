@@ -116,7 +116,15 @@ quantitative:
     Osmotic swelling, which is the LARGEST component of the enlargement - phase 2 takes the cell from
     about 2000 to 8000 femtolitres while dry mass density falls to about 0.07 pg/fl, roughly 60 per cent
     dilution - UNHIT, no agent, no aquaporin or proteoglycan lever held. T3-driven hypertrophic
-    conversion - UNHIT.'
+    conversion - UNHIT. UPDATED ROUND 104: THE PHRASE "no aquaporin or proteoglycan lever held" WAS
+    ACCURATE ABOUT THIS ATLAS AND WRONG ABOUT THE LITERATURE. The transport machinery of the swelling is
+    identified and quantified - bush2010 removed about 35 per cent of rat metatarsal elongation with a
+    single NKCC inhibitor while hypertrophic CELL NUMBER stayed at 193 against 192, and reached 80 per
+    cent with an anion-exchange inhibitor added; abubakar2022 replicates the direction with NHE1. The
+    atlas held 1230 references and none of them. THE CORRECTED STATUS OF THIS SUB-TERM IS NOT "UNHIT" BUT
+    "ONLY EVER SWITCHED OFF": every experiment on it in every species is an inhibitor, because the
+    clinical demand on this machinery has always been to REDUCE swelling. See
+    the_swelling_machinery_has_only_ever_been_switched_off.'
   species: mouse
   source_ref: shuhaibar2021
   uncertainty: 'THIS IS THE MOST ACTIONABLE UNHIT ITEM IN THE AUDIT AND ALSO THE ONE MOST LIKELY TO BE
@@ -212,10 +220,21 @@ quantitative:
     from'
   value: 50 to 61 per cent of variance, leading by 0.36 years
   unit: per cent of variance in peak bone mineral content velocity; years of lead
-  conditions: rauch2004, 70 boys and 68 girls followed longitudinally by DXA through puberty - peak LEAN
+  conditions: 'rauch2004, 70 boys and 68 girls followed longitudinally by DXA through puberty - peak LEAN
     MASS velocity, but NOT peak height velocity and not sex, was independently associated with peak bone
     mineral content velocity, explaining 50 per cent of variance for total body, 61 per cent for arms and
-    41 per cent for legs, with peak lean mass velocity LEADING peak BMC velocity by 0.36 years
+    41 per cent for legs, with peak lean mass velocity LEADING peak BMC velocity by 0.36 years. ROUND 104
+    ADDS A SECOND SUBSTRATE TO THIS TERM AND IT IS THE STRONGEST HUMAN EVIDENCE IN THE WHOLE AUDIT:
+    CIRCULATING SULFATE. scherer2025 shows per-variant effects on plasma sulfate correlate r=0.70 with
+    per-variant effects on standing height across 466,907 UK Biobank participants, through an allelic
+    series in the two renal transporters that set the circulating level. Sulfate is the substrate for
+    proteoglycan sulfation, which sets the matrix fixed charge density that drives the osmotic swelling
+    of TERM 3 - so this single item connects the absorptive term to h_term. It is the ONLY entry in this
+    audit with a subject-specific blood readout of whether the lever is engaged at all (reference range
+    0.3-0.5 mM, not measured in routine practice), and the only one that is not tumour-suppressor
+    adjacent. It is also entirely a DESCENDING-limb result - no human observation exists above the normal
+    range. See the_swelling_machinery_has_only_ever_been_switched_off and
+    g_l5_does_sulfate_supply_have_headroom_above_normal.'
   species: human
   source_ref: rauch2004
   uncertainty: 'THIS IS THE TERM THE AUDIT ADDS THAT A PURE GROWTH-MECHANISM ENUMERATION WOULD MISS, AND
@@ -283,6 +302,14 @@ claim_grades:
   basis: Two human natural experiments with lifetime absent oestrogen signal, one of whom ceased growing
     spontaneously at 24 with plates still open. n=1 for the cessation, which is a history statement rather
     than a measurement series, and every comparable case is right-censored by treatment.
+- claim: Circulating sulfate supply is the largest unoccupied item in this audit.
+  grade: C
+  basis: It sits on h_term, which this atlas argues is the largest free term; about 80 per cent of
+    longitudinal growth is hypertrophic volume increase and the sulfation that drives it osmotically is
+    human-genetics-anchored (SLC26A2 0.797-0.889, PAPSS2 0.438-0.598) where the membrane transporters
+    score 0.000; and the upstream substrate carries a graded human dose-response with adult height at
+    r=0.70 over 466,907 people. GRADED C AND NOT HIGHER BECAUSE EVERY HUMAN DATUM IS A LOSS OF FUNCTION -
+    the ranking is of the GAP, not of a demonstrated gain, and the substrate may simply be saturated.
 - claim: The absorptive term is height-negative rather than merely hazardous, because spinal deformity
     converts vertical growth into curve.
   grade: D
@@ -302,6 +329,10 @@ key_refs:
   type: primary
   one_line_finding: Intra-articular SAG gave +3.63 per cent femur and +1.65 per cent whole leg in rat -
     the only pool intervention with a length endpoint.
+- ref_id: scherer2025
+  type: primary
+  one_line_finding: Per-variant effects on plasma sulfate correlate r=0.70 with per-variant effects on
+    standing height across 466,907 UK Biobank participants - the substrate arm of the absorptive term.
 - ref_id: rauch2004
   type: primary
   one_line_finding: Peak LEAN MASS velocity, not peak height velocity, predicts peak bone mineral content

@@ -11640,3 +11640,66 @@ gaps:
     survives to adult height, because explant elongation over days and terminal bone length dissociate repeatedly
     in this atlas. A MEK inhibitor is also not an FGFR inhibitor - it sits downstream of every RTK, so a null with
     U0126 would be a stronger redundancy result than a null with erdafitinib, and a positive would be weaker.
+- gap_id: g_l5_does_sulfate_supply_have_headroom_above_normal
+  question: Human variation in circulating sulfate is graded with adult height across the DESCENDING limb.
+    Does the relationship continue upward - does raising plasma sulfate above the normal 0.3-0.5 mM range
+    increase growth-plate proteoglycan sulfation, matrix fixed charge density, hypertrophic cell swelling
+    and longitudinal growth - or is the substrate already saturating at normal concentrations?
+  type: search_established
+  layer: L5
+  why_it_matters: 'This is the largest unoccupied item in the coverage audit and the only one with a
+    subject-specific readout. FOUR REASONS IT OUTRANKS THE OTHER UNHIT TERMS. (1) It sits on h_term, the
+    term the atlas argues is large, movable, several-fold variable across mammals, held flat across human
+    childhood and achieved largely osmotically - and about 80 per cent of longitudinal growth is
+    hypertrophic volume increase. (2) Unlike every other unhit item, the human evidence is
+    population-scale and GRADED rather than a mouse phenotype: per-variant effects on plasma sulfate
+    correlate r=0.70 with per-variant effects on standing height across 466,907 people. (3) It is the only
+    lever in the entire audit with a BLOOD TEST that says whether this particular subject is on the steep
+    part of the curve - plasma sulfate against a published reference range, and it is not measured in
+    routine practice. (4) It is not tumour-suppressor adjacent, unlike SMO, mTORC1 and PP2A, which are the
+    three compounds the audit was otherwise forced to name. It is also the substrate arm of TERM 8, the
+    absorptive term, which the audit called unhit and height-negative.'
+  what_is_known: 'Sulfate is the fourth most abundant anion in human circulation at 0.3-0.5 mM and is not
+    routinely measured. Transcellular renal reabsorption via SLC13A1 (NaS1, apical) and SLC26A1 (SAT1,
+    basolateral) sets the circulating level. scherer2025 built a rare-variant allelic series across both
+    genes: effect on plasma sulfate correlates r=0.70 with effect on standing height (UK Biobank, N at
+    least 466,907) and r=0.57 with sitting height, with a genotype dose-response in NaS1 p.Arg272Cys
+    (heterozygotes N=289 median height z -0.13; double heterozygotes with SAT1 p.Leu348Pro N=4 median
+    -1.13; one homozygote -3.51). tise2025 reports five children with biallelic SLC13A1 loss of function,
+    all short, all with scoliosis or skeletal dysplasia, with hyposulfatemia measured. Slc13a1-null mice,
+    and dogs and sheep with natural homozygous loss of function, show growth retardation and
+    osteochondrodysplasia. The intracellular machinery is human-expressed and human-genetics-anchored -
+    SLC26A2 in 4 of 4 growth-plate donors at 13.8-82.2 per cent of cells with an Open Targets genetic
+    association of 0.797-0.889 for skeletal dysplasia, PAPSS2 4/4 at 15.5-94.2 with 0.438-0.598.
+    bakadlag2026 showed sulfate supplementation REVERSED tungstate-impaired chondrogenesis in murine limb
+    culture.'
+  what_is_missing: 'EVERY HUMAN DATUM IS A LOSS OF FUNCTION. The series runs from normal downward and
+    there is no observation above the normal range at all. No human sulfate-supplementation study with any
+    growth endpoint exists in any age group - searched and not found. No study has measured plasma sulfate
+    in short-stature or constitutionally-delayed children as an exposure. No dose-response of plasma
+    sulfate against growth-plate proteoglycan sulfation exists in any species. And the one supply-side
+    experiment anywhere, bakadlag2026, is a rescue from a poisoned state rather than a gain from a normal
+    one, which is a different experiment.'
+  nearest_evidence:
+  - scherer2025
+  - tise2025
+  - bakadlag2026
+  - bush2010
+  discriminating_experiment: 'TWO TIERS, AND THE FIRST IS ONE BLOOD TEST. TIER 1, OBSERVATIONAL AND
+    IMMEDIATE: measure plasma sulfate by ion chromatography or LC-MS/MS against the 0.3-0.5 mM reference
+    range. If it sits in the lower part of the range the graded curve says there is something to recover
+    and Tier 2 is worth running; if it sits mid-range or above, this gap predicts nothing and should be
+    closed rather than pursued - a genuine kill criterion, which most items in the audit lack. TIER 2,
+    THE SATURATION QUESTION: in a growth-plate organ culture or metatarsal assay, vary medium sulfate
+    across and ABOVE the physiological range and measure, at each concentration, (a) 35S incorporation
+    into glycosaminoglycan as the sulfation readout, (b) terminal hypertrophic cell volume by confocal
+    imaging, and (c) elongation. READOUTS UNDER COMPETING HYPOTHESES - HEADROOM EXISTS: sulfation,
+    terminal cell volume and elongation all continue to rise above the physiological concentration, and
+    the three rise together. SATURATED: sulfation plateaus at or below physiological sulfate and neither
+    volume nor elongation moves, which closes the substrate lever for a normally-nourished subject while
+    leaving the deficiency case intact. DEFENDED: sulfation rises but terminal cell volume does not,
+    which would be the first direct evidence that h_term is homeostatically held rather than merely
+    unvaried - the objection terminal_cell_volume_is_the_undefended_term has carried unresolved since it
+    was written.'
+  tractability: 4
+  search_log_ref: g_l5_does_sulfate_supply_have_headroom_above_normal

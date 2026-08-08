@@ -19459,3 +19459,61 @@ edges:
     donors). Preclinical, in an Fgfr3 gain-of-function background, and partly self-defeating in a subject
     already on an FGFR inhibitor because LB-100 opposes FGF-INDUCED dephosphorylation (CORR-083).
   traversal_usable: false
+- edge_id: e01266
+  source: the_swelling_machinery_has_only_ever_been_switched_off
+  target: hypertrophic_volume_increase
+  relation: required_for
+  sign: +
+  magnitude: bumetanide removed ~35 per cent of 24-hour elongation and 50 micrometres of late hypertrophic
+    zone with hypertrophic cell number unchanged at 193 against 192 (p=0.937)
+  context: rat, P7 metatarsal and metacarpal organ culture, 24 hours, NKCC inhibitor bumetanide 12.5-200
+    micromolar; bumetanide plus the anion-exchange inhibitor DIDS reached 80 per cent inhibition
+  evidence_tier: T1
+  refs:
+  - bush2010
+  - abubakar2022
+  confidence: C
+  notes: The cell-count control is what makes this an h_term edge rather than a growth edge. A third of
+    elongation disappeared without losing a cell, so the loss is terminal cell height alone. Neonatal rat
+    organ culture with non-selective inhibitor concentrations; the direction replicates independently in
+    abubakar2022 with different transporters.
+  traversal_usable: true
+- edge_id: e01267
+  source: the_swelling_machinery_has_only_ever_been_switched_off
+  target: terminal_cell_volume_is_the_undefended_term
+  relation: correlates_with
+  sign: +
+  magnitude: about 80 per cent of longitudinal growth is hypertrophic volume increase against about 10 per
+    cent from proliferative division
+  context: the atlas thesis that h_term is large, movable and achieved largely osmotically, now supplied
+    with the transport mechanism that performs the osmosis
+  evidence_tier: T2
+  refs:
+  - bush2010
+  - fernndeziglesi2020
+  confidence: C
+  notes: This edge supplies the missing mechanism under a claim the atlas had carried on morphometry
+    alone. It does NOT resolve that node's open objection - whether h_term is unvaried or actively
+    defended - and the discriminating experiment for that sits in
+    g_l5_does_sulfate_supply_have_headroom_above_normal.
+  traversal_usable: true
+- edge_id: e01268
+  source: the_swelling_machinery_has_only_ever_been_switched_off
+  target: every_axis_checked_against_the_stack
+  relation: correlates_with
+  sign: +
+  magnitude: 'per-variant effect on plasma sulfate correlates r=0.70 with per-variant effect on standing
+    height, UK Biobank N at least 466,907'
+  context: human rare-variant allelic series across SLC13A1 and SLC26A1, the two transporters performing
+    transcellular renal sulfate reabsorption; supported by five children with biallelic SLC13A1 loss of
+    function, all short with scoliosis or skeletal dysplasia
+  evidence_tier: T1
+  refs:
+  - scherer2025
+  - tise2025
+  confidence: C
+  notes: This is the substrate arm of TERM 8, which the coverage audit marked unhit. It is the only unhit
+    item in that audit carrying a graded HUMAN dose-response and the only one with a subject-specific
+    blood readout. The series measures the DESCENDING limb only - nothing here shows that raising sulfate
+    above normal raises height, which is the gap.
+  traversal_usable: false

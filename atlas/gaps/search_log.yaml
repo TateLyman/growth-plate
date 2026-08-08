@@ -2126,3 +2126,33 @@ searches:
     meta-analysis or review. NO factorial or head-to-head combination experiment of an FGFR inhibitor with a CNP-axis
     agent was found in any species or background. The null is that the experiment has not been run, not that it
     was run and was negative.'
+- gap_id: g_l5_does_sulfate_supply_have_headroom_above_normal
+  database: Europe PMC
+  exact_query_string: ("sodium sulfate" OR "sulfate supplementation" OR "MSM" OR methylsulfonylmethane) AND (oral
+    OR dietary) AND ("plasma sulfate" OR "serum sulfate" OR bioavailability) AND human
+  filters: format=json, pageSize=6, resultType=core, no date limit
+  date_run: '2026-08-08'
+  hit_count: 68571
+  screened_count: 6
+  reason_none_qualified: 'The hit count is large because MSM and sulfate are heavily represented in the nutraceutical
+    literature, and that is exactly what the screen returns - pet food formulation, post-exercise immune mRNA, nail
+    and dermal supplements, muscle-function narrative reviews. NOT ONE screened record measures a growth or stature
+    endpoint, and none establishes a dose-response of oral sulfate on plasma sulfate in children. The nutraceutical
+    literature on sulfur compounds and the skeletal-growth literature do not intersect anywhere in the top-ranked
+    records. Three further angles were run the same day and are recorded here because each independently returned
+    an absence in the UPWARD direction, which is the substance of this gap: (1) (NKCC1 OR SLC12A2) AND (activator
+    OR activation OR agonist) AND (cell swelling OR volume increase) - 4764 hits, all neurological, oncological,
+    epithelial or renal, none skeletal; (2) (metatarsal OR "bone rudiment" OR "organ culture") AND bone AND growth
+    AND (osmolality OR osmolarity OR tonicity OR hypotonic) - 470 hits, nothing that manipulated tonicity to raise
+    elongation; (3) "growth plate" AND (aquaporin OR AQP1 OR AQP3) AND (hypertrophy OR chondrocyte OR "bone growth")
+    - 82 hits, nothing with a growth endpoint. The DOWNWARD direction, by contrast, is populated on the first try:
+    the same database returns bush2010 and abubakar2022 immediately for bumetanide, DIDS and EIPA. The asymmetry
+    is the finding.'
+  additional_source_checked: 'Open Targets Platform v4 GraphQL, 2026-08-08, associated-disease lists filtered for
+    body height, stature, dwarfism, brachyolmia, chondrodysplasia and skeletal dysplasia. Every membrane transporter
+    and regulatory kinase in the swelling machinery returned genetic_association 0.000 - SLC12A2, SLC12A4, SLC12A6,
+    SLC12A7, WNK1, STK39, OXSR1, SLC4A3, SLC9A1, AQP1, AQP3, NFAT5, PIEZO1 - while the sulfation machinery returned
+    SLC26A2 0.797-0.889, TRPV4 0.765-0.834, PAPSS2 0.438-0.598 and ACAN 0.426-0.598, against a positive control of
+    NPR2 at 0.872-0.912. Human growth-plate expression was checked in GSE288028 via atlas/tools/gp_expression.py:
+    SLC26A2 4/4 donors at 13.8-82.2 per cent of cells, PAPSS2 4/4 at 15.5-94.2, SLC12A2 4/4 at 18.3-35.5, and SLC13A1
+    0/4 as expected for a renal-specific transporter.'
