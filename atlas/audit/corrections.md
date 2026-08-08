@@ -3948,3 +3948,55 @@ dysregulating promoter methylation to facilitate proliferation. The direction th
 maintenance-methylation axis is an oncogenic direction — structurally the same problem the pool term already
 has, where all three control points (SMO, mTORC1, the PDGFRA-positive perichondrium) are tumour-suppressor
 adjacent.
+
+---
+
+## CORR-086 — I said the gain-of-function did not exist. It was in the paper I was already citing.
+
+Rounds 88 and 89 named "no gain-of-function with a bone length endpoint, in any species" as the missing
+experiment on the pool axis, and CORR-085 logged it as a structural gap with an oncogenic direction.
+`liu2022gp130` — which round 89 added to the bibliography, quoted, and built a whole node around — contains
+the gain-of-function, in the same figure sequence as the deletions I did quote:
+
+> Acan-Cre^ERT2 × Rosa26-**Stat3C** (conditional constitutively active Stat3), tamoxifen at P2/P3, analysed
+> at 1 month: **dramatic hypercellularity** in proximal tibial growth plates, hyperproliferation confirmed
+> by **EdU incorporation**, and constitutive Stat3 activation **rescued** the proliferation defect of
+> Acan-Cre^ERT2; gp130^fl/fl mice.
+
+Round 89 read the abstract and the deletion results and wrote "no gain-of-function was run" into a
+`claim_grades` entry graded E. The experiment was three sections further down the same PDF. **This is the
+fifth instance of the class** (CORR-058, CORR-064, CORR-065, CORR-077, now this), and the fourth in which
+the refuting material was already inside the atlas rather than outside it. The CORR-077 exclusivity check
+did not fire because the claim was phrased as "no gain-of-function was run" inside an `uncertainty` field
+rather than in one of the patterns the regex matches — the check is too narrow, and widening it is the fix,
+not another resolution to read more carefully.
+
+What the correction does **not** change: the gain-of-function has **no length endpoint**. It reports
+hypercellularity and EdU only. So the claim "raising gp130/STAT3 output lengthens bone" moves from E
+(no experiment exists) to D (the proliferative arm is demonstrated, the length arm is not) — not to B. And
+the observed phenotype is a *hypercellular, thicker* plate, which is the same histological direction as the
+FGFR-inhibitor widening that preceded the human kyphoscoliosis and the SCFE series.
+
+## CORR-087 — the stack contains a drug that lowers the axis this round just identified
+
+`liu2022gp130` reports that estradiol raises STAT3 protein and activity in **both** female and male
+articular chondrocytes in vitro, and that **letrozole**, given intraperitoneally daily for 7 days to
+sexually mature female mice, **reduced both Stat3 levels and Stat3 activity** in sternal chondrocytes.
+
+The proposed stack contains anastrozole. Every node in this atlas has treated aromatase inhibition as
+acting on one term — duration — with the only cost being bone-density and the SCFE hazard. It also lowers,
+in vivo and measurably, the signalling axis whose postnatal deletion causes reduced proliferation and
+**premature growth plate fusion**. Oestrogen is doing two opposing things at the plate: closing it through
+ESR1, and sustaining proliferation through gp130/STAT3.
+
+**This supplies a mechanism for a null the atlas has carried unexplained since round 35.** Letrozole
+achieves lower oestradiol and slower bone-age advance than anastrozole and delivers **no** predicted-height
+advantage — a combined 3-year gain of +1.3 cm. If deeper oestrogen suppression buys more time and
+simultaneously costs more STAT3-driven proliferation, the curve flattens exactly as observed. That was
+previously recorded as an unexplained dose-response failure.
+
+Limits, and they are severe: 7 days, sexually mature **female** mice, **sternal** chondrocytes rather than a
+growth plate, biomarker readout with no length or fusion endpoint. The subject here is male and the in vivo
+arm was female-only. And the direction of the net human effect is not in doubt — smith1994 and herrmann2002
+are men with lifetime absent oestrogen signal at 204 and 197 cm. What changes is that the cost of the
+duration arm is now named and measurable rather than assumed to be zero.

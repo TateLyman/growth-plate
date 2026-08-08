@@ -387,7 +387,21 @@ def validate(quota=False):
         r"s?\s+(?:of\s+(?:it|this)\s+)?exists?"
         r"|nobody has (?:ever )?(?:done|run|measured|tested|reported|published)"
         r"|has never been (?:done|run|measured|tested|reported|published)"
-        r"|there (?:is|are) no (?:published |human |animal )*(?:study|trial|data|evidence))",
+        r"|there (?:is|are) no (?:published |human |animal )*(?:study|trial|data|evidence)"
+        # CORR-086 widened these. The round-89 miss was the phrase "no gain-of-function
+        # was run", sitting in an uncertainty field, about a paper the atlas was citing.
+        # None of the original patterns matched it. Absence claims are made in far more
+        # shapes than the first pass assumed, so match the SHAPE - a negated existence or
+        # a negated past-tense experiment verb - rather than a fixed list of sentences.
+        r"|no [\w \-]{0,40}(?:was|were|has been|have been) (?:run|done|performed|reported|"
+        r"measured|tested|conducted|published|attempted)"
+        r"|(?:was|were) (?:never|not) (?:run|done|performed|reported|measured|tested|conducted)"
+        r"|no [\w \-]{0,40}(?:experiment|arm|endpoint|comparison|control|dose[\- ]response|"
+        r"gain[\- ]of[\- ]function|loss[\- ]of[\- ]function|study|trial|measurement)s?"
+        r"[\w \-]{0,30}(?:exists?|was|were|has|have)"
+        r"|none (?:exists?|has been|have been|was|were) (?:run|done|reported|published|found)"
+        r"|(?:in|for) any species\b[^.]{0,30}(?:no|never|nothing)"
+        r"|no [\w \-]{0,40}(?:in any species|of any kind))",
         re.I)
     BASIS = re.compile(r"null established by search|exclusivity_basis|established by a targeted search"
                        r"|search_log", re.I)
