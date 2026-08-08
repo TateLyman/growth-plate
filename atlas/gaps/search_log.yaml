@@ -2212,3 +2212,36 @@ searches:
     is weak for navepegritide specifically, since ACcomplisH reported NO symptomatic hypotension - the
     sustained-release design already avoids the systemic toxicity that would have made a local route
     valuable.'
+- gap_id: g_l12_does_the_human_plate_produce_its_own_cnp
+  database: GSE288028 human growth-plate scRNA-seq, re-analysed with atlas/tools/cnp_zonal_system.py
+  exact_query_string: 'Not a literature query - a re-analysis. Zone-resolved CP10K pseudobulk and
+    detection rate for NPPC, NPR2, NPR3, MME, FURIN with NPPA/NPPB/NPR1 as negative controls, across the
+    four directly-processed human donors, using the zone caller and chondrocyte gate from
+    gp_expression.py so the table is comparable to the two existing ones. Followed by a whole-sample
+    ungated pass and a calibration panel of secreted signalling ligands (IHH, PTHLH, GDF5, WNT5A, SFRP5,
+    FGF18, BMP2, VEGFA).'
+  filters: four fresh human samples only; cultured and mouse arms of the series excluded
+  date_run: '2026-08-08'
+  hit_count: 4 donors, 3 zones, 27,704 cells total
+  screened_count: all cells; zones with fewer than 30 cells suppressed rather than reported
+  reason_none_qualified: 'THE TEST WAS VOID AND THE PRE-REGISTERED CRITERION WAS INADEQUATE - CORR-114.
+    NPPC came back at the detection floor in every donor (2 to 27 positive cells out of 383 to 12,911;
+    whole-sample CP10K 0.001 to 0.015), and the positives were COL2A1-positive chondrocytes rather than a
+    contaminating compartment, so on the pre-registered reading this was a clean CONSUMER result. The
+    calibration panel, which should have been part of the pre-registration and was not, voids it: PTHLH
+    sits at 0.43 to 1.40 per cent of cells and GDF5 at 0.20 to 0.34 per cent - the canonical growth-plate
+    paracrine factor and a known essential secreted regulator, at the same floor as NPPC. The floor is a
+    property of low-abundance secreted-ligand transcripts in droplet data, not a biological absence.'
+  additional_source_checked: 'WHAT SURVIVES THE VOID, AND IT IS NOT NOTHING. (1) NPR2 IS DIRECTLY
+    CONFIRMED IN THE HUMAN PUBERTAL PLATE - detected in 2.5 to 8.7 per cent of cells sample-wide in all
+    four donors and present in all three zones (CP10K 0.025 to 0.324), well above the ligand floor class.
+    The receptor a PAM would act on is demonstrably there. (2) MME, THE PROTEASE THAT DEGRADES CNP, IS
+    ALSO PRESENT at 0.9 to 9.9 per cent of cells, above the floor class - so ligand arriving at the plate
+    meets local degradation. This bears on a drug-design asymmetry the atlas had not drawn: vosoritide is
+    a NEP-RESISTANT analogue while navepegritide releases UNMODIFIED CNP-38, a NEP substrate, into a
+    tissue that transcribes NEP. Against reading much into that, hakata2024 found neprilysin inhibition
+    NOT additive with supplied CNP, and age-gated to 3-4 weeks in mice with 99 per cent of the effect gone
+    by 4-5 weeks. (3) NEGATIVE CONTROLS BEHAVED - NPPB was exactly 0.000 in every donor and every zone.
+    (4) A DATASET-WIDE CAVEAT worth carrying forward: COL2A1 ranges 31 to 947 CP10K across the four
+    donors, a 20 to 30-fold spread on the canonical chondrocyte marker, so absolute CP10K is not
+    comparable across donors in GSE288028 and only within-donor ratios should be used.'

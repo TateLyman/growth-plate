@@ -11938,3 +11938,60 @@ gaps:
     is dead and the temperature thread has no surviving form.'
   tractability: 5
   search_log_ref: g_l6_does_warming_potentiate_delivery_at_a_late_plate
+- gap_id: g_l12_does_the_human_plate_produce_its_own_cnp
+  question: Does the human pubertal growth plate PRODUCE its own CNP, or does it CONSUME CNP arriving from
+    the circulation? The answer decides whether an NPR2 positive allosteric modulator is a growth-plate
+    drug or an indiscriminate one, and it decides how much a cartilage-targeted ligand can buy.
+  type: known_unknown
+  layer: L12
+  why_it_matters: 'IT IS THE CRUX FOR BOTH ROUTES OUT OF THE CNP DOSE CEILING, AND IT DECIDES THEM IN
+    OPPOSITE DIRECTIONS. thread_3_the_dose_ceiling_is_a_systemic_safety_margin establishes that the arm is
+    capped by a systemic cardiovascular margin while its efficacy depends on a plate concentration nobody
+    measures. Two escapes exist. A CARTILAGE-TARGETED LIGAND raises plate concentration at fixed systemic
+    Cmax, and is worth most if the plate is a CONSUMER starved of ligand. An NPR2 POSITIVE ALLOSTERIC
+    MODULATOR raises receptor gain wherever ligand is present, and is tissue-selective ONLY if the plate
+    is a PRODUCER carrying a higher local ligand concentration than the vasculature - otherwise it
+    amplifies the hypotension liability in the same ratio as the growth effect. The mouse literature says
+    producer: cartilage-specific Nppc deletion reproduces essentially the whole phenotype and Nppc-null
+    mice are severely dwarfed. Whether that holds in a HUMAN plate at puberty, which is the age and
+    species that matter here, is unmeasured.'
+  what_is_known: 'Mouse: CNP is made by growth-plate chondrocytes and acts locally; cartilage-specific
+    Nppc deletion reproduces the phenotype (cnp_protein node). Human dosage genetics runs both ways -
+    NPPC-adjacent translocations roughly double plasma CNP and cause overgrowth, NPPC ring-domain
+    mutations cause dominant short stature, and NPR3 loss of function causes extreme tall stature
+    (nppc_duplication_tall_stature, graded A). Human plate NPR2 is directly confirmed here: detected in
+    2.5 to 8.7 per cent of cells sample-wide across all four GSE288028 donors and all three zones. MME
+    (neprilysin), the protease that degrades CNP, is also detected at the human plate, at 0.9 to 9.9 per
+    cent of cells - above the low-abundance ligand class.'
+  what_is_missing: 'A LOCAL CNP CONCENTRATION, OR ANY QUANTITATIVE LOCAL-VERSUS-CIRCULATING COMPARISON, IN
+    A HUMAN GROWTH PLATE. The attempt made this round is recorded as VOID. cnp_zonal_system.py measured
+    NPPC transcript in GSE288028 and found it at the detection floor - 2 to 27 positive cells out of 383
+    to 12,911 per donor, the positives being chondrocytes rather than a contaminating compartment - which
+    read naively supports CONSUMER. But a calibration panel run afterwards shows PTHLH at 0.43 to 1.40 per
+    cent and GDF5 at 0.20 to 0.34 per cent of cells, i.e. the canonical growth-plate paracrine factor and
+    a known essential secreted regulator sit at the SAME floor as NPPC. Droplet scRNA-seq cannot resolve
+    this class of low-abundance secreted-ligand transcript, so the measurement is uninformative rather
+    than negative - CORR-114. Note also that COL2A1 differs 20 to 30-fold across donors (31 to 947 CP10K),
+    so cross-donor absolute comparison in this dataset is unsafe regardless.'
+  nearest_evidence:
+  - nakao2015
+  - farnum2006
+  - jeong2026
+  nearest_evidence_note: 'nakao2015 partitions the axis onto the hypertrophic zone in mouse; farnum2006
+    gives the partition curve that governs how much circulating ligand could arrive; jeong2026 shows human
+    height tracks receptor ACTIVITY, which is silent on where the ligand comes from. None measures a local
+    CNP concentration in human cartilage.'
+  discriminating_experiment: 'THREE ROUTES, IN ASCENDING COST, AND THE FIRST NEEDS NO NEW TISSUE.
+    (1) BULK OR TARGETED RNA on archived human growth-plate tissue, or interrogation of an existing bulk
+    human growth-plate dataset, where NPPC is not subject to droplet dropout - reported alongside PTHLH
+    and GDF5 as internal calibrators so the floor is interpretable this time. (2) IMMUNOASSAY FOR CNP OR
+    NT-proCNP ON GROWTH-PLATE TISSUE LYSATE against paired plasma from the same donor, which converts the
+    question from transcript to the concentration that actually matters; epiphysiodesis biopsies are the
+    obvious source since GSE288028 already came from that procedure. (3) In an animal, compare plate cGMP
+    response to a systemic CNP analogue between wild-type and cartilage-specific Nppc-null, which tests
+    the functional version of the question - whether local production sets the baseline the drug adds to.
+    PRE-REGISTERED READING, SET BEFORE ANY OF THESE IS RUN: plate CNP concentration exceeding paired
+    plasma by more than about three-fold supports PRODUCER and promotes the PAM route; parity or below
+    supports CONSUMER and promotes the targeted-ligand route.'
+  tractability: 2
+  search_log_ref: g_l12_does_the_human_plate_produce_its_own_cnp

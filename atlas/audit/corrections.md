@@ -4795,3 +4795,45 @@ records) to 5 = requires a new animal study, which I also established by inspect
 from the vocab; and a ref_id I substituted by blind `sed` (`accomplish2023` → `savarirayan2023`) turned out
 to be correct, but I confirmed it only afterwards. Verifying a citation after writing it is the same
 ordering error in a smaller form.
+
+## CORR-114 — I pre-registered a reading without pre-registering its calibration, and the result came back exactly as the flawed criterion predicted
+
+`cnp_zonal_system.py` was written to test whether the human growth plate produces its own CNP or consumes
+what arrives, because that question decides whether an NPR2 allosteric modulator is a growth-plate drug or
+an indiscriminate one. The docstring carried a pre-registered reading, written before the run:
+
+> NPPC at or below the detection floor in all four donors => the plate is a CONSUMER; plasma delivery is
+> the whole story and the thread's premise holds unmodified.
+
+It came back exactly there. NPPC was detected in 2 to 27 cells out of 383 to 12,911 per donor, and the
+positives were COL2A1-positive chondrocytes rather than a contaminating compartment — which even ruled out
+the obvious confound. NPR2 was robustly present. On the pre-registered criterion this was a clean CONSUMER
+result, and it supported the thread I had just opened.
+
+**It is not a result at all.** A calibration panel run afterwards — and it should have been part of the
+pre-registration, not an afterthought — puts **PTHLH at 0.43–1.40%** of cells and **GDF5 at 0.20–0.34%**,
+the same floor as NPPC's 0.04–0.52%. PTHrP is *the* canonical growth-plate paracrine factor; the PTHrP–Ihh
+loop is the axis the tissue is organised around. Nobody would conclude from this dataset that the human
+growth plate does not make PTHrP. The floor is a property of low-abundance secreted-ligand transcripts in
+droplet scRNA-seq, not a biological absence, and NPPC sits in that class.
+
+**The failure is not the dropout — it is the shape of the pre-registration.** I specified what the result
+would mean without specifying what would make the measurement *capable* of meaning it. A detection floor is
+only interpretable against genes of known abundance and known biological necessity, and choosing those
+genes after seeing the answer is not a control. Worse, the flawed criterion returned the answer that
+favoured the thread I had opened one round earlier, which is precisely the configuration where a missing
+control does the most damage.
+
+**Standing rule:** a pre-registered reading over a detection-limited assay must name its calibrators in the
+same breath as its thresholds. For scRNA-seq specifically, any claim that a gene is ABSENT requires a
+positive-control panel of genes at comparable expected abundance whose presence is not in doubt, fixed
+before the run. This is the same family as CORR-104 (detection rate used as an expression level) and
+CORR-100 (a lookup read without its positive controls) — three failures now from treating a measurement's
+output as interpretable without establishing its floor.
+
+**What survives** is recorded in `search_log.yaml` and is genuinely useful: NPR2 is directly confirmed in
+the human pubertal plate in all four donors and all three zones (2.5–8.7% of cells), MME is present above
+the floor class, and NPPB is exactly zero everywhere, so the panel was reading real signal. The
+producer-versus-consumer question is now `g_l12_does_the_human_plate_produce_its_own_cnp`, with three
+discriminating routes and a pre-registered reading that this time is anchored to a paired plasma
+comparison rather than to a detection floor.
