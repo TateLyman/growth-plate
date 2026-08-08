@@ -202,3 +202,82 @@ DMSO-stock artefact — and CORR-127 is written from it, but the atlas holds it 
 | P2 | `potter1998` | PMID 9485390, *Biochemistry* | Full text for the homologous-desensitisation
 time course and the fraction of receptor dephosphorylated. The abstract states "approximately
 one-half" of the NPR-B population is completely dephosphorylated; the kinetics are not in it. |
+
+---
+
+## Round 135 — THE GET-LIST for the decisive experiment
+
+Full reasoning in
+`nodes/L12_pharmacology_as_mechanistic_probe/the_experiment_specified_and_what_is_missing.yaml`.
+Ordered by how much each item moves the design. Everything below was attempted through
+lawful routes first; failures are noted.
+
+### BLOCKING — the design cannot be finished without it
+
+| P0 | **"Endothall: HED Chapter of the Reregistration Eligibility Decision Document"**, dated
+18 April 2005, corrected 30 September 2005, EPA docket **OPP-2004-0370** (also indexed
+EPA-HQ-OPP-2004-0370). | Contains EPA's review of the mammalian **metabolism and
+pharmacokinetics** studies — guideline 870.7485, **MRIDs 42169502, 44263501, 42200101** —
+i.e. absorption fraction, Tmax, half-life, tissue distribution and excretion for endothall
+**dosed as endothall**. This is the only plausible public home for the one number that is
+blocking: endothall's own clearance, currently confounded with fractional conversion in every
+dataset that exists. `downloads.regulations.gov` returned **HTTP 403** to every direct
+request from this session except one item that came via a search-result link. |
+
+### DOSE-SETTING
+
+| P1 | **EPA MRID 42787702** — Gallacher (1993), *Dipotassium Endothall — Dissociation
+Constant*, Ricerca Inc., 54 pp. | The pKa values. They decide whether the Donnan penalty on a
+growth-plate-bound anion is ~3-fold or ~7-fold. Unpublished; summarised in the same HED
+chapter. A published pKa from any peer-reviewed source would substitute. |
+
+| P1 | **Endothall plasma protein binding / free fraction**, any species. | Unmeasured
+anywhere this atlas can find. Enters both the clearance estimate and the Donnan calculation,
+which uses *free* plasma concentration. |
+
+| P2 | **C57BL/6J body-weight growth curve, PND21 → PND56**, sexes separate. | Converts a
+fixed-output pump into a dose trajectory. Publicly available (JAX phenotype data); simply not
+yet fetched. Currently ASSUMED values in `atlas/tools/endothall_experiment_design.py`. |
+
+### INTERPRETATION-SETTING
+
+| P1 | **shuhaibar2021 (JCI Insight 6:e141426) Figure 1F** — the per-concentration values,
+n and mean ± error, for 1 / 5 / 10 µM LB-100 and 10 µM cantharidin. | There is **no
+source-data workbook** for this paper, and the PMC OA package (`PMC8262325.tar.gz`) 404s. The
+in-tissue concentration requirement is currently three qualitative points rather than a fitted
+curve. A screenshot of panel F at readable resolution would be enough; the authors' source
+values would be better. |
+
+| P1 | **EPA MRID 42776301** — Trutter (1993), *Rat Developmental Toxicity Study with Disodium
+Salt of Endothall*, Hazleton Washington, 289 pp. | Prenatal developmental toxicity studies
+routinely include **fetal skeletal and ossification examinations**. If they exist, these are
+the **only skeletal data for endothall at any dose in any species**. The RED says only "did not
+induce developmental toxicity", which does not tell us whether bones were measured. |
+
+| P2 | **EPA MRID 43152101** — the two-generation rat reproduction study. | Source of *every*
+systemic endpoint in the endothall dossier, including the chronic LOAEL of 2 mg/kg/day and the
+decreased pup body weight at 60 mg/kg/day. Worth seeing whether pup **length** was recorded
+alongside weight. |
+
+### LOGISTICS
+
+| P2 | **Osmotic pump manufacturer specifications** — flow rate, reservoir volume, duration and
+**filled mass** for the 28-day and 42-day models. | The 10-%-of-body-weight convention against
+an ~8.5 g weanling gives a ≤0.85 g budget. If the long-duration pumps exceed it, the design has
+to change (later start, serial short pumps, or drinking water). |
+
+| P3 | **Endothall aqueous solubility** and stability at 37 °C over 28–42 days. | Required
+reservoir concentration is only ~1.4–2.4 mg/mL, so solubility is unlikely to bind — but
+stability in a pump at body temperature for six weeks is unmeasured. |
+
+| P3 | **chung2017 refs 13 and 14** — the two preclinical studies behind the claim that maximum
+PP2A inhibition in xenografts occurs 2–4 h after a single injection with full recovery taking
+≥24 h. | This is the tissue pharmacodynamic time course. If target engagement really outlasts
+plasma by that much, continuous dosing may be unnecessary and the whole plasma-versus-medium
+comparison is the wrong frame. |
+
+### NOT FETCHABLE — bench work, listed so it is not mistaken for a documentary gap
+
+- Whether **endothall itself**, as distinct from LB-100, blocks FGF-induced NPR2
+  dephosphorylation. Never tested in any system.
+- **Cartilage concentration** of endothall (or of any PPP inhibitor) in any species.

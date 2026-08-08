@@ -1,0 +1,326 @@
+id: the_experiment_specified_and_what_is_missing
+name: THE DECISIVE EXPERIMENT, SPECIFIED TO THE LAST PARAMETER - what is computable now, what is
+  inferable, and the eleven things that have to be fetched before it can be run
+aliases:
+- the minipump experiment
+- pre-registration of the phosphatase experiment
+- what is missing to design the experiment
+- the get-list
+- endothall experiment design
+type: method
+layer: L12
+stub: false
+summary: 'THE EXPERIMENT. Wild-type juvenile mice, both sexes, CONTINUOUS delivery of a PPP-family
+  phosphatase inhibitor from weaning towards skeletal maturity, against vehicle, with femur, tibia, body
+  length, cranial width, body weight and survival as endpoints, plus terminal plasma AND CARTILAGE drug
+  concentration. Continuous rather than bolus because martiniova2011 tolerated three times the daily dose
+  of the regimen that killed 42 per cent of juvenile mice in fenton2023. The same endpoint panel
+  shuhaibar2017 used for the 7E genotype, so the pharmacological effect reads directly against the
+  genetic ceiling. THIS NODE IS THE PRE-REGISTRATION: every parameter, where it comes from, and what is
+  missing.
+  WHAT IS ALREADY DECIDED BY DATA ON DISK. THE ENDPOINT AGE IS EIGHT WEEKS, NOT SIXTEEN, and that falls
+  out of recomputing the shuhaibar2017 raw per-animal file. Wild-type femur has a coefficient of
+  variation of 3.06 per cent at 8 weeks against 3.81 at 16, and the 7E effect is +13.9 per cent at 8
+  weeks against +8.4 at 16. Larger signal, tighter measurement. THE SAMPLE SIZE FOLLOWS EXACTLY: 18 per
+  group detects +3 per cent on femur at 8 weeks with 80 per cent power, 11 per group detects +4 per cent,
+  38 per group is needed for +2 per cent. Four arms at n = 20 is 80 animals and covers everything down to
+  about +3 per cent.
+  AND RECOMPUTING THAT FILE THREW UP SOMETHING THE ATLAS SHOULD HAVE NOTICED EARLIER. THE 7E ADVANTAGE
+  SHRINKS BETWEEN 8 AND 16 WEEKS - femur retains 61 per cent of its peak advantage, body length 80 per
+  cent, tibia 87 per cent. That is the velocity-versus-final-size dissociation this whole project is
+  built around, appearing inside the best genetic model this branch has. A drug should not be expected to
+  beat it.
+  WHAT THE MODELLING SAYS ABOUT DOSE. Under constant infusion C_ss equals rate over clearance. Across the
+  plausible box for a small hydrophilic dianion - volume of distribution 0.20 to 0.60 L/kg, half-life 3
+  to 8 hours - holding 1 micromolar needs roughly 0.1 to 0.6 mg/kg/day and holding 5 to 10 micromolar
+  needs roughly 0.6 to 6. The first range sits UNDER every tolerated dose the atlas knows; the second
+  straddles the rat chronic oral LOAEL of 2. So the experiment is neither obviously impossible nor
+  obviously safe.
+  AND THERE IS A PENALTY NOBODY HAS COSTED. Endothall is a DICARBOXYLIC ACID, so at pH 7.4 it is a
+  DIANION facing a fixed anionic gel. Ideal Donnan partition against the measured epiphyseal fixed charge
+  density of 0.19 to 0.35 molar puts interstitial endothall at 14 to 30 PER CENT of free plasma - a
+  further 3 to 7-fold penalty, on top of everything else, and it is specific to this compound class.
+  Steric partition is not the problem: 186 daltons sits at the top of the farnum2006 curve.
+  THE SHARPEST NUMBER IN THE WHOLE ANALYSIS. Back-calculating shuhaibar2021 Figure 1F through the
+  rollema2025 hydrolysis half-life: the 2-hour preincubation with 1 micromolar LB-100 had already
+  generated about 250 NANOMOLAR endothall - two and a half times the isolated-PP2A IC50 of 95 - AND IT
+  DID NOTHING. Five micromolar generates about 1.25 micromolar and worked. So THE INTACT TISSUE NEEDS
+  SOMETHING BETWEEN 0.25 AND 1.25 MICROMOLAR, three to thirteen times the enzyme IC50, and the shortfall
+  is penetration, or Donnan, or the wrong phosphatase, and this atlas cannot yet separate them.
+  THE ONE THING THAT ARGUES THE OTHER WAY, AND IT IS NEW. The Lixte patent reports rat pharmacokinetics
+  for two ester prodrugs, and the endothall-specific readings transfer: endothall plasma half-life 5.2 to
+  5.9 hours against parent half-lives under one hour, endothall LIVER exposure 29 to 40-fold plasma on an
+  AUC basis, and endothall NOT DETECTABLE IN BRAIN at a 20 ng/g limit while the parents reached 43 to 60
+  ng/g there. Two consequences. Tissue exposure can enormously exceed plasma, so the plasma-versus-medium
+  comparison may be too pessimistic. And THE SEDATION fenton2023 SAW AT 0.3 MG/KG IS ALMOST CERTAINLY THE
+  BRAIN-PENETRANT PARENT, NOT THE METABOLITE - which predicts that dosing endothall directly avoids the
+  CNS effect entirely.
+  WHAT CANNOT BE COMPUTED, AND IT IS ELEVEN ITEMS. The blocking one is that NOBODY HAS EVER DOSED
+  ENDOTHALL AS ENDOTHALL AND MEASURED ITS PHARMACOKINETICS IN ANY SPECIES. Every number that exists came
+  from dosing a prodrug, so endothall clearance and the fraction converted are CONFOUNDED in every
+  dataset - and that product is exactly the 7 to 22-fold by which the human measurements undershoot the
+  model. The get-list below is ordered by how much each item moves the design.'
+quantitative:
+- parameter: 'SAMPLE SIZE - COMPUTED FROM THE RAW PER-ANIMAL VARIANCE OF THE EXACT ENDPOINT, STRAIN AND AGE'
+  value: 'wild-type femur at 8 weeks: n = 12, mean 14.553 mm, SD 0.445, CV 3.06 per cent. n PER GROUP for
+    80 per cent power at alpha 0.05 two-sided: 148 for +1 per cent, 38 for +2, 18 for +3, 11 for +4, 6 for
+    +6, 4 for +8. At 16 weeks CV is 3.81 per cent and the same targets need 229, 58, 27, 16, 8 and 5'
+  unit: animals per group
+  conditions: 'Computed at round 135 from shuhaibar2017 eLife 31343 Figure 1 source data 1, the raw
+    per-animal workbook, by atlas/tools/endothall_experiment_design.py. Wild-type arm only, sexes pooled
+    because the sheet does not split sex. Tibia behaves almost identically (CV 3.02 per cent at 8 weeks);
+    body length is slightly noisier (3.50); cranial width is 3.20 and is a control endpoint, not a powered
+    one.'
+  species: mouse
+  source_ref: shuhaibar2017
+  uncertainty: 'THE POWER IS REAL BUT IT ASSUMES THE DRUG COHORT IS AS TIGHT AS A GENOTYPE COHORT, AND IT
+    WILL NOT BE. A pump adds surgery, variable delivery and variable exposure, so the treated-arm variance
+    should be inflated - a reasonable planning assumption is 1.3 to 1.5-fold on the SD, which multiplies n
+    by 1.7 to 2.2. Sexes pooled here; if the effect is sex-dependent, as some of this literature is, the
+    design needs to be powered within sex and doubles again. AND THE 4-WEEK DATA ARE UNUSABLE FOR POWER -
+    CV is 9.8 to 11.8 per cent with individual femurs as short as 8.77 mm, which looks like age or
+    measurement heterogeneity rather than biology.'
+- parameter: 'THE 7E ADVANTAGE SHRINKS BETWEEN 8 AND 16 WEEKS - THE PROJECT CENTRAL DISSOCIATION, INSIDE
+    THE BRANCH BEST GENETIC MODEL'
+  value: 'femur +13.91 per cent at 8 weeks falling to +8.44 at 16, retaining 61 per cent of the peak
+    advantage; tibia +10.15 to +8.80, retaining 87 per cent; body length +10.00 to +7.97, retaining 80 per
+    cent'
+  unit: per cent difference, 7E/7E versus wild type, and per cent retained
+  conditions: 'Recomputed at round 135 from the same raw workbook. Group sizes at 8 weeks are 12 wild-type
+    against 20 mutant; at 16 weeks 13 against 22.'
+  species: mouse
+  source_ref: shuhaibar2017
+  uncertainty: 'CROSS-SECTIONAL COHORTS, NOT LONGITUDINAL - different animals at each age, so this is a
+    difference of differences between independent samples and could be cohort composition rather than
+    catch-up. It is nevertheless the same pattern the atlas has flagged repeatedly for growth-velocity
+    interventions, and it appears here in a LIFELONG GERMLINE genotype, where there is no dosing schedule
+    to blame. IF IT IS REAL, the ceiling for a drug started late is the 16-week number and not the 8-week
+    one, and the experiment must therefore carry a 16-week arm even though 8 weeks is where the power is.'
+- parameter: 'DONNAN EXCLUSION OF A DIANION FROM GROWTH-PLATE MATRIX - A PENALTY SPECIFIC TO THIS
+    COMPOUND CLASS THAT THE ATLAS HAD NOT COSTED'
+  value: 'partition of a divalent anion into cartilage at 0.303 for fixed charge density 0.19 M, 0.189 at
+    0.28 M and 0.137 at 0.35 M - so 14 to 30 per cent of free plasma concentration'
+  unit: ratio, tissue interstitial to bath
+  conditions: 'Ideal Donnan equilibrium against a 1:1 salt bath at 0.15 M, computed at round 135. Fixed
+    charge density from lesperance1992 sodium NMR - minus 0.19 to minus 0.35 M in calf EPIPHYSEAL
+    cartilage, minus 0.28 plus or minus 0.03 M in articular. Endothall is described by EPA as being in the
+    dicarboxylic acid class, and at pH 7.4 both carboxylates are expected to be ionised.'
+  species: not_applicable
+  source_ref: lesperance1992
+  uncertainty: 'IDEALISED, AND THE IDEALISATIONS ALL SIT IN THE SAME PLACE. No activity coefficients, no
+    binding to matrix or to protein, cartilage water assumed at bath ionic strength, calf tissue used for
+    mouse, and articular plus epiphyseal cartilage used for growth plate specifically. THE PKA VALUES ARE
+    THE WEAK LINK - if endothall is substantially monoanionic at pH 7.4 rather than dianionic, the penalty
+    falls from 3-to-7-fold to 1.8-to-2.7-fold. The dissociation-constant study exists (EPA MRID 42787702)
+    and has not been read. NOTE THE DIRECTION THIS CUTS: it makes a charged inhibitor a poor choice for
+    cartilage on principle, and it is an argument for a neutral or cationic phosphatase inhibitor rather
+    than for a better dose of this one.'
+- parameter: 'THE INFUSION RATE THE EXPERIMENT NEEDS, ACROSS THE PLAUSIBLE PARAMETER BOX'
+  value: 'to hold plasma endothall at 1 micromolar: 0.08 to 0.62 mg/kg/day; at 5 micromolar: 0.39 to 3.10;
+    at 10 micromolar: 0.77 to 6.19'
+  unit: mg/kg/day, continuous
+  conditions: 'C_ss = rate / clearance, with clearance from 0.693 times volume of distribution over
+    half-life. Volume swept 0.20 to 0.60 L/kg (extracellular water for a small hydrophilic dianion,
+    upper bound allowing partial intracellular access); half-life swept 3 to 8 hours, bracketing the 5.2
+    and 5.9 hours measured for endothall in rat. Reference doses for scale: 1.5 mg/kg/day continuous
+    tolerated in adult mice (martiniova2011); 0.5 mg/kg/day as bolus, 42 per cent lethal in juveniles
+    (fenton2023); 2 mg/kg/day rat chronic oral LOAEL and 9.41 offspring NOAEL (epa_endothall_red_2005).'
+  species: mouse
+  source_ref: martiniova2011
+  uncertainty: 'THIS IS A ONE-COMPARTMENT STEADY-STATE CALCULATION WITH A GUESSED VOLUME AND A BORROWED
+    HALF-LIFE, AND IT IS THE WEAKEST QUANTITATIVE ROW IN THE NODE. It ignores the growing animal, ignores
+    protein binding, and assumes the pump delivers what it says. Its value is not the point estimate but
+    the SPAN: even the pessimistic corner of the box needs less than the dose that has already been
+    tolerated continuously, which is the fact that keeps this experiment worth running.'
+- parameter: 'WHAT THE INTACT TISSUE ACTUALLY NEEDED - THE EX VIVO DOSE-RESPONSE RE-EXPRESSED IN THE
+    ACTIVE SPECIES'
+  value: 'at the 2-hour preincubation, 1 micromolar LB-100 generates about 0.25 micromolar endothall and
+    had NO effect; 5 micromolar generates about 1.25 micromolar and worked. The in-tissue requirement is
+    therefore between 250 nanomolar and 1.25 micromolar, or 3 to 13 times the isolated-enzyme IC50 of 95
+    nanomolar'
+  unit: micromolar endothall
+  conditions: 'Computed at round 135. Hydrolysis half-life 4.9 hours at pH 7.4 and 37 degrees
+    (rollema2025) applied to the shuhaibar2021 Figure 1F protocol - 2-hour preincubation in LB-100, then
+    FGF, then confocal cGMP imaging in living newborn tibia. Over the 6-day femur culture the same
+    arithmetic gives essentially complete conversion, so the elongation experiment saw up to 10 micromolar
+    endothall.'
+  species: mouse
+  source_ref: shuhaibar2021
+  uncertainty: 'THE THREE-TO-THIRTEEN-FOLD SHORTFALL IS THE MOST INFORMATIVE UNEXPLAINED NUMBER LEFT ON
+    THIS BRANCH and it has at least four candidate explanations that the existing data cannot separate:
+    penetration into an avascular tissue over two hours, Donnan exclusion of the dianion, the physiological
+    phosphatase being something other than PP2A with a different IC50, or a requirement to inhibit a large
+    fraction of the enzyme rather than half of it. ASSUMPTIONS: no endothall in the starting stock -
+    rollema2025 says a room-temperature DMSO stock carries about 0.2 per cent - no loss of either species,
+    and free access of medium to the growth plate. AND THE UNDERLYING FIGURE 1F VALUES HAVE NOT BEEN READ:
+    shuhaibar2021 has no source-data workbook, so the concentration-response is currently three qualitative
+    points rather than a fitted curve.'
+- parameter: 'ENDOTHALL PHARMACOKINETICS IN RAT - LONG-LIVED, LIVER-CONCENTRATED, AND SHUT OUT OF THE BRAIN'
+  value: 'endothall plasma half-life 5.20 and 5.94 hours against parent half-lives of 0.39 to 0.92 hours;
+    endothall liver AUC 10820 and 15025 ng.h/g against plasma AUC 374 and 378 ng.h/mL, a 29 to 40-fold
+    tissue-to-plasma ratio; endothall NOT DETECTABLE IN BRAIN at a 20 ng/g limit while the parent
+    compounds reached 42.7 and 60.0 ng/g there'
+  unit: hours, ng.h/g, ng.h/mL
+  conditions: 'lixte_prodrug_us20160333024a1, Sprague-Dawley rats, 2 females per group, 1.25 and 1.5 mg/kg
+    intravenous, plasma and liver and brain sampled at 15 minutes and 1, 2, 6, 10 and 24 hours. THE DOSED
+    COMPOUNDS WERE TWO ESTER PRODRUGS, NOT LB-100 - the patent describes them as prodrugs designed to
+    cross the blood-brain barrier - so only the endothall-specific observations are carried here.'
+  species: rat
+  source_ref: lixte_prodrug_us20160333024a1
+  uncertainty: 'THREE CAVEATS AND TWO INFERENCES. Caveats: n = 2 per group; a patent, not a peer-reviewed
+    report; and the 5 to 6 hour figure is endothall own elimination only because formation from the parent
+    is faster than that, which is true here but would not be for a slowly hydrolysed prodrug. INFERENCE
+    ONE, GRADED E: the LIVER number is where endothall is MADE as well as where it goes, so it is not a
+    general tissue-partition coefficient - and cartilage, avascular and anionic, is the opposite kind of
+    tissue, so this should not be read as evidence that cartilage concentrates the drug. INFERENCE TWO,
+    ALSO E BUT STRONGER: endothall is excluded from brain while the esters are not, and the whole premise
+    of the patent is to fix that - which predicts that the SEDATION fenton2023 saw at 0.3 mg/kg is the
+    brain-penetrant PARENT, and that dosing endothall directly would not sedate.'
+- parameter: 'THE PUMP ITSELF - FEASIBLE ON CONCENTRATION, POSSIBLY NOT ON MASS, AND THE DOSE FALLS AS THE
+    ANIMAL GROWS'
+  value: 'a pump set to deliver 1.0 mg/kg/day to an 8.5 g mouse at weaning delivers 8.5 micrograms/day
+    fixed, which is 0.68 mg/kg/day by PND28, 0.50 by PND35 and 0.35 by PND56 - a 2.9-fold decline across
+    the dosing window. Reservoir concentration required: 1.42 mg/mL at 0.25 microlitres/hour, 2.36 mg/mL
+    at 0.15'
+  unit: mg/kg/day and mg/mL
+  conditions: 'Computed at round 135. Pump specification for the 0.25 microlitre/hour, 100 microlitre,
+    14-day model is MEASURED from martiniova2011, which used it and states the flow rate. Body weights are
+    ASSUMED C57BL/6J values and are on the get-list.'
+  species: mouse
+  source_ref: martiniova2011
+  uncertainty: 'THE MASS CONSTRAINT MAY BE THE BINDING ONE AND THE ATLAS CANNOT CHECK IT. Osmotic pumps
+    are conventionally limited to about 10 per cent of body weight, and a weanling mouse is around 8 to 9
+    grams, so the pump must weigh under about 0.85 g - which the longer-duration models may exceed. If it
+    does, the options are to start dosing later than weaning, to use the smallest short-duration pump and
+    replace it serially under repeat anaesthesia, or to abandon pumps for DRINKING WATER, which gives
+    quasi-continuous exposure with no surgery and is how the EPA studies dosed - at the cost of
+    reintroducing the oral gastric endpoint that sets endothall chronic ceiling, and of an unknown
+    absorbed fraction. THE DECLINING DOSE IS NOT NECESSARILY A DEFECT: it front-loads exposure into the
+    fastest-growing window, which is where the effect should be largest.'
+- parameter: 'THE ELEVEN MISSING ITEMS, ORDERED BY HOW MUCH EACH MOVES THE DESIGN'
+  value: 'one blocking, three that set the dose, three that set the interpretation, four that set the
+    logistics'
+  unit: count
+  conditions: 'BLOCKING - (1) ENDOTHALL PHARMACOKINETICS AFTER DOSING ENDOTHALL, any species. It does not
+    exist in the open literature; every number in the atlas came from dosing a prodrug, so clearance and
+    fractional conversion are confounded, and that product is the 7 to 22-fold by which human measurements
+    undershoot the model. The likely home is the EPA metabolism and pharmacokinetics studies, guideline
+    870.7485, MRIDs 42169502, 44263501 and 42200101, reviewed in ENDOTHALL: HED CHAPTER OF THE
+    REREGISTRATION ELIGIBILITY DECISION DOCUMENT, dated 18 April 2005 and corrected 30 September 2005,
+    docket OPP-2004-0370 - regulations.gov returned 403 to this atlas.
+    DOSE-SETTING - (2) endothall plasma protein binding and free fraction, unmeasured anywhere. (3)
+    endothall pKa1 and pKa2, which decide whether the Donnan penalty is 3-fold or 7-fold; EPA MRID
+    42787702, Gallacher 1993, unpublished. (4) The C57BL/6J body-weight growth curve from PND21 to PND56,
+    which converts a fixed pump output into a dose trajectory - publicly available and merely not yet
+    fetched.
+    INTERPRETATION-SETTING - (5) shuhaibar2021 FIGURE 1F per-concentration values, n and mean and error;
+    there is no source-data workbook and the concentration-response is currently three qualitative points.
+    (6) The rat DEVELOPMENTAL TOXICITY study, MRID 42776301, Trutter 1993 - these studies routinely include
+    fetal SKELETAL and OSSIFICATION examinations, which would be the only skeletal data that exist for
+    endothall at any dose; the RED summary says only that there was no developmental toxicity. (7) The
+    two-generation reproduction study, MRID 43152101, which is the source of every systemic endpoint in
+    the endothall dossier including the decreased pup body weight.
+    LOGISTICS - (8) manufacturer specifications and FILLED MASS for the 28-day and 42-day osmotic pump
+    models, to test the 10-per-cent-of-body-weight constraint at weaning. (9) endothall aqueous solubility
+    and formulation stability at 37 degrees over 28 to 42 days in a pump. (10) whether ENDOTHALL ITSELF,
+    as distinct from LB-100, blocks FGF-induced NPR2 dephosphorylation - never tested, and it is an
+    experiment rather than a document. (11) chung2017 reports that maximum PP2A inhibition in xenografts
+    occurs 2 to 4 hours after a single injection with full recovery taking at least 24 hours, citing two
+    preclinical studies - those two papers would give the tissue pharmacodynamic time course that decides
+    whether continuous dosing is even necessary.'
+  species: not_applicable
+  source_ref: epa_endothall_red_2005
+  uncertainty: 'ITEMS 1, 3, 6 AND 7 ARE ALL UNPUBLISHED INDUSTRY STUDIES SUMMARISED IN A REGULATORY REVIEW
+    - they can be read only through the EPA review documents or a Freedom of Information request, and the
+    review will give conclusions rather than raw data. Item 5 may only be obtainable from the authors.
+    Item 10 cannot be fetched at all. SO THE HONEST STATEMENT IS THAT THE DESIGN CAN BE COMPLETED TO ABOUT
+    EIGHTY PER CENT FROM DOCUMENTS, and the last twenty per cent - the true clearance of the active
+    species, and whether the active species even works on this target - requires bench work that has never
+    been done.'
+localization:
+- 'the unresolved quantity is spatial - everything here is plasma or medium, and the concentration that
+  matters is interstitial fluid inside an avascular anionic gel, which no one has measured for this
+  compound or any compound in this class'
+human_evidence: indirect
+human_evidence_note: 'The only human inputs are the chung2017 exposure measurements and the EPA human
+  health reference dose. The design itself is a mouse experiment and its variance structure comes from
+  mouse data.'
+species_basis:
+- mouse
+- rat
+translation_risk: high
+translation_risk_reason: 'The experiment is designed to test a mouse-to-mouse question - does a
+  pharmacological agent reproduce a fraction of a mouse genotype - and even a clean positive would leave
+  the human exposure gap and the class-level renal toxicity untouched. Its value is as a go/no-go on the
+  mechanism, not as a translational step.'
+confidence: E
+claim_grades:
+- claim: Eight weeks is the right powered endpoint and about 20 animals per group is the right size.
+  grade: B
+  basis: 'Computed from the raw per-animal variance of the exact endpoint, strain and age, in the only
+    dataset that has it. Graded B rather than A only because the treated-arm variance under pumped dosing
+    will exceed a genotype cohort variance and that inflation factor is assumed, not measured.'
+- claim: A divalent anion is electrostatically excluded from growth-plate matrix by a factor of 3 to 7.
+  grade: E
+  basis: 'Ideal Donnan arithmetic on a measured fixed charge density from a different species and a
+    partly different tissue, with the compound charge state assumed rather than read from the
+    dissociation-constant study. Directionally solid, numerically soft.'
+- claim: The sedation seen at 0.3 mg/kg is the brain-penetrant parent, not endothall.
+  grade: E
+  basis: 'Endothall was below a 20 ng/g brain limit while the ester parents reached 43 to 60 ng/g in the
+    same experiment, and the patent premise is that endothall needs an ester to get into brain. But the
+    dosed compounds were not LB-100, n was 2, and nobody has measured brain LB-100 or brain endothall
+    after LB-100 itself.'
+- claim: The intact growth plate needs 3 to 13 times the isolated-enzyme IC50.
+  grade: D
+  basis: 'Rests on one paper three qualitative concentration points, converted through a hydrolysis
+    half-life measured in a different medium by a different group. The bracket is wide because the data
+    are three points, not a curve.'
+key_refs:
+- ref_id: shuhaibar2017
+  year: 2017
+  type: primary
+  role: the raw per-animal workbook that fixes the endpoint age, the sample size and the genetic ceiling -
+    and that shows the advantage shrinking between 8 and 16 weeks
+- ref_id: shuhaibar2021
+  year: 2021
+  type: primary
+  role: the ex vivo concentration-response that, converted into the active species, gives the in-tissue
+    requirement
+- ref_id: rollema2025
+  year: 2025
+  type: primary_abstract_only
+  role: the hydrolysis half-life that makes the conversion possible
+- ref_id: lixte_prodrug_us20160333024a1
+  year: 2016
+  type: patent
+  role: the only endothall pharmacokinetics that exist - half-life, liver accumulation, and exclusion from
+    brain
+- ref_id: martiniova2011
+  year: 2011
+  type: primary
+  role: the tolerated continuous regimen and the pump specification the design is built on
+- ref_id: fenton2023
+  year: 2023
+  type: thesis
+  role: the lethal bolus regimen the design is built to avoid, and the sedation the brain data now
+    reassigns to the parent compound
+- ref_id: epa_endothall_red_2005
+  year: 2005
+  type: regulatory
+  role: the chronic dose ceiling, and the pointer to the four unpublished studies on the get-list
+- ref_id: lesperance1992
+  year: 1992
+  type: primary
+  role: the fixed charge density behind the Donnan calculation
+- ref_id: chung2017
+  year: 2017
+  type: primary
+  role: the human exposure the design has to be read against, and the xenograft pharmacodynamic claim that
+    is get-list item eleven
+open_questions:
+- g_l12_endothall_exposure_and_juvenile_tolerability
+- g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
+- g_l2d_004
+contradicts: []
+last_verified: '2026-08-08'
