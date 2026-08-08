@@ -281,3 +281,56 @@ comparison is the wrong frame. |
 - Whether **endothall itself**, as distinct from LB-100, blocks FGF-induced NPR2
   dephosphorylation. Never tested in any system.
 - **Cartilage concentration** of endothall (or of any PPP inhibitor) in any species.
+
+---
+
+## Round 136 — get-list update after the SERA risk assessment and Figure 1F
+
+**RESOLVED by `sera_endothall_2009` (SERA TR-052-16-04a, USDA Forest Service, Durkin 2009), supplied
+by the project owner:** the P0 blocking item (endothall's own PK), the pKa values, the solubility, the
+oral-absorption fraction, the parenteral toxicity, and the skeletal observation. **RESOLVED by the
+supplied Figure 1F panel:** the concentration–response, now fitted at EC₅₀ 0.69 µM endothall, Hill
+slope 5.4.
+
+**The two EPA RED PDFs supplied are the same document already fetched at round 134** (EPA 738-R-05-008),
+re-laid-out N-up. Nothing new in them.
+
+### STILL OPEN, and now much more specific
+
+| P0 | **Volume of distribution of endothall**, any species. | This is now the single largest source of
+spread in the dose calculation. The required infusion rate spans 0.03–0.31 mg/kg/day for the target
+concentration, and ~half that spread is the assumed Vd of 0.20–0.26 L/kg. The 1990 EPA IV study
+(**MRID 42169502**) that produced the half-lives will contain Vd and clearance directly. SERA states
+this study "cannot be identified" and has no cleared review — so this needs the **EPA HED Chapter**
+(18 Apr 2005 / corrected 30 Sep 2005, docket OPP-2004-0370) or a FOIA request. |
+
+| P1 | **Soo et al. 1967**, the only published endothall PK paper (rat, ¹⁴C, Table III has the
+per-organ time course). | SERA quotes fragments. The full table would give tissue:plasma ratios for
+every organ — the nearest available proxy for what cartilage might do, and the check on whether the
+kidney-concentration story holds quantitatively. Journal not identified in SERA's citation line as
+extracted; likely *J Agric Food Chem* 1967, p. 1020. |
+
+| P1 | **Gaines & Lindner 1986**, *Fund Appl Toxicol* 7:299–308 — acute toxicity in **adult AND
+weanling** rats. | SERA quotes only the adult LD₅₀s (57 M / 46 F). The paper's whole point is the
+adult-versus-weanling comparison, and our experiment doses weanlings. If juveniles are markedly more
+sensitive, every dose in the design moves. |
+
+| P2 | **Graziano & Casida 1987** and **Kawamura et al. 1990** — the two parenteral mouse studies. |
+Kawamura gives the IP LD₅₀ of 14 mg/kg that the therapeutic-window calculation now leans on; Graziano
+describes the 10 mg/kg IP syndrome (liver enlargement, lethargy, death in 60–90 min). Both are needed
+to know whether a *continuous low-rate* IP infusion shares that mechanism. |
+
+| P2 | **osmotic pump filled mass** for the 28- and 42-day models. | Unchanged from round 135. The
+10 %-of-body-weight limit against an ~8.5 g weanling is still the one logistical constraint that could
+force a redesign. |
+
+| P3 | **C57BL/6J PND21–56 growth curve**; **endothall stability at 37 °C for 4–6 weeks**. | Unchanged. |
+
+### THE THREE THINGS NO DOCUMENT CAN ANSWER
+
+1. Does **endothall itself** — not LB-100 — block FGF-induced NPR2 dephosphorylation? Never tested.
+   One Phos-tag gel or one cGi500 tibia answers it, and everything downstream assumes it.
+2. What is the **cartilage** concentration of endothall at a given plasma concentration? The Donnan
+   calculation predicts 14–30 % of free plasma; nobody has measured it for this or any compound of
+   this class.
+3. Does continuous endothall change a **bone length** in a growing animal? That is the experiment.

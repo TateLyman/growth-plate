@@ -55,11 +55,30 @@ summary: 'THE EXPERIMENT. Wild-type juvenile mice, both sexes, CONTINUOUS delive
   comparison may be too pessimistic. And THE SEDATION fenton2023 SAW AT 0.3 MG/KG IS ALMOST CERTAINLY THE
   BRAIN-PENETRANT PARENT, NOT THE METABOLITE - which predicts that dosing endothall directly avoids the
   CNS effect entirely.
-  WHAT CANNOT BE COMPUTED, AND IT IS ELEVEN ITEMS. The blocking one is that NOBODY HAS EVER DOSED
-  ENDOTHALL AS ENDOTHALL AND MEASURED ITS PHARMACOKINETICS IN ANY SPECIES. Every number that exists came
-  from dosing a prodrug, so endothall clearance and the fraction converted are CONFOUNDED in every
-  dataset - and that product is exactly the 7 to 22-fold by which the human measurements undershoot the
-  model. The get-list below is ordered by how much each item moves the design.'
+  WHAT CANNOT BE COMPUTED, AND IT WAS ELEVEN ITEMS. The blocking one was that nobody appeared to have
+  dosed endothall as endothall and measured its pharmacokinetics. The get-list below is ordered by how
+  much each item moves the design.
+  ROUND 136 UPDATE - THE BLOCKING ITEM IS ANSWERED AND THE PICTURE IMPROVED. The USDA Forest Service
+  risk assessment (sera_endothall_2009) reviews the unpublished EPA studies in far more detail than the
+  RED does, and it supplies endothall PK after dosing ENDOTHALL: rat intravenous half-life 1.8 hours at
+  0.9 mg/kg rising to 13.9 at 4.5 - SATURABLE - with oral absorption of only 5 to 7 per cent, urinary
+  excretion dominant after IV, whole-body elimination 0.325 per day, and the KIDNEY the only organ above
+  blood, which SERA attributes to proximal-tubule secretion of a weak acid. THAT LAST POINT IS A
+  MECHANISM FOR THE HUMAN RENAL DOSE-LIMITING TOXICITY, not just a coincidence between two trials.
+  AND THREE NUMBERS NOW LINE UP THAT NEVER HAVE BEFORE. The supplied Figure 1F panel, converted into
+  endothall, fits an EC50 of 0.69 MICROMOLAR with a Hill slope of 5.4 - and the fitted curve reproduces
+  the inactive third point it was not fitted to. Holding 0.7 micromolar needs 0.03 to 0.31 mg/kg/day by
+  infusion. The absorbed-dose equivalent of the two-year rat oral NOAEL is 0.10 to 0.56 mg/kg/day. THE
+  REQUIRED AND TOLERATED BANDS OVERLAP - for the first time in this thread. They do NOT overlap for a
+  near-maximal effect, and the Donnan penalty is not yet inside the comparison.
+  AND THE MOLECULE SHOULD CHANGE. LB-100 at 3 mg/kg, lethal to every juvenile mouse, is 11.2 micromoles
+  per kilogram; the intraperitoneal LD50 of endothall itself is 75.2. THE PRODRUG IS ABOUT SEVEN TIMES
+  MORE LETHAL PER MOLE THAN THE SPECIES IT DELIVERS, which is the opposite of what a prodrug should do
+  and means most of LB-100 toxicity is its own.
+  WHAT IS STILL AGAINST IT. Every chronic LOAEL in three species is DECREASED BODY WEIGHT; the only
+  skeletal observation anywhere in the endothall dossier is DELAYED ossification in fetuses of dams dosed
+  to maternal toxicity; and the pKa values, now known at 4.32 and 6.22, confirm 94 per cent dianion at
+  pH 7.4 and therefore confirm the cartilage exclusion penalty rather than removing it.'
 quantitative:
 - parameter: 'SAMPLE SIZE - COMPUTED FROM THE RAW PER-ANIMAL VARIANCE OF THE EXACT ENDPOINT, STRAIN AND AGE'
   value: 'wild-type femur at 8 weeks: n = 12, mean 14.553 mm, SD 0.445, CV 3.06 per cent. n PER GROUP for
@@ -197,6 +216,149 @@ quantitative:
     reintroducing the oral gastric endpoint that sets endothall chronic ceiling, and of an unknown
     absorbed fraction. THE DECLINING DOSE IS NOT NECESSARILY A DEFECT: it front-loads exposure into the
     fastest-growing window, which is where the effect should be largest.'
+- parameter: 'ROUND 136 - THE BLOCKING ITEM IS ANSWERED. ENDOTHALL PHARMACOKINETICS AFTER DOSING
+    ENDOTHALL, IN RAT, AND IT IS SATURABLE'
+  value: 'plasma half-life after intravenous dosing in male rat: 1.8 hours at 0.9 mg/kg and 13.9 hours at
+    4.5 mg/kg - a 7.7-fold half-life change for a 5-fold dose change. Oral absorption is POOR: about 90
+    per cent of an oral dose recovered in faeces and 5 to 7 per cent in urine; 1.2 per cent in internal
+    organs at 1 hour; 2.5 to 2.8 per cent mineralised to expired CO2. After INTRAVENOUS dosing excretion
+    is primarily URINARY at 67 per cent. Whole-body elimination rate 0.325 per day, giving an accumulation
+    factor of 3.6 on daily dosing. Tissue half-lives: kidney 1.6 hours initial and 34.6 terminal, liver
+    21.6, intestine 14.4. The KIDNEY is the only organ other than gut holding more than blood'
+  unit: hours, per cent, per day
+  conditions: 'sera_endothall_2009, the USDA Forest Service risk assessment, which reviews the unpublished
+    EPA studies in far more detail than the RED. The intravenous half-lives are from EPA MRID 42169502,
+    a 1990 study SERA notes cannot be otherwise identified; the mass-balance work is Soo et al. 1967, the
+    only published endothall pharmacokinetic paper, in adult rats dosed 3.8 to 5.8 mg/kg by gavage; the
+    9 mg/kg oral study is Bounds 1997. SERA attributes the renal concentration to active proximal-tubule
+    secretion of a weak acid, the para-aminohippurate route.'
+  species: rat
+  source_ref: sera_endothall_2009
+  uncertainty: 'THREE THINGS FOLLOW AND ALL THREE MATTER. (1) SATURABLE ELIMINATION means a continuous
+    infusion cannot be scaled linearly - concentration will rise faster than rate once the pathway
+    saturates, which is a safety problem and also means the required rate may be at the LOW end of the
+    calculated range. (2) THE RENAL CONCENTRATION EXPLAINS THE HUMAN DOSE-LIMITING TOXICITY: an actively
+    secreted organic anion is concentrated in the proximal tubule, which is exactly where chung2017 and
+    the fostriecin trial both dose-limited - and it predicts that ANY anionic PPP inhibitor handled by
+    the same transporters will dose-limit there, which is a mechanism for the class effect rather than
+    just a pattern. (3) THE ORAL ROUTE IS USELESS for systemic delivery at 5 to 7 per cent absorption.
+    CAVEATS: the 1990 IV study has no traceable citation and no cleared review, SERA says so explicitly;
+    the whole-body figure of 0.325 per day appears in SERA alongside a dimensionally inconsistent
+    "7.8 hours-1", and only the per-day value reproduces their accumulation factor of 3.6.'
+- parameter: 'THE FIGURE 1F CONCENTRATION-RESPONSE, FITTED - EC50 ABOUT 0.7 MICROMOLAR ENDOTHALL WITH A
+    HILL SLOPE OF FIVE'
+  value: 'converting the three LB-100 concentrations through the 2-hour hydrolysis: 0.25 micromolar
+    endothall gives -6 per cent rescue, 1.23 gives +96 per cent, 2.46 gives +169 per cent. Fitting the two
+    active points gives EC50 0.69 micromolar and Hill slope 5.4, which predicts 0.4 per cent rescue at the
+    inactive point it was not fitted to. 10 micromolar cantharidin gives +79 per cent; 10 micromolar
+    LB-100 OVERSHOOTS the no-FGF control by 38 per cent'
+  unit: micromolar endothall, fractional rescue
+  conditions: 'shuhaibar2021 Figure 1F, panel supplied by the project owner at round 136. BAR HEIGHTS WERE
+    READ OFF THE PANEL BY EYE - control 0.86, FGF 0.38, FGF plus 1/5/10 micromolar LB-100 0.35/0.84/1.19,
+    FGF plus 10 micromolar cantharidin 0.76. Rescue is expressed as a fraction of the FGF-induced deficit.
+    Hydrolysis fraction 0.246 over 2 hours from the rollema2025 half-life of 4.9 hours at pH 7.4.'
+  species: mouse
+  source_ref: shuhaibar2021
+  uncertainty: 'READ OFF A PLOT, SO THE VALUES ARE APPROXIMATE - but the internal check is strong: a curve
+    fitted to two points reproduces the third to within 7 percentage points, and the third point is the
+    one that matters because it is the negative. THE HILL SLOPE OF ABOUT 5 IS THE DESIGN-RELEVANT RESULT
+    AND IT CUTS BOTH WAYS - it means the dose window is narrow, a threefold undershoot gives essentially
+    nothing, but it also means a modest overshoot buys nothing extra and costs toxicity. A slope that
+    steep is not what a simple competitive enzyme inhibitor gives; it suggests a threshold, which could be
+    tissue penetration, or a requirement to inhibit most of the enzyme pool. THE 38 PER CENT OVERSHOOT
+    ABOVE CONTROL is the tonic-restraint finding again (CORR from round 130) and is the single most
+    encouraging number for a NORMAL growth plate, because it says the drug does more than undo FGF.'
+- parameter: 'REQUIRED EXPOSURE AND TOLERATED EXPOSURE NOW OVERLAP - THE FIRST TIME IN THIS THREAD'
+  value: 'holding 0.7 micromolar needs 0.03 to 0.31 mg/kg/day; holding 2 micromolar needs 0.09 to 0.89.
+    The ABSORBED-DOSE equivalent of the 2-year rat oral NOAEL of 8 mg/kg/day, at 1.2 to 7 per cent
+    absorption, is 0.10 to 0.56 mg/kg/day, and of the LOAEL of 16 is 0.19 to 1.12'
+  unit: mg/kg/day
+  conditions: 'DERIVED at round 136. Infusion rates from C_ss = rate/clearance using the two MEASURED rat
+    IV half-lives (1.8 and 13.9 hours) and a volume of distribution of 0.20 to 0.26 L/kg. Chronic oral
+    NOAEL 8 and LOAEL 16 mg/kg/day are the 2-year rat study (Plankenhorn 1990) as summarised in
+    sera_endothall_2009; oral absorption 1.2 to 7 per cent from the same source. For scale: mouse IP LD50
+    14 mg/kg single dose; LB-100 1.5 mg/kg/day continuous for 14 days tolerated in adult mice.'
+  species: rat
+  source_ref: sera_endothall_2009
+  uncertainty: 'THIS IS THE MOST CONSEQUENTIAL ARITHMETIC IN THE WHOLE THREAD AND IT IS STILL ARITHMETIC.
+    It crosses species (rat PK, rat chronic tox, mouse experiment), crosses routes (oral NOAEL converted
+    to an absorbed dose and compared with an infusion), uses an assumed volume of distribution, and
+    ignores the saturable elimination that the same data show. THE HONEST STATEMENT IS THE OVERLAP, NOT
+    THE POINT ESTIMATES: the dose needed to sit at the fitted EC50 falls inside the band that produced no
+    chronic systemic effect in a two-year study, whereas the dose needed for a near-maximal effect sits at
+    or above it. Every prior round of this thread found the two bands separated by one to two orders of
+    magnitude. AND NOTE WHAT IS STILL NOT INCLUDED: the 3 to 7-fold Donnan penalty at the cartilage, which
+    if real pushes the required plasma concentration back up and closes the overlap again.'
+- parameter: 'THE PRODRUG IS SIX TIMES MORE LETHAL PER MOLE THAN THE ACTIVE SPECIES IT DELIVERS'
+  value: 'LB-100 at 3 mg/kg intraperitoneal, lethal to ALL juvenile mice, is 11.2 micromoles/kg; the
+    intraperitoneal LD50 of endothall in mice is 14 mg/kg, which is 75.2 micromoles/kg - a 6.7-fold molar
+    difference in the direction of the prodrug being worse'
+  unit: micromoles per kilogram
+  conditions: 'fenton2023 for the LB-100 lethality, sera_endothall_2009 quoting Kawamura et al. 1990 for
+    the endothall IP LD50. Molar masses 268.3 and 186.16.'
+  species: mouse
+  source_ref: sera_endothall_2009
+  uncertainty: 'CONFOUNDED BY AGE AND ENDPOINT - juvenile 100-per-cent lethality against an adult LD50,
+    different laboratories three decades apart - so the 6.7-fold figure should be treated as an
+    order-of-magnitude statement, not a ratio. BUT THE DIRECTION IS THE POINT AND IT IS THE OPPOSITE OF
+    WHAT A PRODRUG SHOULD DO. If LB-100 toxicity were endothall-mediated it would be LESS toxic per mole,
+    because only a fraction converts. It is more toxic. So LB-100 carries substantial toxicity of its own,
+    which fits its brain penetration and its distinct tissue distribution. THIS IS THE STRONGEST ARGUMENT
+    IN THE ATLAS FOR CHANGING THE MOLECULE RATHER THAN THE SCHEDULE.'
+- parameter: 'THE CHRONIC TOXICOLOGY PROFILE OF THE ACTIVE SPECIES, SPECIES BY SPECIES'
+  value: 'chronic oral LOAELs: dog 6.5, rat 16, mouse 45 mg/kg/day, ALL defined by DECREASED BODY WEIGHT.
+    Subchronic: rat NOAEL 39 and LOAEL 118, dog LOAEL 27.5. Two-generation reproduction: proliferative
+    gastrointestinal lesions in parents at EVERY dose from 2 mg/kg/day up, so no adult systemic NOAEL;
+    offspring NOAEL 9.4 and LOAEL 60 on decreased pup body weight. Acute oral LD50 in rat 44 to 57 mg/kg.
+    Dogs are about 4-fold more sensitive than rats'
+  unit: mg/kg/day and mg/kg
+  conditions: 'sera_endothall_2009 Section 3.1.5 and 3.1.9.2 with Appendix 1 Table 10, drawing on the EPA
+    Health Effects Division chapter. The two-generation study is Trutter 1993b, dietary, at 0, 30, 150 and
+    900 ppm giving 2, 10.2 and 64 mg/kg/day in males, with lactational doses up to 104.7. SERA attributes
+    the dog sensitivity to a limited capacity to excrete organic acids, the same mechanism as for 2,4-D.'
+  species: rat
+  source_ref: sera_endothall_2009
+  uncertainty: 'THE ENDPOINT PATTERN IS THE WARNING. Every chronic LOAEL across three species is DECREASED
+    BODY WEIGHT, and the offspring LOAEL is decreased PUP body weight. There is no dose in the entire
+    mammalian dossier at which endothall makes an animal bigger, and the only growth-adjacent finding at
+    all points down. That does not refute the branch - none of these studies measured a bone, the doses
+    are oral and mostly local, and body-weight loss at a toxic dose is not the same as inhibited skeletal
+    growth - but it is the background against which any positive result would have to be read.'
+- parameter: 'ENDOTHALL AND SKELETAL DEVELOPMENT - THE ONLY BONE-ADJACENT DATUM THAT EXISTS, AND IT IS
+    NEGATIVE'
+  value: 'pregnant rats dosed 0, 8, 16 or 24 mg a.e./kg/day on gestation days 6 to 19: maternal mortality
+    2 of 25 at 16 mg/kg/day and 10 of 25 at 24; VARIOUS SKELETAL ABNORMALITIES INDICATIVE OF SLOW
+    DEVELOPMENT at the two higher dose levels, associated with maternal toxicity; maternal NOAEL 8
+    mg/kg/day'
+  unit: mg/kg/day
+  conditions: 'sera_endothall_2009 Section 3.1.9.1, describing Science Applications Inc. 1982 as reviewed
+    in detail by Burin 1983 - a more detailed review than the EPA summary, which reports only that no
+    adverse effects were noted in offspring. Behavioural tests on the offspring showed no dose-related
+    effects.'
+  species: rat
+  source_ref: sera_endothall_2009
+  uncertainty: 'THIS IS THE SKELETAL DATUM ROUND 135 ASKED FOR AND IT ARRIVES FROM A DIFFERENT STUDY THAN
+    EXPECTED - the 1982 developmental study, not the 1993 one. It points the wrong way: DELAYED skeletal
+    development. Two things blunt it. First, it appears only at doses that killed 8 and 40 per cent of the
+    dams, and delayed ossification secondary to maternal toxicity is one of the most common and least
+    specific findings in teratology. Second, it is prenatal ossification in a fetus, not postnatal
+    endochondral elongation in a juvenile, and the atlas has repeatedly found those two dissociating.
+    STILL: nobody has ever measured a long bone under endothall exposure, and the one adjacent measurement
+    that exists is in the unfavourable direction.'
+- parameter: 'THE PKA VALUES, WHICH FIX THE DONNAN PENALTY'
+  value: 'endothall acid pKa1 4.32 and pKa2 6.22; dipotassium salt 4.16 and 6.14; amine salt 4.24 and
+    6.04. At pH 7.4 the dianion fraction is therefore about 94 per cent. Water solubility 100,000 mg/L for
+    the acid and above 650,000 mg/L for the dipotassium salt'
+  unit: pKa units and mg/L
+  conditions: 'sera_endothall_2009 Table 2, adapted from EPA/OPP 2005c Table 1. Dianion fraction computed
+    as 1/(1 + 10^(pKa2 - pH)).'
+  species: not_applicable
+  source_ref: sera_endothall_2009
+  uncertainty: 'THIS CLOSES A GET-LIST ITEM AND THE ANSWER CONFIRMS THE PESSIMISTIC BRANCH: at 94 per cent
+    dianion the round-135 Donnan calculation using a valence of minus two stands essentially unchanged, so
+    the 3 to 7-fold cartilage exclusion penalty is real and not an artefact of an assumed charge state.
+    Solubility is a non-issue - the pump needs 1.4 to 2.4 mg/mL against a solubility three orders of
+    magnitude higher.'
 - parameter: 'THE ELEVEN MISSING ITEMS, ORDERED BY HOW MUCH EACH MOVES THE DESIGN'
   value: 'one blocking, three that set the dose, three that set the interpretation, four that set the
     logistics'
@@ -253,7 +415,7 @@ translation_risk_reason: 'The experiment is designed to test a mouse-to-mouse qu
   pharmacological agent reproduce a fraction of a mouse genotype - and even a clean positive would leave
   the human exposure gap and the class-level renal toxicity untouched. Its value is as a go/no-go on the
   mechanism, not as a translational step.'
-confidence: E
+confidence: D
 claim_grades:
 - claim: Eight weeks is the right powered endpoint and about 20 animals per group is the right size.
   grade: B
@@ -318,6 +480,11 @@ key_refs:
   type: primary
   role: the human exposure the design has to be read against, and the xenograft pharmacodynamic claim that
     is get-list item eleven
+- ref_id: sera_endothall_2009
+  year: 2009
+  type: regulatory
+  role: the round-136 document that answered the blocking item - endothall own pharmacokinetics, the pKa
+    values, the renal-secretion mechanism, the parenteral lethality, and the one skeletal observation
 open_questions:
 - g_l12_endothall_exposure_and_juvenile_tolerability
 - g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor

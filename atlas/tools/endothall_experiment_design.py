@@ -302,6 +302,83 @@ def pump_feasibility():
     print("  UNMEASURED and are on the get-list.\n")
 
 
+
+# --------------------------------------------------------------------------
+# 8. THE FIGURE 1F CONCENTRATION-RESPONSE, FITTED  (round 136)
+#    Bar heights read off the supplied panel by eye - APPROXIMATE.
+# --------------------------------------------------------------------------
+def fig1f_fit():
+    print("=" * 78)
+    print("8. shuhaibar2021 FIGURE 1F, RE-EXPRESSED IN ENDOTHALL AND FITTED")
+    print("=" * 78)
+    ctrl, fgf, canth = 0.86, 0.38, 0.76
+    resp = {1: 0.35, 5: 0.84, 10: 1.19}
+    t12, hours = 4.9, 2.0
+    frac = 1 - 0.5 ** (hours / t12)
+    print(f"  APPROXIMATE bar heights read off the panel: control {ctrl}, FGF {fgf},")
+    print(f"  FGF+1/5/10 uM LB-100 = {resp[1]}/{resp[5]}/{resp[10]}, FGF+10 uM cantharidin {canth}")
+    print(f"  Fraction of LB-100 hydrolysed in the 2 h preincubation: {frac:.3f}\n")
+    pts = []
+    for lb in sorted(resp):
+        endo = lb * frac
+        rescue = (resp[lb] - fgf) / (ctrl - fgf)
+        pts.append((endo, rescue))
+        print(f"    {lb:>2} uM LB-100 -> {endo:.3f} uM endothall, fractional rescue {rescue:+.3f}")
+    (c1, e1), (c2, e2) = pts[1], pts[2]
+    lg = lambda e: math.log(min(max(e, 1e-3), 0.999) / (1 - min(max(e, 1e-3), 0.999)))
+    h = (lg(e2) - lg(e1)) / (math.log(c2) - math.log(c1))
+    ec50 = c1 / math.exp(lg(e1) / h)
+    print(f"\n  HILL FIT from the two active points: EC50 = {ec50:.2f} uM endothall, slope = {h:.1f}")
+    pred = 1 / (1 + (ec50 / pts[0][0]) ** h)
+    print(f"  Predicted rescue at the INACTIVE point ({pts[0][0]:.2f} uM): {pred:.3f}"
+          f"  (observed {pts[0][1]:+.3f}) - the fit reproduces the third point it was not fitted to.")
+    print(f"  10 uM cantharidin gives {(canth - fgf) / (ctrl - fgf):+.2f} rescue;"
+          f" 10 uM LB-100 OVERSHOOTS control by {100*(resp[10]-ctrl)/ctrl:+.0f}%,")
+    print("  which is the tonic-restraint result showing up again.\n")
+    print("  THE TARGET CONCENTRATION FOR THE EXPERIMENT IS THEREFORE ABOUT 0.7 uM")
+    print("  ENDOTHALL SUSTAINED, and 1.5-2 uM for a near-maximal effect. The slope of")
+    print("  about 5 means the useful dose range is NARROW - a threefold miss on either")
+    print("  side gives almost nothing or no more than everything.\n")
+
+
+# --------------------------------------------------------------------------
+# 9. THE WINDOW, WITH BOTH SIDES NOW MEASURED  (round 136)
+# --------------------------------------------------------------------------
+def window():
+    print("=" * 78)
+    print("9. REQUIRED EXPOSURE AGAINST TOLERATED EXPOSURE - THEY OVERLAP")
+    print("=" * 78)
+    print("  MEASURED (sera_endothall_2009, from EPA MRID 42169502): endothall plasma")
+    print("  half-life after IV in male rat is 1.8 h at 0.9 mg/kg and 13.9 h at 4.5 mg/kg")
+    print("  - SATURABLE elimination, a 7.7-fold half-life change for a 5-fold dose.\n")
+    print("    infusion rate needed, mg/kg/day, using the two measured half-lives:")
+    for dose, t12h in ((0.9, 1.8), (4.5, 13.9)):
+        for vd in (0.20, 0.26):
+            cl = 0.693 * vd / t12h * 1000
+            row = f"      t1/2 {t12h:4.1f} h, Vd {vd:.2f}: "
+            for tgt in (0.7, 2.0):
+                row += f" {tgt} uM -> {tgt*MW_ENDOTHALL/1000*cl*24/1000:6.3f}   "
+            print(row)
+    print("\n    TOLERATED, all MEASURED:")
+    print("      2-year rat oral NOAEL 8 mg/kg/day; oral absorption 1.2-7 per cent")
+    print("      -> ABSORBED systemic NOAEL 0.10 to 0.56 mg/kg/day")
+    print("      2-year rat oral LOAEL 16 -> absorbed 0.19 to 1.12 mg/kg/day")
+    print("      mouse IP LD50 14 mg/kg single dose; 1.5 mg/kg/day LB-100 continuous")
+    print("      for 14 days tolerated in adult mice")
+    print("\n  READ-OFF: holding 0.7 uM needs 0.03 to 0.31 mg/kg/day and the absorbed")
+    print("  chronic no-effect band is 0.10 to 0.56. THEY OVERLAP. This is the first")
+    print("  time in this thread that a required exposure and a tolerable one have.")
+    print("  Holding 2 uM needs 0.09 to 0.89 and sits at or above the band.\n")
+    print("  AND THE PRODRUG IS THE WRONG MOLECULE ON POTENCY OF HARM:")
+    lb_umol = 1000 * 3.0 / MW_LB100
+    en_umol = 1000 * 14 / MW_ENDOTHALL
+    print(f"    LB-100 3 mg/kg IP, lethal to ALL juvenile mice = {lb_umol:.1f} umol/kg")
+    print(f"    endothall IP LD50 in mice = {en_umol:.1f} umol/kg")
+    print(f"    -> LB-100 is {en_umol/lb_umol:.1f}-fold more lethal PER MOLE than the species")
+    print("       it is supposed to be delivering, so its toxicity is largely its own.\n")
+
+
+
 def main():
     power_table()
     velocity_vs_final()
@@ -310,6 +387,8 @@ def main():
     human_reconciliation()
     ex_vivo_conversion()
     pump_feasibility()
+    fig1f_fit()
+    window()
     print("=" * 78)
     print("END. Every ASSUMED value above is an item on the get-list in")
     print("nodes/L12_pharmacology_as_mechanistic_probe/"

@@ -5336,3 +5336,43 @@ bolus — and the untested option is **endothall itself, delivered continuously 
 **Rule applied, not tightened:** a conclusion reached mid-round is provisional until the round's searching
 stops. This is recorded as a correction rather than edited away because the earlier framing was pushed to
 the user in conversation before the later sources were found.
+
+## CORR-131 — the oral LOAEL was used as if it bounded systemic exposure; endothall is only 5–7 % orally absorbed (round 136)
+
+Rounds 134 and 135 repeatedly compared a proposed **parenteral** infusion rate against the EPA
+**oral** chronic LOAEL of 2 mg/kg/day, and treated the comparison as a safety margin. That is wrong
+in two ways, both revealed by `sera_endothall_2009`:
+
+1. **Endothall is barely absorbed from the gut.** ~90 % of an oral dose appears in faeces and only
+   **5–7 % in urine**; 1.2 % is in internal organs at 1 h; 2.5–2.8 % is mineralised to expired CO₂.
+   After **intravenous** dosing, excretion flips to **67 % urinary**. So an oral mg/kg is worth
+   roughly one-twentieth of a parenteral mg/kg systemically.
+2. **The 2 mg/kg/day LOAEL is a *local* endpoint** — proliferative gastric epithelial lesions, seen
+   at every dose in the two-generation study. The relevant *systemic* figure is the **2-year rat
+   NOAEL of 8 mg/kg/day** (LOAEL 16), which converts to an **absorbed** 0.10–0.56 mg/kg/day.
+
+The corrected comparison is the one now in the node, and it changes the conclusion: the dose needed to
+hold the fitted EC₅₀ **overlaps** the absorbed chronic no-effect band, where the earlier framing had
+them separated.
+
+**Rule tightened:** never compare doses across routes without an absorption fraction, and never treat
+a portal-of-entry LOAEL as a systemic ceiling. Both errors were available to be caught from the RED's
+own phrase "the primary effects are seen at the point of entry," which the atlas quoted at round 134
+and then failed to act on.
+
+## CORR-132 — "endothall would not sedate" was too strong (round 136)
+
+Round 135 inferred, from endothall being undetectable in rat brain while its ester prodrugs were not,
+that the sedation `fenton2023` saw at 0.3 mg/kg LB-100 is a parent-compound effect and that endothall
+itself would not sedate. `sera_endothall_2009` shows that is overstated:
+
+- **10 mg/kg intraperitoneal endothall in mice** → extreme liver enlargement within 45 min, hepatic
+  glycogenolysis, **lethargy and decreased respiration**, death in 60–90 min (Graziano & Casida 1987).
+- Rabbits after ocular endothall showed **lethargy and lack of coordination** before death.
+
+So endothall *does* produce lethargy — but only at doses that also cause gross hepatic injury and
+death, which is systemic illness rather than a CNS drug effect. The inference survives in weakened
+form, and its two supports are unchanged: endothall is below a 20 ng/g brain limit while the parents
+reach 43–60 ng/g, and EPA's HIARC concluded there is **no neurotoxicity concern** across the whole
+guideline battery. The claim is now: *at non-lethal exposures* endothall is expected to spare the CNS
+where LB-100 did not. Graded E, not C.
