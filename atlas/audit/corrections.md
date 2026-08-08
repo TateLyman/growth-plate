@@ -4683,3 +4683,28 @@ ANOVA is not a between-group difference at endpoint, and when a paper reports a 
 puts the numbers in supplementary material, the prose is not sufficient. I flagged at the time that "no
 absolute bone lengths are in the text" and then used the claim anyway instead of treating the missing
 table as blocking.
+
+## CORR-109 — the atlas already held the number that closes thread 1, read in full, cited in three nodes, six rounds before I went looking for it
+
+I spent rounds 107–113 building the local-IGF-1 thread — recreating a measurement, writing a tool, retrieving supplementary tables, and issuing four corrections along the way — and this round "discovered" the Mendelian randomisation study that caps the whole axis.
+
+**It was already in the bibliography.** `de2026`, added 2026-08-05, `full_text_read: 2026-08-07`, with a one-line finding that opens **"A HARD HUMAN CEILING ON THE IGF-1 AXIS"** and records 0.09 ± 0.04 SD per 1 SD IGF-1 (P = 0.015), replicated at 0.12 ± 0.03 in South Asians. It is cited in `igf1_gene`, `igf1r_gene` and `mendelian_randomization_height`, and that last node states the conclusion outright: *"That number puts a hard ceiling on how much of normal stature variation the IGF-1 axis explains."*
+
+**Thread 1 was closable before I started it.** The correct first move, when the phase-3 result pointed at IGF, was to ask the atlas what it already held on IGF-1 and adult height. I asked the literature instead.
+
+This is the **seventh instance of this class** (CORR-077, CORR-086, CORR-094 and others): a fact sitting on disk, marked read, sometimes with the killing sentence in its own summary field, while I searched outward for it. The structural fix adopted at CORR-094 — check `full_text_read` and the existing `one_line_finding` before writing from an abstract — did not fire here because I never queried the bibliography at all.
+
+**New standing rule, and it is a query rather than a habit:** before opening or extending any mechanistic thread, grep the bibliography's `one_line_finding` field for the thread's endpoint term — here, *height* crossed with the axis name — and read what comes back. The atlas is now 1,268 references; the probability that a new thread is genuinely unrepresented is low, and the cost of checking is one command.
+
+## CORR-110 — closing thread 1: the local-IGF hypothesis has been tested in vivo with the delivery readout, and the outcome is the failure mode
+
+machnicki2022 is the experiment the whole thread was proposing, run by the group whose delivery method this atlas has been citing. High-fat diet in 114 mice from weaning to skeletal maturity:
+
+- tibial and tail elongation rates rose within 1–2 weeks **with serum IGF-I unchanged**
+- multiphoton imaging showed **more IGF-I in the perivascular space around growth plates and increased uptake**
+- growth plates had **more activated IGF-1 receptors and fewer inhibitory binding proteins** — i.e. **raised local IGF-I bioavailability**, exactly the state this thread wanted to engineer
+- and the growth plates were **disorganised** despite being larger
+
+white2023, the same group's review, gives the endpoint: childhood obesity produces "growth acceleration, **premature growth cessation**, and ultimately, **diminished bone quality**, while systemic IGF-1 levels remain normal."
+
+So the intervention has effectively been performed. Raising local growth-plate IGF-I bioavailability accelerates elongation, disorganises the plate, ends growth early and degrades bone quality. For a goal defined as **adult** height at a late bone age, that is not a partial success — it is the specific failure this project has been guarding against since round 1.
