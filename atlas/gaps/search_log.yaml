@@ -2279,3 +2279,35 @@ searches:
     comparable to the signalling receptor. The blocking objections recorded there are untouched: no NPR3
     antagonist with a bone endpoint exists, and the redundancy question with an FGFR inhibitor is the same
     unresolved one that removed vosoritide.'
+- gap_id: g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+  database: Europe PMC REST, plus re-read of williams2007 full text and NCBI eutils
+  exact_query_string: 'THREE ANGLES, run to close the last parameter k. (1) chondrocyte AND ("natriuretic
+    peptide receptor" OR NPR-C OR ANP receptor) AND (binding OR Bmax OR "receptor density") - to find an
+    NPR-C receptor density in chondrocytes. (2) NPR-C OR "clearance receptor" AND internalization AND
+    (rate OR kinetics OR half-life) AND natriuretic - to find an internalisation rate constant. (3) NCBI
+    eutils esearch on GPL570 kidney series, to scale brown1992 renal Bmax to cartilage by same-platform
+    NPR3 transcript ratio.'
+  filters: none
+  date_run: '2026-08-08'
+  hit_count: 8 per Europe PMC query; eutils call failed
+  screened_count: all titles screened
+  reason_none_qualified: 'NO NPR-C RECEPTOR DENSITY IN CHONDROCYTES EXISTS IN ANY SPECIES, and no NPR-C
+    internalisation rate constant was found. Query 1 returned only clinical and genetic achondroplasia
+    literature; query 2 returned reviews and cardiac work. The eutils route for query 3 returned a
+    non-JSON error and was abandoned - and on reflection it should not be revived, because the chain would
+    have been a RAT PROTEIN Bmax scaled by a HUMAN TRANSCRIPT ratio across two tissues, which is more
+    inferential steps than the answer could carry. These two parameters are genuinely unmeasured rather
+    than merely unfound, which is itself the finding: NPR-C protein has never been quantified in growth
+    plate cartilage.'
+  additional_source_checked: 'WHAT THE williams2007 RE-READ DID PRODUCE, AND IT WAS IN A CAVEAT PARAGRAPH
+    MISSED ON FIRST PASS. The authors report that their in vivo diffusion analysis was compromised by
+    differential partitioning from BINDING AND ENDOCYTOSIS, that the major problem was fluorescence
+    ACTIVELY TRANSPORTED INTO THE HYPERTROPHIC CHONDROCYTES, that the effect was ESPECIALLY VISIBLE AFTER
+    5 MINUTES, and that neither normalisation nor thresholding removed it - so they restricted analysis to
+    30 to 180 seconds post-injection. That is active cellular uptake, in the hypertrophic zone, on a
+    five-minute timescale, for an INERT dextran. It is not a rate constant and cannot be converted to one,
+    but receptor-mediated uptake of a targeted ligand is ordinarily faster than fluid-phase uptake of an
+    inert tracer, so it places k at the fast end of the swept range - the end where the hypertrophic
+    Thiele modulus exceeds 5. The same paragraph notes the hypertrophic concentration maximum MOVES toward
+    the axial centre over time, which is direct evidence of the inward advection that biases every Thiele
+    modulus in this atlas upward.'
