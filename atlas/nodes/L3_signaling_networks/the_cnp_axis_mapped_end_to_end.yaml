@@ -114,6 +114,81 @@ quantitative:
     a droplet assay. But it reverses the ORDERING: on current evidence a CNP analogue is the better bet
     than a clearance blocker in a human, which is the opposite of what round 95 concluded, and the
     cheapest way to overturn it is one in situ hybridisation for NPPC on a human growth plate.'
+- parameter: 'THE ZONAL MAP - the whole cilostazol chain peaks in the PROLIFERATIVE zone and is weakest
+    in the resting zone'
+  value: 'PDE3A 20.3 / 38.6 / 21.6 / 9.2 and PRKG2 8.0 / 26.5 / 12.4 / 6.9 across stem, proliferative,
+    prehypertrophic, hypertrophic'
+  unit: per cent of cells expressing, mean of donors 1 and 2
+  conditions: 'GSE288028 by zone, computed by this atlas 2026-08-08. DONORS 3 AND 4 DROPPED AND THE DROP
+    IS DECLARED - donor3 reads COL10A1 at 83-98 per cent in EVERY zone so its zone labels fail the
+    positive control, and donor4 has no proliferative-zone column. Positive controls pass in donors 1 and
+    2: COL10A1 maximal in hypertrophic (22.5 and 19.6 against 4-8 elsewhere), COL2A1 above 95 per cent in
+    every zone, MKI67 15.6 and 14.4 in proliferative against 1.1 and 0.3 in hypertrophic. Chain by zone -
+    PDE3A 20.3/38.6/21.6/9.2; PDE3B 21.7/31.4/19.8/23.9; PRKG2 8.0/26.5/12.4/6.9; KCNMA1
+    30.7/45.0/35.4/19.2; TRPM7 54.7/60.5/57.5/48.1; NPR2 4.2/4.4/2.8/2.8. Against MME 9.5/2.8/4.9/6.7 and
+    NPR3 1.1/0.5/0.3/0.5, both peaking in the STEM zone.'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE ZONAL PATTERN IS COHERENT AND IT KILLS THE LAST VERSION OF THE CORR-095 HAZARD. Every
+    component of the kawabe chain peaks in the PROLIFERATIVE zone, and PRKG2 - the effector - is 3.3-fold
+    LOWER in the resting zone than in the proliferative zone. So even setting aside that cilostazol does
+    not raise cAMP at all, the resting zone is where its machinery is least present. It also matches the
+    experiment: kawabe2025 used epiphyseal slices ENRICHED IN PROLIFERATING CHONDROCYTES, and NPR2 peaks
+    in the same zone, consistent with hirota2022 placing GC-B in proliferative and prehypertrophic cells.
+    A SECOND OBSERVATION CUTS AGAINST SACUBITRIL: MME peaks in the STEM zone at 9.5 and falls to 2.8 in
+    the proliferative zone, so neprilysin is most present where NPR2 is least - the drug would protect CNP
+    in the zone least able to respond to it. LIMITS: two donors, both constitutionally tall children being
+    ablated; detection rate is depth-driven; and zone assignment in scRNA-seq is a clustering call, not a
+    dissection.'
+- parameter: 'THE HUMAN CNP EVIDENCE, AND IT WEAKENS THE ROUND-98 ABSENCE ARGUMENT'
+  value: NTproCNP is measurable, raised at baseline in hypochondroplasia, and SUPPRESSED by vosoritide
+  unit: qualitative, plus SD scores
+  conditions: 'kanakatti2026 (JCEM) - vosoritide 15 micrograms/kg/day for 12 months in prepubertal
+    hypochondroplasia after a 6-month baseline observation: NTproCNP was RAISED at baseline and DECLINED
+    on treatment, significantly lower at months 6 and 12; change in height SD and AGV were NOT correlated
+    with either NTproCNP or IGF-1. carroll2025 (JBMR) - 73 children across 7 skeletal dysplasias with
+    plasma BIOACTIVE CNP and NTproCNP measured against annualised height velocity; in osteogenesis
+    imperfecta both fell in proportion to severity with the reduction in bioactive CNP EXCEEDING that in
+    NTproCNP, implying a measurable clearance rate.'
+  species: human
+  source_ref: kanakatti2026
+  uncertainty: 'THIS IS THE CHECK ROUND 98 ASKED FOR AND IT COMES BACK AGAINST THE STRONG READING OF THE
+    scRNA-seq. Circulating CNP and its propeptide ARE measurable in children and the system is active
+    enough to be raised in disease and suppressed by treatment. SO NPPC AT 0/4 DONORS DOES NOT MEAN THERE
+    IS NO CNP AT THE PLATE - it means CHONDROCYTES may not be the source, which is a different and much
+    weaker claim, and is exactly the same artefact that put OSTN at 0/4 when its source is periosteal.
+    THE ROUND-98 ARGUMENT AGAINST CLEARANCE BLOCKERS IS THEREFORE DOWNGRADED, not withdrawn: if CNP
+    arrives from endothelium, perichondrium or circulation, then sparing it from degradation is coherent
+    after all. AND A NEW COMPLICATION APPEARS: exogenous vosoritide SUPPRESSES endogenous NTproCNP, so the
+    system has negative feedback that will oppose a ligand-supplying strategy - which is an argument for a
+    clearance blocker over an analogue, the reverse of round 98. Neither strategy escapes the feedback
+    question, and no experiment held here measures it against a length endpoint.'
+- parameter: 'THE 2x2 STILL DOES NOT EXIST - but the closest experiment argues FOR redundancy'
+  value: 'CNP-53 transcriptome positively correlated with U0126-responsive genes at genome-wide scale,
+    p < 0.001'
+  unit: GSEA correlation
+  conditions: 'hirota2018. CNP-53 dose-dependently grew BOTH CNP-KO and WILD-TYPE rats (0.15 and 0.5
+    mg/kg/day, continuous subcutaneous, 4 weeks from 4 weeks of age), with CNP-KO more sensitive. CNP-KO
+    rats showed EARLY GROWTH PLATE CLOSURE at 8 weeks in distal tibia and calcaneus and CNP-53 PREVENTED
+    it. In organ culture of fetal WT tibiae, the MEK1/2 inhibitor U0126 at 20 micromolar SIGNIFICANTLY
+    STIMULATED growth. Microarray plus GSEA on hypertrophic-zone RNA found the CNP-53 gene-expression
+    profile positively correlated with U0126-responsive genes, especially those downregulated by U0126
+    (p < 0.001). THE TWO AGENTS WERE RUN IN SEPARATE GENOTYPES AND COMPARED TRANSCRIPTOMICALLY; THEY WERE
+    NEVER GIVEN TOGETHER.'
+  species: rat
+  source_ref: hirota2018
+  uncertainty: 'THIS IS NOW THE STRONGEST REDUNDANCY EVIDENCE THE ATLAS HOLDS AND IT IS STRONGER THAN THE
+    LABEL-MECHANISM ARGUMENT THAT STARTED THE QUESTION. A genome-wide transcriptome correlation between a
+    CNP analogue and a MEK inhibitor is a much harder thing to explain away than two drug labels citing
+    RAF-1. IT IS ALSO NOT THE EXPERIMENT: the CNP arm was run in CNP-KO explants and the U0126 arm in WT
+    explants, so the comparison is across genotypes, and a factorial was never performed. THE PART THAT
+    SURVIVES FOR SEPARABILITY IS hirota2022 - the PKA/hypertrophic arm is MAPK-independent by
+    construction, so a transcriptome dominated by MAPK-convergent changes would not capture it, and the
+    GSEA was run on HYPERTROPHIC-ZONE RNA where that arm should be most visible, which cuts the other way
+    again. WHAT THIS PAPER DOES MAKE POSSIBLE IS THE ACTUAL EXPERIMENT, IN ONE PLATE: U0126 and CNP-53
+    both grow fetal rat tibial explants in the same published system, so adding a four-arm factorial -
+    vehicle, U0126, CNP-53, both - to that exact protocol needs no new model, no new reagent and no new
+    animal, and it would settle in three days a question this atlas has argued about for eleven rounds.'
 localization:
 - 'human growth plate, bulk needle biopsy: PDE3A, PDE3B, PRKG2, KCNMA1, TRPM7, NPR2 all present; NPPC and
   OSTN absent'
