@@ -117,6 +117,89 @@ quantitative:
     PIEZO1 is also essential in erythrocytes, endothelium and lymphatics - human loss-of-function causes
     lymphatic dysplasia - so systemic blockade is not a benign proposition. This is a mechanism to
     respect, not a target to drug, and its practical expression is the loading prescription above.'
+- parameter: 'OSTEOCRIN AS A PURCHASABLE AGENT - the answer is no, and the reason is structural'
+  value: 50 amino acids, about 5.6 kDa
+  unit: residues and daltons
+  conditions: 'UniProt P61366, human OSTN - 133-residue precursor, signal peptide 1-27, and the annotated
+    "Processed Osteocrin" is residues 83-132, a FIFTY-residue peptide,
+    SFSGFGSPLDRLSAGSVDHKGKQRKVVDHPKRRFGIPMDRIGRNRLSNSR, mass computed here as about 5,621 Da. UniProt
+    states the mechanism directly: it "acts by binding to natriuretic peptide receptor NPR3/NPR-C, thereby
+    preventing binding between NPR3/NPR-C and natriuretic peptides, leading to increase cGMP production",
+    and localises the protein to osteoblasts on bone-forming surfaces, young osteocytes and SOME LATE
+    HYPERTROPHIC CHONDROCYTES.'
+  species: human
+  source_ref: uniprot_ostn_p61366
+  uncertainty: 'THE SIZE SETTLES THE PRACTICAL QUESTION BEFORE COST DOES. At 5.6 kDa osteocrin partitions
+    into growth plate matrix WORSE than vosoritide at about 4 kDa - both sit on the descending slope of
+    the partition curve this atlas holds, and osteocrin sits further down it. So the peptide is not even
+    a delivery improvement over the agent it would replace, quite apart from having no approval, no oral
+    route, no human data of any kind, and a 50-mer synthesis that is at the hard end of solid-phase
+    chemistry. THE CORRECT READING IS THAT OSTEOCRIN IS A MECHANISM, NOT A PRODUCT. What is wanted is not
+    the peptide but its ENDPOINT - more CNP surviving at the plate - and there are two cheaper routes to
+    that endpoint, one pharmacological and one free.'
+- parameter: 'THE AFFORDABLE ROUTE TO THE SAME ENDPOINT, AND THIS ATLAS ALREADY HELD IT - and in human
+    cartilage it is the LARGER of the two clearance arms'
+  value: 'MME 7.97 per cent of cells against NPR3 1.55 per cent - a 5.1-fold difference'
+  unit: per cent of cells expressing, human early-pubertal growth plate
+  conditions: 'CNP is removed two ways - RECEPTOR-mediated clearance by NPR3, which osteocrin blocks, and
+    ENZYMATIC degradation by neprilysin (MME), which SACUBITRIL blocks. This atlas own re-analysis of
+    GSE288028 found MME expressed in 3 of 4 donors across EVERY zone of the early-pubertal human growth
+    plate at a mean 7.97 per cent of cells, against 1.55 per cent for NPR3, with MME exceeding NPR3 in 9
+    of 11 zone-donor pairs. hakata2024: sacubitril in WILD-TYPE C57BL/6 mice gives DOSE-DEPENDENT skeletal
+    overgrowth with thickening of both proliferative and hypertrophic zones; the effect is ABOLISHED by
+    cartilage-specific NPR-B knockout, which excludes neprilysin many other substrates; and it works on
+    fetal tibial explants, so it needs no endocrine axis. Sacubitril is oral, approved, and already dosed
+    in children.'
+  species: human
+  source_ref: hakata2024
+  uncertainty: 'THIS IS THE ANSWER TO THE AFFORDABILITY QUESTION AND IT COMES WITH THREE PROBLEMS, THE
+    SECOND OF WHICH MAY BE FATAL IN HUMANS. (1) THE CEILING IS LOW AND KNOWN: sacubitril gives 2-3 per cent
+    of body length in mouse, about HALF what exogenous CNP gives, and the two are NOT ADDITIVE - so this
+    is an alternative to a CNP analogue, never an addition to one. (2) NPPC ITSELF IS AT THE DETECTION
+    FLOOR IN THE HUMAN PLATE - 0.04 to 0.52 per cent of cells, zero donors above threshold. Protecting a
+    peptide the tissue barely makes locally is a different proposition from the mouse experiment, where
+    CNP and NEP are co-expressed; any human effect would have to work by protecting CIRCULATING CNP.
+    Droplet scRNA-seq under-detects secreted peptides so this is weak evidence of absence, but it is the
+    single biggest threat to the mechanism translating. (3) THE MOUSE EFFECT IS WINDOW-DEPENDENT, appearing
+    only at 3-4 weeks when endogenous CNP and NEP peak, and the human window is unmeasured - a drug given
+    outside its window would produce a null that looks like a refuted mechanism rather than a mistimed
+    experiment.'
+- parameter: 'AND A DRUG-DRUG PROBLEM THIS ATLAS HAD NOT FLAGGED - sacubitril cannot be bought alone'
+  value: sacubitril is marketed only as sacubitril/valsartan
+  unit: qualitative
+  conditions: There is no sacubitril monotherapy product; the approved medicine is the fixed combination
+    with valsartan, an angiotensin receptor blocker, indicated for heart failure and paediatric-approved
+    on that basis. The proposed stack already contains cilostazol, a vasodilator whose labelled
+    contraindication is heart failure, and whose h_term dose ceiling this atlas has already identified as
+    BLOOD PRESSURE rather than efficacy
+  species: not_applicable
+  source_ref: hakata2024
+  uncertainty: 'ANY ROUTE TO SACUBITRIL NECESSARILY CARRIES AN ARB, AND THAT LANDS ON THE ONE PHYSIOLOGICAL
+    AXIS THIS STACK IS ALREADY LOADING. Cilostazol vasodilates; valsartan lowers blood pressure by a
+    different mechanism; the combination is a hypotension stack in a subject taking both for reasons that
+    have nothing to do with blood pressure. The atlas already concluded that the ceiling on the h_term arm
+    is haemodynamic, and this makes that ceiling lower rather than higher. It is not a reason to reject
+    sacubitril - it is a reason that the CNP arm can probably support ONE agent and not two, and that the
+    choice between cilostazol and sacubitril should be made on which has the better evidence rather than
+    by taking both.'
+- parameter: 'THE PAEDIATRIC HEIGHT DATA EXISTS AND IS NOT PUBLISHED - checked, and it is not in the
+    registry either'
+  value: 216 and 393 children, results posted, no anthropometric outcome measure in either
+  unit: participants
+  conditions: 'ClinicalTrials.gov API queried 2026-08-08. NCT03785405, open-label extension for LONG-TERM
+    safety of sacubitril/valsartan, 216 participants aged 1-18, results posted - outcome measures are
+    adverse events, serious adverse events and duration of exposure. NCT02678312 (PANORAMA-HF), 393
+    participants aged 1 month to 17 years, results posted - outcomes are pharmacokinetics, adverse events
+    and NYHA class. NEITHER REGISTERS HEIGHT, GROWTH, STATURE OR ANY ANTHROPOMETRIC MEASURE.'
+  species: human
+  source_ref: nct03785405
+  uncertainty: 'THE MEASUREMENTS ALMOST CERTAINLY EXIST AND ARE NOT REACHABLE FROM THE REGISTRY. Height and
+    weight are recorded at every visit in paediatric trials as a matter of routine, and a LONG-TERM safety
+    extension in 216 children aged 1 to 18 over years is precisely the dataset that would answer whether
+    neprilysin inhibition moves human height - but posted results give only what was registered as an
+    outcome, and growth was not. So this is not a gap in the world, it is a gap in what has been analysed:
+    the same unexamined-data situation this atlas already logged for the losartan trial. Reaching it needs
+    a clinical study report or an investigator request, not another search.'
 localization:
 - 'growth plate: NPR3, NPR2, PIEZO1 and the osteocrin target all act here'
 - 'periosteum: where load is transduced into osteocrin'
