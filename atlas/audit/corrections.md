@@ -4240,3 +4240,62 @@ doing something on the **pool** term that this atlas has been crediting entirely
 
 Also confirmed on reading: `hirota2022` measured **growth plate length, not bone length**. The round-96
 caveat stands unchanged.
+
+---
+
+## CORR-096 — the cAMP hazard is refuted by a direct measurement, and so is the argument I replaced it with
+
+Round 96 argued cilostazol and a CNP analogue compete for a cAMP/PKA arm. Round 97 (CORR-095) argued
+cilostazol raises cAMP wherever PDE3 sits, activating CREB and trapping the resting-zone pool. **Both were
+reasoning from enzyme nomenclature — PDE3 is canonically a "cGMP-inhibited cAMP phosphodiesterase" — and
+both are wrong.**
+
+`kawabe2025` read in full measured **both** nucleotides in the right tissue. Cilostazol at 3 µM for 30 min
+on femoral bone slices: **cGMP up ~1.7-fold, cAMP UNCHANGED.** Milrinone gave the same pattern. The authors
+explain it: PDE3B hydrolyses both, but its cAMP activity is attenuated by elevated cGMP, so in resting
+growth-plate chondrocytes PDE3B functions as a **cGMP** enzyme.
+
+So cilostazol is a cGMP drug. It shares the second messenger and the kinase with CNP's arm one, and it does
+**not** reach CNP's PKA arm. Two rounds of mechanism argument, settled by one figure that was in a paper I
+had marked `full_text_read` since 2026-08-07 with a one-sentence abstract-level summary.
+
+The refutation is of the simple hazard, not every version of it: 30 minutes is acute, the slices are
+proliferating-zone-enriched mouse tissue, and a bulk ELISA cannot exclude a compartmentalised cAMP pool —
+which is how cAMP signalling is generally organised.
+
+## CORR-097 — I never ran the human expression check on an axis I have been arguing about for ten rounds, and it inverts round 95
+
+The atlas has held `gp_expression.py` and the GSE288028 table since Phase 5. Running it across the CNP axis
+takes seconds and had never been done:
+
+| | gene | donors ≥1% |
+|---|---|---|
+| ligand | **NPPC** | **0/4** (0.21, 0.21, 0.04, 0.52) |
+| decoy | **OSTN** | **0/4** |
+| receptor | NPR2 | **4/4** |
+| clearance | NPR3 | 2/4 · MME 3/4 |
+| cilostazol chain | PDE3A, PDE3B, PRKG2, KCNMA1, TRPM7 | **4/4 each** |
+
+**Two results, and the second inverts a conclusion from three rounds ago.**
+
+The entire kawabe chain is transcribed in all four human donors, with TRPM7 and KCNMA1 among the
+best-detected genes checked. That removes one way cilostazol could fail.
+
+And **the CNP ligand is at the detection floor in every donor while its receptor is present in all four.**
+Osteocrin, NPR3 antagonism and sacubitril all work by *sparing a ligand the tissue makes*. If human growth
+plate chondrocytes make essentially no CNP, there is nothing local to spare and all three depend on
+protecting *circulating* CNP. **A CNP analogue has no such dependence — it supplies the ligand, and the
+receptor is there.** Round 95 called sacubitril the affordable route to the osteocrin endpoint; the
+endpoint needs local substrate and the substrate is missing.
+
+Stated at its real strength: NPPC absence is the **weak** direction of a droplet assay that under-detects
+small secreted peptides and loses hypertrophic cells. OSTN reading 0/4 is almost certainly an artefact of
+tissue sampling, since `watanabetakano2021` places its source in **periosteal osteoblasts**, outside a
+needle biopsy of the plate. One in-situ hybridisation for NPPC on a human growth plate overturns or
+confirms the whole argument.
+
+**And the row that disciplines the rest of the table:** PDE5A is detected 4/4 and PDE10A 4/4 — and
+tadalafil does nothing to bone length *with confirmed target engagement*, and MP10 does nothing. Two
+well-expressed phosphodiesterases in human growth plate with inert inhibitors. Expression is necessary and
+emphatically not sufficient, and reading PDE3A/PDE3B at 4/4 as support for cilostazol in humans is exactly
+the inference those two rows forbid.

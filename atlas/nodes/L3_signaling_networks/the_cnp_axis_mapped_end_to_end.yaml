@@ -1,0 +1,176 @@
+id: the_cnp_axis_mapped_end_to_end
+name: The CNP axis mapped end to end against human growth plate expression - the ligand is absent, the receptor and the whole cilostazol chain are present, and that decides which agent belongs
+aliases:
+- the axis solved
+- why the clearance strategies fail in humans
+- cilostazol is a cGMP drug not a cAMP drug
+type: pathway
+layer: L3
+stub: false
+summary: 'THIS NODE CLOSES THE AXIS BY PUTTING EVERY COMPONENT AGAINST HUMAN EXPRESSION AND AGAINST A
+  DIRECT MEASUREMENT OF WHICH SECOND MESSENGER MOVES. TWO THINGS RESOLVE AT ONCE AND BOTH REVERSE
+  POSITIONS THIS ATLAS HELD LAST WEEK. FIRST, THE SECOND-MESSENGER QUESTION, SETTLED BY MEASUREMENT
+  RATHER THAN BY REASONING FROM ENZYME NOMENCLATURE. kawabe2025 read in full: cilostazol at 3 micromolar
+  for 30 minutes on femoral bone slices raised cGMP ABOUT 1.7-FOLD WHILE cAMP REMAINED UNCHANGED, with
+  milrinone giving the same pattern. They measured cAMP, in the right tissue, and it did not move. The
+  authors explain it - PDE3B hydrolyses both nucleotides but its cAMP activity is attenuated by elevated
+  cGMP, so in resting growth plate chondrocytes PDE3B is functioning as a cGMP enzyme. THAT REFUTES THE
+  CORR-095 HAZARD, which supposed cilostazol would raise cAMP, activate CREB, and trap the resting-zone
+  pool. IT ALSO REFUTES THE ROUND-96 CLAIM in the other direction, that cilostazol competes with a CNP
+  analogue for the cAMP/PKA arm. Cilostazol is a cGMP drug. It shares the second messenger and the kinase
+  with CNP arm one and it does NOT reach CNP arm two. SECOND, THE HUMAN EXPRESSION CHECK, WHICH THIS
+  ATLAS COULD HAVE RUN AT ANY POINT AND DID NOT. Against the four human growth plates of GSE288028:
+  THE ENTIRE CILOSTAZOL CHAIN IS PRESENT IN ALL FOUR DONORS - PDE3A 4/4, PDE3B 4/4, PRKG2 4/4, KCNMA1
+  4/4, TRPM7 4/4, with TRPM7 and KCNMA1 among the best-detected genes checked. THE CNP LIGAND IS NOT.
+  NPPC sits at 0.21, 0.21, 0.04 and 0.52 per cent of cells - DETECTED IN ZERO OF FOUR DONORS - while its
+  receptor NPR2 is present in all four. THE CONSEQUENCE IS DECISIVE FOR AGENT CHOICE AND IT INVERTS ROUND
+  95. Both clearance strategies - osteocrin or any NPR3 blocker, and sacubitril blocking neprilysin -
+  work by SPARING A LIGAND THE TISSUE MAKES. If human growth plate chondrocytes make essentially no CNP,
+  there is nothing local to spare, and both strategies depend entirely on protecting CIRCULATING CNP. A
+  CNP ANALOGUE HAS NO SUCH DEPENDENCE - it supplies the ligand, and the receptor is there to receive it.
+  Round 95 called sacubitril the affordable route to the same endpoint; the endpoint requires local
+  substrate and the substrate is missing. AND THE MOST IMPORTANT ROW IS A CONTROL AGAINST MY OWN
+  REASONING. PDE5A is detected in 4/4 donors and PDE10A in 4/4 - and wang2018 showed tadalafil does
+  nothing to bone length, and kawabe2025 showed the PDE10 inhibitor MP10 does nothing. TWO WELL-EXPRESSED
+  PDEs IN HUMAN GROWTH PLATE WHOSE INHIBITORS ARE INERT. Expression is necessary and emphatically not
+  sufficient, so the presence of PDE3A and PDE3B does NOT establish that cilostazol works in a human.'
+quantitative:
+- parameter: 'THE MEASUREMENT THAT SETTLES WHICH MESSENGER CILOSTAZOL MOVES'
+  value: cGMP up about 1.7-fold, cAMP UNCHANGED
+  unit: fold change over vehicle
+  conditions: kawabe2025 - femoral bone slices enriched in growth plate chondrocytes, cilostazol 3
+    micromolar for 30 minutes, cyclic nucleotides quantified by ELISA (Enzo ADI-900-066A for cAMP and
+    ADI-900-014 for cGMP) after TCA homogenisation and ether extraction. The same pattern was seen with
+    milrinone. The authors' account is that PDE3B hydrolyses both nucleotides but its cAMP hydrolytic
+    activity is attenuated by elevated cGMP, so PDE3B mainly maintains resting cGMP in this tissue
+  species: mouse
+  source_ref: kawabe2025
+  uncertainty: 'THIS IS A DIRECT MEASUREMENT OF THE THING TWO ROUNDS OF THIS ATLAS ARGUED ABOUT FROM
+    ENZYME NOMENCLATURE, AND IT SETTLES IT AGAINST BOTH ARGUMENTS. CORR-095 predicted cilostazol would
+    raise cAMP and activate CREB in the resting zone; round 96 predicted cilostazol and a CNP analogue
+    would compete for the cAMP arm. Neither survives - cAMP did not move. LIMITS: 30 minutes is an acute
+    exposure and chronic dosing could differ; the slices are MOUSE and enriched for PROLIFERATING
+    chondrocytes, so a cAMP change confined to the hypertrophic or resting zone would be diluted or
+    missed; and a bulk ELISA on a slice cannot exclude a compartmentalised cAMP pool, which is how cAMP
+    signalling is generally organised. The refutation is of the simple version of the hazard, not of every
+    version.'
+- parameter: 'THE HUMAN EXPRESSION CHECK - the whole cilostazol chain is present, the CNP ligand is not'
+  value: 'PDE3A 4/4, PDE3B 4/4, PRKG2 4/4, KCNMA1 4/4, TRPM7 4/4, NPR2 4/4 - against NPPC 0/4 and OSTN 0/4'
+  unit: donors of four with the gene detected in at least 1 per cent of cells
+  conditions: 'GSE288028, four human epiphysiodesis needle biopsies from children in puberty stages B2-B4,
+    computed by this atlas. Per-donor detection percentages: PDE3A 28.05/6.37/11.38/9.66; PDE3B
+    19.87/30.25/5.24/4.18; PRKG2 16.77/3.92/48.44/8.62; KCNMA1 37.26/18.38/73.42/19.58; TRPM7
+    53.73/49.62/32.11/27.94; NPR2 2.91/2.49/8.68/8.36. Against NPPC 0.21/0.21/0.04/0.52 and OSTN
+    0.11/0.50/0.01/0.00. Clearance targets: MME 3/4 at 3.27/6.01/0.86/9.92, NPR3 2/4 at
+    0.38/0.42/1.61/2.35.'
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THE DONORS ARE NOT TYPICAL CHILDREN AND IT PROPAGATES INTO EVERY NUMBER - these are
+    constitutionally very tall adolescents whose plates were being deliberately ablated to PREVENT tall
+    stature, and there is no normal-stature paediatric growth-plate scRNA-seq to compare against. Detection
+    rate in droplet scRNA-seq is driven by sequencing depth as much as by biology, so compare within a
+    donor and require agreement across donors, never average. ABSENCE IS THE WEAK DIRECTION AND NPPC IS AN
+    ABSENCE CLAIM: droplet protocols under-detect small secreted peptides, terminal hypertrophic
+    chondrocytes are systematically lost, and CNP could be supplied by perichondrium or circulation rather
+    than by chondrocytes - OSTN reading 0/4 is almost certainly this, since watanabetakano2021 places its
+    source in PERIOSTEAL OSTEOBLASTS which a needle biopsy of the plate would not capture. So the NPPC
+    result should be checked by in situ hybridisation or ELISA before it is treated as settled. It is
+    consistent across four donors, which is why it is recorded at all.'
+- parameter: 'THE CONTROL THAT DISCIPLINES THE WHOLE TABLE - two well-expressed PDEs whose inhibitors do
+    nothing'
+  value: PDE5A 4/4 and PDE10A 4/4, both with inert inhibitors on bone growth
+  unit: donors detected, against a length endpoint
+  conditions: PDE5A detected in 4/4 human donors (9.92/15.30/1.28/10.44) and PDE10A in 4/4
+    (23.38/7.84/10.70/4.44). wang2018 - tadalafil at paediatric-comparable doses raised tissue cGMP 52
+    per cent in rat with confirmed target engagement and left long bone length UNALTERED. kawabe2025 - the
+    PDE10 inhibitor MP10 had NO effect on cultured bone elongation, and the PDE2 inhibitor BAY-60-7550
+    likewise
+  species: human
+  source_ref: wang2018
+  uncertainty: 'THIS IS THE ROW THAT SHOULD BE READ BEFORE ANY OTHER IN THE TABLE. Two phosphodiesterases
+    are well expressed in the human growth plate and their inhibitors do nothing to bone length - one of
+    them WITH CONFIRMED TARGET ENGAGEMENT, which makes it a sufficiency failure rather than a delivery
+    failure. EXPRESSION IS NECESSARY AND NOT SUFFICIENT, and the temptation this table creates - to read
+    PDE3A and PDE3B at 4/4 as support for cilostazol in humans - is exactly the inference these two rows
+    forbid. What the human table legitimately does is REMOVE ONE WAY THE DRUG COULD FAIL, by showing the
+    target and its downstream chain are transcribed in the right tissue. It does not add positive evidence
+    that the drug works.'
+- parameter: 'THE CONSEQUENCE FOR AGENT CHOICE - a ligand-supplying agent does not depend on local
+    substrate and a clearance blocker does'
+  value: NPR2 present in 4/4 while NPPC is present in 0/4
+  unit: qualitative, with the donor counts
+  conditions: Osteocrin and any NPR3 antagonist, and sacubitril blocking neprilysin, all act by SPARING
+    endogenous CNP from removal. A CNP analogue such as vosoritide supplies the ligand directly. The human
+    plate expresses the receptor in all four donors and the ligand in none
+  species: human
+  source_ref: chu2026
+  uncertainty: 'THIS INVERTS ROUND 95, WHICH CALLED SACUBITRIL THE AFFORDABLE ROUTE TO THE OSTEOCRIN
+    ENDPOINT. The endpoint requires local substrate to protect, and the substrate is at the detection
+    floor in every donor. Both clearance strategies would have to work by protecting CIRCULATING CNP
+    instead, which is a different and weaker proposition - and the atlas already holds that the growth
+    plate is avascular, so a circulating peptide must partition into matrix, which is the constraint that
+    puts vosoritide at about 4 kDa partway down the delivery curve in the first place. THE ARGUMENT IS
+    NOT DECISIVE AND MUST NOT BE STATED AS IF IT WERE, because the NPPC absence is the weak direction of
+    a droplet assay. But it reverses the ORDERING: on current evidence a CNP analogue is the better bet
+    than a clearance blocker in a human, which is the opposite of what round 95 concluded, and the
+    cheapest way to overturn it is one in situ hybridisation for NPPC on a human growth plate.'
+localization:
+- 'human growth plate, bulk needle biopsy: PDE3A, PDE3B, PRKG2, KCNMA1, TRPM7, NPR2 all present; NPPC and
+  OSTN absent'
+- 'periosteum: where OSTN is actually made, and outside the biopsied tissue'
+human_evidence: direct
+human_evidence_note: The expression table is human growth plate from four donors. The second-messenger
+  measurement and the whole kawabe mechanism are mouse.
+species_basis:
+- human
+- mouse
+translation_risk: moderate
+translation_risk_reason: The mechanism is mouse and the expression check is human, which is the right way
+  round; but the PDE5A and PDE10A controls show that expression in human tissue does not predict that an
+  inhibitor works, and no PDE3 inhibitor has ever been given to a human for growth.
+confidence: B
+claim_grades:
+- claim: Cilostazol raises cGMP and not cAMP in growth plate chondrocytes.
+  grade: B
+  basis: Direct ELISA measurement of both nucleotides in mouse femoral bone slices, replicated with a
+    second PDE3 inhibitor. Acute exposure, proliferating-zone-enriched, bulk assay that cannot exclude a
+    compartmentalised cAMP pool.
+- claim: The entire cilostazol signalling chain is transcribed in human growth plate.
+  grade: B
+  basis: Four of four donors for every component, computed here from GSE288028. Bulk biopsy rather than
+    zonal, and the donors are constitutionally tall children.
+- claim: Human growth plate chondrocytes make essentially no CNP.
+  grade: C
+  basis: NPPC below 1 per cent of cells in all four donors. An absence claim in a droplet assay that
+    under-detects small secreted peptides, unconfirmed by in situ or ELISA.
+- claim: A CNP analogue is a better bet than a clearance blocker in humans.
+  grade: D
+  basis: Follows from the receptor being present and the ligand absent. Depends entirely on the NPPC
+    absence claim, which is graded C.
+key_refs:
+- ref_id: kawabe2025
+  year: 2025
+  type: primary
+  one_line_finding: Cilostazol raised cGMP about 1.7-fold in growth plate chondrocytes while cAMP remained
+    UNCHANGED; the chain is PKG to BK channel to TRPM7 to CaMKII, and cilostazol also worked in Fgfr3
+    transgenic achondroplasia-model bones.
+- ref_id: chu2026
+  type: dataset
+  one_line_finding: Four human pubertal growth plates by scRNA-seq - the resource this atlas used to check
+    every component of the axis for presence in the target tissue.
+- ref_id: wang2018
+  year: 2018
+  type: primary
+  one_line_finding: Tadalafil raised tissue cGMP 52 per cent with confirmed engagement and did NOT
+    increase long bone length - the sufficiency failure that disciplines every expression argument here.
+- ref_id: hirota2022
+  year: 2022
+  type: primary
+  one_line_finding: CNP activates PKA predominantly in hypertrophic chondrocytes - the arm cilostazol does
+    not reach.
+open_questions:
+- g_l3_cnp_plus_fgfr_blockade_in_wildtype
+- g_l3_neprilysin_window
+- g_l12_cilostazol_bone_age_effect
+contradicts: []
+last_verified: '2026-08-08'
