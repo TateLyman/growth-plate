@@ -5050,3 +5050,42 @@ the 2.5 µm/s is mouse. If human flow is tenfold slower, Da rises to 0.15–1.85
 exist. Three corrections now share one shape — CORR-115 (wrong platform while the right dataset sat in the
 atlas index), CORR-116 (regulatory assessment never opened), and this one (figures never extracted from a
 paper quoted for four rounds). In each case the answer was already inside the project.
+
+## CORR-121 — round 127 took a co-fitted parameter at face value, and the paper's own data contradict it by fivefold
+
+Round 127 concluded the growth plate is advection-fed and not consumption-limited, on a Damköhler number of
+0.015–0.185. That number rests entirely on **v ≈ 2.5 µm/s**, the interstitial flow velocity read from
+williams2007 Figure 4f. Testing it against the same paper's other measurement breaks it.
+
+**williams2007 reports two things that cannot both be right.** Figure 4f fits flow at ~2.5 µm/s inward from
+each junction. The text separately states that tracers of 10 kDa and below **saturate a ~300 µm plate
+within 5 minutes**. Advective transit over the 150 µm half-thickness at 2.5 µm/s takes **60 seconds**. The
+observed 5-minute saturation implies an effective velocity of **0.5 µm/s** — fivefold lower.
+
+**The answer flips across that range.** At the fitted 2.5 µm/s, Da = 0.015–0.185 and the plate is clearly
+perfused. At the saturation-implied 0.5 µm/s, Da = 0.077–**0.92** — reaching the boundary at the fast end of
+the inferred consumption range. At 0.25 µm/s it exceeds 1.
+
+**Three reasons the fitted value is the more suspect of the two.** First, D and v were **co-fitted from the
+same fluorescence series**, so they are correlated parameters, not independent measurements — the authors
+note that diffusion-only fits gave "abnormally high coefficients and inconsistent fits" until flow was
+added, which is what absorbing unmodelled variance looks like. Second, the same paper flags **active
+transport of tracer into hypertrophic chondrocytes** as "the major problem," producing rising signal in the
+metaphyseal half over time — and a model without uptake would naturally absorb that as inward flow toward
+the centre, which is precisely the direction and location of the reported flow. Third, the reported flow
+implies the plate's entire fluid volume turns over **every 60 seconds**, which is a very high perfusion rate
+for an avascular tissue.
+
+**In fairness to the higher value:** the 5-minute saturation includes vascular delivery and the
+transendothelial step, so intra-cartilage transit alone could be faster than 300 s, and the saturation
+figure comes from an earlier study under possibly different conditions.
+
+**Corrected position: the transport asymmetry is neither established nor excluded — it sits on the
+boundary.** Round 127 overstated the closure by treating a co-fitted parameter as a measurement. This is
+still progress: the open question has narrowed from an unmeasured rate constant spanning orders of
+magnitude to a single velocity uncertain by about fivefold, with the answer flipping across that range.
+
+**Rule:** when a parameter is obtained by simultaneous fitting rather than direct measurement, say so at the
+point of use and test it against an independent observable in the same paper before building on it. I
+recorded that D and v were co-fitted in the round-127 node's uncertainty field and then used v as though it
+were measured anyway.
