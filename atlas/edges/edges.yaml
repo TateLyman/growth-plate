@@ -19606,3 +19606,60 @@ edges:
     whereas PAPP-A2 raises the free fraction that can. The wild-type arm is what makes this worth an edge;
     but no growth-plate histology and no hypertrophic cell size were measured, so it does not reach phase 3.
   traversal_usable: false
+- edge_id: e01274
+  source: local_limb_warming_is_a_free_delivery_and_growth_lever
+  target: drug_property_screen
+  relation: activates
+  sign: +
+  magnitude: 10 kDa dextran entry into the growth plate up more than 150 per cent from 22 to 34 degrees C;
+    40 and 70 kDa up less than 50 per cent
+  context: mouse, 5 weeks, n=22, in vivo multiphoton with vessel diameter and blood velocity quantified;
+    independently, core clamped at 36 C with hindlimb at 36 versus 23 C nearly doubled fluorescein entry
+  evidence_tier: T1
+  refs:
+  - serrat2014
+  - serrat2009
+  confidence: B
+  notes: The delivery term of the coverage audit has a free lever. The size dependence peaks near 10 kDa,
+    which is the closest measured bracket to the 4 kDa peptide arm - but no therapeutic molecule has been
+    measured under heating, and the preparations are anaesthetised and surgically exposed.
+  traversal_usable: true
+- edge_id: e01275
+  source: local_limb_warming_is_a_free_delivery_and_growth_lever
+  target: site_specific_growth_rate
+  relation: activates
+  sign: +
+  magnitude: treated-side femur +1.3 and tibia +1.5 per cent, tibial elongation rate +12 per cent (15
+    micrometres/day), persisting about 1 per cent at 7 weeks
+  context: mouse, unilateral 40 degrees C for 40 min/day for 14 days post-weaning, contralateral limb as
+    internal control, untreated animals showing no inherent asymmetry; replicated at 1 week by racine2018
+  evidence_tier: T1
+  refs:
+  - serrat2015
+  - racine2018
+  confidence: B
+  notes: A site-selective length effect, which is otherwise the emptiest term in the audit - no systemic
+    agent selects a site. Body mass and humerus were unaffected, confirming locality. Post-weaning mouse
+    only, and serrat2013 shows temperature sensitivity is confined to the rapid-growth phase, so this is
+    not expected to transfer to a late plate.
+  traversal_usable: false
+- edge_id: e01276
+  source: only_free_igf_reaches_the_plate
+  target: local_limb_warming_is_a_free_delivery_and_growth_lever
+  relation: correlates_with
+  sign: +
+  magnitude: free IGF-I partition 0.151 and above against 0.005-0.014 for the ternary complex; labelled
+    IGF-I visible in a live growth plate within 30 minutes
+  context: human articular cartilage radiolabelled partition measurement, read with in vivo mouse
+    growth-plate multiphoton imaging of bioactive labelled IGF-I
+  evidence_tier: T1
+  refs:
+  - schneiderman1995
+  - serrat2017
+  confidence: B
+  notes: The two halves of the delivery argument for IGF. schneiderman1995 measures that free IGF-I
+    partitions an order of magnitude better than the ternary complex that carries about 80 per cent of
+    serum IGF-I, and serrat2017 shows free bioactive IGF-I reaching a live growth plate within 30 minutes.
+    Together they say what the plate receives is set by the free fraction and by delivery, not by total
+    IGF-1 - which is what GH raises.
+  traversal_usable: true

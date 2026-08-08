@@ -4588,3 +4588,57 @@ IGF-1 SDS is a poor proxy for what reaches phase 3** — which is why raising to
 saturated while the plate is not.
 
 The restraint is real. It is the matrix acting as a size filter, not IGFBP excess inside the tissue.
+
+## CORR-106 — I typed a PMID from memory for schneiderman1995 and it resolved to a paper about oral cephalosporins
+
+Adding the human IGF-I cartilage partition paper, I passed `--pmid 8554303` without resolving it first.
+`addref.py` did its job — it fetched the CANONICAL record rather than accepting my typed metadata — and
+what came back was **Leibovitz E 1995, "Oral cephalosporins in upper respiratory infections."** The guard
+worked exactly as designed: a fabricated citation could not enter, because the script writes the title and
+authors from the resolved record rather than from me. But it did create a real bibliography entry for a
+real, irrelevant paper carrying MY finding text about IGF partition coefficients. That entry has been
+deleted and the correct record resolved by search: **PMID 7503552**.
+
+**Standing rule, added to the two already in force:** never pass a PMID to `addref.py` that has not been
+returned by a search in the same session. The script protects against invented *metadata*; it cannot
+protect against a real identifier pointing at the wrong paper, and the resulting entry is more dangerous
+than a refusal because it looks legitimate.
+
+## CORR-107 — CORR-105 was directionally right but overstated: the complexes are largely excluded, not entirely, and free IGF-I does better than I predicted
+
+CORR-105 argued from the farnum2006 dextran curve that only free IGF-1 enters the growth plate and that
+I had to interpolate the value because no measurement existed. **The measurement exists** —
+schneiderman1995, human articular cartilage, radiolabelled, twelve femoral heads — and it is better than
+the interpolation on both sides.
+
+| species | mass | measured K_total |
+|---|---|---|
+| ternary complex | 140–180 kDa | **0.005–0.014** |
+| binary complex | ~45 kDa | **0.02–0.1** |
+| inulin (free-IGF-sized, non-binding) | ~5 kDa | 0.151 ± 0.007 young (29 y); 0.098 ± 0.020 aged (69 y) |
+| **free IGF-I** | 7.6 kDa | **exceeds inulin** — binds reversibly to matrix |
+
+Two corrections to what I wrote:
+
+**(1) "Only free IGF-1 enters" is too strong.** The ternary complex is not excluded to zero, and it is
+~80 % of the serum pool. Doing the arithmetic the atlas should have done: per unit of serum total IGF-I,
+the ternary arm contributes 0.80 × ~0.010 ≈ 0.008, the binary arm 0.17 × ~0.06 ≈ 0.010, the free arm
+0.03 × ~0.15 ≈ 0.005. **Free IGF-I supplies roughly a fifth of delivered IGF, not all of it.** The
+authors' own conclusion is the defensible version: complexes are *largely excluded* and present "at
+amounts too low to affect proteoglycan metabolism."
+
+**(2) Free IGF-I does BETTER than a size-matched inert solute, not worse.** I flagged this as a
+possibility on charge grounds and it is measured: free IGF-I uptake exceeded the excluded-volume
+prediction because it binds reversibly to matrix components. So the ~10 % I quoted from dextrans
+understates it — the young-cartilage value is 0.151 and free IGF-I sits above that.
+
+**What survives, and is now measured rather than inferred:** free IGF-I partitions **an order of
+magnitude better than the ternary complex** (≥0.15 vs 0.005–0.014). Raising total IGF-1 mostly raises the
+compartment that cannot get in. The direction of CORR-105 holds; the absolutism does not.
+
+**And the growth-plate version now exists too:** serrat2017 injected fluorescent bioactive IGF-I
+intraperitoneally into live 5-week-old mice and saw it in the proximal tibial growth plate **within 30
+minutes**, peaking by ~90 minutes, localised to chondrocytes, with bioactivity confirmed by >3-fold
+p-Akt. Free IGF-I does reach a growth plate in vivo. Caveat carried: schneiderman1995 is ADULT ARTICULAR
+cartilage aged 25–83, not growth plate, and the young/aged difference (0.151 vs 0.098) tracks GAG content,
+so a juvenile growth plate could differ in either direction.
