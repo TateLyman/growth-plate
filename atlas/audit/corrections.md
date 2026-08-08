@@ -4878,3 +4878,36 @@ protein. The claim is graded C for the measurement and D for the consumer interp
 inventoried dataset already answers it on a platform with the right failure mode. `geo_accession_inventory`
 had the right dataset listed; two rounds were spent on a platform that structurally could not answer the
 question while one that could sat in the atlas's own index.
+
+## CORR-116 — two claims narrowed by one public document nobody in this project had opened
+
+The EMA CHMP assessment report for Voxzogo (EMA/397108/2021) is a public 191-page document about the
+central drug of this entire thread. Opening it settled a gap opened at tractability 1 the round before, and
+also narrowed a standing atlas claim that had been graded B for several rounds.
+
+**1. `g_l12_is_vosoritide_cleared_by_npr3` — answered, YES.** The report states outright that the NPR-C
+scavenger receptor "also binds vosoritide", and names receptor-mediated clearance via NPR-C as one of three
+primary elimination routes in three separate sections. Supported by markedly supraproportional rat PK — a
+9-fold dose giving 35.7-fold Cmax at day 182 — and by dose-dependent ANP rises in adult monkeys and adult
+humans but not juveniles, attributed to ANP/vosoritide competition at NPR-C. The applicant even named
+"drugs binding to the NPR-C receptor that could reduce vosoritide clearance" as a plausible interaction —
+the exact co-administration strategy this project had derived independently from the tissue data.
+
+**2. `growth_plate_drug_exposure` — narrowed.** That node's headline claim, that no growth-plate tissue
+concentration is published for any of twelve audited agents, **survives**: whole femur and tibia are not the
+physis, and 124I radioactivity is not intact drug (the same study found label predominantly in the stomach,
+which is where free iodide goes). But its surrounding framing — that the measurement is simply unasked, and
+"nothing but attention is missing" — was too strong. A rat biodistribution study reporting femur and tibia
+against plasma sat in the public regulatory package the whole time. The node has been amended in place
+rather than regraded, because the load-bearing claim did not change.
+
+**The pattern this is the second instance of.** CORR-115 recorded that two rounds were spent on a platform
+that structurally could not answer a question while an inventoried dataset that could sat in the atlas's own
+index. This is the same failure against a different kind of source: the *regulatory package for the drug the
+thread is about* is a primary document class this project had used only for labels, never for the assessment
+reports where the pharmacology actually lives.
+
+**Rule:** for any drug that is central to a thread, read the EMA CHMP assessment report and the FDA
+multi-disciplinary review before opening new questions about its pharmacology. They routinely contain
+receptor-selectivity panels, biodistribution, dose-proportionality and the sponsor's own interaction
+analysis — none of which appear in the label or in the primary literature.

@@ -1,0 +1,156 @@
+id: vosoritide_is_cleared_by_npr3
+name: ANSWERED - vosoritide IS cleared by the NPR3 receptor, the regulator said so in 2021, and that makes
+  the NPR-C-evading variant the smallest high-value step on this axis
+aliases:
+- is vosoritide cleared by NPR3
+- does vosoritide bind NPR-C
+- vosoritide clearance pathways
+- why is vosoritide PK supraproportional
+type: process
+layer: L12
+stub: false
+summary: 'g_l12_is_vosoritide_cleared_by_npr3 WAS OPENED AT TRACTABILITY 1 ON THE GUESS THAT A REGULATORY
+  PHARMACOLOGY PACKAGE WOULD CARRY THE ANSWER. It does, in a public document, and the answer is YES.
+  THE DIRECT STATEMENT. The EMA CHMP assessment report for Voxzogo (EMA/397108/2021) says, discussing why
+  exposure rises faster than dose, that a scavenger receptor NPR-C exists for CNP WHICH ALSO BINDS
+  VOSORITIDE, and that saturating it with increasing dose could retard elimination and thereby raise
+  plasma levels. It then states three separate times, in the nonclinical and clinical pharmacology
+  sections and again in the discussion, that vosoritide is cleared primarily by protease-mediated
+  catabolism, RECEPTOR-MEDIATED CLEARANCE VIA NPR-C, and renal elimination.
+  THE PHARMACOKINETIC SIGNATURE THAT CONFIRMS IT. In a rat toxicology study at day 182, a NINE-FOLD dose
+  increase from 10 to 90 micrograms per kilogram produced a 35.7-fold rise in Cmax and a 36.2-fold rise in
+  AUC. Markedly supraproportional exposure is the classic fingerprint of a saturable clearance receptor,
+  and the assessors attribute it to exactly that.
+  THE HUMAN CORROBORATION, AND IT IS AGE-DEPENDENT. ANP rose dose-dependently in ADULT cynomolgus monkeys
+  and in adult subjects of the phase 1 study, but NOT in juvenile monkeys and NOT in the paediatric
+  patients of the later trials. The applicant attributed this to competition between endogenous ANP and
+  vosoritide for the natriuretic peptide clearing receptor NPR-C, and the CHMP agreed. So competition at
+  NPR-C is observable in vivo in humans - and the age dependence is a warning in its own right, since it
+  implies the clearance compartment is not the same in a child as in an adult.
+  AND THE APPLICANT NAMED THE INTERACTION THIS PROJECT WAS PROPOSING. In the drug-interaction discussion
+  the applicant identified, as a potential interaction, DRUGS BINDING TO THE NPR-C RECEPTOR THAT COULD
+  REDUCE VOSORITIDE CLEARANCE. That is the co-administration strategy the compound specification arrived
+  at from the other direction, written down by the sponsor and accepted by the regulator as a real
+  mechanism - dismissed only because no such drug is approved for children.
+  WHAT THIS SETTLES. Wendt2015, the primary pharmacology paper, opens by naming BOTH clearance routes -
+  exogenous CNP is compromised by rapid clearance through RECEPTOR-MEDIATED AND PROTEOLYTIC pathways -
+  and then engineers only the proteolytic one, producing a variant resistant to neutral endopeptidase
+  with roughly a tenfold half-life extension, from about 2.6 minutes for endogenous CNP to about 28
+  minutes. THE RECEPTOR ARM WAS LEFT ON THE TABLE. And biomarin_cnp_variants_us8198242 shows the same
+  sponsor had already claimed the fix in 2009 - ring-glycine substitutions including G8T, G8S, G8V and
+  G8N intended to cut NPR-C affinity while retaining NPR-B. So the design exists, the need is now
+  documented by the regulator, and no molecule combining both resistances has been tested against a length
+  endpoint anywhere this atlas can find.
+  THE OBJECTION THAT STOPS THIS BEING A CLEAN WIN, AND IT IS THE SAME TRAP AS THE PAM. NPR3 is expressed
+  systemically, not only at the plate. Blocking it systemically - or removing NPR-C binding from the
+  ligand - raises SYSTEMIC exposure, which is the quantity the cardiovascular margin in thread 3 is
+  denominated in. Longer half-life is not free: it is a dose increase by another route. The escape is the
+  same one the compound specification identified, and it is unchanged by this finding - the clearance
+  blocker must itself partition preferentially into cartilage, or the ligand must be retained
+  preferentially there, so that the clearance that is blocked is the LOCAL clearance and not the
+  circulating one.'
+quantitative:
+- parameter: 'SUPRAPROPORTIONAL EXPOSURE - THE FINGERPRINT OF SATURABLE RECEPTOR-MEDIATED CLEARANCE'
+  value: 'a 9-fold dose increase produced a 35.7-fold rise in Cmax and a 36.2-fold rise in AUC'
+  unit: fold change relative to the 10 microgram per kilogram dose
+  conditions: 'ema_voxzogo_epar_2021, Table 12, rat toxicology study BMN111-11-052, gender-combined,
+    DOSE DAY 182. Doses 10, 30 and 90 micrograms per kilogram: Cmax 603, 2922 and 21,525 picograms per
+    millilitre; AUC0-t 16,488, 112,208 and 597,397 picogram-minutes per millilitre. On DAY 1 the same
+    doses gave Cmax 1645, 1597 and 3007 with a Cmax ratio of only 1.83 at nine-fold dose, so the
+    nonlinearity is far more pronounced after repeated dosing than after the first dose. The assessors
+    attribute the phenomenon to saturation of NPR-C and note the mechanism was not formally determined.'
+  species: rat
+  source_ref: ema_voxzogo_epar_2021
+  uncertainty: 'THE MECHANISM IS ATTRIBUTED, NOT DEMONSTRATED - the report states plainly that the
+    mechanism underlying the phenomenon was not determined and offers NPR-C saturation as an explanation.
+    Accumulation of an anti-drug antibody, a change in absorption from the injection site over 182 days, or
+    altered renal handling would produce similar curves. The day-1 versus day-182 divergence is itself
+    unexplained. This is rat, at doses of 10 to 90 micrograms per kilogram against a human dose of 15,
+    and no equivalent human dose-proportionality table was extracted here.'
+- parameter: 'VOSORITIDE-DERIVED RADIOACTIVITY IN BONE RELATIVE TO PLASMA'
+  value: 'femur/plasma about 0.26 and tibia/plasma about 0.24 at one hour; about 0.28 and 0.27 at 15
+    minutes'
+  unit: ratio of ng-equivalents per gram to ng-equivalents per millilitre
+  conditions: 'ema_voxzogo_epar_2021, Table 13, study BMN111-18-004. Male Sprague Dawley rats, single
+    subcutaneous 124I-vosoritide at 90 micrograms per kilogram, necropsy at 0.25, 0.5 and 1 hour, n=3, 2
+    and 3. Values in ng equivalents per gram: plasma 101 / 140 / 191; femur 27.9 / 48.9 / 49.0; tibia
+    27.7 / 45.8 / 45.9; brain 11.1 / 19.6 / 18.5.'
+  species: rat
+  source_ref: ema_voxzogo_epar_2021
+  uncertainty: 'THIS IS NOT A GROWTH-PLATE CONCENTRATION AND MUST NOT BE USED AS ONE. Two independent
+    reasons. FIRST, WHOLE BONE IS NOT GROWTH PLATE - femur and tibia include marrow, cortex, periosteum
+    and vasculature, and the physis is a small fraction of the mass, so a whole-bone ratio could conceal
+    either enrichment or exclusion at the plate. SECOND, 124I RADIOACTIVITY IS NOT INTACT DRUG - the same
+    study found radioactivity predominantly in the STOMACH, which is where free iodide goes, so
+    deiodination is evidently substantial and an unknown share of the bone signal is label rather than
+    vosoritide. n is 2 to 3 animals per timepoint. What the number supports is an order-of-magnitude
+    statement - drug-derived material reaches bone at a few tens of per cent of plasma - which is broadly
+    consistent with farnum2006 predicting roughly 60 per cent partition at 3 kDa for a freely diffusing
+    tracer, given whole-bone dilution.'
+localization:
+- 'NPR3 is expressed both at the growth plate - transcript comparable to NPR2 in human plate per
+  the_plate_consumes_cnp_it_does_not_make_it - and systemically, and that dual localisation is precisely
+  what prevents clearance blockade from being a free therapeutic-index gain'
+human_evidence: direct
+human_evidence_note: 'The clearance-pathway statement and the ANP competition observation are human and
+  regulatory; the dose-proportionality and biodistribution tables are rat. The document is the assessment
+  of a marketed human product.'
+species_basis:
+- human
+- rat
+- non-human primate
+translation_risk: low
+translation_risk_reason: The load-bearing claim is a regulator's characterisation of the clearance
+  pathways of an approved human drug, drawn from the sponsor own package.
+confidence: B
+claim_grades:
+- claim: Vosoritide is cleared in part by receptor-mediated uptake via NPR-C/NPR3.
+  grade: B
+  basis: 'Stated directly and repeatedly in the EMA CHMP assessment report, supported by supraproportional
+    exposure in rat and by ANP competition observed in adult monkeys and adult humans. Graded B rather
+    than A because the assessment report presents this as the accepted characterisation rather than
+    reporting a measured NPR-C binding constant for vosoritide - no affinity value was found in the
+    document, and the mechanism behind the nonlinear PK is explicitly stated to be undetermined.'
+- claim: A CNP analogue resistant to BOTH neutral endopeptidase and NPR-C clearance would have
+    substantially greater exposure than vosoritide.
+  grade: D
+  basis: 'It follows from the clearance characterisation and the sponsor own 2009 patent claims that
+    such a molecule is designable and would be expected to last longer. It has not been built and tested
+    against any endpoint in anything this atlas has found, no comparative NPR-B versus NPR-C binding data
+    is public, and greater exposure is not the same as greater height.'
+- claim: Removing NPR-C clearance improves the therapeutic index of this axis.
+  grade: X
+  basis: 'NO - AND THIS IS THE TRAP. NPR3 is expressed systemically as well as at the plate. Removing
+    NPR-C clearance from the ligand, or blocking NPR-C systemically, raises SYSTEMIC exposure, which is
+    the quantity the cynomolgus cardiovascular NOAEL constrains. A longer half-life bought this way is a
+    dose increase by another name and runs into the same ceiling thread 3 identified. Only clearance
+    blockade that is LOCAL to cartilage escapes, which is what the_compound_this_thread_needs specifies
+    and which no existing molecule provides.'
+- claim: This closes the atlas claim that no growth-promoting agent has a published tissue concentration.
+  grade: X
+  basis: 'NO, BUT IT NARROWS IT AND THE NARROWING MATTERS. growth_plate_drug_exposure states that not one
+    of twelve audited agents has a published GROWTH PLATE tissue concentration in any species, and that
+    remains true - whole femur and tibia are not the physis. What is no longer true is the surrounding
+    framing that nothing but attention is missing: a rat biodistribution study including femur and tibia
+    sat in the public regulatory package for vosoritide the whole time and this atlas had not looked at
+    it.'
+key_refs:
+- ref_id: ema_voxzogo_epar_2021
+  year: 2021
+  type: regulatory
+  role: the document that answers the question - clearance pathways stated three times, the
+    supraproportional PK table, the ANP competition finding, and the bone biodistribution table
+- ref_id: wendt2015
+  year: 2015
+  type: primary
+  role: the primary pharmacology paper that names BOTH clearance routes and engineers only the proteolytic
+    one
+- ref_id: biomarin_cnp_variants_us8198242
+  year: 2012
+  type: patent
+  role: the same sponsor 2009 claims to CNP variants intended to evade NPR-C, never publicly reduced to
+    comparative binding data
+open_questions:
+- g_l12_does_a_small_molecule_accumulate_in_cartilage
+contradicts: []
+last_verified: '2026-08-08'
