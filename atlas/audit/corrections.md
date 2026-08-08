@@ -4937,3 +4937,46 @@ accession space lands on a real paper more often than not.
 **Rule tightened:** pass PMIDs by copy from search output in the same command, never retyped. Where a
 title search has already returned the record, prefer resolving by title or DOI over the numeric accession
 entirely — this round the DOI and the exact title were both available and either would have failed safe.
+
+## CORR-118 — the patent full text weakens a number I built on and corrects an argument the atlas had held since round 100
+
+The project owner supplied the full family text of US 8,198,242. It does **not** answer the question I said
+was last open — local consumption rate in cartilage — and contains no tissue kinetics of any kind. It
+corrects two other things.
+
+**1. The NPR-C affinity I used in round 121 is contradicted by the primary literature, and the conflict
+falls on my side.** Round 121 recorded, from FDA Table 50 SPR, that free CNP-38 binds NPR-C at ≤0.711 pM
+against NPR-B at 27.3 pM — **≥38-fold tighter at the clearance receptor** — and I built the claim that
+"the clearance receptor outbinds the signalling receptor for the active released species" on it. The patent
+background cites three primary studies (Bennett 1991 JBC; Koller & Goeddel 1992 Circulation; Suga 1992
+Endocrinology) giving native CNP-22 as **NPR-B 7–30 pM, NPR-C 11–140 pM** — comparable, possibly *weaker*
+at NPR-C. The NPR-B figures agree across sources; only NPR-C differs, by 15–200×.
+
+The obvious escape — that CNP-38 differs from CNP-22 — is closed by the patent itself: FIG 24 reports the
+two peptides show a **similar NPR-B versus NPR-C selectivity profile** in competition assays.
+
+The likely artefact is on the SPR side: NPR-C is a disulphide-linked homodimer, and an immobilised dimeric
+receptor reports avidity rather than affinity, which overstates tightness — and the value was *censored*
+("≤0.711 pM"), consistent with hitting the assay floor. I am not adopting either set as correct. What
+changes is that **the ≥38× claim rests on a single censored SPR number that the older literature does not
+support**, and I stated it more firmly than one assay warranted.
+
+**2. "Continuous exposure is mechanistically preferable" — held since round 100 — is wrong as stated, and
+the correction improves the picture.** FIG 25 reports that CNP-22 given to rat chondrosarcoma cells for
+**one or two hours once daily was substantially as effective as continuous exposure** at reversing
+FGF2-induced growth arrest. This does not contradict hirota2018's osmotic minipump; it explains it. Native
+CNP has a ~2.6-minute plasma half-life, so a bolus cannot deliver even one hour above threshold and a pump
+is the only route to the requirement. The corrected statement is that the axis needs roughly **an hour a
+day of adequate concentration, not permanent occupancy** — which independently predicts that daily
+vosoritide and weekly sustained navepegritide should perform similarly, as they do.
+
+That also softens my round-123 "exposure duration beats peak concentration" inference. Duration matters for
+*getting the drug in*, which is transport; it does not appear to matter at the *receptor*, which is what
+FIG 25 tests. The two are separable and I had run them together.
+
+**What the patent confirms rather than changes:** checked against the full text rather than the partial
+Google Patents fetch used in round 121, there is still **no comparative NPR-B versus NPR-C binding data for
+the ring-glycine variants**. The G8T/G8S/G8V/G8N substitutions appear only in the specification's list of
+candidates. The one selectivity figure, FIG 24, compares wild-type CNP-22 with CNP-38, not the engineered
+variants. The "potentially reduced affinity" language is prophetic claiming, and the round-121 reading of
+it stands.
