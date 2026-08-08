@@ -4399,3 +4399,57 @@ WHAT SURVIVES UNCHANGED, because it does not depend on the broken lookup:
 WHAT INVERTS: the recommendation. The transport arm is not refuted by human genetics — it is *supported*
 by it, and better than the sulfate arm is. The sulfate thread stays real on scherer2025's own strength,
 but it is a parallel second thread, not the arm the genetics points to instead.
+
+## CORR-101 — the five full texts say the enlargement is NOT mostly swelling, the swelling that can be induced is in the WRONG AXIS, and the set-point RE-TUNES. Two of my claims to the user were wrong
+
+Rounds 104–105 built the "biggest gap" case on a premise this atlas has carried since
+`terminal_cell_volume_is_the_undefended_term`: *"THE LARGEST COMPONENT OF THE ENLARGEMENT IS SWELLING,
+NOT BIOSYNTHESIS… A cell that gets bigger by taking on water spends no divisions."* The five full texts
+supplied this round attack that premise from three directions, and two specific things I said are wrong.
+
+**1. The enlargement is proportional hypertrophy, not swelling — bush2008, now read in full.** If the
+increase were swelling, the osmotically active/inactive fractions must differ between zones. In living
+rat growth plate by 2-photon microscopy over 0–580 mOsm they do not: **osmotically inactive fraction
+39.5 ± 2.9 % (PZ) vs 47.0 ± 4.3 % (HZ), n = 13, NS**; sensitivity **15.5 ± 0.8 vs 15.5 ± 1.2 %volume·Osm**.
+Matrix-corrected to an assumed 400 mOsm interstitium: 17.7 ± 3.8 vs 24.8 ± 6.0, still NS. The authors
+quantify the gap: Buckwalter's stereological swelling model requires an osmotically inactive fraction of
+**~80 %** in hypertrophic cells; they measure **53 %**. Their conclusion, verbatim in substance: volume
+increase by hypertrophy may play a greater role than swelling. And bush2010 — same group — separately
+showed conventional fixatives shrink these cells, so the stereological base the swelling claim rests on
+is itself suspect.
+
+*Possible reconciliation with cooper2013, offered as mine and not theirs:* cooper2013 resolves three
+phases, of which only phase 2 dilutes dry mass while phases 1 and 3 add solids. A net PZ→HZ comparison
+could preserve the osmotic fractions while a sub-phase is dilutional. That is a hypothesis, not a
+finding, and it does not rescue "the largest component is swelling."
+
+**2. Induced swelling is isotropic; in vivo enlargement is directional.** bush2008: when hypotonic
+swelling was analysed by linear dimension there was **no preferential increase in length, width or
+depth**, unlike the preferential lengthening seen in vivo. A swelling drug makes a chondrocyte fatter,
+not taller. I did not have this when I wrote the compound case.
+
+**3. The set-point re-tunes — hall2001, the paper I ranked fifth.** Chondrocytes chronically incubated at
+**180, 280 or 380 mOsm all settled at the same volume (~645 µm³)**, with the swelling-activated taurine
+efflux set-point tracking ambient osmolarity. This is stronger than acute RVD (bush2001: t½ ≈ 8 min, back
+to within ~3 % of initial by 20 min). Chronic osmotic manipulation is homeostatically cancelled.
+
+**4. A claim I made to the user is inverted by loqman2013 Table II.** I reported DIDS as part of an
+80 %-inhibition swelling effect. In fact DIDS at 250 µM suppressed growth ~70 % while hypertrophic cell
+volume went **UP**, 1,880 ± 230 → 2,660 ± 419 µm³ (NS). DIDS's growth effect is **not** a cell-volume
+effect. Only EIPA reduced volume — and it did so in **both** zones (PZ 761 → 211, HZ 2,044 → 586,
+P < 0.01) at 444 µM, which looks like global pH/metabolic shutdown rather than a specific swelling lever;
+the authors themselves assign NHE1 a "housekeeping" pH role.
+
+**5. The zileuton lead is dead on mechanism, not just expression.** hall2001 states the taurine pathway's
+activation does **not** involve arachidonic acid metabolites — REV5901, NDGA and MK886 block it by some
+other route. I had already downgraded it on ALOX5 being 2/4 donors; it is now doubly closed.
+
+WHAT SURVIVES: bush2010 itself (bumetanide, ~35 % of elongation, cell number 193 vs 192) — though note
+**bush2010 never measured cell volume in the bumetanide arm**, it inferred it from zone height.
+quinodoz2025 survives and is arguably strengthened: if the cell defends volume by RVD, a channel stuck
+open defeats the defence, and that costs −5.1 SD. And the emptiness survives — nobody has pushed upward.
+
+WHAT CHANGES: the target is not "add water." It is the **set-point**, which hall2001 shows is a real,
+measurable, adaptable quantity — and what sets it developmentally has never been asked. The h_term
+strategic argument survives only in its weaker form: enlargement does not spend DIVISIONS. The claim
+that it is *free* because it is water does not survive.
