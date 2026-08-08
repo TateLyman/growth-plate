@@ -11768,3 +11768,72 @@ gaps:
     SATURATED: nothing moves in either direction, and the machinery is already running at ceiling in a
     healthy plate. All three outcomes are informative, which is unusual in this audit.'
   tractability: 4
+- gap_id: g_l5_is_phase3_local_igf_the_real_h_term_lever
+  question: Terminal chondrocyte enlargement has three phases, and it is PHASE 3 - resumed proportional
+    dry-mass production at low density - whose duration varies most between fast and slow growth plates
+    and which is abolished in Igf1-null mice. Is phase 3 limited by PERICELLULAR FREE IGF-1 in the
+    hypertrophic zone rather than by circulating IGF-1, and if so does relieving that local restraint
+    lengthen terminal cells?
+  type: known_unknown
+  layer: L5
+  why_it_matters: 'THIS IS WHERE THE VARIABLE PART OF h_term ACTUALLY LIVES, AND THE STACK MAY BE AIMING
+    AT THE WRONG SIDE OF IT. cooper2013 resolves the enlargement into phase 1 (600 to 2000 fL,
+    proportional), phase 2 (2000 to 8000 fL, swelling, density diluted to 0.07 pg/fL) and phase 3 (8000 to
+    14000 fL, proportional again at the new low density). ONLY PHASE 3 VARIES: the slow mouse proximal
+    radius eliminates it entirely and stops at about 5000 fL, the mouse metatarsal truncates it at about
+    8000, the mouse tibia completes it to about 14000, and the jerboa metatarsal EXTENDS it to about 23000
+    fL - a roughly 40-fold increase from starting volume. So the several-fold cross-mammalian range in
+    terminal cell size that this atlas has cited for many rounds is almost entirely PHASE 3 DURATION.
+    AND PHASE 3 IS IGF-DEPENDENT BY DIRECT GENETIC TEST: Igf1-null and conditionally Igf1-deleted mice
+    complete phases 1 and 2 normally to about 7000 fL and then DO NOT ENTER PHASE 3, with the SAME NUMBER
+    of hypertrophic chondrocytes each 30 per cent shorter in the axis of elongation - which is a pure
+    h_term lesion, the cleanest in the literature. In that mutant the tibia and metatarsal cell heights
+    become indistinguishable, so IGF1 is what establishes plate-specific terminal cell size.
+    WHY THE STACK MAY MISS IT. Growth hormone raises CIRCULATING IGF-1. cooper2013 states the phase 3
+    mechanism is LOCALLY regulated. Local free IGF-1 is set by IGF-binding-protein sequestration and
+    pappalysin proteolysis in the pericellular space, not by plasma concentration - and this atlas already
+    holds two facts that fit: lui2018 reports long-bone chondrocytes ALREADY AT CEILING for IGF, and
+    erdaseries2025 patient 2 grew at 10 cm/year with IGF-1 at -3.8 SDS. Both are consistent with systemic
+    IGF-1 being irrelevant to a locally gated step. IF THAT IS RIGHT, the GH arm does not touch the
+    variable component of h_term at all, and the coverage audit entry marking IGF BIOAVAILABILITY as
+    UNHIT is the live one rather than a footnote.'
+  what_is_known: 'cooper2013, read in full: the three phases with dry-mass densities, the four-plate
+    comparison isolating phase 3 as the variable one, the Igf1 truncation, and a hard timing constraint -
+    the hypertrophic zone turns over in about 24 h, cells more than triple height within about 12 h and
+    then hold terminal size for a further 12 h before removal at the chondro-osseous junction, so phase 3
+    has roughly a 12-hour window. Human zone-resolved expression computed here from GSE288028 (4 donors,
+    single cell): IGF1R well expressed and PREHYPERTROPHIC-PEAKED at 57.3 per cent of cells; IGFBP3 and
+    IGFBP5 RISE into the hypertrophic zone relative to proliferative (H/P 3.98 and 2.50) while PAPPA, the
+    protease that liberates IGF from them, FALLS (H/P 0.52); IGFALS absent in 0 of 4 donors as expected
+    for a hepatic subunit. Human PAPP-A2 loss of function gives elevated TOTAL and reduced FREE IGF-1 with
+    progressive postnatal growth failure, and recombinant PAPP-A2 raises free IGF-1 (dauber2016).'
+  what_is_missing: 'NOBODY HAS MEASURED FREE IGF-1 IN THE HYPERTROPHIC ZONE OF ANY GROWTH PLATE, IN ANY
+    SPECIES. That single measurement is the hinge and it does not exist. Nor has anyone tested whether
+    phase 3 duration responds to a local manipulation of IGF bioavailability, as opposed to the systemic
+    Igf1 knockouts that established the dependence. The atlas own STC2 version of this hypothesis FAILED
+    to replicate this round (CORR-103) - STC2 is prehypertrophic-peaked at H/P 0.60 in GSE288028, not
+    hypertrophic-enriched - and PAPPA2 is detected in only 2 of 4 donors below 1.3 per cent, so the
+    existing human biologic is aimed at the wrong pappalysin for this tissue by expression. And no agent
+    of any kind has been tested against phase 3 as an endpoint.'
+  nearest_evidence:
+  - cooper2013
+  - dauber2016
+  - chu2026
+  - lui2018
+  discriminating_experiment: 'THREE STEPS, EACH ANSWERABLE, AND THE FIRST IS A MEASUREMENT NOT A DRUG.
+    (1) MEASURE THE HINGE: free versus total IGF-1 across growth-plate zones - microdialysis or
+    laser-capture plus immunoassay in a large-animal plate, or an IGF-1 activity reporter. If free IGF-1
+    is NOT lower in the hypertrophic zone, the restraint hypothesis dies and this gap closes cheaply.
+    (2) TEST THE DEPENDENCE LOCALLY: in the metatarsal organ-culture assay this atlas already uses, add
+    IGF-1, a pappalysin, or an IGFBP-displacing analogue on one side of a paired-bone design and read out
+    TERMINAL CELL HEIGHT by confocal on intact lacunae alongside elongation - the cell-height readout is
+    essential because CORR-044 records the atlas conflating zone size with cell size once already.
+    (3) SEPARATE LOCAL FROM SYSTEMIC: compare the same manipulation against saturating systemic IGF-1.
+    READOUTS UNDER COMPETING HYPOTHESES - LOCALLY GATED: free IGF-1 is lower in the hypertrophic zone,
+    local supplementation extends phase 3 and raises terminal cell height, and systemic saturation does
+    NOT reproduce it. That would make pericellular IGF release a genuinely unoccupied control point on the
+    one term the stack does not touch. SYSTEMICALLY SATURATED: local and systemic give the same answer and
+    lui2018 ceiling is the whole story, which closes the h_term pharmacology and is worth knowing.
+    TIME-LIMITED: neither moves terminal height because the 12-hour phase 3 window, not IGF, is binding -
+    in which case the target is the turnover clock at the chondro-osseous junction, not the growth factor.'
+  tractability: 3

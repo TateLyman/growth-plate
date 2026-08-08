@@ -4453,3 +4453,72 @@ WHAT CHANGES: the target is not "add water." It is the **set-point**, which hall
 measurable, adaptable quantity — and what sets it developmentally has never been asked. The h_term
 strategic argument survives only in its weaker form: enlargement does not spend DIVISIONS. The claim
 that it is *free* because it is water does not survive.
+
+## CORR-102 — CORR-101 over-corrected. cooper2013 controlled the artefact I was about to convict it with, so the swelling question is a live CONTRADICTION, not a retraction
+
+CORR-101 read bush2008 in full, concluded "the enlargement is NOT mostly swelling", and regraded the
+atlas's swelling claim to **X (retracted)**. Reading cooper2013 in full shows that was one step too far.
+
+**cooper2013 pre-empted the obvious objection and controlled it.** Verbatim in substance: to address the
+possibility that the swelling seen at larger volumes is a response to low-osmolarity media, they repeated
+the diffraction phase microscopy in tibiae dissociated in **424 mOsm** DMEM/F12 raised with sucrose —
+cartilage-like tonicity, not serum-like — and **found the same three phases including the swelling phase**.
+They also cite the RVD literature explicitly (4.1 %/min recovery, 96 % by ~12 min) and note ~4 h elapsed
+from dissection to imaging, i.e. ample time for volume regulation to have compensated. And the ~60 %
+density reduction is confirmed by a second, independent modality (tomographic phase microscopy), which
+also shows the dilution is distributed through the cytoplasm rather than being an edge artefact.
+
+**The conflict is therefore real and neither side is disposable.** Both used living cells. Cooper
+controlled tonicity and used two independent optical methods. Bush used cells *in situ* in their lacunae
+and controlled for matrix restriction. They measure **different physical quantities** — dry mass density
+(mass per volume) versus osmotically inactive fraction (Boyle–van't Hoff y-intercept) — and Bush flags
+that their y-intercept moves from 39.5/47.0 % to 17.7/24.8 % depending on an unmeasured assumption about
+interstitial osmolarity.
+
+**And the volumes do not let me reconcile them the easy way.** I had hoped bush2008's hypertrophic cells
+would turn out to sit below cooper2013's phase 2. They do not. bush2008 reports resting volumes of
+**1,314 ± 180 µm³ (PZC, S1–3)** and **4,808 ± 733 µm³ (HZC, S6–7)**, with a single illustrated HZC at
+6,236 µm³. Cooper's phase 2 runs 2,000 → 8,000 fL, so Bush's cells straddle it and *should* have shown a
+density change. That the neat reconciliation fails is worth more than if it had worked.
+
+Two things do soften Bush's null: n = 13 with SEM 2.9 and 4.3 is underpowered for a moderate difference,
+and loqman2010 — same group — shows conventional fixatives shrink these cells, which is a caution about
+the older stereology on both sides of the argument rather than about Bush's own live imaging.
+
+**Corrected status:** the swelling claim goes from **X (retracted)** back to a **logged contradiction**
+between cooper2013 and bush2008, with cooper2013 the better-controlled of the two on the specific
+question of whether dilution occurs. What does NOT come back is the strategic gloss: even on cooper2013's
+own numbers, phase 2 swelling is one of three phases, and it is **phase 3 — proportional dry-mass
+production, i.e. biosynthesis — that varies between fast and slow plates.** So "h_term is free because
+it is water" stays dead for a reason independent of bush2008.
+
+## CORR-103 — the atlas's own STC2 hypothesis does not replicate in the better dataset, but a stronger version of it does
+
+`hz_igf_restraint_hypothesis` was built on a P8-01 re-analysis of GSE9160 (2 donors, microarray) finding
+STC2 "STRONGLY HYPERTROPHIC-ZONE ENRICHED IN BOTH DONORS (fold 23.3 and 12.5)". Tested here against
+GSE288028 (4 donors, single-cell, zone-resolved) via `atlas/tools/gp_expression.py`:
+
+| gene | stem | prolif | prehyp | hyper | H/P |
+|---|---|---|---|---|---|
+| **STC2** | 4.3 | 16.0 | **23.9** | 9.5 | **0.60** |
+| **PAPPA2** | 3.0 | 1.8 | 0.7 | 0.5 | 0.25 (and only 2/4 donors, <1.3 %) |
+| PAPPA | 36.2 | 31.3 | 15.8 | 16.4 | 0.52 |
+| **IGFBP3** | 19.7 | 0.8 | 3.0 | 3.3 | **3.98** |
+| **IGFBP5** | 26.4 | 5.5 | 13.9 | 13.8 | **2.50** |
+| IGF1R | 38.4 | 51.5 | **57.3** | 39.7 | 0.77 |
+| IGFALS | — | — | — | — | 0/4 donors |
+
+**STC2 is PREhypertrophic-peaked, not hypertrophic (H/P 0.60).** The specific claim the node was built on
+fails to replicate in the larger, better-resolved dataset. **PAPPA2 is near-absent** (2/4 donors, under
+1.3 % of cells), so the pappalysin that actually matters in this tissue is **PAPP-A**, not PAPP-A2.
+
+But the *direction* survives on a better pair: **IGFBP3 (H/P 3.98) and IGFBP5 (H/P 2.50) rise into the
+hypertrophic zone while PAPPA — the protease that liberates IGF from them — falls (H/P 0.52).** More
+binding protein and less protease, exactly where phase 3 occurs. That is a stronger form of the restraint
+hypothesis than the STC2 version, from 4 donors at single-cell resolution rather than 2 on a microarray.
+IGF1R is well expressed and peaks prehypertrophically (57.3 %), so the receptor is present where phase 3
+initiates.
+
+Consequence: the node's STC2 claim is regraded, and the therapeutic reading changes from "inhibit STC2"
+to "raise pericellular free IGF-1 in the hypertrophic zone", where the existing human-addressable agent
+(recombinant PAPP-A2, dauber2016) is aimed at the wrong pappalysin for this tissue by expression.
