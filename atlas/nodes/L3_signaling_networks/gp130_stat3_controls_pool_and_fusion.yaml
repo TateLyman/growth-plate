@@ -203,6 +203,55 @@ quantitative:
     oestrogen signal at 204 and 197 cm, so whatever this costs, removing oestrogen remains strongly
     net-positive for adult height. What changes is that the cost is now named and measurable rather than
     assumed to be zero.'
+- parameter: 'THE HUMAN EVIDENCE ON THIS AXIS, AND IT RUNS THE OTHER WAY'
+  value: growth velocity versus IL-6, r = -0.337, p = 0.003
+  unit: Spearman correlation
+  conditions: '78 children with juvenile idiopathic arthritis. Growth velocity correlated NEGATIVELY with
+    IL-6 (r = -0.337, p = 0.003), CRP (r = -0.386, p = 0.001) and ESR (r = -0.269, p = 0.022). Children
+    with IL-6 above 1 pg/mL (n = 28, 35.9 per cent) had growth velocity Z-score -1.66 +/- 2.44 against
+    -0.07 +/- 2.48 (p = 0.006). In multiple linear regression only elevated IL-6 was INDEPENDENTLY and
+    negatively associated with growth velocity; cumulative glucocorticoid exposure was not. Separately,
+    liu2022gp130 itself cites that many juvenile arthritis patients treated with the anti-IL-6R antibody
+    TOCILIZUMAB achieved normalised growth rates when serum IL-6 normalised - which is INTERVENTIONAL
+    human evidence in the same direction.'
+  species: human
+  source_ref: souza2008
+  uncertainty: 'THE ONLY HUMAN DATA ON THIS AXIS SAY THAT LOWERING IL-6 SIGNALLING IMPROVES GROWTH, WHICH
+    IS THE OPPOSITE OF WHAT THE MOUSE GENETICS SAY, AND IT IS OBSERVATIONAL PLUS ONE CITED INTERVENTION
+    RATHER THAN A TRIAL. THE OBVIOUS DEFLATION FIRST: CRP correlated MORE strongly than IL-6 (-0.386
+    against -0.337), so IL-6 may be indexing inflammation generally rather than acting specifically, and
+    chronic inflammation suppresses growth by several routes this atlas already holds - GH resistance,
+    IGF-1 suppression, undernutrition, and the disease itself. The multivariable model retaining only
+    IL-6 is suggestive but n = 78 with collinear inflammatory markers cannot separate them cleanly. THE
+    RECONCILIATION THAT THE PAPER ITSELF SUPPLIES IS BETTER THAN A DEFLATION, AND IT IS IN liu2022gp130
+    SUPPLEMENTARY FIGURE 1: across four stages of human ontogeny, gp130 is expressed at all stages but
+    LIF IS ENRICHED AT FETAL AND ADOLESCENT STAGES, WHEN GROWTH PLATES ARE ACTIVE IN HUMANS. gp130 is
+    the shared co-receptor for a whole cytokine family; if the growth-plate ligand is LIF or OSM, then
+    inflammatory IL-6 is a different input arriving at the same receptor. Liu themselves reach for the
+    word CALIBRATED and say it remains to be determined whether the disease and developmental functions
+    are identical. THE SECOND RECONCILIATION IS MECHANISTIC AND IS THIS ATLAS OWN, GRADED E: chronic
+    IL-6 induces SOCS3, SOCS3 docks at gp130 Y759, and that shuts down the STAT3 arm - so sustained
+    inflammatory IL-6 could produce LOW chondrocyte STAT3, which would make both datasets agree at the
+    level of STAT3 output and disagree only at the level of ligand. Untested here.'
+- parameter: 'AND THAT SHARPENS THE SIGN QUESTION RATHER THAN SETTLING IT - Y759 IS the SOCS3 docking site'
+  value: the two proposed mechanisms map onto the two arms the human and mouse data already dissociate
+  unit: qualitative
+  conditions: he2024gp130 reports RCGD423 acting by phosphorylating gp130 Y759 and recruiting SHP2 AND
+    SOCS3; Y759 is the canonical negative-feedback site through which sustained IL-6 signalling
+    terminates the STAT3 arm. shkhyan2018, sarkar2023 and liu2022gp130 - one laboratory - report the
+    molecule as increasing STAT3 activation
+  species: not_applicable
+  source_ref: he2024gp130
+  uncertainty: 'THIS IS THE MOST DECISION-RELEVANT THING IN THE NODE AND IT IS WHY THE MOLECULE STAYS
+    UNADOPTED. If he2024gp130 is right, RCGD 423 engages the SAME ARM that chronic inflammatory IL-6
+    engages - the Y759-SHP2-SOCS3 arm that terminates STAT3 - which would make it behave at a growth
+    plate like the JIA phenotype rather than like the Stat3C phenotype. The two candidate mechanisms for
+    this molecule are not merely different, they correspond exactly to the two gp130 output arms that the
+    human and mouse evidence already pull apart. THAT IS AN ARGUMENT ABOUT PLAUSIBILITY, NOT A
+    MEASUREMENT, and it is graded accordingly: no independent pSTAT3 measurement in chondrocytes exists
+    either way, and a single Western blot from any laboratory outside the originating group would settle
+    it. Until then the atlas treats a molecule whose sign determines whether it grows a plate or fuses
+    one as unusable.'
 localization:
 - 'growth plate: liu2022gp130 deleted Stat3 and gp130 in chondrocytes postnatally and got fusion'
 - 'articular cartilage: where every RCGD 423 experiment was actually done'

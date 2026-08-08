@@ -4000,3 +4000,72 @@ growth plate, biomarker readout with no length or fusion endpoint. The subject h
 arm was female-only. And the direction of the net human effect is not in doubt — smith1994 and herrmann2002
 are men with lifetime absent oestrogen signal at 204 and 197 cm. What changes is that the cost of the
 duration arm is now named and measurable rather than assumed to be zero.
+
+---
+
+## CORR-088 — the femoral length belongs to the constitutive line, not the postnatal one, and the gain-of-function has no length endpoint anywhere
+
+Round 89 recorded "significant femoral shortening by microCT" alongside the postnatal, inducible
+Acan-Cre^ERT2 and Gli1-Cre^ERT2 deletions, in a node whose whole argument rests on those deletions being
+*postnatal* and therefore free of the developmental confound that weakens the Dnmt1 and Uhrf1 results.
+
+The supplement shows the length data belong to a different mouse. **Supplementary Figure 3 is
+`Col2a1-Cre; Stat3^fl/fl` — a CONSTITUTIVE chondrocyte deletion**, not an induced one: "Constitutive
+deletion of Stat3 in chondrocytes via Col2a1-Cre resulted in reduced body size and growth plate fusions at
+3 months … statistically significant reductions in femoral length."
+
+So the axis's only bone-length endpoint comes from a developmental deletion, and the postnatal inducible
+lines are characterised by growth-plate thickness, fusion frequency and body size — not by length. That
+does not undo the postnatal result; it means the postnatal result and the length result are from different
+experiments and the node was reading them as one.
+
+Confirmed at the same time, and it is the more important half: **Stat3C has no bone-length endpoint
+anywhere in the paper or its supplement.** Supplementary Figure 14 is EdU incorporation in *articular*
+cartilage. The gain-of-function demonstrates proliferation and nothing else.
+
+What the supplement gives back is worth more than what it takes: **Supplementary Figure 1 shows that across
+four stages of human ontogeny, gp130 is expressed at all stages while LIF is enriched at fetal and
+adolescent stages, when growth plates are active in humans.** That is human expression data pointing at
+*which* gp130 ligand matters for growth — and it is the reconciliation for CORR-089.
+
+Vertebral numbers now held from Supplementary Data 2 (n=4 per genotype, sexes pooled), control vs
+Stat3-deleted: ventral body height L3 2.88→2.10 mm (−27 %), L4 2.88→2.14 (−26 %); **dorsal** body height
+L4 3.31→2.33 (−30 %), L6 2.96→1.88 (**−36.5 %**); cranial endplate area L4 1.82→2.18 (**+20 %**). Dorsal
+height falls further than ventral — short, wide vertebrae with disproportionate posterior loss, which is
+the geometry of kyphosis.
+
+## CORR-089 — the human evidence on the gp130 axis runs opposite to the mouse genetics, and I had not looked for it
+
+Round 89 called gp130/STAT3 "the strongest new lead in the project" on the strength of mouse genetics, and
+listed "anything measuring IL-6, LIF, OSM or IL-11 against human height velocity" as a *future* request. It
+existed and it points the other way.
+
+`souza2008`, 78 children with juvenile idiopathic arthritis: growth velocity correlates **negatively** with
+IL-6 (r = −0.337, p = 0.003), CRP (r = −0.386, p = 0.001) and ESR (r = −0.269, p = 0.022). Children with
+IL-6 > 1 pg/mL (n = 28) had growth velocity Z-score **−1.66 ± 2.44 vs −0.07 ± 2.48** (p = 0.006). In
+multiple linear regression **only IL-6** was independently and negatively associated; cumulative
+glucocorticoid exposure was not. And `liu2022gp130` itself cites the interventional counterpart: juvenile
+arthritis patients on the anti-IL-6R antibody **tocilizumab achieved normalised growth rates when serum
+IL-6 normalised**.
+
+So the only human data on this axis say that **lowering** IL-6 signalling improves growth, while the mouse
+genetics say deleting gp130/STAT3 stunts and fuses. Three readings, in descending order of how much they
+deflate the lead:
+
+1. **IL-6 is indexing inflammation, not acting.** CRP correlated more strongly than IL-6, and chronic
+   inflammation suppresses growth through GH resistance, IGF-1 suppression and undernutrition — all of
+   which this atlas already holds. n = 78 with collinear markers cannot separate them cleanly.
+2. **Different ligand, same receptor.** Liu's own Supplementary Figure 1 has LIF enriched at exactly the
+   human stages when growth plates are active. gp130 is shared across the whole IL-6 family; inflammatory
+   IL-6 and developmental LIF are different inputs. Liu reach for the word **"calibrated"** and say
+   explicitly that it remains to be determined whether the disease and developmental functions are the same.
+3. **SOCS3 feedback** (this atlas's, graded E and untested): chronic IL-6 induces SOCS3, SOCS3 docks at
+   gp130 **Y759**, and that terminates the STAT3 arm — so sustained inflammatory IL-6 could produce *low*
+   chondrocyte STAT3, making both datasets agree on STAT3 output and disagree only on ligand.
+
+**This sharpens the RCGD 423 sign question rather than settling it, and in the direction of caution.**
+`he2024gp130` reports the molecule acting via Y759 with SHP2 *and SOCS3* recruitment — and Y759 is the
+SOCS3 docking site. If that is right, RCGD 423 engages the same arm chronic inflammatory IL-6 engages, and
+would behave at a growth plate like the JIA phenotype rather than like the Stat3C phenotype. The two
+candidate mechanisms for this molecule map exactly onto the two gp130 output arms that the human and mouse
+evidence already pull apart.
