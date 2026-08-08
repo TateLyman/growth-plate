@@ -33,7 +33,20 @@ summary: 'THE INSTRUCTION WAS TO ENUMERATE EVERY DOCUMENTED DRUG ON THIS AXIS BE
   crossing them against cartilage, chondrocyte, growth plate and bone growth returned NOTHING skeletal -
   the lead is unexplored rather than refuted, and the atlas own PDE5 null is the reason to expect it to
   fail, because sGC-derived cGMP is a different pool from NPR2-derived cGMP and bulk cGMP has already been
-  shown insufficient.'
+  shown insufficient. THE VERDICT ON THE QUESTION ASKED - IS VOSORITIDE BEATEN, OR PAIRED. BEATEN: yes,
+  by NAVEPEGRITIDE, on continuity of exposure, on dosing burden, and on the age gradient, though never
+  head-to-head. PAIRED: yes, by TWO things and only two. GROWTH HORMONE, which is documented additive in
+  humans within-subject (mcdonnell2026) and is already in the stack. And NPR2-DEPHOSPHORYLATION BLOCKADE,
+  the only pairing on this axis carrying four independent layers - mechanism, a genetic rescue to
+  wild-type, an additive length endpoint, and human target expression - but preclinical, oncological, and
+  partly redundant with an FGFR inhibitor by its own mechanism. NOT PAIRED BY: sacubitril, which
+  hakata2024 tested with CNP and found NOT additive, and which the human expression data further
+  undercuts because ECE1 and IDE both out-transcribe MME; cilostazol, which shares the cGMP/PKG segment
+  and cannot reach the hypertrophic zone (CORR-098); PDE5, PDE2 and PDE10 inhibitors, all negative, one
+  with confirmed target engagement. AND EMPTY AT: BK channels, TRPM7 and soluble guanylate cyclase, where
+  the architecture predicts non-redundancy, the human expression is strong for the first two, and NO
+  BONE-LENGTH ENDPOINT EXISTS IN ANY SPECIES. The axis is now mapped to its ends and the ends are the
+  answer: there is no third drug to add.'
 quantitative:
 - parameter: 'THE APPROVED SUSTAINED-RELEASE AGENT, AND THE EFFECT GROWS WITH AGE'
   value: '+1.49 cm/year overall; +1.41 in ages 5-7; +2.48 in ages 8 and older'
@@ -117,9 +130,14 @@ quantitative:
     same logic applies to the cyclase: sGC-derived cGMP is a cytosolic pool physically distinct from the
     membrane-delimited pool NPR2 generates, and the evidence says the pool matters. AGAINST THAT, THE
     ABSENCE IS GENUINE AND THE DRUGS ARE ORAL AND APPROVED, so the cost of checking is one expression query
-    and one organ-culture arm. GUCY1A1 and GUCY1B1 expression in human growth plate has never been checked
-    by this atlas and should be, since if the soluble cyclase is not expressed in chondrocytes the lead
-    closes for free.'
+    and one organ-culture arm. I RAN THE EXPRESSION CHECK THIS ROUND AND IT DOES NOT CLOSE THE LEAD, BUT IT
+    DOES WEAKEN IT. From GSE288028: GUCY1A1 in 3 of 4 donors at 0.6-7.6 per cent of cells and GUCY1B1 in 3
+    of 4 at 1.0-6.3 - the soluble cyclase heterodimer IS transcribed, so the lead survives, but at an order
+    of magnitude below the axis genes that matter (PPP2CA 29-39, CAMK2D 39-66). MORE TELLING IS THE INPUT:
+    NOS1 is detected in 0 of 4 donors (0.24-0.68 per cent), NOS2 in 2 of 4 and NOS3 in 2 of 4, all under 7.
+    sGC is a nitric-oxide sensor, and the enzymes that make nitric oxide are the scarcest genes I have
+    measured on this axis. A stimulator needs basal NO to potentiate; riociguat has an NO-independent mode
+    but it is the weaker of its two.'
 - parameter: 'THE ONLY DOCUMENTED ADDITIVE PARTNER ON THIS AXIS - preventing NPR2 dephosphorylation, with
     genetic validation, pharmacology, and human target expression'
   value: 'genetic rescue to WILD-TYPE bone length; LB-100 alone 1.30x vehicle and additive with a CNP
@@ -220,7 +238,22 @@ claim_grades:
 - claim: sGC stimulators are worth testing on this axis.
   grade: E
   basis: An absence of data plus two approved oral drugs, against a direct sufficiency failure for bulk
-    cGMP with confirmed target engagement. Listed for completeness, not recommended.
+    cGMP with confirmed target engagement, sGC subunits transcribed at only 0.6-7.6 per cent of cells,
+    and NOS1 undetected in all four donors. Listed for completeness, not recommended.
+- claim: Preventing NPR2 dephosphorylation is the best-supported pairing partner for a CNP agent on this
+    axis.
+  grade: C
+  basis: Four converging layers - shuhaibar2017 mechanism, wagner2021 genetic rescue to wild-type,
+    shuhaibar2021 additive length endpoint (2.06x observed against 2.08x predicted), and PPP2CA/PPP2CB in
+    4 of 4 human donors. All of it preclinical, all in an Fgfr3 gain-of-function background, in fetal
+    organ culture, with cantharidin unable to distinguish PP2A from PPP1/PPP4/PPP5, and with the
+    substrate-depletion objection of CORR-083 unresolved.
+- claim: No agent acting at BK, TRPM7 or soluble guanylate cyclase can be recommended, despite the
+    architecture predicting non-redundancy there.
+  grade: A
+  basis: This grades an ABSENCE, which is why it is high. Two systematic searches, 389 and 84 hits, with
+    no bone-length or growth-plate endpoint in any species. The absence itself is well established; what
+    would happen if the experiment were run is entirely unknown.
 key_refs:
 - ref_id: savarirayan2026
   year: 2026
@@ -242,6 +275,23 @@ key_refs:
   type: primary
   one_line_finding: CNP-53 by CONTINUOUS infusion grew wild-type rats dose-dependently and prevented
     growth plate closure - the mechanistic basis for preferring sustained release.
+- ref_id: wagner2021
+  year: 2021
+  type: primary
+  one_line_finding: A phospho-mimetic GC-B-7E/7E allele crossed into FGFR3-G380R mice restores long bone
+    length and hypertrophic zone area to WILD-TYPE - the genetic validation of the NPR2-dephosphorylation
+    node that LB-100 targets pharmacologically.
+- ref_id: shuhaibar2021
+  year: 2021
+  type: primary
+  one_line_finding: LB-100 alone 1.30x vehicle, BMN-111 alone 1.78x, the combination 2.06x against an
+    additive prediction of 2.08 - the only combination on this axis that beat its own monotherapy on a
+    length endpoint.
+- ref_id: hakata2024
+  year: 2024
+  type: primary
+  one_line_finding: Sacubitril grows mice through NPR-B and is explicitly NOT additive with CNP - the
+    result that removes neprilysin inhibition from the pairing candidates.
 open_questions:
 - g_l3_cnp_plus_fgfr_blockade_in_wildtype
 - g_l3_neprilysin_window

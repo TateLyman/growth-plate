@@ -19389,3 +19389,73 @@ edges:
     time-dependent inhibitor AND inducer and cilostazol is a CYP3A4 substrate, so their combination has an unpredictable and
     time-varying effect on cilostazol exposure; vosoritide is a peptide and has no such interaction.'
   traversal_usable: true
+- edge_id: e01262
+  source: every_drug_on_the_cnp_axis
+  target: navepegritide
+  relation: correlates_with
+  sign: +
+  magnitude: '+1.49 cm/yr overall vs placebo; +2.48 cm/yr in children aged 8 and older'
+  context: human, achondroplasia aged 2-11, APPROACH phase 2b randomised double-blind placebo-controlled,
+    52 weeks, n=84, 100 micrograms/kg once weekly subcutaneous
+  evidence_tier: T1
+  refs:
+  - savarirayan2026
+  - kang2026
+  confidence: B
+  notes: The enumeration of every agent on this axis resolves to navepegritide over vosoritide on
+    continuity of exposure and on an age gradient that runs the right way. No head-to-head exists; the
+    continuity argument is mechanistic, from hirota2018 needing continuous infusion.
+  traversal_usable: true
+- edge_id: e01263
+  source: every_drug_on_the_cnp_axis
+  target: growth_hormone
+  relation: correlates_with
+  sign: +
+  magnitude: '+3.28 cm/yr added on top of navepegritide, within-subject'
+  context: human, achondroplasia aged 2-11, COACH phase 2, n=9 already on navepegritide monotherapy for
+    over one year, lonapegsomatropin added, 52 weeks
+  evidence_tier: T1
+  refs:
+  - mcdonnell2026
+  confidence: C
+  notes: The only human-documented additive pairing for a CNP agent. Within-subject design past any
+    initial catch-up, but n=9, no placebo arm for the combination, and no bone age reported - which
+    matters because GH advances maturation where a CNP agent does not.
+  traversal_usable: true
+- edge_id: e01264
+  source: every_drug_on_the_cnp_axis
+  target: neprilysin_cnp_clearance
+  relation: correlates_with
+  sign: '-'
+  magnitude: ECE1 4/4 donors at 2.7-25.0 per cent and IDE 4/4 at 15.9-17.9, against MME 3/4 at 0.9-9.9
+  context: human pubertal growth plate, 4 donors, GSE288028 single-cell, computed in this atlas; read
+    alongside mouse pharmacology
+  evidence_tier: T2
+  refs:
+  - chu2026
+  - hakata2024
+  confidence: C
+  notes: Enzymatic clearance is removed as a pairing candidate on two independent grounds - hakata2024
+    tested sacubitril WITH CNP and found it not additive, and two other natriuretic-peptide-degrading
+    peptidases out-transcribe neprilysin in the target tissue. Expression is not activity; this lowers
+    the prior rather than refuting it.
+  traversal_usable: true
+- edge_id: e01265
+  source: every_drug_on_the_cnp_axis
+  target: fgfr3_npr2_crosstalk
+  relation: correlates_with
+  sign: +
+  magnitude: LB-100 alone 1.30x vehicle; with BMN-111 2.06x against an additive prediction of 2.08
+  context: mouse E16.5 Fgfr3-Y367C/+ femur organ culture, 6 days; with genetic support from
+    GC-B-7E/7E crossed into FGFR3-G380R restoring long bone length to wild-type
+  evidence_tier: T2
+  refs:
+  - shuhaibar2021
+  - shuhaibar2017
+  - wagner2021
+  confidence: C
+  notes: The only pairing on this axis with four independent layers - mechanism, genetic rescue to
+    wild-type, an additive length endpoint, and human target expression (PPP2CA and PPP2CB in 4 of 4
+    donors). Preclinical, in an Fgfr3 gain-of-function background, and partly self-defeating in a subject
+    already on an FGFR inhibitor because LB-100 opposes FGF-INDUCED dephosphorylation (CORR-083).
+  traversal_usable: false
