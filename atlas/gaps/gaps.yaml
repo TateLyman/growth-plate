@@ -12137,3 +12137,49 @@ gaps:
     half-life extension it is meant to control for.'
   tractability: 4
   search_log_ref: g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+- gap_id: g_l5_interstitial_flow_velocity_in_human_growth_plate
+  question: What is the interstitial fluid flow velocity through human growth-plate cartilage? williams2007
+    measures about 2.5 micrometres per second inward from each chondro-osseous junction in mouse, and that
+    single number now decides whether the plate is consumption-limited or perfused.
+  type: known_unknown
+  layer: L5
+  why_it_matters: 'IT IS THE LAST TERM IN THE GROUP THAT DECIDES THE WHOLE LIGAND BRANCH OF THREAD 3, AND
+    IT IS THE ONLY ONE STILL UNMEASURED IN HUMANS. With advection included the governing group is the
+    Damkohler number Da = k L over v - the fraction of arriving ligand consumed during transit. k is
+    bounded by local_consumption_rate_inferred and L is measured in humans by yun2018, so v alone sets the
+    answer. At the mouse velocity Da is 0.015 to 0.185, the plate consumes a few per cent of what crosses
+    it, and removing part of that sink cannot buy meaningful therapeutic index - which kills the transport
+    asymmetry and with it the last argument separating a dual-resistant CNP analogue from a plain dose
+    increase. AT A TENFOLD SLOWER HUMAN VELOCITY Da RISES TO 0.15 TO 1.85 AND THE ARGUMENT REOPENS. There
+    is no reason mouse and human velocities should match: interstitial flow arises from a pressure
+    difference between bone vasculature and cartilage, across a plate three times thicker growing far more
+    slowly.'
+  what_is_known: 'williams2007 Figure 4f, mouse: flow about plus 2.5 micrometres per second through the
+    epiphyseal half and minus 2 through the metaphyseal half, converging near normalised axial position
+    0.62, both directed into the cartilage from the vascularised junctions, with lateral drainage to the
+    perichondrium presumed. Fitting diffusion alone gave abnormally high coefficients and inconsistent
+    fits until flow was included. Against measured diffusivities of 30 to 60 square micrometres per second
+    this is a Peclet number of 6 to 25, so delivery is advection-dominated. Human plate half-thickness is
+    about 400 micrometres (yun2018).'
+  what_is_missing: 'ANY MEASUREMENT OF INTERSTITIAL FLOW IN HUMAN PHYSEAL CARTILAGE, and indeed any
+    measurement in a species other than mouse. Also missing is whether the mouse value is a steady-state
+    property or an artefact of the bolus injection and anaesthesia used to obtain it, and whether flow
+    persists at a late, slowly elongating plate - which is the condition that matters for a subject at bone
+    age 16, since the pressure difference driving it may scale with growth activity.'
+  nearest_evidence:
+  - williams2007
+  - yun2018
+  nearest_evidence_note: williams2007 is the only measurement of interstitial flow in any growth plate and
+    it is mouse; yun2018 supplies the human length that the velocity must be combined with.
+  discriminating_experiment: 'THREE ROUTES, ASCENDING IN COST. (1) DESK WORK FIRST - contrast-enhanced MRI
+    of the human physis already exists in the orthopaedic literature for cartilage assessment, and
+    gadolinium washin and washout kinetics across the physis would give an effective transport velocity
+    without any new modality. (2) Repeat the williams2007 multiphoton protocol in a LARGER ANIMAL with a
+    plate closer to human thickness, which tests the scaling directly rather than assuming it. (3) The
+    definitive version is the same paired experiment already specified in
+    g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature, which measures the consequence rather
+    than the parameter. PRE-REGISTERED READING: a human effective velocity within about threefold of the
+    mouse value leaves Damkohler well below one and the ligand branch stays closed; tenfold slower or worse
+    puts Damkohler near unity and the dual-resistant analogue is back in contention.'
+  tractability: 3
+  search_log_ref: g_l5_interstitial_flow_velocity_in_human_growth_plate

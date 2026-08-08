@@ -5003,3 +5003,50 @@ what caught this and CORR-117 both.
 Recording the near-miss cost honestly: both wrong references were caught only because I habitually print
 the resolved title afterwards. Neither was caught by the tool, and `addref.py` cannot catch this class —
 a mistyped accession in a dense numeric space lands on a real paper more often than not.
+
+## CORR-120 — the depth profile I called "the finish line" was in a figure of a paper I already had, and reading it overturns rounds 123 and 125
+
+Round 126 concluded that thread 3's last question could not be finished from documents, because it needed
+"a measurement that does not exist in any published form: a solute concentration profile across the depth
+of a growth plate." **That profile is Figure 4d of williams2007**, a paper this atlas has held and quoted
+from for four rounds. I had extracted the paper's *text* and never its *figures*.
+
+Extracting them answers the question three ways, and all three go against my recent position.
+
+**1. My hypertrophic diffusivity was 7.1× too low, and it was the number driving everything.** Round 123
+computed D for a 4 kDa peptide in the hypertrophic zone as 5.7 µm²/s, by applying the *theoretical*
+Mackie–Meares hindrance (21, derived from fractional fluid volume 0.36) to the proliferative value.
+**Figure 3d of the same paper measures D directly by FRAP against axial position** — and the measured
+variation across the plate is 2–3×, not 10×. Measured 10 kDa D at the metaphyseal end is ~30 µm²/s, giving
+~41 µm²/s at 4 kDa. I used a theoretical estimate while a direct measurement sat in the same paper.
+Corrected, the human hypertrophic Thiele modulus falls from 3.29 to **1.23** at the central k, and spans
+0.62–2.13 across the k range — transitional, not diffusion-limited.
+
+**2. Advection is now quantified and it dominates.** Figure 4f plots flow rate against axial position:
+**+2.5 µm/s in the epiphyseal half, −2 µm/s in the metaphyseal half, converging near position 0.62** — both
+directed into the plate, as the text says. That gives a Péclet number of **6–25**. Delivery is advective,
+not diffusive. Every Thiele modulus in this atlas assumed pure diffusion and is therefore an overestimate,
+which I flagged repeatedly as unquantified — it is now quantified.
+
+**3. With advection, the right group is the Damköhler number, and it is far below one.** Da = kL/v =
+**0.015–0.185**, meaning only 1.5–18% of arriving ligand is consumed during transit across the plate.
+**That is not a consumption-limited tissue.**
+
+**4. And the profile shape settles the steric-versus-consumption question directly.** Figure 4d shows
+laterally averaged fluorescence against axial position, time-coded to 4 minutes. The steady profile is
+**not U-shaped** — it rises from the epiphyseal junction to a broad maximum near position 0.55–0.6. That is
+the signature of convergent inward flow, not of interior depletion.
+
+**What this costs.** The transport asymmetry — the last surviving argument for the dual-resistant CNP
+analogue, the one thing separating it from three candidates that died as dose-increases-in-disguise —
+**largely fails**. Round 122's original conclusion was closer to right, and rounds 123 and 125 over-corrected
+on a theoretical hindrance coefficient.
+
+**The open variable has changed identity.** It is no longer k. Da = kL/v, and with k bounded, the term that
+now decides the answer is **v, the interstitial flow velocity in *human* cartilage**, which is unmeasured —
+the 2.5 µm/s is mouse. If human flow is tenfold slower, Da rises to 0.15–1.85 and the question reopens.
+
+**Rule:** extract and read the figures, not only the text, before declaring that a measurement does not
+exist. Three corrections now share one shape — CORR-115 (wrong platform while the right dataset sat in the
+atlas index), CORR-116 (regulatory assessment never opened), and this one (figures never extracted from a
+paper quoted for four rounds). In each case the answer was already inside the project.

@@ -1,0 +1,163 @@
+id: the_plate_is_advection_fed_not_diffusion_limited
+name: ANSWERED FROM THE FIGURES - the growth plate is perfused by convergent interstitial flow, the
+  Damkohler number is far below one, and the transport asymmetry fails
+aliases:
+- is the growth plate diffusion limited
+- Peclet number growth plate
+- Damkohler number cartilage
+- growth plate interstitial flow
+- the depth profile
+type: process
+layer: L5
+stub: false
+summary: 'THE MEASUREMENT ROUND 126 CALLED THE FINISH LINE - a solute concentration profile across the
+  depth of a growth plate - EXISTS, AND IT IS FIGURE 4d OF A PAPER THIS ATLAS HAD ALREADY QUOTED FOR FOUR
+  ROUNDS. The text had been extracted; the figures had not. Reading them answers the question three
+  independent ways and all three go against the position this atlas held at round 125. Recorded as
+  CORR-120.
+  FIRST, THE DIFFUSIVITY THAT DROVE EVERYTHING WAS SEVEN-FOLD TOO LOW. Round 123 set the hypertrophic-zone
+  diffusivity for a 4 kDa peptide at 5.7 square micrometres per second, by applying the THEORETICAL
+  Mackie-Meares hindrance of 21 - itself derived from a fractional fluid volume of 0.36 - to the
+  proliferative value. Figure 3d of the same paper MEASURES diffusivity directly by photobleaching
+  recovery against axial position, for three tracers, and the measured variation across the plate is two
+  to threefold, not tenfold. The 10 kDa tracer reads about 20 to 30 at the two junctions and about 60 at
+  the midplane; scaling to 4 kDa gives roughly 41 rather than 5.7. Corrected, the human hypertrophic
+  Thiele modulus falls from 3.29 to 1.23 at the central consumption rate and spans 0.62 to 2.13 across the
+  range - TRANSITIONAL, not diffusion-limited.
+  SECOND, THE ADVECTION IS QUANTIFIED AND IT DOMINATES. Figure 4f plots flow rate against normalised axial
+  position alongside diffusivity. Flow runs at about PLUS 2.5 micrometres per second through the
+  epiphyseal half and MINUS 2 through the metaphyseal half, crossing zero near position 0.62 - both
+  directed INTO the cartilage from the two vascularised junctions and converging, with lateral drainage to
+  the perichondrium presumed by the authors. Against a measured diffusivity of 30 to 60 that gives a
+  PECLET NUMBER OF 6 TO 25. Delivery to this tissue is ADVECTIVE. Every Thiele modulus in this atlas
+  assumed pure diffusion and was flagged as an overestimate by an unquantified amount; the amount is now
+  quantified.
+  THIRD, WITH ADVECTION THE RIGHT GROUP IS THE DAMKOHLER NUMBER, AND IT IS FAR BELOW ONE. Da = kL/v is
+  0.015 to 0.185 across the inferred consumption range, meaning between one and eighteen per cent of
+  arriving ligand is consumed during transit across the plate. A tissue that consumes a few per cent of
+  what crosses it is not consumption-limited, and removing part of that consumption cannot buy much.
+  FOURTH, THE PROFILE SHAPE SETTLES THE ORIGINAL AMBIGUITY DIRECTLY. The whole steric-exclusion versus
+  consumption question was posed as a shape test: a flat profile means exclusion at entry, a U-shape means
+  interior depletion. Figure 4d shows laterally averaged fluorescence against axial position, time-coded
+  out to four minutes. THE PROFILE IS NOT U-SHAPED. It rises from the epiphyseal junction to a broad
+  maximum near position 0.55 to 0.6 - a hump toward the centre, which is the signature of convergent
+  inward flow rather than of a depleted interior.
+  WHAT THIS COSTS. The transport asymmetry was the last surviving argument for the dual-resistant CNP
+  analogue and the only thing distinguishing it from three earlier candidates that died as dose increases
+  in disguise. It largely fails. Round 122 was closer to right than rounds 123 and 125, and the
+  over-correction came from preferring a theoretical hindrance coefficient over a direct measurement
+  printed in the same paper.
+  AND THE OPEN VARIABLE HAS CHANGED IDENTITY, WHICH IS THE ONE THING THAT KEEPS THIS ALIVE. It is no
+  longer the consumption rate. In Da = kL/v the term now deciding the answer is v, THE INTERSTITIAL FLOW
+  VELOCITY IN HUMAN CARTILAGE, and the 2.5 micrometres per second is mouse. If human flow were tenfold
+  slower - plausible in a larger, slower-growing, thicker plate - Da rises to 0.15 to 1.85 and the question
+  reopens.'
+quantitative:
+- parameter: 'DIRECTLY MEASURED DIFFUSIVITY AGAINST AXIAL POSITION, WHICH REPLACES THE THEORETICAL
+    HINDRANCE USED IN ROUND 123'
+  value: '10 kDa tracer about 20 to 30 square micrometres per second at both chondro-osseous junctions and
+    about 60 at the midplane - a 2 to 3-fold axial variation, against the 10-fold this atlas had inferred'
+  unit: square micrometres per second
+  conditions: 'williams2007 Figure 3d, read from the extracted figure. Ex vivo multiphoton fluorescence
+    photobleaching recovery on midsagittally sectioned proximal tibia, three tracers plotted against
+    normalised axial position with polynomial fits: fluorescein about 55 at the junctions rising to about
+    110 at the midplane (n=7); 10 kDa dextran about 20 to 30 rising to about 60 (n=6); 45 kDa ovalbumin
+    about 20 rising to about 30 (n=6). Scaling the 10 kDa metaphyseal value to 4 kDa by the
+    molecular-weight-to-the-minus-one-third dependence the paper verifies gives about 41.'
+  species: mouse
+  source_ref: williams2007
+  uncertainty: 'READ BY EYE FROM A PUBLISHED FIGURE, so individual values carry perhaps thirty per cent
+    error, and the scatter in Figure 3d is wide - the 10 kDa points span roughly 20 to 90 at some
+    positions. The conclusion that matters is robust to that: the axial variation is two to threefold and
+    cannot be tenfold, because the fitted curves for all three tracers show the same gentle inverted-U.
+    This is EX VIVO, in sectioned tissue with no flow, which is the correct condition for measuring a pure
+    diffusivity and the reason it is preferred here over the in vivo fit. Mouse.'
+- parameter: 'INTERSTITIAL FLOW VELOCITY, PECLET NUMBER AND DAMKOHLER NUMBER - THE GROUPS THAT ACTUALLY
+    DECIDE THE QUESTION'
+  value: 'flow about plus 2.5 and minus 2 micrometres per second in the two halves, converging near
+    position 0.62; Peclet 6 to 25; Damkohler 0.015 to 0.185'
+  unit: micrometres per second, and dimensionless
+  conditions: 'williams2007 Figure 4f, read from the extracted figure - diffusion coefficient and flow rate
+    plotted together against normalised axial position with error bars, n=7 series. Peclet computed as
+    v L over D with mouse half-thickness 150 micrometres and measured diffusivity 30 to 60, and separately
+    with human half-thickness 400 micrometres from yun2018. Damkohler computed as k L over v with the
+    consumption range inferred in local_consumption_rate_inferred and human L.'
+  species: mouse
+  source_ref: williams2007
+  uncertainty: 'THE HUMAN DAMKOHLER APPLIES A MOUSE FLOW VELOCITY TO A HUMAN LENGTH AND THAT IS THE WEAKEST
+    STEP IN THE WHOLE CHAIN. Interstitial flow arises from a pressure difference between bone vasculature
+    and cartilage, and there is no reason it must be equal across a threefold difference in plate
+    thickness and a very different growth rate. If human flow is tenfold slower the Damkohler number
+    approaches unity and the conclusion inverts. SECOND, D and v in Figure 4f were fitted SIMULTANEOUSLY
+    from the same fluorescence series, so they are correlated parameters rather than independent
+    measurements - which is why the ex vivo Figure 3d diffusivity is used above in preference. THIRD, the
+    flow is a bolus experiment in an anaesthetised mouse and may not represent the steady state. FOURTH,
+    reading values off a figure by eye. The conclusion Da much less than one survives all of these at
+    plausible magnitudes, but it would not survive a tenfold error in v.'
+localization:
+- 'flow enters from BOTH chondro-osseous junctions and converges near normalised position 0.62, with
+  lateral drainage toward the perichondrium presumed - so the plate is a through-flow compartment rather
+  than a sealed diffusive slab, and the hypertrophic zone sits downstream of the metaphyseal inflow'
+human_evidence: absent
+human_evidence_note: All transport measurements are mouse. The only human input is the plate thickness
+  from yun2018, used to scale the dimensionless groups.
+species_basis:
+- mouse
+translation_risk: high
+translation_risk_reason: The decisive term is an interstitial flow velocity measured in an anaesthetised
+  mouse and applied to a human plate three times thicker. Nothing about that transfer has been validated.
+confidence: C
+claim_grades:
+- claim: Diffusivity varies only two to threefold across the growth plate axis, not tenfold.
+  grade: B
+  basis: Directly measured by photobleaching recovery for three tracers with fitted curves in
+    williams2007 Figure 3d. Graded B rather than A because the values are read from a published figure
+    rather than a table, and the point scatter is wide.
+- claim: Solute delivery to the growth plate is advection-dominated rather than diffusion-dominated.
+  grade: C
+  basis: 'Peclet number of 6 to 25 from measured flow rates and diffusivities in williams2007, supported
+    by the authors own finding that fitting diffusion alone gave abnormally high coefficients and
+    inconsistent fits until flow was included, and by the concentration maximum translocating toward the
+    axial centre over time. Mouse only, and D and v were co-fitted.'
+- claim: The growth plate is consumption-limited for a CNP-sized peptide.
+  grade: X
+  basis: 'NO, ON THE CORRECTED NUMBERS. Damkohler 0.015 to 0.185 means a few per cent of arriving ligand is
+    consumed in transit, and the Figure 4d profile is humped toward the centre rather than U-shaped. The
+    round 123 and 125 conclusion that the hypertrophic zone is diffusion-limited rested on a diffusivity
+    seven-fold too low, taken from a theoretical hindrance coefficient while a direct measurement sat in
+    the same paper.'
+- claim: The dual-resistant CNP analogue gains therapeutic index from a transport asymmetry.
+  grade: X
+  basis: 'NOT ON THIS EVIDENCE. The asymmetry required the plate to be consumption-limited so that removing
+    a local sink would raise interior concentration disproportionately. With Damkohler far below one,
+    removing part of a sink that consumes a few per cent of throughput cannot buy much, and the analogue
+    reverts to being a dose increase in disguise - the same failure that killed a higher dose, the NPR2
+    allosteric modulator and systemic clearance blockade.'
+- claim: The question is now fully closed.
+  grade: D
+  basis: 'It is closed against a mouse flow velocity. Da = kL/v, k is bounded and L is measured in humans,
+    so v is the only term left and it is mouse. A tenfold slower human interstitial flow puts Damkohler at
+    unity and reopens everything. That single number is now worth more than any other measurement to this
+    thread.'
+key_refs:
+- ref_id: williams2007
+  year: 2007
+  type: primary
+  role: Figures 3d and 4d and 4f - the axial diffusivity profile, the depth-concentration profile that was
+    called the finish line, and the flow rates that make the tissue advection-fed
+- ref_id: yun2018
+  year: 2018
+  type: primary
+  role: the human plate thickness used to scale the dimensionless groups
+open_questions:
+- g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+contradicts:
+- 'OVERTURNS the_hypertrophic_zone_is_the_diffusion_limited_one AND local_consumption_rate_inferred ON THE
+  CENTRAL POINT. Those nodes concluded the hypertrophic zone is diffusion-limited with a Thiele modulus of
+  about 3 to 6. Both used a hypertrophic diffusivity of 5.7 square micrometres per second derived from the
+  theoretical Mackie-Meares hindrance of 21; williams2007 Figure 3d measures it directly at roughly 41 for
+  the same molecular size. With the measured value the modulus is 0.62 to 2.13, and with the measured
+  advection the Damkohler number is 0.015 to 0.185. The earlier nodes are left in place with this one
+  attached, because their other content - the human thickness, the consistency check, the zone assignment
+  of the CNP axis - is unaffected.'
+last_verified: '2026-08-08'
