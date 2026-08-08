@@ -218,6 +218,58 @@ quantitative:
     ultimate tensile stress falling linearly with plate thickness, and a seven-fold thicker plate is the
     mechanical-failure configuration that produced the human kyphoscoliosis and the SCFE series. This is
     a large effect bought at the exact structural price the atlas has been tracking.'
+- parameter: 'THE ZONAL PREDICTION FROM HUMAN EXPRESSION, CONFIRMED IN THE MOUSE FIGURE - cilostazol
+    does NOT reach the hypertrophic zone'
+  value: round and columnar zone size both significantly increased; HYPERTROPHIC zone NOT significant
+  unit: zone size, cell density and alcian-blue area by zone
+  conditions: 'kawabe2025 Figure 2b, cultured metatarsals, cilostazol 10 micromolar, n=6-7. ZONE SIZE -
+    round INCREASED (P<0.05), columnar INCREASED (P<0.05), HYPERTROPHIC UNCHANGED (no asterisk). CELL
+    DENSITY - round and columnar both DECREASED (P<0.05). ALCIAN BLUE POSITIVE AREA - only COLUMNAR
+    significant. Figure 2a, length over 4 days: vehicle about 1.72 to 2.00 mm, cilostazol 1 micromolar to
+    about 2.06, 10 micromolar to about 2.12, both P<0.05, dose-dependent.'
+  species: mouse
+  source_ref: kawabe2025
+  uncertainty: 'THIS ATLAS PREDICTED THIS FROM INDEPENDENT HUMAN DATA AND THE FIGURE CONFIRMS IT. The
+    round-99 zonal analysis of GSE288028 put PDE3A at 38.6 per cent of cells in the proliferative zone and
+    9.2 per cent in the hypertrophic - a four-fold gradient away from the zone where terminal cell volume
+    is set. The prediction was that cilostazol should act on the proliferative compartment and not on
+    h_term, and Figure 2b shows exactly that: round and columnar zones expand, the hypertrophic zone does
+    not. IT ALSO EXPLAINS THE ONE DISCREPANCY THE ATLAS WAS CARRYING - kawabe2025 measured cAMP as
+    unchanged while hirota2022 found CNP raising PKA in hypertrophic chondrocytes. Both are right,
+    because cilostazol cannot act where PDE3A is scarce, and kawabe used proliferating-enriched slices.
+    THE CONSEQUENCE IS A CORRECTION TO THE COVERAGE AUDIT: h_term has been recorded as HIT BY CILOSTAZOL
+    since round 86, and it is not. Cilostazol is a proliferative-zone and matrix agent. h_term is empty.
+    Read off a published figure by this atlas rather than from reported numbers, so the values are
+    approximate and the significance calls are the authors.'
+- parameter: 'CNP AND MEK INHIBITION SHARE 3 GENES OUT OF 100 - the redundancy claim does not survive the
+    gene lists'
+  value: 'CNP-up vs U0126-up: 2 shared. CNP-down vs U0126-down: 1 shared. Discordant: 1.'
+  unit: genes shared between top-50 lists
+  conditions: 'hirota2018 Supplementary Tables S2-S5, transcribed and intersected by this atlas. CONCORDANT
+    OVERLAP IS 3 GENES OUT OF 100 PAIRWISE SLOTS - Gpx2 and LOC498316 both up, Ccl19 both down, with
+    Rhbdd1 discordant. Against a chance expectation of 0.10 genes per comparison on a 25,000-probe array,
+    3 concordant is about 15-fold enrichment - so the authors GSEA at p<0.001 is real. AND THE CHARACTER
+    OF THE TWO SIGNATURES IS ENTIRELY DIFFERENT. CNP-up carries an ion-channel and calcium-handling block:
+    Atp2b3 (plasma membrane Ca2+ ATPase, 30.1-fold), Clcn4 (voltage-sensitive chloride channel, 23.3),
+    Cnga1 (CYCLIC NUCLEOTIDE-GATED channel, 17.1), Camk2d (CaMKII delta, 16.0), Kcnj9 (inward-rectifier
+    potassium channel, 14.3) - plus Sox9 (14.0), Ptch2 (29.7) and Wnt8a (14.0). U0126-up is solute
+    carriers (Slc6a1, Slc38a11, Slc30a10, Slc7a11), metabolism and muscle; U0126-down is angiogenic
+    (Flt1, Dll4, Gja4, Ephb1) and inflammatory (Tnf, Il1a, Ccl6, Ccl19, Ccl20, Ifi204, C7).'
+  species: rat
+  source_ref: hirota2018
+  uncertainty: 'THIS REVERSES WHAT ROUND 99 RECORDED FROM THE AUTHORS FRAMING. Round 99 called the GSEA
+    the strongest redundancy evidence the atlas holds. Both statements are true and they are not in
+    conflict: GSEA tests a distributional shift across all genes and can be highly significant while the
+    extremes barely intersect, which is exactly what happened. WHAT THE GENE LISTS ADD is that AT THE
+    EXTREMES THE TWO AGENTS REGULATE ALMOST ENTIRELY DIFFERENT GENES, and the CNP signature is
+    specifically the kawabe chain written out in transcripts - a cyclic-nucleotide-gated channel, a
+    potassium channel, a calcium pump and CaMKII, which is cGMP to K+ to Ca2+ to CaMKII. MEK inhibition
+    does none of that. LIMITS THAT MATTER: top-50-by-fold-change from a microarray is a noisy statistic
+    dominated by low-expressors - the CNP lists are full of olfactory receptors, which is the signature of
+    that noise - and the two arms were run in DIFFERENT GENOTYPES, CNP-KO for CNP and WT for U0126, so
+    the baselines differ. This does not establish additivity. It establishes that the mechanism-level
+    case for redundancy, which was always the reason the CNP arm was dropped, is much weaker than the
+    atlas has been treating it.'
 localization:
 - 'human growth plate, bulk needle biopsy: PDE3A, PDE3B, PRKG2, KCNMA1, TRPM7, NPR2 all present; NPPC and
   OSTN absent'

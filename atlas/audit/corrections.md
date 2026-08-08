@@ -4299,3 +4299,56 @@ tadalafil does nothing to bone length *with confirmed target engagement*, and MP
 well-expressed phosphodiesterases in human growth plate with inert inhibitors. Expression is necessary and
 emphatically not sufficient, and reading PDE3A/PDE3B at 4/4 as support for cilostazol in humans is exactly
 the inference those two rows forbid.
+
+---
+
+## CORR-098 — cilostazol does not reach h_term, and the coverage audit has credited it with that term since round 86
+
+The round-99 zonal analysis of GSE288028 put PDE3A at **38.6%** of cells in the proliferative zone and
+**9.2%** in the hypertrophic — a four-fold gradient *away* from the zone where terminal cell volume is set.
+The prediction that followed was that cilostazol should act on the proliferative compartment and not on
+h_term.
+
+Kawabe Figure 2b confirms it directly. Zone size: **round increased (P<0.05), columnar increased (P<0.05),
+hypertrophic NOT significant.** Cell density fell in round and columnar; alcian-blue area rose only in
+columnar.
+
+**So cilostazol is a proliferative-zone and matrix agent, not an h_term agent.** `every_axis_checked_against_the_stack`
+has recorded h_term as "hit weakly via cilostazol" since round 86. **That term is empty**, and it is the term
+the audit itself identified as large, movable, achieved largely osmotically, and the one thing that buys
+micrometres without spending the pool.
+
+It also dissolves a discrepancy the atlas was carrying: Kawabe measured cAMP as unchanged while Hirota 2022
+found CNP raising PKA in *hypertrophic* chondrocytes. Both are right — cilostazol cannot act where PDE3A is
+scarce, and Kawabe used proliferating-enriched slices.
+
+## CORR-099 — the redundancy evidence I called strongest last round is 3 genes out of 100
+
+Round 99 read the authors' GSEA (CNP-53 transcriptome correlated with U0126-responsive genes, p<0.001) and
+recorded it as "the strongest redundancy evidence the atlas holds — harder to explain away than two drug
+labels citing RAF-1."
+
+Transcribing and intersecting S2–S5 myself:
+
+| | shared |
+|---|---|
+| CNP-up ∩ U0126-up | **Gpx2, LOC498316 — 2** |
+| CNP-down ∩ U0126-down | **Ccl19 — 1** |
+| discordant | Rhbdd1 — 1 |
+
+**3 concordant genes out of 100 pairwise slots.** Against a chance expectation of 0.10 per comparison on a
+25,000-probe array that is ~15× enrichment — so the GSEA is real and I am not disputing it. GSEA tests a
+distributional shift across all genes and can be highly significant while the extremes barely intersect.
+Both statements are true.
+
+What the lists add is that **at the extremes the two agents regulate almost entirely different genes, and
+the CNP signature is the Kawabe chain written out in transcripts**: Atp2b3 (Ca²⁺ ATPase, 30.1×), Clcn4
+(Cl⁻ channel, 23.3×), **Cnga1 (cyclic-nucleotide-*gated* channel, 17.1×)**, **Camk2d (CaMKII δ, 16.0×)**,
+Kcnj9 (K⁺ channel, 14.3×) — plus Sox9, Ptch2, Wnt8a. That is cGMP → K⁺ → Ca²⁺ → CaMKII, exactly the
+mechanism Kawabe built. U0126 does none of it: its up-list is solute carriers, metabolism and muscle, its
+down-list angiogenic (Flt1, Dll4) and inflammatory (Tnf, Il1a, Ccl6/19/20).
+
+Limits: top-50-by-fold-change is noisy and dominated by low-expressors — the olfactory receptors littering
+the CNP lists are the signature of that — and the two arms were run in **different genotypes**. This does
+not establish additivity. It establishes that the mechanism-level case for redundancy, which was the entire
+reason the CNP arm was dropped in round 86, is far weaker than the atlas has been treating it.
