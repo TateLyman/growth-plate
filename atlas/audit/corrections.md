@@ -3813,3 +3813,72 @@ progressed on serial MRI at 2, 5 and 9 months, so the harm accrued inside the 5�
 
 What it does change is the shape of the dosing question. It is no longer "can this drug work below the
 exposure that hurt someone" — the exposure that hurt someone was already below label.
+
+---
+
+## CORR-080 — the Dnmt1 length figure was attached to the wrong age, and the wrong age hid the shape of the curve
+
+`dnmt1_maintenance_methylation_bone_length.yaml` recorded "tibial length **at 6 weeks**, 44.7 per cent of
+control". Read directly, yanagihara2025 gives the whole trajectory and 44.7 per cent is the **16-week**
+value. The series is: 1 week **62.4 %**, 2 weeks 60.6, 3 weeks 52.9, 6 weeks **37.4–42.4**, 16 weeks 44.7.
+
+The error made the phenotype look both milder and later than it is, and it discarded the informative part.
+A 62.4 % deficit is already present at one week, so a large share is developmental — which is the caveat
+the node already carried and now carries with a number. But the deficit then *widens*, which is the
+postnatal share, and it is why the authors write of "postnatal arrest of long bone growth". A single
+figure at a single age could not have shown either.
+
+## CORR-081 — round 87 presented Nilsson and Baron's own interpretation as the atlas's inversion, and reported their speculation as a finding
+
+Three faults in `the_counter_is_a_leak_not_an_odometer`, all found by reading nilsson2005 directly rather
+than through this atlas's own prior extraction.
+
+**1. The framing was not new, it was theirs.** The node was built around the claim that the atlas had
+inverted the standard reading — that the counter is "a leak, not an odometer". Nilsson and Baron state
+the mechanism themselves, in the Discussion: loss of methylation "appears to occur specifically during
+replication of resting zone chondrocytes but not during the more rapid proliferation of proliferative zone
+chondrocytes. Thus there may be **complete maintenance methylation in the proliferative zone, but not in
+the resting zone**." Presenting a 2005 author interpretation as a 2026 re-analysis is the mirror image of
+the failure CORR-069 logged, and the same rule covers it: a re-analysis does not enter the graph at a
+higher grade than the data supports, and neither does a re-statement enter as a discovery.
+
+**2. The dichotomy was false.** The authors propose a **cell-cycle counter** explicitly — "resting zone
+chondrocytes undergo a progressive loss of DNA methylation with each cell division and … this loss serves
+as a cell-cycle counter". So it is not leak *instead of* odometer. The correct statement is that it **is**
+a division counter whose **tick rate is set by the niche rather than by division itself** — the
+proliferative zone divides far faster and does not tick.
+
+**3. A speculation was recorded as a fact.** The node stated that "putting the cell in culture RESTORES
+maintenance methylation (nilsson2005)". The authors write that the constant in-vitro level "**suggests**
+that maintenance methylases were upregulated when the resting zone chondrocytes were placed in cell
+culture, **either** because of loss of cell–cell or cell–matrix interactions **or** because of factors
+present in culture medium, or other conditions in vitro." No DNMT was measured. That is a hypothesis with
+three named candidate causes — and the candidates matter, because all three are properties of the **niche**
+rather than of the cell, which is where an intervention would have to act.
+
+What survives, and is stronger than the atlas had it: the in-vitro measurement is not merely "did not
+fall". Global methylation **rose** — % methylated dCMP = 62.28 + 0.21 × population doublings, P = 0.012,
+from doubling four throughout replicative senescence.
+
+## CORR-082 — the round-87 "coin flip" is resolved, and it resolves against the reprogramming lead
+
+Round 87 flagged a sign conflict and could not settle it: the growth plate appears to age by losing
+methylation, while the one in-vivo cartilage rejuvenation experiment worked by increasing demethylation.
+Two of the four papers read this round settle it, from independent directions.
+
+- **sarkar2023, read directly:** the STAT3 agonist 423F "induced **global hypomethylation**" with a
+  decrease in biological age in aged adult human chondrocytes, and STAT3 knockdown in fetal chondrocytes
+  "induced **global hypermethylation**". The reciprocal design is the strength.
+- **osk2026, read directly:** OA cartilage and the DMM mouse show "**augmented DNMT1 and DNMT3a** alongside
+  diminished DNMT3b", and OSK lowers DNMT3a while raising TET2.
+
+**Articular cartilage ages by hypermethylation. Both rejuvenation agents are calibrated on that direction.**
+The growth plate resting zone loses methylation with age (nilsson2005) and removing maintenance methylation
+reproduces the arrested phenotype (yanagihara2025). The two tissues age in opposite directions on this
+axis, so an articular-calibrated reprogramming agent applied to a growth plate pushes it toward its own
+senescent state. The lead is not impossible — it is backwards.
+
+One thing the round-87 request did not get: **osk2026 reports WGBS as differentially methylated regions and
+gives no global 5mC percentage anywhere.** The single number asked for does not exist in the paper. The
+DNMT-expression directions substitute for it, and they agree, which is why this is graded resolved rather
+than suggestive.
