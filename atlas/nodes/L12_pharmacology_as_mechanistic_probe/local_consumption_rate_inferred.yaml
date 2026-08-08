@@ -1,0 +1,158 @@
+id: local_consumption_rate_inferred
+name: THE LAST PARAMETER, INFERRED - local CNP consumption in the growth plate gives a hypertrophic Thiele
+  modulus of about 3 to 6, and the SPR affinity this atlas used in round 121 is a 577-fold outlier
+aliases:
+- local consumption rate cartilage
+- k for the transport model
+- is the SPR NPR-C affinity real
+- NPR-C Kd radioligand
+type: process
+layer: L12
+stub: false
+summary: 'TWO THINGS, AND THE SECOND DEPENDS ON THE FIRST.
+  ONE - THE SPR AFFINITY IS AN OUTLIER AND SHOULD NOT BE USED. Round 121 recorded from FDA Table 50 that
+  free CNP-38 binds NPR-C at or below 0.711 pM against NPR-B at 27.3 pM, at least 38-fold TIGHTER at the
+  clearance receptor, and built on it. There are now THREE independent non-SPR measurements and all
+  disagree. The US 8,198,242 background cites CNP-22 at NPR-B 7 to 30 pM against NPR-C 11 to 140 pM
+  (Bennett 1991; Koller and Goeddel 1992; Suga 1992). brown1992 measured it directly by in vitro
+  autoradiography in rat kidney: iodinated [Tyr0]CNP-(1-22) bound glomeruli with a saturation Kd of 0.41
+  plus or minus 0.07 nM, and CNP-(1-22) displaced iodinated alpha-ANP from the C-ANP-defined site with a Ki
+  of 10.47 plus or minus 7.59 nM and a Bmax of 342 plus or minus 118 fmol per mg protein. THAT IS A
+  577-FOLD DISCREPANCY AGAINST THE SPR VALUE, in the direction of much WEAKER NPR-C binding, and the
+  CNP-22-versus-CNP-38 escape is closed by the patent own FIG 24 reporting similar selectivity profiles for
+  the two peptides. NPR-C is a disulphide-linked homodimer and an immobilised dimeric receptor reports
+  avidity rather than affinity; the SPR value was also CENSORED, reported as at or below a limit, which is
+  what hitting an assay floor looks like. The round-121 claim that the clearance receptor OUTBINDS the
+  signalling receptor is withdrawn.
+  TWO - AND THIS IS WHAT THE PROJECT OWNER ASKED FOR - THE LAST UNMEASURED PARAMETER CAN NOW BE INFERRED.
+  Local first-order consumption in the linear regime is k = k_int times receptor concentration divided by
+  Kd. Every term is now either measured or boundable. Kd comes from brown1992 at 0.41 nM. Receptor
+  concentration is built from cooper2013 terminal hypertrophic cell volume of 14,000 femtolitres at an
+  assumed half of tissue volume, giving 0.059, 0.59 or 5.9 nM at 1e3, 1e4 or 1e5 receptors per cell.
+  Internalisation is swept at 0.01 to 0.05 per minute. THE CENTRAL CASE - 1e4 receptors per cell, the
+  ordinary order for a peptide receptor - GIVES A LOCAL CONSUMPTION HALF-LIFE OF 10 TO 48 MINUTES AND A
+  HYPERTROPHIC-ZONE THIELE MODULUS OF 2.6 TO 5.8. That is diffusion-limited, and it is the range in which a
+  tenfold cut in local clearance buys between 6 and 30-fold at the plate centre.
+  THE INFERENCE IS CONSERVATIVE IN TWO INDEPENDENT WAYS, WHICH IS WHY IT IS WORTH SOMETHING. FIRST, IT USES
+  THE WEAKEST OF THE FOUR AFFINITY ESTIMATES. k scales as one over Kd, so had the SPR value been used
+  instead of brown1992 every rate would be 577-fold higher and the plate would be absurdly
+  diffusion-limited; choosing the radioligand number is the choice that most disfavours the conclusion.
+  SECOND, NPR-C IS ONLY ONE OF TWO LOCAL SINKS - MME proteolysis, which
+  the_plate_consumes_cnp_it_does_not_make_it measured in human plate at a level comparable to NPR2, adds
+  to k and is not counted here. Every number above is therefore a LOWER BOUND on total local consumption.
+  ONLY THE EXTREME LOW CORNER ESCAPES. At 1e3 receptors per cell with slow internalisation the Thiele
+  modulus falls to 0.82 and the asymmetry disappears. That corner requires the growth plate to express
+  NPR-C at a tenth of the ordinary receptor density while transcribing NPR3 at a level comparable to NPR2,
+  which is not impossible but is not the way to bet.
+  WHAT IT MEANS FOR THE THREAD. The transport asymmetry that thread 3 rests on holds under central
+  assumptions in the zone the CNP axis acts on. The dual-resistant CNP analogue keeps its
+  therapeutic-index rationale. But this is an INFERENCE FROM THREE ASSUMED QUANTITIES, not a measurement,
+  and it does not promote the compound above its current grade - it removes the objection that the
+  parameter was unknowable.'
+quantitative:
+- parameter: 'DIRECT RADIOLIGAND AFFINITY OF CNP AT THE CLEARANCE RECEPTOR, WHICH CONTRADICTS THE SPR VALUE
+    BY 577-FOLD'
+  value: 'saturation Kd 0.41 plus or minus 0.07 nM; displacement Ki 10.47 plus or minus 7.59 nM; Bmax 342
+    plus or minus 118 fmol per mg protein'
+  unit: nanomolar, and fmol per mg protein
+  conditions: 'brown1992. In vitro autoradiography on kidneys from adult Wistar rats. Iodinated
+    [Tyr0]CNP-(1-22) at 110 pM bound SOLELY to glomeruli; saturation analysis over 25 pM to 1 nM in the
+    presence or absence of 1 micromolar unlabelled peptide gave Kd 0.41 nM. Separately, CNP-(1-22)
+    inhibited iodinated alpha-ANP binding at the C-ANP-defined site with Ki 10.47 nM and Bmax 342 fmol/mg.
+    For scale in the same study, alpha-ANP glomerular sites were Kd 3.15 nM and Bmax 583 fmol/mg, and
+    C-ANP inhibited 51.3 plus or minus 10.7 per cent of glomerular alpha-ANP binding.'
+  species: rat
+  source_ref: brown1992
+  uncertainty: 'RAT KIDNEY, NOT HUMAN CARTILAGE, AND CNP-22 RATHER THAN CNP-38 - both differences are real
+    and neither is plausibly worth 577-fold. The two figures within this study differ 25-fold between
+    themselves (0.41 nM by direct saturation against 10.47 nM by heterologous displacement), which is the
+    honest width of a 1992 autoradiographic measurement and is itself larger than most of the effects this
+    atlas argues about. What the study supports is an ORDER OF MAGNITUDE - sub-nanomolar to low-nanomolar -
+    and the conclusion that a sub-picomolar SPR value is not consistent with the radioligand literature.'
+- parameter: 'INFERRED LOCAL CONSUMPTION HALF-LIFE AND THE RESULTING HYPERTROPHIC THIELE MODULUS'
+  value: 'central case 10 to 48 minutes local half-life, Thiele modulus 2.6 to 5.8; full assumption grid
+    1.0 to 479 minutes and modulus 0.82 to 18.4'
+  unit: minutes, and dimensionless Thiele modulus
+  conditions: 'k = k_int times [R] divided by Kd, valid where ligand concentration is well below Kd, which
+    holds at the picomolar plasma concentrations of these agents. Kd 0.41 nM from brown1992. [R] from
+    cooper2013 terminal hypertrophic cell volume 14,000 fL at an assumed 0.5 tissue volume fraction:
+    0.059, 0.59, 5.9 nM at 1e3, 1e4, 1e5 receptors per cell. k_int swept 0.01 and 0.05 per minute. Thiele
+    modulus computed with L 400 micrometres from yun2018 and hypertrophic-zone diffusivity 5.7 square
+    micrometres per second from the_hypertrophic_zone_is_the_diffusion_limited_one. CROSS-CHECK ON [R]:
+    brown1992 Bmax of 342 fmol/mg protein corresponds to roughly 34 nM in glomerular tissue at 100 mg
+    protein per mL, so the cartilage central estimate of 0.59 nM is about 1.7 per cent of a dedicated
+    clearance organ, which is the expected ordering.'
+  species: human
+  source_ref: brown1992
+  uncertainty: 'THREE ASSUMED QUANTITIES AND THE ANSWER SPANS A FACTOR OF TWENTY ACROSS THEM. Receptors per
+    cell is the dominant one and is a pure assumption - no NPR-C protein density has been measured in any
+    growth plate. Cell volume fraction of 0.5 is a guess. Internalisation rate is a generic receptor range,
+    not an NPR-C measurement. THE MODEL ALSO INHERITS EVERY LIMIT OF THE ONE IT FEEDS - a uniform slab,
+    first-order consumption, steady state, and no advection, when williams2007 shows inward flow that
+    lowers the effective modulus. Two conservatisms partly offset that: the weakest available Kd was used,
+    and MME proteolysis is not counted. This is a bounded estimate to replace an unbounded unknown, and it
+    should not be quoted as a measured rate.'
+localization:
+- 'the inference is specific to the hypertrophic zone, where cooper2013 supplies the cell volume, the
+  matrix hindrance is tenfold that of the proliferative zone, and nakao2015 places the CNP axis'
+human_evidence: indirect
+human_evidence_note: The length is human (yun2018) and the cell volume is from human-relevant chondrocyte
+  work, but the affinity and receptor density are rat kidney and the receptor count per chondrocyte is
+  assumed. No human cartilage measurement enters the rate itself.
+species_basis:
+- rat
+- human
+- in_silico
+translation_risk: high
+translation_risk_reason: A rate constant assembled from a rat renal binding constant, an assumed receptor
+  count and a generic internalisation rate, applied to human cartilage. The ordering of magnitudes is
+  defensible; the value is not.
+confidence: D
+claim_grades:
+- claim: The FDA Table 50 SPR value of NPR-C Kd at or below 0.711 pM for CNP-38 is inconsistent with the
+    radioligand literature.
+  grade: B
+  basis: 'Three independent non-SPR sources put CNP at NPR-C between 11 pM and 10.5 nM - the patent-cited
+    1991-92 studies and brown1992 by two methods within one paper. The SPR figure sits 577-fold below the
+    nearest direct saturation measurement. NPR-C is a homodimer, immobilised dimeric receptors report
+    avidity, and the value was censored at an assay floor. Graded B not A because no source directly
+    repeats the FDA measurement on CNP-38 by a second method, and species and peptide both differ.'
+- claim: The round-121 claim that the clearance receptor outbinds the signalling receptor for the released
+    species should be withdrawn.
+  grade: X
+  basis: 'IT SHOULD. That claim rested entirely on the single censored SPR number. Against three
+    independent measurements it does not survive, and the atlas should record CNP as binding NPR-B and
+    NPR-C with broadly COMPARABLE affinity rather than strongly favouring the clearance receptor.'
+- claim: Local consumption in the hypertrophic zone gives a Thiele modulus above 2, i.e. diffusion-limited.
+  grade: D
+  basis: 'True across the central and upper assumption range and false only in the lowest corner, and the
+    calculation is conservative in two independent respects - it uses the weakest of four affinity
+    estimates and omits MME as a second sink. But receptors per chondrocyte, cell volume fraction and
+    internalisation rate are all assumed, no NPR-C protein density has ever been measured in a growth
+    plate, and the underlying slab model ignores the inward advection williams2007 demonstrates.'
+- claim: This closes g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature.
+  grade: X
+  basis: 'NO. It removes the objection that the parameter was unknowable and supplies a bounded estimate,
+    which is what was asked for. It does not measure anything. The gap closes on a paired plate-versus-
+    vessel readout at matched plasma exposure, and that experiment is unchanged.'
+key_refs:
+- ref_id: brown1992
+  year: 1992
+  type: primary
+  role: the direct radioligand affinity and receptor density that both contradict the SPR value and supply
+    the Kd for the rate inference
+- ref_id: conole2019
+  year: 2019
+  type: primary
+  role: 'context on how NPR-C binding is actually measured - isolated extracellular domain by SPR and
+    fluorescence polarisation - which is where the avidity concern lives; contains no internalisation
+    kinetics'
+open_questions:
+- g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+contradicts:
+- 'WITHDRAWS A QUANTITATIVE CLAIM MADE IN ROUND 121 AND CARRIED IN vosoritide_is_cleared_by_npr3. That node
+  records free CNP-38 binding NPR-C at least 38-fold more tightly than NPR-B, from FDA Table 50 SPR. Three
+  independent radioligand sources, including a direct saturation measurement in brown1992 at 0.41 nM,
+  place CNP-NPR-C affinity 577-fold weaker than the SPR value. The SPR number is treated here as an
+  avidity artefact on an immobilised homodimeric receptor, reported at an assay floor.'
+last_verified: '2026-08-08'

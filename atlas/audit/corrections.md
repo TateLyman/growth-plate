@@ -4980,3 +4980,26 @@ the ring-glycine variants**. The G8T/G8S/G8V/G8N substitutions appear only in th
 candidates. The one selectivity figure, FIG 24, compares wild-type CNP-22 with CNP-38, not the engineered
 variants. The "potentially reduced affinity" language is prophetic claiming, and the round-121 reading of
 it stands.
+
+## CORR-119 — third instance of retyping a PMID, one round after writing the rule against it
+
+Adding Brown 1992, I ran a Europe PMC title search that returned **1353307** on the line immediately above,
+and then typed `--pmid 1636740`. It resolved to *"Increased functional differentiation of rabbit proximal
+tubule cells"* and created `blais1992`. Caught, verified uncited, removed, replaced with the correct
+`brown1992` (1353307).
+
+**CORR-106** set the rule. **CORR-117**, written one round ago, restated it as *"pass PMIDs by copy from
+search output in the same command, never retyped"* and added *"prefer resolving by title or DOI over the
+numeric accession entirely."* I then retyped an accession in the very next round, in a command whose own
+first line printed the right one.
+
+Three instances of one failure mode means the rule is not the fix. The fix has to remove the opportunity:
+**`addref.py` should accept `--title` or `--doi` and resolve the PMID itself**, so that no accession is
+ever transcribed by hand. Until that exists, the operational rule is that any `--pmid` invocation must be
+constructed by piping search output into the call rather than reading a number off the screen — and every
+new ref must be printed back with its title and eyeballed against the paper actually intended, which is
+what caught this and CORR-117 both.
+
+Recording the near-miss cost honestly: both wrong references were caught only because I habitually print
+the resolved title afterwards. Neither was caught by the tool, and `addref.py` cannot catch this class —
+a mistyped accession in a dense numeric space lands on a real paper more often than not.
