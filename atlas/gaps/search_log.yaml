@@ -2148,11 +2148,19 @@ searches:
     - 82 hits, nothing with a growth endpoint. The DOWNWARD direction, by contrast, is populated on the first try:
     the same database returns bush2010 and abubakar2022 immediately for bumetanide, DIDS and EIPA. The asymmetry
     is the finding.'
-  additional_source_checked: 'Open Targets Platform v4 GraphQL, 2026-08-08, associated-disease lists filtered for
-    body height, stature, dwarfism, brachyolmia, chondrodysplasia and skeletal dysplasia. Every membrane transporter
-    and regulatory kinase in the swelling machinery returned genetic_association 0.000 - SLC12A2, SLC12A4, SLC12A6,
-    SLC12A7, WNK1, STK39, OXSR1, SLC4A3, SLC9A1, AQP1, AQP3, NFAT5, PIEZO1 - while the sulfation machinery returned
-    SLC26A2 0.797-0.889, TRPV4 0.765-0.834, PAPSS2 0.438-0.598 and ACAN 0.426-0.598, against a positive control of
-    NPR2 at 0.872-0.912. Human growth-plate expression was checked in GSE288028 via atlas/tools/gp_expression.py:
-    SLC26A2 4/4 donors at 13.8-82.2 per cent of cells, PAPSS2 4/4 at 15.5-94.2, SLC12A2 4/4 at 18.3-35.5, and SLC13A1
-    0/4 as expected for a renal-specific transporter.'
+  additional_source_checked: 'Open Targets Platform v4 GraphQL, 2026-08-08, disease-side query on body
+    height (OBA_VT0001253) with all targets and all controls requested in a SINGLE call. THE FIRST VERSION
+    OF THIS CHECK WAS WRONG AND IS RECORDED AS CORR-100: it queried EFO_0004339, an identifier the platform
+    does not carry, so every gene returned empty and syndrome names containing "stature" were misread as
+    height associations; it reported that the transporters score 0.000 and the sulfation machinery scored
+    high, which is the reverse of the truth. CORRECTED RESULT, controls first. POSITIVE: GDF5 0.675,
+    HMGA2 0.806, ZBTB38 0.895, LCORL 0.919. NEGATIVE: OR2L13, TAS2R38 and CFTR not associated; MYOZ1
+    leaks at 0.234, which is the noise floor. SWELLING MACHINERY: PIEZO1 0.935, SLC12A2 0.776, STK39
+    0.741, AQP1 0.717, SLC12A7 0.532, NFAT5 0.500, SLC9A1 0.313, WNK1 0.296, SLC4A3 0.194, SLC12A4 0.037;
+    SLC12A6, OXSR1, AQP3 and TRPV4 not associated. SULFATION AND MATRIX: ACAN 0.969, CHST11 0.812, CHST3
+    0.709, SLC13A1 0.497, PAPSS2 0.464, PAPSS1 0.227, SLC26A1 0.187, SLC35B2 0.174, SLC26A2 0.070. Human
+    growth-plate expression checked in GSE288028 via atlas/tools/gp_expression.py: SLC12A2 4/4 donors at
+    18.3-35.5 per cent of cells, PIEZO1 4/4 at 20.9-60.2, STK39 4/4 at 20.6-64.3, SLC26A2 4/4 at
+    13.8-82.2, PAPSS2 4/4 at 15.5-94.2, and SLC13A1 0/4 as expected for a renal-specific transporter.
+    STANDING RULE ADOPTED FROM THIS FAILURE: no association lookup enters the atlas unless its positive
+    and negative controls are executed in the same call as the result.'

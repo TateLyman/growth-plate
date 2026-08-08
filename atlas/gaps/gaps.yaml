@@ -11657,7 +11657,13 @@ gaps:
     lever in the entire audit with a BLOOD TEST that says whether this particular subject is on the steep
     part of the curve - plasma sulfate against a published reference range, and it is not measured in
     routine practice. (4) It is not tumour-suppressor adjacent, unlike SMO, mTORC1 and PP2A, which are the
-    three compounds the audit was otherwise forced to name. It is also the substrate arm of TERM 8, the
+    three compounds the audit was otherwise forced to name. NOTE ADDED WITH CORR-100: this gap was
+    originally written as the arm that human genetics pointed to INSTEAD of the membrane transporters.
+    That framing came from a broken Open Targets query and is withdrawn. Corrected, common human variation
+    supports the transporters at least as strongly (PIEZO1 0.935, SLC12A2 0.776 against positive controls
+    topping out at LCORL 0.919), while SLC26A2 scores 0.070. The sulfate question below is unaffected -
+    it rests on scherer2025, a primary human paper - but it is now a PARALLEL thread rather than the
+    preferred one, and the transporter arm needs its own gap. It is also the substrate arm of TERM 8, the
     absorptive term, which the audit called unhit and height-negative.'
   what_is_known: 'Sulfate is the fourth most abundant anion in human circulation at 0.3-0.5 mM and is not
     routinely measured. Transcellular renal reabsorption via SLC13A1 (NaS1, apical) and SLC26A1 (SAT1,
@@ -11669,8 +11675,10 @@ gaps:
     all short, all with scoliosis or skeletal dysplasia, with hyposulfatemia measured. Slc13a1-null mice,
     and dogs and sheep with natural homozygous loss of function, show growth retardation and
     osteochondrodysplasia. The intracellular machinery is human-expressed and human-genetics-anchored -
-    SLC26A2 in 4 of 4 growth-plate donors at 13.8-82.2 per cent of cells with an Open Targets genetic
-    association of 0.797-0.889 for skeletal dysplasia, PAPSS2 4/4 at 15.5-94.2 with 0.438-0.598.
+    SLC26A2 in 4 of 4 growth-plate donors at 13.8-82.2 per cent of cells and PAPSS2 4/4 at 15.5-94.2.
+    Both are established recessive skeletal-dysplasia genes; against COMMON variation in adult height,
+    however, they are modest - Open Targets body height genetic_association 0.070 for SLC26A2 and 0.464
+    for PAPSS2, against 0.497 for SLC13A1 itself and positive controls from 0.675 to 0.919 (CORR-100).
     bakadlag2026 showed sulfate supplementation REVERSED tungstate-impaired chondrogenesis in murine limb
     culture.'
   what_is_missing: 'EVERY HUMAN DATUM IS A LOSS OF FUNCTION. The series runs from normal downward and
@@ -11703,3 +11711,60 @@ gaps:
     was written.'
   tractability: 4
   search_log_ref: g_l5_does_sulfate_supply_have_headroom_above_normal
+- gap_id: g_l5_can_hypertrophic_swelling_be_driven_upward
+  question: About 80 per cent of longitudinal growth is hypertrophic chondrocyte volume increase, and
+    blocking a single cotransporter removes roughly a third of elongation without changing cell number.
+    Can that machinery be driven in the OPPOSITE direction - does increasing NKCC1 activity, or reducing
+    the K-Cl extrusion that opposes it, increase terminal cell height and bone length - or is terminal
+    cell volume homeostatically defended?
+  type: known_unknown
+  layer: L5
+  why_it_matters: 'THIS IS THE LARGEST UNOCCUPIED ITEM IN THE COVERAGE AUDIT AND THE ONLY ONE WHERE THE
+    MEASURED EFFECT SIZE ALREADY EXCEEDS EVERY DRUG IN THE STACK. bush2010 removed about 35 per cent of
+    24-hour elongation with one inhibitor while hypertrophic cell number stayed at 193 against 192 - a
+    clean isolation of h_term, which the atlas argues is the one term that buys micrometres without
+    spending the progenitor pool that fusion is waiting on. The machinery is expressed in human growth
+    plate in 4 of 4 donors (SLC12A2 18.3-35.5 per cent of cells, PIEZO1 20.9-60.2, STK39 20.6-64.3) and
+    its components are human height loci (Open Targets body height genetic_association PIEZO1 0.935,
+    SLC12A2 0.776, STK39 0.741, against positive controls topping at LCORL 0.919). AND THE ENTIRE
+    LITERATURE ON IT IS SUBTRACTIVE. This gap also carries the decisive test of a claim the atlas has
+    made for many rounds and never tested - whether h_term is merely UNVARIED across human childhood or
+    actively DEFENDED. If it is defended, several of the atlas strategic arguments about h_term being
+    free need rewriting.'
+  what_is_known: 'bush2010 - bumetanide, dose-dependent, ~35 per cent of elongation lost, late
+    hypertrophic zone 204 to 151 micrometres, cell number and density unchanged; bumetanide plus DIDS
+    reaching 80 per cent; NKCC arriving at the plasma membrane immediately BEFORE the volume increase and
+    NKCC1 rising more than twofold from proliferative to hypertrophic cells while NKCC2 stays at
+    background. abubakar2022 - NHE1 and anion-exchange inhibitors independently cutting rat metatarsal
+    growth RATE from about 18 per cent to 5.5-7.4 per cent over 48 hours, shortening the hypertrophic
+    zone specifically. fernndeziglesi2020 - seven chondrocyte subphases resolved by volume, shape and
+    cytoplasm density with the ion and water transport proteins localised across them. The physiological
+    activator of NKCC1 is the WNK-SPAK/OSR1 cascade, which simultaneously phosphorylates the K-Cl
+    exporters OFF, so both limbs of the switch move the same way; WNK1, STK39, OXSR1 and CAB39 are all
+    detected in 4 of 4 human growth-plate donors.'
+  what_is_missing: 'NO EXPERIMENT IN ANY SPECIES HAS ATTEMPTED TO INCREASE GROWTH-PLATE CELL SWELLING.
+    No NKCC1 activator, no K-Cl cotransport inhibitor, no WNK-SPAK activator and no tonicity manipulation
+    has ever been given with a bone-length or terminal-cell-volume endpoint. No agent that does this
+    exists as a marketed drug, because every compound built against this machinery is a BLOCKER - the
+    clinical demand has always been oedema, hypertension and seizures. And no measurement exists of
+    whether terminal hypertrophic cell volume is defended: the atlas evidence that it is flat across human
+    childhood (kember1976) is compatible both with nothing varying it and with something holding it.'
+  nearest_evidence:
+  - bush2010
+  - abubakar2022
+  - fernndeziglesi2020
+  discriminating_experiment: 'The assay already exists and is cheap - it is bush2010 own paired metatarsal
+    culture run in reverse. Three arms against vehicle, each with terminal hypertrophic cell volume by
+    confocal imaging of intact lacunae ALONGSIDE elongation, because the whole value of the design is
+    separating cell height from cell number: (a) a K-Cl cotransport inhibitor, which removes the extrusion
+    opposing NKCC1; (b) modest medium HYPOtonicity, the crudest possible swelling stimulus and the one
+    that needs no compound at all; (c) a WNK-SPAK pathway manipulation in the activating direction.
+    READOUTS UNDER COMPETING HYPOTHESES - HEADROOM: terminal cell volume and elongation both rise, cell
+    number unchanged, which would make this the largest pharmacologically accessible term in the atlas and
+    would justify building a molecule. DEFENDED: cell volume rises transiently and then returns to
+    baseline through regulatory volume decrease, with elongation unchanged - which is a POSITIVE result
+    for the atlas, since it would settle the objection carried unresolved in
+    terminal_cell_volume_is_the_undefended_term and force several strategic arguments to be rewritten.
+    SATURATED: nothing moves in either direction, and the machinery is already running at ceiling in a
+    healthy plate. All three outcomes are informative, which is unusual in this audit.'
+  tractability: 4

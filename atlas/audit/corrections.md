@@ -4352,3 +4352,50 @@ Limits: top-50-by-fold-change is noisy and dominated by low-expressors — the o
 the CNP lists are the signature of that — and the two arms were run in **different genotypes**. This does
 not establish additivity. It establishes that the mechanism-level case for redundancy, which was the entire
 reason the CNP arm was dropped in round 86, is far weaker than the atlas has been treating it.
+
+## CORR-100 — the Open Targets result in the round-104 node is BACKWARDS, because I queried a trait ID that does not exist and never ran the positive controls
+
+Round 104 reported, and I told the user, that human genetics splits the osmotic story in half: the membrane
+transporters of the swelling machinery "score 0.000" for association with human height while the sulfation
+machinery scores 0.44–0.89. I wrote a claim graded **E** stating the transport arm was refuted, and framed
+the whole recommendation around following the genetics to the sulfate arm instead.
+
+**It is backwards.** I queried `EFO_0004339` for body height. That identifier is not in the Open Targets
+Platform — `disease(efoId:"EFO_0004339")` returns `null`. Body height is `OBA_VT0001253`. So every gene
+returned nothing for height, and I read the *incidental* matches on syndrome names containing the word
+"stature" as if they were height associations. The sulfation genes scored high only because SLC26A2,
+PAPSS2 and TRPV4 are **monogenic skeletal-dysplasia genes** — a different claim entirely from "human
+variation in this gene moves adult height".
+
+Re-run against `OBA_VT0001253`, with the atlas's own controls (`genetic_association` datatype score):
+
+| | | |
+|---|---|---|
+| **positive controls** | GDF5 0.675, HMGA2 0.806, ZBTB38 0.895, LCORL 0.919 | all strong — the method works |
+| **negative controls** | OR2L13, TAS2R38, CFTR absent; MYOZ1 0.234 | one weak leak, otherwise clean |
+| **the "refuted" pumps** | **PIEZO1 0.935**, **SLC12A2 0.776**, **STK39 0.741**, **AQP1 0.717**, SLC12A7 0.532, NFAT5 0.500 | |
+| **the "supported" sulfation** | **SLC26A2 0.070**, SLC26A1 0.187, PAPSS1 0.227, PAPSS2 0.464, SLC13A1 0.497 | |
+| matrix | ACAN 0.969, CHST11 0.812, CHST3 0.709 | |
+
+PIEZO1 out-scores every positive control. NKCC1 out-scores GDF5. SLC26A2, the gene I called the anchor of
+the sulfation case, scores **0.070** — near-nothing for common variation, because it is a *recessive
+dysplasia* gene, which is exactly the distinction I collapsed.
+
+**This is the second time in this repository that an inference was built on a lookup whose positive
+controls were not run.** `atlas/tools/gwas_axis.py` opens with the confession of the first, and carries
+guards G2 and G3 for precisely this failure — a positive control must reach significance and must beat
+every negative control before results are reported. I had those guards written, in this repo, by me, and
+I did not run them. The rule is now general: **no association lookup enters the atlas without its positive
+and negative controls executed in the same call.**
+
+WHAT SURVIVES UNCHANGED, because it does not depend on the broken lookup:
+- **bush2010** — bumetanide removed ~35 % of elongation with hypertrophic cell number at 193 vs 192. The
+  cleanest h_term isolation in the atlas.
+- **The asymmetry** — every experiment on this machinery in every species is subtractive. That came from
+  Europe PMC, not Open Targets.
+- **scherer2025** — plasma sulfate effect sizes correlate r=0.70 with standing height across 466,907
+  people. A primary human paper, untouched by my error.
+
+WHAT INVERTS: the recommendation. The transport arm is not refuted by human genetics — it is *supported*
+by it, and better than the sulfate arm is. The sulfate thread stays real on scherer2025's own strength,
+but it is a parallel second thread, not the arm the genetics points to instead.
