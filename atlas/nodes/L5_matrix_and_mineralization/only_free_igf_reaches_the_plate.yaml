@@ -1,10 +1,10 @@
 id: only_free_igf_reaches_the_plate
-name: The measurement nobody has made, recreated as far as transcriptomes allow - the restraint on phase 3 is NOT binding-protein excess inside the plate, it is SIZE EXCLUSION at the matrix, and there is already a wild-type gain-of-function on the axis
+name: The measurement nobody has made, recreated as far as transcriptomes allow - the restraint on phase 3 is NOT binding-protein excess inside the plate, it is SIZE EXCLUSION at the matrix; and the wild-type PAPP-A2 result shifts limb PROPORTIONS, not stature
 aliases:
 - free IGF versus total IGF
 - the IGF delivery argument
 - why GH may not reach phase 3
-- rhPAPP-A2 in wild-type
+- rhPAPP-A2 shifts proportions not stature
 type: hypothesis
 layer: L5
 stub: false
@@ -38,13 +38,18 @@ summary: 'THE TASK WAS TO FIND OR RECREATE THE MEASUREMENT THAT DECIDES WHETHER 
   HORMONE IS AN INEFFICIENT WAY TO SUPPLY PHASE 3, because what GH raises is overwhelmingly ternary-complex
   IGF-1 that is too large to partition - which would mean the GH arm in this stack does not occupy the
   variable component of h_term, and the coverage audit entry marking IGF BIOAVAILABILITY unhit is live.
-  AND THERE IS ALREADY A WILD-TYPE GAIN-OF-FUNCTION ON THIS AXIS, WHICH IS RARE IN THIS PROJECT.
-  fernndezarjona2026 gave daily rhPAPP-A2 to mice from postnatal day 5 to 35 and found INCREASED BODY
-  LENGTH IN WILD-TYPE ANIMALS - not only in the Pappa2 knockouts it was designed to rescue - and in
-  wild-type males it raised LENGTH WITHOUT RAISING WEIGHT. PAPP-A2 cleaves IGFBP-3 and IGFBP-5, releasing
-  free IGF-1, which is precisely the species the partition curve admits. Set against
-  harboe2024, where PAPP-A knockout shortens the mouse femur about 7 per cent, the axis now has a
-  loss-of-function, a human loss-of-function phenotype, a deficiency rescue, and a WILD-TYPE gain.
+  THE WILD-TYPE ARM, WITH THE SUPPLEMENTARY TABLES NOW RETRIEVED, IS WEAKER THAN I FIRST REPORTED AND THE
+  RETRACTION IS CORR-108. I claimed rhPAPP-A2 increased body length in wild-type mice, from a single
+  main-text sentence describing an "overall treatment effect". Supplementary Table iv gives the values:
+  at PND35 wild-type males were 15.33 saline against 15.15 on rhPAPP-A2 - NOT SIGNIFICANT AND NUMERICALLY
+  LOWER - and females 14.47 against 14.71, also not significant, while rhGH was significant in both sexes.
+  The arms also differed by up to 0.6 cm at PND5 before treatment began. WHAT SURVIVES IS A PROPORTIONAL
+  EFFECT, and it is real: in wild-type males rhPAPP-A2 raised femur-to-body-length from 0.72 to 0.75 and
+  tibia-to-body-length from 0.93 to 0.97, both at p<0.001, with total body length unchanged. So in a
+  pathway-intact animal it lengthened LIMB RELATIVE TO TRUNK rather than adding stature - which for a
+  height goal is redistribution, not gain. Set against harboe2024, where PAPP-A knockout shortens the
+  mouse femur about 7 per cent, the axis has a loss-of-function, a human loss-of-function phenotype, a
+  deficiency rescue, and a wild-type effect on PROPORTIONS only.
   WHAT IS STILL MISSING IS THE SAME ONE THING: nobody has measured free versus total IGF-1 across
   growth-plate zones, and nobody has measured hypertrophic CELL SIZE under any of these manipulations, so
   none of it yet touches phase 3 directly. harboe2024 did not measure cell size and its lesion is in the
@@ -106,30 +111,32 @@ quantitative:
     order of magnitude beyond the 40 kDa zero point, and ALS is not made locally. The ratio between what
     circulates and what can enter is large. That is enough to make total IGF-1 a poor proxy without
     needing the exact number.'
-- parameter: 'THE WILD-TYPE GAIN-OF-FUNCTION - rhPAPP-A2 raised body length in PATHWAY-INTACT mice, and in
-    males it raised length without weight'
-  value: increased body length in wild-type males and females; no body-weight increase in wild-type males
-  unit: direction of effect on body length
-  conditions: 'fernndezarjona2026. Daily recombinant human GH, IGF-1 or PAPP-A2 from postnatal day 5 to
-    35, in Pappa2 knockout AND Pappa2 wild-type mice of both sexes, n=7-15 per group. Overall treatment
-    effect on BODY LENGTH in wild-type males from PND5 for rhGH and rhPAPP-A2, and from PND20 for rhIGF1;
-    a treatment effect on body length in wild-type females for all three from PND5. Per-timepoint
-    univariate analysis put the rhPAPP-A2 effect at PND32-35. On body WEIGHT in wild-type males, rhGH
-    raised it but rhIGF1 and rhPAPP-A2 did NOT. Read against harboe2024, where PAPP-A knockout shortens the
-    mouse femur about 7 per cent (p=0.03) at 4, 6 and 18 weeks.'
+- parameter: 'THE WILD-TYPE ARM, WITH THE SUPPLEMENTARY TABLE RETRIEVED - rhPAPP-A2 did NOT lengthen the
+    body, it made the LIMBS LONGER RELATIVE TO IT'
+  value: 'body length at PND35 in wild-type males 15.33 saline against 15.15 rhPAPP-A2 (ns); but
+    femur-to-body-length 0.72 to 0.75 and tibia-to-body-length 0.93 to 0.97, both p<0.001'
+  unit: centimetres of body length; mm/cm ratio of bone to body length
+  conditions: 'fernndezarjona2026 Supplementary Tables iv and vi, retrieved from the publisher this round.
+    TABLE iv, BODY LENGTH AT PND35, wild-type: males saline 15.33 +/- 0.17, rhGH 15.82 +/- 0.14 (p<0.05),
+    rhIGF1 15.00 +/- 0.11 (ns), rhPAPP-A2 15.15 +/- 0.14 (ns); females saline 14.47 +/- 0.13, rhGH 15.00
+    +/- 0.16 (p<0.01), rhIGF1 14.63 (ns), rhPAPP-A2 14.71 +/- 0.31 (ns). Across the whole timecourse
+    wild-type rhPAPP-A2 reached significance twice - an increase in females at PND26 and a DECREASE in
+    males at PND17. Baseline PND5 wild-type male values differ across arms by up to 0.6 cm before any
+    treatment. TABLE vi, WILD-TYPE MALES: femur-to-body-length 0.72 +/- 0.01 to 0.75 +/- 0.01 (p<0.001),
+    tibia-to-body-length 0.93 +/- 0.01 to 0.97 +/- 0.01 (p<0.001), femur-to-body-weight 2.38 to 2.96
+    (p<0.001), femur weight-to-length 3.57 to 4.32 (p<0.001).'
   species: mouse
   source_ref: fernndezarjona2026
-  uncertainty: 'THE WILD-TYPE ARM IS WHY THIS ROW EXISTS - this project has repeatedly been burned by
-    treating correction of a deficiency as evidence of gain in an intact system (CORR-077), and here the
-    intact arm was run and was positive. THE LIMITS ARE HEAVY AND SEVERAL. It is an OVERALL TREATMENT
-    EFFECT from a factorial ANOVA; the per-timepoint significance in males appears only at PND32-35, at
-    the very end. Absolute bone lengths are not given in the text - the skeletal data are reported as
-    RATIOS to body weight and body length - so the magnitude cannot be extracted from what was read.
-    Body length in a mouse is not femur length. PND5 to PND35 is the fast juvenile phase, which is the
-    OPPOSITE end of the age axis from a bone-age-16 subject, and nothing here runs to skeletal maturity.
-    AND DECISIVELY FOR THE THREAD THIS NODE SITS IN: no growth plate histology and no hypertrophic cell
-    size was measured, so this does not test phase 3. It shows the axis can be pushed upward in an intact
-    animal. It does not show it acts on h_term.'
+  uncertainty: 'THIS ROW REPLACES ONE THAT CLAIMED A WILD-TYPE INCREASE IN BODY LENGTH AND THE RETRACTION
+    IS CORR-108. I built that claim on a single main-text sentence reporting an "overall treatment effect"
+    from a factorial ANOVA and treated it as a between-group difference. The endpoint values show no
+    significant increase in either sex, a numerically lower value in males, and arms that were already
+    0.6 cm apart at PND5 before treatment began. WHAT IS LEFT IS REAL BUT DIFFERENT: in a pathway-intact
+    animal, rhPAPP-A2 shifted PROPORTIONS - more femur and tibia per unit body length, at p<0.001 - which
+    means limb lengthened at the expense of something else rather than stature increasing. FOR A HEIGHT
+    GOAL THAT IS NOT OBVIOUSLY A GAIN, because standing height is limb plus trunk and redistribution
+    between them does not by itself add centimetres. It is also worth noting what DID work: rhGH raised
+    wild-type body length at endpoint in both sexes, which is the arm this stack already contains.'
 localization:
 - 'growth plate matrix: the size filter, entry from epiphyseal and metaphyseal fronts equally'
 - 'growth plate hypertrophic zone: where IGF1 transcript rises and where phase 3 occurs'
@@ -160,10 +167,18 @@ claim_grades:
     cartilage exists in any form, and IGF-1's positive charge would push its true partition above a
     matched neutral dextran. The direction survives the uncertainty; the magnitude does not.
 - claim: Raising the FREE IGF-1 fraction increases longitudinal growth in a pathway-intact animal.
-  grade: C
-  basis: fernndezarjona2026, rhPAPP-A2 in wild-type mice, overall treatment effect on body length in both
-    sexes and length without weight in males. Factorial ANOVA main effect with per-timepoint significance
-    only at PND32-35, no absolute bone lengths in the text, juvenile mouse, and no growth-plate readout.
+  grade: X
+  basis: RETRACTED, CORR-108. The supplementary table shows no significant body-length increase in
+    wild-type mice of either sex at endpoint, and a numerically lower value in males. The claim rested on
+    a factorial main effect misread as a group difference, across arms that differed by up to 0.6 cm at
+    baseline.
+- claim: Raising the free IGF-1 fraction shifts body PROPORTIONS toward longer limbs in a pathway-intact
+    animal.
+  grade: D
+  basis: fernndezarjona2026 Supplementary Table vi - femur-to-body-length 0.72 to 0.75 and
+    tibia-to-body-length 0.93 to 0.97 in wild-type males, both p<0.001, with total body length unchanged.
+    Real and significant, but it is redistribution between limb and trunk rather than added stature, it
+    is juvenile mouse, and no growth-plate histology or hypertrophic cell size was measured.
 - claim: This establishes the PAPP-A axis as an h_term or phase 3 lever.
   grade: E
   basis: NO. Neither harboe2024 nor fernndezarjona2026 measured hypertrophic cell size, and harboe2024's

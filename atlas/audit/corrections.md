@@ -4642,3 +4642,44 @@ minutes**, peaking by ~90 minutes, localised to chondrocytes, with bioactivity c
 p-Akt. Free IGF-I does reach a growth plate in vivo. Caveat carried: schneiderman1995 is ADULT ARTICULAR
 cartilage aged 25–83, not growth plate, and the young/aged difference (0.151 vs 0.098) tracks GAG content,
 so a juvenile growth plate could differ in either direction.
+
+## CORR-108 — the supplementary table shows rhPAPP-A2 did NOT increase body length in wild-type mice. My "wild-type gain-of-function" was a factorial main effect I misread as a group difference
+
+Round 108 reported, and I told the user in bold, that **rhPAPP-A2 increased body length in WILD-TYPE mice
+of both sexes** — calling it "the rare pathway-intact gain-of-function on this axis" and "the thing I'd
+have asked you for." That came from one main-text sentence: *"An overall treatment effect resulted in
+increased body length in male Pappa2 wt/wt mice treated with rhGH or rhPAPP-A2 from PND5."*
+
+The supplementary tables, retrieved this round from the publisher, contain the actual values.
+**Table iv, body length (cm) at PND35, Pappa2 wild-type:**
+
+| | saline | rhGH | rhIGF1 | **rhPAPP-A2** |
+|---|---|---|---|---|
+| ♂ | 15.33 ± 0.17 | 15.82 ± 0.14 \* | 15.00 ± 0.11 (ns) | **15.15 ± 0.14 (ns)** |
+| ♀ | 14.47 ± 0.13 | 15.00 ± 0.16 \*\* | 14.63 ± 0.16 (ns) | **14.71 ± 0.31 (ns)** |
+
+**At endpoint, rhPAPP-A2 did not significantly increase body length in wild-type mice of either sex, and
+in wild-type males it was numerically LOWER than saline.** Across the entire timecourse, wild-type
+rhPAPP-A2 reached significance exactly twice: an INCREASE in females at PND26 (13.86 vs 13.24) and a
+**DECREASE** in males at PND17 (11.05 vs 11.61). rhGH, by contrast, is starred repeatedly and at endpoint.
+
+**And the groups were not matched at baseline.** At PND5 — before treatment could act — wild-type males
+were 6.31 (saline), 5.95 (rhGH), 6.53 (rhIGF1), 6.15 (rhPAPP-A2). A factorial "overall treatment effect"
+computed across a curve whose arms start 0.6 cm apart is not a demonstration that the treatment raised
+length, and I read it as one.
+
+**WHAT SURVIVES, AND IT IS A DIFFERENT AND WEAKER CLAIM.** Table vi shows rhPAPP-A2 DID significantly
+change PROPORTIONS in wild-type males: femur-to-body-length 0.72 → **0.75** (p<0.001),
+tibia-to-body-length 0.93 → **0.97** (p<0.001), femur-to-body-weight 2.38 → **2.96** (p<0.001),
+femur weight-to-length 3.57 → **4.32** (p<0.001). So in a pathway-intact animal it made the LIMBS LONGER
+RELATIVE TO THE BODY — without making the body longer. That is redistribution between limb and trunk,
+not added stature, and for a height goal redistribution is not obviously a gain.
+
+**Grade change:** "Raising the free IGF-1 fraction increases longitudinal growth in a pathway-intact
+animal" goes from **C to X (retracted)**, replaced by a proportional claim at **D**.
+
+**The methodological lesson is the one this project keeps relearning.** A main effect from a factorial
+ANOVA is not a between-group difference at endpoint, and when a paper reports a direction in prose but
+puts the numbers in supplementary material, the prose is not sufficient. I flagged at the time that "no
+absolute bone lengths are in the text" and then used the claim anyway instead of treating the missing
+table as blocking.
