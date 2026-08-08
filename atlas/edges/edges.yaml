@@ -19517,3 +19517,38 @@ edges:
     blood readout. The series measures the DESCENDING limb only - nothing here shows that raising sulfate
     above normal raises height, which is the gap.
   traversal_usable: false
+- edge_id: e01269
+  source: the_volume_set_point_and_where_a_compound_could_act
+  target: the_swelling_machinery_has_only_ever_been_switched_off
+  relation: required_for
+  sign: +
+  magnitude: height 112 cm at 12 years, -5.1 SD, with metaphyseal dysplasia, in de novo LRRC8C
+    gain-of-function
+  context: human, two unrelated children, monoallelic de novo variants leaving VRAC open under isotonic
+    conditions by cryo-EM; read alongside bovine articular chondrocyte RVD kinetics
+  evidence_tier: T1
+  refs:
+  - quinodoz2025
+  - bush2001
+  confidence: C
+  notes: The direction the swelling node needed. A constitutively OPEN cell-shrinking channel costs five
+    standard deviations of stature and produces a metaphyseal radiographic phenotype, which is the mirror
+    of the hypothesis that blocking shrinkage holds volume. n=2, severe multisystem disease that could
+    confound stature, and the growth-plate mechanism is the authors' labelled speculation.
+  traversal_usable: true
+- edge_id: e01270
+  source: the_volume_set_point_and_where_a_compound_could_act
+  target: hypertrophic_zone
+  relation: inhibits
+  sign: '-'
+  magnitude: 50 per cent growth suppression at about 250 micromolar EIPA and about 25 micromolar DIDS,
+    each shrinking the hypertrophic zone with no change in plate length or cell density
+  context: rat, P7 bone rudiments, ex vivo; ABSTRACT-LEVEL SOURCE, full text not obtained
+  evidence_tier: T2
+  refs:
+  - loqman2013
+  confidence: D
+  notes: Recorded because of the authors' framing rather than the effect size - they attribute the result
+    to a reduced chondrocyte VOLUME SET-POINT, which makes the target a regulated quantity rather than a
+    pump. Both inhibitor concentrations are far above selective range and the full text is needed.
+  traversal_usable: false
