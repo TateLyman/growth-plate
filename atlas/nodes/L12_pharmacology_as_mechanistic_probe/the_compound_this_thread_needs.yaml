@@ -1,0 +1,236 @@
+id: the_compound_this_thread_needs
+name: THE COMPOUND SPECIFICATION - every constraint thread 3 imposes, solved together, and the answer is
+  not a CNP analogue
+aliases:
+- what compound do we actually need
+- the exact molecule
+- does the compound exist
+- NPR3 antagonist for height
+- compound spec
+type: intervention
+layer: L12
+stub: false
+summary: 'THIS NODE DERIVES A MOLECULE FROM CONSTRAINTS RATHER THAN PICKING ONE FROM A LIST. The objective
+  is to maximise time-integrated NPR2 activation AT THE GROWTH PLATE, subject to systemic free-CNP Cmax
+  staying under the cardiovascular margin that thread 3 showed is the real cap, in a subject at bone age
+  16, without spending bone age. Five constraints follow from quantities this atlas already holds, and
+  taken together they exclude every compound currently on the axis.
+  CONSTRAINT 1 - SIZE, AND IT IS THE ONE THAT KILLS THE OBVIOUS ANSWER. farnum2006 puts partition into the
+  plate at roughly 100 per cent of vascular concentration at 332 Da, about 60 per cent at 3 kDa, about 10
+  per cent at 10 kDa and undetectable at 40 kDa. THE CARTILAGE-TARGETING LITERATURE MOVES IN THE WRONG
+  DIRECTION ON THIS AXIS: every targeting moiety adds mass. hirai2026 fuses a collagen-binding domain to
+  CNP; the WYRGRL construct in cartilage_targeted_delivery is a PLGA nanoparticle with a membrane coat.
+  Both buy retention by adding exactly the mass that the partition curve punishes. AND THERE IS A SECOND,
+  SHARPER PROBLEM WITH THAT LITERATURE: IT IS BUILT FOR ARTICULAR CARTILAGE, WHICH IS A DIFFERENT
+  COMPARTMENT. hirai2026 localised CBD-CNP to ARTICULAR cartilage in FETAL murine tibiae, and its in vivo
+  routes were intra-articular injection and collagen powder packed at a fracture site. Articular cartilage
+  is bathed by synovial fluid and reachable from a joint surface; THE GROWTH PLATE IS INTRAOSSEOUS,
+  separated from the joint cavity by the epiphysis, and is reached only by diffusion from epiphyseal and
+  metaphyseal vessels. A targeting strategy validated on articular cartilage does not transfer to a physis
+  by default, and nothing in this atlas shows that it does.
+  CONSTRAINT 2 - LOCAL PROTEOLYSIS. the_plate_consumes_cnp_it_does_not_make_it measured MME (neprilysin)
+  in human growth plate at a maximum of 1062 against NPR2 at 1262. The tissue transcribes the protease
+  that destroys the drug at a level comparable to the receptor. Vosoritide is NEP-resistant by design;
+  navepegritide releases UNMODIFIED CNP-38, which is a NEP substrate. That is a real design asymmetry
+  between the two approved agents at the level of the target tissue, and it has not been tested.
+  CONSTRAINT 3 - LOCAL CLEARANCE, PLUS A FEEDBACK THAT PUNISHES LIGAND SUPPLY SPECIFICALLY. NPR3 in the
+  same samples reaches 979. Averaging probe sets, the CLEARANCE-TO-SIGNALLING transcript ratio
+  (NPR3+MME)/NPR2 is of ORDER UNITY in every compartment of both donors - 0.26 to 1.83. The plate invests
+  about as much in destroying CNP as in receiving it. And npr3_clearance_receptor holds that NPR3 is a
+  CNP-INDUCIBLE gene in mouse growth plate (Agoston 2007), so supplying ligand UPREGULATES ITS OWN
+  CLEARANCE RECEPTOR locally. A second feedback runs systemically: kanakatti2026 found exogenous vosoritide
+  SUPPRESSES endogenous NT-proCNP. Since the plate makes none of its own, that suppression removes part of
+  the circulating supply the plate depends on. TWO INDEPENDENT NEGATIVE FEEDBACKS OPPOSE A LIGAND-SUPPLY
+  STRATEGY, AND A CLEARANCE BLOCKER BREAKS THE LOOP INSTEAD OF FIGHTING IT.
+  CONSTRAINT 4 - SYSTEMIC SILENCE AT THE LIABILITY. The cap is vascular NPR2. Any molecule that IS a
+  natriuretic ligand raises signalling there in proportion to plasma concentration - which is why the
+  ACcomplisH dose stopped at the cynomolgus cardiovascular NOAEL. A molecule that adds no ligand cannot
+  hit that liability by the primary mechanism.
+  CONSTRAINT 5 - IT MUST WORK AT BONE AGE 16, AND NOTHING HERE ESTABLISHES THAT FOR ANY CANDIDATE. This
+  atlas has found age gates at precisely this junction repeatedly - serrat2013 for temperature, hakata2024
+  for neprilysin inhibition (effective at 3-4 weeks in mice, 99 per cent gone by 4-5 weeks). The constraint
+  is stated so that no candidate below is read as having satisfied it.
+  THE MOLECULE THE CONSTRAINTS SPECIFY. Not a CNP analogue. A SUB-KILODALTON, NPR3-SELECTIVE ANTAGONIST
+  that partitions freely into growth-plate cartilage and blocks LOCAL clearance of the CNP that arrives
+  there, without agonising vascular NPR2. Ideally cationic, because cartilage matrix is densely
+  polyanionic and that would add retention without adding mass - the one way to get selectivity and
+  partition at the same time. It satisfies constraint 1 by being small, 3 and 4 by adding no ligand, and
+  it is the only design found that turns constraint 3 from an obstacle into the mechanism of action. THE
+  HUMAN PROOF OF CONCEPT IS ALREADY HELD: biallelic NPR3 loss of function causes tall stature with
+  skeletal overgrowth.
+  DOES IT EXIST? PARTLY, AND THE MISSING PART IS SPECIFIC. NPR3 IS DEMONSTRABLY DRUGGABLE BY SMALL
+  MOLECULES: smith2022 published a bis-aminotriazine series against NPR-C with surface-plasmon-resonance
+  SAR, a lead at about 1 micromolar and stated promising in vivo pharmacokinetics - but those compounds
+  are AGONISTS, developed for vascular relaxation, which is the wrong direction. AN IN VIVO NPR3 INHIBITOR
+  EXISTS: dabaghie2024 used a compound called NPR3i in rodent kidney disease models with reno-protective
+  effects; the abstract does not identify it and this atlas has not established its structure, class or
+  whether it is a small molecule. WHAT DOES NOT EXIST ANYWHERE FOUND: any NPR3 antagonist tested against a
+  BONE LENGTH OR HEIGHT ENDPOINT, in any species. The atlas already ranked NPR3 blockade the highest-value
+  unhit target and already recorded that the available agents - osteocrin, C-ANF(4-23), AP-811, SC-46542 -
+  are research reagents with no product. This node adds the chemistry: the receptor has a published
+  small-molecule SAR series and a published biophysical screening route, so the campaign starts from
+  chemical matter rather than from nothing.'
+quantitative:
+- parameter: 'THE CLEARANCE-TO-SIGNALLING TRANSCRIPT RATIO IN HUMAN GROWTH PLATE, WHICH IS THE NUMBER THAT
+    SELECTS A CLEARANCE BLOCKER OVER A LIGAND'
+  value: '(NPR3 + MME) / NPR2 = 0.26 to 1.83 across five compartments and two donors - order unity
+    everywhere'
+  unit: ratio of MAS5 signal, probe sets averaged per gene
+  conditions: 'GSE9160, computed from query/cnp_source_bulk.json. Per compartment, donor1 female 11y10m /
+    donor2 male 13y3m: reserve 1.83/0.62, proliferative 0.26/0.99, prehypertrophic 0.31/1.21,
+    hypertrophic 1.05/0.88, perichondrium 1.69/0.57. Component maxima: NPR2 1262, NPR3 979, MME 1062.'
+  species: human
+  source_ref: gse9160
+  uncertainty: 'THE ZONAL PATTERN DOES NOT REPLICATE AND IS NOT CLAIMED. donor1 shows a low ratio in the
+    proliferative and prehypertrophic zones and high ratios in reserve and perichondrium; donor2 is nearly
+    flat. Only the ORDER-OF-MAGNITUDE statement survives both donors - clearance machinery transcript is
+    comparable to receptor transcript throughout, rather than negligible. MME differs about tenfold
+    between the two donors (donor1 about 70, donor2 about 500-870), unexplained and possibly sex, age or
+    technical. n=2, transcript not protein, and transcript ratios across DIFFERENT genes are not
+    stoichiometry - a receptor and a protease with different turnover and different protein-per-transcript
+    cannot be compared quantitatively this way. The ratio is an ORDER-OF-MAGNITUDE ARGUMENT ONLY and any
+    stronger use of it is a misuse.'
+- parameter: 'NPR3 IS SMALL-MOLECULE DRUGGABLE WITH IN VIVO PHARMACOKINETICS - BUT THE PUBLISHED SERIES
+    RUNS IN THE WRONG DIRECTION'
+  value: 'bis-aminotriazine lead, EC50 about 1 micromolar at NPR-C, described as having promising in vivo
+    pharmacokinetic properties - and it is an AGONIST'
+  unit: EC50, micromolar
+  conditions: 'smith2022, Journal of Medicinal Chemistry. Novel small molecules designed and synthesised
+    with structure-activity relationships evaluated by a surface plasmon resonance binding assay;
+    biological activity confirmed in organ bath assays measuring vascular relaxation and inhibition of
+    cAMP production, linked to NPR-C activity. The stated therapeutic framing is cardiovascular disease
+    via NPR-C agonism, not clearance blockade.'
+  species: in_vitro_animal_cell
+  source_ref: smith2022
+  uncertainty: 'READ AT ABSTRACT LEVEL ONLY. The species and tissue of the organ-bath work were not
+    established here and the species tag is provisional. MOST IMPORTANTLY THE DIRECTION IS WRONG: an
+    agonist of NPR-C is not an antagonist of clearance, and this node does not assume that a series
+    optimised for agonism can be flipped - that is a medicinal-chemistry proposition, not a finding.
+    What the paper establishes for present purposes is narrower and still useful: the receptor binds
+    drug-like small molecules, an SPR assay and an SAR series exist, and at least one such compound had
+    workable in vivo PK.'
+- parameter: 'AN NPR3 INHIBITOR HAS BEEN USED IN VIVO, WITH NO SKELETAL ENDPOINT AND NO PUBLISHED IDENTITY
+    IN WHAT WAS READ'
+  value: 'NPR3i - reno-protective in nephrotoxic-serum glomerular injury; no effect alone on renal
+    function in the ZSF1 diabetic rat, but potentiated losartan on albuminuria'
+  unit: qualitative
+  conditions: 'dabaghie2024, Scientific Reports. Podocyte-specific NPR3 knockout mice showed no renal
+    abnormality when healthy and responded similarly to nephrotoxic serum; the pharmacological inhibitor
+    produced decreased glomerulosclerosis and reduced podocyte loss in the same model.'
+  species: multiple
+  source_ref: dabaghie2024
+  uncertainty: 'THE COMPOUND IS NOT IDENTIFIED IN THE ABSTRACT AND THIS ATLAS HAS NOT ESTABLISHED ITS
+    STRUCTURE, MOLECULAR WEIGHT, CLASS OR SELECTIVITY - it may be a peptide such as a C-ANF analogue
+    rather than a small molecule, which would fail constraint 1 entirely. NOTHING about a bone or growth
+    endpoint appears; the models are renal. This row is recorded to establish that in vivo NPR3 inhibition
+    is achievable at all, not to nominate this compound. NOTE ALSO A CAUTION IN THE SAME PAPER: the
+    podocyte-specific knockout was phenotypically unremarkable while the inhibitor had effects, which
+    could indicate off-target activity, a non-podocyte site of action, or both.'
+localization:
+- 'the specification is set by growth-plate cartilage - intraosseous, avascular, alymphatic, polyanionic,
+  reached only by diffusion from epiphyseal and metaphyseal vessels - and explicitly NOT by articular
+  cartilage, which is the compartment the existing targeting literature was built for'
+human_evidence: direct
+human_evidence_note: 'The constraints are set by human measurements - the human partition curve is mouse
+  (farnum2006) but the clearance and receptor transcript levels are human growth plate, the dose ceiling
+  is a human trial protocol, and the proof of concept for the mechanism is a human loss-of-function
+  phenotype. The candidate compounds are animal and in vitro only.'
+species_basis:
+- human
+- mouse
+- in_vitro_animal_cell
+translation_risk: high
+translation_risk_reason: 'The specification is derived from human tissue measurements and a human genetic
+  phenotype, which is the strong part. The weak part is that NO compound satisfying it has been tested
+  against any skeletal endpoint in any species, so the entire proposal rests on an inference from a
+  germline loss-of-function phenotype to a pharmacological one - the same inference this atlas has watched
+  fail on age-gating grounds more than once.'
+confidence: D
+claim_grades:
+- claim: The constraints jointly exclude a collagen-binding-domain CNP fusion and a targeted nanoparticle
+    as routes to the growth plate.
+  grade: C
+  basis: 'Two independent grounds. SIZE - farnum2006 puts partition near 10 per cent at 10 kDa and
+    undetectable at 40 kDa, and both constructs add mass to reach retention. COMPARTMENT - hirai2026
+    localised to ARTICULAR cartilage in fetal tibiae and was administered intra-articularly or via
+    collagen powder at a fracture site, and the growth plate is intraosseous and not continuous with the
+    joint cavity. Graded C rather than B because neither construct has been TESTED at a physis and failed;
+    the exclusion is predicted from the partition curve and the anatomy, not observed.'
+- claim: A ligand-supply strategy is opposed by two negative feedbacks that a clearance blocker avoids.
+  grade: C
+  basis: 'Local - NPR3 is CNP-inducible in mouse growth plate (Agoston 2007 via npr3_clearance_receptor),
+    so supplying ligand upregulates its own clearance receptor. Systemic - kanakatti2026 shows exogenous
+    vosoritide suppresses endogenous NT-proCNP in children. Both are real measurements; the inference that
+    they materially limit a clinical ligand strategy is not, since navepegritide still produced a
+    monotonic dose-response across a sixteen-fold dose range in the face of both.'
+- claim: The compound this thread needs is a sub-kilodalton NPR3-selective antagonist.
+  grade: D
+  basis: 'It is the only design found that satisfies the size, feedback and systemic-silence constraints
+    simultaneously, and it has a human loss-of-function proof of concept. But it is a derivation, not a
+    result: no such compound has been tested for bone length in any species, NPR3 blockade is
+    systemically active and could raise circulating natriuretic peptides enough to reproduce the very
+    hypotension liability it was designed to avoid, and the redundancy question with an FGFR inhibitor -
+    the same one that undercut vosoritide in this stack - is untouched.'
+- claim: The required compound already exists.
+  grade: X
+  basis: 'NO. NPR3 is druggable by small molecules with in vivo PK (smith2022) but the published series
+    are AGONISTS; an in vivo NPR3 inhibitor exists (dabaghie2024) but is unidentified in what was read,
+    may be a peptide, and was used only in renal models. NO NPR3 ANTAGONIST HAS BEEN TESTED AGAINST A BONE
+    LENGTH OR HEIGHT ENDPOINT IN ANY SPECIES. The chemistry exists; the compound does not.'
+- claim: An NPR3-evading CNP analogue is an unexplored idea.
+  grade: X
+  basis: 'NO - IT IS A PATENTED DESIGN AND HAS BEEN SINCE 2009. biomarin_cnp_variants_us8198242 (priority
+    2009-05-20) explicitly discloses CNP variants intended to have reduced affinity for NPR-C while
+    retaining NPR-B binding, by substituting ring-region glycines - G1, G5, G8, G15, G19, G21, with G8T,
+    G8S, G8V and G8N among the listed options - on the stated rationale that reducing conformational
+    flexibility increases NPR-B over NPR-C specificity. So the sponsor of vosoritide had this exact idea
+    before vosoritide was approved. WHAT THE PATENT DOES NOT CONTAIN, in the text read, is any
+    COMPARATIVE NPR-B VERSUS NPR-C BINDING DATA - the language is "potentially reduced affinity", which is
+    an intention rather than a measurement - and vosoritide is not identified as one of the claimed
+    variants. The idea is public, the data is not, and no molecule with the property isolated has been
+    tested against a length endpoint.'
+- claim: Whether vosoritide is itself cleared by NPR3 is known.
+  grade: X
+  basis: 'NOT ESTABLISHED ANYWHERE IN THIS ATLAS, and it is a sharp and cheap question. Vosoritide is
+    engineered for NEP resistance; whether it also evades the CLEARANCE RECEPTOR is a different property.
+    If it binds NPR3, a substantial fraction of delivered drug is removed by a receptor the human plate
+    expresses at a level comparable to NPR2, and an NPR3-evading variant becomes an obvious and much
+    smaller engineering step than a new target.'
+key_refs:
+- ref_id: gse9160
+  year: 2007
+  type: dataset
+  role: the human clearance-to-signalling ratio that selects a clearance blocker over a ligand
+- ref_id: hirai2026
+  year: 2026
+  type: primary
+  role: the closest existing compound, CBD-CNP - and the demonstration that the targeting literature is
+    built for articular cartilage and delivered by routes that do not reach a physis
+- ref_id: smith2022
+  year: 2022
+  type: primary
+  role: proof that NPR3 binds drug-like small molecules, with an SPR assay, an SAR series and in vivo PK -
+    in the wrong direction
+- ref_id: dabaghie2024
+  year: 2024
+  type: primary
+  role: proof that in vivo NPR3 inhibition is achievable, in renal models, with the compound unidentified
+- ref_id: biomarin_cnp_variants_us8198242
+  year: 2012
+  type: patent
+  role: the ligand-branch answer - NPR-C-evading CNP variants were designed and claimed by the sponsor of
+    vosoritide in 2009, with named substitutions but no public comparative binding data
+open_questions:
+- g_l12_is_vosoritide_cleared_by_npr3
+- g_l12_does_a_small_molecule_accumulate_in_cartilage
+- g_l12_does_the_human_plate_produce_its_own_cnp
+contradicts:
+- 'NARROWS cartilage_targeted_delivery AND the stack node WITHOUT CONTRADICTING THEIR DATA. Those nodes
+  present cartilage-targeted carriers as the class that attacks the exposure term, which remains true for
+  ARTICULAR cartilage and for the endpoints those studies used. This node adds that the growth plate is a
+  different compartment reached by a different route, and that mass added for retention is subtracted from
+  partition - so the transfer of that class to a physis is an open question rather than an established
+  route. The WYRGRL purmorphamine study did restore body length in a hypochondroplasia mouse, which is a
+  length endpoint and is the strongest counter to this node reasoning; it is also the study whose every
+  growth-plate number is a membrane-dye fluorescence rather than a drug concentration.'
+last_verified: '2026-08-08'

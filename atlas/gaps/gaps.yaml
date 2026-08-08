@@ -12040,3 +12040,47 @@ gaps:
     or below leaves it equivalent to a dose increase and the class stays demoted.'
   tractability: 2
   search_log_ref: g_l12_does_a_small_molecule_accumulate_in_cartilage
+- gap_id: g_l12_is_vosoritide_cleared_by_npr3
+  question: Is vosoritide - and the CNP-38 released by navepegritide - a substrate for the NPR3 clearance
+    receptor? Vosoritide is engineered for neutral-endopeptidase resistance, but NEP resistance and
+    clearance-receptor evasion are different properties and only the first is stated in its design.
+  type: known_unknown
+  layer: L12
+  why_it_matters: 'IT IS THE CHEAPEST QUESTION IN THE WHOLE THREAD AND IT COULD REPLACE A NEW TARGET WITH
+    A SMALL ENGINEERING STEP. the_plate_consumes_cnp_it_does_not_make_it measured NPR3 in human growth
+    plate at 979 against NPR2 at 1262, with a clearance-to-signalling transcript ratio of order unity in
+    every compartment. If vosoritide binds NPR3, then a substantial fraction of the drug that reaches the
+    plate is removed by a receptor sitting there at a level comparable to the target receptor - and an
+    NPR3-EVADING ANALOGUE is a far smaller step than developing an NPR3 antagonist against a new target,
+    because it modifies an approved molecule rather than opening a programme. If vosoritide already evades
+    NPR3, then local clearance of the drug is dominated by neprilysin, which vosoritide already resists,
+    and the local-clearance argument for an NPR3 blocker weakens sharply - it would then be about
+    protecting ENDOGENOUS CNP rather than the drug.'
+  what_is_known: 'Vosoritide is described throughout this atlas as a NEP-resistant CNP analogue and
+    navepegritide as a prodrug releasing UNMODIFIED CNP-38, which is a NEP substrate. npr3_clearance_receptor
+    holds that NPR3 binds all three natriuretic peptides and removes them by receptor-mediated
+    internalisation and degradation, and that NPR3 is a CNP-inducible gene in mouse growth plate, so
+    ligand supply raises its own clearance. Human biallelic NPR3 loss of function causes tall stature with
+    skeletal overgrowth.'
+  what_is_missing: 'ANY STATEMENT OF VOSORITIDE OR CNP-38 BINDING AFFINITY AT NPR3. This atlas holds NPR2
+    pharmacology for both agents and NEP resistance for vosoritide, and nothing at the clearance receptor
+    for either. The number required is a single binding constant that a regulatory pharmacology package
+    would normally contain.'
+  nearest_evidence:
+  - gse9160
+  - hakata2024
+  nearest_evidence_note: gse9160 establishes that NPR3 is transcribed at the human plate at a level
+    comparable to NPR2; hakata2024 shows neprilysin inhibition is NOT additive with supplied CNP, which is
+    the closest existing probe of whether local degradation limits a supplied ligand and argues that it
+    does not, at least in mice at 3-4 weeks.
+  discriminating_experiment: 'MOSTLY DESK WORK. (1) Read the vosoritide and navepegritide regulatory
+    pharmacology reviews - the FDA and EMA assessment reports - for receptor selectivity panels, which
+    routinely include NPR1, NPR2 and NPR3 binding. (2) Failing that, a competition binding assay of
+    vosoritide against labelled CNP on NPR3-expressing cells is a standard one-week experiment.
+    PRE-REGISTERED READING: vosoritide affinity at NPR3 within about tenfold of native CNP means the drug
+    is cleared by the receptor and an NPR3-evading analogue is the indicated next molecule; affinity more
+    than about a hundredfold weaker means vosoritide already evades clearance and the NPR3-blocker
+    rationale must rest on protecting endogenous ligand instead, which is a weaker case given that the
+    plate produces none locally.'
+  tractability: 1
+  search_log_ref: g_l12_is_vosoritide_cleared_by_npr3
