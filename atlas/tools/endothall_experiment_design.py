@@ -446,6 +446,126 @@ def pump_mass():
 
 
 
+
+# --------------------------------------------------------------------------
+# 12. ROUND 138 - Vd AND CLEARANCE DERIVED FROM PRIMARY DATA, AND A MARGIN
+#     THAT DOES NOT DEPEND ON THE ABSORBED FRACTION
+# --------------------------------------------------------------------------
+SOO_1H = {  # cpm per 100 mg DRY tissue at 1 h, Soo 1967 Table III-2 via the
+            # 1992 EPA Drinking Water Criteria Document
+    "Liver": 242, "Kidney": 1070, "Heart": 135, "Lung": 210, "Spleen": 71,
+    "Brain": 43, "Blood": 309, "Muscle": 50, "Fat": 0,
+}
+SOO_SA = 407.0          # cpm per microgram endothall
+SOO_DOSE = 5.0          # mg/kg oral
+
+
+def soo_distribution():
+    print("=" * 78)
+    print("12. WHERE ENDOTHALL ACTUALLY GOES  (Soo 1967 Table III-2, 1 hour)")
+    print("=" * 78)
+    b = SOO_1H["Blood"]
+    for k, v in SOO_1H.items():
+        print(f"    {k:<8} {v:>6} cpm/100 mg dry   tissue:blood {v/b:5.2f}")
+    print()
+    print("  ONLY THE KIDNEY EXCEEDS BLOOD, at 3.5-fold - the active organic-anion")
+    print("  secretion SERA predicted. Everything else is at or below blood, BRAIN at")
+    print("  0.14, MUSCLE at 0.16 and FAT at zero. This is a compound that stays in")
+    print("  plasma and interstitium and does not enter cells or lipid.")
+    print("  THE MUSCLE NUMBER IS THE BEST PROXY THE ATLAS WILL EVER GET FOR CARTILAGE:")
+    print("  a high-water, uncharged, moderately perfused tissue sees about a sixth of")
+    print("  the blood concentration. Cartilage, avascular and anionic, should see less.\n")
+
+
+def soo_pk():
+    print("=" * 78)
+    print("13. VOLUME OF DISTRIBUTION AND CLEARANCE, DERIVED TWO WAYS")
+    print("=" * 78)
+    ug_per_100mg_dry = SOO_1H["Blood"] / SOO_SA
+    print(f"  Blood at 1 h: {SOO_1H['Blood']} cpm/100 mg dry = "
+          f"{ug_per_100mg_dry:.3f} ug endothall per 100 mg dry blood")
+    concs = []
+    for dryfrac in (0.18, 0.20, 0.22):
+        mL = 100 / dryfrac / 1000 / 1.06
+        c = ug_per_100mg_dry / mL
+        concs.append(c)
+        print(f"    dry fraction {dryfrac:.2f} -> {c:.2f} ug/mL = {c/MW_ENDOTHALL*1000:.1f} uM")
+    print("\n  (A) FROM CONCENTRATION AND ABSORBED DOSE:  Vd = absorbed / C(1 h)")
+    for F in (0.07, 0.10):
+        lo, hi = SOO_DOSE * F / max(concs), SOO_DOSE * F / min(concs)
+        print(f"      F = {F:.2f}: Vd = {lo:.2f} to {hi:.2f} L/kg")
+    print("      -> EXTRACELLULAR-FLUID-LIKE, which is what a dianion should be, and")
+    print("         it confirms the 0.20-0.26 L/kg the earlier rounds ASSUMED.\n")
+    pts = [(1, 309), (2, 96), (4, 92), (6, 56), (8, 39)]
+    auc = sum((c0 + c1) / 2 * (t1 - t0) for (t0, c0), (t1, c1) in zip(pts, pts[1:]))
+    auc += 309  # crude 0-1 h
+    print(f"  (B) FROM AREA UNDER THE BLOOD CURVE: AUC(0-8 h) about {auc:.0f} cpm.h/100 mg dry")
+    print("      CL = F x Dose / AUC")
+    for F in (0.07, 0.10):
+        for total in (900, 1400):
+            mL = 100 / 0.20 / 1000 / 1.06
+            auc_mgh_L = total / SOO_SA / mL
+            cl = SOO_DOSE * F / auc_mgh_L * 1000
+            print(f"      F = {F:.2f}, AUC {total}: CL = {cl:.0f} mL/h/kg")
+    print("      -> CL about 50 to 110 mL/h/kg, consistent with (A) and with the")
+    print("         upper-bound estimate from the 1.8 h half-life.\n")
+    print("  REQUIRED INFUSION RATE, mg/kg/day:")
+    for cl in (60, 100, 130):
+        row = f"      CL {cl:>4} mL/h/kg:"
+        for tgt in (0.7, 1.0, 2.0):
+            row += f"   {tgt} uM -> {tgt*MW_ENDOTHALL/1000*cl*24/1000:5.3f}"
+        print(row)
+    print()
+    print("  AND THE MARGIN IS INDEPENDENT OF THE ABSORBED FRACTION. Both sides carry")
+    print("  F: the tolerated absorbed dose is F x 8 mg/kg/day, and the required rate is")
+    print("  C_target x F x Dose / AUC. F cancels exactly, leaving")
+    print("      margin = NOAEL_oral x AUC / (C_target x Dose_PK x 24)")
+    for total in (900, 1400):
+        mL = 100 / 0.20 / 1000 / 1.06
+        auc_mgh_L = total / SOO_SA / mL
+        for tgt, lbl in ((0.7, "EC50 0.7 uM"), (2.0, "near-max 2 uM")):
+            c = tgt * MW_ENDOTHALL / 1000
+            m = 8.0 * auc_mgh_L / (c * SOO_DOSE * 24)
+            print(f"      AUC {total}, {lbl}: margin = {m:.1f}x")
+    print()
+    print("  READ-OFF: about 2.4 to 3.7-fold margin at the fitted EC50, and under 1.3")
+    print("  at a near-maximal concentration. THE HALF-MAXIMAL TARGET IS REACHABLE")
+    print("  BELOW THE CHRONIC NO-EFFECT DOSE; THE MAXIMAL ONE IS NOT.\n")
+
+
+# --------------------------------------------------------------------------
+# 14. THE PUMP PROBLEM IS SOLVED  (round 138)
+# --------------------------------------------------------------------------
+def pump_solved():
+    print("=" * 78)
+    print("14. ONE PUMP COVERS THE WHOLE WINDOW")
+    print("=" * 78)
+    print("  MEASURED (alzet_pump_specs, 100-series): models 1003D, 1007D, 1002, 1004")
+    print("  and 1006 are all 1.5 x 0.6 cm, COMPLETE PUMP WEIGHT 0.4 g, 100 uL reservoir.")
+    print("  Filled with a dilute aqueous solution that is about 0.5 g.\n")
+    for w, label in ((8.5, "PND21 weanling"), (12.5, "PND28"), (24.0, "PND56")):
+        print(f"    {label:<16} {w:5.1f} g -> 100-series filled is {100*0.5/w:4.1f}% of "
+              f"body weight   {'passes' if 0.5/w <= 0.10 else 'FAILS'}"
+              f"   |  200-series {100*1.3/w:5.1f}%   "
+              f"{'passes' if 1.3/w <= 0.10 else 'FAILS'}")
+    print()
+    print("  MODEL 1006 IS THE ANSWER: 0.08 uL/hour for 6 WEEKS from a 100 uL reservoir")
+    print("  at 0.4 g. Implanted at weaning it covers PND21 to PND63 in ONE surgery at")
+    print("  6 per cent of body weight.")
+    for rate_uL_h, model, days in ((0.08, "1006", 42), (0.11, "1004", 28)):
+        vol = rate_uL_h * 24
+        for target in (0.2, 0.3, 0.4):
+            ug_day = target * 8.5 / 1000 * 1000
+            print(f"    model {model}: {vol:.2f} uL/day; to start at {target} mg/kg/day in an "
+                  f"8.5 g mouse needs {ug_day/vol:5.2f} mg/mL")
+        break
+    print("  Against a water solubility of 100 g/L that is four orders of magnitude of")
+    print("  headroom. THE FIXED OUTPUT STILL MEANS THE DOSE FALLS AS THE MOUSE GROWS -")
+    print("  2.8-fold from PND21 to PND56 - which front-loads exposure into the fastest-")
+    print("  growing window and is arguably the right shape anyway.\n")
+
+
+
 def main():
     power_table()
     velocity_vs_final()
@@ -458,6 +578,9 @@ def main():
     window()
     bounded_window()
     pump_mass()
+    soo_distribution()
+    soo_pk()
+    pump_solved()
     print("=" * 78)
     print("END. Every ASSUMED value above is an item on the get-list in")
     print("nodes/L12_pharmacology_as_mechanistic_probe/"

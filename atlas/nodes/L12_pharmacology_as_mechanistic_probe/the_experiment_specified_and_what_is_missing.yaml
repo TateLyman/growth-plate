@@ -104,7 +104,33 @@ summary: 'THE EXPERIMENT. Wild-type juvenile mice, both sexes, CONTINUOUS delive
   (5) AND A SECONDARY SOURCE MIS-TRANSCRIBED A DOSE. SERA lists the Graziano study as endothall at 10
   mg/kg; the paper gives endothall at 75 and CANTHARIDIC ACID at 10. Endothall lethargy is therefore a
   5.4-times-LD50 phenomenon, CORR-134 reverses CORR-132, and the prediction that endothall spares the
-  CNS where LB-100 did not is restored.'
+  CNS where LB-100 did not is restored.
+  ROUND 138 - THE BLOCKING PARAMETER IS NOW DERIVED FROM PRIMARY DATA RATHER THAN FETCHED, AND THE
+  DESIGN IS COMPLETE ENOUGH TO WRITE A PROTOCOL.
+  THE 1992 EPA DRINKING WATER CRITERIA DOCUMENT REPRODUCES THE SOO 1967 TABLES IN FULL - including the
+  per-organ carbon-14 time course with BLOOD, MUSCLE and FAT, which neither the RED nor SERA carried. So
+  the volume of distribution and clearance that the unobtainable study report was wanted for can be
+  COMPUTED: Vd 0.20 to 0.34 L/kg, clearance 48 to 107 mL/h/kg, blood concentration 7.8 to 9.5 micromolar
+  one hour after 5 mg/kg orally. Holding 0.7 micromolar needs 0.19 to 0.41 mg/kg/day.
+  AND THE SAFETY MARGIN TURNS OUT NOT TO DEPEND ON THE ABSORBED FRACTION AT ALL. F appears in the
+  tolerated absorbed dose and again in the clearance, and cancels exactly, leaving a margin of 2.4 to
+  3.7-fold at the fitted EC50 and 0.8 to 1.3 at a near-maximal concentration. The single largest
+  uncertainty in every previous version of this calculation is now formally gone.
+  THE DISTRIBUTION DATA ALSO GIVE THE BEST CARTILAGE PROXY AVAILABLE: at one hour, tissue-to-blood is
+  KIDNEY 3.46 and everything else at or below blood - MUSCLE 0.16, BRAIN 0.14, FAT ZERO. Endothall stays
+  in plasma and interstitium and does not enter cells or lipid. Only the kidney concentrates it, which is
+  the organic-anion secretion that explains the human renal dose-limiting toxicity.
+  AND THE IC50 THE ATLAS HAS BEEN USING WAS TENFOLD TOO LOW. li1993 measures endothall against purified
+  catalytic subunits: PP2A 970 nanomolar, PP1 5000, PP2B above 60000, PP2C above a million, and nothing
+  at 1 millimolar against PKA, phosphorylase kinase, AMPK or MAP kinase. So endothall is PP2A-preferring
+  by only FIVE-fold - and, decisively, THE FITTED IN-TISSUE EC50 OF 0.69 MICROMOLAR NOW EQUALS THE
+  PURIFIED-ENZYME IC50 OF 0.97. The three-to-thirteen-fold shortfall this atlas has been trying to explain
+  since round 135 was an artefact of the wrong IC50. The growth plate behaves exactly as the enzyme
+  predicts - CORR-136.
+  AND THE PUMP PROBLEM IS SOLVED THE OTHER WAY. The 100-microlitre models weigh 0.4 g, about 0.5 g
+  filled, which is 5.9 per cent of a weanling. MODEL 1006 RUNS FOR SIX WEEKS, so one implant at weaning
+  covers postnatal day 21 to 63 in a single surgery - round 137 conclusion that serial pumps were needed
+  is superseded.'
 quantitative:
 - parameter: 'SAMPLE SIZE - COMPUTED FROM THE RAW PER-ANIMAL VARIANCE OF THE EXACT ENDPOINT, STRAIN AND AGE'
   value: 'wild-type femur at 8 weeks: n = 12, mean 14.553 mm, SD 0.445, CV 3.06 per cent. n PER GROUP for
@@ -496,6 +522,90 @@ quantitative:
     therapeutic exposure - and the round-135 inference that endothall spares the CNS where LB-100 did not
     is restored to its original strength. NOTE ALSO the useful positive: at 15 mg/kg, around the LD50,
     survivors showed no hepatocellular enzyme leak at 24 hours.'
+- parameter: 'ROUND 138 - THE PP2A IC50 OF ENDOTHALL ITSELF IS 970 NANOMOLAR, TENFOLD ABOVE THE VALUE
+    THE ATLAS HAS BEEN USING - AND IT MAKES EVERYTHING FIT'
+  value: 'endothall IC50 against purified catalytic subunits: PP1 5000 nM, PP2A 970 nM, PP2B above 60000,
+    PP2C above 1000000 - PP2A-preferring by only 5-fold. For comparison cantharidin is PP1 473 and PP2A
+    40, cantharidic acid 562 and 53, palasonin 656 and 120. At 1 millimolar neither cantharidin nor
+    endothall touches PKA, phosphorylase kinase, AMP-activated protein kinase or MAP kinase'
+  unit: nanomolar
+  conditions: 'li1993 Table 4, read from the rendered page. Purified catalytic subunits at about 0.18 nM
+    for PP1 and 1.5 nM for PP2A, 20-minute preincubation at 30 degrees, average of two experiments. The
+    same paper identifies the cantharidin binding site of mouse liver as PP2A in its heterodimeric PP2A2
+    form, and reports the same binding site in brain cytosol.'
+  species: not_applicable
+  source_ref: li1993
+  uncertainty: 'THIS IS CORR-136 AND IT RESOLVES THE ROUND-135 PUZZLE RATHER THAN CREATING ONE. rollema2025
+    reports an endothall PP2A IC50 of 95 nanomolar; li1993 reports 970. A tenfold discrepancy between two
+    primary sources, different substrates and conditions - and li1993 is the more conventional enzymology,
+    with a cantharidin value of 40 nM that matches the wider literature. THE CONSEQUENCE IS THE
+    IMPORTANT PART: the in-tissue EC50 fitted from Figure 1F is 0.69 micromolar and the purified-enzyme
+    IC50 is 0.97, so THEY AGREE. The 3-to-13-fold shortfall the atlas has been trying to explain since
+    round 135 - penetration, Donnan, wrong phosphatase - was an artefact of using the wrong IC50. The
+    growth plate behaves exactly as the purified enzyme predicts. The atlas should carry 970 nM as the
+    primary value and flag 95 nM as discrepant.'
+- parameter: 'WHERE ENDOTHALL GOES IN THE BODY - TISSUE TO BLOOD RATIOS FROM THE PRIMARY TIME COURSE'
+  value: 'at 1 hour, cpm per 100 mg dry tissue: kidney 1070, blood 309, liver 242, lung 210, heart 135,
+    spleen 71, muscle 50, brain 43, fat 0. As tissue-to-blood ratios: KIDNEY 3.46, liver 0.78, lung 0.68,
+    heart 0.44, spleen 0.23, MUSCLE 0.16, BRAIN 0.14, FAT 0.00. All tissue levels returned to zero by 72
+    hours; excretion was 85 to 91 per cent faecal, 6 to 7 per cent urinary and 2.5 to 2.8 per cent as
+    expired carbon dioxide, with about 10 per cent of the dose absorbed'
+  unit: ratio to blood
+  conditions: 'epa_dwcd_endothall_1992, which reproduces Soo et al. 1967 Tables III-1 to III-4 in full -
+    six Wistar rats, 1 mg of ring-labelled carbon-14 endothall by gavage, about 5 mg/kg, specific activity
+    407 cpm per microgram. The rotated table page was re-OCRed after rotation and the key row checked
+    against the rendered image. Endothall was NOT secreted in milk in a separate lactation arm.'
+  species: rat
+  source_ref: epa_dwcd_endothall_1992
+  uncertainty: 'THE MUSCLE NUMBER IS THE MOST USEFUL THING HERE AND IT IS A PROXY, NOT A MEASUREMENT.
+    Cartilage was not sampled - it never has been - but muscle is the closest available analogue for a
+    high-water, uncharged, moderately perfused tissue, and it sees about a SIXTH of the blood
+    concentration. Cartilage, avascular and carrying 0.19 to 0.35 molar fixed negative charge, should see
+    less, which is the direction the Donnan calculation already predicted. CAVEATS: dry-weight
+    concentrations compared across tissues of different water content; a single 1-hour time point; values
+    transcribed by optical character recognition from a 1992 scan; and the kidney figure confirms active
+    secretion, which means the kidney number is about transport and not partition.'
+- parameter: 'VOLUME OF DISTRIBUTION AND CLEARANCE, DERIVED TWO INDEPENDENT WAYS FROM THAT TIME COURSE -
+    AND A SAFETY MARGIN THAT DOES NOT DEPEND ON THE ABSORBED FRACTION'
+  value: 'blood concentration at 1 hour 1.45 to 1.79 micrograms/mL, which is 7.8 to 9.5 micromolar.
+    Volume of distribution 0.20 to 0.34 L/kg. Clearance 48 to 107 mL/h/kg. Required infusion to hold 0.7
+    micromolar 0.19 to 0.41 mg/kg/day. MARGIN AGAINST THE ABSORBED CHRONIC NO-EFFECT DOSE: 2.4 to
+    3.7-fold at 0.7 micromolar, and 0.8 to 1.3-fold at 2 micromolar'
+  unit: L/kg, mL/h/kg, mg/kg/day, fold
+  conditions: 'DERIVED at round 138. Method A: Vd equals absorbed dose over blood concentration at 1
+    hour, with absorption 7 to 10 per cent and a dry blood fraction of 18 to 22 per cent. Method B:
+    clearance equals absorbed dose over area under the blood curve, trapezoidal from the 1, 2, 4, 6 and 8
+    hour points. THE MARGIN IS ALGEBRAICALLY INDEPENDENT OF THE ABSORBED FRACTION because F appears in
+    both the tolerated absorbed dose and in the clearance, and cancels: margin equals oral NOAEL times
+    AUC divided by target concentration times PK dose times 24.'
+  species: rat
+  source_ref: epa_dwcd_endothall_1992
+  uncertainty: 'THE F-CANCELLATION IS THE REASON THIS ROW IS WORTH MORE THAN ITS INPUTS. Every previous
+    version of this calculation was dominated by an absorbed fraction quoted anywhere between 1.2 and 10
+    per cent; that uncertainty is now formally removed from the margin. WHAT REMAINS: the dry-weight
+    conversion, which does NOT cancel and is worth about 20 per cent; the AUC truncated at 8 hours; a
+    9-point OCR row with one internally inconsistent value at 48 hours; rat toxicology read against a
+    mouse experiment; and the Donnan penalty, still outside the comparison. A 2.4 to 3.7-fold margin is a
+    reason to run the experiment, not a reason to expect it to work.'
+- parameter: 'THE PUMP PROBLEM IS SOLVED - ONE 100-SERIES IMPLANT COVERS THE WHOLE WINDOW'
+  value: 'the 100-microlitre models 1003D, 1007D, 1002, 1004 and 1006 are 1.5 by 0.6 cm with a COMPLETE
+    PUMP WEIGHT OF 0.4 g, about 0.5 g filled - 5.9 per cent of an 8.5 g weanling, against 15.3 per cent
+    for the 200-series. Model 1006 delivers 0.08 microlitres/hour for 6 WEEKS, so implanted at weaning it
+    covers postnatal day 21 to 63 in ONE surgery. Reservoir concentration needed to start at 0.2 to 0.4
+    mg/kg/day is 0.9 to 1.8 mg/mL against a solubility of 100 g/L'
+  unit: grams, per cent of body weight, mg/mL
+  conditions: 'alzet_pump_specs, the manufacturer dimensions and nominal-performance tables. 100-series:
+    1003D 1.0 microlitre/hour for 3 days, 1007D 0.5 for 1 week, 1002 0.25 for 2 weeks, 1004 0.11 for 4
+    weeks, 1006 0.08 for 6 weeks. 200-series: 2001D 8.0 for 1 day through 2006 0.15 for 6 weeks, all at
+    1.1 g and 200 microlitres.'
+  species: mouse
+  source_ref: alzet_pump_specs
+  uncertainty: 'ROUND 137 CONCLUDED THAT SERIAL SURGERIES WOULD BE NEEDED; THAT IS NOW WRONG AND THE
+    ANSWER IS SIMPLER. One model 1006 at weaning does the whole study. TWO RESIDUAL ISSUES. The fixed
+    output means the dose falls 2.8-fold as the mouse triples in mass - which front-loads exposure into
+    the fastest-growing window and is arguably the right shape, but it must be reported as a dose
+    TRAJECTORY and not a dose. And the 6-week nominal duration assumes the pump behaves at 37 degrees for
+    42 days with this particular solute, which is unverified for endothall.'
 - parameter: 'THE ELEVEN MISSING ITEMS, ORDERED BY HOW MUCH EACH MOVES THE DESIGN'
   value: 'one blocking, three that set the dose, three that set the interpretation, four that set the
     logistics'
@@ -643,7 +753,18 @@ key_refs:
 - ref_id: alzet_pump_specs
   year: 2026
   type: regulatory
-  role: the pump mass that rules out a single long-duration implant at weaning
+  role: the pump masses - 200-series too heavy for a weanling, 100-series model 1006 covers the whole
+    window in one implant
+- ref_id: li1993
+  year: 1993
+  type: primary
+  role: the definitive phosphatase selectivity of endothall itself - PP2A 970 nM, PP1 5000, PP2B and
+    PP2C clean - which makes the fitted in-tissue EC50 and the enzyme IC50 agree
+- ref_id: epa_dwcd_endothall_1992
+  year: 1992
+  type: regulatory
+  role: reproduces the Soo 1967 per-organ time course including blood, muscle and fat, from which volume
+    of distribution and clearance are derived
 open_questions:
 - g_l12_endothall_exposure_and_juvenile_tolerability
 - g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor

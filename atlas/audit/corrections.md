@@ -5439,3 +5439,45 @@ existed: *copy accessions from search output; never type them.* **Rule hardened:
 passed unless the identifier was produced by a search in the same session, and the tool's echoed
 title must be read back against the intended paper before the next command runs. The near-miss cost here
 was zero only because the echo is printed.
+
+## CORR-136 — the endothall PP2A IC₅₀ the atlas has been using is tenfold too low, and correcting it makes the whole model fit (round 138)
+
+Rounds 134–137 used **95 nM** as endothall's PP2A IC₅₀, from `rollema2025`. `li1993` Table 4, against
+purified catalytic subunits, gives:
+
+| Compound | PP1 | PP2A | PP2B | PP2C |
+|---|---|---|---|---|
+| Cantharidin | 473 nM | 40 nM | >30,000 | >10⁶ |
+| Cantharidic acid | 562 | 53 | ND | >10⁶ |
+| Palasonin | 656 | 120 | ND | >10⁶ |
+| **Endothall** | **5000** | **970** | **>60,000** | **>10⁶** |
+
+A tenfold disagreement between two primary sources. `li1993` is the more conventional enzymology —
+purified catalytic subunits, 20-min preincubation, and a cantharidin value of 40 nM that matches the
+wider literature — so the atlas now carries **970 nM** and flags 95 nM as discrepant.
+
+**The correction resolves a puzzle rather than creating one.** The in-tissue EC₅₀ fitted from Figure 1F is
+**0.69 µM**; the purified-enzyme IC₅₀ is **0.97 µM**. They agree. The "3–13-fold shortfall between enzyme
+and tissue" that rounds 135–137 attributed to penetration, Donnan exclusion, or the wrong phosphatase
+**was an artefact of the wrong IC₅₀**. The growth plate behaves exactly as the purified enzyme predicts.
+
+Two further things fall out. Endothall is **PP2A-preferring by only 5-fold** over PP1 (cantharidin is
+12-fold), so the atlas's family-level target statement remains the correct resolution — and endothall is
+*less* selective than cantharidin, not more. And it is clean against PP2B, PP2C, PKA, phosphorylase
+kinase, AMPK and MAP kinase, so the off-target surface outside the PPP family is genuinely narrow.
+
+**Rule tightened:** where a potency value drives a dose calculation, it must be sourced from a
+dedicated enzymology paper, not from a methods-development or formulation paper that reports it in
+passing. `rollema2025` is a hydrolysis-kinetics study; its IC₅₀ was incidental.
+
+## CORR-137 — round 137's "serial pumps" conclusion is superseded (round 138)
+
+Round 137 concluded, from the 200-series pump weighing 1.1 g (≈1.3 g filled) against an 8.5 g weanling,
+that the design needed **serial 100-series implants**. The full manufacturer table shows the 100-µL
+models (1003D, 1007D, 1002, 1004, **1006**) all weigh **0.4 g** complete — 5.9 % of a weanling filled —
+and that **model 1006 runs 0.08 µL/h for six weeks**. One implant at weaning therefore covers PND21–63 in
+a single surgery. No serial surgery, no later start.
+
+Not an error of fact — the 200-series numbers were right — but a conclusion drawn from a partial table
+when the complete one was one request away. **Rule:** before concluding that a constraint forces a
+redesign, check whether the constraint applies to the whole product family or only the variant in hand.

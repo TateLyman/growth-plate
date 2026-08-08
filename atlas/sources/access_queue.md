@@ -377,3 +377,50 @@ the atlas has never been able to answer for the active species rather than the p
 2. What is the **cartilage** concentration at a given plasma concentration? Predicted 14–30 % of free
    plasma; never measured.
 3. Does continuous endothall change a **bone length** in a growing animal?
+
+---
+
+## Round 138 — the P0 is answered by derivation, not by fetching
+
+The project owner judged MRID 42169502 unobtainable. That is almost certainly right — it is a 381-page
+unpublished industry report with no cleared review. **The information in it has now been obtained
+another way.** The 1992 **EPA Drinking Water Criteria Document for Endothall** (EPAX 9205-0075) — a
+scanned 76-page document, OCRed by this atlas — reproduces **Soo et al. 1967 Tables III-1 to III-4 in
+full**, including the per-organ ¹⁴C time course with **blood, muscle and fat**, which neither the RED
+nor the SERA assessment carried. From those tables:
+
+- **Vd = 0.20–0.34 L/kg** and **CL = 48–107 mL/h/kg**, derived two independent ways.
+- Blood **7.8–9.5 µM** one hour after 5 mg/kg orally.
+- Tissue:blood at 1 h — kidney **3.46**, liver 0.78, lung 0.68, heart 0.44, spleen 0.23, **muscle 0.16**,
+  **brain 0.14**, **fat 0.00**.
+- And the safety margin turns out to be **algebraically independent of the absorbed fraction**.
+
+So the P0 is closed on the parameters that mattered. What the MRID would still add — a true intravenous
+concentration–time curve, and the 15-day repeat-dose kinetics — would tighten the estimate but no longer
+changes the design. **It is demoted to P3.**
+
+### WHAT IS ACTUALLY LEFT
+
+| P1 | **rollema2025 full text** (Int J Pharm, PMID 39909155). | To adjudicate the tenfold IC₅₀
+disagreement with `li1993` — 95 nM versus 970 nM for endothall against PP2A. The atlas has taken li1993
+as primary (CORR-136), but that decision rests on reading only rollema2025's abstract. The methods and
+substrate would settle it. |
+
+| P2 | **A dry-weight fraction for rat whole blood**, or the Soo 1967 paper itself with wet-weight
+concentrations. | The one assumption in the Vd/CL derivation that does *not* cancel; worth about 20 % on
+the margin. Soo et al. 1967 has still not been located as a primary paper — SERA cites "Table III,
+p. 1020" without a journal that this atlas could resolve. |
+
+| P3 | **MRID 42169502** IV concentration–time curve and 15-day repeat-dose kinetics. | Would replace a
+derivation with a measurement. No longer blocking. |
+
+| P3 | **Pump behaviour at 37 °C over 42 days with endothall specifically** — stability and delivery-rate
+verification. | The only untested logistical assumption left in the protocol. |
+
+### AND THE THREE THINGS THAT ARE STILL BENCH WORK, UNCHANGED
+
+1. Does **endothall itself** block FGF-induced NPR2 dephosphorylation? Never tested — and now that the
+   atlas is recommending endothall over LB-100, this is the single highest-value experiment in the thread.
+2. **Cartilage concentration** at a given plasma concentration. Best proxy now available: muscle at 0.16
+   of blood, with a predicted further 3–7× Donnan penalty for a dianion in an anionic matrix.
+3. Does continuous endothall change a **bone length** in a growing animal.
