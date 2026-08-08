@@ -4758,3 +4758,40 @@ narrowing (the partition ceiling below), and one lead that failed verification a
 entered — the claim, seen only in a search-engine paraphrase, that isolated limb perfusion at 39.5 vs
 37 °C doubles platinum concentration in tumour tissue while tumour-free tissue does not gain. I could not
 resolve it to a primary source in Europe PMC and did not enter the number in any form.
+
+## CORR-113 — I read the atlas's own grading scheme backwards while writing the node whose job is to index it
+
+Building the dead/settled/live ledger, I treated every claim graded **E** as a dead direction, and wrote a
+"WHAT IS DEAD" section listing eight entries of which five were E-graded: gp130/STAT3 as a lever, the
+PAPP-A axis, hypertrophic-zone IGF restraint relief, a PTHrP analogue, sGC stimulators, and the claim that
+delaying the growth program is height-neutral.
+
+`atlas/schema/vocab.yaml` defines the scale, and it does not say what I assumed:
+
+- **E** — *plausible inference from adjacent biology; explicitly flagged as inference*
+- **X** — *commonly repeated in reviews but not traceable to primary data*
+
+Neither is a refutation grade. **E marks the absence of primary evidence, not the presence of contrary
+evidence.** The correct response to an E-graded lever claim is a measurement; the response I had encoded
+was avoidance. Had the ledger gone in as drafted, it would have retired five directions on the strength of
+nobody having tested them — inside the one node future rounds will consult *instead of* re-deriving, which
+is the worst possible place to put that error.
+
+Two things made it: I inferred the scale from how grades were *used* in `claim_grades` prose (where E often
+appears attached to a basis beginning "NO") rather than reading the definition, and the grades genuinely
+are used that way in places — an action claim with only inference-level support is correctly not actionable,
+which reads like a verdict. The distinction is between *not actionable now* and *closed*.
+
+**Fixed** by splitting the ledger into DEAD ON CONTRARY EVIDENCE (four entries, each with a named negative
+experiment or human ceiling) and NOT DEAD, JUST UNSUPPORTED (five entries, each a measurement opportunity).
+
+**Standing rule:** before using any controlled vocabulary — grades, tiers, types, species, tractability —
+read its definition in `atlas/schema/vocab.yaml`. Inferring a scale from usage is how a scale gets
+inverted, and this is the second inversion in the project after CORR-100 read an Open Targets result
+backwards. Both came from skipping the definition and reading the output.
+
+Noted alongside: the tractability scale in `gaps.yaml` runs 1 = most tractable (answerable from existing
+records) to 5 = requires a new animal study, which I also established by inspection this round rather than
+from the vocab; and a ref_id I substituted by blind `sed` (`accomplish2023` → `savarirayan2023`) turned out
+to be correct, but I confirmed it only afterwards. Verifying a citation after writing it is the same
+ordering error in a smaller form.
