@@ -379,6 +379,73 @@ def window():
 
 
 
+
+# --------------------------------------------------------------------------
+# 10. ROUND 137 - THE HALF-LIVES ARE ORAL, SO CLEARANCE IS ONLY BOUNDED
+# --------------------------------------------------------------------------
+def bounded_window():
+    print("=" * 78)
+    print("10. THE CORRECTED WINDOW - AN UPPER BOUND ON HALF-LIFE, NOT A VALUE")
+    print("=" * 78)
+    print("  CORR-133. The EPA toxicology chapter (epa_endothall_tox_chapter_2004),")
+    print("  which is the PRIMARY review of MRID 42169502, says the 1.8 / 2.5 / 13.9 hour")
+    print("  blood half-lives are from ORAL dosing. Only ONE intravenous dose was given,")
+    print("  0.9 mg/kg, and the only IV result reported is 69 per cent urinary excretion.")
+    print("  A secondary source called them intravenous; they are not.\n")
+    print("  CONSEQUENCE: with 5-7 per cent oral absorption the oral curve is probably")
+    print("  ABSORPTION-limited, so 1.8 h is an UPPER BOUND on the true elimination")
+    print("  half-life at low dose - which makes clearance a LOWER bound and the required")
+    print("  infusion rate a LOWER bound too. The dose-dependence (1.8 -> 13.9 h) is then")
+    print("  most simply prolonged absorption, NOT saturable elimination.\n")
+    for vd in (0.20, 0.26):
+        cl = 0.693 * vd / 1.8 * 1000
+        row = f"    Vd {vd:.2f} L/kg, t1/2 <= 1.8 h -> CL >= {cl:5.1f} mL/h/kg:"
+        for tgt in (0.7, 2.0):
+            row += f"   {tgt} uM needs >= {tgt*MW_ENDOTHALL/1000*cl*24/1000:5.3f} mg/kg/day"
+        print(row)
+    print()
+    print("    Against the MEASURED oral absorption of 5-7 per cent:")
+    for f in (0.05, 0.07):
+        print(f"      absorption {100*f:.0f}%: 2-year rat NOAEL 8 mg/kg/d -> absorbed "
+              f"{8*f:.2f}; LOAEL 16 -> {16*f:.2f} mg/kg/day")
+    print()
+    print("  READ-OFF, AND IT IS TIGHTER THAN ROUND 136 RATHER THAN LOOSER:")
+    print("    0.7 uM (the fitted EC50)  needs 0.24-0.31 mg/kg/day")
+    print("    chronic absorbed NO-EFFECT dose is 0.40-0.56 mg/kg/day")
+    print("    -> a margin of about 1.3 to 2.3-fold. Thin, but the right side of one.")
+    print("    2 uM (near-maximal)        needs 0.69-0.89 mg/kg/day")
+    print("    chronic absorbed LOAEL is  0.80-1.12 mg/kg/day")
+    print("    -> no margin at all. The near-maximal effect is not reachable safely.\n")
+
+
+# --------------------------------------------------------------------------
+# 11. THE PUMP DOES NOT FIT THE ANIMAL  (round 137)
+# --------------------------------------------------------------------------
+def pump_mass():
+    print("=" * 78)
+    print("11. THE PUMP MASS CONSTRAINT - RESOLVED, AND IT BITES")
+    print("=" * 78)
+    print("  MEASURED (alzet_pump_specs): models 2004 and 2006 are both 200-series,")
+    print("  3.0 x 0.7 cm, COMPLETE PUMP WEIGHT 1.1 g, 200 uL reservoir. Filled with a")
+    print("  dilute aqueous solution the manufacturer equates 200 uL to about 200 mg, so")
+    print("  a filled pump is about 1.3 g.\n")
+    for w, label in ((8.5, "PND21 weanling"), (12.5, "PND28"), (17.0, "PND35"), (25.0, "adult")):
+        print(f"    {label:<16} {w:5.1f} g -> filled 2004/2006 is "
+              f"{100*1.3/w:5.1f}% of body weight"
+              f"{'   FAILS the 10% convention' if 1.3/w > 0.10 else '   passes'}")
+    print()
+    print(f"  The 10 per cent limit is met at {1.3/0.10:.0f} g, which is about PND28-30.")
+    print("  SO THE 28- AND 42-DAY PUMPS CANNOT BE IMPLANTED AT WEANING. Three options:")
+    print("    (a) start at PND28 with a model 2004 and accept losing the first week;")
+    print("    (b) serial 100-series pumps from PND21 - martiniova2011 used a model 1002")
+    print("        in mice - which needs one extra surgery but covers the whole window;")
+    print("    (c) abandon pumps. Drinking water is out: oral absorption is 5-7 per cent")
+    print("        and the oral route carries the gastric lesion that sets the ceiling.")
+    print("  OPTION (b) IS THE DESIGN. The 100-series filled mass is still unmeasured")
+    print("  here and is the one remaining logistical number.\n")
+
+
+
 def main():
     power_table()
     velocity_vs_final()
@@ -389,6 +456,8 @@ def main():
     pump_feasibility()
     fig1f_fit()
     window()
+    bounded_window()
+    pump_mass()
     print("=" * 78)
     print("END. Every ASSUMED value above is an item on the get-list in")
     print("nodes/L12_pharmacology_as_mechanistic_probe/"

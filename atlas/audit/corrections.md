@@ -5376,3 +5376,66 @@ form, and its two supports are unchanged: endothall is below a 20 ng/g brain lim
 reach 43–60 ng/g, and EPA's HIARC concluded there is **no neurotoxicity concern** across the whole
 guideline battery. The claim is now: *at non-lethal exposures* endothall is expected to spare the CNS
 where LB-100 did not. Graded E, not C.
+
+## CORR-133 — "saturable elimination" was built on a secondary source that mislabelled oral half-lives as intravenous (round 137)
+
+Round 136 read, in `sera_endothall_2009`: *"a dose-dependant increase in plasma half-lives for male rats
+after i.v. administration: 1.8 hours at a dose of 0.9 mg/kg bw and 13.9 hours at a dose of 4.5 mg/kg bw."*
+I recorded **saturable elimination** and built the clearance estimate on it.
+
+The **primary** EPA review of the same study (`epa_endothall_tox_chapter_2004`, TXR 0052293, reviewing
+MRID 42169502) says: *a single **i.v.** dose at 0.9 mg/kg, single **oral** doses at 0.9, 4.5 or 9.0 mg/kg,
+and a 15-day multiple oral dose.* **"At an oral 0.9 mg/kg dose, blood half-life elimination — 1.8 hrs in
+males, 2.5 hrs females. At 4.5 mg/kg half-life — 13.9 hours in males."** The only intravenous result
+reported is 69 % urinary excretion.
+
+So the half-lives are **oral**. In a compound absorbed at 5–7 %, an oral concentration–time curve is
+most simply **absorption-limited** — and the female "double blood peak" at 4.5 mg/kg says the same. The
+saturation claim is withdrawn.
+
+**It does not weaken the design; it tightens it.** 1.8 h is now an *upper bound* on the true elimination
+half-life, so clearance is a *lower* bound and the required infusion rate is a *lower* bound. The window
+recomputes to: EC₅₀-level exposure needs ≥0.24–0.31 mg/kg/day against an absorbed chronic no-effect dose
+of 0.40–0.56 (margin 1.3–2.3×); near-maximal exposure needs ≥0.69–0.89 against an absorbed LOAEL of
+0.80–1.12 (no margin).
+
+**Also unresolved:** SERA derives a whole-body elimination rate of 0.325 day⁻¹ and an accumulation factor
+of 3.6, while the primary review states the compound "was not bioaccumulated" and was "mostly undetectable
+in the tissue" by 48 h. Both are now in the atlas, flagged.
+
+**Rule tightened:** a regulatory *review* is a secondary source even when it is the most detailed one
+available. Where a review paraphrases a study design, the design must be read from the primary review or
+the study itself before any parameter is derived from it.
+
+## CORR-134 — a second transcription error in the same secondary source, and it reverses CORR-132 (round 137)
+
+SERA's Appendix 1 Table 9 lists: *"Mice — 10 mg/kg bw endothall monohydrate — Extreme liver enlargement in
+45 minutes… Lethargy and decreased respiration. Death within 60 to 90 minutes. (Graziano and Casida
+1987)."* CORR-132 used that to downgrade the inference that endothall spares the CNS.
+
+`graziano1987`, read in full: **endothall was given at 75 mg/kg and cantharidic acid at 10 mg/kg**, "chosen
+so that the time to death was the same for each compound (60–90 min)." SERA attached cantharidic acid's
+dose to endothall.
+
+Endothall's IP LD₅₀ in mice is 14 mg/kg (`kawamura1990`), so **75 mg/kg is 5.4× the LD₅₀** — lethargy at
+five times a lethal dose says nothing about CNS effects at a therapeutic exposure. **CORR-132 is
+reversed** and the round-135 inference is restored to its original strength: endothall is below a 20 ng/g
+brain limit while ester prodrugs reach 43–60 ng/g, and EPA's HIARC found no neurotoxicity concern across
+the guideline battery. Useful positive from the same paper: at **15 mg/kg IP**, around the LD₅₀, survivors
+showed no triglyceride or serum-GPT change at 24 h.
+
+## CORR-135 — I invented two PMIDs, again (round 137)
+
+Adding `graziano1987` and `kawamura1990` I typed PMIDs **3623780** and **2133087** from memory rather than
+from a search. Both are real papers and both are the wrong ones — `addref.py` happily created
+`vago1987` ("Is ventilatory anaerobic threshold a good index of endurance capacity?") and `nagata1990`
+("Substrate specificities of rabbit lung and porcine liver flavin-containing monooxygenases"). Caught
+immediately on reading the tool output, both removed while still uncited, and the correct records added
+after a title search: **2955551** (Graziano & Casida) and **2133079** (Kawamura et al.), plus **3758548**
+(Gaines & Linder).
+
+This is the third instance of the same failure — CORR-117, CORR-119, and now this. The rule already
+existed: *copy accessions from search output; never type them.* **Rule hardened:** no `--pmid` may be
+passed unless the identifier was produced by a search in the same session, and the tool's echoed
+title must be read back against the intended paper before the next command runs. The near-miss cost here
+was zero only because the echo is printed.

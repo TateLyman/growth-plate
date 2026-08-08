@@ -334,3 +334,46 @@ force a redesign. |
    calculation predicts 14–30 % of free plasma; nobody has measured it for this or any compound of
    this class.
 3. Does continuous endothall change a **bone length** in a growing animal? That is the experiment.
+
+---
+
+## Round 137 — get-list after five more documents
+
+**RESOLVED:** the ALZET pump masses (1.1 g empty, ~1.3 g filled — the 28/42-day models **fail** the
+10 %-of-body-weight limit until ~13 g / PND28-30); Gaines & Linder (endothall **was never tested in
+weanlings**); Kawamura (IP LD₅₀ 14 mg/kg confirmed, plus the r = 0.95 toxicity-versus-binding
+correlation); Graziano (endothall was dosed at **75** mg/kg, not 10 — SERA mis-transcribed); and the EPA
+Toxicology Chapter, which shows the dose-dependent half-lives are **oral**, not intravenous.
+
+### STILL OPEN — now only four things, and two of them are small
+
+| P0 | **Volume of distribution and clearance of endothall after the intravenous dose** — MRID 42169502
+(Hallifax 1990, *Endothall Technical: Absorption, Distribution, Metabolism and Excretion Study in the
+Rat*, Life Science Research, Lab Project 89/0122 / PSV/026, **381 pages**). | Still the largest single
+source of spread. The EPA Toxicology Chapter summarises this study but reports only excretion for the IV
+arm. The 381-page **full study report**, or the EPA **Data Evaluation Record** for it, would give the
+plasma concentration–time curve after 0.9 mg/kg IV — from which Vd, CL and the true elimination half-life
+all fall out, and the 1.3–2.3× margin becomes a real number instead of a bound. Route: FOIA to EPA OPP
+for MRID 42169502, or the DER if one exists. |
+
+| P1 | **ALZET 100-series filled mass** (models 1002 and 1004 — 0.25 µL/h × 14 d and 0.11 µL/h × 28 d,
+100 µL reservoir). | The design now needs serial 100-series pumps from weaning because the 200-series is
+too heavy. `martiniova2011` used a 1002 in mice, so it is feasible in an adult; the number needed is the
+filled mass against an 8.5 g weanling. Same manufacturer table as the 2004/2006 data already supplied. |
+
+| P2 | **Soo et al. 1967, Table III** — the per-organ ¹⁴C time course in rat. | Unchanged from round 135.
+Now the only remaining source for tissue:plasma ratios, and the check on both the kidney-concentration
+story and the SERA-versus-EPA disagreement about whether endothall accumulates. |
+
+| P3 | **Li, Mackintosh & Casida 1993**, *Protein phosphatase 2A and its [³H]cantharidin/[³H]endothall
+thioanhydride binding site* (PMID 8240393). | Turned up while searching for Kawamura. This is the paper
+that identifies the Kawamura binding site **as PP2A** and gives inhibitor specificity — it would tell us
+which PPP family members endothall itself hits and at what IC₅₀, which is the one selectivity question
+the atlas has never been able to answer for the active species rather than the prodrug. |
+
+### UNCHANGED — the three things no document can answer
+
+1. Does **endothall itself** block FGF-induced NPR2 dephosphorylation? Never tested.
+2. What is the **cartilage** concentration at a given plasma concentration? Predicted 14–30 % of free
+   plasma; never measured.
+3. Does continuous endothall change a **bone length** in a growing animal?

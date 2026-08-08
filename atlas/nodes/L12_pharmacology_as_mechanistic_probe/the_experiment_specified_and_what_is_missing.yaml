@@ -78,7 +78,33 @@ summary: 'THE EXPERIMENT. Wild-type juvenile mice, both sexes, CONTINUOUS delive
   WHAT IS STILL AGAINST IT. Every chronic LOAEL in three species is DECREASED BODY WEIGHT; the only
   skeletal observation anywhere in the endothall dossier is DELAYED ossification in fetuses of dams dosed
   to maternal toxicity; and the pKa values, now known at 4.32 and 6.22, confirm 94 per cent dianion at
-  pH 7.4 and therefore confirm the cartilage exclusion penalty rather than removing it.'
+  pH 7.4 and therefore confirm the cartilage exclusion penalty rather than removing it.
+  ROUND 137 - FIVE MORE DOCUMENTS, TWO CORRECTIONS TO MY OWN WORK, AND THE DESIGN IS NOW CONSTRAINED
+  RATHER THAN OPEN.
+  (1) THE HALF-LIVES ARE ORAL. The EPA Toxicology Chapter, which is the primary review of the study SERA
+  paraphrased, says only ONE intravenous dose was given (0.9 mg/kg, 69 per cent urinary) and that the
+  1.8, 2.5 and 13.9 hour blood half-lives are from ORAL dosing. So round 136 saturable-elimination claim
+  is withdrawn - CORR-133 - and in a compound absorbed at 5 to 7 per cent the oral curve is probably
+  absorption-limited. USEFULLY, that makes 1.8 hours an UPPER BOUND on elimination half-life, so the
+  required infusion rate becomes a LOWER bound and the window calculation gets TIGHTER: holding the
+  fitted EC50 of 0.7 micromolar needs at least 0.24 to 0.31 mg/kg/day against an absorbed chronic
+  no-effect dose of 0.40 to 0.56 - a margin of 1.3 to 2.3-fold. Holding 2 micromolar needs 0.69 to 0.89
+  against an absorbed LOAEL of 0.80 to 1.12 - no margin at all. THE HALF-MAXIMAL EFFECT IS DESIGNABLE
+  AND THE NEAR-MAXIMAL ONE IS NOT.
+  (2) TOXICITY AND TARGET BINDING ARE THE SAME AXIS. kawamura1990 shows the potency of 18 endothall
+  analogues at the mouse liver binding site predicts their mouse lethality at r = 0.95 across 16
+  compounds. Within this chemotype you cannot medicinal-chemistry a window - the escape has to be spatial
+  (tissue targeting) or mechanistic (subunit selectivity the endothall pharmacophore does not have).
+  (3) THE PUMP DOES NOT FIT THE ANIMAL. Models 2004 and 2006 weigh 1.1 g empty and about 1.3 g filled;
+  the conventional 10-per-cent-of-body-weight limit is met only at 13 g, which is PND28-30. So serial
+  100-series pumps from weaning, or a later start - not a single long-duration pump.
+  (4) ENDOTHALL WAS NEVER TESTED IN WEANLINGS. gaines1986 tested 36 of 57 compounds in weanlings and
+  endothall was not one of them. Base rate across the survey: 18 compounds more toxic to adults, 4 more
+  toxic to weanlings.
+  (5) AND A SECONDARY SOURCE MIS-TRANSCRIBED A DOSE. SERA lists the Graziano study as endothall at 10
+  mg/kg; the paper gives endothall at 75 and CANTHARIDIC ACID at 10. Endothall lethargy is therefore a
+  5.4-times-LD50 phenomenon, CORR-134 reverses CORR-132, and the prediction that endothall spares the
+  CNS where LB-100 did not is restored.'
 quantitative:
 - parameter: 'SAMPLE SIZE - COMPUTED FROM THE RAW PER-ANIMAL VARIANCE OF THE EXACT ENDPOINT, STRAIN AND AGE'
   value: 'wild-type femur at 8 weeks: n = 12, mean 14.553 mm, SD 0.445, CV 3.06 per cent. n PER GROUP for
@@ -359,6 +385,117 @@ quantitative:
     the 3 to 7-fold cartilage exclusion penalty is real and not an artefact of an assumed charge state.
     Solubility is a non-issue - the pump needs 1.4 to 2.4 mg/mL against a solubility three orders of
     magnitude higher.'
+- parameter: 'ROUND 137 - THE DOSE-DEPENDENT HALF-LIVES ARE ORAL, NOT INTRAVENOUS, SO CLEARANCE IS
+    BOUNDED RATHER THAN KNOWN'
+  value: 'the EPA primary review states: a single INTRAVENOUS dose at 0.9 mg/kg, single ORAL doses at
+    0.9, 4.5 and 9.0 mg/kg, and a 15-day repeat oral dose at 0.9 and 9.0. Intravenous 0.9 mg/kg gave
+    excretion mainly urinary at 69 per cent. The blood half-lives of 1.8 hours in males and 2.5 in
+    females at 0.9 mg/kg, and 13.9 hours in males at 4.5 mg/kg, are ORAL. The female half-life at 4.5
+    could not be calculated because of a DOUBLE BLOOD PEAK'
+  unit: hours, per cent
+  conditions: 'epa_endothall_tox_chapter_2004, the Toxicology Disciplinary Chapter TXR 0052293 dated 21
+    December 2004, reviewing MRID 42169502 and 42200101 (Hallifax 1990, Life Science Research, 381 pages)
+    - Sprague-Dawley rats 5 per sex per dose, carbon-14 at ring positions 2 and 3. The chapter also states
+    the compound was NOT bioaccumulated, that tissue distribution at 24 hours was extensive but low with
+    under 10 per cent in the gastrointestinal tract, that by 48 hours it was mostly undetectable in
+    tissue, that biliary elimination was minor, and that excretion was as chemically unchanged endothall.'
+  species: rat
+  source_ref: epa_endothall_tox_chapter_2004
+  uncertainty: 'THIS IS CORR-133 AND IT CUTS TWO WAYS. Against: round 136 called this SATURABLE
+    ELIMINATION on the strength of a secondary source that labelled the half-lives intravenous. They are
+    oral, and in a compound with 5 to 7 per cent absorption an oral curve is most simply ABSORPTION-
+    limited - the double blood peak in females says the same thing - so the dose-dependence is probably
+    prolonged absorption and the saturation claim is withdrawn. For: 1.8 hours now functions as an UPPER
+    BOUND on the true elimination half-life at low dose, which makes clearance a LOWER bound and the
+    required infusion rate a LOWER bound, so the window calculation gets TIGHTER rather than looser. AND
+    NOTE THE CONTRADICTION WITH SERA: the Forest Service assessment derived a whole-body elimination rate
+    of 0.325 per day and an accumulation factor of 3.6, while this primary review says the compound was
+    not bioaccumulated and was mostly gone from tissue by 48 hours. Unresolved; the primary review wins
+    on provenance, the SERA figure on explicitness.'
+- parameter: 'THE CORRECTED WINDOW - THE EC50 IS REACHABLE UNDER THE CHRONIC NO-EFFECT DOSE, THE MAXIMUM
+    IS NOT'
+  value: 'holding the fitted EC50 of 0.7 micromolar needs AT LEAST 0.24 to 0.31 mg/kg/day; the absorbed
+    equivalent of the 2-year rat oral NOAEL of 8 mg/kg/day at the measured 5 to 7 per cent absorption is
+    0.40 to 0.56 - a margin of 1.3 to 2.3-fold. Holding 2 micromolar needs at least 0.69 to 0.89 against
+    an absorbed LOAEL of 0.80 to 1.12 - no margin'
+  unit: mg/kg/day
+  conditions: 'DERIVED at round 137 with the corrected interpretation. Clearance from 0.693 times a
+    volume of distribution of 0.20 to 0.26 L/kg divided by an upper-bound half-life of 1.8 hours. Chronic
+    NOAEL and LOAEL from the 2-year rat study; absorption fraction 5 to 7 per cent from the urinary
+    recovery after oral dosing in the same metabolism study.'
+  species: rat
+  source_ref: epa_endothall_tox_chapter_2004
+  uncertainty: 'A 1.3 TO 2.3-FOLD MARGIN IS NOT A THERAPEUTIC WINDOW, IT IS A HINT OF ONE, and three
+    things could close it. The Donnan penalty of 3 to 7-fold at the cartilage is still not inside this
+    comparison - if plasma has to be raised to compensate, the margin disappears. The volume of
+    distribution is still assumed. And the comparison runs rat chronic toxicity against a mouse
+    experiment. WHAT IT DOES ESTABLISH is a rank order that has never been available before: the
+    concentration that half-maximally relieves the FGF block is a smaller ask than the concentration
+    that produced no effect in a two-year study, whereas the concentration for a near-maximal effect is
+    not. That is a designable experiment and an undesignable one, separated.'
+- parameter: 'TOXICITY AND TARGET BINDING ARE THE SAME AXIS IN THIS CHEMOTYPE - r = 0.95 ACROSS 16
+    ANALOGUES'
+  value: 'endothall dicarboxylic acid IP LD50 in mice 14 mg/kg, the anhydride 4.0, the thioanhydride
+    0.31. A high-affinity binding site in mouse liver cytosol has apparent Kd 32 nanomolar and Bmax 2.8
+    pmol/mg protein with over 95 per cent specific binding, and the potency of 18 endothall analogues at
+    that site PREDICTS THEIR MOUSE TOXICITY with r = 0.95 for n = 16 - the same relationship holding for
+    cantharidin at r = 0.83, n = 15'
+  unit: mg/kg, nanomolar, correlation coefficient
+  conditions: 'kawamura1990, read in full. The radioligand is tritiated endothall thioanhydride. The
+    correlation fails for most thioanhydrides, which the authors attribute to their hydrolytic stability,
+    and endothall thioanhydride at a lethal dose occupies only 24 per cent of the liver site while
+    dimethylendothall anhydride occupies 75 to 80 - so the thioanhydride is suggested to act elsewhere.'
+  species: mouse
+  source_ref: kawamura1990
+  uncertainty: 'THIS IS THE MOST STRATEGICALLY IMPORTANT RESULT OF THE ROUND AND IT IS BAD NEWS FOR
+    MEDICINAL CHEMISTRY. If lethality across a 16-compound series tracks binding at the phosphatase site
+    with r = 0.95, then WITHIN THIS CHEMOTYPE potency and toxicity cannot be separated by making a better
+    analogue - the very thing that makes a compound good at the target makes it good at killing. The
+    escape routes are therefore not chemical but spatial: tissue targeting, local delivery, or a
+    subunit-selective mechanism that the endothall pharmacophore does not have. CAVEATS: the binding site
+    was characterised as a liver cytosol site rather than identified as PP2A in this paper, though the
+    same group later did that (Li, Mackintosh and Casida 1993); and acute lethality is not chronic
+    tolerability, so the correlation constrains the acute axis specifically.'
+- parameter: 'ENDOTHALL WAS NEVER TESTED IN WEANLINGS - AND WHERE OTHER COMPOUNDS WERE, WEANLINGS WERE
+    MOSTLY THE LESS SENSITIVE'
+  value: 'in the Gaines and Lindner survey of 57 pesticides, endothall appears only as ADULT oral LD50 57
+    mg/kg in males and 46 in females with dermal above 1000 in both; it is NOT among the 36 compounds
+    also tested in weanlings. Across the whole survey, 18 compounds were more toxic to the adult and 4
+    more toxic to the weanling'
+  unit: mg/kg and counts
+  conditions: 'gaines1986, Table 2 read from the rendered page. Sherman rats. Weanling rows exist for
+    chlorothalonil, cyhexatin, deltamethrin, dicamba, dinoseb and others, but not for endothall.'
+  species: rat
+  source_ref: gaines1986
+  uncertainty: 'A GET-LIST ITEM CLOSED WITH A NEGATIVE, AND THE NEGATIVE MATTERS because the experiment
+    doses weanlings and because the LB-100 deaths in fenton2023 were in weanlings. THE BASE RATE IS MILDLY
+    REASSURING - 18 to 4 in favour of weanlings being the more resistant - but it is a base rate across
+    unrelated chemistries, and the four exceptions show it is compound-specific. For a compound whose
+    dose-limiting effects are portal-of-entry irritation and renal tubular handling, both of which differ
+    in an immature animal, extrapolating the adult LD50 to a weanling is an assumption the design should
+    test with a small pilot rather than inherit.'
+- parameter: 'THE 10 MG/KG FIGURE ATTRIBUTED TO ENDOTHALL IN A SECONDARY SOURCE IS CANTHARIDIC ACID -
+    ENDOTHALL WAS GIVEN AT 75'
+  value: 'endothall 75 mg/kg and cantharidic acid 10 mg/kg intraperitoneally in adult male Swiss-Webster
+    mice, doses chosen to equalise time to death at 60 to 90 minutes. Both caused lethargy within 20
+    minutes, slower and deeper breathing progressing to laboured breathing, liver weight to 136 per cent
+    of control and hepatic haemoglobin to 200 per cent, glycogen down 47 to 67 per cent, blood glucose up
+    36 per cent. At a LOWER dose - endothall 15 mg/kg - there was NO significant change in hepatic
+    triglycerides or serum GPT at 24 hours'
+  unit: mg/kg and per cent of control
+  conditions: 'graziano1987, read in full. No evidence of reactive intermediates, no change in hepatic
+    glutathione or microsomal lipid peroxidation, and no effect on mitochondrial Mg-ATPase in vitro or in
+    vivo - the authors conclude the compounds act directly and that the primary lesion is not
+    mitochondrial.'
+  species: mouse
+  source_ref: graziano1987
+  uncertainty: 'THIS IS CORR-134 AND IT REVERSES CORR-132. The SERA appendix table lists this study as
+    "Mice, 10 mg/kg endothall monohydrate" with the liver and lethargy findings; the paper says endothall
+    was 75 mg/kg and CANTHARIDIC ACID was 10. Endothall lethargy therefore occurs at 5.4 TIMES its
+    intraperitoneal LD50 of 14 mg/kg, which says nothing about central nervous system effects at a
+    therapeutic exposure - and the round-135 inference that endothall spares the CNS where LB-100 did not
+    is restored to its original strength. NOTE ALSO the useful positive: at 15 mg/kg, around the LD50,
+    survivors showed no hepatocellular enzyme leak at 24 hours.'
 - parameter: 'THE ELEVEN MISSING ITEMS, ORDERED BY HOW MUCH EACH MOVES THE DESIGN'
   value: 'one blocking, three that set the dose, three that set the interpretation, four that set the
     logistics'
@@ -485,6 +622,28 @@ key_refs:
   type: regulatory
   role: the round-136 document that answered the blocking item - endothall own pharmacokinetics, the pKa
     values, the renal-secretion mechanism, the parenteral lethality, and the one skeletal observation
+- ref_id: epa_endothall_tox_chapter_2004
+  year: 2004
+  type: regulatory
+  role: the PRIMARY review of the metabolism study, which shows the dose-dependent half-lives are oral
+    and not intravenous - CORR-133
+- ref_id: kawamura1990
+  year: 1990
+  type: primary
+  role: toxicity tracks target binding at r = 0.95 across the chemotype, so the window cannot be opened
+    by analogue design
+- ref_id: gaines1986
+  year: 1986
+  type: primary
+  role: endothall was never tested in weanlings, and the survey base rate for weanling sensitivity
+- ref_id: graziano1987
+  year: 1987
+  type: primary
+  role: the 75 mg/kg dose that a secondary source recorded as 10 - CORR-134
+- ref_id: alzet_pump_specs
+  year: 2026
+  type: regulatory
+  role: the pump mass that rules out a single long-duration implant at weaning
 open_questions:
 - g_l12_endothall_exposure_and_juvenile_tolerability
 - g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
