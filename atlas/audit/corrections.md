@@ -5122,3 +5122,49 @@ transport model *with* an uptake term and settle the co-fitted velocity directly
 availability statement, supplementary endpoint empty. That remains the only way to measure v rather than
 infer it — but it no longer changes the decision, because even the most favourable velocity in the range
 yields ~2× at best.
+
+## CORR-123 — the phosphatase behind FGF-driven NPR2 dephosphorylation is CONTESTED, the atlas held only one side, and the side it held is the one that justified the tool compound
+
+`fgfr3_npr2_crosstalk` records: *"Nor is the phosphatase identified — Shuhaibar 2017 infers only a
+PPP-family phosphatase, unnamed, from 100 µM cantharidin."* That is one of two published attempts, and the
+other one reaches the opposite conclusion.
+
+**robinson2017, read in full this round:** *"Phos-tag analysis indicated that 10 µM cantharidin did NOT
+inhibit the dephosphorylation (Fig. S2). Cantharidin inhibits PPP1, PPP2, PPP4, PPP5, and PPP6, but not
+PPP3 or non-PPP family phosphatase, so lack of effect of cantharidin on the FGF-induced dephosphorylation
+suggests that a phosphatase OTHER THAN PPP1, 2, 4, 5, or 6 causes the dephosphorylation."*
+
+So shuhaibar2017 (intact mouse tibia, 100 µM cantharidin) says PPP-family; robinson2017 (rat chondrosarcoma
+cells, 10 µM cantharidin) says **not** PPP1/2/4/5/6. The concentrations differ tenfold and the preparations
+differ, so this may be reconcilable — but the atlas presented the PPP conclusion as the settled state and
+did not record that the same group's other paper contradicts it.
+
+**Why it matters more than a footnote: LB-100 is a PP2A inhibitor, i.e. PPP2.** The atlas carries LB-100 as
+the tool compound for this branch on the stated mechanism of "counteracting FGF-induced NPR2
+dephosphorylation." If robinson2017 is right that PPP2 is *not* the enzyme, then **LB-100's 1.30-fold
+elongation effect is not acting through the mechanism the atlas attributes it to**, and its rationale for
+this branch collapses even though the observed effect stands. The compound may still work; the reason given
+for expecting it to work does not follow.
+
+**Logged as a contradiction rather than resolved**, because 10 µM versus 100 µM cantharidin in cells versus
+intact tibia is a real methodological gap and neither paper is obviously wrong.
+
+## CORR-124 — I invented a caveat about wagner2021 that the paper does not support
+
+The node I wrote last round said of the wild-type-background figures: *"the wild-type gain is 4.3 per cent
+in males and 5.0 in females but the node source records that GC-B(7E) lengthened bones in FEMALES only, so
+the male figure and the female figure may not both be significant."*
+
+**Both figures are fine.** Reading wagner2021 in full, the two statements come from different experiments at
+different ages and different gene dosages:
+
+- The sex-specific claim is the **2-week-old, single-allele** analysis: *"female but not male GC-B(7E) mice
+  had longer bones and larger hypertrophic zones."*
+- The 4.3%/5.0% figures are the **16-week, homozygous GC-B(7E/7E) on a WT FGFR3 background**, quoted for
+  both sexes in the same sentence that contrasts them with 12.6%/7.9% on the G380R background.
+
+I flagged a conflict that exists only if the two are conflated, which is what my own summary had done. The
+caveat is withdrawn and replaced with the gene-dosage data the paper actually supports: naso-anal length
+rose **1.7% (male) and 3.3% (female) for one GC-B-7E allele, and 5.4% and 5.0% for two** — a clean dosage
+effect, which matters because a pharmacological agent would produce partial, not homozygous-equivalent,
+protection.

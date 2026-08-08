@@ -72,13 +72,15 @@ quantitative:
     was demonstrated in males.'
   species: mouse
   source_ref: wagner2021
-  uncertainty: 'THE SEX-SPECIFICITY IS NOT A DETAIL - the wild-type gain is 4.3 per cent in males and 5.0
-    in females but the node source records that GC-B(7E) lengthened bones in FEMALES only, so the male
-    figure and the female figure may not both be significant and this atlas has not read the primary to
-    check which. It is a GERMLINE, HOMOZYGOUS, LIFELONG genotype - not an intervention at a late bone age,
-    which is the same inference gap that has undercut every genetic proof of concept in this project.
-    Two weeks of observation in a mouse. And the effect is larger where there is more FGF suppression to
-    relieve, so a normal human receptor should expect the low end or below.'
+  uncertainty: 'THE SEX-SPECIFICITY CAVEAT WRITTEN LAST ROUND WAS MY ERROR AND IS WITHDRAWN - CORR-124.
+    Reading wagner2021 in full, the "females only" statement is the 2-WEEK, SINGLE-ALLELE analysis, while
+    4.3 and 5.0 per cent are the 16-WEEK, HOMOZYGOUS figures quoted for both sexes in one sentence. The
+    real caveats are different. IT IS A GERMLINE, HOMOZYGOUS, LIFELONG genotype acting from conception -
+    not an intervention at a late bone age, which is the inference gap that has undercut every genetic
+    proof in this project. THE GENE-DOSAGE DATA MATTER FOR A DRUG: naso-anal length rose 1.7 per cent
+    (male) and 3.3 (female) for ONE GC-B-7E allele against 5.4 and 5.0 for TWO, so partial protection -
+    which is all a pharmacological agent could give - buys roughly half. And the effect is larger where
+    there is more FGF suppression to relieve, so a normal human receptor should expect the low end.'
 - parameter: 'HUMAN ACTIVATING VARIANT IN THE SUBMEMBRANE REGULATORY REGION CAUSES TALL STATURE WITH RAISED
     BASAL AND LIGAND-STIMULATED cGMP'
   value: 'mother +2.77 standard deviation scores; daughters +1.96 SDS at 7 years and +1.30 SDS at 4 years'
@@ -97,6 +99,45 @@ quantitative:
     phosphomimetic and its mechanism is a conformational change in the submembrane region rather than
     demonstrated phosphosite protection, so it supports the DOMAIN rather than the phosphorylation
     mechanism specifically. Fibroblasts are not chondrocytes.'
+- parameter: 'WILD-TYPE GC-B INACTIVATES WITH TIME, AND A HUMAN OVERGROWTH MUTATION THAT BLOCKS THAT
+    INACTIVATION PRODUCES ABNORMALLY LONG BONES'
+  value: 'V883M-GC-B: basal cGMP raised more than 20-fold and Vmax 15-fold without CNP; CNP added only
+    2-fold more; and unlike wild-type it FAILED TO INACTIVATE WITH TIME'
+  unit: fold change versus wild-type GC-B
+  conditions: 'robinson2013. A Val-to-Met substitution at position 883 in the CATALYTIC domain of GC-B,
+    found in humans with raised blood cGMP and abnormally long bones. In cells expressing V883M, CNP
+    reduced the Michaelis constant tenfold in a concentration-dependent way WITHOUT raising Vmax, and that
+    reduction did not require ATP as it does in the wild-type enzyme. Phosphorylation elevated activity but
+    was NOT required for the gain - the substitution also activated a GC-B mutant lacking all known
+    phosphorylation sites.'
+  species: human
+  source_ref: robinson2013
+  uncertainty: 'THE PHENOTYPE IS HUMAN BUT THE MECHANISM IS CELL-BASED, and this is a CATALYTIC-DOMAIN
+    mutation rather than a phospho-site one - the paper is explicit that it works even without the
+    phosphorylation sites. So it establishes that BLOCKING TIME-DEPENDENT INACTIVATION produces long bones
+    in humans, and that receptor-side gain is achievable by more than one route, but it does NOT prove the
+    phospho-protection route specifically. A greater-than-20-fold basal cGMP rise is also far beyond
+    anything a drug would produce, and it arrives with a skeletal overgrowth syndrome rather than simple
+    tall stature.'
+- parameter: 'THE KINETICS OF FGF-DRIVEN INACTIVATION, AND THE PHOSPHATASE CONTRADICTION'
+  value: 'GC-B inhibited with a half-time of about 7 minutes, maximal by 15 minutes, FGF2 IC50 about
+    5 ng/ml; and 10 micromolar cantharidin did NOT block the dephosphorylation'
+  unit: minutes, and ng/ml
+  conditions: 'robinson2017, rat chondrosarcoma cells, read in full. FGF2 inhibited CNP-dependent GC-B
+    activity at both sub-saturating (100 nM) and saturating (1 micromolar) CNP with a similar IC50, so the
+    inhibition is not surmountable by more ligand. THE PHOSPHATASE: cantharidin at 10 micromolar failed to
+    block FGF-induced dephosphorylation, and since cantharidin inhibits PPP1, PPP2, PPP4, PPP5 and PPP6,
+    the authors conclude a phosphatase OTHER than those. This CONTRADICTS shuhaibar2017, which inferred a
+    PPP-family enzyme from 100 micromolar cantharidin in intact tibia - CORR-123.'
+  species: rat
+  source_ref: robinson2017
+  uncertainty: 'THE CONTRADICTION IS UNRESOLVED AND IT UNDERCUTS THE TOOL COMPOUND. LB-100 is a PP2A
+    (PPP2) inhibitor; if PPP2 is not the enzyme, then LB-100 1.30-fold elongation effect is not acting
+    through the mechanism this branch attributes to it. The two studies differ tenfold in cantharidin
+    concentration and use cells versus intact tibia, so they may be reconcilable, and neither is obviously
+    wrong. That FGF inhibition is NOT surmountable by raising CNP is itself important - it means the
+    ligand arm cannot compensate for a dephosphorylated receptor, which is the strongest argument for
+    working on the receptor instead.'
 localization:
 - 'the mechanism is intracellular and juxtamembrane - the seven regulatory serines and threonines of NPR2 -
   and its selectivity argument rests on FGFR3 signalling being growth-plate-biased rather than on any
@@ -169,5 +210,6 @@ key_refs:
   role: LB-100 as the tool compound, 1.30-fold alone, additive rather than synergistic
 open_questions:
 - g_l2d_004
+- g_l3_does_cnp_desensitise_its_own_receptor
 contradicts: []
 last_verified: '2026-08-08'
