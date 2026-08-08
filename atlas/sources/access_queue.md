@@ -169,3 +169,32 @@ rows) carries a corrigendum on the very morphometric parameters the atlas quotes
 
 Until these are read, every number sourced from a flagged reference should be treated as
 `value_unverified` in spirit even where the field says otherwise.
+---
+
+## Round 134 — the two documents standing between the phosphatase branch and a number
+
+Both are paywalled and both were attempted through lawful routes only (Europe PMC, publisher
+landing page). No paywall was bypassed. AACR returned HTTP 403 to a plain request.
+
+| P0 | `feng2023` | PMID 37584370, DOI 10.4155/bio-2023-0078, *Bioanalysis* | **The patient
+concentration–time data for LB-100 and endothall from NCT04560972.** This is the single number
+`g_l12_endothall_exposure_and_juvenile_tolerability` turns on: whether achievable human plasma
+endothall clears the 95 nM IC50. The abstract gives only the validated calibration range,
+2.5–500 ng/mL, which brackets 95 nM (= 17.7 ng/mL at MW 186.16) but is not a measurement of
+anything. Everything the atlas currently says about clinical exposure on this branch is
+inference from that range and is graded E. |
+
+| P1 | `chung2017` | PMID 28039265, DOI 10.1158/1078-0432.CCR-16-2299, *Clin Cancer Res* | **The
+pharmacokinetics section.** The abstract gives doses, DLT and RP2D — all already in the atlas —
+but no Cmax, no AUC, no half-life. With the PK, the mouse-to-human body-surface-area conversion
+in `the_tool_compound_is_a_prodrug_and_it_kills_juvenile_mice` could be replaced by a direct
+exposure comparison, which is a far stronger argument than an allometric convention. |
+
+| P2 | `rollema2025` | PMID 39909155, DOI 10.1016/j.ijpharm.2025.125317, *Int J Pharm* | Full text
+for the hydrolysis kinetics. The abstract is unusually complete — half-lives, both IC50s, the
+DMSO-stock artefact — and CORR-127 is written from it, but the atlas holds it as
+`primary_abstract_only` and the figure-level data have not been seen. |
+
+| P2 | `potter1998` | PMID 9485390, *Biochemistry* | Full text for the homologous-desensitisation
+time course and the fraction of receptor dephosphorylated. The abstract states "approximately
+one-half" of the NPR-B population is completely dephosphorylated; the kinetics are not in it. |

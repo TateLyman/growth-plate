@@ -5213,3 +5213,66 @@ Appendicular and axial, not cranial — the selectivity profile this project wan
 **double wagner2021's +4.3%/+5.0% femur** for the same genotype on the same background at the same age. Two
 papers, one genotype, a twofold discrepancy in effect size, and the atlas should carry the range
 **+4.3% to +8.8%** rather than either figure alone.
+
+---
+
+## CORR-126 — "nothing in this literature has ever said PP2A" was an overstatement (round 134)
+
+Round 132 closed the PP2A-selectivity question and wrote, in
+`the_receptor_phosphorylation_branch_is_the_live_one.yaml`, that PPP2A specifically being the enzyme is
+something **"nothing in this literature has ever said."** That is too strong.
+
+**potter1998** (Biochemistry 37:2422–2429) dephosphorylated NPR-B-containing 3T3 membranes with **purified
+PP2A** and found the loss of CNP-dependent — but not Mn²⁺/Triton-dependent — guanylyl cyclase activity was
+highly correlated with it. That is PP2A *sufficiency in vitro*, not identity of the physiological enzyme in
+a chondrocyte, and it does not touch robinson2017's cantharidin-resistance result. But the literature is
+not silent, and the sentence has been corrected in place rather than deleted.
+
+**Rule tightened:** absence claims about a literature ("nobody has ever…") must be scoped to what was
+actually searched. Here the search was for a PP2A-selective *inhibitor experiment against FGF-induced
+dephosphorylation*; the claim as written covered the whole PP2A-and-NPR-B literature, which had not been
+searched.
+
+## CORR-127 — LB-100 is a prodrug; the agent in every LB-100 experiment in this atlas is endothall (round 134)
+
+Every LB-100 row in this atlas — the 1.30-fold elongation, the 5–10 µM concentration-response, the
+"semiselective PPP family phosphatase inhibitor" characterisation — treats **LB-100 as the inhibitor**.
+
+**rollema2025** (Int J Pharm) shows it is not. LB-100 is an amide that hydrolyses to **endothall**
+(PP2A IC50 **95 nM**) plus N-methylpiperazine, with a half-life of **3.2 h at pH 6.8 and 4.9 h at pH 7.4,
+both at 37 °C**. LB-100 itself is weak — apparent IC50 **12.2 µM** from a room-temperature DMSO stock,
+**0.59 µM** from a stock heated to 65 °C, the twenty-fold shift tracking endothall content — and the
+authors conclude the inhibition measured in LB-100 assays is mainly endothall's.
+
+**Consequence.** shuhaibar2021 cultured E16.5 femurs in LB-100 at 37 °C for **six days** — roughly thirty
+hydrolysis half-lives. The species present for almost the entire experiment was endothall. So:
+
+- the tenfold gap between the inactive 1 µM and the active 5–10 µM is a gap in **prodrug loading**, not in
+  inhibitor potency, and the true active concentration in that experiment is unknown;
+- "LB-100 covers PPP1C, PPP2CA and PPP5C" is really a statement about endothall, and darcy2019 — which this
+  atlas cites for LB-100 being a catalytic inhibitor of PPP2CA/PPP5C — is now **in tension** with
+  rollema2025 calling LB-100 itself weak. Both remain in the atlas, unresolved;
+- the molecule this branch would need is an **endothall-class** agent delivered to cartilage, not "LB-100".
+
+**Rule tightened:** for any tool compound, check whether the assayed species is the dosed species before
+attributing a concentration-response to it. Stability in the incubation medium is part of the method.
+
+## CORR-128 — the human PP2A genetics does not support this branch, and I would have carried it if I had trusted the citing sentence (round 134)
+
+shuhaibar2021's discussion offers "increased height in children with mutations in particular PPP2
+regulatory subunit genes" as a clue supporting phosphatase inhibition for bone growth. Read as written,
+that reads like a human anchor for the branch.
+
+**loveday2015**, read rather than cited: five children, de novo missense clustered in the PP2A-B56
+substrate-specificity loop. Heights **+2.3, −1.4, +2.0, +1.6, +3.0 SD**; head circumferences **+3.6, +3.8,
++3.8, +3.3, +0.3 SD**; median HC **+3.6 SD**; **intellectual disability in all five**; entry to the study
+requires tall stature **and/or** a large head; mechanism attributed by the authors to **PI3K/AKT**.
+
+So the phenotype is **head-dominant with one short child**, which is the *opposite* dissociation from the
+one this branch predicts — shuhaibar2017's 7E mice gain ~8% in long bones and body length with **cranial
+width unchanged**. Logged as a **grade X claim** in the new node: repeated as support, not supported by
+the primary data.
+
+**No new rule** — this is the existing "reviews and citing sentences are an index, not a source" rule
+working correctly. Recorded because the citing sentence came from a primary paper this atlas had already
+read in full, which is a softer target than a review and was nearly trusted on that basis.

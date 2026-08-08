@@ -7376,6 +7376,64 @@ gaps:
     which would reconcile both papers and retire the contradiction.'
   tractability: 4
   search_log_ref: g_l2d_003
+- gap_id: g_l12_endothall_exposure_and_juvenile_tolerability
+  question: What plasma concentration of ENDOTHALL - the active hydrolysis product of LB-100 - is reached in
+    dosed humans, and is there any dose of any PPP-family phosphatase inhibitor that a growing mammal tolerates
+    chronically while reaching a cartilage concentration near the 95 nM endothall IC50?
+  type: quantitative_gap
+  layer: L12
+  why_it_matters: This is the single number standing between the receptor-phosphorylation branch and a usable
+    intervention. The branch has the best biology left on the CNP axis - 7E lengthens wild-type bone 4.3 to 8.8
+    per cent with the cranium spared - and no molecule. fenton2023 shows 1 mg/kg every other day kills 42 per
+    cent of juvenile mice and suppresses body weight, and that dose converts to 3 mg per square metre, essentially
+    the human dose-limiting dose of 3.1. If achievable exposure sits below the concentration needed in cartilage,
+    the branch is a target with no chronic drug and the search should move to subunit-selective inhibition or to
+    a cartilage-targeted prodrug.
+  what_is_known: shuhaibar2021 needs 5 to 10 micromolar LB-100 ex vivo, with 1 micromolar inactive. rollema2025
+    shows LB-100 is a prodrug of endothall, IC50 95 nM, hydrolysing with a 3.2 to 4.9 hour half-life at 37 degrees,
+    so the ex vivo active species and its concentration are both unknown. feng2023 validated a human plasma assay
+    for both analytes over 2.5 to 500 ng/mL and ran it on NCT04560972 samples. chung2017 gives the tolerated human
+    doses but is paywalled for PK.
+  what_is_missing: The feng2023 patient concentrations have not been read. No cartilage concentration of endothall
+    has ever been measured in any species. No juvenile chronic toxicology study of endothall or LB-100 with a bone
+    endpoint exists.
+  nearest_evidence:
+  - rollema2025
+  - feng2023
+  - fenton2023
+  - shuhaibar2021
+  discriminating_experiment: 'Read the feng2023 patient concentration-time data, convert to molar, and compare against
+    95 nM. Then a single juvenile wild-type mouse study: LB-100 or endothall at 0.3 mg/kg and below, dosed to skeletal
+    maturity, femur length as the endpoint with body weight and survival as the toxicity control, and terminal plasma
+    and cartilage endothall by LC-MS/MS. Prediction: if plasma endothall clears 95 nM at a tolerated dose, the branch
+    needs a delivery answer; if it does not, the branch needs a different molecule and LB-100 should be retired from
+    the stack.'
+  tractability: 3
+- gap_id: g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
+  question: Does any phosphatase inhibitor lengthen a bone in a living animal - as opposed to in organ culture -
+    and does it do so without the cranial and systemic costs?
+  type: known_unknown
+  layer: L12
+  why_it_matters: Every skeletal result for this branch is either a germline genotype (7E, wagner2021, shuhaibar2017)
+    or ex vivo (shuhaibar2021). A germline genotype is not an intervention at a late bone age, which is the case
+    this atlas is built for, and organ culture cannot report a terminal length at skeletal maturity. Without one
+    in vivo pharmacological bone-length result the branch has never actually been tested as a drug strategy.
+  what_is_known: shuhaibar2021 gives 1.30-fold elongation for LB-100 alone in E16.5 femur culture over six days,
+    and 2.06-fold for LB-100 plus BMN-111 against 1.78 for BMN-111 alone - additive, not synergistic. fenton2023
+    gives in vivo juvenile dosing but measured weight and behaviour, never a bone.
+  what_is_missing: A Europe PMC search crossing LB-100 and LB100 with bone, growth plate, femur and tibia, and separately
+    endothall with bone, cartilage and chondrocyte, returns no in vivo skeletal study in any species.
+  nearest_evidence:
+  - shuhaibar2021
+  - fenton2023
+  - wagner2021
+  discriminating_experiment: 'Wild-type juvenile mice, both sexes, vehicle against the highest tolerated phosphatase-inhibitor
+    dose from a pilot, dosed from weaning to skeletal maturity, with femur and tibia length, body length, cranial
+    width and body weight all measured - the same panel shuhaibar2017 used for 7E, so the pharmacological effect
+    can be read directly against the genetic ceiling. Prediction: if the drug reproduces even a third of the 4.3
+    to 8.8 per cent genetic effect at a tolerated dose, the branch is live; if it reproduces none, the ex vivo result
+    was a culture artefact or the exposure is unreachable.'
+  tractability: 3
 - gap_id: g_l2d_004
   question: Which specific PPP-family phosphatase catalyses FGF-driven dephosphorylation of NPR2 in growth plate
     chondrocytes - PPP1, PPP2/PP2A, PPP4 or PPP5 - and which regulatory subunit targets it to the receptor?
