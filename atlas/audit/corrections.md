@@ -4114,3 +4114,67 @@ an independent pSTAT3 measurement on a named, CAS-identified compound.
 Chemical identity now held: **423F = N-(4-fluorophenyl)-4-phenylthiazol-2-amine**, C15H11FN2S, **270.3 Da**
 — below fluorescein, so firmly on the plateau of the growth-plate partition curve. Matrix entry is not a
 limiting step for this compound.
+
+---
+
+## CORR-092 — I ranked the arms on acute velocity when the endpoint is adult height, and the human genetics point the other way
+
+A clean, framework-free target search — Open Targets association ranking for human body height, read before
+asking what the stack hits — put **NPR3 at 0.724 above FGFR3 at 0.703**, with PDE3B (0.673) and NPR2
+(0.660) also in the top thirty. **Three of the top thirty human height genes sit on the CNP axis**, which
+is the arm round 86 removed from the stack.
+
+The adult-height genetics say the same thing, and **this atlas already held them in
+`the_stack_in_a_normal_human`**:
+
+| lifelong genetic state | adult height |
+|---|---|
+| NPR2 activating variant | **221 cm** (+5.2 SD) — truncated by epiphysiodesis |
+| NPR3 biallelic loss | **211.1 cm** (+4.9 SD) — truncated by epiphysiodesis |
+| CATSHL, lifelong FGFR3 loss of function | **195.6 cm** males (+2.8 SD) |
+
+The CNP axis reaches **15–25 cm higher** in humans than the FGFR3 axis does, and both CNP numbers are
+*floors* because clinicians stopped the growth. Round 86 dropped vosoritide on two arguments: acute
+on-treatment velocity (erdafitinib 19.06 cm/yr against vosoritide 8.09) and a shared-node mechanism claim
+that both converge at RAF-1. **Acute velocity is not the endpoint.** Adult height is, and on adult height
+the ranking inverts.
+
+What this does *not* establish, and the caveats matter more than usual here:
+
+- These are **lifelong** states accumulating from birth. They fix the **ceiling** of each axis; they say
+  nothing about what either buys from bone age 16, where the trajectory cannot be recovered.
+- n is tiny on both sides and case reports are ascertained on extremes; the SD conversions are this atlas's
+  own arithmetic on assumed population parameters.
+- The redundancy question that removed vosoritide is *not* answered by this. If the two axes really do
+  converge at RAF-1, a higher ceiling on the CNP axis does not mean it adds anything on top of an FGFR
+  inhibitor. `propel3_2026` showing the arms **equivalent** in achondroplasia (+1.74 vs +1.57) is what
+  same-node predicts; `dauber2026` showing vosoritide at 2.3× its own achondroplasia effect *outside*
+  achondroplasia is what same-node does not.
+- Both CNP-axis cases carry the spine cost — spinal fusion at 12 for a 39° Cobb angle in the NPR3 patient,
+  severe scoliosis with vertebral fractures in the NPR2 family — so it does not differentiate the axes on
+  safety either.
+
+The correction is to the **ranking method**, not to the conclusion: the CNP arm was dropped on a metric
+that does not measure the goal, and it should be re-opened on adult-height grounds rather than left closed
+on velocity grounds.
+
+## CORR-093 — the loading sign conflict resolves by site, and the atlas was carrying both halves without noticing
+
+Two rows in this atlas said mechanical load **restrains** growth — `caetanosilva2021` (quasi-static axial
+load restricting elongation via mTOR) and now `chen2025` (compressive stress driving growth plate
+degeneration and ossification via PIEZO1). Round 86 built the "load the limbs, unload the spine"
+prescription on the first of these.
+
+`watanabetakano2021` says load **promotes** growth: periosteal-osteoblast-derived **osteocrin** is the
+mechanotransducer of load-induced long bone growth, acting by occupying **NPR3** and sparing local CNP for
+NPR2.
+
+Both are right, and the variable is **where the load lands**. Periosteal and muscular tension generates
+osteocrin; axial compression of the plate itself engages PIEZO1 and mTOR. The prescription sharpens from
+"load the limbs, unload the spine" to **"seek muscular and periosteal loading, avoid axial compression of
+the physis"** — which is a different instruction, and a more specific one.
+
+It also connects two threads that had been running separately: the mechanical arm now has a molecular
+mechanism, and the highest-ranked unhit target in the clean search has an **endogenous, exercise-inducible
+ligand**. Osteocrin is also called musclin and has published paediatric serum reference values, so it is
+measurable.
