@@ -86,17 +86,20 @@ quantitative:
     AND BONE LENGTH
   species: mouse
   source_ref: horike2026
-  uncertainty: 'TWO THINGS, AND THE SECOND IS A HAZARD RATHER THAN AN OPPORTUNITY. FIRST, THIS IS A
-    POOL-TERM INTERVENTION WITH A LENGTH ENDPOINT, which the atlas had almost none of - the pool term has
-    been carried by trompet2024 alone. It is in an Fgfr3 GAIN-OF-FUNCTION background, so it corrects an
-    excess and says nothing about a normal plate, which is the same limitation as everything else on this
-    axis. SECOND, AND IT CUTS AGAINST THE CNP LEAD: CREB is the canonical PKA substrate. horike2026 has
-    CREB DISRUPTING stem-cell properties in the RESTING zone, while hirota2022 has CNP raising PKA in the
-    HYPERTROPHIC zone as a pro-growth effect. Same effector, opposite signs, different zones. IF A
-    SYSTEMICALLY RAISED CNP SIGNAL ACTIVATES PKA AND CREB IN THE RESTING ZONE AS WELL, IT COULD DO TO THE
-    POOL WHAT FGFR3 EXCESS DOES - which would present as good velocity and a spent pool, and would not be
-    visible on any short-term endpoint. That is an untested risk and it is specific to raising the arm
-    this node is arguing is non-redundant.'
+  uncertainty: 'CORRECTED ROUND 97 (CORR-094). ROUND 96 WROTE THIS ROW FROM THE ABSTRACT AND CALLED IT
+    a pool-term intervention with a length endpoint. THE FULL TEXT HAD BEEN ON DISK AND MARKED READ SINCE
+    2026-08-07, AND ITS one_line_finding ALREADY CARRIED THE FACT THAT KILLS THE LEAD: "IN CONTROL MICE
+    666-15 CHANGED NEITHER WEIGHT NOR FEMUR LENGTH NOR RESTING-ZONE CD73 - the authors state it is not
+    effective in a physiological condition." THE WILD-TYPE ARM WAS RUN AND IT IS NULL. That is the exact
+    test this atlas demands of every candidate and 666-15 fails it, so the CREB route is a correction for
+    pathological FGFR3 excess and NOT a pool-term lever for a pathway-intact subject. The rescue detail is
+    still informative about mechanism: 666-15 at 10 mg/kg P7-P27 DECREASED resting zone height while
+    INCREASING proliferative and hypertrophic zone heights, so CREB activity TRAPS cells in the resting
+    zone rather than releasing them, and the mediator is INDEPENDENT of ERK. WHAT SURVIVES AND MATTERS
+    MORE THAN THE DEAD LEAD is the cAMP link, which the full text establishes directly: forskolin was used
+    as the POSITIVE CONTROL for CREB activation in chondrocytes, and bFGF activated a CRE-luciferase
+    reporter dose-dependently, abolished by 666-15. So RAISING cAMP IN A CHONDROCYTE ACTIVATES CREB, and
+    CREB in the resting zone traps the pool and shortens bones.'
 - parameter: 'THE GAP, STATED AS AN EXPERIMENT - and every existing combination is in the wrong background'
   value: 'no FGFR-inhibitor plus CNP-axis 2x2 with a length endpoint exists in a wild-type animal, in any
     species'
@@ -120,6 +123,49 @@ quantitative:
     explant elongation over days and this atlas has repeatedly found zone thickness and final bone length
     dissociating - so it needs a terminal length readout at skeletal maturity to be decisive, which
     organ culture cannot give.'
+- parameter: 'THE HAZARD LANDS ON CILOSTAZOL, NOT ON THE CNP AGENT - because a receptor confines an
+    effect and an enzyme inhibitor does not'
+  value: CNP and GC-B are expressed in PROLIFERATIVE and PREHYPERTROPHIC chondrocytes; PDE3 zonal
+    distribution in human growth plate is unmeasured
+  unit: qualitative, zonal
+  conditions: 'hirota2022 states that CNP and its receptor guanylyl cyclase-B are PREDOMINANTLY EXPRESSED
+    IN PROLIFERATIVE AND PREHYPERTROPHIC CHONDROCYTES, and that CNP-driven PKA activation is predominantly
+    in HYPERTROPHIC chondrocytes. horike2026 places the damaging CREB effect in the RESTING zone and shows
+    directly, in chondrocytes, that forskolin activates CREB and that bFGF activates a CRE-luciferase
+    reporter dose-dependently, abolished by 666-15. This atlas holds NO protein-level PDE3 measurement in
+    human growth plate, by zone or otherwise.'
+  species: mouse
+  source_ref: hirota2022
+  uncertainty: 'THIS INVERTS THE ROUND-86 PREFERENCE FOR THE SECOND TIME AND THE REASON IS STRUCTURAL
+    RATHER THAN EMPIRICAL. A CNP agent can only act where its RECEPTOR is, and GC-B sits in the
+    proliferative and prehypertrophic zones - it is not in the resting zone, so a CNP agent has no route
+    to the CREB phenotype that traps the pool. CILOSTAZOL IS NOT RECEPTOR-GATED. It inhibits an enzyme,
+    so it raises cAMP wherever PDE3 is expressed, and PDE3 zonal distribution in the human plate has never
+    been measured. If PDE3 is present in the resting zone, cilostazol raises cAMP there, cAMP activates
+    CREB, and CREB traps the pool - which would be velocity bought with reserve, the failure mode that is
+    invisible on any short-term endpoint. THE CHAIN IS FOUR INFERENCES LONG AND EVERY LINK IS MOUSE OR
+    CELL LINE, so this is graded as a hazard to measure rather than a reason to drop the drug. But it is
+    cheap to measure - PDE3A and PDE3B by zone in the human growth plate scRNA-seq this atlas already
+    holds - and it should have been checked before cilostazol entered the stack.'
+- parameter: 'AND A POINT IN ERDAFITINIB FAVOUR THAT THE ATLAS HAD NOT MADE - FGF activates CREB, so
+    blocking FGFR protects the resting zone'
+  value: bFGF activates a CRE-luciferase reporter dose-dependently; BGJ398 used as the FGFR-inhibitor arm
+  unit: qualitative
+  conditions: horike2026 - in RCS cells, bFGF but NOT IGF1, IGF2, EGF or HGF significantly activated a
+    cAMP-response-element luciferase reporter, and did so dose-dependently; chondrocytes were treated with
+    or without forskolin, bFGF, or 30 nM BGJ398 (FGFR inhibitor); bFGF increased SPONDIN1 protein in
+    primary chondrocytes and 666-15 abolished it
+  species: mouse
+  source_ref: horike2026
+  uncertainty: 'IF FGF SIGNALLING ACTIVATES CREB AND CREB TRAPS THE RESTING-ZONE POOL, THEN AN FGFR
+    INHIBITOR IS DOING SOMETHING ON THE POOL TERM THAT THIS ATLAS HAS BEEN CREDITING ONLY TO THE
+    AMPLIFICATION TERM. That is a genuine and previously unstated point in erdafitinib favour, and it
+    also sharpens the antagonism question inside the stack: erdafitinib would remove FGF-driven CREB
+    activation while a cAMP-raising agent would restore it by a different route. LIMITS: the CREB
+    reporter work is in RCS cells and primary chondrocytes rather than in vivo, the selectivity claim
+    rests on one panel of growth factors, and no experiment has tested an FGFR inhibitor and a
+    cAMP-raising agent together on resting-zone behaviour. It is a mechanistic prediction of antagonism,
+    not a measured one.'
 localization:
 - 'growth plate proliferative zone: where arm one and FGFR3 overlap at RAF-1'
 - 'growth plate hypertrophic zone: where arm two acts through PKA and FGFR3 blockade does not reach'

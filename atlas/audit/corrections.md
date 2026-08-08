@@ -4178,3 +4178,65 @@ It also connects two threads that had been running separately: the mechanical ar
 mechanism, and the highest-ranked unhit target in the clean search has an **endogenous, exercise-inducible
 ligand**. Osteocrin is also called musclin and has published paediatric serum reference values, so it is
 measurable.
+
+---
+
+## CORR-094 — I re-derived a finding from an abstract while the full text sat on disk, marked read, with the killing fact already in its own one-line summary
+
+Round 96 built a quantitative row around `horike2026` — "a pool-term intervention with a length endpoint,
+which the atlas had almost none of" — from the **abstract** returned by a Europe PMC search. The full text
+was already in the scratchpad (93 kB of text plus the 182 kB XML), the bibliography entry was marked
+`full_text_read: '2026-08-07'`, and its `one_line_finding`, written a week earlier, ended:
+
+> **"IN CONTROL MICE 666-15 CHANGED NEITHER WEIGHT NOR FEMUR LENGTH NOR RESTING-ZONE CD73 — the authors
+> state it is not effective in a physiological condition."**
+
+**The wild-type arm was run and it is null.** That is the exact test this atlas demands of every candidate
+— the test CORR-077 was logged for failing to apply to the FGFR arm — and 666-15 fails it. The CREB route
+corrects pathological FGFR3 excess and is not a pool-term lever for a pathway-intact subject. Round 96
+hedged it as "in a gain-of-function background, so it says nothing about a normal plate", which was
+directionally right and far weaker than the evidence already held.
+
+**Sixth instance of the class** (CORR-058, 064, 065, 077, 086, now this), and the fifth where the refuting
+material was inside the atlas rather than outside it. The CORR-086 widening of the exclusivity check does
+not catch this one either, because no exclusivity was claimed — the failure was reaching for a search when
+the answer was on disk. The structural lesson is narrower and more useful than "read more carefully":
+**before writing a row from an abstract, check `full_text_read` and the existing `one_line_finding` for
+that ref_id.** That is a two-line check and it would have caught this, CORR-086, and CORR-065.
+
+What the full text gives back is worth more than the dead lead:
+
+- **666-15 at 10 mg/kg P7–P27 DECREASED resting zone height while INCREASING proliferative and hypertrophic
+  zone heights**, and the mediator is **independent of ERK**. So CREB activity *traps* cells in the resting
+  zone rather than releasing them.
+- **Forskolin was used as the positive control for CREB activation in chondrocytes**, and bFGF activated a
+  CRE-luciferase reporter dose-dependently, abolished by 666-15. **Raising cAMP in a chondrocyte activates
+  CREB.**
+
+## CORR-095 — the cAMP/CREB hazard lands on cilostazol, not on the CNP agent, and it inverts the round-86 preference again
+
+Round 96 raised a hazard that a systemically raised CNP signal might activate PKA/CREB in the resting zone
+and trap the pool. Reading `hirota2022` in full resolves it, and moves the hazard to a different drug.
+
+**CNP cannot reach the resting zone.** Hirota states that CNP and its receptor guanylyl cyclase-B are
+"predominantly expressed in **proliferative and prehypertrophic** chondrocytes", and the PKA activation is
+predominantly in **hypertrophic** chondrocytes. A CNP agent is receptor-gated, and the receptor is not in
+the resting zone.
+
+**Cilostazol is not receptor-gated.** It inhibits an enzyme, so it raises cAMP wherever PDE3 is expressed —
+and this atlas holds **no protein-level PDE3 measurement in human growth plate, by zone or otherwise.** If
+PDE3 sits in the resting zone, cilostazol raises cAMP there, cAMP activates CREB, and CREB traps the pool:
+velocity bought with reserve, invisible on any short-term endpoint.
+
+Round 86 preferred cilostazol as "the better mechanistic partner" for erdafitinib. Round 96 inverted that
+on the cAMP-arm argument. This inverts it again, and for a structural reason rather than an empirical one —
+**a receptor confines an effect and an enzyme inhibitor does not.** The chain is four inferences long and
+every link is mouse or cell line, so it is a hazard to measure rather than a reason to drop the drug. It is
+also cheap to measure: PDE3A and PDE3B by zone in the human growth-plate scRNA-seq this atlas already holds.
+
+And one point in erdafitinib's favour that had never been stated: **bFGF activates the CRE reporter** — but
+IGF1, IGF2, EGF and HGF do not. If FGF-driven CREB traps the resting-zone pool, then an FGFR inhibitor is
+doing something on the **pool** term that this atlas has been crediting entirely to amplification.
+
+Also confirmed on reading: `hirota2022` measured **growth plate length, not bone length**. The round-96
+caveat stands unchanged.
