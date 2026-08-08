@@ -5168,3 +5168,48 @@ caveat is withdrawn and replaced with the gene-dosage data the paper actually su
 rose **1.7% (male) and 3.3% (female) for one GC-B-7E allele, and 5.4% and 5.0% for two** — a clean dosage
 effect, which matters because a pharmacological agent would produce partial, not homozygous-equivalent,
 protection.
+
+## CORR-125 — the phosphatase contradiction resolves to a tenfold concentration difference, and the raw data contain a finding bigger than the one I was chasing
+
+The project owner supplied the eLife 31343 supplementary archive — shuhaibar2017's **source data**, the raw
+per-animal numbers behind five figures. Figure 6 is the cantharidin experiment. Computed from the raw
+values rather than read off a plot:
+
+| condition | n | mean cGMP increase |
+|---|---|---|
+| no cantharidin, control | 6 | 0.962 |
+| no cantharidin, +FGF18 | 10 | 0.471 |
+| 100 µM cantharidin, control | 8 | 1.361 |
+| 100 µM cantharidin, +FGF18 | 10 | 1.174 |
+
+**Without cantharidin, FGF inhibits by 51% (p = 0.00047, \*\*\*). With 100 µM cantharidin, by 14%
+(p = 0.064, ns).** The block is real and it abolishes significance — not an inference from a Western blot.
+
+**So CORR-123's contradiction is a concentration artefact.** robinson2017 used **10 µM** cantharidin in RCS
+cells and saw no block; shuhaibar2017 used **100 µM** in intact tibia and did. A tenfold difference against
+a tissue rather than a monolayer is the simplest reconciliation, and the PPP-family conclusion survives.
+**LB-100's rationale is partially restored** — PPP2 is inside the cantharidin-sensitive set. What remains
+unproven is PPP2 *specifically*, because cantharidin cannot separate PPP1, PPP2, PPP4, PPP5 and PPP6.
+
+**And the larger finding, which I was not looking for: there is TONIC phosphatase restraint.**
+**Cantharidin alone, with no FGF at all, raised the CNP response 1.42-fold (p = 0.0018, \*\*).** The
+receptor sits partly dephosphorylated at rest. A phosphatase inhibitor therefore does not merely relieve
+FGF-driven suppression — it lifts a standing brake, and that works in tissue where FGF signalling is not
+elevated.
+
+**This cuts both ways and the second way is against me.** Last round I argued this branch escapes the trap
+that killed the ligand candidates because it needs unequal *suppression*, and FGF-driven suppression is
+growth-plate-biased. **If the restraint is tonic rather than FGF-driven, that selectivity argument weakens
+substantially** — a systemic phosphatase inhibitor would lift the brake wherever NPR2 and the phosphatase
+coexist, including vasculature. The branch is stronger on efficacy and weaker on selectivity than I said.
+
+**Separately, effect sizes recomputed from Figure 1 raw data** (Npr2 7E/7E vs wild type, both on wild-type
+FGFR3, sex-pooled because the sheets do not split sex):
+
+- femur **+8.4%**, tibia **+8.8%**, **body length +8.0%** at 16 weeks (and +10.0% at 8 weeks)
+- **cranial width unchanged** (+2.5% at 16 wk, −2.4% at 8 wk)
+
+Appendicular and axial, not cranial — the selectivity profile this project wants. But these are roughly
+**double wagner2021's +4.3%/+5.0% femur** for the same genotype on the same background at the same age. Two
+papers, one genotype, a twofold discrepancy in effect size, and the atlas should carry the range
+**+4.3% to +8.8%** rather than either figure alone.

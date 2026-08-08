@@ -138,6 +138,42 @@ quantitative:
     wrong. That FGF inhibition is NOT surmountable by raising CNP is itself important - it means the
     ligand arm cannot compensate for a dephosphorylated receptor, which is the strongest argument for
     working on the receptor instead.'
+- parameter: 'THE CANTHARIDIN EXPERIMENT, COMPUTED FROM SOURCE DATA - THE FGF BLOCK IS REAL AND THERE IS
+    ALSO A TONIC RESTRAINT'
+  value: 'FGF inhibits by 51 per cent without cantharidin (p = 0.00047) and by 14 per cent with 100
+    micromolar cantharidin (p = 0.064, ns); and cantharidin ALONE raises the control response 1.42-fold
+    (p = 0.0018)'
+  unit: fold increase in cGMP, and per cent inhibition
+  conditions: 'shuhaibar2017 Figure 6C source data, supplied as the eLife 31343 archive and computed from
+    the raw per-animal values rather than read from a plot. Means: no cantharidin control 0.962 (n=6), no
+    cantharidin plus FGF18 0.471 (n=10), 100 micromolar cantharidin control 1.361 (n=8), cantharidin plus
+    FGF18 1.174 (n=10). Significance from the accompanying statistics sheet, Holm-Sidak adjusted.'
+  species: mouse
+  source_ref: shuhaibar2017
+  uncertainty: 'THIS RESOLVES THE CONTRADICTION WITH robinson2017 AS A CONCENTRATION ARTEFACT - 10
+    micromolar in cells against 100 micromolar in intact tibia - BUT 100 MICROMOLAR IS A HIGH,
+    NON-SELECTIVE CONCENTRATION. Cantharidin at that level inhibits PPP1, PPP2, PPP4, PPP5 and PPP6
+    together and cannot identify which one matters, so LB-100 targeting PPP2 specifically remains
+    unproven. THE TONIC FINDING IS THE MORE CONSEQUENTIAL ONE AND IT ARGUES AGAINST THIS BRANCH
+    SELECTIVITY, not for it - see the claim grade below.'
+- parameter: 'EFFECT SIZE OF THE 7E PHOSPHOMIMETIC IN WILD-TYPE MICE, RECOMPUTED FROM RAW PER-ANIMAL DATA'
+  value: 'at 16 weeks: femur +8.4 per cent, tibia +8.8 per cent, BODY LENGTH +8.0 per cent, cranial width
+    unchanged; body length +10.0 per cent at 8 weeks'
+  unit: per cent difference, Npr2 7E/7E versus wild type
+  conditions: 'shuhaibar2017 Figure 1E-1H source data, computed from raw values. Sample sizes at 16 weeks:
+    femur 13 versus 22, tibia 13 versus 22, body length 13 versus 22, cranial width 13 versus 22. Both
+    genotypes are on a wild-type FGFR3 background. The dissociation matters as much as the magnitude -
+    long bones and body length rise about 8 per cent while cranial width does not move (+2.5 per cent at
+    16 weeks, -2.4 per cent at 8 weeks).'
+  species: mouse
+  source_ref: shuhaibar2017
+  uncertainty: 'SEX-POOLED, because the source-data sheets do not separate sex, and this atlas has already
+    made one error by conflating sex-specific with pooled analyses in this literature (CORR-124). MORE
+    IMPORTANTLY THESE ARE ROUGHLY DOUBLE wagner2021 FIGURES for the same genotype on the same background at
+    the same age - +8.4 per cent femur here against +4.3 and +5.0 per cent there. Two papers, one genotype,
+    a twofold discrepancy, probably genetic background and control choice. THE ATLAS SHOULD CARRY THE RANGE
+    +4.3 TO +8.8 PER CENT rather than either figure alone. And it remains a germline lifelong genotype, not
+    an intervention at a late bone age.'
 localization:
 - 'the mechanism is intracellular and juxtamembrane - the seven regulatory serines and threonines of NPR2 -
   and its selectivity argument rests on FGFR3 signalling being growth-plate-biased rather than on any
@@ -170,13 +206,15 @@ claim_grades:
     groups, three preparations, one mechanism. Graded B not A because all of it is rodent and the human
     evidence is genetic rather than interventional.
 - claim: This branch escapes the trap that killed the ligand candidates.
-  grade: C
-  basis: 'The allosteric modulator failed because it needed the plate to carry more ligand than the blood
-    and the plate makes none. This branch needs unequal SUPPRESSION rather than unequal ligand - FGF-driven
-    NPR2 dephosphorylation is a growth-plate phenomenon, so relieving it acts preferentially where FGF is
-    suppressing. Graded C because the phosphatase is unidentified and may be ubiquitous, LB-100 is a
-    systemic PP2A inhibitor with its own toxicity, and no tissue-distribution measurement supports the
-    selectivity argument yet.'
+  grade: D
+  basis: 'DOWNGRADED FROM C TO D AT ROUND 132 - CORR-125. The argument was that this branch needs unequal
+    SUPPRESSION rather than unequal ligand, and that FGF-driven NPR2 dephosphorylation is growth-plate
+    biased. The shuhaibar2017 SOURCE DATA undercut it: 100 micromolar cantharidin raised the CNP response
+    1.42-fold WITH NO FGF PRESENT (p = 0.0018), so a substantial part of the restraint on NPR2 is TONIC
+    rather than FGF-driven. A systemic phosphatase inhibitor would lift a standing brake wherever NPR2 and
+    the phosphatase coexist, including vasculature - which is the same failure mode that killed the
+    allosteric modulator. The branch is STRONGER on efficacy and WEAKER on selectivity than round 130
+    stated.'
 - claim: A phosphatase inhibitor is worth adding to a stack that already contains an FGFR inhibitor.
   grade: D
   basis: 'Uncertain and possibly redundant. LB-100 stated mechanism is counteracting FGF-INDUCED NPR2
