@@ -12089,3 +12089,51 @@ gaps:
     plate produces none locally.'
   tractability: 1
   search_log_ref: g_l12_is_vosoritide_cleared_by_npr3
+- gap_id: g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature
+  question: Does removing NPR-C-mediated clearance raise CNP-analogue concentration MORE at the growth
+    plate than in the vasculature? The whole therapeutic-index case for a dual-resistant analogue rests on
+    this asymmetry, and it is currently a prediction from transport physics rather than a measurement.
+  type: known_unknown
+  layer: L12
+  why_it_matters: 'IT IS THE SINGLE ASSUMPTION HOLDING UP THE ONLY SURVIVING COMPOUND ROUTE. Three
+    candidates have now died on the same trap - a higher dose, an NPR2 positive allosteric modulator, and
+    systemic clearance blockade - because each raises signalling at the vascular liability as much as at
+    the target, and the cardiovascular margin is denominated in systemic exposure. The dual-resistant CNP
+    analogue escapes ONLY IF the two compartments respond differently to removal of a sink. The physical
+    argument is that the vasculature is WELL MIXED, so its ligand concentration is set by plasma and
+    removing a local sink changes little, whereas the growth plate is AVASCULAR AND DIFFUSION-LIMITED, so
+    its internal concentration is set by diffusion in against destruction within and reducing the sink
+    raises local concentration more than proportionally. If that is wrong, the dual-resistant analogue is
+    a dose increase in disguise like everything before it, and thread 3 has no surviving compound.'
+  what_is_known: 'fda_yuviwel_review_2026 Table 50 establishes that neither approved agent addresses the
+    receptor arm - vosoritide EC50 selectivity (5.9-11.4x NPR-B-favouring) overlaps native CNP-22
+    (7.2 +/- 8.1x), and free CNP-38 binds NPR-C at least 38-fold more tightly than NPR-B by SPR.
+    the_plate_consumes_cnp_it_does_not_make_it puts NPR3 transcript at the human plate comparable to NPR2,
+    with a clearance-to-signalling ratio of order unity in every compartment. farnum2006 establishes the
+    plate as diffusion-limited with a steep size-partition curve. ema_voxzogo_epar_2021 documents
+    supraproportional exposure consistent with saturable NPR-C clearance systemically.'
+  what_is_missing: 'ANY PAIRED MEASUREMENT OF DRUG CONCENTRATION IN GROWTH PLATE VERSUS PLASMA OR VESSEL
+    WALL, WITH AND WITHOUT NPR-C ENGAGEMENT. No growth-plate concentration exists for any agent on this
+    axis; the nearest is a rat whole-femur and whole-tibia radiolabel ratio of about 0.24 to 0.28 of
+    plasma, which is neither the physis nor intact drug. Nor is the relative contribution of NPR3 versus
+    neprilysin to CNP turnover IN CARTILAGE established - npr3_clearance_receptor names that as unknown.'
+  nearest_evidence:
+  - farnum2006
+  - gse9160
+  - ema_voxzogo_epar_2021
+  nearest_evidence_note: farnum2006 gives the transport regime, gse9160 gives the local clearance
+    machinery, and the EPAR gives the systemic clearance behaviour - but nothing measures the two
+    compartments against each other under the same intervention.
+  discriminating_experiment: 'THE CLEAN VERSION IS A SINGLE ANIMAL STUDY WITH A PAIRED READOUT. Dose
+    matched animals with vosoritide and with an NPR-C-evading variant carrying the same NEP resistance -
+    the biomarin_cnp_variants_us8198242 ring-glycine substitutions - then measure, at matched PLASMA
+    exposure rather than matched dose, (a) cGMP or phospho-readout in microdissected growth plate and
+    (b) cGMP in aorta or mesenteric vessel, plus blood pressure. PRE-REGISTERED READING: if the
+    plate-to-vessel response ratio rises by more than about two-fold for the evading variant, the
+    transport asymmetry is real and the dual-resistant analogue is the compound; if the ratio is unchanged,
+    the variant is a dose increase in disguise and the entire ligand branch of thread 3 should be closed in
+    favour of local delivery or a different term of the height equation. MATCHING ON PLASMA EXPOSURE
+    RATHER THAN DOSE IS THE WHOLE DESIGN - matching on dose would confound the question with the
+    half-life extension it is meant to control for.'
+  tractability: 4
+  search_log_ref: g_l12_does_evading_npr3_help_the_plate_more_than_the_vasculature

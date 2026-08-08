@@ -69,7 +69,33 @@ summary: 'THIS NODE DERIVES A MOLECULE FROM CONSTRAINTS RATHER THAN PICKING ONE 
   unhit target and already recorded that the available agents - osteocrin, C-ANF(4-23), AP-811, SC-46542 -
   are research reagents with no product. This node adds the chemistry: the receptor has a published
   small-molecule SAR series and a published biophysical screening route, so the campaign starts from
-  chemical matter rather than from nothing.'
+  chemical matter rather than from nothing.
+  THE MOLECULE IS NOW NAMED, BECAUSE THE BINDING DATA ARRIVED - ROUND 121. fda_yuviwel_review_2026 Table 50
+  settles what the EPAR only asserted, and it does so in two internally consistent halves that must not be
+  crossed. IN THE EC50 HALF: vosoritide is 5.9 to 11.4-fold NPR-B-favouring and native CNP-22 is 7.2 plus
+  or minus 8.1-fold NPR-B-favouring - THE RANGES OVERLAP ENTIRELY. Vosoritide bought NEP resistance and
+  cannot be shown to have gained anything at the clearance receptor; wendt2015 could not have detected a
+  change because its potency system expressed NPR-B but not NPR-C. IN THE SPR HALF: free CNP-38, the
+  species navepegritide releases, binds NPR-C AT LEAST 38-FOLD MORE TIGHTLY THAN NPR-B (27.3 pM against at
+  or below 0.711 pM), and the TransCon carrier costs about 2,634-fold at NPR-B against about 1,702-fold at
+  NPR-C, so the carrier is a general inactivator rather than a selectivity device and the released peptide
+  faces preferential capture by clearance.
+  SO NEITHER APPROVED AGENT ADDRESSES THE RECEPTOR ARM, AND THE 2009 PATENT DESIGN WAS NEVER REDUCED TO
+  PRACTICE IN EITHER. THE MOLECULE IS THEREFORE A CNP ANALOGUE CARRYING BOTH RESISTANCES AT ONCE - the
+  N- and C-terminal modifications that give vosoritide its neutral-endopeptidase resistance, PLUS the
+  ring-glycine substitutions of biomarin_cnp_variants_us8198242 (G8T, G8S, G8V, G8N and the others listed)
+  intended to strip NPR-C affinity while retaining NPR-B. Nobody has combined them. That is a far smaller
+  step than opening a new target, and it is the same sponsor own chemistry.
+  AND THERE IS FINALLY AN ARGUMENT THAT ESCAPES THE TRAP, THOUGH IT IS INFERENCE. Every previous candidate
+  died because raising systemic exposure is what the cardiovascular margin forbids, and evading clearance
+  raises systemic exposure too. The escape is a physical asymmetry between the two compartments. The
+  vasculature is WELL MIXED - its ligand concentration is set by plasma, so removing a local sink there
+  changes little. The growth plate is DIFFUSION-LIMITED AND AVASCULAR - concentration inside it is set by
+  the balance of diffusion in against destruction within, so reducing the local sink raises local
+  concentration more than proportionally. If that holds, an NPR-C-evading analogue gains at the plate
+  MORE than at the liability, which is the therapeutic-index improvement that a simple dose increase
+  cannot buy. THIS IS A PREDICTION FROM TRANSPORT PHYSICS, NOT A MEASUREMENT, and it is the single
+  assumption on which the whole route now rests.'
 quantitative:
 - parameter: 'THE CLEARANCE-TO-SIGNALLING TRANSCRIPT RATIO IN HUMAN GROWTH PLATE, WHICH IS THE NUMBER THAT
     SELECTS A CLEARANCE BLOCKER OVER A LIGAND'
@@ -171,6 +197,29 @@ claim_grades:
     systemically active and could raise circulating natriuretic peptides enough to reproduce the very
     hypotension liability it was designed to avoid, and the redundancy question with an FGFR inhibitor -
     the same one that undercut vosoritide in this stack - is untouched.'
+- claim: Vosoritide's engineering improved its NPR-C selectivity relative to native CNP.
+  grade: X
+  basis: 'NO. fda_yuviwel_review_2026 Table 50 puts vosoritide at 5.9 to 11.4-fold NPR-B-favouring by
+    EC50 and native CNP-22 at 7.2 plus or minus 8.1-fold by the same measure - completely overlapping. The
+    claim supported is the null: vosoritide cannot be shown to differ from native peptide at the clearance
+    receptor. wendt2015 could not have detected such a difference, since its NIH3T3 potency system
+    expressed NPR-B but neither NPR-A nor NPR-C, and it reports no NPR-C constant.'
+- claim: The TransCon carrier gives navepegritide selectivity against the clearance receptor.
+  grade: X
+  basis: 'NO - IT IS A GENERAL INACTIVATOR, WHICH IS THE POINT OF A PRODRUG. Against free CNP-38 the
+    carrier costs about 2,634-fold at NPR-B and about 1,702-fold at NPR-C, so it suppresses NPR-B slightly
+    MORE, and the carrier-bound NPR-C to NPR-B ratio of about 59-fold is marginally worse than the free
+    peptide 38-fold. The active released species, free CNP-38, binds NPR-C at least 38-fold more tightly
+    than NPR-B.'
+- claim: The indicated next molecule is a CNP analogue with BOTH neutral-endopeptidase resistance and
+    NPR-C evasion.
+  grade: D
+  basis: 'Both halves exist separately and have never been combined - vosoritide supplies the first and
+    biomarin_cnp_variants_us8198242 claims the second with named ring-glycine substitutions. The binding
+    data now show neither approved agent addresses the receptor arm. It remains D because no such molecule
+    has been built or tested against any endpoint, no comparative NPR-B versus NPR-C data for the patented
+    substitutions is public, and the therapeutic-index rationale rests on an unmeasured transport
+    asymmetry between a well-mixed and a diffusion-limited compartment.'
 - claim: The required compound already exists.
   grade: X
   basis: 'NO. NPR3 is druggable by small molecules with in vivo PK (smith2022) but the published series

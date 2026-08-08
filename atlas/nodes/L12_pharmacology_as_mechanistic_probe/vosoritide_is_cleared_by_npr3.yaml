@@ -87,6 +87,46 @@ quantitative:
     statement - drug-derived material reaches bone at a few tens of per cent of plasma - which is broadly
     consistent with farnum2006 predicting roughly 60 per cent partition at 3 kDa for a freely diffusing
     tracer, given whole-bone dilution.'
+- parameter: 'THE ANSWER, QUANTIFIED - VOSORITIDE NPR-C SELECTIVITY IS INDISTINGUISHABLE FROM NATIVE
+    CNP-22, SO THE ENGINEERING BOUGHT NEP RESISTANCE AND NOTHING AT THE CLEARANCE RECEPTOR'
+  value: 'vosoritide 5.9 to 11.4-fold NPR-B-favouring; native CNP-22 7.2 plus or minus 8.1-fold
+    NPR-B-favouring - the ranges overlap entirely'
+  unit: ratio of NPR-C EC50 to NPR-B EC50, same assay format for both
+  conditions: 'fda_yuviwel_review_2026, Table 50. Vosoritide NPR-B EC50 3.5 to 10 nM against NPR-C EC50
+    20.6 to 113.5 nM. Native CNP-22 NPR-B EC50 13.4 plus or minus 11.2 nM against NPR-C EC50 57.5 plus or
+    minus 35.8 nM. THIS IS THE INTERNALLY CONSISTENT COMPARISON IN THIS DATASET - both agents measured the
+    same way - and it is the one that answers the question. It corroborates wendt2015, whose potency
+    system expressed NPR-B but NOT NPR-A or NPR-C and therefore could not have detected an NPR-C change,
+    and which reports no NPR-C binding constant at all.'
+  species: in_vitro_human_cell
+  source_ref: fda_yuviwel_review_2026
+  uncertainty: 'THESE ARE EC50 VALUES, NOT Kd, AND MUST NOT BE COMPARED WITH THE SPR ROW BELOW. No
+    publicly reported direct NPR-C Kd or Ki for vosoritide was found. The CNP-22 error bars are enormous -
+    plus or minus 8.1 on a ratio of 7.2 - so the overlap conclusion is robust precisely BECAUSE the
+    claim is a null: vosoritide cannot be shown to differ from native peptide. That is a weaker statement
+    than "vosoritide has no NPR-C evasion" and is the one supported. VALUES SUPPLIED BY THE PROJECT OWNER
+    from the FDA review; the source document was not retrieved in-session.'
+- parameter: 'BY DIRECT SPR, THE CLEARANCE RECEPTOR OUTBINDS THE SIGNALLING RECEPTOR FOR THE ACTIVE
+    RELEASED SPECIES OF NAVEPEGRITIDE'
+  value: 'free CNP-38: NPR-B Kd 27.3 pM against NPR-C Kd at or below 0.711 pM, so NPR-C is at least
+    38.4-fold tighter'
+  unit: Kd, direct surface plasmon resonance
+  conditions: 'fda_yuviwel_review_2026, Table 50. Free CNP-38 / CNP(89-126) is the species navepegritide
+    releases. CARRIER-BOUND PRODRUG for comparison: NPR-B Kd 71.9 nM, NPR-C Kd at or below 1.21 nM. The
+    carrier therefore costs about 2,634-fold at NPR-B and about 1,702-fold at NPR-C - it is a GENERAL
+    INACTIVATOR, which is what a TransCon prodrug is designed to be, and NOT a selectivity device. The
+    carrier-bound NPR-C to NPR-B ratio works out at about 59-fold, marginally WORSE than the 38-fold of
+    the free peptide.'
+  species: in_vitro_human_cell
+  source_ref: fda_yuviwel_review_2026
+  uncertainty: 'THE NPR-C VALUES ARE CENSORED - reported as at or below a limit - so 38.4-fold and
+    59-fold are LOWER BOUNDS and the true ratios could be far larger. DO NOT CROSS THE ASSAY FORMATS: free
+    CNP-38 NPR-B Kd is 27.3 pM while CNP-22 NPR-B EC50 is 13.4 nM, a roughly 500-fold gap between peptides
+    sharing the same ring, which is assay format rather than biology. Any vosoritide-versus-CNP-38 NPR-C
+    ratio computed across these two datasets is meaningless and is not computed here. SPR affinity is also
+    not the same as clearance flux, which depends on receptor density, internalisation rate and
+    recycling - a tighter Kd does not by itself establish that NPR-C is the dominant sink in vivo.
+    VALUES SUPPLIED BY THE PROJECT OWNER; source document not retrieved in-session.'
 localization:
 - 'NPR3 is expressed both at the growth plate - transcript comparable to NPR2 in human plate per
   the_plate_consumes_cnp_it_does_not_make_it - and systemically, and that dual localisation is precisely
