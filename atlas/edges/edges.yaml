@@ -20492,63 +20492,60 @@ edges:
   target: growth_hormone
   relation: correlates_with
   sign: '-'
-  magnitude: GH raised growth rate 5.26-fold, which decomposes exactly into 5.00x faster pool consumption, 1.36x
-    taller terminal cells and 0.77x AMPLIFICATION - the pool-consumption term alone being 97 per cent of the log
-    effect
-  context: hypophysectomised 35-day-old male Wistar rat proximal tibia, 8-day continuous minipump at the dose
-    previously shown to be maximal, n=6, against saline-infused hypophysectomised littermates
+  magnitude: GH raised growth rate 5.26-fold, which decomposes exactly into 5.00x faster pool consumption, 1.36x taller terminal
+    cells and 0.77x AMPLIFICATION - the pool-consumption term alone being 97 per cent of the log effect
+  context: hypophysectomised 35-day-old male Wistar rat proximal tibia, 8-day continuous minipump at the dose previously shown
+    to be maximal, n=6, against saline-infused hypophysectomised littermates
   evidence_tier: T1
   refs:
   - hunziker1994
   confidence: C
-  notes: 'CORR-189. The ledger recorded GH as one of two agents hitting amplification. Measured from this paper''s
-    own numbers the amplification factor is BELOW ONE. GH obtains fewer hypertrophic cells per progenitor consumed
-    than the untreated hypophysectomised plate does - it buys rate out of the reserve. Validated three ways: growth
-    rate over terminal height reproduces Hunziker''s independent turnover count, log2 of the amplification is 4.5
-    to 5.0 in columns holding 14-18 proliferative cells, and forcing the resting count identical across groups
-    moves the ratio to 0.62 rather than reversing it.'
+  notes: 'CORR-189. The ledger recorded GH as one of two agents hitting amplification. Measured from this paper''s own numbers
+    the amplification factor is BELOW ONE. GH obtains fewer hypertrophic cells per progenitor consumed than the untreated
+    hypophysectomised plate does - it buys rate out of the reserve. Validated three ways: growth rate over terminal height
+    reproduces Hunziker''s independent turnover count, log2 of the amplification is 4.5 to 5.0 in columns holding 14-18 proliferative
+    cells, and forcing the resting count identical across groups moves the ratio to 0.62 rather than reversing it.'
   traversal_usable: true
 - edge_id: e01329
   source: the_somatotropic_axis_is_not_a_yield_axis
   target: igf1_systemic
   relation: correlates_with
   sign: '-'
-  magnitude: IGF-I raised growth rate 2.97-fold as 2.67x pool consumption, 1.40x terminal cell height and 0.79x
-    amplification, with pool consumption 90 per cent of the log effect
+  magnitude: IGF-I raised growth rate 2.97-fold as 2.67x pool consumption, 1.40x terminal cell height and 0.79x amplification,
+    with pool consumption 90 per cent of the log effect
   context: same experiment, same identity, IGF-I arm at the dose above which mortality rose from hypoglycaemia
   evidence_tier: T1
   refs:
   - hunziker1994
   confidence: C
-  notes: THE SAME SHAPE AS GH AND SLIGHTLY LESS EXTREME. Both hormones restore terminal cell height to the
-    physiological value and neither exceeds it, so h_term saturates rather than scaling with dose. The amplification
-    term is between 0.72 and 0.79 across all three contrasts in the experiment, so the direction does not depend on
-    which comparison is chosen.
+  notes: THE SAME SHAPE AS GH AND SLIGHTLY LESS EXTREME. Both hormones restore terminal cell height to the physiological value
+    and neither exceeds it, so h_term saturates rather than scaling with dose. The amplification term is between 0.72 and
+    0.79 across all three contrasts in the experiment, so the direction does not depend on which comparison is chosen.
   traversal_usable: true
 - edge_id: e01330
   source: the_somatotropic_axis_is_not_a_yield_axis
   target: amplification_is_transit_time
   relation: correlates_with
   sign: unknown
-  magnitude: amplification 31.8 / 25.3 / 24.6 / 22.9 against growth rates 31 / 92 / 163 / 284 micrometres per day;
-    log-log slope -0.146, R-squared 0.948
+  magnitude: amplification 31.8 / 25.3 / 24.6 / 22.9 against growth rates 31 / 92 / 163 / 284 micrometres per day; log-log
+    slope -0.146, R-squared 0.948
   context: all four groups of one experiment - saline, IGF-I, GH and normal unoperated rat
   evidence_tier: T1
   refs:
   - hunziker1994
   confidence: D
-  notes: 'THE RATE-YIELD TRADE-OFF, MONOTONE ACROSS EVERY GROUP. A tenfold rise in elongation rate costs about 29
-    per cent of the yield per progenitor. D because n=4 and three of the four are drug arms of one experiment, so
-    it is a description of one dataset rather than an established relationship - recorded for the ORDERING, which
-    is the premise of the whole yield programme and has never before been measurable on one set of animals.'
+  notes: THE RATE-YIELD TRADE-OFF, MONOTONE ACROSS EVERY GROUP. A tenfold rise in elongation rate costs about 29 per cent
+    of the yield per progenitor. D because n=4 and three of the four are drug arms of one experiment, so it is a description
+    of one dataset rather than an established relationship - recorded for the ORDERING, which is the premise of the whole
+    yield programme and has never before been measurable on one set of animals.
   traversal_usable: true
 - edge_id: e01331
   source: the_somatotropic_axis_is_not_a_yield_axis
   target: fgfr3_receptor
   relation: hypothesized_link
   sign: unknown
-  magnitude: unknown - kot2026 reports proliferative-zone LENGTH, which is cells per column multiplied by cell
-    height and therefore cannot separate amplification from h_term
+  magnitude: unknown - kot2026 reports proliferative-zone LENGTH, which is cells per column multiplied by cell height and
+    therefore cannot separate amplification from h_term
   context: the other half of the ledger's two-agent amplification claim, left untested rather than corrected
   evidence_tier: T1
   refs:
@@ -20556,26 +20553,124 @@ edges:
   - hunziker1994
   confidence: speculative
   gap_id: g_l2_does_fgfr3_inhibition_raise_cells_per_column_or_only_zone_height
-  notes: 'MUST NOT BE ASSUMED TO FALL WITH GH. The biology is unrelated - FGFR3 sits on the commitment switch
-    rather than on the somatotropic pool axis - and erdafitinib is already in the stack, so whether the stack
-    contains an amplification agent turns on this one measurement. horike2026 is the standing warning: excess FGFR3
-    signalling EXPANDS the resting zone while bones are SHORT, so an FGFR3 zone height can move opposite to growth.'
+  notes: 'MUST NOT BE ASSUMED TO FALL WITH GH. The biology is unrelated - FGFR3 sits on the commitment switch rather than
+    on the somatotropic pool axis - and erdafitinib is already in the stack, so whether the stack contains an amplification
+    agent turns on this one measurement. horike2026 is the standing warning: excess FGFR3 signalling EXPANDS the resting zone
+    while bones are SHORT, so an FGFR3 zone height can move opposite to growth.'
   traversal_usable: false
 - edge_id: e01332
   source: the_somatotropic_axis_is_not_a_yield_axis
   target: the_exchange_rate_between_growth_and_pool_depletion
   relation: correlates_with
   sign: '-'
-  magnitude: pool consumption rate carries 90 to 97 per cent of the log growth-rate effect across three contrasts,
-    while amplification carries 12 to 15 per cent in the NEGATIVE direction
+  magnitude: pool consumption rate carries 90 to 97 per cent of the log growth-rate effect across three contrasts, while amplification
+    carries 12 to 15 per cent in the NEGATIVE direction
   context: the somatotropic arm of the exchange rate, measured rather than inferred
   evidence_tier: T1
   refs:
   - hunziker1994
   confidence: C
-  notes: schrier2006 proposed the yield term in 2006 and nilsson2014 restated it in 2014, both from
-    growth-INHIBITING conditions. This is the first time it has been computed for a growth-PROMOTING agent, and the
-    exchange rate runs the same way in both directions - oestrogen lowers yield while slowing growth, GH lowers
-    yield while accelerating it. Yield falls whenever the plate is pushed off its baseline in either direction,
-    which is a stronger and less comfortable statement than either paper made.
+  notes: schrier2006 proposed the yield term in 2006 and nilsson2014 restated it in 2014, both from growth-INHIBITING conditions.
+    This is the first time it has been computed for a growth-PROMOTING agent, and the exchange rate runs the same way in both
+    directions - oestrogen lowers yield while slowing growth, GH lowers yield while accelerating it. Yield falls whenever
+    the plate is pushed off its baseline in either direction, which is a stronger and less comfortable statement than either
+    paper made.
+  traversal_usable: true
+- edge_id: e01333
+  source: the_yield_candidate_intermittent_pth1r_agonism
+  target: pthrp_ihh_feedback_loop
+  relation: activates
+  sign: +
+  magnitude: hPTH(1-34) 80 micrograms/kg/day, 5 days a week for 3 weeks, raised growth plate thickness,
+    chondrocyte number AND longitudinal growth rate in the proximal tibia of NORMALLY LOADED 6-week-old rats
+    against untreated normally loaded controls
+  context: wild-type Sprague-Dawley rat, not a dysplasia or deficiency model; five groups of six; the same
+    effect was ABSENT in the 15-week-old cohort run in parallel
+  evidence_tier: T1
+  refs:
+  - ogawa2002
+  confidence: C
+  notes: 'THE ONLY AGENT IN THIS PROGRAMME THAT RAISED THE GROWTH RATE OF A NORMAL ANIMAL - everything else
+    was a rescue (xie2012, horike2026), a pool addition (trompet2024), or unmeasured for length. But two of
+    the three readouts are a zone height and an unspecified chondrocyte number, so under CORR-189 the TERM IS
+    UNATTRIBUTED and this cannot yet be called an amplification result.'
+  traversal_usable: true
+- edge_id: e01334
+  source: the_yield_candidate_intermittent_pth1r_agonism
+  target: amplification_is_transit_time
+  relation: hypothesized_link
+  sign: +
+  magnitude: unknown - no terminal hypertrophic cell height and no resting-zone cycle time has ever been
+    measured under a PTH1R agonist, so the growth-rate gain cannot be partitioned
+  context: the claim the candidate is proposed for, and the one thing about it that is not established
+  evidence_tier: T1
+  refs:
+  - ogawa2002
+  - hunziker1994
+  confidence: speculative
+  gap_id: g_l12_does_intermittent_pth1r_agonism_raise_amplification_in_a_wild_type_plate
+  notes: 'ROUND 183 IS THE CAUTIONARY PRECEDENT. Growth hormone was recorded as an amplification agent by two
+    separate nodes until the flux quantities were computed and it came out at 0.77, buying its whole effect
+    by consuming the pool five times faster. The mechanistic case here is much stronger - PTH1R sits at the
+    commitment boundary rather than on the pool, and PTHrP is the endogenous delay signal - but it is an
+    argument, and the same kind of argument was wrong about GH.'
+  traversal_usable: false
+- edge_id: e01335
+  source: the_yield_candidate_intermittent_pth1r_agonism
+  target: jansen_metaphyseal_chondrodysplasia
+  relation: correlates_with
+  sign: unknown
+  magnitude: the humanized H223R-PTH1R growth plate shows MARKEDLY EXPANDED type II collagen positive
+    proliferating and prehypertrophic zones with abundant central apoptosis and progressive LOSS of type X
+    collagen positive hypertrophic chondrocytes and primary spongiosa
+  context: mutant allele expressed from the endogenous mouse Pth1r promoter so in all relevant target
+    tissues, which the earlier collagen-promoter transgenics did not achieve
+  evidence_tier: T1
+  refs:
+  - reyes2023
+  confidence: C
+  notes: 'THE OBJECTION DISSOLVES INTO A MECHANISM AND CHANGES SIGN. Round 175 read Jansen as the warning that
+    delaying hypertrophic commitment shortens bone. It does not - the delay works, and the plate is short
+    because the accumulated cells APOPTOSE instead of cashing out into hypertrophy. Amplification without
+    discharge, the third instance of that failure mode after horike2026 and newton2019. It is an argument for
+    pulsatile dosing and against continuous exposure.'
+  traversal_usable: true
+- edge_id: e01336
+  source: the_yield_candidate_intermittent_pth1r_agonism
+  target: abaloparatide
+  relation: correlates_with
+  sign: +
+  magnitude: teriparatide is the LONG-acting and abaloparatide the SHORT-acting PTH1R agonist by signalling
+    duration, traced by cryo-EM and 3D variability analysis to receptor ECD motion and the peptide
+    C-terminal portion
+  context: choosing between the two approved molecules when the failure mode is sustained receptor occupancy
+  evidence_tier: T1
+  refs:
+  - zhai2022
+  - sato2021
+  confidence: E
+  notes: 'A REASONED PREFERENCE, NOT A MEASUREMENT, AND THE QUALIFIER TRAVELS WITH IT. sato2021 found no
+    difference between the two ligands in receptor internalisation, beta-arrestin recruitment, calcium or
+    early cAMP, so the distinction is in DURATION rather than in which pathways are engaged and the whole
+    argument turns on duration being the operative variable at a growth plate. Abaloparatide is also the
+    PTHrP analogue - the plate''s own ligand - and is dosed four times higher, which narrows a human-equivalent
+    dose gap of about 10-fold.'
+  traversal_usable: true
+- edge_id: e01337
+  source: the_yield_candidate_intermittent_pth1r_agonism
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: intermittent PTH(1-34) rescued thanatophoric dysplasia type II lethality and brought
+    achondroplastic mouse humerus and tibia lengths to comparable with wild-type, which the authors attribute
+    to increased PTHrP expression and DOWNREGULATED FGFR3
+  context: Fgfr3 gain-of-function mouse models, systemic intermittent injection
+  evidence_tier: T1
+  refs:
+  - xie2012
+  confidence: D
+  notes: 'A RESCUE RESULT, CARRIED FOR A DIFFERENT REASON - the FGFR3 downregulation means this candidate and
+    the erdafitinib already in the stack may act partly through the same node, so they cannot be assumed
+    additive. That interaction has never been tested and is a reason to measure the two together rather than
+    to stack them on the assumption of independence.'
   traversal_usable: true
