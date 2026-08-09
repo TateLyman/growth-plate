@@ -6311,3 +6311,62 @@ resolved-record mismatch check added after CORR-135 is what stopped it.
 **Rule extension for SD-005:** the ref_id is an identifier too. Deriving it from a remembered author, lab
 or group is the same failure as typing a PMID from memory. Build ref_ids from the record the tool echoes,
 never from recognition.
+
+## CORR-163 — the optimised LB-100 analogue is 38-fold selective for the ONE enzyme the human genetics says not to inhibit (round 152)
+
+CORR-141 corrected an over-strong claim by recording `li2024a` as proof that the LB-100
+7-oxabicycloheptane scaffold **can** be tuned for PPP-family selectivity — compound 28a, 82 % oral
+bioavailability, orally tolerated. That is true and stands.
+
+**What was never checked is which way it was tuned.** Compound 28a is **PP2A IC50 33.8 µM against PP5
+IC50 0.9 µM — 38-fold selective FOR PP5.**
+
+And round 140 established that **PPP5C is the one clean directional signal on this arm and it runs the
+wrong way**: rs3764613-G lowers height at p = 5×10⁻¹⁸ and the same allele lowers PPP5C expression across
+seven GTEx tissues. Less PP5, shorter.
+
+So the best-optimised molecule in this chemotype is enriched 38-fold for the activity this atlas's own
+human genetics argues against. For an oncology programme targeting PP5 that is a success; for this
+indication it is the wrong compound.
+
+**This is the same error class as CORR-161** — a compound recorded as satisfying a specification when the
+sign of the specification was unchecked. Twice in two rounds, on two different arms.
+
+**Rule:** when a paper reports that a scaffold "can be made selective," record *which selectivity was
+achieved* in the same breath. Selectivity is a vector, not a scalar, and this atlas has now twice stored
+the magnitude and dropped the direction.
+
+**The corollary for compound choice.** The three enzymes LB-100 hits have three different human genetic
+verdicts — PPP5C contraindicating, PPP1CB neutral (zero height associations in 43), PPP2CA essentially
+silent (one association in eight, no direction). A compound for this arm should hit **PP2A and spare PP5**,
+and no such agent exists in this chemotype.
+
+## CORR-164 — fostriecin's dose-limiting toxicity was hepatic, not renal, and the trial stopped for supply (round 152)
+
+`the_receptor_phosphorylation_branch_is_the_live_one` records, from `chung2017`, that LB-100's renal DLT is
+*"IDENTICAL to the dose-limiting toxicity of fostriecin… so the ceiling may be a CLASS effect of PP2A
+inhibition… which would mean swapping compounds does not escape it."* That inference has been discouraging
+this arm's chemistry.
+
+**The primary fostriecin phase I (`dejong1999`) says otherwise.** Predominant toxicities were elevated
+transaminases (to grade 4) and serum creatinine (to **grade 2 only**), both limited in dose-dependence,
+often recovering *during* administration, and fully reversible. **The dose-limiting event was duration of
+ALT elevation** in one patient at 20 mg/m². And the **MTD was never reached** — the trial stopped because
+*drug supply was stopped*, with the authors stating further escalation "seems possible and is warranted."
+
+`jiang2025` independently attributes the halt to **compound stability and purity**, and delivers a
+**nine-step** modular chemoenzymatic synthesis (against 17–34 steps for the previous seventeen routes) with
+**late-stage diversification of the hydrophobic tail** built in for analogue generation.
+
+**So the agent that has been treated here as a cautionary class-effect precedent was actually never
+dose-limited by toxicity at all, and the manufacturability that killed it has just been solved.**
+
+**Weakened, not eliminated:** both agents do produce a renal signal, the organs overlap even though the
+dose-limiting organ differs, this is one 20-patient trial that never reached MTD, and `chung2017` may draw
+on fostriecin data this atlas has not read.
+
+**And the honest hole, stated because it is the reason to prefer fostriecin and I could not close it:** no
+verified PP1/PP2A/PP4/**PP5** IC50 for fostriecin was obtained this round. The one comparative table
+retrieved is PP1-versus-PP2A with **no PP5 column**, and its fostriecin row parsed garbled — so no figure
+was recorded rather than a guessed one (the CORR-140/CORR-145 rule). **Fostriecin's PP5-sparing property is
+reputation, not a number this atlas has read**, and it is the first thing to get.

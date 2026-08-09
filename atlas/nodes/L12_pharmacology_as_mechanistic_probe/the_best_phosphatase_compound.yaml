@@ -1,0 +1,200 @@
+id: the_best_phosphatase_compound
+name: WHICH PHOSPHATASE COMPOUND - the enzyme is unidentified, one of the three is contraindicated, and the
+  optimised LB-100 analogue was optimised in the wrong direction
+aliases:
+- best phosphatase inhibitor
+- which PP2A inhibitor
+- fostriecin versus LB-100
+- what compound for the phosphatase arm
+- PP5 sparing
+type: intervention
+layer: L12
+stub: false
+summary: 'THE QUESTION IS WHICH PHOSPHATASE COMPOUND TO CARRY, AND IT CANNOT BE ANSWERED ON POTENCY BECAUSE
+  THE ENZYME HAS NEVER BEEN IDENTIFIED. Every experiment supporting this arm used a PAN-PPP tool. Cantharidin
+  at 100 micromolar inhibits PPP1, PPP2, PPP4, PPP5 and PPP6. LB-100 is a catalytic inhibitor of PPP2CA and
+  PPP5C and also inhibits PPP1C below 2 micromolar. potter1998 dephosphorylated NPR-B membranes with
+  PURIFIED PP2A, which shows PP2A CAN do it, not that it is the physiological enzyme. THERE IS NO
+  PP2A-SELECTIVE TEST OF THIS MECHANISM ANYWHERE.
+  THAT MATTERS NOW BECAUSE THE THREE ENZYMES HAVE DIFFERENT HUMAN GENETIC DIRECTIONS AND ONE IS
+  CONTRAINDICATED. PPP5C is a clean height locus running the WRONG WAY - rs3764613-G lowers height at
+  p = 5e-18 and the same allele LOWERS PPP5C expression across seven tissues. Less PP5, shorter. PPP1CB has
+  ZERO height associations across 43 catalogued, so PP1 is neutral. And PPP2CA - the catalytic subunit of
+  the enzyme we would actually want to hit - has ONE height association out of eight, with no effect
+  direction reported, so it is essentially silent. A compound for this arm should therefore hit PP2A and
+  SPARE PP5, and LB-100 does the opposite of sparing it.
+  THE OPTIMISED LB-100 ANALOGUE WAS OPTIMISED IN THE WRONG DIRECTION, AND THIS IS THE SAME ERROR CLASS AS
+  M372049. CORR-141 recorded li2024a as proof that the 7-oxabicycloheptane scaffold CAN be tuned for
+  PPP-family selectivity - compound 28a, 82 per cent oral bioavailability, orally tolerated. But the
+  selectivity it achieved is 38-FOLD FOR PP5 OVER PP2A - PP2A IC50 33.8 micromolar against PP5 at 0.9. For
+  an oncology programme that is a success. For THIS indication it is a PP5-selective inhibitor, and PP5 is
+  the one enzyme the human genetics says not to inhibit. The best-optimised molecule in this chemotype is
+  pointed the wrong way.
+  WHICH LEAVES FOSTRIECIN, AND ITS STATUS CHANGED IN 2025. Fostriecin is the classical PP2A-selective
+  natural product and the only PP2A-selective agent ever given to humans. dejong1999 ran the phase I: 20
+  patients, 2 to 20 mg/m2/day, and THE MAXIMUM TOLERATED DOSE WAS NEVER REACHED - the trial stopped because
+  DRUG SUPPLY RAN OUT, with the authors stating further escalation seemed possible and warranted. Toxicity
+  was reversible transaminase elevation and grade 2 creatinine. jiang2025 then reports that the phase I was
+  halted over COMPOUND STABILITY AND PURITY, and delivers a NINE-STEP modular chemoenzymatic synthesis
+  against 17 to 34 steps for the previous seventeen routes, with LATE-STAGE DIVERSIFICATION OF THE
+  HYDROPHOBIC TAIL built in for analogue generation. THE THING THAT KILLED FOSTRIECIN WAS MANUFACTURABILITY
+  AND IT HAS JUST BEEN SOLVED.
+  SO THE ANSWER, WITH ITS HOLE STATED FIRST. THE HOLE: I could not verify fostriecin PP1, PP2A, PP4 or PP5
+  numbers from any clean source this round. The one comparative table obtained is a PP1-versus-PP2A table
+  with NO PP5 COLUMN, and the fostriecin row parsed garbled, so no figure is recorded here. Fostriecin
+  PP2A-selectivity is carried as REPUTATION, not as a number this atlas has read. THE ANSWER GIVEN THAT
+  HOLE: fostriecin is the right CHEMOTYPE to pursue and the wrong compound to assume - it is the only
+  PP2A-selective agent with human exposure, its failure mode was supply rather than biology or toxicity,
+  and it now has a synthesis designed for analogues. LB-100 remains the only phosphatase agent with an
+  additivity experiment on bone, and it inhibits the contraindicated enzyme.
+  AND NOTHING HERE TOUCHES THE ARM DEEPER PROBLEM. CORR-125 stands: the 1.42-fold restraint on NPR2 is
+  TONIC and FGF-independent, so a systemic phosphatase inhibitor lifts a standing brake wherever NPR2 and
+  the phosphatase coexist, including vasculature. Selectivity between PPP enzymes does not address
+  selectivity between TISSUES, and it is the tissue problem that killed the allosteric modulator.'
+quantitative:
+- parameter: 'THE THREE ENZYMES LB-100 HITS HAVE THREE DIFFERENT HUMAN GENETIC VERDICTS, AND THE ONLY CLEAN
+    ONE IS CONTRAINDICATING'
+  value: 'PPP5C: rs3764613-G lowers height at p = 5e-18, allele frequency 0.53, and the SAME allele lowers
+    PPP5C expression across SEVEN GTEx tissues at NES minus 0.17 - less PP5, shorter. A second signal
+    rs759302 is a PPP5C expression QTL at minus 0.37. PPP1CB: ZERO height associations among 43 catalogued.
+    PPP2CA: ONE height association among eight catalogued (rs146374310, p = 1e-8) with NO risk allele and NO
+    effect size reported'
+  unit: p-value; normalised effect size; association counts
+  conditions: GWAS Catalog downloads for ensemblMappedGenes PPP5C, PPP1CB and PPP2CA archived at round 140
+    in atlas/data/round140_human_genetics/; GTEx v8 single-tissue eQTL. The PPP2CA count was extracted from
+    that archive at round 152 - it had been downloaded but never analysed for direction.
+  species: human
+  source_ref: gwas_catalog_2026
+  atlas_derived: true
+  uncertainty: 'THE PPP2CA SILENCE IS AMBIGUOUS AND SHOULD NOT BE READ AS REASSURANCE. PP2A catalytic is an
+    essential, highly constrained gene; strong purifying selection removes the common regulatory variation
+    that a GWAS detects, so absence of association is at least as consistent with intolerance as with
+    irrelevance. Contrast NPR3 at 95 height associations and NPR2 at p = 6e-150 - both tolerate common
+    variation. WHAT IS NOT AMBIGUOUS is the PPP5C direction, which is a clean locus with a consistent eQTL
+    across seven tissues and points against inhibiting PP5. AND THE STANDING CAVEAT APPLIES TO ALL THREE:
+    a lifelong ten-to-twenty per cent expression difference across every tissue is a different perturbation
+    from acute inhibition in cartilage, so these are priors about direction, not predictions of drug effect.'
+- parameter: 'THE OPTIMISED LB-100 ANALOGUE IS PP5-SELECTIVE, WHICH IS THE WRONG DIRECTION FOR THIS INDICATION'
+  value: 'li2024a compound 28a from rational redesign of the LB-100 7-oxabicycloheptane dicarboxylic acid
+    scaffold: PP2A IC50 33.8 micromolar against PP5 IC50 0.9 micromolar - 38-FOLD SELECTIVE FOR PP5 - with
+    82 per cent oral bioavailability and oral tolerability in a xenograft model'
+  unit: IC50 in micromolar; fold selectivity
+  conditions: li2024a, PRIMARY_ABSTRACT_ONLY in this atlas.
+  species: not_applicable
+  source_ref: li2024a
+  uncertainty: 'CORR-141 RECORDED THIS PAPER AS EVIDENCE THAT THE CHEMOTYPE CAN BE TUNED, WHICH IS TRUE AND
+    REMAINS TRUE. What was never checked is WHICH WAY it was tuned. For an oncology programme targeting PP5
+    this is a success; for a growth programme it is a 38-fold enrichment of the one activity the human
+    genetics argues against. THE SAME ERROR CLASS AS M372049 AT CORR-161 - a compound identified as
+    satisfying a specification when the specification had the sign wrong or the sign unchecked. LIMITS: the
+    paper is abstract-level here, the IC50s are enzyme assays, and the assumption that PP2A rather than PP5
+    is the NPR2 phosphatase is itself unestablished - if PP5 were the physiological enzyme, 28a would be the
+    right molecule and the PPP5C genetics would be the thing to explain away.'
+- parameter: 'FOSTRIECIN FAILED ON SUPPLY, NOT ON TOXICITY OR BIOLOGY - AND THE SUPPLY PROBLEM IS SOLVED'
+  value: 'Phase I, 20 patients, 60-minute IV infusion days 1 to 5 every 4 weeks, 2 to 20 mg/m2/day. THE MTD
+    WAS NEVER REACHED - the trial stopped because DRUG SUPPLY WAS STOPPED, and the authors state further
+    escalation seems possible and is warranted. Toxicities were reversible: liver transaminases to grade 4,
+    serum creatinine to grade 2 only, both with limited dose-dependence and often recovering during
+    administration; the dose-limiting event was DURATION OF ALT ELEVATION in one patient. Half-life 0.36 h
+    initial and 1.51 h terminal; plasma concentrations reached were INSUFFICIENT for in vitro activity.
+    jiang2025 attributes the halt to COMPOUND STABILITY AND PURITY and delivers a NINE-STEP chemoenzymatic
+    synthesis against 17 to 34 steps for the prior seventeen routes, with late-stage diversification of the
+    hydrophobic tail'
+  unit: mg/m2/day; hours; synthetic steps
+  conditions: dejong1999 phase I (abstract read, PMC2362650) and jiang2025 synthesis (abstract read).
+  species: human
+  source_ref: dejong1999
+  uncertainty: 'THIS REOPENS A COMPOUND THIS ATLAS HAD IMPLICITLY WRITTEN OFF, AND THE REOPENING IS ABOUT
+    MANUFACTURABILITY RATHER THAN ABOUT ANY NEW BIOLOGY. WHAT IS STILL WRONG WITH FOSTRIECIN: the plasma
+    half-life is 0.36 to 1.51 hours, which is hopeless for chronic dosing without continuous infusion; the
+    exposure achieved in the trial was below its own in vitro active range; it carries a TOPOISOMERASE II
+    catalytic inhibitory activity as a documented off-target, so it is not a clean phosphatase probe; and
+    hepatic toxicity reached grade 4 even reversibly. AND THE DECISIVE NUMBERS ARE NOT IN HAND - no
+    verified PP1, PP2A, PP4 or PP5 IC50 for fostriecin was obtained this round, so its PP5-sparing property,
+    which is the entire reason to prefer it, is UNVERIFIED REPUTATION.'
+- parameter: 'THE CLASS-EFFECT CLAIM AGAINST THE WHOLE CHEMOTYPE IS WEAKER THAN THIS ATLAS RECORDED'
+  value: 'the_receptor_phosphorylation_branch_is_the_live_one carries, from chung2017, that the RENAL
+    dose-limiting toxicity of LB-100 is IDENTICAL to that of fostriecin, and infers that the ceiling may be
+    a CLASS EFFECT of PP2A inhibition that swapping compounds cannot escape. In the primary fostriecin
+    phase I the dose-limiting event was HEPATIC - duration of ALT elevation - and serum creatinine reached
+    only grade 2'
+  unit: qualitative - organ of dose-limiting toxicity
+  conditions: dejong1999 read at abstract level against the chung2017 statement already held.
+  species: human
+  source_ref: dejong1999
+  uncertainty: 'THE INFERENCE IS WEAKENED, NOT ELIMINATED, AND THE DISTINCTION MATTERS BECAUSE A CLASS
+    EFFECT WOULD MEAN NO CHEMISTRY ESCAPES THE CEILING. Both agents do produce a renal signal - fostriecin
+    reached grade 2 creatinine - so the organs overlap even if the DOSE-LIMITING organ differs. Against
+    over-reading the correction: this is one 20-patient trial that never reached MTD, so its DLT profile is
+    an incomplete picture of what fostriecin does at a tolerated ceiling, and chung2017 may be drawing on
+    fostriecin data this atlas has not read.'
+localization:
+- 'the intended site of action is the seven juxtamembrane serines and threonines of NPR2 in growth plate
+  chondrocytes'
+- 'the liability is everywhere else NPR2 and a PPP-family phosphatase coexist, including vasculature -
+  enzyme selectivity does not deliver tissue selectivity'
+human_evidence: indirect
+human_evidence_note: 'The human evidence here is genetic direction for the three candidate enzymes plus one
+  20-patient phase I of fostriecin. No phosphatase inhibitor has a human growth endpoint, and none has an
+  in vivo bone-length endpoint in any species.'
+species_basis:
+- human
+translation_risk: high
+translation_risk_reason: 'The enzyme responsible for NPR2 dephosphorylation in vivo has never been
+  identified, so compound selection is being made against an assumed target.'
+confidence: D
+claim_grades:
+- claim: A compound for this arm should inhibit PP2A and spare PP5.
+  grade: C
+  basis: 'PPP5C is a clean height locus whose height-lowering allele lowers PPP5C expression across seven
+    tissues - less PP5, shorter - which is the opposite of what the branch needs. PPP1CB is neutral and
+    PPP2CA is silent. Graded C not B because lifelong expression differences are a different perturbation
+    from acute inhibition, and because the identity of the NPR2 phosphatase is unestablished, so the
+    premise that PP2A is the right target is itself assumed.'
+- claim: li2024a compound 28a is the optimised molecule for this arm.
+  grade: X
+  basis: 'It is optimised 38-fold FOR PP5 over PP2A - PP2A 33.8 microM against PP5 0.9 microM - which is
+    selectivity for the one enzyme the human genetics argues against inhibiting. CORR-141 correctly recorded
+    that the scaffold can be tuned and never checked which way this tuning went.'
+- claim: Fostriecin is the best available compound for this arm.
+  grade: D
+  basis: 'It is the only PP2A-selective agent ever given to humans, its phase I never reached MTD and
+    stopped for drug supply, and jiang2025 has now solved the manufacturability that killed it with a
+    nine-step route built for analogues. AGAINST: no verified PP1/PP2A/PP4/PP5 numbers were obtained, so its
+    PP5-sparing property is reputation; half-life is 0.36 to 1.51 h; it carries a topoisomerase II
+    off-target; hepatic toxicity reached grade 4; and it has no bone endpoint in any species.'
+- claim: The renal dose-limiting toxicity is a PP2A class effect that no compound escapes.
+  grade: D
+  basis: 'WEAKENED. The atlas carried this from chung2017. The primary fostriecin phase I reports a HEPATIC
+    dose-limiting event with creatinine only grade 2. The organs overlap but the dose-limiting organ
+    differs, and the fostriecin trial never reached MTD so its profile is incomplete.'
+key_refs:
+- ref_id: dejong1999
+  year: 1999
+  type: primary
+  role: the fostriecin phase I - MTD never reached, stopped for supply, hepatic rather than renal DLT
+- ref_id: jiang2025
+  year: 2025
+  type: primary
+  role: the nine-step chemoenzymatic synthesis with late-stage tail diversification that removes the reason
+    fostriecin was abandoned
+- ref_id: li2024a
+  year: 2024
+  type: primary_abstract_only
+  role: the optimised LB-100 analogue, 38-fold PP5-selective - the right chemistry pointed the wrong way
+- ref_id: darcy2019
+  year: 2019
+  type: primary
+  role: LB-100 is a catalytic inhibitor of PPP2CA and PPP5C, and also inhibits PPP1C below 2 micromolar
+- ref_id: gwas_catalog_2026
+  year: 2026
+  type: dataset
+  role: the height-association downloads for PPP5C, PPP1CB and PPP2CA
+open_questions:
+- g_l12_which_phosphatase_dephosphorylates_npr2
+- g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
+contradicts:
+- 'REFINES CORR-141, which recorded li2024a as evidence that the LB-100 chemotype can be tuned for
+  PPP-family selectivity. True, and the direction was never checked: the tuning produced a 38-fold
+  PP5-SELECTIVE compound, and PP5 is the enzyme this atlas own human genetics argues against inhibiting.'
+last_verified: '2026-08-09'

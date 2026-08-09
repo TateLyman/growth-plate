@@ -7414,6 +7414,46 @@ gaps:
     needs a delivery answer; if it does not, the branch needs a different molecule and LB-100 should be retired from
     the stack.'
   tractability: 3
+- gap_id: g_l12_which_phosphatase_dephosphorylates_npr2
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  question: Which PPP-family phosphatase actually dephosphorylates NPR2 in a growth plate - PP1, PP2A, PP4,
+    PP5 or PP6 - because compound selection for this entire arm is currently being made against an assumed
+    target?
+  why_it_matters: 'The three enzymes the available tools hit have three DIFFERENT human genetic verdicts.
+    PPP5C is a clean height locus running the WRONG way (rs3764613-G lowers height at p = 5e-18 and lowers
+    PPP5C expression across seven tissues - less PP5, shorter). PPP1CB has zero height associations. PPP2CA
+    has one, with no direction. So a compound should hit PP2A and SPARE PP5 - but LB-100 inhibits PPP2CA,
+    PPP5C and PPP1C together, and the best-optimised analogue of that scaffold (li2024a compound 28a) is
+    38-fold selective FOR PP5, which is the contraindicated enzyme. Without knowing the physiological
+    enzyme, every compound choice on this arm is a guess, and one plausible guess is already known to be
+    optimised in the wrong direction.'
+  what_is_known: 'potter1998 dephosphorylated NPR-B in membranes with PURIFIED PP2A, which shows PP2A CAN
+    do it. robinson2017 shows FGF inactivates GC-B by dephosphorylation, non-surmountably by ligand.
+    shuhaibar2017 blocked the effect with 100 microM cantharidin, which inhibits PPP1, PPP2, PPP4, PPP5 and
+    PPP6 indiscriminately, and this atlas computed a 1.42-fold tonic effect from that experiment.
+    darcy2019 establishes LB-100 as a catalytic inhibitor of PPP2CA and PPP5C that also inhibits PPP1C
+    below 2 microM. EVERY POSITIVE RESULT ON THIS ARM USED A PAN-PPP TOOL.'
+  what_is_missing: 'No selective pharmacological or genetic test of enzyme identity. No PP2A-selective
+    agent has been used against FGF-induced NPR2 dephosphorylation; no siRNA, shRNA or conditional deletion
+    of PPP2CA, PPP5C or PPP1CB in chondrocytes has been read out on NPR2 phosphorylation state or on cGMP;
+    and no PP2A holoenzyme B-subunit has been assigned to NPR2 as substrate, which matters because PP2A
+    substrate specificity is set by the B subunit and a B-subunit-directed agent would be far more
+    selective than any catalytic-site inhibitor.'
+  nearest_evidence: [potter1998, robinson2017, shuhaibar2017, darcy2019, li2024a]
+  nearest_evidence_note: One purified-enzyme demonstration and several pan-inhibitor experiments; no
+    selective test of any kind.
+  discriminating_experiment: 'siRNA OR CRISPR KNOCKDOWN OF PPP2CA, PPP5C, PPP1CB AND PPP4C INDIVIDUALLY in
+    a chondrocyte line or primary chondrocytes, with FGF2 challenge, reading out NPR2 phosphorylation state
+    by Phos-tag gel (the assay robinson2017 already uses) and CNP-stimulated guanylyl cyclase activity.
+    Readouts under competing hypotheses - ONE ENZYME DOMINATES: a single knockdown blocks FGF-induced
+    dephosphorylation and that enzyme becomes the target, which immediately tells us whether the human
+    genetics is for or against us. REDUNDANT: no single knockdown suffices and only combinations work, in
+    which case a selective inhibitor cannot be built and the arm needs a pan-PPP agent with all its
+    liabilities. PP5 IS THE ENZYME: the worst case, because the PPP5C height direction then argues the
+    mechanism should not be pushed at all in humans, and it would explain why LB-100 works in mouse assays
+    while the human genetics runs the other way.'
 - gap_id: g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
   question: Does any phosphatase inhibitor lengthen a bone in a living animal - as opposed to in organ culture -
     and does it do so without the cranial and systemic costs?
