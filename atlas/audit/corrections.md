@@ -5926,3 +5926,64 @@ both agents actually move it the same way.
 **Unresolved and pointing the wrong way for this case:** `hakata2024`'s age gate. Sacubitril worked at
 3–4 weeks and was 99 % of control at 4–5 weeks. Nobody has tested whether the NPR-C arm shares that gate,
 and a late-bone-age subject is exactly where it would bite.
+
+## CORR-153 — the wild-type femur figure in the round-141 projection mixed a tibia number into a femur range (round 145)
+
+`the_verdict_on_the_cnp_axis_for_this_case` scales the human CNP effect to a normal FGFR3 background using
+`wagner2021`, and states:
+
+> wagner2021 gives 4.3 to 8.8 per cent femur gain in wild-type FGFR3 against 12.6 per cent in G380R, a
+> ratio of 0.34 to 0.70
+
+`wagner2021` read at source (PMC8262296, open access, fetched this round) gives **femur** length increase
+from GC-B-7E expression as:
+
+| background | male | female |
+|---|---|---|
+| FGFR3-G380R/G380R | **12.6 %** | **7.9 %** |
+| FGFR3-WT/WT | **4.3 %** | **5.0 %** |
+
+The wild-type femur figures are **4.3 % and 5.0 %**, not "4.3 to 8.8". The 8.8 is a **tibia** number from
+this atlas's own `shuhaibar2017` recomputation and does not belong in a femur range.
+
+The ratio must also be taken **within sex**, since the paper reports a large sex effect in this model
+(two G380R alleles shorten males 11.4 % and females 8.6 %). Corrected: male 4.3/12.6 = **0.34**, female
+5.0/7.9 = **0.63**. So the scaling ratio is **0.34–0.63**, not 0.34–0.70.
+
+**Effect on the conclusion: small but real.** It trims the top of the projected range; the order of
+magnitude — ligand arm worth centimetres, phosphatase arm worth about one — is unchanged, and that
+projection was already grade E. Logged because the number is now cited in three nodes.
+
+**Rule:** when a range is assembled from two sources, each endpoint must name its own source and endpoint
+type. A range whose top comes from a different bone than its bottom is not a range.
+
+## CORR-154 — "only agonist chemistry exists for NPR3" was refuted by the very paper the atlas cited for it (round 145)
+
+`the_compound_this_thread_needs` derives the ideal molecule as a **sub-kilodalton, NPR3-selective
+antagonist**, and then records that the published chemistry runs the wrong way:
+
+> smith2022 published a bis-aminotriazine series against NPR-C … but those compounds are AGONISTS,
+> developed for vascular relaxation, which is the wrong direction.
+
+That is true of the series `smith2022` *reports*. It is not true of the paper. **`smith2022` uses
+M372049 as its NPR-C ANTAGONIST control** — "Selective NPR-C agonism in rat aorta and SMA was confirmed by
+the complete inhibition of cANF4–23-induced vasodilatation in the presence of the antagonists M372049 or
+osteocrin" — and introduces it in its own Figure 2 as "NPRC antagonist M372049."
+
+**M372049 is a peptidomimetic NPR-C antagonist**, and `porter2020` publishes a **detailed synthesis
+requiring no specialised apparatus**, building on a prior **Veale** patent — the same lineage as
+`veale2000`, which this atlas had already registered without connecting the two. An X-ray structure of a
+key intermediate confirms stereochemistry. It is explicitly **not commercially available**, which is why
+a synthesis paper exists at all.
+
+**So the compound the constraints specify is not hypothetical and does not need to be invented.** It needs
+to be *made*, from a published route, and then tested against an endpoint nobody has used it for.
+
+**The failure was reading a paper for its conclusion and not for its controls.** `smith2022` was in this
+bibliography, marked open access, `full_text_read: None` — the antagonist was named in its abstract-adjacent
+figure legends and in its results. **Rule: a paper's negative controls and tool compounds are data. When
+searching for chemical matter, read the methods and controls, not the title claim.**
+
+**What is still unknown about M372049 and gates its use:** molecular weight, potency, **selectivity against
+NPR-A and NPR-B**, any pharmacokinetics, and whether it has ever been given to a growing animal. No bone or
+growth endpoint exists for it in any species.
