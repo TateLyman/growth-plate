@@ -5481,3 +5481,49 @@ a single surgery. No serial surgery, no later start.
 Not an error of fact — the 200-series numbers were right — but a conclusion drawn from a partial table
 when the complete one was one request away. **Rule:** before concluding that a constraint forces a
 redesign, check whether the constraint applies to the whole product family or only the variant in hand.
+
+## CORR-138 — the 90 nM endothall IC₅₀ in circulation is a dropped digit, and the chain is now documented (round 139)
+
+CORR-136 preferred `li1993`'s **970 nM** over `rollema2025`'s **95 nM** on the grounds that li1993 is the
+more conventional enzymology. That preference is now a demonstration.
+
+A 2022 review (PMC9737803) states: *"Endothall… distinctively inhibits PP1 and PP2A with IC₅₀ values of
+**5.0 μM and 90 nM** respectively [112]."* Reference **112 is li1993**. li1993 Table 4 gives **PP1 5000 nM
+and PP2A 970 nM**. The PP1 figure matches exactly; the PP2A figure has lost a digit — **970 → 90**.
+
+li1993's own prose settles it independently: *"PP2A was more sensitive than PP1 by 12-fold for CA and its
+dicarboxylic acid and **5-fold for palasonin and endothall**."* 5000/970 = **5.2**. 5000/90 would be **56**.
+
+So 970 nM is right, the ~90 nM figure is a transcription error, and `rollema2025`'s 95 nM is within
+rounding of the erroneous value. Whether rollema2025 inherited it or measured it independently cannot be
+determined without its full text — the coincidence is strong but circumstantial.
+
+**And a broader warning from the same literature, which the atlas should carry.** The 2026 RSC review of
+this chemotype states that reported PP1/PP2A IC₅₀ values *"can vary by orders of magnitude across
+different studies, with selectivity profiles ranging from PP1-selective to non-selective to
+PP2A-selective"*, and that internal controls span **more than a 20-fold range**. **The enzyme IC₅₀ is not
+a reliable anchor for any dose calculation in this series.** The design does not depend on it — the target
+concentration comes from the **in-tissue EC₅₀ of 0.69 µM fitted from Figure 1F**, a functional measurement
+in the target tissue. The enzyme value served only as a consistency check, and it passed.
+
+**Rule tightened:** when a number is quoted by a review that cites a primary source the atlas holds,
+check the primary before using it — *even when the review agrees with another source you already have*.
+Two sources agreeing is not independent confirmation if one is copying the other.
+
+## CORR-139 — two get-list items retired by analysis rather than by fetching (round 139)
+
+**The rat blood dry-weight fraction.** Round 138 flagged this as the one assumption in the Vd/CL
+derivation that does not cancel. It is now bounded from inside the source: cross-multiplying Soo Table
+III-1 (% of dose per organ) against Table III-2 (cpm/100 mg dry) implies dry organ masses that are
+**0.71–0.93 of physiological expectation** across liver, kidney, heart, lung, spleen and brain. The two
+tables are mutually consistent, which validates the framework and the specific activity. Vd lands at
+**0.20–0.35 L/kg** and is independent of the assumed blood volume, which cancels.
+
+**Pump stability at 37 °C.** Not a missing document — ALZET's own guidance instructs each investigator to
+generate it: incubate the filled solution at 37 °C for the planned duration and assay against fresh, then
+run an in vitro pumping-rate test in 0.9 % saline at 37 ± 0.5 °C. Moved from the get-list into the
+protocol as a pre-study step.
+
+**Neither was an error.** Both were items I had classified as "needs fetching" that turned out to be
+answerable with what was already on disk. **Rule:** before adding an item to a get-list, ask whether it
+can be bounded from data already held, or whether it is a bench step misfiled as a document.

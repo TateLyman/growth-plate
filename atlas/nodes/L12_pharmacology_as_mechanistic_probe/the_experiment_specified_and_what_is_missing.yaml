@@ -606,6 +606,67 @@ quantitative:
     the fastest-growing window and is arguably the right shape, but it must be reported as a dose
     TRAJECTORY and not a dose. And the 6-week nominal duration assumes the pump behaves at 37 degrees for
     42 days with this particular solute, which is unverified for endothall.'
+- parameter: 'ROUND 139 - THE 90 NANOMOLAR IC50 IN CIRCULATION IS A DROPPED DIGIT, AND THE CHAIN IS
+    NOW DOCUMENTED'
+  value: 'a 2022 review states that endothall inhibits PP1 and PP2A with IC50 values of 5.0 micromolar and
+    90 NANOMOLAR, citing li1993. li1993 Table 4 gives 5000 and 970 nanomolar. THE PP1 FIGURE MATCHES
+    EXACTLY AND THE PP2A FIGURE HAS LOST A DIGIT. li1993 own text settles it independently: PP2A is more
+    sensitive than PP1 by 5-fold for endothall, and 5000 over 970 is 5.2 whereas 5000 over 90 would be 56'
+  unit: nanomolar
+  conditions: 'The review is Reproductive-tract phosphatase inhibitor survey PMC9737803, 2022, whose
+    reference 112 was checked and is li1993. rollema2025 independently reports 95 nanomolar, which is
+    within rounding of the erroneous 90.'
+  species: not_applicable
+  source_ref: li1993
+  uncertainty: 'THIS UPGRADES CORR-136 FROM A PREFERENCE BETWEEN TWO SOURCES TO A DOCUMENTED
+    TRANSCRIPTION ERROR. The atlas can now say WHY 970 is right rather than merely that it prefers li1993:
+    the value is confirmed by the ratio stated in the same paper text. What cannot be said is that
+    rollema2025 inherited the error rather than measuring 95 independently - its full text has not been
+    read and the coincidence, while strong, is circumstantial.
+    AND THERE IS A LARGER WARNING FROM THE SAME LITERATURE. The 2026 Royal Society of Chemistry review of
+    this chemotype states that reported PP1 and PP2A IC50 values VARY BY ORDERS OF MAGNITUDE ACROSS
+    STUDIES, with selectivity profiles ranging from PP1-selective through non-selective to PP2A-selective,
+    and that internal controls span more than a 20-fold range. SO THE ENZYME IC50 IS NOT A RELIABLE
+    ANCHOR FOR ANY DOSE CALCULATION IN THIS SERIES. THE DESIGN DOES NOT DEPEND ON IT: the target
+    concentration comes from the in-tissue EC50 of 0.69 micromolar fitted from Figure 1F, a functional
+    measurement in the target tissue. The enzyme IC50 served only as a consistency check, and it passed.'
+- parameter: 'THE DRY-WEIGHT FRAMEWORK IS VALIDATED BY THE DATA ITSELF, SO THE VOLUME OF DISTRIBUTION NO
+    LONGER RESTS ON AN OUTSIDE ASSUMPTION'
+  value: 'cross-multiplying Soo Table III-1 (per cent of dose per organ) against Table III-2 (cpm per 100
+    mg dry tissue) implies dry organ masses of 1900 mg liver, 327 kidney, 151 heart, 213 lung, 115 spleen
+    and 284 brain - which are 0.85, 0.93, 0.91, 0.71, 0.87 and 0.72 of the physiological expectation for
+    a 200 g rat. And the derived volume of distribution, 0.20 to 0.35 L/kg, is INDEPENDENT of the assumed
+    blood volume, which cancels'
+  unit: milligrams dry, and ratio to expectation
+  conditions: 'Computed at round 139 from the two tables in epa_dwcd_endothall_1992 with a total dose of
+    407000 cpm. Reference wet organ masses for a 200 g rat with conventional dry fractions of 0.20 to
+    0.28. Blood cancels because the fraction of absorbed drug residing in blood scales with blood volume
+    in the same way the volume of distribution divides by it.'
+  species: rat
+  source_ref: epa_dwcd_endothall_1992
+  uncertainty: 'SIX ORGANS AGREE WITH PHYSIOLOGY TO WITHIN 7 TO 29 PER CENT, WHICH IS AS GOOD AS THIS KIND
+    OF CROSS-CHECK GETS on 1967 data read through a 1992 scan by optical character recognition. The
+    systematic shortfall of about 15 per cent is what you would expect if the rats were slightly smaller
+    than the assumed 200 g or the dry fractions slightly higher. THE CONSEQUENCE IS THAT THE
+    ROUND-138 GET-LIST ITEM FOR A RAT BLOOD DRY-WEIGHT FRACTION IS RETIRED - it was the one assumption
+    that did not cancel, and it is now bounded by the internal consistency of the source rather than by
+    an outside physiological constant. Blood holds about 2 per cent of the dose at 1 hour, which is
+    roughly a fifth of the absorbed drug, the rest being extravascular.'
+- parameter: 'THE PUMP-STABILITY ITEM IS NOT A DOCUMENT - IT IS A PRE-STUDY BENCH STEP, AND THE
+    MANUFACTURER SPECIFIES IT'
+  value: 'fill a small sterile tube with the intended solution, cap tightly, incubate at 37 degrees for
+    the planned duration and assay against a freshly made sample; then run an in vitro pumping-rate test
+    in 0.9 per cent saline at 37 plus or minus 0.5 degrees. Temperatures above 42 degrees cause
+    fluctuating delivery and are excluded'
+  unit: qualitative protocol
+  conditions: 'ALZET technical guidance on formulating the solution and on in vitro use. The nominal
+    pumping rates for every model assume 37 degrees.'
+  species: not_applicable
+  source_ref: alzet_pump_specs
+  uncertainty: 'MOVED OFF THE GET-LIST AND INTO THE PROTOCOL. Nobody publishes endothall-in-a-pump
+    stability because the manufacturer expects each investigator to generate it, and it is two days of
+    work. It stays a real risk - a six-week implant at 37 degrees is a long time for any solute - but it
+    is no longer a missing document.'
 - parameter: 'THE ELEVEN MISSING ITEMS, ORDERED BY HOW MUCH EACH MOVES THE DESIGN'
   value: 'one blocking, three that set the dose, three that set the interpretation, four that set the
     logistics'
@@ -765,6 +826,11 @@ key_refs:
   type: regulatory
   role: reproduces the Soo 1967 per-organ time course including blood, muscle and fat, from which volume
     of distribution and clearance are derived
+- ref_id: soo1967
+  year: 1967
+  type: primary_abstract_only
+  role: the primary source of every distribution number in this node, identified at round 139 and NOT
+    read - the numbers come from its tables as reproduced by the 1992 EPA document
 open_questions:
 - g_l12_endothall_exposure_and_juvenile_tolerability
 - g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor

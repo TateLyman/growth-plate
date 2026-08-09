@@ -424,3 +424,54 @@ verification. | The only untested logistical assumption left in the protocol. |
 2. **Cartilage concentration** at a given plasma concentration. Best proxy now available: muscle at 0.16
    of blood, with a predicted further 3–7× Donnan penalty for a dianion in an anionic matrix.
 3. Does continuous endothall change a **bone length** in a growing animal.
+
+---
+
+## Round 139 — four of five closed without a download; here is what is genuinely left
+
+Before asking for more, I chased all five items myself. **Four are closed.**
+
+- **Soo et al. 1967 — IDENTIFIED EXACTLY.** SERA's bibliography line, matched against CrossRef:
+  **Soo Alexander, Tinsley Ian J, Fang Sheng Chung. "Metabolism of endothall-14C in rats."
+  *J Agric Food Chem* 1967;15(6):1018–1021. DOI 10.1021/jf60154a030.** Not indexed in Europe PMC
+  (which is why `addref.py` refused the DOI) and not open access (Unpaywall: no OA locations).
+- **The IC₅₀ dispute — SETTLED without rollema2025.** The 90 nM figure in circulation traces to a
+  dropped digit from li1993's 970 (CORR-138), confirmed by li1993's own stated 5-fold PP2A:PP1 ratio.
+- **The blood dry-weight fraction — RETIRED.** Bounded from inside the source by cross-checking Soo's
+  two tables against each other (CORR-139).
+- **Pump stability — RETIRED.** It is a bench step the manufacturer expects the investigator to run,
+  not a document (CORR-139).
+
+### WHAT IS ACTUALLY LEFT — three items, all verification rather than blocking
+
+| V1 | **Soo et al. 1967** — J Agric Food Chem 15(6):1018–1021, **DOI 10.1021/jf60154a030**. | Everything
+this atlas says about endothall distribution is read from that paper's tables **as reproduced in the 1992
+EPA document and OCRed from a scan**. The paper itself would (a) verify the OCR'd numbers against the
+original, (b) supply anything the EPA adaptation dropped — wet weights, the 24/48/72 h columns, the
+lactation arm in detail. **Routes, in order of likely success:** any university library with ACS legacy
+access (the whole JAFC back-file is standard); ACS pay-per-view at the DOI; interlibrary loan;
+or — the long shot worth one try — **ScholarsArchive@OSU** (`ir.library.oregonstate.edu`, search
+"endothall"), because Tinsley and Fang were Oregon State faculty and "Soo Alexander" reads like a
+graduate student, so a 1966–67 OSU thesis containing the same data may be deposited free. Their catalogue
+is a JavaScript app I cannot scrape; a human search takes ten seconds. |
+
+| V2 | **rollema2025** — Int J Pharm 672:125317, **DOI 10.1016/j.ijpharm.2025.125317**, PMID 39909155.
+Closed access, no repository copy (checked Unpaywall and OpenAIRE; Dutch OA mandate did not produce a
+deposited manuscript). | **No longer on the critical path.** Its two contributions were the hydrolysis
+half-life — independently corroborated at ~5 h by another group — and the IC₅₀, now settled against
+li1993. Worth having only to confirm whether its 95 nM was measured or inherited. Cheapest route is an
+email to the corresponding author. |
+
+| V3 | **The independent LB-100 hydrolysis / PP5-selectivity paper.** The 2026 RSC review (PMC12772682,
+open) says *"Li and coworkers… showed LB-100 readily hydrolyzes in water with only 14 % remaining after
+8 h and a half-life of 5 h in plasma"* — its reference 68. I could not resolve that reference from the
+OCR of the review's citation list; **Ahanin et al. 2023, Cell Chem Biol (PMID 37527661)** is the most
+likely candidate but is unconfirmed. | This would replace a review citation with a primary for the
+hydrolysis half-life, which is currently doing real work in the Figure 1F conversion. Low cost: the
+review's reference 68 can be read straight off the published article's reference list. |
+
+### AND THE THREE BENCH ITEMS, UNCHANGED
+
+1. Does **endothall itself** block FGF-induced NPR2 dephosphorylation? Never tested.
+2. **Cartilage concentration** at a given plasma concentration. Best proxy: muscle at 0.16 of blood.
+3. Does continuous endothall change a **bone length** in a growing animal.
