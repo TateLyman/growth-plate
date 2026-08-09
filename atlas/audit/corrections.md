@@ -6591,3 +6591,39 @@ change argued for on partition grounds is the same one that distinguishes the ab
 This reopens the route the PAM node itself named as "the only route by which this node returns to the top
 of the list." **Graded E** — ideal Donnan is least trustworthy for a lipophilic cation, which binds the
 very polyanions that generate the term.
+
+---
+
+## CORR-173 — the charge screen counted an amine as basic that almost certainly is not
+
+**Round 157. Self-caught while inspecting the structures the screen returned.**
+
+Round 156 argued for a **cationic** analogue of the GC-B PAM scaffold, because a monovalent cation is
+Donnan-**concentrated** in the polyanionic plate (1.8–2.7× free plasma) rather than merely admitted. To
+find one, round 157 profiled all 253 GC-B-selective screening actives with an RDKit SMARTS rule for basic
+centres. It returned 16 cationic compounds, and the best of them — **CID 647514, Tanimoto 0.709 to
+MCUF-42** — turned out to be **compound 1, the published primary hit itself**.
+
+**That charge call is wrong.** Compound 1's free piperazine nitrogen carries a **2-cyanoethyl** group and
+sits across the ring from a **thioamide**. Both are strongly electron-withdrawing; a β-cyanoethyl alone
+drops an aliphatic amine pKa by roughly 2–3 units. Compound 1 is almost certainly **largely neutral at pH
+7.4**, partitioning like MCUF-42 near 0.97 with **no Donnan gain**.
+
+The SMARTS rule tests *connectivity* — is this nitrogen an amide, a sulfonamide, an aniline, a nitrile —
+and is blind to **inductive effects transmitted through bonds it does not match**. It is a topology filter
+being used as a pKa predictor.
+
+**What survives, and it is still the useful part.** The genuinely basic candidate in the same series is
+**CID 3588620**, the **N-methylpiperazine** analogue — same core, no cyanoethyl, only the thioamide
+deactivation — a GC-B-selective active at 50.37% at 10 µM, purchasable from seven vendors.
+
+**And the SAR forbids the obvious fix.** `ma2024` reports R2 = H — the free piperazine NH, the most basic
+option — as **inactive** (compound 11), along with aryl and benzyl. That position *requires* a small
+electron-withdrawing H-bonding group. **The one site that would most easily carry a base is the one site
+the SAR says must carry an electron-withdrawing group.** A basic centre has to go elsewhere.
+
+**No pKa was measured or found** for any compound in this series; PubChem holds no dissociation-constant
+record even for 1-acetylpiperazine. The only experimental anchor is the parent ring (piperazine pKa₁ 9.73,
+pKa₂ 5.33). Everything above is directional reasoning from substituent effects and is graded as such — new
+gap `g_l12_pka_and_cartilage_uptake_of_the_gcb_pam_series`, whose first step is one titration on a
+catalogue compound.
