@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 157.** Repo: 686 nodes, 357 gaps, 1340 refs, validator errors none.
+Last updated: **2026-08-09, after round 159.** Repo: 687 nodes, 358 gaps, 1345 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -49,6 +49,29 @@ Charge probe: `CID 3588620`, the N-methylpiperazine analogue, 50.37% @10 µM, 7 
 potentiator raises vascular signalling at least as much as plate signalling. The cationic route is the
 only proposed escape and it is unmeasured.
 
+**Round 159 — A vs B settled: they MULTIPLY, and B gates A.** Three kinetic handles, three arms, no
+overlap: ligand moves **Vmax** (>10×, `robinson2012`), KHD phosphorylation **gates** whether Vmax can move
+(`yoder2012`; 6E only ~20% of WT), KHD allostery moves **Km** and is **phosphorylation-independent**
+(`edmund2019`). MCUF-42 is a pure **potency**-shifter with no Eₘₐₓ change, and `robinson2017` says
+dephosphorylation is **not surmountable by ligand** — so a potency-shifter **cannot rescue a
+dephosphorylated receptor**. Synergy, not additivity. Corollary: the PAM is worth **more** in a
+normal-FGFR3 subject than in achondroplasia — opposite to how every trial is powered.
+
+**New interaction found: `prickett2021` — exogenous CNP agonism SUPPRESSES endogenous CNP production**
+in humans (−4.2 to −5.0 pmol/L NTproCNP at 4 h from day 183, p=0.003–0.015; replicated in
+hypochondroplasia by `kanakatti2026`). A PAM has **no intrinsic activity** — it multiplies endogenous
+ligand, which this loop shrinks. **So the PAM needs a feedback-immune exogenous analogue underneath it.**
+Inverts the round-156 framing: the peptide isn't displaced by the small molecule, it's what makes it work.
+
+**THE decisive open question (`g_l12_does_the_gcb_pam_potentiate_vosoritide`): does MCUF-42 potentiate
+vosoritide, or only native CNP?** ma2024 tested CNP only. One plate, two purchasable reagents. Extend the
+same plate to GC-B-7E vs WT under FGF challenge and it answers the gating claim too.
+
+**Rivals checked, none displaces either arm:** BMN 333 = better control point A, not a third arm;
+KK8398 = infigratinib under a Kyowa Kirin code, already in the stack; activating antibodies (`liu2026`,
+XX16 works in vivo) are **dead on delivery at ~150 kDa** against a farnum2006 curve that is undetectable
+by 40 kDa.
+
 ---
 
 ## THREAD B — the phosphatase arm (OPEN but HELD)
@@ -57,6 +80,11 @@ Fostriecin has the right enzyme selectivity (PP2A 1.4 nM vs **PP5 60 µM measure
 wrong charge (dianion, partition 0.21). Candidate is a neutral phosphate-masked prodrug (~4.3× gain,
 CORR-167). **Does not exist**; no fostriecin prodrug has ever been made. Not cheap to make — the
 `jiang2025` nine-step route needs an **engineered enzyme** for its key C–H oxidation.
+
+**Round 159 verdict: KEEP the control point, but "keep" here means the mechanism, NOT a drug.** It is not
+redundant with Thread A — different kinetic handle — but it has no compound, no identified enzyme, and
+SD-008 bars planning on identification. Its incremental value in a stack that already contains an FGFR
+inhibitor is bounded by the **1.42× tonic, FGF-independent** component.
 
 **OPEN:** `g_l12_fostriecin_pp4_versus_pp2a_attribution` — re-run the existing `swingle2009` ten-analogue
 panel **with a PP4 column**. `theobald2013` shows PP4C knockdown alone reproduces fostriecin's cellular

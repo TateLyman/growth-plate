@@ -7454,6 +7454,47 @@ gaps:
     liabilities. PP5 IS THE ENZYME: the worst case, because the PPP5C height direction then argues the
     mechanism should not be pushed at all in humans, and it would explain why LB-100 works in mouse assays
     while the human genetics runs the other way.'
+- gap_id: g_l12_does_the_gcb_pam_potentiate_vosoritide
+  type: known_unknown
+  layer: L12
+  tractability: 1
+  question: Does MCUF-42, or any GC-B positive allosteric modulator, potentiate VOSORITIDE and other CNP
+    analogues - or only native CNP?
+  why_it_matters: 'THE WHOLE PAIRING DEPENDS ON THIS ONE ANSWER, AND IT HAS NEVER BEEN ASKED. A PAM has no
+    intrinsic activity - MCUF-42 makes no cGMP at all without CNP - so it can only multiply ligand that is
+    present. prickett2021 then shows that raising pathway output SUPPRESSES ENDOGENOUS CNP PRODUCTION in
+    humans, by 4 to 5 pmol/L NTproCNP at 4 h from day 183 onward and progressively over the first three
+    months of accelerating growth. So a PAM given alone is partly multiplying a pool it is itself
+    shrinking. An exogenous analogue is immune to that loop because its concentration is set by the
+    syringe. IF THE PAM POTENTIATES VOSORITIDE, the pair is mutually reinforcing and both control points
+    stay. IF IT POTENTIATES ONLY NATIVE CNP, the PAM is capped by a feedback loop and the pairing that
+    would rescue it does not exist.'
+  what_is_known: 'ma2024 characterised MCUF-42 against NATIVE CNP only: EC50 0.80 microM, Emax 86 per cent,
+    4-fold cGMP potentiation, 6.4-fold left-shift of the CNP curve with no change in maximal response, and
+    SPR binding to the GC-B EXTRACELLULAR domain at KD 710 nM with a 2.6-fold acceleration of CNP
+    association. Vosoritide is a modified 39-residue CNP that binds the same receptor. Compound 1
+    (CID 647514, CAS 332862-27-8) is the purchasable member of the same series with a higher Emax at
+    112 per cent.'
+  what_is_missing: 'NO PAM HAS BEEN TESTED AGAINST ANY CNP ANALOGUE. Not vosoritide, not navepegritide, not
+    BMN 333, not CNP-38. Since MCUF-42 works by accelerating ligand association at the extracellular
+    domain, the answer depends on whether the analogue engineering that confers protease resistance and
+    half-life also alters the association step the PAM acts on - which nobody has looked at. Also untested:
+    whether a PAM potentiates on a DEPHOSPHORYLATED or phosphomimetic receptor, which is the other half of
+    the gating question.'
+  nearest_evidence: [ma2024, prickett2021, kanakatti2026, andresen2023, robinson2017]
+  nearest_evidence_note: A PAM characterised only against native ligand, and a human feedback loop that
+    specifically penalises agents which multiply endogenous ligand.
+  discriminating_experiment: 'ONE PLATE, TWO PURCHASABLE REAGENTS. Run the ma2024 HEK293/GC-B cGMP assay
+    with a vosoritide concentration-response in the absence and presence of MCUF-42 or compound 1, exactly
+    as ma2024 did for CNP, and read the EC50 shift. Vosoritide is a licensed product and compound 1 is a
+    catalogue compound at CAS 332862-27-8. Readouts under competing hypotheses - SIMILAR LEFT-SHIFT TO CNP
+    (about 6-fold): the pairing works, the PAM escapes the feedback cap by riding on exogenous ligand, and
+    control points A and C are jointly retained. NO SHIFT: the PAM only reads native CNP, its substrate is
+    under active negative feedback, and its ceiling is set by a loop no dose can overcome - which would
+    make the andresen2023 efficacy-raising chemotype the only viable allosteric route. PARTIAL SHIFT:
+    quantify it, because the fold-shift IS the value of the pairing. EXTEND THE SAME PLATE to the
+    phosphorylation question by running it in cells expressing GC-B-7E versus wild type under FGF
+    challenge - that answers the gating claim in the same experiment.'
 - gap_id: g_l12_pka_and_cartilage_uptake_of_the_gcb_pam_series
   type: known_unknown
   layer: L12
