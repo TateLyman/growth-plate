@@ -5987,3 +5987,62 @@ searching for chemical matter, read the methods and controls, not the title clai
 **What is still unknown about M372049 and gates its use:** molecular weight, potency, **selectivity against
 NPR-A and NPR-B**, any pharmacokinetics, and whether it has ever been given to a growing animal. No bone or
 growth endpoint exists for it in any species.
+
+## CORR-155 — the compound the constraints specified exists, is 887 Da, and is named. Four source reads, round 146
+
+`the_compound_this_thread_needs` derives the ideal molecule as **"a SUB-KILODALTON, NPR3-SELECTIVE
+ANTAGONIST that partitions freely into growth-plate cartilage"** and records that no such thing was found.
+Four user-supplied full texts plus a PubChem lookup close that gap.
+
+**M372049 is 887.0 Da, C43H58N12O9 (PubChem CID 59787819)** — a modified pentapeptide (WO 00/61631,
+*"Modified Pentapeptide Antagonists of the Atrial Natriuretic Peptide Clearance Receptor"*), called by
+`porter2020` **"presently considered to be the best-in-class NPR-C antagonist."** It is sub-kilodalton,
+which is the single property the specification demanded and which no peptide candidate had. `porter2020`
+publishes a synthesis requiring no specialised apparatus. It is **not commercially available**, which is
+why that paper exists.
+
+**Ranked on the farnum2006 partition curve** (≈100 % at 332 Da, ≈60 % at 3 kDa, ≈10 % at 10 kDa):
+
+| agent | mass | note |
+|---|---|---|
+| **M372049** | **887 Da** | best partition; net charge ≈ neutral (one Arg vs one Asp) |
+| Nishizawa compound 23 | ~1.36 kDa (atlas-computed from sequence) | measured IC50 hNPR3 **0.079 nM** |
+| osteocrin, mature human | 5.6 kDa, 50 aa | the proven biology |
+| vosoritide | ~4.1 kDa | |
+| navepegritide | PEGylated | |
+
+**Neither antagonist is cationic**, which this atlas argues for on Donnan grounds in polyanionic matrix.
+Recorded as a design note, not a defect.
+
+**Three other things the source reads settled.**
+
+1. **`robinson2017` non-surmountability is confirmed verbatim** — "FGF2 inhibited CNP dependent GC-B
+   activity at sub-saturating (100 nM) and saturating (1 μM) CNP concentrations with a similar IC50 of
+   approximately 5 ng/ml FGF2." The claim this atlas had been carrying at abstract level, and which
+   carries the entire orthogonality argument for the phosphatase arm, survives at source. Upgraded to
+   `primary`.
+
+2. **The clearance-blocker + ligand pairing is additive pharmacologically, not just genetically.**
+   `nishizawa2017` Fig 3: compound 23 alone significantly raised blood cGMP, and "the combination of 23
+   and mANP showed an **additive** effect," by osmotic-pump infusion in mice. That is a second,
+   independent confirmation of `kanai2017`'s genetic additivity — with a drug. CORR-152 stands and is
+   now double-sourced.
+
+3. **Osteocrin lengthens the LUMBAR SPINE.** `kanai2017` full text: lumbar spine, radius, ulna, humerus,
+   femur, tibia and longitudinal skull all significantly longer, **skull width unchanged** — endochondral-
+   selective, and it includes the compartment this case has reserve in.
+
+**What is still missing, and it is now a property of the literature rather than of our access.**
+`nishizawa2017` Tables 1 and 3 have columns for **hNPR1 and hNPR3 only — NPR2/NPR-B was never assayed.**
+NPR-B is the receptor whose vascular activation sets the ceiling on this entire axis. No NPR-B selectivity
+figure exists for compound 23, and none was located for M372049 either.
+
+**And a caution on M372049 that cuts against enthusiasm:** every published use of it — `villar2007`,
+`smith2022` — deploys it to **block CNP-mediated vasorelaxation**, i.e. to demonstrate the vascular action
+this atlas wants to avoid. It is a proven vascular-active NPR-C blocker with no skeletal endpoint in any
+species.
+
+**`kanai2017` also flagged the cardiovascular question in 2017 and explicitly left it open** — "we have
+yet to check the blood pressure of our transgenic mice." `lauffer2022` answered it in humans eight years
+later, favourably (CORR-151). They also state exogenous OSTN administration to model animals was **ongoing
+in their laboratory** in 2017; no such report has been located.

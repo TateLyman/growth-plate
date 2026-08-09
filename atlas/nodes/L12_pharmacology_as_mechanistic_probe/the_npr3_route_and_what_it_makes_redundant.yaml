@@ -72,16 +72,22 @@ quantitative:
     inhibition is NOT SURMOUNTABLE BY LIGAND - the same IC50 at sub-saturating (100 nM) and saturating
     (1 microM) CNP. A 7-glutamate phosphomimetic receptor is completely FGF-RESISTANT'
   unit: qualitative - surmountability
-  conditions: robinson2017, rat chondrosarcoma cells. PRIMARY_ABSTRACT_ONLY in this atlas; the
-    non-surmountability detail is carried from the round-141 verdict node rather than read at source.
+  conditions: 'robinson2017, RCS rat chondrosarcoma cells and crude membranes. FULL TEXT READ AT SOURCE
+    2026-08-09 (round 146) and the claim is confirmed verbatim: "FGF2 inhibited CNP dependent GC-B activity
+    at sub-saturating (100 nM) and saturating (1 microM) CNP concentrations with a similar IC50 of
+    approximately 5 ng/ml FGF2" (Fig 2A). Kinetics t1/2 about 7 min, maximal by 15 min at both CNP
+    concentrations, sustained at least 1 h, rapidly reversible. FGFR3 mRNA in this line is 8-fold above
+    FGFR1, itself 100-fold above FGFR2 and 50-fold above FGFR4, so the effect is FGFR3-dominant.'
   species: rat
   source_ref: robinson2017
-  uncertainty: 'THIS IS THE LOAD-BEARING MECHANISTIC CLAIM FOR KEEPING THE PHOSPHATASE ARM AND IT IS
-    ABSTRACT-LEVEL IN THIS ATLAS, which is a real weakness for a claim doing this much work. If the
-    inhibition WERE surmountable, then raising ligand by any route would substitute for phosphatase
-    inhibition and the arm would collapse into the ligand arm. Rat chondrosarcoma cells are a transformed
-    line, not a growth plate. THE FULL TEXT SHOULD BE READ BEFORE THIS ARGUMENT IS RELIED ON FURTHER - it
-    is the single highest-value unread paper on this branch.'
+  uncertainty: 'THIS IS THE LOAD-BEARING MECHANISTIC CLAIM FOR KEEPING THE PHOSPHATASE ARM AND IT NOW
+    SURVIVES A SOURCE READ, which upgrades it from the abstract-level status it held when this node was
+    written. If the inhibition WERE surmountable, raising ligand by any route would substitute for
+    phosphatase inhibition and the arm would collapse into the ligand arm; it is not, so the arm stands
+    orthogonal. WHAT STILL LIMITS IT: RCS cells are a TRANSFORMED CHONDROSARCOMA LINE, not a growth plate,
+    and the readout is guanylyl cyclase activity in crude membranes rather than bone length. The
+    non-surmountability is demonstrated against FGF2 concentration, not against a CNP dose-response run to
+    saturation at fixed FGF - which is the stricter version of the experiment and has not been done.'
 - parameter: 'THE PART OF THE PHOSPHATASE BRAKE THAT SURVIVES AN FGFR INHIBITOR - AND THE SAME NUMBER IS
     THE ARM SELECTIVITY PROBLEM'
   value: '100 micromolar cantharidin alone raised the CNP response 1.42-FOLD WITH NO FGF PRESENT,
@@ -151,6 +157,34 @@ quantitative:
     overexpression from conception. The partition figures are from a different tracer series and are being
     applied to peptides by size alone, which ignores charge, and this atlas separately argues the ideal
     molecule is CATIONIC - a property neither candidate has been characterised for.'
+- parameter: 'THE COMPOUND THE SPECIFICATION ASKED FOR, NAMED AND MASSED - AND THE ONE NUMBER STILL MISSING'
+  value: 'M372049: C43H58N12O9, MOLECULAR WEIGHT 887.0 Da (PubChem CID 59787819) - a MODIFIED PENTAPEPTIDE
+    NPR-C antagonist from AstraZeneca, called by porter2020 the BEST-IN-CLASS NPR-C antagonist, with a
+    published synthesis needing no specialised apparatus and NO commercial supply. NISHIZAWA COMPOUND 23:
+    binding IC50 hNPR3 0.079 nM against hNPR1 >1000 nM - >12,600-fold selective and 6.5-fold more potent at
+    NPR3 than C-ANP(4-23); serum residual 107 per cent at 2 h and 92 per cent at 4 h; blood levels 10.1 nM
+    at 300 and 40.5 nM at 1000 nmol/kg/day by osmotic pump, about 500-fold over its own IC50. MASS LADDER
+    against the farnum2006 partition curve (about 100 per cent at 332 Da, 60 per cent at 3 kDa, 10 per cent
+    at 10 kDa): M372049 887 Da, compound 23 about 1.36 kDa, mature human osteocrin 5.6 kDa, vosoritide
+    about 4.1 kDa'
+  unit: Da; nM; per cent
+  conditions: pubchem_m372049 (PUG REST API, 2026-08-09) for mass and formula; nishizawa2017 Tables 1-3
+    read in full at round 146; porter2020 for the best-in-class statement and the synthesis; farnum2006 for
+    the partition curve. Compound 23 mass is COMPUTED BY THIS ATLAS from the published sequence, not read.
+  species: not_applicable
+  source_ref: pubchem_m372049
+  atlas_derived: true
+  uncertainty: 'THE MISSING NUMBER IS THE SAME ONE FOR BOTH MOLECULES AND IT IS NOW A PROPERTY OF THE
+    LITERATURE RATHER THAN OF OUR ACCESS. nishizawa2017 Tables 1 and 3 carry columns for hNPR1 and hNPR3
+    ONLY - NPR2/NPR-B WAS NEVER ASSAYED - and no NPR-B figure was located for M372049 either. NPR-B is the
+    receptor whose vascular activation sets the ceiling on this entire axis, so for both candidates the one
+    measurement that would show the molecule escapes the liability does not exist.
+    AND THE PUBLISHED USE OF M372049 CUTS AGAINST IT. Every application located - villar2007, smith2022 -
+    deploys M372049 to BLOCK CNP-MEDIATED VASORELAXATION, that is, to demonstrate the vascular action this
+    atlas wants to avoid. It is a proven vascular-active NPR-C blocker with NO skeletal endpoint in any
+    species. Neither candidate is CATIONIC - M372049 carries one Arg against one Asp, roughly neutral -
+    so neither gets the Donnan enhancement this atlas argues for in polyanionic matrix, though neither
+    takes the penalty an anion would.'
 localization:
 - 'growth plate: all three control points act here, but NPR3 blockade also acts systemically by raising
   the circulating CNP pool that the plate imports'
@@ -213,8 +247,9 @@ key_refs:
   role: the minimised, protease-hardened 11-mer version of the osteocrin pharmacophore
 - ref_id: robinson2017
   year: 2017
-  type: primary_abstract_only
-  role: non-surmountability - the reason no amount of ligand substitutes for phosphatase inhibition
+  type: primary
+  role: non-surmountability - the reason no amount of ligand substitutes for phosphatase inhibition;
+    confirmed at source round 146
 - ref_id: shuhaibar2017
   year: 2017
   type: primary
