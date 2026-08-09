@@ -5826,3 +5826,73 @@ though it were live.
 **Rule:** a check written to catch a failure must be **tested against a known instance of that failure**
 before it is trusted. A green result from an untested checker is not evidence of anything. This one was
 green and wrong.
+
+## CORR-150 — "no NPR3 antagonist has been tested against a bone length endpoint in any species" was false, and the refuting paper was already in this bibliography (round 144)
+
+`the_compound_this_thread_needs` states, as the gap that defines the whole compound campaign:
+
+> WHAT DOES NOT EXIST ANYWHERE FOUND: any NPR3 antagonist tested against a **BONE LENGTH OR HEIGHT
+> ENDPOINT**, in any species.
+
+`watanabetakano2021` — **added to this bibliography 2026-08-08, one round before** — reports periosteal
+**Osteocrin (OSTN)** binding NPR3, preventing NPR3-mediated clearance of CNP, enhancing CNP-dependent
+chondrocyte proliferation and maturation, and **elongating long bones** in mouse. That is NPR3 blockade
+with a bone-length endpoint. The ref's own one-line finding in this bibliography says so.
+
+It is an **endogenous decoy**, not an administered antagonist, and it acts on periosteal osteoprogenitors
+rather than being shown to act inside the plate — so the honest restatement is *"no **pharmacological**
+NPR3 antagonist has been dosed against a bone-length endpoint."* That is a much narrower gap than the one
+the node was carrying, and it changes the campaign from "no biological precedent" to "precedent exists,
+tool compound does not."
+
+**It also closes the mechanical arm onto the CNP arm.** Loading induces Ostn in periosteal osteoblasts by
+suppressing FoxO1 — so *load lengthens bone through the exact node this compound targets*. The ledger has
+carried the mechanical term as "free but internally contradictory" (axial load restrains elongation via
+mTOR, yet running lengthens limb bones). This is a mechanism for the lengthening direction.
+
+**Same failure class as CORR-148: a finding recorded against a REF did not propagate to the NODES.** Twice
+in two rounds. The validator's `unbased_exclusivity` check exists to catch assertions of absence, but it
+only asks whether a search is *named*, not whether the atlas *already holds a counterexample*.
+
+**Rule:** before asserting that something does not exist, grep the bibliography's own `one_line_finding`
+fields for the thing. The atlas is now large enough that it refutes itself faster than it re-reads itself.
+
+## CORR-151 — the cardiovascular ceiling that caps this entire axis is a mouse phenotype that does not appear in humans (round 144)
+
+Every candidate on the CNP axis has died against the same constraint: raising natriuretic signalling
+raises it at **vascular NPR2** too, and the ACcomplisH dose was capped at half the pre-specified maximum by
+an *anticipatory* cynomolgus cardiovascular margin. The NPR3-antagonist route was assumed to inherit it,
+because blocking clearance raises all three natriuretic peptides systemically.
+
+**Reading `lauffer2022` in full — it was `primary_abstract_only` in this atlas — shows the assumption is
+wrong in the species that matters.** Three biallelic NPR3 loss-of-function males:
+
+| | height SDS | blood pressure |
+|---|---|---|
+| Individual 1 (11 y) | +3.03 | 99/62 |
+| Individual 3 (14 y) | +3.9 | 95/54 |
+| Proband (14.7 y) | +3.93 | 111/69 |
+
+Normal haematocrit, plasma creatinine and GFR. The authors state explicitly: **no evidence of volume
+contraction, hypotension, or history of excessive diuresis or natriuresis.** Cardiac evaluation of the
+proband: normal aortic diameter, no heart abnormalities. Proband height **205.1 cm at 14.7 y**, with
+**normal body proportions** (sitting-height ratio and arm span).
+
+**The mouse runs the other way** — the same paper reviews murine NPR-C LoF showing excessive diuresis,
+plasma volume contraction and hypotension in homozygotes. **This is a species dissociation and the human
+direction is the favourable one.**
+
+**Consequence, and it is the reason this is a correction and not just a datum.** Round 122 provisionally
+closed the ligand branch because evading clearance raises systemic exposure, and the escape required the
+plate to be diffusion-limited — the Thiele modelling put that in the least likely fifth of parameter space.
+**That verdict was allowed to cover the clearance-blocker branch too, and it should not have been.** The
+NPR3 antagonist's human proof of concept is a *systemic, lifelong* clearance knockout that produced +3 to
++4 SDS with normal blood pressure. It invokes no local-versus-systemic asymmetry anywhere, so the transport
+result does not bear on it.
+
+**What must travel with this.** n = 3, all children, one family plus two previously published. Lifelong
+germline loss is not the same as pharmacological blockade at unknown occupancy — SD-001's own rule cuts
+both ways and is noted here against my own argument. Scoliosis is part of the NPR3-null phenotype
+(`moffatt2025`), so the shared spinal cost of extreme endochondral growth applies here too. **And the
+proband's bone age was ADVANCED — 11 y 3 m at chronological age 10 y — which is the single most
+unfavourable observation for a late-bone-age case and is recorded here rather than in a footnote.**
