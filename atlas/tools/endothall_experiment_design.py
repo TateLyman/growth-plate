@@ -496,18 +496,20 @@ def soo_pk():
         print(f"      F = {F:.2f}: Vd = {lo:.2f} to {hi:.2f} L/kg")
     print("      -> EXTRACELLULAR-FLUID-LIKE, which is what a dianion should be, and")
     print("         it confirms the 0.20-0.26 L/kg the earlier rounds ASSUMED.\n")
-    pts = [(1, 309), (2, 96), (4, 92), (6, 56), (8, 39)]
+    # Round 139: the full nine-point blood row, READ OFF A 400 dpi RENDER of the
+    # scanned table rather than taken from OCR, which had inserted a spurious 49.
+    pts = [(1, 309), (2, 96), (4, 92), (6, 56), (8, 39), (12, 28), (24, 0)]
     auc = sum((c0 + c1) / 2 * (t1 - t0) for (t0, c0), (t1, c1) in zip(pts, pts[1:]))
-    auc += 309  # crude 0-1 h
-    print(f"  (B) FROM AREA UNDER THE BLOOD CURVE: AUC(0-8 h) about {auc:.0f} cpm.h/100 mg dry")
+    auc += 309 / 2  # 0-1 h, oral rise from zero
+    print(f"  (B) FROM AREA UNDER THE BLOOD CURVE: AUC(0-24 h) = {auc:.0f} cpm.h/100 mg dry")
     print("      CL = F x Dose / AUC")
     for F in (0.07, 0.10):
-        for total in (900, 1400):
+        for total in (1000, 1150):
             mL = 100 / 0.20 / 1000 / 1.06
             auc_mgh_L = total / SOO_SA / mL
             cl = SOO_DOSE * F / auc_mgh_L * 1000
             print(f"      F = {F:.2f}, AUC {total}: CL = {cl:.0f} mL/h/kg")
-    print("      -> CL about 50 to 110 mL/h/kg, consistent with (A) and with the")
+    print("      -> CL about 56 to 98 mL/h/kg, consistent with (A) and with the")
     print("         upper-bound estimate from the 1.8 h half-life.\n")
     print("  REQUIRED INFUSION RATE, mg/kg/day:")
     for cl in (60, 100, 130):
@@ -520,7 +522,7 @@ def soo_pk():
     print("  F: the tolerated absorbed dose is F x 8 mg/kg/day, and the required rate is")
     print("  C_target x F x Dose / AUC. F cancels exactly, leaving")
     print("      margin = NOAEL_oral x AUC / (C_target x Dose_PK x 24)")
-    for total in (900, 1400):
+    for total in (1000, 1150):
         mL = 100 / 0.20 / 1000 / 1.06
         auc_mgh_L = total / SOO_SA / mL
         for tgt, lbl in ((0.7, "EC50 0.7 uM"), (2.0, "near-max 2 uM")):
@@ -528,7 +530,7 @@ def soo_pk():
             m = 8.0 * auc_mgh_L / (c * SOO_DOSE * 24)
             print(f"      AUC {total}, {lbl}: margin = {m:.1f}x")
     print()
-    print("  READ-OFF: about 2.4 to 3.7-fold margin at the fitted EC50, and under 1.3")
+    print("  READ-OFF: about 2.6 to 3.2-fold margin at the fitted EC50, and about 1.0")
     print("  at a near-maximal concentration. THE HALF-MAXIMAL TARGET IS REACHABLE")
     print("  BELOW THE CHRONIC NO-EFFECT DOSE; THE MAXIMAL ONE IS NOT.\n")
 

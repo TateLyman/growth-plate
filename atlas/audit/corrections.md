@@ -5527,3 +5527,50 @@ protocol as a pre-study step.
 **Neither was an error.** Both were items I had classified as "needs fetching" that turned out to be
 answerable with what was already on disk. **Rule:** before adding an item to a get-list, ask whether it
 can be bounded from data already held, or whether it is a bench step misfiled as a document.
+
+## CORR-140 — the OCR invented a value in the blood row; the scan read correctly at 400 dpi (round 139)
+
+Rounds 138–139 derived clearance from the blood row of Soo Table III-2 as tesseract returned it:
+`309, 96, 92, 56, 39, ?, 0, 49, 0` — with two values unreadable and a **49 at 48 h sitting after a 0 at
+24 h**, which I flagged as "internally inconsistent" and worked around by truncating the AUC at 8 h.
+
+Rendering the rotated page at **400 dpi and reading it visually** gives the real row:
+
+**Blood: 309, 96, 92, 56, 39, 28, 0, 0, 0** at 1, 2, 4, 6, 8, 12, 24, 48, 72 h.
+Muscle: 50, 32, 31, then zero from 6 h. Fat: zero throughout.
+
+The 49 was noise; blood falls monotonically to zero by 24 h. Full AUC = **1090 cpm·h/100 mg dry**,
+clearance **56–98 mL/h/kg**, and the margin narrows from 2.4–3.7× to **2.6–3.2×** at the fitted EC₅₀
+(1.8–2.2× at 1 µM, ~1.0× at 2 µM).
+
+**Rule tightened:** OCR output feeding a numeric derivation must be verified against a high-resolution
+render of the source region. Tesseract on a 1992 scan at 200 dpi silently fabricated a digit and dropped
+two others; at 400 dpi the same table is unambiguous to the eye. The atlas had already flagged the row as
+suspicious and still used it — flagging is not the same as fixing.
+
+**And a physiological detail the corrected row reveals:** blood clears completely between 12 and 24 h
+while liver and kidney still hold 42–77 cpm at 24 h. The tissue compartment empties more slowly than
+blood — which is the behaviour a continuous infusion is designed to exploit.
+
+## CORR-141 — "no medicinal chemistry can open a window in this chemotype" was too strong (round 139)
+
+Round 137 read `kawamura1990`'s r = 0.95 correlation between binding-site potency and mouse lethality
+across 16 analogues and concluded that **within this chemotype potency and toxicity cannot be separated**,
+so the only escapes were spatial (tissue targeting) or a mechanism the pharmacophore does not have.
+
+`li2024a` (J Med Chem 2024;67:15691–15710) redesigned the same 7-oxabicyclo[2.2.1]heptane-2,3-dicarboxylic
+acid core and obtained **compound 28a with 38-fold PP5 selectivity** (PP2A/PP5 IC₅₀ 33.8/0.9 µM),
+**82 % oral bioavailability**, favourable stability and safety, and oral tolerability in a xenograft model.
+
+The two results are not in conflict — kawamura measured a correlation *across compounds that all hit the
+same site*, while li2024a changed *which enzyme the site prefers*. But the conclusion drawn from kawamura
+was too broad. If acute lethality is driven by PP1 or PP5 rather than PP2A — untested — then a
+PP2A-selective or B56-subunit-selective oxabicycloheptane could break the correlation. **Nobody has tried
+to make one, and nobody has tried for bone.**
+
+The 82 % oral bioavailability is the second correction: round 136 concluded the oral route was useless
+because endothall is 5–7 % absorbed. That is true of *endothall*, not of the scaffold.
+
+**Rule:** a structure–activity correlation constrains the compounds it was measured on. It does not
+constrain what a different substitution pattern can do to selectivity, and it must not be generalised into
+"this chemotype cannot be optimised."

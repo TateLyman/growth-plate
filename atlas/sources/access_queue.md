@@ -475,3 +475,46 @@ review's reference 68 can be read straight off the published article's reference
 1. Does **endothall itself** block FGF-induced NPR2 dephosphorylation? Never tested.
 2. **Cartilage concentration** at a given plasma concentration. Best proxy: muscle at 0.16 of blood.
 3. Does continuous endothall change a **bone length** in a growing animal.
+
+---
+
+## Round 139b — the remaining items, chased without email
+
+**V3 RESOLVED.** Reference 68 of the 2026 RSC review, parsed out of its PMC XML: **Li Z, Guo M, Gu M,
+Cai Z, Wu Q, Yu J, Tang M, He C, Wang Y, Sun P, You Q, Wang L. "Design and Synthesis of
+7-Oxabicyclo[2.2.1]heptane-2,3-dicarboxylic Acid Derivatives as PP5 Inhibitors To Reverse Temozolomide
+Resistance in Glioblastoma Multiforme." *J Med Chem* 2024;67(17):15691–15710. DOI
+10.1021/acs.jmedchem.4c01304, PMID 39136241.** Closed access; the abstract alone carried the two findings
+that mattered (38-fold PP5 selectivity, 82 % oral bioavailability — CORR-141) and corroborated the
+hydrolysis half-life. Full text would add the LB-100 stability curve and the full selectivity panel.
+
+**V1 DOWNGRADED — I read the table instead of chasing the paper.** Rendering the scanned Soo Table III-2
+at 400 dpi and reading it visually recovered the complete nine-point blood row, which the OCR had
+mangled (CORR-140). The number Soo 1967 was wanted for is now transcribed at a resolution where every
+digit is unambiguous. What the paper would still add: wet-weight concentrations, the per-animal spread,
+and the methods detail. **Verification only.**
+
+Access routes attempted and their outcomes, for the record:
+- Unpaywall on DOI 10.1021/jf60154a030 — no OA locations.
+- OpenAIRE keyword search — returns the journal article only; **no thesis version exists** in any
+  indexed repository.
+- ScholarsArchive@OSU (`ir.library.oregonstate.edu`) — the catalogue is a JavaScript app behind bot
+  detection; `catalog.json`, the Hyrax `concern` path and a rendered fetch all failed. **A human search
+  for "endothall" there is still the one untried route**, and worth ten seconds given Tinsley and Fang
+  were OSU faculty.
+
+**V2 rollema2025 — no lawful open copy exists.** Checked Unpaywall, OpenAIRE, and the Dutch OA mandate
+route (Schellens is Utrecht). Its two contributions are now both settled elsewhere: the IC₅₀ against
+li1993 (CORR-138), the hydrolysis half-life against li2024a. **Off the critical path entirely.**
+
+### WHAT REMAINS — all optional
+
+| Optional | `soo1967` — J Agric Food Chem 15(6):1018–1021, DOI 10.1021/jf60154a030 | wet weights, per-animal spread. ACS legacy access at any university library. |
+| Optional | `li2024a` — DOI 10.1021/acs.jmedchem.4c01304 | LB-100 stability curve and the full PPP selectivity panel for the redesigned scaffold. |
+| Optional | `rollema2025` — DOI 10.1016/j.ijpharm.2025.125317 | only to see whether its 95 nM was measured or inherited. |
+
+### THE THREE BENCH ITEMS — the only things now standing between the atlas and an answer
+
+1. Does **endothall itself** block FGF-induced NPR2 dephosphorylation?
+2. What is the **cartilage** concentration at a given plasma concentration?
+3. Does continuous endothall change a **bone length** in a growing animal?

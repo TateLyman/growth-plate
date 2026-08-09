@@ -667,6 +667,54 @@ quantitative:
     stability because the manufacturer expects each investigator to generate it, and it is two days of
     work. It stays a real risk - a six-week implant at 37 degrees is a long time for any solute - but it
     is no longer a missing document.'
+- parameter: 'THE BLOOD CURVE READ OFF THE SCAN AT 400 DPI RATHER THAN FROM OCR - AND THE MARGIN
+    TIGHTENS TO ABOUT THREEFOLD'
+  value: 'blood, cpm per 100 mg dry tissue at 1, 2, 4, 6, 8, 12, 24, 48 and 72 hours: 309, 96, 92, 56,
+    39, 28, 0, 0, 0. Muscle: 50, 32, 31 then zero from 6 hours. Fat: zero throughout. Area under the blood
+    curve 1090 cpm.h/100 mg dry, giving clearance 56 to 98 mL/h/kg. Required infusion to hold 0.7
+    micromolar 0.18 to 0.31 mg/kg/day. MARGIN AGAINST THE ABSORBED CHRONIC NO-EFFECT DOSE, INDEPENDENT OF
+    THE ABSORBED FRACTION: 2.6 to 3.2-fold at 0.7 micromolar, 1.8 to 2.2-fold at 1 micromolar, and 0.9 to
+    1.1-fold at 2 micromolar'
+  unit: cpm per 100 mg dry, mL/h/kg, mg/kg/day, fold
+  conditions: 'epa_dwcd_endothall_1992 Table III-2, rendered from the scanned page at 400 dots per inch,
+    rotated, and READ VISUALLY rather than by optical character recognition. Trapezoidal area from 1 to
+    24 hours plus a half-triangle for the 0 to 1 hour oral rise. Dry blood fraction swept 18 to 22 per
+    cent, which is the only remaining input that does not cancel.'
+  species: rat
+  source_ref: epa_dwcd_endothall_1992
+  uncertainty: 'THE OCR HAD INSERTED A SPURIOUS 49 AT 48 HOURS AND LOST THE 12 AND 24 HOUR VALUES; the
+    real row falls monotonically to zero by 24 hours, which is both cleaner and more physiological. This
+    is CORR-140. THE EFFECT ON THE ANSWER IS SMALL AND IN THE RIGHT DIRECTION - the round-138 range of
+    2.4 to 3.7-fold narrows to 2.6 to 3.2 - but the row is now transcribed from the image at a resolution
+    where each digit is unambiguous, which is the strongest form of this number the atlas can have short
+    of the 1967 paper itself. NOTE ALSO what the corrected row shows: blood clears completely between 12
+    and 24 hours while liver and kidney still hold 42 to 77 cpm at 24 hours, so the tissue compartment
+    empties more slowly than blood - which is the behaviour a continuous infusion is designed to exploit.'
+- parameter: 'THE SCAFFOLD CAN BE ENGINEERED FOR PPP-FAMILY SELECTIVITY - WHICH WEAKENS THE ROUND-137
+    CONCLUSION THAT MEDICINAL CHEMISTRY CANNOT OPEN A WINDOW'
+  value: 'rational redesign of LB-100, described by the authors as a phase 2 PP2A/PP5 DUAL-target
+    inhibitor, produced compound 28a with 38-FOLD PP5 SELECTIVITY - PP2A and PP5 IC50 of 33.8 and 0.9
+    micromolar - together with 82 per cent oral bioavailability, favourable stability and safety, and
+    oral tolerability in a xenograft model. The selectivity came from spatial conformational restriction
+    of an indole fragment'
+  unit: fold selectivity, micromolar, per cent
+  conditions: 'li2024a, abstract read. Same 7-oxabicyclo[2.2.1]heptane-2,3-dicarboxylic acid core as
+    endothall and LB-100. The same paper is the independent source for LB-100 hydrolysing in water with
+    only 14 per cent remaining at 8 hours and a plasma half-life of about 5 hours, corroborating
+    rollema2025.'
+  species: not_applicable
+  source_ref: li2024a
+  uncertainty: 'ROUND 137 CONCLUDED, FROM kawamura1990 CORRELATION OF r = 0.95 BETWEEN BINDING AND
+    LETHALITY, THAT WITHIN THIS CHEMOTYPE POTENCY AND TOXICITY CANNOT BE SEPARATED. That is too strong,
+    and the two results are not in conflict. kawamura measured a correlation ACROSS COMPOUNDS THAT ALL
+    HIT THE SAME SITE; li2024a changed WHICH ENZYME the site prefers. If the acute lethality is driven by
+    PP1 or PP5 rather than PP2A - which is untested - then a PP2A-selective or a B56-subunit-selective
+    oxabicycloheptane could break the correlation. NOBODY HAS TRIED TO MAKE ONE, and nobody has tried for
+    bone. THE 82 PER CENT ORAL BIOAVAILABILITY IS THE OTHER SURPRISE: the scaffold is not condemned to
+    endothall 5 to 7 per cent, so an orally dosed chronic agent is not off the table the way this atlas
+    concluded at round 136. Against all of that: these are abstract-level numbers in a third assay system
+    whose absolute IC50 values disagree with both li1993 and rollema2025, exactly as the 2026 review
+    warned.'
 - parameter: 'THE ELEVEN MISSING ITEMS, ORDERED BY HOW MUCH EACH MOVES THE DESIGN'
   value: 'one blocking, three that set the dose, three that set the interpretation, four that set the
     logistics'
@@ -831,6 +879,11 @@ key_refs:
   type: primary_abstract_only
   role: the primary source of every distribution number in this node, identified at round 139 and NOT
     read - the numbers come from its tables as reproduced by the 1992 EPA document
+- ref_id: li2024a
+  year: 2024
+  type: primary_abstract_only
+  role: proves the oxabicycloheptane scaffold can be tuned 38-fold for PPP-family selectivity and made 82
+    per cent orally bioavailable - which reopens medicinal chemistry as a route
 open_questions:
 - g_l12_endothall_exposure_and_juvenile_tolerability
 - g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
