@@ -6474,3 +6474,53 @@ downgraded to D and becomes gap `g_l12_fostriecin_pp4_versus_pp2a_attribution`.
 **And it converted an inference into a measurement.** Round 153 argued the phosphate must be *masked*, not
 *deleted*, because it is a binding pharmacophore. `swingle2009` measured that exact compound:
 **dephosphofostriecin, analogue 7, PP2A IC50 >100 µM against 0.0014 µM for the parent — >71,000-fold.**
+
+---
+
+## CORR-169 — the arm was framed as "which phosphatase inhibitor," and that framing skipped a control point
+
+**Round 155.**
+
+Since round ~120 this arm has asked one question: *which phosphatase inhibitor to carry*. Rounds 152–154
+answered it in increasing detail — LB-100 out, li2024a compound 28a pointed the wrong way, fostriecin the
+right chemotype, a masked prodrug the design conclusion. Every one of those rounds was answering a
+question that had never been checked for completeness.
+
+**There are three separable control points on NPR2, not one:** ligand supply (A), receptor
+phosphorylation state (B), and **phosphorylation-independent allosteric gain (C)**. The atlas had A and B
+and had not enumerated C.
+
+`andresen2023` establishes C at the sister receptor and — decisively — establishes that **its binding site
+is present and intact in GC-B**, blocked by one side chain (GC-A Thr640 ↔ GC-B Ile624; GC-A T640I dead,
+GC-B I624T gains full activity at +35% max cGMP and 4.4-fold lower CNP EC₅₀). It is also **orthogonal to
+B**: compound 20 raised cGMP a further 183% in the GC-A 7E phosphomimetic.
+
+**Nothing in rounds 152–154 is withdrawn.** Control point B keeps the strongest genetic proof on the axis
+(wagner2021, +4.3–8.8% femur on a *wild-type* FGFR3 background). What changes is that it is no longer the
+only receptor-side option, and it is the one that cannot be de-risked.
+
+**The error class:** optimising within a control point before enumerating control points. That is the
+inverse of the atlas's own design rule — *stack across control points, never within one* — applied to
+compound selection instead of to stacking. The rule generalises: **before choosing a chemotype for a
+target, enumerate every point at which the target's output can be raised, then choose.**
+
+---
+
+## CORR-170 — "seven phosphorylation sites" on GC-B should not be restated as settled
+
+**Round 155. Precision, not a defect.**
+
+Several nodes describe "the seven juxtamembrane serines and threonines of NPR2." That is accurate as a
+description of the **7E construct** (robinson2017, wagner2021), which carries seven glutamates.
+
+`otto2022` reports that the *functionally* identified sites **Ser-473 in GC-A and Ser-489 in GC-B are
+suggested not to be phosphorylation sites at all** — leaving six chemically identified sites in GC-B. The
+source states this as a suggestion, so no node is corrected; the atlas simply stops asserting seven as
+settled.
+
+**The same paper carries a favourable consequence that is more important than the count.** Single-glutamate
+substitutions are *partial* phosphomimetics — they give an enzyme activated by ligand but with elevated Kₘ
+and low activity — whereas **vicinal (double adjacent) glutamates give a near-wild-type enzyme with low
+Kₘ**. Every length figure this arm rests on comes from a single-glutamate 7E receptor. **If single
+glutamates undershoot, the true ceiling of full phosphorylation protection is higher than +4.3–8.8% femur,
+not lower.** Measured at GC-A; not yet measured at GC-B.
