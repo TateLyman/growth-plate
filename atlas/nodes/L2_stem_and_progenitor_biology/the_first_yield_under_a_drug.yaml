@@ -1,0 +1,205 @@
+id: the_first_yield_under_a_drug
+name: THE FIRST YIELD UNDER A DRUG - oestrogen cuts the yield 43 per cent, 91 per cent of it is
+  amplification, and the effect is REVERSIBLE while the pool it burned is not
+aliases:
+- yield under oestrogen
+- schrier hypothesis quantified
+- nilsson2014 yield computed
+- does anastrozole protect the yield
+- yield decay rate
+- round 176
+type: hypothesis
+layer: L2
+stub: false
+summary: 'SCHRIER PROPOSED THE YIELD TERM IN 2006 AFTER EXCLUDING BOTH OBSERVABLE STATE VARIABLES OF THE
+  POOL BY MEASUREMENT. NILSSON RESTATED IT IN 2014 AS "FEWER PROLIFERATIVE CHONDROCYTE REPLICATIONS PER
+  LOST RESTING ZONE CHONDROCYTE". NEITHER PUT A NUMBER ON IT, BECAUSE THE NUMERATOR AND THE DENOMINATOR
+  SIT IN TWO DIFFERENT FIGURES. BOTH FIGURES ARE NOW IN HAND AND THE NUMBER EXISTS.
+
+  THE RESULT, RABBIT PROXIMAL TIBIA, ON TREATMENT 11-16 WEEKS. Vehicle grew 7,980 micrometres while losing
+  9.0 resting-zone cells per mm of plate width - a yield of 887. Oestradiol grew 7,130 micrometres while
+  losing 14.1 - a yield of 506. THE OESTROGEN YIELD IS 0.57 OF VEHICLE. Growth fell only 11 per cent while
+  resting-zone consumption rose 57 per cent: OESTROGEN SPENT 57 PER CENT MORE POOL TO DELIVER 11 PER CENT
+  LESS BONE.
+
+  AND THE DECOMPOSITION REPLICATES ACROSS SPECIES AND ACROSS THE KIND OF CONTRAST. Terminal hypertrophic
+  cell size fell to 0.953 of vehicle; amplification fell to 0.598. NINETY-ONE PER CENT OF THE LOG EFFECT IS
+  AMPLIFICATION AND NINE PER CENT IS CELL SIZE. Round 174 found 88 per cent in MOUSE from a BETWEEN-BONE
+  contrast; this is 91 per cent in RABBIT from a DRUG. Two species, two entirely different experimental
+  designs, the same split.
+
+  AN INDEPENDENT ROUTE AGREES, USING NO LENGTH MEASUREMENT AT ALL. BrdU-labelled cells per column
+  integrated over the treatment interval and divided by resting-zone cells lost gives 3.32 for vehicle and
+  1.82 for oestradiol - A RATIO OF 0.55 against 0.57 from the length route. The two constructions share
+  only the denominator; the numerators are calcein-derived bone growth with cell size in one case and
+  BrdU incorporation in the other. They agree to two per cent.
+
+  THE PART THAT CHANGES WHAT WE DO - THE YIELD EFFECT IS REVERSIBLE AND THE POOL LOSS IS NOT. Over the
+  WASHOUT interval, 16-21 weeks with no drug in either arm, the oestrogen-exposed plates ran at a yield of
+  512 against vehicle 457 - A RATIO OF 1.12, slightly ABOVE vehicle. The BrdU route gives 0.88 for the same
+  interval, so the two methods bracket unity rather than agreeing precisely; what they agree on is that the
+  43 per cent on-treatment deficit is GONE. Oestrogen suppresses the yield WHILE PRESENT. What it leaves
+  behind is a smaller pool, not a permanently worse exchange rate. That maps exactly onto nilsson2014''s
+  own reversible-function versus irreversible-pool framing, and it assigns the yield term to the
+  REVERSIBLE half - which nobody had done, because nobody had computed the yield.
+
+  THE NUMBER THAT SETS THE BAR FOR ANY FUTURE AGENT. The VEHICLE yield fell from 887 to 457 across the two
+  intervals - THE UNTREATED YIELD HALVES IN FIVE WEEKS in an adolescent rabbit. Expressed against that
+  natural decay, five weeks of oestrogen exposure cost 4.2 WEEKS OF EXTRA YIELD DECAY: oestrogen roughly
+  DOUBLES the rate at which the exchange rate runs down. Any candidate amplification agent has to be
+  measured against a baseline that is falling by half every five weeks on its own.
+
+  WHAT THIS SAYS ABOUT THE STACK, AND IT IS A NEW JUSTIFICATION FOR AN AGENT ALREADY IN IT. Anastrozole has
+  been carried in this atlas as a DURATION agent, and round 173 reframed it as an EXCHANGE-RATE agent on
+  bone age. This adds a third and more direct reading: removing oestrogen PROTECTS THE YIELD, and the
+  protection is worth roughly a doubling of the yield decay rate for as long as the exposure is avoided.
+  THAT IS NOT A NEW LEVER - IT IS THE SAME LEVER SCORED ON THE RIGHT AXIS FOR THE FIRST TIME.
+
+  AND IT BOUNDS WHAT IS LEFT. Oestrogen removal restores the yield TO baseline. Nothing known raises it
+  ABOVE baseline. The whole remaining prize on this axis is the difference between a yield that decays at
+  the untreated rate and one that decays more slowly, and no agent has ever been shown to do that in any
+  species.
+
+  THE METHOD IS THE OTHER DELIVERABLE. Any experiment reporting three things in the same animals - a
+  longitudinal growth rate, a terminal hypertrophic cell size, and a resting-zone cell count - yields a
+  yield. That is a small set of measurements and a large number of published papers make all three. The
+  quantity that has gone unmeasured for twenty years is not hard to obtain; it has simply never been
+  divided out.'
+quantitative:
+- parameter: yield under oestradiol relative to vehicle, ON TREATMENT
+  value: '0.57'
+  unit: ratio
+  conditions: 'rabbit proximal tibia, ovariectomised, 11-16 weeks on treatment; vehicle 7,980 micrometres
+    grown per 9.0 resting-zone cells per mm lost = 887, oestradiol 7,130 per 14.1 = 506. Growth fell 11 per
+    cent while resting-zone consumption rose 57 per cent'
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: DIGITISED BY EYE from published figures 2G and 3B/3E, value_unverified. The mixed
+    per-column over per-mm-width convention CANCELS EXACTLY in this within-experiment ratio, which is why
+    the ratio and not the absolute value is the result
+- parameter: decomposition of the oestrogen yield effect
+  value: amplification 0.598, terminal cell size 0.953
+  unit: ratio to vehicle
+  conditions: same interval; 91 per cent of the log effect is amplification, 9 per cent is cell size
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: 'REPLICATES THE ROUND-174 MOUSE BETWEEN-BONE SPLIT OF 88 PER CENT in a different species
+    with a drug rather than a bone contrast'
+- parameter: independent BrdU-based yield ratio, using no length measurement
+  value: '0.55'
+  unit: ratio
+  conditions: BrdU-labelled cells per column integrated over 11-16 weeks divided by resting-zone cells
+    lost; vehicle 3.32, oestradiol 1.82. Shares only the denominator with the length-based route
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: agrees with the length-based 0.57 to two per cent, from an entirely different numerator
+- parameter: yield during WASHOUT, oestradiol relative to vehicle
+  value: '1.12'
+  unit: ratio
+  conditions: 16-21 weeks, no drug in either arm; vehicle 457, oestradiol 512. The BrdU route gives 0.88
+    over the same interval
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: the two routes bracket unity rather than agreeing; what they agree on is that the 43 per
+    cent on-treatment deficit is GONE. THE YIELD EFFECT IS REVERSIBLE
+- parameter: natural decay of the yield in untreated animals
+  value: 887 -> 457
+  unit: micrometres per resting-zone cell, over 5 weeks
+  conditions: vehicle arm, 11-16 weeks against 16-21 weeks; a 1.94-fold fall. Against this baseline, five
+    weeks of oestrogen exposure cost 4.2 weeks of extra yield decay - oestrogen roughly DOUBLES the decay
+    rate
+  species: rabbit
+  source_ref: nilsson2014
+  uncertainty: THE BAR ANY CANDIDATE AGENT MUST BEAT. The exchange rate halves every five weeks unaided
+localization:
+- 'the proliferative column: where the 91 per cent sits - divisions obtained per progenitor consumed'
+- 'the resting zone: the denominator, and the compartment whose loss is the irreversible half'
+human_evidence: absent
+human_evidence_note: 'Rabbit, one experiment, ovariectomised and juvenile. No human yield has ever been
+  computed and the three measurements it needs have never been reported together in a human growth plate.
+  The reversibility finding is the one most likely to transfer, because it concerns a drug effect rather
+  than a species-specific plate architecture.'
+species_basis:
+- rabbit
+translation_risk: high
+translation_risk_reason: 'One experiment in one species, with every value read off a published plot by
+  eye. The ratio construction is robust to the unit convention and to the net-versus-gross bias because
+  both arms carry them equally, but nothing protects against a species difference or against a single
+  study being wrong.'
+confidence: C
+claim_grades:
+- claim: Oestrogen lowers the number of proliferative divisions obtained per resting-zone chondrocyte
+    consumed.
+  grade: C
+  basis: 'PROPOSED IN 2006, RESTATED IN 2014, QUANTIFIED HERE FOR THE FIRST TIME AT 0.57 OF VEHICLE. Two
+    independent constructions from the same experiment agree - 0.57 from growth rate and terminal cell size,
+    0.55 from BrdU flux, sharing only the denominator. C not B because every input is read off a plot by
+    eye, it is one experiment in one species, and the resting-zone loss is net rather than gross.'
+- claim: The oestrogen yield effect is carried by amplification rather than by terminal cell size.
+  grade: C
+  basis: 'Amplification 0.598 against terminal cell size 0.953, so 91 per cent of the log effect. It
+    replicates the round-174 mouse between-bone figure of 88 per cent in a different species using a drug
+    rather than an anatomical contrast, which is the strongest form of agreement available here - the two
+    analyses share no data and no design.'
+- claim: The yield suppression persists after oestrogen is withdrawn.
+  grade: X
+  basis: 'NO, AND THIS IS THE MOST DECISION-RELEVANT LINE IN THE NODE. Over the five-week washout the
+    oestrogen arm ran at 1.12 of vehicle by the length route and 0.88 by the BrdU route - bracketing unity.
+    The 43 per cent on-treatment deficit is gone. What does NOT recover is the pool: the resting-zone
+    deficit created during treatment is still present at 21 weeks. Oestrogen damages the DENOMINATOR
+    permanently and the EXCHANGE RATE only while present.'
+- claim: Anastrozole protects the yield.
+  grade: E
+  basis: 'INFERENCE FROM THE MIRROR IMAGE, AND IT IS A NEW JUSTIFICATION FOR AN AGENT ALREADY IN THE STACK.
+    If oestrogen exposure lowers the yield to 0.57 while present and the effect reverses on withdrawal,
+    then removing oestrogen should hold the yield at its untreated trajectory - worth roughly the doubling
+    of decay rate that oestrogen imposes. E because no aromatase inhibitor has ever had a yield computed
+    under it, in any species, and an inhibitor is not the same as the absence of the hormone.'
+- claim: Anything raises the yield ABOVE the untreated baseline.
+  grade: X
+  basis: 'NOTHING KNOWN DOES. Oestrogen removal restores the yield to baseline; the untreated baseline
+    itself falls 1.94-fold every five weeks in this preparation. The entire remaining prize on this axis is
+    slowing that decay, and no agent has been shown to do it in any species. This is the bar, and it is now
+    a number rather than an aspiration.'
+- claim: The yield can only be obtained from purpose-built experiments.
+  grade: X
+  basis: 'NO - AND THIS IS THE SECOND DELIVERABLE. Three measurements in the same animals suffice: a
+    longitudinal growth rate, a terminal hypertrophic cell size, and a resting-zone cell count. Many
+    published growth-plate papers report all three and none has taken the quotient. The quantity has gone
+    unmeasured for twenty years not because it is hard to obtain but because nobody divided.'
+key_refs:
+- ref_id: nilsson2014
+  year: 2014
+  type: primary
+  role: the experiment - figures 2G, 3B, 3C and 3E supply every term, and the paper asserts the conclusion
+    it never computed
+- ref_id: schrier2006
+  year: 2006
+  type: primary
+  role: where the yield term was first forced, by excluding both observable state variables of the pool
+- ref_id: lui2018
+  year: 2018
+  type: primary
+  role: the independent mouse between-bone decomposition this replicates - 88 per cent against 91 per cent
+- ref_id: cooper2013
+  year: 2013
+  type: primary
+  role: why the terminal-cell-size term is expected to be small, and who owns it
+- ref_id: newton2019
+  year: 2019
+  type: primary
+  role: the mechanism the amplification term must run through - residence time before hypertrophic
+    commitment
+open_questions:
+- g_l2_raise_the_yield_per_progenitor
+- g_l2_what_sets_amplification_in_the_proliferative_column
+- g_l2_yield_screen_of_the_published_literature
+contradicts:
+- 'CLOSES the measurement half of g_l2_raise_the_yield_per_progenitor, which recorded that the yield had
+  never been measured in any species. It still has not been MEASURED - it has now been COMPUTED, twice, by
+  two independent routes from one published experiment, and the two agree to two per cent.'
+- 'REFINES the_exchange_rate_between_growth_and_pool_depletion. That node inferred from schrier2006 that
+  oestrogen must be lowering the yield because both observable state variables were excluded. It is now
+  quantified at 0.57, and the node''s implicit assumption that the effect is banked is WRONG - the yield
+  recovers on washout even though the pool does not.'
+last_verified: '2026-08-09'

@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 175.** Repo: 698 nodes, 366 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 176.** Repo: 699 nodes, 367 gaps, 1380 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,61 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 176 — **THE FIRST YIELD UNDER A DRUG.** Schrier proposed it in 2006. It now has a number.
+
+`the_first_yield_under_a_drug`. Both nilsson2014 figures supplied; `atlas/tools/nilsson2014_yield.py`.
+
+**RABBIT PROXIMAL TIBIA, ON TREATMENT 11–16 wk:**
+
+| | grown µm | RZ lost | **YIELD** | THC mean | cells made | **AMPLIF** |
+|---|---|---|---|---|---|---|
+| vehicle | 7,980 | 9.0 | **887** | 69.5 | 114.8 | 12.76 |
+| oestradiol | 7,130 | 14.1 | **506** | 66.2 | 107.6 | 7.63 |
+| **ratio** | 0.89 | **1.57** | **0.57** | 0.95 | 0.94 | **0.60** |
+
+**Oestrogen spent 57% more pool to deliver 11% less bone.** Yield **0.57×**.
+
+**The decomposition replicates across species AND across contrast type.** Amplification 0.598, terminal
+cell size 0.953 → **91% of the log effect is amplification.** Round 174 got **88%** in *mouse* from a
+*between-bone* contrast. Two species, two designs, no shared data. Same split.
+
+**A second construction inside the same experiment agrees.** BrdU per column integrated ÷ RZ lost:
+vehicle 3.32, oestradiol 1.82 → **0.55**, against **0.57** from the length route. They share only the
+denominator — the numerators are calcein-derived growth × cell size vs BrdU incorporation. **Two per cent
+apart.**
+
+**THE LINE THAT CHANGES WHAT WE DO — the yield effect is REVERSIBLE; the pool loss is not.** Washout
+16–21 wk, no drug in either arm: yield ratio **1.12** (length route) / 0.88 (BrdU route) — bracketing
+unity. **The 43% deficit is gone.** But the RZ deficit created during treatment is still there at 21 wk.
+**Oestrogen damages the denominator permanently and the exchange rate only while present.** That assigns
+the yield term to nilsson's *reversible* half — which nobody had done, because nobody had computed it.
+
+**THE BAR, NOW A NUMBER.** Vehicle yield fell **887 → 457** across the two intervals — **the untreated
+yield halves every 5 weeks.** Against that decay, 5 weeks of oestrogen cost **4.2 weeks of extra yield
+decay**: oestrogen roughly **doubles the decay rate**. Any candidate agent is measured against a baseline
+falling by half every five weeks on its own.
+
+**WHAT IT SAYS ABOUT THE STACK.** Anastrozole was carried as a *duration* agent, reframed round 173 as an
+*exchange-rate* agent on bone age. Third reading, and the most direct: **removing oestrogen protects the
+yield**, worth ~the doubling of decay rate avoided. **Not a new lever — the same lever scored on the right
+axis for the first time.** Graded **E**: no aromatase inhibitor has ever had a yield computed under it.
+
+**AND IT BOUNDS THE PRIZE.** Oestrogen removal restores the yield **to** baseline. **Nothing known raises
+it above baseline.** The entire remaining prize is slowing a decay that runs at 1.94-fold per 5 weeks.
+
+**THE SECOND DELIVERABLE — THE METHOD.** Any experiment reporting **three** things in the same animals —
+longitudinal growth rate, terminal hypertrophic cell size, resting-zone cell count — **yields a yield.**
+Many published papers report all three. The quantity went unmeasured for twenty years because nobody
+divided.
+
+**NEW GAP — `g_l2_yield_screen_of_the_published_literature`, tractability 4, NO NEW ANIMALS.** Priority
+targets: **① dexamethasone** (`schrier2006` — the only agent known to move the exchange rate the *opposite*
+way; if its yield computes, it is the first yield-RAISING intervention on record); ② any FGFR-inhibitor
+study that counted resting-zone cells (settles kot2026); ③ CNP/GH studies with an RZ count (confirms from
+data, not inference, that neither touches amplification); ④ thyroid hormone and `forcinito2011`.
+
+---
 
 ### ROUND 175 — AMPLIFICATION IS **TRANSIT TIME**, not division rate. The target is named and the circuit is already in the atlas.
 

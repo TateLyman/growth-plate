@@ -13707,3 +13707,49 @@ gaps:
     An agent that raises proliferation with the ratio flat is a velocity agent that has been mislabelled,
     and the distinction is invisible to every assay used so far.'
   tractability: 3
+- gap_id: g_l2_yield_screen_of_the_published_literature
+  question: Which published growth-plate experiments report a longitudinal growth rate, a terminal hypertrophic
+    cell size and a resting-zone cell count in the same animals - and what does the yield do in each?
+  type: known_unknown
+  layer: L2
+  why_it_matters: THE METHOD NOW EXISTS AND IT IS CHEAP. the_first_yield_under_a_drug computes a yield
+    from three measurements that many growth-plate papers already report, and gets agreement to two per
+    cent between two independent constructions. The quantity has gone unmeasured for twenty years not
+    because it is hard to obtain but because nobody took the quotient. Every agent this atlas has considered
+    - aromatase inhibitors, growth hormone, CNP analogues, FGFR inhibitors, glucocorticoids, thyroid hormone,
+    hedgehog agonists - has been assayed on growth rate or zone height, and any of those studies that
+    also counted resting-zone cells contains an unextracted yield. A screen would convert the yield from
+    a one-point estimate into a ranked table of agents, WITHOUT A SINGLE NEW ANIMAL.
+  what_is_known: 'The construction and its limits are established in atlas/tools/nilsson2014_yield.py
+    and atlas/tools/yield_decompose.py. Two independent routes exist: length-based (growth rate divided
+    by terminal cell size, over resting-zone cells lost) and flux-based (BrdU per column integrated, over
+    resting-zone cells lost). They agree at 0.55 against 0.57 in the one experiment where both are computable.
+    Three data points exist so far - the mouse between-bone contrast (lui2018), oestrogen on treatment
+    and oestrogen in washout (nilsson2014).'
+  what_is_missing: 'THE SCREEN ITSELF. No systematic search has been run for papers carrying all three
+    measurements. Specifically wanted, in priority order: (a) DEXAMETHASONE, because schrier2006 showed
+    it moves the exchange rate in the OPPOSITE direction to oestrogen and is the only candidate pool-conserving
+    agent - if its yield can be computed it becomes the first known yield-RAISING intervention; (b) any
+    FGFR inhibitor study that counted resting-zone cells, which would settle whether kot2026-style proliferative-zone
+    gains are real amplification or proliferation without yield; (c) any CNP or growth hormone study with
+    a resting-zone count, to confirm from data rather than by inference that neither touches amplification;
+    (d) thyroid hormone and the tryptophan-restriction preparation of forcinito2011, both of which move
+    senescence rate and might move the yield with it.'
+  nearest_evidence:
+  - nilsson2014
+  - schrier2006
+  - lui2018
+  - forcinito2011
+  - kot2026
+  nearest_evidence_note: schrier2006 is the single highest-value target because it already contains a
+    dexamethasone arm with resting-zone cell number and labelling index, and the atlas has read its full
+    text - what it may lack is a terminal cell size or a growth rate in the same animals.
+  discriminating_experiment: 'A LITERATURE SCREEN, NOT AN EXPERIMENT. Search for growth-plate studies
+    reporting longitudinal growth rate together with resting-zone cell number, then check each for a terminal
+    hypertrophic cell size; compute the yield for every treatment arm and tabulate against the untreated
+    decay baseline of roughly 1.94-fold per five weeks. PRE-REGISTERED READING: any agent whose yield
+    ratio exceeds 1.0 against its own control is the first yield-raising intervention on record and becomes
+    the lead for this programme. If the screen returns only ratios at or below 1.0, then no known intervention
+    raises the exchange rate, the oestrogen result is a protection ceiling rather than a lever, and the
+    programme must move to agents that have never been tested at a growth plate at all.'
+  tractability: 4
