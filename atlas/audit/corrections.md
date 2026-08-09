@@ -6803,3 +6803,60 @@ resveratrol and anastrozole occupy the same control point and stack sub-additive
 ER antagonist in uterus and breast and an agonist at the rabbit growth plate. A compound's SERM/SERD
 classification predicts nothing about its sign at this tissue, and no peripheral endpoint substitutes for
 measuring the plate.
+
+---
+
+## CORR-180 — a bibliography entry recorded the exact opposite of its paper's conclusion
+
+**Round 169. Caught while registering the round-169 references.**
+
+`brjesson2012` (PMID 22414805) was held with the one-line finding *"ERalpha and its activation function-1
+are required for growth plate closure in female mice."*
+
+**The paper concludes the reverse.** Deleting AF-1 produced a **hyperactive** ERα and **closed** the
+plates: ERαAF-1⁰ mice had tibiae **−4.9%** (P<0.01) with proximal tibial plates closed in **every** animal
+while all wild-type plates stayed **open**. The authors' own sentence is that closure is induced by ERα
+functions that **do not require AF-1** and that **AF-1 opposes closure**.
+
+**Scope of the damage — narrower than it looks, and worth stating precisely.** The error was confined to
+the bibliography index string. The node `estrogen_receptor_alpha` states the direction correctly, carries
+the +8.3% / +18% / −4.9% numbers correctly, and grades the AF-1 claim **D**. No downstream reasoning
+inherited the inversion. Corrected in place from the abstract, re-read 2026-08-09; the previous string is
+preserved in the entry under `finding_corrected_from`.
+
+**Why it matters anyway.** The index is what gets read when deciding whether a paper is worth opening. An
+inverted summary is worse than a blank one: a blank invites a read, an inverted one forecloses it. This
+one sat on the single most load-bearing mechanistic result for the entire receptor arm, and had it been
+trusted the round-169 sweep would have reached the opposite conclusion.
+
+---
+
+## CORR-181 — "no pure antagonist or SERD has ever been tested at a growth plate" was false, and I asserted it before checking properly
+
+**Round 169. The working claim of the first half of the round, corrected in the second half.**
+
+The claim I had reached — and was about to build a node on — was that receptor-level oestrogen blockade at
+the growth plate had **never actually been achieved**, because tamoxifen killed resting-zone chondrocytes
+by an ER-*independent* mechanism (`chagin2007`) and raloxifene turned out to be a plate *agonist*
+(`nilsson2003_raloxifene`), leaving pure antagonists and SERDs untried.
+
+**They were tried, at least four times, starting in 1998.** `sibonga1998`, `gunther1999`, `turner2000` and
+`movrareskrtic2014` all put ICI 182,780 against growth-plate or longitudinal-growth endpoints.
+
+**Why the search missed them.** I searched the trade and generic names — *fulvestrant*, *Faslodex*, *SERD*
+— against titles. This literature is pre-approval and uses the **compound code** `ICI 182,780`, in
+abstracts rather than titles. Two searches that would have caught it: the compound code as an abstract
+field query, and a citation walk out of `chagin2007`, which sits in the same field.
+
+**This is the second instance of the CORR-171 failure mode** — depth on one paper mistaken for coverage of
+a field. It is now a recurring class, not an incident, and the countermeasure is specific: for any
+compound, search **the research code as well as the marketed name**, and search **abstract** as well as
+title. Marketed names post-date the animal literature that matters here.
+
+**What it changed.** Everything and nothing. The negative verdict on the receptor arm survived — but for
+an entirely different and much stronger reason. Instead of "untested, therefore unknown" the arm now
+closes on three independent wild-type nulls in two species and both sexes, a human trial with a null
+height endpoint, and a mechanism (`brjesson2012` + `movrareskrtic2014`) that predicts the same null for
+the six oral SERDs, the PROTAC and the covalent antagonists **without testing them**. Had I written the
+node on the pre-correction claim it would have recommended an experiment that had already been run four
+times and reported negative — the same shape of error as CORR-174.

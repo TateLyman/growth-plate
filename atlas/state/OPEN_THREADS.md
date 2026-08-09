@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 168.** Repo: 692 nodes, 360 gaps, 1354 refs, validator errors none.
+Last updated: **2026-08-09, after round 169.** Repo: 693 nodes, 362 gaps, 1371 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -287,6 +287,73 @@ definition.
 Receptor route dead twice (`chagin2007` tamoxifen kills the resting zone; `nilsson2003_raloxifene` is a
 plate *agonist* that hastens fusion). Vascular route closed by `gerber1999`. Senescence route closed by
 definition.
+
+### ROUND 169 — the receptor route re-checked exhaustively at the user's direction. SAME VERDICT, MUCH STRONGER BASIS.
+
+`the_receptor_level_oestrogen_sweep`. Round 168 closed the receptor route on **two compound-specific
+failures**, which left every untested compound as a live possibility. It is now closed on a **class
+mechanism plus a human trial**, and the mechanism predicts the failure of compounds nobody has tested.
+
+**CORR-181 first — my working claim was wrong.** "No pure antagonist or SERD has ever been tested at a
+growth plate" is **false**. Fulvestrant, under its research code **ICI 182,780**, has been at a growth
+plate at least four times since 1998. I searched marketed names in titles; this literature uses the
+compound code in abstracts. Second instance of the CORR-171 failure mode — depth on one paper mistaken
+for coverage of a field. Countermeasure: **search the research code as well as the marketed name.**
+
+**In wild-type animals a pure antagonist does nothing to longitudinal growth — three times, two species,
+both sexes.** `sibonga1998` (rat, female, growing; **complete uterine antagonism in the same animals**
+proves engagement; no effect on tibial growth rate) · `turner2000` (rat, **male**; no effect, while
+**orchiectomy in the same experiment did** reduce growth) · `movrareskrtic2014` (mouse, OVX; **no effect
+in wild-type** on plate height). The only positive, `gunther1999`, is a **rescue** of exogenous-E2-
+accelerated maturation back to control — not a gain below it.
+
+**THE MECHANISM, AND IT GENERALISES TO THE WHOLE CLASS.** `movrareskrtic2014`: ICI acts at the plate
+**only once AF-2 is disabled**, and then as an *inverse agonist* — the authors infer plate ERα is
+**constitutively active without ligand**. `brjesson2012`: closure runs on ERα functions that **do not
+require AF-1**, and **AF-1 opposes closure** (AF-1 deletion → hyperactive receptor → plates CLOSED).
+**Every drug in this class is an AF-2 agent, aimed at a function that does not need AF-2.**
+
+**THE HUMAN TRIAL EXISTS AND ITS HEIGHT ENDPOINT IS NULL.** `sims2012` / NCT00278915, on the **FDA label**
+— 30 girls, mean age 5.9 y, McCune-Albright, **fulvestrant 4 mg/kg IM monthly × 12 months**, prospective
+multicentre. Bone age advancement **1.99 → 1.06** (mean change −0.93, 95% CI −1.43 to −0.43, **p=0.0007**),
+progressive. No serious treatment-related AEs. Uterine/ovarian volumes unchanged = **no partial agonism**,
+the thing tamoxifen and raloxifene both failed. **BUT: predicted adult height 163.0 → 163.5 cm** (FDA: *no
+clinically meaningful change*) because **growth velocity Z fell alongside** (−1.14, 95% CI −2.67 to 0.38,
+p=0.135, point estimate negative). **The clock slowed and the growth slowed with it.**
+
+**AND THE COMPARTMENT WAS WRONG.** `brjesson2010` — cartilage-specific ERα-null mice grew **normally**
+through sexual maturation; the tall phenotype of *total* ERα loss ran through the **GH/IGF-1 axis**. A
+plate-directed antioestrogen aims at a compartment that is not carrying the pubertal effect; systemic
+ligand removal (anastrozole) acts on the one that is.
+
+**Fulvestrant is the one compound that stacks cleanly, and it does not matter.** FDA label: **no known
+drug-drug interactions**, no CYP1A2/2C9/2C19/2D6/3A4 inhibition, PK unchanged by rifampin/ketoconazole —
+it clears the *exact* CYP2C9/3A4 objection that disqualified resveratrol. GH arm direction is favourable
+(oestrogen *suppresses* hepatic IGF-I: `gibney2005`, `wolthers2001`), though IGF-I has never been measured
+under fulvestrant (graded **E**). `mehta2012`/`mehta2019` show anastrozole+fulvestrant is **non-redundant
+in humans** — but in breast cancer, and **non-redundant plus zero is still zero**.
+
+**Rest of the class: zero plate studies for six oral SERDs, the ERα PROTAC vepdegestrant, the covalent
+SERCA class, and six further SERMs** — and all are AF-2 agents, so the mechanism predicts the same null.
+`basu2026`: giredestrant and camizestrant cause **on-target ERα-mediated bradycardia**; fulvestrant does
+not. Potency is not buying safety either.
+
+**Cost of the genetic version, recorded:** `smith2008` spine aBMD Z **−3.85** and falling, **while bone age
+still advanced** 15→17.5 y; `feigerlova2025` lumbar Z **−3.9 → −5.6**, unresponsive to oestrogen *and*
+tamoxifen. FDA label: paediatric BMD under fulvestrant **unstudied**.
+
+**TWO GAPS OPENED, NEITHER A LEVER:**
+1. `g_l12_does_fulvestrant_degrade_eralpha_in_growth_plate_chondrocytes` — **nobody has ever measured ERα
+   protein in plate cartilage under a degrader.** Uterus degraded + plate intact ⇒ the class failed on
+   *delivery* and the arm reopens as a formulation problem. Both degraded + no growth change ⇒ permanent.
+2. `g_l12_final_height_of_the_sims2012_extension_cohort` — **24 of 29 girls entered an extension with
+   yearly data collection in 2012; nothing was ever published.** They have now reached adult height. Only
+   existing route to a final-height endpoint for a pure ER antagonist in humans. A retrieval, not an
+   experiment.
+
+**CORR-180 also raised:** `brjesson2012`'s bibliography one-line finding stated the **opposite** of the
+paper's conclusion. Confined to the index string — the node `estrogen_receptor_alpha` had it right and
+graded it D. Corrected in place, prior string preserved under `finding_corrected_from`.
 
 ---
 
