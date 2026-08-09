@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 160.** Repo: 687 nodes, 358 gaps, 1345 refs, validator errors none.
+Last updated: **2026-08-09, after round 161.** Repo: 688 nodes, 358 gaps, 1347 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -29,6 +29,17 @@ control points**, not one, and the atlas had spent rounds 152–154 optimising t
 | mechanism | raises CNP **affinity** (6.4× potency shift, **no Eₘₐₓ change**) | raises **efficacy** (+30% Eₘₐₓ) |
 | phospho-dependence | untested | **independent** (+183% on GC-A 7E) |
 | exists at wild-type GC-B? | **yes** | **no** — GC-B data are from the I624T mutant |
+
+**ROUND 161 — compound 1 CONFIRMED best in the screen, and confirmed NOT a therapy.** Re-ranked all 253
+selective actives: **208 distinct scaffolds** (singleton-dominated = HTS noise), **40% PAINS/BRENK-flagged**,
+and all seven compounds scoring above compound 1 are **scaffold singletons** (one is **diazinon**). Compound
+1 is the highest-activity compound with real SAR support (4-member scaffold + 3-member sister). Best
+clean-and-supported alternative: 65.1%. **But compound 1 is itself BRENK-flagged for the thioamide — and
+`ma2024` shows the thioamide is REQUIRED (amide -> complete loss). The alert IS the pharmacophore.** Plus
+`robinson2011`: Go6976 is a catalytic-site *inhibitor*, so there is **no chemical starting point for an
+intracellular GC-B activator**.
+
+**VERDICT — add to the therapeutic stack: NOTHING. Add as research probes: `CID 647514` + `CID 3588620`.**
 
 **The named compound (round 157).** `CID 647514` = **compound 1**, CAS **332862-27-8** — MCUF-42 with a
 piperazine for its piperidine. EC₅₀ 0.74 µM, **Eₘₐₓ 112%** (vs MCUF-42's 0.80 µM / 86%), no GC-A activity
@@ -82,7 +93,7 @@ by 40 kDa.
 
 ---
 
-## THREAD B — the phosphatase arm (OPEN but HELD)
+## THREAD B — the phosphatase arm (**CLOSED as a compound arm** 2026-08-09; mechanism retained)
 
 Fostriecin has the right enzyme selectivity (PP2A 1.4 nM vs **PP5 60 µM measured**, `swingle2009`) and the
 wrong charge (dianion, partition 0.21). Candidate is a neutral phosphate-masked prodrug (~4.3× gain,
@@ -97,6 +108,14 @@ inhibitor is bounded by the **1.42× tonic, FGF-independent** component.
 **OPEN:** `g_l12_fostriecin_pp4_versus_pp2a_attribution` — re-run the `swingle2009` ten-analogue panel
 **with a PP4 column**. `theobald2013` shows PP4C knockdown alone reproduces fostriecin's cellular phenotype
 while PP2AC knockdown does not, so the dose ceiling and the intended effect may sit on different enzymes.
+
+**ROUND 161 — REMOVED AS A COMPOUND ARM. Four independent blockers.** (1) enzyme unidentified and has
+resisted direct attack (SD-008); (2) no compound exists and none is cheaply makeable; (3) **PP2A-versus-PP4
+selectivity has never been measured for any compound** — across all 39 human Ser/Thr phosphatase targets in
+ChEMBL, 1,801 molecules carry a value, **16** have a PP2A catalytic number, **1** has a PP4 number
+(fostriecin), and **0 have both**; (4) prize bounded at **1.42×** tonic where an FGFR inhibitor is already
+present, against systemic pan-PPP liability with hepatic DLT. **Nothing to add. Mechanism retained**
+(`wagner2021`, +4.3–8.8% femur on wild-type FGFR3).
 
 **CORR-175 corrects the cost claim — it is NOT one plate.** ChEMBL target `CHEMBL5465552` (PP4 catalytic
 subunit) holds **exactly one activity record in the entire database**: fostriecin, 3.0 nM. Not one
