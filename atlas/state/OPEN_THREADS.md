@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 164.** Repo: 689 nodes, 358 gaps, 1349 refs, validator errors none.
+Last updated: **2026-08-09, after round 165.** Repo: 690 nodes, 359 gaps, 1349 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -157,6 +157,37 @@ subunit) holds **exactly one activity record in the entire database**: fostrieci
 analogue, not one other chemotype. **PP4 has no chemical probe and no counter-screen series in public
 medicinal chemistry** — the assay has to be built before the panel can be run. The compounds exist; the
 assay does not.
+
+---
+
+## THREAD E — THE NEXT AXIS (**OPEN, new 2026-08-09**) — non-endochondral, and a re-check on closure timing
+
+`the_next_axis_after_the_cnp_axis_died`. **h_term is no longer "closest to solved"** — after rounds
+152–164 it is the most thoroughly explored and the emptiest arm in the atlas. That entry in
+`the_arms_reordered_for_late_bone_age` is corrected; the rest of that ranking stands.
+
+**The structural argument that picks the next axis.** Pool, amplification and h_term are **rate terms and
+all require an open plate** — which is exactly what bone age 16+ is taking away, and exactly what every
+CNP access route gates on. **Non-endochondral height uses no growth plate**, so bone age does not reduce
+its availability. It is the only term with that property.
+
+**And nobody here has ever looked for a compound on it.** The term appears in exactly **four nodes, all
+indexes**; the biology has real L6 coverage (`diurnal_stature_variation`, `bed_rest_growth_human`,
+`gravity_posture_spinal_loading`) and **zero L12 pharmacology nodes**. The intervertebral-disc
+regenerative literature — aggrecan/proteoglycan synthesis, GDF5 and BMP agents — has never been read here.
+`acan_gene` already sits on both sides of the divide.
+
+**FIRST MOVE, and it costs no experiment** (`g_l12_what_fraction_of_non_endochondral_height_is_durable`):
+read the diurnal/bed-rest/microgravity literature for the **recovery curve, not the peak**. If it's all
+reversible, the term scores zero durable centimetres and we go to site instead. If a durable fraction
+exists, size it, then read the disc literature for compounds.
+
+**SECOND, on the highest-ranked arm.** Closure timing is #1 and only *partially* exploited. Anastrozole
+removes **ligand**; `smith1994`'s 204 cm is **receptor** disruption — a different control point.
+`tamoxifen_at_the_growth_plate` killed the obvious compound (resting-zone apoptosis, no catch-up, at
+paediatric exposures) — **but that same node records the effect is NOT simple ER antagonism** (neither
+oestradiol nor IGF-I rescued it). If the killing is a tamoxifen off-target rather than a class effect,
+**pure antagonists and SERDs were never tested.** Checkable, and it sits on the largest arm.
 
 ---
 
