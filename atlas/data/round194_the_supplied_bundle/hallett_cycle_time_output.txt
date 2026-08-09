@@ -1,0 +1,66 @@
+==========================================================================
+HALLETT 2021 -- MOUSE RESTING-ZONE CYCLING, DERIVED
+==========================================================================
+
+[1] ASSUMPTION-FREE QUANTITY: LRC / non-LRC labelling ratio
+    (valid if S-phase duration is comparable in the two fractions)
+     chase    LRC %  nonLRC %    ratio       p
+        1w     2.04      7.04     3.45   0.002
+        2w     1.13      2.80     2.48   0.047
+        4w     2.40      4.34     1.81   0.200
+
+    The resting-zone fraction incorporates EdU 2.5-3.5x less often
+    than the non-resting fraction. At 4 weeks the separation is not
+    significant (n=4) -- the 4-week point does not support the claim.
+
+[2] ABSOLUTE CYCLE TIME -- ASSUMPTION-DEPENDENT SWEEP
+    T_c = (T_S + w) / LI ;  T_S and w are ASSUMED, not measured.
+
+    --- 1 week chase --- LRC LI = 2.04% (sd 1.67, n=6)
+       T_S(h)         w=1h         w=3h         w=6h
+          4.0       10.2 d       14.3 d       20.4 d
+          6.0       14.3 d       18.4 d       24.5 d
+          8.0       18.4 d       22.5 d       28.6 d
+         10.0       22.5 d       26.6 d       32.7 d
+
+    --- 2 week chase --- LRC LI = 1.13% (sd 0.74, n=8)
+       T_S(h)         w=1h         w=3h         w=6h
+          4.0       18.4 d       25.8 d       36.9 d
+          6.0       25.8 d       33.2 d       44.2 d
+          8.0       33.2 d       40.6 d       51.6 d
+         10.0       40.6 d       47.9 d       59.0 d
+
+[3] RANGE ACROSS THE WHOLE SWEEP (1- and 2-week chase, LRC)
+    T_stem(mouse, LRC) = 10.2 to 59.0 days   [value_unverified: true]
+
+[4] SENSITIVITY TO THE LABELLING INDEX ITSELF
+    The s.d. on the 1-week LRC index (1.67 on a mean of 2.04) is
+    82% of the mean. Propagating +/-1 s.d. at T_S=6 h, w=3 h:
+       mean - 1sd: LI= 0.37%  T_c =   101.4 d
+             mean: LI= 2.04%  T_c =    18.4 d
+       mean + 1sd: LI= 3.71%  T_c =    10.1 d
+    The lower bound on LI is within noise of zero, so the upper
+    bound on T_stem from this dataset is UNBOUNDED. This measurement
+    constrains T_stem from below only.
+
+[5] COMPARISON WITH THE RAT ANCHOR ALREADY IN THE GRAPH
+    Hunziker 1994 T_stem (rat proximal tibia, author-stated):
+      hypophysectomised + NaCl : 50 d
+      hypox + IGF-I            : 15 d
+      hypox + GH               :  8 d
+      intact normal            :  6 d
+    The mouse LRC sweep overlaps the hypophysectomised end of that
+    range and not the intact end. Two readings are possible and this
+    dataset cannot separate them:
+      (a) mouse resting-zone turnover really is slower than rat, or
+      (b) the LRC gate (top 10% H2B-EGFP) selects the slowest tail
+          of a heterogeneous resting zone, so the LI understates
+          mean resting-zone cycling.
+    (b) is the gating definition Hallett states, so (b) cannot be
+    excluded. Recorded as a range, not a point, grade E.
+
+[6] WHAT THIS DOES *NOT* ANSWER
+    No PTH1R agonist was administered in Hallett 2021. This supplies
+    a baseline T_stem for mouse; it does not supply T_stem under
+    teriparatide, which remains unmeasured in every species.
+==========================================================================

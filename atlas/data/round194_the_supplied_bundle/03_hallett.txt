@@ -1,0 +1,1250 @@
+
+
+===== SHEET 1 =====
+*For correspondence:
+noriaki.ono@uth.tmc.edu
+Competing interests: The
+authors declare that no
+competing interests exist.
+Funding: See page 20
+Received: 01 November 2020
+Accepted: 04 July 2021
+Published: 26 July 2021
+Reviewing editor: Cheryl
+Ackert-Bicknell, University of
+Colorado, United States
+Copyright Hallett et al. This
+article is distributed under the
+terms of the Creative Commons
+Attribution License, which
+permits unrestricted use and
+redistribution provided that the
+original author and source are
+credited.
+Chondrocytes in the resting zone of the
+growth plate are maintained in a Wnt-
+inhibitory environment
+Shawn A Hallett1, Yuki Matsushita1, Wanida Ono1,2, Naoko Sakagami1,
+Koji Mizuhashi1, Nicha Tokavanich1, Mizuki Nagata1, Annabelle Zhou1,
+Takao Hirai3, Henry M Kronenberg4, Noriaki Ono1,2*
+1University of Michigan School of Dentistry, Ann Arbor, United States; 2University of
+Texas Health Science Center at Houston School of Dentistry, Houston, United
+States; 3Ishikawa Prefectural Nursing University, Ishikawa, Japan; 4Endocrine Unit,
+Massachusetts General Hospital and Harvard Medical School, Boston, United States
+Abstract Chondrocytes in the resting zone of the postnatal growth plate are characterized by
+slow cell cycle progression, and encompass a population of parathyroid hormone-related protein
+(PTHrP)-expressing skeletal stem cells that contribute to the formation of columnar chondrocytes.
+However, how these chondrocytes are maintained in the resting zone remains undefined. We
+undertook a genetic pulse-chase approach to isolate slow cycling, label-retaining chondrocytes
+(LRCs) using a chondrocyte-specific doxycycline-controllable Tet-Off system regulating expression
+of histone 2B-linked GFP. Comparative RNA-seq analysis identified significant enrichment of
+inhibitors and activators for Wnt signaling in LRCs and non-LRCs, respectively. Activation of Wnt/b-
+catenin signaling in PTHrP+ resting chondrocytes using Pthlh-creER and Apc-floxed allele impaired
+their ability to form columnar chondrocytes. Therefore, slow-cycling chondrocytes are maintained in
+a Wnt-inhibitory environment within the resting zone, unraveling a novel mechanism regulating
+maintenance and differentiation of PTHrP+ skeletal stem cells of the postnatal growth plate.
+Introduction
+The epiphyseal growth plate, a disk of cartilaginous tissues with characteristic columns of chondro-
+cytes formed between the primary and secondary ossification centers, is an innovation of amniotes
+(reptiles, birds and mammals) that facilitates explosive endochondral bone growth (Wuelling and
+Vortkamp, 2019). The postnatal growth plate is composed of three morphologically distinct layers
+of resting, proliferating and hypertrophic zones, in which chondrocytes continue to proliferate well
+into adulthood, especially in mice, therefore functioning as the engine for endochondral bone
+growth (Hallett et al., 2019; Kronenberg, 2003). By adulthood, a large majority of hypertrophic
+chondrocytes undergo apoptosis or transdifferentiate into osteoblasts, marking the completion of
+the longitudinal growth phase and skeletal maturation (Zhou et al., 2014; Park et al., 2015;
+Hallett et al., 2021; Roach et al., 1995; Yang et al., 2014a; Yang et al., 2014b).
+Of the three layers, the resting zone has two important functions in maintaining the growth plate.
+First, early studies postulated that resting chondrocytes feed their daughter cells into the adjacent
+proliferating zone and contribute to longitudinal growth of postnatal endochondral bones (Hun-
+ziker, 1994). More recently, the resting zone has been established as a niche for skeletal stem cells,
+initially demonstrated by surgical auto-transplantation experiments in rabbits (Abad et al., 2002),
+and subsequently by lineage-tracing experiments in mice (Mizuhashi et al., 2018; Newton et al.,
+2019). Second, chondrocytes in the resting zone express parathyroid hormone-related protein
+(PTHrP) that maintains proliferation of chondrocytes in a cell non-autonomous manner and delays
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+1 of 24
+RESEARCH ARTICLE
+their hypertrophic differentiation, thus sustaining longitudinal growth (Schipani et al., 1997). Once
+resting chondrocytes exit their quiescent state, they undergo a morphological transformation into
+flat, columnar proliferating chondrocytes. The proliferating zone is concertedly maintained by PTHrP
+released from the resting zone and Indian hedgehog (Ihh) synthesized by pre-hypertrophic chondro-
+cytes; the proliferating zone in turn provides instructive cues to regulate cell fates of PTHrP+ chon-
+drocytes (Mizuhashi et al., 2018). Therefore, the resting zone functions as a critical constituent of
+the tight feedback system (the PTHrP–Ihh feedback loop) that maintains growth plate structures and
+longitudinal bone growth.
+The mechanisms regulating self-renewal and differentiation capabilities of resting zone chondro-
+cytes remain largely unknown. G protein stimulatory subunit-a (Gsa), Gq/G11a G proteins, which are
+coupled with the PTH/PTHrP receptor (PPR), are both required for maintaining quiescent stem-like
+chondrocytes (Chagin et al., 2014). Pan-chondrocyte ablation of Gsa (Col2a1-creER; Gnasf/f) causes
+premature differentiation of stem-like resting chondrocytes into the proliferative pool, resulting in
+accelerated endochondral bone growth. Further, combined inactivation of Gq/G11a through a
+mutant PPR (Guo et al., 2002) and Gsa (Col2a1-creER, Gnasf/f; PPRD/D [Pth1rtm4Hmk]) causes a more
+severe phenotype associated with growth plate fusion. Therefore, PPR-mediated Gsa and Gq/G11a
+synergistically maintain quiescence of resting chondrocytes and their differentiation into columnar
+chondrocytes (Chagin et al., 2014); however, whether this regulation occurs cell-autonomously in
+resting chondrocytes has not been determined.
+Non-canonical Wnt/planar cell polarity (PCP) signaling plays a key role in facilitating asymmetric
+divisions of resting chondrocytes. Oriented division, rearrangement and intercalation of chondrocyte
+clones in the resting zone, and their subsequent asymmetric divisions into their daughter cells
+aligned with the axis of growth are the hallmark characteristic of growth plate chondrocytes
+(Li et al., 2017a). Non-canonical Wnt/PCP signaling is activated when the chondrocytes exit the rest-
+ing zone and start forming columns, guiding the oriented cell division of resting chondrocytes into
+proliferating cells and their further expansion. In fact, misregulation of non-canonical Wnt/PCP sig-
+naling via dominant-negative forms of Frizzled receptors results in severe shortening of the growth
+plate (Hartmann and Tabin, 2000). Oriented cell division is sensitive to both high and low PCP activ-
+ity mediated in part by Fzd7 (Li and Dudley, 2009; Li et al., 2017b). In addition, Wnt5a signals to
+establish PCP in chondrocytes along the proximal-distal axis through regulation of Vangl2
+(Gao et al., 2011; Randall et al., 2012). However, how resting chondrocytes are regulated by non-
+canonical Wnt/PCP signaling members, such as Rspo3 (Ohkawara et al., 2011) in addition to Dkk2
+(Niehrs, 2006) and Fzd receptors, are unknown.
+Given the limited amount of mechanistic knowledge regarding maintenance and differentiation of
+resting chondrocytes, we set out to undertake an unbiased approach to better define the molecular
+mechanisms regulating maintenance and differentiation of chondrocytes in the resting zone (‘slow-
+cycling chondrocytes’). To achieve this goal, we developed a chondrocyte-specific genetic label-
+retention strategy to isolate slow-cycling chondrocytes from the postnatal growth plate. Our com-
+parative transcriptomic analysis revealed unique molecular signatures defining the characteristics of
+slow-cycling chondrocytes, with particular enrichment for inhibitors of Wnt signaling pathways. Sub-
+sequent functional validation based on a cell-lineage analysis identified that, when Wnt/b-catenin
+signaling was activated, PTHrP+ resting chondrocytes were decreased in number during initial forma-
+tion and established columnar chondrocytes less effectively in the subsequent stages. These data
+lead to a new concept that PTHrP+ skeletal stem cells may be maintained in a Wnt inhibitory environ-
+ment within the resting zone niche of the postnatal growth plate.
+Results
+A genetic label-retention strategy to identify slow-cycling chondrocytes
+Chondrocytes in the resting zone of the postnatal growth plate (‘resting’ or ‘reserve’ chondrocytes)
+are characterized by their slow cell cycle progression that is much slower than that of chondrocytes
+in the proliferating zone. As a result, these slow-cycling chondrocytes retain nuclear labels much lon-
+ger than their more rapidly dividing progeny in the proliferating zone, which are therefore termed as
+label-retaining chondrocytes (LRCs) (Walker and Kember, 1972). First, we undertook a genetic
+approach to fluorescently isolate LRCs from the growth plate based on a chondrocyte-specific pulse-
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+2 of 24
+Research article
+Developmental Biology
+chase protocol. To this end, we first generated transgenic mice expressing a tetracycline-controlled
+transactivator under a Col2a1 promoter (hereafter, Col2a1-tTA), and combined this line with a
+Col1a1 locus harboring a Tet-responsive element (TRE)-histone 2B-bound EGFP (H2B-EGFP) cassette
+Figure 1. A genetic label-retention strategy to identify slow-cycling chondrocytes. (a) Chondrocyte-specific Tet-Off system by Col2a1-tTA and TRE-H2B-
+EGFP transgenes. During development, Col2a1+ cells accumulate H2B-EGFP in the nucleus. Binding of tetracycline controlled transactivator (tTA) to
+Tet-responsive element (TRE) is prevented in the presence of doxycycline. As a result of this chase, slow-cycling cells retain a high level of H2B-EGFP,
+whereas proliferating cells dilute H2B-EGFP signal as they continue to divide. (b) Proximal tibial growth plates of Col2a1-tTA/Col2a1-tTA; TRE-H2B-
+EGFP/TRE-H2B-EGFP double homozygous mice after 2 weeks of chase at P35, with EdU administration shortly before analysis (6 and 3 hr prior to
+sacrifice). Shown is a representative 27 chondrocyte-long column highlighting gradient of H2B-GFP signal across different layers. (Left): Merged image
+of H2B-GFP, EdU-Alexa647, and DIC with tracing of individual chondrocytes. (Middle): Quantification of corrected total cell fluorescence (CTCF) values
+of H2B-GFP signal in chain. (Right): EdU-Alexa647 signal. SOC: secondary ossification center, RZ: resting zone, PZ: proliferating zone, PHZ: pre-
+hypertrophic zone. Arrows and a bracket: a pair of an H2B-GFPhigh cell in RZ (white) and its adjacent EdU+ cell (blue) in PZ. Arrowheads: the top three
+brightest cells in the column in RZ. Dotted lines: individual chondrocytes in column. Yellow: CTCF values. Green: H2B-GFP, blue: EdU, gray: DIC. Scale
+bars: 100 mm. (c) Quantification of CTCF values of H2B-GFP signal in a pair of a H2B-GFPhigh cell in RZ and its adjacent EdU+ dividing cell. Twenty-four
+cell pairs from n=four mice. ****p<0.0001. Mann-Whitney’s U-test. Data are represented as mean ± s.d.
+The online version of this article includes the following source data and figure supplement(s) for figure 1:
+Source data 1. Quantification of corrected total cell fluorescence (CTCF) values of H2B-GFP signal in chain.
+Source data 2. Quantification of CTCF values of H2B-GFP signal in a pair of a H2B-GFPhighcell in RZ and its adjacent EdU+dividing cell.
+Figure supplement 1. A genetic label-retention strategy to identify slow-cycling chondrocytes.
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+3 of 24
+Research article
+Developmental Biology
+(hereafter, TRE-H2B-EGFP) (Figure 1a, Figure 1—figure supplement 1a). In this Tet-Off system,
+tTA binds to TRE in the absence of doxycycline and activates H2B-EGFP transcription (pulse),
+whereas tTA dissociates from TRE in the presence of doxycycline, shutting off H2B-EGFP transcrip-
+tion (chase) (Figure 1a, Figure 1—figure supplement 1a). In Col2a1-tTA; TRE-H2B-EGFP mice,
+Col2a1+ chondrocytes accumulate H2B-EGFP in the nucleus without doxycycline, and upon initiation
+of doxycycline feeding, de novo transcription of H2B (human H2B [HIST1H2BJ])-EGFP mRNA
+becomes suppressed. After a long chase period, H2B-EGFP is preferentially diluted in highly prolifer-
+ating cells and their progeny, whereas slow-cycling cells retain a high level of the label, marking
+them as LRCs.
+In order to evaluate the labeling efficiency of the system, we first analyzed double heterozygous
+Col2a1-tTA/+; TRE-H2B-EGFP/+ mice at postnatal day (P) seven and P21 without doxycycline. While
+most of chondrocytes in the growth plate were marked by a high level of H2B-EGFP at P7 (Fig-
+ure 1—figure supplement 1b), fewer than half of columnar chondrocytes in the growth plate were
+marked by H2B-EGFP at P21 (Figure 1—figure supplement 1c), demonstrating the inefficiency of
+the Tet system in postnatal growth plate chondrocytes. To circumvent this problem, we further gen-
+erated double homozygous Col2a1-tTA/Col2a1-tTA; TRE-H2B-EGFP/TRE-H2B-EGFP mice and ana-
+lyzed these mice at P21 without doxycycline. A great fraction of columnar chondrocytes was marked
+by H2B-EGFP (Figure 1—figure supplement 1d), indicating that the labeling efficiency can be
+improved in a transgene dosage-dependent manner in this system.
+Subsequently, we tested the effectiveness of this chondrocyte-specific Tet-Off system by pulse-
+chase experiments. We fed double heterozygous Col2a1-tTA/+; TRE-H2B-EGFP/+ mice with doxycy-
+cline for 5 weeks starting from P21 to shut off de novo H2B-EGFP expression. We started the chase
+at P21 because the secondary ossification center was fully developed within the epiphysis by this
+time. After the chase, the H2B-EGFP signal was largely abrogated in the growth plate region, with
+only a small fraction of cells in the resting zone near the top of the growth plate retaining H2B-EGFP
+(Figure 1—figure supplement 1e, arrowheads). However, we also noticed that a low level of H2B-
+EGFP signal persisted in adjacent osteoblasts and osteocytes in the epiphysis even after the chase
+(Figure 1—figure supplement 1e, arrows), making it difficult to distinguish LRCs from these cells.
+Analysis of TRE-H2B-EGFP/+ mice without a Col2a1-tTA transgene at P28 revealed that osteoblasts
+and osteocytes expressed a low level of H2B-EGFP (Figure 1—figure supplement 1f, arrows). These
+findings indicate that LRCs can be identified within the top of the growth plate by a chondrocyte-
+specific Tet-Off system regulating H2B-EGFP expression, although these cells cannot be easily distin-
+guished from adjacent osteoblasts and osteocytes solely based on fluorescent intensity in histologi-
+cal sections.
+Next, to more rigorously define LRCs and non-LRCs in the postnatal growth plate, we quantified
+the intensity of H2B-EGFP signal through the entire column of chondrocytes using the corrected
+total cell fluorescence (CTCF) after two weeks of chase at P35 in double homozygous Col2a1-tTA/
+Col2a1-tTA; TRE-H2B-GFP/TRE-H2B-EGFP mice. We labeled actively proliferating chondrocytes by
+pulsing these mice with a thymidine analogue EdU twice at 6 and 3 hr prior to sacrifice. By this
+approach, we expect to visualize an EdU-positive cell in the proliferating zone that is descended
+from an EdU-negative cell in the resting zone through one cell division (Figure 1b, left panel, arrow-
+heads and bracket). The quantification of CTCF values through the entire column revealed that the
+cells in the proliferating zone (PZ) had weaker H2B-EGFP signal than those of the resting zone (RZ),
+and the cells in the pre-hypertrophic (PHZ) and hypertrophic zones (HZ) had yet weaker H2B-EGFP
+signal (Figure 1b, center panel, yellow numbers, Figure 1b; Figure 1—source data 1). The side-by-
+side comparison of CTCF values between EdU+ cells in the proliferating zone and their preceding
+EdU-negative cells in the resting zone further revealed that H2B-EGFP CTCF values decreased signif-
+icantly upon one cell division (Figure 1c, Figure 1—source data 2, P35: H2B-EGFP CTCF, EdU- cells
+in RZ = 267,184.6±109,457.8; EdU+ cells in PZ = 131,892.0±83,344.8, n=four mice, 24 cell-pairs
+[p<0.0001]). The average fold change between EdU-negative and EdU-positive cells was 2.03, sug-
+gesting that H2B-EGFP intensity decreases by a factor of two following one cell division (Figure 1b,
+c), as expected from the fact that histone-bound GFP is distributed equally between the two daugh-
+ter cells upon cell division. Further, the cells with the top 10% brightness were localized to RZ at the
+top of the growth plate; while there were 27 cells in this given column of chondrocytes, the three
+brightest cells (374,012; 343,652; 264,697) were localized to RZ (Figure 1b, center panel,
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+4 of 24
+Research article
+Developmental Biology
+
+
+===== SHEET 2 =====
+arrowheads). Thus, based on these quantitative histological data, we designated the cells with the
+top 10% brightness as LRCs.
+Col2-Q system: a double-color quadruple transgenic strategy to
+identify LRCs in the growth plate
+To circumvent the technical issues associated with the leakiness of H2B-EGFP in non-chondrocytes,
+we further included a Col2a1-creER transgene that activates an R26R-tdTomato reporter in a tamoxi-
+fen-dependent manner, as a means to specifically mark growth plate chondrocytes (Chen et al.,
+2007; Nagao et al., 2016). We generated quadruple homozygous transgenic mice – ‘Col2-Q’ mice:
+Col2a1-tTA; TRE-H2B-EGFP; Col2a1-creER; R26R-tdTomato (Figure 2a) and treated these mice with
+tamoxifen (4 mg) twice shortly before analysis (3 and 2 days before analysis, ‘short protocol’) to
+obtain Col2a1-creER-tdTomato+ cells (hereafter, Col2CE-tdT+ cells). After the pulse-chase protocol
+with doxycycline, LRCs are expected to be identified as cells with green nuclei with the highest
+brightness and red cytoplasm, which are localized in the resting zone of the growth plate
+(Figure 2b,c).
+First, we analyzed Col2-Q mice at P21 without doxycycline (‘No Chase’). A great majority of cells
+in the epiphysis, including those in the growth plate and the secondary ossification center, but not
+as many on the articular surface, were H2B-EGFPhigh (Figure 2d, cells with green nuclei). This short
+protocol of tamoxifen injection marked a great number of chondrocytes in the growth plate, but a
+much fewer number of cells in the articular cartilage (Figure 2d), indicating that this double-color
+strategy can effectively identify H2B-EGFPhighgrowth plate chondrocytes at this stage. Second,
+Col2-Q mice were fed with doxycycline from P21 to shut off new H2B-EGFP synthesis for 4 weeks
+(chase) and were then treated with the short protocol of tamoxifen injection After the chase, LRCs
+were identified at a specific location near the top of the growth plate in the resting zone, retaining a
+higher level of H2B-EGFP signal (Figure 2e, left panel). In addition, most of these H2B-EGFPhigh cells
+in the growth plate were simultaneously marked as Col2CE-tdT+ (Figure 2e, right panel, arrowhead).
+While chondrocytes with the brightest H2B-GFP signal were localized to the resting zone, their
+descendants showed increasingly diluted H2B-EGFP signals as they progressed toward the prolifer-
+ating and pre-hypertrophic zones (Figure 1b, Figure 2e, right panel). Therefore, our Col2-Q quadru-
+ple transgenic strategy can effectively mark LRCs primarily in the resting zone of the postnatal
+growth plate.
+A protocol to preferentially isolate growth plate chondrocytes from
+postnatal epiphyses
+We next established a protocol to harvest chondrocytes from the postnatal growth plate. We manu-
+ally removed epiphyses from four long bones (bilateral distal femurs and proximal tibias [Figure 3a,
+top panel, shown is a dissected epiphysis from a tibia]). With this protocol, the growth plate was
+sheared at the hypertrophic layer with the remainder attached to the epiphysis. First, we quantified
+Col2a1CE-tdT+ cells at P49 with tamoxifen injection at 2 and 3 days prior to dissection. Importantly,
+we observed a significantly fewer number of Col2a1CE-tdT+ chondrocytes in the articular surface
+compared to those in the growth plate at P49 (Figure 3a,b, ; Figure 3—source data 1;
+GP=1,315.0±171.2 cells; AC=79.1±50.3 cells, n=nine mice [p<0.0001]), consistent with the previous
+finding
+that
+Col2a1-creER
+preferentially
+marks
+growth
+plate
+chondrocytes
+in
+adulthood
+(Nagao et al., 2016). Therefore, our short-chase tamoxifen protocol with Col2a1-creER enables pref-
+erential labeling of growth plate chondrocytes in adulthood.
+Second, we digested dissected epiphyses serially with collagenase to release these cells into sin-
+gle-cell suspension. Five rounds of digestion completely liberated cells from the growth plate, while
+cells on the articular surface were largely undigested (Figure 3a). We further sought to determine
+whether collagenase digestion enables the preferential isolation of growth plate chondrocytes. To
+this end, we quantified Col2a1CE-tdT+ cells in the growth plate and articular surface before and after
+collagenase digestion at P49 (Figure 3b). We found a significant reduction in Col2a1CE-tdT+ chon-
+drocytes in the growth plate after collagenase digestion (Before: GP=1,315.0±171.2, After:
+GP=49.8±45.2, n=9 [before], n=4 [after] mice [p=0.003]). In contrast, there was no change in the
+number of Col2a1CE-tdT+ chondrocytes in the articular cartilage following collagenase digestion
+(Before: AC=79.1±50.3, After: AC=85.8±45.2, n=9 [before], n=four mice [after] [p=0.939]). Based on
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+5 of 24
+Research article
+Developmental Biology
+this data, we further enumerated the percentage of growth plate chondrocytes among total
+Col2a1CE-tdT+ cells dissociated from the dissected epiphyses. In fact, growth plate chondrocytes
+account for essentially all of Col2a1CE-tdT+ cells (99.1 ± 1.4% of Col2a1CE-tdT+ cells, n=four mice).
+Therefore, these data demonstrate that our microdissection and enzymatic dissociation approach
+allows us to selectively harvest Col2a1CE-tdT+ chondrocytes from the postnatal growth plate.
+Figure 2. Col2-Q system: a double-color genetic label-retaining strategy to identify and isolate slow-cycling chondrocytes of the growth plate. (a) ‘Col2-
+Q’ quadruple transgenic system composed of two chondrocyte-specific bigenic Col2-Tet-Off (Col2a1-tTA; TRE-H2B-EGFP) and Col2-iTOM (Col2a1-
+creER; R26R-tdTomato) systems. H2B-EGFP expression can be shut off by doxycycline diet (2 mg/g diet), while tdTomato expression can be induced by
+two doses of tamoxifen (4 mg) administered shortly prior to analysis (3 and 2 days before). (b) Experimental design to identify label-retaining
+chondrocytes (LRCs) in the growth plate. Col2-Q mice are fed with doxycycline (Doxy) starting from postnatal day (P) 21 (Chase). The mice are analyzed
+after the indicated number of weeks; at each time point, two doses of tamoxifen are administered shortly before analysis to induce tdTomato
+expression. (c) Diagram for predicted outcomes. LRCs are expected to retain green nuclei with red cytoplasm and located at the resting zone. Non-
+LRCs have increasingly dilute levels of H2B-GFP as they become proliferative and further differentiated. Rest.: resting zone, Prolif.: proliferating zone,
+Hyper.: hypertrophic zone. (d,e) Col2-Q distal femur growth plates with tamoxifen injection shortly before analysis. (d): No chase, without Doxy at P21.
+(e): After 4 weeks of chase, on Doxy for 4 weeks at P49, right panel: high-power confocal image. Arrowhead: label-retaining chondrocytes. AC: articular
+cartilage, SOC: secondary ossification center, GP: growth plate. Dotted line: border between growth plate and secondary ossification center. Blue:
+DAPI, gray: DIC. Scale bars: 500 mm, 20 mm (fluorescent scope in e).
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+6 of 24
+Research article
+Developmental Biology
+A flow cytometry-based identification and isolation of LRCs from
+Col2-Q mice
+Subsequently, we used a flow cytometry-based approach to analyze single cells dissociated from the
+Col2-Q postnatal growth plate at sequential time points before and after the chase, particularly in a
+CD45-negative non-hematopoietic fraction. Col2a1CE-tdT+ cells were clearly distinguishable from
+unlabeled cells at all time points investigated (Figure 4a). Before the chase started at P21 (therefore
+without doxycycline feeding), 86.4 ± 5.0% of Col2a1CE-tdT+ cells retained >104 units of H2B-EGFP
+(Figure 4a, leftmost panel). The fraction of a label-retaining population (GFPhigh, retaining >104 unit
+of H2B-EGFP signal) within a Col2CE-tdT+ population gradually decreased as the chase period
+extended (Figure 4a,b). These plots fit into a non-linear decay curve (Y0: 86.5 ± 1.3%; Plateau: 2.6 ±
+0.9%; T1/2=0.99~1.18 week) (Figure 4c, Figure 4—source data 1). Virtually no GFP+ cells were
+observed in the absence of a Col2a1-tTA transgene (Figure 4b, magenta line), while levels of GFP+
+cells were maintained from five to ten weeks of chase (Figure 4b, orange and teal lines). Therefore,
+these findings demonstrate that LRCs can be effectively identified and isolated from postnatal
+Col2-Q growth plates by combined microdissection, enzymatic digestion and flow cytometry-based
+approaches.
+We next set out to define whether LRCs isolated in single-cell suspension are characterized by
+slow-cycling nature therefore less mitotic activities. To this end, we quantitatively evaluated
+Figure 3. A protocol to preferentially isolate growth plate chondrocytes from postnatal epiphyses. (a)
+Representative epiphyses of Col2a1-creER; R26R-tdTomato proximal tibia at P49, before (upper) and after (lower)
+serial collagenase digestions. (Top panels): H and E staining, (bottom panels): tdTomato epifluorescence. Red:
+tdTomato, gray: DIC. (b) Quantification of tdTomato+ chondrocytes in growth plate (GP) and articular cartilage
+(AC) before and after collagenase digestion. Blue: GP, red: AC. n=nine mice (Intact), n=four mice (Post-
+collagenase). **p<0.01, ****p<0.0001. Mann-Whitney’s U-test. Data are represented as mean ± s.d.
+The online version of this article includes the following source data for figure 3:
+Source data 1. Quantification of tdTomato+chondrocytes in growth plate (GP) and articular cartilage (AC) before
+and after collagenase digestion.
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+7 of 24
+Research article
+Developmental Biology
+Figure 4. A flow cytometry-based identification and isolation of LRCs from Col2-Q mice. (a–c) Flow cytometry analysis of dissociated Col2-Q growth
+plate cells. (a): Pseudo-color plots of CD45neg cells at the indicated number of weeks in chase. Red gates: Col2a1-creER/tdTomato+ (Col2CE-tdT+) cells.
+(b): Histogram of CD45negCol2CE-tdT+ cells showing the distribution of H2B-EGFP+ cells as the percentage of the maximum count. Red line: P21 (No
+Doxy), blue line: P28 (+Doxy 1wk), green line: P35 (+Doxy 2wk), orange line: P56 (+Doxy 5wk), light blue line: P91 (+Doxy 10wk), pink line: No Col2-tTA
+Figure 4 continued on next page
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+8 of 24
+Research article
+Developmental Biology
+
+
+===== SHEET 3 =====
+Col2a1CE-tdT+ cells for EdU incorporation by flow cytometry. To this end, Col2-Q mice were fed
+with doxycycline for 1, 2, and 4 weeks and treated with tamoxifen twice at 3 and 2 days before anal-
+ysis. These mice were pulsed with two doses of EdU shortly before analysis, at 6 and 3 hr prior to
+sacrifice. Actively proliferating cells incorporating EdU were fluorescently marked by Click-iT Plus
+Alexa 647 Flow Cytometry kit. We quantified the percentage of EdU-Alexa647+ cells among LRCs
+(cells with top 10% H2B-EGFP brightness) and non-LRCs (cells with 10–50% H2B-EGFP brightness).
+Non-LRCs were significantly enriched for EdU+ cells, both at 1 week and 2 weeks of chase (EdU+
+cells, 1 week: 2.04 ± 1.67% of LRCs; 7.04 ± 2.30% of non-LRCs, n=six mice [p=0.002]; 2 weeks: 1.13
+± 0.74% of LRCs; 2.80 ± 1.00% of non-LRCs, n=eight mice [p=0.047]) (Figure 4d,e left and middle,
+Figure 4—figure supplement 1a, ; Figure 4—source data 2e). We also found a trend that non-
+LRCs were enriched for EdU+ cells at 4 weeks of chase, although not statistically significant (EdU+
+cells, 2.40 ± 0.85% of LRCs; 4.34 ± 1.89% of non-LRCs, n=four mice [p=0.200] (Figure 4e, right, Fig-
+ure 4—figure supplement 1b, Figure 4—source data 2e)). Therefore, LRCs are relatively resistant
+to EdU incorporation, denoting their relatively quiescent status.
+A comparative RNA-seq analysis reveals a unique molecular signature
+of LRCs
+Subsequently, we isolated slow-cycling chondrocytes using fluorescence-activated cell sorting
+(FACS) at a 4-week-chase time point, when the GFPhigh label-retaining fraction (>104 unit) was suffi-
+ciently enriched (Figure 4c). In this experiment, LRCs were defined as GFPhigh cells retaining H2B-
+EGFP signal at the top 10% brightness (x > 104 unit), whereas non-LRCs were defined as other
+GFPmid-low cells (103 < x < 104 unit). Cells were collected from multiple littermate mice for each of
+three independent experiments. To assess RNA quality, we conducted an RNA Integrity Number
+(RIN) assay (Schroeder et al., 2006) from total RNAs isolated from LRCs and non-LRCs. Cellular
+RNA levels from each population had sufficient quality for downstream application (RIN>8.0), which
+were further subjected to amplification and deep sequencing. An unsupervised clustering analysis
+demonstrated that LRCs and non-LRCs biological triplicate samples each clustered together
+(Figure 5a), indicating that slow-cycling chondrocytes in the postnatal growth plate possess a bio-
+logically unique pattern of transcriptomes compared to more rapidly diving non-LRCs. Analyses of
+differentially expressed genes (DEGs) revealed that 799 genes were differentially expressed between
+the two groups (fold change  ± 2), of which 427 and 372 genes were upregulated in LRCs and non-
+LRCs, respectively (Figure 5b, Supplementary File 1).
+Representative genes upregulated in LRCs included known markers for resting chondrocytes,
+such as Pthlh (also known as Pthrp, x2.6) (Chen et al., 2006) and Sfrp5 (x2.4); (Chau et al., 2014;
+Lui et al., 2010) in addition to novel markers, such as Gas1 (x12), Spon1 (x10), and Wif1 (x3.8). Simi-
+larly, representative genes upregulated in non-LRCs included both known and novel markers for pro-
+liferating and pre-hypertrophic chondrocytes, such as Ihh (St-Jacques et al., 1999) (x54), Col10a1
+(Gu et al., 2014) (x11), Mef2c (Arnold et al., 2007) (x5.1), Pth1r (Hirai et al., 2011) (x3.0), Sp7
+(Nakashima et al., 2002) (x2.4), and Dlx5 (Robledo et al., 2002) (x2.2) as well as Clec11a
+(Yue et al., 2016) (x2.9) and Cd200 (Etich et al., 2015) (x2.1). Moreover, a number of genes encod-
+ing S and G2/M phase cell cycle regsulators were significantly enriched in non-LRCs, highlighting the
+Figure 4 continued
+control at P21. (c): Percentage of >104 H2B-EGFP+ LRCs among total Col2CE-tdT+ cells. x axis: weeks in chase, y axis: % of cells > 104 unit of GFP.
+n=nine mice (0 week, 1 week), n=seven mice (2 weeks, 5 weeks), n=six mice (3 weeks, 4 weeks), n=five mice (6 weeks) and n=three mice (7 weeks, 8
+weeks, 10 weeks, 12 weeks). Data are presented as mean ± s.d. (d) Flow cytometry analysis of cell proliferation in LRCs and Non-LRCs of Col2-Q growth
+plates at P35, with EdU administration shortly before analysis (6 and 3 hr prior to sacrifice). LRCs are defined as Col2CE-tdT+ cells with the top 10
+percentile H2B-GFP brightness (red box), while Non-LRCs are defined as Col2CE-tdT+ cells with 10–50 percentile H2B-GFP brightness. Top left panel:
+forward/side scatter plot, top right panel: CD45-eFlour450neg fraction. Bottom panels: EdU-Alexa647 (x axis) signal of LRCs (right) and Non-LRCs (left).
+(e) Quantification of % EdU-Alexa647+ cells among LRCs and non-LRCs, harvested from Col2-Q growth plates at P28 (+1 week; n=six mice), P35 (+2
+weeks; n=eight mice) and P49 (+4 weeks; n=four mice). **p<0.01. Mann-Whitney’s U-test. Data are represented as mean ± s.d.
+The online version of this article includes the following source data and figure supplement(s) for figure 4:
+Source data 1. Percentage of >104H2B-EGFP+LRCs among total Col2CE-tdT+cells.
+Source data 2. Quantification of % EdU-Alexa647+cells among LRCs and non-LRCs.
+Figure supplement 1. A flow cytometry-based approach to define cell proliferation of LRCs and Non-LRCs.
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+9 of 24
+Research article
+Developmental Biology
+Figure 5. Unique molecular signature of label-retaining chondrocytes (LRCs) in the postnatal growth plate. (a) Comparative RNA-seq analysis of LRCs
+and non-LRCs. Heatmap of top 500 differentially expressed genes (DEGs) with hierarchical clustering, between isolated non-LRCs and LRCs. (b) MA plot
+(Log2 fold change) of differentially expressed genes (DEGs) between isolated non-LRCs (372 total) and LRCs (427 total) with representative upregulated
+genes in each cell population. (c) Fluorescent RNAscope in situ hybridization analysis of Col2a1 and Prg4 mRNA in growth plate (top) and articular
+Figure 5 continued on next page
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+10 of 24
+Research article
+Developmental Biology
+mitotically active nature of non-LRCs (Figure 5—figure supplement 1a,b). Therefore, these identi-
+fied enriched genes support the precision and accuracy of comparative RNA-seq analysis of LRCs
+and non-LRCs isolated by cell sorting from the growth plate.
+We further set out to validate the LRC markers using several independent approaches. Interest-
+ingly, the most highly upregulated gene in LRCs was Prg4, which is a marker for chondrocytes in the
+superficial layer of the articular surface (Lui et al., 2015). Chondrocytes on the superficial zone of
+the articular surface are morphologically similar with those at the resting zone of the growth plate
+(Li et al., 2017a). First, we assessed Prg4 mRNA expressions in the growth plate and the articular
+cartilage using RNAscope fluorescent in situ hybridization analysis. At P21, Prg4 mRNA was indeed
+found in the resting zone, at a level far fainter than that of the articular surface (Figure 5—figure
+supplement 2a). By 7 weeks, Prg4 mRNA was also detected in the resting zone in a similar pattern
+(Figure 5c, arrows, Figure 5—figure supplement 2b, arrows). Therefore, chondrocytes of the rest-
+ing zone of the postnatal growth plate express Prg4 at a low level, supporting the validity of our
+comparative RNA-seq analysis. Second, we validated expression of a novel LRC marker, Gas1. Analy-
+sis of Gas1-LacZ knock-in mice (Martinelli and Fan, 2007) at P14 revealed that Gas1+ cells were
+exclusively found at the top of the growth plate corresponding to the resting zone (Figure 5d).
+Third, to test if PTHrP+ cells overlap with LRCs, we performed an EdU pulse-chase experiment by
+serially pulsing PthlhLacZ knock-in mice (Chen et al., 2006; Figure 5e). Shortly after the pulse at P7,
+PTHrP+ cells were preferentially localized in an EdU-low zone, wherein 17.9 ± 2.7% of EdU+ cells
+were PTHrP+ (Figure 5e, left panel, and Figure 5f). After 22 days of chase at P28, a great majority
+of EdU-retaining cells were PTHrP+, wherein 77.6 ± 9.6% of EdU+ cells were PTHrP+ (Figure 5e,
+right panel, and Figure 5f, ; Figure 5—source data 1f). Therefore, LRCs become increasingly
+enriched among PTHrP+ chondrocytes in the postnatal growth plate. Therefore, in vivo expression
+patterns of three representative LRC markers – Prg4, Pthlh and Gas1 – using in situ hybridization
+and knock-in reporter lines further support the validity of the gene expression profile of LRCs that
+accurately reflects that of the resting zone of the growth plate.
+Pathway analysis of DEGs revealed significant enrichment of four KEGG terms (p<0.05, FDR),
+including Oxidative phosphorylation (KEGG:00190), Wnt signaling pathway (KEGG:04310), Endo-
+crine and other factor-regulated calcium reabsorption (KEGG:04961) and Pathways in cancer
+(KEGG:05200) (Figure 5g). Notably, all DEGs annotated under the Oxidative phosphorylation KEGG
+term were upregulated in non-LRCs, highlighting a biochemically unique feature of non-LRCs under-
+going active processes such as cell division and differentiation. Out of 21 DEGs annotated in Wnt
+signaling pathway, 16 genes were relevant to the canonical Wnt/b-catenin signaling pathways
+(Komiya and Habas, 2008; Figure 5h). LRCs were enriched for genes encoding Wnt inhibitors such
+as Sfrp1, Sfrp5, Dkk2, Wif1, Notum and Fzd6, the Wnt activator, Wnt7b, and Wnt receptors Fzd1,
+Fzd3 and Fzd8. Conversely, non-LRCs were enriched for genes encoding Wnt activators such as
+Rspo3, Rspo4 and Wnt10b (Figure 5h). Therefore, these RNA-seq analyses demonstrate that LRCs
+reside in a microenvironment in which inhibitors for canonical Wnt signaling are abundantly present
+in the milieu (Figure 5i).
+Figure 5 continued
+surface (bottom) at 7 weeks of age. SOC: secondary ossification center, RZ: resting zone, PZ: proliferating zone, HZ: hypertrophic zone. Blue: DAPI, red:
+Col2a1, green: Prg4, gray: DIC. Scale bar 100 mm. (d) Gas1LacZ/+ distal femur growth plates at P14. Scale bar: 100 mm. (e,f) PthlhLacZ/+ distal femur
+growth plates with EdU administration, serially pulsed nine times between P4 and P6. (e, left panel): Immediately after the pulse at P7. (e, right panel):
+After 22 days of chase at P28. Arrowheads: EdU label-retaining LacZ+ cells. RZ: resting zone, PZ: proliferating zone. Scale bars: 100 mm. (f): The
+percentage of LacZ+EdU+ cells among total EdU+ cells, at P7 (n=three mice) and P28 (n=six mice). *p<0.05, Mann-Whitney’s U-test. Data are
+represented as mean ± s.d. (g) Enriched KEGG pathway terms (p<0.05) based on 799 differentially expressed genes (DEGs). (h) Heatmap of
+differentially expressed genes (DEGs) related to KEGG:04310 (canonical Wnt/b-Catenin signaling pathway). The DEGs were further classified by their
+functions (e.g. Wnt activators, Wnt inhibitors, Wnt receptors and Wnt effectors). (i) Schematic diagram of Wnt activation and inhibition in non-LRCs and
+LRCs, respectively.
+The online version of this article includes the following source data and figure supplement(s) for figure 5:
+Source data 1. The percentage of Pthlh-LacZ+EdU+cells among total EdU+cells.
+Figure supplement 1. A comparative RNA-seq analysis of S and G2/M phase cell cycle regulators in LRCs and non-LRCs.
+Figure supplement 2. An RNAscope analysis of Col2a1 and Prg4 expression in postnatal growth plate and articular cartilage.
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+11 of 24
+Research article
+Developmental Biology
+Activation of canonical Wnt signaling impairs formation, expansion and
+differentiation of PTHrP+ resting chondrocytes
+We next set out to define how canonical Wnt signaling regulates slow-cycling chondrocytes of the
+postnatal growth plate. For this purpose, we activated Wnt/b-catenin signaling in PTHrP+ resting
+chondrocytes by conditionally inducing haploinsufficiency of adenomatous polyposis coli (Apc),
+which is a critical component of the b-catenin degradation complex, using a Pthlh-creER
+(Mizuhashi et al., 2018) line and Apc-floxed allele (Cheung et al., 2010), and simultaneously traced
+the fates of these Wnt-activated PTHrP+ cells using an R26R-tdTomato reporter allele (Figure 6a,b).
+Littermate triple transgenic mice with two corresponding genotypes – Pthlh-creER; Apc+/+; R26RtdTo-
+mato (Control, PTHrPCEAPC++ cells) and Pthlh-creER; Apcfl/+; R26RtdTomato (APC cHet, PTHrPCEApcHet
+cells) mice – were pulsed with tamoxifen (250 mg) at P6 and analyzed at five consecutive time points
+after the chase, that is P9, P12, P21 P36, and P96 (Figure 6c). Immunohistochemical analysis
+revealed that the b-catenin protein was significantly upregulated in the resting zone of APC cHet
+growth plates (CTNNB-Alexa 647 signal: Control, 62.1±33.3; APC cHet: 283.9±65.8, n=four mice
+[p=0.03]), as well as in PTHrPCEtdTomato+ cells therein (Figure 6d, leftmost panels, arrows, quantifi-
+cation shown in Figure 6e, Figure 6—source data 1e-h), indicating that Apc haploinsufficiency
+indeed slows b-catenin degradation and activated canonical Wnt signaling specifically in the resting
+zone of the growth plate.
+Subsequently, we quantified the numbers of lineage-marked tdTomato+ cells in the resting zone,
+as well as short (composed of <10 cells) and long (composed of >10 tdTomato+ cells) columns of
+tdTomato+ chondrocytes based on serial sections of femur growth plates (Figure 6d, right panels,
+Figure 6—source data 1e-h). Consistent with our prior report (Mizuhashi et al., 2018),
+PTHrPCEAPC++ Control chondrocytes transiently increased in the resting zone during the first week
+of chase and decreased thereafter due to the formation of columnar chondrocytes (P9: 718.7±132.7,
+P12: 910.3±209.9, P21: 655.4±125.0, P36: 200.3±187.2; P96: 116.1±48.5 cells, Figure 6f, blue line,
+n=3–4 mice). In contrast, PTHrPCEAPCHet resting chondrocytes did not increase in number during
+the initial stage of chase, the numbers of which were significantly lower than those of Control at the
+initial three time points (P9: 474.8±134.8 [p=0.04], P12: 558.4±64.3 [p=0.03], P21: 443.4±79.2
+[p=0.03] cells, Figure 6f, red line, n=4–5 mice), and fell to levels that were similar to those in the
+Control at the latter two time points (Figure 6d, rightmost panel, and Figure 6f). These data indi-
+cate that the formation and the expansion of PTHrP+ cells in the resting zone are slightly impaired
+when canonical Wnt signaling is activated in these cells.
+As expected, PTHrPCEAPC++ resting chondrocytes established short columns (fewer than 10
+cells/column) of tdTomato+ chondrocytes across the growth plate that peaked at P21 (P12:
+20.0±7.1, P21: 67.4±10.1, P36: 27.5±19.4, P96=44.3±11.1 tdTomato+ columns, Figure 6g, blue line,
+n=four mice). The number of tdTomato+ short columns in APC cHet growth plates was reduced at
+P21 (P21: 45.9±7.7 tdTomato+ columns, Figure 6g, red line, n=four mice [p=0.03]), indicating that
+the formation of short columnar chondrocytes in the proliferating zone is inhibited upon canonical
+Wnt signaling activation. We suspect that this result reflects the reduction of PTHrP-creER+ cells in
+the resting zone in the preceding stages, although we cannot rule out direct effects of APC haploin-
+sufficiency in the proliferating zone as well. Although we observed significant decreases in columnar
+chondrocyte formation in APC cHet growth plates, column morphology and organization at P21,
+P36 and P96 in mutants appear similar compared to Controls (Figure 6—figure supplement 1, left,
+middle, and right panels).
+PTHrP+ resting chondrocytes continue to generate long columns (more than 10 cells/column) of
+tdTomato+ chondrocytes in the long term, the number of which gradually decreases until six months
+and reaches a plateau thereafter (Mizuhashi et al., 2018). Accordingly, PTHrPCEAPC++ cells gener-
+ated gradually decreasing but still substantial numbers of tdTomato+ long columns after 3 months of
+chase at P96 (P21: 44.4±23.2, P36: 36.1±34.1, P96: 26.5±12.4 tdTomato+ columns, Figure 6h, blue
+line, n=four mice). In contrast, the number of tdTomato+ long columns in APC cHet growth plates
+was significantly decreased at P96 (P96: 7.3±2.5 tdTomato+ columns, Figure 6h, red line, n=four
+mice [p=0.03]). Therefore, the ability for PTHrP+ resting chondrocytes to clonally establish columnar
+chondrocytes is slightly impaired in response to activation of canonical Wnt signaling in the resting
+zone.
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+12 of 24
+Research article
+Developmental Biology
+
+
+===== SHEET 4 =====
+Figure 6. Activation of canonical Wnt/b-catenin signaling causes failure of formation and differentiation of PTHrP+ chondrocytes. (a) Pthlh-creER;
+R26RtdTomato lineage-tracing model crossed with an adenomatous polyposis coli (Apc) floxed allele (flanking exons 1 and 15). Single intraperitoneal
+injection of tamoxifen (0.25 mg) at P6 induces cre recombination, leading to activation of canonical Wnt/b-catenin signaling in PTHrP+ chondrocytes via
+Apc haploinsufficiency (Pthlh-creER; APCfl/+; R26R-tdTomato). (b) Schematic diagram of b-catenin degradation complex. Phosphorylation of b-catenin
+protein leads to degradation (left). Apc haploinsufficiency leads to b-catenin stabilization by impairing the degradation complex (right). (c) Timeline for
+pulse-chase experiment. Tamoxifen injection (0.25 mg) at P6 and chase to P9, P12, P21, P36 and P96. (d) (Leftmost panel): b-catenin staining in Pthlh-
+creER; Apc+/+; R26RtdTomato (Control) and Pthlh-creER; Apcfl/+; R26RtdTomato (APC cHet) distal femur growth plates at P15. Arrows: b-catenin+tdTomato+
+cells in RZ. (2nd-4th panels): Distal femur growth plates of Pthlh-creER; Apc+/+; R26RtdTomato (Control) and Pthlh-creER; Apcfl/+; R26RtdTomato (APC cHet)
+at P12, P21, and P96. RZ: resting zone, PZ: proliferating zone, HZ: hypertrophic zone. Blue: b-catenin-Alexa633, red: tdTomato, gray: DAPI and DIC.
+Scale bars 100 mm. n=four mice per genotype per time point. (e–h) Compiled quantification data of (e) b-Catenin intensity in resting zone (n=four mice
+per genotype) and total numbers of (f) resting chondrocytes (n=4–5 mice per genotype per time point), (g) short columnar chondrocytes (10
+tdTomato+ cells, n=four mice per genotype per time point) and (h) long columnar chondrocytes (>10 tdTomato+ cells, n=four mice per genotype per
+time point) collected from serial sections of femur growth plates (two femurs/mouse) at all time points. *p<0.05, Mann-Whitney’s U-test. Data are
+presented as mean ± s.d. Control versus Apc cHet, resting chondrocytes; P9: p=0.036, mean difference = 243.9±97.4, 95% confidence interval (4.2,
+483.5); P12: p=0.029, mean difference = 351.9±109.8, 95% confidence interval (83.3, 620.5); P21: p=0.029, mean difference = 198.5±63.9, 95% confidence
+interval (42.1, 355.0); P36: p=0.343, mean difference = –76.3±100.3, 95% confidence interval (–321.8, 169.3); P96: p=0.057, mean difference = 55.3±28.7,
+Figure 6 continued on next page
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+13 of 24
+Research article
+Developmental Biology
+Taken together, these findings indicate that activation of canonical Wnt signaling impairs forma-
+tion, expansion and differentiation of PTHrP+ chondrocytes in the resting zone (Figure 7). Thus,
+PTHrP+ resting chondrocytes are required to be maintained in a Wnt-inhibitory environment to main-
+tain themselves and their column-forming capabilities.
+Figure 6 continued
+95% confidence interval (–18.5, 129.1). Control versus Apc cHet, short columns; P12: p=0.020, mean difference = 7.9±4.3, 95% confidence interval (–2.7,
+18.5); P21: p=0.029, mean difference = 20.8±6.5, 95% confidence interval (5.0, 36.5); P36: p=0.343, mean difference = –8.9±10.7, 95% confidence interval
+(–35.0, 17.3); P96: p=0.343, mean difference = 1.3±7.2, 95% confidence interval (–17.2, 19.7). Control versus Apc cHet, long columns; P21: p=0.886, mean
+difference = 10.0±12.1, 95% confidence interval (–19.6, 39.6); P36: p=0.686, mean difference = –5.9±18.6, 95% confidence interval (–51.3, 39.5); P96:
+p=0.029, mean difference = 22.3±6.5, 95% confidence interval (6.2, 38.3).
+The online version of this article includes the following source data and figure supplement(s) for figure 6:
+Source data 1. Compiled quantification data of (e) B-Catenin intensity in resting zone and total numbers of resting chondrocytes, (g) short columnar
+chondrocytes and (h) long columnar chondrocytes.
+Figure supplement 1. Morphology and organization of PTHrPCE lineage-marked APC-insufficient columnar chondrocytes.
+Figure 7. PTHrP+ chondrocytes in the resting zone of the growth plate are maintained in a Wnt-inhibitory environment. PTHrP+ chondrocytes are
+maintained in a Wnt inhibitory environment within the resting zone. (a) Transition of chondrocytes from the resting zone (‘label-retaining chondrocytes,
+LRCs’) to the proliferating zone (‘non-label-retaining chondrocytes, Non-LRCs’) in the postnatal growth plate is concertedly regulated by canonical Wnt/
+b-catenin and non-canonial Wnt/PCP signaling pathways. (b) Apc haploinsufficiency increases b-catenin level in the resting zone, and subsequently
+decreases formation of PTHrP+ chondrocytes and their differentiation to columnar chondrocytes. Non-canonical Wnt/PCP pathways also play a role in
+facilitating asymmetric horizontal cell division of resting chondrocytes. Figure Legends – figure supplements.
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+14 of 24
+Research article
+Developmental Biology
+Discussion
+In this study, we investigated the molecular mechanisms regulating the maintenance and the differ-
+entiation of slow-cycling chondrocytes localized in the resting zone of the postnatal growth plate. To
+date, our understanding of the molecular regulators of this special subclass of chondrocytes is
+largely grounded in histological and immunohistochemical observations and extrapolations from
+conditional gene ablation studies (Hallett et al., 2019). To address this gap in knowledge, we estab-
+lished a quadruple transgenic murine reporter model, ‘Col2-Q’ system, to genetically label slow-
+cycling chondrocytes in an unbiased manner using a pulse-chase approach based on a chondrocyte-
+specific doxycycline-controllable Tet-Off system regulating expression of histone 2B-linked GFP. We
+successfully isolated and defined the identities of label-retaining chondrocytes (LRCs) and their pro-
+liferating counterparts (non-LRCs), based on combinatorial histological and flow cytometry analyses
+using a proliferation marker EdU, in order to profile the transcriptome of these cells. As the resting
+zone of the growth plate is considered to represent a resident stem-cell niche (Abad et al., 2002;
+Mizuhashi et al., 2018; Newton et al., 2019), our experiments serve as an approach to interrogate
+the fundamental characteristics of one of the stem-like cells residing in the postnatal growth plate.
+It is unclear how slow-cycling chondrocytes in the resting zone maintain low mitotic capabilities
+while differentiating into columnar chondrocytes in the proliferating zone. Using a comparative bulk
+RNA-seq transcriptomic analysis, we discovered that LRCs are enriched for a unique set of genes
+associated with hallmark (e.g. Pthlh and Sfrp5) and novel (e.g. Gas1, Spon1, and Wif1) markers for
+resting chondrocytes, in addition to Wnt inhibitory molecules (e.g. Sfrp1, Dkk2, Notum, and Fzd6).
+Interestingly, however, we found that Wnt7b, a Wnt activator, is enriched in LRCs. Wnt7b is
+expressed by perichondral cells adjacent to the hypertrophic zone and simulates differentiation of
+osteoblasts (Chen et al., 2014; Joeng and Long, 2014; Song et al., 2020) and chondrocytes
+(Chen et al., 2014). Thus, LRCs may be maintained in a delicate balance between Wnt inhibitors and
+activators. Conversely, non-LRCs were enriched for markers of pre-hypertrophic (e.g. Ihh) and hyper-
+trophic (e.g. Col10a1) chondrocytes, and represent differentially expressed genes commonly associ-
+ated with metabolically active cellular processes, such as oxidative phosphorylation. We further
+validated the expression of Pthlh, which is a hallmark marker for resting chondrocytes, and Gas1, a
+novel marker, using Pthlh-LacZ and Gas1-LacZ knock-in reporter alleles, respectively. We found that
+PTHrP+ chondrocytes in the resting zone maintain low levels of mitotic activity, indicated by EdU
+labeling and pulse-chase experiments. Thus, the genes identified by our comparative transcriptomic
+analysis appear to represent accurate transcriptomic features of distinct populations of slow-cycling
+versus differentiating chondrocytes in the postnatal growth plate. Future investigations aimed at
+assessing the roles of novel marker genes may lead to the identification of novel skeletal stem cell
+populations that are important for the postnatal growth plate.
+Wnt/b-catenin signaling is essential for endochondral ossification (Regard et al., 2012), and is
+shown to regulate initiation of chondrocyte hypertrophy by inhibiting PTHrP signaling activities
+(Guo et al., 2009). Moreover, Wnt/b-catenin signaling is essential during skeletal development for
+regulating mesenchymal progenitor differentiation in favor of osteoblasts (Day et al., 2005), or for
+preventing transdifferentiation of osteoblast precursors into chondrocytes (Hill et al., 2005). In order
+to determine the functional contribution of Wnt signaling to PTHrP+ resting chondrocyte skeletal
+stem cells and their differentiation, one copy of adenomatous polyposis coli (Apc), a critical signaling
+component of the b-catenin degradation complex, was selectively ablated using a resting chondro-
+cyte-specific Pthlh-creER line. In the resting zone, Apc haploinsufficiency led to increased b-catenin
+protein expression specifically in the resting zone including in PTHrP+ chondrocytes, and slightly
+decreased formation and expansion of PTHrP+ chondrocytes, reducing differentiation capabilities of
+these cells into columnar chondrocytes in the proliferating zone. It is important to note that the
+effect of b-catenin stabilization in PTHrP+ chondrocytes appears to be modest. Lines of studies dem-
+onstrate that non-canonical Wnt/planar cell polarity (PCP) signaling plays a key role in facilitating
+asymmetric divisions of resting chondrocytes. Therefore, our findings support the notion that canoni-
+cal and non-canonical Wnt signaling pathways concertedly modulate PTHrP+ chondrocytes in the
+resting zone and regulate their differentiation.
+Taken together, our data support a novel paradigm that slow-cycling PTHrP+ chondrocytes are
+maintained in a Wnt-inhibitory environment within the resting zone of the growth plate, and that this
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+15 of 24
+Research article
+Developmental Biology
+relationship is critical to regulating the formation, the expansion and the differentiation of chondro-
+cytes of the resting zone (Figure 7).
+Materials and methods
+Key resources table
+Reagent type
+(species) or
+resource
+Designation
+Source or reference
+Identifiers
+Additional information
+Strain, strain
+background
+(Mus musculus)
+Col2a1-tTA
+Jackson Laboratory
+RRIDMGI:6490616
+Strain, strain
+background
+(Mus musculus)
+TRE-H2B-EGFP
+PMID:19060879
+RRIDMGI:5007779
+Strain, strain
+background
+(Mus musculus)
+Col2a1-creER
+PMID:16894608
+RRIDMGI:3665440
+Strain, strain
+background
+(Mus musculus)
+Pthlh-LacZ/null
+PMID:16355280
+RRIDMGI:3829430
+Strain, strain
+background
+(Mus musculus)
+Gas1-LacZ/null
+PMID:11231094
+RRIDMGI:2388397
+Strain, strain
+background
+(Mus musculus)
+Pthlh-creER
+PMID:30401834
+RRIDMGI:6257033
+Strain, strain
+background
+(Mus musculus)
+Rosa26-CAG-loxP-
+stop-loxP-tdTomato
+Jackson Laboratory
+RRIDMGI:3809524
+Strain, strain
+background
+(Mus musculus)
+Apctm1Tyj
+Jackson Laboratory
+RRIDMGI:3829069
+Sequence-based
+reagent
+Mm-Col2a1
+ACDbio
+Cat# 407221
+(1:500)
+Sequence-based
+reagent
+Mm-Prg4
+ACDbio
+Cat# 437661
+(1:500)
+Antibody
+Rabbit polyclonal
+anti-b-catenin
+Abcam
+Cat# 16051
+(4 mg)
+Antibody
+Goat polyclonal
+Alexa Fluor 633-
+conjugated anti-
+Rabbit IgG (H+L)
+Invitrogen
+Cat# A-21071
+(1:200)
+Antibody
+Rat monoclonal
+APC-conjugated
+anti-mouse CD45
+Invitrogen
+Cat# 17-0451-82
+(1:500)
+Antibody
+Rat monoclonal
+eFlour450-conjugated
+anti-mouse CD45
+Invitrogen
+Cat# 14-0451-82
+(1:500)
+Chemical
+compound, drug
+Opal 520
+Akoya Biosciences
+Cat# 1601877
+Chemical
+compound, drug
+Alexa Fluor
+488-azide
+Invitrogen
+Cat# A10266
+Chemical
+compound, drug
+Alexa Fluor
+647-azide
+Invitrogen
+Cat# A10277
+Chemical
+compound, drug
+EdU
+(5-ethynyl-2’-
+deoxyuridine)
+Invitrogen
+Cat# E10187
+Continued on next page
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+16 of 24
+Research article
+Developmental Biology
+
+
+===== SHEET 5 =====
+Continued
+Reagent type
+(species) or
+resource
+Designation
+Source or reference
+Identifiers
+Additional information
+Other
+DAPI
+(4’,6-Diamidino-2-
+Phenylindole,
+Dihydrochloride)
+Invitrogen
+Cat# D1306
+Generation of Col2a1-tTA transgenic mice
+Col2a1-tTA transgenic mice were generated by pronuclear injection of a NotI-digested 8.4 kb gene
+construct containing a 3 kb mouse Col2a1 promoter and a 3 kb fragment of intron one ligated to a
+splice acceptor sequence followed by an internal ribosome-entry site (IRES) (Ovchinnikov et al.,
+2000), tetracycline-controlled transactivator (tTA) and the SV40 large T antigen polyadenylation sig-
+nal (Takara Bio, Mountain View, CA), into B6SJLF1 fertilized eggs. The G0 founder mice were back-
+crossed with FVB/N mice at least for ten generations. Of the two lines established, the high
+expresser line (Line H) was used for subsequent studies. The insertion site of the Col2a1-tTA trans-
+gene was determined based on the Genome Walker Universal system (Takara Bio). The Col2a1-tTA
+transgene was inserted 16kbp downstream of Pellino2 on Chromosome 14. Col2a1-tTA mice were
+genotyped using PCR primers discriminating heterozygosity and homozygosity of the transgene (85:
+SV40pA_End_Fw: ACGGGAAGTATCAGCTCGAC, 86: Mm14_5WT_Fw: TTGAGAGTCTCCCAGG-
+CAAT, 87: Mm14_3WT_Rv: CTCCTGATCTCCTGGCAAAG, ~600 bp for wild-type, ~300 bp for
+Col2a1-tTA allele). The Col2a1-tTA stain is deposited at the Jackson Laboratories (JAX035969).
+Mice
+TRE-H2B-EGFP (Foudi et al., 2009) knock-in, Col2a1-creER transgenic (Nakamura et al., 2006),
+Pthlh-LacZ/null knock-in (Chen et al., 2006), Gas1-LacZ/null knock-in (Martinelli and Fan, 2007),
+Pthlh-creER transgenic (Mizuhashi et al., 2018) mice have been described elsewhere. Rosa26-CAG-
+loxP-stop-loxP-tdTomato
+(Ai14:
+R26R-tdTomato,
+JAX007914),
+Apc-floxed
+(JAX009045)
+mice
+(Cheung et al., 2010) were acquired from the Jackson Laboratory. All procedures were conducted
+in compliance with the Guidelines for the Care and Use of Laboratory Animals approved by the Uni-
+versity Michigan’s Institutional Animal Care and Use Committee (IACUC), protocol 7681 and 9496.
+All mice were housed in a specific pathogen-free condition, and analyzed in a mixed background.
+Mice were identified by micro-tattooing or ear tags. Tail biopsies of mice were lysed by a HotShot
+protocol (incubating the tail sample at 95˚C for 30 min in an alkaline lysis reagent followed by neu-
+tralization) and used for GoTaq Green Master Mix PCR-based genotyping (Promega, and Nexus X2,
+Madison, WI). Mice were euthanized by over-dosage of carbon dioxide or decapitation under inhala-
+tion anesthesia in a drop jar (Fluriso, Isoflurane USP, VetOne, Boise, ID).
+Doxycycline
+Mice were weaned at postnatal day (P) 21 and fed with a standard diet containing 2 mg/g doxycy-
+cline (Bio-Serv F3893, Flemington, NJ) for up to 12 weeks.
+Tamoxifen
+Tamoxifen (Sigma T5648, St. Louis, MO) was mixed with 100% ethanol until completely dissolved.
+Subsequently, a proper volume of sunflower seed oil (Sigma S5007) was added to the tamoxifen-eth-
+anol mixture and rigorously mixed. The tamoxifen-ethanol-oil mixture was incubated at 60˚C in a
+chemical hood until the ethanol evaporated completely. The tamoxifen-oil mixture was stored at
+room temperature until use. Mice with 21 days of age or older received two doses of 2 mg of tamox-
+ifen intraperitoneally at 3 and 2 days prior to analysis, or mice with 6 days of age received a single
+dose of 0.25 mg tamoxifen intraperitoneally for lineage-tracing analysis.
+Cell proliferation and EdU label-retention assay
+5-Ethynyl-2’-deoxyuridine (EdU) (Invitrogen A10044, Carlsbad, CA) dissolved in PBS was adminis-
+tered to mice at indicated postnatal days. Click-iT Imaging Kit with Alexa Flour 488-azide (Invitrogen
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+17 of 24
+Research article
+Developmental Biology
+C10337) was used to detect EdU in cryosections, or Click-iT Plus Flow Cytometry Kit with Alexa Flour
+647-azide (Invitrogen C10634). For Pthlh-LacZ EdU label-retention assay, Pthlh-LacZ mice received
+serial doses of EdU (50 mg each) between P4 and P6, and chased for 3 weeks. For Col2-Q EdU prolif-
+eration assays, Col2-Q mice received two doses of EdU (500 mg each at P28 and 35, 800 mg each at
+P49) at 6 and 3 hr prior to sacrifice.
+X-Gal staining of dissected femur epiphyses
+Distal epiphyses of femurs were manually dislodged, and attached soft tissues were carefully
+removed to ensure the maximum penetration of the substrate. Dissected epiphyses were fixed in 2%
+paraformaldehyde for 30 min at 4˚C, followed by overnight X-gal staining at 37˚C. Stained samples
+were further postfixed in 4% paraformaldehyde, overnight at 4˚C, then decalcified in 15% EDTA for
+7 days. Decalcified samples were cryoprotected in 30% sucrose/PBS followed by 30% sucrose/PBS:
+OCT (1:1) solution, each overnight at 4˚C.
+Histology
+Bilateral femurs were dissected under a stereomicroscope (Nikon SMZ-800, Tokyo, Japan) to remove
+soft tissues, and fixed in 4% paraformaldehyde for a proper period, typically ranging from 3 hr to
+overnight at 4˚C, then decalcified in 15% EDTA for a proper period, typically ranging from 0 hr to 14
+days. Decalcified samples were cryoprotected in 30% sucrose/PBS solutions and then in 30%
+sucrose/PBS:OCT (1:1) solutions, each at least overnight at 4˚C. Samples were embedded in an OCT
+compound (Tissue-Tek, Sakura, Torrance, CA) under a stereomicroscope and transferred on a sheet
+of dry ice to solidify the compound. Embedded samples were cryosectioned at 14–50 mm using a
+cryostat (Leica CM1850, Wetzlar, Germany) and adhered to positively charged glass slides (Fisher-
+brand ColorFrost Plus). Cryosections were stored at  20˚C (quantification) or –80˚C (immunofluores-
+cence) in freezers until use. Sections were postfixed in 4% paraformaldehyde for 15 min at room
+temperature. For functional conditional knockout experiments, 50 mm serial sections were collected
+through the entire growth plate. For immunofluorescence experiments, epiphyses were popped out
+of bilateral femurs, processed for 24 hr in 4% paraformaldehyde and sectioned at 14 mm. Sections
+were incubated with anti-b-catenin primary antibody (Abcam ab16051, Cambridge, UK) overnight at
+4˚C and further stained with 1:200 Alexa Fluor 633 Goat anti-Rabbit IgG (H+L) Secondary Antibody
+(Invitrogen A21071) at a 20˚C for 3 hr. Sections were further incubated with DAPI (4’,6-diamidino-2-
+phenylindole, 5 mg/ml, Invitrogen D1306) to stain nuclei prior to imaging. For EdU assay, sections
+were incubated with Alexa Fluor 488-azide (Pthlh-LacZ, Invitrogen A10266) or Alexa Fluor 647-azide
+(Col2-Q, Invitrogen A10277) for 30 min at 43˚C using Click-iT Imaging Kit (Invitrogen C10337). Sec-
+tions were further incubated with DAPI to stain nuclei prior to imaging. Stained samples were
+mounted in TBS with No.1.5 coverslips (Fisher, Waltham, MA).
+RNAscope in situ hybridization
+In situ hybridization was performed with RNAscope 2.5 Multiplex Fluorescent V2 Assay (Advanced
+Cell Diagnostics [Newark, CA, USA] 323100) using the following probes: Col2a1 (314741) and Prg4
+(437661), according to the manufacturer’s fixed frozen tissue protocol. Probes were diluted to 1:500
+concentration using Opal 520 reagent (Akoya Biosciences [NC1601877]).
+Imaging and cell quantification
+Images were captured by an automated inverted fluorescence microscope with a structured illumina-
+tion system (Zeiss Axio Observer Z1 with ApoTome.2 system) and Zen 2 (blue edition) software. The
+filter settings used were: FL Filter Set 34 (Ex. 390/22, Em. 460/50 nm), Set 38 HE (Ex. 470/40, Em.
+525/50 nm), Set 43 HE (Ex. 550/25, Em. 605/70 nm), Set 50 (Ex. 640/30, Em. 690/50 nm) and Set 63
+HE (Ex. 572/25, Em. 629/62 nm). The objectives used were: Fluar 2.5x/0.12, EC Plan-Neofluar 5x/
+0.16, Plan-Apochromat 10x/0.45, EC Plan-Neofluar 20x/0.50, EC Plan-Neofluar 40x/0.75, Plan-Apo-
+chromat 63x/1.40. Images were typically tile-scanned with a motorized stage, Z-stacked and recon-
+structed by a maximum intensity projection (MIP) function. Differential interference contrast (DIC)
+was used for objectives higher than 10x. Some of the images were captured by a fluorescence micro-
+scope (Nikon Eclipse E800) with prefigured triple-band filter settings for DAPI/FITC/TRITC, and
+merged with Spot Advanced Software (Spot Imaging, Sterling Heights, MI). Confocal images were
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+18 of 24
+Research article
+Developmental Biology
+acquired using LSM510 and Zen2009 software (Zeiss, Oberkochen, Germany) with lasers and corre-
+sponding band-pass filters for DAPI (Ex.405nm, BP420-480), GFP (Ex.488nm, BP505-530) and tdTo-
+mato (Ex.543nm, BP565-595). LSM Image Viewer and Adobe Photoshop software were used to
+capture and align images. The number of tdTomato+ cells, b-Catenin intensity and CTCF values of
+H2B-GFP were counted by two individuals manually or using ImageJ image analysis software by sin-
+gle blinded methods to ensure unbiased data interpretation.
+Growth plate cell preparation
+Distal epiphyses of femurs and proximal epiphyses of tibias were manually dislodged using dull scis-
+sors, and attached soft tissues and woven bones were carefully removed using a cuticle nipper. Cells
+were dissociated from dissected epiphyses using five serial rounds of collagenase digestion, incubat-
+ing with 2 Wunsch units of Liberase TM (Roche, Basel, Switzerland) in 2 ml Ca2+, Mg2+-free Hank’s
+Balanced Salt Solution (HBSS, Sigma H6648) at 37˚C for 30 min. each time on a shaking incubator
+(ThermomixerR, Eppendorf, Hamburg, Germany). Single–cell suspension was generated using an 18-
+gauge needle and a 1 ml Luer-Lok syringe (BD), and filtered through a 70 mm cell strainer (BD) into a
+50-ml tube on ice.
+Flow cytometry
+Dissociated cells were stained by standard protocols with allophycocyanin (APC)-conjugated anti-
+mouse CD45 (30 F-11) antibodies (1:500, eBioscience, San Diego, CA). Flow cytometry analysis was
+performed using a four-laser BD LSR II (Ex. 355/407/488/633 nm) or LSR Fortessa (Ex. 405/488/561/
+640 nm) and FACSDiva software. Acquired raw data were further analyzed on FlowJo software
+(TreeStar). Representative plots of at least three independent biological samples are shown in the
+figures.
+Fluorescence-activated cell sorting (FACS) and RNA isolation
+Cell sorting was performed using a five-laser BD FACS Aria III (Ex.355/407/488/532/633 nm) and
+FACSDiva. CD45negGFPhigh cells at the top 10 percentile of GFP brightness (LRCs) and CD45negGFP-
+mid-low cells with 10~50 percentile of GFP brightness (non-LRCs) were directly sorted into TRIzol LS
+Reagent (ThermoFisher 10296010, Waltham, MA). Total RNA was isolated using NucleoSpin RNA XS
+(Macherey-Nagel, 740902). RNA Integrity Number (RIN) was assessed by Agilent 2100 Bioanalyzer
+RNA 6000 Pico Kit. Samples with RIN>8.0 were used for subsequent analyses.
+RNA amplification and deep sequencing
+Complementary DNAs were prepared by SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing
+(Takara 634888) using 150~800 pg of total RNA. Post-amplification quality control was performed by
+Agilent TapeStation DNA High Sensitivity D1000 Screen Tape system. DNA libraries were prepared
+by Nextera XT DNA Library Preparation Kit (Illumina) and submitted for deep sequencing (Illumina
+HiSeq 2500).
+RNA-seq analysis
+cDNA libraries were sequenced using following conditions; six samples per lane, 50 cycle single end
+read. Reads files were downloaded and concatenated into a single. fastq file for each sample. The
+quality of the raw reads data for each sample was checked using FastQC to identify quality prob-
+lems. Tuxedo Suite software package was subsequently used for alignment (using TopHat and Bow-
+tie2), differential expression analysis, and post-analysis diagnostics. FastQC was used for a second
+round of quality control (post-alignment). HTSeq/DESeq2 was run using UCSC mm10.fa as the refer-
+ence genome sequence. Expression quantitation was performed with HTSeq, to count non-ambigu-
+ously mapped reads only. HTSeq counts per gene were then used in a custom DESeq2 paired
+analysis. Normalization and differential expression were performed with DESeq2, using a negative
+binomial generalized linear model, including a term for mouse of origin for a paired analysis. Plots
+were generated using variations or alternative representations of native DESeq2 plotting functions,
+ggplot2, plotly, and other packages within the R environment. Heatmaps were generated with
+updated rlog normalized count values for each sample for all plus top sets (500) of differentially
+expressed genes with the gplots package (v 3.0.1). Two types of clustering were used: (1) averaging
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+19 of 24
+Research article
+Developmental Biology
+across rows with Pearson correlation distance with average linkage and (2) Ward’s squared dissimi-
+larity criterion. Top differentially expressed genes were determined after ranking genes by standard
+deviation across all samples. Independent of iPathway, GO term enrichment was performed on DE
+results, with a logFC threshold of 2 and adjusted p-value < 0.05 with the GOseq package (v 1.36)
+with probability weighting function and GO enrichment specified with mm10 as genome and gene
+symbol specified as gene ID format. Results were plotted for the top ten of selected terms related
+to the Wnt pathways, ranked by overrepresented p-value using ggplot2 (v 3.2.1). KEGG results with
+FDR correction and gene tables for Wnt signaling pathway were downloaded from iPathway (report
+ID: 41865). KEGG gene tables for each pathway were used to subset the DE results before restrict-
+ing results to genes for which both log fold change and adjusted p-value statistics were available.
+Replicates
+All experiments were performed in biological replicates. For all data presented in the manuscript,
+we examined at least three independent biological samples (three different mice) to ensure the
+reproducibility. Biological replicates were defined as multiple experimental samples sharing common
+genotypes and genetic backgrounds. For each series of the experiments, all attempts at biological
+replication were successful. Technical replicates were generated from a single experimental sample.
+For example, serial sections of the femur growth plate from a single mouse were considered techni-
+cal replicates. Outliers were uncommon in our datasets and did not impact the trend and the signifi-
+cance of our quantitated results. As a result, all quantitative data were included to ensure
+transparency in our data interpretation.
+Statistical analysis
+Results are presented as mean values ± s.d. Statistical evaluation was conducted based on Mann-
+Whitney’s U-test. A p value <0.05 was considered significant. No statistical method was used to pre-
+determine sample size. Sample size was determined on the basis of previous literature and our previ-
+ous experience to give sufficient standard deviations of the mean so as not to miss a biologically
+important difference between groups. The experiments were not randomized. All the available mice
+of the desired genotypes were used for experiments. The investigators were not blinded during
+experiments and outcome assessment. One femur from each mouse was arbitrarily chosen for histo-
+logical analysis. Genotypes were not particularly highlighted during quantification.
+Acknowledgements
+This research was supported by grants from National Institute of Health (R01DE026666 and
+R01DE030630 to NO, R01DE029181 to WO, P01DK011794 to HMK and T32DE007057 to SAH). We
+thank H Hock for TRE-H2B-EGFP mice and B Allen for Gas1-LacZ mice. We acknowledge support
+from the Bioinformatics Core of the University of Michigan Medical School’s Biomedical Research
+Core Facilities.
+Additional information
+Funding
+Funder
+Grant reference number
+Author
+National Institute of Dental
+and Craniofacial Research
+R01DE026666
+Noriaki Ono
+National Institute of Dental
+and Craniofacial Research
+R01DE030630
+Noriaki Ono
+National Institute of Dental
+and Craniofacial Research
+R01DE029181
+Wanida Ono
+National Institute of Diabetes
+and Digestive and Kidney Dis-
+eases
+P01DE011794
+Henry M Kronenberg
+National Institute of Dental
+and Craniofacial Research
+T32DE007057
+Shawn A Hallett
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+20 of 24
+Research article
+Developmental Biology
+
+
+===== SHEET 6 =====
+The funders had no role in study design, data collection and interpretation, or the
+decision to submit the work for publication.
+Author contributions
+Shawn A Hallett, Conceptualization, Data curation, Formal analysis, Funding acquisition, Validation,
+Investigation, Visualization, Writing - original draft, Writing - review and editing; Yuki Matsushita,
+Data curation, Formal analysis, Investigation, Methodology; Wanida Ono, Conceptualization, Resour-
+ces, Data curation, Funding acquisition, Investigation, Methodology, Writing - review and editing;
+Naoko Sakagami, Conceptualization, Data curation, Formal analysis, Investigation, Visualization; Koji
+Mizuhashi, Conceptualization, Data curation, Formal analysis, Investigation, Visualization, Methodol-
+ogy; Nicha Tokavanich, Data curation, Investigation, Visualization; Mizuki Nagata, Data curation,
+Visualization, Methodology; Annabelle Zhou, Data curation, Formal analysis, Visualization; Takao
+Hirai, Conceptualization, Resources, Data curation, Methodology; Henry M Kronenberg, Conceptual-
+ization, Resources, Supervision, Funding acquisition, Project administration, Writing - review and
+editing; Noriaki Ono, Conceptualization, Resources, Data curation, Formal analysis, Supervision,
+Funding acquisition, Validation, Investigation, Visualization, Methodology, Writing - original draft,
+Project administration, Writing - review and editing
+Author ORCIDs
+Shawn A Hallett
+https://orcid.org/0000-0003-1472-7502
+Noriaki Ono
+https://orcid.org/0000-0002-3771-8230
+Ethics
+Animal experimentation: All procedures were conducted in compliance with the Guidelines for the
+Care and Use of Laboratory Animals approved by the University Michigan’s Institutional Animal Care
+and Use Committee (IACUC), protocol 7681 and 9496.
+Decision letter and Author response
+Decision letter https://doi.org/10.7554/eLife.64513.sa1
+Author response https://doi.org/10.7554/eLife.64513.sa2
+Additional files
+Supplementary files
+. Supplementary file 1. Normalized expression count values of label-retaining chondrocytes (LRCs)
+and non-LRCs. Comparative RNA-seq analysis of LRCs and non-LRCs, rlog normalized count values
+for each biological sample of LRCs (High1_50032, High2_53561, High3_53563) and non-LRCs
+(Low1_50033, Low2_53562, Low3_53564). Provided is a table of differential expression (DE) statis-
+tics, rlog counts per sample, as well as standard deviation and mean across sample counts in rlog
+scale. This table was used for generating all heatmaps, including restricting only to differentially
+expressed genes, to input DE statistics for GO term enrichment, and intersected with KEGG gene
+sets from iPathway Guide for STRING analysis.
+. Transparent reporting form
+Data availability
+The bulk RNA-seq datasets presented herein have been deposited in the National Center for Bio-
+technology Information (NCBI)’s Gene Expression Omnibus (GEO), and are accessible through GEO
+Series
+accession
+number
+GSE160364
+(https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
+GSE160364); rlog normalized expression counts of the RNA-seq datasets are provided in Supple-
+mentary file 1. The source data underlying all Figures and Figure supplements are provided as a
+Source data files. All the raw images and flow cytometry files supporting the conclusion of this study
+have been deposited on Dryad and are accessible via https://doi.org/10.5061/dryad.70rxwdbz1.
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+21 of 24
+Research article
+Developmental Biology
+The following datasets were generated:
+Author(s)
+Year Dataset title
+Dataset URL
+Database and Identifier
+Ono N
+2020
+Comparative bulk RNAseq
+analysis of label-retaining
+chondrocytes (LRCs) of the
+growth plate versus their
+progeny
+https://www.ncbi.nlm.
+nih.gov/geo/query/acc.
+cgi?acc=GSE160364
+NCBI Gene Expression
+Omnibus, GSE160364
+Ono N
+2020
+Chondrocytes in the resting
+zone of the growth plate are
+maintained in a Wnt-inhibitory
+environment
+https://doi.org/10.5061/
+dryad.70rxwdbz1
+Dryad Digital Repository,
+10.5061/dryad.70rxwdbz1
+References
+Abad V, Meyers JL, Weise M, Gafni RI, Barnes KM, Nilsson O, Bacher JD, Baron J. 2002. The role of the resting
+zone in growth plate chondrogenesis. Endocrinology 143:1851–1857. DOI: https://doi.org/10.1210/endo.143.
+5.8776, PMID: 11956168
+Arnold MA, Kim Y, Czubryt MP, Phan D, McAnally J, Qi X, Shelton JM, Richardson JA, Bassel-Duby R, Olson EN.
+2007. MEF2C transcription factor controls chondrocyte hypertrophy and bone development. Developmental
+Cell 12:377–389. DOI: https://doi.org/10.1016/j.devcel.2007.02.004, PMID: 17336904
+Chagin AS, Vuppalapati KK, Kobayashi T, Guo J, Hirai T, Chen M, Offermanns S, Weinstein LS, Kronenberg HM.
+2014. G-protein stimulatory subunit alpha and gq/11a G-proteins are both required to maintain quiescent
+stem-like chondrocytes. Nature Communications 5:3673. DOI: https://doi.org/10.1038/ncomms4673,
+PMID: 24781502
+Chau M, Lui JC, Landman EB, Spa¨th SS, Vortkamp A, Baron J, Nilsson O. 2014. Gene expression profiling reveals
+similarities between the spatial architectures of postnatal articular and growth plate cartilage. PLOS ONE 9:
+e103061. DOI: https://doi.org/10.1371/journal.pone.0103061, PMID: 25068449
+Chen X, Macica CM, Dreyer BE, Hammond VE, Hens JR, Philbrick WM, Broadus AE. 2006. Initial characterization
+of PTH-related protein gene-driven lacZ expression in the mouse. Journal of Bone and Mineral Research 21:
+113–123. DOI: https://doi.org/10.1359/JBMR.051005, PMID: 16355280
+Chen M, Lichtler AC, Sheu TJ, Xie C, Zhang X, O’Keefe RJ, Chen D. 2007. Generation of a transgenic mouse
+model with chondrocyte-specific and tamoxifen-inducible expression of cre recombinase. Genesis 45:44–50.
+DOI: https://doi.org/10.1002/dvg.20261, PMID: 17211877
+Chen J, Tu X, Esen E, Joeng KS, Lin C, Arbeit JM, Ru¨ egg MA, Hall MN, Ma L, Long F. 2014. WNT7B promotes
+bone formation in part through mTORC1. PLOS Genetics 10:e1004145. DOI: https://doi.org/10.1371/journal.
+pgen.1004145, PMID: 24497849
+Cheung AF, Carter AM, Kostova KK, Woodruff JF, Crowley D, Bronson RT, Haigis KM, Jacks T. 2010. Complete
+deletion of apc results in severe polyposis in mice. Oncogene 29:1857–1864. DOI: https://doi.org/10.1038/onc.
+2009.457, PMID: 20010873
+Day TF, Guo X, Garrett-Beal L, Yang Y. 2005. Wnt/beta-catenin signaling in mesenchymal progenitors controls
+osteoblast and chondrocyte differentiation during vertebrate skeletogenesis. Developmental Cell 8:739–750.
+DOI: https://doi.org/10.1016/j.devcel.2005.03.016, PMID: 15866164
+Etich J, Holzer T, Pitzler L, Bluhm B, Brachvogel B. 2015. MiR-26a modulates extracellular matrix homeostasis in
+cartilage. Matrix Biology 43:27–34. DOI: https://doi.org/10.1016/j.matbio.2015.02.014, PMID: 25766405
+Foudi A, Hochedlinger K, Van Buren D, Schindler JW, Jaenisch R, Carey V, Hock H. 2009. Analysis of histone 2B-
+GFP retention reveals slowly cycling hematopoietic stem cells. Nature Biotechnology 27:84–90. DOI: https://
+doi.org/10.1038/nbt.1517, PMID: 19060879
+Gao B, Song H, Bishop K, Elliot G, Garrett L, English MA, Andre P, Robinson J, Sood R, Minami Y, Economides
+AN, Yang Y. 2011. Wnt signaling gradients establish planar cell polarity by inducing Vangl2 phosphorylation
+through Ror2. Developmental Cell 20:163–176. DOI: https://doi.org/10.1016/j.devcel.2011.01.001,
+PMID: 21316585
+Gu J, Lu Y, Li F, Qiao L, Wang Q, Li N, Borgia JA, Deng Y, Lei G, Zheng Q. 2014. Identification and
+characterization of the novel Col10a1 regulatory mechanism during chondrocyte hypertrophic differentiation.
+Cell Death & Disease 5:e1469. DOI: https://doi.org/10.1038/cddis.2014.444, PMID: 25321476
+Guo J, Chung UI, Kondo H, Bringhurst FR, Kronenberg HM. 2002. The PTH/PTHrP receptor can delay
+chondrocyte hypertrophy in vivo without activating phospholipase C. Developmental Cell 3:183–194.
+DOI: https://doi.org/10.1016/S1534-5807(02)00218-6, PMID: 12194850
+Guo X, Mak KK, Taketo MM, Yang Y. 2009. The wnt/beta-catenin pathway interacts differentially with PTHrP
+signaling to control chondrocyte hypertrophy and final maturation. PLOS ONE 4:e6067. DOI: https://doi.org/
+10.1371/journal.pone.0006067, PMID: 19557172
+Hallett SA, Ono W, Ono N. 2019. Growth plate chondrocytes: skeletal development, growth and beyond.
+International Journal of Molecular Sciences 20:6009. DOI: https://doi.org/10.3390/ijms20236009
+Hallett SA, Ono W, Ono N. 2021. The hypertrophic chondrocyte: to be or not to be. Histology and
+Histopathology 17:18355. DOI: https://doi.org/10.14670/HH-18-355
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+22 of 24
+Research article
+Developmental Biology
+Hartmann C, Tabin CJ. 2000. Dual roles of wnt signaling during chondrogenesis in the chicken limb.
+Development 127:3141–3159. DOI: https://doi.org/10.1242/dev.127.14.3141, PMID: 10862751
+Hill TP, Spa¨ter D, Taketo MM, Birchmeier W, Hartmann C. 2005. Canonical wnt/beta-catenin signaling prevents
+osteoblasts from differentiating into chondrocytes. Developmental Cell 8:727–738. DOI: https://doi.org/10.
+1016/j.devcel.2005.02.013, PMID: 15866163
+Hirai T, Chagin AS, Kobayashi T, Mackem S, Kronenberg HM. 2011. Parathyroid hormone/parathyroid hormone-
+related protein receptor signaling is required for maintenance of the growth plate in postnatal life. PNAS 108:
+191–196. DOI: https://doi.org/10.1073/pnas.1005011108, PMID: 21173257
+Hunziker EB. 1994. Mechanism of longitudinal bone growth and its regulation by growth plate chondrocytes.
+Microscopy Research and Technique 28:505–519. DOI: https://doi.org/10.1002/jemt.1070280606, PMID: 79493
+96
+Joeng KS, Long F. 2014. Wnt7b can replace ihh to induce hypertrophic cartilage vascularization but not
+osteoblast differentiation during endochondral bone development. Bone Research 2:14004. DOI: https://doi.
+org/10.1038/boneres.2014.4, PMID: 26273517
+Komiya Y, Habas R. 2008. Wnt signal transduction pathways. Organogenesis 4:68–75. DOI: https://doi.org/10.
+4161/org.4.2.5851, PMID: 19279717
+Kronenberg HM. 2003. Developmental regulation of the growth plate. Nature 423:332–336. DOI: https://doi.
+org/10.1038/nature01657, PMID: 12748651
+Li L, Newton PT, Bouderlique T, Sejnohova M, Zikmund T, Kozhemyakina E, Xie M, Krivanek J, Kaiser J, Qian H,
+Dyachuk V, Lassar AB, Warman ML, Barenius B, Adameyko I, Chagin AS. 2017a. Superficial cells are self-
+renewing chondrocyte progenitors, which form the articular cartilage in juvenile mice. The FASEB Journal 31:
+1067–1084. DOI: https://doi.org/10.1096/fj.201600918R, PMID: 27965322
+Li Y, Li A, Junge J, Bronner M. 2017b. Planar cell polarity signaling coordinates oriented cell division and cell
+rearrangement in clonally expanding growth plate cartilage. eLife 6:e23279. DOI: https://doi.org/10.7554/
+eLife.23279, PMID: 28994649
+Li Y, Dudley AT. 2009. Noncanonical frizzled signaling regulates cell polarity of growth plate chondrocytes.
+Development 136:1083–1092. DOI: https://doi.org/10.1242/dev.023820, PMID: 19224985
+Lui JC, Andrade AC, Forcinito P, Hegde A, Chen W, Baron J, Nilsson O. 2010. Spatial and temporal regulation of
+gene expression in the mammalian growth plate. Bone 46:1380–1390. DOI: https://doi.org/10.1016/j.bone.
+2010.01.373, PMID: 20096814
+Lui JC, Chau M, Chen W, Cheung CS, Hanson J, Rodriguez-Canales J, Nilsson O, Baron J. 2015. Spatial
+regulation of gene expression during growth of articular cartilage in juvenile mice. Pediatric Research 77:406–
+415. DOI: https://doi.org/10.1038/pr.2014.208, PMID: 25521919
+Martinelli DC, Fan CM. 2007. Gas1 extends the range of hedgehog action by facilitating its signaling. Genes &
+Development 21:1231–1243. DOI: https://doi.org/10.1101/gad.1546307, PMID: 17504940
+Mizuhashi K, Ono W, Matsushita Y, Sakagami N, Takahashi A, Saunders TL, Nagasawa T, Kronenberg HM, Ono
+N. 2018. Resting zone of the growth plate houses a unique class of skeletal stem cells. Nature 563:254–258.
+DOI: https://doi.org/10.1038/s41586-018-0662-5, PMID: 30401834
+Nagao M, Cheong CW, Olsen BR. 2016. Col2-Cre and tamoxifen-inducible Col2-CreER target different cell
+populations in the knee joint. Osteoarthritis and Cartilage 24:188–191. DOI: https://doi.org/10.1016/j.joca.
+2015.07.025
+Nakamura E, Nguyen MT, Mackem S. 2006. Kinetics of tamoxifen-regulated cre activity in mice using a cartilage-
+specific CreER(T) to assay temporal activity windows along the proximodistal limb skeleton. Developmental
+Dynamics 235:2603–2612. DOI: https://doi.org/10.1002/dvdy.20892, PMID: 16894608
+Nakashima K, Zhou X, Kunkel G, Zhang Z, Deng JM, Behringer RR, de Crombrugghe B. 2002. The novel zinc
+finger-containing transcription factor osterix is required for osteoblast differentiation and bone formation. Cell
+108:17–29. DOI: https://doi.org/10.1016/S0092-8674(01)00622-5, PMID: 11792318
+Newton PT, Li L, Zhou B, Schweingruber C, Hovorakova M, Xie M, Sun X, Sandhow L, Artemov AV, Ivashkin E,
+Suter S, Dyachuk V, El Shahawy M, Gritli-Linde A, Bouderlique T, Petersen J, Mollbrink A, Lundeberg J,
+Enikolopov G, Qian H, et al. 2019. A radical switch in clonality reveals a stem cell niche in the epiphyseal
+growth plate. Nature 567:234–238. DOI: https://doi.org/10.1038/s41586-019-0989-6, PMID: 30814736
+Niehrs C. 2006. Function and biological roles of the dickkopf family of wnt modulators. Oncogene 25:7469–
+7481. DOI: https://doi.org/10.1038/sj.onc.1210054
+Ohkawara B, Glinka A, Niehrs C. 2011. Rspo3 binds syndecan 4 and induces wnt/PCP signaling via clathrin-
+mediated endocytosis to promote morphogenesis. Developmental Cell 20:303–314. DOI: https://doi.org/10.
+1016/j.devcel.2011.01.006, PMID: 21397842
+Ovchinnikov DA, Deng JM, Ogunrinu G, Behringer RR. 2000. Col2a1-directed expression of cre recombinase in
+differentiating chondrocytes in transgenic mice. Genesis 26:145–146. DOI: https://doi.org/10.1002/(SICI)1526-
+968X(200002)26:2<145::AID-GENE14>3.0.CO;2-C, PMID: 10686612
+Park J, Gebhardt M, Golovchenko S, Perez-Branguli F, Hattori T, Hartmann C, Zhou X, deCrombrugghe B, Stock
+M, Schneider H, von der Mark K. 2015. Dual pathways to endochondral osteoblasts: a novel chondrocyte-
+derived osteoprogenitor cell identified in hypertrophic cartilage. Biology Open 4:608–621. DOI: https://doi.
+org/10.1242/bio.201411031, PMID: 25882555
+Randall RM, Shao YY, Wang L, Ballock RT. 2012. Activation of wnt planar cell polarity (PCP) signaling promotes
+growth plate column formation in vitro. Journal of Orthopaedic Research 30:1906–1914. DOI: https://doi.org/
+10.1002/jor.22152, PMID: 22674351
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+23 of 24
+Research article
+Developmental Biology
+Regard JB, Zhong Z, Williams BO, Yang Y. 2012. Wnt signaling in bone development and disease: making
+stronger bone with wnts. Cold Spring Harbor Perspectives in Biology 4:a007997. DOI: https://doi.org/10.1101/
+cshperspect.a007997, PMID: 23209148
+Roach HI, Erenpreisa J, Aigner T. 1995. Osteogenic differentiation of hypertrophic chondrocytes involves
+asymmetric cell divisions and apoptosis. Journal of Cell Biology 131:483–494. DOI: https://doi.org/10.1083/jcb.
+131.2.483
+Robledo RF, Rajan L, Li X, Lufkin T. 2002. The Dlx5 and Dlx6 homeobox genes are essential for craniofacial, axial,
+and appendicular skeletal development. Genes & Development 16:1089–1101. DOI: https://doi.org/10.1101/
+gad.988402, PMID: 12000792
+Schipani E, Lanske B, Hunzelman J, Luz A, Kovacs CS, Lee K, Pirro A, Kronenberg HM, Juppner H. 1997.
+Targeted expression of constitutively active receptors for parathyroid hormone and parathyroid hormone-
+related peptide delays endochondral bone formation and rescues mice that lack parathyroid hormone-related
+peptide. PNAS 94:13689–13694. DOI: https://doi.org/10.1073/pnas.94.25.13689
+Schroeder A, Mueller O, Stocker S, Salowsky R, Leiber M, Gassmann M, Lightfoot S, Menzel W, Granzow M,
+Ragg T. 2006. The RIN: an RNA integrity number for assigning integrity values to RNA measurements. BMC
+Molecular Biology 7:3. DOI: https://doi.org/10.1186/1471-2199-7-3, PMID: 16448564
+Song D, He G, Song F, Wang Z, Liu X, Liao L, Ni J, Silva MJ, Long F. 2020. Inducible expression of Wnt7b
+promotes bone formation in aged mice and enhances fracture healing. Bone Research 8:4. DOI: https://doi.
+org/10.1038/s41413-019-0081-8, PMID: 32047703
+St-Jacques B, Hammerschmidt M, McMahon AP. 1999. Indian hedgehog signaling regulates proliferation and
+differentiation of chondrocytes and is essential for bone formation. Genes & Development 13:2072–2086.
+DOI: https://doi.org/10.1101/gad.13.16.2072
+Walker KVR, Kember NF. 1972. Cell kinetics of growth cartilage in the rat tibia ii. measurements during ageing.
+Cell Proliferation 5:409–419. DOI: https://doi.org/10.1111/j.1365-2184.1972.tb00379.x
+Wuelling M, Vortkamp A. 2019. The fountain of bone growth. Nature 567:178–179. DOI: https://doi.org/10.
+1038/d41586-019-00527-w
+Yang G, Zhu L, Hou N, Lan Y, Wu XM, Zhou B, Teng Y, Yang X. 2014a. Osteogenic fate of hypertrophic
+chondrocytes. Cell Research 24:1266–1269. DOI: https://doi.org/10.1038/cr.2014.111, PMID: 25145361
+Yang L, Tsang KY, Tang HC, Chan D, Cheah KSE. 2014b. Hypertrophic chondrocytes can become osteoblasts
+and osteocytes in endochondral bone formation. PNAS 111:12097–12102. DOI: https://doi.org/10.1073/pnas.
+1302703111
+Yue R, Shen B, Morrison SJ. 2016. Clec11a/osteolectin is an osteogenic growth factor that promotes the
+maintenance of the adult skeleton. eLife 5:e18782. DOI: https://doi.org/10.7554/eLife.18782
+Zhou X, von der Mark K, Henry S, Norton W, Adams H, de Crombrugghe B. 2014. Chondrocytes
+transdifferentiate into osteoblasts in endochondral bone during development, postnatal growth and fracture
+healing in mice. PLOS Genetics 10:e1004820. DOI: https://doi.org/10.1371/journal.pgen.1004820,
+PMID: 25474590
+Hallett et al. eLife 2021;10:e64513. DOI: https://doi.org/10.7554/eLife.64513
+24 of 24
+Research article
+Developmental Biology

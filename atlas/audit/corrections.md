@@ -7241,3 +7241,40 @@ predicts as well as what pool expansion predicts.
 of a zone height. The assignment requires cells per column and terminal cell height reported
 separately, and — if the amplification term specifically is claimed — a resting-zone cycle time as
 well. Every existing assignment made from a zone height is now *unverified* rather than settled.
+
+---
+
+## CORR-190 — `jolette2006`'s femoral elongation is not a length measurement
+
+**Written in round 194, correcting a claim made earlier in the same round.**
+
+Reading the primary-paper bundle the user supplied, I first recorded `jolette2006`
+(Toxicol Pathol 34:929–940, rhPTH(1-84), 150 µg/kg/day, 2 y, F344 rats from 9–11 weeks of
+age) as an **independent replication** of `vahle2002` on a second molecule: ~5% femoral
+elongation in males, ~3% in females, different sponsor, different peptide, same strain.
+Two molecules agreeing looked like a grade upgrade.
+
+The sentence actually reads that *the increase in femoral bone mineral **area** was
+consistent with a significant elongation of femoral length*. **BMA is length × width.** The
+authors inferred elongation from a projected area in animals whose diaphyseal bone mass rose
+by a third; the width term is unconstrained and is doing unknown work. This is CORR-189
+committed in the source document: a zone height, or here a projected area, cannot be assigned
+to one of the two terms whose product it is.
+
+**Scope.** `jolette2006` is withdrawn as a length measurement and cannot be counted as a
+replication of `vahle2002`. It remains valid for everything it measured directly — BMC, BMD,
+tumour incidence, and the delayed-start design. Its **delayed-start group (dosing from 8
+months of age)** is still the cleanest published test of whether the skeletal response needs
+the growth phase, and its femoral BMA is still **not reported per group**, so that comparison
+remains unmade.
+
+**Bearing on `vahle2002`.** With `jolette2006` withdrawn, the +5%/+6% caliper result stands
+alone against the QCT terminal table in the FDA review of NDA 21-318, which reads 35 mm in
+every arm including two dosed continuously to termination. Five per cent of 35 mm is 1.75 mm
+and would have printed as 37. The two are not reconcilable as measurements of the same
+quantity, and the difference between them is exactly the difference between a caliper laid
+across a femur carrying 33% more periosteal bone and a CT-derived length.
+
+**The rule this adds to CORR-189.** DXA or pQCT *area* is subject to the same prohibition as a
+zone height. No length claim may rest on a projected area, in this atlas or in a source it
+cites — including when the source's own authors make the inference.
