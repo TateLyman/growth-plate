@@ -20514,3 +20514,83 @@ edges:
     It changes nothing about the verdict - the compound that stacks cleanly is the compound with a null
     height endpoint.'
   traversal_usable: true
+- edge_id: e01284
+  source: the_intracrine_oestrogen_control_point
+  target: aromatase_cyp19a1
+  relation: correlates_with
+  sign: +
+  magnitude: five sex-steroid enzymes in the rat tibial physis - aromatase, 17beta-HSD I and II, steroid
+    sulfatase, 5alpha-reductase - three confirmed by direct activity and three strongly up-regulated at
+    sexual maturation
+  context: rat tibial growth plate survey plus human physeal aromatase localisation; the control point
+    immediately upstream of the only lever in the stack that works
+  evidence_tier: T1
+  refs:
+  - vandereerden2002
+  - oz2001
+  - sylvia2002
+  confidence: C
+  notes: The plate is an oestrogen PRODUCER, not only a target, and it runs an aromatase-INDEPENDENT route
+    via steroid sulfatase. The atlas held none of this as a control point before round 170. oz2001 also
+    answers the aromatase_cyp19a1 open note that human physeal aromatase was unlocalised - it is, to the
+    maturation and hypertrophic zones, though still not quantified.
+  traversal_usable: true
+- edge_id: e01285
+  source: the_intracrine_oestrogen_control_point
+  target: aromatase_inhibitor_anastrozole
+  relation: correlates_with
+  sign: unknown
+  magnitude: a threefold difference in the intensity of oestrogen suppression produced no difference in
+    predicted adult height; combined 3-year gain +1.3 cm with the year-1 gain not persisting
+  context: human randomised trial of letrozole versus anastrozole in 79 pubertal boys, read as the test
+    of whether adding a second parallel oestrogen-supply blockade has headroom
+  evidence_tier: T1
+  refs:
+  - zegarra2024
+  - varimo2019
+  - fryze2026
+  confidence: B
+  notes: THE LINE THAT CLOSES THE SULFATASE ROUTE BEFORE IT COSTS ANYTHING. If deeper aromatase blockade
+    buys nothing, blocking a parallel supply route buys nothing either. Reinforced by the human STS knockout
+    - X-linked ichthyosis - having no reported stature or bone-age phenotype, and by varimo2019, the only
+    placebo-controlled aromatase-inhibitor trial followed to adult height, being null.
+  traversal_usable: true
+- edge_id: e01286
+  source: the_intracrine_oestrogen_control_point
+  target: the_receptor_level_oestrogen_sweep
+  relation: correlates_with
+  sign: '-'
+  magnitude: three human tests at three control points - ligand synthesis, suppression depth, receptor
+    - all separate the bone-age clock from attained height
+  context: varimo2019 adult height null; zegarra2024 deeper suppression same predicted height; sims2012
+    bone age halved and predicted adult height unchanged
+  evidence_tier: T1
+  refs:
+  - varimo2019
+  - zegarra2024
+  - sims2012
+  confidence: B
+  notes: 'THE UNIFYING RESULT FOR THE WHOLE OESTROGEN AXIS. The receptor sweep closed because the drugs
+    are AF-2 agents aimed at a ligand-independent function; this node closes because even the ligand arm,
+    blocked deeper, buys nothing. Both are instances of one fact - blockade depth is not what limits adult
+    height. Boundary: every null is early puberty, and cui2025 is positive at bone age 13 and above with
+    GH.'
+  traversal_usable: true
+- edge_id: e01287
+  source: the_intracrine_oestrogen_control_point
+  target: final_adult_height_endpoint
+  relation: correlates_with
+  sign: '-'
+  magnitude: letrozole 164.8 +/- 4.0 cm versus placebo 163.7 +/- 3.7 cm, p=0.49, with neither arm beating
+    its own baseline predicted adult height
+  context: human, randomised, double-blind, placebo-controlled, followed to adult height with spine MRI
+    - the only trial of its kind on this axis
+  evidence_tier: T1
+  refs:
+  - varimo2019
+  confidence: B
+  notes: 'The atlas did not hold this paper. It is the strongest single test of the ligand-removal arm
+    and it is null - including the internal comparison that matters most, attained height versus the prediction
+    made at baseline. Two limits travel with it: n=20, and bone age 10.2-10.8 at cessation, which is the
+    opposite end of the range from this case.'
+  traversal_usable: true

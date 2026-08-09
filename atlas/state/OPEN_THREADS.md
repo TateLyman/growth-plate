@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 169.** Repo: 693 nodes, 362 gaps, 1371 refs, validator errors none.
+Last updated: **2026-08-09, after round 170.** Repo: 694 nodes, 363 gaps, 1378 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -354,6 +354,73 @@ tamoxifen. FDA label: paediatric BMD under fulvestrant **unstudied**.
 **CORR-180 also raised:** `brjesson2012`'s bibliography one-line finding stated the **opposite** of the
 paper's conclusion. Confined to the index string — the node `estrogen_receptor_alpha` had it right and
 graded it D. Corrected in place, prior string preserved under `finding_corrected_from`.
+
+### ROUND 170 — both round-169 gaps checked, one new control point found and closed, and the answer to the whole oestrogen/closure area
+
+`the_intracrine_oestrogen_control_point`.
+
+**GAP 1 — ERα protein under a degrader: CONFIRMED EMPTY, stays open.** Abstract-level search for a
+degradation/receptor-protein measurement in cartilage or chondrocytes returns **four papers, none
+relevant**. Nobody has measured ERα protein in growth-plate cartilage under fulvestrant in any species.
+The round-169 closure rests on an inference that has never been checked.
+
+**GAP 2 — the `sims2012` extension: PARTIALLY CLOSED, and it sharpened the null.** Registry
+(`nct00278915_results_2024`, retrieved 2026-08-09): status **COMPLETED**, primary completion 2009-12-08,
+**overall study completion 2023-07-20** — the extension ran a further **fourteen years** — and the posted
+results carry **one period only** (30 started, 29 completed) with **no extension outcome**. Record last
+updated 2024-03-05; only derived reference is sims2012. Contact route exists (AstraZeneca CSIC).
+**And the 12-month PAH null is now precise: +0.5 cm, SD 4.10, n = 17 → 95% CI ≈ −1.6 to +2.6 cm.** It
+excluded gains **above ~2.6 cm** and nothing smaller. Not evidence of zero; evidence of not-large.
+Tractability raised to 4.
+
+**NEW CONTROL POINT, GENUINELY UNTOUCHED.** Anastrozole blocks **aromatase**. It does not block the
+**sulfatase** route: STS liberates oestrone from **oestrone sulfate** — the largest, longest-lived
+circulating oestrogen pool — and 17β-HSD I makes oestradiol, **bypassing aromatase entirely**. This is the
+canonical AI-resistance mechanism in breast cancer. **And the plate runs the whole pathway**:
+`vandereerden2002` found aromatase, 17β-HSD I and II, **steroid sulfatase** and 5α-reductase mRNA in rat
+physeal chondrocytes, **three confirmed by direct enzyme activity**, and aromatase/17β-HSD/**STS strongly
+up-regulated at sexual maturation**. `sylvia2002`: chondrocytes **release** oestradiol, most in the
+**resting zone**. `oz2001`: aromatase protein in the **human** plate. Before this round, *steroid
+sulfatase*, *oestrone sulfate* and *intracrine* appeared in **zero** growth-plate nodes.
+**A human drug exists** — irosustat (STX64), 40 mg/day oral, and `palmieri2017` (IRIS) is literally the
+add-it-on-top-of-an-AI trial, which met its endpoint.
+
+**IT CLOSES ANYWAY, THREE LINES.** (1) The human knockout — **X-linked ichthyosis** — is reviewed across
+1960–2025 with endocrine and cardiac involvement catalogued and **no stature, bone-age or epiphyseal
+finding** (`fryze2026`). (2) Irosustat's dose-limiting grade 3/4 toxicity is **dry skin, 28%** — it
+reproduces the ichthyosis. (3) **The atlas already held the decisive line**: `zegarra2024`, letrozole vs
+anastrozole, 79 boys, 3 years — **threefold deeper suppression, slower bone age, NO difference in
+predicted adult height**, +1.3 cm combined, **year-1 gain gone by year 3**. A second parallel blockade has
+no headroom.
+
+**THE ANSWER TO THE WHOLE AREA — three human tests, three control points, one result.**
+- **ligand synthesis** → `varimo2019`, **the only randomised double-blind PLACEBO-CONTROLLED AI trial
+  followed to ADULT height**: letrozole **164.8 ± 4.0** vs placebo **163.7 ± 3.7 cm, p = 0.49**, and
+  **neither arm beat its own baseline prediction**. *The atlas did not hold this paper.*
+- **suppression depth** → `zegarra2024`, above.
+- **receptor** → `sims2012`, bone age **halved**, predicted height **unchanged**.
+
+**SLOWING THE BONE-AGE CLOCK THROUGH THE OESTROGEN AXIS DOES NOT CONVERT INTO ADULT HEIGHT.** The axis is
+at its ceiling because **blockade depth is not the rate-limiting variable** — not because a better blocker
+is missing. That is why round 169 found nothing, and why the sulfatase route would have found nothing.
+
+**THE BOUNDARY, AND IT DESCRIBES THIS CASE.** Every null is **early puberty** — `varimo2019` stopped at
+bone age 10.2–10.8, `zegarra2024` required bone age <14, `sims2012` mean age 5.9. **None tests bone age
+16.** The one attained-height dataset in the late band points the other way: **`cui2025`, anastrozole +
+rhGH, highest target-height-adjusted adult height SDS (0.81) of three matched regimens at bone age ≥13** —
+which is the regimen already running. So the ceiling claim is an extrapolation into an untested band, and
+it **endorses the current stack rather than changing it**. Graded **E** in the node, deliberately.
+
+**Also recorded from `geffner2024` (index only):** `zegarra2024` carried **significant decreases in
+whole-body and lumbar bone density** from baseline to 2 years in **both** arms, plus biconcave vertebrae,
+spondylolysis, irregular endplates, 3 scoliosis, 6 fractures. Counterweight: `varimo2019` found vertebral
+deformity **no more frequent on drug** (29% vs 22%, p=0.20) and the deformities **resolved** on follow-up.
+Relevant to spine reserve.
+
+**NEW GAP:** `g_l12_does_the_human_growth_plate_express_steroid_sulfatase` — no human physeal STS
+measurement exists, and **every trial on this axis measured plasma oestradiol, never cartilage**. Two
+cheap reads: IHC/RNA-seq on archival epiphysiodesis tissue; oestrone sulfate on stored samples from
+children already on an AI. A methodological finding if positive, not a new lever.
 
 ---
 

@@ -13483,24 +13483,27 @@ gaps:
     human evidence. If they did not, the arm is closed by the strongest possible endpoint. Girls enrolled
     at a mean age of 5.9 years in or before 2012 have now reached adult height; the measurements either
     exist in the trial records or in the fifteen participating centres.
-  what_is_known: sims2012 reports that 24 of the 29 completers chose to continue treatment in an extension
-    phase with yearly data collection. NCT00278915. The twelve-month results are on the FDA label. A Europe
-    PMC search for any follow-up publication returns nothing, and the 2025 McCune-Albright follow-up series
-    that does report adult heights (mean 155.1 cm, -1.17 SDS in 10 patients) treated its patients with
-    medroxyprogesterone, tamoxifen, aromatase inhibitors and ketoconazole - not fulvestrant.
-  what_is_missing: ANY OUTCOME FROM THE EXTENSION PHASE - duration of treatment, attained adult height,
+  what_is_known: 'PARTIALLY ANSWERED IN ROUND 170 FROM THE TRIAL REGISTRY. NCT00278915 is COMPLETED with
+    an overall study completion date of 2023-07-20 against a PRIMARY completion of 2009-12-08 - so the
+    extension ran for a further fourteen years. But the posted results carry exactly ONE period, ''Overall
+    Study'', 30 started and 29 completed, and NO extension outcome is posted. The record was last updated
+    2024-03-05 and its only derived reference is sims2012. THE REGISTRY DOES SHARPEN THE 12-MONTH NULL:
+    change in predicted adult height is +0.5 cm with SD 4.10 in n=17 analysed (children over age 6 only),
+    a 95% CI of roughly -1.6 to +2.6 cm - so the study excluded gains larger than about 2.6 cm and nothing
+    smaller. A contact route exists (AstraZeneca Clinical Study Information Center). The sponsor agreement
+    carries a 60-day pre-publication review right.'
+  what_is_missing: ANY OUTCOME FROM THE FOURTEEN-YEAR EXTENSION - treatment duration, attained adult height,
     final bone age, or bone mineral density. The last is independently important because the FDA label
-    states the effect of fulvestrant on bone mineral density in children has not been studied and is not
-    known, while the genetic analogues of receptor loss show spine Z-scores of -3.85 (smith2008) and -5.6
-    (feigerlova2025).
+    states paediatric bone density under fulvestrant has not been studied, while the genetic analogues
+    of receptor loss show spine Z-scores of -3.85 (smith2008) and -5.6 (feigerlova2025).
   nearest_evidence:
   - sims2012
+  - nct00278915_results_2024
   - fda_faslodex_label_2026
-  - smith2008
-  - feigerlova2025
-  nearest_evidence_note: sims2012 states the extension exists and reports nothing from it; the label reproduces
-    only the twelve-month data; the two genetic cases supply the bone-density outcome that the extension
-    would have measured.
+  - varimo2019
+  nearest_evidence_note: 'The registry confirms the extension ran to 2023 and reports nothing from it.
+    varimo2019 is the closest analogue for what such a follow-up returns: a predicted-height gain on an
+    oestrogen-axis drug that did not become adult height.'
   discriminating_experiment: 'NOT AN EXPERIMENT - A RETRIEVAL. Query the NCT00278915 record and any posted
     results, then approach the coordinating investigators or the sponsor for extension-phase outcomes.
     PRE-REGISTERED READING: adult heights at or below baseline predicted adult height confirm that halving
@@ -13509,4 +13512,51 @@ gaps:
     negative conclusion of the receptor-level sweep and would be the first human evidence that receptor
     blockade gains stature. Bone density from the same cohort would settle whether the paediatric skeletal
     cost approaches the genetic phenotype.'
-  tractability: 3
+  tractability: 4
+- gap_id: g_l12_does_the_human_growth_plate_express_steroid_sulfatase
+  question: Does the human growth plate express steroid sulfatase and 17beta-HSD type I, and does a circulating
+    oestrone sulfate pool sustain local oestradiol at the plate during aromatase inhibition?
+  type: known_unknown
+  layer: L12
+  why_it_matters: IT IS THE ONLY REMAINING WAY THE OESTROGEN-SUPPLY ARM COULD STILL BE INCOMPLETE, AND
+    IT IS CHEAP TO SETTLE. vandereerden2002 found steroid sulfatase mRNA AND measured STS enzyme activity
+    in rat tibial physeal chondrocytes, up-regulated at sexual maturation, alongside aromatase and 17beta-HSD
+    - a complete local intracrine pathway. STS liberates oestrone from oestrone sulfate, the largest and
+    longest-lived circulating oestrogen pool, and BYPASSES AROMATASE ENTIRELY. If the human plate does
+    the same, then anastrozole leaves an aromatase-independent oestrogen supply running at the tissue
+    that matters. Round 170 closed this as a therapeutic lever on other grounds - no stature phenotype
+    in human STS deficiency, and zegarra2024 showing threefold deeper suppression buys no height - but
+    the underlying FACT is unmeasured, and it also bears on how to interpret every aromatase-inhibitor
+    trial that reported plasma oestradiol as if it were plate exposure.
+  what_is_known: 'Rat: five sex-steroid enzymes in the tibial physis including STS, three confirmed by
+    direct activity, three strongly up-regulated at sexual maturation (vandereerden2002); chondrocytes
+    release oestradiol, most in the resting zone (sylvia2002). Human: aromatase transcripts and protein
+    localised to the maturation and hypertrophic zones of two adolescent growth plates (oz2001). Human
+    STS deficiency is X-linked ichthyosis with no reported stature or bone-age phenotype (fryze2026).
+    A human STS inhibitor exists at 40 mg/day oral and has been given on top of an aromatase inhibitor
+    (palmieri2017).'
+  what_is_missing: 'ANY MEASUREMENT OF STS OR 17beta-HSD TYPE I IN HUMAN GROWTH PLATE TISSUE, at any age,
+    by any method. Also missing: any measurement of oestrone sulfate in children on an aromatase inhibitor,
+    and any measurement of oestradiol IN CARTILAGE rather than in plasma under any oestrogen-directed
+    drug. Every trial in this atlas that claims to have suppressed oestrogen has measured the plasma,
+    not the tissue.'
+  nearest_evidence:
+  - vandereerden2002
+  - oz2001
+  - sylvia2002
+  - zegarra2024
+  - fryze2026
+  nearest_evidence_note: vandereerden2002 establishes the pathway in rat and is the only survey of its
+    kind; oz2001 is the only human physeal measurement of any enzyme in it and covers only aromatase;
+    zegarra2024 is the reason the therapeutic question is closed even if the biological answer is yes.
+  discriminating_experiment: 'TWO CHEAP READS, NEITHER NEEDING A NEW COHORT. (a) RNA-seq or immunohistochemistry
+    for STS and HSD17B1 on archival human growth-plate tissue - the same epiphysiodesis specimens oz2001
+    used, and comparable material sits in paediatric orthopaedic biobanks. (b) Measure serum oestrone
+    sulfate alongside oestradiol in children already receiving an aromatase inhibitor, which requires
+    only an added assay on stored samples. PRE-REGISTERED READING: STS present in human plate AND oestrone
+    sulfate preserved under aromatase inhibition means plate oestrogen exposure has never actually been
+    measured or fully suppressed in any trial, and every plasma-oestradiol-based conclusion about "adequate
+    suppression" is unsupported - a methodological finding, not a new lever, because zegarra2024 already
+    shows deeper suppression does not buy height. STS absent from human plate closes the intracrine route
+    as a species difference and retires the question.'
+  tractability: 2
