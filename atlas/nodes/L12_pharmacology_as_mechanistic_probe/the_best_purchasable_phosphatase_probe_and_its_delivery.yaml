@@ -1,0 +1,211 @@
+id: the_best_purchasable_phosphatase_probe_and_its_delivery
+name: THE BEST PURCHASABLE PHOSPHATASE PROBE - cantharidin at 100 microM in intact tissue, and the reason
+  it works is that the anhydride is its own charge-masking prodrug
+aliases:
+- best purchasable phosphatase probe
+- cantharidin concentration growth plate
+- how to deliver a phosphatase inhibitor to cartilage
+- LB-100 versus cantharidin versus fostriecin
+- phosphatase probe dosing
+type: intervention
+layer: L12
+stub: false
+summary: 'THREAD B IS CLOSED AS A THERAPY. IT IS NOT CLOSED AS A MECHANISM, AND A MECHANISM STILL NEEDS A
+  PROBE. This node picks it, prices the delivery physics, and states the one concentration that is already
+  validated for the exact readout this project cares about.
+  THE PROBE IS CANTHARIDIN, AND THE CONCENTRATION IS 100 MICROMOLAR IN INTACT TISSUE. Not because it is
+  selective - it is the least selective agent on the list - but because IT IS THE COMPOUND THE EFFECT WAS
+  MEASURED WITH. shuhaibar2017 applied 100 microM cantharidin to intact tibia and this atlas computed the
+  result from the source data: FGF inhibition of the CNP response falls from 51 per cent (p = 0.00047) to
+  14 per cent (p = 0.064, not significant), and cantharidin ALONE raises the CNP response 1.42-fold with no
+  FGF present (p = 0.0018). Every quantitative claim on this arm traces to that experiment. Reproducing or
+  extending the arm means reproducing that experiment, and swapping the probe would forfeit the
+  comparison. CONCENTRATION IS NOT NEGOTIABLE EITHER: robinson2017 used 10 MICROMOLAR in RCS monolayer and
+  saw NO BLOCK. CORR-125 resolved that contradiction as a tenfold concentration difference against tissue
+  rather than a monolayer. TEN MICROMOLAR FAILS. It is also the cheapest and most available agent on the
+  list at 91 vendor sources and 196 daltons.
+  AND HERE IS THE DELIVERY FINDING, WHICH THIS ATLAS HAD NOT NOTICED IN THREE ROUNDS OF WORRYING ABOUT
+  CHARGE. CANTHARIDIN IS AN ANHYDRIDE. It is NEUTRAL as supplied, and it HYDROLYSES IN AQUEOUS BUFFER to
+  cantharidic acid, which is the DIANION. Running the atlas own Donnan model on both forms: the anhydride
+  partitions into the plate at 1.00 of free concentration and the hydrolysed diacid at 0.22. THE PRODRUG
+  STRATEGY THIS ATLAS SPENT ROUNDS 153 TO 157 DESIGNING FOR FOSTRIECIN IS ALREADY BUILT INTO CANTHARIDIN
+  AND NORCANTHARIDIN. They are self-masking: they enter neutral and become the active dianion inside.
+  That is a 4.5-fold delivery advantage over endothall or fostriecin free acid, obtained for free, and it
+  is very likely part of why 100 microM cantharidin worked in INTACT TIBIA where the atlas partition model
+  would otherwise have predicted trouble.
+  THE FULL PARTITION TABLE, COMPUTED. Cantharidin anhydride 1.00, norcantharidin anhydride 1.00, LB-100
+  1.00 as a zwitterion - then a cliff - okadaic acid 0.39, tautomycetin 0.41, calyculin A 0.37, and the
+  free acids at the bottom: cantharidic acid 0.22, norcantharidic acid 0.22, endothall 0.22, fostriecin
+  0.21. THE THREE BEST-DELIVERED AGENTS ARE ALSO THE THREE CHEAPEST AND MOST AVAILABLE.
+  THE THREE PROBES FOR THREE DIFFERENT QUESTIONS, AND THEY ARE NOT INTERCHANGEABLE.
+  (1) DOES PHOSPHATASE INHIBITION RAISE NPR2 SIGNALLING IN A GROWTH PLATE - CANTHARIDIN, 100 microM,
+  intact tibia or metatarsal. The validated readout, the published comparison, 91 vendors, 196 Da,
+  partition 1.00.
+  (2) IS THE EFFECT ACHIEVABLE WITH AN AGENT THAT HAS BEEN IN HUMANS - LB-100, 45 vendors, MW 268,
+  partition 1.00, completed oncology phase 1, and darcy2019 establishes it as a catalytic inhibitor of
+  PPP2CA and PPP5C that also hits PP1C below 2 microM. It is the only agent on this list with a human
+  exposure record AND ready availability.
+  (3) IS THE EFFECT PP2A RATHER THAN PP5 - FOSTRIECIN, and only fostriecin. swingle2009 measured PP2A
+  1.4 nM against PP5 60 microM and PP1 72 microM, roughly 43,000-fold, and nothing else on the list comes
+  close: cantharidin is 2.5-fold PP2A over PP5, calyculin A hits PP1 hardest at 0.14 nM, okadaic acid has
+  no PP5 record at all. THE PRICE OF THAT SELECTIVITY IS DELIVERY AND STABILITY - fostriecin is the
+  dianion at 0.21 partition, 22 vendors, and the compound whose clinical programme died of instability.
+  WHY THIS DOES NOT REOPEN THREAD B. A probe answers whether the MECHANISM is real in tissue. It does not
+  produce a therapy, and the five closure lines are untouched: no compound worth giving, no identified
+  enzyme, no PP2A-versus-PP4 selectivity data anywhere, no accessible B56 docking motif, and a prize
+  bounded at 1.42-fold tonic where an FGFR inhibitor already takes the FGF-driven part. THE PROBE IS FOR
+  THE BENCH.
+  AND ON DOSING A PERSON, PLAINLY: THIS NODE SPECIFIES NO HUMAN DOSE AND THE PHARMACOLOGY IS THE REASON,
+  NOT CAUTION. Cantharidin is a vesicant beetle toxin with a documented human lethal dose in the low
+  milligrams; its only accepted human use is TOPICAL, for warts, and systemic exposure causes
+  gastrointestinal haemorrhage and acute renal failure. Okadaic acid is the diarrhetic shellfish poison
+  and a tumour promoter. Calyculin A is acutely toxic. The systemic therapeutic index of the best-delivered
+  probes on this list is approximately zero, which is a separate fact from the arm being closed and would
+  remain true if the arm were open.'
+quantitative:
+- parameter: 'THE VALIDATED PROBE AND ITS ONE WORKING CONCENTRATION'
+  value: 'CANTHARIDIN at 100 MICROMOLAR in INTACT TIBIA (shuhaibar2017). Computed by this atlas from the
+    eLife 31343 source data: without cantharidin FGF18 inhibits the CNP-stimulated cGMP response by 51 per
+    cent (p = 0.00047); with 100 microM cantharidin, by 14 per cent (p = 0.064, not significant). And
+    cantharidin ALONE, with no FGF present, raises the response 1.42-FOLD (p = 0.0018) - the tonic
+    component the whole arm rests on. AT 10 MICROMOLAR IN RCS MONOLAYER (robinson2017) THERE IS NO BLOCK.
+    Cantharidin is CID 5944, MW 196.20, 91 vendor sources'
+  unit: micromolar; per cent inhibition; fold change
+  conditions: shuhaibar2017 Figure 6C source data, recomputed per-animal by this atlas at round 125;
+    robinson2017 for the negative at 10 microM; CORR-125 reconciles them as a tenfold concentration
+    difference against intact tissue rather than a monolayer.
+  species: mouse
+  source_ref: shuhaibar2017
+  uncertainty: 'THE CONCENTRATION IS VALIDATED FOR THIS READOUT AND FOR NOTHING ELSE. 100 microM
+    cantharidin is a PAN-PPP concentration - it inhibits PPP1, PPP2, PPP4, PPP5 and PPP6 indiscriminately -
+    so the experiment establishes that PPP-family activity restrains NPR2, and cannot say which enzyme.
+    That is the same limitation that made the arm unclosable and it is not fixed by using the probe well.
+    The 1.42-fold is also a CGMP readout in mouse tibia, not a length endpoint, and no in vivo bone-length
+    experiment with any phosphatase inhibitor exists in any species.'
+- parameter: 'THE ANHYDRIDE IS ITS OWN CHARGE-MASKING PRODRUG - THE STRATEGY THIS ATLAS DESIGNED IS
+    ALREADY BUILT INTO THE CHEAPEST PROBE'
+  value: 'Computed plate partition, size term times Donnan factor. NEUTRAL AS SUPPLIED: cantharidin
+    anhydride (MW 196) 1.00; norcantharidin anhydride (MW 168) 1.00; LB-100 as a zwitterion (MW 268) 1.00.
+    MID: tautomycetin 0.41, okadaic acid 0.39, calyculin A 0.37. THE FREE ACIDS: cantharidic acid 0.22,
+    norcantharidic acid 0.22, endothall 0.22, fostriecin 0.21. So the anhydride form delivers about
+    4.5-FOLD more than its own hydrolysis product'
+  unit: fraction of free plasma or bath concentration
+  conditions: COMPUTED BY THIS ATLAS 2026-08-09 with the ideal-Donnan function at the lesperance1992 fixed
+    charge density against a 0.15 M bath, times log-linear interpolation of the farnum2006 size anchors.
+    Charge states assigned from structure; anhydrides taken as neutral as supplied and dianionic after
+    aqueous hydrolysis.
+  species: not_applicable
+  source_ref: lesperance1992
+  atlas_derived: true
+  uncertainty: 'THE INSIGHT IS REAL BUT THE ARITHMETIC IS IDEALISED AND THE KINETICS ARE MISSING. Whether
+    the anhydride actually reaches the plate INTACT depends on its hydrolysis half-life in buffer and
+    plasma against its diffusion time into the tissue, and THIS ATLAS HAS NOT MEASURED OR RETRIEVED EITHER
+    - if hydrolysis is fast relative to penetration, the 1.00 never materialises and the effective figure
+    is 0.22. The LB-100 precedent cuts both ways here exactly as it did for fostriecin: round 134
+    established LB-100 hydrolyses with a 3.2 to 4.9 hour half-life at 37 degrees and delivers relatively
+    little active species. The zwitterion assignment for LB-100 is also from structure, not measurement.
+    WHAT SURVIVES REGARDLESS is the RANKING - neutral or zwitterionic forms out-deliver free dianions by
+    about 4.5-fold - and the observation that the three best-delivered agents are also the three cheapest.'
+- parameter: 'THE THREE PROBES, THEIR SELECTIVITY AND THEIR AVAILABILITY'
+  value: 'CANTHARIDIN CID 5944, MW 196, 91 vendors, partition 1.00 - PP2A 160 nM, PP5 400-600 nM, PP1 1780
+    nM, PP6 8000 nM: only 2.5-fold PP2A over PP5, i.e. pan-PPP. LB-100 CID 45101433, MW 268, 45 vendors,
+    partition 1.00 - inhibits PPP2CA and PPP5C and also PP1C below 2 microM (darcy2019), and has completed
+    an oncology phase 1. FOSTRIECIN CID 6913994, MW 430, 22 vendors, partition 0.21 - PP2A 1.4 nM, PP4 3.0
+    nM, PP5 60 microM, PP1 72 microM, about 43,000-fold PP2A over PP5 and the ONLY PP5-sparing agent
+    available. Also on the list and rejected: norcantharidin (60 vendors, no curated phosphatase activity),
+    endothall (26 vendors, dianion), okadaic acid (MW 805, no PP5 record), calyculin A (MW 1009, PP1 0.14
+    nM - hits the wrong enzyme hardest), tautomycetin (10 vendors)'
+  unit: nanomolar IC50; vendor counts; partition fraction
+  conditions: Vendor counts and physical properties from PubChem PUG REST 2026-08-09; selectivity from the
+    round-154 and round-161 ChEMBL pulls and from swingle2009 read in full.
+  species: not_applicable
+  source_ref: swingle2009
+  atlas_derived: true
+  uncertainty: 'THE THREE PROBES ANSWER THREE DIFFERENT QUESTIONS AND NO SINGLE AGENT ANSWERS ALL THREE -
+    that is the structural problem with this arm restated as a shopping list. Cantharidin has the
+    validated readout and no selectivity; LB-100 has human exposure and no selectivity; fostriecin has the
+    selectivity and neither the delivery nor the stability. VENDOR COUNTS ARE LISTINGS, NOT STOCK, AND NO
+    PRICE WAS VERIFIED FOR ANY OF THEM - the same limitation recorded for compound 1. And selectivity
+    figures are drawn from different laboratories and assay formats, so cross-compound comparisons carry
+    an unquantified between-assay error.'
+localization:
+- 'the intended site is NPR2 in growth-plate chondrocytes; every probe here is systemic and non-selective
+  between tissues'
+human_evidence: absent
+human_evidence_note: 'No probe in this node has a growth or skeletal endpoint in humans. LB-100 and
+  fostriecin have human oncology exposure; cantharidin has human exposure only as a topical vesicant and
+  as a poisoning literature.'
+species_basis:
+- mouse
+- not_applicable
+translation_risk: high
+translation_risk_reason: 'These are bench probes for a mechanism the atlas has closed as a therapy. The
+  validated readout is mouse tibial cGMP, not bone length, and the concentration that works is a pan-PPP
+  concentration.'
+confidence: C
+claim_grades:
+- claim: Cantharidin at 100 microM in intact tissue is the best purchasable probe for this mechanism.
+  grade: B
+  basis: 'It is the compound and the concentration the effect was measured with - shuhaibar2017, with the
+    per-animal source data recomputed by this atlas: FGF inhibition falls from 51 per cent to a
+    non-significant 14 per cent, and the tonic effect is 1.42-fold at p = 0.0018. It is also the cheapest
+    and most available agent at 91 vendor sources and partitions at 1.00. Graded B not A because the
+    readout is mouse tibial cGMP rather than length, and because the probe is pan-PPP so it cannot
+    attribute the effect to an enzyme.'
+- claim: Ten micromolar cantharidin is sufficient.
+  grade: X
+  basis: 'NO. robinson2017 used 10 microM in RCS monolayer and saw no block at all. CORR-125 resolved the
+    apparent contradiction with shuhaibar2017 as exactly this tenfold difference, against intact tissue
+    rather than a monolayer. Using 10 microM would reproduce the negative.'
+- claim: The anhydride probes are self-masking prodrugs and out-deliver the free acids about 4.5-fold.
+  grade: E
+  basis: 'COMPUTED, NOT MEASURED. Cantharidin and norcantharidin are neutral anhydrides that hydrolyse to
+    dianionic diacids, and the atlas Donnan model puts the neutral form at 1.00 and the diacid at 0.22.
+    The ranking is robust; the absolute figure depends entirely on hydrolysis half-life versus penetration
+    time, neither of which this atlas has, and the LB-100 precedent warns that a prodrug can deliver
+    little active species.'
+- claim: Any of these probes has a specifiable human dose.
+  grade: X
+  basis: 'NO, and the reason is pharmacological rather than procedural. Cantharidin is a vesicant with a
+    documented human lethal dose in the low milligrams, accepted only for TOPICAL use; okadaic acid is the
+    diarrhetic shellfish poison and a tumour promoter; calyculin A is acutely toxic. The systemic
+    therapeutic index of the best-delivered agents here is approximately zero. LB-100 and fostriecin have
+    oncology phase 1 exposure but neither has any skeletal endpoint in any species.'
+- claim: Having a good probe reopens the phosphatase arm.
+  grade: X
+  basis: 'NO. A probe tests whether the mechanism is real in tissue; it does not create a therapy. All
+    five closure lines stand - no compound worth giving, no identified enzyme, no PP2A-versus-PP4
+    selectivity data in any database, no accessible B56 docking motif on NPR2, and a prize bounded at
+    1.42-fold tonic where an FGFR inhibitor already takes the FGF-driven component.'
+key_refs:
+- ref_id: shuhaibar2017
+  year: 2017
+  type: primary
+  role: the validated probe and concentration - 100 microM cantharidin in intact tibia, and the source
+    data behind the 1.42-fold tonic effect
+- ref_id: robinson2017
+  year: 2017
+  type: primary
+  role: the negative at 10 microM in monolayer that fixes the lower bound on concentration
+- ref_id: swingle2009
+  year: 2009
+  type: primary
+  role: the only PP5-sparing selectivity profile on the list, and the price paid for it in charge and
+    stability
+- ref_id: darcy2019
+  year: 2019
+  type: primary
+  role: LB-100 as the one agent here with human exposure and ready availability
+- ref_id: lesperance1992
+  year: 1992
+  type: primary
+  role: the fixed charge density behind the anhydride-versus-diacid partition finding
+open_questions:
+- g_l12_which_phosphatase_dephosphorylates_npr2
+- g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
+contradicts:
+- 'ADDS TO the_best_phosphatase_compound rather than contradicting it. That node designed a
+  charge-masked prodrug of fostriecin from first principles; this node observes that the same strategy is
+  already built into cantharidin and norcantharidin, which are neutral anhydrides hydrolysing to
+  dianions - and which cost a fraction of the design programme.'
+last_verified: '2026-08-09'

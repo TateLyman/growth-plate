@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 163.** Repo: 688 nodes, 358 gaps, 1349 refs, validator errors none.
+Last updated: **2026-08-09, after round 164.** Repo: 689 nodes, 358 gaps, 1349 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -108,6 +108,25 @@ inhibitor is bounded by the **1.42× tonic, FGF-independent** component.
 **OPEN:** `g_l12_fostriecin_pp4_versus_pp2a_attribution` — re-run the `swingle2009` ten-analogue panel
 **with a PP4 column**. `theobald2013` shows PP4C knockdown alone reproduces fostriecin's cellular phenotype
 while PP2AC knockdown does not, so the dose ceiling and the intended effect may sit on different enzymes.
+
+**ROUND 164 — the arm stays closed, but it now has a named bench probe.**
+`the_best_purchasable_phosphatase_probe_and_its_delivery`. **Cantharidin, 100 µM, intact tibia** — the
+compound and concentration the effect was measured with (`shuhaibar2017`: FGF inhibition 51% → a
+non-significant 14%; tonic effect **1.42×, p=0.0018**). **10 µM fails** (`robinson2017`, monolayer).
+CID 5944, MW 196, **91 vendors**.
+
+**Delivery finding:** cantharidin and norcantharidin are **neutral anhydrides that hydrolyse to dianions** —
+they are *self-masking prodrugs*. Computed partition: anhydride **1.00**, hydrolysed diacid **0.22**. The
+charge-masking strategy designed for fostriecin across rounds 153–157 is already built into the cheapest
+probe on the list. Caveat: depends on hydrolysis half-life vs penetration time, neither of which we have.
+
+**Three probes, three questions, none interchangeable:** cantharidin (validated readout, no selectivity) ·
+LB-100 (human phase 1, 45 vendors, partition 1.00, no selectivity) · fostriecin (only PP5-sparing agent,
+43,000×, but partition 0.21 and unstable).
+
+**No human dose is specified and the reason is pharmacological:** cantharidin is a vesicant with a
+documented lethal dose in the low milligrams, accepted only topically; okadaic acid is the diarrhetic
+shellfish poison; calyculin A is acutely toxic. Systemic therapeutic index ≈ zero.
 
 **ROUND 163 — EXHAUSTIVELY CHECKED AND CLOSED. Five independent lines, all empty.**
 1. **ChEMBL** — 39 phosphatase targets, 1,801 molecules: 16 at PP2A catalytic, **1** at PP4, **0 both**.
