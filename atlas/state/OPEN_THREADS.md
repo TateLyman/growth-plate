@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 178.** Repo: 702 nodes, 367 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 179.** Repo: 703 nodes, 368 gaps, 1382 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,61 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 179 — **EIGHT ROUTES TO YIELD, NOT ONE.** I'd worked one branch of a flow system and then searched it for agents.
+
+`every_mechanical_route_to_yield`. The user's objection was correct and it was a scoping error, not a search error.
+
+**THE FLOW.** progenitor → [renew vs commit] → transit-amplifying cell → [N divisions] → [exit to
+hypertrophy] → hypertrophic cell. **Yield = cells delivered per progenitor consumed**, so anything losing
+cells between the ends, or spending a progenitor for nothing, lowers it.
+
+| # | route | status |
+|---|---|---|
+| 1 | raise self-renewal fraction | **OPEN** — mTORC1 failed (pool w/o flux); **SOC niche = 1.37× within one bone, never pursued** |
+| 2 | lengthen transit | the only one worked; PTHrP–Ihh, Jansen warning |
+| 3 | cut attrition in transit | **CLOSES ON DIRECTION** |
+| 4 | **cut FATE LEAKAGE to osteoblast** | **OPEN AND NEW** |
+| 5 | cut failed column entry | real, **no lever** |
+| 6 | column density | untouched |
+| 7 | terminal cell size | small, IGF-owned, double-covered |
+| 8 | external recruitment | changes the accounting; never costed |
+
+**④ FATE LEAKAGE — the first genuinely new route, and it reframes our best pool result.** A progenitor
+that becomes an osteoblast delivers **zero length**. `orikasa2024`: sustained Hedgehog in PTHrP⁺ resting
+chondrocytes → "patched roses", wider columns, plate hyperplasia — **then the descendants migrate out of
+the plate and become trabecular osteoblasts, with no significant bone length change.** The pool was
+expanded and the expansion was spent on bone.
+
+**And `trompet2024` used SAG — the same pathway — for +3.63% femur (8/8, P=0.00004).** The difference:
+trompet's bead was **local and transient** (Gli1 signal gone by 3 weeks); orikasa's deletion is
+**permanent**. **The Hedgehog lever may have a time-dependent sign — pulse expands and lengthens,
+sustained converts to bone.** Graded **E**: the two differ in duration, reversibility, delivery *and*
+genetic-vs-pharmacological all at once, so duration is one of four candidates. **Neither paper cites the
+other for this.** New gap `g_l2_does_the_hedgehog_lever_have_a_time_dependent_sign` — one lineage-traced
+duration-response would settle it and give our only positive pool intervention a **dosing rule**.
+
+**③ ATTRITION CLOSES.** Mechanism real — `velentza2023`, venetoclax cuts viability and suppresses growth
+in cells, metatarsals and mice, so survival is rate-limiting. But the one manipulation that *reduces*
+chondrocyte death — `eaton2014` ASK1 KO — protects the **terminally differentiated** cell (which already
+delivered its length) and **shortens the proliferative zone**. All available pharmacology points the wrong
+way.
+
+**⑤ COLUMN ENTRY is a distinct loss term with no lever.** `yuan2023` images it directly: joining a column
+is an **active integrin-mediated rotation**; α-parvin loss → disorganised PZ, binucleation, cell death,
+dilated RZ, dwarfism. A cell that fails to rotate wastes its progenitor's investment. Entirely
+loss-of-function.
+
+**AND THE ONE IDEA THAT COULD BREAK THE ROUND-178 CONSTRAINT.** That round found charging needs IGF/Akt
+**low** and driving velocity needs it **high** — one switch. **The escape is zone selectivity.**
+`oichi2023`: *Igf-1* transcript is **higher in the resting zone than the proliferative zone** — the RZ has
+its own local source. `harboe2024`: **PAPP-A sets local IGF bioavailability in cartilage by cleaving
+IGFBPs**. **Lower resting-zone IGF availability while maintaining systemic IGF and the pool charges while
+velocity continues.** Nothing achieves that today, and `harboe2024` shows the *unselective* version is
+harmful (global PAPP-A loss → shorter femora, disorganised columns, rescued by IGF-I). **Mechanism with no
+agent — but the only route that dissolves the constraint instead of working around it.**
+
+---
 
 ### ROUND 178 — **FOUND IT. The first yield-raising intervention on record — and it names the switch.**
 
