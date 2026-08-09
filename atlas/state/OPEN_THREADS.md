@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 177.** Repo: 701 nodes, 367 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 178.** Repo: 702 nodes, 367 gaps, 1380 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,59 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 178 — **FOUND IT. The first yield-raising intervention on record — and it names the switch.**
+
+`the_charge_discharge_switch`. Retargeting the screen from *agents* to *denominators* worked immediately.
+
+**THE MEASUREMENT — stronger than either yield I'd computed.** `oichi2023`, mouse proximal tibia,
+`Axin2CreERT2;R26R-ZsGreen` fate mapping through 7 days of dietary restriction then refeeding:
+
+| | result |
+|---|---|
+| labelled **columns** (numerator) | **up** — adj. P=0.0043 (P41), **P<0.0001** (P48); absolute count higher at P48 (P=0.0461) |
+| labelled **progenitors, top 50 µm** (denominator) | **unchanged at every timepoint** — P>0.9999 at P41 and P48 |
+
+**Numerator up, denominator flat, both lineage-traced in the same animals.** `nilsson2014` and `lui2018`
+divide separately-measured standing stocks; this counts progeny per progenitor directly.
+
+**THE SWITCH, NAMED.** Restriction lowered circulating IGF-1, **growth-plate Igf-1**, and **resting-zone
+p-Akt** together; refeeding restored all three; **rhIGF-1 reversed the p-Akt fall**; the IGF1R inhibitor
+picropodophyllin lowered p-Akt⁺ cells in the top 50 µm (P=0.0435). Igf-1 transcript is **higher in resting
+than proliferative zone** (P=0.0041) — local source, not just endocrine.
+> **Low IGF-1/Akt CHARGES the pool and blocks differentiation. High IGF-1/Akt DISCHARGES it into columns.**
+> The authors: exogenous IGF-1 *"stimulated differentiation of the pooled chondroprogenitors, **decreasing
+> their numbers**."*
+
+**THIRD INDEPENDENT LINE ON OUR OWN GH ARM — no shared method.** `chu2025` (GHR cKO + label retention) ·
+`dauber2026` (clinical trajectory: same first-year SDS, GH then slows, CNP sustains) · `oichi2023`
+(nutrient gating of Akt). **The GH/IGF-1 arm is the discharge signal.**
+
+**⚠ THE HARD CONSTRAINT, and it limits the round-171 insight.** Charging needs IGF-1/Akt **LOW**. Driving
+velocity needs it **HIGH**. **They are the same switch.** So the round-171 finding — that accelerators
+rescue a duration lever whose monotherapy failed on velocity — **does NOT transfer to the yield arm.** You
+cannot charge and drive simultaneously. Any strategy here is **forced to alternate**, not combine.
+
+**THE HONEST LIMIT, AND IT IS DECISIVE.** **The cycle restored the deficit and did not exceed control** —
+tibial deficit 0.02 mm (M) / 0.10 mm (F) at P62, both ns. **Yield rose; total length did not**, because the
+charge phase cost growth. `gafni2001` sits in exactly the same place from glucocorticoid: 3-week senescence
+delay, **14% vs 88% fused**, deficit 17.4 → 1.6 mm — **and it stopped with growth still running in the
+treated arm.**
+
+> **The question is no longer whether yield can be raised. It is whether a charge phase can be paid for.**
+> Two experiments got to the edge of the answer and both stopped there.
+
+**Also registered:** `hallett2021` — resting chondrocytes sit in a **Wnt-inhibitory** environment; Wnt
+*activation* **impairs** column formation. So Wnt inhibition keeps cells resting = **pool conservation
+without flux**, the Tsc1 failure mode. **Not** an amplification lever. Unresolved tension with `oichi2023`,
+whose progenitors are marked by **Axin2 — a Wnt target gene**. Logged as a conflict, not smoothed over.
+
+**`g_l2_cycling_the_progenitor_pool` upgraded to tractability 4 and partially answered.** What remains:
+follow a cycle **to skeletal maturity** (gafni2001's design plus continued follow-up); **repeated** cycles
+at matched intake (battery or loan?); and whether the charge phase can be paid for by any route other than
+losing growth — which the shared switch makes hard.
+
+---
 
 ### ROUND 177 — SCREEN RUN. **Dexamethasone does not compute — and the reason is structural.** The screen returned the HUMAN ANCHOR instead.
 
