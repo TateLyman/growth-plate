@@ -20581,27 +20581,27 @@ edges:
   target: pthrp_ihh_feedback_loop
   relation: activates
   sign: +
-  magnitude: hPTH(1-34) 80 micrograms/kg/day, 5 days a week for 3 weeks, raised growth plate thickness,
-    chondrocyte number AND longitudinal growth rate in the proximal tibia of NORMALLY LOADED 6-week-old rats
-    against untreated normally loaded controls
-  context: wild-type Sprague-Dawley rat, not a dysplasia or deficiency model; five groups of six; the same
-    effect was ABSENT in the 15-week-old cohort run in parallel
+  magnitude: hPTH(1-34) 80 micrograms/kg/day, 5 days a week for 3 weeks, raised growth plate thickness, chondrocyte number
+    AND longitudinal growth rate in the proximal tibia of NORMALLY LOADED 6-week-old rats against untreated normally loaded
+    controls
+  context: wild-type Sprague-Dawley rat, not a dysplasia or deficiency model; five groups of six; the same effect was ABSENT
+    in the 15-week-old cohort run in parallel
   evidence_tier: T1
   refs:
   - ogawa2002
   confidence: C
-  notes: 'THE ONLY AGENT IN THIS PROGRAMME THAT RAISED THE GROWTH RATE OF A NORMAL ANIMAL - everything else
-    was a rescue (xie2012, horike2026), a pool addition (trompet2024), or unmeasured for length. But two of
-    the three readouts are a zone height and an unspecified chondrocyte number, so under CORR-189 the TERM IS
-    UNATTRIBUTED and this cannot yet be called an amplification result.'
+  notes: THE ONLY AGENT IN THIS PROGRAMME THAT RAISED THE GROWTH RATE OF A NORMAL ANIMAL - everything else was a rescue (xie2012,
+    horike2026), a pool addition (trompet2024), or unmeasured for length. But two of the three readouts are a zone height
+    and an unspecified chondrocyte number, so under CORR-189 the TERM IS UNATTRIBUTED and this cannot yet be called an amplification
+    result.
   traversal_usable: true
 - edge_id: e01334
   source: the_yield_candidate_intermittent_pth1r_agonism
   target: amplification_is_transit_time
   relation: hypothesized_link
   sign: +
-  magnitude: unknown - no terminal hypertrophic cell height and no resting-zone cycle time has ever been
-    measured under a PTH1R agonist, so the growth-rate gain cannot be partitioned
+  magnitude: unknown - no terminal hypertrophic cell height and no resting-zone cycle time has ever been measured under a
+    PTH1R agonist, so the growth-rate gain cannot be partitioned
   context: the claim the candidate is proposed for, and the one thing about it that is not established
   evidence_tier: T1
   refs:
@@ -20609,68 +20609,140 @@ edges:
   - hunziker1994
   confidence: speculative
   gap_id: g_l12_does_intermittent_pth1r_agonism_raise_amplification_in_a_wild_type_plate
-  notes: 'ROUND 183 IS THE CAUTIONARY PRECEDENT. Growth hormone was recorded as an amplification agent by two
-    separate nodes until the flux quantities were computed and it came out at 0.77, buying its whole effect
-    by consuming the pool five times faster. The mechanistic case here is much stronger - PTH1R sits at the
-    commitment boundary rather than on the pool, and PTHrP is the endogenous delay signal - but it is an
-    argument, and the same kind of argument was wrong about GH.'
+  notes: ROUND 183 IS THE CAUTIONARY PRECEDENT. Growth hormone was recorded as an amplification agent by two separate nodes
+    until the flux quantities were computed and it came out at 0.77, buying its whole effect by consuming the pool five times
+    faster. The mechanistic case here is much stronger - PTH1R sits at the commitment boundary rather than on the pool, and
+    PTHrP is the endogenous delay signal - but it is an argument, and the same kind of argument was wrong about GH.
   traversal_usable: false
 - edge_id: e01335
   source: the_yield_candidate_intermittent_pth1r_agonism
   target: jansen_metaphyseal_chondrodysplasia
   relation: correlates_with
   sign: unknown
-  magnitude: the humanized H223R-PTH1R growth plate shows MARKEDLY EXPANDED type II collagen positive
-    proliferating and prehypertrophic zones with abundant central apoptosis and progressive LOSS of type X
-    collagen positive hypertrophic chondrocytes and primary spongiosa
-  context: mutant allele expressed from the endogenous mouse Pth1r promoter so in all relevant target
-    tissues, which the earlier collagen-promoter transgenics did not achieve
+  magnitude: the humanized H223R-PTH1R growth plate shows MARKEDLY EXPANDED type II collagen positive proliferating and prehypertrophic
+    zones with abundant central apoptosis and progressive LOSS of type X collagen positive hypertrophic chondrocytes and primary
+    spongiosa
+  context: mutant allele expressed from the endogenous mouse Pth1r promoter so in all relevant target tissues, which the earlier
+    collagen-promoter transgenics did not achieve
   evidence_tier: T1
   refs:
   - reyes2023
   confidence: C
-  notes: 'THE OBJECTION DISSOLVES INTO A MECHANISM AND CHANGES SIGN. Round 175 read Jansen as the warning that
-    delaying hypertrophic commitment shortens bone. It does not - the delay works, and the plate is short
-    because the accumulated cells APOPTOSE instead of cashing out into hypertrophy. Amplification without
-    discharge, the third instance of that failure mode after horike2026 and newton2019. It is an argument for
-    pulsatile dosing and against continuous exposure.'
+  notes: THE OBJECTION DISSOLVES INTO A MECHANISM AND CHANGES SIGN. Round 175 read Jansen as the warning that delaying hypertrophic
+    commitment shortens bone. It does not - the delay works, and the plate is short because the accumulated cells APOPTOSE
+    instead of cashing out into hypertrophy. Amplification without discharge, the third instance of that failure mode after
+    horike2026 and newton2019. It is an argument for pulsatile dosing and against continuous exposure.
   traversal_usable: true
 - edge_id: e01336
   source: the_yield_candidate_intermittent_pth1r_agonism
   target: abaloparatide
   relation: correlates_with
   sign: +
-  magnitude: teriparatide is the LONG-acting and abaloparatide the SHORT-acting PTH1R agonist by signalling
-    duration, traced by cryo-EM and 3D variability analysis to receptor ECD motion and the peptide
-    C-terminal portion
+  magnitude: teriparatide is the LONG-acting and abaloparatide the SHORT-acting PTH1R agonist by signalling duration, traced
+    by cryo-EM and 3D variability analysis to receptor ECD motion and the peptide C-terminal portion
   context: choosing between the two approved molecules when the failure mode is sustained receptor occupancy
   evidence_tier: T1
   refs:
   - zhai2022
   - sato2021
   confidence: E
-  notes: 'A REASONED PREFERENCE, NOT A MEASUREMENT, AND THE QUALIFIER TRAVELS WITH IT. sato2021 found no
-    difference between the two ligands in receptor internalisation, beta-arrestin recruitment, calcium or
-    early cAMP, so the distinction is in DURATION rather than in which pathways are engaged and the whole
-    argument turns on duration being the operative variable at a growth plate. Abaloparatide is also the
-    PTHrP analogue - the plate''s own ligand - and is dosed four times higher, which narrows a human-equivalent
-    dose gap of about 10-fold.'
+  notes: A REASONED PREFERENCE, NOT A MEASUREMENT, AND THE QUALIFIER TRAVELS WITH IT. sato2021 found no difference between
+    the two ligands in receptor internalisation, beta-arrestin recruitment, calcium or early cAMP, so the distinction is in
+    DURATION rather than in which pathways are engaged and the whole argument turns on duration being the operative variable
+    at a growth plate. Abaloparatide is also the PTHrP analogue - the plate's own ligand - and is dosed four times higher,
+    which narrows a human-equivalent dose gap of about 10-fold.
   traversal_usable: true
 - edge_id: e01337
   source: the_yield_candidate_intermittent_pth1r_agonism
   target: fgfr3_receptor
   relation: inhibits
   sign: '-'
-  magnitude: intermittent PTH(1-34) rescued thanatophoric dysplasia type II lethality and brought
-    achondroplastic mouse humerus and tibia lengths to comparable with wild-type, which the authors attribute
-    to increased PTHrP expression and DOWNREGULATED FGFR3
+  magnitude: intermittent PTH(1-34) rescued thanatophoric dysplasia type II lethality and brought achondroplastic mouse humerus
+    and tibia lengths to comparable with wild-type, which the authors attribute to increased PTHrP expression and DOWNREGULATED
+    FGFR3
   context: Fgfr3 gain-of-function mouse models, systemic intermittent injection
   evidence_tier: T1
   refs:
   - xie2012
   confidence: D
-  notes: 'A RESCUE RESULT, CARRIED FOR A DIFFERENT REASON - the FGFR3 downregulation means this candidate and
-    the erdafitinib already in the stack may act partly through the same node, so they cannot be assumed
-    additive. That interaction has never been tested and is a reason to measure the two together rather than
-    to stack them on the assumption of independence.'
+  notes: A RESCUE RESULT, CARRIED FOR A DIFFERENT REASON - the FGFR3 downregulation means this candidate and the erdafitinib
+    already in the stack may act partly through the same node, so they cannot be assumed additive. That interaction has never
+    been tested and is a reason to measure the two together rather than to stack them on the assumption of independence.
+  traversal_usable: true
+- edge_id: e01338
+  source: pth1r_verdict_the_schedule_does_not_survive_the_species_jump
+  target: the_yield_candidate_intermittent_pth1r_agonism
+  relation: correlates_with
+  sign: '-'
+  magnitude: the licensed DAILY schedule delivers 20 pulses per human proliferative chondrocyte cycle
+    against the 1.0 delivered to the rat in ogawa2002; the human interval matching the rat is about 20 days
+  context: rat proliferative cycle 1.4 d (hunziker1994) against human about 20 d (kember1976); robust across
+    a human cycle of 10-30 d, where daily is 10-30 fold too frequent
+  evidence_tier: T1
+  refs:
+  - ogawa2002
+  - hunziker1994
+  - kember1976
+  confidence: D
+  notes: 'WITHDRAWS THE ROUND-184 RECOMMENDATION ONE ROUND AFTER MAKING IT. For a drug whose sign inverts
+    with schedule, being 20-fold too frequent is not a dosing detail - it is a move toward the arm where
+    every recorded exposure shortens bone. The molecule survives, the regimen does not. Rests on one untested
+    assumption: that intermittency is set by the chondrocyte commitment clock rather than by receptor
+    resensitisation kinetics, which nobody has measured in a chondrocyte of either species.'
+  traversal_usable: true
+- edge_id: e01339
+  source: pth1r_verdict_the_schedule_does_not_survive_the_species_jump
+  target: pth1r_receptor
+  relation: correlates_with
+  sign: '-'
+  magnitude: each doubling of intact PTH associated with height velocity SDS -0.26 (95% CI -0.49 to -0.02)
+    and odds ratio 1.16 (1.00-1.34) for height growth failure, with a restricted cubic spline showing height
+    velocity falling monotonically as PTH rose
+  context: 622 patients aged 1-20 initiating dialysis, Japanese nationwide registry 2009-2020, median intact
+    PTH 183 pg/mL, median height SDS -1.9
+  evidence_tier: T1
+  refs:
+  - imaizumi2026
+  confidence: D
+  notes: 'THE LARGEST HUMAN PTH-VERSUS-HEIGHT DATASET AND IT IS NEGATIVE - but it is CHRONIC ENDOGENOUS
+    secondary hyperparathyroidism in uraemic children, where intact PTH is a severity marker for
+    CKD-mineral bone disorder, acidosis and malnutrition, each of which independently suppresses growth. It
+    belongs on the CONTINUOUS side of the ledger, where it agrees with Jansen, reyes2023 and the transgenics.
+    It is not a test of pulsatile exogenous dosing and must not be used as one.'
+  traversal_usable: true
+- edge_id: e01340
+  source: pth1r_verdict_the_schedule_does_not_survive_the_species_jump
+  target: pthrp_protein
+  relation: required_for
+  sign: +
+  magnitude: heterozygous PTHLH nonsense variant in a mother-son pair with brachydactyly type E and short
+    stature; PTHLH variants are an established autosomal dominant cause variably associated with short
+    stature
+  context: human germline loss of function of the endogenous ligand
+  evidence_tier: T1
+  refs:
+  - huang2026
+  confidence: C
+  notes: THE ONE HUMAN GENETIC LINE THAT FAVOURS THE CANDIDATE. Less PTHrP makes a shorter human, so the
+    ligand is growth-positive across the physiological range. It says nothing about whether MORE than normal
+    helps, which is the actual question, and brachydactyly type E carries a broader skeletal phenotype than
+    stature alone.
+  traversal_usable: true
+- edge_id: e01341
+  source: pth1r_verdict_the_schedule_does_not_survive_the_species_jump
+  target: cnp_protein
+  relation: correlates_with
+  sign: unknown
+  magnitude: CNP rescues achondroplasia under PERMANENT transgenic overexpression as well as under daily
+    injection, so its effect does not invert with schedule
+  context: the disanalogy test - whether vosoritide's daily success licenses daily dosing of a
+    schedule-inverting drug
+  evidence_tier: T1
+  refs:
+  - yasoda2004
+  confidence: C
+  notes: 'IT DOES NOT. Vosoritide defeats the PHARMACOKINETIC objection completely - a 4 kDa peptide with a
+    very short half-life dosed daily plainly can move a human growth plate - and that concession should be
+    made. But CNP is schedule-INSENSITIVE and PTH1R agonism inverts, so a regimen that is safe for the first
+    carries no information about the second.'
   traversal_usable: true

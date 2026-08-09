@@ -722,3 +722,54 @@ gaps:
     against intermittent injection at matched total dose would test the charge-and-discharge claim directly, and
     the prediction is specific: continuous should reproduce the reyes2023 Jansen phenotype of an expanded proliferative
     zone with lost hypertrophic cells and no length gain.'
+- gap_id: g_l12_which_clock_sets_intermittency_at_the_growth_plate
+  type: known_unknown
+  layer: L12
+  tractability: 4
+  question: Is the clock that makes PTH1R dosing 'intermittent' rather than 'continuous' the receptor's own desensitisation
+    and resensitisation kinetics, or the chondrocyte's differentiation-commitment clock?
+  why_it_matters: This single unmeasured quantity decides whether daily teriparatide or abaloparatide is a usable
+    growth-plate intervention or an actively harmful one, and it is the assumption the whole round-185 benchmark
+    rests on. PTH1R agonism is the only drug class in this atlas whose SIGN inverts with dosing schedule - pulses
+    lengthen bone, continuous exposure shortens it, and every continuous exposure on record produces the same phenotype.
+    If the operative clock is RECEPTOR-INTRINSIC (desensitisation and resensitisation, minutes to hours) it is near
+    species-invariant, the duty cycle transfers unchanged from rat to human, and daily dosing is genuinely intermittent
+    in both. If it is the CHONDROCYTE COMMITMENT CLOCK it scales with the cell cycle, which is 1.4 days in rat and
+    about 20 days in human, and the same daily syringe delivers 1 pulse per cell cycle to a rat and 20 to a human
+    - twenty-fold toward the arm where bone gets shorter. The two readings differ not in effect size but in the
+    DIRECTION of the predicted human result.
+  what_is_known: ogawa2002, rat - hPTH(1-34) five days a week raised longitudinal growth rate in normally loaded
+    6-week-old animals, delivering approximately one pulse per rat proliferative chondrocyte cycle. liu2012, chondrocytes
+    - continuous PTH promotes proliferation and SUPPRESSES differentiation with COL10A1 down, while intermittent
+    PTH enhances differentiation, so the inversion is real in this cell type and not only in osteoblasts. reyes2023,
+    mouse - the humanized H223R-PTH1R plate under constitutive signalling has markedly expanded proliferating and
+    prehypertrophic zones with abundant apoptosis and progressive loss of type X hypertrophic chondrocytes, which
+    is a DIFFERENTIATION-TIMING failure rather than a receptor-resensitisation failure and therefore leans toward
+    the commitment clock. hunziker1994 and kember1976 supply the two cell-cycle clocks, 1.4 days and about 20 days.
+    In BONE the intermittent-versus-continuous distinction is conventionally attributed to signalling duration in
+    osteoblasts, which leans the other way.
+  what_is_missing: Any measurement of PTH1R desensitisation or resensitisation kinetics in a CHONDROCYTE, of either
+    species - a focused search returns two papers on PTH1R desensitisation and neither is in cartilage. Also missing
+    - (a) any dose-schedule matrix at a growth plate, since no experiment has varied the dosing INTERVAL against
+    a bone-length endpoint while holding cumulative dose constant; (b) whether the commitment clock scales with
+    the proliferative cycle at all, which is assumed rather than shown; (c) any human or large-animal data at an
+    interval longer than daily, even though weekly teriparatide 56.5 micrograms is an approved product.
+  nearest_evidence:
+  - ogawa2002
+  - liu2012
+  - reyes2023
+  - hunziker1994
+  - kember1976
+  nearest_evidence_note: The inversion is established, both clocks are measured, and the link between them is entirely
+    unmeasured. This is a gap between two well-characterised things rather than a gap in a dark area.
+  discriminating_experiment: Two experiments, one cheap and one decisive. CHEAP - measure cAMP and downstream response
+    to a second PTH1R agonist pulse in primary rat and human growth plate chondrocytes at increasing intervals after
+    a first pulse, and read off the resensitisation half-time in each species. If the two species resensitise at
+    similar rates, the receptor clock is species-invariant and the round-185 benchmark is wrong. DECISIVE - in growing
+    rats, hold the CUMULATIVE dose of PTH(1-34) constant and vary only the dosing interval across at least four
+    arms spanning roughly 0.25 to 4 pulses per proliferative chondrocyte cycle, then measure bone length plus the
+    hunziker1994 five so amplification can be computed for each arm. If the length response peaks near one pulse
+    per cell cycle, intermittency is set by the commitment clock, the benchmark holds, and the human interval should
+    be weeks. If the response is flat across intervals or peaks at the shortest one, it is set by receptor kinetics
+    and daily human dosing is defensible. This experiment has never been done for any schedule-inverting drug at
+    a growth plate, and it would settle the candidate either way in one study.
