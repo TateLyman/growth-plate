@@ -79,3 +79,50 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ---------------------------------------------------------------------------
+# ROUND 186 ADDENDUM - THE SCHEDULE/DOSE TRADE-OFF.
+# Round 185 showed the licensed DAILY schedule is ~20x too frequent relative to the human
+# chondrocyte clock. Fixing the schedule by moving to weekly does not come free: it also cuts
+# cumulative exposure. This section puts both axes on one table.
+# ---------------------------------------------------------------------------
+def addendum():
+    RAT_WEEKLY_UG_KG = RAT_DOSE_UG_KG_DAY * RAT_DAYS_PER_WEEK          # 400 ug/kg/week
+    HED_WEEKLY_UG_KG = RAT_WEEKLY_UG_KG / KM_RAT_TO_HUMAN              # BSA-scaled
+    HED_WEEKLY_TOTAL = HED_WEEKLY_UG_KG * SUBJECT_KG
+
+    print("\n" + "=" * 76)
+    print("ADDENDUM - YOU CAN MATCH THE SCHEDULE OR THE DOSE, NOT BOTH WITH EXISTING PRODUCTS")
+    print("=" * 76)
+    print(f"  ogawa2002 weekly exposure   {RAT_WEEKLY_UG_KG:7.1f} ug/kg/week")
+    print(f"  human equivalent            {HED_WEEKLY_UG_KG:7.1f} ug/kg/week"
+          f"  = {HED_WEEKLY_TOTAL:6.0f} ug/week for {SUBJECT_KG:.0f} kg\n")
+    regs = [
+        ("teriparatide 20 ug DAILY",        20.0 * 7,   20.0,   7.0),
+        ("abaloparatide 80 ug DAILY",       80.0 * 7,   20.0,   7.0),
+        ("teriparatide 56.5 ug WEEKLY",     56.5,       20.0,   1.0),
+        ("teriparatide 28.2 ug TWICE-WKLY", 28.2 * 2,   20.0,   2.0),
+    ]
+    print(f"  {'regimen':34s} {'ug/week':>9s} {'x below HED':>12s} {'pulses/cycle':>13s} {'x too frequent':>15s}")
+    for label, per_week_ug, human_cycle_d, doses_wk in regs:
+        shortfall = HED_WEEKLY_TOTAL / per_week_ug
+        ppc = (doses_wk / 7.0) * human_cycle_d
+        print(f"  {label:34s} {per_week_ug:9.1f} {shortfall:11.1f}x {ppc:13.1f} {ppc/1.0:14.1f}x")
+    print(f"""
+  READ THE TWO RIGHT-HAND COLUMNS TOGETHER. Daily abaloparatide is closest on CUMULATIVE dose
+  (about 7x short) and worst on schedule (20 pulses per human chondrocyte cycle against the rat's
+  one). Weekly teriparatide is closest on schedule (2.9) and worst on dose (about 69x short).
+  NO EXISTING PRODUCT SATISFIES BOTH CONSTRAINTS AT ONCE.
+
+  What would is a single large pulse at a long interval - on the order of {HED_WEEKLY_TOTAL*3:.0f} ug every
+  three weeks, which is simply more of the same peptide at the interval the benchmark asks for.
+  That is not a product, and no one has ever administered a PTH1R agonist that way.
+
+  THE HONEST SUMMARY: the two corrections this atlas has made to the candidate - the schedule
+  benchmark and the dose gap - pull in OPPOSITE directions across the available regimens, and the
+  regimen that satisfies both has never been given to anyone.""")
+
+
+if __name__ == "__main__":
+    addendum()
