@@ -20876,3 +20876,81 @@ edges:
     Untested. The separate and worse hazard is GH - if abaloparatide raises cell production the way GH
     does, by spending the resting pool faster, the two stack in cost rather than benefit in a late case.
   traversal_usable: true
+- edge_id: e01349
+  source: pth1r_deep_sweep_immunogenicity_reverses_the_molecule
+  target: abaloparatide
+  relation: inhibits
+  sign: '-'
+  magnitude: 41 per cent anti-drug antibodies and 26 PER CENT NEUTRALISING antibodies at 18 months; 7 of
+    297 tested developed antibodies cross-reacting with PTHrP and 3 of those 7 were NEUTRALISING to
+    endogenous PTHrP; 127 patients still antibody-positive one year after stopping, 55 at two years
+  context: TYMLOS label section 12.6, postmenopausal osteoporosis trial, 773 treated patients
+  evidence_tier: T2
+  refs:
+  - fda_tymlos_label_2025
+  - huang2026
+  confidence: B
+  notes: 'THE FINDING THAT REVERSES THE MOLECULE CHOICE, AND ROUNDS 184 AND 187 DID NOT READ IT. The
+    label calls it clinically insignificant for bone mineral density and fracture, and for osteoporosis
+    that is fair. Here it is not: the growth window is NON-REPEATABLE so a one-in-four chance of losing
+    the drug matters more; the endpoint is more sensitive than BMD; and the tail is INVERTED rather than
+    null, because neutralising endogenous PTHrP reproduces the PTHLH loss-of-function direction and human
+    PTHLH nonsense variants cause short stature. The PTHrP homology that was the argument FOR
+    abaloparatide is what creates the hazard.'
+  traversal_usable: true
+- edge_id: e01350
+  source: pth1r_deep_sweep_immunogenicity_reverses_the_molecule
+  target: teriparatide
+  relation: correlates_with
+  sign: +
+  magnitude: 3 per cent antibodies (15 of 541), first detected after 12 months, diminishing after
+    withdrawal, no hypersensitivity, no effect on serum calcium or bone mineral density; no neutralising
+    fraction reported
+  context: FORTEO label section 6.2 - the comparator that decides the molecule
+  evidence_tier: T2
+  refs:
+  - fda_forteo_label_2025
+  confidence: B
+  notes: A THIRTEEN-FOLD LOWER RATE WITH NO REPORTED NEUTRALISING FRACTION, and no route to neutralising
+    endogenous PTHrP because teriparatide is PTH(1-34) rather than a PTHrP analogue. Combined with
+    ogawa2002 having used hPTH(1-34), the molecule with the growth data and the molecule with the benign
+    immunogenicity are the same one.
+  traversal_usable: true
+- edge_id: e01351
+  source: pth1r_deep_sweep_immunogenicity_reverses_the_molecule
+  target: pth1r_receptor
+  relation: correlates_with
+  sign: +
+  magnitude: height-for-age Z INCREASED in the calcium-sensing-receptor group on PTH(1-34), age-by-group
+    interaction P less than 0.0001, while the APS-1 group remained below 0
+  context: 18 APS-1 and 9 CaSR-variant hypoparathyroid children, mean baseline age 13.7 +/- 5.5 years,
+    longitudinal mixed-effects modelling of pooled study data
+  evidence_tier: T1
+  refs:
+  - winer2025
+  confidence: D
+  notes: 'THE HUMAN LINEAR-GROWTH DATA THIS ATLAS TWICE SAID DID NOT EXIST. Heavily qualified - it is
+    REPLACEMENT dosing in hypoparathyroidism, so correcting calcium homeostasis confounds it, and APS-1
+    carries independent growth suppression from its own autoimmune manifestations. But the endpoint is
+    linear growth, the population is adolescent, and the direction is positive in the cleaner arm. Full
+    text not yet read - it is paywalled.'
+  traversal_usable: true
+- edge_id: e01352
+  source: pth1r_deep_sweep_immunogenicity_reverses_the_molecule
+  target: growth_plate_senescence
+  relation: inhibits
+  sign: '-'
+  magnitude: conditional PTH1R deletion in OSTEOBLASTS gives postnatal growth retardation, fewer
+    hypertrophic chondrocytes, impaired endochondral angiogenesis and PREMATURE GROWTH PLATE FUSION with
+    shortened long bones
+  context: mouse, osteoblast-specific deletion - an indirect route from PTH1R to the growth plate
+  evidence_tier: T1
+  refs:
+  - qiu2015
+  confidence: D
+  notes: 'TWO IMPLICATIONS, ONE GOOD AND ONE COMPLICATING. Loss of function closes the plate EARLY, so
+    agonism plausibly delays closure - a DURATION bonus on a candidate argued purely on yield, and
+    nobody has measured it. But it also means a substantial part of the growth plate effect is INDIRECT,
+    via osteoblast PTH1R controlling endochondral angiogenesis, rather than the chondrocyte
+    commitment-delay this programme has been targeting.'
+  traversal_usable: true
