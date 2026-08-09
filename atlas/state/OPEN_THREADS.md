@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 180.** Repo: 704 nodes, 368 gaps, 1382 refs, validator errors none.
+Last updated: **2026-08-09, after round 181.** Repo: 705 nodes, 369 gaps, 1382 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,64 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 181 — **ROUTE 1 MAPPED.** Four findings, two of which correct earlier rounds. One is a correction to *us*.
+
+`route1_self_renewal_mapped`. Both field reviews read in full as indexes, every primary traced.
+
+**① THE POPULATION MAP — it is not one cell type.** `cheng2025` enumerates **five** marker-defined
+growth-plate stem populations: **PTHrP, CD73, Axin2, FoxA2, ApoE**. `avijgan2026` (PRISMA systematic
+review) concludes the **hierarchy is NOT established**, and that **neither scRNAseq nor label-retention has
+resolved whether the RZ holds distinct quiescent sub-populations.** `muruganandan2022`: FoxA2⁺ cells have
+**higher clonogenicity and longevity** than PTHrP⁺ — so they are demonstrably not equivalent.
+**Consequence: the denominator of every yield in this programme is a marker, not a cell type.**
+
+**② HEDGEHOG IS STAGE-SPECIFIC — and this probably replaces both my earlier explanations.**
+
+| | **before** SOC formation | **after** SOC formation |
+|---|---|---|
+| antagonist | **reduces** stem pool (LDE225) | reduces clonal expansion, **premature fusion ~P35** |
+| agonist | **also reduces** stem pool (SAG) | **promotes RZ proliferation** |
+
+**Both directions harm pre-SOC.** And the two irreconcilable studies sit on opposite sides of that line:
+`orikasa2024` pulsed **P6** (at/before SOC) → derangement, osteoblast conversion, transient length *loss*;
+`trompet2024` dosed **P28–P32** (well after) → clean pool doubling, **+3.63% femur**. Round 179 said
+duration; round 180 said a four-way confound. **Stage is more economical than either — and it favours this
+case, since bone age 16 is as far post-SOC as it gets.** Graded E; no experiment varies stage alone.
+
+**③ A CHARGE-AND-DISCHARGE PAIR SITS UNEXPLOITED INSIDE ONE PAPER.** The atlas has carried the Tsc1 result
+as the canonical **pool-without-flux failure**. `newton2019` supplies the release in the same paper: the
+expanded clusters *"retain hedgehog dependence, as vismodegib **forced them to differentiate directly into
+columnar cells** and form multi-columnar clones."*
+> **Charge with mTORC1, discharge with Hedgehog inhibition. The failure mode is the charge phase.**
+**No bone length was measured after the discharge step — in that paper or any other.** Bounded by the same
+paper: two extra vismodegib doses **fused the plate at P37**. New gap
+`g_l2_charge_with_mtorc1_discharge_with_hedgehog`. **If a charged pool can be discharged on command, the
+pool-without-flux objection that has closed every pool lever in this atlas stops being fatal.**
+
+**④ CORR-187 — MY "THREE CONVERGING LINES ON GH" WAS OVERSTATED, AND THE ATLAS HELD THE CONTRADICTION ALL
+ALONG.** `ohlsson1992` (PNAS), hypophysectomised rats, [³H]thymidine minipump, **local** GH by cannula into
+one tibia, **contralateral leg as control**:
+
+| | germinal-layer label-retaining cells |
+|---|---|
+| **GH 1 µg/day local** | **1.95 ± 0.13** vs control leg |
+| **IGF-I 10 µg/day local** | **0.96 ± 0.04 — no effect** |
+
+That is a **cleaner design for this question** than `chu2025` (systemic, ~100× therapeutic, GH-*replete*
+mice) — and it occupies **exactly the GH-deficient context `chu2025` says "remains to be explored."**
+**And GH ≠ IGF-1 at the resting zone**, so reading `oichi2023`'s IGF-1 result as evidence about GH was a
+substitution I should not have made.
+**Both papers have been in this bibliography throughout and no node compared them.** The atlas's own
+`dual_effector_hypothesis` (2026-08-05) already held the reconciliation: GH **recruits** germinal cells
+(`gevers1996a`) *and* **multiplies** them (`ohlsson1992`) — opposite signs, net set by dose/route/GH status.
+**The sign of GH on the pool is contested and downgraded to D.**
+
+*Kept unresolved rather than smoothed:* `schlechter1986` — somatomedin antiserum abolishes the local
+intra-arterial GH response, so GH's plate effect is IGF-1-*mediated*, which sits awkwardly against
+`ohlsson1992`'s IGF-I null.
+
+---
 
 ### ROUND 180 — **ROUTE 4 WORKED TO THE BOTTOM.** It closes as a lever and survives as the hazard bound on route 1.
 

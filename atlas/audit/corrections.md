@@ -7059,3 +7059,60 @@ the femur **shorter** before it made it equivalent.
 *leak to plug* — the normal leak is small, so there is little to recover — and worse for Hedgehog as a
 *lever*, because sustained activation cost length transiently. The route survives as a **hazard
 characterisation of the Hedgehog lever**, not as a loss term with recoverable value.
+
+---
+
+## CORR-187 — "three independent lines say GH spends the progenitor pool" was overstated. A cleaner, earlier experiment says the opposite, and the atlas has held it since before the yield programme began.
+
+**Rounds 172, 176, 178 asserted it; round 181 found the contradiction while mapping route 1.**
+
+**What I claimed.** That `chu2025` (GHR conditional knockout, label retention), `dauber2026` (GH and the CNP
+axis give near-identical first-year SDS then diverge) and `oichi2023` (IGF-1 through Akt spends the pool)
+were "three independent lines, no shared method, one conclusion: the GH/IGF-1 arm is the discharge signal."
+
+**The contradiction.** `ohlsson1992` (PNAS), in hypophysectomised rats with an osmotic minipump delivering
+[³H]thymidine and **local** GH infused by cannula into one proximal tibia against the **contralateral leg
+as control**: GH **nearly doubled** the label-retaining cells of the germinal layer — **ratio 1.95 ± 0.13**.
+Design-wise that is cleaner than `chu2025` on this specific question: within-animal control, local
+delivery, direct label-retention readout.
+
+**And the split it reports dissolves part of my synthesis.** In the same experiment **IGF-I had no effect
+on the germinal cells at all — ratio 0.96 ± 0.04** — with the authors concluding IGF-I "acts only on the
+proliferation of the resulting chondrocytes." So GH and IGF-1 are **not interchangeable at the resting
+zone**, and treating `oichi2023`'s IGF-1 result as evidence about GH was a substitution I should not have
+made.
+
+**The reconciliation is a dose/route/background triple, and `chu2025` names the gap itself:**
+
+| | ohlsson1992 | chu2025 |
+|---|---|---|
+| GH | **1 µg/day, LOCAL** into tibia | **5 mg/kg/day systemic**, ≈100× therapeutic |
+| background | **hypophysectomised — GH-deficient** | GH-replete, non-deficient |
+| species | rat | mouse |
+| pool | **1.95× more label-retaining cells** | depleted |
+
+`chu2025` states in its own limitations that "the question of how GH regulates stem cells in a GH-deficient
+context remains to be explored," and that it *expected* pool expansion from the earlier literature.
+**`ohlsson1992` is that context, and it answers the other way.**
+
+**Worse than a missed paper: the atlas held both.** `ohlsson1992` has been in the bibliography since before
+the yield programme, cited by `growth_hormone` and `dual_effector_hypothesis`. **No node compares it with
+`chu2025`.** The two most decision-relevant papers on whether our own stack's largest agent expands or
+spends the progenitor pool sat in the same bibliography, cited by different nodes, never put side by side —
+the CORR-183 failure again, at the level of two references rather than a whole arm.
+
+**And the atlas already had the framework.** `dual_effector_hypothesis` (grade C, 2026-08-05) records that
+GH both **recruits** germinal cells into the proliferative pool (`gevers1996a`: GH raises the *number* of
+proliferating chondrocytes without raising the labelling index of cells already cycling) **and multiplies
+them** (`ohlsson1992`). Those are opposite signs on pool size, and the net depends on dose and background.
+That is a far better explanation of `chu2025`'s "unexpectedly" than anything I wrote.
+
+**What survives.** `oichi2023` still shows IGF-1 discharges the pool — that result is unaffected. What does
+not survive is the extension of it to GH, and the "three converging lines" framing. **The honest state is
+that the sign of GH's effect on the progenitor pool is contested, dose- and context-dependent, and
+unresolved.** Every claim built on GH-spends-the-pool is downgraded accordingly.
+
+**One complication kept rather than smoothed:** `schlechter1986` reports that a somatomedin antiserum
+abolishes the local response to intra-arterial GH, i.e. GH's direct plate effect is IGF-1-*mediated*. That
+sits awkwardly against `ohlsson1992`'s null for exogenous IGF-I on germinal cells. Locally induced and
+injected IGF-1 may not be equivalent in reach or kinetics. Recorded as unresolved.
