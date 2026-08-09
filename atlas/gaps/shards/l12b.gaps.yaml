@@ -863,3 +863,79 @@ gaps:
     R00100 and R00200, or from the Radius abaloparatide carcinogenicity study, read blind against arm. If archived
     blocks are unavailable, the same measurement prospectively in any growing rodent study already dosing a PTH1R
     agonist - it adds one caliper reading to a necropsy that is already happening.
+- gap_id: g_l12_is_the_pth1r_length_gain_only_body_weight
+  type: quantitative_gap
+  layer: L12
+  tractability: 4
+  question: Is the femoral length increase seen under teriparatide in female rats a growth plate effect at all,
+    or is it entirely the linear consequence of the concurrent body-weight gain?
+  why_it_matters: This decides whether the drug has ANY longitudinal-growth pharmacology, and the answer currently
+    available says probably not. Every femoral length increase in the complete NDA 21-318 package is female and
+    every one co-occurs with a large body-weight increase; every intact-male arm across 8 to 100 micrograms per
+    kilogram per day and 18 days to one year is null, and in the 26-week study the males LOST 3.8 per cent body
+    weight while showing no length change. Tested against isometric allometry, where a 10 per cent heavier animal
+    is about 3.2 per cent longer-boned, the 26-week female gains of 2, 3 and 4 per cent against weight gains of
+    7, 10 and 10 per cent sit ON or slightly BELOW the reference line - there is no residual once body size is accounted
+    for. The only arm that exceeds the line is the 2-year caliper measurement, which is also the arm whose femoral
+    width rose 33 per cent and which the regulator itself reads as periosteal expansion. If the length effect is
+    a body-weight readout then the entire femoral-length literature for this drug class measures appetite, and the
+    human case, who is male, has nothing to gain from it.
+  what_is_known: fda_forteo_pharmreview_2002 - the 26-week study reports femur length 1.02x, 1.03x, 1.04x in females
+    with body weight +7/+10/+10 per cent, body weight gain 1.4 to 1.8-fold and efficiency of food utilisation 1.4
+    to 1.7-fold, and states "Change not seen in males" where body weight fell. The reviewer records the sponsor
+    invoking IGF-1 induction in females as the explanation. The 2-year study reports female body weight +4.5/+9.0/+10.4
+    per cent alongside length up to 6 per cent by caliper. Study R00796/R04296 - one year in intact male F344 rats
+    at 8 and 40 micrograms per kilogram - "did not alter linear bone growth in males". CG3-04 - 18 days in 4-week-old
+    males at 16 and 80 - femur length the same in all groups.
+  what_is_missing: Any arm in which body-weight trajectory is controlled. There is no pair-fed control anywhere
+    in the package, no length measurement normalised to body mass, and no arm in which a male gained weight on drug.
+    Also missing - the per-dose MALE femoral length values from the first carcinogenicity study, which exist in
+    the sponsor tables and are described in the review only as "maximal at the low dose"; and the actual allometric
+    exponent for femur length against body mass in F344 rats of these ages, which would replace the assumed one
+    third.
+  nearest_evidence:
+  - fda_forteo_pharmreview_2002
+  - vahle2002
+  - winer2010
+  nearest_evidence_note: Two regulatory readings of sponsor tables and one human randomised trial. The human trial
+    reports height percentile and WEIGHT percentile side by side and neither moved, which is consistent with the
+    body-size reading and does not distinguish it from no effect at all.
+  discriminating_experiment: Dose intact male and female rats at matched exposure with a PAIR-FED vehicle arm, so
+    the weight trajectory is equalised between drug and control. Measure femur length by microCT, plus growth plate
+    height, cells per column and terminal hypertrophic cell height in the same animals. If the female length gain
+    survives pair-feeding it is a plate effect and the hunziker1994 decomposition can be applied to it; if it disappears,
+    the femoral-length literature for PTH1R agonists is a body-weight readout and the line closes.
+- gap_id: g_l12_pth1r_expression_across_human_pubertal_stage
+  type: quantitative_gap
+  layer: L12
+  tractability: 3
+  question: How does PTH1R expression in the human growth plate change across pubertal stage and bone age, and is
+    there any receptor left to act on at bone age 16?
+  why_it_matters: 'The whole candidate rests on there being a target. chu2026 places PTH1R in the pre-hypertrophic
+    zone of the EARLY pubertal human growth plate. kindblom2002 measures the two LIGANDS of the same loop across
+    Tanner stages and finds both fall significantly with maturation - correlation coefficients of 0.816 for Ihh
+    and 0.911 for PTHrP, both negative, in 10 patients with Greulich-Pyle bone ages. Nobody has measured the RECEPTOR
+    across that range. The two readings point opposite ways and the atlas cannot choose between them: low endogenous
+    ligand tone at late puberty could mean an unoccupied receptor with headroom for an exogenous agonist, or it
+    could mean the axis has been switched off along with the pre-hypertrophic population that carries the receptor.
+    In a case at bone age 16 this is the difference between a target and no target.'
+  what_is_known: chu2026 - PTH1R listed with ALPL as a pre-hypertrophic zone marker in early pubertal human growth
+    plate biopsies, four donors, with a Fig 7A endocrine-receptor dotplot across clusters GP1 to GP5. kindblom2002
+    - Ihh and PTHrP protein in early hypertrophic chondrocytes, falling with Tanner stage, with the RESTING ZONE,
+    epiphyseal bone and metaphyseal bone EXPLICITLY EXCLUDED from the quantification. hallett2021 - the mouse counterpart,
+    Pth1r enriched 3.0-fold in non-label-retaining cells while Pthlh is enriched 2.6-fold in the slow-cycling fraction.
+  what_is_missing: PTH1R protein or transcript in human growth plate as a function of Tanner stage or bone age,
+    at any n. Also missing - PTH1R in the human RESTING zone at any stage, since kindblom2002 excluded it by design
+    and chu2026 reports a cluster assignment rather than a per-zone quantification. And the per-cluster PTH1R values
+    behind chu2026 Fig 7A, which are in the figure source data rather than the text.
+  nearest_evidence:
+  - chu2026
+  - kindblom2002
+  - hallett2021
+  nearest_evidence_note: One human transcriptomic snapshot at one stage, one human protein series of the ligands
+    only, and one mouse sorted-population comparison. No human receptor series exists.
+  discriminating_experiment: PTH1R immunohistochemistry or in situ hybridisation on the existing human growth plate
+    biopsy series - kindblom2002 used 10 patients from epiphyseal surgery and avijgan2026 and chu2026 have further
+    banked specimens spanning pubertal stages - quantified per zone including the resting zone, against Greulich-Pyle
+    bone age. A falling receptor curve through late puberty closes the line; a flat or rising one keeps it open
+    and makes the late case the RIGHT case rather than the wrong one.
