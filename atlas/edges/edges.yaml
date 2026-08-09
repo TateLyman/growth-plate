@@ -20818,3 +20818,61 @@ edges:
     to the schedule the round-185 benchmark demands. The two considerations now converge on teriparatide
     at a long interval rather than abaloparatide daily.'
   traversal_usable: true
+- edge_id: e01346
+  source: the_abaloparatide_regimen
+  target: abaloparatide
+  relation: activates
+  sign: +
+  magnitude: 80 mcg subcutaneous once daily, five consecutive days per week with two days off, evening
+    dose at a consistent time immediately before lying down
+  context: proposed for a subject at bone age 16 with the stack already carrying GH, vosoritide,
+    erdafitinib and anastrozole; duration bounded by the remaining growth window
+  evidence_tier: T2
+  refs:
+  - fda_tymlos_label_2025
+  - ogawa2002
+  - noonan2004
+  confidence: D
+  notes: '80 mcg is the approved dose AND the top of the phase-2 range (20/40/80), so it is the
+    per-pulse ceiling with human data. Five-on-two-off exactly reproduces ogawa2002 exposure pattern -
+    five windows per week against five - and preserves a 48-hour washout as a hedge. Evening timing is
+    grade E from noonan2004 (>=90 per cent of elongation during recumbency) and converges with the label
+    instruction to dose where the patient can lie down. NOT VALIDATED: the exposure is about ten-fold
+    below the BSA-scaled rat equivalent and cannot be raised at the approved per-pulse dose.'
+  traversal_usable: true
+- edge_id: e01347
+  source: the_abaloparatide_regimen
+  target: pth1r_verdict_the_schedule_does_not_survive_the_species_jump
+  relation: correlates_with
+  sign: '-'
+  magnitude: abaloparatide half-life about 1 hour and pre-dose serum calcium at baseline while 4-hour
+    calcium is raised - direct human evidence that a daily dose fully resolves within 24 hours
+  context: testing the round-185 claim that daily dosing in a human is effectively continuous
+  evidence_tier: T2
+  refs:
+  - fda_tymlos_label_2025
+  confidence: C
+  notes: 'THREE FACTS AGAINST THE PULSES-PER-CELL-CYCLE MODEL. The half-life makes the duty cycle a
+    property of the DRUG rather than the species; the transient calcium excursion is direct in-vivo
+    human evidence of clearance between doses; and daily PTH1R agonism is ANABOLIC in humans, which is
+    the opposite of what the species-scaling model predicts for a schedule it calls effectively
+    continuous. The benchmark is not refuted - chondrocyte PTH1R resensitisation has never been measured
+    - but it is now the weaker model and argues for hedging rather than abandonment.'
+  traversal_usable: true
+- edge_id: e01348
+  source: the_abaloparatide_regimen
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: intermittent PTH(1-34) rescue of achondroplastic mice attributed by the authors partly to
+    increased PTHrP and DOWNREGULATED FGFR3
+  context: the interaction with erdafitinib already in the stack
+  evidence_tier: T1
+  refs:
+  - xie2012
+  confidence: D
+  notes: THE PAIRING THAT CANNOT BE ASSUMED ADDITIVE. If a PTH1R agonist works partly by lowering FGFR3
+    signalling then it and an FGFR inhibitor share a node, and stacking them may buy less than the sum.
+    Untested. The separate and worse hazard is GH - if abaloparatide raises cell production the way GH
+    does, by spending the resting pool faster, the two stack in cost rather than benefit in a late case.
+  traversal_usable: true
