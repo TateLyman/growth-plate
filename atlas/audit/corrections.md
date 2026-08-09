@@ -6046,3 +6046,48 @@ species.
 yet to check the blood pressure of our transgenic mice." `lauffer2022` answered it in humans eight years
 later, favourably (CORR-151). They also state exogenous OSTN administration to model animals was **ongoing
 in their laboratory** in 2017; no such report has been located.
+
+## CORR-156 — the NPR-B selectivity number does not exist anywhere, and that is now established rather than assumed (round 147)
+
+Batch 2 chased the one measurement that gates the NPR3 route — whether an NPR3 antagonist spares
+**NPR-B**, the receptor whose vascular activation sets the ceiling on this entire axis. Four independent
+sources, all negative:
+
+| source | what it has | NPR-B? |
+|---|---|---|
+| `nishizawa2017` full text | Tables 1 & 3, columns **hNPR1 and hNPR3 only** | **no** |
+| `veale_anpcr_wo0061631` (patent) | Ki tables, ~156 compounds, **ANPCR only** | **no** |
+| IUPHAR GtoPdb (ligand 5020) | M372049 listed at NPR-C only, flagged "Selective", **affinity field empty** | **no** |
+| ChEMBL | **no record of M372049 at all** | — |
+
+**So the selectivity claim for both candidate molecules rests on a curated absence, not a measurement.**
+This is not a retrievable datum; it is an experiment nobody has run. Recorded so no future round cites
+"selective" as if it were quantified.
+
+**What the patent did add.** AstraZeneca's programme rationale is stated plainly — *"blockade of the ANPCR
+was chosen as the best approach to increase endogenous levels of ANP"* — and the intended indication was
+**pulmonary** (pulmonary hypertension in COPD), because ANPCR is the dominant ANP receptor in lung and
+>50 % of ANP is cleared in a single lung pass. Best affinities in the series reach **Ki 0.41–1 nM**, and
+the quinoxaline + D-Arg-14 compound — M372049's substitution pattern — is stated to show **promising oral
+activity**. An orally active, 887 Da NPR-C antagonist is a better starting object than this atlas had.
+
+**What I deliberately did not do.** Several tabulated compounds carry masses consistent with 887 Da (Ki 1,
+4, 9, 10, 12 nM) and one worked example reports MS (ES+) m/z 887.6 (M+H)⁺, but I did not align the
+numbered structure tables to the mass tables, so **no specific Ki is attributed to M372049**. A plausible
+assignment is not an assignment.
+
+**Two dated nulls, both searched this round and both meaningful:**
+
+1. **Exogenous osteocrin has never been administered in a published study.** `kanai2017` states
+   preclinical work on OSTN administration was *"now ongoing in our laboratory"* — in 2017. Nine years,
+   no report located. Either unpublished, negative, or abandoned; the atlas should not assume the first.
+2. **No NPR3 antagonist has been tested against a bone or growth endpoint in any species.** Re-searched
+   with date bounds. The gap `the_compound_this_thread_needs` named is real for *pharmacological* agents,
+   even though `watanabetakano2021` and `kanai2017` supply the genetic precedent (CORR-150).
+
+**And a terminology warning the patent forces.** It cites AP-811 as an *"ANP-C receptor selective
+**agonist**"*; IUPHAR lists AP-811 as an **antagonist** (pKi 9.3). At a receptor with no cyclase domain,
+"agonist" and "antagonist" are convention-dependent — occupancy blocks clearance either way, but NPR-C is
+also Gi-coupled, so occupancy is not necessarily signalling-silent. **This atlas must not treat those two
+words as informative for NPR3 ligands.** `nishizawa2017` calls its own compound both a "blocker" and
+something with increased "NPR3 agonist activity" in the same paper.
