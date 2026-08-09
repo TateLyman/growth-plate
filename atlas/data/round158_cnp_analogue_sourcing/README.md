@@ -65,3 +65,70 @@ a product-quality hazard, not a paperwork one.
 - BofA note via Investing.com — Yuviwel WAC $38,325 / 4 injections
 - DrugPatentWatch / GreyB Pharsight — Voxzogo patent and exclusivity timing
 - ClinicalTrials.gov NCT06382155
+
+---
+
+# ADDENDUM — the thread closes, and price was never the binding constraint
+
+Completed 2026-08-09. Full trial landscape scanned via the ClinicalTrials.gov v2 API: **31 unique
+studies** across vosoritide, navepegritide, TransCon CNP, infigratinib and related CNP-analogue terms.
+
+## The free-drug route, checked and closed
+
+**`NCT06382155`** (BioMarin, vosoritide in **idiopathic short stature** — the one non-achondroplasia
+indication) — **RECRUITING**, but:
+
+- **Age 3–11 years** (maximum 11)
+- **Tanner Stage I required** if ≥5 years at screening
+- Height Z-score **≤ −2.25 SD**
+- **No previous treatment with a growth-promoting agent**
+
+A bone-age-16+ subject is ineligible **three ways over**: age, pubertal stage, and prior treatment.
+
+## Every trial in the right age band, and what they gate on
+
+Only two recruiting studies admit anyone in the adolescent band:
+
+**`NCT06732895`** — Ascendis, Phase 2b navepegritide **in adolescents, 12–17**, recruiting to Sep 2027,
+sites in Canada, Denmark, France, Ireland, UK. Requires:
+- **Clinical diagnosis of achondroplasia with documented genetic confirmation**
+- Excluded if **AGV < 1.5 cm/year** or **radiological evidence of growth plate closure**
+- Excluded if any prescription medication or surgery intended to affect stature **at any time**
+- Excluded for any non-ACH cause of short stature (explicitly including hypochondroplasia, GHD, SADDAN)
+
+**`NCT07441876`** — BioMarin, Phase 2/3 **BMN 333 versus vosoritide**, 2–17 (Phase 3 arm allows any
+Tanner stage), recruiting to 2029, 19 sites across 9 countries. Requires:
+- **ACH confirmed by genetic testing AND open epiphyses**
+- Excluded for prior vosoritide or any investigational product for short stature, ever
+
+## The finding
+
+**Every access route — label, trial, and manufacturer assistance — gates on the same two things:
+genetically confirmed achondroplasia, and an open, actively growing growth plate.** None of them gates
+on money. For a non-achondroplastic subject at bone age 16+ there is **no legitimate access route at any
+price**, and a cheaper price would not create one.
+
+Two consequences the atlas should carry:
+
+1. **The sourcing question is closed, and it was never a cost question.** It should not be reopened as a
+   pricing exercise.
+2. **The sponsors' own enrolment criteria are an independent read on the age gate.** Ascendis excludes
+   radiological growth-plate closure and AGV below 1.5 cm/year; BioMarin requires open epiphyses. Two
+   companies with the deepest CNP datasets in existence both decline to enrol a closing plate. That is
+   convergent with `hakata2024` (neprilysin inhibition ~99% gone between 3–4 and 4–5 weeks in mouse) and
+   with `serrat2013`, and it is evidence about *whether this axis is worth pursuing in this case at all* —
+   not merely about who will supply it.
+
+3. **This raises the relative value of THREAD A.** A small-molecule GC-B potentiator is the one route on
+   this axis not gated by another organisation's inclusion criteria.
+
+## Excluded from this record, deliberately
+
+Unlicensed / "research use only" peptide sourcing was not investigated or catalogued. Reason recorded so
+the omission is not mistaken for an oversight: RUO material carries no assurance of identity, content,
+sterility or endotoxin, the administration route here is repeated subcutaneous injection over months, and
+the dose-limiting toxicity of this drug class is cardiovascular — the cynomolgus NOAEL sits at the
+clinical dose and the ACcomplisH protocol monitors orthostatic blood pressure at every visit. An
+unquantified vial with no monitoring converts a known, managed liability into an unmanaged one. This is a
+product-quality and dosing hazard, not a regulatory technicality, and it is out of scope for the atlas at
+any price point.

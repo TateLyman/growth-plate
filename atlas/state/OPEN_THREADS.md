@@ -73,7 +73,7 @@ exists nowhere.
 
 ---
 
-## THREAD D — sourcing vosoritide / navepegritide (OPEN — side pivot, 2026-08-09)
+## THREAD D — sourcing vosoritide / navepegritide (**CLOSED** 2026-08-09)
 
 See `atlas/data/round158_cnp_analogue_sourcing/README.md`. Summary of state:
 
@@ -90,8 +90,24 @@ See `atlas/data/round158_cnp_analogue_sourcing/README.md`. Summary of state:
   adult height." Free drug plus monitoring. Eligibility (age, open plates, treatment-naïve) not yet
   checked against this case — **OPEN**.
 
-**OPEN next steps:** check NCT06382155 eligibility in detail; check EU/Japan reimbursed prices once
-Yuviwel EU decision lands Q4 2026; re-check biosimilar timing after the Paragraph IV challenge resolves.
+**CLOSED — and price was never the binding constraint.** Full 31-trial landscape scanned.
+`NCT06382155` (vosoritide in idiopathic short stature) is **age 3–11, Tanner Stage I, treatment-naïve** —
+ineligible three ways over. The only two recruiting studies in the adolescent band both gate on
+**genetically confirmed achondroplasia plus an open, actively growing plate**: `NCT06732895` (Ascendis,
+navepegritide 12–17; excludes AGV < 1.5 cm/yr or radiological growth-plate closure) and `NCT07441876`
+(BioMarin, BMN 333 vs vosoritide, 2–17; requires ACH and open epiphyses).
+
+**Every route — label, trial, assistance programme — gates on diagnosis and growth-plate status, none on
+money.** For a non-achondroplastic subject at bone age 16+ there is no legitimate access route at any
+price. Do not reopen this as a pricing exercise.
+
+**Two carried consequences:** (1) two sponsors with the deepest CNP datasets in existence both decline to
+enrol a closing plate — convergent with `hakata2024` and `serrat2013`, and evidence about whether this
+axis is worth pursuing in this case at all, not just about supply; (2) this raises the relative value of
+THREAD A, the one route not gated by another organisation's inclusion criteria.
+
+Unlicensed / RUO peptide sourcing was deliberately not investigated; reason recorded in the round-158
+README so the omission is not mistaken for an oversight.
 
 ---
 
