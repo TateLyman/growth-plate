@@ -11036,6 +11036,43 @@ gaps:
     and it must be asked in an UNDAMAGED animal with BONE LENGTH as the endpoint, because restoring normal growth
     after injury and exceeding normal growth are different results and the first has been mistaken for the second
     before.
+- gap_id: g_l12_npr_b_counterscreen_missing
+  type: known_unknown
+  layer: L12
+  tractability: 1
+  question: Does an NPR3-selective antagonist - M372049 or Nishizawa compound 23 - bind or activate NPR-B,
+    the receptor whose vascular activation sets the dose ceiling on the entire CNP axis?
+  why_it_matters: 'This single number gates the highest-value unbuilt compound in the atlas. The NPR3 route
+    survives every other objection - human biallelic NPR3 loss gives +3 to +4 SDS of height with NORMAL
+    blood pressure (CORR-151), NPR3 blockade lengthens bone including lumbar spine (kanai2017,
+    watanabetakano2021), the pairing with a CNP analogue is additive both genetically and
+    pharmacologically, and exposure has 95 to 381-fold headroom over target IC50 at the plate. What is not
+    known is whether blocking NPR3 systemically also engages NPR-B in vasculature, which is the failure
+    mode that killed every previous candidate on this axis.'
+  what_is_known: 'Compound 23 is hNPR3 IC50 0.079 nM against hNPR1 >1000 nM, and the ring-less prototype
+    C-ANP(4-23) is 0.51 nM against >1000 nM - so ring deletion buys >2000-fold over NPR-A, and NPR-A and
+    NPR-B both require the intact disulfide ring for activation while NPR-C does not. Structural analysis
+    by this atlas (npr3_selectivity_computed_from_structure) finds that at the sub-sites the candidates
+    actually occupy NPR-A is the MORE similar receptor and therefore the harder discrimination, which is
+    mildly favourable - but the whole-binding-site framing runs the other way.'
+  what_is_missing: 'A BINDING AND FUNCTIONAL COUNTER-SCREEN AGAINST NPR-B. Established by search at round
+    147 across four independent sources - nishizawa2017 full text assays hNPR1 and hNPR3 only; the
+    AstraZeneca patent WO 00/61631 tabulates ~156 compounds against the clearance receptor alone with no
+    NPR-A or NPR-B counter-screen; IUPHAR lists M372049 at NPR-C with an EMPTY affinity field; ChEMBL has
+    no record of the molecule. It is an experiment nobody has run, not a paper nobody has fetched.'
+  nearest_evidence: [nishizawa2017, veale_anpcr_wo0061631, pdb_1yk0, pubchem_m372049]
+  nearest_evidence_note: Selectivity data exist for every candidate against NPR1 and for none against NPR2.
+  discriminating_experiment: 'Two plates. (1) BINDING - radioligand or SPR displacement of labelled CNP
+    from HEK cells stably expressing human NPR-B, with M372049 and compound 23 across 1 pM to 10 microM,
+    C-ANP(4-23) as the ring-less comparator and unlabelled CNP as positive control. (2) FUNCTION - cGMP
+    accumulation in the same NPR-B line, testing BOTH agonism (compound alone) and antagonism (compound
+    against an EC80 of CNP), because a clearance-receptor ligand could in principle do either at a cyclase
+    receptor and binding alone will not say which. Readouts: CLEAN - no displacement below 1 microM and no
+    cGMP change, so selectivity over NPR-B is at least 10,000-fold and the route proceeds. DIRTY-BUT-SILENT
+    - measurable binding with no cGMP change, so the molecule occupies NPR-B without activating it, which
+    is tolerable and quantifiable as a margin. DISQUALIFYING - agonism at NPR-B at concentrations near the
+    plate exposure of 7.5 to 30 nM, which reproduces the vascular liability that closed every prior
+    candidate.'
 - gap_id: g_l12_fgfr_plus_cnp_combination
   type: known_unknown
   layer: L12

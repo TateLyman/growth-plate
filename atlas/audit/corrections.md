@@ -6091,3 +6091,50 @@ assignment is not an assignment.
 also Gi-coupled, so occupancy is not necessarily signalling-silent. **This atlas must not treat those two
 words as informative for NPR3 ligands.** `nishizawa2017` calls its own compound both a "blocker" and
 something with increased "NPR3 agonist activity" in the same paper.
+
+## CORR-157 — the NPR-B question was attacked computationally, and the three framings disagree (round 148)
+
+CORR-156 established the NPR-B selectivity number is unfetchable. Round 148 asked whether it is
+*computable* from the receptor sequences and PDB 1YK0, the only solved NPR-C:natriuretic-peptide complex.
+Partly, and the disagreement is the honest part.
+
+**The setup is favourable: both candidates mimic a visible epitope.** The bound fragment in 1YK0 reads
+`SCFGGRMDRIGAQSGLGCNSF`. The Nishizawa pharmacophore `Cys-Cha-Gly-Gly-Arg-Ile-Asp-Arg-Ile-Gly` maps
+residue-for-residue onto `CFGGRMDRIG`; M372049's `Ile-Asp-Arg-Ile-amide` core maps onto `MDRI`.
+
+| framing | NPR-C ~ NPR-A | NPR-C ~ NPR-B | direction |
+|---|---|---|---|
+| whole ECD | 37.5 % | **33.9 %** | favourable |
+| whole ANP binding site (30 residues, 4.5 Å) | 42.9 % | **50.0 %** | **unfavourable** |
+| Nishizawa core sub-site | 55.0 % | **50.0 %** | favourable |
+| M372049 core sub-site | 75.0 % | **64.3 %** | favourable |
+
+Higher identity = harder discrimination. The binding-site inversion is robust and *strengthens* as the
+site tightens (4.0 Å: 45.8 vs 60.0 %), converging only at 8 Å where it is no longer a site.
+
+**Why framing two probably doesn't apply:** it counts contacts made by the ANP **disulfide ring** and
+C-terminal tail, which a ring-less 11-mer or pentapeptide never touches — and those are where NPR-C and
+NPR-B resemble each other. That is a judgement about frame choice, not a result, and is recorded as such
+rather than resolved by preference.
+
+**Measured anchor for the mechanism:** ring deletion is what buys NPR-C selectivity — C-ANP(4-23) is
+>1000 nM at hNPR1 and 0.51 nM at hNPR3, >2000-fold, against native hANP at 0.094/0.058. NPR-A and NPR-B
+both require the intact ring for activation; NPR-C does not. **But nobody has run the ring-less prototype
+against NPR-B either** — every selectivity figure in this literature, for every compound, is NPR3 vs NPR1.
+
+**Two further computed results.**
+
+- **Exposure is not the limiting factor, which separates this route from the phosphatase arm.**
+  Interpolating farnum2006, M372049 (887 Da) partitions ~82 %, compound 23 (1357.5 Da, computed from
+  sequence) ~74 %. Applied to compound 23's measured blood levels, plate concentration is ~7.5–30 nM =
+  **95–381× its own NPR3 IC50**, against the phosphatase arm's 2.6–3.2× margin.
+- **M372049 physicochemistry reveals a property clash.** MW 887.0, cLogP 0.07, **TPSA 336 Å²**, 9 HBD,
+  **23 rotatable bonds**, net charge **zero** at pH 7.4. That is far outside oral drug space and sits
+  awkwardly against the patent's "promising oral activity" claim — but the same properties are
+  *neutral-to-favourable* for the actual target, since cartilage is a hydrated polyanionic gel rather than
+  a lipid barrier and NPR3 is cell-surface. Do not assume oral dosing is available.
+
+**Bottom line: the prior moves, the question does not close.** Graded **E** — sequence and structure
+inference, not binding data — and sequence identity cannot address the thing that actually matters, which
+is whether a ligand *activates* a cyclase receptor. New gap `g_l12_npr_b_counterscreen_missing`,
+tractability 1, with the two-plate experiment specified.
