@@ -1,6 +1,6 @@
 id: final_verdict_which_npr2_compounds_to_add
-name: FINAL VERDICT - the phosphatase arm comes OUT as a compound, the allosteric arm goes in as a PROBE
-  and not a therapy, and nothing on this axis is ready to administer
+name: FINAL VERDICT - the phosphatase arm is CLOSED on five independent lines, the allosteric arm goes in
+  as a PROBE and not a therapy, and nothing on this axis is ready to administer
 aliases:
 - which compounds to add
 - final answer NPR2 compounds
@@ -172,6 +172,35 @@ quantitative:
     GC-B activity is real, and it does not offset the BRENK thioamide alert, which is a metabolic-liability
     flag rather than an interference flag. What it does remove is the specific worry that this chemotype
     scores in the GC-B screen because it scores in everything.'
+- parameter: 'THE EXHAUSTIVE PHOSPHATASE SWEEP - FIVE INDEPENDENT LINES, ALL EMPTY'
+  value: 'LINE 1, ChEMBL: all 39 human Ser/Thr phosphatase targets, 1,801 molecules with any value - 16 at
+    the PP2A catalytic subunit, ONE at PP4 (fostriecin), ZERO with both. LINE 2, PubChem BioAssay,
+    independently curated: PPP4C has 18 assays but only ONE distinct compound ever tested across all of
+    them; PPP2CA has 32 assays and 70 compounds; the INTERSECTION IS ZERO. LINE 3, literature 2023-2026:
+    no PP2A inhibitor with any PP4 selectivity data and no new selective chemotype. LINE 4, the
+    fostriecin series itself: swingle2009 ten-analogue panel has no PP4 column and no PP4 number exists
+    for any analogue anywhere. LINE 5, the B56 substrate-recruitment route: scanning NPR2 with the
+    authoritative ELM regex for the PP2A-B56 docking site returns 4 matches against ~1.5 expected by
+    chance, ALL IN ORDERED REGIONS at mean AlphaFold pLDDT 74.6 to 93.3, and NONE within 40 residues of a
+    phosphosite (nearest 75) - while the phosphosite cluster S513-T529 is intrinsically disordered at mean
+    pLDDT 36.0'
+  unit: compound counts; motif counts; pLDDT
+  conditions: COMPUTED BY THIS ATLAS 2026-08-09 across ChEMBL API, PubChem PUG REST, Europe PMC, UniProt
+    P20594, ELM DOC_PP2A_B56_1 and AlphaFold AF-P20594-F1-model_v6.
+  species: not_applicable
+  source_ref: pubchem_ppp4c_coverage
+  atlas_derived: true
+  uncertainty: 'THE FIFTH LINE IS THE ONE THAT CLOSES THE ARM RATHER THAN MERELY REPORTING ITS EMPTINESS,
+    AND IT IS ALSO THE MOST INFERENTIAL. Lines 1 to 4 say nobody has done the work; line 5 says the most
+    promising remaining WAY to do it is unavailable, because PP2A substrate selectivity is set by the B
+    subunit and a B56-groove-directed agent was the only route to selectivity that does not require
+    knowing the catalytic enzyme. ABSENCE OF AN ACCESSIBLE CANONICAL MOTIF IS NOT ABSENCE OF RECRUITMENT:
+    B55 holoenzymes use a different and less well-defined mode, scaffolds and adaptors can substitute, and
+    a non-canonical or lower-affinity site would be missed by a regex. WHAT IT DOES ESTABLISH is that the
+    DESIGNABLE route is shut - you cannot build a B56-groove ligand for a substrate that does not dock in
+    the B56 groove. AND THE pLDDT ARGUMENT IS A PREDICTION, not a structure: the phosphosite region has
+    never been resolved experimentally in GC-B, and pLDDT 36 is a confident prediction of disorder rather
+    than a measurement of it.'
 localization:
 - 'all of this concerns NPR2/GC-B in growth-plate chondrocytes, with the vascular compartment as the
   liability'
@@ -193,15 +222,24 @@ claim_grades:
     Graded B rather than A because ChEMBL curation is incomplete and a pairing could exist in an
     uncurated figure; the comparative conclusion - no counter-screen series and no probe - is robust to
     that.'
+- claim: NPR2 has no accessible canonical PP2A-B56 docking motif, so the B56-directed route is unavailable.
+  grade: D
+  basis: 'Full-sequence scan with the authoritative ELM DOC_PP2A_B56_1 regex gives 4 matches against ~1.5
+    expected by chance, all in ordered regions (pLDDT 74.6-93.3) and none within 40 residues of the
+    phosphosite cluster, which is itself disordered at pLDDT 36. Graded D because a regex plus a
+    structure prediction cannot exclude non-canonical recruitment, and B55-type holoenzymes dock
+    differently - but it does shut the designable route.'
 - claim: The phosphatase arm should be removed as a compound arm.
-  grade: C
+  grade: B
   basis: 'Four independent blockers: the enzyme is unidentified and has resisted direct attack (SD-008);
     no compound exists and none can be cheaply made; PP2A-versus-PP4 selectivity has never been measured
     for anything, so the decisive question cannot be asked with existing reagents; and the incremental
     prize in a stack already containing an FGFR inhibitor is bounded at 1.42-fold against systemic pan-PPP
-    liability with hepatic dose-limiting toxicity. Graded C because it is a judgement integrating four
-    lines rather than a single measurement, and because the underlying MECHANISM retains the strongest
-    genetic proof on the axis.'
+    liability with hepatic dose-limiting toxicity - and, added at round 163, no accessible B56 docking
+    motif on NPR2, which shuts the one selective route that does not require knowing the enzyme. Upgraded
+    from C to B because the sweep is now exhaustive across two independently curated databases plus the
+    structural route, and because every line came back empty. The underlying MECHANISM is untouched and
+    retains the strongest genetic proof on the axis.'
 - claim: Compound 1 is the best molecule in the GC-B screen.
   grade: B
   basis: 'Independent re-analysis of all 253 GC-B-selective actives: 208 distinct scaffolds, 40 per cent
@@ -235,6 +273,16 @@ claim_grades:
     competitive INHIBITOR at the CATALYTIC site and explicitly not an activator. The site has a mapped
     residue and a validated point-mutant control and no compound.'
 key_refs:
+- ref_id: elm_af_npr2_b56scan
+  year: 2026
+  type: dataset
+  role: the B56 docking-motif scan that shuts the last selective route, plus independent corroboration
+    that Ser-489 is not an annotated phosphosite
+- ref_id: pubchem_ppp4c_coverage
+  year: 2026
+  type: dataset
+  role: PubChem independently reproduces the ChEMBL result - zero compounds tested against both PP2A and
+    PP4
 - ref_id: chembl_ppp_matrix
   year: 2026
   type: dataset

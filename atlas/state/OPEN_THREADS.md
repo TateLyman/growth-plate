@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 161.** Repo: 688 nodes, 358 gaps, 1347 refs, validator errors none.
+Last updated: **2026-08-09, after round 163.** Repo: 688 nodes, 358 gaps, 1349 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -93,7 +93,7 @@ by 40 kDa.
 
 ---
 
-## THREAD B — the phosphatase arm (**CLOSED as a compound arm** 2026-08-09; mechanism retained)
+## THREAD B — the phosphatase arm (**CLOSED** 2026-08-09, five independent lines; mechanism retained)
 
 Fostriecin has the right enzyme selectivity (PP2A 1.4 nM vs **PP5 60 µM measured**, `swingle2009`) and the
 wrong charge (dianion, partition 0.21). Candidate is a neutral phosphate-masked prodrug (~4.3× gain,
@@ -108,6 +108,22 @@ inhibitor is bounded by the **1.42× tonic, FGF-independent** component.
 **OPEN:** `g_l12_fostriecin_pp4_versus_pp2a_attribution` — re-run the `swingle2009` ten-analogue panel
 **with a PP4 column**. `theobald2013` shows PP4C knockdown alone reproduces fostriecin's cellular phenotype
 while PP2AC knockdown does not, so the dose ceiling and the intended effect may sit on different enzymes.
+
+**ROUND 163 — EXHAUSTIVELY CHECKED AND CLOSED. Five independent lines, all empty.**
+1. **ChEMBL** — 39 phosphatase targets, 1,801 molecules: 16 at PP2A catalytic, **1** at PP4, **0 both**.
+2. **PubChem BioAssay** (independently curated) — PPP4C: 18 assays, **one compound ever tested**;
+   PPP2CA: 32 assays, 70 compounds; **intersection zero**.
+3. **Literature 2023–2026** — no PP2A inhibitor with PP4 selectivity data, no new selective chemotype.
+4. **The fostriecin series itself** — no PP4 number for any analogue, anywhere.
+5. **The B56 route, and this is the one that shuts it.** PP2A substrate selectivity is set by the B
+   subunit, so a B56-groove-directed agent was the only selective route that *doesn't* require knowing
+   the catalytic enzyme. Scanning NPR2 with the authoritative **ELM DOC_PP2A_B56_1** regex: 4 matches vs
+   ~1.5 expected by chance, **all in ordered regions** (pLDDT 74.6–93.3), **none within 40 residues** of a
+   phosphosite (nearest 75) — while the phosphosite cluster **S513–T529 is disordered at pLDDT 36**. SLiMs
+   work in disordered segments; a match buried at pLDDT 90 is not a docking site.
+
+*Bonus:* UniProt annotates exactly the seven sites S513/T516/S518/S522/S523/S526/T529 — **Ser-489 is not
+among them**, independently corroborating `otto2022` and CORR-170.
 
 **ROUND 161 — REMOVED AS A COMPOUND ARM. Four independent blockers.** (1) enzyme unidentified and has
 resisted direct attack (SD-008); (2) no compound exists and none is cheaply makeable; (3) **PP2A-versus-PP4

@@ -5155,6 +5155,24 @@ refs:
     title: Evaluation and comparison of nine growth and development-based measures of pubertal timing
     type: primary
     year: 2024
+  elm_af_npr2_b56scan:
+    accession: ELME000425 DOC_PP2A_B56_1; AF-P20594-F1-model_v6; UniProt P20594
+    added: '2026-08-09'
+    first_author: ELM / AlphaFold DB / UniProt
+    one_line_finding: UniProt P20594 annotates EXACTLY SEVEN phosphosites on human GC-B - Ser513, Thr516, Ser518, Ser522,
+      Ser523, Ser526, Thr529 - immediately C-terminal to the transmembrane segment at 459-478. SER-489 IS NOT AMONG THEM.
+      Scanning the full 1047-residue sequence with the authoritative ELM regex for the PP2A-B56 docking site, ([LMFYWIC]..I.E)|(L..[IVLWC].E).,
+      returns FOUR matches against about 1.5 expected by chance at the ELM-reported motif probability of 0.00146. All four
+      - at positions 230, 604, 761 and 812 - lie in WELL-ORDERED regions with mean AlphaFold pLDDT 74.6 to 93.3, and NONE
+      is within 40 residues of any phosphosite (nearest is 75 residues away). The phosphosite cluster itself is INTRINSICALLY
+      DISORDERED, mean pLDDT 36.0.
+    ref_id: elm_af_npr2_b56scan
+    tier: T2
+    title: B56 docking-motif scan of NPR2 against ELM DOC_PP2A_B56_1, with AlphaFold pLDDT accessibility
+    type: dataset
+    url: http://elm.eu.org/elms/DOC_PP2A_B56_1
+    verify_by_hand: true
+    year: 2026
   ely2025:
     added: '2026-08-05'
     cited_by: 6
@@ -15898,6 +15916,20 @@ refs:
     url: https://pubchem.ncbi.nlm.nih.gov/compound/176516521
     verify_by_hand: true
     year: 2024
+  pubchem_ppp4c_coverage:
+    accession: genesymbol PPP4C; genesymbol PPP2CA
+    added: '2026-08-09'
+    first_author: NCBI PubChem BioAssay
+    one_line_finding: PubChem BioAssay lists 18 assays annotated to PPP4C but only ONE distinct compound has ever been tested
+      across all of them. PPP2CA has 32 assays and 70 distinct compounds tested. The INTERSECTION - compounds tested against
+      both - is ZERO. PPP2CB has 17 assays and PPP5C has 58.
+    ref_id: pubchem_ppp4c_coverage
+    tier: T2
+    title: PubChem BioAssay coverage of PPP4C versus PPP2CA
+    type: dataset
+    url: https://pubchem.ncbi.nlm.nih.gov/
+    verify_by_hand: true
+    year: 2026
   purcell2017:
     added: '2026-08-06'
     cited_by: 6
