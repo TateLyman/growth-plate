@@ -6370,3 +6370,58 @@ verified PP1/PP2A/PP4/**PP5** IC50 for fostriecin was obtained this round. The o
 retrieved is PP1-versus-PP2A with **no PP5 column**, and its fostriecin row parsed garbled — so no figure
 was recorded rather than a guessed one (the CORR-140/CORR-145 rule). **Fostriecin's PP5-sparing property is
 reputation, not a number this atlas has read**, and it is the first thing to get.
+
+## CORR-165 — fostriecin's PP5-sparing is now measured, and the topoisomerase-II liability this atlas carried is 12,000-fold off (round 153)
+
+CORR-164 named fostriecin the right chemotype and flagged, as its own weakest point, that no verified
+PP1/PP2A/PP4/PP5 numbers had been obtained — so PP5-sparing was **reputation**. Closed from the ChEMBL
+activity API (CHEMBL17377):
+
+| enzyme | fostriecin IC50 | verdict for this arm |
+|---|---|---|
+| **PP2A** | **3.4 nM** | the presumed target — hit |
+| PP4 | 3.0 nM | equipotent co-hit; **PPP4C has 0 height associations in 55** → neutral |
+| **PP5** | **>10,000 nM** | **>2,900-fold spared — the contraindicated enzyme** |
+| PP1 | 131,000 nM | ~38,500-fold spared; neutral anyway |
+| PP7 / calcineurin | >1,000 / 45,000 nM | spared |
+
+**Fostriecin hits the enzyme we want and spares the one the human genetics says not to touch.** That is the
+profile CORR-163 showed li2024a's compound 28a has exactly backwards.
+
+**And a liability this atlas has been carrying is wrong by four orders of magnitude.** Fostriecin's 1999
+phase I is titled *"the topoisomerase II catalytic inhibitor fostriecin"*, and I repeated topo II as an
+off-target that made it an unclean probe. **Topo II IC50 is 40,000 nM — about 12,000-fold weaker than
+PP2A.** At PP2A-effective concentrations it is not engaged. The topoisomerase framing is historical,
+predating appreciation of the phosphatase activity, and should be dropped from the liability column.
+
+## CORR-166 — the compound has the right pharmacology and the wrong charge, and the atlas already priced this exact problem on a different molecule
+
+Fostriecin is C19H27O9P, MW 430.4, and carries **one phosphate monoester → dianionic at pH 7.4**.
+
+Running the atlas's own ideal-Donnan function (from `endothall_experiment_design.py`, lesperance1992 fixed
+charge density −0.19 to −0.35 M against a 0.15 M bath) and combining with the farnum2006 size term:
+
+| compound | MW | charge | size term | Donnan | **net** |
+|---|---|---|---|---|---|
+| fostriecin | 430 | **−2** | 0.95 | **0.22** | **0.21** |
+| endothall | 186 | −2 | 1.00 | 0.22 | 0.22 |
+| M372049 | 887 | 0 | 0.82 | 1.00 | 0.82 |
+| compound 23 | 1358 | 0 | 0.74 | 1.00 | 0.74 |
+| vosoritide | 4100 | 0 | 0.47 | 1.00 | 0.47 |
+
+**Fostriecin pays the same charge penalty endothall pays, for the same reason** — and this atlas already
+documented the fix on that molecule. **LB-100 exists because endothall is a dianion:** it is a prodrug that
+masks the charge to get the active species delivered.
+
+**So the candidate is a neutral, phosphate-masked prodrug of fostriecin** — predicted to move plate
+partition from ~0.21 to ~0.95 at unchanged plasma exposure, roughly 4.5× more drug at the target for no
+change in systemic dose. It must be a **prodrug, not an analogue**: the phosphate is a binding pharmacophore
+mimicking the substrate phosphate, so deleting it should delete the activity. `jiang2025`'s nine-step
+modular route with **late-stage chemoenzymatic installation of the key pharmacophores** is exactly where a
+masked phosphate would be introduced.
+
+**Untested at every step, and the precedent cuts both ways:** round 134 established LB-100 hydrolyses with
+a 3.2–4.9 h half-life at 37 °C and that the prodrug delivers relatively little active species. The same
+arithmetic must be run before a fostriecin prodrug is believed. Add fostriecin's own 1.5 h half-life and
+Vdss of 0.086 L/kg — almost no tissue distribution — and continuous infusion is mandatory, which is the
+osmotic-pump format this atlas has already costed.

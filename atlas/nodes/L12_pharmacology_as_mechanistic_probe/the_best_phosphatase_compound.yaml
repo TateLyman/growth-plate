@@ -47,6 +47,32 @@ summary: 'THE QUESTION IS WHICH PHOSPHATASE COMPOUND TO CARRY, AND IT CANNOT BE 
   PP2A-selective agent with human exposure, its failure mode was supply rather than biology or toxicity,
   and it now has a synthesis designed for analogues. LB-100 remains the only phosphatase agent with an
   additivity experiment on bone, and it inhibits the contraindicated enzyme.
+  ROUND 153 CLOSED THE HOLE, AND FOSTRIECIN SELECTIVITY IS NOT REPUTATION ANY MORE - IT IS EXACTLY RIGHT.
+  ChEMBL curated activities for CHEMBL17377: PP2A 3.4 nM, PP4 catalytic 3.0 nM, PP5 GREATER THAN 10,000 nM,
+  PP7 greater than 1,000 nM, and in the canonical PPP panel 131,000 nM for PP1 and 45,000 for calcineurin,
+  with curated selectivity ratios above 100,000. THAT IS MORE THAN 2,900-FOLD PP2A OVER PP5 AND ABOUT
+  38,500-FOLD OVER PP1. Fostriecin hits the presumed target and SPARES THE ONE ENZYME THE HUMAN GENETICS
+  CONTRAINDICATES. Two further checks came back clean. The topoisomerase II activity that gives the 1999
+  trial its title is 40,000 nM - about 12,000-fold weaker than PP2A - so it is not an off-target at
+  PP2A-effective concentrations and this atlas should stop listing it as one. And PPP4C, the one enzyme
+  fostriecin hits equipotently and unavoidably, has 55 catalogued GWAS associations and ZERO for height,
+  so PP4 co-inhibition is not a height liability.
+  BUT THE MOLECULE HAS THE RIGHT PHARMACOLOGY AND THE WRONG CHARGE, AND THIS ATLAS HAS ALREADY PRICED THAT
+  EXACT PROBLEM. Fostriecin is C19H27O9P, MW 430.4, cLogP 1.06, and carries ONE PHOSPHATE MONOESTER, so it
+  is DIANIONIC at pH 7.4. Running the atlas own ideal-Donnan model at the lesperance1992 fixed charge
+  density: a dianion partitions into cartilage at 0.14 to 0.30 of free plasma. Combining with the
+  farnum2006 size term, fostriecin nets about 0.21 - which is the SAME PENALTY ENDOTHALL PAYS, 0.22, and
+  for the same reason. Against neutral candidates at 0.82 for M372049 and 0.74 for compound 23, the charge
+  costs roughly four-fold.
+  AND THE FIX IS THE ONE THIS ATLAS ALREADY DOCUMENTED ON THE OTHER MOLECULE. LB-100 EXISTS BECAUSE
+  ENDOTHALL IS A DIANION - it is a prodrug that masks the charge to get the active species delivered.
+  THE CANDIDATE IS THEREFORE A NEUTRAL, PHOSPHATE-MASKED PRODRUG OF FOSTRIECIN, which should take plate
+  partition from about 0.21 to about 0.95 at the same plasma concentration - roughly four-and-a-half-fold
+  more drug at the target for no change in systemic exposure. It must be a PRODRUG rather than an analogue,
+  because the phosphate is a binding pharmacophore that mimics the substrate phosphate; deleting it would
+  be expected to delete the activity. And the route to make it now exists: jiang2025 is nine steps,
+  modular, with LATE-STAGE CHEMOENZYMATIC INSTALLATION OF THE KEY PHARMACOPHORES, which is precisely the
+  step at which a masked phosphate would be introduced.
   AND NOTHING HERE TOUCHES THE ARM DEEPER PROBLEM. CORR-125 stands: the 1.42-fold restraint on NPR2 is
   TONIC and FGF-independent, so a systemic phosphatase inhibitor lifts a standing brake wherever NPR2 and
   the phosphatase coexist, including vasculature. Selectivity between PPP enzymes does not address
@@ -128,6 +154,51 @@ quantitative:
     over-reading the correction: this is one 20-patient trial that never reached MTD, so its DLT profile is
     an incomplete picture of what fostriecin does at a tolerated ceiling, and chung2017 may be drawing on
     fostriecin data this atlas has not read.'
+- parameter: 'FOSTRIECIN ENZYME SELECTIVITY, MEASURED - IT SPARES THE CONTRAINDICATED ENZYME'
+  value: 'ChEMBL curated IC50 for CHEMBL17377: PP2A 3.4 nM; PP4 catalytic subunit 3.0 nM; PP5 GREATER THAN
+    10,000 nM (second record greater than 1,000); PP7 greater than 1,000 nM; canonical PPP panel also
+    carries 1.5, 3.0, 10, 45,000 (calcineurin) and 131,000 nM (PP1), with curated selectivity ratios
+    greater than 100,000 and greater than 1,000,000. SO PP2A OVER PP5 IS GREATER THAN 2,900-FOLD and PP2A
+    over PP1 about 38,500-fold. DNA topoisomerase 2 IC50 40,000 nM - about 12,000-fold weaker than PP2A.
+    PPP4C has 55 catalogued GWAS associations and ZERO for height'
+  unit: IC50 in nM; fold selectivity; association counts
+  conditions: ChEMBL activity API and GWAS Catalog download, both retrieved by this atlas 2026-08-09.
+  species: not_applicable
+  source_ref: chembl_fostriecin
+  atlas_derived: true
+  uncertainty: 'THIS CLOSES THE HOLE THE PREVIOUS VERSION OF THIS NODE FLAGGED AS ITS OWN WEAKEST POINT -
+    fostriecin PP5-sparing is now a labelled number rather than reputation. TWO CAVEATS ON PROVENANCE.
+    These are CURATED aggregations of primary literature this atlas has not read directly, and several
+    rows are assigned only to an unchecked target, so the PP1 and calcineurin figures are matched to the
+    canonical panel by value rather than read from a labelled record - the PP5 and PP4 figures ARE
+    explicitly target-labelled and they are the two that decide the question. AND PP5 IS A GREATER-THAN
+    BOUND, not a measurement, so the true selectivity could be far larger or could sit just above 10 microM.
+    THE PP4 ABSENCE IS AN ABSENCE: PPP4C is a constrained essential gene, so zero height associations is at
+    least as consistent with intolerance to common variation as with irrelevance, and it bounds the HEIGHT
+    risk only - PP4 has DNA-damage-response roles a height GWAS cannot see.'
+- parameter: 'THE RIGHT PHARMACOLOGY WITH THE WRONG CHARGE - AND THE FIX THIS ATLAS ALREADY DOCUMENTED'
+  value: 'Fostriecin is C19H27O9P, MW 430.4, cLogP 1.06, TPSA 153.8, with ONE PHOSPHATE MONOESTER and
+    therefore DIANIONIC at pH 7.4. Ideal Donnan partition of a dianion at the lesperance1992 fixed charge
+    density of minus 0.19 to minus 0.35 M against a 0.15 M bath is 0.30 to 0.14 of free plasma. Combined
+    with the farnum2006 size term at 430 Da (0.95), NET CARTILAGE PARTITION IS ABOUT 0.21 - against 0.22
+    for endothall, 0.82 for the neutral M372049, 0.74 for neutral compound 23 and 0.47 for vosoritide.
+    Masking the phosphate as a neutral prodrug removes the Donnan term and takes the net to about 0.95'
+  unit: fraction of free plasma concentration
+  conditions: COMPUTED BY THIS ATLAS 2026-08-09 using the ideal-Donnan function from
+    endothall_experiment_design.py with lesperance1992 fixed charge density, and log-linear interpolation
+    of the farnum2006 size anchors. Charge state assigned from the PubChem structure via RDKit.
+  species: not_applicable
+  source_ref: chembl_fostriecin
+  atlas_derived: true
+  uncertainty: 'THE FOUR-AND-A-HALF-FOLD PRIZE IS A MODEL OUTPUT, NOT A MEASUREMENT, and it inherits every
+    assumption the endothall Donnan work already carries: ideal Donnan with no activity coefficients, no
+    matrix binding, cartilage water at bath ionic strength, and bovine or calf fixed charge density applied
+    to another species. The size and charge terms are also multiplied as if independent, which they are not.
+    THE PRODRUG STEP CARRIES ITS OWN UNTESTED ASSUMPTION - that the phosphate can be masked and unmasked
+    with useful kinetics. The LB-100 precedent is encouraging and also cautionary: this atlas established
+    at round 134 that LB-100 hydrolyses with a half-life of 3.2 to 4.9 hours at 37 degrees and that the
+    prodrug delivers relatively little active species. A fostriecin prodrug would need the same arithmetic
+    run before it is believed.'
 localization:
 - 'the intended site of action is the seven juxtamembrane serines and threonines of NPR2 in growth plate
   chondrocytes'
@@ -156,13 +227,28 @@ claim_grades:
   basis: 'It is optimised 38-fold FOR PP5 over PP2A - PP2A 33.8 microM against PP5 0.9 microM - which is
     selectivity for the one enzyme the human genetics argues against inhibiting. CORR-141 correctly recorded
     that the scaffold can be tuned and never checked which way this tuning went.'
-- claim: Fostriecin is the best available compound for this arm.
+- claim: Fostriecin has the enzyme selectivity this arm requires - potent PP2A, sparing PP5.
+  grade: B
+  basis: 'UPGRADED FROM D AT ROUND 153 once the numbers were obtained. ChEMBL curated IC50s give PP2A
+    3.4 nM against PP5 GREATER THAN 10,000 nM - more than 2,900-fold - and PP1 at 131,000 nM. PP4 is hit
+    equipotently at 3.0 nM but PPP4C has zero height associations in 55, so that co-hit is not a height
+    liability. Not A because the PP5 figure is a greater-than bound rather than a measurement, and because
+    the values are curated aggregations of primary literature not read directly here.'
+- claim: Fostriecin as the free acid is the compound to use.
   grade: D
-  basis: 'It is the only PP2A-selective agent ever given to humans, its phase I never reached MTD and
-    stopped for drug supply, and jiang2025 has now solved the manufacturability that killed it with a
-    nine-step route built for analogues. AGAINST: no verified PP1/PP2A/PP4/PP5 numbers were obtained, so its
-    PP5-sparing property is reputation; half-life is 0.36 to 1.51 h; it carries a topoisomerase II
-    off-target; hepatic toxicity reached grade 4; and it has no bone endpoint in any species.'
+  basis: 'NO - right pharmacology, wrong charge. The phosphate monoester makes it DIANIONIC at pH 7.4, and
+    the atlas own Donnan model puts a dianion at 0.14 to 0.30 of free plasma in cartilage, netting about
+    0.21 with the size term - the same penalty endothall pays, against 0.82 for a neutral molecule of
+    similar size. Add a 1.5 h half-life, a Vdss of 0.086 L/kg indicating almost no tissue distribution,
+    grade 4 reversible hepatotoxicity, and no bone endpoint in any species.'
+- claim: The candidate is a neutral, phosphate-masked prodrug of fostriecin.
+  grade: E
+  basis: 'DESIGNED HERE, NOT TESTED. It follows from three things the atlas holds: fostriecin has the right
+    enzyme profile, its dianionic phosphate costs about four-fold in cartilage partition, and LB-100 already
+    exists as a charge-masking prodrug of the dianion endothall for exactly this reason. jiang2025 supplies
+    a nine-step modular route with late-stage pharmacophore installation, which is where a masked phosphate
+    would go. It must be a prodrug rather than an analogue because the phosphate is a binding pharmacophore.
+    UNTESTED AT EVERY STEP, and the LB-100 precedent warns that a prodrug can deliver little active species.'
 - claim: The renal dose-limiting toxicity is a PP2A class effect that no compound escapes.
   grade: D
   basis: 'WEAKENED. The atlas carried this from chung2017. The primary fostriecin phase I reports a HEPATIC
