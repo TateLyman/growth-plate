@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 176.** Repo: 699 nodes, 367 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 177.** Repo: 701 nodes, 367 gaps, 1380 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,61 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 177 — SCREEN RUN. **Dexamethasone does not compute — and the reason is structural.** The screen returned the HUMAN ANCHOR instead.
+
+`the_yield_screen_first_pass` + `the_human_anchor_for_yield`.
+
+**① THE HUMAN ANCHOR — the decomposition holds in man, at the same number.** `kember1976`, human distal
+femur, Harpenden Growth Study radiographs + Institute of Orthopaedics histology:
+
+| | birth–2y | 13–14y | fall |
+|---|---|---|---|
+| amplifying compartment (cells/column) | 49.6 | 25.3 | **1.96×** |
+| terminal hypertrophic cell height (µm) | 34.4 | 31.3 | **1.10×** |
+
+→ **88% of the log fall is compartment size.** Mouse (between-bone) **88%**. Rabbit (drug) **91%**.
+**Three species, four contrast types, no shared data, same answer.**
+
+**Terminal cell height is conserved across SPECIES too** — human 25–39 µm, mouse 18–33, rat 18–38, across
+a **tenfold** difference in cycle time. Fourth independent line.
+
+**② THE NUMBER THAT RESCALES EVERYTHING.** Human distal femur at 5–8y: 1.4 cm/yr = 38 µm/day ÷ 33 µm cell
+= **1.2 new cells/column/day**, across ~24 proliferating cells → **cell cycle 20 DAYS. Rodent is 2.**
+Round 174 independently computed mouse at **10.8 and 8.33** cells/column/day — Kember's tenfold factor,
+recovered from different data fifty years later.
+**A five-week rodent experiment spans ~17 proliferative cycles; five weeks in a human spans fewer than
+two.** Every kinetic result this programme rests on was measured on the fast clock. Kember says it
+himself for this exact tissue: *"it is unwise to extrapolate the findings in this tissue from mouse to
+man"* — and names a structural reason: in man an **inert zone 0.5–1.2 mm** lies between the proliferating
+cells and the epiphysial vessels, which rodents do not have.
+
+**③ THE SCREEN'S NEGATIVE, WITH A PRECISE DIAGNOSIS.** A yield needs a **resting-zone CELL COUNT**. The
+field reports **resting-zone HEIGHT**. `gafni2001` has growth rate + terminal cell size + zone heights and
+**never counts a resting-zone cell**; `weise2001` measures six numerator terms and uses the resting zone
+only as the landmark for cell position 1. The three datasets that *do* carry the denominator — `lui2018`,
+`schrier2006`, `nilsson2014` — are the three already used. **And height cannot be substituted for count on
+dexamethasone specifically**, because `schrier2006` shows it *raises* RZ cell number (P=0.016) without a
+matching height change: the substitution fails hardest on the agent it was wanted for.
+**This corrects round 176's optimism** — the numerator is common, the denominator is rare.
+
+**④ METHOD VALIDATED, AND IT ISN'T MINE.** `gafni2001` names the round-174 construction explicitly:
+*"proliferation rate … assessed by dividing the growth rate by the height of the terminal hypertrophic
+cell **according to the method of Kember and Sissons**."* Standard since 1976. **What is novel is bolting a
+resting-zone denominator onto it.**
+
+**⑤ AND gafni2001 CONTAINS THE BEST DURATION RESULT IN THE ATLAS, TWO-THIRDS RUN.** Five weeks of
+dexamethasone → senescent curves **right-shifted ~3 weeks** (P<0.001 GP and HZ height, P<0.005 PZ); at 16
+weeks recovery **88% of control plates fused vs 14% treated**; femoral deficit **17.4 mm → 1.6 mm**.
+**Growth was still running in the treated arm and finished in the controls when the study stopped.**
+The sign of the final length difference is **unmeasured** — and it is the same question as
+`g_l2_cycling_the_progenitor_pool`, far closer to answered than a feeding experiment would get.
+
+**SCREEN CONTINUES WITH A SHARPER CRITERION: search for the DENOMINATOR, not the agent.** Any study with
+resting-zone cell counts + a growth rate is computable whatever it was testing; any study with
+resting-zone height is not, however relevant its drug.
+
+---
 
 ### ROUND 176 — **THE FIRST YIELD UNDER A DRUG.** Schrier proposed it in 2006. It now has a number.
 

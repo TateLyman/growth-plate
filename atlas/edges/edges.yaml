@@ -20942,3 +20942,78 @@ edges:
     recovers to unity on washout by both constructions. The pool is NOT. So what oestrogen banks is a
     smaller denominator, not a permanently worse conversion.
   traversal_usable: true
+- edge_id: e01307
+  source: the_human_anchor_for_yield
+  target: yield_is_amplification_not_cell_size
+  relation: required_for
+  sign: +
+  magnitude: human amplifying compartment falls 1.96-fold across growth against terminal cell height 1.10-fold
+    - 88 per cent of the log fall is compartment size
+  context: human distal femur, kember1976 Table I, same columns across birth to 14 years; against 88 per
+    cent in mouse from a between-bone contrast and 91 per cent in rabbit from a drug
+  evidence_tier: T1
+  refs:
+  - kember1976
+  - lui2018
+  - nilsson2014
+  confidence: C
+  notes: THREE SPECIES, FOUR CONTRAST TYPES, NO SHARED DATA, SAME ANSWER. And the conserved term is conserved
+    across species too - terminal cell height 25-39 um human, 18-33 mouse, 18-38 rat, across a tenfold
+    difference in proliferative cycle time.
+  traversal_usable: true
+- edge_id: e01308
+  source: the_human_anchor_for_yield
+  target: amplification_is_transit_time
+  relation: correlates_with
+  sign: unknown
+  magnitude: human proliferative cycle about 20 days against about 2 days in rodent; 1.2 new cells per
+    column per day in human against 10.8 and 8.33 in mouse
+  context: the scaling factor for every kinetic result the yield programme rests on, all of which were
+    measured in mouse
+  evidence_tier: T1
+  refs:
+  - kember1976
+  confidence: B
+  notes: A FIVE-WEEK RODENT EXPERIMENT SPANS ROUGHLY SEVENTEEN PROLIFERATIVE CYCLES; FIVE WEEKS IN A HUMAN
+    SPANS FEWER THAN TWO. Kember states the warning himself for this exact tissue and names a structural
+    reason - in man an inert zone 0.5-1.2 mm thick lies between the proliferating cells and the epiphysial
+    vessels, which rodents do not have. Times, doses and washout intervals do not transfer.
+  traversal_usable: true
+- edge_id: e01309
+  source: the_yield_screen_first_pass
+  target: the_first_yield_under_a_drug
+  relation: correlates_with
+  sign: '-'
+  magnitude: only 3 of the 5 most relevant datasets carry a resting-zone CELL COUNT; the other two report
+    resting-zone HEIGHT
+  context: first pass of the literature screen the round-176 node opened
+  evidence_tier: T2
+  refs:
+  - gafni2001
+  - weise2001
+  - schrier2006
+  confidence: B
+  notes: CORRECTS THE ROUND-176 OPTIMISM. The numerator is common and the DENOMINATOR is rare. And height
+    cannot be substituted for count on dexamethasone specifically, because schrier2006 shows it RAISES
+    resting-zone cell number without a matching height change - the substitution fails hardest on the
+    agent it was wanted for.
+  traversal_usable: true
+- edge_id: e01310
+  source: the_yield_screen_first_pass
+  target: delayed_senescence_hypothesis
+  relation: correlates_with
+  sign: +
+  magnitude: five weeks of dexamethasone right-shifted the senescent curves by about three weeks; 88 per
+    cent of control plates fused at 16 weeks recovery against 14 per cent treated; femoral deficit 17.4
+    mm falling to 1.6 mm
+  context: rabbit distal femur, growth-inhibition-then-recovery design - the strongest duration result
+    in the atlas, and the study stopped before final length
+  evidence_tier: T1
+  refs:
+  - gafni2001
+  confidence: C
+  notes: THE EXPERIMENT WAS TWO-THIRDS RUN. Growth was still running in the treated arm and finished in
+    the controls when the study ended at 16 weeks of recovery, so the sign of the final length difference
+    is unmeasured. It is the same question as g_l2_cycling_the_progenitor_pool and gafni2001 is far closer
+    to answering it than a feeding experiment would be.
+  traversal_usable: true

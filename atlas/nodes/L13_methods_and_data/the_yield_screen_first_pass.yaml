@@ -1,0 +1,178 @@
+id: the_yield_screen_first_pass
+name: THE YIELD SCREEN, FIRST PASS - dexamethasone does not compute, and the reason is structural - the
+  field measures resting-zone HEIGHT and a yield needs resting-zone CELLS
+aliases:
+- yield screen
+- can dexamethasone yield be computed
+- why the yield is uncomputable
+- resting zone height versus cell count
+- gafni2001 three week right shift
+- round 177
+type: method
+layer: L13
+stub: false
+summary: 'THE SCREEN WAS OPENED TO FIND AN AGENT THAT RAISES AMPLIFICATION, WITH DEXAMETHASONE AS THE
+  PRIORITY TARGET BECAUSE schrier2006 SHOWS IT MOVES THE EXCHANGE RATE OPPOSITE TO OESTROGEN. IT DOES NOT
+  COMPUTE, AND THE REASON IS WORTH MORE THAN THE ANSWER WOULD HAVE BEEN.
+
+  THE STRUCTURAL FINDING. A yield needs a numerator in bone or cells and a DENOMINATOR IN RESTING-ZONE
+  CELLS. Almost the entire field reports the resting zone as a HEIGHT IN MICROMETRES, not as a count.
+  gafni2001 measures resting-zone height, proliferative-zone height, hypertrophic-zone height, terminal
+  hypertrophic cell height and growth rate - everything except the one quantity the denominator needs.
+  weise2001 measures growth rate, proliferative and hypertrophic cells per column, terminal hypertrophic
+  cell height, column density and BrdU index by cell position - and treats the resting zone only as the
+  anatomical landmark from which cell position 1 is counted. NEITHER PAPER COUNTS A RESTING-ZONE CELL. The
+  three datasets that do - lui2018, schrier2006 and nilsson2014 - are the three the atlas has already used,
+  and that is not a coincidence.
+
+  AND DEXAMETHASONE IS THE WORST POSSIBLE AGENT TO SUBSTITUTE HEIGHT FOR COUNT ON. It would be tempting to
+  use gafni2001''s resting-zone HEIGHT as a proxy denominator. That is invalid HERE SPECIFICALLY, because
+  schrier2006 measured what dexamethasone does to the two quantities separately: it RAISED resting-zone
+  cell NUMBER (P = 0.016) while lowering the labelling index. An agent that changes cell number without a
+  matching change in zone height has changed the cell DENSITY, and a height-based denominator would then
+  be wrong by exactly the amount of the effect being measured. The substitution fails hardest on the agent
+  it was wanted for.
+
+  WHAT THE SCREEN RETURNED INSTEAD, AND IT IS BIGGER. kember1976 gives the HUMAN ANCHOR - see
+  the_human_anchor_for_yield. The decomposition holds in man at 88 per cent, terminal cell height is
+  conserved across three species, and the human proliferative cycle is 20 days against 2 in rodent.
+
+  A METHODOLOGICAL VALIDATION THIS ATLAS DID NOT KNOW IT HAD. Round 174 computed cell production per
+  column as GROWTH RATE DIVIDED BY TERMINAL HYPERTROPHIC CELL HEIGHT, treating it as an obvious
+  construction. gafni2001 uses precisely that and names it: "proliferation rate (new cells per chondrocyte
+  column per day) was assessed by dividing the growth rate by the height of the terminal hypertrophic cell
+  according to the method of Kember and Sissons". It is the standard construction of the classical cell-
+  kinetics literature, it is the same method kember1976 used for the human number, and this atlas
+  reinvented it. The round-174 and round-176 tools are therefore not novel arithmetic - they are the
+  standard method with a resting-zone denominator bolted on, which IS the novel part.
+
+  AND ONE RESULT IN gafni2001 IS THE BEST DURATION EVIDENCE IN THE ATLAS AND IS INCOMPLETELY EXPLOITED.
+  Five weeks of dexamethasone in young rabbits, then sixteen weeks of recovery. The senescent curves for
+  growth plate height, hypertrophic zone and proliferative zone were RIGHT-SHIFTED relative to controls
+  (P < 0.001, P < 0.001, P < 0.005) AND THE MAGNITUDE OF THE SHIFT WAS APPROXIMATELY THREE WEEKS. At
+  sixteen weeks of recovery, 88 PER CENT OF CONTROL DISTAL FEMORAL PLATES HAD FUSED AGAINST 14 PER CENT OF
+  THE TREATED ONES. The femoral length deficit at the end of the arrest was 17.4 mm and had fallen to 1.6
+  mm by the end of recovery. So: five weeks of growth inhibition bought three weeks of senescence delay,
+  left the plates overwhelmingly still open when controls had closed, and cost 1.6 mm at the last
+  measurement - WITH GROWTH STILL RUNNING IN THE TREATED ANIMALS AND THE STUDY ENDING THERE. THE
+  EXPERIMENT WAS NOT FOLLOWED TO FINAL LENGTH. Whether the treated animals ultimately overtook controls is
+  the single most valuable unmeasured endpoint on the duration arm, and the experiment was two-thirds run.
+
+  THE SCREEN CONTINUES WITH A SHARPER INCLUSION CRITERION. Do not search for agents; search for the
+  DENOMINATOR. Any study reporting resting-zone CELL COUNTS alongside a growth rate is a computable yield
+  regardless of what it was testing, and studies reporting resting-zone height are not, regardless of how
+  relevant their agent is.'
+quantitative:
+- parameter: right-shift of the senescent curves after five weeks of dexamethasone
+  value: '3'
+  unit: weeks
+  conditions: rabbit distal femur, dexamethasone 0.5 mg/kg/day subcutaneously for 5 weeks from 5 weeks of
+    age, then 16 weeks of recovery; shift significant for growth plate height and hypertrophic zone
+    (P<0.001) and proliferative zone (P<0.005)
+  species: rabbit
+  source_ref: gafni2001
+  uncertainty: 'the strongest duration result in the atlas - five weeks of growth inhibition bought
+    approximately three weeks of senescence delay'
+- parameter: epiphyseal fusion of the distal femur at 16 weeks of recovery, control versus dexamethasone
+  value: 88 versus 14
+  unit: '%'
+  conditions: same experiment; femoral length deficit 17.4 mm at end of arrest falling to 1.6 mm at end of
+    recovery, with growth still running in the treated animals when the study ended
+  species: rabbit
+  source_ref: gafni2001
+  uncertainty: 'THE STUDY WAS NOT FOLLOWED TO FINAL LENGTH. Whether the treated animals overtook controls
+    is unmeasured and is the most valuable missing endpoint on the duration arm'
+- parameter: studies reporting a resting-zone CELL COUNT rather than a resting-zone HEIGHT
+  value: 3 of the 5 examined
+  unit: count
+  conditions: 'computable - lui2018 (mouse, cells per 500 micrometres width), schrier2006 (rabbit, cells
+    per mm), nilsson2014 (rabbit, cells per mm width). NOT computable - gafni2001 and weise2001, both of
+    which report resting-zone HEIGHT or use the zone only as an anatomical landmark'
+  species: multiple
+  source_ref: gafni2001
+  uncertainty: the three computable datasets are the three the atlas has already used, which is why no new
+    yield emerged from the first pass
+localization:
+- 'the resting zone: the compartment whose CELL COUNT is the missing denominator across almost the whole
+  literature'
+human_evidence: indirect
+human_evidence_note: 'This is a methods node about what the literature measures. Its human content is the
+  observation that kember1976, the one human dataset with the numerator terms, also reports the resting
+  zone as a WIDTH - so the human yield fails for exactly the same structural reason as the animal ones.'
+species_basis:
+- rabbit
+- mouse
+- human
+translation_risk: not_applicable
+translation_risk_reason: A methods and bookkeeping node recording what a literature screen found and why
+  it failed, not a biological claim.
+confidence: B
+claim_grades:
+- claim: The dexamethasone yield can be computed from published data.
+  grade: X
+  basis: 'NO. schrier2006 has the resting-zone cell count but no growth rate and no terminal cell size -
+    which the atlas own round-26 document had already noted. gafni2001 has the growth rate and the terminal
+    cell size but reports the resting zone as a HEIGHT. They are different experiments, so the terms cannot
+    be combined, and substituting height for count fails hardest on dexamethasone specifically because
+    schrier2006 shows it RAISES resting-zone cell number (P = 0.016) without a matching height change.'
+- claim: Most of the growth-plate literature could yield a yield if someone divided.
+  grade: X
+  basis: 'THIS WAS THE ROUND-176 CLAIM AND THE SCREEN CORRECTS IT. The optimistic version said three
+    measurements suffice and many papers report all three. In practice the field reports the resting zone
+    as a HEIGHT IN MICROMETRES, not a cell count - two of the five most relevant papers examined here do
+    exactly that. The numerator is widely available; the denominator almost never is.'
+- claim: Growth rate divided by terminal hypertrophic cell height is a valid measure of cell production
+    per column.
+  grade: A
+  basis: 'It is the standard construction of the classical cell-kinetics literature and gafni2001 names it
+    explicitly as "the method of Kember and Sissons". kember1976 uses it for the human number. This atlas
+    arrived at it independently in round 174 and should record that it is standard rather than novel - what
+    is novel is dividing by a resting-zone denominator.'
+- claim: Five weeks of growth inhibition delays growth plate senescence by about three weeks.
+  grade: C
+  basis: 'gafni2001 measured the right-shift of the senescent curves directly, at P<0.001 for growth plate
+    and hypertrophic zone heights and P<0.005 for proliferative zone, with 88 per cent of control plates
+    fused at 16 weeks against 14 per cent of treated. C not B because it is one experiment in one species
+    and the shift is read from curve fitting rather than from a single measured interval.'
+- claim: Transient growth inhibition nets more final length than uninhibited growth.
+  grade: E
+  basis: 'THE EXPERIMENT THAT WOULD ANSWER THIS WAS TWO-THIRDS RUN AND STOPPED. gafni2001 shows the femoral
+    deficit falling from 17.4 mm to 1.6 mm while the treated plates remained overwhelmingly unfused and the
+    controls had closed - so growth was still running in one arm and finished in the other when the study
+    ended at 16 weeks of recovery. The sign of the final difference is unmeasured. This is the same
+    question as g_l2_cycling_the_progenitor_pool and gafni2001 is much closer to answering it than a
+    feeding experiment would be.'
+key_refs:
+- ref_id: gafni2001
+  year: 2001
+  type: primary
+  role: the dexamethasone target - has the numerator terms, reports the resting zone as a height, and
+    contains a three-week senescence delay with an unmeasured final-length endpoint
+- ref_id: schrier2006
+  year: 2006
+  type: primary
+  role: has the resting-zone cell count and no numerator, and shows why height cannot be substituted for
+    count under dexamethasone specifically
+- ref_id: weise2001
+  year: 2001
+  type: primary
+  role: the oestrogen keystone - measures six numerator terms and never counts a resting-zone cell
+- ref_id: kember1976
+  year: 1976
+  type: primary
+  role: the source of the standard construction, and the human dataset that fails for the same structural
+    reason
+- ref_id: nilsson2014
+  year: 2014
+  type: primary
+  role: one of only three datasets carrying the denominator, and the source of the only yield-under-a-drug
+open_questions:
+- g_l2_yield_screen_of_the_published_literature
+- g_l2_cycling_the_progenitor_pool
+- g_l2_raise_the_yield_per_progenitor
+contradicts:
+- 'CORRECTS the round-176 optimism in the_first_yield_under_a_drug, which claimed that three measurements
+  suffice and that many published papers report all three. The numerator is common; the DENOMINATOR - a
+  resting-zone cell count - is rare, and its absence is why the first pass of the screen returned no new
+  yield for any agent.'
+last_verified: '2026-08-09'
