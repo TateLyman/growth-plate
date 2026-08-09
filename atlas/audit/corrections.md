@@ -6524,3 +6524,70 @@ and low activity — whereas **vicinal (double adjacent) glutamates give a near-
 Kₘ**. Every length figure this arm rests on comes from a single-glutamate 7E receptor. **If single
 glutamates undershoot, the true ceiling of full phosphorylation protection is higher than +4.3–8.8% femur,
 not lower.** Measured at GC-A; not yet measured at GC-B.
+
+---
+
+## CORR-171 — round 155 named a compound that must be built, while a real GC-B PAM already existed in the atlas
+
+**Round 156. Self-caught on the next search.**
+
+Round 155 concluded: *"the compound this project actually needs is a GC-B-selective analogue of the
+andresen2023 chemotype, re-optimised from Thr640 to Ile624."* Every clause of that is defensible — and it
+was written as though the GC-B allosteric field were empty. **It is not.** `ma2024` — already in this
+atlas, already cited in `npr2_positive_allosteric_modulation` — is **MCUF-42, a real, published,
+GC-B-selective small-molecule PAM** with EC₅₀ 0.80 µM.
+
+The round-155 node did cross-reference the PAM node, and its narrow claim (no *andresen-chemotype*
+compound is active at GC-B) is true. But the headline recommendation should have opened with the molecule
+that exists.
+
+**Corrected framing — there are two allosteric sites on GC-B, on opposite faces of the membrane:**
+
+| | MCUF-42 (`ma2024`) | compound 20 (`andresen2023`) |
+|---|---|---|
+| site | **extracellular** domain, K_D 710 nM | **intracellular** KHD, GC-A Thr640 / GC-B Ile624 |
+| mechanism | raises CNP **affinity** (2.6× faster on-rate) | raises **efficacy** (+30% Eₘₐₓ) |
+| on CNP curve | left-shift, **no Eₘₐₓ change** | Eₘₐₓ *and* potency |
+| phosphorylation | not tested | **independent** (+183% on GC-A 7E) |
+| exists for GC-B? | **yes** | no — GC-B numbers are from the I624T mutant |
+
+They have never been tested together.
+
+**The error class:** treating a literature search as exhaustive because it was deep. Round 155 read
+`andresen2023` in full and mapped a single residue, and the very specificity of that work made it feel
+complete. One additional query — *"guanylyl cyclase B positive allosteric modulator"* — was the whole
+distance to the existing compound. **Depth on one paper is not coverage of a field.**
+
+---
+
+## CORR-172 — the PAM node's own provenance flag was wrong, and the blanks it flagged are now filled
+
+**Round 156.**
+
+`npr2_positive_allosteric_modulation` graded a claim with the basis "…and the atlas has not read the full
+text," while the bibliography record for `ma2024` carried `full_text_read: '2026-08-07'`. **One of the two
+was false.** The node was right in substance — it listed potency, selectivity, oral bioavailability and
+molecular weight as "not extracted here and are not asserted," and none of them was anywhere in the atlas.
+The bibliography flag was the wrong one.
+
+Full text now genuinely read (PMC11185183). Every blank filled, and **two answers are unfavourable**:
+
+- **Oral bioavailability 0.26%** in mice (2 h detectable after 10 mg/kg PO vs 8 h after 5 mg/kg IV). Not
+  an oral drug. The node's delivery argument is about *partition from plasma into cartilage* and says
+  nothing about *absorption from gut* — those had been sitting close enough together to blur.
+- **The mechanism is potency-only** — MCUF-42 left-shifts the CNP curve with **no increase in maximal
+  cGMP**. Against a *consumer* tissue that is the worst case, not the best: a pure potency-shifter is
+  arithmetically the closest thing to a dose increase, which is what the cardiovascular margin forbids.
+
+**And one is decisive in the other direction.** MCUF-42 is **CID 176516521, C₁₉H₁₈Cl₂N₂OS, MW 393.3,
+neutral** (its piperidine N is thioamide-acylated, so not basic). Net plate partition **0.97** — the best
+on this axis, vs 0.47 vosoritide and 0.21 fostriecin. But neutral is *parity, not accumulation*.
+
+A **monovalent cation is concentrated** by the same fixed charge density — **1.82–2.70×** free plasma —
+so a cationic analogue nets ~2.2. And the scaffold demonstrably tolerates a basic amine: the GC-A sibling
+**MCUF-651** (CID 162345705) carries a dimethylaminoethyl group *and* is orally bioavailable. The single
+change argued for on partition grounds is the same one that distinguishes the absorbable sibling.
+
+This reopens the route the PAM node itself named as "the only route by which this node returns to the top
+of the list." **Graded E** — ideal Donnan is least trustworthy for a lipophilic cation, which binds the
+very polyanions that generate the term.
