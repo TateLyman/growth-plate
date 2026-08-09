@@ -628,3 +628,54 @@ gaps:
     programme to the transit-time and column-density terms. Long columns fall as well - Wnt tone is optimised rather
     than merely restrained, and route 1 closes completely rather than conditionally. The endpoint must be at P96 or
     later, because the P36 reading in hallett2021 was a null on every measure that later moved.
+- gap_id: g_l2_does_fgfr3_inhibition_raise_cells_per_column_or_only_zone_height
+  type: quantitative_gap
+  layer: L2
+  tractability: 4
+  question: Does FGFR3 inhibition raise the number of chondrocytes delivered per resting-zone progenitor consumed,
+    or does it only raise the height of the proliferative zone?
+  why_it_matters: The ledger records amplification as "hit twice" - by growth hormone and by FGFR3 inhibition. Round
+    183 measured the growth hormone half from hunziker1994 and it is FALSE - GH LOWERS amplification to 0.77 of
+    the hypophysectomised control and buys its 5.26-fold growth-rate effect almost entirely (97 per cent of the
+    log effect) by consuming the resting pool five times faster. The FGFR3 half rests on the same kind of evidence
+    that produced the wrong answer for GH, a ZONE HEIGHT. A zone height is cells per column multiplied by cell height,
+    the product of the two terms the decomposition exists to separate, and Hunziker states in the very paper that
+    settles the GH question that growth plate height is not a reliable indicator of bone growth rate. This matters
+    more than an accounting fix. Erdafitinib is in the stack, the primary objective is yield, and whether the stack
+    already contains an amplification agent turns entirely on this measurement. If FGFR3 inhibition raises cells
+    per column it is the only yield agent anyone has and the search is over. If it raises zone height by raising
+    cell height, it is a second h_term agent stacked on top of two others.
+  what_is_known: kot2026, mouse - infigratinib increased female femur length and proliferative-zone growth plate
+    length and reduced phospho-ERK1/2, but in an Aga2/+ OSTEOGENESIS IMPERFECTA model, in females only, and it reduced
+    male trabecular bone. colvin1996 and deng1996, mouse - Fgfr3-null mice overgrow with EXPANDED proliferative
+    and hypertrophic zones, again zone heights, and in constitutive knockouts where the plate has never experienced
+    normal FGFR3 signalling. horike2026, mouse - excess FGFR3 signalling EXPANDS the resting zone while bones are
+    SHORT, because progeny cannot exit, which is the clearest available demonstration that a zone height can move
+    opposite to growth. hunziker1994, rat - the identity growth rate = amplification x pool consumption rate x terminal
+    cell height, closed with zero residual in four groups, and the method that would answer this question.
+  what_is_missing: Any FGFR3 experiment reporting cells per column and terminal hypertrophic cell height SEPARATELY,
+    in the same animals, alongside a measured elongation rate. Also missing - (a) any resting-zone cycle time under
+    an FGFR3 inhibitor, without which the pool-consumption term cannot be computed and amplification cannot be separated
+    from throughput; (b) any FGFR3 manipulation in a WILD-TYPE plate with these readouts, since every existing dataset
+    is a dysplasia or knockout model where the baseline is abnormal; (c) whether the CREB limb horike2026 identifies
+    in the resting zone moves the pool-consumption term specifically, which would make FGFR3 inhibition a pool agent
+    rather than an amplification one.
+  nearest_evidence:
+  - kot2026
+  - horike2026
+  - colvin1996
+  - hunziker1994
+  nearest_evidence_note: Three FGFR3 datasets, all reporting zone heights, none reporting the flux quantities. hunziker1994
+    is listed not as FGFR3 evidence but as the METHOD - the worked example showing the decomposition closes when
+    the right five numbers are measured together.
+  discriminating_experiment: In wild-type mice, dose an FGFR3 inhibitor (infigratinib or erdafitinib) and measure
+    the Hunziker five in the same animals - calcein-labelled elongation rate, terminal hypertrophic cell height,
+    resting cells per column, resting-zone cycle time by continuous label, and cells per column by zone. Compute
+    amplification as (growth rate / terminal cell height) divided by (resting cells per column / resting cycle time).
+    Three outcomes discriminate cleanly. Amplification rises - FGFR3 inhibition is the amplification agent the programme
+    has been looking for and it is already in the stack. Amplification flat and terminal cell height up - it is
+    a third h_term agent and stacks poorly with vosoritide and GH, which are already there. Amplification flat and
+    pool consumption up - it buys rate out of the reserve exactly as GH does, so the two are additive in COST rather
+    than in benefit, which is the worst case for a subject at bone age 16 and the one nobody is currently testing
+    for. The cheap partial version is to re-measure terminal cell height and cells per column on existing kot2026
+    or Fgfr3-null histology, which converts a zone height into the two terms without a new animal.

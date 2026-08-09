@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 182.** Repo: 706 nodes, 370 gaps, 1382 refs, validator errors none.
+Last updated: **2026-08-09, after round 183.** Repo: 707 nodes, 371 gaps, 1382 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,65 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 183 — **THE SOMATOTROPIC AXIS IS NOT A YIELD AXIS.** Amplification measured under GH and IGF-1, in one experiment, and it goes DOWN. The atlas's agent-to-term table was built on zone heights.
+
+`the_somatotropic_axis_is_not_a_yield_axis`. Route enumeration dropped at the user's instruction —
+the objective is yield, by any route. Started by resolving a contradiction the atlas was already carrying.
+
+**⓪ THE CONTRADICTION.** The **ledger** said amplification "is hit twice — FGFR3 inhibition … and
+**growth hormone** acts on the same term." Round 175 (`amplification_is_transit_time`) said GH/IGF-1
+act on **h_term** and "amplification is covered zero times." Both were read off **zone heights**.
+
+**① THE ONE EXPERIMENT THAT CAN SETTLE IT.** `hunziker1994` reports, in the **same animals**
+(hypophysectomised rat proximal tibia, 8-d minipump, 4 groups × 6): growth rate, terminal
+hypertrophic cell height, resting cycle time, resting cells/column, **and** its own independent
+turnover count. So `GR = A × D × h_term` closes with **zero residual** — no cross-study substitution.
+
+| | saline | IGF-I | GH | normal |
+|---|---|---|---|---|
+| growth rate µm/d | 31 | 92 | 163 | 284 |
+| terminal cell height µm | 19.5 | 27.3 | 26.5 | 29.8 |
+| resting cycle time d | 50 | 15 | 8 | 6 |
+| **AMPLIFICATION** | **31.8** | **25.3** | **24.6** | **22.9** |
+
+**② THE ANSWER IS NEITHER.** GH's **5.26×** growth-rate effect = **5.00× pool consumption** ×
+1.36× h_term × **0.77× amplification**. The pool term alone is **97%** of the log effect. IGF-I:
+2.67 × 1.40 × 0.79 (90%). Normal v hypox: 8.33 × 1.53 × 0.72 (96%). **Three contrasts, one
+experiment, amplification below one in all three.** GH buys rate out of the reserve.
+
+**③ VALIDATED THREE WAYS BEFORE BELIEVING IT.** `GR/h_term` reproduces Hunziker's own turnover count
+(1.59/3.37/6.15/9.53 v stated 1/3/6/10); `log2(A)` = 4.5–5.0 doublings in columns holding 14–18
+proliferative cells; forcing the resting count identical gives **0.62**, not a reversal.
+
+**④ CORR-189 — WHY ZONE HEIGHTS LIED, IN HUNZIKER'S OWN WORDS.** In these animals IGF-I gave a plate
+height like normal rats "despite dramatically differing growth rate activities", and he concludes
+plate height "is not a reliable indicator of bone growth rate." **A zone height is cells/column ×
+cell height — the product of the two terms the decomposition separates.** `horike2026` is the extreme
+case already held here: expanded resting zone, **short** bones. **New rule: no agent gets a term
+assignment from a zone height.**
+
+**⑤ THE FGFR3 HALF IS NOT CORRECTED — IT IS RECLASSIFIED AS UNTESTED.** `kot2026` reports
+proliferative-zone *length*, in an OI model, females only. Erdafitinib is **in the stack**, so
+whether the stack already holds an amplification agent turns on a measurement nobody has made →
+`g_l2_does_fgfr3_inhibition_raise_cells_per_column_or_only_zone_height`. Do **not** assume it falls
+with GH; the biology is unrelated.
+
+**⑥ STRENGTHENS CORR-187 WITHOUT REVERSING IT.** `hunziker1994` is the **same model** as
+`ohlsson1992` and measures the resting cycle at **50 d → 8 d** under GH — a direct kinetic
+measurement of pool spending. Recorded at **E**, not asserted: a 6× faster stem cycle would label far
+more germinal cells over a 12-d thymidine infusion, so ohlsson's higher count is *also* what
+accelerated cycling predicts.
+
+**⑦ THE RATE–YIELD TRADE-OFF, VISIBLE FOR THE FIRST TIME.** Amplification falls monotonically as
+growth rate rises across all four groups; log-log slope **−0.146**, R²=0.948. A tenfold rise in
+elongation costs ~29% of yield per progenitor. **D** — n=4, three arms of one experiment; recorded
+for the *ordering*, which is the premise of the whole programme.
+
+**CONSEQUENCE FOR THE STACK.** GH stays — rate is worth buying when there is pool to spend. But **GH
+is not and will never be the yield agent, at any dose.** The remaining amplification candidates are
+positional/maturational, not somatotropic: SOC proximity (`newton2019`, 1.37× within one bone), bone
+identity (`lui2018`, 7.9×), oestrogen (`nilsson2014`, 0.60×). **That is where the yield search goes.**
 
 ### ROUND 182 — **ROUTE 1 CLOSED.** Every defining primary read in full. Three of the four gave numbers the atlas did not have; one of them settles a question open since the five-population node, and one demotes our own route ranking.
 

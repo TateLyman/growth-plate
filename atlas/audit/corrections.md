@@ -7170,3 +7170,74 @@ labelled P28–P37, 55 → 57 — **no loss**. Resting cells stop expressing col
 to the secondary ossification centre winds down after P28. **The leak is an early-life term.** A subject at
 bone age 16 is past the gate. Held at grade D, not C — one population, one paper, and mouse P28 is not
 human bone age 16 — but the ranking was built without this measurement and should not have been.
+
+---
+
+## CORR-189 — the agent-to-term attribution table is built on zone heights, and a zone height is the product of the two terms the decomposition exists to separate. Measured properly, growth hormone is not an amplification agent.
+
+**Round 183. Found by trying to resolve a contradiction the atlas was already carrying.**
+
+Two nodes disagreed about the primary objective term:
+
+- `ledger_what_is_dead_what_is_settled_what_is_live`: "AMPLIFICATION is hit twice … FGFR3
+  inhibition raises proliferative-zone length (`kot2026`) and **growth hormone acts on the same
+  term**, while h_term belongs to the CNP axis, which `nakao2015` partitions onto the hypertrophic
+  zone."
+- `amplification_is_transit_time` (round 175): "GH/IGF-1 and the CNP axis both act on terminal cell
+  height. **h_term is covered twice and amplification is covered zero times.**"
+
+Both were inferred from **zone heights**. Neither is right.
+
+**The measurement.** `hunziker1994` reports, in the same animals, every quantity the decomposition
+needs: growth rate (Table II), terminal hypertrophic cell height (Fig 1A), resting cell cycle time
+and resting cells per column (Fig 2A/2B), and an independent stereological turnover count (Fig 2C).
+With Kember–Sissons for production and population asymmetry for consumption, `GR = A × D × h_term`
+closes with zero residual:
+
+| | saline | IGF-I | GH | normal |
+|---|---|---|---|---|
+| growth rate (µm/d) | 31 | 92 | 163 | 284 |
+| terminal cell height (µm) | 19.5 | 27.3 | 26.5 | 29.8 |
+| resting cycle time (d) | 50 | 15 | 8 | 6 |
+| **amplification** | **31.8** | **25.3** | **24.6** | **22.9** |
+
+**GH's 5.26× growth-rate effect = 5.00× pool consumption × 1.36× h_term × 0.77× amplification.**
+The pool-consumption term alone is 97% of the log effect. IGF-I: 2.67 × 1.40 × 0.79, 90%. Normal vs
+hypophysectomised: 8.33 × 1.53 × 0.72, 96%. **Three contrasts, one experiment, amplification below
+one in all three.**
+
+**Why zone heights produced the wrong answer, in the author's own words.** In these same animals
+IGF-I gave a total growth plate height similar to normal rats "despite dramatically differing growth
+rate activities", and Hunziker concludes that growth plate height — the classical tibia test — "is
+not a reliable indicator of bone growth rate". A zone height is *cells per column × cell height*: it
+is the product of amplification and h_term, and a standing stock rather than a flux. `horike2026` is
+the extreme case already in this atlas — the achondroplasia resting zone is **expanded** and the
+bones are **short**.
+
+**Scope of the correction.** The GH half of the ledger's claim is corrected to **X**. The FGFR3 half
+is **not** corrected — it is reclassified as **untested**, because `kot2026` reports proliferative-zone
+length and nobody has reported cells per column under an FGFR3 inhibitor. That distinction matters:
+erdafitinib is in the stack, and whether the stack already contains an amplification agent turns on a
+measurement no one has made. Gap
+`g_l2_does_fgfr3_inhibition_raise_cells_per_column_or_only_zone_height` specifies it. The CNP→h_term
+assignment rests on `nakao2015`'s hypertrophic zone thickness and carries the same weakness, since HZ
+thickness is hypertrophic cells per column × cell height; it is left standing but flagged.
+
+**What round 175 got right and wrong.** The h_term claim survives — the somatotropic axis does move
+terminal cell height, 1.36–1.40×. But that is 14–22% of the log effect. The dominant term appears in
+neither prior attribution, because *rate of pool consumption* was not in either node's vocabulary for
+GH. Downgraded to **D**, not X.
+
+**Bearing on CORR-187, which is strengthened rather than reversed.** That correction downgraded
+"GH spends the pool" to contested, on `ohlsson1992`. `hunziker1994` is the **same animal model** —
+hypophysectomised rat, minipump, proximal tibia — and measures the resting cycle time directly at
+50 d → 8 d under GH. The pool-spending direction now rests on a direct kinetic measurement rather
+than a convergence of weaker lines. One reconciliation is available and is recorded at **E** rather
+than asserted: a six-fold faster stem cycle would label far more germinal cells during a continuous
+twelve-day thymidine infusion, so `ohlsson1992`'s higher labelled count is what accelerated cycling
+predicts as well as what pool expansion predicts.
+
+**The rule going forward.** No agent may be assigned to a term in the decomposition on the strength
+of a zone height. The assignment requires cells per column and terminal cell height reported
+separately, and — if the amplification term specifically is claimed — a resting-zone cycle time as
+well. Every existing assignment made from a zone height is now *unverified* rather than settled.
