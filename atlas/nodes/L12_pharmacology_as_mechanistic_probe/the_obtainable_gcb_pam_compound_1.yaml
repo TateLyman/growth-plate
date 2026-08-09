@@ -191,6 +191,49 @@ quantitative:
     MLS-0302874.P029 are direct evidence they were supplied in screening quantities. Milligram-scale
     research quantities of catalogue screening compounds are ordinarily inexpensive, but this atlas has NOT
     verified that for these compounds and does not assert it.'
+- parameter: 'THE andresen2023 SERIES WAS ALREADY COUNTER-SCREENED AT WILD-TYPE GC-B AND IS NEGATIVE'
+  value: 'andresen2023 section 3.2, verbatim sense: compound 2 showed some activity towards GC-B at high
+    concentrations and compound 20 did not, BUT NEITHER COMPOUND MODULATED THE POTENCY OF CNP NOR
+    INCREASED THE MAXIMUM LEVEL OF CNP-MEDIATED cGMP PRODUCTION. About 100 analogues of compound 2 were
+    made and every one was screened against GC-A (Table S1). Compound 20 EC50 at GC-A is 508 +/- 67 nM and
+    compound 2 is 3300 +/- 800 nM, both measured against 0.1 nM BNP giving an EC10 response; the two raise
+    cGMP to 45 +/- 5 and 35 +/- 3 per cent of maximum BNP-mediated production. Compound 2 additionally
+    ACTIVATES NPR-C - it reduced cAMP production, reversed by osteocrin - while compound 20 does not'
+  unit: nanomolar EC50; per cent of maximal cGMP
+  conditions: andresen2023, full text re-read 2026-08-09, sections 3.1 and 3.2 and Figures 2b to 2e.
+    AlphaScreen cGMP in QBI-HEK293A cells expressing GC-A, GC-B or NPR-C.
+  species: not_applicable
+  source_ref: andresen2023
+  uncertainty: 'THIS CLOSES A GAP THIS ATLAS OPENED AND IT CLOSES IT NEGATIVELY (CORR-174). Rounds 155 to
+    157 proposed counter-screening this series at wild-type GC-B as the cheap first experiment; it had
+    already been done and reported. THE PRACTICAL CONSEQUENCE: no molecule in this series engages GC-B as a
+    PAM, so the entire GC-B case for the chemotype rests on the I624T POINT MUTANT. The site transfers, the
+    compound does not. WHAT IS NOT WITHDRAWN is the Thr640/Ile624 mapping itself, which is reciprocal and
+    strong. AND ONE CAVEAT ON THE NEGATIVE: these are GC-A-optimised molecules tested at GC-B, so a
+    negative says the GC-A pharmacophore does not fit Ile624 - it does not say the Ile624 pocket is
+    undruggable.'
+- parameter: 'THE SERIES CONTAINS A BUILT-IN CHARGE LADDER, AND ACTIVITY ANTI-CORRELATES WITH BASICITY AT
+    THE EXTREME'
+  value: 'Four members of the same 5-arylfuran-2-thioamide scaffold differing only at the distal ring
+    position, with their GC-B HTS values at 10 microM: MORPHOLINE (CID 786411, no basic centre) 43.42 per
+    cent; N-METHYLPIPERAZINE (CID 3588620, basic) 50.37; 2-CYANOETHYLPIPERAZINE (CID 647514, compound 1,
+    strongly deactivated nitrogen) 96.67; FREE NH PIPERAZINE (ma2024 compound 11, the most basic option)
+    INACTIVE. So the pharmacophore tolerates the whole ladder from no-nitrogen to moderately basic, but
+    the most basic member is dead and the best member carries an electron-withdrawing group'
+  unit: per cent activity at 10 micromolar
+  conditions: HTS values from PubChem AID 1920062; the free-NH result from ma2024 Figure 2B (compound 11).
+    Charge ordering assigned from structure by this atlas.
+  species: not_applicable
+  source_ref: pubchem_gcb_hts
+  atlas_derived: true
+  uncertainty: 'THIS IS THE MOST USEFUL THING AVAILABLE WITHOUT A pKa MEASUREMENT AND IT ANSWERS A
+    DIFFERENT QUESTION THAN THE ONE ASKED. It does not give a pKa. It gives the SAR constraint: a basic
+    centre at this position is PERMITTED but not free - the N-methyl analogue pays roughly half the HTS
+    activity of compound 1, and going fully basic (free NH) loses everything. So the cationic strategy
+    trades potency for partition, and the exchange rate is roughly two-fold potency for whatever the
+    Donnan gain turns out to be. SINGLE-POINT HTS VALUES ARE NOT POTENCIES and the 43 to 97 per cent
+    spread may not survive dose-response. And morpholine versus piperazine changes more than charge - it
+    changes hydrogen-bond acceptor count and shape.'
 localization:
 - 'GC-B in the growth plate is the target; GC-B in vasculature is the liability, and a potentiator raises
   gain at both unless the molecule itself concentrates in cartilage'

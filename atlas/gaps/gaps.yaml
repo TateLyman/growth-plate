@@ -7458,6 +7458,8 @@ gaps:
   type: known_unknown
   layer: L12
   tractability: 1
+  status: DOWNGRADED 2026-08-09 from decisive to CONFIRMATORY - resolved to PROBABLY YES on structural
+    and cross-ligand grounds without an experiment (see the two arguments below).
   question: Does MCUF-42, or any GC-B positive allosteric modulator, potentiate VOSORITIDE and other CNP
     analogues - or only native CNP?
   why_it_matters: 'THE WHOLE PAIRING DEPENDS ON THIS ONE ANSWER, AND IT HAS NEVER BEEN ASKED. A PAM has no
@@ -7469,7 +7471,16 @@ gaps:
     syringe. IF THE PAM POTENTIATES VOSORITIDE, the pair is mutually reinforcing and both control points
     stay. IF IT POTENTIATES ONLY NATIVE CNP, the PAM is capped by a feedback loop and the pairing that
     would rescue it does not exist.'
-  what_is_known: 'ma2024 characterised MCUF-42 against NATIVE CNP only: EC50 0.80 microM, Emax 86 per cent,
+  what_is_known: 'RESOLVED TO PROBABLY YES BY TWO INDEPENDENT ARGUMENTS AT ROUND 160. STRUCTURAL:
+    vosoritide is Pro-Gly appended to the 37 C-terminal residues of human CNP-53, 39 residues with a
+    cyclic 23-39 disulfide, so it RETAINS THE INTACT CNP-22 RECEPTOR-BINDING RING and differs from native
+    CNP only by an N-terminal protease-resistance extension - and the ring is what engages the
+    extracellular domain where MCUF-42 acts. CROSS-LIGAND: PAMs in this receptor family are not
+    ligand-specific - sangaralingham2021 MCUF-651 potentiates BOTH ANP AND BNP at GC-A and potentiates
+    endogenous ANP and BNP from the plasma of normal subjects and patients ex vivo, and the andresen2023
+    compounds enhance both. WHAT COULD STILL BREAK IT is the 17-residue N-terminal extension, exactly the
+    part native CNP lacks, which could obstruct a cleft-adjacent modulator.
+    ma2024 characterised MCUF-42 against NATIVE CNP only: EC50 0.80 microM, Emax 86 per cent,
     4-fold cGMP potentiation, 6.4-fold left-shift of the CNP curve with no change in maximal response, and
     SPR binding to the GC-B EXTRACELLULAR domain at KD 710 nM with a 2.6-fold acceleration of CNP
     association. Vosoritide is a modified 39-residue CNP that binds the same receptor. Compound 1
@@ -7541,6 +7552,8 @@ gaps:
   type: known_unknown
   layer: L12
   tractability: 1
+  status: PARTIALLY CLOSED 2026-08-09 (CORR-174) - stage 1 was already performed and published, and it
+    is NEGATIVE. What remains open is only whether NEW chemistry can be built against Ile624.
   question: Can the andresen2023 allosteric enhancer chemotype be re-optimised from GC-A Thr640 to GC-B
     Ile624 to give a GC-B-selective small-molecule enhancer - and does such a compound lengthen bone?
   why_it_matters: 'This is the best-defined chemistry problem on the whole CNP axis and the only route to
@@ -7567,12 +7580,11 @@ gaps:
   nearest_evidence: [andresen2023, jeong2026, ma2024, wagner2021, farnum2006]
   nearest_evidence_note: One paper with a reciprocal single-residue chimera mapping in transfected HEK
     cells; no chondrocyte, cartilage or in vivo data anywhere in the series.
-  discriminating_experiment: 'TWO STAGES, AND THE FIRST IS CHEAP. STAGE 1 - COUNTER-SCREEN THE EXISTING
-    SERIES AT WILD-TYPE GC-B. The compounds exist and the AlphaScreen assay is running in the authors
-    hands; compound 2 already has partial GC-B activity, so the question is whether any series member has
-    enough. Readouts - A MEMBER IS ACTIVE AT WILD-TYPE GC-B: the arm has a lead today and goes straight to
-    chondrocyte cGMP and explant elongation. NONE IS: the Ile624 pocket genuinely requires new chemistry,
-    and stage 2 follows. STAGE 2 - STRUCTURE-GUIDED RE-OPTIMISATION against Ile624, using GC-A as the
+  discriminating_experiment: 'STAGE 1 IS ALREADY DONE AND THE ANSWER IS NO (CORR-174). andresen2023
+    counter-screened the series at wild-type GC-B and reported that NEITHER compound 2 NOR compound 20
+    modulated the potency of CNP or increased maximum CNP-mediated cGMP production. All ~100 analogues in
+    the series were made and screened against GC-A. So the branch that would have given a lead today is
+    closed: the Ile624 pocket genuinely requires new chemistry, and only stage 2 remains. STAGE 2 - STRUCTURE-GUIDED RE-OPTIMISATION against Ile624, using GC-A as the
     counter-screen and GC-B I624T as the positive control, both already built. THEN THE DECISIVE
     EXPERIMENT REGARDLESS OF ROUTE: metatarsal or tibia explant elongation with the compound alone, with
     CNP alone, and with both, in wild-type and in FGFR3-G380R. Readouts - ADDITIVE WITH CNP: control point
@@ -7608,9 +7620,13 @@ gaps:
   nearest_evidence: [theobald2013, swingle2009, chembl_fostriecin, dejong1999, jiang2025]
   nearest_evidence_note: One knockdown study attributing the cellular phenotype to PP4, and one SAR panel
     that never measured PP4.
-  discriminating_experiment: 'RE-RUN THE swingle2009 PANEL WITH PP4C ADDED. The ten analogues are already
-    synthesised and the assay is the one that paper already uses - purified enzyme with
-    32P-phosphohistone. Readouts under competing hypotheses - PP2A AND PP4 TRACK TOGETHER across all ten
+  discriminating_experiment: 'RE-RUN THE swingle2009 PANEL WITH PP4C ADDED - BUT NOT AS ONE PLATE, AND
+    CORR-175 CORRECTS THE EARLIER COST CLAIM. This atlas checked whether the number exists anywhere:
+    ChEMBL target CHEMBL5465552, the PP4 catalytic subunit, holds EXACTLY ONE ACTIVITY RECORD IN THE ENTIRE
+    DATABASE - fostriecin, IC50 3.0 nM. Not one analogue, not one other chemotype. PP4 has no chemical
+    probe and no counter-screen series in public medicinal chemistry, so the assay must be built before
+    the panel can be run. The ten analogues are already synthesised and the format is the one that paper
+    already uses - purified enzyme with 32P-phosphohistone. Readouts under competing hypotheses - PP2A AND PP4 TRACK TOGETHER across all ten
     analogues: the two activities are structurally inseparable in this chemotype, the ceiling is a class
     property, and the arm needs a different scaffold entirely. THEY DISSOCIATE in even one analogue: that
     analogue is the lead, and the lactone-deleted compound 10 is the first to test because deleting the

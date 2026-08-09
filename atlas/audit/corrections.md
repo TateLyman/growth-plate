@@ -6627,3 +6627,64 @@ record even for 1-acetylpiperazine. The only experimental anchor is the parent r
 pKa₂ 5.33). Everything above is directional reasoning from substituent effects and is graded as such — new
 gap `g_l12_pka_and_cartilage_uptake_of_the_gcb_pam_series`, whose first step is one titration on a
 catalogue compound.
+
+---
+
+## CORR-174 — the counter-screen I proposed as "the cheapest next experiment" had already been run, and it was negative
+
+**Round 160. Caught on re-reading a paper I had already read in full.**
+
+Rounds 155–157 named, as the cheap first step on the allosteric arm, *"counter-screen the existing
+`andresen2023` series at wild-type GC-B — compound 2 already has partial GC-B activity, so the starting
+point is not zero."*
+
+**`andresen2023` already did it, and reported it in the sentence immediately after the one I quoted:**
+
+> Compound #2 showed some activity towards GC‑B at high concentrations, while compound #20 did not
+> (Figure 2c). **Neither of the compounds modulated the potency of CNP or increased the maximum level of
+> CNP‑mediated cGMP production (Figure 2d).**
+
+I read the hedged first clause and stopped. The second sentence is the counter-screen, and it is
+unambiguous: **neither compound is a PAM at wild-type GC-B** — no potency shift, no Eₘₐₓ increase. The
+"some activity at high concentrations" in Fig 2c is not PAM activity on the CNP response.
+
+**What this costs.** The gap `g_l12_gcb_selective_allosteric_enhancer_does_not_exist` closes **negatively**,
+and the andresen chemotype at GC-B is weaker than rounds 155–156 presented it:
+
+- ~100 analogues of compound #2 exist, and **all were optimised and screened against GC-A** (Table S1).
+- Compound #20 EC₅₀ **508 ± 67 nM** at GC-A; compound #2 **3300 ± 800 nM**.
+- The GC-B numbers that *do* exist (+35% max cGMP, 4.4× CNP EC₅₀ shift) are from the **I624T point mutant
+  only**. The site transfers; **no molecule does.**
+- Additional finding I had missed: **compound #2 activates NPR-C** (reduces cAMP production, reversed by
+  osteocrin); compound #20 does not.
+
+**The error class.** Quoting a paper's hedge as if it were its conclusion, when the conclusion was the next
+sentence. This is SD-004's cousin — not "reviews aren't sources," but **"a clause is not a finding."** When
+a sentence is hedged ("some activity … at high concentrations"), read forward: hedged clauses in results
+sections are usually being set up to be qualified.
+
+**What survives.** The Thr640/Ile624 mapping is untouched — the *site* is present and intact in GC-B, and
+reciprocal single-residue swaps prove it. What is withdrawn is the implication that a GC-B-active starting
+compound already exists in this series. It does not.
+
+---
+
+## CORR-175 — the PP4 gap cannot be closed from existing data, and the reason is that PP4 is essentially unscreened
+
+**Round 160. Not a defect — a bounded negative result, recorded so the gap is not re-opened as searchable.**
+
+`g_l12_fostriecin_pp4_versus_pp2a_attribution` asks for a PP4 column on the `swingle2009` ten-analogue
+panel. I checked whether that number exists anywhere.
+
+**ChEMBL target `CHEMBL5465552` (Serine/threonine-protein phosphatase 4 catalytic subunit) holds exactly
+ONE activity record in the entire database: `CHEMBL17377` — fostriecin — IC₅₀ 3.0 nM.**
+
+Not one analogue. Not one other chemotype. PP4 has, in public medicinal chemistry, **a single data point
+and no chemical probe**. So there is no counter-screen chemistry, no comparator series, and no assay
+infrastructure to borrow.
+
+**Consequence for Thread B, and it cuts deeper than the gap statement did.** `theobald2013` implicates PP4C
+in fostriecin's cellular phenotype. Designing a PP4-sparing fostriecin analogue therefore requires
+building the PP4 assay and the counter-screen *from scratch* — that is not one plate, and the earlier
+gap text saying "one plate against compounds that already exist" was **too optimistic**: the compounds
+exist, the assay does not.

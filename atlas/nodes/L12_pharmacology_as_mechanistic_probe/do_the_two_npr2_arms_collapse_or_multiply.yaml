@@ -31,8 +31,9 @@ summary: 'THE QUESTION WAS WHETHER THE TWO NPR2 ARMS ARE THE SAME TARGET. THEY A
   RESCUE A DEPHOSPHORYLATED RECEPTOR. Its benefit is conditional on phosphorylation state and scales with
   it. That is genuine SYNERGY rather than additivity - each arm raises the other marginal return - and it
   is the opposite of redundancy.
-  THE andresen2023 COMPOUND IS THE ONE THAT ESCAPES THE GATE, WHICH IS WHY IT REMAINS THE BETTER MOLECULE
-  IN PRINCIPLE. It raises EFFICACY, not affinity, and it demonstrably works on top of a receptor already
+  THE andresen2023 COMPOUND IS THE ONE THAT ESCAPES THE GATE IN PRINCIPLE - BUT ROUND 160 ESTABLISHED THAT
+  NO MOLECULE IN THAT SERIES ENGAGES WILD-TYPE GC-B AT ALL (CORR-174), so this is a statement about a
+  mechanism, not about an available compound. It raises EFFICACY, not affinity, and it demonstrably works on top of a receptor already
   locked phosphorylated - plus 183 per cent on GC-A 7E. An efficacy-raiser lifts the ceiling; a
   potency-raiser only helps you reach it. THE COMPOUND THAT EXISTS AT GC-B IS THE POTENCY-RAISER; THE
   MECHANISM WE WANT IS THE EFFICACY-RAISER, AND IT HAS NO GC-B-ACTIVE MOLECULE.
@@ -52,10 +53,16 @@ summary: 'THE QUESTION WAS WHETHER THE TWO NPR2 ARMS ARE THE SAME TARGET. THEY A
   WHICH SUPPLIES FEEDBACK-IMMUNE SUBSTRATE FOR IT TO AMPLIFY. That is a real reason to keep control point
   A rather than treat the small molecule as its replacement - and it inverts the round-156 framing, which
   treated the PAM as the thing that might make a peptide unnecessary.
-  AND IT CREATES THE SINGLE MOST DECISION-RELEVANT UNKNOWN ON THIS ARM: DOES MCUF-42 POTENTIATE VOSORITIDE,
-  OR ONLY NATIVE CNP? ma2024 tested CNP alone. Vosoritide is a modified 39-residue CNP; MCUF-42 binds the
-  EXTRACELLULAR domain and works by accelerating ligand association. Whether it does that for the analogue
-  is untested, and the whole pairing depends on it. It is one assay plate against two purchasable reagents.
+  AND IT RAISES THE QUESTION THE WHOLE PAIRING DEPENDS ON: DOES A GC-B PAM POTENTIATE VOSORITIDE, OR ONLY
+  NATIVE CNP? ma2024 tested CNP alone. ROUND 160 RESOLVED THIS TO PROBABLY YES WITHOUT AN EXPERIMENT, ON TWO
+  INDEPENDENT GROUNDS. STRUCTURAL: vosoritide is Pro-Gly appended to the 37 C-terminal residues of human
+  CNP-53, and it RETAINS THE INTACT CNP-22 RECEPTOR-BINDING RING - it differs from native CNP only by an
+  N-terminal extension for protease resistance, while MCUF-42 acts on the extracellular domain that the ring
+  engages. CROSS-LIGAND: PAMs in this receptor family are not ligand-specific - sangaralingham2021 MCUF-651
+  potentiates BOTH ANP AND BNP at GC-A and potentiates endogenous ANP and BNP from human plasma ex vivo, and
+  the andresen2023 compounds enhance both. THE GAP IS THEREFORE DOWNGRADED FROM DECISIVE TO CONFIRMATORY.
+  What could still break it is the 17-residue N-terminal extension, which is exactly the part native CNP
+  lacks and which could obstruct a cleft-adjacent modulator.
   IS ANOTHER COMPOUND BETTER - FOUR CHECKED, NONE DISPLACES EITHER ARM. BMN 333 is BioMarin long-acting
   CNP, reported to give more than 13-fold higher free-CNP exposure than another long-acting CNP agent and
   supporting weekly dosing; it is a BETTER CONTROL POINT A, not a third arm, and it is now in head-to-head
@@ -161,6 +168,31 @@ quantitative:
     the matrix and should not be stated more broadly than that. THE BMN 333 FIGURES ARE FROM COMPANY
     DISCLOSURES, not peer-reviewed primary literature, and the comparator in the more-than-13-fold claim is
     not named here. INFIGRATINIB IS NOT DISMISSED - it is simply already in the stack on a different arm.'
+- parameter: 'WHETHER A GC-B PAM POTENTIATES VOSORITIDE - RESOLVED BY INFERENCE TO PROBABLY YES, STILL
+    NOT MEASURED'
+  value: 'VOSORITIDE IS Pro-Gly APPENDED TO THE 37 C-TERMINAL RESIDUES OF HUMAN CNP-53, 39 residues total,
+    cyclic 23-39 disulfide - so IT RETAINS THE INTACT CNP-22 RECEPTOR-BINDING RING UNCHANGED and differs
+    from native CNP only by an N-terminal extension conferring protease resistance. MCUF-42 acts on the
+    EXTRACELLULAR DOMAIN by accelerating ligand association 2.6-fold, and the ring is the pharmacophore
+    that engages that domain. INDEPENDENTLY, PAMs in this receptor family are NOT LIGAND-SPECIFIC:
+    sangaralingham2021 MCUF-651 potentiates BOTH ANP AND BNP at GC-A and potentiates endogenous ANP and
+    BNP from the plasma of normal subjects and of patients ex vivo, and andresen2023 compounds enhance
+    both ANP and BNP'
+  unit: qualitative - structural and cross-ligand inference
+  conditions: Vosoritide composition from the BMN 111 literature and regulatory descriptions, checked
+    2026-08-09; MCUF-42 mechanism from ma2024 full text; cross-ligand behaviour from sangaralingham2021
+    and andresen2023.
+  species: not_applicable
+  source_ref: sangaralingham2021
+  atlas_derived: true
+  uncertainty: 'STILL AN INFERENCE, AND TWO THINGS COULD BREAK IT. FIRST, the 17-residue N-terminal
+    extension is exactly the part of vosoritide that native CNP does not have, and a PAM binding near the
+    ligand-binding cleft could be sterically obstructed by it - nobody has looked. SECOND, the cross-ligand
+    evidence is from GC-A with a DIFFERENT compound series; ANP and BNP are both natural ligands sharing
+    the ring motif, which is a weaker test than a synthetic analogue with an engineered extension. THE
+    EXPERIMENT REMAINS ONE PLATE and is still the right thing to run, but the atlas should no longer carry
+    this as unknown - the prior is now clearly on the yes side, and the gap is downgraded from decisive to
+    confirmatory.'
 localization:
 - 'all three control points act on NPR2 in growth-plate chondrocytes; the ligand and PAM sites are
   extracellular, the phosphorylation and KHD-allosteric sites are intracellular'
@@ -198,6 +230,14 @@ claim_grades:
     reaching P = 0.003, and the magnitude scaling with baseline resistance; replicated in a second disorder
     by kanakatti2026. Not A because the readout is NTproCNP, a bio-inactive production marker rather than
     receptor-available ligand, and every subject was CNP-resistant at baseline.'
+- claim: A GC-B PAM would potentiate vosoritide, not only native CNP.
+  grade: D
+  basis: 'INFERRED, NOT MEASURED, but the prior is now clearly favourable. Vosoritide retains the intact
+    CNP-22 disulfide ring - it is Pro-Gly plus the 37 C-terminal residues of CNP-53 - and the ring is the
+    pharmacophore engaging the extracellular domain where MCUF-42 acts. And PAMs in this family are not
+    ligand-specific: MCUF-651 potentiates ANP, BNP and endogenous plasma pools at GC-A. Against it: the
+    N-terminal extension is precisely what native CNP lacks and could obstruct a cleft-adjacent PAM, and
+    the cross-ligand evidence is from the sister receptor with a different series.'
 - claim: A GC-B PAM should be paired with a CNP analogue rather than replace it.
   grade: D
   basis: 'A PAM has no intrinsic activity - MCUF-42 makes no cGMP without CNP - so it multiplies whatever

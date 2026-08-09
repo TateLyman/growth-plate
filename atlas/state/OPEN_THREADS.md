@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 159.** Repo: 687 nodes, 358 gaps, 1345 refs, validator errors none.
+Last updated: **2026-08-09, after round 160.** Repo: 687 nodes, 358 gaps, 1345 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -43,7 +43,12 @@ Charge probe: `CID 3588620`, the N-methylpiperazine analogue, 50.37% @10 µM, 7 
 2. Cartilage explant uptake, neutral vs cationic member — ratio of tissue to bath.
 3. Spatial distribution (concentrated-throughout vs bound-at-surface — the `hakim2025` failure mode for
    lipophilic cations; this chemotype is XLogP ≈ 3.8).
-4. Counter-screen the `andresen2023` series at **wild-type** GC-B (`g_l12_gcb_selective_allosteric_enhancer_does_not_exist`).
+4. ~~Counter-screen the `andresen2023` series at wild-type GC-B~~ — **DONE, ALREADY, AND NEGATIVE
+   (CORR-174).** andresen2023 reported it: *"Neither of the compounds modulated the potency of CNP or
+   increased the maximum level of CNP-mediated cGMP production."* All ~100 analogues were made and
+   screened **against GC-A**. Every GC-B number for this chemotype comes from the **I624T point mutant**.
+   The site transfers; **no molecule does.** Remaining open: whether new chemistry can be built against
+   Ile624 — a synthesis programme, not a screen.
 
 **Unresolved objection, not waved away:** the plate is a CNP **consumer**, not producer, so a systemic
 potentiator raises vascular signalling at least as much as plate signalling. The cationic route is the
@@ -63,9 +68,12 @@ hypochondroplasia by `kanakatti2026`). A PAM has **no intrinsic activity** — i
 ligand, which this loop shrinks. **So the PAM needs a feedback-immune exogenous analogue underneath it.**
 Inverts the round-156 framing: the peptide isn't displaced by the small molecule, it's what makes it work.
 
-**THE decisive open question (`g_l12_does_the_gcb_pam_potentiate_vosoritide`): does MCUF-42 potentiate
-vosoritide, or only native CNP?** ma2024 tested CNP only. One plate, two purchasable reagents. Extend the
-same plate to GC-B-7E vs WT under FGF challenge and it answers the gating claim too.
+**`g_l12_does_the_gcb_pam_potentiate_vosoritide` — DOWNGRADED to confirmatory (round 160). Probably YES,
+on two independent grounds without an experiment.** *Structural:* vosoritide is Pro-Gly + the 37 C-terminal
+residues of CNP-53 and **retains the intact CNP-22 binding ring** — it differs from native CNP only by an
+N-terminal protease-resistance extension, and the ring is what engages the ECD where MCUF-42 acts.
+*Cross-ligand:* PAMs here are not ligand-specific — MCUF-651 potentiates **ANP, BNP and endogenous human
+plasma pools** at GC-A. Residual risk: the N-terminal extension could obstruct a cleft-adjacent modulator.
 
 **Rivals checked, none displaces either arm:** BMN 333 = better control point A, not a third arm;
 KK8398 = infigratinib under a Kyowa Kirin code, already in the stack; activating antibodies (`liu2026`,
@@ -86,10 +94,15 @@ redundant with Thread A — different kinetic handle — but it has no compound,
 SD-008 bars planning on identification. Its incremental value in a stack that already contains an FGFR
 inhibitor is bounded by the **1.42× tonic, FGF-independent** component.
 
-**OPEN:** `g_l12_fostriecin_pp4_versus_pp2a_attribution` — re-run the existing `swingle2009` ten-analogue
-panel **with a PP4 column**. `theobald2013` shows PP4C knockdown alone reproduces fostriecin's cellular
-phenotype while PP2AC knockdown does not, so the dose ceiling and the intended effect may sit on
-different enzymes. Compounds already exist; assay already established. **One plate.**
+**OPEN:** `g_l12_fostriecin_pp4_versus_pp2a_attribution` — re-run the `swingle2009` ten-analogue panel
+**with a PP4 column**. `theobald2013` shows PP4C knockdown alone reproduces fostriecin's cellular phenotype
+while PP2AC knockdown does not, so the dose ceiling and the intended effect may sit on different enzymes.
+
+**CORR-175 corrects the cost claim — it is NOT one plate.** ChEMBL target `CHEMBL5465552` (PP4 catalytic
+subunit) holds **exactly one activity record in the entire database**: fostriecin, 3.0 nM. Not one
+analogue, not one other chemotype. **PP4 has no chemical probe and no counter-screen series in public
+medicinal chemistry** — the assay has to be built before the panel can be run. The compounds exist; the
+assay does not.
 
 ---
 
