@@ -7116,3 +7116,57 @@ unresolved.** Every claim built on GH-spends-the-pool is downgraded accordingly.
 abolishes the local response to intra-arterial GH, i.e. GH's direct plate effect is IGF-1-*mediated*. That
 sits awkwardly against `ohlsson1992`'s null for exogenous IGF-I on germinal cells. Locally induced and
 injected IGF-1 may not be equivalent in reach or kinetics. Recorded as unresolved.
+
+---
+
+## CORR-188 — single-marker lineage-tracing column counts have been written throughout this atlas as if they described the resting zone. They describe 17, 4 and 2 per cent of it, and 77 per cent of it has never been traced by anyone.
+
+**Round 182, found by reading `kodama2025` in full rather than from its one-line finding.**
+
+The bibliography entry for `kodama2025` said "ApoE marks essentially all resting zone chondrocytes,
+providing a pan-RZ marker distinct from partial stem markers." True, and it buries the result. The paper
+measures `Pthlh`, `Axin2` and `Foxa2` **in the same 1,359 cells** — scRNAseq of a 4-week mouse growth
+plate with FISH validation on the same tissue — and gets:
+
+| marker | scRNAseq | FISH (within mCherry+) |
+|---|---|---|
+| Apoe | 97% (1,324/1,359) | — |
+| Pthlh | 17% (237) | 27% |
+| Foxa2 | 4% (57) | 12% |
+| Axin2 | 2% (32) | 4% |
+
+**77 per cent of the Apoe+ compartment (1,023 of 1,324) carries none of the three.** Of the 301 that carry
+one, **286 (>95 per cent) carry exactly one, and there is not a single triple-positive cell.**
+
+**What was wrong.** This atlas has repeatedly treated a column count from one marker as a plate-level
+quantity — in the yield decomposition, in the amplification arithmetic, and in every place a
+`mizuhashi2018` or `muruganandan2022` or `oichi2023` number was compared against a whole-plate measurement
+like growth rate or terminal cell height. Those comparisons put a marker-defined numerator over a
+tissue-defined denominator. The `route1_self_renewal_mapped` node (round 181) stated the hazard correctly —
+"the denominator of every yield computed here is a marker, not a cell type" — and then the programme
+carried on as before, because the hazard had no number attached. It has one now.
+
+**This is not a claim that the yield numbers are wrong.** The three-species amplification result (rounds
+174, 176, 177) rests on `lui2018`, `nilsson2014` and `kember1976`, none of which uses a genetic marker —
+they count cells and measure heights. Those stand. What does not stand is any inference that moves between
+a marker-traced clonal result and a plate-level rate without saying which slice it came from.
+
+**The rule going forward.** A number sourced from PTHrP-creER, FoxA2-CreERT2 or Axin2-CreERT tracing must
+carry its compartment fraction with it, and may not be divided into or multiplied by a whole-plate
+quantity without an explicit statement of what fraction of the plate it covers. `hallett2021`'s
+label-retention plateau (2.6 ± 0.9 per cent of Col2+ cells) is the one pool measurement in this route that
+escapes the problem, because it uses no marker.
+
+**Related, and resolved rather than smoothed.** Round 178 registered `hallett2021` as "IN APPARENT TENSION
+WITH `oichi2023`" — one reports a Wnt-inhibitory resting niche, the other marks progenitors with Axin2, a
+Wnt *target*. Axin2+ cells are **2 per cent** of the compartment. The two papers were never describing the
+same cells. A Wnt-active minority inside a Wnt-inhibited bulk is a composition fact. The conflict is
+withdrawn, with the resolving number attached.
+
+**Also demoted this round, and it is this atlas's own ranking rather than a source's error.** Round 180
+ranked route 4, fate leakage to osteoblast, **first** of the eight. `muruganandan2022` traced one
+population from two ages: labelled P14–P18, clone number falls 138 → 41 per hindlimb over three months;
+labelled P28–P37, 55 → 57 — **no loss**. Resting cells stop expressing col10 by P21 and their contribution
+to the secondary ossification centre winds down after P28. **The leak is an early-life term.** A subject at
+bone age 16 is past the gate. Held at grade D, not C — one population, one paper, and mouse P28 is not
+human bone age 16 — but the ranking was built without this measurement and should not have been.

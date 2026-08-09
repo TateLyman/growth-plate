@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 181.** Repo: 705 nodes, 369 gaps, 1382 refs, validator errors none.
+Last updated: **2026-08-09, after round 182.** Repo: 706 nodes, 370 gaps, 1382 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,59 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 182 — **ROUTE 1 CLOSED.** Every defining primary read in full. Three of the four gave numbers the atlas did not have; one of them settles a question open since the five-population node, and one demotes our own route ranking.
+
+`route1_closed_the_pool_is_partitioned`. Read in full this round: `kodama2025`, `muruganandan2022`,
+`hallett2021`, `horike2026` (the last already extracted in round 178 and confirmed here).
+
+**① THERE IS NO HIERARCHY — IT IS A PARTITION, AND NOW IT HAS NUMBERS.** `kodama2025` measured `Pthlh`,
+`Axin2`, `Foxa2` **in the same 1,359 cells** (scRNAseq, 4-wk mouse, FISH-validated on the same tissue):
+**Apoe 97%**, **Pthlh 17%**, **Foxa2 4%**, **Axin2 2%**. **77% of the Apoe⁺ compartment carries none of
+them**; of the 301 that carry one, **>95% carry exactly one and there are ZERO triple-positives.**
+`avijgan2026` recorded that the hierarchy was unresolved — this is *why*. **CORR-188**: every
+single-marker tracing result in this programme describes a minority slice and has been written as if it
+described the zone. The unmarked 77% has never been traced by anyone.
+
+**② THAT ALSO DISSOLVES THE ROUND-178 CONFLICT.** `hallett2021` (Wnt-inhibitory RZ) vs `oichi2023`
+(Axin2 = Wnt target marks progenitors) was registered as an unresolved tension. **Axin2⁺ = 2% of the
+compartment.** Different cells. Withdrawn, with the resolving number attached — not smoothed.
+
+**③ THE TERM-1 NUMBER, MEASURED.** `muruganandan2022`: PTHrP⁺ gave **40% MORE** primary colonies than
+FoxA2⁺ (51 v 37) — and only **11%** (6/51) formed secondaries against **38%** (14/37) for FoxA2⁺; passage
+9+ reached by **9%** of FoxA2⁺ colonies v **1.4%** of PTHrP⁺ reaching passage 5. **A 3.5× difference in
+self-renewal fraction between two subsets of one zone.** Route 1 was posed as raising a scalar that does
+not exist — and **the abundant subset is the exhaustible one.**
+
+**④ THIS DEMOTES OUR OWN ROUND-180 RANKING.** Same paper, same population, two labelling ages: **P14–P18
+→ 138 clones falling to 41** over 3 months (70% loss, to the SOC as bone); **P28–P37 → 55 to 57, NO
+LOSS.** RZ cells stop expressing col10 by P21. **Fate leakage is an EARLY-LIFE term** — route 4, which
+round 180 ranked **first**, is age-gated and this case is past the gate. Grade **D** (one population, one
+paper, mouse P28 ≠ human BA 16), but the ranking was built without it.
+
+**⑤ POOL SIZE WITHOUT A MARKER, AND THE ONE NUMBER WORTH KEEPING.** `hallett2021` label-retention decays
+86.5% → **plateau 2.6 ± 0.9%** (t½ ≈ 1 wk) — the only pool measurement here that escapes the partition
+problem. And: Wnt activation in PTHrP⁺ cells left RZ cell number **null by P36** and then cut **long
+columns at P96 from 26.5 ± 12.4 to 7.3 ± 2.5** (p=0.03). **A 72% loss of long-column output from an effect
+the authors call modest, invisible at P36.** Latency is part of the finding.
+
+**WHY IT CLOSES.** Manipulations that raised the pool **and** lengthened a **normal** bone: **one** —
+`trompet2024`, post-SOC intra-articular SAG, +3.63% femur, rat, already the ledger's only pool
+intervention with a length endpoint. Everything else was not measured for length (`newton2019` Tsc1
+charge; the vismodegib discharge nobody ran), **null in wild-type** (`horike2026`: 666-15 changes nothing
+in controls — a corrector, not an enhancer), or traded flux for pool (`hallett2021`, `newton2019`). **The
+experiment has not been run.** And structurally: `kodama2025` follows Apoe⁺ cells to 1 year — reduced but
+**still present**, in a species whose plates never close, while human plates close with resting
+chondrocytes still in them. **You do not run out of resting chondrocytes, you run out of plate.** At BA 16
+the binding terms are duration and per-progenitor yield, which is why yield became the objective in round
+174. Held at **E** deliberately — it is the premise the closure rests on and it should stay visible.
+
+**WHAT ROUTE 1 HANDS FORWARD — one gap, and it belongs to AMPLIFICATION not pool.**
+`g_l2_wnt_inhibition_in_resting_cells_long_columns_at_late_timepoint`: `hallett2021` ran one direction of
+a two-direction experiment. **Nobody has inhibited Wnt in PTHrP⁺ resting cells and counted long columns
+and bone length at P96.** Read out early and you get a false null.
+
+**NEXT: ROUTE 8 (external recruitment), then route 2 (transit time), then 5/6.**
 
 ### ROUND 181 — **ROUTE 1 MAPPED.** Four findings, two of which correct earlier rounds. One is a correction to *us*.
 
