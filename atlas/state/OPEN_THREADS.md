@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 174.** Repo: 697 nodes, 366 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 175.** Repo: 698 nodes, 366 gaps, 1380 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,70 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 175 — AMPLIFICATION IS **TRANSIT TIME**, not division rate. The target is named and the circuit is already in the atlas.
+
+`amplification_is_transit_time`. Four full texts read (Newton, Mizuhashi, Cooper — user-supplied; nilsson
+Fig 2 digitised from the supplied panel).
+
+**AMPLIFICATION IS CLONE SIZE, AND NEWTON MEASURED IT.** Col2-creERT/Confetti tracing:
+- clone size **7.8 ± 0.3** centrally vs **5.7 ± 0.1** laterally (P=0.0012) — **by distance from the
+  secondary ossification centre**. Amplification differs **1.37× within one bone** by anatomy.
+- **axitinib delaying SOC maturation REDUCED clone size** (P=0.0023) → the SOC is **causal**.
+
+**THE MECHANISM OF ITS DECLINE — and it redefines the drug.** Newton, in their own words: the change
+*"did not reflect changes in chondrocyte proliferation or growth rate"*; EdU + morphometry gave **fewer
+flat cells but more labelled hypertrophic cells** at P30 vs P3, so flat cells *"do not exhibit increased
+replication, but **move to the hypertrophic layer more rapidly** in older mice."*
+
+> **Amplification = residence time in the proliferative compartment before hypertrophic commitment.**
+> The lever is **NOT "proliferate faster"** — that is what every velocity agent does and what every assay
+> in this literature measures. It is **"delay hypertrophic commitment without slowing proliferation."**
+> The two are routinely conflated and are *opposite* in their effect on the pool.
+
+**THE CIRCUIT WAS ALREADY HERE AT GRADE B AND NOBODY CONNECTED IT.** `pthrp_ihh_feedback_loop`, written
+**2026-08-05**: PTHrP acts on PTH1R "to keep those cells cycling and **delay the switch to hypertrophy**";
+the loop is "a negative feedback loop whose **geometry sets the length of the proliferative column**."
+**Column length is amplification.** `mizuhashi2018` makes it bidirectional — the transit-amplifying
+compartment *maintains* PTHrP⁺ stem-cell fate via forward PTHrP + reverse Ihh.
+
+**COOPER RESOLVES THE APPARENT CONFLICT AND HANDS OVER h_term.** Its headline (volume dominates
+differential elongation) is about **RATE** and about **VOLUME**. Jerboa metatarsal: **volume 2.9×** mouse
+but **height only +58%** — volume includes radial expansion that adds no length. Axial height ratios are
+modest in three datasets: **1.32× mouse, 1.45–1.75× rat, 1.58× jerboa/mouse.** And **IGF-1 owns it**:
+Igf1-null mice have the **same number** of hypertrophic chondrocytes, each **30% shorter axially**, and the
+between-bone height difference is **abolished**. → **h_term is covered TWICE (GH/IGF-1 + CNP);
+amplification ZERO times.**
+
+**RATE ≠ YIELD.** A subject with years of pool left should buy rate. **A subject with months of pool left
+should buy yield.** That is the argument for the objective.
+
+**TWO INTERVENTIONS, BOTH WITH NULLS THAT MUST TRAVEL:**
+- **mTORC1 up (Tsc1 KO)** — clone size ↑ (P=0.0342), CD73 zone ↑ (P=0.0025), EdU⁺ stem cells 62.4±7.5 vs
+  24.7±3.7 (P=0.014), symmetric division ↑ — **but "neither proliferation of chondroprogenitors nor their
+  recruitment into the proliferative layer changed detectably"**, RZ became **disordered**, clusters had
+  **no ColX or Ihh**. **Pool expansion without flux** — exactly what `g_l2_larger_pool_with_intact_flux`
+  was written to catch. Opposite manipulation → fewer columns + **mild growth retardation**. Graded **X**.
+- **Hedgehog** — vismodegib +2 doses **FUSED the plate at P37**. Hh is *required*. SAG raised niche
+  proliferation but did **not** expand the CD73⁺ domain (P=0.3) — separates proliferation from identity,
+  and bears on `trompet2024`.
+
+**THE HUMAN WARNING, STATED BEFORE ANYONE PROPOSES THE DRUG.** The obvious handle is **PTH1R agonism** —
+and constitutive PTH1R activation in humans is **Jansen metaphyseal chondrodysplasia, which is
+SHORT-limbed**. Delayed commitment is **not monotonically good**; the loop has an optimum and Jansen sits
+past it. Blomstrand (PTH1R loss) is lethal at the other end. **This is a titration problem, and nothing
+has ever been titrated against amplification because amplification has never been the endpoint.**
+
+**NILSSON FIG 2 DIGITISED** (`atlas/tools/nilsson2014_fig2.py`, read off by eye, value_unverified). A
+structural amplification index (PZ cells/column ÷ RZ cells/mm) is **lower under oestrogen at every
+post-baseline age in both bones** — tibia 0.954 then **0.847** of vehicle; radius 0.972 then 0.941. The
+direction the paper asserts and never quantified. **Not the yield** — both terms are standing stocks.
+**16–21 wk is a WASHOUT: the deficit persists with no drug in either arm.**
+
+**STILL NEEDED FROM NILSSON: Figure 3 (BrdU proliferation rate).** That is the flux numerator. With it,
+the first true yield-under-a-drug becomes computable.
+
+---
 
 ### ROUND 174 — YIELD DECOMPOSED. It is **amplification**, not cell size, and nothing in the stack touches it.
 

@@ -20818,3 +20818,76 @@ edges:
     an agent could raise proliferation while spending the pool faster and leave the yield unchanged or
     worse. That distinction is invisible to every assay used on this compound so far.'
   traversal_usable: false
+- edge_id: e01300
+  source: amplification_is_transit_time
+  target: yield_is_amplification_not_cell_size
+  relation: required_for
+  sign: +
+  magnitude: clone size 7.8 vs 5.7 cells by distance from the secondary ossification centre (P=0.0012);
+    axitinib delaying SOC maturation reduces it (P=0.0023)
+  context: mouse clonal tracing - the direct measurement of the quantity round 174 identified as carrying
+    88 per cent of the yield
+  evidence_tier: T1
+  refs:
+  - newton2019
+  - mizuhashi2018
+  confidence: B
+  notes: AMPLIFICATION IS CLONE SIZE AND IT IS MEASURED, MOVABLE AND SET BY AN ANATOMICAL NICHE. It differs
+    1.37-fold WITHIN one bone according to distance from the SOC.
+  traversal_usable: true
+- edge_id: e01301
+  source: amplification_is_transit_time
+  target: pthrp_ihh_feedback_loop
+  relation: required_for
+  sign: +
+  magnitude: the loop geometry sets proliferative column length, and column length is amplification viewed
+    statically
+  context: the atlas held this at grade B from 2026-08-05 and never connected it to the yield term
+  evidence_tier: T1
+  refs:
+  - vortkamp1996
+  - mizuhashi2018
+  confidence: C
+  notes: THE CIRCUIT FOR THE UNTOUCHED TERM, ALREADY IN THE ATLAS. mizuhashi2018 makes the coupling bidirectional
+    - the transit-amplifying compartment maintains PTHrP+ stem cell fate. C not B because nobody has measured
+    amplification or clone size as a function of PTHrP or Ihh dose; the loop has never been characterised
+    quantitatively (g_l3core_001).
+  traversal_usable: true
+- edge_id: e01302
+  source: amplification_is_transit_time
+  target: pth1r_receptor
+  relation: hypothesized_link
+  sign: +
+  magnitude: PTHrP acts through PTH1R on late proliferative and prehypertrophic cells to delay the hypertrophic
+    switch - the proposed amplification mechanism
+  context: the obvious pharmacological handle, recorded WITH its human counter-example rather than as
+    a proposal
+  evidence_tier: T2
+  refs:
+  - vortkamp1996
+  confidence: speculative
+  gap_id: g_l2_what_sets_amplification_in_the_proliferative_column
+  notes: THE HUMAN GENETICS IS A WARNING. Constitutive PTH1R activation is JANSEN METAPHYSEAL CHONDRODYSPLASIA,
+    which is SHORT-LIMBED, and PTH1R loss (Blomstrand) is lethal. Delayed hypertrophic commitment is NOT
+    monotonically good - the loop has an optimum and the human gain-of-function sits past it. Any agent
+    here is a titration problem, and nothing has been titrated against amplification because amplification
+    has never been the endpoint.
+  traversal_usable: false
+- edge_id: e01303
+  source: amplification_is_transit_time
+  target: igf1_local_growth_plate
+  relation: correlates_with
+  sign: +
+  magnitude: Igf1-deficient mice have the SAME NUMBER of hypertrophic chondrocytes, each 30 per cent shorter
+    axially, and the between-bone height difference is abolished
+  context: assigning ownership of the OTHER factor - terminal cell height - so that the two arms of the
+    stack can be seen to double-cover it
+  evidence_tier: T1
+  refs:
+  - cooper2013
+  confidence: B
+  notes: H_TERM IS COVERED TWICE AND AMPLIFICATION ZERO TIMES. IGF-1 sets terminal cell height and the
+    CNP axis acts on the same zone (nakao2015). cooper2013 also separates volume from axial height - jerboa
+    metatarsal volume 2.9-fold over mouse but height only 58 per cent greater - which reconciles its volume-dominates-rate
+    headline with the round-174 finding that axial height ratios between plates are modest.
+  traversal_usable: true
