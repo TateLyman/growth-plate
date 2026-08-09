@@ -7454,6 +7454,44 @@ gaps:
     liabilities. PP5 IS THE ENZYME: the worst case, because the PPP5C height direction then argues the
     mechanism should not be pushed at all in humans, and it would explain why LB-100 works in mouse assays
     while the human genetics runs the other way.'
+- gap_id: g_l12_fostriecin_pp4_versus_pp2a_attribution
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  question: Is fostriecin dose-limiting toxicity carried by PP4 rather than by the PP2A this arm wants -
+    and if so, can a PP4-sparing fostriecin analogue separate the intended effect from the ceiling?
+  why_it_matters: 'Fostriecin is the only PP2A-selective agent ever given to humans and the only candidate
+    on this arm with the right enzyme profile - PP2A 1.4 nM against PP5 60 microM and PP1 72 microM,
+    measured. It hits PP4 at 3.0 nM and cannot avoid it. That co-hit was written down as tolerated because
+    PPP4C has 55 GWAS associations and ZERO for height. But theobald2013 knocked down each
+    fostriecin-sensitive phosphatase separately and found PP4C suppression ALONE reproduces the fostriecin
+    cellular phenotype while PP1C, PP2AC and PP5C suppression does not. IF THE TOXICITY IS PP4 AND THE
+    INTENDED EFFECT IS PP2A, THEY SIT ON DIFFERENT ENZYMES AND ARE SEPARABLE - which would turn the least
+    attractive property of this compound into a design opportunity. If instead they are the same enzyme,
+    the arm has no therapeutic window and the whole chemotype is finished.'
+  what_is_known: 'theobald2013, antisense knockdown plus high-content live-cell imaging: PP4C suppression
+    alone produces mitotic slippage followed by tetraploid apoptosis, mimicking fostriecin; PP1C, PP2AC and
+    PP5C suppression do not. swingle2009 measured a ten-analogue panel against PP1, PP2A and PP5 and found
+    the lactone-deleted analogue 10 keeps PP2A at 0.1 microM while sparing PP1 and PP5, showing the
+    chemotype tolerates deep structural simplification without losing selectivity. jiang2025 supplies a
+    nine-step modular route with late-stage diversification of the hydrophobic tail.'
+  what_is_missing: 'NO PP4 NUMBER FOR ANY FOSTRIECIN ANALOGUE. swingle2009 panel is PP1, PP2A, PP5 and two
+    chimeras - PP4 is absent from every row, so not one of the ten analogues has a known PP4 activity, and
+    the atlas cannot say whether PP2A-over-PP4 selectivity is even achievable in this chemotype. Nor has
+    anyone tested whether the fostriecin dose-limiting hepatotoxicity in dejong1999 tracks PP4 or PP2A
+    inhibition in any species.'
+  nearest_evidence: [theobald2013, swingle2009, chembl_fostriecin, dejong1999, jiang2025]
+  nearest_evidence_note: One knockdown study attributing the cellular phenotype to PP4, and one SAR panel
+    that never measured PP4.
+  discriminating_experiment: 'RE-RUN THE swingle2009 PANEL WITH PP4C ADDED. The ten analogues are already
+    synthesised and the assay is the one that paper already uses - purified enzyme with
+    32P-phosphohistone. Readouts under competing hypotheses - PP2A AND PP4 TRACK TOGETHER across all ten
+    analogues: the two activities are structurally inseparable in this chemotype, the ceiling is a class
+    property, and the arm needs a different scaffold entirely. THEY DISSOCIATE in even one analogue: that
+    analogue is the lead, and the lactone-deleted compound 10 is the first to test because deleting the
+    electrophilic warhead is the most likely thing to change a covalent or reactive-site preference. The
+    experiment costs one assay plate against compounds that already exist, and it is the cheapest
+    decision-relevant experiment anywhere on this arm.'
 - gap_id: g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
   question: Does any phosphatase inhibitor lengthen a bone in a living animal - as opposed to in organ culture -
     and does it do so without the cranial and systemic costs?

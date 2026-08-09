@@ -6425,3 +6425,52 @@ a 3.2–4.9 h half-life at 37 °C and that the prodrug delivers relatively littl
 arithmetic must be run before a fostriecin prodrug is believed. Add fostriecin's own 1.5 h half-life and
 Vdss of 0.086 L/kg — almost no tissue distribution — and continuous infusion is mandatory, which is the
 osmotic-pump format this atlas has already costed.
+
+---
+
+## CORR-167 — the masked-prodrug partition was computed with the parent's size term, ignoring the promoiety's mass
+
+**Round 154. Self-caught while re-running the table for a second molecule.**
+
+Round 153 predicted that masking fostriecin's phosphate moves cartilage partition **from ~0.21 to ~0.95**,
+a ~4.5× gain. The Donnan term is right — masking a dianion does take the charge factor from 0.22 to 1.00.
+**The size term is not.** 0.95 is the farnum2006 size term for **430 Da, the free acid**. A prodrug is
+heavier than its parent: a typical bis-POM or comparable neutral phosphate mask adds roughly 140 Da, putting
+the prodrug near 570 Da, where the size term is ~0.90.
+
+Corrected: masked fostriecin nets **~0.90, not ~0.95**, and the gain over the free acid is **~4.3×, not
+~4.5×**.
+
+**Magnitude is trivial; the error class is not.** This is a computed number that dropped a term — the same
+shape as CORR-141 (stored a selectivity magnitude, dropped its direction) and CORR-153 (mixed a tibia figure
+into a femur range). The rule: **when a modification changes a molecule, recompute every property that
+depends on the molecule, not just the one the modification was aimed at.** Masking was aimed at charge, so
+only charge was recomputed, and mass rode along unnoticed.
+
+Nothing downstream changes — the prodrug is still the design conclusion and ~4.3× is still the prize.
+
+---
+
+## CORR-168 — fostriecin's PP5 figure was a bound; the primary source measured it, and it resolved favourably
+
+**Round 154. Not a defect — the closure of a hole this atlas flagged itself.**
+
+Round 153 recorded fostriecin PP2A/PP5 selectivity as **">2,900-fold"** from ChEMBL's `>10,000 nM` PP5
+bound, and `the_best_phosphatase_compound` explicitly warned that "PP5 IS A GREATER-THAN BOUND, not a
+measurement, so the true selectivity could be far larger or could sit just above 10 microM."
+
+`swingle2009` (PMC2766224, **full text and Table 1 read**) is the primary source behind that curation.
+It reports fostriecin against purified enzymes side by side: **PP2A 1.4 nM, PP1 72 µM, PP5 60 µM** — all
+measured. That is **~43,000-fold over PP5** and **~51,000-fold over PP1**.
+
+The bound was correct and conservative. Logged because the *provenance* changed: this figure is no longer a
+curated aggregation the atlas had not read, and the caveat attached to it retires.
+
+**What the same paper cost the atlas elsewhere:** its panel is PP1/PP2A/PP5 plus two chimeras — **PP4 is
+absent from every row.** Combined with `theobald2013` (PP4C knockdown alone reproduces fostriecin's
+cellular phenotype; PP2AC knockdown does not), the tolerated-passenger reading of the PP4 co-hit is
+downgraded to D and becomes gap `g_l12_fostriecin_pp4_versus_pp2a_attribution`.
+
+**And it converted an inference into a measurement.** Round 153 argued the phosphate must be *masked*, not
+*deleted*, because it is a binding pharmacophore. `swingle2009` measured that exact compound:
+**dephosphofostriecin, analogue 7, PP2A IC50 >100 µM against 0.0014 µM for the parent — >71,000-fold.**
