@@ -1,0 +1,72 @@
+============================================================================
+HALLETT 2021 FIG 4c SOURCE DATA -- LABEL DILUTION FIT
+============================================================================
+
+[0] TRANSCRIPTION CHECK against the workbook's own Mean column
+    wk  0  n=9  computed  86.39  stated  86.39  ok
+    wk  1  n=9  computed  47.57  stated  47.57  ok
+    wk  2  n=7  computed  23.61  stated  23.61  ok
+    wk  3  n=6  computed  16.33  stated  16.33  ok
+    wk  4  n=6  computed  10.22  stated  10.23  ok
+    wk  5  n=7  computed   5.13  stated   5.13  ok
+    wk  6  n=5  computed   4.76  stated   4.76  ok
+    wk  7  n=3  computed   3.57  stated   3.57  ok
+    wk  8  n=3  computed   3.07  stated   3.07  ok
+    wk 10  n=3  computed   2.62  stated   2.62  ok
+    wk 12  n=3  computed   2.23  stated   2.23  ok
+    all replicate means reproduce the workbook
+
+[1] THE CURVE IS BIPHASIC, WHICH IS THE POINT
+    Weeks 0-5 fall 86.4 -> 5.13, a 16.8-fold loss. Weeks 5-12 fall
+    5.13 -> 2.23, a 2.3-fold loss over a longer interval. The fast
+    phase is the bulk proliferative population diluting out; the
+    tail is the slow-cycling population the paper is about.
+
+    --- FAST PHASE (wk 0-5) ---
+      decay constant lambda   : 0.5458 / week   (R2 = 0.9926)
+      half-time of the fraction:    1.27 weeks  =    8.9 days
+      mean residence 1/lambda  :    1.83 weeks  =   12.8 days
+
+    --- SLOW TAIL  (wk 5-12) ---
+      decay constant lambda   : 0.1225 / week   (R2 = 0.9424)
+      half-time of the fraction:    5.66 weeks  =   39.6 days
+      mean residence 1/lambda  :    8.16 weeks  =   57.1 days
+
+[2] WHAT THE SLOW TAIL BOUNDS
+    lambda_obs = 0.1225/week combines division and efflux.
+    Since lambda_division <= lambda_obs,
+      T_stem(mouse resting zone) >= 57 days        [LOWER BOUND]
+    If efflux out of the resting zone accounts for half the loss,
+      T_stem >= 114 days.
+    Both readings are far slower than any rat value in the graph.
+
+[3] AGREEMENT WITH THE ROUND-194 EdU BOUND
+    Round 194 swept the EdU labelling index over assumed S-phase
+    durations and got 10-59 d, with the upper end unbounded because
+    the labelling index's lower 1 s.d. bound touches zero.
+    The dilution tail lands at 57 d, at the far end of that
+    sweep. Two independent readouts of the same mice converge on the
+    SLOW answer. The mouse resting zone divides on a timescale of
+    months, not days.
+
+[4] THE CONFLICT THIS CREATES WITH hunziker1994, AND WHY ROUND 183
+    SURVIVES IT
+    hunziker1994 author-stated T_stem, rat proximal tibia:
+      hypophysectomised 50 d | +IGF-I 15 d | +GH 8 d | intact 6 d
+    Mouse lower bound here: 57 d. That is 10x the intact rat
+    value and the two cannot both describe the same quantity.
+    Three candidate reconciliations, none excluded by these data:
+      (a) the LRC gate (top 10% H2B-EGFP) selects the slowest tail of
+          a heterogeneous resting zone, so this is not the mean;
+      (b) mouse and rat resting zones genuinely differ;
+      (c) hunziker1994's 'germinal cell' compartment is broader than
+          the label-retaining fraction and includes faster cells.
+    ROUND 183 IS NOT AFFECTED. Its conclusion is a set of RATIOS
+    between four conditions measured by ONE method in ONE paper -
+    GH gives 5.00x pool consumption, 1.36x terminal cell height and
+    0.77x amplification. A systematic scale error in T_stem common to
+    all four conditions cancels in every ratio. What does not survive
+    is the ABSOLUTE amplification figure of 23-32 cells per
+    progenitor, which scales inversely with T_stem and is now
+    value_unverified.
+============================================================================

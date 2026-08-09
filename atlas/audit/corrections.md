@@ -7278,3 +7278,36 @@ across a femur carrying 33% more periosteal bone and a CT-derived length.
 **The rule this adds to CORR-189.** DXA or pQCT *area* is subject to the same prohibition as a
 zone height. No length claim may rest on a projected area, in this atlas or in a source it
 cites — including when the source's own authors make the inference.
+
+---
+
+## CORR-191 — the round-194 interim positives are female-only and sit inside the confound
+
+**Written in round 195, on the complete NDA 21-318 pharmacology review.**
+
+Round 194 read the two interim femoral-length positives from Lilly R00100/R00200 (+1.5%/+3.4%
+treating 2–8 months, +1.5%/+2.9% treating 6–12 months) as the clean answer to the age-gate
+question and as evidence that the drug does something real to elongation that the animal
+later gives back.
+
+The second carcinogenicity study used **female F344 rats exclusively**. With the complete
+review in view, every femoral-length increase anywhere in the package is female, and every
+one of them co-occurs with a large body-weight increase. The 26-week toxicity study makes
+the point inside a single protocol at matched doses: females +2/+3/+4% femur length with
+body weight +7/+10/+10%, body-weight gain ×1.4–1.8 and food efficiency ×1.4–1.7; males
+*"change not seen"*, with body weight −3.8% and food efficiency ×0.7. Three independent
+intact-male arms spanning 8–100 µg/kg/day and 18 days to one year are all null.
+
+**Scope.** The age-gate retirement survives — the two windows agree with each other, and that
+comparison is internal to one sex. What does not survive is reading the interim positives as
+a growth-plate effect available to a male subject. They are inside the confounded class.
+
+**Also corrected:** `vahle2002` is quoted throughout this atlas as reporting a *dose-dependent*
+femoral length increase. The FDA reviewer, reading the sponsor's tables for the same study,
+writes that all effects were dose-dependent *"except for the effect on femur length in males
+which was maximal at the low dose."* The published wording and the regulatory reading of the
+same data disagree, and the atlas now carries the regulator's version alongside the paper's.
+
+**The rule this adds.** A length result reported in one sex only is not a length result until
+the other sex is checked, and a length result that travels with a body-weight change of the
+same order is a body-size observation until something separates them.
