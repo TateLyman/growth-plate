@@ -518,3 +518,29 @@ li1993 (CORR-138), the hydrolysis half-life against li2024a. **Off the critical 
 1. Does **endothall itself** block FGF-induced NPR2 dephosphorylation?
 2. What is the **cartilage** concentration at a given plasma concentration?
 3. Does continuous endothall change a **bone length** in a growing animal?
+
+## Round 141 — CNP axis site-and-age verdict
+
+**Cleared this round (read at source, no longer needed):**
+- `rua2025` — Real-World Safety and Effectiveness of Vosoritide, Portugal, n=27. PMC12313777, open access.
+  Read in full. Changed the round's conclusion (CORR-146).
+- `reincke2025` — Real-world Outcome of Vosoritide, Germany, n=34. PMC11932077, open access. Read in full.
+  Corrected a unit error (CORR-145).
+- `cnpmeta2026` — pooled estimates re-verified word for word against the open-access full text.
+
+**Still outstanding — the four RCTs pooled by `cnpmeta2026` are used only through the pooled estimate:**
+the meta-analytic ULS ratio, height Z-score and the age subgroup all currently rest on the review's
+arithmetic rather than on four independent source reads. The pooled numbers were verified against the
+review's own full text, which is NOT the same as verifying them against the trials. Two of this round's
+three defects came from trusting a tabulation, so these should be read at source before any grade here
+moves up:
+- Savarirayan et al. vosoritide phase 3 (the pivotal RCT)
+- the navepegritide (TransCon CNP) phase 2/3 RCT
+- the two remaining placebo-controlled trials in the pooled set of four
+
+**Lower priority, would extend rather than check the finding:**
+- Albuquerque et al. 2026, PMID 41424367 — a SECOND, independent systematic review and meta-analysis of
+  real-world vosoritide outcomes. Useful as an agreement check on the age gradient.
+- Any vertebral-body-height (as opposed to canal-dimension) endpoint under CNP-analogue treatment, at any
+  age. Nothing found so far measures the growth of vertebral BODIES, which is the compartment this case
+  depends on.

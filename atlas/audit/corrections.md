@@ -5609,3 +5609,118 @@ step.
 direction:** `PPP5C`'s height-lowering allele rs3764613-G *lowers* PPP5C expression across seven tissues.
 Less phosphatase, shorter — the reverse of what the branch predicts, for one of the two enzymes LB-100
 actually inhibits.
+
+## CORR-143 — a bibliography entry carried a DOI that does not exist, plus the wrong journal and first author (round 141)
+
+Wiring the round-141 verdict node to `canopyspine2026` surfaced a three-field metadata defect in an entry
+added 2026-08-07:
+
+| field | as recorded | actual |
+|---|---|---|
+| doi | `10.1002/jbmr.zjaf012` | `10.1210/jendso/bvag008` |
+| journal | J Bone Miner Res | J Endocr Soc |
+| first_author | Savarirayan R | Irving M (Savarirayan is *second* author) |
+
+The recorded DOI returns **404 from both doi.org and CrossRef** — it is not a wrong-paper DOI, it is not a
+DOI at all. The PMID (41783511) and PMCID (PMC12954483) were recorded correctly and resolve to the real
+paper, which is how the mismatch was caught: a live Europe PMC lookup on the PMCID disagreed with three
+stored fields at once.
+
+**The finding text was checked line by line against the real paper and is correct** — L4 sagittal canal
+width +1.433 mm (0.547–2.320, P = .002), interpedicular distance +0.509 mm (P = .066), pathological TLK
+33.3 % vs 59.3 % (P = .037). So no number downstream is affected. The entry also asserted `local_pdf: true`
+with no such file in the repository; set to false.
+
+**Rule:** an identifier is not verified because another identifier in the same record is. Where a ref
+carries a PMID/PMCID *and* a DOI, they must agree on journal, year and first author, and the check costs
+one API call. Any DOI entered by hand rather than returned by `addref.py` gets resolved before it is
+trusted — a DOI that 404s is indistinguishable, in a citation list, from one that works.
+
+**Second-order note:** both refs this round were already in the bibliography under different ref_ids
+(`cnpmeta2026`, `canopyspine2026`) than the ones the new node invented (`cnp_meta_2026`,
+`vosoritide_spine_2026`). Registering the invented ids would have re-created the exact duplication CORR-047
+cleaned up. **Search the bibliography by PMID before minting a ref_id, not by ref_id** — `addref.py`
+catches this on PMID and did, but only because the PMID was passed.
+
+## CORR-144 — the atlas had been reading the CNP axis as limb-selective and late-age-unfavourable, and both were assumptions, not findings (round 141)
+
+Two premises had been operating implicitly across the whole NPR2 thread without ever being written down as
+claims, which is why neither was ever graded or checked:
+
+1. **That the CNP axis is a long-bone lever.** Every efficacy number the atlas carried for it — femur,
+   tibia, standing height, AGV — is appendicular or whole-body. Nothing tested the spine. For a case whose
+   remaining reserve is *spinal*, this silently mis-specified the entire question being asked of the
+   branch.
+2. **That effect decays with skeletal age**, so a late bone age is unfavourable for it.
+
+Both are now measured, and both run the other way: caudal-vertebral gain matches femoral gain in the 7E
+mouse (+8.5–9.7 % vs +8.4 %) and decays *less* (12 % vs 39 % of advantage lost); the human segment ratio is
+unchanged across four RCTs (MD −0.02, I² = 0); and the pooled velocity gain is *larger* above five years
+(1.63 vs 0.91 cm/yr, p_subgroup = 0.01).
+
+The tail data were in `elife_poa_e31343_Figure_1_source_data_1.xlsx`, **a file this atlas has had on disk
+since round 133**. Seven rounds of pharmacology were run on a branch whose site question was answerable
+from a spreadsheet already in the repository.
+
+**Rule:** an assumption that scopes what a mechanism is *for* — which bone, which age, which compartment —
+is a claim and must be written and graded like one. The failure mode here is not a wrong number; it is a
+premise that was never a proposition, so it was never eligible to be checked. When a case has a specific
+anatomical reserve, the first question of any candidate mechanism is whether it reaches that compartment,
+asked *before* the mechanism's pharmacology is worked.
+
+**And:** re-read the raw data already held before acquiring more. The get-list is not the first place to
+look.
+
+## CORR-145 — I carried three Z-scores as cm/year because I took them from a review's table instead of the paper (round 141)
+
+The round-141 verdict node recorded, under `unit: cm/year`:
+
+> A real-world cohort stratified further and reported gains of **1.77** under 5 years, **2.14** from 5 to
+> 10, and **2.30** from 10 to 16
+
+Those are not cm/year. Read at source (`reincke2025`, PMC11932077), they are **annualized growth velocity
+Z-scores** against age-, sex- and *disease*-specific reference values: 2.30 ± 1.23 (P = .0005) at ≥10–<16 y,
+2.14 ± 1.32 at ≥5–<10 y, 1.77 ± 1.36 (P = .0434) at ≥2–<5 y. Dimensionless. `cnpmeta2026` tabulates them
+without units next to genuine cm/year figures, and I read across.
+
+The error is not only the unit. **The Z-score reference velocity for untreated achondroplasia itself falls
+with age**, so part of the apparent rise across bands is a shrinking denominator, not a growing effect. The
+figure was being used as independent corroboration of the age gradient and it is much weaker than that.
+
+**What survives:** the load-bearing number — pooled AGV gain 1.63 cm/year (1.34–1.92) at ≥5 y vs 0.91
+(0.41–1.41) at <5 y, p_subgroup = .01 — was verified word for word against the meta-analysis full text and
+is genuinely cm/year, an *absolute* difference against a *concurrent placebo arm*. That construction is
+immune to the denominator artefact, and the age claim now rests on it alone.
+
+**Rule, and it is the standing "reviews are an index" rule biting in a new place:** a number lifted from a
+review's summary table has no unit until the source says what it is. Any figure that enters a derivation
+must come from the paper that measured it. This is the second defect this round traceable to trusting a
+tabulation (see CORR-146).
+
+## CORR-146 — "the axis is proportionate" was an absence read as an equivalence, and the source read contradicts it (round 141)
+
+The verdict node claimed, at grade **B**:
+
+> The CNP/NPR2 axis grows the axial skeleton **proportionately**, not the limbs preferentially
+
+resting on the pooled ULS ratio of −0.02 (95 % CI −0.04 to +0.01, p = 0.17, I² = 0). That is a
+**non-significant result**, and this atlas has a standing rule against reading absences as equivalences —
+which I then broke, in the sentence "which is what proportionate growth looks like."
+
+Reading `rua2025` at source instead of through `cnpmeta2026` made it worse: at 24 months that cohort's ULS
+ratio **does** shift, **−0.10, P ≤ 0.01**, leg-favouring — the *same direction* as the non-significant
+pooled estimate. So the coherent reading is a small leg-favouring drift that longer exposure makes visible,
+not proportionality. `reincke2025` reports no change, and `rua2025` contradicts *itself* (ULS ratio moves,
+sitting-height-to-height ratio does not, and those measure nearly the same thing).
+
+**Actions:** the proportionality claim is split out and downgraded **B → D** (conflicting evidence). A
+separate, weaker claim — *the axis grows the axial skeleton, not the limbs only* — keeps grade **B**, and
+it is the one the case actually needs; it rests on mouse caudal vertebrae (+8.5–9.7 % vs femur +8.4 %) and
+on human sitting height rising +0.79 SD at 24 months, significantly and by more than arm span. The verdict
+is unchanged: the ligand arm is still IN, because reaching the trunk is the requirement, not reaching it
+preferentially.
+
+**Rule:** when a claim rests on a null, write the claim as the null. "No significant difference in ratio X"
+is not "grows proportionately", and the gap between those two sentences is where a grade inflates. And
+before grading any claim off a pooled estimate, read at least one of the pooled or tabulated primary
+sources — the pooled number can be right while the sentence built on it is wrong.
