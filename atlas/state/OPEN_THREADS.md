@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 165.** Repo: 690 nodes, 359 gaps, 1349 refs, validator errors none.
+Last updated: **2026-08-09, after round 166.** Repo: 691 nodes, 360 gaps, 1352 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -181,6 +181,31 @@ regenerative literature — aggrecan/proteoglycan synthesis, GDF5 and BMP agents
 read the diurnal/bed-rest/microgravity literature for the **recovery curve, not the peak**. If it's all
 reversible, the term scores zero durable centimetres and we go to site instead. If a durable fraction
 exists, size it, then read the disc literature for compounds.
+
+**ROUND 166 — FOUND ONE. `resveratrol_delays_fusion_the_untouched_compound`.** Resveratrol appeared in
+**zero nodes and zero references** across 690 nodes. `karimian2013` — oral 200 mg/kg/day in rabbit —
+**delayed fusion at three physes** (distal tibia, distal femur, proximal tibia) and **improved final
+length**, with **VEGF and laminin suppression** proposed as the mechanism. Endpoints almost nothing else
+in this atlas has, and from **the same laboratory whose `chagin2007`/`karimian2008` killed tamoxifen**.
+Mechanistically it is a *different control point* from aromatase inhibition — blocking the vascular
+invasion fusion requires, not the hormonal clock — so stackable in principle.
+
+**Five reasons to doubt it, all recorded:** SD-006 applies to half the histology (zone thickness ≠ growth;
+final length and fusion timing are what carry it) · **the dose scales to ~4.5 g/day in a human**, above
+supplement range and into GI toxicity · **biphasic in vitro** — stimulates at 0.3 µM, *inhibits* at 10–50 µM
+· resveratrol is a canonical frequent-hitter chemotype · the fusion-delay arm is ovariectomised.
+
+**And an unresolved CNP interaction that must be settled before combining anything:** `prickett2023`
+(125-subject RCT) shows plasma NTproCNP **falls** after resveratrol. The obvious reading — that it
+antagonises the CNP arm — is **unsafe**, because `prickett2021` established NTproCNP falls when pathway
+output *rises*. Direction unassigned. → `g_l12_resveratrol_human_dose_and_cnp_direction`.
+
+**GPER1 checked and CLOSED.** `kang2020` eliminated ERα vs ERβ but never covered GPER1, a third membrane
+receptor. `iravani2019` tested the selective agonist G1 on the endpoint that matters: **no effect on mouse
+metatarsal growth at any concentration ex vivo, none on tibia/femur in vivo** — while oestradiol behaved
+as expected. `chou2021`/`chou2025` report the *opposite* knockout direction, but measure zone thicknesses
+rather than length, and their profile is a **trade** (proliferation up, hypertrophy down). Length was
+measured once and did not move.
 
 **SECOND, on the highest-ranked arm.** Closure timing is #1 and only *partially* exploited. Anastrozole
 removes **ligand**; `smith1994`'s 204 cm is **receptor** disruption — a different control point.
