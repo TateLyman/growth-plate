@@ -5896,3 +5896,33 @@ both ways and is noted here against my own argument. Scoliosis is part of the NP
 (`moffatt2025`), so the shared spinal cost of extreme endochondral growth applies here too. **And the
 proband's bone age was ADVANCED — 11 y 3 m at chronological age 10 y — which is the single most
 unfavourable observation for a late-bone-age case and is recorded here rather than in a footnote.**
+
+## CORR-152 — I was about to predict that an NPR3 blocker makes a CNP analogue redundant. The direct experiment says additive (round 145)
+
+Asked whether vosoritide is still needed alongside an NPR3 antagonist, I reasoned from `hakata2024`:
+sacubitril is a **clearance blocker**, it produces 2–3 % overgrowth, it is abolished in
+cartilage-specific NPR-B knockout, and it is **explicitly not additive with CNP**. Same control point,
+therefore redundant. That inference was one search away from being published in a recommendation.
+
+**`kanai2017` ran the experiment for the NPR-C arm and it is additive.** CNP-transgenic × OSTN-transgenic
+double mice had **higher circulating CNP and additional increases in bone length** over elevated CNP
+alone; the authors conclude OSTN administration is **an adjuvant for CNP therapy**.
+
+**Why the two clearance arms differ, which is the generalisable part.** Neprilysin **degrades** CNP
+enzymatically and locally. NPR-C **internalises** it, and blocking NPR-C **raises the circulating pool**.
+That matters because this atlas separately established the human growth plate **makes no CNP of its own**
+and imports it from plasma — so raising the circulating pool feeds the importer, while sparing a local
+protease does not.
+
+**The error was in how I assigned the control point.** I grouped by *function* ("both block clearance")
+when the operative variable was *whether the intervention raises the circulating pool a non-producing
+tissue imports*. Two mechanisms can share a label and sit at different control points.
+
+**Rule:** the stack-across-control-points rule is only as good as the control-point assignment, and that
+assignment must be made from the *mechanism's effect on the limiting quantity*, not from a functional
+category. Before invoking the rule to declare redundancy, name the limiting quantity and check whether
+both agents actually move it the same way.
+
+**Unresolved and pointing the wrong way for this case:** `hakata2024`'s age gate. Sacubitril worked at
+3–4 weeks and was 99 % of control at 4–5 weeks. Nobody has tested whether the NPR-C arm shares that gate,
+and a late-bone-age subject is exactly where it would bite.
