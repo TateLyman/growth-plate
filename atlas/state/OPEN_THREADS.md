@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 167.** Repo: 691 nodes, 360 gaps, 1354 refs, validator errors none.
+Last updated: **2026-08-09, after round 168.** Repo: 692 nodes, 360 gaps, 1354 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -252,6 +252,41 @@ removes **ligand**; `smith1994`'s 204 cm is **receptor** disruption — a differ
 paediatric exposures) — **but that same node records the effect is NOT simple ER antagonism** (neither
 oestradiol nor IGF-I rescued it). If the killing is a tamoxifen off-target rather than a class effect,
 **pure antagonists and SERDs were never tested.** Checkable, and it sits on the largest arm.
+
+---
+
+## THREAD F — the duration arm (**AT ITS CEILING** 2026-08-09) — every alternative route closed
+
+`the_vegf_control_point_is_the_wrong_lever`. The task was to replace resveratrol with a cleaner molecule at
+the same control point. **I tested the control point first and it does not survive — so there is no cleaner
+molecule to find.**
+
+**`gerber1999` is decisive, and `karimian2013` cites it in support of its own mechanism.** Systemic VEGF
+blockade (Flt-(1-3)-IgG) in 24-day-old mice: vessel invasion almost completely suppressed → **impaired
+trabecular bone formation**, expanded hypertrophic zone, decreased chondroclast recruitment and terminal
+chondrocyte resorption. Proliferation and maturation normal — **only resorption inhibited.** And the
+sentence that settles it: **"Cessation of the anti-VEGF treatment was followed by capillary invasion,
+restoration of bone growth."** Growth was restored *on stopping* — so it was impaired *during*. **Blocking
+VEGF converts growth into cartilage accumulation.** It is a resorption brake, not a growth lever.
+
+**This re-reads `karimian2013` against itself.** Every histological feature that paper offers as evidence
+of benefit — wider plate, taller hypertrophic zone, more hypertrophic chondrocytes, suppressed VEGF — is
+what `gerber1999` produces *while impairing bone formation*. SD-006 already forbade reading zone thickness
+as growth; Gerber supplies the specific reason. The caliper length gain is still real; the mechanism
+offered for it is the failure signature.
+
+**And the logic inverts:** if resveratrol works by *partial* VEGF suppression, the window is bounded
+**above** by the Gerber phenotype — so a **more potent, cleaner VEGF inhibitor would be worse, not better.**
+
+**Senolytics closed in the same breath, before costing anything.** `growth_plate_senescence` states plate
+senescence is **not** cellular senescence in the p16/SASP sense — it's a division-dependent decline. There
+is no p16-high SASP population to clear. Dasatinib+quercetin, navitoclax, fisetin: inapplicable by target
+definition.
+
+**THE DURATION ARM IS AT ITS CEILING WITH ANASTROZOLE.** Oestrogen removal is the only validated lever.
+Receptor route dead twice (`chagin2007` tamoxifen kills the resting zone; `nilsson2003_raloxifene` is a
+plate *agonist* that hastens fusion). Vascular route closed by `gerber1999`. Senescence route closed by
+definition.
 
 ---
 
