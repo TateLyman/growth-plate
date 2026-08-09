@@ -1,0 +1,160 @@
+# STANDING DECISIONS - the retraction index.
+#
+# WHY THIS FILE EXISTS. corrections.md is ~2,900 lines and grows every round. It is a
+# JOURNAL: excellent for reconstructing why something changed, useless as a pre-flight
+# check. The consequence was observed directly at round 142: CORR-046 retracted the
+# inference "erdafitinib pays a net FGFR1/FGFR4 cost" in round 41; rounds 47-85 rebuilt
+# that exact conclusion from the same inadmissible evidence class and wrote it into a node
+# SUMMARY; and round 142 then read the summary and reproduced the retracted claim in a
+# user-facing recommendation. Three separate re-derivations of one retracted inference.
+# A journal cannot stop that. An index can.
+#
+# THE RULE. Before writing any node that RANKS, RECOMMENDS or EXCLUDES an agent, read this
+# file. It is deliberately short. If it stops being short, that is a signal the atlas is
+# re-litigating settled questions, not a reason to split the file.
+#
+# WHAT BELONGS HERE. Only questions where a conclusion was RETRACTED and the retraction
+# implies a rule about ADMISSIBLE EVIDENCE. Ordinary numeric corrections stay in
+# corrections.md. The test: would a future round, reasoning honestly from the primary
+# literature, be likely to rebuild the retracted claim? If yes, it belongs here.
+#
+# validate.py reads this file and warns when a node asserts a retracted claim.
+
+standing_decisions:
+
+- id: SD-001
+  question: Does erdafitinib pay a net FGFR1 and FGFR4 cost that makes its net mechanism unfavourable?
+  retracted_conclusion: >-
+    The receptor ledger reads one pro-growth target (FGFR3) and two anti-growth targets
+    (FGFR1, FGFR4), so a pan-FGFR inhibitor's net effect is FGFR3 benefit minus two costs.
+  admissible_conclusion: >-
+    NO. FGFR3 spans about 65 cm of adult human height between its two directions
+    (achondroplasia to CATSHL). NEITHER FGFR1 NOR FGFR4 HAS ANY REPORTED HUMAN STATURE
+    PHENOTYPE IN EITHER DIRECTION. A pan-FGFR inhibitor's net effect is DOMINATED BY FGFR3
+    RELIEF, which is what was measured in the child (19.06 cm/year). The case for a
+    selective agent is SAFETY AND MARGIN, not net mechanism.
+  inadmissible_evidence:
+  - karolak2015   # Col2a1-Cre, deletion from EMBRYONIC cartilage
+  - cinque2015    # germline Fgfr4-/-, no bone length reported at all
+  rule: >-
+    A germline or developmental (Cre-driven from embryonic cartilage) knockout asks whether
+    a receptor is REQUIRED TO BUILD a growth plate. It does not answer what PARTIAL
+    POSTNATAL pharmacological inhibition does to an already-built adolescent plate. These
+    are different questions and must not be substituted. When a mechanistic ledger and a
+    direct measurement of net effect disagree, THE LEDGER IS WHAT IS WRONG OR INCOMPLETE.
+  what_still_stands: >-
+    The IC50 ordering is arithmetic and stands (CORR-043): FGFR1 1.20 nM engages before
+    FGFR3 3.00 nM, so dosing DOWN loses FGFR3 occupancy first. That is a statement about
+    LOST BENEFIT, not about added cost. And the outcome record stands and is what actually
+    argues against erdafitinib: five of five paediatric cases permanently discontinued,
+    three requiring surgery.
+  corrections: [CORR-046, CORR-147]
+  recurrences: 3
+  forbidden_assertions:
+  - 'FGFR1 blockade shortens bones'
+  - 'one pro-growth target and two anti-growth targets'
+  - 'the receptor ledger closes'
+  - 'net effect is the FGFR3 benefit minus an FGFR1 cost'
+
+- id: SD-002
+  question: Should growth hormone be excluded from a final-height-optimal stack?
+  retracted_conclusion: >-
+    GH is excluded - it is redundant with FGFR3 blockade and partly ANTAGONISTIC via a
+    shared ERK effector, and it spends the progenitor pool via AKT.
+  admissible_conclusion: >-
+    NO, GH IS IN, with one genuinely open question. The AKT/pool argument was withdrawn at
+    CORR-049 (chu2026 measures GH INHIBITING AKT in human tissue while growing it). The
+    ANTAGONISM prediction was FALSIFIED by the very study invoked for it - sawamura2025
+    states explicitly that neither an additive NOR an attenuating effect was seen. GH is
+    additive with a CNP analogue in humans (+2.74 cm/year), grows human growth plate tissue
+    directly, is the largest single contributor in the only combination trial with a height
+    endpoint (+4.9 cm PAH alone), and EVERY attained-adult-height figure in this atlas comes
+    from a GH-containing regimen. The open question is narrow: whether GH adds on top of a
+    POTENT RECEPTOR-LEVEL FGFR3 inhibitor. Never tested in any species.
+  inadmissible_evidence:
+  - sawamura2025  # meclozine is a repositioned antihistamine acting DOWNSTREAM of the receptor, not an FGFR inhibitor; n=8/group; powered to exclude full but NOT partial additivity; its WILD-TYPE arm shows GH outperforming the FGFR3-pathway agent broadly
+  rule: >-
+    A null from a weak downstream surrogate agent does not transfer to a potent
+    receptor-level inhibitor of the same pathway. And a study powered to exclude FULL
+    additivity is not evidence of redundancy - state the power before citing a null.
+  what_still_stands: >-
+    GH spends bone age, which is the currency a late-bone-age case cannot spend - which is
+    exactly why the aromatase inhibitor is co-administered, and that pairing is the one with
+    attained adult-height data. The KIGS dose-response saturating on final height also
+    stands and bounds how much GH can buy.
+  corrections: [CORR-049, CORR-148]
+  recurrences: 2
+  forbidden_assertions:
+  - 'growth hormone is out'
+  - 'GH is redundant with FGFR3 blockade'
+  - 'partly antagonistic'
+
+- id: SD-003
+  question: Can a gene-level GWAS association support a mechanism?
+  retracted_conclusion: >-
+    rs1969759 at PPP2R5D, p = 4e-73, is population-scale support for the phosphatase arm.
+  admissible_conclusion: >-
+    NO. A gene-level GWAS association is a LOCUS association until an eQTL or colocalisation
+    check assigns it. That variant is a significant eQTL for seven genes and PPP2R5D is the
+    weakest; CUL7 (3-M syndrome) and PEX6 (Zellweger growth failure) outrank it.
+  inadmissible_evidence:
+  - 'GWAS Catalog nearest-gene and mapped-gene annotations'
+  rule: >-
+    Nearest-gene annotation is proximity, not causality, and in gene-dense regions the
+    annotated gene is routinely not the causal one. No GWAS hit enters the atlas as support
+    for a mechanism without the assignment step.
+  corrections: [CORR-142]
+  recurrences: 1
+  forbidden_assertions: []
+
+- id: SD-004
+  question: Is a review's tabulation of a primary result usable as a source?
+  retracted_conclusion: >-
+    Figures tabulated in a systematic review can be carried into the atlas with their
+    reported values.
+  admissible_conclusion: >-
+    NO. Reviews are an INDEX, not a source. A number lifted from a review's summary table
+    has no unit until the source says what it is. Two separate round-141 defects came from
+    this: three AGV Z-scores carried as cm/year (CORR-145), and a proportionality claim
+    built on a pooled null that the primary cohort contradicts (CORR-146).
+  rule: >-
+    Any figure that enters a derivation must come from the paper that measured it. Before
+    grading a claim off a pooled estimate, read at least one pooled or tabulated primary
+    source.
+  corrections: [CORR-145, CORR-146]
+  recurrences: 2
+  forbidden_assertions: []
+
+- id: SD-005
+  question: May a PMID or DOI be entered from memory?
+  retracted_conclusion: >-
+    An identifier recalled from training can be passed to addref.py and checked afterwards.
+  admissible_conclusion: >-
+    NO. Three separate fabricated-reference incidents. No --pmid unless the identifier came
+    from a search in the SAME session, and the tool's echoed title must be read back before
+    the next command. Where a ref carries both a PMID/PMCID and a DOI they must agree on
+    journal, year and first author - that check costs one API call and caught a
+    non-existent DOI at CORR-143.
+  rule: >-
+    Identifiers are looked up, never recalled. An identifier is not verified because another
+    identifier in the same record is.
+  corrections: [CORR-117, CORR-119, CORR-135, CORR-143]
+  recurrences: 4
+  forbidden_assertions: []
+
+- id: SD-006
+  question: Is an enlarged hypertrophic zone evidence of more growth?
+  retracted_conclusion: >-
+    An enlarged hypertrophic zone under an agent indicates increased h_term and therefore
+    more elongation.
+  admissible_conclusion: >-
+    NO. Zone height rises when CLEARANCE SLOWS and cells accumulate. Elongation rate is
+    cells produced per unit time times terminal cell height, so a zone can thicken while
+    growth FALLS - karolak2015 shows an enlarged hypertrophic zone in a SHORTER bone, and
+    horike2026 shows an expanded RESTING zone in a short achondroplasia plate.
+  rule: >-
+    Never infer elongation from a zone thickness. The same trap exists one zone up: an
+    expanded resting zone is not a larger progenitor pool, it can be a turnover failure.
+  corrections: [CORR-044, CORR-050]
+  recurrences: 2
+  forbidden_assertions: []

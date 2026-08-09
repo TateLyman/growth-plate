@@ -5724,3 +5724,105 @@ preferentially.
 is not "grows proportionately", and the gap between those two sentences is where a grade inflates. And
 before grading any claim off a pooled estimate, read at least one of the pooled or tabulated primary
 sources — the pooled number can be right while the sentence built on it is wrong.
+
+## CORR-147 — the FGFR1/FGFR4 receptor ledger was retracted at CORR-046, rebuilt twice from the same inadmissible evidence, and I then served it to the user (round 143)
+
+**The user caught this, and the phrase they used was "you're looping again."** They are right, and it is
+the third re-derivation of one retracted inference.
+
+**Round 41** concluded erdafitinib was mechanistically wrong because the receptor ledger reads *one
+pro-growth target (FGFR3) and two anti-growth targets (FGFR1, FGFR4)*. **CORR-046 retracted that**, on
+two grounds that have not weakened since:
+
+1. `karolak2015` is **Col2a1-Cre, deletion from embryonic cartilage**; `cinque2015` is **germline**. Both
+   ask *"is this receptor required to BUILD a growth plate?"* Erdafitinib asks *"what does partial
+   postnatal inhibition do to an already-built adolescent plate?"* Different questions.
+2. **FGFR3 spans ≈65 cm of adult human height** between achondroplasia and CATSHL. **Neither FGFR1 nor
+   FGFR4 has any reported human stature phenotype in either direction.** A pan-FGFR inhibitor's net is
+   dominated by FGFR3 relief — which is what was measured in the child.
+
+**Then rounds 47–85 rebuilt the retracted conclusion from the same two papers,** and wrote it into the
+node *summary* and into three separate rows, including the sentence *"THE RECEPTOR LEDGER NOW READS ONE
+PRO-GROWTH TARGET AND TWO ANTI-GROWTH TARGETS"* — verbatim the claim CORR-046 retracted. Two of those rows
+even **state the disqualifying limit and then draw the conclusion anyway** ("Col2a1-Cre deletes from early
+cartilage rather than postnatally… germline-scale deletion is not the same as partial pharmacological
+inhibition"). A limit that disqualifies the inference is not a caveat to append; it is a reason not to
+draw it.
+
+**And at round 142 I read that stale summary and reproduced the retracted claim in a user-facing
+recommendation**, using it to demote erdafitinib in favour of infigratinib.
+
+**What changes.** The FGFR1/FGFR4 ledger is withdrawn as an argument about net effect wherever it appears;
+the underlying data are kept and marked datum-not-inference. What actually argues for a selective agent is
+**safety and margin** — five of five paediatric erdafitinib cases permanently discontinued, three
+requiring surgery — exactly as CORR-046 said. The IC50 ordering also stands (CORR-043), but it is a
+statement about **benefit lost on dosing down**, not about cost added.
+
+**And the comparison I should have made instead.** CORR-079 established the 19.06 cm/year came from
+**5–7 mg with frequent interruptions**, not full oncology dosing — so ~11× infigratinib's velocity at a
+**below-label** exposure. This atlas's own standing reading is that the gap is **dose, not molecule**, and
+that infigratinib's +1.74 cm/year is *"a floor set by regulatory caution, not a ceiling set by biology."*
+Round 142 quoted the floor as the achievable effect.
+
+**Rule, and it is structural rather than factual:** `corrections.md` is a **journal** — it explains why
+something changed and is useless as a pre-flight check at 2,900 lines. Retractions that imply an
+*admissible-evidence rule* now also go in **`audit/standing_decisions.yaml`**, which is short by
+construction and is **enforced by validate.py**. See CORR-149 for the mechanism and for the bug found in
+its first draft.
+
+## CORR-148 — "growth hormone is out" rested on one mouse abstract and a falsified prediction, and this atlas had already recorded the refutation without propagating it (round 143)
+
+The user's words: *"gh out is a huge statement you need to really confirm that."* Confirming it broke it.
+
+The exclusion rested on **one** study (`sawamura2025`) plus an ERK-collision inference. Reading this
+atlas's **own reference note** for that study — written 2026-08-07, never propagated into the nodes that
+cite it — reverses most of it:
+
+| what the exclusion used | what the study actually shows |
+|---|---|
+| "GH is redundant with FGFR3 blockade" | **In WILD-TYPE mice the FGFR3-pathway agent lengthened ONLY the humerus; GH lengthened femur, tibia, humerus and ulna.** In a normal skeleton GH was the broad agent and the FGFR3-pathway agent did almost nothing. |
+| "non-additive" | vehicle 17.01, meclozine 17.66, GH 17.89, **combination 17.79**, n=8/group. Atlas arithmetic: full additivity (~18.54) would likely have been detected; **partial additivity would not.** |
+| "partly antagonistic" (round 47) | **FALSIFIED in the same paper** — the authors state neither an additive *nor an attenuating* effect was seen. |
+| tests GH against an FGFR inhibitor | **Meclozine is a repositioned antihistamine acting downstream of the receptor.** It is not erdafitinib and not infigratinib. |
+
+The AKT/pool half of the argument was already withdrawn at **CORR-049**.
+
+**Against that thin negative stand three positives, two of them human.** GH is additive with a CNP
+analogue in people (+2.74 cm/yr, `mcdonnell2026`); GH grows **human** growth plate tissue directly in
+explant culture (`chu2026`); GH is the largest single contributor in the only combination trial with a
+height endpoint (+4.9 cm PAH alone vs +0.5 for the AI). **Every attained-adult-height figure in this atlas
+comes from a GH-containing regimen.**
+
+**Corrected position: GH is IN.** Its real cost is **bone age** — which is precisely what the aromatase
+inhibitor is co-administered to offset, and that is the design `cui2025` tested and the one that produced
+the best adult height. The residual open question is narrower than the exclusion was: **does GH add on top
+of a potent receptor-level FGFR3 inhibitor?** Never tested in any species; `sawamura2025` does not answer
+it.
+
+**Rule:** a null from a **weak downstream surrogate** does not transfer to a potent receptor-level
+inhibitor of the same pathway. And **state the power before citing a null** — a study powered to exclude
+full additivity is not evidence of redundancy.
+
+**Second-order:** the refutation was sitting in the bibliography note of the very reference the exclusion
+cited. A finding recorded against a *ref* does not propagate to the *nodes* that cite it. When a reference
+note is revised, the nodes citing it must be re-read.
+
+## CORR-149 — my first draft of the anti-looping check contained the exact loophole it was built to close (round 143)
+
+`audit/standing_decisions.yaml` plus a `validate.py` check was the structural answer to CORR-147. The
+first draft suppressed a warning when the node mentioned the governing correction **anywhere in the
+node**.
+
+**Tested against the pre-fix erdafitinib node, it PASSED it.** That node cites CORR-046 in row 1 and
+asserts the retracted claim in row 9 and in its summary — so a whole-node exemption reproduces precisely
+the failure it exists to catch: *a stale summary sitting on top of a corrected row.*
+
+Fixed to **proximity**: the correction must appear within 700 characters of the assertion. The retraction
+has to travel *with* the claim. Re-tested — fires on the pre-fix state, silent on the fixed state — and a
+raw-file sweep across all 679 nodes then found **four more unannotated occurrences** the first pass
+missed, including two in `the_stack_in_a_normal_human` carrying the falsified antagonism prediction as
+though it were live.
+
+**Rule:** a check written to catch a failure must be **tested against a known instance of that failure**
+before it is trusted. A green result from an untested checker is not evidence of anything. This one was
+green and wrong.

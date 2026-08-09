@@ -419,7 +419,47 @@ def validate(quota=False):
         if rv.get("local_pdf") and rv.get("type") == "primary_abstract_only":
             r.warn(f"held_but_unread/{rid}",
                    "PDF is on disk (local_pdf) but type is still primary_abstract_only "
-                   "and nodes cite it - read the full text or drop the citation")
+                   "and nodes cite it - add the full text or drop the citation")
+
+    # ---- standing decisions: re-derivation of a retracted inference ----
+    # CORR-147. corrections.md is a journal, not a checklist: one retracted inference was
+    # rebuilt three times across a hundred rounds because nothing mechanically objected.
+    # audit/standing_decisions.yaml is the short index; this check enforces it.
+    #
+    # A node may DISCUSS a retracted claim (that is how a retraction stays legible), so a
+    # hit is suppressed when the correction is cited IN PROXIMITY to the assertion.
+    #
+    # PROXIMITY, NOT WHOLE-NODE, AND THAT DISTINCTION IS THE WHOLE CHECK. The first draft of
+    # this rule exempted any node mentioning the correction anywhere. Tested against the
+    # pre-fix erdafitinib node it PASSED it - because that node cites CORR-046 in row 1 and
+    # then asserts the retracted claim in row 9 and in its summary. A whole-node exemption
+    # reproduces exactly the failure it is meant to catch: a stale summary sitting on top of
+    # a corrected row. The retraction must travel WITH the claim.
+    SD_WINDOW = 700
+    sd_doc = load(os.path.join(ROOT, "audit", "standing_decisions.yaml"), {}) or {}
+    for sd in (sd_doc.get("standing_decisions") or []):
+        sid = sd.get("id", "SD-?")
+        phrases = [p for p in (sd.get("forbidden_assertions") or []) if p]
+        if not phrases:
+            continue
+        corr_ids = [c for c in (sd.get("corrections") or []) if c]
+        exempt = re.compile("|".join(re.escape(c) for c in corr_ids + [sid]), re.I)
+        for nid, n in sorted(nodes.items()):
+            text = yaml.safe_dump(n, default_flow_style=False, allow_unicode=True)
+            for p in phrases:
+                m = re.search(re.escape(p), text, re.I)
+                if not m:
+                    continue
+                lo = max(0, m.start() - SD_WINDOW)
+                if exempt.search(text[lo:m.end() + SD_WINDOW]):
+                    continue  # retraction acknowledged next to the claim; that is correct
+                r.warn(f"retracted_inference/{nid}",
+                       f"asserts {p!r}, retracted by {sid} "
+                       f"({', '.join(corr_ids) or 'see standing_decisions.yaml'}) and "
+                       f"re-derived {sd.get('recurrences', '?')}x. Name the correction "
+                       f"WITHIN {SD_WINDOW} chars of the claim if discussing it "
+                       f"deliberately, or remove the claim")
+                break
 
     # ---- quota ----
     if quota:
