@@ -6138,3 +6138,49 @@ against NPR-B either** — every selectivity figure in this literature, for ever
 inference, not binding data — and sequence identity cannot address the thing that actually matters, which
 is whether a ligand *activates* a cyclase receptor. New gap `g_l12_npr_b_counterscreen_missing`,
 tractability 1, with the two-plate experiment specified.
+
+## CORR-158 — I said the route was gated on bench work. It was not: NPR3 had never been queried in human genetics at all (round 149)
+
+I told the user "everything documentary is now spent" and "the route is gated on bench work, not on
+reading." **They pushed back and asked me to double-check. They were right and I was wrong.** Round 140
+ran a full human-genetics interrogation of the CNP axis — GWAS Catalog, GTEx and gnomAD — across NPR2,
+PPP1CB, PPP2CA, PPP2R5D, PPP5C, SHOC2, CUL7 and PEX6. **It never queried NPR3**, which is the gene the
+compound route now targets. Five further things were available and unattempted. Two of them changed the
+picture.
+
+**1. The human gene-dosage series, which is the closest analogue of a partial pharmacological blocker.**
+A drug blocks a fraction of receptor, reversibly — nearer a heterozygote than a knockout. `lauffer2022`
+Table 2 has one family genotyped end to end:
+
+| | genotype | height SDS |
+|---|---|---|
+| proband, 14.7 y | A315T/I432F | **+3.93** (205.1 cm) |
+| father, 43.6 y | A315T/**wt** | **+1.46** (194.2 cm) |
+| mother, 47.2 y | I432F/**wt** | **+0.71** (175.2 cm) |
+| sister 1, 12.3 y | wt/wt | −0.92 |
+| sister 2, 10.8 y | wt/wt | +0.92 |
+
+Monotonic: ~0, ~+1, ~+4 SDS. Carriers have no reported skeletal or cardiovascular phenotype. Graded **D**
+— n=2 carriers, the target-height comparison is circular because it is computed from the parents, and
+adult carriers are contrasted against paediatric non-carriers.
+
+**And the biallelic figure is a floor.** The proband had **epiphysiodesis of both knees at 13.5 y** and
+both halluces at 12 y, with his trajectory still accelerating from +2.5 to +3.93 SDS. Two of two published
+biallelic cases were surgically truncated; the untreated phenotype has never been observed.
+
+**2. NPR3 is a first-rank height locus and it survives the test that killed PPP2R5D.** 95 height
+associations, leads at **p = 1E-300** in 5.3 million people. Applying the CORR-142 rule, all four leads
+tested are eQTLs for **NPR3 and no other gene** — where PPP2R5D dissolved into a seven-gene locus with
+CUL7 and PEX6 outranking it. The locus is the gene.
+
+**3. And the direction does not agree with itself — this cuts against the route.** Oriented to the
+height-increasing allele: rs1173771 **less** NPR3 (NES −0.400, 5 tissues), rs10057069 **less** (−0.190, 3
+tissues), rs3792752 **more** (+0.189, 1 tissue), rs11740580 **more** (+0.233, 1 tissue). Two each way. The
+split tracks evidence weight — 8 tissue-observations to 2 — but it is not clean, and **GTEx contains no
+cartilage, bone or growth plate**, so none of it is measured in the tissue the question is about.
+
+**Rule, and it is about me rather than the biology:** "everything documentary is spent" is a claim that
+requires an audit, not an impression. Before declaring a route gated on new experiments, enumerate the
+standard interrogations this atlas already runs — GWAS, eQTL, gnomAD constraint, structure, cheminformatics
+— and check each has actually been run *on the gene in question*. Round 140 built that pipeline and I
+assumed it had been pointed at NPR3 because it had been pointed at everything around it.
