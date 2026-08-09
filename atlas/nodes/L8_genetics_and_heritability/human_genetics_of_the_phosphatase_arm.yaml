@@ -1,0 +1,210 @@
+id: human_genetics_of_the_phosphatase_arm
+name: WHAT HUMAN GENETICS SAYS ABOUT INHIBITING A PPP PHOSPHATASE TO GROW - the target is validated,
+  the route is not, and the two readable directional signals both point the wrong way
+aliases:
+- does human genetics support phosphatase inhibition for height
+- PPP2R5D height locus
+- PPP5C height locus
+- NPR2 phosphosite variants in humans
+- can the phosphatase arm be decided from human data
+type: hypothesis
+layer: L8
+stub: false
+summary: 'THE QUESTION. The receptor-phosphorylation branch says: inhibit a PPP-family phosphatase, keep
+  NPR2 phosphorylated, grow. Before anyone runs a mouse study, human population genetics can be asked
+  whether people who carry less of these phosphatases are taller. The answer is obtainable from public
+  data and it was obtained at round 140.
+  THE TARGET IS HUMAN-VALIDATED AND WAS NEVER IN DOUBT. NPR2 is a first-rank height gene in the GWAS
+  Catalog - common intronic signals to p = 6 times ten to the minus 150, and MISSENSE variants with
+  effects from minus 1.09 to plus 0.25 trait units, including two predicted-deleterious variants that
+  INCREASE height. Raising NPR2 output raises human stature. That is not the question.
+  THE ROUTE IS THE QUESTION, AND HERE THE ANSWER IS NEGATIVE OR UNREADABLE ON EVERY GENE.
+  (1) PPP5C, ONE OF THE TWO ENZYMES LB-100 ACTUALLY INHIBITS, IS A HEIGHT LOCUS POINTING THE WRONG WAY.
+  rs3764613-G lowers height (p = 5 times ten to the minus 18, allele frequency 0.53) and the SAME allele
+  LOWERS PPP5C expression in GTEx across seven tissues at normalised effect size minus 0.17. Less PP5,
+  shorter. The branch predicts less PP5, taller.
+  (2) THE PPP2R5D SIGNAL IS NOT ASSIGNABLE TO PPP2R5D. rs1969759 is a spectacular height association -
+  p = 4 times ten to the minus 73 in 5.3 million people - and the GWAS Catalog maps it to PPP2R5D, which
+  would have looked like enormous support for loveday2015. It does not survive the eQTL check. The same
+  variant is an expression QTL for SEVEN genes, and PPP2R5D is the WEAKEST of them: PEX6 at minus 0.27
+  across ten tissues and CUL7 at minus 0.12 both beat it, and BOTH ARE ESTABLISHED HUMAN SHORT-STATURE
+  GENES - CUL7 causes 3-M syndrome, PEX6 causes Zellweger-spectrum growth failure. The height-lowering
+  allele lowers all three. The locus cannot be attributed.
+  (3) PPP1CB, THE PP1 CATALYTIC SUBUNIT, HAS NO HEIGHT ASSOCIATION AT ALL across 43 catalogued
+  associations. Mildly reassuring against the worry that endothall five-fold PP2A-over-PP1 selectivity
+  would cause harm through PP1 - but an absence, not evidence.
+  AND THE DIRECT TEST OF THE PHOSPHOSITE HYPOTHESIS CANNOT BE RUN IN HUMANS AT ALL. Querying gnomAD v4
+  for all 4723 NPR2 variants and filtering to the seven regulatory serines and threonines returns
+  S513N at 4 alleles, S518L at 11, T529I at 4 and T529S at 5 - every phospho-destroying variant is at a
+  frequency near one in a million, and there is NO common variant at any of the seven sites. About one
+  person in seventy-seven thousand carries a phospho-null NPR2 allele, so the UK Biobank exome cohort
+  would contain roughly six of them. No existing or foreseeable human cohort can test this.
+  WHAT THIS MEANS FOR THE STACK, STATED PLAINLY. The phosphatase arm CANNOT BE ADDED on present evidence
+  and CANNOT BE REMOVED either. The human genetics that would have decided it is either unassignable, or
+  points against, or is impossible to power. The two readable directional signals - PPP5C cleanly, and
+  PPP2R5D if it were assignable - both say LESS PHOSPHATASE, SHORTER. That is the opposite of the
+  prediction, and it is the single most important thing this round found. It does not kill the branch,
+  because a lifelong fifteen per cent expression difference across every tissue is a different
+  perturbation from acute substrate-selective inhibition in cartilage. But it removes the last hope of
+  settling this from documents. THE ARM IS HELD PENDING ONE EXPERIMENT, not carried and not discarded.'
+quantitative:
+- parameter: 'PPP5C - A CLEAN HEIGHT LOCUS WHOSE DIRECTION CONTRADICTS THE BRANCH'
+  value: 'rs3764613-G, allele frequency 0.535, associated with DECREASED height at p = 5 times ten to the
+    minus 18, effect 0.0055 trait units. The same G allele is the alternative allele in GTEx and LOWERS
+    PPP5C expression, normalised effect size minus 0.17 across SEVEN tissues, with only one lncRNA as an
+    alternative assignment. A second signal, rs759302, is also a PPP5C expression QTL at minus 0.37'
+  unit: p-value, allele frequency, normalised effect size
+  conditions: 'GWAS Catalog association download for ensemblMappedGenes PPP5C, retrieved 2026-08-09;
+    GTEx v8 single-tissue eQTL API for chr19_46392960_A_G. PPP5C is one of the two enzymes darcy2019
+    identifies LB-100 as a catalytic inhibitor of, alongside PPP2CA.'
+  species: human
+  source_ref: gwas_catalog_2026
+  uncertainty: 'THE DIRECTION IS THE POINT AND THE MAGNITUDE IS TINY - 0.0055 standard deviations per
+    allele, which is about a millimetre. FOUR REASONS NOT TO OVERREAD IT. A constitutive 17 per cent
+    expression difference in every tissue for a lifetime is not the same perturbation as acute
+    inhibition in cartilage. PP5 has hundreds of substrates and the net height effect integrates all of
+    them, including the growth hormone axis. GTEx has no cartilage. And CCDC8, the third 3-M syndrome
+    short-stature gene, appears as an eQTL at the neighbouring signal rs759302, so even this locus is not
+    completely clean. WHAT SURVIVES ALL FOUR CAVEATS: there is no human genetic evidence that reducing PP5
+    makes people taller, and the only readable evidence says the reverse.'
+- parameter: 'THE PPP2R5D HEIGHT LOCUS DISSOLVES ON EQTL INSPECTION - IT IS PEX6 AND CUL7 TERRITORY'
+  value: 'rs1969759-T lowers height at p = 4 times ten to the minus 73 in 5,314,291 people and the
+    catalogue maps it to PPP2R5D. The same variant is a significant expression QTL for SEVEN genes:
+    PEX6 minus 0.27 in ten tissues, RP1-20C7.6 minus 0.32 in six, RRP36 plus 0.15 in three, PPP2R5D minus
+    0.14 in TWO, CUL7 minus 0.12 in two, CNPY3 and RPL7L1 in one each. Corroborated by rs2236356 and
+    rs875775, which give the same ordering'
+  unit: normalised effect size and tissue count
+  conditions: 'GWAS Catalog and GTEx v8 as above, for chr6_42987786_C_T, chr6_43010588_G_A and
+    chr6_43005950_T_C. CUL7 biallelic loss causes 3-M syndrome, a primordial dwarfism; PEX6 loss causes
+    Zellweger-spectrum disease with growth failure. The height-lowering allele lowers all three genes.'
+  species: human
+  source_ref: gwas_catalog_2026
+  uncertainty: 'THIS IS THE MOST IMPORTANT NEGATIVE OF THE ROUND BECAUSE OF WHAT IT NEARLY BECAME. Read
+    naively, a p = 4e-73 height association at PPP2R5D would have been presented as massive
+    population-scale corroboration of loveday2015 and would have moved the phosphatase arm from grade X
+    to something respectable. It is not attributable. Two of the seven co-regulated genes are established
+    human short-stature genes with far stronger and more consistent expression effects than PPP2R5D, and
+    the direction is identical for all of them, so nothing distinguishes them without colocalisation
+    statistics this atlas has not run. THE CORRECT STATEMENT IS THAT 6p21.1 IS A HEIGHT LOCUS OF UNKNOWN
+    CAUSAL GENE, and that PPP2R5D is the least likely of the three candidates on current evidence.'
+- parameter: 'HUMAN VARIANTS AT THE SEVEN NPR2 REGULATORY PHOSPHOSITES - THEY EXIST, AND THEY ARE FAR TOO
+    RARE TO TEST'
+  value: 'across all 4723 NPR2 variants in gnomAD v4: S513N at 4 alleles (frequency 2.7 times ten to the
+    minus 6), S518L at 11 (7.5e-6), T529I at 4 (2.7e-6) and the conservative T529S at 5 (3.4e-6), plus
+    synonymous changes at T516, S518 and S526 and one nonsense at S526. NO COMMON VARIANT AT ANY OF THE
+    SEVEN SITES. Summing the phospho-destroying missense gives about one carrier per seventy-seven
+    thousand people'
+  unit: allele count and frequency
+  conditions: 'gnomAD v4 GraphQL API, all NPR2 variants with exome and genome allele counts, filtered to
+    protein positions 513, 516, 518, 523, 526, 529 and 545 - the seven juxtamembrane serines and
+    threonines whose dephosphorylation switches the receptor off. Retrieved 2026-08-09.'
+  species: human
+  source_ref: gnomad_v4
+  uncertainty: 'THIS IS A DEFINITIVE ANSWER TO A QUESTION THE ATLAS HAD NOT ASKED SHARPLY ENOUGH: CAN THE
+    PHOSPHOSITE HYPOTHESIS BE TESTED IN HUMAN COHORTS? No. A 500,000-person biobank would contain about
+    six carriers of a phospho-null NPR2 allele, which powers nothing. NOR IS THE RARITY ITSELF
+    INFORMATIVE - per-residue missense frequencies of one in a million are unremarkable and imply no
+    unusual selection. TWO THINGS THIS DOES ENABLE, both requiring clinical rather than population data:
+    the individual carriers could be phenotyped for stature if they can be identified, and S518L in
+    particular - eleven alleles, a leucine substitution that cannot be phosphorylated - is the natural
+    human equivalent of a single-site alanine mutant.'
+- parameter: 'THE TARGET, AS OPPOSED TO THE ROUTE, IS CONFIRMED AT POPULATION SCALE'
+  value: 'NPR2 height associations in the GWAS Catalog include rs3763631 at p = 6 times ten to the minus
+    150, rs2281645 at 2e-21, rs1885376 at 3e-16, and MISSENSE variants rs1388954473 (Leu615Phe, height
+    DECREASE 1.09 units, p = 6e-11), rs140870470 (Arg358Trp, INCREASE 0.25, p = 2e-11) and rs114147262
+    (Arg787Trp, INCREASE 0.12, p = 9e-8)'
+  unit: p-value and trait units
+  conditions: 'GWAS Catalog download for ensemblMappedGenes NPR2; variant consequences from the Ensembl
+    VEP REST API against the canonical transcript ENST00000342694. Arg358 is extracellular, Leu615 and
+    Arg787 are in the kinase-homology domain - NONE of the three is at a regulatory phosphosite.'
+  species: human
+  source_ref: gwas_catalog_2026
+  uncertainty: 'TWO OF THE THREE MISSENSE VARIANTS ARE PREDICTED DELETERIOUS AND YET INCREASE HEIGHT,
+    which if real means they are activating rather than inactivating - consistent with lauffer2020 and
+    with jeong2026 activity-height relationship, and further evidence that the RECEPTOR is a real human
+    height lever with both directions accessible. But the trait units are not stated consistently across
+    studies and a 1.09-unit effect for a single missense allele is implausibly large if the unit is a
+    standard deviation, so the magnitudes here should not be quoted as effect sizes without checking each
+    source study. THE DIRECTIONAL PATTERN IS WHAT IS USED, NOT THE NUMBERS.'
+- parameter: 'PPP1CB, THE PP1 CATALYTIC SUBUNIT ENDOTHALL ALSO HITS, IS NOT A HEIGHT LOCUS'
+  value: 'zero height associations among 43 catalogued GWAS associations for PPP1CB'
+  unit: count
+  conditions: 'GWAS Catalog download for ensemblMappedGenes PPP1CB, retrieved 2026-08-09. Relevant
+    because li1993 puts endothall at only 5-fold PP2A-over-PP1 selectivity, so any dose that inhibits
+    PP2A meaningfully will inhibit PP1 substantially.'
+  species: human
+  source_ref: gwas_catalog_2026
+  uncertainty: 'AN ABSENCE, AND A WEAK ONE - a gene can be essential to growth and still carry no common
+    regulatory variation that survives selection, which is arguably the expectation for a catalytic
+    subunit. It is recorded because the alternative result, a strong PP1 height signal in the wrong
+    direction, would have been a serious problem for a compound with 5-fold selectivity, and it is not
+    there. NOTE ALSO that SHOC2, which scaffolds a PP1 holophosphatase and is a RASopathy gene, DOES have
+    a height signal at p = 7e-25, but rs17128212 has no GTEx eQTL at all, so it too is unassignable.'
+localization:
+- 'all of this is whole-body germline variation read against adult standing height; none of it is
+  cartilage-specific, and GTEx contains no growth plate, so every expression direction is inferred from
+  tissues that are not the one that matters'
+human_evidence: direct
+human_evidence_note: 'This node is entirely human - GWAS Catalog associations, GTEx expression QTLs and
+  gnomAD allele frequencies, all retrieved from public APIs at round 140. Its weakness is not species but
+  tissue and perturbation type.'
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: 'There is no translation step - the data are human height in humans. The risk
+  here is of the opposite kind: over-reading germline expression variation as a model for acute
+  pharmacological inhibition in one tissue.'
+confidence: C
+claim_grades:
+- claim: The 6p21.1 height signal cannot be attributed to PPP2R5D.
+  grade: B
+  basis: 'Three independent lead variants give the same eQTL ordering, with PEX6 and CUL7 stronger and
+    more consistent than PPP2R5D, and both are established human short-stature genes with the matching
+    direction. Not A because formal colocalisation was not run.'
+- claim: Reducing PPP5C is associated with shorter stature in humans.
+  grade: C
+  basis: 'One clean lead variant at p = 5e-18 with a seven-tissue eQTL in the matching direction, and a
+    second supporting signal. Effect size is about a millimetre per allele, GTEx has no cartilage, and
+    CCDC8 sits nearby, so this is directional evidence rather than a quantitative one.'
+- claim: The NPR2 phosphosite hypothesis cannot be tested in any existing human cohort.
+  grade: A
+  basis: 'Direct enumeration of gnomAD v4. Every phospho-destroying variant at the seven sites is at
+    frequency near one in a million; there is no common variant at any site. The arithmetic to expected
+    carriers in a 500,000-person biobank is not in dispute.'
+- claim: Human genetics supports inhibiting a PPP-family phosphatase to increase height.
+  grade: X
+  basis: 'Graded X - repeated as a supporting idea, not supported by the primary data. shuhaibar2021
+    invokes loveday2015; loveday2015 is n = 5, ascertained, head-dominant and AKT-attributed; the
+    population-scale signal that would have corroborated it is unassignable; and the two readable
+    directions both run the other way.'
+key_refs:
+- ref_id: gwas_catalog_2026
+  year: 2026
+  type: dataset
+  role: the association downloads for NPR2, NPPC, PPP1CB, PPP2CA, PPP2R5D, PPP5C, SHOC2, CUL7 and PEX6
+- ref_id: gtex_v8
+  year: 2020
+  type: dataset
+  role: the expression QTL directions that dissolve the PPP2R5D locus and give PPP5C its direction
+- ref_id: gnomad_v4
+  year: 2024
+  type: dataset
+  role: the enumeration of human variation at the seven NPR2 regulatory phosphosites
+- ref_id: loveday2015
+  year: 2015
+  type: primary
+  role: the rare-variant claim this node was built to test at population scale, and which does not
+    survive it
+- ref_id: li1993
+  year: 1993
+  type: primary
+  role: the 5-fold PP2A-over-PP1 selectivity that makes PPP1CB relevant
+- ref_id: darcy2019
+  year: 2019
+  type: primary
+  role: identifies PPP5C as one of LB-100 two catalytic targets, which is why the PPP5C direction matters
+open_questions:
+- g_l2d_004
+- g_l12_no_in_vivo_bone_length_for_any_phosphatase_inhibitor
+contradicts: []
+last_verified: '2026-08-09'

@@ -5574,3 +5574,38 @@ because endothall is 5–7 % absorbed. That is true of *endothall*, not of the s
 **Rule:** a structure–activity correlation constrains the compounds it was measured on. It does not
 constrain what a different substitution pattern can do to selectivity, and it must not be generalised into
 "this chemotype cannot be optimised."
+
+## CORR-142 — I nearly recorded a p = 4×10⁻⁷³ height locus as support for the phosphatase arm (round 140)
+
+Querying the GWAS Catalog for the phosphatase genes returned **rs1969759 at PPP2R5D, p = 4 × 10⁻⁷³ in
+5,314,291 people**. Read at face value that is population-scale corroboration of `loveday2015` and would
+have moved the phosphatase arm's human-genetics claim from grade **X** to something respectable.
+
+It does not survive the eQTL check. The same variant is a significant expression QTL for **seven** genes
+in GTEx v8, and PPP2R5D is the weakest of them:
+
+| gene | tissues | median NES |
+|---|---|---|
+| PEX6 | 10 | −0.27 |
+| RP1-20C7.6 | 6 | −0.32 |
+| RRP36 | 3 | +0.15 |
+| **PPP2R5D** | **2** | **−0.14** |
+| CUL7 | 2 | −0.12 |
+
+**CUL7 causes 3-M syndrome** (primordial dwarfism) and **PEX6 causes Zellweger-spectrum growth failure**.
+The height-lowering allele lowers all three, so nothing distinguishes them without colocalisation. Two
+further lead variants, rs2236356 and rs875775, reproduce the same ordering.
+
+**The correct statement is that 6p21.1 is a height locus of unknown causal gene, and PPP2R5D is the least
+likely of the three candidates.** The claim stays at grade X.
+
+**Rule tightened, and it is a new one for this atlas:** a gene-level GWAS association is a *locus*
+association until an eQTL or colocalisation check assigns it. Nearest-gene and mapped-gene annotations in
+the GWAS Catalog are proximity, not causality — and in gene-dense regions the annotated gene is routinely
+not the causal one. No GWAS hit may enter the atlas as support for a mechanism without the assignment
+step.
+
+**And the same check run on the other genes produced the round's most important finding, in the opposite
+direction:** `PPP5C`'s height-lowering allele rs3764613-G *lowers* PPP5C expression across seven tissues.
+Less phosphatase, shorter — the reverse of what the branch predicts, for one of the two enzymes LB-100
+actually inhibits.
