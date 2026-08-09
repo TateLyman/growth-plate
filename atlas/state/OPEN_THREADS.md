@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 170.** Repo: 694 nodes, 363 gaps, 1378 refs, validator errors none.
+Last updated: **2026-08-09, after round 171.** Repo: 694 nodes, 364 gaps, 1380 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -354,6 +354,61 @@ tamoxifen. FDA label: paediatric BMD under fulvestrant **unstudied**.
 **CORR-180 also raised:** `brjesson2012`'s bibliography one-line finding stated the **opposite** of the
 paper's conclusion. Confined to the index string — the node `estrogen_receptor_alpha` had it right and
 graded it D. Corrected in place, prior string preserved under `finding_corrected_from`.
+
+### ROUND 171 — CORR-182. THE ROUND-170 HEADLINE WAS WRONG. The user caught it, and the atlas already held the answer.
+
+**My claim:** *"slowing the bone-age clock through the oestrogen axis does not convert into adult height."*
+**The objection:** height = velocity × duration; all three of my sources tested an oestrogen agent
+**alone**, where velocity falls as the clock slows. A stack with independent accelerators does not.
+**Correct — and `duration_velocity_combination` said so at grade B on 2026-08-06, three days before I
+contradicted it.**
+
+- `mauras2008` — **placebo-controlled**, anastrozole added to GH: **linear growth COMPARABLE** between
+  arms while bone age advanced +2.5 vs +4.1 y at 3 y (p<0.0001) → **PAH +6.7 vs +1.0 cm**. The mechanism
+  as an experiment: hold velocity, slow the clock, height appears.
+- `mauras2016` — randomised three-arm, near-final height, n=71 at BA 15.3: **AI +18.2, GH +20.6, AI/GH
+  +22.5 cm** (p=0.01) vs +13.0 expected. SDS −1.4 / −1.4 / **−1.0** (p=0.06, borderline).
+- `nct01248416` — PAH change: AI +0.5, GH +4.9, **combination +7.4 cm**.
+- `tanriverdi2023` — **true adult height +3.3 cm** (173.1 vs 169.8, p=0.044), but only at ≥2 y exposure.
+
+**TWO reasons my claim was unsound, not one.** (1) **Monotherapy** — `geffner2024` even says AIs "appear
+to have an additive effect" added to GH, a sentence I quoted in round 170 and didn't follow. (2) **The
+endpoint** — two of my three were **predicted**-height nulls, and `nearfinal2026` shows PAH **ranked two
+drugs backwards**: at 1 y anastrozole +4.2 > letrozole +1.4 (p=0.03); at near-final height **letrozole
++4.2 > anastrozole +0.8 (p=0.013)**. A PAH null is weak evidence about attained height.
+
+**Procedural countermeasure (this is the real lesson):** rounds 169–170 searched the literature hard and
+never grepped the atlas's own nodes for the claim being graded. **Before grading claim X, grep nodes for
+X — not just refs for evidence.**
+
+**WHAT SURVIVES, AND IT IS THE PART THAT MATTERS FOR THIS CASE.**
+- **Duration agents are NOT one class.** `nct00355030` — GnRHa + GH **fails** on true adult height (−1.8
+  vs −1.9 SDS, n=91) because the analogue removes the **pubertal spurt** along with the fusion signal.
+  Anastrozole is the right duration agent *precisely because it preserves the spurt.* Do not substitute.
+- **The prize is bounded and measured.** `nearfinal2026`, 72 males with **advanced bone age** to near-final
+  height: **overall median gain +1.2 cm** (IQR −1.9 to +4.2). Best subgroup (letrozole) +4.2 cm.
+  Independently predicting more gain: **earlier pubertal stage (p=0.012)**, longer treatment (p=0.005),
+  **concurrent GH (p=0.022)**. Optimising everything identified reaches single digits, against ~25 cm for
+  the genetic nulls.
+- **Starting late is a measured penalty, not a hypothesised one** — and it is the one gradient that speaks
+  directly to bone age 16.
+
+**RECEPTOR ARM DOES NOT REOPEN.** Tested explicitly. An AI has a real duration effect that monotherapy
+trials hid behind a falling velocity term. A pure antagonist has **no measured longitudinal-growth effect
+in any wild-type animal** — there is no duration term for GH to multiply, and the `sims2012` bone-age
+effect is cancellation of a *pathological* excess specific to MAS, which anastrozole already covers.
+
+**NEW GAP — the operative unknown for this case:**
+`g_l12_does_the_ai_gh_combination_still_work_above_bone_age_15`. **Every dataset stops just below the
+band.** `mauras2016` *ended* at BA 15.3; `cui2025` uses BA ≥13 as a floor with **no upper stratum**;
+nobody reports **starting** above 15. Answerable by **re-stratifying data that already exists** by bone
+age at start rather than pubertal stage — the radiographs and heights are in all three cohorts.
+
+**Also fixed:** `duration_velocity_combination` was a grade-B node with **no claim_grades** — six added,
+including the two X-grades above (PAH unreliable; duration agents not interchangeable). Round-169 and
+round-170 nodes amended so neither carries the withdrawn claim.
+
+---
 
 ### ROUND 170 — both round-169 gaps checked, one new control point found and closed, and the answer to the whole oestrogen/closure area
 

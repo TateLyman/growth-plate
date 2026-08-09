@@ -6860,3 +6860,60 @@ height endpoint, and a mechanism (`brjesson2012` + `movrareskrtic2014`) that pre
 the six oral SERDs, the PROTAC and the covalent antagonists **without testing them**. Had I written the
 node on the pre-correction claim it would have recommended an experiment that had already been run four
 times and reported negative — the same shape of error as CORR-174.
+
+---
+
+## CORR-182 — I concluded that slowing the bone-age clock does not buy height, from monotherapy trials, while the atlas already held a grade-B node showing it does when a velocity agent is on board
+
+**Rounds 169–170, caught by the user.** The most serious correction in this sequence, because nothing was
+missing — the answer was already written down.
+
+**What I claimed.** Round 170's headline: *"slowing the bone-age clock through the oestrogen axis does not
+convert into adult height … blockade depth is not the rate-limiting variable."* Built on three human
+tests — `varimo2019` (letrozole vs placebo, adult height null), `zegarra2024` (deeper suppression, same
+PAH), `sims2012` (bone age halved, PAH unchanged).
+
+**The objection.** Height = velocity × duration. Every one of those three tested an oestrogen agent
+**alone**, and in each the velocity term fell as the clock slowed. A stack carrying independent velocity
+drivers does not have that problem. So the monotherapy nulls may be *velocity* failures, not *duration*
+failures.
+
+**That is correct, and the atlas already said so.** `duration_velocity_combination`, written 2026-08-06,
+confidence **B**:
+- `mauras2016` — randomised three-arm, near-final height, n=71 at bone age 15.3: absolute height change
+  **AI +18.2, GH +20.6, AI/GH +22.5 cm** (P=0.01) against +13.0 expected; height SDS −1.4 / −1.4 / **−1.0**
+  (P=0.06).
+- `mauras2008` — **placebo-controlled**, anastrozole added to GH: **linear growth comparable between
+  groups** while bone age advance slowed (+2.5 vs +4.1 y at 3 y, P<0.0001), giving **PAH +6.7 cm vs +1.0**.
+  This is the mechanism stated as an experiment: hold velocity, slow the clock, height appears.
+- `nct01248416` — PAH change: AI alone +0.5, GH alone +4.9, **combination +7.4 cm**.
+- `tanriverdi2023` — true adult height, **+3.3 cm** (173.1 vs 169.8, P=0.044) in those exposed ≥2 years.
+
+**Two independent reasons my claim was unsound, not one.**
+1. **Monotherapy.** All three of my sources withheld the velocity term. `geffner2024` even states that AIs
+   "appear to have an additive effect" when added to GH — a sentence I quoted in the round-170 ref note
+   and did not follow. Same failure shape as CORR-174: quoting a source's hedge and skipping its point.
+2. **The endpoint.** Two of my three sources (`zegarra2024`, `sims2012`) are **predicted**-adult-height
+   nulls, and `nearfinal2026` shows PAH **ranked two drugs backwards against the real endpoint** — at 1
+   year anastrozole +4.2 vs letrozole +1.4 cm (P=0.03); at near-final height **letrozole +4.2 vs
+   anastrozole +0.8 cm** (P=0.013). A PAH null is weak evidence about attained height.
+
+**Why this is worse than a literature gap.** Rounds 169 and 170 searched hard and found real papers. What
+they did not do is **read the atlas's own node on the question before contradicting it**. `mauras2016`,
+`mauras2008`, `tanriverdi2023` and `nearfinal2026` were all already in the bibliography; the node
+synthesising them was three days old and graded B. The countermeasure is procedural, not bibliographic:
+**before grading a claim X, grep the nodes for the claim, not only the refs for the evidence.**
+
+**What survives, and it is not nothing.** The prize is bounded and the boundary is measured.
+`nearfinal2026`, 72 males with advanced bone age followed to near-final height: **overall median gain
++1.2 cm** (IQR −1.9 to +4.2), with **earlier pubertal stage** (P=0.012), **longer treatment** (P=0.005)
+and **concurrent GH** (P=0.022) each independently predicting more. Starting late is a measured penalty.
+And duration agents are **not one class** — `nct00355030` shows GnRH-analogue + GH fails on true adult
+height (−1.8 vs −1.9 SDS, n=91) because the analogue removes the pubertal spurt along with the fusion
+signal. Anastrozole is the right duration agent precisely because it preserves the spurt.
+
+**What does not reopen.** The receptor arm (round 169) stays closed, for a reason unaffected by this
+correction: fulvestrant produced **no growth-plate effect at all** in three wild-type animal studies, so
+there is no duration effect for a velocity agent to multiply. Its bone-age effect in `sims2012` was
+cancellation of a *pathological* oestrogen excess — which anastrozole already covers in a subject who does
+not have McCune-Albright syndrome.
