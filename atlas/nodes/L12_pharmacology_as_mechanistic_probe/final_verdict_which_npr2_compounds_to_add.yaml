@@ -149,6 +149,29 @@ quantitative:
     principle, but at the CATALYTIC site and as an INHIBITOR - the wrong site and the wrong sign. Combined
     with CORR-174, the position is that the intracellular allosteric site has a mapped residue
     (Thr640/Ile624), a validated point-mutant positive control, and NO COMPOUND.'
+- parameter: 'PROMISCUITY CHECKED AND CLEARED - COMPOUND 1 IS A WELL-BEHAVED SCREENING COMPOUND, NOT A
+    FREQUENT HITTER'
+  value: 'PubChem cross-assay hit rates, active assays over assays tested: COMPOUND 1 (CID 647514) 11 of
+    783 = 1.4 PER CENT. Charge probe (CID 3588620) 6 of 574 = 1.0 per cent. Morpholine analogue
+    (CID 786411) 12 of 785 = 1.5 per cent. The two regioisomers (CID 647949, CID 2291818) 21 of 805 and 21
+    of 790 = 2.6 and 2.7 per cent. MCUF-42 (CID 176516521) has never been screened - it appears in no
+    bioassay at all'
+  unit: per cent of assays in which the compound scores active
+  conditions: COMPUTED BY THIS ATLAS 2026-08-09 from PubChem PUG REST, comparing aids_type=active against
+    aids_type=all for each CID.
+  species: not_applicable
+  source_ref: pubchem_gcb_hts
+  atlas_derived: true
+  uncertainty: 'THIS CHECK WAS OPENED AS AN ALARM AND CLOSED AS A REASSURANCE, AND THE ALARM WAS AN ERROR
+    OF DENOMINATOR. Compound 1 is active in eleven mechanistically unrelated assays - serotonin receptor,
+    tau filament binding, cytochrome P450, PHOSPHO1, a two-pore potassium channel, G9a, JMJD2A, malarial
+    plastid, MDR1 - which reads as a frequent-hitter profile until the denominator is applied. It has been
+    TESTED IN 783 ASSAYS. A 1.4 per cent hit rate is normal-to-low; a genuine frequent hitter runs well
+    above 5 per cent. THE WHOLE SERIES IS CLEAN ON THIS AXIS. LIMITS: PubChem active/inactive calls are
+    depositor-defined and inconsistent across assays, cross-assay hit rate says nothing about whether the
+    GC-B activity is real, and it does not offset the BRENK thioamide alert, which is a metabolic-liability
+    flag rather than an interference flag. What it does remove is the specific worry that this chemotype
+    scores in the GC-B screen because it scores in everything.'
 localization:
 - 'all of this concerns NPR2/GC-B in growth-plate chondrocytes, with the vascular compartment as the
   liability'
@@ -192,6 +215,13 @@ claim_grades:
     toxicology, a BRENK thioamide alert that the SAR makes unremovable, and a nearest characterised
     sibling with 0.26 per cent oral bioavailability. Being the best compound in a screen is not being a
     drug, and the distance between them is the entire preclinical package.'
+- claim: Compound 1 is a promiscuous frequent hitter whose GC-B activity is likely an artifact.
+  grade: X
+  basis: 'NO - CHECKED AND CLEARED. It is active in 11 mechanistically unrelated assays, which looks
+    alarming until the denominator is applied: it has been tested in 783. A 1.4 per cent cross-assay hit
+    rate is normal-to-low, and the whole series behaves the same way (1.0 to 2.7 per cent). This does not
+    make the GC-B activity real, but it removes the specific hypothesis that the chemotype scores here
+    because it scores everywhere.'
 - claim: Compound 1 and CID 3588620 should be added as research probes.
   grade: C
   basis: 'They are the only actionable items either thread produced: both purchasable (14 and 7 vendors),

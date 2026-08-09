@@ -6688,3 +6688,35 @@ in fostriecin's cellular phenotype. Designing a PP4-sparing fostriecin analogue 
 building the PP4 assay and the counter-screen *from scratch* — that is not one plate, and the earlier
 gap text saying "one plate against compounds that already exist" was **too optimistic**: the compounds
 exist, the assay does not.
+
+---
+
+## CORR-176 — a promiscuity alarm raised and withdrawn within one check, because I read a numerator without its denominator
+
+**Round 162. Caught before it entered a node, but recorded because the near-miss is the lesson.**
+
+Verifying compound 1 (CID 647514), I pulled its PubChem assay record and found it **active in 11
+mechanistically unrelated screens** — 5-HT receptor, tau filament binding, cytochrome P450 2A9, PHOSPHO1,
+a two-pore potassium channel, G9a, JMJD2A-Tudor, malarial plastid, MDR1, a second Scripps antagonist
+screen, and the GC-B screen. That reads as a textbook frequent-hitter profile, and I was about to record
+it as a serious mark against the compound.
+
+**It has been tested in 783 assays.** 11/783 = **1.4%** — normal to low. A genuine frequent hitter runs
+well above 5%. The whole series is clean on this axis:
+
+| compound | active | tested | hit rate |
+|---|---|---|---|
+| **compound 1** (CID 647514) | 11 | 783 | **1.4%** |
+| charge probe (CID 3588620) | 6 | 574 | **1.0%** |
+| morpholine analogue (CID 786411) | 12 | 785 | 1.5% |
+| regioisomers (647949 / 2291818) | 21 / 21 | 805 / 790 | 2.6% / 2.7% |
+| **MCUF-42** (CID 176516521) | — | **0** | never screened |
+
+**The error class: a count of hits is meaningless without the count of tries.** Eleven is a large number
+in isolation and a small number against 783. Legacy MLSMR compounds have been through enormous assay
+panels, so raw active-assay counts will always look alarming for them, and this atlas would have drawn
+the wrong conclusion from one had the denominator not been checked.
+
+**Net effect: Thread A is slightly stronger, not weaker.** The promiscuity hypothesis is excluded (graded
+X). It does **not** offset the BRENK thioamide flag, which is a metabolic-activation liability rather than
+an assay-interference one — different failure mode, still unresolved.
