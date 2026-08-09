@@ -138,8 +138,8 @@ standing_decisions:
   rule: >-
     Identifiers are looked up, never recalled. An identifier is not verified because another
     identifier in the same record is.
-  corrections: [CORR-117, CORR-119, CORR-135, CORR-143]
-  recurrences: 4
+  corrections: [CORR-117, CORR-119, CORR-135, CORR-143, CORR-162]
+  recurrences: 5
   forbidden_assertions: []
 
 - id: SD-006
@@ -158,3 +158,29 @@ standing_decisions:
   corrections: [CORR-044, CORR-050]
   recurrences: 2
   forbidden_assertions: []
+
+- id: SD-007
+  question: Is a NPR-C/NPR3 ANTAGONIST the molecule this programme wants?
+  retracted_conclusion: >-
+    The compound specification is a sub-kilodalton, NPR3-selective ANTAGONIST; M372049 satisfies it.
+  admissible_conclusion: >-
+    NO. NPR-C is bifunctional with OPPOSITE SIGNS - a clearance sink in cartilage (blocking it is the
+    growth mechanism) and the Gi-coupled receptor through which CNP protects the aorta (blocking it is
+    the liability). A functional ANTAGONIST phenocopies the NPR-C-null aorta; M372049 is used in the
+    literature precisely to abolish CNP aortoprotection. The correct profile is an OCCUPANT THAT
+    AGONISES - cANF(4-23) class - which blocks clearance while supplying the protective Gi signal.
+  inadmissible_evidence:
+  - 'any compound specification derived from cartilage constraints alone'
+  rule: >-
+    A target specification must enumerate every tissue where the target is expressed and ask what the
+    target DOES there, not merely how much is there. NPR-C was modelled as a sink everywhere because
+    that is what it is in cartilage. And at a receptor with no cyclase domain, agonist versus antagonist
+    is not a semantic convention - it is the difference between preserving and removing cytoprotection.
+  what_still_stands: >-
+    The growth mechanism is unchanged: occupancy of NPR-C blocks clearance and raises endogenous ligand,
+    and that is common to both classes. Only the vascular sign differs.
+  corrections: [CORR-161]
+  recurrences: 1
+  forbidden_assertions:
+  - 'sub-kilodalton, NPR3-selective antagonist'
+  - 'M372049 is the compound'

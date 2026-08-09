@@ -6250,3 +6250,64 @@ and the picture is more heterogeneous than the first two carriers suggested.
 genotypes or heights there and homozygosity was never confirmed as biparental. **I have not independently
 verified this** — the document supplied this round is `boudin2018`, not Moffatt — and it is recorded as
 user-supplied and unconfirmed. Treated as closed; no further effort to be spent there.
+
+## CORR-161 — the compound specification asked for an antagonist. That is the wrong molecule, and the atlas identified it as the right one (round 151)
+
+`the_compound_this_thread_needs` derives, from cartilage constraints, **"a sub-kilodalton, NPR3-selective
+ANTAGONIST."** At round 145 I found M372049 — 887 Da, "best-in-class NPR-C antagonist," published
+synthesis — and called it the compound the spec asked for.
+
+**`aubdool2025` uses that same molecule, at 10 µM, as the tool that abolishes CNP's aortoprotection in
+primary human aortic smooth muscle cells.**
+
+**NPR-C is bifunctional and the two functions have opposite signs for this programme:**
+
+| compartment | role of NPR-C | what the drug wants |
+|---|---|---|
+| growth plate | **clearance sink** — internalises CNP, plate makes none of its own | NPR-C **silenced** |
+| aorta / VSMC | **Gi-coupled receptor through which CNP protects structure** — not NPR-B | NPR-C **active** |
+
+**The evidence that the aortopathy is real and receptor-specific.** Global NPR-C-null mice have *elongated
+stature and long digits* **and** a *dilated ascending aorta* at baseline, mirroring Marfan. Ang II augments
+the dilation **with no change in blood pressure**. CNP infusion protects wild-type and **not** NPR-C-null
+animals. So the mouse reproduces *both halves* of the human biallelic phenotype — which kills the two
+comfortable readings of boudin2018's aortic finding (Z-score artefact of extreme height; marfanoid
+association without mechanism).
+
+**It is not a CNP-elevation effect, and that keeps the rest of the stack intact.** CNP is *protective* —
+CNP-null mice have worse aneurysms — and vosoritide carries no aortic signal. Only *removing NPR-C* is
+implicated.
+
+**The corrected specification: an occupant that signals, not a blocker.** cANF(4-23) is simultaneously the
+classical clearance-blocking ligand **and** a selective NPR-C agonist, and at 0.4 mg/kg/day it *reduced*
+aortic expansion while downregulating Tgf-β1, Smad2, Mmp2/9, Bmpr2, Runx2, Eng and Bax. Occupancy delivers
+the growth mechanism; agonism delivers the protection.
+
+**Which reverses the candidate ranking.** `nishizawa2017` compound 23 is built from the cANF/ANP(5-15)
+scaffold and its own paper attributes its final substitutions to increased **NPR3 agonist activity** — the
+protective class. M372049 is the antagonist class. *The molecule with the better mass, better partition and
+a published synthesis has the wrong pharmacology; the one with the right pharmacology is the bigger peptide
+with no bone data.*
+
+**CORR-156 warned that "agonist" and "antagonist" are convention-dependent at a receptor with no cyclase
+domain and must not be treated as informative. That was right about the words and wrong about the stakes —
+the distinction is not semantic, it is the difference between protecting the aorta and removing its
+protection.**
+
+**Rule:** a compound specification derived from one compartment's constraints is not a specification. Before
+naming a molecule, enumerate every tissue where the target is expressed and ask what the target *does*
+there — not just how much of it there is. This spec modelled NPR-C as a sink everywhere because that is
+what it is in cartilage.
+
+## CORR-162 — addref refused a ref_id I had built from lab association rather than the record (round 151)
+
+I passed `--ref-id moyes2025` for PMID 40177775 on the strength of recognising the Hobbs lab. The tool
+refused: the record resolves to **Aubdool AA**. Nothing was written.
+
+This is the fourth incident in the fabricated-identifier family (CORR-117, CORR-119, CORR-135, CORR-143),
+and the first where the guard caught it before anything entered the bibliography — the `--ref-id` /
+resolved-record mismatch check added after CORR-135 is what stopped it.
+
+**Rule extension for SD-005:** the ref_id is an identifier too. Deriving it from a remembered author, lab
+or group is the same failure as typing a PMID from memory. Build ref_ids from the record the tool echoes,
+never from recognition.
