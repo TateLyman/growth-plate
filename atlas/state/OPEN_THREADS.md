@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 166.** Repo: 691 nodes, 360 gaps, 1352 refs, validator errors none.
+Last updated: **2026-08-09, after round 167.** Repo: 691 nodes, 360 gaps, 1354 refs, validator errors none.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -189,6 +189,45 @@ length**, with **VEGF and laminin suppression** proposed as the mechanism. Endpo
 in this atlas has, and from **the same laboratory whose `chagin2007`/`karimian2008` killed tamoxifen**.
 Mechanistically it is a *different control point* from aromatase inhibition — blocking the vascular
 invasion fusion requires, not the hormonal clock — so stackable in principle.
+
+**ROUND 167 — FULL TEXT READ. The dose objection is WITHDRAWN (CORR-177) and the stack analysis is done.**
+
+*Dose resolves favourably.* Human Cmax across 0.3 mg–5 g = **0.3–2.4 µM**; ex vivo **active 0.3 µM**;
+**inhibitory 10 and 50 µM — 4–20× above the top of the human range.** The achievable window sits in the
+stimulatory band and *cannot reach* the inhibitory band. My BSA scaling to "4.5 g/day" compared the wrong
+quantity. Real caveat: conjugates exceed parent by up to **20.3× AUC**, so free drug at a chondrocyte is
+unknown.
+
+*It does NOT do what killed tamoxifen.* Apoptosis 0.2% on RES = 0.2% control (E2 1.1%). Resting zone
+**more than doubled** (0.26 vs 0.11 mm²). Opposite sign from tamoxifen on the exact liability.
+
+*Fusion data is the strongest part.* Distal tibia at 4 wk: **57% unfused on RES (8/14) vs 6% control
+(1/17)**, 0% on E2, p<0.05. Proximal tibia at 10 wk — **the last plate to fuse and the one that sets final
+length** — **0% fused on RES vs 50% fused control**, p<0.05.
+
+*Magnitudes are small and inconsistent:* ovary-intact tibia **+1.9%** (p<0.05) but femur p=0.1 ns; OVX
+femur **+1.5%** (p<0.05) but tibia no difference. The significant bone **swaps between arms**.
+
+**STACK VERDICT — collides with two of four arms:**
+- **GH — ANTAGONISED, in humans.** `brown2010`: 40 volunteers, 0.5–5 g × 29 d, **IGF-I and IGFBP-3 fell in
+  ALL volunteers, p<0.04**, most marked at 2.5 g. Rabbit showed no change; **human data govern.** Magnitude
+  not in the abstract — that decides nuisance vs disqualifying.
+- **ERDAFITINIB — PK risk, serious.** Erdafitinib is cleared **39% CYP2C9 + 20% CYP3A4 = 59%** through
+  enzymes resveratrol inhibits, against a paediatric record of 5/5 permanent discontinuation, 3 surgeries.
+  Plus a smaller PD conflict: RES **cuts BrdU incorporation** while erdafitinib works by relieving FGFR3's
+  brake *on proliferation*.
+- **ANASTROZOLE — probably clean, weaker test than it looks (CORR-179).** Uterus weight unaffected — but
+  `nilsson2003_raloxifene` shows raloxifene **passes that same test while being a full plate agonist.**
+  What saves it is the fusion direction itself. Residual risk is **redundancy** if the mechanism is ERα
+  antagonism.
+- **VOSORITIDE — CNP direction still unresolved**, plus a new overlap question: RES raises hypertrophic
+  cell number and terminal size, which is the term CNP serves.
+
+**And every animal is FEMALE** — the same lab ran its tamoxifen work in male rats, so this was a choice.
+No male resveratrol growth-plate data exists anywhere.
+
+**RALOXIFENE CLOSED** (`nilsson2003_raloxifene`): an oestrogen **agonist** at the rabbit plate — hastens
+fusion. Wrong direction.
 
 **Five reasons to doubt it, all recorded:** SD-006 applies to half the histology (zone thickness ≠ growth;
 final length and fusion timing are what carry it) · **the dose scales to ~4.5 g/day in a human**, above

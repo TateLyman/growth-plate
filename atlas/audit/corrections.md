@@ -6720,3 +6720,86 @@ the wrong conclusion from one had the denominator not been checked.
 **Net effect: Thread A is slightly stronger, not weaker.** The promiscuity hypothesis is excluded (graded
 X). It does **not** offset the BRENK thioamide flag, which is a metabolic-activation liability rather than
 an assay-interference one — different failure mode, still unresolved.
+
+---
+
+## CORR-177 — I scaled milligrams per kilogram when the right comparison was concentration, and called a reachable dose unreachable
+
+**Round 167. Overturned by the full text the project owner supplied.**
+
+Round 166 recorded the resveratrol dose as *"the single biggest problem with the finding"*: 200 mg/kg/day
+in rabbit, body-surface-area scaled to ~65 mg/kg/day human ≈ **4.5 g/day at 70 kg**, against a 150–500 mg
+supplement range, and paired that with the biphasic in-vitro response (stimulation at 0.3 µM, inhibition
+at 10 and 50 µM) as a second objection.
+
+**The full text answers both, and the reasoning was wrong before the number was.** `karimian2013`'s
+discussion states human PK across **0.3 mg to 5 g per person yields peak plasma concentrations of
+0.3–2.4 µM.**
+
+| | concentration |
+|---|---|
+| ex vivo **stimulatory** | **0.3 µM** |
+| human Cmax range, 0.3 mg → 5 g | **0.3 – 2.4 µM** |
+| ex vivo **inhibitory** | **10 and 50 µM** — 4–20× above the top of the human range |
+
+**The achievable human window sits inside the stimulatory band and cannot reach the inhibitory band.**
+That defuses the biphasic objection too — you cannot overshoot into inhibition by oral dosing.
+
+**Where the error came from.** Cross-species dose scaling in mg/kg answers "what dose do I give"; it does
+not answer "is the active concentration reachable." When the *in vitro* active concentration and human
+plasma concentrations are both known, comparing them directly is strictly better, and I had both. BSA
+scaling is the tool you reach for when concentration data is absent — it was not.
+
+**The real PK caveat is a different one and it survives:** `brown2010` shows conjugate AUC exceeds parent
+by **up to 20.3-fold**, so total plasma Cmax badly overstates *free* resveratrol, and the concentration
+reaching a chondrocyte is unknown and plausibly well below 0.3 µM. The claim is upgraded **D → C**, not
+to B.
+
+---
+
+## CORR-178 — the addref guard caught a fabricated PMID again, and this time before it reached a node
+
+**Round 167. Not a defect in the atlas — SD-005 machinery working.**
+
+Registering the raloxifene reference, I passed `--pmid 12639930 --ref-id nilsson2003` from recall. The
+tool refused:
+
+> REFUSED (--ref-id does not match the resolved record): you asked for 'nilsson2003' but 12639930 resolves
+> to Tamura K 2003, 'Enhanced expression of uterine stathmin during the process of implanta…'
+
+The correct identifier is **PMID 12639932** — two digits away, a different paper, same year. Looked up by
+title search and verified against the echoed record before writing. A second refusal then caught that
+`nilsson2003` was **already taken** by PMID 12740020, so the entry went in as
+`nilsson2003_raloxifene` rather than being silently suffixed.
+
+**This is the fifth incident under SD-005 and the third the guard has stopped pre-write.** Recording it
+because the pattern is now well characterised: the failure mode is not inventing a plausible-looking
+number from nothing, it is recalling a *nearly correct* one. 12639930 versus 12639932 would have survived
+any sanity check that did not actually resolve the identifier.
+
+---
+
+## CORR-179 — uterus weight is not a sufficient proxy for growth-plate oestrogen activity, and the paper that proves it is from the same laboratory
+
+**Round 167. Caught while checking the anastrozole interaction.**
+
+The reassurance I was about to record: `karimian2013` shows uterus weight unaffected by resveratrol at
+every timepoint, with or without gonads (0.5 vs 0.6 g; E2 18 g, p<0.001) — which appears to exclude both
+oestrogenic activity *and* aromatase inhibition in one measurement, and therefore to clear the
+anastrozole combination.
+
+**`nilsson2003_raloxifene` breaks that inference.** Same rabbit model, same laboratory: **raloxifene left
+uterus weight unchanged while acting as a full oestrogen agonist at the growth plate** — hastening distal
+tibial fusion (p<0.05) and cutting tibial growth velocity (p<0.001). A compound can pass the uterus test
+and still be a plate agonist.
+
+**What survives.** The plate outcome is measured directly and runs the *other* way: resveratrol **delays**
+fusion where an agonist **hastens** it. So resveratrol is not acting as an oestrogen at the plate — that
+conclusion stands on the fusion data, not on the uterus data. The residual risk is **redundancy, not
+harm**: `karimian2013` explicitly cannot exclude ERα *antagonism*, and if that is the mechanism then
+resveratrol and anastrozole occupy the same control point and stack sub-additively.
+
+**General lesson worth carrying:** tissue selectivity does not transfer between tissues. Raloxifene is an
+ER antagonist in uterus and breast and an agonist at the rabbit growth plate. A compound's SERM/SERD
+classification predicts nothing about its sign at this tissue, and no peripheral endpoint substitutes for
+measuring the plate.
