@@ -6917,3 +6917,45 @@ correction: fulvestrant produced **no growth-plate effect at all** in three wild
 there is no duration effect for a velocity agent to multiply. Its bone-age effect in `sims2012` was
 cancellation of a *pathological* oestrogen excess — which anastrozole already covers in a subject who does
 not have McCune-Albright syndrome.
+
+---
+
+## CORR-183 — three rounds auditing one fifth of the duration arm, because I never opened the ledger that ranks the arms
+
+**Rounds 169–172. Procedural, and the third instance of the same family in four rounds.**
+
+**What happened.** Asked what was left on duration, I audited the oestrogen axis — receptor (169),
+intracrine/sulfatase (170), combination (171) — and concluded the arm was at its ceiling. The atlas
+contains `ledger_what_is_dead_what_is_settled_what_is_live`, a bookkeeping node written for exactly this
+failure, whose **"WHAT IS LIVE, RANKED"** section already placed **the pool term second among all live
+arms**, citing `trompet2024` as the only pool intervention with a length endpoint. I never opened it.
+
+**Why the scope error mattered more than any single fact.** `fusion_is_proliferative_exhaustion` (grade B,
+`weise2001` read in full) states that fusion is **what happens to a plate that has run out**, and that
+oestrogen **accelerates every senescence parameter and causes none of them** — a rate multiplier on a
+programme already running. Under that model the duration arm has five sub-levers and only one is
+oestrogenic. I audited the multiplier and reported on the clock.
+
+**The four I did not touch, all already scoped in the atlas:**
+- **Yield** — `the_exchange_rate_between_growth_and_pool_depletion`, grade B: *height is pool size times
+  yield per cell spent, and nothing has ever targeted the yield.* Estimated at a **tenfold** spread
+  between a fusing and a non-fusing bone in the same animal.
+- **Pool expansion** — `trompet2024`, intra-articular SAG, **+3.63% femur at 6 months, 8/8, P=0.00004**,
+  effect *growing* over time.
+- **Pool spending by the stack itself** — `chu2025`, GH depletes the progenitor pool; authors propose
+  intermittent dosing.
+- **Cycling** — `g_l2_cycling_the_progenitor_pool`, **tractability 5, the highest in the atlas**.
+
+**The family.** CORR-171 (depth on one paper mistaken for coverage of a field), CORR-181 (asserted a
+literature was empty without searching the research code), CORR-182 (graded a claim the atlas already
+graded), and now CORR-183 (audited a sub-lever and reported on the arm). All four are the same failure at
+different scales: **searching outward for evidence before reading inward for what is already held.**
+
+**Standing countermeasure, to be applied before any round that grades or closes an arm:**
+1. Open `ledger_what_is_dead_what_is_settled_what_is_live` and `OPEN_THREADS.md` **first**.
+2. `grep` the nodes for the claim, not only the refs for the evidence.
+3. State which **sub-lever** of the eight-term decomposition is being audited, and do not report the
+   result as a verdict on the whole term.
+
+**What is not withdrawn.** The oestrogen findings of rounds 169–171 all stand — the AF-2 mechanism, the
+sulfatase closure, the CORR-182 combination correction. Their scope claims do not.

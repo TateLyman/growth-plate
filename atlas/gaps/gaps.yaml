@@ -13610,3 +13610,49 @@ gaps:
     timing gradient is the dominant term, and the honest expectation for a late start is the +1.2 cm median
     rather than the +9.5 cm three-arm difference.'
   tractability: 3
+- gap_id: g_l7_bone_age_cost_per_centimetre_across_the_stack
+  question: What is the bone-age advance per centimetre of height gained, for each agent in this stack,
+    and do they differ enough that the stack could be reweighted on that basis?
+  type: known_unknown
+  layer: L7
+  why_it_matters: 'IT IS THE QUANTITY THE WHOLE PROBLEM TURNS ON AT BONE AGE 16 AND NOBODY HAS EVER PUT
+    THE AGENTS ON ONE AXIS. Duration and velocity are not independent: every centimetre bought by a velocity
+    agent is bought at some cost in skeletal maturation, and at bone age 16 the remaining budget is small
+    enough that the EXCHANGE RATE matters more than the velocity. The per-agent numbers already exist
+    in published trials. mauras2008 is the clean instance and it is striking: adding anastrozole to growth
+    hormone left LINEAR GROWTH COMPARABLE between arms while bone age advanced +2.5 versus +4.1 years
+    over 3 years (P<0.0001) - the aromatase inhibitor bought duration WITHOUT buying velocity, which is
+    a pure improvement in the exchange rate. dauber2026 is the claimed counterpart on the CNP axis at
+    +4.0 SD velocity with the bone-age ratio reportedly unmoved. If those two are real and additive on
+    this axis, the stack already contains one agent that lowers the cost and one that delivers velocity
+    cheaply - and the reweighting question becomes concrete rather than rhetorical.'
+  what_is_known: mauras2008 reports bone age advance and linear growth in both arms, placebo-controlled,
+    over 3 years. zegarra2024 reports bone-age advance for letrozole versus anastrozole with height velocity.
+    nearfinal2026 reports near-final height against initial predicted height in 72 advanced-bone-age males
+    with treatment duration and concurrent GH recorded. mauras2016 reports absolute height change at near-final
+    height for AI, GH and the combination, with bone age at end. chu2025 supplies a mechanism by which
+    GH pays a cost in PROGENITORS rather than in bone age - a different currency that a bone-age ratio
+    does not capture at all.
+  what_is_missing: 'THE DIVISION. No paper, and no node in this atlas, reports bone-age advance PER CENTIMETRE
+    for any agent, let alone for several on comparable axes. Specifically missing: (a) the bone-age figure
+    from dauber2026, which is not in its abstract and is the single most load-bearing unverified number
+    in the stack; (b) any bone-age data at all for vosoritide in a NORMAL-FGFR3 subject at late bone age;
+    (c) any way to price the progenitor currency against the bone-age currency, since chu2025 shows the
+    two can diverge.'
+  nearest_evidence:
+  - mauras2008
+  - dauber2026
+  - zegarra2024
+  - nearfinal2026
+  - chu2025
+  nearest_evidence_note: Every one of these reports both a height term and a maturation term in the same
+    subjects; none of them takes the quotient, and no review compares them across agents.
+  discriminating_experiment: 'NOT AN EXPERIMENT - A TABLE, BUILT FROM PUBLISHED DATA, PLUS ONE FULL-TEXT
+    RETRIEVAL. For each agent with paired height and bone-age data, compute centimetres gained per year
+    of bone age advanced, against the untreated or placebo comparator in the same study. Start by obtaining
+    the bone-age data from dauber2026 full text or supplement. PRE-REGISTERED READING: if the agents separate
+    by more than about twofold on this ratio, the stack should be weighted toward the cheap ones at late
+    bone age and the composition question is answerable from existing data. If they do not separate, then
+    bone-age cost is a property of growth itself rather than of the agent, the exchange rate is not a
+    lever, and the only remaining duration routes are the progenitor ones - yield, pool and schedule.'
+  tractability: 4

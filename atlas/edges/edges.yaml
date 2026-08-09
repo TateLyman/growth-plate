@@ -20637,3 +20637,93 @@ edges:
     of a PATHOLOGICAL oestrogen excess specific to McCune-Albright syndrome, which anastrozole already
     covers. Nothing to multiply.
   traversal_usable: true
+- edge_id: e01290
+  source: the_duration_term_broken_down
+  target: fusion_is_proliferative_exhaustion
+  relation: required_for
+  sign: +
+  magnitude: senescence is spontaneous in vehicle-treated animals and fusion occurs when proliferation
+    approaches zero; oestrogen accelerates every senescence parameter and causes none of them
+  context: rabbit, the keystone experiment - and the reason the duration arm is five sub-levers rather
+    than one
+  evidence_tier: T1
+  refs:
+  - weise2001
+  confidence: B
+  notes: THE REFRAME. Duration is time until proliferative exhaustion, not time until oestrogen closes
+    the plate. Rounds 169-171 audited the rate multiplier and reported the result as a verdict on the
+    clock. CORR-183.
+  traversal_usable: true
+- edge_id: e01291
+  source: the_duration_term_broken_down
+  target: the_exchange_rate_between_growth_and_pool_depletion
+  relation: correlates_with
+  sign: +
+  magnitude: metacarpal 14 versus femur 146 micrometres of bone per resting zone cell spent, non-overlapping
+    95% intervals inside one animal
+  context: mouse, this atlas arithmetic on the lui2018 open per-animal workbook; the sub-lever the atlas
+    flagged as never attempted
+  evidence_tier: T2
+  refs:
+  - lui2018
+  - schrier2006
+  - nilsson2014
+  confidence: C
+  notes: HEIGHT IS POOL TIMES YIELD AND NOTHING HAS EVER TARGETED THE YIELD. schrier2006 forces the term
+    by exclusion - oestrogen and dexamethasone both LOWER resting-zone proliferation yet move senescence
+    in opposite directions, so neither observable state variable carries the effect. Estimate flagged
+    value_unverified.
+  traversal_usable: true
+- edge_id: e01292
+  source: the_duration_term_broken_down
+  target: smoothened
+  relation: activates
+  sign: +
+  magnitude: resting-zone PTHrP+ cells 65.5 to 139.8 per mm2 (P=0.017) with proliferation and terminal
+    cell size unchanged; femur +3.63% at 6 months, 8/8 animals, P=0.00004
+  context: rat and mouse, intra-articular and intra-SOC bead delivery - short SYSTEMIC SAG changed nothing
+    (tibia P=0.29, femur P=0.247)
+  evidence_tier: T1
+  refs:
+  - trompet2024
+  confidence: C
+  notes: 'THE ONLY POOL INTERVENTION WITH A LENGTH ENDPOINT AND THE ONLY ARM THAT ADDS A PROGENITOR. The
+    effect GREW from 1 to 6 months rather than washing out. Two honest limits already recorded: the bead
+    moved pool, h_term and growth rate together, and the route is local delivery into the secondary ossification
+    centre, not an oral drug.'
+  traversal_usable: true
+- edge_id: e01293
+  source: the_duration_term_broken_down
+  target: growth_hormone
+  relation: degrades
+  sign: '-'
+  magnitude: GH shifts growth-plate stem cell divisions toward the committed side and depletes the slow-cycling
+    pool, cell-autonomously via GHR
+  context: mouse at 5 mg/kg/day intraperitoneally, about 100-fold a human therapeutic dose and called
+    pharmacological by the authors; one human epiphysiodesis specimen shows PTHrP+ cells are PRESENT in
+    the adolescent resting zone
+  evidence_tier: T1
+  refs:
+  - chu2025
+  confidence: D
+  notes: 'MECHANISM DEMONSTRATED, CONSEQUENCE NOT - the GHR conditional knockout did NOT change bone length
+    (tibia P=0.31, femur P=0.35), and the same paper shows GH signalling is REQUIRED for the pool to generate
+    chondrocytes. Graded D for conflicting. The authors own proposal is SCHEDULE, not avoidance: intermittent
+    GH, especially in non-GH-deficient children.'
+  traversal_usable: true
+- edge_id: e01294
+  source: the_duration_term_broken_down
+  target: aromatase_inhibitor_anastrozole
+  relation: correlates_with
+  sign: +
+  magnitude: bone age +2.5 versus +4.1 years over 3 years (P<0.0001) with LINEAR GROWTH COMPARABLE between
+    arms
+  context: human, placebo-controlled, GH-deficient adolescent boys already receiving growth hormone
+  evidence_tier: T1
+  refs:
+  - mauras2008
+  confidence: B
+  notes: THE CLEAN HUMAN INSTANCE OF BUYING DURATION WITHOUT BUYING VELOCITY. The aromatase inhibitor
+    added no growth; it lowered the bone-age cost of the growth the GH was already producing. This is
+    the template for the bone-age-cost-per-centimetre table that nobody has built.
+  traversal_usable: true

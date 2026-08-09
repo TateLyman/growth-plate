@@ -1,6 +1,12 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 171.** Repo: 694 nodes, 364 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 172.** Repo: 695 nodes, 365 gaps, 1380 refs, validator errors none.
+
+> **READ THIS BEFORE GRADING OR CLOSING ANY ARM (CORR-183).** Open
+> `ledger_what_is_dead_what_is_settled_what_is_live` **first**; grep the *nodes* for the claim, not only
+> the refs for the evidence; and state which **sub-lever** of the eight-term decomposition you are
+> auditing. Four consecutive corrections (CORR-171, -181, -182, -183) are the same failure: searching
+> outward for evidence before reading inward for what is already held.
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -354,6 +360,64 @@ tamoxifen. FDA label: paediatric BMD under fulvestrant **unstudied**.
 **CORR-180 also raised:** `brjesson2012`'s bibliography one-line finding stated the **opposite** of the
 paper's conclusion. Confined to the index string — the node `estrogen_receptor_alpha` had it right and
 graded it D. Corrected in place, prior string preserved under `finding_corrected_from`.
+
+### ROUND 172 — DURATION BROKEN DOWN. It is five sub-levers, I audited one, and three of the other four are open.
+
+`the_duration_term_broken_down`. **CORR-183, procedural, and the fourth of a family.**
+
+**THE REFRAME, from the atlas's own keystone.** `fusion_is_proliferative_exhaustion` (grade B,
+`weise2001`): senescence is **spontaneous** in vehicle-treated animals, fusion happens when proliferation
+approaches zero, and **oestrogen accelerates every senescence parameter and causes none of them** — a rate
+multiplier on a programme already running. So **duration = time to proliferative exhaustion**, not time to
+oestrogen-driven closure. Rounds 169–171 audited the multiplier and reported a verdict on the clock.
+
+**THE FIVE SUB-LEVERS:**
+
+| # | sub-lever | status |
+|---|---|---|
+| 1 | slow the multiplier (oestrogen) | **in stack**; closed exhaustively 169–171, bounded |
+| 2 | **raise the YIELD** | **OPEN — never attempted by anyone** |
+| 3 | **add progenitors (POOL)** | **OPEN — one compound, one length endpoint** |
+| 4 | **stop spending the pool** | **OPEN — and the stack may be the spender** |
+| 5 | **cycle the pool** | **OPEN — tractability 5, highest in atlas** |
+
+**2 — YIELD.** `the_exchange_rate_between_growth_and_pool_depletion`, grade B: **height = pool × yield per
+cell spent, and nothing has ever targeted the yield.** Not hypothetical — `lui2018` per-animal data give
+metacarpal (fuses at 2–3 wk) **14 µm of bone per RZ cell** vs femur (never fuses) **146**, non-overlapping
+CIs *inside one animal*. Movable in principle: `schrier2006` — oestrogen and dexamethasone **both lower**
+RZ proliferation yet move senescence in **opposite** directions (dex *raises* RZ cell number, P=0.016, by
+blocking differentiation out). Both observables excluded by measurement → the residual is the yield.
+
+**3 — POOL.** `trompet2024` — intra-articular SAG doubled RZ PTHrP+ cells (65.5→139.8/mm², P=0.017) with
+proliferation and terminal cell size **unchanged**. Unilateral SAG beads in the femoral SOC: **+2.75% at 1
+mo → +3.63% at 6 mo, 8/8 animals, P=0.00004. The effect GREW rather than washing out.** Honest limits,
+already recorded: the bead moved pool + h_term + rate together, and **short systemic SAG did nothing**
+(femur P=0.247) — this is a **local-delivery** lever.
+
+**4 — THE STACK MAY BE SPENDING THE POOL.** `chu2025` (PNAS): GH shifts RZ stem-cell divisions toward the
+**committed** side and **depletes** the pool, cell-autonomously via GHR; authors offer it as the
+explanation for GH's declining long-term efficacy and propose **intermittent GH**. **Counterweights that
+must travel with it, both already in the atlas:** dose was 5 mg/kg/day ≈ **100× human therapeutic**, and
+the **GHR knockout did not change bone length** (tibia P=0.31, femur P=0.35). Graded **D, conflicting.**
+Human component is **one** 14-y-old epiphysiodesis specimen showing PTHrP+ cells are *present* — and
+`orikasa2026` calling them "GH-responsive in humans" **overstates its own primary source**.
+
+**THE SYNTHESIS — the actual answer.** Duration and velocity are not independent. Every velocity agent has
+a **bone-age cost per centimetre**, and *nobody has put the agents on one axis*. `mauras2008` is the clean
+instance: anastrozole added to GH left **linear growth comparable** while bone age advanced **+2.5 vs +4.1
+y** — it bought duration **without buying velocity**. `dauber2026` is the claimed CNP counterpart at +4.0
+SD velocity with BA/CA reportedly unmoved.
+
+**FLAG RAISED:** that `dauber2026` bone-age figure is **not in the abstract** and was **not verified from
+full text**. It is the single most load-bearing unverified number in the stack — it is the only claimed
+human bone-age-sparing velocity effect. Bibliography entry annotated accordingly.
+
+**NEW GAP:** `g_l7_bone_age_cost_per_centimetre_across_the_stack`, tractability 4 — **not an experiment, a
+table**, buildable from published data plus one full-text retrieval. If agents separate >2× on this ratio,
+the stack is reweightable at late bone age from existing data. If they don't, bone-age cost is a property
+of growth itself and only the progenitor routes remain.
+
+---
 
 ### ROUND 171 — CORR-182. THE ROUND-170 HEADLINE WAS WRONG. The user caught it, and the atlas already held the answer.
 
