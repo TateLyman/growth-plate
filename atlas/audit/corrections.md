@@ -6184,3 +6184,69 @@ requires an audit, not an impression. Before declaring a route gated on new expe
 standard interrogations this atlas already runs — GWAS, eQTL, gnomAD constraint, structure, cheminformatics
 — and check each has actually been run *on the gene in question*. Round 140 built that pipeline and I
 assumed it had been pointed at NPR3 because it had been pointed at everything around it.
+
+## CORR-159 — CORR-151 said the cardiovascular liability "does not appear in humans." It does. It is aortopathy, not hypotension (round 150)
+
+CORR-151 concluded, from `lauffer2022` alone, that the cardiovascular ceiling capping the CNP axis is a
+mouse phenotype absent in humans with NPR3 loss. **`boudin2018`, read at source this round, reports
+progressive aortic root dilatation in half its biallelic cases.**
+
+| individual | family | aortic root | progression |
+|---|---|---|---|
+| 1 | 1 (compound het, Dutch) | 30 mm, **+2.9 SDS** at 9.5 y | → 32.6 mm, **+3.78 SDS** at 10.5 y |
+| 2 | 1 | echocardiogram **normal** | — |
+| 3 | 2 (consanguineous, Pakistani) | 3.2 cm, **+2.7 SDS** at 10 y | → 3.45 cm (+3 SDS) at 11.5 y → **3.55 cm** at 13 y, plus **mitral valve prolapse** |
+| 4 | 3 (consanguineous) | 2.15 cm, **−1.03 SDS** — no dilatation | — |
+
+**Two of four, progressive in both, in a paper titled "…Enhanced Growth and Connective Tissue
+Abnormalities."** Both probands were worked up for Marfan syndrome; aortopathy panels were negative in
+both.
+
+**What survives, and it is now stronger.** Every blood pressure in every patient at every visit is
+normal — 99/62, 92/62, 95/54, 100/63, 100/70 — adding five readings to lauffer2022's three. **The
+hypotension prediction from the mouse null remains refuted in humans.** What is refuted is my
+generalisation from "no hypotension" to "no cardiovascular phenotype."
+
+**The failure is specific and I should name it.** At round 145 I tried to fetch PMC6080727, got an empty
+response, moved on, and then at round 146 wrote CORR-151 as though the cardiovascular question were
+settled — while knowing that an unread paper on exactly this genotype existed *with connective-tissue
+abnormalities in its title*. **A known-unread paper on the same question is not absent evidence; it is a
+hole, and a conclusion drawn across it inherits its size.** The title was visible in the search result
+that failed to fetch.
+
+**Rule:** when a fetch fails on a paper directly on the question, record it as an open hole in the node
+that depends on it, and do not grade the claim above what the *readable* subset supports. If the
+unfetchable paper's title bears on the claim, say so in the uncertainty field.
+
+## CORR-160 — the carrier series triples, and it is more mixed than round 149 implied
+
+Round 149 built a gene-dosage argument on **n = 2** heterozygotes (lauffer2022: +1.46, +0.71 SDS) and I
+told the user carrier heights from the other families were "two emails." `boudin2018` supplies them:
+
+| carrier | height | SDS |
+|---|---|---|
+| lauffer2022 father | 194.2 cm | **+1.46** |
+| lauffer2022 mother | 175.2 cm | **+0.71** |
+| boudin2018 family 1 father | 185 cm | **+0.1** |
+| boudin2018 family 1 mother | 180 cm | **+1.4** |
+| boudin2018 family 2 father | est. 165–170 cm | not given |
+| boudin2018 family 2 mother | 171 cm | not given |
+
+Family 1 parents are **obligate carriers** — their sons are compound heterozygous (p.Ser148Pro /
+p.Tyr508*) and the parents are non-consanguineous, so each must carry one allele. Family 2 is
+consanguineous with a homozygous proband, so both parents are obligate carriers, but no SDS is reported
+and the father's height was *estimated, not measured*.
+
+**n with SDS goes 2 → 4: +0.1, +0.71, +1.4, +1.46, mean ≈ +0.92.** The central estimate of ~+1 SD per
+lost allele survives, but the range now includes a carrier at **+0.1 SDS** — essentially population mean.
+And family 2's parents at ~165–170 and 171 cm are not obviously tall in any reference.
+
+**Against it, and this is not a small caveat:** every one of these is a parent of an ascertained tall
+proband, there is no control group, no correction for population of origin (Dutch, Pakistani), and one
+height is an estimate. The claim stays at **grade D**. What changed is that the sample is no longer n=2,
+and the picture is more heterogeneous than the first two carriers suggested.
+
+**And on Moffatt 2025:** the user reports parental samples were unavailable, so there are no carrier
+genotypes or heights there and homozygosity was never confirmed as biparental. **I have not independently
+verified this** — the document supplied this round is `boudin2018`, not Moffatt — and it is recorded as
+user-supplied and unconfirmed. Treated as closed; no further effort to be spent there.
