@@ -1,6 +1,6 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 179.** Repo: 703 nodes, 368 gaps, 1382 refs, validator errors none.
+Last updated: **2026-08-09, after round 180.** Repo: 704 nodes, 368 gaps, 1382 refs, validator errors none.
 
 > **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
 > subordinate until the amplification assay exists.
@@ -399,6 +399,58 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 180 — **ROUTE 4 WORKED TO THE BOTTOM.** It closes as a lever and survives as the hazard bound on route 1.
+
+`route4_fate_leakage_worked`. Ranked #1 of eight because it was the only route with **both** a positive
+length endpoint and an existing compound. Worked properly, it does not hold.
+
+**THE RANKING, for the record — nothing crossed off, just queued:**
+**1** fate leakage · **2** self-renewal/SOC niche · **3** external recruitment · **4** transit time ·
+**5** column density · **6** column entry · **7** terminal cell size · **8** attrition.
+
+**FIRST JOB WAS A PROVENANCE FIX THE ATLAS HAD FLAGGED ITSELF.** `orikasa2024` was held via a
+**summarisation step**, never read directly. Read from PMC:
+
+> femur length equivalent at all time points **"except in earlier time points of P21, indicating that
+> Hedgehog activation negatively affects the bone length only transiently."**
+
+**Not a null — a transient decrement (CORR-186).** The summarisation dropped the direction, and the
+direction is the point.
+
+**AND THE LEAK IS SMALL, WHICH IS WHAT CLOSES THE ROUTE.** The premise was that progenitors lost to
+osteoblast fate are recoverable value. `orikasa2024` states the baseline: descendants of PTHrP⁺ resting
+chondrocytes normally contribute **"only a small number of osteoblasts and CAR cells"** to adult marrow.
+**The conversion is created by Hedgehog activation, not revealed by it.** Little to plug.
+
+**Two more things the summary had dropped, both against the route:**
+- **The expansion self-resolves** — labelled cells rise P21→P36, **fall at P56/P70, no difference by P96.**
+- **Removing Hedgehog does not shorten bone** — Smo cKO cut PTHrP⁺ column contribution significantly with
+  **bone length and plate structure unchanged.** Other cells compensate. A pool you can cut for free isn't
+  a pool worth plugging.
+
+**AND THE ROUND-179 RECONCILIATION IS DOWNGRADED.** I proposed the Hedgehog lever has a *time-dependent
+sign*. Reading both primaries, **the two manipulations differ in KIND, not just duration**: `trompet2024`
+doubled resting-zone PTHrP⁺ cells with **proliferation and terminal cell size explicitly unchanged** — a
+clean pool expansion; `orikasa2024` caused **loss of quiescence** and clonal derangement that obliterated
+the resting–proliferative boundary, columns widening to 5–6 cells. Duration is now one candidate among
+dose, cell-autonomy, delivery, species and genetic-vs-pharmacological. Graded **E**.
+
+**WHAT IT LEAVES BEHIND IS WORTH MORE THAN THE LEVER.** Route 1 (SOC niche) is next-ranked, and **Hedgehog
+is the only signal anyone has used to manipulate that niche.** So route 4 is not a separate lever — it is
+**the hazard specification for route 1**: push Hh too hard or too long in these cells and the expanded pool
+leaves the plate as trabecular osteoblasts, the plate distorts, and the bone gets **transiently shorter**.
+`trompet2024` is the only protocol on record that appears to stay below that threshold.
+
+**THE DECIDING MEASUREMENT WAS NEVER TAKEN, AND IT IS SMALL.** `trompet2024` **never lineage-traced its
+SAG-treated animals.** Nobody knows whether the cells it added to the resting zone stayed chondrocytes or
+followed the `orikasa2024` route into the marrow more slowly. **One trace on an existing protocol** decides
+whether the atlas's only positive pool result is a real pool gain. Gap rewritten around exactly that.
+
+**NEXT: ROUTE 1 — self-renewal / the SOC niche.** Its measured effect is 1.37× clone size within one bone,
+its causal test (axitinib) exists, and route 4 has just told us what its main tool does when overdriven.
+
+---
 
 ### ROUND 179 — **EIGHT ROUTES TO YIELD, NOT ONE.** I'd worked one branch of a flow system and then searched it for agents.
 

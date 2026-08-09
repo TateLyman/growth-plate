@@ -7025,3 +7025,37 @@ an **independent replication** of the between-bone terminal-cell-height comparis
 in mouse alone, shows the metacarpal's resting zone falling 78.2 → 48.7 → 24.1 cells per 500 µm from 1 to
 3 weeks. The rat-contaminated version had shown it *rising* — which, had it been believed, would have
 contradicted `rz_depletion_causes_fusion` on the strength of an artefact.
+
+---
+
+## CORR-186 — the atlas recorded orikasa2024's bone-length result as a null. Read directly, it is transiently NEGATIVE.
+
+**Round 180. Found on fixing a provenance weakness the atlas had itself flagged.**
+
+`orikasa2024` was held with an explicit warning that it had been read **through a summarisation step, not
+directly**, and that "the bone-length null is a reported non-significance, not an equivalence bound." Read
+from the PMC full text this round, the sentence is:
+
+> the bone length of the PTHrP-Ptch-cKO femur was equivalent to that of the control **at all time points,
+> except in earlier time points of P21**, indicating that Hedgehog activation **negatively affects the bone
+> length only transiently.**
+
+**Not a null — a transient decrement that later resolves.** The direction was lost in summarisation, and
+the direction is the part that matters: sustained Hedgehog activation in PTHrP⁺ resting chondrocytes made
+the femur **shorter** before it made it equivalent.
+
+**Three other things the summary had dropped, all load-bearing:**
+- **The expansion is transient and self-resolving.** Labelled cells rose steeply P21→P36, then **fell at
+  P56 and P70, reaching no statistical difference by P96**. The pool was not permanently enlarged.
+- **The baseline fate leak is small.** The paper states that descendants of PTHrP⁺ resting chondrocytes
+  normally "contribute to only a small number of osteoblasts and CAR cells in the adult bone marrow." The
+  osteoblast conversion is something Hedgehog activation **creates**, not a large standing loss it reveals.
+- **Removing Hedgehog does not shorten bone.** Smo conditional knockout in PTHrP⁺ cells reduced their
+  column contribution significantly, yet **bone length and overall growth plate structure were unchanged**
+  — other cells compensate.
+
+**What it changes.** Round 179 ranked fate leakage as the highest-probability new route on the strength of
+"expanded pool spent on bone with no length gain." The corrected reading is worse for the route as a
+*leak to plug* — the normal leak is small, so there is little to recover — and worse for Hedgehog as a
+*lever*, because sustained activation cost length transiently. The route survives as a **hazard
+characterisation of the Hedgehog lever**, not as a loss term with recoverable value.
