@@ -20764,3 +20764,57 @@ edges:
     the same clinical signature - GH efficacy waning after 1-2 years, and GH growth rates slowing in subsequent
     years in all three conditions where the CNP axis sustained.
   traversal_usable: true
+- edge_id: e01297
+  source: yield_is_amplification_not_cell_size
+  target: the_exchange_rate_between_growth_and_pool_depletion
+  relation: correlates_with
+  sign: +
+  magnitude: yield ratio 10.4x decomposes into amplification 7.9x and terminal cell height 1.32x - 88
+    per cent of the log gap is amplification
+  context: mouse, 2-3 week interval, femur against metacarpal; rat independently replicates the cell-height
+    half at 1.45-1.75x across five ages
+  evidence_tier: T2
+  refs:
+  - lui2018
+  - cooper2013
+  confidence: C
+  notes: THE TEST THAT MAKES YIELD A CONTROL POINT RATHER THAN A RENAMING. Terminal cell height is conserved
+    between bones whose fusion times differ by an order of magnitude, in two species. Atlas arithmetic
+    on published per-animal values, value_unverified, and species-corrected per CORR-185.
+  traversal_usable: true
+- edge_id: e01298
+  source: yield_is_amplification_not_cell_size
+  target: npr2_agonist_class
+  relation: correlates_with
+  sign: unknown
+  magnitude: the CNP axis acts on terminal cell height, the factor that differs by 1.32x; the factor that
+    differs by 7.9x is untouched
+  context: comparing what the stack already does against what the decomposition says carries the between-bone
+    difference
+  evidence_tier: T2
+  refs:
+  - nakao2015
+  - lui2018
+  confidence: C
+  notes: NOT A CRITICISM OF THE CNP ARM - terminal cell height is a real and independently useful term,
+    and h_term is the arm with the human bone-age-sparing evidence. The point is that it is NOT the yield,
+    so adding it does not close the yield question and the two should compose.
+  traversal_usable: true
+- edge_id: e01299
+  source: yield_is_amplification_not_cell_size
+  target: fgfr3_tyrosine_kinase_inhibitor
+  relation: hypothesized_link
+  sign: +
+  magnitude: infigratinib raises femur length together with PROLIFERATIVE-zone height, which is the amplification
+    signature rather than the hypertrophic one
+  context: hypothesis only - kot2026 measures no resting-zone denominator, so raising proliferation cannot
+    be distinguished from raising divisions per progenitor consumed
+  evidence_tier: T2
+  refs:
+  - kot2026
+  confidence: speculative
+  gap_id: g_l2_what_sets_amplification_in_the_proliferative_column
+  notes: 'THE FIRST QUESTION OF THE NEXT ROUND, and the reason it is stated as an edge rather than a finding:
+    an agent could raise proliferation while spending the pool faster and leave the yield unchanged or
+    worse. That distinction is invisible to every assay used on this compound so far.'
+  traversal_usable: false

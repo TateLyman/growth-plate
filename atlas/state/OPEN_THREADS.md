@@ -1,6 +1,9 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 173.** Repo: 696 nodes, 365 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 174.** Repo: 697 nodes, 366 gaps, 1380 refs, validator errors none.
+
+> **PRIMARY OBJECTIVE, set by the user 2026-08-09: YIELD.** See THREAD G. Everything else is
+> subordinate until the amplification assay exists.
 
 > **READ THIS BEFORE GRADING OR CLOSING ANY ARM (CORR-183).** Open
 > `ledger_what_is_dead_what_is_settled_what_is_live` **first**; grep the *nodes* for the claim, not only
@@ -396,6 +399,64 @@ nothing** (femur P=0.247) → **local delivery only**.
 **committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
 ~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
 specimen showing the cells are *present*.
+
+### ROUND 174 — YIELD DECOMPOSED. It is **amplification**, not cell size, and nothing in the stack touches it.
+
+`yield_is_amplification_not_cell_size`. **First round of the yield programme.**
+
+**The test that had to be run first.** A length-yield is a *product*:
+**µm bone per progenitor = (cells produced per progenitor) × (µm per cell)** = **AMPLIFICATION ×
+TERMINAL CELL HEIGHT**. The atlas already has an arm on the second factor — the CNP axis, which
+`nakao2015` puts on the hypertrophic zone. So if the 10× yield gap were mostly cell size, **yield would be
+h_term renamed and there would be no new lever.**
+
+**It is not.** Mouse, 2–3 wk, femur (never fuses) vs metacarpal (fuses at 2–3 wk):
+
+| term | ratio |
+|---|---|
+| yield (length) | **10.4×** [6.1–17.3] |
+| terminal cell height | **1.32×** [1.15–1.55] |
+| **→ amplification** | **7.9×** |
+| **log gap from cell size** | **12%** |
+| **log gap from amplification** | **88%** |
+
+Tibia vs metacarpal: **93% amplification.** **Rat independently replicates the cell-height half** —
+femur/metacarpal **1.45, 1.46, 1.75, 1.47, 1.69** at 1/2/4/8/12 wk. **Terminal cell height is conserved to
+within ~2× between bones whose fusion times differ by an order of magnitude, in two species.**
+
+**And amplification fails FIRST.** Mouse cells/column/day: femur **10.80 → 10.60 → 8.33** at 1/2/3 wk;
+metacarpal **6.58 → 3.35 → 1.02**, with its RZ falling **78.2 → 48.7 → 24.1**. Metacarpal terminal cell
+height still holds at 23–25 µm until week 3 (then 15.9). **Cell size is a late casualty; amplification is
+already gone.**
+
+**THE TARGET, NAMED.** Height = **pool × amplification × terminal cell height**. Vosoritide works the
+right-hand term (the 1.3× one). Anastrozole is an exchange-rate agent on bone age. GH *spends* the pool.
+**The middle term — nearly 8× variable — has no agent in this stack and none in this atlas.**
+
+**One candidate, graded E deliberately:** amplification should read out as **proliferative**-zone output,
+and `kot2026` has infigratinib raising femur length *with PZ height* — that signature. **But raising
+proliferation ≠ raising divisions per progenitor consumed**; an agent could do the first while spending
+the pool faster. `kot2026` measures no resting-zone denominator. **First question of round 175.**
+
+**CORR-185 — species error caught before it entered the atlas.** `lui2018`'s workbook holds **mouse and
+rat**, and only `FigS3` names either. `FigS2` (the richest sheet — and therefore the tempting one) is
+**rat**. My first run divided a **mouse** yield by a **rat** cell height. Corrected: 7.2× → **7.9×**, 16% →
+**12%**. The conclusion survived — *that is luck, not method.* Rule: **establish species from the file
+before reading a cell.** The contaminated run had also shown the metacarpal RZ *rising*, which would have
+contradicted `rz_depletion_causes_fusion` on an artefact.
+
+**NEW GAP — this is now the programme:**
+`g_l2_what_sets_amplification_in_the_proliferative_column`. **The assay is the deliverable and it does not
+exist.** Amplification needs both terms in the same animals: lineage-label RZ cells at t0
+(`Pthrp-CreERT2` or H2B-GFP label retention), count labelled progeny reaching hypertrophy by t1. Run
+untreated first — **nobody has the normal value or its age curve** — then across FGFR inhibition, PTH1R
+agonism, and the two agents already known to move the exchange rate oppositely (oestrogen, dexamethasone).
+
+**Candidate control nodes for the commitment step, none ever assessed as amplification levers:**
+PTHrP–Ihh feedback loop · FGFR3 · HDAC4–MEF2C · mTORC1. All are studied as *proliferation* or *hypertrophy*
+regulators — **different quantities**.
+
+---
 
 ### ROUND 173 — THE EXCHANGE-RATE TABLE, BUILT (`bone_age_cost_per_centimetre`)
 

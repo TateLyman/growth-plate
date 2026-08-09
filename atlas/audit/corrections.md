@@ -6990,3 +6990,38 @@ real defect even when the data behind it is sound.
 prevented by the same step, which is now standing at the head of `OPEN_THREADS.md`: **grep the nodes for
 the claim before searching outward for the evidence.** This one adds a specific sub-rule — *a thin
 bibliography entry is not evidence that a claim is unsourced; the numbers live in the nodes.*
+
+---
+
+## CORR-185 — I divided a mouse yield by a rat cell height, and caught it before it entered the atlas
+
+**Round 174. Caught by checking the workbook's age labels against the one sheet that names its species.**
+
+`lui2018`'s S1 Data holds **two species in one workbook**. Sheets `Fig1C` and `Fig2B-G` are **mouse**
+(ages E17, NB, 1, 2, 3, 4, 8, 12 wk). Sheet `FigS2` is **rat** (ages 1, 2, 4, 8, 12, 16 wk). Nothing on
+`FigS2` says so — the identification comes from `FigS3`, which carries both series side by side under
+explicit "Mouse BrdU labeling index" and "Rat BrdU labeling index" headers with exactly those two age
+sets.
+
+`FigS2` is the richest sheet in the workbook — resting-zone height and count, proliferative-zone height
+and count, BrdU per column, hypertrophic-zone height and count, and terminal hypertrophic cell height, all
+per animal. That richness is what drew me to it. **The first run of `yield_decompose.py` therefore took
+terminal cell height from the rat and divided it into a yield computed from mouse resting-zone counts and
+mouse calcein rates.**
+
+**What it cost and what it did not.** The contaminated run gave an amplification ratio of 7.2× and a
+"cell size explains 16%" split. The corrected mouse-only run gives **7.9×** and **12%**. The conclusion
+survived — but that is luck, not method. The same slip on a sheet where the two species diverged would
+have produced a confident wrong number in a node the whole yield programme is about to be built on.
+
+**Standing constraint restated, because this is the one it exists for:** *every claim carries species.*
+The failure here was not forgetting the rule — it was assuming a workbook is one species because the paper
+is mostly about one species. **Multi-species supplementary files must have their species established from
+the file itself before any cell is read.**
+
+**What the correction bought.** Two things, both real. The rat series is now used as what it actually is —
+an **independent replication** of the between-bone terminal-cell-height comparison, which it confirms
+(femur/metacarpal 1.45–1.75× across all rat ages against 1.32× in mouse). And `Part 3` of the tool, rerun
+in mouse alone, shows the metacarpal's resting zone falling 78.2 → 48.7 → 24.1 cells per 500 µm from 1 to
+3 weeks. The rat-contaminated version had shown it *rising* — which, had it been believed, would have
+contradicted `rz_depletion_causes_fusion` on the strength of an artefact.
