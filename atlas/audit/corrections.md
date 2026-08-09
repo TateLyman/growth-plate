@@ -6959,3 +6959,34 @@ different scales: **searching outward for evidence before reading inward for wha
 
 **What is not withdrawn.** The oestrogen findings of rounds 169–171 all stand — the AF-2 mechanism, the
 sulfatase closure, the CORR-182 combination correction. Their scope claims do not.
+
+---
+
+## CORR-184 — I flagged the atlas's most load-bearing number as unverified. It was verified, with the numbers, in a node I did not open. Fifth of the family.
+
+**Round 172, corrected round 173 on the user's instruction to trace it.**
+
+**What I said.** That the claim "vosoritide raised velocity 4.0 SD with the bone-age-to-chronological-age
+ratio unmoved" — the only claimed human bone-age-sparing velocity effect in the stack — was "not in
+`dauber2026`'s abstract and has never been verified from its full text," and that it was "the single most
+load-bearing unverified number in the stack."
+
+**The trace.** `terminal_cell_volume_is_the_undefended_term` carries it from the full text with the values:
+**BA/CA ratio 0.94 ± 0.20 at Day 1 against 0.92 ± 0.17 at Month 12, P = 0.22**, no significant change in
+the whole cohort *nor in any subgroup*, with the ACAN subgroup — advanced at baseline as expected —
+1.11 ± 0.17 → 1.06 ± 0.14.
+
+**And its caveat was better calibrated than my flag.** That node already grades it: *"a bone age reading
+carries roughly half a year of error, so P = .22 over one year is a WEAK NULL rather than a demonstration
+of no effect — no equivalence margin is given."* My arithmetic in round 173 confirms exactly that: across a
+±0.5 y reading error the improvement ranges 1.31× to 6.00×. The direction survives; the magnitude does not.
+
+**What was and was not wrong.** The flag was wrong — the number is sourced. The *bibliography* fix was
+right and worth keeping: `dauber2026`'s entry held a one-line finding of eleven words and no note, while
+four nodes leaned on its full text. A reference entry that thin, under a claim that load-bearing, is a
+real defect even when the data behind it is sound.
+
+**Fifth instance of the family** (CORR-171, -181, -182, -183, -184). Four of the five would have been
+prevented by the same step, which is now standing at the head of `OPEN_THREADS.md`: **grep the nodes for
+the claim before searching outward for the evidence.** This one adds a specific sub-rule — *a thin
+bibliography entry is not evidence that a claim is unsourced; the numbers live in the nodes.*

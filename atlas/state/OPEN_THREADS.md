@@ -1,12 +1,13 @@
 # OPEN THREADS — exactly where we are
 
-Last updated: **2026-08-09, after round 172.** Repo: 695 nodes, 365 gaps, 1380 refs, validator errors none.
+Last updated: **2026-08-09, after round 173.** Repo: 696 nodes, 365 gaps, 1380 refs, validator errors none.
 
 > **READ THIS BEFORE GRADING OR CLOSING ANY ARM (CORR-183).** Open
 > `ledger_what_is_dead_what_is_settled_what_is_live` **first**; grep the *nodes* for the claim, not only
 > the refs for the evidence; and state which **sub-lever** of the eight-term decomposition you are
-> auditing. Four consecutive corrections (CORR-171, -181, -182, -183) are the same failure: searching
-> outward for evidence before reading inward for what is already held.
+> auditing. FIVE consecutive corrections (CORR-171, -181, -182, -183, -184) are the same failure: searching
+> outward for evidence before reading inward for what is already held. Sub-rule from CORR-184: **a thin
+> bibliography entry is not evidence a claim is unsourced — the numbers live in the nodes.**
 
 This file exists so a side pivot does not lose the main line. Anything listed OPEN here is unfinished
 work with a defined next step, not a closed question.
@@ -360,6 +361,80 @@ tamoxifen. FDA label: paediatric BMD under fulvestrant **unstudied**.
 **CORR-180 also raised:** `brjesson2012`'s bibliography one-line finding stated the **opposite** of the
 paper's conclusion. Confined to the index string — the node `estrogen_receptor_alpha` had it right and
 graded it D. Corrected in place, prior string preserved under `finding_corrected_from`.
+
+---
+
+## THREAD G — THE DURATION ARM, PROPERLY DECOMPOSED (**OPEN, saved 2026-08-09, three live sub-levers**)
+
+**Saved deliberately so it is not lost again.** Rounds 169–171 audited the oestrogen axis and reported it
+as a verdict on duration. It is one sub-lever of five (CORR-183).
+
+**THE FRAME** — `fusion_is_proliferative_exhaustion`, grade B, `weise2001`: senescence is **spontaneous**;
+fusion is what happens to a plate that has **run out**; oestrogen **accelerates every senescence parameter
+and causes none of them**. **Duration = time to proliferative exhaustion.**
+
+| # | sub-lever | status | next step |
+|---|---|---|---|
+| 1 | slow the oestrogen multiplier | **in stack** (anastrozole); closed 169–171, bounded | — |
+| 2 | **raise the YIELD** | **OPEN — never attempted by anyone** | `g_l2_raise_the_yield_per_progenitor` |
+| 3 | **add progenitors (POOL)** | **OPEN — 1 compound, 1 length endpoint** | `g_l2_larger_pool_with_intact_flux` |
+| 4 | **stop spending the pool** | **OPEN — the stack may be the spender** | `g_l2_cycling_the_progenitor_pool` |
+| 5 | **cycle the pool** | **OPEN — tractability 5, highest in atlas** | same gap; needs no drug |
+
+**② YIELD.** `the_exchange_rate_between_growth_and_pool_depletion`, grade B — **height = pool × yield, and
+nothing has ever targeted the yield.** `lui2018`: metacarpal (fuses 2–3 wk) **14 µm bone per RZ cell** vs
+femur (never fuses) **146**, non-overlapping CIs *inside one animal*. `schrier2006` forces the term by
+exclusion — oestrogen and dexamethasone **both lower** RZ proliferation yet move senescence in **opposite**
+directions (dex *raises* RZ cell number P=0.016 by blocking differentiation out).
+
+**③ POOL.** `trompet2024` — intra-articular SAG: RZ PTHrP⁺ cells 65.5→139.8/mm² (P=0.017), proliferation
+and terminal cell size **unchanged**. Unilateral SAG beads: **+2.75% at 1 mo → +3.63% femur at 6 mo, 8/8,
+P=0.00004 — the effect GREW.** Limits: bead moved pool + h_term + rate together; **short systemic SAG did
+nothing** (femur P=0.247) → **local delivery only**.
+
+**④ THE STACK MAY BE SPENDING THE POOL.** `chu2025` (PNAS) — GH shifts RZ stem-cell divisions to the
+**committed** side and **depletes** the pool; authors propose **intermittent GH**. Graded **D**: dose was
+~**100× therapeutic** and the **GHR knockout did not change bone length**. Human data = one 14-y-old
+specimen showing the cells are *present*.
+
+### ROUND 173 — THE EXCHANGE-RATE TABLE, BUILT (`bone_age_cost_per_centimetre`)
+
+At bone age 16 the question is **not how to add years to the clock but how many centimetres to extract per
+year the clock still runs.** `atlas/tools/bone_age_cost.py`:
+
+| agent | cm per bone-age year | strength |
+|---|---|---|
+| **anastrozole on GH** | **1.64× (95% CI 1.37–1.91)** | **robust** — growth comparable, so the height term *cancels exactly* |
+| **vosoritide** | 4.8 → 10.4 (**~2.15×**) | **direction only** — ±0.5 y reading error spans **1.31×–6.00×** |
+| **growth hormone** | **not placeable** | pays in **progenitors**, which BA/CA cannot see |
+| erdafitinib | uncomputed | 3 favourable observations, none pairing height with bone age in one comparison |
+
+**The result:** the two placeable agents improve the exchange rate by **different routes** — anastrozole
+lowers the denominator at constant numerator, vosoritide raises the numerator at constant denominator.
+The atlas design rule (*stack across control points*) appearing as arithmetic. **Predicts they compose
+rather than compete — and nobody has ever measured the exchange rate for two agents given together.**
+
+**Converging signature on GH:** identical first-year SDS to vosoritide in the same three conditions
+(GH 0.49/0.62/0.70 vs vosoritide 0.69) — then **GH slows in subsequent years and the CNP axis sustains.**
+`chu2025` supplies the mechanism. Two independent lines, one conclusion.
+
+**CORR-184 — my round-172 flag was false.** The `dauber2026` bone-age figure *is* sourced:
+**BA/CA 0.94 ± 0.20 → 0.92 ± 0.17, P=0.22**, unchanged in every subgroup, held in
+`terminal_cell_volume_is_the_undefended_term` — whose "weak null" caveat was better calibrated than my
+flag. Fifth of the family. Sub-rule added: **a thin bibliography entry is not evidence a claim is
+unsourced; the numbers live in the nodes.**
+
+**NEXT ON THIS THREAD, in order:**
+1. **Yield is the only never-attempted sub-lever** — and `schrier2006`'s dexamethasone result is the one
+   demonstrated way to conserve the pool. Ask whether pool conservation is separable from its growth
+   suppression *when accelerators are running*. Nobody has tested a pool-conserving agent on top of a
+   velocity stack.
+2. **Price the second currency.** Until progenitor cost has units, GH cannot be ranked and the table has a
+   hole where the stack's largest agent should be.
+3. **The SAG route is local-delivery-only** — which is a constraint, not a disqualification, and the atlas
+   has never asked what a local intra-SOC delivery would look like in a human.
+
+---
 
 ### ROUND 172 — DURATION BROKEN DOWN. It is five sub-levers, I audited one, and three of the other four are open.
 

@@ -1,0 +1,197 @@
+id: bone_age_cost_per_centimetre
+name: BONE-AGE COST PER CENTIMETRE - the table built, and both placeable stack agents sit on the
+  favourable side by different mechanisms, while growth hormone cannot be placed at all
+aliases:
+- bone age cost per cm
+- exchange rate between height and maturation
+- which stack agent is cheapest in bone age
+- cm per bone-age year
+- round 173
+type: hypothesis
+layer: L7
+stub: false
+summary: 'THE GAP OPENED IN ROUND 172 ASKED FOR A TABLE RATHER THAN AN EXPERIMENT. IT IS BUILT. Two of the
+  four stack agents can be placed on the axis, both sit on the favourable side, AND THEY GET THERE BY
+  DIFFERENT MECHANISMS - which is the result, because it means they are not competing for the same
+  headroom.
+
+  WHY THIS QUANTITY AND NOT VELOCITY. At bone age 16 the remaining budget is small enough that the
+  EXCHANGE RATE matters more than the rate. A centimetre bought at the cost of a year of skeletal
+  maturation is not obviously worth having; a centimetre bought at no maturational cost always is. Every
+  trial in this atlas reports both terms and NOT ONE takes the quotient.
+
+  AGENT ONE - ANASTROZOLE ON TOP OF GROWTH HORMONE. 1.64x MORE CENTIMETRES PER BONE-AGE YEAR (95% CI
+  1.37-1.91). From mauras2008, placebo-controlled: bone age advanced 2.5 +/- 0.2 years on
+  anastrozole-plus-GH against 4.1 +/- 0.1 on GH-plus-placebo over three years, P<0.0001, with LINEAR
+  GROWTH COMPARABLE BETWEEN ARMS. THE HEIGHT TERM CANCELS EXACTLY, which makes this the most robust number
+  in the table - it requires no absolute height, only that growth was equal, and that was measured rather
+  than assumed. The mechanism is unusual and worth naming: the aromatase inhibitor ADDS NO VELOCITY. It
+  lowers the maturational cost of velocity the growth hormone is already producing. It is a pure exchange-
+  rate agent.
+
+  AGENT TWO - VOSORITIDE IN NON-FGFR3 CHILDREN. ABOUT 2.15x, AND THE ERROR BAND IS THE STORY. From
+  dauber2026: velocity 4.53 to 8.09 cm/yr while the bone-age-to-chronological-age ratio went 0.94 +/- 0.20
+  to 0.92 +/- 0.17, P = 0.22. At a mean chronological age of 7 years that implies bone age advancing about
+  0.78 years per chronological year, so roughly 10.4 cm per bone-age year on treatment against 4.8 before
+  it. BUT A GREULICH-PYLE READING CARRIES ABOUT HALF A YEAR OF ERROR AND THE IMPLIED INCREMENT IS 0.78
+  YEARS. Propagating +/-0.5 y gives a range of 1.31x to 6.00x. THE DIRECTION SURVIVES THE ERROR BAND AND
+  THE MAGNITUDE DOES NOT. The sensitivity to the assumed mean age is small by comparison, 9.9 to 10.9 cm
+  per bone-age year across ages 5 to 9. And the underlying null is P = 0.22 over twelve months with NO
+  EQUIVALENCE MARGIN GIVEN - it is a weak null, exactly as terminal_cell_volume_is_the_undefended_term
+  already recorded before this round computed anything.
+
+  AGENT THREE - GROWTH HORMONE CANNOT BE PLACED, AND THAT IS A FINDING RATHER THAN A GAP. chu2025 shows GH
+  depletes the resting-zone progenitor pool by shifting stem cell divisions toward the committed side.
+  THAT COST IS PAID IN PROGENITORS, NOT IN BONE AGE, AND A BA/CA RATIO CANNOT SEE IT. Two independent
+  lines converge on the same clinical signature: chu2025 offers pool depletion as the explanation for GH
+  efficacy waning after one to two years, and the authors of dauber2026 note that growth hormone gave 0.49
+  SD in Noonan, 0.62 in ACAN deficiency and a median 0.7 in NPR2 deficiency in the first year - ALMOST
+  IDENTICAL TO VOSORITIDE 0.69 SD IN THE SAME CONDITIONS - but that growth rates SLOWED in subsequent
+  years in every one of those GH studies, whereas the CNP axis has sustained multi-year gains. SAME
+  FIRST-YEAR EFFECT, DIFFERENT TRAJECTORY. A second currency is needed before GH can be compared, and the
+  atlas does not have one.
+
+  AGENT FOUR - ERDAFITINIB IS UNRESOLVED AND POINTS THE RIGHT WAY. The atlas holds three
+  species-and-design-independent observations that FGFR inhibition does not spend bone age to buy height,
+  including a human case at 19.06 cm/year still two years bone-age delayed fifteen months after stopping.
+  It is not computed here because none of the three pairs a height gain with a bone-age advance in the
+  same controlled comparison.
+
+  WHAT THE TABLE ACTUALLY SETTLES. The two placeable agents improve the exchange rate BY DIFFERENT ROUTES
+  - anastrozole by lowering the denominator at constant numerator, vosoritide by raising the numerator at
+  constant denominator. That is the atlas design rule (stack across control points, never within one)
+  showing up as arithmetic rather than as a principle, and it predicts they should compose rather than
+  compete. It also reframes what the duration arm is for: at bone age 16 the question is not how to add
+  years to the clock but how many centimetres to extract per year the clock still runs.
+
+  WHAT IT DOES NOT SETTLE, STATED PLAINLY. Every number here is this atlas dividing published summary
+  values, flagged value_unverified. The dauber2026 cohort is PRE-PUBERTAL, aged 3-11, so the exchange rate
+  is measured nowhere near bone age 16. The mauras2008 comparability of linear growth is a NULL, not an
+  equivalence - if anastrozole reduced growth slightly, the 1.64x is overstated. And nobody has ever
+  measured the exchange rate for two agents given TOGETHER, which is the configuration that matters.'
+quantitative:
+- parameter: centimetres per bone-age year, anastrozole added to growth hormone versus growth hormone alone
+  value: '1.64'
+  unit: fold
+  conditions: 'placebo-controlled, GH-deficient adolescent boys already on GH, 3 years; bone age +2.5 +/-
+    0.2 y versus +4.1 +/- 0.1 y (P<0.0001) with LINEAR GROWTH COMPARABLE between arms, so the height term
+    cancels exactly. The aromatase inhibitor adds no velocity - it lowers the maturational cost of velocity
+    already being produced'
+  species: human
+  source_ref: mauras2008
+  uncertainty: 95% CI 1.37-1.91 by propagation of the reported standard errors. THIS ATLAS'S ARITHMETIC,
+    value_unverified. Comparable growth is a null, not an equivalence - if anastrozole reduced growth
+    slightly the ratio is overstated
+- parameter: centimetres per bone-age year on vosoritide versus the pre-treatment observation period
+  value: 4.8 -> 10.4
+  unit: cm per bone-age year
+  conditions: 'non-FGFR3 children aged 3-11 (RASopathies, ACAN, NPR2 deficiency); velocity 4.53 to 8.09
+    cm/yr with BA/CA ratio 0.94 +/- 0.20 to 0.92 +/- 0.17 (P=0.22); implied bone-age advance 0.78 y per
+    chronological year at a mean age of 7'
+  species: human
+  source_ref: dauber2026
+  uncertainty: 'about 2.15x, but propagating the +/-0.5 y Greulich-Pyle reading error on an implied
+    increment of 0.78 y gives 1.31x to 6.00x. DIRECTION SURVIVES, MAGNITUDE DOES NOT. Underlying null is
+    P=0.22 over 12 months with no equivalence margin. THIS ATLAS''S ARITHMETIC, value_unverified'
+- parameter: sensitivity of the vosoritide estimate to the assumed cohort mean age
+  value: 9.9 to 10.9
+  unit: cm per bone-age year
+  conditions: recomputed at mean chronological ages of 5, 7 and 9 years across the trial's 3-11 y range
+  species: human
+  source_ref: dauber2026
+  uncertainty: small relative to the reading-error band, so the age assumption is not what limits this
+    estimate
+- parameter: first-year height SDS, growth hormone versus vosoritide in the SAME three conditions
+  value: GH 0.49 / 0.62 / 0.70 versus vosoritide 0.69
+  unit: SD
+  conditions: 'GH figures are for Noonan, ACAN deficiency and NPR2 deficiency respectively, as compiled by
+    the dauber2026 authors; growth rates SLOWED in subsequent years in all of those GH studies, whereas
+    the CNP axis has sustained multi-year velocity gains in achondroplasia'
+  species: human
+  source_ref: dauber2026
+  uncertainty: cross-study comparison made by the trial authors, not a randomised head-to-head. SAME
+    FIRST-YEAR EFFECT, DIFFERENT TRAJECTORY - which is the clinical signature chu2025 explains
+    mechanistically as progenitor depletion
+localization:
+- 'whole organism: this is a trial-level exchange rate, not a tissue measurement'
+- 'the currency problem: bone age is a hand radiograph, the progenitor pool is a resting-zone cell count,
+  and no study has ever reported both for the same agent'
+human_evidence: direct
+human_evidence_note: 'Both computed rows come from human trials that measured height and skeletal
+  maturation in the same subjects - one placebo-controlled (mauras2008), one own-control (dauber2026).
+  What is absent is any human measurement of the exchange rate at late bone age, and any measurement of
+  it for two agents given together.'
+species_basis:
+- human
+translation_risk: moderate
+translation_risk_reason: 'The data are human, so species transfer is not the risk. The risk is AGE
+  transfer - the vosoritide cohort is pre-pubertal at 3-11 years and the anastrozole cohort is adolescent
+  but GH-deficient, while the case is bone age 16 with a normal FGFR3 background. An exchange rate
+  measured where the plate has years of capacity left need not hold where it has months.'
+confidence: C
+claim_grades:
+- claim: Adding an aromatase inhibitor to growth hormone improves the centimetres obtained per year of
+    bone age spent.
+  grade: B
+  basis: 'mauras2008 is placebo-controlled and reports both terms in the same subjects: bone age +2.5
+    versus +4.1 years over three years, P<0.0001, with linear growth comparable. Because growth was equal,
+    the height term cancels and the ratio is 1.64x (95% CI 1.37-1.91) without needing any absolute height.
+    B not A because comparable growth is a reported null rather than a demonstrated equivalence, and
+    because the cohort is GH-deficient adolescents rather than a normal background.'
+- claim: Vosoritide raises height velocity without a matching advance in skeletal maturation.
+  grade: C
+  basis: 'dauber2026 measured it: BA/CA 0.94 to 0.92, P=0.22, unchanged in the whole cohort and in every
+    subgroup including the baseline-advanced ACAN group, while velocity rose 4.0 SD. C not B for two
+    reasons already recorded in terminal_cell_volume_is_the_undefended_term and confirmed by this round''s
+    arithmetic: it is a WEAK NULL - twelve months, P=0.22, no equivalence margin, against a bone-age
+    reading error of about half a year - and the trial is open-label and single-arm.'
+- claim: The improvement in centimetres per bone-age year on vosoritide is about twofold.
+  grade: E
+  basis: 'THE DIRECTION IS SUPPORTED AND THE NUMBER IS NOT. Propagating the +/-0.5 y Greulich-Pyle reading
+    error across an implied bone-age increment of 0.78 y moves the estimate from 1.31x to 6.00x. Quoting
+    2.15x as if it were a measurement would be exactly the kind of false precision this atlas exists to
+    prevent. Recorded so the method is on record and can be rerun when a study reports absolute bone-age
+    years rather than a ratio.'
+- claim: Growth hormone can be ranked on this axis alongside the other agents.
+  grade: X
+  basis: 'NO - IT PAYS IN A DIFFERENT CURRENCY. chu2025 shows GH depletes the resting-zone progenitor pool
+    by driving committed division, and a bone-age ratio cannot detect progenitor loss. The clinical
+    signature confirms the two currencies diverge: GH and vosoritide produce almost identical first-year
+    SDS in the same three genetic conditions (0.49-0.70 versus 0.69) and then diverge in trajectory, GH
+    slowing and the CNP axis sustaining. Ranking GH on bone-age cost would score it favourably while
+    missing the cost it actually incurs.'
+- claim: The two placeable agents compete for the same headroom.
+  grade: E
+  basis: 'PREDICTED NOT TO, ON THE ARITHMETIC. Anastrozole lowers the denominator at constant numerator;
+    vosoritide raises the numerator at constant denominator. Different terms of the same quotient, which
+    is the atlas design rule appearing as arithmetic. But NOBODY HAS EVER MEASURED THE EXCHANGE RATE FOR
+    TWO AGENTS GIVEN TOGETHER, and that is the configuration this case is in.'
+key_refs:
+- ref_id: mauras2008
+  year: 2008
+  type: primary
+  role: THE ROBUST ROW - placebo-controlled, growth comparable, so the height term cancels and the ratio
+    stands on the bone-age data alone
+- ref_id: dauber2026
+  year: 2026
+  type: primary
+  role: the second row and the weaker one - BA/CA 0.94 to 0.92 at P=0.22 while velocity rose 4.0 SD, plus
+    the authors' own GH-versus-CNP trajectory comparison
+- ref_id: chu2025
+  year: 2025
+  type: primary
+  role: why growth hormone cannot be placed on the axis - its cost is progenitors, which a bone-age ratio
+    cannot see
+- ref_id: savarirayan2026
+  year: 2026
+  type: primary
+  role: the independent randomised placebo-controlled bone-age-unchanged result on the same axis, in
+    achondroplasia, as a prespecified safety endpoint
+open_questions:
+- g_l7_bone_age_cost_per_centimetre_across_the_stack
+- g_l2_raise_the_yield_per_progenitor
+contradicts:
+- 'CORRECTS CORR-184 - round 172 flagged the dauber2026 bone-age figure as unverified. It is verified, with
+  values, in terminal_cell_volume_is_the_undefended_term, and that node''s weak-null caveat was better
+  calibrated than the flag. This node computes from those values rather than re-deriving them.'
+last_verified: '2026-08-09'

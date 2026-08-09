@@ -20727,3 +20727,40 @@ edges:
     added no growth; it lowered the bone-age cost of the growth the GH was already producing. This is
     the template for the bone-age-cost-per-centimetre table that nobody has built.
   traversal_usable: true
+- edge_id: e01295
+  source: bone_age_cost_per_centimetre
+  target: the_duration_term_broken_down
+  relation: correlates_with
+  sign: +
+  magnitude: anastrozole on GH 1.64x more centimetres per bone-age year (95% CI 1.37-1.91); vosoritide
+    about 2.15x with an error band of 1.31-6.00x
+  context: human trial data, the table the round-172 gap asked for, computed by atlas/tools/bone_age_cost.py
+  evidence_tier: T1
+  refs:
+  - mauras2008
+  - dauber2026
+  confidence: C
+  notes: THE TWO PLACEABLE AGENTS IMPROVE THE EXCHANGE RATE BY DIFFERENT ROUTES - anastrozole lowers the
+    denominator at constant numerator, vosoritide raises the numerator at constant denominator. The atlas
+    design rule appearing as arithmetic, and it predicts they compose rather than compete. Nobody has
+    measured the exchange rate for two agents given together.
+  traversal_usable: true
+- edge_id: e01296
+  source: bone_age_cost_per_centimetre
+  target: growth_hormone
+  relation: correlates_with
+  sign: unknown
+  magnitude: not placeable - GH pays in progenitors, which a bone-age ratio cannot detect; identical first-year
+    SDS to vosoritide in the same three conditions (0.49-0.70 vs 0.69) then divergent trajectory
+  context: human cross-study comparison compiled by the dauber2026 authors, with the mechanism supplied
+    by chu2025
+  evidence_tier: T2
+  refs:
+  - chu2025
+  - dauber2026
+  confidence: C
+  notes: THE CURRENCY PROBLEM, AND IT IS THE REASON THE TABLE HAS A HOLE IN IT. Scoring GH on bone-age
+    cost would rank it favourably while missing the cost it actually incurs. Two independent lines give
+    the same clinical signature - GH efficacy waning after 1-2 years, and GH growth rates slowing in subsequent
+    years in all three conditions where the CNP axis sustained.
+  traversal_usable: true
