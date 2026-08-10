@@ -7955,3 +7955,108 @@ drug by displacement, check the extraction ratio: for a low-extraction drug the 
 by dose and intrinsic clearance alone, and binding only changes the *total* you measure. The corollary
 also matters — a **total** plasma concentration is uninformative about a change in binding, which is the
 plasma-side twin of CORR-208's tissue-side point.
+
+---
+
+## CORR-213 — two dead series nodes, one root cause: I promoted agents without checking for a replication attempt, and without opening the atlas's own node
+
+**Round 217** listed four agents as nodes in series along the FGFR3 cascade and computed a combination
+payoff from them. Two supplied documents killed two of them, and both failures share a single mechanism:
+**I took a claim from a summary line and did not go to the primary layer beneath it.**
+
+**The receptor-abundance node.** Round 217 put statins in the list on the mechanism *enhanced degradation
+of FGFR3 protein*, taken from `yamashita2014` via this atlas's own statin node. I did not search for a
+replication attempt. `fafilek2017` — *Osteoarthritis and Cartilage*, PMID 28583899 — is exactly that
+attempt, and it is negative with better controls than the original: four statins (atorvastatin,
+fluvastatin, lovastatin, pravastatin) across four systems (RCS chondrocytes, cultured mouse embryonic
+tibias, limb-bud micromasses, human control and thanatophoric chondrocytes from the International Skeletal
+Dysplasia Registry), **no change in FGFR3 protein** for wild-type, G380R or K650M, transfected or
+CRISPR-flag-tagged endogenous, at 12/24/48/72 h, and no effect on FGF2-driven growth arrest, matrix loss,
+senescence markers or hypertrophic differentiation. **The controls run both ways** — AZD4547 rescued every
+readout in the same experiments, so the systems could show a rescue; and a Ras prenylation band-shift
+confirmed the statins were pharmacologically active, so they were working and simply not touching FGFR3.
+Worse than null: at 1 µM, statins **alone** inhibited cultured embryonic tibia growth comparably to FGF2.
+The claim `statins act as a receptor-abundance node in series with an FGFR3 kinase inhibitor` is regraded
+**X**.
+
+**The ligand node.** Round 217 listed the soluble FGFR3 decoy as the ligand node **without opening this
+atlas's own `soluble_fgfr3_decoy` node**, which already held the recifercept phase 2 result and already
+described it as the cleanest available human test of ligand-dependence. The supplied EUCTR document
+(`recifercept_euctr_2023`) confirmed it in the register's own words. The claim `a soluble FGFR3 decoy is an
+available ligand node` is regraded **X — false as an asset**. Note the careful limit: what is refuted is
+the *asset*, not the *mechanism*. Achondroplasia is the wrong background for a ligand trap if G380R signals
+without ligand, and this atlas grades that contested (`naski1996` and `webster1996` for, `monsonegoornan2000`
+against). So `a ligand trap would fail in a pathway-intact growth plate` is graded **E — unresolved**, and
+recorded as `g_l12_does_a_ligand_trap_work_in_a_pathway_intact_growth_plate`.
+
+**This is the second instance of the CORR-205 failure mode in ten rounds**, and that is the part that
+matters more than either agent. CORR-205 was about trusting a downstream summary of a source instead of the
+source. This is the same error twice more, once against the outside literature and once against my own
+files. A node summary in this atlas is a *pointer*, not evidence — it has the same standing as a review, and
+CORR-002 already forbids treating a review as a source.
+
+**The rule this adds, and it is now a precondition, not a habit.** Before any agent enters a combination,
+inventory, or stack as a *node* — as opposed to being mentioned — two checks must be run and their results
+written into the round: (1) a targeted search for a **replication or refutation** of the specific mechanism
+being relied on, not of the agent in general; and (2) a **full read of this atlas's existing node** for that
+agent, if one exists. Neither was run in round 217, and both would have caught their respective failure in
+minutes.
+
+**What the correction leaves standing.** The receptor-abundance tier is now **empty**. A literature sweep
+for a replacement found an erdafitinib-based FGFR2-selective degrader but **no FGFR3 degrader and nothing in
+cartilage**. An empty tier is the honest state and is recorded as such; it is not to be refilled with the
+next plausible candidate without the two checks above.
+
+---
+
+## CORR-214 — the round-217 headline exponent was substantially an artefact of a Hill assumption this atlas had already estimated differently
+
+**Round 217** converted plasma exposure into fractional pathway inhibition as `1 − 1/(1 + C/IC50)` — a Hill
+slope of **n = 1** — flagged it as an assumption in passing, then fitted a power law to the resulting axis
+and reported an exponent of **2.38**, headlining that the growth curve is **supra-linear in fractional
+pathway inhibition**.
+
+**Round 214, four rounds earlier, had already estimated the slope from the same sponsor figure.** The FGFR3
+IC90 line sat at about 2.8× the IC50, and since `IC90/IC50 = 9^(1/n)`, that implies **n = 2.13**. I used
+n = 1 anyway, in a round that cited round 214 throughout.
+
+The sensitivity is not marginal — it inverts the conclusion:
+
+| Hill n | 8 mg fractional inhibition | fitted exponent | partner payoff |
+|---|---|---|---|
+| 1.00 | 31.9 % | **2.38** | 2.91× |
+| 1.50 | 24.3 % | 1.43 | 2.37× |
+| 2.00 | 18.0 % | 1.01 | 2.22× |
+| **2.13** | **16.6 %** | **0.94** | **2.21×** |
+| 2.50 | 13.1 % | 0.78 | 2.21× |
+| 3.00 | 9.4 % | 0.64 | 2.26× |
+
+At the value this atlas's own prior round implies, the exponent is **0.94 — essentially linear**. Round
+217's headline does not survive; the claim `the growth curve is supra-linear in fractional pathway
+inhibition` is regraded **E**.
+
+**What survives needed no assumption, and should have been the headline.** Fit the growth gain against
+**concentration** directly and no Hill slope enters the problem: the human exponent in C/IC50 units is
+**1.87**, and the mouse exponents in dose units are **3.23** (tibia) and **3.33** (femur). Both supra-linear,
+both assumption-free. The surviving claim is **supra-linearity in exposure, not in pathway inhibition** —
+the two differ by exactly the Hill transformation, and only the first is measured. Graded **C**, with the
+two-confounded-patient and narrow-mouse-dose-span limits unchanged.
+
+**The practical conclusion survives every Hill slope, and this is partly luck.** A partner removing 26.5 %
+of the pathway added to 8 mg erdafitinib is worth 2.21–2.91× across n = 1 to 3 (right-hand column above),
+against an 8→9 mg dose bump worth 20–22 % on every assumption — so the partner's incremental gain is six to
+ten times the dose bump's regardless. **The two effects cancel**: a steeper Hill slope lowers the fitted
+exponent, which shrinks the payoff, but it also lowers the fractional inhibition 8 mg achieves, so a fixed
+partner contribution moves the total proportionally further. That cancellation was not designed and was not
+noticed until the audit. It does not rescue the mechanistic claim, and it leaves the framework's other two
+weaknesses untouched — no measured per-agent inhibition fraction for any candidate, and an independence
+assumption the FGF19/klotho-beta rise argues against.
+
+**The rule this adds.** When a derived quantity requires a parameter that has not been measured, the round
+must (1) check whether **this atlas has already estimated it**, and use that value or state why not; and
+(2) report the headline **across the plausible range of that parameter**, not at one value. A convenient
+default is not a neutral default — n = 1 is a *choice*, and it happened to be the choice that maximised the
+number I was reporting. The general form: **a sensitivity table is not optional when the sign of a claim
+depends on an assumed parameter**, and where a formulation exists that avoids the parameter entirely — here,
+fitting against exposure rather than against inhibition — that formulation is the primary result and the
+modelled one is the supplement.

@@ -1,7 +1,8 @@
 id: round217_the_curve_is_a_power_law_and_series_multiplication_beats_it
-name: ROUND 217 - the FGFR3 growth curve is a power law with an exponent near 2.4 to 3.3, dose escalation
-  inside the label buys 20 per cent, the protein-binding lever is arithmetically dead, and the only way to
-  beat the curve at a fixed 8 mg is multiplication at nodes in series
+name: ROUND 217 [SUPERSEDED IN PART BY ROUND 218] - the FGFR3 growth curve was fitted as a power law with
+  an exponent near 2.4 to 3.3, dose escalation inside the label buys 20 per cent, the protein-binding lever
+  is arithmetically dead, and the only way to beat the curve at a fixed 8 mg is multiplication at nodes in
+  series. THE EXPONENT IN PATHWAY-INHIBITION UNITS AND TWO OF THE FOUR SERIES NODES DID NOT SURVIVE AUDIT
 type: hypothesis
 layer: L12
 aliases:
@@ -9,9 +10,26 @@ aliases:
 - how to beat the curve at 8 mg
 - series multiplication
 - round 217
+- superseded in part by round 218
 stub: false
-summary: 'THE DOSE IS FIXED AT ERDAFITINIB 8 mg AND SAFETY IS SET ASIDE, WHICH MAKES THE QUESTION PURELY
-  QUANTITATIVE. What is growth gain as a function of FGFR3 pathway inhibition, and what raises inhibition
+summary: 'READ THE RETRACTION BEFORE THE ROUND. ROUND 218 AUDITED THIS NODE AGAINST TWO SUPPLIED DOCUMENTS
+  AND AGAINST ITS OWN ARITHMETIC, AND THREE THINGS BELOW ARE WRONG. ONE - the RECEPTOR-ABUNDANCE series node
+  (statins, on the mechanism enhanced degradation of FGFR3 protein) is REFUTED by fafilek2017, four statins
+  across four systems with no change in FGFR3 protein and positive controls running both ways; that tier is
+  now EMPTY. TWO - the LIGAND series node (soluble FGFR3 decoy) is DEAD AS AN ASSET, refuted in humans by
+  the recifercept phase 2, which this atlas''s own soluble_fgfr3_decoy node already recorded and this round
+  did not open. THREE - THE HEADLINE EXPONENT IS SUBSTANTIALLY AN ARTEFACT. This round converted exposure
+  into fractional inhibition assuming a Hill slope of 1, while round 214 had already implied 2.13 from the
+  same sponsor figure; at 2.13 the fitted exponent falls from 2.38 to 0.94, essentially linear, so
+  SUPRA-LINEARITY IN FRACTIONAL PATHWAY INHIBITION DOES NOT SURVIVE. What does survive is the version that
+  needed no Hill assumption - growth gain is supra-linear in EXPOSURE, human exponent 1.87 in C/IC50 units
+  and mouse 3.23 and 3.33 in dose units - and the combination arithmetic, which holds at 2.21 to 2.91-fold
+  across every Hill slope from 1 to 3 by cancellation. Recorded as CORR-213 and CORR-214. Every number below
+  that is expressed in fractional-inhibition units carries the n = 1 assumption and should be read against
+  the sensitivity table in round 218.
+
+  THE ROUND AS WRITTEN FOLLOWS. THE DOSE IS FIXED AT ERDAFITINIB 8 mg AND SAFETY IS SET ASIDE, WHICH MAKES
+  THE QUESTION PURELY QUANTITATIVE. What is growth gain as a function of FGFR3 pathway inhibition, and what raises inhibition
   without raising the dose?
 
   FIRST, TRANSLATE EXPOSURE INTO INHIBITION. For a competitive inhibitor the residual signal is 1/(1 +
@@ -197,13 +215,17 @@ translation_risk_reason: 'The curve is fitted from two human points with a basel
 confidence: C
 claim_grades:
 - claim: the FGFR3 growth response is supra-linear in fractional pathway inhibition
-  grade: C
-  basis: fitted independently from two human points with an exponent of 2.38 and from two mouse bones with
-    exponents of 3.33 and 3.23, the latter needing no baseline assumption. Two patients on the human side
-    and a narrow dose span on the mouse side
-- claim: the exponent is 2.4
   grade: E
-  basis: BASELINE-SENSITIVE FROM 1.39 TO 3.48. Only the direction survives; the value does not
+  basis: 'REGRADED FROM C BY ROUND 218 (CORR-214). The exponent in fractional-inhibition units is an artefact
+    of the assumed Hill slope - 2.38 at n = 1, 1.01 at n = 2, 0.94 at the n = 2.13 this atlas''s round 214
+    implies, 0.64 at n = 3. The claim flips to essentially linear just below n = 2. WHAT SURVIVES AT GRADE C
+    IS THE DIFFERENT CLAIM that the response is supra-linear in EXPOSURE, which needs no Hill slope: human
+    exponent 1.87 in C/IC50 units, mouse 3.23 and 3.33 in dose units'
+- claim: the exponent is 2.4
+  grade: X
+  basis: 'REGRADED FROM E BY ROUND 218. Baseline-sensitive from 1.39 to 3.48 AND Hill-sensitive from 2.38 to
+    0.64 - two independent sensitivities, and at this atlas''s own Hill estimate not even the direction
+    survives in inhibition units. The value 2.4 should not be quoted'
 - claim: lowering alpha-1-acid glycoprotein raises free erdafitinib exposure
   grade: X
   basis: FALSE. For a low-extraction drug unbound steady-state concentration is independent of protein
@@ -214,8 +236,11 @@ claim_grades:
   basis: FALSE on the fitted curve. It buys about 20 per cent more gain, which is the entire label headroom
 - claim: one additional series-node agent at 26.5 per cent inhibition triples the growth gain from 8 mg
   grade: E
-  basis: A FRAMEWORK RESULT, NOT A MEASUREMENT. It follows from multiplying residual signal and raising to
-    the fitted exponent, and no per-agent inhibition fraction has ever been measured
+  basis: 'A FRAMEWORK RESULT, NOT A MEASUREMENT, and ROUND 218 CORRECTS THE MULTIPLE FROM TRIPLES TO 2.21 to
+    2.91-FOLD. It survives the Hill sensitivity BY CANCELLATION - a steeper slope lowers the exponent but
+    also lowers the inhibition 8 mg achieves - so the qualitative conclusion holds on every assumption while
+    the number 2.91 was the n = 1 endpoint of a range. Still no per-agent inhibition fraction has ever been
+    measured for any candidate'
 - claim: the series nodes act independently
   grade: E
   basis: ASSUMED AND PROBABLY FALSE IN PART. The FGF19 and klotho-beta rise is direct human evidence of
@@ -224,6 +249,19 @@ claim_grades:
   grade: X
   basis: FALSE. Every agent on the list has been tested alone against a growth endpoint. The 2x2 in
     wild-type has never been run in any species
+- claim: statins are an available receptor-abundance node in series
+  grade: X
+  basis: 'REFUTED BY ROUND 218 (CORR-213). fafilek2017 - four statins, four systems, no change in FGFR3
+    protein for wild-type, G380R or K650M at 12 to 72 hours, with AZD4547 rescuing in the same experiments
+    and Ras prenylation confirming statin activity. At 1 micromolar statins ALONE inhibited tibia growth.
+    The receptor-abundance tier is now EMPTY and no replacement was found'
+- claim: a soluble FGFR3 decoy is an available ligand node in series
+  grade: X
+  basis: 'REFUTED AS AN ASSET BY ROUND 218 (CORR-213). Recifercept failed its phase 2 primary at three dose
+    levels with a twentyfold trough range and was terminated for futility along with its extension, its
+    natural-history study and a Chinese phase 1. Whether a trap would work in a PATHWAY-INTACT plate is a
+    separate and unresolved question, because achondroplasia is the wrong background if G380R is
+    ligand-independent'
 key_refs:
 - ref_id: erdachild2024
   year: 2024
@@ -273,10 +311,16 @@ open_questions:
 - g_l12_does_blocking_the_fgf19_klb_compensatory_loop_steepen_the_curve
 - g_l12_is_60_mg_equivalent_exposure_enough_for_growth
 - g_l12_does_an_intermittent_schedule_preserve_the_growth_effect
+- g_l12_what_is_the_hill_slope_of_fgfr3_inhibition_in_a_chondrocyte
+- g_l12_does_a_ligand_trap_work_in_a_pathway_intact_growth_plate
 contradicts:
 - 'The implicit assumption running through rounds 212 to 216 that the way up the curve is more exposure of
   one agent. On the fitted curve the entire erdafitinib label headroom is worth 20 per cent, while one
   additional series-node partner at 26.5 per cent inhibition is worth 191 per cent.'
 - 'Any proposal to raise free erdafitinib by displacing it from alpha-1-acid glycoprotein. Arithmetically
   unavailable for a low-extraction drug and empirically refuted by zhu2026. Recorded as CORR-212.'
+- 'THIS NODE IS CONTRADICTED BY ITS OWN AUDIT. Round 218 refutes two of the four series nodes named here and
+  shows the headline exponent in fractional-inhibition units is substantially an artefact of assuming a Hill
+  slope of 1. See round218_the_curve_audit_two_nodes_dead_and_the_exponent_was_mine, CORR-213 and CORR-214.'
+superseded_in_part_by: round218_the_curve_audit_two_nodes_dead_and_the_exponent_was_mine
 last_verified: '2026-08-10'

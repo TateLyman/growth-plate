@@ -14111,3 +14111,90 @@ gaps:
     the growth response to a fixed dose DECAYS over months in a way that tracks a rising ligand - which is
     testable in the existing wild-type mouse model with a longer treatment arm than the four weeks tyra300_2025
     ran.
+- gap_id: g_l12_what_is_the_hill_slope_of_fgfr3_inhibition_in_a_chondrocyte
+  question: What is the Hill coefficient of the concentration-response relationship for FGFR3 pathway inhibition
+    by erdafitinib in a growth plate chondrocyte, measured on phospho-FGFR or phospho-ERK rather than on
+    a four-day proliferation endpoint in a Ba/F3 line?
+  type: quantitative_gap
+  layer: L12
+  tractability: 1
+  why_it_matters: BECAUSE IT IS THE PARAMETER THAT DECIDES WHETHER THE GROWTH CURVE IS SUPRA-LINEAR IN PATHWAY
+    INHIBITION AT ALL, AND ROUND 217 GOT IT WRONG BY ASSUMING IT. Converting a plasma concentration into
+    a fraction of pathway removed requires a Hill slope, and the answer is not a detail - fitting the same
+    two human growth observations against fractional inhibition gives an exponent of 2.38 at n = 1, 1.01
+    at n = 2, 0.94 at n = 2.13 and 0.64 at n = 3. The claim SUPRA-LINEAR flips to ESSENTIALLY LINEAR somewhere
+    just below n = 2, and the only estimate this atlas has, from the IC90/IC50 spacing on a sponsor figure
+    in round 214, sits at 2.13 - on the wrong side of that line. Every statement of the form ANOTHER X PER
+    CENT OF PATHWAY INHIBITION IS WORTH Y TIMES THE GROWTH depends on this number and on nothing else that
+    is unmeasured. It also sets how much a dose increase buys at the top of the curve, because a steep Hill
+    slope means the last milligram is worth much less than the first once you are past the IC50.
+  what_is_known: 'The only handle in this atlas is INDIRECT AND FROM THE WRONG ASSAY. Round 214 read the FGFR3
+    IC90 line at about 2.8 times the IC50 on a sponsor comparative figure; since IC90/IC50 = 9^(1/n), that
+    implies n = 2.13. That is a proliferation readout in an engineered Ba/F3 line, which is a harsher and
+    more cooperative endpoint than pathway output - a four-day survival assay compounds signalling over
+    many cell divisions, which STEEPENS the apparent slope relative to the acute biochemical event. perera2017
+    supplies the only worked acute readout for erdafitinib, complete suppression of phospho-FGFR at 30 nM
+    nominal after one hour, but reports no concentration series from which a slope could be read. Nothing
+    in the literature reports a Hill coefficient for FGFR3 inhibition in any chondrocyte, by any inhibitor.'
+  what_is_missing: A concentration-response series - eight or more points spanning two log units around the
+    free IC50 - for phospho-FGFR and phospho-ERK in a growth plate chondrocyte under FGF stimulation, fitted
+    to a four-parameter logistic so the slope is reported rather than assumed. The same series in the Ba/F3
+    proliferation format alongside it would quantify how much of the apparent cooperativity is the assay.
+  nearest_evidence:
+  - perera2017
+  - hudkins2024
+  - erdachild2024
+  nearest_evidence_note: perera2017 has the right readout and no concentration series; the sponsor figures
+    have a concentration axis and the wrong endpoint. No source has both.
+  discriminating_experiment: THE SAME PLATE THAT ANSWERS THE PER-AGENT FRACTION GAP ANSWERS THIS ONE, at the
+    cost of running erdafitinib across a proper dilution series instead of at a single achievable concentration.
+    Capillary western for phospho-FGFR and phospho-ERK, FGF-stimulated primary growth plate chondrocytes,
+    eight to twelve concentrations, four-parameter logistic fit reporting the slope with a confidence interval.
+    IF THE SLOPE COMES BACK NEAR 1, round 217's supra-linearity in pathway inhibition is real after all and
+    the payoff from a partner is at the top of the range; IF IT COMES BACK NEAR 2, the growth response is
+    linear in inhibition and the only surviving supra-linearity is in exposure.
+- gap_id: g_l12_does_a_ligand_trap_work_in_a_pathway_intact_growth_plate
+  question: Does sequestering FGF ligand slow or accelerate longitudinal growth in a plate with WILD-TYPE FGFR3,
+    as distinct from an achondroplasia plate where the receptor may signal without ligand?
+  type: known_unknown
+  layer: L12
+  tractability: 3
+  why_it_matters: BECAUSE THE ONE HUMAN TEST OF A LIGAND TRAP WAS RUN IN THE ONE BACKGROUND WHERE IT COULD
+    FAIL FOR A REASON THAT DOES NOT APPLY TO US. Recifercept failed its phase 2 primary at three dose levels
+    with a twentyfold trough range in children with achondroplasia. If G380R signals ligand-independently
+    then removing ligand was never going to help, and the failure says nothing about a normal plate - which
+    is the background that matters for this case. THE LIGAND NODE IS THE ONLY POINT IN THE CASCADE WHERE
+    A BIOLOGIC GEOMETRY IS NOT EXCLUDED BY AVASCULAR CARTILAGE, because a trap acts in the extracellular
+    space upstream of the tissue it never has to enter, so writing it off on the wrong background would
+    discard the only non-small-molecule series node. The counter-possibility is equally consequential and
+    equally untested - in a normal plate FGF ligand also drives FGFR1 and FGFR2 functions that are permissive
+    rather than inhibitory, so a non-selective trap could remove growth-promoting signalling alongside the
+    growth-restraining FGFR3 arm and come out negative or worse than negative.
+  what_is_known: 'THE HUMAN FAILURE IS CLEAN AND ITS INTERPRETATION IS NOT. recifercept_euctr_2023 reports
+    a ratio of observed to expected height change of 1.0 at every timepoint at every dose with demonstrated
+    accumulating exposure, and futility termination stated verbatim. WHETHER THAT GENERALISES TURNS ON A
+    CLAIM THIS ATLAS ALREADY GRADES CONTESTED - naski1996 and webster1996 report ligand-independent activation
+    of the achondroplasia receptor, monsonegoornan2000 disputes it. AND THE ASSET IS GONE - the recifercept
+    programme, its open-label extension, its natural-history study and a Chinese phase 1 were terminated
+    together, so no clinical route to the question survives. What is NOT in doubt is that FGFR3 loss of function
+    in humans produces overgrowth, so the receptor restrains growth in a normal plate; the open question
+    is whether its tone in a normal plate is ligand-driven and therefore trappable.'
+  what_is_missing: Any longitudinal growth measurement under ligand sequestration in a WILD-TYPE plate. Every
+    published test of a decoy or trap - recifercept in humans, the soluble receptor constructs in mice -
+    used an achondroplasia background, because the programmes were built for achondroplasia.
+  nearest_evidence:
+  - recifercept_euctr_2023
+  - naski1996
+  - webster1996
+  - monsonegoornan2000
+  nearest_evidence_note: The human negative is unambiguous and its background is contested by the three mechanistic
+    refs, which is precisely why it does not transfer.
+  discriminating_experiment: WILD-TYPE MICE, NOT ACHONDROPLASIA MICE, treated with a soluble FGFR3 ectodomain
+    against vehicle, reading tibial and femoral length and growth plate zone heights - which is the trivial
+    arm every ligand-trap programme skipped because it had no commercial reason to run it. EX VIVO IS CHEAPER
+    AND ALMOST AS INFORMATIVE - cultured wild-type embryonic tibias with and without a trap in the medium,
+    where the FGF source is the tissue itself; this is exactly the system fafilek2017 used, and it would
+    also show whether removing ligand costs the FGFR1 and FGFR2 permissive functions. IF A TRAP LENGTHENS
+    A WILD-TYPE PLATE, the ligand node returns as the only biologic-compatible series partner and the recifercept
+    failure is confirmed as a background artefact; IF IT SHORTENS ONE, the node is dead on mechanism and
+    not merely dead on asset.
