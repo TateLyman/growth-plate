@@ -7889,3 +7889,39 @@ full text adds that **hydroxychloroquine 10 mg/kg reduced hepatic necrotic area*
 mice, and that SAMe was the best hit from a hepatoprotectant screen. For *erdafitinib* an alkaliniser would
 potentiate the target (`englinger2018`, 5.1×) **and** protect the liver. It still does not transfer to
 TYRA-300, which is not lysosomotropic.
+
+---
+
+## CORR-211 — every absolute "× IC50" figure in rounds 213 and 215 was inflated ~8×
+
+**Round 216.** Rounds 213 and 215 expressed FGFR3 target coverage as multiples of cellular IC50, taking
+both drugs' potency from the Ba/F3 panel on a TYRA conference slide. **Both developers' own primary papers
+are now in hand and they agree with each other and disagree with that slide by roughly eightfold.**
+
+| source | erdafitinib | dabogratinib |
+|---|---|---|
+| `perera2017` — Janssen, erdafitinib's own developers | **13.2 nM** | — |
+| `hudkins2024` SI — TYRA, dabogratinib's own developers (cpd 22) | — | **11 nM** |
+| `surf301_ena2024` slide — TYRA marketing panel | 1.35 nM | 1.75 nM |
+
+The two developers characterise their own molecules at 11–13 nM in the same assay format, within 1.2-fold
+of each other. **The marketing panel is the outlier.**
+
+**What survives.** The round-213 *ratio* (erdafitinib 7 mg vs TYRA 90 mg) is unaffected, because both drugs
+were taken from the same slide. **What does not survive** is every absolute statement — "4.01× IC50",
+"4.33×", "9.91×", "exceeds FGFR3 IC90". Recomputed on developer numbers those become **0.41×, 0.69×,
+1.58×**, and the whole human growth record sits *below* 1× free coverage.
+
+**And the corrected picture is more informative,** because it says the two molecules are **equipotent at
+FGFR3** — so the comparison collapses to a pure PK question, and on attainable doses erdafitinib is ahead.
+
+**Two limits on the correction itself.** Assay conditions across the two developers' papers are unmatched
+(ATP concentration, readout, incubation). And a **4-day proliferation IC50 is a harsher endpoint than
+pathway inhibition** — `perera2017` suppressed phospho-FGFR completely at 30 nM *nominal* for one hour — so
+these fractions understate pathway engagement by an unknown factor. The direction of the correction is
+firm; the exact denominator is not.
+
+**The rule this adds.** A potency value from a sponsor's comparative marketing panel is not interchangeable
+with the same sponsor's own primary characterisation, and neither is interchangeable with a competitor's.
+When a coverage number will carry an argument, quote the value from *each molecule's own developers* and
+say so.

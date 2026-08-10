@@ -22709,3 +22709,111 @@ edges:
   - perera2017
   - englinger2018
   confidence: B
+- edge_id: e01447
+  source: round216_erdafitinib_is_ahead_on_attainable_coverage_and_the_fix_is_the_schedule
+  target: erdafitinib
+  relation: inhibits
+  sign: '-'
+  magnitude: ON THE DEVELOPERS' OWN NUMBERS THE TWO MOLECULES ARE EQUIPOTENT AT FGFR3 AND ERDAFITINIB IS AHEAD
+    ON ATTAINABLE COVERAGE. perera2017 gives erdafitinib a Ba/F3 FGFR3 IC50 of 13.2 nmol/L and hudkins2024
+    gives dabogratinib 11 - agreeing within 1.2-fold and both roughly EIGHTFOLD less potent than the TYRA conference
+    panel rounds 213 and 215 used. Recomputed on free plasma - erdafitinib 3 mg 0.18x IC50, 7 mg 0.41x (the
+    19.06 cm/year case), 9 mg label maximum 0.53x; dabogratinib about 45 mg (TOP BEACH301 PAEDIATRIC DOSE) 0.19x,
+    60 mg (hepatically clean) 0.29x, 90 mg (liver signal) 0.69x, 120 mg 1.58x. ERDAFITINIB AT LABEL MAXIMUM
+    IS 2.8-FOLD ABOVE THE TOP PAEDIATRIC DABOGRATINIB DOSE AND 1.8-FOLD ABOVE ITS CLEAN DOSE
+  context: inherits round 214's DERIVED dabogratinib protein binding, compares free plasma with a nominal cell-assay
+    IC50, and neither drug's cartilage concentration has ever been measured. Assay conditions are unmatched
+    across the two developers' papers
+  evidence_tier: T1
+  refs:
+  - perera2017
+  - hudkins2024
+  - zhu2026
+  - surf301_ena2024
+  confidence: B
+- edge_id: e01448
+  source: round216_erdafitinib_is_ahead_on_attainable_coverage_and_the_fix_is_the_schedule
+  target: growth_plate
+  relation: correlates_with
+  sign: +
+  magnitude: THE ENTIRE HUMAN GROWTH RECORD SITS ON THE BOTTOM SHOULDER OF THE CONCENTRATION-RESPONSE. Erdafitinib
+    produced 19.06 cm/year at 0.41 times its own cellular IC50 and about 10 cm/year at 0.18 times, and on the
+    developers' numbers NOBODY in either programme reaches 1 times free coverage except dabogratinib at 120
+    mg. THIS AGREES INDEPENDENTLY WITH ROUND 215's MOUSE RE-ANALYSIS, where the marginal gain per mg/kg was
+    four times steeper over the 12-to-14 step than averaged over 0-to-12. TWO UNRELATED LINES SAYING THE TOP
+    OF THIS CURVE HAS NEVER BEEN APPROACHED
+  context: a four-day Ba/F3 PROLIFERATION IC50 is a harsher endpoint than pathway inhibition - perera2017 suppressed
+    phospho-FGFR completely at 30 nmol/L nominal for one hour - so these fractions understate pathway engagement
+    by an unknown factor
+  evidence_tier: T1
+  refs:
+  - erdachild2024
+  - erdaseries2025
+  - perera2017
+  - tyra300_2025
+  confidence: C
+  gap_id: g_l12_is_60_mg_equivalent_exposure_enough_for_growth
+- edge_id: e01449
+  source: round216_erdafitinib_is_ahead_on_attainable_coverage_and_the_fix_is_the_schedule
+  target: fgfr3_tyrosine_kinase_inhibitor
+  relation: hypothesized_link
+  sign: +
+  magnitude: THE ONE UNTRIED FIX IS THE SCHEDULE AND THE CLASS HAS AN APPROVED PRECEDENT. patel2023 - pemigatinib
+    is approved at 13.5 mg daily for FOURTEEN CONSECUTIVE DAYS THEN SEVEN DAYS OFF and delivers a 36 per cent
+    objective response rate against erdafitinib's 35.3 per cent on CONTINUOUS dosing, so a one-week-in-three
+    holiday costs nothing in this class. AND ERDAFITINIB IS THE MEMBER BEST SUITED TO IT AND THE ONE GIVEN CONTINUOUSLY
+    - 59-hour half-life plus a lysosomal depot holding COMPLETE phospho-FGFR suppression for 4 hours and to
+    24 hours after a ONE-HOUR exposure, against 2 hours for a matched non-lysosomotropic analogue at ten times
+    the concentration. THE EPITHELIUM GETS A HOLIDAY THE GROWTH PLATE LARGELY DOES NOT - and since round 212
+    showed erdafitinib's ceiling is a CLOCK, anything lengthening time on drug converts directly into centimetres
+  context: a tumour response rate is not a growth plate, and no intermittent schedule has been tested for growth
+    in any species. NAIL TOXICITY IS THE LARGEST DOSE-MODIFICATION DRIVER at 22 and 27 per cent and its matrix
+    turns over across MONTHS, so a 7-day holiday probably does not rescue it
+  evidence_tier: T1
+  refs:
+  - patel2023
+  - perera2017
+  - nadeaunguyen2026
+  confidence: speculative
+  gap_id: g_l12_does_an_intermittent_schedule_preserve_the_growth_effect
+- edge_id: e01450
+  source: round216_erdafitinib_is_ahead_on_attainable_coverage_and_the_fix_is_the_schedule
+  target: fgfr2_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: THE FOUR-PART FGFR2 GATE IS NOT EQUALLY FIXABLE, AND THE SCARIEST PART IS THE MOST REVERSIBLE.
+    ohagan2026 across five pooled mUC studies and RAGNAR - FGFR-inhibitor retinopathy in 21.5 and 13.7 per cent,
+    MOSTLY GRADE 1-2, grade 3 in only 2.3 and 1.0 per cent, NO GRADE 4, 78.6 per cent within 90 days, discontinuation
+    in only 2.9 and 1.0 per cent, and 63 to 65 per cent RESOLVED by data cutoff. Against that, NAIL DISORDERS
+    remain the largest driver at 22 per cent interruption and 27 per cent reduction with a matrix turnover of
+    MONTHS, stomatitis 19 and 19 recovers in one to two weeks, and palmar-plantar 15 and 12 over weeks
+  context: the reversibility data is from adult oncology populations where the threshold for reducing dose is
+    set against alternative therapies; the same toxicity in a growth indication is a different benefit-risk
+    object, which is a reframing rather than a pharmacological fix
+  evidence_tier: T1
+  refs:
+  - ohagan2026
+  - surf301_ena2024
+  confidence: B
+- edge_id: e01451
+  source: round216_erdafitinib_is_ahead_on_attainable_coverage_and_the_fix_is_the_schedule
+  target: erdafitinib_versus_the_alternatives_decision
+  relation: correlates_with
+  sign: unknown
+  magnitude: TWO LEVERS THAT LOOK GOOD AND ARE NOT WHAT THEY SEEM. PHARMACOKINETIC BOOSTING IS REAL BUT DOES
+    NOT RAISE THE CEILING - erdafitinib is cleared 39 per cent by CYP2C9 and 20 per cent by CYP3A4, so inhibiting
+    either raises exposure at the same milligram dose and LOWERS COST PER UNIT EXPOSURE, but it scales FGFR3
+    and FGFR2 together and is arithmetically identical to raising the dose, which the label already permits
+    to 9 mg. AND THE LYSOSOME ALKALINISER IS ACTIVELY COUNTERPRODUCTIVE UNDER A PULSED SCHEDULE - the point
+    of pulsing erdafitinib is that the depot carries target suppression through the off period, and chloroquine
+    empties the depot. THE TWO BEST IDEAS IN THIS FILE ARE MUTUALLY EXCLUSIVE and the schedule one is far better
+    evidenced
+  context: CYP2C9 is polymorphic so exposure already varies between individuals without any intervention; the
+    alkaliniser argument reverses round 215's upgrade of that route, which was made before the schedule idea
+    was on the table
+  evidence_tier: T2
+  refs:
+  - zhu2026
+  - englinger2018
+  - patel2023
+  confidence: C
