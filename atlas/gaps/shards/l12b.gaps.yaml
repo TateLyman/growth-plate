@@ -1423,3 +1423,53 @@ gaps:
     Three outcomes: growth plate signal comparable to articular cartilage means the route is open and the parked
     agents become testable; signal confined to the SOC boundary means dose or particle design is the lever;
     no signal past the SOC means local delivery requires surgical placement and should be costed that way.'
+- gap_id: g_l12_does_fgfr_inhibition_change_chondrocyte_lysosomal_enzyme_handling
+  question: Does pharmacological FGFR inhibition alter lysosomal enzyme trafficking and secretion in growth
+    plate chondrocytes, and if so does it raise or lower the extracellular capacity to activate glucuronidated
+    or otherwise lysosomally-processed agents?
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  why_it_matters: ERDAFITINIB IS IN THIS STACK AND THIS IS AN INTERACTION NEITHER LITERATURE HAS LOOKED FOR.
+    cinque2025 shows FGF signalling controls lysosome biogenesis in chondrocytes through the mannose-6-phosphate
+    receptor pathway via TFEB and TFE3 - cells lacking FGFR3 and FGFR4 dysregulate the M6P pathway with HYPERSECRETION
+    of lysosomal enzymes and impaired lysosomal function. GUSB, the enzyme kunihiro2019 shows activates polyphenol
+    glucuronides, is a lysosomal hydrolase trafficked by exactly that pathway. THE DIRECTION IS GENUINELY UNDETERMINED
+    AND BOTH ANSWERS MATTER. Hypersecretion would push MORE enzyme into the extracellular matrix, which is where
+    a circulating glucuronide actually arrives, and would make FGFR inhibition ENHANCE polyphenol activation
+    in cartilage. Impaired lysosomal function would do the opposite. Beyond polyphenols, the same pathway governs
+    cartilage catabolism generally, so an FGFR inhibitor may be changing matrix turnover in a way the atlas
+    has never costed - and matrix is the third term CORR-197 added to every zone height.
+  what_is_known: cinque2025, Swarm rat chondrosarcoma cells - FGFR3 and FGFR4 double-deficient cells show dysregulated
+    M6P pathway, hypersecretion of lysosomal enzymes and impaired lysosomal function; FGF receptors control
+    M6P receptor gene expression in response to FGF stimulation and during cell cycle via TFEB and TFE3; restoring
+    the M6P pathway by gene expression or TFEB activation rescues the defect. kunihiro2019, mouse - GUSB is
+    the deconjugating enzyme, expressed by hematopoietic marrow cells, and its inhibition by saccharolactone
+    or genetic reduction abolishes aglycone formation. avijgan2026, human - resting zone chondrocytes contain
+    more lysosomes than proliferative zone chondrocytes by transmission electron microscopy. NOTHING connects
+    FGFR inhibition to cartilage GUSB in any species, and no pharmacological FGFR inhibitor has been tested
+    on this pathway at all.
+  what_is_missing: Any measurement of lysosomal enzyme content, secretion or activity in growth plate chondrocytes
+    under a PHARMACOLOGICAL FGFR inhibitor rather than a genetic double knockout, and in primary chondrocytes
+    rather than a chondrosarcoma line. Specifically missing - GUSB activity intracellular against secreted under
+    erdafitinib or infigratinib; whether the effect differs by zone, since the resting zone is the lysosome-rich
+    compartment; and whether FGFR inhibition changes cartilage matrix turnover enough to matter for the CORR-197
+    matrix term in any zone-height reading.
+  nearest_evidence:
+  - cinque2025
+  - kunihiro2019
+  - avijgan2026
+  nearest_evidence_note: cinque2025 is the only paper linking FGF to chondrocyte lysosome biogenesis and it
+    uses a genetic double knockout in a tumour line. kunihiro2019 supplies the enzyme and its controls in the
+    wrong tissue. avijgan2026 supplies the zone distribution of lysosomes in the right tissue with no enzyme
+    measurement.
+  discriminating_experiment: ONE EXPERIMENT ANSWERS BOTH HALVES AND IT IS A CELL-CULTURE STUDY. Treat primary
+    growth plate chondrocytes, and the postnatal ex vivo tibia preparation of abubakar2019, with erdafitinib
+    across a dose range, and measure GUSB activity by fluorogenic 4-methylumbelliferyl-beta-D-glucuronide assay
+    SEPARATELY in the cell lysate and in the conditioned medium, alongside TFEB and TFE3 nuclear translocation
+    and M6P receptor expression. Three outcomes. Secreted GUSB UP with intracellular DOWN reproduces cinque2025
+    and predicts that FGFR inhibition ENHANCES extracellular activation of a glucuronidated agent, which would
+    make erdafitinib and a polyphenol synergistic at the delivery step rather than antagonistic. BOTH DOWN means
+    the combination is antagonistic and the polyphenol needs a non-glucuronide route. NO CHANGE means the chondrosarcoma
+    result does not transfer to primary chondrocytes and the interaction can be dropped. THE CHEAP PRIOR STEP
+    is simply to run the same MUG assay on untreated microdissected zones, which is already required by g_l12_does_growth_plate_cartilage_deconjugate_polyphenol_glucuronides.

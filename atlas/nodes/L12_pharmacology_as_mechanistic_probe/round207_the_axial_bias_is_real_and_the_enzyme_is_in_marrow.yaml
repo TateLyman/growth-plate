@@ -1,0 +1,268 @@
+id: round207_the_axial_bias_is_real_and_the_enzyme_is_in_marrow
+name: ROUND 207 - the CNP axis is appendicular-biased across three species, its growth effect in rats
+  does not appear until adolescence, the sex split is an exposure artefact, and the enzyme that would
+  activate resveratrol sits in marrow rather than in cartilage
+type: hypothesis
+layer: L12
+aliases:
+- appendicular bias
+- EPAR axial data
+- GUSB is marrow
+- FGFR lysosome interaction
+- round 207
+stub: false
+summary: 'BOTH OUTSTANDING HUNTS RESOLVED, AND EACH ONE MOVED A STANDING POSITION.
+
+  HUNT ONE. The BMN-111-11-035 study report is a sponsor internal document and is not obtainable, but the
+  EMA CHMP assessment report reproduces what was needed and adds two things the FDA review did not. THE
+  DESIGN IS n = 7 MALES AND 7 FEMALES IN CONTROL AND HIGH DOSE, 4 and 4 in low and mid - so the L1-to-L4
+  null is a seven-per-sex comparison rather than the handful I assumed, which makes it a better null than
+  round 205 credited, though still small. The EPAR confirms the finding in its own words: "There were no
+  vosoritide-related changes in the L1 to L4 vertebral length, foramen magnum dimensions, or skull
+  measurements."
+
+  AND THE SAME DOCUMENT SUPPLIES THE PATTERN ACROSS SPECIES, WHICH IS WHAT THE GAP ACTUALLY NEEDED. In
+  thanatophoric dysplasia mice at ten days, vosoritide raised femur 3.41 per cent and 5.23 per cent at
+  the two doses, tibia 3.69 and 6.64, anterior-posterior skull 2.88 and 4.77, naso-anal 4.51 and 5.29 -
+  and L4-to-L6 only 2.84 and 3.26, THE ONLY SEGMENT NOT REACHING SIGNIFICANCE AT EITHER DOSE. In juvenile
+  cynomolgus monkeys the axial null is outright. In juvenile RATS the axial skeleton does respond -
+  crown-rump length, tail length and lumbar spine length all rose at high dose - but that same dose
+  produced SCOLIOSIS, KYPHOSIS AND FRACTURES with femur bone mineral density down as much as 19 per cent.
+  THE CONSISTENT READING ACROSS THREE SPECIES IS THAT THE AXIAL SKELETON RESPONDS LESS THAN THE
+  APPENDICULAR, and where it does respond strongly it deforms. That converges with the round-203 human
+  census, where three of six constitutive CNP-axis reports carried scoliosis.
+
+  TWO FURTHER THINGS FALL OUT OF THE EPAR AND BOTH ARE FAVOURABLE. THE SEX SPLIT IS AN EXPOSURE ARTEFACT,
+  NOT BIOLOGY - the assessors state the sex difference in skeletal effects "was likely due to higher
+  vosoritide exposures in males", which resolves the CORR-191 flag raised in round 205 in the benign
+  direction. And THERE IS AN AGE GATE THAT RUNS THE RIGHT WAY: increases in growth, reduction in bone
+  mineral density and the clinical signs of bone overgrowth were "largely not appearing until rats
+  reached adolescence to adulthood (approximately 8-15 weeks of age)". Together with cnpmeta2026''s
+  larger velocity gain in children aged five and above, that is a SECOND INDEPENDENT LINE saying this
+  axis works better later rather than earlier - which is the opposite of the usual assumption and the
+  right direction for a subject at bone age 16.
+
+  HUNT TWO WENT AGAINST THE HYPOTHESIS I RAISED LAST ROUND, AND THE CORRECTION MATTERS MORE THAN THE
+  HYPOTHESIS DID. Round 206 proposed that growth plate cartilage might deconjugate resveratrol
+  glucuronide in situ, on the strength of kunihiro2020 plus avijgan2026''s finding that resting-zone
+  chondrocytes are lysosome-rich. The primary paper behind that mechanism, kunihiro2019, names the enzyme
+  source explicitly: GUSB IS "A DECONJUGATING ENZYME EXPRESSED BY HEMATOPOIETIC MARROW CELLS". The
+  deconjugation was localised to MARROW, was abolished by the GUSB inhibitor saccharolactone, and was
+  reduced or absent in mice with low or null GUSB. THE GROWTH PLATE IS AVASCULAR AND CONTAINS NO MARROW.
+  The resting zone sits at the maximum diffusion distance from the nearest marrow, at the epiphyseal end,
+  behind the secondary ossification centre. So the mechanism is real, it is well controlled, and it is in
+  the wrong compartment for the target this atlas cares about. The hypothesis is not dead - the
+  chondro-osseous junction abuts marrow and could supply aglycone retrograde to the hypertrophic zone -
+  but its reach to the reserve is now the problem rather than its existence.
+
+  AND ONE UNEXPECTED STACK INTERACTION. cinque2025 shows FGF SIGNALLING CONTROLS LYSOSOME BIOGENESIS IN
+  CHONDROCYTES through the mannose-6-phosphate receptor pathway via TFEB and TFE3 - chondrosarcoma cells
+  lacking FGFR3 and FGFR4 show a dysregulated M6P pathway with HYPERSECRETION OF LYSOSOMAL ENZYMES and
+  impaired lysosomal function, rescued by restoring the pathway. ERDAFITINIB IS AN FGFR INHIBITOR AND IT
+  IS IN THIS STACK. GUSB is a lysosomal hydrolase trafficked by exactly that pathway. So FGFR inhibition
+  plausibly changes chondrocyte GUSB handling - AND THE DIRECTION IS GENUINELY AMBIGUOUS, because
+  hypersecretion would put MORE enzyme into the matrix where an extracellular glucuronide actually is,
+  while impaired lysosomal function would mean less. Neither literature has looked, and the atlas should
+  not guess.'
+quantitative:
+- parameter: segment-resolved response to vosoritide in thanatophoric dysplasia mice
+  value: femur +3.41 and +5.23 per cent, tibia +3.69 and +6.64, anterior-posterior skull +2.88 and +4.77,
+    naso-anal +4.51 and +5.29, and L4 to L6 only +2.84 and +3.26 - the L4-L6 segment being the ONLY one
+    not reaching significance at either dose
+  unit: per cent increase over vehicle, at 240 and 800 micrograms/kg
+  conditions: EMA CHMP assessment report, BMN111 in thanatophoric dysplasia mice for 10 days, one-way
+    ANOVA with Tukey post hoc
+  species: mouse
+  source_ref: ema_voxzogo_epar_2021
+  uncertainty: 'THE CLEANEST SEGMENT-RESOLVED COMPARISON ON THIS AXIS. Ten days only, a severe dysplasia
+    model, and the axial value is a NON-significant positive rather than a null - so the honest statement
+    is that the axial response is smaller and less reliable, not that it is absent'
+- parameter: design of the juvenile primate study behind the L1-L4 null
+  value: cynomolgus monkey, juvenile, 2 to 3 years old, 7 males and 7 females in control and high-dose
+    groups and 4 of each sex in low and mid dose, 26 weeks with 28-day recovery, 0, 20, 90 and 300
+    micrograms/kg; the report notes that not all animals received the intended dose
+  unit: animals per group
+  conditions: EMA CHMP assessment report, study BMN-111-11-035
+  species: non_human_primate
+  source_ref: ema_voxzogo_epar_2021
+  uncertainty: 'THIS IS THE NUMBER ROUND 206 ASKED FOR. Seven per sex in the high-dose comparison is
+    better than assumed and makes the L1-L4 null more informative than round 205 credited, while still
+    being small for a length endpoint with biological variance'
+- parameter: axial response and axial deformity in juvenile rats
+  value: crown-rump length, tail length and lumbar spine length all increased at high dose; at 90
+    micrograms/kg the findings include scoliosis, kyphosis and fractures, with femur bone mineral density
+    decreased by up to 19 per cent in high-dose males
+  unit: qualitative direction plus per cent
+  conditions: EMA CHMP assessment report, 26-week juvenile rat study
+  species: rat
+  source_ref: ema_voxzogo_epar_2021
+  uncertainty: 'THE AXIAL SKELETON DOES RESPOND IN RAT, WHICH IS WHY THE PRIMATE NULL IS A SPECIES
+    QUESTION RATHER THAN A CLASS PROPERTY. But the dose that produces the axial gain also produces
+    scoliosis and kyphosis, which converges with three of six human constitutive CNP-axis reports
+    carrying scoliosis'
+- parameter: timing of the growth and skeletal effects in juvenile rats
+  value: increases in crown-rump and tail length, reduction of bone mineral density and content, and
+    clinical signs of bone overgrowth were largely not appearing until rats reached adolescence to
+    adulthood, approximately 8 to 15 weeks of age
+  unit: weeks of age
+  conditions: EMA CHMP assessment report, 26-week juvenile rat study dosed from weaning
+  species: rat
+  source_ref: ema_voxzogo_epar_2021
+  uncertainty: 'AN AGE GATE RUNNING THE FAVOURABLE WAY FOR A LATE-BONE-AGE CASE, and a SECOND independent
+    line after cnpmeta2026''s larger velocity gain above age five. The observation is about when TOXICITY
+    and growth signs emerged rather than a designed age-response experiment, and adolescence in a rat is
+    not bone age 16 in a human'
+- parameter: the source of the deconjugating enzyme
+  value: GUSB is described as a deconjugating enzyme expressed by HEMATOPOIETIC MARROW CELLS; the
+    majority of curcumin-glucuronide delivered to marrow in vivo was hydrolysed to the aglycone, and this
+    was inhibited by saccharolactone and reduced or absent in mice with low or null GUSB activity
+  unit: qualitative, with genetic and pharmacological controls
+  conditions: kunihiro2019, C57BL/6J mice, ex vivo under conditions preventing further metabolism of the
+    unstable aglycone; C3H/HeJ reduced-GUSB and mps/mps GUSB-null strains as controls
+  species: mouse
+  source_ref: kunihiro2019
+  uncertainty: 'THIS IS THE CORRECTION TO ROUND 206 AND IT IS THE IMPORTANT PART. The mechanism is well
+    controlled - a specific inhibitor plus two genetic strains - and it is localised to MARROW. The
+    growth plate is avascular and marrow-free, and the resting zone is at the maximum diffusion distance
+    from the nearest marrow. The hypothesis that cartilage does the same is now less likely, not more'
+- parameter: FGF control of lysosome biogenesis in chondrocytes
+  value: chondrosarcoma cells lacking FGFR3 and FGFR4 show a dysregulated mannose-6-phosphate pathway
+    with hypersecretion of lysosomal enzymes and impaired lysosomal function; FGF receptors control M6P
+    receptor gene expression via TFEB and TFE3, and restoring the pathway rescues the defect
+  unit: qualitative
+  conditions: cinque2025, Swarm rat chondrosarcoma cells, mass spectrometry with lysosome
+    immuno-purification and functional assays
+  species: in_vitro_animal_cell
+  source_ref: cinque2025
+  uncertainty: 'A POTENTIAL STACK INTERACTION WITH ERDAFITINIB AND THE DIRECTION IS AMBIGUOUS. GUSB is a
+    lysosomal hydrolase trafficked by the M6P pathway, so FGFR inhibition plausibly changes chondrocyte
+    GUSB handling - but hypersecretion would put MORE enzyme into the matrix where an extracellular
+    glucuronide is, while impaired lysosomal function means less. A chondrosarcoma cell line, and a
+    double FGFR3/FGFR4 knockout rather than a pharmacological inhibitor'
+- parameter: ex vivo postnatal rat growth in tibia against metatarsal
+  value: percentage growth over 72 hours 23.87 plus or minus 0.80 per cent in tibia and 40.38 plus or
+    minus 0.95 per cent in metatarsal; histological sectioning without decalcification possible in P7 to
+    P13 tibia and P7 to P15 metatarsal; growth plate lengths not significantly different between age
+    groups at 0 or 72 hours, while chondrocyte densities differed significantly in most age groups
+  unit: per cent and days of age
+  conditions: abubakar2019, 45 Sprague-Dawley pups P7 to P15 in nine age groups of five; n falls from 10
+    at 0 and 24 hours to 7 at 48 hours and 4 at 72 hours
+  species: rat
+  source_ref: abubakar2019
+  uncertainty: 'A PLATFORM PAPER AND ITS VALUE IS THE PLATFORM. Almost all ex vivo growth work in this
+    atlas is METATARSAL, a small non-weight-bearing bone; this establishes that the TIBIA is culturable
+    postnatally to P13, which is the closer analogue to the knee that the open-site register makes the
+    largest contributor. It measures chondrocyte DENSITY, not cell height, so it adds no h_term value.
+    The 72-hour n of 4 is weak'
+localization:
+- 'the lumbar spine, which responds less than the limb in mouse, not at all in juvenile primate, and
+  deforms in rat at the dose where it does respond'
+- 'hematopoietic marrow, where the deconjugating enzyme actually is'
+- 'the chondrocyte lysosome, whose biogenesis is under FGF control and therefore under erdafitinib'
+human_evidence: absent
+human_evidence_note: 'Everything decided this round is mouse, rat, non-human primate or a chondrosarcoma
+  cell line. The human contribution is contextual - the round-203 constitutive census, where three of six
+  reports carried scoliosis, now has cross-species support from the rat toxicology.'
+species_basis:
+- mouse
+- rat
+- non_human_primate
+- in_vitro_animal_cell
+translation_risk: moderate
+translation_risk_reason: 'The appendicular bias is now seen in three species by different methods, which
+  is the strongest pattern evidence in this file for any site claim. The GUSB compartment result is a
+  clean mechanistic localisation. The FGFR-lysosome interaction is a cell line and is flagged as a
+  hypothesis only.'
+confidence: B
+claim_grades:
+- claim: the CNP axis produces a smaller and less reliable response in the axial skeleton than in the
+    appendicular skeleton
+  grade: B
+  basis: convergent across three species by different methods - L4-L6 the only non-significant segment
+    in TD mice at both doses, an outright L1-L4 null at 7 per sex in juvenile primates, and in rats an
+    axial gain that arrives with scoliosis, kyphosis and fractures
+- claim: the sex difference in the primate and rat skeletal response is biological
+  grade: X
+  basis: WITHDRAWN. The assessors attribute it to higher vosoritide exposures in males, which resolves the
+    round-205 CORR-191 flag in the benign direction
+- claim: the CNP-axis growth effect emerges in adolescence rather than early development
+  grade: C
+  basis: an observation about when effects appeared in a juvenile rat toxicology study, not a designed
+    age-response experiment; concordant in direction with cnpmeta2026's age subgroup
+- claim: bone deconjugation of polyphenol glucuronides is carried out by hematopoietic marrow cells
+  grade: A
+  basis: localised to marrow, abolished by a specific GUSB inhibitor, and reduced or absent in two
+    genetic strains
+- claim: growth plate cartilage deconjugates polyphenol glucuronides
+  grade: E
+  basis: DOWNGRADED THIS ROUND. The enzyme source is named as marrow, and the growth plate is avascular
+    and marrow-free with the resting zone at the maximum diffusion distance. Still untested, now less
+    likely
+- claim: FGFR inhibition alters chondrocyte lysosomal enzyme handling
+  grade: C
+  basis: a chondrosarcoma line with double FGFR3/FGFR4 knockout, rescued by pathway restoration; not a
+    pharmacological inhibitor and not primary chondrocytes
+- claim: erdafitinib and a polyphenol would interact at the activation step
+  grade: E
+  basis: PURE INFERENCE across two literatures, and the direction is not even determined - hypersecretion
+    and impaired lysosomal function push opposite ways
+key_refs:
+- ref_id: ema_voxzogo_epar_2021
+  year: 2021
+  type: regulatory
+  role: SELF-OBTAINED THIS ROUND - supplies the primate study design (7 per sex), confirms the L1-L4
+    null, and adds the TD mouse segment table, the rat axial gain with deformity, the exposure
+    explanation for the sex split, and the adolescence age gate
+- ref_id: kunihiro2019
+  year: 2019
+  type: primary
+  role: SELF-FOUND - names the enzyme source as hematopoietic marrow cells, with saccharolactone and two
+    GUSB-deficient strains as controls, which downgrades the round-206 cartilage hypothesis
+- ref_id: cinque2025
+  year: 2025
+  type: primary
+  role: SELF-FOUND - FGF signalling controls chondrocyte lysosome biogenesis through M6P, TFEB and TFE3,
+    raising an erdafitinib interaction with any lysosomally-activated agent
+- ref_id: schneider2022
+  year: 2022
+  type: primary
+  role: SELF-FOUND - a long-acting CNP on tetra-PEG microspheres with beta-eliminative linkers, terminal
+    half-lives of about 200 and 600 hours, giving weekly or monthly dosing with growth in mice equal to
+    or exceeding daily vosoritide
+- ref_id: abubakar2019
+  year: 2019
+  type: primary
+  role: READ IN FULL THIS ROUND - establishes the postnatal TIBIA as an ex vivo platform to P13, not just
+    the metatarsal
+- ref_id: kunihiro2020
+  year: 2020
+  type: primary
+  role: the round-206 paper whose premise this round narrows - the deconjugation is real but its
+    compartment is marrow
+- ref_id: cnpmeta2026
+  year: 2026
+  type: meta_analysis
+  role: the human age gradient that the rat adolescence observation now independently supports
+open_questions:
+- g_l12_why_does_the_cnp_axis_lengthen_limb_but_not_spine_in_primates
+- g_l12_does_growth_plate_cartilage_deconjugate_polyphenol_glucuronides
+- g_l12_does_an_intra_articular_nanoparticle_reach_the_growth_plate
+- g_l12_does_fgfr_inhibition_change_chondrocyte_lysosomal_enzyme_handling
+- g_l1_are_the_hterm_agents_in_the_stack_additive_or_saturating
+contradicts:
+- 'SHARPENS RATHER THAN OVERTURNS CORR-201. Round 205 recorded the primate L1-L4 null and downgraded the
+  proportionate-growth claim to D. The EPAR shows the null is at 7 animals per sex rather than a handful,
+  and adds a mouse segment table where L4-L6 is the only segment failing significance at both doses. The
+  appendicular bias is now a three-species pattern and is upgraded to B, while the human achondroplasia
+  segment-ratio result remains the one datum pointing the other way.'
+- 'WITHDRAWS THE SEX-DIFFERENCE FLAG RAISED IN ROUND 205. The high-dose female femur being negative and
+  the statement that females showed minimal increases looked like a CORR-191 situation. The assessors
+  attribute the sex difference to higher exposures in males, so it is a pharmacokinetic artefact rather
+  than a biological insensitivity.'
+- 'DOWNGRADES THE HYPOTHESIS THIS ATLAS RAISED LAST ROUND. Round 206 proposed the resting zone as the
+  compartment most likely to deconjugate polyphenol glucuronides, because GUSB is lysosomal and
+  avijgan2026 finds resting-zone chondrocytes lysosome-rich. kunihiro2019 names the enzyme source as
+  hematopoietic marrow cells and localises the reaction there. The growth plate is avascular and
+  marrow-free. The hypothesis moves from plausible to unlikely, and the experiment that would settle it
+  is unchanged.'
+last_verified: '2026-08-10'
