@@ -140,6 +140,28 @@ quantitative:
   uncertainty: 'OPENS THE STACK-SPECIFIC QUESTION. Oestrogen SUSTAINS growth plate PTHrP tone through
     GPER-1, so an aromatase inhibitor is predicted to lower it and move the plate down the inverted U.
     No study has measured growth plate PTHrP tone under an aromatase inhibitor in any species'
+- parameter: human dose-response of PTH tone against growth, paediatric dialysis
+  value: height velocity SDS falls by 0.26 per doubling of intact PTH (95 per cent CI 0.49 to 0.02);
+    height growth failure odds ratio 1.16 (1.00 to 1.34); restricted cubic spline shows height velocity
+    decreasing with increasing intact PTH across the observed range
+  unit: SDS per doubling of intact PTH
+  conditions: 622 patients aged 1 to 20 years in the Japanese nationwide dialysis registry 2009 to 2020,
+    mean age 13, median intact PTH 183 pg/mL, median height SDS -1.9, 49 per cent short stature
+  species: human
+  source_ref: imaizumi2026
+  uncertainty: 'THE HUMAN DESCENDING LIMB, at n=622. But this is CONTINUOUS PTH1R tone in secondary
+    hyperparathyroidism, not intermittent agonism, so it maps onto the Jansen end of the axis rather
+    than onto teriparatide; and it is confounded by CKD severity, with no data on growth hormone use'
+- parameter: studies reporting that a PTH1R agonist increased FINAL or ADULT bone length or adult height
+    in any species
+  value: '0'
+  unit: studies
+  conditions: five deliberately broad Europe PMC queries designed to surface a positive, filtered to
+    records pairing an agonist term with a final, adult, attained or near-adult length or height endpoint
+  species: multiple
+  source_ref: weise2001
+  uncertainty: 'five candidates surfaced and all five concern PTH LEVELS in disease or GNAS genetics
+    rather than agonist administration. source_ref is nominal because the finding is an absence'
 localization:
 - 'PTH1R across postnatal age - prehypertrophic and hypertrophic chondrocytes at every age tested; stem
   cells and proliferative chondrocytes only faintly and only in the youngest animals'
@@ -179,6 +201,15 @@ claim_grades:
 - claim: endogenous PTH1R signalling is required to maintain the postnatal growth plate
   grade: C
   basis: inducible postnatal conditional knockout with a rescue arm identifying the apoptotic mechanism
+- claim: higher continuous PTH tone during growth is associated with lower height velocity in humans,
+    dose-dependently
+  grade: B
+  basis: 622-patient nationwide registry cohort with cross-sectional and longitudinal analyses and a
+    restricted cubic spline; confounded by CKD severity and by the absence of growth hormone data
+- claim: no study anywhere reports a PTH1R agonist increasing final or adult bone length or adult height
+    in any species
+  grade: A
+  basis: enumeration over five broad Europe PMC queries built to surface a positive
 - claim: oestrogen sustains growth plate PTHrP tone through GPER-1
   grade: C
   basis: agonist, antagonist and conditional knockout arms agreeing in vivo at two ages, confirmed in
@@ -208,6 +239,11 @@ key_refs:
   type: primary
   role: opens the stack-specific question - oestrogen sustains growth plate PTHrP tone through GPER-1,
     so an aromatase inhibitor should lower it
+- ref_id: imaizumi2026
+  year: 2026
+  type: primary
+  role: the human descending limb - 622 paediatric dialysis patients in whom height velocity falls with
+    rising intact PTH, dose-dependently, on continuous rather than intermittent tone
 - ref_id: correa2010
   year: 2010
   type: primary
