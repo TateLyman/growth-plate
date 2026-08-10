@@ -7634,3 +7634,34 @@ is *growth plate dysplasia* — disordered overgrowth, the `machnicki2022` failu
 **non-achondroplasia** subject there is no FGFR3 excess absorbing the drive, so the normal-animal margin
 is the relevant one, not the achondroplasia label dose. Efficacy may be linear while the usable range is
 not.
+
+---
+
+## CORR-203 — restoration is not elevation, and round 205 mixed them
+
+**Round 208.** Round 205 concluded that *"the whole observed range of h_term across every agent in this
+atlas is roughly 1.0–1.4×"*, quoting `hunziker1994`'s 1.36× for growth hormone alongside `weber2025`'s
+1.20× for NPR3 loss. **Those are not the same kind of number.**
+
+| baseline | study | ratio | what it means |
+|---|---|---|---|
+| **RESTORATION** | hypophysectomised → GH | 1.36× | corrects a deficiency; **does not reach** the intact control |
+| RESTORATION | hypophysectomised → IGF-I | 1.40× | same |
+| RESTORATION | hypophysectomised → intact | **1.53×** | the ceiling of restoration |
+| **ELEVATION** | `weber2025` NPR3 loss vs wild-type littermate | 1.20× | above a **normal** baseline |
+| ELEVATION | `trompet2024` hedgehog bead vs contralateral limb, 1 mo | 1.18–1.25× | above a normal baseline |
+| ELEVATION | same, femur at 2 mo | 0.93× | does not persist |
+
+`hunziker1994`'s control is a **hypophysectomised rat**. GH brings it to 26.5 µm against an intact
+control's **29.8 µm** — it does not even reach normal. **The subject of this programme is not
+growth-hormone deficient, so every restoration number is inadmissible as a prediction for them.**
+
+**Consequences.** The headroom above a normal baseline is about **21 %**, not 40 %. **There is no
+evidence anywhere that GH raises h_term above a normal baseline** — the claim is graded X. And the
+additivity gap was posed as *"do GH and a CNP agent share an h_term ceiling"*, which fails on its
+premise: GH has nothing to add. The live question is whether the **hedgehog and natriuretic** arms share
+one — and an enumerated search this round found **no study in any species has given two growth-plate
+agents together and measured terminal hypertrophic cell height.**
+
+**The rule this adds.** Every ratio must carry its control's phenotype. A fold-change against a deficient
+animal predicts nothing about a replete one, and the two must never appear in the same range statement.
