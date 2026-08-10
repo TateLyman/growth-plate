@@ -14026,3 +14026,88 @@ gaps:
     should mandate baseline and 6-weekly standing spine radiographs with Cobb angle, and pre-specify a bracing
     threshold rather than a discontinuation threshold - which converts the current all-or-nothing stopping rule
     into a graded one and is the single change most likely to lengthen the clock.
+- gap_id: g_l12_what_fraction_of_the_fgfr3_pathway_does_each_candidate_agent_remove
+  question: For each agent that acts on a node of the FGFR3 cascade - a soluble FGFR3 decoy, a statin, meclizine,
+    a CREB inhibitor - what FRACTION of FGFR3 pathway output does it remove in a chondrocyte at an achievable
+    human concentration, measured on ONE axis in ONE assay alongside erdafitinib?
+  type: quantitative_gap
+  layer: L12
+  tractability: 1
+  why_it_matters: THIS IS THE ONE MISSING INPUT TO THE ONLY STRATEGY THAT BEATS THE CURVE. Round 217 fitted
+    the growth response as a power law in fractional pathway inhibition with an exponent near 2.4 to 3.3, and
+    showed that residual signal MULTIPLIES across independent nodes in series while the growth response is
+    a POWER of total inhibition. That asymmetry means 8 mg erdafitinib, which removes 31.9 per cent of the
+    pathway, plus one partner removing 26.5 per cent on its own, reaches 50 per cent combined and 2.91 TIMES
+    the growth gain - equivalent to an erdafitinib dose of about 17 mg, twice the label maximum. THE ENTIRE
+    LABEL DOSE HEADROOM FROM 8 TO 9 mg IS WORTH 20 PER CENT BY COMPARISON. So the whole question of how to
+    get more height at a fixed dose reduces to one number per candidate, and NOT ONE OF THEM HAS EVER BEEN
+    MEASURED. Every agent on the list has been studied ALONE as a monotherapy against a growth endpoint, which
+    is the least informative possible way to test something whose value is multiplicative - meclizine's +0.11
+    cm/year alone is exactly what a useful series partner looks like when given by itself.
+  what_is_known: 'The nodes and their agents are all identified and all already in this atlas. LIGAND - soluble
+    FGFR3 decoy, which acts extracellularly and is the one biologic geometry avascular cartilage does not exclude.
+    RECEPTOR ABUNDANCE - yamashita2014, statins, whose proposed mechanism is enhanced DEGRADATION of FGFR3 protein
+    rather than kinase inhibition, corrected cartilage degradation in patient iPSC chondrocytes of two genotypes
+    and recovered bone growth in achondroplasia mice. KINASE - erdafitinib, 31.9 per cent at 8 mg. DOWNSTREAM
+    MAPK - matsushita2025, meclizine, with full human paediatric PK at 12.5 mg/day giving Cmax 167 ng/mL and
+    AUC 1170 ng.h/mL and no serious adverse events. THE ERK-INDEPENDENT CREB LIMB - horike2026, 666-15, which
+    restored bone length in the achondroplasia mouse but was NULL IN WILD-TYPE. WHAT IS ABSENT IS ANY COMMON
+    SCALE - the agents have been characterised in different cells, at different concentrations, with different
+    readouts, by different groups, and never against each other.'
+  what_is_missing: A single-assay panel reporting, for each agent at a clinically achievable free concentration,
+    the per cent suppression of phospho-FGFR and phospho-ERK in the same chondrocyte preparation - plus the
+    pairwise combinations with erdafitinib, which is what actually tests the independence assumption the multiplication
+    depends on.
+  nearest_evidence:
+  - yamashita2014
+  - matsushita2025
+  - horike2026
+  - perera2017
+  nearest_evidence_note: Each agent has its own characterisation and none is on a common scale with any other.
+    perera2017 supplies the only worked example of the readout - phospho-FGFR suppression in a washout design.
+  discriminating_experiment: ONE PLATE ANSWERS IT. Primary growth plate chondrocytes or a chondrogenic line,
+    FGF-stimulated, treated with each agent alone across a concentration range bracketing its achievable human
+    free concentration, reading phospho-FGFR and phospho-ERK by capillary western - which is exactly the assay
+    perera2017 used. THEN THE PAIRWISE MATRIX with erdafitinib at its 8 mg free concentration, because the combination
+    wells are what test independence and detect the feedback that the FGF19 rise predicts. THE OUTPUT IS THE
+    ONE NUMBER PER AGENT THAT ROUND 217's TABLE NEEDS, and it costs one experiment rather than one animal study
+    per candidate.
+- gap_id: g_l12_does_blocking_the_fgf19_klb_compensatory_loop_steepen_the_curve
+  question: Does the FGF19 and klotho-beta rise observed under FGFR3 inhibition act as a compensatory loop that
+    flattens the growth dose-response, and would blocking it steepen the curve?
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  why_it_matters: THIS IS THE ONLY DIRECT HUMAN EVIDENCE THAT THE SYSTEM PUSHES BACK AGAINST FGFR3 INHIBITION,
+    AND A COMPENSATORY LOOP IS EXACTLY WHAT FLATTENS A DOSE-RESPONSE. Round 217 showed the growth curve is
+    supra-linear in fractional pathway inhibition and that the way to climb it is to remove more of the pathway.
+    IF THE SYSTEM RESTORES PART OF WHAT EACH DOSE REMOVES BY RAISING ITS OWN LIGAND, then every dose is worth
+    less than the arithmetic says AND the combination multiplication in round 217 will underperform its
+    prediction. Conversely, blocking the loop would raise the effective inhibition at every dose including the
+    fixed 8 mg, which is precisely the free lever the round was looking for.
+  what_is_known: 'surf301_pb060_2024 - in participants on 60 to 120 mg once-daily dabogratinib, Olink proteomic
+    analysis against baseline at cycle 1 day 15 found FGF19 AND KLOTHO-BETA BOTH INCREASED, described by the
+    authors as a potential compensatory mechanism to FGFR3 inhibition, with NO increase in FGF21 which is the
+    FGFR1 ligand - consistent with FGFR1 sparing. FGF19 binds FGFR3 AND FGFR4 and requires klotho-beta as
+    co-receptor, so raising both raises the ligand drive on the very receptor being inhibited. COL9A1 also
+    moved, and the poster links collagen 2a1 and 9a1 secretion to FGFR3 activity through the Slc26a2-deficient
+    chondrocyte literature.'
+  what_is_missing: Whether the FGF19 rise is large enough to matter pharmacologically against an ATP-competitive
+    inhibitor - a competitive kinase inhibitor is not displaced by ligand at the ATP site, but ligand does
+    raise receptor activation and therefore the signal that must be inhibited; whether the same loop operates
+    in a growing skeleton rather than an adult with cancer; whether it rises with erdafitinib as well as
+    dabogratinib; and whether the rise is hepatic FGF19 or local, since FGF19 is classically an ileal-hepatic
+    hormone acting through FGFR4.
+  nearest_evidence:
+  - surf301_pb060_2024
+  nearest_evidence_note: One exploratory proteomic panel in adults with cancer, with a 1.5-fold threshold and
+    a paired t-test. Nothing has tested whether it is functionally consequential.
+  discriminating_experiment: THE CHEAPEST TEST IS ALREADY POSSIBLE - measure FGF19 and klotho-beta in stored
+    samples from the paediatric erdafitinib cases and from BEACH301, which would say whether the loop operates
+    in a growing skeleton and whether it tracks the loss of growth response over time. MECHANISTICALLY, add
+    recombinant FGF19 plus klotho-beta to the chondrocyte assay in the companion gap and ask whether it restores
+    phospho-ERK against a fixed erdafitinib concentration; if it does, the loop is functional and a klotho-beta
+    blocking antibody or an FGF19 trap becomes a series node in its own right. IN VIVO, the readout is whether
+    the growth response to a fixed dose DECAYS over months in a way that tracks a rising ligand - which is
+    testable in the existing wild-type mouse model with a longer treatment arm than the four weeks tyra300_2025
+    ran.

@@ -7925,3 +7925,33 @@ firm; the exact denominator is not.
 with the same sponsor's own primary characterisation, and neither is interchangeable with a competitor's.
 When a coverage number will carry an argument, quote the value from *each molecule's own developers* and
 say so.
+
+---
+
+## CORR-212 — the protein-binding lever is arithmetically unavailable, and this is a standing rule
+
+**Round 217.** Erdafitinib is 99.7 % bound to α1-acid glycoprotein, an acute-phase protein that varies
+several-fold between individuals. Every round from 213 onward has quoted that figure as the thing that
+"collapses 1,036 ng/mL total into 6.96 nM free" — which invites the inference that lowering AAG would
+multiply free drug at a fixed dose. **It would not, and the reason is structural.**
+
+For a **low-extraction** drug, unbound steady-state concentration is
+
+> C_u,ss = Dose / (CL_int · τ)
+
+— **independent of the free fraction.** Raising f_u raises total clearance in exact proportion, so total
+concentration falls and unbound concentration does not move. Erdafitinib's CL/F of **0.362 L/h** against a
+hepatic blood flow near 90 L/h puts its extraction ratio well under 1 %, so it is as low-extraction as
+drugs get.
+
+**And `zhu2026` confirms it empirically without meaning to.** In moderate hepatic impairment the free
+fraction *rose* and apparent clearance rose with it; the geometric mean ratios against controls were
+**104.8 % for free Cmax and 87.5 % for free AUC** — unchanged unbound exposure. The one natural experiment
+that perturbs binding shows free concentration does not move. (Hepatic impairment perturbs more than
+binding, so the confirmation is confounded — but the theory does not depend on it.)
+
+**The rule this adds.** High protein binding is not, by itself, a lever. Before proposing to raise free
+drug by displacement, check the extraction ratio: for a low-extraction drug the free concentration is set
+by dose and intrinsic clearance alone, and binding only changes the *total* you measure. The corollary
+also matters — a **total** plasma concentration is uninformative about a change in binding, which is the
+plasma-side twin of CORR-208's tissue-side point.

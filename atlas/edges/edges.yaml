@@ -22817,3 +22817,89 @@ edges:
   - englinger2018
   - patel2023
   confidence: C
+- edge_id: e01452
+  source: round217_the_curve_is_a_power_law_and_series_multiplication_beats_it
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: THE GROWTH CURVE IS A POWER LAW IN FRACTIONAL FGFR3 PATHWAY INHIBITION, FITTED TWICE INDEPENDENTLY.
+    HUMAN - 15.0 per cent inhibition gave about 10 cm/year and 29.1 per cent gave 19.06, so a 1.94-fold rise
+    in inhibition travelled with a 4.87-fold rise in GAIN above a typical 7.66 cm/year, an EXPONENT OF 2.38.
+    MOUSE, needing no baseline choice at all - tibia +3.86 to +6.45 per cent and femur +5.00 to +8.23 across
+    12 to 14 mg/kg, EXPONENTS OF 3.33 AND 3.23. AND THE ATTAINABLE RANGE IS COMPRESSED - erdafitinib 8 mg
+    removes 31.9 per cent of the pathway and the 9 mg label maximum 34.5, so NOBODY HAS EVER HALVED FGFR3
+    SIGNALLING IN A GROWING HUMAN
+  context: two human patients differing in age, growth hormone status and available catch-up, and the human
+    exponent is strongly baseline-sensitive - 1.39 at a 4 cm/yr baseline to 3.48 at 9. What survives every
+    choice is that it is well above 1. A Hill coefficient of 1 is assumed throughout
+  evidence_tier: T1
+  refs:
+  - erdachild2024
+  - erdaseries2025
+  - tyra300_2025
+  - perera2017
+  confidence: C
+  gap_id: g_l12_is_60_mg_equivalent_exposure_enough_for_growth
+- edge_id: e01453
+  source: round217_the_curve_is_a_power_law_and_series_multiplication_beats_it
+  target: erdafitinib
+  relation: correlates_with
+  sign: unknown
+  magnitude: THE PROTEIN-BINDING LEVER IS ARITHMETICALLY DEAD AND SHOULD NOT BE PROPOSED AGAIN. Erdafitinib
+    is 99.7 per cent bound to alpha-1-acid glycoprotein, which varies several-fold between individuals, so
+    displacing it looks like free money at a fixed dose. FOR A LOW-EXTRACTION DRUG THE UNBOUND STEADY-STATE
+    CONCENTRATION IS DOSE OVER INTRINSIC CLEARANCE AND IS INDEPENDENT OF PROTEIN BINDING - raising the free
+    fraction raises total clearance in exact proportion. CL/F of 0.362 L/h against a hepatic blood flow near
+    90 L/h puts the extraction ratio well under one per cent. AND zhu2026 CONFIRMS IT EMPIRICALLY WITHOUT
+    MEANING TO - in moderate hepatic impairment the free fraction ROSE, clearance rose with it, and the
+    geometric mean ratios for FREE Cmax and FREE AUC were 104.8 and 87.5 per cent against controls
+  context: hepatic impairment perturbs more than binding so the empirical confirmation is confounded, but the
+    theory does not depend on it. Recorded as CORR-212
+  evidence_tier: T1
+  refs:
+  - zhu2026
+  confidence: B
+- edge_id: e01454
+  source: round217_the_curve_is_a_power_law_and_series_multiplication_beats_it
+  target: fgfr3_mapk_branch
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: SERIES MULTIPLICATION IS THE ONLY WAY TO BEAT THE CURVE AT A FIXED 8 mg. Residual signal MULTIPLIES
+    across independent nodes in one cascade while the growth response is a POWER of total inhibition. 8 mg
+    erdafitinib leaves a residual of 0.681; a partner removing 26.5 per cent on its own takes combined inhibition
+    to 50.0 per cent and the gain to 2.91-FOLD, equivalent to an erdafitinib dose of about 17 mg. A partner
+    at 40 per cent gives 4.35-fold, equivalent to 25 mg. THE ENTIRE 8-TO-9 mg LABEL HEADROOM IS WORTH 20 PER
+    CENT BY COMPARISON. The nodes exist and are all in this atlas - soluble FGFR3 decoy at the ligand, statins
+    at receptor abundance through enhanced FGFR3 protein degradation, erdafitinib at the kinase, meclizine
+    downstream in MAPK, and 666-15 on the ERK-INDEPENDENT CREB limb
+  context: A FRAMEWORK, NOT A MEASUREMENT. No per-agent inhibition fraction has ever been measured for any
+    candidate, every one has been tested alone as monotherapy against a growth endpoint, and the multiplication
+    assumes independence which the FGF19 rise directly contradicts
+  evidence_tier: T2
+  refs:
+  - yamashita2014
+  - matsushita2025
+  - horike2026
+  - perera2017
+  confidence: speculative
+  gap_id: g_l12_what_fraction_of_the_fgfr3_pathway_does_each_candidate_agent_remove
+- edge_id: e01455
+  source: round217_the_curve_is_a_power_law_and_series_multiplication_beats_it
+  target: klotho_beta_cofactor
+  relation: correlates_with
+  sign: +
+  magnitude: THE SYSTEM PUSHES BACK BY RAISING ITS OWN LIGAND, WHICH IS EXACTLY WHAT FLATTENS A DOSE-RESPONSE.
+    surf301_pb060_2024 - in participants on 60 to 120 mg dabogratinib, Olink proteomics against baseline at
+    cycle 1 day 15 found FGF19 AND KLOTHO-BETA BOTH INCREASED, described by the authors as a potential compensatory
+    mechanism to FGFR3 inhibition, with NO increase in FGF21, the FGFR1 ligand, consistent with FGFR1 sparing.
+    FGF19 binds FGFR3 and FGFR4 and requires klotho-beta as co-receptor, so raising both raises ligand drive
+    on the receptor being inhibited. BLOCKING THAT LOOP WOULD STEEPEN THE CURVE AT EVERY DOSE INCLUDING A FIXED
+    8 mg, AND NOBODY HAS TRIED
+  context: one exploratory proteomic panel with a 1.5-fold threshold, in adults with cancer rather than a growing
+    skeleton, under a different molecule, and FGF19 is classically an ileal-hepatic hormone acting through
+    FGFR4 so the rise may not be acting at the growth-relevant receptor
+  evidence_tier: T3
+  refs:
+  - surf301_pb060_2024
+  confidence: C
+  gap_id: g_l12_does_blocking_the_fgf19_klb_compensatory_loop_steepen_the_curve
