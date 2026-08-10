@@ -7796,3 +7796,40 @@ IC50 of ~7.3 nmol/L. Rendering the figure showed 459 and 142 are **infigratinib'
 values past an axis break**, and the true value is ~1.75 nmol/L — a fourfold error that agreed with itself.
 It was caught before it entered the atlas. **Text extraction of a figure is not reading the figure**; when a
 number will carry an argument, render the page.
+
+---
+
+## CORR-208 — a total tissue concentration is the wrong comparator for a lysosomotropic drug
+
+**Round 214.** Round 213 opened `g_l12_what_is_the_growth_plate_concentration_of_an_fgfr3_inhibitor` and
+specified the experiment as bulk LC-MS/MS on microdissected growth plate against matched plasma, to give a
+cartilage-to-plasma partition coefficient for erdafitinib and dabogratinib. **That experiment would have
+produced a confidently wrong answer.**
+
+Erdafitinib carries a secondary aliphatic amine and is monocationic at pH 7.4; its developers state
+lysosomal uptake in the discovery paper (`perera2017`). Dabogratinib's corresponding nitrogen is capped
+with a **methanesulfonyl group** and is not basic — it cannot ion-trap. Henderson–Hasselbalch gives a
+lysosome:cytosol ratio saturating at **316×** (pH 4.7 vs 7.2), which at lysosomal volume fractions of
+1/3/5 % puts **76/91/94 %** of soluble intracellular drug inside the organelle.
+
+FGFR3's kinase domain is cytosolic. So a bulk measurement would rank erdafitinib **roughly an order of
+magnitude above** dabogratinib in cartilage **with no difference in target engagement** — drug on the wrong
+side of an organelle membrane counts fully in the assay and not at all at the kinase.
+
+**Gap amended.** The design now requires a **free or subcellular-resolved** concentration (equilibrium
+dialysis of cartilage homogenate, or MALDI imaging for the depth gradient) **paired with phospho-ERK and
+phospho-FGFR by zone** as the engagement readout. Total tissue concentration may be reported; it must never
+be the comparator.
+
+**What did *not* change.** Round 213's free-plasma comparison itself survives, on a physical-chemistry
+argument neither primary paper states: **at steady state the lysosome is a capacitor, not a resistor.** The
+neutral species equilibrates across all compartments, so cytosolic total concentration is fixed by
+extracellular free concentration and cytosolic pH alone, independent of lysosomal load. Both primary
+observations are non-steady-state — `perera2017`'s prolonged inhibition is a washout tail,
+`englinger2018`'s 5.1-fold chloroquine potency gain is a one-hour co-incubation — and on continuous
+once-daily dosing with a 59-hour half-life there is never a washout. **4.01× against 4.33× stands.**
+
+**The rule this adds.** Before proposing a tissue-concentration endpoint, ask whether the compound
+partitions into a compartment that the target does not occupy. For any base with pKa above ~8, total tissue
+concentration measures the lysosome, not the drug at the target — and the comparator molecule's ionisation
+state determines whether the comparison is even on one axis.

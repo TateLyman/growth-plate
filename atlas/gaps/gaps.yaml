@@ -13789,9 +13789,60 @@ gaps:
   nearest_evidence_note: The growth results and the plasma exposures exist for both drugs; nobody has connected
     them through the tissue. The same gap exists for every agent in this atlas and is stated here for the FGFR
     arm specifically because round 213's whole comparison rests on it.
-  discriminating_experiment: Dose growing rats or rabbits orally with each drug at exposures matched to the
-    human levels in round 213, harvest at steady state, microdissect the proximal tibial growth plate by zone,
-    and quantify by LC-MS/MS against a matched plasma sample. ONE STUDY GIVES THE PARTITION FOR BOTH MOLECULES
-    AND CONVERTS EVERY PLASMA ARGUMENT IN ROUNDS 212 AND 213 INTO A CARTILAGE ARGUMENT. The same tissue also
-    answers whether the FGFR3 IC50 measured in Ba/F3 cells predicts chondrocyte pathway suppression, if pERK
-    is stained by zone on the contralateral limb.
+  discriminating_experiment: 'AMENDED BY ROUND 214 - CORR-208. The original wording specified bulk LC-MS/MS
+    on microdissected growth plate against matched plasma. THAT MEASUREMENT WOULD MISLEAD, because erdafitinib
+    is lysosomotropic and dabogratinib is not, so a total tissue concentration would rank erdafitinib roughly
+    an order of magnitude higher with no difference in engagement of a cytosolic kinase domain. THE CORRECTED
+    DESIGN: dose growing rats orally with each drug at exposures matched to the human free levels in round
+    213, and read the same growth plate two ways - a FREE or subcellular-resolved concentration (equilibrium
+    dialysis of cartilage homogenate, or MALDI imaging across the plate to give the depth gradient), AND
+    phospho-ERK plus phospho-FGFR by zone on the contralateral limb as the engagement readout that no
+    concentration can substitute for. Total tissue concentration may be reported but must never be the
+    comparator.'
+- gap_id: g_l12_does_a_lysosomotropic_fgfr_inhibitor_reach_the_chondrocyte_cytosol
+  question: In a growth plate chondrocyte, what fraction of erdafitinib is in the lysosome rather than the
+    cytosol where FGFR3's kinase domain sits - and does the avascular geometry of cartilage turn that lysosomal
+    compartment from a harmless capacitor into a diffusion barrier that keeps drug from reaching cells at depth?
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  why_it_matters: THIS DECIDES WHETHER ROUND 213's FREE-PLASMA COMPARISON MEANS ANYTHING IN THE ONE TISSUE
+    THAT MATTERS. Erdafitinib is a lipophilic secondary amine with lysosomal uptake stated by its own developers;
+    dabogratinib carries a methanesulfonylated nitrogen and cannot ion-trap at all. In a well-perfused tissue
+    at steady state this is harmless - the neutral species equilibrates and cytosolic concentration is set by
+    extracellular free drug regardless of how much the lysosomes hold, so the lysosome is a capacitor rather
+    than a resistor. CARTILAGE IS NOT A WELL-PERFUSED TISSUE. It is avascular, drug arrives by diffusion over
+    hours from the perichondrial and metaphyseal margins, and that is exactly the non-steady-state regime in
+    which chondrocytes near the margin could load their lysosomes first and buffer drug out of the interstitial
+    fluid before it reaches the resting zone. IF THAT HAPPENS, THE MOLECULE WITH THE DEPOT IS THE MOLECULE THAT
+    FAILS TO PENETRATE, WHICH IS THE OPPOSITE OF WHAT ITS TISSUE CONCENTRATION WOULD SHOW.
+  what_is_known: 'perera2017 - the erdafitinib discovery paper states rapid uptake into the lysosomal compartment
+    of cells in culture, associated with prolonged inhibition of FGFR signalling, possibly by sustained release.
+    englinger2018 - PD173074, a more lipophilic FGFR inhibitor with ChEMBL pKa 10.12, accumulates selectively
+    in lysosomes of two lung cancer lines, is still compartmentalised there 120 hours after a one-hour exposure,
+    and chloroquine co-incubation improves phospho-ERK suppression 5.1-fold (14.29 against 2.78-fold at 1 micromolar)
+    while rescuing AKT inhibition entirely. Ion-trapping arithmetic gives a ceiling of 316-fold at pH 4.7 against
+    7.2, putting 76 to 94 per cent of soluble intracellular drug in lysosomes across lysosomal volume fractions
+    of 1 to 5 per cent. NOTHING HAS EVER BEEN MEASURED IN A CHONDROCYTE - not lysosomal volume fraction, not
+    lysosomal pH, not drug distribution.'
+  what_is_missing: Subcellular distribution of an FGFR inhibitor in growth plate chondrocytes; chondrocyte
+    lysosomal volume fraction and pH by zone; and the depth profile of drug across the plate from the perichondrial
+    margin inward. Also whether lysosomal exocytosis, which is a genuine steady-state drain that the capacitor
+    argument neglects, is material for erdafitinib.
+  nearest_evidence:
+  - perera2017
+  - englinger2018
+  - qiu2026
+  nearest_evidence_note: The phenomenon is established in cancer cell lines for two FGFR inhibitors and stated
+    by the developers for a third. No paper has looked in cartilage, and the round-207 gap on chondrocyte lysosomal
+    enzyme handling is the same organelle approached from the other side.
+  discriminating_experiment: DOSE GROWING RATS ORALLY WITH ERDAFITINIB AND WITH DABOGRATINIB AT MATCHED FREE
+    FGFR3 COVERAGE, then read the growth plate two ways in the same animal. (1) DEPTH PROFILE - MALDI imaging
+    mass spectrometry across the plate from perichondrium to the chondro-osseous junction, which gives the diffusion
+    gradient directly and would show a marginal buffering front if one exists. (2) TARGET ENGAGEMENT BY ZONE -
+    phospho-ERK and phospho-FGFR immunostaining on the contralateral limb, which is what actually matters and
+    which no concentration measurement can substitute for. THE CRITICAL DESIGN POINT, AND IT IS WHY ROUND 213's
+    VERSION OF THIS EXPERIMENT WOULD HAVE MISLED - a bulk LC-MS concentration on microdissected cartilage reports
+    the organelle load and would rank erdafitinib an order of magnitude above dabogratinib with no difference
+    at the kinase. THE CHEAP PRIOR STEP is LysoTracker plus the compound in primary chondrocytes with and without
+    bafilomycin, which settles whether chondrocyte lysosomes take erdafitinib up at all.

@@ -22499,3 +22499,109 @@ edges:
   - surf301_ena2024
   - nadeaunguyen2026
   confidence: C
+- edge_id: e01437
+  source: round214_lysosomal_trapping_survives_round213_and_the_liver_ceiling_is_routable
+  target: erdafitinib
+  relation: correlates_with
+  sign: unknown
+  magnitude: ERDAFITINIB IS LYSOSOMOTROPIC AND DABOGRATINIB CANNOT BE, AND THE AXIS IS BASICITY NOT LIPOPHILICITY.
+    perera2017 states in the discovery paper's own abstract that JNJ-42756493 shows RAPID UPTAKE INTO THE LYSOSOMAL
+    COMPARTMENT of cells in culture, ASSOCIATED WITH PROLONGED INHIBITION OF FGFR SIGNALLING, possibly by sustained
+    release. Structurally erdafitinib carries a SECONDARY ALIPHATIC AMINE, monocationic at pH 7.4; dabogratinib's
+    diazaspiro nitrogen is CAPPED WITH A METHANESULFONYL and is not basic, so it cannot ion-trap. ON LIPOPHILICITY
+    THEY DO NOT SEPARATE - PubChem XLogP 3.2 for erdafitinib against 3.6 for dabogratinib, the reverse of what
+    is usually assumed. TPSA 77.3 against 113 is the second real difference and points the same way
+  context: the ionisation assignment is from structure, not a measured pKa - none was reachable for either compound.
+    perera2017's full text is paywalled and the abstract gives no accumulation ratio, cell type or concentration
+  evidence_tier: T1
+  refs:
+  - perera2017
+  confidence: B
+- edge_id: e01438
+  source: round214_lysosomal_trapping_survives_round213_and_the_liver_ceiling_is_routable
+  target: round213_the_free_coverage_comparison_and_tyra_is_already_past_erda
+  relation: correlates_with
+  sign: unknown
+  magnitude: AT STEADY STATE THE LYSOSOME IS A CAPACITOR, NOT A RESISTOR, SO THE FREE-PLASMA COMPARISON SURVIVES
+    - BUT THE MEASUREMENT ROUND 213 PROPOSED TO VALIDATE IT DOES NOT. The neutral species crosses membranes freely,
+    so at equilibrium cytosolic total concentration is fixed by extracellular free concentration and cytosolic
+    pH ALONE, independent of lysosomal load; the lysosome fills from the same neutral pool rather than draining
+    the cytosol. Both primary observations are non-steady-state - perera2017's prolonged inhibition is a washout
+    tail, englinger2018's 5.1-fold chloroquine gain is a one-hour co-incubation - and on continuous once-daily
+    dosing with a 59-hour half-life there is never a washout. SO 4.01x AGAINST 4.33x STANDS. But ion trapping
+    puts 76 to 94 per cent of soluble intracellular erdafitinib in lysosomes across 1 to 5 per cent lysosomal
+    volume, so A TOTAL CARTILAGE CONCENTRATION WOULD RANK ERDAFITINIB AN ORDER OF MAGNITUDE HIGHER WITH NO
+    DIFFERENCE AT THE KINASE. CORR-208
+  context: the capacitor argument is physical chemistry rather than measurement and neglects lysosomal exocytosis,
+    a genuine steady-state drain, and TFEB-driven expansion of the compartment under chronic dosing
+  evidence_tier: T2
+  refs:
+  - perera2017
+  - englinger2018
+  confidence: C
+  gap_id: g_l12_does_a_lysosomotropic_fgfr_inhibitor_reach_the_chondrocyte_cytosol
+- edge_id: e01439
+  source: round214_lysosomal_trapping_survives_round213_and_the_liver_ceiling_is_routable
+  target: cartilage_targeted_delivery
+  relation: hypothesized_link
+  sign: +
+  magnitude: THE CARTILAGE-ACCESS ASYMMETRY ROUND 213 ASSUMED AWAY IS REAL AND HAS TWO TERMS OF OPPOSITE SIGN.
+    Growth plate matrix carries fixed negative charge, so a monovalent cation partitions IN by Donnan equilibrium
+    - 1.39-fold at 0.10 molar fixed charge density, 1.62 at 0.15, 2.14 at 0.25 - and erdafitinib is monocationic
+    while dabogratinib is neutral and gets none of it. AGAINST THAT, CARTILAGE IS AVASCULAR and drug arrives by
+    diffusion over hours from the perichondrial and metaphyseal margins, which is exactly the non-steady-state
+    regime where englinger2018's sink bites - chondrocytes at the margin would load their lysosomes first and
+    buffer drug out of the interstitial fluid before it reaches the resting zone. CHARGE PULLS ERDAFITINIB IN,
+    ITS OWN LYSOSOMES MAY HOLD IT UP, AND THE NET IS UNMEASURED IN ANY SPECIES
+  context: idealised Donnan arithmetic with no fixed charge density measured for human growth plate in this atlas,
+    no account of direct glycosaminoglycan binding which can retard depth penetration rather than help it, and
+    no account of 99.7 per cent plasma protein binding upstream of the matrix
+  evidence_tier: T2
+  refs:
+  - englinger2018
+  - ye2026
+  confidence: speculative
+  gap_id: g_l12_does_a_lysosomotropic_fgfr_inhibitor_reach_the_chondrocyte_cytosol
+- edge_id: e01440
+  source: round214_lysosomal_trapping_survives_round213_and_the_liver_ceiling_is_routable
+  target: fgfr3_tyrosine_kinase_inhibitor
+  relation: correlates_with
+  sign: unknown
+  magnitude: THE LIVER CEILING IS ROUTABLE AND TWO OF THE FOUR ROUTES NEED NO NEW WORK. (1) SURF301 holds individual
+    steady-state AUC in 34 patients and ALT in 41 - plotting one against the other decides whether the transaminitis
+    is a concentration effect that sets a ceiling or an idiosyncratic effect that is a monitoring problem. (2)
+    THE BID ARMS ARE UNREPORTED - 40, 50 and 60 mg twice daily were run and only the once-daily arms presented;
+    if the injury is Cmax-driven then BID at matched AUC lowers Cmax, AND BID IS WHAT A PHYSIS WANTS ANYWAY because
+    it integrates continuously. (3) qiu2026 showed osimertinib hepatotoxicity runs through TFEB dephosphorylation,
+    nuclear translocation, excess autophagy-lysosome activation and vacuolation death, and named S-ADENOSYL-L-METHIONINE
+    as a hepatoprotectant blocking TFEB activation - and because dabogratinib is NOT lysosomotropic, a positive
+    TFEB result would prove the mechanism is not lysosomotropism-dependent and the antidote generalises. (4) CARTILAGE-TARGETED
+    DELIVERY IS THE ONLY ROUTE THAT REMOVES THE CEILING RATHER THAN RAISING IT, because a liver ceiling binds
+    only while cartilage and hepatocyte see the same plasma
+  context: none of the four is tested. ye2026 reports delivery only as normalised fluorescence with no absolute
+    concentration, so the cartilage-to-liver ratio a carrier achieves is unknown and might be 1.5-fold
+  evidence_tier: T2
+  refs:
+  - surf301_ena2024
+  - qiu2026
+  - ye2026
+  confidence: speculative
+  gap_id: g_l12_is_tyra300_transaminitis_on_target_or_chemical
+- edge_id: e01441
+  source: round214_lysosomal_trapping_survives_round213_and_the_liver_ceiling_is_routable
+  target: growth_plate
+  relation: correlates_with
+  sign: +
+  magnitude: THE ONLY JUVENILE THERAPEUTIC INDEX MEASURED FOR ANY FGFR INHIBITOR, AND IT IS NARROW. ozaki2020
+    evaluated ASP5878 specifically for achondroplasia and reported it in AUC terms, which no other programme does
+    - bone elongation in achondroplasia model MALE mice at 300 microgram/kg, giving an AUC of 275 ng.h/mL in juvenile
+    mice, against minimal adverse effect (very slight atrophy of the corneal epithelium) at an AUC of 459 ng.h/mL
+    in juvenile rats. A 1.67-FOLD WINDOW. It was also LESS effective at bone elongation than a CNP analogue, and
+    it is oral
+  context: efficacy and toxicity AUCs come from DIFFERENT SPECIES, mice and rats respectively, so the 1.67-fold
+    ratio crosses a species boundary and is softer than it looks. Male mice only, so CORR-191 applies to the length
+    result
+  evidence_tier: T1
+  refs:
+  - ozaki2020
+  confidence: C
