@@ -7563,3 +7563,74 @@ axial endpoints checked. It is not open access.
 finding is the opposite of what was looked for: **`bush2010` was sitting in the null bucket while being
 an isolated h_term result** — hypertrophic zone height falling with cell number held constant — which is
 exactly the decomposition rounds 202–203 said did not exist.
+
+---
+
+## CORR-200 — the h_term gain under hedgehog agonism is transient, and the free axis has a small ceiling
+
+**Round 205, from user-supplied source data.** `trompet2024` attributes its augmented growth plate height
+to *"probably an elevation in the height of the terminal hypertrophic chondrocytes."* The deposited
+per-animal workbook resolves the hedge into a **time course**, paired contralateral limbs of the same rats:
+
+| | 1 week | 1 month | 2 months |
+|---|---|---|---|
+| **femur THC height** | 1.00× (p=0.99) | **1.18× (p=0.025, 6/6 up)** | 0.93× (p=0.22) |
+| **tibia THC height** | 1.07× (p=0.14) | **1.25× (p=0.0001, 6/6 up)** | 1.087× (p=0.014) |
+
+**The effect peaks at one month and is largely gone by two.** `trompet2024`'s *length* gain persists to
+**six** months — so the sustained length is **not** carried by terminal cell height. The paper's causal
+sentence is true at one timepoint and false where the length accumulates.
+
+At two months in the femur the **zone is up 1.05× while the cells are down 0.93×** — CORR-197 happening
+in the same animals, the two moving in opposite directions.
+
+**And it bounds the free axis.** Largest THC ratio here 1.25×; `weber2025` 1.20× (NPR3 loss);
+`hunziker1994` 1.36× (GH). **The whole observed range of h_term across every agent in this file is about
+1.0–1.4×.** Round 202 established a per cent of h_term is worth ~5 % of division count and costs nothing.
+This round establishes there are only about **forty** of them available.
+
+**The rule this adds.** A single-timepoint cell measurement cannot support a mechanism claim about a
+sustained length gain. Where a paper attributes persistent growth to a cell-level term, the term must be
+measured at the timepoint where the length was measured.
+
+---
+
+## CORR-201 — round 203's "proportionate growth" is downgraded; the primate axial arm is null
+
+**Round 205.** Round 203 read `cnpmeta2026` (4 RCTs, n=326, ULS ratio MD −0.02, I²=0) as proportionate
+growth and called it *"the favourable answer for a case with several open sites."* The FDA review of the
+26-week juvenile NHP study says otherwise in a **skeletally normal** animal:
+
+- **tibia +7 %** (p<0.05, HD males), **humerus +6 %** (p<0.05), femur +3 % (n.s.)
+- **"There were no significant effects on the length between L1 and L4 vertebrae or in the dimensions of the foramen magnum or skull."**
+- sex split stated: *"in females, minimal increases in bone lengths were evident"*, HD female femur **−1 to −3 %** → CORR-191 applies
+
+Reconcilable — the human trials are achondroplasia, where vertebrae are themselves FGFR3-affected and
+have room a normal vertebra may not; and L1–L4 in a handful of monkeys is underpowered. **But the
+reconciliation is a hypothesis.** The claim "a CNP-axis agent grows the segments proportionately" drops
+from **B to D**, and neither reading may be quoted as established. New gap opened.
+
+**Also from the same table, unanticipated by anything in this atlas:** the response varies **fourfold
+within a single growth plate** — tibial plate height medial +3 %, lateral +62 %, **central +412 %**.
+
+---
+
+## CORR-202 — the CNP dose ceiling, and it is a yield constraint
+
+**Round 205.** Round 203 found the human CNP dose-response near-linear with no efficacy ceiling and
+inferred the axis should be dosed hard. The regulatory package supplies the other half, and it belongs in
+the yield ledger rather than only the safety one **because the dose-limiting toxicity is the pharmacology
+itself**:
+
+| study | NOAEL | multiple of human dose | dose-limiting finding |
+|---|---|---|---|
+| juvenile rat 26 wk | 10 µg/kg | **0.08× AUC, 0.2× BSA** | hindlimb ambulation, maze solving, growth plate histomorphometric alterations, degenerative joint changes |
+| adult NHP 44 wk | 25 µg/kg | **0.2× AUC** | growth plate thickness, bone length, chondrocyte proliferation |
+| adult rat 26 wk | 50 µg/kg | — | valgus, **growth plate dysplasia**, long bones **and vertebrae** |
+| adolescent NHP 26 wk | 90 µg/kg | 1.7× AUC | abnormal femur shape |
+
+**In skeletally normal animals the NOAEL sits at or below the human clinical exposure**, and the finding
+is *growth plate dysplasia* — disordered overgrowth, the `machnicki2022` failure mode. For a
+**non-achondroplasia** subject there is no FGFR3 excess absorbing the drive, so the normal-animal margin
+is the relevant one, not the achondroplasia label dose. Efficacy may be linear while the usable range is
+not.
