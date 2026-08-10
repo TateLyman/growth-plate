@@ -8524,3 +8524,80 @@ grounds for retirement** — they are grounds for suspecting the candidate set i
 source reports a *ratio* over time, always recompute the underlying quantities: the direction of a ratio's
 change carries information that the ratio's level conceals, and here the concealment ran in the sponsor's
 favour.
+
+---
+
+## CORR-226 — the human dose-response curve was fitted through a point that splices two different patients, so it was never identifiable
+
+Round 217 fitted the human growth exponent through two points, recorded as **"erdaseries2025 patient 1 at
+3 mg and erdachild2024 at 7 mg."** Reading `raimann2024` directly, quantity by quantity, by patient:
+
+| | dose | velocity |
+|---|---|---|
+| **Patient 1** (male, 13.8 y) | 5 mg/day reduced to **3 mg/day** for bone pain | **not quantified in the text** — "a dramatic growth spurt" |
+| **Patient 2** (female, 10.9 y) | **not stated anywhere in the paper** | 2.6 cm/year on nintedanib → **10 cm/year** on erdafitinib |
+
+**The dose comes from patient 1 and the velocity comes from patient 2.** They are different children, of
+different sexes, five years apart in age, with different tumours and different FGFR alterations.
+
+**And the upper anchor was already flagged by this atlas.** `erdafitinib.yaml` and CORR-062 record that
+`erdachild2024` ran **7 mg for five months with frequent interruptions** for hyperphosphataemia and then
+**5 mg**, and that the 14.3 cm cannot be assigned to either dose.
+
+**So there are not two usable human points, and a two-parameter power law cannot be identified from one.**
+CORR-214 established that the fitted exponent of 2.38 was substantially an artefact of an assumed Hill
+slope; **this is worse and independent** — the fit had no second point to begin with. What survives from
+rounds 217 and 218 is the **mouse** fit in dose units, which needs no human anchor, and the qualitative
+statement that gain rises faster than exposure.
+
+**Why it survived four rounds.** The splice is invisible unless you read the source *per patient*. The
+atlas's own note said "erdaseries2025 patient 1 at 3 mg," which reads as one coherent observation; the
+paper reports the dose in the clinical narrative and the velocity in a figure legend, and nothing in
+either flags that they belong to different children. **The check that would have caught it is the one this
+round finally ran: for every number taken from a multi-patient report, record WHICH PATIENT it came from,
+and refuse to pair two numbers unless they carry the same patient identifier.** That is now a rule.
+
+---
+
+## CORR-227 — a second wrong first author, in a reference the atlas has been citing for rounds
+
+`erdaseries2025` was recorded with **first author Hartmann G**. The paper is **Raimann A, Stepien N, Azizi
+AA, Hartmann G, Gojo J**, *Horm Res Paediatr* 2024;**98(6):753–757**, doi 10.1159/000540485, PMID 39084206.
+**Hartmann G is the fourth author.** The PMID and finding are correct; only the attribution was wrong.
+Corrected in place with the previous value retained as `first_author_corrected`.
+
+**This is the second instance after CORR-216** (`fgf19cart2025`, recorded as Wang Z when the paper is Chen
+H). Both entries were hand-written rather than created by `addref.py --pmid`, which writes all metadata
+from one lookup and refuses on mismatch — as it did in round 223 when a reference was filed under the
+wrong first author and the tool rejected it. **CORR-216 already made `addref.py --pmid` mandatory for
+anything with a PMID; this correction shows the rule was added but the back-catalogue was never swept.**
+A rule that governs new entries does not fix old ones, and the sweep is a one-line check: for every ref
+with a PMID, compare the stored `first_author` against the lookup.
+
+---
+
+## CORR-228 — I graded X, one round ago, a claim refuted by a paper this atlas has held and cited for rounds
+
+Round 223 graded **X** the claim *"any growth plate has been measured in a human with normal FGFR3 under an
+FGFR inhibitor or a CNP agent"*, wrote that none exists, and opened a gap on that basis.
+
+**`raimann2024` — cited in that same round, in the same node's key_refs — reports serial WRIST IMAGING of
+the physis in exactly that population**: atypical physeal widening, profound metaphyseal sclerosis at
+treatment onset, and normalisation of bone mineralisation after the treatment halt.
+
+**The spirit of the gap survives and the claim as written does not.** Nobody has measured a zone height or
+a cell dimension in a human on either drug — the imaging is radiographic and qualitative. So the
+*quantitative* gap is real and stays open. But "no growth plate has been observed" was false, and it was
+false against a source in the round's own reference list.
+
+**This is the fifth instance of the own-files failure mode** — after CORR-205, CORR-213 (twice), CORR-215
+and CORR-224's Voxzogo passage — and **the shortest interval yet between holding a source and asserting its
+absence: the same round.** The previous rules (open the agent's node; grep the corrections log; re-search
+the supplied corpus when the question changes) all address *finding* a source. **None of them addresses
+citing a source in one field of a node and contradicting it in another field of the same node.**
+
+**The rule this adds is mechanical and should be enforced by the validator, not by memory.** Before any
+claim is graded **X on grounds of absence**, every `key_ref` in that node must be checked against the
+claim. An absence claim in a node that cites a source containing the thing is a self-contradiction the
+schema can detect. Until that check exists, the manual version is: **absence claims require an explicit
+list of what was searched, and the node's own reference list is the first thing on it.**
