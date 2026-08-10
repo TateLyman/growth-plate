@@ -7413,3 +7413,81 @@ withdrawn is the claim of *human confirmation* that GH bypasses the resting zone
 of absence until two things are computed: the unadjusted comparison, and the minimum detectable
 difference. If the MDD exceeds the observed point estimate, the correct entry is *uninformative*,
 never *null*.
+
+---
+
+## CORR-195 — the open-site register, and a framing error that had already cost analysis
+
+**Round 203, prompted by the user.** Rounds 199–202 progressively narrowed the case description from
+**"spine and knee reserve"** to **"spine reserve"**, and by round 202 the CNP axis was being scored
+against the spine alone. That is wrong, and it is wrong in the direction that loses height.
+
+**A hand-wrist bone age of 16 measures one region, and that region is among the last to close.**
+`kvist2021`, MRI of wrist, knee and ankle in 958 healthy subjects aged 14.0–21.5, finds fusion running
+**from the foot upward to the wrist, with the radius last**. Complete fusion in 17-year-old females:
+radius 75 %, **femur 85 %**, proximal tibia 97 %, distal tibia 98 %, calcaneus 98 %. In 19-year-old
+males: 90 / 97 / 95 / 97 / 98.
+
+**The knee is still the single largest contributor to stature at this point and it is not closed.**
+Treating it as spent discards the biggest term in the account.
+
+The sites that can still be contributing at BA 16 are now enumerated permanently in
+`open_growth_sites_at_bone_age_16` (L9): knee (distal femur + proximal tibia), spine (vertebral bodies,
+ring apophyses, sacrum — partial sacral union 15–21 y, `cardoso2014`), proximal femur and hip, the
+spheno-occipital synchondrosis (which `kim2024` shows matures with the *cervical spine*, correlation
+0.955–0.964, not with the hand), and the ankle. Plus two sites that are **readouts, not benefit** —
+the distal radius (last physis in the body, so the best in-vivo reporter that an agent still reaches
+cartilage) and the proximal humerus (arm span, which several human natural experiments actually report).
+
+**The rule this adds.** No agent, route or round may be scored against a single site. When a
+measurement is site-specific, name the site. Standing height is a **sum** over sites and cannot be
+attributed to one. Sitting height, arm span and segment ratios are **proportions** and constrain where
+a gain went. Every future round scores against the register.
+
+---
+
+## CORR-196 — round 202 was wrong that no segment-resolved human CNP data exists
+
+**Round 203.** The round-202 node stated: *"No segment-resolved human growth measurement exists under
+any CNP-axis agent."* **It does exist, and the atlas already held it.**
+
+- `cnpmeta2026` — meta-analysis of **4 randomised trials, n = 326**, low risk of bias: upper-to-lower
+  segment ratio **unchanged, MD −0.02 (95 % CI −0.04 to +0.01), P = 0.17, I² = 0**, vosoritide and
+  navepegritide separately both −0.02. Height Z-score +0.28 (0.20–0.37).
+- `rua2025` — 27 children, 15 to 24 months: sitting height SDS **+0.79** against arm span **+0.32**
+  (both P ≤ .01), ULS ratio **−0.10** leg-favouring, sitting-height-to-height ratio **unchanged**. Two
+  proportion measures disagreeing inside one cohort.
+
+**The pooled randomised answer is proportionate growth** — the agent does not preferentially grow one
+segment. That is the *favourable* answer for a case with several open sites, and the error deprived the
+round of it. Both are achondroplasia cohorts with abnormal baseline proportions and short follow-up.
+
+**The rule this adds.** Before asserting that a measurement does not exist, grep the bibliography for
+the measurement rather than for the mechanism. The segment data was indexed under the trial literature,
+not under the CNP mechanism entries, and the mechanism search missed it.
+
+---
+
+## CORR-197 — a growth plate zone height has a THIRD term, and the CNP axis moves it
+
+**Round 203.** CORR-189 established that no agent may be assigned to a term from a zone height, on the
+reasoning that **a zone height is cells per column × cell height**. That decomposition is **incomplete**,
+and the paper that shows it is one the atlas already held.
+
+`nakao2015`, cartilage-specific `Nppc` and `Npr2` deletion, reports that in **both** knockouts *"the
+extracellular spaces of the non-hypertrophic chondrocyte layer were greatly decreased"*.
+
+**A zone height is cells per column × cell height PLUS EXTRACELLULAR MATRIX** — and the CNP axis
+demonstrably moves the matrix term.
+
+The consequence is that the prohibition gets *stronger*, not weaker. The entire CNP zone-height
+literature — `agoston2007`'s hypertrophic-zone expansion, `nakao2015`'s hypertrophic layer at 23–35 % of
+control, `hirota2018`'s thickness measurements — is consistent with a matrix effect, a cell-number
+effect, a cell-height effect, or any mixture. **It cannot be decomposed even in principle from what is
+published.** The same paper's TUNEL shows almost no difference in apoptosis, so clearance is excluded as
+the explanation for the hypertrophic collapse; matrix, cell number and cell height are not.
+
+**The rule this adds.** A zone, layer or region height has three terms, not two. Any decomposition must
+account for matrix explicitly or state that it cannot. Where a manipulation is known to affect
+proteoglycan or matrix volume — which the CNP axis is — a zone height carries **no** information about
+cells at all without an independent cell measurement.

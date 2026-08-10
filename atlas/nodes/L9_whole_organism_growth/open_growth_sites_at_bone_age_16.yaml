@@ -1,0 +1,240 @@
+id: open_growth_sites_at_bone_age_16
+name: THE OPEN-SITE REGISTER - every growth site that can still be contributing at bone age 16, what
+  each is worth, and why a hand-wrist bone age of 16 does not mean the skeleton is closed
+type: tissue_structure
+layer: L9
+aliases:
+- open sites at BA16
+- the site register
+- which physes are still open
+- growth site enumeration
+stub: false
+summary: 'THIS NODE EXISTS TO STOP A FRAMING ERROR THAT HAD ALREADY ENTERED THE FILE. Rounds 199 to 202
+  drifted from "spine and knee reserve" to "spine reserve", and by round 202 the analysis was being
+  scored against the spine alone. THAT IS WRONG AND IT IS WRONG IN THE DIRECTION THAT LOSES HEIGHT. At a
+  hand-wrist bone age of 16 there are several sites still contributing, THE KNEE IS STILL THE SINGLE
+  LARGEST OF THEM, and any agent must be scored against all of them. Every future round scores against
+  this register.
+
+  THE FIRST THING TO FIX IS WHAT A BONE AGE OF 16 EVEN MEASURES. Greulich-Pyle and Tanner-Whitehouse
+  read the HAND AND WRIST. That is one region, and by kvist2021 it is close to the LAST region to
+  finish - MRI of wrist, knee and ankle in 958 healthy subjects aged 14.0 to 21.5 found fusion
+  proceeding FROM THE FOOT UPWARD TO THE WRIST, with the calcaneus and distal tibia closing before the
+  femur and THE RADIUS LAST. In 17-year-old females complete fusion was present in 75 per cent at the
+  radius against 97 to 98 per cent at proximal tibia, distal tibia and calcaneus; in 19-year-old males
+  90 per cent at the radius against 95 to 98 per cent at the other three. So a hand-wrist score is a
+  late-closing region standing in for the whole skeleton, and it systematically UNDER-reports how much
+  the foot and ankle have already finished while saying nothing at all about the spine, which runs on
+  its own schedule entirely.
+
+  THE SITES THAT CAN STILL BE CONTRIBUTING TO STANDING HEIGHT AT BONE AGE 16, IN ORDER OF WHAT THEY ARE
+  WORTH. (1) THE KNEE - distal femur plus proximal tibia. Still the largest single contributor to
+  stature in late adolescence and demonstrably not closed at this point: kvist2021 puts complete femoral
+  fusion at only 85 per cent in 17-year-old females and 97 per cent in 19-year-old males, so at bone age
+  16 a meaningful fraction is open. ANY ANALYSIS THAT TREATS THE KNEE AS SPENT AT BONE AGE 16 IS
+  DISCARDING THE BIGGEST TERM. (2) THE SPINE - vertebral body endplate growth zones, the ring
+  apophyses, and the sacrum. hori2025 followed 517 idiopathic scoliosis patients by EOS with 314 to
+  skeletal maturity and quantifies exactly how much T1-S1 height is left by maturity stage; cardoso2014
+  puts partial union of the sacral secondary ossification centres at 15 to 21 years. The spine is the
+  LATEST-RUNNING contributor and is genuinely still open here. (3) THE PROXIMAL FEMUR AND HIP. (4) THE
+  SPHENO-OCCIPITAL SYNCHONDROSIS, a true bidirectional growth plate and the principal contributor to
+  postnatal cranial base lengthening, which kim2024 stages on 3D CT and finds tracking cervical
+  vertebral maturation at Spearman 0.955 to 0.964 - so it matures with the spine rather than with the
+  hand. (5) THE ANKLE, distal tibia and fibula, mostly finished by this point per kvist2021 but not
+  uniformly.
+
+  AND TWO SITES THAT MATTER FOR THE PROGRAMME WITHOUT ADDING STATURE. The DISTAL RADIUS is the last
+  physis in the body to close and is therefore the best available in-vivo reporter of whether an agent
+  is still reaching cartilage at all; the PROXIMAL HUMERUS closes late and drives arm span, which is the
+  measurement several of the human natural experiments in this atlas actually report. Neither adds
+  height. Both are legitimate READOUTS and must not be scored as benefit.
+
+  THE HONEST GAP IN THIS REGISTER IS THE CENTIMETRES. hori2025 gives spine height remaining by Sanders
+  stage - cumulative T1-S1 gain to maturity falls 14.16 mm by SMS 3A, 28.23 mm by SMS 3B and 35.28 mm by
+  SMS 4 against an SMS 2 reference, with boys gaining 11.19 mm more than girls - which is a real,
+  followed-to-maturity number for one site. NO EQUIVALENT PER-SITE CENTIMETRE FIGURE EXISTS IN THIS
+  ATLAS FOR THE KNEE, HIP OR CRANIAL BASE AT BONE AGE 16, and the classical growth-remaining tables stop
+  well before it. That is recorded as a gap rather than filled by estimate.
+
+  THE RULE THIS NODE IMPOSES. No agent, route or round may be scored against a single site. When a
+  measurement is site-specific, the site is named. When a human study reports standing height, that is a
+  SUM over sites and cannot be attributed to one of them. When it reports sitting height, arm span or a
+  segment ratio, that is a PROPORTION and constrains where the gain went - which is why cnpmeta2026 and
+  rua2025 matter and why round 202 was wrong to say no such data existed.'
+quantitative:
+- parameter: complete growth plate fusion by site, 17-year-old females
+  value: radius 75, femur 85, proximal tibia 97, distal tibia 98, calcaneus 98
+  unit: per cent of subjects with complete fusion
+  conditions: kvist2021, MRI of wrist, knee and ankle in 958 healthy subjects aged 14.0 to 21.5 years
+  species: human
+  source_ref: kvist2021
+  uncertainty: 'THE KEY NUMBER FOR THIS REGISTER IS THE FEMUR AT 85 PER CENT. At an age already past a
+    bone age of 16, roughly one in seven females still has an incompletely fused distal femur - the
+    largest contributor to stature. Chronological age is not bone age and the mapping is loose, so this
+    bounds rather than fixes the fraction open at BA 16'
+- parameter: complete growth plate fusion by site, 19-year-old males
+  value: radius 90, femur 97, proximal tibia 95, distal tibia 97, calcaneus 98
+  unit: per cent of subjects with complete fusion
+  conditions: kvist2021, same series
+  species: human
+  source_ref: kvist2021
+  uncertainty: 'At 19 the knee is nearly finished in males, so bone age 16 sits meaningfully before this
+    point. The ordering is the durable finding - foot first, wrist last'
+- parameter: direction of the fusion sequence
+  value: fusion proceeds from the foot upward to the wrist, calcaneus and distal tibia closing before the
+    femur, and the radius last
+  unit: ordinal sequence
+  conditions: kvist2021 by MRI; extended across 21 epiphyses in 258 Bosniak males aged 14 to 30 by
+    schaefer2007, where most pairwise orderings showed no variant
+  species: human
+  source_ref: kvist2021
+  uncertainty: 'THIS IS WHY A HAND-WRIST BONE AGE MISLEADS ABOUT THE REST OF THE SKELETON. The scored
+    region is among the last to close. Substantial between-individual variation exists in the order of
+    both initiation and completion (schaefer2007)'
+- parameter: spine height remaining to skeletal maturity by Sanders stage
+  value: cumulative T1-S1 gain to maturity, against an SMS 2 reference - SMS 3A minus 14.16 mm (95 per
+    cent CI minus 18.32 to minus 10.00), SMS 3B minus 28.23 mm (minus 32.82 to minus 23.65), SMS 4 minus
+    35.28 mm (minus 40.05 to minus 30.52), all P less than 0.001; boys gain 11.19 mm more than girls
+  unit: millimetres of T1-S1 height
+  conditions: hori2025, 517 idiopathic scoliosis patients with EOS imaging, 314 followed to skeletal
+    maturity defined as Sanders 8 or Risser 4 to 5
+  species: human
+  source_ref: hori2025
+  uncertainty: 'THE ONLY PER-SITE REMAINING-GROWTH FIGURE IN THIS ATLAS THAT IS FOLLOWED TO MATURITY, and
+    it is for the spine. IN A SCOLIOSIS COHORT, so it is not a healthy-spine normative value. Sanders
+    stage is not bone age; the paper maps SMS 2 to 85-90 per cent of final height, SMS 3 to 90-95 and
+    SMS 4 to about 96'
+- parameter: relative timing of limb and trunk growth peaks
+  value: limb growth peaks about six months BEFORE trunk growth; spine height growth rate peaks at SMS
+    3A, about 1.4x SMS 2, 1.5x SMS 3B and 1.8x SMS 4, while TOTAL BODY height rate is highest at SMS 2
+    and 3A
+  unit: months of offset, and rate ratios by maturity stage
+  conditions: hori2025, attributed to Dimeglio and confirmed against Sanders staging in this cohort
+  species: human
+  source_ref: hori2025
+  uncertainty: 'DIRECTLY RELEVANT TO A LATE-BONE-AGE CASE AND IT CUTS IN A HELPFUL DIRECTION - the trunk
+    is still accelerating when the limb has already peaked, so the residual at a late stage is
+    spine-weighted even though the knee remains the larger absolute contributor earlier'
+- parameter: age at partial union of the sacral secondary ossification centres
+  value: 15 to 21
+  unit: years
+  conditions: cardoso2014
+  species: human
+  source_ref: cardoso2014
+  uncertainty: 'Places the sacrum among the latest-running contributors to sitting height. A range across
+    a skeletal series, not a per-individual trajectory'
+- parameter: spheno-occipital synchondrosis maturation and its coupling to the spine
+  value: fusion stages 3 and 4 at 12.7 to 13.9 years in males and 11.0 to 12.5 in females; correlation of
+    fusion stage with cervical vertebral maturation stage 0.955 in males and 0.964 in females
+  unit: years, and Spearman correlation
+  conditions: kim2024, 3D CT in 630 Korean subjects aged 6 to 18
+  species: human
+  source_ref: kim2024
+  uncertainty: 'THE CRANIAL BASE MATURES WITH THE SPINE, NOT WITH THE HAND, which is why it belongs in
+    this register and why a hand-wrist bone age does not report on it. The cohort tops out at 18 and the
+    stages quoted are intermediate, so the closure age itself is not fixed by this series'
+- parameter: segment-resolved response to a CNP-axis agent in humans
+  value: upper-to-lower segment ratio UNCHANGED, mean difference minus 0.02 (95 per cent CI minus 0.04 to
+    plus 0.01), P = 0.17, I-squared 0, with vosoritide and navepegritide separately both at minus 0.02;
+    height Z-score plus 0.28 (0.20 to 0.37)
+  unit: upper-to-lower segment ratio, and height Z-score
+  conditions: cnpmeta2026, meta-analysis of 4 randomised trials, n = 326, low risk of bias, in
+    achondroplasia
+  species: human
+  source_ref: cnpmeta2026
+  uncertainty: 'THE POOLED RANDOMISED ANSWER IS PROPORTIONATE GROWTH - the agent does not preferentially
+    grow one segment. FAVOURABLE for a case with several open sites. ACHONDROPLASIA ONLY, where baseline
+    proportions are abnormal, and short-term; rua2025 in a single 27-child cohort found the ULS ratio
+    shifting minus 0.10 leg-favouring at 24 months while the sitting-height-to-height ratio did not move,
+    so two proportion measures disagreed inside one cohort'
+localization:
+- 'distal femur and proximal tibia - the knee, largest single contributor and NOT closed at bone age 16'
+- 'vertebral bodies, ring apophyses and sacrum - the latest-running contributors'
+- 'proximal femur and hip'
+- 'spheno-occipital synchondrosis - matures with the spine, not the hand'
+- 'distal tibia and fibula - mostly finished by this point'
+- 'distal radius and proximal humerus - READOUTS ONLY, they do not add stature'
+human_evidence: direct
+human_evidence_note: 'Every quantity in this register is human. kvist2021 is MRI in 958 healthy subjects;
+  hori2025 is 517 patients with 314 followed to maturity; kim2024 is 630 subjects by 3D CT; schaefer2007
+  and cardoso2014 are skeletal series; cnpmeta2026 pools 4 randomised trials. The weakness is not species
+  but SPECIFICITY - none of these is indexed to bone age 16 as such, and the scoliosis and achondroplasia
+  cohorts are not healthy-population normatives.'
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: Human accounting node.
+confidence: B
+claim_grades:
+- claim: a hand-wrist bone age of 16 does not mean the skeleton has stopped growing
+  grade: A
+  basis: kvist2021 by MRI in 958 subjects plus schaefer2007 across 21 epiphyses; the hand-wrist is among
+    the last regions to close and the spine and sacrum run later still
+- claim: fusion proceeds foot to wrist, with the radius last
+  grade: A
+  basis: prospective MRI series of 958 subjects, corroborated across 21 epiphyses in an independent
+    skeletal collection
+- claim: the knee is still contributing at bone age 16
+  grade: B
+  basis: complete femoral fusion is only 85 per cent in 17-year-old females and 97 per cent in
+    19-year-old males, both at or past the equivalent point; inferred across the loose chronological-age
+    to bone-age mapping rather than measured at BA 16 directly
+- claim: the spine and cranial base are the latest-running contributors to stature
+  grade: B
+  basis: sacral partial union to 21 years, vertebral growth quantified to maturity by Sanders stage, and
+    a cranial base synchondrosis correlating 0.95-plus with cervical vertebral maturation
+- claim: a CNP-axis agent grows the segments proportionately in humans
+  grade: B
+  basis: 4 randomised trials, n = 326, I-squared 0 on the segment ratio; achondroplasia only, short-term,
+    and one observational cohort disagrees on one of two proportion measures
+- claim: per-site remaining growth in centimetres at bone age 16 is known
+  grade: X
+  basis: FALSE. Only the spine has a followed-to-maturity figure and it comes from a scoliosis cohort
+    indexed to Sanders rather than bone age. This is the register's main gap
+key_refs:
+- ref_id: kvist2021
+  year: 2021
+  type: primary
+  role: THE SEQUENCE AND THE SITE-SPECIFIC PERCENTAGES - 958 subjects by MRI, foot to wrist, radius last,
+    femur only 85 per cent complete in 17-year-old females
+- ref_id: hori2025
+  year: 2025
+  type: primary
+  role: the only followed-to-maturity per-site remaining-growth figure in the atlas, for the spine, and
+    the limb-before-trunk timing offset
+- ref_id: schaefer2007
+  year: 2007
+  type: primary
+  role: extends the sequence across 21 epiphyses in an independent skeletal series and bounds the
+    between-individual variation in ordering
+- ref_id: cardoso2014
+  year: 2014
+  type: primary
+  role: the sacrum, partial union 15 to 21 years, placing it among the latest contributors
+- ref_id: kim2024
+  year: 2024
+  type: primary
+  role: the spheno-occipital synchondrosis, and the finding that the cranial base matures with the
+    cervical spine rather than with the hand
+- ref_id: cnpmeta2026
+  year: 2026
+  type: meta_analysis
+  role: the pooled randomised segment-ratio result - a CNP-axis agent grows the segments proportionately,
+    which is the favourable answer when several sites are open
+- ref_id: rua2025
+  year: 2025
+  type: primary
+  role: the observational counterpoint - sitting height gaining more than arm span while the ULS ratio
+    moves leg-favouring, two proportion measures disagreeing inside one cohort
+open_questions:
+- g_l9_per_site_remaining_growth_at_late_bone_age
+- g_l7_bone_age_cost_per_centimetre_across_the_stack
+contradicts:
+- 'CORRECTS THIS ATLAS''S OWN RECENT FRAMING, NOT AN EXTERNAL SOURCE. Rounds 199 to 202 progressively
+  narrowed "spine and knee reserve" to "spine reserve", and round 202 scored the CNP axis against the
+  spine alone. The knee is still the largest single contributor at this point and kvist2021 shows it is
+  not closed. Logged as CORR-195.'
+- 'CORRECTS ROUND 202 ON A MATTER OF FACT. That node stated that no segment-resolved human growth
+  measurement exists under any CNP-axis agent. cnpmeta2026 pools four randomised trials with an explicit
+  upper-to-lower segment ratio, and rua2025 reports sitting height against arm span. Logged as CORR-196.'
+last_verified: '2026-08-10'

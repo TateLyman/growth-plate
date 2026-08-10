@@ -660,3 +660,47 @@ gaps:
     would mean allometry is a description of successive growth programmes rather than a law.
   tractability: 3
   search_log_ref: g_l9organism_017
+- gap_id: g_l9_per_site_remaining_growth_at_late_bone_age
+  question: At a hand-wrist bone age of 16, how many centimetres of growth remain AT EACH SITE - knee, hip,
+    spine, cranial base - rather than in total?
+  type: quantitative_gap
+  layer: L9
+  tractability: 2
+  why_it_matters: THE OPEN-SITE REGISTER CANNOT BE USED FOR ARITHMETIC WITHOUT THIS, and CORR-195 exists because
+    its absence let the analysis silently collapse onto one site. Every agent in this programme has to be scored
+    against a weighted sum over open sites, and the weights do not exist. hori2025 supplies the spine, followed
+    to maturity, but indexed to Sanders stage in a scoliosis cohort. Nothing equivalent exists for the knee,
+    which kvist2021 shows is still open at this point and which is the largest single contributor. Without per-site
+    weights, a site-specific animal result cannot be converted into a predicted centimetre gain in a person,
+    and the atlas has been doing that conversion implicitly.
+  what_is_known: kvist2021, human - site-specific complete-fusion percentages by chronological age in 958 MRI
+    subjects; complete femoral fusion 85 per cent at 17 in females and 97 per cent at 19 in males. hori2025,
+    human - cumulative T1-S1 height remaining to maturity by Sanders stage in 517 patients with 314 followed
+    to maturity; SMS 4 is 35.28 mm short of the SMS 2 reference and boys gain 11.19 mm more than girls. cardoso2014
+    - sacral partial union 15 to 21 years. kim2024 - spheno-occipital staging to age 18. The classical growth-remaining
+    tables (Anderson-Green-Messner and successors) are built for epiphysiodesis timing in younger children and
+    stop well before this maturity range.
+  what_is_missing: Per-site remaining growth in centimetres, indexed to a maturity marker that works at the
+    top of the range, in a HEALTHY cohort. Specifically - (a) distal femur and proximal tibia remaining growth
+    at Sanders 6 to 8, which is where the classical tables run out; (b) any remaining-growth figure at all for
+    the proximal femur, cranial base or sacrum; (c) a healthy-population version of hori2025, since the only
+    followed-to-maturity spine figure comes from a scoliosis cohort; (d) the mapping between hand-wrist bone
+    age and per-site status, which kvist2021 gives against CHRONOLOGICAL age only.
+  nearest_evidence:
+  - kvist2021
+  - hori2025
+  - cardoso2014
+  - kim2024
+  - laufer2025
+  nearest_evidence_note: hori2025 is the template - EOS imaging, a maturity marker that discriminates at the
+    top of the range, and follow-up to maturity. It has been done for one site. laufer2025 is listed because
+    28-40 year follow-up after epiphysiodesis quantifies what arresting a single named physis costs in the end,
+    which is the same accounting run backwards.
+  discriminating_experiment: 'RETROSPECTIVE AND ALREADY COLLECTED IN MOST PAEDIATRIC ORTHOPAEDIC CENTRES. Take
+    any cohort with serial EOS or scanogram imaging plus hand radiographs through late adolescence to maturity
+    - the same design as hori2025 but healthy or mixed-indication - and report SEGMENT lengths separately: T1-S1,
+    femur, tibia, and total stature, against BOTH Sanders stage and hand-wrist bone age. The output is a table
+    of remaining centimetres per site per maturity stage, which is exactly the weight vector this atlas needs
+    and cannot currently write down. The cheap partial version is to re-analyse an existing scoliosis EOS cohort
+    for FEMUR and TIBIA lengths, which are in the images already and are simply not reported because the studies
+    were about the spine.'
