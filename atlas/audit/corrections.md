@@ -7727,3 +7727,72 @@ sometimes"* — was earned.
 assay**, grep the bibliography for the target, the tool compounds and the readout. A gap is only a gap
 after the held references have been checked. `addref.py` records `cited_by`; a T1 reference sitting at
 `cited_by: 0` on a live topic is a flag, not a neutral fact.
+
+---
+
+## CORR-206 — the erdafitinib dose gate is FGFR2, not FGFR1. Round 212 named the wrong receptor
+
+**Round 213.** Round 212 concluded that *"erdafitinib's dose is titrated to, and capped by, a receptor that
+is not the growth target"* and identified that receptor as **FGFR1**, via serum phosphate. The label's
+phosphate-triggered up-titration is real, and the index child in `erdachild2024` was indeed interrupted for
+hyperphosphataemia. But `surf301_ena2024` reproduces the BALVERSA dose-modification table (study BLC3001,
+n = 135) and it says the opposite about what brings the dose **down**:
+
+| adverse reaction | axis | any % | ≥G3 % | → interruption | → reduction |
+|---|---|---|---|---|---|
+| **Hyperphosphatemia** | **FGFR1** | **75** | **4** | **7** | **4.4** |
+| Nail disorders | FGFR2 | 69 | 12 | **22** | **27** |
+| Stomatitis | FGFR2 | 56 | 10 | **19** | **19** |
+| Eye disorders | FGFR2 | — | — | **16** | **17** |
+| PPE | FGFR2 | 30 | 10 | **15** | **12** |
+
+Overall: interruption 72 %, reduction 69 %, discontinuation 14 %.
+
+**Hyperphosphataemia is the most frequent erdafitinib toxicity and among the least dose-limiting** — it is
+managed with diet and phosphate binders, not with dose. The dose comes down for **FGFR2 epithelial
+toxicity**.
+
+**What survives from round 212**: the label titrates *up* on phosphate, which is an FGFR1 pharmacodynamic
+marker; and in the one paediatric case phosphate *was* the interrupting toxicity — n = 1, and a growing
+skeleton handles phosphate differently from an elderly urothelial-cancer patient.
+
+**Why this sharpens rather than weakens the TYRA-300 case.** FGFR2 is where TYRA-300's margin is
+**thinnest** — 19-fold, against 63 at FGFR1 and 55 at FGFR4. But erdafitinib's FGFR2 margin is **1.4-fold**
+and pemigatinib's and infigratinib's are **0.8-fold — inverted**. So on the axis that actually gates the
+dose, TYRA-300 is ~14× better, and at 90 mg QD (n = 15) nail disorders were 7 %, stomatitis 7 %, dry eye
+**0 %** and PPE 13 %, with dose reduction 27 % against erdafitinib's 69 %.
+
+**The rule this adds.** Incidence is not dose-limitation. Before naming the receptor that caps a dose, read
+the *dose-modification* table, not the *adverse-reaction* table — the most common toxicity is often the one
+clinicians work around.
+
+---
+
+## CORR-207 — "no meaningful FGFR3 selectivity at all" is true only at FGFR2
+
+**Round 213.** Round 210 recorded that *"erdafitinib, futibatinib, pemigatinib and infigratinib all retain
+low IC50 values in FGFR1-, FGFR2- and FGFR4-driven Ba/F3 lines — i.e. no meaningful FGFR3 selectivity at
+all."* `surf301_ena2024` plots the panel with the fold values printed:
+
+| drug | over FGFR1 | over FGFR2 | over FGFR4 |
+|---|---|---|---|
+| **TYRA-300** | **63×** | **19×** | **55×** |
+| erdafitinib | 4.2× | 1.4× | 14× |
+| futibatinib | 4.9× | 1.3× | 7.6× |
+| pemigatinib | 2.4× | 0.8× | 27× |
+| infigratinib | 2.2× | 0.8× | 67× |
+
+At **FGFR2** the claim holds and then some — 0.8 to 1.4×, and for two agents **inverted**. At **FGFR1** the
+pan agents run 2.2–4.9× and at **FGFR4** 7.6–67×, which is not "no selectivity". Infigratinib is *more*
+FGFR4-sparing than TYRA-300.
+
+Also recorded: **erdafitinib is the more potent molecule at the target** — Ba/F3 FGFR3 IC50 ~1.35 nmol/L
+against TYRA-300's ~1.75. The selectivity is not bought with on-target potency; the entire difference is
+what the two molecules do to the other three isoforms.
+
+**A method note attached to this correction.** On first pass the PDF's text layer exposed only two numbers
+from that figure, 459 and 142, and dividing them by the printed 63× and 19× gave a *self-consistent* FGFR3
+IC50 of ~7.3 nmol/L. Rendering the figure showed 459 and 142 are **infigratinib's and pemigatinib's FGFR4
+values past an axis break**, and the true value is ~1.75 nmol/L — a fourfold error that agreed with itself.
+It was caught before it entered the atlas. **Text extraction of a figure is not reading the figure**; when a
+number will carry an argument, render the page.

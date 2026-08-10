@@ -22396,3 +22396,106 @@ edges:
   - propel3_2026
   - erdaseries2025
   confidence: C
+- edge_id: e01432
+  source: round213_the_free_coverage_comparison_and_tyra_is_already_past_erda
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: THE COMPARISON ROUND 212 SAID WAS IMPOSSIBLE, ON ONE AXIS. TYRA-300's plasma protein binding is
+    recoverable from its own PK figure - the FGFR1, FGFR2 and FGFR4 target lines sit 109-, 102- and 93-fold
+    above the measured Ba/F3 IC50s of 113, 35 and 98 nmol/L, mean 101-fold, so FRACTION UNBOUND ABOUT 1.0 PER
+    CENT, and the unused FGFR3 IC90 line then falls out at 2.8x the IC50, a Hill slope near 2.2. In free
+    multiples of each drug's own FGFR3 cellular IC50 - THE CHILD WHO GREW 19.06 cm/YEAR SAT AT 4.01x; TYRA-300
+    at 90 mg QD sits at 4.33x in thirteen patients; 120 mg sits at 9.91x; ERDAFITINIB'S ABSOLUTE LABEL MAXIMUM
+    IS 5.16x. So 120 mg is 1.92x beyond anything erdafitinib can reach and the MTD has not been found
+  context: the line positions are read by pixel off a log axis, but three independent isoforms give the same
+    factor and the fourth falls out with a sensible Hill slope. Ba/F3 transfected-cell IC50s, adult population
+    clearance applied to an adolescent, and NEITHER drug has ever had its concentration measured in cartilage
+  evidence_tier: T3
+  refs:
+  - surf301_ena2024
+  - zhu2026
+  - erdachild2024
+  confidence: B
+- edge_id: e01433
+  source: round213_the_free_coverage_comparison_and_tyra_is_already_past_erda
+  target: erdafitinib
+  relation: inhibits
+  sign: '-'
+  magnitude: THE GATE IS FGFR2, NOT FGFR1, AND ROUND 212 HAD IT BACKWARDS. Hyperphosphataemia is erdafitinib's
+    MOST FREQUENT toxicity at about 75 per cent but only about 4 per cent reaches grade 3 and it drives just 7
+    per cent of interruptions and 4.4 per cent of reductions - it is managed with diet and binders. THE DOSE
+    COMES DOWN FOR FGFR2 EPITHELIAL TOXICITY - nail disorders 22 per cent interruption and 27 per cent
+    reduction, stomatitis 19 and 19, eye disorders 16 and 17, PPE 15 and 12, against overall interruption 72
+    per cent, reduction 69 per cent and discontinuation 14 per cent. AND FGFR2 IS WHERE TYRA-300'S MARGIN IS
+    THINNEST at 19-fold - but erdafitinib's is 1.4-fold and pemigatinib and infigratinib are INVERTED at
+    0.8-fold, so TYRA-300 is about fourteenfold better on the axis that actually gates the dose, and at 90 mg
+    those four toxicities run 7, 7, 0 and 13 per cent with reduction at 27 per cent
+  context: what survives from round 212 is that the label titrates UP on phosphate, an FGFR1 pharmacodynamic
+    marker, and that the index child WAS interrupted for hyperphosphataemia - n = 1, and a growing skeleton
+    handles phosphate differently from an elderly urothelial cancer patient. The receptor attribution of each
+    toxicity is the sponsor's framing of a competitor's label
+  evidence_tier: T3
+  refs:
+  - surf301_ena2024
+  - dabogratinib2026
+  confidence: B
+- edge_id: e01434
+  source: round213_the_free_coverage_comparison_and_tyra_is_already_past_erda
+  target: growth_plate
+  relation: hypothesized_link
+  sign: +
+  magnitude: THE MURINE BRIDGE CLOSES INDEPENDENTLY OF THE FREE-COVERAGE ARITHMETIC AND LANDS IN THE SAME
+    PLACE. The murine 18 mg/kg oncology AUC - the dose giving 96 per cent tumour growth inhibition and beating
+    erdafitinib head to head - is drawn across the human dose groups at about 6,500 ng.h/mL. The 12 to 14
+    mg/kg that grew WILD-TYPE mice interpolates to about 4,300 to 5,100 ng.h/mL, and HUMAN 60 mg QD IS 4,360
+    ng.h/mL. So human 60 mg is the mouse growth exposure, 90 mg is 2.4 times it and 120 mg is 5.4 times it.
+    TWO INDEPENDENT ROUTES PUT THE GROWTH-RELEVANT HUMAN DOSE AT 60 TO 90 mg AND PUT 120 mg WELL PAST IT
+  context: the 18 mg/kg anchor is printed on the slide; the interpolation to 12 and 14 mg/kg is this atlas's
+    and assumes linear mouse dose-to-AUC scaling that was not measured - tyra300_2025's only mouse PK is a
+    single 1.2 mg/kg SUBCUTANEOUS dose while the growth study was ORAL
+  evidence_tier: T3
+  refs:
+  - surf301_ena2024
+  - tyra300_2025
+  confidence: speculative
+  gap_id: g_l12_what_is_the_growth_plate_concentration_of_an_fgfr3_inhibitor
+- edge_id: e01435
+  source: round213_the_free_coverage_comparison_and_tyra_is_already_past_erda
+  target: fgfr3_tyrosine_kinase_inhibitor
+  relation: correlates_with
+  sign: '-'
+  magnitude: THE CEILING MOVED RATHER THAN DISAPPEARING AND IT IS NOW THE LIVER, AND THE ARITHMETIC SAYS MORE
+    SELECTIVITY WILL NOT FIX IT. At 90 mg QD ALT rose in 47 per cent and AST in 47 per cent, both with grade 3
+    components; the study's only DLT was grade 3 diarrhoea at 90 mg and its only drug-related discontinuation
+    was grade 3 ALT at 90 mg. BUT FREE Cav AT 90 mg IS 7.58 nmol/L AGAINST AN FGFR4 CELLULAR IC50 OF 98 - 8
+    PER CENT OF IC50, and 18 per cent at 120 mg. FGFR4 is barely engaged, so the transaminitis is almost
+    certainly not an FGFR effect, which makes it a property of this molecule and a hard ceiling. Erdafitinib,
+    only 14-fold FGFR3-over-FGFR4 selective, gives ALT 45 and AST 44 per cent - a similar rate from a molecule
+    engaging FGFR4 far harder, which points the same way
+  context: Ba/F3 transfected-cell IC50 is not hepatocyte sensitivity, and first-pass hepatic exposure after an
+    oral dose is far above systemic so the plasma-derived FGFR4 margin may not hold in the hepatocyte
+  evidence_tier: T3
+  refs:
+  - surf301_ena2024
+  confidence: C
+  gap_id: g_l12_is_tyra300_transaminitis_on_target_or_chemical
+- edge_id: e01436
+  source: round213_the_free_coverage_comparison_and_tyra_is_already_past_erda
+  target: round212_the_erda_ceiling_is_time_and_tyra_already_cleared_the_dose
+  relation: correlates_with
+  sign: unknown
+  magnitude: WHAT ROUND 213 DOES AND DOES NOT SETTLE OF ROUND 212. SETTLED - the dose question, in both
+    directions and with numbers rather than a cross-trial response-rate bridge. OVERTURNED - the gate is FGFR2,
+    not FGFR1 (CORR-206), and the pan agents are unselective only at FGFR2 (CORR-207). UNTOUCHED - THE CLOCK.
+    Round 212 made time the binding constraint at a median 137 days to skeletal toxicity, and SURF301 patients
+    have been on TYRA-300 up to 16.6 months with 100 per cent disease control at 90 mg or above and six
+    confirmed partial responses in eleven. THAT IS AN ADULT POPULATION WITH CLOSED GROWTH PLATES. It proves
+    the molecule is tolerable for over a year; it says nothing about whether a driven physis fails at 137 days
+  context: the erdafitinib skeletal-toxicity clock comes from five paediatric cases with no denominator, and
+    no FGFR3-selective agent has been given to a growing child in any programme reported here
+  evidence_tier: T3
+  refs:
+  - surf301_ena2024
+  - nadeaunguyen2026
+  confidence: C

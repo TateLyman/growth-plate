@@ -13716,3 +13716,82 @@ gaps:
     PK; and any SURF301 dose-escalation PK presentation for human AUC and Cmax by dose level. Then compute
     steady-state free concentration exactly as round 212 did for erdafitinib and express both drugs as multiples
     of their own FGFR3 cellular IC50.
+- gap_id: g_l12_is_tyra300_transaminitis_on_target_or_chemical
+  question: Is the ALT and AST elevation that limits TYRA-300 an on-target FGFR-isoform effect, or a chemical
+    property of the molecule - and therefore, is the dose ceiling fixable by a better-selective analogue or
+    is it hard?
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  why_it_matters: THIS IS NOW THE CEILING ON THE TOP FGFR CANDIDATE, HAVING REPLACED THE ONE ROUND 212 NAMED.
+    Round 213 established that TYRA-300 at 90 mg reaches the same free FGFR3 coverage that grew a child 19.06
+    cm/year, and that 120 mg reaches nearly twice erdafitinib's absolute label maximum with the MTD still not
+    found. What stops further escalation is no longer FGFR1 phosphate or FGFR2 epithelial toxicity - at 90 mg
+    those run 13, 7, 7, 0 and 13 per cent - but the liver. ALT rose in 47 per cent and AST in 47 per cent at
+    90 mg QD with substantial grade 3 components, the study's only dose-limiting toxicity was grade 3 diarrhoea
+    at 90 mg and its only drug-related discontinuation was grade 3 ALT at 90 mg. IF THE TRANSAMINITIS IS FGFR4-
+    OR FGFR2-MEDIATED, a more selective successor raises the ceiling and the growth arm has room above 10-fold
+    coverage. IF IT IS CHEMICAL, THE CEILING IS FIXED AT THIS MOLECULE and the growth-optimal dose may sit
+    above the tolerable one, which would make TYRA-300 a better erdafitinib rather than a different answer.
+  what_is_known: 'surf301_ena2024 - at 90 mg QD in 15 patients, ALT increase 47 per cent and AST increase 47
+    per cent, both with grade 3 or worse components; the sponsor classes both as OTHER adverse events rather
+    than FGFR1-, FGFR2- or FGFR4-related. Across all doses n = 41, any TRAE 78 per cent and grade 3 or worse
+    20 per cent, with one DLT and one drug-related discontinuation, both at 90 mg. AND THE ARITHMETIC ARGUES
+    AGAINST AN FGFR4 MECHANISM - round 213 derives free steady-state Cav of 7.58 nmol/L at 90 mg and 17.34 at
+    120 mg against a Ba/F3 FGFR4 cellular IC50 of 98 nmol/L, so FGFR4 sits at 8 and 18 per cent of IC50
+    respectively. For comparison erdafitinib, which is only 14-fold FGFR3-over-FGFR4 selective, gives ALT 45
+    per cent and AST 44 per cent - a similar rate from a molecule engaging FGFR4 far harder, which also points
+    away from FGFR4 as the cause.'
+  what_is_missing: Whether the transaminitis tracks exposure or is idiosyncratic; whether it is reversible on
+    interruption and non-recurrent on rechallenge, which would make it manageable rather than ceiling-setting;
+    hepatocyte-level potency data for TYRA-300 at FGFR4; and the liver-to-plasma partition, since first-pass
+    hepatic exposure after an oral dose is far above systemic and the FGFR4 margin computed from plasma may
+    not hold in the hepatocyte.
+  nearest_evidence:
+  - surf301_ena2024
+  - dabogratinib2026
+  discriminating_experiment: FROM DATA THAT ALREADY EXISTS - plot individual peak ALT against individual
+    steady-state AUC across the 34 patients with PK in SURF301. An exposure-dependent relationship makes it a
+    concentration effect and predicts the ceiling; a flat scatter makes it idiosyncratic and means it can be
+    managed by monitoring rather than by dose. Then a rechallenge audit - how many of the 47 per cent resolved
+    on interruption and tolerated the same dose again. FOR MECHANISM - TYRA-300 against a matched FGFR4-sparing
+    and an FGFR4-engaging comparator in primary human hepatocytes, with an FGFR4 knockdown arm.
+- gap_id: g_l12_what_is_the_growth_plate_concentration_of_an_fgfr3_inhibitor
+  question: What concentration of an FGFR3 inhibitor actually reaches growth plate chondrocytes, and how does
+    it relate to plasma free concentration, for erdafitinib against TYRA-300?
+  type: quantitative_gap
+  layer: L12
+  tractability: 2
+  why_it_matters: EVERY EXPOSURE ARGUMENT IN ROUNDS 212 AND 213 IS BUILT ON PLASMA AND THE TARGET IS IN
+    CARTILAGE. Round 213 put both drugs on one axis in free multiples of their own FGFR3 cellular IC50 and
+    concluded that TYRA-300 at 90 mg matches the erdafitinib exposure that produced 19.06 cm/year. THAT
+    CONCLUSION ASSUMES THE TWO MOLECULES PENETRATE CARTILAGE COMPARABLY, and they are chemically different -
+    erdafitinib is 446.5 daltons and 99.7 per cent bound to alpha-1-acid glycoprotein, TYRA-300 is 559.5
+    daltons, chlorinated and sulfur-containing, and about 99 per cent bound. Growth plate cartilage is
+    AVASCULAR and dense in fixed negative charge, so drug arrives by diffusion from the perichondrial and
+    metaphyseal margins and partitioning is not predictable from plasma. A twofold difference in cartilage
+    partition would move the whole comparison.
+  what_is_known: 'NOTHING DIRECT FOR EITHER DRUG IN ANY SPECIES. What exists nearby - erdachild2024 measured
+    erdafitinib pharmacodynamics in the patient''s own dermal fibroblasts at 100, 200 and 300 nmol/L in
+    serum-starved culture, establishing that pathway suppression saturates at or below 100 nmol/L but nothing
+    about tissue delivery. ye2026 showed that a systemically administered chondrocyte-membrane-coated,
+    collagen-II-targeting nanoparticle delivers a hedgehog agonist to growth plate cartilage and raises body
+    length, but reports delivery only as normalised fluorescence with no absolute concentration. tyra300_2025
+    reports mouse plasma PK at a single 1.2 mg/kg subcutaneous dose and no tissue measurement.'
+  what_is_missing: Microdissected growth plate zone concentrations of erdafitinib and of TYRA-300 after oral
+    dosing at the exposures used for growth, in any species, with matched plasma - so a cartilage-to-plasma
+    partition coefficient can be stated for each.
+  nearest_evidence:
+  - erdachild2024
+  - tyra300_2025
+  - surf301_ena2024
+  - ye2026
+  nearest_evidence_note: The growth results and the plasma exposures exist for both drugs; nobody has connected
+    them through the tissue. The same gap exists for every agent in this atlas and is stated here for the FGFR
+    arm specifically because round 213's whole comparison rests on it.
+  discriminating_experiment: Dose growing rats or rabbits orally with each drug at exposures matched to the
+    human levels in round 213, harvest at steady state, microdissect the proximal tibial growth plate by zone,
+    and quantify by LC-MS/MS against a matched plasma sample. ONE STUDY GIVES THE PARTITION FOR BOTH MOLECULES
+    AND CONVERTS EVERY PLASMA ARGUMENT IN ROUNDS 212 AND 213 INTO A CARTILAGE ARGUMENT. The same tissue also
+    answers whether the FGFR3 IC50 measured in Ba/F3 cells predicts chondrocyte pathway suppression, if pERK
+    is stained by zone on the contralateral limb.
