@@ -8601,3 +8601,72 @@ claim is graded **X on grounds of absence**, every `key_ref` in that node must b
 claim. An absence claim in a node that cites a source containing the thing is a self-contradiction the
 schema can detect. Until that check exists, the manual version is: **absence claims require an explicit
 list of what was searched, and the node's own reference list is the first thing on it.**
+
+---
+
+## CORR-229 — I built a hypothesis on a patient description that the paper contradicts, and a randomised trial refutes the conclusion independently
+
+Round 224 proposed that the FGFR arm grows children **without advancing bone age because they were
+sex-steroid deficient**, and drew the consequence that anastrozole might be a **prerequisite** for the FGFR
+arm rather than a parallel lever. **Both legs fail.**
+
+**The premise was wrong for the strongest case.** The bibliography entry for `erdachild2024` described *"a
+pre-pubescent boy"* with *"PRE-pubertal GH, IGF-I, IGFBP-3 and testosterone."* Reading the paper directly:
+**age 15 years 4 months at start, Tanner stage 2–3** (described as delayed), **total testosterone consistent
+with the early pubertal stage**, and **GH, IGF-I and IGFBP-3 within normal ranges for a male at pubertal
+stage II–III**, with no pituitary or gonadal deficiency reported. **He was mid-pubertal with normal
+growth-axis hormones — and he is the 19.06 cm/year child.** Round 224's "all three children were
+sex-steroid deficient" is false; two of three were.
+
+**And the conclusion is refuted independently, by a randomised trial in a file this atlas has held since
+round 207.** The Voxzogo CHMP report, study 111-301: bone age by **Greulich and Pyle** on left hand and
+wrist, baseline ~8 years, 52 weeks — **1.02 years (SD 0.83) on vosoritide against 1.14 years (SD 0.82) on
+placebo**, similar in both sexes. Children with achondroplasia have **normal gonadal function**. So growth
+without bone-age advance happens in children with intact sex steroids, and **the sex-steroid-poor background
+is not required for it.**
+
+**Anastrozole returns to being an independent lever**, which is what it was before round 224 promoted it.
+
+**Two rules, and the second is the one that matters.**
+
+*First:* a **patient description** in a bibliography one-line finding is a compression, and compressions of
+clinical detail lose exactly the qualifiers that a later argument turns on. "Pre-pubescent" and "Tanner 2–3
+with delayed puberty" compress to similar-sounding phrases and mean opposite things for an argument about
+sex steroids. **Before building on a patient characteristic, read it in the source, not in the summary** —
+the same rule CORR-215 added for mechanisms, now extended to phenotypes.
+
+*Second, and more general:* **round 224 generated the hypothesis and the disconfirming evidence in the same
+files.** The EPAR passage was already on disk, cited in round 223, one round earlier. The failure was not
+that the evidence was hard to find — it was that **a hypothesis about "these patients are special" was never
+paired with the obvious question, which is what happens in patients who are not special.** When a proposed
+mechanism explains an observation by a property of the population, the first search must be for the same
+observation in a population lacking that property.
+
+---
+
+## CORR-230 — I presented a bone-age difference as established when the only available noise estimate contains it
+
+Round 223 computed the COACH combination at **1.33 and 1.57 bone-age years per calendar year** from the
+paper's reported ratios and read it against an implicit normal rate of **1.0**, concluding the combination
+"measurably fails" the height-per-bone-age test.
+
+**Two things were wrong with the presentation.**
+
+**The comparator.** The only measured contemporaneous control on this axis — the placebo arm of vosoritide
+111-301 — matured at **1.14 years per year**, not 1.0. Against that, the excess attributable to adding
+growth hormone is **+0.19 and +0.43**, not +0.33 and +0.57.
+
+**The noise.** The EPAR supplies the only dispersion figure anywhere in this comparison: **SD ≈ 0.82 years**
+on a 52-week Greulich-Pyle bone-age change — which is reader variability as much as biology. COACH reports
+**no dispersion at all** for its ratios and has **n = 12 and 9**. At n = 9 a 95 % interval on a mean
+bone-age change spans roughly **±0.54 years**, which comfortably contains the gap between 1.57 and 1.14.
+
+**The contrast is directional and not statistically established**, and neither the paper nor round 223 ran
+the test. The claim is regraded to E. What survives is that the growth-hormone arm is the only agent in this
+file that moves the ratio at all, and that its direction is consistent across both cohorts.
+
+**The rule this adds.** When a quantity is *derived* from reported summary statistics — as this one was,
+from mean ratios and mean ages — the derivation must carry a noise estimate before the number is compared
+with anything. If the source reports no dispersion, **borrow the best available and say whose it is**, or
+state that the comparison cannot be made. A derived point estimate presented without a noise floor reads as
+a measurement, and this one was used to fail an agent on a test the data cannot adjudicate.
