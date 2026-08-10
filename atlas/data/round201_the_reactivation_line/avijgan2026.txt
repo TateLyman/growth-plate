@@ -1,0 +1,2319 @@
+ARTICLE
+OPEN
+Human growth plates house resting zone sub-populations with
+features of quiescent stem cells
+Mahtab Avijgan
+1,2, Ana R. López-Pérez
+3, Leire Alonso Galicia
+4, Jose G. Marchan-Alvarez
+1,2, Laura Sudupe5, Ruihan Zhou
+1,2,
+Amal Nazaraliyev
+1,2, Žaneta Andrusivová4, Ludvig Larsson4, Pâmella Miranda
+1,2, Doste R. Mamand
+6,7, Yunhan Zhao1,2,
+Farasat Zaman
+1,2, Hong Qian
+8, Klas Blomgren
+1,9, Felipe Prosper
+10,11,12, Oscar P. B. Wiklander
+6,7, Jesper N. Tegner
+5,13,14,15,
+Joakim Lundeberg
+4, Lars Sävendahl
+1,2, Reza Mirzazadeh
+4✉, David Gomez-Cabrero
+5✉and Phillip T. Newton
+1,2✉
+Maintaining postnatal bone growth is crucial for humans to reach their ﬁnal height. To determine transcriptional networks coordinating
+this process, we applied spatially resolved transcriptomics to growth plate biopsies obtained from healthy adolescents who underwent
+epiphysiodesis surgery for idiopathic tall stature. Spatial proﬁling revealed new markers for each zone of the human growth plate and
+identiﬁed genes associated with poorly understood growth disorders, including the novel hypertrophic zone marker SGMS2. We
+elaborated on this ﬁnding and established that Sgms2 is present in growth plate-derived matrix vesicles, and its activity facilitates
+mineralization - a process impaired in patients with SGMS2 mutations. By exploring the low transcriptional activity of resting zone
+chondrocytes, we found that a subset of these cells exists in a functionally quiescent state in vivo, as determined by their predominantly
+nuclear mRNA, abundant heterochromatin, and ability to exit the G0 phase under speciﬁc conditions - features shared with skeletal stem
+cells in mouse growth plates. Additionally, we identiﬁed distinct sub-populations of human resting zone chondrocytes; an exploration of
+their hierarchy determined that CHRDL2 and/or SFRP5-positive sub-populations were among the least quiescent resting zone cells. In
+summary, we generated a comprehensive map of gene expression within the human growth plate, revealing novel zone-speciﬁc markers,
+new primary growth disorders, candidate pharmacological targets, and sub-populations of resting zone chondrocytes with features of
+quiescent stem cells. These results contribute to a better understanding of the cellular and molecular mechanisms governing human
+height and can facilitate improved diagnosis and treatment strategies for patients with skeletal growth disorders.
+Bone Research (2026) 14:79 
+; https://doi.org/10.1038/s41413-026-00564-y
+INTRODUCTION
+During childhood and adolescence, humans grow taller because
+tubular bones, such as femora and tibiae, increase in length. These
+bones are elongated by narrow cartilage discs called (epiphyseal)
+growth plates, which are positioned between the bony primary
+and secondary ossiﬁcation centers (POC and SOC, respectively).1
+Histologically, each growth plate can be divided into three distinct
+zones: directly adjacent to the SOC, slowly dividing chondro-
+progenitors comprise the resting zone (RZ); some of these cells
+give rise to columns of ﬂattened chondrocytes that undergo
+several cycles of cell division in the proliferating zone (PZ), and
+subsequently differentiate to form the hypertrophic zone (HZ),
+producing a mineralized matrix that is used as a scaffold for new
+bone tissue to be built on.2 Since bone elongation continues until
+the end of puberty, its regulation is crucial for humans to reach
+their expected height and body proportions.
+Skeletal growth disorders are categorized as primary (directly
+affecting growth plates), secondary (indirectly affecting growth plates,
+via, for example, hormones) or idiopathic.3 However, distinguishing
+primary growth disorders from secondary and elucidating idiopathic
+ones remains challenging.4 Many growth plate markers are known
+only from experiments with model organisms, and their relevance to
+humans remains uncertain. This knowledge gap is also reﬂected by
+the unreﬁned nature of therapeutic approaches: the most common
+Received: 17 April 2025 Revised: 27 April 2026 Accepted: 25 May 2026
+1Department of Women’s and Children’s Health, Karolinska Institutet, Stockholm, Sweden; 2Astrid Lindgren Children’s hospital, Stockholm, Sweden; 3Hematology and
+Oncology Program, Centre for Applied Medical Research (CIMA), Instituto de Investigaciones Sanitarias de Navarra (IdiSNA), Cancer Center Clínica Universidad de Navarra
+(CCUN), Pamplona, Navarra, Spain; 4Department of Gene Technology, KTH Royal Institute of Technology, Science for Life Laboratory, Stockholm, Sweden; 5Division of
+Biomedical Sciences, King Abdullah University of Science and Technology KAUST, Thuwal, Saudi Arabia; 6Department of Laboratory Medicine, Unit for Biomolecular and
+Cellular Medicine, Karolinska Institutet, Stockholm, Sweden; 7Breast Center, Karolinska Comprehensive Cancer Center, Karolinska University Hospital, Stockholm, Sweden;
+8Center for Hematology and Regenerative Medicine (HERM), Department of Medicine Huddinge, Karolinska Institute, Stockholm, Sweden; 9Paediatric Oncology, Karolinska
+University Hospital, Stockholm, Sweden; 10Hematology-Oncology and Regenerative Medicine, Clínica Universidad de Navarra and Center for Applied Medical Research,
+University of Navarra, Pamplona, Spain; 11Instituto de Investigación Sanitaria de Navarra (IdiSNA), Pamplona, Spain; 12Centro de Investigación Biomédica en Red de Cáncer,
+CIBERONC, Instituto de Salud Carlos III, Madrid, Spain; 13Computer, Electrical and Mathematical Sciences and Engineering Division, King Abdullah University of Science and
+Technology (KAUST), Thuwal, Saudi Arabia; 14Unit of Computational Medicine, Department of Medicine, Center for Molecular Medicine, Karolinska Institutet, Karolinska
+University Hospital, Stockholm, Sweden and 15Science for Life Laboratory, Solna, Sweden
+Correspondence: Reza Mirzazadeh (reza.mirzazadeh@scilifelab.se) or David Gomez-Cabrero (david.gomezcabrero@kaust.edu.sa) or Phillip T Newton (phillip.newton@ki.se)
+These authors contributed equally: Mahtab Avijgan, Ana R. López-Pérez, Leire Alonso Galicia
+These authors contributed equally: Jose G. Marchan-Alvarez, Laura Sudupe
+These authors contributed equally: Reza Mirzazadeh, David Gomez-Cabrero, Phillip T. Newton
+www.nature.com/boneres
+Bone Research
+© The Author(s) 2026
+1234567890();,:
+treatment for patients with idiopathic short stature with growth
+hormone (GH) sufﬁciency is recombinant GH, particularly in the US.4
+For idiopathic tall stature adolescents, only invasive surgery to remove
+the growth plate has been proven to be a safe and effective
+treatment.5 Incomplete mapping of gene expression and the cell
+populations present within human growth plates contributes to a
+poor understanding of the mechanisms underpinning human skeletal
+growth and a lack of pharmacological targets to treat growth
+disorders with precision.
+To better describe the human growth plate, we applied
+spatially resolved transcriptomics (SRT) with 10x Genomics’
+Visium platform to sections obtained from healthy adolescents
+with idiopathic tall stature. This approach allowed us to obtain
+gene expression proﬁles while maintaining cellular positioning
+and growth plate architecture. We identiﬁed a panel of 138 genes
+speciﬁcally expressed in individual growth plate zones and SOC,
+allowing us to verify growth plate markers reported in other
+species, identify novel markers of each growth plate zone and
+uncover previously unknown primary growth disorders; an
+elaboration on novel HZ marker SGMS2 revealed mechanistic
+insights into its role in mineralization - a process impaired in
+patients with SGMS2 mutations. Furthermore, by elaborating
+upon their low transcriptional activity, we found that RZ
+chondrocytes reside in a functionally quiescent state in vivo
+and have similar properties to skeletal stem cells in murine
+growth plates. Finally, by exploring the expression of RZ markers
+in association with quiescence, we revealed a potential hierarchy
+among sub-populations of RZ cells.
+RESULTS
+Resting zone chondrocytes contain relatively low amounts
+of mRNA
+We obtained biopsies containing human growth plates from
+healthy adolescents aged 12 to 14 years who underwent
+epiphysiodesis
+surgery for
+idiopathic tall
+stature
+(Fig. 1a,
+Table 1). Biopsies spanning the growth plate and SOC were
+prepared for analysis by 10x Genomics’ Visium as per our
+established RNA-Rescue Spatial Transcriptomics (RRST) protocol,
+to
+examine
+spatial
+gene
+expression
+proﬁles
+within
+non-
+decalciﬁed cartilage.6 First, we applied RRST to human growth
+plate biopsies (Fig. 1b), using histology to manually deﬁne four
+epiphyseal areas: SOC, RZ, PZ and HZ. Spots corresponding to
+cartilage had relatively low unique molecular identiﬁer (UMI)
+counts (total number of transcripts), compared to areas contain-
+ing bone marrow (Figs. 1b, c, S1a), which were consistent with
+other tissues.6
+To validate these ﬁndings, we utilized the Visium CytAssist
+Spatial Gene Expression protocol, where an average of three pairs
+of probes target each transcript (compared to only one pair using
+RRST), which provided comparable results to RRST experiments.
+Although the average number of cells captured in each Visium
+spot was similar throughout the growth plate (Fig. S1b), relatively
+few transcripts were captured in the RZ (Fig. 1b-d, Table 2). To
+understand the biological relevance of this transcription pattern,
+we used in situ hybridization to visualize polyadenylated (poly[A])
+mRNA molecules within the human growth plate sections (Fig. 1e).
+This experiment conﬁrmed that RZ cells contained less mRNA than
+other growth plate chondrocytes (Fig. 1f).
+Consistent with our ﬁndings in human samples, mouse RZ cells
+contained low levels of mRNA molecules in comparison to their
+neighbors (Fig. S2a-c).
+Resting zone chondrocytes display hallmarks of quiescent
+stem cells
+Having determined via independent methods, and in two
+species, that RZ cells contain less mRNA than other growth
+plate chondrocytes, we investigated the biological relevance of
+this
+ﬁnding.
+While
+quantifying
+polyadenylated
+mRNA,
+we
+noticed that it was predominantly localized to nuclei of RZ cells,
+whereas in other chondrocytes, mRNA was distributed between
+the nucleus and cytoplasm (Figs. 2a, S2b). Indeed, the relative
+amount of mRNA found in the nucleus was lower in the PZ and
+HZ chondrocytes than in the RZ (Figs. 2a, S2d). Predominantly
+nuclear localization of mRNA is a feature of cellular quiescence
+across multiple species and tissues, including deeply quiescent
+neural stem cells and hematopoietic stem and progenitor cells.7
+Cellular quiescence (or more simply, quiescence) is a state of
+reversible cell cycle arrest, which is a characteristic of long-living
+adult stem cells, priming them in a “poised” state that enables
+them to act in tissue homeostasis or regeneration.8,9 While RZ
+cells are often referred to as quiescent, this description is based
+on their relatively low cell division rates in rodents.10
+To elaborate upon cellular quiescence in the RZ, we conducted
+transmission electron microscopy (TEM) to compare the ultra-
+structure of RZ cells with neighboring PZ cells (Fig. 2b). Notably,
+RZ chondrocytes had a higher content of normally condensed,
+electron-dense, heterochromatin (Fig. 2c), typically located at the
+inner leaﬂet of the nuclear membrane (Fig. 2b’). In contrast, PZ
+chondrocytes exhibited discrete areas of heterochromatin within
+their nuclei (Fig. 2b”). Consistent with quiescent cells in multiple
+other tissues11,12, RZ chondrocytes contained more lysosomes
+than PZ chondrocytes (Fig. 2d). Altogether, these results indicate
+that, as a population, human RZ cells display features of cellular
+quiescence in vivo.
+The murine RZ contains epiphyseal growth plate stem
+cells.13,14 A subset of slowly-dividing, label-retaining cells (LRCs)
+in the RZ have been identiﬁed by their retention of tritiated
+thymidine,10,15 BrdU analogues,13,16 or H2B-GFP17,18 in pulse-
+chase experiments. While it remains to be determined whether
+all LRCs are stem cells, progeny of some LRCs can give rise to
+chondrocyte columns, suggesting that some epiphyseal stem
+cells are among the LRCs.17,18 By combining RNAscope with EdU
+detection (Fig. S3a-c), we determined that LRCs had signiﬁcantly
+lower mRNA levels than non-LRCs, suggesting that low mRNA
+levels are a strong indicator of LRCs. Despite this, some LRCs had
+elevated mRNA levels, either reﬂecting that not all LRCs are
+quiescent or that they were in the process of leaving quiescence
+at tissue collection.
+Human resting zone chondrocytes are functionally quiescent
+in vivo
+Relatively low RNA content is an indicator of the G0 phase of the
+cell cycle in multiple cell types.19 To explore the cell dynamics of
+human growth plate chondrocytes, intact biopsies were cultured
+ex vivo over a time-course with a sequence of distinct thymidine
+analogues (Fig. S3d); freshly collected biopsies were cultured in
+EdU-containing medium overnight to capture ongoing prolifera-
+tion, then EdU was replaced by IdU and then CldU over
+subsequent days. As anticipated, PZ cells were labelled with EdU
+using this strategy, whereas few RZ cells incorporated EdU
+(Figs. 2e, f, S3e). However, IdU and CldU were present in RZ cells
+(Fisg. 2e, f, S3e), suggesting that some RZ cells are capable of
+reversible cell cycle arrest. These ﬁndings align with quiescent
+muscle satellite cells,20 hematopoietic stem cells,21 and neural
+stem cells,22 which begin dividing when isolated from their milieu
+and cultured ex vivo.
+Cultured human biopsies contained a proportion of RZ cells
+with more mRNA than uncultured biopsies (Figs. S3f, 2g),
+supporting the notion that fewer RZ cells remained quiescent
+after culture. Although we cannot exclude a prolonged G1 phase
+in our thymidine-analogue labelling experiments, our combined
+observations of mRNA localization and cellular ultrastructure lead
+us to propose that a subset of human RZ cells exists in a
+functionally quiescent state in vivo as they retain the capacity to
+become functionally active and re-enter the cell cycle.
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+2
+Bone Research
+(2026) 14:79
+Spatially resolved transcriptomics reveals novel human growth
+plate markers
+Next, we aimed to characterize the transcriptome of the human
+growth plate and SOC. To this end, we devised a three-step
+strategy (Fig. 3a) to analyze the SRT data that considered (i) the low
+number of transcripts per spot (UMI counts), (ii) the ability to
+combine data and results from both platforms (RRST and
+CytAssist), and (iii) the lack of single-cell resolution at the spatial
+level. The aim of the framework is to enhance the robustness and
+generalizability of the results. In the ﬁrst step, using an “exploration
+dataset” that contained four different patients per platform
+(Table 1), we manually annotated the epiphyseal areas (RZ, PZ,
+HZ, and SOC) in each section to generate a pseudo-count matrix.
+This matrix summed the counts from all the spots for each gene,
+area, and sample. This approach is analogous to a pseudo-bulk
+analysis in single-cell RNA-seq,23 which reduces false positives in
+subsequent statistical analyses.24; here, the pseudo-bulk was
+generated by combining the counts from spots instead of cells.
+Visual inspection of the ﬁrst two principal components derived
+from the pseudo-bulk matrix showed that the four distinct areas
+clustered together as expected (Fig. 3a). In a second step, we
+identiﬁed transcriptomic markers by conducting a differential
+expression analysis between areas. Before investigating the results,
+we validated this approach by conﬁrming that it could distinguish
+the zones using well-known cartilage and bone markers (Fig. 3b).
+As anticipated, cartilage markers (COL2A1, COL9A1, ACAN, MATN3)
+were restricted to the growth plate chondrocytes, and several well-
+described zone-speciﬁc genes were detected in the expected
+zones (RZ: SFRP5,17 UCMA;25 HZ: ALPL,26 COL10A127), as conﬁrmed
+by spatial feature plots for selected markers (Fig. 3c). Altogether,
+these results demonstrated that SRT generated meaningful results
+when applied to the human growth plate.
+Finally, we considered markers that were consistently proﬁled
+and signiﬁcant across both platforms, aiming to maximize markers
+a
+Fig 2. 
+Secondary ossification center
+Primary ossification center
+Biopsy
+needle
+Surgical scalpel
+Joint anatomy
+Dissection of extracted 
+human growth plate biopsy
+Collection of
+disc-shaped human
+growth plate biopsies
+RZ
+PZ
+HZ
+SOC
+POC
+50 m
+b
+c
+RZ
+PZ
+HZ
+SOC
+2 000
+1 000
+1 500
+500
+0
+SOC
+HZ
+PZ
+RZ
+1a 1b 2a 2b
+4a
+3b
+3a
+4b
+RRST
+SOC
+HZ
+PZ
+RZ
+5a 5b 6a 6b
+8a
+7b
+7a
+8b 8c
+CytAssist
+Patients 1-8 sections a-c
+H&E staining
+UMI count
+b”
+b’
+100 m
+RZ
+PZ
+HZ
+SOC
+1 000
+2 000
+3 000
+4 000
+5 000
+e
+d
+RRST
+CytAssist
+RZ
+PZ
+HZ SOC
+RZ
+PZ
+HZ SOC
+Human growth plate zones
+Ln transformation of the average
+of spot UMI counts per section
+**
+*
+**
+f
+0
+2
+4
+6
+8
+Poly(A)DAPI
+50 m
+RZ
+PZ
+HZ
+POC
+HZ’
+PZ’
+RZ’
+Human growth plate zones
+RZ
+poly(A) signal intensity per nucleus
+(as a percentage of maximum)
+****
+****
+****
+PZ
+HZ
+0
+50
+100
+Fig. 1
+Resting zone chondrocytes contain relatively low amounts of mRNA. a The procedure for collecting human growth plate biopsies.
+b Hematoxylin and eosin (H&E)-stained tissue section (b´) and spot UMI counts from RRST proﬁling (b´´). c Level-plot of UMI counts per section.
+d Violin plot of spot UMI counts in each zone. e Representative image of RNAscope assay targeting poly(A) expression. f Mean signal intensity
+per nucleus in each zone converted to a percentage value using the maximum value for each patient
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+3
+Bone Research
+(2026) 14:79
+not associated with a single technology. We identiﬁed 138
+markers that were signiﬁcantly upregulated in one area above
+all others across all eight patients (4 in RZ, 12 in PZ, 28 in HZ and
+94 in SOC) (Fig. 4a). We generated spatial feature plots for selected
+markers to visualize them on tissue sections (Fig. 4b), verifying
+that enrichment of expression occurred predominantly in the
+identiﬁed area.
+We validated these ﬁndings in several ways. First, we screened
+the 138 identiﬁed genes in a second cohort (referred to as the
+“validation dataset” in the materials and methods section, table S1),
+which included 130 of the markers identiﬁed in the exploration
+dataset (Fig. S4a), and which broadly reﬂected the original analysis.
+Secondly, we selected previously unreported markers of the RZ
+(CHRDL2) and HZ (CLIC3), and a marker for PZ (THBS3) that has
+been previously reported in the murine PZ28 for visualization on
+tissue sections using multi-target RNAscope (Fig. S4b). These
+results further validated the robustness of our approach and the
+results. Pathway over-representation analysis (ORA) further sup-
+ported the validity of the SRT proﬁling (Fig. S5a-d), indicating
+cartilage matrix assembly in the PZ, ossiﬁcation in the HZ and SOC,
+while results for the RZ highlighted the importance of cell signaling
+control. Finally, we performed additional validation using Visium
+HD, where spatially annotated bins of 2 µm resolution were
+assigned to histologically segmented cells using Bin2cell.29 Our
+data revealed a high degree of speciﬁcity for growth plate markers
+in anticipated regions and supports the results of the Visium SRT
+pseudo-bulk analysis by verifying the transcriptional proﬁles of
+newly identiﬁed markers (Fig. 5a-m).
+SGMS2 is expressed in hypertrophic chondrocytes and facilitates
+mineralization from within growth plate-derived matrix vesicles
+We screened the signiﬁcantly upregulated zone-speciﬁc genes
+obtained from SRT (Fig. 4) to explore potential functional roles
+based on clinical insights. For example, NKX3-2 was signiﬁcantly
+enriched in the human PZ, a spatial pattern that was consistently
+observed using both Visium and Visium HD (Fig. S6a,b). Patients
+with
+inactivating
+mutations
+in
+NKX3-2
+develop
+spondylo-
+megaepiphyseal-metaphyseal dysplasia (SMMD), which impairs
+the growth of bones in the neck and trunk, whilst those in the
+appendicular skeleton become longer.30,31 This complicated
+phenotype
+may
+be
+because
+NKX3-2
+is
+involved
+in
+both
+mesenchymal condensations32 and the repression of chondrocyte
+hypertrophy.33
+Although
+Nkx3-2
+has
+been
+detected
+in
+PZ
+chondrocytes in mouse limbs,33 murine models of SMMD do not
+completely phenocopy SMMD patients.34 Hence, our results
+showing that NKX3-2 is speciﬁcally enriched in PZ chondrocytes
+in adolescent human limbs offer an important perspective on
+SMMD.
+Table 1.
+SRT Exploration dataset
+Patient ID
+Platform
+Genetic sex
+Tanner pubertal stage PHa
+Tanner pubertal stage Bb
+Tanner pubertal stage Gc
+Patient age at surgery
+1
+RRST
+M
+3
+-
+3
+13 years 2 months
+2
+RRST
+F
+3
+4
+-
+12 years 10 months
+3
+RRST
+M
+3
+-
+3
+13 years 4 months
+4
+RRST
+F
+3 to 4
+4
+-
+12 years 11 months
+5
+CytAssist
+M
+2
+-
+2
+12 years 2 months
+6
+CytAssist
+F
+4
+4
+-
+14 years 6 months
+7
+CytAssist
+M
+4
+-
+4
+13 years 7 months
+8
+CytAssist
+F
+4
+4
+-
+14 years 4 months
+Metadata of the patient information for the tissues analyzed in Figs. 1c, d, 3a-c and Table 2
+aPubic hair.
+bFemale breast.
+cMale genital.
+Table 2.
+Average number of UMI counts per spot from SRT
+Platform
+RRST
+PatientID_section
+1_1
+1_2
+2_1
+2_2
+3_1
+3_2
+4_1
+4_2
+SOC
+879.51
+506.78
+897.15
+1 405.67
+324.05
+213.84
+57.53
+111.12
+RZ
+237.90
+179.59
+81.47
+71.07
+101.13
+106.97
+23.81
+47.35
+PZ
+893.27
+369.98
+157.56
+190.88
+551.75
+237.83
+68.01
+83.96
+HZ
+1 078.94
+505.75
+512.91
+525.73
+1 073.84
+538.24
+134.29
+109.61
+POC
+432.17
+222
+NA
+NA
+1 963.05
+1 736.97
+352.81
+279.25
+Platform
+CytAssist
+PatientID_section
+5_1
+5_2
+6_1
+6_2
+7_1
+7_2
+8_1
+8_2
+8_3
+SOC
+453.61
+1 007.11
+790.70
+1 061.44
+629.73
+90.81
+1 007.11
+2 652.26
+1 863.61
+RZ
+194.33
+170.33
+259.01
+158.69
+71.97
+82.98
+217.63
+205.93
+139.76
+PZ
+118.80
+504.45
+1 037.14
+417.06
+115.76
+126.02
+298.45
+257.08
+237.64
+HZ
+NA
+NA
+936.38
+1 429.23
+188.69
+148.57
+299.28
+422.53
+633.30
+POC
+NA
+NA
+1 281.35
+NA
+428.18
+285.77
+1 639.79
+2 252.82
+3 721.41
+The average of UMI counts per spot was calculated from SRT data from each area of every section. Where sections lacked speciﬁc areas, they are denoted NA
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+4
+Bone Research
+(2026) 14:79
+WNK4 mutations lead to pseudohypoaldosteronism, involving short
+stature in a subset of these patients by unknown mechanisms.35 We
+found WNK4 to be signiﬁcantly enriched in HZ chondrocytes (Figs. 4;
+S6c,d), which could indicate that WNK4 has a direct role in short
+stature via modulation of the growth plate.
+SGMS2 appeared in our panel of novel HZ markers but is also yet
+to be described in growth plate cartilage (Figs. 4, 6a). Missense
+mutations in SGMS2, which encodes the membrane-spanning
+enzyme, Sphingomyelin Synthase 2, are known to cause spondylo-
+metaphyseal dysplasias characterized by short stature, bowed
+tubular bones and under-mineralization of the skeleton.36 To
+functionally validate our SRT proﬁles and demonstrate the utility of
+our analytical pipeline, we selected SGMS2 as a proof-of-concept
+candidate for further investigation. Mineral nucleation during
+calciﬁcation begins inside matrix vesicles (MVs), a specialized class
+of extracellular vesicle (EV) attached to the extracellular matrix.37,38
+Interestingly, the enzymatic product of SGMS2, sphingomyelin, is
+abundant in growth plate-derived MVs39 and serves as a substrate
+for phosphate ion generation during mineral formation.40
+To determine whether SGMS2 was localized to growth plate-
+derived MVs, we ﬁrst developed a protocol to isolate MVs from
+murine growth plate cartilage (Fig. 6b), that could maintain cell
+viability (Fig. S7a,b). The sizes of the obtained particles were
+quantiﬁed by nanoparticle tracking analysis (NTA) (Fig. S7c),
+revealing the particles were predominantly <200 nm in diameter.
+Isolated particles had consistent sizes, number and particle:protein
+ratio between sexes (Fig. S7d-f) and collapsed spherical ultra-
+structures when analyzed using negative stain TEM, typical of EVs41
+(Fig. S7g). We analyzed the presence of conventional EV markers
+via western blot (Fig. S7h). In accordance with the MISEV 2018
+guidelines,42 three main categories of EV markers, growth plate-
+derived MV preparations contained transmembrane (Cd63) and
+intraluminal (Alix) EV-markers, while lacking contamination in the
+form of Rps6 (Fig. S7h). These data suggest that the nanoparticles
+isolated from murine growth plate cartilage fulﬁlled the criteria to
+be classiﬁed as EVs, representing the ﬁrst method to obtain growth
+plate-derived EVs conducted in accordance with the Minimal
+Information for Studies of Extracellular Vesicles (MISEV) principles.
+a
+b
+e
+f
+c
+d
+Heterochromatin/%
+Lysosomes (number per cell)
+*
+PZ Chondrocyte
+Heterochromatin
+Lysosomes
+b”
+*
+RZ Chondrocyte
+Heterochromatin
+Lysosomes
+b’
+2 m
+Human growth
+plate zones
+Human growth
+plate zones
+Human growth plate zones
+EdU
+EdU positive cells/%
+*
+*
+RZ PZ HZ
+-50
+0
+50
+100
+150
+IdU
+RZ PZ HZ
+-100
+-50
+0
+50
+100
+150
+IdU positive cells/%
+RZ PZ HZ
+CldU
+CldU positive cells/%
+**
+***
+-50
+0
+50
+100
+g
+RZ
+PZ
+HZ
+1
+3
+5
+6
+4
+2
+1
+3
+5
+2
+4
+6
+Poly(A)
+DAPI
+100 m
+RZ
+PZ
+HZ
+****
+****
+*
+0.1
+10
+1 000
+100 000
+Human growth plate zones
+Nucleus/Cytoplasm signal ratio
+EdU
+IdU
+CldU
+Merge
+RZ
+PZ
+HZ
+Human growth plate zones
+RZ
+HZ
+PZ
+****
+****
+****
+Cultured
+Uncultured
+Cultured
+Uncultured
+Cultured
+Uncultured
+0
+50
+100
+poly(A) signal intensity per nucleus
+(as a percentage of maximum)
+RZ
+PZ
+*
+0
+5
+10
+15
+20
+****
+RZ
+PZ
+0
+25
+50
+75
+25 m
+Fig. 2
+Resting zone chondrocytes display features of cellular quiescence in vivo. a Subcellular localization of poly(A) mRNA. Note the
+predominant nuclear localization in RZ (arrowheads). b TEM images of heterochromatin (asterisks) and lysosomes (arrowheads) in RZ and PZ
+chondrocytes. c The percentage of each nucleus comprising heterochromatin, and d the number of lysosomes per cell. e High magniﬁcation
+images (from Fig. S3d,e) indicating zone-speciﬁc thymidine-analogue labelling of chondrocytes, and f corresponding quantiﬁcation of EdU,
+IdU and CldU incorporation. g Post-culture poly(A) RNA levels were compared with fresh-frozen slices (presented in Fig. 1f)
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+5
+Bone Research
+(2026) 14:79
+Interestingly, during TEM analysis, minute pieces of undi-
+gested collagen ﬁber could be seen on the surface of some EVs
+(Fig. S7g), reﬂecting their identity as matrix-bound particles, i.e.
+MVs. This notion was supported by the presence of alkaline
+phosphatase activity in the preparations (Fig. S7i). Next, we
+conducted LC-MS/MS proteomic analysis to characterize the
+growth plate-derived MVs, and found consistent enrichment of
+EV markers such as Cd63, Tsg101, Alix and Cd81 as well as MV
+markers including Anxa5, Alpl, Phospho1 and Enpp1 (Fig. 6c).
+Together, these data strongly indicate that our preparations
+contained MVs. Our analysis also detected Sgms2 in the
+preparations obtained from both male and female individuals
+at levels consistent with other MV markers (Fig. 6c). Pathway
+analysis indicated a high level of binding proteins, particularly
+those binding to other proteins and calcium ions, as well as
+pyrophosphatase activity, ﬁndings that support an enrichment of
+growth plate-derived MVs in the preparations (Fig. 6d).
+To determine whether MV-associated Sgms2 could have a role
+in
+mineralization,
+we
+exposed
+these
+EVs to
+an
+ex
+vivo
+mineralization assay in the presence or absence of an Sgms2
+a
+b
+c
+RRST
+CytAssist
+SFRP5
+UCMA
+CLU
+COL2A1
+COL9A1
+ACAN
+MATN3
+MIK67
+COL10A1
+ALPL
+COL1A1
+CXCL12
+Zone
+HZ
+PZ
+RZ
+SOC
+RRST
+−4
+−2
+0
+2
+4
+CytAssist
+−4
+−2
+0
+2
+4
+Sum reads per gene from 
+individual clusters for each 
+biopsy section.
+Create count matrices. 
+Normalize & log transform
+counts with DESeq2.
+i.  Manual annotation.
+ii.  Quality control with PCA
+iii.  Pair-wise differential expression analysis
+Find common
+markers for
+each zone 
+between platforms
+CytAssist
+RRST
+RZ vs PZ
+RZ vs HZ
+RZ vs SOC
+CytAssist
+RZ vs PZ
+RZ vs HZ
+RZ vs SOC
+Common
+up-regulated
+genes
+RRST
+PC1: 40% variance
+PC2: 6% variance
+CytAssist
+PC1: 40% variance
+PC2: 6% variance
+HZ
+PZ
+RZ
+SOC
+Patient
+RRST
+−10
+−5
+0
+5
+−20 −10
+0
+10
+20
+−10
+−5
+0
+5
+10
+−20
+0
+20
+1
+2
+3
+4
+HZ
+PZ
+RZ
+SOC
+Patient
+5
+6
+7
+8
+SFRP5
+CLU
+RZ
+PZ
+HZ
+SOC
+RZ
+100 m
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+COL2A1
+COL9A1
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+ACAN
+MATN3
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+COL10A1
+ALPL
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+COL1A1
+CXCL12
+0.00
+0.25
+0.50
+0.75
+1.00
+Fig. 3
+Spatial proﬁles of cartilage and SOC markers visualized on human growth plate sections. a Pseudo-bulk analysis workﬂow used to
+analyze SRT data. SRT data collected from RRST and CytAssist platforms was used for transcriptomics analysis. b Expression heatmap of
+selected markers of cartilage and bone in the epiphyseal areas, and (c) spatial feature plot of selected markers of bone and cartilage
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+6
+Bone Research
+(2026) 14:79
+inhibitor, SMS2-IN-2, or the alkaline phosphatase inhibitor,
+levamisole (Fig. 6e). While mineralization occurred after ~20 h
+in the presence of growth plate-derived MVs (at the highest
+dose), by 26 h, both SMS2-IN-2 and levamisole signiﬁcantly
+delayed the onset mineralization (Fig. 6f, Table S3). Together,
+our results identify SGMS2 as a novel HZ marker, which is
+present in MVs where it is actively involved in mineralization;
+these data provide a mechanistic connection between genotype
+and phenotype in the growing bones of patients with SGMS2
+mutations.
+Sub-populations of human resting zone chondrocytes have
+distinct quiescence statuses
+As Visium capture spots covering SOC include multiple cell types
+in the bone and bone marrow, genes expressed by these cells
+could mask RZ markers within the growth plate in our pseudo-
+bulk analysis. For example, although APOE is described as a pan-
+RZ marker,43 our analysis indicated that it is signiﬁcantly enriched
+in SOC versus growth plate zones (Fig. 4a). To account for this, we
+sought growth plate-speciﬁc RZ markers by re-analyzing the
+exploration dataset, excluding statistical differences with SOC
+a
+RRST
+CytAssist
+RRST
+CytAssist
+CHRDL2
+SFRP5
+UCMA
+ZNF550
+ANGPTL2
+CHPF
+CNMD
+COL16A1
+CXCL14
+FMOD
+HIST1H1B
+NKX3−2
+PAMR1
+SOX5
+SYT8
+THBS3
+ALPL
+ARSI
+CDKN1C
+CLIC3
+COL10A1
+DYSF
+EZR
+F13A1
+FGFBP2
+FN1
+IBSP
+LOX
+LOXL4
+MAN1C1
+MARCKSL1
+MGP
+PCSK6
+PDLIM4
+PMP22
+PNPLA7
+PRKG1
+SCUBE1
+SGMS2
+SLC13A5
+SLC44A2
+TSPAN13
+VEGFA
+WNK4
+ADAMTS9
+ANKH
+APOE
+APOL6
+ARHGAP23
+ARHGEF17
+ATOH8
+AUP1
+B4GALT1
+BST2
+CD44
+CD63
+CDC42EP5
+CDH15
+CEBPD
+CFD
+CLDN5
+COL1A1
+CRABP1
+CTSC
+CXCL12
+DAB2
+DDIT4
+DLG4
+DLG5
+DLX5
+DMP1
+EBF3
+EHBP1L1
+ENG
+ENPEP
+EPAS1
+EPHA2
+EPHX1
+FABP4
+FAM13A
+FAM20C
+FTH1
+FTL
+GGT5
+H1FX
+ID3
+IDUA
+IFFO1
+IFI27
+IFITM3
+IGFBP4
+IGFBP5
+IGFBP7
+IKZF1
+JDP2
+KANK2
+KAZN
+KCTD12
+LTBP2
+LY6E
+MAPKAPK2
+MARCKS
+MCL1
+MED15
+MLXIP
+MRC2
+MYD88
+NEIL1
+PFN2
+PHETA1
+PLEKHA5
+PPP1R9B
+PTPRS
+PTX3
+RNASE1
+ROBO4
+SATB2
+SEMA7A
+SFRP4
+SHC1
+SHFL
+SLC37A2
+SOCS1
+SPP1
+SVEP1
+TAZ
+TBX2
+TCEA2
+TMEM204
+TMSB4X
+TNC
+TPM1
+TXNIP
+UACA
+UBE2L6
+UNC5B
+VIM
+WIF1
+Zone
+HZ
+PZ
+RZ
+SOC
+RRST
+−4
+−2
+0
+2
+4
+CytAssist
+−4
+−2
+0
+2
+4
+b
+0.00 0.25 0.50 0.75 1.00
+CHRDL2
+SFRP5
+RZ
+PZ
+HZ
+100 m
+ 
+SOC
+RZ
+PZ
+HZ
+SOC
+THBS3
+RZ
+PZ
+HZ
+SOC
+SOX5
+RZ
+PZ
+HZ
+SOC
+FMOD
+RZ
+PZ
+HZ
+SOC
+CNMD
+RZ
+PZ
+HZ
+SOC
+CLIC3
+RZ
+PZ
+HZ
+SOC
+EZR
+CDKN1C
+ARSI
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+ARHGAP23
+IGFBP5
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+Fig. 4
+SRT reveals 138 differentially expressed genes between the three growth plate zones and SOC. a Expression heatmap of 138 genes
+signiﬁcantly upregulated between both platforms in one of the areas above all others. b Spatial feature plot of examples of signiﬁcantly
+upregulated genes for growth plate cartilage and SOC
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+7
+Bone Research
+(2026) 14:79
+from the ﬁnal step of the pseudo-bulk analysis. This strategy
+identiﬁed 31 genes signiﬁcantly upregulated in RZ versus both PZ
+and HZ, including the four highly selective RZ markers (CHRDL2,
+SFRP5, UCMA and ZNF550) and markers identiﬁed in previous
+studies, such as COL15A1 (Fig. S8a). Spatial proﬁles of selected
+genes were validated by Visium and Visium HD (Fig. S8b-e).
+Pathway over-representation analysis (ORA) veriﬁed the impor-
+tance of WNT and BMP signaling to RZ cells (Fig. S8f). We further
+examined spatially resolved RZ markers previously described in
+murine models, which were represented in our probe panel;44
+while APOE had higher expression in RZ than other zones, it was
+not signiﬁcantly enriched in our study (Fig. S8a,g-h).
+a
+b
+c
+d
+e
+1
+0
+ACAN
+CLU
+UCMA
+SFRP5
+CHRDL2
+SOC
+1
+2
+3
+1
+1
+2
+3
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+SOC
+RZ
+PZ
+HZ
+1
+2
+2
+f
+g
+h
+i
+THBS3
+COL2A1
+COL9A1
+CNMD
+1
+1
+2
+2
+j
+k
+l
+m
+COL10A1
+IHH
+CLIC3
+LOXL4
+1
+1
+2
+2
+3
+100 m
+100m
+100 m
+Fig. 5
+Visium HD spatial representation of known and novel zone-speciﬁc markers. a High resolution H&E-stained section (1), and a simpliﬁed
+version (2) overlaid with dots representing ACAN expression from Visium HD. Each square indicates a region of the sample used to visualize
+the expression of the different markers at higher magniﬁcation. (3) ACAN expression in region 1 shown in the H&E image (left) and in the
+simpliﬁed version (right). b–m Enlarged views of marker expression in H&E image (left) and in the simpliﬁed version (right)
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+8
+Bone Research
+(2026) 14:79
+The SRT proﬁles broadly indicated cells expressing various
+markers were spatially scattered across the RZ rather than being
+located in speciﬁc positions with respect to the surrounding areas
+(i.e. SOC or PZ). This was supported by the in situ hybridization
+experiment, which had revealed CHRDL2 expression in chondro-
+cytes scattered throughout the RZ (Fig. S4b). These observations
+suggest that the RZ may not be a homogeneous population of
+quiescent cells but rather could contain sub-populations dispersed
+across the RZ with diverse gene expression proﬁles.
+To explore quiescence status among the heterogeneous RZ
+chondrocytes, we used the 4 highly speciﬁc RZ markers obtained
+from SRT to identify sub-populations (Fig. S9a) and monitored
+their relative quiescence using spot UMI count. Intriguingly, these
+markers were able to split the population: spots enriched in
+CHRDL2 and/or SFRP5 tended to contain relatively high mRNA
+levels, whereas spots enriched in ZNF550 contained relatively low
+mRNA levels (Fig. 7a). Despite applying an analysis approach that
+identiﬁed common markers across all 8 patients, the distributions
+of these sub-populations between the patients were variable
+(Fig. 7b), indicating an underlying differences between individuals,
+which did not appear to relate to genetic sex or Tanner stage
+(Fig. S9b).
+Of the 4 highly speciﬁc RZ markers identiﬁed in SRT data (Fig. 4a),
+we focused on those directly involved in signal transduction: SFRP5
+(a negative regulator of Wnt signaling), and CHRDL2 [a bone
+morphogenic protein (BMP) pathway antagonist], which were
+SGMS2
+RZ
+SOC
+PZ
+HZ
+RZ
+SOC
+PZ
+HZ
+0.00 0.25 0.50 0.75 1.00
+0
+1
+HZ
+HZ
+PZ
+PZ
+Total
+MV
+EV
+Anxa 5
+Alpl
+Pdcd6ip
+Anxa 1
+Smpd 3
+Prdx 1
+Phospho 1
+Sgms2
+-Log10(P-value)
+Enpp 1
+CD63
+CD81
+Vdac 1
+Prdx 2
+Tsg 101
+CD9
+Arf 6
+Markers
+Protein-containing complex binding
+Structural molecule activity
+Protein binding
+Structural constituent of ribosome
+Calcium ion binding
+Calcium-dependent protein binding
+GTP binding
+Purine ribonucleoside binding
+Purine nucleoside binding
+Guanyl nucleotide binding
+Guanyl ribonucleotide binding
+GDP binding
+GTPase activity
+Pyrophosphatase activity
+Hydrolase activity, acting on acid anhydrides (AAAA)
+HAAA, in phosphorus-containing anhydrides
+Actin filament binding
+Anion binding
+Nucleoside-triphosphatase activity
+Ion binding
+Small molecule binding
+Actin binding
+Cell adhesion molecule binding
+Hydrolase activity
+Cytoskeletal protein binding
+****
+****
+****
+****
+****
+****
+****
+****
+Ribonucleoside binding
+Nucleoside binding
+Enzyme binding
+Identical protein binding
+SGMS2
+RZ
+PZ
+HZ
+SOC
+100 m
+Growth plate 
+microdissection:
+proximal tibia
+C57BL/6 (P28)
+Collagenase 
+digestion
+Filtration
+(0.45 m)
+700 x g
+(5 min)
+2 000 x g
+(10 min)
+Filtration
+(0.22 m)
+Size-exclusion
+chromatography
+3 000 x g
+(20 min)
+Storage at - 80 °C
+(in PBS-HAT)
+Matrix vesicle
+(MV)
+characterization
+BSA
+(0.2 %)
+or 
+b
+c
+d
+a
+e
+MV (
+) MV (
+)
+1
+1
+2
+2
+3
+3
+Molecular functions
+f
+Time/h
+ turbidity (absorbance 340 nm)
+Vehicle
+(PBS-HAT)
+MV (E7)
+MV (E9)
+SMS2-IN-2
+Levamisole
+Vehicle (DMSO)
+SCL buffer only
+Vehicle
+(PBS-HAT)
+MV (E7)
+MV (E9)
+_
+_
+_
+_
++
++
+SMS2-IN-2
+Levamisole
+ turbidity (absorbance 340 nm)
+at 26 h time-point
+_
+_
+_
+_
++
++
+_
+_
+_
+_
++
++
+SLC
+buffer
+_
+_
+Vehicle (DMSO) _
++
+_
+_
++
+_
+_
++
+_
+_
+-0.02
+0.00
+0.02
+0.04
+0.06
+0.08
+100 m
+10 11 12 13 14 15
+17 18 19
+22 23 24 25 26 27 28 29 30
+-0.02
+0.00
+0.02
+0.04
+0.06
+0.08
+21
+20
+16
+Binding
+5
+15 20 25 30 35
+0
+10
+Fig. 6
+SGMS2 localizes to growth plate-derived matrix vesicles (MVs) and contributes to mineralization. a SGMS2 expression determined by
+Visium (upper image) and Visium HD (lower image). b Workﬂow to isolate MVs from murine growth plates. c Heatmap of log-transformed
+protein abundance with selected markers indicated, and d molecular functions of enriched proteins. e MV-mineralization assay with SGMS2
+inhibitor (SMS2-IN-2) or alkaline phosphatase inhibitor (levamisole). f Mineralization kinetics at 26 h timepoint (e)
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+9
+Bone Research
+(2026) 14:79
+identiﬁed in 7 of the 8 patients (Fig. 7b). Spots containing either
+CHRDL2 and/or SFRP5 were spatially distributed throughout the RZ
+(Fig. 7c). Next, we elaborated on the quiescence status of these four
+sub-populations on the single cell level (Figs. 7d, S9c). RZ cells in
+which CHRDL2 and/or SFRP5 were detected had relatively high mRNA
+levels (Fig. 7e), conﬁrming that these cells are among the least
+quiescent RZ cells. Furthermore, RZ chondrocytes within the same
+chondrons showed heterogeneity in both marker expression and
+total mRNA content (Fig. 7d”). Hence, SFRP5 and CHRDL2 label sub-
+populations of human growth plate chondrocytes and were not
+detected in deeply quiescent RZ cells.
+DISCUSSION
+On the gene expression proﬁles of human adolescent
+growth plates
+By applying complementary spatial RNA proﬁling platforms to
+adolescent human growth plate tissue for the ﬁrst time, we greatly
+extended the understanding of its spatial transcriptomic organiza-
+tion and potential regulatory mechanisms. The presence of well-
+described
+markers
+in
+the
+anticipated
+growth
+plate
+zones
+(supplementary note 1) strongly indicates the precision of the
+SRT methodology and pseudo-bulk analysis approach, strength-
+ening the validity of the less well-described and novel gene
+expression proﬁles such as NKX3-2, WNK4, and SGMS2. Despite the
+small and diverse cohort, with respect to genetic sex and Tanner
+stage, our analysis revealed consistent marker expression across
+individuals. This convergence highlights a shared transcriptional
+signature between individuals, although based on the source
+material, its relevance to the general population must be viewed
+with caution. Furthermore, these results conﬁrm the relevance of
+gene expression proﬁles obtained from model organisms over
+past decades to human biology. These transcriptional proﬁles may
+facilitate
+a
+better
+understanding
+of
+diseases,
+improve
+the
+relevance of existing animal studies and facilitate novel strategies
+to treat these patients.
+On the quiescent nature of resting zone cells
+Based on histological observations, some chondrocytes have been
+referred to as “resting” since at least the 1920s,45 but limited
+d
+Merged
+CHRDL2 
+SFRP5
+ Poly(A) 
+DAPI
+5m
+d´ (i)
+d´´ (i)
+d´´´ (i)
+d´ (ii)
+d´´ (ii)
+d´´´ (ii)
+d´ (iii)
+d´´ (iii)
+d´´´ (iii)
+d´ (iv)
+d´ (v)
+d´´ (v)
+d´´´ (v)
+d´´ (iv)
+d´´´ (iv)
+RZ
+PZ
+100 m
+HZ
+Patient 2
+SOC
+e
+CHRDL2+ / SFRP5+ / CHRDL2+ SFRP5+
+Poly(A) intensity (as percentage of maximum)
+RZ sub-population
+0
+50
+100
+****
+****
+****
+CHRDL2+
+SFRP5+
+CHRDL2+
+SFRP5+
+Double
+negative
+a
+CHRDL2
+SFRP5
+UCMA
+ZNF550
+Log10 transformation of the UMI counts
+per spot (as a percentage of maximum)
+-
+-
++
++
++
++
+-
+-
+-
++
+-
+-
+-
+-
+-
+-
+-
+-
++
+-
++
+-
+-
+-
++
+-
+-
++
+-
++
+-
++
+-
+-
+-
++
+*
+****
+****
+**
+****
+***
+*
+*
+*
+c
+b
+-
+-
++
++
++
++
+-
+-
+-
++
+-
+-
+-
+-
++
+-
++
+-
+-
+-
++
+-
+-
++
+-
++
+-
++
+-
+-
+-
++
+-
+-
+-
+-
+CHRDL2
+SFRP5
+UCMA
+ZNF550
+Percentage of spots
+Patient 1
+Patient 2
+Patient 3
+Patient 4
+Patient 5
+Patient 6
+Patient 7
+Patient 8
+0
+20
+40
+60
+80
+100
+RZ
+PZ
+HZ
+Patient 3
+SOC
+−3
+−2
+−1
+0
+1
+2
+3
+Fig. 7
+CHRDL2 and SFRP5 can be used to label distinct resting zone sub-populations. a Spot UMI counts in the sub-populations of the
+signiﬁcantly up-regulated genes in RZ. b The abundance of the sub-populations in all eight patients. c Spatial feature plot of spot for single
+expression of CHRDL2 (in red) and SFRP5 (in green) and their co-expression (in orange). d High-magniﬁcation images of SFRP5/CHRDL2-
+double-positive cells (arrow d´), -single-positive (arrowheads, d´, d´´) or -double-negative (arrows in d´´ and d´´´). e Poly(A) signal intensity in
+the sub-populations
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+10
+Bone Research
+(2026) 14:79
+identiﬁcation of features relating to their cellular quiescence has
+thus far been described.46 Our results demonstrate that human RZ
+chondrocytes have the characteristics of quiescent stem cells,
+including reduced mRNA content,7 predominantly nuclear mRNA
+localization,7 increased heterochromatin,47 lysosomal accumula-
+tion,11 and the ability to exit G0 when cultured ex vivo.20,48 With
+the exception of cell cycle re-entry, these characteristics have not
+been described in RZ cells before. Hence, the identiﬁcation of
+these new characteristics offers a deeper understanding of RZ cell
+identity and reveals common traits between RZ cells and
+quiescent stem cells in other tissues.
+On the putative hierarchy of resting zone sub-populations
+The murine RZ contains heterogeneous cells expressing a variety
+of markers including Sfrp5,49 CD73,18,50 Ucma,25 Axin2,50 Apoe,43
+Clu,50 PTHrP,13,50 and Foxa2,14 among others.17 The current
+consensus is that the RZ chondrocytes include skeletal stem and
+progenitor cells as the de facto stem cells have not yet been
+identiﬁed. Little is known about hierarchy among the populations
+except for tracing experiments suggesting that Foxa2-expressing
+RZ chondrocytes lie upstream of the PTHrP-positive population.14
+Our
+own
+results
+demonstrate
+that,
+like
+mice,
+human
+RZ
+chondrocytes are also heterogenous, based on their differential
+expression of CHRDL2, SFRP5, UCMA and ZNF550. To explore the
+potential hierarchy of these populations, we assessed their
+quiescence level by UMI count or polyadenylated RNA intensity.
+Both approaches revealed that RZ sub-populations had hetero-
+genous RNA content, indicating that different sub-populations
+had varying quiescence statuses. Nevertheless, we determined
+that sub-populations of RZ cells expressing CHRDL2 and/or SFRP5
+were located throughout the human RZ and that cells within these
+sub-populations contained signiﬁcantly more mRNA than CHRDL2/
+SFRP5-double-negative cells. As individual cells within each
+chondron were heterogenous for total mRNA, CHRDL2 and SFRP5
+levels, it is possible that local regulation within each chondron
+maintains the RZ, which would align well with our understanding
+that repressed BMP- and Wnt signaling maintains the RZ in
+rodents.17 Further investigation aimed at more precisely stratifying
+RZ sub-populations using an expanded panel of markers, under-
+standing the degree of local control within and between
+chondrons, and unpicking the precise roles of the identiﬁed
+genes beyond their use simply as markers, would signiﬁcantly
+advance our understanding of RZ maintenance during postnatal
+growth.
+While post-natal growth in mice is fueled by skeletal stem
+cells,18 mouse and human RZ cells have similar characteristics and
+marker expression,17 and it is thought that the general mechan-
+isms of growth between mice and humans are similar,51 it is
+important to emphasize that direct evidence of an epiphyseal
+stem cell population and niche is lacking. Human growth plates
+contain relatively large RZs in comparison to rodents, and some of
+these cells may fulﬁl roles that have yet to be deﬁned.52 Further
+research is required to deﬁnitively test if RZ cells, or a speciﬁc
+subset of them, fulﬁll the necessary criteria to represent bona ﬁde
+stem cells in human growth plates.
+On the potential role of SGMS2 in skeletal mineralization
+SGMS2 catalyzes the conversion of ceramide to sphingomyelin, a
+metabolite which is then further catalyzed to provide phosphate
+ions during matrix mineralization.40 Pekkinen and colleagues36
+recently explored the pathologies and mechanisms underpinning
+several SGMS2 heterozygous variants, making some key ﬁndings:
+while under-mineralization appeared in individuals with nonsense
+and missense mutations, patients with missense mutations had
+stronger phenotypes, including bowing of the long bones during
+growth. In vitro analysis determined that while the enzymatic
+function of SGMS2 in missense variants p.Ile62Ser and p.Met64Arg
+was not impaired, the resultant proteins accumulated in the
+endoplasmic reticulum rather than the plasma membrane. Our
+discovery that endogenous Sgms2 is located in growth plate-
+derived MVs where it facilitates mineralization, could provide a key
+missing piece of the puzzle: it suggests that the localization of
+SGMS2-mediated sphingomyelin synthesis within the extracellular
+matrix is necessary for sufﬁcient tissue mineralization. Additionally,
+while classical EV biogenesis pathways are mediated by the
+endosomal sorting complex required for transport (ESCRT) or
+tetraspanins, EVs can also be generated through ceramide-
+dependent mechanisms,53 potentially placing SGMS2 in dual roles
+in both biogenesis and function in MVs. Hence, future research
+investigating MVs in these patients may further elaborate the
+underlying mechanisms.
+Limitations
+First, all biopsies were obtained from adolescents undergoing
+surgery for idiopathic tall stature. Although these individuals were
+otherwise healthy, their growth plates may differ from that of the
+general population. Second, while the sample size reﬂects a
+relatively large study in relation to human growth plate, it
+nonetheless restricts statistical power and limits stratiﬁed analysis
+across sex, age, and pubertal stages. In relation to the results
+obtained from RRST/CytAssist (using the standard Visium plat-
+form), several limitations should be noted. First, the spot size in
+the SRT of 55 µm diameter precluded single cell resolution.
+Second, due to the relatively low levels of transcription, we
+needed to devise a robust
+strategy to detect statistically
+signiﬁcant differences between the populations which precluded
+the unbiased stratiﬁcation of cells within the entire growth plate;
+this issue also introduces potential bias in sub-population
+identiﬁcation. Furthermore, these SRT methods are probe-based
+and although covering the whole transcriptome many growth
+plate-relevant genes were missing from one or both panels (e.g.
+IHH,54 PTHLH55). Additionally, although our SRT analysis describes
+signiﬁcantly
+differentially
+expressed
+genes
+across
+all
+eight
+patients, the results were not sufﬁcient to determine those
+speciﬁc to, for example, genetic sex or pubertal stage, as
+determined by our power analyses.
+While our growth plate-derived MV preparations contained key
+MV protein markers (e.g., Alpl, Enpp1, Phospho1), alkaline
+phosphatase activity, and mineralization potential, these assays
+are at the bulk EV level, and we cannot exclude that non-
+mineralizing EVs are also present in our MV preparations.
+Furthermore, while MVs may vary in size from 30-1 000 nm in
+diameter,37 our isolation method obtained only those in the range
+of 100–200 nm in diameter.
+In summary, we greatly elaborated upon the human growth
+plate transcriptome, allowing us to identify novel zone-speciﬁc
+markers, new primary growth disorders, and candidate pharma-
+cological targets. Furthermore, our results revealed that the RZ
+contains chondrocytes that display characteristics of adult stem
+cells and sub-populations of varying quiescence status. Together,
+these ﬁndings can facilitate improved diagnosis and treatment
+strategies of patients with skeletal growth disorders.
+MATERIALS AND METHODS
+Study design
+In this study, we aimed at deciphering the transcriptional proﬁles
+of the human growth plate. We selected biopsies containing
+growth plate and SOC for SRT. We applied the RRST platform, a
+method we previously optimized for use with undecalciﬁed
+cartilage tissue, and to improve sequencing results, complemen-
+ted this with CytAssist. We selected the four patients from each
+platform with the highest median UMI count per spot, resulting in
+an exploration dataset of four male and four female patients, two
+per platform, to reduce the risk of bias. All other sequenced
+sections using RRST were added to the Validation cohort. Spots
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+11
+Bone Research
+(2026) 14:79
+were manually assigned into zones by a trained observer. No
+statistical method was used to pre-determine sample size. The
+experiments were not randomized, and the investigators were not
+blinded to allocation during experiments and outcome assess-
+ment. Animal experiments were performed in accordance with the
+ARRIVE guidelines.56
+Ethics declaration
+The collection of human growth plate samples was approved by
+the local human ethics committee (KI forskningsetikkommitté
+Nord vid Karolinska Sjukhuset), ethical permit 97/214. Informed
+consent was obtained from participating subjects and their
+caregivers before enrolment in the study, which was performed
+according to the Declaration of Helsinki. Mouse bone samples
+were collected according to ethical permit 16673/2020, approved
+by Stockholm’s animal experiment ethics committee (Stockholms
+djurförsöksetiska nämnd).
+Human growth plate sample information and collection
+Human growth plate samples were collected from constitutionally
+tall-stature patients undergoing epiphyseal surgery (epiphysiod-
+esis) to reduce bone growth at the Karolinska University Hospital.
+To be eligible, for treatment a predicted adult height of at least
+186 cm for girls or 200 cm for boys (corresponding to 3 standard
+deviations above mean height), at least 8 cm of predicted growth
+remaining, and a strong desire to undergo surgery must exist.
+Immediately after collection, biopsies from distal femora and
+proximal tibiae were transferred into DMEM-F12 medium (phenol
+red free [21041025; Gibco]) on ice and transported directly to the
+laboratory.
+Under microscopy,
+biopsies in DMEM/F12
+were
+dissected on ice into slices of approximately 1 mm thickness,
+using a scalpel. For SRT experiments, fresh-frozen samples were
+prepared by placing each slice into Optimal Cutting Temperature
+(OCT) compound (4583; Tissue-Tek) within a cryomold (62534-10;
+Tissue-Tek), which was rapidly frozen in a hexane (296090-1;
+Sigma-Aldrich) bath that had been pre-cooled in a tank of
+absolute ethanol (01399; Histolab) containing dry-ice (carbon
+dioxide ice). For RNAscope, each slice was ﬁxed in pre-cooled 4%
+formaldehyde (64833; Merck)/PBS for 48 h at 4 °C. Samples were
+then placed into 30% sucrose (S-2885; AG Scientiﬁc) overnight and
+embedded in OCT in cryomolds. Samples were stored at −80 °C
+prior to cryo-sectioning.
+RRST gene expression library preparation
+Fresh-frozen human growth plate slices were cryo-sectioned in a
+CryoStar NX70 (957070; Epredia) at 10 µm thickness, placed onto
+glass slides from Visium Spatial for FFPE Gene Expression kit (PN-
+1000338; 10x Genomics), and stored at -80°C before processing.
+Each Capture Area contained section(s) from 1 patient. Spatial
+gene expression libraries were generated following RRST Gene
+Expression protocol, as previously reported.6 Final libraries were
+puriﬁed and assessed using an Agilent Bioanalyzer (Agilent 2100
+Bioanalyzer system) and quantiﬁed using the Qubit Fluorometric
+quantiﬁcation
+(ThermoFisher)
+before
+sequencing
+on
+Next-
+Seq2000 (Illumina) at a depth of 25 000 reads per tissue
+covered spot on Capture Area. Read 1 (28 bp [base pairs])
+encodes for the Spatial barcode and Unique Molecular Identiﬁer
+(UMI) and Read 2 (50 bp) were used to sequence the ligated
+probe insert.
+CytAssist gene expression library preparation
+Fresh-frozen human growth plate slices were cryo-sectioned at
+10 µm thickness, placed within a 6.5 mm Capture Area on
+SuperFrost Ultra Plus GOLD Adhesion slides (11976299; Thermo
+Fisher Scientiﬁc) as per6, and stored in −80 °C freezer. Each
+Capture Area contained sections from two patients. The tissue
+slides were removed from −80 °C freezer, ﬁxed and stained as in
+RRST protocol, as previously reported. CytAssist gene expression
+libraries were generated using Visium CytAssist Spatial Gene
+Expression for FFPE kit (PN-1000520; 10x Genomics) following 10x
+Genomics Visium Spatial Gene expression protocol (User Guide,
+CG000495 Rev D). Final libraries were puriﬁed and assessed using
+an Agilent Bioanalyzer (Agilent 2100 Bioanalyzer system) and
+quantiﬁed using the Qubit Fluorometric Quantiﬁcation (Thermo-
+Fisher) before sequencing on NextSeq2000 (Illumina) at a depth of
+25 000 reads per tissue covered spot on the capture area. Read 1
+(28 bp) encodes for the Spatial barcode and UMI and Read 2
+(50 bp) were used to sequence the ligated probe insert.
+Data pre-processing
+Sequenced libraries were processed using Space Ranger software
+(version 1.3.1 for RRST data and version 2.0.1 for CytAssist data,
+10x Genomics). Reads were aligned to the pre-built human
+reference genome the GRCh38, provided by 10x Genomics
+(version refdata-gex-GRCh38-2020-A). h5 ﬁles and image data
+were obtained.
+Spot-level annotation
+Spots from all Capture Areas were annotated on a spot-by-spot
+basis using Loupe Browser version 6.2.0 (10x Genomics). Based on
+tissue histology, spots were manually deﬁned into areas: SOC, RZ,
+PZ, HZ, and POC. Spots lacking cells were excluded. Since human
+growth plate slices did not always contain entire growth plates,
+we prioritized the use of sections that contained the complete
+SOC and RZ with SRT. Of those used to generate the exploration
+dataset, 29.4% of tissue sections lacked POC (Table 2), which was
+excluded from downstream analyses.
+Statistical analysis
+Normality was assessed using the Shapiro-Wilk test; where
+normality could be assumed, parametric tests were performed
+(Figs. 1d, 2f, 6f, S7b, S7d, S7e, S7f), otherwise non-parametric tests
+(Figs. 1f, 2a, 2c, 2d, 2g, 7a, 7e, S1b, S1c, S2d, S3c, S7i) were applied.
+Data were processed using RStudio software version 4.1.2 (2021-
+11-01) or GraphPad Prism version 10.2.3. Statistical analyses were
+performed using GraphPad Prism Software 9.
+Supplementary information
+Supplementary information accompanies the manuscript on Bone
+Research website http://www.nature.com/boneres.
+DATA AVAILABILITY
+All data associated with this study are present in the paper or the Supplementary
+Materials, whereas code and data used in spatially resolved transcriptomics analyses
+(Visium
+and
+Visium
+HD)
+are
+available
+online:
+https://github.com/anarl/
+spatial_bone_growth. Original images can be obtained from the corresponding
+authors upon reasonable request.
+ACKNOWLEDGEMENTS
+We thank Dr. Henrik Wehtje and Dr. Ostap Dregval for methodological support,
+and Dr. Per Roos for translation assistance. Dr. Newton would like to acknowledge
+the support of Prof. Andrei S Chagin for mentorship, constructive discussions and
+for the courage to break the mold. We thank National Genomics Infrastructure
+(NGI), Sweden, for infrastructure support. We also acknowledge support of
+Bioimaging core facility, electron microscopy unit Emil at Karolinska Institutet and
+the 3D-Electron Microscopy Center at Karolinska Institutet and Clinical Proteomics
+Mass Spectrometry facility, Karolinska Institutet/ Karolinska University Hospital/
+Science for Life Laboratory. BioRender (agreement number LH29TGEN5I) was used
+in the generation of Fig. 6b. This work was supported ﬁnancially by the Swedish
+Research Council (PTN: 2019-01919; JL: 2022-03984; OPBW: 2022-02449); Novo
+Nordisk Foundation (PTN: 0067241); Syskonen Svenssons fond (PTN); Karolinska
+Institutet (PTN; OPBW: 2-116/2023); King Abdullah University of Science and
+Technology Baseline Awards (DG-C: BAS/1/1093-01-01; JNT: BAS/1/1078-01-01);
+Spanish Government (DC-G: PID2019-111192GA-I00 (MICINN)); European Research
+Council (ERC) under the European Union’s Horizon 2020 research and innovation
+programme (JL: 101021019); The Swedish Cancer Society (JL: 71170; PN: 23 2739 Pj;
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+12
+Bone Research
+(2026) 14:79
+OPBW: 23 2935 Pj); Swedish Foundation for Strategic Research (JL: SB16-0014);
+Radiumhemmet Research Funds (OPBW: 241392), Hjärnfonden (OPBW: FO2025-
+0365), the Center for Innovative Medicine (CIMED) junior investigator grants
+(OPBW: FoUI-1024690); Birgit Backmark foundation (JL); Science for Life Laboratory
+(JL); Instituto de Salud Carlos III (FP); European Regional Development Fund: A way
+of making Europe (FP: PI20/01308, PI23/00516); Centro de Investigación Biomédica
+en
+Red
+Cáncer
+(FP:
+CB16/12/00489);
+Redes
+de
+Investigación
+Cooperativa
+Orientadas a Resultados en Salud - Terapias Avanzadas (FP: RD21/0017/0009);
+Departamento de Industria Gobierno de Navarra (FP: AGATA 0011-1411-2020-
+000010/0011-1411-2020-000011); Departamento de Salud Gobierno de Navarra;
+the Cancer Research UK [FP: C355/A26819]; Fundación Cientíﬁca de la Asociación
+Española contra el Cancer under the Accelerator Award Program (FP); The
+International Myeloma Foundation (Brian van Novis, FP); The Paula and Rodger
+Riney Foundation (FP).
+AUTHOR CONTRIBUTIONS
+Conceptualization Lead: P.T.N.; supporting: J.L., R.M., D.G.-C.; Methodology lead: M.A.,
+L.A.G., J.G.M.-A.; supporting: A.R.L.-P., L.Sud, Ž.A., Y.Z., F.Z., R.Z., R.M., D.G.-C., P.T.N.,
+D.R.M.; Software lead: D.G.-C., A.R.L.-P.; supporting: L.Sud, L.L., M.A., P.M.; Validation
+lead: M.A., A.R.L.-P.; supporting: L.A.G.; Formal analysis lead: M.A., A.R.L.-P., L.Sud;
+supporting: J.G.M.-A., L.L., P.M., D.G.-C., P.T.N.; Investigation lead: M.A., A.R.L.-P., L.A.G.,
+R.M., P.T.N., D.G.-C.; supporting: Ž.A., L.L., H.Q., K.B., J.N.T., L.Säv, F.P.; Resources lead:
+J.L., L.Säv; supporting: P.T.N., F.P., J.N.T., D.G.-C.; Data Curation lead: M.A., A.R.L.-P.,
+L.A.G., L.S.; supporting: J.G.M.-A.; Writing - Original Draft lead: P.T.N.; supporting: M.A.,
+A.R.L.-P., D.G.-C.; Writing - Review & Editing lead: P.T.N., M.A., D.G.-C.; supporting: R.M.,
+H.Q., A.R.L.-P., L.A.G., L.Säv, J.G.M.-A.; Visualization lead: M.A., A.R.L.-P.; supporting:
+J.G.M.-A., A.N.; Supervision lead: P.T.N., D.G.-C.; supporting: K.B., H.Q., J.L., R.M.,
+O.P.B.W.; Project administration lead: P.T.N., D.G.-C., R.M.; supporting: K.B., H.Q., J.L.;
+Funding acquisition lead: P.T.N., J.L., D.G.-C.
+FUNDING
+Open access funding provided by Karolinska Institute.
+ADDITIONAL INFORMATION
+Supplementary information The online version contains supplementary material
+available at https://doi.org/10.1038/s41413-026-00564-y.
+Competing interests: L.A.G., Z.A., J.L. and R.M. were scientiﬁc consultants for 10x
+Genomics´, which holds intellectual property rights to the SRT technology, when this
+work was conducted. O.P.B.W. has a ﬁnancial interest in Evox Therapeutics.
+Remaining authors declare no competing interests.
+REFERENCES
+1. Kronenberg, H. M. Developmental regulation of the growth plate. Nature 423,
+332–336 (2003).
+2. Farquharson, C. Bone Growth. In Biology of Growth of Domestic Animals (ed.
+Scanes, C.) 170–185 (2003).
+3. Haymond, M. et al. Early recognition of growth abnormalities permitting early
+intervention. Acta Paediatr. 102, 787–796 (2013).
+4. Wit, J. M. & Joustra, S. D. Long-acting PEGylated growth hormone in children with
+idiopathic short stature: time to reconsider our diagnostic and treatment policy?.
+Eur. J. Endocrinol. 188, R1–R4 (2023).
+5. Benyi, E. et al. Efﬁcacy and safety of percutaneous epiphysiodesis operation
+around the knee to reduce adult height in extremely tall adolescent girls and
+boys. Int. J. Pediatr. Endocrinol. 2010, 740629 (2010).
+6. Mirzazadeh, R. et al. Spatially resolved transcriptomic proﬁling of degraded and
+challenging fresh frozen samples. Nat. Commun. 14, 509 (2023).
+7. Rossi, A. et al. Neural stem cells alter nucleocytoplasmic partitioning and accu-
+mulate nuclear polyadenylated transcripts during quiescence. bioRxiv https://
+doi.org/10.1101/2021.01.06.425462 (2021).
+8. van Velthoven, C. T. J. & Rando, T. A. Stem cell quiescence: dynamism, restraint,
+and cellular idling. Cell Stem Cell 24, 213–225 (2019).
+9. de Morree, A. & Rando, T. A. Regulation of adult stem cell quiescence and its
+functions in the maintenance of tissue integrity. Nat. Rev. Molecular Cell Biol. 24,
+334–354 (2023).
+10. Kember, N. F. Cell division in endochondral ossiﬁcation. J. Bone Jt. Surg. Br. 42-B,
+824 LP–824839 (1960).
+11. Leeman, D. S. et al. Lysosome activation clears aggregates and enhances
+quiescent neural stem cell activation during aging. Science 359, 1277–1283
+(2018).
+12. Settembre, C. & Perera, R. M. Lysosomes as coordinators of cellular catabolism,
+metabolic signalling and organ physiology. Nat. Rev. Mol. Cell Biol. 25, 223–245
+(2024).
+13. Mizuhashi, K. et al. Resting zone of the growth plate houses a unique class of
+skeletal stem cells. Nature 563, 254–258 (2018).
+14. Muruganandan, S. et al. A FoxA2+ long-term stem cell population is necessary
+for growth plate cartilage regeneration after injury. Nat. Commun. 13, 2515
+(2022).
+15. Kember, N. F. & Lambert, B. E. Slowly cycling cells in growing bone. Cell Prolif. 14,
+327–330 (1981).
+16. Chagin, A. S. et al. G-protein stimulatory subunit alpha and Gq/11α G-proteins are both
+required to maintain quiescent stem-like chondrocytes. Nat. Commun. 5, 1–14 (2014).
+17. Hallett, S. A. et al. Chondrocytes in the resting zone of the growth plate are
+maintained in a Wnt-inhibitory environment. Elife 10, e64513 (2021).
+18. Newton, P. T. et al. A radical switch in clonality reveals a stem cell niche in the
+epiphyseal growth plate. Nature 567, 234–238 (2019).
+19. Toba, K., Winton, E. F., Koike, T. & Shibata, A. Simultaneous three-color analysis of
+the surface phenotype and DNA-RNA quantitation using 7-amino-actinomycin D
+and pyronin Y. J. Immunol. Methods 182, 193–207 (1995).
+20. Quarta, M. et al. An artiﬁcial niche preserves the quiescence of muscle stem cells
+and enhances their therapeutic efﬁcacy. Nat. Biotechnol. 34, 752–759 (2016).
+21. Kobayashi, H. et al. Environmental optimization enables maintenance of quies-
+cent hematopoietic stem cells ex vivo. Cell Rep. 28, 145–158.e9 (2019).
+22. Csaszar, E. et al. Rapid expansion of human hematopoietic stem cells by auto-
+mated control of inhibitory feedback signaling. Cell Stem Cell 10, 218–229 (2012).
+23. Lun, A. T. L. & Marioni, J. C. Overcoming confounding plate effects in differential
+expression analyses of single-cell RNA-seq data. Biostatistics. 18, 451–464 (2017).
+24. Squair, J. W. et al. Confronting false discoveries in single-cell differential
+expression. Nat. Commun. 12, 5692 (2021).
+25. Tagariello, A. et al. Ucma - a novel secreted factor represents a highly speciﬁc
+marker for distal chondrocytes. Matrix Biol. 27, 3–11 (2008).
+26. Miao, D. & Scutt, A. Histochemical localization of alkaline phosphatase activity in
+decalciﬁed bone and cartilage. J. Histochem. Cytochem. 50, 333–340 (2002).
+27. Chen, J. et al. Hypertrophic chondrocyte-speciﬁc Col10a1 controlling elements in
+Cre recombinase transgenic studies. Am. J. Transl. Res. 11, 6672–6679 (2019).
+28. Iruela-Arispe, M. L., Liska, D. A. J., Sage, E. H. & Bornstein, P. Differential expression of
+thrombospondin 1, 2, and 3 during murine development. Dev. Dynamics 197, 40–56
+(1993).
+29. Polański, K. et al. Bin2cell reconstructs cells from high resolution Visium HD data.
+Bioinformatics 40, btae546 (2024).
+30. Hellemans, J. et al. Homozygous inactivating mutations in the NKX3-2 gene result
+in spondylo-megaepiphyseal-metaphyseal dysplasia. Am. J. Hum. Genet. 85,
+916–922 (2009).
+31. Simsek-Kiper, P. O. et al. A novel NKX3-2 mutation associated with perinatal lethal
+phenotype of spondylo-megaepiphyseal-metaphyseal dysplasia in a neonate.
+Eur. J. Med. Genet. 62, 21–26 (2019).
+32. Tribioli, C., Frasch, M. & Lufkin, T. Bapxl: an evolutionary conserved homologue of
+the Drosophila bagpipe homeobox gene is expressed in splanchnic mesoderm
+and the embryonic skeleton. Mech. Dev. 65, 145–162 (1997).
+33. Provot, S. et al. Nkx3.2/Bapx1 acts as a negative regulator of chondrocyte
+maturation. Development 133, 651–662 (2006).
+34. Rainbow, R. S., Kwon, H. & Zeng, L. The role of Nkx3.2 in chondrogenesis. Front.
+Biol. 9, 376–381 (2014).
+35. Farfel, A. et al. Effect of age and affection status on blood pressure, serum
+potassium and stature in familial hyperkalaemia and hypertension. Nephrol.
+Dialysis Transplant. 26, 1547–1553 (2011).
+36. Pekkinen, M. et al. Osteoporosis and skeletal dysplasia caused by pathogenic
+variants in SGMS2. JCI Insight 4, e126180 (2019).
+37. Anderson, H. C. Vesicles associated with calciﬁcation in the matrix of epiphyseal
+cartilage. J. Cell Biol. 41, 59–72 (1969).
+38. Bonucci, E. Fine structure of early cartilage calciﬁcation. J. Ultrastruct. Res. 20,
+33–50 (1967).
+39. Watkins, E. L., Stillo, J. V. & Wuthier, R. E. Subcellular fractionation of epiphyseal
+cartillage isolation of matrix vesicles and proﬁles of enzymes, phospholipids, cal-
+cium and phosphate. Biochim. Biophys. Acta (BBA) Gen. Subj. 631, 289–304
+(1980).
+40. Cui, L., Houston, D. A., Farquharson, C. & MacRae, V. E. Characterisation of matrix
+vesicles in skeletal and soft tissue mineralisation. Bone 87, 147–158 (2016).
+41. Veerman, R. E. et al. Molecular evaluation of ﬁve different isolation methods for
+extracellular vesicles reveals different clinical applicability and subcellular origin.
+J. Extracell. Vesicles 10, e12128 (2021).
+42. Théry, C. et al. Minimal information for studies of extracellular vesicles 2018
+(MISEV2018): a position statement of the International Society for Extracellular
+Vesicles and update of the MISEV2014 guidelines. J. Extracell. Vesicles 7, 1535750
+(2018).
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+13
+Bone Research
+(2026) 14:79
+43. Kodama, J. et al. Apolipoprotein E is a marker of all chondrocytes in the growth
+plate resting zone. Bone Res. 13, 31 (2025).
+44. 10x Genomics. Visium Probe Sets Overview. https://www.10xgenomics.com/
+support/cytassist-spatial-gene-expression/documentation/steps/probe-sets/visium-
+ffpe-probe-sets-overview (2025).
+45. Stump, C. W. The histogenesis of bone. J. Anat. 59, 136–154 (1925).
+46. Avijgan, M., Nazaraliyev, A., Blomgren, K., Gomez-Cabrero, D. & Newton, P. T.
+"Quiescence” in the resting zone of the growth plate: a systematic review. Stem
+Cells 44, sxag010 (2026).
+47. Cebrián-Silla, A. et al. Unique organization of the nuclear envelope in the post-
+natal quiescent neural stem cells. Stem Cell Reports 9, 203–216 (2017).
+48. Rodgers, J. T. et al. MTORC1 controls the adaptive transition of quiescent stem
+cells from G 0 to GAlert. Nature 510, 393–396 (2014).
+49. Hallett, S. A., Ono, W. & Ono, N. Growth plate chondrocytes: skeletal develop-
+ment, growth and beyond. Int. J. Mol. Sci. 20, 6009 (2019).
+50. Oichi, T. et al. Nutrient-regulated dynamics of chondroprogenitors in the post-
+natal murine growth plate. Bone Res. 11, 20 (2023).
+51. Xie, M. et al. Secondary ossiﬁcation center induces and protects growth plate
+structure. Elife 9, e55212 (2020).
+52. Kember, N. F. & Sissons, H. A. Quantitative histology of the human growth plate. J.
+Bone Joint Surg. 58-B, 426–435 (1976).
+53. Cheng, L. & Hill, A. F. Therapeutically harnessing extracellular vesicles. Nat. Rev.
+Drug Discov. 21, 379–399 (2022).
+54. Kindblom, J., Nilsson, O., Hurme, T., Ohlsson, C. & Savendahl, L. Expression and
+localization of Indian hedgehog (Ihh) and parathyroid hormone related protein
+(PTHrP) in the human growth plate during pubertal development. J. Endocrinol.
+174, R1–R6 (2002).
+55. Chu, N. T. L. et al. Growth hormone regulates the stem cell population in the
+growth plate. Proc. Natl. Acad. Sci. 122, e2512316122 (2025).
+56. Percie du Sert, N. et al. The ARRIVE guidelines 2.0: updated guidelines for
+reporting animal research. PLoS Biol. 18, e3000410 (2020).
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons licence, and indicate if changes were made. The images or other third party
+material in this article are included in the article’s Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not included in the article’s
+CreativeCommonslicenceandyourintendeduseisnotpermittedbystatutoryregulationor
+exceeds the permitted use, you will need to obtain permission directly from the copyright
+holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+© The Author(s) 2026
+Spatial transcriptomics reveals novel growth plate biology
+M Avijgan et al.
+14
+Bone Research
+(2026) 14:79

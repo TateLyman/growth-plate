@@ -7347,3 +7347,69 @@ is now an open item rather than a settled one.
 **The rule this adds.** No agent may be scored as beneficial for adult height on a growth-rate or
 growth-velocity endpoint alone. The question to ask of every agent is what it does to the
 proliferative reserve and to terminal cell height. Velocity is a symptom, not the objective.
+
+---
+
+## CORR-193 — no re-entry fraction can be read from avijgan2026 Fig 2f
+
+**Round 201.** The plan for this round stated that avijgan2026's thymidine-analogue panel showed
+roughly half of human resting-zone chondrocytes re-entering the cell cycle in explant. **That
+number is inadmissible and is withdrawn before it ever entered a node.**
+
+The printed y-axes of Fig 2f run to **150 per cent** and down to **−100 per cent**. A raw fraction
+of labelled cells cannot exceed 100 or fall below 0, so the plotted quantity is normalised or
+background-corrected, not a labelling index. No absolute fraction can be extracted from it.
+
+Worse for the simple reading, the three analogues were **not given for equal times**. From the
+preprint methods: EdU overnight (~0.7 d), IdU present days 3–8 (~5 d), CldU present days 9–17
+(~8 d). Dividing the read values by exposure gives, in the resting zone, **10.6 %/day at day 0–1
+falling to 6.9 %/day at day 9–17** — a slight *decrease*. The proliferative zone falls from 70.5
+to 2.8 %/day, a **25-fold collapse**. The apparent "resting zone overtakes the proliferative zone"
+is produced by proliferative-zone shutdown plus an 11-fold longer exposure window.
+
+**What survives.** The paired sign flip is real and is what the panel can support: RZ below PZ at
+day 0–1 (P < 0.05) and above it at day 9–17 (P < 0.001), intermediate window not significant
+(P = 0.0989), n = 646 RZ / 1227 PZ / 505 HZ cells from 3 patients. And the reactivation conclusion
+itself survives on a **different panel** — Fig 2g, poly(A) per nucleus, which is on an
+interpretable scale and moves **RZ 26.25 → 46.53 (+77 %), PZ +10 %, HZ −14 %**. Zone-specific, in
+a direction proliferative-zone exhaustion cannot produce.
+
+**The rule this adds.** Before reading a value off a figure, check that the axis is capable of
+carrying it. An axis that extends past the logical bounds of its stated unit is a normalised axis,
+and only ratios and paired contrasts may be taken from it. Where a time-course uses unequal
+exposure windows, no cross-timepoint comparison is valid until it is exposure-normalised.
+
+---
+
+## CORR-194 — chu2026's resting-zone growth-hormone result is an uninformative null, not a null
+
+**Round 201.** The plan for this round stated that chu2026 gave *human confirmation that GH is not
+a pool agent*, on the strength of **P = 0.79** for the resting zone against **P = 0.013** for the
+proliferative zone. **That reading is withdrawn.**
+
+Per-donor values read from a 1400 dpi render of Fig 5L (7 vehicle, 6 GH donors, each the average of
+2–4 explants):
+
+| zone | vehicle | GH | fold | reported Tukey P | unadjusted p | MDD at 80 % power |
+|---|---|---|---|---|---|---|
+| resting | 0.453 % | 1.270 % | **2.80×** | 0.79 | ≈0.25 | 1.81 pts = **5.0×** |
+| proliferative | 1.234 % | 3.878 % | 3.14× | 0.013 | ≈0.02 | 2.45 pts = 3.0× |
+
+Three things are wrong with reading the resting-zone row as absence of effect. The point estimate
+is **2.8-fold in the same direction** as the significant proliferative-zone effect. The reported
+P is **Tukey-corrected across all four groups**; the unadjusted two-sample comparison on the same
+points is about 0.25. And the experiment **could only have detected a 5.0-fold rise** — it was
+not powered to find the effect it observed.
+
+The same paper points the other way on mechanism: **phospho-STAT5 rose predominantly in the
+RESTING zone (P = 0.034)**. The GH signal lands in the reserve compartment.
+
+**Scope.** The round-183 rat finding that GH spends the pool (hunziker1994 decomposition, 5.00×
+pool consumption against 0.77× amplification) is untouched — it rests on different data. What is
+withdrawn is the claim of *human confirmation* that GH bypasses the resting zone. The grade for
+"growth hormone does not recruit the human resting zone" is set to **X**.
+
+**The rule this adds.** A non-significant contrast inside a multi-group post-hoc is not evidence
+of absence until two things are computed: the unadjusted comparison, and the minimum detectable
+difference. If the MDD exceeds the observed point estimate, the correct entry is *uninformative*,
+never *null*.

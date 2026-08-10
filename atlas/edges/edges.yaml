@@ -21402,13 +21402,12 @@ edges:
   target: growth_plate_senescence
   relation: precedes
   sign: unknown
-  magnitude: the only observed spontaneous growth endpoint in the oestrogen-null human literature is an
-    ARREST rather than an emptying - growth ceased at age 24 at about 197 cm and the hand X-ray at age
-    27, still untreated, showed OPEN EPIPHYSES with a bone age of 16 - while other oestrogen-null men
-    were still producing at 29, at 31 and at about 31, giving an adult velocity of 0.83 to 1.44 cm per
-    year
-  context: congenital aromatase deficiency and ESR1 loss of function; velocities derived by division from
-    author-stated heights and ages, with herrmann2002 excluded from the mean because his span begins at 14
+  magnitude: the only observed spontaneous growth endpoint in the oestrogen-null human literature is an ARREST rather than
+    an emptying - growth ceased at age 24 at about 197 cm and the hand X-ray at age 27, still untreated, showed OPEN EPIPHYSES
+    with a bone age of 16 - while other oestrogen-null men were still producing at 29, at 31 and at about 31, giving an adult
+    velocity of 0.83 to 1.44 cm per year
+  context: congenital aromatase deficiency and ESR1 loss of function; velocities derived by division from author-stated heights
+    and ages, with herrmann2002 excluded from the mean because his span begins at 14
   evidence_tier: T1
   refs:
   - herrmann2002
@@ -21416,32 +21415,149 @@ edges:
   - maffei2004
   - smith2008
   confidence: C
-  notes: 'AT THE TISSUE LEVEL THE HUMAN ANSWER IS ARREST - the cartilage is still there when growth
-    stops. At the cell level it is unknown, because nobody has ever attempted to restart a senescent or
-    arrested growth plate in any species. The spread between individuals, one quitting at 24 while
-    others ran a decade longer, is larger than any pharmacological effect in this atlas. And the
-    measured ceiling of the duration lever is about ONE CENTIMETRE A YEAR into the third decade, which
-    is what any claim of an open-ended fusion-delay benefit has to be read against.'
+  notes: AT THE TISSUE LEVEL THE HUMAN ANSWER IS ARREST - the cartilage is still there when growth stops. At the cell level
+    it is unknown, because nobody has ever attempted to restart a senescent or arrested growth plate in any species. The spread
+    between individuals, one quitting at 24 while others ran a decade longer, is larger than any pharmacological effect in
+    this atlas. And the measured ceiling of the duration lever is about ONE CENTIMETRE A YEAR into the third decade, which
+    is what any claim of an open-ended fusion-delay benefit has to be read against.
   traversal_usable: true
 - edge_id: e01377
   source: round200_arrest_not_absence_and_the_adult_velocity
   target: aromatase_inhibitor_anastrozole
   relation: inhibits
   sign: +
-  magnitude: transdermal estradiol at 25 micrograms TWICE WEEKLY closed the epiphyses of a
-    thirty-one-year-old aromatase-deficient man WITHIN SIX MONTHS, and in a second case oestradiol
-    advanced a bone age frozen at 15 for eight years past 16 within the same six-month window
-  context: two independent case reports of adult male aromatase deficiency treated with oestrogen
-    replacement after years of unopposed growth
+  magnitude: transdermal estradiol at 25 micrograms TWICE WEEKLY closed the epiphyses of a thirty-one-year-old aromatase-deficient
+    man WITHIN SIX MONTHS, and in a second case oestradiol advanced a bone age frozen at 15 for eight years past 16 within
+    the same six-month window
+  context: two independent case reports of adult male aromatase deficiency treated with oestrogen replacement after years
+    of unopposed growth
   evidence_tier: T1
   refs:
   - imre2025
   - maffei2004
   confidence: C
-  notes: 'THE ASYMMETRY IS THE PRACTICAL FACT. A decade of accumulated residual growth capacity is spent
-    by six months of a low transdermal oestrogen dose, while removing oestrogen for an entire lifetime
-    buys only about a centimetre a year. The off-switch is fast and cheap and the on-switch is neither.
-    That is the strongest argument in this atlas for prioritising aromatase inhibition over anything
-    acting inside the plate, and it is equally the reason accidental or endogenous oestrogen exposure is
-    the dominant downside risk in this programme rather than a background concern.'
+  notes: THE ASYMMETRY IS THE PRACTICAL FACT. A decade of accumulated residual growth capacity is spent by six months of a
+    low transdermal oestrogen dose, while removing oestrogen for an entire lifetime buys only about a centimetre a year. The
+    off-switch is fast and cheap and the on-switch is neither. That is the strongest argument in this atlas for prioritising
+    aromatase inhibition over anything acting inside the plate, and it is equally the reason accidental or endogenous oestrogen
+    exposure is the dominant downside risk in this programme rather than a background concern.
   traversal_usable: true
+- edge_id: e01378
+  source: round201_the_reserve_is_alerted_not_activated
+  target: human_resting_zone_chondrocyte
+  relation: required_for
+  sign: +
+  magnitude: resting-zone poly(A) per nucleus rose from a median of 26.25 to 46.53 per cent of maximum over 17 days of ex
+    vivo culture, +77.3 per cent, while the proliferative zone moved +10.5 per cent and the HYPERTROPHIC ZONE FELL 14.4 per
+    cent - the transcriptional ceiling on the human reserve is imposed from outside the cell and reverses when the tissue
+    leaves the body
+  context: intact human growth plate biopsies, serum-free organ culture, n = 1194 RZ / 1454 PZ / 1053 HZ cells from 3 patients
+    aged 12 to 14 at Tanner 2 to 4; Mann-Whitney; author-stated medians
+  evidence_tier: T1
+  refs:
+  - avijgan2026
+  confidence: B
+- edge_id: e01379
+  source: round201_the_reserve_is_alerted_not_activated
+  target: mtorc1_chondrocyte
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: rodgers2014 splits quiescence into G0 and G(Alert), an mTORC1-dependent primed phase that is NOT division; that
+    state predicts the shape shared by newton2019 Tsc1 (pool up, recruitment explicitly unchanged), trompet2024 SAG (resting
+    Pthrp+ cells 65.5 to 139.8 per mm2, proliferation unchanged) and the human explant (transcription up, no bone formed).
+    HUMAN COMPARTMENT SCREEN DOES NOT SUPPORT THE MOLECULAR ROUTE - MTOR is not zone-specific (6 up, 3 down) and MET is detected
+    in 1 of 14 sections
+  context: mouse muscle mechanism applied to mouse and human cartilage phenotypes; recorded as hypothesis because no G0/G(Alert)
+    staging has ever been done in cartilage
+  evidence_tier: T1
+  refs:
+  - rodgers2014
+  - newton2019
+  - trompet2024
+  - avijgan2026
+  confidence: speculative
+  gap_id: g_l2_is_the_growth_plate_reserve_held_in_g0_or_in_galert
+- edge_id: e01380
+  source: round201_the_reserve_is_alerted_not_activated
+  target: human_resting_zone_chondrocyte
+  relation: correlates_with
+  sign: unknown
+  magnitude: DIO2 is resting-zone restricted within human growth plate cartilage - 32.04 CPM in the RZ, 0.00 in the PZ, 0.00
+    in the HZ, 48.57 in the SOC; section-paired sign test 6 up 0 down, p = 0.031. NOTCH2 3.41x RZ over PZ (7 up, 0 down, p
+    = 0.016), HEY1 5.00x (p = 0.070), THRA 1.52x (p = 0.065). That is the entire D2-T3-Notch quiescence axis of de2026a, compartment-matched
+    to the human reserve
+  context: RE-ANALYSIS of avijgan2026 deposited spatial transcriptomics, 14 sections, 8 donors; pipeline validated on the
+    authors own markers ZNF550 85.7x, UCMA 22.0x, CHRDL2 16.2x, SFRP5 7.0x and the counter-marker COL10A1; the PZ carries
+    MORE total UMI than the RZ so the direction is not a depth artefact. TRANSCRIPT PRESENCE ONLY - no function is claimed
+  evidence_tier: T1
+  refs:
+  - avijgan2026
+  - de2026a
+  confidence: C
+- edge_id: e01381
+  source: round201_the_reserve_is_alerted_not_activated
+  relation: inhibits
+  target: human_resting_zone_chondrocyte
+  sign: unknown
+  magnitude: D2 depletion in quiescent muscle stem cells forces a G0 to G(Alert)-like transition that RAISES proliferative
+    potential and IMPAIRS self-renewal, depleting the pool and causing regenerative failure over time, through loss of thyroid-hormone-sustained
+    Notch signalling. THAT IS THE ROUND-198 RESERVE MODEL IN ANOTHER TISSUE - alerting a quiescent pool raises output and
+    exhausts it
+  context: MOUSE MUSCLE AND SKIN. Applied to the growth plate resting zone only as a hypothesis, on the strength of DIO2 being
+    resting-zone restricted in human cartilage. No cartilage functional data exists
+  evidence_tier: T1
+  refs:
+  - de2026a
+  confidence: E
+  gap_id: g_l4_does_dio2_set_resting_zone_quiescence_in_the_growth_plate
+- edge_id: e01382
+  source: round201_the_reserve_is_alerted_not_activated
+  target: growth_hormone
+  relation: correlates_with
+  sign: unknown
+  magnitude: UNINFORMATIVE, NOT NULL. GH on the human resting zone in 2-month explant gives a 2.80-fold point estimate IN
+    THE SAME DIRECTION as the significant proliferative-zone effect (3.14-fold, P = 0.013); the reported P = 0.79 is Tukey-corrected
+    across four groups against about 0.25 unadjusted, and the minimum detectable difference at 80 per cent power is a 5.0-fold
+    rise. Phospho-STAT5 rises PREDOMINANTLY in the resting zone, P = 0.034, in the same paper
+  context: chu2026, 1-mm human growth plate slices, 7 vehicle and 6 GH donors; per-donor values read from a 1400 dpi render
+    of Fig 5L and value_unverified. Withdraws the human confirmation claimed in the plan for this round - see CORR-194
+  evidence_tier: T1
+  refs:
+  - chu2026
+  confidence: D
+- edge_id: e01383
+  source: round201_the_reserve_is_alerted_not_activated
+  target: round201_the_reserve_is_alerted_not_activated
+  relation: hypothesized_link
+  sign: +
+  magnitude: after tibial shaft fracture, 66 per cent of children overgrew the IPSILATERAL UNFRACTURED FEMUR by a median of
+    1.0 mm, contributing 25 per cent of the final leg-length discrepancy - a bone that was not broken grew faster because
+    a different bone was. rodgers2014 gives injury-induced SYSTEMIC signals as the G(Alert) trigger, which predicts a bilateral
+    effect that regional hyperaemia does not
+  context: 79 children under 14, median age 8, median follow-up 20 months. THE DISCRIMINATING MEASUREMENT HAS NEVER BEEN MADE
+    because post-fracture growth is universally reported as leg-length DISCREPANCY, a within-patient difference that cannot
+    detect a bilateral effect by construction
+  evidence_tier: T2
+  refs:
+  - cho2025
+  - rodgers2014
+  confidence: speculative
+  gap_id: g_l6_does_unilateral_paediatric_fracture_raise_growth_in_the_uninjured_limb
+- edge_id: e01384
+  source: round201_the_reserve_is_alerted_not_activated
+  target: round199_every_route_to_expanding_the_budget
+  relation: precedes
+  sign: '-'
+  magnitude: THE BINDING CONSTRAINT MOVES. Three independent systems expand the resting pool and none raises recruitment -
+    newton2019 Tsc1 (recruitment explicitly unchanged), trompet2024 SAG (proliferation unchanged), and human explant (transcription
+    up 77 per cent, root identity destroyed with CYTL1 falling 175 to 4 reads per positive cell, no bone formed). A reserve
+    that cannot be drawn on is not reserve, so every pool-expanding route enumerated in round 199 is on hold behind the second-signal
+    question
+  context: cross-round accounting statement, not a new measurement
+  evidence_tier: T1
+  refs:
+  - newton2019
+  - trompet2024
+  - chu2026
+  - avijgan2026
+  confidence: B

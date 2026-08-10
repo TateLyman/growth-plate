@@ -679,3 +679,94 @@ gaps:
     than in benefit, which is the worst case for a subject at bone age 16 and the one nobody is currently testing
     for. The cheap partial version is to re-measure terminal cell height and cells per column on existing kot2026
     or Fgfr3-null histology, which converts a zone height into the two terms without a new animal.
+- gap_id: g_l2_is_the_growth_plate_reserve_held_in_g0_or_in_galert
+  layer: L2
+  type: search_established
+  tractability: 2
+  question: Is the human growth plate resting zone in true G0, or is some fraction already in G(Alert) -
+    the mTORC1-primed pre-division state of rodgers2014 - and does the fraction change with pubertal
+    stage or approaching fusion?
+  why_it_matters: 'Round 201 found that every pool-expanding intervention in this atlas produces the same
+    shape - a bigger reserve with recruitment explicitly unchanged. newton2019 Tsc1, trompet2024 SAG, and
+    the 17-day human explant of avijgan2026 all do it. rodgers2014 names that state. If the growth plate
+    reserve can be staged into G0 and G(Alert), then the atlas has been measuring the wrong variable -
+    pool SIZE rather than pool READINESS - and an intervention that alerts without a second signal is
+    predicted to do nothing for length while looking like a success on every histological readout the
+    field uses. It also decides whether the alerting an intervention causes is REVERSIBLE, because
+    rodgers2014 states the transition is reversible and de2026a states that forcing it exhausts the pool.'
+  what_is_known: rodgers2014, mouse - quiescence is two functional phases, G0 and G(Alert); mTORC1 is
+    necessary and sufficient for the transition and cMet is also necessary; the trigger is injury-induced
+    SYSTEMIC signals; G(Alert) cells are primed rather than dividing and carry enhanced regenerative
+    function. brun2022, mouse - GLI3 holds satellite cells in G0 and losing it gives G(Alert) without
+    injury, by activating mTORC1, which is the only published bridge between hedgehog and the alerting
+    state. hirano2025a, mouse - Mg2+ entry through TRPM7 drives the same step. boaventura2026, human MSC -
+    soft 3D confinement drives DEEP quiescence with mTORC1 DOWN, a state 2D serum starvation cannot
+    reproduce. In cartilage, nothing. A logged Europe PMC sweep for G(Alert) with bone, cartilage or
+    chondrocyte returns 28 records and none is a growth plate measurement.
+  what_is_missing: Any staging of resting-zone chondrocytes into G0 against G(Alert) by the markers
+    rodgers2014 uses - cell size, mitochondrial content, phospho-S6 or phospho-4E-BP1, and time to first
+    division after isolation. Also missing - whether the fraction differs between Tanner stages, whether
+    it rises approaching fusion, and whether the interventions this atlas already has (hedgehog agonism,
+    mTORC1 activation, explanting) move cells into G(Alert) or through it.
+  nearest_evidence:
+  - rodgers2014
+  - newton2019
+  - trompet2024
+  - avijgan2026
+  - brun2022
+  nearest_evidence_note: newton2019 is the closest thing to a positive - Tsc1 ablation is a constitutive
+    mTORC1 lesion and its phenotype is a larger reserve with unchanged recruitment, which is the
+    signature of alerting without activation. It was never framed that way and carries no cell-cycle
+    staging beyond EdU.
+  discriminating_experiment: 'Take the human explant system that already exists (avijgan2026, chu2026) and
+    stage the resting zone at day 0 and across the culture time-course on the rodgers2014 panel - cell
+    size by forward scatter or morphometry, phospho-S6 and phospho-4E-BP1 by immunofluorescence, and time
+    to first division. Three outcomes discriminate. If phospho-S6 is already positive in a subset at day
+    0, part of the human reserve is alerted IN VIVO and pool counts have been over-reading available
+    reserve. If it turns on before the first division in culture, alerting is the release step and its
+    trigger is whatever the explant changed. If neither, the growth plate uses a different route and the
+    muscle framework should be dropped rather than carried. The cheap version needs no new tissue -
+    phospho-S6 immunostaining on the archived sections both groups already hold.'
+- gap_id: g_l2_what_is_the_second_signal_that_converts_an_alerted_pool_into_columns
+  layer: L2
+  type: known_unknown
+  tractability: 3
+  question: What signal converts an expanded or alerted resting-zone pool into extra proliferative columns
+    and therefore into length, and does any known agent supply it?
+  why_it_matters: 'THIS IS NOW THE BINDING CONSTRAINT ON THE ENTIRE RESERVE ROUTE, and round 201 is the
+    round that made it so. Three independent systems expand the resting pool and NONE of them raises
+    recruitment - newton2019 Tsc1 (recruitment explicitly unchanged), trompet2024 SAG (proliferation
+    unchanged), and the human explant (transcriptional reactivation with root identity destroyed and no
+    bone formed). Under the round-198 reserve model, adult height is reserve times terminal cell height -
+    but a reserve that cannot be drawn on is not reserve. Every pound spent on pool expansion is wasted
+    until this is answered, and the atlas has spent most of round 199 enumerating pool-expanding routes.'
+  what_is_known: newton2019, mouse - mTORC1 activation raises resting clone size, CD73 zone height and
+    EdU-positive stem cells and shifts PAR3 toward symmetric division, while 'neither proliferation of
+    chondroprogenitors nor their recruitment into the proliferative layer changed detectably', with the
+    resting zone DISORDERED and expressing no ColX and no Ihh. trompet2024, mouse - intra-articular SAG
+    raised resting Pthrp-positive cells 65.5 to 139.8 per square millimetre, n = 5, P = 0.017, entirely
+    within the resting zone and with no change in proliferation. chu2026, human - GH raises PROLIFERATIVE
+    zone EdU 3.14-fold, P = 0.013, in explant, which is a recruitment-adjacent effect in the compartment
+    downstream of the reserve. rodgers2014, mouse - G(Alert) cells enter the cycle when a second signal
+    arrives, but that paper's second signal is injury-driven regeneration, not column formation.
+  what_is_missing: Any intervention, in any species, that raises the NUMBER OF COLUMNS or cells per column
+    downstream of a deliberately expanded resting pool. Also missing - whether the second signal is a
+    distinct molecule at all, or whether column entry is set by physical space and matrix turnover at the
+    resting-proliferative border, in which case no signalling agent will supply it.
+  nearest_evidence:
+  - newton2019
+  - trompet2024
+  - chu2026
+  - hunziker1994
+  nearest_evidence_note: hunziker1994 is the METHOD entry, not evidence - it is the decomposition in which
+    a recruitment change would be visible as a change in pool consumption rate, and it is the readout every
+    pool-expansion paper omits.
+  discriminating_experiment: 'Combine a pool expander with each candidate second signal in the same mice
+    and read the Hunziker five - calcein elongation rate, terminal hypertrophic cell height, resting cells
+    per column, resting-zone cycle time by continuous label, and cells per column by zone. Pool expander -
+    Tsc1 ablation or intra-articular SAG, both established. Candidate second signals, in order of prior
+    plausibility - growth hormone (the only agent with a demonstrated human proliferative-zone effect),
+    CNP or vosoritide, and IGF-1. THE DECISIVE READOUT IS POOL CONSUMPTION RATE, not zone height, and the
+    decisive control is the pool expander alone, which is predicted to raise the reserve and leave
+    consumption flat. Anything that raises consumption WITHOUT shortening the reserve is the second
+    signal and the programme changes shape around it.'
