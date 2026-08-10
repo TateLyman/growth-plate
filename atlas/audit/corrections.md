@@ -7311,3 +7311,39 @@ same data disagree, and the atlas now carries the regulator's version alongside 
 **The rule this adds.** A length result reported in one sex only is not a length result until
 the other sex is checked, and a length result that travels with a body-weight change of the
 same order is a body-size observation until something separates them.
+
+---
+
+## CORR-192 — "rate versus yield" was the wrong frame; the currency is reserve
+
+**Written in round 198, on `weise2001`.**
+
+From round 183 onward this atlas has sorted agents by whether they buy *rate* or *yield*, and
+round 194 concluded that intermittent PTH1R agonism is "a rate agent, not a yield agent" because
+the rat gave the interim femoral gain back by terminal sacrifice. The framing was right about
+the data and wrong about why it matters.
+
+`weise2001`, in juvenile ovariectomised rabbits — a species that fuses — establishes that
+**epiphyseal fusion is triggered when the proliferative potential of growth plate chondrocytes
+is exhausted**, that fusion occurs *"when the rate of chondrocyte proliferation approached
+zero"*, and that oestrogen accelerates programmed senescence rather than ossifying the plate.
+
+Under that model, **adult height = reserve × terminal cell height**, not rate × time. A rate
+agent does not merely fail to add height — it brings fusion forward by as much as it raises
+growth. "Rate agent" is not a neutral category; it is a *cost* category.
+
+**Scope of the correction.** Round 194's factual claim about teriparatide survives intact and is
+now explained rather than merely observed. What changes is the ledger entry for **growth
+hormone**. Round 183 measured GH at 5.00× pool consumption, 1.36× terminal cell height and 0.77×
+amplification, and the atlas has carried that as "GH buys rate by spending the pool." Under a
+fixed reserve that is a net *loss* of adult height unless something replaces the reserve — and
+the stack contains GH.
+
+That is not a claim that GH reduces adult height in practice; the human GH-in-late-puberty
+literature is elsewhere in this atlas and is not null. It is a claim that **the mechanism by
+which GH is assumed to add height cannot be "more growth per unit time"**, and the reconciliation
+is now an open item rather than a settled one.
+
+**The rule this adds.** No agent may be scored as beneficial for adult height on a growth-rate or
+growth-velocity endpoint alone. The question to ask of every agent is what it does to the
+proliferative reserve and to terminal cell height. Velocity is a symptom, not the objective.
