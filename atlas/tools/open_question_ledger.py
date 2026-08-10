@@ -121,6 +121,49 @@ LEDGER = [
      "because no vascular account reaches the humerus from a tibial fracture.",
      "RETROSPECTIVE, free, needs a trauma cohort."),
 
+    ("g_l12_does_npr3_occupancy_preserve_the_vascular_gi_arm", 209,
+     "Does an OCCUPYING NPR-C ligand preserve the Gi arm an antagonist would block?",
+     "CLOSED round 211 - and the answer is NO",
+     "ANSWERED. smith2022, human NPR-C in HeLa - osteocrin at 100 nM is SILENT on "
+     "forskolin-stimulated cAMP and REVERSES the fall produced by the agonist cANF(4-23), "
+     "exactly as M372049 does; in rat aorta and mouse mesenteric artery it BLOCKS "
+     "cANF(4-23)-induced vasorelaxation. Osteocrin is a Gi-silent occupier. The general "
+     "form survives - cANF(4-23) IS an occupying ligand that engages Gi - but osteocrin "
+     "is not that molecule. CORR-204.",
+     "ALREADY IN THE BIBLIOGRAPHY SINCE 2026-08-08, UNREAD. CORR-205."),
+
+    ("g_l12_does_npr_c_couple_to_gi_in_growth_plate_chondrocytes", 211,
+     "Does NPR-C couple to Gi in a CHONDROCYTE, and would engaging it spend the reserve?",
+     "OPEN - and it is now the decisive question for this arm",
+     "Forskolin-stimulated cAMP in primary growth plate chondrocytes under cANF(4-23) "
+     "across a dose range, pertussis toxin as the Gi control, osteocrin as the silent "
+     "comparator. Then a bone length under cANF(4-23), which has decades of in vivo rodent "
+     "use and has never been given to a growing animal.",
+     "NEW BENCH WORK, one plate. The in vivo half needs animals but the compound is old."),
+
+    ("g_l12_what_happens_to_the_aortic_root_under_chronic_osteocrin", 211,
+     "Does an occupier dilate the aorta the way a null does?",
+     "OPEN - the only surviving vascular objection",
+     "Serial aortic root imaging under a dosed occupier. Three cardioprotection groups "
+     "already have banked tissue from osteocrin animals and measured the myocardium "
+     "instead of the vessel - THE CHEAP VERSION IS TO ASK THEM.",
+     "PARTLY RETROSPECTIVE - the tissue may exist at Hannover, Iowa and Boston."),
+
+    ("g_l12_does_hnpr3_delta_c_separate_the_height_from_the_aorta", 211,
+     "Does a Gi-dead but clearance-competent NPR3 mouse separate the two phenotypes?",
+     "OPEN - one animal answers both halves",
+     "Knock devotta2023's HNPR3-deltaC deletion into the mouse Npr3 locus; phenotype "
+     "against wild-type and null littermates on segment-resolved lengths and serial aortic "
+     "root imaging. Three genotypes, two readouts, and the compound spec falls out.",
+     "NEW ANIMAL WORK, but the construct and both phenotyping protocols are published."),
+
+    ("g_l12_is_osteocrin_silent_at_all_concentrations_or_a_partial_agonist", 211,
+     "Is osteocrin silent across its whole dose range, or only at 100 nM?",
+     "OPEN - and CORR-204 rests on the single point",
+     "A full concentration-response, 1 nM to 10 uM, on the same assay. Same plate as the "
+     "chondrocyte coupling question.",
+     "NEW BENCH WORK, trivial."),
+
     ("g_l1_raise_terminal_cell_volume", "pre-199",
      "Can terminal cell height be raised in a healthy plate?",
      "PREMISE OVERTURNED round 202, quantified round 208",
@@ -138,7 +181,7 @@ def rule(c="="):
 
 def main():
     rule()
-    print("OPEN-QUESTION LEDGER - everything this programme opened, rounds 199 to 208")
+    print("OPEN-QUESTION LEDGER - everything this programme opened, rounds 199 to 211")
     rule()
     print(f"\n    {len(LEDGER)} questions tracked\n")
 

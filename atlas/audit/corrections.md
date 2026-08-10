@@ -7665,3 +7665,65 @@ agents together and measured terminal hypertrophic cell height.**
 
 **The rule this adds.** Every ratio must carry its control's phenotype. A fold-change against a deficient
 animal predicts nothing about a replete one, and the two must never appear in the same range statement.
+
+---
+
+## CORR-204 — occupancy is not agonism, and osteocrin is on the wrong side of the line
+
+**Round 211.** Round 209's stated main contribution was a molecule-class distinction: an **antagonist**
+such as M372049 or `nishizawa2017` compound 23 silences *both* NPR-C functions — the cartilage clearance
+sink and the Gi-coupled arm through which CNP protects the aorta — whereas **an occupying natural ligand
+is a candidate to ACTIVATE the Gi arm rather than block it.** That claim was graded **E** and named as the
+central untested proposition of the round. The discriminating experiment was written as a one-week cAMP
+assay comparing occupancy against antagonism.
+
+**The experiment had been done.** `smith2022`, human NPR-C in HeLa cells, forskolin 10 µM:
+
+| molecule | conc | effect on forskolin-stimulated cAMP |
+|---|---|---|
+| cANF(4-23) | 100 nM | **clear decrease** — engages Gi |
+| compound 1 (bis-aminotriazine) | 100 µM | −37.67 % |
+| compound 17 | 100 µM | −31.43 % |
+| compound 41 | 100 µM | −9.16 % — binds but does not activate |
+| M372049 | 10 µM | **no effect on basal**; blocks the agonists |
+| **osteocrin** | **100 nM** | **no effect on basal; blocks the agonists** |
+
+And in organ baths, cANF(4-23)-induced vasorelaxation of **rat aorta** and small mesenteric artery is
+blocked by M372049 **and by osteocrin**.
+
+**Osteocrin is a Gi-silent occupier — the same functional class as the antagonist it was supposed to
+differ from.** The class distinction round 209 drew is real; osteocrin is on the other side of it. The
+classes are SILENT OCCUPIERS (osteocrin, M372049, compound 23, compound 41) against OCCUPYING AGONISTS
+(cANF(4-23), compounds 1 and 17), and the atlas did not know the second class existed.
+
+**Three consequences.**
+1. **The antagonists move UP, not down.** The only stated reason for preferring a 50-residue peptide over
+   a 12,600-fold-selective serum-stable small molecule has evaporated.
+2. **`scott2024` inverts.** Unchanged plasma cAMP under osteocrin infusion in sheep was read in round 209
+   as *suggestive of preserved Gi signalling*. It is the signature of a **Gi-silent ligand**.
+3. **A null is not an occupier.** Rounds 202 and 209 implicitly treated `weber2025`'s Npr3-**null**
+   phenotype as what an osteocrin dose would produce. A null removes clearance *and* Gi; osteocrin blocks
+   clearance, silences Gi **and raises the ligand**. The three NPR3-axis height observations agree only in
+   having Gi **off**.
+
+**The rule this adds.** A receptor knockout is not a model for ligand occupancy when the receptor has a
+signalling arm. Before a genetic phenotype is used to predict a drug's effect, state which arms the drug
+leaves intact and which the mutation removed — they are rarely the same set.
+
+---
+
+## CORR-205 — the atlas held the paper that refuted its own open question, unread, for two days
+
+**Round 211.** `smith2022` (PMC9014859, *J Med Chem*) was added to `sources/bibliography.yaml` on
+**2026-08-08** with `cited_by: 0` and was never opened. **Round 209 was written on 2026-08-10** and spent
+its main contribution constructing the hypothesis that paper refutes, then wrote a gap
+(`g_l12_does_npr3_occupancy_preserve_the_vascular_gi_arm`) specifying an experiment the held paper had
+already run.
+
+The user's standing instruction — *"remember to record every study you had better cause you loose them
+sometimes"* — was earned.
+
+**The rule this adds.** Before opening a gap whose discriminating experiment is a **standard in vitro
+assay**, grep the bibliography for the target, the tool compounds and the readout. A gap is only a gap
+after the held references have been checked. `addref.py` records `cited_by`; a T1 reference sitting at
+`cited_by: 0` on a live topic is a flag, not a neutral fact.

@@ -22181,3 +22181,129 @@ edges:
   - tyra300_2025
   confidence: speculative
   gap_id: g_l12_does_fgfr3_selectivity_preserve_growth_without_the_structural_failure
+- edge_id: e01421
+  source: round211_occupancy_does_not_preserve_the_gi_arm
+  target: npr3_clearance_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: OSTEOCRIN IS A Gi-SILENT OCCUPIER, NOT A Gi AGONIST, AND THIS REFUTES ROUND 209. In HeLa cells expressing functional
+    human NPR-C, cANF(4-23) at 100 nM lowers forskolin-stimulated cAMP and OSTEOCRIN AT 100 nM REVERSES THAT FALL exactly as
+    M372049 at 10 uM does, while osteocrin alone does NOT affect basal forskolin-induced cAMP. In organ baths, cANF(4-23)-induced
+    vasorelaxation of rat aorta and small mesenteric artery is blocked by M372049 AND BY OSTEOCRIN. On the Gi readout osteocrin
+    is in the SAME functional class as the antagonist round 209 said it would differ from
+  context: smith2022, a paper this atlas held from 2026-08-08 with cited_by 0 and never opened; osteocrin appears as a tool
+    compound rather than as the subject, at a single concentration, in a cell line that is neither chondrocyte nor aortic
+  evidence_tier: T1
+  refs:
+  - smith2022
+  confidence: C
+- edge_id: e01422
+  source: round211_occupancy_does_not_preserve_the_gi_arm
+  target: round209_the_additions_ranking_and_osteocrin_is_the_strongest
+  relation: correlates_with
+  sign: '-'
+  magnitude: THE CENTRAL PROPOSITION OF ROUND 209 IS REGRADED E TO X. Round 209 claimed an occupying natural ligand is a candidate
+    to ACTIVATE the Gi arm rather than block it, and that this is what distinguishes osteocrin from M372049 and nishizawa2017
+    compound 23. Osteocrin does neither - it silences the arm. THE CONSEQUENCE IS THAT THE ANTAGONISTS MOVE UP, NOT DOWN,
+    because the only stated reason for preferring the peptide over a 12,600-fold selective serum-stable small molecule has
+    evaporated. Round 209's reading of scott2024's unchanged plasma cAMP also inverts - it is the signature of a Gi-silent
+    ligand, not evidence of preserved signalling
+  context: recorded as CORR-204. The molecule-class distinction round 209 drew is real and useful; osteocrin is simply on the
+    other side of it
+  evidence_tier: T1
+  refs:
+  - smith2022
+  - scott2024
+  - nishizawa2017
+  confidence: C
+- edge_id: e01423
+  source: round211_occupancy_does_not_preserve_the_gi_arm
+  target: hypertrophic_chondrocyte
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: THE INVERSION. A true NPR-C AGONIST would occupy the clearance sink AND engage Gi, and Gi engagement LOWERS cAMP.
+    In chondrocytes cAMP is the PTHrP/PTH1R/Gs arm that holds cells proliferative and delays hypertrophy, and the human natural
+    experiment for lowering it - PDE3A gain-of-function, hypertension with brachydactyly type E - gives SHORTENED METACARPALS
+    AND SHORT STATURE attributed to accelerated chondrocyte maturation. AND EVERY NPR3-AXIS HEIGHT GAIN ON RECORD HAS THE Gi
+    ARM OFF - weber2025's nulls, the biallelic human patients, and kanai2017's OSTN transgenics. THERE IS ZERO SKELETAL DATA
+    WITH IT ON, so Gi-OFF may be a REQUIREMENT of the effect rather than a liability to engineer away
+  context: an inference, and graded as one. NPR-C Gi coupling has never been demonstrated in a chondrocyte in any species,
+    and the cAMP argument is borrowed from PTH1R biology
+  evidence_tier: T2
+  refs:
+  - smith2022
+  - maass2015
+  - weber2025
+  - kanai2017
+  - lauffer2022
+  confidence: speculative
+  gap_id: g_l12_does_npr_c_couple_to_gi_in_growth_plate_chondrocytes
+- edge_id: e01424
+  source: round211_occupancy_does_not_preserve_the_gi_arm
+  target: npr3_is_bifunctional_and_the_spec_was_backwards
+  relation: correlates_with
+  sign: unknown
+  magnitude: THE BIFUNCTIONALITY LIABILITY DOES NOT TRANSFER FROM A NULL TO AN OCCUPIER. A genetic null REMOVES THE RECEPTOR;
+    an occupier RAISES THE LIGAND. Three independent in vivo models find osteocrin cardioprotective through exactly that route
+    - szaroszyk2022, muscle Ostn knockout exaggerates and overexpression ATTENUATES pressure-overload cardiac dysfunction and
+    fibrosis via raised CNP abundance acting through PKA and PKG, with OSTN also reduced in human heart failure muscle; harris2023,
+    Ostn disruption ABOLISHES exercise cardioprotection with blunted cGMP and reduced nuclear PKGI; saw2025, exogenous musclin
+    potentiates natriuretic peptide signalling in skeletal muscle. NOT ONE OF THEM MEASURED AN AORTA
+  context: aubdool2025's lesion is structural dilatation of the ascending aorta at unchanged blood pressure; every osteocrin
+    cardiovascular endpoint on record is myocardial, skeletal-muscle or haemodynamic
+  evidence_tier: T1
+  refs:
+  - szaroszyk2022
+  - harris2023
+  - saw2025
+  - aubdool2025
+  confidence: C
+- edge_id: e01425
+  source: round211_occupancy_does_not_preserve_the_gi_arm
+  target: npr3_human_genetics_dose_response
+  relation: correlates_with
+  sign: unknown
+  magnitude: DOSING OSTEOCRIN WOULD BE ELEVATION, NOT RESTORATION, AND CORR-203 MAKES THAT THE HARDER CLAIM. schn2026 gives
+    the first continuous human reference values for serum musclin - 399 children aged 0.1-18 and 502 adults - and the LMS median
+    rises only from 3.762 ng/ml at birth to 4.267 at 8, 4.527 at 12, 4.792 at 16 and 4.924 at 18 years, a 1.31-fold rise across
+    the whole of growth, while height velocity over the same span falls by roughly an order of magnitude. ENDOGENOUS MUSCLIN
+    DOES NOT TRACK GROWTH RATE. Significantly associated with age but NOT with sex; oestrogen-containing oral contraceptives
+    lower it
+  context: ELISA against an unstated epitope in one German cohort pair, with no growth measurements reported alongside and
+    no growth plate concentrations in any species
+  evidence_tier: T1
+  refs:
+  - schn2026
+  confidence: B
+- edge_id: e01426
+  source: round211_occupancy_does_not_preserve_the_gi_arm
+  target: npr3_selectivity_computed_from_structure
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: A SEPARATION-OF-FUNCTION REAGENT EXISTS AND THE ATLAS DID NOT HAVE IT. devotta2023 built HNPR3-deltaC, human NPR3
+    truncated by the 34 C-terminal residues carrying the Gi activator sequence. In Xenopus it RESCUES the clearance-dependent
+    programme and FAILS to rescue the Gi-dependent one, confirmed independently by rescuing the latter with the adenylyl cyclase
+    inhibitor SQ22536. A RECEPTOR THAT CLEARS BUT CANNOT SIGNAL, knocked into a mouse, separates the height phenotype from the
+    aortic one in a single animal
+  context: characterised in frog embryonic ectoderm, never put into a mammal, and neither tissue is cartilage or vasculature
+  evidence_tier: T1
+  refs:
+  - devotta2023
+  confidence: speculative
+  gap_id: g_l12_does_hnpr3_delta_c_separate_the_height_from_the_aorta
+- edge_id: e01427
+  source: round211_occupancy_does_not_preserve_the_gi_arm
+  target: osteocrin_protein
+  relation: binds
+  sign: unknown
+  magnitude: OSTEOCRIN IS NOT AN NPR3-ONLY LIGAND. jin2023 - musclin binds TRANSFERRIN RECEPTOR 1 and ANTAGONISES Tfr1-mediated
+    cAMP/PKA-dependent thermogenic induction in beige adipocytes; muscle-transgenic or AAV overexpression attenuates beige fat
+    thermogenesis and exacerbates diet-induced obesity, while muscle-specific ablation or a neutralising antibody does the reverse.
+    A SECOND RECEPTOR, and again a cAMP/PKA-LOWERING direction, so chronic dosing carries a metabolic off-target the atlas had
+    not costed
+  context: male mice only, so CORR-191 applies to the phenotype - though the endpoint is metabolic rather than length, so the
+    length clause does not bite
+  evidence_tier: T1
+  refs:
+  - jin2023
+  confidence: C
