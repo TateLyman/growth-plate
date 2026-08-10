@@ -8717,3 +8717,44 @@ contain a cohort labelled "Pediatric Cohort" with serious epiphysiolysis in 1 of
 fracture in 2 of 11 children.** The atlas had cited RAGNAR before, for an ocular toxicity rate, **without
 ever opening its paediatric arm.** That is the own-files pattern once more, in its mildest form: the source
 was known, and only one column of it had ever been read.
+
+---
+
+## CORR-232 — the archive route I put a star next to does not exist, and the case series I never opened contained the number I said nobody had
+
+Three defects, one round, and they are the same defect at three depths.
+
+**One. Round 226 ended by recommending the NCTN Data Archive as ★ THE ONE THAT ACTUALLY HAS THE ANSWER —
+without checking whether APEC1621B is in it.** The public catalogue was downloaded this round: **27 trials,
+35,240 patients, and every single entry carries a PMID from which data are available.** Deposition follows
+full publication. APEC1621B has no full publication, so it is **not listed and cannot be requested.** The
+recommendation is withdrawn. I had read the archive's *purpose* and inferred its *contents*, which is the
+same move as reading a review and citing it as a source — and I had put a star on it.
+
+**Two. The five-case FDA series has been cited by this programme since CORR-046 and had never been read.**
+`nadeaunguyen2026` — the Office of Surveillance and Epidemiology's own evaluation — was fetched in full this
+round. The headline counts the atlas carried were right. The case-level detail was never seen, and it
+contained **9.8 cm over 6 months for FDA case 4**, who is `raimann2024` patient 1 — **the child CORR-226
+describes as having a velocity that is not quantified anywhere.** It was quantified, in a document already
+in the atlas's citation list. CORR-226's statement is superseded.
+
+**Three, and this is the one that changes a conclusion. Rounds 216 to 218 built a dose-response curve on the
+premise that more erdafitinib buys more growth, and the unspliced data is flat.** 5 mg reduced to 3 mg gave
+**19.6 cm/year**; 7 mg reduced to 5 mg gave **19.1 cm/year**. Roughly twofold in dose, three per cent in
+velocity. CORR-226 had already found the curve unidentifiable because its lower anchor spliced two patients;
+the anchor is now unspliced and what it shows is **no dose-response at all across 3 to 7 mg.**
+
+**The confound is stated and it does not rescue the premise.** Case 4 was **on growth hormone** and
+hypogonadotropic; case 3 was not, with normal GH and IGF-1 at Tanner 2-3. So the comparison is
+GH-plus-low-dose against erdafitinib-alone-at-higher-dose, and it reads two ways: either erdafitinib is flat
+in this range, or growth hormone supplied the missing two to four milligrams' worth. **This stack contains
+both agents, so both readings are actionable — and neither one says the way up is more erdafitinib.** Two
+children is not a dose-response study either way; what it will not bear is the assumption rounds 216 to 218
+made without it.
+
+**The rule.** CORR-215 and CORR-231 cover claims that arrive from outside. This adds the inverse: **a
+retrieval route may not be recommended until its index has been queried for the specific item.** "This
+archive holds trials of that kind" is an inference about contents; "this archive lists that trial" is a
+fact, and the two were not distinguished. The stronger form of the same rule is the one the atlas keeps
+relearning — **before hunting for a missing number, re-read the documents already in the bibliography.** The
+number closing round 228 was inside a reference the programme had been citing for dozens of rounds.

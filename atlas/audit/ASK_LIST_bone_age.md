@@ -1,5 +1,9 @@
 # EXACT DOWNLOAD LIST — the on-treatment bone age under an FGFR inhibitor
 
+**STATUS AS OF ROUND 228, 2026-08-10: THE QUESTION IS CLOSED BY EXHAUSTION AND THIS LIST IS SUPERSEDED.** Five independent routes were checked and all five are negative; item 3, the one this list starred, **does not work and the recommendation is withdrawn (CORR-232)**. Nothing below needs to be downloaded to answer the bone-age question, because the answer is that the
+measurement was never taken by anyone. The list is kept for the record and for item 5, which
+still bears on a different question. See the closure table at the foot of this file.
+
 Compiled round 226, 2026-08-10. Everything below was checked by this atlas first; each item says **what
 it should contain**, **why it is needed**, and **whether it will actually answer the question**. Items are
 ordered by expected yield.
@@ -29,9 +33,11 @@ ordered by expected yield.
   protocol-mandated safety imaging is reported there, not in the main text.
 - **Honest expectation: HIGH if it exists, and it may not.** Worth re-checking periodically rather than now.
 
-## 3. NCTN Data Archive — request the APEC1621B dataset ★ THE ONE THAT ACTUALLY HAS THE ANSWER
+## 3. ~~NCTN Data Archive — request the APEC1621B dataset ★ THE ONE THAT ACTUALLY HAS THE ANSWER~~ **STRUCK — CORR-232**
 
 - **URL:** https://nctn-data-archive.nci.nih.gov/
+- **WHY IT IS STRUCK, round 228:** the archive's **public catalogue was downloaded and read** — **27 trials, 35,240 patients, and every single entry carries a PMID from which data are available.** Deposition follows full publication. **APEC1621B has no full paper, is not listed, and therefore cannot be requested.** I recommended this route by inferring the archive's contents from its stated purpose, without querying its index for the specific trial. That is the defect CORR-232 records.
+- **What remains true:** the films exist, in the COG operational database. They would become retrievable if APEC1621B is published, or through a direct investigator request to the study chair — which is a different route from the one below, and is not something a download can accomplish.
 - **What to request:** study **APEC1621B / NCT03210714**, the imaging and case-report-form data
 - **What it should contain, and this is why it is item ★:** protocol §8.2 mandates a plain AP radiograph of
   a single **proximal tibial growth plate in ALL patients BEFORE the first dose**, then — in patients with
@@ -41,7 +47,7 @@ ordered by expected yield.
   programme's own dose.**
 - **How it works:** free, requires an account and a short data-use proposal; NCTN releases deposited trial
   data after primary publication. Turnaround is weeks, not days.
-- **Honest expectation: HIGHEST OF ANYTHING ON THIS LIST — with two real caveats.** (a) The films are
+- **Honest expectation when written: HIGHEST OF ANYTHING ON THIS LIST — with two real caveats.** **The expectation was wrong for a third reason neither caveat anticipated: the trial is not in the archive at all.** The caveats as written still stand for anyone who obtains the films by another route: (a) The films are
   **tibial**, and a conventional bone age is read from a **hand and wrist**, so a formal Greulich-Pyle
   reading may never have been performed even though the section is headed "Bone Age". (b) The protocol
   **exempts patients whose tibial plate is already closed at baseline**, and at a median age of 15 that
@@ -58,9 +64,7 @@ ordered by expected yield.
 - **What to look for:** the wording under **Warnings** and **8.4 Pediatric Use** for *accelerated growth*
   and any description of the **five paediatric cases** — specifically whether any bone age, growth velocity
   or physeal imaging is described, and what the ages and doses were.
-- **Honest expectation: MODERATE for context, LOW for a bone age.** Labels describe events, not
-  measurements. But the five-case series is the origin of this atlas's claim that "accelerated growth" is
-  labelled, and I have never read the primary wording.
+- **RESOLVED, round 228 — and the honest expectation was right about the bone age and wrong about the yield.** The label wording was read (CORR-231) and the five-case series was found in full: `nadeaunguyen2026`, the FDA Office of Surveillance and Epidemiology's own evaluation, PMID 41449965. **No bone age was assessed or reported in any of the five cases.** But the case-level detail carried something the atlas did not have — **9.8 cm over 6 months in case 4**, the child CORR-226 recorded as unquantified — which makes the human dose-response **flat** across 3 to 7 mg.
 
 ## 5. PROPEL2 / PROPEL3 clinical study reports or supplementary appendices
 
@@ -98,3 +102,26 @@ ordered by expected yield.
 would give it were taken by protocol, with a baseline, in twenty adolescents at 8 mg — and left in the COG
 database. **Item 3 is the request that would get them.** Everything else on this list is worth a few
 minutes; item 3 is worth an account and a proposal.
+
+---
+
+## ROUND 228 — THE CLOSURE TABLE
+
+| route | queried | result |
+|---|---|---|
+| trial registries — 5 paediatric FGFR-inhibitor trials, ClinicalTrials.gov v2 API | round 226 | **no bone-age or skeletal-maturation endpoint registered in any** |
+| APEC1621B, the one cohort that took protocol-mandated baseline and serial physeal films | round 226 | only output is ASCO abstract 10007; **not one word about the growth plate** |
+| **NCTN Data Archive** — public catalogue xlsx downloaded and read | round 228 | **27 trials, 35,240 patients, every entry carrying a PMID from which data are available; APEC1621B NOT LISTED.** Item 3 withdrawn, CORR-232 |
+| **The Cancer Imaging Archive** — 155 collections through the NBIA API | round 228 | **no Pediatric MATCH, no APEC1621, no COG FGFR collection** |
+| **FDA postmarketing evaluation** — `nadeaunguyen2026`, OSE, all five paediatric skeletal cases | round 228 | **NO BONE AGE ASSESSED OR REPORTED IN ANY OF THE FIVE** |
+| FAERS via openFDA — 552 erdafitinib reports | round 228 | adult-dominated; 1 epiphysiolysis, no growth measurements |
+| Drugs@FDA via openFDA — NDA 212018 | round 228 | **SUPPL-11, 17 Oct 2025, Labeling** identified as the supplement that added the paediatric skeletal language; its PDFs 404 from accessdata for this session |
+
+## THE ONE-LINE SUMMARY, REWRITTEN
+
+**The on-treatment bone age under an FGFR inhibitor was never measured by anybody — not by the treating
+teams, not by the case authors, not by the regulator reviewing every case.** Round 226's summary said the
+films were "left in the COG database" and that item 3 would get them; the films are still there, and item 3
+does not reach them. **The absence is now established rather than assumed, and that is the finding.** The
+live question reverts to round 227's — preserved reserve or arrested remodelling — which can be answered
+from data that already exists.
