@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/build-growth-source-packets.yml'
-      - 'tools/build_source_packs.py.gz.b64'
+      - 'tools/sourcepack_chunks/**'
   workflow_dispatch:
 
 permissions:
@@ -22,8 +22,9 @@ jobs:
       - name: Reconstruct builder
         shell: bash
         run: |
-          base64 -d tools/build_source_packs.py.gz.b64 | gzip -dc > tools/build_source_packs.py
+          cat tools/sourcepack_chunks/part* | base64 -d | gzip -dc > tools/build_source_packs.py
           python -m py_compile tools/build_source_packs.py
+          test "$(wc -c < tools/build_source_packs.py)" -eq 48875
 
       - name: Set up Python
         uses: actions/setup-python@v5
