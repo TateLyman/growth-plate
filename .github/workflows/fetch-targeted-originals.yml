@@ -6,7 +6,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/fetch-targeted-originals.yml'
-      - 'tools/targeted_v2_chunks/**'
+      - 'tools/targeted_v2.py.gz.b64'
 
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
       - name: Reconstruct corrected downloader
         shell: bash
         run: |
-          cat tools/targeted_v2_chunks/part* | base64 -d | gzip -dc > tools/fetch_targeted_originals.py
+          base64 -d tools/targeted_v2.py.gz.b64 | gzip -dc > tools/fetch_targeted_originals.py
           python -m py_compile tools/fetch_targeted_originals.py
           test "$(wc -c < tools/fetch_targeted_originals.py)" -eq 13581
       - uses: actions/setup-python@v5
