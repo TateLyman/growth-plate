@@ -14328,3 +14328,138 @@ gaps:
     the whole argument needs - the minimum effective concentration of each - and converts a thousandfold
     gap from an assertion into a measurement. IN PARALLEL, western blot human plasma against a validated
     beta-klotho antibody to establish whether the circulating species is an ectodomain at all.
+- gap_id: g_l3_is_beta_klotho_present_as_protein_in_the_human_growth_plate
+  question: Is beta-klotho present as PROTEIN in human growth plate chondrocytes, and in which zone - now
+    that the transcript is detected on the zone-resolved array in ten of ten samples after being declared
+    absent from droplet data?
+  type: known_unknown
+  layer: L3
+  tractability: 2
+  why_it_matters: BECAUSE IT DECIDES WHETHER AN ENTIRE CLASS OF ENDOCRINE FGF ARGUMENTS IS OPEN OR CLOSED
+    IN HUMANS, AND THIS ATLAS HAS ANSWERED IT BOTH WAYS ON TWO PLATFORMS. CORR-041 and CORR-042 closed
+    the FGF19/FGFR4 mechanism in human cartilage on droplet detection percentages; CORR-218 reopened it
+    because CORR-114 disqualifies that platform for this transcript class and the zone-resolved array detects
+    KLB in every compartment of both donors. WITH KLB PRESENT, BOTH FGFR4 ARMS MAY OPERATE IN HUMAN CARTILAGE
+    - the growth-RESTRAINING FGF19/KLB/Wnt arm of fgf19cart2025 and the growth-PROMOTING FGF18/autophagy/Col2
+    arm of cinque2015 - and FGFR4's NET direction becomes unresolved rather than settled. That directly
+    governs whether erdafitinib's FGFR4 coverage is a cost, a benefit or neither, which is a question this
+    atlas has now answered in three different directions across CORR-040, CORR-041 and CORR-218. It also
+    governs the withdrawn FGF21 circuit, since FGF21 needs the same co-receptor and is itself detected
+    on the array at 40 to 416.
+  what_is_known: 'TRANSCRIPT ONLY, ON TWO PLATFORMS THAT DISAGREE, AND ONE OF THEM IS DISQUALIFIED FOR THE
+    PURPOSE. Droplet scRNA-seq (GSE288028, four fresh human biopsies, chondrocyte-gated): KLB at 1.00, 2.50,
+    0.20 and 0.00 per cent of cells - but PTHLH sits at 0.43-1.40 and GDF5 at 0.20-0.34 on the same platform,
+    which CORR-114 established makes absence uninterpretable for this class. Zone-resolved microarray (GSE9160,
+    two normal children, five compartments each, MAS5 linear, trimmed mean 100): KLB probe 244276_at runs
+    180-847 across all ten samples and 235708_at 23-339, against an NPPC floor of 4-20 and calibrators PTHLH
+    7-309 and GDF5 31-604. FGF19 runs 21-228 and FGF21 40-416. wu2012 reports Klb, Fgfr1 and Fgfr3 transcripts
+    in MOUSE growth plate chondrocytes. NO PROTEIN MEASUREMENT EXISTS IN ANY SPECIES FOR GROWTH PLATE KLB.'
+  what_is_missing: Immunohistochemistry or immunofluorescence for beta-klotho on human growth plate sections
+    with a validated antibody and a KLB-positive tissue (liver, adipose) as positive control and a KLB-negative
+    tissue as negative control, zone-resolved. Failing that, any protein-level method - targeted mass spectrometry
+    on microdissected zones would answer it and would answer several other unresolved abundance questions
+    in the same run.
+  nearest_evidence:
+  - gse9160
+  - gse288028
+  - wu2012
+  - fgf19cart2025
+  nearest_evidence_note: Two human transcript platforms that disagree, one mouse transcript report, and
+    one mouse functional experiment that had to ADD recombinant KLB to see an effect - which is itself weak
+    evidence that endogenous cartilage KLB is limiting.
+  discriminating_experiment: THE CHEAPEST DECISIVE STEP IS A FUNCTIONAL ONE RATHER THAN A STAINING ONE.
+    Take human growth plate chondrocytes, treat with FGF19 across a concentration range spanning the physiological
+    0.1-1 ng/mL up to the 200 ng/mL fgf19cart2025 used, WITHOUT added KLB, and read phospho-ERK and the
+    Wnt antagonists SFRP1, WIF1 and DKK2. IF THE CELLS RESPOND WITHOUT ADDED CO-RECEPTOR, endogenous KLB
+    is functionally sufficient and the mechanism is live in humans at whatever concentration the response
+    starts; IF THEY DO NOT, the transcript is present but functionally irrelevant and CORR-041's conclusion
+    survives its own broken premise. The same plate answers the concentration question CORR-218 left standing.
+- gap_id: g_l12_is_there_a_cell_level_decomposition_for_navepegritide
+  question: Has any study decomposed navepegritide's growth effect into cells per column, terminal cell height
+    and matrix - the way wendt2015 did for vosoritide in cynomolgus monkeys - and if so does it also spend
+    the proliferative reserve?
+  type: quantitative_gap
+  layer: L12
+  tractability: 2
+  why_it_matters: BECAUSE THE TWO APPROVED CNP DRUGS ARE BEING TREATED AS INTERCHANGEABLE ON AN ENDPOINT
+    THAT CANNOT SEE THE DIFFERENCE THAT MATTERS. Round 198 fixed adult height as RESERVE times TERMINAL
+    CELL HEIGHT rather than rate times time, and round 204 decomposed vosoritide in a primate and found
+    PROLIFERATING CELLS PER COLUMN FALLING 13 to 11 with the 1.54-fold growth gain forced onto a residual
+    near 1.6-fold that sits on POOL CONSUMPTION - vosoritide spends the reserve. A one-year annualised growth
+    velocity of 1.49 against 1.57 cm/year tells you nothing about whether the two drugs buy their velocity
+    the same way, and at BONE AGE 16 THE RESERVE IS THE BINDING CONSTRAINT, so a drug that converts reserve
+    into velocity faster could produce MORE growth this year and LESS adult height. IF THE TWO DRUGS
+    DECOMPOSE DIFFERENTLY, the choice between them stops being a schedule and becomes the most consequential
+    decision on this axis. IF THEY DECOMPOSE IDENTICALLY, the ligand arm is confirmed a commodity and the
+    only way past it is the clearance arm.
+  what_is_known: 'ONE DRUG DECOMPOSED, THE OTHER NOT AT ALL. wendt2015 - cynomolgus monkey, six months,
+    n = 4 per group, high dose 8.25 nmol/kg/day, ANOVA with Tukey - reports in the SAME animals: longitudinal
+    growth rate 26 to 40 um/day (P<0.05), growth plate thickness 555 to 682 (P<0.05), proliferating zone
+    125 to 196 (P<0.001), hypertrophic zone 72 to 128 (P<0.05), proliferating cells per column 13 to 11
+    (not significant) and hypertrophic cell projected AREA 232 to 286 (not significant). No equivalent
+    exists in the public record for TransCon CNP in any species. The preclinical TransCon CNP work reports
+    bone length, growth plate morphology and exposure, not a per-term decomposition. AND THE SPONSORS HAVE
+    THE TISSUE - both programmes ran cynomolgus toxicology with growth plate histology.'
+  what_is_missing: The cells-per-column count and a terminal cell HEIGHT measured in the axis of elongation,
+    in navepegritide-treated animals, ideally in the same design wendt2015 used so the two are comparable.
+    Failing an original study, the existing primate histology slides from the TransCon CNP toxicology package
+    would answer it by re-reading rather than by new animals.
+  nearest_evidence:
+  - wendt2015
+  - savarirayan2026
+  - weber2025
+  nearest_evidence_note: wendt2015 is the only decomposition of any CNP-axis agent in a primate; weber2025
+    is the only cell-height measurement anywhere on the axis and it is the CLEARANCE arm, not this one.
+  discriminating_experiment: RE-READ EXISTING SLIDES BEFORE RUNNING ANYTHING. The TransCon CNP primate
+    toxicology package contains growth plate histology; counting cells per column and measuring terminal
+    hypertrophic cell HEIGHT (not projected area, per CORR-190) on those sections answers the question with
+    no new animals. IF A NEW STUDY IS NEEDED, it is wendt2015's design run head to head - vehicle, vosoritide
+    at its clinical exposure, navepegritide at its clinical exposure - with the Hunziker terms as the primary
+    readout and growth rate as secondary, which is the inversion of how every trial on this axis has been
+    designed.
+- gap_id: g_l12_does_an_npr3_blocker_raise_bone_length_in_any_animal
+  question: Does a pharmacological NPR3 blocker - not a genetic null, not a transgene - increase bone length
+    in any animal, and does it do so by raising terminal cell height rather than by spending divisions?
+  type: known_unknown
+  layer: L12
+  tractability: 1
+  why_it_matters: IT IS THE SINGLE GATE BETWEEN THE ONLY DIFFERENTIATED ARM ON THIS AXIS AND THE STACK,
+    AND NOBODY HAS OPENED IT IN ANY SPECIES. Everything favourable about the clearance arm comes from genetics
+    - weber2025's Npr3-null mice for the 20 per cent rise in maximum hypertrophic cell height in the axis
+    of elongation and the disproportionate tail vertebral elongation, kanai2017's OSTN transgenics for the
+    additivity on top of raised CNP, and lauffer2022 and boudin2018's biallelic human patients for the
+    monotonic allele series up to +3.03 to +4.76 SDS. NOT ONE OF THOSE IS A DRUG. And the two candidate
+    molecules are fully characterised - nishizawa2017 compound 23 at 0.079 nM binding IC50 on human NPR3
+    against more than 1000 nM at NPR1, 92 per cent serum-stable at four hours, and M372049 at 887 daltons
+    with a published synthesis. THE COMPOUNDS EXIST, THE GENETICS SUPPORTS THE TARGET, AND THE ONE-MONTH
+    EXPERIMENT THAT CONNECTS THEM HAS NEVER BEEN RUN. Until it is, the arm this atlas most wants to add is
+    supported entirely by lesions that remove a receptor from conception, which is exactly the germline-to-pharmacology
+    substitution CORR-046 retracted an argument for making.
+  what_is_known: 'THE TARGET, THE MOLECULES AND THE GENETICS ARE ALL IN PLACE AND NOTHING CONNECTS THEM.
+    Target - the human growth plate expresses NPR3 (up to 979 on the zone-resolved array, against an NPPC
+    floor of 4 to 20) while making no CNP of its own, so it is a consumer whose local ligand concentration
+    is set by delivery minus local destruction. Genetics - Npr3 loss raises maximum hypertrophic cell height
+    about 20 per cent and elongates proximal and mid-tail vertebrae disproportionately; OSTN transgenics
+    add bone length over elevated CNP alone, abolished in CNP-depleted or NPR-C-depleted backgrounds.
+    Molecules - two, characterised, selective and serum-stable. Pharmacology in vivo - scott2024 infused
+    ovine proOSTN into eight conscious sheep and confirmed clearance blockade in a large animal, with plasma
+    ANP, BNP and CNP all rising dose-dependently with cGMP, but measured NO BONE. Round 209 also established
+    the vascular counter-consideration and round 211 resolved which molecule class it applies to.'
+  what_is_missing: One four-week dosing study in a growing wild-type animal, with bone length as the primary
+    endpoint and the Hunziker terms as secondary. That study does not exist for any NPR3-directed compound
+    in any species, for growth, ever.
+  nearest_evidence:
+  - weber2025
+  - kanai2017
+  - nishizawa2017
+  - scott2024
+  nearest_evidence_note: weber2025 and kanai2017 supply the genetics with no drug; nishizawa2017 supplies
+    the drug with no bone; scott2024 supplies in vivo clearance blockade in a large animal with no bone.
+  discriminating_experiment: GROWING WILD-TYPE MICE, FOUR WEEKS, nishizawa2017 compound 23 against vehicle
+    at an exposure that maintains the plasma cGMP rise scott2024 demonstrated, with tibia, femur AND TAIL
+    VERTEBRAE measured - the tail because weber2025's site profile is the clearance arm's distinctive claim
+    and vosoritide's is not. Secondary readouts are cells per column and terminal hypertrophic cell HEIGHT
+    in the axis of elongation, which is what makes it comparable to weber2025 and to wendt2015. ADD A THIRD
+    ARM WITH A CNP ANALOGUE AND A FOURTH WITH BOTH, and the same experiment also tests kanai2017's additivity
+    pharmacologically for the first time - which is the 2x2 this atlas has specified and never had a molecule
+    for.

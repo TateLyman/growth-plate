@@ -8156,3 +8156,134 @@ written, not after. Four approaches in a programme where the user has already ca
 a sign that the ledger is intuitively compelling and empirically unsupported — which is exactly the
 combination that needs a hard procedural stop rather than another judgement call. The stop is now written
 into the round-219 tool as section 5b, so the next person to run it hits it before the table's implication.
+
+---
+
+## CORR-218 — beta-klotho is NOT absent from the human growth plate, and I said it was in a round I committed the same day
+
+**Round 219, committed hours ago, rests its first and loudest ground on CORR-041 and CORR-042: that
+β-klotho and FGF19 are absent from human growth plate chondrocytes, so the endocrine FGF19 route is
+"closed from both ends."** Both of those corrections read the number off **droplet scRNA-seq detection
+percentages** in GSE288028 — KLB at 1.00 / 2.50 / 0.20 / 0.00 % of chondrocyte-gated cells.
+
+**CORR-114, written later in this same programme, disqualifies that platform for exactly this class of
+transcript.** Droplet dropout puts **PTHLH at 0.43–1.40 %** and **GDF5 at 0.20–0.34 %** of cells — the
+canonical growth-plate paracrine regulator and a known essential secreted factor — **at the same floor as
+NPPC**. KLB's droplet numbers sit inside that band. They were never interpretable.
+
+**Read on the platform this atlas itself chose to settle the NPPC question, KLB is detected in ten of ten
+samples.** GSE9160, laser-capture microdissected, zone-resolved, no dropout, two normal children, five
+compartments each, MAS5 linear with a trimmed mean of 100:
+
+| gene | probe set | range across 10 samples |
+|---|---|---|
+| **KLB** | `244276_at` | **180 – 847** (never below 180) |
+| **KLB** | `235708_at` | 23 – 339 |
+| FGF19 | `223761_at` | 21 – 228 |
+| *calibrator* PTHLH | 3 probe sets | 7 – 309 |
+| *calibrator* GDF5 | `206614_at` | 31 – 604 |
+| *floor* NPPC | `221348_at` | **4 – 20** |
+
+**KLB sits squarely inside the atlas's own low-abundance calibrator band and 10- to 40-fold above the NPPC
+floor, in every compartment of both donors, on both probe sets.** The absence claim does not survive.
+
+**What this does to round 219, stated precisely.** The round gave four grounds for the FGF19 loop not
+being a lever.
+
+- **Ground one — ligand and co-receptor absent — FALLS.** Both are detected.
+- **Ground three — the trans-klotho loophole — becomes moot.** The tissue has its own.
+- **Ground two — the ~1000-fold concentration gap — STANDS,** and is untouched by this. 200 ng/mL of
+  FGF19 versus a 115–221 pg/mL human median is not a platform artefact.
+- **The occupancy point — erdafitinib already removes 5–20 % of FGFR4 — STANDS.**
+
+**So the conclusion survives and its two strongest-sounding supports do not.** The loop is still not worth
+adding an agent for, but the reason is arithmetic, not anatomy.
+
+**And it reopens something round 219 declared settled in the other direction.** Round 219 said the
+operative FGFR4 signal in human cartilage must be the growth-**promoting** one (FGF18/autophagy) because
+the growth-**restraining** one (FGF19/KLB/Wnt) had no co-receptor. **With KLB present, both may operate,
+and FGFR4's net direction in human cartilage is UNRESOLVED rather than settled either way.** That is a
+weaker and more honest position than either CORR-040's or CORR-041's, and it is the one the evidence
+supports. It changes nothing about CORR-046 and CORR-217: the ledger stays retracted, because an
+unresolved direction is even less convertible into centimetres than a resolved one.
+
+**What must not be over-read.** Microarray signal is not protein. Two donors are two donors. `244276_at`
+comes from the EST-derived extension of HG-U133 Plus 2.0 rather than the well-annotated core, so its
+specificity is less established than a core probe set — though the second KLB probe agrees in direction
+and both exceed the floor. **The defensible statement is that ABSENCE IS REFUTED, not that presence at
+functionally meaningful protein levels is established.**
+
+**The rule this adds, and it is the third platform-discipline rule in this atlas.** CORR-114 said droplet
+absence is uninterpretable for this transcript class. It was written after CORR-041 and CORR-042 and
+**nobody went back to re-run the claims that CORR-114 had just invalidated.** A correction that
+invalidates a *method* must be applied backwards to every claim that used it — which is a search, not a
+memory — and the search is cheap: grep the corrections log and the nodes for the platform name. Doing
+that once, when CORR-114 was written, would have caught this two rounds and one whole argument ago.
+
+**Two things this same extraction confirms rather than overturns, and they are worth recording because a
+correction round should report both directions.** On GSE9160, **ECE1 (up to 2495) and IDE (up to 1847)
+both out-transcribe MME (up to 1062)** — which is exactly what `every_drug_on_the_cnp_axis` concluded from
+the droplet data, so the neprilysin write-off is confirmed on the better platform rather than reversed.
+And **MME is strongly donor-dependent** — 18–160 across all five compartments of donor 1 against 200–1062
+in donor 2 — so the atlas's habit of quoting the maximum overstated it, and neprilysin abundance in the
+human plate is a variable, not a constant.
+
+---
+
+## CORR-219 — "osteocrin or vosoritide" was answerable only by rejecting the question, and the atlas had let the framing stand for eleven rounds
+
+Round 209 put **osteocrin at the top of the additions ranking**. Round 211 confirmed it "stays the
+top-ranked addition and is now better sourced." Neither round said plainly what round 220 had to say
+first: **osteocrin is not an alternative to a CNP analogue, and it cannot be given to anyone.**
+
+**They act at different control points.** Vosoritide supplies ligand; osteocrin stops ligand being
+cleared. `kanai2017` — the single experiment that put osteocrin at the top of the ranking — is a
+**CNP × OSTN double transgenic showing additional bone length OVER elevated CNP alone**. Its entire claim
+is *additivity on top of* a raised ligand. Read correctly it was never a candidate to replace the ligand
+drug, and the two rounds that ranked it never wrote that sentence.
+
+**And it is not administrable.** No human has received osteocrin for any indication, ever. No dose, no
+pharmacokinetics, no safety data, no route, no regulatory path, and no source this programme has accepted.
+Round 211 additionally removed the reason it was preferred over the small molecules — it is a **Gi-silent
+occupier** in the same functional class as `M372049` and `nishizawa2017` compound 23 — so on every
+remaining axis a 12,600-fold selective serum-stable small molecule beats a 50-residue peptide.
+
+**What the ranking should have said, and now does.** The **clearance arm** is the strongest addition on
+this axis. **Osteocrin is the evidence that the arm is additive, not the agent for it.** Those are
+different claims and collapsing them made an unavailable peptide look like a decision.
+
+**The rule this adds.** A ranking of *additions* must state, for each entry, **the agent, the control
+point, and whether the agent has ever been given to a human** — as three separate fields. Round 209's
+ranking had criteria for mechanism, site, additivity and reserve, and **no criterion for whether the thing
+could be administered at all**, which is how a peptide with zero human exposure held the top slot for
+eleven rounds.
+
+---
+
+## CORR-220 — the atlas quoted the maximum of a donor-variable transcript as if it were a level
+
+`the_plate_consumes_cnp_it_does_not_make_it` records **"MME — neprilysin — reaches 1062"** in the human
+growth plate, alongside NPR2 at 1262 and NPR3 at 979, and that trio has been read since as *the plate
+carries the receptor and two comparable destruction routes*.
+
+Re-extracting GSE9160 probe-set by probe-set shows **MME is not a level, it is a donor difference**:
+
+| donor | MME range across all five compartments |
+|---|---|
+| d1 (F, 11y10m) | **18 – 160** |
+| d2 (M, 13y3m) | **200 – 1062** |
+
+Both probe sets agree *within* donor. So 1062 is one compartment of one child, and the honest statement is
+that **neprilysin abundance in the human growth plate varies by roughly an order of magnitude between two
+normal donors** — which is itself the more interesting fact, and which the maximum concealed.
+
+**This does not change the neprilysin verdict; it strengthens the basis for it.** `ECE1` (up to 2495) and
+`IDE` (up to 1847) out-transcribe MME on the same arrays, confirming on the zone-resolved platform what
+`every_drug_on_the_cnp_axis` had concluded from droplet data that CORR-114 disqualifies. The write-off
+survives and is now supported by admissible data.
+
+**The rule this adds.** When a panel is summarised by the maximum across probe sets and samples, the
+per-donor and per-probe values must be printed too, because a maximum hides exactly the two failure modes
+that matter — a single cross-hybridising probe carrying a gene, and a single donor carrying a level. The
+extractor written this round (`atlas/tools/gse9160_panel.py`) prints every probe set for every donor for
+this reason, and prints the calibrator band on every run so a value can be *placed* rather than asserted.
