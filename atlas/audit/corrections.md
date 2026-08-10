@@ -8287,3 +8287,70 @@ per-donor and per-probe values must be printed too, because a maximum hides exac
 that matter — a single cross-hybridising probe carrying a gene, and a single donor carrying a level. The
 extractor written this round (`atlas/tools/gse9160_panel.py`) prints every probe set for every donor for
 this reason, and prints the calibrator band on every run so a value can be *placed* rather than asserted.
+
+---
+
+## CORR-221 — I inferred that two drugs were equivalent from their peptide architecture instead of searching for the head-to-head, and the head-to-head exists
+
+Round 220 concluded that navepegritide and vosoritide are **"pharmacologically interchangeable"**, that
+**"the choice between them is a schedule"**, and — in terms — that **"I looked for a pharmacological reason
+to prefer one and did not find one."**
+
+**How I "looked" was the error.** I compared the two peptides' N-terminal extensions — vosoritide is CNP-39
+(17-residue proCNP extension on CNP-22), navepegritide releases CNP-38 (16-residue extension) — observed
+that these are the same architectural solution to the same neprilysin problem, and inferred equivalence.
+**I did not search for a study that compared them.** One exists, it is in cynomolgus monkey, and it
+separates them.
+
+`breinholt2019`, 26-week juvenile cynomolgus, n = 4 per group, TransCon CNP **100 µg CNP/kg/week** against
+a daily CNP-39 molecule the authors state has **the same amino acid sequence as vosoritide** at **20 µg
+CNP/kg/day**:
+
+| endpoint | TransCon CNP | daily CNP-39 |
+|---|---|---|
+| body length | **+5 %** | +3 % |
+| **tail length** | **+9 %** | +3 % |
+| tibia length | **+6 %** | +3 % |
+| ulna length | +3 % | no meaningful change |
+| proliferative zone width | **+37 %** * | +16 % * |
+| hypertrophic zone width | +38 % * | +39 % * |
+| epiphyseal plate thickness | **+16 %** * | +7 % (n.s.) |
+
+\* P ≤ 0.05 vs control. Neither arm changed growth plate closure at any site.
+
+**And the dosing runs against the winner.** The daily arm received **140 µg CNP/kg/week** against
+TransCon's **100**. The weekly prodrug won on **71 % of the weekly peptide dose**.
+
+**The mouse arm of the same paper is the cleanest schedule experiment that can be run**: 3-week-old FVB
+males, n = 9, CNP-38 at **203 µg/kg/day for five weeks**, delivered as a daily bolus or by continuous
+osmotic-pump infusion. **Same molecule, same daily dose, only continuity differs — and continuous produced
+significantly more growth**, tested directly against the bolus arm.
+
+**Two further errors follow from the first.**
+
+**A null-is-not-equivalence error.** I read APPROACH's 1.49 cm/year against vosoritide's ~1.57 as a "wash."
+APPROACH's interval is **1.05 to 1.93 — 1.84-fold end to end**, from a different trial in a different
+cohort with a different baseline, neither reporting adult height. A 1.7- to 3-fold separation is entirely
+compatible with those numbers. **The trials do not distinguish the drugs; that is not the same as the drugs
+being equivalent**, and where the trials are silent the controlled preclinical comparison is the better
+evidence, not the worse.
+
+**And I used a correct fact to argue a wrong conclusion.** I noted that the 90-hour half-life of released
+CNP-38 is release-rate-limited flip-flop kinetics from the carrier rather than a property of the peptide.
+That is true. I then used it to argue that once released both peptides face the same clearance, therefore
+equivalence. **The carrier's release rate is not a caveat on the pharmacology — it is the pharmacology**,
+and the paper measures its consequences: CNP-39 half-life **20 minutes** with exposure only to 2 h, against
+**≥7 days** for TransCon at a Cmax roughly **100-fold lower** — and at equivalent doses the short-lived
+molecules **lowered blood pressure and/or raised heart rate** while TransCon did not at any exposure tested.
+
+**The rule this adds.** *Absence of a difference that I reasoned my way to is not evidence of equivalence.*
+Before concluding two agents are interchangeable, run the search for a direct comparison and say whether
+one was found. If none exists, the claim is "no head-to-head exists," never "they are interchangeable." And
+when two point estimates from different trials are being compared, state the width of the interval before
+calling anything a wash — the interval here was wide enough to hide the entire effect.
+
+**What survives from round 220 unchanged.** Osteocrin is not administrable and was never an alternative to
+a ligand drug (CORR-219). The clearance arm remains the differentiated one with no molecule. The human
+tissue architecture — no NPPC made, receptor and sink both carried, ECE1 and IDE out-transcribing MME — is
+unaffected. **And the term assignment is still unmeasured for the drug that wins**, which makes
+`g_l12_is_there_a_cell_level_decomposition_for_navepegritide` more urgent rather than less.
