@@ -1,0 +1,85 @@
+name: Build complete growth source packets
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-growth-source-packets.yml'
+      - 'tools/sourcepack_chunks/**'
+      - 'tools/sourcepack_v2.patch.gz.b64'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-source-packets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@v4
+
+      - name: Reconstruct and patch builder
+        shell: bash
+        run: |
+          cat tools/sourcepack_chunks/part* | base64 -d | gzip -dc > tools/build_source_packs.py
+          test "$(wc -c < tools/build_source_packs.py)" -eq 48875
+          base64 -d tools/sourcepack_v2.patch.gz.b64 | gzip -dc > /tmp/sourcepack_v2.patch
+          patch tools/build_source_packs.py /tmp/sourcepack_v2.patch
+          test "$(wc -c < tools/build_source_packs.py)" -eq 50852
+          python -m py_compile tools/build_source_packs.py
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python and browser dependencies
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests beautifulsoup4 lxml pymupdf pillow reportlab playwright weasyprint openpyxl
+          python -m playwright install --with-deps chromium
+
+      - name: Download every public original and build five compact PDFs
+        shell: bash
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: python tools/build_source_packs.py
+
+      - name: Validate expected deliverables
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          out = Path('build/growth_packets/final')
+          pdfs = sorted(out.glob('*FULL_ORIGINALS_8up.pdf'))
+          assert len(pdfs) == 5, [p.name for p in pdfs]
+          for p in pdfs:
+              assert p.stat().st_size > 1000, p
+              d = fitz.open(p)
+              assert d.page_count > 0, p
+              print(p.name, d.page_count, p.stat().st_size)
+          z = out / 'ALL_ORIGINAL_FILES_AND_RAW_DATA.zip'
+          assert z.exists() and z.stat().st_size > 1000
+          PY
+
+      - name: Inventory output
+        if: always()
+        shell: bash
+        run: |
+          find build/growth_packets -maxdepth 3 -type f -printf '%p\t%s bytes\n' | sort || true
+
+      - name: Upload five PDFs and complete originals archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: growth-source-packets
+          path: |
+            build/growth_packets/final/**
+            build/growth_packets/logs/**
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
