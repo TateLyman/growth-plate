@@ -6,7 +6,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/fetch-targeted-originals.yml'
-      - 'tools/fetch_targeted_originals.py'
+      - 'tools/targeted_v2_chunks/**'
 
 permissions:
   contents: read
@@ -17,6 +17,12 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+      - name: Reconstruct corrected downloader
+        shell: bash
+        run: |
+          cat tools/targeted_v2_chunks/part* | base64 -d | gzip -dc > tools/fetch_targeted_originals.py
+          python -m py_compile tools/fetch_targeted_originals.py
+          test "$(wc -c < tools/fetch_targeted_originals.py)" -eq 13581
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -29,7 +35,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: targeted-public-originals
+          name: targeted-public-originals-v2
           path: |
             build/targeted_originals/**
             build/targeted_originals.zip
