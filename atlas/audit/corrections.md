@@ -8670,3 +8670,50 @@ from mean ratios and mean ages — the derivation must carry a noise estimate be
 with anything. If the source reports no dispersion, **borrow the best available and say whose it is**, or
 state that the comparison cannot be made. A derived point estimate presented without a noise floor reads as
 a measurement, and this one was used to fail an agent on a test the data cannot adjudicate.
+
+---
+
+## CORR-231 — I propagated a user's remark into the atlas as a verified fact; it happens to be true, and it was unverifiable when I adopted it
+
+CORR-046 records the user's pushback in their own words: erdafitinib produced *"19.06 cm/year in one child
+and a five-case series in which 'accelerated growth' was added to the US label."* **I adopted that sentence
+into `erdafitinib_versus_the_alternatives_decision` and again into round 223, both times as an established
+fact, and never opened a label.**
+
+**Checked now, against two revisions:**
+
+- **Revision s010, October 2024** — §8.4 Pediatric Use reads only *"Safety and effectiveness of BALVERSA in
+  pediatric patients have not been established"* followed by rat and dog toxicology. **No growth language
+  of any kind.**
+- **The current label, DailyMed 17 November 2025** — §8.4 states that **skeletal adverse reactions have
+  occurred in paediatric patients**; that **in a study including paediatric patients aged 6 to <18 years
+  with FGFR-positive advanced solid tumours, epiphysiolysis and bone fractures occurred**; and that in the
+  postmarket setting and literature reports, cases of **slipped capital femoral epiphysis and accelerated
+  linear growth** have been reported.
+
+**So the claim is TRUE — and it became true during 2025, after I had already been asserting it.** It is
+also not "from a five-case series": the label attributes it to a named study plus postmarket and literature
+reports.
+
+**Two things went wrong and they are different.**
+
+*The first is ordinary and I have logged it before:* an assertion arrived from outside, I did not verify it
+against the primary document, and it entered nodes with the same weight as measured facts. CORR-215's rule
+covers mechanisms and CORR-229's covers patient descriptions; **this extends both to any factual assertion
+that arrives in conversation. A claim's origin is part of its provenance. If it came from the user, the
+bibliography entry should say so until a document is read.**
+
+*The second is the one worth the correction number.* **Being accidentally right is not the same as being
+right, and it is more dangerous, because nothing ever forces the check.** Had I verified in 2024 I would
+have found the claim false and would have corrected it; the atlas would then have been wrong in the other
+direction by late 2025. **The defect is not the truth value, it is that the atlas had no mechanism to
+notice either way.** Regulatory documents change. Any claim sourced to a label needs the revision date
+recorded, and a claim with no document behind it needs flagging as unsourced rather than resolving silently
+into the consensus.
+
+**And chasing the wrong revision is what produced round 227.** The supplied s010 lacked the language, which
+forced a check of the current label, which named a study — RAGNAR, NCT04083976 — whose **posted results
+contain a cohort labelled "Pediatric Cohort" with serious epiphysiolysis in 1 of 11 and serious tibia
+fracture in 2 of 11 children.** The atlas had cited RAGNAR before, for an ocular toxicity rate, **without
+ever opening its paediatric arm.** That is the own-files pattern once more, in its mildest form: the source
+was known, and only one column of it had ever been read.
