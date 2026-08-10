@@ -13674,3 +13674,45 @@ gaps:
   discriminating_experiment: The same one-week cAMP assay round 209 specified, run properly - osteocrin from
     1 nM to 10 uM against cANF(4-23), in growth plate chondrocytes and aortic smooth muscle, pertussis toxin
     control. It answers this gap and the chondrocyte-coupling gap in one plate.
+- gap_id: g_l12_what_is_tyra300_human_free_concentration_against_its_fgfr3_ic50
+  question: What is TYRA-300's steady-state FREE plasma concentration at 90 to 120 mg once daily in humans,
+    and what multiple of its 9 to 17 nmol/L FGFR3 cellular IC50 does that represent, compared with erdafitinib's
+    2.32 to 6.96 nmol/L free at 3 to 9 mg?
+  type: quantitative_gap
+  layer: L12
+  tractability: 1
+  why_it_matters: THIS IS THE ONE NUMBER THAT TURNS ROUND 212's ARGUMENT FROM INFERENTIAL INTO EXACT. Round
+    212 established erdafitinib's ceiling by direct arithmetic - CL/F 0.362 L/h, 99.7 per cent bound, so
+    2.32 nM free at 3 mg to 6.96 nM at the 9 mg label maximum, with 1.29-fold of headroom above what the
+    index child actually received. The same computation cannot be done for TYRA-300 because neither its
+    human clearance nor its plasma protein binding is published in any source reachable here. The comparison
+    therefore had to be made on a PHARMACODYNAMIC bridge - 54.5 per cent confirmed partial response in
+    FGFR3-altered urothelial carcinoma at 90 mg or above against erdafitinib's 35.3 per cent overall response
+    rate - which is a cross-trial comparison of a downstream readout. WITH THE FREE CONCENTRATION THE TWO
+    MOLECULES CAN BE PLACED ON ONE AXIS IN MULTIPLES OF THEIR OWN FGFR3 IC50, AND THE QUESTION OF WHETHER
+    A SELECTIVE AGENT CAN BE PUSHED PAST A PAN AGENT BECOMES ARITHMETIC.
+  what_is_known: dabogratinib2026 - dose range 10 to 120 mg once daily plus 40 and 50 mg twice daily, dosages
+    through 100 mg cleared, 120 mg administered, MTD not established, cellular IC50 9 nmol/L in RT112/84,
+    17 in RT112/84-V555M and 16 in UM-UC-14, potency in FGFR3-driven lines stated to be similar to the pan-FGFR
+    inhibitors, and slightly more regression than erdafitinib head to head in the UM-UC-14 xenograft at 18
+    mg/kg once daily against 12.5 mg/kg twice daily. tyra300_2025 - mouse PK only, a single 1.2 mg/kg subcutaneous
+    dose giving AUCinf 1,789 ng.h/mL at 1 week of age, 2,295 at 2 weeks and an average of 538 in 3- to 12-week
+    mice, with the age difference attributed to immature cytochrome P450. Erdafitinib's side is fully specified
+    by zhu2026.
+  what_is_missing: TYRA-300 human clearance or AUC at a stated dose, and TYRA-300 plasma protein binding.
+    Without the binding figure a free-concentration comparison cannot be computed at all, since erdafitinib's
+    99.7 per cent binding is what collapses a 1,036 ng/mL total into 6.96 nmol/L free.
+  nearest_evidence:
+  - dabogratinib2026
+  - hudkins2024
+  - tyra300_2025
+  - zhu2026
+  nearest_evidence_note: hudkins2024 is the discovery paper and is the most likely source of both numbers,
+    together with the Ba/F3 isoform IC50 panel that underlies the 63-, 19- and 55-fold selectivity figures.
+    It is behind a Journal of Medicinal Chemistry paywall and only the abstract is reachable here. SURF301
+    conference presentations are the other likely source.
+  discriminating_experiment: NO EXPERIMENT NEEDED - THE DATA EXIST AND ARE NOT REACHABLE. Obtain hudkins2024
+    full text (J Med Chem 2024, PMID 39258897) for the Ba/F3 isoform IC50 panel, protein binding and preclinical
+    PK; and any SURF301 dose-escalation PK presentation for human AUC and Cmax by dose level. Then compute
+    steady-state free concentration exactly as round 212 did for erdafitinib and express both drugs as multiples
+    of their own FGFR3 cellular IC50.

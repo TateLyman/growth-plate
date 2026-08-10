@@ -22307,3 +22307,92 @@ edges:
   refs:
   - jin2023
   confidence: C
+- edge_id: e01428
+  source: round212_the_erda_ceiling_is_time_and_tyra_already_cleared_the_dose
+  target: erdafitinib
+  relation: inhibits
+  sign: '-'
+  magnitude: THE CEILING IS 1.29-FOLD OF DOSE AND ABOUT 7 cm OF TIME. Every human growth response occurred BELOW
+    the label starting dose - 3, 5 and 7 mg against 8 up-titrated to 9. Steady-state free plasma concentration
+    computed from CL/F 0.362 L/h and 99.7 per cent AGP binding runs 2.32 nM at 3 mg to 6.96 nM at the 9 mg
+    label maximum, so the headroom above the 7 mg the index child took is 1.29-FOLD - and it is gated by SERUM
+    PHOSPHATE, an FGFR1 effect, in a child already having frequent interruptions for hyperphosphataemia. At
+    19.07 cm/year the FDA time-to-onset distribution of 84, 137 and 274 days yields 4.38, 7.15 and 14.30 cm
+    before forced discontinuation. THE BINDING CONSTRAINT IS THE CLOCK, NOT THE DOSE
+  context: this atlas's arithmetic on published population PK and the published label; the 274-day figure is
+    the index case itself so 14.30 cm is observed rather than projected; FAERS has no denominator
+  evidence_tier: T1
+  refs:
+  - zhu2026
+  - erdachild2024
+  - erdaseries2025
+  - nadeaunguyen2026
+  - dabogratinib2026
+  confidence: B
+- edge_id: e01429
+  source: round212_the_erda_ceiling_is_time_and_tyra_already_cleared_the_dose
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: TYRA-300 HAS ALREADY BEEN DOSED PAST ERDAFITINIB IN HUMANS, ON AN FGFR3 READOUT. SURF301 explored
+    10 to 120 mg once daily, cleared dosages THROUGH 100 mg, administered 120 mg, DID NOT ESTABLISH AN MTD,
+    and produced six confirmed partial responses in eleven (54.5 per cent) FGFR3-altered urothelial patients
+    at 90 mg or above with a very low frequency of grade 3 treatment-related AEs - against erdafitinib's 35.3
+    per cent overall response rate with 41 per cent serious AEs, 68 per cent dose interruption, 53 per cent
+    reduction and 21 per cent permanent discontinuation. The two dose reductions in the three detailed TYRA-300
+    cases were grade 2 neuropathy and grade 2 AST, NEITHER hyperphosphataemia. Removing the FGFR1 phosphate
+    gate removes the thing that capped the dose
+  context: a cross-trial comparison of a downstream readout - different studies, different populations, n =
+    11 against a registrational cohort, prior FGFR-inhibitor exposure permitted in SURF301. Free-concentration
+    arithmetic cannot be done because TYRA-300's human clearance and protein binding are unpublished
+  evidence_tier: T1
+  refs:
+  - dabogratinib2026
+  - zhu2026
+  confidence: B
+  gap_id: g_l12_what_is_tyra300_human_free_concentration_against_its_fgfr3_ic50
+- edge_id: e01430
+  source: round212_the_erda_ceiling_is_time_and_tyra_already_cleared_the_dose
+  target: growth_plate
+  relation: hypothesized_link
+  sign: +
+  magnitude: THE FGFR3 GROWTH DOSE-RESPONSE HAS NEVER BEEN TOPPED OUT IN ANY SPECIES, WHICH IS WHY THE DOSE
+    GATE MATTERS. In wild-type mice TYRA-300 raised naso-anal length significantly ONLY at 14 mg/kg once daily
+    and raised tibia and femur dose-dependently at 12 AND 14 mg/kg, across a range of 8 to 14 mg/kg chosen
+    deliberately below the 18 mg/kg oncology dose that gives 96 per cent tumour growth inhibition - so the
+    growth dose is 67 to 78 per cent of the oncology dose AND THE CURVE HAD NOT TURNED OVER. Infigratinib makes
+    the same point from the other end - 0.25 mg/kg/day, a fraction of oncology exposure and chosen for tolerability,
+    buys +1.74 cm/year, about a NINTH of erdafitinib's velocity at near-oncology exposure
+  context: mouse, four weeks, and the top of the tested range was set by sponsor judgement about paediatric
+    tolerability rather than by an observed plateau or toxicity. Whether the human curve continues to climb
+    into oncology exposure is untested
+  evidence_tier: T1
+  refs:
+  - tyra300_2025
+  - dabogratinib2026
+  - savarirayan2026infig
+  - erdachild2024
+  confidence: speculative
+  gap_id: g_l12_does_fgfr3_selectivity_preserve_growth_without_the_structural_failure
+- edge_id: e01431
+  source: round212_the_erda_ceiling_is_time_and_tyra_already_cleared_the_dose
+  target: fgfr3_gene
+  relation: correlates_with
+  sign: +
+  magnitude: THE VELOCITY DOES BECOME ADULT HEIGHT, WHICH IS THE PERMISSION THE ROUND-198 FRAMEWORK REQUIRES.
+    Fusion is exhaustion of proliferative potential, so a drug that only accelerates consumption adds nothing
+    to the adult endpoint. THREE HUMAN OBSERVATIONS SAY FGFR3 INHIBITION IS NOT THAT DRUG - toydemir2006's
+    CATSHL kindred, lifelong heterozygous partial FGFR3 loss with 27 affected, gives an ADULT male height mean
+    of 195.6 cm, about +2.8 SD, above the 97th centile in five of five men; propel3_2026, randomised and placebo-controlled
+    with n = 74 against 39, reports NO accelerated progression of bone age at 52 weeks; and erdaseries2025
+    describes physeal widening WITHOUT progression of bone maturation
+  context: CATSHL is germline, partial, heterozygous and lifelong, so it does not describe a nine-month block
+    at bone age 16; the infigratinib bone-age null is at a fraction of oncology exposure; the erdaseries2025
+    patient had unmeasurable sex steroid which holds bone age still by itself; and NO BASELINE BONE AGE exists
+    for the erdafitinib index case
+  evidence_tier: T1
+  refs:
+  - toydemir2006
+  - propel3_2026
+  - erdaseries2025
+  confidence: C
