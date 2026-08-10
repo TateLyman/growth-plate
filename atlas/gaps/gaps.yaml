@@ -10494,7 +10494,7 @@ gaps:
     it is not what nature varies between bones. agoston2007, mouse: CNP acts on the growth plate largely by EXPANDING THE
     HYPERTROPHIC ZONE, with far more CNP-regulated genes there than in resting and proliferative cartilage combined - so a
     pathway that reaches this compartment exists and is druggable, and a CNP analogue is approved in humans.'
-  what_is_missing: 'NO EXPERIMENT HAS RAISED TERMINAL CELL VOLUME IN A NORMAL PLATE AND MEASURED WHAT IT COST. Specifically
+  what_is_missing: 'PARTIALLY OVERTURNED 2026-08-10 BY ROUND 202, AND THE PREMISE THAT CHANGED IS THE CENTRAL ONE. This field previously read that there is no evidence the parameter can be pushed upward at all rather than only downward, and that every manipulation on record LOWERS it. THAT IS NO LONGER TRUE. weber2025 reports maximum hypertrophic chondrocyte height IN THE DIRECTION OF ELONGATION approximately 20 per cent GREATER in Npr3-/- mouse tail vertebrae than in wild-type siblings, measured axially and reported separately from the zone as CORR-189 requires. The axis is therefore real and the candidate field is no longer empty. WHAT THE GAP STILL ASKS FOR IS UNTOUCHED - Npr3-/- is a CONSTITUTIVE NULL carrying kyphosis and connective-tissue abnormalities, so it is not a non-diseased plate; no drug has done this; and THE COST WAS NOT MEASURED, because the Npr3 arm of that paper carries no calcein and no EdU. A second finding from the same round sharpens what a good answer must contain - hunziker1994 read as a dose-response shows h_term SATURATING while pool consumption rises linearly, so any future demonstration must report the DOSE-RESPONSE SHAPE and not a single treated-versus-control contrast. NO EXPERIMENT HAS RAISED TERMINAL CELL VOLUME IN A NORMAL PLATE AND MEASURED WHAT IT COST. Specifically
     - (a) no dose-response of terminal cell volume against anything, in any species, so there is no evidence the parameter
     can be pushed upward at all rather than only downward, and every manipulation on record LOWERS it (tamoxifen, oestrogen,
     Igf1 deficiency). (b) Whether raising it buys length PROPORTIONALLY: hypertrophy is time-boxed at roughly 12 hours to
@@ -12979,3 +12979,81 @@ gaps:
     decisively, a gain in a segment the fracture cannot perfuse - the spine or the upper limb. THE UPPER-LIMB ARM IS THE CLEAN
     DISCRIMINATOR, because no vascular account reaches the humerus from a tibial fracture. A null there kills the systemic
     reading and returns cho2025 to the hyperaemia file permanently.
+- gap_id: g_l1_are_the_hterm_agents_in_the_stack_additive_or_saturating
+  question: Do the h_term agents in the stack - the somatotropic arm and the CNP/NPR3 arm - add their terminal-cell-height
+    effects, or do they saturate against one shared ceiling?
+  type: quantitative_gap
+  layer: L1
+  tractability: 3
+  why_it_matters: THIS IS NOW THE MOST DECISION-RELEVANT UNMEASURED QUANTITY IN THE STACK, and round 202 is what made it so.
+    Three separate results put three agents on the SAME term. cooper2013 assigns h_term to IGF-1 - Igf1-deficient mice have
+    the same NUMBER of hypertrophic chondrocytes, each 30 per cent shorter axially, and removing IGF1 abolishes the between-bone
+    difference in cell height. hunziker1994 gives GH 1.36x h_term. weber2025 gives NPR3 loss 1.20x. Under adult height = reserve
+    x h_term, an agent that only raises h_term is free; but if the term SATURATES - and hunziker1994 read as a dose-response
+    says it does, with 40 per cent of the available gain in the first tripling of pool consumption and 9 per cent in the next
+    3.3-fold - then a SECOND h_term agent is sub-additive by construction and is paid for at full reserve cost for a fraction
+    of the benefit. The stack currently contains GH and vosoritide together on the assumption that they stack. That assumption
+    has never been tested on the term itself.
+  what_is_known: hunziker1994, rat - terminal hypertrophic cell height 19.5, 27.3, 26.5 and 29.8 micrometres across saline,
+    IGF-I, GH and normal, against pool consumption of 1, 3, 6 and 10 cells per column per day; the benefit saturates while
+    the cost does not. cooper2013, mouse - h_term is IGF-1 dependent and IGF1 loss abolishes between-bone height differences.
+    weber2025, mouse - NPR3 loss raises axial hypertrophic cell height about 20 per cent. agoston2007, mouse tibia organ culture
+    - CNP acts LARGELY BY EXPANDING THE HYPERTROPHIC ZONE, which under CORR-189 cannot be read as a cell-height claim and
+    is the reason the CNP term assignment was unverified until weber2025. NO STUDY HAS GIVEN TWO OF THESE AGENTS TOGETHER
+    AND MEASURED TERMINAL CELL HEIGHT.
+  what_is_missing: A combination arm with terminal cell height as an endpoint. Specifically - GH or IGF-I plus a CNP-axis
+    agent, in the same animals, with the Hunziker five measured together, and a dose-response on at least one of them so the
+    shape of the ceiling is visible rather than inferred from a single combination point. Also missing entirely - any terminal
+    cell height measurement under vosoritide, in any species, which is the specific agent in this stack.
+  nearest_evidence:
+  - hunziker1994
+  - cooper2013
+  - weber2025
+  - agoston2007
+  nearest_evidence_note: hunziker1994 is the only study with the full readout set but has no combination arm. weber2025 has
+    the correct cell measurement but only for NPR3 loss. agoston2007 is the CNP paper the atlas would most like to use and
+    it reports a zone height.
+  discriminating_experiment: Growing wild-type mice, four arms plus a dose ladder - vehicle, CNP-axis agent alone, somatotropic
+    agent alone, and both - reading calcein elongation rate, TERMINAL HYPERTROPHIC CELL HEIGHT measured axially per CORR-189,
+    resting-zone cycle time by continuous label, and cells per column, all in the same animals. Three outcomes discriminate
+    cleanly. ADDITIVE h_term with additive pool cost - the stack works as assumed. SATURATING h_term with additive pool cost
+    - the second agent is a pure reserve cost and should be dropped or the first dose lowered, which is the outcome hunziker1994
+    predicts. SATURATING h_term with SUB-additive pool cost - the combination is defensible at reduced doses of both. The
+    cheap partial version is a dose ladder on ONE agent, since the saturation shape alone tells you whether a second agent
+    on the same term can add anything.
+- gap_id: g_l1_do_the_extra_hypertrophic_cells_under_npr3_loss_cost_divisions
+  question: When loss of NPR3 nearly doubles the hypertrophic zone, do the extra hypertrophic cells come from extra proliferative
+    divisions - which spends the reserve - or from delayed clearance at the chondro-osseous junction, which does not?
+  type: known_unknown
+  layer: L1
+  tractability: 2
+  why_it_matters: THE ANSWER DECIDES WHETHER THE CNP AXIS IS A FREE AGENT OR A SECOND GROWTH HORMONE, and the stack contains
+    vosoritide. weber2025 decomposes the Npr3-null hypertrophic zone into about 1.2x bigger cells and about 1.67x MORE cells.
+    The bigger cells are free under the round-198 reserve model. The extra cells are free ONLY if they arise from slower clearance
+    rather than from extra divisions. Under a fixed reserve those two readings have opposite consequences for adult height,
+    and they are indistinguishable on the histology as published.
+  what_is_known: weber2025, mouse - hypertrophic zone nearly twice the wild-type height at TV6; PROLIFERATIVE zone height
+    significantly different in only 1 of 4 cartilages, which argues against a simple expansion of proliferative output; hypertrophic
+    cell height about 20 per cent greater. THE Npr3 ARM CARRIES NO CALCEIN AND NO EdU - both flux measurements exist in the
+    paper but only for the mouse-versus-jerboa comparison. Independently, Npr3 mutant mice are catalogued with DELAYED ENDOCHONDRAL
+    OSSIFICATION and increased width of the hypertrophic chondrocyte zone, which points toward the clearance reading. Separately,
+    a standing zone height is a STOCK and elongation is a FLUX, so a taller hypertrophic zone at unchanged flux is longer
+    residence rather than faster growth.
+  what_is_missing: Calcein double-labelled elongation rate and an EdU or continuous-label proliferation measurement in Npr3-/-
+    against wild-type siblings - both methods the same authors already run in the same paper on other animals. Also missing
+    - any measurement of hypertrophic cell clearance or apoptosis rate at the chondro-osseous junction under NPR3 loss, and
+    any resting-zone cell count over time, which is what would show whether the reserve is being drawn down faster.
+  nearest_evidence:
+  - weber2025
+  - hunziker1994
+  - newton2019
+  nearest_evidence_note: weber2025 has the histology and not the flux. hunziker1994 is the worked example showing what the
+    flux measurement looks like when it is done. newton2019 is listed because it is the clearest case in this atlas of a bigger
+    compartment with explicitly unchanged flux.
+  discriminating_experiment: Npr3-/- and wild-type siblings, calcein double label over 48 hours plus continuous EdU, reading
+    daily elongation rate, proliferation index, cells per column by zone, terminal cell height, and resting-zone cell number
+    at two ages. THE DECISIVE CONTRAST IS ELONGATION RATE AGAINST RESTING-ZONE DEPLETION. If elongation is faster and the
+    resting zone depletes faster, NPR3 loss spends reserve and is a second growth hormone. If elongation is faster with an
+    UNCHANGED resting-zone trajectory, the extra hypertrophic cells are coming from residence time and the CNP axis is the
+    free agent the stack has been assuming it is. If elongation is UNCHANGED and only the standing zone is taller, the zone
+    expansion is a stock artefact and contributes no length at all.

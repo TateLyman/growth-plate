@@ -21561,3 +21561,101 @@ edges:
   - chu2026
   - avijgan2026
   confidence: B
+- edge_id: e01385
+  source: round202_the_hterm_axis_exists_and_it_saturates
+  target: npr3_clearance_receptor
+  relation: inhibits
+  sign: +
+  magnitude: loss of NPR3 raises MAXIMUM HYPERTROPHIC CHONDROCYTE HEIGHT IN THE DIRECTION OF ELONGATION by approximately 20
+    per cent in mouse tail vertebrae - the FIRST intervention in this atlas to raise terminal cell height rather than lower
+    it, and measured axially and separately from the zone as CORR-189 requires. The hypertrophic ZONE is nearly 2.0x taller
+    at TV6, implying about 1.67x more cells per column, so h_term is the minority of the effect
+  context: weber2025, Npr3-/- against wild-type siblings, TV1 and TV6 cranial and caudal growth cartilages at P7, Welch two-tailed,
+    n = 3 per group and n = 4 for Npr3-/- TV6. A constitutive null with kyphosis and connective-tissue abnormalities, not
+    a drug in a healthy plate
+  evidence_tier: T1
+  refs:
+  - weber2025
+  confidence: C
+- edge_id: e01386
+  source: round202_the_hterm_axis_exists_and_it_saturates
+  target: growth_hormone
+  relation: correlates_with
+  sign: biphasic
+  magnitude: h_term SATURATES WHILE POOL CONSUMPTION DOES NOT. hunziker1994 read as a dose-response - terminal cell height
+    19.5, 27.3, 26.5, 29.8 micrometres against pool consumption 1, 3, 6, 10 cells per column per day. The first tripling of
+    consumption buys 40 per cent of the available h_term; the next 3.3-fold buys 9 per cent. Under adult height = reserve
+    x h_term a saturating benefit against a linear cost has an INTERIOR optimum, so the dose that maximises adult height is
+    the lowest one that saturates h_term, not the highest tolerated
+  context: hypophysectomised rat proximal tibia, 8-day minipump, four groups of six, doses NOT matched for equipotency. The
+    shape is the claim; the GH-versus-IGF-I ordering is noise at n = 6 and is not claimed
+  evidence_tier: T1
+  refs:
+  - hunziker1994
+  - cooper2013
+  confidence: D
+- edge_id: e01387
+  source: round202_the_hterm_axis_exists_and_it_saturates
+  target: round199_every_route_to_expanding_the_budget
+  relation: precedes
+  sign: +
+  magnitude: THE EXCHANGE RATE. One doubling of a flattened proliferative chondrocyte adds 8 to 9 micrometres to the axis
+    of elongation; that same cell then adds up to 40 to 50 micrometres through hypertrophic enlargement - a ratio of roughly
+    4.4 to 6.3. The division is the only half deducted from an exhaustible reserve, so a per cent added to h_term is worth
+    about five per cent added to division count and costs nothing. h_term should be worked IN PARALLEL with the pool routes,
+    not after them
+  context: author-stated in weber2025 with citations to the comparative growth-plate literature
+  evidence_tier: T1
+  refs:
+  - weber2025
+  - weise2001
+  confidence: B
+- edge_id: e01388
+  source: round202_the_hterm_axis_exists_and_it_saturates
+  target: human_resting_zone_chondrocyte
+  relation: correlates_with
+  sign: unknown
+  magnitude: DIFFERENTIAL ELONGATION IS NOT ACHIEVED BY DIVIDING FASTER. Across growth cartilages differing MORE THAN TWOFOLD
+    in calcein-measured daily elongation rate, in two species, the 2-hour EdU S-phase fraction is NOT significantly different.
+    A third independent line against rate agents
+  context: weber2025, mouse P7 and jerboa P16, TV1 against TV6, n = 9 mouse and n = 8 jerboa cartilages. A 2-hour pulse cannot
+    exclude a cycle-length difference that leaves the S-phase fraction unchanged
+  evidence_tier: T1
+  refs:
+  - weber2025
+  confidence: B
+- edge_id: e01389
+  source: round202_the_hterm_axis_exists_and_it_saturates
+  target: vosoritide
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: THE STACK MAY CONTAIN TWO AGENTS ON ONE SATURATING TERM. cooper2013 assigns h_term to IGF-1, hunziker1994 gives
+    GH 1.36x h_term, weber2025 gives the CNP/NPR3 axis 1.20x. If the term saturates, a second h_term agent is sub-additive
+    by construction and is paid for at full reserve cost. NO TERMINAL CELL HEIGHT MEASUREMENT EXISTS UNDER VOSORITIDE IN ANY
+    SPECIES, and the CNP evidence the atlas relies on (agoston2007) reports a hypertrophic ZONE height, which CORR-189 forbids
+    reading as a cell-height claim
+  context: cross-agent inference over three studies, none of which contains a combination arm
+  evidence_tier: T1
+  refs:
+  - cooper2013
+  - hunziker1994
+  - weber2025
+  - agoston2007
+  confidence: speculative
+  gap_id: g_l1_are_the_hterm_agents_in_the_stack_additive_or_saturating
+- edge_id: e01390
+  source: round202_the_hterm_axis_exists_and_it_saturates
+  target: npr3_human_genetics_dose_response
+  relation: correlates_with
+  sign: +
+  magnitude: THE HUMAN ANCHOR AND THE SPINE CAVEAT. Biallelic NPR3 loss gives 205.1 cm at 14.7 years, +3.93 SDS, with NORMAL
+    sitting-height-to-height ratio and arm span - a PROPORTIONATE gain. The mouse shows DISPROPORTIONATE vertebral elongation
+    and moffatt2025 reports tall stature WITH SCOLIOSIS. No segment-resolved human growth measurement exists under any CNP-axis
+    agent
+  context: lauffer2022 three affected males; weber2025 mouse tail vertebrae; moffatt2025 single case
+  evidence_tier: T1
+  refs:
+  - lauffer2022
+  - weber2025
+  - moffatt2025
+  confidence: C
