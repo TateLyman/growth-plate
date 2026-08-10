@@ -7491,3 +7491,75 @@ the explanation for the hypertrophic collapse; matrix, cell number and cell heig
 account for matrix explicitly or state that it cannot. Where a manipulation is known to affect
 proteoglycan or matrix volume — which the CNP axis is — a zone height carries **no** information about
 cells at all without an independent cell measurement.
+
+---
+
+## CORR-198 — round 203 was wrong that no cell-level measurement exists on the CNP axis, and round 202 was wrong that weber2025 was the first h_term agent
+
+**Round 204.** Two claims from the previous two rounds are withdrawn, and both were **over-strong
+negatives** — the most dangerous kind of error in this file, because they close routes.
+
+**(a) "No terminal cell height has been measured under any CNP-axis agent in any species" (round 203).**
+Withdrawn. `wendt2015` — held here as a ref_id with **no finding and no note**, supplied by the user —
+carries in cynomolgus monkeys at 6 months, in the same animals: longitudinal growth rate, growth plate
+thickness, proliferating zone thickness, **proliferating cells per column**, hypertrophic zone
+thickness, and **hypertrophic cell size**. Four of the five Hunziker quantities.
+
+The narrow version of the round-203 claim survives: what `wendt2015` reports is a **projected area
+(µm², despite being labelled "volume")**, not an axial height, so CORR-190 still bars reading it as a
+length. But "no cell-level measurement exists" was false, and the search that produced it looked at only
+two candidate papers.
+
+**(b) "weber2025 is the first intervention in this atlas to RAISE terminal cell height" (round 202).**
+Withdrawn. `trompet2024` measured it in **both** arms, and the atlas's own note on that paper already
+said so while the round-202 node claimed a first:
+- **systemic SAG** — *"neither was the size of terminally hypertrophic chondrocytes"* (Suppl. Fig. 4C–H). **Null.**
+- **intra-articular SAG bead** — growth plate height augmented *"probably due to an elevation in the height of the terminal hypertrophic chondrocytes"* (Suppl. Fig. 5F, 6B).
+
+**The h_term axis is much less empty than round 202 said.** Agents with a cell-level h_term signal
+already in the file: hedgehog agonism by local bead (`trompet2024`), NPR3 loss (`weber2025`, +20 %
+axial), resveratrol (`karimian2013` — *"increased number and size of hypertrophic chondrocytes"*), and
+NKCC1 inhibition as an **isolated** h_term control point in the downward direction (`bush2010` — HZ
+height 204 → 151 µm with cell **number** unchanged, 193 vs 192, p = 0.937). `abubakar2022` adds NHE1/AE2.
+
+Note the route split inside `trompet2024`: **systemic gave no cell-size change, local bead did.**
+
+**The rule this adds.** A claim of the form "nobody has ever measured X" requires a search over the
+*measurement*, not over the mechanism, and must name how many candidate sources were checked. Both
+failures here came from searching the mechanism literature and stopping at two papers.
+
+---
+
+## CORR-199 — the write-off site audit, and the one compound killed on a single-site endpoint
+
+**Round 204, prompted by the user.** CORR-195 imposed the rule that no agent may be scored against one
+site. Applied **backwards**, it asks whether any compound was retired on an endpoint that could not have
+seen the sites now known to be open. All 1,436 references were scanned for negative length statements;
+22 carry one; 8 are measured through a single skeletal region.
+
+Resolved by hand:
+
+| ref | flagged because | verdict |
+|---|---|---|
+| **`wang2018`** (tadalafil) | *"did not increase rat **long bone** length"* — title is *"...on **long bone development** in young rats"* | **GENUINE HIT** — see below |
+| `trompet2024` (systemic SAG) | tibia/femur only | **NOT the binding reason** — the atlas already records the real one: length was read 2 days after a 7-day exposure, and an expanded pool cannot appear as length until spent |
+| `koh2022` (intermittent PTH) | tibia | **fine** — also measured three cranial base bone lengths and two synchondrosis lengths, which covers a register site; vertebrae missing |
+| `turner2000`, `sibonga1998` (anti-oestrogens) | tibial growth rate only | **partial** — neither is the stack's oestrogen agent (anastrozole), but both feed `g_l12_does_fulvestrant_degrade_eralpha_in_growth_plate_chondrocytes` |
+| `loqman2013`, `bush2010` | metatarsal organ culture | **fine** — single-bone by design, and `bush2010` is a *positive* mechanism finding misfiled as a null |
+| `brjesson2012` | tibia | **fine** — a positive finding about closure, not a write-off |
+
+**The genuine hit: tadalafil, and through it the whole "stacking inside the cGMP node is dead" verdict.**
+That verdict rests on two legs. One is `hakata2024` (sacubitril not additive with CNP) — measured on
+**naso-anal length**, which is axial, so that leg is sound. The other is `wang2018`, whose endpoint is
+**long bone only**, by its own title. If tadalafil moved the axial skeleton and nobody looked, the
+inference *"cGMP is not the limiting step once a CNP analogue is aboard"* does not follow from it.
+
+The verdict is **not** reversed — `hakata2024` still carries it, and `hakata2024` has the stronger
+design. But the cGMP-stacking write-off is downgraded from **two independent negative experiments** to
+**one whole-body negative plus one single-site negative**, and `wang2018` is now flagged as needing its
+axial endpoints checked. It is not open access.
+
+**No other compound in the file was written off for want of spine data.** The audit's more useful
+finding is the opposite of what was looked for: **`bush2010` was sitting in the null bucket while being
+an isolated h_term result** — hypertrophic zone height falling with cell number held constant — which is
+exactly the decomposition rounds 202–203 said did not exist.
