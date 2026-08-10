@@ -22605,3 +22605,107 @@ edges:
   refs:
   - ozaki2020
   confidence: C
+- edge_id: e01442
+  source: round215_the_liver_is_a_dose_problem_and_the_paediatric_dose_is_deliberately_low
+  target: fgfr3_tyrosine_kinase_inhibitor
+  relation: inhibits
+  sign: '-'
+  magnitude: THE LIVER IS A DOSE PROBLEM WITH A SHARP THRESHOLD BETWEEN 60 AND 90 mg, AND THERE IS A CLEAN BAND
+    BELOW IT. At 60 mg and below, in 22 patients, ALT rose in ONE at grade 1-2 and AST in NONE AT ALL. At 90
+    mg, in 15, ALT rose in 7 with 2 at grade 3 and AST in 7 with 1 at grade 3. At 120 mg, in 4, AST reached
+    grade 3 in TWO. In exposure terms the step is 4,360 against 10,300 ng.h/mL, a 2.4-fold jump. AND THE PROTOCOL
+    SHOWS THE HEADLINE RATE OVERSTATES THE DOSE COST - grade 1 continues at current dose and grade 2 RESUMES
+    AT THE SAME DOSE LEVEL, so only the grade 3 rate binds, which is 13 and 7 per cent at 90 mg against zero
+    and zero at 60 mg and below
+  context: investor-deck source rather than peer-reviewed, only 4 patients in the 120 mg band, and 10 to 60
+    mg pooled into one group so any structure below 60 is hidden. Elderly heavily pretreated oncology population
+  evidence_tier: T3
+  refs:
+  - tyra_surf301_webcast_2024
+  - surf301_protocol_v4
+  - surf301_ena2024
+  confidence: B
+- edge_id: e01443
+  source: round215_the_liver_is_a_dose_problem_and_the_paediatric_dose_is_deliberately_low
+  target: round214_lysosomal_trapping_survives_round213_and_the_liver_ceiling_is_routable
+  relation: correlates_with
+  sign: unknown
+  magnitude: ROUND 214's PREDICTION IS CONFIRMED AND THE MECHANISM IS NAMED, BUT NOT THE ONE IT GUESSED. Round
+    214 computed free Cav at 8 per cent of the FGFR4 IC50 at 90 mg and 18 per cent at 120, concluded the transaminitis
+    was probably not an FGFR effect, and predicted more selectivity would not fix it. THE SPONSOR'S OWN PROTOCOL
+    STATES IT - pan-FGFR inhibitors particularly those with potency against FGFR4 are associated with hepatotoxicity,
+    AND IN ADDITION TYRA-300 IS AN INHIBITOR OF BILE SALT EXPORT PUMP IN VITRO. BSEP inhibition is a chemical
+    property of the scaffold that selectivity engineering cannot touch. IT ALSO REDIRECTS THE ANTIDOTE - round
+    214 proposed S-adenosyl-L-methionine on a TFEB mechanism, but the matched pharmacology for a bile-salt
+    export lesion is URSODEOXYCHOLIC ACID
+  context: an in vitro flag in a protocol risk section with no IC50 given, and BSEP inhibitors classically produce
+    cholestatic or mixed injury while the observed signal is transaminitis - so BSEP is a flagged risk, not
+    a demonstrated cause
+  evidence_tier: T3
+  refs:
+  - surf301_protocol_v4
+  - qiu2026
+  confidence: C
+  gap_id: g_l12_does_ursodeoxycholic_acid_or_same_protect_against_fgfr3_inhibitor_transaminitis
+- edge_id: e01444
+  source: round215_the_liver_is_a_dose_problem_and_the_paediatric_dose_is_deliberately_low
+  target: growth_plate
+  relation: hypothesized_link
+  sign: +
+  magnitude: THE PAEDIATRIC PROGRAMME IS DOSING BELOW THE GROWTH EXPOSURE ON PURPOSE, AND THE COMPANY PLOTS
+    THE CURVE IT IS DECLINING TO CLIMB. BEACH301 runs a sentinel cohort in achondroplasia aged 5-10 at 0.125
+    to 0.50 mg/kg and two run-in cohorts aged 3-10 at 0.25 to 0.625 mg/kg, about 25 participants. The deck's
+    own chart maps 0.625 mg/kg to ONE HALF the adult oncology dose and 0.25 mg/kg to ONE SIXTH - so the top
+    planned paediatric dose is about 45 mg adult-equivalent, BELOW the 60 mg that already matches the murine
+    growth exposure and a quarter of the 90 mg matching the free FGFR3 coverage of the child who grew 19.06
+    cm/year. TYRA's slide 40 plots infigratinib at 6.0 cm/year labelled ONE SIXTH ONCOLOGY DOSE against pan-FGFR
+    at 19.2 cm/year labelled ONCOLOGY DOSE CAUSING FRACTURES
+  context: corporate-deck source, dose levels may change at sponsor discretion as the deck notes, and the mg/kg
+    to adult-mg conversion assumes a body weight not given. TYRA's 19.2 cm/year traces to sait2023, which is
+    a REVIEW rather than a primary report
+  evidence_tier: T3
+  refs:
+  - tyra_corporate_deck_2026
+  - sait2023
+  - savarirayan2026infig
+  confidence: speculative
+  gap_id: g_l12_is_60_mg_equivalent_exposure_enough_for_growth
+- edge_id: e01445
+  source: round215_the_liver_is_a_dose_problem_and_the_paediatric_dose_is_deliberately_low
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: '-'
+  magnitude: THE MOUSE GROWTH DOSE-RESPONSE IS NOT SATURATING - RE-ANALYSIS OF THE DEPOSITED INDIVIDUAL-ANIMAL
+    DATA SAYS IT IS ACCELERATING. Tibia runs 15.720 mm on vehicle, 16.327 at 12 mg/kg (+3.86 per cent) and
+    16.734 at 14 (+6.45); femur 13.171, 13.830 (+5.00) and 14.255 (+8.23). THE MARGINAL GAIN PER mg/kg IS 0.051
+    mm OVER 0-TO-12 AND 0.204 OVER 12-TO-14 FOR TIBIA, AND 0.055 AGAINST 0.213 FOR FEMUR - a fourfold steepening
+    in both bones. The last 2 mg/kg buys about as much as the first 12 did
+  context: this atlas's re-analysis and graded as one. Three dose points with nothing between 0 and 12 mg/kg,
+    so a threshold below 12 with a steep rise above it fits equally well, and the 14-against-12 increment is
+    Welch p = 0.055 for tibia and 0.084 for femur, not significant alone. What it excludes is saturation at
+    14 mg/kg
+  evidence_tier: T1
+  refs:
+  - tyra300_2025
+  confidence: C
+  gap_id: g_l12_is_60_mg_equivalent_exposure_enough_for_growth
+- edge_id: e01446
+  source: round215_the_liver_is_a_dose_problem_and_the_paediatric_dose_is_deliberately_low
+  target: erdafitinib
+  relation: correlates_with
+  sign: +
+  magnitude: THE LYSOSOMAL DEPOT IS BETTER EVIDENCED THAN ROUND 214 CREDITED, BECAUSE THE DISCOVERY PAPER USED
+    A MATCHED NON-LYSOSOMOTROPIC ANALOGUE. In KATO III cells, erdafitinib at 30 nmol/L for ONE HOUR suppressed
+    phospho-FGFR COMPLETELY FOR 4 HOURS and to 24 HOURS after washout, while JNJ-42883919 - same chemical series,
+    non-lysosomotropic, tested at 300 nmol/L, TEN TIMES the concentration - returned to basal WITHIN 2 HOURS.
+    Bafilomycin pre-treatment collapsed erdafitinib to the analogue's kinetics and did NOT alter the analogue's
+    duration. TWELVE-FOLD LONGER TARGET SUPPRESSION AT ONE TENTH THE CONCENTRATION, with a causal control in
+    both directions
+  context: still a washout experiment, so it speaks to interrupted dosing rather than the continuous steady
+    state where round 214's capacitor argument applies - and the index child WAS on an interrupted schedule.
+    Cancer cell lines, no cartilage data of any kind
+  evidence_tier: T1
+  refs:
+  - perera2017
+  - englinger2018
+  confidence: B

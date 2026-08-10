@@ -13846,3 +13846,94 @@ gaps:
     the organelle load and would rank erdafitinib an order of magnitude above dabogratinib with no difference
     at the kinase. THE CHEAP PRIOR STEP is LysoTracker plus the compound in primary chondrocytes with and without
     bafilomycin, which settles whether chondrocyte lysosomes take erdafitinib up at all.
+- gap_id: g_l12_is_60_mg_equivalent_exposure_enough_for_growth
+  question: Is the hepatically clean TYRA-300 dose band - 60 mg adult-equivalent and below, where 22 patients
+    showed one grade 1-2 ALT rise and no AST signal at all - enough to produce a growth effect worth having,
+    or does the growth-optimal exposure sit above the hepatic threshold?
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  why_it_matters: THIS IS NOW THE WHOLE PROBLEM FOR THE FGFR ARM, AND IT IS A 2.2-FOLD GAP. Round 215 established
+    from the SURF301 dose-band safety data that the transaminitis is a concentration effect with a threshold
+    between 60 and 90 mg, and that at 60 mg and below the liver is essentially untouched. It also established
+    that human 60 mg (AUC 4,360 ng.h/mL) already MATCHES the murine exposure that grew wild-type mice by 3.9
+    to 5.0 per cent in tibia and femur. SO A CLEAN DOSE AND A GROWTH-ACTIVE DOSE COINCIDE - at the bottom of
+    the growth curve. AGAINST THAT, free FGFR3 coverage at 60 mg is 1.83 times IC50 against 4.01 for the child
+    who grew 19.06 cm/year, the murine curve is still steepening at the top of its tested range, and TYRA's
+    own slide plots infigratinib at ONE SIXTH of its oncology dose delivering 6.0 cm/year against pan-FGFR
+    at full oncology dose delivering 19.2. IF 60 mg BUYS 6 cm/YEAR AND 90 mg BUYS 12, THE HEPATIC THRESHOLD
+    IS THE SINGLE MOST EXPENSIVE CONSTRAINT IN THE STACK. IF 60 mg BUYS MOST OF THE EFFECT, THE FGFR ARM IS
+    ESSENTIALLY SOLVED.
+  what_is_known: 'tyra_surf301_webcast_2024 - at 60 mg and below (n=22) ALT 1 (5 per cent) grade 1-2 and AST
+    ZERO at any grade; at 90 mg (n=15) ALT 7 (47 per cent) with 2 grade 3 and AST 7 (47 per cent) with 1 grade
+    3. surf301_ena2024 - steady-state AUC 4,360 at 60 mg and 10,300 at 90 mg, with greater-than-dose-proportional
+    exposure. Round 213 - free FGFR3 coverage 1.83 times IC50 at 60 mg and 4.33 at 90 mg, against 4.01 for
+    the erdafitinib child. tyra300_2025 re-analysed - the murine growth dose-response is still steepening at
+    14 mg/kg, whose interpolated exposure is about 5,100 ng.h/mL, just above human 60 mg. tyra_corporate_deck_2026
+    - BEACH301 tops out at 0.625 mg/kg, about HALF the adult oncology dose, so the trial as designed will not
+    answer this.'
+  what_is_missing: A HUMAN GROWTH VELOCITY MEASURED AT A KNOWN FGFR3 TARGET COVERAGE. BEACH301 will supply
+    height velocity at 0.25 to 0.625 mg/kg, which spans roughly one sixth to one half of the oncology exposure
+    - if it also reports individual PK, it gives the bottom half of the exposure-response curve and nothing
+    above it. Nothing anywhere will supply the top half unless someone doses a growing skeleton at oncology
+    exposure deliberately.
+  nearest_evidence:
+  - tyra_surf301_webcast_2024
+  - tyra_corporate_deck_2026
+  - tyra300_2025
+  - erdachild2024
+  - savarirayan2026infig
+  nearest_evidence_note: The safety side is human and clean. The growth side at matched exposure is entirely
+    murine. The only human points on the exposure-growth curve are infigratinib at one sixth oncology dose
+    giving 6.0 cm/year and erdafitinib at full oncology exposure giving about 19, and they come from different
+    molecules in different populations.
+  discriminating_experiment: THE CHEAPEST VERSION NEEDS NO NEW PATIENTS - ask BEACH301 to report height velocity
+    AGAINST INDIVIDUAL STEADY-STATE AUC rather than against nominal mg/kg, across its 0.125 to 0.625 mg/kg
+    range. That is five dose levels spanning fivefold exposure in the population of interest and it would
+    define the bottom of the human exposure-response curve directly. THE VERSION THAT ANSWERS THE ACTUAL QUESTION
+    is a dose-escalation arm continuing above 0.625 mg/kg with the protocol's existing hepatic stopping rules,
+    since grade 1 to 2 transaminitis does not cost dose and grade 3 forces only a one-level reduction. IN AN
+    ANIMAL, the missing experiment is a wild-type mouse dose-response with points between 0 and 12 mg/kg and
+    above 14, run to a FINAL BONE LENGTH endpoint with serial liver enzymes, which would give the shape of
+    both curves on one axis.
+- gap_id: g_l12_does_ursodeoxycholic_acid_or_same_protect_against_fgfr3_inhibitor_transaminitis
+  question: If TYRA-300's hepatic liability is BSEP-mediated rather than FGFR-mediated, does ursodeoxycholic
+    acid - or S-adenosyl-L-methionine, or a lysosome alkaliniser - raise the tolerated dose, and by how much?
+  type: known_unknown
+  layer: L12
+  tractability: 1
+  why_it_matters: THE HEPATIC THRESHOLD IS THE ONLY THING SEPARATING THE PAEDIATRIC DOSE FROM THE GROWTH DOSE,
+    AND IT MAY BE PHARMACOLOGICALLY MOVABLE. Round 215 established that the threshold sits between 60 and 90
+    mg, that grade 1 to 2 transaminitis does not cost dose under the protocol, and that the sponsor names BSEP
+    inhibition as a specific in vitro liability of this molecule alongside the FGFR4 class effect. If a
+    hepatoprotectant shifts the threshold even 1.5-fold, it moves the attainable free FGFR3 coverage from
+    1.83 times IC50 to something near the 4.01 that produced 19.06 cm/year in a child. NO OTHER SINGLE
+    INTERVENTION IN THIS FILE HAS THAT LEVERAGE FOR THAT LITTLE EFFORT.
+  what_is_known: 'surf301_protocol_v4 - TYRA-300 is an inhibitor of bile salt export pump in vitro, stated
+    alongside the FGFR4 class attribution. qiu2026 - for osimertinib, a lysosomotropic TKI, hepatotoxicity
+    runs through TFEB dephosphorylation and excess autophagy-lysosome activation; HYDROXYCHLOROQUINE at 10
+    mg/kg intraperitoneally significantly reduced hepatic necrotic area, and S-ADENOSYL-L-METHIONINE was the
+    single best hit from a screen of clinically available hepatoprotectants and reduced serum ALT and AST,
+    necrotic area and TUNEL-positive hepatocytes in vivo. MECHANISM MATCHING IS THE PROBLEM - SAMe and HCQ
+    were validated against a lysosome-driven lesion in a lysosomotropic drug, while TYRA-300 is neither
+    lysosomotropic nor, on the protocol account, injuring through that route. Ursodeoxycholic acid is the
+    matched pharmacology for a bile-salt export lesion and has not been tested against any FGFR inhibitor.'
+  what_is_missing: Whether TYRA-300 activates TFEB in hepatocytes at all; a BSEP IC50 for TYRA-300 against
+    its free plasma concentration at 60, 90 and 120 mg, which would say whether BSEP is even engaged at the
+    doses where the transaminitis appears; and any hepatoprotectant co-administration study with any FGFR
+    inhibitor in any species.
+  nearest_evidence:
+  - surf301_protocol_v4
+  - qiu2026
+  - tyra_surf301_webcast_2024
+  nearest_evidence_note: The mechanism is named but only as an in vitro flag with no IC50. The antidotes are
+    validated for a different mechanism in a different drug. Nothing connects them.
+  discriminating_experiment: TWO STEPS AND THE FIRST IS ARITHMETIC. (1) Obtain TYRA-300's BSEP IC50 - it exists
+    because the protocol cites the finding - and compare it with free Cav of 7.58 nmol/L at 90 mg and 17.34
+    at 120. If BSEP sits far above those, the protocol's flag is not the clinical mechanism and the whole
+    ursodeoxycholic acid line is wrong. (2) IF BSEP IS ENGAGED - sandwich-cultured human hepatocytes with
+    TYRA-300 across the 60-to-120 mg free concentration range, reading bile-acid accumulation and viability,
+    with ursodeoxycholic acid, S-adenosyl-L-methionine and vehicle arms, plus a nuclear-TFEB readout to test
+    the alternative mechanism in the same plate. THE PRIOR STEP THAT COSTS NOTHING is to check whether SURF301
+    recorded alkaline phosphatase and bilirubin alongside the transaminases - a cholestatic signature would
+    support BSEP and a purely hepatocellular one would argue against it.

@@ -7833,3 +7833,59 @@ once-daily dosing with a 59-hour half-life there is never a washout. **4.01× ag
 partitions into a compartment that the target does not occupy. For any base with pKa above ~8, total tissue
 concentration measures the lysosome, not the drug at the target — and the comparator molecule's ionisation
 state determines whether the comparison is even on one axis.
+
+---
+
+## CORR-209 — the Ba/F3 panel round 213 used is one of two, and they disagree ~6×
+
+**Round 215.** Round 213 built its free-coverage comparison on the Ba/F3 cellular IC50 panel plotted in
+`surf301_ena2024`. The TYRA-300 discovery paper's supporting information (`hudkins2024`, compound **22** =
+TYRA-300) gives a different set from the same company under the same assay name:
+
+| | conference panel (round 213) | discovery SI table |
+|---|---|---|
+| FGFR3 | ~1.75 nM | **11 nM** |
+| FGFR1 | ~113 nM (63×) | **278 nM (25×)** |
+| FGFR2 | ~35 nM (19×) | **157 nM (14×)** |
+| FGFR4 | ~98 nM (55×) | **405 nM (37×)** |
+
+The **marketed selectivity figures come from the more favourable set.** The cell-line IC50s agree well
+across both sources (RT112/84 9 nM, RT112/84-V555M 17, UM-UC-14 16), which locates the divergence in the
+Ba/F3 transfectant assay conditions rather than in the compound.
+
+**What survives.** Round 213's comparison is a **ratio taken within one panel** — erdafitinib's 1.35 nM
+came from the same slide as TYRA-300's 1.75 — so *4.01× vs 4.33×* stands as a relative statement. **What
+does not survive** is treating the absolute multiples as portable: on the discovery numbers, 90 mg would
+sit below 1× IC50.
+
+**The rule this adds.** When a comparison is built on IC50s, name the panel. Two panels from one sponsor
+can differ sixfold, and a fold-selectivity quoted in marketing material is a choice among datasets, not a
+property of the molecule.
+
+---
+
+## CORR-210 — round 214 underweighted the erdafitinib lysosome experiment
+
+**Round 215.** Round 214 weighed `perera2017` (abstract only, "prolonged inhibition … *possibly* due to
+sustained release") against `englinger2018`'s quantified sink result and called the literature split. The
+full text shows Figure 3D is a **matched-pair experiment**, and a better one than the comparator:
+
+- erdafitinib **30 nM**, 1 h, then washout → phospho-FGFR **completely suppressed to 4 h, basal only at 24 h**
+- **JNJ-42883919** — *non-lysosomotropic analogue from the same chemical series* — at **300 nM**, ten times
+  the concentration → **basal within 2 h**
+- **Bafilomycin collapsed erdafitinib to the analogue's kinetics** (basal at 2 h) and **did not alter the
+  analogue's duration**
+
+Twelve-fold longer suppression at one tenth the concentration, reading the actual target, with a causal
+control in both directions. **The depot reading is the better-evidenced one.**
+
+**What does not change.** It is still a *washout* experiment, so round 214's steady-state capacitor
+argument stands for continuous human dosing — and the free-plasma comparison with it. What is now firm is
+the **interrupted-schedule** advantage, which matters because the index child ran with frequent
+interruptions.
+
+**Also re-ranked.** Round 214 put the lysosome-alkaliniser route fifth with a "weak prior". `qiu2026`'s
+full text adds that **hydroxychloroquine 10 mg/kg reduced hepatic necrotic area** in osimertinib-treated
+mice, and that SAMe was the best hit from a hepatoprotectant screen. For *erdafitinib* an alkaliniser would
+potentiate the target (`englinger2018`, 5.1×) **and** protect the liver. It still does not transfer to
+TYRA-300, which is not lysosomotropic.
