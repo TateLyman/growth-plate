@@ -853,11 +853,17 @@ gaps:
     sections already exist. The NDA 21-318 histopathology protocol states that a longitudinal section of a single
     lumbar vertebra including endplate and body was taken so that the entire length of a vertebra was evaluated,
     in every animal of every arm. Vertebral height was therefore SECTIONED and never measured, in the same way femoral
-    length was measured and never reported by vahle2004.
+    length was measured and never reported by vahle2004. ROUND 197 REMOVES THE TECHNICAL EXCUSE. wezeman2003 measures
+    L4 vertebral body height in growing Sprague-Dawley rats by dissection and caliper, superior to inferior cortical
+    endplate, with standard deviations of 0.06 to 0.56 mm on a 6.5 to 8.2 mm bone - a coefficient of variation between
+    0.8 and 7 per cent at n=5. The same paper shows the endpoint is nutritionally sensitive, with pair-fed controls
+    5 to 6 per cent shorter than ad libitum, which is also the size of every length effect claimed for this drug
+    class.
   nearest_evidence:
   - fda_forteo_pharmreview_2002
   - jolette2017
   - vahle2002
+  - wezeman2003
   nearest_evidence_note: Three studies that measured the vertebra thoroughly and none that measured its height.
   discriminating_experiment: Vertebral body height on the existing archived longitudinal lumbar sections from Lilly
     R00100 and R00200, or from the Radius abaloparatide carcinogenicity study, read blind against arm. If archived
@@ -887,16 +893,22 @@ gaps:
     per cent alongside length up to 6 per cent by caliper. Study R00796/R04296 - one year in intact male F344 rats
     at 8 and 40 micrograms per kilogram - "did not alter linear bone growth in males". CG3-04 - 18 days in 4-week-old
     males at 16 and 80 - femur length the same in all groups.
-  what_is_missing: Any arm in which body-weight trajectory is controlled. There is no pair-fed control anywhere
+  what_is_missing: 'Any arm in which body-weight trajectory is controlled. There is no pair-fed control anywhere
     in the package, no length measurement normalised to body mass, and no arm in which a male gained weight on drug.
     Also missing - the per-dose MALE femoral length values from the first carcinogenicity study, which exist in
     the sponsor tables and are described in the review only as "maximal at the low dose"; and the actual allometric
     exponent for femur length against body mass in F344 rats of these ages, which would replace the assumed one
-    third.
+    third. ROUND 197 SHARPENS THE SCALE OF THE PROBLEM: wezeman2003 shows caloric intake alone moves L4 vertebral
+    body height by 6.4 per cent in male and 5.0 per cent in female growing rats, and every healthy-animal length
+    positive under a PTH1R agonist is between 2 and 6 per cent. toromanoff1998, the lone healthy-animal femoral
+    length positive, does not report body weight in its abstract and is not open access - its body-weight table
+    is now the single most valuable unread number in the line.'
   nearest_evidence:
   - fda_forteo_pharmreview_2002
   - vahle2002
   - winer2010
+  - wezeman2003
+  - toromanoff1998
   nearest_evidence_note: Two regulatory readings of sponsor tables and one human randomised trial. The human trial
     reports height percentile and WEIGHT percentile side by side and neither moved, which is consistent with the
     body-size reading and does not distinguish it from no effect at all.
@@ -908,9 +920,9 @@ gaps:
 - gap_id: g_l12_pth1r_expression_across_human_pubertal_stage
   type: quantitative_gap
   layer: L12
-  tractability: 3
+  tractability: 4
   question: How does PTH1R expression in the human growth plate change across pubertal stage and bone age, and is
-    there any receptor left to act on at bone age 16?
+    a late-pubertal plate BELOW or ABOVE the optimum of the PTHrP-PTH1R dose-response for bone length?
   why_it_matters: 'The whole candidate rests on there being a target. chu2026 places PTH1R in the pre-hypertrophic
     zone of the EARLY pubertal human growth plate. kindblom2002 measures the two LIGANDS of the same loop across
     Tanner stages and finds both fall significantly with maturation - correlation coefficients of 0.816 for Ihh
@@ -918,24 +930,50 @@ gaps:
     across that range. The two readings point opposite ways and the atlas cannot choose between them: low endogenous
     ligand tone at late puberty could mean an unoccupied receptor with headroom for an exogenous agonist, or it
     could mean the axis has been switched off along with the pre-hypertrophic population that carries the receptor.
-    In a case at bone age 16 this is the difference between a target and no target.'
+    In a case at bone age 16 this is the difference between a target and no target. ROUND 197 PROMOTED THIS TO THE
+    DECISIVE GAP FOR THE ENTIRE LINE. Bone length is now established as an INVERTED U in PTHrP-PTH1R tone: both
+    genetic extremes shorten bone - Blomstrand, PTHrP null, chondrocyte PTH1R knockout, Zfp521 conditional knockout
+    and human PTHLH haploinsufficiency at the low end; Jansen metaphyseal chondrodysplasia and Col2-driven PTHrP
+    overexpression at the high end - and every exogenous agonist trial in a healthy animal returns no change, which
+    places wild type at or near the maximum. An agonist can therefore only add length from BELOW the optimum, which
+    is exactly where uraemia and achondroplasia sit and exactly where a healthy animal does not. kindblom2002 is
+    the single reason the line is not closed: both ligands of the loop fall significantly with Tanner stage in human
+    growth plate biopsies. If a plate at Tanner four to five has dropped below the optimum, the case subject is
+    in the rescuable region and every null was measured in the wrong animal at the wrong point on its curve. If
+    instead falling tone simply tracks a shrinking pre-hypertrophic population, the target is disappearing and the
+    line closes. THE TWO READINGS PREDICT OPPOSITE SIGNS AND ONE IMMUNOSTAINING SERIES SEPARATES THEM.'
   what_is_known: chu2026 - PTH1R listed with ALPL as a pre-hypertrophic zone marker in early pubertal human growth
     plate biopsies, four donors, with a Fig 7A endocrine-receptor dotplot across clusters GP1 to GP5. kindblom2002
     - Ihh and PTHrP protein in early hypertrophic chondrocytes, falling with Tanner stage, with the RESTING ZONE,
     epiphyseal bone and metaphyseal bone EXPLICITLY EXCLUDED from the quantification. hallett2021 - the mouse counterpart,
     Pth1r enriched 3.0-fold in non-label-retaining cells while Pthlh is enriched 2.6-fold in the slow-cycling fraction.
-  what_is_missing: PTH1R protein or transcript in human growth plate as a function of Tanner stage or bone age,
+  what_is_missing: 'PTH1R protein or transcript in human growth plate as a function of Tanner stage or bone age,
     at any n. Also missing - PTH1R in the human RESTING zone at any stage, since kindblom2002 excluded it by design
     and chu2026 reports a cluster assignment rather than a per-zone quantification. And the per-cluster PTH1R values
-    behind chu2026 Fig 7A, which are in the figure source data rather than the text.
+    behind chu2026 Fig 7A, which are in the figure source data rather than the text. ROUND 197 ESTABLISHED WHY,
+    AND IT IS STRUCTURAL RATHER THAN AN OVERSIGHT. Every molecular dataset of the human growth plate in existence
+    comes from ONE surgical route - percutaneous epiphysiodesis at Karolinska for constitutionally tall stature
+    or leg-length discrepancy - and that operation is performed only while there is growth left to stop. chu2026:
+    10 participants aged 11 to 14 years, Tanner B/G2 to B/G4, deposited as GSE288028. avijgan2026: patients aged
+    12 years 2 months to 14 years 6 months, Tanner 2 to 4, per its Table 1. kindblom2002: 10 patients from epiphyseal
+    surgery with Greulich-Pyle bone ages topping out around 14 years. THE TISSUE AT BONE AGE 16 HAS NEVER BEEN SAMPLED
+    AND CANNOT BE OBTAINED BY THE ROUTE THAT PRODUCED ALL EXISTING SAMPLES. Re-analysing GSE288028 would therefore
+    not answer the question even if run perfectly - it does not reach the stage in question.'
   nearest_evidence:
   - chu2026
   - kindblom2002
   - hallett2021
+  - weir1996
+  - correa2010
   nearest_evidence_note: One human transcriptomic snapshot at one stage, one human protein series of the ligands
     only, and one mouse sorted-population comparison. No human receptor series exists.
-  discriminating_experiment: PTH1R immunohistochemistry or in situ hybridisation on the existing human growth plate
-    biopsy series - kindblom2002 used 10 patients from epiphyseal surgery and avijgan2026 and chu2026 have further
-    banked specimens spanning pubertal stages - quantified per zone including the resting zone, against Greulich-Pyle
-    bone age. A falling receptor curve through late puberty closes the line; a flat or rising one keeps it open
-    and makes the late case the RIGHT case rather than the wrong one.
+  discriminating_experiment: 'The Karolinska epiphysiodesis pipeline cannot reach bone age 16 and re-analysis of
+    GSE288028 cannot either. Three routes remain. (1) ARCHIVED PATHOLOGY: PTH1R immunohistochemistry on banked paraffin
+    blocks of late-adolescent physis from limb salvage, amputation, corrective osteotomy or post-mortem series,
+    stained alongside the Tanner 2-4 epiphysiodesis blocks as the young comparator - this is the only route to the
+    actual stage and it needs no new surgery. (2) PROXY: quantify PTH1R against a maturation marker WITHIN existing
+    specimens, since plate maturation varies across the Tanner 2-4 range already sampled, and extrapolate with the
+    extrapolation declared. (3) ANIMAL SURROGATE: PTH1R immunostaining across the closing physis of a fusing species
+    - rabbit distal femur closes at about 20 to 24 weeks - to establish whether receptor density falls, holds or
+    rises as a plate approaches fusion. A falling receptor curve closes the line; a flat or rising one makes the
+    late case the RIGHT case rather than the wrong one.'

@@ -21232,45 +21232,86 @@ edges:
   target: teriparatide
   relation: correlates_with
   sign: unknown
-  magnitude: NO EFFECT - intermittent PTH(1-34) at 50 micrograms per kilogram daily from postnatal day
-    4 to day 13 in WILD-TYPE mouse pups changed none of six endochondral length endpoints - tibia
-    length, presphenoid, basisphenoid and basioccipital bone lengths, and the intersphenoid and
-    sphenoccipital synchondrosis lengths - while significantly raising tibial bone volume fraction,
-    trabecular number, trabecular spacing and bone mineral density in the same animals
-  context: eight wild-type vehicle animals against sixteen wild-type PTH animals, caliper accurate to
-    0.001 mm for tibia and micro-CT for the cranial base, in the fastest-growing window a mouse has
+  magnitude: NO EFFECT - intermittent PTH(1-34) at 50 micrograms per kilogram daily from postnatal day 4 to day 13 in WILD-TYPE
+    mouse pups changed none of six endochondral length endpoints - tibia length, presphenoid, basisphenoid and basioccipital
+    bone lengths, and the intersphenoid and sphenoccipital synchondrosis lengths - while significantly raising tibial bone
+    volume fraction, trabecular number, trabecular spacing and bone mineral density in the same animals
+  context: eight wild-type vehicle animals against sixteen wild-type PTH animals, caliper accurate to 0.001 mm for tibia and
+    micro-CT for the cranial base, in the fastest-growing window a mouse has
   evidence_tier: T1
   refs:
   - koh2022
   confidence: C
-  notes: 'THE FIRST NON-RAT GROWING MAMMAL WITH A BONE LENGTH ENDPOINT UNDER A PTH1R AGONIST, and the
-    drug was demonstrably active in the same bones on every other parameter. Round 195 established by
-    enumeration that the regulatory package contained no such animal; the academic literature has one
-    and it is negative. The same paper''s discussion carries the only fusion-timing observation in
-    existence, secondhand from xie2012: PTH partially prevented premature cranial synchondrosis fusion
-    in achondroplastic mice at 100 micrograms per kilogram for four weeks.'
+  notes: 'THE FIRST NON-RAT GROWING MAMMAL WITH A BONE LENGTH ENDPOINT UNDER A PTH1R AGONIST, and the drug was demonstrably
+    active in the same bones on every other parameter. Round 195 established by enumeration that the regulatory package contained
+    no such animal; the academic literature has one and it is negative. The same paper''s discussion carries the only fusion-timing
+    observation in existence, secondhand from xie2012: PTH partially prevented premature cranial synchondrosis fusion in achondroplastic
+    mice at 100 micrograms per kilogram for four weeks.'
   traversal_usable: true
 - edge_id: e01369
   source: round196_the_pair_fed_answer_and_the_mouse_null
   target: pth1r_receptor
   relation: correlates_with
   sign: unknown
-  magnitude: cutting PTH tone by 61 per cent with cinacalcet for 14 days in growing uraemic rats left
-    tibia length, total growth plate height, hypertrophic zone height, calcein osseous front advance and
-    BrdU chondrocyte proliferation rate all unchanged, and left total body length gain unchanged in
-    sham, sham pair-fed and nephrectomised animals alike, while raising body weight gain from 12.7 to
-    21.6 grams and feed efficiency from 77 to 141 grams per kilogram
-  context: subtotally nephrectomised and sham ad-lib and pair-fed Sprague-Dawley rats, cinacalcet 15
-    mg/kg/day orally, the mirror of schmitt2000 from the same group with Oh J on both papers
+  magnitude: cutting PTH tone by 61 per cent with cinacalcet for 14 days in growing uraemic rats left tibia length, total
+    growth plate height, hypertrophic zone height, calcein osseous front advance and BrdU chondrocyte proliferation rate all
+    unchanged, and left total body length gain unchanged in sham, sham pair-fed and nephrectomised animals alike, while raising
+    body weight gain from 12.7 to 21.6 grams and feed efficiency from 77 to 141 grams per kilogram
+  context: subtotally nephrectomised and sham ad-lib and pair-fed Sprague-Dawley rats, cinacalcet 15 mg/kg/day orally, the
+    mirror of schmitt2000 from the same group with Oh J on both papers
   evidence_tier: T1
   refs:
   - nakagawa2008
   - schmitt2000
   confidence: C
-  notes: 'THE TWO PAPERS DISSOCIATE THE AXES. Raising PTH1R signalling raises weight gain and feed
-    efficiency; lowering PTH tone raises weight gain and feed efficiency. Weight is not tracking PTH1R
-    tone. And the one experiment that looked directly at the plate found nothing there to move across a
-    61 per cent swing in the ligand. schmitt2000''s healthy pair-fed length contrast does not survive
-    recomputation as a pairwise t-test - p equals 0.19 at n equals 7 against a reported significance
-    from Duncan''s multiple range test - while its uraemic contrast does, at p equals 0.0055.'
+  notes: THE TWO PAPERS DISSOCIATE THE AXES. Raising PTH1R signalling raises weight gain and feed efficiency; lowering PTH
+    tone raises weight gain and feed efficiency. Weight is not tracking PTH1R tone. And the one experiment that looked directly
+    at the plate found nothing there to move across a 61 per cent swing in the ligand. schmitt2000's healthy pair-fed length
+    contrast does not survive recomputation as a pairwise t-test - p equals 0.19 at n equals 7 against a reported significance
+    from Duncan's multiple range test - while its uraemic contrast does, at p equals 0.0055.
+  traversal_usable: true
+- edge_id: e01370
+  source: round197_the_inverted_u_closes_the_shape
+  target: pthrp_ihh_feedback_loop
+  relation: correlates_with
+  sign: biphasic
+  magnitude: bone length falls at BOTH extremes of PTHrP-PTH1R signalling tone - zero signalling (Blomstrand, PTHrP null,
+    chondrocyte PTH1R knockout, Zfp521 conditional knockout, human PTHLH haploinsufficiency) and maximal signalling (Jansen
+    metaphyseal chondrodysplasia in human, Col2-driven PTHrP overexpression in mouse, which gives short-limbed dwarfism) -
+    with wild type at or near the maximum and every exogenous agonist trial in a healthy animal returning no change
+  context: assembled across mouse transgenics, mouse knockouts, human Mendelian disease and agonist trials in mouse, rat and
+    human, all on a bone-length or stature endpoint
+  evidence_tier: T1
+  refs:
+  - weir1996
+  - correa2010
+  - koh2022
+  - winer2010
+  confidence: B
+  notes: 'THE SHAPE IS THE ANSWER. An agonist can only add length from BELOW the optimum, and that is exactly the set of states
+    in which agonism has ever worked - uraemic growth failure and FGFR3-suppressed achondroplasia. It is also exactly the
+    set in which it does nothing: wild-type mouse pups, young and adult male rats, rats to terminal, and randomised human
+    children. The single surviving route to a positive is kindblom2002''s finding that both ligands FALL with Tanner stage,
+    which would put a late human below the optimum - and which is equally consistent with a target population that is disappearing
+    along with the plate.'
+  traversal_usable: true
+- edge_id: e01371
+  source: round197_the_inverted_u_closes_the_shape
+  target: teriparatide
+  relation: correlates_with
+  sign: unknown
+  magnitude: every healthy-animal femoral-length positive under a PTH1R agonist is between 2 and 6 per cent, and an isocaloric
+    pair-fed design shows that CALORIC INTAKE ALONE moves L4 vertebral body height in a growing rat by 6.4 per cent in males
+    and 5.0 per cent in females
+  context: wezeman2003, Sprague-Dawley rats from 30 days of age, 45 days of Lieber-DeCarli liquid diet, L4 dissected and measured
+    superior to inferior cortical endplate, n=5 per group
+  evidence_tier: T2
+  refs:
+  - wezeman2003
+  - toromanoff1998
+  confidence: C
+  notes: THE EFFECT SIZES BEING CHASED ARE THE SIZE OF THE FEEDING ARTEFACT, and only two studies in the whole line controlled
+    intake. The same paper shows vertebral body height is a dissection and a caliper with a coefficient of variation between
+    0.8 and 7 per cent, so the complete absence of that endpoint under any PTH1R agonist is not a technical barrier. toromanoff1998,
+    the lone healthy-animal positive, does not report body weight in its abstract and is not open access.
   traversal_usable: true
