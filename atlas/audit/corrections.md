@@ -8354,3 +8354,95 @@ a ligand drug (CORR-219). The clearance arm remains the differentiated one with 
 tissue architecture — no NPPC made, receptor and sink both carried, ECE1 and IDE out-transcribing MME — is
 unaffected. **And the term assignment is still unmeasured for the drug that wins**, which makes
 `g_l12_is_there_a_cell_level_decomposition_for_navepegritide` more urgent rather than less.
+
+---
+
+## CORR-222 — "an hour a day is enough" was a cell-culture model that predicted a clinical wash, and a bone-length experiment refutes it
+
+Round 220's conclusion that the two CNP drugs are interchangeable did not come only from a failed search
+(CORR-221). It came from a **model this atlas had already built**, recorded in
+`every_drug_on_the_cnp_axis`:
+
+> `biomarin_cnp_variants_us8198242` Fig 25 reports that exposing rat chondrosarcoma cells to CNP-22 for
+> **one hour or two hours once daily was substantially as effective as continuous exposure** at reversing
+> FGF2-induced arrest of chondrocyte growth… The corrected statement is that the axis needs roughly **an
+> hour a day of adequate concentration, not permanent occupancy** — which also predicts that daily
+> vosoritide and weekly sustained navepegritide should perform similarly, **as they do**.
+
+**The model made a prediction and the prediction is wrong at the level of bone length.** `breinholt2019`
+Table 5 — wild-type FVB mice, five weeks, CNP-38 at **203 µg/kg/day, the same dose in both arms**, only the
+delivery schedule differing:
+
+| bone | daily bolus | continuous infusion | ratio | different from bolus? |
+|---|---|---|---|---|
+| femur | +5.5 % | +7.1 % | 1.29× | no |
+| tibia | +4.0 % | **+12.2 %** | **3.05×** | **yes**, P<0.05 |
+| **spine** | +11.3 % | **+25.0 %** | **2.21×** | **yes**, P<0.05 |
+
+**Three failures compounded here and they are worth separating.**
+
+1. **A cell-culture proxy stood in for the endpoint.** "Reversing FGF2-induced arrest of chondrocyte
+   growth" in rat chondrosarcoma cells is not bone length. The atlas's own rules already forbid reading a
+   zone height as a cell height (CORR-190, CORR-197); reading a proliferation-rescue assay as a growth
+   result is the same error one level further out.
+2. **The source was a competitor's patent figure.** `biomarin_cnp_variants_us8198242` is BioMarin's — the
+   developer of the *daily* molecule — and Fig 25 is exactly the figure a daily-dosing programme needs to
+   be true. That is not a reason to discard it, but it is a reason to require an independent bone endpoint
+   before building a prediction on it.
+3. **And the model was retro-fitted to the observation it then "predicted."** The clause *"which also
+   predicts that daily vosoritide and weekly sustained navepegritide should perform similarly, as they do"*
+   treats a cross-trial comparison the atlas had not power-checked as confirmation. CORR-221 shows that
+   comparison could not have distinguished them. **A model that explains a null it cannot resolve has not
+   been tested.**
+
+**What survives of the model.** The BioMarin figure is still a real observation about *that* readout in
+*those* cells, and it may well be true that an hour a day saturates FGF2-arrest reversal. What does not
+follow is that an hour a day saturates *longitudinal growth*, and the whole-animal experiment says it does
+not.
+
+**The rule this adds.** When an in-vitro observation is used to predict an in-vivo outcome, the prediction
+must be stated **as a falsifiable claim with the in-vivo experiment named** — not folded into a sentence
+that also cites the outcome as confirmation. And when the in-vivo experiment exists, it outranks the cell
+assay regardless of which came first.
+
+---
+
+## CORR-223 — the patent that claims autophagy activators for bone growth cites, in its own background, the evidence that one of its three claimed classes reduces bone growth
+
+`wo2017055370` (Fondazione Telethon; Settembre and Cinque among the inventors) claims **an activator of the
+Beclin1–Vps34 complex** for treating bone growth disorders, and names three classes: **a Beclin 1 peptide,
+an mTORC1 inhibitor, or a BH3 mimetic** — with the mTORC1 list given explicitly as rapamycin, KU0063794,
+WYE354, deforolimus, Torin 1, Torin 2, temsirolimus, everolimus, sirolimus, NVP-BEZ235 and PI103.
+
+**Its own background section then cites three sources showing mTORC1 inhibitors reduce longitudinal
+growth.** This atlas retrieved two of them independently:
+
+- **`alvarezgarcia2007`** — 4-week-old male rats, rapamycin **2 mg/kg/day intraperitoneally for 14 days**:
+  bone longitudinal growth rate **94 ± 3 vs 182 ± 3 µm/day — a 48 % reduction** — with disturbed maturation
+  and hypertrophy and decreased cartilage resorption, and body weight gain 60.2 vs 113.6 g.
+- **`hymes2011`** — paediatric renal transplant recipients on sirolimus: significantly lower growth velocity
+  in cm/year and smaller change in height SDS at 6, 12 and 24 months.
+
+**Rapamycin at the same 2 mg/kg/day intraperitoneal dose `cinque2015` used for Tat-Beclin 1 halves growth
+plate elongation in a growing rat.**
+
+**Why this is a correction and not just a finding.** This atlas has repeatedly been at risk of treating
+"autophagy activator" as a *class* from which a growth agent could be picked — round 219 proposed one as
+the replacement for a dead lever, and the obvious next step from there is the clinically available member
+of the class. **The clinically available members are mTORC1 inhibitors, and they are the ones that reduce
+growth.** The route matters more than the endpoint: mTORC1 inhibition induces autophagy *by shutting down
+the anabolic programme a growing chondrocyte needs*, which is the opposite of releasing Beclin 1 from
+Bcl-2 while leaving anabolism intact.
+
+**The rule this adds.** A mechanism-defined drug class is not a shortlist. Before any member of a class is
+proposed, name the **route** each member takes to the node and check whether that route has its own
+growth-relevant liability — because two compounds hitting one node from opposite directions can have
+opposite effects on the endpoint. And read a patent's **background** as carefully as its claims: it is
+where the filer records what they had to distinguish themselves from, which makes it the most honest
+section in the document.
+
+**A provenance note, and the tool working correctly.** The patent's third citation is Gonzalez et al.,
+*Pediatr Nephrol* 2010, which this atlas has **not** retrieved. `hymes2011` is an independent report of the
+same direction and is what is cited above. `addref.py` **refused** the entry when it was first filed under
+the wrong first author — the PMID resolved to Hymes, not Gonzalez — which is exactly the guard against the
+error this atlas exists to prevent.

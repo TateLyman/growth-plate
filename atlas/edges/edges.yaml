@@ -23270,3 +23270,100 @@ edges:
   - wang2015_ach_autophagy
   confidence: E
   gap_id: g_l12_does_partial_postnatal_fgfr4_inhibition_impair_chondrocyte_autophagy
+- edge_id: e01472
+  source: round222_the_patent_answers_the_wild_type_question_and_kills_its_own_second_compound_class
+  target: autophagy_chondrocyte
+  relation: correlates_with
+  sign: unknown
+  magnitude: THE WILD-TYPE ARM DOES NOT EXIST, AND NOW THAT IS DEFINITE RATHER THAN UNCERTAIN. WO 2017/055370
+    A1 Figure 17 f-h - the inventors' own patent on the mechanism - has exactly THREE keys and THREE bars,
+    Fgfr4 +/+ VEHICLE, Fgfr4 -/- VEHICLE and Fgfr4 -/- TAT-BECLIN 1. Read against the printed axis, collagen
+    amount runs about 100, 65 and 90 per cent; femur length at P9 about 100, 89 and 97; at P15 about 100, 93
+    and 98. THE TREATED NULL LANDS JUST BELOW THE WILD-TYPE BAR AND NEVER ABOVE IT, AND NO WILD-TYPE ANIMAL
+    HAS EVER RECEIVED THE PEPTIDE - not in cinque2015 and not in the filing, which is where a filer puts
+    every result they have
+  context: 'the same figure predicts why headroom may be small - a 35 per cent COLLAGEN deficit produces only
+    a 7 to 11 per cent LENGTH deficit, so the length response to collagen is strongly saturating near the
+    wild-type point and adding collagen to an animal already at 100 per cent may buy nothing. THAT IS AN
+    INFERENCE FROM THREE BARS, not a result, and it is the reason to run the trivial wild-type arm rather
+    than assume either way. Bar heights are read from a 300-dpi render and are approximate; the ARM COUNT is
+    not'
+  evidence_tier: T2
+  refs:
+  - wo2017055370
+  - cinque2015
+  confidence: C
+  gap_id: g_l12_does_an_autophagy_activator_lengthen_a_wild_type_bone
+- edge_id: e01473
+  source: round222_the_patent_answers_the_wild_type_question_and_kills_its_own_second_compound_class
+  target: mtorc1_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: THE mTORC1 BRANCH OF THE AUTOPHAGY ROUTE IS DEAD ON GROWTH DATA, AND THE PATENT CITES THE KILL
+    ITSELF. wo2017055370 claims mTORC1 inhibitors - rapamycin, KU0063794, WYE354, deforolimus, Torin 1,
+    Torin 2, temsirolimus, everolimus, sirolimus, NVP-BEZ235, PI103 - as activators of the Beclin1-Vps34
+    complex for bone growth disorders, while its own background cites three sources showing they REDUCE
+    longitudinal growth. alvarezgarcia2007 - 4-week-old male rats, rapamycin 2 mg/kg/day intraperitoneally
+    for 14 days, BONE LONGITUDINAL GROWTH RATE 94 AGAINST 182 MICROMETRES PER DAY, a 48 PER CENT REDUCTION,
+    with disturbed maturation and hypertrophy and decreased cartilage resorption. hymes2011 - paediatric
+    renal transplant recipients on sirolimus, significantly lower growth velocity and smaller height SDS
+    change at 6, 12 and 24 months
+  context: THE ROUTE MATTERS MORE THAN THE ENDPOINT. mTORC1 inhibition induces autophagy by shutting down the
+    anabolic programme a growing chondrocyte needs, which is the opposite of releasing Beclin 1 from Bcl-2
+    while leaving anabolism intact. The rat dose is the SAME 2 mg/kg/day intraperitoneal that cinque2015 used
+    for Tat-Beclin 1. The human data are observational in transplant recipients where steroids, uraemia and
+    graft function all confound growth
+  evidence_tier: T1
+  refs:
+  - alvarezgarcia2007
+  - hymes2011
+  - wo2017055370
+  confidence: A
+- edge_id: e01474
+  source: round222_the_patent_answers_the_wild_type_question_and_kills_its_own_second_compound_class
+  target: fgfr3_receptor
+  relation: inhibits
+  sign: unknown
+  magnitude: ACTIVATING FGFR3 BLOCKS AUTOPHAGIC FLUX, WHICH RUNS AGAINST THE SELF-LIMITING HYPOTHESIS AT ONE
+    END OF THE AXIS. wo2017055370 Example 2 - RCS chondrocytes stably expressing FGFR3 wild-type, G380R
+    (achondroplasia) or R248C (thanatophoric) by retroviral transduction, put through the standard flux assay
+    with leupeptin at 50 micromolar for 2 hours and bafilomycin at 200 nanomolar for 4 hours. THE LYSOSOMAL
+    CLAMP FAILED TO RAISE LC3-II IN THE MUTANT LINES against FGFR3 wild-type cells, with FACS confirming
+    lower endogenous LC3. wang2015_ach_autophagy reports the same in an achondroplasia mouse growth plate,
+    and COL9A1 rises dose-dependently under an FGFR3 inhibitor in humans
+  context: 'THE UNCOMFORTABLE COROLLARY IS THAT THIS CASE SITS AT THE OTHER END. Acute FGF18-driven signalling
+    CONTRIBUTES to autophagy partly through FGFR3 - cinque2016_editorial states mainly FGFR4 and TO A LESSER
+    EXTENT FGFR3 - while chronic constitutive overactivation BLOCKS flux. Tonic and phasic signalling through
+    one receptor need not share a sign. Our patient has NORMAL FGFR3, so inhibition removes a small positive
+    contribution without a pathological block to relieve, and the achondroplasia data do not transfer. Both
+    ends are characterised and the middle is empty'
+  evidence_tier: T2
+  refs:
+  - wo2017055370
+  - wang2015_ach_autophagy
+  - cinque2016_editorial
+  confidence: C
+  gap_id: g_l12_does_partial_postnatal_fgfr4_inhibition_impair_chondrocyte_autophagy
+- edge_id: e01475
+  source: round222_the_patent_answers_the_wild_type_question_and_kills_its_own_second_compound_class
+  target: cnp_protein
+  relation: activates
+  sign: +
+  magnitude: A WILD-TYPE ELEVATION WITH A MAGNITUDE, ON THE AXIAL SKELETON, FROM A SAME-DOSE SCHEDULE
+    CONTRAST. breinholt2019 Table 5 - FVB mice, five weeks, CNP-38 at 203 micrograms/kg/day, THE SAME DOSE
+    IN BOTH ARMS, bone length by X-ray - femur +5.5 (bolus) against +7.1 per cent (continuous infusion), not
+    separated; tibia +4.0 against +12.2, a 3.05-fold difference; SPINE +11.3 AGAINST +25.0, a 2.21-fold
+    difference, with tibia and spine formally different from the bolus arm at P<0.05. The authors state it
+    themselves - bone growth EVEN IN A HEALTHY ANIMAL WITH NORMAL ENDOGENOUS CNP LEVELS could be greatly
+    accelerated by sustained exposure. AND TABLE 6 DISSOCIATES THE MARKERS FROM THE GROWTH - the daily CNP-39
+    arm raised BAP 51 and PINP 144 per cent while delivering a third to a half the length of the weekly arm,
+    which raised BAP 14 and PINP 53
+  context: one experiment, one laboratory, five weeks, by the sponsor of the sustained-release product, and
+    an osmotic pump is not a prodrug. hirota2018 already established wild-type CNP elevation by minipump so
+    the DIRECTION is confirmatory; what is new is the SPINE magnitude of 25 per cent in a normal animal and
+    that it comes from a schedule contrast at fixed dose. The marker dissociation means a monitoring plan
+    titrating on BAP or PINP would have titrated toward the worse molecule
+  evidence_tier: T1
+  refs:
+  - breinholt2019
+  confidence: B
