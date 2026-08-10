@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/build-growth-source-packets.yml'
       - 'tools/sourcepack_chunks/**'
+      - 'tools/sourcepack_v2.patch.gz.b64'
   workflow_dispatch:
 
 permissions:
@@ -19,12 +20,15 @@ jobs:
       - name: Check out source branch
         uses: actions/checkout@v4
 
-      - name: Reconstruct builder
+      - name: Reconstruct and patch builder
         shell: bash
         run: |
           cat tools/sourcepack_chunks/part* | base64 -d | gzip -dc > tools/build_source_packs.py
-          python -m py_compile tools/build_source_packs.py
           test "$(wc -c < tools/build_source_packs.py)" -eq 48875
+          base64 -d tools/sourcepack_v2.patch.gz.b64 | gzip -dc > /tmp/sourcepack_v2.patch
+          patch tools/build_source_packs.py /tmp/sourcepack_v2.patch
+          test "$(wc -c < tools/build_source_packs.py)" -eq 50852
+          python -m py_compile tools/build_source_packs.py
 
       - name: Set up Python
         uses: actions/setup-python@v5
