@@ -14198,3 +14198,133 @@ gaps:
     A WILD-TYPE PLATE, the ligand node returns as the only biologic-compatible series partner and the recifercept
     failure is confirmed as a background artefact; IF IT SHORTENS ONE, the node is dead on mechanism and
     not merely dead on asset.
+- gap_id: g_l12_does_partial_postnatal_fgfr4_inhibition_impair_chondrocyte_autophagy
+  question: Does removing 5 to 20 per cent of FGFR4 signalling pharmacologically, postnatally, in an already-built
+    growth plate, produce any measurable fall in chondrocyte autophagy or in type II collagen secretion
+    - or is the Fgfr4-null phenotype a developmental requirement that partial adult blockade never reaches?
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  why_it_matters: BECAUSE IT IS THE HINGE UNDER BOTH SIDES OF THE FGFR4 ARGUMENT, AND CORR-046 RETRACTED
+    AN ARGUMENT FOR SKIPPING IT. cinque2015 shows FGF18 through FGFR4 drives the autophagy that type II
+    collagen secretion and bone growth require, and that Fgfr4-/- mice fail to induce it postnatally. That
+    is the strongest reason to think erdafitinib's FGFR4 coverage is a cost. BUT THE GENOTYPE IS A GERMLINE
+    NULL - complete loss from conception - and erdafitinib at 8 mg removes 19.8 per cent of FGFR4 at a
+    Hill slope of 1 and 4.9 per cent at 2.13, in a plate that is already built. CORR-046 retracted the
+    receptor ledger precisely for substituting one for the other. IF PARTIAL POSTNATAL BLOCKADE PRODUCES
+    NO DEFICIT, then erdafitinib's off-target burden is a paper cost, the Tat-beclin-1 candidate has nothing
+    to repair, and the only thing separating the two molecules is safety margin. IF IT DOES, the atlas has
+    a measurable, drug-created, repairable deficit for the first time - and a repair with an in vivo bone-length
+    result already attached.
+  what_is_known: 'THE TWO ENDS ARE KNOWN AND THE MIDDLE IS EMPTY. At the complete-loss end, cinque2015:
+    Fgf18-/- embryos show completely suppressed growth plate autophagy, Fgf18+/- and Fgfr4-/- mice fail
+    to induce it postnatally and have decreased Col2 in the growth plate, and Atg7 deletion in limb mesenchyme
+    or cartilage reduces femoral and tibial length from P9. At the occupancy end, this atlas now computes
+    what erdafitinib actually removes at each receptor at 8 mg on one assay and one scale. NOTHING CONNECTS
+    THEM. No FGFR inhibitor has ever been assayed for LC3-II, procollagen-II retention or Col2 secretion
+    in a chondrocyte, at any concentration, by anyone - which is remarkable given that surf301_pb060_2024
+    independently nominates COL9A1 as a cartilage-relevant human pharmacodynamic marker under an FGFR3
+    inhibitor and links compromised collagen secretion back to FGFR3 signalling through the Slc26a2 literature.'
+  what_is_missing: A concentration-response for LC3-II, procollagen-II ER retention and Col2 secretion in
+    FGF18-stimulated growth plate chondrocytes under erdafitinib and under a selective FGFR3 inhibitor,
+    spanning the achievable free concentrations of both. The selective comparator is the control that separates
+    an FGFR4 effect from an FGFR3 effect without needing a knockout at all.
+  nearest_evidence:
+  - cinque2015
+  - perera2017
+  - hudkins2024
+  - surf301_pb060_2024
+  nearest_evidence_note: cinque2015 has the readouts and only genetic perturbations; perera2017 and hudkins2024
+    have the pharmacology and no collagen readout. No source has both.
+  discriminating_experiment: THE SAME PLATE THAT ANSWERS THE PER-AGENT FRACTION GAP CAN CARRY THIS AS TWO
+    EXTRA READOUTS. RCS chondrocytes or primary growth plate chondrocytes, FGF18-stimulated, erdafitinib
+    and a selective FGFR3 inhibitor across matched FGFR3 coverage, reading LC3-I/II by western and procollagen-II
+    localisation by immunofluorescence, with Spautin-1 and Tat-beclin-1 as controls in both directions.
+    THE DESIGN IS ALREADY PUBLISHED - it is cinque2015's own figure 2, run with drugs instead of genotypes.
+    IF ERDAFITINIB SUPPRESSES LC3-II AND THE SELECTIVE AGENT DOES NOT at matched FGFR3 engagement, the cost
+    is real, molecule-specific and repairable; if neither does, the FGFR4 argument closes for good in both
+    directions.
+- gap_id: g_l12_does_an_autophagy_activator_lengthen_a_wild_type_bone
+  question: Does pharmacological autophagy activation increase bone length in a WILD-TYPE animal, or does
+    it only restore length in an animal made deficient - and is there any autophagy activator with human
+    exposure data that reaches cartilage?
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  why_it_matters: CORR-203 MAKES THIS THE WHOLE QUESTION. cinque2015 reports that intraperitoneal Tat-beclin-1
+    at 2 mg/kg daily increased Col2 levels and FEMUR SIZES in P9 and P15 Fgfr4-/- mice - the only in vivo
+    bone-length increase under a drug anywhere in the FGFR thread. But the animals were deficient, so that
+    is RESTORATION, and this case needs ELEVATION above a normal baseline, which every round since 203 has
+    treated as the harder claim. THE MECHANISM IS ALSO THE RIGHT KIND FOR THIS ATLAS'S OBJECTIVE FUNCTION.
+    Autophagy here acts on the SECRETION of the matrix rather than on the number of divisions, and round
+    198 made proliferative reserve the exhaustible currency while CORR-197 established that a zone height
+    is cells times cell height PLUS EXTRACELLULAR MATRIX. An agent that acts on the matrix term is acting
+    on a term nothing else in the stack touches, and it should not spend the reserve.
+  what_is_known: 'ONE DIRECTION ONLY, AND THE MAGNITUDES ARE OUT OF REACH. cinque2015 - Tat-beclin-1 (Beclin-1
+    Activator II, retro-inverso, Millipore) 2 mg/kg/day intraperitoneally from birth, readout at P9 and
+    P15, increased Col2 and femur size in Fgfr4-/- mice and restored Col2 with elimination of intracellular
+    procollagen-II in Fgf18+/- mice. The quantities are in Extended Data Fig. 9g-i, which this atlas does
+    not hold, and the authors state that the bone phenotype of Fgfr4-/- mice requires further study. NO
+    WILD-TYPE TREATMENT ARM IS DESCRIBED IN THE MAIN TEXT. Separately, autophagy is necessary for normal
+    growth - Atg7 deletion in limb mesenchyme or cartilage shortens femur and tibia from P9 - which establishes
+    the floor without saying anything about the ceiling.'
+  what_is_missing: A wild-type treatment arm, and a pharmacokinetic route. Tat-beclin-1 is a research peptide
+    with no human exposure. Whether ANY autophagy activator with human data reaches avascular cartilage
+    at an active concentration is unexamined, and the obvious candidates act through mTOR inhibition, which
+    inhibits growth by a separate and much better-documented route.
+  nearest_evidence:
+  - cinque2015
+  - trompet2024
+  nearest_evidence_note: cinque2015 is the only bone-length result for an autophagy activator in any species;
+    trompet2024 is the atlas's nearest precedent for an agent that raises terminal hypertrophic cell height
+    by local rather than systemic route.
+  discriminating_experiment: TWO EXPERIMENTS, IN ORDER, AND THE FIRST IS A LITERATURE REQUEST RATHER THAN
+    A BENCH EXPERIMENT. FIRST, read Extended Data Fig. 9g-i of cinque2015 and establish whether a wild-type
+    arm was treated and what happened to it. SECOND, if none was, the experiment is trivial and cheap -
+    wild-type mice, Tat-beclin-1 at the published 2 mg/kg/day from birth against vehicle, femur and tibia
+    length at P15 and P30, with Col2 and LC3-II as the mechanistic readouts. IF A WILD-TYPE BONE LENGTHENS,
+    this is the first agent in the atlas to elevate the matrix term above a normal baseline and it goes
+    straight into the ranking; IF NOT, it is a repair agent only, and it is worth carrying solely if the
+    partial-blockade gap above comes back positive.
+- gap_id: g_l3_does_a_functional_soluble_beta_klotho_circulate_in_humans
+  question: Does a functional soluble beta-klotho ectodomain circulate in human plasma at concentrations
+    able to act as a co-receptor in trans for FGF19 at a tissue that does not express beta-klotho - and
+    is that what the Olink KLB analyte is measuring?
+  type: known_unknown
+  layer: L3
+  tractability: 3
+  why_it_matters: IT IS THE ONLY ROUTE BY WHICH AN ENDOCRINE FGF COULD SIGNAL AT A TISSUE THAT LACKS ITS
+    CO-RECEPTOR, AND THIS ATLAS CLOSED THAT QUESTION WITHOUT KNOWING THE ROUTE EXISTED. CORR-041 killed
+    the FGF19/FGFR4 mechanism in human cartilage on the grounds that KLB is essentially absent from human
+    growth plate chondrocytes. fgf19cart2025's own design shows the argument is incomplete - FGF19 alone
+    did nothing to cultured metatarsals, and the growth-restraining effect appeared only when recombinant
+    KLB was ADDED TO THE MEDIUM. A co-receptor supplied from outside works. AND surf301_pb060_2024 REPORTS
+    A PLASMA KLB ANALYTE RISING UNDER FGFR3 INHIBITION. If that analyte is functional shed ectodomain at
+    a meaningful concentration, then the whole class of endocrine FGF arguments this atlas has closed on
+    tissue-expression grounds - FGF19, FGF21, and the withdrawn FGF21/undernutrition circuit - has a route
+    back in. If it is not, three closures are secure and the trans route is a laboratory artefact of adding
+    200 ng/mL of a recombinant protein.
+  what_is_known: 'THE ALPHA PARALOGUE IS ESTABLISHED AND THE BETA ONE IS NOT. Soluble ALPHA-klotho is well
+    characterised in human serum by validated sandwich ELISA at roughly 0.2 to 0.9 ng/mL and is understood
+    as a proteolytically shed ectodomain with its own signalling roles. For BETA-klotho, this atlas holds
+    no human circulating concentration, no validated assay characterisation, and no demonstration that a
+    shed form retains co-receptor function in trans. What it holds is one proteomic panel reporting a KLB
+    analyte that rose above a 1.5-fold threshold in adults with cancer on dabogratinib, and one organ-culture
+    experiment in which 200 ng/mL of recombinant KLB conferred FGF19 responsiveness on mouse metatarsals.'
+  what_is_missing: A human circulating beta-klotho concentration from a validated assay, evidence that the
+    circulating species is the ectodomain rather than a cross-reacting epitope, and a functional test -
+    does human plasma, or recombinant KLB at a physiological rather than a 200 ng/mL concentration, confer
+    FGF19 responsiveness on a KLB-negative cell?
+  nearest_evidence:
+  - fgf19cart2025
+  - surf301_pb060_2024
+  - kurosu2007
+  nearest_evidence_note: fgf19cart2025 demonstrates the trans mechanism at a supraphysiological concentration;
+    the poster reports the analyte without characterising it; kurosu2007 establishes that the co-receptor
+    requirement is absolute.
+  discriminating_experiment: A CONCENTRATION-RESPONSE FOR THE CO-RECEPTOR, WHICH NOBODY HAS RUN. Repeat
+    the fgf19cart2025 metatarsal experiment holding FGF19 at a physiological 0.2 ng/mL and titrating recombinant
+    KLB from 0.1 to 200 ng/mL, and separately titrating FGF19 at a fixed high KLB. That yields the two numbers
+    the whole argument needs - the minimum effective concentration of each - and converts a thousandfold
+    gap from an assertion into a measurement. IN PARALLEL, western blot human plasma against a validated
+    beta-klotho antibody to establish whether the circulating species is an ectodomain at all.

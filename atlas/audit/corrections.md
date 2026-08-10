@@ -8060,3 +8060,99 @@ number I was reporting. The general form: **a sensitivity table is not optional 
 depends on an assumed parameter**, and where a formulation exists that avoids the parameter entirely — here,
 fitting against exposure rather than against inhibition — that formulation is the primary result and the
 modelled one is the supplement.
+
+---
+
+## CORR-215 — I nominated the FGF19/klotho-beta loop as "the one lever nobody has tried" in two consecutive rounds, and this atlas had already closed it in three places
+
+**Rounds 217 and 218 both ended on the same sentence** — that the FGF19/klotho-beta compensatory loop
+observed in `surf301_pb060_2024` "remains the one lever nobody has tried." The user asked for it resolved.
+It resolves against being a lever, and **three of the four disproofs were already on disk**:
+
+- **CORR-041** — measured, in this atlas, from GSE288028: FGF19 detected in **0 of 4** human growth plate
+  donors and KLB at **1.00 / 2.50 / 0.20 / 0.00 %** of chondrocyte-gated cells. The endocrine route is
+  closed from both ends.
+- **CORR-042** — the gated re-run, which additionally showed FGFR4 is **chondrocyte-exclusive, 35- to
+  80-fold enriched**.
+- **The `cinque2015` extraction**, sitting inside `erdafitinib_versus_the_alternatives_decision`, which
+  had already resolved the FGF19-versus-FGF18 contradiction exactly as this round re-derived it: same
+  receptor, two ligands, opposite signs, and the one that operates in a human plate needs no klotho.
+
+Only the fourth ground is new — the **~1000-fold concentration gap** between the 200 ng/mL that shortened
+a metatarsal and the ~0.2 ng/mL a human carries.
+
+**This is the third instance of the CORR-205 failure mode in eleven rounds**, after CORR-213's two. The
+pattern is now precise enough to name: **I search the literature for a mechanism and do not search this
+atlas for the same mechanism.** CORR-213 added the rule that an agent may not enter an inventory without
+opening its own node. That rule was not enough here, because FGF19 has no node — it lives in a
+*correction* and in a *quantitative row inside another agent's node*.
+
+**The rule this adds.** Before naming anything an untried lever, grep `audit/corrections.md` and the
+`quantitative` blocks of related nodes for the mechanism's own keywords — not just the node index. The
+corrections log is the highest-value index in this atlas precisely because it records what was *removed*,
+and removed claims are the ones most likely to be re-proposed. A three-second grep would have caught this
+in both rounds.
+
+---
+
+## CORR-216 — a bibliography entry carried the wrong DOI and the wrong first author for two rounds
+
+`fgf19cart2025` was recorded with **doi 10.7150/ijbs.114186** (which does not resolve) and **first author
+Wang Z**. The paper is **Chen H, Cui Y, Li J, Duan M, Pi C, Zhou X, Xie J**, *Int J Biol Sci* 2025;
+**21(10):4428–4449**, **doi 10.7150/ijbs.110133**, PMID 40765829. The **PMID held here was correct** and
+the recorded finding matches the real paper, so the source was read and extracted correctly — only the
+metadata was wrong. Both fields are corrected in place with the previous values retained as
+`doi_corrected` and `first_author_corrected`, so anyone who cited the old DOI can find out what happened.
+
+**Why it matters more than a typo.** This atlas's first standing rule is never to invent a citation, an
+author or a year. A wrong DOI and a wrong author are not inventions — the PMID and access route are
+recorded and the paper was fetched — but they are **indistinguishable from an invention to anyone
+downstream**, which is the same defect from the reader's side. The entry was added by hand rather than by
+`addref.py`, which is how the mismatch survived: `addref.py --pmid` would have written all four fields
+from one lookup.
+
+**The rule this adds.** Where a source has a PMID, it enters through `addref.py --pmid` and nothing else.
+Hand-written entries are for genuinely non-indexed sources only, and those already carry
+`verify_by_hand: true`.
+
+---
+
+## CORR-217 — the retracted receptor ledger, approached for a fourth time, caught one step before it entered a node
+
+Round 219 computed something genuinely new: what fraction of **each** FGFR erdafitinib actually removes at
+8 mg, on one assay and one scale — **FGFR3 31.9 % / FGFR1 21.9 % / FGFR4 19.8 %** at Hill 1, and
+**16.6 / 6.2 / 4.9 %** at Hill 2.13 — and the matched-coverage comparison showing dabogratinib would
+remove **1.8 %** of FGFR1 and **1.3 %** of FGFR4 at the same FGFR3 engagement.
+
+**The paragraph that follows from that table writes itself, and it is forbidden.** Erdafitinib removes
+roughly a third as much of each anti-growth receptor as of the pro-growth one; dabogratinib removes almost
+none; selectivity cannot be bought with dose; therefore prefer the selective molecule. **That is the
+receptor ledger.** CORR-046 retracted it. CORR-147 records that I rebuilt it twice after the retraction
+and served it to the user, whose words were *"you're looping again."* **This was the fourth approach.**
+
+**All three of CORR-046's reasons still bind, and each maps onto this round's own material:**
+
+1. **Germline-and-developmental applied to partial-and-postnatal.** `cinque2015`'s *Fgfr4*⁻/⁻ is germline;
+   `karolak2015` is Col2a1-Cre from embryonic cartilage. Erdafitinib removes **5–20 %** of FGFR4 in an
+   already-built adolescent plate. Complete developmental loss being harmful does not make partial
+   postnatal inhibition harmful.
+2. **Three receptors weighted equally with a magnitude for one.** FGFR3 spans roughly **65 cm** of adult
+   human stature between achondroplasia and CATSHL. **Neither FGFR1 nor FGFR4 has any reported human
+   stature phenotype at all.** A fractional-occupancy table compares quantities whose per-unit value
+   differs by an unknown and probably enormous factor.
+3. **A ledger does not overrule a measurement.** Erdafitinib's net effect on a growing human was measured
+   and was large and positive.
+
+**What survived into the node, stated as narrowly as it can be.** The occupancy numbers are a real
+measurement nobody had computed, and they settle the question the round was actually asked: erdafitinib
+already removes 5–20 % of FGFR4, so suppressing FGF19 would buy a fraction of a fraction of a thousandth.
+The admissible comparative statement is that **erdafitinib's off-target occupancy is roughly ten to
+fifteen times dabogratinib's at matched FGFR3 engagement, and the value of that difference in centimetres
+is unknown and may be zero.**
+
+**The rule this adds, and it is procedural rather than substantive.** When a computation reproduces the
+*shape* of a previously retracted argument, the retraction must be re-read **before** the conclusion is
+written, not after. Four approaches in a programme where the user has already called out the loop once is
+a sign that the ledger is intuitively compelling and empirically unsupported — which is exactly the
+combination that needs a hard procedural stop rather than another judgement call. The stop is now written
+into the round-219 tool as section 5b, so the next person to run it hits it before the table's implication.
