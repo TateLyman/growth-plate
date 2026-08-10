@@ -8446,3 +8446,81 @@ section in the document.
 same direction and is what is cited above. `addref.py` **refused** the entry when it was first filed under
 the wrong first author — the PMID resolved to Hymes, not Gonzalez — which is exactly the guard against the
 error this atlas exists to prevent.
+
+---
+
+## CORR-224 — the premise the whole stack rests on was never written down, and therefore never tested
+
+Every agent in this stack — vosoritide, navepegritide, erdafitinib, infigratinib, the NPR3 arm — was
+developed for **achondroplasia**. This case has **normal FGFR3**. **That transfer has been assumed in every
+round of this programme and never stated as a claim, which is why it was never graded and never tested.**
+
+**Round 223 found the first two tests of it, and both go against.**
+
+- **`kot2026`** gave infigratinib 2 mg/kg/day subcutaneously from P21 to P49 — the pubertal window — to
+  Aga2/+ osteogenesis imperfecta mice **and to wild-type littermates**. In the wild-type animals it produced
+  **no significant effect on femur length in either sex**, **no significant difference in growth plate zone
+  lengths**, and **reduced trabecular BMD and microarchitecture with reduced stiffness, yield point and
+  ultimate force in males**.
+- **The Voxzogo CHMP report** — a file on disk since round 207 — states that **"particularly in healthy
+  animals"** vosoritide caused altered shape, **dislocation of physis**, decreased BMD, reduced mechanical
+  stability, altered growth plate histology and gait impairment, and that **"in animals of disease,
+  functional impairment of hind limbs was hardly observed."** The sponsor's own explanation, which the CHMP
+  recorded understanding: irregular bone growth follows from **strong FGFR3 inhibition**, achievable in
+  healthy animals **because in achondroplasia the basal FGFR3 activity is much higher.** **A normal
+  background is the one that gets pushed below normal.**
+
+**Two drug classes, acting on one axis from opposite ends, both worse in the normal background.**
+
+**What this is not.** It is **not** grounds to overturn the erdafitinib human observation. CORR-046
+retracted a rodent ledger used against a human measurement, and CORR-217 caught the fourth attempt to
+rebuild it. The honest position is that **the transfer premise now has direct evidence against it in two
+species and two drug classes, and one large human observation for it, and nothing reconciles them** —
+because **no growth plate has ever been measured in a human with normal FGFR3 under either drug class.**
+That is now a gap with a named, cheap experiment: the erdafitinib paediatric cases already have serial
+radiographs.
+
+**The rule this adds, and it is the most general one in this log.** *An assumption that is never written
+down is never graded, and an ungraded assumption is never tested.* Before a stack is built for a specific
+case, the **background transfer** for every agent in it must be stated as an explicit claim with a grade —
+"this agent's evidence comes from background X and is being applied to background Y" — so that the search
+for counter-evidence is triggered by the schema rather than by luck. This one surfaced only because I was
+chasing an unrelated question about autophagy.
+
+**And the fourth instance of the own-files failure mode.** The Voxzogo EPAR passage has been on disk since
+round 207, in a file the user supplied specifically to be mined. CORR-215 added the rule to grep the
+corrections log for a mechanism's keywords; that rule does not cover **supplied documents that were read for
+one purpose and never re-read for another.** The extension: when a round's question changes, the previously
+supplied corpus must be re-searched against the new question, not just the new literature.
+
+---
+
+## CORR-225 — I retired a discriminating test because the only two agents I tested it on both passed
+
+CORR-040 recorded that round 29 had proposed **Δheight ÷ Δbone-age** as the test separating a yield lever
+from a velocity lever, and then retired it:
+
+> **PROPEL3 reports no accelerated bone-age progression** — and vosoritide reports the same. **Both
+> candidates pass, so the test does not discriminate.** It is a necessary condition, not a separator.
+
+**That reasoning is invalid, and `mcdonnell2026` shows it.** The COACH combination — navepegritide plus
+lonapegsomatropin — moves the bone-age to chronological-age ratio from **0.77 → 0.86** (treatment-naive) and
+**0.92 → 0.99** (navepegritide-experienced). Working those against the reported mean ages: bone age advances
+**1.33** and **1.57 years per calendar year**. **The combination fails the test.**
+
+**A test that two agents pass and a third fails is discriminating.** Two passes establish *specificity*, not
+*insensitivity* — a test that never fires would be useless, but this one fires on the first agent that
+genuinely spends reserve. The test is reinstated.
+
+**And the paper's own reading of its data is wrong in a way worth recording as a rule.** It reports the
+ratio "remained <1.0 in both groups throughout, indicating no acceleration of skeletal maturation beyond
+normal." **A ratio is a level; its change is the rate.** Both ratios *rose*. A delayed skeleton catching up
+toward normal is still a skeleton being spent — benign in a five-year-old with a decade of reserve, and the
+opposite of benign at bone age 16, where round 198 makes reserve the exhaustible currency.
+
+**The rule this adds.** A screening test may only be retired when an agent **fails** it and the failure
+proves uninformative, or when the test is shown not to measure what it claims. **Unanimous passes are not
+grounds for retirement** — they are grounds for suspecting the candidate set is too narrow. And when a
+source reports a *ratio* over time, always recompute the underlying quantities: the direction of a ratio's
+change carries information that the ratio's level conceals, and here the concealment ran in the sponsor's
+favour.
