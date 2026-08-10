@@ -2905,6 +2905,20 @@ refs:
     title: Short term, low dose estradiol accelerates ulnar growth in boys
     type: primary
     year: 1985
+  cdc2000_statage:
+    accession: null
+    added: '2026-08-10'
+    first_author: National Center for Health Statistics
+    one_line_finding: The L, M and S parameters for United States stature-for-age. Used in round 229 to convert the height
+      Z-scores printed in farouk2023 Table 1 into centimetres, so that no standard deviation is assumed anywhere. Downloaded
+      2026-08-10 and archived at atlas/data/round229/cdc2000_statage_lms.csv
+    ref_id: cdc2000_statage
+    tier: null
+    title: 'CDC 2000 Growth Charts: stature-for-age LMS parameters (statage.csv), ages 24-240 months, both sexes'
+    type: dataset
+    url: https://www.cdc.gov/growthcharts/data/zscore/statage.csv
+    verify_by_hand: true
+    year: 2000
   chagin2006:
     added: '2026-08-09'
     cited_by: 54
@@ -6230,8 +6244,14 @@ refs:
     is_preprint: false
     journal: Pediatric blood & cancer
     note: 'Surname is the compound ''Farouk Sait''; addref.py matches ref_id against the FIRST token of the surname, so the
-      id is farouk2023 rather than faroukSait2023. ABSTRACT ONLY - PMC10957205 is an author manuscript and Europe PMC reports
-      isOpenAccess N, so the full text was not read. Added in round 45 because it supplies the DENOMINATOR the atlas was missing:
+      id is farouk2023 rather than faroukSait2023. FULL TEXT READ IN ROUND 229 and the type upgraded from primary_abstract_only. It had been filed
+      abstract-only since round 45 on the ground that PMC10957205 is an author manuscript with Europe PMC reporting
+      isOpenAccess N - TRUE OF EUROPE PMC AND FALSE OF THE ARTICLE: NCBI eutils efetch db=pmc returns the complete
+      author manuscript including Table 1. THE TABLE CARRIES HEIGHT PERCENTILE AND Z-SCORE AT START AND END OF
+      TREATMENT FOR ALL SEVEN PATIENTS WITH DURATION, which is the growth dataset rounds 216-228 kept trying to build
+      out of single case reports. SEVEN OF SEVEN GAINED HEIGHT CENTILE, mean +1.20 SD; subject 3 went from Z +0.97 to
+      +3.40 over FORTY MONTHS from age 14. The full text also states that all seven had hyperphosphataemia and that
+      physeal widening with rapid growth acceleration was observed in all of them. Added in round 45 because it supplies the DENOMINATOR the atlas was missing:
       every FGFR-TKI skeletal record it held was a numerator without one - brizini2024 one case, erdachild2024 one case, nadeaunguyen2026
       five FAERS reports with no population behind them. 3/7 is the only per-patient SCFE incidence on the FGFR axis, and
       it sits against 3/30 in dauber2026 for vosoritide. The caveats are severe and are why this is T2: n = 7, single centre,
@@ -9972,6 +9992,26 @@ refs:
     title: Localization and distribution of cartilage oligomeric matrix protein in the rat intervertebral disc
     type: primary_abstract_only
     year: 2006
+  ito2021:
+    added: '2026-08-10'
+    cited_by: 15
+    doi: 10.1007/s00223-020-00659-6
+    first_author: Ito N
+    in_epmc: true
+    is_preprint: false
+    journal: Calcified tissue international
+    one_line_finding: INDEX AND NEGATIVE-EVIDENCE USE ONLY. A clinical overview of congenital hyperphosphataemic conditions
+      caused by deficient FGF23 activity (HFTC/HHS from FGF23, GALNT3 or KL mutations). Its enumerated clinical features are
+      ectopic periarticular calcification, painful hyperostosis of the lower legs, dental abnormalities and systemic inflammation,
+      with low-phosphate diet, phosphate binders and acetazolamide as treatment - NO STATURE OR GROWTH PHENOTYPE IS LISTED
+      ANYWHERE
+    open_access: false
+    pmid: '31965220'
+    ref_id: ito2021
+    tier: null
+    title: Congenital Hyperphosphatemic Conditions Caused by the Deficient Activity of FGF23
+    type: review
+    year: 2021
   itoh2012:
     added: '2026-08-05'
     cited_by: 43
@@ -10864,6 +10904,25 @@ refs:
       and -independent pathways
     type: primary_abstract_only
     year: 2000
+  kashayichowdoj2025:
+    added: '2026-08-10'
+    cited_by: 0
+    doi: 10.2106/jbjs.cc.25.00192
+    first_author: Kashayi-Chowdojirao S
+    in_epmc: true
+    is_preprint: false
+    journal: JBJS case connector
+    one_line_finding: An Indian girl with a GALNT3 mutation causing hyperphosphatemic familial tumoral calcinosis presented
+      at age 9 with SLIPPED CAPITAL FEMORAL EPIPHYSIS, treated by in situ screw fixation with prophylactic pinning of the
+      contralateral hip; the authors call GALNT3 mutation with SCFE a previously unreported association - the SECOND independent
+      human instance of SCFE arising from genetic FGF23 loss
+    open_access: false
+    pmid: '41100632'
+    ref_id: kashayichowdoj2025
+    tier: null
+    title: 'Slipped Capital Femoral Epiphysis in a Case of Hyperphosphatemic Familial Tumoral Calcinosis: A Case Report'
+    type: primary
+    year: 2025
   kashiwagi2001:
     added: '2026-08-05'
     cited_by: 363
@@ -18131,6 +18190,26 @@ refs:
     url: https://www.clinicaltrialsregister.eu/ctr-search/trial/2020-001189-13/results
     verify_by_hand: true
     year: 2023
+  reddy2026:
+    added: '2026-08-10'
+    cited_by: 0
+    doi: 10.2106/jbjs.cc.26.00054
+    first_author: Reddy J
+    in_epmc: false
+    is_preprint: false
+    journal: JBJS case connector
+    one_line_finding: A 13-year-old boy with a homozygous FGF23 variant (hyperphosphatemic tumoral calcinosis) presented with
+      VALGUS SLIPPED CAPITAL FEMORAL EPIPHYSIS on a background of GENERALISED OSTEOSCLEROSIS, with elevated calcium, phosphate
+      and PTH; managed with phosphate binders, dietary restriction and in situ fixation of both hips - a slipped epiphysis
+      produced by the FGF23/phosphate arm alone, with no FGFR3 inhibition in cartilage anywhere in the picture
+    open_access: false
+    pmid: '42531376'
+    ref_id: reddy2026
+    tier: null
+    title: 'Valgus Slipped Capital Femoral Epiphysis Associated With Osteosclerotic Dysplasia Due to Hyperphosphatemic Tumoral
+      Calcinosis: A Case Report'
+    type: primary
+    year: 2026
   reginato1995:
     added: '2026-08-05'
     cited_by: 3

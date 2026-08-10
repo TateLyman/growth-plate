@@ -8758,3 +8758,86 @@ archive holds trials of that kind" is an inference about contents; "this archive
 fact, and the two were not distinguished. The stronger form of the same rule is the one the atlas keeps
 relearning — **before hunting for a missing number, re-read the documents already in the bibliography.** The
 number closing round 228 was inside a reference the programme had been citing for dozens of rounds.
+
+---
+
+## CORR-233 — rounds 227 and 228 built on a dissociation that does not exist: one child counted twice, and the other one grew
+
+Round 227 is titled *the bone age answered by inference - the plate is weak not spared*, and round 228
+extended it: **"THREE CHILDREN IN WHOM THE PHYSIS FAILED MECHANICALLY WITHOUT THE HEIGHT MOVING"**, offered
+as evidence that the physeal widening under an FGFR inhibitor is arrested remodelling rather than preserved
+reserve. Both legs of that count are wrong, and the biology it was built to support is the opposite of what
+the data say.
+
+**The arithmetic first.** `nadeaunguyen2026` states all five of its cases came from the literature, and its
+reference list carries exactly four clinical sources — `brizini2024`, `farouk2023`, `erdachild2024`,
+`erdaseries2025`. **FDA case 1 IS `brizini2024`**: optic pathway glioma, SCFE at twelve weeks which is 84
+days exactly, hypothalamic obesity, surgical pinning. Round 228 wrote "cases 1 and 2 … with brizini2024 that
+is three children". **It is two.** I added a case series to a case report without checking whether the
+series had already absorbed it — the same class of error as CORR-232's archive, one level down.
+
+**Then the biology, which is worse for the claim.** **FDA case 2 is `farouk2023` subject 6** — the only one
+of that paper's three SCFE patients inside the FDA's stated 10-to-15 age range, the other two being 9 and 17
+at diagnosis. **Subject 6 went from the 30th height centile to the 69th in five months, +1.02 SD.** He is
+one of the fastest growers in his cohort. The FDA does not say so because it reported him under an
+orthopaedic adverse-event term. The remaining "non-grower", `brizini2024`, is a case report about a hip that
+never measured serial height at all.
+
+**So neither child was a non-grower. I read reporting silence as biological absence.** A case report written
+by an orthopaedic team about a slipped epiphysis does not measure serial stature, and its not doing so is a
+fact about the authors' interests, not about the patient's growth plate. **In the one cohort that measured
+everybody — `farouk2023`, n = 7 — growth acceleration is 7 of 7 and includes 3 of 3 of the slips.**
+
+**What this settles.** The gap *does physeal widening mean preserved reserve or arrested remodelling* is
+answered in favour of **preserved reserve**: a plate cannot deliver 1 to 2.4 standard deviations of measured
+stature while it has stopped proliferating. And the two readings were never alternatives — `farouk2023`
+names rapid-growth-associated physeal widening as the mechanical predisposition itself, which makes the
+weakness a **consequence** of the proliferation. Round 227's title is half right: the plate is weak, and it
+is also not spared, because it is growing hard.
+
+**What survives untouched.** The bone-age argument. Measured stature gain says the reserve is being *used*;
+it says nothing about whether it is being *spent* faster than it is converted, and no on-treatment bone age
+exists (round 228). That remains the only open question on this line, and it is the one that decides adult
+height rather than adolescent height.
+
+**The rule.** CORR-230 required a noise floor under a derived quantity. This requires the same discipline
+one step earlier: **an absence in a source is evidence only if the source was in a position to record the
+presence.** Before a negative observation from a case report enters the graph, state what the report was
+written to measure. A hip paper that is silent about height is not evidence about height.
+
+---
+
+## CORR-234 — I recorded a paper as unreadable, wrote the reason down, and never tested it; 83 more are in the same state
+
+`farouk2023` entered the bibliography in round 45 typed `primary_abstract_only`, with the reason preserved
+in its own note: *PMC10957205 is an author manuscript and Europe PMC reports isOpenAccess N, so the full
+text was not read.* **That is true of Europe PMC and false of the article.** NCBI eutils `efetch db=pmc`
+returns the complete manuscript, Table 1 included. Table 1 carries height percentile and Z-score at start
+and end of treatment for all seven patients with duration — **the growth dataset rounds 216 to 228 were
+trying to reconstruct out of single case reports.**
+
+**The defect is not that one retrieval route failed. It is that a failed retrieval was recorded as a
+property of the paper and then never retested, while the atlas spent twenty rounds hunting for what it
+contained.** CORR-232 said: re-read the bibliography before hunting for a missing number. This is the
+sharper version — **re-read it especially where the bibliography says you cannot.**
+
+**I measured how big the hole is** rather than asserting it, in
+`atlas/tools/round229_abstract_only_unlock_probe.py`, which resolves every abstract-only ref to a PMCID and
+asks eutils for the body:
+
+| | |
+|---|---|
+| refs typed `primary_abstract_only` carrying a PMID | 251 |
+| no PMC record at all — genuinely abstract-only | 117 |
+| **full text recoverable through eutils** | **83** |
+| of those, ones Europe PMC reports as NOT open access | **20** ← the blind spot |
+
+The 20 are the ones the atlas actively believed were closed. The other 63 are a second and slightly
+different failure: open all along, cited, and never fetched. Every one of the 83 is a source already judged
+relevant enough to cite, carrying tables and methods nobody here has looked at. The list is archived at
+`atlas/data/round229/abstract_only_unlock.tsv` with per-ref character counts.
+
+**The rule.** `primary_abstract_only` is a statement about a retrieval attempt, not a property of a paper,
+and it must never again be treated as the second thing. **Any ref carrying that type gets one eutils attempt
+before it carries a conclusion, and the type is downgraded to a note recording the date of the attempt.**
+Two lookups exist and they disagree; consulting one and believing it is not a search.
