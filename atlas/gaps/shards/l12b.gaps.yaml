@@ -1106,3 +1106,86 @@ gaps:
     is unchanged or reduced - the agonist is spending reserve the inhibitor was preserving, and it must be kept
     out of the stack. Aromatase inhibition does not lower growth plate PTHrP tone - the hypothesis dies and the
     PTH1R line closes completely.'
+- gap_id: g_l2_p16_cellular_senescence_in_the_growth_plate
+  type: search_established
+  layer: L2
+  tractability: 5
+  question: Do growth plate resting-zone chondrocytes accumulate p16-positive cellular senescent cells as the plate
+    approaches exhaustion, and does clearing them with a senolytic restore proliferative output or final bone length?
+  why_it_matters: This atlas has used the word senescence for two different things and never noticed. One is the
+    Baron-Nilsson PROGRAMMED senescence - a coordinated downregulation of hundreds of growth-promoting genes across
+    kidney, lung, liver and heart as well as the plate, driven by growth output rather than time. The other is p16-positive
+    CELLULAR senescence with a senescence-associated secretory phenotype, which is a distinct cell state and the
+    target of an entire drug class. Round 198 established that fusion is triggered by exhaustion of proliferative
+    potential, which makes cells that have irreversibly stopped dividing the exact currency of the problem. Senolytics
+    - dasatinib plus quercetin, fisetin, navitoclax, UBX compounds - exist precisely to remove such cells from a
+    tissue that needs divisions. If a fraction of the resting-zone pool at bone age 16 is p16-positive rather than
+    quiescent, that fraction is recoverable budget rather than spent budget, and the distinction is the difference
+    between a fixed ceiling and a raisable one.
+  what_is_known: weise2001 - the untreated plate declines in proliferation rate, plate height, proliferative and
+    hypertrophic cell number, terminal cell size and column density together, and fuses when proliferation approaches
+    zero. nilsson2005 - resting-zone methylation falls with age in a way specific to slow replication inside the
+    niche, and does not fall during rapid replication of the same cells in culture, which is at least consistent
+    with a reversible state rather than an executed programme. The atlas holds replicative_senescence_chondrocyte
+    and growth_plate_senescence as separate nodes without distinguishing p16-positive cellular senescence from the
+    programmed gene programme.
+  what_is_missing: Any measurement of p16INK4a, p21, SA-beta-galactosidase or a SASP signature in growth plate resting-zone
+    chondrocytes as a function of age or proximity to fusion, in any species. And any administration of any senolytic
+    to a growing animal with a bone length endpoint. A two-query Europe PMC sweep returning 120 records found the
+    entire senolytic-in-cartilage literature to be osteoarthritis and articular.
+  nearest_evidence:
+  - weise2001
+  - ba2025
+  nearest_evidence_note: No direct evidence exists in either direction. The nearest is the whole-tissue senescence
+    phenotype of weise2001 and, from the opposite end, the antler transcriptional programme that ba2025 describes
+    as having intrinsically low tumorigenic potential tied to apoptotic regulation - a pool that proliferates enormously
+    without accumulating the state.
+  discriminating_experiment: Stain rabbit or rat proximal tibial growth plates across the senescence series - the
+    weise2001 design already produces them - for p16INK4a, p21 and SA-beta-galactosidase by zone, and correlate
+    the resting-zone positive fraction with remaining growth. Then dose a growing animal with a senolytic through
+    to natural fusion in a fusing species and measure FINAL bone length, not velocity. A rising p16-positive fraction
+    that senolytic clearance reduces WITH a final-length gain reopens the ceiling. A flat fraction, or clearance
+    without length, closes it and confirms that the atlas should stop using one word for two states.
+- gap_id: g_l2_can_targeted_nanoparticles_deliver_a_pool_pulse
+  type: quantitative_gap
+  layer: L2
+  tractability: 4
+  question: Now that cartilage-selective delivery into the avascular growth plate exists, does a TRANSIENT, LOCAL
+    Hedgehog pulse delivered by targeted nanoparticle expand the resting-zone pool and raise FINAL bone length in
+    a wild-type fusing animal - and does the pool it adds stay chondrocytic?
+  why_it_matters: 'Round 179 identified the Hedgehog lever as having an apparent time-dependent sign - trompet2024
+    gave a local transient intra-articular SAG bead and got plus 3.63 per cent femur in 8 of 8 animals at P equals
+    0.00004, while orikasa2024 deleted Ptch1 permanently in the same cell type and got clonally expanded pool that
+    MIGRATED OUT of the plate and became trabecular osteoblasts with no length change. The distinction the atlas
+    drew was duration and reversibility, and it could not be tested because there was no way to deliver a controlled
+    transient pulse to growth plate cartilage. ye2026 published one: chondrocyte-membrane-coated nanoparticles with
+    a collagen-II-binding peptide, delivering the Hedgehog agonist purmorphamine into the plate in vivo with a bone
+    and body length gain. This is simultaneously the test of the time-dependent sign and the enabling technology
+    for the round-178 charge-discharge escape, which required lowering resting-zone IGF availability while maintaining
+    it systemically.'
+  what_is_known: trompet2024 - local transient SAG, plus 3.63 per cent femur and plus 1.65 per cent whole leg in
+    rat, the only pool intervention in this atlas with a length endpoint. orikasa2024 - permanent Ptch1 deletion
+    in PTHrP-positive resting chondrocytes, hyperplastic plate, patched roses, then fate leak to diaphyseal trabecular
+    osteoblasts and NO length change. ye2026 - CT-CM-NPs deliver purmorphamine into growth plate cartilage in vivo
+    in a hypochondroplasia mouse, upregulating Hedgehog, restoring ciliogenesis and increasing bone and body length.
+    harboe2024 and oichi2023 supply the IGF half of the charge-discharge problem that the same delivery platform
+    could address.
+  what_is_missing: Any use of targeted delivery in a WILD-TYPE animal rather than a disease model; any FINAL bone
+    length endpoint rather than an interim one, which round 198 made mandatory; any dose-and-duration series establishing
+    where the Hedgehog sign flips; and any fate tracing of the added pool to check it stays chondrocytic rather
+    than leaking to osteoblast as it did in orikasa2024.
+  nearest_evidence:
+  - ye2026
+  - trompet2024
+  - weise2001
+  nearest_evidence_note: One delivery paper in a disease model, one pool intervention with an interim length endpoint,
+    and the reserve model that makes final length the only endpoint that counts.
+  discriminating_experiment: 'In wild-type growing animals of a FUSING species, dose CT-CM-NP-purmorphamine in a
+    pulse-duration series - single pulse, weekly, and continuous - with a vehicle-nanoparticle arm to control for
+    the carrier. Measure at interim: resting-zone cell layers, cells per column, terminal hypertrophic cell height
+    and calcein elongation rate, the Hunziker five. Then follow a parallel cohort to natural fusion and measure
+    FINAL bone length. Lineage-trace the expanded pool. THREE OUTCOMES DISCRIMINATE. Pulse raises final length and
+    the pool stays chondrocytic - the time-dependent sign is real, route 8 is open and the delivery platform is
+    the tool. Pulse raises interim growth and final length is unchanged - the pool was spent, and this is another
+    rate agent. Pulse expands the pool and the descendants become osteoblasts as in orikasa2024 - the fate leak
+    dominates and the Hedgehog lever is dead regardless of schedule.'
