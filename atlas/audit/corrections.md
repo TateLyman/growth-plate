@@ -9703,3 +9703,27 @@ The paper contains two separate experiments and only one of them bears on a sixt
 | **The high-dose E2 challenge** — 830 ng/mouse/day shrank the plate in controls, **not** in cartilage-specific nulls; via **proliferation**, apoptosis unaffected; in the **proliferative zone**; replicated in orchidectomised males | cartilage ERα is required to **transmit a high-oestradiol insult** | **In principle yes**, because high oestradiol in late puberty is what closes a human plate — but it is measured on **plate height, not bone length**, at a pharmacological dose. |
 
 Quoting the +3.17 % as evidence that blocking cartilage ERα would delay human fusion silently swaps one experiment for the other. The node grades that claim **E** for exactly this reason.
+
+---
+
+## CORR-281 — I derived a dosing prescription from a mechanism and the human trials say the opposite
+
+Round 269 established that **GH induces its own inhibitor at the growth plate** — `Socs2` mRNA up **seventeen-fold**, wild-type metatarsals failing to lengthen under GH at all while `Socs2`-null ones do. The obvious inference, which I did not write down as a claim but which shaped how I framed the GH arm, is that **exposure pattern should matter more than dose**: continuous GH holds SOCS2 up and keeps the plate refractory; pulses let it decay.
+
+**Tested where humans have actually run it, that fails.** `ying2026`, treatment-naive children with GH deficiency, 52 weeks, prespecified primary endpoint: **weekly lonapegsomatropin 10.66 ± 0.22 cm/year versus daily somatropin 9.75 ± 0.26 — non-inferiority *and* superiority**, difference 0.91 ± 0.28 cm/year, similar safety. One network meta-analysis puts lonapegsomatropin above both daily somatropin and somapacitan on annualised height velocity and height SDS change; another concludes long-acting GH offers superior first-year velocity.
+
+**The trials outrank the mechanism.** For this stack there is no evidence-based reason to prefer daily over weekly GH, and some evidence to prefer weekly.
+
+**And the honest boundary, stated so it is not mistaken for a rescue.** Daily-versus-weekly does not span the contrast `isgaard1988` drew. Physiological GH pulses arrive every few hours; **a daily subcutaneous injection is already a single non-physiological bolus**, so both arms of every one of these trials sit on the same side of the pulses-versus-constant boundary. Lonapegsomatropin is also a prodrug releasing unmodified GH on a defined curve, not a flat infusion. So: **the pattern hypothesis is refuted at the frequency that has been tried and untested at the frequency that would matter.** Both halves are recorded; neither cancels the other.
+
+**The reusable lesson.** Round 269 found a real mechanism and I let it imply a clinical preference. A mechanism explains a *ceiling*; it does not license a *protocol*. **Before a mechanism is allowed to imply a dosing choice, check whether the dosing choice has already been randomised** — here it had been, repeatedly, and the answer was on the other side.
+
+## CORR-282 — restoration again, and this time I nearly imported it into the stack
+
+`hornsby2025` is a genuinely good experiment: male rats, six weeks, **grazing versus meal-feeding at identical calories** (3,560 vs 3,460 kcal, P > 0.999), both 20 % below ad libitum. **Body length fell 3 % in grazing rats and not at all in meal-fed ones**; tibial plate width fell 17 % in grazing and was unaffected in meal-fed, the loss falling on proliferative (−18 %) and hypertrophic (−17 %) zones with the **germinal zone untouched**. The mediator is ghrelin/GHS-R-dependent GH burst architecture — meal-feeding **tripled** GH secretion and added **two bursts per day**.
+
+It is free, it is behavioural, and it has a body-length endpoint. It is also **restoration, not elevation** — CORR-203 by name. **Meal-fed animals matched ad libitum controls; they did not exceed them.** Everything demonstrated is protection against a 20 % calorie deficit, and this case is not calorie-restricted.
+
+Two further limits recorded rather than smoothed: the rat arm **confounds GH amount with GH pattern**, since meal-feeding tripled total secretion as well as re-timing it; and **the human arm has no growth endpoint at all** — it measured ghrelin and GH rhythmicity only, and went the *other* way on total GH, the better-patterned arm having *less*.
+
+**Pattern of my own error worth naming:** three times this session a striking result has arrived attached to a deficit model — `koyama2021`, the senolytic literature, and now this — and in each case the interesting question is whether it *elevates* a normal system, which none of them tested. **A result obtained in a deficient animal is a claim about the deficit until someone runs it in a normal one.**
