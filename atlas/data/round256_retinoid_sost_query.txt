@@ -1,0 +1,156 @@
+================================================================================================
+ROUND 256 - THE RETINOID AXIS AND SOST IN THE HUMAN PUBERTAL GROWTH PLATE
+GSE288028, four directly-processed fresh donors. UNGATED unless a gate is named.
+================================================================================================
+
+donor1: 5295 cells passing >= 500 UMI (median 5008 UMI), 36601 features
+
+donor2: 12911 cells passing >= 500 UMI (median 4906 UMI), 36601 features
+
+donor3: 9115 cells passing >= 500 UMI (median 10041 UMI), 36601 features
+
+donor4: 383 cells passing >= 500 UMI (median 3339 UMI), 36601 features
+
+================================================================================================
+STEP 1 - CALIBRATION. What present and absent look like in THIS dataset.
+Positive controls first, then negative controls. The negative block defines the floor:
+any test gene at or below it cannot be distinguished from absent at this depth.
+================================================================================================
+gene          donor1 %det   donor2 %det   donor3 %det   donor4 %det   mean %det   CP10K mean
+COL2A1              88.31         90.65        100.00         52.48       82.86      297.366
+ACAN                44.49         27.12         99.52         24.80       48.98       26.174
+SOX9                20.19          7.70         89.90         25.85       35.91        1.717
+COL10A1              4.48          8.40         94.11          7.31       28.57       10.181
+IHH                  2.10          0.34         33.36          5.48       10.32        0.236
+PTH1R               31.41         12.54         94.19         34.73       43.21        5.592
+PTHLH                0.45          0.43          1.40          1.31        0.90        0.037
+MKI67                2.34          1.39          5.87          0.26        2.47        0.089
+CYTL1               13.13         12.85         85.10         23.50       33.64        4.504
+ALB                  0.08          0.05          0.10          0.00        0.06        0.001
+INS                  0.00          0.00          0.00          0.00        0.00        0.000
+MYOD1                0.00          0.00          0.00          0.00        0.00        0.000
+CD19                 0.45          3.14          0.01          0.52        1.03        0.024
+KRT14                0.38          0.51         11.27          0.00        3.04        0.036
+NEUROD1              0.21          0.05          0.02          0.78        0.27        0.005
+SFTPC                0.02          0.02          0.08          0.00        0.03        0.000
+
+================================================================================================
+STEP 2 - THE RETINOID RECEPTORS. Does RARG dominate in HUMAN as it does in mouse?
+CROSS-GENE COMPARISON IS CONFOUNDED by capture efficiency - read the ordering as
+suggestive, not quantitative. What IS interpretable: whether each gene clears the
+negative-control floor at all.
+================================================================================================
+gene          donor1 %det   donor2 %det   donor3 %det   donor4 %det   mean %det   CP10K mean
+RARA                14.13         12.32          3.52          7.31        9.32        0.213
+RARB                10.84          6.89          7.41         11.75        9.22        0.218
+RARG                19.04          6.85         48.66         20.10       23.66        0.398
+RXRA                26.65         15.22         56.62         32.11       32.65        0.728
+RXRB                 5.10         11.34         24.70         17.75       14.72        0.233
+RXRG                 0.15          0.22          0.05          0.26        0.17        0.002
+
+================================================================================================
+STEP 3 - THE RETINOID SYNTHESIS AND CATABOLISM MACHINERY.
+koyama2021's mechanism is that hedgehog inhibition DROPS Cyp26b1 and RAISES Raldh3,
+raising local retinoid tone and closing the plate. Both enzymes have to exist here
+for that circuit to be available in man.
+================================================================================================
+gene          donor1 %det   donor2 %det   donor3 %det   donor4 %det   mean %det   CP10K mean
+CYP26A1              0.06          0.17          0.14          1.04        0.35        0.011
+CYP26B1              4.59          1.79         10.20          3.66        5.06        0.094
+CYP26C1              0.06          0.13          0.02          0.00        0.05        0.001
+ALDH1A1              0.79          2.44          0.12          1.31        1.16        0.024
+ALDH1A2              2.53          1.80          0.02          0.78        1.28        0.041
+ALDH1A3              2.76          2.29          2.91          4.70        3.16        0.073
+RDH10               11.56          5.01          7.88          4.18        7.16        0.139
+DHRS3               26.84         23.71         39.05         27.42       29.25        0.743
+STRA6                0.04          0.07          0.02          0.26        0.10        0.003
+CRABP1               0.68          2.67          1.16          3.66        2.04        0.111
+CRABP2               0.93          1.00          1.62          5.22        2.19        0.044
+RBP1                 0.53          1.63          5.35          4.18        2.92        0.060
+
+================================================================================================
+STEP 4 - THE WNT BRAKE, AND THE SCLEROSTEOSIS QUESTION.
+sclerostin_sost states SOST has never been demonstrated in growth plate cartilage.
+If SOST sits at the negative-control floor while LRP5/LRP6 do not, the tall stature
+of sclerosteosis is not a physeal SOST effect and that lever leaves this programme.
+================================================================================================
+gene          donor1 %det   donor2 %det   donor3 %det   donor4 %det   mean %det   CP10K mean
+SOST                 0.06          0.08          0.02          0.26        0.10        0.001
+SOSTDC1              0.11          0.17          1.26          0.26        0.45        0.004
+LRP5                 7.63          7.09          0.90         13.58        7.30        0.170
+LRP6                19.83          8.41         29.12         22.45       19.95        0.354
+DKK1                 0.13          0.12          2.35          1.83        1.11        0.016
+
+================================================================================================
+STEP 5 - ZONAL DISTRIBUTION BY MARKER GATE. Detection rate WITHIN each gate.
+THESE GATES ARE ENRICHMENTS, NOT CLUSTERS. CYTL1+ is enriched for the root cluster
+and will include some GP2 and some non-chondrocytes (round 244). The within-gene,
+across-zone contrast is the one that is not confounded by capture efficiency.
+================================================================================================
+
+  GATE: hypertrophic (COL10A1+)
+    cells in gate: donor1=237, donor2=1084, donor3=8578, donor4=28
+    gene         donor1 %det   donor2 %det   donor3 %det   donor4 %det      mean
+    RARG               21.52          8.86         49.58         39.29     29.81
+    RARA               14.77         15.50          3.49         17.86     12.90
+    RARB               13.08          7.56          7.72         17.86     11.55
+    CYP26B1             8.44          1.75         10.29         10.71      7.80
+    ALDH1A3             3.38          2.86          2.94         10.71      4.97
+    ALDH1A2             1.69          1.11          0.02          0.00      0.70
+    CRABP1              0.42          3.78          1.10          0.00      1.33
+    SOST                0.00          0.09          0.02          0.00      0.03
+    LRP5                9.28          7.01          0.84         21.43      9.64
+    COL10A1           100.00        100.00        100.00        100.00    100.00
+    MKI67               4.64          1.29          6.00          0.00      2.98
+    CYTL1              15.19         14.11         85.45         50.00     41.19
+    PTH1R              35.02         13.84         94.78         64.29     51.98
+
+  GATE: proliferating (MKI67+)
+    cells in gate: donor1=124, donor2=180, donor3=535, donor4=1
+    gene         donor1 %det   donor2 %det   donor3 %det   donor4 %det      mean
+    RARG               40.32         15.00         52.71        100.00     52.01
+    RARA               14.52         16.11          2.99          0.00      8.40
+    RARB               12.10          5.00          5.05        100.00     30.54
+    CYP26B1             9.68          3.33         20.37          0.00      8.35
+    ALDH1A3             3.23          0.00          2.62          0.00      1.46
+    ALDH1A2             3.23          3.89          0.00          0.00      1.78
+    CRABP1              0.00          3.33          0.75          0.00      1.02
+    SOST                0.00          0.00          0.19          0.00      0.05
+    LRP5                5.65          9.44          0.75        100.00     28.96
+    COL10A1             8.87          7.78         96.26          0.00     28.23
+    MKI67             100.00        100.00        100.00        100.00    100.00
+    CYTL1              25.00         17.22         88.41          0.00     32.66
+    PTH1R              61.29         16.11         94.77        100.00     68.04
+
+  GATE: root-enriched (CYTL1+)
+    cells in gate: donor1=695, donor2=1659, donor3=7757, donor4=90
+    gene         donor1 %det   donor2 %det   donor3 %det   donor4 %det      mean
+    RARG               56.69         22.72         51.08         50.00     45.12
+    RARA                9.50         11.87          3.47         12.22      9.27
+    RARB               14.82          8.08          7.50         12.22     10.66
+    CYP26B1            15.11          5.55         10.88          6.67      9.55
+    ALDH1A3             6.76          2.41          2.64          8.89      5.18
+    ALDH1A2             1.01          2.29          0.00          2.22      1.38
+    CRABP1              0.43          2.59          1.26          4.44      2.18
+    SOST                0.00          0.18          0.03          1.11      0.33
+    LRP5                2.30          6.57          0.70         12.22      5.45
+    COL10A1             5.18          9.22         94.50         15.56     31.11
+    MKI67               4.46          1.87          6.10          0.00      3.11
+    CYTL1             100.00        100.00        100.00        100.00    100.00
+    PTH1R              82.30         35.99         95.45         70.00     70.93
+
+================================================================================================
+STEP 6 - THE TWO QUESTIONS, ANSWERED AGAINST THE NEGATIVE-CONTROL FLOOR
+================================================================================================
+  negative-control floor (mean detection across 7 absent genes): 0.632 % of cells
+  RARG      mean  23.661 %   (  37.5x floor)   CLEARS the floor in 4/4 donors
+  RARA      mean   9.318 %   (  14.8x floor)   CLEARS the floor in 4/4 donors
+  RARB      mean   9.220 %   (  14.6x floor)   CLEARS the floor in 4/4 donors
+  CYP26B1   mean   5.059 %   (   8.0x floor)   CLEARS the floor in 3/4 donors
+  ALDH1A3   mean   3.164 %   (   5.0x floor)   CLEARS the floor in 4/4 donors
+  SOST      mean   0.104 %   (   0.2x floor)   AT THE FLOOR
+  LRP5      mean   7.300 %   (  11.6x floor)   CLEARS the floor in 3/4 donors
+  LRP6      mean  19.953 %   (  31.6x floor)   CLEARS the floor in 4/4 donors
+
+  READ THIS AS: clearing the floor means the transcript is present in the tissue.
+  It does NOT establish protein, zone, or that the receptor is rate-limiting.
