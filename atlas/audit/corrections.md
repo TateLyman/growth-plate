@@ -9566,3 +9566,27 @@ This changes the atlas's default. Until now, an unreachable full text was record
 **The rule now:** when a claim's grade depends on something behind a paywall, the round does not proceed on the abstract and does not downgrade silently. It **names the document in the ask list and requests it**. An abstract-only source may still be used, but it may never be the reason a question is closed or a candidate is dropped.
 
 **Corollary, from this session's evidence:** the three most consequential reversals here — CORR-262, CORR-268 and CORR-269 — all came from a document this atlas already had access to or could have asked for. The cost of not asking has been measured and it is high.
+
+---
+
+## CORR-270 — I filed a new node from an abstract and the full text says the compound is not that node. Second instance this session, same failure mode as CORR-268.
+
+**What I wrote (round 266).** *marchanalvarez2026* was filed as **the only genuinely new node the session produced** — dynamin, a trafficking control point, argued to be orthogonal to the round-262 collision matrix "by construction" because every other agent in the stack is a signalling intervention. The grading was C and the caveats were about the ex vivo preparation. **None of the caveats was the right one.**
+
+**What the full text says, in the paper's own words.** Dynasore acts *"in a dynamin-independent manner, including cholesterol homeostasis, lipid raft integrity, lysosomal inhibition and actin remodeling."* The mechanism the paper lands on is **lysosomal**: 40 µM accumulated SQSTM1 (autophagy blocked) and raised phospho-RPS6 (**mTORC1 activated**), and the **positive control throughout is bafilomycin**, a v-ATPase inhibitor. The control point is autophagy/mTORC1 — which this atlas already holds. **The novelty was an artefact of reading the compound's name instead of its methods section.**
+
+**And the growth is the wrong kind, measured, not inferred.** *"Low dose dynasore augmented epiphyseal cartilage expansion and matrix accumulation, while reducing chondrocyte proliferation."* EdU markedly reduced at the growth-promoting dose. The authors then state it themselves: *"this increase in length is likely transient."* **Sixth instance of charge-without-discharge, second through mTORC1 — and Newton is an author, the same laboratory as `newton2018`.** One salvage: it retro-confirms round 253, which listed matrix swelling, a synthetic burst and a real rate change as the three candidates for newton2018's 79 µm offset and could not choose. The same lab, a different mTORC1 perturbation, reports elongation *"caused by an accumulation of ECM in the extracellular space."* **The matrix answer is now the supported one** — convergence within one laboratory, so C, not B.
+
+**The rule this makes explicit.** CORR-268 said a paywall is never a reason to drop a source. This adds the other half: **an abstract may not be the basis on which a node is CREATED either.** A novel-looking control point from an abstract is a hypothesis about a compound's name. Both reversals this session came from the same place.
+
+## CORR-271 — round 262 advanced a mechanism at grade D on the assertion that nobody had looked. Somebody had, and they found the opposite.
+
+**What I wrote (round 262).** *"PDE3 is dual-specificity, so cilostazol should raise cAMP as well as cGMP — meaning the CNP-arm partner is also a PTH1R-arm amplifier... Nobody has measured cAMP in a growth plate under a PDE3 inhibitor."*
+
+**What `hirota2022` reports, having tested exactly that.** The PDE3 inhibitor **cilostamide** *"did not apparently change the CNP-induced cGMP elevation and PKA activation"*, and the authors conclude that PTHrP/PTH1R signalling and PDE3 inhibition *"were not involved in the mechanism of CNP-induced PKA activation during chondrogenic differentiation."* The paper cites the cardiac and gastric literatures in which cGMP inhibition of PDE3 **does** raise cAMP, and then shows the chondrocyte does not use that route; its own data implicate calcium (BAPTA-sensitive) and adenylate cyclase regulation instead.
+
+**Direction of the correction.** It removes the one argument that made cilostazol look like a two-arm agent, so **cilostazol is MORE redundant with vosoritide, not less** — round 263's conclusion is strengthened for an additional and independent reason.
+
+**The generalisable error is not the mechanism, it is the phrase "nobody has looked."** That is a claim about the literature, and CORR-267 already established that a search result is a claim about the query. `hirota2022` was **in the bibliography and cited by an existing node** at the time round 262 asserted nobody had looked. **Before writing that nobody has tested X, check the papers this atlas already cites** — the negative was not merely findable, it was already held.
+
+**And the positive half of the same document.** `hirota2022` read in full **survives** and is stronger zone-resolved than the summary it was held on: *"CNP increased the length of the growth plate, but coadministration of a PKA inhibitor, H89, inhibited the growth-promoting effect of CNP only in the hypertrophic zone"* — attenuation of CNP-induced PKA significant in the HZ, not significant in the non-HZ. The authors hedge to *"at least partially through PKA activation"*, so it is partial necessity. One oddity recorded and unresolved by the paper: **CNP and GC-B are predominantly expressed in proliferative/prehypertrophic chondrocytes while the PKA effect lands predominantly in hypertrophic ones.**
