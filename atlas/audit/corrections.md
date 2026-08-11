@@ -9985,3 +9985,48 @@ And underneath the pulsatility argument sits a structural one that was never sta
 **What does not close with NBI-31772:** the question it stood for. `only_free_igf_reaches_the_plate` establishes that the plate sees only the free fraction and sees it poorly — ternary complex at 140–150 kDa cannot enter, and ALS is not transcribed there. **Raising free IGF-1 at the plate remains a live objective with no molecule attached to it.**
 
 **Rule.** Record absence-of-evidence closures with the *size of the searched record*, not just the verdict. "41 items, read in full" is a closure; "no hits" is not.
+
+## CORR-299 — "germline from conception" is not an argument, and I made it three times
+
+Rounds 281, 282 and 283 each discounted a human genetic result with the same move: *the exposure is germline and lifelong from conception, so it says nothing about an intervention at bone age 16.* **The argument proves too much, and the counterexample is this file's own lead agent.**
+
+FGFR3 is a germline gene. Its human phenotypes — achondroplasia, hypochondroplasia, CATSHL — are **prenatal in onset and whole-organism in expression.** And `tyra300_2025` dosed dabogratinib **orally to WILD-TYPE C57BL/6J mice from four to eight weeks of age** — postnatal, juvenile, normal animal — for **femur +8.2%, tibia +6.4%, nasoanal +7.3%** at 14 mg/kg, dose-dependent, no weight difference. Vosoritide and infigratinib move the same axis postnatally in children with a prenatally-established phenotype.
+
+**When an allele starts acting and when a pathway can still be moved are different questions.** The valid one is empirical:
+
+> **Is the gene still doing work in an OPEN growth plate?** — tested by a **tissue-restricted or postnatally-induced perturbation with a bone-LENGTH endpoint.**
+
+Run against round 283's six: **HHIP passes** (`haraguchi2025`). **LCORL fails** (`wyler2024` — hepatic GH/IGF-1, opposite sign to `bai2025`, and not plate-enriched in round 283's own cross). **TET1, ZFAT, NRK, CHD8, FBN1 are untested** — no tissue-restricted and no inducible perturbation with a length endpoint exists for any of them.
+
+**Rule.** Never discount a genetic result by the *timing of the allele*. Discount it — or don't — by whether the gene is expressed and functional in the tissue while the window is open. That is a fact to look up, not an inference to make.
+
+## CORR-300 — same pathway, same direction, opposite outcome: it depends which brake you remove
+
+`xiu2022` **SUFU** deletion: plate expanded, **zonal order destroyed**, no femur gain at P30, **premature closure and significantly SHORTER femurs at P120** — round 268's seventh charge-without-discharge and the one that went negative.
+`haraguchi2025` **HHIP** deletion, limb-restricted: **femur significantly LONGER at 10 and 53 weeks**, no weight change, **zones enlarged but ordered.**
+
+Both mouse. Both genetic. Both raise hedgehog tone. **The difference is the molecular position of the brake:**
+
+| | SUFU | HHIP |
+|---|---|---|
+| location | **intracellular**, downstream of Smoothened | **secreted**, membrane-bound, ligand-binding |
+| effect of loss | constitutive, ligand-**independent**, maximal output | raises Ihh range; pathway stays ligand-dependent, Ihh–PTHrP loop intact |
+| zonal order | **destroyed** | **preserved and enlarged** |
+| femur | **shorter** at P120 | **longer** at 10 and 53 wk |
+
+**This is now the third axis where the same distinction decides the sign:**
+- **Wnt** — SPIN4 (mild reduction in transcriptional output) → longer + bigger resting pool; PORCN inhibition (total ligand-secretion blockade) → HZ expands, PZ shrinks, **plate fuses**. CORR-290.
+- **FGFR3** — isoform-selective inhibition lengthens a wild-type mouse; pan-FGFR carries the FGFR1/2/4 liabilities.
+- **Hedgehog** — above.
+
+**Rule, and it re-ranks the target list rather than just explaining a discrepancy: removing a secreted/extracellular modulator ≠ disabling an intracellular brake ≠ flooding with an agonist.** The first shifts a setpoint inside a feedback-regulated envelope and can add length; the other two saturate the pathway, destroy zonal order and subtract it. **Prefer secreted antagonists, decoys and clearance receptors over intracellular components** — which is exactly what this atlas's own derived compound (an NPR3-selective clearance blocker) already is, and why endogenous osteocrin elongates long bones while flooding the same axis with ligand does not.
+
+## CORR-301 — the best-replicated taller-gene had a second knockout going the other way
+
+Round 283 called **LCORL** "the most cross-species-replicated height-increasing loss-of-function gene in existence" on `kosmicki2026` (+9.99 cm/allele, human), `bai2025` (convergent truncating selection in eight domesticated species; gene-edited mice **+3.0% body length**), and no OMIM syndrome.
+
+`wyler2024` made an Lcorl knockout and reports the opposite: pups **born SMALLER**, normal weight only by 7–9 weeks, lean, **reduced food intake**, improved glucose tolerance — and **stunted growth linked to REDUCED circulating IGF-1** with altered GH-signalling genes **in the liver**.
+
+Not a refutation — different alleles (`bai2025` knocked in the cattle frameshift; `wyler2024` a knockout), homozygotes vs the human heterozygotes, different backgrounds. But it removes the "best-replicated" claim, and the mechanism on offer is **hepatic, not chondral**. Round 283's own cross found LCORL **not cluster-restricted** in the growth plate (baseMean 2.70, padj 0.55). LCORL now looks like a whole-organism metabolic setpoint gene — which is precisely what **fails** CORR-299's open-plate test.
+
+**Rule.** Before writing "most replicated," search the gene's *own* knockout literature, not only the literature that agrees. A convergent-evolution argument across eight species is an argument about selection, not about mechanism, and it does not substitute for a second mouse line.
