@@ -32,6 +32,9 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 - **PTH1R / teriparatide.** Terminal femoral length 0.0% in every arm. — CORR-269
 - **Periosteal release.** Real but age-cutoff ~9.6 y. — periosteum node
 - **Dynamin/dynasore.** Is mTORC1 again; authors call the gain transient. — R267
+- **DNA-methylation arm of the epigenetic ceiling.** A BAND, not a brake: Dnmt1 loss shortens bone by
+  accelerating differentiation; IDH-mutant blockade of demethylation diverts chondrocytes into enchondroma
+  (human syndrome = short stature). Both directions cost growth. — R276
 
 ## THE RECURRING FAILURE MODES (each has cost a turn)
 
@@ -59,12 +62,29 @@ and do not collapse to knees-only. Both compartments are live for him.
 
 ## LIVE FRONTIER — the only things worth a round
 
-- **The imposed epigenetic ceiling** (`arm3`): growth-plate senescence is a body-wide, growth-driven
-  programme with declining H3K4me3 at growth-gene promoters. This is the *mechanism of the ceiling itself*
-  and **nothing has ever been aimed at it.** Biggest unexplored target in the file.
+- **H3K4me3 arm of the epigenetic ceiling** — still open. Different enzymes from DNA methylation
+  (KMT2/SETD1 writers, KDM5 erasers). A search found **no KDM5 or H3K4 intervention with any bone length
+  endpoint in any species.** ← the live half.
 - **Axial-specific growth.** Every agent here was characterised on long bones. The residual is trunk.
 - **Distraction osteogenesis** — the only intervention delivering 10+ cm, and typed "unassigned" here.
 - The 231 unmined length endpoints: `atlas/data/round269/length_endpoints_sweep.tsv`
+
+## CONTRAINDICATED — do not add to the stack
+
+- **DNMT inhibitors** (azacitidine, decitabine) — reproduce the Dnmt1-KO direction: accelerated
+  differentiation, shorter bone. R276
+- **Alpha-ketoglutarate** — co-substrate for TET demethylation *and* a TCA intermediate; feeds both arms of
+  the loop that terminates growth. Common longevity supplement. Mechanism-only (graded E), untested. R276
+- **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
+- **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+
+## PATTERN THAT PREDICTS THE NEXT FAILURE
+
+Three axes now shorten bone in **both** directions: hedgehog (R268), oestrogen receptors (R272), DNA
+methylation (R276). **Any axis found DECLINING with maturation looks like a brake to release and may just
+be regulated within a band.** Before proposing to reverse a decline, ask whether anyone has perturbed that
+axis in *both* directions with a *length* endpoint. If only one — the band hypothesis is untested, not
+excluded.
 
 ## CONVENTIONS
 
