@@ -24331,3 +24331,102 @@ edges:
   - erdaseries2025
   - nadeaunguyen2026
   confidence: B
+- edge_id: e01518
+  source: round235_penetration_bounded_fgfr1_reopened_and_the_two_arms_share_a_zone
+  target: fgfr3_tyrosine_kinase_inhibitor
+  relation: correlates_with
+  sign: unknown
+  magnitude: CARTILAGE PENETRATION BOUNDED AT A RATIO OF ORDER ONE, FROM THE PHARMACODYNAMICS. Erdafitinib
+    at 3 mg is 1.72 times its cellular FGFR3 IC50 in free plasma and the growth response is ALREADY
+    SATURATED there. With R the cartilage-to-plasma free ratio the receptor sees 1.72R times IC50 - 63 per
+    cent occupancy at R = 1, 46 at 0.5, 34 at 0.3 and ONLY 15 AT R = 0.1. A saturated growth response cannot
+    be produced at fifteen per cent occupancy, SO R IS OF ORDER UNITY. Supporting this - both TKIs are
+    ordinary small molecules (MW 446.5 and 559.5, XLogP 3.2 and 3.6) far below the bar that VOSORITIDE
+    clears at MW 4103 and TPSA 1820 while being an approved growth drug; and erdafitinib's apparent volume
+    of distribution is 29 L at 99.7 per cent binding
+  context: 'A BOUND FROM PHARMACODYNAMICS AND NOT A MEASUREMENT, inheriting the 0.3 per cent unbound
+    fraction, a Ba/F3 transfected-cell IC50 standing in for a chondrocyte, and Hill-1 occupancy. IT SAYS
+    NOTHING ABOUT DABOGRATINIB, whose equivalent bound cannot be computed because no human with a normal
+    FGFR3 has been given it and measured. THE ONE ASYMMETRY BETWEEN THE AGENTS IS ERDAFITINIB''S: the label
+    states it is a SUBSTRATE AND INHIBITOR OF P-GLYCOPROTEIN, which matters because FGFR3''s kinase domain
+    is intracellular, and dabogratinib''s transporter status is unknown here'
+  evidence_tier: T2
+  refs:
+  - balversa_label_2025
+  - nadeaunguyen2026
+  confidence: C
+  gap_id: g_l12_what_is_the_growth_plate_concentration_of_an_fgfr3_inhibitor
+- edge_id: e01519
+  source: round235_penetration_bounded_fgfr1_reopened_and_the_two_arms_share_a_zone
+  target: fgfr1_receptor
+  relation: correlates_with
+  sign: unknown
+  magnitude: THE FGFR1 BENEFIT COLUMN, WHICH FOUR ROUNDS SCORED AS ZERO WITHOUT OPENING IT. This atlas's own
+    re-analysis of GSE288028 puts FGFR1 IN 23.2 TO 43.3 PER CENT OF HUMAN GROWTH PLATE CELLS IN FOUR OF FOUR
+    DONORS - POSTNATAL human physis, CONTRADICTING delezoide1998's fetal map of FGFR1 as perichondrial and
+    non-chondrocytic. jacob2006 has Fgfr1 deletion DELAYING HYPERTROPHIC CHONDROCYTE MATURATION, which would
+    make FGFR1 blockade a hypertrophic-compartment action and therefore A DIFFERENT HUNZIKER TERM from
+    FGFR3's. ChEMBL has ERDAFITINIB AT 1.20 nmol/L ON FGFR1 AGAINST 3.00 ON FGFR3 - IT IS FGFR1-PREFERRING.
+    And fgf19cart2025 predicts FGFR4 inhibition should be PRO-GROWTH
+  context: 'THE SIGN IS UNRESOLVED, NOT REVERSED, AND MUST NOT BE FLIPPED. jacob2006 is a GERMLINE
+    LINEAGE-WIDE deletion and CORR-046''s first reason forbids converting it into partial postnatal
+    inhibition, exactly as CORR-240 refused the mirror move; round 232''s human genetics runs the other way
+    with both directions of FGFR1 perturbation giving SHORT stature; and the two human expression datasets
+    disagree. WHAT SURVIVES INTACT is that the largest human growth response on record came from an
+    FGFR4-SPARING agent, so FGFR4 coverage is empirically dispensable - and NOTHING EQUIVALENT EXONERATES
+    DROPPING FGFR1, because no FGFR1-sparing agent has ever been given to a growing human'
+  evidence_tier: T3
+  refs:
+  - delezoide1998
+  - jacob2006
+  - fgf19cart2025
+  confidence: speculative
+  gap_id: g_l3_local_fgfr1_sign_in_growth_plate
+- edge_id: e01520
+  source: round235_penetration_bounded_fgfr1_reopened_and_the_two_arms_share_a_zone
+  target: every_drug_on_the_cnp_axis
+  relation: correlates_with
+  sign: '-'
+  magnitude: BOTH ARMS OF THIS STACK EXPAND THE SAME ZONE AND NEITHER MOVES THE HYPERTROPHIC ZONE.
+    Vosoritide's growth plate histomorphometry gives a dose-dependent rise in the ZONE OF MULTIPLICATION
+    from 64.7 to 85.7 micrometres, 32 per cent, with NO OR ONLY SMALL CHANGES in reserve and hypertrophic
+    zones. kot2026 has an FGFR inhibitor lengthening the plate in both sexes SPECIFICALLY IN THE
+    PROLIFERATIVE ZONE. And the Voxzogo dossier states the shared mechanism itself - vosoritide INHIBITS
+    FGFR3 DOWNSTREAM SIGNALLING AT THE LEVEL OF RAF1. Round 217's criterion is that same-term agents do not
+    multiply, and round 234 sharpens it because with FGFR3 saturated at 1.72 times IC50 the CNP contribution
+    is added to a node already maximally suppressed from that direction
+  context: 'THREE THINGS RESCUE THE CNP ARM PARTIALLY AND ARE STATED BEFORE ANYONE ACTS ON THIS. CNP
+    inhibits RAF1 REGARDLESS OF UPSTREAM SOURCE, so it still suppresses tone from FGFR1, IGF1R and others
+    that FGFR3 blockade leaves untouched. NPR2 GAIN OF FUNCTION MAKES HUMANS TALL, which is an ELEVATION
+    phenotype above normal stature that the FGFR3 arm''s human evidence entirely lacks. And BOTH ZONE
+    DATASETS ARE MOUSE, one in a dysplasia model with a disordered baseline where a thin zone has more room
+    to move. CORR-189, CORR-190 and CORR-197 also bear - A ZONE HEIGHT IS NOT A HUNZIKER TERM, so the
+    convergence is suggestive of same-term action rather than proof of it'
+  evidence_tier: T3
+  refs:
+  - ema_voxzogo_epar_2021
+  - kot2026
+  confidence: speculative
+  gap_id: g_l12_do_the_cnp_and_fgfr_arms_collapse_because_both_expand_only_the_proliferative_zone
+- edge_id: e01521
+  source: round235_penetration_bounded_fgfr1_reopened_and_the_two_arms_share_a_zone
+  target: aromatase_inhibitor_anastrozole
+  relation: correlates_with
+  sign: +
+  magnitude: ANASTROZOLE IS PROMOTED FROM SUPPLEMENTARY TO LOAD-BEARING BY THE SATURATION RESULT. Rounds
+    228, 229 and 234 converge on DURATION as the only remaining lever - the dose-response is flat in
+    milligrams and flat in free FGFR3 coverage, and the largest gain on record belongs to the longest
+    exposure at forty months. The two things that end exposure are DISCONTINUATION and FUSION, and
+    anastrozole is the only agent in this stack acting on the second
+  context: 'AND IT ACQUIRES A SPECIFIC NEW REASON TO WATCH IT. kot2026 reports ELEVATED SERUM TESTOSTERONE
+    in treated males of both genotypes after an FGFR inhibitor - a mouse finding with no human counterpart,
+    which if it translated would accelerate fusion and attack the same variable from the other side. THE
+    COMPOUNDING MECHANICAL HAZARD ALSO LANDS HERE - the stack contains three agents that each widen or
+    weaken the physis, the FGFR arm and the CNP arm through the same proliferative-zone expansion and growth
+    hormone as an established SCFE risk factor in its own right, and nobody has given these together'
+  evidence_tier: T3
+  refs:
+  - kot2026
+  - nadeaunguyen2026
+  confidence: speculative
+  gap_id: g_l12_compounding_scfe_hazard_in_the_stack

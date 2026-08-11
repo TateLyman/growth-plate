@@ -14887,3 +14887,81 @@ gaps:
     shorter than it looks and the anastrozole arm of this stack becomes load-bearing rather than
     supplementary. THE RETROSPECTIVE VERSION IS CHEAPER STILL - Tanner staging and bone age were recorded in
     the MSKCC and Vienna cohorts for clinical reasons even though nobody reported them.'
+- gap_id: g_l12_what_is_the_lowest_fgfr3_coverage_that_still_saturates_growth_in_a_normal_plate
+  question: Round 234 showed the human growth response is flat from 1.72 to 4.01 times the FGFR3 cellular
+    IC50. Where is the BOTTOM of that plateau - what is the lowest free FGFR3 coverage that still delivers
+    the full growth effect in a plate with a normal FGFR3?
+  type: quantitative_gap
+  layer: L12
+  tractability: 2
+  why_it_matters: 'BECAUSE IT REPLACES THE MOLECULE QUESTION WITH A DOSE QUESTION AND MAY DISSOLVE IT. Every
+    cost on this arm - hyperphosphataemia, the slipped epiphyses, the discontinuations that cap duration -
+    scales with dose, and rounds 231 to 233 established that all of it is FGFR1. The growth does NOT scale
+    with dose above 1.72x. IF THE PLATEAU EXTENDS WELL BELOW 1.72x, THEN A LOW DOSE OF ANY OF THESE AGENTS
+    BUYS THE FULL HEIGHT AT A FRACTION OF THE FGFR1 ENGAGEMENT, and the erdafitinib-versus-FGFR3-selective
+    argument becomes second order. If instead the plateau starts sharply at about 1.72x, dose reduction
+    costs height directly and the molecule choice is the only lever left.'
+  what_is_known: 'THE PLATEAU IS ESTABLISHED AT THE TOP AND UNMAPPED AT THE BOTTOM. Round 228 unspliced two
+    children - 5-then-3 mg (1.72 to 2.86x) gave 19.6 cm/year and 7-then-5 mg (2.86 to 4.01x) gave 19.1, so
+    the response is flat across that span. NO HUMAN WITH A NORMAL FGFR3 HAS BEEN TREATED BELOW 3 mg. THE
+    NEAREST EVIDENCE COMES FROM THE WRONG GENOTYPE AND POINTS DOWNWARD: propel3_2026, randomised, n = 74
+    against 39, found +1.74 cm/year at infigratinib 0.25 mg/kg/day WITH NO CLINICAL EVIDENCE OF FGFR1 OR
+    FGFR2 INHIBITION - an FGFR1-covering molecule producing growth at a dose that does not clinically engage
+    FGFR1. That is achondroplasia, so RESTORATION rather than ELEVATION (CORR-203), and the FGFR1 statement
+    rests on absence of ocular adverse events rather than on serum phosphate.'
+  what_is_missing: A DOSE BELOW 1.72x IN A NORMAL PLATE, WITH A MEASURED VELOCITY. Nobody has given a low
+    dose of an FGFR inhibitor to a normally-growing human and measured height, and no trial is designed to.
+    The serum phosphate that would mark the FGFR1 engagement at each dose is drawn monthly in every one of
+    these patients and has never been plotted against growth velocity.
+  nearest_evidence:
+  - propel3_2026
+  - nadeaunguyen2026
+  - erdachild2024
+  nearest_evidence_note: One randomised trial at a low dose in the wrong genotype, and two children at
+    higher doses in the right genotype whose velocities are indistinguishable.
+  discriminating_experiment: 'THE RETROSPECTIVE VERSION NEEDS NO NEW PATIENTS AND IS THE SAME ANALYSIS THE
+    PHOSPHATE GAP ASKS FOR. In any paediatric FGFR-inhibitor series, plot growth velocity AND serum
+    phosphate against free drug exposure across the dose interruptions and reductions the drug forces on
+    itself - both quantities are already measured and the exposure range is already wide. IF VELOCITY IS
+    FLAT WHILE PHOSPHATE FALLS, the low-dose strategy is established and the molecule choice stops
+    mattering. THE PROSPECTIVE VERSION is a dose-de-escalation arm in any paediatric FGFR-inhibitor
+    protocol, which costs nothing because these children are already having monthly bloods.'
+- gap_id: g_l12_do_the_cnp_and_fgfr_arms_collapse_because_both_expand_only_the_proliferative_zone
+  question: Vosoritide expands the zone of multiplication and leaves reserve and hypertrophic zones
+    unchanged; an FGFR inhibitor lengthens the growth plate specifically in the proliferative zone. If both
+    arms act on the same zone through the same RAF1 node, do they multiply or collapse into one another?
+  type: contradiction
+  layer: L12
+  tractability: 3
+  why_it_matters: BECAUSE THE STACK ASSUMES THEY MULTIPLY AND THE ZONE DATA SAY THEY MIGHT NOT. Round 217
+    set the criterion - agents acting on DIFFERENT terms of the Hunziker identity multiply, agents on the
+    SAME term do not - and this is the first zone-resolved evidence bearing on the two largest arms of the
+    stack. Round 234 sharpens it - if FGFR3 output is already saturated at 1.72 times the cellular IC50,
+    then the RAF1-directed contribution of CNP is being added to a node already maximally suppressed from
+    the FGFR3 direction. IF THE ARMS COLLAPSE, one of the two most expensive components of this stack is
+    buying very little, and the money and the mechanical risk both go somewhere else.
+  what_is_known: 'TWO DOSSIERS REPORT THE ZONE AND THEY REPORT THE SAME ONE. The Voxzogo EPAR''s growth
+    plate histomorphometry in the achondroplasia mouse shows a dose-dependent rise in the ZONE OF
+    MULTIPLICATION from 64.7 to 85.7 micrometres, 32 per cent, with NO OR ONLY SMALL CHANGES in the zone of
+    reserve cartilage and the zone of hypertrophy. kot2026 reports an FGFR inhibitor lengthening the growth
+    plate in both sexes SPECIFICALLY IN THE PROLIFERATIVE ZONE, with reduced phospho-ERK1/2 and SOX9 in
+    lower hypertrophic chondrocytes. And the EPAR states the mechanism in its own figure legend - vosoritide
+    INHIBITS FGFR3 DOWNSTREAM SIGNALLING AT THE LEVEL OF RAF1. AGAINST COLLAPSE - CNP inhibits RAF1
+    regardless of which receptor is upstream, so it still suppresses MAPK tone from FGFR1, IGF1R and others
+    after FGFR3 is blocked; and NPR2 GAIN OF FUNCTION MAKES HUMANS TALL, an ELEVATION phenotype above normal
+    stature that the FGFR3 arm''s human evidence does not have.'
+  what_is_missing: 'THE COMBINATION HAS NEVER BEEN GIVEN IN ANY SPECIES WITH A NORMAL FGFR3 AND MEASURED
+    FOR LENGTH. No study has dosed a CNP analogue and an FGFR inhibitor together in a wild-type growing
+    animal with tibial length and ZONE HEIGHTS as endpoints, which is the experiment that distinguishes
+    multiplication from collapse. Both zone datasets are also MOUSE and one is a dysplasia model where the
+    baseline architecture is disordered.'
+  nearest_evidence:
+  - ema_voxzogo_epar_2021
+  - kot2026
+  nearest_evidence_note: Two mouse growth plates, measured by zone, in two different dossiers, both showing
+    the proliferative zone moving and the hypertrophic zone not.
+  discriminating_experiment: 'WILD-TYPE MOUSE, FOUR ARMS - vehicle, CNP analogue alone, FGFR3 inhibitor
+    alone, and both - with TIBIAL LENGTH and ZONE-RESOLVED HISTOMORPHOMETRY including terminal hypertrophic
+    cell height. IF THE COMBINATION EXCEEDS THE BETTER SINGLE AGENT THEY MULTIPLY; IF IT MATCHES IT, THEY
+    COLLAPSE. Dose the FGFR3 inhibitor at a saturating exposure so the test is of the CNP arm''s marginal
+    value on top of a maximally blocked receptor, which is the configuration this stack actually proposes.'

@@ -20,6 +20,7 @@ That is not four mistakes. It is one missing function: THE ATLAS COULD NOT ANSWE
   holdings.py --find "bone age"    full-text search EVERY held document
   holdings.py --have 37158537      do I hold this PMID / DOI / NCT / ref_id? exit 0 if yes
   holdings.py --check-asks         scan atlas/audit/ASK_LIST*.md and FAIL on anything already held
+                                   as a DOCUMENT or already answered in a ref's one_line_finding
   holdings.py --unread             bibliography refs with no local artefact, ranked by citation count
   holdings.py --orphans            held documents that NO bibliography ref names - the root cause
 
@@ -232,6 +233,56 @@ def cmd_have(token):
     return 1
 
 
+def bib_answer_probe(text):
+    """Does the BIBLIOGRAPHY already answer what this ask list is asking for?
+
+    holdings.py originally checked only atlas/data/ - whether a DOCUMENT was on disk. That is not
+    the whole memory. A ref can carry its key findings in `one_line_finding` without the PDF ever
+    having been held, and round 235 found exactly that: the round-233 ask list requested the PROPEL3
+    supplement while `propel3_2026` sat in the bibliography with the randomised effect size, the
+    bone-age statement and the FGFR1 statement written into its one_line_finding.
+
+    So: pull the distinctive content words out of each ask, and report any ref whose recorded
+    finding covers several of them.
+
+    KNOWN LIMITATION, stated because a check whose limits are hidden is worse than no check. This
+    pass is tuned for PRECISION over recall - a word must appear in five or fewer findings across
+    the whole bibliography to count, and three must match. A noisy version of this check was built
+    first and discarded: it fired on "data", "growth", "label" and "outcome", and a check that
+    cries wolf gets ignored, which is the exact failure it exists to prevent. THE CONSEQUENCE IS
+    THAT IT WILL MISS CASES. It does not catch `propel3_2026` from a heading reading "PROPEL 3
+    supplementary appendix", because the shared tokens are too common. THE STANDING RULE THEREFORE
+    REMAINS MANUAL AND COMES FIRST: before asking any human for a document, grep the bibliography
+    for the study name. This tool narrows that duty; it does not discharge it.
+    """
+    bib = yaml.safe_load(open(BIB))["refs"]
+    findings = {k: str(v.get("one_line_finding") or "").lower() for k, v in bib.items()}
+    findings = {k: f for k, f in findings.items() if f}
+    if not findings:
+        return []
+    # A word only counts if it is RARE across the corpus of recorded findings. Without this the
+    # probe fires on "data", "growth" and "review" and is immediately worthless - a noisy check
+    # gets ignored, which defeats the point of having one.
+    import collections
+    df = collections.Counter()
+    for f in findings.values():
+        df.update({w for w in re.findall(r"[a-z][a-z0-9-]{4,}", f)})
+    rare_max = 5          # absolute: a word in >5 findings is not distinctive enough to match on
+    out = []
+    for h in re.findall(r"^#{2,3}\s*(.+)$", text, re.M):
+        if not re.match(r"^\**\d", h.strip()):     # only numbered ASKS, not status or table headings
+            continue
+        words = {w.lower() for w in re.findall(r"[A-Za-z][A-Za-z0-9-]{4,}", h)} - STOP
+        words = {w for w in words if 0 < df.get(w, 0) <= rare_max}
+        if len(words) < 2:
+            continue
+        for k, f in findings.items():
+            hit = {w for w in words if w in f}
+            if len(hit) >= 3:
+                out.append((h.strip()[:70], k, sorted(hit)[:6], f[:220]))
+    return out
+
+
 def cmd_check_asks():
     idx = load()
     import glob
@@ -266,11 +317,17 @@ def cmd_check_asks():
             elif weak:
                 print(f"  (weak) {tok} mentioned in {len(weak)} file(s) but no file looks like the "
                       f"document itself - e.g. {weak[0][0]}")
+        # and the second memory: does a bibliography ref already record the answer?
+        for head, ref, hit, finding in bib_answer_probe(text):
+            problems += 1
+            print(f"*** {os.path.relpath(md, ROOT)} asks under \"{head}\"")
+            print(f"    but ref '{ref}' ALREADY RECORDS A FINDING covering {hit}:")
+            print(f"      {finding}")
     if problems:
-        print(f"\n{problems} ask(s) name a document that looks already held. "
+        print(f"\n{problems} ask(s) are already covered by a held document or a recorded finding. "
               f"CHECK EACH BEFORE SENDING THE LIST.")
         return 1
-    print("no ask names a document that looks already held")
+    print("no ask is covered by a held document or a recorded bibliography finding")
     return 0
 
 
