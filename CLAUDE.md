@@ -70,6 +70,21 @@ Spine growth peaks *later* than total body growth (hori2025).
 distribution.** Population numbers are a prior, not his value. Do not collapse to axial-only (CORR-195)
 and do not collapse to knees-only. Both compartments are live for him.
 
+## LIVE COMPOUNDS — actual agents, with what is known and what is missing
+
+- **LUM-201 / ibutamoren / MK-677** — ORAL GHS-R agonist. PEM-positive children: 7.7 cm/yr vs rhGH 8.8
+  (bright2021, randomised). Restores **pulsatile** GH — 3.3–4.0 µg/kg/24h vs 25–34 injected — i.e. same
+  velocity on ~⅛ the hormone, which is what R269's SOCS2 loop predicts. **PEM = baseline IGF-1 > 30 ng/mL
+  (case: 198 ✓) + peak GH ≥ 5 ng/mL after a single oral dose (untested).**
+  ✗ Every subject **prepubertal, bone age ≤ 8–9, GH-deficient**. Bone-age-advance data: **does not exist**;
+  the "no bone age advance" claim is supplement-retailer copy, not evidence. R279
+- **Sacubitril** — approved, oral, dose-dependent skeletal overgrowth in WT mice, abolished by cartilage
+  NPR-B knockout. Window: only worked at 3–4 wk when endogenous CNP/neprilysin peak *in lumbar vertebrae*.
+  No human bone measurement at any age. (`neprilysin_cnp_clearance`)
+- **Still unchecked against the graph:** macimorelin, NBI-31772 (IGFBP displacement → free IGF-1;
+  schneiderman1995 has free IGF-1 partitioning into cartilage ~10× better than ternary complex — the atlas
+  holds that fact and has never used it), roxadustat.
+
 ## LIVE FRONTIER — the only things worth a round
 
 - **H3K4me3 arm of the epigenetic ceiling** — still open. Different enzymes from DNA methylation
@@ -104,6 +119,14 @@ excluded.
 
 - Never invent a citation, author, year or number. Uncertain → `value_unverified: true`.
 - Every claim carries species. Reviews are an index, not a source.
-- Paywalled ≠ droppable. Ask. But **ask only when blocked**, and batch the asks.
+- Paywalled ≠ droppable. Ask. But **ask only when blocked**, and ask IMMEDIATELY — a deferred ask gets
+  backlogged and forgotten.
+- **Search the INTERNET, not just Europe PMC.** WebSearch/WebFetch (load via ToolSearch) reach clinical
+  trial registries, FDA/EMA documents, company pipelines, preprints, patents and conference abstracts that
+  EPMC does not index. Compounds in development are usually invisible to a PubMed-only search.
+- **A generic length-endpoint sweep no longer finds anything** — the atlas vocabulary is large enough that
+  almost every real drug name already appears somewhere. Compound discovery has to be TARGETED by domain
+  knowledge or by non-PubMed sources. (`round279_compound_frontier_sweep.py` returned 2 hits, both false
+  positives — kept as the negative result.)
 - Validate before commit: `python3 atlas/tools/validate.py` must print `ERRORS: none`.
 - Branch: `claude/growth-system-atlas-yl5esl`.
