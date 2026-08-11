@@ -9492,3 +9492,38 @@ The corrected query — `CD2665 AND ("inverse agonist" OR corepressor OR "co-rep
 **Rule.** A search returning zero is a claim about the *query*, not about the world, until a positive control has been run through the same query. Any structured field syntax (`FULL_TEXT:`, `AUTH:`, `PUB_TYPE:`) must be validated against a term known to be present before a null from it enters the atlas. This is the second time a search-shaped negative has been recorded as a finding — CORR-251 was the first, where a paper marked read-but-unarchived was invisible to `--find`.
 
 **And what it cost, which is the part that matters.** The corrected search also surfaced `tateiwa2022`: **7C**, a *selective* RARγ antagonist that stimulates BMP-induced bone formation systemically, is **already formulated in PLA nanoparticles** with a second in vivo run in rat spinal fusion (`tateiwa2024`), and that **raises sulfated proteoglycan, chondrogenic markers and SOX9 reporter activity in chondrogenic cells and MSCs** — precisely the output `williams2009` predicted for enhanced RARγ repression, including its guess that Sox proteins mediate it. Iwamoto, Otsuru, Alferiev and Chorny appear on `tateiwa2022`, `tateiwa2024`, `matsuoka2025` and `matsuoka2025a`: **one group holds the selective antagonist, the nanoparticle chemistry and the growth-plate model, and has never combined them with a longitudinal length endpoint.**
+
+---
+
+## CORR-268: the length endpoint was in the paper the whole time, and it is null — the retinoid arm is demoted
+
+**What rounds 255–260 built.** An RARγ antagonist as a candidate **yield agent** — the first thing in this atlas ever pointed at amplification, the term that is 88–91% of yield and that nothing else touches. The load-bearing evidence was `koyama2021`'s statement that CD2665 given **alone** produced *"the expected maturation delay and growth plate expansion."*
+
+**What `koyama2021` actually reports, now that the full text has been supplied.** The same experiment measured body length by caliper, body weight, and **tibia length by whole-body X-ray**, in a four-arm design (vehicle / LDE225 / CD2665 / combination), CD2665 at 1.5 mg/kg daily from P20 to P31:
+
+> *"All the above skeletal parameters were essentially unaffected in companion mice receiving RARγ antagonist alone (Fig. 2). **Given the paucity of responses, this treatment regimen was not included in subsequent experiments.**"*
+
+**And the plate did respond in those same animals** — "a slight increase in overall growth plate height" plus "an expansion of Col II-expressing upper zones and Col X-expressing hypertrophic zone." So exposure and pharmacodynamics are established. **The drug reached the plate, changed it, and did not lengthen the bone.** Assay sensitivity is demonstrated inside the same figure: LDE225 produced a *detected* 10–15% fall in body length and weight.
+
+**This is the fifth instance of the same shape in this atlas:**
+
+| | expansion / pool gain | length |
+|---|---|---|
+| `horike2026` | expanded resting zone | short bones |
+| `newton2019` Tsc1 | pool up | no flux |
+| `reyes2023` Jansen | amplification | cells die instead of hypertrophying |
+| `trompet2024` systemic SAG | pool up | unchanged |
+| **`koyama2021` CD2665** | **plate expanded** | **tibia unchanged** |
+
+CORR-189 established that zone heights are not growth rates. Round 255 **quoted that caveat in its own uncertainty field** — "plate expansion is a zone height and CORR-189 says zone heights are not growth rates" — and then let the headline claim stand on the zone measurement anyway, for six rounds, while the length endpoint sat in the same paper.
+
+**Rule.** When a node's central claim rests on a proxy the atlas has already ruled untrustworthy, that is not a caveat to record — it is a **stop condition**. The correct action at round 255 was to obtain the full text before building on it, not to build and annotate. This atlas has a grade X for exactly this and did not use it.
+
+**What survives, and it is smaller but coherent.** The receptor logic (`williams2009`'s ligand-less repressor; `janesick2014`'s reciprocal in vivo test) and the human expression work (rounds 256–257) are untouched. What is withdrawn is that blocking RARγ adds length on its own. The arm is **reassigned from candidate growth agent to plate-protective adjunct**: an antagonist expands the plate and doesn't ship it — a charge without a discharge — and `koyama2021` read correctly is a successful *pairing* experiment. Round 251 established hedgehog withdrawal as the discharge and had to record that the discharge agent **fuses the plate two doses later**. That is precisely what CD2665 prevents. The retinoid arm's value is enabling a different lever, not being one. CORR-203 still bounds it: the rescue is toward normal and explicitly incomplete, and nothing in the paper exceeds an untreated control.
+
+**Three other things closed by the supplied texts.**
+- `uchibe2017`: systemic dosing is **4 mg/kg oral gavage** (1 mg/kg for the agonist); the RARγ-null specificity control is confirmed **with data**; and it contains **no bone length data of any kind**, so the genetic elevation question remains open.
+- The **BMP-Smad conflict is not a model artefact** — `uchibe2017` reports *"broadened expression of pSmad1/5/8 in RARγ-null growth plate"*. Genetic, in the physis, no BMP pellet. One of round 260's three reconciliations is excluded.
+- The **buffer model gains genetic support** — `uchibe2017` cites that Cyp26b1 ablation caused marked reduction of chondrocyte proliferation in growth plate, *"indicating that reduction of RA levels is important for proliferation of chondrocytes."* Round 257 proposed this and could not source it.
+
+**And a same-round self-catch worth recording.** Adding the Shield nanoparticle reference I passed PMID 31732869, which is Sumitani *et al.*, a different paper. Caught on the returned title per CORR-261's rule, the finding was rewritten to match the paper it actually belongs to, and the real Shield paper added as PMID **31808569**. The rule works, and it only works because the tool prints the title.
