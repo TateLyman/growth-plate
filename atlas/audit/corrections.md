@@ -8841,3 +8841,45 @@ relevant enough to cite, carrying tables and methods nobody here has looked at. 
 and it must never again be treated as the second thing. **Any ref carrying that type gets one eutils attempt
 before it carries a conclusion, and the type is downgraded to a note recording the date of the attempt.**
 Two lookups exist and they disagree; consulting one and believing it is not a search.
+
+---
+
+## CORR-235 — round 229's headline patient was on a different drug, and the correction argues for narrowing the molecule
+
+Round 229 built itself around `farouk2023` subject 3: the 14-year-old male treated for **forty months**, height Z **+0.97 → +3.40**, 83rd centile to above the 99.9th, the largest and longest human growth response on record and "the closest human analogue to this case that exists anywhere". The node's methods sentence correctly said the cohort used **Debio1347 and erdafitinib**. Every other sentence then treated him as evidence about **erdafitinib**, the agent in this stack.
+
+**He was on Debio1347.** `brizini2024` carries a literature table of every published SCFE-on-FGFR-TKI case with the drug and duration against each, and its row 2 — 14/M, rosette-forming glioneuronal tumour, FGFR3-TACC3, SCFE with osteochondritis dissecans and coxa valga, **40 months, Debio1347** — is subject 3 exactly. That table was in a paper this atlas has cited for rounds, and I read the same document yesterday for a different purpose without reading its table.
+
+**What it costs.** Erdafitinib does not own the largest human growth response on record, and the longest human exposure on record is not an erdafitinib exposure. Round 229's "months not milligrams" survives — the duration/response relation is a property of the class, and round 228's flat dose finding is separately erdafitinib's own — but the strongest single point supporting it now sits on a different molecule.
+
+**What it buys, and it is worth more than it costs. Debio1347 is FGFR1-3 selective: it does not touch FGFR4 at all.** So the largest linear growth response ever recorded in a human came from an agent with no FGFR4 coverage. Together with the FGFR1/phosphate argument in round 230, the height travels with FGFR3 and the class effect does not require pan coverage. **The best data point in the field is an argument for a narrower molecule, not a broader one.**
+
+**The rule.** CORR-232 said re-read the bibliography before hunting a missing number. This adds: **when a node's conclusion depends on which drug a patient received, that fact is load-bearing and must be sourced explicitly, not inherited from the cohort's methods sentence.** A paper reporting two drugs is not evidence about either one until the patient is assigned.
+
+---
+
+## CORR-236 — I broke CORR-233's rule in the sentence that announced it
+
+CORR-233, written yesterday, established: **an absence in a source is evidence only if the source was in a position to record the presence.** The sentence that stated it read: *"the other — `brizini2024` — is a case report about a hip that never measured serial height at all."*
+
+**`brizini2024` measured, and says so.** The discussion states that the authors did **not** see increased growth velocity in their patient, with height between the 25th and 50th centile for age and sex, and offers the twelve-week treatment duration as the explanation. I asserted a source had not looked in order to dismiss its silence, without opening the source to check — which is the error the correction was written about, committed inside the correction.
+
+**Two consequences, and the second is not a retreat.**
+
+The dissociation is **not wholly dead**. Of round 228's "three children with physeal failure and no height movement", one was a double count (CORR-233) and one grew +1.02 SD (CORR-233). **The third is real.** `brizini2024`'s patient failed mechanically with nothing banked.
+
+And **the surviving case supports the duration thesis rather than undercutting it**, because his exposure was twelve weeks. Setting the two clocks side by side: time to slip across the FDA five is a median of **137 days, range 84 to 274**; brizini's slip came at **84 days with no measurable gain**; farouk subject 5 had **+0.36 SD at five months**; subject 6 **+1.02 SD at five months, slipping at about 137 days**; subject 3 **+2.43 SD at forty months**. **The failure has a shorter latency than the benefit.** A slip can arrive at twelve weeks with nothing yet earned, while the large gains need a year and upward. That is the worst possible shape for this programme, and it is the reason the phosphate arm is worth attacking: every month bought by removing an avoidable cause of early discontinuation is a month spent on the part of the curve that pays.
+
+---
+
+## CORR-237 — round 227's mineralisation artefact is real, measured, and belongs to the opposite metabolic state
+
+Round 227 answered the bone-age question by inference: a Greulich-Pyle reading scores **mineralised** ossification centres, so an agent that **impairs mineralisation** would show an unadvanced bone age while preserving no proliferative reserve. On that reading `erdaseries2025`'s *"atypical physeal widening without apparent progression of bone maturation"* is an instrument artefact and the growth is borrowed. **The mechanism requires hypomineralisation and nothing else in the argument does any work.**
+
+**Erdafitinib does the opposite to mineral, from five directions.** Hyperphosphataemia in about **75%** of patients, roughly 4% grade 3 (held since round 213) — phosphate raised, not lowered. The radiographic finding itself is **metaphyseal sclerosis**, i.e. *increased* radiodensity, appearing with treatment and normalising after the halt; round 227 read that as impaired mineralisation and the sign is inverted. **Calcinosis cutis** with selective FGFR inhibitors (`ghimire2025`) and **calciphylaxis** with pemigatinib (`chandana2024`) and futibatinib (`slaymaker2025`) — three molecules depositing mineral where it does not belong. Those are the defining lesions of hyperphosphataemic familial tumoral calcinosis, so the **pharmacological and genetic phosphate arms converge on the same human tissue phenotype**. And a 104-result sweep for rickets, osteomalacia, metaphyseal lucency or hypomineralisation under any FGFR inhibitor returns **not one case**.
+
+**The human mirror measures the direction, which is what makes this a refutation rather than a quibble.** `soto2026` studied bone age in X-linked hypophosphataemia — chronic **hypo**phosphataemia with rickets — and states round 227's mechanism explicitly as a known concern before measuring it: **56 children, four blinded readers, two methods, bone age delayed 1.2 ± 1.0 years in males and 0.4 ± 1.0 in females**, 58% of males delayed 1–2 years. **Impaired mineralisation does produce a falsely young bone age in humans, by about a year — in the hypophosphataemic disease.** Erdafitinib patients are hyperphosphataemic with sclerotic metaphyses, so the correction runs the other way or not at all.
+
+**What this settles and what it does not.** It removes the only mechanism ever proposed for discounting the single maturation observation that exists, so on present evidence "widening without apparent progression of bone maturation" should be read as what it says. **It does not produce a bone age** — round 228's closure stands, nobody has measured one — and this is an argument about which reading is admissible, graded accordingly.
+
+**`soto2026` also answers a question this atlas had not thought to ask.** In those same XLH children — rickets, deformity, orthopaedic surgery — bone-age-based adult height prediction still landed within about two inches, the interval accepted in healthy children: 4 males achieved 171.2 ± 5.3 cm against Bayley-Pinneau 176.3 ± 11.7 and Tanner-Whitehouse 173.0 ± 6.8; 15 females achieved 155.9 ± 5.2 against Bayley-Pinneau 156.0 ± 6.8. **A bone age, had anyone taken one, would still have been interpretable under a metabolic bone disease. The reason this question is open is not that the instrument is broken — it is that nobody used it.**
