@@ -1,5 +1,23 @@
 # EXACT DOWNLOAD LIST — the on-treatment bone age under an FGFR inhibitor
 
+> **BEFORE THIS FILE IS EVER SENT TO A HUMAN, RUN `python3 atlas/tools/holdings.py --check-asks`.**
+> Round 230's ask list contained the ASCO 10007 abstract, which had been on disk since round 227.
+> That is CORR-238, and `holdings.py` exists so it cannot recur: `--have <pmid|doi|NCT|ref_id>`
+> answers "do I already have this?" by identifier **and** by title phrase, and distinguishes a held
+> document from a mere citation in somebody else's reference list.
+
+## ROUND 231 STATUS — items 1, 2 and 4 are CLOSED, and one new dataset appeared
+
+| item | status |
+|---|---|
+| **1. ASCO abstract 10007** | **CLOSED — supplied, and it was already held.** Read in full: 20 evaluable, median age 15, erdafitinib 4.7 mg/m² capped at 8 mg, max 26 cycles, PR 2/20, six-month PFS 45%. **Not one word about growth, physis, epiphysiolysis or bone age.** Now registered as `asco2023_apec1621b_abstract` |
+| **2. APEC1621B full manuscript** | still does not exist; the abstract above remains the only output |
+| **3. NCTN Data Archive** | **STRUCK at round 228** — APEC1621B is not deposited (CORR-232) |
+| **4. BALVERSA label / FDA review** | **CLOSED at rounds 227–228** — label read, five-case series read in full (`nadeaunguyen2026`), no bone age in any case |
+| **5. PROPEL2 / PROPEL3 supplements** | **STILL OPEN.** PROPEL 2's *schedule of assessments* was supplied this round and has **no bone-age line item** — a third independent confirmation. What is still wanted from the supplements is **hyperphosphataemia by dose cohort** |
+| **NEW** | **`farouk2021` supplied** — and its Methods report **tibial growth-plate radiographs every 8–12 weeks in all five children**, a second serial physeal dataset round 228 did not know existed (CORR-239) |
+
+
 **STATUS AS OF ROUND 228, 2026-08-10: THE QUESTION IS CLOSED BY EXHAUSTION AND THIS LIST IS SUPERSEDED.** Five independent routes were checked and all five are negative; item 3, the one this list starred, **does not work and the recommendation is withdrawn (CORR-232)**. Nothing below needs to be downloaded to answer the bone-age question, because the answer is that the
 measurement was never taken by anyone. The list is kept for the record and for item 5, which
 still bears on a different question. See the closure table at the foot of this file.

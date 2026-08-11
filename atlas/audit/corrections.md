@@ -8883,3 +8883,46 @@ Round 227 answered the bone-age question by inference: a Greulich-Pyle reading s
 **What this settles and what it does not.** It removes the only mechanism ever proposed for discounting the single maturation observation that exists, so on present evidence "widening without apparent progression of bone maturation" should be read as what it says. **It does not produce a bone age** — round 228's closure stands, nobody has measured one — and this is an argument about which reading is admissible, graded accordingly.
 
 **`soto2026` also answers a question this atlas had not thought to ask.** In those same XLH children — rickets, deformity, orthopaedic surgery — bone-age-based adult height prediction still landed within about two inches, the interval accepted in healthy children: 4 males achieved 171.2 ± 5.3 cm against Bayley-Pinneau 176.3 ± 11.7 and Tanner-Whitehouse 173.0 ± 6.8; 15 females achieved 155.9 ± 5.2 against Bayley-Pinneau 156.0 ± 6.8. **A bone age, had anyone taken one, would still have been interpretable under a metabolic bone disease. The reason this question is open is not that the instrument is broken — it is that nobody used it.**
+
+---
+
+## CORR-238 — I asked the user for a document that was already on disk; the cause was structural and is now fixed with a tool
+
+The ask list issued at the end of round 230 named, as item 4, **the ASCO 2023 abstract 10007**, "still 403 to this session". **It had been supplied three rounds earlier and was sitting in `atlas/data/round227_supplied/asco2023_apec1621b_abstract_10007.txt`.**
+
+**Four corrections in three rounds now have the same shape**, and it is worth setting them side by side because the pattern is the finding:
+
+| | the miss |
+|---|---|
+| CORR-232 | recommended an archive request without querying the archive's index — and the number being hunted was inside a reference already in the bibliography |
+| CORR-234 | a paper filed unreadable in round 45 on one failed retrieval, never retested, reconstructed from case reports for twenty rounds |
+| CORR-235 | a node's headline patient assigned the wrong drug, from a table in a document already held and read that same day for something else |
+| CORR-238 | a document already on disk placed on an ask list and sent to the user |
+
+**That is not four mistakes, it is one missing function.** The atlas could not answer *"do I already have this?"* Corrections cannot fix it, because a correction is a note and the failure is a lookup.
+
+**The root cause, specifically.** The abstract was archived to `atlas/data/` and **never given a bibliography entry**. Every other check in this repository — `validate.py`, `key_refs`, the `refs` field on every edge — operates on ref_ids. **A document on disk with no ref is invisible to all of them.** It can be read, but it cannot be remembered.
+
+**The fix, `atlas/tools/holdings.py`**, which indexes every file under `atlas/data/` (268 files, 161 MB), extracts PMIDs, DOIs, NCT numbers and ref_ids from their contents, and cross-references the bibliography:
+
+- `--have <pmid|doi|NCT|ref_id>` — do I hold it? Matches on identifier **and on a distinctive phrase from the ref's title**, because a conference-abstract PDF does not print its own DOI, which is exactly how this one hid.
+- `--check-asks` — scans `atlas/audit/ASK_LIST*.md` and fails on anything already held, separating strong hits (file named for it, or repeated mentions in a substantial text) from incidental mentions in a manifest, so the check stays credible enough to be obeyed.
+- `--find "<regex>"` — full-text search across every held document, whatever its format.
+- `--orphans` — held documents no bibliography ref names. **It reports 90.** Every one is a source that can be read and cannot be cited.
+- `--unread` — bibliography refs with no local artefact, ranked by citation count.
+
+**The two standing rules.** Run `--check-asks` before sending any request to a human. Run `--have` before calling anything unobtainable. And the one that closes the root cause: **archiving a document without adding a bibliography entry is incomplete work** — the 90 orphans are a backlog, not a filing convention.
+
+---
+
+## CORR-239 — APEC1621B is not the only serial physeal imaging in existence, and the second set belongs to the best patient in the field
+
+Round 226 called the NCTN archive request "★ the one that actually has the answer", and round 228, having withdrawn that, closed the line partly on the premise that the APEC1621B films **were** the serial physeal imaging — taken by protocol, left in the COG database, unreachable.
+
+**`farouk2021` Methods: plain radiographs of tibial growth plates were performed every 8 to 12 weeks.** In all five children, prospectively, at one centre, with a named corresponding author. This atlas requested that paper as its top ask precisely because it was the parent study, and the sentence sits in its Methods.
+
+**Why this does not reopen round 228.** A tibial physeal film is not a hand-wrist film and yields no Greulich-Pyle reading. **No on-treatment bone age exists; that closure stands.**
+
+**Why it matters more than the bone age would.** The surviving open question after rounds 229 and 230 is **proportionality** — is the physeal widening proportionate to the length gained or in excess of it — and the gap record specifies the discriminating experiment as *"the pairing of physeal width against actual bone length gain over the same interval"*, calling it the cheap version that needs no new procedure. **That experiment has already been performed.** Both halves exist for subject 3: serial tibial physeal radiographs at 8–12-week intervals, and serial heights, across the **forty months** in which he went from the 83rd centile to above the 99.9th. Neither half is published.
+
+**The rule.** When this atlas records that a dataset "does not exist", the claim must name the search that would have found it. Round 228 checked five *retrieval routes* for a bone age and never asked the different question — *who else took films?* — which is answered in the Methods section of a paper that was already the top item on its own ask list.
