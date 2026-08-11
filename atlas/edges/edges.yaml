@@ -24720,7 +24720,7 @@ edges:
   context: 'MOUSE, AND THE DIRECTION IS DOSE- AND CONTEXT-DEPENDENT, WHICH MUST TRAVEL WITH THE CLAIM.
     Physiological GH in HYPOPHYSECTOMISED rats did the OPPOSITE, increasing slowly-dividing resting zone
     cells; GHR deletion impairs chondrocyte output, so GH is REQUIRED for normal stem cell function; and
-    humangp_atlas_2026 has GH acting directly on human plate explants and STIMULATING proliferation of both
+    chu2026 has GH acting directly on human plate explants and STIMULATING proliferation of both
     cartilage stem cells and proliferative-zone chondrocytes. Stimulation and depletion are not contradictory
     under population asymmetry - the pool can cycle faster and still shrink if the renewing fraction falls.
     The claim holds for PHARMACOLOGICAL exposure in a GH-SUFFICIENT plate'
@@ -24754,3 +24754,99 @@ edges:
   - horike2026
   confidence: C
   gap_id: g_l2stem_006
+- edge_id: e01535
+  source: prrx1_root_stem_cell
+  target: wnt_canonical_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: 'THE HUMAN ROOT CELL BUILDS ITS OWN WNT BRAKE. Of the 174 genes in KEGG:04310, the GP1 root
+    cluster expresses FOUR LIGANDS AND NINE SOLUBLE INHIBITORS, and the regulon result rules out the passive
+    reading - BETA-CATENIN TRANSCRIPTION FACTOR ACTIVITY IS ABSENT IN GP1. The state is not an absence of
+    WNT reaching the cell; it is the cell paying to keep WNT off itself'
+  context: 'human, four donors, early pubertal growth plate from growth-restricting surgery, single-cell
+    RNA-seq with spatial and protein validation. THE DIRECTION MATTERS FOR INTERVENTION DESIGN - the antler
+    counterpart shows WNT is required on the EXIT side, since CRISPR knockout of the co-receptor LRP6 in the
+    RXFP2+ founder cell REDUCES its proliferation. So WNT-off holds the root state and WNT-on buys progeny,
+    which means neither direction is a free lever: turning WNT up spends the root, turning it down stops
+    output. Single study for the human claim'
+  evidence_tier: T1
+  refs:
+  - chu2026
+  - ba2025a
+  confidence: C
+  gap_id: g_l2stem_001
+- edge_id: e01536
+  source: growth_hormone
+  target: resting_zone_niche
+  relation: inhibits
+  sign: '-'
+  magnitude: 'GROWTH HORMONE STRIPS THE TGF-BETA ANTAGONISTS OFF THE HUMAN RESTING ZONE. In 24-hour explant
+    culture of human pubertal growth plates, GH DOWN-REGULATES THBS1 AND DCN - two of the four soluble
+    TGF-beta inhibitors (THBS1, THBS2, THBS4, DCN) that define the root state - and up-regulates TGFB3,
+    TGFBR1 and INHBA at Padj below 1e-250. THE TISSUE CONSEQUENCE WAS MEASURED, NOT INFERRED:
+    phospho-Smad2-positive nuclei in the RESTING ZONE ROSE (P = 0.0397) while phospho-Smad1/5 FELL
+    (P = 0.0097), with phospho-STAT5 rising predominantly in the resting zone (P = 0.034)'
+  context: 'THIS IS THE MOLECULAR STEP THAT WAS MISSING UNDER chu2025 - GH depletes the label-retaining pool
+    by promoting committed rather than self-renewing division, and here is how: it removes the inhibitors
+    that hold the low-TGF-beta state. AND THE RECEPTOR GRADIENT SAYS THE ROOT CELL IS THE TARGET RATHER THAN
+    A BYSTANDER - GHR IS HIGHEST IN GP1 AND IGF1R HIGHEST IN GP5, opposite gradients across one tissue.
+    THE LIMIT IS LOAD-BEARING AND IS NOT A HEDGE: GP1 DID NOT SURVIVE THE EXPLANT (CYTL1 fell from 175 to 4
+    reads per positive cell) and the authors excluded it, so the transcriptional half of this edge is
+    measured in c-GP2, the PTHrP-POSITIVE stem cell, and only the phospho-Smad counts are compartment-level.
+    The entitled sentence is GH SHIFTS THE RESTING ZONE OUT OF THE LOW-TGF-BETA STATE, not GH DOES THIS TO
+    THE ROOT CELL. n = 3 to 4 patients, single study, 24 hours, ex vivo'
+  evidence_tier: T1
+  refs:
+  - chu2026
+  - chu2025
+  confidence: C
+  gap_id: g_l2stem_004
+- edge_id: e01537
+  source: decorin_protein
+  target: tgfb_signaling_chondrocyte
+  relation: inhibits
+  sign: '-'
+  magnitude: 'DECORIN IS ONE OF THE FOUR NAMED SOLUBLE TGF-BETA INHIBITORS UP-REGULATED IN THE HUMAN ROOT
+    CELL, alongside THBS1, THBS2 and THBS4, and it is one of the TWO showing the largest absolute
+    DOWN-regulation when growth hormone is applied. The regulon evidence agrees that the suppression is
+    real - among SMAD family members only SMAD2 has detectable activity and it is LOWEST IN GP1 AND HIGHEST
+    IN GP2, while SOX4, the Smad2/3 effector, is active only in hypertrophic GP5 and absent from GP1 and GP2'
+  context: 'human GP1 versus GP2 differential expression with decoupleR and SCENIC regulon cross-validation.
+    This edge exists to make the brake addressable by its components rather than as a single abstraction -
+    THBS1 and DCN are the two the drug actually moves. Whether raising either locally would preserve the
+    pool WITHOUT also stopping output is UNTESTED IN ANY SPECIES and is the obvious next experiment'
+  evidence_tier: T1
+  refs:
+  - chu2026
+  confidence: D
+  gap_id: g_l2stem_001
+- edge_id: e01538
+  source: round241_the_root_cell_brake_is_a_self_secreted_antagonist_screen
+  target: stem_pool_population_asymmetry
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: 'THE ARCHITECTURAL READING OF THE ANTLER, WHICH IS AN INFERENCE AND IS GRADED AS ONE. The deer
+    antler runs an endochondral organ at roughly 2 cm per day and DOES NOT DO IT BY RELEASING ITS ROOT
+    BRAKE - its founder cell is held in the same WNT-inhibited, thrombospondin-marked state as the human
+    root cell (SFRP2, SFRP4, DKK2, DKK3, with THBS1 and THBS4 in the same signature), and the throughput
+    sits in a LARGE, VASCULARISED, DOWNSTREAM TRANSIT-AMPLIFYING COMPARTMENT. IF THAT IS THE RIGHT READING,
+    THE SHAPE OF ANY INTERVENTION IS: LEAVE THE BRAKE ON AND EXPAND WHAT IS DOWNSTREAM OF IT - and releasing
+    the brake is a one-time liquidation followed by a smaller pool, which is exactly what GH does and
+    exactly why its efficacy wanes'
+  context: 'SPECULATIVE AND MUST NOT HARDEN. Three sika deer datasets support the antler brake; NONE of them
+    can support a clonal-kinetic claim, because ba2025 states directly that lineage tracing is not feasible
+    in cervids. The convergence on THBS1 and THBS4 is a co-occurrence of gene lists across two papers with
+    no joint analysis, no orthologue-level statistics, and thrombospondins are broadly expressed
+    matricellular proteins, so the overlap could be a property of mesenchymal cells generally. And the
+    antler buys its rate with vascularised cartilage, seasonal regeneration and hypertrophic-to-osteoblast
+    transdifferentiation - none of which transfers. Whether a growth plate progenitor compartment is an
+    EXPANDABLE variable or a FIXED developmental endowment is unknown, and that unknown is the whole
+    question'
+  confidence: speculative
+  evidence_tier: T2
+  refs:
+  - ba2025
+  - ba2025a
+  - han2025a
+  - chu2026
+  gap_id: g_l2stem_004

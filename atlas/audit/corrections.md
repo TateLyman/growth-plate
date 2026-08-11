@@ -9112,3 +9112,41 @@ Two errors in CORR-248's reasoning, both caught by the user, and both cut the sa
 **And the load-bearing caveat, which is this atlas's own framework rather than a hedge: BONE AGE IS NOT RESERVE.** Round 198's objective function is **reserve × terminal cell height**, and fusion is exhaustion of proliferative potential. A wrist film reads the morphological maturation of epiphyses; it does not read how much clonal capacity is left in the plate. **A plate can be run hard, consume its reserve, and fuse abruptly, without looking older in the interim.** That is exactly the preserved-reserve-versus-arrested-remodelling question of rounds 227 to 229, and it is why a bone age was never the ideal endpoint for this programme. **Even a perfect zero on bone age would not establish that the height is free.**
 
 **The best available proxy for reserve consumption is not reassuring and not damning.** `farouk2023` subject 3 gained **+2.43 SD over forty months, an annualised 0.73 SD/year**, against 1.02 to 2.45 SD/year in the five-month children. The long-exposure patient's *rate* was lower. That is consistent with deceleration as reserve is consumed, and equally consistent with his being older and nearer fusion. It is the only longitudinal signal there is.
+
+---
+
+## CORR-250: I created a duplicate reference and then declared the duplicate the atlas's most-wanted unobtainable document, when the atlas had held the full text for five days
+
+**What I did.** In round 240 I needed the human root-cell paper. I read the atlas's own `prrx1_root_stem_cell` node, saw its closing sentence — *the full-text figures were not accessible, so no clonal kinetic numbers are recorded here* — and took it as current. I then filed a new bibliography entry, `humangp_atlas_2026`, with no PMID and no DOI, whose `one_line_finding` I wrote in capitals as **THE HIGHEST-VALUE UNOBTAINED DOCUMENT FOR THE ROOT-CELL PROGRAMME**, cited it in the round 240 node and in edge e01533, committed it, and prepared to ask the user to obtain it.
+
+**What was actually true.** The paper was already in the bibliography as `chu2026` — PMID 41984930, doi 10.1126/scitranslmed.adw3590, `full_text_read: '2026-08-06'`, `local_pdf: true`, `accession: GSE288028` — with a `one_line_finding` carrying figure-level numbers I could not have written without the full text (23,625 cells, four donors, PZ proliferation P = 0.013, S-phase P < 0.0001). The full text is on disk at `data/round194_the_supplied_bundle/chu2026.txt`, 17,212 words. The atlas has been using its deposited dataset since Phase 5.
+
+**Three separate failures, and only one of them is the interesting one.**
+
+1. *The duplicate.* I filed a second entry for a paper already in the bibliography. The duplicate-detector I later ran finds collisions on PMID and DOI, and my entry had neither, so it was invisible to the check by construction. **A bibliography entry with no PMID, no DOI and no accession cannot be de-duplicated and must not be created.** If an identifier genuinely does not exist, the title must be matched against existing titles before the entry is written.
+
+2. *The unmade check.* `holdings.py --have chu2026` returns, in these words, `HELD ... DO NOT ask anyone for this. Read what is already on disk.` I built that tool three rounds ago, for exactly this, after four consecutive corrections of the same shape, and wrote into its docstring that the manual check *comes first, before asking any human for a document*. I did not run it. A tool that is not run is not a fix, and I should stop treating the act of building one as if it were the remedy.
+
+3. *The interesting one — a stale negative was treated as a standing fact.* The `prrx1_root_stem_cell` node was written 2026-08-05 and was accurate that day. The paper was obtained 2026-08-06. The node was never revisited, so its sentence about inaccessibility survived as an assertion in the present tense and I inherited it a week later as though it were still true.
+
+**The rule this establishes.** *A statement inside a node about what could not be obtained is a claim with a timestamp, not a property of the world.* Positive claims in this atlas age gracefully — a measured value stays measured. Negative claims about access age badly, because access is exactly the thing that changes between rounds. So: **before repeating any node's statement that a source is unavailable, paywalled, or unread, re-check the bibliography entry and the holdings index. The node is not the authority on its own source's availability; the bibliography and the disk are.** This is the same shape as CORR-114 — a defect in a *method* has to be chased backwards through everything that used it — applied to a defect in a *provenance claim*.
+
+**Repair.** `humangp_atlas_2026` deleted from the bibliography. Every reference to it in `round240_...yaml` and in `edges.yaml` rewritten to `chu2026`. The stale sentence removed from `prrx1_root_stem_cell` and replaced with the read record. Round 241 rebuilds the human arm of the root-cell register from the full text, which is what round 240 should have done.
+
+**What it cost.** Round 240 recorded the human root cell at grade D on abstract-level material, with `quantitative: []` and the note that no clonal kinetic numbers existed. The full text contains the WNT ligand-to-inhibitor split, the named TGF-beta inhibitors, the SMAD2 and beta-catenin regulon results, the GHR/IGF1R gradient, and the GH-on-resting-zone p-Smad2 and p-Smad1/5 numbers. **The single most decision-relevant result in the root-cell programme — that GH strips the resting zone of the TGF-beta antagonists that define the root state — was sitting unread on disk while I wrote a node saying the paper could not be read.**
+
+---
+
+## CORR-251: the deer antler benchmark was recorded as a growth rate for two rounds and never as a stem cell architecture
+
+**What round 199 did with the antler.** It computed the ratio. Antler ~2 cm/day against a human growth plate's ~2 cm/year, called it 365x, wrote it into `round199_every_route_to_expanding_the_budget`, and moved on. The antler entered the atlas as a **number** — an existence proof that a mammalian endochondral plate can run far faster than a human one — and nothing else about it was mined.
+
+**Why that was the wrong thing to take.** The rate is the least transferable fact about the antler. It is bought with a vascularised cartilage matrix, seasonal regeneration, and a hybrid ossification route in which hypertrophic chondrocytes transdifferentiate into osteoblasts instead of dying — none of which a human growth plate can be talked into. Recording the rate and not the architecture put the one unusable fact in the atlas and left the usable ones out.
+
+**What was actually there.** Three independent antler datasets converge with the human growth plate on the *same molecular brake* holding the root cell in the root state: self-secreted soluble WNT antagonists plus self-secreted soluble TGF-beta antagonists, with THBS1 and THBS4 appearing on both sides of the species gap. That convergence is the transferable result, and it was available in `ba2025`, which the bibliography had marked `full_text_read` since 2026-08-07 — while `holdings.py --orphans` showed the document itself was never archived, so no full-text search could reach it.
+
+**Two rules.**
+
+*On benchmarks.* **A cross-species rate comparison is an invitation to read the mechanism, not a finding.** When a comparator organism is entered into this atlas as a ratio, the round is not finished; recording 365x without recording how is an index entry, and CORR of the standing rule about reviews applies with equal force to comparator species — the ratio is the index, the architecture is the source.
+
+*On archiving.* `ba2025` was marked read but never archived, so it was invisible to `--find`. This is the failure mode `holdings.py --orphans` reports in one direction (documents no ref names) and cannot report in the other (refs no document backs). **`full_text_read` without an archived copy is not a completed read** — the next round cannot search it, and the round after that will re-fetch or re-ask. Fixed for `ba2025`; `--unread` should be extended to flag `full_text_read` refs with no file on disk.
