@@ -9013,3 +9013,38 @@ Round 233's `ASK_LIST_fgfr_arm.md` named the PROPEL supplementary appendices as 
 Fixed this round: `--check-asks` now also probes every ref's `one_line_finding` for distinctive content words from each ask. **The limitation is recorded in the function's own docstring rather than hidden**: it is tuned for precision, a word must appear in five or fewer findings across 1,495 refs to count, and three must match. A high-recall version was built first and discarded because it fired on "data", "growth", "label" and "outcome" — **a check that cries wolf gets ignored, which is the exact failure it exists to prevent.** It therefore still would not catch this case from a heading reading "PROPEL 3 supplementary appendix". **The standing rule stays manual and comes first: before asking any human for a document, grep the bibliography for the study name.**
 
 **And the finding itself changes the recommendation's shape.** An FGFR1-covering molecule grew children in a randomised trial at a dose with no clinical evidence of FGFR1 engagement. If that survives scrutiny, **the lever is the dose, not the molecule**, and erdafitinib-versus-dabogratinib is a second-order question. Three caveats bound it: the FGFR1 claim rests on absence of ocular events rather than on serum phosphate, which is the marker rounds 231–233 established; it is achondroplasia, so **restoration, not elevation** (CORR-203); and **nobody has tested below 1.72× the cellular IC50 in a normal plate**, so the bottom of round 234's flat curve is unmapped. That last point is now the highest-value open question on this arm.
+
+---
+
+## CORR-245 — I ran a five-round molecule comparison without once checking whether the molecule can be obtained
+
+Rounds 230 through 235 compared erdafitinib against an FGFR3-selective agent and concluded, with progressively more evidence, that the selective agent is the better molecule. **Not one of those rounds asked whether it can be gotten.** Checked now, against the registry:
+
+| agent | status |
+|---|---|
+| **Debio1347** — the agent behind the largest human growth response on record | **development halted.** NCT01948297 TERMINATED, NCT03834220 TERMINATED, NCT03344536 completed. No active programme |
+| **Dabogratinib / TYRA-300** | **investigational only** across five trials — adults with cancer, a healthy-volunteer bioavailability study, and BEACH301 in children aged 3–10 with achondroplasia. Not approved anywhere |
+| **Infigratinib for achondroplasia** | **investigational** — PROPEL3 completed, extension enrolling by invitation. Not approved for this indication |
+| **Erdafitinib, pemigatinib, futibatinib** | **approved and marketed** — and every one of them is **pan-FGFR** |
+
+**So every obtainable FGFR inhibitor covers FGFR1, and the FGFR3-selective option cannot be had.** The recommendation of rounds 230–235 was correct as pharmacology and inert as advice.
+
+**This is a worse error than any of the sourcing failures in CORR-232 through CORR-244**, because those cost accuracy and this one cost relevance. Six rounds of increasingly careful work — a three-agent receptor series, a head-to-head at P = 0.0244, a saturation analysis, a penetration bound — all aimed at a choice that was not available to make. **An analysis that cannot change what anyone does is not finished work, however well sourced.**
+
+**The rule.** Before comparing interventions, establish that each is obtainable, and record it as a property of the node. **Feasibility is a fact about an intervention exactly as much as its IC50 is**, and it belongs in the first round of any comparison rather than the sixth.
+
+**What survives, and it is not nothing.** The FGFR1 cost is now **unavoidable rather than chosen**, which raises the value of managing it directly: phosphate binders and dietary restriction from **5.5 mg/dL** — the FGFR3-selective programme's own intervention threshold — rather than erdafitinib's 7.0, since rounds 230–232 established that the phosphate arm carries the mechanical failure and none of the height. And the live decision moves from **which molecule** to **what dose**, where round 234's flat curve says the answer is the lowest one that still saturates.
+
+---
+
+## CORR-246 — I treated treatment interruption as inevitable, and imported that from oncology without examining it
+
+Rounds 228 through 235 all lean on the same premise: duration is the only lever, and duration is short because **all five FDA children discontinued permanently and three required surgery.** That number has been doing heavy work — it is why round 233 called the median 5.3-month treatment duration a constraint, and why round 235 promoted anastrozole on the grounds that exposure is bounded.
+
+**Read the reason for those discontinuations. The drug was stopped because ACCELERATED GROWTH WAS THE ADVERSE EVENT.** `nadeaunguyen2026` is a pharmacovigilance evaluation of skeletal growth toxicity; the whole series exists because growth acceleration was reported as harm. **In a setting where growth is the endpoint, that reason for stopping does not transfer at all.** I carried an oncology discontinuation rate into a growth-promotion context and never separated the causes.
+
+**What would genuinely force interruption if growth is the goal**, from the label and the case series: **slipped capital femoral epiphysis or other mechanical failure** — 3 of 7 in `farouk2023`, 1 of 11 in RAGNAR's paediatric cohort; **central serous retinopathy and other ocular toxicity**, which is dose-limiting and is an FGFR1/2 effect; and **serum phosphate at or above 10 mg/dL for more than two weeks**, which the label makes a permanent discontinuation. Stomatitis, nail and skin toxicity and transaminitis force holds rather than stops.
+
+**And the proof of concept is already in the atlas.** `farouk2023` subject 3 ran **forty continuous months** — the largest response on record — and stopped for none of these. His only skeletal event, osteochondritis dissecans at nine months, was deemed unrelated and **the drug was continued**. One patient, and he is the existence proof that continuous multi-year dosing of an FGFR inhibitor in a growing child is a thing that has happened.
+
+**So my duration pessimism was an artefact of the source population, not a property of the drug.** The corrected statement: exposure is bounded by mechanical failure, ocular toxicity and phosphate — all of which are dose-dependent and two of which are FGFR1 — **not by the 5.3-month oncology median and not by the FDA series' 100 per cent discontinuation rate.** This strengthens rather than weakens the case for running long at the lowest saturating dose.
