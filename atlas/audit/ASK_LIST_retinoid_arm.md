@@ -165,3 +165,35 @@ Both GPR30 papers are closed. Their bibliographies opened three more, and the fi
 
 ### 3. `heino2008` — PMID 18434348, J Endocrinol 197:R1–R6, **OA: N**
 Lower priority. GPR30 in human bone cells declining through puberty (osteocytes R = −0.56). The growth-plate paper above matters more.
+
+---
+
+# ASK — round 281, the SPIN4 arm (opened 2026-08-11)
+
+**One item, and it is the highest-value paywalled item this file has had in a while.** It is the third
+independent human report of the axis that round 281 identified as the cleanest resting-pool lever in the
+atlas, and the adult-height evidence for that axis currently rests on **n = 2 carriers in one family**.
+
+### 1. `SPIN4-related X-linked overgrowth in a family` — **REQUESTED**
+- PMID **41780720** · DOI **10.1016/j.ejmg.2026.105073** · *European Journal of Medical Genetics*, 2026
+- Not open access. No PMC record. No preprint found.
+- **Why it matters:** the third SPIN4 family. `lui2023` is family 1 (the only source of ADULT attained
+  heights — mother and maternal grandmother, each +2 SDS above their own midparental height). `chawla2025`
+  is family 2 (replicates overgrowth and segregation, but reports no adult height, and its affected sibling
+  had **bone age 9–11 at chronological age 8**, which removed "overgrowth without bone-age cost" as a class
+  property). A third pedigree is the difference between grade **D** and grade **B/C** on the claim that
+  partial SPIN4 loss raises **attained adult** height in humans.
+- **What is needed from it, specifically:** (a) any **adult/final** heights in carriers, with midparental
+  heights; (b) **bone age vs chronological age** for every measured individual; (c) whether heterozygous
+  females are affected and by how much; (d) IGF-1 values, to test whether the normal-IGF-1 finding
+  (179 ng/mL in the `lui2023` proband, *below* this subject's 198) replicates.
+
+### Already obtained without asking — recorded so it is not re-requested
+- `lui2023` (SPIN4, JCI Insight) — full text, read.
+- `lui2026` (Spin4 at 18 months, bioRxiv) — abstract only; full text not retrievable, but the abstract
+  carries the load-bearing facts (length gain persists at 18 mo, BMD normal, tumour count up).
+- `chawla2025` (family 2) — full text, read.
+- `gao2024`, `mirzamohammadi2016`, `shao2021`, `killinger2025`, `dreyer2025` — full text, read.
+- `dudakovic2015`, `camilleri2018` — abstract only; both are conditional-KO direction results and the
+  abstracts state the direction explicitly, so full text is not blocking.
+- Avijgan human growth-plate spatial transcriptomics — already in the graph as `avijgan2026br`.

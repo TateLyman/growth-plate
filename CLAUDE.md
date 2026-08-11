@@ -106,8 +106,9 @@ delivered to limb mesenchyme or cartilage shortens. A plate-directed drug cannot
 **✓ LIVE — SPIN4 (`lui2023`, R281). The cleanest pool lever in the atlas.** The one row of R280's table I
 never read. An epigenetic **reader**, not a writer.
 - **Human, one family:** proband +4.5 to +5 SDS vs midparental **+1.2 SDS**, PAH **203 cm**, **bone age
-  advanced by only 1 year** (this is *why* he escapes the class rule). Heterozygous **mother and maternal
-  grandmother each reached ADULT heights +2 SDS above their own midparental heights**. **IGF-1 179 ng/mL,
+  advanced by only 1 year** (this is *why* he escapes the class rule — **but see the qualifier below**).
+  Heterozygous **mother and maternal grandmother each reached ADULT heights +2 SDS above their own
+  midparental heights**. **IGF-1 179 ng/mL,
   normal, repeatedly — LOWER than this subject's 198.** So the axis is *not* an IGF axis and does not compete
   with the GH arm. (He had epiphysiodesis at 13, so the 203 cm is never tested.)
 - **Mouse:** resting-zone height ↑, resting cell number ↑, Sfrp5⁺ and CD73⁺ progenitors ↑. **PZ height,
@@ -116,6 +117,10 @@ never read. An epigenetic **reader**, not a writer.
   **normal BMD**. Against the height identity: **N ↑ and λ ↑, with A and h_term flat.**
 - **Mechanism:** reduced baseline canonical Wnt in chondrocytes (TOPFLASH ↓, Axin2 ↓); Spin4 highest in RZ.
 - **Cost:** tumour count ↑ at 18 mo (`lui2026`). SPIN4/EZH2/DNMT3A all over-expressed across human cancers.
+- **Qualifier (`chawla2025`, 2nd family, different Tudor-domain frameshift):** overgrowth and segregation
+  replicate, **but the affected sibling had bone age 9–11 at chronological age 8.** So "SPIN4 overgrows
+  without spending bone age" is ONE PATIENT WIDE — do not promote it to a class property. What survives is
+  the attained-height evidence, which doesn't depend on it (2 adult carriers; mouse still longer at 18 mo).
 - **No SPIN4 drug exists** — loss is the gain, so it would need a degrader, not an antagonist.
 
 ## LIVE FRONTIER — the only things worth a round
