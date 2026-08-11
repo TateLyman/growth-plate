@@ -9352,3 +9352,28 @@ The mutant is 68 per cent ahead at day 2 and 22 per cent ahead at day 4, **becau
 **What it costs.** There is no standing ex vivo headroom, so there is nothing for an extrinsic block to be suppressing, and round 252's proposed discriminating experiment — *culture the explant under load, under physiological oxygen, and in same-age serum, one factor at a time, and see which one costs the 52 per cent back* — is aimed at a quantity that does not exist. What survives of `newton2018` is smaller and still real: mTORC1 activation gives a **one-off ~79 μm elongation on explanting with no change in Ki67 and no change in collagen X at 24 h**, then nothing; and in vivo it gives no length, a trend toward shorter tibiae, and a disordered resting zone. A length change complete within a day with no proliferation and no hypertrophy change is not a growth-rate phenotype, and this atlas does not know what it is.
 
 **Rule, and it is CORR-255 restated because I broke it again in the same shape.** CORR-255 was written after I recommended emailing authors for a figure that was already in the PDF on disk. Here I built a round's conclusion on a sentence in a Results paragraph when **the figure that quantifies that sentence was one download away**. A quantitative claim taken from prose, where a figure of the same quantity exists, is an unverified claim. The prose was not even wrong — *"increment sustained"* is exactly what the figure shows. **When a paper's wording admits two readings and one of them is load-bearing for a round, the figure decides, and the figure must be opened before the round is written.**
+
+---
+
+## CORR-263: the compound nodes were three rounds behind the analysis nodes, and growth hormone has been sitting on the wrong term since the stack was assembled
+
+**Three separate staleness defects, all pointing the same way — the atlas kept optimising velocity because its compound-level nodes were still carrying surrogate endpoints.**
+
+**(a) Growth hormone was listed as an amplification agent.** `the_stack_in_a_normal_human` says *"THE AMPLIFICATION ARM IS FGFR3 INHIBITION AND GROWTH HORMONE"*. That attribution was made from **zone heights** — and `hunziker1994` states in the same paper that growth plate height *"is not a reliable indicator of bone growth rate"*. Round 183 already decomposed the same experiment with **flux** quantities and got the opposite: GH is **×5.00 pool consumption rate, ×1.36 terminal cell height, ×0.77 amplification**, with the pool term at **97 per cent of the log effect**. The tool that computed it (`hunziker1994_amplification.py`) has been in the repo since round 183; the stack node was never updated.
+
+The consequence is not academic. Two human cohorts, found this round, measure it directly:
+
+| | endpoint | result |
+|---|---|---|
+| `vliegenthart2026` (prospective, n=127, 99% complete) | NAH-SDS − TH-SDS, continue vs stop rhGH at mid-puberty | −0.17 vs −0.18, **P = 0.96** |
+| `cantasorsdemir2026` (n=72) | attained NAH − PAH at puberty onset, boys | **−0.62 cm, P = 0.75** (same method gave **+8 cm** pre-puberty) |
+
+**Mechanism and human outcome now agree that GH's final-height benefit is delivered before puberty and none of it is recoverable afterwards.**
+
+**(b) The aromatase arm was being priced off a surrogate.** `aromatase_inhibitor_letrozole` and `aromatase_inhibitor_anastrozole` both quote **+1.3 cm** — which is `zegarra2024`'s three-year change in *predicted* adult height. Bayley-Pinneau-type prediction is calibrated on children whose bone age and height advance together; an aromatase inhibitor exists to break that coupling, so a predicted-height endpoint measures the surrogate the drug was designed to distort. On **attained** height, `yackobovitchga2025` gives 166.6 ± 3.1 cm vs 163.4 ± 1.3 in matched controls (P = 0.003), with untreated controls landing on their own prediction at −0.3 ± 5.0 cm.
+
+**(c) The two nodes read letrozole vs anastrozole backwards relative to the atlas's own prediction.** `duration_lever_is_a_switch_not_a_slope` predicted — from the seventy-fold gap between the lead common CYP19A1 variant (0.054 SD/allele) and complete loss of the gene (~4 SD) — that *"the more potent aromatase inhibitor beats the less potent one on real height while both look similar on surrogates."* `nearfinal2026` was already in the bibliography, already cited by the switch node, and already contains both halves: letrozole median gain **4.2 cm** vs anastrozole **0.8 cm** (P = 0.013) on attained near-final height, against no between-drug difference on predicted height in the randomised trial. The compound nodes never picked it up.
+
+`cui2025` dissents (anastrozole+rhGH target-adjusted AH-SDS 0.81 vs letrozole+rhGH 0.60, P < 0.01) and is **not** withdrawn. Both are observational; the within-patient gain is preferred because it isolates what the drug added against each individual's own baseline. Eleven letrozole patients with an IQR of 0.6–13 cm is a thin basis and the grade is C.
+
+**Rule.** This atlas separates *analysis* nodes from *compound* nodes, and the analysis nodes have been running several rounds ahead. **A compound node is a claim about what to give, and it must be re-read against the analysis nodes whenever one of them moves a term.** The specific failure mode to watch for is a compound node quoting a *surrogate* endpoint — predicted adult height, zone height, bone-age SDS — after an analysis node has established that the surrogate is decoupled from the thing being optimised.

@@ -1,100 +1,131 @@
 id: aromatase_inhibitor_letrozole
 name: Letrozole
-aliases: [Femara, third-generation aromatase inhibitor]
+aliases:
+- Femara
+- third-generation aromatase inhibitor
 type: intervention
 layer: L12
 stub: false
-summary: |
+summary: 'SUPERSEDED IN PART, ROUND 254 - CORR-263. This node reads the letrozole-versus-anastrozole comparison
+  as cautionary on the strength of zegarra2024''s PREDICTED-adult-height null and cui2025''s target-adjusted SDS.
+  On ATTAINED near-final height with a within-patient contrast, nearfinal2026 gives letrozole a median gain of 4.2
+  cm (IQR 0.6-13) against anastrozole''s 0.8 cm (IQR -2.6-3.5), P = 0.013, in 72 males with advanced bone age -
+  which is exactly what duration_lever_is_a_switch_not_a_slope predicted in advance. The +1.3 cm figure below is
+  a PREDICTED-height endpoint and prediction methods are calibrated on children whose bone age and height advance
+  together, which is the coupling an aromatase inhibitor exists to break; on attained height yackobovitchga2025
+  gives the class +3.2 cm against matched controls. See round254_the_final_height_roi_table_and_the_two_stack_changes_it_forces.
+  ORIGINAL TEXT FOLLOWS.
+
+
   Letrozole is a non-steroidal third-generation aromatase inhibitor used off-label in boys
+
   to block conversion of androgens to oestrogen and so delay the oestrogen-driven
+
   epiphyseal fusion that terminates growth. It is the most direct available human
+
   pharmacological test of the oestrogen-fusion hypothesis, and the result is a
+
   cautionary one. In a 3-year open-label randomised trial at Stanford (n=79 pubertal boys
+
   with idiopathic short stature, bone age <=14 y, letrozole 2.5 mg daily) letrozole
+
   produced higher testosterone and lower oestradiol and IGF-1 than anastrozole, together
+
   with slower growth velocity and slower bone age advance - exactly the intended
+
   biochemical and skeletal-maturation profile. Yet the increase in predicted adult height
+
   seen at year 1 did not persist at years 2 or 3, and the combined 3-year gain in predicted
+
   adult height across both arms was only +1.3 cm (p=0.043). This is the clearest example
+
   in the layer of an interim surrogate gain that does not convert. In combination with
+
   rhGH in boys with bone age >=13 y, letrozole gave a target-height-adjusted adult height
+
   SDS of 0.60 +/- 0.28, less than anastrozole plus rhGH at 0.81 +/- 0.34.
+
+  '
 quantitative:
-  - parameter: gain in predicted adult height over 3 years, letrozole and anastrozole arms combined
-    value: '+1.3'
-    unit: cm
-    conditions: >-
-      open-label randomised trial, 79 pubertal boys >=10 y with ISS, bone age <=14 y, predicted
-      adult height <5th percentile or >10 cm below mid-parental height; letrozole 2.5 mg or
-      anastrozole 1.0 mg daily for up to 3 years; linear mixed model
-    species: human
-    source_ref: zegarra2024
-    uncertainty: p=0.043; no between-group difference in change in predicted adult height
-  - parameter: persistence of the year-1 predicted-adult-height gain
-    value: not sustained
-    unit: not applicable
-    conditions: gain observed at year 1 in both arms did not persist at years 2 and 3
-    species: human
-    source_ref: zegarra2024
-    uncertainty: reported qualitatively by the authors
-  - parameter: adult height SDS adjusted for target height, letrozole plus rhGH
-    value: '0.60'
-    unit: SDS
-    conditions: >-
-      propensity-score-matched cohort, 32 boys per group, ISS with bone age >=13 y, followed
-      3-monthly to adult height; anastrozole+rhGH 0.81 +/- 0.34, GnRHa+rhGH 0.48 +/- 0.17
-    species: human
-    source_ref: cui2025
-    uncertainty: SD 0.28; anastrozole superior to letrozole and GnRHa, p<0.01
-  - parameter: dose used in the randomised trial
-    value: '2.5'
-    unit: mg/day
-    conditions: oral, pubertal boys, up to 3 years
-    species: human
-    source_ref: zegarra2024
-    uncertainty: single dose level
+- parameter: gain in predicted adult height over 3 years, letrozole and anastrozole arms combined
+  value: '+1.3'
+  unit: cm
+  conditions: open-label randomised trial, 79 pubertal boys >=10 y with ISS, bone age <=14 y, predicted adult height
+    <5th percentile or >10 cm below mid-parental height; letrozole 2.5 mg or anastrozole 1.0 mg daily for up to
+    3 years; linear mixed model
+  species: human
+  source_ref: zegarra2024
+  uncertainty: p=0.043; no between-group difference in change in predicted adult height
+- parameter: persistence of the year-1 predicted-adult-height gain
+  value: not sustained
+  unit: not applicable
+  conditions: gain observed at year 1 in both arms did not persist at years 2 and 3
+  species: human
+  source_ref: zegarra2024
+  uncertainty: reported qualitatively by the authors
+- parameter: adult height SDS adjusted for target height, letrozole plus rhGH
+  value: '0.60'
+  unit: SDS
+  conditions: propensity-score-matched cohort, 32 boys per group, ISS with bone age >=13 y, followed 3-monthly to
+    adult height; anastrozole+rhGH 0.81 +/- 0.34, GnRHa+rhGH 0.48 +/- 0.17
+  species: human
+  source_ref: cui2025
+  uncertainty: SD 0.28; anastrozole superior to letrozole and GnRHa, p<0.01
+- parameter: dose used in the randomised trial
+  value: '2.5'
+  unit: mg/day
+  conditions: oral, pubertal boys, up to 3 years
+  species: human
+  source_ref: zegarra2024
+  uncertainty: single dose level
 localization:
-  - "human growth plate: acts indirectly by lowering local and systemic oestrogen exposure; no plate-level oestrogen measurement in treated boys"
+- 'human growth plate: acts indirectly by lowering local and systemic oestrogen exposure; no plate-level oestrogen
+  measurement in treated boys'
 human_evidence: direct
-human_evidence_note: >-
-  A 3-year randomised head-to-head trial in 79 boys with predicted adult height as the
-  primary outcome, plus propensity-matched adult-height cohorts.
-species_basis: [human]
+human_evidence_note: A 3-year randomised head-to-head trial in 79 boys with predicted adult height as the primary
+  outcome, plus propensity-matched adult-height cohorts.
+species_basis:
+- human
 translation_risk: low
-translation_risk_reason: >-
-  All data are human and interventional. The interpretive risk is endpoint-related: the
-  randomised trial's primary outcome is PREDICTED adult height, itself a bone-age-derived
-  surrogate, while the cohort study reports attained adult height without randomisation.
+translation_risk_reason: 'All data are human and interventional. The interpretive risk is endpoint-related: the
+  randomised trial''s primary outcome is PREDICTED adult height, itself a bone-age-derived surrogate, while the
+  cohort study reports attained adult height without randomisation.'
 confidence: A
 claim_grades:
-  - claim: Letrozole slows bone age advance and lowers oestradiol in pubertal boys.
-    grade: A
-    basis: Randomised trial with annual hormone and bone age measurement, n=79.
-  - claim: Letrozole monotherapy meaningfully increases predicted adult height in boys with ISS.
-    grade: D
-    basis: The year-1 gain did not persist; the 3-year combined gain was +1.3 cm and the authors conclude efficacy as monotherapy may be limited.
-  - claim: Letrozole combined with rhGH increases attained adult height.
-    grade: C
-    basis: Propensity-matched single-centre cohort of 32 per arm; not randomised, and letrozole underperformed anastrozole.
+- claim: Letrozole slows bone age advance and lowers oestradiol in pubertal boys.
+  grade: A
+  basis: Randomised trial with annual hormone and bone age measurement, n=79.
+- claim: Letrozole monotherapy meaningfully increases predicted adult height in boys with ISS.
+  grade: D
+  basis: The year-1 gain did not persist; the 3-year combined gain was +1.3 cm and the authors conclude efficacy
+    as monotherapy may be limited.
+- claim: Letrozole combined with rhGH increases attained adult height.
+  grade: C
+  basis: Propensity-matched single-centre cohort of 32 per arm; not randomised, and letrozole underperformed anastrozole.
 key_refs:
-  - ref_id: zegarra2024
-    pmid: '39262574'
-    first_author: Zegarra W
-    year: 2024
-    type: primary
-    one_line_finding: 3-year randomised trial - year-1 predicted adult height gain did not persist; combined 3-year gain only +1.3 cm.
-  - ref_id: cui2025
-    pmid: '40326775'
-    first_author: Cui Y
-    year: 2025
-    type: primary
-    one_line_finding: Letrozole+rhGH adult height SDS 0.60 +/- 0.28 versus anastrozole+rhGH 0.81 +/- 0.34 and GnRHa+rhGH 0.48 +/- 0.17.
-  - ref_id: martn2026
-    pmid: '42187530'
-    first_author: Martín Pérez IM
-    year: 2026
-    type: systematic_review
-    one_line_finding: Systematic review placing aromatase inhibitors among paediatric growth-modifying hormonal therapies with moderate-to-serious risk of bias.
-open_questions: [g_l12b_015, g_l12b_016]
+- ref_id: zegarra2024
+  pmid: '39262574'
+  first_author: Zegarra W
+  year: 2024
+  type: primary
+  one_line_finding: 3-year randomised trial - year-1 predicted adult height gain did not persist; combined 3-year
+    gain only +1.3 cm.
+- ref_id: cui2025
+  pmid: '40326775'
+  first_author: Cui Y
+  year: 2025
+  type: primary
+  one_line_finding: Letrozole+rhGH adult height SDS 0.60 +/- 0.28 versus anastrozole+rhGH 0.81 +/- 0.34 and GnRHa+rhGH
+    0.48 +/- 0.17.
+- ref_id: martn2026
+  pmid: '42187530'
+  first_author: Martín Pérez IM
+  year: 2026
+  type: systematic_review
+  one_line_finding: Systematic review placing aromatase inhibitors among paediatric growth-modifying hormonal therapies
+    with moderate-to-serious risk of bias.
+open_questions:
+- g_l12b_015
+- g_l12b_016
 contradicts: []
 last_verified: '2026-08-05'
