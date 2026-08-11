@@ -10048,3 +10048,25 @@ Plus the tissue localisation (**outer perichondrium**), four conditional deletio
 **Rule — this is CORR-287 and CORR-289's family and it now has a mechanical fix.** Before writing "X is untested" or "no study has done Y," **grep the atlas for X.** The graph is 806 nodes and 1,573 references; it is no longer small enough to hold in working memory, and an assertion about the literature is also an assertion about this file. *Search the graph before asserting the absence, not only the literature.*
 
 **Near-miss worth recording:** I had already drafted an ask to the operator for the `sedes2022` full text. They supplied it five days ago.
+
+## CORR-303 — the eleven genes I nearly discarded because their sign was negative
+
+Round 283 reported six height-**increasing** genes and eleven height-**decreasing** ones, and every round since has worked only the six. The eleven were never searched, and the reason was a bad instinct: *loss makes you short, so it isn't a lever.*
+
+**ACAN loses 16.55 cm per allele — the largest effect among 1.45 million exomes.** A gene that costs sixteen and a half centimetres when one copy goes is a gene the growth plate depends on heavily. The question for that class is not loss, it is **elevation** — has anyone raised it *above* normal in a *normal* animal and measured a bone?
+
+This atlas holds **29 nodes, 17 bibliography entries and 30 gap references on ACAN, and every single one is about deficiency.** Neither the graph nor the literature contains an aggrecan elevation experiment with a length endpoint. That is **CORR-203's restoration-versus-elevation distinction left unexamined on the biggest number in the table** — the file knows exactly what happens when aggrecan is taken away and has never once asked what happens if it is added.
+
+The caveat travels with the observation: aggrecan synthesis is rate-limited by glycosaminoglycan chain assembly rather than transcript level, so "overexpress ACAN" may not be a physically available manipulation. **The absence of the experiment is not evidence it would work. It is evidence the question was never asked.**
+
+The audit also found the bias inside the atlas's own coverage: of the genes appearing in only one or two nodes — ANKRD11, EXT1, IGF2BP2, ADAMTS6, DTL, SCUBE3, NF1 — **all seven are height-decreasing.** CORR-295's ascertainment asymmetry is not only in the literature; it propagated into this graph.
+
+**Rule.** For a signed gene list, work **both** signs. The loss direction and the elevation direction are different experiments with different literatures, and a gene is only closed when both have been searched.
+
+## CORR-304 — two references swapped, caught by the validator, and the guard is the reason
+
+Round 287's draft cited `sirek2025` for "combined ADAMTS10 and ADAMTS17 inactivation exacerbates bone shortening" and `taye2025` for the conditional Adamts6 allele. **They are the other way round.** Both were added minutes apart in one batch, both are 2025 ADAMTS papers, and I attached the findings from memory of the search output rather than from the resolved records.
+
+The validator's citation-mismatch check caught it before commit — the same guard that caught the hirota2022 PMID error, and the reason `addref.py` refuses a `--ref-id` that disagrees with the resolved first author.
+
+**Rule, strengthened:** when adding several references from one search batch, **re-read the assigned ref_ids back from the bibliography before writing them into a node.** The tool prints them for exactly this reason and I did read them — then wrote the findings in the order I had searched rather than the order they resolved.
