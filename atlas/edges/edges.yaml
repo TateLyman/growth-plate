@@ -26090,3 +26090,60 @@ edges:
   - schmidt2026
   - zegarra2024
   confidence: C
+- edge_id: e01583
+  source: round265_discharge_is_creb_and_erdafitinib_is_the_only_agent_that_reaches_it
+  target: erdafitinib
+  relation: activates
+  sign: '+'
+  magnitude: >-
+    THE TERM ASSIGNMENT ROUND 264 FOUND MISSING, AND IT IS DISCHARGE. horike2026 built the Fgfr3-Ach G380R
+    knock-in and found an EXPANDED RESTING ZONE with DISRUPTED TURNOVER and impaired stem-cell-like
+    behaviour by EdU, lineage tracing and scRNA-seq - cells accumulate in the pool and do not leave. The
+    mediator is CREB AND IT IS INDEPENDENT OF THE ERK PATHWAY. The CREB inhibitor 666-15 at 10 mg/kg P7-P27
+    DECREASED resting zone height while INCREASING proliferative and hypertrophic zone heights alongside
+    rescued bone growth - discharge measured directly, the pool emptying and the columns filling.
+    ERDAFITINIB INHIBITS THE RECEPTOR KINASE AND THEREFORE SITS UPSTREAM OF BOTH ARMS, so it reaches CREB;
+    vosoritide acts at RAF-1 INSIDE the ERK arm and cannot; growth hormone and anastrozole are not on this
+    pathway. Erdafitinib is the only agent in the revised stack that touches the term this atlas covers
+    worst, and it holds amplification through ERK at the same time
+  context: >-
+    THE ASSIGNMENT IS TOPOLOGICAL, NOT MEASURED - nobody has measured resting-zone turnover in any animal
+    under an FGFR3 inhibitor, and horike2026 never lowered FGFR3 below wild type, it only removed a
+    pathological excess. AND THE NAMED DISCHARGE AGENT IS RESCUE-ONLY: 666-15 changed neither weight nor
+    femur length nor resting-zone CD73 in control mice, with the authors stating it is not effective in a
+    physiological condition. So CREB inhibition is not addable to this stack; what is addable is the
+    knowledge of which arm erdafitinib is already covering. The live question is whether pushing FGFR3
+    BELOW normal accelerates turnover beyond the physiological rate, which requires a wild-type animal, a
+    length endpoint and resting-zone counts
+  evidence_tier: T1
+  refs:
+  - horike2026
+  confidence: C
+- edge_id: e01584
+  source: round265_discharge_is_creb_and_erdafitinib_is_the_only_agent_that_reaches_it
+  target: resting_zone_niche
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: >-
+    THE TRAP IN WANTING DISCHARGE AT ALL - EXIT FROM THE RESTING ZONE IS NOT THE THING WORTH HAVING, EXIT
+    INTO A COLUMN IS. resting_zone_niche records that FORCED BETA-CATENIN ACTIVATION DRIVES RESTING CELLS
+    OUT OF THE ZONE, which is discharge of the wrong kind - beta-catenin gain of function drives terminal
+    differentiation and shorter bones, and GSK3 inhibition by lithium reproduces it with oxidative DNA
+    damage attached, while the cartilage Gsk3a/Gsk3b double knockout gives precocious remodelling, reduced
+    SOX9 and SHORTER long bones. Hedgehog activation drives OSTEOGENIC CONVERSION of resting cells
+    (orikasa2024). Jansen accumulates amplified cells that die instead of hypertrophying (reyes2023). EVERY
+    FAILED DISCHARGE IN THIS FILE EXITS THE WRONG WAY. horike2026's 666-15 is the only agent that moved
+    cells out of the resting zone WHILE simultaneously raising proliferative AND hypertrophic zone heights,
+    which is the signature of exit into a column
+  context: >-
+    AND AN UNRECONCILED PROBLEM FOR ROUND 251. resting_zone_niche also records that BOTH Smoothened AGONISM
+    AND ANTAGONISM REDUCE the number of columns formed from labelled resting cells. Round 251 proposed
+    hedgehog WITHDRAWAL as the discharge signal; if both directions of hedgehog manipulation reduce column
+    formation, the hedgehog-withdrawal discharge hypothesis needs an explanation it does not have. That
+    contradiction is recorded here rather than resolved
+  evidence_tier: T1
+  refs:
+  - horike2026
+  - orikasa2024
+  confidence: speculative
+  gap_id: g_l2stem_004

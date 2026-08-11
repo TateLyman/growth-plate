@@ -9554,3 +9554,15 @@ Applying this atlas's own design rule (*stack across control points, never withi
 - **GnRHa + GH cancels** (−1.8 vs −1.9 SDS, n = 91 randomised) because a GnRH analogue removes the pubertal spurt along with the fusion signal — while **AI + GH adds** (+22.5 cm vs +20.6 for GH and +18.2 for AI alone). Duration agents are not one class, and that is exactly the drag-down failure mode.
 
 **And one genuinely open combination.** A Europe PMC search for cilostazol or a PDE3 inhibitor together with a CNP analogue in bone returns 45 records and **not one is a combination experiment**. Mechanistically it should add — vosoritide raises cGMP production at NPR2, cilostazol blocks its degradation at PDE3B, on a branch that is not RAF-1 — but two routes to more cGMP have already failed to convert here, and the reason they failed (**isoform, not bulk**: Pde5a-null mice are small, Pde3b-null show tibial enlargement) is the kind of argument that predicts additivity and could be wrong. It is the cheapest untested combination in the file. **Also unexamined: PDE3 is dual-specificity**, so cilostazol should raise cAMP as well as cGMP — meaning the CNP-arm partner is also a PTH1R-arm amplifier, and the two arms are not independent. Nobody has measured cAMP in a growth plate under a PDE3 inhibitor.
+
+---
+
+## STANDING RULE (operator-set, 2026-08-11): a paywall is never a reason to drop a source
+
+**Instruction, verbatim in effect:** *never drop studies because they are paid/inaccessible* — datasets, supplements, full texts, regulatory documents. **Always ask.**
+
+This changes the atlas's default. Until now, an unreachable full text was recorded as a limitation and the round proceeded on the abstract — `nearfinal2026` sat in the bibliography for days marked *"full text not obtained"*, `uchibe2017` was recorded as *"NOT OPEN ACCESS"* and its systemic dose written off, and `koyama2021`'s monotherapy arm was reasoned about from an abstract for six rounds while the length endpoint sat in the full text. All three were supplied within minutes of being asked for, and the third one reversed a conclusion.
+
+**The rule now:** when a claim's grade depends on something behind a paywall, the round does not proceed on the abstract and does not downgrade silently. It **names the document in the ask list and requests it**. An abstract-only source may still be used, but it may never be the reason a question is closed or a candidate is dropped.
+
+**Corollary, from this session's evidence:** the three most consequential reversals here — CORR-262, CORR-268 and CORR-269 — all came from a document this atlas already had access to or could have asked for. The cost of not asking has been measured and it is high.
