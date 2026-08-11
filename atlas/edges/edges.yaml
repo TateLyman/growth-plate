@@ -25717,3 +25717,69 @@ edges:
   refs:
   - chu2026
   confidence: B
+- edge_id: e01571
+  source: round257_the_receptor_is_a_ligandless_repressor_and_that_is_why_the_human_null_is_a_null
+  target: round256_the_retinoid_axis_transfers_to_man_and_sost_does_not
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    THE MECHANISM IS INVERTED AND THE ZONAL RESULT IS INDEPENDENTLY REPRODUCED SEVENTEEN YEARS EARLIER.
+    williams2009 made cartilage-conditional RAR mutants: RARalpha+RARgamma or RARbeta+RARgamma deficiency
+    gives SEVERE postnatal growth retardation with an aggrecan collapse while RARalpha+RARbeta is virtually
+    normal - RARgamma is essential. But the proliferative and pre-hypertrophic zones are AVASCULAR and LACK
+    ENDOGENOUS RETINOIDS by RARE reporter and by the authors' own direct biochemical measurement, so
+    RARgamma there acts as a LIGAND-LESS REPRESSOR and that repression is what SUPPORTS growth - aggrecan
+    rises with RARgamma over-expression under retinoid-free culture, rises further with the co-repressor
+    Zac1/PLAGL1, and rises further with pharmacologic agents that ENHANCE RAR repressor function. DELETING A
+    REPRESSOR AND LOCKING IT ON ARE OPPOSITE MANIPULATIONS, which is how williams2009's retardation and
+    koyama2021's plate expansion are both true. And williams2009 states independently that RARgamma
+    expression CHARACTERISES THE PROLIFERATIVE AND PRE-HYPERTROPHIC ZONES in mouse - the distribution round
+    256 measured in human tissue from a different dataset without knowing this paper existed
+  context: >-
+    THIS ALSO CORRECTS ROUND 256 ON METHOD (CORR-265). Its zonal claim used RAW DETECTION RATE, which rises
+    with sequencing depth, and the gates are not depth-matched - in donor 1 the COL10A1+ cells carry a median
+    5972 UMI and 2336 genes against 13506 and 3842 for CYTL1+ and 14367 and 4268 for MKI67+. On mean CP10K,
+    which divides depth out, the gradient survives (RARG 0.499 / 0.713 / 0.941 in donor 1; 0.150 / 0.199 /
+    0.321 in donor 2) AND RARA RUNS THE OPPOSITE WAY over the same gates (0.362 to 0.142; 0.301 to 0.220).
+    Depth moves both genes together; these move apart. THE STANDING OBJECTION IS yamaguchi1998 - a
+    dominant-negative RAR in chondrogenic cells also retarded skeletal development, which is the direction
+    the repressor model predicts should help, and that is unexplained
+  evidence_tier: T1
+  refs:
+  - williams2009
+  - koyama2021
+  - chu2026
+  - yamaguchi1998
+  confidence: C
+- edge_id: e01572
+  source: round257_the_receptor_is_a_ligandless_repressor_and_that_is_why_the_human_null_is_a_null
+  target: epiphyseal_fusion
+  relation: correlates_with
+  sign: '-'
+  magnitude: >-
+    THE NAIVE VERSION OF THE RETINOID ARM IS DEAD IN HUMANS AT A SCALE THAT WILL NOT BE IMPROVED ON.
+    schmidt2026 linked Danish military conscription 2001-2015 to nationwide prescription registries: 379196
+    individuals, 368338 men of whom 16739 had taken isotretinoin, adult height measured at median age 19.0.
+    ADJUSTED MEAN DIFFERENCE +0.31 cm (95 per cent CI 0.20 to 0.41) IN MEN and +0.25 cm (CI -0.47 to 0.96)
+    in women, against a predefined minimal clinically important difference of 5 cm, CONSISTENT ACROSS STRATA
+    OF AGE AT INITIATION AND CUMULATIVE DOSE and with stunting as the outcome. Millions of adolescents have
+    taken a retinoid at 0.5 to 1 mg/kg/day through the last years of growth and the interval excludes any
+    height cost above four millimetres
+  context: >-
+    TWO READINGS REDUCE HOW MUCH THIS CONSTRAINS RARgamma AND NEITHER IS ESTABLISHED. FIRST, the target zone
+    is avascular, its retinoid content was directly measured as absent in mouse (williams2009), and CYP26B1
+    specifically - with CYP26A1 and CYP26C1 at the negative-control floor - is transcribed in the human plate
+    (round 256): a tissue that is avascular AND transcribes the enzyme that destroys retinoic acid is
+    defended against systemic retinoid, and koyama2021 shows that hedgehog inhibition closes the plate
+    precisely by SUPPRESSING Cyp26b1, i.e. by breaking that buffer. SECOND, isotretinoin is 13-cis-retinoic
+    acid, a poor direct RAR ligand acting largely after isomerisation and NOT RARgamma-selective, and
+    matsuoka2025 showed RARalpha and RARbeta agonists produce no skeletal response at all. The positive
+    +0.31 cm is almost certainly residual confounding - acne tracks with earlier maturation and higher BMI
+    and the adjustment set is birth cohort and education only
+  evidence_tier: T1
+  refs:
+  - schmidt2026
+  - williams2009
+  - matsuoka2025
+  - xu2025
+  confidence: B

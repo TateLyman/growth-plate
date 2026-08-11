@@ -9407,3 +9407,45 @@ The cost is concrete. **The retinoid axis was at zero across 778 nodes** — and
 **And it was not even unrecorded.** `matsuoka2025` has been in this bibliography since 2026-08-05, filed under `growth_plate_drug_exposure` with the recorded finding *"a direct attempt to solve the growth-plate delivery problem"*. The atlas catalogued the **delivery vehicle** and never read the **drug** — a selective RARγ agonist that closes growth plates and shortens tibiae, with RARα and RARβ agonists inactive as the subtype control.
 
 **Rule.** A paper indexed under one layer's question still carries its pharmacology. When a reference is filed for its *method*, its *mechanism* has to be entered too, or the atlas will hold the evidence and not the finding.
+
+---
+
+## CORR-265: round 256's zonal claim was made on a statistic confounded by sequencing depth — it survives a proper re-test, but it should never have been reported the way it was
+
+**What round 256 claimed.** That RARG is *"ENRICHED IN THE ROOT AND PROLIFERATIVE COMPARTMENTS AND DEPLETED IN THE HYPERTROPHIC ONE"* — 45.1% / 52.0% / 29.8% detection by marker gate — and that this is *"the contrast capture bias does not touch"*, graded C.
+
+**The confound.** Detection rate — the fraction of cells with ≥1 count — rises mechanically with sequencing depth. Round 256 never checked whether the gates were depth-matched. **They are not:**
+
+| donor 1 gate | n | median UMI | median genes |
+|---|---|---|---|
+| COL10A1+ | 237 | 5 972 | 2 336 |
+| CYTL1+ | 695 | 13 506 | 3 842 |
+| MKI67+ | 124 | 14 367 | 4 268 |
+
+The root and proliferating gates hold cells **1.6–1.7× deeper**, which for a sparse transcript is easily enough to manufacture the entire reported gradient. The sentence claiming capture bias could not touch this contrast was wrong: it defended against *cross-gene* bias and ignored *cross-cell* depth.
+
+**The re-test, on mean CP10K, which divides depth out.** The gradient survives:
+
+| | hypertrophic | proliferating | root |
+|---|---|---|---|
+| RARG donor 1 | 0.499 | 0.713 | **0.941** |
+| RARG donor 2 | 0.150 | 0.199 | **0.321** |
+| **RARA** donor 1 | **0.362** | 0.137 | 0.142 |
+| **RARA** donor 2 | **0.301** | 0.273 | 0.220 |
+| PLAGL1 donor 1 | 1.091 | 1.761 | **2.740** |
+
+**RARA is the control that makes it safe.** Sequencing depth moves every gene in the same direction; RARG and RARA move in *opposite* directions across the same gates in both discriminating donors. That is not producible by depth. Donor 3 is flat, as expected — its gates overlap (8578 of 9115 cells are COL10A1+).
+
+**So the conclusion is upheld and its evidence is now better than what was originally offered for it.** That is the uncomfortable part: the claim was right, and the reason given for it was not. A correct conclusion reached through a confounded statistic is a defect, because the next claim made the same way may not be right.
+
+**Rule.** For any single-cell comparison **between groups of cells**, the depth of those groups is a confounder until checked. Detection rate is never safe across unmatched groups; use a depth-normalised statistic, and carry an internal control gene that should move the *other* way. This atlas already had the equivalent rule for cross-gene comparison and applied it in round 256 — it did not have it for cross-cell comparison, and now does.
+
+### And the substantive half of round 257
+
+Both halves of the deciding experiment turn out to have been done, and both **invert** rather than kill the axis.
+
+`williams2009` deleted RARs from cartilage: RARα+RARγ (or RARβ+RARγ) gives **severe postnatal growth retardation with an aggrecan collapse**, RARα+RARβ is virtually normal. Read flatly that ends round 255. It does not, because the same paper measured why: the proliferative and pre-hypertrophic zones are **avascular and contain no retinoid** — by RARE reporter *and* by direct biochemical assay — so RARγ there is a **ligand-less repressor**, and that repression is what *supports* growth. Aggrecan rises with RARγ overexpression under retinoid-free culture, further with the co-repressor Zac1/PLAGL1, and further with *"pharmacologic agents that enhance RAR repressor function."* **Deleting a repressor and locking it on are opposite manipulations** — the same error shape as the Jansen objection to PTH1R, which round 175 resolved the same way. It also means round 255 asked for the wrong compound: not an antagonist, an **inverse agonist**.
+
+`schmidt2026` is the human test at a scale nothing else here approaches — 379 196 Danish conscripts, 16 739 male isotretinoin users, **+0.31 cm (95% CI 0.20–0.41)**, flat across age at initiation and cumulative dose. The naive arm — move systemic retinoid, move height — is dead and will not be revisited. Whether it constrains *RARγ* is weaker: the zone is avascular and transcribes CYP26B1 specifically (round 256), so the plate is plausibly buffered against systemic retinoid — which is exactly the buffer `koyama2021` shows hedgehog inhibition breaking — and isotretinoin is not RARγ-selective anyway.
+
+**And one new connection worth its own experiment.** `williams2009`'s co-repressor is Zac1 = **PLAGL1**, which `arm3_pool_ceiling_is_imposed_not_intrinsic` already records as one of eleven imprinted genes **declining with age in step with growth rate**. If RARγ's growth-supporting repression needs PLAGL1, and PLAGL1 is being withdrawn as part of the body-wide senescence programme, then an RARγ inverse agonist substitutes for a co-repressor that is being lost. Graded E. Round 257 could only check that RARG and PLAGL1 sit in the same human cells with the same zonal direction, and they do.

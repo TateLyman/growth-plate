@@ -1,0 +1,81 @@
+============================================================================================
+ROUND 257 - THE LIGAND-LESS REPRESSOR MACHINERY IN THE HUMAN GROWTH PLATE
+GSE288028, four fresh donors, 27704 cells. Negative-control floor 0.632 % of cells.
+============================================================================================
+
+CO-REPRESSOR MACHINERY (what the ligand-less repressor model requires)
+  gene         donor1    donor2    donor3    donor4     mean   xfloor
+  PLAGL1        33.92     22.55     59.84     21.15    34.36     54.4
+  NCOR1         58.43     66.84     42.98     44.39    53.16     84.2
+  NCOR2         54.05     38.37     40.14     21.93    38.62     61.1
+  HDAC3         11.03     12.97     17.77     15.40    14.29     22.6
+  HDAC1         11.10     19.45     24.81     14.10    17.36     27.5
+  TBL1X         38.62     37.54      7.32     12.79    24.07     38.1
+  TBL1XR1       64.32     68.42     73.21     49.35    63.83    101.0
+
+CO-ACTIVATOR MACHINERY (the opposing arm)
+  gene         donor1    donor2    donor3    donor4     mean   xfloor
+  NCOA1         66.87     68.45     24.33     26.37    46.51     73.6
+  NCOA2         60.28     71.32     23.85     21.93    44.35     70.2
+  NCOA3         59.19     60.61     35.79     32.90    47.12     74.6
+  EP300         50.16     44.32     27.77     32.64    38.72     61.3
+  CREBBP        69.07     59.22     41.29     31.07    50.16     79.4
+
+THE REPRESSION TARGET williams2009 MEASURES
+  gene         donor1    donor2    donor3    donor4     mean   xfloor
+  ACAN          44.49     27.12     99.52     24.80    48.98     77.5
+  COL2A1        88.31     90.65    100.00     52.48    82.86    131.2
+  SOX9          20.19      7.70     89.90     25.85    35.91     56.8
+  SOX5          53.45     27.12     83.25     22.45    46.57     73.7
+  SOX6          44.89     16.62     76.35     21.67    39.88     63.1
+
+THE AXIS, FOR REFERENCE (round 256 values)
+  gene         donor1    donor2    donor3    donor4     mean   xfloor
+  RARG          19.04      6.85     48.66     20.10    23.66     37.5
+  RXRA          26.65     15.22     56.62     32.11    32.65     51.7
+  CYP26B1        4.59      1.79     10.20      3.66     5.06      8.0
+
+============================================================================================
+ZONAL - is PLAGL1 where RARG is? Detection within marker gates (ENRICHMENTS, NOT CLUSTERS)
+============================================================================================
+
+  GATE hypertrophic (COL10A1+)
+    n = donor1:237, donor2:1084, donor3:8578, donor4:28
+    gene         donor1    donor2    donor3    donor4     mean
+    RARG          21.52      8.86     49.58     39.29    29.81
+    PLAGL1        37.55     24.72     60.90     46.43    42.40
+    NCOR1         60.76     72.88     43.41     71.43    62.12
+    NCOR2         57.38     41.33     40.83     42.86    45.60
+    HDAC3         10.55     15.68     18.14     17.86    15.56
+    ACAN          50.21     28.78     99.59     50.00    57.15
+
+  GATE proliferating (MKI67+)
+    n = donor1:124, donor2:180, donor3:535, donor4:1
+    gene         donor1    donor2    donor3    donor4     mean
+    RARG          40.32     15.00     52.71    100.00    52.01
+    PLAGL1        57.26     37.22     61.87    100.00    64.09
+    NCOR1         70.16     81.67     57.20      0.00    52.26
+    NCOR2         87.10     60.56     53.83    100.00    75.37
+    HDAC3         28.23     22.78     26.73    100.00    44.43
+    ACAN          75.81     35.56     99.63      0.00    52.75
+
+  GATE root-enriched (CYTL1+)
+    n = donor1:695, donor2:1659, donor3:7757, donor4:90
+    gene         donor1    donor2    donor3    donor4     mean
+    RARG          56.69     22.72     51.08     50.00    45.12
+    PLAGL1        73.96     41.41     62.52     48.89    56.70
+    NCOR1         77.84     72.27     44.51     61.11    63.93
+    NCOR2         85.18     51.48     42.26     45.56    56.12
+    HDAC3         22.88     16.15     18.31     26.67    21.00
+    ACAN          92.09     51.54     99.87     84.44    81.98
+
+============================================================================================
+CO-DETECTION - what fraction of RARG+ cells also carry the co-repressor?
+Co-detection in droplet data UNDERSTATES co-expression badly (a zero is usually
+a dropout, not an absence), so these are LOWER BOUNDS and nothing else.
+============================================================================================
+  PLAGL1        65.18     44.68     67.96     50.65    57.12 % of RARG+ cells
+  NCOR1         76.88     77.83     48.70     64.94    67.09 % of RARG+ cells
+  NCOR2         80.95     57.47     44.96     50.65    58.51 % of RARG+ cells
+  HDAC3         22.92     18.10     21.38     36.36    24.69 % of RARG+ cells
+  ACAN          78.47     53.96     99.93     55.84    72.05 % of RARG+ cells
