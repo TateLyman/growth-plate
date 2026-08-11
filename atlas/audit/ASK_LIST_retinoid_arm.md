@@ -174,7 +174,12 @@ Lower priority. GPR30 in human bone cells declining through puberty (osteocytes 
 independent human report of the axis that round 281 identified as the cleanest resting-pool lever in the
 atlas, and the adult-height evidence for that axis currently rests on **n = 2 carriers in one family**.
 
-### 1. `SPIN4-related X-linked overgrowth in a family` — **REQUESTED**
+### 1. `SPIN4-related X-linked overgrowth in a family` — **SUPPLIED AND CLOSED 2026-08-11 (round 282)**
+> Received as PDF. Read in full. It REPLICATED the hemizygous male on the identical allele (+2.75 SDS over
+> midparental, bone age unadvanced at Tanner 5) and BROKE the heterozygous female claim (+4 cm and −9.2 cm
+> vs midparental, against lui2023's +2 SDS each). Also delivered the first human DXA on the Wnt-lowering
+> direction (TBLH BMD Z −3.29 height-adjusted; Bone Health Index −2.34 SD) and an IGF-1 of 363, which killed
+> round 281's "IGF-1 179 is lower than this subject's 198" as a class property. CORR-291 to CORR-294.
 - PMID **41780720** · DOI **10.1016/j.ejmg.2026.105073** · *European Journal of Medical Genetics*, 2026
 - Not open access. No PMC record. No preprint found.
 - **Why it matters:** the third SPIN4 family. `lui2023` is family 1 (the only source of ADULT attained

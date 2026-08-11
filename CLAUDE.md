@@ -22,6 +22,7 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 | Serum IGF-1 does not predict growth potential | R269, CORR-276 | Four genotypes, two in the wrong direction |
 | Anastrozole = letrozole on height; letrozole costs IGF-1 for nothing | R274 (zegarra2024, RCT) | Deeper E2 suppression does not buy height. Stay 1 mg. |
 | Aromatase inhibitor ceiling ≈ +1.3 cm over 3 years | R274 | |
+| **Read bone-age films on BoneXpert, not by eye** | R282, CORR-294 | One left-hand film returns Greulich-Pyle **+** Tanner-Whitehouse-3 **+** Bone Health Index (metacarpal cortical thickness) — a cortical-bone channel and two extra maturity reads at **zero extra radiation/visits/cost**. In `plluaas2026` the three maturity methods spanned 0.5 y = **2.2 cm of predicted adult height**. Supplements, does not replace, R278's lateral T-L film + DXA (BHI = cortical; the AI cost = lumbar trabecular). |
 | AI's bone cost is an **efficacy** term, not a safety footnote | R278 | Lumbar BMD Z fell significantly in BOTH arms (−1.33→−1.54 ana, −1.37→−1.94 let); anterior vertebral wedging in 2 boys on films >4 yr out. The residual is vertebral — so this subtracts from the goal. **Measure it: baseline + repeat lateral T-L film and DXA, continued past 2 years.** Not a reason to stop. |
 
 ## DEAD — closed with reasons. Reopening requires new primary data, not a new argument.
@@ -40,6 +41,10 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 ## THE RECURRING FAILURE MODES (each has cost a turn)
 
 1. **Charge without discharge** — 7 instances. A taller plate is not a longer bone. CORR-189.
+   **CORR-292 sharpens it: an expanded resting zone is NOT a pool count.** `horike2026` Fgfr3-Ach = expanded
+   RZ (weak safO, weak COL2, progeny don't migrate to PZ) + **short** bones = a JAM. `lui2023` Spin4-KO =
+   expanded RZ + more Sfrp5⁺/CD73⁺ + **longer** bone = a POOL. Same histology, opposite meaning; only the
+   length endpoint separates them. **SPIN4 is the FIRST pool expansion in this file with a longer bone.**
 2. **Restoration ≠ elevation** — a result from a deficient animal is a claim about the deficit. CORR-203, CORR-282.
 3. **Re-deriving a settled ranking and calling it new.** ← the reason this file exists.
 4. **Asserting what the literature contains without running the query.** CORR-267, CORR-284.
@@ -105,18 +110,33 @@ delivered to limb mesenchyme or cartilage shortens. A plate-directed drug cannot
 
 **✓ LIVE — SPIN4 (`lui2023`, R281). The cleanest pool lever in the atlas.** The one row of R280's table I
 never read. An epigenetic **reader**, not a writer.
-- **Human, one family:** proband +4.5 to +5 SDS vs midparental **+1.2 SDS**, PAH **203 cm**, **bone age
-  advanced by only 1 year** (this is *why* he escapes the class rule — **but see the qualifier below**).
-  Heterozygous **mother and maternal grandmother each reached ADULT heights +2 SDS above their own
-  midparental heights**. **IGF-1 179 ng/mL,
-  normal, repeatedly — LOWER than this subject's 198.** So the axis is *not* an IGF axis and does not compete
-  with the GH arm. (He had epiphysiodesis at 13, so the 203 cm is never tested.)
+- **THREE families now. The MALE replicates; the FEMALE does not (R282).**
+  - **Hemizygous males — grade C, and this is the live half.** `lui2023` PAH **203 cm = +3.3 SDS over his own
+    midparental**; `plluaas2026` (SAME allele c.312_313del, Estonia, found *incidentally*) PAH **198 cm =
+    +2.75 SDS over his midparental target of 180**. Bone age **unadvanced in both** — `plluaas2026` is GP
+    13.99 at CA 14.09 **while already Tanner 5, testes >25 mL at 14**. Full gonadal maturation, no skeletal
+    advance.
+  - ✗ **Heterozygous females — REGRADED D→E.** `lui2023`'s mother + grandmother were +2 SDS over midparental;
+    `plluaas2026`'s, on the identical allele, are **+4 cm and −9.2 cm**. Skewed XCI offered (20/80, 22/78) but
+    the authors **never determined which X carries the variant.** This was the class's ONLY attained-adult-
+    height evidence and the two families disagree.
+  - ✗ **NO hemizygote has ever reached adult height.** Both male numbers are **Bayley-Pinneau predictions**;
+    `plluaas2026` warns BP is unreliable in exactly this phenotype (its own 3 bone-age reads span 0.5 y = 2.2 cm
+    of PAH).
+  - ✗ **The IGF-1 point is dead as a class property (CORR-291).** Proband 2's IGF-1 is **363**, not 179. What
+    survives: IGF-1 is *within range* in both, so the axis doesn't need elevated IGF-1 and doesn't compete
+    with the GH arm.
 - **Mouse:** resting-zone height ↑, resting cell number ↑, Sfrp5⁺ and CD73⁺ progenitors ↑. **PZ height,
   cells/column, cell height ALL unchanged. HZ height, cells/column, terminal hypertrophic cell height ALL
   unchanged.** Body + tibia length ↑ at 2 wk, 10 wk, **and still at 18 months** (`lui2026`, preprint) with
   **normal BMD**. Against the height identity: **N ↑ and λ ↑, with A and h_term flat.**
 - **Mechanism:** reduced baseline canonical Wnt in chondrocytes (TOPFLASH ↓, Axin2 ↓); Spin4 highest in RZ.
-- **Cost:** tumour count ↑ at 18 mo (`lui2026`). SPIN4/EZH2/DNMT3A all over-expressed across human cancers.
+- **Cost 1:** tumour count ↑ at 18 mo (`lui2026`). SPIN4/EZH2/DNMT3A over-expressed across human cancers.
+- **Cost 2 — HUMAN BONE, and it's CORTICAL (R282, n=1).** `plluaas2026`: TBLH BMD Z **−3.29 height-adjusted**,
+  Bone Health Index (metacarpal cortical thickness) **−2.34 SD**, lumbar only −1.08, on normal PTH/vitD/Ca and
+  no fractures. First human bone measurement on the whole Wnt-lowering direction. Agrees with `dreyer2025`
+  (mouse, PORCN inhibitor); **disagrees with `lui2026`** (aged Spin4-KO BMD normal) — hence grade D.
+  *Different compartment from the AI arm, which spends lumbar trabecular (R278).*
 - **Qualifier (`chawla2025`, 2nd family, different Tudor-domain frameshift):** overgrowth and segregation
   replicate, **but the affected sibling had bone age 9–11 at chronological age 8.** So "SPIN4 overgrows
   without spending bone age" is ONE PATIENT WIDE — do not promote it to a class property. What survives is
@@ -162,6 +182,12 @@ never read. An epigenetic **reader**, not a writer.
   the loop that terminates growth. Common longevity supplement. Mechanism-only (graded E), untested. R276
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+- **Deliberately lowering thyroid tone to slow bone age.** R282/CORR-293. Tempting (`plluaas2026`'s proband
+  had free T4 12.2 vs range 12.6–21.0 and his authors blamed it for the unadvanced bone age). But T3 *induces
+  hypertrophy* (grade-A `thyroid_hormone_t3`), so lowering it is **discharge blockade = failure mode #1**; and
+  `cammisa2024`: acquired hypothyroidism arrests growth, catch-up is often incomplete, many never reach genetic
+  height, **pubertal-onset worst**. **INVERSION — a free T4 below range on this stack is a HEIGHT COST to
+  correct, not a bonus. Measure it.** (Open, unsourced: does GH itself lower free T4 here?)
 
 ## PATTERN THAT PREDICTS THE NEXT FAILURE
 

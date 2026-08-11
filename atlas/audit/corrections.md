@@ -9863,3 +9863,61 @@ That last item **partially closes `g_l2_wnt_inhibition_in_resting_cells_long_col
 At the effective dose the authors observed **fusion of the growth plate to hypertrophic chondrocytes near the articular surface**, and write in their own discussion that long-term consequences may include **cartilage exhaustion**. `dreyer2025` gave LGK974 6 mg/kg twice weekly for four weeks to growing mice and found reduced vertebral trabecular number and tibial cortical bone volume — and **took no length measurement**, in six-week-old animals where it was available.
 
 **Rule:** two interventions that move the same pathway label in the same direction are the same lever only if the **zone decomposition** matches. Blocking secretion of *all* Wnt ligands is not partially lowering canonical transcriptional output in one compartment. Record the histology before recording the pathway.
+
+## CORR-291 — the replication I asked for arrived and it broke the half I had graded, not the half I doubted
+
+I asked the operator for `plluaas2026` expecting it to raise the SPIN4 attained-adult-height claim from **D** toward **B/C**. It does the opposite, and it does it on the **identical allele** — c.312_313del, p.(Arg104Serfs\*24), the same variant as `lui2023`, in an unrelated Estonian family.
+
+| | `lui2023` family | `plluaas2026` family |
+|---|---|---|
+| hemizygous male, height vs own midparental | **+3.3 SDS** (PAH 203 cm) | **+2.75 SDS** (PAH 198 cm, target 180 cm) |
+| bone age | advanced by 1 yr | **not advanced** (GP 13.99 at CA 14.09), at **Tanner 5** |
+| mother, adult height vs her midparental | **+2 SDS** | 172 vs 168 cm (**+4 cm**) |
+| maternal grandmother, adult vs her midparental | **+2 SDS** | 166.8 vs 176 cm (**−9.2 cm**) |
+| IGF-1 | 179 ng/mL | **363 µg/L** |
+
+**Three things I have to withdraw or downgrade:**
+
+1. **"Partial SPIN4 loss raises attained adult height in humans" — D → E.** The heterozygous female carriers were the *only* attained adult heights in the entire epigenetic overgrowth class. Two families, same allele, n = 2 each, opposite directions. The skewed-XCI rescue (20/80, 22/78) is offered by the authors and immediately qualified by them: **they did not determine which X carries the variant**, and inactivation can differ between blood and growth plate.
+2. **The IGF-1 rhetorical point is dead.** Round 281 wrote that the proband's IGF-1 of 179 was "lower than this subject's 198." This proband's is **363**. I generalised from one patient to a class property. What survives is the weaker, still-useful claim: IGF-1 is *within range* in both, so the axis does not require an elevated IGF-1 and does not compete with the GH arm.
+3. **No hemizygote has ever reached an adult height.** Family 1 had epiphysiodesis at 13; family 2 is 14; family 3 is an infant and an 8-year-old. **Both male figures are Bayley-Pinneau predictions** — and `plluaas2026` warns in its own discussion that Bayley-Pinneau is less accurate where pubertal progression is atypical or epiphyseal closure delayed, which is precisely this phenotype. Its own three bone-age reads differ by ~half a year and move the prediction by 2.2 cm.
+
+**What genuinely strengthened:** the male phenotype replicated on the same allele in a case ascertained **incidentally** (testing for an unrelated family history of McArdle disease — tall stature was *not* the indication), which is the cleanest ascertainment in the class.
+
+**Rule.** A requested paper is not a confirmation instrument. Before opening an ask, state which grade goes **up** and which goes **down** under each possible answer — otherwise the ask is written to confirm and the disconfirming half arrives unbudgeted.
+
+## CORR-292 — an expanded resting zone is not evidence of a pool, and this atlas already held the counterexample
+
+Round 281 read `lui2023`'s expanded resting zone as a bigger progenitor pool. That reading is only licensed by the accompanying **length** endpoint, and the proof is already in this graph:
+
+| | resting zone | bone |
+|---|---|---|
+| `horike2026` Fgfr3-Ach | **expanded** — weak safranin O, weak COL2, reduced migration of progeny into the PZ | **short** |
+| `lui2023` Spin4-KO | **expanded** — more Sfrp5⁺ and CD73⁺ progenitors | **longer**, to 18 mo |
+
+Same histology, opposite meaning. Expansion by **jam** versus expansion by **pool**. CORR-189 said zone heights are not growth rates; this is its strongest form — **a resting-zone height is not a progenitor count in either direction, and the two are distinguished only by measuring the bone.**
+
+**And the flip side, which is why SPIN4 still matters.** This file's charge-without-discharge ledger — `horike2026`, `newton2019` Tsc1, `reyes2023`, `trompet2024` SAG, `koyama2021` CD2665 — records **every** pool or plate expansion arriving with equal or shorter bone. `lui2023` is the **first pool expansion in this atlas that came with a longer bone**, and it holds at 18 months. That claim rests on a mouse length endpoint and is untouched by `plluaas2026`'s human findings.
+
+## CORR-293 — I nearly proposed a thyroid brake, and this file already contained both halves of its refutation
+
+`plluaas2026` reports a **below-range free T4 (12.2 vs 12.6–21.0 pmol/L)** and its authors invoke it as a possible reason the patient's bone age is not advanced. The obvious next move — hold free T4 low deliberately and buy growth window, the binding constraint at bone age 16 — is wrong, and both halves of the refutation were already available:
+
+- **Mechanism, already grade A in this graph.** `thyroid_hormone_t3` records that T3 *inhibits* proliferation and *induces* hypertrophy. Lowering it is a **discharge blockade** — failure mode #1, seven instances.
+- **Human outcome.** `cammisa2024`: acquired childhood hypothyroidism causes growth arrest; levothyroxine catch-up is frequently **incomplete**; many children never reach expected genetic height; and **pubertal-onset cases fare worst**, explicitly because treatment then accelerates skeletal maturation.
+
+**The actionable inversion:** a free T4 drifting **below** range on this stack is a **height cost to be corrected**, not a bone-age bonus. It is also a confound on this patient's headline finding — his unadvanced bone age cannot be attributed cleanly to SPIN4.
+
+**Not asserted:** whether growth hormone itself lowers free T4 in this subject. A targeted search returned no clean primary source, so the question is recorded as open rather than answered from memory (failure mode #4).
+
+## CORR-294 — a measurement this programme has been paying for and not collecting
+
+`plluaas2026` reports **Greulich-Pyle, Tanner-Whitehouse-3, and the Bone Health Index** all from a **single left-hand radiograph**, via BoneXpert. The Bone Health Index is derived from **cortical thickness of metacarpals II–IV**.
+
+Round 278 established that this stack's bone cost is an **efficacy** term, not a safety footnote, because the residual is vertebral and vertebral wedging subtracts height — and prescribed serial lateral thoracolumbar films plus DXA. Serial **bone-age** films are separately and already indicated for this subject.
+
+**Those films have been read for one number when they contain three.** Reading them through BoneXpert adds a cortical bone-quality channel plus two independent maturity estimates at **zero extra radiation, zero extra visits, zero extra cost**. In this paper the three maturity reads disagreed by ~0.5 y and moved the predicted adult height by **2.2 cm** — at this maturity that is most of an annual bone-age budget, and reading a single method by eye discards the disagreement rather than seeing it.
+
+It **supplements** rather than replaces round 278's prescription: BHI reads *cortical* bone; the aromatase arm's documented cost is *lumbar trabecular*.
+
+**Rule.** Before proposing a new measurement, ask what the measurements already being taken could also report. An instrument already in the protocol is cheaper than any new one.
