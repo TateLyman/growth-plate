@@ -9627,3 +9627,44 @@ Round 251 proposed load → withdraw → reload as a charge-and-discharge protoc
 The entry said both Smoothened agonism and antagonism reduce the number of columns formed from labelled resting cells. Faithful, and incomplete. `mizuhashi2018`'s preceding clause: both regimens *"predominantly affected chondrocytes in the proliferating zone, without directly affecting PTHrP-creER-P6 cells in the resting zone."* The arithmetic agrees — at P17 control vs SAG is 67.8 columns and control vs LDE225 is 66.0, while **SAG vs LDE225 is −1.85 with an interval straddling zero.** Two ways of breaking the same downstream structure, not an optimum in resting-cell behaviour. The node text is amended in place.
 
 Recorded honestly: the qualifier is itself soft. *"Not directly affecting"* rests on Extended Data Fig 8a–8c, which the legend describes as images with no quantification of resting-zone cell number — so the absence of resting-cell depletion under an antagonist is equally unquantified, and the P28 SAG arm is n = 2 with no comparison reported.
+
+---
+
+## CORR-275 — the atlas has been collecting papers it never read. 231 length endpoints, and the three that mattered were already on the shelf.
+
+CORR-272 ended with a rule: **when the question is about length, search the REFERENCES the graph cites, not the graph's own prose.** A rule that is not run is not a rule, so `atlas/tools/round269_length_endpoints_the_atlas_is_sitting_on.py` runs it.
+
+**1,539 references. 1,427 with PMIDs. 596 report a bone, limb or body length endpoint in their abstract. 231 of those have never had a single number extracted into any node. 83 of the 231 report a gain rather than an impairment.**
+
+A reference counts as *mined* only if it appears as a `source_ref` in some node's `quantitative` block. Appearing in `key_refs`, or in an edge, does **not** count — because that is precisely the `xiu2022` state, where a paper is cited for a mechanism and its measurements are never taken.
+
+**And the detail that makes this worse than CORR-272 suggested:** all three papers round 269 turns on — `samvelyan2022`, `tailor2024`, `chou2025` — were **already in this bibliography**, under `ref_id`s this session had never seen. `addref.py` refused all three as duplicates. The failure is not that the atlas cannot find these papers. It is that the atlas **acquires** them, records a title, and never opens them.
+
+**What that changes about how rounds should be run.** Every previous round of this session began by searching Europe PMC for something new. The cheapest available material is not new — it is the 231. **Before the next external search, the next thing read should come off that list**, and the list is archived at `atlas/data/round269/length_endpoints_sweep.tsv` so it can be worked through rather than re-derived.
+
+**And a caveat on the tool that must travel with its output.** It is an abstract-level regex. It over-counts — a review that says "linear growth" matches and carries no data of its own. It under-counts — a paper whose abstract omits its length endpoint is invisible to it. It is a **pointer list, not a finding**, and CORR-270 applies to every entry: nothing on it may be graded from its abstract.
+
+## CORR-276 — the case fact was being used as a single readout, and four genotypes say it is not one
+
+The standing case fact is **IGF-1 = 198**, and the operator's framing — *"igf-1 is a limiting factor not just ISS"* — has shaped several rounds, including my own CORR-264.
+
+`dobie2015` reports two things that qualify it, and neither reverses it:
+
+1. **The local growth-plate response to GH does not run through IGF-1.** In `Socs2`-null metatarsals growing faster under GH, IGF-1 transcript and protein were not raised, conditioned-medium IGF-1 was unchanged, and growth-plate `Igf1` mRNA was not elevated in juvenile `Socs2`-null mice. **IGFBP-3 and `Igf2` rose instead**, and the growth was abolished when the IGF **receptor** was inhibited — IGF1R-dependent, IGF-1-independent.
+
+2. **Serum IGF-1 did not predict linear growth potential across four genotypes**, two of them in the wrong direction — IGFBP-3 nulls with 40 % less serum IGF-1 were **5 % longer**; liver-IGF-1-deficient mice with 80 % less were of **equal length**; triply deficient animals with 2.5 % of wild-type circulating IGF-1 were only 6 % shorter.
+
+**This is graded D and not lower, and not higher, for a specific reason: point 2 is a secondary citation** from `dobie2015`'s introduction, attributed to Yakar and colleagues 2009, and **that primary has not been read and is not yet identified by PMID in this bibliography.** Quoting numbers out of another paper's introduction is exactly the failure CORR-268 and CORR-270 were written about. It is recorded as a pointer, not a measurement, and the Yakar primary is on the ask list.
+
+**What it changes operationally:** a serum IGF-1 of 198 is a poor single readout of *IGF signalling at the plate*, which is the quantity that matters. It argues for **local delivery** over systemic titration — and `tailor2024`'s `CV1574-1`, an anti-matrilin-3 scFv–IGF-1 fusion with markedly reduced hypoglycaemia and a prolonged matrilin-3-dependent AKT signal, is the only molecule in this file that does that. **Its endpoint is growth plate height, not bone length**, so the claim that it adds height is graded E.
+
+## CORR-277 — the duration term's oestrogen axis is not one axis, and an aromatase inhibitor cannot separate it
+
+This atlas has treated oestrogen at the growth plate as a single fusion-driving signal that an aromatase inhibitor removes. **Two cartilage-restricted knockouts, both with length endpoints, point opposite ways.**
+
+- **ERα is the brake, and it is local.** `brjesson2010`: cartilage-specific ERα inactivation leaves growth **normal through early sexual maturation** — no pubertal spurt lost — **blocks** high-dose oestradiol's reduction of plate height, and lets adults **keep growing past four months when controls stop, giving increased femur length at one year.** Total ERα inactivation *did* disturb growth, and did so **through the GH/IGF-1 axis**. The brake is in the cartilage; the benefit is systemic.
+- **GPER-1 is the accelerator, and it is also local.** `chou2021`: chondrocyte-specific GPER-1 deletion **shortens tibia, femur and crown-rump length** with fewer proliferating chondrocytes. `chou2025` moves it both ways pharmacologically — agonist G1 up, antagonist G15 down — through the **PTHrP/Ihh ratio**.
+
+**A systemic aromatase inhibitor removes the ligand for all three at once.** That is a mechanistic account of the thing round 254 measured and could not explain: large bone-age delays, small attained-height yield — 0.8 cm for anastrozole, 4.2 cm for letrozole. **The class is fighting itself.**
+
+**The lever this implies is new here and is recorded as a proposal, not a recommendation:** ERα antagonism at the plate that spares GPER-1. Graded **E**. Nobody has deleted both receptors, nobody has given an ERα-selective antagonist to a normal growing animal with a length endpoint, the two knockouts come from different laboratories with different Cre drivers and different readout ages, and the mouse plate does not fuse. `brjesson2010` is not open access and only its abstract is held — it is on the ask list.
