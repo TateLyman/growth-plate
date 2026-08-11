@@ -9288,3 +9288,23 @@ None of that is a magnitude, so nothing about the grade changes. But it converts
 **Rule.** *The bibliography is part of the graph, not an appendix to it.* `one_line_finding` fields in this atlas routinely carry effect sizes, n, and P values that appear in no node. Any claim of the form 'nothing does X' must be checked against the reference layer with a content search, not against node titles.
 
 **And the claim, restated correctly.** Something does raise N with lambda intact: **hedgehog agonism, locally delivered, after secondary ossification centre formation.** What remains true, and is a much narrower statement, is that **no such intervention exists in a form deliverable to a human**, and that the field disagrees about the mechanism — `trompet2024` reports pool expansion with proliferation unchanged, while `cheng2025` reports that post-SOC SAG *promotes proliferation* of resting zone chondrocytes. Those are different claims about the same drug in the same window and the atlas should stop treating them as one result.
+
+---
+
+## CORR-259: the contradiction I built a round on was an uncited sentence in a review
+
+**What round 248 recorded**, and told the user, as one of four things wrong with reading hedgehog agonism as a therapy: *the field disagrees about the mechanism — `trompet2024` reports pool expansion with proliferation unchanged, while `cheng2025` reports that post-SOC SAG promotes proliferation of resting zone chondrocytes. Those are different claims about the same drug in the same window and the atlas should stop treating them as one result.*
+
+**`cheng2025` is a review.** Cheng, Orikasa and Ono, *Int J Mol Sci* 2025 — the bibliography has typed it `review` all along. This atlas's standing rule is that **reviews are an index, not a source**, and I used one as a source to manufacture a disagreement with a primary paper.
+
+**Reading it settles the question by dissolving it, three times over.**
+
+1. The sentence itself — *stimulation of Hedgehog signaling by SAG at the same stage promoted proliferation of resting zone chondrocytes* — **carries no citation.** It follows a citation to reference [7], Newton 2019, and supplies none of its own.
+2. The review's substantive SAG passage — systemic age-dependence, the Wnt-inhibitory transcriptomic programme, SAG-loaded beads in rat femoral SOC — **is a description of `trompet2024`**, the very paper it was being set against.
+3. The pre-SOC claim that *both* LDE225 and SAG reduce PTHrP+ cells cites reference [6], **Mizuhashi 2018** — a different developmental window and a different experiment.
+
+**And the primary was never in conflict with itself; the two readings are two ROUTES within one paper.** `trompet2024`'s own abstract: *Both systemic activation with SAG and genetic activation by Ptch1 ablation promoted proliferation of epSSCs and clonal enlargement. Transient intra-articular administration of SAG also elevated the number of epSSCs.* The intra-articular arm is where proliferation is unchanged — *Proliferation was not significantly changed in either the uppermost 50 μm of the growth plate or the proliferative zone, and neither was the size of terminally hypertrophic chondrocytes.* **Systemic and genetic routes raise proliferation; the local transient route raises number without it.** The atlas should have read the paper it already held rather than a review's compression of it.
+
+**Rule, and it is the standing rule restated because I broke it.** A review may be used to find a primary, to check whether a primary exists, or to see how a field frames a question. **It may never be the evidence on either side of a disagreement.** Before recording any conflict between two references, check that both are primary — and where a review appears to contradict a primary, the default assumption is that the review is compressing that same primary.
+
+**What it cost and what it bought.** One of round 248's four caveats is withdrawn; the other three stand. Against that, reading the primary properly produced the finding that unifies this entire line — SAG downregulates Wnt signalling, and Wnt was among the **top two downregulated pathways** in FACS-isolated cells. The pool-expanding intervention works by installing the very brake rounds 241 and 245 spent two days characterising.
