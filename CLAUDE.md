@@ -1,0 +1,75 @@
+# READ THIS BEFORE WRITING ANY ROUND
+
+This file exists because the same conclusions keep getting re-derived across context compactions.
+It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_what_is_live`) does not.
+
+**Case:** male, bone age 16+, late, reserve at multiple open sites. IGF-1 was 198.
+**Knees ARE open and active** — present tense — and grew on GH alone. Knee-directed work is live.
+**Goal:** maximise adult height. Risk is explicitly deprioritised by the operator.
+
+---
+
+## SETTLED — do NOT re-derive, do NOT "discover" again
+
+| Conclusion | Settled in | Never re-argue |
+|---|---|---|
+| **Erdafitinib > vosoritide** for this case | R263, R265 | Topology, redundancy, compartment, effect size — all four routes reach the same answer. It is decided. |
+| Vosoritide acts at RAF-1 *inside* the ERK arm; FGFR3 TKI sits upstream of ERK **and** CREB | R263, R265 | |
+| Discharge = CREB, downstream of FGFR3, ERK-independent | R265 (horike2026) | |
+| Cilostazol is the same node as vosoritide | R263, R267 | PDE3 is not the cartilage bridge (hirota2022) |
+| GH after mid-puberty ≈ 0 attained height; SOCS2 is the mechanism | R254, R269 | |
+| Weekly GH ≥ daily GH on height velocity | R271 (ying2026) | The pulsatility prediction was tested and failed |
+| Serum IGF-1 does not predict growth potential | R269, CORR-276 | Four genotypes, two in the wrong direction |
+| Anastrozole = letrozole on height; letrozole costs IGF-1 for nothing | R274 (zegarra2024, RCT) | Deeper E2 suppression does not buy height. Stay 1 mg. |
+| Aromatase inhibitor ceiling ≈ +1.3 cm over 3 years | R274 | |
+
+## DEAD — closed with reasons. Reopening requires new primary data, not a new argument.
+
+- **Hedgehog, both directions.** Withdrawal → fusion in mouse (xiu2022 −21/−30% femur), rat, and **human** (robinson2017a, pereira2021). Sustained gain → premature closure. The load-and-release protocol *is* kimura2008's experiment and the reload is the fusion mechanism. — R268
+- **SERMs / tamoxifen.** Permanent growth arrest by apoptosis of **resting-zone** chondrocytes, no catch-up. — R274 (chagin2007)
+- **ERβ axial lever.** Female mice only. — R274 (chagin2004)
+- **Senolytics.** Growth-plate senescence is not p16/SASP; nothing to clear. — R266
+- **PTH1R / teriparatide.** Terminal femoral length 0.0% in every arm. — CORR-269
+- **Periosteal release.** Real but age-cutoff ~9.6 y. — periosteum node
+- **Dynamin/dynasore.** Is mTORC1 again; authors call the gain transient. — R267
+
+## THE RECURRING FAILURE MODES (each has cost a turn)
+
+1. **Charge without discharge** — 7 instances. A taller plate is not a longer bone. CORR-189.
+2. **Restoration ≠ elevation** — a result from a deficient animal is a claim about the deficit. CORR-203, CORR-282.
+3. **Re-deriving a settled ranking and calling it new.** ← the reason this file exists.
+4. **Asserting what the literature contains without running the query.** CORR-267, CORR-284.
+5. **Naming a document as decisive and not reading it.** CORR-287.
+
+## PRE-ROUND CHECKLIST — answer all four in the node or don't write it
+
+1. Is this conclusion already in the SETTLED or DEAD table above?
+2. Does it change **what we do**, or only what we believe? If only belief — it is not a round.
+3. Is the endpoint **bone/body length**, or a proxy? Proxies do not close anything.
+4. Was it measured in a **normal** system, or a rescued deficit?
+
+## WHERE THE HEIGHT ACTUALLY IS (as of R274)
+
+Population data, boys, bone age 13.6 → knees 8.6 cm, **trunk 8.6 cm**, residual leg 2.3 cm.
+By bone age ~14.5 the knees are worth **0.3–0.4 cm** and the trunk still grows **6.5–9.0 cm** (aeppli2025).
+Spine growth peaks *later* than total body growth (hori2025).
+**BUT this subject's knees are radiographically open and demonstrably growing at BA 16 — off that
+distribution.** Population numbers are a prior, not his value. Do not collapse to axial-only (CORR-195)
+and do not collapse to knees-only. Both compartments are live for him.
+
+## LIVE FRONTIER — the only things worth a round
+
+- **The imposed epigenetic ceiling** (`arm3`): growth-plate senescence is a body-wide, growth-driven
+  programme with declining H3K4me3 at growth-gene promoters. This is the *mechanism of the ceiling itself*
+  and **nothing has ever been aimed at it.** Biggest unexplored target in the file.
+- **Axial-specific growth.** Every agent here was characterised on long bones. The residual is trunk.
+- **Distraction osteogenesis** — the only intervention delivering 10+ cm, and typed "unassigned" here.
+- The 231 unmined length endpoints: `atlas/data/round269/length_endpoints_sweep.tsv`
+
+## CONVENTIONS
+
+- Never invent a citation, author, year or number. Uncertain → `value_unverified: true`.
+- Every claim carries species. Reviews are an index, not a source.
+- Paywalled ≠ droppable. Ask. But **ask only when blocked**, and batch the asks.
+- Validate before commit: `python3 atlas/tools/validate.py` must print `ERRORS: none`.
+- Branch: `claude/growth-system-atlas-yl5esl`.
