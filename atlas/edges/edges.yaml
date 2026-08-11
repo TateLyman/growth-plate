@@ -25852,3 +25852,62 @@ edges:
   - yin2018
   - matsuoka2025
   confidence: B
+- edge_id: e01575
+  source: round259_cd2665_classified_and_the_better_compound_is_already_formulated
+  target: round258_the_compound_class_is_settled_and_the_direction_is_proven_in_vivo
+  relation: correlates_with
+  sign: '-'
+  magnitude: >-
+    CD2665 IS CLASSIFIED AND ROUND 258 WAS WRONG TWICE. le2019a - from Germain and Bourguet, the group that
+    defined the BMS204,493 / BMS195,614 class pair - shows by two-hybrid that CD2665 AND AGN870 ARE UNABLE TO
+    DISSOCIATE SMRT FROM RARgamma while the agonist TTNPB gives major release and LE135 partial release. At
+    RARgamma CD2665 PRESERVES the co-repressor-bound state: it is not an inverse agonist, and it does not
+    relieve basal repression either. AT RARalpha IT DOES THE OPPOSITE - dissociates SMRT without generating a
+    stable coactivator surface, and in the presence of an RXR agonist MEDIATES TRANSACTIVATION through
+    RXR-RARalpha while blocking RXR-RARgamma. So it is NOT RARgamma/beta-selective as universally described,
+    and any tissue with rexinoid tone converts it into an RARalpha activator
+  context: >-
+    CORR-267. Round 258 claimed the compound was unclassifiable because a Europe PMC search "returns ZERO
+    records" - the FULL_TEXT: field syntax is unsupported by that endpoint and silently returns zero for
+    every query including controls. The corrected query returns 7 records and the first classifies CD2665
+    directly. ROUND 258 WAS ALSO TOO STRICT ON MECHANISM: in a zone williams2009 measured as retinoid-free
+    the receptor is already co-repressor-bound and repression is saturated, so nothing can enhance it, and
+    preserving SMRT occupancy while blocking agonist release is functionally sufficient. AND THE COMBINATION
+    YIELDS A NEW INFERENCE - if CD2665 cannot enhance repression yet delayed maturation and expanded the
+    plate as a monotherapy (koyama2021), something must have been relieving that repression for it to block,
+    so ENDOGENOUS RARgamma LIGAND TONE EXISTS in the postnatal plate, qualifying williams2009
+  evidence_tier: T1
+  refs:
+  - le2019a
+  - koyama2021
+  - williams2009
+  confidence: B
+- edge_id: e01576
+  source: round259_cd2665_classified_and_the_better_compound_is_already_formulated
+  target: growth_plate_drug_exposure
+  relation: sufficient_for
+  sign: '+'
+  magnitude: >-
+    THE COMPOUND, THE SELECTIVITY, THE FORMULATION AND THE MECHANISTIC READOUT ALREADY EXIST IN ONE
+    LABORATORY. tateiwa2022 - 7C is a potent SELECTIVE RARgamma antagonist; SYSTEMIC administration
+    stimulated BMP-induced ectopic bone formation, and 7C loaded into poly(lactic acid) nanoparticles with
+    rhBMP-2 raised total bone volume and bone shell thickness DOSE-DEPENDENTLY. tateiwa2024 repeated the
+    nanoparticle arm in a rat spinal fusion model. AND THE MECHANISTIC RESULT IS THE ONE williams2009
+    PREDICTED WITHOUT EITHER GROUP CONNECTING THEM: 7C stimulated SULFATED PROTEOGLYCAN PRODUCTION,
+    CHONDROGENIC MARKER GENE EXPRESSION AND SOX9 REPORTER ACTIVITY in chondrogenic cells and MSCs -
+    williams2009 having reported aggrecan rising under RARgamma repression and having guessed the mechanism
+    "may involve Sox proteins"
+  context: >-
+    Iwamoto, Otsuru, Alferiev and Chorny appear on tateiwa2022, tateiwa2024, matsuoka2025 and matsuoka2025a.
+    ONE GROUP HOLDS THE RARgamma-SELECTIVE ANTAGONIST, THE NANOPARTICLE CHEMISTRY AND THE GROWTH PLATE
+    MODEL, AND HAS NEVER COMBINED THEM WITH A LONGITUDINAL LENGTH ENDPOINT - every published skeletal use of
+    7C is BMP-induced bone FORMATION or protection of an INJURED plate, never whether a normal bone gets
+    longer. That is the same application bias round 250 found for hedgehog agonists and round 252 for
+    ambrosi2025. 7C's own pharmacological class is uncharacterised, no selectivity ratio, IC50 or structure
+    for it is held here, and its skeletal endpoints are ectopic osteogenesis rather than physeal elongation
+  evidence_tier: T1
+  refs:
+  - tateiwa2022
+  - tateiwa2024
+  - williams2009
+  confidence: C

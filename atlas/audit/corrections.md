@@ -9469,3 +9469,26 @@ The retrospective consolation is real: **`riedl2020` already used the right comp
 **Rule.** When a node's argument turns on what a drug *does to a receptor* rather than on what it *binds*, the pharmacological class is a load-bearing fact and must be sourced, not inferred from the word "antagonist" in a methods section. For nuclear receptors specifically, agonist / neutral antagonist / inverse agonist are three states, and the literature routinely reports only the middle term's assay while calling the compound by the first or third name.
 
 **And the thing that stops this being a purely deflationary round.** `janesick2014` is the experiment rounds 255–257 kept asking for, run in 2014 in the wrong species: five arms, three ways of enhancing unliganded RARγ repression and three of reducing it, in vivo, with matched RARγ-**selective** inverse agonist (NRX205099) and agonist (NRX204647). Enhancing repression **maintains the caudal progenitor pool**; reducing it **prematurely terminates extension of the body axis**. That is the receptor logic of this entire line, demonstrated reciprocally in an animal — in *Xenopus* presomitic mesoderm, which is not a growth plate, and that limit is carried in the node rather than softened.
+
+---
+
+## CORR-267: I reported a search returning zero as evidence of absence, and the search was broken
+
+**What round 258 said.** That CD2665's pharmacological class *"cannot be settled for CD2665"*, on the grounds that *"a Europe PMC full-text search pairing CD2665 with inverse agonist, neutral antagonist or corepressor returns ZERO records."* That negative was load-bearing: it is why round 258 concluded `koyama2021` used a compound of unknown class.
+
+**The search was malformed.** The query used `FULL_TEXT:"CD2665"`. That field is not supported by the Europe PMC REST search endpoint, which **silently returns `HITS: 0` rather than erroring**. A control confirms it: `FULL_TEXT:"vismodegib"` also returns 0, while a bare query for `CD2665` returns **48 records**.
+
+The corrected query — `CD2665 AND ("inverse agonist" OR corepressor OR "co-repressor")` — returns **7 records**, and the first of them settles the question outright.
+
+**What the literature actually says.** `le2019a` (le Maire, Germain, Bourguet — the same group that defined the BMS204,493 / BMS195,614 class pair) re-evaluated CD2665 explicitly to correct the record on compounds whose class had been assumed:
+
+- **At RARγ, CD2665 and AGN870 are *unable* to dissociate SMRT**, while the agonist TTNPB gives major release and LE135 partial. It preserves the co-repressor-bound state. **It is not an inverse agonist.**
+- **At RARα it does the opposite** — dissociates SMRT without generating a stable coactivator surface, and *with an RXR agonist present it mediates transactivation through RXR-RARα while blocking RXR-RARγ*. **It is not RARγ/β-selective**, contrary to every description of it, and rexinoid tone converts it into an RARα activator.
+
+**Round 258 was also wrong on mechanism, in the stricter direction.** It held that only a formal inverse agonist would serve. But in a zone `williams2009` measured as retinoid-free, RARγ is already co-repressor-bound and repression is already saturated — *nothing can enhance what is maximal*. Preserving SMRT occupancy while blocking agonist-driven release is functionally sufficient, and that is exactly what CD2665 does at RARγ. The compound is still the wrong choice, but for a better reason: subtype promiscuity, not class.
+
+**And the combination yields something neither paper states.** If CD2665 cannot enhance repression at RARγ, yet delayed maturation and expanded the plate *as a monotherapy* (`koyama2021`), then something must have been relieving that repression for it to block — so **endogenous RARγ ligand tone exists in the postnatal growth plate**. That qualifies `williams2009`'s retinoid-free measurement rather than overturning it, and it makes the axis more druggable, not less: a blockable tone is a tone that exists.
+
+**Rule.** A search returning zero is a claim about the *query*, not about the world, until a positive control has been run through the same query. Any structured field syntax (`FULL_TEXT:`, `AUTH:`, `PUB_TYPE:`) must be validated against a term known to be present before a null from it enters the atlas. This is the second time a search-shaped negative has been recorded as a finding — CORR-251 was the first, where a paper marked read-but-unarchived was invisible to `--find`.
+
+**And what it cost, which is the part that matters.** The corrected search also surfaced `tateiwa2022`: **7C**, a *selective* RARγ antagonist that stimulates BMP-induced bone formation systemically, is **already formulated in PLA nanoparticles** with a second in vivo run in rat spinal fusion (`tateiwa2024`), and that **raises sulfated proteoglycan, chondrogenic markers and SOX9 reporter activity in chondrogenic cells and MSCs** — precisely the output `williams2009` predicted for enhanced RARγ repression, including its guess that Sox proteins mediate it. Iwamoto, Otsuru, Alferiev and Chorny appear on `tateiwa2022`, `tateiwa2024`, `matsuoka2025` and `matsuoka2025a`: **one group holds the selective antagonist, the nanoparticle chemistry and the growth-plate model, and has never combined them with a longitudinal length endpoint.**
