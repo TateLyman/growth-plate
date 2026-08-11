@@ -85,6 +85,22 @@ and do not collapse to knees-only. Both compartments are live for him.
   schneiderman1995 has free IGF-1 partitioning into cartilage ~10× better than ternary complex — the atlas
   holds that fact and has never used it), roxadustat.
 
+## THE OVERGROWTH-SYNDROME COMPOUND CLASS (R280) — the richest untapped vein
+
+Human loss-of-function → **tall stature**: **EZH2** (Weaver), **EED** (Cohen-Gibson), **SUZ12**
+(Imagawa-Matsumoto) — all PRC2/H3K27; **NSD1** (Sotos), **SETD2** (Luscan-Lumish) — H3K36; **DNMT3A**
+(Tatton-Brown-Rahman); **SPIN4**. Opposite direction: **KMT2A/KMT2D** (H3K4 writers) → short stature.
+
+**EZH2 is the one that breaks the trade:** height ≥2 SD in 59/65 aged 1–70, mean **+3.5 SD**, with bone age
+advanced in **33/33**. Supranormal *adult* height despite universally accelerated maturation = **more height
+per unit bone age**. Nothing else in this file does that. Weaver variants are **partial** LOF — what a drug
+makes — and **tazemetostat is approved**.
+✗ Wrong for this subject anyway: the phenotype accrues over a whole childhood and the axis's own signature
+is bone-age acceleration, which is what's binding at BA 16. Plus tumours 7/70, ID 52/61, EZH2 is an
+oncogene, and no EZH2i has ever been given for growth.
+→ **Named experiment: titrated EZH2i in a WILD-TYPE growing animal, measuring bone length AND bone age
+together.** Never done. Each of the other six genes above is an unread thread.
+
 ## LIVE FRONTIER — the only things worth a round
 
 - **H3K4me3 arm of the epigenetic ceiling** — still open. Different enzymes from DNA methylation
