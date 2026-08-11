@@ -9217,3 +9217,19 @@ None of that is a magnitude, so nothing about the grade changes. But it converts
 3. **SMAD2 versus SMAD3.** `chu2026` reports the **SMAD2** regulon lowest in GP1 and GH raising **p-Smad2**; `yang2001` deletes **Smad3**. These are not interchangeable effectors and have distinct target sets. If the root brake is Smad2-borne and the hypertrophy restraint is Smad3-borne, every result above is consistent. **Nobody has tested this**, and it is the sharpest experiment the round-243 line generates.
 
 **Rule, and it is the third version of the same lesson this session.** CORR-250 was 'do not repeat a node's claim about access without checking'. CORR-252 was 'test a cross-species claim before headlining it when the table exists'. This one is: **before proposing an intervention, search the graph for the intervention.** The atlas is 767 nodes precisely so that a new line does not have to rediscover an old one, and a grade-B node with the answer in its opening sentence is not an obscure corner of it.
+
+---
+
+## CORR-255: I declared a question unanswerable and recommended emailing the authors, when the answer was printed in the figure
+
+**What round 244 concluded.** That the nine soluble WNT inhibitors could not be named — the main text gives only the count, the supplement has the mouse DEG table but not the human one, and marker-gating the deposited data fails its own controls. The recommended route was: **email the corresponding author.** The user's response was that we did not need to, and they were right.
+
+**The names are in Fig. 3R.** They are inside an embedded raster image, so they never appear in the PDF text layer, and every text extraction this atlas had been reading for a week showed the panel as a run of stray characters. Extracting image xref 142 from page 6 and reading it at four times magnification gives all twenty-eight column labels. The axis ticks are detectable computationally — exactly 28, evenly spaced at 72.5 pixels — and the four category captions ARE live text, so the group boundaries are fixed by geometry rather than assumed.
+
+**Nine soluble WNT inhibitors: WIF1, SERPINF1, DKK3, DKK1, SOSTDC1, SFRP1, SFRP2, SFRP5, PORCN. Four ligands: WNT8A, WNT3, WNT3A, WNT9A.** The 6/9/9/4 split matches the caption centres to within 13 pixels and reproduces the paper's own sentence exactly.
+
+**Why this is a correction and not just a round.** Round 244 had already extracted a different embedded image from a different PDF — data file S7 — and read SFRP1 off it. **I used the technique and then, one round later, declared the same class of problem unsolvable.** The failure was not technical. It was that I concluded from *one* failed route (marker gating) that *all* routes were exhausted, and wrote an ask list entry recommending someone else's labour instead of checking the document I already had open.
+
+**Rule.** *Exhausting a method is not exhausting a question.* Before recording anything as unobtainable, enumerate the routes that remain — and a figure in a paper on disk is a route, not a dead end. The standing rule already said to grep the bibliography before asking a human for a document; this extends it: **also look inside the documents you hold, including their images, before asking a human for their contents.**
+
+**What it cost, and what it bought.** The ask list carried a wrong recommendation for one round. Against that, doing the reconstruction properly surfaced something the shortcut would have hidden — **seventeen of the twenty-eight genes are gp1-maximal, including all four ligands**, which means the redness of the gp1 row cannot be read as antagonist bias, and rounds 241 and 243 have to be restated as claims about *repertoire* rather than *intensity*. That is recorded in round 245 and it weakens my own prior framing.

@@ -1,0 +1,94 @@
+RECONSTRUCTION OF chu2026 FIG. 3R - the 28 KEGG:04310 genes, by name and group
+Source: the published PDF, panel R extracted as embedded image xref 142 (2177x576),
+28 axis ticks detected at even 72.5 px spacing, labels read at 4x magnification.
+
+GROUP ASSIGNMENT WAS NOT GUESSED. The four category captions are live text in the
+PDF; their pixel centres are 338, 897, 1550 and 2011. The contiguous 6/9/9/4 split
+puts the group centres at 338, 884, 1538 and 2011 - residuals of 0, 13, 12 and 0 px
+against a 72.5 px column. The alternative 6/9/8/5 split (PORCN as a ligand) gives
+residuals of 48 and 37 px and is rejected. AND THE 6/9/9/4 SPLIT REPRODUCES THE
+PAPER'S OWN SENTENCE EXACTLY: 'GP1 cells expressed FOUR LIGANDS AND NINE SOLUBLE
+INHIBITORS'. Two independent constraints agree.
+
+  # gene      group                       gp1    gp2    gp3    gp4    gp5   max
+-------------------------------------------------------------------------------
+  1 APCDD1    WNT coreceptor             1.00   0.28   0.00   0.01   0.02   gp1
+  2 RNF43     WNT coreceptor             1.00   0.14   0.01   0.00   0.02   gp1
+  3 ZNF3      WNT coreceptor             1.00   0.69   0.95   0.00   0.10   gp1
+  4 RYK       WNT coreceptor             0.81   0.54   0.42   0.00   1.00   gp5
+  5 LRP6      WNT coreceptor             1.00   0.27   0.04   0.05   0.00   gp1
+  6 LRP5      WNT coreceptor             1.00   0.12   0.00   0.00   0.44   gp1
+  7 FZD6      WNT receptor               0.75   1.00   0.59   0.00   0.48   gp2
+  8 FZD3      WNT receptor               0.45   0.08   0.00   0.05   1.00   gp5
+  9 FZD1      WNT receptor               1.00   0.16   0.16   0.00   0.03   gp1
+ 10 FZD9      WNT receptor               0.45   0.36   0.89   1.00   0.00   gp4
+ 11 FZD7      WNT receptor               0.52   0.26   0.08   0.00   1.00   gp5
+ 12 FZD5      WNT receptor               0.79   0.23   0.05   0.00   1.00   gp5
+ 13 FZD2      WNT receptor               1.00   0.30   0.05   0.00   0.11   gp1
+ 14 FZD4      WNT receptor               0.44   0.75   0.00   0.68   1.00   gp5
+ 15 FZD8      WNT receptor               0.73   1.00   0.27   0.20   0.00   gp2
+ 16 WIF1      soluble WNT inhibitor      1.00   0.42   0.11   0.00   0.00   gp1
+ 17 SERPINF1  soluble WNT inhibitor      1.00   0.10   0.05   0.04   0.00   gp1
+ 18 DKK3      soluble WNT inhibitor      0.69   1.00   0.77   0.15   0.00   gp2
+ 19 DKK1      soluble WNT inhibitor      1.00   0.07   0.00   0.04   0.01   gp1
+ 20 SOSTDC1   soluble WNT inhibitor      1.00   0.83   0.41   0.18   0.00   gp1
+ 21 SFRP1     soluble WNT inhibitor      1.00   0.07   0.00   0.00   0.00   gp1
+ 22 SFRP2     soluble WNT inhibitor      1.00   0.00   0.00   0.00   0.00   gp1
+ 23 SFRP5     soluble WNT inhibitor      1.00   0.69   0.00   0.01   0.00   gp1
+ 24 PORCN     soluble WNT inhibitor      1.00   0.36   0.35   0.38   0.00   gp1
+ 25 WNT8A     WNT ligand                 1.00   0.58   0.14   0.12   0.00   gp1
+ 26 WNT3      WNT ligand                 1.00   0.24   0.08   0.05   0.00   gp1
+ 27 WNT3A     WNT ligand                 1.00   0.34   0.12   0.06   0.00   gp1
+ 28 WNT9A     WNT ligand                 1.00   0.19   0.00   0.07   0.53   gp1
+
+Values are read off the colour scale (bwr, blue=low, red=high), scaled WITHIN EACH
+GENE as the figure legend states, so a column's numbers are comparable across
+clusters but NOT across genes. They are figure reads, not expression values.
+
+==============================================================================
+THE ANSWER
+==============================================================================
+SOLUBLE WNT INHIBITORS (9): WIF1, SERPINF1, DKK3, DKK1, SOSTDC1, SFRP1, SFRP2, SFRP5, PORCN
+WNT LIGANDS (4): WNT8A, WNT3, WNT3A, WNT9A
+WNT RECEPTORS (9): FZD6, FZD3, FZD1, FZD9, FZD7, FZD5, FZD2, FZD4, FZD8
+WNT CORECEPTORS (6): APCDD1, RNF43, ZNF3, RYK, LRP6, LRP5
+
+==============================================================================
+WHAT '9 VERSUS 4' ACTUALLY MEANS - THE DENOMINATORS
+==============================================================================
+current KEGG hsa04310 membership: 178 genes (the paper says 174; KEGG drifts)
+
+PANEL GENES NOT IN THE CURRENT KEGG SET: ZNF3, DKK3, SOSTDC1
+  ZNF3 is not a WNT-pathway gene and ZNRF3 IS, and every other panel member is a
+  KEGG:04310 gene, so the printed label almost certainly means ZNRF3. RECORDED AS
+  PRINTED AND FLAGGED - not silently corrected.
+  DKK3 and SOSTDC1 are genuinely absent from current KEGG:04310, so the panel is
+  KEGG PLUS CURATED ADDITIONS, or an older KEGG release. The '174 genes' framing and
+  the panel do not correspond one to one.
+
+WNT LIGANDS available in KEGG:04310 (19): WNT1, WNT10A, WNT10B, WNT11, WNT16, WNT2, WNT2B, WNT3, WNT3A, WNT4, WNT5A, WNT5B, WNT6, WNT7A, WNT7B, WNT8A, WNT8B, WNT9A, WNT9B
+  GP1 expresses 4: WNT8A, WNT3, WNT3A, WNT9A
+  -> 21% of available ligands
+  NOT expressed: WNT1, WNT10A, WNT10B, WNT11, WNT16, WNT2, WNT2B, WNT4, WNT5A, WNT5B, WNT6, WNT7A, WNT7B, WNT8B, WNT9B
+
+GENUINELY SECRETED WNT ANTAGONISTS available in KEGG:04310 (13): CER1, DKK1, DKK2, DKK4, FRZB, NOTUM, SERPINF1, SFRP1, SFRP2, SFRP4, SFRP5, SOST, WIF1
+  GP1 expresses 6 of them: WIF1, SERPINF1, DKK1, SFRP1, SFRP2, SFRP5
+  plus 2 secreted antagonists outside the KEGG set: DKK3, SOSTDC1
+  -> 46% of available KEGG antagonists, 8 secreted antagonists in total
+  NOT expressed: CER1, DKK2, DKK4, FRZB, NOTUM, SFRP4, SOST
+
+THE ASYMMETRY IS REAL BUT IT IS A PROPORTION, NOT THE RAW COUNT. Nine against four
+compares categories of different sizes and means little on its own. The defensible
+statement is that GP1 has 46% of the available secreted antagonists switched on
+and only 21% of the available ligands.
+
+==============================================================================
+AND THE CONFOUND, WHICH CUTS AGAINST THE FRAMING
+==============================================================================
+17 of the 28 columns are gp1-maximal, INCLUDING ALL FOUR LIGANDS. If GP1 were an
+antagonist source in the sense rounds 241 and 243 implied, the ligands should not
+peak there too. Round 244 established that root-region cells in this dataset carry
+more transcript overall, and within-gene scaling does not correct for detection
+depth. SO THE REDNESS OF THE gp1 ROW IS NOT EVIDENCE OF ANTAGONIST BIAS.
+WHAT SURVIVES is the composition result - WHICH genes are on, where the ligand and
+antagonist denominators differ - and that is unaffected by depth in the same way.

@@ -96,7 +96,18 @@ availability is a timestamped claim, not a standing fact (CORR-250).*
 
 ---
 
-## NEW AND ONLY OUTSTANDING ASK — and it is an email, not a document
+## ~~NEW AND ONLY OUTSTANDING ASK~~ — CLOSED 2026-08-11, NO ASK REMAINS (CORR-255)
+
+> **Resolved without contacting anyone.** The nine are printed in Fig. 3R; the labels sit inside an
+> embedded raster so they never appeared in any text extraction. Extracting image xref 142 from page 6 of
+> the PDF and reading it at 4x gives all 28 columns, with group boundaries fixed by the live-text captions.
+>
+> **Nine soluble WNT inhibitors: WIF1, SERPINF1, DKK3, DKK1, SOSTDC1, SFRP1, SFRP2, SFRP5, PORCN.**
+> **Four ligands: WNT8A, WNT3, WNT3A, WNT9A.**
+>
+> The superseded ask is left below so the mistake is legible.
+
+### ~~The gene list behind chu2026 Fig. 3R — the nine soluble WNT inhibitors, by name~~
 
 ### The gene list behind chu2026 Fig. 3R — the nine soluble WNT inhibitors, by name
 
@@ -138,3 +149,22 @@ and replicate counts are still missing, and `hu2024` carries the functional clai
 | Qin et al. 2023, *Science*, PMID 36821675 | `qin2023`. The physiological activation sequence — WNT suppressors down, TGFB1 up — is round 243's central result. |
 | chu2026 data files S1–S7 | Mouse DEG table (round 243's test that broke THBS1), regulon tables, figure source data (the Prrx1 clonal kinetics), the ligand-receptor map (SFRP1 → FZD2). |
 | PeerJ antler proteomics, PMID 42534826 | `xi2026`. Confirms PRRX1 and LUM at protein level in reserve mesenchyme; does **not** address thrombospondins, decorin or SFRPs, so the protein-level check remains open. |
+
+
+---
+
+## Standing position, 2026-08-11 (rounds 240–245)
+
+**Nothing is outstanding.** Every document named in earlier versions of this list is either held and mined,
+or confirmed closed and shown to be non-blocking. The one remaining recommendation — emailing the authors —
+was withdrawn under CORR-255 when the answer turned out to be printed in the figure.
+
+**What is missing is not documents.** Three gaps, all of which need experiments nobody has run:
+
+1. **What GH does to the root cell itself.** GP1 does not survive explant culture (CYTL1 falls from 175 to
+   4 reads per positive cell) and the authors excluded it. Every GH transcriptional result is c-GP2.
+2. **A self-renewal fraction.** Clone size is now recorded (1.06 → 207.5 cells, P33 → P90) but it cannot
+   distinguish a founder that persisted from one consumed after seeding a burst.
+3. **SMAD2 versus SMAD3.** `chu2026` puts the SMAD2 regulon lowest in GP1 and GH raises p-Smad2; `yang2001`
+   deleted SMAD3 and got the opposite phenotype. Distinct effectors, distinct targets, never tested against
+   each other in a growth plate. This is the sharpest experiment the line generates.
