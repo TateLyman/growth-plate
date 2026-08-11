@@ -9308,3 +9308,25 @@ None of that is a magnitude, so nothing about the grade changes. But it converts
 **Rule, and it is the standing rule restated because I broke it.** A review may be used to find a primary, to check whether a primary exists, or to see how a field frames a question. **It may never be the evidence on either side of a disagreement.** Before recording any conflict between two references, check that both are primary — and where a review appears to contradict a primary, the default assumption is that the review is compressing that same primary.
 
 **What it cost and what it bought.** One of round 248's four caveats is withdrawn; the other three stand. Against that, reading the primary properly produced the finding that unifies this entire line — SAG downregulates Wnt signalling, and Wnt was among the **top two downregulated pathways** in FACS-isolated cells. The pool-expanding intervention works by installing the very brake rounds 241 and 245 spent two days characterising.
+
+---
+
+## CORR-260: I asked whether the Tsc1 mice were measured for bone length. They were not, and round 250 leaned on an inference I described as a result
+
+**What round 250 said.** That `newton2019`'s Tsc1 phenotype shows *pool without flux* and that this is *why the Tsc1 phenotype is disorder rather than length*. I asked the user for the full text specifically to check whether an enlarged, symmetric-shifted pool produced no length over months, and said that if so it would be a much harder ceiling.
+
+**The full text, now archived at `data/round251_supplied/newton2019_full.pdf`: 'bone length' appears ZERO times. 'shorter' zero. 'dwarf' zero.** Every femur and tibia mention is Methods — dissection, FACS, sectioning — or the wild-type growth-rate panel. **Newton never measured bone length in the Tsc1 mice at all.**
+
+So the claim rests entirely on one sentence — *neither proliferation of chondroprogenitors nor their recruitment into the proliferative layer changed detectably* — measured over the traced window. **Recruitment unchanged is suggestive of no length gain. It is not a length measurement, and the mice were traced to P90 with no skeletal endpoint reported.** Round 250 should have said the length question is UNTESTED, not that pool without flux fails to give length.
+
+**Rule.** When a node's conclusion depends on an experiment's *absence* of an effect, check that the effect was measured. 'Not reported' and 'reported as null' are different evidential states and this atlas has a grade scale that distinguishes them.
+
+---
+
+## CORR-261: I attached a finding to the wrong paper
+
+Adding the Kimura irreversibility reference, I passed PMID 18328429 — which is *A conditional mouse model for malignant mesothelioma*. `addref.py` did its job and wrote canonical metadata from the resolved record, so no citation was fabricated; but the entry was created as `jongsma2008` **with my hedgehog finding attached to it**, which is worse than a missing reference because it is a true paper carrying a false claim.
+
+Found on the verification step, removed within the same round, and the correct paper added as `kimura2008`, PMID **18328428** — *Transient inhibition of the Hedgehog pathway in young mice causes permanent defects in bone structure*, Cancer Cell 2008.
+
+**Rule.** `addref.py` guarantees the metadata is real. It cannot check that the paper is the one you meant. **Every `--finding` passed to it must be verified against the returned title before the round proceeds** — the tool prints that title precisely so the check is one line of reading, and I had been treating the printed line as confirmation of success rather than as the thing to read.
