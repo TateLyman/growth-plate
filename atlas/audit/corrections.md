@@ -9191,3 +9191,29 @@ None of that is a magnitude, so nothing about the grade changes. But it converts
 **Rule.** A ref typed `primary_abstract_only` has an abstract, and the abstract is a lawful, complete, free document. Read it in full and record it in full. The stored `one_line_finding` is an index entry written for a different purpose in a different round; **treat it the way this atlas treats reviews — as an index, not a source.**
 
 *Searched and confirmed closed before writing this:* OpenAlex (`is_oa: false`, `any_repository_has_fulltext: false`), Unpaywall (`oa_status: closed`, no OA locations), Semantic Scholar (`CLOSED`), CORE (no hit), and no GEO or SRA deposit. The full text of `hu2025` is not lawfully reachable and it is not blocking, because `hu2024` carries the functional claim in full and open access.
+
+---
+
+## CORR-254: I wrote an intervention statement without asking the atlas whether the intervention had already been tried. It has, three times, and it goes the other way
+
+**What round 243 wrote, an hour before this.** *If the root-cell fate decision is a TGF-beta/Smad2-3 switch, the smallest controllable intervention consistent with everything above is to hold Smad2-3 down in the resting zone while leaving the proliferative compartment free to run.* It carried a CORR-203 caveat in general terms — nothing shows that pushing TGF-beta below normal RAISES the self-renewal fraction — and that caveat was correct as far as it went.
+
+**It did not go far enough, because I never searched the graph.** `tgfb_signaling_chondrocyte` is a **grade B** node that has been in this atlas for many rounds, and its summary opens with the answer: *in the growth plate the canonical arm restrains terminal differentiation: blocking it either at the receptor or at the effector accelerates hypertrophy and causes premature cartilage degeneration in mouse.*
+
+**The three results, now with findings written into the bibliography where they should have been all along.**
+
+- `yang2001`, Smad3-null mouse: **enhanced terminal differentiation of epiphyseal growth plate chondrocytes shortly after weaning**, plus osteoarthritis and excess type X collagen. The authors' own phrase is that without these signals **chondrocytes break quiescent state**. TGF-beta1 inhibits differentiation in wild-type metatarsal rudiments and that inhibition is lost in Smad3-null rudiments. Removing TGF-beta signalling **removes quiescence** rather than preserving it.
+- `serra1997`, kinase-dead TGFBR2: blocking at the receptor **promotes** terminal differentiation.
+- `huckert2015`, human **LTBP3 loss of function**: brachyolmia with **short stature**. LTBP3 stores and presents latent TGF-beta, so this is a human loss-of-availability phenotype and the organism-level answer is SHORT.
+
+**The one result that does not fit the others, recorded because it is the closest to the actual experiment.** `baffi2004` deleted Tgfbr2 conditionally in Col2a-expressing cells and found **no alteration in long bone length or mineralisation at E17.5** and no change in differentiation markers, with severe axial defects instead; postnatal survivors showed altered length of *specific* bones and **the abstract does not state the direction**. So the cleanest cartilage-restricted loss of TGF-beta responsiveness did not shorten embryonic long bones, and the postnatal direction is unknown to me.
+
+**Verdict. The intervention statement is withdrawn.** Three of four lines of loss-of-function evidence, including the only human one, point the opposite way from the prediction. What survives untouched is the **description**: the human root cell locally suppresses WNT and TGF-beta, GH removes that suppression in the resting zone, and four systems converge on the same node. Observations do not become interventions by being interesting.
+
+**The reconciliation that is genuinely open, and it is a real gap rather than a rescue.** Three candidate resolutions, and I cannot distinguish them:
+
+1. **Zone.** Every loss-of-function above is global or whole-cartilage. TGF-beta restraining hypertrophy in the proliferative and prehypertrophic zones and TGF-beta being held low inside GP1 are statements about different compartments, and a global blockade hits both with the hypertrophy effect dominating.
+2. **Direction of causality.** Low TGF-beta in GP1 may be a *consequence* of root identity rather than its cause, in which case nothing follows for intervention at all.
+3. **SMAD2 versus SMAD3.** `chu2026` reports the **SMAD2** regulon lowest in GP1 and GH raising **p-Smad2**; `yang2001` deletes **Smad3**. These are not interchangeable effectors and have distinct target sets. If the root brake is Smad2-borne and the hypertrophy restraint is Smad3-borne, every result above is consistent. **Nobody has tested this**, and it is the sharpest experiment the round-243 line generates.
+
+**Rule, and it is the third version of the same lesson this session.** CORR-250 was 'do not repeat a node's claim about access without checking'. CORR-252 was 'test a cross-species claim before headlining it when the table exists'. This one is: **before proposing an intervention, search the graph for the intervention.** The atlas is 767 nodes precisely so that a new line does not have to rediscover an old one, and a grade-B node with the answer in its opening sentence is not an obscure corner of it.

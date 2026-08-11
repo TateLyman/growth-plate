@@ -19,7 +19,46 @@ summary: 'Single-cell and spatial profiling of early pubertal human growth plate
   the figure-level programme is mined in round241_the_root_cell_brake_is_a_self_secreted_antagonist_screen,
   and the sentence formerly here saying the figures were inaccessible was stale from 2026-08-05 and is
   retracted under CORR-250.'
-quantitative: []
+quantitative:
+- parameter: >-
+    Prrx1+ root cell clone size over time - the clonal kinetic numbers this node previously recorded as
+    unavailable, recovered from the figure source data supplied 2026-08-11
+  value: 'mean 1.06 cells at P33 (n=5), 29.46 at P60 (n=2), 207.54 at P90 (n=4); largest single clone 412.4
+    cells'
+  unit: cells per clone, Confetti-labelled
+  conditions: >-
+    Prrx1-CreERT2; R26-Confetti mouse, tamoxifen pulse at postnatal day 30, tibial growth plate, fig. S6H
+    source values; the panel is identified as clone size because the main text states that some clones
+    reached up to 400 cells after 60 days and the P90 maximum is 412.4
+  species: mouse
+  source_ref: chu2026
+  uncertainty: >-
+    n is tiny and unequal (5, 2 and 4) and the P60 column holds only two values differing fivefold. SD at
+    P90 is 143 on a mean of 208
+- parameter: >-
+    recombination efficiency of the Prrx1-CreERT2 pulse - sparse enough that the clones above can be treated
+    as clonal
+  value: '0.157, 0.103, 0.031 and 0.018 per cent; mean 0.077 per cent'
+  unit: per cent of cells recombined
+  conditions: same mouse line and pulse, fig. S6F source values, n=4
+  species: mouse
+  source_ref: chu2026
+  uncertainty: fewer than two labelled cells per thousand, which supports clonality; n=4
+- parameter: >-
+    implied expansion rate of a Prrx1+ founder, DERIVED BY THIS ATLAS from the two endpoints above and not
+    reported by the authors
+  value: '7.61 doublings between P33 and P90, one doubling per 7.5 days on the mean; 8.61 doublings and one
+    per 6.6 days on the largest clone'
+  unit: population doublings and days per doubling
+  conditions: computed as log2 of the P90 mean over the P33 mean across 57 days
+  species: mouse
+  source_ref: chu2026
+  uncertainty: >-
+    A DERIVED FIGURE, graded as re-analysis. It assumes exponential growth between two timepoints, which the
+    single P60 pair does not obviously support. AND IT IS NOT A SELF-RENEWAL FRACTION - clone size measures
+    the total output of a labelled founder and is equally consistent with a founder that persisted and one
+    that was consumed after seeding a transit-amplifying burst. The variable this programme needs is still
+    unmeasured
 localization:
 - 'human RZ (upper): confirmed by single-cell plus spatial transcriptomics of pubertal biopsies (chu2026)'
 - 'mouse RZ: confirmed, Prrx1-marked equivalent population traced clonally (chu2026)'
