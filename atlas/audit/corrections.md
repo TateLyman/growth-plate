@@ -9330,3 +9330,25 @@ Adding the Kimura irreversibility reference, I passed PMID 18328429 — which is
 Found on the verification step, removed within the same round, and the correct paper added as `kimura2008`, PMID **18328428** — *Transient inhibition of the Hedgehog pathway in young mice causes permanent defects in bone structure*, Cancer Cell 2008.
 
 **Rule.** `addref.py` guarantees the metadata is real. It cannot check that the paper is the one you meant. **Every `--finding` passed to it must be verified against the returned title before the round proceeds** — the tool prints that title precisely so the check is one line of reading, and I had been treating the printed line as confirmation of success rather than as the thing to read.
+
+---
+
+## CORR-262: the 52 per cent was a one-off burst and I read it as a rate, so round 252's central conclusion is withdrawn
+
+**What round 252 said.** That `newton2018` shows Tsc1-null cartilage **grows 52 per cent faster ex vivo and not at all in vivo**, and that the gap between the two proves *the block on growth is extrinsic to the plate*. The whole of round 253's search — for what systemic or mechanical term costs that 52 per cent back — was commissioned off the back of it.
+
+**What the paper says.** *"52% increase in growth: control bones grew 150 ± 13 μm; cKO bones grew 229 ± 19 μm, p = 0.0016, n = 18* **in the first 24 h in culture** *and this growth increment was sustained over the culture period."* The paper says the **increment** was sustained. Round 252 read **rate**.
+
+**What the figure says.** Figure 2A plots cumulative growth in culture at day 2 and day 4 for control, heterozygote and cKO — and round 252 never opened it. Extracted from the Europe PMC package for PMC6020113 (CC BY) and digitised against its own five axis ticks, which are even to 0.43 px, by `atlas/tools/round253_newton2018_fig2A.py`:
+
+| | day 2 | day 4 | growth between |
+|---|---|---|---|
+| control | 0.207 mm | 0.400 mm | **0.194 mm** |
+| het | 0.184 mm | 0.363 mm | 0.179 mm |
+| cKO | 0.348 mm | 0.489 mm | **0.141 mm** |
+
+The mutant is 68 per cent ahead at day 2 and 22 per cent ahead at day 4, **because it grew less than the control between them.** A genuinely sustained 52 per cent would have put the day-4 cKO bar at 0.608 mm; it is 0.489, and the published SEMs are of order 0.02–0.03 mm. The heterozygote is indistinguishable from control at both timepoints, so there is no gene-dose relationship either.
+
+**What it costs.** There is no standing ex vivo headroom, so there is nothing for an extrinsic block to be suppressing, and round 252's proposed discriminating experiment — *culture the explant under load, under physiological oxygen, and in same-age serum, one factor at a time, and see which one costs the 52 per cent back* — is aimed at a quantity that does not exist. What survives of `newton2018` is smaller and still real: mTORC1 activation gives a **one-off ~79 μm elongation on explanting with no change in Ki67 and no change in collagen X at 24 h**, then nothing; and in vivo it gives no length, a trend toward shorter tibiae, and a disordered resting zone. A length change complete within a day with no proliferation and no hypertrophy change is not a growth-rate phenotype, and this atlas does not know what it is.
+
+**Rule, and it is CORR-255 restated because I broke it again in the same shape.** CORR-255 was written after I recommended emailing authors for a figure that was already in the PDF on disk. Here I built a round's conclusion on a sentence in a Results paragraph when **the figure that quantifies that sentence was one download away**. A quantitative claim taken from prose, where a figure of the same quantity exists, is an unverified claim. The prose was not even wrong — *"increment sustained"* is exactly what the figure shows. **When a paper's wording admits two readings and one of them is load-bearing for a round, the figure decides, and the figure must be opened before the round is written.**
