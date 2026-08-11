@@ -65,3 +65,24 @@ Round 259 inferred that it must, because a compound that cannot enhance repressi
 - **PLAGL1 as the senescence-counter link** (round 257) — `williams2009`'s co-repressor Zac1/PLAGL1 is one of eleven imprinted genes that `arm3` records as declining with age in step with growth rate. Whether PLAGL1 decline weakens RARγ repression has never been tested. Graded E.
 - **The `yamaguchi1998` Hox prediction** (round 258) — resolved by inference; nobody measured posterior Hox genes in those transgenics.
 - **Term attribution for intermittent PTH1R agonism** (round 254 table, row four) — whether it raises amplification or spends pool; the same missing decomposition as C1, for a different compound.
+
+---
+
+# ADDENDUM, round 266 — new asks under the standing paywall rule
+
+The rule set this session is: **never drop a source because it is paywalled. Always ask.** These are the outstanding requests as of round 266, in priority order.
+
+### 1. `marchanalvarez2026` — PMID 42464284, BMC Biology 2026, **not open access**
+*Dynamin inhibitor dynasore modulates longitudinal bone growth in a hormetic manner.*
+
+**The only genuinely new node found this session, and the only candidate with a wild-type length result on a non-signalling control point.** 40 µM dynasore *significantly increased* longitudinal bone growth in ex vivo mouse metatarsals; 220 µM abolished chondrocyte proliferation. I need:
+- the **effect size** at 40 µM — the abstract says "significantly increased" and gives no number
+- the **EdU and matrix quantification**, and whether **resting-zone cell number** was measured at all (this decides whether it is discharge or depletion)
+- the **full dose-response** between 40 and 220 µM — the therapeutic window is the whole question
+- whether FGFR3 or any receptor internalisation was measured, since that is the specific collision risk with erdafitinib
+
+### 2. `hirota2022` — the dual-FRET biosensor paper
+Held in the atlas and cited by `is_the_cnp_arm_redundant_with_fgfr3_blockade`, but I have not read it in full. It carries the **H89 necessity test** that makes the CNP axis two arms rather than one — which is now one of the three legs holding vosoritide in the stack. If that test is weaker than the summary implies, the redundancy question reopens.
+
+### 3. Anything that resolves the hedgehog contradiction
+`resting_zone_niche` records that **both Smoothened agonism *and* antagonism reduce the number of columns formed from labelled resting cells.** Round 251 proposed hedgehog *withdrawal* as the discharge signal. Both cannot be right as stated. The primary behind that statement, read in full, is what settles it — and it may invalidate the discharge model built in round 265.
