@@ -61,8 +61,12 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    and the 1039:441 global skew say the other. Four rounds (241, 244, 245, 246) are built on this dataset.
    **Do not assign a GP1/GP2 compartment until this is settled.**
 
-## PRE-ROUND CHECKLIST — answer all four in the node or don't write it
+## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
+0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
+   ALREADY in the stack moves that term.** If the answer is "the one already there," this is a SUBSTITUTION
+   question, priced against cost/adherence — not biology. CORR-297, which is how LUM-201 sat at the top of
+   the LIVE list for five rounds while two SETTLED rows cancelled it.
 1. Is this conclusion already in the SETTLED or DEAD table above?
 2. Does it change **what we do**, or only what we believe? If only belief — it is not a round.
 3. Is the endpoint **bone/body length**, or a proxy? Proxies do not close anything.
@@ -88,18 +92,48 @@ and do not collapse to knees-only. Both compartments are live for him.
 
 ## LIVE COMPOUNDS — actual agents, with what is known and what is missing
 
-- **LUM-201 / ibutamoren / MK-677** — ORAL GHS-R agonist. PEM-positive children: 7.7 cm/yr vs rhGH 8.8
-  (bright2021, randomised). Restores **pulsatile** GH — 3.3–4.0 µg/kg/24h vs 25–34 injected — i.e. same
-  velocity on ~⅛ the hormone, which is what R269's SOCS2 loop predicts. **PEM = baseline IGF-1 > 30 ng/mL
-  (case: 198 ✓) + peak GH ≥ 5 ng/mL after a single oral dose (untested).**
-  ✗ Every subject **prepubertal, bone age ≤ 8–9, GH-deficient**. Bone-age-advance data: **does not exist**;
-  the "no bone age advance" claim is supplement-retailer copy, not evidence. R279
+**FIRST — the two compound facts this file somehow never put in CLAUDE.md:**
+- **DABOGRATINIB (TYRA-300)** is *the compound this case actually wants* and **cannot be had.**
+  FGFR3-**isoform-selective**; the **ONLY agent on either axis shown to lengthen bone in a WILD-TYPE animal**
+  (oral, 4→8 wk C57BL/6J: **femur +8.2%, tibia +6.4%, nasoanal +7.3%** at 14 mg/kg, dose-dependent, no weight
+  difference) — the largest WT length gain in the atlas by a wide margin. **And the only one that lengthens
+  LUMBAR VERTEBRAE** (L4–L6, + improved disc shape, + foramen magnum). Trial BEACH301 (NCT06842355) is
+  **phase 2, achondroplasia, ages 3–10 with open plates** — re-checked 2026-08-11, still no adolescent arm
+  and no expanded-access programme. Only human data = 3 adult urothelial-carcinoma case reports. R212/R213/
+  R275, `the_named_compounds_for_this_case`.
+- **THE AXIAL/APPENDICULAR SPLIT — the most decision-relevant compartment fact in the file.**
+  **CNP arm is LEG-preferential** (navepegritide *lowers* upper:lower segment ratio; vosoritide L1–L4 null in
+  the EMA report, axial null outright in monkeys, and in rats the axial dose that works also causes scoliosis
+  + kyphosis + fractures — R207). **FGFR3 arm REACHES THE SPINE** (dabogratinib, above). Since the residual at
+  BA 14.5+ is trunk-dominant (R274), **the CNP arm is aimed at the spent compartment and the FGFR3 arm is not.**
+- **NPR3-selective antagonist** = the compound the atlas *derives* from its own spec (blocks clearance instead
+  of adding ligand; ~1.3–1.5 kDa 11-mer partitions far better than vosoritide's 4.1 kDa). Chemical matter
+  exists (`nishizawa2017` compound 23, M372049, AP-811). **Never given to a human, no bone data.** The
+  decisive unread number is compound 23's selectivity over **NPR2**. R220, R144.
+
+**LIVE:**
 - **Sacubitril** — approved, oral, dose-dependent skeletal overgrowth in WT mice, abolished by cartilage
   NPR-B knockout. Window: only worked at 3–4 wk when endogenous CNP/neprilysin peak *in lumbar vertebrae*.
   No human bone measurement at any age. (`neprilysin_cnp_clearance`)
-- **Still unchecked against the graph:** macimorelin, NBI-31772 (IGFBP displacement → free IGF-1;
-  schneiderman1995 has free IGF-1 partitioning into cartilage ~10× better than ternary complex — the atlas
-  holds that fact and has never used it), roxadustat.
+
+**✗ CLOSED FOR THIS STACK — do not re-promote:**
+- **LUM-201 / ibutamoren / MK-677 — DEMOTED R284, CORR-297. It is a SUBSTITUTE for the GH arm, not an
+  addition to it.** A secretagogue acts on the somatotroph; **exogenous GH bypasses the somatotroph.** The
+  only thing that made it an *addition* was pulsatility, and **R271 already killed that** (weekly ≥ daily).
+  With R254/R269 pricing GH after mid-puberty at ≈0 attained height, nothing is left. *Those three lines sat
+  in this file at once and were never read together.*
+  ✓ **The axis itself is human-validated** (`punt2025`, R284): 26 people with heterozygous GHSR LoF are
+  **−2.8 SDS tall with IGF-I −1.6 SDS and a NORMAL stimulated GH peak**; UKB pLoF GHSR → standing height
+  P=1.9e-9. Loss is mainly of **CONSTITUTIVE** activity (GHSR signals at ~50% of max with no ligand) — which
+  means **R279's PEM test reads the wrong limb of the receptor.**
+  ✓ **Still a real SUBSTITUTION** if the GH arm is ever stopped: 7.7 cm/yr oral vs 8.8 rhGH, ~⅛ the hormone.
+- **macimorelin** — approved, but as a **single-dose DIAGNOSTIC** only. Same target as LUM-201 → inherits the
+  substitution argument. R284.
+- **NBI-31772** — entire Europe PMC record is **41 items, none skeletal.** A reagent, not a candidate. R284.
+  *The objective it stood for — raising FREE IGF-1 at the plate — stays open with **no molecule**.*
+- **roxadustat** — targeted HIF-PHI × bone-**length** query: 35 records, **zero length endpoints** in any
+  species. Its skeletal literature is bone *mass*. R284.
+**The "unchecked compounds" list is now EMPTY.**
 
 ## THE OVERGROWTH-SYNDROME CLASS — R280 was WRONG, R281 corrected it. Do not re-argue R280.
 
