@@ -9377,3 +9377,33 @@ The consequence is not academic. Two human cohorts, found this round, measure it
 `cui2025` dissents (anastrozole+rhGH target-adjusted AH-SDS 0.81 vs letrozole+rhGH 0.60, P < 0.01) and is **not** withdrawn. Both are observational; the within-patient gain is preferred because it isolates what the drug added against each individual's own baseline. Eleven letrozole patients with an IQR of 0.6–13 cm is a thin basis and the grade is C.
 
 **Rule.** This atlas separates *analysis* nodes from *compound* nodes, and the analysis nodes have been running several rounds ahead. **A compound node is a claim about what to give, and it must be re-read against the analysis nodes whenever one of them moves a term.** The specific failure mode to watch for is a compound node quoting a *surrogate* endpoint — predicted adult height, zone height, bone-age SDS — after an analysis node has established that the surrogate is decoupled from the thing being optimised.
+
+---
+
+## CORR-264: I applied a population verdict to a subject the population excludes, and the effect modifier was printed in the paper I quoted
+
+**What round 254 said.** That growth hormone buys no final height after mid-puberty, on `vliegenthart2026` and `cantasorsdemir2026`, and that GH should be treated as a velocity agent with a reserve cost.
+
+**The subject's IGF-1 is 198.** Both legs fail on that fact, and one of them fails on its own reported statistics.
+
+1. **`vliegenthart2026` selected on a GH PEAK, not on IGF-1.** Its cohort retested *GH-sufficient* at a stimulation-test peak above 6.7 µg/L. A secretion criterion is not an effect criterion — the entire rationale of the IGF-1 generation test is that the two dissociate. A subject with an adequate GH peak and a low IGF-1 is in the GH-insensitivity half of that dissociation, which is exactly what the inclusion criterion screens out.
+
+2. **`cantasorsdemir2026` reports the moderator directly, and round 254 listed it without applying it.** Among its predictors of pubertal height gain: *higher IGF-1 SDS at therapy start was associated with a smaller gain, p < 0.01.* Round 254 reproduced that sentence in a quantitative row and then drew the average null as though it applied uniformly. A low starting IGF-1 sits at the end of that regression predicting a **larger** gain.
+
+**The regime is restoration, not enhancement,** and this atlas has had a rule for that since CORR-203. `hunziker1994`'s IGF-I arm — the one round 183 decomposed — *is* a restoration arm, and it raised longitudinal growth 2.97-fold.
+
+**What survives unchanged:** the somatotropic axis still does 90–97% of its work through pool consumption rate in every contrast of `hunziker1994`, and `chu2025` still shows cell-autonomous pool depletion through GHR. So the corrected prescription is not "GH is fine after all" — it is that the arm is indicated *on the deficiency*, indexed to IGF-1 rather than to dose, and titrated **to** a normal IGF-1 rather than above one. Above the reference interval, every further unit is enhancement, and that is the regime where round 254's nulls do apply.
+
+**I will not convert 198 into an SDS here.** That needs the issuing laboratory's assay, the exact chronological age and the pubertal stage, because IGF-1 intervals are assay-specific and move steeply across puberty. What can be said without them: 198 in the units these assays are conventionally reported in sits at or below the lower limit of most published late-pubertal male intervals, which is a deficiency signal rather than a normal value.
+
+**Rule.** A published effect estimate is a *population mean under that population's inclusion criteria*. Before applying one to this subject, check (a) that the subject would have met the entry criteria, and (b) whether the paper reports an interaction or moderator on a variable the subject is extreme on. Both checks were available here in the abstracts I had already read.
+
+### And the second half: the selection rule was wrong, and the retinoid axis is what it cost
+
+Round 254 ranked levers **by human attained-height evidence** and concluded the available package was 4–6 cm. That is a statement about what has been *measured*, and it was presented as a statement about what is *possible*. This atlas has grades C, D and E precisely so that mechanism can be carried without human outcome data; ranking only on B-and-above discards the file's own machinery.
+
+The cost is concrete. **The retinoid axis was at zero across 778 nodes** — and it contains `koyama2021`, in which the selective RARγ antagonist CD2665 given **alone** produced *maturation delay and growth plate expansion*, i.e. the amplification term this atlas has recorded as untouched for eighty rounds; and in which hedgehog inhibition was shown to close the plate **by suppressing Cyp26b1 and raising Raldh3**, with CD2665 co-administration preventing every consequence including the loss of reserve progenitors — the named antidote to the exact failure mode of this atlas's own discharge step.
+
+**And it was not even unrecorded.** `matsuoka2025` has been in this bibliography since 2026-08-05, filed under `growth_plate_drug_exposure` with the recorded finding *"a direct attempt to solve the growth-plate delivery problem"*. The atlas catalogued the **delivery vehicle** and never read the **drug** — a selective RARγ agonist that closes growth plates and shortens tibiae, with RARα and RARβ agonists inactive as the subtype control.
+
+**Rule.** A paper indexed under one layer's question still carries its pharmacology. When a reference is filed for its *method*, its *mechanism* has to be entered too, or the atlas will hold the evidence and not the finding.

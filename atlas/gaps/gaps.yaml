@@ -15047,3 +15047,74 @@ gaps:
     and dry weight and sulphated glycosaminoglycan content. A length change that tracks water content and
     completes within hours is swelling. A length change that continues over 12 to 24 hours and tracks
     matrix content is synthesis. Both are answerable in one experiment with no new reagent.
+- gap_id: g_l3_is_rargamma_expressed_in_the_human_growth_plate
+  layer: L3
+  type: species_gap
+  question: >-
+    Is RARgamma expressed in the human growth plate, and in which zone - and is SOST, while we are looking?
+  why_it_matters: >-
+    koyama2021 states RARgamma is the most abundantly expressed retinoid receptor in the MOUSE growth plate,
+    and the entire retinoid proposition rests on that. If RARgamma is absent or minor in the human plate the
+    axis does not transfer. The same query answers a second standing gap for free: sclerostin_sost records
+    that SOST expression in growth plate cartilage HAS NEVER BEEN DEMONSTRATED, which is why the tall stature
+    of sclerosteosis cannot currently be attributed to the physis rather than to cortical overgrowth.
+  what_is_known: >-
+    RARgamma most abundant in mouse growth plate (koyama2021); RARalpha and RARbeta agonists have no skeletal
+    effect on parallel regimens (matsuoka2025); RAR inverse agonism reduces hypertrophic conversion in human
+    MSC pellets (riedl2020). SOST loss of function in humans causes sclerosteosis with tall stature.
+  what_is_missing: >-
+    No measurement of RARG, RARA, RARB, CYP26B1, ALDH1A3 or SOST in human growth plate tissue is held by this
+    atlas.
+  nearest_evidence:
+  - koyama2021
+  - matsuoka2025
+  - riedl2020
+  nearest_evidence_note: >-
+    All zonal and expression evidence is mouse; the human arm is a cell pellet, not a plate.
+  tractability: high
+  discriminating_experiment: >-
+    NO NEW TISSUE REQUIRED. Query the pubertal human growth plate single-cell dataset GSE288028 (chu2026),
+    whose analysis code and supplementary files this atlas already archives under data/round243_supplied and
+    data/round245_pipeline, for RARG, RARA, RARB, CYP26B1, ALDH1A1/2/3, SOST, LRP5 and LRP6 across the GP1 to
+    GP5 clusters. IF RARG is expressed and zonally biased toward the proliferative and prehypertrophic
+    compartments, the retinoid axis transfers and the target cell is identified. IF SOST is absent from all
+    clusters, sclerosteosis tall stature is cortical and the WNT-brake lever leaves the physeal programme.
+- gap_id: g_l3_does_an_rargamma_antagonist_add_length_to_a_normal_animal
+  layer: L3
+  type: quantitative_gap
+  question: >-
+    Does a selective RARgamma antagonist given alone lengthen bones in a NORMAL growing animal, and by how
+    much - and does it do it by raising amplification or by spending the resting pool?
+  why_it_matters: >-
+    This is the only agent this atlas has ever found that is reported to delay maturation AND expand the
+    growth plate as a monotherapy, which is the amplification term - 88 to 91 per cent of the yield in three
+    species, and the term nothing else touches. But the report is qualitative, the endpoint is a zone height,
+    and CORR-189 established that zone heights are not growth rates. Without a length number and a flux
+    decomposition this is a direction, not a lever - and it could fail exactly the way growth hormone
+    failed, by buying rate out of the reserve.
+  what_is_known: >-
+    koyama2021 - CD2665 at 1.5 mg/kg/day in juvenile mice "elicited the expected maturation delay and growth
+    plate expansion" when given alone, and completely prevented hedgehog-inhibitor-induced premature closure.
+    matsuoka2025 - the agonist in the same axis closes plates and shortens bones, with RARalpha and RARbeta
+    inactive. matsuoka2025a - a retinoid antagonist attenuates growth inhibition after growth plate injury.
+  what_is_missing: >-
+    A longitudinal growth rate, a terminal hypertrophic cell height and a resting-zone cell count under a
+    selective RARgamma antagonist, in the same animals - the hunziker1994 quantity set. Nobody has run it,
+    and without it the term attribution is unknown. Also missing: any exposure of a human to a systemic
+    RARgamma antagonist, for any indication.
+  nearest_evidence:
+  - koyama2021
+  - matsuoka2025a
+  - hunziker1994
+  nearest_evidence_note: >-
+    hunziker1994 is the template for what the experiment must report, not evidence about retinoids.
+  tractability: high
+  discriminating_experiment: >-
+    Normal juvenile mice or rats, CD2665 at 1.5 mg/kg/day against vehicle, contralateral-controlled where
+    possible, for two to four weeks. Report TIBIAL LENGTH, calcein-measured longitudinal growth rate,
+    terminal hypertrophic cell height, resting-zone cells per column and resting-zone cycle time - so that A,
+    D and h_term can be separated by the identity GR = A x D x h_term. IF amplification rises with pool
+    consumption flat, this is the first true yield agent and it belongs at the top of the table. IF pool
+    consumption carries the effect, it is a second growth hormone and stacks in cost rather than benefit at
+    bone age 16. THEN the combination arm: charge with hedgehog agonism, discharge by withdrawal, and hold
+    the plate open with CD2665 through the discharge, with final bone length as the endpoint.
