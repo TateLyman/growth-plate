@@ -10030,3 +10030,21 @@ Round 283 called **LCORL** "the most cross-species-replicated height-increasing 
 Not a refutation — different alleles (`bai2025` knocked in the cattle frameshift; `wyler2024` a knockout), homozygotes vs the human heterozygotes, different backgrounds. But it removes the "best-replicated" claim, and the mechanism on offer is **hepatic, not chondral**. Round 283's own cross found LCORL **not cluster-restricted** in the growth plate (baseMean 2.70, padj 0.55). LCORL now looks like a whole-organism metabolic setpoint gene — which is precisely what **fails** CORR-299's open-plate test.
 
 **Rule.** Before writing "most replicated," search the gene's *own* knockout literature, not only the literature that agrees. A convergent-evolution argument across eight species is an argument about selection, not about mechanism, and it does not substitute for a second mouse line.
+
+## CORR-302 — I declared a gene untested one round after this atlas had already tested it, from a paper the operator supplied
+
+Round 285 built the open-plate test and reported **FBN1** among the genes with "no tissue-restricted and no postnatally-induced perturbation with a bone-length endpoint in any species."
+
+The atlas holds **`perichondrial_tgfb_restraint`**, built on `sedes2022` — **operator-supplied full-text PDF, read in full on 2026-08-06.** Its own summary contains the sentence round 285 needed:
+
+> Fbn1 loss in limb mesenchyme gives limb bones about **7% LONGER** than wild-type in vivo, **normal at birth and diverging between 1 and 3 months.**
+
+Plus the tissue localisation (**outer perichondrium**), four conditional deletions, and the decisive negative control — **deleting fibrillin-1 from chondrocytes themselves produces NO overgrowth.**
+
+**FBN1 passes, and it passes on the strongest evidence in the set:** the largest human taller-gene (+11.14 cm/allele) accrues **entirely after birth**, while the plate is open. That is the most direct answer available to the question the operator raised — whether these genes can work if not acted on at conception — and I had it before I wrote the round that said I didn't.
+
+**And it changes the conclusion, not just a footnote.** Two of round 283's six now pass, and **both passing genes are secreted extracellular antagonists** — HHIP binds a morphogen and limits its range; fibrillin-1 sequesters a morphogen's latent binding proteins. The gene that **fails**, LCORL, is an intracellular corepressor acting through the liver. CORR-300 derived that rule one round earlier from a different comparison; this is an independent second derivation.
+
+**Rule — this is CORR-287 and CORR-289's family and it now has a mechanical fix.** Before writing "X is untested" or "no study has done Y," **grep the atlas for X.** The graph is 806 nodes and 1,573 references; it is no longer small enough to hold in working memory, and an assertion about the literature is also an assertion about this file. *Search the graph before asserting the absence, not only the literature.*
+
+**Near-miss worth recording:** I had already drafted an ask to the operator for the `sedes2022` full text. They supplied it five days ago.
