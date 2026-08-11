@@ -7,11 +7,11 @@ anything unobtainable, run `holdings.py --have <pmid|doi|NCT|ref_id>`.
 
 - files: **270**
 - bytes: **160,982,012**
-- bibliography refs with a file named after them: **55**
+- bibliography refs with a file named after them: **56**
 
 ## Refs held as a named local document
 
-`abubakar2019`, `apec1621b_protocol`, `asco2023_apec1621b_abstract`, `avijgan2026`, `breinholt2019`, `brizini2024`, `cdc2000_statage`, `cheng2025`, `chu2025`, `chu2026`, `correa2010`, `dabogratinib2026`, `demuynck2024`, `erdaseries2025`, `fafilek2017`, `farouk2021`, `farouk2023`, `gse9160`, `hallett2021`, `hirota2018`, `horike2026`, `hudkins2024`, `hunziker1994`, `kember1976`, `kodama2025`, `koh2022`, `kunihiro2020`, `lauffer2022`, `liao2026`, `lui2018`, `miura2012`, `muruganandan2022`, `nadeaunguyen2026`, `nakao2015`, `nilsson2014`, `ogawa2002`, `oichi2023`, `orikasa2024`, `perera2017`, `propel2_schedule_of_assessments`, `qiu2026`, `ramnitz2016`, `schmitt2000`, `sims2012`, `soto2026`, `surf301_ena2024`, `trompet2024`, `vahle2002`, `vahle2004`, `wang2018`, `wei2024`, `wendt2015`, `wezeman2003`, `winer2018`, `wo2017055370`
+`abubakar2019`, `apec1621b_protocol`, `asco2023_apec1621b_abstract`, `avijgan2026`, `breinholt2019`, `brizini2024`, `cdc2000_statage`, `cheng2025`, `chu2025`, `chu2026`, `correa2010`, `dabogratinib2026`, `demuynck2024`, `erdaseries2025`, `fafilek2017`, `farouk2021`, `farouk2023`, `gse9160`, `hallett2021`, `hirota2018`, `horike2026`, `hudkins2024`, `hunziker1994`, `kember1976`, `kodama2025`, `koh2022`, `kunihiro2020`, `lauffer2022`, `liao2026`, `lui2018`, `miura2012`, `muruganandan2022`, `nadeaunguyen2026`, `nakao2015`, `nilsson2014`, `ogawa2002`, `oichi2023`, `orikasa2024`, `perera2017`, `propel2_schedule_of_assessments`, `qiu2026`, `ramnitz2016`, `schmitt2000`, `sims2012`, `soto2026`, `surf301_ena2024`, `surf301_protocol`, `trompet2024`, `vahle2002`, `vahle2004`, `wang2018`, `wei2024`, `wendt2015`, `wezeman2003`, `winer2018`, `wo2017055370`
 
 ## Every file
 
