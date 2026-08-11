@@ -210,8 +210,26 @@ adult height a mean 8.92 cm/allele — ~52× the average common variant.** Our w
 | **ZFAT** | **+7.86** | 41 | TF | thyroid autoimmunity, no stature. Was **top of the atlas's own Open Targets ranking** and never worked. |
 | **NRK** | **+3.79** | 56 | **kinase** | **none.** ← the lead |
 
-**Open-plate test (CORR-299), run R285:** HHIP **PASSES** · LCORL **FAILS** (hepatic) · **TET1, ZFAT, NRK, CHD8,
-FBN1 UNTESTED** — no tissue-restricted and no inducible perturbation with a length endpoint in any species.
+**OPEN-PLATE TEST (CORR-299) — run R285, corrected R286. TWO PASS, AND BOTH ARE SECRETED ANTAGONISTS.**
+- ✓ **FBN1 (+11.14, the largest).** `sedes2022` (**operator-supplied, read 2026-08-06** — I nearly re-asked for
+  it, CORR-302): Fbn1 loss in limb mesenchyme → limb bones **~7% longer, NORMAL AT BIRTH, diverging 1–3 months**
+  = **entirely postnatal accrual.** Four conditional deletions; **deleting Fbn1 from CHONDROCYTES gives NO
+  overgrowth** → control is **EXTRINSIC to the plate**, in the **OUTER PERICHONDRIUM**, via ↓LTBP-3/-4 → ↓pSmad2
+  → **less local TGF-β**; recombinant **TGF-β1 add-back NORMALISES** it (the causal step). Node:
+  `perichondrial_tgfb_restraint`.
+  ✗ **FBN1 is not a target — alleles have directions, genes don't.** `gne2026`: monoallelic FBN1 → **acromicric
+  dysplasia, SHORT**; and LTBP3/ADAMTSL2/ADAMTS10/ADAMTS17 loss all **shorten**, so "less TGF-β = taller" holds
+  for the perichondrium only, not the module.
+  → **Missing experiment, and it is absurdly cheap: `chen2015` gave LOSARTAN to WILD-TYPE mice on this exact
+  axis, measured zone lengths and bone mass, and NEVER PUT A CALIPER ON THE FEMUR.** Human PHN trial (608
+  children, height + proportions prespecified) was null — but vs **atenolol, not placebo**.
+- ✓ **HHIP (+9.92)** — see LIVE FRONTIER.
+- ✗ **LCORL FAILS** (hepatic). **UNTESTED: TET1, ZFAT, NRK, CHD8.**
+- **THE PATTERN: both passes are SECRETED EXTRACELLULAR ANTAGONISTS** (HHIP binds a morphogen and limits its
+  range; FBN1 sequesters a morphogen's latent binding proteins). The failure, LCORL, is an **intracellular**
+  corepressor. **That is CORR-300 derived a second time, independently.**
+- **Perichondrium/periosteum = the 2nd restraint compartment**: *mechanical* (periosteal release, ROC cutoff
+  9.6 y) **and** *molecular* (FBN1-LTBP-TGF-β, **no age cutoff** — Marfan adults stay tall).
 
 Down: ACAN −16.55, ANKRD11 −11.16, COL1A1 −10.36, EXT1 −8.70, IGF2BP2 −8.68, ADAMTS6 −8.40, ADAMTS10 −8.24,
 IGF1R −8.23, DTL −7.34, SCUBE3 −7.18, NF1 −5.55.
