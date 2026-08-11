@@ -51,6 +51,15 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 3. Is the endpoint **bone/body length**, or a proxy? Proxies do not close anything.
 4. Was it measured in a **normal** system, or a rescued deficit?
 
+## SCALE — read every ROI table against this (R277)
+
+Pooled, 1149 patients: **femoral lengthening 8.85 cm, tibial 7.36 cm** (~16 cm from both segments).
+Against: CNP analogues **+1.24 cm** at 52 wk; aromatase inhibitor **+1.3 cm** over 3 yr; GH after
+mid-puberty **≈ 0**. **The surgical option is an order of magnitude larger than the whole stack.**
+Cost: 37.1 days/cm, 7.71 months in frame, **56.1 % complication rate**.
+It works **after fusion**, so it is *additive*, not competing — and the one series combining it with
+vosoritide found no interference. Not a recommendation to operate; a correction to the file's sense of scale.
+
 ## WHERE THE HEIGHT ACTUALLY IS (as of R274)
 
 Population data, boys, bone age 13.6 → knees 8.6 cm, **trunk 8.6 cm**, residual leg 2.3 cm.
@@ -66,7 +75,11 @@ and do not collapse to knees-only. Both compartments are live for him.
   (KMT2/SETD1 writers, KDM5 erasers). A search found **no KDM5 or H3K4 intervention with any bone length
   endpoint in any species.** ← the live half.
 - **Axial-specific growth.** Every agent here was characterised on long bones. The residual is trunk.
-- **Distraction osteogenesis** — the only intervention delivering 10+ cm, and typed "unassigned" here.
+- **Consolidation acceleration for distraction osteogenesis** — the rate-limiter is 37.1 days/cm, and
+  teriparatide removed the failure penalty of *doubling* the distraction rate in rabbits (R277). LIPUS,
+  PRP, BMAC, MSCs, HBO indexed but not synthesised.
+- **FGFR3 inhibitor during distraction** — NO data of any kind. FGF signalling participates in fracture
+  repair; the stack's lead agent is pan-FGFR1-4. Open risk. R277
 - The 231 unmined length endpoints: `atlas/data/round269/length_endpoints_sweep.tsv`
 
 ## CONTRAINDICATED — do not add to the stack
