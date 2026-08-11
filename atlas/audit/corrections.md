@@ -9953,3 +9953,35 @@ Two independent anchors against three canonical resting markers. **chu2026's RNA
 Everything downstream was therefore reported **direction-free** — presence and cluster-restriction only. What survives is still worth having: **NRK baseMean 6.10, above FGFR3 (2.30) and NT5E (3.21) in the same table, padj 4.55e−3**, for a gene with zero skeletal literature in any species.
 
 **Rule.** Write the calibration check *before* the analysis it licenses, choose its panels *before* looking at the targets, and make failure a refusal rather than a caveat. The one time it fires is worth every time it does not.
+
+## CORR-297 — three conclusions sat in this file simultaneously and cancelled each other, and nobody put them side by side
+
+CLAUDE.md's LIVE COMPOUNDS section has led, since round 279, with **LUM-201 / ibutamoren**. The same file, two sections apart, records:
+
+- **GH after mid-puberty ≈ 0 attained height** (R254, R269) — SETTLED table
+- **Weekly GH ≥ daily GH on height velocity; "the pulsatility prediction was tested and failed"** (R271) — SETTLED table
+- **LUM-201, top of the LIVE list** (R279)
+
+The third depends on the first two being false. Round 279's argument was that LUM-201 restores *pulsatile* GH at ~⅛ the injected dose and that R269's SOCS2 loop predicts pattern beats amount. **R271 tested that prediction where humans tested it and it failed.** If making GH *less* pulsatile costs nothing, making it *more* pulsatile buys nothing.
+
+And underneath the pulsatility argument sits a structural one that was never stated: **a secretagogue acts on the somatotroph; exogenous GH bypasses the somatotroph.** LUM-201 is a **substitute for the GH arm, not an addition to it** — two routes to the same molecule in the same circulation. That should have been the first sentence written about it.
+
+**Not over-closed:** it remains a real *substitution* — 7.7 cm/yr oral vs 8.8 cm/yr rhGH in PEM-positive children, randomised, on ~⅛ the hormone. Closed as an addition, not as a molecule.
+
+**Rule.** A compound's entry belongs in the SETTLED table's frame of reference, not beside it. **Before promoting an agent, name the term of the height identity it moves and ask which existing arm already moves that term** — if the answer is "the one already in the stack," it is a substitution question, and substitution questions are priced against adherence and cost, not against biology.
+
+**Second rule, on the file itself:** `CLAUDE.md` was built to stop re-derivation, and it worked for that. It did **not** stop an internal contradiction, because nothing cross-checks its sections against each other. When adding to the LIVE list, read the SETTLED and DEAD tables first — that is now step 0 of the pre-round checklist.
+
+## CORR-298 — the unchecked-compound list is now empty, and all three closed
+
+`CLAUDE.md` carried "still unchecked against the graph: macimorelin, NBI-31772, roxadustat" for several rounds. Checked:
+
+| compound | verdict |
+|---|---|
+| **macimorelin** | Approved oral GHSR agonist — but as a **single-dose DIAGNOSTIC** for adult GHD. No therapeutic growth indication, no chronic dosing data. Same target as LUM-201, so it inherits CORR-297's substitution argument. `punt2025` adds that a single-dose agonist test reads the **stimulated** limb of a receptor whose human pathology is loss of **constitutive** activity. **CLOSED.** |
+| **NBI-31772** | The **entire** Europe PMC record is **41 items**, none skeletal — zebrafish fin regeneration, oocyte maturation, retinal lamination, mouse glucose homeostasis. No bone or length endpoint in any species; no development programme; no human exposure. A reagent, not a candidate. **CLOSED.** |
+| **roxadustat** | A targeted HIF-prolyl-hydroxylase × bone-**LENGTH** query returns **35 records with no length endpoint in any species**. The skeletal literature that exists is bone **mass** in both directions (promotes osteoblast differentiation; inhibits osteoclast differentiation). **CLOSED pending any length endpoint.** |
+
+**What does not close with NBI-31772:** the question it stood for. `only_free_igf_reaches_the_plate` establishes that the plate sees only the free fraction and sees it poorly — ternary complex at 140–150 kDa cannot enter, and ALS is not transcribed there. **Raising free IGF-1 at the plate remains a live objective with no molecule attached to it.**
+
+**Rule.** Record absence-of-evidence closures with the *size of the searched record*, not just the verdict. "41 items, read in full" is a closure; "no hits" is not.
