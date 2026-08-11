@@ -159,7 +159,29 @@ and replicate counts are still missing, and `hu2024` carries the functional clai
 or confirmed closed and shown to be non-blocking. The one remaining recommendation — emailing the authors —
 was withdrawn under CORR-255 when the answer turned out to be printed in the figure.
 
-**What is missing is not documents.** Three gaps, all of which need experiments nobody has run:
+**What is missing is not documents.** Three gaps were listed here as needing experiments nobody has run.
+**Round 246 closed or reframed all three, and two of them were already answered in print** (CORR-256,
+CORR-257). The superseded text is kept below; the current status is:
+
+1. ~~What GH does to the root cell.~~ **PARTLY ANSWERED.** `chu2025`'s H2B-GFP label-retention arm is
+   compartment-level, not marker-restricted, and GH significantly reduces label-retaining resting-zone
+   cells (n=4, P<0.001). GP1 is the slowest-cycling cluster, so it is the population most enriched among
+   them. Graded as inference. **And a citation error was found: `chu2025` uses no Prrx1/GP1 marker at all —
+   its marker-specific result is PTHrP+, i.e. GP2 (CORR-256).**
+2. ~~A self-renewal fraction.~~ **WRONG QUESTION.** Under neutral drift the fraction is pinned at one half
+   by definition; no clone dataset can measure it. What is derivable is a lineage half-life (138 days,
+   post-washout window). And raising the fraction above one half *abolishes neutrality* — it is clonal
+   expansion, i.e. the hyperplasia the brief forbade. The target is **restoration to** neutrality, not
+   elevation above it.
+3. ~~SMAD2 versus SMAD3.~~ **REFUTED, and tested in 2016.** `wang2016` (PLoS Genet, open access) shows
+   **both** Smad2 and Smad3 maintain the resting pool, Smad2 more prominently. The effector-identity escape
+   is closed; the contradiction with `chu2026` is sharper, not softer (CORR-257).
+
+**The new open question that replaces all three:** what drags the self-renewal fraction *below* one half as
+a plate approaches closure? The atlas has never asked this, and it is now the correctly-posed version of the
+question this whole line started from.
+
+*Superseded text:*
 
 1. **What GH does to the root cell itself.** GP1 does not survive explant culture (CYTL1 falls from 175 to
    4 reads per positive cell) and the authors excluded it. Every GH transcriptional result is c-GP2.

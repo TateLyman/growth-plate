@@ -9233,3 +9233,39 @@ None of that is a magnitude, so nothing about the grade changes. But it converts
 **Rule.** *Exhausting a method is not exhausting a question.* Before recording anything as unobtainable, enumerate the routes that remain — and a figure in a paper on disk is a route, not a dead end. The standing rule already said to grep the bibliography before asking a human for a document; this extends it: **also look inside the documents you hold, including their images, before asking a human for their contents.**
 
 **What it cost, and what it bought.** The ask list carried a wrong recommendation for one round. Against that, doing the reconstruction properly surfaced something the shortcut would have hidden — **seventeen of the twenty-eight genes are gp1-maximal, including all four ligands**, which means the redness of the gp1 row cannot be read as antagonist bias, and rounds 241 and 243 have to be restated as claims about *repertoire* rather than *intensity*. That is recorded in round 245 and it weakens my own prior framing.
+
+---
+
+## CORR-256: chu2025 never touched the root cell. Four rounds cited it as if it had
+
+**What rounds 240, 241, 243 and the commit messages said.** That `chu2025` shows *growth hormone depletes the root stem cell pool*, and that this is one of two independent mechanisms by which GH spends adult height. That sentence appears, in various forms, in four nodes and three commits.
+
+**What `chu2025` actually used.** Reading its Methods: `Pthrp-mCherry`, `Pthrp-CreERT2:R26R-tdTomato`, `CD73` immunostaining, `H2B-GFP:Tet-On`, and `Col2a1-CreERT2:R26R-Confetti`. **The words Prrx1, PRRX1, GP1 and 'root' appear ZERO times in the paper.** Its marker-specific depletion result is in **PTHrP-positive cells — which `chu2026` defines as GP2, explicitly NOT the root cluster.** The two papers share a first author and a laboratory, and I let that carry an inference it does not support.
+
+**So the marker-level claim is wrong and is retracted: GH depletes the PTHrP+ (GP2) stem cell pool, not the PRRX1+ root pool.** Numbers, now recorded properly: PTHrP-mCherry+ cells significantly reduced, n = 6, P < 0.0001; CD73+ cells likewise reduced; EdU incorporation in mCherry+ cells UNCHANGED and Ki67 a non-significant decrease, so the depletion is by exit rather than by slower division; phospho-STAT5 present in both mCherry+ and CD73+ cells, so the action is direct.
+
+**What survives, and it is more than nothing.** The **H2B-GFP label-retaining experiment is compartment-level, not marker-restricted** — after the chase, LRCs are 'predominantly observed in the resting zone', and GH significantly reduced them (n = 4, P < 0.001). GP1 is the slowest-cycling cluster in the human plate by `chu2026`'s own S/G2-M analysis, which makes it the population most enriched among label-retaining cells. **So the closest thing to a GP1 measurement that exists says GH reduces them — as an inference from label retention, not as a marker-resolved result.** That is the honest answer to 'what does GH do to the root cell', and it is stronger than the 'nobody has measured it' this atlas has been writing.
+
+**Rule.** *Two papers from the same laboratory on the same tissue are still two papers.* When one defines a population and the other perturbs 'stem cells', check which markers the second one actually used before transferring the first one's cell identity onto it. Shared authorship is not shared definition.
+
+---
+
+## CORR-257: the SMAD2-versus-SMAD3 reconciliation I proposed is refuted, and the experiment existed the whole time
+
+**What CORR-254 offered.** Three candidate resolutions for the contradiction between `chu2026` (SMAD2 regulon lowest in the root cluster; GH raises p-Smad2) and `yang2001` (Smad3-null chondrocytes 'break quiescent state'). The third, and the one I called *the sharpest experiment this line generates*, was that the root brake might be **Smad2**-borne while the hypertrophy restraint is **Smad3**-borne, since the two have distinct target sets. I wrote that nobody had tested it.
+
+**`wang2016` tested it in 2016.** *Smad2 and Smad3 Regulate Chondrocyte Proliferation and Differentiation in the Growth Plate*, PLoS Genetics, fully open access, PMID 27741240. It is `Smad2fx/fx;Col2a1-Cre`, `Smad3-/-`, and the double mutant, all three.
+
+**The result refutes my hypothesis and goes the other way for both Smads.**
+
+- The **resting zone is SHORTER** in Smad2CKO and in double mutants; columnar and hypertrophic zones are **LONGER**.
+- A **2- to 3-fold increase in PCNA-positive cells in the RESTING ZONE** in Smad2CKO, Smad3-/- AND double mutants, with **no change in the columnar zone** and no TUNEL difference.
+- The authors' conclusion, in their words: loss of Smad2 and/or Smad3 **promotes the entry of resting chondrocytes into the proliferative columnar phase**, Smad2 more prominently than Smad3, and **both Smad2 and Smad3 maintain the pool of resting chondrocytes**.
+
+**Smad2 does not do the opposite of Smad3. It does the same thing, harder.** The 'distinct effectors, distinct targets' escape is closed.
+
+**Which leaves the contradiction with `chu2026` sharper, not softer, and I am not going to paper over it.** If Smad2 is *required* to hold resting cells back, then the root cluster having the LOWEST Smad2 regulon activity is genuinely odd, and GH raising resting-zone p-Smad2 while *depleting* label-retaining cells is odder still. Of CORR-254's three options, only two remain: **zone** (the genetics are whole-cartilage and cannot separate GP1 from GP2), and **causality** (low SMAD2 regulon activity in GP1 may be a consequence or a correlate of the root state rather than its cause). A third possibility now worth naming: **the antagonists GP1 secretes are soluble and may act on its neighbours rather than on itself**, in which case low TGF-β is a property GP1 imposes downstream while itself remaining Smad2-dependent. Nothing available distinguishes these.
+
+**And `wang2016` supplies something the programme has wanted since round 198 — a genetic existence proof of the exchange rate.** Double mutants have **LONGER growth plates at midgestation and at P0**, and then **progressive postnatal dwarfism: 9.7 per cent shorter body at P0 (n = 4, P = 0.04) and 12.5 per cent shorter at one month (n = 3, p = 0.05)**. The authors attribute it to premature depletion of the resting pool and an inability to sustain elongation. **Bigger plate and faster proliferation now; smaller animal later; because the pool was spent.** That is round 198's objective function demonstrated in a mouse, by mutation rather than by drug, and it is the cleanest such demonstration in the atlas.
+
+**Rule, and it is the fourth version of one lesson this session.** CORR-250: check the bibliography before asking. CORR-252: test before headlining. CORR-254: search the graph before proposing an intervention. CORR-255: exhausting a method is not exhausting a question. This one: **before writing 'nobody has tested X', run the search for X.** I named the Smad2-versus-Smad3 experiment as the key missing one and did not spend the sixty seconds it took to find that it was published a decade ago in an open-access journal.
