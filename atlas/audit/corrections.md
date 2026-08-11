@@ -9921,3 +9921,35 @@ Round 278 established that this stack's bone cost is an **efficacy** term, not a
 It **supplements** rather than replaces round 278's prescription: BHI reads *cortical* bone; the aromatase arm's documented cost is *lumbar trabecular*.
 
 **Rule.** Before proposing a new measurement, ask what the measurements already being taken could also report. An instrument already in the protocol is cheaper than any new one.
+
+## CORR-295 — the reason this atlas kept finding genes that SHORTEN bone, measured
+
+Four rounds — 268 (hedgehog), 272 (oestrogen receptors), 276 (DNA methylation), 281 (canonical Wnt) — reached the same shape: *both directions shorten bone*. CLAUDE.md turned that into a predictive rule. `kosmicki2026` supplies a large part of the real explanation, and it is not biology:
+
+> Among genes with a pLoF height association **and** a Mendelian syndrome in OMIM, **36 of 43 (83%) are associated with DECREASED height and 7 of 43 (17%) with INCREASED height.**
+
+Of the six height-**increasing** genes in that study, only FBN1 has an OMIM stature entry; **LCORL, NRK and TET1 have no OMIM syndrome at all.** The authors excluded the two obvious confounds: no difference in pleiotropy (>2,000 UKB phenotypes) and no difference in loss-of-function constraint between the height-increasing and height-decreasing sets.
+
+**Being short brings a child to a clinic. Being tall does not.** So the medical literature is an inventory of things that shorten people, and every literature query this programme has run inherited that. The "both directions shorten" finding is partly a property of *where the atlas was looking*.
+
+**Rule.** For a trait where one tail is pathologised and the other is not, a literature search is a biased instrument and cannot be repaired by searching harder. **Unbiased-ascertainment population data is a different instrument, not a bigger version of the same one** — and this programme now has one: 1,450,633 exomes with measured adult height and no clinical ascertainment.
+
+**And a second, sharper one.** The atlas already held `clean_gwas_search_for_unhit_targets`, an Open Targets height ranking whose top entries overlap **nine of kosmicki2026's seventeen** — ZFAT, ACAN, IGF1R, ADAMTS10, SCUBE3, LCORL, DTL, IGF2BP2, STC2. It sat unused, and it is an **orphan node**. The reason it was unusable is instructive: an Open Targets score is an **unsigned aggregate**, so having ZFAT at the top of the ranking said nothing about whether to raise or lower it. *An enumeration without a sign and a magnitude is not actionable, and should be labelled as such when it is created.*
+
+## CORR-296 — I built the tool to refuse, and it refused; the refusal is the finding
+
+`round283_height_genes_against_the_root_cluster.py` was written to place the six height-increasing genes into a growth-plate compartment using chu2026's mouse GP1-vs-GP2 table. The supplementary table does not state the contrast direction, so the script calibrates the sign against two marker panels **chosen before the height genes were looked at**, and refuses to report any direction unless they separate.
+
+**They do not separate:**
+
+| anchor | says |
+|---|---|
+| SFRP5 −2.36 (padj 1.3e−16), PTHLH −1.45, NT5E −0.80 | negative = resting/root |
+| GAS1 **+3.06** (padj 1.8e−10) — round 241 records GAS1 as a GP1 marker | positive = GP1 |
+| global skew 1,039 positive : 441 negative, against round 241's **819 up / 165 down for GP1** | positive = GP1 |
+
+Two independent anchors against three canonical resting markers. **chu2026's RNA-velocity root cluster is evidently not co-extensive with the resting zone as marked** — and rounds 241, 244, 245 and 246 are built on that dataset. Round 244 already brushed against this ("the CYTL1-positive gate … is enriched for the marker GP1 is defined as lacking"); this is the same crack, seen from the other side.
+
+Everything downstream was therefore reported **direction-free** — presence and cluster-restriction only. What survives is still worth having: **NRK baseMean 6.10, above FGFR3 (2.30) and NT5E (3.21) in the same table, padj 4.55e−3**, for a gene with zero skeletal literature in any species.
+
+**Rule.** Write the calibration check *before* the analysis it licenses, choose its panels *before* looking at the targets, and make failure a refusal rather than a caveat. The one time it fires is worth every time it does not.

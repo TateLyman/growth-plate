@@ -13041,6 +13041,76 @@ gaps:
     lever in this atlas from failed to merely mistimed. No dose that exceeds both means the charge is a loan rather
     than a battery, which is the same answer oichi2023 and gafni2001 both approached and neither reached.'
   tractability: 2
+- gap_id: g_l8_nrk_has_no_skeletal_experiment_in_any_species
+  type: known_unknown
+  layer: L8
+  tractability: 4
+  question: >-
+    Does loss or inhibition of NRK (Nik-related kinase) lengthen bone in a normal growing animal, and where
+    in the growth plate does NRK act?
+  why_it_matters: >-
+    NRK is the only height-INCREASING gene in kosmicki2026's seventeen that is both enzymatically druggable
+    and free of an attached disease. Human singleton pLoF is +3.79 cm per allele (56 carriers, P =
+    1.29x10^-9) with NO OMIM syndrome, and it is a KINASE, the most tractable target class in the table.
+    Against that, its entire published literature is a placental cell-death protein, a mouse placental
+    labyrinth function and a prostate hyperplasia paper - there is NO SKELETAL LITERATURE ON NRK IN ANY
+    SPECIES. Round 283 crossed it against chu2026's mouse GP1-vs-GP2 table and found baseMean 6.10, above
+    FGFR3 (2.30) and NT5E/CD73 (3.21), significantly cluster-restricted at padj 4.55x10^-3. A druggable
+    enzyme with a human height effect, no disease burden, and no skeletal experiment is the cleanest
+    unexplored target this atlas holds.
+  what_is_known: >-
+    Human genetics (kosmicki2026, 1.45 million individuals) and mouse growth-plate transcript abundance
+    (chu2026, atlas/data/round283/). Nothing else.
+  what_is_missing: >-
+    (a) An Nrk knockout or conditional with a BONE LENGTH endpoint in any species. (b) Protein localisation
+    in the growth plate - the compartment cannot be assigned from chu2026 because that table's sign
+    convention failed calibration in round 283. (c) Any NRK inhibitor. (d) Whether the human effect is
+    plate-autonomous at all, given that the gene's known biology is placental. (e) Whether an X-linked
+    kinase with a hemizygous male dosage difference contributes to the sexual dimorphism of human height.
+  nearest_evidence:
+  - kosmicki2026
+  - chu2026
+  nearest_evidence_note: >-
+    The human association is secure at gene level; everything about mechanism, compartment and
+    druggability is absent.
+  discriminating_experiment: >-
+    Nrk-null and cartilage-conditional mice, both sexes, with femur and tibia length by caliper and micro-CT
+    at skeletal maturity plus growth-plate zone decomposition - resting-zone cell number, cells per column,
+    terminal hypertrophic cell height - so the result lands on a named term of the height identity rather
+    than on a zone height alone (CORR-189, CORR-292). Read out length before histology.
+- gap_id: g_l8_does_mild_lifelong_hedgehog_disinhibition_lengthen_bone
+  type: known_unknown
+  layer: L8
+  tractability: 2
+  question: >-
+    Round 268 closed hedgehog as bounded in both directions on large ACUTE perturbations. Does a MILD,
+    LIFELONG reduction in hedgehog-antagonist tone - the HHIP heterozygous-loss state - lengthen bone, and
+    is there an interior optimum above wild type that acute pharmacology could never reach?
+  why_it_matters: >-
+    kosmicki2026 reports rare HHIP pLoF singletons at PLUS 9.92 cm (P = 3.72x10^-7) and an HHIP p.V496E
+    missense, read as gain-of-function, at MINUS 3.96 cm (P = 1.52x10^-9). HHIP is a secreted hedgehog
+    antagonist, so in humans the two directions of one hedgehog brake move height monotonically and in
+    centimetres. That is the same shape round 281 found for canonical Wnt - a band whose optimum is not at
+    wild type - and if it holds it means round 268 closed a pharmacological PROTOCOL rather than an axis.
+  what_is_known: >-
+    Round 268 - hedgehog withdrawal causes fusion in mouse (xiu2022, -21/-30 per cent femur), rat and human
+    (robinson2017a, pereira2021); sustained agonism causes premature closure; trompet2024 systemic SAG
+    raises the pool with length unchanged. Against that, the HHIP human population result in both
+    directions.
+  what_is_missing: >-
+    The HHIP pLoF association is BELOW exome-wide significance and HHIP is not among the seventeen
+    main-table genes - it was reported incidentally in support of a different argument, with no carrier
+    count. No Hhip heterozygous mouse has been read out for bone length. And no experiment has titrated
+    hedgehog tone mildly and chronically, which is the only regime the human data speak to.
+  nearest_evidence:
+  - kosmicki2026
+  nearest_evidence_note: >-
+    One incidental result in one preprint. This gap exists to stop the observation being either forgotten or
+    over-read; it is NOT a reopening of round 268 on present evidence.
+  discriminating_experiment: >-
+    Hhip heterozygous mice, lifelong, against wild-type littermates, with femur and tibia length at skeletal
+    maturity and a bone-age-equivalent maturation readout taken at the same time so the trade is priced
+    rather than assumed. A heterozygote is the correct dose because the human evidence is heterozygous.
 - gap_id: g_l2_wnt_inhibition_in_resting_cells_long_columns_at_late_timepoint
   status: >-
     PARTIALLY CLOSED 2026-08-11 (round 281, CORR-289) - THE INHIBITION ARM EXISTS AND IT IS POSITIVE, but it is

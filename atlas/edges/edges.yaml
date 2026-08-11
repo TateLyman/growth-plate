@@ -27460,3 +27460,101 @@ edges:
   - plluaas2026
   - cammisa2024
   confidence: B
+- edge_id: e01636
+  source: round283_the_six_genes_whose_loss_makes_humans_taller_and_why_this_atlas_kept_missing_them
+  target: clean_gwas_search_for_unhit_targets
+  relation: correlates_with
+  sign: +
+  magnitude: >-
+    THE ATLAS ALREADY HAD THE GENE LIST AND COULD NOT USE IT, BECAUSE IT HAD NO SIGN. This node recorded an
+    Open Targets human-height ranking topped by ZFAT 0.738, ADAMTS17 0.737, ACAN 0.737, NPR3 0.724, IGF1R
+    0.720, ADAMTS10 0.718, SCUBE3 0.705, LCORL 0.698, DTL 0.695, IGF2BP2 0.695, STC2 0.683. NINE of those
+    overlap kosmicki2026's seventeen singleton-pLoF genes - two entirely different methods agreeing almost
+    gene for gene. But an Open Targets score is an UNSIGNED aggregate of evidence types, so the ranking could
+    not say whether to push a gene up or down or by how much, and nothing was done with it. kosmicki2026
+    supplies both: ZFAT loss is +7.86 cm, LCORL +9.99, and ACAN -16.55.
+  context: >-
+    THIS NODE IS ALSO AN ORPHAN IN THE GRAPH - the atlas's single best unbiased target enumeration was
+    never wired to anything, which is part of why its top-ranked gene sat unworked. AND kosmicki2026 explains
+    the deeper bias: genes with a pLoF height association and an OMIM syndrome are more than FIVE TIMES more
+    likely to be annotated with decreased than increased height (36 of 43 versus 7 of 43), with matched
+    pleiotropy and matched constraint between the two sets. A disease literature cannot find the taller half.
+  evidence_tier: T1
+  refs:
+  - kosmicki2026
+  - opentargets_height_2026
+  confidence: B
+- edge_id: e01637
+  source: round283_the_six_genes_whose_loss_makes_humans_taller_and_why_this_atlas_kept_missing_them
+  target: round276_the_epigenetic_ceiling_is_a_band_not_a_brake_and_both_directions_shorten_bone
+  relation: correlates_with
+  sign: '-'
+  magnitude: >-
+    REOPENS THE DNA-METHYLATION ARM, WITH THE CURRENCY THIS FILE REQUIRES. Round 276 closed the arm as a
+    band on DNMT1 - the WRITER - shortening bone, and on IDH-mutant blockade of demethylation diverting
+    chondrocytes into enchondroma. TET1 IS THE ERASER, and human singleton loss-of-function in TET1 is
+    +8.32 cm per allele (42 carriers, P = 2.23x10^-14) with NO OMIM syndrome, in a 1.45-million-person
+    exome study. CLAUDE.md's stated bar for reopening a closed entry is new PRIMARY DATA rather than a new
+    argument; this is that.
+  context: >-
+    IT ALSO UPGRADES ROUND 276'S OWN CONTRAINDICATION. Alpha-ketoglutarate was contraindicated at grade E on
+    mechanism alone, as the co-substrate TET enzymes require. If losing TET1 is worth +8.3 cm of adult
+    height, then supplementing its co-substrate pushes the axis in the height-LOSING direction - the same
+    conclusion, now with a human anchor. THE LIMIT: no Tet1 conditional has ever been read out for bone
+    LENGTH in any species, and a search for TET inhibitors with any bone endpoint returns nothing across an
+    entire literature of about 130 records.
+  evidence_tier: T1
+  refs:
+  - kosmicki2026
+  - yanagihara2025
+  confidence: B
+- edge_id: e01638
+  source: round283_the_six_genes_whose_loss_makes_humans_taller_and_why_this_atlas_kept_missing_them
+  target: round268_hedgehog_is_bounded_on_both_sides_and_the_withdrawal_lever_is_refuted_in_three_species
+  relation: hypothesized_link
+  sign: biphasic
+  magnitude: >-
+    A HUMAN, TWO-DIRECTIONAL, CENTIMETRE-DENOMINATED READING OF HEDGEHOG TONE. Rare HHIP putative-loss-of-
+    function singletons are associated with PLUS 9.92 cm (P = 3.72x10^-7), and an HHIP p.V496E missense seen
+    only in the Mexico City Prospective Study is MINUS 3.96 cm (P = 1.52x10^-9), which the authors read as
+    gain of function precisely because the pLoFs run the other way. HHIP is a secreted hedgehog ANTAGONIST,
+    so losing one copy of a hedgehog brake is worth about ten centimetres in humans.
+  context: >-
+    THIS IS A POINTER AND EXPLICITLY NOT A REOPENING. Round 268 closed hedgehog on LARGE ACUTE
+    pharmacological perturbations - withdrawal causing fusion in mouse, rat and human, and sustained agonism
+    causing premature closure - whereas HHIP is a MILD LIFELONG shift in one antagonist's gene dosage, which
+    is a different object. The pLoF P value is also below exome-wide significance and HHIP is not among the
+    17 main-table genes; it was reported incidentally while the authors argued that p.V496E is
+    gain-of-function, and no carrier count is given. What it does suggest is the same shape round 281 found
+    for canonical Wnt - a band whose optimum is not at wild type, with human population genetics locating it.
+  evidence_tier: T2
+  refs:
+  - kosmicki2026
+  confidence: speculative
+  gap_id: g_l8_does_mild_lifelong_hedgehog_disinhibition_lengthen_bone
+- edge_id: e01639
+  source: round283_the_six_genes_whose_loss_makes_humans_taller_and_why_this_atlas_kept_missing_them
+  target: chondroprogenitor_quiescence
+  relation: hypothesized_link
+  sign: unknown
+  magnitude: >-
+    NRK - THE ROUND'S NOVEL LEAD, AND HALF OF IT CAME OUT OF DATA THE ATLAS ALREADY OWNED. Nik-related
+    kinase, X-linked: human singleton pLoF +3.79 cm per allele (56 carriers, P = 1.29x10^-9), NO OMIM
+    syndrome, and A KINASE - the most tractable target class among the six height-increasing genes. Its
+    entire literature is a placental cell-death protein, a mouse placental labyrinth function and a prostate
+    hyperplasia paper: ZERO SKELETAL LITERATURE IN ANY SPECIES. Crossed against chu2026's mouse GP1-vs-GP2
+    growth-plate table, NRK has baseMean 6.10 - ABOVE FGFR3 at 2.30 and above NT5E/CD73 at 3.21 in the same
+    table - and is significantly cluster-restricted at padj 4.55x10^-3.
+  context: >-
+    DIRECTION IS DELIBERATELY UNASSIGNED AND THE TOOL REFUSED TO ASSIGN IT. chu2026's sign convention could
+    not be calibrated: SFRP5, PTHLH and NT5E put the resting compartment on the negative side, while GAS1 -
+    which round 241 records as a GP1 marker - is +3.06 at padj 1.8x10^-10, and the 1,039-to-441 positive skew
+    among significant genes matches round 241's 819-up/165-down for GP1. Two anchors against three markers,
+    unresolved, inside a dataset four atlas rounds are built on. So this edge claims presence and
+    regionalisation only, not compartment. No NRK inhibitor is known to exist.
+  evidence_tier: T1
+  refs:
+  - kosmicki2026
+  - chu2026
+  confidence: speculative
+  gap_id: g_l8_nrk_has_no_skeletal_experiment_in_any_species
