@@ -1,0 +1,150 @@
+id: round244_the_nine_cannot_be_named_this_way
+name: >-
+  ROUND 244 - a failed attempt, recorded so nobody repeats it. MARKER-GATING THE DEPOSITED HUMAN DATA ON
+  CYTL1 DOES NOT RECOVER THE ROOT CLUSTER: the gate comes back PTHLH-ENRICHED and GAS1-DEPLETED, which is
+  the opposite of GP1 on both counts. And normalising to the matrix program DISSOLVES the thrombospondin
+  and GHR enrichments that the raw table appeared to show
+type: hypothesis
+layer: L2
+aliases:
+- the nine cannot be named this way
+- the CYTL1 gate fails its controls
+- the matrix confound
+- round 244
+stub: false
+summary: |
+  THE QUESTION. chu2026 states that the GP1 root cluster expresses FOUR WNT LIGANDS AND NINE SOLUBLE
+  INHIBITORS out of the 174 genes in KEGG:04310. The nine are not named in the main text and the supplement
+  supplied on 2026-08-11 does not name them either. Round 241 recorded the count without the list, which
+  leaves the claim pathway-level and undruggable; round 243 recovered exactly one, SFRP1, off the
+  ligand-receptor panel. The deposited data GSE288028 has been in this atlas since Phase 5, so the rest
+  looked recoverable.
+
+  THE APPROACH, AND WHY IT WAS NOT A RE-CLUSTERING. Re-deriving GP1 from raw counts would produce MY cluster
+  boundaries and MY gene list, not the authors'. So instead the paper's own discriminator was used: CYTL1,
+  the marker they selected for GP1 and validated by RNAscope against RAMP3 for GP2. The question became
+  narrow - do CYTL1-positive cells show higher detection of particular soluble antagonists than
+  CYTL1-negative cells, across all four fresh biopsies.
+
+  IT FAILED, AND THE CONTROLS ARE HOW. Running the identity genes through the same contrast:
+
+  - PTHLH median 2.44x, enriched in 3 of 4 donors. GP1 IS DEFINED AS PTHLH-NEGATIVE.
+  - RAMP3, the GP2 marker, median 1.78x, enriched in 2 of 4.
+  - GAS1 median 0.30x, PRRX1 median 0.42x, APOE median 0.58x - ALL THREE GP1-ASSOCIATED GENES ARE DEPLETED.
+
+  A CYTL1-POSITIVE GATE ON THIS DROPLET DATA RECOVERS A MATRIX-RICH, PTHLH-ENRICHED, GAS1-DEPLETED
+  CHONDROCYTE. That is closer to GP2, or to a mature chondrocyte generally, than to the root cell. THE NINE
+  CANNOT BE NAMED THIS WAY AND THE QUESTION STAYS OPEN.
+
+  THE SECOND FINDING IS A CONFOUND THAT WOULD HAVE BEEN REPORTED AS A RESULT. In the raw contrast THBS1,
+  THBS2, THBS3, THBS4, DCN, BGN, FMOD, LUM, LTBP1 and LTBP3 are ALL up in CYTL1+ cells in 4 of 4 donors -
+  which reads as spectacular confirmation of rounds 241 and 243. But ACAN is up too, by the same ratio
+  (2.47, 2.19, 1.02 and 12.98 across donors). CYTL1-POSITIVE CELLS IN THIS DATASET SIMPLY CARRY MORE MATRIX
+  TRANSCRIPT. Dividing every gene's enrichment by ACAN's in the same donor collapses the panel: THBS1 falls
+  to 1.17, DCN to 0.97, LUM to 1.09, BGN to 1.03, LTBP3 to 1.04 - no signal beyond the matrix program at
+  all. A matricellular gene rising in step with aggrecan is evidence of a matrix-rich cell, not of a
+  targeted antagonist screen.
+
+  AND THE SAME NORMALISATION KILLS SOMETHING I HAD ALREADY WRITTEN DOWN AS A THIRD CONFIRMATION. In the raw
+  table GHR is up in CYTL1+ cells in 4 of 4 donors, 71.8 against 27.6 per cent in donor 1, which looked like
+  independent human support for the GHR-concentrated-on-the-root-cell finding. NORMALISED TO ACAN IT IS
+  1.05 - NOTHING. IGF1R is 0.81. The GHR result still stands on the two places it was actually measured -
+  chu2026's own cluster-level gradient and the mouse DEG table at padj 1.6e-14 - but THIS DATASET, GATED
+  THIS WAY, ADDS NOTHING TO IT, and I would have claimed it did.
+
+  WHAT SURVIVES, WEAKLY. One gene beats the matrix program in all four donors: SFRP5, median 8.27x. But
+  SFRP5 is a SHARED resting-zone marker in chu2026's own account, enriched in GP1 AND GP2, so its
+  enrichment says the gate caught resting-zone cells generally - which is consistent with everything else
+  above and is not a statement about the root cell. DKK2 (median 2.18x, 3 of 4) and THBS3 (2.92x, 3 of 4)
+  are the only other genes clearing the bar in three donors, and neither is safe on a failing gate.
+
+  WHAT THIS DOES NOT DO. It does NOT refute round 243. The mouse result there is a GP1-versus-GP2 comparison
+  computed by the authors on their own clusters; this is CYTL1-positive against everything else on a gate
+  that demonstrably misses GP1. THE TWO ARE NOT COMPARABLE AND THE FAILURE OF THE SECOND SAYS NOTHING ABOUT
+  THE FIRST. What it does do is remove a confirmation I had started to count, and put a floor under how much
+  can be extracted from droplet data by marker gating.
+
+  WHY THIS IS A NODE AND NOT A DELETED SCRIPT. The raw table is persuasive and wrong. Anyone - including a
+  later round of this programme - who runs the obvious analysis will get ten antagonists up in four of four
+  donors and a GHR confirmation, and will have to run the aggrecan control and the PTHLH control to find out
+  none of it holds. THE CONTROLS ARE THE DELIVERABLE.
+
+  WHAT WOULD ACTUALLY ANSWER THE QUESTION. Three routes, in order of cost. First, ask the authors for the
+  gene list behind Fig. 3R, which is one email and no analysis. Second, run their published pipeline -
+  the code is at the repository and Zenodo archive named in the data availability statement - which would
+  reproduce their clusters rather than approximate them. Third, accept the pathway-level statement and stop
+  trying to name the nine. The first is the only one worth doing.
+quantitative:
+- parameter: >-
+    the CYTL1-positive gate fails its identity controls - it is enriched for the marker GP1 is defined as
+    lacking and depleted for the genes GP1 is defined by
+  value: 'PTHLH median 2.44x (3/4 donors); RAMP3 1.78x (2/4); GAS1 0.30x (0/4); PRRX1 0.42x (0/4); APOE
+    0.58x (0/4)'
+  unit: CYTL1-positive over CYTL1-negative detection ratio, divided by ACAN's ratio in the same donor
+  conditions: >-
+    GSE288028, four fresh human growth plate biopsies from epiphysiodesis for tall stature, ungated (the
+    COL2A1/ACAN chondrocyte gate depletes resting-zone cells and is wrong for this question)
+  species: human
+  source_ref: chu2026
+  uncertainty: >-
+    THIS ATLAS'S OWN RE-ANALYSIS, graded as such and reported as a NEGATIVE result. Donor 4 has only 383
+    cells and 90 CYTL1-positive, with an ACAN ratio of 12.98 far out of line with the other three, and it
+    drives several of the low normalised values
+- parameter: >-
+    the thrombospondin and SLRP enrichment in CYTL1-positive cells is a matrix-program artefact - it does
+    not survive normalisation to aggrecan
+  value: 'raw: THBS1, THBS2, THBS3, THBS4, DCN, BGN, FMOD, LUM, LTBP1, LTBP3 all up in 4/4 donors.
+    ACAN-normalised: THBS1 1.17, DCN 0.97, LUM 1.09, BGN 1.03, LTBP3 1.04, THBS4 1.43'
+  unit: enrichment ratio before and after dividing by ACAN's ratio in the same donor
+  conditions: same dataset and contrast
+  species: human
+  source_ref: chu2026
+  uncertainty: >-
+    aggrecan is one choice of matrix yardstick and a different normaliser would move the numbers; the point
+    that survives any choice is that the whole matricellular panel moves together with bulk matrix
+    transcript, which a targeted antagonist screen would not predict
+- parameter: >-
+    the GHR enrichment in this dataset is also a matrix-program artefact, removing a confirmation this
+    programme had begun to count
+  value: 'raw GHR 71.8 vs 27.6 per cent in donor 1 and up in 4/4 donors; ACAN-normalised median 1.05, above
+    1.5x in 0/4. IGF1R normalised 0.81'
+  unit: enrichment ratio before and after matrix normalisation
+  conditions: same dataset and contrast
+  species: human
+  source_ref: chu2026
+  uncertainty: >-
+    the GHR-on-the-root-cell finding is NOT retracted - it rests on chu2026's own cluster-level gradient and
+    on the mouse DEG table at padj 1.6e-14. What is retracted is the idea that this dataset, gated this way,
+    provides a third independent confirmation of it
+localization:
+- 'human growth plate, all four fresh biopsies: the CYTL1-positive fraction is 695, 1659, 7757 and 90 cells
+  of 5295, 12911, 9115 and 383 total'
+human_evidence: direct
+human_evidence_note: >-
+  Human deposited data throughout, but the result is a methodological negative rather than a biological
+  finding - the gate does not recover the population it was aimed at, so no biological claim is made.
+species_basis:
+- human
+translation_risk: not_applicable
+translation_risk_reason: >-
+  No cross-species inference is attempted. The finding is about what a marker gate on droplet data can and
+  cannot resolve in one human dataset.
+confidence: C
+confidence_reason: >-
+  Graded C for the methodological claim, which is well supported - the control genes are unambiguous and the
+  matrix normalisation is reproducible from the deposited files. No biological claim is graded at all,
+  because none is made.
+key_refs:
+- ref_id: chu2026
+  pmid: '41984930'
+  doi: 10.1126/scitranslmed.adw3590
+  year: 2026
+  type: primary
+  role: >-
+    both the source of the unnamed nine and the source of the deposited data GSE288028 on which this attempt
+    to name them failed; also the source of the marker definitions (CYTL1 for GP1, RAMP3 for GP2, PTHLH
+    negative in GP1, GAS1 specific to GP1) that the controls are built from
+open_questions:
+- g_l2stem_001
+builds_on: round243_the_root_state_is_tgf_beta_off_and_four_systems_evolved_four_ways_to_hold_it_there
+last_verified: '2026-08-11'

@@ -1,0 +1,129 @@
+MATRIX-NORMALISED ENRICHMENT IN CYTL1+ CELLS  (round 244, GSE288028 re-analysis)
+
+THE CONFOUND THIS EXISTS TO CATCH. In the raw contrast THBS1/2/3/4, DCN, BGN, FMOD,
+LUM and LTBP1/3 are all up in CYTL1+ cells in 4/4 donors - but so is ACAN, by a
+similar ratio. CYTL1+ cells in this dataset simply carry more matrix transcript. A
+matricellular gene rising in step with ACAN is evidence of a matrix-rich cell, NOT
+of a targeted antagonist screen. Each value below is the gene's CYTL1+/CYTL1-
+detection ratio DIVIDED BY ACAN's in the same donor. Near 1.0 means no specific
+signal beyond the matrix program.
+
+  ACAN raw ratios (the yardstick): 2.47, 2.19, 1.02, 12.98
+
+------------------------------------------------------------------------
+SOLUBLE WNT ANTAGONISTS
+  gene         donor1    donor2    donor3    donor4   median   >1.5x
+  SFRP1          0.84      1.12      3.19      0.18     1.12     1/4
+  SFRP2          0.00         -      4.88         -     4.88     1/4
+  SFRP4          0.20      0.38      0.38      0.05     0.38     0/4
+  SFRP5         11.95      6.16      3.23      8.27     8.27     4/4
+  FRZB           0.30      0.57      1.54      0.14     0.57     1/4
+  WIF1           0.11      0.42      0.74      0.06     0.42     0/4
+  DKK1           0.40      1.83      1.30      0.62     1.30     1/4
+  DKK2           2.18      2.87      1.95      0.12     2.18     3/4
+  DKK3           0.61      0.94      1.70      0.09     0.94     1/4
+  SOST           0.00      0.91         -         -     0.91     0/4
+  SOSTDC1        1.21      3.65      2.28         -     2.28     2/4
+  NOTUM          0.98      2.28      1.95      0.15     1.95     2/4
+  APCDD1         0.11      0.44      0.29      0.04     0.29     0/4
+  KREMEN1        0.94      1.01      1.12      0.13     1.01     0/4
+  GREM1          1.01      4.33      1.13      0.43     1.13     1/4
+
+------------------------------------------------------------------------
+SOLUBLE TGF-BETA ANTAGONISTS / SLRPs
+  gene         donor1    donor2    donor3    donor4   median   >1.5x
+  THBS1          1.19      1.17      1.12      0.22     1.17     0/4
+  THBS2          1.54      3.48      1.17      0.62     1.54     2/4
+  THBS3          2.04      3.06      1.25      2.92     2.92     3/4
+  THBS4          1.71      1.43      1.41      0.35     1.43     1/4
+  DCN            0.97      0.94      1.08      0.18     0.97     0/4
+  BGN            1.51      0.97      1.03      0.16     1.03     1/4
+  FMOD           1.81      1.16      1.05      0.86     1.16     1/4
+  LUM            1.43      1.09      1.09      0.17     1.09     0/4
+  LTBP1          0.95      1.35      1.84      0.24     1.35     1/4
+  LTBP3          1.04      0.88      1.39      0.18     1.04     0/4
+  BAMBI          1.07      1.34      1.39      0.21     1.34     0/4
+  FST            1.13      0.67      1.25      0.05     1.13     0/4
+  SMAD7          0.38      0.47      1.23      0.12     0.47     0/4
+
+------------------------------------------------------------------------
+WNT LIGANDS
+  gene         donor1    donor2    donor3    donor4   median   >1.5x
+  WNT3           1.47      0.61      2.11      0.25     1.47     1/4
+  WNT4           2.29      1.37      1.26      0.94     1.37     1/4
+  WNT5A          3.04      5.65      1.28      1.41     3.04     2/4
+  WNT5B          1.28      0.91      1.20      0.69     1.20     0/4
+  WNT11          1.55      2.65      1.17         -     1.55     2/4
+  WNT2B          0.38      0.56      1.13      0.14     0.56     0/4
+  WNT9A          0.65      0.38      0.98      0.28     0.65     0/4
+
+------------------------------------------------------------------------
+IDENTITY / CONTROLS
+  gene         donor1    donor2    donor3    donor4   median   >1.5x
+  CYTL1             -         -         -         -      nan     0/4
+  RAMP3          0.83      1.96      1.78      0.11     1.78     2/4
+  PTHLH          1.89     13.69      2.44         -     2.44     3/4
+  APOE           0.39      0.58      0.71      0.08     0.58     0/4
+  GAS1           0.15      0.30      0.53      0.04     0.30     0/4
+  PRRX1          0.24      0.42      1.17      0.12     0.42     0/4
+  GHR            1.05      0.98      1.47      0.13     1.05     0/4
+  IGF1R          0.81      0.71      1.21      0.23     0.81     0/4
+  COL10A1        0.48      0.51      1.00      0.25     0.51     0/4
+  MKI67          0.91      0.67      1.29      0.00     0.91     0/4
+
+========================================================================
+WHAT SURVIVES NORMALISATION - ranked
+========================================================================
+  SFRP5     median   8.27  >1.5x in 4/4 <-- beats the matrix program in 4/4
+  SFRP2     median   4.88  >1.5x in 1/4
+  WNT5A     median   3.04  >1.5x in 2/4
+  THBS3     median   2.92  >1.5x in 3/4 <-- 3/4
+  SOSTDC1   median   2.28  >1.5x in 2/4
+  DKK2      median   2.18  >1.5x in 3/4 <-- 3/4
+  NOTUM     median   1.95  >1.5x in 2/4
+  WNT11     median   1.55  >1.5x in 2/4
+  THBS2     median   1.54  >1.5x in 2/4
+  WNT3      median   1.47  >1.5x in 1/4
+  THBS4     median   1.43  >1.5x in 1/4
+  WNT4      median   1.37  >1.5x in 1/4
+  LTBP1     median   1.35  >1.5x in 1/4
+  BAMBI     median   1.34  >1.5x in 0/4
+  DKK1      median   1.30  >1.5x in 1/4
+  WNT5B     median   1.20  >1.5x in 0/4
+  THBS1     median   1.17  >1.5x in 0/4
+  FMOD      median   1.16  >1.5x in 1/4
+  FST       median   1.13  >1.5x in 0/4
+  GREM1     median   1.13  >1.5x in 1/4
+  SFRP1     median   1.12  >1.5x in 1/4
+  LUM       median   1.09  >1.5x in 0/4
+  LTBP3     median   1.04  >1.5x in 0/4
+  BGN       median   1.03  >1.5x in 1/4
+  KREMEN1   median   1.01  >1.5x in 0/4
+  DCN       median   0.97  >1.5x in 0/4
+  DKK3      median   0.94  >1.5x in 1/4
+  SOST      median   0.91  >1.5x in 0/4
+  WNT9A     median   0.65  >1.5x in 0/4
+  FRZB      median   0.57  >1.5x in 1/4
+  WNT2B     median   0.56  >1.5x in 0/4
+  SMAD7     median   0.47  >1.5x in 0/4
+  WIF1      median   0.42  >1.5x in 0/4
+  SFRP4     median   0.38  >1.5x in 0/4
+  APCDD1    median   0.29  >1.5x in 0/4
+
+========================================================================
+THE CONTROLS, WHICH ARE THE MOST IMPORTANT PART
+========================================================================
+  RAMP3   median   1.78  >1.5x in 2/4
+  PTHLH   median   2.44  >1.5x in 3/4
+  GAS1    median   0.30  >1.5x in 0/4
+  PRRX1   median   0.42  >1.5x in 0/4
+  APOE    median   0.58  >1.5x in 0/4
+  GHR     median   1.05  >1.5x in 0/4
+  IGF1R   median   0.81  >1.5x in 0/4
+
+RAMP3 is the GP2 marker and PTHLH is what GP1 is defined as NOT expressing. If either
+is enriched in CYTL1+ cells, the gate is contaminated with GP2 and no statement about
+GP1 specifically can be made from this table. GAS1 and PRRX1 are the two genes chu2026
+reports as GP1-specific; if they are NOT enriched here, the gate is failing to find the
+population it is aimed at, and the candidate list below must be read as 'antagonists of
+a CYTL1-positive matrix-rich chondrocyte', which is a weaker and different claim.

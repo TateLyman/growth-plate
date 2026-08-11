@@ -1,4 +1,8 @@
-# ASK LIST — the root-cell programme (rounds 240–242)
+# ASK LIST — the root-cell programme (rounds 240–244)
+
+> **STATUS 2026-08-11, after the supply drop.** Items 1, 3 and 4 below were supplied and are
+> now held and mined (rounds 243–244). Item 2 was hunted and is genuinely closed everywhere.
+> **One new ask replaces them, and it is not a paper.** See the section at the bottom.
 
 **Every item below was checked against `holdings.py --have` and against the bibliography before it was
 written here.** That check is mandatory and it is why this list is short: the previous version of this list
@@ -88,3 +92,49 @@ Two further gaps of the same kind, both recorded in the graph rather than here:
 
 *Last verified 2026-08-11, rounds 240–242. Re-run `holdings.py --have <id>` before acting on any line above —
 availability is a timestamped claim, not a standing fact (CORR-250).*
+
+
+---
+
+## NEW AND ONLY OUTSTANDING ASK — and it is an email, not a document
+
+### The gene list behind chu2026 Fig. 3R — the nine soluble WNT inhibitors, by name
+
+**Nobody has published it.** The main text gives the count (four ligands, nine soluble inhibitors of the
+174 in KEGG:04310) and the figure is a heatmap without a legible row list. The supplement supplied on
+2026-08-11 contains the mouse DEG table, the source data, the regulon tables and the ligand-receptor map —
+but **not** the human GP1-versus-GP2 differential expression list.
+
+**I tried to recover it from the deposited data and failed, informatively.** Round 244: marker-gating
+GSE288028 on CYTL1 returns a population that is PTHLH-*enriched* and GAS1-*depleted* — the opposite of GP1
+on both of its defining criteria — and normalising to aggrecan dissolves the entire thrombospondin panel
+that the raw contrast appeared to confirm. The gate does not recover the root cluster, so the nine cannot
+be named this way.
+
+**What would work, cheapest first:**
+
+1. **Email the corresponding author** (Andrei S. Chagin, Institute of Medicine, Sahlgrenska Academy,
+   University of Gothenburg) asking for the gene list behind Fig. 3R and, if they will share it, the
+   human GP1-vs-GP2 DEG table equivalent to the mouse one in data file S1. One email, no analysis, and it
+   is the single highest-value item left in this programme.
+2. Run their published pipeline against GSE288028 — the code repository and a Zenodo archive are both named
+   in the paper's data availability statement. This reproduces their clusters rather than approximating
+   them. Feasible here, but a substantial job.
+3. Accept the pathway-level statement and stop. Defensible, and it leaves the claim undruggable.
+
+### Also unobtained, and now known to be genuinely closed
+
+**hu2025, PMID 39638193** (PRRX1/miR-143-3p). Confirmed closed at OpenAlex (`any_repository_has_fulltext:
+false`), Unpaywall (`oa_status: closed`), Semantic Scholar (`CLOSED`) and CORE; no preprint, no GEO or SRA
+deposit. **It is no longer blocking**: pulling the complete PubMed abstract (CORR-253) recovered the whole
+mechanism — PRRX1 drives miR-143-3p by ATAC, CUT-and-Tag and dual luciferase; the microRNA targets IGF1R,
+TGFB1 and BMP2; EV transfer inhibits reserve mesenchymal cells and osteosarcoma in vivo. Only effect sizes
+and replicate counts are still missing, and `hu2024` carries the functional claim in full and open access.
+
+### Supplied 2026-08-11 and now held — do not send again
+
+| Document | Where it went |
+|---|---|
+| Qin et al. 2023, *Science*, PMID 36821675 | `qin2023`. The physiological activation sequence — WNT suppressors down, TGFB1 up — is round 243's central result. |
+| chu2026 data files S1–S7 | Mouse DEG table (round 243's test that broke THBS1), regulon tables, figure source data (the Prrx1 clonal kinetics), the ligand-receptor map (SFRP1 → FZD2). |
+| PeerJ antler proteomics, PMID 42534826 | `xi2026`. Confirms PRRX1 and LUM at protein level in reserve mesenchyme; does **not** address thrombospondins, decorin or SFRPs, so the protein-level check remains open. |
