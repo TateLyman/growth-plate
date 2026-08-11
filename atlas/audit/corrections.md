@@ -9590,3 +9590,40 @@ This changes the atlas's default. Until now, an unreachable full text was record
 **The generalisable error is not the mechanism, it is the phrase "nobody has looked."** That is a claim about the literature, and CORR-267 already established that a search result is a claim about the query. `hirota2022` was **in the bibliography and cited by an existing node** at the time round 262 asserted nobody had looked. **Before writing that nobody has tested X, check the papers this atlas already cites** — the negative was not merely findable, it was already held.
 
 **And the positive half of the same document.** `hirota2022` read in full **survives** and is stronger zone-resolved than the summary it was held on: *"CNP increased the length of the growth plate, but coadministration of a PKA inhibitor, H89, inhibited the growth-promoting effect of CNP only in the hypertrophic zone"* — attenuation of CNP-induced PKA significant in the HZ, not significant in the non-HZ. The authors hedge to *"at least partially through PKA activation"*, so it is partial necessity. One oddity recorded and unresolved by the paper: **CNP and GC-B are predominantly expressed in proliferative/prehypertrophic chondrocytes while the PKA effect lands predominantly in hypertrophic ones.**
+
+---
+
+## CORR-272 — round 264's attack ranking opened with a false premise, and the refutation was in this graph in three places, in three layers
+
+**What round 264 wrote, as the first line of its ranking:** *"FIRST, DISCHARGE, NOT POOL... THE CHARGE-AND-DISCHARGE PAIR IS THE ONLY CONFIGURATION IN THIS FILE THAT ADDRESSES N, and it has never been run to a length endpoint in any species. That is the attack."*
+
+**It has been run to a length endpoint in three species.**
+
+| Source | Design | Length endpoint |
+|---|---|---|
+| `xiu2022` | Agc1-CreER, **Smo** deleted in juvenile growth plate chondrocytes from P14, μCT | femur **−21 % at P30, −30 % at P120**, plates prematurely fused |
+| `xiu2022` | same, **Sufu** deleted (hedgehog ON) | plate expanded and disorganised at P30, femur n.s.; **premature closure and significantly shorter femurs at P120** |
+| `kimura2008` | brief HhAntag, 10–14 d mice, pathway activity restored 2 d after removal | permanent defects; **fusion occurred after drug removal** |
+| `koyama2021` | LDE225 2 d, juvenile mice | premature growth plate closure |
+| rat ex vivo metatarsal, 2020 | vismodegib 100 nM and GANT61 10 µM | both impair elongation; reduced resting-proliferative zone height |
+| `robinson2017a`, `pereira2021` | vismodegib / sonidegib in children | irreversible widespread physeal fusion; **4 of 4** skeletally immature patients with complete growth arrest |
+
+**`kimura2008`, `koyama2021` and `robinson2017a` were all already in this bibliography when round 264 was written.** `xiu2022` was already in the graph too — as edges e00093 and e00094, filed as an L3 fact about Sufu and Gli2 with the note *"Hedgehog output must be held within a band."* Nobody read the paper it came from, which is a conditional-knockout study with μCT femur lengths at two ages.
+
+**The generalisable failure is new and it is not CORR-254 exactly.** CORR-254 said: search the graph before proposing. I did search the graph. **The refutation was in a different LAYER, attached to a different NODE TYPE, and phrased in the vocabulary of signalling rather than of length** — an L3 protein-interaction edge whose underlying paper carried the L2 answer. Keyword search over node text finds `resting zone` and `column`; it does not find a femur measurement hiding behind `sufu_protein → gli2_tf | inhibits`. **When a question is about length, the search must run over the REFERENCES the graph cites, not only over the graph's own prose** — because this atlas routinely records one finding from a paper and drops the rest.
+
+## CORR-273 — round 251 recorded its own refutation as a caveat
+
+Round 251 proposed load → withdraw → reload as a charge-and-discharge protocol, and recorded: *"the cost of the withdrawal arm is already on record and must be carried: kimura2008 shows that TRANSIENT inhibition of hedgehog in YOUNG mice causes PERMANENT defects in bone structure. A load-release protocol is not two safe halves."*
+
+**Read directly, `kimura2008` is not a cost attached to the protocol. It is the protocol, already run.** Brief HhAntag in 10–14-day-old mice; *"pathway activity was restored 2 days after drug removal"* — that is the reload, and it happened spontaneously. And then: *"After drug removal, osteoblasts invaded the cartilage plate, mineralization occurred, and there was premature fusion of the growth plate."*
+
+**The reload step is not a risk to be managed around. It is the fusion mechanism.** Withdrawal removes the hedgehog-dependent brake on maturation; restoring signalling into the emptied plate is when the bone closes it. Round 251 read that sentence and filed it under risk, because the round was looking for a discharge signal and found one, and the paper that said the discharge is terminal was three lines below.
+
+**Rule:** when a source is cited in a node as *the cost* or *the caveat* of a proposal, that is exactly the source that must be read in full before the proposal is graded — it is the only citation in the node already known to point the other way.
+
+## CORR-274 — `resting_zone_niche` recorded a sentence without the clause that determines its meaning
+
+The entry said both Smoothened agonism and antagonism reduce the number of columns formed from labelled resting cells. Faithful, and incomplete. `mizuhashi2018`'s preceding clause: both regimens *"predominantly affected chondrocytes in the proliferating zone, without directly affecting PTHrP-creER-P6 cells in the resting zone."* The arithmetic agrees — at P17 control vs SAG is 67.8 columns and control vs LDE225 is 66.0, while **SAG vs LDE225 is −1.85 with an interval straddling zero.** Two ways of breaking the same downstream structure, not an optimum in resting-cell behaviour. The node text is amended in place.
+
+Recorded honestly: the qualifier is itself soft. *"Not directly affecting"* rests on Extended Data Fig 8a–8c, which the legend describes as images with no quantification of resting-zone cell number — so the absence of resting-cell depletion under an antagonist is equally unquantified, and the P28 SAG arm is n = 2 with no comparison reported.
