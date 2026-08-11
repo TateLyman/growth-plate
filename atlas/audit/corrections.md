@@ -9727,3 +9727,28 @@ It is free, it is behavioural, and it has a body-length endpoint. It is also **r
 Two further limits recorded rather than smoothed: the rat arm **confounds GH amount with GH pattern**, since meal-feeding tripled total secretion as well as re-timing it; and **the human arm has no growth endpoint at all** — it measured ghrelin and GH rhythmicity only, and went the *other* way on total GH, the better-patterned arm having *less*.
 
 **Pattern of my own error worth naming:** three times this session a striking result has arrived attached to a deficit model — `koyama2021`, the senolytic literature, and now this — and in each case the interesting question is whether it *elevates* a normal system, which none of them tested. **A result obtained in a deficient animal is a claim about the deficit until someone runs it in a normal one.**
+
+---
+
+## CORR-283 — the same claim, wrong three times, and the full texts settle it in the simplest direction
+
+| round | what I said about GPER-1 | status |
+|---|---|---|
+| 269 | the local **accelerator**, opposing ERα | **wrong** |
+| 270 | **unresolved**, on the two abstracts | **too weak** |
+| 272 | a **brake transducer** with an additional, largely systemic, baseline role | settled on both full texts |
+
+**`windahl2009` read in full.** Ovariectomised wild-type and GPR30-null mice, oestradiol at five doses. E2 **decreased femur length in wild-type and not in GPR30-null**, and reduced total plate height, proliferative zone, hypertrophic zone **and terminal hypertrophic chondrocyte height** in wild-type and in *none* of them in the nulls. Meanwhile total body BMD, spine BMD, trabecular BMD, cortical thickness, uterine weight, thymic atrophy, fat mass and marrow cellularity all responded **normally** in the nulls at every dose. **GPR30 transduces oestrogen's suppression of the growth plate and essentially nothing else oestrogen does.** That is about as selective as an in vivo receptor result gets.
+
+**`mrtensson2009` read in full** explains why it looked like an accelerator. Female GPR30-null mice lost 9.6 % of body weight by 19 weeks with **both crown-rump and femur reduced proportionally**, organ-to-body ratios unaffected, alongside **reduced serum IGF-I**, hyperglycaemia, impaired glucose tolerance and raised blood pressure — and **males were skeletally normal**. That is a systemic growth defect, not a cartilage one. The genuine cartilage-autonomous baseline role rests on `chou2021`'s Col2a1-Cre knockout and on the vehicle-treated nulls having reduced plate height with only a non-significant femur trend.
+
+**Two things this adds beyond the correction.**
+
+1. **Oestrogen gets a receptor assignment on `h_term`.** Terminal hypertrophic chondrocyte height is ~10 % of yield by the kember/lui/nilsson decomposition, round 264 counted it among the worst-covered terms, and this atlas held **no** receptor for oestrogen's action on it. `windahl2009` measured it directly.
+2. **There is no local oestrogen accelerator at all.** Adding `chagin2004` — ERβ **inhibits appendicular *and* axial** growth and can induce fusion — makes it three receptors, three brakes. And ERβ reaches the axial skeleton that CORR-279 showed the cartilage-ERα effect misses.
+
+**And the stage fact that matters most for this case.** `chagin2007a` took tibial growth-plate biopsies from **14 boys and 7 girls at epiphysiodesis** — done for leg-length inequality or **extreme tall stature** — and found GPR30 highest in hypertrophic chondrocytes and **declining as puberty progresses**; `heino2008` found the same in human osteocytes (R = −0.56). ERα and ERβ do **not** decline. **The receptor a selective agent cannot cover is the one already leaving by bone age 16.**
+
+**What this does to round 269's proposal.** The receptor-selectivity half — "spare GPER-1 because it is pro-growth" — is **withdrawn**; sparing a brake preserves a brake. The **locality** half is untouched and is now the whole of it: a systemic aromatase inhibitor removes the ligand for all three receptors *and* oestrogen's systemic GH/IGF-1 amplification, whereas blockade restricted to the plate would remove the brake and keep the arm. Still graded **E** — no such agent exists, and nobody has given a receptor-selective oestrogen antagonist to a normal growing animal with a bone length endpoint.
+
+**The process lesson, and it is the third time this session.** CORR-278 said: sweep the reference list of a paper you are waiting for. This round the *supplied* paper's reference list produced two more primaries (`chagin2004`, `chagin2007a`) that changed the picture again. **A supplied full text is not the end of a thread — its bibliography is the next segment of it**, and in this case the human expression data that makes the whole argument stage-dependent was sitting in reference 3.

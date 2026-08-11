@@ -130,6 +130,12 @@ SOCS2 elevated in CKD growth retardation, impairing growth-plate GHR–JAK2/STAT
 
 **Opened, and both are low priority because the abstracts may be enough:**
 
+### ~~`windahl2009`~~ — **SUPPLIED AND CLOSED, round 272.** PMID 19088255. Read in full: E2 decreased femur length in WT and not in GPR30-null, and reduced plate height, PZ, HZ **and terminal hypertrophic cell height** in WT only, while eight other oestrogenic responses were intact across five doses. GPR30 is a **brake transducer**, not an accelerator.
+
+### ~~`mrtensson2009`~~ — **SUPPLIED AND CLOSED, round 272.** PMID 18845638. The baseline deficit is proportional, female-only, with reduced serum IGF-I and a full metabolic syndrome — systemic, not cartilage.
+
+### (original entries retained below)
+
 ### `windahl2009` — PMID 19088255, Am J Physiol Endocrinol Metab, **OA: N**
 *The role of the G protein-coupled receptor GPR30 in the effects of estrogen in ovariectomized mice.* This is the paper that **reversed** round 269's GPER-1 claim: oestradiol reduced femur length and growth plate height in wild-type but not GPR30-null mice. From the abstract I have the direction and the five doses. I would want the **magnitude of the femur-length difference** and whether growth plate **zone** heights were resolved — but the direction is what mattered and it is already unambiguous.
 
@@ -137,3 +143,25 @@ SOCS2 elevated in CKD growth retardation, impairing growth-plate GHR–JAK2/STAT
 *Deletion of GPR30 impairs glucose tolerance, reduces bone growth...* I need only to know **how much** of the body-growth deficit tracks the reduced serum IGF-1, since that decides whether the smaller GPR30-null mouse is a cartilage result at all. Lower priority than the above.
 
 **Neither is worth interrupting you for.** The GPER-1 sign is recorded as unresolved and the ERα line does not depend on it.
+
+---
+
+# ADDENDUM, round 272 — three new asks, all from the supplied papers' reference lists
+
+Both GPR30 papers are closed. Their bibliographies opened three more, and the first is the one that makes the argument stage-dependent.
+
+### 1. `chagin2007a` — PMID 17878253, J Clin Endocrinol Metab 92:4873–4877, **OA: N**
+*GPR30 estrogen receptor expression in the growth plate declines as puberty progresses.*
+
+**Human growth plate tissue, and from exactly our population.** Tibial growth plate biopsies from **14 boys and 7 girls at epiphysiodesis**, performed for leg-length inequality or **extreme tall stature**, across pubertal stages. From the abstract I have only the direction. I need:
+- the **quantification of the decline** and its statistics — how much is left at Tanner 4–5, which is the subject's stage
+- the **zonal detail** (abstract says highest in hypertrophic chondrocytes; the resting-zone signal is mentioned in `windahl2009`'s citation of it but not quantified in the abstract)
+- whether **ERα and ERβ were measured in the same sections** — `windahl2009` says they do not decline, citing other papers, and a within-section comparison would be much stronger
+
+### 2. `chagin2004` — PMID 14753739, J Bone Miner Res 19:72–77, **OA: N**
+*Estrogen receptor-beta inhibits skeletal growth and has the capacity to mediate growth plate fusion in female mice.*
+
+**The only brake in this set that reaches the AXIAL skeleton** — which is the half of standing height that CORR-279 showed the cartilage-ERα lever misses. I need the **magnitudes** for appendicular versus axial growth in ERβ-null females, the ages, and whether any male data exist at all (`windahl2009` states ERβ modulates growth in female but not male mice, which if true removes this for a male subject).
+
+### 3. `heino2008` — PMID 18434348, J Endocrinol 197:R1–R6, **OA: N**
+Lower priority. GPR30 in human bone cells declining through puberty (osteocytes R = −0.56). The growth-plate paper above matters more.
