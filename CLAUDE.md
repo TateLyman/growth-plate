@@ -27,7 +27,7 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 
 ## DEAD — closed with reasons. Reopening requires new primary data, not a new argument.
 
-- **Hedgehog, both directions.** Withdrawal → fusion in mouse (xiu2022 −21/−30% femur), rat, and **human** (robinson2017a, pereira2021). Sustained gain → premature closure. The load-and-release protocol *is* kimura2008's experiment and the reload is the fusion mechanism. — R268
+- **Hedgehog WITHDRAWAL only** — → fusion in mouse (xiu2022 Smo −21/−30% femur), rat, and **human** (robinson2017a grade A, pereira2021). The load-and-release protocol *is* kimura2008's experiment and the reload is the fusion mechanism. — R268. **⚠ The GAIN direction is REOPENED (R285/CORR-300) — see LIVE FRONTIER. Do not cite R268 as closing hedgehog.**
 - **SERMs / tamoxifen.** Permanent growth arrest by apoptosis of **resting-zone** chondrocytes, no catch-up. — R274 (chagin2007)
 - **ERβ axial lever.** Female mice only. — R274 (chagin2004)
 - **Senolytics.** Growth-plate senescence is not p16/SASP; nothing to clear. — R266
@@ -60,6 +60,14 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    GP1/GP2 direction **cannot** currently be resolved — SFRP5/PTHLH/NT5E say one way, GAS1 (+3.06, padj 2e-10)
    and the 1039:441 global skew say the other. Four rounds (241, 244, 245, 246) are built on this dataset.
    **Do not assign a GP1/GP2 compartment until this is settled.**
+8. **Discounting a human genetic result because the allele is "germline from conception."** CORR-299 — I did
+   this in R281, R282 AND R283 before checking it. **Refuted by our own lead agent:** FGFR3 is germline,
+   prenatal and whole-organism, yet dabogratinib in **WILD-TYPE mice from 4→8 wk** gives **femur +8.2%**;
+   vosoritide/infigratinib work postnatally in children. **The valid question is: is the gene still doing work
+   in an OPEN plate?** Test class = tissue-restricted or postnatally-induced perturbation with a **length**
+   endpoint. It is a fact to look up, not an inference to make.
+9. **Writing "most replicated" without searching the gene's OWN knockout literature.** CORR-301 — LCORL.
+   A convergent-evolution argument across 8 species is about *selection*, not mechanism.
 
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
@@ -197,10 +205,13 @@ adult height a mean 8.92 cm/allele — ~52× the average common variant.** Our w
 |---|---|---|---|---|
 | **FBN1** | **+11.14** | 40 | ECM/TGF-β | Marfan (aorta) — not usable |
 | **CHD8** | **+10.22** | 21 | chromatin, Wnt | ASD + ID + macrocephaly — not usable |
-| **LCORL** | **+9.99** | 71 | TF | **none.** Most cross-species-replicated taller-gene there is (8 domesticated species + mouse +3.0% body length). No drug. |
+| **LCORL** | **+9.99** | 71 | TF | ⚠ **DOWNGRADED R285/CORR-301.** `wyler2024` Lcorl-null mice are born **smaller** with **reduced circulating IGF-1** and a **hepatic** GH-signalling mechanism — opposite to `bai2025`. Not plate-enriched (R283). Fails the open-plate test. |
 | **TET1** | **+8.32** | 42 | **enzyme** | **none.** See R276 reopening below. |
 | **ZFAT** | **+7.86** | 41 | TF | thyroid autoimmunity, no stature. Was **top of the atlas's own Open Targets ranking** and never worked. |
 | **NRK** | **+3.79** | 56 | **kinase** | **none.** ← the lead |
+
+**Open-plate test (CORR-299), run R285:** HHIP **PASSES** · LCORL **FAILS** (hepatic) · **TET1, ZFAT, NRK, CHD8,
+FBN1 UNTESTED** — no tissue-restricted and no inducible perturbation with a length endpoint in any species.
 
 Down: ACAN −16.55, ANKRD11 −11.16, COL1A1 −10.36, EXT1 −8.70, IGF2BP2 −8.68, ADAMTS6 −8.40, ADAMTS10 −8.24,
 IGF1R −8.23, DTL −7.34, SCUBE3 −7.18, NF1 −5.55.
@@ -225,6 +236,27 @@ IGF1R −8.23, DTL −7.34, SCUBE3 −7.18, NF1 −5.55.
 
 ## LIVE FRONTIER — the only things worth a round
 
+- **THE HEDGEHOG GAIN DIRECTION IS REOPENED (R285) — and it is now the best-evidenced pool lever in the file.**
+  `haraguchi2025`: **Hhip1-flox × Prx1-Cre (limb-restricted)** → **femur significantly LONGER at 10 wk AND 53 wk,
+  with NO body-weight difference at either age** (authors state this excludes generalised somatic overgrowth).
+  Epiphyseal cartilage height ↑ with **both PZ and HZ widened but ORDERED**; Gli1 ↑ in chondrocytes + primary
+  spongiosa; Hhip1 mRNA sits in **resting-zone chondrocytes**, periosteum, primary spongiosa. Both directions
+  done: Hhip1 **over**expression shrinks the undifferentiated zone; Ptch1-null → excessive bone elongation.
+  Human (`kosmicki2026`): **HHIP pLoF +9.92 cm, HHIP gain-of-function missense −3.96 cm.**
+  ✗ Limits: Prx1-Cre is **embryonic-onset** (phenotype is progressive, which is why it bears on a postnatal
+  question); femur only; effect sizes figure-only; **no HHIP pharmacology exists in any species**; and the
+  opposite direction of this axis carries a **grade-A human harm** (irreversible physeal fusion).
+  **Missing experiment: tamoxifen-inducible Hhip1 deletion in a juvenile, read out for length at maturity —
+  the floxed allele now exists.**
+- **CORR-300 — THE RULE THAT RE-RANKS EVERY TARGET, now on its 3rd axis.** *Removing a **secreted/extracellular
+  modulator** ≠ disabling an **intracellular brake** ≠ **flooding with an agonist**.* The first shifts a setpoint
+  inside a feedback-regulated envelope and **adds length**; the other two saturate the pathway, destroy zonal
+  order and **subtract** it.
+  · **Hh**: HHIP loss (secreted) → longer, zones ordered · **SUFU** loss (intracellular) → shorter, zones destroyed
+  · **Wnt**: SPIN4 (mild ↓ output) → longer + bigger pool · **PORCN** (total ligand blockade) → HZ↑ PZ↓ **fusion**
+  · **FGFR3**: isoform-selective → +8.2% WT femur · pan-FGFR → FGFR1/2/4 liabilities
+  **→ PREFER secreted antagonists, decoys and clearance receptors over intracellular components.** This is an
+  independent argument for the **NPR3 clearance blocker** the atlas already derives, and for osteocrin.
 - **The canonical-Wnt window (R281) — the top frontier item.** The band has an **interior optimum BELOW wild
   type**, which is the first time in this file an interior point *beats* WT rather than merely differing.
   `lui2023` mild chronic ↓ canonical Wnt → **longer bone + bigger resting pool**; `chen2008` Col2a1-ICAT
