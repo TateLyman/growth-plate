@@ -9752,3 +9752,25 @@ Two further limits recorded rather than smoothed: the rat arm **confounds GH amo
 **What this does to round 269's proposal.** The receptor-selectivity half — "spare GPER-1 because it is pro-growth" — is **withdrawn**; sparing a brake preserves a brake. The **locality** half is untouched and is now the whole of it: a systemic aromatase inhibitor removes the ligand for all three receptors *and* oestrogen's systemic GH/IGF-1 amplification, whereas blockade restricted to the plate would remove the brake and keep the arm. Still graded **E** — no such agent exists, and nobody has given a receptor-selective oestrogen antagonist to a normal growing animal with a bone length endpoint.
 
 **The process lesson, and it is the third time this session.** CORR-278 said: sweep the reference list of a paper you are waiting for. This round the *supplied* paper's reference list produced two more primaries (`chagin2004`, `chagin2007a`) that changed the picture again. **A supplied full text is not the end of a thread — its bibliography is the next segment of it**, and in this case the human expression data that makes the whole argument stage-dependent was sitting in reference 3.
+
+---
+
+## CORR-284 — "essentially free" was an assumption about a literature I had not searched. Round 264's second-ranked attack fails the same way its first did.
+
+Round 264 wrote: *"SECOND, THE PER-SITE DENOMINATOR... It is RETROSPECTIVE and essentially free — the images exist in paediatric orthopaedic cohorts and the studies reported the spine only."*
+
+**The images do not exist in a usable form, and the reason is structural.** `hori2025` is the best dataset in the field — 517 patients with idiopathic scoliosis, longitudinal T1-S1 spine height and total body height, curve-corrected by validated formulae, multivariate-adjusted, 314 followed to skeletal maturity, rater kappa 0.85/0.79. **It defines skeletal maturity at 15.4 ± 1.6 years in girls and 16.6 ± 1.5 years in boys.** Its cohort spans Sanders stages 2–4 at mean ages 11.3–12.9, Risser 0 in 100 % at SMS 2 and still 40 % at SMS 4, with only 5 % reaching Risser 4.
+
+**The subject is past the last observation of the best dataset in the field.**
+
+That is not one paper's choice. This literature exists to time **anterior vertebral body tethering**, a growth-modulation operation offered only to patients with substantial growth remaining. The cohorts are selected to stop where growth stops being surgically interesting — which is exactly the regime this case occupies.
+
+**Round 264's first line was refuted by round 268 and its second by this round, and both failures are the same kind:** asserting what the literature does or does not contain without running the query. CORR-267 already established that a search result is a claim about the query; this adds that **an assertion about how cheap an experiment would be is also a claim about the literature, and needs the same check.** Round 264's structural audit — the term-coverage counts, the 32 unassigned interventions, the 253 X-graded claims — is computed, reproducible and untouched. What failed both times was the ranking built on top of it.
+
+**What the round did establish, and it is worth having:**
+
+1. **Spine growth peaks later than total body growth.** Spine height growth is highest at SMS 3A — 1.4× SMS 2, 1.5× 3B, 1.8× 4 — while total body growth is already maximal at SMS 2 and comparable at 3A. Two peaks, different places. **So the trunk's share of whatever remains rises as maturity advances.**
+2. **T1-S1 is about 25 % of standing height** (40.3 ± 2.6 cm against 162.3 ± 9.2 cm at SMS 4). That is the conversion factor this file has been missing every time it moved between a spine result and a height result. T1-S1 is *not* the trunk — it excludes cervical spine, skull and everything below S1.
+3. **And that runs against the best-characterised lever here.** CORR-279 established `brjesson2010`'s cartilage-ERα effect as appendicular only. The compartment gaining share at bone age 16 is the one that lever does not reach. The only brake in the set that reaches the axial skeleton is **ERβ** (`chagin2004`) — which this atlas holds as an abstract, and which `windahl2009` says modulates growth in female but not male mice.
+
+**Which cohort would actually close it:** subjects first assessed at bone age 15–17 and followed to final height with sitting *and* standing height — a tall-stature or epiphysiodesis population, not a scoliosis one. `aeppli2025` studied bilateral epiphysiodesis in extremely tall adolescents and `chagin2007a` took growth-plate biopsies at that same operation. **Neither has been mined for a per-site residual.**
