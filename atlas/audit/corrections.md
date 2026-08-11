@@ -9774,3 +9774,49 @@ That is not one paper's choice. This literature exists to time **anterior verteb
 3. **And that runs against the best-characterised lever here.** CORR-279 established `brjesson2010`'s cartilage-ERα effect as appendicular only. The compartment gaining share at bone age 16 is the one that lever does not reach. The only brake in the set that reaches the axial skeleton is **ERβ** (`chagin2004`) — which this atlas holds as an abstract, and which `windahl2009` says modulates growth in female but not male mice.
 
 **Which cohort would actually close it:** subjects first assessed at bone age 15–17 and followed to final height with sitting *and* standing height — a tall-stature or epiphysiodesis population, not a scoliosis one. `aeppli2025` studied bilateral epiphysiodesis in extremely tall adolescents and `chagin2007a` took growth-plate biopsies at that same operation. **Neither has been mined for a per-site residual.**
+
+---
+
+## CORR-285 — round 254 ranked letrozole above anastrozole on numbers that were never compared head to head. The randomised trial finds no difference.
+
+Round 254's ROI table put **letrozole at 4.2 cm and anastrozole at 0.8 cm** on attained height. Those came from **separate, non-randomised sources with different populations, durations and endpoints**, and the table presented them as if they were a comparison.
+
+`zegarra2024` is the only randomised head-to-head that exists, and the paper says so explicitly. 79 pubertal boys, bone age ≤14, randomised to **anastrozole 1.0 mg (n = 35)** or **letrozole 2.5 mg (n = 30)** daily for up to three years, **predicted adult height as the prespecified primary endpoint**, bone ages reread by a single blinded endocrinologist, spine films and DXA at baseline and two years.
+
+**Letrozole gave lower oestradiol, lower IGF-1, higher testosterone, slower growth velocity and slower bone-age advance — and no difference in predicted adult height.** The year-1 PAH gain seen in both arms **did not persist** at years 2 and 3. Pooled, the three-year gain was **+1.3 cm (P = 0.043)**.
+
+**The same trial prices the dose-escalation question without anyone having run it.** Letrozole 2.5 mg drove oestradiol *below* anastrozole 1 mg — which is exactly what doubling anastrozole aims at — and bought no additional height. **The axis saturates for height before it saturates for oestradiol.** That does not prove anastrozole 2 mg is useless, since nobody has given it; it removes the mechanism by which it was expected to help.
+
+**Limits recorded, because they cut both ways:** open-label; the endpoint is *predicted* adult height, computed from bone age, while the arms differed in bone-age advance — so exposure and outcome measure are coupled; both arms under-recruited against an 80 %-power target of 40 per arm, so a null between groups is **not** an equivalence demonstration; the population is bone age ≤14 with normal IGF-1 and normal velocity at entry, **younger and less mature than this case**; and it is monotherapy, not AI-plus-GH.
+
+**The generalisable error:** two numbers from two studies placed in adjacent rows of a table become a comparison in the reader's head, including mine. **A ranking table must state whether its rows were ever compared within one experiment**, and round 254's did not.
+
+## CORR-286 — the agent class that would implement the lever I spent three rounds building kills the pool
+
+Rounds 269, 270 and 272 converged on blocking oestrogen **at the plate** rather than removing its ligand systemically — graded E throughout, with no named agent. The obvious class is the SERM.
+
+`chagin2007` tested tamoxifen in cultured fetal rat metatarsals and the human chondrocytic line HCS-2/8: **dose-dependent growth retardation**, **no catch-up growth after washout**, and apoptosis of chondrocytes **in the resting and hypertrophic zones** — caspase-dependent, completely abolished by caspase-8 or caspase-9 inhibitors, running through **FasL/Fas** with caspase-8 activated first.
+
+**The resting zone is N**, the term round 247 identifies as binding at bone age 16. A drug that irreversibly kills resting-zone chondrocytes spends exactly what the programme exists to preserve. And the paper's own framing is the tell: **SERMs were being explored as an alternative to high-dose oestrogen for *limiting* growth in tall girls.** Tamoxifen is a height-reducing agent that works.
+
+**The axial half fails too.** Round 273 hoped ERβ was the brake reaching the axial skeleton that cartilage ERα misses. `chagin2004` read in full is **female mice only** — female ERβ-null, ERα-null and double-null — with no male data, and `windahl2009` records ERβ as modulating growth in female but not male mice.
+
+**What is not excluded, stated so the closure is not overstated:** tamoxifen's apoptosis runs through FasL/Fas rather than through receptor antagonism as such, and raloxifene and bazedoxifene have not been tested in this preparation. A class effect across SERMs is **assumed here, not demonstrated.**
+
+## CORR-287 — I declared a question unanswerable and the answer was in the paper I had just named
+
+Round 273 concluded the per-site remaining-growth denominator "cannot be obtained from the existing literature", and in the same node named `aeppli2025` as *"the cohort that could actually close this... neither has been mined for a per-site residual."* **I named it and did not read it.** It closes the question.
+
+`aeppli2025` measured height **and sitting height** with a Harpenden stadiometer to **final height** in 27 boys undergoing bilateral knee epiphysiodesis at **bone age 13.6** with 20 cm predicted remaining:
+
+| segment | cm | share |
+|---|---|---|
+| knees (distal femur + proximal tibia, removed by surgery) | **8.6 ± 0.9** | ~43 % |
+| trunk (sitting height gain after surgery) | **8.6 ± 0.8** | ~43 % |
+| residual leg (hip, ankle, foot, incomplete ablation) | **2.3 ± 0.8** | ~11 % |
+
+And the age dependence: r = −0.63 (P < 0.001). **The two boys operated latest, at bone ages 14.2 and 14.5, gained only 0.3 and 0.4 cm from the operation while their trunks grew 9.0 and 6.5 cm and their legs 0.9 and 1.5 cm.** By roughly bone age 14.5 in this population the knee physes are worth approximately nothing and almost all residual height is trunk — which agrees with `hori2025`'s spine-peaks-later shape by a completely different method.
+
+**The population caveat runs the helpful way for once:** a relative sitting height *below* the mean was an **inclusion criterion**, so this cohort was selected for relatively long legs — biasing the residual toward the leg at entry, and therefore strengthening rather than weakening the conclusion that the trunk dominates late.
+
+**Rule, and this is the fourth instance this session of the same shape:** CORR-272 said search the references the graph cites; CORR-278 said sweep the reference list of a paper you are waiting for; CORR-283 said a supplied full text's bibliography is the next segment of the thread. This adds the sharpest version: **when a node names a specific document as the thing that would settle a question, that document must be read before the node is committed** — otherwise the node ships a conclusion its own text already contradicts.
