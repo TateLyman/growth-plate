@@ -93,7 +93,9 @@ Held in the atlas and cited by `is_the_cnp_arm_redundant_with_fgfr3_blockade`, b
 
 Standing rule: a paywall is never a reason to drop a source. These are outstanding, in priority order.
 
-### 1. `brjesson2010` — PMID 20564247, Endocrinology 2010, **not open access, no PMC**
+### 1. ~~`brjesson2010`~~ — **SUPPLIED AND CLOSED, round 270.** PMID 20564247, and it is *J Bone Miner Res* 25:2690–2700, not Endocrinology — my journal attribution was wrong. Read in full; Figure 5A digitised (`atlas/tools/round270_borjesson2010_fig5A.py`): femur **+3.17 % at 12 months**, growth increment **2.93× control** between 4 and 12 months, n = 9–12. Crown-rump **+2.1 % ± 1.7, n.s.** — appendicular only. Serum IGF-1, sex steroids, BMD and cortical dimensions all unchanged. It also **reversed** round 269's GPER-1 claim via its own reference list (CORR-278).
+
+### 1b. `brjesson2010` — original entry, retained for the record
 *The role of estrogen receptor α in growth plate cartilage for longitudinal bone growth.* Börjesson AE et al.
 
 **The single most useful document on this list.** Its abstract carries the load-bearing result of round 269 — cartilage-specific ERα-null mice **continued to grow after 4 months while controls stopped, giving increased femur length at 1 year** — and I hold nothing else. I need:
@@ -119,3 +121,19 @@ SOCS2 elevated in CKD growth retardation, impairing growth-plate GHR–JAK2/STAT
 ### AND ONE THING I DO NOT NEED FROM YOU — the 231
 
 `atlas/data/round269/length_endpoints_sweep.tsv` lists **231 references already in this bibliography that report a bone, limb or body length endpoint and from which no number has ever been extracted**, 83 of them reporting a gain. Most are open access. **That list is cheaper than any new search and should be worked through before the next external sweep.** No action needed from you.
+
+---
+
+# ADDENDUM, round 270 — what the supplied PDF closed, and the two it opened
+
+**Closed:** `brjesson2010`. Every question I listed against it is answered — magnitude, group sizes, sex, the high-dose E2 numbers, and whether the other oestrogen receptors were measured in the same animals (they were not, but the paper's reference list answered the question anyway).
+
+**Opened, and both are low priority because the abstracts may be enough:**
+
+### `windahl2009` — PMID 19088255, Am J Physiol Endocrinol Metab, **OA: N**
+*The role of the G protein-coupled receptor GPR30 in the effects of estrogen in ovariectomized mice.* This is the paper that **reversed** round 269's GPER-1 claim: oestradiol reduced femur length and growth plate height in wild-type but not GPR30-null mice. From the abstract I have the direction and the five doses. I would want the **magnitude of the femur-length difference** and whether growth plate **zone** heights were resolved — but the direction is what mattered and it is already unambiguous.
+
+### `mrtensson2009` — PMID 18845638, Endocrinology, **OA: N**
+*Deletion of GPR30 impairs glucose tolerance, reduces bone growth...* I need only to know **how much** of the body-growth deficit tracks the reduced serum IGF-1, since that decides whether the smaller GPR30-null mouse is a cartilage result at all. Lower priority than the above.
+
+**Neither is worth interrupting you for.** The GPER-1 sign is recorded as unresolved and the ERα line does not depend on it.

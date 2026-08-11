@@ -9668,3 +9668,38 @@ This atlas has treated oestrogen at the growth plate as a single fusion-driving 
 **A systemic aromatase inhibitor removes the ligand for all three at once.** That is a mechanistic account of the thing round 254 measured and could not explain: large bone-age delays, small attained-height yield — 0.8 cm for anastrozole, 4.2 cm for letrozole. **The class is fighting itself.**
 
 **The lever this implies is new here and is recorded as a proposal, not a recommendation:** ERα antagonism at the plate that spares GPER-1. Graded **E**. Nobody has deleted both receptors, nobody has given an ERα-selective antagonist to a normal growing animal with a length endpoint, the two knockouts come from different laboratories with different Cre drivers and different readout ages, and the mouse plate does not fuse. `brjesson2010` is not open access and only its abstract is held — it is on the ask list.
+
+---
+
+## CORR-278 — round 269 called GPER-1 the local accelerator opposite to ERα. Half of that is wrong, and the paper that says so was cited by the very document I was waiting for.
+
+**What round 269 recorded:** ERα = the local brake, GPER-1 = the local accelerator, *"two cartilage-restricted knockouts with length endpoints point opposite ways."* Graded C, with the caveat that the contrast was across studies rather than within one experiment. **The caveat was right and insufficient.**
+
+**What `windahl2009` reports** — from the same laboratory that made the ERα mouse, and cited in `brjesson2010`'s introduction: oestradiol reduced **femur length and distal femur growth plate height in wild-type mice but NOT in GPR30-null mice**, while every other oestrogenic response tested (total body BMD, spine BMD, trabecular BMD, cortical thickness, uterine weight, thymic atrophy, fat mass, marrow cellularity) was similar in both genotypes across five doses. **GPR30 is required for oestrogen's growth-suppressing effect.** That is a brake role, not an accelerator role.
+
+**And `mrtensson2009`** — the source of "GPR30-null mice are smaller" — is a **global** knockout whose females had reduced body growth **with reduced serum IGF-1**, alongside hyperglycaemia, impaired glucose tolerance, hypertension and abolished oestradiol-stimulated insulin release. The growth deficit in that animal is confounded by systemic metabolic disease and is not evidence of anything cartilage-autonomous.
+
+**Börjesson says it plainly, and I should have read it before writing round 269:** it is difficult to evaluate whether GPR30 is a functional oestrogen receptor in the growth plate at all, or whether the growth phenotype of the female nulls is secondary to their other phenotypes.
+
+`chou2021`'s Col2a1-Cre chondrocyte-specific GPER-1 knockout — shorter tibia, femur and crown-rump — remains the one **cell-autonomous** result on the other side. **Verdict: the sign of GPER-1 is UNRESOLVED. The sign of cartilage ERα is not.** The ERα half of round 269 is strengthened; the GPER half is withdrawn.
+
+**The process failure, which is the reusable part.** Round 269 built a two-receptor story out of two knockouts found in a keyword sweep, and did not read the introduction of the one paper it was simultaneously placing at the top of the ask list. **The literature review of the paper you are waiting for is available before the paper is** — abstracts of its cited works are free, and in this case one of them reversed a claim. When a document is important enough to ask a human for, its reference list should be swept while waiting.
+
+## CORR-279 — the gain is appendicular, and I wrote it as though it were height
+
+Round 269 presented cartilage ERα deletion as a lever on stature. `brjesson2010` read in full: in the same one-year-old animals whose femurs were significantly longer, **crown-rump length was +2.1 % ± 1.7, not significant.**
+
+Recorded honestly in both directions: that is an **underpowered null with a positive point estimate**, not a demonstrated zero. The correct reading is *any axial gain is smaller than the appendicular one* — not *there is none*.
+
+It still matters. **CORR-195 forbids collapsing this case to the spine. This is the same error in the opposite direction** — treating a femur result as a height result — and it must not be made either. Roughly half of standing height is trunk.
+
+## CORR-280 — the two arms of `brjesson2010` must not be merged, and merging them is the tempting mistake
+
+The paper contains two separate experiments and only one of them bears on a sixteen-year-old bone age.
+
+| | what it shows | does it transfer? |
+|---|---|---|
+| **The length gain** — femur +3.17 % at 12 mo, growth increment 2.93× control between 4 and 12 mo | cartilage ERα limits **post-maturational creep** | **No.** This is 4–12 months in a species whose plate never fuses (`mouse_does_not_fuse`). There is no human counterpart of an elderly mouse still slowly lengthening. |
+| **The high-dose E2 challenge** — 830 ng/mouse/day shrank the plate in controls, **not** in cartilage-specific nulls; via **proliferation**, apoptosis unaffected; in the **proliferative zone**; replicated in orchidectomised males | cartilage ERα is required to **transmit a high-oestradiol insult** | **In principle yes**, because high oestradiol in late puberty is what closes a human plate — but it is measured on **plate height, not bone length**, at a pharmacological dose. |
+
+Quoting the +3.17 % as evidence that blocking cartilage ERα would delay human fusion silently swaps one experiment for the other. The node grades that claim **E** for exactly this reason.
