@@ -22,6 +22,7 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 | Serum IGF-1 does not predict growth potential | R269, CORR-276 | Four genotypes, two in the wrong direction |
 | Anastrozole = letrozole on height; letrozole costs IGF-1 for nothing | R274 (zegarra2024, RCT) | Deeper E2 suppression does not buy height. Stay 1 mg. |
 | Aromatase inhibitor ceiling ≈ +1.3 cm over 3 years | R274 | |
+| AI's bone cost is an **efficacy** term, not a safety footnote | R278 | Lumbar BMD Z fell significantly in BOTH arms (−1.33→−1.54 ana, −1.37→−1.94 let); anterior vertebral wedging in 2 boys on films >4 yr out. The residual is vertebral — so this subtracts from the goal. **Measure it: baseline + repeat lateral T-L film and DXA, continued past 2 years.** Not a reason to stop. |
 
 ## DEAD — closed with reasons. Reopening requires new primary data, not a new argument.
 
