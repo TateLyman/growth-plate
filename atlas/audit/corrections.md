@@ -9820,3 +9820,46 @@ And the age dependence: r = −0.63 (P < 0.001). **The two boys operated latest,
 **The population caveat runs the helpful way for once:** a relative sitting height *below* the mean was an **inclusion criterion**, so this cohort was selected for relatively long legs — biasing the residual toward the leg at entry, and therefore strengthening rather than weakening the conclusion that the trunk dominates late.
 
 **Rule, and this is the fourth instance this session of the same shape:** CORR-272 said search the references the graph cites; CORR-278 said sweep the reference list of a paper you are waiting for; CORR-283 said a supplied full text's bibliography is the next segment of the thread. This adds the sharpest version: **when a node names a specific document as the thing that would settle a question, that document must be read before the node is committed** — otherwise the node ships a conclusion its own text already contradicts.
+
+## CORR-288 — I graded a human genetics claim from an age-pooled statistic and the mouse of the exact allele says no
+
+Round 280 committed the claim that **PRC2 loss "breaks the bone-age trade"** — supranormal *adult* height despite 100 % advanced bone age — and graded the atlas-wide claim "every lever trades velocity for bone age" as **X** on that basis. **That grade is withdrawn.**
+
+Three independent failures, all of which existed before round 280 was written:
+
+1. **The statistic could not support the word "adult."** "Height ≥ 2 SD above the mean in 59 of 65 individuals **aged 1 to 70**" pools children with adults. An age-pooled count cannot distinguish *tall adults* from *very tall children who regress to normal adult height*. I knew the figure was age-pooled — I wrote the age span into the node's own `uncertainty` field — and drew the adult conclusion anyway.
+2. **The class rule is stated in a primary paper, in one sentence.** `lui2023`: patients with epigenetic overgrowth syndromes often have advanced bone age, which reduces the total period for linear growth, **"resulting in a normal height rather than tall stature as an adult."** That is exactly the reading round 280 rejected, written by the group that discovered the exception to it.
+3. **Round 280 named the missing experiment and the experiment already existed.** It said nobody had produced a partial EZH2 loss in a normal growing animal and measured length. `gao2024` knocked **EZH2 p.R684C** — the most common human Weaver variant, verified to deplete H3K27me3 — into mouse: **femur, tibia and total body length all unchanged**, n = 8–14 per group, by calipers *and* micro-CT. A second human allele, **V626M**, also unchanged. And at the plate PRC2 loss *shortens*: `mirzamohammadi2016` (Eed, Col2-Cre) gives shortened long bones and kyphosis; `dudakovic2015` (Ezh2, Prrx1-Cre) gives shortened forelimbs; `camilleri2018` (Ezh2, Col2a1-Cre) finds it dispensable for endochondral ossification. `shao2021` (Nsd1, Prx1-Cre) gives shorter stature and decreased bone length and the authors write that this is **inconsistent with human Sotos overgrowth**.
+
+**Rule — this is CORR-287's rule failing a second time in two rounds, and it now gets a stronger form.** CORR-287 said a document a node *names* as decisive must be read before commit. This adds: **when a node names an experiment as "never run", the search for that experiment is part of committing the node, not part of the next round.** Both times the answer was one query away.
+
+**Second rule, on the statistic:** an age-pooled prevalence is never evidence about an endpoint at one end of the age range. If the claim contains the word *adult*, the denominator must be adults.
+
+## CORR-289 — a review table entry I never read was the answer to a gap I had left open for a hundred rounds
+
+Round 280 reproduced `lui2024`'s syndrome table, which lists **"SPIN4 (Lui-Jee-Baron)"** among the epigenetic overgrowth genes. I copied the name into a node and did not read the paper. `lui2023` is the strongest resting-pool result in this atlas:
+
+- **Human:** proband growing at **+4.5 to +5 SDS** against a midparental height of **+1.2 SDS**, predicted adult height **203 cm**, with **bone age advanced by only 1 year** — and heterozygous **mother and maternal grandmother each reached ADULT heights 2 SDS above their own midparental heights.** IGF-1 **179 ng/mL**, normal and repeatedly so, and *lower than this subject's 198*.
+- **Mouse:** resting zone height ↑, resting chondrocyte number ↑, Sfrp5⁺ and CD73⁺ progenitors ↑; **proliferative zone height, cells per column and cell height unchanged; hypertrophic zone height, cells per column and terminal hypertrophic cell height unchanged**; body and tibia length ↑ at 2 weeks, 10 weeks and — `lui2026`, preprint — still at **18 months** with normal BMD. Against the height identity that is **N ↑ and λ ↑ with A and h_term flat.**
+- **Mechanism:** reduced baseline canonical Wnt in growth-plate chondrocytes (TOPFLASH ↓, Axin2 ↓), with Spin4 expression highest in the resting zone.
+
+That last item **partially closes `g_l2_wnt_inhibition_in_resting_cells_long_columns_at_late_timepoint`**, open since round 182, which recorded that `hallett2021` ran only the *activation* arm and that nobody had lowered Wnt tone in resting cells and measured length late. Someone had.
+
+**Rule:** a review table is an index — which this atlas already says — but an index is only worth having if every row gets pulled. **A row copied into a node without its primary being read is a citation of a name, not of a finding, and must be marked as such at the time.**
+
+## CORR-290 — "the compound lowers the pathway" is not the same claim as "the compound does what the genetics did"
+
+`killinger2025` is a real length endpoint from a real, clinical-stage drug on the Wnt-lowering side: **C59 and LGK974 at 1 µM significantly elongated E18 mouse tibia organ cultures over 8 days.** It would have been easy to file that as pharmacological support for the SPIN4 result. It is the opposite.
+
+| | SPIN4 loss (`lui2023`) | PORCN inhibition (`killinger2025`) |
+|---|---|---|
+| resting zone | **expanded**, progenitors ↑ | not reported |
+| proliferative zone | unchanged | **markedly reduced** |
+| hypertrophic zone | unchanged | **expanded** |
+| terminal hypertrophic cell height | unchanged | — |
+| duration of gain | 2 wk → 10 wk → **18 mo** | 8 days in a dish |
+| whole organism | body length ↑ | zebrafish body axis **shortened**, dose-dependently |
+
+At the effective dose the authors observed **fusion of the growth plate to hypertrophic chondrocytes near the articular surface**, and write in their own discussion that long-term consequences may include **cartilage exhaustion**. `dreyer2025` gave LGK974 6 mg/kg twice weekly for four weeks to growing mice and found reduced vertebral trabecular number and tibial cortical bone volume — and **took no length measurement**, in six-week-old animals where it was available.
+
+**Rule:** two interventions that move the same pathway label in the same direction are the same lever only if the **zone decomposition** matches. Blocking secretion of *all* Wnt ligands is not partially lowering canonical transcriptional output in one compartment. Record the histology before recording the pathway.

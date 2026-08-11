@@ -85,24 +85,59 @@ and do not collapse to knees-only. Both compartments are live for him.
   schneiderman1995 has free IGF-1 partitioning into cartilage ~10× better than ternary complex — the atlas
   holds that fact and has never used it), roxadustat.
 
-## THE OVERGROWTH-SYNDROME COMPOUND CLASS (R280) — the richest untapped vein
+## THE OVERGROWTH-SYNDROME CLASS — R280 was WRONG, R281 corrected it. Do not re-argue R280.
 
 Human loss-of-function → **tall stature**: **EZH2** (Weaver), **EED** (Cohen-Gibson), **SUZ12**
 (Imagawa-Matsumoto) — all PRC2/H3K27; **NSD1** (Sotos), **SETD2** (Luscan-Lumish) — H3K36; **DNMT3A**
 (Tatton-Brown-Rahman); **SPIN4**. Opposite direction: **KMT2A/KMT2D** (H3K4 writers) → short stature.
 
-**EZH2 is the one that breaks the trade:** height ≥2 SD in 59/65 aged 1–70, mean **+3.5 SD**, with bone age
-advanced in **33/33**. Supranormal *adult* height despite universally accelerated maturation = **more height
-per unit bone age**. Nothing else in this file does that. Weaver variants are **partial** LOF — what a drug
-makes — and **tazemetostat is approved**.
-✗ Wrong for this subject anyway: the phenotype accrues over a whole childhood and the axis's own signature
-is bone-age acceleration, which is what's binding at BA 16. Plus tumours 7/70, ID 52/61, EZH2 is an
-oncogene, and no EZH2i has ever been given for growth.
-→ **Named experiment: titrated EZH2i in a WILD-TYPE growing animal, measuring bone length AND bone age
-together.** Never done. Each of the other six genes above is an unread thread.
+**✗ DEAD — PRC2 / EZH2 inhibitors (tazemetostat etc.). R280's "breaks the bone-age trade" is REFUTED (R281,
+CORR-288).** The exact human Weaver allele **EZH2 p.R684C** knocked into mouse (`gao2024`, H3K27me3 verified
+depleted): **femur, tibia and total body length ALL unchanged**, n = 8–14/group, calipers *and* µCT. Second
+human allele **V626M** also unchanged. At the plate PRC2 loss **shortens** — `mirzamohammadi2016` Eed/Col2-Cre
+= short bones + kyphosis; `dudakovic2015` Ezh2/Prrx1-Cre = short forelimbs; `camilleri2018` Ezh2/Col2a1-Cre =
+dispensable. **NSD1** (Sotos!) in Prx1-Cre = *shorter*, and `shao2021`'s authors say so explicitly. **Setd2**
+= no cartilage phenotype. **Five genes, five skeletal tests, never longer.** The "59/65 aged 1–70" figure is
+**age-pooled** and cannot mean "adult". `lui2023` states the class rule: advanced bone age shortens the growth
+period, "resulting in a **normal height** rather than tall stature as an adult." **The class pays the trade.**
+*The syndromes are not growth-plate phenotypes — germline whole-organism LOF overgrows, the same lesion
+delivered to limb mesenchyme or cartilage shortens. A plate-directed drug cannot reproduce them.*
+
+**✓ LIVE — SPIN4 (`lui2023`, R281). The cleanest pool lever in the atlas.** The one row of R280's table I
+never read. An epigenetic **reader**, not a writer.
+- **Human, one family:** proband +4.5 to +5 SDS vs midparental **+1.2 SDS**, PAH **203 cm**, **bone age
+  advanced by only 1 year** (this is *why* he escapes the class rule). Heterozygous **mother and maternal
+  grandmother each reached ADULT heights +2 SDS above their own midparental heights**. **IGF-1 179 ng/mL,
+  normal, repeatedly — LOWER than this subject's 198.** So the axis is *not* an IGF axis and does not compete
+  with the GH arm. (He had epiphysiodesis at 13, so the 203 cm is never tested.)
+- **Mouse:** resting-zone height ↑, resting cell number ↑, Sfrp5⁺ and CD73⁺ progenitors ↑. **PZ height,
+  cells/column, cell height ALL unchanged. HZ height, cells/column, terminal hypertrophic cell height ALL
+  unchanged.** Body + tibia length ↑ at 2 wk, 10 wk, **and still at 18 months** (`lui2026`, preprint) with
+  **normal BMD**. Against the height identity: **N ↑ and λ ↑, with A and h_term flat.**
+- **Mechanism:** reduced baseline canonical Wnt in chondrocytes (TOPFLASH ↓, Axin2 ↓); Spin4 highest in RZ.
+- **Cost:** tumour count ↑ at 18 mo (`lui2026`). SPIN4/EZH2/DNMT3A all over-expressed across human cancers.
+- **No SPIN4 drug exists** — loss is the gain, so it would need a degrader, not an antagonist.
 
 ## LIVE FRONTIER — the only things worth a round
 
+- **The canonical-Wnt window (R281) — the top frontier item.** The band has an **interior optimum BELOW wild
+  type**, which is the first time in this file an interior point *beats* WT rather than merely differing.
+  `lui2023` mild chronic ↓ canonical Wnt → **longer bone + bigger resting pool**; `chen2008` Col2a1-ICAT
+  (strong chondrocyte-restricted ↓) → **progressively runted**. Nobody has measured the dose-response, in any
+  species. **Named experiment (replaces R280's): an agent that lowers canonical Wnt TRANSCRIPTIONAL OUTPUT
+  partially and selectively in chondrocytes — WITHOUT blocking ligand secretion — measured for bone length
+  AND resting-zone cell number in a normal growing animal.** Untested candidate classes, both human-dosed,
+  both canonical-selective and downstream of ligand: **tankyrase inhibitors** (Axin stabilisers; E7449 has a
+  first-in-human study) and **CBP/β-catenin antagonists (PRI-724)**. *Neither has ever been given with a bone
+  length endpoint in any species.*
+  ✗ **PORCN inhibitors (LGK974/WNT974, C59) are the WRONG HALF — do not propose them again.** They *do*
+  elongate cultured E18 tibia at 1 µM (`killinger2025`) — but by **expanding the hypertrophic zone and
+  markedly reducing the proliferative zone**, the exact inverse of SPIN4; at that dose the authors watched
+  **the plate fuse to hypertrophic chondrocytes near the articular surface** and wrote that cartilage
+  exhaustion is expected. In vivo (zebrafish) both compounds **shorten the body axis** dose-dependently.
+  `dreyer2025`: LGK974 6 mg/kg 2×/wk × 4 wk in growing mice cost trabecular number and cortical volume — and
+  they never measured length. **CORR-290: same pathway + same direction ≠ same lever. Match the zone
+  decomposition or it is a different intervention.**
 - **H3K4me3 arm of the epigenetic ceiling** — still open. Different enzymes from DNA methylation
   (KMT2/SETD1 writers, KDM5 erasers). A search found **no KDM5 or H3K4 intervention with any bone length
   endpoint in any species.** ← the live half.
@@ -125,9 +160,11 @@ together.** Never done. Each of the other six genes above is an unread thread.
 
 ## PATTERN THAT PREDICTS THE NEXT FAILURE
 
-Three axes now shorten bone in **both** directions: hedgehog (R268), oestrogen receptors (R272), DNA
-methylation (R276). **Any axis found DECLINING with maturation looks like a brake to release and may just
-be regulated within a band.** Before proposing to reverse a decline, ask whether anyone has perturbed that
+Four axes now shorten bone in **both** directions: hedgehog (R268), oestrogen receptors (R272), DNA
+methylation (R276), **canonical Wnt (R281)**. **Any axis found DECLINING with maturation looks like a brake
+to release and may just be regulated within a band.** *But R281 adds the other half: a band is not
+automatically a closure. Canonical Wnt is a band whose peak is NOT at wild type — so ask both "is it a band?"
+and "where is the peak?".* Before proposing to reverse a decline, ask whether anyone has perturbed that
 axis in *both* directions with a *length* endpoint. If only one — the band hypothesis is untested, not
 excluded.
 
