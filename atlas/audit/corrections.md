@@ -8963,3 +8963,24 @@ The conclusion was right and the sourcing was three grades weaker than it needed
 **Which means erdafitinib's dose is titrated to an FGFR1 effect in both directions** — up toward a phosphate target, down on phosphate toxicity — **while the growth effect this programme wants is FGFR3.** Rounds 231 and 232 established that the phosphate arm is FGFR1 and only FGFR1, from three agents and from two directions of human genetics. Putting those together: **the only pharmacodynamic marker anyone titrates this drug against is a readout of the receptor that is not the growth target.** There is no FGFR3 pharmacodynamic marker in clinical use, which is why round 212 could find no evidence that any tolerated dose saturates the growth target, and why round 228's flat 3-to-7 mg human dose-response has no mechanistic anchor on either side.
 
 **The rule.** When a claim can be sourced to a regulatory label, source it to the label. Case reports establish that a thing can happen; a label reports it with a denominator, adjudicated, from the pooled trial database — and this atlas holds the labels for every agent in the stack.
+
+---
+
+## CORR-242 — round 213's growth-versus-coverage curve is the spliced anchor again, and unspliced the FGFR3 axis is flat
+
+Round 213 built the only dose-response this atlas has ever had on the **FGFR3 coverage** axis: *"1.72 times FGFR3 IC50 gave about 10 cm/year; 4.01 times gave 19.06 cm/year. A 2.3-fold rise in free concentration for a 1.9-fold rise in velocity."*
+
+**The 10 cm/year child was assigned 3 mg, and that child's dose is stated nowhere.** `erdaseries2025` gives a dose for **patient 1 only** — 5 mg reduced to 3 mg — which I confirmed by re-reading the full text this round. CORR-226 and round 228 both record that the ~10 cm/year child (FDA case 5) has no dose in any document. **Round 213 supplied one.**
+
+**And round 228 supplied the real lower anchor, which points the other way.** The child who actually took 3 mg grew **19.6 cm/year**, not 10. So the two properly-anchored points are:
+
+| child | dose | × FGFR3 IC50 | cm/year |
+|---|---|---|---|
+| `erdaseries2025` patient 1 / FDA case 4 | 5 → 3 mg | 1.72 – 2.86 | **19.6** |
+| `erdachild2024` / FDA case 3 | 7 → 5 mg | 2.86 – 4.01 | **19.1** |
+
+**A 1.50-fold rise on the midpoints, across a 1.72× to 4.01× span of the axis, buys −2.6% of velocity.** Round 228 found the dose-response flat in milligrams; **it is flat in free multiples of the FGFR3 cellular IC50 too**, which is the axis that was supposed to rescue it.
+
+**Why this matters more than the arithmetic.** Round 228 named rounds 216–218 as carrying the rising-dose premise and did not name round 213, so round 213's node still asserts a rising curve on the coverage axis — the same dead anchor, one abstraction layer up, surviving the correction that killed it. **CORR-114's rule applies and was not applied: a correction that invalidates a *source* must be pushed backwards through every claim built on it, and that is a search, not a memory.** The search was one grep for the 10 cm/year figure.
+
+**What the flat curve establishes, which is larger than the correction.** The human FGFR3 growth response is **saturated at or below about 2× the cellular IC50** — the bottom of every clinical dose range in play. So additional FGFR3 potency, in any molecule, buys no additional height, while the FGFR1 cost rises with dose. That is the quantitative core of round 234's answer, and it came out of fixing an error rather than out of new data.
