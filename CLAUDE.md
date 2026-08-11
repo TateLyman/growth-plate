@@ -34,9 +34,10 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 - **PTH1R / teriparatide.** Terminal femoral length 0.0% in every arm. — CORR-269
 - **Periosteal release.** Real but age-cutoff ~9.6 y. — periosteum node
 - **Dynamin/dynasore.** Is mTORC1 again; authors call the gain transient. — R267
-- **DNA-methylation arm of the epigenetic ceiling.** A BAND, not a brake: Dnmt1 loss shortens bone by
-  accelerating differentiation; IDH-mutant blockade of demethylation diverts chondrocytes into enchondroma
-  (human syndrome = short stature). Both directions cost growth. — R276
+- **DNA-methylation arm — the WRITER half only.** Dnmt1 loss shortens bone by accelerating
+  differentiation; IDH-mutant blockade of demethylation diverts chondrocytes into enchondroma (human
+  syndrome = short stature). — R276. **⚠ The ERASER half is REOPENED (R283): TET1 loss = +8.32 cm in 1.45M
+  humans, no syndrome. Do not cite R276 as closing the whole arm.**
 
 ## THE RECURRING FAILURE MODES (each has cost a turn)
 
@@ -49,6 +50,16 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 3. **Re-deriving a settled ranking and calling it new.** ← the reason this file exists.
 4. **Asserting what the literature contains without running the query.** CORR-267, CORR-284.
 5. **Naming a document as decisive and not reading it.** CORR-287.
+6. **Searching a DISEASE literature for a trait whose tall tail isn't a disease.** CORR-295. Syndrome genes
+   are **5× more likely to shorten than lengthen** (36/43 vs 7/43, matched pleiotropy + constraint). Being
+   short brings a child to a clinic; being tall doesn't. **Four "both directions shorten" rounds (268, 272,
+   276, 281) are partly an artefact of where I was looking.** For height-INCREASING levers, use
+   unbiased-ascertainment population data (`kosmicki2026`), not PubMed. And an enumeration with **no sign and
+   no magnitude is not actionable** — that's why the atlas's own top-ranked gene (ZFAT) sat unused for rounds.
+7. **Reporting a compartment from a dataset whose sign convention was never calibrated.** CORR-296. chu2026's
+   GP1/GP2 direction **cannot** currently be resolved — SFRP5/PTHLH/NT5E say one way, GAS1 (+3.06, padj 2e-10)
+   and the 1039:441 global skew say the other. Four rounds (241, 244, 245, 246) are built on this dataset.
+   **Do not assign a GP1/GP2 compartment until this is settled.**
 
 ## PRE-ROUND CHECKLIST — answer all four in the node or don't write it
 
@@ -143,6 +154,41 @@ never read. An epigenetic **reader**, not a writer.
   the attained-height evidence, which doesn't depend on it (2 adult carriers; mouse still longer at 18 mo).
 - **No SPIN4 drug exists** — loss is the gain, so it would need a degrader, not an antagonist.
 
+## THE SIX GENES WHOSE LOSS MAKES HUMANS TALLER (R283, `kosmicki2026`, 1.45M exomes)
+
+826,066 discovery exomes, 98% of 207 genes replicated in 624,567 more. **Singleton pLoF in 17 genes moves
+adult height a mean 8.92 cm/allele — ~52× the average common variant.** Our whole stack is 1–3 cm.
+
+| gene | β cm/allele | carriers | class | baggage |
+|---|---|---|---|---|
+| **FBN1** | **+11.14** | 40 | ECM/TGF-β | Marfan (aorta) — not usable |
+| **CHD8** | **+10.22** | 21 | chromatin, Wnt | ASD + ID + macrocephaly — not usable |
+| **LCORL** | **+9.99** | 71 | TF | **none.** Most cross-species-replicated taller-gene there is (8 domesticated species + mouse +3.0% body length). No drug. |
+| **TET1** | **+8.32** | 42 | **enzyme** | **none.** See R276 reopening below. |
+| **ZFAT** | **+7.86** | 41 | TF | thyroid autoimmunity, no stature. Was **top of the atlas's own Open Targets ranking** and never worked. |
+| **NRK** | **+3.79** | 56 | **kinase** | **none.** ← the lead |
+
+Down: ACAN −16.55, ANKRD11 −11.16, COL1A1 −10.36, EXT1 −8.70, IGF2BP2 −8.68, ADAMTS6 −8.40, ADAMTS10 −8.24,
+IGF1R −8.23, DTL −7.34, SCUBE3 −7.18, NF1 −5.55.
+
+- ✓ **TET1 REOPENS R276's DEAD entry — and by R276's own bar (new primary data, not a new argument).** R276
+  closed the methylation arm on **DNMT1, the WRITER**. TET1 is the **ERASER**: +8.32 cm, no syndrome, 1.45M
+  people. **Retro-validates the AKG contraindication with a human number** (AKG = TET co-substrate → feeding
+  TET runs height-LOSING). ✗ But no Tet1 conditional has a bone-LENGTH endpoint in any species, and the
+  entire TET-inhibitor literature (~130 records) has no bone endpoint.
+- ✓ **NRK — the actual lead.** X-linked kinase, +3.79 cm, no OMIM syndrome, **ZERO skeletal literature in any
+  species** (its papers are placenta and prostate). Yet in chu2026's mouse growth-plate table the atlas has
+  held since R243: **baseMean 6.10 — above FGFR3 (2.30) and CD73/NT5E (3.21) — padj 4.6e-3.** No inhibitor
+  exists. Gap: `g_l8_nrk_has_no_skeletal_experiment_in_any_species`.
+- ✓ **LCORL survives R281.** R280 dragged it into the PRC2 class via PALI2; R281 killed PRC2 at the plate.
+  The human +9.99 cm never depended on that framing. No cartilage conditional in any species.
+- **HHIP pointer (NOT a R268 reopening):** HHIP pLoF **+9.92 cm**, HHIP p.V496E (gain-of-function) **−3.96 cm**.
+  HHIP is a secreted Hh antagonist → in humans, both directions of one Hh brake move height monotonically.
+  But P=3.7e-7 (sub-threshold), incidental to the authors' argument, no carrier count. R268 killed *acute*
+  perturbations; this is *mild lifelong* dosage. Gap: `g_l8_does_mild_lifelong_hedgehog_disinhibition_lengthen_bone`.
+- ✗ **Do NOT propose any of these for BA 16.** All germline heterozygous from conception — the exact
+  objection R281 made to PRC2 and R282 to SPIN4, applied evenly. This is a *target list*, not a prescription.
+
 ## LIVE FRONTIER — the only things worth a round
 
 - **The canonical-Wnt window (R281) — the top frontier item.** The band has an **interior optimum BELOW wild
@@ -178,8 +224,9 @@ never read. An epigenetic **reader**, not a writer.
 
 - **DNMT inhibitors** (azacitidine, decitabine) — reproduce the Dnmt1-KO direction: accelerated
   differentiation, shorter bone. R276
-- **Alpha-ketoglutarate** — co-substrate for TET demethylation *and* a TCA intermediate; feeds both arms of
-  the loop that terminates growth. Common longevity supplement. Mechanism-only (graded E), untested. R276
+- **Alpha-ketoglutarate** — co-substrate for TET demethylation *and* a TCA intermediate. **Upgraded from
+  grade-E mechanism-only to human-anchored (R283): TET1 loss is +8.32 cm in 1.45M people, so feeding the TET
+  co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
 - **Deliberately lowering thyroid tone to slow bone age.** R282/CORR-293. Tempting (`plluaas2026`'s proband
