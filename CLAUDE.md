@@ -210,7 +210,12 @@ adult height a mean 8.92 cm/allele — ~52× the average common variant.** Our w
 | **ZFAT** | **+7.86** | 41 | TF | thyroid autoimmunity, no stature. Was **top of the atlas's own Open Targets ranking** and never worked. |
 | **NRK** | **+3.79** | 56 | **kinase** | **none.** ← the lead |
 
-**OPEN-PLATE TEST (CORR-299) — run R285, corrected R286. TWO PASS, AND BOTH ARE SECRETED ANTAGONISTS.**
+**OPEN-PLATE TEST — ALL 17 RUN BOTH DIRECTIONS (R287). TWO PASS, AND BOTH ARE SECRETED ANTAGONISTS.**
+**✗ The 11 NEGATIVE-beta genes were never searched in the ELEVATION direction (CORR-303). Work both signs.**
+**→ `ACAN −16.55 cm` is the biggest number in the table; this atlas has 29 ACAN nodes and EVERY ONE is about
+DEFICIENCY. No aggrecan-elevation experiment exists anywhere.** Gap: `g_l5_nobody_has_raised_aggrecan_above_normal_and_measured_a_bone`.
+**UNTESTED, searched not assumed (R287):** CHD8 (conditional literature entirely neuro) · TET1 (bone papers
+are ageing/BMSC only) · **ZFAT and NRK — nothing skeletal in ANY species.**
 - ✓ **FBN1 (+11.14, the largest).** `sedes2022` (**operator-supplied, read 2026-08-06** — I nearly re-asked for
   it, CORR-302): Fbn1 loss in limb mesenchyme → limb bones **~7% longer, NORMAL AT BIRTH, diverging 1–3 months**
   = **entirely postnatal accrual.** Four conditional deletions; **deleting Fbn1 from CHONDROCYTES gives NO
@@ -251,6 +256,29 @@ IGF1R −8.23, DTL −7.34, SCUBE3 −7.18, NF1 −5.55.
   perturbations; this is *mild lifelong* dosage. Gap: `g_l8_does_mild_lifelong_hedgehog_disinhibition_lengthen_bone`.
 - ✗ **Do NOT propose any of these for BA 16.** All germline heterozygous from conception — the exact
   objection R281 made to PRC2 and R282 to SPIN4, applied evenly. This is a *target list*, not a prescription.
+
+## THE LAYER (R287) — the thing the whole gene table points at, and the atlas never named it
+
+**THE EXTRACELLULAR CONTROL OF MORPHOGEN AVAILABILITY** — sequestration, presentation, diffusion-shaping and
+clearance in the space *between* cells, before any receptor is engaged. The atlas is organised by pathway (L3)
+and by matrix (L5) and has **no node, layer or phrase for this.** Yet:
+- **8 of the 17** human height genes are ECM/secreted by `kosmicki2026`'s own annotation.
+- **Both** open-plate passes are secreted antagonists: **FBN1** (sequesters TGF-β at the outer perichondrium)
+  and **HHIP** (binds Ihh, limits its range).
+- The **largest** single effect is **ACAN**, the matrix's own proteoglycan.
+- **EXT1 (−8.70)** makes the heparan sulfate that shapes Ihh/BMP/FGF gradients — and its exostoses arise from
+  the **PERICHONDRIUM** via **ectopic hedgehog**: same tissue as FBN1, same pathway as HHIP.
+- **SCUBE3 (−7.18)** is a **secreted BMP modulator** whose loss shortens (`lin2021`) — **the mirror of FBN1**,
+  and the one target here that could be **supplied** rather than inhibited. No gain experiment exists.
+- **CORR-300 reached this class independently** (secreted modulator adds length; intracellular brake destroys
+  zonal order and subtracts it).
+- **Three existing atlas lines already live here and nobody said so:** the derived **NPR3 clearance blocker**,
+  periosteal **osteocrin**, and **sacubitril**/neprilysin. ← this is an argument to re-rank NPR3 upward.
+
+**Four cheap experiments that do not exist:** recombinant SCUBE3 → measure a bone · raise aggrecan above
+normal in a NORMAL animal → measure a bone · **tamoxifen-inducible** Hhip1 in a juvenile → measure a bone ·
+**put a caliper on the femur of a wild-type mouse given losartan** (`chen2015` already dosed them and measured
+zones and mass, never length).
 
 ## LIVE FRONTIER — the only things worth a round
 
