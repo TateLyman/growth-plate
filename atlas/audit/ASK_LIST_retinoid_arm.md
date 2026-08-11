@@ -86,3 +86,36 @@ Held in the atlas and cited by `is_the_cnp_arm_redundant_with_fgfr3_blockade`, b
 
 ### 3. Anything that resolves the hedgehog contradiction
 `resting_zone_niche` records that **both Smoothened agonism *and* antagonism reduce the number of columns formed from labelled resting cells.** Round 251 proposed hedgehog *withdrawal* as the discharge signal. Both cannot be right as stated. The primary behind that statement, read in full, is what settles it — and it may invalidate the discharge model built in round 265.
+
+---
+
+# ADDENDUM, rounds 268–269 — current asks
+
+Standing rule: a paywall is never a reason to drop a source. These are outstanding, in priority order.
+
+### 1. `brjesson2010` — PMID 20564247, Endocrinology 2010, **not open access, no PMC**
+*The role of estrogen receptor α in growth plate cartilage for longitudinal bone growth.* Börjesson AE et al.
+
+**The single most useful document on this list.** Its abstract carries the load-bearing result of round 269 — cartilage-specific ERα-null mice **continued to grow after 4 months while controls stopped, giving increased femur length at 1 year** — and I hold nothing else. I need:
+- **the magnitude of the one-year femur difference**, with group sizes and sex distribution (the abstract gives none)
+- whether **body length** was measured as well as femur, and whether the plates were still open
+- the **high-dose oestradiol challenge** numbers, since that is the arm showing the brake is ERα-mediated and local
+- whether **GPER-1 or ERβ** were measured in the same animals — nobody has deleted both, and that is the experiment round 269's open proposal turns on
+
+### 2. The **Yakar 2009** four-genotype comparison — primary not yet identified by PMID
+Quoted in `dobie2015`'s introduction: ALSKO −60 % serum IGF-1 → 8 % shorter; **BP3KO −40 % → 5 % LONGER**; LID −80 % → equal length; triple-null at 2.5 % of wild-type IGF-1 → only 6 % shorter. This is the four-genotype demonstration that **serum IGF-1 does not predict linear growth potential**, and it bears directly on the case fact of IGF-1 = 198. I have it only as a secondary citation, which CORR-268 and CORR-270 say is not good enough to grade on. **The primary, or its PMID, would let this move off D.**
+
+### 3. `lui2019` — PMID 30765323, PMC6404097, **OA: N** (PMC record is abstract-only)
+*Cartilage-Targeted IGF-1 Treatment to Promote Longitudinal Bone Growth.* The first CV1574-1 paper. `tailor2024` (the sequel) is open and I have read it in full. From `lui2019` I need: the **dosing**, and above all whether **any bone length** was measured in the lit mouse — both papers report growth plate height only, and that is the step that decides whether this molecule is a height agent or another taller-plate result.
+
+### 4. `mizuhashi2018` Methods — Nature 563:254, PMC6251707
+The deposited author manuscript has **no Methods section**. I need the **dose, route and schedule for SAG and LDE-225**, which is the only thing separating its early-treatment regime from `newton2019`'s late one. Not load-bearing after round 268, but it is the last loose end on the hedgehog line.
+
+### 5. `troib2013` — PMID 23715123, **OA: N**
+SOCS2 elevated in CKD growth retardation, impairing growth-plate GHR–JAK2/STAT5 signalling. Would make the SOCS2 loop of round 269 a two-context result rather than one ex vivo model.
+
+---
+
+### AND ONE THING I DO NOT NEED FROM YOU — the 231
+
+`atlas/data/round269/length_endpoints_sweep.tsv` lists **231 references already in this bibliography that report a bone, limb or body length endpoint and from which no number has ever been extracted**, 83 of them reporting a gain. Most are open access. **That list is cheaper than any new search and should be worked through before the next external sweep.** No action needed from you.
