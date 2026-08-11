@@ -9269,3 +9269,22 @@ None of that is a magnitude, so nothing about the grade changes. But it converts
 **And `wang2016` supplies something the programme has wanted since round 198 — a genetic existence proof of the exchange rate.** Double mutants have **LONGER growth plates at midgestation and at P0**, and then **progressive postnatal dwarfism: 9.7 per cent shorter body at P0 (n = 4, P = 0.04) and 12.5 per cent shorter at one month (n = 3, p = 0.05)**. The authors attribute it to premature depletion of the resting pool and an inability to sustain elongation. **Bigger plate and faster proliferation now; smaller animal later; because the pool was spent.** That is round 198's objective function demonstrated in a mouse, by mutation rather than by drug, and it is the cleanest such demonstration in the atlas.
 
 **Rule, and it is the fourth version of one lesson this session.** CORR-250: check the bibliography before asking. CORR-252: test before headlining. CORR-254: search the graph before proposing an intervention. CORR-255: exhausting a method is not exhausting a question. This one: **before writing 'nobody has tested X', run the search for X.** I named the Smad2-versus-Smad3 experiment as the key missing one and did not spend the sixty seconds it took to find that it was published a decade ago in an open-access journal.
+
+---
+
+## CORR-258: I told the user nothing raises the stem pool without lowering the division rate. The atlas had held the counterexample, at full-text standard, for four days
+
+**What round 247 asserted**, in the node, in the commit, and to the user: *nothing raises N without lowering lambda, in any species.* It was offered as the empty cell where a height therapy would have to live.
+
+**`trompet2024` is that experiment and it is in this atlas at the highest evidential standard it applies.** *Stimulation of skeletal stem cells in the growth plate promotes linear bone growth.* Full text read 2026-08-07, user-supplied, with the JCI numeric source data also supplied and the paired t-tests recomputed here from per-animal values.
+
+- **Intra-articular SAG** at P28, P30 and P32, analysed P37: total Pthrp-tdTomato+ cells rose **65.5 to 139.8 cells/mm2, n = 5, P = 0.017, all of it within the resting zone — with NO change in proliferation** in the top 50 microns or in the proliferative zone, **and no change in terminal hypertrophic cell size.** That is N up, lambda unchanged, h_term unchanged. It is precisely the cell I said was empty.
+- The **bead** arm carries the length endpoint: femur **+2.75, +2.64 and +3.63 per cent** at 1, 2 and 6 months; entire leg **+1.06, +1.09 and +1.65 per cent**, 6/6, 9/9 and 8/8 animals, P values to below 0.00001. **The effect accumulates rather than fading.**
+
+**The `ledger_what_is_dead_what_is_settled_what_is_live` node already says so in one sentence** — *trompet2024 remains the only pool intervention with a LENGTH endpoint and is the only arm that ADDS a progenitor rather than redistributing a fixed budget.* I read that node this round, searched it for the string 'hedgehog', and still wrote the opposite in the round I was drafting at the same time.
+
+**How the error was actually made, because the shape matters.** I searched node *summaries* for pool-expansion levers and got nothing, because the SAG result lives in the **bibliography entry** and in a ledger clause I skimmed. CORR-254 established 'search the graph before proposing an intervention'. I searched the graph and searched it badly — grepping node names and summary heads rather than the reference layer, which is where this atlas puts its numbers.
+
+**Rule.** *The bibliography is part of the graph, not an appendix to it.* `one_line_finding` fields in this atlas routinely carry effect sizes, n, and P values that appear in no node. Any claim of the form 'nothing does X' must be checked against the reference layer with a content search, not against node titles.
+
+**And the claim, restated correctly.** Something does raise N with lambda intact: **hedgehog agonism, locally delivered, after secondary ossification centre formation.** What remains true, and is a much narrower statement, is that **no such intervention exists in a form deliverable to a human**, and that the field disagrees about the mechanism — `trompet2024` reports pool expansion with proliferation unchanged, while `cheng2025` reports that post-SOC SAG *promotes proliferation* of resting zone chondrocytes. Those are different claims about the same drug in the same window and the atlas should stop treating them as one result.
