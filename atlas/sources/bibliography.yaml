@@ -1482,6 +1482,32 @@ refs:
     title: 'Catch-up growth after glucocorticoid excess: a mechanism intrinsic to the growth plate'
     type: primary_abstract_only
     year: 1994
+  baronas2023:
+    added: '2026-08-12'
+    cited_by: 0
+    doi: 10.1016/j.xgen.2023.100299
+    first_author: Baronas JM
+    full_text_read: '2026-08-12'
+    in_epmc: true
+    is_preprint: false
+    journal: Cell genomics
+    local_pdf: true
+    one_line_finding: 'READ IN FULL 2026-08-12, operator-supplied. THE SOURCE PAPER THAT UNBLOCKS GSE225878. Genome-wide CRISPR
+      knockout screen in murine growth-plate-like chondrocytes, 22,624 genes, 600 million cells, sorted on the maturation
+      marker CD-200 at day 4 and day 15, top and bottom deciles. SIGN CONVENTION, which is what the atlas needed: log2 fold
+      change ABOVE +0.57 means the knockout matured EARLY, BELOW -0.63 means it stayed IMMATURE. 140 knockouts at p<0.001;
+      162 genes plus 47 expressed no-effect controls carried into a secondary screen. Named hits are the hedgehog brakes Sufu
+      and Ptch1 (both premature maturation, attributed to increased hedgehog signalling) and the PRC2 members Eed, Ezh2 and
+      Suz12. 17 of the top targets are among 581 curated OMIM skeletal-growth genes (Fisher p<1.18e-6). KEGG enrichment for
+      Wnt, Hedgehog, ubiquitin-mediated proteolysis, TGF-beta/BMP and Hippo. Screening hits independently predict height heritability
+      enrichment against the Yengo 2018 and 2022 height GWAS.'
+    open_access: true
+    ref_id: baronas2023
+    tier: T1
+    title: Genome-wide CRISPR screening of chondrocyte maturation newly implicates genes in skeletal growth and height-associated
+      GWAS loci
+    type: primary
+    year: 2023
   barreto1994:
     added: '2026-08-05'
     cited_by: 24
@@ -8570,6 +8596,47 @@ refs:
     title: Spatially resolved transcriptomic profiling of degraded and challenging fresh frozen samples
     type: dataset
     url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE221571
+    verify_by_hand: true
+    year: 2023
+  gse225878:
+    accession: GSE225878
+    added: '2026-08-13'
+    first_author: Baronas JM
+    one_line_finding: 'Operator-supplied 2026-08-13, BLOCKED in round 310 for want of a sign convention and UNBLOCKED in round
+      311 by baronas2023. Four tables - primary and secondary, day 4 and day 15 - covering 22,624 genes with average log2
+      fold change and average -log10 p. At -log10p>=3 and the paper''s thresholds: 181 knockouts delay maturation, 44 accelerate.
+      THE DELAYED DIRECTION IS HEAVILY CONFOUNDED - its rank-1 hit is Cd200, the sorting antigen itself, at -2.342; 34% of
+      it is Gm-prefixed predicted genes, pseudogenes or ribosomal proteins; 22% shares an identical log fold change with three
+      or more genes, the signature of one guide cutting many paralogous loci; and most survivors are core-essential. The accelerated
+      direction has 1 of 44 flagged by the same filters. Key calibrated values: Sufu +3.628/+6.353, Ptch1 +1.816/+6.004, Eed
+      +2.654, Ezh2 +1.874, Suz12 +1.525, Fkbp1a +4.605, Smad6 +3.827, Fuz +3.656, Csnk2b +3.620, Dot1l +1.865, Aldh2 +1.111,
+      Gnas +0.995 rising to +3.023 in the secondary screen; Prkar1a -3.957 and -2.291 secondary, Cop1 -3.231, Brd2 -1.290,
+      Chd8 -1.029 which fails secondary, Sox9 -0.908, Runx2 -0.978.'
+    ref_id: gse225878
+    tier: null
+    title: GSE225878 - genome-wide and secondary CRISPR maturation screens in growth-plate-like chondrocytes, average log
+      fold change tables
+    type: dataset
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225878
+    verify_by_hand: true
+    year: 2023
+  gse225879:
+    accession: GSE225879
+    added: '2026-08-13'
+    first_author: Baronas JM
+    one_line_finding: 'THE CONTROL THAT SEPARATES AN INFORMATIVE NULL FROM AN UNINFORMATIVE ONE in GSE225878, 16 libraries.
+      NOT TRANSCRIBED in the screened cells: Nppc 0.00, Hhip 0.10, Loxl2 0.20, Nrk 1.30, Ihh 1.31, Scube3 7.60, Spin4 9.8
+      - so the screen''s nulls on the atlas''s HHIP, NRK and LOXL2 leads are absence of substrate, not absence of effect.
+      TRANSCRIBED: Wdpcp 8.8, Traf3ip1 13.0, Fuz 18.8, Sufu 47.8, Cop1 63.1, Ext1 69.0, Npr2 75.5, Kdm1a 81.3, Tet1 82.3,
+      Amd1 92.5, Pth1r 108.1, Sox9 108.3, Dot1l 126.0, Ptch1 142.6, Smo 165.7, Chd8 175.1, Tnks 195.7, Fkbp1a 207.4, Fbn1
+      230.7, Tnks2 231.0, Aldh2 241.0, Brd2 320.3, Prkar1a 350.9, Gnas 737.0, Col2a1 1629. FBN1 IS THE POSITIVE CONTROL FOR
+      THE BLIND-SPOT ARGUMENT - transcribed at 230.7 and still not a hit, reproducing sedes2022''s finding that chondrocyte-restricted
+      Fbn1 deletion gives no overgrowth because the control is perichondrial.'
+    ref_id: gse225879
+    tier: null
+    title: GSE225879 - CPM expression of sorted growth-plate-like chondrocytes accompanying the CRISPR maturation screen
+    type: dataset
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225879
     verify_by_hand: true
     year: 2023
   gse233188:

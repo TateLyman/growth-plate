@@ -175,6 +175,27 @@ Everything else is a gap to record and, where cheap, to fill.
    and PIP₃ the question is always WHICH MICRODOMAIN — and an abundant isoform may be abundant *because* it
    is compensating for the one that matters.
 
+27. **Writing "no agent in any species" when the paper is IN THE BIBLIOGRAPHY, READ IN FULL, WITH THE NUMBER.**
+   CORR-333 — the worst instance in this file. I wrote *"no PDE inhibitor of any subtype has a bone-length
+   endpoint in any species"* in **R304, R308, R309 AND R310**. `kawabe2025` — *"Phosphodiesterase 3 inhibitors
+   boost bone outgrowth"* — was in the uploads from **2026-08-08**, in `gaps.yaml` under five separate
+   entries, and in `bibliography.yaml` with a `one_line_finding` that **begins "READ IN FULL 2026-08-08" and
+   quotes the naso-anal numbers.** Cilostazol 10 mg/kg/day IP × 4 wk from weaning, juvenile **WILD-TYPE**
+   mice: **93.6 ± 0.3 → 95.3 ± 0.5 mm.** CORR-313 said grep the graph before REOPENING something; CORR-324
+   said grep before DRAFTING. **This extends both: a phrase of the form "no X exists in any species" is a
+   CLAIM ABOUT THE BIBLIOGRAPHY and must be greped against it — and against `/root/.claude/uploads/` — in the
+   same edit that writes it.** Four rounds inherited the sentence without anyone re-testing it, which is the
+   same lossy-ledger failure as CORR-313 running in the opposite direction: *negatives* propagate unchallenged
+   because nothing in the file's structure forces a re-check.
+
+28. **Reading a screen's null on a gene the assay does not express.** CORR-334 (R311, recorded pre-emptively
+   because it is the obvious next error). GSE225878 knocks out 22,624 genes and returns **nothing** for HHIP,
+   NRK, LOXL2 or NPPC. Those are **not refutations** — GSE225879 gives the screened cells' CPM and
+   **Hhip 0.10, Nrk 1.30, Loxl2 0.20, Nppc 0.00.** You cannot knock out an untranscribed gene. **Before
+   reading any null from a perturbation screen, look up the target's expression IN THE SCREENED CELLS.**
+   The informative nulls are the ones where the gene IS present — Tnks 195.7, Tnks2 231.0, Tet1 82.3,
+   Amd1 92.5, **Fbn1 230.7**.
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -930,6 +951,107 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⭐⭐⭐ R311 — THE GENOME-WIDE **MATURATION** SCREEN IS UNBLOCKED. It is a CONTRAINDICATION screen, and the
+## genes it cannot see are the ones this atlas is built on.
+
+**ZERO — THE CORRECTION, CORR-333, BECAUSE IT WAS A LIVE FALSEHOOD IN THIS FILE.** `kawabe2025`:
+**CILOSTAZOL, juvenile WILD-TYPE mice, 10 mg/kg/day IP × 4 wk from weaning → naso-anal 93.6 ± 0.3 →
+95.3 ± 0.5 mm.** Ex vivo metatarsals 120.7 ± 0.9% → **127.6 ± 1.2%** at 10 µM; milrinone, anagrelide and
+olprinone reproduce it; **PDE2i (BAY-60-7550) and PDE10i (MP10) do not** — a specificity control. Also
+effective in **Fgfr3-Tg achondroplasia-model bones.**
+⛔ **BUT THE SAME PAPER KILLS PDE3 FOR THIS STACK BETTER THAN R310 DID, AND IT IS NOT A cAMP DRUG.**
+Its chain is **cGMP → PKG → BK channel → hyperpolarisation → TRPM7 Ca²⁺ → CaMKII → matrix** — cilostazol
+raised cGMP ~1.7× **while cAMP was UNCHANGED**. That is **the vosoritide arm.** And it ran the additivity
+test: **cilostazol ADDS at 10 nM CNP and does NOTHING at 30 nM CNP**; the authors conclude the two drive a
+common axis. ⭐ **This is `hakata2024`'s sacubitril structure MEASURED ON BONE LENGTH instead of inferred —
+so sacubitril (R301), the NPR3 clearance blocker (R302) and PDE3 (here) are ONE mechanism: THE cGMP ARM
+SATURATES.** R310's closure stands, by a stronger route.
+⚠ **CONTRADICTION RECORDED, NOT RESOLVED:** `hirota2022` found cilostamide changed neither CNP-induced cGMP
+nor PKA activation — the opposite of kawabe2025's central measurement. **CORR-330's row rests on hirota2022.**
+
+**ONE — THE SIGN CONVENTION, AND CORR-296 IS LIFTED FOR THIS DATASET ONLY.** `baronas2023` (operator-supplied)
+is GSE225878's source paper: 22,624 genes, 600 M cells, sorted on **CD-200, a MATURATION marker**, D4 and D15.
+**LFC > +0.57 = KO matured EARLY (spends the period). LFC < −0.63 = KO stayed IMMATURE (extends it).**
+✓ **NINE CONTROLS AGREE, INCLUDING THE FOUR R310 SAID DID NOT RESOLVE.** Pth1r **+0.396/+0.844** and Npr2
+**+0.039/+1.192** — the two textbook brakes on hypertrophy, both positive. Sox9 **−0.908** and Runx2
+**−0.978** — both required, both negative. Sufu **+3.628/+6.353** and Ptch1 **+1.816/+6.004**, reproducing
+the paper's own named result. **NOT lifted for chu2026.**
+
+**TWO — READ THE ARTEFACT STRUCTURE BEFORE ANY HIT (CORR-311/329). 181 DELAY, 44 ACCELERATE.**
+⛔ **The strongest delayer in the entire screen is `Cd200` itself (−2.342, −log10p 11.14, rank 1, replicates)
+— THE SORTING ANTIGEN.** Delete the epitope, score as immature. Plus **34% of the delayed list is Gm*/
+pseudogene/ribosomal**, **22% shares an identical LFC with ≥3 genes** (one guide, many paralogues), 4%
+histone cluster; most survivors are proteasome/ribosome/spliceosome/translation — **essentiality**.
+**The accelerated direction: 1 of 44 flagged by the same filters, and it carries all the cartilage biology.**
+→ **THIS IS A GOOD CONTRAINDICATION SCREEN AND A POOR LEVER SCREEN. Recorded that way, not mined.**
+
+**THREE — THE BLIND SPOT IS *THE LAYER* (R287), AND THE SCREEN PROVES IT ON HEDGEHOG.** GSE225879 gives the
+screened cells' CPM: **Hhip 0.10 · Nppc 0.00 · Loxl2 0.20 · Nrk 1.30 · Ihh 1.31 · Scube3 7.60** against
+**Sufu 47.8 · Ptch1 142.6 · Smo 165.7 · Gnas 737 · Col2a1 1629.** The culture has a hedgehog **transduction**
+apparatus with **no ligand and no secreted antagonist** — which is why the ligand-INDEPENDENT brakes score
+enormously and Hhip cannot score at all. ⛔ **The nulls on HHIP, NRK and LOXL2 are UNINFORMATIVE (CORR-334).**
+✓ **POSITIVE CONTROL, AND IT IS EXACT: FBN1 IS transcribed (230.7) and IS null** — reproducing `sedes2022`,
+where deleting Fbn1 from CHONDROCYTES gives no overgrowth because the control is perichondrial. **The blind
+spot is demonstrated, not asserted.**
+
+**FOUR — ⭐ THE BEST FINDING: ON ONE PATHWAY, THE SIGN FLIPS WITH DEPTH INTO THE CELL.**
+| Hh brake | compartment | human pLoF | screen |
+|---|---|---|---|
+| **HHIP** | **SECRETED** | **+9.92 cm** | invisible (0.10 CPM) |
+| **PTCH1** | cell-surface receptor | **−1.56 cm** | **+6.004** (2° +5.041) = matures early |
+| **SUFU** | intracellular | — (`xiu2022` femur **−21/−30%**) | **+3.628** (2° +5.270) |
+**CORR-300 derived a THIRD time and for the first time QUANTIFIED on one pathway with a human number at each
+node. PTCH1's −1.56 cm had never been used here.**
+⚠ **It puts a COST on the HHIP lead without removing it:** cell-autonomous Hh activation ACCELERATES
+maturation = spends the period, while `haraguchi2025` says limb-restricted Hhip1 loss HOLDS THE PLATE OPEN to
+53 wk. **The tension IS the secreted-vs-inside distinction.** New gap:
+`g_l3_does_a_secreted_hedgehog_antagonist_perturbation_delay_maturation_timing_rather_than_only_enlarge_the_plate`.
+
+**FIVE — cAMP's MATURATION DIRECTION IS NOW CAUSAL AND BIDIRECTIONAL: R306's grade E → C.**
+· **Gnas KO (LESS cAMP) → +0.995, 2° +3.023 at p 6.90 = ACCELERATED.** Human GNAS pLoF **−9.36 cm**; AHO has
+**premature epiphyseal closure**. Three lines, one direction.
+· **Prkar1a KO (MORE PKA output) → −3.957, 2° −2.291 at p 6.47 = DELAYED.** Mirror lesion, mirror result.
+⛔ **DOES NOT REOPEN THE AXIS.** R307: the gain end is **Jansen's** — max cAMP, SHORT, disarrayed zones — so a
+delayed plate at high cAMP is **CORR-292's JAM**, and this assay measures a MARKER not a LENGTH and cannot
+tell them apart. R309: the CREB microdomain opposes erdafitinib. **What it specifies is an agent that does
+not exist: a SMALL, CREB-SPARING increment in chondrocyte PKA output.**
+
+**SIX — ⚠ NEW CONTRAINDICATIONS (target loss ACCELERATES maturation → its inhibitor SPENDS the period):**
+- ⛔ **TAZEMETOSTAT (EZH2, approved).** Eed **+2.654**, Ezh2 **+1.874**, Suz12 **+1.525**, all replicating.
+  PRC2 was already DEAD (R281 `gao2024`); this makes it **directionally harmful**, on a third independent line.
+  **DOT1L +1.865** adds a fourth chromatin node — **pinometostat**.
+- ⚠ **FKBP1A +4.605 (p 8.60), 207 CPM — SEVEN approved drugs: sirolimus/everolimus/temsirolimus/zotarolimus,
+  tacrolimus, pimecrolimus.** **CAUTION ON MECHANISM:** these BIND FKBP12 and act through the complex rather
+  than deleting it, so the phenocopy is partial. Still a **SECOND independent line against rapalogs** after
+  R300's MTOR −3.65 cm.
+- ⚠ **ALDH2 +1.111 (p 6.60), 241 CPM — DISULFIRAM is an approved ALDH2 inhibitor.** Direct. The extrapolation
+  to **acetaldehyde/alcohol** loading the same enzyme is grade E, costs nothing, and was never mentioned here.
+- **CSNK2B +3.620** (silmitasertib) and **SMAD6 +3.827** with FKBP1A = a coherent **BMP-brake** module.
+- ⚠ **FOUR CILIARY GENES ACCELERATE: Fuz +3.656, Wdpcp +3.120, Traf3ip1/IFT54 +3.040, Pibf1 +2.924.**
+  **R294's open gate now LEANS.** R294 found AZD4547 SHORTENS cilia in normal mice (P<0.001, 3 tissues) and
+  left the net effect unmeasured; this supplies the missing half in the **unfavourable** direction — less
+  ciliary function, earlier maturation, less period. **Grade D** (genetic nulls ≠ drug-induced shortening;
+  monolayer ≠ plate; no length). Subject is **WT-FGFR3 on a pan-FGFR inhibitor.**
+
+**SEVEN — WHAT THE SCREEN SAYS ABOUT OUR OWN LEADS.**
+✗ **INFORMATIVE NEGATIVES (gene expressed, no effect): Tnks 195.7 and Tnks2 231.0 both null** — tankyrase does
+not move maturation timing cell-autonomously, consistent with R302/303 placing it on the SPIN4 signature
+(N and λ) rather than the period. **Tet1 82.3 null. Amd1 92.5 null. Fbn1 230.7 null** (the positive control).
+⚠ **CHD8 — COHERENT AND UNVALIDATED.** Human **+10.22 cm**, screen D4 **−1.029** = delayed = longer period =
+taller — the **first kosmicki tall-gene with a coherent causal chondrocyte mechanism**. ✗ **Fails the
+secondary screen** (−0.558 p1.62; −0.415 p1.53), and the ASD/ID/macrocephaly baggage stands.
+⚠ **BRD2 is the only clean delayer replicating at BOTH secondary timepoints** (1° −1.290 p6.07; 2° −0.984
+p5.00 and −0.966 p3.39; 320 CPM). **Pelabresib approved; apabetalone phase 3, oral.** ✗ BET inhibitors are
+broadly antiproliferative — which is the exact essentiality confound contaminating this direction. Grade D.
+⚠ **KDM1A/LSD1 FAILS ITS OWN CONSISTENCY CHECK** — 1° D4 −1.052 but 1° D15 **+0.139**, vs 2° D15 −1.769.
+A sign flip. Recorded (it sits in the live H3K4 arm; bomedemstat is oral phase 3) but **not promotable**.
+
+**EIGHT — WHAT R311 DOES NOT DO: it produces NO addition to the stack.** Every candidate is occluded by an
+arm already present (PDE3), confounded by essentiality (BRD2), self-inconsistent (KDM1A), or an agent that
+does not exist (CREB-sparing PKA). Its products are a **contraindication list**, a **calibrated dataset any
+later round can query** (`atlas/data/round311/`, `atlas/quant/notebooks/p10_01_gse225878_crispr_maturation/`),
+and the demonstration that **the atlas's two best leads sit where this class of experiment cannot look.**
+
 ## ⛔⛔⛔ R310 — **THE cAMP AXIS IS CLOSED FOR THIS CASE.** PDE3B is SYSTEMIC. Decided by two human tests.
 
 **TEST 1 — PheWAS (`kosmicki2026` Table S27, on disk since 2026-08-12, never opened).** PDE3B's 27 traits,
@@ -996,7 +1118,8 @@ the answers are opposite. Worse: **PDE4B's abundance may itself be compensation*
 ✗ **WITHDRAWN: PDE4/PDE4B as the node; roflumilast and apremilast as height candidates.**
 ✓ **PDE3 is the only direction left on this axis** — human +1.22 cm and mouse +4.597 agree, which nothing
 else here does. Liabilities unchanged: 5.0 CPM locally (2nd-least of 15), likely systemic, **cilostazol boxed
-warning**, and no PDE inhibitor of any subtype has a bone-length endpoint in any species.
+warning**. ⛔ **AND THE CLAUSE THAT USED TO END THIS LINE — "no PDE inhibitor of any subtype has a
+bone-length endpoint in any species" — IS FALSE AND WAS DELETED IN R311. See CORR-333.**
 ⚠ **Now explicit: PDE3B's effect may be beneficial BECAUSE it is systemic/metabolic** — in which case the
 local-target frame driving five rounds is the wrong frame for this gene and CORR-327 does not apply to it.
 
