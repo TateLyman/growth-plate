@@ -917,6 +917,50 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⭐⭐ cAMP IS A HUMAN HEIGHT-SETTING SECOND MESSENGER (R305) — bidirectionally anchored, and the plate has it
+
+**Three genes, two directions, one molecule, 1.45M exomes:**
+| gene | role | pLoF | P | n_het |
+|---|---|---|---|---|
+| **GNAS** | Gs-α → **makes** cAMP | **−9.36 cm** | 4.3e-06 | 12 |
+| **ADCY6** | adenylyl cyclase → **makes** cAMP | **−2.70 cm** | **5.1e-13** | 355 |
+| **PDE3B** | phosphodiesterase → **degrades** cAMP | **+1.22 cm** | **5.1e-13** | 1,761 |
+
+**ADCY6 and PDE3B share P=5.1e-13 with opposite signs and opposite enzymatic roles** — the NPR2/NPR3
+control structure, arrived at independently on another axis. ✓ **Clinical genetics agree without statistics:
+GNAS LoF = pseudohypoparathyroidism 1a / Albright hereditary osteodystrophy = SHORT STATURE + brachydactyly.**
+✓ Mouse concords: Adcy2/6/9 shorter on loss; **Pde3b tibia +4.597, P=9e-07.**
+
+- ✓ **PASSES THE RECEIVER TEST (CORR-327) — the first axis in rounds to do so.** GNAS **32/60 cells, 12,047 RZ
+  → 27,045 PHZ**; **PTH1R 5/5 BOTH donors, 2,965 RZ → 49,326 HZ**; ADCY2 (8,789 PHZ), ADCY3, ADCY6;
+  PRKACA/B/AR1A; **ATF4 5/5 both donors ~10,000 everywhere**; SIK3 6,495 PHZ; HDAC4; **MEF2C 13,179 HZ.**
+  Production, receptor, kinase and downstream arm all present and hypertrophy-weighted.
+- ⚠ **THE EXCEPTION IS THE DRUGGED NODE.** **PDE3B 1/15 clean donor, PDE3A 1/20** — the weakest elements —
+  while **PDE4A (4,257 PZ) and PDE4B are better expressed.** So: PDE3 has the genetics and not the
+  expression; PDE4 has the expression and **no human height genetics at all**. Neither has both. Roflumilast
+  and apremilast are approved oral PDE4 inhibitors. **Unresolved and recorded as the sharpest open choice.**
+  Gap: `g_l3_is_the_pde3_height_effect_local_or_systemic`.
+- ⛔ **THE STRONGEST COUNTER, AND IT RESOLVES.** Raising cAMP via **PTH1R was tested with a terminal length
+  endpoint and was NULL**: teriparatide femoral length **+1.5% / +3.4% at 6 mo → 0.0% in EVERY arm at 26 mo**
+  (FDA package) — acceleration onto an unchanged asymptote, failure mode #1. **But PTH1R is ALSO the one gene
+  on this axis whose human sign is DISCORDANT (+2.49 cm — losing a cAMP-raising receptor makes people
+  TALLER).** Human genetics and rat pharmacology agree that *the PTH1R route* is not a length lever, which
+  separates it from the axis. PTHrP/Ihh is a feedback controller that DELAYS hypertrophy — not a tonic cAMP
+  rise. **This does not rehabilitate teriparatide, and the same interim-gain/terminal-null pattern is exactly
+  what would sink a PDE3 inhibitor. Untested, so the animal experiment must read out TERMINAL length.**
+
+## THE CROSS-SPECIES CONCORDANCE TABLE (R305) — 207 human genes × IMPC mouse length
+**52 have mouse length data: 42 concordant, 10 discordant, 83 no mouse endpoint.** Discount for skew
+(chance ≈56%, not 50%). **Positive control: GHRH human −4.53 cm vs mouse −9.040 at P≈0.**
+- ✗ **DPP9 IS DEAD — and it was R300's promotion.** Human **+2.50** vs **mouse tibia −4.062, P=5.9e-08.**
+  Significant both species, opposite, mouse effect nearly 2× the largest concordant one. **Run the mouse check
+  BEFORE promoting on tractability.**
+- ✗ **PDE5A dies a third time**, independently: mouse body length −1.092, P=2.3e-05, discordant.
+- ⚠ **SCMH1 (+6.65, 4th-largest human effect) weakly discordant** (mouse −0.575, P=0.09). Not a kill; a warning.
+- ⚠ **HHIPL1 discordant with BOTH sides significant** — human −1.02 (1.2e-05) vs mouse tibia +1.271 (3.6e-05).
+- ✓ **TET1 CONCORDS** — human +8.32, mouse body length **+0.282, P=0.022**, the rare positive in both species.
+- ✓ **HLTF concords at strength in both** — human +1.47 (1.1e-10), mouse +0.058 (1.1e-07).
+
 ## ⭐ PDE3B (R304) — the top lengthening knockout in IMPC, concordant in humans, approved oral drug
 
 **`atlas/data/round303/impc_length_endpoints_all.json` — 12,068 length rows, 7,216 GENES.** CLAUDE.md's

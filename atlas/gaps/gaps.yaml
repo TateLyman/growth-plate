@@ -1,4 +1,37 @@
 gaps:
+- gap_id: g_l3_is_the_pde3_height_effect_local_or_systemic
+  question: Is PDE3B's human height effect exerted in the growth plate, or systemically through its adipocyte
+    and hepatic insulin biology? The transcript is near background in the only human growth-plate dataset while
+    the genetics are among the strongest in the 207.
+  type: known_unknown
+  layer: L3
+  why_it_matters: PDE3B is the strongest cross-species candidate in the file - human pLoF +1.22 cm at P=5.1e-13
+    across 1,761 heterozygotes, and mouse Pde3b-null tibia +4.597 at P=9e-07, the largest lengthening effect among
+    7,216 genes - and the difference between a local and a systemic mechanism decides whether an approved oral
+    PDE3 inhibitor is a plausible agent or a category error. The wider cAMP axis passes the receiver test emphatically
+    (GNAS, PTH1R, ADCY2/3/6, PRKACA/B, ATF4, SIK3, HDAC4, MEF2C all present and hypertrophy-weighted), so the
+    axis is local even if this particular phosphodiesterase is not. If the effect is systemic and metabolic, the
+    target is the wrong one and PDE4 - better expressed in the tissue but carrying no human height genetics -
+    becomes the question instead.
+  what_is_known: PDE3B is 1/15 probe-donor cells in the clean donor of GSE9160, a single prehypertrophic detection
+    at 794, and 0/15 in donor 2; PDE3A is 1/20 and 2/20. PDE4A (5/25, peaking 4,257 proliferative) and PDE4B (5/15)
+    are better represented. The platform is known to miss low-abundance transcripts - it missed NPPC, vosoritide's
+    own ligand, by one to two orders of magnitude. PDE3B's best-characterised biology is adipocyte and hepatic
+    insulin signalling. hirota2022 found Pde3a and Pde3b expression unchanged through chondrocyte differentiation
+    and cilostamide inert on the CNP axis, while establishing that a cAMP/PKA arm does act on hypertrophic zone
+    elongation.
+  what_is_missing: 'PDE3B protein in growth-plate cartilage - the atlas has only microarray transcript evidence
+    and only from two donors. Also missing: a cartilage-specific Pde3b deletion, which would separate a local
+    effect from a systemic one directly; and body length for the IMPC Pde3b line, which was not reported - only
+    tibia.'
+  discriminating_experiment: 'Two arms, both cheap. First, immunohistochemistry for PDE3B protein across growth-plate
+    zones in human or mouse tissue, which settles presence independently of the microarray''s sensitivity floor.
+    Second and decisive, a cartilage-restricted Pde3b deletion (Col2a1-Cre or Acan-CreER) against the germline
+    null, with terminal femur and tibia length: if the conditional reproduces the +4.597 tibia effect the mechanism
+    is local and a PDE3 inhibitor is on-target; if only the germline null lengthens, the effect is systemic and
+    the agent is a category error. Read the hypertrophic zone decomposition in both, since the proposed mechanism
+    is h_term-specific.'
+  status: open
 - gap_id: g_l12_does_a_pde3_inhibitor_lengthen_bone_in_a_normal_animal
   question: Does an approved PDE3 inhibitor - cilostazol or milrinone - lengthen long bone when given to a NORMAL
     growing animal? The gene has the largest lengthening knockout in IMPC and a concordant human effect, and no
