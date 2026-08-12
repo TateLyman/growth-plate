@@ -63,3 +63,15 @@ matrix already vendored and analysed).
    as `chu2026`.
 5. **bioRxiv PDFs — 429** (rate-limited, may succeed later), incl. 2025.03.14.642964 and 2025.03.12.642613.
 6. **PRJNA478935 / SRA** — raw SRA, terabyte-scale, fetal. Deliberately skipped.
+
+## kosmicki2026 supplement — RECEIVED 2026-08-12
+`kosmicki2026_supp_tables_S1_S11.xlsx` (the two uploads were byte-identical duplicates; one kept).
+Contains **Tables S1-S12**. Verified by row count:
+- **Table S4 = 209 rows = THE 207 GENE-BASED-TEST GENES.** The atlas has been working from the 17 in
+  main-text Table 1 plus HHIP read out of the article prose. This is the full set.
+- **Table S3 = 128 rows = the 105 significant rare nonsynonymous single variants in 87 genes.**
+- Columns include ENSG, symbol, test type (burden), chr, pos, beta, SE.
+✗ **Tables S15 and S16 are NOT in this file** (ancestry-stratified; carry HHIP p.V496E AMR row and the
+FBN1 p.E1297G Peruvian row). They live in a different supplementary attachment.
+NEXT: cross Table S4 against `atlas/data/round298/undrugged_targets.txt` and against the CTD signed
+handles - a 207-gene target list changes the denominator of every druggability claim in rounds 297-298.
