@@ -1584,7 +1584,64 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
-## ⭐⭐⭐⭐⭐ R320 — **A COMPOUND: N-ACETYLCYSTEINE (sulfate donor).** R295 killed this arm on the WRONG genes.
+## ⭐⭐⭐⭐⭐ R321 — **THE COMPOUND IS ORAL SODIUM SULFATE.** Supersedes R320's choice of NAC.
+
+⭐⭐ **`morris1983` — 8 HEALTHY REPLETE ADULTS, four-way crossover, single oral doses, serum at 2 h:**
+| arm | serum inorganic sulfate | change |
+|---|---|---|
+| control | **0.410 ± 0.043 mM** | — |
+| **sodium sulfate decahydrate 9 g** | **0.513 ± 0.055 mM** | **+25%, P<0.001** |
+| **acetaminophen 1.5 g** | **0.311 ± 0.043 mM** | **−24%, P<0.001** |
+| ascorbic acid 6 g | 0.417 ± 0.059 mM | unchanged |
+Urinary sulfate rose with sodium sulfate, fell with paracetamol; creatinine clearance unaffected.
+⭐ **THIS IS ELEVATION IN REPLETE HUMANS — it answers CORR-203, which was R320's own stated main objection.**
+NAC's only human demonstration is **IV, in a transporter-null patient**, with low oral bioavailability and an
+antioxidant confound. **Sodium sulfate wins on evidence.** ✓ >80% of an oral sulfate dose is absorbed.
+
+⭐ **THE MECHANISTIC PREMISE IS CONFIRMED — and it kills R320's own hedge.** `paganini2020`: **"In
+chondrocytes, THE MAIN SULFATE SOURCE IS THE EXTRACELLULAR SPACE,** then sulfate is taken up and activated in
+the cytosol to the universal sulfate donor." So plasma sulfate is the HEAD of the chain, not a redundant
+input. Chain: **plasma sulfate → SLC26A2 (118 CPM, 82% of cells) → PAPS via PAPSS1/2 (PAPSS2 530 CPM, 94% of
+cells) → CHST3/CHST11/UST → sulfated aggrecan GAG → fixed charge density → osmotic swelling → h_term.**
+
+⛔⛔ **NEW QUANTIFIED CONTRAINDICATION — PARACETAMOL / ACETAMINOPHEN.** One ordinary **1.5 g dose (three
+500 mg tablets) drops serum sulfate 24%.** Paracetamol is cleared substantially by sulfate conjugation,
+drawing on the same pool chondrocytes take up. `li2021_sulfation`: the sulfation pathway is "often
+underestimated", **low sulfate reserves raise toxicity risk**, and serum inorganic sulfate should be a
+biomarker. **R316's audit flagged NSAIDs on a grade-E argument and never named paracetamol, which is not an
+NSAID and has far stronger evidence.** Free to stop.
+✓ **CORRECTION TO MY OWN SPECULATION: ascorbic acid 6 g did NOT deplete sulfate.** The megadose-vitamin-C
+contraindication stands **only** on the TET/dioxygenase argument (R302) and gains nothing here.
+
+⭐ **COMPOUND COMPARISON, RUN PROPERLY:**
+| agent | raises human plasma inorganic sulfate? | liability |
+|---|---|---|
+| **SODIUM SULFATE (oral)** | **YES — +25%, n=8 healthy, P<0.001** | **osmotic laxative**; reabsorption saturable |
+| MgSO₄ (Epsom) | same anion, no separate data | laxative + Mg load |
+| **MSM** | **NOT demonstrated for inorganic sulfate** (³⁵S-MSM well absorbed, tmax 2.1 h, sulfur enters protein fractions — but authors could not separate methionine/cysteine incorporation from sulfation) | non-laxative; separate MSC chondrogenic effects |
+| NAC | IV only, deficient patient | low oral bioavailability, antioxidant confound |
+
+⛔ **THE CEILING IS PHYSIOLOGICAL, NOT GUESSED.** Renal tubular reabsorption is **capacity limited**
+(reabsorbed fraction falls as filtered load rises, r=−0.54, P<0.005) — plasma sulfate **plateaus** and excess
+spills into urine. Dose-limiting toxicity is **osmotic diarrhoea** (risk rises >~600 mg/L in drinking water);
+9 g decahydrate ≈ **2.7 g sulfate ion** against normal total daily throughput of **3.3–5.6 g**, so the tested
+dose is a large acute addition and likely laxative as a bolus. **Divided dosing untested. No UL exists.**
+
+⛔ **THE STRONGEST ARGUMENT AGAINST, STATED FAIRLY:** the DRI panel concluded **"sulfate requirements are
+thus met when intakes include recommended levels of sulfur amino acids"** and set no RDA, no AI, no UL.
+✓ **The counter:** `scherer2025`'s **GRADED effect on plasma sulfate AND height in HETEROZYGOTES** puts the
+dose-response inside the ordinary range. The DRI position is about avoiding deficiency; it does not address
+whether more than adequate helps. ⚠ `long2025`: PAPSS2-null boy on GH went **−5.02 → −3.87 SD in 2 y 3 m** —
+GH works partially through a broken sulfation pathway but leaves a severe floor. Relevant: he is on GH.
+
+⛔ **STILL MISSING — TWO CONSECUTIVE LINKS.** ① no experiment raises plasma sulfate above normal and measures
+cartilage PG sulfation in a replete animal; ② **no sulfate donor has a bone-length endpoint in any species.**
+⭐ **The experiment: graded sulfate in a growing rodent, ³⁵S incorporation into cartilage PG, caliper on femur
+AND spine. Cheapest unrun experiment in this file.**
+⭐ **WHAT TO GET ME: `scherer2025`'s supplementary effect size for plasma sulfate on height** — it would
+convert "+25% plasma sulfate" into an expected centimetre figure. Nothing else would sharpen this as much.
+
+## ⭐⭐⭐⭐ R320 — the target work: R295 killed this arm on the WRONG genes (agent superseded by R321).
 
 ⛔ **THE OBJECTION WAS VOID.** R295 wrote *"SLC13A1 0/10, SLC26A1 0–1/15 → scherer2025's sulfate arm is
 SYSTEMIC RENAL, not local."* **Both are KIDNEY transporters.** The gene that carries sulfate INTO cartilage
