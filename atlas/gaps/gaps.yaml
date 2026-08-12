@@ -16686,3 +16686,73 @@ gaps:
     node, haraguchi2025''s length gain is being bought against the period, and the lead is in trouble at bone age
     16. Run the same three readouts on a PTCH1 perturbation in parallel as the internal positive control, since
     the screen already predicts acceleration there.'
+- gap_id: g_l12_what_is_the_postnatal_bone_length_direction_in_col2a_cre_tgfbr2_null_mice
+  type: known_unknown
+  layer: L12
+  tractability: 5
+  question: In baffi2004's Col2a-Cre;Tgfbr2 conditional knockout, the mice that survived postnatally showed
+    "alterations in the length of specific bones". WHICH bones, and in WHICH DIRECTION?
+  why_it_matters: >-
+    It is the only postnatal bone-length readout for chondrocyte-restricted TGF-beta loss in any species, and it
+    decides the sign of the atlas's best-mechanism axis for a subject whose residual is trunk-dominant. The
+    embryonic half of the same paper is unambiguous and inconvenient - long bone length UNALTERED at E17.5 while
+    the axial skeleton is severely affected and the intervertebral discs are missing or incomplete - so if the
+    postnatal long bones are LONGER, chondrocyte TGF-beta blockade buys limb length at an axial price, which is
+    the wrong trade here; if they are SHORTER, the whole receptor-level arm of this axis is contraindicated and
+    only the perichondrial ligand-availability arm (sedes2022) survives.
+  what_is_known: >-
+    Prx1-Cre;Tgfbr2 loss gives short limbs and death at birth from an E15.5 patterning defect (seo2007).
+    Prx1-Cre;Fbn1 loss gives ~7 per cent LONGER limb bones accruing entirely postnatally through reduced
+    perichondrial TGF-beta (sedes2022). Col2a-Cre;Tgfbr2 loss leaves embryonic long bone length unaltered
+    (baffi2004). Human pLoF burden on the ligand and matrix side is positive - TGFB3 +7.68 cm, FBN1 +8.82,
+    LTBP2 +2.36 (kosmicki2026).
+  what_is_missing: >-
+    The direction and magnitude in baffi2004's postnatal survivors. The abstract states the finding and omits the
+    sign; the paper is Developmental Biology 2004;276:124-142 and is not open access.
+  nearest_evidence:
+  - baffi2004
+  - seo2007
+  - sedes2022
+  - kosmicki2026
+  nearest_evidence_note: The nearest answer is the embryonic arm of the same paper, which measured long bone
+    length and found it unaltered - so any postnatal difference is an accrual effect and not a patterning effect.
+  tractability_note: Requires one paywalled 2004 paper. Nothing else about it is hard.
+  discriminating_experiment: Read baffi2004 in full and record the bones, the direction, the magnitude, the age
+    and the n. If the paper reports it ambiguously, the modern equivalent is a tamoxifen-inducible
+    Acan-CreERT2;Tgfbr2 deletion in a juvenile mouse with terminal femur, tibia and vertebral body length.
+- gap_id: g_l12_does_a_tgf_beta_lowering_agent_lengthen_bone_in_a_normal_growing_animal
+  type: known_unknown
+  layer: L12
+  tractability: 4
+  question: Does any TGF-beta-lowering agent change BONE LENGTH in a normal growing animal?
+  why_it_matters: >-
+    Four independent routes now nominate the perichondrial TGF-beta axis - human pLoF burden, sedes2022's
+    conditional deletions, human growth-plate expression, and round 323's unbiased HPO query - and not one of
+    them is a pharmacological length endpoint. Round 288 searched and found none. The axis has clinical-stage
+    agents (galunisertib and vactosertib, oral ALK5 inhibitors; fresolimumab, a pan-TGF-beta neutralising
+    antibody) and an approved but mechanistically doubtful probe (an angiotensin receptor blocker).
+  what_is_known: >-
+    The skeletal TGF-beta pharmacology literature is entirely about bone MASS. TWO experiments dosed WILD-TYPE
+    animals on this axis and did not measure length - chen2015 gave losartan to wild-type mice, saw the
+    post-proliferative zone expand with total plate length unchanged, and never measured the femur; greene2021
+    gave the pan-TGF-beta neutralising antibody 1D11 at 0.5-10 mg/kg intraperitoneally to wild-type littermates
+    from 8-11 weeks of age and reported bone volume and strength only.
+  what_is_missing: A caliper. No dose-ranging, no new chemistry and no new model are required.
+  nearest_evidence:
+  - chen2015
+  - greene2021
+  - sedes2022
+  - mullen2019
+  nearest_evidence_note: >-
+    The nearest human data is AIMS - 192 participants aged 6-40, median 18, randomised to irbesartan or PLACEBO
+    for up to five years with annual body-surface-area-adjusted Z scores, so serial height must exist and has
+    never been analysed for growth. But the same trial found circulating TGF-beta unchanged, so an angiotensin
+    receptor blocker is a poor probe of this axis either way.
+  tractability_note: >-
+    The cheapest unrun experiment in the file. Two published studies already dosed wild-type growing mice with a
+    TGF-beta-lowering agent; both cohorts would have had femurs.
+  discriminating_experiment: >-
+    Give a normal growing mouse a graded dose of an ALK5 inhibitor or a pan-TGF-beta neutralising antibody from
+    weaning to skeletal maturity and measure TERMINAL femur, tibia AND vertebral body length, with perichondrial
+    pSmad2 as the pharmacodynamic readout. The vertebral arm is not optional - baffi2004 predicts the axial
+    skeleton is where chondrocyte TGF-beta loss does damage, and this subject's residual is trunk-dominant.

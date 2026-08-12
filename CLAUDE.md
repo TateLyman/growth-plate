@@ -213,6 +213,26 @@ Everything else is a gap to record and, where cheap, to fill.
    validator's duplicate-PMID check caught it, pre-commit.** Grep the identifier, not just the name — and
    run `validate.py` BEFORE believing a new reference is new.
 
+31. **Treating an ANATOMICAL LABEL on a data sheet as a CELL-TYPE label.** CORR-339 — GSE252289 has sheets
+   named `LUMBAR` and `THORACIC`, which looked like human axial growth-plate chromatin and therefore like
+   the trunk question answered in tissue. **Twelve controls written down before looking; the contrast fails
+   9 of 19.** The top "axial-specific" genes are one 4 Mb block of chr6 — HLA-A/E/F, HLA-DPA1/DPB1, TAPBP,
+   BAG6 — plus **B2M, which was one of the preregistered MUST-BE-NEITHER housekeeping controls and came out
+   98th percentile.** Reciprocally **ACAN and COL9A1 come out APPENDICULAR at the 0.1st and 0.3rd
+   percentile**: the cartilage fraction of the axial samples is DILUTED. **Fetal vertebral bodies are a
+   HAEMATOPOIETIC ORGAN.** The sheets compare tissue COMPOSITION, not chondrocyte regulation. Excluding the
+   MHC and fixing the pseudocount did not rescue them. → **Before any cross-site or cross-tissue contrast,
+   ask what ELSE is in each tissue, and put a marker of that contaminant in the control panel.**
+
+32. **Letting a "no length endpoint" line stand when the animals were ALREADY DOSED.** CORR-340 — it has now
+   happened **twice on the same axis and I only noticed on the second.** `chen2015` gave **losartan to
+   WILD-TYPE mice**, measured growth-plate zones, watched the post-proliferative zone expand, and never put a
+   caliper on the femur (R288 found this). `greene2021` gave the **pan-TGF-β neutralising antibody 1D11 at
+   0.5/1/5/10 mg/kg IP to WILD-TYPE littermates from 8–11 weeks** and reported bone volume and strength —
+   **not one longitudinal dimension.** Two labs, two agents, wild-type growing animals in hand both times.
+   **When you write "no agent has a length endpoint", also ask WHO HAS ALREADY DOSED THE RIGHT ANIMAL** —
+   that converts an unrun experiment into a re-measurement, and it is a different and much cheaper ask.
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -1584,6 +1604,97 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐ R323 — R304's OWN UNEXECUTED INSTRUCTION, RUN. Two independent unbiased screens, ONE axis.
+## And a correction to R318 that I have to make against myself.
+
+R304 closed with *"None assessed. Start the next round here, from data."* Rounds 305–322 all went elsewhere.
+The HPO files were supplied 2026-08-13, registered here as *"replaces per-syndrome manual curation"*, and
+never opened. Both are CORR-316/328 again.
+
+**ONE — THE 69 LENGTHENING KNOCKOUTS, ASSESSED.** `atlas/tools/round323_lengthening_knockout_screen.py`.
+42/69 are in the postnatal human growth plate; **20** have a **sex-agnostic** row at P<1e-4 with no opposing
+row; 22 are sex-specific-only or self-contradictory (**Nr1d1** body +1.479 female but **tibia −2.084**;
+**Drg2** body −0.412 P=2.9e-09; **Hdgfl3** tibia −1.577); 27 are not in the tissue at all — **Mstn, Pik3cg,
+Klk5, Marco** — so **four of R304's five named drugged candidates die on the free query.**
+⛔ **Of the 20 survivors exactly ONE has an approved matching inhibitor and it is PDE3B, closed in R310.**
+One has a clinical inhibitor: **LTA4H / acebilustat**, body +0.619 P=1.9e-05, 29.3 CPM — with its own second
+row at −0.787. **The rest have nothing.**
+⚠ **ENPP1** is the most abundant target in the file — **395 CPM in 88.5% of cells**, tibia +1.709 P=3.1e-08,
+"High-Quality Ligand / Small Molecule Binder" — and the published biology runs the OTHER way (Enpp1-deficient
+plates are thinner, −75% EdU⁺ chondrocytes; human biallelic loss = ARHR2 rickets, short). Not a lead.
+✓ **NCOR2** is the only **dose-dependent** series: het tibia **+1.104** (P=1.5e-06, combined sex), hom
+**+1.495**, second het row +0.596. No selective agent exists.
+
+**TWO — CORR-295 IS NOW A NUMBER. HPO: 1483 short-stature genes vs 180 tall = 8.2 : 1**, and **74 of the 180
+are annotated BOTH ways**, leaving 106 directional, 79 of them expressed in the human plate.
+(`HP:0008421 tall lumbar vertebral bodies` has exactly one gene: **NOTCH2**.)
+
+**THREE — ⭐ AND THE UNBIASED QUERY RETURNS THE PERICHONDRIAL TGF-β AXIS.** Tall-only ∩ growth-plate, by
+abundance: **TGFBR2 191.9 CPM in 87.9% of cells · TGFB1 157.9 · TGFBR1 77.9 · TGFB2 63.4 · SMAD3 61.2**
+(+ COL6A1 437, LOX 70.7, PLOD1 39.6, DSE, FKBP14, THSD4). The query knew nothing of FBN1 or R288.
+**Fourth independent route to one axis:** kosmicki (TGFB3 **+7.68 cm** P=4.0e-17, FBN1 +8.82, LTBP2 +2.36) ·
+sedes2022 (Prx1-Cre Fbn1 → **+7% longer**, postnatal, TGF-β1 add-back rescues) · GSE9160 (TGFBR2 12,902 PZ —
+CORR-327 **passes**) · this.
+⛔ **But CORR-331 applies to route (iv): Loeys-Dietz TGFBR1/2/SMAD3 alleles are missense with PARADOXICALLY
+INCREASED tissue TGF-β signalling — a named, unresolved paradox.** The HPO receptor rows carry no
+mechanistic direction. **The pLoF arm (TGFB3/FBN1/LTBP2) is not contested.**
+
+**FOUR — ⭐⭐ THE STRUCTURAL POINT: R315's DELIVERY WALL DOES NOT APPLY TO THIS AXIS.** Every delivery
+objection in this file is about reaching **avascular** cartilage. **sedes2022's whole result is that this
+axis does not act in the plate** — deleting Fbn1 from chondrocytes gives no overgrowth; the control is the
+**OUTER PERICHONDRIUM**, a vascularised sheath continuous with periosteum. A systemic agent reaches it.
+**The atlas's hardest obstacle and its best-mechanism axis do not overlap, and nobody had noticed.**
+
+**FIVE — ⛔ AND `baffi2004` IS THE DECISIVE COMPARTMENT CONTROL, ALREADY IN THE BIBLIOGRAPHY.** Three
+conditional deletions read together for the first time:
+· **Col2a-Cre (CHONDROCYTE) Tgfbr2 → LONG BONE LENGTH UNALTERED at E17.5, SEVERE AXIAL DEFECTS: vertebral
+  size/spacing, neural-arch closure, transverse processes, costal joints — and INTERVERTEBRAL DISCS MISSING
+  OR INCOMPLETE.**
+· **Prx1-Cre Tgfbr2 → short limbs, joint fusion, DEAD AT BIRTH, defect from E15.5** (`seo2007`).
+· **Prx1-Cre Fbn1 → +7% LONGER, NORMAL AT BIRTH, accruing 1–3 months** (`sedes2022`).
+Same driver for the last two, opposite results — **but not the same experiment: embryonic PATTERNING vs
+postnatal ACCRUAL.** CORR-299 separates them, so seo2007 is a weaker objection than it looks.
+⛔ **baffi2004 is not weakened that way and it points the wrong way for THIS case:** chondrocyte TGF-β is
+**dispensable for long-bone length and required for the axial skeleton and the discs** — and his residual is
+trunk-dominant (R274/R318) with the disc named modifiable in R319.
+⭐ **THE DECIDING NUMBER IS PAYWALLED.** baffi2004's abstract: postnatal survivors *"showed alterations in
+the length of specific bones"* — **DIRECTION NOT STATED.** Only postnatal length readout for
+chondrocyte-restricted TGF-β loss in any species. **Dev Biol 2004;276:124-142, PMID 15531369. ASKED FOR.**
+
+**SIX — ⛔ MEASURED NEGATIVE: the GSE252289 `LUMBAR`/`THORACIC` ATAC sheets are NOT an axial reference.**
+See CORR-339. Fails 9/19 preregistered controls; top hits are one 4 Mb MHC block + B2M (a failed
+housekeeping control, 98th pct); ACAN and COL9A1 come out **appendicular** at the 0.1st/0.3rd pct. They
+compare **tissue composition** — fetal vertebral bodies are haematopoietic. **Do not re-run this.**
+✓ Survives: 4/6 limb-identity controls behave (TBX5 0.0 pct, HOXD13 1.5, PITX1 3.1, HOXA13 5.5), and
+**HHIP's promoter IS accessible in human lumbar vertebral chondrocytes** (a presence call, needs no contrast).
+
+## ⛔⛔ R323 CORRECTS R318 AGAINST ITSELF — **THE COMPARTMENT COORDINATE IS ALLELE-SPECIFIC, NOT GENE-SPECIFIC**
+
+Same cohort, same three absolute traits, same method — but each gene's lead variant taken from the
+**STANDING-HEIGHT** scan instead of the sitting-height-**RATIO** scan. `atlas/data/round323/compartment_on_standing_height_leads.json`
+| gene | R318 (%trunk, ratio-selected allele) | R323 (%trunk, standing-height lead) |
+|---|---|---|
+| **HHIP** | **95%** | **48.0%** |
+| **TET1** | **96%** | **55.2%** |
+| **FBN1** | **5%** | **53.3%** |
+**R318 selected variants for a large RATIO effect — selection on the outcome, which guarantees extreme
+values.** Both numbers are true of the alleles they describe; neither is "the gene's compartment".
+→ **"HHIP is 95% trunk" must be restated as an ALLELE fact, and R318's trunk-selection criterion for
+ADDITIONS is much weaker than it looked.** ✓ **What survives R318:** the CNP-is-limb result (NPR3/NPPC are
+among the strongest ratio loci in the genome, where selected ≈ unselected) and its base-rate check.
+✓ **On unselected leads the whole TGF-β/microfibril module is LIMB-leaning** — LTBP2 **8.2%**, LTBP3 17.1%,
+TGFBR1 18.8%, FBN2 28.6%, SMAD3 34.8%, PLOD1 34.8%, LTBP4 35.0%, SMAD2 35.5%, TGFBR2 36.1% — **only the
+LIGAND TGFB3 (54.7%) and FBN1 (53.3%) are near balance. R289 was right and R318 was not the reason.**
+
+## ⭐ R323 — THE CHEAPEST UNRUN EXPERIMENT IS NOW A RE-MEASUREMENT, AND IT HAS HAPPENED TWICE
+`chen2015` gave **losartan to WILD-TYPE mice**, watched the post-proliferative zone expand, never measured
+the femur. **`greene2021` gave the pan-TGF-β neutralising antibody 1D11 at 0.5/1/5/10 mg/kg IP to WILD-TYPE
+littermates from 8–11 weeks** and reported bone volume and strength — **no longitudinal dimension.** Two
+labs, two agents, wild-type growing animals both times. See CORR-340. Gap:
+`g_l12_does_a_tgf_beta_lowering_agent_lengthen_bone_in_a_normal_growing_animal`.
+**Clinical-stage agents on this axis: galunisertib, vactosertib (oral ALK5 inhibitors), fresolimumab
+(pan-TGF-β neutralising antibody). None approved; none with a bone-length endpoint in any species.**
+
 ## ⭐⭐⭐⭐⭐ R322 — **SULFATE IS TRUNK-SPECIFIC (P=2.2e-07).** And the same physiology DOWNGRADES the supplement.
 
 Operator supplied `scherer2025`'s supplementary tables. **Both questions closed.**
