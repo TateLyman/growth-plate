@@ -162,6 +162,19 @@ Everything else is a gap to record and, where cheap, to fill.
    CORR-320 (gudernova2016) and CORR-324 (compound vs gene) — third instance of a citation being filed under
    a conclusion it does not carry.
 
+25. **Treating a CONTESTED disease mechanism as an established direction.** CORR-331 — R306 and R308 both
+   built on "acrodysostosis type 2 = PDE4D gain of function" when the field has **two named competing
+   hypotheses** and the best-designed study favours the opposite one. The tell was available: a 2024 review
+   titled *"too much or too little?"*. **When a syndrome is used to infer a drug's direction, check whether
+   the field agrees on the direction — a disease name is not a mechanism.**
+
+26. **Ranking drug targets by ABUNDANCE in the tissue.** CORR-332 — R308 picked PDE4B over PDE3B because it
+   is 30× more abundant. But **PDE3B loss is +1.22 cm and PDE4D loss is −4.81 SDS**: two cAMP-degrading
+   enzymes, one tissue, opposite signs. **Abundance says which enzyme is PRESENT; it says nothing about
+   which POOL carries the signal.** Second-messenger systems are compartmentalised, so for cAMP, cGMP, Ca²⁺
+   and PIP₃ the question is always WHICH MICRODOMAIN — and an abundant isoform may be abundant *because* it
+   is compensating for the one that matters.
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -916,6 +929,43 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   chondrocyte literature says polyamines **stimulate** the differentiated phenotype, and DFMO is used to
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
+
+## ⛔⛔ R309 — **PDE4 INHIBITION IS WITHDRAWN. IT PHENOCOPIES A −4.81 SDS DYSPLASIA.** Read before R306/R308.
+
+**CORR-331 — I stated a CONTESTED mechanism as fact in TWO rounds.** R306 and R308 both used "acrodysostosis
+type 2 = PDE4D **gain** of function → less cAMP → short, so a PDE4 inhibitor is the corrective inverse."
+**That direction is an open controversy.** `gardner2024` names both hypotheses: **over-activation** (mutant
+PDE4D overactive → cAMP falls) vs **over-compensation** (mutations **REDUCE** PDE4D activity → cAMP rises →
+other PDEs overexpress → net signalling falls). It also notes neither accounts for **LOCALISATION** — which
+is exactly R308's open question.
+
+⛔ **AND THE BEST-DESIGNED STUDY FAVOURS THE DIRECTION THAT KILLS IT.** Native, unmanipulated **ACRDYS2
+patient fibroblasts**: PDE4D transcript, protein **and enzymatic activity all REDUCED**; **phospho-CREB
+INCREASED**; PRKAR1A elevated; **PDE4B UPREGULATED as compensation for lost PDE4D.**
+→ **The human condition most closely resembling chronic PDE4D inhibition is a short-stature dysplasia with
+raised pCREB** — `morgul2025`: **−4.81 SDS**, cup-shaped knee metaphyses, mosaic growth-plate involvement.
+**A PDE4 inhibitor is a PHENOCOPY RISK, not a corrective direction.**
+
+✓ **AND IT CONFIRMS R307'S PREDICTION FROM AN INDEPENDENT LITERATURE.** R307 argued on mechanism alone that
+cAMP→PKA→CREB opposes erdafitinib. The patient cells now supply the missing human measurement.
+→ **THREE INDEPENDENT LINES SAY DO NOT RAISE cAMP IN THIS STACK:** Jansen's (SIK3/HDAC4 discharge block,
+Hdac4 rescue) · `horike2026` (CREB jams the RZ; erdafitinib works by lowering CREB) · ACRDYS2 (reduced PDE4D
+→ raised pCREB → −4.81 SDS).
+
+⭐ **THE DURABLE FINDING — cAMP IS NOT A SCALAR.** Two cAMP-degrading enzymes, same tissue, **OPPOSITE**
+human height effects: **PDE3B loss +1.22 cm** (P=5.1e-13; mouse tibia **+4.597**, largest of 7,216 genes) vs
+**PDE4D loss = acrodysostosis, −4.81 SDS.** A single well-mixed pool cannot do that. **The sign depends on
+WHICH MICRODOMAIN**, and PDE4D's is the CREB microdomain.
+⛔ **SO R308 USED THE WRONG CRITERION.** It ranked PDEs by **abundance** (PDE4B 152.8 vs PDE3B 5.0) and picked
+the abundant one. **Abundance says which enzyme is PRESENT, not which pool carries the SIGNAL** — and here
+the answers are opposite. Worse: **PDE4B's abundance may itself be compensation** for lost PDE4D.
+
+✗ **WITHDRAWN: PDE4/PDE4B as the node; roflumilast and apremilast as height candidates.**
+✓ **PDE3 is the only direction left on this axis** — human +1.22 cm and mouse +4.597 agree, which nothing
+else here does. Liabilities unchanged: 5.0 CPM locally (2nd-least of 15), likely systemic, **cilostazol boxed
+warning**, and no PDE inhibitor of any subtype has a bone-length endpoint in any species.
+⚠ **Now explicit: PDE3B's effect may be beneficial BECAUSE it is systemic/metabolic** — in which case the
+local-target frame driving five rounds is the wrong frame for this gene and CORR-327 does not apply to it.
 
 ## ⭐⭐⭐⭐ R308 — POSTNATAL HUMAN GROWTH PLATE, SINGLE-CELL, 79,934 CELLS. Opened at last. **PDE4B IS THE NODE.**
 
