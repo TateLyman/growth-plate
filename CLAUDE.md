@@ -1584,6 +1584,49 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ✅✅ R316 — **THE THING TO DO THIS WEEK.** Not a lever to add — a COST probably being paid right now.
+
+⭐ **rhGH LOWERS FREE T4, AND THE SIZE OF THE FALL PREDICTS A WORSE GROWTH RESPONSE.** CLAUDE.md carried
+*"does GH itself lower free T4 here?"* as **OPEN and UNSOURCED since R282.** It is not open (`behan2011`):
+rhGH suppresses thyroid function — commonest finding a **fall in thyroxine** (mechanism: ↑peripheral T4→T3
+conversion) — and separately **UNMASKS CENTRAL HYPOTHYROIDISM in 36–47%** of apparently euthyroid
+hypopituitary patients on GH. ⭐ **In children, a GREATER fT4 fall on starting rhGH = a WORSE growth
+response**, and a persistent fall *"can significantly reduce height velocity… levothyroxine should be
+considered."*
+⛔ **THIS SUBJECT IS ON GH AND HIS TSH / FREE T4 / FREE T3 APPEAR NOWHERE IN THIS ATLAS.**
+✓ Why it's a height endpoint: **T3 INDUCES HYPERTROPHY** (grade A) = h_term ≈ 80% of longitudinal growth ·
+`delvecchio2015` **215 pts / 20 yr: adequate levothyroxine restores final height to normal and EXCEEDS
+target** · `cammisa2024`: acquired hypothyroidism, catch-up often incomplete, **PUBERTAL-ONSET WORST** ← his stage.
+⛔ **CEILING, STATE IT WITH THE RECOMMENDATION:** the endpoint **SATURATES** at adequate replacement (dose and
+age at diagnosis did NOT predict final height). **T3 also ADVANCES maturation** — so supraphysiological dosing
+**spends the period** = failure mode #1. **Target mid-normal, not high. A cost to stop paying, not a lever to
+push.** This is CORR-293's *inversion*, unactioned since R282. ⚠ Prescription + titration → treating endocrinologist.
+
+⭐ **ONE BLOOD DRAW CLOSES FIVE OPEN QUESTIONS.** TSH/fT4/fT3 (above) · **fasting insulin + glucose → HOMA-IR**
+(decides metformin — the ONLY period-directed agent in R297's audit; open since R297) · **CRP + IL-6**
+(inflammatory tone, *never once recorded*) · IGF-1 (baseline 198) · **25-OH-D, Ca, PO4, PTH** (the baseline
+R278's AI bone cost must be read against).
+
+⭐ **TWO ZERO-RADIATION MEASUREMENTS ON FILMS HE LIKELY ALREADY HAS.**
+· **Run BoneXpert on the EXISTING left-hand film** — SETTLED since R282: GP + TW3 + **BHI** at zero extra
+  radiation/visits/cost. Method spread in `plluaas2026` = 0.5 y = **2.2 cm of predicted adult height.** If BA
+  is being read by eye, the most decision-relevant number in the case has an unquantified error bar.
+· **Baseline lateral T-L film + DXA** — R278: the AI's vertebral cost is an **EFFICACY** term (lumbar BMD Z
+  −1.33→−1.54 ana; wedging in 2 boys >4 yr) and **the residual is trunk-dominant**, so it subtracts from the goal.
+
+⭐ **THE SUBTRACTION AUDIT — costs nothing to stop.**
+· ⚠ **NSAIDs** — PTGS1 is the plate's COX (HZ 805; PTGS2 0/10 both donors) → PTGER4 → Gs → cAMP; lowering it
+  is the direction that shortens **every iPPSD member**. Grade E, watch-item.
+· ⛔ **ALPHA-KETOGLUTARATE** — common longevity supplement, **already a named contraindication here** (TET
+  co-substrate; TET1 loss = **+8.32 cm**). If it's in the stack, it comes out.
+· ⛔ **MEGADOSE VITAMIN C** — same dioxygenase logic (R302). Grade E. **HARD CAVEAT: megadosing only, NEVER
+  adequacy** — ascorbate is required for collagen hydroxylation and scurvy is a skeletal disease.
+· ⚠ **ALCOHOL / ACETALDEHYDE** — R311: **Aldh2 KO ACCELERATES maturation (+1.111, p 6.60, 241 CPM)** and
+  disulfiram is a direct contraindication; acetaldehyde loads the same enzyme. Grade E, free.
+· ⛔ **RE-RUN THE CONTRAINDICATION SCREEN AGAINST HIS ACTUAL MEDICATION LIST** — R300 said to; never done.
+  Now includes rapalogs/calcineurin binders, tazemetostat, pinometostat, silmitasertib, disulfiram,
+  teprotumumab, regorafenib, HDAC inhibitors incl. **givinostat**, DNMT inhibitors.
+
 - **Deliberately lowering thyroid tone to slow bone age.** R282/CORR-293. Tempting (`plluaas2026`'s proband
   had free T4 12.2 vs range 12.6–21.0 and his authors blamed it for the unadvanced bone age). But T3 *induces
   hypertrophy* (grade-A `thyroid_hormone_t3`), so lowering it is **discharge blockade = failure mode #1**; and
