@@ -1,0 +1,266 @@
+id: round303_tankyrase_taken_all_the_way_down_and_the_length_endpoint_was_on_disk
+name: >-
+  ROUND 303 - tankyrase taken all the way down. The atlas said "no tankyrase inhibitor has a bone-length
+  endpoint in any species" and the GENETIC length endpoint was sitting in the operator-supplied IMPC file
+  the whole time. Tnks-null mice: body length UNCHANGED, tibia nominally SHORTER, bone mineral severely
+  DOWN. But Axin2-het - the clean opposite-direction test - is body length -1.98 at P=9e-05, which
+  validates the direction. Both are true and they resolve. Plus the dose chain, computed as far as it goes
+aliases:
+- round 303
+- the tankyrase verdict
+- Tnks-null IMPC body length and tibia
+- Axin2 het is the direction test
+- why the oncology MTD is the wrong anchor
+- basroparib dose bounding
+type: hypothesis
+layer: L12
+stub: false
+summary: >-
+  ZERO - THE META-RESULT FIRST, BECAUSE IT IS THE MOST TRANSFERABLE THING HERE. Round 302 promoted tankyrase
+  and recorded "no tankyrase inhibitor has a bone-length endpoint in any species" as its single gap. That
+  sentence is true and it was ALSO MISLEADING, because it is a statement about INHIBITORS and the GENETIC
+  length endpoint exists - in IMPC's unbiased phenotyping pipeline, in a 539 MB file the operator supplied on
+  2026-08-12 and which has been sitting in this repository unqueried. CORR-316 said run the local data before
+  the literature search; CORR-313 said grep the graph. NEITHER RULE COVERS "query the bulk dataset you were
+  given." It does now.
+
+  ONE - THE DIRECT GENETIC TEST OF THE TARGET, AND IT DOES NOT SHOW LENGTHENING.
+  Tnks homozygous null, IMPC:
+  · **Body length: P = 0.873, effect -0.799 (n = 9 male, 10 female) - NO CHANGE.**
+  · **Tibia length: P = 0.0333, effect -0.455 - nominally SHORTER.**
+  · Bone Mineral Content excluding skull: effect -1.976, P reported as 0.0 · BMD excluding skull -1.749,
+  P = 4.7e-11 · Bone Area -1.817, P = 5.2e-09 · BMC/body weight -1.109, P = 1.5e-14.
+  MGI adds the qualitative terms for the same allele: DECREASED BONE MINERAL DENSITY, DECREASED BONE MINERAL
+  CONTENT, ABNORMAL BONE STRUCTURE, ABNORMAL VERTEBRAE MORPHOLOGY. And Tnks2-null, across three independent
+  alleles from two labs, gives DECREASED BODY WEIGHT and POSTNATAL LETHALITY WITH INCOMPLETE PENETRANCE -
+  the lethality term is recorded for a HETEROZYGOTE as well.
+  ⛔ THE VERTEBRAL TERM IS THE ONE THAT MATTERS MOST FOR THIS CASE, because the residual at bone age 14.5+ is
+  trunk-dominant. An agent whose target's null has abnormal vertebral morphology is pointed at the compartment
+  we care about, in the wrong direction.
+
+  TWO - AND YET THE DIRECTION IS VALIDATED, BY THE CLEANEST TEST IN THE SAME DATASET.
+  **Axin2 heterozygote: BODY LENGTH effect -1.984, P = 9e-05.** Axin2 is a negative regulator of canonical
+  Wnt, so losing it RAISES Wnt output - and the animals are SHORTER, at a P value that survives the
+  pipeline's multiple testing far better than the Tnks tibia result does. MORE WNT IS SHORTER. Tankyrase
+  inhibition stabilises AXIN and moves in the opposite direction, so this is the single strongest directional
+  validation the hypothesis has, and it is new.
+  ✓ AND THE BONE WORRY GETS A DIRECT ANSWER FROM THE PATHWAY'S CENTRAL NODE. Ctnnb1 HETEROZYGOTE:
+  BONE MINERAL CONTENT +1.773 (P = 7.3e-08), BMD excluding skull +3.811 (P = 1.1e-13), BMC/body weight
+  +2.903 (P = 1.9e-08). PARTIAL BETA-CATENIN REDUCTION INCREASES BONE MINERAL. That contradicts the
+  inherited worry from SPIN4's single human (Bone Health Index -2.34 SD) and from dreyer2025's PORCN
+  inhibitor costing trabecular number, and it does so at the exact node a tankyrase inhibitor acts through.
+
+  THREE - THE TWO RESULTS LOOK CONTRADICTORY AND THEY RESOLVE, WHICH IS WHERE THE REAL RISK IS.
+  TNKS1 and TNKS2 are REDUNDANT for Wnt regulation. A single Tnks knockout therefore may not lower canonical
+  Wnt output much at all - Tnks2 compensates - while it DOES remove tankyrase's substantial Wnt-INDEPENDENT
+  functions: telomeric TRF1, YAP via angiomotin, GLUT4 trafficking, mitotic spindle. So Tnks-null is a POOR
+  model of the drug's Wnt effect and a GOOD model of tankyrase's non-Wnt bone role.
+  ⛔ AND THAT IS THE BAD NEWS, NOT THE GOOD NEWS. A drug like basroparib inhibits BOTH TNKS1 AND TNKS2, so it
+  gets the Wnt effect the single knockout misses - AND it gets the Wnt-independent bone liability the single
+  knockout demonstrates. THE Tnks-NULL BONE PHENOTYPE IS THEREFORE A LIVE PREDICTION OF THE DRUG'S BONE COST,
+  not an artefact to be explained away. The only counter-evidence is human and short.
+
+  FOUR - THE HUMAN SAFETY DATA, READ PROPERLY, AND IT CORRECTS ROUND 302.
+  ✓ THE REASSURING PART IS REAL AND SPECIFIC. lieu2025 performed DUAL-ENERGY X-RAY ABSORPTIOMETRY and reports
+  no clinically meaningful change in paired T-score or Z-score in any evaluable patient across the study, and
+  no treatment-related adverse events in the musculoskeletal and connective tissue class. A trial of a
+  Wnt-lowering agent that actually measured bone and found nothing is the strongest available counter to the
+  Tnks-null prediction - but it is weeks of partial pharmacological inhibition in adults, against a germline
+  homozygous null across a lifetime. Different manipulations, CORR-299 in both directions.
+  ✗ I OVERSTATED THE SAFETY IN ROUND 302 AND WITHDRAW IT. I wrote "no dose-limiting toxicities, favourable
+  safety" and stopped there. The full record: 2 of 25 patients (8%) had grade 3 or higher treatment-related
+  events - GRADE 3 PANCREATITIS with grade 4 lipase and grade 4 amylase at 180 mg, and GRADE 4 HYPERCALCAEMIA
+  at 300 mg. "No DLT" is a protocol definition, not an absence of serious harm.
+  ✗ AND THE FINDING THAT MATTERS MOST FOR A GROWING SUBJECT IS NOT AN ADVERSE EVENT AT ALL - IT IS THE WEIGHT.
+  Mean body weight fell 3.5 kg in the 300 mg cohort and 10.6 kg in the 360 mg cohort. In an adolescent, weight
+  loss of that magnitude suppresses growth by itself, upstream of any Wnt effect. This is an independent
+  ceiling on dose for a growth indication and it binds well below the oncology MTD.
+
+  FIVE - THE DOSE. THE HONEST ANSWER IS THAT IT CANNOT BE CALCULATED, AND THE REASON IS NOT PHARMACOKINETIC.
+  The chain required is: (a) target fraction of canonical Wnt suppression → (b) cartilage concentration that
+  produces it → (c) plasma exposure that produces that concentration → (d) oral dose. Links (c) and (d) are
+  known. LINK (a) HAS NEVER BEEN MEASURED IN ANY SPECIES and link (b) has never been measured at all.
+  · Link (a) is the width of R281's band. SPIN4 lowers canonical Wnt "mildly" and lengthens; chen2008's
+  Col2a1-ICAT lowers it strongly and RUNTS the animal progressively. Nobody has placed a scale on that axis,
+  so there is no target to aim at. No amount of PK closes this.
+  · Link (b) is cartilage penetration into an avascular tissue, never measured for this compound.
+  ANY NUMBER I PRODUCED WOULD BE INVENTED, WHICH IS THE ONE THING THIS FILE FORBIDS.
+
+  SIX - BUT THE DATA DO BOUND IT, AND THE BOUND IS COUNTERINTUITIVE AND USEFUL.
+  · **EXPOSURE SATURATES AT 300 mg.** Cmax rises 720.7 → 2,894.1 ng/mL from 30 to 300 mg, and the 360 mg
+  cohort's Cmax is LOWER (2,779.1) with lower AUC. The declared MTD of 360 mg buys no additional exposure and
+  costs 10.6 kg of body weight. **The MTD is pharmacokinetically pointless even in oncology.**
+  · **TARGET ENGAGEMENT IS ALREADY PRESENT AT THE LOWEST DOSES TESTED.** Nuclear beta-catenin decreased in
+  cohorts 1, 3, 6 and 7 - cohort 1 is 30 mg, one twelfth of the MTD - and axin staining rose in cohorts 5 and
+  6. Engagement is therefore achieved at or below 30 mg.
+  · **THE THERAPEUTIC GOAL HERE IS THE OPPOSITE OF ONCOLOGY'S.** Oncology maximises pathway suppression; this
+  indication requires PARTIAL suppression, because the band has an interior optimum and overshoot runts.
+  · **THEREFORE the rational exploration region for a growth indication is the BOTTOM of the tested range -
+  around 30 mg and below - and NOT the MTD.** That is a bounded inference from human PK and PD, not a
+  calculation and emphatically not a recommendation to dose a person. Its real use is to specify the ANIMAL
+  experiment: the dose range must span BELOW the oncology-equivalent exposure, which is not where a standard
+  efficacy study would look.
+  · One number that would sharpen everything and is a single assay: the exposure-response for AXIN2 mRNA
+  suppression in chondrocytes. AXIN2 is the pathway's own readout, it is detected in the human growth plate
+  (4,322 hypertrophic), and it converts an unmeasurable "fraction of Wnt suppression" into a measurable one.
+  ⚠ POTENCY VALUES DISAGREE ACROSS SOURCES AND I AM NOT PICKING ONE: sub-nanomolar (medicinal chemistry
+  paper), 5.8 and 3.2 nM (preclinical section of the clinical paper), 29.94 and 3.68 nM (vendor listing) for
+  TNKS1 and TNKS2. All are value_unverified against a single primary reading. The molecular weight was not
+  confirmed, so plasma ng/mL was NOT converted to molar here.
+
+  SEVEN - THE LEDGER, AND THE HYPOTHESIS SURVIVES AT A LOWER GRADE THAN ROUND 302 GAVE IT.
+  FOR: target present in human growth plate (TNKS, TNKS2, AXIN1, AXIN2, CTNNB1) · direction verified in human
+  chondrocytes with beta-catenin nuclear translocation suppressed and COL2A1/ACAN/SOX9 preserved · Axin2-het
+  body length -1.98 at P=9e-05 validating the direction from the opposite side · Ctnnb1-het INCREASING bone
+  mineral, answering the bone worry at the right node · human DXA unchanged on drug · engagement at 1/12 of
+  the MTD · Step 0 clean, nothing in the stack moves canonical Wnt.
+  AGAINST: Tnks-null tibia nominally shorter and body length unchanged · Tnks-null bone mineral severely down
+  with abnormal VERTEBRAL morphology · Tnks2-null postnatal lethality including a heterozygous term · the
+  drug hits both paralogues so it inherits the Wnt-independent liability · chondrocyte-restricted Wnt loss
+  gives dwarfism (Ctnnb1 KO) and progressive runting (ICAT) · human LRP5 -1.63 cm and WLS -2.11 cm · grade 3
+  pancreatitis and grade 4 hypercalcaemia in 25 patients · 10.6 kg weight loss at the MTD · and the band's
+  width is unmeasured, so no dose can be specified.
+human_evidence: direct
+human_evidence_note: >-
+  Human on four of the load-bearing points: the localisation (GSE9160, all 251 symbols), the direction check
+  in human articular chondrocytes (hotta2024), the phase I safety, PK, tissue pharmacodynamics and DXA
+  (lieu2025, 25 patients), and the burden effects for LRP5 and WLS (kosmicki2026, 1.45M exomes). MOUSE on the
+  decisive new evidence: the IMPC and MGI phenotypes for Tnks, Tnks2, Axin2 and Ctnnb1. No human has been
+  given a tankyrase inhibitor for growth, and no species has been given one with a bone-length endpoint.
+species_basis:
+- human
+- mouse
+translation_risk: high
+translation_risk_reason: >-
+  The central inference - partial tankyrase inhibition lengthens bone - is supported by a direction argument
+  (Axin2-het) and contradicted by the closest direct test (Tnks-null tibia), and the reconciliation depends
+  on TNKS1/TNKS2 redundancy, which is an argument rather than a measurement. IMPC nominal P values of 0.02 to
+  0.03 sit inside a pipeline testing hundreds of parameters per gene and should be discounted accordingly;
+  the Axin2 result at 9e-05 and the Ctnnb1 bone results at 1e-08 to 1e-13 survive that discount and the Tnks
+  tibia result at 0.033 does not. Germline nulls are not partial pharmacological inhibition in either
+  direction (CORR-299). And the dose cannot be specified because the band's width has never been measured.
+confidence: C
+confidence_reason: >-
+  Downgraded from round 302's B. The new data are strong and reproducible - IMPC and MGI are deterministic
+  lookups and the phase I numbers are from a primary paper - but they are genuinely two-sided, they surfaced
+  a bone and vertebral liability that round 302 did not have, and they corrected a safety statement I made
+  too confidently. The hypothesis is live and better characterised, not stronger.
+claim_grades:
+- claim: >-
+    No bone-length endpoint exists for tankyrase in any species.
+  grade: X
+  basis: >-
+    FALSE AS WRITTEN, AND ROUND 302 WROTE IT. The statement is true of INHIBITORS and false of the GENE. IMPC
+    has phenotyped Tnks homozygous nulls: BODY LENGTH P = 0.873, effect -0.799 (n = 9 male, 10 female) - no
+    change - and TIBIA LENGTH P = 0.0333, effect -0.455, nominally shorter. The data are in
+    statistical-results-ALL.csv.gz, supplied by the operator on 2026-08-12 and unqueried until this round.
+    The correct statement is that no tankyrase INHIBITOR has a length endpoint, and that the germline null
+    shows no lengthening.
+  species: mouse
+  source_ref: impc_statistical_results
+- claim: >-
+    Raising canonical Wnt output shortens the mouse, so lowering it is the lengthening direction.
+  grade: B
+  basis: >-
+    THE STRONGEST DIRECTIONAL EVIDENCE THE HYPOTHESIS HAS, AND IT IS NEW. Axin2 heterozygotes in IMPC have
+    BODY LENGTH effect -1.984 at P = 9e-05. Axin2 is a negative regulator of canonical Wnt, so heterozygous
+    loss RAISES pathway output, and the animals are shorter. Tankyrase inhibition stabilises AXIN and moves
+    the opposite way. This is an unbiased pipeline, so it is not subject to the reporting bias that CORR-295
+    warns about, and the P value survives the pipeline's multiple-testing burden in a way the nominal 0.02 to
+    0.03 results here do not. Graded B rather than A because it is one allele in one pipeline, the effect is
+    reported for females, and body length in mouse is not adult height in man.
+  species: mouse
+  source_ref: impc_statistical_results
+- claim: >-
+    Lowering canonical Wnt costs bone mineral, as SPIN4's human carrier and the PORCN inhibitor suggested.
+  grade: D
+  basis: >-
+    THE PATHWAY'S CENTRAL NODE SAYS THE OPPOSITE, AND THE TARGET SAYS YES - WHICH IS THE ROUND'S SHARPEST
+    TENSION. Ctnnb1 HETEROZYGOTES gain bone: BMC +1.773 (P = 7.3e-08), BMD excluding skull +3.811
+    (P = 1.1e-13), BMC/body weight +2.903 (P = 1.9e-08). So partial beta-catenin reduction does not cost bone
+    mineral, it adds it. But Tnks HOMOZYGOUS NULLS lose it severely - BMC -1.976, BMD -1.749 (P = 4.7e-11),
+    bone area -1.817 (P = 5.2e-09) - with MGI recording abnormal bone structure and ABNORMAL VERTEBRAE
+    MORPHOLOGY. The resolution is that tankyrase's bone role is largely Wnt-INDEPENDENT, which is bad news
+    for the drug rather than good: a dual TNKS1/2 inhibitor inherits that liability even though the Wnt arm
+    is favourable. The only human counter-evidence is lieu2025's DXA, unchanged over weeks in adults.
+  species: mouse
+- claim: >-
+    An optimal dose of a tankyrase inhibitor for bone lengthening can be calculated from available data.
+  grade: X
+  basis: >-
+    NO, AND THE MISSING LINK IS NOT PHARMACOKINETIC. The chain is target Wnt-suppression fraction → cartilage
+    concentration → plasma exposure → oral dose. The last two are known in humans; the first has NEVER BEEN
+    MEASURED IN ANY SPECIES and the second has never been measured for this compound. R281's band is defined
+    only by its endpoints - SPIN4 mild and longer, Col2a1-ICAT strong and progressively runted - with no
+    scale between them, so there is no target to aim at and no PK dataset can supply one. WHAT THE DATA DO
+    SUPPORT IS A BOUND, and it is counterintuitive: exposure SATURATES at 300 mg (the 360 mg MTD cohort has
+    LOWER Cmax, 2,779.1 versus 2,894.1 ng/mL, and lower AUC), target engagement is already present at 30 mg -
+    one twelfth of the MTD - and the goal here is partial rather than maximal suppression. So the rational
+    exploration region is the BOTTOM of the tested range, not the top. That is a bound for designing an
+    animal experiment, not a human dose.
+  species: human
+  source_ref: lieu2025
+- claim: >-
+    Basroparib had a favourable safety profile with no dose-limiting toxicities.
+  grade: D
+  basis: >-
+    TRUE BY PROTOCOL DEFINITION AND MISLEADING AS I WROTE IT IN ROUND 302, WHICH I WITHDRAW. No events met the
+    formal DLT definition and none was fatal, but 2 of 25 patients (8%) had grade 3 or higher treatment-related
+    events: GRADE 3 PANCREATITIS with grade 4 lipase and grade 4 amylase at 180 mg, and GRADE 4 HYPERCALCAEMIA
+    at 300 mg. And for a growth indication the decisive number is not an adverse event at all - MEAN BODY
+    WEIGHT FELL 3.5 kg at 300 mg and 10.6 kg at 360 mg. In a growing adolescent that magnitude of weight loss
+    suppresses growth by itself, which sets a ceiling on dose independent of any Wnt consideration.
+  species: human
+  source_ref: lieu2025
+key_refs:
+- ref_id: impc_statistical_results
+  year: 2026
+  type: dataset
+  one_line_finding: >-
+    The operator-supplied 539 MB IMPC release that contained the length endpoint the atlas said did not exist -
+    Tnks-null body length unchanged (P=0.873) and tibia nominally shorter (P=0.0333), Tnks-null bone mineral
+    severely reduced, Axin2-het body length -1.984 at P=9e-05, and Ctnnb1-het bone mineral INCREASED
+- ref_id: lieu2025
+  year: 2025
+  type: primary
+  one_line_finding: >-
+    Read in full this round rather than from the abstract - it supplies the PK saturation at 300 mg, tissue
+    pharmacodynamics showing axin up and nuclear beta-catenin down at doses as low as 30 mg, an unchanged DXA
+    T- and Z-score, and the two facts round 302 missed: grade 3 pancreatitis with grade 4 lipase/amylase, and
+    mean weight loss of 3.5 kg at 300 mg and 10.6 kg at 360 mg
+- ref_id: hotta2024
+  year: 2024
+  type: primary
+  one_line_finding: >-
+    Still the direction check in human cells - XAV939 suppresses beta-catenin nuclear translocation while
+    preserving COL2A1, ACAN and SOX9 - and now corroborated from the opposite side by Axin2-het shortening
+- ref_id: chen2008
+  year: 2008
+  type: primary
+  one_line_finding: >-
+    The other endpoint of the band and the reason no dose can be specified - Col2a1-ICAT mice, a strong
+    chondrocyte-restricted reduction of canonical Wnt output, are normal at birth and PROGRESSIVELY RUNTED,
+    so overshoot is a real and demonstrated failure mode
+- ref_id: kosmicki2026
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    The two human Wnt-pathway genes reaching genome-wide significance both say less Wnt is shorter - LRP5
+    -1.63 cm and WLS -2.11 cm - but LRP5 is 0/10 in the human growth plate (its read-out is osteoblastic, as
+    the atlas's own node predicted) and WLS blocks secretion of ALL Wnts including the non-canonical ones that
+    dominate this tissue, so neither tests the tankyrase mechanism directly
+open_questions:
+- g_l2_does_a_tankyrase_inhibitor_reproduce_the_spin4_zone_decomposition_and_lengthen_bone
+- g_l2_how_wide_is_the_canonical_wnt_band_and_where_is_its_peak
+contradicts: >-
+  This round corrects round 302 on two points and neither is cosmetic. FIRST, round 302's single stated gap -
+  "no tankyrase inhibitor has a bone-length endpoint in any species" - was true of inhibitors and concealed
+  that the GENETIC length endpoint existed in an operator-supplied dataset in this repository; the answer,
+  when queried, is no lengthening and a nominally shorter tibia. SECOND, round 302 called basroparib's safety
+  profile favourable on the strength of "no dose-limiting toxicities"; the full record includes grade 3
+  pancreatitis with grade 4 lipase and amylase, grade 4 hypercalcaemia, and 10.6 kg of mean weight loss at the
+  MTD. The hypothesis is NOT withdrawn - the direction is validated from the opposite side by Axin2-het at
+  P=9e-05 and the bone worry is answered at the pathway's central node by Ctnnb1-het - but it drops from
+  confidence B to C, and the newly surfaced abnormal VERTEBRAL morphology in Tnks-null is pointed at exactly
+  the compartment this case depends on.
+last_verified: '2026-08-12'

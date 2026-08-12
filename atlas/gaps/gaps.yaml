@@ -1,4 +1,37 @@
 gaps:
+- gap_id: g_l2_how_wide_is_the_canonical_wnt_band_and_where_is_its_peak
+  question: How wide is the canonical-Wnt band for bone length, and where is its peak relative to wild type? Nobody
+    has placed a scale on the axis between SPIN4 and Col2a1-ICAT.
+  type: quantitative_gap
+  layer: L2
+  why_it_matters: 'This single missing measurement is why no dose of any Wnt-lowering agent can be specified,
+    and it is not a pharmacokinetic problem - no PK dataset can supply it. Round 303 established that human plasma
+    exposure, tissue target engagement and the saturation point for basroparib are all known, and that the chain
+    still cannot be closed because there is no target level of Wnt suppression to aim at. The band is currently
+    defined only by its two endpoints: SPIN4 loss is a mild reduction and lengthens, while Col2a1-ICAT is a strong
+    chondrocyte-restricted reduction and progressively RUNTS the animal. Everything between them is unmeasured.
+    It also determines whether the peak sits BELOW wild type, which is R281''s claim and the entire basis for
+    lowering Wnt at all, or AT wild type, in which case every agent in this class is pointed the wrong way.'
+  what_is_known: Two endpoints and one direction test. SPIN4 loss lowers canonical Wnt output (TOPFLASH down,
+    Axin2 down) and gives longer bone with an expanded resting pool at 2 weeks, 10 weeks and 18 months. chen2008's
+    Col2a1-ICAT gives a strong chondrocyte-restricted reduction, normal size at birth and progressive runting
+    with narrower proliferative and hypertrophic zones. Akiyama's Col2a1-Cre Ctnnb1 inactivation gives frank dwarfism.
+    From the opposite side, IMPC Axin2 heterozygotes - which RAISE Wnt output - have body length -1.984 at P=9e-05,
+    so more Wnt is shorter. PORCN inhibitors lower Wnt by blocking secretion and give the INVERSE zone decomposition
+    with plate exhaustion, which is CORR-290's warning that same direction is not the same lever.
+  what_is_missing: 'A dose-response. No study has titrated canonical Wnt output across a graded range in chondrocytes
+    of a normal growing animal and measured bone length at maturity. Consequently: the fraction of suppression
+    that reproduces SPIN4 is unknown, the fraction at which runting begins is unknown, and whether the optimum
+    lies below or at wild type is unknown. Also missing is any measurement relating a pharmacological agent''s
+    exposure to Wnt output IN CARTILAGE, which is the second broken link in the dose chain.'
+  discriminating_experiment: A graded titration with a length endpoint. Either a tamoxifen-inducible allelic series
+    in chondrocytes of a normal growing mouse, or - cheaper and directly drug-relevant - a tankyrase inhibitor
+    given across at least five dose levels deliberately spanning BELOW the oncology-equivalent exposure, since
+    human target engagement is already present at one twelfth of the MTD. Read out AXIN2 mRNA in the growth plate
+    as the suppression scale, terminal femur and tibia length at maturity as the endpoint, and the full zone decomposition
+    to distinguish SPIN4's signature (resting zone up, proliferative and hypertrophic heights unchanged) from
+    PORCN's (hypertrophic up, proliferative down). The result is a curve, and the peak of that curve is the answer.
+  status: open
 - gap_id: g_l2_does_a_tankyrase_inhibitor_reproduce_the_spin4_zone_decomposition_and_lengthen_bone
   question: Does a tankyrase-selective inhibitor, given to a NORMAL growing animal at a partial dose, lengthen
     bone and expand the resting zone - reproducing SPIN4 - or does it reproduce the PORCN decomposition and

@@ -137,6 +137,15 @@ missing number is a gap and a *wrong* number is a defect.
 wrong · ③ it is **REDUNDANT** with an arm already in the stack (Step 0 / CORR-297).
 Everything else is a gap to record and, where cheap, to fill.
 
+22. **Writing "no data exists in any species" without querying the BULK DATASETS THE OPERATOR GAVE YOU.**
+   CORR-328 — R302's single stated gap was *"no tankyrase inhibitor has a bone-length endpoint in any
+   species."* True of inhibitors; **the GENETIC length endpoint was in `statistical-results-ALL.csv.gz`**,
+   supplied 2026-08-12 and never queried. **IMPC phenotypes body length, tibia length, BMD and BMC on
+   thousands of knockouts.** MGI decodes the qualitative terms. Both are on disk, both are free, both take
+   minutes. CORR-316 said run the local *notebook* first; this extends it: **run `atlas/data/supplied_*/`
+   before asserting an absence.** Companion rule: **a statement about a DRUG is not a statement about the
+   GENE** (the CORR-324 shape again, third instance).
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -784,8 +793,44 @@ chondrocytes WITHOUT blocking ligand secretion."* It named tankyrase inhibitors,
   Axin2↓); tankyrase inhibition stabilises AXIN and lowers the same output. Spin4-KO is **longer at 2 wk,
   10 wk AND 18 months with normal BMD**, moving **N and λ with A and h_term flat**.
 
+**⚠ R303 TOOK IT ALL THE WAY DOWN. The hypothesis SURVIVES but drops B→C. Read this before citing R302.**
+- ⛔ **"No length endpoint in any species" was TRUE OF INHIBITORS AND FALSE OF THE GENE — and the data were
+  on disk.** IMPC (operator-supplied, 539 MB, unqueried until R303): **Tnks-null BODY LENGTH unchanged
+  (P=0.873) and TIBIA LENGTH nominally SHORTER (P=0.0333, eff −0.455).** Plus **BMD −1.749 P=4.7e-11, bone
+  area −1.817 P=5.2e-09**, and MGI adds **abnormal bone structure + ABNORMAL VERTEBRAE MORPHOLOGY** — aimed
+  at the trunk-dominant compartment. Tnks2-null: decreased body weight, postnatal lethality (a het term too).
+  **NEW RULE: query the bulk datasets you were given before writing "no data exists."**
+- ✓ **BUT THE DIRECTION IS VALIDATED FROM THE OPPOSITE SIDE, and this is the strongest single result:
+  IMPC Axin2-het BODY LENGTH −1.984, P=9e-05.** Axin2 loss RAISES Wnt → SHORTER. Tankyrase inhibition
+  stabilises Axin and moves the other way.
+- ✓ **AND THE BONE WORRY IS ANSWERED AT THE PATHWAY'S CENTRAL NODE: Ctnnb1-het BMC +1.773 (P=7.3e-08),
+  BMD +3.811 (P=1.1e-13).** Partial β-catenin reduction ADDS bone mineral. So tankyrase's bone cost is
+  **Wnt-INDEPENDENT** — which is bad news, because a dual TNKS1/2 inhibitor inherits it anyway.
+- ✗ **R302's SAFETY CLAIM WITHDRAWN.** "No DLTs" is a protocol definition. Actual: **grade 3 pancreatitis
+  with grade 4 lipase/amylase (180 mg), grade 4 hypercalcaemia (300 mg)**, 2/25 patients grade ≥3.
+  ⛔ **And the number that matters for a growing subject: MEAN WEIGHT LOSS 3.5 kg at 300 mg, 10.6 kg at
+  360 mg.** That suppresses growth by itself, independent of Wnt.
+- ✓ **Human DXA T- and Z-scores UNCHANGED on drug, no musculoskeletal TRAEs** — the only counter to the
+  Tnks-null bone prediction, but weeks in adults vs a lifelong germline null.
+
+**⭐ THE DOSE — R303. IT CANNOT BE CALCULATED, AND THE MISSING LINK IS NOT PK.**
+Chain: (a) target Wnt-suppression fraction → (b) cartilage concentration → (c) plasma exposure → (d) dose.
+**(c) and (d) are known; (a) has NEVER been measured in any species and (b) never for this compound.**
+R281's band is defined only by its endpoints with no scale between them, so there is nothing to aim at.
+**But the data BOUND it, and the bound is counterintuitive:**
+· **Exposure SATURATES at 300 mg** — the 360 mg MTD cohort has *lower* Cmax (2,779 vs 2,894 ng/mL) and lower
+  AUC. **The MTD is pharmacokinetically pointless even in oncology.**
+· **Target engagement is already present at 30 mg** — nuclear β-catenin fell in cohort 1, **1/12 of the MTD.**
+· **This indication wants PARTIAL suppression; oncology wants maximal.** Opposite goals.
+· **→ The rational exploration region is the BOTTOM of the tested range (~30 mg and below), NOT the MTD.**
+  A bound for designing the ANIMAL experiment — *not* a human dose, and not a recommendation.
+· One assay would sharpen everything: **exposure-response for AXIN2 mRNA in chondrocytes** (AXIN2 is the
+  pathway's own readout and is detected in the human plate at 4,322 HZ).
+⚠ **Potency values DISAGREE and I am not picking one:** sub-nM (medchem paper), 5.8/3.2 nM (clinical paper),
+29.94/3.68 nM (vendor). All `value_unverified`. MW unconfirmed, so ng/mL was NOT converted to molar.
+
 **✗ WHAT WOULD KILL IT — stated in advance so the next round can't call it new:**
-· **No tankyrase inhibitor has a bone-length endpoint in any species.** ← the gap, and the whole gap.
+· **No tankyrase INHIBITOR has a bone-length endpoint in any species** (the gene now does — see R303 above).
 · **The band has an interior optimum and overshoot RUNTS the animal** — `chen2008` Col2a1-ICAT is
   progressively runted. **An oncology MTD is emphatically not a growth dose.**
 · **CORR-290 IS THE DISCRIMINATING TEST.** PORCN inhibitors also lower Wnt and give the **INVERSE** zone
