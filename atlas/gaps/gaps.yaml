@@ -1,4 +1,36 @@
 gaps:
+- gap_id: g_l12_does_a_pde3_inhibitor_lengthen_bone_in_a_normal_animal
+  question: Does an approved PDE3 inhibitor - cilostazol or milrinone - lengthen long bone when given to a NORMAL
+    growing animal? The gene has the largest lengthening knockout in IMPC and a concordant human effect, and no
+    inhibitor has ever been given with a length endpoint.
+  type: known_unknown
+  layer: L12
+  why_it_matters: 'This is the only candidate in the file with concordant, well-powered evidence in TWO species
+    and an approved oral drug. Mouse: Pde3b-null tibia +4.597 at P=9e-07, the largest positive length effect among
+    7,216 genes with a length endpoint, and the only significant result among 33 parameters for that line - normal
+    viability, null cardiac electrophysiology, unremarkable radiographs. Human: PDE3B pLoF +1.22 cm at P=5.1e-13
+    across 1,761 heterozygotes. The mechanism is cAMP/PKA acting on HYPERTROPHIC ZONE elongation, which is h_term,
+    the largest term in the height identity and the one round 296 concluded had no upward-pointing agent. And
+    Step 0 now passes: hirota2022 explicitly excluded PDE3 from CNP''s cGMP-to-cAMP chain, which makes PDE3 inhibition
+    independent of vosoritide rather than redundant with it.'
+  what_is_known: 'The genetics in both species, the specificity of the mouse phenotype, and the mechanism of the
+    cAMP/PKA arm from hirota2022 (H89-sensitive hypertrophic zone elongation). Cilostazol, milrinone, enoximone,
+    anagrelide and pentoxifylline all hit PDE3 and are approved. Against: PDE3B is 1/15 probe-donor cells in the
+    clean donor of the human growth plate and 0/15 in donor 2; hirota2022 found Pde3a/Pde3b expression unchanged
+    through chondrocyte differentiation and cilostamide inert on the CNP axis; and oral PDE3 inhibitors increased
+    mortality in chronic heart failure, with cilostazol carrying a boxed warning.'
+  what_is_missing: 'A bone-length measurement under any PDE3 inhibitor in any species. Also missing: body length
+    for the Pde3b-null line, which IMPC did not report - only tibia; whether the mouse effect is growth-plate-intrinsic
+    or systemic; and whether PDE3B protein is present in growth-plate cartilage, since the transcript is barely
+    detectable and the atlas has only microarray evidence.'
+  discriminating_experiment: Cilostazol to normal growing mice across a dose range, terminal femur and tibia length
+    by caliper and microCT at skeletal maturity, with the zone decomposition and hypertrophic cell height read
+    out - because the mechanism predicts h_term specifically, so the effect should sit in terminal hypertrophic
+    cell size rather than in proliferation. Run a cartilage-specific Pde3b deletion alongside it to separate a
+    local effect from a systemic metabolic one, which is the main alternative explanation given PDE3B's adipocyte
+    and hepatic biology. And measure PDE3B protein in growth-plate cartilage by immunohistochemistry, since the
+    transcript is near background in the only human dataset available.
+  status: open
 - gap_id: g_l2_how_wide_is_the_canonical_wnt_band_and_where_is_its_peak
   question: How wide is the canonical-Wnt band for bone length, and where is its peak relative to wild type? Nobody
     has placed a scale on the axis between SPIN4 and Col2a1-ICAT.

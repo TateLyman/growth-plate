@@ -1,0 +1,241 @@
+id: round304_the_base_rate_broke_my_last_round_and_the_top_lengthening_knockout_has_an_approved_oral_drug
+name: >-
+  ROUND 304 - I extracted every bone-length endpoint in IMPC (7,216 genes, 12,068 rows) and the first thing
+  it did was break ROUND 303. Knockout mice are SHORTER 64% of the time and 245:38 among significant hits, so
+  both my validating result (Axin2) and my invalidating one (Tnks tibia) dissolve into the base rate. What
+  survives the correction is the rare direction - and the single largest lengthening knockout in the entire
+  dataset is PDE3B, which has an approved oral drug and a concordant human effect at P=5e-13
+aliases:
+- round 304
+- the IMPC length base rate
+- 64 per cent of knockouts are shorter
+- PDE3B is the top lengthening knockout
+- the PDE3 settled row is logically inverted
+- cilostazol is not the same node as vosoritide
+type: hypothesis
+layer: L12
+stub: false
+summary: >-
+  ZERO - THE RESOURCE. Round 303 found that IMPC held the tankyrase length endpoint. This round extracted
+  ALL of them: every "Body length" and "Tibia length" row in statistical-results-ALL.csv.gz - 2,236,257 rows
+  scanned, 12,068 length rows, 7,216 DISTINCT GENES WITH A BONE-LENGTH ENDPOINT. CLAUDE.md has been carrying
+  "the 231 unmined length endpoints" from round 269 as its length reserve. The real number available to this
+  atlas is thirty times larger and it was on disk. Committed to atlas/data/round303/.
+
+  ONE - AND THE FIRST THING IT DID WAS BREAK MY OWN LAST ROUND. CORR-329.
+  I reported in round 303 that Axin2-het body length -1.984 at P=9e-05 was "the strongest directional
+  validation the hypothesis has", reasoning that Axin2 loss raises Wnt and shortens, so lowering Wnt should
+  lengthen. I never asked what an ARBITRARY knockout does. THE ANSWER IS THAT IT SHORTENS.
+  · **Body length: mean effect -0.330, median -0.212, 63.7% of 7,197 rows NEGATIVE.**
+  · **At P<1e-4: 245 knockouts SHORTER versus 38 LONGER - a 6.4-to-1 ratio.**
+  · Tibia length: mean -0.609, median -0.262, 63.3% negative; at P<1e-4, 168 shorter versus 34 longer.
+  KNOCKING OUT ALMOST ANY GENE MAKES A MOUSE SHORTER. That is the base rate, and against it:
+  ✗ **Axin2's -1.98 is large in MAGNITUDE (about the 5th percentile) but its DIRECTION carries almost no
+  information**, because negative is what nearly everything does. My round-303 grade of B is withdrawn and
+  the claim drops to D. This is CORR-311 - report a contrast without querying the things that should not
+  move and you have a list, not a result - applied to myself one round after writing it down.
+  ✗ **AND THE INVALIDATING RESULT DISSOLVES TOO, which is the honest other half.** Tnks-null tibia -0.455
+  sits essentially AT the median of -0.262. It is unremarkable. So round 303's "closest direct test shows
+  nominal shortening" is also not evidence. The IMPC length data are simply UNINFORMATIVE about tankyrase in
+  either direction, and round 303's central tension was largely an artefact of my not having the null.
+  ✓ **WHAT GETS STRONGER IS THE RARE DIRECTION.** Positive effects are 5-to-1 rarer among significant hits,
+  so a large POSITIVE result carries far more information than a negative one of the same size. That makes
+  round 303's Ctnnb1-heterozygote bone gain (BMC +1.773 at P=7.3e-08, BMD +3.811 at P=1.1e-13) more
+  informative, not less - and it makes the 38-plus-34 lengthening knockouts the interesting object here.
+
+  TWO - THE TOP LENGTHENING KNOCKOUT IN THE ENTIRE DATASET IS PDE3B, AND IT HAS AN APPROVED ORAL DRUG.
+  **Pde3b homozygous null: TIBIA LENGTH +4.597, P = 9e-07 (n = 5 male, 5 female).** That is the largest
+  positive length effect among 7,216 genes.
+  ✓ **AND THE PHENOTYPE IS CLEAN AND SPECIFIC, WHICH MATTERS MORE THAN THE SIZE.** It is the ONLY significant
+  result among 33 phenotype parameters for this line. Viability normal in homozygous males and females.
+  Cardiac electrophysiology all null (HR, RR, QRS, PR, PQ, HRV all P>=0.18). And the radiographic panel is
+  unremarkable - femur, radius, ulna, pelvis, shape of vertebrae, fusion of vertebrae, processes on
+  vertebrae, ribs, joints and teeth all P=1 with effects at or near zero. SO THIS IS NOT A DYSPLASIA AND NOT
+  A SICK ANIMAL. It is an isolated long-bone lengthening.
+  ✓ **THE HUMAN GENETICS AGREE, AND THEY ARE STRONG.** kosmicki2026: PDE3B pLoF **+1.22 cm, P = 5.1e-13,
+  across 1,761 heterozygotes** - one of the best-powered results in the whole 207-gene table. TWO SPECIES,
+  ONE GENE, SAME DIRECTION, both well powered. Only 3 of the 69 lengthening knockouts are among the 207
+  human height genes at all, and PDE3B is the one where both effects are large and concordant. (The other
+  two: HLTF, mouse body length +0.058 P=1.1e-07 with human +1.47 cm P=1.1e-10, concordant; HHIPL1
+  discordant, mouse +1.271 versus human -1.02 cm.)
+  ✓ **AND THE MECHANISM IS THE LARGEST TERM IN THE HEIGHT IDENTITY.** hirota2022 established a cAMP/PKA arm
+  acting specifically on HYPERTROPHIC ZONE elongation, abolished by the PKA inhibitor H89 - and this atlas's
+  own nodes already call that arm "the strongest surviving partner", one that "ADDS on a term FGFR3 blockade
+  does not touch rather than multiplying". h_term is the term round 296 concluded had no upward-pointing
+  agent because every marketed tool on the volume machinery is an inhibitor of swelling. A PDE3 inhibitor
+  raises cAMP and points UP.
+  ✓ **APPROVED, ORAL, CHEAP: cilostazol**, plus milrinone, enoximone, anagrelide, pentoxifylline and
+  ensifentrine on the same target.
+
+  THREE - AND CLAUDE.md's SETTLED ROW IS LOGICALLY INVERTED, WHICH IS WHY THIS WAS NEVER SEEN.
+  The row reads: "Cilostazol is the same node as vosoritide. PDE3 is not the cartilage bridge (hirota2022)."
+  I read hirota2022 to check, and the second sentence is CORRECT: cilostamide, a PDE3 inhibitor, did NOT
+  change CNP-induced cGMP elevation or PKA activation, Pde3a and Pde3b expression did not change during
+  differentiation, and the authors conclude that CNP raises cAMP through cGMP-induced calcium mobilisation
+  activating adenylate cyclase - explicitly NOT through PDE3.
+  ⭐ **BUT THAT CONCLUSION REFUTES THE FIRST SENTENCE RATHER THAN SUPPORTING IT.** If PDE3 is NOT in CNP's
+  chain, then blocking PDE3 is NOT the same node as vosoritide - it is an INDEPENDENT handle on the same
+  second messenger. Vosoritide raises cAMP by driving PRODUCTION through the cGMP/Ca2+/adenylyl cyclase
+  route; a PDE3 inhibitor raises it by blocking DEGRADATION. Those are different steps, which is exactly the
+  distinction that made sacubitril redundant (hakata2024 - same step, not additive) and would make this one
+  not. THE SETTLED ROW USED A TRUE PREMISE TO SUPPORT ITS OWN NEGATION, and Step 0 has been failing PDE3
+  ever since on that basis.
+
+  FOUR - WHAT IS AGAINST IT, AND IT IS NOT TRIVIAL.
+  ✗ **THE TARGET IS BARELY IN THE HUMAN GROWTH PLATE.** PDE3B is 1/15 probe-donor cells in the clean donor -
+  a single prehypertrophic detection at 794 - and 0/15 in donor 2. PDE3A is detected but low and perichondrial.
+  This is CORR-327's receiver-not-the-handle test and PDE3B half-fails it. A systemic or metabolic route to
+  the height association is at least as plausible as a cartilage one, and PDE3B's best-known biology is
+  adipocyte and hepatic insulin signalling.
+  ✗ **hirota2022 ALSO found Pde3a/Pde3b expression unchanged through chondrocyte differentiation** and
+  cilostamide inert on the CNP axis, so PDE3's role in cartilage is unestablished rather than supported.
+  ✗ **THE DRUG CLASS CARRIES A MORTALITY SIGNAL.** Oral PDE3 inhibitors increased mortality in chronic heart
+  failure; cilostazol is contraindicated in heart failure of any severity and carries a boxed warning.
+  Milrinone and enoximone are inotropes with the same liability. This is a real safety axis, not a footnote,
+  even with risk deprioritised.
+  ✗ n = 5 male and 5 female in the IMPC line, and body length was not among the reported parameters - only
+  tibia. So the whole-animal effect is unmeasured.
+  ✗ And no PDE3 inhibitor has been given to any animal with a bone-length endpoint - which under the
+  operator's R302 rule is a GAP rather than a disqualification, and here it is a cheap one to fill.
+
+  FIVE - THE OTHER SIXTY-EIGHT. The lengthening list is a target space this atlas has never seen, and almost
+  none of it is in the file: Zhx3 (tibia +3.876 AND body +2.203), Klk5 (+3.267), Hyls1, Rft1, Wdsub1,
+  Tmem237, Med28, Cox6b1, **Jarid2 (body +2.257 and tibia +0.971, both heterozygous)**, Slc7a2, Micu1,
+  P2ry14, Lingo2, **Enpp1 (+1.709)**, **Pik3cg (+1.532)**, Nr1d1, Limk2, Pdgfc, Scarf2, Ncor2, **Tyk2
+  (+0.874)**, Lta4h, Insig2, Mstn. Several have drugs - TYK2 has an approved inhibitor in deucravacitinib,
+  PIK3CG and LTA4H have clinical-stage compounds, NR1D1 has REV-ERB ligands, ENPP1 has enzyme therapy and
+  inhibitors. NONE has been assessed here and this round does not assess them; the list is recorded so the
+  next round starts from data rather than from recall.
+human_evidence: direct
+human_evidence_note: >-
+  The base rate and every length effect quoted are MOUSE, from IMPC's unbiased phenotyping pipeline, which is
+  what makes the base-rate correction possible at all - a literature-derived set could not supply a null.
+  The human half is kosmicki2026's burden effects (PDE3B +1.22 cm across 1,761 heterozygotes, P=5.1e-13) and
+  GSE9160's localisation, which is where PDE3B does poorly. hirota2022's mechanism is mouse. No PDE3
+  inhibitor has been given to any species with a bone-length endpoint, and none to a human for growth.
+species_basis:
+- mouse
+- human
+translation_risk: high
+translation_risk_reason: >-
+  PDE3B's strongest evidence is a germline homozygous null in 5+5 mice and a human heterozygous burden effect;
+  neither is pharmacological inhibition in an open plate (CORR-299). The target is barely detectable in the
+  human growth plate, so the height association may be systemic - PDE3B's established biology is adipocyte
+  and hepatic insulin signalling, and a metabolic route to stature would not respond to the same intervention.
+  hirota2022 actively found no role for PDE3 in the chondrocyte CNP axis. And the drug class has a mortality
+  signal in chronic heart failure that is independent of any growth consideration.
+confidence: B
+confidence_reason: >-
+  The base-rate computation is arithmetic over 12,068 rows and is the most secure thing in this round; it is
+  graded high and it forced a downgrade of round 303. The PDE3B convergence is two independent, well-powered,
+  concordant datasets plus a mechanistically coherent arm the atlas already endorsed, which is stronger than
+  anything else currently on the addition list - but the localisation is weak and the pharmacology untested,
+  so the candidate is graded B and not promoted past that.
+claim_grades:
+- claim: >-
+    Axin2-het shortening validates the direction that lowering canonical Wnt lengthens bone.
+  grade: D
+  basis: >-
+    DOWNGRADED FROM B - CORR-329, AND IT IS A CORRECTION OF MY OWN LAST ROUND. Round 303 called this "the
+    strongest directional validation the hypothesis has" without asking what an arbitrary knockout does to
+    body length. IMPC's answer: mean effect -0.330, median -0.212, 63.7% of 7,197 rows negative, and 245
+    shorter versus 38 longer among P<1e-4 hits. Axin2's -1.984 is large in magnitude, around the 5th
+    percentile, but negative is the direction almost everything takes, so the SIGN carries little
+    information. The same correction dissolves the round's invalidating result: Tnks-null tibia -0.455 sits
+    at the median of -0.262 and is unremarkable. IMPC length data are uninformative about tankyrase in either
+    direction. CORR-311 says the negative control is rows you already have; I wrote that down one round
+    before failing to apply it.
+  species: mouse
+  source_ref: impc_statistical_results
+- claim: >-
+    PDE3B loss lengthens long bone in two species, concordantly and specifically.
+  grade: B
+  basis: >-
+    MOUSE: Pde3b homozygous null tibia length +4.597 at P=9e-07 - the LARGEST positive length effect among
+    7,216 genes with a length endpoint, against a base rate where 63.7% of knockouts are shorter and
+    significant hits run 6.4-to-1 negative. And it is specific: the ONLY significant result among 33
+    parameters, with normal viability, null cardiac electrophysiology, and an unremarkable radiographic panel
+    (femur, radius, ulna, pelvis, vertebral shape/fusion/processes, ribs, joints, teeth all P=1). HUMAN:
+    kosmicki2026 PDE3B pLoF +1.22 cm at P=5.1e-13 across 1,761 heterozygotes, among the best-powered results
+    in the 207-gene table. Only 3 of 69 lengthening knockouts appear among the 207 human genes at all, and
+    PDE3B is the one where both effects are large and agree. Graded B rather than A because n=5+5 in mouse,
+    body length was not reported for the line, and no pharmacological test exists.
+  species: mouse
+  source_ref: impc_statistical_results
+- claim: >-
+    Cilostazol is the same node as vosoritide, so PDE3 inhibition is redundant with the stack.
+  grade: X
+  basis: >-
+    THE SETTLED ROW USES A TRUE PREMISE TO SUPPORT ITS OWN NEGATION. hirota2022, read in full this round,
+    concludes that CNP raises cAMP in hypertrophic chondrocytes through cGMP-induced calcium mobilisation
+    activating adenylate cyclase, and EXPLICITLY EXCLUDES PDE3: cilostamide did not change CNP-induced cGMP
+    elevation or PKA activation, and Pde3a/Pde3b expression did not change during differentiation. If PDE3 is
+    not in CNP's chain then blocking PDE3 is not the same node as vosoritide - it is an independent handle on
+    the same second messenger, raising cAMP by blocking DEGRADATION where vosoritide raises it by driving
+    PRODUCTION. Different steps is precisely the distinction that made sacubitril redundant under hakata2024
+    (same step, not additive) and that makes this one not. Step 0 has been failing PDE3 on an inverted
+    inference.
+  species: mouse
+  source_ref: hirota2022
+- claim: >-
+    PDE3 inhibition is ready to propose as an addition to this stack.
+  grade: D
+  basis: >-
+    NOT YET, AND THREE THINGS ARE AGAINST IT. First, CORR-327's test half-fails: PDE3B is 1/15 probe-donor
+    cells in the clean donor of the human growth plate (one prehypertrophic detection at 794) and 0/15 in
+    donor 2, so a systemic or metabolic route to the human association is at least as plausible as a
+    cartilage one - and PDE3B's best-characterised biology is adipocyte and hepatic insulin signalling.
+    Second, hirota2022 actively found no PDE3 role in the chondrocyte CNP axis and no change in Pde3a/Pde3b
+    through differentiation. Third, oral PDE3 inhibitors increased mortality in chronic heart failure;
+    cilostazol carries a boxed warning and is contraindicated in heart failure of any severity. What it has
+    that nothing else on the list has is two concordant well-powered species, a clean and specific mouse
+    phenotype, a mechanism acting on h_term, and an approved oral drug.
+  species: human
+- claim: >-
+    The atlas's reserve of unmined bone-length endpoints is 231.
+  grade: X
+  basis: >-
+    IT IS 7,216. CLAUDE.md has carried round 269's "231 unmined length endpoints" as the file's length
+    reserve. Extracting every Body length and Tibia length row from the operator-supplied IMPC release gives
+    12,068 rows across 7,216 DISTINCT GENES, with effect sizes, P values and per-sex counts. This is the
+    resource that makes "does losing this gene lengthen a bone?" a lookup rather than a literature search,
+    and it also supplies the null distribution without which none of those endpoints can be read. Second
+    instance of CORR-328 in two rounds.
+  species: mouse
+  source_ref: impc_statistical_results
+key_refs:
+- ref_id: impc_statistical_results
+  year: 2026
+  type: dataset
+  one_line_finding: >-
+    Mined exhaustively this round - 12,068 length rows across 7,216 genes. Supplies the base rate that broke
+    round 303 (63.7% of knockouts shorter, 245:38 among significant hits) and the rare direction that
+    survives it, whose top entry is Pde3b tibia +4.597 at P=9e-07
+- ref_id: hirota2022
+  year: 2022
+  type: primary
+  one_line_finding: >-
+    Read in full this round. CNP raises cAMP in hypertrophic chondrocytes via cGMP-induced calcium
+    mobilisation of adenylate cyclase and NOT via PDE3 - cilostamide changed neither cGMP nor PKA activation.
+    That conclusion makes PDE3 inhibition INDEPENDENT of vosoritide rather than redundant with it, inverting
+    the CLAUDE.md settled row it was cited for
+- ref_id: kosmicki2026
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    Supplies the human half of the convergence - PDE3B pLoF +1.22 cm at P=5.1e-13 across 1,761 heterozygotes,
+    concordant in direction with the largest lengthening knockout in IMPC
+open_questions:
+- g_l12_does_a_pde3_inhibitor_lengthen_bone_in_a_normal_animal
+- g_l2_how_wide_is_the_canonical_wnt_band_and_where_is_its_peak
+contradicts: >-
+  Two corrections, one of them to my own previous round. FIRST, round 303's grade-B claim that Axin2-het
+  shortening validates the lower-Wnt-is-longer direction is withdrawn to D, because 63.7% of all knockouts
+  shorten and significant hits run 6.4-to-1 negative, so the sign carries little information; the same
+  correction dissolves round 303's invalidating Tnks tibia result, leaving IMPC length data uninformative
+  about tankyrase in both directions. SECOND, CLAUDE.md's SETTLED row "Cilostazol is the same node as
+  vosoritide; PDE3 is not the cartilage bridge (hirota2022)" is internally inconsistent: the second clause is
+  correct and it REFUTES the first, because a PDE3 that is absent from CNP's chain is an independent handle
+  on cAMP rather than a redundant one. The settled row should be rewritten, not deleted - hirota2022's
+  finding stands, only the inference drawn from it was backwards.
+last_verified: '2026-08-12'

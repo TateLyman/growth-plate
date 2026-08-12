@@ -16,7 +16,7 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 | **Erdafitinib > vosoritide** for this case | R263, R265 | Topology, redundancy, compartment, effect size — all four routes reach the same answer. It is decided. |
 | Vosoritide acts at RAF-1 *inside* the ERK arm; FGFR3 TKI sits upstream of ERK **and** CREB | R263, R265 | |
 | Discharge = CREB, downstream of FGFR3, ERK-independent | R265 (horike2026) | |
-| Cilostazol is the same node as vosoritide | R263, R267 | PDE3 is not the cartilage bridge (hirota2022) |
+| ~~Cilostazol is the same node as vosoritide~~ **ROW WITHDRAWN R304 — THE INFERENCE WAS INVERTED** | R263, R267; overturned R304 | `hirota2022` IS correct that **PDE3 is not the cartilage bridge** — cilostamide changed neither CNP-induced cGMP nor PKA activation. **But that REFUTES the first clause:** a PDE3 absent from CNP's chain is an *independent* handle on cAMP, not a redundant one. Vosoritide raises cAMP by driving PRODUCTION (cGMP→Ca²⁺→adenylyl cyclase); PDE3 inhibition raises it by blocking DEGRADATION. Different steps — which is exactly what made sacubitril redundant (same step) and makes this one not. |
 | GH after mid-puberty ≈ 0 attained height; SOCS2 is the mechanism | R254, R269 | |
 | Weekly GH ≥ daily GH on height velocity | R271 (ying2026) | The pulsatility prediction was tested and failed |
 | Serum IGF-1 does not predict growth potential | R269, CORR-276 | Four genotypes, two in the wrong direction |
@@ -145,6 +145,22 @@ Everything else is a gap to record and, where cheap, to fill.
    minutes. CORR-316 said run the local *notebook* first; this extends it: **run `atlas/data/supplied_*/`
    before asserting an absence.** Companion rule: **a statement about a DRUG is not a statement about the
    GENE** (the CORR-324 shape again, third instance).
+
+23. **Reading a direction off a perturbation screen without computing the screen's BASE RATE.** CORR-329 —
+   R303 called Axin2-het body length −1.98 "the strongest directional validation" of lower-Wnt-is-longer.
+   **63.7% of ALL IMPC knockouts are shorter, and significant hits run 245:38 negative.** The magnitude was
+   real; the SIGN carried almost no information. The same correction dissolved R303's *invalidating* result
+   too (Tnks tibia −0.455 = the median). **In any screen where one direction dominates, only the RARE
+   direction is informative.** CORR-311 said the negative control is rows you already have; this is the
+   quantitative form of it, and I failed it one round after writing CORR-311 down.
+
+24. **Letting a SETTLED row stand on an inference nobody re-derived.** CORR-330 — *"Cilostazol is the same
+   node as vosoritide. PDE3 is not the cartilage bridge (hirota2022)."* The second clause is **true** and it
+   **refutes the first**: a PDE3 absent from CNP's chain is an *independent* handle on cAMP, not a redundant
+   one. The row used a true premise to support its own negation, and Step 0 failed PDE3 on it for rounds.
+   **When a SETTLED row cites one paper for two clauses, check that the paper supports BOTH.** Same shape as
+   CORR-320 (gudernova2016) and CORR-324 (compound vs gene) — third instance of a citation being filed under
+   a conclusion it does not carry.
 
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
@@ -900,6 +916,44 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   chondrocyte literature says polyamines **stimulate** the differentiated phenotype, and DFMO is used to
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
+
+## ⭐ PDE3B (R304) — the top lengthening knockout in IMPC, concordant in humans, approved oral drug
+
+**`atlas/data/round303/impc_length_endpoints_all.json` — 12,068 length rows, 7,216 GENES.** CLAUDE.md's
+"231 unmined length endpoints" (R269) understated the file's reserve **thirty-fold**. Second CORR-328.
+
+- ⛔ **FIRST, THE BASE RATE, BECAUSE IT BROKE R303 (CORR-329).** **63.7% of ALL knockouts are SHORTER**
+  (mean −0.330, median −0.212); at P<1e-4 it is **245 shorter vs 38 longer**. Tibia: 63.3% negative, 168 vs
+  34. **Knocking out almost any gene shortens a mouse.** So R303's Axin2-het "validation" (−1.98) drops
+  **B→D** — the magnitude is top-5% but the SIGN is what everything does — and R303's Tnks-tibia
+  "invalidation" (−0.455) sits **at the median** and dissolves too. **IMPC length data are uninformative
+  about tankyrase in BOTH directions.** CORR-311, applied to myself one round after writing it.
+  ✓ **Corollary: POSITIVE results are ~5× rarer and carry far more information.** That upgrades R303's
+  Ctnnb1-het bone GAIN and makes the lengthening list the prize.
+- ⭐ **PDE3B — mouse tibia +4.597, P=9e-07: the LARGEST lengthening effect among 7,216 genes.**
+  ✓ **Clean and specific** — the ONLY significant hit among **33 parameters**; viability normal; cardiac
+  (HR/RR/QRS/PR/PQ/HRV) all null; radiographs of femur, radius, ulna, pelvis, **vertebrae (shape, fusion,
+  processes)**, ribs, joints, teeth all P=1. **Not a dysplasia, not a sick animal.**
+  ✓ **Human agrees and is well powered: PDE3B pLoF +1.22 cm, P=5.1e-13, 1,761 hets.** Only **3 of 69**
+  lengthening knockouts are among the 207 human genes; PDE3B is the one where both effects are large and
+  concordant. (HLTF also concordant: mouse +0.058 P=1.1e-07, human +1.47 cm. HHIPL1 discordant.)
+  ✓ **Mechanism = h_term, the largest term.** `hirota2022`'s cAMP/PKA arm acts on **HYPERTROPHIC ZONE
+  elongation**, H89-abolished — and the atlas's own nodes already call it *"the strongest surviving partner…
+  ADDS on a term FGFR3 blockade does not touch rather than multiplying."* R296 said h_term had no
+  upward-pointing agent; this one points up.
+  ✓ **APPROVED, ORAL, CHEAP: cilostazol** (+ milrinone, enoximone, anagrelide, pentoxifylline, ensifentrine).
+  ✗ **Against — and it is not trivial.** **PDE3B is 1/15 in the clean donor** (one PHZ detection at 794),
+  0/15 donor 2 → CORR-327 half-fails, and PDE3B's best-known biology is **adipocyte/hepatic insulin
+  signalling**, so a systemic route is as plausible as a cartilage one. `hirota2022` found Pde3a/Pde3b
+  **unchanged through differentiation** and cilostamide inert on the CNP axis. **Oral PDE3 inhibitors raised
+  mortality in chronic heart failure; cilostazol has a BOXED WARNING and is contraindicated in HF.** n=5+5,
+  and **body length was not reported for the line — only tibia.**
+  Gap: `g_l12_does_a_pde3_inhibitor_lengthen_bone_in_a_normal_animal`.
+- **THE OTHER 68, almost none ever mentioned here:** Zhx3 (tibia +3.88 **and** body +2.20), Klk5 +3.27,
+  Hyls1, Rft1, Wdsub1, Tmem237, Med28, **Jarid2 (body +2.26 AND tibia +0.97, both het)**, Slc7a2, Micu1,
+  P2ry14, Lingo2, **Enpp1 +1.71**, **Pik3cg +1.53**, Nr1d1, Limk2, Pdgfc, Scarf2, Ncor2, **Tyk2 +0.87**,
+  Lta4h, Insig2, Mstn. Several are drugged — **deucravacitinib (TYK2)**, PI3Kγ and LTA4H clinical compounds,
+  REV-ERB ligands (NR1D1), ENPP1 enzyme therapy. **None assessed. Start the next round here, from data.**
 
 ## THE DRUGGABILITY BASE RATE (R298) — `atlas/tools/round298_druggability_sweep.py`
 
