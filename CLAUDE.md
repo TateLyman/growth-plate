@@ -1584,7 +1584,54 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
-## ⭐⭐⭐⭐⭐ R321 — **THE COMPOUND IS ORAL SODIUM SULFATE.** Supersedes R320's choice of NAC.
+## ⭐⭐⭐⭐⭐ R322 — **SULFATE IS TRUNK-SPECIFIC (P=2.2e-07).** And the same physiology DOWNGRADES the supplement.
+
+Operator supplied `scherer2025`'s supplementary tables. **Both questions closed.**
+
+⭐⭐⭐ **THE COMPARTMENT ANSWER — SULFATE ACTS ON THE TRUNK.** ST16, UK Biobank ~466,900, sitting and standing
+height measured SEPARATELY:
+| SLC13A1 variant | hets | **SITTING height** | standing height |
+|---|---|---|---|
+| **R12\*** (nonsense) | 2,476 | **−0.0774 SD, P=2.16e-07** | −0.0380 SD, P=0.0064 |
+| **R272C** | 293 | **−0.1839 SD, P=2.0e-05** | −0.1211 SD, P=0.0027 |
+| W48\* (nonsense) | 929 | −0.0717, P=0.0033 | −0.0702, P=0.0021 |
+**For the commonest allele the SITTING-height effect is 2× the standing effect and FOUR ORDERS OF MAGNITUDE
+more significant at the same N.** Three independent LoF alleles, all lowering trunk height.
+⭐ **Converges with R318 from a completely independent direction** — sulfate joins HHIP and TET1 as
+trunk-directed, and unlike HHIP it has an obtainable agent.
+
+⭐ **THE MAGNITUDE.** SLC13A1 burden on plasma sulfate **−0.7435 SD, P=2.6e-18** (N=4,713).
+→ **gradient = 0.104 SD of SITTING height per SD of plasma sulfate** (0.051 for standing).
+Naively, Morris & Levy's +2.4 SD sulfate excursion × 0.104 ≈ **+0.25 SD sitting ≈ +0.9 cm.**
+⛔ **I AM NOT OFFERING THAT AS AN ESTIMATE — grade E.** Cross-cohort ratio; the 0.043 mM SD is within-study
+in 8 people; the gradient is measured only DOWNWARD from normal.
+
+⛔⛔ **AND THE DECISIVE OBJECTION IS IN THE SAME PAPER THAT GAVE US THE AGENT. HOMEOSTASIS IS THE POINT.**
+Morris & Levy: renal tubular reabsorption of sulfate is **CAPACITY LIMITED** (r=−0.54, P<0.005) and the
+authors state this saturable reabsorption **FACILITATES SULFATE HOMEOSTASIS.** A genetic lesion in the
+reabsorber lowers the set point **permanently**; an oral dose raises filtered load and the kidney **dumps
+it**. **NOT SYMMETRIC — and the asymmetry runs against the supplement.** The 25% rise was 2 h after ONE dose:
+an excursion, not a new set point. **No chronic-dosing plasma-sulfate time course exists for any oral donor.**
+→ **R321's compound is DOWNGRADED to grade D.** The demonstration stands; the extrapolation does not.
+
+⭐⭐ **BUT THE SAME DATA UPGRADE THE OTHER HALF, AND IT IS FREE.** The genetics don't show that MORE than
+normal helps — they show at **P=2.16e-07** that being at the **LOW end costs TRUNK height.**
+⛔ **PARACETAMOL: one ordinary 1.5 g dose = −24% serum sulfate — a LARGER acute perturbation, in the harmful
+direction, than the entire genetic effect of carrying a nonsense allele.** `li2021_sulfation`: low sulfate
+reserves are consequential; serum inorganic sulfate should be a biomarker.
+→ **THE ACTIONABLE CONCLUSION IS AN AVOIDANCE, NOT AN ADDITION — and it rests on better evidence.**
+
+⭐ **THE ONE ASSAY THAT SEPARATES A LIVE LEVER FROM A DEAD ONE: SERUM INORGANIC SULFATE.** A real analyte,
+simply not ordered routinely (`vandekamp2023`: hyposulfatemia "might be easily missed"). **Low end → the
+genetics support correcting it, trunk-weighted. Mid-range → homeostasis says nothing to gain, drop the
+compound.** Same class as the HOMA-IR question open since R297.
+
+⛔ **STILL UNKNOWN (do not re-derive):** no chronic-dosing plasma-sulfate time course · no sulfate donor has a
+bone-length endpoint in ANY species · nobody has raised plasma sulfate above normal and measured cartilage PG
+sulfation · MSM's effect on INORGANIC sulfate undemonstrated · trunk-specificity is a lead-variant adult
+association and does not localise the action to the vertebral growth plate.
+
+## ⭐⭐⭐⭐ R321 — **THE COMPOUND IS ORAL SODIUM SULFATE.** Supersedes R320's NAC. (Downgraded by R322.)
 
 ⭐⭐ **`morris1983` — 8 HEALTHY REPLETE ADULTS, four-way crossover, single oral doses, serum at 2 h:**
 | arm | serum inorganic sulfate | change |
