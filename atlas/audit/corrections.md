@@ -10098,3 +10098,29 @@ No growth analysis of any of these trials has ever been published.
 A KDM5 search this round returned **3,843 records and not one bone-length endpoint in any species**, so the frontier item stands — but as an *untestable direction*, not a shelf-ready one.
 
 **Rule.** When a pathway analysis names a regulator, read its **sign** before reaching for its pharmacology. "Druggable family" and "druggable in the direction you need" are different claims, and the available tool compound is usually an inhibitor regardless of which way the biology runs.
+
+## CORR-307 — the appendix I asked for corrected me twice, in opposite directions
+
+**(a) "AIMS necessarily holds serial height" — B → E.** Round 288 reasoned that annual BSA-adjusted Z scores require annual height. The appendix has **no height table**, and the primary statistical model, given in full on page 4, uses **absolute aortic root diameter** — not a Z score. The inference had no foundation. What *is* demonstrably serial is **weight**: Table S2 states patients "generally gained weight during the course of the study and if they transitioned from <50kg to >50kg this allowed up-titration." Weight drove dosing. Height at follow-up is now a question for the trials unit, not something I can infer.
+
+**(b) "The drug did not move the biomarker" — overstated.** Table S5: log TGF-β at one year, placebo **5.40** (n=42) vs irbesartan **5.29** (n=47), difference **−0.10 (95% CI −0.25 to 0.05), p=0.18**. That is ~10% lower with an interval reaching **22% lower**, and the point estimate favours the drug. **Underpowered, not null.** I read a p-value as an absence of effect — the exact error the phrase "absence of evidence" exists to prevent, made against my own argument's interest.
+
+**Rule.** Both errors came from reading a *summary sentence* in the main text ("did not differ") and a *methods implication* (Z scores ⇒ height) rather than the numbers. When a claim will carry a round, read the table, not the sentence about the table.
+
+**What the appendix gave instead, and it is better:** **93 participants under 18 at baseline** — 45 placebo, 48 irbesartan — randomised, placebo-controlled, five years, weight tracked throughout, 153/191 tolerating the full 300 mg. Plus the measured tolerability price: irbesartan lowered systolic pressure **6.0–9.7 mmHg** and diastolic **3.6–7.5 mmHg** at every annual timepoint (all p≤0.013) in a cohort with baseline BP 109/64, while placebo systolic *rose* 109.0→119.8 across five years.
+
+## CORR-308 — the missing caliper is a property of the field, not an oversight in one paper
+
+Round 288 recorded `chen2015` as a single galling omission: losartan in wild-type mice, post-proliferative zone expanded, bone length never measured. Two more full texts arrived and both did the same thing.
+
+| study | exposure | measured | length? |
+|---|---|---|---|
+| `chen2015` | losartan, **wild-type** mice | zone lengths, bone mass | **no** |
+| `busschers2025` | anti-TGF-β 1D11, 10 mg/kg/wk × 8 wk, Col1a1⁺/⁻ **and WT littermates** | femurs **micro-CT scanned**, 3-point bending, weight | **no** |
+| `morales2026` | **losartan 153 mg/kg/day in drinking water from E18** — above the stated maximum dose | survival, "growth curves" = **weights** | **no** |
+
+Three independent laboratories, growing animals, the most aggressive TGF-β-lowering exposure in the literature, femurs already in a µCT scanner for which length is a standard output — **and not one caliper.**
+
+This is not a criticism of any of the three: `busschers2025` is an osteogenesis imperfecta bone-mass study, `morales2026` a survival study in a lethal dysplasia. **It is an observation about where the field came from.** Skeletal TGF-β pharmacology descends from osteoporosis and fragility, so it measures *mass*; the length question has no constituency in it.
+
+**Rule.** When an axis has repeatedly "never been measured for length," check whether that is one gap or a *systematic blind spot of the parent discipline*. If it is the latter, the missing experiment is cheaper than it looks — the animals, dosing and imaging are already routine — and the absence carries no evidential weight at all.
