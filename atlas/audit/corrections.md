@@ -10070,3 +10070,31 @@ Round 287's draft cited `sirek2025` for "combined ADAMTS10 and ADAMTS17 inactiva
 The validator's citation-mismatch check caught it before commit — the same guard that caught the hirota2022 PMID error, and the reason `addref.py` refuses a `--ref-id` that disagrees with the resolved first author.
 
 **Rule, strengthened:** when adding several references from one search batch, **re-read the assigned ref_ids back from the bibliography before writing them into a node.** The tool prints them for exactly this reason and I did read them — then wrote the findings in the order I had searched rather than the order they resolved.
+
+## CORR-305 — I called a question structurally unanswerable, and it had been answered four times
+
+Gap `g_l1arch_019` recorded, as a settled structural fact:
+
+> "There is no placebo arm anywhere in the Marfan literature because withholding aortic protection is not ethical, so the effect of this axis on human growth may never be measurable by a randomised design. **That is a structural limit on the question, not a gap that more work closes.**"
+
+`pitcher2022`'s individual patient data meta-analysis identifies **seven randomised Marfan trials and 1,442 patients, of which four trials and 676 participants compared an ARB against a true control** — Ghent Marfan and Marfan Sartan placebo-controlled, COMPARE open control, and AIMS.
+
+**AIMS** (`mullen2019`) randomised **192 people aged 6–40, median 18 (IQR 12–28)**, to irbesartan or **matching placebo**, for **up to five years**, at 22 UK centres — the authors list "high proportions of children" among the trial's strengths. Height was recorded at entry, and BSA-adjusted aortic Z scores were computed **annually**. Body surface area is a function of height and weight. **You cannot produce five years of annual BSA-adjusted Z scores in a growing cohort without annual height.**
+
+No growth analysis of any of these trials has ever been published.
+
+**This is failure mode #4 in its most expensive form** — not "I asserted the literature was empty," but "I asserted a question was *permanently* unanswerable," which closes a line forever rather than for one round. CORR-267 and CORR-284 were about unrun queries; this is about an unrun query promoted to a law.
+
+**Rule.** A claim that something is *impossible in principle* is the highest-cost claim this file can make and needs the highest evidential bar. **Never record a structural limit without first running the query that would falsify it** — and write the falsifying query into the gap so the next reader can re-run it.
+
+**What narrows the win, stated here so it travels with the ask:** AIMS measured circulating TGF-β in 99 patients from baseline to one year and found **no difference between groups.** The drug did not move the biomarker. `sedes2022`'s mechanism is *local* sequestration of LTBP-3/-4 in the outer perichondrium, which serum does not report on. So the informativeness is **asymmetric — a growth positive would be strong, a growth null weak** — and that asymmetry is declared before the data is requested, not after it is seen.
+
+## CORR-306 — the tool compound that exists points the wrong way
+
+`sedes2022`'s RNA-seq of fibrillin-deficient perichondrium returned **KDM5A predicted UP** as a joint top dysregulated pathway, with the authors noting they did not pursue it. CLAUDE.md separately carries the H3K4me3/KDM5 arm as an open frontier item. Two independent lines, one enzyme family — and the obvious move is to reach for the KDM5 inhibitor that already exists.
+
+**That move is backwards.** The **long-bone** state has KDM5A activity *up*. Every KDM5 compound in existence — CPI-455, PBIT, KDM5-C70 — is an **inhibitor**, which moves *away* from the overgrowth state. Reproducing the phenotype would need KDM5A **activation**, for which there is no chemical matter.
+
+A KDM5 search this round returned **3,843 records and not one bone-length endpoint in any species**, so the frontier item stands — but as an *untestable direction*, not a shelf-ready one.
+
+**Rule.** When a pathway analysis names a regulator, read its **sign** before reaching for its pharmacology. "Druggable family" and "druggable in the direction you need" are different claims, and the available tool compound is usually an inhibitor regardless of which way the biology runs.
