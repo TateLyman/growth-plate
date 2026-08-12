@@ -951,6 +951,60 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⭐⭐ R312 — THE GROWTH-CAPACITY AXIS IN TWO SPECIES, AND **THE ADDITION QUESTION ANSWERED**
+
+`GSE114919` carries **two orthogonal contrasts**, zone-resolved, in **mouse AND rat**: **AGE** (1wk vs 4wk
+tibia) and **SITE** (1wk tibia vs 1wk phalanx — both open, one contributes 10× the length). Rule: rises with
+age **and** higher in the low-output plate = a **restraint that accumulates** → inhibit. Falls on both =
+**capacity being lost** → inhibiting it runs backwards.
+✓ **POSITIVE CONTROL WORKS: ESR1 is brake-like in both species** (rat age **+4.02** PZ) — the period-closing
+signal the one period arm in this stack targets.
+
+⛔ **NOT MINEABLE GENOME-WIDE. Four measured confounds.** Muscle panel scores **6.15 (1wk tibia) → 3.12 (4wk)
+→ 1.82 (phalanx)** — *dissection contamination reproduces the capacity pattern by itself*, and the raw list is
+led by Myh8 −6.58, Myh4 −5.13, Acta1 −4.72. Brake side: **distal-HOX 8.04 phalanx vs 2.26 tibia** (Hoxa13
++6.06), **bone** (Bglap +4.26 mouse / +5.62 rat, Sost, Mepe), **marrow/immune** (Ms4a1, Cd74, Ccl6, Siglec1).
+**Use it to adjudicate genes you already have reasons for, never as a discovery screen.**
+
+⭐ **HHIP — THIRD ORTHOGONAL LINE, AND IT REPLICATES ACROSS SPECIES ON THE SITE AXIS.**
+**mouse +2.86 PZ / +3.31 HZ · rat +2.33 PZ / +3.34 HZ** — four values within ~0.5 log2. Aggrecan moves −0.61
+on the same contrast, so this is **not dilution**. **Gli1 falls on the same axes in both species** — brake up,
+output down. ✗ **The AGE axis FAILED to replicate** (rat +0.64 PZ, **−0.48 HZ** vs mouse +2.12): HHIP tracks
+plate **OUTPUT**, not age. Claim trimmed to what survives.
+
+⭐ **CHAD — NEW, AND IT IS *THE LAYER* AGAIN.** Secreted leucine-rich-repeat matrix protein.
+**Human pLoF +2.63 cm, P=4.0e-10, 282 hets** · **all EIGHT contrast values positive** (mouse age +4.76/+4.22,
+site +1.68/+0.61; rat age +1.75/+0.69, site +1.11/+2.06) · 5/5 both human donors (R300).
+✗ **Zero drugs, zero tool compounds, no perturbation in any species.** Had zero atlas coverage before R300.
+
+⛔ **TWO CANDIDATES DAMAGED.**
+- **LOXL2 — R301's "only candidate left standing" runs BACKWARDS in rat.** Inhibition predicts brake-like;
+  **rat site −1.23 PZ / −2.00 HZ** = LOWER in the low-output plate. Human +1.40 cm untouched (causal where
+  this is not); what's gone is the supporting argument.
+- ⚠ **NRK's EXPRESSION CONTRADICTS ITS OWN THERAPEUTIC DIRECTION, IN BOTH SPECIES.** Capacity-like
+  everywhere (mouse −0.89/−0.82/−1.24; rat −0.88/−0.92/−0.83) — highest where growth is highest — while
+  pLoF +2.79 cm implies **INHIBIT**. Not a refutation; a tension nobody had noticed. Record it next to the
+  83.5× enrichment.
+- **TANKYRASE flat on all eight contrasts** (largest −0.58). **Three independent failures to corroborate
+  R302 — R303 (IMPC), R311 (maturation), R312.** Step-0 cleanliness and hotta2024 untouched.
+✓ **SCUBE3 GAINS SUPPORT — and its direction is to SUPPLY, not block.** Falls with age in both species
+(mouse −1.63/−2.02, rat −2.20/−1.76); loss shortens. First evidence it declines on the relevant axis.
+
+## ⛔ **THE ANSWER TO "WHAT SHOULD WE ADD" (R312) — NOTHING PASSES BOTH TESTS. The split is total.**
+- **Best evidence, NO MOLECULE:** HHIP (3 lines; no agent in any species, R294) · CHAD (3 lines; 0 drugs) ·
+  SCUBE3 (2 species declining; no recombinant product) · NRK (best localisation in the atlas; no inhibitor).
+- **Molecule exists, evidence THIN or NEWLY NEGATIVE:** LOXL2 (damaged R312) · tankyrase (3 failures) ·
+  TET1 (no inhibitor with a bone-length endpoint) · DFMO (sign unresolved).
+- **R298 already said this is the BASE RATE, not bad luck:** 202/298 atlas targets have no drug, because the
+  plate is TFs, secreted modulators, matrix and channels while the pharmacopoeia is kinases, GPCRs and
+  nuclear receptors. **The shelf is empty; the search was not insufficient.**
+- ⭐ **THE ONE CHEAP UNBLOCKED ITEM IS A BLOOD TEST, NOT A PAPER: fasting insulin / glucose / HOMA-IR.**
+  Absent from this atlas for this subject through ~15 rounds. Decides metformin — the only agent in R297's
+  audit aimed at the **PERIOD** — between live lever and contraindication.
+- ⭐ **SCALE, UNCHALLENGED:** femoral **8.85 cm** + tibial **7.36 cm** ≈ **16 cm**, vs **1–3 cm** for the whole
+  drug stack. Works **AFTER fusion**, so it does not compete for the closing window; one series with
+  vosoritide found no interference. A correction to the file's sense of scale, not a recommendation.
+
 ## ⭐⭐⭐ R311 — THE GENOME-WIDE **MATURATION** SCREEN IS UNBLOCKED. It is a CONTRAINDICATION screen, and the
 ## genes it cannot see are the ones this atlas is built on.
 
