@@ -10326,3 +10326,17 @@ So the therapeutic direction on PIEZO1 is **inhibition**, which is the opposite 
 **Third instance this session** — after CORR-313 (the ledger lost round 248's positive) and CORR-320 (the refutation of gudernova2016 was already in the atlas). And I wrote CORR-316, *"run every new gene against the atlas's own datasets before a literature search,"* the same morning. **The rule I wrote covered datasets. It should have covered nodes.**
 
 **Rule, extended.** Before promoting any gene, grep the graph for a node named after **the gene itself**, not just for the gene as a string inside round nodes. A gene with its own node has usually already had its loss-of-function literature read, and the promotion decision is sitting there.
+
+## CORR-322 — the drug databases the atlas has used are structurally blind to indirect action
+
+Rounds 297 and 298 both asked "what drug hits this target?" and Open Targets answered honestly: for 202 of 298 atlas targets, nothing does. That answer is *correct and incomplete*, and the incompleteness is structural rather than accidental.
+
+**Open Targets indexes direct target engagement.** A drug appears against a gene only if it binds the protein. So for transcription factors, secreted morphogen modulators, matrix proteins and channels — which is nearly everything this atlas leads with — it will keep returning "no molecule", forever, no matter how many times the query is re-run. Two rounds of mine treated that output as a fact about the world when it is partly a fact about the schema.
+
+**The complementary question — which chemicals MOVE a target by any route: transcription, upstream signalling, cofactor supply, off-target polypharmacology — is curated by a different database.** CTD (Comparative Toxicogenomics Database) holds statements of the form *"chemical X results in increased expression of gene Y"*, which is exactly the indirect relation. CTD's own batch API is behind a human-verification captcha and cannot be queried computationally from here.
+
+**Route around it, established this round:** Harmonizome re-serves CTD Gene-Chemical Interactions as a gene-centric REST endpoint with no key and no captcha, alongside PerturbAtlas, which supplies *genetic* perturbations of other genes that move the target — the upstream-node route to an undruggable protein.
+
+Validated on HHIP: 1,071 perturbation associations, of which the curated chemical set is **Choline, Folic Acid, Methionine** — all one-carbon methyl donors, which is a coherent signal rather than noise given the atlas's DNA-methylation arm, and one no direct-binding query could ever have produced.
+
+**Rule.** Before recording that a target has no pharmacology, state *which kind* of pharmacology was searched. "No binder" and "no handle" are different claims from different databases, and the atlas has been collapsing them. Direct engagement: Open Targets, DGIdb. Indirect and expression-level: CTD via Harmonizome, PerturbAtlas, LINCS.
