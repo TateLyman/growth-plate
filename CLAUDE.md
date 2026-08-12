@@ -917,6 +917,66 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⭐⭐⭐ THE cAMP AXIS IS A NAMED HUMAN DISEASE FAMILY (R306) — and BOTH druggable PDEs are in it
+
+**iPPSD = inactivating PTH/PTHrP signalling disorders.** A recognised clinical nosology for conditions
+caused by **reduced cAMP/PKA signalling**. **Every member has SHORT STATURE + BRACHYDACTYLY.**
+| gene | lesion | effect on cAMP | human disease |
+|---|---|---|---|
+| **GNAS** | loss of function | ↓ | pseudohypoparathyroidism 1A / Albright hereditary osteodystrophy |
+| **PRKAR1A** | **gain** of function | ↓ PKA output | **acrodysostosis type 1** |
+| **PDE4D** | **gain** of function | ↓ | **acrodysostosis type 2** (+ **advanced bone age**) |
+| **PDE3A** | **gain** of function | ↓ | **hypertension with brachydactyly** + short stature |
+
+⭐ **A PDE3 OR PDE4 INHIBITOR IS THE PHARMACOLOGICAL INVERSE OF THE HUMAN MUTATION THAT SHORTENS.** This
+answers R305's "PDE3 has the genetics, PDE4 has the expression, neither has both" — **both have human
+disease genetics.** I had not looked in the dysplasia literature.
+⭐ **AND PDE4D ACTS AT THE PLATE, IN HUMANS** (`morgul2025`, acroscyphodysplasia): **−4.81 SDS height,
+cup-shaped knee metaphyses, "MOSAIC GROWTH PLATE INVOLVEMENT."** Metaphyseal cupping is a physeal lesion.
+⚠ **The BA16-relevant line: acrodysostosis 2 has ADVANCED bone maturation.** Less cAMP accelerates
+maturation → raising it should decelerate → a **PERIOD** lever, not a rate lever. **Grade E** (inference
+from a syndrome feature); never measured under a drug. It is also the property teriparatide lacked.
+
+### THE Gs-RECEPTOR SHELF IS EMPTY IN CARTILAGE — CORR-327 inside one axis
+✗ **Absent:** ADRB1, ADRB3, ADORA2A/2B, PTGER2, PTGDR, PTGFR, PTH2R, CALCR, CALCRL, VIPR1, ADCYAP1R1, GIPR,
+GCGR, CRHR1, SCTR, MC4R, TSHR, LHCGR, FSHR, DRD1, HRH2, HTR4/6/7, GPR101, GPBAR1.
+⚠ **Marginal:** ADRB2 (RZ 844 — the 79-agent β-agonist block R298 dismissed; dismissal survives), PTGER4,
+GLP1R, VIPR2, DRD5, GPR161.
+✓ **Only PTH1R is large — 49,326 HZ — and that is the route teriparatide already failed** (+1.5%/+3.4% at
+6 mo → **0.0% at 26 mo**). **Receptor agonism is NOT the way in. Enter at degradation or production.**
+
+### EVERY DRUG ON THIS AXIS, TRIAGED
+- ⭐ **PDE4 — THE LEAD. ROFLUMILAST and APREMILAST: approved, oral.** PDE4A is the **best-expressed cAMP PDE
+  in the plate** (PZ 4,257); PDE4B PZ 2,092. PDE4D GoF = human growth-plate dysplasia. Ibudilast oral (Japan).
+  ✗ Crisaborole/difamilast are topical — useless here.
+- ⭐ **PDE3 — best burden genetics + biggest mouse effect. CILOSTAZOL: approved, oral.** ⛔ Oral PDE3
+  inhibitors raised mortality in chronic HF; **cilostazol has a BOXED WARNING**, contraindicated in HF.
+  Milrinone/enoximone are IV inotropes — unusable.
+- **DUAL PDE3+4 — PENTOXIFYLLINE: oral, generic, decades of paediatric use** (on R297's never-checked list).
+  Theophylline/aminophylline: oral, narrow therapeutic index. **Ensifentrine is approved dual PDE3/4 but
+  INHALED** — wrong route.
+- **DIRECT AC ACTIVATION, bypasses the PDE question: FORSKOLIN** (Coleus forskohlii); **COLFORSIN DAROPATE
+  is an approved water-soluble derivative (Japan).** No length endpoint for either.
+- **ADORA1 ANTAGONISM — ADORA1 is Gi-coupled and IS present (4/10, ~850–930 all zones).** Blocking Gi
+  disinhibits AC → raises cAMP. **Caffeine is an A1 antagonist + weak non-selective PDE inhibitor**, and is
+  given to preterm infants in randomised trials with long-term growth follow-up **never read here.**
+- **SIK INHIBITION — downstream; SIK2/SIK3 and CRTC2/CRTC3 strongly expressed.** Clinical-stage only.
+  ⚠ Mouse muddles it: Sik1-null −0.387 (P=0.00077) and Crtc3-null −1.087 (P=4.8e-05) both SHORTEN.
+- ✗ **Ruled out by absent receptor:** β-agonists, A2A/A2B agonists, VIP/PACAP, glucagon/GIP, CRH,
+  calcitonin, D1, H2, 5-HT4/6/7.
+
+### ✗ ROUND 305 CLAIM WITHDRAWN — and the atlas already held the correction
+"PDE3B is barely present in cartilage, so its effect may be systemic" is **withdrawn**. **`ursachi2026` has
+been in this bibliography since 2026-08-05 with cited_by = 0**: growth-plate chondrocytes of **human, mouse
+AND chicken** express **PDE1B, PDE3B, PDE4B, PDE4D, PDE5A, PDE7A, PDE8A, PDE10A**. The 1/15 microarray read
+was a **sensitivity floor** — the same platform that missed NPPC. CORR-313, caught before shipping.
+
+### ⚠ NSAIDs — R297's open question finally gets a mechanism
+**PTGS1 (COX-1) is the plate's cyclooxygenase — 14/20 in donor 2, HZ 805 — while PTGS2 (COX-2) is 0/10 in
+BOTH donors**, feeding Gs-coupled **PTGER4** (RZ 894, PC 1,588). **A non-selective NSAID lowers PGE2 → EP4 →
+Gs → cAMP — the direction that shortens every member of the iPPSD family.** Mouse Ptgs1-null body length
+−0.506 (P=0.10, ns). **Grade E**, no length endpoint. Watch-item, not established harm.
+
 ## ⭐⭐ cAMP IS A HUMAN HEIGHT-SETTING SECOND MESSENGER (R305) — bidirectionally anchored, and the plate has it
 
 **Three genes, two directions, one molecule, 1.45M exomes:**
