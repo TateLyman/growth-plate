@@ -917,6 +917,36 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⛔ R307 — THE cAMP AXIS IS A **BAND**, AND RAISING IT OPPOSES THE ERDAFITINIB ARM. Read before R305/R306.
+
+**THE GAIN END IS A HUMAN DISEASE TOO.** `hppner2025` sat in this bibliography (cited_by 4) with a one-line
+finding that recorded *nothing* of what it found. **Jansen's metaphyseal chondrodysplasia = constitutively
+active PTH1R = ligand-independent Gs/cAMP → SHORT STATURE**, long bones **markedly misshapen**, expanded
+metaphyses, **disarrayed chondrocyte zones**, reduced primary spongiosa, reduced growth-plate ¹⁸F uptake.
+⭐ **ABLATING Hdac4 RESCUED the growth plate** → names **PTH1R–Gαs–cAMP–PKA–SIK3–HDAC4/5** as the mediator.
+→ **TOO LITTLE cAMP = short (iPPSD). TOO MUCH cAMP = short (Jansen's). FIFTH BAND IN THIS FILE.**
+**Overshoot = failure mode #1 with a pathway:** PKA ⊣ SIK3 → HDAC4/5 repress MEF2C → **hypertrophy blocked**.
+
+⛔ **AND THE STEP-0 CONFLICT I MISSED FOR TWO ROUNDS.** cAMP → PKA → **CREB**. `horike2026` (the basis of
+R265): CREB disrupts resting-zone stem-cell behaviour → **expanded RZ + SHORT bones** = CORR-292's JAM;
+ERK-independent; 666-15 rescues bone length. **Erdafitinib's contribution to this stack IS lowering CREB.**
+A cAMP-raiser pushes the node the lead drug exists to suppress. **I checked Step 0 against the FGFR3
+RECEPTOR and not against its downstream NODE.**
+⚠ **The asymmetry makes it worse: 666-15 is NULL IN WILD-TYPE.** At normal CREB, lowering does nothing and
+raising moves toward the ACH-like jam. **No upside on that arm, real downside** — and this subject is
+WT-FGFR3 on a CREB-lowering drug.
+
+✓ **WHAT SURVIVES:** the loss direction is untouched, and **the band's peak sits slightly ABOVE WT** — which
+is the only reason the axis stays live. **PDE3B het loss = +1.22 cm (P=5.1e-13, 1,761 people).**
+**SAY THE SCALE PLAINLY: ~1 cm for a lifetime of heterozygous loss**, bounded above by the jam.
+✗ **RANKING, mechanically:** PTH1R **dead** (Jansen's at the extreme, 0.0% terminal femur under
+teriparatide). **Forskolin / colforsin / high-dose non-selective PDE inhibition are the WORST choices** —
+aimed straight at both overshoot arms. PDE4 and PDE3 inherit both arms in proportion to how hard they push.
+⭐ **The map's own answer is DOWNSTREAM AND OPPOSITE: the damaging arm is PKA→SIK3→HDAC4/5 and Hdac4
+ABLATION was the rescue — pointing at inhibiting HDAC4, not raising cAMP.** Grade E: CORR-203 applies (rescue
+in a mutant ≠ elevation in a normal plate), it collides with R298's HDAC contraindication (now shown
+one-sided), and marketed HDAC inhibitors are pan-class.
+
 ## ⭐⭐⭐ THE cAMP AXIS IS A NAMED HUMAN DISEASE FAMILY (R306) — and BOTH druggable PDEs are in it
 
 **iPPSD = inactivating PTH/PTHrP signalling disorders.** A recognised clinical nosology for conditions
@@ -1106,7 +1136,7 @@ HIF-PHI class was already checked in R284.
 
 ## PATTERN THAT PREDICTS THE NEXT FAILURE
 
-Four axes now shorten bone in **both** directions: hedgehog (R268), oestrogen receptors (R272), DNA
+**FIVE** axes now shorten bone in **both** directions — **cAMP joined in R307** (iPPSD one way, Jansen's the other): hedgehog (R268), oestrogen receptors (R272), DNA
 methylation (R276), **canonical Wnt (R281)**. **Any axis found DECLINING with maturation looks like a brake
 to release and may just be regulated within a band.** *But R281 adds the other half: a band is not
 automatically a closure. Canonical Wnt is a band whose peak is NOT at wild type — so ask both "is it a band?"
