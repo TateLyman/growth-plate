@@ -1,0 +1,201 @@
+id: round298_every_target_this_atlas_ever_named_run_against_every_drug_that_exists
+name: >-
+  ROUND 298 - the exhaustive version. Round 297 audited 39 drugs I chose from memory. This runs all 298
+  targets the atlas has ever named against every drug in Open Targets: 948 drug-target pairs and 419
+  approved agents this file has never written down. Then four candidate pathways were tested against the
+  human growth plate before any of them was proposed - and THREE DIED WITHIN THE HOUR. What survives is two
+  contraindications, one of them a drug currently given to boys
+aliases:
+- round 298
+- the druggability sweep
+- 202 of our targets have no molecule at all
+- the nitrate/sGC route is absent from the human plate
+- givinostat and the HDAC4-MEF2C brake
+- aldose reductase is in the human growth plate
+type: hypothesis
+layer: L12
+stub: false
+summary: >-
+  ZERO - THE METHOD, AND WHY IT IS DIFFERENT FROM ROUND 297. That round asked "which accessible drugs is the
+  atlas missing?" and answered from a list I wrote from memory, so its ceiling was my recall. This one
+  inverts the direction: take every gene the atlas has ever nominated - harvested from its own ontology,
+  every node typed gene, protein or hormone, plus the explicitly nominated sets in CLAUDE.md - resolve them
+  through Open Targets, pull every drug and clinical candidate against them, and subtract every drug name
+  the file already mentions. 368 symbols in, 298 resolved.
+
+  ONE - THE STRUCTURAL RESULT, AND IT IS THE MOST IMPORTANT LINE IN THIS ROUND. Of 298 targets, only 96 have
+  ANY drug or clinical candidate. TWO HUNDRED AND TWO HAVE NO MOLECULE AT ALL. And the undrugged list is
+  almost exactly the list of things this atlas cares most about: HHIP, IHH, SHH, PTCH1, PTCH2, GLI1, GLI2,
+  GLI3, SUFU, DISP1, GAS1, CDON, BOC, SCUBE1, SCUBE2, SCUBE3, NPPC, PIEZO1, PIEZO2, ACAN, FBN1, SHOX, NRK,
+  LCORL, TET1, ZFAT, CHD8, SPIN4, STK39, OXSR1, WNK1, WNK2, WNK3, SLC12A2, LRRC8A, LRRC8C, NFAT5, INPPL1,
+  PAPSS2, SLC26A2, RUNX2, SOX9, SP7, MEF2C, IGFBP1 through 6, SOCS2, STAT5B, KDM5A, KDM6B, NSD1, SETD2,
+  SUZ12, EED, IFT80, IFT88, KIF3A, PRKG1, PRKG2, LTBP3, LTBP4, NOG.
+  THAT IS NOT A GAP IN THE SEARCH. IT IS THE SHAPE OF THE PROBLEM. Rounds 290 to 296 kept arriving at "no
+  molecule exists" - for HHIP, for the volume machinery - and each time it read like a local misfortune.
+  It is not local. Two thirds of everything this atlas has ever nominated is undrugged, because growth-plate
+  biology is transcription factors, secreted morphogen modulators, matrix proteins and channels, and the
+  pharmacopoeia is kinases, GPCRs and nuclear receptors. The atlas should stop treating each "no molecule"
+  as news.
+
+  TWO - AND THE 419 APPROVED DRUGS IT HAS NEVER NAMED ARE MOSTLY NOISE, WHICH IS ALSO INFORMATIVE. The
+  largest blocks are ADRB2 (79 agents), PTGS1 and PTGS2 (63 and 74 - every NSAID), NR3C1 (53 - every
+  corticosteroid), ESR1, AR, JAK2, INSR. Those are hits because the atlas has nodes for the receptors, not
+  because anyone should take a beta-agonist for height. FOUR candidate pathways survived triage on the
+  criterion that the DRUG'S DIRECTION matched what a height goal needs and the target had plausible
+  growth-plate biology.
+
+  THREE - AND THEN I DID THE THING THE LAST FOUR ROUNDS TAUGHT ME AND TESTED THEM LOCALLY FIRST. All four
+  went into GSE9160, the only zone-resolved human growth plate, against each array's own detection
+  threshold, before a single one was written up as a proposal. THREE DIED.
+  ✗ THE NITRATE / SOLUBLE-GUANYLATE-CYCLASE ROUTE IS DEAD, AND THIS RESOLVES ROUND 297'S OPEN TOPOLOGY GAP
+  WITH A CLEAN NEGATIVE. Round 297 flagged cGMP-by-a-second-route as a real gap - the CNP arm works through
+  NPR-B to cGMP, and sGC is an independent cGMP source with a shelf of approved activators: nitroglycerin,
+  isosorbide mono- and dinitrate, sodium nitroprusside, pentaerythritol tetranitrate, plus riociguat and
+  vericiguat. IN THE HUMAN GROWTH PLATE THE ENTIRE SUPPLY LINE IS ABSENT. GUCY1A1 and GUCY1B1 are not even
+  on the platform; GUCY1A2 is 0 of 30 probe-donor cells in the clean donor; NOS1, NOS2 and NOS3 are
+  effectively absent; and the cGMP-degrading PDE5A (0/30) and PDE9A (0/10) are absent too.
+  ✓ BUT THE RECEIVER IS THERE. PRKG1 is detected and rises steeply into hypertrophy - 1441 resting, 2321
+  prehypertrophic, 4228 hypertrophic, 3040 perichondrium - and PRKG2, the growth-plate PKG, is detected in
+  prehypertrophic and hypertrophic zones in both donors. SO THE HUMAN GROWTH PLATE HAS THE cGMP EFFECTOR
+  KINASES AND NOT THE SOLUBLE CYCLASE. The cGMP that matters here is NPR-B-derived and particulate, exactly
+  as the vosoritide axis assumes, and a nitrate cannot substitute for it. Do not re-propose this.
+  ✗ CFTR IS DEAD. Ivacaftor and the caftor series are the one thing round 296 said did not exist on the
+  volume axis - an APPROVED CHANNEL ACTIVATOR rather than a blocker. CFTR is 0 of 25 probe-donor cells in
+  BOTH donors of the human growth plate. The idea was good and the tissue does not express the target.
+  ✗ HSD11B1 IS DEAD AS A LOCAL LEVER. 11-beta-HSD1 regenerates active cortisol inside tissues, and
+  carbenoxolone is approved - blocking local cortisol regeneration without touching the systemic axis would
+  have been an elegant route. HSD11B1 is 0 of 5 in the clean donor and 1 of 5 in the other.
+  ⚠ BUT THE RECEPTOR IS EVERYWHERE AND IT IS HYPERTROPHY-ENRICHED. NR3C1 is detected in 19 of 25
+  probe-donor cells in BOTH donors, rising 915 resting to 2951 prehypertrophic to 5630 hypertrophic. The
+  human growth plate is strongly glucocorticoid-RESPONSIVE while making none of its own. That says the
+  relevant variable is SYSTEMIC cortisol exposure, not local regeneration - which is a different and more
+  ordinary question than the one I was chasing, and it is not addressed anywhere in this atlas.
+  ✗ EGLN1 was the fourth and it is both absent locally (0/20 in the clean donor) and already checked -
+  round 284 ran the HIF-PHI class against bone length and found 35 records with zero length endpoints.
+
+  FOUR - WHAT SURVIVES IS TWO CONTRAINDICATIONS, WHICH IS WHAT AN HONEST EXHAUSTIVE SWEEP SHOULD MOSTLY
+  PRODUCE.
+  ⚠ HDAC INHIBITORS, AND ONE OF THEM IS NOW GIVEN TO BOYS. The atlas has a dedicated HDAC4 node and eight
+  references, and has never named a single HDAC inhibitor. The sweep returns twelve against HDAC4 alone,
+  including GIVINOSTAT - approved in 2024 for Duchenne muscular dystrophy and taken chronically by growing
+  boys - plus panobinostat, romidepsin, belinostat, entinostat, abexinostat and tacedinaline.
+  THE DIRECTION IS THE WRONG ONE AND THE HUMAN DATA SUPPORTS THE MECHANISM. HDAC4 represses MEF2C, and
+  MEF2C drives chondrocyte hypertrophy; Hdac4-null mice ossify prematurely through ectopic hypertrophy. In
+  GSE9160 both partners are present and MEF2C behaves exactly as the model predicts - 2453 resting, 6233
+  prehypertrophic, 13179 hypertrophic, detected in 8 of 15 and 10 of 15 probe-donor cells. An HDAC
+  inhibitor should therefore DE-REPRESS MEF2C, accelerate hypertrophy and shorten the growth period.
+  NOT ESTABLISHED - no HDAC inhibitor has a growth-plate length endpoint here - but it is a specific,
+  mechanistically-grounded, currently-prescribed risk that this atlas had no line on.
+  ⚠ ALDOSE REDUCTASE INHIBITORS, AND THE ENZYME IS IN THE TISSUE. AKR1B1 converts glucose to SORBITOL, the
+  classic osmolyte-generating reaction, and round 296 named the polyol pathway as an untested route on the
+  volume axis. IT IS DETECTED IN 5 OF 5 PROBE-DONOR CELLS IN BOTH DONORS of the human growth plate - one of
+  the few genes in any of these panels to achieve that - at 2543 resting, 3255 prehypertrophic, 2195
+  perichondrium. EPALRESTAT AND TOLRESTAT ARE APPROVED INHIBITORS, with sorbinil and caficrestat in phase 3.
+  Every one of them points DOWN - removing an osmolyte-generating enzyme from the largest term in the height
+  identity. The ACTIVATION direction, which is the one a height goal wants, has no molecule.
+  This is the volume axis's pattern for the third time and now with a named enzyme that is demonstrably
+  present in human tissue: the machinery is there, and every drug on it is a brake.
+human_evidence: direct
+human_evidence_note: >-
+  The triage of all four candidate pathways is human primary data - GSE9160, the only zone-resolved
+  transcriptome of a human growth plate, read against each array's preregistered detection threshold with
+  zonal ordering taken from the clean donor only. That is what killed the nitrate, CFTR and HSD11B1 routes
+  and what supports the two surviving contraindications. The druggability layer is a database query, not an
+  experiment, and no agent named here has a bone-length endpoint in any species.
+species_basis:
+- human
+translation_risk: high
+translation_risk_reason: >-
+  Expression is not function; absence on one microarray platform in two donors is weak evidence of absence,
+  and this same notebook has shown the platform misses low-abundance secreted transcripts such as NPPC. The
+  two surviving contraindications are mechanistic inferences from expression plus mouse genetics, not
+  measured harms. The value of the round is in what it stops the atlas from proposing.
+confidence: B
+confidence_reason: >-
+  The sweep is deterministic and reproducible and its central structural finding - 202 of 298 targets
+  undrugged - is arithmetic on a public database. The three negatives are threshold-based reads of human
+  tissue and are the strongest claims here. The two contraindications are graded lower individually because
+  each is a direction inferred from expression plus non-human genetics rather than an observed effect.
+claim_grades:
+- claim: >-
+    Two thirds of the targets this atlas has nominated have no drug or clinical candidate of any kind.
+  grade: A
+  basis: >-
+    202 of 298 resolved targets return zero drugs and zero clinical candidates in Open Targets, and the
+    undrugged set contains nearly every gene the atlas has led with - HHIP, IHH, PTCH1, GLI1-3, NPPC,
+    PIEZO1, ACAN, FBN1, SHOX, NRK, LCORL, TET1, ZFAT, SPIN4, STK39, WNK1-3, SLC12A2, RUNX2, SOX9, MEF2C.
+    Reproducible via atlas/tools/round298_druggability_sweep.py; the list is committed at
+    atlas/data/round298/undrugged_targets.txt. This reframes the last several rounds: "no molecule exists"
+    is the base rate for this biology, not a run of bad luck.
+- claim: >-
+    Raising cGMP through soluble guanylate cyclase is a usable second route to the CNP effector.
+  grade: X
+  basis: >-
+    NO - AND THIS CLOSES THE TOPOLOGY GAP ROUND 297 OPENED, WITH A NEGATIVE. In the human growth plate the
+    entire NO-to-sGC supply line is absent: GUCY1A1 and GUCY1B1 are not on the platform, GUCY1A2 is 0/30 in
+    the clean donor, NOS1/2/3 are effectively absent, and PDE5A (0/30) and PDE9A (0/10) are absent too.
+    Meanwhile the EFFECTORS are present and hypertrophy-enriched - PRKG1 at 1441 resting rising to 4228
+    hypertrophic, PRKG2 detected in prehypertrophic and hypertrophic zones of both donors. The plate has the
+    receiver and not the soluble cyclase, so the relevant cGMP pool is NPR-B-derived and a nitrate cannot
+    substitute. Approved sGC activators exist in quantity - nitroglycerin, isosorbide mono/dinitrate,
+    nitroprusside, pentaerythritol tetranitrate - and none of them can reach this tissue's cGMP.
+- claim: >-
+    CFTR activators are the missing upward-pointing agent on the volume axis.
+  grade: X
+  basis: >-
+    NO. Ivacaftor, tezacaftor, elexacaftor, lumacaftor, deutivacaftor and vanzacaftor are approved CFTR
+    activators or potentiators - genuinely the class round 296 said did not exist, since every other tool on
+    the volume machinery is a blocker. CFTR is 0 of 25 probe-donor cells in BOTH donors of the human growth
+    plate. Killed on the tissue, not on the pharmacology.
+- claim: >-
+    Blocking local cortisol regeneration with an 11-beta-HSD1 inhibitor is a growth-plate lever.
+  grade: X
+  basis: >-
+    NO. HSD11B1 is 0 of 5 in the clean donor and 1 of 5 in the other; the plate does not regenerate its own
+    cortisol, so carbenoxolone and the phase-2 inhibitors (AZD-4017, ABT-384, BMS-823778, MK-0736,
+    BI-187004) have no local substrate to act on. WHAT SURVIVES IS THE OPPOSITE OBSERVATION: NR3C1, the
+    glucocorticoid receptor, is detected in 19 of 25 probe-donor cells in BOTH donors and rises 915 resting
+    to 5630 hypertrophic. The tissue is strongly glucocorticoid-responsive while making none of its own,
+    which makes SYSTEMIC cortisol exposure the variable - a question this atlas has never examined.
+- claim: >-
+    HDAC inhibitors should be treated as a contraindication for a height goal.
+  grade: D
+  basis: >-
+    MECHANISTIC AND CURRENT, NOT MEASURED. HDAC4 represses MEF2C and MEF2C drives chondrocyte hypertrophy;
+    Hdac4-null mice ossify prematurely via ectopic hypertrophy. In GSE9160 both are present and MEF2C is
+    strongly hypertrophy-enriched (2453 resting, 6233 prehypertrophic, 13179 hypertrophic). Twelve HDAC
+    inhibitors hit HDAC4, none previously named in this atlas, and GIVINOSTAT was approved in 2024 for
+    Duchenne muscular dystrophy and is taken chronically by growing boys. Predicted direction: de-repress
+    MEF2C, accelerate hypertrophy, shorten the growth period. NO HDAC inhibitor has a growth-plate length
+    endpoint in this file, so this is a flagged risk and a named experiment, not an established harm.
+- claim: >-
+    Aldose reductase is present in the human growth plate and its only drugs point the wrong way.
+  grade: C
+  basis: >-
+    AKR1B1 - which converts glucose to sorbitol, the classic osmolyte-generating reaction - is detected in
+    5 of 5 probe-donor cells in BOTH donors, at 2543 resting, 3255 prehypertrophic and 2195 perichondrium.
+    Round 296 named the polyol pathway as an untested route on the volume axis and could not say whether the
+    enzyme was even there; it is. EPALRESTAT and TOLRESTAT are approved INHIBITORS with sorbinil and
+    caficrestat in phase 3, and all of them remove an osmolyte-generating enzyme from the largest term in
+    the height identity. No activator exists. Third instance of the volume axis's pattern, now with a named
+    enzyme confirmed present in human tissue.
+key_refs:
+- ref_id: gse9160
+  year: 2007
+  type: dataset
+  one_line_finding: >-
+    The triage instrument. Killed the nitrate/sGC route (supply line absent, PRKG1/PRKG2 present), CFTR
+    (0/25 both donors) and HSD11B1 (0/5 clean donor) before any was proposed, and supplied the expression
+    behind both surviving contraindications - MEF2C hypertrophy-enriched and AKR1B1 detected 5/5 in both
+    donors
+contradicts: >-
+  CLOSES round 297's open cGMP topology gap with a NEGATIVE - the soluble guanylate cyclase route that round
+  flagged as never examined is absent from the human growth plate while the PKG effectors are present, so a
+  nitrate cannot substitute for NPR-B-derived cGMP. Do not re-propose it.
+  EXTENDS round 296 rather than overturning it: the volume axis's "every tool is a brake" pattern now has a
+  third instance with a named enzyme confirmed present in human tissue (AKR1B1), and the one apparent
+  counterexample - approved CFTR activators - fails because the channel is not expressed in the tissue.
+  REFRAMES rounds 290 to 296. Each arrived at "no molecule exists" as if it were a local misfortune. It is
+  the base rate: 202 of 298 targets this atlas has ever nominated have no molecule of any kind.
+builds_on: round297_thirty_obtainable_drugs_this_atlas_has_never_had_an_opinion_about
+last_verified: '2026-08-12'

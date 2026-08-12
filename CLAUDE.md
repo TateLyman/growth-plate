@@ -625,16 +625,48 @@ searching repairs).
 - ⚠ **NSAIDs / celecoxib — zero coverage, and the likely direction is a COST not a lever.** COX inhibition's
   documented skeletal direction is suppressive. An atlas built to maximise height that never asked whether a
   common OTC class is SUBTRACTING has a blind spot that costs nothing to check. Watch-list, not established.
-- ⚠ **The cGMP SECOND ROUTE is a real topology gap.** The atlas examined cGMP *degradation* (PDE5 ×9 nodes,
-  tadalafil ×14) and settled that PDE3/cilostazol = vosoritide's node. It never examined cGMP *synthesis* via
-  **soluble guanylate cyclase**: L-arginine, citrulline, nitrates all **zero**; riociguat/vericiguat/cinaciguat
-  thin. sGC does not compete for NPR-B, so cilostazol's substitution argument may not transfer. Never put.
+- ✗ **The cGMP SECOND ROUTE IS DEAD — R298 closed it with a human negative. Do not re-propose nitrates.**
+  R297 flagged sGC as an untested route with a shelf of approved activators (nitroglycerin, isosorbide
+  mono/dinitrate, nitroprusside, PETN, riociguat, vericiguat). **In GSE9160 the whole supply line is absent:
+  GUCY1A1/B1 not on platform, GUCY1A2 0/30 clean donor, NOS1/2/3 effectively absent, PDE5A 0/30, PDE9A
+  0/10.** ✓ **But the RECEIVER is there and hypertrophy-enriched — PRKG1 1441 RZ → 4228 HZ, PRKG2 in PHZ/HZ
+  both donors.** The plate has the cGMP effector kinases and no soluble cyclase, so the relevant pool is
+  **NPR-B-derived and particulate** — exactly as the vosoritide axis assumes. A nitrate cannot reach it.
 - ⚠ **Inflammatory tone never examined:** anakinra, canakinumab, etanercept, adalimumab **zero**; tocilizumab
   thin. IL-6 blockade gives catch-up growth in inflammatory arthritis. CRP/IL-6 never recorded for this subject.
 - **The other 26 zeros:** allopurinol, amiloride, colchicine, collagen peptide, creatine, dapagliflozin,
   empagliflozin, glucosamine, HCTZ/thiazide, liraglutide, nifedipine, pentoxifylline, propranolol,
   semaglutide, simvastatin, spironolactone, strontium, vardenafil, verapamil, vitamin K, nitrate…
   **A zero is a statement about THIS FILE, not about efficacy.** None has a length endpoint here.
+
+## THE DRUGGABILITY BASE RATE (R298) — `atlas/tools/round298_druggability_sweep.py`
+
+Every gene the atlas has ever nominated (368 symbols from its own ontology) run against Open Targets.
+**298 resolved. Only 96 have ANY drug or clinical candidate. 202 HAVE NONE** —
+`atlas/data/round298/undrugged_targets.txt`. The undrugged list is the atlas's own greatest hits: HHIP, IHH,
+PTCH1, GLI1–3, SUFU, SCUBE1–3, GAS1, CDON, BOC, NPPC, PIEZO1, ACAN, FBN1, SHOX, NRK, LCORL, TET1, ZFAT,
+SPIN4, STK39, WNK1–3, SLC12A2, RUNX2, SOX9, MEF2C, SOCS2, STAT5B, IGFBP1–6, KDM5A, IFT80/88, PRKG1/2.
+⭐ **"No molecule exists" is the BASE RATE for this biology, not bad luck.** Growth-plate control is TFs,
+secreted morphogen modulators, matrix and channels; the pharmacopoeia is kinases, GPCRs and nuclear
+receptors. **Stop treating each "no molecule" as news.** 419 approved drugs hit our targets and were never
+named here — but the big blocks are ADRB2 (79), PTGS1/2 (137 NSAIDs), NR3C1 (53 steroids): receptor hits,
+not leads.
+**Four candidates were triaged against GSE9160 BEFORE being proposed. Three died** — nitrates/sGC (above),
+**CFTR/ivacaftor (0/25 both donors)**, **HSD11B1/carbenoxolone (0/5 clean donor)**. EGLN1 absent and the
+HIF-PHI class was already checked in R284.
+- ⚠ **NEW CONTRAINDICATION — HDAC INHIBITORS, and one is given to boys now.** The atlas has an HDAC4 node
+  and 8 refs and **never named a single HDAC inhibitor**; the sweep returns 12, including **GIVINOSTAT
+  (approved 2024, Duchenne, taken chronically by growing boys)**, panobinostat, romidepsin, belinostat,
+  entinostat. **HDAC4 represses MEF2C; MEF2C drives hypertrophy; Hdac4-null mice ossify prematurely.** In
+  GSE9160 both are present and **MEF2C is strongly hypertrophy-enriched (2453 RZ → 6233 PHZ → 13179 HZ)**.
+  Predicted: de-repress MEF2C → accelerate hypertrophy → **shorten the period.** Grade D, mechanistic.
+- ⚠ **AKR1B1 (aldose reductase) IS in the human growth plate — 5/5 probe-donor cells BOTH donors** (2543 RZ,
+  3255 PHZ). It makes SORBITOL, the osmolyte. **Epalrestat and tolrestat are approved INHIBITORS** (sorbinil,
+  caficrestat phase 3) — all pointing DOWN on the largest term in the identity. No activator exists. Third
+  instance of the volume axis's pattern, now with the enzyme confirmed present in human tissue.
+- ⚠ **NR3C1 is 19/25 in BOTH donors and rises 915 RZ → 5630 HZ.** The plate is strongly
+  glucocorticoid-RESPONSIVE while making none of its own (HSD11B1 absent). **So the variable is SYSTEMIC
+  cortisol exposure, not local regeneration — and this atlas has never examined it.**
 
 ## CONTRAINDICATED — do not add to the stack
 

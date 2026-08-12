@@ -28515,3 +28515,83 @@ edges:
   - laerkholm2025
   confidence: speculative
   gap_id: g_l12_is_this_subject_insulin_resistant_and_does_that_open_a_period_lever
+- edge_id: e01676
+  source: round298_every_target_this_atlas_ever_named_run_against_every_drug_that_exists
+  target: round297_thirty_obtainable_drugs_this_atlas_has_never_had_an_opinion_about
+  relation: required_for
+  sign: biphasic
+  magnitude: >-
+    THE EXHAUSTIVE VERSION OF ROUND 297, AND IT CLOSES THAT ROUND'S BEST LEAD WITH A NEGATIVE. 368 symbols
+    harvested from the atlas's own ontology, 298 resolved through Open Targets, every drug and clinical
+    candidate pulled and subtracted against the file's existing vocabulary: 948 novel drug-target pairs, 419
+    approved agents never named here.
+    THE STRUCTURAL RESULT: ONLY 96 OF 298 TARGETS HAVE ANY MOLECULE. 202 HAVE NONE - and the undrugged list
+    is nearly the atlas's own greatest hits: HHIP, IHH, PTCH1, GLI1-3, SUFU, SCUBE1-3, GAS1, CDON, BOC,
+    NPPC, PIEZO1, ACAN, FBN1, SHOX, NRK, LCORL, TET1, ZFAT, SPIN4, STK39, WNK1-3, SLC12A2, RUNX2, SOX9,
+    MEF2C, SOCS2, STAT5B, IGFBP1-6. "No molecule exists" is the BASE RATE for growth-plate biology, not the
+    run of bad luck rounds 290-296 treated it as.
+    AND ROUND 297'S cGMP SECOND ROUTE IS DEAD. That round flagged soluble guanylate cyclase as a real
+    topology gap with a shelf of approved activators - nitroglycerin, isosorbide mono/dinitrate,
+    nitroprusside, pentaerythritol tetranitrate, riociguat, vericiguat. In the human growth plate GUCY1A1
+    and GUCY1B1 are not on the platform, GUCY1A2 is 0/30 in the clean donor, NOS1/2/3 are effectively
+    absent, PDE5A 0/30 and PDE9A 0/10 - WHILE PRKG1 (1441 resting to 4228 hypertrophic) AND PRKG2 ARE
+    PRESENT. The plate has the cGMP receiver and no soluble cyclase. A nitrate cannot substitute for
+    NPR-B-derived cGMP.
+  context: >-
+    Open Targets GraphQL, tool committed as atlas/tools/round298_druggability_sweep.py, undrugged list at
+    atlas/data/round298/undrugged_targets.txt. Expression triage from GSE9160 against each array's
+    preregistered threshold, zonal ordering from the clean donor only. A database hit is not evidence of a
+    height effect and none of the 419 has a bone-length endpoint here.
+  evidence_tier: T3
+  refs:
+  - gse9160
+  confidence: B
+- edge_id: e01677
+  source: round298_every_target_this_atlas_ever_named_run_against_every_drug_that_exists
+  target: hdac4_protein
+  relation: inhibits
+  sign: '-'
+  magnitude: >-
+    A CONTRAINDICATION WITH A CURRENTLY-PRESCRIBED PAEDIATRIC DRUG, AND THE ATLAS HAD NO LINE ON IT. This
+    file has a dedicated HDAC4 node and eight references and has NEVER NAMED A SINGLE HDAC INHIBITOR. The
+    sweep returns twelve against HDAC4 alone - panobinostat, romidepsin, belinostat, entinostat, abexinostat,
+    tacedinaline, quisinostat, fimepinostat, CUDC-101 and GIVINOSTAT, which was APPROVED IN 2024 FOR
+    DUCHENNE MUSCULAR DYSTROPHY and is taken chronically by growing boys.
+    THE MECHANISM PREDICTS THE WRONG DIRECTION AND THE HUMAN TISSUE SUPPORTS IT. HDAC4 represses MEF2C;
+    MEF2C drives chondrocyte hypertrophy; Hdac4-null mice ossify prematurely through ectopic hypertrophy. In
+    GSE9160 both partners are present and MEF2C behaves exactly as the model requires - 2453 resting, 6233
+    prehypertrophic, 13179 hypertrophic, detected in 8/15 and 10/15 probe-donor cells. An HDAC inhibitor
+    should de-repress MEF2C, accelerate hypertrophy and SHORTEN THE GROWTH PERIOD.
+  context: >-
+    NOT AN ESTABLISHED HARM. No HDAC inhibitor has a growth-plate length endpoint in this atlas, and the
+    prediction chains mouse genetics to human expression. Recorded as a flagged risk and a named experiment
+    because the class is in current paediatric use and the direction is specific.
+  evidence_tier: T3
+  refs:
+  - gse9160
+  confidence: D
+- edge_id: e01678
+  source: round298_every_target_this_atlas_ever_named_run_against_every_drug_that_exists
+  target: the_swelling_machinery_has_only_ever_been_switched_off
+  relation: correlates_with
+  sign: '-'
+  magnitude: >-
+    THE VOLUME AXIS'S PATTERN FOR A THIRD TIME, NOW WITH A NAMED ENZYME CONFIRMED PRESENT IN HUMAN TISSUE.
+    AKR1B1 - aldose reductase, which converts glucose to SORBITOL, the classic osmolyte-generating reaction
+    and the polyol route round 296 named as untested - IS DETECTED IN 5 OF 5 PROBE-DONOR CELLS IN BOTH
+    DONORS of the human growth plate, at 2543 resting, 3255 prehypertrophic, 2195 perichondrium. One of very
+    few genes in any of these panels detected everywhere in both donors.
+    EPALRESTAT AND TOLRESTAT ARE APPROVED INHIBITORS, sorbinil and caficrestat are in phase 3, AND EVERY ONE
+    POINTS DOWN - removing an osmolyte-generating enzyme from the largest term in the height identity. The
+    activation direction has no molecule.
+    AND THE ONE APPARENT COUNTEREXAMPLE FAILS ON THE TISSUE: approved CFTR ACTIVATORS (ivacaftor,
+    tezacaftor, elexacaftor, deutivacaftor, vanzacaftor, lumacaftor) are genuinely the upward-pointing
+    channel agents this axis lacks - and CFTR is 0 of 25 probe-donor cells in BOTH donors.
+  context: >-
+    Expression, not function; absence on this platform in two donors is weak, and the same notebook misses
+    low-abundance secreted transcripts such as NPPC. Recorded because round 296 could not say whether the
+    polyol enzyme was even present in the tissue, and it is.
+  evidence_tier: T3
+  refs:
+  - gse9160
+  confidence: C
