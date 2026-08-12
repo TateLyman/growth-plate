@@ -10262,3 +10262,33 @@ GSE9160's two donors are **female 11 y 10 m and male 13 y 3 m**. NRK is X-linked
 I caught it only because I had written the rule four hours earlier. The first pass through this dataset averaged both donors and would have reported "NRK peaks in the proliferative zone at ~6000" — a number that is the mean of two incomparable measurements.
 
 **Rule.** A correction is not finished when it is written; it has to be **applied to the next dataset, not just the one that produced it.** For X- and Y-linked genes specifically, donor or sample sex is part of the design, and n = 2 with one of each is *never* a replicate pair.
+
+## CORR-318 — "figure-only" is a description of the text, not a property of the number
+
+Rounds 285 and 290 both recorded `haraguchi2025`'s central result as *"effect sizes figure-only"* and proceeded on the qualitative claim. That was accurate about the paper — it says "a statistically significant increase in femur length in cKO mice at both stages (Fig. 6b, d)" and gives **no mean, no SD, no percentage anywhere in the text.**
+
+The article is **open access on J-STAGE.** Fetch the PDF, render the page at 420 dpi, read the axes:
+
+| panel | age | control | mutant | delta | code |
+|---|---|---|---|---|---|
+| 6b | 10 wk male | ~1.49 cm (n=6) | ~1.53 (n=4) | **+2.7 %** | `*` = p<0.01 |
+| 6d | 53 wk male | ~1.55 cm | ~1.62 (n=6) | **+4.5 %** | `***` = p<0.0001 |
+| 6i | 10 wk | ~0.44 mm² | ~0.62 | **+41 %** | `**` |
+| 6i | 53 wk | ~0.29 mm² | ~0.44 | **+52 %** | `**` |
+
+And two things the text never says, visible only in the figure:
+
+- **every skeletal panel is labelled MALE**;
+- **the 53-week mutant's growth plate area equals the 10-week wild type's** — the single most decision-relevant number in the HHIP case, in a panel neither round quoted.
+
+The cost of not looking was two rounds of arguing a lever whose size was unknown, while the atlas's ROI table prices everything else in centimetres.
+
+**Rule.** "Figure-only" means **open the figure.** For any open-access paper, rendering the PDF page is a two-minute operation and figure axes are quantitative. Digitised values get `value_unverified: true` and the render is committed so the reading is auditable — but *unquantified* is not an acceptable resting state for a number that carries a decision. The same applies to panels nobody quoted: read the whole figure, not the panel the abstract mentions.
+
+## CORR-319 — a regex edit to the bibliography clobbered a different reference, and only the diff caught it
+
+Patching `haraguchi2025`'s `one_line_finding` with `re.search(r"(  haraguchi2025:\n(?:.*\n)*?    one_line_finding: )...")` matched across intervening entries and **overwrote `hawkes2024`** (PMID 39362880, a WGS height paper) with HHIP text. The script printed "patched" and the subsequent read-back of `haraguchi2025` showed the *old* value — which is what exposed it. `git diff` confirmed the wrong record.
+
+Reverted with `git checkout`, redone as an exact line-range replacement with assertions on the boundary lines before writing.
+
+**Rule.** The bibliography is a 1,589-entry flat YAML file and **multi-line scalars make it hostile to regex.** Never patch it with a pattern that can span records. Either use `addref.py`, or locate the exact line range, **assert on the first and last line**, and splice. And always read `git diff --stat` before committing a mechanical edit — the failure was silent in the tool's own output and visible only in the diff.

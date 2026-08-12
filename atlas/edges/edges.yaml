@@ -28183,3 +28183,76 @@ edges:
   - gse9160
   - lui2023
   confidence: D
+- edge_id: e01664
+  source: round293_the_number_was_in_the_figure_and_a_53_week_mutant_has_the_growth_plate_of_a_10_week_wild_type
+  target: growth_cessation
+  relation: inhibits
+  sign: '-'
+  magnitude: >-
+    THE ONLY ENTRY IN THIS ATLAS SHOWN TO HOLD A GROWTH PLATE OPEN INTO OLD AGE IN A NORMAL ANIMAL WITH A
+    LENGTH ENDPOINT ATTACHED. haraguchi2025 Fig. 6i, growth plate area, both ages marked ** (p<0.001): at 10
+    weeks control about 0.44 versus mutant about 0.62 mm squared (+41 per cent); at 53 weeks control about
+    0.29 versus mutant about 0.44 (+52 per cent). READ AS A GRID: wild-type plate area falls 0.44 to 0.29
+    over that interval, which is normal involution, and THE 53-WEEK MUTANT'S PLATE AREA EQUALS THE 10-WEEK
+    WILD TYPE'S. The histology says it without arithmetic - at 53 weeks the wild-type plate is a thin
+    flattened band while the mutant's is tall, columnar and full of large chondrocytes.
+    AND THE LENGTH FOLLOWS: femur +2.7 per cent at 10 weeks (* p<0.01) and +4.5 per cent at 53 weeks (***
+    p<0.0001), body weight not significant at either age. Between 10 and 53 weeks wild-type femurs gained
+    about 0.06 cm and mutants about 0.09 - the mutant kept accruing about 50 per cent more length during the
+    window when a mouse plate is winding down.
+  context: >-
+    mouse, Prx1-Cre limb-restricted Hhip1 conditional knockout, n = 4-6, unpaired Student's t-test. EVERY
+    PANEL IS MALE, which the text never states. All magnitudes digitised at 420 dpi from the open-access PDF
+    and marked value_unverified; renders committed to atlas/data/round293/. Prx1-Cre is embryonic-onset, so
+    this is what the gene does across a lifetime and not what removing it at bone age 16 would do.
+  evidence_tier: T1
+  refs:
+  - haraguchi2025
+  confidence: C
+- edge_id: e01665
+  source: round293_the_number_was_in_the_figure_and_a_53_week_mutant_has_the_growth_plate_of_a_10_week_wild_type
+  target: round248_the_hinge_is_hedgehog_and_the_delivery_problem_is_solved
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    TWO INDEPENDENT HEDGEHOG-ELEVATION EXPERIMENTS AND IN BOTH THE GAIN GROWS WITH TIME RATHER THAN FADING.
+    haraguchi2025, mouse, GENETIC, limb-restricted: femur +2.7 per cent at 10 weeks and +4.5 per cent at 53.
+    trompet2024, rat, PHARMACOLOGICAL, unilateral bead with contralateral control: +2.75, +2.64 and +3.63 per
+    cent at one, two and six months in 6/6, 9/9 and 8/8 animals. Different species, different modality,
+    different duration, same shape. A rate effect on a closing plate shrinks as a fraction of final length;
+    a prolonged growth period does not. Round 293's growth-plate-area timecourse supplies the mechanism the
+    shape implies - the plate is still there.
+  context: >-
+    Neither is a human result and neither is a postnatally-induced perturbation. The convergence is on the
+    TIME COURSE, which is the property that distinguishes extending the growth period from accelerating it,
+    and which matters more than either effect size for a case at bone age 16.
+  evidence_tier: T1
+  refs:
+  - haraguchi2025
+  - trompet2024
+  confidence: B
+- edge_id: e01666
+  source: round293_the_number_was_in_the_figure_and_a_53_week_mutant_has_the_growth_plate_of_a_10_week_wild_type
+  target: round291_hhip_has_chemical_matter_after_all_and_the_unification_died_on_sedes_own_data
+  relation: required_for
+  sign: '+'
+  magnitude: >-
+    THE ALLELE THAT PRODUCES THIS FEMUR DESTROYS THE DOMAIN ROUND 291 NOMINATED AS THE DRUGGABLE POCKET.
+    haraguchi2025 states that exon 2 encodes 193 bp corresponding to amino acids 94-157 of the 700-residue
+    Hhip1 protein and that Cre excision frameshifts and annuls the Hedgehog ligand-binding domain. On UniProt
+    Q96QV1 - the architecture round 291 used to map the human p.V496E allele - residues 94-157 lie in the
+    N-TERMINAL domain, which is the HHIP-N that griffiths2021 shows binds the SHH cholesterol at K_D 23
+    micromolar through a cysteine-rich domain of Smoothened's structural family, and whose DL1 and DL2 loops
+    are the predicted small-molecule site. So the pocket is load-bearing for the length phenotype. That is
+    not pharmacology, but it is the closest thing to target validation this site has.
+  context: >-
+    Inference from two papers that do not cite each other, resting on a residue-range comparison against a
+    single UniProt record. The frameshift also removes everything C-terminal, including the beta-propeller
+    and both EGF repeats, so this allele CANNOT distinguish HHIP-N from the rest of the protein - it shows
+    the domain is necessary as part of a null, not that it is sufficient. Stated so the claim is not read as
+    stronger than it is.
+  evidence_tier: T1
+  refs:
+  - haraguchi2025
+  - griffiths2021
+  confidence: C

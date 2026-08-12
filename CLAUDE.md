@@ -420,9 +420,29 @@ zones and mass, never length).
   +1.99 (1.8e-3), SCUBE1 +1.82 (1.0e-4). **Receptor, transducer and readout uniform; only ligand
   AVAILABILITY differs.** SCUBE1 vs SCUBE2 — same job, opposite sides = a paralogue switch, not a gradient.
   Direction still unassigned per CORR-296; this claim doesn't need it.
-- **THE HEDGEHOG GAIN DIRECTION IS REOPENED (R285) — and it is now the best-evidenced pool lever in the file.**
-  `haraguchi2025`: **Hhip1-flox × Prx1-Cre (limb-restricted)** → **femur significantly LONGER at 10 wk AND 53 wk,
-  with NO body-weight difference at either age** (authors state this excludes generalised somatic overgrowth).
+- **THE HEDGEHOG GAIN DIRECTION IS REOPENED (R285) — and R293 finally put NUMBERS on it. CORR-318:
+  "figure-only" meant OPEN THE FIGURE.** The paper is open access; the text gives no mean, SD or percentage
+  anywhere. Rendered at 420 dpi (renders in `atlas/data/round293/`, all values `value_unverified`):
+  `haraguchi2025` **Hhip1-flox × Prx1-Cre (limb-restricted), MALE at both ages** — a fact only the figure states:
+  · **FEMUR +2.7%** at 10 wk (1.49→1.53 cm, n=6/4, `*`=p<0.01) · **+4.5% at 53 wk** (1.55→1.62 cm, n=6/6,
+  `***`=p<0.0001) · **body weight ns at BOTH ages.**
+  · **GROWTH PLATE AREA +41% at 10 wk (0.44→0.62 mm²) and +52% at 53 wk (0.29→0.44), both `**`p<0.001.**
+  · ⭐ **READ AS A GRID: THE 53-WEEK MUTANT'S PLATE AREA (0.44) EQUALS THE 10-WEEK WILD TYPE'S (0.44).** WT
+  involutes 0.44→0.29; the mutant at 53 wk still has a young mouse's plate. Histology confirms without
+  arithmetic — WT is a thin flattened band, cKO is tall and columnar with large chondrocytes.
+  **THIS IS THE ONLY ENTRY IN THE ATLAS SHOWN TO HOLD A GROWTH PLATE OPEN INTO OLD AGE IN A NORMAL ANIMAL
+  WITH A LENGTH ENDPOINT.** Everything else raises a RATE; this extends the PERIOD — which is the whole
+  problem at BA 16. (Grade C on the grid reading; re-check the "only entry" claim, CORR-313.)
+  · **The gain GROWS: 2.7%→4.5%.** Matches `trompet2024` independently (rat, pharmacological, +2.75/+2.64/
+  +3.63% at 1/2/6 mo). Two species, two modalities, same time course. A rate effect shrinks as a fraction;
+  a prolonged growth period does not.
+  · **The deleted exon 2 = aa 94–157 of 700 = inside HHIP-N** — the very domain R291 nominated as druggable
+  (griffiths2021's cholesterol-binding CRD). Closest thing to target validation the pocket has. ✗ But the
+  frameshift also removes the propeller and both EGF repeats, so it shows necessity as part of a null, not
+  sufficiency.
+  ✗ **CORRECTION TO R285/R290 (CORR-318):** "no body-weight difference" holds for the **limb-restricted cKO
+  only**. The **GLOBAL null has SIGNIFICANTLY INCREASED neonatal body weight and body size** (Fig 2, n=9–18)
+  and dies within hours of respiratory failure. The two were cited interchangeably and are opposite.
   Epiphyseal cartilage height ↑ with **both PZ and HZ widened but ORDERED**; Gli1 ↑ in chondrocytes + primary
   spongiosa; Hhip1 mRNA sits in **resting-zone chondrocytes**, periosteum, primary spongiosa. Both directions
   done: Hhip1 **over**expression shrinks the undifferentiated zone; Ptch1-null → excessive bone elongation.
