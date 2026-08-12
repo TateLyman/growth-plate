@@ -10310,3 +10310,19 @@ Add that the animals were **newborn**, a window nothing like an adolescent's, an
 **Rule, and it is a new failure mode.** Before recording a paper's *negative conclusion* about a drug class, **check what happened to its test articles afterwards.** A 2016 conclusion about compounds still in development is a hypothesis with a ten-year track record attached, and the track record is usually one search away. The specific trap: a null in a toxic arm reads like evidence of no effect, and a class conclusion drawn from tool compounds does not survive the real drugs.
 
 **And the failure this shares with CORR-313:** the contradicting datum was *already in the atlas*. I searched the literature for new evidence and did not grep my own graph for the compound name. `infigratinib` returns PROPEL3 immediately.
+
+## CORR-321 — I promoted a gene to "strongest new lead" without reading its own node, on the same day I wrote the rule against it
+
+Round 295 ran PIEZO1 through GSE9160, found it hypertrophy-enriched in the human growth plate, noted its 0.935 Open Targets score, and called it "the strongest new lead on this axis." The expression result is real and new. **The promotion was not, and `atlas/nodes/L6_mechanobiology/piezo1_channel.yaml` — last verified 2026-08-05 — already contained the answer:**
+
+- **Col2a1-Cre Piezo1 inactivation: "linear skeletal growth is only mildly affected"** — the node's own conclusion is that the channel is required for *the bone the plate produces*, not for *the plate's output*.
+- **Col10a1-Cre deletion, restricted to hypertrophic chondrocytes: osteopenia and increased osteoclast number, with hypertrophic apoptosis and transdifferentiation UNALTERED.** The loss-of-function test in the right cell type does not touch the volume phenotype.
+- **PIEZO1 activation is the damaging direction:** under compression PIEZO1 drives GPX4 loss and ferroptosis, and **deletion or pharmacological blockade *slowed* scoliosis progression.** `chen2025`, also already held, shows **Yoda1 — the PIEZO1 agonist — induces cartilage degeneration**, reversibly by cilia disruption.
+
+So the therapeutic direction on PIEZO1 is **inhibition**, which is the opposite of what a swelling lever needs. This is CORR-306's pattern exactly: *read the sign before reaching for the pharmacology.*
+
+**What survives from round 295 is one line, and it is the line the node itself flagged as missing:** "no study has localised PIEZO1 in human growth plate tissue." Now one has — all five compartments of both donors, rising 8986 → 24442 from resting into hypertrophic. That is a genuine addition. It just does not make PIEZO1 a lead.
+
+**Third instance this session** — after CORR-313 (the ledger lost round 248's positive) and CORR-320 (the refutation of gudernova2016 was already in the atlas). And I wrote CORR-316, *"run every new gene against the atlas's own datasets before a literature search,"* the same morning. **The rule I wrote covered datasets. It should have covered nodes.**
+
+**Rule, extended.** Before promoting any gene, grep the graph for a node named after **the gene itself**, not just for the gene as a string inside round nodes. A gene with its own node has usually already had its loss-of-function literature read, and the promotion decision is sitting there.

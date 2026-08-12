@@ -562,11 +562,18 @@ GDF5 0.675, LCORL 0.919).
   vs femoral **ARTICULAR** cartilage. In GSE9160 **PIK3CD is detected 9/10 probe-donor cells in the human
   GROWTH PLATE, highest in PZ (3520 vs thr 746).** Different tissue. **The length null stands; its
   explanation does not.** Regraded X→D *within the round*. Gap: `g_l5_is_pik3cd_expressed_in_the_human_vertebral_growth_plate`.
-- ⭐ **PIEZO1 — top of the atlas's own ranking (0.935, above every positive control) and NEVER CHECKED for
-  expression until R295.** GSE9160: detected in **all 5 compartments of both donors**; clean donor
-  **RZ 8986 → PZ 7893 → PHZ 20594 → HZ 24442** — a 2.7× rise **into the zone that does the enlarging**, at
-  among the highest absolute levels in the panel. **No PIEZO1 perturbation with a bone-length endpoint
-  exists in this atlas in either direction.** ← strongest new lead on this axis.
+- ✗ **PIEZO1 — I promoted it in R295 and WITHDREW it in R296 (CORR-321). Do not re-promote.** The refutation
+  was in `piezo1_channel.yaml` since 2026-08-05 and I never opened it. **Col2a1-Cre Piezo1 loss leaves
+  linear skeletal growth "only mildly affected"** — the channel serves the bone the plate PRODUCES, not the
+  plate's OUTPUT. **Col10a1-Cre (hypertrophic-restricted) leaves hypertrophic apoptosis and
+  transdifferentiation UNALTERED, no length effect** (`tschaffonmller2026`). And the agonist runs the wrong
+  way: **Yoda1 INDUCES cartilage degeneration** (COL2A1↓, RUNX2↑), reversibly by cilia disruption
+  (`chen2025`); under compression PIEZO1 drives ferroptosis and **blockade SLOWS scoliosis**. **Therapeutic
+  direction = INHIBITION.** CORR-306's pattern again.
+  ✓ **What survives, and it is the line that node flagged as missing:** PIEZO1 IS in the human growth plate —
+  GSE9160, all 5 compartments both donors, clean donor RZ 8986 → PZ 7893 → PHZ 20594 → HZ 24442. Expression
+  is real; the lead is not. ⚠ PIEZO1 acts **through the primary cilium** — same organelle R294 found an FGFR
+  inhibitor shortens.
 - ✓ Volume kinase cascade IS in the human plate: **STK39 (SPAK) 5/5 both donors, OXSR1 4/5 and 5/5, INPPL1
   5/5 both.** SLC12A2 marginal (2/10, 7/10).
 - ✗ **Useful negatives (R295):** **WNK2** — the familial-OA gene (`veerabhadraiah2025`) — is **absent from
@@ -576,9 +583,25 @@ GDF5 0.675, LCORL 0.919).
 - ✗ **THREE HUMAN GENETIC ANCHORS, ALL POINTING DOWN:** LRRC8C GoF (VRAC stuck open) **−5.1 SD**
   (quinodoz2025) · **INPPL1** loss = opsismodysplasia (voigt2025) · biallelic **SLC13A1** loss = short
   (tise2025), with plasma-sulfate per-variant effect **r=0.70** with height across 466,907 (scherer2025).
-- **STATUS: not dead, not actionable.** Largest untouched term in the file; **every pharmacological tool on
-  it is an inhibitor** because the clinical demand was always to REDUCE swelling. Next step is a
-  measurement, not a drug search.
+- **THE COMPOUND SWEEP WAS RUN IN R296 — "not actionable" is now EARNED, not asserted.** Six classes queried
+  for any mammalian **bone-length** endpoint: organic osmolytes (taurine/betaine/sorbitol/myo-inositol) ·
+  sulfate donors (MSM, sodium sulfate, NAC) · polyol pathway (aldose reductase/AKR1B1) · systemic osmolality
+  (vasopressin, desmopressin, hyponatremia) · NFAT5/TonEBP activation · PIEZO1 agonism. **ALL EMPTY.**
+  Taurine's 459 records are aquaculture. ⭐ **The most attractive untested route is a SULFATE DONOR** —
+  scherer2025's per-variant plasma sulfate effect is **r=0.70 with standing height across 466,907 people**,
+  raising a substrate is the move when the transporter can't be drugged, and **nobody has put a caliper on a
+  femur under one.** (Europe PMC only; CORR-267/284 say don't over-trust an empty query.)
+- ⚠ **FERMENTED OYSTER EXTRACT — a real human RCT, and the trade disqualifies it (R296, `nagahawatta2026`).**
+  500 mg/d vs placebo × 24 wk, n=80, ages 6–9, ISS, double-blind: **height gain 3.22±0.71 vs 2.38±0.74 cm,
+  P<0.001 (+0.84 cm)**; growth rate, height-SDS and **IGF-1 up with GH and IGFBP-3 UNCHANGED** — not a
+  somatotroph effect. ✗ **BONE AGE ALSO ADVANCED SIGNIFICANTLY**, with urinary DPD. Velocity bought by
+  spending the window = failure mode #1, the same trade rejected for PRC2 (R281) and GH after mid-puberty
+  (R254/269). Wrong population (open plates, years left), no attained-height endpoint.
+- **STATUS: not dead, NOT ACTIONABLE — now confirmed by search.** Largest untouched term in the file;
+  **every marketed tool on the machinery is an inhibitor** because the clinical demand was always to REDUCE
+  swelling, and the one channel with an agonist has an agonist that degrades cartilage. Two cheapest routes
+  out: measure intracellular small-solute content by zone, and **give a sulfate donor to a growing animal
+  with a caliper on the femur.**
 
 ## CONTRAINDICATED — do not add to the stack
 
