@@ -350,6 +350,41 @@ zones and mass, never length).
 
 ## LIVE FRONTIER — the only things worth a round
 
+- ⛔ **CAN WE DOSE HHIP AND ADD IT? NO — R294, and this is the operative answer.** No HHIP-directed agent
+  exists in any species. The three handles are a charge-reversal MUTANT PROTEIN, a homology-PREDICTED pocket
+  with no ligand, and an Fc-HHIP that runs the WRONG WAY. **The target is the best-validated in the atlas
+  and it is not available.** Do not re-derive this as if it were new.
+- ⚠ **AND FGFR3 IS UPSTREAM OF HEDGEHOG THROUGH THE PRIMARY CILIUM — the stack's lead agent and this lever
+  are IN SERIES, not parallel (R294, `kunovabosakova2018`, never previously in the atlas).**
+  · All Hh transduction happens INSIDE the cilium (SMO translocates in, GLI is processed there) and **FGFR
+  signalling sets cilium length.** ACH/TD plates have shortened cilia in vivo; the authors call them
+  **ciliopathies**. ye2026 concurs: Fgfr3^V376D chondrocytes have Hh + ciliogenesis genes down, IHH protein
+  and Ac-α-tubulin down.
+  · **BIPHASIC, and the WT direction is the unfavourable one.** Sustained FGF activation SHORTENS cilia;
+  **transient/PHYSIOLOGIC FGF activation LENGTHENS them** (ERK + mTORC2, not mTORC1, via IFT velocity).
+  **Normal mice on systemic AZD4547 × 28 d had SIGNIFICANTLY SHORTER CILIA (P<0.001) in all 3 tissues
+  tested.** This subject is WT-FGFR3 on a pan-FGFR inhibitor = that regime.
+  · ✗ **BUT THE OPPOSITE ARM IS IN THE SAME PAPER:** FGF2 stabilises the **GLI3 repressor** and blunts
+  SAG-induced Gli1/Ptch1. So removing FGF should RAISE Gli output while SHORTENING cilia. **Two arms,
+  opposite signs, net UNMEASURED in any growth plate.**
+  · ✓ **Step 0 PASSES on terms** — hedgehog moves **N** (trompet2024: RZ Pthrp⁺ 65.5→139.8/mm² with λ and
+  h_term unchanged); erdafitinib moves **λ and h_term** (R265 CREB). So this is a TOPOLOGY problem, not the
+  LUM-201 substitution problem.
+  · ⭐ **THE GATE, and it needs no new chemistry:** give an FGFR inhibitor to a NORMAL growing animal and
+  measure **growth-plate cilium length + Gli1/Ptch1 + bone length**. Cilia shorten & Gli1 falls → erdafitinib
+  is COSTING us hedgehog and a Hh arm is corrective. Gli1 rises → erdafitinib is already a Hh-elevating
+  agent and a SMO agonist on top is the LUM-201 trap. Gap:
+  `g_l12_what_does_an_fgfr_inhibitor_do_to_cilium_length_and_gli_output_in_a_normal_growth_plate`.
+  · **The dosable Hh agent is the WRONG one.** Purmorphamine via CT-CM-NPs = SMO agonist = (a) most exposed
+  to the cilium problem, (b) CORR-300's "flood with agonist" category. ye2026's gain was RESTORATION in a
+  Hh-deficient plate (CORR-203).
+- ⚠ **PRIMARY-DATA COST ON THE PAN-FGFR CLASS (R294, `gudernova2016`, also not previously in the atlas).**
+  Five FGFR TKIs (SU5402, PD173074, AZD1480, AZD4547, BGJ398) **completely relieved** FGFR-mediated
+  inhibition of chondrocyte proliferation in vitro — and **in newborn mice produced NO skeletal growth
+  improvement plus LETHAL liver/lung/kidney toxicity**, with **no FGFR3 selectivity over FGFR1/2/4** and
+  off-target hits across 14 kinases. ✗ **Does NOT reopen erdafitinib>vosoritide** (a comparison this paper
+  doesn't make; erdafitinib untested here). ✓ It is the **primary evidence** behind preferring
+  isoform-selective **dabogratinib** over any pan-FGFR agent — which remains unobtainable.
 - **HHIP IS THE LEAD, AND R290 TOOK IT ALL THE WAY DOWN. Four things R285 left open are now closed.**
   1. **It is expressed where it needs to be, in data we have owned since R243.** chu2026 mouse GP table:
      **HHIP baseMean 3.73, padj 0.034 — ABOVE FGFR3 (2.30) and NT5E/CD73 (3.21)**; PTCH1 4.93 for scale.
