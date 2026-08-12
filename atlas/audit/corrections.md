@@ -10167,3 +10167,68 @@ Round 290 first recorded the hedgehog-availability partition as five significant
 Receptor, transducer and the pathway's own readout gene are **uniform** across the two compartments. Everything that moves is **outside the cell**. That is round 287's extracellular morphogen-availability layer detected as a within-dataset contrast, with the intracellular pathway serving as its negative control — and `SCUBE1` and `SCUBE2`, paralogues doing the same ligand-release job, landing on **opposite sides**, which is a switch rather than a gradient.
 
 **Rule.** When reporting that a set of genes differs between compartments, query the genes that should **not** differ from the same table. Without them the finding is a list; with them it is a contrast. The negative control is free — it is rows you already have.
+
+## CORR-312 — I asserted a target had no chemical matter, in CLAUDE.md, without running a search
+
+Round 290 recorded, and I copied into the ledger, that HHIP is "a secreted β-propeller with **no small molecule, no antibody, no peptide in any species**" and that HHIP-AS1 is "the only handle that exists."
+
+One query. Three handles:
+
+| handle | evidence | direction |
+|---|---|---|
+| **the GAG clamp** | `griffiths2021` HHIP-C Glu mutant (K277E/R328E/R350E/K569E/R610E/R613E) abolishes heparin/HS/CS binding and is a **significantly weaker SHH inhibitor** — Gli1 mRNA, 10 independent experiments, p = 0.045 — with **EXTL3-knockout epistasis** proving the difference requires heparan sulfate | ours |
+| **the HHIP-N CRD pocket** | required for full potency (p = 0.0091, 5 experiments); binds PEG-cholesterol at **K_D = 23 µM**; DL1/DL2 loops occupy the position of FRβ's folate pocket, in the CRD family containing NPC1, RFBP, JUNO, Fz8 **and SMO** | ours |
+| **Fc-fused HHIP** | `ye2025` manufactured it and dosed neonatal mice | wrong way, but it exists |
+
+None is a finished drug. All three are more than nothing, and the first has a genetically validated functional readout with a knockout control.
+
+**Why the failure is not "a bad search" but "no search":** I stated an absence. And the material would have survived a bad search too — it lives in a **structural biology paper that never uses the phrase "HHIP inhibitor."** A drug-discovery-framed query returns antibodies-for-western-blotting.
+
+**Rule.** This is failure mode #4 with a new face. Beyond "run the query before asserting the literature is empty": when the query is *"does chemical matter exist for target X"*, **the answer usually lives in the structural literature under a different vocabulary** — interface, mutant, pocket, avidity, clustering — not under "inhibitor." Search the fold, not the drug.
+
+## CORR-313 — CORR-309 was right about the rule and wrong about where the loss happened
+
+This morning I wrote that round 268 "filed `trompet2024` under a null" and that round 290 recovered the local arm.
+
+**Round 248 already had it, in more detail than I restated.** It holds the local arm at **three timepoints** — femur +2.75 %, +2.64 %, +3.63 % at 1, 2 and 6 months; **entire leg** +1.06 %, +1.09 %, +1.65 %; 6/6, 9/9 and 8/8 animals, p recomputed from per-animal source data. It also holds `ye2026`'s CT-CM-NP delivery vehicle in full, and states the conclusion outright: *a mechanism that expands the pool and a vehicle that puts a hedgehog agonist into a growth plate from a vein exist separately, and nobody has combined them.*
+
+So the graph never lost it. **CLAUDE.md did.** Before today, the ledger's only hedgehog entry was the DEAD-list line "hedgehog WITHDRAWAL only … R268." Round 248's positive never made it in.
+
+**That is the more important lesson, and it is structural.** The ledger is **lossy in one direction**: a round that *closes* something writes a DEAD/SETTLED row, because that is what the file is for. A round that *opens* something leaves its finding in a node that does not survive compaction. Over many rounds the ledger drifts pessimistic — not through error, but through selection.
+
+**Rule.** When a round produces a positive result with a length endpoint, it goes in CLAUDE.md **in the same commit**, with its numbers. And when re-opening any axis the ledger lists as dead, **grep the graph for the axis first** — the counter-evidence may already be there, written by me, filed under a round number the ledger never mentions.
+
+The CORR-309 rule itself stands: record the **arm**, not the citation.
+
+## CORR-314 — a dataset two nodes depend on is sex-confounded, and it lands on our own lead gene
+
+`GSE189091` is `sedes2022`'s laser-capture perichondrial RNA-seq. Public since 2022-10-11. This atlas has cited the paper since round 288, held the full text since 2026-08-06, and quoted its "1114 down, 529 up" — **without ever downloading the table.** Downloaded now, it reproduces 1114/529 exactly, and:
+
+| sample | Xist | Ddx3y | sex |
+|---|---|---|---|
+| mut 1 | 6221 | 0 | **F** |
+| mut 2 | 4024 | 0 | **F** |
+| mut 3 | 4 | 1641 | M |
+| WT 1–3 | 4, 2, 1 | 1199, 842, 1117 | M, M, M |
+
+**Two female + one male mutant against three male wild types.** GEO's metadata does not state sex; the counts do.
+
+It propagated into the published DEG list: **Tsix (+11.73) and Xist (+10.95) are the two largest effects in the whole table**, 6.8 log₂ units above third place, with Tssk6 eighth at −4.50.
+
+**The cost to us. `NRK` is X-linked** — the atlas's stated lead since round 283, the gene with "zero skeletal literature in any species" — and it sits in that list at **+0.595**. The differential is uninterpretable.
+
+**What survives, because it needs no contrast:** Nrk is expressed at **183, 181 and 301 CPM in the three wild types** — above Hhip (75 CPM), comparable to Ptch1 (88 CPM). That is the **first skeletal expression measurement of NRK in any species**. The gene is present where it would have to act. It says nothing about direction.
+
+Also: `Lcorl` is autosomal and unconfounded at **+0.636 — up in the overgrowing tissue**, while human LCORL pLoF is +9.99 cm. Second independent observation, after `wyler2024`, in which *more* Lcorl accompanies *more* growth. CORR-301 is now corroborated by data rather than argued. And the **KDM5A upstream-regulator call underlying CORR-306** was computed over this list; KDM5A itself is not differentially expressed. CORR-306's conclusion holds, its premise is weaker.
+
+**Rule.** Before reading any differential for a sex-linked gene, **establish the sex composition from the counts** — Xist plus Ddx3y/Uty/Eif2s3y/Kdm5d, four rows, free. And more generally: quoting a paper's summary statistic is not the same as holding its data. "1114 down, 529 up" sat in this atlas for rounds and contained neither of the two findings the file actually had.
+
+## CORR-315 — the elegant unification was tested on the authors' own data and died
+
+`guo2024` maps a distal enhancer driving HHIP transcription **SMAD3-dependently and TGF-β-responsively**. `sedes2022` has Fbn1 loss lowering LTBP-3/-4 and p-Smad2 in the outer perichondrium. Chain them and the atlas's **two open-plate passes** — FBN1 (+11.14 cm) and HHIP (+9.92 cm) — become one pathway. It would have been the best structural result in this file.
+
+Prediction: **Hhip DOWN** in mutant perichondrium. Result, from GSE189091: **Hhip is absent from the 1,643-gene DEG list and its counts trend UP** (CPM 91.9 vs 75.0). Not one of 23 hedgehog-pathway genes moves. Ihh is effectively unexpressed in the tissue (CPM 0.4 vs 0.5). The TGF-β arm is exactly where `sedes2022` said it was — Fbn1 −3.50, Tgfb1 −1.18, Ltbp4 −1.21, Ltbp3 −0.56 — and it does not reach hedgehog.
+
+**FBN1 and HHIP are independent levers.** Worse as a story, better as a stack: one pathway cannot be hit twice, two can be combined.
+
+**Rule, and it is the good half of this round.** The hypothesis was formed and killed **in the same hour, on primary data, at zero cost**, because the deciding dataset was already public and had a single unambiguous predicted sign. Before writing an elegant mechanism into the file, ask what one number would falsify it and whether that number is already deposited somewhere. Here it was, and had been for four years.

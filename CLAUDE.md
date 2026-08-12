@@ -76,6 +76,16 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    expressed above FGFR3. Their cutoff is their multiple-testing burden. Carry sub-threshold rows through.
 12. **Reporting a contrast without querying the genes that should NOT move.** CORR-311. The negative control
    is rows you already have. Without it a partition is a list; with it, it is a result.
+13. **Asserting a target has no chemical matter.** CORR-312 — HHIP had three handles; I searched none.
+   And the material lives in the **structural** literature under *interface, mutant, pocket, avidity,
+   clustering* — never under "inhibitor." **Search the fold, not the drug.**
+14. **Quoting a paper's summary statistic as if it were holding its data.** CORR-314/315. "1114 down, 529
+   up" sat in this atlas for rounds; the deposited table contained BOTH a refutation and a sex confound.
+   **If a dataset is public, download it.** And before any sex-linked gene: Xist + Ddx3y/Uty/Eif2s3y/Kdm5d.
+15. **Trusting this ledger's silence as evidence of absence.** CORR-313 — CLAUDE.md is **lossy in one
+   direction.** Closures write DEAD/SETTLED rows; positives stay in nodes that don't survive compaction, so
+   the file drifts pessimistic by selection, not error. **Grep the graph before reopening anything.** And
+   any round producing a positive with a length endpoint goes in CLAUDE.md **in the same commit.**
 
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
@@ -224,6 +234,24 @@ adult height a mean 8.92 cm/allele — ~52× the average common variant.** Our w
 DEFICIENCY. No aggrecan-elevation experiment exists anywhere.** Gap: `g_l5_nobody_has_raised_aggrecan_above_normal_and_measured_a_bone`.
 **UNTESTED, searched not assumed (R287):** CHD8 (conditional literature entirely neuro) · TET1 (bone papers
 are ageing/BMSC only) · **ZFAT and NRK — nothing skeletal in ANY species.**
+- ⚠ **FBN1 AND HHIP ARE INDEPENDENT LEVERS — the unification was tested and killed (R291, CORR-315).**
+  `guo2024` maps a distal enhancer driving HHIP transcription **SMAD3-dependently, TGF-β-responsively**,
+  which would chain FBN1→↓TGF-β→↓SMAD3→↓HHIP→↑Hh→longer bone and make the atlas's two open-plate passes one
+  pathway. **Tested on GSE189091 — sedes2022's OWN perichondrial RNA-seq, public since 2022, never pulled
+  until R291. Hhip is absent from the 1,643-gene DEG list and trends UP (CPM 91.9 vs 75.0). Not one of 23
+  hedgehog genes moves; Ihh is unexpressed in perichondrium (0.4 vs 0.5 CPM).** The TGF-β arm is exactly as
+  published (Fbn1 −3.50, Tgfb1 −1.18, Ltbp4 −1.21, Ltbp3 −0.56) and does not reach hedgehog.
+  **Worse as a story, BETTER as a stack: one pathway can't be hit twice, two can be combined.**
+- ⚠ **GSE189091 IS SEX-CONFOUNDED AND IT HITS OUR OWN LEAD GENE (R291, CORR-314).** Xist = 6221, 4024, 4 in
+  mutants vs 4, 2, 1 in WT; Y genes absent from mutants 1–2. **2 female + 1 male mutant vs 3 male WT.** It
+  propagated: **Tsix (+11.73) and Xist (+10.95) are the two largest effects in the published DEG list**, 6.8
+  log2 above third. **NRK is X-linked and sits in that list at +0.595 — UNINTERPRETABLE.** ✓ **What survives
+  needs no contrast: Nrk is expressed at 183, 181, 301 CPM in the three WILD TYPES — above Hhip (75),
+  ≈Ptch1 (88). FIRST SKELETAL EXPRESSION MEASUREMENT OF NRK IN ANY SPECIES.** Present where it would have to
+  act; sign still unknown. ✓ **Lcorl is autosomal, unconfounded, +0.636 — UP in the overgrowing tissue**,
+  while human LCORL pLoF is +9.99 cm. Second strike after `wyler2024`; CORR-301 now corroborated by data.
+  ⚠ The **KDM5A** call behind CORR-306 was computed over this list (KDM5A itself is not DE) — conclusion
+  holds, premise weaker. **Rule: check Xist + Ddx3y/Uty/Eif2s3y/Kdm5d before reading any sex-linked gene.**
 - ✓ **FBN1 (+11.14, the largest).** `sedes2022` (**operator-supplied, read 2026-08-06** — I nearly re-asked for
   it, CORR-302): Fbn1 loss in limb mesenchyme → limb bones **~7% longer, NORMAL AT BIRTH, diverging 1–3 months**
   = **entirely postnatal accrual.** Four conditional deletions; **deleting Fbn1 from CHONDROCYTES gives NO
@@ -295,21 +323,54 @@ zones and mass, never length).
      **HHIP baseMean 3.73, padj 0.034 — ABOVE FGFR3 (2.30) and NT5E/CD73 (3.21)**; PTCH1 4.93 for scale.
      Never queried because HHIP was sub-threshold in *kosmicki2026's* table and R283's tool imported that
      threshold. **CORR-310: another group's p-cutoff is not a filter on your own datasets.**
-  2. **THE LENGTH PROOF WAS ALREADY IN THE FILE AND R268 FILED IT UNDER A NULL. CORR-309.** `trompet2024`
-     has TWO arms. Systemic SAG = pool up, length unchanged (the arm R268 cited). **Unilateral SAG bead into
-     the rat femoral secondary ossification centre = +1.263 mm, +3.63% femur at 6 months, P=0.00004, 8/8
-     animals, contralateral within-animal control, and THE EFFECT GREW from 1→6 months.** Intra-articular
-     SAG also raised RZ Pthrp⁺ cells 65.5→139.8/mm². **ROUTE, not dose.** A paper is not a verdict — record
-     the arm.
-  3. **THE HANDLE IS AN RNA — HHIP-AS1, which was absent from this whole atlas.** `yin2022`: natural
-     antisense lncRNA at the HHIP locus **binds HHIP mRNA and recruits ELAVL1/HuR to stabilise it**;
-     overexpression → HHIP↑ → SMO/GLI1/GLI2↓; **HHIP knockdown abolishes the effect** (the epistasis control
-     that makes it HHIP-mediated). Replicates in lung squamous and hepatocellular carcinoma. **Knockdown =
-     RNA-druggable phenocopy of the +9.92 cm loss state, and ASOs are an approved modality.** HHIP itself is
-     a secreted β-propeller with **no small molecule, no antibody, no peptide in any species** — this is the
-     only handle that exists. ✗ Unresolved: mouse conservation; zero chondrocyte data; `bartl2022` shows an
-     **HHIP-independent dynein function**, so an ASO would not be clean. Gap:
-     `g_l3_hhip_as1_has_never_been_knocked_down_in_cartilage_and_may_not_exist_in_mouse`.
+  2. **THE LENGTH PROOF AND THE DELIVERY VEHICLE BOTH EXIST, AND *THIS FILE* LOST THEM — R248 HAD BOTH.
+     CORR-309 + CORR-313.** `trompet2024` has TWO arms. Systemic SAG = pool up, length unchanged (the arm
+     R268 cited). **Unilateral SAG bead into the rat femoral SOC = femur +2.75%, +2.64%, +3.63% at 1, 2, 6
+     months; ENTIRE LEG +1.06%, +1.09%, +1.65%; 6/6, 9/9, 8/8 animals; effect GROWS.** Intra-articular SAG
+     raised RZ Pthrp⁺ cells 65.5→139.8/mm² with proliferation and h_term unchanged = **N↑ alone.**
+     **AND THE DELIVERY PROBLEM IS ALREADY SOLVED (`ye2026`, R248, operator-supplied):** CT-CM-NPs —
+     chondrocyte-membrane-coated PLGA + the collagen-II peptide **WYRGRL** — carried purmorphamine to growth
+     plate cartilage **from a tail vein**, 1 mg/kg q2d × 5 wk, normalising body length in Fgfr3^V376D/+ mice;
+     the authors attribute the body-length effect to **VERTEBRAL** cartilage accumulation. ✗ Deficit model,
+     so CORR-203 applies to the length gain — **not to the vehicle.**
+     **R248's own words: the mechanism and the vehicle exist separately and NOBODY HAS COMBINED THEM.**
+     ⚠ **THE LEDGER IS LOSSY IN ONE DIRECTION (CORR-313).** Closures write DEAD/SETTLED rows; positives stay
+     in nodes that don't survive compaction. Before reopening anything this file calls dead, **grep the
+     graph** — the counter-evidence may already be there under a round number the ledger never mentions.
+  3. **THERE ARE THREE HANDLES ON HHIP, NOT ZERO. R290 said "no small molecule, no antibody, no peptide in
+     any species" WITHOUT SEARCHING — CORR-312. Corrected in R291:**
+     · **THE GAG CLAMP — the best of the three, and genetically validated.** `griffiths2021`: HHIP's potency
+     **requires glycosaminoglycan binding.** The GAG-dead Glu mutant (K277E/R328E/R350E/K569E/R610E/R613E)
+     loses heparin/HS/CS by SPR and is a **significantly WEAKER SHH inhibitor** (Gli1 mRNA, 10 experiments,
+     p=0.045). **Epistasis proof:** in EXTL3−/− cells lacking surface HS, WT HHIP is weaker AND WT ≡ mutant —
+     the difference *requires* HS. Mechanism = avidity: heparin 30-mer drives HHIP oligomers **50 kDa → 6 MDa**
+     (AUC), abolished in the mutant. Two sites: **site 1 on the β-propeller, site 2 on the EGF repeats.**
+     → **Don't remove the protein — UNCLAMP it.** Authors call drugging GAG clustering "an unexploited avenue."
+     ✗ Do NOT reach for global HS reduction: **EXT1 pLoF is −8.70 cm.** The interface, not the polysaccharide.
+     · **THE HHIP-N CRD POCKET.** Required for full potency (p=0.0091, 5 expts); binds **PEG-cholesterol at
+     K_D 23 µM** (free PEG doesn't); with palmitoyl-only ShhN15, HHIP-ΔHx can't inhibit → the target is the
+     ligand's **cholesterol**. Loops DL1/DL2 sit where **FRβ's folate pocket** sits — same CRD family as
+     NPC1, RFBP, JUNO, Fz8 **and SMOOTHENED**, the most-drugged fold in this pathway. Pocket is a homology
+     PREDICTION, no ligand found. *If such a molecule cross-hit SMO's CRD, SMO CRD ligands ACTIVATE — the
+     off-target runs the same way (inference, grade E).*
+     · **Fc-FUSED HHIP EXISTS AND HAS BEEN DOSED IN MICE** (`ye2025`) — wrong direction, but HHIP is
+     manufacturable and administrable. **And stromal Hhip deletion hyperactivates an Hh–IGF1 axis** — first
+     HHIP↔IGF1 link in the atlas, and IGF-1 here is 198.
+     · **THE RNA HANDLE, now weaker.** `yin2022`: HHIP-AS1 binds HHIP mRNA + recruits ELAVL1/HuR to stabilise
+     it; knockdown = RNA-druggable phenocopy; ASOs are approved modality. ✗ **`qin2021` DIRECTLY CONTRADICTS
+     IT** — HHIP-AS1 *promotes* osteogenesis in human PDLSCs vs *inhibits* in BM-MSCs, same readout, and
+     qin2021 never tests the HHIP route. ✗ `bartl2022`: HHIP-independent dynein function → ASO not clean.
+     ✓ **Mouse orthologue question answered positionally (R291):** **Gm53441** (ENSMUSG00000136241), plus
+     strand, head-to-head at the Hhip promoter, longest isoform's exon 1 lies **entirely inside Hhip exon 1
+     = 180 bp exonic antisense overlap** (human HHIP-AS1 = 75 bp vs HHIP exon 2). ✗ **Zero publications, not
+     named by MGI, conservation untested.** Grade D.
+     · **THE HUMAN GoF ALLELE IS A FREE POSITIVE CONTROL.** HHIP **p.V496E = −3.96 cm**. On UniProt Q96QV1
+     (700 aa) V496 sits in the β-propeller, **outside** the SHH zinc-contact region (376–388, residue 383)
+     and **outside** both EGF repeats (607–634, 635–667), between GAG residues R350 and K569. Mechanism
+     unassigned — and griffiths2021 already runs the three assays that would assign it (SPR vs GAGs, AUC
+     oligomerisation, NIH/3T3 Gli1). **One point mutant, three existing assays.** Gap:
+     `g_l3_what_does_the_human_hhip_v496e_allele_actually_do_to_the_protein`.
+     Gap: `g_l3_hhip_as1_has_never_been_knocked_down_in_cartilage_and_may_not_exist_in_mouse`.
   4. **WHY IT'S TOLERATED — PTHrP IS THE BUFFER, and this is CORR-300's MECHANISM, not a 4th instance.**
      `saturne2025`: Hhip−/− sutures upregulate Hh targets **including Pthlh** while **Ihh paradoxically
      falls** — the loop absorbing the push; **Hhip−/−;Pthlh−/− double mutants FUSE the suture the single

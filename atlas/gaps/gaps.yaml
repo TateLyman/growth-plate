@@ -16142,3 +16142,52 @@ gaps:
     final segment length as the endpoint. Add a peri-physeal route arm alongside the intra-articular one to
     separate delivery compartment from dose. Until a gain SURVIVES TO MATURITY in a second species, this axis
     has a rate result and not a height result, which is failure mode one.
+- gap_id: g_l3_what_does_the_human_hhip_v496e_allele_actually_do_to_the_protein
+  type: known_unknown
+  layer: L3
+  tractability: 4
+  question: >-
+    HHIP p.V496E costs 3.96 cm of adult human height and its authors read it as gain-of-function. Which of
+    HHIP's functions does it gain - tighter Hedgehog binding, stronger glycosaminoglycan clamping, more
+    avid clustering, or simply more protein? And can the answer be turned into a screening endpoint?
+  why_it_matters: >-
+    A gain-of-function allele in a target you want to INHIBIT is the ideal positive control: it tells you
+    which site to hit and gives an assay a direction. HHIP currently has +9.92 cm for loss and -3.96 cm for
+    this variant, i.e. both directions of one human brake move height monotonically in centimetres - but no
+    molecule exists against the protein, and without knowing which surface V496E acts through, a screen has
+    no target site. This is the cheapest step between a population-genetics number and a druggable assay.
+  what_is_known: >-
+    human genetics - kosmicki2026: p.V496E, AMR allele frequency 0.05 per cent, P = 1.52e-9, beta = -3.96 cm,
+    observed only in the Mexico City Prospective Study; the authors infer gain-of-function because rare HHIP
+    pLoFs run the other way at +9.92 cm.
+    structure - UniProt Q96QV1, 700 residues, position 496 confirmed as valine. V496 lies in the C-terminal
+    beta-propeller, OUTSIDE the annotated SHH zinc-binding interaction region (376-388, contact residue 383)
+    and OUTSIDE both EGF-like repeats (607-634, 635-667), between the beta-propeller GAG-binding residues
+    R350 and K569 identified by griffiths2021.
+    assays - griffiths2021 already runs all three that matter: SPR against immobilised heparin, heparan
+    sulfate and chondroitin sulfate; analytical ultracentrifugation for heparin-induced oligomerisation from
+    50 kDa to 6 MDa; and Gli1 mRNA in NIH/3T3 co-cultured with pShhNc-producing PANC-1 cells.
+  what_is_missing: >-
+    Nobody has expressed p.V496E. No biochemical or cellular characterisation of the variant exists, and no
+    carrier has a reported skeletal phenotype beyond stature. Also missing: whether the allele is
+    gain-of-function at all, since the inference rests entirely on the sign of the pLoF burden.
+  nearest_evidence:
+  - kosmicki2026
+  - griffiths2021
+  nearest_evidence_note: >-
+    Two papers that have never been read together - one supplies a human allele with a centimetre effect,
+    the other supplies the structure and the three assays. Neither cites the other.
+  tractability_note: >-
+    Very high. One point mutant in a construct that already exists, run through three assays that have
+    already been validated on wild-type and on a six-residue charge-reversal mutant. This is weeks of
+    protein biochemistry, not a programme.
+  discriminating_experiment: >-
+    Express HHIP p.V496E alongside wild-type HHIP-C and the GAG-dead Glu mutant
+    (K277E/R328E/R350E/K569E/R610E/R613E) as the two reference points. Run: (1) SPR against heparin, HS and
+    CS; (2) AUC with and without a heparin 30-mer; (3) NIH/3T3 Gli1 mRNA inhibition. FOUR OUTCOMES, EACH
+    NAMING A DRUG SITE. Tighter GAG binding or more avid oligomerisation implicates the CLAMP, and the drug
+    is a clustering disruptor. Stronger SHH inhibition with GAG binding unchanged implicates the ligand
+    interface. Nothing changed in vitro implicates expression or stability, and the target becomes
+    transcriptional - which is where HHIP-AS1 and guo2024's SMAD3 enhancer re-enter. All three readouts
+    normal with the human effect real would mean the allele acts through something none of these assays see,
+    which is itself informative.

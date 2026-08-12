@@ -27976,3 +27976,110 @@ edges:
   refs:
   - chu2026
   confidence: B
+- edge_id: e01656
+  source: round291_hhip_has_chemical_matter_after_all_and_the_unification_died_on_sedes_own_data
+  target: round290_hhip_taken_all_the_way_down_and_the_handle_is_an_rna
+  relation: inhibits
+  sign: '-'
+  magnitude: >-
+    CORRECTS THE COMPOUND CLAIM I MADE ONE DAY EARLIER. Round 290 recorded HHIP as "a secreted beta-propeller
+    with no small molecule, no antibody, no peptide in any species" and HHIP-AS1 as "the only handle that
+    exists". THERE ARE THREE HANDLES. (a) THE GAG CLAMP - griffiths2021's HHIP-C Glu mutant
+    (K277E/R328E/R350E/K569E/R610E/R613E) abolishes heparin/HS/CS binding and is a SIGNIFICANTLY WEAKER SHH
+    inhibitor in NIH/3T3 (Gli1 mRNA, 10 independent experiments, p = 0.045), with the EXTL3-knockout
+    epistasis control proving the difference requires heparan sulfate, and heparin-driven oligomers from 50
+    kDa to 6 MDa by AUC as the mechanism. (b) THE HHIP-N CRD POCKET - required for full potency (p = 0.0091,
+    5 experiments), binds PEG-cholesterol at K_D = 23 micromolar, and its DL1/DL2 loops sit where FRbeta's
+    folate pocket sits, in the CRD family that also contains NPC1, JUNO, Fz8 AND SMOOTHENED. (c) An Fc-fused
+    HHIP protein already manufactured and dosed in neonatal mice (ye2025). None of the three is a finished
+    drug; all three are more than nothing, which is what round 290 recorded.
+  context: >-
+    The failure was not a bad search, it was NO search - I asserted the absence. The material lives in a
+    STRUCTURAL BIOLOGY paper that never uses the phrase "HHIP inhibitor", which is why a drug-discovery
+    framing would have missed it even if run. CORR-312.
+  evidence_tier: T1
+  refs:
+  - griffiths2021
+  - ye2025
+  confidence: B
+- edge_id: e01657
+  source: round291_hhip_has_chemical_matter_after_all_and_the_unification_died_on_sedes_own_data
+  target: perichondrial_tgfb_restraint
+  relation: correlates_with
+  sign: unknown
+  magnitude: >-
+    THE HYPOTHESIS THAT WOULD HAVE UNIFIED THE ATLAS'S TWO OPEN-PLATE PASSES, TESTED ON THE AUTHORS' OWN
+    DEPOSITED DATA AND KILLED IN ONE QUERY. guo2024 maps a distal enhancer driving HHIP transcription
+    SMAD3-dependently and TGF-beta-responsively; sedes2022 has Fbn1 loss lowering LTBP-3/-4 and p-Smad2 in
+    the outer perichondrium. Chain them and FBN1 (+11.14 cm) and HHIP (+9.92 cm) become one pathway.
+    PREDICTION: Hhip DOWN in mutant perichondrium. RESULT, from GSE189091: Hhip is ABSENT from the 1,643-gene
+    DEG list and its counts trend UP (CPM 91.9 mutant vs 75.0 wild type). Not one of 23 hedgehog-pathway
+    genes is differentially expressed, and Ihh is effectively unexpressed in the tissue (CPM 0.4 vs 0.5),
+    while the TGF-beta arm moves exactly as published - Fbn1 -3.50, Tgfb1 -1.18, Ltbp4 -1.21, Ltbp3 -0.56,
+    Tgfb3 -0.71. FBN1 AND HHIP ARE INDEPENDENT LEVERS. Worse as a story, better as a stack - one pathway
+    cannot be hit twice.
+  context: >-
+    GSE189091, mouse, P4 perichondrium by laser capture, 3 versus 3. Public since 2022-10-11; this atlas
+    cited the paper from round 288, held the full text from 2026-08-06, quoted its 1114-down/529-up summary,
+    and never downloaded the table. The download reproduces 1114/529 exactly. guo2024's enhancer was mapped
+    in HUMAN BRONCHIAL EPITHELIUM, so it may be real and simply not operate in mouse perichondrium.
+  evidence_tier: T1
+  refs:
+  - gse189091
+  - guo2024
+  - sedes2022
+  confidence: A
+- edge_id: e01658
+  source: round291_hhip_has_chemical_matter_after_all_and_the_unification_died_on_sedes_own_data
+  target: round283_the_six_genes_whose_loss_makes_humans_taller_and_why_this_atlas_kept_missing_them
+  relation: correlates_with
+  sign: biphasic
+  magnitude: >-
+    THE SAME FILE GIVES NRK ITS FIRST SKELETAL MEASUREMENT AND MAKES ITS DIFFERENTIAL UNUSABLE. GSE189091 is
+    SEX-CONFOUNDED: Xist counts are 6221, 4024, 4 in the mutants and 4, 2, 1 in the wild types, with Ddx3y,
+    Uty, Eif2s3y and Kdm5d absent from mutants 1 and 2 - TWO FEMALE PLUS ONE MALE MUTANT AGAINST THREE MALE
+    WILD TYPES. It propagated: TSIX (+11.73) and XIST (+10.95) are the two largest effects in the published
+    DEG list, 6.8 log2 units above third place, and Tssk6 is eighth at -4.50. NRK IS X-LINKED and sits in
+    that list at +0.595, so the differential cannot be attributed to genotype.
+    WHAT SURVIVES NEEDS NO CONTRAST: Nrk is expressed at 183, 181 and 301 CPM in the three WILD-TYPE samples
+    - above Hhip (75 CPM), comparable to Ptch1 (88 CPM). THE FIRST SKELETAL EXPRESSION MEASUREMENT OF NRK IN
+    ANY SPECIES. The gene is present where it would have to act; the sign is still unknown.
+    SECOND: Lcorl is autosomal (chr 5) and unconfounded at +0.636 - UP in the overgrowing tissue, while human
+    LCORL pLoF is +9.99 cm, i.e. LOSS makes people taller. That is the second independent observation, after
+    wyler2024's smaller Lcorl-null mice, in which MORE Lcorl accompanies MORE growth. CORR-301's demotion of
+    LCORL is now corroborated by data rather than argued.
+  context: >-
+    mouse, P4 perichondrium. GEO's sample metadata does not state sex; the count matrix does, unambiguously.
+    Partially closes g_l8_nrk_has_no_skeletal_experiment_in_any_species - expression yes, direction no.
+  evidence_tier: T1
+  refs:
+  - gse189091
+  - kosmicki2026
+  - wyler2024
+  confidence: A
+- edge_id: e01659
+  source: round291_hhip_has_chemical_matter_after_all_and_the_unification_died_on_sedes_own_data
+  target: ihh_protein
+  relation: hypothesized_link
+  sign: '-'
+  magnitude: >-
+    THE HUMAN SHORT-STATURE ALLELE IS A READY-MADE POSITIVE CONTROL AND THREE EXISTING ASSAYS WOULD ASSIGN
+    ITS MECHANISM. kosmicki2026's HHIP p.V496E costs 3.96 cm and is read as gain-of-function. Mapped onto
+    UniProt Q96QV1 (700 residues; position 496 confirmed as valine), V496 lies in the beta-propeller OUTSIDE
+    the annotated SHH zinc-binding interaction region (376-388, contact residue 383) and OUTSIDE both EGF
+    repeats (607-634 and 635-667), between the beta-propeller GAG residues R350 and K569. So the allele that
+    shortens humans does not obviously act through the Hedgehog contact loop, and whether it works through
+    GAG binding, clustering or stability is unresolved. griffiths2021 supplies precisely the three assays
+    that would resolve it - SPR against heparin/HS/CS, AUC oligomerisation, and the NIH/3T3 Gli1 readout.
+    Express one point mutant, run three existing assays, and a 1.45-million-person genetic result acquires a
+    mechanism and a screening endpoint.
+  context: >-
+    Speculative as a therapeutic proposal - no molecule exists against either HHIP site and no HHIP-directed
+    agent has been given to any animal for length. Held here because it specifies the cheapest experiment
+    that would make the target screenable.
+  evidence_tier: T1
+  refs:
+  - griffiths2021
+  - kosmicki2026
+  confidence: speculative
+  gap_id: g_l3_what_does_the_human_hhip_v496e_allele_actually_do_to_the_protein
