@@ -1584,6 +1584,67 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐⭐⭐ R318 — **HHIP IS 95% TRUNK.** And R317 had the ratio's sign BACKWARDS.
+
+⛔ **CORR-338 — I PUBLISHED THE ERROR ONE ROUND AGO.** `bartell2026` (PMID 41861830) deposits **standing
+height, sitting height AND leg length for the SAME ~546k cohort** (GCST90728584/86/87), not just the ratio.
+Pulling the **same SNP** from all four files: **corr(deposited SHR beta, SIT−LEG) = −0.997 across 32 loci.**
+**NEGATIVE deposited beta = TRUNK. POSITIVE = LIMB.** R317 assumed the opposite.
+⭐ **THE POSITIVE CONTROL SETTLES IT:** the genome's strongest locus for this trait (**P=9.89e-136**) is
+**TBX2/TBX4** — and **TBX4 IS THE HINDLIMB IDENTITY GENE**, so it MUST be limb-allocating. Corrected sign
+puts it there. R317 called it "trunk" and I printed the contradiction without catching it.
+→ **Every gene-by-gene direction in R317 reverses. Its HEADLINE does not — see below.**
+
+⭐⭐ **THE ANALYSIS THAT CANNOT BE WRONG:** use the THREE ABSOLUTE traits, never the ratio. Align each locus
+to its **HEIGHT-INCREASING allele**, then ask where the height goes. 32 loci, same SNP, same cohort:
+**11 TRUNK-dominant · 14 LIMB-dominant · 7 BOTH.**
+
+| locus | trunk | leg | total | % TRUNK |
+|---|---|---|---|---|
+| COL11A1 | +0.0416 | +0.0015 | +0.0235 | **97%** |
+| **HHIP** | **+0.0367** | **+0.0021** | +0.0217 | **95%** |
+| **TET1** | **+0.0306** | +0.0014 | +0.0176 | **96%** |
+| SOX9 | +0.0213 | −0.0013 | +0.0109 | 94% |
+| IGF1 | +0.0164 | −0.0020 | +0.0080 | 89% |
+| **FGFR3** | **+0.0158** | −0.0057 | +0.0047 | **73%** |
+| — | | | | |
+| **NPR3** | **−0.0019** | **+0.0453** | +0.0298 | **~0%** |
+| **NPPC** | +0.0095 | +0.0344 | +0.0285 | 22% |
+| FBN1 | +0.0019 | +0.0329 | +0.0231 | 5% |
+| SCUBE3 | −0.0012 | +0.0295 | +0.0191 | ~0% |
+| **TNKS** | **−0.0075** | +0.0206 | +0.0099 | LIMB |
+
+⭐⭐⭐ **THE RESULT: HHIP — the atlas's best-validated target — sends 95% of its height effect to the TRUNK,**
+the compartment holding **6.5–9.0 cm** at BA14.5 against **0.3–0.4 cm** in the knees. Human pLoF **+9.92 cm**;
+`haraguchi2025` femur **+4.5% at 53 wk with the plate still open**; R312 two-species low-output enrichment.
+**Nothing else in this file combines target validation with the right compartment.**
+✓ **TET1 is the second, with better chemistry** — 96% trunk, **+8.32 cm**, present in BOTH human donors with
+a **hypertrophic-zone peak**, Open Targets "High-Quality Ligand, Small Molecule Binder", a **dioxygenase**.
+
+✓ **R317's HEADLINE SURVIVES BY A BETTER ROUTE — the CNP arm is LIMB-directed.** NPR3's height gain is
+essentially **100% leg**; NPPC 78% leg. No sign convention involved. **Five converging lines** now:
+navepegritide ↓upper:lower ratio · vosoritide **L1–L4 NULL** (EMA) · axial null in monkeys · rat axial dose →
+scoliosis+kyphosis · this.
+✓ **AND THE OTHER STACK ARM IS IN THE RIGHT COMPARTMENT: FGFR3 = 73% TRUNK** — independently supporting that
+the FGFR3 arm reaches the spine (dabogratinib lengthens L4–L6). **He is on an FGFR inhibitor.**
+⚠ **CORR-195 still governs** — his knees are open at BA16, off the population distribution. This is a
+**selection criterion for ADDITIONS**, not an instruction to stop vosoritide.
+
+⛔ **WITHDRAWN FROM R317:** "TNKS is trunk-favouring" (**it is LIMB**) — tankyrase has now failed from FOUR
+independent directions: IMPC length (R303) · maturation timing (R311) · growth-capacity expression (R312) ·
+compartment (R318). Also withdrawn: **LTBP2** and **TEAD1** as trunk loci (both LIMB); the Hippo lead as
+stated is gone.
+✓ **CONFIRMED with a human number: FBN1 IS LIMB** (+0.0019 trunk vs +0.0329 leg) — R289 deprioritised the
+angiotensin/TGF-β handle because "the Marfan axis grows limbs." That was habitus; now measured.
+⚠ **COST: SCUBE3 is also LIMB** (−0.0012 vs +0.0295) — a real hit to the R312/R315 SCUBE3 line.
+✓ **Denosumab + venetoclax contraindications SURVIVE** — neither rested on the ratio.
+⛔ **BOUNDARY:** these are common-variant LEAD-ALLELE effects, ±100kb windows, **inverse-normalised SD units,
+NOT centimetres**, and `bartell2026` says fine-mapped SHR signals are often DISTINCT from height signals.
+**A compartment coordinate is a ranking criterion, not a predicted effect.**
+
+## ⚠ R317 — SUPERSEDED IN SIGN BY R318. Read R318 first. What survives: the CNP-is-limb headline (re-derived
+## from absolute traits), the denosumab/venetoclax contraindications, and the locus list. What does NOT: every
+## trunk-vs-limb LABEL below, which is inverted.
 ## ⭐⭐⭐⭐ R317 — **THE 546,000-PERSON COMPARTMENT TEST.** The CNP axis allocates growth to LIMBS.
 
 `GCST90728588` — sitting height ratio **adjusted for height and BMI**, **545,982 people**, 16.9M variants —
