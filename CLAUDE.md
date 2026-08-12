@@ -1584,6 +1584,56 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐⭐ R319 — **SITTING HEIGHT IS TWO COMPONENTS AND THIS FILE ONLY EVER MODELLED ONE.**
+
+⚠ **CREDIT FIRST (CORR-313/336, 4th instance):** `ekizoglu2026` (2026-08-07, already headed *"THE SPINE
+RESERVE MEASUREMENT EXISTS AND IT IS IN FORENSIC MEDICINE"*), `halanski2026` and `veres2026` (both 2026-08-05)
+were **ALREADY HERE**. Only `marcoslorenzo2026` is new. **The contribution is the SYNTHESIS, not the papers.**
+
+⭐ **THE TRUNK HAS A SECOND, FUSION-INDEPENDENT COMPARTMENT: THE INTERVERTEBRAL DISC** (~¼ of the spinal
+column). Its height is set **osmotically against load**, not by chondrocyte production — so it is **not
+limited by physeal fusion.** ⛔ **This atlas has recorded the disc's numbers as MEASUREMENT ERROR for the
+entire project** — `diurnal_stature_variation` exists to stop the swing "corrupting growth monitoring" and
+never asks whether it is a lever.
+
+⭐ **`marcoslorenzo2026` — 12 adults, cervical MRI + stadiometry: 4 h supine hyper-buoyancy flotation →
+STATURE +1.6 ± 0.5 cm.** 15 min upright 1 g reversed only **−0.4 ± 0.3 cm**. Cervical disc height ↑ at
+**every** level C3–T1. **Muscle CSA/thickness UNCHANGED** (not a soft-tissue artefact). **Passive vertebral
+stiffness fell across the WHOLE column and stayed BELOW baseline after reloading.** ⛔ Neck pain rose.
+Against the atlas's own existing figures: adult circadian swing **19.3 mm (1.1%)**, **54% lost in the first
+hour up**, ~70% regained in the first half of the night · boys 12–14 lose **2.8 mm of SITTING height**
+10:00→17:00 · scoliosis children **7 mm sitting (0.79%)**.
+⭐ **Load-dependence already quantified here:** static loads 2.5→40 kg raise shrinkage **nonlinearly**, and
+**CYCLIC loading shrinks MORE than the equivalent static load** — the opposite ordering to the growth plate.
+
+⭐ **THE AXIAL GROWTH CENTRE CLOSES LAST — `ekizoglu2026`, MRI, n=1,000, ages 9.6–26.7:** median age at
+**stage 4 ≈ 22 y in MALES**, **stage 3 persists into the THIRD DECADE**; at stage 4 P(age≥21) is only
+0.65–0.70 in males. Puts a figure under `hori2025` (spine peaks later) and R274 (knees 0.3–0.4 cm vs trunk
+6.5–9.0 cm at BA14.5). ⚠ **Cervical, peripheral-RIM maturity MARKER — not a measure of vertebral body growth.**
+
+⚠ **MECHANICAL VERTEBRAL GROWTH MODULATION IS REAL, LARGE, AND TRANSITORY** (`halanski2026`, porcine):
+high tension **53 ± 43% at 2 wk** vs −1 ± 15% — but converged by 2–4 wk (14 ± 11% vs 10 ± 10%) and the authors
+conclude it becomes **LOAD-INDEPENDENT with time**; in a stiffer spine their model predicts growth is
+**ARRESTED**. ⭐ Their FEA: **growth-plate stress WORSENS as disc height DECREASES** — the two components are
+mechanically linked, not independent.
+
+⛔ **THE PRICE OF SUSTAINED UNLOADING (`veres2026`):** spaceflight degrades **every** spinal tissue — bone,
+muscle, disc, cartilage — with chronic back pain and **elevated post-flight herniation risk.** Height from
+unloading is not free. And the only sustained disc-height gain report (+1.5 mm cervical over ~19 wk) is
+**uncontrolled, single-practice, ADULT, degenerative** = CORR-203. Not usable.
+
+⭐ **ACTIONABLE, SPLIT HONESTLY:**
+**(a) MEASUREMENT — free, immediate, and it GATES EVERYTHING.** The swing is up to ~2 cm standing and
+0.3–0.8% of sitting height against a 1.8 mm measurement SE. **An unstandardised measurement time can hide or
+fabricate a centimetre of apparent annual growth** (the atlas's own words). **Fix the time of day.** Without
+this, every efficacy judgement about this stack is noise-limited.
+**(b) LOAD — plausible, cheap, UNPROVEN for set-point.** Minimise axial impact + cyclic spinal loading,
+maximise recumbency. Moves the daily *oscillation* favourably. ⛔ **Does NOT establish a set-point shift** —
+spaceflight says sustained unloading degrades the disc; tethering says modulation goes load-independent.
+⭐ **(c) THE ONE MEASUREMENT THAT WOULD DECIDE THE TRUNK QUESTION: a spine film/MRI read for vertebral RING
+APOPHYSIS STAGE, endplate physis status, and individual DISC HEIGHTS.** R317/R318/R319 are all population
+priors until that exists — it is the axial equivalent of BoneXpert on the hand.
+
 ## ⭐⭐⭐⭐⭐ R318 — **HHIP IS 95% TRUNK.** And R317 had the ratio's sign BACKWARDS.
 
 ⛔ **CORR-338 — I PUBLISHED THE ERROR ONE ROUND AGO.** `bartell2026` (PMID 41861830) deposits **standing
