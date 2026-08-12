@@ -1,0 +1,250 @@
+id: round313_the_compound_hunt_chad_has_chemical_matter_and_the_connectivity_map_route_is_structurally_blocked
+name: 'ROUND 313 - the compound hunt run properly instead of asserted. CHAD does NOT have zero chemical matter:
+  it has a mapped active motif, a cyclic peptide mimetic and in vivo mouse dosing, and I claimed otherwise off a
+  single Open Targets query. Its direction is wrong, which names the exact molecule nobody has made. And the connectivity-map
+  route - the one approach that bypasses druggability entirely - is structurally blocked for the same reason the
+  CRISPR screen was'
+aliases:
+- round 313
+- the compound hunt
+- CORR-335
+- cyclicCHAD
+- L1000 fails on growth plate
+- canagliflozin HHIP dissolved
+- meclozine not additive
+type: hypothesis
+layer: L12
+stub: false
+summary: "ZERO - WHY THIS ROUND EXISTS. Round 312 concluded \"the shelf is empty; the search was not\ninsufficient.\"\
+  \ The operator rejected that, and was right to: it was a claim about MY search. Every\n\"no molecule\" statement\
+  \ in rounds 311 and 312 rested on ONE source - an Open Targets drug count - which is\nCORR-312 verbatim (\"HHIP\
+  \ had three handles; I searched none... the material lives in the structural\nliterature under interface, mutant,\
+  \ pocket, avidity, clustering - never under 'inhibitor'\"). I re-derived\nthat correction in round 311 and then\
+  \ failed it again in round 312, one round later.\n\nONE - ⭐ CORR-335: CHAD HAS CHEMICAL MATTER, AND IT IS SUBSTANTIAL.\
+  \ Round 312 said \"zero drugs, zero tool\ncompounds, no perturbation in any species.\" What actually exists:\n\
+  · **THE ACTIVE MOTIF IS MAPPED TO EIGHT RESIDUES.** Chondroadherin binds **integrin alpha-2-beta-1**, and\n  the\
+  \ cell-binding activity localises to the octamer **LRRWLEAK318**.\n· **A CYCLIC PEPTIDE MIMETIC EXISTS: cyclicCHAD,\
+  \ CQLRGLRRWLEAKASRPDATC326**, built to reproduce the\n  structural constraint of that sequence in the intact protein.\n\
+  · **IT HAS BEEN DOSED IN MICE, WITH A BONE ENDPOINT.** cyclicCHAD counteracted bone loss in ovariectomised\n \
+  \ mice, and in breast-cancer models decreased cachexia and the incidence of bone metastases, reduced primary\n\
+  \  tumour volume, and improved survival when combined with sub-optimal doxorubicin.\n· **A SECOND, SEPARATE PEPTIDE\
+  \ EXISTS** - the C-terminal 13-residue heparin-binding domain, which binds\n  heparan sulfate chains selectively\
+  \ and makes bound chondrocytes spread and form focal adhesions.\n· **THE RECEPTOR IS DRUGGABLE INDEPENDENTLY**\
+  \ - alpha-2-beta-1 has selective tool antagonists.\n=> \"No chemical matter\" was FALSE. The correct statement\
+  \ is that the matter exists and is well characterised.\n\nTWO - ✗ BUT THE DIRECTION IS WRONG, WHICH IS THE USEFUL\
+  \ PART. Human CHAD pLoF is **+2.63 cm (P=4.0e-10, 282\nheterozygotes)**: LOSS makes people taller, so the wanted\
+  \ direction is **LESS CHAD FUNCTION**. cyclicCHAD\n**MIMICS** chondroadherin - it reproduces the protein's integrin\
+  \ engagement and its effects - it does not\nblock it. Every existing molecule on this target runs the wrong way.\n\
+  ⭐ **SO THE ROUND CONVERTS AN ASSERTION INTO A SPECIFICATION.** What is missing is not \"a molecule\" in the\n\
+  abstract but one specific thing: **an ANTAGONIST of the CHAD-alpha2beta1 interaction, or of the C-terminal\nheparan-sulfate\
+  \ interaction, measured against BONE LENGTH in a normal growing animal.** The binding motif is\nknown to eight\
+  \ residues, the cyclic scaffold is published, the receptor is defined, and the assay is a\ncaliper. That is a\
+  \ far shorter path than \"find a molecule for an undruggable secreted protein.\"\n⚠ Caveat recorded before anyone\
+  \ reaches for the receptor: alpha-2-beta-1 is the principal **collagen**\nreceptor, so blocking it is not CHAD-selective\
+  \ and would hit collagen II engagement in the same tissue.\n\nTHREE - ⛔ THE CONNECTIVITY-MAP ROUTE IS STRUCTURALLY\
+  \ BLOCKED, AND THIS IS THE ROUND'S MOST GENERALISABLE\nRESULT. The atlas's wall is that its targets are secreted\
+  \ proteins, matrix and transcription factors, which\ncannot be drugged by binding (round 298: 202 of 298 nominated\
+  \ targets have no drug). Signature reversal\nsidesteps that completely - you do not need to bind a secreted protein\
+  \ to lower its transcription - and\n`PMID 41223767` proves the approach works in cartilage, using single-cell\
+  \ signature reversal to nominate\ncobimetinib and then validating it in human chondrocytes and explants.\nSo it\
+  \ was run. A confound-filtered **aged / low-output growth-plate signature** was built from GSE114919\n(round 312)\
+  \ - brake-like genes up, capacity-like genes down, requiring agreement across BOTH zones, rat\nconcordance where\
+  \ available, and removal of muscle, bone, marrow/immune, blood, positional-HOX and\npredicted-gene families -\
+  \ giving 120 up and 79 down human-mappable symbols. Queried against L1000 for\ncompounds that REVERSE it:\n· **Only\
+  \ 16.1% of the signature (32 of 199 genes) was matched anywhere across all 50 returned signatures.**\n· **Best\
+  \ connectivity score 0.075.**\n· **CONTROL, run because the last two rounds turned on exactly this check:** a\
+  \ signature of known L1000\n  landmark genes matched **17 of 20** and scored **0.450 - six-fold higher.** The\
+  \ machinery works. The\n  biology is not in it.\n· HHIP, CHAD, SCUBE3, NRK, ACAN, COL2A1 and SOX9 never appear\
+  \ among matched genes. The 32 that did match\n  are generic stromal and inflammatory genes - SPP1, GPX3, CFD,\
+  \ ADIPOQ, IFITM1 - so the query was being\n  driven by everything except growth-plate biology.\n⛔ **THIS IS CORR-334\
+  \ FOR A THIRD TIME.** GSE225878 could not see HHIP because the screened cells transcribe\nit at 0.10 CPM; L1000\
+  \ cannot see it because its reference compendium is cancer cell lines that do not\ntranscribe growth-plate genes\
+  \ either. **Two independent, powerful, genome-scale platforms are blind to this\natlas's targets for the same\
+  \ structural reason, and it is not a coincidence - it is what \"the growth plate\nis an unusual tissue with an\
+  \ unusual gene set\" cashes out to.**\n⚠ **AND THE NOISE POINTED AT A KNOWN TRAP.** The top-scoring \"reversers\"\
+  \ were **vorinostat and trichostatin\nA**, both HDAC inhibitors - the class round 298 already recorded as a CONTRAINDICATION,\
+  \ because HDAC4\nrepresses MEF2C, MEF2C drives hypertrophy, and de-repressing it should accelerate maturation\
+  \ and shorten the\nperiod. Had the coverage control not been run, this round would have promoted a contraindicated\
+  \ class off a\nscore of 0.047.\n\nFOUR - THREE MORE COMPOUNDS CHECKED AND CLOSED, each by reading rather than\
+  \ asserting.\n· ⛔ **CANAGLIFLOZIN DISSOLVES ON ONE ABSTRACT.** `PMID 39756674` is titled \"Canagliflozin inhibits\
+  \ hedgehog\n  interacting protein (Hhip) induction of tubulopathy\", which looked like an approved oral drug acting\
+  \ on the\n  atlas's best-validated target in the wanted direction - and canagliflozin sits on round 297's own\
+  \ list of\n  never-checked accessible agents. The actual chain is **Hhip -> Sglt2 expression** in renal proximal\
+  \ tubular\n  cells, and canagliflozin acts **DOWNSTREAM, on SGLT2**; it offsets the consequences of Hhip and never\n\
+  \  touches HHIP itself. SGLT2 is not in the growth plate. Dead.\n  ✓ Recorded in passing: SGLT2 inhibitors are\
+  \ approved from age 10, and the paediatric T2NOW follow-up found\n  **no significant effect of dapagliflozin on\
+  \ height, Tanner staging, growth and maturation markers or bone\n  biomarkers to 52 weeks** - a null for height\
+  \ but a useful safety observation. Against it, one report of\n  unfavourable skeletal effects of SGLT2 inhibitors\
+  \ in NON-diabetic rats.\n· ⛔ **MECLOZINE IS ALREADY IN THIS ATLAS - 185 mentions and its own node** (`meclizine_repurposing`).\
+  \ The\n  grep ran before the write-up, which is the only reason this is not a fourth CORR-313. What IS new is\n\
+  \  `PMID 39514089` (2025): meclozine 2 mg/kg/day and GH 0.35 mg/kg/day, days 7-56, achondroplasia mouse -\n  body\
+  \ length was vehicle **17.01 +/- 0.50 cm**, meclozine **17.66 +/- 0.46**, GH **17.89 +/- 0.43**, and the\n  **COMBINATION\
+  \ 17.79 +/- 0.32 - BETWEEN the two single agents**, with the authors stating explicitly that\n  neither an additive\
+  \ nor an attenuating effect was seen. BMD rose additively; bone length did not. And in\n  **WILD-TYPE** mice meclozine\
+  \ lengthened **only the humerus** while GH lengthened femur, tibia, humerus and\n  ulna. A fresh, independent\
+  \ instance of the substitution trap, on the\n  FGFR3 arm this stack already occupies with erdafitinib. Meclozine\
+  \ remains a substitution, now with a\n  direct additivity experiment behind the claim rather than an inference.\n\
+  · ⛔ **COBIMETINIB FAILS TWICE.** It is the validated hit of the cartilage signature-reversal study above, but\n\
+  \  it works by REDUCING chondrocyte hypertrophy (COL10A1, MMP13, SPP1, ADAMTS5 down). Hypertrophic volume is\n\
+  \  roughly 80% of longitudinal growth, so suppressing it is the wrong direction for height; and MEK1/2 is the\n\
+  \  ERK arm, downstream of the receptor erdafitinib already blocks. Wrong direction AND Step-0 redundant.\n· ✓\
+  \ **NRK CONFIRMED PHARMACOLOGICALLY EMPTY BY QUERY, NOT BY ASSERTION.** ChEMBL returns **no human NRK\n  target\
+  \ record at all** - the only NRK entries are rat cell lines. NRK is a STE20-family kinase and the\n  family has\
+  \ been comprehensively profiled (`PMID 30897078`), but no inhibitor, no bioactivity, no chemical\n  series exists\
+  \ for it.\n\nFIVE - WHAT THE ROUND CHANGES. Round 312's \"the shelf is empty\" was too strong and is withdrawn\
+  \ in one\nplace: **CHAD had matter and I had not looked.** It survives everywhere else, and the failure mode is\
+  \ now\nnamed rather than assumed - the two genome-scale platforms that could have found compounds without needing\
+  \ a\ndruggable fold are both blind to this tissue's gene set. The productive move is therefore NOT another\ndatabase\
+  \ sweep but the specific molecule this round specifies: a CHAD-alpha2beta1 antagonist, or the\nHHIP-directed agent\
+  \ round 294 already specified, tested against a caliper."
+human_evidence: indirect
+human_evidence_note: 'The human contribution is kosmicki2026''s CHAD pLoF +2.63 cm at P=4.0e-10 across 282 heterozygotes,
+  which sets the therapeutic direction as LOSS of CHAD function and is what makes the existing cyclicCHAD mimetic
+  the wrong way round. Also human: the paediatric T2NOW follow-up showing no dapagliflozin effect on height or Tanner
+  staging to 52 weeks. All compound data are mouse or in vitro. The L1000 reference compendium is human cancer cell
+  lines, which is precisely why it cannot see this biology.'
+species_basis: mouse
+translation_risk: high
+translation_risk_reason: HIGH. cyclicCHAD's in vivo data are mouse, in ovariectomy and breast-cancer bone metastasis
+  models, with bone MASS and tumour endpoints and no bone-length or growth-plate endpoint anywhere; and the peptide
+  runs opposite to the direction human genetics indicate, so it is a starting scaffold and not a candidate. The
+  connectivity-map negative is a statement about a reference compendium, not about compounds, and does not exclude
+  the approach if a chondrocyte-based signature library ever exists. Blocking integrin alpha-2-beta-1 is not CHAD-selective,
+  since it is the main collagen receptor in the same tissue.
+confidence: B
+confidence_reason: 'Graded B. The CHAD chemical-matter correction is A - the motif, the cyclic peptide sequence,
+  the receptor and the in vivo dosing are all published and specific. The connectivity-map negative is B and unusually
+  well controlled: 16.1% gene coverage and a best score of 0.075 against a landmark control matching 17 of 20 at
+  0.450 in the same API on the same day, so the failure is demonstrated rather than inferred. The canagliflozin,
+  meclozine and cobimetinib closures are B, each resting on a single primary abstract read in full. Nothing here
+  is a promotion, and the round''s main product is a specification and three closures.'
+limitations: The compound searches were Europe PMC, ChEMBL, Open Targets and general web; patents, Espacenet, internal
+  pharma pipelines and conference abstracts were not systematically covered, so no absence claim here is stronger
+  than 'not found by these routes' - CORR-267 and CORR-284 apply. The cyclicCHAD in vivo work was read from abstracts,
+  not full texts, and its dose and route are not recorded here because they were not stated in what was read; they
+  are a gap, not a number to invent. The L1000 query used L1000CDS2 rather than the full CLUE compendium, which
+  requires credentials, so coverage may be understated - but the landmark control was run through the identical
+  endpoint, so the six-fold gap is internal to one method. The GSE114919 signature inherits every confound documented
+  in round 312.
+quantitative:
+- parameter: L1000 coverage of the confound-filtered aged/low-output growth-plate signature
+  value: 32 of 199 genes matched (16.1%); best connectivity score 0.075
+  unit: genes matched and connectivity score
+  conditions: L1000CDS2, reverse mode, 120 up and 79 down human-mappable symbols from GSE114919
+  species: human
+  source_ref: l1000cds2
+  uncertainty: matched-gene count pooled across all 50 returned signatures, so it is an upper bound on coverage
+- parameter: L1000 landmark control run through the identical endpoint
+  value: 17 of 20 genes matched; best connectivity score 0.450
+  unit: genes matched and connectivity score
+  conditions: 10 stress/proliferation landmarks up, 10 cell-cycle landmarks down; same API, same day
+  species: human
+  source_ref: l1000cds2
+  uncertainty: demonstrates the six-fold gap is internal to the method, not an artefact of the query
+- parameter: meclozine and growth hormone, additivity on bone length in an achondroplasia mouse model
+  value: 'body length n=8/group: vehicle 17.01 +/- 0.50 cm, meclozine 17.66 +/- 0.46 (P<0.05), GH 17.89 +/- 0.43
+    (P<0.01), COMBINATION 17.79 +/- 0.32 (P<0.05) - the combination sits BETWEEN the single agents; authors state
+    neither an additive nor an attenuating effect'
+  unit: cm
+  conditions: eight groups, achondroplasia model and WILD-TYPE, each +/- meclozine 2 mg/kg/day oral and +/- GH 0.35
+    mg/kg/day subcutaneous, P7 to P56. IN WILD-TYPE MICE MECLOZINE LENGTHENED ONLY THE HUMERUS while GH lengthened
+    femur, tibia, humerus and ulna. BMD rose additively; bone length did not.
+  species: mouse
+  source_ref: sawamura2025
+  uncertainty: as reported in the atlas bibliography entry, read 2026-08-12
+- parameter: chondroadherin cell-binding motif and its cyclic mimetic
+  value: octamer LRRWLEAK318; cyclic peptide CQLRGLRRWLEAKASRPDATC326
+  unit: amino acid sequence
+  conditions: binds integrin alpha-2-beta-1; the cyclic peptide MIMICS chondroadherin rather than blocking it
+  species: human
+  source_ref: haglund2011
+  uncertainty: sequences as published; no bone-length endpoint exists for either peptide in any species
+claim_grades:
+- claim: CHAD has no chemical matter.
+  grade: X
+  species: human
+  source_ref: haglund2011
+  basis: NO - this was round 312's claim and it came from a single Open Targets drug count. CHAD's cell-binding
+    activity is mapped to the octamer LRRWLEAK318; a cyclic peptide mimetic CQLRGLRRWLEAKASRPDATC326 exists; a separate
+    C-terminal 13-residue heparin-binding peptide exists and selectively binds heparan sulfate; the receptor is
+    integrin alpha-2-beta-1; and the cyclic peptide has been dosed in mice with bone endpoints, counteracting bone
+    loss after ovariectomy and reducing bone metastasis incidence. CORR-312 said the material lives under interface,
+    motif and binding domain rather than 'inhibitor', and that is exactly where it was.
+- claim: The existing CHAD peptides are usable for this case.
+  grade: X
+  species: human
+  source_ref: kosmicki2026
+  basis: 'NO, and this is the useful half. Human CHAD pLoF is +2.63 cm at P=4.0e-10 in 282 heterozygotes, so the
+    height-adding direction is LOSS of CHAD function, and cyclicCHAD MIMICS chondroadherin rather than blocking
+    it. Every published molecule on this target runs the wrong way. What the round delivers is a specification instead
+    of an assertion: an antagonist of the CHAD-alpha2beta1 interaction or of the C-terminal heparan-sulfate interaction,
+    read out against bone length in a normal growing animal. The motif is known to eight residues and the scaffold
+    is published, so this is a far shorter path than the usual ''undruggable secreted protein''. Caveat: alpha-2-beta-1
+    is the principal collagen receptor, so receptor blockade is not CHAD-selective.'
+- claim: Connectivity-map signature reversal can find compounds for growth-plate biology.
+  grade: X
+  species: human
+  source_ref: l1000cds2
+  basis: NOT WITH THE EXISTING COMPENDIUM. A confound-filtered aged/low-output growth-plate signature from GSE114919
+    matched only 32 of 199 genes (16.1%) across all returned signatures with a best score of 0.075, while a known-landmark
+    control through the identical endpoint matched 17 of 20 at 0.450 - six-fold higher. HHIP, CHAD, SCUBE3, NRK,
+    ACAN, COL2A1 and SOX9 never appear among matched genes; the ones that do are generic stromal and inflammatory
+    genes. This is CORR-334 for a third time - GSE225878 could not see HHIP at 0.10 CPM in its screened cells, and
+    L1000's cancer cell lines do not transcribe growth-plate genes either. The approach is sound in principle and
+    was validated in cartilage by PMID 41223767; what fails is the reference library. The top-scoring hits were
+    vorinostat and trichostatin A, an HDAC class round 298 already recorded as contraindicated, so the noise pointed
+    at a known trap.
+- claim: Canagliflozin lowers HHIP and is therefore a route to the atlas lead.
+  grade: X
+  species: mouse
+  source_ref: zhao2025b
+  basis: NO. The paper's chain is Hhip -> Sglt2 expression in renal proximal tubular cells, and canagliflozin acts
+    downstream by inhibiting SGLT2; it offsets the consequences of excess Hhip and does not lower HHIP itself. SGLT2
+    is not expressed in the growth plate, so there is no route from this to cartilage. The title made it look like
+    an approved oral drug acting on the atlas's best-validated target in the wanted direction, and one abstract
+    closed it.
+- claim: Meclozine is an addition to this stack.
+  grade: X
+  species: mouse
+  source_ref: sawamura2025
+  basis: 'NO, on two grounds, and it was already in this atlas with 185 mentions and its own node. It acts on FGFR3
+    signalling, the arm erdafitinib already occupies. And the 2025 four-arm experiment settles additivity directly
+    rather than by inference: meclozine 2 mg/kg/day and GH 0.35 mg/kg/day each increased body and bone length in
+    an achondroplasia model from day 7 to 56, but the combination gave NO ADDITIVE EFFECT on bone growth - only
+    BMD was additive. That is CORR-297''s substitution trap with an experiment behind it.'
+key_refs:
+- ref_id: haglund2011
+  year: 2011
+  type: primary
+  one_line_finding: maps chondroadherin's cell-binding activity to the octamer LRRWLEAK318 acting through integrin
+    alpha-2-beta-1, and reports the cyclic mimetic CQLRGLRRWLEAKASRPDATC326 - the chemical matter round 312 said
+    did not exist
+- ref_id: sawamura2025
+  year: 2025
+  type: primary
+  one_line_finding: meclozine 2 mg/kg/day and GH 0.35 mg/kg/day each lengthen bone in an achondroplasia mouse model
+    but the combination is NOT ADDITIVE on bone growth (only BMD is) - the substitution trap demonstrated rather
+    than inferred
+- ref_id: zhao2025b
+  year: 2025
+  type: primary
+  one_line_finding: canagliflozin offsets Hhip-driven tubulopathy by inhibiting SGLT2 DOWNSTREAM of Hhip, never
+    lowering HHIP itself - closes what looked like an approved-drug route to the atlas's lead target
+- ref_id: l1000cds2
+  year: 2016
+  type: dataset
+  one_line_finding: L1000 connectivity querying returns only 16.1% coverage and a best score of 0.075 on a growth-plate
+    signature, against 17 of 20 and 0.450 for a landmark control through the same endpoint - the reference compendium
+    does not contain this tissue's genes
+open_questions:
+- g_l8_nrk_has_no_skeletal_experiment_in_any_species
+contradicts: 'This round WITHDRAWS one part of round 312''s conclusion. ''CHAD has zero drugs, zero tool compounds,
+  no perturbation in any species'' is FALSE - a mapped eight-residue motif, a published cyclic peptide mimetic,
+  a second heparan-sulfate-binding peptide, a defined receptor and in vivo mouse dosing with bone endpoints all
+  exist, and I had run only Open Targets. That is CORR-312 repeated one round after I re-derived it, and it is recorded
+  as CORR-335. Round 312''s broader conclusion survives, because the existing CHAD molecules run in the wrong direction
+  and the round replaces the assertion with a specification. It also establishes a NEW structural limit: connectivity-map
+  signature reversal, the one approach that does not require a druggable fold, cannot reach this biology with the
+  existing L1000 compendium, for the same reason GSE225878 could not - which is CORR-334 on a second independent
+  platform.'
+last_verified: '2026-08-12'

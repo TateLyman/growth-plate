@@ -196,6 +196,23 @@ Everything else is a gap to record and, where cheap, to fill.
    The informative nulls are the ones where the gene IS present — Tnks 195.7, Tnks2 231.0, Tet1 82.3,
    Amd1 92.5, **Fbn1 230.7**.
 
+29. **Calling a target "no chemical matter" off ONE database.** CORR-335 — R312 said CHAD has "zero drugs,
+   zero tool compounds, no perturbation in any species" from a single Open Targets drug count. **FALSE.**
+   CHAD's cell-binding activity is mapped to the octamer **LRRWLEAK318** acting through **integrin α2β1**;
+   a cyclic mimetic **CQLRGLRRWLEAKASRPDATC326** is published; a separate C-terminal 13-aa heparan-sulfate
+   peptide exists; and cyclicCHAD **has been dosed in mice with BONE endpoints**. **This is CORR-312 verbatim
+   — "search the fold, not the drug" — failed ONE ROUND after I re-derived it.** A drug count is not a
+   literature search. ✗ The direction is still wrong (the peptides MIMIC CHAD; pLoF +2.63 cm means we want
+   LESS), which is the useful part: it converts "find a molecule" into **"make the antagonist of a
+   known 8-residue motif and put a caliper on a femur."**
+
+30. **Grepping the compound name but not the PMID.** CORR-336 — I greped "meclozine", got 185 hits and its
+   own node, and still nearly added the specific 2025 paper as new; it was already `sawamura2025` **with
+   fuller numbers than I extracted** (WT arm: meclozine lengthens **only the humerus**; body length vehicle
+   17.01 → meclozine 17.66 → GH 17.89 → **combination 17.79, i.e. BETWEEN the singles**). **Only the
+   validator's duplicate-PMID check caught it, pre-commit.** Grep the identifier, not just the name — and
+   run `validate.py` BEFORE believing a new reference is new.
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -950,6 +967,46 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   chondrocyte literature says polyamines **stimulate** the differentiated phenotype, and DFMO is used to
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
+
+## ⭐⭐ R313 — THE COMPOUND HUNT RUN INSTEAD OF ASSERTED. R312's "the shelf is empty" was PARTLY WRONG.
+
+⭐ **CHAD HAS CHEMICAL MATTER (CORR-335).** Motif **LRRWLEAK318** → **integrin α2β1** · cyclic mimetic
+**CQLRGLRRWLEAKASRPDATC326** · a separate C-terminal 13-aa **heparan-sulfate** peptide · **cyclicCHAD dosed
+in mice with BONE endpoints** (counteracts ovariectomy bone loss; cuts bone-metastasis incidence).
+✗ **WRONG DIRECTION — and that is the useful part.** The peptides **MIMIC** CHAD; human pLoF **+2.63 cm**
+means we want **LESS**. → **THE SPECIFICATION:** an **antagonist** of CHAD–α2β1 (or of the C-terminal HS
+interaction), read out on **bone length in a normal growing animal**. Motif known to 8 residues, scaffold
+published, receptor defined, assay is a caliper. ⚠ α2β1 is the principal **collagen** receptor — blockade is
+not CHAD-selective.
+
+⛔ **THE CONNECTIVITY-MAP ROUTE IS STRUCTURALLY BLOCKED — the round's most generalisable result.**
+Signature reversal is the one approach that **needs no druggable fold**, and it is validated in cartilage
+(`PMID 41223767` → cobimetinib, confirmed in human chondrocytes + explants). Ran it: confound-filtered
+**aged/low-output plate signature** from GSE114919 (120 up / 79 dn) vs L1000 →
+**only 32/199 genes matched (16.1%), best score 0.075.** **CONTROL through the identical endpoint: landmark
+genes matched 17/20 at 0.450 — 6× higher.** HHIP, CHAD, SCUBE3, NRK, ACAN, COL2A1, SOX9 **never matched**;
+the 32 that did are generic stromal/inflammatory (SPP1, GPX3, CFD, ADIPOQ).
+⛔ **CORR-334 ON A SECOND PLATFORM.** GSE225878 couldn't see HHIP at 0.10 CPM; L1000's cancer lines don't
+transcribe growth-plate genes either. **Two genome-scale platforms, blind for the same structural reason.**
+⚠ **And the noise pointed at a known trap** — top "reversers" were **vorinostat and trichostatin A**, the
+HDAC class R298 already recorded as CONTRAINDICATED. Without the coverage control this round promotes them.
+
+⛔ **THREE MORE CLOSED BY READING, NOT ASSERTING.**
+- **CANAGLIFLOZIN dissolves.** `zhao2025b` is titled "Canagliflozin inhibits Hhip induction of tubulopathy"
+  and canagliflozin is on R297's never-checked list — but the chain is **Hhip → SGLT2** in kidney tubule and
+  the drug acts **DOWNSTREAM on SGLT2**, never touching HHIP. **SGLT2 is not in the plate.** ✓ Aside: SGLT2i
+  approved from age 10; paediatric T2NOW found **no dapagliflozin effect on height or Tanner staging to 52 wk**.
+- **MECLOZINE — already here, 185 mentions, own node, and `sawamura2025` already had the paper (CORR-336).**
+  Body length: vehicle 17.01 → meclozine 17.66 → GH 17.89 → **combination 17.79 (BETWEEN the singles)**;
+  authors state **neither additive nor attenuating**. BMD additive, length not. **WT: meclozine lengthens
+  ONLY THE HUMERUS.** FGFR3 arm = erdafitinib's arm. Substitution, now with the experiment behind it.
+- **COBIMETINIB fails twice** — it works by **reducing** chondrocyte hypertrophy (COL10A1/MMP13 down), and
+  h_term is ~80% of longitudinal growth; plus MEK1/2 is the ERK arm erdafitinib already blocks.
+- ✓ **NRK confirmed empty BY QUERY: ChEMBL has NO human NRK target record** (only rat cell lines). STE20
+  family, comprehensively profiled (`PMID 30897078`), no inhibitor, no bioactivity, no chemical series.
+
+**NET:** R312's "shelf is empty" **survives except for CHAD**, and the productive move is no longer another
+database sweep — it is the **one specified molecule** above, or R294's HHIP agent.
 
 ## ⭐⭐ R312 — THE GROWTH-CAPACITY AXIS IN TWO SPECIES, AND **THE ADDITION QUESTION ANSWERED**
 
