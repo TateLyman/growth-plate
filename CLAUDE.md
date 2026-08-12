@@ -930,6 +930,39 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⛔⛔⛔ R310 — **THE cAMP AXIS IS CLOSED FOR THIS CASE.** PDE3B is SYSTEMIC. Decided by two human tests.
+
+**TEST 1 — PheWAS (`kosmicki2026` Table S27, on disk since 2026-08-12, never opened).** PDE3B's 27 traits,
+ranked by P: **triglycerides −0.333 (P=2.15e-60) · HDL +0.301 (9.73e-56) · ApoA +0.215 (1.87e-27)** …
+then sitting height +0.136 (5.29e-21). **The lipid signal is ~40 ORDERS OF MAGNITUDE beyond the height
+signal.** That is a lipid gene with a height association, not the reverse.
+⭐ **And the route is in the same table: IGF-1 +0.122, P=1.18e-09.** A systemic endocrine mechanism needing
+no chondrocyte at all. (Comparator: **ACAN**, the purest cartilage gene, has 18 traits; PDE3B has 27.)
+
+**TEST 2 — CELL-TYPE RESOLVED (GSE288028, 8 samples).** 33,359 chondrocytes (≥3 of COL2A1/ACAN/COL9A1/
+COL11A1/COL9A2/HAPLN1/SOX9) vs 3,909 non-chondrocytes, same samples — donor and platform internally
+controlled. **PDE3B: 11.50% of chondrocytes vs 42.44% of non-chondrocytes = 0.27× — a 4-fold DEPLETION in
+the cell type that makes bone length.**
+✓ **The test validates itself:** **NRK 83.5×** · LOXL2 13.7× · ADCY6 4.7× · GNAS 1.5× · PDE4B 0.68× ·
+PDE4D 0.60× · PDE8A 0.88× · SIK3 0.68× · TNKS 1.05×. A method that puts NRK at 83× is discriminating.
+
+⛔ **STEP 0 THEN FAILS, AND THAT IS THE DECIDING POINT.** The systemic route runs partly through **IGF-1** —
+and this stack already contains **GH**, which CLAUDE.md prices at **≈0 attained height after mid-puberty**
+(SOCS2). A PDE3 inhibitor pushes a channel **already occupied AND already spent.** CORR-297's substitution
+trap — the same error that demoted LUM-201 and eliminated sacubitril.
+→ **CILOSTAZOL / PDE3 IS NOT AN ADDITION TO THIS STACK.** The genetics are untouched (+1.22 cm human,
++4.597 mouse tibia) and would matter for a **different** subject. **With PDE4 withdrawn (R309) and PDE3
+systemic (R310), THE cAMP AXIS IS CLOSED FOR THIS CASE.**
+
+⭐ **AND THE SAME TEST HANDED BACK SOMETHING BETTER: NRK IS 83.5× CHONDROCYTE-ENRICHED** — 46.99% of
+chondrocytes vs **0.56%** of every other cell in the same tissue. **The cleanest localisation result in the
+atlas.** Converges with everything else on R283's lead gene: human pLoF **+2.79 cm (P=1.0e-20)**, no OMIM
+syndrome, 76 CPM in up to 81% of cells (R308), all 5 compartments of both GSE9160 donors (R292), mouse GP
+baseMean above FGFR3, mouse perichondrium 183–301 CPM.
+✗ **Still pharmacologically empty** — no perturbation in any species, no inhibitor, no length endpoint —
+and the direction is **INHIBITION** (pLoF lengthens), which for a **kinase** is the most drugged fold there
+is. **This is a localisation result, not a promotion.** Gap: `g_l8_nrk_has_no_skeletal_experiment_in_any_species`.
+
 ## ⛔⛔ R309 — **PDE4 INHIBITION IS WITHDRAWN. IT PHENOCOPIES A −4.81 SDS DYSPLASIA.** Read before R306/R308.
 
 **CORR-331 — I stated a CONTESTED mechanism as fact in TWO rounds.** R306 and R308 both used "acrodysostosis
