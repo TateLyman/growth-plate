@@ -917,6 +917,46 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⭐⭐⭐⭐ R308 — POSTNATAL HUMAN GROWTH PLATE, SINGLE-CELL, 79,934 CELLS. Opened at last. **PDE4B IS THE NODE.**
+
+`atlas/data/round308/gse288028_pseudobulk_presence.json` — GSE288028, operator-supplied 2026-08-11,
+**14 samples, 79,934 cells, 36,601 genes.** Right tissue, right developmental stage. Presence + abundance
+only (no zones, no cell types — GSE9160 is still the only zone-resolved human source).
+
+⛔ **THE PREREGISTERED CONTROL FIRED AGAINST ME, AND IT RETIRES A HEDGE THIS FILE HAS USED SINCE R292.**
+**NPPC is ABSENT here too — 0/14 samples, 0.1 CPM, max 0.52% of cells** — in unmistakable cartilage
+(COL2A1 **9,201 CPM in 76% of cells**, COL11A1 3,049, ACAN 1,826) that DOES express the receptors
+(NPR2 10/14 up to 20% of cells, NPR3 5/14, MME 10/14). **Two platforms, 19 years apart, agree.**
+→ **"A non-detection on GSE9160 is weak evidence of absence" is WITHDRAWN as a general excuse.**
+**EVERY ABSENCE CALL IN THIS FILE GETS STRONGER, NOT WEAKER.** And it is what the NPR3 nodes have said
+since R140: **the plate makes no CNP of its own.**
+
+✓ **RAAS ABSENCE CONFIRMED AT DEPTH** — REN **0/14**, AGTR2 1/14 (0.07% cells), AGTR1 5/14 (0.35% cells),
+ACE 5/14. The losartan kill and the ARB half of CORR-327 now rest on 79,934 cells.
+
+⚠ **BUT THE ARRAY'S REAL LIMIT WAS DYNAMIC RANGE, AND THREE CALLS ARE CORRECTED:**
+· **PDE3B** array 1/15 → **12/14, up to 53.7% of cells.** (R306's withdrawal confirmed on primary data.)
+· **SPIN4** array 0/10 → **10/14, 3.2 CPM.** R292's inconvenient negative against the atlas's cleanest pool
+  lever is **corrected — SPIN4 is present.**
+· **PDE5A** array 0/30 → 11/14, 3.0% cells. Stays dead on its **discordant mouse length effect**, not absence.
+✓ **Everything the last ten rounds promoted is really there:** NRK **76.0 CPM (up to 81% of cells)**,
+TNKS 55.8 / TNKS2 59.2, HHIP 21.4, LOXL2 186.3, **PLOD2 745.4**, AMD1 119.7 (41% cells), TET1 19.2,
+CXXC5 49.6, FBN1 59.9, LTBP2 33.3, GNAS **564.8 (77% cells)**, PTH1R 108.7, SIK3 62.0 (46% cells).
+✓ **LRP6 33.0 (19.3% cells) vs LRP5 7.1 (3.1%)** — independently supports R303: LRP5's −1.63 cm is
+  **osteoblastic**, since the plate's canonical co-receptor is LRP6.
+
+⭐ **THE RANKING THAT PICKS THE DRUG — median CPM, 14 postnatal human samples:**
+**PDE4B 152.8 (37.9% of cells) ≫ PDE8A 70.5 > PDE4D 60.0 > PDE7A 32.0 > PDE10A 23.4 > PDE4A 21.6 >
+PDE3A 19.0 > PDE7B 16.4 > PDE2A 9.5 > PDE11A 9.1 > PDE3B 5.0 > PDE8B 3.7 > PDE1A 3.7 > PDE1B 3.3 > PDE1C 2.5**
+**PDE4B is 30× PDE3B and 8× PDE3A. The PDE4 family holds three of the top six slots.**
+⭐ **And PDE4D — 3rd-ranked — is the ACRODYSOSTOSIS TYPE 2 gene** (human GoF → short stature, metaphyseal
+cupping, growth-plate involvement). **The most abundant family in the tissue carries the human dysplasia.**
+→ **IF the cAMP axis is used at all, the node is PDE4 and the isoform is PDE4B.** Roflumilast, apremilast.
+→ **PDE3B's +1.22 cm burden effect is most likely SYSTEMIC** — 2nd-least abundant of 15 in the target tissue.
+⚠ **R307'S BAND AND CREB CONFLICT ARE UNTOUCHED and still govern whether to push.** The sharpest open
+question is now **WHICH cAMP POOL PDE4B CONTROLS** — PDE4 isoforms are AKAP-compartmentalised, and whether
+the PDE4B microdomain feeds **CREB** (bad, opposes erdafitinib) or the **SIK3/HDAC4** arm decides everything.
+
 ## ⛔ R307 — THE cAMP AXIS IS A **BAND**, AND RAISING IT OPPOSES THE ERDAFITINIB ARM. Read before R305/R306.
 
 **THE GAIN END IS A HUMAN DISEASE TOO.** `hppner2025` sat in this bibliography (cited_by 4) with a one-line

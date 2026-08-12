@@ -1,0 +1,209 @@
+id: round308_the_postnatal_human_growth_plate_at_single_cell_resolution_and_pde4b_is_the_node
+name: >-
+  ROUND 308 - opened GSE288028, the POSTNATAL HUMAN growth plate at single-cell resolution, 79,934 cells,
+  operator-supplied and never touched. The preregistered control fired against my expectation: NPPC is
+  ABSENT here too, so the "this platform is insensitive" caveat the atlas has attached to every absence call
+  for rounds is REFUTED, and every absence gets STRONGER not weaker. And it names the node - PDE4B is the
+  dominant cAMP phosphodiesterase of this tissue at thirty times PDE3B
+aliases:
+- round 308
+- GSE288028 postnatal human growth plate scRNA-seq
+- NPPC is genuinely absent
+- PDE4B is the cAMP node
+- the platform-insensitivity excuse is refuted
+type: dataset
+layer: L1
+stub: false
+summary: >-
+  ZERO - WHY THIS DATASET AND NOT ANOTHER ROUND OF LITERATURE. Every expression claim this atlas has made
+  about the human growth plate - the CORR-327 receiver rule, the losartan and sacubitril kills, the PDE3
+  ranking, HHIP, NRK, SPIN4, tankyrase - rests on GSE9160: a 2007 microarray, TWO donors, one with a failed
+  dissection. Every "absent" call has carried the same hedge, that the platform missed NPPC and so a
+  non-detection is weak evidence. GSE288028 is postnatal HUMAN growth plate single-cell RNA-seq, supplied
+  2026-08-11 and never opened. 14 samples, 79,934 cells, 36,601 genes. Presence/absence and abundance only in
+  this pass - no clustering, no integration, no zonal assignment. A gene is called detected in a sample at
+  >=1% of cells AND >=1 CPM, reported per sample and never pooled.
+
+  ONE - THE PREREGISTERED CONTROL, AND IT FIRED AGAINST ME. NPPC was declared the calibrator before looking,
+  because GSE9160 scored it 0/5 in both donors and the atlas has used that miss ever since as proof of
+  platform blindness. **NPPC IS ABSENT HERE TOO: 0 of 14 samples, median 0.1 CPM, a maximum of 0.52% of
+  cells across 79,934 cells.** Meanwhile the tissue is unmistakably cartilage - COL2A1 at 9,201 CPM in 76% of
+  cells, COL11A1 3,049, HAPLN1 2,526, COL9A1 1,319, ACAN 1,826, SOX9, COL10A1 and SPP1 all detected in 12 of
+  14 - and the receptors ARE there: NPR2 10/14 at up to 20% of cells, NPR3 5/14, MME 10/14.
+  ⭐ **SO THE 2007 ARRAY WAS RIGHT ABOUT NPPC AND THE HEDGE WAS WRONG.** Two platforms, nineteen years apart,
+  one bulk and one single-cell, agree that the postnatal human growth plate does not make CNP while
+  expressing its receptors. That is not an artefact, it is the biology - and it is what this atlas's own NPR3
+  nodes have said since round 144, that the plate makes none of its own ligand and blocking the clearance
+  sink is therefore the move.
+  ⛔ **CONSEQUENCE, AND IT RUNS THROUGH EVERYTHING: EVERY ABSENCE CALL IN THIS FILE GETS STRONGER, NOT
+  WEAKER.** The standing caveat "a non-detection on this platform is weak evidence of absence" is withdrawn
+  as a general excuse. It was doing real work - it is why round 306 withdrew round 305's PDE3B call, and it
+  has softened every negative since round 292.
+
+  TWO - THE ABSENCES THAT SURVIVE, ON BETTER DATA. The renin-angiotensin system is confirmed absent from
+  postnatal human growth plate at single-cell depth: **REN 0/14 (0.0 CPM), AGTR2 1/14 (0.07% of cells),
+  AGTR1 5/14 at 0.7 CPM and 0.35% of cells, ACE 5/14 at 0.84%.** The losartan deprioritisation of round 301
+  and the ARB-shelf half of CORR-327 stand on a dataset three orders of magnitude deeper than the one they
+  were made on.
+
+  THREE - AND THE CORRECTIONS, WHICH ARE THE POINT OF DOING THIS. Several genes the 2007 array scored at or
+  near zero are comfortably present here, so the array's problem was DYNAMIC RANGE for moderately expressed
+  transcripts rather than blindness to absent ones:
+  · **PDE3B: array 1/15 - here 12/14 samples, 5.0 CPM, up to 53.7% of cells.** Round 306's withdrawal was
+  right and is now confirmed on primary data rather than on a review.
+  · **SPIN4: array 0/10 - here 10/14 samples, 3.2 CPM, 2.0% of cells.** Round 292's inconvenient negative
+  against the atlas's cleanest pool lever is corrected; SPIN4 is present, and low.
+  · **PDE5A: array 0/30 - here 11/14, 7.2 CPM, 3.0% of cells.** Present but low. PDE5A stays dead on the
+  grounds that actually killed it - weak human genetics at P=9e-05 and a DISCORDANT mouse length effect
+  (-1.092, P=2.3e-05) - but not on absence.
+  · **NRK, the atlas's lead gene from round 283: 12/14, 76.0 CPM, up to 81% of cells.** Well expressed.
+  · **HHIP 12/14 at 21.4 CPM; TNKS 55.8 and TNKS2 59.2, each in about a third of cells; LOXL2 186.3;
+  PLOD2 745.4; AMD1 119.7 in 41% of cells; TET1 19.2; CXXC5 49.6; FBN1 59.9; LTBP2 33.3.** Every target the
+  last ten rounds promoted is really there.
+  · **LRP6 33.0 CPM in 19.3% of cells against LRP5 7.1 in 3.1%** - which independently supports round 303's
+  argument that LRP5's -1.63 cm human effect is osteoblastic rather than physeal, since the plate's canonical
+  co-receptor is LRP6.
+
+  FOUR - THE RESULT THAT PICKS THE DRUG, AND IT IS UNAMBIGUOUS. Ranking every cAMP-hydrolysing
+  phosphodiesterase by median CPM across 14 postnatal human samples:
+  **PDE4B 152.8 (37.9% of cells, max 61.8%) >> PDE8A 70.5 > PDE4D 60.0 > PDE7A 32.0 > PDE10A 23.4 >
+  PDE4A 21.6 > PDE3A 19.0 > PDE7B 16.4 > PDE2A 9.5 > PDE11A 9.1 > PDE3B 5.0 > PDE8B 3.7 > PDE1A 3.7 >
+  PDE1B 3.3 > PDE1C 2.5.**
+  ⭐ **PDE4B IS THE DOMINANT cAMP PHOSPHODIESTERASE OF THE POSTNATAL HUMAN GROWTH PLATE - THIRTY TIMES
+  PDE3B AND EIGHT TIMES PDE3A.** The PDE4 family occupies three of the top six slots. Round 306 inferred this
+  from a bulk array and hedged it; it is now measured, in the right tissue, at the right developmental stage.
+  ⭐ **AND PDE4D, THE THIRD-RANKED ISOFORM, IS THE ACRODYSOSTOSIS TYPE 2 GENE** - human gain-of-function
+  causing short stature with metaphyseal cupping and explicit growth-plate involvement. The most abundant
+  family in the tissue is the one with a human growth-plate dysplasia attached.
+  → **IF THE cAMP AXIS IS USED AT ALL, THE NODE IS PDE4 AND THE ISOFORM IS PDE4B.** Roflumilast and
+  apremilast are approved, oral, and hit it. PDE3B's strong human burden effect (+1.22 cm, P=5.1e-13) is
+  probably SYSTEMIC, because the enzyme is the second-least abundant of fifteen in the target tissue.
+  ⚠ AND THE ROUND-307 BAND STILL APPLIES IN FULL. This round says which node, not whether to push it. cAMP
+  shortens in both directions, and raising it raises CREB against an erdafitinib arm whose contribution is
+  lowering CREB. What is NOT known, and is now the sharpest question on the axis, is WHICH cAMP POOL PDE4B
+  controls - PDE4 isoforms are compartmentalised by AKAP scaffolds, and whether the PDE4B microdomain feeds
+  CREB or the SIK3/HDAC4 arm decides whether a PDE4B inhibitor inherits the overshoot risk or avoids it.
+human_evidence: direct
+human_evidence_note: >-
+  Entirely human and, for the first time in this atlas, POSTNATAL human growth plate at single-cell
+  resolution - 14 samples, 79,934 cells. This is the correct tissue and the correct developmental stage for a
+  question about a growing adolescent, which GSE9160 (two donors, bulk, laser-captured, 2007) was only an
+  approximation of. No animal data are used in this round.
+species_basis:
+- human
+translation_risk: low
+translation_risk_reason: >-
+  Lower than usual because the tissue and stage are right and the depth is real, but three limits are firm.
+  This pass resolves NO ZONES and NO CELL TYPES - donor age, sex, site and zone were not parsed, so every
+  number is whole-tissue and GSE9160 remains the only zone-resolved human source. Presence is not function
+  and abundance is not activity: PDE4B's dominance in transcript says which enzyme is there, not which cAMP
+  pool it governs. And scRNA-seq undercounts low-abundance transcripts in its own way, so a low number here
+  is still not proof of absence - though NPPC agreeing across two platforms is much stronger than either
+  alone.
+confidence: A
+confidence_reason: >-
+  The central results are direct measurements on the right tissue with a preregistered control that fired
+  against the author's expectation, which is the strongest form this atlas gets. 79,934 cells across 14
+  samples, cartilage identity confirmed by COL2A1 at 9,201 CPM in 76% of cells, and the reported statistics
+  are per-sample rather than pooled. Graded A for the presence/absence and abundance claims only; every
+  inference drawn from them inherits the grade of the argument, not of the data.
+claim_grades:
+- claim: >-
+    A non-detection on the 2007 array is weak evidence of absence, because that platform missed NPPC.
+  grade: X
+  basis: >-
+    WITHDRAWN AS A GENERAL EXCUSE, AND THE CONTROL WAS PREREGISTERED. NPPC is ABSENT in GSE288028 as well -
+    0 of 14 samples, median 0.1 CPM, maximum 0.52% of 79,934 cells - in tissue that is unambiguously
+    cartilage (COL2A1 9,201 CPM in 76% of cells, COL11A1 3,049, ACAN 1,826) and that expresses the receptors
+    (NPR2 10/14 up to 20% of cells, NPR3 5/14, MME 10/14). Two platforms nineteen years apart, one bulk and
+    one single-cell, agree that the postnatal human growth plate does not make CNP. That is biology, and it
+    is what this atlas's NPR3 nodes have said since round 144. CONSEQUENCE: every absence call in this file
+    gets stronger, including the ones that killed losartan and the nitrate shelf.
+  species: human
+  source_ref: gse288028
+- claim: >-
+    PDE4B is the dominant cAMP phosphodiesterase of the postnatal human growth plate.
+  grade: A
+  basis: >-
+    Median CPM across 14 postnatal human samples: PDE4B 152.8 in 37.9% of cells (max 61.8%), then PDE8A 70.5,
+    PDE4D 60.0, PDE7A 32.0, PDE10A 23.4, PDE4A 21.6, PDE3A 19.0, PDE7B 16.4, PDE2A 9.5, PDE11A 9.1, PDE3B
+    5.0, PDE8B 3.7, PDE1A 3.7, PDE1B 3.3, PDE1C 2.5. PDE4B is THIRTY TIMES PDE3B and EIGHT TIMES PDE3A, and
+    the PDE4 family holds three of the top six slots. The third-ranked isoform, PDE4D, is the acrodysostosis
+    type 2 gene - human gain-of-function giving short stature with metaphyseal cupping. So the most abundant
+    family in this tissue is the one carrying a human growth-plate dysplasia. If the cAMP axis is used, the
+    node is PDE4.
+  species: human
+  source_ref: gse288028
+- claim: >-
+    PDE3B's human height effect is exerted in the growth plate.
+  grade: D
+  basis: >-
+    PROBABLY NOT, AND THIS RESOLVES THE QUESTION ROUND 305 OPENED - in the opposite direction to round 306's
+    hedge. PDE3B IS present (12/14 samples, up to 53.7% of cells), so round 306's withdrawal of the absence
+    call was correct. But it is the second-least abundant of fifteen phosphodiesterases in the tissue at
+    5.0 CPM, against PDE4B's 152.8. A gene that strong in human burden genetics (+1.22 cm, P=5.1e-13, 1,761
+    heterozygotes) and that faint in the target tissue is more plausibly acting systemically - PDE3B's
+    established biology is adipocyte and hepatic insulin signalling. The local handle on this axis is PDE4;
+    PDE3B is the better genetic anchor and the worse pharmacological target.
+  species: human
+  source_ref: gse288028
+- claim: >-
+    The renin-angiotensin system is absent from the human growth plate.
+  grade: A
+  basis: >-
+    CONFIRMED AT SINGLE-CELL DEPTH IN POSTNATAL TISSUE. REN 0/14 samples at 0.0 CPM; AGTR2 1/14 at 0.07% of
+    cells; AGTR1 5/14 at 0.7 CPM and 0.35% of cells; ACE 5/14 at 0.84%. Round 301 deprioritised the
+    angiotensin handle partly on GSE9160, with the platform hedge attached; the hedge is now removed and the
+    finding is reproduced on 79,934 cells. The ARB shelf cannot act locally on this tissue.
+  species: human
+  source_ref: gse288028
+- claim: >-
+    Two of the atlas's inconvenient negatives were artefacts of dynamic range, not absences.
+  grade: A
+  basis: >-
+    SPIN4 - round 292 recorded 0/10 on the array as an inconvenient negative against the atlas's cleanest
+    pool lever - is present in 10/14 samples at 3.2 CPM and 2.0% of cells. PDE3B - 1/15 on the array - is
+    present in 12/14 at up to 53.7% of cells. PDE5A - 0/30 on the array - is present in 11/14 at 3.0% of
+    cells, and stays dead on its discordant mouse length effect rather than on absence. So the 2007
+    platform's real limitation was DYNAMIC RANGE for moderately expressed transcripts, not blindness: it
+    called genuinely absent genes correctly (NPPC, REN, AGTR2) and lost low-to-moderate ones.
+  species: human
+  source_ref: gse288028
+key_refs:
+- ref_id: gse288028
+  year: 2025
+  type: dataset
+  one_line_finding: >-
+    Postnatal HUMAN growth plate single-cell RNA-seq, 14 samples and 79,934 cells, operator-supplied and
+    unopened until this round. Its preregistered control refuted the atlas's own platform-insensitivity
+    hedge - NPPC is absent here too - and it ranks PDE4B as the dominant cAMP phosphodiesterase of the
+    tissue at thirty times PDE3B
+- ref_id: gse9160
+  year: 2007
+  type: dataset
+  one_line_finding: >-
+    Vindicated on absences and corrected on dynamic range - it called NPPC, REN and AGTR2 correctly and lost
+    PDE3B, SPIN4 and PDE5A, so it remains the only zone-resolved human source but should no longer carry a
+    blanket insensitivity caveat
+- ref_id: morgul2025
+  year: 2025
+  type: primary
+  one_line_finding: >-
+    Gains force from this round - PDE4D, whose gain-of-function causes acrodysostosis with metaphyseal
+    cupping and growth-plate involvement, is the THIRD most abundant cAMP phosphodiesterase in postnatal
+    human growth plate
+open_questions:
+- g_l3_is_the_pde3_height_effect_local_or_systemic
+- g_l12_does_a_pde3_inhibitor_lengthen_bone_in_a_normal_animal
+contradicts: >-
+  This round withdraws a methodological hedge the atlas has used since round 292 and corrects three
+  expression calls. WITHDRAWN: "a non-detection on GSE9160 is weak evidence of absence because that platform
+  missed NPPC." The control was preregistered and NPPC is absent in single-cell postnatal human growth plate
+  as well, so the array was right and every absence call in this file - including the ones that killed the
+  ARB and nitrate shelves - becomes stronger rather than weaker. CORRECTED: PDE3B, SPIN4 and PDE5A are all
+  present, so the array's limitation was dynamic range rather than blindness. NARROWED: round 306's
+  conclusion that PDE4 and PDE3 are comparably supported - PDE4B is thirty times more abundant than PDE3B in
+  the correct tissue at the correct stage, which makes PDE4 the local node and PDE3B's strong burden effect
+  most likely systemic. Round 307's band and CREB conflict are untouched and still govern whether to push
+  this axis at all.
+last_verified: '2026-08-12'
