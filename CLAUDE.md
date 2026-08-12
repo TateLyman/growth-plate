@@ -1584,6 +1584,56 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐⭐⭐ R320 — **A COMPOUND: N-ACETYLCYSTEINE (sulfate donor).** R295 killed this arm on the WRONG genes.
+
+⛔ **THE OBJECTION WAS VOID.** R295 wrote *"SLC13A1 0/10, SLC26A1 0–1/15 → scherer2025's sulfate arm is
+SYSTEMIC RENAL, not local."* **Both are KIDNEY transporters.** The gene that carries sulfate INTO cartilage
+is **SLC26A2** (the diastrophic dysplasia gene) and it was never tested. GSE288028, 14 postnatal human
+growth-plate samples:
+| gene | role | det | medCPM | max % cells |
+|---|---|---|---|---|
+| **SLC26A2** | **cartilage sulfate transporter** | **12/14** | **118.1** | **82.2%** |
+| **PAPSS2** | makes PAPS; loss = brachyolmia | **12/14** | **529.6** | **94.2%** |
+| CHST11 | chondroitin 4-O-sulfotransferase | 12/14 | 350.8 | 89.7% |
+| **CHST3** | 6-O-sulfotransferase; loss = short stature | 12/14 | 111.6 | 76.5% |
+| ACAN | the substrate | 12/14 | **1826** | 99.5% |
+| SLC13A1 / SLC26A1 | **RENAL — what R295 tested** | **0/14** | 0.0 / 0.3 | — |
+→ **CORR-327 RECEIVER TEST PASSES COMPLETELY.**
+
+⭐ **THE HUMAN GENETICS ARE A GRADED DOSE-RESPONSE, NOT JUST A DISEASE.** `scherer2025` (already here):
+allelic series in SLC13A1/SLC26A1 gives **GRADED effects on plasma sulfate AND human height in HETEROZYGOTES**
+— the gradient sits inside the ordinary range, which is what separates this from a restoration story.
+`tise2025`: biallelic SLC13A1 LoF probands **all present with SHORT STATURE + scoliosis/skeletal dysplasia**.
+And every step has a human short-stature phenotype: **PAPSS2 → brachyolmia · CHST3 → SED with joint
+dislocations · SLC26A2 → diastrophic dysplasia / atelosteogenesis II / rMED.**
+
+⭐⭐ **THE AGENT, WITH A HUMAN PD DEMONSTRATION: `vandekamp2023` (NEW to this atlas) —
+"INTRAVENOUS N-ACETYLCYSTEINE ADMINISTRATION TEMPORARILY RESTORED PLASMA SULFATE LEVELS"** in a homozygous
+SLC13A1-null patient. **NAC: oral, generic, cheap, decades of paediatric use.** Other donors: sodium/magnesium
+sulfate (direct), MSM (least characterised as a plasma-sulfate raiser).
+
+⭐ **WHY IT FITS THIS CASE ON FOUR CRITERIA THIS FILE BUILT:**
+· **Step 0 CLEAN** — matrix sulfation is touched by *nothing* in the stack (not CNP/cGMP, not FGFR3/ERK/CREB,
+  not GH/IGF-1, not oestrogen). The test that killed sacubitril, LUM-201, meclozine, PDE3 and cobimetinib.
+· **It moves h_term** — sulfation → fixed charge density → osmotic swelling, and hypertrophic volume is ~80%
+  of longitudinal growth. **R296 said this term had NO upward-pointing agent because every marketed tool on
+  the machinery is an inhibitor. A substrate donor points UP.**
+· **Right compartment** — FCD also holds water in the **disc** (R319), and `tise2025`'s probands have
+  **scoliosis**, an axial phenotype. R318 says the trunk is where his centimetres are.
+· **Obtainable today** — no trial, no expanded access, no antibody nobody has made.
+
+✗ **WHAT IS NOT ESTABLISHED — read before acting.**
+· ⛔ **CORR-203 is the main objection:** the NAC demonstration is **restoration in a profoundly deficient
+  patient, by the INTRAVENOUS route.** Oral NAC has low, variable bioavailability. Whether it raises plasma
+  sulfate in a REPLETE adolescent is unmeasured.
+· ⛔ **No sulfate donor has a bone-length endpoint in ANY species** — R296 said it, still true.
+· ✗ Chondrocytes also make sulfate from cysteine catabolism, so supply may already be saturated.
+· ⚠ NAC is a broad antioxidant/glutathione precursor — any effect need not be sulfate-mediated. **Measure
+  plasma sulfate, don't assume it.**
+· ⚠ Dose/duration/target level undefined. Gap: `g_l5_does_an_oral_sulfate_donor_raise_plasma_sulfate_and_bone_length_in_a_normal_growing_animal`.
+⚠ **CREDIT: R296 already named the sulfate donor as the most attractive untested route on this axis and
+listed NAC.** R320 removes the blocking objection and supplies the human PD demonstration.
+
 ## ⭐⭐⭐⭐ R319 — **SITTING HEIGHT IS TWO COMPONENTS AND THIS FILE ONLY EVER MODELLED ONE.**
 
 ⚠ **CREDIT FIRST (CORR-313/336, 4th instance):** `ekizoglu2026` (2026-08-07, already headed *"THE SPINE
