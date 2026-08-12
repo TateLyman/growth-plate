@@ -68,6 +68,14 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    endpoint. It is a fact to look up, not an inference to make.
 9. **Writing "most replicated" without searching the gene's OWN knockout literature.** CORR-301 — LCORL.
    A convergent-evolution argument across 8 species is about *selection*, not mechanism.
+10. **Filing a multi-arm paper under one arm's result.** CORR-309 — R268 closed hedgehog partly on
+   `trompet2024`'s SYSTEMIC null while the same paper's LOCAL arm is +3.63% femur, P=0.00004, 8/8, effect
+   growing. **Record the ARM, not the citation.** Audit every closure resting on a single citation for arms.
+11. **Importing someone else's significance threshold as a filter on your own data.** CORR-310 — HHIP was
+   sub-threshold in kosmicki2026's table, so R283's tool never crossed it against chu2026, where it is
+   expressed above FGFR3. Their cutoff is their multiple-testing burden. Carry sub-threshold rows through.
+12. **Reporting a contrast without querying the genes that should NOT move.** CORR-311. The negative control
+   is rows you already have. Without it a partition is a list; with it, it is a result.
 
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
@@ -282,6 +290,43 @@ zones and mass, never length).
 
 ## LIVE FRONTIER — the only things worth a round
 
+- **HHIP IS THE LEAD, AND R290 TOOK IT ALL THE WAY DOWN. Four things R285 left open are now closed.**
+  1. **It is expressed where it needs to be, in data we have owned since R243.** chu2026 mouse GP table:
+     **HHIP baseMean 3.73, padj 0.034 — ABOVE FGFR3 (2.30) and NT5E/CD73 (3.21)**; PTCH1 4.93 for scale.
+     Never queried because HHIP was sub-threshold in *kosmicki2026's* table and R283's tool imported that
+     threshold. **CORR-310: another group's p-cutoff is not a filter on your own datasets.**
+  2. **THE LENGTH PROOF WAS ALREADY IN THE FILE AND R268 FILED IT UNDER A NULL. CORR-309.** `trompet2024`
+     has TWO arms. Systemic SAG = pool up, length unchanged (the arm R268 cited). **Unilateral SAG bead into
+     the rat femoral secondary ossification centre = +1.263 mm, +3.63% femur at 6 months, P=0.00004, 8/8
+     animals, contralateral within-animal control, and THE EFFECT GREW from 1→6 months.** Intra-articular
+     SAG also raised RZ Pthrp⁺ cells 65.5→139.8/mm². **ROUTE, not dose.** A paper is not a verdict — record
+     the arm.
+  3. **THE HANDLE IS AN RNA — HHIP-AS1, which was absent from this whole atlas.** `yin2022`: natural
+     antisense lncRNA at the HHIP locus **binds HHIP mRNA and recruits ELAVL1/HuR to stabilise it**;
+     overexpression → HHIP↑ → SMO/GLI1/GLI2↓; **HHIP knockdown abolishes the effect** (the epistasis control
+     that makes it HHIP-mediated). Replicates in lung squamous and hepatocellular carcinoma. **Knockdown =
+     RNA-druggable phenocopy of the +9.92 cm loss state, and ASOs are an approved modality.** HHIP itself is
+     a secreted β-propeller with **no small molecule, no antibody, no peptide in any species** — this is the
+     only handle that exists. ✗ Unresolved: mouse conservation; zero chondrocyte data; `bartl2022` shows an
+     **HHIP-independent dynein function**, so an ASO would not be clean. Gap:
+     `g_l3_hhip_as1_has_never_been_knocked_down_in_cartilage_and_may_not_exist_in_mouse`.
+  4. **WHY IT'S TOLERATED — PTHrP IS THE BUFFER, and this is CORR-300's MECHANISM, not a 4th instance.**
+     `saturne2025`: Hhip−/− sutures upregulate Hh targets **including Pthlh** while **Ihh paradoxically
+     falls** — the loop absorbing the push; **Hhip−/−;Pthlh−/− double mutants FUSE the suture the single
+     mutant keeps patent**, so the buffer is load-bearing. **HHIP sits UPSTREAM of the Ihh–PTHrP loop and is
+     damped by it; SUFU sits DOWNSTREAM of Smoothened, outside its reach, and cannot be** — which is why
+     xiu2022's Sufu mutants lose zonal order and end 21–30% shorter. Suture, not plate: the double mutant's
+     femurs were never measured. Gap: `g_l3_is_the_pthrp_loop_the_buffer_that_lets_hhip_loss_be_tolerated_in_the_plate`.
+  **✗ Costs, recorded not weighed:** Hhip−/− fuse the lambdoid suture by E18.5 (craniosynostosis); HHIP is a
+  tumour suppressor silenced in lung/gastric/hepatocellular/pancreatic cancer **and** Hh activation causes
+  medulloblastoma/BCC — two-sided; top COPD/lung-function locus.
+- **THE LAYER IS VISIBLE INSIDE A SINGLE GROWTH PLATE (R290, CORR-311).** In chu2026 the Hh **transduction**
+  cascade is FLAT — SMO +0.15 (padj 0.49), GLI1 +0.07 (0.82), PTCH1 −0.14 (0.56), IHH baseMean 0.035. Every
+  significant gene in the pathway is **extracellular**, and they sort into two compartments: HHIP −0.55
+  (0.034) + SCUBE2 −3.05 (1.6e-8) ‖ GAS1 +3.06 (1.8e-10), CDON +1.79 (6.1e-15), BOC +1.44 (1.2e-10), DISP1
+  +1.99 (1.8e-3), SCUBE1 +1.82 (1.0e-4). **Receptor, transducer and readout uniform; only ligand
+  AVAILABILITY differs.** SCUBE1 vs SCUBE2 — same job, opposite sides = a paralogue switch, not a gradient.
+  Direction still unassigned per CORR-296; this claim doesn't need it.
 - **THE HEDGEHOG GAIN DIRECTION IS REOPENED (R285) — and it is now the best-evidenced pool lever in the file.**
   `haraguchi2025`: **Hhip1-flox × Prx1-Cre (limb-restricted)** → **femur significantly LONGER at 10 wk AND 53 wk,
   with NO body-weight difference at either age** (authors state this excludes generalised somatic overgrowth).

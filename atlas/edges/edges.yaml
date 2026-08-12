@@ -27858,3 +27858,121 @@ edges:
   - chen2015
   - sedes2022
   confidence: B
+- edge_id: e01651
+  source: round290_hhip_taken_all_the_way_down_and_the_handle_is_an_rna
+  target: round285_germline_from_conception_was_a_bad_objection_and_the_test_that_replaces_it_reopens_hedgehog
+  relation: required_for
+  sign: '+'
+  magnitude: >-
+    ROUND 285 REOPENED HEDGEHOG ON ONE PAPER AND LEFT THREE THINGS OPEN. This round supplies all three.
+    (a) GROWTH-PLATE EXPRESSION, from a file this atlas has held since round 243 and never queried for this
+    gene - in chu2026's mouse GP1-versus-GP2 table HHIP has baseMean 3.73 with padj 0.034, ABOVE FGFR3 at
+    2.30 and NT5E/CD73 at 3.21, with PTCH1 at 4.93 for scale. The target this stack is built around is
+    expressed LESS in the mouse growth plate than the one being proposed. (b) A PHARMACOLOGICAL HANDLE that
+    is not a small molecule - HHIP-AS1. (c) A MECHANISM for the CORR-300 asymmetry rather than a third
+    instance of it.
+  context: >-
+    mouse growth plate, bulk RNA-seq, chu2026 supplementary data file S1, 14,755 genes. Per CORR-296 the
+    GP1/GP2 direction is NOT assigned - only the magnitudes and the partition are used, and both are
+    direction-independent.
+  evidence_tier: T1
+  refs:
+  - kosmicki2026
+  - haraguchi2025
+  - chu2026
+  confidence: B
+- edge_id: e01652
+  source: round290_hhip_taken_all_the_way_down_and_the_handle_is_an_rna
+  target: pthrp_ihh_feedback_loop
+  relation: inhibits
+  sign: '-'
+  magnitude: >-
+    WHY THE SAME DIRECTION OF HEDGEHOG TONE GIVES A LONGER FEMUR WITH ORDERED ZONES IN ONE PLACE AND SHORTER
+    BONES WITH DESTROYED ZONES IN ANOTHER - AND IT IS A TOPOLOGY ARGUMENT, NOT A DOSE ONE. saturne2025:
+    Hhip-null sutures upregulate hedgehog target genes INCLUDING Pthlh, while Ihh itself is paradoxically
+    DOWN - the loop is absorbing the perturbation. The causal test is in the same paper: Hhip-/-;Pthlh-/-
+    double mutants FUSE the coronal suture that the Hhip single mutant keeps patent, so PTHrP is not a
+    correlate of the buffering, it is load-bearing. HHIP sits UPSTREAM of the Ihh-PTHrP negative feedback
+    loop and is therefore damped by it. SUFU sits DOWNSTREAM of Smoothened, outside the loop's reach, and
+    cannot be - which is why xiu2022's Sufu perturbation loses zonal order and ends shorter.
+  context: >-
+    mouse; cranial suture in saturne2025, growth plate in haraguchi2025 and xiu2022. The buffer is
+    demonstrated in suture, INFERRED for the plate - the double mutant has not been read out for long-bone
+    length, which is what gap g_l3_is_the_pthrp_loop_the_buffer_that_lets_hhip_loss_be_tolerated_in_the_plate
+    asks.
+  evidence_tier: T1
+  refs:
+  - saturne2025
+  - haraguchi2025
+  - xiu2022
+  confidence: C
+- edge_id: e01653
+  source: round290_hhip_taken_all_the_way_down_and_the_handle_is_an_rna
+  target: the_stack_in_a_normal_human
+  relation: hypothesized_link
+  sign: '+'
+  magnitude: >-
+    THE PROOF THAT LOCAL HEDGEHOG ELEVATION ADDS LENGTH WAS ALREADY IN THIS FILE AND ROUND 268 FILED IT UNDER
+    A NULL. trompet2024 put a SAG bead unilaterally into the rat femoral secondary ossification centre with
+    the contralateral limb as a within-animal control - femur PLUS 1.263 mm, PLUS 3.63 PER CENT, at six
+    months, P = 0.00004, 8 of 8 animals, AND THE EFFECT GREW from one month to six. Intra-articular SAG also
+    raised resting-zone Pthrp-positive cells from 65.5 to 139.8 per mm squared. The SAME PAPER's SYSTEMIC arm
+    gave pool up and length unchanged. ROUTE, NOT DOSE. Against the stack's own scale - CNP analogues +1.24 cm
+    at 52 weeks, aromatase inhibitor +1.3 cm over 3 years - a 3.63 per cent femoral gain is not a small
+    number, but it is a RAT femur and the translation is unmeasured in any species.
+  context: >-
+    rat, unilateral intra-articular/SOC bead, six months. Speculative as applied to this stack - no hedgehog
+    agent has ever been given to a human for length, and the opposite direction of this axis carries grade-A
+    irreversible physeal fusion in children (robinson2017a, pereira2021).
+  evidence_tier: T1
+  refs:
+  - trompet2024
+  - haraguchi2025
+  confidence: speculative
+  gap_id: g_l3_does_local_hedgehog_elevation_add_human_length_and_by_what_route
+- edge_id: e01654
+  source: round290_hhip_taken_all_the_way_down_and_the_handle_is_an_rna
+  target: round287_the_whole_table_run_and_the_layer_it_points_at_is_one_this_atlas_never_named
+  relation: correlates_with
+  sign: '+'
+  magnitude: >-
+    ROUND 287 NAMED THE EXTRACELLULAR MORPHOGEN-AVAILABILITY LAYER FROM A GENE LIST. THIS RESOLVES IT
+    SPATIALLY INSIDE A GROWTH PLATE. In chu2026's mouse table the hedgehog-availability machinery is not
+    co-expressed - it is PARTITIONED. The secreted ANTAGONIST HHIP (-0.549, padj 0.034) and SCUBE2 (-3.05,
+    padj 1.6e-8), the factor that releases lipid-modified hedgehog from producing cells, fall on one side;
+    the three membrane CO-RECEPTORS fall on the other - GAS1 (+3.06, padj 1.8e-10), CDON (+1.79, padj
+    6.1e-15), BOC (+1.44, padj 1.2e-10). Five genes, one module, two compartments, every one significant.
+    The layer round 287 derived from human effect sizes has a physical address.
+  context: >-
+    mouse growth plate, chu2026 supplementary data file S1. CORR-296 APPLIES - which compartment is which
+    cannot be named, and the finding is deliberately stated as a partition rather than a direction. GAS1 is
+    itself the gene whose sign broke the calibration guard in round 283, so it is doing double duty here and
+    that is a reason to hold the direction open, not to resolve it.
+  evidence_tier: T1
+  refs:
+  - chu2026
+  confidence: C
+- edge_id: e01655
+  source: round290_hhip_taken_all_the_way_down_and_the_handle_is_an_rna
+  target: smoothened
+  relation: correlates_with
+  sign: unknown
+  magnitude: >-
+    THE NULLS ARE THE CONTROL, AND THEY MAKE THE PARTITION A RESULT RATHER THAN AN ARTEFACT. Across
+    chu2026's two mouse growth-plate clusters the hedgehog TRANSDUCTION cascade does not move at all - SMO
+    +0.146 (padj 0.49), GLI1 +0.073 (padj 0.82), PTCH1 -0.137 (padj 0.56), IHH barely expressed at baseMean
+    0.035. Every significant gene in the pathway is EXTRACELLULAR: HHIP -0.549 (padj 0.034) and SCUBE2 -3.05
+    (padj 1.6e-8) one way; GAS1 +3.06 (padj 1.8e-10), CDON +1.79 (padj 6.1e-15), BOC +1.44 (padj 1.2e-10),
+    DISP1 +1.99 (padj 1.8e-3), SCUBE1 +1.82 (padj 1.0e-4) the other. Receptor, transducer and readout are
+    UNIFORM; what differs between compartments is entirely who is allowed to hand the ligand over. SCUBE1 and
+    SCUBE2 are paralogues doing the same release job and they land on OPPOSITE sides - a paralogue switch,
+    not a dosage gradient.
+  context: >-
+    mouse growth plate, chu2026 supplementary data file S1, 14,755 genes. This claim is direction-independent
+    and therefore untouched by CORR-296 - it says which genes move, not which way. It is round 287's
+    extracellular morphogen-availability layer detected as a within-dataset contrast, with the intracellular
+    pathway as its negative control.
+  evidence_tier: T1
+  refs:
+  - chu2026
+  confidence: B

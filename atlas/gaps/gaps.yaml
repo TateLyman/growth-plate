@@ -16011,3 +16011,134 @@ gaps:
     rather than benefit at bone age 16. DELIVERY IS SOLVED IF NEEDED - matsuoka2025 already put a selective RARgamma
     ligand into nanoparticles beside the proximal tibial growth plate with single-plate spatial control, in the
     opposite direction.'
+- gap_id: g_l3_hhip_as1_has_never_been_knocked_down_in_cartilage_and_may_not_exist_in_mouse
+  type: known_unknown
+  layer: L3
+  tractability: 4
+  question: >-
+    HHIP-AS1 knockdown lowers HHIP protein and de-represses hedgehog in human bone-marrow stromal cells
+    (yin2022). Does knocking it down in CHONDROCYTES raise hedgehog output in the growth plate, and does it
+    add BONE LENGTH? And prior to that - is there a mouse orthologue at all, or is the only available test
+    system human cells and human organoids?
+  why_it_matters: >-
+    This is the only druggable handle on HHIP that exists in any form. HHIP itself is a secreted
+    beta-propeller antagonist with no small-molecule ligand, no antibody and no peptide reported in any
+    species; a target with a +9.92 cm human effect size and no chemical matter is not actionable. An
+    antisense oligonucleotide against a natural antisense lncRNA is an APPROVED MODALITY - the mechanism
+    yin2022 describes (HHIP-AS1 binds HHIP mRNA and recruits ELAVL1/HuR to stabilise it) means an ASO would
+    lower HHIP by removing a stabiliser rather than by engaging a protein surface, which is why this is a
+    handle where none otherwise exists.
+  what_is_known: >-
+    human, in vitro. yin2022 - HHIP-AS1 and HHIP both fall across days 0, 7 and 14 of osteogenic
+    differentiation; HHIP-AS1 overexpression raises HHIP and lowers SMO, GLI1 and GLI2 and inhibits
+    osteogenesis; simultaneous HHIP knockdown ABOLISHES the suppression, which is the control that makes the
+    route HHIP-mediated rather than parallel. The stabilising relationship replicates in lung squamous
+    carcinoma and hepatocellular carcinoma. bartl2022 - in SHH-driven medulloblastoma HHIP-AS1 ALSO
+    stabilises dynein complex 1 INDEPENDENTLY of HHIP, so an ASO would not be a clean HHIP knockdown.
+  what_is_missing: >-
+    (1) Whether a mouse Hhip-as1 orthologue exists - lncRNAs are poorly conserved and if it does not, the
+    only in vivo test route is a humanised or xenograft system. (2) Any chondrocyte experiment of any kind.
+    (3) Any bone-length endpoint under HHIP-AS1 manipulation in any species. (4) Whether the dynein function
+    bartl2022 describes is present in cartilage, which determines how much of any effect is on-target.
+  nearest_evidence:
+  - yin2022
+  - bartl2022
+  - haraguchi2025
+  nearest_evidence_note: >-
+    haraguchi2025 supplies the genetic proof that the LOSS state lengthens a femur; yin2022 supplies the RNA
+    route to that state. Nobody has connected them.
+  tractability_note: >-
+    High. The reagents are ordinary - ASO or siRNA against HHIP-AS1, primary chondrocytes or an ATDC5 line,
+    then a juvenile animal if the orthologue exists. The blocking question is conservation and it is a
+    database lookup, not an experiment.
+  discriminating_experiment: >-
+    STEP ONE, free - query the mouse genome for an antisense transcript at the Hhip locus. STEP TWO, in
+    vitro - ASO knockdown of HHIP-AS1 in human growth-plate or articular chondrocytes, read HHIP protein,
+    GLI1 and PTCH1, with an HHIP siRNA arm as the epistasis control exactly as yin2022 did in stromal cells.
+    STEP THREE, the one that matters - if the orthologue exists, local delivery into a juvenile rodent limb
+    with the CONTRALATERAL LIMB AS CONTROL, femur length at maturity by caliper and micro-CT, plus zone
+    heights, because CORR-300 predicts the zones stay ORDERED and the whole value of the secreted-antagonist
+    class rests on that prediction. Use trompet2024's unilateral design - it is the one route in this axis
+    that has ever produced a length gain.
+- gap_id: g_l3_is_the_pthrp_loop_the_buffer_that_lets_hhip_loss_be_tolerated_in_the_plate
+  type: known_unknown
+  layer: L3
+  tractability: 3
+  question: >-
+    saturne2025 shows PTHrP is the load-bearing buffer that keeps a hedgehog-disinhibited cranial suture
+    patent. Cranial sutures have no growth plate and no Ihh-PTHrP feedback loop of the kind long bones run.
+    Does the same buffering hold in the GROWTH PLATE, and is it the reason HHIP loss widens both zones while
+    keeping them ORDERED where SUFU loss destroys them?
+  why_it_matters: >-
+    This is the mechanistic content of CORR-300 rather than another instance of it. If the buffer is the
+    Ihh-PTHrP loop, then the rule "prefer secreted antagonists over intracellular brakes" has a stated
+    reason - upstream perturbations are absorbed by negative feedback, downstream ones are not - and it makes
+    a testable prediction for every other axis in the atlas, including the canonical-Wnt window of round 281.
+    If it does not hold in the plate, the rule is an empirical pattern with three instances and no mechanism.
+  what_is_known: >-
+    mouse. saturne2025 - Hhip-/- sutures upregulate hedgehog targets including Pthlh while Ihh is
+    paradoxically down; Hhip-/-;Pthlh-/- double mutants fuse a suture the single mutant keeps patent.
+    haraguchi2025 - limb-restricted Hhip1 deletion widens proliferative AND hypertrophic zones with order
+    preserved and a longer femur at 10 and 53 weeks. xiu2022 - Sufu perturbation, downstream of Smoothened,
+    gives -21 and -30 per cent femur. trompet2024 - intra-articular SAG raised resting-zone Pthrp-positive
+    cells 65.5 to 139.8 per mm squared, which is the loop responding in the direction the buffer hypothesis
+    predicts.
+  what_is_missing: >-
+    Long-bone length in the Hhip-/-;Pthlh-/- double mutant, or in any Hhip conditional crossed onto a
+    PTHrP-hypomorphic background. saturne2025 measured a suture. Nobody has put a caliper on those femurs.
+  nearest_evidence:
+  - saturne2025
+  - haraguchi2025
+  - xiu2022
+  - trompet2024
+  nearest_evidence_note: >-
+    The double mutant already exists as an animal. The endpoint that would settle this is a bone length in
+    mice a laboratory has already bred.
+  tractability_note: >-
+    Medium. No new allele is required - it is a cross that has been made and an endpoint that was not taken.
+  discriminating_experiment: >-
+    Femur and tibia length by caliper and micro-CT in Hhip-/-, Pthlh+/-, and Hhip-/-;Pthlh+/- littermates at
+    skeletal maturity, with growth-plate zone heights and column order in the same animals. PREDICTION under
+    the buffer hypothesis - Hhip-/- longer with ordered zones, and the length gain LOST plus zonal disorder
+    APPEARING when PTHrP dosage is reduced. If the double mutant is instead simply short in the way a Pthlh
+    hypomorph is short, the loop is not buffering and CORR-300 keeps its instances but loses its mechanism.
+- gap_id: g_l3_does_local_hedgehog_elevation_add_human_length_and_by_what_route
+  type: known_unknown
+  layer: L3
+  tractability: 2
+  question: >-
+    trompet2024's unilateral SAG bead added 3.63 per cent to a rat femur at six months while the same paper's
+    SYSTEMIC arm added nothing to length. Is route the discriminator, and does any route of hedgehog
+    elevation add length in a human or a primate?
+  why_it_matters: >-
+    Round 268 closed hedgehog partly on trompet2024's systemic null. The local arm of the same paper is a
+    positive length result with a within-animal control and a growing effect, and it was never given its own
+    weight. If route is the discriminator then round 268 closed a PROTOCOL, not an axis - which is exactly
+    what the HHIP human genetics (both directions, monotonic) independently implies.
+  what_is_known: >-
+    rat. trompet2024 - SAG bead into the femoral secondary ossification centre, +1.263 mm, +3.63 per cent, at
+    six months, P = 0.00004, 8 of 8 animals, contralateral control, effect larger at six months than at one;
+    systemic SAG raised the resting pool with length unchanged. Human, opposite direction, grade A -
+    hedgehog-pathway INHIBITORS cause irreversible physeal fusion in children (robinson2017a, pereira2021).
+  what_is_missing: >-
+    Any hedgehog agonist given to a human or non-human primate with a length endpoint, by any route. Whether
+    an intra-articular or peri-physeal depot is achievable at a human knee at all. Whether the rat gain
+    survives to skeletal maturity or is a rate effect that the plate later gives back - six months is not a
+    rat's adult length.
+  nearest_evidence:
+  - trompet2024
+  - haraguchi2025
+  - robinson2017a
+  - pereira2021
+  nearest_evidence_note: >-
+    The human evidence on this axis is entirely in the WITHDRAWAL direction and it is grade A for harm. There
+    is no human elevation datum of any kind.
+  tractability_note: >-
+    Low for a human answer - no agent, no route, and the class's human record is a fusion harm. Higher for
+    the intermediate question, which is whether the rat gain persists to maturity.
+  discriminating_experiment: >-
+    Repeat trompet2024's unilateral design to SKELETAL MATURITY rather than six months, in rat and then in a
+    large animal where the physis geometry is closer to human, with the contralateral limb as control and
+    final segment length as the endpoint. Add a peri-physeal route arm alongside the intra-articular one to
+    separate delivery compartment from dose. Until a gain SURVIVES TO MATURITY in a second species, this axis
+    has a rate result and not a height result, which is failure mode one.

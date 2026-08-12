@@ -10124,3 +10124,46 @@ Three independent laboratories, growing animals, the most aggressive TGF-β-lowe
 This is not a criticism of any of the three: `busschers2025` is an osteogenesis imperfecta bone-mass study, `morales2026` a survival study in a lethal dysplasia. **It is an observation about where the field came from.** Skeletal TGF-β pharmacology descends from osteoporosis and fragility, so it measures *mass*; the length question has no constituency in it.
 
 **Rule.** When an axis has repeatedly "never been measured for length," check whether that is one gap or a *systematic blind spot of the parent discipline*. If it is the latter, the missing experiment is cheaper than it looks — the animals, dosing and imaging are already routine — and the absence carries no evidential weight at all.
+
+## CORR-309 — I filed a paper as a null when only one of its two arms was
+
+Round 268 closed hedgehog partly on `trompet2024`: **systemic SAG raised the resting pool and left length unchanged.** That is true, and it is one arm of a two-arm paper.
+
+The other arm put a SAG bead **unilaterally** into the rat femoral secondary ossification centre, with the contralateral limb as a within-animal control:
+
+| | result |
+|---|---|
+| femur gain | **+1.263 mm, +3.63 %** |
+| timepoint | **6 months** |
+| p | **0.00004** |
+| animals | **8 of 8** |
+| trajectory | effect **larger** at 6 months than at 1 |
+
+That is a **positive length result in a normal animal with a within-animal control**, and it has been sitting in this file since round 268 filed the paper under a null. Round 290 did not find it — it re-read what was already indexed.
+
+**The discriminator is ROUTE, not dose.** Same agonist, same paper, same species: systemically it moves the pool and not the bone; locally it moves the bone.
+
+**Rule.** A paper is not a verdict. When a study runs more than one route, dose or tissue, the atlas must record **the arm**, not the citation — and a null in one arm must never be allowed to stand for the paper. Check every closure that rests on a single citation for whether the citation had arms.
+
+## CORR-310 — a threshold in someone else's table became a filter on my own data
+
+`round283_height_genes_against_the_root_cluster.py` crossed **kosmicki2026's Table 1** — the 17 exome-wide-significant genes — against chu2026's mouse growth-plate expression table. HHIP was **not in Table 1**: it is reported incidentally at P = 3.7×10⁻⁷, below the authors' significance threshold. So HHIP was never crossed against the expression data.
+
+Round 287's audit tool did carry HHIP, in an `EXTRA` list — but that tool greps **the graph**, not the dataset. Two tools, one gene, and the query that mattered fell between them.
+
+Running it takes one line. **HHIP baseMean 3.73, padj 0.034 — above FGFR3 (2.30) and NT5E/CD73 (3.21).** The gene that went on to pass round 287's open-plate test is expressed in the mouse growth plate above the receptor this stack is built around, and that was retrievable at any point since round 243.
+
+**Rule.** Another group's significance threshold is a property of **their** multiple-testing burden and **their** question. It is not a filter on your own datasets. When importing a gene list, carry the sub-threshold rows through **your** analyses and let **your** data decide — the cost of one extra row is nothing, and the cost of dropping it was five rounds here.
+
+## CORR-311 — the nulls were the control, and I nearly reported the contrast without them
+
+Round 290 first recorded the hedgehog-availability partition as five significant genes sorting into two compartments. Re-querying the same table for the rest of the pathway made it a much stronger claim, and one that does **not** depend on CORR-296:
+
+| | genes | result |
+|---|---|---|
+| **transduction** | SMO +0.146 (padj 0.49), GLI1 +0.073 (padj 0.82), PTCH1 −0.137 (padj 0.56), IHH baseMean 0.035 | **flat, all n.s.** |
+| **availability** | HHIP −0.549 (0.034), SCUBE2 −3.05 (1.6e-8) ‖ GAS1 +3.06 (1.8e-10), CDON +1.79 (6.1e-15), BOC +1.44 (1.2e-10), DISP1 +1.99 (1.8e-3), SCUBE1 +1.82 (1.0e-4) | **all significant, two groups** |
+
+Receptor, transducer and the pathway's own readout gene are **uniform** across the two compartments. Everything that moves is **outside the cell**. That is round 287's extracellular morphogen-availability layer detected as a within-dataset contrast, with the intracellular pathway serving as its negative control — and `SCUBE1` and `SCUBE2`, paralogues doing the same ligand-release job, landing on **opposite sides**, which is a switch rather than a gradient.
+
+**Rule.** When reporting that a set of genes differs between compartments, query the genes that should **not** differ from the same table. Without them the finding is a list; with them it is a contrast. The negative control is free — it is rows you already have.
