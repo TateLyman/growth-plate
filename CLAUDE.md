@@ -1657,8 +1657,18 @@ postnatal ACCRUAL.** CORR-299 separates them, so seo2007 is a weaker objection t
 ⛔ **baffi2004 is not weakened that way and it points the wrong way for THIS case:** chondrocyte TGF-β is
 **dispensable for long-bone length and required for the axial skeleton and the discs** — and his residual is
 trunk-dominant (R274/R318) with the disc named modifiable in R319.
-⭐ **THE DECIDING NUMBER IS PAYWALLED.** baffi2004's abstract: postnatal survivors *"showed alterations in
-the length of specific bones"* — **DIRECTION NOT STATED.** Only postnatal length readout for
+⛔⛔ **AND THE EMBRYONIC ESCAPE IS GONE — `alkhatib2018` IS THE POSTNATAL, INDUCIBLE VERSION AND IT AGREES.**
+**Acan-CreERT2;Tgfbr2, tamoxifen at TWO WEEKS OF AGE** — the CORR-299 open-plate test, actually run —
+→ collagen disorganisation, proteoglycan loss and **OSTEOPHYTES in INTERVERTEBRAL and STERNOCOSTAL joints
+from 3 months, progressive to 12; proteoglycan loss in the NUCLEUS PULPOSUS.** Long bones not examined.
+⭐ **The damage is PROTEOGLYCAN LOSS IN THE NUCLEUS PULPOSUS — which is exactly the fixed-charge-density
+mechanism R319 identified as the trunk's second, fusion-independent height component. The axis attacks
+R319's lever by R319's own mechanism.**
+⭐ **THIRD INSTANCE OF CORR-340, AND THIS ONE HAS A DIRECTION:** alkhatib2018 states the knockouts **"were
+smaller in size compared to CTL mice"** and gives **NO NUMBER.** That is the only postnatal directional
+body-size observation on this axis, n=3/group, qualitative — **and it runs AGAINST it.**
+⭐ **THE DECIDING NUMBER IS STILL PAYWALLED.** baffi2004's abstract: postnatal survivors *"showed alterations
+in the length of specific bones"* — **DIRECTION NOT STATED.** Only postnatal LENGTH readout for
 chondrocyte-restricted TGF-β loss in any species. **Dev Biol 2004;276:124-142, PMID 15531369. ASKED FOR.**
 
 **SIX — ⛔ MEASURED NEGATIVE: the GSE252289 `LUMBAR`/`THORACIC` ATAC sheets are NOT an axial reference.**
@@ -1689,8 +1699,9 @@ LIGAND TGFB3 (54.7%) and FBN1 (53.3%) are near balance. R289 was right and R318 
 ## ⭐ R323 — THE CHEAPEST UNRUN EXPERIMENT IS NOW A RE-MEASUREMENT, AND IT HAS HAPPENED TWICE
 `chen2015` gave **losartan to WILD-TYPE mice**, watched the post-proliferative zone expand, never measured
 the femur. **`greene2021` gave the pan-TGF-β neutralising antibody 1D11 at 0.5/1/5/10 mg/kg IP to WILD-TYPE
-littermates from 8–11 weeks** and reported bone volume and strength — **no longitudinal dimension.** Two
-labs, two agents, wild-type growing animals both times. See CORR-340. Gap:
+littermates from 8–11 weeks** and reported bone volume and strength — **no longitudinal dimension.**
+**`alkhatib2018` deleted Tgfbr2 from cartilage postnatally, wrote that the knockouts "were smaller in size",
+and reported no number.** Three labs, three perturbations, growing animals every time. See CORR-340. Gap:
 `g_l12_does_a_tgf_beta_lowering_agent_lengthen_bone_in_a_normal_growing_animal`.
 **Clinical-stage agents on this axis: galunisertib, vactosertib (oral ALK5 inhibitors), fresolimumab
 (pan-TGF-β neutralising antibody). None approved; none with a bone-length endpoint in any species.**
