@@ -603,6 +603,39 @@ GDF5 0.675, LCORL 0.919).
   out: measure intracellular small-solute content by zone, and **give a sulfate donor to a growing animal
   with a caliper on the femur.**
 
+## THE ACCESSIBLE-DRUG BLIND SPOT (R297) — run `atlas/tools/round297_accessible_drug_coverage_audit.py`
+
+The convention "a generic length-endpoint sweep no longer finds anything" is true of sweeps that start from
+the LITERATURE. **The inverse sweep — start from the graph, find obtainable agents it has never mentioned —
+had never been run.** Across 821 nodes and 1,597 refs, **30 obtainable agents return ZERO hits**, 9 more thin.
+This is a different gap from "no molecule exists" (where HHIP and the volume axis both ended, and which no
+searching repairs).
+
+- ⭐ **METFORMIN — the standout, and the ONLY one of the thirty that targets the PERIOD.** Every arm of this
+  stack raises a RATE; at BA16 the constraint is the period, served only by the AI at ~1.3 cm/3 yr.
+  `laerkholm2025` (LIFE-MET) is randomised, placebo-controlled, double-blind, 4-arm, with **CHANGE IN BONE
+  AGE at 12 mo as PRIMARY OUTCOME** — the only trial in this atlas with bone age as a primary endpoint under
+  a cheap oral drug. ✗ **It is a PROTOCOL, no results**, 80 overweight girls with early puberty, and the
+  mechanism is correcting **hyperinsulinaemia**. In a lean insulin-sensitive male there is nothing to correct
+  and metformin lowers IGF-1 bioavailability **against** the GH arm.
+  ⭐ **THE MISSING INPUT IS A BLOOD TEST, NOT A PAPER: fasting insulin / glucose / HOMA-IR appear NOWHERE in
+  this atlas for this subject.** IR → live period lever, plausibly additive to the AI (different mechanism).
+  Insulin-sensitive → contraindicated. One draw decides it. Gap:
+  `g_l12_is_this_subject_insulin_resistant_and_does_that_open_a_period_lever`.
+- ⚠ **NSAIDs / celecoxib — zero coverage, and the likely direction is a COST not a lever.** COX inhibition's
+  documented skeletal direction is suppressive. An atlas built to maximise height that never asked whether a
+  common OTC class is SUBTRACTING has a blind spot that costs nothing to check. Watch-list, not established.
+- ⚠ **The cGMP SECOND ROUTE is a real topology gap.** The atlas examined cGMP *degradation* (PDE5 ×9 nodes,
+  tadalafil ×14) and settled that PDE3/cilostazol = vosoritide's node. It never examined cGMP *synthesis* via
+  **soluble guanylate cyclase**: L-arginine, citrulline, nitrates all **zero**; riociguat/vericiguat/cinaciguat
+  thin. sGC does not compete for NPR-B, so cilostazol's substitution argument may not transfer. Never put.
+- ⚠ **Inflammatory tone never examined:** anakinra, canakinumab, etanercept, adalimumab **zero**; tocilizumab
+  thin. IL-6 blockade gives catch-up growth in inflammatory arthritis. CRP/IL-6 never recorded for this subject.
+- **The other 26 zeros:** allopurinol, amiloride, colchicine, collagen peptide, creatine, dapagliflozin,
+  empagliflozin, glucosamine, HCTZ/thiazide, liraglutide, nifedipine, pentoxifylline, propranolol,
+  semaglutide, simvastatin, spironolactone, strontium, vardenafil, verapamil, vitamin K, nitrate…
+  **A zero is a statement about THIS FILE, not about efficacy.** None has a length endpoint here.
+
 ## CONTRAINDICATED — do not add to the stack
 
 - **DNMT inhibitors** (azacitidine, decitabine) — reproduce the Dnmt1-KO direction: accelerated
