@@ -968,6 +968,63 @@ DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
   **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
   way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
+## ⭐⭐⭐⭐ R314 — **THE MODALITY WAS WRONG.** The class is not undruggable, it is un-SMALL-MOLECULE-able.
+
+⛔ **THE FRAMING ERROR THAT HAS GOVERNED EVERY ROUND SINCE R298.** R298's "202/298 have no drug → the
+pharmacopoeia doesn't serve this biology" was computed on **small-molecule-dominated drug counts**. But
+**secreted proteins are the EASIEST class for a biologic** — extracellular, no membrane to cross, no cell
+entry. **And R287's LAYER — where BOTH open-plate passes live — is secreted.** I applied a small-molecule
+filter to the one target class where it is least informative, then read the emptiness as biology.
+
+| target | ANTIBODY tractability | SMALL-MOL tractability | drugs |
+|---|---|---|---|
+| **SOST** | **Approved Drug** + loc high + signal peptide | High-Quality Ligand | **ROMOSOZUMAB (approved)** |
+| **CHAD** | loc med, signal peptide, GO CC med | **none** | 0 |
+| **HHIP** | loc med, signal peptide, GO CC med | Structure w/ Ligand, HQ Pocket | 0 |
+| **SCUBE3** | loc **high**, GO CC high, signal peptide, HPA | **none** | 0 |
+| NRK (control) | **none** — intracellular kinase | Druggable Family | 0 |
+⭐ **SOST IS THE EXACT PRECEDENT: a SECRETED antagonist of a morphogen pathway, bone phenotype, neutralised
+by an APPROVED ANTIBODY.** Same architecture as HHIP and CHAD, same organ system, already solved.
+✓ The classification discriminates — NRK correctly returns antibody-UNtractable.
+
+⛔ **AND THE SAME QUERY KILLS THE SHORTCUT. SOST IS 0/14 IN THE POSTNATAL HUMAN GROWTH PLATE** (0.09 CPM,
+max 0.26% of cells) while **BGLAP 50.7 CPM 11/14 and SP7 12/14** — the osteoblast lineage IS there, so the
+absence is specific. Romosozumab fails CORR-327. ⭐ **And this retro-confirms R312's flag that its brake-like
+`Sost` signal was osteocyte contamination.** Direction would have failed anyway (R281: lower Wnt is longer).
+
+✓ **THE FULL CHAD AXIS IS IN THE POSTNATAL HUMAN GROWTH PLATE — it passes CORR-327 outright.**
+**CHAD 60.1 CPM, 12/14, up to 75.6% of cells** · **ITGB1 299.5 CPM in 62% of cells** · ITGA2 14.1 ·
+heparan-sulfate co-receptors **SDC2 166, SDC4 114, GPC1 180, GPC6 198** · CHADL 48.0.
+Ligand + receptor + co-receptor all present — which the CNP arm (NPPC 0/14), the RAAS and PDE5A all fail.
+⚠ **ITGA10 192.3 CPM = 13× ITGA2** — α10β1 is cartilage's dominant collagen receptor, so α2β1 is a MINOR
+collagen receptor here (makes α2β1 blockade less indiscriminate than the integrin literature implies).
+⛔ **BUT THE RECEPTOR SHORTCUT IS CLOSED: IMPC Itga2-null TIBIA −1.072, P=0.041.** Losing the receptor
+SHORTENS. ⚠ Held weakly — CORR-329: 63.7% of knockouts are shorter, median −0.212, so the sign is the common
+direction. → **Target the CHAD–α2β1 INTERACTION or CHAD itself, not the integrin** — i.e. what an antibody
+does and a receptor blocker does not.
+
+✓ **BINDERS AGAINST HHIP ALREADY EXIST AND HHIP HAS ALREADY BEEN MADE AS A BIOLOGIC.** Multiple vendors sell
+anti-HHIP monoclonals (clone 5D11, HL1969) — **research reagents, NOT function-blocking**, and that
+distinction is the whole remaining problem — but they prove the protein is immunogenic and its epitopes
+accessible. **`ye2025` already manufactured and dosed Fc-HHIP in mice.** `griffiths2021` maps the epitopes a
+neutraliser would aim at (2 SHH sites, 2 GAG sites, the cholesterol CRD).
+→ **What HHIP lacks is not a modality, a manufacturing route or an epitope. It is ONE function-blocking
+antibody nobody has made.**
+
+⭐ **THE RANKED ASK — now a CONSTRUCTION problem, not a DISCOVERY problem:**
+1. **Function-blocking anti-HHIP antibody** — best-validated target here (+9.92 cm human; haraguchi2025 femur
+   +4.5% at 53 wk with plate held open; R312 two-species low-output enrichment); epitopes mapped; protein
+   already made as Fc fusion; binders commercial.
+2. **Neutralising anti-CHAD, or a blocker of the LRRWLEAK318–α2β1 interaction** — +2.63 cm at P=4.0e-10,
+   whole axis present in human tissue, motif known to 8 residues.
+3. **Recombinant SCUBE3** — the one target whose direction is to SUPPLY; declines with age in two species
+   (R312); highest antibody-tractability confidence of the three.
+⛔ **THE SERIOUS UNRESOLVED OBJECTION: the growth plate is AVASCULAR and ALYMPHATIC.** That is exactly the
+problem `ye2026`'s chondrocyte-membrane nanoparticles were built to solve for a SMALL molecule, and a 150 kDa
+IgG faces it far worse than vosoritide's 4.1 kDa peptide. **Not resolved. Any biologic here needs a delivery
+answer first** — and CT-CM-NPs/WYRGRL is the one vehicle in this atlas shown to reach the plate from a vein.
+✗ And all three still need what the atlas has never had: **a length endpoint in a normal growing animal.**
+
 ## ⭐⭐ R313 — THE COMPOUND HUNT RUN INSTEAD OF ASSERTED. R312's "the shelf is empty" was PARTLY WRONG.
 
 ⭐ **CHAD HAS CHEMICAL MATTER (CORR-335).** Motif **LRRWLEAK318** → **integrin α2β1** · cyclic mimetic
