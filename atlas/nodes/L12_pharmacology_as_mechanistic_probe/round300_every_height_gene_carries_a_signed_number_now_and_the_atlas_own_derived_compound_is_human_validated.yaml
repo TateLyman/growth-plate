@@ -1,0 +1,364 @@
+id: round300_every_height_gene_carries_a_signed_number_now_and_the_atlas_own_derived_compound_is_human_validated
+name: >-
+  ROUND 300 - the compound hunt, run against SIGNED human effect sizes for the first time. Supplementary
+  Table 6 gives all 207 height genes a direction and a magnitude in centimetres, which turns rounds 297-298's
+  enumeration into a screen with a rule. The headline is not a new molecule: it is that NPR3, the compound
+  this atlas DERIVED from its own spec in rounds 144 and 220 and never had human evidence for, comes back at
+  +1.91 cm and P = 1.4e-61, with its own receptor NPR2 at -2.75 cm as the internal control. Only 5 of the 39
+  genes whose loss makes humans taller have any drug at all
+aliases:
+- round 300
+- the signed target-drug sweep
+- NPR3 is human-validated at last
+- TGFB3 gives the perichondrial TGF-beta axis its ligand
+- the acromelic band - heterozygous taller, biallelic dwarfing
+- the first contraindication screen
+type: hypothesis
+layer: L12
+stub: false
+summary: >-
+  ZERO - WHAT CHANGED, AND WHY IT IS A METHOD CHANGE BEFORE IT IS A RESULT. Rounds 297 and 298 swept drugs
+  against gene sets the atlas had nominated because they were interesting. Neither could say whether a drug
+  should be GIVEN, because neither gene set carried a direction. CORR-295 is the standing rule that an
+  enumeration with no sign and no magnitude is not actionable, and both rounds were exactly that
+  enumeration - which is how the atlas's own top-ranked gene, ZFAT, sat unused for rounds.
+  kosmicki2026 Supplementary Table 6 removes the excuse. For all 207 genome-wide-significant genes it gives
+  the burden effect in CENTIMETRES with a standard error, per variant class and per allele-frequency bin -
+  7,185 rows, extracted here to atlas/data/round300/s6_burden_effects.json. Every gene now arrives with a
+  sign and a size measured in 1.45M humans. The rule this round applies: take the most significant pure-pLoF
+  row, the closest genetic analogue of pharmacological loss of function. Beta positive means loss makes
+  humans TALLER and we want an INHIBITOR. Beta negative means loss makes humans SHORTER, we want an agonist,
+  and any approved inhibitor is a CONTRAINDICATION - a screen this atlas has never run in either direction.
+  135 of the 207 have a pLoF burden at P < 1e-4. THIRTY-NINE make humans taller when lost. NINETY-SIX make
+  them shorter.
+
+  ONE - NPR3, AND THIS SECTION IS A SELF-CORRECTION BEFORE IT IS A RESULT (CORR-324).
+  I drafted this round with NPR3 as "the compound the atlas derived and never had human evidence for", read
+  straight off CLAUDE.md's line "never given to a human, no bone data". THEN I GREPPED THE GRAPH, WHICH IS
+  THE RULE CORR-313 EXISTS TO ENFORCE, AND TWO NODES CONTRADICTED ME.
+  ✗ NPR3 human genetics were NOT absent. `npr3_human_genetics_dose_response` has held a gene-dosage series
+  since round 140: lauffer2022's family runs zero alleles about 0 SDS, one allele about +1 SDS, two alleles
+  +3.93 SDS, and boudin2018 adds four obligate carriers at +0.1, +0.71, +1.4, +1.46 SDS. CLAUDE.md's "never
+  given to a human" is about the MOLECULE and I read it as being about the GENE. The ledger is lossy in one
+  direction and I fell in the hole it makes.
+  ✗ AND THE COMPOUND SPECIFICATION IS BACKWARDS, WHICH MATTERS MORE. `npr3_is_bifunctional_and_the_spec_was
+  _backwards` establishes from aubdool2025 that NPR-C does two opposite-signed jobs: in cartilage it is a
+  CLEARANCE SINK that wants silencing, and in the aorta it is a Gi-COUPLED PROTECTIVE receptor that wants
+  activity. M372049, this atlas's own round-145 pick, is the tool reagent used to ABOLISH CNP aortoprotection
+  in human aortic smooth muscle. THE RIGHT PROFILE IS AN OCCUPANT THAT SIGNALS, NOT A BLOCKER - cANF(4-23),
+  and nishizawa2017's compound 23 which is built on that scaffold and whose own paper attributes its final
+  substitutions to increased NPR3 AGONIST activity. SO AP-811, WHICH I FOUND THIS ROUND AND WAS ABOUT TO
+  NOMINATE, IS IN THE WRONG CLASS FOR THE SAME REASON M372049 IS. It is an antagonist. Its 20,000-fold
+  selectivity over NPR1 is a real number and the wrong number twice over - the counter-screen that matters
+  for efficacy is NPR2, and the axis that matters for safety is blocker-versus-occupant.
+  ✓ WHAT kosmicki2026 GENUINELY ADDS, AND IT IS A RECALIBRATION DOWNWARD. Unbiased population ascertainment,
+  which is precisely what CORR-295 says to use instead of clinically-ascertained families. NPR3 pLoF +2.35 cm
+  across 224 heterozygotes (P = 4.5e-07); pLoF + deleterious missense +1.91 cm at P = 1.4e-61. THE FAMILY
+  SERIES SAID ROUGHLY ONE SD PER ALLELE, WHICH IS ABOUT 7 cm. THE POPULATION SAYS 1.9 TO 2.4 cm. The atlas's
+  enthusiasm for this arm rested on the ascertained estimate and it was inflated about threefold. That is
+  CORR-295 biting a target the file likes, which is the only way to know the rule is working.
+  ✓ AND THE INTERNAL CONTROL IS NEW AND CLEAN. NPR2, the receptor arm of the same axis, runs the other way in
+  the same 1.45M people: -2.75 cm at P = 5.9e-96, pure pLoF -6.98 cm at P = 2.2e-42. One dataset, one
+  ascertainment, two arms of one axis, opposite signs. No prior evidence in this file had that structure.
+  · In GSE9160 NPR3 is weakly but really present - 1/15 probe-donor cells in the clean donor, and that one
+  detection is HYPERTROPHIC (979 against threshold 827); 2/15 in donor 2. NPR2 is 5/10 and 10/10. Weak
+  detection of a low-abundance receptor on a platform that missed NPPC entirely is not evidence of absence.
+
+  TWO - THE PERICHONDRIAL TGF-BETA AXIS GETS ITS LIGAND, AND ITS SPECIES GAP CLOSES ON DATA WE ALREADY OWNED.
+  Round 287 built this axis on sedes2022, a mouse: Fbn1 loss in limb mesenchyme gives ~7% longer bones,
+  entirely postnatal, and deleting Fbn1 from CHONDROCYTES gives no overgrowth - so the control is EXTRINSIC
+  to the plate, in the OUTER PERICHONDRIUM, via reduced LTBP-3/-4 and less local TGF-beta. Two things land
+  at once now.
+  · THE LIGAND ITSELF IS A HUMAN HEIGHT GENE. TGFB3 pLoF = +7.68 cm, P = 4.0e-17, 60 hets. That is the
+  second-largest effect in the atlas's actionable set and it is the molecule at the centre of the mechanism,
+  not a scaffold protein. FBN1 is +8.82 cm (pLoF) / +9.13 cm (pLoF+delmissense, P = 5.5e-44). LTBP2 is
+  +2.36 cm, P = 3.1e-16, and had ZERO atlas coverage before today.
+  · AND THE HUMAN TISSUE PUTS THE WHOLE APPARATUS IN THE PERICHONDRIUM. In GSE9160, in the same two children
+  round 292 used: LTBP1's maximum across all five compartments is PERICHONDRIUM (8208); LTBP2's maximum is
+  PERICHONDRIUM (2903); FBN1's only detection in the entire clean donor is PERICHONDRIUM (1607); TGFB3 is
+  detected there (1582) and SMAD3 too (2050). sedes2022's mouse compartment claim is now corroborated in
+  human tissue, by the same method and the same donors that closed the HHIP species gap.
+
+  THREE - THE ACROMELIC BAND. HETEROZYGOUS LOSS LENGTHENS, BIALLELIC LOSS DWARFS - AND THIS IS R281'S SHAPE
+  AGAIN. Before promoting any of these I checked their own disease literature, and the module is not
+  monotone. LTBP2 biallelic loss is WEILL-MARCHESANI SYNDROME - severe short stature, brachydactyly, joint
+  stiffness - alongside ADAMTS10 and ADAMTS17, whose pLoF betas here are -8.10 and negative. PLOD2 biallelic
+  loss is BRUCK SYNDROME - contractures and bone fragility. FBN1 monoallelic missense is ACROMICRIC
+  DYSPLASIA, short, which CLAUDE.md already records from gne2026.
+  SO THE MICROFIBRIL/ACROMELIC MODULE HAS AN INTERIOR OPTIMUM: one lost copy is taller, no copies is a
+  short-stature dysplasia. That is structurally identical to round 281's canonical-Wnt band, where mild
+  chronic reduction lengthens and total ligand blockade fuses the plate. It is the third axis in this file
+  with a peak that is not at wild type. It also means NONE of these is a clean inhibition target - the
+  therapeutic window is between 50% and 100% of normal function, which is a dose problem no existing agent
+  is titrated for.
+
+  FOUR - THE DRUGGABILITY BASE RATE SURVIVES CONTACT WITH A PROPERLY SIGNED GENE SET. Of the 39 genes whose
+  loss makes humans taller, FIVE have any drug pointing the right way: TGFB3, ABCB1, PDE5A, LOXL2, PDE3B.
+  The ten largest effects - CHD8 +10.20, LCORL +8.85, FBN1 +8.82, TET1 +8.32, AMD1 +7.18, SCMH1 +6.65,
+  HMG20B +6.05, ZFAT +4.02, ZNF518A +3.90, SAMD4A +3.67 - have NOTHING. Round 298 predicted this from the
+  atlas's own ontology; it reproduces on an externally-defined, human-derived, signed gene set. The shape of
+  the problem is confirmed, not an artefact of which genes the atlas happened to like.
+
+  FIVE - WHAT DIED THIS ROUND, TESTED LOCALLY BEFORE BEING PROPOSED.
+  ✗ PDE5A. The most accessible result on paper: +1.42 cm and a shelf of cheap generics - sildenafil,
+  tadalafil, vardenafil, avanafil, udenafil. IT IS ABSENT FROM THE HUMAN GROWTH PLATE, 0/30 probe-donor
+  cells in the clean donor and 2/30 in donor 2, independently reproducing round 298's finding from a
+  different question. Whatever carries this association, it is not local cGMP degradation in cartilage.
+  ✗ LOSARTAN AS A LOCAL AGENT. AGTR1, its receptor, is 0/10 in the clean donor and 1/10 in donor 2, and is
+  not detected in the perichondrium either - the one compartment where the TGF-beta axis actually lives.
+  The compound is not dead (its TGF-beta effect need not be AT1R-mediated in this tissue, and the missing
+  wild-type femur measurement from chen2015 is still the cheapest experiment in the file), but the simple
+  local-receptor story is refuted.
+  ⚠ LOXL2 RUNS BOTH WAYS. Genetics say inhibit: +1.40 cm, P = 2.2e-09, and the gene is one of the most
+  strongly expressed in the whole human growth-plate panel - 34,135 in the proliferative zone, 33,037
+  prehypertrophic, 27,340 hypertrophic, against COL2A1's 92,848. PLOD2 sits beside it at 41,533 with +1.34 cm
+  and PLOD1 at +1.03 cm, so COLLAGEN CROSS-LINKING IS A THREE-GENE CONVERGENCE, all pointing the same way,
+  and an oral phase-2 inhibitor exists (LENUMLOSTAT/PXS-5505; simtuzumab is the failed antibody). AGAINST IT:
+  mouse Loxl2 deletion TRIGGERS temporomandibular osteoarthritis and overexpression PROTECTS cartilage
+  (2025-2026 primary reports), and biallelic PLOD2 loss is Bruck syndrome. Genuinely two-sided; recorded as
+  the round's most interesting unresolved lead rather than promoted.
+  ⚠ PDE3B CHALLENGES A SETTLED ROW, WHICH IS THE ONLY THING THAT LICENSES REOPENING ONE. CLAUDE.md settles
+  "cilostazol is the same node as vosoritide; PDE3 is not the cartilage bridge (hirota2022)". PDE3B pLoF is
+  +1.22 cm at P = 5.1e-13 across 1,761 heterozygotes - the best-powered PDE result here by a wide margin,
+  and new primary data, which is the stated bar. But PDE3B is 1/15 in the clean donor (one prehypertrophic
+  detection at 794), so a systemic or metabolic route is at least as likely as a cartilage one. Not
+  reopened; flagged with its number so the next round argues against evidence rather than memory.
+
+  SIX - THE CONTRAINDICATION SCREEN, RUN FOR THE FIRST TIME. Ninety-six genes shorten humans when lost, and
+  approved inhibitors exist for three of them. MTOR -3.65 cm: sirolimus-class rapalogs and ridaforolimus.
+  IGF1R -5.01 cm: teprotumumab, masoprocol. DDR2 -6.09 cm: regorafenib. None is in this stack, and the list
+  is short precisely because the shortening genes are as undrugged as the lengthening ones. The screen is
+  cheap, it is now reproducible, and it should be re-run against the subject's actual medication list -
+  round 297 raised the same worry about NSAIDs from the opposite direction and it has never been closed.
+
+  SEVEN - THE THREE BIGGEST LEVERS IN THIS ROUND SHARE ONE FAILURE ORGAN, AND IT IS NOT A COINCIDENCE.
+  FBN1 (+8.82 cm) is Marfan - aortic root dilatation. TGFB3 (+7.68 cm) is Loeys-Dietz - aggressive aortopathy.
+  NPR3 (+2.35 cm) carries progressive aortic root dilatation in two of boudin2018's four biallelic
+  individuals, and aubdool2025's NPR-C-null mouse has a dilated ascending aorta at baseline described as
+  mirroring Marfan. THREE INDEPENDENT LEVERS, THREE AORTAS. And the mechanism converges: FBN1 loss releases
+  sequestered TGF-beta, and NPR-C's protective Gi signal works by DOWNREGULATING Tgf-beta1 and Smad2, so
+  losing NPR-C also raises aortic TGF-beta. THE AORTA AND THE GROWTH PLATE ARE READING THE SAME TGF-BETA DIAL
+  IN OPPOSITE DIRECTIONS - less TGF-beta lengthens bone at the perichondrium and weakens the aortic wall.
+  This is not a list of side effects; it is one shared mechanism, and it predicts that any agent which works
+  on the round's largest axis will carry it. Risk is explicitly deprioritised by the operator and this is
+  recorded as MECHANISM, not as a recommendation: it says the aortic endpoint and the bone endpoint must be
+  measured in the same animals, which the graph already demanded for NPR3 and nobody has ever paired.
+
+  EIGHT - USEFUL RELIEF ON A STANDING WORRY. FGF2 pLoF is -4.78 cm, which reads at first as a cost of the
+  pan-FGFR arm. But FGF2 is 0/10 in the clean donor and 0/10 in donor 2 - not detected in human growth plate
+  at all. ERF, at -9.58 cm, is likewise 0/10. Both associations are real and neither is obviously local.
+human_evidence: direct
+human_evidence_note: >-
+  The effect sizes are human, from 1.45M exomes with discovery and replication, reported in centimetres by
+  the authors. The localisation is human, from GSE9160, the only zone-resolved transcriptome of a human
+  growth plate, read against each array's preregistered detection threshold with zonal ordering taken from
+  the clean donor only. The disease phenotypes used to establish the acromelic band are human clinical
+  genetics. What is NOT human: no agent named here has been given to a person for height, and no compound
+  in this round has a bone-length endpoint in any species.
+species_basis:
+- human
+translation_risk: high
+translation_risk_reason: >-
+  CORR-299 governs the whole round. Every effect size is germline heterozygous loss from conception, and the
+  valid question is whether the gene is still doing work in an OPEN plate - a fact to look up per gene, not
+  an inference. This is a TARGET list, not a prescription. Beyond that: expression is not function; absence
+  on this platform is weak evidence of absence, since it missed NPPC by two orders of magnitude while
+  detecting NPR2 and NPR3; and mechanism-of-action direction was assigned by keyword match against Open
+  Targets strings, which is triage and not a reading of a drug label. The acromelic band means several of
+  the largest effects here have therapeutic windows narrower than any available agent can target.
+confidence: B
+confidence_reason: >-
+  The extraction is arithmetic on a deposited supplementary table and is reproducible. The NPR3/NPR2
+  double result and the TGF-beta ligand result are the strongest claims and rest on very large human
+  samples with internal controls. The localisation claims are threshold reads of n=2 human donors, one of
+  whom had a failed dissection, and are graded lower. The two-sided leads - LOXL2 and PDE3B - are recorded
+  as unresolved on purpose.
+claim_grades:
+- claim: >-
+    Round 300 gave NPR3 its first human validation.
+  grade: X
+  basis: >-
+    NO - CORR-324, AND THIS IS A CORRECTION OF THIS ROUND'S OWN DRAFT. I read CLAUDE.md's "never given to a
+    human, no bone data" - which is about the MOLECULE - as a statement about the GENE, and drafted NPR3 as
+    newly validated. The atlas has held human NPR3 genetics since round 140 in
+    npr3_human_genetics_dose_response: lauffer2022's single family gives a monotonic dosage series (0 alleles
+    about 0 SDS, 1 allele about +1 SDS, 2 alleles +3.93 SDS) and boudin2018 adds four obligate carriers at
+    +0.1, +0.71, +1.4 and +1.46 SDS. CORR-313 says grep the graph before reopening anything this file appears
+    silent on, because the ledger writes closures and loses positives. The rule caught this one only because
+    I ran it before committing.
+  species: human
+- claim: >-
+    Population-scale exomes recalibrate the NPR3 effect DOWNWARD by about threefold, and supply an internal
+    control the family data could not.
+  grade: A
+  basis: >-
+    kosmicki2026 Supplementary Table 6, 1.45M exomes with replication and unbiased ascertainment - which is
+    exactly what CORR-295 prescribes over clinically-ascertained families. NPR3 pLoF +2.35 cm across 224
+    heterozygotes (P = 4.5e-07); pLoF + deleterious missense +1.91 cm at P = 1.4e-61. The prior evidence, six
+    carriers across two families, supported roughly one SD per allele, about 7 cm. The population estimate is
+    1.9 to 2.4 cm. The atlas's enthusiasm for this arm was built on the ascertained number and was inflated
+    about threefold - CORR-295 biting a target the file likes. AND THE NEW STRUCTURE IS THE INTERNAL CONTROL:
+    NPR2, the receptor arm of the same axis, runs the opposite way in the same dataset at -2.75 cm,
+    P = 5.9e-96 (pure pLoF -6.98 cm, P = 2.2e-42). One ascertainment, one axis, two arms, opposite signs. No
+    prior evidence in this file had that form.
+  species: human
+  source_ref: kosmicki2026
+- claim: >-
+    AP-811 is the NPR3 molecule this stack should pursue.
+  grade: X
+  basis: >-
+    NO, AND THE REASON IS ALREADY IN THE GRAPH. AP-811 is a selective NPR3 ANTAGONIST, Ki 0.45-0.48 nM,
+    >20,000-fold selective over NPR1 (vendor and secondary listings, value_unverified against the primary
+    paper). The node npr3_is_bifunctional_and_the_spec_was_backwards establishes from aubdool2025 that NPR-C
+    is a clearance sink in cartilage and a Gi-COUPLED PROTECTIVE receptor in the aorta, and that M372049 -
+    this atlas's own round-145 pick - is the tool used to ABOLISH CNP aortoprotection in human aortic smooth
+    muscle cells. AP-811 is in the same functional class and inherits the same objection. The required
+    profile is an OCCUPANT THAT SIGNALS, not a blocker: cANF(4-23), and nishizawa2017's compound 23, which is
+    built on that scaffold and whose own paper attributes its final substitutions to increased NPR3 AGONIST
+    activity. The 20,000-fold figure is the wrong number twice - the efficacy counter-screen is NPR2, and the
+    safety axis is blocker-versus-occupant. Open Targets returns carperitide as NPR3's only clinical entity,
+    an agonist, and on this analysis that class is closer to right than the antagonists are.
+  species: not_applicable
+- claim: >-
+    The perichondrial TGF-beta restraint axis is a human growth-plate mechanism, not a mouse one.
+  grade: B
+  basis: >-
+    Three independent human genes in one axis, all loss-of-function lengthening: TGFB3 +7.68 cm P = 4.0e-17,
+    FBN1 +8.82 cm P = 4.6e-27 (pLoF+delmissense +9.13 cm, P = 5.5e-44), LTBP2 +2.36 cm P = 3.1e-16. TGFB3
+    is the LIGAND at the centre of sedes2022's proposed mechanism, so this is not a scaffold correlation.
+    And in GSE9160 the apparatus is perichondrium-weighted in human tissue: LTBP1 maximal in perichondrium
+    at 8208, LTBP2 maximal in perichondrium at 2903, FBN1 detected ONLY in perichondrium in the clean donor
+    at 1607, TGFB3 1582 and SMAD3 2050 there. sedes2022 showed in mouse that deleting Fbn1 from chondrocytes
+    gives no overgrowth while deleting it from limb mesenchyme does; the human tissue puts the machinery in
+    the same compartment. Graded B not A because the localisation is n=2 donors on one platform.
+  species: human
+  source_ref: kosmicki2026
+- claim: >-
+    The microfibril/acromelic module can be treated as a monotone inhibition target.
+  grade: X
+  basis: >-
+    NO - HETEROZYGOUS LOSS LENGTHENS AND BIALLELIC LOSS DWARFS. LTBP2 het pLoF is +2.36 cm here, while
+    biallelic LTBP2 loss is Weill-Marchesani syndrome, whose defining feature is severe short stature with
+    brachydactyly and joint stiffness; ADAMTS10 and ADAMTS17, the other Weill-Marchesani genes, carry pLoF
+    betas of -8.10 and negative in this same table. PLOD2 het is +1.34 cm; biallelic PLOD2 loss is Bruck
+    syndrome. FBN1 het pLoF is +8.82 cm; FBN1 monoallelic missense is acromicric dysplasia, short
+    (gne2026, already in the atlas). The module therefore has an INTERIOR OPTIMUM between 50% and 100% of
+    normal function - the same shape round 281 found in canonical Wnt, and the third such band in this file.
+    No available agent is titrated for a window like that, which is a stronger objection to these targets
+    than any pleiotropy argument.
+  species: human
+- claim: >-
+    PDE5 inhibitors are a cheap accessible route to the growth plate's cGMP pool.
+  grade: X
+  basis: >-
+    NO. PDE5A's human height signal is real but weak (+1.42 cm, P = 9.0e-05) and its target is ABSENT from
+    the human growth plate - 0/30 probe-donor cells in the clean donor, 2/30 in donor 2. This independently
+    reproduces round 298's finding, which reached the same array from a different question (the sGC route).
+    Sildenafil, tadalafil, vardenafil, avanafil and udenafil are all approved, oral and cheap, and none of
+    them can act on cartilage cGMP that this tissue does not degrade by PDE5. The effector kinases PRKG1 and
+    PRKG2 ARE present and hypertrophy-enriched, so the pool exists - it is NPR-B-derived and particulate,
+    exactly as the vosoritide axis assumes.
+  species: human
+- claim: >-
+    Collagen cross-linking is a physical restraint on longitudinal growth and LOXL2 inhibition would
+    release it.
+  grade: D
+  basis: >-
+    GENUINELY TWO-SIDED, RECORDED UNRESOLVED. For: three genes in one enzymatic pathway all lengthen on
+    loss - LOXL2 +1.40 cm P = 2.2e-09, PLOD2 +1.34 cm P = 4.7e-06, PLOD1 +1.03 cm P = 1.3e-04 - and LOXL2
+    and PLOD2 are among the most strongly expressed genes in the entire human growth-plate panel, 34,135 and
+    41,533 in the proliferative zone against COL2A1's 92,848. An oral small-molecule inhibitor is in phase 2
+    (lenumlostat / PXS-5505). Against: mouse Loxl2 deletion triggers temporomandibular osteoarthritis while
+    overexpression protects chondrocytes, so inhibition is cartilage-degenerative in the joint; biallelic
+    PLOD2 loss is Bruck syndrome; and the classic lysyl-oxidase inhibitor beta-aminopropionitrile causes
+    osteolathyrism with exostoses and epiphyseal separation. NO LYSYL-OXIDASE OR LYSYL-HYDROXYLASE INHIBITOR
+    HAS A BONE-LENGTH ENDPOINT IN ANY SPECIES, which is what makes this worth a round rather than a verdict.
+  species: human
+- claim: >-
+    Two thirds of the genes whose loss makes humans taller have no drug, on an externally defined gene set.
+  grade: A
+  basis: >-
+    Of 39 genes with pLoF beta positive at P < 1e-4, only 5 have any agent pointing the right way - TGFB3,
+    ABCB1, PDE5A, LOXL2, PDE3B - and of those, one is absent from the tissue (PDE5A), one is an efflux pump
+    rather than a lever (ABCB1), and one is two-sided (LOXL2). The ten largest effects have nothing at all:
+    CHD8 +10.20, LCORL +8.85, FBN1 +8.82, TET1 +8.32, AMD1 +7.18, SCMH1 +6.65, HMG20B +6.05, ZFAT +4.02,
+    ZNF518A +3.90, SAMD4A +3.67. Round 298 established this base rate from the atlas's own ontology, where
+    it could have been an artefact of the atlas's taste. It reproduces on a gene set defined by human
+    genetics with no input from this file.
+  species: human
+  source_ref: kosmicki2026
+- claim: >-
+    An approved drug in common use is measurably subtracting from this subject's height.
+  grade: E
+  basis: >-
+    NOT ESTABLISHED, BUT THE SCREEN NOW EXISTS AND HAS NEVER BEEN RUN AGAINST HIS ACTUAL MEDICATION LIST.
+    Of 96 genes whose loss shortens humans, three have approved inhibitors: MTOR -3.65 cm (rapalogs,
+    sirolimus-class, ridaforolimus), IGF1R -5.01 cm (teprotumumab, masoprocol), DDR2 -6.09 cm (regorafenib).
+    None is in this stack. The list is short because shortening genes are as undrugged as lengthening ones,
+    not because the question is closed - round 297 raised the same concern from the other direction about
+    NSAIDs and it remains open. Reproducible via atlas/tools/round300_signed_target_drug_sweep.py.
+  species: human
+- claim: >-
+    The pan-FGFR arm is costing height through FGF2.
+  grade: E
+  basis: >-
+    PROBABLY NOT, AND THIS IS RELIEF ON A WORRY THIS ROUND RAISED ITSELF. FGF2 pLoF is -4.78 cm (P = 3.2e-10)
+    and erdafitinib blocks FGFR1-4, so the association reads as a cost. But FGF2 is not detected in the human
+    growth plate at all - 0/10 probe-donor cells in the clean donor and 0/10 in donor 2. ERF, the ERK-regulated
+    ETS repressor at -9.58 cm, is likewise 0/10. Both human associations are real; neither is demonstrably
+    local, and a non-local mechanism is not obviously reachable by a drug acting on cartilage. Weak evidence
+    of absence on a platform with known insensitivity, so this is a downgrade of the worry, not a dismissal.
+  species: human
+key_refs:
+- ref_id: kosmicki2026
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    Supplementary Table 6 is the instrument of this round - burden effects in CENTIMETRES with standard
+    errors for all 207 genome-wide-significant height genes across 7,185 gene x variant-class x
+    allele-frequency rows, which is what turns rounds 297-298's undirected enumeration into a screen. It
+    supplies NPR3 +1.91 cm at P=1.4e-61 with NPR2 -2.75 cm at P=5.9e-96 as the internal control, TGFB3
+    +7.68 cm, LTBP2 +2.36 cm, and the 39-versus-96 split of lengthening against shortening genes
+- ref_id: gse9160
+  year: 2007
+  type: dataset
+  one_line_finding: >-
+    The triage instrument again, and it killed two candidates before either was proposed - PDE5A 0/30 in
+    the clean donor despite a shelf of approved generics, and AGTR1 0/10 including the perichondrium, which
+    refutes the simple local-receptor story for losartan. It also supplied the round's best positive: the
+    latent TGF-beta apparatus is PERICHONDRIUM-weighted in human tissue, with LTBP1 and LTBP2 maximal there
+    and FBN1 detected there and nowhere else in the clean donor
+- ref_id: sedes2022
+  year: 2022
+  type: primary
+  one_line_finding: >-
+    The mouse mechanism this round corroborates in human tissue - Fbn1 loss in limb mesenchyme lengthens
+    bones ~7% postnatally while deletion from CHONDROCYTES does nothing, placing the control in the outer
+    perichondrium; TGFB3's +7.68 cm now supplies the human genetics for the ligand at the centre of it
+- ref_id: gne2026
+  year: 2026
+  type: primary
+  one_line_finding: >-
+    The counterweight that generalises into the acromelic band - monoallelic FBN1 missense gives acromicric
+    dysplasia and SHORT stature, which alongside LTBP2/Weill-Marchesani and PLOD2/Bruck establishes that this
+    module has an interior optimum rather than a monotone direction
+- ref_id: hirota2022
+  year: 2022
+  type: primary
+  one_line_finding: >-
+    The basis of CLAUDE.md's SETTLED row that PDE3 is not the cartilage bridge, now facing PDE3B pLoF
+    +1.22 cm at P=5.1e-13 across 1,761 heterozygotes - flagged rather than reopened, because PDE3B is 1/15
+    in the human growth plate and a systemic route is at least as likely
+open_questions:
+- g_l3_what_is_ap811_selectivity_over_npr2
+- g_l5_does_lysyl_oxidase_inhibition_lengthen_bone_in_any_species
+- g_l12_what_does_losartan_do_to_femur_length_in_a_wild_type_mouse
+contradicts: >-
+  Nothing in the atlas is overturned. Three things are sharpened. Round 298's "no molecule exists is the base
+  rate" is confirmed on an independent gene set. Round 287's perichondrial TGF-beta axis gains its ligand and
+  its human compartment. And CLAUDE.md's SETTLED row on PDE3 - "cilostazol is the same node as vosoritide,
+  PDE3 is not the cartilage bridge" - now faces PDE3B pLoF +1.22 cm at P = 5.1e-13 across 1,761
+  heterozygotes. That is new primary data, which is the stated bar for reopening, but PDE3B is 1/15 in the
+  human growth plate so a systemic route is at least as likely. The row is NOT reopened here; it is flagged
+  with its number so the next argument is made against evidence rather than memory.
+last_verified: '2026-08-12'

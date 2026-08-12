@@ -1,4 +1,98 @@
 gaps:
+- gap_id: g_l3_what_is_ap811_selectivity_over_npr2
+  question: Which NPR3 ligand both blocks CNP CLEARANCE and PRESERVES NPR-C's Gi-coupled signalling, and
+    what is its selectivity over NPR2? Every candidate is characterised on the wrong two axes.
+  type: quantitative_gap
+  layer: L3
+  why_it_matters: Round 300 gave the atlas's own derived compound - a selective NPR3 clearance blocker - human
+    genetic validation at +1.91 cm and P=1.4e-61, with NPR2 running the opposite way at P=5.9e-96 in the same
+    1.45M people. That pair of numbers is the whole case AND the whole risk. An NPR3 antagonist that also
+    blocked NPR-B would cancel its own effect and simultaneously blunt the vosoritide arm already in this
+    stack. NPR1 selectivity does not bear on this - NPR1 is the ANP/BNP receptor and the cartilage receptor
+    is NPR2. One number gates whether the atlas can nominate a real molecule for a target it has been
+    deriving since round 144.
+  what_is_known: AP-811 is a selective NPR3 (ANP clearance receptor) antagonist with Ki reported at 0.45-0.48
+    nM and >20,000-fold selectivity over NPR1, per vendor and secondary listings; these values are
+    value_unverified against the primary pharmacology paper - but selectivity over NPR1 is the wrong
+    comparison, since NPR1 is the ANP/BNP receptor and cartilage signals through NPR2. Open Targets scores NPR3 as Advanced Clinical,
+    High-Quality Pocket, Small Molecule Binder. Other chemical matter on the same target exists - nishizawa2017
+    compound 23 and M372049 - and CLAUDE.md has carried compound 23's NPR2 selectivity as unread for rounds.
+    Human genetics now supply direction and magnitude for the target itself.
+  what_is_missing: TWO numbers, on two different axes, and no candidate has both. First, a measured
+    selectivity ratio against NPR2/NPR-B for any of AP-811, compound 23 or M372049 - an antagonist that also
+    blocked NPR-B would cancel its own effect and the stack's vosoritide arm. Second, and established by
+    npr3_is_bifunctional_and_the_spec_was_backwards rather than by this round, whether the ligand BLOCKS or
+    merely OCCUPIES - aubdool2025 shows NPR-C is a Gi-coupled aortoprotective receptor and M372049 is the tool
+    used to abolish that protection, so AP-811, being an antagonist, inherits the same objection. No NPR3
+    ligand of any class has a bone endpoint in any species.
+  discriminating_experiment: A two-axis counter-screen that nobody has run on any of these compounds.
+    AXIS ONE, efficacy - NPR2-transfected cells stimulated with CNP, cGMP accumulation read with and without
+    the candidate; the molecule must leave CNP-stimulated cGMP intact. AXIS TWO, the one aubdool2025 makes
+    decisive - NPR-C-expressing cells assayed for Gi coupling (forskolin-stimulated cAMP suppression) with
+    the candidate alone; the molecule must PRESERVE or reproduce that signal rather than block it, which is
+    what separates an occupant from an antagonist. cANF(4-23) and nishizawa2017 compound 23 are predicted to
+    pass axis two and AP-811 and M372049 to fail it. Whichever passes both then needs the paired experiment
+    the graph already specifies - a bone-length endpoint AND an aortic endpoint in the same animals.
+  status: open
+- gap_id: g_l5_does_lysyl_oxidase_inhibition_lengthen_bone_in_any_species
+  question: Does inhibiting lysyl oxidase or lysyl hydroxylase lengthen a bone in any species? No LOX, LOXL or
+    PLOD inhibitor has ever been given with a bone-LENGTH endpoint.
+  type: known_unknown
+  layer: L5
+  why_it_matters: Three genes in one enzymatic pathway lengthen humans on loss - LOXL2 +1.40 cm P=2.2e-09,
+    PLOD2 +1.34 cm, PLOD1 +1.03 cm - and LOXL2 and PLOD2 are among the most strongly expressed genes in the
+    entire human growth-plate panel (34,135 and 41,533 in the proliferative zone against COL2A1's 92,848). If
+    collagen cross-linking is a physical restraint on hypertrophic expansion, this bears directly on h_term,
+    the largest term in the height identity and the one round 296 concluded had no upward-pointing agent -
+    every marketed tool on the volume machinery is an inhibitor of swelling. An oral phase-2 LOXL2 inhibitor
+    already exists.
+  what_is_known: Human burden genetics give three concordant positive effects across the pathway. Human tissue
+    gives very high expression of LOXL2 and PLOD2 in the proliferative and hypertrophic zones. Lenumlostat
+    (PXS-5505) is an oral small-molecule LOXL2 inhibitor in phase 2; simtuzumab is a failed antibody against
+    the same target. Against the direction - mouse Loxl2 deletion triggers temporomandibular osteoarthritis
+    while overexpression protects chondrocytes from apoptosis; biallelic PLOD2 loss is Bruck syndrome, with
+    contractures and bone fragility; and beta-aminopropionitrile, the classic lysyl-oxidase inhibitor, causes
+    osteolathyrism with exostoses and epiphyseal separation.
+  what_is_missing: A bone-length measurement under any lysyl-oxidase or lysyl-hydroxylase inhibitor in any
+    species. The existing literature measures cross-link chemistry, bone mass, tissue stiffness, aortic
+    pathology and cartilage degeneration - never longitudinal growth. The osteolathyrism literature describes
+    deformity, not length.
+  discriminating_experiment: Give lenumlostat, or beta-aminopropionitrile at a dose below the lathyrogenic
+    threshold, to NORMAL growing mice, and measure terminal femur and tibia length at skeletal maturity with
+    calipers plus zone decomposition. The negative control is the joint - score articular cartilage for
+    degeneration in the same animals, since the mouse deletion data predict harm there. A length gain with
+    intact articular cartilage promotes the pathway; a length gain with cartilage destruction makes it a
+    trade rather than a lever; no length change closes it.
+  status: open
+- gap_id: g_l12_what_does_losartan_do_to_femur_length_in_a_wild_type_mouse
+  question: What happens to femur length when a WILD-TYPE growing mouse is given losartan? chen2015 dosed
+    exactly these animals on exactly this axis, measured growth-plate zone lengths and bone mass, and never
+    put a caliper on the bone.
+  type: known_unknown
+  layer: L12
+  why_it_matters: The perichondrial TGF-beta restraint axis now has three independent human genes pointing the
+    same way - FBN1 +8.82 cm, TGFB3 +7.68 cm, LTBP2 +2.36 cm - and TGFB3 is the LIGAND at the centre of the
+    mechanism, so the axis is no longer a scaffold correlation. Human tissue puts the whole latent-TGF-beta
+    apparatus in the perichondrium. Losartan is approved, oral, cheap and carries decades of paediatric safety
+    data from Marfan syndrome. This is the cheapest unrun experiment in the file - the animals have already
+    been dosed and the measurement simply not taken.
+  what_is_known: sedes2022 established in mouse that Fbn1 loss in limb mesenchyme lengthens bones ~7%
+    postnatally, that deleting Fbn1 from chondrocytes does nothing, and that recombinant TGF-beta1 add-back
+    normalises the overgrowth - the causal step. chen2015 gave losartan to wild-type mice on this axis and
+    measured zone lengths and bone mass. The human PHN trial in 608 children prespecified height and
+    proportions and was null, but against atenolol rather than placebo. Round 300 found AGTR1, losartan's
+    receptor, absent from the human growth plate - 0/10 in the clean donor, 1/10 in donor 2, and not detected
+    in the perichondrium either.
+  what_is_missing: Terminal long-bone length under losartan in a normal animal. Also missing - whether
+    losartan's TGF-beta effect in this tissue is AT1R-mediated at all, which the absent receptor calls into
+    question, and whether a direct TGF-beta neutralising agent (fresolimumab is phase 2) would do what
+    losartan cannot.
+  discriminating_experiment: Losartan in drinking water to wild-type mice through the growth period, terminal
+    femur and tibia length by caliper and microCT at maturity, with perichondrial pSmad2 as the target
+    engagement readout. Run a direct TGF-beta neutralising antibody arm alongside it - if the antibody
+    lengthens and losartan does not, the axis is real and AT1R is the wrong handle, which is exactly what the
+    absent receptor predicts.
+  status: open
 - gap_id: g_l12pharm_001
   question: Does CNP-analogue therapy begun in childhood increase FINAL ADULT HEIGHT in achondroplasia, or does
     it redistribute growth in time by accelerating velocity without changing the endpoint?

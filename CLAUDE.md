@@ -100,6 +100,21 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    confounded by its own **lethal** toxicity. **A null in a toxic arm is a dose result. A class conclusion
    from tool compounds does not survive the real drugs. And grep the graph for the compound name first.**
 
+19. **Reading a statement about a COMPOUND as a statement about the GENE.** CORR-324 — I drafted R300 with
+   "NPR3 has no human evidence," straight off this file's own line *"never given to a human, no bone data,"*
+   which is about the molecule. The atlas has held human NPR3 genetics since **R140**
+   (`npr3_human_genetics_dose_response`). CORR-313's grep-the-graph rule caught it only because I ran it
+   **before committing** — run it before DRAFTING. Second instance the same round: `LB-100` looked like a new
+   find from a web search and sits in **18 atlas files**, already dead on toxicity (`fenton2023`).
+
+20. **Proposing a target from a het effect without reading its BIALLELIC disease.** CORR-325 — the
+   microfibril/acromelic module is **not monotone**. Het pLoF: FBN1 **+8.82**, LTBP2 **+2.36**, PLOD2
+   **+1.34**. Biallelic: FBN1 missense → **acromicric dysplasia (short)**, LTBP2 → **Weill-Marchesani
+   (severe short stature)**, PLOD2 → **Bruck**. **Interior optimum between 50% and 100% of normal function**
+   — R281's canonical-Wnt shape, third axis with a peak that is not at wild type. **No agent is titrated for
+   a window like that**, which is a harder objection than pleiotropy. Always ask: what does losing BOTH
+   copies do?
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -145,10 +160,23 @@ and do not collapse to knees-only. Both compartments are live for him.
   the EMA report, axial null outright in monkeys, and in rats the axial dose that works also causes scoliosis
   + kyphosis + fractures — R207). **FGFR3 arm REACHES THE SPINE** (dabogratinib, above). Since the residual at
   BA 14.5+ is trunk-dominant (R274), **the CNP arm is aimed at the spent compartment and the FGFR3 arm is not.**
-- **NPR3-selective antagonist** = the compound the atlas *derives* from its own spec (blocks clearance instead
-  of adding ligand; ~1.3–1.5 kDa 11-mer partitions far better than vosoritide's 4.1 kDa). Chemical matter
-  exists (`nishizawa2017` compound 23, M372049, AP-811). **Never given to a human, no bone data.** The
-  decisive unread number is compound 23's selectivity over **NPR2**. R220, R144.
+- **NPR3 LIGAND — and read all four lines before proposing a molecule (R300 rewrote this entry).**
+  The atlas *derives* this from its own spec (block clearance instead of adding ligand; ~1.3–1.5 kDa
+  partitions far better than vosoritide's 4.1 kDa). **Never given to a human, no bone data in any species.**
+  ✗ **"ANTAGONIST" IS THE WRONG WORD AND WAS THE WRONG SPEC.** `npr3_is_bifunctional_and_the_spec_was_backwards`
+  (aubdool2025): NPR-C is a clearance sink in cartilage **and a Gi-coupled aortoPROTECTIVE receptor**, and
+  **M372049 is the tool reagent used to ABOLISH that protection.** Wanted profile = **an occupant that
+  SIGNALS** — cANF(4-23), `nishizawa2017` compound 23 (built on that scaffold, its own paper credits
+  increased NPR3 **agonist** activity). **AP-811 is an ANTAGONIST (Ki 0.45–0.48 nM, >20,000× over NPR1) and
+  therefore the WRONG CLASS — its NPR1 number is the wrong comparison twice over.** Efficacy counter-screen
+  = **NPR2**; safety axis = **blocker vs occupant**. Neither run for any candidate.
+  ✗ **THE EFFECT SIZE WAS INFLATED ~3× AND R300 CORRECTED IT DOWNWARD.** The old ~1 SD/allele (≈7 cm) came
+  from **6 clinically-ascertained carriers** (`lauffer2022` + `boudin2018`). `kosmicki2026`, 1.45M exomes,
+  unbiased: **pLoF +2.35 cm (224 hets, P=4.5e-07); pLoF+delmis +1.91 cm, P=1.4e-61.** CORR-295 biting a
+  target this file likes. ✓ New and clean: **NPR2 runs the OTHER way in the same dataset, −2.75 cm
+  P=5.9e-96** — one ascertainment, one axis, two arms, opposite signs.
+  ⚠ **Aortic root dilatation in 2/4 biallelic humans; NPR-C-null mouse aorta is Marfan-like at baseline.**
+  R220, R144, R300.
 
 **LIVE:**
 - **Sacubitril** — approved, oral, dose-dependent skeletal overgrowth in WT mice, abolished by cartilage
@@ -638,6 +666,55 @@ searching repairs).
   empagliflozin, glucosamine, HCTZ/thiazide, liraglutide, nifedipine, pentoxifylline, propranolol,
   semaglutide, simvastatin, spironolactone, strontium, vardenafil, verapamil, vitamin K, nitrate…
   **A zero is a statement about THIS FILE, not about efficacy.** None has a length endpoint here.
+
+## EVERY HEIGHT GENE NOW CARRIES A SIGNED NUMBER (R300) — `atlas/data/round300/s6_burden_effects.json`
+
+`kosmicki2026` **Supplementary Table 6**: burden effect in **CENTIMETRES** with SE and P for all **207**
+genes × 7 variant classes × 5 AAF bins = **7,185 rows**. This is what turns R297/R298's undirected
+enumeration into a screen with a rule, and it is the fix for CORR-295. **Take the most significant pure-pLoF
+row** — the closest genetic analogue of pharmacological loss. **β>0 → INHIBIT. β<0 → the gene is load-bearing,
+and any approved inhibitor is a CONTRAINDICATION.**
+**135 genes have pLoF P<1e-4. THIRTY-NINE lengthen on loss. NINETY-SIX shorten.**
+Run: `atlas/tools/round300_signed_target_drug_sweep.py` → `signed_target_drug_table.tsv`.
+
+- ⭐ **THE PERICHONDRIAL TGF-β AXIS GETS ITS LIGAND, AND ITS SPECIES GAP CLOSES.** **TGFB3 pLoF +7.68 cm,
+  P=4.0e-17** — the LIGAND at the centre of sedes2022's mechanism, not a scaffold. With **FBN1 +8.82** and
+  **LTBP2 +2.36** (LTBP2 had *zero* prior atlas coverage) that is three human genes in one axis.
+  **And GSE9160 puts the apparatus in the PERICHONDRIUM in human tissue** — LTBP1 max there (8208), LTBP2
+  max there (2903), FBN1's *only* clean-donor detection is there (1607), TGFB3 1582, SMAD3 2050. Same two
+  children that closed the HHIP gap in R292.
+- ⚠ **THE AORTIC CONVERGENCE — one mechanism, not three side effects.** FBN1 = Marfan, TGFB3 = Loeys-Dietz,
+  NPR3 = aortic root dilatation in 2/4 biallelic humans. NPR-C's protective Gi signal works by
+  **downregulating Tgf-β1/Smad2**, and FBN1 loss releases sequestered TGF-β. **The aorta and the growth plate
+  read the SAME TGF-β dial in opposite directions.** Risk is deprioritised — this is recorded as MECHANISM:
+  it means **the aortic and bone endpoints must be measured in the same animals**, never yet paired.
+- ✗ **PDE5A IS DEAD AS A LOCAL LEVER** despite being the most accessible thing in the table (+1.42 cm and
+  every generic: sildenafil, tadalafil, vardenafil, avanafil, udenafil). **0/30 in the clean donor**,
+  independently reproducing R298 from a different question.
+- ✗ **LOSARTAN'S LOCAL STORY IS REFUTED — AGTR1 is 0/10 in the clean donor and absent from the
+  PERICHONDRIUM**, the one compartment where the axis lives. The compound isn't dead (its TGF-β effect need
+  not be AT1R-mediated) and **chen2015's missing femur caliper is still the cheapest experiment in the file.**
+- ⚠ **COLLAGEN CROSS-LINKING — the round's best unresolved lead.** **LOXL2 +1.40 (P=2.2e-09), PLOD2 +1.34,
+  PLOD1 +1.03** — one pathway, three genes, one direction — and **LOXL2 (34,135 PZ) and PLOD2 (41,533 PZ) are
+  among the highest-expressed genes in the whole human growth-plate panel** (COL2A1 = 92,848). Oral phase-2
+  inhibitor exists: **LENUMLOSTAT / PXS-5505**. ✗ Against: mouse *Loxl2* deletion **triggers TMJ OA** and
+  overexpression protects; biallelic PLOD2 = Bruck; BAPN = osteolathyrism with exostoses. **No LOX/PLOD
+  inhibitor has a bone-LENGTH endpoint in any species.** Bears on **h_term**, the largest term.
+- ⚠ **PDE3B +1.22 cm at P=5.1e-13 across 1,761 hets** challenges the SETTLED "PDE3 is not the cartilage
+  bridge." New primary data = the stated bar. **NOT reopened** — PDE3B is 1/15 in the plate, so systemic is as
+  likely — but the next argument must be made against this number, not from memory.
+- ✓ **RELIEF: FGF2 (−4.78 cm) and ERF (−9.58 cm) are BOTH 0/10 in the human plate.** Real associations,
+  not demonstrably local — downgrades the pan-FGFR worry rather than dismissing it.
+- **FIRST CONTRAINDICATION SCREEN EVER RUN.** Of 96 shortening genes, three have approved inhibitors:
+  **MTOR −3.65 (rapalogs/sirolimus), IGF1R −5.01 (teprotumumab), DDR2 −6.09 (regorafenib).** None in this
+  stack. **Re-run it against the subject's actual medication list** — R297's NSAID worry is still open.
+- **BASE RATE CONFIRMED ON AN EXTERNAL GENE SET: only 5 of the 39 lengthening genes have any matching agent**
+  (TGFB3, ABCB1, PDE5A, LOXL2, PDE3B) — and one is absent from the tissue, one is an efflux pump, one is
+  two-sided. **The ten largest have NOTHING**: CHD8 +10.20, LCORL +8.85, FBN1 +8.82, TET1 +8.32, **AMD1
+  +7.18**, **SCMH1 +6.65**, **HMG20B +6.05**, ZFAT +4.02, **ZNF518A +3.90**, **SAMD4A +3.67**. Bolded ones had
+  zero atlas coverage before R300; so did **CHAD +2.63** (secreted, 5/5 both donors), **B4GALNT3 +1.46**,
+  **PTPN9 +3.56**, **CNNM3 +2.41**, **ABCB1 +1.90** (perichondrial efflux — would modify every stack agent),
+  **POR +1.08** (obligate P450 donor incl. aromatase — the AI arm's mechanism as a human number).
 
 ## THE DRUGGABILITY BASE RATE (R298) — `atlas/tools/round298_druggability_sweep.py`
 
