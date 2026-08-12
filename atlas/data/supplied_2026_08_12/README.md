@@ -32,3 +32,34 @@ Fetched here rather than re-requested. All direct-download, no captcha.
 ## Correction to my own record
 I described GSE9160 as "1997-era". It was submitted 2007, public 2013. Corrected here; the substantive
 caveats (n=2, one dissection failed, donors one F one M) are unchanged.
+
+---
+## Second pass, same day — full-list audit
+
+Every remaining URL from the operator's list was tested rather than assumed.
+
+**Additionally fetched (gitignored, on disk only):**
+- `GSE288028_RAW.tar` — raw postnatal human growth-plate scRNA-seq. Same STUDY as the atlas's
+  `chu2026` (whose supplementary tables are already held), but the RAW MATRICES are new here, and they
+  are what can settle **CORR-296** — the GP1/GP2 sign convention that has blocked rounds 241, 244, 245,
+  246 and forced "direction cannot be assigned" in every round since.
+- `spatial_bone_growth/` (609 MB, cloned) — Visium + Visium HD of growth plates from healthy adolescents
+  aged 12-14 via epiphysiodesis. Postnatal, human, zonally resolved. The strongest available replacement
+  for GSE9160 (n=2, one dissection failed, one donor of each sex).
+- `IMPC_README.md` — field documentation for the statistical-results schema.
+
+**Confirmed reachable, not pulled (low priority):** GSE233188 (fetal), GSE9160 raw CELs (processed
+matrix already vendored and analysed).
+
+**CANNOT REACH — operator action required:**
+1. **kosmicki2026 supplementary Tables 3, 4, 15, 16.** Landing page 200 but returns an HTML shell; the
+   .xlsx attachments sit behind medRxiv's attachment endpoint and `.full.pdf` returns 429.
+   **Table 4 = all 207 gene-based-test genes**, against the 17 the atlas currently holds. Highest-value
+   outstanding item.
+2. **GSE246390 — 404** on the GEO supplementary endpoint (adolescent human GP, mechanical loading).
+   Likely SRA-only; check whether PMC11629350 carries counts as supplementary.
+3. **GSE233970 — 404**, same pattern (human SSC Smart-seq2).
+4. **science.org/doi/10.1126/scitranslmed.adw3590 — 403.** Not urgent; supplementary tables already held
+   as `chu2026`.
+5. **bioRxiv PDFs — 429** (rate-limited, may succeed later), incl. 2025.03.14.642964 and 2025.03.12.642613.
+6. **PRJNA478935 / SRA** — raw SRA, terabyte-scale, fetal. Deliberately skipped.
