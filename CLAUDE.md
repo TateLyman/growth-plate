@@ -536,6 +536,50 @@ zones and mass, never length).
   repair; the stack's lead agent is pan-FGFR1-4. Open risk. R277
 - The 231 unmined length endpoints: `atlas/data/round269/length_endpoints_sweep.tsv`
 
+## h_term / HYPERTROPHIC VOLUME — the largest term in the identity, mapped R295
+
+**~80% of longitudinal growth is hypertrophic chondrocyte volume increase.** Prior nodes (2026-08-08):
+`the_swelling_machinery_has_only_ever_been_switched_off`, `the_volume_set_point_and_where_a_compound_could_act`.
+bush2010 bumetanide = **−35% elongation with hypertrophic cell number UNCHANGED (193 vs 192, p=0.937)** —
+the cleanest isolation of h_term in the file. hall2001: the set-point **re-tunes** (180/280/380 mOsm → same
+645 µm³). loqman2013: DIDS suppresses growth while volume RISES → DIDS does not act via volume.
+Open Targets: **PIEZO1 0.935**, ACAN 0.969, CHST11 0.812, SLC12A2 0.776, STK39 0.741, AQP1 0.717 (controls
+GDF5 0.675, LCORL 0.919).
+
+- ✓ **THE "CONTESTED" SWELLING CLAIM RESOLVES (R295).** cooper2013 (dry mass density 0.183→0.07 pg/fL =
+  swelling) vs bush2008 (osmotically inactive fraction 39.5% PZ vs 47.0% HZ, sensitivity identical = not
+  swelling) **measure different quantities.** Dry mass = macromolecules; Boyle–van't Hoff inactive fraction
+  = non-solvent volume + bound water. **Small osmolytes are heavy on osmotic pressure and negligible on dry
+  mass**, so accumulating them reproduces BOTH. Both right; **the lever class is SMALL OSMOLYTES, not
+  protein.** ✗ Grade E — inference. Gap: `g_l5_what_is_the_intracellular_small_solute_content_of_a_hypertrophic_chondrocyte`
+  (nobody has measured intracellular solute content by zone in any species).
+- ⚠ **MYO-INOSITOL — was absent from this atlas; oral, ~12 g/day human-safe (Japan MHLW "clearly not
+  hazardous").** `yamaguchi2019` mouse **+8.4% mandibular** endochondral growth; `shimoyama2024` rabbit
+  **+4.7%** (74.95→78.40 mm, p<0.05, n=5/gp, 66 g/kg chow vs 9.5 mg/kg). ✗ **NO FEMUR EFFECT, no weight
+  effect.** ✗ **NOT a swelling agent** — it is PI substrate supply via **PIK3CD**, so it is NOT a
+  counterexample to "the machinery has only ever been switched off," which stands.
+  ⚠ **BUT THE STATED REASON FOR THE FEMUR NULL FAILS IN HUMANS (R295).** The rodent papers compared mandible
+  vs femoral **ARTICULAR** cartilage. In GSE9160 **PIK3CD is detected 9/10 probe-donor cells in the human
+  GROWTH PLATE, highest in PZ (3520 vs thr 746).** Different tissue. **The length null stands; its
+  explanation does not.** Regraded X→D *within the round*. Gap: `g_l5_is_pik3cd_expressed_in_the_human_vertebral_growth_plate`.
+- ⭐ **PIEZO1 — top of the atlas's own ranking (0.935, above every positive control) and NEVER CHECKED for
+  expression until R295.** GSE9160: detected in **all 5 compartments of both donors**; clean donor
+  **RZ 8986 → PZ 7893 → PHZ 20594 → HZ 24442** — a 2.7× rise **into the zone that does the enlarging**, at
+  among the highest absolute levels in the panel. **No PIEZO1 perturbation with a bone-length endpoint
+  exists in this atlas in either direction.** ← strongest new lead on this axis.
+- ✓ Volume kinase cascade IS in the human plate: **STK39 (SPAK) 5/5 both donors, OXSR1 4/5 and 5/5, INPPL1
+  5/5 both.** SLC12A2 marginal (2/10, 7/10).
+- ✗ **Useful negatives (R295):** **WNK2** — the familial-OA gene (`veerabhadraiah2025`) — is **absent from
+  the human growth plate** (0/30 D1, 2/30 D2, six probes); the cartilage-disease WNK is not the plate WNK,
+  WNK1 is the better candidate. **SLC13A1 0/10, SLC26A1 0–1/15** → scherer2025's sulfate arm is **systemic
+  renal**, not local.
+- ✗ **THREE HUMAN GENETIC ANCHORS, ALL POINTING DOWN:** LRRC8C GoF (VRAC stuck open) **−5.1 SD**
+  (quinodoz2025) · **INPPL1** loss = opsismodysplasia (voigt2025) · biallelic **SLC13A1** loss = short
+  (tise2025), with plasma-sulfate per-variant effect **r=0.70** with height across 466,907 (scherer2025).
+- **STATUS: not dead, not actionable.** Largest untouched term in the file; **every pharmacological tool on
+  it is an inhibitor** because the clinical demand was always to REDUCE swelling. Next step is a
+  measurement, not a drug search.
+
 ## CONTRAINDICATED — do not add to the stack
 
 - **DNMT inhibitors** (azacitidine, decitabine) — reproduce the Dnmt1-KO direction: accelerated
