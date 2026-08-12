@@ -86,6 +86,13 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    direction.** Closures write DEAD/SETTLED rows; positives stay in nodes that don't survive compaction, so
    the file drifts pessimistic by selection, not error. **Grep the graph before reopening anything.** And
    any round producing a positive with a length endpoint goes in CLAUDE.md **in the same commit.**
+16. **Searching the literature for a localisation question the atlas can answer locally.** CORR-316.
+   **`atlas/quant/dataset_inventory.csv` — run every new gene against it BEFORE a literature search.**
+   GSE9160 (the ONLY human zone-resolved growth plate, incl. perichondrium) sat vendored with a
+   preregistered notebook while 7 rounds argued HHIP from mouse alone. Cost of the query: zero.
+17. **Writing a correction and not applying it to the next dataset.** CORR-317 — CORR-314's sex confound
+   applies to GSE9160 too (donors are one F, one M; NRK is X-linked). A rule written this morning nearly
+   missed its second instance the same afternoon. **n=2 with one of each sex is never a replicate pair.**
 
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
@@ -234,6 +241,31 @@ adult height a mean 8.92 cm/allele — ~52× the average common variant.** Our w
 DEFICIENCY. No aggrecan-elevation experiment exists anywhere.** Gap: `g_l5_nobody_has_raised_aggrecan_above_normal_and_measured_a_bone`.
 **UNTESTED, searched not assumed (R287):** CHD8 (conditional literature entirely neuro) · TET1 (bone papers
 are ageing/BMSC only) · **ZFAT and NRK — nothing skeletal in ANY species.**
+- ✓ **HHIP IS IN THE HUMAN GROWTH PLATE — species gap CLOSED (R292).** GSE9160, the only zone-resolved
+  transcriptome of a **human** growth plate, has been vendored here since 2026-08-05 with a preregistered
+  notebook and **nobody had typed HHIP or NRK into it (CORR-316).** Against each array's own detection
+  threshold: **HHIP detected in the PROLIFERATIVE zone on 3/4 probes** in the clean donor (879/1301/1493 vs
+  thr 746), resting+proliferative in donor 2, below background in PHZ/HZ. **Matches haraguchi2025's mouse
+  in situ.** Two species, two platforms, one answer.
+- ✓ **AND HHIP vs FBN1 ARE IN DIFFERENT TISSUES, IN THE SAME TWO CHILDREN.** **HHIP: 0/8 probe-donor cells
+  in PERICHONDRIUM** (144/59/217/22 vs thr 827; 26/19/42/13 vs 451). **FBN1: its ONLY clean-donor detection
+  across 5 compartments × 3 probes IS the perichondrium** (1607 vs 827). Controls behave — IHH 0/4 in
+  perichondrium but 20856 in HZ; ACAN/COL2A1 detected everywhere, so the compartment isn't silent.
+  **R291's "different pathways" becomes "different TISSUES" — the strongest form of independence, and the
+  argument to COMBINE the two levers rather than choose.**
+- ✓ **NRK — the lead gene now has THREE skeletal measurements in TWO species, from zero eight days ago.**
+  chu2026 mouse GP baseMean **6.10** (above FGFR3 2.30) · GSE189091 mouse perichondrium **183–301 CPM** in
+  all 3 WT · **GSE9160 human GP: detected in ALL FIVE compartments of BOTH donors** — one of only three
+  genes in the panel (with ACAN, COL2A1) — 1050→8062→9980→9289, PC 3556 (thr 719–827), **~9.5× RZ→PHZ** in
+  the clean donor. **Expression half of `g_l8_nrk_has_no_skeletal_experiment_in_any_species` is CLOSED.**
+  ✗ **Direction untouched** — pLoF is +3.79 cm so the therapeutic direction is INHIBITION, and expression
+  says nothing about sign. ✗ **CORR-317: NRK is X-linked and the two donors are one F one M — compare only
+  WITHIN a donor.** Still no perturbation of NRK in any species.
+- ⚠ **TWO HUMAN NEGATIVES, grade D, recorded because they are inconvenient (R292).** **SPIN4** (R281's
+  "cleanest pool lever") = **0/10 arrays**. **PTHLH** (R290's load-bearing buffer) = **0/15 per donor**.
+  ✗ Not refutations: the same notebook found **NPPC** — vosoritide's own ligand — 1–2 orders below
+  background while NPR2/NPR3 were detected. This platform is insensitive to low-abundance secreted and
+  regulatory transcripts. But it is what the only human data says, and both were promoted on mouse.
 - ⚠ **FBN1 AND HHIP ARE INDEPENDENT LEVERS — the unification was tested and killed (R291, CORR-315).**
   `guo2024` maps a distal enhancer driving HHIP transcription **SMAD3-dependently, TGF-β-responsively**,
   which would chain FBN1→↓TGF-β→↓SMAD3→↓HHIP→↑Hh→longer bone and make the atlas's two open-plate passes one

@@ -10232,3 +10232,33 @@ Prediction: **Hhip DOWN** in mutant perichondrium. Result, from GSE189091: **Hhi
 **FBN1 and HHIP are independent levers.** Worse as a story, better as a stack: one pathway cannot be hit twice, two can be combined.
 
 **Rule, and it is the good half of this round.** The hypothesis was formed and killed **in the same hour, on primary data, at zero cost**, because the deciding dataset was already public and had a single unambiguous predicted sign. Before writing an elegant mechanism into the file, ask what one number would falsify it and whether that number is already deposited somewhere. Here it was, and had been for four years.
+
+## CORR-316 — the human dataset was in the repository the whole time, with a preregistered notebook on it
+
+Rounds 285–292 built the entire HHIP case on mouse: `chu2026`'s mouse table, `haraguchi2025`'s mouse conditional, `saturne2025`'s mouse suture. The atlas's own standing rule is that **every claim carries a species**, and "HHIP is expressed in the growth plate" had only ever been shown in a mouse.
+
+`GSE9160` — **the only public zone-resolved transcriptome of a human growth plate**, five compartments including perichondrium, laser-captured from two normal children — has been vendored in this repository since 2026-08-05, with a preregistered notebook, a validated detection threshold, and a genome-wide donor-quality analysis already done on it. Three existing nodes cite it.
+
+**Nobody had typed HHIP or NRK into it.** One script, no new data, no request to anyone:
+
+| gene | result |
+|---|---|
+| **HHIP** | detected in proliferative zone (3/4 probes, clean donor); **0/8 probe-donor cells in perichondrium** |
+| **FBN1** | clean donor's **only** detection across 5 compartments × 3 probes is the **perichondrium** |
+| **NRK** | detected in **all five compartments of both donors** — first human skeletal measurement |
+| SPIN4 | **0/10 arrays** |
+| PTHLH | **0/15 in each donor** |
+
+This is not the CORR-302 failure (claiming novelty for something already read). It is the adjacent one: **a validated instrument sitting unused because the question that needed it arrived after it was built.** The notebook was written for a preregistered gene list in an earlier phase; when rounds 283–291 produced new genes, nothing pointed back at it.
+
+**Rule.** When a round produces a new gene of interest, run it against **`atlas/quant/dataset_inventory.csv`** before searching the literature — the atlas's own re-analysable datasets are a resource with a fixed cost of zero and they do not appear in a PubMed query. And the specific instance: **any claim about where something is expressed should hit GSE9160 before it is written**, because it is the only human answer that exists and it is local.
+
+## CORR-317 — the sex confound found this morning applies to the human dataset too, and I nearly missed it twice
+
+CORR-314 established that GSE189091 is two female + one male mutant against three male wild types, and that NRK's X-linkage makes its differential uninterpretable there.
+
+GSE9160's two donors are **female 11 y 10 m and male 13 y 3 m**. NRK is X-linked. Donor 1 rises into the prehypertrophic zone (1050 → 8062 → 9980); donor 2 falls (2444 → 4297 → 1771). That difference is confounded with sex **and** with the failed dissection, and cannot be read as biology.
+
+I caught it only because I had written the rule four hours earlier. The first pass through this dataset averaged both donors and would have reported "NRK peaks in the proliferative zone at ~6000" — a number that is the mean of two incomparable measurements.
+
+**Rule.** A correction is not finished when it is written; it has to be **applied to the next dataset, not just the one that produced it.** For X- and Y-linked genes specifically, donor or sample sex is part of the design, and n = 2 with one of each is *never* a replicate pair.
