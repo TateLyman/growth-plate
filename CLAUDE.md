@@ -115,6 +115,17 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    a window like that**, which is a harder objection than pleiotropy. Always ask: what does losing BOTH
    copies do?
 
+21. **Proposing a drug without checking whether its ACTUAL TARGET — not its pathway — is in the tissue.**
+   CORR-327 / **THE RECEIVER-NOT-THE-HANDLE RULE (R301), now three-for-three.** The human growth plate
+   carries the **effector** and not the drugged **upstream node**, every time:
+   · **cGMP** — PRKG1 1441→4228 and PRKG2 present; **sGC/NOS absent** → the whole nitrate shelf can't reach it (R298).
+   · **TGF-β** — TGFBR2 12,902 PZ, TGFBR3 10,214, TGFBR1 present; **AGTR1 0/10, AGTR2 0/15, REN 0/5** → the
+   whole ARB shelf can't reach it (R301).
+   · **CNP** — NPR2 present; **MME 0/10 clean donor** → sacubitril's target isn't there (R301).
+   The pharmacopoeia's handles are GPCRs and soluble enzymes, which live in the circulation; the plate is
+   receptors, effectors, matrix and channels. **This is the MECHANISM behind R298's druggability base rate,
+   not a restatement of it.** Triage every accessible-drug proposal with the free local query first.
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -178,12 +189,16 @@ and do not collapse to knees-only. Both compartments are live for him.
   ⚠ **Aortic root dilatation in 2/4 biallelic humans; NPR-C-null mouse aorta is Marfan-like at baseline.**
   R220, R144, R300.
 
-**LIVE:**
-- **Sacubitril** — approved, oral, dose-dependent skeletal overgrowth in WT mice, abolished by cartilage
-  NPR-B knockout. Window: only worked at 3–4 wk when endogenous CNP/neprilysin peak *in lumbar vertebrae*.
-  No human bone measurement at any age. (`neprilysin_cnp_clearance`)
+**LIVE:** *(empty — sacubitril was the last entry and R301 removed it)*
 
 **✗ CLOSED FOR THIS STACK — do not re-promote:**
+- **SACUBITRIL — REMOVED FROM LIVE, R301. It is a SUBSTITUTE for the vosoritide arm, not an addition.**
+  `hakata2024` is why it was live (dose-dependent WT overgrowth, abolished by cartilage NPR-B KO, P=0.392)
+  and **`hakata2024`'s own FOUR-ARM design is why it is not** — vehicle / sacubitril / CNP / both:
+  **sacubitril and CNP are NOT ADDITIVE**, they saturate the same step, and sacubitril delivers ~half what
+  CNP does (2% vs 4%). CORR-297, and the number sat in the atlas's own quantitative block for rounds.
+  ✗ Plus a **hard age window** — 102–103% of vehicle at 3–4 wk, **99% and P=0.717 at 4–5 wk**; subject is BA16.
+  ✗ Plus **MME (neprilysin) is 0/10 in the clean donor** of the human growth plate (8/10 donor 2, discordant).
 - **LUM-201 / ibutamoren / MK-677 — DEMOTED R284, CORR-297. It is a SUBSTITUTE for the GH arm, not an
   addition to it.** A secretagogue acts on the somatotroph; **exogenous GH bypasses the somatotroph.** The
   only thing that made it an *addition* was pulsatility, and **R271 already killed that** (weekly ≥ daily).
@@ -327,9 +342,26 @@ are ageing/BMSC only) · **ZFAT and NRK — nothing skeletal in ANY species.**
   ✗ **FBN1 is not a target — alleles have directions, genes don't.** `gne2026`: monoallelic FBN1 → **acromicric
   dysplasia, SHORT**; and LTBP3/ADAMTSL2/ADAMTS10/ADAMTS17 loss all **shorten**, so "less TGF-β = taller" holds
   for the perichondrium only, not the module.
-  → **Missing experiment, and it is absurdly cheap: `chen2015` gave LOSARTAN to WILD-TYPE mice on this exact
-  axis, measured zone lengths and bone mass, and NEVER PUT A CALIPER ON THE FEMUR.** Human PHN trial (608
-  children, height + proportions prespecified) was null — but vs **atenolol, not placebo**.
+  → **Missing experiment, still unrun and still cheap: `chen2015` gave LOSARTAN to WILD-TYPE mice on this
+  exact axis, measured zone lengths and bone mass, and NEVER PUT A CALIPER ON THE FEMUR.** Human PHN trial
+  (608 children, height + proportions prespecified) was null — but vs **atenolol, not placebo**.
+  ⛔ **R301 DEPRIORITISED THE ANGIOTENSIN HANDLE FOR THIS CASE — read before proposing an ARB again.**
+  · **The whole RAAS is ABSENT from the human growth plate AND perichondrium** — AGTR1 0/10 clean donor,
+  AGTR2 0/15, REN 0/5, ACE 1/10; only AGT detected. No basis for a LOCAL effect.
+  · ⛔ **The decisive one is R289's, not R301's: THE AXIS GROWS LIMBS.** Marfan habitus is *disproportionate*
+  — long limbs, relative trunk sparing — and this subject's residual is **trunk-dominant** (R274). Same
+  objection as the CNP arm: aimed at the spent compartment.
+  · ✗ **CORR-326 — do NOT cite `morales2026` as a growth kill.** Its growth curves are **BODY WEIGHT**; no
+  bone or body length was measured, at 153 mg/kg/day (far above max). What survives is mechanistic: losartan
+  failed to modulate TGF-β signalling or ECM incorporation, and geleophysic patient fibroblasts had
+  **REDUCED** basal TGF-β1, challenging the excess-TGF-β model. And human ARB target engagement is **NOT**
+  refuted — AIMS log TGF-β placebo 5.40 vs irbesartan 5.29, diff −0.10 (95% CI −0.25 to 0.05), **p=0.18,
+  underpowered, point estimate favouring the drug**.
+  · ✓ **The handle that WOULD work is in the same data: TGFBR2 12,902 PZ, TGFBR3 10,214, TGFBR1 (ALK5)
+  present both donors.** The plate is strongly TGF-β RESPONSIVE and carries no angiotensin machinery — hit
+  the ligand or ALK5 (galunisertib, vactosertib; neither approved, neither with a length endpoint).
+  · ⚠ **One live answerable question (R289): AIMS randomised 93 children <18, placebo-controlled, 5 years,
+  weight tracked. Did height ride along?** One question to one trials unit.
 - ✓ **HHIP (+9.92)** — see LIVE FRONTIER.
 - ✗ **LCORL FAILS** (hepatic). **UNTESTED: TET1, ZFAT, NRK, CHD8.**
 - **THE PATTERN: both passes are SECRETED EXTRACELLULAR ANTAGONISTS** (HHIP binds a morphogen and limits its
@@ -715,6 +747,39 @@ Run: `atlas/tools/round300_signed_target_drug_sweep.py` → `signed_target_drug_
   zero atlas coverage before R300; so did **CHAD +2.63** (secreted, 5/5 both donors), **B4GALNT3 +1.46**,
   **PTPN9 +3.56**, **CNNM3 +2.41**, **ABCB1 +1.90** (perichondrial efflux — would modify every stack agent),
   **POR +1.08** (obligate P450 donor incl. aromatase — the AI arm's mechanism as a human number).
+
+## WHAT SURVIVES AS AN ADDITION TO THE STACK (R301) — the Step-0 filter applied to the real stack
+
+An addition must move something **outside** CNP/cGMP (vosoritide), FGFR3/ERK/CREB (erdafitinib), GH/IGF-1,
+and oestrogen/the period (anastrozole). Two obtainable candidates were tested and neither survives intact:
+**sacubitril ELIMINATED** (non-additive with CNP — see LIVE COMPOUNDS) and **the angiotensin handle
+DEPRIORITISED** (wrong compartment + no local receptor — see the FBN1 entry).
+
+- ⭐ **LOXL2 / pan-lysyl-oxidase — the ONLY candidate left standing, and it is grade D, not a recommendation.**
+  ✓ Human direction, three genes one pathway: **LOXL2 +1.40 cm (P=2.2e-09), PLOD2 +1.34, PLOD1 +1.03.**
+  ✓ **Among the highest-expressed genes in the whole human growth-plate panel** — LOXL2 **34,135 PZ**,
+  PLOD2 **41,533 PZ**, vs COL2A1 92,848.
+  ✓ **A real oral clinical compound: PXS-5505 / lenumlostat**, first-in-class selective pan-LOX inhibitor,
+  **completed phase I/IIa in myelofibrosis**.
+  ✓ **Clean on Step 0** — matrix cross-linking is moved by *nothing* in this stack, and it bears on **h_term**,
+  the largest term, which R296 concluded had no upward-pointing agent.
+  ✗ Against: mouse *Loxl2* deletion **triggers TMJ OA** (overexpression protects); biallelic PLOD2 = Bruck;
+  **BAPN = osteolathyrism with exostoses and epiphyseal separation**; not approved; and **no LOX/PLOD
+  inhibitor has a bone-LENGTH endpoint in any species.** Gap: `g_l5_does_lysyl_oxidase_inhibition_lengthen_bone_in_any_species`.
+- ✓ **CXXC5 — the operator's standing question, ANSWERED BOTH WAYS (R301).** **Present, emphatically:
+  15/15 probe-donor cells in BOTH donors** — the only gene in the round matching COL2A1 for completeness —
+  peaking **PZ 5,748**, RZ 2,571, PC 2,073. Had zero prior atlas coverage. ✗ **But the direction is wrong:**
+  CXXC5 is a negative feedback regulator of canonical Wnt, so **inhibiting it RAISES Wnt** — and R281's band
+  says the lengthening direction is mild chronic **reduction**, with the optimum BELOW wild type. Not in
+  `kosmicki2026`'s 207, so no human number overrules the inference. **Present, real, wrong half.**
+- ⚠ **POLYAMINES — new pathway, fully present, SIGN UNRESOLVED.** **AMD1 +7.18 cm** (P=1.7e-07, 26 hets, zero
+  prior coverage) and **SMOX −2.73 cm** agree that *less spermine is taller*. **The whole biosynthetic
+  pathway is in the human plate and hypertrophy-enriched**: ODC1 4/5 → **HZ 5,606**, SRM 5/5 → PHZ 4,449,
+  AMD1 5/10, SMS 3/5, SMOX 5/15. **Eflornithine/DFMO is APPROVED, oral, with paediatric dosing** (Iwilfin,
+  2023, high-risk neuroblastoma). ✗ **Do not promote yet (CORR-325 applied BEFORE proposing):** the
+  chondrocyte literature says polyamines **stimulate** the differentiated phenotype, and DFMO is used to
+  **treat** Bachmann-Bupp syndrome, an **ODC1 gain-of-function** disorder — so ODC1 dosage points the other
+  way. 26 carriers is modest power. No polyamine agent has a bone-length endpoint in any species.
 
 ## THE DRUGGABILITY BASE RATE (R298) — `atlas/tools/round298_druggability_sweep.py`
 
