@@ -65,13 +65,22 @@ matrix already vendored and analysed).
 6. **PRJNA478935 / SRA** — raw SRA, terabyte-scale, fetal. Deliberately skipped.
 
 ## kosmicki2026 supplement — RECEIVED 2026-08-12
-`kosmicki2026_supp_tables_S1_S11.xlsx` (the two uploads were byte-identical duplicates; one kept).
-Contains **Tables S1-S12**. Verified by row count:
+`kosmicki2026_supp_tables_S1_S29.xlsx` (the two uploads were byte-identical duplicates; one kept).
+Contains **Tables S1-S29 — the COMPLETE supplement. Nothing outstanding.** Verified by row count:
 - **Table S4 = 209 rows = THE 207 GENE-BASED-TEST GENES.** The atlas has been working from the 17 in
   main-text Table 1 plus HHIP read out of the article prose. This is the full set.
 - **Table S3 = 128 rows = the 105 significant rare nonsynonymous single variants in 87 genes.**
 - Columns include ENSG, symbol, test type (burden), chr, pos, beta, SE.
-✗ **Tables S15 and S16 are NOT in this file** (ancestry-stratified; carry HHIP p.V496E AMR row and the
-FBN1 p.E1297G Peruvian row). They live in a different supplementary attachment.
+**S15 and S16 ARE in this file.** I reported them missing after a hand-rolled XML parser read only the
+first twelve <sheet> entries; openpyxl shows 29. CORR-323. Beyond the tables already named:
+- S5  gene-based stats for the 17 singleton-pLoF genes - the ONLY table the atlas had been using
+- S6  burden tests for all 207 genes
+- S7  ratio of singleton pLoF beta to GWAS beta - rare vs common effect magnitude, directly
+- S12 genes significant BEFORE but not AFTER conditioning on 3,034 common variants = a built-in
+      false-positive filter, and any atlas target appearing here needs re-grading
+- S13 the 6 missense-only-burden genes, which include FGFR3
+- S15 ancestry/sex-subset single variants = the HHIP p.V496E row
+- S16 population-specific stats for FBN1 15:48481729:T:C
+- S17 burden heritability regression; S18/S19 carrier enrichment at phenotypic extremes
 NEXT: cross Table S4 against `atlas/data/round298/undrugged_targets.txt` and against the CTD signed
 handles - a 207-gene target list changes the denominator of every druggability claim in rounds 297-298.

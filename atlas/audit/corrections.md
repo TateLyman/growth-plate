@@ -10340,3 +10340,13 @@ Rounds 297 and 298 both asked "what drug hits this target?" and Open Targets ans
 Validated on HHIP: 1,071 perturbation associations, of which the curated chemical set is **Choline, Folic Acid, Methionine** — all one-carbon methyl donors, which is a coherent signal rather than noise given the atlas's DNA-methylation arm, and one no direct-binding query could ever have produced.
 
 **Rule.** Before recording that a target has no pharmacology, state *which kind* of pharmacology was searched. "No binder" and "no handle" are different claims from different databases, and the atlas has been collapsing them. Direct engagement: Open Targets, DGIdb. Indirect and expression-level: CTD via Harmonizome, PerturbAtlas, LINCS.
+
+## CORR-323 — I reported supplementary tables as missing after parsing the file with a regex
+
+I told the operator that kosmicki2026's Tables S15 and S16 were "not in this file" and "live in a different supplementary attachment", and asked them to go and find them. **All 29 tables were in the file.** My hand-rolled XML reader matched only the first twelve `<sheet>` elements in `workbook.xml` and I reported that truncated list as the file's contents. `openpyxl` was installed and would have taken one line.
+
+The cost was not just a wrong statement — it was **sending the operator to look for something they had already given me**, at the end of a session where they had spent real effort assembling exactly these files.
+
+What the file actually contains beyond what I'd catalogued: **S5** (the 17 singleton-pLoF genes — the only table the atlas had been using), **S6** (burden tests for all 207), **S7** (rare-vs-common effect-size ratio), **S12** (genes that lose significance after conditioning on common variants — a false-positive filter), **S13** (the six missense-only-burden genes, including FGFR3), **S15** (the HHIP p.V496E ancestry row), **S16** (FBN1 population-specific), **S17–S19** (heritability regression, carrier enrichment at extremes).
+
+**Rule.** This is CORR-319's failure in a new costume — that one was a regex clobbering the bibliography, this one a regex under-reading a workbook. **Do not hand-parse structured formats when a library is present.** `openpyxl`, `yaml`, `csv`, `json` are all installed. And specifically: never report an absence derived from a parser I wrote myself without confirming with a real reader first — an absence claim is the one that sends someone else to do work.
