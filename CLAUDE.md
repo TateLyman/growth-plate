@@ -1267,6 +1267,39 @@ and "where is the peak?".* Before proposing to reverse a decline, ask whether an
 axis in *both* directions with a *length* endpoint. If only one — the band hypothesis is untested, not
 excluded.
 
+## 📦 DATA ACQUIRED 2026-08-13 — `atlas/data/supplied_2026_08_13/` (466 MB) + `atlas/quant/dataset_inventory.csv`
+
+**Ten operator-supplied datasets pulled in full, plus one found by hunting.** Registered in the inventory —
+**run every new gene/question against the inventory FIRST (CORR-316).**
+- **GSE252288 (69 human in-vivo chondrocyte RNA-seq, multiple SITES/stages) + GSE252289 (89 ATAC-seq)** —
+  attacks "the atlas has one generic growth plate" and wires height genetics → regulatory DNA → gene → site.
+- **GSE225878 — genome-wide CRISPR KO screen, 22,624 genes** (+GSE225879 sorted RNA-seq, GSE225796 time
+  course). Association → **causation**. ⚠ **BLOCKED, see below.**
+- **GSE114919 — mouse+rat, age × ZONE × SITE, 60 samples.** Purpose-built for the **PERIOD** question.
+- **GSE18338 — HUMAN growth plate across PUBERTY**, incl. same-patient early→late. Tiny n, old platform, but
+  almost nothing else measures the endocrine→architecture axis in human tissue.
+- **GSE233188/GSE234040 — barcoded human skeletal stem/progenitor clones.** ⚠ **FETAL — quarantined from
+  postnatal inference.**
+- **HPO genes_to_phenotype + phenotype_to_genes (88 MB)** — computational bridge from gene → tall/short
+  stature, advanced/delayed bone age, epiphyseal/metaphyseal abnormality, proportions. Replaces per-syndrome
+  manual curation.
+- ⭐ **FOUND BY HUNTING, NOT ON THE LIST: `GCST90728588` — SITTING HEIGHT RATIO GWAS, 545,982 people, FULL
+  SUMMARY STATISTICS (173 MB).** The residual here is **trunk-dominant**, every stack agent was characterised
+  on **long bones**, and the axial/appendicular split is this file's most decision-relevant compartment fact.
+  **First dataset that can separate genes shifting PROPORTION from genes shifting overall height.**
+  (Replication arms located: GCST90728585 EUR, GCST90727384 Chinese. **Bone-age GWAS exists but is tiny** —
+  GCST90095044, n=4,557, CYP11B1, no sumstats.)
+
+**⚠ TWO BLOCKERS — operator can get these, I cannot:**
+1. **GSE225878 sign convention is UNCALIBRATED and nothing clears multiple testing.** Across 22,624 genes the
+   largest −log(p) among every atlas lead is ≈2. Controls do not resolve direction: **Sox9 −0.82, Runx2 −0.64**
+   fit "required gene depleted" but **Npr2 +1.19, Pth1r +0.84** do not fit a growth axis. **CORR-296 forbids
+   reading direction.** NEEDED: the **GSE225880 source paper** — what was selected on, which way is early vs
+   late maturation, and its own hit list / the 145 implicated genes.
+2. **PXD055563 holds only RAW spectra** (24 .raw + 24 .mgf) plus one **identification-mode** mzTab (8,100
+   proteins, 285,605 PSMs — presence, **no quantification**). NEEDED: **the paper's supplementary phosphosite
+   table**. Also note it is **MOUSE**, so it cannot carry human inference.
+
 ## CONVENTIONS
 
 - Never invent a citation, author, year or number. Uncertain → `value_unverified: true`.
