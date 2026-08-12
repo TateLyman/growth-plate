@@ -126,6 +126,17 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    receptors, effectors, matrix and channels. **This is the MECHANISM behind R298's druggability base rate,
    not a restatement of it.** Triage every accessible-drug proposal with the free local query first.
 
+## ⚠ GRADING RULE CHANGED BY THE OPERATOR (R302) — APPLY RETROACTIVELY
+
+**"If it works mechanically but there's no documented length, we should basically consider it viable."**
+**A MISSING LENGTH ENDPOINT IS A *GAP*, NOT A DISQUALIFICATION.** This file had been using "no bone-length
+endpoint in any species" as a closing line against **HHIP, LOXL2, TET1, polyamines, sulfate donors,
+tankyrase inhibitors, PRI-724 and aggrecan elevation** — which contradicts its own convention that a
+missing number is a gap and a *wrong* number is a defect.
+**The three real disqualifiers are:** ① the target is **ABSENT FROM THE TISSUE** · ② the **DIRECTION** is
+wrong · ③ it is **REDUNDANT** with an arm already in the stack (Step 0 / CORR-297).
+Everything else is a gap to record and, where cheap, to fill.
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -747,6 +758,70 @@ Run: `atlas/tools/round300_signed_target_drug_sweep.py` → `signed_target_drug_
   zero atlas coverage before R300; so did **CHAD +2.63** (secreted, 5/5 both donors), **B4GALNT3 +1.46**,
   **PTPN9 +3.56**, **CNNM3 +2.41**, **ABCB1 +1.90** (perichondrial efflux — would modify every stack agent),
   **POR +1.08** (obligate P450 donor incl. aromatase — the AI arm's mechanism as a human number).
+
+## ⭐ THE LEAD ADDITION (R302) — TANKYRASE, and it is R281's OWN named experiment with a compound
+
+R281 specified it: *"an agent that lowers canonical Wnt TRANSCRIPTIONAL OUTPUT partially and selectively in
+chondrocytes WITHOUT blocking ligand secretion."* It named tankyrase inhibitors, graded E, and stopped at
+"no length endpoint" — the exact line R302's rule change retires. **Four things R281 did not have:**
+- ✓ **THE TARGET IS IN THE HUMAN GROWTH PLATE — never checked until R302.** **TNKS and TNKS2 both, BOTH
+  donors** (TNKS peak HZ, TNKS2 PHZ), with **AXIN1, AXIN2 (4,322 HZ), CTNNB1 (9,208 PZ)**. R281 nominated a
+  compound class without knowing whether its target was in the tissue.
+- ✓ **DIRECTION VERIFIED IN HUMAN CARTILAGE CELLS** (`hotta2024`): XAV939 **suppresses β-catenin nuclear
+  translocation** in human articular chondrocytes — the exact mechanism R281 asked for.
+- ✓ **AND IT IS CHONDRO-ANABOLIC, WHICH IS WHERE LOXL2 FAILS THE SAME TEST.** Same experiment: XAV939
+  **abrogated the stress-induced fall in COL2A1, ACAN and SOX9** and suppressed ADAMTS-5/MMP-13/IL-1β.
+  Compare *Loxl2* deletion → **triggers TMJ OA**. Head-to-head on cartilage safety, tankyrase wins.
+- ✓ **THE CLASS'S FATAL GUT TOXICITY WAS ENGINEERED OUT AND TESTED IN HUMANS.** `kim2022`: STP1002 is
+  tankyrase-**selective** (TNKS1 IC50 29.94 nM, TNKS2 3.68 nM), efficacy **without on-target GI toxicity** —
+  the crypt liability that limited every prior agent. `lieu2025`: **BASROPARIB, oral, once daily, 25 patients,
+  30–360 mg, NO dose-limiting toxicities, no fatal treatment-related AEs, MTD 360 mg** (NCT04505839).
+  *E7449, the only agent R281 could name, is a **dual PARP/tankyrase** compound and therefore confounded.*
+- ✓ **STEP 0 PASSES CLEANLY** — canonical Wnt is moved by *nothing* in this stack. And R281 already supplied
+  the GH-additivity argument: the SPIN4 proband overgrew **+4.5–5 SDS with IGF-1 of 179**, *lower* than this
+  subject's 198, so the axis neither needs nor competes for IGF-1.
+- ✓ **SAME NODE AS THE ATLAS'S CLEANEST POOL LEVER.** SPIN4 = reduced baseline canonical Wnt (TOPFLASH↓,
+  Axin2↓); tankyrase inhibition stabilises AXIN and lowers the same output. Spin4-KO is **longer at 2 wk,
+  10 wk AND 18 months with normal BMD**, moving **N and λ with A and h_term flat**.
+
+**✗ WHAT WOULD KILL IT — stated in advance so the next round can't call it new:**
+· **No tankyrase inhibitor has a bone-length endpoint in any species.** ← the gap, and the whole gap.
+· **The band has an interior optimum and overshoot RUNTS the animal** — `chen2008` Col2a1-ICAT is
+  progressively runted. **An oncology MTD is emphatically not a growth dose.**
+· **CORR-290 IS THE DISCRIMINATING TEST.** PORCN inhibitors also lower Wnt and give the **INVERSE** zone
+  decomposition (HZ↑ PZ↓, plate exhausted). **Promotion requires SPIN4's signature: RZ↑ with PZ and HZ
+  heights and h_term UNCHANGED.** Match the decomposition or it is a different lever.
+· Tankyrase is **not Wnt-only** — telomeric TRF1, YAP via angiomotin; unmapped in cartilage.
+· SPIN4's own costs: **tumour count ↑ at 18 mo**; human n=1 **BHI −2.34 SD, TBLH BMD Z −3.29**.
+· Oncology schedule (21 on / 7 off), never given to an adolescent, non-cancer indication.
+Gap: `g_l2_does_a_tankyrase_inhibitor_reproduce_the_spin4_zone_decomposition_and_lengthen_bone`.
+
+## RE-RANKED UNDER THE NEW RULE (R302)
+- ⬆ **TET1 (+8.32 cm, P=2.2e-14)** — **PRESENT both donors, peak HZ**, Open Targets "High-Quality Ligand,
+  Small Molecule Binder"; a **dioxygenase**, the most drugged fold there is. TET2/TET3 are donor-2 only, so
+  **TET1 is the TET of this tissue.** Step 0 passes. Was held down *only* by the retired criterion.
+- ⚠ **NEW CONTRAINDICATION CANDIDATE — SUPRA-PHYSIOLOGICAL VITAMIN C, by the atlas's OWN AKG argument.**
+  CLAUDE.md contraindicates **AKG** as the TET co-substrate because feeding TET runs height-LOSING. **Ascorbate
+  is the other cofactor of the same dioxygenase family** (regenerates Fe(II)); the 5hmC literature uses it
+  precisely to RAISE TET output. **Grade E, mechanism only.** ⛔ **HARD CAVEAT: ascorbate is required for
+  collagen prolyl/lysyl hydroxylation and scurvy is a skeletal disease — this is about MEGADOSING, NEVER
+  about adequacy.** Untested against bone length.
+- ⬆ **AMD1 (+7.18 cm)** — present both donors, PHZ peak, **"High-Quality Pocket"**, clinical-stage inhibitor
+  **SAM486A/sardomozide**. The pathway is not incidental here: **OAZ1 55,413 and SAT1 12,731/15,704 are among
+  the highest-expressed genes in the entire panel.** ✗ Sign still unresolved (CORR-325).
+- ⬆ **LOXL2/pan-LOX strengthens** — **LOXL4 at 21,618 HZ**, higher than LOXL2 anywhere; LOX, PLOD3 (10,274),
+  P4HA1 (17,346), P4HB (59,234) all present. PXS-5505 is **pan**-LOX, so family co-expression argues FOR it.
+  ✗ But it loses the cartilage-safety head-to-head against tankyrase.
+- ⬇ **NPR3 DEMOTED FOR THIS STACK — by the argument that killed sacubitril.** `hakata2024` showed raising
+  ENDOGENOUS CNP is **not additive** with a CNP analogue. NPR3 blockade raises endogenous CNP by the other
+  clearance route, so expect the same non-additivity against vosoritide. **Human genetics untouched; still a
+  first-rate target for anyone NOT already on a CNP analogue.**
+
+## THE ALL-207 LOCALISATION SWEEP (R302) — `atlas/data/round302/gse9160_all207_localisation.tsv`
+All 207 height genes **plus 60 druggable targets the atlas had named but never localised** — 251 symbols,
+one free pass. **185 PRESENT in both donors**, 5 donor-1 only, 30 donor-2 only, 26 not detected, 10 not on
+platform. **"Is it in the tissue?" is now a LOOKUP, not a round.** R292/300/301 each typed a hand-picked list,
+so each answer was bounded by what I thought to ask.
 
 ## WHAT SURVIVES AS AN ADDITION TO THE STACK (R301) — the Step-0 filter applied to the real stack
 
