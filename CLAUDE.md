@@ -94,6 +94,12 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    applies to GSE9160 too (donors are one F, one M; NRK is X-linked). A rule written this morning nearly
    missed its second instance the same afternoon. **n=2 with one of each sex is never a replicate pair.**
 
+18. **Recording a paper's negative conclusion about a drug class without checking what happened to its test
+   articles.** CORR-320 — `gudernova2016` declared FGFR TKIs "compromised for short-stature therapy"; its own
+   **BGJ398 is infigratinib**, later +1.74 cm/yr in a placebo-controlled phase 3. And its in-vivo null was
+   confounded by its own **lethal** toxicity. **A null in a toxic arm is a dose result. A class conclusion
+   from tool compounds does not survive the real drugs. And grep the graph for the compound name first.**
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -378,13 +384,18 @@ zones and mass, never length).
   · **The dosable Hh agent is the WRONG one.** Purmorphamine via CT-CM-NPs = SMO agonist = (a) most exposed
   to the cilium problem, (b) CORR-300's "flood with agonist" category. ye2026's gain was RESTORATION in a
   Hh-deficient plate (CORR-203).
-- ⚠ **PRIMARY-DATA COST ON THE PAN-FGFR CLASS (R294, `gudernova2016`, also not previously in the atlas).**
-  Five FGFR TKIs (SU5402, PD173074, AZD1480, AZD4547, BGJ398) **completely relieved** FGFR-mediated
-  inhibition of chondrocyte proliferation in vitro — and **in newborn mice produced NO skeletal growth
-  improvement plus LETHAL liver/lung/kidney toxicity**, with **no FGFR3 selectivity over FGFR1/2/4** and
-  off-target hits across 14 kinases. ✗ **Does NOT reopen erdafitinib>vosoritide** (a comparison this paper
-  doesn't make; erdafitinib untested here). ✓ It is the **primary evidence** behind preferring
-  isoform-selective **dabogratinib** over any pan-FGFR agent — which remains unobtainable.
+- ✗ **`gudernova2016` IS NOT A COST ON THE PAN-FGFR CLASS — I claimed it was and withdrew it the same day
+  (CORR-320). Do not re-promote it.** Five TKIs (SU5402, PD173074, AZD1480, AZD4547, BGJ398) completely
+  relieved FGFR-mediated inhibition of chondrocyte proliferation in vitro, then gave no skeletal growth and
+  **lethal** liver/lung/kidney toxicity in **newborn** mice. Two fatal problems: **(a) the null is confounded
+  by the paper's own lethal toxicity** — a growth endpoint in an animal dying of multi-organ failure is about
+  the dose, not the target; **(b) BGJ398 IS INFIGRATINIB**, which then delivered **+1.74 cm/yr with no
+  bone-age acceleration in PROPEL3, randomised placebo-controlled phase 3, n=74 vs 39** — a number this atlas
+  has held for many rounds. **The paper was falsified by its own test article in the exact indication it
+  named.** Three of the five are tool compounds; AZD1480 is a JAK2 inhibitor.
+  ✓ **What survives is CHEMISTRY, not efficacy:** no FGFR3 selectivity over FGFR1/2/4, off-target across 14
+  kinases. Use it *only* for the isoform-selectivity argument. Against "pan-FGFR can't grow bone" stand
+  infigratinib's phase 3 **and erdafitinib at 19.06 cm/yr in a child.**
 - **HHIP IS THE LEAD, AND R290 TOOK IT ALL THE WAY DOWN. Four things R285 left open are now closed.**
   1. **It is expressed where it needs to be, in data we have owned since R243.** chu2026 mouse GP table:
      **HHIP baseMean 3.73, padj 0.034 — ABOVE FGFR3 (2.30) and NT5E/CD73 (3.21)**; PTCH1 4.93 for scale.

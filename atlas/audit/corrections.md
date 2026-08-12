@@ -10292,3 +10292,21 @@ Patching `haraguchi2025`'s `one_line_finding` with `re.search(r"(  haraguchi2025
 Reverted with `git checkout`, redone as an exact line-range replacement with assertions on the boundary lines before writing.
 
 **Rule.** The bibliography is a 1,589-entry flat YAML file and **multi-line scalars make it hostile to regex.** Never patch it with a pattern that can span records. Either use `addref.py`, or locate the exact line range, **assert on the first and last line**, and splice. And always read `git diff --stat` before committing a mechanical edit — the failure was silent in the tool's own output and visible only in the diff.
+
+## CORR-320 — I promoted a paper whose conclusion its own test article had already falsified, and the refutation was in this atlas
+
+Round 294 recorded `gudernova2016` at grade B as "primary data against the pan-FGFR class": five FGFR TKIs completely relieving FGFR-mediated inhibition of chondrocyte proliferation *in vitro*, then producing no skeletal growth and lethal liver/lung/kidney toxicity in newborn mice, with the authors concluding the class is "compromised for therapy of short-stature syndromes."
+
+**The operator pushed back within minutes and was right.** Two defects, either sufficient:
+
+1. **The in vivo null is confounded by the paper's own toxicity.** The animals were dying of multi-organ failure. A growth endpoint measured in a poisoned newborn mouse is a statement about dose and window selection, not about whether the target grows bone. I quoted "did not improve skeletal growth" and "lethal toxic effects" *in the same sentence* without noticing they were the same finding.
+
+2. **BGJ398 is infigratinib.** One of the five test articles went on to **PROPEL3** — randomised, placebo-controlled, phase 3, n = 74 vs 39 — delivering **+1.74 cm/year annualised height velocity with no accelerated bone age** in achondroplasia. **This atlas has held that number for many rounds**, in the same node family. The paper was refuted by its own compound in the precise indication its conclusion named.
+
+Add that the animals were **newborn**, a window nothing like an adolescent's, and that three of the five are tool compounds (AZD1480 is a JAK2 inhibitor).
+
+**What actually survives is the selectivity panel, which is chemistry and not efficacy:** none of the five discriminated FGFR3 from FGFR1/2/4, and all hit 14 unrelated kinases. That supports preferring isoform-selective FGFR3 where available. It does not support "pan-FGFR agents cannot grow bone" — against which stand infigratinib's phase 3 and erdafitinib's 19.06 cm/year in a child.
+
+**Rule, and it is a new failure mode.** Before recording a paper's *negative conclusion* about a drug class, **check what happened to its test articles afterwards.** A 2016 conclusion about compounds still in development is a hypothesis with a ten-year track record attached, and the track record is usually one search away. The specific trap: a null in a toxic arm reads like evidence of no effect, and a class conclusion drawn from tool compounds does not survive the real drugs.
+
+**And the failure this shares with CORR-313:** the contradicting datum was *already in the atlas*. I searched the literature for new evidence and did not grep my own graph for the compound name. `infigratinib` returns PROPEL3 immediately.
