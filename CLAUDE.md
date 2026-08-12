@@ -1019,11 +1019,54 @@ antibody nobody has made.**
    whole axis present in human tissue, motif known to 8 residues.
 3. **Recombinant SCUBE3** — the one target whose direction is to SUPPLY; declines with age in two species
    (R312); highest antibody-tractability confidence of the three.
-⛔ **THE SERIOUS UNRESOLVED OBJECTION: the growth plate is AVASCULAR and ALYMPHATIC.** That is exactly the
-problem `ye2026`'s chondrocyte-membrane nanoparticles were built to solve for a SMALL molecule, and a 150 kDa
-IgG faces it far worse than vosoritide's 4.1 kDa peptide. **Not resolved. Any biologic here needs a delivery
-answer first** — and CT-CM-NPs/WYRGRL is the one vehicle in this atlas shown to reach the plate from a vein.
+⛔ **R314 raised the avascular/alymphatic objection against its own proposal — ✅ R315 ANSWERED IT. See below.**
 ✗ And all three still need what the atlas has never had: **a length endpoint in a normal growing animal.**
+
+## ✅ R315 — **THE DELIVERY WALL IS LOWER THAN I SAID.** Cationic carriers already put PROTEINS through
+## full-thickness cartilage. R314's own blocking objection is overturned — and the real wall relocated.
+
+⭐ **A PROTEIN BIOLOGIC CAN BE CHARGE-ENGINEERED INTO CARTILAGE WITHOUT LOSING TARGET BINDING.**
+The atlas had the physics (152 × Donnan, 110 × fixed charge, 42 × avidin) and never connected it to the
+biologic question. **CPC+14** = short, arginine-rich, **hydrophilic** cationic peptide, net charge **+14**.
+- **`vedadghavami2022`: CPC-IGF-1 (7.6 kDa) penetrated the FULL THICKNESS of cartilage into a bound depot**
+  while unmodified IGF-1 cleared. **Single dose** suppressed IL-1α-induced GAG loss + nitrite and rescued
+  metabolism/viability over **16 days**; free IGF-1 at equivalent dose **ineffective**. Authors: the motif is
+  transferable to other similar-sized drugs.
+- **IL-1Ra (17 kDa) reproduces it** via CPC+14 or avidin.
+- **`boyer2026`: catIL-1RA — carrier at the C-terminus, terminus chosen computationally to preserve binding —
+  25-FOLD synovial fluid at 1 wk vs anakinra in rats**, slower serum clearance, comparable receptor binding,
+  and efficacy in explants **where anakinra failed at equivalent AND 4× dose.**
+- **Design rules published:** evenly distributed cationic residues + minimal hydrophobicity = deepest,
+  longest penetration. Engineering, not luck.
+
+⭐ **THE SIZE ARITHMETIC IS THE WHOLE POINT — AND R314 OBJECTED ABOUT THE WRONG MOLECULE.**
+IGF-1 **7.6 kDa** (delivered) < **NANOBODY ~15 kDa** < IL-1Ra **17 kDa** (delivered) < scFv 28 < Fab 50 <
+**IgG 150** ← *the thing I objected to*. **Neutralising a SECRETED protein needs a BINDER, not a full
+antibody.** A single-domain antibody sits BETWEEN the two proteins already shown to cross full-thickness.
+
+⛔ **THE REAL WALL, RELOCATED AND NARROWER — this is now the honest blocker:**
+· **EVERY cationic-carrier result is ARTICULAR cartilage reached by INTRA-ARTICULAR INJECTION.** The growth
+  plate is **NOT intra-articular** — it sits inside the bone beneath the epiphysis and no joint injection
+  reaches it. **No charge-engineered protein has reached a GROWTH PLATE in any species.**
+· **NO NANOBODY HAS BEEN DELIVERED TO CARTILAGE AT ALL** (searched; atlas has 0 mentions). Size class rests
+  on IGF-1/IL-1Ra, not on a sdAb.
+· ✓ **Why the extrapolation is reasonable, from the atlas's OWN number:** calf **EPIPHYSEAL** cartilage FCD
+  **−0.19 to −0.35 M** vs **−0.28 M** articular — *the Donnan mechanism these carriers exploit is present in
+  the target tissue at comparable magnitude.* **Grade E** — a physical parameter, not a delivery measurement.
+· ✓ Systemic route is not hypothetical: **`ye2026` reached growth-plate cartilage from a TAIL VEIN** with
+  chondrocyte-membrane PLGA + WYRGRL — but carried a **SMALL molecule**, not a protein.
+· ⚠ **CHP (collagen-hybridising peptide) delivered a full anti-TNF IgG to joint matrix** — but CHP binds
+  **DENATURED** collagen, a disease signature. **Wrong ligand for a healthy plate; WYRGRL (intact collagen II)
+  is the right one.**
+
+⭐ **THE CONSTRUCT, every component existing and NONE combined — R248's observation one level more specific:**
+**anti-HHIP (or anti-CHAD) single-domain antibody ~15 kDa + CPC+14-type carrier at the binding-sparing
+terminus + systemic dosing + WYRGRL/chondrocyte-membrane targeting.**
+Target validated (+9.92 cm; haraguchi2025 femur +4.5% at 53 wk, plate open; R312 two-species) · epitopes
+mapped (`griffiths2021`) · HHIP already made as Fc fusion (`ye2025`) · size class proven · carrier chemistry
++ design rules published · terminus problem solved computationally (`boyer2026`) · plate vehicle exists (`ye2026`).
+⚠ **All cationic-carrier efficacy is in IL-1-challenged/OA models — CORR-203: a result from a challenged
+system is a claim about that challenge.** None asked whether the delivered protein changes bone LENGTH.
 
 ## ⭐⭐ R313 — THE COMPOUND HUNT RUN INSTEAD OF ASSERTED. R312's "the shelf is empty" was PARTLY WRONG.
 
