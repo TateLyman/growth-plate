@@ -1584,6 +1584,67 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐⭐ R317 — **THE 546,000-PERSON COMPARTMENT TEST.** The CNP axis allocates growth to LIMBS.
+
+`GCST90728588` — sitting height ratio **adjusted for height and BMI**, **545,982 people**, 16.9M variants —
+hunted 2026-08-13, **never opened**. Adjusted for height ⇒ it measures **pure compartment allocation**:
+**+beta = TRUNK-favouring, −beta = LIMB-favouring.**
+✓ **BASE RATE PASSES (CORR-329):** 153 independent loci at P<1e-20 split **77 trunk : 76 limb** — no global
+skew, so **unlike IMPC the SIGN is informative here.** That check ran before anything below was read.
+
+⭐⭐ **THE HEADLINE — THE STACK'S BIGGEST ARM IS AIMED AT THE SPENT COMPARTMENT.**
+| gene | top P (±100kb) | beta | direction |
+|---|---|---|---|
+| **NPR3** | **2.20e-67** | −0.0389 | **LIMB** |
+| **NPPC** | **5.57e-23** | −0.0203 | **LIMB** |
+| NPR2 | 1.06e-04 | +0.0082 | nothing |
+**NPR3 is the 2nd most significant of 46 genes tested.** The ligand AND the clearance receptor of the axis
+vosoritide drives are both major limb-vs-trunk allocators, both on the LIMB side.
+✓ **Converges with 4 pharmacological lines already here:** navepegritide lowers upper:lower segment ratio ·
+vosoritide **L1–L4 NULL** in the EMA report · axial null in monkeys · the rat axial dose that works causes
+scoliosis + kyphosis + fractures. **Now with a half-million-person human anchor.**
+⛔ Against the residual: at BA~14.5 knees = **0.3–0.4 cm**, trunk = **6.5–9.0 cm** (aeppli2025).
+⚠ **NOT an argument to stop vosoritide — CORR-195.** His knees ARE open and growing at BA16, off that
+distribution. **What follows: the marginal return on the CNP arm is LIMB-WEIGHTED, so any ADDITION must be
+selected for TRUNK REACH.** ← a selection criterion this atlas has never applied.
+
+⭐ **TOP TRUNK-FAVOURING LOCI GENOME-WIDE** (annotated ±150kb, GRCh37):
+**chr17 TBX2/TBX4 P=9.89e-136** ← strongest in the genome; **TBX4 = the hindlimb identity gene**, so this is
+the trait's best internal positive control (✓ IMPC Tbx4-het tibia −0.310, P=0.0066) · **chr11 TEAD1
+P=3.11e-119** · chr5 NSD1/FGFR4 1.8e-97 · **chr4 SLC39A8 1.9e-92, largest beta +0.0810** (Mn transporter;
+✗ CORR-203 — its disease is a rare biallelic CDG; IMPC het null) · chr1 WNT4/CDC42 1.2e-81 · **chr18
+TNFRSF11A 4.2e-72** · chr20 GDF5 5.8e-62 · **chr12 SOCS2 6.4e-55** · chr7 **HOXA1–7** 4.3e-41 · **chr13
+TNFSF11 3.6e-25** · **TNKS 7.6e-26** · EFEMP1, PKDCC, TIMP3, JAZF1.
+**LIMB side:** COL11A1 2.0e-74 · PTCH1 1.7e-60 · **HHIP 1.1e-58** · FBN1 9.8e-31 · FGFR3 8.5e-15 · IGF1,
+IGF1R, GHR, ESR1, PTH1R, COL2A1, SMAD6, SCUBE3.
+
+⛔ **RANK/RANKL IS THE SIXTH BAND — AND DENOSUMAB IS CONTRAINDICATED.** Two INDEPENDENT loci, one pathway,
+both trunk-favouring (RANK 4.2e-72, RANKL 3.6e-25) — looks like a lever, is not:
+· **Blocking RANKL JAMS the plate.** Osteoclastic resorption is *required* to clear hypertrophic cartilage at
+  the chondro-osseous junction. RANKL deficiency = osteopetrosis with **RETAINED CARTILAGE**; OPG-Fc decreased
+  bone growth in neonatal rats; adolescent monkeys at 5–10× dose had **abnormal growth plates**; metaphyseal
+  band fractures reported in treated children. **= CORR-292's JAM.**
+· **Excess RANKL shortens too: IMPC Tnfrsf11b (OPG) null body length −4.607, P=4.3e-14** (median is −0.212).
+→ Sixth both-directions-shorten axis after hedgehog, ER, DNA methylation, canonical Wnt, cAMP.
+⚠ **NEW CONTRAINDICATION found in passing: VENETOCLAX** (approved BCL-2 inhibitor) **impairs longitudinal
+bone growth** — never named in this atlas.
+
+⭐ **THE ONE BIG TRUNK LOCUS WITH CHEMICAL MATTER AND ~ZERO ATLAS COVERAGE: TEAD1 / HIPPO.**
+**P=3.11e-119, beta +0.0454, TEAD1 the only protein-coding gene in the window** — 2nd strongest trunk locus
+in the genome. ⭐ **Converges independently with R311:** `baronas2023` reported KEGG enrichment in exactly five
+pathways — Wnt, Hedgehog, ubiquitin-proteolysis, TGF-β/BMP and **HIPPO**. *The atlas recorded that sentence
+and never followed the Hippo arm.* Coverage: Hippo 3 mentions, YAP1 14, WWTR1 12, angiomotin 4.
+**TEAD palmitate-pocket inhibitors are in phase 1** — the opposite of the HHIP/CHAD problem.
+⚠ Direction unknown; IMPC Tead1-het null across 4 rows; **Wwtr1/TAZ-het tibia +1.753, P=0.081** — ns, but
+positive is the RARE direction. Worth exactly one follow-up.
+✓ **And TNKS is trunk-favouring at P=7.63e-26** — a NEW argument for the R302 lead, because R303/R311/R312
+all tested *maturation timing or whole-body length*, **never compartment.**
+
+⛔ **THE CENTRAL LIMITATION, STATED PLAINLY:** the trait is a **RATIO adjusted for height**, so a
+trunk-favouring allele may lengthen trunk **or shorten leg**. **No locus here is shown to ADD total height.**
+Separate sitting-height and leg-length sumstats would resolve it and are not on disk. Lead-allele signs say
+nothing about gene direction. SHOX returns no variants (PAR excluded) — the panel lacks its most obvious control.
+
 ## ✅✅ R316 — **THE THING TO DO THIS WEEK.** Not a lever to add — a COST probably being paid right now.
 
 ⭐ **rhGH LOWERS FREE T4, AND THE SIZE OF THE FALL PREDICTS A WORSE GROWTH RESPONSE.** CLAUDE.md carried
