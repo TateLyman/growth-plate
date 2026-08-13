@@ -1861,6 +1861,65 @@ separates the three cases that matter — **clock stalled · clock at the smith2
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
 
+## ⛔⛔⛔⛔ R363 — **ORIKASA 2024: SUSTAINED HEDGEHOG ACTIVATION EXPANDS THE CLONE, THEN CONVERTS IT INTO
+## TRABECULAR BONE, AND RETURNS *NO FINAL LENGTH*. The "keep it on forever" version of this axis is the
+## version that spends the niche. And the file ALREADY HELD THE PAPER — CORR-333, second time in three rounds.**
+
+⛔ **PROVENANCE FIRST.** I asked the operator for `orikasa2024`. **It has been in the bibliography since
+2026-08-07, is cited by TEN nodes, and its `one_line_finding` was FULLER than the one I then wrote.** The
+companion commentary was held too (`orikasa2026`). I downloaded a paper the file already had. **Before asking
+for anything: `grep` the PMID in `bibliography.yaml` AND list `/root/.claude/uploads/<session>/`.**
+
+⛔⛔ **THE RESULT, AND IT IS THE HARDEST QUALIFIER ON THE HEDGEHOG DIRECTION IN THIS FILE.**
+Tamoxifen-inducible **Pthrp-creER × Ptch1-floxed × tdTomato** = **PERMANENT, CELL-AUTONOMOUS** Hh activation
+in the PTHrP⁺ resting-zone stem cells, with lineage tracing.
+· **SHORT TERM — exactly what we want:** large concentric clonally expanded populations in the resting zone
+  (**"patched roses"**), columns widened from ~1–2 to a maximum **5–6 cells at P36**, **plate HYPERPLASIA.**
+· ⛔ **THEN IT ALL COMES BACK: labelled cells rise steeply P21→P36, FALL at P56–P70, and by P96 there is NO
+  STATISTICAL DIFFERENCE AT ALL.** Descendants are **Col1a1-GFP⁺ trabecular osteoblasts in the diaphyseal
+  marrow by P96** — they left the growth plate.
+· ⛔⛔ **AND THE LENGTH ENDPOINT IS NEGATIVE THEN NULL: FEMUR LENGTH IS TRANSIENTLY REDUCED AT P21**, then
+  equivalent. Authors' words: hedgehog activation *"negatively affects the bone length only transiently."*
+→ **A BIGGER PLATE, A WIDER COLUMN, AND NO FINAL LENGTH.**
+
+⭐⭐ **IT RECONCILES R311 WITH trompet2024, AND THE VARIABLE IS DURATION — NOT COMPARTMENT.** R311's screen
+scored **Ptch1 KO +6.004 = matures early** on the SAME perturbation Orikasa uses, and now has a mechanism:
+**the stem cells don't mature early so much as LEAVE THE CARTILAGE LINEAGE.**
+· **PULSE** (trompet2024, Gli1 signal gone by 3 wk) → ordered zones, λ and h_term unchanged, no OA at 6 mo,
+  length gain still widening at 6 mo.
+· **SIX SYSTEMIC DOSES** (newton2019) → raised niche proliferation, **no CD73⁺ domain expansion.**
+· **PERMANENT** (orikasa2024) → expansion, then reversal, then bone, **no length.**
+**A PULSE EXPANDS. SUSTAINED ACTIVATION CONVERTS AND EXHAUSTS.** → **If this axis is ever used it must be
+PULSED, and the pulse interval is unmeasured in every species.** Gap `g_l7_363a`.
+
+⭐⭐⭐ **AND THE ANSWER TO "KEEP VELOCITY AS LONG AS POSSIBLE" IS AN ARITHMETIC, NOT A COMPOUND.**
+**Velocity = D × A × h_term** (D = pool consumption). **Duration ≈ pool / D.** So **velocity × duration —
+total height — depends on A and h_term and NOT on D.** `hunziker1994` gives the exchange rate:
+**A ∝ D^(−0.150).**
+· **GH is the THROUGHPUT arm** — ×5.00 pool consumption, ×0.77 amplification, ×1.36 h_term, **97% of its log
+  effect is pool consumption.** Total height from a fixed pool = **+5.2%.** It converts the niche into height
+  ~5× faster at roughly break-even yield — which is exactly the SETTLED human row (GH after mid-puberty ≈ 0).
+· **IGF-I in the same experiment has the BETTER yield profile: +11.3%.** ⚠ Recorded not promoted —
+  hypophysectomised rats, and R326 disqualified mecasermin on the radial-vs-longitudinal split.
+· ✓ **h_term is the ONLY arm with a demonstrated human BONE-AGE-SPARING velocity gain** — `dauber2026`,
+  30 children, **+4.0 SD velocity Z with BA/CA UNMOVED.** ⚠ three SCFE on longer use.
+→ **NOT ALL VELOCITY IS EQUIVALENT. Velocity bought through h_term does not spend duration; velocity bought
+through throughput does.**
+
+⭐ **THE FOUR THINGS THAT PROTECT DURATION USING ONLY WHAT IS ALREADY AVAILABLE, RANKED:**
+1. **ANASTROZOLE ADHERENCE** — closure proceeds above ~55–73 pmol/L; he is 10–25× below it. A behaviour, not
+   a prescription, and the highest-leverage item in the file.
+2. **PROTECT THE NICHE SIGNAL** — no **SMO antagonists** (six doses of vismodegib FUSED a normal plate), no
+   **anti-angiogenics** (axitinib: SOC size P=0.0054, clone size P=0.0023), no **rapalogs** (mTORC1 is the
+   second niche regulator).
+3. **WEIGHT TOWARD h_term** — the CNP arm is the one that adds velocity without spending the budget.
+4. **TREAT THE GH DOSE AS A VARIABLE, NOT THE GH ARM AS A QUESTION.** On A ∝ D^(−0.150), if duration binds,
+   a lower dose gives higher yield per stem cell consumed. ⚠ **Grade E — a derivation from a rat exponent
+   fitted to four points, never tested at a dose endpoint in any species.**
+⛔ **AND THE UNRESOLVED ONE THAT OUTRANKS ALL FOUR IS STILL `g_l7_362a`:** hedgehog is REQUIRED to prevent
+fusion · all Hh transduction is in the primary cilium · an FGFR inhibitor significantly shortens cilia in
+NORMAL mice · **he is on one, continuously.**
+
 ## 🎯🎯🎯🎯🎯🎯🎯 R362 — **THE PAPERS WERE ON DISK AND I NEVER OPENED THEM. Read in full they change the
 ## frame: THE POOL SELF-RENEWS, so closure is NICHE FAILURE not budget exhaustion — and HEDGEHOG TO THE
 ## RESTING ZONE IS *REQUIRED* TO PREVENT FUSION.**
