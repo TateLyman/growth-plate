@@ -1852,6 +1852,72 @@ separates the three cases that matter — **clock stalled · clock at the smith2
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
 
+## 🎯🎯🎯🎯🎯🎯 R361 — **"STOP CLOSURE COMPLETELY" IS NOT IMPOSSIBLE AND IT IS NOT UNTESTED. BOTH HALVES
+## HAVE BEEN DONE IN NORMAL ANIMALS. The missing item is ONE OBTAINABLE AGONIST — not a mechanism.**
+
+⭐⭐⭐ **ONE — ADDING THE POOL BACK IS DONE.** `trompet2024`, **INTRA-ARTICULAR SAG** (P28/P30/P32, read P37):
+**Pthrp-tdTomato⁺ cells 65.5 → 139.8 per mm², n=5, P=0.017, ALL OF IT INSIDE THE RESTING ZONE** — with
+**NO change in proliferation** (top 50 µm or PZ) and **NO change in terminal hypertrophic cell size.**
+**THE POOL DOUBLED AND NOTHING ELSE MOVED.** In H = N × A × h_term that is **N alone** — the term R360 names
+as the binding constraint once an AI has removed the deadline, and the term nothing in the stack touches.
+
+⭐⭐⭐⭐ **TWO — AND THE LENGTH ARM CARRIES THE MOST IMPORTANT SINGLE FACT IN THIS FILE.** SAG **bead in ONE
+distal femoral SOC**, contralateral leg as internal control: femur **+2.75 / +2.64 / +3.63%** and whole leg
+**+1.06 / +1.09 / +1.65%** at **1 / 2 / 6 months** (6/6, 9/9, 8/8 animals), growth rate up by calcein and
+xylenol labelling — **WHILE THE Gli1-LacZ BEAD SIGNAL WAS GONE BY THREE WEEKS.**
+→ **A THREE-WEEK LOCAL INPUT PRODUCED A GAIN STILL WIDENING AT SIX MONTHS.** A rate effect decays when the
+signal stops. **A larger pool keeps paying out.** This is the strongest evidence in the atlas that N is what
+sets final length and that it can be enlarged ONCE. ✓ **No osteoarthritis at 6 months.**
+⛔ **SHORT SYSTEMIC SAG WAS NULL** (tibia P=0.29, femur P=0.247). **THE ROUTE MUST BE LOCAL.**
+
+⭐⭐ **THREE — STOPPING CLOSURE IS ALSO DONE.** `haraguchi2025`, Hhip1-flox × Prx1-Cre: growth-plate area
+**53-wk WT 0.29 vs mutant 0.44** — and **THE 53-WEEK MUTANT PLATE EQUALS THE 10-WEEK WILD TYPE (0.44).**
+WT involutes 0.44 → 0.29; **the mutant does not involute at all.** Thin flattened band vs tall columnar
+plate. Femur **+4.5%** at 53 wk, body weight unchanged, zones widened but **ORDERED**.
+**A NORMAL ANIMAL HELD ITS PLATE OPEN AT YOUNG-ANIMAL DIMENSIONS FOR A YEAR.**
+
+⭐ **FOUR — THE VEHICLE EXISTS SEPARATELY.** `ye2026` CT-CM-NPs — chondrocyte-membrane PLGA + collagen-II
+peptide **WYRGRL** — carried **purmorphamine** to growth-plate cartilage **from a tail vein.**
+**R248 and R290 both wrote that the mechanism and the vehicle exist separately and NOBODY HAS COMBINED THEM.
+That is still true and it is now the whole of the answer.**
+
+⛔⛔ **FIVE — WHAT ACTUALLY BLOCKS IT, AND IT IS NOT BIOLOGY. NO OBTAINABLE HEDGEHOG AGONIST EXISTS.**
+Searched, not asserted: the entire agonist literature is **SAG · purmorphamine · 20(S)-hydroxycholesterol**
+(a natural oxysterol SMO agonist, characterised 2026) — **all purchasable as RESEARCH REAGENTS, none a
+medicine, and no SMO agonist has ever entered clinical development.** Meanwhile **every marketed Smoothened
+drug is an ANTAGONIST** — vismodegib, sonidegib, glasdegib — because the indication was always cancer.
+⭐ **R342's shape, third instance: the shelf exists and points the wrong way. Nobody ever wanted MORE
+hedgehog signalling in a patient, so the molecule this axis needs was never made.**
+
+⛔ **SIX — THE ROUTE PROBLEM, AND ONE ARM ESCAPES IT.** The pool-doubling arm was **intra-articular in a P28
+rat**, whose epiphysis is largely cartilaginous and continuous with articular cartilage. **At BA16 the human
+SOC is nearly fully ossified, so a joint injection is separated from the resting zone by BONE.** That is a
+real objection to the easy route and it is R315's original point — recorded as **unresolved**, not assumed.
+⭐ **THE LENGTH-ENDPOINT ARM AVOIDS IT ENTIRELY: a bead placed IN the secondary ossification centre is a
+DIRECT SURGICAL PLACEMENT, indifferent to how ossified the epiphysis is.** That is the arm with the femur,
+tibia and whole-leg numbers and the six-month growth.
+
+⚠ **SEVEN — THE TWO OBJECTIONS THIS FILE ALREADY HOLDS, SO THEY ARE NOT REDISCOVERED AS NEW.**
+· **R311**: cell-autonomous Hh activation ACCELERATES maturation (Ptch1 KO **+6.004**, Sufu KO **+3.628**) =
+  spends the period — the opposite direction from haraguchi2025. CORR-300 is the proposed reconciliation
+  (secreted antagonist vs intracellular brake), and **SAG acts at Smoothened, so it does not sit cleanly on
+  the favourable side.** ✓ What argues trompet2024 landed ordered anyway: **λ and h_term unchanged, zones
+  ordered, no OA at 6 months, and the input was TRANSIENT AND LOCAL** — a pulse is not a germline null.
+· **R294**: FGFR3 is upstream of Hh **through the primary cilium**, all Hh transduction happens there, and
+  AZD4547 **significantly SHORTENED cilia in normal mice in all three tissues tested.** He is on a pan-FGFR
+  inhibitor. Either his transduction is blunted (agonist works less) or he is already Hh-deficient
+  (correction is exactly right). **The R294 gate is still unrun.**
+
+⭐ **THE ASK — the three things that would move this fastest, in order:**
+1. **`trompet2024` FULL TEXT** — the intra-articular dose, the bead composition and loading, and **whether
+   resting-zone cell counts were repeated at 2 and 6 months.** The persistence question — permanently
+   enlarged pool vs transient expansion spent advantageously — is probably already in a supplementary figure.
+2. **`newton2019` FULL TEXT** (Nature) — does the resting zone self-renew indefinitely or finitely? That is
+   `g_l7_360a`, the question the entire budget-versus-deadline framework turns on.
+3. Any human study counting **resting-zone stem cells across pubertal stage** — never done as far as this
+   file can tell, and it is the central unmeasured quantity of the exhaustion model.
+Gaps: `g_l7_361a` (route + persistence) · `g_l7_360a` (is the pool finite at all).
+
 ## 🎯🎯🎯🎯🎯 R360 — **WHAT IS ACTUALLY CLOSING HIM ONCE OESTROGEN IS SUPPRESSED. It is not oestrogen, the
 ## atlas already held the answer in two nodes never read together, and IT RUNS AGAINST THE STACK'S DESIGN.**
 
