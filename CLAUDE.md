@@ -1881,6 +1881,55 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯 R371 — **WHICH SMO AGONIST, CALCULATED. And the calculation CANCELS ITS OWN CRITERION: the
+## cartilage delivery wall is a PROTEIN problem and does not apply to a 450–550 Da small molecule.**
+## Run `atlas/tools/round371_smo_agonist_cartilage_selection.py` → `atlas/data/round371/`
+
+⭐⭐⭐⭐ **ONE — THE CORRECTION THAT MATTERS MOST.** I started scoring agonists on cartilage penetration using
+this file's own physics (R353 Donnan at epiphyseal FCD −0.19 to −0.35 M; R315's "cationic + minimal
+hydrophobicity"). **Then I checked whether the wall exists at this size.** `farnum2006`, already held here
+since 2026-08-07: **332 Da ≈ 100% of vascular concentration (saturating in 5 minutes) · 3 kDa ≈ 60% · 10 kDa
+≈ 10% · 40 kDa undetectable.** **EVERY SMO AGONIST IS 400–560 Da.** Partition is already at unity; there is
+nothing to enhance. **The R315 wall was derived for 7.6 kDa IGF-1, 17 kDa IL-1Ra and 150 kDa IgG.**
+⛔ **APPLYING IT TO A SMALL MOLECULE IS A CATEGORY ERROR — and R357's rejection of elacestrant on cLogP
+grounds should be re-read in that light.**
+
+⭐⭐ **TWO — THE DONNAN ARITHMETIC, AND IT IS SMALLER THAN THE RHETORIC.** r = x + √(x²+1), x = cF/(2cs);
+enrichment = r^z. At cs 0.15 M: **cF 0.19 M → r = 1.82; cF 0.35 M → r = 2.70.** A **+1 cation gains only
+1.8–2.7×**; an anion is excluded to 0.55–0.37×. ⭐ **The scaling is r^z, which is the entire reason CPC+14
+works: at z=+14 the same physics gives 1e4–1e6×.** A monovalent small molecule gets a doubling on top of
+unity. **A rounding error, not a criterion.**
+
+⭐ **THREE — THE AGONISTS, SCORED FROM STRUCTURE (RDKit, PubChem):**
+| | MW | cLogP | charge | Donnan |
+|---|---|---|---|---|
+| **SAG** | 490 | **6.79** | **+1** (methylamino-cyclohexyl) | 1.8–2.7× |
+| purmorphamine | 521 | 6.86 | 0 | 1.0× |
+| GSA-10 | 451 | 5.11 | 0 | 1.0× |
+| **clobetasol prop.** | 467 | 4.10 | 0 | 1.0× |
+| **halcinonide** | **437** | **3.80** | 0 | 1.0× |
+**SAG is the ONLY cationic agonist and ALSO the most lipophilic; the approved steroids are the smallest and
+least lipophilic but uncharged. No existing agonist has both — and per ONE, it does not matter.**
+
+⭐ **FOUR — THE CHEMOTYPE SCREEN (681 SMO-active molecules).** **36 sit in the cartilage window** (z ≥ +0.5,
+cLogP ≤ 4, MW ≤ 500), cLogP down to **1.74** at MW 395; median cLogP of the whole set 4.12, 22.8% exceed 5.
+So SMO chemotypes **do** tolerate a basic polar solubilising tail (dimethylaminoacetamide on a piperidine)
+worth 3–4 log units. ✗ **But none is an agonist: max Tanimoto to SAG = 0.221 and ZERO carry SAG's
+chlorobenzothiophene-2-carboxamide core.** They are the oncology antagonist series. **ChEMBL contains no SMO
+agonist med-chem programme at all** — R368's finding at the structural level.
+
+⭐⭐⭐ **FIVE — SO THE CHOICE COLLAPSES ONTO ONE VARIABLE, AND IT IS NOT CHEMISTRY.**
+· **SAG** — the ONLY agonist with an in vivo growth-plate result (**+61% pool, post-SOC, systemic, 25 µg/g
+  i.p. daily P31–P37**; 7 systemic ≈ 3 intra-articular on clonogenicity). **No GR liability.** ✗ Research
+  reagent, **zero human exposure ever**, no GMP, no tox package; cLogP 6.79 → high PPB/fat sequestration.
+· **HALCINONIDE** — **approved**, smallest and least lipophilic agonist known, Gli EC50 **1.8 nM**, Hh arm
+  **GR-independent** (mifepristone control), with an in vivo systemic SMO demonstration. ✗ Co-activates GR.
+· **CLOBETASOL PROPIONATE** — **approved**, **most potent of all (Gli EC50 0.2 nM)**. Same GR liability.
+→ **NOTHING ABOUT SIZE, CHARGE, LIPOPHILICITY OR TRANSPORT SEPARATES THEM. The entire remaining question is
+the SMO:GR ratio in a chondrocyte — `g_l12_369a` — and step 1 is a two-reporter dose-response in vitro.**
+⚠ And agonism vs antagonism at SMO arises at the SAME 7TM site and is exquisitely structure-sensitive, so a
+designed low-logP agonist is a synthesis-and-test problem, not a design exercise.
+
 ## ✅ R370 — **THE CILIUM WORRY ABOUT ERDAFITINIB IS MEASURED IN THE WRONG TISSUE.** De-escalated, not closed.
 
 R362 and R363 called this the most urgent experiment in the file: Hh to the RZ is REQUIRED to prevent fusion ·

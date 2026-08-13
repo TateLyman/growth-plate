@@ -1,0 +1,233 @@
+id: round371_which_smo_agonist_calculated_and_the_delivery_wall_does_not_apply_at_this_size
+name: Round 371 - WHICH Smoothened agonist, calculated rather than guessed. The cartilage delivery wall this
+  atlas has invoked since R315 is a PROTEIN problem and DOES NOT APPLY to a 450-550 Da small molecule, which
+  cancels the selection criterion I was building; SAG is the only cationic agonist and gains only 1.8-2.7x
+  from it; and with delivery removed the choice collapses onto ONE variable - the glucocorticoid liability
+aliases:
+- which smoothened agonist should we use
+- calculate the SMO agonist
+- does the cartilage delivery wall apply to small molecules
+- Donnan enrichment small molecule cartilage
+- SAG versus halcinonide versus clobetasol
+type: hypothesis
+layer: L12
+stub: false
+summary: 'The operator asked whether the right SMO agonist can be worked out rather than guessed. It can, and
+  the calculation produced a result that cancels most of its own criteria. Tool:
+  atlas/tools/round371_smo_agonist_cartilage_selection.py, data atlas/data/round371/.
+
+  ⭐⭐⭐⭐ ONE - THE RESULT THAT MATTERS MOST, AND IT IS A CORRECTION TO THE CRITERION I WAS CONSTRUCTING.
+  I began scoring agonists on cartilage penetration using this atlas own physics - R353 Donnan partitioning
+  at an epiphyseal fixed charge density of -0.19 to -0.35 M, and R315 published design rule that cationic
+  charge PLUS MINIMAL HYDROPHOBICITY gives the deepest penetration. THEN I CHECKED WHETHER THE WALL EXISTS AT
+  THIS MOLECULAR SIZE. farnum2006 measured the live partition curve in the murine growth plate: 332 Da is
+  ABOUT 100 PER CENT OF VASCULAR CONCENTRATION, 3 kDa about 60 per cent, 10 kDa about 10 per cent, 40 kDa
+  undetectable. EVERY SMO AGONIST IS 400-560 Da. AT THAT SIZE PARTITION IS ALREADY AT OR NEAR UNITY AND THERE
+  IS NOTHING TO ENHANCE. The delivery wall that R315 built, that R353 used for vepdegestrant and that R357
+  used to reject elacestrant, was derived for PROTEINS - 7.6 kDa IGF-1, 17 kDa IL-1Ra, 150 kDa IgG - where
+  partition is ten per cent or less and a carrier changes everything. IT IS NOT A SMALL-MOLECULE PROBLEM.
+
+  ⭐⭐ TWO - THE DONNAN ARITHMETIC, COMPUTED, AND IT IS SMALLER THAN THE ATLAS RHETORIC IMPLIES. For fixed
+  charge density cF against ionic strength cs, the partition ratio for a monovalent cation is r = x +
+  sqrt(x^2+1) with x = cF/(2cs), and a solute of charge z is enriched by r^z. At cs = 0.15 M: cF = 0.19 M
+  gives r = 1.82; cF = 0.35 M gives r = 2.70. So a +1 CATION IS ENRICHED ONLY 1.8 TO 2.7-FOLD, and an anion
+  is EXCLUDED to 0.55-0.37x. ⭐ THE SCALING IS r^z AND THAT IS THE WHOLE STORY OF WHY CPC+14 WORKS: at z=+14
+  the same physics gives 1.8^14 to 2.7^14, i.e. 1e4 to 1e6-fold. A SINGLY CHARGED SMALL MOLECULE GETS ABOUT A
+  DOUBLING, ON TOP OF A PARTITION THAT IS ALREADY NEAR UNITY. It is a rounding error, not a selection
+  criterion.
+
+  ⭐ THREE - THE AGONISTS, SCORED ON IDENTICAL CRITERIA FROM THEIR STRUCTURES.
+  · SAG - MW 490, cLogP 6.79, CHARGE +1 (a methylamino-cyclohexyl secondary aliphatic amine), Donnan 1.8-2.7x
+  · purmorphamine - MW 521, cLogP 6.86, charge 0 (the morpholine is not basic enough), Donnan 1.0x
+  · GSA-10 - MW 451, cLogP 5.11, charge 0, Donnan 1.0x
+  · CLOBETASOL PROPIONATE - MW 467, cLogP 4.10, charge 0, Donnan 1.0x
+  · HALCINONIDE - MW 437, cLogP 3.80, charge 0, Donnan 1.0x
+  SAG IS THE ONLY CATIONIC SMO AGONIST AND ALSO THE MOST LIPOPHILIC. The approved glucocorticoids are the
+  least lipophilic and the smallest but carry no charge. NO EXISTING AGONIST HAS BOTH - and per part ONE, it
+  does not matter.
+
+  ⭐ FOUR - THE CHEMOTYPE SCREEN, RUN ANYWAY, AND IT ANSWERS A DIFFERENT QUESTION USEFULLY. All 681 molecules
+  with a pChEMBL value on human SMO were pulled and scored. THIRTY-SIX sit in the cartilage window (net charge
+  at least +0.5, cLogP at most 4.0, MW at most 500), with cLogP as low as 1.74 at MW 395. Median cLogP across
+  the whole SMO-active set is 4.12 and 22.8 per cent exceed 5. So SMO-binding chemotypes DEMONSTRABLY tolerate
+  a basic polar solubilising tail - typically a dimethylaminoacetamide on a piperidine - that drops lipophilicity
+  three to four log units while retaining affinity. ✗ BUT NONE OF THE 36 IS AN AGONIST: maximum Tanimoto
+  similarity to SAG is 0.221 and ZERO of them carry SAG chlorobenzothiophene-carboxamide core. They are the
+  oncology antagonist series. ChEMBL SMO content has no agonist medicinal-chemistry programme in it at all,
+  which is R368 finding restated at the structural level.
+
+  ⭐⭐⭐ FIVE - SO THE CHOICE COLLAPSES ONTO ONE VARIABLE, AND IT IS NOT CHEMISTRY. With delivery removed as a
+  discriminator, what separates the candidates is:
+  · SAG - the ONLY agonist with an in vivo growth-plate result: systemic i.p. 25 micrograms per gram daily
+    P31-P37 raised the resting-zone pool 61 per cent, post-SOC, and the authors say seven systemic injections
+    match three intra-articular ones on clonogenicity. NO GR liability. ✗ Research reagent, ZERO human
+    exposure ever, no GMP material, no toxicology package, and cLogP 6.79 predicts very high plasma protein
+    binding and fat sequestration.
+  · HALCINONIDE - APPROVED. The smallest and least lipophilic agonist known (MW 437, cLogP 3.80), Gli EC50
+    1.8 nM, hedgehog arm GR-INDEPENDENT by mifepristone control, and it has an in vivo systemic demonstration
+    of SMO activation. ✗ Co-activates the glucocorticoid receptor.
+  · CLOBETASOL PROPIONATE - APPROVED and the MOST POTENT of all of them, Gli EC50 0.2 nM. Same GR liability.
+  → THE ENTIRE REMAINING QUESTION IS THE RATIO OF SMO AGONISM TO GLUCOCORTICOID-RECEPTOR AGONISM IN A
+  CHONDROCYTE, which is gap g_l12_369a and whose first step is a two-reporter dose-response in vitro. Nothing
+  about cartilage transport, molecular size, charge or lipophilicity decides between these compounds. I spent
+  the round proving that, which is worth more than the ranking.'
+quantitative:
+- parameter: THE GROWTH-PLATE PARTITION CURVE, WHICH SHOWS THE DELIVERY WALL IS A PROTEIN PROBLEM
+  value: 'Measured live partition into the murine growth plate as a function of solute size: 332 Da is ABOUT
+    100 PER CENT of vascular concentration and saturates within five minutes; 3 kDa about 60 per cent; 10 kDa
+    about 10 per cent; 40 kDa undetectable. Every known SMO agonist is 400-560 Da - SAG 490, purmorphamine
+    521, SAG21k 556, Hh-Ag1.5 526, GSA-10 451, clobetasol propionate 467, halcinonide 437, fluticasone
+    propionate 501, fluocinonide 495 - i.e. all of them sit at or below the size at which partition is
+    already at or near unity.'
+  unit: per cent of vascular concentration by solute molecular weight
+  conditions: farnum2006, fluoresceinated dextrans, multiphoton microscopy in vivo, mouse; already held in
+    this atlas since 2026-08-07 and used for the peptide arm. Applied to the small-molecule question for the
+    first time here.
+  species: mouse
+  source_ref: farnum2006
+  atlas_derived: true
+  uncertainty: 'THE CURVE IS FOR NEUTRAL DEXTRANS, NOT DRUG-LIKE MOLECULES, and dextran hydrodynamic radius
+    at a given mass is larger than a compact small molecule, so if anything this UNDERSTATES small-molecule
+    penetration. What it does not address is whether a highly lipophilic compound is retained by non-specific
+    binding to matrix and membranes rather than reaching free intracellular concentration - partition into
+    the tissue is not the same as free drug at the receptor. So cLogP 6.79 is still a real pharmacokinetic
+    concern for SAG; it is simply not a CARTILAGE PENETRATION concern.'
+- parameter: THE DONNAN ENRICHMENT, COMPUTED AT THE ATLAS OWN EPIPHYSEAL FIXED CHARGE DENSITY
+  value: 'For a tissue of fixed charge density magnitude cF against external ionic strength cs, the partition
+    ratio for a monovalent cation is r = x + sqrt(x^2 + 1) where x = cF/(2cs), and a solute of net charge z is
+    enriched by r^z. At cs = 0.15 M: cF = 0.19 M gives r = 1.82, cF = 0.35 M gives r = 2.70. A -1 anion is
+    EXCLUDED to 0.55x and 0.37x respectively. AT z = +14, the charge of the CPC+14 carrier, the same physics
+    gives 1.82^14 to 2.70^14, i.e. of order 1e4 to 1e6-fold.'
+  unit: dimensionless partition ratio
+  conditions: Computed by this atlas 2026-08-13 from the epiphyseal cartilage fixed charge density of -0.19
+    to -0.35 M already held from R315, at physiological ionic strength.
+  species: not_applicable
+  source_ref: farnum2006
+  atlas_derived: true
+  uncertainty: 'IDEAL DONNAN EQUILIBRIUM FOR A POINT CHARGE, which ignores steric exclusion, specific binding
+    and any activity-coefficient correction, so it is an upper bound on the electrostatic component alone.
+    The value of the calculation is not the number but the SCALING - enrichment goes as r to the power of the
+    charge, so the effect is negligible at z=+1 and enormous at z=+14. That single exponent explains why the
+    cationic-peptide-carrier literature works and why it does not transfer to a monovalent small molecule.'
+- parameter: THE KNOWN SMO AGONISTS SCORED ON IDENTICAL CRITERIA FROM STRUCTURE
+  value: 'SAG - MW 490.1, cLogP (Crippen) 6.79, net charge +1 at pH 7.4 from a methylamino-cyclohexyl
+    secondary aliphatic amine, Donnan 1.82-2.70x.
+    PURMORPHAMINE - MW 520.6, cLogP 6.86, charge 0, Donnan 1.00x.
+    GSA-10 - MW 450.5, cLogP 5.11, charge 0, Donnan 1.00x.
+    CLOBETASOL PROPIONATE - MW 467.0, cLogP 4.10, charge 0, Donnan 1.00x.
+    HALCINONIDE - MW 437.0, cLogP 3.80, charge 0, Donnan 1.00x.
+    PubChem XLogP for the same set: SAG 6.3, purmorphamine 6.5, SAG21k 6.5, Hh-Ag1.5 6.5, GSA-10 5.6,
+    20(S)-hydroxycholesterol 6.9, versus clobetasol propionate 3.8, halcinonide 3.6, fluticasone propionate
+    4.0, fluocinonide 3.2.
+    SAG IS THE ONLY CATIONIC AGONIST AND ALSO THE MOST LIPOPHILIC; THE APPROVED GLUCOCORTICOIDS ARE THE
+    LEAST LIPOPHILIC AND THE SMALLEST BUT CARRY NO CHARGE.'
+  unit: daltons; log partition coefficient; net charge
+  conditions: Structures from PubChem, logP by Crippen and by PubChem XLogP, ionisation assigned by
+    substructure with RDKit, computed 2026-08-13.
+  species: not_applicable
+  source_ref: farnum2006
+  atlas_derived: true
+  uncertainty: 'IONISATION IS ASSIGNED BY SUBSTRUCTURE, NOT BY A pKa CALCULATION - ChEMBL API returns alogp
+    but no pKa. The rule used counts aliphatic amines, amidines and guanidines as basic and excludes amides,
+    anilines, ring nitrogens and sulfonamides. SAG assignment is secure because a methylamino-cyclohexyl is
+    unambiguously a strong aliphatic base; purmorphamine morpholine call is the least secure, since an
+    N-aryl morpholine has a pKa near 6.5 and would be partly protonated at pH 7.4 rather than fully neutral.
+    Crippen and XLogP disagree by up to 0.5 log units, as expected for different estimators.'
+- parameter: THE SMO CHEMOTYPE SPACE DOES TOLERATE CARTILAGE-APPROPRIATE PHYSICOCHEMISTRY, BUT NOT IN AN
+    AGONIST
+  value: '681 molecules carry a pChEMBL value on human SMO. THIRTY-SIX fall in the window of net charge at
+    least +0.5, cLogP at most 4.0 and MW at most 500, with cLogP as low as 1.74 at MW 395.5. Median cLogP
+    across the whole SMO-active set is 4.12, and 22.8 per cent exceed cLogP 5. The in-window molecules are
+    typically chloropyridine-piperidine amides bearing a dimethylaminoacetamide or methylsulfonylethylamino
+    solubilising tail. ✗ MAXIMUM TANIMOTO SIMILARITY TO SAG AMONG THEM IS 0.221 AND ZERO CARRY THE SAG
+    CHLOROBENZOTHIOPHENE-2-CARBOXAMIDE CORE - they are the oncology antagonist series.'
+  unit: molecule counts; Tanimoto similarity
+  conditions: atlas/tools/round371_smo_agonist_cartilage_selection.py, run 2026-08-13 against ChEMBL target
+    CHEMBL5971; Morgan radius-2 2048-bit fingerprints.
+  species: not_applicable
+  source_ref: farnum2006
+  atlas_derived: true
+  uncertainty: 'THE SCREEN CANNOT TELL AGONIST FROM ANTAGONIST because ChEMBL SMO content is overwhelmingly
+    the oncology antagonist programme, so a hit is a CHEMOTYPE observation and not a candidate. Agonism and
+    antagonism at SMO are produced at the SAME heptahelical site and are exquisitely structure-sensitive, so
+    it must NOT be assumed that transplanting a polar solubilising tail onto an agonist scaffold preserves
+    agonism. That is precisely the risk that makes this a synthesis-and-test problem rather than a design
+    exercise. Also, given part ONE of this node, the window itself is of doubtful relevance.'
+localization:
+- the epiphyseal resting zone, reached through cartilage whose size-partition curve is already near unity at
+  small-molecule masses
+human_evidence: absent
+human_evidence_note: 'No Smoothened agonist has ever been given to a human for any indication and no SMO
+  agonist clinical trial exists - checked directly against the trials registry in the previous round, zero
+  studies. The four approved glucocorticoid SMO agonists have extensive human safety data as corticosteroids
+  only. The partition curve is mouse; no human growth-plate solute partition measurement exists.'
+species_basis:
+- mouse
+translation_risk: moderate
+translation_risk_reason: 'The main claim is a NEGATIVE about a constraint - that cartilage penetration does
+  not discriminate between small-molecule SMO agonists - and it rests on a mouse dextran partition curve
+  applied to drug-like molecules of similar mass. The risk is that lipophilic small molecules are retained by
+  matrix and membrane binding in a way neutral dextrans are not, so partition into the tissue may overstate
+  free drug at the receptor.'
+confidence: C
+claim_grades:
+- claim: Cartilage penetration is a selection criterion between small-molecule SMO agonists.
+  grade: X
+  basis: 'NO, AND THIS CANCELS THE CRITERION I WAS BUILDING. farnum2006 measured 332 Da at about 100 per cent
+    of vascular concentration in the growth plate, saturating within five minutes, with the curve falling only
+    at 3 kDa and above. Every SMO agonist is 400-560 Da. The R315 delivery wall was derived for 7.6 kDa
+    IGF-1, 17 kDa IL-1Ra and 150 kDa IgG, where partition is ten per cent or less. It does not apply here.'
+- claim: A cationic SMO agonist would be meaningfully concentrated in cartilage by Donnan partitioning.
+  grade: X
+  basis: 'NOT MEANINGFULLY. Computed at the atlas own epiphyseal fixed charge density of -0.19 to -0.35 M and
+    physiological ionic strength, a monovalent cation is enriched only 1.82 to 2.70-fold - on top of a
+    partition already near unity at this molecular size. The enrichment scales as r to the power of the
+    charge, which is why the same physics gives 1e4 to 1e6-fold for the +14 peptide carrier and about a
+    doubling here.'
+- claim: SAG is the only cationic Smoothened agonist.
+  grade: B
+  basis: 'Computed from structure: SAG carries a methylamino-cyclohexyl secondary aliphatic amine, which is
+    unambiguously protonated at pH 7.4. Purmorphamine, GSA-10, clobetasol propionate, halcinonide,
+    fluticasone propionate and fluocinonide are all neutral. Grade B because ionisation was assigned by
+    substructure rather than by measured pKa, and the purmorphamine call is the least secure.'
+- claim: The right agonist can be selected on chemistry.
+  grade: X
+  basis: 'IT CANNOT, AND THAT IS THE ROUND RESULT. Once delivery is removed, molecular size, charge and
+    lipophilicity do not discriminate between SAG, halcinonide and clobetasol. What discriminates them is
+    the glucocorticoid-receptor liability on one side and the complete absence of human exposure on the
+    other. The decisive measurement is the SMO-to-GR ratio in a chondrocyte, gap g_l12_369a, whose first step
+    is an in vitro two-reporter dose-response.'
+- claim: An existing molecule already combines agonism with cartilage-optimal physicochemistry.
+  grade: X
+  basis: 'NO. Thirty-six of 681 SMO-active molecules sit in the cartilage window, but maximum Tanimoto
+    similarity to SAG is 0.221 and none carries the chlorobenzothiophene-carboxamide core - they are the
+    oncology antagonist series. ChEMBL contains no SMO agonist medicinal-chemistry programme at all.'
+key_refs:
+- ref_id: farnum2006
+  year: 2006
+  type: primary
+  role: the measured growth-plate size-partition curve that cancels the delivery criterion for small
+    molecules - 332 Da at about 100 per cent of vascular concentration, 3 kDa about 60, 10 kDa about 10
+- ref_id: trompet2024
+  year: 2024
+  type: primary
+  role: the only in vivo growth-plate result for any SMO agonist, and the source of the SAG dose and schedule
+- ref_id: wang2010smo
+  year: 2010
+  type: primary
+  role: the four approved agonists and their sub-nanomolar Gli potencies with the mifepristone control that
+    makes the hedgehog arm GR-independent
+open_questions:
+- g_l12_369a
+- g_l7_368a
+contradicts:
+- CANCELS THE CARTILAGE-DELIVERY CRITERION FOR SMALL MOLECULES, and by extension narrows R315 and R353. The
+  delivery wall is real for proteins and was correctly applied to them; applying it to a 450-550 Da small
+  molecule is a category error, and R357 rejection of elacestrant on cLogP grounds should be re-read in that
+  light.
+- WITHDRAWS THE PREMISE OF ITS OWN SCREEN. I built a cationic-and-low-logP window, then found the window does
+  not bind at this molecular size. The screen is retained because it establishes that SMO chemotypes tolerate
+  polar solubilising tails, which is useful if a designed agonist is ever wanted.
+- DOES NOT SELECT A COMPOUND. It removes chemistry as the discriminator and leaves the choice resting
+  entirely on the glucocorticoid liability versus the absence of human exposure.
+last_verified: '2026-08-13'
