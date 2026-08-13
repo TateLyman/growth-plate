@@ -113,6 +113,14 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    before greping. **It is not that closures survive and positives don't; it is that ANYTHING NOT IN
    CLAUDE.md IS INVISIBLE, and its sign is irrelevant.** The fix was already written and not followed:
    **grep the graph BEFORE DRAFTING, not before committing** (CORR-324's rule, third failure).
+15b. **A GREP THAT MISSES ON VOCABULARY IS STILL A FAILED GREP.** CORR-353 (R366) — I wrote that energy
+   restriction had **zero coverage** in this atlas and was **never once asked**, having greped *caloric
+   restriction* and *fasting*. **The atlas calls it DIETARY RESTRICTION**, and
+   `g_l2_cycling_the_progenitor_pool` has held the fully-worked answer since **R178** — with the sign running
+   **opposite** to what I asserted (`oichi2023`: restriction CHARGES the progenitor pool). **Second CORR-313
+   instance in two rounds, and the third failure of "grep before drafting."** → **Grep the CONCEPT under at
+   least two names, and grep `gaps.yaml` as well as the nodes** — the answer to a "nobody has asked" claim is
+   very often sitting in an open gap under a synonym.
 16. **Searching the literature for a localisation question the atlas can answer locally.** CORR-316.
    **`atlas/quant/dataset_inventory.csv` — run every new gene against it BEFORE a literature search.**
    GSE9160 (the ONLY human zone-resolved growth plate, incl. perichondrium) sat vendored with a
@@ -1870,11 +1878,28 @@ length in any arm.**
 argument against rapalogs is a RATE argument (MTOR −3.65 cm · FKBP1A +4.605 · rapamycin halves rat growth).
 **Raptor ablation enhancing clone loss is a POOL argument, which is the worse one for a pool-limited
 subject** — and **METFORMIN inherits it through AMPK⊣mTORC1**, the R297/R326 conflict finally priced.
-⭐ **AND A VARIABLE WITH LITERALLY ZERO COVERAGE: ENERGY AND PROTEIN RESTRICTION.** mTORC1 is the cell's
-amino-acid/energy sensor. Grep: *caloric restriction* = **0 files**; every instance of *fasting* in this
-atlas is *fasting insulin* or *fasting glucose*. **Deliberate fasting, low intake, or hard training in
-deficit is a DIRECT INPUT to the self-renewal decision, not merely less building material.** Grade E, free
-to ask, never once asked.
+⛔⛔ **CORR-353 — I WROTE THAT ENERGY RESTRICTION HAS ZERO COVERAGE AND SPENDS THE POOL. BOTH HALVES ARE
+FALSE, AND I CORRECTED IT INSIDE THE ROUND.** I greped *caloric restriction* and *fasting*; **the atlas calls
+it DIETARY RESTRICTION**, and `g_l2_cycling_the_progenitor_pool` has held the worked answer since **R178**.
+**A grep that misses on vocabulary is still a failed grep** — second CORR-313 instance in two rounds.
+⭐ **`oichi2023` RUNS THE OPPOSITE WAY: 7 days of dietary restriction ACCUMULATED Axin2⁺ resting-zone
+progenitors and BLOCKED their differentiation** (RZ-to-plate-length ratio up); **refeeding discharged them
+above control rate to P48** — column output +, adjusted **P=0.0043 at P41, P<0.0001 at P48**, with the
+**PROGENITOR DENOMINATOR UNCHANGED (P>0.9999)** = a yield increase with both terms measured in the same
+animals. Switch = **IGF-1 → IGF1R → PI3K/Akt in the resting zone.** `gafni2001` gives the same shape with
+glucocorticoid — senescence delayed 3 weeks, **14% of plates fused vs 88% in controls.**
+**RESTRICTION CHARGES THE POOL. IT DOES NOT SPEND IT.**
+⛔ **AND IT IS STILL NOT A LEVER, for the reason already in that gap: NEITHER EXCEEDED CONTROL ON LENGTH** —
+oichi2023's deficit closed to 0.02 mm and 0.10 mm, both ns; gafni2001 stopped with growth still running. **A
+demonstrated loan repaid, not a demonstrated battery**, and **nobody has run REPEATED cycles at matched total
+intake** — which the gap calls the cheapest decisive experiment in this atlas.
+⭐⭐ **AND THE TENSION IS WORTH MORE THAN EITHER CLAIM — IT IS THE THIRD INSTANCE OF ONE PATTERN.**
+`newton2019` Raptor ablation (mTORC1 down, **CHRONIC**, genetic) → **clone LOSS**. `oichi2023` restriction
+(same axis down, **TRANSIENT**, 7 days) → **progenitor ACCUMULATION**. Same axis, same direction, opposite
+results, separated by **DURATION** — exactly the hedgehog result R363/R364 fought over (pulse expands,
+sustained converts to bone). **PULSE vs SUSTAINED IS NOW A DISCRIMINATOR ON THREE AXES — hedgehog, mTORC1 and
+GH — AND IN ALL THREE THE PULSE IS THE FAVOURABLE ONE.** ✗ Caveat: Axin2⁺ progenitors may not be newton2019's
+PTHrP⁺/CD73⁺ cells, so the two may not be about one population.
 
 ⛔ **THREE — AND THE HUMAN ANCHOR IS ABSENT, WHICH IS WHY THIS IS NOT A PROMOTION.** Run against both
 datasets on disk: **MTOR is the ONLY mTORC1-pathway gene in the 207** (pLoF −3.650 cm, P=2.17e-11, 166 hets)
