@@ -31,6 +31,12 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 - **SERMs / tamoxifen.** Permanent growth arrest by apoptosis of **resting-zone** chondrocytes, no catch-up. — R274 (chagin2007)
 - **ERβ axial lever.** Female mice only. — R274 (chagin2004)
 - **Senolytics.** Growth-plate senescence is not p16/SASP; nothing to clear. — R266
+- **D-penicillamine as a LOX-axis agent.** Aldehyde scavenger, not a catalytic-site inhibitor; hits the arm
+  BAPN already showed null; human paediatric osteolathyrism with scoliosis. — R337
+- **Aggrecanase inhibition to raise aggrecan.** Discharge blockade (the denosumab/RANKL trap). — R337
+- **The intervertebral disc as a growth reserve.** Discal growth ≈ zero after age 12 (n=188). — R337
+- **β2-adrenoceptor agonism.** Step 0 lands on cAMP→CREB; human β-blockade null; no human genetics; chronic
+  agonism desensitises. The MOUSE phenotype is real and stays (kuhn2026). — R337
 - **PTH1R / teriparatide.** Terminal femoral length 0.0% in every arm. — CORR-269
 - **Periosteal release.** Real but age-cutoff ~9.6 y. — periosteum node
 - **Dynamin/dynasore.** Is mTORC1 again; authors call the gain transient. — R267
@@ -1667,7 +1673,7 @@ HIF-PHI class was already checked in R284.
   differentiation, shorter bone. R276
 - **Alpha-ketoglutarate** — co-substrate for TET demethylation *and* a TCA intermediate. **Upgraded from
   grade-E mechanism-only to human-anchored (R283): TET1 loss is +8.32 cm in 1.45M people, so feeding the TET
-  co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
+  co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly. ⭐ **SECOND INDEPENDENT ARM (R337): KDM5, the H3K4me3 eraser, is the same 2-OG dioxygenase fold — and R333 says MORE H3K4me3 is TALLER.**
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
 - ⛔ **MINOXIDIL — ADDED R336. Oral or topical.** Its one in-vivo demonstration of engaging collagen
@@ -1739,6 +1745,96 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⛔ R337 — FIVE OBTAINABLE ROUTES TAKEN DOWN, AND A LENGTH ENDPOINT THAT SAT UNREAD HERE FOR A WEEK
+## No new addition survived. Recorded in full so the next context cannot re-derive any of it as new.
+
+⛔ **PENICILLAMINE IS THE WRONG HALF OF THE LOX AXIS — and it looked like the answer.** The cross-linking
+pathway is this file's best-powered signal (R334: 4 genes, all P≤1e-11, 20,751 carriers) and PXS-5505 is not
+marketed. **D-penicillamine IS marketed, oral, generic, decades of paediatric use, and a classical lathyrogen.**
+✗ **`rucker1977`: it blocks cross-linking by forming THIAZOLIDINE COMPLEXES WITH THE ALDEHYDE — it scavenges
+allysine, the PRODUCT of lysyl oxidase, and does NOT inhibit the enzyme.** R333 says the LOXL2 height signal
+is probably H3K4me3 deamination at the **CATALYTIC AMINE OXIDASE SITE**; R332's BAPN already measured the
+collagen arm and tibia length did not move (p=0.580). **So it engages the arm already shown NULL and misses
+the arm that may carry the signal.** ✗ `steinmann1979` = first human dermato-osteolathyrism from
+D-penicillamine, boy treated from age 2 for ~6 y, phenotype includes **SCOLIOSIS** — axial cost, wrong
+compartment. ✓ `ansell1977` (JCA children) shows no height harm but tracks disease activity, not the drug.
+⭐ **THE SPEC IS SHARPER: a CATALYTIC-SITE amine oxidase inhibitor, NOT an aldehyde scavenger — and NOT
+copper depletion** (`collagen_crosslinking` already records copper-deficient diet as one of four ways to
+INDUCE tibial dyschondroplasia).
+
+⛔ **RAISING AGGRECAN BY BLOCKING ITS CATABOLISM IS THE RANKL TRAP.** ACAN is −16.60 cm (P=1.9e-52), the
+biggest number in the table, and aggrecan cannot be supplied — so the only elevation route is less
+degradation, and clinical-stage aggrecanase inhibitors exist. **Killed by three free measurements:
+ADAMTS4 4.2 CPM/8.5% of cells and ADAMTS5 17.1/15.8% against MMP13 85.6/96.3%** (the aggrecanases are minor
+here) · **neither ADAMTS4 nor ADAMTS5 is in the 207** · and resorption at the chondro-osseous junction is
+**REQUIRED** — the exact reasoning that made denosumab a contraindication in R317. **Charge without
+discharge, 8th instance.** ✓ The SYNTHESIS-side route to raising aggrecan is untouched; the gap stays open.
+
+⛔ **THE INTERVERTEBRAL DISC IS NOT A GROWTH RESERVE — THIS CORRECTS R319.** R319 called the disc a second,
+**fusion-independent** trunk component (~¼ of the spinal column), which made it the most attractive
+compartment in the file for BA16: no window, right compartment, Step 0 clean. **`stokes2006disc` measures it
+— 406 stereoradiographic studies, 188 adolescents aged 7.5–20, vertebrae and discs separately: ~17 mm/yr
+vertebral vs 8 mm/yr discal at age 7.5, and DISCAL HEIGHT GROWTH IS EFFECTIVELY ZERO AFTER AGE 12.** Spinal
+growth from 10→20 is almost exclusively VERTEBRAL. ⚠ Cohort is idiopathic scoliosis. **What survives of R319
+is what R319 itself hedged: the disc governs the DIURNAL SWING and therefore the MEASUREMENT PROTOCOL, not a
+reserve to grow.**
+✓ **AND THE AI WORRY ON THE DISC IS VOID.** `stevenson2023` reads as "HRT raises disc height" and would have
+predicted anastrozole costs it. Its own numbers refuse it: within-arm +0.16 cm (1 mg, P=0.015) and +0.21
+(2 mg, P=0.006) vs **placebo +0.13** — and **BETWEEN-GROUP DIFFERENCES WERE NOT SIGNIFICANT.** CORR-320's
+shape, caught before it entered the file as a cost.
+
+⛔ **THE β2-ADRENOCEPTOR — ANSWERED IN BOTH DIRECTIONS, AND CORR-344's SECOND INSTANCE.** `kuhn2026` was
+filed **2026-08-06 with NO `one_line_finding`, tier null and type null** — and it holds a chondrocyte-specific
+LENGTH endpoint. Read in full: **Adrb2/Col2a1-Cre → femur AND tibia significantly reduced at 6, 12 AND 40 wk
+in BOTH sexes** (six groups, one direction), Col10a1⁺ and Col2⁺ up, Runx2⁺ unchanged = **faster
+proliferative→hypertrophic transition.** Direction = AGONISM, and salbutamol/terbutaline/formoterol are
+approved, oral/inhaled, cheap, given to children.
+✓ **CORR-327 PASSES CLEANLY AND THE SPECIFICITY IS UNUSUAL: ADRB2 12/14 at 8.4 CPM (21.4% of cells) is THE
+ONLY ADRENOCEPTOR IN THE PLATE** — ADRB1 0/14, ADRB3 0/14, ADRA1A 1/14, ADRA2A 4/14 — with GNAS 564.8/97%.
+⭐ **AND THE PLATE MAKES NO CATECHOLAMINE: TH 0/14, DBH 0/14, PNMT 0/14, SLC6A2 1/14** = the NPPC/NPR2
+configuration (receptor local, ligand systemic), which is what would favour a systemic agonist.
+⛔ **IT STILL FAILS, FOR FOUR INDEPENDENT REASONS, AND THE FIRST IS DECISIVE:**
+· **STEP 0 — ADRB2 is Gs-coupled → cAMP → PKA → CREB.** R307/R309 gave three lines against raising cAMP
+  (Jansen's · horike2026's CREB jam · ACRDYS2 at −4.81 SDS), and **erdafitinib's contribution IS lowering
+  CREB.** A β2 agonist pushes the node the lead drug exists to suppress.
+· **THE HUMAN TEST IS NULL — and the gap's premise ("nobody has asked") was WRONG.** The infantile-haemangioma
+  literature asked it repeatedly: **`giese2021` 185 infants on propranolol with MONTHLY prospective heights vs
+  WHO norms → no growth impairment**; `lin2023propranolol` n=51, paired Wilcoxon on height **P>0.05**; a 2025
+  JAAD report, none at age 4. **Months of systemic β-blockade during the fastest growth phase of human life
+  moved no height** → the axis is not RATE-LIMITING in humans. ⚠ Blockade being harmless does not strictly
+  exclude agonism helping, and propranolol is non-selective — but giese2021 DID detect a BMI/weight-for-age
+  signal beyond 7 months, so it was not insensitive.
+· **NO HUMAN HEIGHT GENETICS — ADRB2 returns ZERO rows in `kosmicki2026`.**
+· ⭐ **CHRONIC GPCR AGONISM SELF-LIMITS — β2 agonists desensitise and downregulate their own receptor in
+  days-to-weeks.** Wrong pharmacology for years of tonic drive. **A worked instance of R306's conclusion:
+  enter at PRODUCTION or DEGRADATION, not at receptor agonism.**
+→ Gap `g_l3adrn_001` **ANSWERED**. What stays open is narrower: **no β2 AGONIST has been given to a normal
+growing animal with a bone-length endpoint in any species.**
+
+⛔ **THE GENERIC DRUG-vs-HEIGHT MR SCREEN WAS RUN AND IS NOT USABLE — do not chase it.** `xi2024`: 27,094
+genes instrumented by GTEx cis-eQTLs against height in GIANT + UKB + BBJ, drug mapping via DGIdb — on its
+face the unbiased drug-level screen CORR-295 asks for, never cited here. **Two defects.** Its hits localise
+to **oesophagus mucosa, spleen, whole blood, brain — NPPC in PANCREAS, HLA-C across 17 tissues** (CORR-339:
+an eQTL tissue label is not the causal tissue). And its **drug DIRECTION column is CURATED FROM PRIOR
+LITERATURE, NOT DERIVED** — the authors themselves note corticosteroids and BMN-111 map to the **same**
+target (NPPC) with **opposite** height effects. Its positive list includes **TAMOXIFEN**, closed here on
+mechanism (R274). ⭐ **ONE GENERALISATION WORTH KEEPING: every drug on that positive list except vosoritide
+— amoxicillin, infliximab, colchicine, propionyl-L-carnitine — is a RESTORATION story in an inflammatory or
+deficiency state, so CORR-203 excludes them for a healthy subject.** That is why generic screens keep
+returning nothing usable here; it is an argument FOR the targeted approach, not a failure of searching.
+
+⚠ **AKG AND MEGADOSE VITAMIN C ARE NOW CONTRAINDICATED TWICE, INDEPENDENTLY.** Already listed against on the
+TET arm (TET1 loss = **+8.32 cm**, so feeding the co-substrate runs height-LOSING). **R333's module runs the
+other way — MORE H3K4me3 IS TALLER** (LOXL2 eraser +0.68; writers KMT2B −0.35, ASH1L −0.41) — and the **KDM5
+demethylases that erase H3K4me3 are Fe(II)/2-OG dioxygenases of the SAME FOLD AS TET.** Raising 2-OG feeds
+them too → more KDM5 → less H3K4me3 → shorter. Same supplement, same cofactor logic, second arm. Grade E.
+⚠ **TENSION RECORDED, NOT EXPLAINED AWAY: GLS (glutaminase), which supplies 2-OG, is −3.28 cm on loss at
+325 CPM/87% of cells** — the other way. But GLS loss also removes glutamate, glutathione and nucleotide
+precursors, so it is not a clean 2-OG experiment, while TET1's +8.32 cm is direct. **Glutamine as a substrate
+donor is NOT promotable** — its supplementation literature is entirely livestock growth-performance (the
+taurine/aquaculture problem again) with no bone-length endpoint, and it runs into this same conflict.
+⛔ **The R316 caveat is unchanged and is about MEGADOSING ONLY, never adequacy.**
 
 ## ⛔⛔⛔ R335/R336 — **MINOXIDIL: ASKED PROPERLY, ANSWERED NO. DO NOT ADD IT AT ANY DOSE, AND CHECK WHETHER
 ## HE IS ALREADY ON IT.** The mechanism is real, the concentration is ~1000× out of reach, and where it IS
