@@ -1670,6 +1670,12 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+- ⛔ **MINOXIDIL — ADDED R336. Oral or topical.** Its one in-vivo demonstration of engaging collagen
+  biosynthesis (`bhalla2025`) **significantly REDUCED Col2a1, Col9a2, Col11a1 AND ACAN** by "limiting Sox9⁺
+  chondrocyte expansion" — COL2A1 is the plate's most abundant transcript and **ACAN pLoF is −16.55 cm, the
+  largest height-lowering effect known.** Also antiproliferative (`pinnell1987`) in a proliferative tissue.
+  ⭐ **TOPICAL MINOXIDIL IS OTC AND NEAR-UBIQUITOUS IN TEENAGE BOYS WITH REAL SYSTEMIC ABSORPTION — ASK
+  WHETHER HE IS USING IT.** Grade D (embryonic mouse thymic mesenchyme, not growth plate), free to stop.
 
 ## 🎯🎯🎯 R331 — **THE COMPOUND: PXS-5505 (LENUMLOSTAT), ORAL, 200 mg BID.** The screen run to the end in
 ## both directions. Polyamines KILLED. The elevation direction is fully occupied. This is what's left.
@@ -1734,8 +1740,9 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
-## 💊 R335 — **A PRESCRIBABLE COMPOUND ON THE CROSS-LINKING AXIS: ORAL MINOXIDIL IS A LYSYL HYDROXYLASE
-## (PLOD) INHIBITOR.** Approved, oral, cheap, already given to adolescents — and the dose question decides it.
+## ⛔⛔⛔ R335/R336 — **MINOXIDIL: ASKED PROPERLY, ANSWERED NO. DO NOT ADD IT AT ANY DOSE, AND CHECK WHETHER
+## HE IS ALREADY ON IT.** The mechanism is real, the concentration is ~1000× out of reach, and where it IS
+## engaged in vivo it SUPPRESSES Col2a1, Col9a2, Col11a1 AND ACAN — the growth plate's own programme.
 
 **THE CHAIN, EVERY LINK CHECKED.** R334 established the pathway is FOUR concordant human genes. Two of them
 are the lysyl HYDROXYLASES: **PLOD1 +0.54 cm (P=1.1e-11, 8,036 carriers) · PLOD2 +0.91 cm (P=1.0e-11, 2,791).**
@@ -1773,8 +1780,26 @@ bone-length endpoint for minoxidil in any species.** ✗ Hypertrichosis is near-
 ⚠ `park2026trps` is the only cohort where CHILDREN got minoxidil with growth tracked (20 TRPS I/III
 patients, rhGH and minoxidil both given) — **abstract reports responses only as "variable", no numbers,
 paywalled.** The one document worth buying if this axis is pursued.
-**Grade C. It is the first PRESCRIBABLE candidate this file has produced — and its mechanism-engaging dose
-is not the dose that is casually prescribed.** Gap `g_l12_335a`.
+⛔⛔⛔ **R336 — THE DEEP DIVE, AND IT KILLS IT ON THREE INDEPENDENT GROUNDS. VERDICT: DO NOT ADD.**
+**① THE CONCENTRATION GAP IS ~1000×, NOT ~20×.** `hautala1992` is the definitive mechanistic paper and it
+used **1 mM minoxidil** to lower lysine hydroxylase protein and mRNA (proline 4-hydroxylase subunits
+unaffected — selective, but at one millimolar). `handa1993` measured suppression over 0.01–1 mM. **Oral
+minoxidil at any tolerated dose gives plasma at or below ~1 µM.** The enzyme is not engaged in a human.
+**② WHERE IT *IS* ENGAGED IN VIVO, IT SUPPRESSES THE GROWTH-PLATE PROGRAMME ITSELF.** `bhalla2025`, Fig 4A —
+minoxidil to pregnant mice **significantly REDUCED Col2a1, Col9a2, Col11a1 AND ACAN**, the paper's own
+mechanism being *"limiting Sox9⁺ chondrocyte expansion."* **COL2A1 is the most abundant transcript in the
+human growth plate (9,201 CPM) and ACAN pLoF is −16.55 cm — the LARGEST height-lowering effect in the whole
+kosmicki table.** The one in-vivo demonstration that minoxidil engages collagen biosynthesis shows it
+switching off exactly what the plate must build. ⚠ Embryonic thymic mesenchyme, not growth plate — but the
+genes are cell-intrinsic chondrocyte genes and the drug was systemic.
+**③ IT IS ANTIPROLIFERATIVE.** `pinnell1987`: suppression of fibroblast proliferation and DNA synthesis.
+The growth plate is a proliferative tissue — the same objection that killed the polyamine drugs (R331).
+→ ⛔ **MINOXIDIL MOVES TO THE CONTRAINDICATION WATCH-LIST, NOT THE STACK.** And this is actionable in the
+other direction: **topical minoxidil is OTC, near-ubiquitous in teenage boys, and achieves real systemic
+absorption. ASK WHETHER HE IS USING IT.** Same class as the paracetamol/AKG/megadose-vitamin-C avoidances.
+✗ What survives: the PLOD arm's human genetics (PLOD1 +0.54, PLOD2 +0.91) are untouched — **minoxidil is the
+wrong molecule for them, not evidence against the target.** Gap `g_l12_335a` stands, restated: the PLOD arm
+needs an agent with potency in the achievable range, and minoxidil is 1000× short.
 
 ## ⛔⛔⛔ R334 — **CORR-347: "NO COMPOUND" WAS COMPUTED FROM THE WRONG DATABASE, AND THE OPERATOR CAUGHT IT.**
 ## Run `atlas/tools/round334_chembl_chemical_matter_sweep.py`. Data `atlas/data/round334/`.
