@@ -1852,6 +1852,75 @@ separates the three cases that matter — **clock stalled · clock at the smith2
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
 
+## ⭐⭐⭐⭐ R359 — **THE WHOLE OESTROGEN PATHWAY MAPPED. "Cover every node with compounds" fails for the
+## OPPOSITE reason to the expected one: THE PATHWAY IS NOT IN THE TISSUE. Six branches close on measurement.**
+
+Operator asked to cover synthesis, the sulfate reservoir, ERα/ERβ/GPER, AF-1/AF-2, coregulators, clearance
+and the gonadotropin axis with compounds however niche, to mimic or exceed the ERα-null human. **~70 genes
+run against `kosmicki2026`'s 1.45M-exome burden table AND against purity-corrected human growth plate.**
+
+⭐⭐ **ONE — THE GENETIC MAP: ONLY TWO OF ~70 GENES REACH THE 207, AND WE ARE ALREADY ON ONE.**
+· **POR** (obligate electron donor for CYP19A1) — **pure pLoF +1.080 cm, P=5.0e-08, 1,261 hets**, and
+  **MONOTONE**: pLoF +1.080 > pLoF+delmis +0.450 > delmis +0.391 > all missense +0.268 (n=27,128).
+  **THAT IS THE AROMATASE-INHIBITOR DIRECTION WITH A HUMAN EFFECT SIZE — anastrozole's arm.**
+· **ESR1** — all missense **+0.356 cm at P=5.58e-16 across 26,176**; delmis +0.432; **SINGLETON rows +1.68
+  to +1.92** — monotone in allele RARITY, R324's causal shape.
+⛔ **NOT IN THE 207 AT ANY VARIANT CLASS:** CYP19A1 · STS · SULT1E1/1A1/2B1 · SLC10A6 · SLCO2B1 ·
+HSD17B1/2/3/7/12 · AKR1C3 · CYP11A1 · CYP17A1 · HSD3B1/2 · STAR · SRD5A1/2 · **ESR2** · **GPER1** · AR ·
+NCOA1/2/3 · NCOR1/2 · CREBBP · EP300 · FOXA1 · GATA3 · GREB1 · PGR · TFF1 · COMT · CYP1A1/1B1/3A4 · SHBG ·
+GNRH1 · GNRHR · LHCGR · FSHR · KISS1/KISS1R · STUB1 · SIRT7 · CRBN.
+⭐ **THERE IS NO THIRD NODE. The pathway is two genes wide at population scale.**
+
+⭐⭐ **TWO — THE TISSUE AGREES, AND SIX BRANCHES CLOSE ON MEASUREMENT.** Purity-corrected GSE288028
+(calibrators COL2A1 9.67, ACAN 4.25 · PTPRC 0.03, AGTR1 0.24 killed losartan, MME 0.35 killed sacubitril):
+· ⛔ **ERβ IS CONTAMINATION OUTRIGHT — ESR2 ratio 0.04** (0.6 CPM pure vs 41.6). Every ERβ agent is pointless,
+  and this reconfirms R274's ERβ closure by a wholly independent route.
+· ⛔ **GPER1 0.76 at 3.2 CPM** — G15/G36 and the whole GPER class, dead.
+· ⛔ **EVERY CLASSICAL COREGULATOR IS CONTAMINANT-LEANING** — NCOA1 0.11, NCOA2 0.10, GATA3 0.14, NCOA3 0.17,
+  CREBBP 0.24, NCOR2 0.36, EP300 0.36, NCOR1 0.37; FOXA1 0.1 CPM. Only PELP1 neutral (1.02).
+· ⛔ **AND THE CLASSICAL OUTPUT TOO — GREB1 0.52, PGR 0.68, TFF1 4/12 at 0.1 CPM.** Independently reproduces
+  R354's recorded residual puzzle: **the plate has ERα protein in 64% of cells and does not appear to run the
+  canonical oestrogen transcriptional programme.**
+· ⛔ **NO LOCAL AROMATASE — CYP19A1 0.6 CPM, ratio 0.71.** Anastrozole necessarily acts systemically.
+· ⛔ **THE ESTRONE-SULFATE RESERVOIR IS NOT LOCAL** — STS 0.39, SLCO2B1 0.27, SULT2B1 0.36. **IROSUSTAT and
+  the whole sulfatase class = systemic ligand-lowering = anastrozole's own arm → Step 0 substitution** — and
+  R274 (letrozole = anastrozole) + R337 (letrozole suppresses the E1S reservoir deeper, 90.1% vs 72.9%) have
+  already tested deeper ligand suppression twice and it bought no height.
+· ⛔ **GONADOTROPIN RECEPTORS ABSENT** — GNRHR 0.64, LHCGR 0.71, FSHR 0.82; and R329 closed GnRHa on ADULT
+  HEIGHT (0.81 vs 0.48 SDS, P<.01).
+· ✗ **17β-HSD1: no clinical-stage inhibitor exists** (EPMC record is 20 in-silico/phytosterol papers) and
+  HSD17B1 is 2.3 CPM. ⚠ **HSD17B12 IS the one cartilage-enriched steroidogenic enzyme (2.03, 82.8 CPM)** but
+  its canonical role is fatty-acid elongation and a 2025 functional analysis assigns it and HSD17B7 to
+  **TESTOSTERONE** biosynthesis — **not claimed as an oestrogen node**, no selective inhibitor either way.
+
+⭐ **THREE — THE ONE NEW TARGET: STUB1/CHIP IS CARTILAGE-ENRICHED AND IS THE PHYSIOLOGICAL PROTAC.**
+**STUB1 ratio 2.26, 71.5 CPM, 12/12** — on COL2A1's side of the calibration. `cao2026sirt7` names STUB1 as
+the E3 through which **UNLIGANDED** ERα is degraded — **precisely the species of receptor this subject has at
+3.3–6 pmol/L.** Machinery around it enriched: PSMB5 2.27, NEDD8 2.18, RBX1 1.68, DDB1 1.60, CUL4B 1.50.
+⚠ **AND IT CORRECTS R353: CRBN — the E3 vepdegestrant recruits — is CONTAMINANT-LEANING at 0.69** (31.5 CPM
+pure vs 45.9). Present (CORR-351: a ratio measures origin, not presence) but **not enriched, while STUB1 is.
+The PROTAC recruits the less tissue-appropriate ligase of the two.** ✗ No STUB1 activator in any species.
+
+⭐⭐⭐ **FOUR — "OR EVEN FURTHER" IS YES IN PRINCIPLE, FOR A REASON NOBODY HAD STATED.**
+**THE ERα-NULL MAN HAS HIGH CIRCULATING OESTRADIOL** — no receptor means no negative feedback. His phenotype
+is *"no ERα WITH abundant ligand still available to whatever remains."* The aromatase-deficient man is the
+mirror: *no ligand, intact receptor.* **NEITHER NATURAL EXPERIMENT HAS BOTH. Anastrozole + a degrader is both
+at once, and no human has ever been in that state** — strictly a more complete lesion than either model.
+⚠ **THE HONEST DISCOUNT, FROM THIS ROUND'S OWN DATA:** what the combination additionally removes is ligand
+acting on **ERβ and GPER** — the two receptors this round just showed are **not in the plate**. So the
+completeness gain may be real systemically and **nominal at the growth plate.**
+⚠ And smith2008's bound is unchanged: 0.7 BA-y/CA-y with ERα absent from conception.
+
+⛔ **FIVE — A CORRECTION I MADE AGAINST MYSELF INSIDE THE ROUND.** I first read **ESR1 pure pLoF +0.040,
+P=0.963, n=68** as haplosufficiency — which would have argued that partial degradation is useless.
+**The 95% CI is [−1.626, +1.706], width 3.33 cm** — it cannot exclude an effect larger than POR's entire
+pure-pLoF effect. **UNINFORMATIVE IN BOTH DIRECTIONS.** CORR-348's shape applied to statistics: an absent
+signal at n=68 is not a measured null. What carries ESR1 is the missense series.
+
+⚠ **ONE UNEXPLAINED OBSERVATION, RECORDED NOT CHASED: KISS1R is CARTILAGE-ENRICHED at ratio 5.77, 7.8 CPM,
+12/12.** The kisspeptin receptor is canonically hypothalamic and has never been localised to cartilage here.
+Not in the 207, low abundance, no obtainable antagonist, direction unknown. Not a lead.
+
 ## ⚠⚠⚠ R358 — **THE OPERATOR WAS RIGHT AND R357 IS PARTLY WITHDRAWN. Every study R357 used to kill the
 ## mimic is in the WRONG CONFIGURATION — and correcting for it rehabilitates the mimic, adds two costs, and
 ## produces a better question than either: LIGAND-REMOVAL vs RECEPTOR-REMOVAL IN MALES.**
