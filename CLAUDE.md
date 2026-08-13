@@ -1854,6 +1854,54 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ⭐⭐⭐⭐⭐ R369 — **FOUR FDA-APPROVED SMOOTHENED AGONISTS EXIST, AND THE CORTICOSTEROID CLASS SPLITS ON
+## HEDGEHOG DIRECTION MOLECULE BY MOLECULE.** The operator was right; "no approved SMO agonist" is retired.
+
+⭐⭐⭐ **ONE — `wang2010smo` (PNAS, 69 cites): a beta-arrestin2-GFP high-content screen identified
+HALCINONIDE, FLUTICASONE, CLOBETASOL and FLUOCINONIDE as SMO AGONISTS.** All four **bind Smo, promote Smo
+INTERNALISATION, activate Gli, and stimulate proliferation of primary neuronal precursors — alone AND
+SYNERGISTICALLY with Shh protein.** The authors' own framing: Hh therapy development had been "impeded by a
+lack of FDA-approved Smo agonists." ✓ **Independently corroborated:** `porcu2015` rediscovered halcinonide
+and clobetasol as Smo agonists in a screen of the **1,200-compound Prestwick FDA-approved library**; a 2024
+in vivo rat study has halcinonide activating SMO; a 2019 study has clobetasol activating canonical Hh in
+adult neural stem cells. **Two independent screens, four lines.**
+
+⭐⭐⭐ **TWO — THE CLASS SPLITS, WITH A STRUCTURAL REASON.**
+· **AGONISTS: halcinonide · clobetasol · fluticasone · fluocinonide**
+· **ANTAGONIST: BUDESONIDE** — binds the SMO **cysteine-rich domain** and **prevents SMO ciliary
+  translocation** (`recchia2024`)
+· **INHIBITORS: DEXAMETHASONE, FLUDROCORTISONE, corticosterone** (`hedaya2018`) — non-competitive with BOTH
+  the cyclopamine (TM) and 20(S)-OHC (CRD) sites → an allosteric site, and **additive with cyclopamine**
+⭐ **THE REASON, stated by `hedaya2018`: the SMO–cholesterol structure indicates cholesterol is the natural
+activating ligand, and fluorinated corticosterone derivatives are STRUCTURALLY SIMILAR TO CHOLESTEROL.
+Corticosteroids are sterols and SMO is a sterol-activated receptor — the class engages SMO and the DIRECTION
+is a property of the individual molecule.**
+⭐ **And `porcu2015` supplies the point that makes this more than a curiosity: its hits are ALL GR agonists
+yet split into THREE efficacy groups — so HEDGEHOG DIRECTION IS NOT SET BY GR POTENCY.** Separable in principle.
+
+⛔⛔ **THREE — THEY CANNOT BE SYSTEMIC GROWTH AGENTS AND I AM NOT PROPOSING ONE.** GR activation suppresses
+longitudinal growth (grade A; inhaled steroids measurably cut attained height). **NEITHER SCREEN ABSTRACT
+REPORTS A SMO POTENCY**, so the SMO:GR ratio — the only thing that could make a systemic proposal viable — is
+unknown. **This is the minoxidil configuration of R335/R336: a real mechanism at a possibly unreachable
+concentration.** `g_l12_369a` is that one measurement, and step 1 is entirely in vitro.
+
+⭐⭐ **FOUR — WHERE IT DOES MATTER: THE LOCAL ROUTE.** `trompet2024` got **femur +3.63% at 6 months, still
+widening**, from a bead carrying **7 µg of SAG** in the distal femoral SOC. **SAG has zero human exposure;
+clobetasol and halcinonide are approved, potent, small and lipophilic. An approved SMO agonist is a far more
+obtainable bead payload than a research reagent**, and a local depot is exactly what minimises the systemic
+GR exposure that disqualifies the class. ✗ **The tension: a locally released corticosteroid still activates
+GR locally, and local GR activation at a plate is growth-suppressive.** Unmeasured in any species.
+
+⭐ **FIVE — ONE FREE SUBSTITUTION, SAME SHAPE AS R366's ANTIFUNGALS. BUDESONIDE AND FLUTICASONE ARE THE TWO
+COMMONEST INHALED CORTICOSTEROIDS AND THEY RUN OPPOSITE WAYS AT SMO.** Dexamethasone, the commonest systemic
+steroid, inhibits. Since four days of a SMO antagonist fused a normal juvenile plate (`newton2019`), the
+hedgehog direction of a chronically used steroid is a real variable and **costs nothing to choose.**
+
+⛔ **SIX — A FALSE UNIFICATION KILLED BEFORE IT WAS WRITTEN.** The tempting move was to explain `gafni2001`
+(glucocorticoid → senescence delayed 3 wk, **14% of plates fused vs 88%**) as a hedgehog effect. **It used
+DEXAMETHASONE, which `hedaya2018` shows INHIBITS hedgehog.** The delay happened DESPITE Hh inhibition and is
+the division-counted clock being spared by growth suppression — R365's argument, not this one. Keep separate.
+
 ## ⭐⭐⭐⭐⭐ R368 — **"THE ROUTE MUST BE LOCAL" IS WITHDRAWN. SYSTEMIC SMO AGONISTS EXIST, ARE MANY, AND
 ## SYSTEMIC SAG POST-SOC EXPANDS THE POOL 61% — the "null" was 7 days at n=5 with a CI spanning +49%.**
 
