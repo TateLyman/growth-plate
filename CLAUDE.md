@@ -1786,6 +1786,73 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯 R351 — **THE ADDITION. THE GATE WAS ALREADY PASSED AND NOBODY APPLIED IT.**
+## The operator's oestradiol is **3.3–6 pmol/L**. R339 set the rule and then the number arrived and sat unused.
+
+⭐ **R339's RULE, VERBATIM:** E2 **above** ~6.5 pmol/L on anastrozole → the growth-PROMOTING limb is still in
+use, ablating the receptor costs it (the sims2012 trade), **don't**. E2 **at or below** it → that limb is
+largely spent, little velocity left to lose, and the degrader adds blockade of the **ligand-independent**
+closure drive no AI can reach — *"that is the case where it makes sense."*
+· `albin2013`: half-maximal growth acceleration in **BOYS at oestradiol 6.5 pmol/L (95% CI 3.2–13)**.
+· **HE IS AT 3.3–6.** At or below the point estimate, in the lower half of the CI.
+· ⭐ **THE ASCENDING-LIMB COST HAS ALREADY BEEN PAID — BY ANASTROZOLE. WHAT REMAINS UNPAID IS THE CLOSURE DRIVE.**
+
+⭐⭐ **THE NEW ARGUMENT, SPECIFIC TO HIM, THAT THIS FILE HAD NEVER MADE: HE IS ON GH, AND IGF-1 ACTIVATES
+ERα WITHOUT LIGAND.** ERα Ser118 is phosphorylated by **Erk1/2 MAPK** and Ser167 by **AKT and p90RSK**,
+stimulating receptor activity ligand-independently (`yamnik2010`) — and `grissom2016` shows it **IN VIVO IN
+THE MATCHING CONFIGURATION: ovariectomised rats, i.e. an oestrogen-deplete animal, in which IGF-1 activates
+ERα and drives ERα-mediated transcription.** **He is an oestrogen-deplete animal with a deliberately elevated
+growth-factor axis** — so he is precisely the subject in whom suppressing the LIGAND leaves the most residual
+receptor activity, because his own GH arm feeds the receptor anastrozole is trying to silence.
+⚠ **THE TENSION, STATED IMMEDIATELY:** `brjesson2012`'s ERαAF-1(0) mice have that domain DELETED, are
+hyperactive, and **CLOSED every plate** — so closure does not REQUIRE AF-1, and Ser118/Ser167 are AF-1 sites.
+**This is an argument about residual receptor ACTIVITY an AI cannot silence, NOT proof that these phosphosites
+are the fusion signal.** Both can be true. Neither has been measured in a growth plate.
+
+🎯 **THE AGENT: VEPDEGESTRANT (ARV-471, Veppanu) — FDA-approved 1 May 2026, first PROTAC ever approved, ORAL,
+200 mg once daily with food.** It degrades the **whole protein** — AF-1, AF-2, DBD and the membrane pool —
+which is exactly what `the_receptor_level_oestrogen_sweep` specified and then said **no drug does**.
+✓ **Step 0 clean:** anastrozole removes LIGAND; R274 + R337 show that arm is SATURATED; **the RECEPTOR is the
+one step nothing in this stack touches.**
+✓ **Dose rationale is unique to this node (R339):** everywhere else this file wants PARTIAL suppression of a
+band with an interior optimum — here the target phenotype **IS the protein absent** (the ERα-null human), and
+oncology also wants maximal degradation. **The two indications coincide here and nowhere else.**
+✓ **Stack:** GH **FAVOURABLE** (removing ERα should RAISE IGF-1 at fixed dose) · erdafitinib **measured and
+clean** (`roskos2024`: midazolam GMRs 86.3/88.5/82.1%, no meaningful CYP3A4 effect) · anastrozole **not
+redundant** (ligand vs receptor). ⛔ **Untested: the REVERSE direction — vepdegestrant on erdafitinib, which
+also runs through polymorphic CYP2C9.**
+
+⛔ **WHAT WOULD KILL IT — and the first is a human paediatric trial.**
+· **`sims2012` IS THE WARNING SHOT:** fulvestrant, 30 growing girls, 12 mo — bone-age advance **1.99 → 1.06
+  (p=0.0007)** and **PAH DID NOT MOVE (163.0 → 163.5)** because velocity fell with the clock. The defence —
+  fulvestrant is an AF-2 blocker and poor in-vivo degrader, so the mechanism PREDICTS that null — is untested
+  and convenient. **If a PROTAC reproduces that shape the class is closed for good.**
+· **`smith2008` BOUNDS THE UPSIDE:** bone age still advanced **15 → 17.5 y over 3.5 y with the receptor
+  entirely absent** ≈ 0.7 BA-y per CA-y. With 1–2 BA-years left that is **~half a calendar year** — the same
+  order as the AI's 1.3 cm/3 yr, which is why sims2012 could net zero.
+· ⚠ **`zhang2023_era_chondrocyte` — THE COUNTER THIS FILE ALREADY HELD:** ERα has a **ligand-independent
+  PROTECTIVE** function in human chondrocytes; overexpression REDUCED DNA damage and senescence. Removing the
+  protein removes functions blocking the ligand does not. Opposed in vivo by `brjesson2010`.
+· **Vertebral cost is an EFFICACY term (R278):** ERα-null humans reach spine Z **−3.85 → −5.6**, unresponsive
+  to oestradiol AND tamoxifen, and the residual is trunk-dominant. ✓ **Degradation is REVERSIBLE on stopping.**
+· **Approved for ADULTS with ESR1-mutated metastatic breast cancer. No paediatric indication, no paediatric PK
+  for any PROTAC, and no PROTAC has ever been given to a growing human.**
+
+⭐ **MONITORING — TRACK BOTH TERMS OR THE FAILURE MODE READS AS SUCCESS.** The sims2012 signature is ΔBA/ΔCA
+falling **with velocity falling proportionally**, netting zero; bone-age deceleration alone looks like a win.
+So: **standing AND sitting height at a FIXED TIME OF DAY** (R319 — the diurnal swing exceeds a year of
+expected gain) · **BoneXpert**, not a by-eye read (R282 — method spread = 2.2 cm of PAH) · IGF-1 ·
+ultrasensitive E2 · lateral T-L film + DXA.
+⚠ **ONE PROVENANCE CHECK ON THE GATE ITSELF: 6.5 pmol/L ≈ 1.8 pg/mL, BELOW routine immunoassay sensitivity.**
+The number only carries information if it came from **LC-MS/MS or an extraction assay** — confirm which.
+
+⭐ **THE CHEAP SECOND ADD, unchanged and still unactioned: ORAL SODIUM SULFATE.** Trunk-specific (sitting
+height **P=2.16e-07**, 2× the standing effect at the same N), Step 0 clean, acts on **h_term**, obtainable
+today — grade D and gated on **one blood test, serum inorganic sulfate**, which has never been ordered.
+⭐ **AND THE FREE SUBTRACTIONS:** topical/oral **minoxidil** (ask — it is OTC and near-ubiquitous in teenage
+boys) · **paracetamol** (−24% serum sulfate per 1.5 g — doubly relevant if sulfate is added) · **AKG and
+megadose vitamin C** · **NR/NMN/high-dose nicotinamide** (they load NNMT, the plate's methyl sink).
+
 ## ⛔⛔⛔ R350 — **THE NONCLINICAL REVIEW WAS HUNTED DOWN AND IT HOLDS THE EXACT EXPERIMENT. IT IS NULL.
 ## THE DABIGATRAN ARM CLOSES.** ⭐ **And it opens a whole class of length endpoints this file has never mined.**
 
