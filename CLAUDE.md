@@ -1881,6 +1881,48 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯🎯 R372 — **IT EXISTS AND HERE IS THE DOSE.** Run `atlas/tools/round372_smo_agonist_dose_and_window.py`
+
+⭐ **ONE — SAG IS PURCHASABLE.** CAS **364590-63-6**, stocked by Tocris (**4366**), Sigma/Calbiochem (566660),
+Abcam, Santa Cruz, BOC Sciences, Focus Biomolecules at **≥98% HPLC** with CoA — **and as the DIHYDROCHLORIDE
+(Tocris 6390), the water-soluble salt**, which matters because the free base is cLogP 6.79. Vendor potency
+(→ `chen2002smo`): **SMO Kd 59 nM, Shh-LIGHT2 Gli EC50 ~3 nM.** ⛔ Research chemical, **not** a medicine —
+no GMP, no human PK, no tox package, **zero registry trials of any SMO agonist**.
+
+⭐⭐⭐ **TWO — THE COMPARISON THAT REFRAMES THE CHOICE.** On **direct SMO binding** the approved steroids are
+indistinguishable from SAG: **clobetasol 57 nM · fluticasone 58 · halcinonide 78 · SAG Kd 59.** On
+**functional Gli output they BEAT it**: **0.2 / 0.3 / 1.8 nM vs SAG ~3 nM.** **The approved compounds are
+equal or superior to SAG at Smoothened on both measures.** The only thing SAG has is **no GR**.
+
+⭐⭐⭐ **THREE — SO THE WINDOW IS EVERYTHING, AND ONLY TWO OF FOUR HAVE ONE** (Gli EC50 ÷ GR potency, ChEMBL):
+| compound | Gli EC50 | GR best/median | **window** |
+|---|---|---|---|
+| **FLUOCINONIDE** | 0.3 | 2.39 / 5.26 | **8.0–17.5×** |
+| **CLOBETASOL PROP.** | **0.2** | 0.66 / 1.46 | **3.3–7.3×** |
+| fluticasone prop. | 0.3 | 0.04 / 0.50 | 0.13–1.7× — **none** |
+| halcinonide | 1.8 | 0.73 / 1.61 | 0.41–0.9× — **GR engaged FIRST** |
+→ **HALCINONIDE, WHICH R371 RANKED FIRST ON PHYSICOCHEMISTRY, IS LAST ON THE ONLY CRITERION THAT SURVIVED.**
+⚠ **But fluocinonide wins on an incoherent number** — SMO binding 1,000 nM yet Gli 0.3 nM, a **3,333×**
+binding-to-function gap vs 285× (clobetasol) and 43× (halcinonide). **CLOBETASOL IS THE MORE DEFENSIBLE PICK:
+best Gli potency, SMO binding equal to SAG, and a real 3–7× window.**
+
+⭐ **FOUR — SYSTEMIC SAG DOSE.** From `trompet2024` (25 µg/g/day i.p., mouse, P31–P37), FDA BSA allometry
+(Km 3 → 37) gives **HED 2.03 mg/kg/day** = **101 mg at 50 kg · 122 at 60 · 142 at 70**, i.e. **~0.7–1.0 g per
+7-day pulse.**
+
+⭐⭐⭐⭐ **FIVE — THE LOCAL DEPOT ARITHMETIC IS THE ENCOURAGING PART, BECAUSE IT SCALES BY GEOMETRY NOT BODY
+MASS.**
+· **Concentration** — the 7 µg bead = 14.3 nmol ≈ **750 nM in a ~19 µL rat epiphysis, ~250× EC50.** The depot
+  is a **reservoir**, not a potency-limited dose.
+· **Reach** — for 500 Da in cartilage at D = 1–3 ×10⁻⁶ cm²/s, √(2Dt) over the bead's **measured 3-week life**
+  = **19–33 mm**. A human distal femoral epiphysis is 70–80 mm wide → **half-distance 35–40 mm. ONE central
+  depot reaches most of it; 2–3 cover it.**
+· **Payload** — holding a **whole** human epiphysis at **100× EC50 needs 26 µg.** The rat bead held 7.
+  **A MICROGRAM-TO-LOW-MILLIGRAM PROBLEM, not a gram problem.**
+⛔ **THE HONEST CORRECTION: a depot must BALANCE CLEARANCE, not fill a volume once.** The fill number is a
+**LOWER BOUND**, not a dose. **Epiphyseal clearance has never been measured for any SMO agonist**, and D for
+SAG in cartilage has never been measured in any species.
+
 ## 🎯🎯🎯🎯 R371 — **WHICH SMO AGONIST, CALCULATED. And the calculation CANCELS ITS OWN CRITERION: the
 ## cartilage delivery wall is a PROTEIN problem and does not apply to a 450–550 Da small molecule.**
 ## Run `atlas/tools/round371_smo_agonist_cartilage_selection.py` → `atlas/data/round371/`
