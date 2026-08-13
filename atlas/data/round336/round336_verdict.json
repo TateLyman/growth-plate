@@ -1,0 +1,66 @@
+{
+ "round": 336,
+ "question": "After the ChEMBL correction (CORR-347), does any newly-surfaced target validate as an ADDITION?",
+ "verdict": "NO. Three candidates were taken down this round and none survives. The honest position is that nothing new validates for addition today.",
+ "MAPKAPK2_MK2": {
+  "for": {
+   "cm": 0.67,
+   "P": 1.24e-09,
+   "n_het": 4095,
+   "tissue": "12/14, 107.1 CPM",
+   "chembl_mols": 963,
+   "best_pchembl": 9.52,
+   "clinical": "zunsemetinib / ATI-450 reached clinical development - the best-drugged target the sweep found"
+  },
+  "against": [
+   "MECHANISTIC CONFLICT WITH THE DRUG HE IS ALREADY ON. agoston2007, via the atlas's fgfr3_mapk_branch node: in micro-dissected mouse tibia CNP REQUIRES p38 to achieve and maintain the expanded hypertrophic zone while simultaneously inhibiting ERK. He is on a CNP analogue. MK2 is p38's principal effector kinase, so MK2 inhibition risks antagonising the mechanism by which vosoritide works - not substitution but ANTAGONISM.",
+   "IMPC Mapkapk2 homozygote TIBIA LENGTH -1.736, P=0.082, n=10 - trending SHORTER, opposite to the human +0.67 and about 8x the median IMPC effect size. Underpowered and not significant, but discordant.",
+   "NO chondrocyte or growth-plate data for MK2 in any species; its entire literature is the inflammatory arm of p38 (IL-1beta, HSP27, hnRNPA0, macrophages)."
+  ],
+  "partial_defence": "p38 phosphorylates MEF2C directly, and MEF2C is the hypertrophy driver (13,179 CPM in HZ). MK2's known substrates are inflammatory, so the MEF2C arm may be separable from the MK2 arm - but that separation is inferred, not measured, and no experiment tests it in cartilage.",
+  "verdict": "NOT PROMOTABLE. Best chemistry in the sweep, three strikes against."
+ },
+ "CYP26B1": {
+  "cm": 0.81,
+  "P": 1.03e-11,
+  "chembl_mols": 25,
+  "best_pchembl": 9.34,
+  "against": [
+   "Loss raises retinoic acid, and retinoid excess (isotretinoin) is the classical cause of PREMATURE EPIPHYSEAL CLOSURE - the pharmacology runs against the het effect.",
+   "Biallelic loss = craniosynostosis with radiohumeral fusions (CORR-325).",
+   "No IMPC length row."
+  ],
+  "verdict": "NOT PROMOTABLE."
+ },
+ "MINOXIDIL": {
+  "verdict": "KILLED AND INVERTED TO A CONTRAINDICATION - see round 335/336. ~1000x concentration gap (hautala1992 used 1 mM), and where engaged in vivo it significantly reduced Col2a1, Col9a2, Col11a1 AND Acan (bhalla2025)."
+ },
+ "what_is_actually_closest_to_addable": [
+  {
+   "rank": 1,
+   "agent": "navepegritide (YUVIWEL)",
+   "status": "FDA APPROVED Feb 2026, once weekly, label criterion is achondroplasia WITH OPEN EPIPHYSES",
+   "caveat": "This is a SUBSTITUTION within the CNP arm he is already on, not an addition, and it is not a demonstrated height upgrade over vosoritide - APPROACH 1.49 cm/yr against the CNP class 1.36, overlapping intervals, no head-to-head. Decided on adherence and continuous exposure."
+  },
+  {
+   "rank": 2,
+   "agent": "PXS-5505 (lenumlostat)",
+   "status": "phase I/IIa complete, 200 mg BID, NOT prescribable",
+   "for": "Four concordant human genes across 20,751 carriers (LOXL3 +0.96, PLOD2 +0.91, LOXL2 +0.68, PLOD1 +0.54, all P<=1e-11); receiver test passes at 186 CPM in 87% of cells; Step 0 clean; pan-LOX so it covers LOXL2 and LOXL3 together; osteolathyrism objection REFUTED at a length endpoint (mcnerny2015 tibia 17.2 vs 17.2, p=0.580).",
+   "against": "Mechanism weakened - BAPN moved cross-links and mechanics while leaving length and all six cancellous parameters null; cartilage-specific Loxl2 knockouts develop OA and LOXL2 supplementation protects; round 312 rat contrast backwards."
+  },
+  {
+   "rank": 3,
+   "agent": "oral sodium sulfate",
+   "status": "obtainable today, cheap",
+   "for": "Sulfate is TRUNK-specific at P=2.2e-07 (scherer2025 ST16), which is his residual compartment; morris1983 raised serum inorganic sulfate 25% in replete adults.",
+   "against": "Grade D - renal reabsorption is capacity-limited so an oral dose is largely dumped; no chronic-dosing time course; no bone-length endpoint in any species.",
+   "gate": "ONE BLOOD TEST - serum inorganic sulfate. Low end supports correcting it; mid-range says drop it."
+  }
+ ],
+ "free_subtractions_now_actionable": [
+  "MINOXIDIL topical or oral - OTC, near-ubiquitous in teenage boys, systemically absorbed, and it suppresses Col2a1/Col9a2/Col11a1/ACAN in vivo",
+  "PARACETAMOL - one 1.5 g dose drops serum sulfate 24% (morris1983)",
+  "ALPHA-KETOGLUTARATE and MEGADOSE VITAMIN C - TET co-substrates, and TET1 loss is +7.95 cm"
+ ]
+}

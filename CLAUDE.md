@@ -1860,15 +1860,30 @@ together. The genetic basis for the compound is materially stronger than when it
 
 ⚠ **TWO NEW CANDIDATES WITH REAL CHEMISTRY, RECORDED WITH THEIR BLOCKERS — do not promote either.**
 · **MAPKAPK2 (MK2)** +0.67 cm, P=1.2e-09, 4,095 carriers, **107 CPM 12/14, 963 molecules at pChEMBL 9.52,
-  and clinical-stage inhibitors exist (zunsemetinib/ATI-450).** ⛔ **BLOCKED by this atlas's own
-  `fgfr3_mapk_branch` node: p38 is REQUIRED to achieve and maintain the expanded hypertrophic zone and acts
-  OPPOSITE to ERK.** MK2 is p38's principal effector, so inhibiting it should REDUCE h_term (~80% of growth)
-  — and erdafitinib blocks FGFR3 upstream of both arms, so Step 0 raises substitution risk too. **A
-  well-powered human positive in direct mechanistic conflict with the file. Resolve before touching.**
+  and clinical-stage inhibitors exist (zunsemetinib/ATI-450)** — the best-drugged target the sweep found.
+  ⛔⛔ **TAKEN DOWN IN R336, THREE STRIKES.** ① **The conflict is with the drug he is ALREADY ON, and it is
+  antagonism not substitution:** `agoston2007` via `fgfr3_mapk_branch` — in micro-dissected mouse tibia
+  **CNP REQUIRES p38 to achieve and maintain the expanded hypertrophic zone** while inhibiting ERK. He is on
+  a CNP analogue; MK2 is p38's principal effector. ② **IMPC Mapkapk2 hom TIBIA LENGTH −1.736, P=0.082, n=10**
+  — trending SHORTER, opposite to the human +0.67, and ~8× the median IMPC effect. Underpowered, discordant.
+  ③ **No chondrocyte or growth-plate data in any species** — MK2's entire literature is p38's INFLAMMATORY
+  arm (IL-1β, HSP27, hnRNPA0). ⚠ Partial defence, inferred not measured: p38 phosphorylates **MEF2C**
+  directly (13,179 CPM in HZ) and MEF2C is the hypertrophy driver, so the MEF2C arm may be separable from
+  the MK2 arm — nobody has tested that in cartilage. **NOT PROMOTABLE.**
 · **CYP26B1** +0.81 cm, P=1.0e-11, 3,502 carriers, 25 molecules at pChEMBL 9.34, talarozole-class inhibitors
   exist. ⛔ **BLOCKED: CYP26B1 degrades retinoic acid, so loss RAISES RA — and retinoid excess is the
   classical cause of PREMATURE EPIPHYSEAL CLOSURE (isotretinoin). Biallelic loss = craniosynostosis with
-  radiohumeral fusions (CORR-325).** Pharmacology runs against the het effect.
+  radiohumeral fusions (CORR-325).** Pharmacology runs against the het effect. No IMPC length row. **DEAD.**
+
+⛔ **R336's HONEST BOTTOM LINE — NOTHING NEW VALIDATES AS AN ADDITION.** Polyamines (R331), minoxidil
+(R335/336), MK2 and CYP26B1 were all taken down. **What is actually closest, ranked and stated as what it
+is:** ① **navepegritide** — APPROVED, obtainable, label criterion "open epiphyses" matches him — but it is a
+**SUBSTITUTION inside the CNP arm**, not an addition, and not a demonstrated upgrade on vosoritide.
+② **PXS-5505** — four concordant genes, 20,751 carriers, safety refuted at a length endpoint, Step 0 clean —
+**but phase 2 and not prescribable**, and the cross-linking mechanism is weakened. ③ **oral sodium sulfate**
+— obtainable today, trunk-specific at P=2.2e-07, **grade D and gated on ONE blood test (serum inorganic
+sulfate)**. ⭐ **And three FREE SUBTRACTIONS are now actionable: minoxidil (any route), paracetamol, and
+AKG/megadose vitamin C.**
 ✗ Minor: DAP +0.87 (5 mols), KAT2B +0.17 (284 mols, degrader) — effect or chemistry too thin.
 ⛔ **CONFIRMED EMPTY on a proper ChEMBL query — these "no molecule" calls were RIGHT:** HHIP · NRK · CHAD ·
 SCUBE3 · STC2 · PAPPA · FBN1 · FBN2 · LCORL · SCMH1 · HMG20B · ZFAT · ZNF518A · SAMD4A · XYLT1 · EXT1 ·
