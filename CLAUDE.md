@@ -1757,6 +1757,52 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ⭐⭐⭐ R345 — **CLEC3A: THE FIRST GENUINELY NEW TARGET IN MANY ROUNDS, AND IT EXISTED ONLY BECAUSE
+## R344 FIXED THE DATA.** Best-powered secreted target after STC2, cartilage-SPECIFIC, zero prior coverage.
+## ⛔ **AND THE OBVIOUS DRUG (TRANEXAMIC ACID) DOES NOT SURVIVE — do not propose it.**
+
+⭐ **HOW IT WAS FOUND, WHICH IS THE POINT.** R298/R300/R331/R343 all filtered candidates on "is it in the
+tissue?" using R308's CONTAMINATED CPMs. Re-running the screen on R344's purity-corrected values surfaces
+genes that were diluted by blood and wrongly dropped. **CLEC3A was 11.3× understated (83.8 → 949.7).**
+
+**THE TARGET.** **CLEC3A +1.52 cm, P=1.2e-43, 4,160 carriers** — after STC2 the best-powered positive row
+in the whole burden table. **949.7 CPM in PURE cartilage, 9.2× cartilage-enriched** — one of the most
+abundant transcripts in the tissue. **SECRETED** (R287's LAYER; R314's antibody-tractable class). Direction
+is **INHIBIT**. **ZERO prior atlas nodes and ZERO references.**
+✓ **`lau2018clec3a`: CLEC3A is CARTILAGE-SPECIFIC, present by immunohistochemistry in RESTING, PROLIFERATING
+AND HYPERTROPHIC growth plate** — independent confirmation of the 949.7 CPM — assembles into an **extended
+extracellular network**, can carry chondroitin/dermatan sulfate chains, and **binds plasminogen and ENHANCES
+tPA-MEDIATED PLASMINOGEN ACTIVATION**. Its homologue tetranectin binds **plasminogen KRINGLE 4**.
+✓ **STEP 0 CLEAN** — matrix proteolysis/plasmin is moved by *nothing* in this stack.
+✓ **The surrounding system is coherent in corrected data:** plasminogen receptors abundant and enriched
+(**S100A10 1,037 CPM 6.6×**, ANXA2 561, PLAUR 212) with **SERPINE1 334 (3.5×)** restraining, while **PLG
+itself is 0.1 CPM** and tPA is contamination — the plate imports the zymogen and controls activation locally.
+
+⛔ **WHAT IS WRONG WITH IT — state these before anyone re-promotes it.**
+· **A DIRECT MECHANISTIC CONTRADICTION, UNRESOLVED.** `clec3a2022disc`: CLEC3A **stimulates PI3K-AKT and
+  accelerates proliferation**, supporting chondrocyte differentiation and disc homeostasis — which predicts
+  loss = SHORTER, against the burden data, and runs against R324's finding that AKT is the growth-POSITIVE
+  direction. Nucleus pulposus, in vitro, no length endpoint. **Two mechanism papers, opposite predictions.**
+· **NO MOUSE LENGTH ENDPOINT — IMPC has ZERO Clec3a rows.**
+· **ZERO CHEMICAL MATTER** (confirmed on R334's proper ChEMBL query, not a drug count).
+· **DISCHARGE RISK:** plasmin-driven proteolysis may be required at the chondro-osseous junction — the
+  RANKL/aggrecanase trap, failure mode #1.
+⛔⛔ **AND TRANEXAMIC ACID IS NOT THE HANDLE.** It was the obvious idea — a lysine analogue occupying the
+plasminogen kringle lysine-binding sites CLEC3A's family uses, approved, oral, generic, **157 Da so fully
+cartilage-permeant** (farnum2006: 332 Da ≈ 100% of vascular concentration), decades of adolescent use.
+✗ **It is INDIRECT** (blocks plasminogen, not CLEC3A) and lysine-dependence is established for tetranectin,
+**not demonstrated for CLEC3A**. ✗ **And `txa2026ptoa` characterises an off-target that runs exactly the
+wrong way: TXA binds endothelin receptor B (docking −5.1 kcal/mol), activating ET-1/ETB and raising MMP13,
+NF-κB, IL-1β, TNF-α and IL-6, with OARSI scores significantly INCREASED (P<0.0001).** It promotes cartilage
+degradation and raises the protease that resorbs the plate. ⚠ Rat injury model, and most TXA chondrotoxicity
+data is high-concentration intra-articular rather than systemic oral — so this bounds the DRUG, not the target.
+
+→ **NET: a real new target, no compound.** The honest ask is the same shape as HHIP and CHAD — a
+function-blocking binder against a secreted cartilage-specific protein with a defined partner. What CLEC3A
+has that they don't is **P=1.2e-43 across 4,160 carriers and 950 CPM in the right tissue.**
+⭐ **CHEAPEST VALIDATION: no Clec3a-null bone has ever been measured. IMPC has no rows; the KO would settle
+direction and adjudicate the plasmin-versus-AKT contradiction in one experiment.**
+
 ## 🚨🚨🚨 R344 — **THE FLAGSHIP HUMAN DATASET HAD TWO MOUSE SAMPLES IN IT AND NO PURITY CONTROL.**
 ## Recomputed from the raw matrices. Nothing reverses; the NUMBERS move 4–72×, and it RE-RANKS THE LEADS.
 ## ⛔ **USE `atlas/data/round344/gse288028_purity_corrected.json`, NOT R308's TABLE, FOR ANY EXPRESSION CALL.**
