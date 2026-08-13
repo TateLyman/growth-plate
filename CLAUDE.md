@@ -1676,6 +1676,8 @@ HIF-PHI class was already checked in R284.
 
 ## CONTRAINDICATED — do not add to the stack
 
+- **Menin-MLL inhibitors** (revumenib, approved Nov 2024; ziftomenib) — block KMT2A-dependent H3K4
+  methylation, and R333 says MORE H3K4me3 is TALLER. Grade E, mechanistic. R342
 - **DNMT inhibitors** (azacitidine, decitabine) — reproduce the Dnmt1-KO direction: accelerated
   differentiation, shorter bone. R276
 - **Alpha-ketoglutarate** — co-substrate for TET demethylation *and* a TCA intermediate. **Upgraded from
@@ -1752,6 +1754,53 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⭐⭐ R342 — **THE STC2 HANDLE EXISTS AND IS A SOLVED 3.1 Å INTERFACE.** And the marketed chromatin
+## shelf is audited: it is FULL and it POINTS THE WRONG WAY — which is why "think like decitabine" keeps failing.
+
+⛔ **R341 ASSERTED "no anti-STC2 antibody exists" WITHOUT QUERYING IT** — the CORR-312/333/335 failure mode.
+Queried properly, and searching the FOLD not the drug name:
+⭐⭐ **`gohr2022` — cryo-EM of the 500 kDa 2:2 PAPP-A·STC2 complex, 3.1 Å.** **THE INHIBITION IS NOT ACTIVE-SITE
+BLOCKADE** — the catalytic cleft stays **ACCESSIBLE** and still hydrolyses a synthetic IGFBP-4 peptide.
+STC2 works by **OCCLUDING THE SUBSTRATE EXOSITE** (contacts to a module at PAPP-A's **very C-terminal end**
+block IGFBP-4 binding), locked by **a specific INTERSUBUNIT DISULFIDE** that prevents dissociation. **The
+authors nominate it themselves:** the mechanism *"may support the development of specific pharmaceutical
+agents, by which IGF signaling can be indirectly modulated."*
+→ **The target is a DEFINED INTERFACE WITH A PUBLISHED STRUCTURE AND A COVALENT TETHER, not an undefined
+secreted protein.** Three entry points, none requiring systemic STC2 neutralisation: block the C-terminal
+exosite contact · prevent the disulfide · bind STC2's PAPP-A-facing surface. **This is CHAD/LRRWLEAK's shape
+(CORR-335), not HHIP's** (whose pocket was a homology prediction with no ligand).
+✗ **Still true: NO such agent exists in any species**, and PAPP-A antibodies run the OPPOSITE way.
+
+✓ **AND THE TARGET STRENGTHENED FROM TWO INDEPENDENT DIRECTIONS WHILE SEARCHING.**
+· **`stc2igf2024`, 394 adults, ELISA + adjusted regression: STC2 INVERSELY RELATED TO TOTAL IGF-1** — human
+  protein-level confirmation. ⭐ **And PAPP-A was NOT related to total or free IGF-1** — exactly what R341's
+  local-vs-circulating split predicts if PAPP-A acts PERICELLULARLY rather than setting the circulating pool.
+· **`stc2a2025hypoxia`: Stc2a deletion → increased developmental speed and growth rate, ENLARGED ADULT ORGAN
+  AND BODY SIZE — REVERSED by inhibiting pappalysin AND by blocking IGF signalling.** That converts
+  STC2→pappalysin→IGF→growth from inference into a **rescue experiment**. ⭐ **Stc2a is HIF2-INDUCED UNDER
+  HYPOXIA — and the growth plate is a profoundly hypoxic tissue**, predicting the brake is tonically ON there.
+  ✗ Zebrafish grow indeterminately with no mammalian plate — "body size" is not a bone-length endpoint.
+  ✗ Nulls grew faster under hypoxia and **SURVIVED LESS** — the trade the gene exists to make.
+
+⭐⭐⭐ **THE CHROMATIN SHELF AUDIT — 21 genes with marketed/clinical agents vs the human height table.**
+**ONLY FOUR REACH THE 207, AND NONE HAS A DRUG IN THE WANTED DIRECTION:**
+· **TET1 +7.95 cm (P=4.8e-28)** — the only large effect; direction **INHIBIT**; **no clinical inhibitor**
+· **KMT2B −0.35** (15,945) and **ASH1L −0.41** (11,997, 170.9 CPM) — **WRITERS**; direction **RAISE**; **no activators**
+· KAT2B +0.17 — too small
+**EVERY GENE WITH A MARKETED DRUG IS ABSENT FROM THE 207** — DNMT1, DNMT3A, EZH2, EED, KMT2A, KMT2D, DOT1L,
+KDM1A, KDM5A/B, HDAC4, SETD2, NSD1, BRD2, CREBBP, EP300, SMARCA4 — and every one assessed here is already
+contraindicated (DNMTi R276 · EZH2i R281/R311 · pinometostat R311 · HDACi incl. givinostat R298).
+⭐ **THE GENERALISATION: THE MARKETED EPIGENETIC PHARMACOPOEIA IS AN ONCOLOGY INHIBITOR SHELF, AND FOR HEIGHT
+THE USABLE DIRECTION IS ALMOST ALWAYS THE OTHER ONE.** R298's base rate restated for chromatin. **That is
+why an instruction to think at decitabine scale returns contraindications rather than candidates — the scale
+is right, the shelf is pointed the wrong way.** ⚠ Absence from the 207 is not proof of no effect (CORR-310);
+the claim is about the SHELF, not the biology.
+
+⚠ **NEW CONTRAINDICATION — MENIN-MLL INHIBITORS: REVUMENIB (approved Nov 2024) and ZIFTOMENIB.** They block
+the menin-KMT2A interaction and therefore KMT2A-dependent H3K4 methylation, while **R333 says MORE H3K4me3
+is TALLER** (eraser LOXL2 +0.68; writers KMT2B −0.35, ASH1L −0.41). Grade E, no bone endpoint in any species
+— watch-item alongside HDACi and DNMTi, recorded because the class is newly approved and was absent here.
 
 ## ⭐⭐⭐ R341 — **THE STEP-0 KILL ON STC2 WAS THE WRONG COMPARTMENT.** Best-powered secreted target in
 ## the file, REOPENED. Plus three concept-scale layers run: CCN2 closed, imprinted network closed, m6A opened.
