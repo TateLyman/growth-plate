@@ -1734,6 +1734,48 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 💊 R335 — **A PRESCRIBABLE COMPOUND ON THE CROSS-LINKING AXIS: ORAL MINOXIDIL IS A LYSYL HYDROXYLASE
+## (PLOD) INHIBITOR.** Approved, oral, cheap, already given to adolescents — and the dose question decides it.
+
+**THE CHAIN, EVERY LINK CHECKED.** R334 established the pathway is FOUR concordant human genes. Two of them
+are the lysyl HYDROXYLASES: **PLOD1 +0.54 cm (P=1.1e-11, 8,036 carriers) · PLOD2 +0.91 cm (P=1.0e-11, 2,791).**
+Both loss = taller → **INHIBIT**. Tissue: **PLOD2 745 CPM, PLOD1 40 CPM, both 12/14** — PLOD2 is one of the
+highest-expressed genes in the panel. **IMPC Plod1 TIBIA LENGTH +0.090, P=2.40e-03** — positive, the RARE
+direction under CORR-329, and the only length endpoint on this pathway. **Step 0 clean.** Acts on **h_term**.
+
+⭐ **AND MINOXIDIL IS A LYSYL HYDROXYLASE INHIBITOR — established since 1987 and used as one IN VIVO in 2024.**
+· `pinnell1987`: minoxidil causes a **SPECIFIC, REVERSIBLE loss of lysyl hydroxylase activity** in human
+  fibroblasts, acting at the **TRANSCRIPTIONAL** level (LH mRNA falls specifically).
+· `murad1994`: **SELECTIVE — suppresses LYSYL hydroxylase WITHOUT affecting PROLYL hydroxylase.** So this is
+  not generic 2-OG dioxygenase inhibition; it is the PLOD family specifically.
+· `aurigemma2024`: **"Minoxidil, a lysyl hydroxylase inhibitor"** — dosed IP in pregnant mice, reduced the
+  penetrance of cardiac septation defects in Tbx1 mutants **by inhibiting collagen cross-linking**, and had
+  **NO effect and no anomalies in WILD-TYPE fetuses.**
+✓ **Obtainability is the point: minoxidil is APPROVED, ORAL, generic, decades old, and low-dose oral
+minoxidil (0.25–5 mg) is routinely prescribed to adolescents for hair loss.** Nothing else in this file is
+prescribable today.
+
+⛔ **THE DOSE PROBLEM, STATED PLAINLY — THIS IS WHAT DECIDES IT.** `handa1993` measured LH suppression at
+**0.01–1 mM** minoxidil, with antiproliferative half-maximal at 1.5–2.5 mM. **Oral minoxidil at hair-loss
+doses gives plasma around or below 1 µM — a gap of one to two orders of magnitude.** ⭐ **But the in-vivo
+dose is the better guide: `aurigemma2024` used 110 µg per injection in a ~30 g mouse ≈ 3.7 mg/kg, which by
+body-surface scaling is ≈ 20 mg/day in a human — ANTIHYPERTENSIVE-range oral minoxidil, not the hair dose.**
+→ **The mechanism is probably NOT engaged at 0.25–5 mg. At 10–40 mg it plausibly is, and that dose carries
+reflex tachycardia, sodium/fluid retention and pericardial effusion, conventionally requiring a beta-blocker
+and a loop diuretic.** Risk is deprioritised here; **prescribability at that dose is not.**
+
+⛔ **AND THE SAME-PATHWAY COUNTER-EVIDENCE APPLIES.** R332's `mcnerny2015` reduced mature collagen
+cross-linking substantially in growing male mice and **tibia length did not move (p=0.580)**. Minoxidil acts
+one step upstream (hydroxylysine supply, which sets cross-link TYPE) rather than on LOX itself, so it is not
+strictly the same manipulation — but it is the same pathway and the null is the honest prior.
+✗ Also: **PLOD2 biallelic loss = Bruck syndrome (short)** — CORR-325 at the biallelic end. ✗ **No
+bone-length endpoint for minoxidil in any species.** ✗ Hypertrichosis is near-universal at effective doses.
+⚠ `park2026trps` is the only cohort where CHILDREN got minoxidil with growth tracked (20 TRPS I/III
+patients, rhGH and minoxidil both given) — **abstract reports responses only as "variable", no numbers,
+paywalled.** The one document worth buying if this axis is pursued.
+**Grade C. It is the first PRESCRIBABLE candidate this file has produced — and its mechanism-engaging dose
+is not the dose that is casually prescribed.** Gap `g_l12_335a`.
+
 ## ⛔⛔⛔ R334 — **CORR-347: "NO COMPOUND" WAS COMPUTED FROM THE WRONG DATABASE, AND THE OPERATOR CAUGHT IT.**
 ## Run `atlas/tools/round334_chembl_chemical_matter_sweep.py`. Data `atlas/data/round334/`.
 
