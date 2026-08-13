@@ -1726,6 +1726,47 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⭐⭐⭐ R333 — **THE MECHANISM WAS PROBABLY NEVER COLLAGEN. LOXL2 IS AN H3K4me3 ERASER, AND THE WRITER/
+## ERASER PAIR HAS OPPOSITE SIGNS AT P=1.4e-16 AND 4.3e-10.** `atlas/data/round333/`
+
+⛔ **FIRST, LOXL2 INHIBITION IS DOWNGRADED — FOUR STRIKES, TWO OF THEM NEW.** ① `mcnerny2015` BAPN tibia
+length p=0.580 (R332) · ② R312's rat site contrast runs backwards · ③ **NEW: cartilage-specific
+`Acan-Cre;Loxl2^flox/flox` mice exist in TWO papers from one lab** — deletion upregulates Il1b, Mmp9, Mmp13,
+Adamts4/5, cuts aggrecan and proteoglycan, **triggers TMJ-OA and aggravates post-traumatic knee OA** ·
+④ **NEW: LOXL2 SUPPLEMENTATION PROTECTS cartilage** (adenoviral LOXL2 relieves PTOA; recombinant LOXL2 used
+to crosslink bioprinted cartilage). **In cartilage the direction is to ADD LOXL2, not block it.** ✗ Neither
+lab measured a bone — **the conditional mouse exists and nobody has calipered its femur.**
+
+⭐⭐ **BUT THE HEIGHT SIGNAL MAY BE NUCLEAR, NOT MATRIX. `LOXL2 DEAMINATES H3K4me3`** (PMID 27735137 — an
+unconventional demethylation mechanism). Read that way the module is coherent and **better powered than
+anything else quoted this week:**
+| | gene | β cm/allele | P | carriers |
+|---|---|---|---|---|
+| **ERASER** (loss → MORE H3K4me3) | **LOXL2** | **+0.68** | **1.37e-16** | **7,404** |
+| **WRITER** (loss → LESS H3K4me3) | **KMT2B** | **−0.35** | 4.29e-10 | 15,945 |
+| **WRITER** | **ASH1L** | **−0.41** | 3.47e-10 | 11,997 |
+**MORE H3K4me3 = TALLER.** ⭐ **And it explains all three anomalies at once:** BAPN reduced *bone collagen*
+cross-links and left length untouched · the cartilage-OA literature and the height genetics conflict because
+they are **two different functions of one protein** · R312's matrix-framed rat contrast ran backwards.
+✓ **Erasers are abundant in the plate:** KDM5A **90 CPM/63% of cells** · KDM5B 69/65.6% · KDM5C 30 · KDM5D 22
+· KDM1A 44 · LOXL2 186/87.3%. Writers too: KMT2A 116, ASH1L 171.
+⚠ **This is the arm CLAUDE.md already calls "still open — the live half."**
+
+⛔ **AND THE MOUSE CANNOT ADJUDICATE IT — CORR-329 APPLIED PROPERLY, NOT CHERRY-PICKED.** IMPC gives
+**Kdm5b hom body length −0.934 (P=1.04e-05)** — an ERASER loss that is SHORTER, i.e. *against* the human
+prediction — alongside writers Kmt2d −2.005 (1.03e-06) and Setd2 −3.898 (7.21e-09) that are *for* it.
+**But 63.7% of all knockouts are shorter and significant hits run 245:38 negative, so EVERY significant row
+here sits in the common direction and carries almost no information.** The only row in the RARE direction is
+Kdm5a het **+0.465, ns (P=0.250)**. Loxl2 has no IMPC length row at all. **Uninformative both ways — do not
+cite Kdm5b as a refutation.**
+
+⛔ **COMPOUND STATUS: NO clinical-stage KDM5 inhibitor exists** (CPI-455, KDM5-C70 are preclinical tool
+compounds). ⚠ Endothelial Kdm5a loss → shortened lifespan + skeletal kyphosis (PMID 41236095).
+⭐ **THE ONE THING THAT KEEPS PXS-5505 ALIVE: BAPN and PXS-5505 inhibit the LOXL2 CATALYTIC amine-oxidase
+site — the SAME site used for H3K4me3 deamination.** So a LOX inhibitor should engage the nuclear function
+too. **Whether it reaches the nuclear pool is unmeasured, and that is now the deciding experiment:
+H3K4me3 by western/CUT&RUN in growth-plate chondrocytes under PXS-5505.** Cheap, in vitro, no animal.
 ✗ Also against: IMPC has **no Loxl2 length row at all**; R312's rat contrast runs BACKWARDS; PLOD2 biallelic
 = Bruck (short); never given to an adolescent. **Grade C. Not a recommendation — a specification.**
 Gap `g_l12_331a`.

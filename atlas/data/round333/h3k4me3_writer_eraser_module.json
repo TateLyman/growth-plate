@@ -1,0 +1,121 @@
+{
+ "question": "Is LOXL2's human height effect its MATRIX (collagen cross-linking) function or its NUCLEAR (H3K4me3 deamination) function?",
+ "human_genetics_kosmicki2026_best_powered_row": {
+  "LOXL2_eraser": {
+   "cat": "pLoF + deleterious missense",
+   "eff_cm": 0.68,
+   "P": 1.37e-16,
+   "n_het": 7404
+  },
+  "LOXL2_pLoF_only": {
+   "eff_cm": 1.4,
+   "P": 2.2e-09,
+   "n_het": 907
+  },
+  "KMT2B_writer": {
+   "cat": "pLoF + missense",
+   "eff_cm": -0.35,
+   "P": 4.29e-10,
+   "n_het": 15945
+  },
+  "ASH1L_writer": {
+   "cat": "pLoF + deleterious missense",
+   "eff_cm": -0.41,
+   "P": 3.47e-10,
+   "n_het": 11997
+  }
+ },
+ "interpretation": "Erasing less H3K4me3 = TALLER; writing less H3K4me3 = SHORTER. Opposite signs, both arms very well powered.",
+ "KDM5_not_in_the_207": [
+  "KDM5A",
+  "KDM5B",
+  "KDM5C",
+  "KDM5D",
+  "KDM1A"
+ ],
+ "tissue_GSE288028_postnatal_human_growth_plate": {
+  "KDM5A": {
+   "det": 12,
+   "medCPM": 90.0,
+   "maxPct": 63.0
+  },
+  "KDM5B": {
+   "det": 12,
+   "medCPM": 69.0,
+   "maxPct": 65.6
+  },
+  "KDM5C": {
+   "det": 12,
+   "medCPM": 30.1,
+   "maxPct": 38.6
+  },
+  "KDM5D": {
+   "det": 9,
+   "medCPM": 22.3,
+   "maxPct": 31.3
+  },
+  "KDM1A": {
+   "det": 12,
+   "medCPM": 44.3,
+   "maxPct": 41.0
+  },
+  "LOXL2": {
+   "det": 12,
+   "medCPM": 186.3,
+   "maxPct": 87.3
+  },
+  "KMT2A": {
+   "det": 12,
+   "medCPM": 116.0,
+   "maxPct": 66.8
+  },
+  "ASH1L": {
+   "det": 12,
+   "medCPM": 170.9,
+   "maxPct": 82.2
+  }
+ },
+ "impc_mouse_length": {
+  "Kdm5b_hom_body_length": {
+   "eff": -0.934,
+   "P": 1.04e-05,
+   "n": 14,
+   "note": "ERASER loss SHORTER - opposite to the human prediction"
+  },
+  "Kdm5a_het_body_length": {
+   "eff": 0.465,
+   "P": 0.25,
+   "n": 14
+  },
+  "Kdm5c_het_tibia": {
+   "eff": -1.579,
+   "P": 0.073,
+   "n": 4
+  },
+  "Kmt2d_het_female_body_length": {
+   "eff": -2.005,
+   "P": 1.03e-06,
+   "n": 8,
+   "note": "WRITER loss SHORTER - consistent"
+  },
+  "Setd2_hom_tibia": {
+   "eff": -3.898,
+   "P": 7.21e-09,
+   "n": 10,
+   "note": "WRITER loss SHORTER - consistent"
+  },
+  "Kmt2b_het": {
+   "eff": 0.048,
+   "P": 0.253
+  },
+  "Ash1l_het": {
+   "eff": 0.001,
+   "P": 0.875
+  },
+  "Loxl2": "NO IMPC LENGTH ROW"
+ },
+ "impc_verdict": "UNINFORMATIVE, and CORR-329 is why. 63.7 per cent of all IMPC knockouts are shorter and significant hits run 245 negative to 38 positive, so EVERY significant row here - Kdm5b -0.934, Kmt2d -2.005, Setd2 -3.898 - sits in the common direction and carries almost no information. The only row in the RARE direction is Kdm5a het +0.465 and it is not significant (P=0.250). The mouse cannot adjudicate this module.",
+ "why_it_matters": "If LOXL2's height effect is nuclear rather than matrix it explains (a) why mcnerny2015's BAPN reduced BONE COLLAGEN cross-linking and left tibia length at p=0.580, (b) why the cartilage-specific Loxl2 knockout literature (Acan-Cre;Loxl2fl/fl, two labs) says LOXL2 PROTECTS cartilage while human genetics say losing it makes people taller - two different functions of one protein, and (c) why round 312's rat matrix-based contrast ran backwards.",
+ "compound_status": "NO clinical-stage KDM5 inhibitor exists; the class (CPI-455, KDM5-C70) is preclinical and cancer-focused. PXS-5505 and BAPN inhibit the LOXL2 CATALYTIC amine oxidase site, which is the same site used for H3K4me3 deamination - so a LOX inhibitor should engage the nuclear function too, and whether it reaches the nuclear pool is unmeasured.",
+ "caution": "Endothelial-specific KDM5A deficiency shortens lifespan and causes skeletal kyphosis (PMID 41236095)."
+}
