@@ -1758,9 +1758,15 @@ candidate because every competitor has no molecule at all — but the axis is no
 ## ⭐⭐ R342 — **THE STC2 HANDLE EXISTS AND IS A SOLVED 3.1 Å INTERFACE.** And the marketed chromatin
 ## shelf is audited: it is FULL and it POINTS THE WRONG WAY — which is why "think like decitabine" keeps failing.
 
-⛔ **R341 ASSERTED "no anti-STC2 antibody exists" WITHOUT QUERYING IT** — the CORR-312/333/335 failure mode.
-Queried properly, and searching the FOLD not the drug name:
-⭐⭐ **`gohr2022` — cryo-EM of the 500 kDa 2:2 PAPP-A·STC2 complex, 3.1 Å.** **THE INHIBITION IS NOT ACTIVE-SITE
+⛔⛔ **R341 ASSERTED "no anti-STC2 antibody exists" WITHOUT QUERYING IT — and CORR-336 THEN FIRED THREE TIMES
+IN ONE COMMIT.** All three papers I "found" were ALREADY in this bibliography under other ref_ids
+(`kobber2022`, `nimptsch2024`, `wang2025stc2a` — the last of which R341 CITED ITSELF). **Only `validate.py`'s
+duplicate-PMID check caught it.** ⭐ **AND THE STRUCTURE PAPER HAS BEEN HERE SINCE 2026-08-05 WITH THE
+MECHANISM IN ITS ONE-LINER** — *"an intersubunit disulfide locks the inhibitor on and blocks IGFBP-4 binding
+without occluding the active site."* **The atlas held the STC2 handle for over a week while R341 wrote that
+no handle existed.** CORR-333's shape, and the fix is the same: grep the PMID, and run `validate.py` BEFORE
+believing a reference is new. What the re-read adds is below.
+⭐⭐ **`kobber2022` — cryo-EM of the 500 kDa 2:2 PAPP-A·STC2 complex, 3.1 Å.** **THE INHIBITION IS NOT ACTIVE-SITE
 BLOCKADE** — the catalytic cleft stays **ACCESSIBLE** and still hydrolyses a synthetic IGFBP-4 peptide.
 STC2 works by **OCCLUDING THE SUBSTRATE EXOSITE** (contacts to a module at PAPP-A's **very C-terminal end**
 block IGFBP-4 binding), locked by **a specific INTERSUBUNIT DISULFIDE** that prevents dissociation. **The
@@ -1773,10 +1779,10 @@ exosite contact · prevent the disulfide · bind STC2's PAPP-A-facing surface. *
 ✗ **Still true: NO such agent exists in any species**, and PAPP-A antibodies run the OPPOSITE way.
 
 ✓ **AND THE TARGET STRENGTHENED FROM TWO INDEPENDENT DIRECTIONS WHILE SEARCHING.**
-· **`stc2igf2024`, 394 adults, ELISA + adjusted regression: STC2 INVERSELY RELATED TO TOTAL IGF-1** — human
+· **`nimptsch2024`, 394 adults, ELISA + adjusted regression: STC2 INVERSELY RELATED TO TOTAL IGF-1** — human
   protein-level confirmation. ⭐ **And PAPP-A was NOT related to total or free IGF-1** — exactly what R341's
   local-vs-circulating split predicts if PAPP-A acts PERICELLULARLY rather than setting the circulating pool.
-· **`stc2a2025hypoxia`: Stc2a deletion → increased developmental speed and growth rate, ENLARGED ADULT ORGAN
+· **`wang2025stc2a`: Stc2a deletion → increased developmental speed and growth rate, ENLARGED ADULT ORGAN
   AND BODY SIZE — REVERSED by inhibiting pappalysin AND by blocking IGF signalling.** That converts
   STC2→pappalysin→IGF→growth from inference into a **rescue experiment**. ⭐ **Stc2a is HIF2-INDUCED UNDER
   HYPOXIA — and the growth plate is a profoundly hypoxic tissue**, predicting the brake is tonically ON there.
