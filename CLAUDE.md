@@ -1881,6 +1881,55 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯🎯🎯 R373 — **THE PROTOCOL.** Every component exists; ONE thing blocks it, and it is manufacturing.
+
+⭐⭐⭐ **ONE — THE VEHICLE EXISTS, ALREADY CONTAINS A SMO AGONIST, AND IS AN FDA-APPROVED MATERIAL.**
+`he2024sag` loaded **SAG21k into FIBRIN HYDROGEL** — the fibrinogen/thrombin sealant sold as **Tisseel /
+Evicel**, FDA-approved as a haemostat and **Tisseel indicated in PAEDIATRIC patients >1 month**, dual-barrel
+syringe, sets in **10–30 s**. Loading **3.48 mM in 300 µL (= 0.51 mg)**; in vivo 30 µL at **30 / 100 /
+1000 µM**. Binds fibrinogen at ~2 sites, **Ka 3.85e3 /M at 26.6 °C → 9.06e2 /M at 37 °C** (weaker at body
+temp = faster release). **Triphasic release over 200 h; only 14.2% has left the gel by day 8** — a long-lived
+reservoir.
+⭐⭐ **AND THE SAFETY RESULT THAT MAKES THE APPROACH VIABLE: Gli1 in MAJOR ORGANS at 7 days showed NO
+significant systemic pathway activation from the local depot, against ROBUST activation in multiple
+Hh-responsive organs after i.p. dosing.** A direct head-to-head. Since the hazard of Hh agonism (BCC,
+medulloblastoma) is **systemic**, a vehicle that confines activation is the safety argument, not a convenience.
+
+⭐⭐⭐ **TWO — AND THE RELEASE PROFILE SELECTS THE COMPOUND, REVERSING WHERE R372 WAS HEADING.** Clobetasol
+has the best Gli potency (0.2 nM) but only a **3.3–7.3× window over GR**. **Fibrin release is triphasic with
+an INITIAL BURST at 0–2 h.** A burst overshooting 3–7× puts a steroid into **growth-suppressing GR territory
+at the plate**. **SAG has no counter-target, so burst release is inert for it.** → **THE COMPOUND IS SAG.**
+
+⭐⭐ **THREE — THE DOSE, WITH THREE INDEPENDENT CROSS-CHECKS AGREEING ON ORDER OF MAGNITUDE.**
+**0.5–1 mg SAG per depot** (1000 µM × 1–2 mL). Cross-checks: `he2024sag`'s own in vivo gel = **0.51 mg** ·
+R372 geometry = **26 µg** holds a whole human epiphysis at 100× EC50 · the `trompet2024` rat bead that
+produced the length gain held **7 µg**. A 0.5 mg depot eluting 14%/week delivers ~70 µg against a 3 nM target.
+
+⭐ **FOUR — SITE AND ROUTE.** **Distal femoral SECONDARY OSSIFICATION CENTRE** — the exact `trompet2024`
+placement (femur **+2.75/+2.64/+3.63%** at 1/2/6 mo, widening; whole leg +1.06/+1.09/+1.65%; 6/6, 9/9, 8/8;
+**no OA at 6 months**), which its authors call *stable, relatively large, easily accessible in humans*.
+**Percutaneous, fluoroscopically guided, intraosseous — not an open operation.** Precedents: intraosseous
+access is routine paediatric emergency practice; retrograde epiphyseal drilling for OCD is standard
+adolescent orthopaedics; an immature pig study injected **5 mL intraosseously into a growing femoral head**.
+Proximal tibia is the natural second site.
+
+⭐ **FIVE — SINGLE PULSE, AND THAT IS A CONCLUSION NOT A CONVENIENCE.** `orikasa2024`: permanent activation
+expands the clone then **converts it to trabecular bone with NO final length gain**. `trompet2024`'s signal
+was **gone by 3 weeks** and the gain was **still widening at 6 months**. Compensatory pathway downregulation
+under sustained agonist is recorded in both. **Place one depot, let it elute, reassess. Do not maintain.**
+
+⛔⛔ **SIX — THE ONE REAL BLOCKER: SAG IS RESEARCH-GRADE, NOT GMP.** Sold for laboratory use only at ≥98%
+HPLC — **2% uncharacterised material, no impurity qualification, no endotoxin spec, no sterility assurance.**
+Fine in a dish, **not acceptable implanted into bone.** Every other component is approved (fibrin), routine
+(the placement) or computed (the dose). **THE GAP IS PHARMACEUTICAL-GRADE MATERIAL — a contract-manufacturing
+job for a 490 Da molecule with a published synthesis, not a scientific problem.**
+
+⛔ **SEVEN — AND THE HONEST CALIBRATION ON EXPECTED GAIN. "+3.63%" IS NOT 3.63% OF HIS HEIGHT.** It is femur
+length in a rat whose plate is far more active than a human plate at BA16, and any percentage gain is bounded
+by the growth that actually REMAINS at that plate. The mechanism is **pool enlargement**, so the honest
+expectation is a multiplier on residual knee growth plus whatever period extension a bigger pool buys.
+⚠ **And the residual at BA16 is TRUNK-dominant (R274/R318) while this depot addresses the KNEE.**
+
 ## 🎯🎯🎯🎯🎯 R372 — **IT EXISTS AND HERE IS THE DOSE.** Run `atlas/tools/round372_smo_agonist_dose_and_window.py`
 
 ⭐ **ONE — SAG IS PURCHASABLE.** CAS **364590-63-6**, stocked by Tocris (**4366**), Sigma/Calbiochem (566660),
