@@ -65,3 +65,35 @@ richard2025 supplements remain unanalysed.
 `greene2021` (PMID 34532615) supplementary data - whether any femur or tibia length was recorded in
 the WILD-TYPE littermates dosed with the pan-TGF-beta antibody 1D11. See
 `g_l12_does_a_tgf_beta_lowering_agent_lengthen_bone_in_a_normal_growing_animal`.
+
+
+# SECOND DELIVERY, 2026-08-13
+
+## alvarez2001_devdyn_221_311-321.pdf  — READ IN FULL
+`alvarez2001`, PMID 11458391, Dev Dyn 2001;221:311-321. **The reference was already in this bibliography
+(added 2026-08-06) but only at abstract level; the full text was not.** It is the compartment-selective
+experiment with a LENGTH endpoint in normal tissue - TGF-beta1 shortens perichondrium-intact metatarsal
+rudiments dose-dependently and does nothing to perichondrium-free ones, and the chondrocyte proliferation
+response REVERSES when the perichondrium is stripped. See the round 323 node.
+
+## NIHMS668225_supplement.pptx — READ, AND IT CONTAINS NOTHING USEFUL
+Two slides, both "Supplemental Figure 1": AngII +/- losartan phospho-p38 and total-p38 westerns, and
+RANKL +/- losartan phospho-JNK and total-JNK westerns, at 0/10/30/60 minutes. **No bone dimension of any
+kind.** This closes the question of whether chen2015's supplement holds the missing femur length: it does
+not.
+
+## greene2021_supplementary_figure_S1.tif.gz — READ, AND IT CORRECTED THIS ATLAS
+The file is an uncompressed TIFF despite the .gz name. Four panels: BV/TV, Tb.N, Tb.Sp, Tb.Th, with groups
+WT/13C4, G610C/13C4, and four G610C/1D11 dosing schedules. **The wild-type arm receives 13C4, the isotype
+CONTROL - not 1D11.** Confirmed against the methods. The round 323 node had claimed greene2021 dosed
+wild-type littermates with 1D11; that claim is withdrawn (CORR-340). No longitudinal dimension in the
+figure, and the paper's measured sites are lumbar vertebra L6 and femur.
+
+## STILL NOT OBTAINED
+`alvarez2002`, PMID 11934857, Development 2002;129:1913-1924 - "TGFbeta2 mediates the effects of hedgehog on
+hypertrophic differentiation and PTHrP expression". Three lawful routes tried and refused: the publisher
+PDF (HTTP 403), the publisher HTML (abstract only), and Europe PMC (isOpenAccess N, inEPMC N, listed as
+"Free after 6 months" at the retired dev.biologists.org host, which no longer serves it).
+**Its marginal value has DROPPED now that alvarez2001 is in hand** - alvarez2002 is the Ihh -> TGF-beta2 ->
+PTHrP relay, i.e. mechanism, whereas alvarez2001 carries the length endpoint. Not worth chasing further
+unless the relay becomes decision-relevant.

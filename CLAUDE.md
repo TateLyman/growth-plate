@@ -224,14 +224,19 @@ Everything else is a gap to record and, where cheap, to fill.
    MHC and fixing the pseudocount did not rescue them. → **Before any cross-site or cross-tissue contrast,
    ask what ELSE is in each tissue, and put a marker of that contaminant in the control panel.**
 
-32. **Letting a "no length endpoint" line stand when the animals were ALREADY DOSED.** CORR-340 — it has now
-   happened **twice on the same axis and I only noticed on the second.** `chen2015` gave **losartan to
-   WILD-TYPE mice**, measured growth-plate zones, watched the post-proliferative zone expand, and never put a
-   caliper on the femur (R288 found this). `greene2021` gave the **pan-TGF-β neutralising antibody 1D11 at
-   0.5/1/5/10 mg/kg IP to WILD-TYPE littermates from 8–11 weeks** and reported bone volume and strength —
-   **not one longitudinal dimension.** Two labs, two agents, wild-type growing animals in hand both times.
-   **When you write "no agent has a length endpoint", also ask WHO HAS ALREADY DOSED THE RIGHT ANIMAL** —
-   that converts an unrun experiment into a re-measurement, and it is a different and much cheaper ask.
+32. **Letting a "no length endpoint" line stand when the animals were ALREADY DOSED — and then getting the
+   ARM wrong.** CORR-340. `chen2015` gave **losartan to WILD-TYPE mice**, measured growth-plate zones,
+   watched the post-proliferative zone expand, and never put a caliper on the femur (R288 found this).
+   `alkhatib2018` deleted Tgfbr2 from cartilage **postnatally**, wrote that the knockouts *"were smaller in
+   size"*, and reported **no number**. → **When you write "no agent has a length endpoint", ask WHO HAS
+   ALREADY DOSED THE RIGHT ANIMAL** — that turns an unrun experiment into a re-measurement.
+   ⛔ **AND THE SELF-CORRECTION, MADE ONE DAY LATER BY OPENING THE FIGURE: I claimed `greene2021` dosed
+   WILD-TYPE littermates with 1D11. IT DID NOT.** Wild-types received only the isotype control **13C4**;
+   every 1D11 arm is the G610C OI mouse. **CORR-309/320's shape again — I filed a paper under an arm it does
+   not have, in the same edit where I was warning about exactly that.** What survives is worse for the axis,
+   not better: greene2021 measured **lumbar vertebra L6 and femur** and reported BV/TV, Tb.N, Tb.Sp, Tb.Th
+   only — **vertebrae in hand, no longitudinal dimension recorded** — and no TGF-β-lowering agent has ever
+   been given to a NORMAL growing animal with a length endpoint.
 
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
@@ -1719,12 +1724,32 @@ among the strongest ratio loci in the genome, where selected ≈ unselected) and
 TGFBR1 18.8%, FBN2 28.6%, SMAD3 34.8%, PLOD1 34.8%, LTBP4 35.0%, SMAD2 35.5%, TGFBR2 36.1% — **only the
 LIGAND TGFB3 (54.7%) and FBN1 (53.3%) are near balance. R289 was right and R318 was not the reason.**
 
-## ⭐ R323 — THE CHEAPEST UNRUN EXPERIMENT IS NOW A RE-MEASUREMENT, AND IT HAS HAPPENED TWICE
+## ⭐⭐⭐ R323 — `alvarez2001` IS THE COMPARTMENT-SELECTIVE EXPERIMENT, ON LENGTH, IN NORMAL TISSUE
+Operator-supplied full text 2026-08-13. **The atlas had held only its abstract since 2026-08-06.** Embryonic
+mouse metatarsal organ culture, 5 days, perichondrium intact vs enzymatically stripped:
+· **TGF-β1 at 1 and 10 ng/ml SHORTENS perichondrium-INTACT rudiments, dose-dependently and significantly**,
+  shrinking both the hypertrophic ("clear") zone and the type X collagen domain.
+· **Perichondrium-FREE: neither overall length nor hypertrophic-zone length significantly altered** at
+  either dose.
+· ⭐ **THE SIGN OF THE CHONDROCYTE RESPONSE FLIPS.** TGF-β1 INHIBITS chondrocyte BrdU and RAISES
+  perichondrial BrdU in intact rudiments — but **STIMULATES chondrocyte proliferation once the
+  perichondrium is removed.**
+· Longitudinal-growth inhibition is **PTHrP-INDEPENDENT** (still occurs in PTHrP-null cultures); the
+  hypertrophic arm is PTHrP-dependent. **Two mechanisms, one ligand.**
+⭐ **So: TGF-β is a growth INHIBITOR acting THROUGH the perichondrium, and the direct chondrocyte response is
+growth-PROMOTING. That is the MECHANISM behind the two-compartment sign flip, measured on LENGTH in
+wild-type tissue — and the strongest single argument that a systemic agent is the wrong tool.**
+✗ **THE INCONVENIENT CONTROL, RECORDED: removing the perichondrium ALONE did not change length.** Over 5
+days in culture, deleting the source of the inhibitory signal did not lengthen the bone. `sedes2022`'s +7%
+took 1–3 months in vivo, so they are not directly comparable — but this is the closest thing to a negative
+control on "less perichondrial TGF-β is longer" that exists, and it is null.
+
+## ⭐ R323 — WHO HAS ALREADY DOSED THE RIGHT ANIMAL (corrected)
 `chen2015` gave **losartan to WILD-TYPE mice**, watched the post-proliferative zone expand, never measured
-the femur. **`greene2021` gave the pan-TGF-β neutralising antibody 1D11 at 0.5/1/5/10 mg/kg IP to WILD-TYPE
-littermates from 8–11 weeks** and reported bone volume and strength — **no longitudinal dimension.**
-**`alkhatib2018` deleted Tgfbr2 from cartilage postnatally, wrote that the knockouts "were smaller in size",
-and reported no number.** Three labs, three perturbations, growing animals every time. See CORR-340. Gap:
+the femur. **`alkhatib2018` deleted Tgfbr2 from cartilage postnatally, wrote that the knockouts "were
+smaller in size", and reported no number.** ⛔ **`greene2021` does NOT belong on this list — its wild-types
+got the isotype control 13C4, never 1D11 (CORR-340).** It measured **lumbar vertebra L6 and femur** and
+reported only BV/TV, Tb.N, Tb.Sp, Tb.Th. Gap:
 `g_l12_does_a_tgf_beta_lowering_agent_lengthen_bone_in_a_normal_growing_animal`.
 **Clinical-stage agents on this axis: galunisertib, vactosertib (oral ALK5 inhibitors), fresolimumab
 (pan-TGF-β neutralising antibody). None approved; none with a bone-length endpoint in any species.**
