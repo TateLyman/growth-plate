@@ -1774,6 +1774,49 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ⚠⚠ R349 — **THE FDA PAEDIATRIC PRADAXA REVIEW ANSWERS R348 THREE WAYS. The human height data EXIST and
+## were never analysed; the regulator's stated reason for not analysing them is a mechanistic claim this file
+## contradicts; and the JUVENILE TOXICITY STUDY IS A HARD CEILING.** (operator-supplied, read in full)
+
+⭐ **ONE — THE MEASUREMENT EXISTS IN ~390 TREATED CHILDREN AND NOBODY ANALYSED IT. CORR-340 IN A HUMAN TRIAL,
+and the THIRD instance in two rounds.**
+· **Trial 1160.106** — open-label, **randomised 2:1, active-controlled**, 328 enrolled → 267 randomised →
+  **266 treated (176 Pradaxa / 90 SoC)**, **BIRTH to <18 y**, 62 sites/26 countries, median Pradaxa exposure
+  **81 days**. **HEIGHT ASSESSMENT at screening, visit 8 and eEOT.**
+· **Trial 1160.108** — single-arm extension, **up to 12 months**, 231 enrolled → **214 treated**.
+  **HEIGHT ASSESSMENT at screening, VISIT 8 (6 MONTHS), VISIT 11 (12 MONTHS) and eEOT.**
+· **§8.8.3 "Pediatrics and Assessment of Effects on Growth" states the effect on growth was NOT SPECIFICALLY
+  EVALUATED.** The data were collected; the analysis was not done. **R348's human gap is now a DATA REQUEST,
+  not an experiment** — and 1160.106 is randomised, so it has a control arm.
+
+⚠ **TWO — THE REGULATOR'S STATED REASON FOR NOT LOOKING IS "no known biological mechanism supporting any
+concern", AND R348 SUPPLIES ONE.** ECRG4 694.6 CPM at 16.35× in the human plate · thrombin cleavage required
+for its activity · Ecrg4-null body length **+0.950, P=4.45e-07**. ⚠ **NOT a safety signal — the predicted
+direction is MORE growth.** What it means is narrower: the basis for declining to analyse an existing dataset
+is a negative mechanistic claim that is now falsifiable.
+
+⛔ **THREE — AND THE SAME SECTION CARRIES A NEGATIVE FOR THE HYPOTHESIS, RECORDED BECAUSE IT IS INCONVENIENT:
+the reviewer also states there was NO OBSERVED IMPACT of Pradaxa on growth.** Weak — no numbers, no height
+SDS or velocity, ≤12 months, acutely ill children, uncontrolled long-term arm, and an assessment he says was
+not performed — **but it is evidence and it runs against R348.**
+
+⛔⛔ **FOUR — THE HARD CONSTRAINT, AND IT IS THE REAL CEILING. TWO JUVENILE TOXICITY STUDIES, BLEEDING-RELATED
+MORTALITY IN BOTH; in the definitive study it occurred AT THE LOWEST DOSE TESTED (15 mg/kg/day), so A NOAEL
+COULD NOT BE DETERMINED, and a 10× uncertainty factor on that LOAEL gave a MARGIN OF SAFETY BELOW 1** for
+both NDAs — which is why the reviewers had to qualify an impurity via human AE data instead. The mortality is
+**on-target pharmacodynamic bleeding**, not organ toxicity. → **IN A GROWING ANIMAL THERE IS NO DEMONSTRATED
+DABIGATRAN DOSE FREE OF BLEEDING MORTALITY.** R348 predicted bleeding would be the binding constraint; this
+is that prediction with a number, and it bounds the proposed "dose a growing mouse and caliper it" protocol.
+
+⭐ **FIVE — THE NEXT DOCUMENT IS NAMED: the Pharmacology/Toxicology review for NDA 214358 / sNDA 022512 S-041
+(Victor Long, TL Xuan Chi, archived 2021-01-26).** The juvenile tox studies ARE the growing animals R348
+asked for, and juvenile protocols routinely record body weight and often skeletal development. **If a
+growing-animal length or skeletal endpoint under a direct thrombin inhibitor exists anywhere, it is there.**
+Gap `g_l12_349a`.
+✓ **Free within-class contrast from the same review:** its paediatric anticoagulant table lists **osteoporosis
+risk with long-term therapy** against UFH and LMWH, and nothing equivalent against dabigatran — a regulatory
+restatement of R348's point that the skeletal liability belongs to particular agents.
+
 ## 🎯🎯🎯 R348 — **ECRG4 HAS NO CHEMICAL MATTER BUT ITS ACTIVATING PROTEASE DOES. THE ACTIVE FRAGMENT IS
 ## RELEASED BY THROMBIN — and dabigatran is oral, approved and PAEDIATRIC-LABELLED.**
 
