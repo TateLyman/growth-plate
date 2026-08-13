@@ -185,6 +185,15 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    place the claim is stored, in the same edit.** CORR-333's shape, inverted: there a true negative
    propagated unchallenged; here a retracted positive survived in two stores.
 
+37. **Reading an ABSENT PARAMETER as a MEASURED NULL.** CORR-348 (R346) — "no IMPC length row" means three
+   different things and this file has read all three as null: **never phenotyped** (Stc2, Chad, Nrk, Scube3,
+   Amd1, Ihh — zero rows) · **phenotyped but length never in the assay** (**Clec3a 145 parameters, no body
+   length; LOXL2 170 rows across 116 parameters, not one a length**) · **length actually measured** (Hhip,
+   Tet1, Tnks, Pde3b). Only the third can be cited in either direction. **I made this error inside R346
+   before catching it** — inferring from six MGI terms with no length term that length must have been
+   measured and been null. **Grep the gene's rows and confirm the LENGTH PARAMETER IS PRESENT before writing
+   that a screen says nothing.**
+
 ## ⚠ GRADING RULE CHANGED BY THE OPERATOR (R302) — APPLY RETROACTIVELY
 
 **"If it works mechanically but there's no documented length, we should basically consider it viable."**
@@ -1756,6 +1765,48 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⭐⭐ R346 — **"NO IMPC LENGTH ROW" MEANS THREE DIFFERENT THINGS AND THIS FILE HAS READ ALL THREE AS NULL.**
+## The Clec3a mouse EXISTS and is orderable. And two positive heterozygous body-length effects were sitting
+## unextracted in a file we have had since 2026-08-12.
+
+⛔ **THE READING ERROR, AND I MADE IT MYSELF INSIDE THIS ROUND BEFORE CATCHING IT.** Seeing six MGI terms
+with no length term, I inferred *"IMPC only reports significant hits, so this is a null on length."* **Wrong.**
+The raw file shows **length was never measured.** The three cases must be told apart before any citation:
+· **NEVER PHENOTYPED AT ALL** — Stc2, Chad, Nrk, Scube3, Amd1, Ihh. Zero rows. Says nothing.
+· **PHENOTYPED, LENGTH NEVER MEASURED** — **Clec3a: 145 parameters, no body length, no radiography.**
+  **Loxl2: 170 rows across 116 parameters and not one is a length.** Pappa: 30 rows, none. **These look
+  exactly like a null in every sweep this atlas has run.**
+· **LENGTH MEASURED** — Hhip, Tet1, Tnks, Pde3b. Only these can be cited either way.
+→ **Before writing "IMPC says nothing/null" for a gene, `grep` its rows and check whether the LENGTH
+PARAMETER IS IN THE LIST.** CORR-328's shape one level deeper: it is not enough to query the supplied file,
+you have to check the parameter was in the assay.
+
+⭐ **THE CLEC3A MOUSE IS ORDERABLE TODAY.** **`Clec3a<em1(IMPC)J>`**, strain **C57BL/6NJ-Clec3a<em1(IMPC)J>/Mmjax**,
+**MGI:6357989**, IMPC colony **JR34222**, phenotyped at JAX. CORR-341 applied — clean single-gene homozygous
+null, no Cre, no double. **R345's "cheapest validation" does not need a mouse made; it needs a caliper.**
+✓ **AND ITS ONE CLEAN PHENOTYPE RUNS THE RIGHT WAY ON THE THING EVERY OTHER CANDIDATE COSTS US.**
+Male-specific, all clearing Bonferroni across 145 tests (3.4e-04), n=8/sex: **lean mass +2.32 g (P=4.6e-08)
+· fat mass −2.46 g (P=2.7e-08) · BMD +0.0032 (P=3.9e-06) · BMC P=1.2e-03. Females null throughout
+(P=0.31–0.83).** ⭐ **INCREASED BMD is the opposite of the bone cost afflicting nearly everything else here**
+— SPIN4 BHI −2.34, ESR1-null spine Z −3.85→−5.6, the AI arm's lumbar trabecular, tankyrase's Tnks-null
+−1.749. ✗ Mass is not length, and sex-specificity in an n=8 IMPC pipeline is weak. **Not a promotion.**
+
+⭐⭐ **AND THE SAME FILE HELD TWO POSITIVE HETEROZYGOUS LENGTH EFFECTS NOBODY HAD PULLED — the RARE direction
+under CORR-329, on the file's two best-validated targets.**
+· **`Hhip<tm1Icmb>` HET, HMGU, n=10/10 — BODY LENGTH male +0.2279, P=0.00346** (combined-sex P=0.588,
+  female null). ⭐ **This is HETEROZYGOUS, which is the architecture the human number actually has**
+  (HHIP pLoF +9.92 cm in hets) — whereas every mouse line this file cites (haraguchi2025) is a
+  limb-restricted HOMOZYGOUS conditional. **First mouse length endpoint on HHIP matching the human allele.**
+· **`Tet1<tm1a(KOMP)Wtsi>` HET — body length +0.1157, P=0.0217, male-driven (+0.146, P=0.0237), n=7** —
+  corroborates the +0.282 already in this file from a second row.
+✗ Male-only significance with combined-sex nulls is a soft signal at IMPC n's; both are recorded as
+corroboration of direction, not as effect sizes.
+
+⛔ **WHAT R346 DOES NOT DO: IT PRODUCES NO COMPOUND.** CLEC3A still has **zero chemical matter** on a proper
+ChEMBL query, **tranexamic acid stays disqualified** on the ETB off-target (R345), and the
+plasmin-versus-PI3K/AKT contradiction in the CLEC3A mechanism literature is untouched by a body-composition
+phenotype.
 
 ## ⭐⭐⭐ R345 — **CLEC3A: THE FIRST GENUINELY NEW TARGET IN MANY ROUNDS, AND IT EXISTED ONLY BECAUSE
 ## R344 FIXED THE DATA.** Best-powered secreted target after STC2, cartilage-SPECIFIC, zero prior coverage.
