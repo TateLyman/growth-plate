@@ -1786,6 +1786,69 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯🎯 R353 — **THE PLATE QUESTION, ANSWERED BOTH WAYS.** A PROTAC needs a TWO-PART receiver test
+## and nobody had run either half. The chondrocyte HAS the degrader machinery, and the molecule is CATIONIC.
+
+⭐⭐ **ONE — THE DEGRADER MACHINERY IS IN THE CHONDROCYTE AND SEVERAL PARTS ARE CARTILAGE-ENRICHED.** A
+small-molecule inhibitor needs its target. **A DEGRADER NEEDS THE TARGET *AND* THE E3 LIGASE *AND* THE
+PROTEASOME IN THE SAME CELL.** Purity-corrected human growth plate, all 12/12: **CRBN 31.5 · DDB1 105.1
+(1.60×) · CUL4B 37.7 (1.50×) · RBX1 126.7 (1.68×) · NEDD8 130.1 (2.18×)** · proteasome complete and partly
+enriched — **PSMB5 98.3 (2.27×), PSMC1 67.9 (1.70×), UBC 1044.3 (1.54×), UBB 468.6.** CUL4A (0.40) and UBE2G1
+(0.27) are contaminant-leaning, but **CUL4B — the redundant CRL4 paralogue — is enriched.**
+**THE CHONDROCYTE CAN EXECUTE CEREBLON-MEDIATED DEGRADATION. Every one of these genes had ZERO prior atlas
+coverage.**
+
+⭐⭐⭐ **TWO — AND THE MOLECULE IS ALMOST IDEALLY BUILT FOR CARTILAGE, WHICH IS THE OPPOSITE OF WHAT I
+EXPECTED.** Label section 11: **C45H49N5O4, MOLECULAR WEIGHT 723.90 Da** — small for a degrader. It contains
+a **PIPERIDINE and a PIPERAZINE**, two basic centres substantially protonated at pH 7.4, against one phenol
+and one glutarimide. **NET POSITIVE CHARGE AT PHYSIOLOGICAL pH** — and the label corroborates it
+behaviourally: *freely soluble at gastric pH, only slightly soluble at intestinal pH*, the classic signature
+of a base.
+⭐ **THAT IS EXACTLY THE CLASS THIS FILE ALREADY KNOWS PARTITIONS INTO CARTILAGE.** R315 established the
+physics and never applied it to a small molecule: epiphyseal cartilage FCD **−0.19 to −0.35 M**, and
+**CATIONIC solutes partition IN by Donnan** — the whole basis of the CPC+14 work that drove IGF-1 (7.6 kDa)
+and IL-1Ra (17 kDa) through full-thickness cartilage. **R315 concluded a biologic would need a cationic
+carrier bolted on. VEPDEGESTRANT IS ALREADY CATIONIC AND A TENTH THE SIZE OF THE PROTEINS THAT CROSSED.**
+
+⭐ **THREE — THE QUANTITATIVE MARGIN, AND IT SETS THE DOSE FLOOR.** At 200 mg: Cmax 926 ng/mL ÷ 723.9 =
+**1,279 nM total**; Cavg = **987 nM total**. At **>99% protein binding**, free is **<12.8 nM peak, ~9.9 nM
+average**. Against vepdegestrant's own potency — **ERE IC50 3 nM, anti-proliferative IC50 2.3 nM** — free
+plasma sits at **3.3–4.3× IC50 around the clock at 200 mg, and 1.6–2.1× at 100 mg**, *before* any Donnan
+enrichment. **That justifies R352's 100 mg AND makes 100 mg the FLOOR, not a starting point for going lower.**
+
+⛔ **FOUR — AND NOW THE PROBLEM, WHICH I AM NOT BURYING. ESR1 ITSELF IS CONTAMINANT-LEANING.**
+**ESR1 20.1 pure vs 131.2 contaminated = 0.16** · ESR2 0.04 · **NCOA1 0.11, NCOA2 0.10, NCOA3 0.17, NCOR1
+0.37** · and the canonical ER target genes are near-absent — **GREB1 1.1, PGR 3.8, TFF1 0.1 (4/12)**.
+For calibration: PTPRC 0.03, HBB 0.69, COL2A1 9.67. **On the plain CORR-327 test, 0.16 sits in the range that
+killed losartan (AGTR1 0.03) and sacubitril (MME 0.17). THIS IS THE WEAKEST POINT IN THE PROPOSAL.**
+
+✓ **FIVE — WHY IT IS NOT A KILL, AND THE THIRD REASON IS THE ELEGANT ONE.**
+· **A ratio is not an absence:** 20.1 CPM in 12/12 is a real presence, comparable to TET1 (19.2) which this
+  file works with. The ratio says ESR1 is not *concentrated* in chondrocytes, not that it is missing.
+· **The functional experiment overrides the transcript count:** `brjesson2010` deleted ERα **specifically
+  from cartilage** and got increased femur length at 1 year. **You cannot get a phenotype by deleting a gene
+  from a cell where it does no work.**
+· ⭐ **AND IF the operative ERα is NOT chondrocytic — if it sits in perichondrium, invading vasculature,
+  marrow or osteoblast lineage, which is what a 0.16 ratio most naturally suggests — THEN R315's AVASCULAR
+  DELIVERY WALL DOES NOT APPLY AT ALL, because those compartments are perfused.**
+  **THE TWO OBJECTIONS SOLVE EACH OTHER: avascular chondrocyte → the cationic 724 Da molecule partitions in;
+  perfused compartment → ordinary distribution reaches it. There is no configuration in which the target is
+  present and the drug cannot get to it.**
+⭐ **THE MEASUREMENT THAT SETTLES IT NEEDS NO ANIMAL: ERα PROTEIN by immunostaining in zone-resolved human
+growth plate.** Gap `g_l12_353a`.
+
+✓ **SIX — WHAT ELSE TO ADD, AND WHAT NOT TO CHANGE.**
+· **KEEP ANASTROZOLE.** Degradation is 76–94%, not 100% — residual receptor remains and still benefits from
+  ligand suppression. Different step, cheap, not redundant.
+· **KEEP GH — and it becomes MORE favourable.** Removing ERα should RAISE IGF-1 at fixed dose, and the
+  ligand-independent ERα activation R351 argued IGF-1 drives is **exactly what a degrader neutralises**.
+  The hidden cost of the GH arm is removed by the new agent.
+· **ADD ORAL SODIUM SULFATE — but NOT the same day** (vepdegestrant is cleared primarily by SULT sulfation).
+⛔ **SEVEN — AND PARACETAMOL IS NOW DOUBLY CONTRAINDICATED.** It drops serum sulfate 24% per 1.5 g (R321),
+which costs the sulfate arm **and**, by depleting the PAPS donor pool, could **SLOW SULT-mediated clearance
+of vepdegestrant and raise its exposure — in a drug that prolongs QTc by 12 ms.** Separately **PPIs cut
+vepdegestrant AUC to 84%**, so any acid reducer is a real exposure variable.
+
 ## 🎯🎯🎯🎯 R352 — **THE DOSE IS A PLATEAU, NOT AN OPTIMUM. THE ANSWER IS LOWER AND LONGER: 100 mg WITH A
 ## CONSISTENT FATTY MEAL.** Label + 298-page multidiscipline review pulled from Drugs@FDA and read in full.
 
