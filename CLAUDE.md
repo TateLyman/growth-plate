@@ -1757,6 +1757,58 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🚨🚨🚨 R344 — **THE FLAGSHIP HUMAN DATASET HAD TWO MOUSE SAMPLES IN IT AND NO PURITY CONTROL.**
+## Recomputed from the raw matrices. Nothing reverses; the NUMBERS move 4–72×, and it RE-RANKS THE LEADS.
+## ⛔ **USE `atlas/data/round344/gse288028_purity_corrected.json`, NOT R308's TABLE, FOR ANY EXPRESSION CALL.**
+
+⛔ **ERROR 1 — TWO OF THE 14 SAMPLES ARE MOUSE.** GSM9328230 / GSM9328231 (P27153) are **mm10**, 32,285
+features, gene symbols **Xkr4, Gm1992, Sox17** — **11,869 of the "79,934 human cells" = 14.8%**. The dataset
+is **12 HUMAN samples from 4 PATIENTS + 2 MOUSE**.
+⭐ **THIS EXPLAINS A PATTERN NOBODY QUESTIONED: every present gene reads exactly "12/14" — COL2A1, ACAN,
+GNAS, the whole Hippo cassette, the whole m6A apparatus, STC2, TET1, LOXL2. TWELVE IS THE CEILING.** COL2A1
+is the most abundant transcript in cartilage and reads 12/14 at 100% of cells. **Every "/14" in this file
+should be "/12", and 12/14 means UNIVERSALLY DETECTED.** The two structurally-zero samples also sit inside
+every median → **systematic UNDERestimate of abundance.**
+
+⛔⛔ **ERROR 2, THE LARGER ONE — THE 12 HUMAN SAMPLES VARY 66-FOLD IN CARTILAGE CONTENT AND WERE POOLED AS
+EQUIVALENT.** COL2A1 runs **1,518 → 99,798 CPM**. The low-purity samples are identified, not assumed:
+**PTPRC (CD45) 1.0 vs 537.4 (500×)** and **HBB 0.2 vs 194.8 (1000×)** — **they are BLOOD AND IMMUNE TISSUE.**
+A median pooled across that range reports **COMPOSITION, NOT CHONDROCYTE BIOLOGY.**
+
+⭐⭐⭐ **THE HEADLINE — THE HEDGEHOG AXIS WAS BEING READ AT A FRACTION OF ITS SIZE.**
+· **IHH 89.5 CPM pure vs 1.2 contaminated — 72× enriched, and 60× ABOVE THE 1.5 CPM THIS FILE HAS USED SINCE
+  R308.** And **IHH is −13.10 cm (P=1.0e-26), THE SECOND LARGEST SHORTENING EFFECT AFTER ACAN.**
+· **PTH1R 783.8 vs 69.9 — 11× enriched, 7× above the recorded 108.7.**
+· **HHIP 68.8 vs 14.8 — 4.65× enriched, 3.2× above the recorded 21.4.**
+→ **The Ihh–PTHrP loop is THE most cartilage-enriched signalling axis in the tissue.** Strengthens the prior
+under R285/R290/R294's hedgehog lead. ⚠ Expression is not direction or tractability — R294 stands: **no
+HHIP-directed agent exists in any species.** And a 60× correction from one 5-sample stratification is
+provisional until replicated.
+
+⭐⭐ **EVERY CARTILAGE-ENRICHED LEAD WAS UNDERSTATED:** **STC2 203.6 (11.3× above recorded 18.1)** · SCUBE3
+171.0 (16× enriched) · **CCN1 1,487** · **CCN2 6,086** · CHAD 198.5 · **LOXL2 600.0** · PLOD1 156.9 · ACAN
+3,537 · SERPINH1 384 · IGF2 31.7 (5.9× enriched — the LOCAL ligand is genuinely chondrocyte).
+
+⛔ **AND IT CUTS AGAINST MY OWN LAST THREE ROUNDS, WHICH IS THE HALF TO TRUST:**
+· **ESR1 14.7 pure vs 65.8 contaminated (ratio 0.22; 0.45× the recorded 33.1)** — much of "ESR1 is in the
+  growth plate" is immune/vascular. **WEAKENS the receiver half of R338/R339 (vepdegestrant).** Does not
+  touch the ESR1-null phenotype, the protein-ablation ordering, or the biphasic argument — and brjesson2010
+  already put the operative compartment outside cartilage.
+· **ESR2 0.2 vs 46.3, ratio 0.00** — ERβ in the plate was contamination outright.
+· **STS 3.3 vs 18.3** — R337's sulfatase observation was mostly contaminant (thread already closed).
+
+✓ **AND IT STRENGTHENS THE KILLS, for the same reason — the residual is demonstrably contaminant:**
+**AGTR1 0.2 vs 6.6 (0.03)** losartan · **REN 0.00** · **MME 2.7 vs 15.4 (0.17)** sacubitril · SOST and NPPC
+0.1 in pure cartilage · **CYP19A1 0.6** (R337's "anastrozole cannot act locally" survives) · ⭐ **IGFALS 0.0
+IN PURE CARTILAGE — R341's local-vs-circulating IGF argument, the basis for reopening STC2, SURVIVES AND
+STRENGTHENS.**
+
+✗ **NO GH-STIMULATION CONTRAST IS RECOVERABLE** from the 12 human samples — CISH/SOCS2 vary 27× but track
+patient and purity, not treatment. The inventory's "+/− GH stimulation" refers to the mouse arm or to
+undeposited samples (GEO's own caveat: raw human files withheld).
+⚠ **LIMIT: the split is 5 vs 5 and partly confounded with PATIENT** (four of the purest five are P25452).
+A per-cell-type analysis on annotated cells would be better and has not been done.
+
 ## ⛔⛔ R343 — **DNMT1 ANSWERED WITH HUMAN GENETICS (it is backwards), THE DRUGGABILITY TABLE COMPUTED TO
 ## THE END, and bexotegrast triaged out on the free query before it could be proposed.**
 
