@@ -1667,9 +1667,32 @@ R319's lever by R319's own mechanism.**
 ⭐ **THIRD INSTANCE OF CORR-340, AND THIS ONE HAS A DIRECTION:** alkhatib2018 states the knockouts **"were
 smaller in size compared to CTL mice"** and gives **NO NUMBER.** That is the only postnatal directional
 body-size observation on this axis, n=3/group, qualitative — **and it runs AGAINST it.**
-⭐ **THE DECIDING NUMBER IS STILL PAYWALLED.** baffi2004's abstract: postnatal survivors *"showed alterations
-in the length of specific bones"* — **DIRECTION NOT STATED.** Only postnatal LENGTH readout for
-chondrocyte-restricted TGF-β loss in any species. **Dev Biol 2004;276:124-142, PMID 15531369. ASKED FOR.**
+⛔⛔⛔ **THE DECIDING NUMBER ARRIVED THE SAME DAY. IT IS SHORTER.** Operator supplied `baffi2004` full text.
+**Table 3, bone length (cm), Col2a-Cre;Tgfbr2 vs Cre-negative littermates — NOTHING at postnatal day 3, then
+progressively shorter day 7 → 12 weeks:** wk9 femur **1.3→0.9**, tibia **1.5-1.6→1.1**, humerus **1.0→0.7**,
+radius 1.0→0.8; wk12 femur **1.5→1.1**, tibia **1.7→1.35** — roughly **−17 to −33%** in PROXIMAL long bones.
+**METATARSAL (0.75 vs 0.7–0.75) and SKULL (2.2 vs 1.8–2.2) SPARED** — the authors' own argument that it is
+neither systemic nor isometric. ✗ Grade D: **Table 3 has no SDs, no n and no P values** and describes "the
+few mice that survived birth".
+⭐ **AND THE ABSTRACT UNDERSTATES ITS OWN TABLE 1.** *"Alterations in length … were not detected at E17.5"* —
+but Table 1 (n=10 vs 8) has **tibia 2.87→2.64 at P=0.02**, femur P=0.13, humerus P=0.07, radius P=0.11,
+**four of four shorter.** CORR-320/330's shape, this time in the authors' own abstract, which is what this
+atlas read for two rounds. ⚠ BrdU trends **UP** in the cKO (8.60→10.98, P=0.097) while the **ligand** null
+trends down (9.05→7.22, P=0.035).
+⭐⭐ **AND baffi2004 PUT THE LENGTH CONTROL IN THE PERICHONDRIUM IN 2004** — *"mediated indirectly through
+cells that do not express Col2a-Cre, likely cells in the perichondrium (Alvarez 2001, 2002)"* — eighteen
+years before `sedes2022`. Extracted: `atlas/data/round323/baffi2004_extracted_tables.json`.
+
+## ⛔⛔⛔ **THE TGF-β AXIS HAS OPPOSITE SIGNS IN TWO CELLS OF THE SAME TISSUE — AND NO AGENT SEPARATES THEM**
+| compartment | perturbation | direction |
+|---|---|---|
+| **PERICHONDRIUM** | less TGF-β **AVAILABILITY** (Fbn1 loss; human pLoF TGFB3 **+7.68 cm**, FBN1 +8.82, LTBP2 +2.36) | **LONGER, +7%, postnatal** |
+| **CHONDROCYTE** | loss of TGF-β **RESPONSIVENESS** (Col2a-Cre / Acan-CreERT2 Tgfbr2) | **SHORTER −17 to −33%**, + IVD and sternocostal joints destroyed |
+**ALK5 inhibitors (galunisertib, vactosertib), pan-TGF-β antibodies (fresolimumab, 1D11) and ARBs are ALL
+systemic. Every one hits both cells, and the chondrocyte arm is larger and runs the wrong way.**
+⭐ **Not a dead axis — a SPECIFICATION: reduce TGF-β AVAILABILITY at the perichondrial matrix (the
+fibrillin/LTBP sequestration step), NOT receptor signalling.** That is exactly what the human
+haploinsufficiencies do and exactly what no existing agent does.
 
 **SIX — ⛔ MEASURED NEGATIVE: the GSE252289 `LUMBAR`/`THORACIC` ATAC sheets are NOT an axial reference.**
 See CORR-339. Fails 9/19 preregistered controls; top hits are one 4 Mb MHC block + B2M (a failed
