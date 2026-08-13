@@ -106,6 +106,13 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    direction.** Closures write DEAD/SETTLED rows; positives stay in nodes that don't survive compaction, so
    the file drifts pessimistic by selection, not error. **Grep the graph before reopening anything.** And
    any round producing a positive with a length endpoint goes in CLAUDE.md **in the same commit.**
+   ⛔ **CORR-352 (R365) IS THE MIRROR AND IT RETIRES THE "ONE DIRECTION" CLAUSE ABOVE. THE LOSSINESS RUNS
+   BOTH WAYS.** `the_vegf_control_point_is_the_wrong_lever` — a **correct closure**, written 2026-08-09,
+   grade C, with `gerber1999` as its decisive experiment — **also never reached CLAUDE.md**, and four days
+   later I built R364/R365 on the *same paper* in the *opposite* direction and got as far as a finished node
+   before greping. **It is not that closures survive and positives don't; it is that ANYTHING NOT IN
+   CLAUDE.md IS INVISIBLE, and its sign is irrelevant.** The fix was already written and not followed:
+   **grep the graph BEFORE DRAFTING, not before committing** (CORR-324's rule, third failure).
 16. **Searching the literature for a localisation question the atlas can answer locally.** CORR-316.
    **`atlas/quant/dataset_inventory.csv` — run every new gene against it BEFORE a literature search.**
    GSE9160 (the ONLY human zone-resolved growth plate, incl. perichondrium) sat vendored with a
@@ -1709,14 +1716,28 @@ HIF-PHI class was already checked in R284.
   LIST: the marketed molecule itself was given to normal juvenile mice for FOUR DAYS AND THE GROWTH PLATE
   FUSED** (`newton2019`: six administrations P31–P34 → resting-zone clonal size down → **fusion**;
   RZ proliferation inhibited, no premature hypertrophy, CD73 retained). Grade A, direct fusion endpoint. R362
-- ⚠⚠ **ANTI-ANGIOGENICS / VEGFR INHIBITORS — STAGE-DEPENDENT, AND R364 REVERSED THIS ENTRY. NOT A SIMPLE
-  CONTRAINDICATION.** `newton2019` shows BOTH: axitinib **P18–P27, DURING SOC maturation**, reduced SOC size
-  (P=0.0054) and clone size (P=0.0023) — the SOC is the Shh source, so damaging it starves the niche. **BUT
-  axitinib P41–P44, to an ESTABLISHED plate, is used ROUTINELY AND EXPLICITLY "TO PREVENT FUSION OF THE
-  GROWTH PLATE"** at 25 mg/kg/day, by reducing resorption of terminal hypertrophic chondrocytes. **The
-  subject has a fully formed SOC and is therefore in the second window.** ⛔ The objection is no longer
-  stage but **CHARGE WITHOUT DISCHARGE** — see R364. Grade A on the fusion-blocking observation, grade C on
-  whether it lengthens anything.
+- ⛔⛔ **ANTI-ANGIOGENICS / VEGFR INHIBITORS — CONTRAINDICATED AGAIN. R364's REVERSAL IS ITSELF REVERSED BY
+  R365, AND THIS TIME ON A STATED DIRECTION RATHER THAN A MISSING ENDPOINT.** The fusion-blocking fact is
+  real (`newton2019`: axitinib 25 mg/kg/day P41–P44, "to prevent fusion of the growth plate", by reducing
+  resorption of terminal hypertrophic chondrocytes; and the opposite at P18–P27 during SOC maturation, SOC
+  size P=0.0054, clone size P=0.0023). **What R364 and my own R365 draft both got wrong is treating
+  `gerber1999` as SILENT on growth. It is not.** Its abstract states proliferation, differentiation and
+  maturation were apparently normal while **only resorption was inhibited**, and that cessation was followed
+  by capillary invasion and **"restoration of bone growth"** — restoration on withdrawal entails impairment
+  on drug. Under R302 that is disqualifier ② (**wrong direction**), not a gap.
+  ⭐⭐ **AND THE COMPOSED KILL, from two facts this file already held separately: proliferation CONTINUES
+  under blockade (`gerber1999`) and growth-plate senescence is DIVISION-dependent, not time-dependent
+  (`marino2008`). So the pool is spent at the normal rate while no bone is made. IT IS NOT A PAUSE ON THE
+  CLOCK — IT IS A PURE LOSS, strictly worse than doing nothing for a pool-limited subject.**
+  ⭐ **THE SLOGAN: A THICKENED GROWTH PLATE IS NOT A PRESERVED GROWTH PLATE.** Widened / thickened /
+  persistent is what uncleared cartilage looks like. **Class effect confirmed across six agents and five
+  species** (axitinib mice+dogs with a dose-response; pazopanib rats; sunitinib cynomolgus with open plates;
+  regorafenib **persistent** femoral physis in dogs + sternal chondrodystrophy, and the FDA reviewer's own
+  class generalisation; sorafenib young dogs; bevacizumab juvenile monkeys, dose-related, partially
+  reversible) — **plus ONE HUMAN: the ramucirumab label records progressive widening of the distal femoral
+  growth plate in 1 of 16 paediatric patients.** That is the Gerber phenotype in a child, i.e. it CONFIRMS
+  the closure. ⚠ The one measurement that would overturn it — EdU/label-retention in the RESTING ZONE under
+  chronic blockade — has never been done (`g_l7_365a`).
 - ⛔ **LITHIUM / GSK3 INHIBITORS, and the whole bone-anabolic WNT-RAISING shelf** (NOTUM inhibitors, DKK1
   antibodies). R281 puts the canonical-Wnt optimum BELOW wild type; every marketed Wnt agent in bone raises
   it, because the indication was always bone MASS. **Lithium is prescribed to adolescents — ASK.** Grade E,
@@ -1801,6 +1822,55 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⛔⛔ R365 — **A THICKENED GROWTH PLATE IS NOT A PRESERVED GROWTH PLATE.** The VEGF class run to the end
+## in five species plus one human child — and it CONFIRMS a closure this file made in R~SD-006 and then lost.
+
+⛔ **ONE — THE SENTENCE, VERIFIED VERBATIM THIS ROUND, AND IT IS A DIRECTION NOT A GAP.** `gerber1999`
+(Flt-(1-3)-IgG, systemic, **24-day-old mice**): vessel invasion almost completely suppressed, impaired
+trabecular bone formation, expanded hypertrophic zone, chondroclast recruitment and terminal-chondrocyte
+resorption down — **with proliferation, differentiation and maturation apparently NORMAL and only resorption
+inhibited** — and cessation followed by capillary invasion and **"restoration of bone growth"**.
+**Restoration on withdrawal entails impairment on drug.** R364 and my own R365 draft both filed this as *no
+length endpoint measured*. **It is not a missing endpoint; it is the primary reporting the direction.**
+
+⭐⭐⭐⭐ **TWO — THE COMPOSED KILL, FROM TWO FACTS THIS FILE ALREADY HELD AND NEVER PUT TOGETHER.**
+· `gerber1999`: under near-complete VEGF blockade **the chondrocytes keep dividing.**
+· `marino2008` / `growth_plate_senescence`: plate senescence is **DIVISION-dependent, not time-dependent** —
+  the plate ages by dividing, not by waiting (which is also why R266 closed senolytics).
+→ **VEGF BLOCKADE SPENDS THE POOL AT THE NORMAL RATE WHILE PRODUCING NO BONE LENGTH. It is not a pause on
+the clock; it is a pure loss — the one configuration STRICTLY WORSE THAN DOING NOTHING for a pool-limited
+subject.** Derivable with no new experiment, and the precise opposite of the stated objective.
+⚠ **Grade D, and the weak joint is named: "apparently normal" is a 1999 histological impression, not a
+labelling index.** If proliferation actually falls in proportion to the output block, the blockade becomes a
+genuine PAUSE on a division-counted clock — which would be the most valuable thing in the file. **Nobody has
+ever counted proliferating or resting-zone cells under VEGF blockade in any species.** `g_l7_365a`.
+
+⭐⭐ **THREE — THE CLASS EFFECT, AND IT CONFIRMS THE CLOSURE RATHER THAN REOPENING IT.** Six agents, five
+species, from the openFDA labels + three Drugs@FDA nonclinical reviews: **axitinib** thickened plates in mice
+and dogs ≥15 mg/kg/dose (review tables, femur **0/0/3/0/9** M and **0/0/1/2/9** F across ascending doses;
+tibia 0/0/0/1/4 and 0/0/0/0/4) · **pazopanib** epiphyseal growth-plate hypertrophy, rats · **sunitinib**
+physeal dysplasia in cynomolgus monkeys **with open growth plates**, ≥3 months · **regorafenib**
+**PERSISTENT** femoral epiphyseal growth plate in dogs + **chondrodystrophy of the sternal symphyses**, with
+the reviewer's own generalisation that such changes are known in growing dogs on VEGF inhibitors ·
+**sorafenib** irregular thickening, young dogs · **bevacizumab** physeal dysplasia in juvenile monkeys,
+dose-related and **partially reversible on cessation** — the animal echo of Gerber's withdrawal result.
+⭐ **AND ONE HUMAN: the RAMUCIRUMAB label records that of 16 paediatric patients, one had progressive
+widening of the distal femoral growth plate.** Ramucirumab and sunitinib labels both say the effect on open
+tibial growth plates in paediatric patients **"has not been adequately studied."**
+→ **Widened/thickened/persistent is what UNCLEARED CARTILAGE looks like. The class reaching a child produces
+the Gerber phenotype there, which strengthens the kill.** This is the human half the 2026-08-09 node lacked
+(it recorded `human_evidence: absent`).
+
+⛔ **FOUR — CORR-350 WAS RUN AGAINST THE CLASS AND RETURNED A LIMIT ON ITSELF.** No femur/tibia/ulna/limb/body
+length appears in the axitinib, regorafenib or cabozantinib reviews, in `gerber1999`, or in any of the six
+labels — **and the reason is structural: the axitinib and regorafenib reviews both state "Juvenile studies –
+not done/not required."** ICH S11 juvenile studies attach to a **PAEDIATRIC INDICATION**; dabigatran has one
+(hence its serial ulna lengths at five timepoints), adult-only oncology agents do not, so their skeletal
+findings come from ordinary repeat-dose studies in young animals — histopathology, never a caliper.
+⭐ **CORR-350 IS INDICATION-DEPENDENT. Ask whether the drug has a paediatric indication BEFORE expecting a
+length endpoint from Drugs@FDA.** ⚠ Not yet pulled: the **bevacizumab, sunitinib, pazopanib and ramucirumab**
+reviews; bevacizumab and sunitinib have paediatric exposure, so a juvenile study may exist for one of them.
 
 ## 🧭🧭🧭 R355 — **THE STACK AUDITED AGAINST "CAN CLOSURE BE PREVENTED". The oestrogen half is now covered
 ## and he is an ORDER OF MAGNITUDE below the human closure threshold. THE RESIDUAL IS THE POOL, AND NOTHING
