@@ -1716,6 +1716,29 @@ HIF-PHI class was already checked in R284.
   LIST: the marketed molecule itself was given to normal juvenile mice for FOUR DAYS AND THE GROWTH PLATE
   FUSED** (`newton2019`: six administrations P31–P34 → resting-zone clonal size down → **fusion**;
   RZ proliferation inhibited, no premature hypertrophy, CD73 retained). Grade A, direct fusion endpoint. R362
+- ⛔⛔⛔ **ITRACONAZOLE AND POSACONAZOLE ARE SMO ANTAGONISTS AT ORDINARY ANTIFUNGAL EXPOSURE — THEY INHERIT
+  THE ROW ABOVE, AND THIS FILE HELD ITRACONAZOLE ONLY AS A CYP3A INHIBITOR IN A DRUG-INTERACTION TABLE.**
+  `kim2010itra` (Cancer Cell, 406 cites): itraconazole antagonises SMO by a mechanism **distinct from
+  cyclopamine AND from its own antifungal sterol effect**, **prevents ciliary accumulation of SMO**, and
+  suppressed Hh activity + tumour growth in vivo **"at serum levels comparable to those in patients
+  undergoing antifungal therapy"** — the Hh-inhibitory concentration IS the clinical one. `chen2016posa`
+  reproduces it for **posaconazole** at the level of SMO, in vivo.
+  ⭐⭐ **AND THE CLASS IS BOUNDED, WHICH MAKES THIS A SUBSTITUTION RATHER THAN A WARNING: FLUCONAZOLE,
+  VORICONAZOLE, KETOCONAZOLE AND TERBINAFINE ALL RETURN ZERO** title+hedgehog records (terbinafine hits
+  squalene epoxidase, a different step). **If an oral antifungal is needed while the plate is open, use
+  TERBINAFINE or FLUCONAZOLE — never itraconazole or posaconazole.** Itraconazole and terbinafine are the
+  two standard agents for adolescent onychomycosis/tinea capitis, so this is a live choice. **ASK WHETHER HE
+  HAS EVER TAKEN ONE.** Grade B on the pharmacology, **grade C on the physeal step** (inherited from
+  vismodegib by shared target; no azole has ever been given to a growth plate). R366, `g_l12_366a`
+- ⚠⚠ **MEGADOSE VITAMIN D3 — A BAND, NOT A CONTRAINDICATION, AND ADEQUACY IS NON-NEGOTIABLE.**
+  `bijlsma2006` (PLoS Biol, 213 cites): **vitamin D3 binds SMO with high affinity, cyclopamine-sensitive**,
+  inhibits Gli, and **zebrafish embryos treated with vitamin D3 phenocopy the SMO null**. `chen2025vd3`
+  corroborates independently — a medchem programme building **vitamin-D3-scaffold Hh inhibitors** that target
+  SMO outside the cyclopamine site, whose SAR *raises* anti-Hh activity while *deliberately reducing* VDR
+  activity, i.e. **native D3 carries both**. ⛔ **Deficiency is rickets; this is about MEGADOSING ONLY** —
+  same shape as the vitamin C entry. **Target mid-normal 25-OH-D.** ✗ Gaps: no Kd, active species is
+  (pro-)vitamin D3 not calcitriol, in vivo is a fish embryo, and **no dose-to-occupancy relationship exists
+  in any mammal.** Grade D. R366
 - ⛔⛔ **ANTI-ANGIOGENICS / VEGFR INHIBITORS — CONTRAINDICATED AGAIN. R364's REVERSAL IS ITSELF REVERSED BY
   R365, AND THIS TIME ON A STATED DIRECTION RATHER THAN A MISSING ENDPOINT.** The fusion-blocking fact is
   real (`newton2019`: axitinib 25 mg/kg/day P41–P44, "to prevent fusion of the growth plate", by reducing
@@ -1822,6 +1845,51 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⭐⭐⭐ R366 — **THE SELF-RENEWAL FRACTION IS THE VARIABLE, AND WORKING BOTH SIGNS PRODUCED TWO FREE
+## SUBTRACTIONS AND ONE MECHANISM WITH NO DRUG.** Two common antifungals are SMO antagonists.
+
+R365 showed the closure clock is counted in **DIVISIONS**, so nothing that blocks output can pause it. That
+collapses the objective onto **the fraction of divisions that are self-renewing**. Both signs run here.
+
+⭐⭐⭐ **ONE — `newton2019` READ PROPERLY IS A PURE N LEVER AND R364 UNDERSOLD IT.** Chondrocyte-specific
+**Tsc1** ablation (mTORC1 UP) → **PAR3 distributed symmetrically in a larger proportion of stem-cell clonal
+dyads** (P3–P40), and multi-columnar clone number and thickness **grew from P3 to P90** = accelerated
+expansion of colony-forming cells.
+⭐ **WHAT MAKES IT A POOL RESULT AND NOT A RATE RESULT IS THAT EVERY RATE CONTROL IS NULL:** EdU⁺ epiphyseal
+stem cells 24.7±3.7 → **62.4±7.5 per section (P=0.014) but WITH NO CHANGE RELATIVE TO TOTAL RESTING-ZONE
+CELLS** · Ki67 and pH3 unchanged · %EdU⁺ flat cells and their migration to HZ unaltered · flat-chondrocyte
+proliferation unaffected · SOX9 unaffected. Authors: neither chondroprogenitor proliferation nor recruitment
+into the proliferative layer changed detectably **while resting-zone clones grew**. **That is the SPIN4
+signature — N↑ with the rate terms flat — reached by a completely different pathway.**
+⭐ **BIDIRECTIONAL: Raptor ablation (mTORC1 DOWN) ENHANCED LOSS OF CLONES** in otherwise normal plates.
+✗ Cost in the same paper: **the resting zone becomes DISORGANIZED from P28**, cilia irregular. And **no bone
+length in any arm.**
+
+⛔⛔ **TWO — WHICH UPGRADES TWO CONTRAINDICATIONS FROM "SLOWS GROWTH" TO "SPENDS THE POOL".** Every prior
+argument against rapalogs is a RATE argument (MTOR −3.65 cm · FKBP1A +4.605 · rapamycin halves rat growth).
+**Raptor ablation enhancing clone loss is a POOL argument, which is the worse one for a pool-limited
+subject** — and **METFORMIN inherits it through AMPK⊣mTORC1**, the R297/R326 conflict finally priced.
+⭐ **AND A VARIABLE WITH LITERALLY ZERO COVERAGE: ENERGY AND PROTEIN RESTRICTION.** mTORC1 is the cell's
+amino-acid/energy sensor. Grep: *caloric restriction* = **0 files**; every instance of *fasting* in this
+atlas is *fasting insulin* or *fasting glucose*. **Deliberate fasting, low intake, or hard training in
+deficit is a DIRECT INPUT to the self-renewal decision, not merely less building material.** Grade E, free
+to ask, never once asked.
+
+⛔ **THREE — AND THE HUMAN ANCHOR IS ABSENT, WHICH IS WHY THIS IS NOT A PROMOTION.** Run against both
+datasets on disk: **MTOR is the ONLY mTORC1-pathway gene in the 207** (pLoF −3.650 cm, P=2.17e-11, 166 hets)
+— TSC1, TSC2, RPTOR, RHEB, DEPDC5, NPRL2/3, AKT1, PTEN, PIK3CA, PRKAA1/2, STK11, FLCN return **no rows**.
+**HPO: TSC1 and TSC2 carry NO stature annotation at all** — the human het version of newton2019's experiment
+does not make people tall. **DEPDC5** (GATOR1 brake, loss raises mTORC1) returns **short stature** — recorded
+because it is inconvenient, weak because it is an epilepsy syndrome. The pathway's overgrowth rows (PIK3CA,
+AKT1) are **mosaic activating somatic** lesions, as R324 flagged. ⚠ CORR-348: an absent HPO annotation is not
+a measured null. **There is no obtainable mTORC1 activator.** → recorded as a COST on the opposite direction.
+
+⭐ **FOUR — the antifungal and vitamin D3 findings are in the CONTRAINDICATED section above.** The one-line
+version: **itraconazole and posaconazole are SMO antagonists at ordinary clinical exposure and inherit the
+vismodegib fusion result; terbinafine and fluconazole are clean and are the substitution.**
+✓ Converges with R362 from the same paper: `newton2019` states hedgehog regulates stem-cell **RENEWAL, not
+IDENTITY** — Hh stimulation increased and inhibition decreased cells per colony.
 
 ## ⛔⛔ R365 — **A THICKENED GROWTH PLATE IS NOT A PRESERVED GROWTH PLATE.** The VEGF class run to the end
 ## in five species plus one human child — and it CONFIRMS a closure this file made in R~SD-006 and then lost.
