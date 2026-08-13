@@ -1678,7 +1678,9 @@ HIF-PHI class was already checked in R284.
 
 - **Menin-MLL inhibitors** (revumenib, approved Nov 2024; ziftomenib) — block KMT2A-dependent H3K4
   methylation, and R333 says MORE H3K4me3 is TALLER. Grade E, mechanistic. R342
-- **DNMT inhibitors** (azacitidine, decitabine) — reproduce the Dnmt1-KO direction: accelerated
+- **DNMT inhibitors** — ⭐ **NOW HUMAN-ANCHORED (R343): UHRF1, DNMT1's essential targeting cofactor, is
+  −2.52 cm (P=7.1e-08) and UHRF2 −3.10 (P=7.4e-17), while TET1 is +7.95. MORE 5mC IS TALLER.** Plus the
+**DNMT inhibitors** (azacitidine, decitabine) — reproduce the Dnmt1-KO direction: accelerated
   differentiation, shorter bone. R276
 - **Alpha-ketoglutarate** — co-substrate for TET demethylation *and* a TCA intermediate. **Upgraded from
   grade-E mechanism-only to human-anchored (R283): TET1 loss is +8.32 cm in 1.45M people, so feeding the TET
@@ -1754,6 +1756,55 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⛔⛔ R343 — **DNMT1 ANSWERED WITH HUMAN GENETICS (it is backwards), THE DRUGGABILITY TABLE COMPUTED TO
+## THE END, and bexotegrast triaged out on the free query before it could be proposed.**
+
+⭐⭐ **DNMT1 INHIBITION IS CONTRAINDICATED, AND NOW ON HUMAN DATA RATHER THAN A MOUSE CONDITIONAL.** R276
+closed DNMT inhibitors on `Dnmt1`ΔPrx1 (limb mesenchyme, embryonic — CORR-299 applies). The human answer is
+better. **DNMT1 has NO ROWS in kosmicki's 207 at any variant class** (12/14 in plate, 41.8 CPM); **DNMT3A
+has none either**, despite Tatton-Brown-Rahman being a tall-stature syndrome — consistent with R281's class
+rule that overgrowth syndromes pay the bone-age trade. **But DNMT1's essential targeting cofactor IS there:
+UHRF1 −2.52 cm (P=7.1e-08, 228 carriers)**, with paralogue **UHRF2 −3.10 cm (P=7.4e-17, 359)**. UHRF1 loads
+DNMT1 onto hemimethylated DNA — **so losing maintenance methylation SHORTENS humans, which is what
+decitabine and azacitidine do pharmacologically.**
+⭐ **AND THE AXIS IS BIDIRECTIONAL IN ONE DATASET, WHICH THIS FILE HAD NEVER STATED:**
+| direction | gene | β |
+|---|---|---|
+| remove **methylation** | UHRF1 / UHRF2 | **−2.52 / −3.10 cm** |
+| remove **demethylation** | **TET1** | **+7.95** (singleton) → +2.98 (656) → +2.56 (744) |
+**MORE 5mC IS TALLER.** TET1 is monotone across frequency bins — the shape of a real causal LoF effect.
+**Decitabine is precisely backwards, and the wanted direction is the one with no drug.**
+⚠ Honest counter kept: IDH-mutant 2-HG inhibits TET and gives **enchondromatosis with short stature** — but
+2-HG is promiscuous across 2-OG dioxygenases and enchondroma is a somatic clonal lesion.
+
+⭐⭐ **THE DRUGGABILITY TABLE, COMPUTED TO THE END — "does ANYTHING point the right way and is druggable?"**
+Positive β (loss = taller → INHIBIT) × in tissue × ChEMBL matter. **SEVEN survive, and this file has already
+worked all seven:**
+| gene | β cm | P | CPM | mols | status |
+|---|---|---|---|---|---|
+| **TET1** | **+7.95** | 4.8e-28 | 19.2 | 39 | ⚠ molecules are **PEPTIDIC** (MW 1,267–3,322) |
+| CHD8 | +7.24 | 6.3e-15 | 47.0 | **1** | 1 molecule = noise; ASD/ID/macrocephaly |
+| **AMD1** | +3.08 | 7.1e-09 | 119.7 | 20 @ 8.30 | R331 killed the axis **on drug class**, reopenable |
+| PTPN9 | +1.01 | 1.8e-10 | 25.3 | 19 | R325 worked fully — do not add |
+| **DPP9** | +0.84 | 5.0e-11 | 25.7 | **531 @ 9.92** | ⛔ **DEAD R305** — mouse tibia −4.062, P=5.9e-08, discordant |
+| **LOXL2** | +0.68 | 1.4e-16 | **186.3** | 365 | the standing lead (PXS-5505), mechanism weakened R332/333 |
+| POR | +0.45 | 2.3e-14 | 26.2 | 2 | aromatase's electron donor; he's already on an AI |
+⭐ **THE BIGGEST TARGETS HAVE NOTHING: FBN1 +9.13 (P=5.5e-44), LCORL +8.85, ZNF518A +3.90, SAMD4A +3.67,
+HMG20B +3.12, CHAD +2.63, NRK +2.02, CLEC3A +1.52, STC2 +1.37, ZFAT +1.24 — ALL ZERO MOLECULES.**
+
+⛔ **BEXOTEGRAST TRIAGED OUT BEFORE PROPOSAL — CORR-327 on the free query.** R323's unfilled spec is *"reduce
+TGF-β AVAILABILITY at the perichondrial matrix, NOT receptor signalling"* — and integrin-mediated activation
+of latent TGF-β is exactly that step. **BEXOTEGRAST (PLN-74809)** is oral, dual αvβ6/αvβ1, phase 2b/3
+(BEACON-IPF). ✗ **ITGB6 IS 1/14 AT 0.2 CPM IN 1.5% OF CELLS — αvβ6 is not in the growth plate.** What is:
+**THBS1 292.8 CPM in 96.1% of cells** (the non-integrin latent-TGF-β activator), ITGAV 111.8/68.7%, ITGB8
+13.7, ITGB1 299.5. **The activation step here is THBS1/αvβ8-dominated, not αvβ6.** Wrong activator.
+
+⛔ **AND THE MICROFIBRIL MODULE'S SIGNS SPLIT — a module-level intervention cannot work.** FBN1 **+9.13** and
+LTBP2 **+2.36** against **LTBP1 −1.64 (P=2.2e-15, 1,147)** and **LTBP3 −0.38 (P=4.5e-12, 16,803 carriers)**.
+CORR-325 noted non-monotonicity at the BIALLELIC end; this is the **heterozygous burden data splitting inside
+one module**. "Less TGF-β sequestration is taller" is FBN1- and LTBP2-specific, not a rule — which further
+undermines any systemic agent on this axis.
 
 ## ⭐⭐ R342 — **THE STC2 HANDLE EXISTS AND IS A SOLVED 3.1 Å INTERFACE.** And the marketed chromatin
 ## shelf is audited: it is FULL and it POINTS THE WRONG WAY — which is why "think like decitabine" keeps failing.
