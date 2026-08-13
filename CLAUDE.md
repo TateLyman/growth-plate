@@ -1664,6 +1664,58 @@ HIF-PHI class was already checked in R284.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
 
+## 🎯🎯🎯 R331 — **THE COMPOUND: PXS-5505 (LENUMLOSTAT), ORAL, 200 mg BID.** The screen run to the end in
+## both directions. Polyamines KILLED. The elevation direction is fully occupied. This is what's left.
+
+⛔ **WHY R328's DIRECTION PRODUCED NO COMPOUND — NOW SETTLED, NOT SUSPECTED.** Of the 96 genes whose loss
+SHORTENS, **only FIVE have any agent in the activating direction, and every one is already in his stack or
+already demoted**: NPR2→carperitide (CNP arm) · IGF1R→mecasermin (R326: circulating ligand = radial half) ·
+GHR→somatropin (he's on it) · GHSR→ibutamoren (R284 substitution) · MTOR→indoximod (keyword artefact).
+**THE ELEVATION DIRECTION IS FULLY OCCUPIED.** Any remaining compound must come from the inhibit direction.
+⚠ Count is a FLOOR — keyword MoA matching missed AMD1's own SAM486A, found by hand.
+
+⛔⛔ **POLYAMINES ARE DEAD — CORR-325 APPLIED AND IT KILLED THE BEST-LOOKING AXIS ON PAPER.**
+AMD1 **+3.08 cm** (P=7.1e-09, 173 carriers; +7.18 on the small pure-pLoF row) · SMOX **−1.84** (P=1.1e-25,
+1,616) · pathway abundant postnatally (OAZ1 308 CPM/94.8% of cells, SAT1 379, AMD1 120, SRM 57, ODC1 48) ·
+Step 0 clean · **eflornithine APPROVED with paediatric dosing.** Then read the biallelic disease:
+· **SMS loss = SNYDER-ROBINSON** — spermine-deficient humans: asthenic build, kyphoscoliosis, early-onset
+  osteoporosis with non-traumatic fractures, **SHORT STATURE**.
+· **G56S Sms mouse** — raised spermidine/spermine ratio, failure to thrive, **SHORT STATURE**, ↓bone density.
+· **IMPC, on this disk: Sms hemizygote BODY LENGTH −3.367, P=1.70e-03.**
+**Three lines, two species. And the drugs are ANTIPROLIFERATIVES; the plate is a proliferative tissue.**
+⚠ Honest caveat: SMS loss moves the RATIO (spermine↓ spermidine↑) while AMD1 sits upstream of both — so
+strictly the pathway is a BAND. The kill rests on the drug class, not the genetics. Reopening needs an
+AMD1-selective agent with a caliper on a bone.
+
+🎯 **WHAT SURVIVES — THE LYSYL OXIDASE AXIS, AND IT HAS A REAL MOLECULE.**
+✓ **Human direction, 3 genes 1 pathway 1 sign:** LOXL2 **+1.40 cm** (P=2.2e-09, 907) · PLOD2 +1.34 · PLOD1 +1.03
+✓ **CORR-327 receiver test passes emphatically:** LOXL2 **186.3 CPM, 12/14 samples, up to 87.3% of cells** —
+among the highest-expressed genes in the whole panel (COL2A1 = 9,201); PLOD2 745; LOXL4 21,618 HZ.
+✓ **Step 0 CLEAN** — matrix cross-linking is moved by *nothing* in this stack. The test that killed
+sacubitril, LUM-201, meclozine, PDE3 and cobimetinib.
+✓ **Acts on h_term** (~80% of longitudinal growth), which R296 said had NO upward-pointing agent.
+⭐ **NEW THIS ROUND:** IMPC **Plod1 TIBIA LENGTH +0.090, P=2.40e-03** — positive, the RARE direction under
+CORR-329 (245 neg vs 38 pos), and the **first length endpoint anywhere on this pathway**. Plus R330's
+configuration: **LOXL2 −0.347 at the KNEE vs +0.253 at the SHOULDER** = brake-like, matching HHIP/STC2.
+⭐ **THE COMPOUND: PXS-5505 / lenumlostat, oral first-in-class pan-LOX inhibitor. 200 mg TWICE DAILY** was
+the top dose in phase I/IIa (`vachhani2025`), **safe, with robust systemic reduction of lysyl oxidase
+activity**, carried into cohort expansion; **steady state day 28**; 24 patients, 13/24 through 24 weeks,
+majority of AEs grade 1–2, **92% of TEAEs unrelated to drug.** Dose, route, schedule, PD readout, safety
+window — all published.
+
+⛔ **THE OBJECTION THAT DECIDES IT, AND IT IS AN EFFICACY OBJECTION NOT A SAFETY ONE.** BAPN causes
+**OSTEOLATHYRISM including EPIPHYSEAL SEPARATION** — a drug that separates the physis ENDS growth. That is
+on-target and on-tissue. PXS-5505 is reversible, LOX-family-selective and dosed to measured activity rather
+than to a maximum, but **no growing animal has received either with a bone measured.**
+⭐⭐ **EXCEPT SOMEBODY MAY ALREADY HAVE — CORR-340. `mcnerny2015` gave BAPN 350 mg/kg/day s.c. to GROWING
+MALE C57Bl/6 MICE FROM 5 TO 8 WEEKS and says tibial MORPHOLOGY was measured.** The abstract gives
+cross-links, modulus, yield strain, mineral density — **no length. PAYWALLED, PMC record is an empty author
+manuscript.** ⭐ **THIS IS THE ONE DOCUMENT TO GET: if tibia length is in it, it is the first bone-length
+endpoint under LOX inhibition in any species and it decides the last obtainable candidate in this file.**
+✗ Also against: IMPC has **no Loxl2 length row at all**; R312's rat contrast runs BACKWARDS; PLOD2 biallelic
+= Bruck (short); never given to an adolescent. **Grade C. Not a recommendation — a specification.**
+Gap `g_l12_331a`.
+
 ## ⭐⭐⭐⭐ R330 — **THE SITE-RESOLVED HUMAN LIMB DATA, OPENED AT LAST** (`atlas/data/round330/`).
 ## Seven operator-supplied files, never opened. New capability: chromatin + expression + height GWAS
 ## resolved to EIGHT INDIVIDUAL GROWTH PLATES, plus knee/hip/shoulder/elbow DE.
