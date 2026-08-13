@@ -1609,6 +1609,83 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐⭐ R324 — **NRK TAKEN ALL THE WAY DOWN.** Best genetics in the file · a real mechanism · the mouse
+## exists · and **THE MODALITY IS WRONG.**
+
+**ONE — ⭐⭐⭐ THE ALLELIC SERIES. `kosmicki2026` has THIRTY-FIVE NRK rows and this file ever quoted two.**
+Monotone in **both** variant severity and allele rarity:
+pLoF singleton **+3.79 cm** (1.3e-09, n=32) · pLoF+delmis singleton **+2.98** (8.1e-12, 82) · pLoF <0.01%
+**+2.79** (1.0e-20, 247) · pLoF <0.1–1% **+2.49** (7.7e-19, 319) · delmis singleton +2.21 · **pLoF+delmis
+<0.01% +2.02 at P=6.44e-29 (n=544)** · delmis <0.01% +1.59 · poss-delmis <0.01% +0.61 · **ALL missense <1%
++0.16** (n=10,564).
+**More damaging = taller; rarer = taller; dilute the mask with benign missense and it decays to +0.16.**
+That is the shape a causal LoF effect makes. **No other target here has it** — FBN1, HHIP, TET1 and CHAD are
+each quoted from one row.
+
+**TWO — X-LINKAGE CUTS THE FAVOURABLE WAY.** NRK is Xq22, so a male pLoF "carrier" is **HEMIZYGOUS — a
+complete null.** The +2.79 cm may largely be a COMPLETE-LOSS effect, which is what full target engagement
+emulates, and the subject is male. ✗ S6 does not split by sex → gap
+`g_l12_is_the_human_nrk_height_effect_hemizygous_male_or_heterozygous_female`.
+
+**THREE — ⭐⭐⭐ THE MECHANISM EXISTS AND IT IS AKT** (`lestari2022`). NRK carries a **CK2-INHIBITORY REGION**
+that binds CK2β. Chain: **NRK ⊣ CK2 → (CK2 phosphorylates PTEN S380, inactivating it) ⊣ PTEN → more PIP3 →
+more AKT.** So **losing NRK RAISES AKT.** In vivo: Nrk-KO placentas have raised pPTEN-S380 **and** pAKT-S473.
+`morioka2017` (trophoblast) and `lu2020nrk` (vascular smooth muscle) agree — **three tissues, one direction.**
+⭐ **THE WHOLE CHAIN PASSES CORR-327 IN THE HUMAN GROWTH PLATE:** NRK 76.0 CPM/81.5% of cells · CSNK2B 82.1
+(78.5%) · **PTEN 121.0 (68%)** · AKT1 45.7 (72%) · AKT3 111.8 · PIK3CA 58.6 · MTOR 22.5 · RICTOR 59.3.
+⭐⭐ **AND FOUR INDEPENDENT HUMAN NODES FIX THE DIRECTION:** **PTEN** → HPO tall + overgrowth · **AKT1** →
+tall + **disproportionate tall** + overgrowth (Proteus) · **PIK3CA** → tall + overgrowth · **MTOR pLoF
+−3.65 cm** and HPO short. **And the drug agrees: `alvarezgarcia2007` — rapamycin 2 mg/kg/day in 4-wk rats
+HALVED longitudinal growth rate, 94 vs 182 µm/day.**
+⭐ **It lands on h_term** — AKT/mTOR sets CELL SIZE, ~80% of longitudinal growth, the term R296 said had no
+upward-pointing agent.
+
+**FOUR — ⛔⛔⛔ AND THE MODALITY IS WRONG. NRK's ANTIPROLIFERATIVE FUNCTION IS KINASE-INDEPENDENT.**
+`lestari2022`: *"the kinase domain was NOT required for mNRK-induced inhibition of AKT signaling or cell
+proliferation."* The active element is the **CIR, aa 565–868** — **565–831 binds CK2β, 832–868 is required
+for MAXIMAL inhibition.**
+⛔ **R310's line — inhibition, "which for a KINASE is the most drugged fold there is" — IS WRONG FOR THIS
+TARGET.** An ATP-competitive NRK inhibitor would occupy a domain the phenotype does not depend on.
+⭐ **The specification instead: a DEGRADER** (removes the whole protein = the exact genetic experiment,
+domain-agnostic) **or a CIR–CK2β interface disruptor** — a 37-residue functional sub-element, the same shape
+that made CHAD tractable (CORR-335). ⚠ Note the inversion: inhibiting NRK **disinhibits CK2**, so
+**silmitasertib runs the WRONG way** — agreeing with R311's Csnk2b-KO acceleration (+3.620).
+
+**FIVE — THE CHEMISTRY, QUANTIFIED.** Pharos/IDG: **NRK is Tdark, 0 ligands, 0 drugs.** Siblings all
+**Tchem** — MAP4K4 105 ligands, TNIK 143, MINK1 42. ChEMBL: **no human NRK target record.**
+⚠ **NRK is the DIVERGENT GCK-IV member — 59% kinase-domain identity vs ~92% among the other three**, so
+existing GCK-IV chemistry is unlikely to cross-react (moot anyway, wrong domain).
+⛔ **TWO NAME TRAPS:** ChEMBL's three "NRK" hits are **rat kidney CELL LINES**; a "NIK inhibitor" search
+returns **MAP3K14** compounds. Neither is this gene.
+
+**SIX — ⭐⭐ THE KNOCKOUT MOUSE EXISTS AND THIS FILE KEPT SAYING "no perturbation in any species".**
+**`Nrk^tm1Mkom`, B6.129S4 congenic, MGI:5292104/5/6** (`denda2011`) — already phenotyped as **hemizygous
+male, homozygous female AND heterozygous female**, the three genotypes an X-linked gene needs. Its seven MP
+terms are all placental/reproductive (enlarged placenta, dystocia, incompletely penetrant neonatal
+lethality). **NOT ONE IS SKELETAL — the skeleton was never looked at.**
+⛔ **And IMPC has ZERO Nrk rows in 2,236,257** (vs Tnks 189, Pde3b 33) — which is why every automated sweep
+came back empty. → **The gap changes from "make the model" to "order the mouse and use a caliper".**
+
+**SEVEN — THE "PLACENTA-RESTRICTED" CLAIM IS WRONG.** `lestari2022` says mouse Nrk is placenta-restricted.
+Against it: **`kanaiazuma1999` (the original cloning paper) puts Nrk in SKELETAL MUSCLE from the VENTRAL
+MYOTOME at E10.5**, rising E15–17; `nakano2000` (NESK) agrees; and this atlas measured it directly —
+**83.5× chondrocyte enrichment**, all five GSE9160 compartments in both donors, 183–301 CPM mouse
+perichondrium. **A mouse tissue panel does not contain growth plate.**
+
+**EIGHT — TENSIONS, UNRESOLVED.** ⚠ R312's direction problem stands: NRK is **capacity-like** in mouse AND
+rat (falls with age, lower in the low-output plate) — the opposite of what a brake should do; a homeostatic
+reading is available and post hoc. ⚠ `richard2025` puts NRK in module **CD4** (635 genes, with COL11A1,
+COL9A1, ENPP1, TNIK); CD4's height enrichment is **P=0.145, ns**. ⚠ CORR-292's JAM applies — more AKT could
+enlarge cells without lengthening bone. ⚠ PTEN/AKT1/PIK3CA overgrowth alleles are **mosaic activating
+cancer lesions**, which is the argument for entering at a chondrocyte-restricted node, not at PI3K.
+⚠ **INPPL1 is a counterexample inside the pathway** (loss should raise AKT, yet biallelic loss is
+opsismodysplasia, short) — CORR-325 applies but it is recorded, not explained away.
+
+**NINE — ⛔ A STRUCTURAL LIMIT ON R318/R323 NOBODY HAD NOTICED: THE HEIGHT GWAS HAS NO X CHROMOSOME.**
+**Zero chrX rows in 11.2M variants** of `bartell2026` standing height. **The trunk-vs-limb framework cannot
+place NRK or any X-linked gene.** ✓ The autosomal siblings are there and all carry height leads (MAP4K4
+P=3e-13, MINK1 2.5e-07, TNIK 2.3e-04) — unfine-mapped, but the family is not invisible to height.
+
 ## ⭐⭐⭐ R323 — R304's OWN UNEXECUTED INSTRUCTION, RUN. Two independent unbiased screens, ONE axis.
 ## And a correction to R318 that I have to make against myself.
 

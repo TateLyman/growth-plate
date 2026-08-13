@@ -16769,3 +16769,63 @@ gaps:
     weaning to skeletal maturity and measure TERMINAL femur, tibia AND vertebral body length, with perichondrial
     pSmad2 as the pharmacodynamic readout. The vertebral arm is not optional - baffi2004 predicts the axial
     skeleton is where chondrocyte TGF-beta loss does damage, and this subject's residual is trunk-dominant.
+- gap_id: g_l12_is_the_human_nrk_height_effect_hemizygous_male_or_heterozygous_female
+  type: known_unknown
+  layer: L12
+  tractability: 4
+  question: NRK is on Xq22. Is its +2.79 cm burden effect driven by HEMIZYGOUS MALES - who are complete
+    nulls - or by heterozygous females?
+  why_it_matters: >-
+    It decides what a drug is emulating. A hemizygous male carrying a protein-truncating NRK variant has NO
+    second copy, so if the signal is male-driven then the human evidence is for COMPLETE loss of function,
+    which is what full pharmacological target engagement would reproduce - and the subject in this case is
+    male. If the signal is female-heterozygote-driven then it is a 50 per cent reduction with X-inactivation
+    mosaicism on top, and the dose-response for a drug is unknown in a different way.
+  what_is_known: >-
+    Thirty-five NRK burden rows in kosmicki2026 Supplementary Table 6, monotone in variant severity and
+    allele rarity, best P=6.44e-29, pLoF AAF<0.01% +2.79 cm across 247 carriers. The table reports a single
+    carrier count per row and does not split by sex, and this atlas does not hold the paper's stated
+    handling of the X chromosome.
+  what_is_missing: A sex-stratified burden result for NRK, or the methods text describing X-chromosome
+    coding in the burden model.
+  nearest_evidence:
+  - kosmicki2026
+  - denda2011
+  nearest_evidence_note: The mouse knockout was phenotyped in all three relevant genotypes - hemizygous male,
+    homozygous female, heterozygous female - so the design exists in the animal even though the readout was
+    placental.
+  tractability_note: Requires either the paper's supplementary methods or a sex-stratified re-analysis;
+    no new data collection.
+  discriminating_experiment: Read kosmicki2026's methods for X-chromosome handling, and obtain the
+    sex-stratified NRK burden estimate. If male hemizygotes carry the effect, the human evidence supports
+    complete inhibition as the therapeutic target level.
+- gap_id: g_l12_does_a_degrader_or_cir_disruptor_of_nrk_exist_or_can_one_be_made
+  type: known_unknown
+  layer: L12
+  tractability: 2
+  question: Can NRK be removed or its CK2-inhibitory region be blocked, given that an ATP-competitive kinase
+    inhibitor is predicted not to reproduce the phenotype?
+  why_it_matters: >-
+    NRK has the best human genetics in this atlas - a monotone allelic series in 1.45M exomes - and the
+    conventional reading of "it is a kinase, so inhibit it" is wrong here. lestari2022 shows the kinase
+    domain is not required for the antiproliferative, AKT-suppressing function; the CK2-inhibitory region at
+    aa 565-868 is. So the modality question is the whole question.
+  what_is_known: >-
+    NRK is Tdark in Pharos with zero ligands and zero drugs; ChEMBL has no human NRK target record (its
+    three "NRK" entries are rat kidney cell lines). Its GCK-IV siblings MAP4K4, TNIK and MINK1 are all
+    Tchem with 105, 143 and 42 ligands, but NRK shares only 59 per cent kinase-domain identity with them
+    against ~92 per cent among the other three. The functional interface is mapped - aa 565-831 binds
+    CK2beta, aa 832-868 is required for maximal CK2 inhibition.
+  what_is_missing: Any chemical matter of any kind. No inhibitor, no degrader, no chemical probe, no
+    published NRK structure.
+  nearest_evidence:
+  - lestari2022
+  - pharos_idg
+  nearest_evidence_note: The nearest precedent in this atlas is CHAD, where a functionally defined short
+    motif (LRRWLEAK318) converted "no chemical matter" into a synthesis specification (CORR-335). aa 832-868
+    is the analogous element here.
+  tractability_note: Low. A degrader needs a binder first, and there is no binder. A PPI disruptor against a
+    ~300-residue interface is a multi-year programme. Recorded as a specification, not a plan.
+  discriminating_experiment: Before any chemistry, run the biology - delete Nrk in a growing mouse and
+    measure terminal femur, tibia and vertebral length, with growth-plate phospho-AKT S473 and phospho-PTEN
+    S380 as the pharmacodynamic readout. If there is no length effect, the modality question never arises.
