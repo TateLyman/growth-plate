@@ -1881,6 +1881,55 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯🎯🎯🎯 R374 — **THE FULL SPECIFICATION**, and the axial problem gets sharp.
+
+⭐⭐⭐⭐ **ONE — HOW IT PREVENTS CLOSURE, AS A COMPLETE CHAIN. Each link has a primary.**
+· **Closure IS pool exhaustion** — `weise2001`: seven parameters decline SPONTANEOUSLY, oestrogen
+  **accelerated all seven and initiated none**, fusion occurs ABRUPTLY as proliferation approaches zero.
+· **The clock counts DIVISIONS, not time** — `marino2008` (also why senolytics and VEGF blockade both fail).
+· **Hedgehog maintains the pool and the requirement is CONTINUOUS** — `newton2019`: Shh from the SOC diffuses
+  DOWN, Ihh from the HZ diffuses UP → maximal Hh **specifically in the resting zone**; and **6 doses of
+  vismodegib at P31–34 FUSED a normal plate** with CD73 retained (it maintains the CYCLE, not identity).
+· **Adding Hh post-SOC moves N ALONE** — `trompet2024`: RZ PTHrP⁺ **65.5 → 139.8/mm² (P=0.017)**, all inside
+  the RZ, with **proliferation and terminal cell size UNCHANGED**.
+→ ⭐ **IT DOES NOT STOP THE CLOCK. IT ADDS TO THE BUDGET THE CLOCK COUNTS DOWN.** That is exactly why a
+3-week input gave a gain **still widening at 6 months** — a rate effect decays when the signal stops, a pool
+effect keeps paying. ⛔ **And the limit: it does not make the plate immortal.** It moves the budget.
+
+⛔⛔ **TWO — THE AXIAL PROBLEM, NOW SHARP.** `chen2022ihh` (NEW): systemic vismodegib in **ADULT** mice,
+Gli1 confirmed suppressed → **VERTEBRAL GROWTH PLATES NARROWED OR FUSED**, endplate sclerosis, vertebral bone
+loss, **time-dependent over 2–8 weeks**. **So the axial plates are hedgehog-maintained too.** The mechanism
+reaches the trunk — **but no depot can, because there are many small vertebral plates.** Trunk coverage needs
+a SYSTEMIC route, and `he2024sag`'s whole safety case is that a local depot **avoids** systemic activation.
+**The two goals are in direct tension and this protocol cannot satisfy both.**
+
+⭐ **THREE — THE SPECIFICATION.**
+· **COMPOUND** — SAG **dihydrochloride** (water-soluble salt; free base is cLogP 6.79), ≥98% with CoA.
+· **VEHICLE** — fibrin sealant (Tisseel/Evicel), **approved, and Tisseel is indicated >1 month of age**.
+· **LOADING** — **1000 µM in the gel** (top of `he2024sag`'s in vivo range) → **0.49–0.98 mg per 1–2 mL depot**.
+· **SITE** — **distal femoral SOC** first, **proximal tibial SOC** second. Target is the epiphyseal bone
+  ABOVE the plate — the RZ sits directly against the SOC, which is the physiological Shh source.
+· **ROUTE** — **percutaneous, image-guided, INTRAOSSEOUS.** Not open surgery, **not intra-articular**
+  (trompet2024 moved away from IA on joint-trauma and articular-cartilage grounds).
+· **VOLUME** — 1–2 mL per site.
+· **PULSE DURATION** — **2–4 weeks**, set by the depot (bead Gli1 signal gone by 3 wk; fibrin still holds
+  ~86% of payload at day 8).
+· **INTERVAL — NOT LESS THAN 3–6 MONTHS.** Three constraints, all bounding from below: the effect was still
+  widening at 6 months · `orikasa2024` sustained activation **converts the pool to bone** · the treated stem
+  cells **downregulate the pathway** as compensation.
+· **COURSE** — at BA16 the window is ~1–3 years → **at most 2–6 depots per site. Start with ONE site, ONE
+  depot, and do not proceed until the 6-month readout exists.**
+· **MONITOR** — **ΔBA/ΔCA by BoneXpert** (primary, still not done) · standing AND sitting height at a **fixed
+  time of day** · knee films for plate width · joint and skin surveillance.
+· **STOP IF** — plate widens **without** height gain (charge-without-discharge, 8 prior instances) · ΔBA/ΔCA
+  **accelerates** · any articular or skin lesion.
+
+⛔ **FOUR — WHAT IS STILL NOT SETTLED, AND ONLY ONE OF THE THREE IS SCIENTIFIC.** The **interval is derived,
+not measured** — *nobody has ever given a second dose of a hedgehog agonist to a growth plate in any species*
+(`g_l7_368a`). The **behaviour of a setting fibrin depot inside epiphyseal bone is unknown** — a gel that
+clots in 10–30 s could occlude the vasculature meant to distribute it. And **needle gauge, entry point and
+whether bone access needs a drill are surgical decisions outside this atlas.**
+
 ## 🎯🎯🎯🎯🎯🎯 R373 — **THE PROTOCOL.** Every component exists; ONE thing blocks it, and it is manufacturing.
 
 ⭐⭐⭐ **ONE — THE VEHICLE EXISTS, ALREADY CONTAINS A SMO AGONIST, AND IS AN FDA-APPROVED MATERIAL.**
