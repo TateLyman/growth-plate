@@ -31,6 +31,9 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 - **SERMs / tamoxifen.** Permanent growth arrest by apoptosis of **resting-zone** chondrocytes, no catch-up. — R274 (chagin2007)
 - **ERβ axial lever.** Female mice only. — R274 (chagin2004)
 - **Senolytics.** Growth-plate senescence is not p16/SASP; nothing to clear. — R266
+- **Hippo / YAP-TAZ-TEAD inhibition** (verteporfin, VT3989, IK-930, IAG933). Cartilage-specific Yap/Taz
+  double KO gives NORMAL skeletal growth; forcing YAP gives chondrodysplasia. Downside arm, no upside
+  arm. — R340
 - **D-penicillamine as a LOX-axis agent.** Aldehyde scavenger, not a catalytic-site inhibitor; hits the arm
   BAPN already showed null; human paediatric osteolathyrism with scoliosis. — R337
 - **Aggrecanase inhibition to raise aggrecan.** Discharge blockade (the denosumab/RANKL trap). — R337
@@ -1745,6 +1748,56 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⛔⛔ R340 — **THE HIPPO/YAP-TEAD AXIS RUN TO THE END. R317's deferred follow-up, executed. IT CLOSES.**
+## Present, active, correctly signed by two genetic routes — and it has a DOWNSIDE ARM WITH NO UPSIDE ARM.
+
+R317 found **TEAD1 P=3.11e-119**, the 2nd-strongest locus in the genome for sitting-height ratio, TEAD1 the
+only protein-coding gene in the window, phase-1 TEAD palmitate-pocket inhibitors available — *"the opposite
+of the HHIP/CHAD problem"* — and wrote **"worth exactly one follow-up."** R318–R339 all went elsewhere.
+Coverage before this round: Hippo 3 nodes, YAP1 3, TEAD1 2, **VERTEPORFIN ZERO.**
+
+✓ **THE STRONGEST RECEIVER-TEST RESULT IN THE FILE — and the pathway is ACTIVE, not just present.** GSE288028,
+whole cassette **12/14**: **CCN2/CTGF 1,249.2 CPM in 99.9% OF CELLS**, **CCN1/CYR61 324.8 in 92.8%** (vs
+COL2A1 9,201, ACAN 1,826) · TAZ 256.8 · TAOK1 114.8 · TEAD1 103.6 · FRMD6 90.5 · YAP1 77.1 · AMOTL1 72.5 ·
+MOB1A/B, LATS1/2, STK3/4, SAV1, NF2, AMOTL2, TAOK3, TEAD4. ⭐ **`vanyai2020` independently names Ctgf and
+Cyr61 as THE physiological YAP targets in cartilage — blind confirmation of the expression read.**
+
+✓ **DIRECTION CONCORDANT ACROSS TWO INDEPENDENT ROUTES.** Human: **LATS2 −0.86 cm, P=1.6e-11** (only Hippo
+gene in the 207; it inactivates YAP → losing it = more YAP = shorter). Mouse IMPC: **Amotl2 hom body −1.976
+P=8.8e-11 · Frmd6 het tibia −2.032 → hom −3.334 (dose-response) · Taok1 het tibia −1.244 P=3.9e-03** — four
+**negative regulators of YAP**, all shortening on loss. Effector runs the other way: **Wwtr1/TAZ het tibia
++1.753**, the RARE direction.
+✓ **MECHANISM, AND IT PASSES CORR-299.** `goto2018`: **tamoxifen-inducible, chondrocyte-specific Mob1a/b**
+deletion hyperactivates **endogenous** YAP1/TAZ → **CHONDRODYSPLASIA**, via a **YAP1/TAZ–TEAD complex acting
+as a transcriptional REPRESSOR OF SOX9.** `deng2016yap`: Yap1 inhibits **postnatal growth**. `yang2017yap`:
+YAP1 does it partly by **activating Wnt/β-catenin** — converging on R281's band from a second direction.
+
+⛔⛔ **AND `vanyai2020` CLOSES IT WITH THE BEST GENETICS ON THE AXIS.** Cartilage-specific **Yap/Taz DOUBLE
+knockout DOES NOT PREVENT chondrocyte proliferation, differentiation OR SKELETAL GROWTH** — normal length,
+plus deformities incl. cleft palate. And the other way: cartilage-specific **nls-YAP5SA or Lats1/2 KO DO NOT
+INCREASE cartilage growth** but cause malformations resembling chondrodysplasia/achondrogenesis. The authors
+**state and then REFUTE deng2016yap's proposal in vivo.** In vitro the canonical direction holds — the
+in-vitro and in-vivo answers differ and they say so. Conclusion: **YAP/TAZ is DISPENSABLE for chondrocyte
+proliferation in vivo** and controls cartilage **morphogenesis via the ECM**.
+
+⭐ **THE GENERALISABLE RESULT — THIS IS WORSE THAN A BAND.** The file's five both-directions axes (hedgehog,
+ER, DNA methylation, canonical Wnt, cAMP) each have a peak to find. **Hippo does not: too much YAP = chondro-
+dysplasia, too little = NORMAL length. A downside arm and NO upside arm — a GUARDRAIL, NOT A THROTTLE.**
+**Every promising genetic signal (LATS2, Amotl2, Frmd6, Taok1) describes the DEFICIT direction — CORR-203
+applied to an entire pathway.** The lone rare-direction hint (Wwtr1 +1.753) is **P=0.081, ns**, and is
+directly superseded by the cartilage-specific double KO of that same effector. ⚠ Recorded inconsistency:
+**Mob1a het FEMALE body +0.522 P=1.1e-06** runs against — but MOB1A/B are redundant and goto2018 needed the
+DOUBLE deletion (CORR-341: read the allele string). TEAD1's own 5 IMPC rows are near-zero and sign-inconsistent
+(TEAD1–4 redundancy).
+
+⛔ **DISPOSED OF BEFORE PROPOSAL: VERTEPORFIN (approved, Visudyne — zero prior atlas mentions), VT3989,
+IK-930, IAG933.** All are YAP/TAZ–TEAD inhibitors, i.e. the direction that gives normal rather than increased
+length. R317 called the phase-1 TEAD inhibitors "the opposite of the HHIP/CHAD problem" — chemical matter
+without a target. **It is the reverse: a target without an upside.**
+⚠ **One new observation that is NOT a lever: CCN2/CTGF at 1,249 CPM in 99.9% of cells is among the most
+abundant transcripts in the human growth plate and this atlas has ~no CCN2 coverage.** Direction unknown;
+the Hippo route to it is now closed. Gap, not a candidate.
 
 ## ⚠⚠ R339 — **THE VEPDEGESTRANT INTEGRATION. Dose right, interaction clear, and ONE BLOOD TEST GATES IT.**
 ## Read this before adding it. The biphasic curve was in this atlas the whole time and R338 did not weigh it.
