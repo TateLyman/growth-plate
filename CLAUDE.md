@@ -1774,6 +1774,76 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯 R348 — **ECRG4 HAS NO CHEMICAL MATTER BUT ITS ACTIVATING PROTEASE DOES. THE ACTIVE FRAGMENT IS
+## RELEASED BY THROMBIN — and dabigatran is oral, approved and PAEDIATRIC-LABELLED.**
+
+⭐ **CORR-312 APPLIED ONE LEVEL UPSTREAM.** R347 wrote that ECRG4 has zero chemical matter. **True of the
+TARGET.** The fold to search was never ECRG4 — it is the enzyme that switches it on.
+· **ECRG4 is a MEMBRANE-ANCHORED precursor** — full-length 14 kDa on the cell surface, released as a soluble
+  ligand; **membrane-bound marks QUIESCENT cells, the released fragment is the ACTIVE signal** (`baird2012`).
+· ⭐ **`lee2015ecrg4` RAN THE DISCRIMINATING MUTANT EXPERIMENT: thrombin cleaves near Arg131 to release the
+  C-terminal fragment, and conditioned media from WILD-TYPE and FURIN-MUTANT Ecrg4 activated microglia while
+  the THROMBIN MUTANT DID NOT. THROMBIN CLEAVAGE IS REQUIRED FOR ACTIVITY; FURIN CLEAVAGE IS NOT.**
+
+⭐⭐ **THE RECEIVER TEST SEPARATES THE TWO HANDLES AND KILLS THE OBVIOUS ONE.** ECRG4's published receptor is
+the endotoxin receptor complex, which invites a TLR4 antagonist (eritoran, TAK-242). In the purity-corrected
+plate that complex is **CONTAMINANT-LEANING — TLR4 0.99×, CD14 0.63×, LY96 0.21×, MSR1 0.07× — so RECEPTOR
+BLOCKADE FAILS CORR-327.** The protease handle passes: **substrate ECRG4 694.6 CPM at 16.35×**, and
+⭐ **SERPINE2 (protease nexin-1, the tissue thrombin inhibitor) is 2,197.4 CPM at 3.89× — one of the most
+abundant transcripts in the panel. A TISSUE DOES NOT SPEND THAT ON AN ENZYME IT NEVER SEES.**
+⚠ **AND I CORRECTED MY OWN FRAMING INSIDE THE ROUND.** Prothrombin is 0.1 CPM in pure cartilage (F7 0.3,
+F10 0.0, SERPINC1 0.1), which looked like the NPPC/NPR2 "enzyme systemic, substrate local" configuration.
+**`brent2018` states OSTEOCLASTS SYNTHESISE AND SECRETE THROMBIN and osteoblasts express its receptors — and
+the osteoclast-rich chondro-osseous junction is exactly what a pure-cartilage sample excludes.** Thrombin is
+available by both routes; the simple version was wrong.
+
+🎯 **THE COMPOUND: DABIGATRAN ETEXILATE — oral, approved, with a PAEDIATRIC VTE INDICATION and established
+paediatric PK from birth to 16 years.** Direct thrombin inhibitor, so it blocks the cleavage step rather than
+a receptor that is not in the tissue. (FXa inhibitors — rivaroxaban, apixaban, also paediatrically approved —
+act one step upstream and are a weaker instrument.)
+
+⭐⭐ **THE OBVIOUS KILL — "anticoagulants wreck the growing skeleton" — IS A WARFARIN OBJECTION AND IT DOES NOT
+TRANSFER.** Warfarin embryopathy (stippled epiphyses, nasal hypoplasia) and warfarin bone loss run through
+**vitamin-K-dependent carboxylation of matrix Gla protein**, which a direct thrombin inhibitor does not touch.
+**Tested head-to-head in rats: warfarin significantly DECREASED bone volume and increased trabecular
+separation in femur AND vertebrae (P<0.05–0.001); dabigatran was indistinguishable from control.** And
+`brent2018`: 52 healthy C57BL/6, oral dabigatran 1.52–1.70 mg/g body weight × 3–6 wk → **no major deleterious
+bone effect in either sex**, with a weak POSITIVE at female tibial cortical bone (aBMD, cortical area, shaft
+strength all up at 6 wk).
+
+⛔ **AND BOTH STUDIES ARE CORR-340 AGAIN — THE ANIMAL WAS DOSED AND THE MEASUREMENT WAS NEVER TAKEN.**
+`brent2018` ran DEXA + µCT + mechanical testing + histomorphometry on **TIBIA, FEMUR AND VERTEBRA** and
+reported **no femur, tibia or body LENGTH**; the rat study did the same. **The experiment this axis needs is
+a caliper, not a new protocol.** ✗ The real defect is age: **brent2018's mice were 14 WEEKS OLD — adult. The
+growing animal has still never been dosed.**
+
+⛔ **WHAT WOULD KILL IT, STATED BEFORE PROPOSING:**
+· **No thrombin inhibitor has a bone-LENGTH endpoint in any species.**
+· **ECRG4 cleavage by thrombin has NEVER been shown in cartilage** — the requirement is myeloid/microglial,
+  and the Ecrg4-null mouse removes BOTH the membrane and soluble forms, so it cannot tell you which one
+  carries the length phenotype. **This is the largest inferential step in the node.**
+· ⛔ **`ge2026` runs against it: thrombin INHIBITS osteogenic differentiation of primary osteoblasts** (ALP,
+  Col1a1, Runx2, OCN, mineralisation all down at 20 U/mL, via IL-1β→MEK-Erk/NF-κB). **So removing thrombin
+  should ACCELERATE ossification** — failure mode #1 in reverse, at the junction. Unresolved.
+· **THE DECISIVE GENETIC TEST WAS NEVER RUN: Serpine2 has ZERO IMPC rows** (CORR-348 case one). F2 het tibia
+  +0.394 P=0.411. Serpine1-null body −1.158 and Plat-null −1.476 are in the **COMMON** direction (64.1% of
+  rows) and therefore uninformative under CORR-329.
+· **Bleeding is the dose-limiting toxicity and the cartilage-effective dose is unknown** — it may require full
+  anticoagulation, and that, not the bone data, is the practical objection.
+· ECRG4 has **no human height effect size** (not in the 207).
+· ⭐ **AND THE HUMAN TEST IS UNRUN BUT ANSWERABLE: dabigatran and rivaroxaban have been paediatrically
+  approved since 2021 and NO cohort of anticoagulated children has ever been reported with HEIGHT VELOCITY as
+  an outcome.** Same shape as the propranolol/haemangioma test that closed β2 in R337. One question to a
+  paediatric thrombosis centre. Gap `g_l12_348a`.
+
+⭐ **FREE BY-PRODUCT — THE DNMT-INHIBITOR CONTRAINDICATION GETS A GENE.** `baird2012`: ECRG4 promoter
+hypermethylation is **45–90% in cell lines and REVERSIBLE BY 5-AzaC**; `yang2025ecrg4`: **DNMT1 silences
+ECRG4 by methylating its promoter**, and ECRG4 over-expression cuts proliferation in vitro and in vivo.
+**So azacitidine/decitabine are specifically predicted to RE-EXPRESS a secreted senescence-inducing
+proliferation brake** — the R276/R343 contraindication sharpened from a pathway argument to a named gene.
+**And it connects R347's two halves with a citation instead of an inference: more DNMT1 activity = less
+ECRG4.** ⚠ CORR-203 — both are cancer-cell findings, not growth-plate ones.
+
 ## ⭐⭐⭐⭐ R347 — **R344's CORRECTION WAS APPLIED TO 72 GENES BY HAND. RUN GENOME-WIDE IT RETURNS 301
 ## ABUNDANT CARTILAGE-ENRICHED GENES WITH ZERO ATLAS COVERAGE — and the best of them has a length endpoint.**
 
