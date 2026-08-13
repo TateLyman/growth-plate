@@ -1705,6 +1705,15 @@ HIF-PHI class was already checked in R284.
 
 ## CONTRAINDICATED — do not add to the stack
 
+- ⛔⛔ **SMOOTHENED ANTAGONISTS — VISMODEGIB, SONIDEGIB, GLASDEGIB. THE HARDEST CONTRAINDICATION IN THIS
+  LIST: the marketed molecule itself was given to normal juvenile mice for FOUR DAYS AND THE GROWTH PLATE
+  FUSED** (`newton2019`: six administrations P31–P34 → resting-zone clonal size down → **fusion**;
+  RZ proliferation inhibited, no premature hypertrophy, CD73 retained). Grade A, direct fusion endpoint. R362
+- ⛔ **ANTI-ANGIOGENICS / VEGFR INHIBITORS** (axitinib, bevacizumab, sunitinib, pazopanib, sorafenib,
+  lenvatinib, regorafenib, cabozantinib, ramucirumab). `newton2019`: axitinib P18–P27 **reduced SOC size
+  P=0.0054 AND clone size P=0.0023.** The **epiphyseal** vasculature FEEDS the niche (the SOC is the Shh
+  source) while the **metaphyseal** vasculature erodes the plate — an anti-angiogenic hits both and the
+  niche side loses. Grade C. R362
 - ⛔ **LITHIUM / GSK3 INHIBITORS, and the whole bone-anabolic WNT-RAISING shelf** (NOTUM inhibitors, DKK1
   antibodies). R281 puts the canonical-Wnt optimum BELOW wild type; every marketed Wnt agent in bone raises
   it, because the indication was always bone MASS. **Lithium is prescribed to adolescents — ASK.** Grade E,
@@ -1851,6 +1860,71 @@ by BoneXpert on serial hand films, with standing AND sitting height at a fixed t
 separates the three cases that matter — **clock stalled · clock at the smith2008 residual (~0.7) · clock near
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
+
+## 🎯🎯🎯🎯🎯🎯🎯 R362 — **THE PAPERS WERE ON DISK AND I NEVER OPENED THEM. Read in full they change the
+## frame: THE POOL SELF-RENEWS, so closure is NICHE FAILURE not budget exhaustion — and HEDGEHOG TO THE
+## RESTING ZONE IS *REQUIRED* TO PREVENT FUSION.**
+
+⛔ **CORR-333, EARNED.** R361 asked the operator for `trompet2024`, `newton2019` and a human resting-zone
+paper. **All three were already in the upload store — with the OFFICIAL JCI NUMERIC SOURCE DATA for the
+Trompet figure the round turned on — and I had never looked.** Check `/root/.claude/uploads/<session>/`.
+
+⭐⭐⭐ **ONE — THE POOL SELF-RENEWS. R360's FIXED-BUDGET MODEL IS WRONG IN ITS STRONG FORM.**
+`newton2019` (Nature, multicolour clonal tracing): **fetal/neonatal growth DOES deplete** progenitors and
+columns are MULTICLONAL — **but coinciding with SOC FORMATION, chondroprogenitors ACQUIRE SELF-RENEWAL**,
+columns become **MONOCLONAL and persist ≥5 months**, cells express stem markers and divide **SYMMETRICALLY**.
+**A stem-cell niche DEVELOPS POSTNATALLY.**
+→ **CLOSURE IS FAILURE OF A NICHE, NOT ARRIVAL AT THE BOTTOM OF A TANK.** Different problem, and a more
+tractable one — a failing niche can be supported; a spent budget cannot.
+⚠ What survives of R360: the terminus is still zero proliferation (`weise2001`) and the rate-yield trade-off
+is still measured (`hunziker1994`). Self-renewal being POSSIBLE is not self-renewal being UNLIMITED.
+
+⭐⭐⭐⭐ **TWO — AND THE PAPER NAMES THE MAINTAINING SIGNAL AND PROVES IT BY NECESSITY.**
+**Shh is abundantly expressed IN THE SOC** (mesenchymal, endothelial, haematopoietic cells) and diffuses
+**DOWN**, while **Ihh diffuses UP** from the hypertrophic zone → **maximal hedgehog signalling SPECIFICALLY
+IN THE RESTING ZONE.** *That is why trompet2024 put the bead in the SOC — it is the physiological source.*
+⭐⭐ **THE DECISIVE EXPERIMENT: SIX ADMINISTRATIONS OF VISMODEGIB AT P31–P34 REDUCED RESTING-ZONE CLONAL SIZE
+AND CAUSED FUSION OF THE GROWTH PLATE.** RZ proliferation inhibited · **premature hypertrophy NOT detected**
+· **stem cells RETAINED CD73** → hedgehog maintains the **CYCLE** of the stem cells, not their **IDENTITY**.
+→ **HEDGEHOG TO THE RESTING ZONE IS REQUIRED TO KEEP A PLATE OPEN, AND REMOVING IT CLOSES ONE IN DAYS.**
+Consistent with the human genetics from the other side: HHIP pLoF **+9.92 cm**, HHIP GoF missense **−3.96**.
+
+⭐ **THREE — THE EXACT DOSES, from Methods.** Intra-articular (mice): **SAG 5 µg in 2 µL**, P28/P30/P31
+(Results say P32 — internal discrepancy, recorded). Bead (rats): **agarose bead with SAG 7 µg in 1.5 µL
+DMSO, placed IMMEDIATELY ABOVE THE GROWTH PLATE IN THE SOC of the distal femur**, contralateral leg DMSO.
+**SEVEN MICROGRAMS, ONCE, LOCALLY** — that is what produced a leg-length gap still widening at six months.
+
+⭐⭐ **FOUR — THE FIGURE 5 SOURCE DATA, ANALYSED PROPERLY.** Paired, within-animal:
+**FEMUR** +0.817 (n=6, t=3.53, 6/6) → +0.822 (n=9, t=5.12, 9/9) → **+1.263 mm (n=8, t=8.93, 8/8)**.
+**ENTIRE LEG** +1.033 → +1.078 → **+1.700 mm (t=14.79, 8/8)**. **TIBIA at 1 month is NULL** (+0.100, 3/6,
+t=1.37) and develops by 2–6 months — consistent with SAG diffusing proximally, an internal control.
+⭐ **IS THE GAIN GROWING? ENTIRE LEG 1.033 → 1.700, Welch t=3.92 — YES. FEMUR +0.446, t=1.64 — TRENDING
+ONLY.** I had been quoting percentages, which flatter it. **And the arithmetic that matters: between months
+1 and 6 the control femur grew 5.09 mm while the SAG femur gained an EXTRA 0.446 mm — ~8.8% faster growth
+AFTER THE BEAD SIGNAL HAD STOPPED AT THREE WEEKS.** ⚠ Cross-sectional cohorts, not longitudinal.
+
+⚠⚠ **FIVE — A CORRECTION AGAINST MY OWN LAST ANSWER.** I told the operator the pool DOUBLED with nothing
+else moving. **More precisely: SINGLE Tomato⁺ cells FELL while DOUBLETS AND TRIPLETS ROSE, no effect on
+larger clones — the doubled count is labelled stem cells HAVING DIVIDED, not demonstrably more stem cells.**
+⛔ **And `newton2019`'s independent stem-compartment readout DID NOT MOVE: SAG did NOT expand the CD73⁺
+domain (P=0.3, n=5 vs 3).** Nor did Shh, vismodegib or GANT61 alter CD73⁺CD49e⁺ colony-forming units.
+✓ Since post-SOC divisions are SYMMETRIC, dividing a stem cell IS pool expansion under their own model — but
+that chains two papers. **What carries the pool interpretation is the SIX-MONTH LENGTH DATA, not cell counts.**
+
+⚠ **SIX — mTORC1 IS THE SECOND NICHE REGULATOR AND IT IS A BAND.** Tsc1 ablation (mTORC1 ACTIVATION)
+**DISORGANIZES** the resting zone after SOC formation — but **EdU⁺ epiphyseal stem cells rose 24.7 ± 3.7 →
+62.4 ± 7.5 per section, P=0.014.** More cycling, worse organisation. **→ RAPALOGS (sirolimus, everolimus,
+temsirolimus) now have a NICHE-LEVEL mechanism on top of MTOR −3.65 cm (R300) and FKBP1A (R311).**
+
+⭐⭐⭐ **SEVEN — THE MOST ACTIONABLE CONSEQUENCE, AND IT CONCERNS A DRUG HE IS ALREADY ON.** Chain three facts
+this file now holds: ① hedgehog to the RZ is **REQUIRED** to prevent fusion (R362) · ② **ALL** hedgehog
+transduction happens **inside the primary cilium**, and FGFR signalling sets cilium length (R294) · ③ in
+**NORMAL** mice, systemic AZD4547 × 28 d gave **significantly SHORTER cilia, P<0.001, in all three tissues**.
+**HE IS A WT-FGFR3 MALE ON A PAN-FGFR INHIBITOR.** The prediction is that erdafitinib attenuates the one
+signal demonstrated to keep the plate open. ⚠ **The opposite arm is in the same paper** — FGF2 stabilises the
+GLI3 **repressor**, so removing FGF should RAISE Gli output while shortening cilia. **Two arms, opposite
+signs, net never measured.** → **R294's gate is no longer a curiosity; it is the most urgent experiment in
+the file.** Gap `g_l7_362a`.
 
 ## 🎯🎯🎯🎯🎯🎯 R361 — **"STOP CLOSURE COMPLETELY" IS NOT IMPOSSIBLE AND IT IS NOT UNTESTED. BOTH HALVES
 ## HAVE BEEN DONE IN NORMAL ANIMALS. The missing item is ONE OBTAINABLE AGONIST — not a mechanism.**
