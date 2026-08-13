@@ -1854,6 +1854,62 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ⭐⭐⭐⭐⭐ R368 — **"THE ROUTE MUST BE LOCAL" IS WITHDRAWN. SYSTEMIC SMO AGONISTS EXIST, ARE MANY, AND
+## SYSTEMIC SAG POST-SOC EXPANDS THE POOL 61% — the "null" was 7 days at n=5 with a CI spanning +49%.**
+
+The operator said systemic Smoothened agonists exist and there are many, against my claim that none was
+obtainable. **The operator is right, my query was wrong, and reading the primary properly overturns something
+bigger than the compound question.**
+
+⛔ **ONE — CORR-347, FOURTH INSTANCE.** I searched EPMC for *smoothened agonist AND (approved OR clinical)*
+and read an absent approved agent as absent chemical matter. **ChEMBL: SMO carries 678 molecules at
+pChEMBL ≥5, best 10.1 — but all NINE curated mechanism records are ANTAGONISTS**, and the "agonist" assays are
+mostly *displacement of radiolabelled agonist*. **The drug databases are indexed by medicinal-chemistry
+programmes and there has never been a SMO agonist programme.** The agonists — **SAG, purmorphamine, Hh-Ag1.x,
+SAG21k, GSA-10, 20(S)-OHC** — live in the cell-biology and reagent literature and **several are routinely
+dosed SYSTEMICALLY in vivo.**
+
+⭐⭐⭐ **TWO — AND THE SYSTEMIC ROUTE REACHES THE POOL.** `trompet2024` Methods: **SAG (Tocris 4366) 25 µg/g
+i.p. ONCE DAILY, P31–P37**, read P38 → **Pthrp-mCherry⁺ cells +61%**, mCherry⁺CD73⁺ up, singlets→doublets and
+triplets, **Ki67 enhanced in the uppermost 50 µm.** ⭐ **The authors make the comparison themselves: THREE
+intra-articular injections ≈ SEVEN SYSTEMIC injections on epSSC clonogenicity.**
+
+⛔⛔ **THREE — SO THE "NULL" DOES NOT SURVIVE INSPECTION, AND THIS FILE QUOTED IT FOR ROUNDS.** Same short
+experiment: tibia **15.2±0.4 vs 14.5±1.7** (P=0.29), femur **12.7±0.4 vs 14.8±4.7** (P=0.247), n=7/5.
+· **7 DAYS of drug read 2 days later** — the local arm needed 1–6 MONTHS to separate.
+· **Femur CV 3.1% (control) vs 31.8% (SAG) — a 10× difference** in one of the least variable measurements in
+  mouse biology; tibia 2.6% vs 11.7%.
+· **Internally anomalous:** control femur 12.7 < control tibia 15.2 (normal), but **SAG femur 14.8 ≈ SAG tibia
+  14.5**, which no mouse hindlimb does.
+· **Computed here: SE(diff) 2.11 mm → 95% CI −2.03 to +6.23 mm on a 12.7 mm bone. It cannot exclude +49%**,
+  and the point estimate is **+2.1 mm in the FAVOURABLE direction.**
+→ **UNINFORMATIVE IN BOTH DIRECTIONS. The systemic route has never been given a fair length test in any
+species.** `g_l7_368a`
+
+⭐⭐ **FOUR — THE MECHANISM, AND IT IS WHERE TWO ATLAS THREADS MEET.** The authors state Hh activation in the
+resting zone **CREATES A Wnt-INHIBITORY ENVIRONMENT**, and that low Wnt is permissive for slow-cycling
+chondrocytes. **That is R281's canonical-Wnt band and R356's resting-zone programme (SFRP5, FRZB, SMOC1 —
+the only genes the human RZ runs above the rest of the column), reached from the hedgehog side by authors who
+were not looking for them.** SPIN4, the RZ secreted-Wnt-antagonist screen, and hedgehog agonism are **one
+physiological state.**
+
+⚠ **FIVE — AND THE PAPER CARRIES ITS OWN ARGUMENT FOR PULSING.** Sorted SAG-treated stem cells showed
+**DOWNREGULATION of the hedgehog pathway** — the authors call it internal compensation. With `orikasa2024`
+(permanent activation → expansion, then conversion to trabecular bone, no final length) that makes **PULSED
+the only defensible schedule, and the pulse interval is unmeasured in every species.**
+
+⭐ **SIX — STAGE, AND IT FAVOURS HIM, IN THE SAME FIGURE.** Systemic SAG **P10–P16 (pre-niche)** reduced clone
+size and RZ proliferation; **P30–P36 (post-SOC)** did the OPPOSITE on both readouts. Authors' explicit
+conclusion. **BA16 is maximally post-SOC.**
+
+⭐ **SEVEN — THE AUTHORS PROPOSE THE HUMAN APPLICATION THEMSELVES.** They write that SOC-based local delivery
+might be used against short stature, that the bony epiphysis is **"stable, relatively large, and easily
+accessible in humans"**, and that **dissolvable slow-release beads that could extend treatment beyond their
+three weeks ARE ALREADY AVAILABLE.** R361's objection that a joint injection cannot reach an ossified
+adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that is a direct placement.
+**Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
++2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
+
 ## ⛔⛔⛔ R367 — **THE POOL-SPARING SCHEDULE HAS ALREADY BEEN TESTED IN HUMANS THREE TIMES, TWICE
 ## RANDOMISED. IT NEVER BOUGHT HEIGHT, AND THE SHORTEST CYCLE LOST HEIGHT.** Do not cycle the GH arm.
 
@@ -2275,7 +2331,15 @@ xylenol labelling — **WHILE THE Gli1-LacZ BEAD SIGNAL WAS GONE BY THREE WEEKS.
 → **A THREE-WEEK LOCAL INPUT PRODUCED A GAIN STILL WIDENING AT SIX MONTHS.** A rate effect decays when the
 signal stops. **A larger pool keeps paying out.** This is the strongest evidence in the atlas that N is what
 sets final length and that it can be enlarged ONCE. ✓ **No osteoarthritis at 6 months.**
-⛔ **SHORT SYSTEMIC SAG WAS NULL** (tibia P=0.29, femur P=0.247). **THE ROUTE MUST BE LOCAL.**
+⛔⛔ **"SHORT SYSTEMIC SAG WAS NULL … THE ROUTE MUST BE LOCAL" IS WITHDRAWN — R368 TOOK THE NUMBERS APART.**
+The quoted P values come from **7 days of drug read 2 days later, n=7 vs 5**. Femur **12.7 ± 0.4 vs 14.8 ±
+4.7** — a SAG-arm CV of **31.8% against 3.1%** in control, SAG femur (14.8) anomalously ≈ SAG tibia (14.5),
+point estimate **+2.1 mm (+16.5%) in the FAVOURABLE direction**, and a computed **95% CI of −2.03 to +6.23 mm
+on a 12.7 mm bone — it cannot exclude a +49% effect. UNINFORMATIVE, NOT NULL.**
+⭐ **And the systemic route demonstrably REACHES THE POOL:** SAG **25 µg/g i.p. once daily P31–P37** →
+**Pthrp-mCherry⁺ cells +61%**, mCherry⁺CD73⁺ up, singlets→doublets/triplets, Ki67 up in the top 50 µm — and
+**the authors state 3 intra-articular injections ≈ 7 systemic injections on clonogenicity.**
+**The systemic route has never been given a fair length test in any species** (`g_l7_368a`).
 
 ⭐⭐ **THREE — STOPPING CLOSURE IS ALSO DONE.** `haraguchi2025`, Hhip1-flox × Prx1-Cre: growth-plate area
 **53-wk WT 0.29 vs mutant 0.44** — and **THE 53-WEEK MUTANT PLATE EQUALS THE 10-WEEK WILD TYPE (0.44).**
@@ -2288,10 +2352,15 @@ peptide **WYRGRL** — carried **purmorphamine** to growth-plate cartilage **fro
 **R248 and R290 both wrote that the mechanism and the vehicle exist separately and NOBODY HAS COMBINED THEM.
 That is still true and it is now the whole of the answer.**
 
-⛔⛔ **FIVE — WHAT ACTUALLY BLOCKS IT, AND IT IS NOT BIOLOGY. NO OBTAINABLE HEDGEHOG AGONIST EXISTS.**
-Searched, not asserted: the entire agonist literature is **SAG · purmorphamine · 20(S)-hydroxycholesterol**
-(a natural oxysterol SMO agonist, characterised 2026) — **all purchasable as RESEARCH REAGENTS, none a
-medicine, and no SMO agonist has ever entered clinical development.** Meanwhile **every marketed Smoothened
+⛔⛔ **FIVE — ⚠ CORRECTED R368: "NO OBTAINABLE HEDGEHOG AGONIST EXISTS" WAS THE WRONG PHRASING AND CAUSED
+A REAL ERROR. AGONISTS EXIST, ARE MANY, AND ARE SYSTEMICALLY DOSABLE** — **SAG · purmorphamine · the
+Hh-Ag1 series · SAG21k · GSA-10 · 20(S)-hydroxycholesterol and other oxysterols** — and SAG is given
+**i.p. at 25 µg/g** in `trompet2024` itself. **ChEMBL holds 678 molecules on SMO at pChEMBL ≥5 (best 10.1),
+but ALL NINE curated mechanism records are ANTAGONISTS**, and the assays mentioning "agonist" are mostly
+*displacement of radiolabelled agonist* — i.e. **the drug databases are indexed by medicinal-chemistry
+programmes and there has never been a SMO agonist programme.** ⛔ **CORR-347, FOURTH INSTANCE: I read an
+absent APPROVED agent as absent chemical matter.** The true statement is narrower: **none is an approved
+medicine**, all are research reagents, Meanwhile **every marketed Smoothened
 drug is an ANTAGONIST** — vismodegib, sonidegib, glasdegib — because the indication was always cancer.
 ⭐ **R342's shape, third instance: the shelf exists and points the wrong way. Nobody ever wanted MORE
 hedgehog signalling in a patient, so the molecule this axis needs was never made.**
