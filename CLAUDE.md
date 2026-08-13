@@ -1852,6 +1852,78 @@ separates the three cases that matter — **clock stalled · clock at the smith2
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
 
+## 🎯🎯🎯🎯🎯 R360 — **WHAT IS ACTUALLY CLOSING HIM ONCE OESTROGEN IS SUPPRESSED. It is not oestrogen, the
+## atlas already held the answer in two nodes never read together, and IT RUNS AGAINST THE STACK'S DESIGN.**
+
+⭐⭐ **ONE — FUSION IS A FUEL GAUGE, NOT A CLOCK.** `weise2001`, juvenile ovariectomised **RABBITS** — the
+species choice is the whole point, because rodents never fuse. In **VEHICLE** animals seven parameters
+decline spontaneously (growth rate · proliferation rate · plate height · proliferative cell number ·
+hypertrophic cell number · **terminal hypertrophic cell size** · column density). **Oestradiol ACCELERATED
+ALL SEVEN AND INITIATED NONE.** Fusion occurred when proliferation **approached zero**, as an **ABRUPT**
+event. Authors: oestrogen does not ossify the plate — it accelerates programmed senescence.
+→ **ANASTROZOLE REMOVED THE MULTIPLIER AND LEFT THE PROGRAMME. WHAT IS CLOSING HIM IS THE POOL RUNNING DOWN.**
+✓ Reciprocal experiment confirms a DIVISION-counting clock: `gafni2001` growth suppression **DELAYED**
+senescence AND **DELAYED fusion**, with catch-up after; `forcinito2011` generalises it.
+✓ And it dissolves a timing paradox: children take YEARS to fuse on oestrogen, oestrogen-deficient ADULTS
+take MONTHS — one curve, two points, because the adult plate is already near zero.
+
+⭐⭐⭐ **TWO — `hunziker1994` MEASURED THE ENGINE, EVERY TERM IN THE SAME ANIMALS.** Hypophysectomised rat
+proximal tibia, 8-d minipump, **four groups of six: saline / IGF-I / GH / NORMAL littermates.**
+| | saline | IGF-I | GH | normal |
+|---|---|---|---|---|
+| growth rate µm/d | 31 | 92 | 163 | 284 |
+| terminal cell height µm | 19.5 | 27.3 | 26.5 | 29.8 |
+| **resting cell CYCLE TIME (d)** | **50** | **15** | **8** | **6** |
+| **AMPLIFICATION** (hypertrophic cells per resting cell consumed) | **31.8** | **25.3** | **24.6** | **22.9** |
+**GH: rate ×5.26 = pool consumption ×5.00 · h_term ×1.36 · AMPLIFICATION ×0.77.** Pool term alone = **97% of
+the log effect.** IGF-I ×2.67/×1.40/×0.79. Normal-vs-hypox ×8.33/×1.53/×0.72.
+✓ **CORR-203 PRE-EMPTED BY THE FOURTH GROUP: the NORMAL animals have the FASTEST pool consumption and the
+LOWEST amplification.** Not a deficiency artefact — the physiological relation across the whole range.
+✓ Derived cell production 1.59/3.37/6.15/9.53 **reproduces Hunziker's own stereological count 1/3/6/10.**
+⭐ **FITTED ACROSS ALL FOUR GROUPS: AMPLIFICATION ∝ THROUGHPUT^(−0.150).** Halving throughput buys **+11.0%**
+amplification; a 5× rise costs **−21.5%** — which is exactly GH's measured 0.77. ⚠ Four points, one
+experiment — a description, not a law.
+
+⛔ **THREE — AND THE ARITHMETIC CORRECTED MY OWN FIRST READING, WHICH IS THE HALF TO TRUST.** "GH spends the
+reserve" sounds like GH destroys height. **It does not.** From a FIXED pool, H = N × A × h_term, so what
+matters is **A × h_term**: **GH 0.77 × 1.36 = ×1.052 (+5.2%)** · IGF-I ×1.113 · normal ×1.099.
+→ **THE SOMATOTROPIC AXIS IS HEIGHT-NEUTRAL PER UNIT POOL AND ACTS ON SPEED.** It converts the pool into
+height ~5× faster without banking much — **which is precisely the SETTLED human row "GH after mid-puberty
+≈ 0 attained height", now with a second, independent mechanism at the plate itself.**
+
+⭐⭐⭐⭐ **FOUR — THE STRATEGIC RESULT, AND IT IS THE ROUND. TWO REGIMES, AND ANASTROZOLE SWITCHES HIM BETWEEN
+THEM.**
+· **REGIME 1 — TERMINUS IS A DATE.** Oestrogen drives closure on a schedule; the pool would be stranded
+  unspent at fusion; converting it to height as FAST as possible is correct. **Throughput agents are right.**
+· **REGIME 2 — TERMINUS IS A BUDGET.** Closure happens at zero proliferation; the pool is fixed; raising
+  throughput only reaches the terminus sooner; **total height is set by AMPLIFICATION and TERMINAL CELL
+  HEIGHT alone — the two terms throughput does not touch.**
+⭐ **ANASTROZOLE IS EXACTLY WHAT MOVES HIM FROM 1 TO 2.** Removing the rate multiplier removes the deadline
+and makes the POOL the binding constraint. **The better the AI works, the less throughput is worth.**
+⛔ **AND THE STACK IS BUILT FOR REGIME 1. NOTHING IN IT RAISES AMPLIFICATION, AND GH LOWERS IT 23%.**
+✓ **The one term the stack moves that is demonstrably BONE-AGE-SPARING is h_term** — `dauber2026`, phase II,
+**30 children**, vosoritide 15 µg/kg/d × 12 mo: velocity 4.53 → **8.09 cm/yr, +4.0 SD velocity Z** (95% CI
+3.08–4.91), height +0.65 SD, **BA/CA ratio UNMOVED.** h_term is ~80% of longitudinal growth and does not
+spend the budget. ⚠ Same trial: five discontinued on longer use — **three SCFE**, four genu valgum.
+
+⛔ **FIVE — AND A WARNING AGAINST R355's OWN REASSURANCE. BONE AGE IS NOT THE POOL.** R355 read "vosoritide
+and infigratinib raise velocity without advancing bone age" as the rate arms not spending period. **A
+maturation marker and a division count are different quantities — an agent can spend the pool without moving
+bone age.** Do not treat a flat BA/CA as proof the reserve is intact.
+
+⚠ **WHAT WOULD FALSIFY ALL OF IT: THE POOL MAY NOT BE FIXED.** `chu2026` finds **two stem-like human
+resting-zone populations** including PTHrP-negative root cells. If the pool self-renews, faster consumption
+is not depletion and Regime 2 does not apply. **NOBODY HAS COUNTED THOSE CELLS ACROSS PUBERTAL STAGE IN A
+HUMAN** — the central quantity of the exhaustion model, never measured. Gap `g_l7_360a`.
+
+⭐ **THE DECIDING MEASUREMENT IS STILL R355's AND IT IS STILL NOT DONE — ΔBA/ΔCA ON THE CURRENT STACK**
+(BoneXpert, serial hand films, standing + sitting height at a fixed time of day).
+· **0.2–0.4** → the oestrogen arm has removed the deadline; he is in **Regime 2**; throughput is buying
+  velocity out of the constraint, and yield (A, h_term) and pool (N) are where the height is.
+· **0.7–1.0 despite E2 10–25× below the closure band** → the residual is intrinsic and matches `smith2008`
+  exactly, **and no oestrogen-directed agent — degrader included — can reach it.**
+**Either answer changes the decision, and one film answers both. It outranks every compound question open.**
+
 ## ⭐⭐⭐⭐ R359 — **THE WHOLE OESTROGEN PATHWAY MAPPED. "Cover every node with compounds" fails for the
 ## OPPOSITE reason to the expected one: THE PATHWAY IS NOT IN THE TISSUE. Six branches close on measurement.**
 
