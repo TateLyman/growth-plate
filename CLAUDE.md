@@ -1703,15 +1703,29 @@ activity**, carried into cohort expansion; **steady state day 28**; 24 patients,
 majority of AEs grade 1–2, **92% of TEAEs unrelated to drug.** Dose, route, schedule, PD readout, safety
 window — all published.
 
-⛔ **THE OBJECTION THAT DECIDES IT, AND IT IS AN EFFICACY OBJECTION NOT A SAFETY ONE.** BAPN causes
-**OSTEOLATHYRISM including EPIPHYSEAL SEPARATION** — a drug that separates the physis ENDS growth. That is
-on-target and on-tissue. PXS-5505 is reversible, LOX-family-selective and dosed to measured activity rather
-than to a maximum, but **no growing animal has received either with a bone measured.**
-⭐⭐ **EXCEPT SOMEBODY MAY ALREADY HAVE — CORR-340. `mcnerny2015` gave BAPN 350 mg/kg/day s.c. to GROWING
-MALE C57Bl/6 MICE FROM 5 TO 8 WEEKS and says tibial MORPHOLOGY was measured.** The abstract gives
-cross-links, modulus, yield strain, mineral density — **no length. PAYWALLED, PMC record is an empty author
-manuscript.** ⭐ **THIS IS THE ONE DOCUMENT TO GET: if tibia length is in it, it is the first bone-length
-endpoint under LOX inhibition in any species and it decides the last obtainable candidate in this file.**
+✅✅ **R332 — THE PAPER WAS SUPPLIED AND READ. THE CORR-340 BET PAID: THE LENGTH ENDPOINT WAS IN TABLE 1 AND
+NOBODY HAD EXTRACTED IT.** `mcnerny2015`, growing male C57Bl/6, weight-matched at 5 wk, **n=20/group**, BAPN
+**350 mg/kg/day s.c. × 3 weeks**. Data: `atlas/data/round332/`, PDF in `atlas/data/supplied_round332/`.
+| Tibia length (mm) | Baseline | PBS Sed | **BAPN Sed** | BAPN factor |
+|---|---|---|---|---|
+| | 16.0 ± 0.15 | 17.2 ± 0.26 | **17.2 ± 0.28** | **p = 0.580** |
+⭐ **THE OSTEOLATHYRISM / EPIPHYSEAL-SEPARATION OBJECTION IS REFUTED AT A LENGTH ENDPOINT.** Target
+engagement proven in the SAME animals — LP, pyrrole, HLNL and **total mature cross-linking all significantly
+reduced**, modulus ↓, yield strain ↑, **bodyweight ↓ p=0.010**. Growth proceeded normally 16.0 → 17.2 mm.
+**No physeal pathology** despite whole-tibia µCT and trabecular analysis **50 µm below the proximal growth
+plate**. A high-dose irreversible pan-LOX lathyrogen through the fastest phase of murine growth did **not**
+shorten bone and did **not** wreck the plate. *That was the objection capping this candidate.*
+⛔ **BUT THE NULL CANNOT RESOLVE THE HUMAN EFFECT — computed here:** pooled SD 0.27 mm, n=20 → SE(diff)
+0.0854 mm → **95% CI ±0.97% of tibia length**, **MDE at 80% power = 1.39%**. Human LOXL2 het = **+0.80%** of
+adult height. **The CI barely contains the target; the study is underpowered ~1.7× in effect terms.
+n ≈ 60/group would be needed.** Not evidence of absence.
+⛔⛔ **AND A MECHANISTIC STRIKE, WHICH IS THE REAL COST.** BAPN moved cross-links and mechanics while leaving
+**Ct.Area p=0.264, Ct.Th p=0.113, and ALL SIX cancellous parameters null** (BV/TV 0.931, Tb.N 0.517, Tb.Th
+0.565, Tb.Sp 0.494, Conn.D 0.244, SMI 0.952). **Collagen cross-linking sets bone MECHANICAL QUALITY, not
+bone LENGTH.** With R312's rat contradiction that is **two independent strikes on the proposed mechanism** —
+so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
+→ **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
+candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 ✗ Also against: IMPC has **no Loxl2 length row at all**; R312's rat contrast runs BACKWARDS; PLOD2 biallelic
 = Bruck (short); never given to an adolescent. **Grade C. Not a recommendation — a specification.**
 Gap `g_l12_331a`.
