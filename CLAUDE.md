@@ -1852,6 +1852,85 @@ separates the three cases that matter — **clock stalled · clock at the smith2
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
 
+## ⚠⚠⚠ R358 — **THE OPERATOR WAS RIGHT AND R357 IS PARTLY WITHDRAWN. Every study R357 used to kill the
+## mimic is in the WRONG CONFIGURATION — and correcting for it rehabilitates the mimic, adds two costs, and
+## produces a better question than either: LIGAND-REMOVAL vs RECEPTOR-REMOVAL IN MALES.**
+
+⛔ **ONE — THE THREE ANIMAL NULLS CANNOT TEST A PERIOD HYPOTHESIS, AND THIS FILE ALREADY KNOWS WHY.
+RODENTS DO NOT FUSE THEIR GROWTH PLATES.** `sibonga1998` (female rats), `turner2000` (male rats),
+`movrareskrtic2014` (OVX mice, 3 wk) all measured **longitudinal growth RATE or plate height.** The thesis
+is about the **PERIOD.** The rule is stated verbatim in **four** other nodes — round194 *"cannot be tested
+in an animal that never fuses, so the central negative does not transfer"* · round198 *"no rat could settle
+it because the rat never fuses. weise2001 settles it in a RABBIT, which does"* · round263 · 
+inflammation_growth_suppression. **R357 failed to apply the file's own rule to its own argument.**
+✓ What survives: `movrareskrtic2014` still shows the drug REACHES the plate. Reaching a tissue and not
+changing a RATE is not evidence about a PERIOD.
+
+⛔ **TWO — `sims2012` IS THE WRONG CONFIGURATION FIVE WAYS AND IS METHODOLOGICALLY WEAKER THAN I SAID.**
+**30 GIRLS, mean age 5.9 y, McCune-Albright = autonomous ovarian oestrogen EXCESS** — against a **male at
+BA16, oestrogen-DEPLETE at 3.3–6 pmol/L**. None was on GH, an AI, an FGFR inhibitor or a CNP analogue.
+⛔ **And from this file's own full-text note: "No control group … the pre-treatment bone-age interval was
+collected RETROSPECTIVELY by parental recall and chart review."** The 1.99→1.06 headline is measured against
+a **recalled** baseline in an **uncontrolled single-arm** study, and its PAH endpoint is a Bayley-Pinneau
+extrapolation over ~10 years in a six-year-old (R282: method spread alone = 2.2 cm). **I cited it as though
+it were a randomised paediatric trial. It is not.**
+✓ Target engagement is real: vaginal bleeding 12.0→1.0 days/yr, uterus and ovaries unchanged (no partial
+agonism). The drug worked. The question is what it worked ON.
+
+⭐⭐ **THREE — THE VELOCITY DECOUPLING, AND IT IS THE STRONGEST OF THE FOUR.** sims2012 netted zero because
+the clock slowed **AND velocity slowed with it** (Z −1.14). **In precocious puberty the OESTROGEN IS THE
+GROWTH DRIVER** — the velocity being measured *is* the oestrogen-driven spurt, so removing oestrogen action
+had to remove it. **The two terms are coupled through one hormone.**
+⭐ **IN THIS SUBJECT THAT COUPLING IS BROKEN.** Velocity is driven by **GH, erdafitinib and vosoritide —
+three arms, none oestrogen-dependent** — and the oestrogen-dependent component **has ALREADY been removed by
+anastrozole** (E2 3.3–6, at/below albin2013's half-maximal 6.5). **THE VELOCITY COST HAS ALREADY BEEN PAID
+AND A RECEPTOR AGENT CANNOT CHARGE IT TWICE.** R339's gate, restated as a mechanism.
+
+⭐ **FOUR — a competitive LBD agent achieves far higher fractional occupancy when there is 10–25× less
+ligand to out-compete.** Same dose, ligand-deplete subject, deeper engagement.
+
+⛔ **AND R357's READING OF VERITAC-2 IS CORRECTED.** The "all patients" arm contains **270 of 624
+ESR1-MUTANT** patients, so it is **diluted, not a clean wild-type comparison**, and the ESR1-WT subgroup was
+not separately reported in the sources read. The defensible statement is *the overall population did not
+reach significance* — **not** "no advantage in this subject's genotype."
+
+⭐ **ONE REAL PRACTICAL GAIN — ELACESTRANT IS CLEANER AGAINST ERDAFITINIB THAN VEPDEGESTRANT IS.**
+ORSERDU label §12.3, read directly: **NOT an inhibitor of CYP1A2/2A6/2B6/2C8/2C9/2C19/2D6/2E1/3A, NOT an
+inducer, substrate for OATP2B1 but NOT P-gp.** Against **vepdegestrant, which inhibits CYP3A AND P-gp**
+(midazolam AUC 1.7×, dabigatran 2.0×) while **erdafitinib is ~39% CYP2C9 + ~20% CYP3A4 and a P-gp
+substrate**, with a paediatric record of 5/5 permanent discontinuations. **THAT INVERTS R352's SINGLE
+BIGGEST PRACTICAL OBJECTION.** ✓ Male-favourable tox (female reproductive organs only). ✗ Itself CYP3A4-
+cleared · pH-dependent solubility · ~10% F · cLogP ~6.8 fails R315's minimal-hydrophobicity rule ·
+**no juvenile tox study and "growth plate", "physis", "skeletal" appear NOWHERE in the label.**
+
+⛔ **TWO NEW COSTS, RECORDED BECAUSE THEY RUN AGAINST THE PROPOSAL.**
+· **ERDAFITINIB ALREADY COVERS ONE LIMB OF THE LIGAND-INDEPENDENT ACTIVATION R351 INVOKED.** ERα **Ser118 is
+  phosphorylated by ERK1/2**, and erdafitinib blocks FGFR→ERK. **Only the AKT/p90RSK–Ser167 limb, which GH
+  drives, is untouched.** The degrader's marginal value is smaller than R351 implied.
+· **The vertebral cost is an EFFICACY term** (R278), in a trunk-dominant residual, on top of the AI.
+
+⚠ **AND A PREDICTION WITHDRAWN BEFORE IT WAS USED.** I reasoned from classical ligand-induced receptor
+downregulation that an AI should RAISE ERα protein — a clean new argument for adding a degrader.
+**`cao2026sirt7` refutes the simple version: oestrogen deprivation ACTIVATES a SIRT7→STUB1 degradation
+pathway.** ⭐ But its stated purpose is *"maintaining a functional receptor pool and preserving estrogen
+responsiveness"* — **so the ligand-deplete plate actively DEFENDS the residual receptor an AI cannot reach**,
+and STUB1/CHIP is the first endogenous ERα E3 named in this file. No STUB1 activator exists.
+⚠ Ref_id collision caught pre-commit: `cao2026` was already Cao M 2026 on methylphenidate and growth
+(PMID 42199906, height Z −0.13) — disambiguated to `cao2026sirt7`.
+
+⭐⭐⭐ **THE QUESTION THAT IS BETTER THAN EITHER — AND IT IS THE ONLY HUMAN COMPARISON IN THE RIGHT SEX.**
+| perturbation in a human MALE | what is removed | outcome |
+|---|---|---|
+| **aromatase deficiency** | **LIGAND** (receptor intact) | **UNFUSED epiphyses at 24, 25, 26 and 37 y**; lanfranco2008: 193.0 cm, BA 15.5 at age 26.8, still growing |
+| **ERα-null** | **RECEPTOR** | smith2008: bone age **still advanced 15 → 17.5 over 3.5 y** (~0.7 BA-y/CA-y) |
+⭐ **IN HUMAN MALES, REMOVING THE LIGAND LOOKS AT LEAST AS GOOD AS REMOVING THE RECEPTOR — possibly better.**
+**And he is ALREADY in the ligand-removed state**, 10–25× below the 55–92 pmol/L closure band.
+→ **So the marginal value of a receptor agent ON TOP of near-complete ligand removal may be small — which
+makes R351 a smaller prize AND makes the unavailability of vepdegestrant a smaller loss.**
+⚠ Confounds: aromatase deficiency is ZERO oestrogen **from conception**; anastrozole is partial and started
+after a normal puberty. Single-digit n on both sides, different bone-age methods. **Grade C.**
+Gap `g_l12_358a` — and the cheap version is a records question, not an experiment.
+
 ## ⛔⛔ R357 — **CAN VEPDEGESTRANT BE MIMICKED? NO — AND THE NEAR-MIMIC IS GENERIC, SOURCEABLE, AND
 ## ALREADY RETURNED ZERO HEIGHT IN 30 GROWING CHILDREN. Working this out LOWERS THE PRIOR ON R351 ITSELF.**
 
