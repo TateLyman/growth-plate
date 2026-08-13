@@ -1718,6 +1718,33 @@ HIF-PHI class was already checked in R284.
   glucocorticoid-RESPONSIVE while making none of its own (HSD11B1 absent). **So the variable is SYSTEMIC
   cortisol exposure, not local regeneration — and this atlas has never examined it.**
 
+## ⭐ THE FREE LIST — everything actionable TODAY that costs nothing, consolidated (R365–R370)
+
+**ASK HIM THESE FOUR QUESTIONS** — each maps to a contraindication he may already be carrying:
+1. **Has he ever taken ITRACONAZOLE or POSACONAZOLE?** (SMO antagonists at ordinary antifungal exposure —
+   they inherit the vismodegib fusion result. Standard agents for adolescent onychomycosis/tinea capitis.)
+2. **Does he use an INHALED or TOPICAL CORTICOSTEROID, and which?** (budesonide/beclomethasone/dexamethasone
+   run against hedgehog; fluticasone is a SMO agonist and is less growth-suppressive in randomised trials.)
+3. **Is he megadosing VITAMIN D3?** (binds SMO, phenocopies the SMO null in zebrafish. Adequacy is
+   non-negotiable — target mid-normal 25-OH-D, do not megadose.)
+4. **TOPICAL/ORAL MINOXIDIL, PARACETAMOL, AKG, megadose vitamin C, NR/NMN, LITHIUM?** (all previously listed)
+
+**SUBSTITUTIONS — same indication, better direction, zero cost:**
+· oral antifungal → **TERBINAFINE or FLUCONAZOLE**, never itraconazole/posaconazole (R366)
+· inhaled steroid → **FLUTICASONE**, not budesonide or beclomethasone (R369; mechanism AND `axelsson2019`
+  randomised growth data agree — +0.97 cm height vs budesonide, +0.81 cm/yr vs beclomethasone)
+· if budesonide is unavoidable → **Easyhaler over Turbuhaler** (+0.37 cm/6 mo, same molecule, same dose)
+
+**DO NOT ADD, decided this session:** anti-angiogenics/VEGFR inhibitors (R365 — spends the pool for no
+output) · GH cycling of any period (R367 — three human tests, two randomised, never bought height) ·
+rapalogs and metformin (R366 — now a POOL cost, not just a rate cost) · deliberate energy restriction as a
+lever (CORR-353 — it charges the pool but has never beaten control on length).
+
+**THE ONE MEASUREMENT THAT STILL OUTRANKS EVERY COMPOUND QUESTION (R355/R360, still not done):**
+**ΔBONE AGE / ΔCHRONOLOGICAL AGE on the current stack** — BoneXpert on serial hand films, with standing AND
+sitting height at a fixed time of day. It separates clock-stalled from clock-running and decides whether a
+pool agent is worth chasing for him at all.
+
 ## CONTRAINDICATED — do not add to the stack
 
 - ⛔⛔ **SMOOTHENED ANTAGONISTS — VISMODEGIB, SONIDEGIB, GLASDEGIB. THE HARDEST CONTRAINDICATION IN THIS
