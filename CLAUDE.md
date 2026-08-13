@@ -1709,11 +1709,14 @@ HIF-PHI class was already checked in R284.
   LIST: the marketed molecule itself was given to normal juvenile mice for FOUR DAYS AND THE GROWTH PLATE
   FUSED** (`newton2019`: six administrations P31–P34 → resting-zone clonal size down → **fusion**;
   RZ proliferation inhibited, no premature hypertrophy, CD73 retained). Grade A, direct fusion endpoint. R362
-- ⛔ **ANTI-ANGIOGENICS / VEGFR INHIBITORS** (axitinib, bevacizumab, sunitinib, pazopanib, sorafenib,
-  lenvatinib, regorafenib, cabozantinib, ramucirumab). `newton2019`: axitinib P18–P27 **reduced SOC size
-  P=0.0054 AND clone size P=0.0023.** The **epiphyseal** vasculature FEEDS the niche (the SOC is the Shh
-  source) while the **metaphyseal** vasculature erodes the plate — an anti-angiogenic hits both and the
-  niche side loses. Grade C. R362
+- ⚠⚠ **ANTI-ANGIOGENICS / VEGFR INHIBITORS — STAGE-DEPENDENT, AND R364 REVERSED THIS ENTRY. NOT A SIMPLE
+  CONTRAINDICATION.** `newton2019` shows BOTH: axitinib **P18–P27, DURING SOC maturation**, reduced SOC size
+  (P=0.0054) and clone size (P=0.0023) — the SOC is the Shh source, so damaging it starves the niche. **BUT
+  axitinib P41–P44, to an ESTABLISHED plate, is used ROUTINELY AND EXPLICITLY "TO PREVENT FUSION OF THE
+  GROWTH PLATE"** at 25 mg/kg/day, by reducing resorption of terminal hypertrophic chondrocytes. **The
+  subject has a fully formed SOC and is therefore in the second window.** ⛔ The objection is no longer
+  stage but **CHARGE WITHOUT DISCHARGE** — see R364. Grade A on the fusion-blocking observation, grade C on
+  whether it lengthens anything.
 - ⛔ **LITHIUM / GSK3 INHIBITORS, and the whole bone-anabolic WNT-RAISING shelf** (NOTUM inhibitors, DKK1
   antibodies). R281 puts the canonical-Wnt optimum BELOW wild type; every marketed Wnt agent in bone raises
   it, because the indication was always bone MASS. **Lithium is prescribed to adolescents — ASK.** Grade E,
@@ -1860,6 +1863,70 @@ by BoneXpert on serial hand films, with standing AND sitting height at a fixed t
 separates the three cases that matter — **clock stalled · clock at the smith2008 residual (~0.7) · clock near
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
+
+## 🎯🎯🎯🎯🎯🎯🎯🎯 R364 — **THE FIVE ONO-LAB PAPERS READ PROPERLY. STAGE not duration, and it FAVOURS him;
+## AXITINIB IS USED TO PREVENT GROWTH-PLATE FUSION IN NORMAL MICE; and GH lowers the SELF-RENEWAL FRACTION,
+## which is its own tachyphylaxis. This round corrects TWO of my own rounds from the last two days.**
+
+⭐⭐ **ONE — STAGE, NOT DURATION, IS THE HEDGEHOG DISCRIMINATOR — AND IT IS THE VARIABLE THAT FAVOURS HIM.**
+R363 said a pulse expands and sustained activation converts. Checked against the primaries that is at best
+incomplete. **`orikasa2024` INDUCED AT P6** — the paper names its populations **PTHrP-CE-P6** throughout, "pulsed
+at P6 with tamoxifen and analyzed at P28" — which is **at or before SOC formation.** **`trompet2024` dosed at
+P28/P30/P32**, well after. **`cheng2025` states the rule in both directions: BEFORE SOC formation, BOTH the
+antagonist LDE225 AND the agonist SAG REDUCE PTHrP⁺ stem cells — both directions harmful. AFTER SOC formation
+the roles separate — vismodegib causes premature fusion ~P35, SAG PROMOTES resting-zone proliferation.**
+→ **THE TWO RESULTS THIS FILE COULD NOT RECONCILE SIT ON OPPOSITE SIDES OF THE SOC BOUNDARY, AND A SUBJECT AT
+BONE AGE 16 IS AS FAR POST-SOC AS IT IS POSSIBLE TO BE.**
+
+⭐⭐⭐⭐ **TWO — THE FINDING OF THE ROUND, AND IT REVERSES MY OWN R362 CONTRAINDICATION.**
+`newton2019` Methods, read directly: *"…during this same experiment, single daily doses of **AXITINIB** were
+administered on P41–P44 **TO PREVENT FUSION OF THE GROWTH PLATE**."* And separately: *"To **reduce the
+resorption of terminal hypertrophic chondrocytes** and to block SOC development, mice were injected …
+axitinib (25 mg per kg body weight, an inhibitor of VEGFR) once daily."*
+⭐ **AXITINIB IS APPROVED. THIS IS THE FIRST AGENT IN THIS FILE SHOWN TO PREVENT GROWTH-PLATE FUSION
+PHARMACOLOGICALLY IN A NORMAL ANIMAL** — and it acts on **R355's program C, the terminal vascular event**,
+which nothing in the stack touches. Same stage logic as hedgehog: **damaging DURING SOC maturation
+(P18–27), fusion-blocking in an ESTABLISHED plate (P41–44).** He has a fully formed SOC.
+
+⛔⛔ **THREE — AND THE OBJECTION IS THIS FILE'S OWN FAILURE MODE #1. Axitinib works by REDUCING RESORPTION OF
+TERMINAL HYPERTROPHIC CHONDROCYTES — that is CHARGE WITHOUT DISCHARGE.** The plate persists *because* the
+cartilage is not being replaced by bone, and **a plate that survives without discharging does not lengthen
+anything.** Same trap that killed **RANKL blockade** (R317: resorption is REQUIRED at the junction; retained
+cartilage, abnormal plates) and **aggrecanase inhibition** (R337). Third member of the class, and the
+objection has never once failed to apply. ⛔ **NO LENGTH ENDPOINT UNDER AXITINIB IN ANY SPECIES** — in
+newton2019 it is purely a tool to keep a plate open long enough to run another experiment. Gap `g_l7_364a`.
+
+⭐⭐ **FOUR — THE CHARGE-AND-DISCHARGE PAIR IS INSIDE ONE PAPER, WITH ALL THREE AGENTS, AND NO BONE MEASURED.**
+· **CHARGE — Tsc1 ablation (mTORC1 ↑):** PAR3 distributed **SYMMETRICALLY** in more stem-cell dyads;
+  **multi-columnar clones increased in number and thickness from P3 to P90**; EdU⁺ stem cells 24.7 → 62.4/section.
+· **DISCHARGE — vismodegib (8 doses, twice daily P40–P44):** **forced those clusters to differentiate directly
+  into columnar cells**, with **CD73⁺ cells DETACHING FROM THE NICHE and entering the columnar layer WITHOUT
+  starting to proliferate.** Hedgehog regulates stem-cell **renewal, not identity.**
+· **HOLD — axitinib daily P41–P44 to prevent fusion during the discharge.**
+⭐ **Expand the pool, force it into columns, hold the plate open — three agents, one experiment, and NOBODY
+MEASURED A BONE.** ⛔ Bounded: extending vismodegib **FUSED** the plate. The window between forcing
+differentiation and forcing fusion has never been mapped. ⚠ And the charge step has **no agent in the wanted
+direction** — rapalogs INHIBIT mTORC1.
+
+⛔⛔ **FIVE — AND THE DIRECT ANSWER ON THE ARM HE WANTS TO KEEP FOREVER. `chu2025`, in NON-GH-DEFICIENT mice:
+PHARMACOLOGICAL GH REDUCES THE POOL OF SLOW-CYCLING LABEL-RETAINING STEM CELLS BY PROMOTING COMMITTED RATHER
+THAN SELF-RENEWING DIVISION**, expanding transit-amplifying progenitors while spending the root population.
+GHR deletion in stem cells impairs chondrocyte output, so the action is **direct**, and JAK2/STAT5 is
+**restricted to the RESTING ZONE.** ⭐ **The authors name the consequence: it may underpin both the
+therapeutic action AND THE DIMINISHING LONG-TERM EFFICACY OF GH. THAT IS THE MECHANISM OF GH TACHYPHYLAXIS.**
+⭐ **And it is the right variable: renewal is by POPULATION ASYMMETRY, so the controllable quantity is THE
+FRACTION OF DIVISIONS THAT ARE SELF-RENEWING. "Replacement ≥ loss" IS the statement that this fraction ≥ ½.
+GH moves it the wrong way.** ⚠ Counterweight carried: **PHYSIOLOGICAL** GH in **HYPOPHYSECTOMISED** rats did
+the OPPOSITE, and GHR deletion impairs output — GH is REQUIRED for normal stem-cell function. **The depletion
+result is PHARMACOLOGICAL dosing in GH-SUFFICIENT animals, which is this subject's configuration.**
+
+⚠ **SIX — FATE LEAKAGE IS REAL BUT SMALL, SO PLUGGING IT IS NOT THE LEVER.** Three routes out of the cartilage
+lineage: hypertrophic transdifferentiation · **`mizuhashi2019` borderline chondrocytes** at the periphery
+behaving as transient mesenchymal precursors · **`ono2014`** Col2⁺ descendants feeding perichondrium,
+osteoblasts and stroma. ⛔ But `orikasa2024` states the baseline — PTHrP⁺ descendants normally contribute only
+a **SMALL NUMBER** of marrow osteoblasts — so **the conversion is something hedgehog CREATES, not a standing
+loss it reveals.** And **Smo cKO in PTHrP⁺ cells cut their column contribution with BONE LENGTH AND PLATE
+STRUCTURE UNCHANGED** — a pool whose contribution can be cut for free is not a pool worth sealing.
 
 ## ⛔⛔⛔⛔ R363 — **ORIKASA 2024: SUSTAINED HEDGEHOG ACTIVATION EXPANDS THE CLONE, THEN CONVERTS IT INTO
 ## TRABECULAR BONE, AND RETURNS *NO FINAL LENGTH*. The "keep it on forever" version of this axis is the
