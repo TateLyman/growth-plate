@@ -1777,6 +1777,36 @@ medicinal chemistry, not discovery.** That is a different and much smaller probl
 promiscuous across 2-OG dioxygenases, so this is suggestive not decisive); AKG and megadose vitamin C are
 already contraindicated here as TET CO-SUBSTRATES, which is the same axis read in the opposite direction.
 
+⭐⭐ **AND THE SWEEP EXTENDED TO ALL 70 POSITIVE-BETA GENES DELIVERED THE ROUND'S REAL RESULT: THE COLLAGEN
+CROSS-LINKING PATHWAY IS FOUR CONCORDANT GENES ACROSS 20,751 CARRIERS, NOT THREE — AND PXS-5505 IS PAN-LOX,
+SO IT COVERS TWO OF THEM AT ONCE.**
+| gene | β cm | P | carriers | tissue | CPM | ChEMBL mols |
+|---|---|---|---|---|---|---|
+| **LOXL3** ⭐NEW | **+0.96** | 6.8e-12 | 2,520 | 12/14 | 82.0 | 20 |
+| **PLOD2** ⭐degrader target | **+0.91** | 1.0e-11 | 2,791 | 12/14 | **745.4** | 8 |
+| **LOXL2** | +0.68 | 1.4e-16 | 7,404 | 12/14 | 186.3 | 365 |
+| **PLOD1** | +0.54 | 1.1e-11 | 8,036 | 12/14 | 39.6 | 6 |
+Family also present but not in the 207: LOX 70.7 CPM · LOXL4 67.2 · PLOD3 45.7.
+**R331 named PXS-5505 on three genes at lower power. On the best-powered rows it is FOUR, all P≤1e-11, all
+abundantly expressed — and because PXS-5505 is a PAN-lysyl-oxidase inhibitor it engages LOXL2 AND LOXL3
+together. The genetic basis for the compound is materially stronger than when it was named.**
+
+⚠ **TWO NEW CANDIDATES WITH REAL CHEMISTRY, RECORDED WITH THEIR BLOCKERS — do not promote either.**
+· **MAPKAPK2 (MK2)** +0.67 cm, P=1.2e-09, 4,095 carriers, **107 CPM 12/14, 963 molecules at pChEMBL 9.52,
+  and clinical-stage inhibitors exist (zunsemetinib/ATI-450).** ⛔ **BLOCKED by this atlas's own
+  `fgfr3_mapk_branch` node: p38 is REQUIRED to achieve and maintain the expanded hypertrophic zone and acts
+  OPPOSITE to ERK.** MK2 is p38's principal effector, so inhibiting it should REDUCE h_term (~80% of growth)
+  — and erdafitinib blocks FGFR3 upstream of both arms, so Step 0 raises substitution risk too. **A
+  well-powered human positive in direct mechanistic conflict with the file. Resolve before touching.**
+· **CYP26B1** +0.81 cm, P=1.0e-11, 3,502 carriers, 25 molecules at pChEMBL 9.34, talarozole-class inhibitors
+  exist. ⛔ **BLOCKED: CYP26B1 degrades retinoic acid, so loss RAISES RA — and retinoid excess is the
+  classical cause of PREMATURE EPIPHYSEAL CLOSURE (isotretinoin). Biallelic loss = craniosynostosis with
+  radiohumeral fusions (CORR-325).** Pharmacology runs against the het effect.
+✗ Minor: DAP +0.87 (5 mols), KAT2B +0.17 (284 mols, degrader) — effect or chemistry too thin.
+⛔ **CONFIRMED EMPTY on a proper ChEMBL query — these "no molecule" calls were RIGHT:** HHIP · NRK · CHAD ·
+SCUBE3 · STC2 · PAPPA · FBN1 · FBN2 · LCORL · SCMH1 · HMG20B · ZFAT · ZNF518A · SAMD4A · XYLT1 · EXT1 ·
+B4GALNT3 · CNNM3 · HLTF · HERC1 · AEBP1 · COL8A2 · CLEC3A · LTBP2 · **TGFB3** · NOG · GLI3 · SIX6 · HMCN1.
+
 ## ⭐⭐⭐ R333 — **THE MECHANISM WAS PROBABLY NEVER COLLAGEN. LOXL2 IS AN H3K4me3 ERASER, AND THE WRITER/
 ## ERASER PAIR HAS OPPOSITE SIGNS AT P=1.4e-16 AND 4.3e-10.** `atlas/data/round333/`
 

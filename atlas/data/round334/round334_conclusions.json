@@ -1,0 +1,127 @@
+{
+ "round": 334,
+ "method": "ChEMBL bioactivity sweep, 89 genes, replacing Open Targets known-drug counts (CORR-347)",
+ "headline": "The collagen cross-linking pathway is FOUR concordant positive genes across 20,751 carriers, not three, and PXS-5505 is PAN-LOX so it covers LOXL2 and LOXL3 together.",
+ "cross_linking_pathway": {
+  "LOXL2": {
+   "cm": 0.68,
+   "P": 1.37e-16,
+   "n_het": 7404,
+   "det": "12/14",
+   "CPM": 186.3,
+   "chembl_mols": 365
+  },
+  "LOXL3": {
+   "cm": 0.96,
+   "P": 6.79e-12,
+   "n_het": 2520,
+   "det": "12/14",
+   "CPM": 82.0,
+   "chembl_mols": 20,
+   "NEW": true
+  },
+  "PLOD2": {
+   "cm": 0.91,
+   "P": 1.03e-11,
+   "n_het": 2791,
+   "det": "12/14",
+   "CPM": 745.4,
+   "chembl_mols": 8,
+   "degrader_target": true,
+   "NEW": true
+  },
+  "PLOD1": {
+   "cm": 0.54,
+   "P": 1.13e-11,
+   "n_het": 8036,
+   "det": "12/14",
+   "CPM": 39.6,
+   "chembl_mols": 6
+  },
+  "family_present_but_not_in_207": {
+   "LOX": 70.7,
+   "LOXL4": 67.2,
+   "PLOD3": 45.7,
+   "LOXL1": 4.3
+  }
+ },
+ "total_carriers": 20751,
+ "why_it_matters": "R331 named PXS-5505 on three genes (LOXL2 +1.40 pLoF-only, PLOD2, PLOD1). On the best-powered rows the pathway is four genes, all P<=1e-11, all abundantly expressed, and PXS-5505 is a PAN-lysyl-oxidase inhibitor so it engages LOXL2 AND LOXL3 simultaneously. The genetic basis for the named compound is materially stronger than when it was named.",
+ "new_candidates_recorded_not_promoted": {
+  "MAPKAPK2": {
+   "cm": 0.67,
+   "P": 1.24e-09,
+   "n_het": 4095,
+   "det": "12/14",
+   "CPM": 107.1,
+   "chembl_mols": 963,
+   "best_pchembl": 9.52,
+   "clinical": "MK2 inhibitors reached clinical development (zunsemetinib / ATI-450)",
+   "BLOCKER": "The atlas's own fgfr3_mapk_branch node records that p38 is REQUIRED to achieve and maintain the expanded hypertrophic zone and acts in the OPPOSITE direction to ERK on hypertrophy. MK2 is p38's principal effector kinase, so inhibiting it should REDUCE h_term, which is ~80 per cent of longitudinal growth. And erdafitinib blocks FGFR3 upstream of both arms, so Step 0 raises a substitution risk as well. Direct mechanistic conflict with a well-powered human positive - recorded as a contradiction to resolve, not a lead."
+  },
+  "CYP26B1": {
+   "cm": 0.81,
+   "P": 1.03e-11,
+   "n_het": 3502,
+   "det": "11/14",
+   "CPM": 8.7,
+   "chembl_mols": 25,
+   "best_pchembl": 9.34,
+   "BLOCKER": "CYP26B1 degrades retinoic acid, so loss raises RA. But retinoid excess is a classical cause of PREMATURE EPIPHYSEAL CLOSURE (isotretinoin), which is the opposite direction, and biallelic CYP26B1 loss causes craniosynostosis with radiohumeral fusions. CORR-325 applies at the biallelic end and the pharmacology runs against the het effect."
+  },
+  "DAP": {
+   "cm": 0.87,
+   "P": 1.8e-13,
+   "n_het": 3507,
+   "det": "12/14",
+   "CPM": 85.7,
+   "chembl_mols": 5,
+   "note": "death-associated protein; no atlas coverage; chemical matter minimal"
+  },
+  "KAT2B": {
+   "cm": 0.17,
+   "P": 0.00075,
+   "n_het": 20503,
+   "det": "12/14",
+   "CPM": 29.5,
+   "chembl_mols": 284,
+   "degrader_target": true,
+   "note": "effect small"
+  }
+ },
+ "confirmed_empty_no_human_chembl_target": [
+  "HHIP",
+  "NRK",
+  "CHAD",
+  "SCUBE3",
+  "STC2",
+  "PAPPA",
+  "FBN1",
+  "FBN2",
+  "LCORL",
+  "SCMH1",
+  "HMG20B",
+  "ZFAT",
+  "ZNF518A",
+  "SAMD4A",
+  "XYLT1",
+  "EXT1",
+  "B4GALNT3",
+  "CNNM3",
+  "HLTF",
+  "HERC1",
+  "AEBP1",
+  "COL8A2",
+  "CLEC3A",
+  "LTBP2",
+  "TGFB3",
+  "NOG",
+  "GLI3",
+  "SIX6",
+  "HMCN1",
+  "COL16A1",
+  "SNED1",
+  "IRS4",
+  "FAM111A"
+ ]
+}
