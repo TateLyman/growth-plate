@@ -1854,6 +1854,38 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ✅ R370 — **THE CILIUM WORRY ABOUT ERDAFITINIB IS MEASURED IN THE WRONG TISSUE.** De-escalated, not closed.
+
+R362 and R363 called this the most urgent experiment in the file: Hh to the RZ is REQUIRED to prevent fusion ·
+all Hh transduction is in the cilium · **AZD4547 in NORMAL mice gave significantly SHORTER cilia, P<0.001, in
+all three tissues tested** · he is WT-FGFR3 on a pan-FGFR inhibitor, continuously.
+
+⛔ **ONE — THOSE THREE TISSUES ARE BILIARY DUCT, KIDNEY PROXIMAL TUBULE AND LUNG BRONCHUS.** Not cartilage.
+**And this file's own bibliography entry for `kunovabosakova2018` has ended with the line "cilia data are
+biliary/kidney/lung, NOT cartilage" since 2026-08-12** — three rounds built an alarm on top of it without
+weighting it.
+
+⭐⭐ **TWO — AND THE ONLY CARTILAGE MEASUREMENT RUNS THE OTHER WAY.** `martin2018`, in chondrocytes from
+**HUMAN ACH and TD cartilage** and Fgfr3-Y367C/+ mice: constitutively active FGFR3 perturbs cilium length and
+disrupts **IFT20** sorting/trafficking — and **inhibiting FGFR3 with PD173074 RESCUED BOTH.** In the one
+tissue that matters, an FGFR inhibitor **lengthened** cilia. (Rapamycin rescued both too.)
+
+⚠ **THREE — CORR-203 IS WHY THIS DE-ESCALATES RATHER THAN CLOSES.** martin2018 is RESTORATION in a
+gain-of-function model; he is wild type. **Two tissues, two signs, and the relevant one is favourable.**
+The experiment — an FGFR inhibitor in a NORMAL growing animal with growth-plate cilium length + Gli1/Ptch1 +
+bone length together — **is still unrun.** It is no longer an alarm. `g_l7_362a`
+
+⚠ **FOUR — AND IT QUALIFIES R366's RAPALOG UPGRADE.** martin2018 has rapamycin rescuing cilium length and
+IFT20 trafficking. R366 upgraded rapalogs from a rate cost to a POOL cost on Raptor-ablation clone loss. Both
+can hold — mTOR inhibition may restore ciliary architecture in an FGFR3-overactive chondrocyte while
+depleting the pool in a normal one — but the contraindication is **less one-sided** than R366 wrote it.
+
+⛔ **FIVE — EPICATECHIN/COCOA WAS ALREADY HERE (`martin2022`, since 2026-08-12, with a fuller finding than the
+one I drafted) and the duplicate check caught it pre-write.** Both standing objections stand and each is
+disqualifying for an ADDITION: **CORR-203** (rescue of an FGFR3 gain-of-function dwarfism) and **Step 0 /
+CORR-297** (it acts by inhibiting FGFR3 downstream signalling — erdafitinib's own arm, so a SUBSTITUTION).
+Route was subcutaneous injection, not diet.
+
 ## ⭐⭐⭐⭐⭐ R369 — **FOUR FDA-APPROVED SMOOTHENED AGONISTS EXIST, AND THE CORTICOSTEROID CLASS SPLITS ON
 ## HEDGEHOG DIRECTION MOLECULE BY MOLECULE.** The operator was right; "no approved SMO agonist" is retired.
 
