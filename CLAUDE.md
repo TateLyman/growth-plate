@@ -1852,6 +1852,72 @@ separates the three cases that matter — **clock stalled · clock at the smith2
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
 
+## ⛔⛔ R357 — **CAN VEPDEGESTRANT BE MIMICKED? NO — AND THE NEAR-MIMIC IS GENERIC, SOURCEABLE, AND
+## ALREADY RETURNED ZERO HEIGHT IN 30 GROWING CHILDREN. Working this out LOWERS THE PRIOR ON R351 ITSELF.**
+
+Operator asked whether the effect can be had without the drug, and asked for certainty. Three steps.
+
+⭐ **ONE — THE CATEGORY WAS WRONG TWICE, AND R338 ONLY FIXED HALF OF IT.** `the_receptor_level_oestrogen_sweep`
+closed the class with *"SERM, pure antagonist, **SERD**, CERAN, SERCA … are AF-2 agents aimed at a function
+that does not need AF-2."* R338 caught that the **PROTAC** is misfiled there. **THE SAME ERROR COVERS THE
+WHOLE SERD CLASS: a Selective Estrogen Receptor DEGRADER degrades the receptor.** Fulvestrant, elacestrant,
+giredestrant, camizestrant, imlunestrant are not domain blockers.
+→ **The real variable was never SERD-vs-PROTAC. It is DEGRADATION DEPTH on a continuum:**
+SERM (protein intact) → **SERD (partial, occupancy-driven, stoichiometric)** → **PROTAC (catalytic, one
+molecule cycles through many receptors)** → **ERα-null human (100%)**. Vepdegestrant's measured depth:
+**69% median after one 28-day cycle, 94% at ~5.5 months** (R352, tumour biopsies).
+
+⛔ **TWO — SO THE MIMIC EXPERIMENT HAS ALREADY BEEN RUN, IN GROWING CHILDREN, WITH A GENERIC DRUG.**
+`sims2012`: fulvestrant (a SERD), **30 growing girls, 12 months** — ΔBA/ΔCA **1.99 → 1.06 (p=0.0007)** and
+**PREDICTED ADULT HEIGHT 163.0 → 163.5 cm**, growth-velocity Z change **−1.14, point estimate NEGATIVE**.
+Three WT animal nulls with internal positive controls that fired (`sibonga1998` uterine antagonism complete,
+`turner2000` orchiectomy reduced growth in the same experiment, `movrareskrtic2014` nothing in WT).
+⛔ **AND THE NULL IS NOT A DELIVERY FAILURE — THIS REMOVES THE EASIEST DEFENCE OF THE PROTAC.**
+`movrareskrtic2014`: the same drug, same route, same tissue is a **PRONOUNCED INVERSE AGONIST enhancing
+longitudinal growth once ERα AF-2 is disabled.** It reaches the plate and does nothing there in wild type.
+R353's cationic-Donnan argument implied fulvestrant might have failed on PK. It did not.
+
+⛔⛔ **THREE — AND THE ONLY HUMAN HEAD-TO-HEAD SHOWS NO PROTAC ADVANTAGE IN THIS SUBJECT'S RECEPTOR GENOTYPE.**
+`campone2025` (VERITAC-2, NEJM, phase 3, **n=624**, vepdegestrant 200 mg oral vs fulvestrant 500 mg IM):
+· **ESR1-MUTANT (n=270): 5.0 vs 2.1 months, HR 0.58 (0.43–0.78), P<0.001.**
+· ⛔ **ALL PATIENTS: 3.8 vs 3.6 months, HR 0.83 (0.69–1.01), P=0.07 — NOT SIGNIFICANT.** Authors state the
+  benefit is confined to the ESR1-mutation subgroup.
+**ESR1 LBD mutations are constitutively active and lower competitive-antagonist affinity — exactly where
+catalytic degradation wins and occupancy loses. THE SUBJECT IS ESR1 WILD-TYPE.**
+→ **CHAIN: in wild-type-receptor humans vepdegestrant is not shown to beat fulvestrant · fulvestrant is null
+at the WT plate and null on PAH in growing children · therefore THE PRIOR THAT VEPDEGESTRANT MOVES A
+WILD-TYPE GROWTH PLATE HAS GONE DOWN, NOT UP.** Recorded against R338 and R351, which are this file's own
+proposals — CORR-309/343's shape, applied to myself.
+⚠ **COUNTER KEPT, AND IT IS WHY THIS IS NOT A KILL:** tumour PFS measures whether a cancer's ER can still
+drive proliferation, **not how much receptor protein is left in a normal tissue**. "Enough to stall a
+tumour" ≠ "enough removed to phenocopy an ERα-null human."
+
+⚠ **THE CLOSEST OBTAINABLE SUBSTITUTE IS ELACESTRANT (ORSERDU) — and it is NOT a proven mimic.**
+Oral 345 mg daily, **FDA-approved January 2023**, so sourceable three years longer than vepdegestrant.
+✓ **458.6 Da and strongly basic — SMALLER AND MORE CATIONIC than vepdegestrant (723.9 Da), so R353's own
+Donnan argument applies MORE strongly, not less.**
+✗ **Fails R315's other published design rule** — cationic charge *plus MINIMAL HYDROPHOBICITY* gives deepest
+cartilage penetration, and elacestrant's cLogP is ~6.8. ✗ ~10% oral bioavailability. ✗ pH-dependent
+solubility, so acid reducers cut exposure. ✗ **Zero growth-plate, chondrocyte or longitudinal-growth data**,
+and it is in the class whose one paediatric growth trial returned zero.
+⚠ pKa/cLogP/LogD taken from a REVIEW at summary level — `value_unverified`.
+
+⛔ **THE OTHER ROUTES, CHECKED NOT ASSUMED:** **giredestrant/camizestrant** — not approved, and cause
+**on-target Esr1-mediated bradycardia** (zebrafish *esr1* mutants protected, *gper/esr2a/esr2b* not;
+`basu2026` + JACC 2026) — the newer members are not the safer ones · **blocking the ligand-independent INPUT**
+(R351's Ser118/Ser167) means **MEK** (erdafitinib's own arm; cobimetinib *reduces* hypertrophy, R313) or
+**AKT** (R324: growth-POSITIVE direction; capivasertib is a contraindication) — **no route** · **lowering
+ESR1 synthesis** — no selective agent in any species · **HSP90 inhibition** (ERα is an HSP90 client) — no
+approved agent, degrades hundreds of clients · **anastrozole + fulvestrant** — the only combo with human
+randomised data, but the fulvestrant component contributes a *measured null* at the plate.
+
+⭐ **THE ONE MEASUREMENT THAT DECIDES BOTH QUESTIONS AT ONCE — and it is the receptor sweep's own stated open
+question, still open: ERα PROTEIN IN GROWTH-PLATE CHONDROCYTES UNDER A DEGRADER.** It decides whether
+vepdegestrant differs from fulvestrant at the plate AND whether any obtainable SERD can substitute. R357 adds
+that it must be run as a **DEPTH SERIES** — fulvestrant vs oral SERD vs PROTAC in parallel arms, measuring
+ERα protein, plate height and **bone length** in the same animals, with fulvestrant as the internal negative
+control. Gap `g_l12_357a`.
+
 ## ⭐⭐⭐⭐ R356 — **THE POOL ROUND. The genome-wide resting-zone contrast had NEVER been run, and its
 ## STRUCTURE is the finding: the human resting zone's own programme is SECRETED CANONICAL-WNT ANTAGONISTS.**
 ## Run `atlas/tools/round356_resting_zone_enrichment_screen.py` → `atlas/data/round356/`

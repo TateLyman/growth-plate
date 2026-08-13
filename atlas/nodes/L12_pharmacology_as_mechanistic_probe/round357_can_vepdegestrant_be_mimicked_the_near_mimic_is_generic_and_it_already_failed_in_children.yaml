@@ -1,0 +1,254 @@
+id: round357_can_vepdegestrant_be_mimicked_the_near_mimic_is_generic_and_it_already_failed_in_children
+name: Round 357 - can vepdegestrant's effect be obtained without the drug? The near-mimic is generic, is
+  already sourceable, and has already returned zero height in thirty growing children - and working that
+  out lowers the prior on vepdegestrant itself
+aliases:
+- can we mimic vepdegestrant
+- SERD versus PROTAC
+- elacestrant
+- VERITAC-2 wild-type
+- the ESR1 genotype problem
+type: hypothesis
+layer: L12
+stub: false
+summary: 'The operator asked whether vepdegestrant''s effect can be reproduced without the drug, because the
+  drug is unsourceable, and asked for certainty rather than a guess. THE ANSWER IS NO, AND THE ROUTE TO IT
+  DAMAGES THE ORIGINAL PROPOSAL. Three steps. (1) THE CLASS IS MIMICABLE IN PRINCIPLE AND THE ATLAS HAD THE
+  CATEGORY WRONG TWICE. R338 caught this file filing vepdegestrant among agents that "are all AF-2 agents by
+  design" and corrected it - a PROTAC degrades the protein. THE SAME CORRECTION APPLIES TO THE WHOLE SERD
+  CLASS AND WAS NEVER MADE: a Selective Estrogen Receptor DEGRADER degrades ERalpha by definition, so
+  fulvestrant, elacestrant, giredestrant, camizestrant and imlunestrant are not domain blockers either. The
+  difference between a SERD and a PROTAC is DEGRADATION DEPTH and CATALYTIC versus STOICHIOMETRIC mechanism,
+  not a categorical difference in what is removed. (2) SO THE MIMIC EXPERIMENT HAS ALREADY BEEN RUN, IN
+  GROWING CHILDREN, WITH A GENERIC DRUG, AND IT RETURNED ZERO. Fulvestrant is a SERD. sims2012: 30 growing
+  girls, 12 months - rate of bone-age advancement fell 1.99 to 1.06 (p=0.0007) and PREDICTED ADULT HEIGHT
+  WENT 163.0 to 163.5 cm. Three wild-type animal studies are null with internal positive controls firing.
+  AND THE NULL IS NOT A DELIVERY FAILURE - movrareskrtic2014 shows the same drug, same route, same tissue is
+  a PRONOUNCED INVERSE AGONIST at the plate once AF-2 is disabled, so it reaches the growth plate and does
+  nothing there in wild type. (3) AND THE HEAD-TO-HEAD SAYS THE PROTAC IS NOT DEMONSTRABLY BETTER IN THE
+  RECEPTOR GENOTYPE THIS SUBJECT HAS. VERITAC-2 (campone2025, NEJM, n=624) randomised vepdegestrant 200 mg
+  oral against fulvestrant 500 mg IM. In the ESR1-MUTANT subgroup, 5.0 vs 2.1 months, HR 0.58, P<0.001. IN
+  THE FULL POPULATION, 3.8 vs 3.6 months, HR 0.83 (0.69-1.01), P=0.07 - NOT SIGNIFICANT. The entire
+  advantage sits in tumours whose receptor is constitutively active by mutation. THE SUBJECT IS ESR1
+  WILD-TYPE. Chain: in wild-type-receptor humans vepdegestrant is not shown to beat fulvestrant; fulvestrant
+  is null at the wild-type plate and null on predicted adult height in growing children; therefore THE PRIOR
+  THAT VEPDEGESTRANT DOES SOMETHING AT A WILD-TYPE GROWTH PLATE THAT FULVESTRANT DOES NOT HAS GONE DOWN, NOT
+  UP. That is recorded against R351 and R338, which are this file''s own proposals. WHAT REMAINS OF THE
+  DISTINCTION, HONESTLY: degradation depth is measured for vepdegestrant (69% median after one cycle, 94% at
+  ~5.5 months, R352) and has never been measured for any agent in cartilage; catalytic degradation can in
+  principle exceed occupancy-driven degradation; and a tumour PFS endpoint is not a growth-plate endpoint.
+  THE CLOSEST OBTAINABLE ANALOGUE IS ELACESTRANT - oral, FDA-approved January 2023 so sourceable for three
+  years, 458.6 Da and strongly basic, therefore SMALLER AND MORE CATIONIC THAN VEPDEGESTRANT, which on
+  R353''s own Donnan argument should partition into cartilage at least as well. It fails R315''s other
+  published design rule - minimal hydrophobicity - has ~10% oral bioavailability, and has zero growth-plate
+  data. It is the best available substitute and it is NOT a proven mimic. THE ONE MEASUREMENT THAT DECIDES
+  BOTH QUESTIONS AT ONCE is the one the receptor sweep named as its only open question and nobody has done:
+  ERalpha PROTEIN in growth-plate chondrocytes under a degrader.'
+quantitative:
+- parameter: VERITAC-2 - THE ONLY HEAD-TO-HEAD OF A PROTAC AGAINST A PLAIN SERD IN HUMANS, AND THE WILD-TYPE
+    ARM IS THE ONE THAT MATTERS HERE
+  unit: months of progression-free survival; hazard ratio
+  value: 'campone2025, NEJM, phase 3, open-label, n=624 randomised 1:1. Vepdegestrant 200 mg orally once
+    daily (n=313) vs fulvestrant 500 mg IM (n=311). ESR1-MUTANT subgroup (n=270): median PFS 5.0 months
+    (95% CI 3.7-7.4) vs 2.1 (1.9-3.5), HR 0.58 (0.43-0.78), P<0.001. ALL PATIENTS: 3.8 months (3.7-5.3) vs
+    3.6 (2.6-4.0), HR 0.83 (0.69-1.01), P=0.07 - DID NOT REACH SIGNIFICANCE. The authors state it plainly:
+    significantly longer PFS in the ESR1-mutation subgroup BUT NOT IN THE FULL PATIENT POPULATION.
+    ESR1 LBD mutations cause constitutive ligand-independent activation and reduce competitive antagonist
+    affinity, which is exactly the setting where catalytic degradation should win and occupancy should lose.
+    THE SUBJECT IS ESR1 WILD-TYPE, so the demonstrated advantage does not apply to him.
+    ⚠ COUNTER, STATED FAIRLY: tumour PFS measures whether a cancer''s ER can still drive proliferation. It
+    is NOT a measure of how much receptor protein is left in a normal tissue, and "enough blockade to stall
+    a tumour" is a different quantity from "enough protein removed to phenocopy an ERalpha-null human".'
+  species: human
+  n: 624 randomised; 270 with ESR1 mutations
+  source_ref: campone2025
+  value_unverified: false
+- parameter: THE MIMIC EXPERIMENT WAS ALREADY RUN IN GROWING CHILDREN WITH A GENERIC SERD AND IT IS NULL
+  unit: bone-age years per calendar year; cm of predicted adult height
+  value: 'sims2012 - 30 growing girls, mean age 5.9 y, McCune-Albright with progressive precocious puberty,
+    fulvestrant 4 mg/kg IM monthly for 12 months, prospective, international, multicentre, carried on the FDA
+    label. Rate of bone-age advancement 1.99 -> 1.06 (mean change -0.93, 95% CI -1.43 to -0.43, p=0.0007),
+    progressive (-0.83 at 6 months, -1.10 at 12). PREDICTED ADULT HEIGHT 163.0 +/- 6.9 -> 163.5 +/- 6.3 cm.
+    Growth velocity Z-score change -1.14 (95% CI -2.67 to 0.38, p=0.135), point estimate NEGATIVE.
+    THE CLOCK SLOWED AND THE GROWTH SLOWED WITH IT, NETTING ZERO.
+    Three wild-type animal nulls with internal positive controls: sibonga1998 (growing female rats, complete
+    uterine antagonism in the same animals, no effect on tibial longitudinal growth rate), turner2000 (young
+    male rats, no effect on endochondral or intramembranous growth while orchiectomy in the same experiment
+    DID reduce growth), movrareskrtic2014 (wild-type mice, no effect on growth-plate height, bone mass,
+    uterus, fat or thymus).'
+  species: human
+  n: 30 children; three animal studies
+  source_ref: sims2012
+  value_unverified: false
+- parameter: THE FULVESTRANT NULL IS NOT A DELIVERY FAILURE - THE DRUG REACHES THE PLATE AND DOES NOTHING THERE
+  unit: qualitative (target engagement at the tissue)
+  value: 'movrareskrtic2014 found that ICI 182,780 DOES act at the growth plate once ERalpha AF-2 is
+    disabled - as a PRONOUNCED INVERSE AGONIST, ENHANCING longitudinal growth - and proposed that plate
+    ERalpha lacking AF-2 is constitutively active without ligand. SAME DRUG, SAME ROUTE, SAME TISSUE,
+    DIFFERENT RECEPTOR: the compound demonstrably reaches the growth plate and produces a large effect
+    there. Its wild-type null is therefore a MECHANISM result, not a pharmacokinetic one.
+    ⭐ THIS REMOVES THE EASIEST DEFENCE OF THE PROTAC. If fulvestrant had simply failed to penetrate
+    cartilage - plausible for an extremely lipophilic intramuscular depot - then an oral cationic degrader
+    would be expected to succeed where it failed, and that was the implicit argument in R353. The
+    AF-2-disabled arm refutes it: partial degradation reached the tissue and did not move length.'
+  species: mouse
+  n: wild-type and AF-2-disabled arms in the same study
+  source_ref: movrareskrtic2014
+  value_unverified: false
+- parameter: THE CATEGORY CORRECTION - A SERD IS A DEGRADER, SO THE RECEPTOR SWEEP DISMISSED THE WHOLE CLASS
+    ON A PROPERTY IT DOES NOT HAVE
+  unit: qualitative (drug class mechanism)
+  value: 'the_receptor_level_oestrogen_sweep closed the class with "every drug in this class - SERM, pure
+    antagonist, SERD, CERAN, SERCA - acts by removing or blocking LIGAND-DEPENDENT signalling. They are AF-2
+    agents aimed at a function that does not need AF-2." R338 already caught and corrected the half of that
+    sentence covering the PROTAC. THE OTHER HALF IS THE SAME ERROR: Selective Estrogen Receptor DEGRADERS
+    degrade the receptor - fulvestrant, elacestrant, giredestrant, camizestrant, imlunestrant, amcenestrant,
+    palazestrant. The sweep''s own text concedes it ("Fulvestrant is nominally a degrader") and then
+    resolves the tension the right way: "either it does not degrade plate ERalpha appreciably or what
+    survives is enough."
+    ⭐ SO THE REAL VARIABLE WAS NEVER SERD-VERSUS-PROTAC. IT IS DEGRADATION DEPTH, ON A CONTINUUM:
+    SERM (protein intact) -> SERD (partial, occupancy-driven, stoichiometric) -> PROTAC (catalytic, one
+    molecule cycles through many receptors) -> ERalpha-null human (100%). Vepdegestrant''s measured depth is
+    69% median after one 28-day cycle and up to 94% at ~5.5 months (R352, tumour biopsies). Fulvestrant''s
+    depth AT A GROWTH PLATE has never been measured, in any species. Neither has any other agent''s.'
+  species: human
+  n: class-level
+  source_ref: fda_veppanu_mdr_2026
+  value_unverified: false
+- parameter: ELACESTRANT - THE CLOSEST OBTAINABLE SUBSTITUTE, AND ON THIS FILE'S OWN PHYSICS IT SHOULD REACH
+    CARTILAGE AT LEAST AS WELL AS VEPDEGESTRANT
+  unit: Da; pKa; cLogP; percent oral bioavailability
+  value: 'Elacestrant (ORSERDU) - FDA-approved January 2023 for ER+/HER2-, ESR1-mutated advanced breast
+    cancer, ORAL 345 mg once daily. Approved three years longer than vepdegestrant, so materially more
+    sourceable. Molecular weight 458.6 Da. Reported as strongly basic (ethylamine on a tetrahydronaphthalene
+    core, pKa ~9.8) with cLogP ~6.8 and LogD ~3.6, and oral bioavailability ~10%.
+    ⭐ SMALLER AND MORE CATIONIC THAN VEPDEGESTRANT (723.9 Da, two weakly basic centres). R353''s entire
+    delivery argument was that a cationic small molecule partitions INTO cartilage by Donnan against a fixed
+    charge density of -0.19 to -0.35 M. That argument applies MORE strongly to elacestrant, not less.
+    ✗ BUT IT FAILS R315''s OTHER PUBLISHED DESIGN RULE. The cationic-carrier work states that evenly
+    distributed cationic charge plus MINIMAL HYDROPHOBICITY gives the deepest, longest cartilage
+    penetration. A cLogP near 7 is the opposite of minimal hydrophobicity, and a highly lipophilic base will
+    partition into membrane and protein rather than diffusing through a hydrated polyanionic matrix.
+    ✗ Zero growth-plate, chondrocyte or longitudinal-growth studies - the receptor sweep established that
+    for all six oral SERDs and it is still true. ✗ pH-dependent solubility, so acid reducers cut exposure -
+    the same PPI liability vepdegestrant has. ✗ And it is a member of the class whose one paediatric growth
+    trial returned zero.
+    ⚠ pKa, cLogP and LogD are taken from a REVIEW read at summary level, not from a primary
+    physicochemical determination - flagged unverified accordingly. Molecular weight and approval date are
+    not in doubt.'
+  species: human
+  n: not applicable - physicochemistry and regulatory status
+  source_ref: fda_veppanu_label_2026
+  value_unverified: true
+- parameter: THE ROUTES THAT ARE NOT AVAILABLE, CHECKED RATHER THAN ASSUMED
+  unit: qualitative (mechanism triage)
+  value: 'GIREDESTRANT and CAMIZESTRANT - not approved, and worse rather than better: basu2026 and a 2026
+    JACC Basic to Translational Science study show they cause bradycardia that is ON-TARGET and Esr1-mediated
+    (zebrafish esr1 mutants are protected; gper, esr2a and esr2b mutants are not; ER agonist co-treatment
+    rescues), while fulvestrant and amcenestrant do not.
+    BLOCKING THE LIGAND-INDEPENDENT ACTIVATION INPUT INSTEAD - R351''s mechanism is IGF-1 -> Erk1/2 and AKT
+    phosphorylating ERalpha Ser118 and Ser167. Blocking that means a MEK inhibitor or an AKT inhibitor. MEK
+    is the arm erdafitinib already occupies, and R313 showed cobimetinib works by REDUCING chondrocyte
+    hypertrophy, which is ~80% of longitudinal growth. AKT runs the wrong way outright - R324 established
+    AKT is the growth-POSITIVE direction and R326 lists capivasertib as a contraindication. NO ROUTE.
+    LOWERING ERalpha SYNTHESIS RATHER THAN RAISING ITS DEGRADATION - no selective agent exists in any species.
+    HSP90 INHIBITION (ERalpha is an HSP90 client, so client degradation would remove it) - no approved agent,
+    and it would degrade hundreds of unrelated clients. Not a targeted mimic.
+    A COMBINATION THAT SUMS - anastrozole plus fulvestrant is the only such combination with human randomised
+    data (mehta2012/mehta2019, superior PFS and OS in breast cancer), but at a growth plate the fulvestrant
+    component has a measured null to contribute.'
+  species: human
+  n: class-level triage
+  source_ref: basu2026
+  value_unverified: false
+localization:
+- Not a localisation result. The relevant localisation question - ERalpha PROTEIN in growth-plate
+  chondrocytes under a degrader - is precisely what has never been measured, and R354 established only that
+  the untreated receptor is present in 64% of resting and 64% of proliferative chondrocytes in 16 boys at
+  every Tanner stage.
+human_evidence: direct
+human_evidence_note: Both load-bearing results are human and randomised - sims2012 is a prospective
+  multicentre paediatric trial with predicted adult height as an outcome, and campone2025 is a phase 3
+  randomised head-to-head of the PROTAC against the SERD with 624 patients. The animal work is supporting.
+species_basis:
+- human
+- mouse
+translation_risk: low
+translation_risk_reason: 'The conclusion is a NEGATIVE and it rests on the most directly applicable evidence
+  available - a degrader of the same class given to growing children with a height endpoint, and a
+  randomised head-to-head in the receptor genotype the subject has. The translation risk runs the other way,
+  because the reasons to think vepdegestrant differs from fulvestrant at a growth plate are mechanistic and
+  unmeasured.'
+confidence: B
+claim_grades:
+- claim: Vepdegestrant's effect cannot be confidently mimicked by any obtainable agent or combination.
+  grade: B
+  basis: The only mechanistically coherent mimics are other SERDs; the most-tested member of that class was
+    given to 30 growing children for 12 months and predicted adult height did not move; and its null is
+    demonstrated not to be a delivery failure. Graded B rather than A because degradation depth differs
+    across the class and has never been measured in cartilage for any agent.
+- claim: In an ESR1 wild-type subject the PROTAC has no demonstrated advantage over fulvestrant.
+  grade: A
+  basis: campone2025, phase 3, randomised, n=624, prespecified dual primary analysis. The full-population
+    result is 3.8 vs 3.6 months, HR 0.83, P=0.07, and the authors state the benefit is confined to the
+    ESR1-mutation subgroup.
+- claim: Therefore the prior that vepdegestrant moves a wild-type growth plate is LOWER than R351 assumed.
+  grade: C
+  basis: An inference chaining a tumour PFS endpoint to a growth-plate endpoint across two different
+    tissues and two different questions. It is a real update and not a refutation - PFS measures whether a
+    cancer's ER can still drive proliferation, not how much receptor protein remains in cartilage.
+- claim: Elacestrant is the closest obtainable substitute and should reach cartilage at least as well on
+    charge grounds.
+  grade: D
+  basis: Approval status and molecular weight are certain; pKa and cLogP come from a review read at summary
+    level; the Donnan argument is a physical inference this file has never validated for any small molecule;
+    and the high cLogP fails the opposing design rule. No growth-plate data exists for it in any species.
+key_refs:
+- ref_id: campone2025
+  year: 2025
+  type: primary
+  role: VERITAC-2 - the only randomised head-to-head of a PROTAC against a SERD, significant only in the
+    ESR1-mutant subgroup and P=0.07 in the full population
+- ref_id: sims2012
+  year: 2012
+  type: primary
+  role: the mimic experiment already run in 30 growing children - bone age halved, predicted adult height
+    163.0 to 163.5 cm
+- ref_id: movrareskrtic2014
+  year: 2014
+  type: primary
+  role: the evidence that fulvestrant's plate null is mechanism and not delivery - it is a pronounced
+    inverse agonist at the same plate once AF-2 is disabled
+- ref_id: sibonga1998
+  year: 1998
+  type: primary
+  role: wild-type rat null with complete uterine antagonism in the same animals as the engagement control
+- ref_id: turner2000
+  year: 2000
+  type: primary
+  role: wild-type male rat null with orchiectomy as a positive control that fired
+- ref_id: basu2026
+  year: 2026
+  type: primary
+  role: giredestrant and camizestrant cause on-target Esr1-mediated bradycardia while fulvestrant does not -
+    the newer members of the class are not the safer ones
+- ref_id: fda_veppanu_mdr_2026
+  year: 2026
+  type: regulatory
+  role: vepdegestrant's measured degradation depth - 69% median after one cycle, 94% at ~5.5 months
+open_questions:
+- g_l12_357a
+contradicts:
+- LOWERS THE PRIOR ON R351 AND R338, WHICH ARE THIS FILE'S OWN PROPOSALS. R338 argued the PROTAC is
+  categorically different from every other antioestrogen because it removes the protein. That is true of
+  SERMs and false of SERDs, which also degrade - so the difference is depth, not category, and the only
+  human head-to-head shows no significant separation in the receptor genotype this subject has.
+- CORRECTS the_receptor_level_oestrogen_sweep A SECOND TIME. R338 corrected its filing of the PROTAC as an
+  AF-2 agent; the identical error covers the whole SERD class and was left standing.
+- REMOVES THE DELIVERY DEFENCE. R353's cationic-Donnan argument implied fulvestrant might have failed for
+  pharmacokinetic reasons that an oral cationic degrader would escape. movrareskrtic2014's AF-2-disabled arm
+  shows the drug reaches the plate.
+- DOES NOT KILL VEPDEGESTRANT. What survives is that degradation depth is a continuum, vepdegestrant sits
+  measurably deeper than any SERD, tumour PFS is not a growth-plate endpoint, and the ERalpha-null human
+  phenotype requires a depth no partial degrader has been shown to reach.
+last_verified: '2026-08-13'
