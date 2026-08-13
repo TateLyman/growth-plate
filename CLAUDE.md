@@ -1879,16 +1879,25 @@ is a property of the individual molecule.**
 ⭐ **And `porcu2015` supplies the point that makes this more than a curiosity: its hits are ALL GR agonists
 yet split into THREE efficacy groups — so HEDGEHOG DIRECTION IS NOT SET BY GR POTENCY.** Separable in principle.
 
-⛔⛔ **THREE — THEY CANNOT BE SYSTEMIC GROWTH AGENTS AND I AM NOT PROPOSING ONE.** GR activation suppresses
-longitudinal growth (grade A; inhaled steroids measurably cut attained height). **NEITHER SCREEN ABSTRACT
-REPORTS A SMO POTENCY**, so the SMO:GR ratio — the only thing that could make a systemic proposal viable — is
-unknown. **This is the minoxidil configuration of R335/R336: a real mechanism at a possibly unreachable
-concentration.** `g_l12_369a` is that one measurement, and step 1 is entirely in vitro.
+⭐⭐⭐⭐ **THREE — THE POTENCY, PULLED FROM THE FULL TEXT (PMC2889058), AND IT DEMOLISHES THE OBJECTION I HAD
+JUST WRITTEN.** My first draft said no potency was reported and called this the minoxidil configuration.
+**It is not. Gli-luciferase EC50: CLOBETASOL 0.2 nM · FLUTICASONE 0.3 nM · FLUOCINONIDE 0.3 nM · HALCINONIDE
+1.8 nM.** Direct Bodipy-cyclopamine displacement from Smo: **57 / 58 / 78 nM** (fluocinonide 1,000 nM).
+β-arrestin2 aggregation 99 nM–>5 µM.
+⭐ **AND THE CONTROL THAT MATTERS MOST: the response was reproduced in 5 µM MIFEPRISTONE (RU-486) and ran
+OPPOSITE to dexamethasone despite all four activating GR — the authors conclude it is INDEPENDENT OF
+GLUCOCORTICOID NUCLEAR RECEPTOR SIGNALLING.** The hedgehog arm is neither weak nor a GR epiphenomenon.
+⛔ **WHAT SURVIVES IS ONE OBJECTION, NOT TWO: these molecules still ACTIVATE GR, and GR activation suppresses
+longitudinal growth (grade A). GR-independence of the Hh arm is not absence of GR engagement.** Both arms run;
+only the NET effect at a plate decides it, and that has never been measured in any species. **The barrier has
+become an experiment** — `g_l12_369a`, step 1 entirely in vitro.
 
 ⭐⭐ **FOUR — WHERE IT DOES MATTER: THE LOCAL ROUTE.** `trompet2024` got **femur +3.63% at 6 months, still
 widening**, from a bead carrying **7 µg of SAG** in the distal femoral SOC. **SAG has zero human exposure;
 clobetasol and halcinonide are approved, potent, small and lipophilic. An approved SMO agonist is a far more
-obtainable bead payload than a research reagent**, and a local depot is exactly what minimises the systemic
+obtainable bead payload than a research reagent — and at a Gli EC50 of 0.2 nM a local depot needs vanishingly
+little drug next to 7 µg of SAG, which is exactly the configuration that gets SMO agonism while keeping
+systemic GR exposure subthreshold**, and a local depot is exactly what minimises the systemic
 GR exposure that disqualifies the class. ✗ **The tension: a locally released corticosteroid still activates
 GR locally, and local GR activation at a plate is growth-suppressive.** Unmeasured in any species.
 
