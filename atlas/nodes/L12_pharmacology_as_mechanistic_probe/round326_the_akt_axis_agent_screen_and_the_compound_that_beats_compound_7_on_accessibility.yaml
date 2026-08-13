@@ -89,12 +89,26 @@ summary: >-
   PHOSPHATASES HAVE A SHORTER KNOCKOUT MOUSE.**
   · Ptpn9 (round 325): decreased body size, embryonic growth retardation, abnormal long bone diaphysis
     morphology, >90% late embryonic lethality.
-  · **Ptpn1: MGI records DECREASED BODY LENGTH (MP:0001258) and DECREASED BONE MINERAL DENSITY
-    (MP:0000063), with abnormal postnatal growth/weight/body size.**
-  Two independent genes, one class, the same direction, both against the human heterozygote height data.
-  ⚠ A defence exists for each - Ptpn9's null is a secretory-vesicle catastrophe, Ptpn1's mice are lean with
-  reduced adiposity and the length effect may be secondary - and the atlas has learned to distrust exactly
-  this kind of defence. **Recorded as the single strongest argument against the class.**
+  · ⛔⛔ **CORRECTION MADE THE SAME DAY, BY TRACING THE MGI ROWS TO THEIR GENOTYPES. THIS NODE'S FIRST DRAFT
+    SAID "Ptpn1: MGI records DECREASED BODY LENGTH and DECREASED BMD". THAT IS THE WRONG GENOTYPE.**
+    `MP:0001258 decreased body length` belongs to **Ptpn1;Ptpn2 DOUBLE knockout with Nestin-Cre** - a
+    BRAIN-SPECIFIC deletion of BOTH phosphatases (PMID 22000926). `MP:0000063 decreased BMD` belongs to
+    **Ptpn1 with Nestin-Cre** - again BRAIN-SPECIFIC (PMID 16845389), acting through central leptin
+    signalling. Neither is a global or peripheral PTP1B loss, and a systemic small-molecule inhibitor is
+    neither of those. The only Ptpn1-alone term is `MP:0002089 abnormal postnatal growth/weight/body size`
+    from the original Elchebly knockout.
+    ⭐ **So the class-wide claim COLLAPSES TO PTPN9 ALONE, and trodusquemine is better placed than this node
+    first said.** CORR-309/320's shape - a phenotype filed under an arm it does not have - caught within
+    the round.
+  ✓ **AND THE ONE DIRECT SKELETAL RESULT FOR PTP1B LOSS IS POSITIVE FOR BONE** (`kim2022ptp1bbone`):
+    myeloid-specific PTP1B deficiency **INCREASES femoral trabecular bone volume** and attenuates
+    inflammation- and ovariectomy-induced bone loss by inhibiting osteoclastogenesis. Bone MASS, not length,
+    and a myeloid-restricted deletion - but it is the opposite direction from the one this node feared.
+  ⛔ **THE REAL LIABILITY IS SOMEWHERE ELSE ENTIRELY, AND THE ATLAS DID NOT HAVE IT: germline PTP1B
+    deficiency SHORTENS LIFESPAN AND CAUSES ACUTE LEUKAEMIA IN MICE** (`lesommer2018`). That is a
+    hard tumour signal on the target itself, not an inference from the PI3K-AKT overgrowth syndromes.
+  ⚠ Ptpn9's own null stands unchanged - decreased body size, embryonic growth retardation, abnormal long
+  bone diaphysis morphology - with the secretory-vesicle defence available and distrusted.
   ✗ PTPN1 is also NOT among kosmicki2026's 207 genes, so unlike PTPN9 it carries no human height number at
   all. **Trodusquemine wins on chemistry and accessibility and loses on target genetics.**
 
@@ -194,17 +208,32 @@ quantitative:
   uncertainty: NO BONE OR LENGTH ENDPOINT of any kind, in any species, at any dose. The exact maximum
     tolerated human dose is not recorded here. PTPN1 is not among kosmicki2026's 207 genes, so the target
     carries no human height number
-- parameter: BOTH DRUGGED RECEPTOR PHOSPHATASES HAVE A SHORTER KNOCKOUT MOUSE
-  value: 'Ptpn1 - MGI records DECREASED BODY LENGTH (MP:0001258), DECREASED BONE MINERAL DENSITY
-    (MP:0000063) and abnormal postnatal growth/weight/body size. Ptpn9 - decreased body size, embryonic
-    growth retardation, abnormal long bone diaphysis morphology, >90% late embryonic lethality'
+- parameter: THE SHORTER-KNOCKOUT CLAIM APPLIES TO PTPN9 ONLY - the Ptpn1 rows are BRAIN-SPECIFIC genotypes
+  value: 'CORRECTED within the round by tracing each MGI row to its genotype. MP:0001258 decreased body
+    length belongs to Ptpn1;Ptpn2 DOUBLE knockout with Nestin-Cre (brain-specific, PMID 22000926);
+    MP:0000063 decreased bone mineral density belongs to Ptpn1 with Nestin-Cre (brain-specific, PMID
+    16845389); the only Ptpn1-alone term is MP:0002089 abnormal postnatal growth/weight/body size from the
+    original knockout (PMID 10891488). Ptpn9 is unchanged - decreased body size, embryonic growth
+    retardation, abnormal long bone diaphysis morphology, >90% late embryonic lethality'
   unit: not applicable
-  conditions: MGI_PhenoGenoMP queried directly this round for both genes
+  conditions: MGI_PhenoGenoMP queried directly and each row traced to its allele string and source PMID
   species: mouse
   source_ref: wang2005meg2
-  uncertainty: Ptpn1-null mice are lean with markedly reduced fat mass, so the length effect may be
-    secondary to adiposity rather than a direct skeletal effect; both are germline nulls against a human
-    heterozygote comparison
+  uncertainty: A brain-specific deletion acting through central leptin signalling is not a model of systemic
+    small-molecule PTP1B inhibition. What remains for PTPN1 is an unspecified abnormal-growth term and no
+    dedicated skeletal characterisation of the global null in the published literature
+- parameter: THE TWO REAL PTP1B FINDINGS - one favourable for bone, one a hard tumour signal
+  value: 'Myeloid-specific PTP1B deficiency INCREASES femoral trabecular bone volume and attenuates
+    inflammation-induced and ovariectomy-induced bone loss by inhibiting osteoclastogenesis
+    (kim2022ptp1bbone). Germline PTP1B deficiency SHORTENS LIFESPAN and leads to development of ACUTE
+    LEUKAEMIA (lesommer2018)'
+  unit: not applicable
+  conditions: myeloid-restricted deletion for the bone result; germline deficiency for the leukaemia result
+  species: mouse
+  source_ref: lesommer2018
+  uncertainty: The bone result is MASS, not LENGTH, and is myeloid-restricted so it says nothing directly
+    about chondrocytes. The leukaemia result is germline and lifelong, which is not the same exposure as a
+    bounded course of an inhibitor - but it is a tumour signal on the target itself
 claim_grades:
 - claim: The PI3K-AKT-mTOR axis has almost no pharmacology in the growth-promoting direction.
   grade: A
@@ -229,10 +258,19 @@ claim_grades:
     an academic peptidomimetic with no supplier.
 - claim: Trodusquemine should be added to this stack.
   grade: X
-  basis: 'NO. Its target has no human height number - PTPN1 is not among kosmicki''s 207 - and Ptpn1-null
-    mice have DECREASED BODY LENGTH and decreased bone mineral density, which together with Ptpn9''s
-    smaller null makes two independent genes in one class pointing the wrong way. And no agent on this axis
-    has a bone-length endpoint in any species.'
+  basis: 'NO, but for different reasons than this node first gave. The Ptpn1 shorter-mouse claim was
+    WITHDRAWN within the round - those MGI rows are brain-specific Nestin-Cre genotypes, one of them a
+    Ptpn1;Ptpn2 double knockout - so the class-wide argument collapses to Ptpn9 alone. What stands against
+    it: PTPN1 has NO human height number (not among kosmicki''s 207); germline PTP1B deficiency shortens
+    lifespan and causes acute leukaemia in mice; and no agent on this axis has a bone-length endpoint in any
+    species. What stands FOR it: myeloid PTP1B loss increases trabecular bone, and the compound has human
+    phase 1 exposure with a 5-50 fold window.'
+- claim: Both drugged receptor phosphatases have a shorter knockout mouse.
+  grade: X
+  basis: 'NO - THIS NODE SAID SO IN ITS FIRST DRAFT AND IT IS WRONG. Tracing each MGI row to its allele
+    string shows the Ptpn1 body-length term belongs to a BRAIN-SPECIFIC Ptpn1;Ptpn2 double knockout and the
+    BMD term to a brain-specific Ptpn1 deletion. Only Ptpn9 has a shorter null. CORR-309/320''s shape,
+    caught within the round.'
 - claim: Metformin's period argument is unaffected by this axis.
   grade: X
   basis: 'NO, AND THE TWO ROUNDS HAVE NEVER BEEN READ TOGETHER. Metformin activates AMPK, which inhibits
@@ -275,6 +313,20 @@ key_refs:
   type: primary
   one_line_finding: The Ptpn9 null is smaller with abnormal long bones; MGI records the same direction for
     Ptpn1, making two independent receptor phosphatases in one class with shorter knockouts.
+- ref_id: kim2022ptp1bbone
+  pmid: '34812548'
+  first_author: Kim HJ
+  year: 2022
+  type: primary
+  one_line_finding: Myeloid-specific PTP1B deficiency increases femoral trabecular bone volume and
+    attenuates bone loss - the only direct skeletal result for PTP1B loss, and it is bone-positive.
+- ref_id: lesommer2018
+  pmid: '29122767'
+  first_author: Le Sommer S
+  year: 2018
+  type: primary
+  one_line_finding: Germline PTP1B deficiency shortens lifespan and causes acute leukaemia in mice - the
+    real liability on this target, which this atlas did not previously hold.
 - ref_id: alvarezgarcia2007
   pmid: '17370095'
   first_author: Alvarez-Garcia O

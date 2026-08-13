@@ -238,6 +238,14 @@ Everything else is a gap to record and, where cheap, to fill.
    only — **vertebrae in hand, no longitudinal dimension recorded** — and no TGF-β-lowering agent has ever
    been given to a NORMAL growing animal with a length endpoint.
 
+33. **Reading an MGI phenotype term without reading its ALLELE STRING.** CORR-341 — R326 wrote "Ptpn1: MGI
+   records DECREASED BODY LENGTH and decreased BMD" and built a class-wide argument on it. **Both rows are
+   Nestin-Cre BRAIN-SPECIFIC genotypes, and the body-length one is a Ptpn1;Ptpn2 DOUBLE knockout.** The
+   gene symbol in an MGI row is not the experiment; the allele string is. **Same shape as CORR-309/320 —
+   a phenotype filed under an arm it does not have — and the fix is the same: `cut -f1` the genotype column
+   and `cut -f5` the PMID before quoting any MP term.** Caught within the round, which is the only reason
+   it did not propagate.
+
 ## PRE-ROUND CHECKLIST — answer all five in the node or don't write it
 
 0. **Before promoting any compound: name the term of the height identity it moves, then ask which arm
@@ -1638,11 +1646,19 @@ natural aminosterol. **COMPLETED PHASE 1 AND 1b IN HUMANS, well tolerated**; **a
 MW 680–1241 charge problem); **obtainable**. PTPN1 is **34.6 CPM in 47.8% of cells** — more than PTPN9's
 25.3/24.0%. It beats compound 7 on human exposure, drug-likeness, therapeutic window and supply.
 
-**⛔ AND THE PROBLEM IS NOW CLASS-WIDE, NOT GENE-SPECIFIC. BOTH DRUGGED RECEPTOR PHOSPHATASES HAVE A
-SHORTER KNOCKOUT MOUSE.** Ptpn9: decreased body size, embryonic growth retardation, abnormal long bone
-diaphysis, >90% embryonic lethality. **Ptpn1: MGI `MP:0001258 DECREASED BODY LENGTH` + `MP:0000063
-decreased BMD`.** Two independent genes, one class, same direction, both against the human het data.
-✗ And **PTPN1 is not among kosmicki's 207** — trodusquemine wins on chemistry and loses on target genetics.
+**⛔→✓ CORRECTED WITHIN THE ROUND — THE CLASS-WIDE CLAIM COLLAPSES TO PTPN9 ALONE (CORR-341).** R326's
+first draft said "Ptpn1: MGI `MP:0001258 DECREASED BODY LENGTH` + `MP:0000063 decreased BMD`." **Wrong
+genotype.** Tracing each MGI row to its allele string: body length belongs to **Ptpn1;Ptpn2 DOUBLE knockout
+with Nestin-Cre** — BRAIN-SPECIFIC, both phosphatases (PMID 22000926); BMD belongs to **Ptpn1 with
+Nestin-Cre** — brain-specific, via central leptin (PMID 16845389). Neither models a systemic small-molecule
+inhibitor. The only Ptpn1-alone term is an unspecified `MP:0002089 abnormal postnatal growth/weight/body
+size`. **Only Ptpn9 has a shorter null.**
+✓ **AND THE ONE DIRECT SKELETAL RESULT FOR PTP1B LOSS IS BONE-POSITIVE:** myeloid-specific PTP1B deficiency
+**INCREASES femoral trabecular bone volume** and blocks inflammation-/OVX-induced bone loss
+(`kim2022ptp1bbone`). Mass, not length; myeloid-restricted — but the opposite direction from the fear.
+⛔ **THE REAL LIABILITY IS ELSEWHERE AND THE ATLAS DID NOT HAVE IT: germline PTP1B deficiency SHORTENS
+LIFESPAN AND CAUSES ACUTE LEUKAEMIA in mice** (`lesommer2018`). A tumour signal on the target itself.
+✗ **PTPN1 is not among kosmicki's 207** — trodusquemine wins on chemistry and loses on target genetics.
 ✗ **No agent on this axis has a bone-LENGTH endpoint in any species.**
 
 **⚠ THE CONTRAINDICATION LIST (the other half of the screen):** capivasertib · alpelisib, copanlisib,
