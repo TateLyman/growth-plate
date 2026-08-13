@@ -1786,6 +1786,80 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯 R352 — **THE DOSE IS A PLATEAU, NOT AN OPTIMUM. THE ANSWER IS LOWER AND LONGER: 100 mg WITH A
+## CONSISTENT FATTY MEAL.** Label + 298-page multidiscipline review pulled from Drugs@FDA and read in full.
+
+⭐ **ONE — THE DEGRADATION PLATEAU STARTS AT OR BELOW 30 mg.** ER protein in tumour biopsies fell a **median
+69% after one 28-day cycle ACROSS DAILY DOSES OF 30 mg TO 500 mg** — reported as a **single pooled median
+over a 16.7× range**, with no dose-dependence stated. Independently: **doses ≥60 mg already exceeded the
+steady-state exposure associated with tumour regression preclinically.** Escalation reached 700 mg with no
+further exposure increase.
+
+⭐ **TWO — AND 200 mg WAS NOT CHOSEN FOR POTENCY.** In the review's own words, dose selection rested on **"no
+notable differences observed with higher vepdegestrant doses, including clinical efficacy, ER degradation, or
+safety (except for an apparent higher risk for potential QTc at the 500 mg QD dose)."** The comparison that
+produced 200 mg was **200 vs 500**; the doses BELOW 200 were on the same plateau and simply were not carried
+forward. **Exposure–response was NOT significant for PFS, and NOT significant across 30–500 mg for grade 3+
+AEs, arthralgia, fatigue, nausea, anaemia, transaminases or neutropenia.** Flat for benefit, flat for harm.
+
+⭐⭐ **THREE — WHAT DEEPENS DEGRADATION IS TIME, NOT DOSE.** At a **constant 200 mg**: **−76% at 14 days →
+−94% at ~5.5 months.** **THE VARIABLE TO MAXIMISE IS DURATION.** The right dose is the one he is still taking
+in six months.
+
+⛔ **FOUR — AND FOR A PROTAC, MORE CAN BE WORSE.** FDA created a new Established Pharmacologic Class
+(heterobifunctional protein degrader) specifically so prescribers recognise **off-target degradation,
+bystander degradation, and THE HOOK EFFECT — "reduced activity at high concentrations due to formation of
+binary rather than ternary complexes."** A degrader needs target + E3 ligase in ONE complex; saturating
+either site separately breaks it. **The dose–response is bell-shaped, so the oncology reflex of pushing
+toward the MTD is the wrong reflex.**
+
+🎯 **FIVE — THE DERIVED OPTIMUM: 100 mg ONCE DAILY WITH FOOD** (an approved strength and the approved
+dose-reduction step), **not 200 mg.** Plateau reaches ≤30 mg · threshold met at 60 mg · E-R flat both ways ·
+depth governed by time · hook effect above the plateau. **Halving the dose halves the QTc-driving
+concentration, the off-target/bystander burden, and the perpetrator effect on the rest of the stack — and by
+every measure in the application costs nothing in degradation.**
+⭐ **SIX — THE MEAL IS A 3× DOSE LEVER NOBODY TREATS AS ONE.** High-fat meal → **AUC 2.9×, Cmax 3.2×.** So
+**inconsistent meals are a three-fold exposure swing** — for a QTc-prolonging drug taken for months, *taking
+it at the same time with a similar fat load matters more than the milligrams.*
+
+⛔ **SEVEN — THREE NEW OBJECTIONS R351 DID NOT HAVE:**
+· ⛔⛔ **VEPDEGESTRANT IS A CYP3A INHIBITOR *AND* A P-gp INHIBITOR — midazolam AUC ↑1.7×, dabigatran AUC
+  ↑2.0×.** R351 recorded the reverse direction as untested; **it is measured and it runs against us.**
+  Erdafitinib is ~20% CYP3A4-cleared **and** a P-gp substrate → vepdegestrant should RAISE erdafitinib
+  exposure by both routes. **This atlas holds erdafitinib's paediatric record: five of five permanently
+  discontinued, three requiring surgery.** ⭐ **The single biggest practical objection — and a direct argument
+  for 100 mg.** ⚠ Magnitude unmodelled and likely modest (only ~a fifth of clearance is CYP3A4).
+· ⚠ **A THIRD OF CIRCULATING DRUG-RELATED MATERIAL IS A PURE ANTAGONIST: the metabolite ARV-473 retains ER
+  ANTAGONIST activity but has NO ER-DEGRADING activity, at 34% of parent exposure** — a fulvestrant-like
+  species, the exact class R338 showed is **null at the plate**, competing for the same receptor.
+· ⚠ **QTc +12 ms (upper CI 15 ms) at 200 mg**, higher at 500 mg; the pivotal trial **excluded** concurrent
+  QT-prolonging drugs.
+
+✓ **EIGHT — ONE GENUINELY FAVOURABLE FINDING ONLY THE REVIEW SHOWS: THE TOXICITY IS FEMALE-REPRODUCTIVE.**
+Ovary, uterus, cervix, vagina, mammary — **female LOAEL = the LOWEST dose tested** in the 6-month rat
+(30 mg/kg/d) and both dog studies (15 and 10 mg/kg/d). **In the same studies the MALE NOAEL was the HIGHEST
+DOSE TESTED — 300 mg/kg/d rat, 90 mg/kg/d dog.** In a male subject the principal toxicity of the molecule is
+largely not applicable. ⚠ Recorded unresolved: the executive summary says male reproductive changes in dogs
+did NOT recover after 4 weeks, which sits against those same tables. **The discrepancy is in the document.**
+
+⚠ **NINE — THE COSTS SCALE WITH DURATION, WHICH IS AWKWARD SINCE DURATION IS WHAT WE WANT.** Emerging only at
+≥3 months: adrenal zona fasciculata atrophy, **PITUITARY weight decrease (rat) and hypertrophy (dog)** —
+worth naming in a subject on GH — kidney/liver weight changes, bone-marrow changes. **Recovery was assessed
+only in the 28-day studies.**
+
+⛔ **TEN — THE DELIVERY QUESTION GETS SHARPER, NOT SOFTER.** Rat whole-body autoradiography: highest in liver,
+ovaries, kidneys, thyroid, spleen, melanin-containing tissues. **BONE AND CARTILAGE ARE NOT NAMED.** Protein
+binding **>99%**. Against that, Vd **764 L**. **R315's avascular-cartilage wall has never been tested for this
+molecule, and the plate is the tissue the whole proposal depends on reaching.** Gap `g_l12_352a`.
+⛔ **AND NO JUVENILE TOXICITY STUDY EXISTS — "growth plate", "physis" and "epiphysis" appear NOWHERE in 298
+pages.** Under R302 that is a GAP, not reassurance.
+
+⚠ **ELEVEN — A NOVEL PREDICTED INTERACTION BETWEEN THE TWO PROPOSED ADDS.** Vepdegestrant is metabolised
+**primarily by DIRECT SULFATION via multiple SULT isoforms.** The other proposed addition is **oral sodium
+sulfate**, whose whole rationale is raising the pool that feeds PAPS, SULT's donor. **Supplying sulfate could
+INCREASE vepdegestrant clearance**; paracetamol (−24% serum sulfate per 1.5 g) would do the opposite. Grade E,
+never studied — **but it means the two additions should not be started on the same day.**
+
 ## 🎯🎯🎯🎯 R351 — **THE ADDITION. THE GATE WAS ALREADY PASSED AND NOBODY APPLIED IT.**
 ## The operator's oestradiol is **3.3–6 pmol/L**. R339 set the rule and then the number arrived and sat unused.
 
