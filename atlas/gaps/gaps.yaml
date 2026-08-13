@@ -16829,3 +16829,69 @@ gaps:
   discriminating_experiment: Before any chemistry, run the biology - delete Nrk in a growing mouse and
     measure terminal femur, tibia and vertebral length, with growth-plate phospho-AKT S473 and phospho-PTEN
     S380 as the pharmacodynamic readout. If there is no length effect, the modality question never arises.
+- gap_id: g_l12_does_a_ptp_meg2_inhibitor_change_bone_length_in_a_normal_growing_animal
+  type: known_unknown
+  layer: L12
+  tractability: 5
+  question: Does a selective PTP-MEG2 inhibitor change bone length in a normal growing animal?
+  why_it_matters: >-
+    This is the best-specified unrun experiment in the atlas, because for once every parameter is already
+    published. zhang2012meg2's compound 7 is Ki 34 nM against PTP-MEG2, >18-fold selective over PTP1B and
+    TC-PTP, inactive at 10 microM against a panel of other PTPs, cell permeable, and effective in mice at 5
+    mg/kg intraperitoneally twice daily for 14 days with Cmax 4.5 microM and t1/2 1.8 h. Its measured in
+    vivo effect is raising insulin receptor and Akt phosphorylation 2-3 fold - and round 324 established
+    that AKT is the growth-positive direction for this tissue. Nobody has given it to a growing animal.
+  what_is_known: >-
+    Human PTPN9 pLoF is +3.56 cm at P=4.16e-10 across 153 carriers, in a gene with no OMIM entry and no HPO
+    annotation. PTPN9 is present in the postnatal human growth plate at 25.3 CPM and its substrates - STAT3,
+    IGF1R, INSR, STAT5B - are abundant there. Against that: the homozygous mouse null has DECREASED BODY
+    SIZE, embryonic growth retardation and abnormal long bone diaphysis morphology with >90% late embryonic
+    lethality; the human deleterious-missense class is null while a weaker class is positive; and Ptpn9
+    knockout does nothing to chondrocyte maturation timing in a screen where it IS transcribed.
+  what_is_missing: A caliper. No new chemistry, no new model and no dose-finding are required.
+  nearest_evidence:
+  - zhang2012meg2
+  - wang2005meg2
+  - kosmicki2026
+  nearest_evidence_note: The nearest thing to an answer is the mouse null, which is smaller - but that is a
+    homozygous embryonic vesicle-biogenesis failure, not a titrated adult perturbation.
+  tractability_note: >-
+    The limiting factor is supply, not design. Compound 7 is an academic peptidomimetic with no commercial
+    source; obtaining or resynthesising it is the whole cost of the experiment.
+  discriminating_experiment: >-
+    Give compound 7 at the published 5 mg/kg intraperitoneally twice daily to WILD-TYPE mice from weaning to
+    skeletal maturity and measure TERMINAL femur, tibia and vertebral body length, with growth-plate
+    phospho-IGF1R and phospho-AKT S473 as the pharmacodynamic readout and growth-plate zone heights to
+    separate a rate effect from CORR-292's jam. A null here closes the target; a positive is the first
+    length endpoint on the AKT axis in any species.
+- gap_id: g_l12_is_the_growth_plate_gh_igf1_limitation_receptor_proximal
+  type: known_unknown
+  layer: L12
+  tractability: 3
+  question: When GH stops adding attained height after mid-puberty, is the limitation at the receptor - GHR
+    or IGF1R autophosphorylation - or downstream of it?
+  why_it_matters: >-
+    It decides whether anything acting on receptor-proximal phosphorylation is an ADDITION to this stack or a
+    SUBSTITUTION for its GH limb. CLAUDE.md prices GH after mid-puberty at approximately zero attained
+    height with SOCS2 as the mechanism, and SOCS2 acts at GHR/JAK2. A phosphatase inhibitor such as a
+    PTP-MEG2 or PTP1B agent acts on receptor autophosphorylation and on STAT5 itself, DOWNSTREAM of that
+    brake - which is a different claim from giving more GH or more IGF-1, and is the only argument that
+    rescues that whole class from CORR-297.
+  what_is_known: >-
+    SOCS2 is the stated mechanism of GH's declining efficacy; serum IGF-1 does not predict growth potential
+    (four genotypes, two in the wrong direction); GHR, IGF1R, INSR, IRS1, STAT5B and SOCS2 are all present
+    in the postnatal human growth plate; and IGF1R, INSR, STAT3, STAT5B and PTPN11 loss all cause human
+    short stature.
+  what_is_missing: A measurement of phospho-IGF1R, phospho-STAT5B and SOCS2 protein in growth plate across
+    pubertal stage in any species.
+  nearest_evidence:
+  - kosmicki2026
+  - gse288028
+  nearest_evidence_note: GSE288028 gives transcript abundance for every node of the axis in 14 postnatal
+    human growth plates but no phospho-state, which is the quantity the question is about.
+  tractability_note: Answerable in archived human growth-plate tissue by phospho-specific staining, or in a
+    pubertal rodent series.
+  discriminating_experiment: Phospho-IGF1R Y1165/1166, phospho-STAT5B and SOCS2 immunostaining across a
+    pubertal stage series of growth plates. If receptor phosphorylation falls while ligand is unchanged, the
+    limitation is receptor-proximal and phosphatase inhibition is an addition; if it holds while output
+    falls, the limitation is downstream and the whole class is a substitution.

@@ -1609,6 +1609,60 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐ R325 — **PTPN9 / PTP-MEG2: THE BEST CHEMICAL MATTER IN THIS ATLAS, ON THREE HARD PROBLEMS.**
+## The operator was right about the compound. Do not add the target.
+
+PTPN9 entered in R300 as a name in a list (+3.56) and had **zero** node/gap/edge coverage until now.
+
+**✓ THE CHEMISTRY IS REAL AND IT IS THE BEST HERE BY A WIDE MARGIN.** `zhang2012meg2` (JACS 2012),
+**compound 7**: PTP-MEG2 **Ki 34 nM**, **>18× over PTP1B (630 nM) and TC-PTP (600 nM)**, **no inhibition at
+10 µM** against PTP-MEG1/SHP1/SHP2/LAR/CD45; **CELL PERMEABLE** despite the difluoromethylphosphonate
+(IR Y1162/1163 +50–100% at 50–100 nM in 4 cell types; Akt/GSK-3β/Foxo1 up 1.5–4.5×); **IN VIVO in C57BL/6J
+DIO mice, 5 mg/kg IP BID × 14 d** — insulin tolerance +14%, glucose +21%, IR phosphorylation 2–3× in liver,
+muscle, fat, **Akt +40–60%**; **PK measured — Cmax 4.5 µM at 20 mg/kg IP, t½ 1.8 h, 30% oral F.**
+ChEMBL: **97 activities, 95 molecules**, best IC50 75 nM. Pharos: **Tchem**. (NRK = Tdark, 0 ligands.)
+⚠ Caveats: the potent end is F2Pmp peptidomimetic and heavy (MW 680–1241), the drug-like end is µM,
+compound 7 is an **academic tool with no supplier**, and **PTPN1 has 803 ligands and ZERO drugs** — 30 years
+of PTP chemistry has produced no approved active-site inhibitor.
+
+**⛔ PROBLEM 1 — THE MOUSE NULL IS SMALLER.** `wang2005meg2`: Meg2−/− — haemorrhage, **neural tube defects
+(exencephaly, meningomyeloceles)**, cerebral infarction, **abnormal bone development**, **>90% late
+embryonic lethality**. MGI Ptpn9^tm1Dny: **DECREASED BODY SIZE · EMBRYONIC GROWTH RETARDATION · ABNORMAL
+LONG BONE DIAPHYSIS MORPHOLOGY.** R305's cross-species rule exists for exactly this (it killed DPP9).
+⚠ The mechanism is **secretory vesicle genesis** (MEG2 dephosphorylates NSF; KO lymphocytes have almost no
+mature secretory vesicles) — so the null is a housekeeping catastrophe, which is a real CORR-325 defence of
+the human het number and also the kind of defence this file has learned to distrust. **IMPC: zero Ptpn9 rows.**
+
+**⛔ PROBLEM 2 — THE ALLELIC SERIES INVERTS IN THE MIDDLE.** pLoF **+3.56 cm P=4.16e-10 (153 carriers)**,
+stable across bins. But **DELETERIOUS missense is NULL — +0.18, P=0.30** — while **POSSIBLY-deleterious
+missense is +0.87, P=9.0e-08**, and pLoF+delmis is only +0.48. **Compare NRK: 35 rows, monotone throughout.**
+PTPN9's signal rests on ~150 pLoF carriers and does not replicate internally.
+
+**⛔ PROBLEM 3 — STEP 0 LANDS ON THE GH/IGF-1 ARM.** PTPN9's substrates are **INSR · IGF1R Y1165/1166 ·
+STAT3 · STAT5 · EGFR/ErbB2 · NSF**, and compound 7's own in vivo mechanism is raising **IR and Akt**
+phosphorylation. The GH limb is GHR→JAK2→**STAT5B**→IGF-1 acting through **IGF1R** — already in the stack,
+already priced at **≈0 attained height** (SOCS2). CORR-297.
+⚠ **The fair counter, stated because it isn't silly:** SOCS2 brakes at GHR/JAK2; a phosphatase acts on
+receptor autophosphorylation and on STAT5 itself, **downstream of that brake**. Whether the plate's GH/IGF-1
+limitation is receptor-proximal has never been measured → new gap
+`g_l12_is_the_growth_plate_gh_igf1_limitation_receptor_proximal`.
+
+**LOCAL DATA (run first).** ✓ CORR-327 passes weakly — PTPN9 **25.3 CPM, 24.0% of cells**, the LEAST
+abundant PTP tested (PTPN14 148.9/79.8%, PTPN12 87.5, PTPN11 83.1, PTPN2 77.7, PTPN1 34.6) — while its
+**substrates are the most abundant: STAT3 181.5 CPM in 84.7% of cells, IGF1R 80.4, INSR 79.7.**
+✓ Direction coherent: IGF1R, INSR, STAT3, STAT5B, PTPN11 loss are **all** HPO short stature.
+⛔ **AND AN INFORMATIVE NULL, unlike NRK's:** Ptpn9 IS transcribed in GSE225878's screened cells (**36–45
+CPM**, vs Nrk 0–1.4), and its knockout moves maturation timing by **−0.264 / −0.210 at −log10p ≈1.0.**
+**PTPN9 is not a PERIOD lever.** ⚠ Flat on the GSE114919 growth-capacity axis (sign flips between zones).
+
+**⭐ THE ONE NEW THING, AND IT LINKS TO R324.** Compound 7's measured in vivo effect is **raising Akt** — and
+R324 established AKT is the growth-POSITIVE direction (PTEN/AKT1/PIK3CA overgrowth; MTOR −3.65 cm;
+rapamycin halves rat growth rate). **PTPN9 and NRK converge on AKT from two different upstream nodes, and
+PTPN9 is the one with a molecule already shown to push that axis in a living mammal.**
+→ **VERDICT: do not add it. What the round yields is the best-specified unrun experiment in the file** —
+compound, dose, route, schedule and PD readout all published. Gap:
+`g_l12_does_a_ptp_meg2_inhibitor_change_bone_length_in_a_normal_growing_animal`.
+
 ## ⭐⭐⭐⭐ R324 — **NRK TAKEN ALL THE WAY DOWN.** Best genetics in the file · a real mechanism · the mouse
 ## exists · and **THE MODALITY IS WRONG.**
 
