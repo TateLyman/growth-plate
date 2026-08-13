@@ -31,6 +31,10 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 - **SERMs / tamoxifen.** Permanent growth arrest by apoptosis of **resting-zone** chondrocytes, no catch-up. — R274 (chagin2007)
 - **ERβ axial lever.** Female mice only. — R274 (chagin2004)
 - **Senolytics.** Growth-plate senescence is not p16/SASP; nothing to clear. — R266
+- **CCN2/CTGF elevation or blockade** (pamrevlumab). Not in the 207, no IMPC length row, and the null is
+  a discharge failure. — R341
+- **The imprinted growth network as a lever at BA16** (DLK1/RTL1/MKRN3). Real and hypothalamic, but it sets
+  puberty ONSET, which is spent; GnRHa already closed in R329. — R341
 - **Hippo / YAP-TAZ-TEAD inhibition** (verteporfin, VT3989, IK-930, IAG933). Cartilage-specific Yap/Taz
   double KO gives NORMAL skeletal growth; forcing YAP gives chondrodysplasia. Downside arm, no upside
   arm. — R340
@@ -1748,6 +1752,54 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⭐⭐⭐ R341 — **THE STEP-0 KILL ON STC2 WAS THE WRONG COMPARTMENT.** Best-powered secreted target in
+## the file, REOPENED. Plus three concept-scale layers run: CCN2 closed, imprinted network closed, m6A opened.
+
+⛔ **CCN2/CTGF CLOSES, FAST.** R340 flagged it as the most abundant unexamined transcript (1,249 CPM in
+99.9% of cells, above ACAN). Three free checks: **not in the 207** at any variant class · **no IMPC Ccn2
+length row at all** (paralogues null: Ccn3 −0.432 P=0.55; Ccn5 −0.610/−0.813/−0.511 all ns) · and the
+Ctgf-null phenotype is an **EXPANDED hypertrophic zone with impaired angiogenesis = DISCHARGE FAILURE**,
+failure mode #1. **PAMREVLUMAB (clinical-stage anti-CCN2) points the WRONG WAY.** Abundant as a matricellular
+matrix/angiogenesis coordinator, not a rate-limiter.
+
+⛔ **THE IMPRINTED GROWTH NETWORK — real, coherent, and a PREVENTION lever, not a rescue lever.** The atlas
+had **0 nodes** for "imprinted gene network". Against the burden table: **THREE imprinted genes shortening,
+ALL effectively ABSENT from the plate** — **DLK1 −6.79 cm** (P=5.0e-09, 37 carriers) **0/14** · **RTL1 −2.46**
+(P=3.5e-09) 1/14 · **MKRN3 −2.01** (P=6.5e-14, 691) 4/14. **DLK1 and MKRN3 loss both cause CENTRAL PRECOCIOUS
+PUBERTY in humans** → the mechanism is hypothalamic TIMING = a **CORR-327 INVERSION** (absence from the plate
+isn't a kill; the lever acts elsewhere). ⛔ **But it sets WHEN puberty starts, and at BA16 that is spent** —
+and the pharmacological equivalent (GnRHa) was closed in R329 on adult height (0.48 vs 0.81 SDS, P<.01).
+
+⚠ **m6A RNA METHYLATION — a genuine blind spot, now localised. GAP, not a lever.** Prior coverage: METTL3
+**0 nodes/0 refs**, METTL14 0/0, ALKBH5 0/0, YTHDF 0/0, WTAP 0/0, N6-methyladenosine 0/0, STM2457 0/0.
+**The whole apparatus is 12/14 in the postnatal human plate** — HNRNPA2B1 557, WTAP 127, YTHDC1 101, ZC3H13
+88, YTHDF3 69, ALKBH5 53, YTHDF2 52, IGF2BP2 47, FTO 43, VIRMA 35, METTL16 29, YTHDF1 27, METTL14 20,
+METTL3 13.6. ✗ Only **IGF2BP2** reaches the 207 (−2.89 cm, P=3.4e-31, 800 carriers); IMPC effectively empty
+(Ythdc2 −1.930 P=0.084). ✗ Strongest primary is DEVELOPMENTAL — `kimura2025` limb-progenitor Mettl14 KO
+disrupts **anlagen formation in limb buds** via GDF5→RUNX→collagen (CORR-299). Direction = RAISE m6A; no
+METTL3 activator exists. **Localisation done so the next round doesn't assume it.**
+
+⭐⭐⭐ **AND THE RESULT: R328 KILLED STC2 ON A COMPARTMENT CONFLATION THIS ATLAS HAD ALREADY CORRECTED.**
+**STC2 +1.37 cm at P=4.51e-34 across 3,927 carriers** — among the best-powered rows in the whole table —
+**SECRETED**, direction is to **BLOCK**, architecture identical to **SOST/romosozumab**, which R314 identified
+as the one already solved. R328's verdict: *"DO NOT ADD IT — Step 0 lands on the GH/IGF-1 arm."*
+⛔ **WRONG COMPARTMENT. R326 had already split that arm** (`yakar2016`: circulating IGF-1 → **RADIAL**; local
+IGF-1 → **LONGITUDINAL**) and used the split to disqualify **mecasermin** for supplying the circulating half.
+⭐ **Run the receiver test on the two halves and they separate ANATOMICALLY in human tissue:**
+**PRESENT — PAPPA 88.5 CPM (53% of cells) · IGFBP4 34.5 · IGF2 15.0 · IGF1R 80.4 · STC2 18.1 (up to 59.8%
+of cells)** — the complete LOCAL liberation module.
+**ABSENT — IGFALS 0/14, 0.0 CPM, 0.1% of cells.** *The plate cannot see the GH-driven circulating ternary
+pool at all.* Blocking STC2 disinhibits PAPP-A acting **PERICELLULARLY on IGFBP-4 in the matrix**. **That is
+not the arm GH occupies. STEP 0 PASSES.**
+✓ **And for once the cancer literature runs WITH us:** unlike HHIP (a tumour suppressor), **STC2 is a tumour
+PROMOTER** — blocking it is not a two-sided bet.
+✗ **Still no molecule: NO anti-STC2 therapeutic antibody exists in any species**, and PAPP-A antibodies are
+being built in the OPPOSITE direction.
+⭐ **THE CHEAPEST VALIDATION IN THE FILE ALREADY EXISTS AND R328 NAMED IT WITHOUT ACTING: the Stc2-null mouse
+is BRED.** `lionikas2023` n=21 vs 15, **+10% muscle mass** · `wang2025stc2a` zebrafish null, **enlarged adult
+body size** · `bai2025` A60P, **+11% weight**. **Body size, muscle and weight in three species — and NOT ONE
+put a caliper on a femur, tibia or vertebra.** Order the mouse, measure the bone.
 
 ## ⛔⛔ R340 — **THE HIPPO/YAP-TEAD AXIS RUN TO THE END. R317's deferred follow-up, executed. IT CLOSES.**
 ## Present, active, correctly signed by two genetic routes — and it has a DOWNSIDE ARM WITH NO UPSIDE ARM.
