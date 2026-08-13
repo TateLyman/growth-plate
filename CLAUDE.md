@@ -1786,6 +1786,52 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯🎯🎯🎯 R354 — **THE TARGET PROTEIN IS IN 64% OF RESTING AND 64% OF PROLIFERATIVE CHONDROCYTES,
+## IN 16 BOYS, AND IT DOES NOT DECLINE ACROSS TANNER 1→5.** R353's ESR1 objection is WITHDRAWN.
+
+⭐⭐⭐ **THE MEASUREMENT — `nilsson2003`.** Proximal tibial growth plate biopsies from epiphyseal surgery in
+**16 BOYS** and 8 girls, **all Tanner stages 1–5**, immunohistochemistry with **image-analysis counting BY
+ZONE**:
+· **ERα-POSITIVE CHONDROCYTES: RESTING 64 ± 2% · PROLIFERATIVE 64 ± 2% · HYPERTROPHIC 38 ± 3%**
+· ERβ 63/66/53% · AR resting 65%, hypertrophic 58%, proliferative 41% · **no sex difference**
+· ⭐ **AND THE LINE THAT DECIDES IT FOR A SUBJECT AT THE END OF PUBERTY: for ERα the percentage of
+  receptor-positive cells was SIMILAR AT ALL TANNER STAGES. It does NOT decline. It is fully present at
+  Tanner 5.** Only ERβ fell slightly, in the proliferative zone.
+
+⭐ **AND THE ZONE PATTERN IS BETTER THAN MERE PRESENCE.** ERα is **highest in RESTING and PROLIFERATIVE
+(64% each) and LOWEST in HYPERTROPHIC (38%)** — i.e. concentrated in **the stem-cell pool and the engine**,
+the two compartments that set the PERIOD, which is the term this whole proposal targets. It matches
+`brjesson2010` exactly: cartilage-specific ERα deletion gave no early phenotype but continued growth past
+4 months and **increased femur length at 1 year** — a pool-and-period effect, not a rate effect.
+
+⛔ **SO R353's ESR1 OBJECTION IS WITHDRAWN, AND THE REASON IS GENERALISABLE (CORR-351).**
+**A PURE-vs-CONTAMINATED RATIO MEASURES *ENRICHMENT*, NOT *PRESENCE*.** ESR1 is genuinely abundant in immune
+and vascular cells — which is exactly what the contaminated samples are — so a gene expressed well in BOTH
+compartments reads as contaminant-leaning even when two-thirds of chondrocytes carry the protein.
+**A low ratio is a HYPOTHESIS about a transcript's cellular origin; direct protein localisation in the tissue
+overrides it.** ⚠ **This does NOT retire the method** — it correctly killed AGTR1 (0.03) and MME (0.17),
+neither of which has a protein measurement showing presence. It fixes its scope.
+⚠ **Residual puzzle, recorded not explained:** if 64% of chondrocytes carry ERα protein, the near-absence of
+GREB1/PGR/TFF1 suggests the receptor is present but not running the *canonical* oestrogen programme in
+cartilage — a different target set, or largely inactive until ligand or growth-factor input rises.
+
+✅ **THE FULL PROTAC RECEIVER TEST NOW PASSES ON ALL THREE REQUIREMENTS:**
+· **TARGET** — ERα protein in 64% of resting and proliferative chondrocytes, human boys, every Tanner stage
+· **MACHINERY** — CRBN 12/12 with DDB1, CUL4B, RBX1, NEDD8 cartilage-enriched and a complete proteasome (R353)
+· **ACCESS** — 723.90 Da, net cationic, the class that partitions INTO negatively charged cartilage (R353)
+**No component is missing.**
+
+⚠ **CORR-351 — AND IT IS THE SAME FAILURE AGAIN, AT LEAST THE SIXTH INSTANCE.** `nilsson2003` has been in
+this bibliography since **2026-08-05**, is **cited by 82 nodes**, and its `one_line_finding` recorded only the
+METHOD — "ERalpha, ERbeta and AR immunolocalised in… 16 boys and 8 girls at Tanner stages 1-5". **THE ZONE
+PERCENTAGES WERE NEVER EXTRACTED, AND R353 THEN FILED THE MEASUREMENT AS A GAP.** CORR-333's shape exactly.
+⭐ **The narrower, new lesson: A ONE-LINE FINDING THAT RECORDS A PAPER'S METHOD INSTEAD OF ITS NUMBERS IS
+INVISIBLE TO EVERY LATER QUERY — and 82 citing nodes did not make it visible.**
+⚠ **One literature discrepancy, recorded:** `egerbacher2002` reports ERα/ERβ **restricted to HYPERTROPHIC**
+chondrocytes — opposite zonal emphasis — but in **4 subjects with no cell counting**, against nilsson2003's
+24 subjects with quantification. Nilsson governs; **both agree ERα protein is in human growth-plate
+chondrocytes.**
+
 ## 🎯🎯🎯🎯🎯 R353 — **THE PLATE QUESTION, ANSWERED BOTH WAYS.** A PROTAC needs a TWO-PART receiver test
 ## and nobody had run either half. The chondrocyte HAS the degrader machinery, and the molecule is CATIONIC.
 
