@@ -1609,6 +1609,51 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+## ⭐⭐⭐⭐ R326 — **THE AKT AXIS SWEPT FOR AN ACCESSIBLE AGENT.** 36 of 41 nodes have nothing. The Step-0
+## objection to the class DISSOLVES. And the answer is **TRODUSQUEMINE**, which completed human phase 1.
+
+`atlas/tools/round326_akt_axis_accessible_agent_screen.py` — 41 nodes of PI3K–AKT–mTOR, each carrying a
+**hand-assigned direction** (brake → INHIBIT, positive node → ACTIVATE), joined to GSE288028 and to every
+Open Targets drug with its mechanism direction classified.
+
+**⛔ THE HEADLINE IS A NEGATIVE: 36 OF 41 NODES HAVE NO AGENT IN THE WANTED DIRECTION.** That includes
+**every phosphatase** (PTEN, PTPN1, PTPN2, PTPN9, INPPL1, INPP4B, PHLPP1/2, PIK3IP1) and the whole mTORC1
+brake set (TSC1/2, DEPDC5, NPRL2/3, SESN2, PRKAA1/2). The five with anything: **IGF1R → MECASERMIN
+(approved)**, **INSR → the insulins**, **GSK3B → LITHIUM (approved)** + tideglusib/elraglusib/LY-2090314,
+and MTOR/RPTOR → indoximod (a keyword artefact). R298's base rate, on the best-anchored axis in the file.
+
+**⭐⭐⭐ THE STEP-0 OBJECTION FROM R325 IS TOO STRONG, AND `yakar2016` IS WHY.** **Liver-derived CIRCULATING
+IGF-1 drives mainly RADIAL bone growth with little effect on LONGITUDINAL growth; cartilage-specific Igf1r
+deletion disorganises the columns, delays ossification and cuts proliferation.** And the local arm is
+load-bearing and huge: **IGF1R pLoF+delmis −5.23 cm (P=4.0e-43, 344 carriers), IRS1 pLoF −5.23 cm
+(P=3.2e-28, 219).** → **Raising serum IGF-1 (GH, mecasermin) and raising IGF1R transduction inside the
+chondrocyte (a receptor phosphatase inhibitor) are DIFFERENT INTERVENTIONS.** The SETTLED row "serum IGF-1
+does not predict growth potential" is about the first half only. R325's Step-0 call is **softened, not
+withdrawn.** ⛔ And the same distinction **disqualifies mecasermin** — it supplies circulating ligand, i.e.
+the radial half.
+
+**⭐⭐ THE ANSWER: TRODUSQUEMINE (MSI-1436)** — allosteric, non-competitive, selective PTP1B inhibitor, a
+natural aminosterol. **COMPLETED PHASE 1 AND 1b IN HUMANS, well tolerated**; **animal-effective doses
+5–50× BELOW the max tolerated human dose**; **not an active-site phosphonate** (so none of compound 7's
+MW 680–1241 charge problem); **obtainable**. PTPN1 is **34.6 CPM in 47.8% of cells** — more than PTPN9's
+25.3/24.0%. It beats compound 7 on human exposure, drug-likeness, therapeutic window and supply.
+
+**⛔ AND THE PROBLEM IS NOW CLASS-WIDE, NOT GENE-SPECIFIC. BOTH DRUGGED RECEPTOR PHOSPHATASES HAVE A
+SHORTER KNOCKOUT MOUSE.** Ptpn9: decreased body size, embryonic growth retardation, abnormal long bone
+diaphysis, >90% embryonic lethality. **Ptpn1: MGI `MP:0001258 DECREASED BODY LENGTH` + `MP:0000063
+decreased BMD`.** Two independent genes, one class, same direction, both against the human het data.
+✗ And **PTPN1 is not among kosmicki's 207** — trodusquemine wins on chemistry and loses on target genetics.
+✗ **No agent on this axis has a bone-LENGTH endpoint in any species.**
+
+**⚠ THE CONTRAINDICATION LIST (the other half of the screen):** capivasertib · alpelisib, copanlisib,
+inavolisib · idelalisib, duvelisib, umbralisib, leniolisib, parsaclisib · teprotumumab · perhexiline,
+ridaforolimus · **acadesine (AMPK activator)**.
+⛔⛔ **AND THAT EXPOSES A CONFLICT INSIDE THIS FILE: R297 named METFORMIN "the ONLY one of the thirty that
+targets the PERIOD" — and metformin activates AMPK, which inhibits mTORC1, the same direction as rapamycin,
+which halves a rat's longitudinal growth rate.** The two rounds have never been read together. Not settled
+(bone-age deceleration is a different term from growth rate) — but **any future metformin proposal must
+price the mTORC1 cost, and R297 did not.**
+
 ## ⭐⭐⭐ R325 — **PTPN9 / PTP-MEG2: THE BEST CHEMICAL MATTER IN THIS ATLAS, ON THREE HARD PROBLEMS.**
 ## The operator was right about the compound. Do not add the target.
 
