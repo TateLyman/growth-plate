@@ -1901,10 +1901,22 @@ systemic GR exposure subthreshold**, and a local depot is exactly what minimises
 GR exposure that disqualifies the class. ✗ **The tension: a locally released corticosteroid still activates
 GR locally, and local GR activation at a plate is growth-suppressive.** Unmeasured in any species.
 
-⭐ **FIVE — ONE FREE SUBSTITUTION, SAME SHAPE AS R366's ANTIFUNGALS. BUDESONIDE AND FLUTICASONE ARE THE TWO
-COMMONEST INHALED CORTICOSTEROIDS AND THEY RUN OPPOSITE WAYS AT SMO.** Dexamethasone, the commonest systemic
-steroid, inhibits. Since four days of a SMO antagonist fused a normal juvenile plate (`newton2019`), the
-hedgehog direction of a chronically used steroid is a real variable and **costs nothing to choose.**
+⭐⭐ **FIVE — AND THE HUMAN TEST ALREADY EXISTS. `axelsson2019` (Cochrane, 6 randomised trials, 1,199
+children) COMPARED ICS MOLECULES HEAD-TO-HEAD AT EQUIVALENT DOSES ON LINEAR GROWTH — and it runs in the
+PREDICTED direction.** **FLUTICASONE (SMO agonist) vs BECLOMETHASONE: +0.81 cm/yr (95% CI 0.46–1.16)**, low
+certainty, n=23. **FLUTICASONE vs BUDESONIDE (SMO antagonist): +0.97 cm height (95% CI 0.62–1.32), 359
+participants, MODERATE certainty**, fluticasone less suppressive — though the *velocity* comparison was
+**+0.39 cm/yr (CI −0.94 to +1.73), NS, very low certainty.** Authors: fluticasone "seems to inhibit growth
+less than beclomethasone and budesonide."
+⛔ **CONSISTENT WITH, NOT EVIDENCE FOR — and the review supplies the counter itself.** "Equivalent dose" means
+equivalent *asthma-control* potency, not equivalent systemic exposure, and **fluticasone's ~1% oral
+bioavailability vs budesonide's ~11% is a sufficient conventional explanation.** Decisively: **changing only
+the DEVICE for the SAME molecule at the SAME dose (budesonide Easyhaler vs Turbuhaler) moved height +0.37 cm
+in 6 months** — deposition differences alone generate effects of this size.
+⭐ **THE PRACTICAL CONCLUSION IS UNAFFECTED AND NOW DOUBLY SUPPORTED, BY TWO INDEPENDENT LINES: IF AN INHALED
+CORTICOSTEROID IS NEEDED WHILE THE PLATE IS OPEN, USE FLUTICASONE, NOT BUDESONIDE OR BECLOMETHASONE.**
+Dexamethasone, the commonest systemic steroid, inhibits Hh. **Free to choose.** ⭐ Free bonus from the same
+review: **budesonide via Easyhaler beats Turbuhaler by +0.37 cm/6 months.**
 
 ⛔ **SIX — A FALSE UNIFICATION KILLED BEFORE IT WAS WRITTEN.** The tempting move was to explain `gafni2001`
 (glucocorticoid → senescence delayed 3 wk, **14% of plates fused vs 88%**) as a hedgehog effect. **It used

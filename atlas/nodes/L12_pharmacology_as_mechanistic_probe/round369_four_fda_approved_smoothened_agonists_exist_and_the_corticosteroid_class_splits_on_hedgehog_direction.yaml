@@ -153,6 +153,35 @@ quantitative:
     establishes the ordering. What IS strong is that halcinonide and clobetasol were found as agonists twice
     independently, and that the inhibitory set was found by authors testing a cholesterol-similarity
     hypothesis rather than looking for a split.'
+- parameter: THE HUMAN TEST OF THE SPLIT ALREADY EXISTS IN THE INHALED-CORTICOSTEROID GROWTH LITERATURE, AND
+    IT RUNS IN THE PREDICTED DIRECTION WHILE BEING CONFOUNDED
+  value: 'Cochrane review of head-to-head randomised trials comparing DIFFERENT ICS MOLECULES AT EQUIVALENT
+    DOSES BY THE SAME DEVICE - six trials, 1,199 children aged 4-12, 6 to 20 months.
+    FLUTICASONE (SMO AGONIST) versus BECLOMETHASONE, 1 trial n=23: linear growth velocity MD +0.81 cm/year
+    (95 per cent CI 0.46 to 1.16), LOW certainty, favouring fluticasone.
+    FLUTICASONE versus BUDESONIDE (SMO ANTAGONIST): change in height over 20 weeks to 12 months MD +0.97 cm
+    (95 per cent CI 0.62 to 1.32), 2 trials, 359 participants, MODERATE certainty, fluticasone LESS
+    suppressive. But growth VELOCITY between the same two: MD +0.39 cm/year (95 per cent CI -0.94 to +1.73),
+    2 trials, 236 participants, VERY LOW certainty, NOT SIGNIFICANT.
+    Authors conclusion: fluticasone at an equivalent dose seems to inhibit growth less than beclomethasone and
+    budesonide, but the evidence is not certain enough to inform selection.
+    ⛔ THE REVIEW OWN CONFOUND CONTROL: changing ONLY THE DEVICE for the SAME molecule at the SAME dose -
+    budesonide via Easyhaler versus Turbuhaler - gave +0.37 cm over six months (95 per cent CI 0.12 to 0.62).'
+  unit: centimetres per year; centimetres
+  conditions: axelsson2019, abstract read 2026-08-13. Randomised trials in children with persistent asthma;
+    the molecule assignment to SMO direction is this atlas overlay from wang2010smo and recchia2024.
+  species: human
+  source_ref: axelsson2019
+  atlas_derived: true
+  uncertainty: 'CONSISTENT WITH THE HEDGEHOG SPLIT, NOT EVIDENCE FOR IT, AND THE REVIEW ITSELF SHOWS WHY.
+    EQUIVALENT DOSE in asthma means equivalent asthma-control potency, NOT equivalent systemic exposure, and
+    fluticasone propionate has roughly 1 per cent oral bioavailability against budesonide about 11 per cent -
+    a sufficient conventional explanation requiring no hedgehog at all. The review demonstrates that
+    deposition differences alone produce effects of this magnitude, since changing only the inhaler device for
+    one molecule moved height by 0.37 cm in six months. Certainty is LOW to VERY LOW on two of the three
+    comparisons, the velocity comparison between fluticasone and budesonide is NOT significant, and the
+    beclomethasone comparison rests on 23 children. THE PREDICTION SURVIVED A TEST IT COULD HAVE FAILED, WHICH
+    IS WORTH RECORDING AND IS NOT THE SAME AS SUPPORT.'
 - parameter: WHY THE gafni2001 FUSION DELAY IS NOT A HEDGEHOG RESULT
   value: 'gafni2001 produced the fusion-delay result this atlas carries - growth suppression in rabbits
     followed by catch-up with a less senescent growth plate, senescence delayed about three weeks, 14 per cent
@@ -220,13 +249,24 @@ claim_grades:
     dexamethasone, fludrocortisone and corticosterone acting at an allosteric site and additively with
     cyclopamine. The structural rationale - corticosteroids are sterols and SMO is cholesterol-activated - is
     stated by hedaya2018. Grade C because the compounds have never been compared head to head in one assay.'
-- claim: If a corticosteroid is needed while the plate is open, the choice is not hedgehog-neutral.
-  grade: D
-  basis: 'Budesonide and fluticasone are the two commonest inhaled corticosteroids and run OPPOSITE ways at
-    SMO; dexamethasone, the commonest systemic steroid, inhibits the pathway. Since a SMO antagonist fused a
-    normal juvenile mouse plate in four days (newton2019), the direction matters in principle. Grade D because
-    no corticosteroid has ever been tested on a growth plate for hedgehog output, and the substitution is
-    recommended only because it is free.'
+- claim: If an inhaled corticosteroid is needed while the plate is open, fluticasone is preferable to
+    budesonide or beclomethasone.
+  grade: C
+  basis: 'DOUBLY SUPPORTED, AND THE TWO SUPPORTS ARE INDEPENDENT OF EACH OTHER. Mechanistically, fluticasone
+    is a SMO AGONIST and budesonide a SMO ANTAGONIST that blocks ciliary translocation, and hedgehog to the
+    resting zone is required to prevent fusion. Empirically and regardless of mechanism, axelsson2019 finds
+    fluticasone at equivalent dose LESS growth-suppressive than beclomethasone (+0.81 cm/year, n=23, low
+    certainty) and than budesonide (+0.97 cm height, 359 participants, moderate certainty). Upgraded from D to
+    C because randomised human growth data now point the same way as the mechanism, while noting the velocity
+    comparison was not significant and the pharmacokinetic explanation is sufficient on its own. The
+    substitution is recommended because it is free and both lines agree, not because the mechanism is proven.'
+- claim: The inhaled-corticosteroid growth data prove the hedgehog split operates in humans.
+  grade: X
+  basis: 'NO. Equivalent dose means equivalent asthma-control potency, not equivalent systemic exposure, and
+    fluticasone oral bioavailability of about 1 per cent against budesonide about 11 per cent explains the
+    difference without hedgehog. The review supplies the decisive counter itself: changing only the DEVICE for
+    the SAME molecule at the SAME dose moved height by 0.37 cm in six months, so deposition differences alone
+    generate effects of this size. Consistent with, not evidence for.'
 - claim: An approved SMO agonist is a more obtainable payload for the local SOC route than SAG.
   grade: D
   basis: 'The validated route is an agarose bead carrying 7 micrograms of SAG in the distal femoral secondary
@@ -273,6 +313,12 @@ key_refs:
   type: primary
   role: the validated local route an approved agonist could supply - 7 micrograms of SAG in a bead in the
     distal femoral SOC, femur plus 3.63 per cent at six months and still widening
+- ref_id: axelsson2019
+  year: 2019
+  type: review
+  role: the existing human test of the split - randomised head-to-head ICS molecule comparisons in which
+    fluticasone is less growth-suppressive than budesonide and beclomethasone, in the predicted direction but
+    confounded by systemic bioavailability, as the review own device comparison demonstrates
 - ref_id: gafni2001
   year: 2001
   type: primary
