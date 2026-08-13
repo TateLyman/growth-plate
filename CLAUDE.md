@@ -1786,6 +1786,68 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🧭🧭🧭 R355 — **THE STACK AUDITED AGAINST "CAN CLOSURE BE PREVENTED". The oestrogen half is now covered
+## and he is an ORDER OF MAGNITUDE below the human closure threshold. THE RESIDUAL IS THE POOL, AND NOTHING
+## IN THE STACK MOVES IT.** ⭐ The project's frontier has changed: the next round is a POOL round, not a period round.
+
+⭐⭐ **ONE — THE HUMAN CLOSURE THRESHOLD, AND WHERE HE SITS.** `lanfranco2008` (full text read 2026-08-07,
+finding was in its `note` and NOT in `one_line_finding` — now fixed): aromatase-deficient man, **age 26.8,
+height 193.0 cm, BONE AGE 15.5 with UNFUSED EPIPHYSES, still gaining height and arm span at 24 months.**
+His **poor compliance created a natural dose-response**: oestradiol **60.6 pmol/L (16.5 pg/mL) was
+INEFFECTIVE** to complete bone maturation; maturation completed **ONLY ABOVE 73 pmol/L (20 pg/mL)**, taking
+**>20 months**. `rochira2015` puts the field threshold at **15–25 pg/mL ≈ 55–92 pmol/L**, which brackets it.
+· **HE IS AT 3.3–6 pmol/L — roughly 10–25× BELOW the concentration at which closure was observed to proceed
+  in a human male**, and at/below `albin2013`'s half-maximal growth-acceleration point of 6.5 pmol/L.
+· **The natural experiment:** men who cannot make oestrogen present at **24, 25, 26 and 37 years old** with
+  unfused epiphyses and continued linear growth. That is the largest period effect in human skeletal biology.
+
+⛔ **TWO — BUT THE THESIS DOES NOT SURVIVE INTACT, AND THE BOUND IS ALREADY IN THIS FILE.** `smith2008`: with
+the receptor **entirely absent from conception**, bone age still advanced **15 → 17.5 y over 3.5 y ≈ 0.7
+BA-y per CA-y.** **THE CLOCK SLOWS; IT DOES NOT STOP.** "Prevent closure entirely" is not what even the
+complete genetic lesion achieves — what it achieves is a very large delay.
+
+⭐⭐⭐ **THREE — SO WHAT IS THE RESIDUAL MADE OF? CLOSURE HAS THREE PROGRAMS AND THE STACK COVERS ONE.**
+· **(A) THE HORMONAL ACCELERATOR** — anastrozole at the LIGAND + vepdegestrant at the RECEPTOR. **Covered twice.**
+· **(B) THE INTRINSIC CLOCK** — replication-dependent exhaustion of the resting zone. Oestrogen-INDEPENDENT.
+  Not p16/SASP, which is why R266 closed senolytics — there is nothing to clear. **This is the N term.
+  NOTHING IN THE STACK MOVES IT.**
+· **(C) THE TERMINAL EVENT** — vascular invasion and replacement. **Nothing in the stack.** (Resveratrol is
+  the only obtainable agent the file has ever found aimed here, and it carries two hard stack conflicts.)
+**Every atlas target for (B) has NO MOLECULE:** HHIP **+9.92 cm** (no agent in any species) · ECRG4 (null
+mouse body length **+0.950, P=4.45e-07**, zero chemical matter) · CLEC3A **+1.52 cm P=1.2e-43** (zero) ·
+STC2 **+1.37 cm P=4.5e-34** (no antibody exists) · SPIN4 (would need a degrader).
+
+🧭 **FOUR — THE FRONTIER HAS MOVED, AND THIS IS THE ANSWER TO "WHERE NEXT".** For most of this project the
+open question was *find an agent for the PERIOD*. **That question is now substantially answered.** The
+remaining question is entirely different: **can the resting-zone POOL be preserved or expanded** — and it is
+the question every no-molecule target in this file sits on. **The next round is a pool round.**
+
+✓ **FIVE — ONE TENSION NOBODY HAD STATED, WHICH RESOLVES FAVOURABLY.** If senescence is replication-dependent,
+arms that RAISE proliferation should SPEND the pool — and three stack arms do exactly that. **The empirical
+check runs the other way: vosoritide is specifically noted NOT to advance bone age, and infigratinib showed
+NO bone-age acceleration in randomised phase 3 at +1.74 cm/yr.** Two agents raising velocity without moving
+the skeletal clock = the rate arms are buying velocity without spending period. **Favourable, and worth
+stating rather than assuming.**
+
+⛔ **SIX — A FIRST-ORDER PRACTICAL CONSEQUENCE OF THE THRESHOLD.** If closure proceeds above ~55–73 pmol/L
+and stalls below it, **anything that lets oestradiol rise back across that band closes the window** — and in
+the aromatase-deficiency cases it did so **within 6–12 months** of adequate oestradiol. **Missing anastrozole
+doses is not a minor adherence issue; it is the single fastest way to lose the remaining window.** Any
+exogenous oestrogen exposure or interruption of the AI is a first-order risk, not a background one.
+
+⭐ **SEVEN — AND A HUMAN RESULT NEW TO THIS ATLAS THAT REMOVES A STANDING WORRY.** `zirilli2009`:
+aromatase-deficient man, bone age 15.3, unfused epiphyses — **RALOXIFENE 60 mg/day × 12 months → NO CHANGE IN
+BONE AGE**; then transdermal oestradiol × 12 months → **COMPLETE EPIPHYSEAL CLOSURE.** A SERM at a bone-active
+dose did not advance the skeletal clock over a year in a plate fully capable of closing. ⚠ **DIRECTLY
+CONTRADICTS `nilsson2003_raloxifene`**, where raloxifene was a full oestrogen agonist at the RABBIT plate and
+hastened fusion. n=1 vs rabbit; for a human decision the human governs — **recorded, not resolved.**
+
+⭐ **THE ONE MEASUREMENT THAT NOW DECIDES EVERYTHING: ΔBONE AGE / ΔCHRONOLOGICAL AGE ON THE CURRENT STACK**,
+by BoneXpert on serial hand films, with standing AND sitting height at a fixed time of day. That single ratio
+separates the three cases that matter — **clock stalled · clock at the smith2008 residual (~0.7) · clock near
+normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
+Gap `g_l12_355a`.
+
 ## 🎯🎯🎯🎯🎯🎯 R354 — **THE TARGET PROTEIN IS IN 64% OF RESTING AND 64% OF PROLIFERATIVE CHONDROCYTES,
 ## IN 16 BOYS, AND IT DOES NOT DECLINE ACROSS TANNER 1→5.** R353's ESR1 objection is WITHDRAWN.
 
