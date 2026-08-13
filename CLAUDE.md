@@ -79,6 +79,13 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
 13. **Asserting a target has no chemical matter.** CORR-312 — HHIP had three handles; I searched none.
    And the material lives in the **structural** literature under *interface, mutant, pocket, avidity,
    clustering* — never under "inhibitor." **Search the fold, not the drug.**
+   ⛔ **CORR-347 (R334) IS THE THIRD INSTANCE AND IT HAS A MECHANICAL FIX. Open Targets "known drugs" lists
+   only CLINICAL AND APPROVED agents — every tool compound and chemical probe is invisible to it.** R298,
+   R300, R312, R313, R331 and R333 all computed "no compound" from that field. **KDM5 was written off as
+   having "no clinical-stage inhibitor" while ChEMBL holds 602 molecules on KDM5A at 25 pM, drug-like MW,
+   with cereblon degraders — CPI-455 among them.** ⭐ **`n_molecules` (chemical matter) and `max_phase`
+   (clinical maturity) ARE DIFFERENT QUESTIONS. Run `atlas/tools/round334_chembl_chemical_matter_sweep.py`
+   before writing the phrase, and state which of the two you mean.**
 14. **Quoting a paper's summary statistic as if it were holding its data.** CORR-314/315. "1114 down, 529
    up" sat in this atlas for rounds; the deposited table contained BOTH a refutation and a sex confound.
    **If a dataset is public, download it.** And before any sex-linked gene: Xist + Ddx3y/Uty/Eif2s3y/Kdm5d.
@@ -1726,6 +1733,49 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⛔⛔⛔ R334 — **CORR-347: "NO COMPOUND" WAS COMPUTED FROM THE WRONG DATABASE, AND THE OPERATOR CAUGHT IT.**
+## Run `atlas/tools/round334_chembl_chemical_matter_sweep.py`. Data `atlas/data/round334/`.
+
+**R298/300/312/313/331/333 all reported chemical matter from Open Targets KNOWN DRUGS, which lists only
+CLINICAL AND APPROVED agents. Tool compounds and chemical probes are INVISIBLE to it.** R333 wrote that
+KDM5 had "no clinical-stage inhibitor" and treated that as no chemical matter. **CPI-455 is a pan-KDM5
+inhibitor and it is one of 602.** Failure mode 13 (CORR-312) and 29 (CORR-335), third instance.
+**NEVER SAY "NO COMPOUND" FROM A DRUG COUNT AGAIN — QUERY ChEMBL BIOACTIVITY.**
+
+**THE SWEEP, 43 TARGETS. `n_molecules` (chemical matter) and `max_phase` (clinical maturity) are DIFFERENT
+QUESTIONS and this file conflated them for 36 rounds.**
+| target | mols pChEMBL≥5 | best pChEMBL | MW range | degrader target |
+|---|---|---|---|---|
+| **KDM5A** | **602** | **10.60 (25 pM)** | **290–432, drug-like** | **YES (cereblon)** |
+| **KDM5B** | 578 | 9.22 | drug-like | **YES** |
+| KDM5C | 154 | 8.23 | — | **YES** |
+| KDM1A | 3,551 | 10.3 | — | — |
+| TNKS / TNKS2 | 1031 / 854 | 10.35 / 10.0 | — | — |
+| DPP9 | 531 | 9.92 | — | — |
+| LOXL2 | 365 | 8.40 | — | — |
+| DDR2 | 338 | 11.0 | — | — |
+| **TET1** | **39** | **7.74** | ⚠ **1,267–3,322 = PEPTIDES, not drug-like** | — |
+| ODC1 / AMD1 / PTPN9 | 25 / 20 / 19 | 7.52 / 8.3 / 7.47 | — | — |
+⛔ **GENUINELY EMPTY — no human ChEMBL target at all, so those calls WERE right:** HHIP · NRK · CHAD ·
+SCUBE3 · STC2 · PAPPA · FBN1 · LCORL · SCMH1 · HMG20B · ZFAT · ZNF518A · SAMD4A · XYLT1 · EXT1 · B4GALNT3 ·
+CNNM3 · HLTF · HERC1 · AEBP1 · COL8A2 · CLEC3A.
+⭐ **THE PATTERN IS EXACT AND IT IS R298's BASE RATE, APPLIED PROPERLY: enzymes have chemistry, secreted /
+ECM / TF targets have none.** I applied "no molecule" indiscriminately across both classes.
+
+⭐⭐ **THE RE-RANKED ANSWER — effect × tissue × chemical matter.** Only FOUR genes above +2 cm have ANY
+chemical matter, and only one is above +7:
+**TET1 — +7.95 cm (P=4.84e-28, singleton pLoF+delmis; +2.98 at P=2.99e-27 on 656 carriers), 12/14 in the
+postnatal human growth plate at 19.2 CPM, peak HZ, and it is THE TET of this tissue.** Mouse concords:
+IMPC Tet1 het body length **+0.282, P=0.022** — the RARE direction under CORR-329. Step 0 clean.
+**R331 rejected TET1 for "no selective obtainable inhibitor" and that was the wrong test.**
+⚠ **Its 39 compounds are PEPTIDIC (MW 1,267–3,322) — real chemical matter, not a drug.** ⭐ **BUT TET1 and
+KDM5 are the same fold — Fe(II)/2-oxoglutarate dioxygenases — and the drug-like 2-OG-competitive chemistry
+already exists in the KDM5 series at 25 pM with cereblon degraders. The problem is SELECTIVITY, i.e.
+medicinal chemistry, not discovery.** That is a different and much smaller problem than "no molecule".
+⛔ Against TET1: IDH-mutant 2-HG inhibits TET and gives enchondromatosis with short stature (2-HG is
+promiscuous across 2-OG dioxygenases, so this is suggestive not decisive); AKG and megadose vitamin C are
+already contraindicated here as TET CO-SUBSTRATES, which is the same axis read in the opposite direction.
 
 ## ⭐⭐⭐ R333 — **THE MECHANISM WAS PROBABLY NEVER COLLAGEN. LOXL2 IS AN H3K4me3 ERASER, AND THE WRITER/
 ## ERASER PAIR HAS OPPOSITE SIGNS AT P=1.4e-16 AND 4.3e-10.** `atlas/data/round333/`
