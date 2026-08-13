@@ -31,8 +31,35 @@ enrichment, per-site and per-joint time series, and a **DECONVOLUTION** sheet.
 The DECONVOLUTION sheet is the one that bears directly on CORR-339, because the failure it names is
 a cell-composition failure. Not opened.
 
+## richard2025_supplement3.xlsx (26 MB) - supplied second batch, 2026-08-13
+12 sheets: `COJO Height Variants`, `Sig. Height Variants`, `Variant Enrichments - E54`,
+`Variant Enrichments - E67`, `LDSC Variant Enrichments`, `Height Gene-set enrichments`,
+**`Limb-Length GWAS`**, `Gene Ranking Results`, `Tissue-Specific Ranking`, `ANOVA`, `Modularity`, `MAGMA`.
+Coordinates are hg19, which matches the ATAC peak build determined in round 323.
+`Limb-Length GWAS` is the sheet that bears on CORR-341 - the finding that a compartment coordinate is
+ALLELE-specific, not gene-specific.
+
+## richard2025_supplement4.xlsx (6.5 MB)
+7 sheets: `PAINTOR Results`, `Paintor Fn`, `Variant Contacts`, `QTL Analysis`, `QTL - HIC`, `QTL - Height`,
+`QTL - Reg`. Fine-mapping posteriors and chromatin-contact-based variant-to-gene assignment - the thing
+round 318 and round 323 both lacked when assigning lead variants to genes by proximity.
+
+## richard2025_supplement5.xlsx (0.4 MB)
+7 sheets: `Module Definition`, `Module Height Assoc`, `Module Network Analyses`, `Module-Heritability`,
+`Module Motifs`, `Motif-Biases`, `SLDP Analysis`. Co-expression modules with per-module height association
+and partitioned heritability; CD1 (909 genes) contains COL2A1.
+
+## richard2025_supplement6.xlsx (0.3 MB)
+2 sheets: `Module Definition`, `Module T2D Assoc`. The same modules scored against type 2 diabetes rather
+than height - useful only as a specificity control for supplement 5.
+
 ## richard2025_supplement7.pdf (49 pages)
 Same paper, supplementary figures. Contents not inspected.
+
+## STATUS UPDATE 2026-08-13
+`baffi2004` HAS NOW BEEN READ. The gap it was requested for is closed - the postnatal direction is
+SHORTER; see `atlas/data/round323/baffi2004_extracted_tables.json` and the round 323 node. The
+richard2025 supplements remain unanalysed.
 
 ## What was NOT supplied and is still open
 `greene2021` (PMID 34532615) supplementary data - whether any femur or tibia length was recorded in
