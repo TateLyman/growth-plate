@@ -147,6 +147,24 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    The subject is a wild-type male on a pan-FGFR inhibitor. **CORR-309 verbatim, fourth instance** — and the
    pattern is not random: the arm that gets dropped is the one that runs against the stack.
 
+35. **Using a signed gene table in ONE direction and calling it mined.** CORR-344 (R328) — `kosmicki2026`
+   gives **39 genes whose loss LENGTHENS and 96 whose loss SHORTENS.** R300 touched the 96 exactly once, as
+   a *contraindication* screen ("which have approved inhibitors to avoid"). **The elevation direction — for
+   a load-bearing gene, RAISE its function — was never run**, though CORR-303 has instructed it since R287.
+   ⭐ **And that direction is where the file's ONLY obtainable compound came from:** R320/R321 took SLC13A1,
+   a *shortening* gene, and reached oral sodium sulfate by **supplying the substrate**. Inhibitors are the
+   shelf R298 found empty; **substrate donors, cofactors, recombinant proteins and blockade of an endogenous
+   INHIBITOR are a different shelf.** Same round, `bai2025` was found sitting in the bibliography with
+   `one_line_finding: None` — added purely as a foil for LCORL, its **STC2 arm dropped entirely.**
+
+36. **Letting a retraction die in the node that made it.** CORR-345 (R328) — CORR-108 retracted "rhPAPP-A2
+   increased body length in WILD-TYPE mice" after retrieving the supplementary table (**no significant
+   increase in either sex; males numerically LOWER, 15.33 → 15.15**). The retraction was written into
+   `only_free_igf_reaches_the_plate`'s summary — and **the bibliography entry AND that node's own key_ref
+   line both still asserted the withdrawn claim** until R328. **A correction must be propagated to every
+   place the claim is stored, in the same edit.** CORR-333's shape, inverted: there a true negative
+   propagated unchallenged; here a retracted positive survived in two stores.
+
 ## ⚠ GRADING RULE CHANGED BY THE OPERATOR (R302) — APPLY RETROACTIVELY
 
 **"If it works mechanically but there's no documented length, we should basically consider it viable."**
@@ -1639,6 +1657,61 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+
+## ⭐⭐⭐⭐ R328 — **THE 96 SHORTENING GENES, WORKED IN THE ELEVATION DIRECTION.** They converge on ONE
+## enzymatic step with a bidirectional human control structure, and the atlas has never named its target.
+
+CORR-303 said "work both signs" in R287. R300 used the 96 only as a contraindication screen. Run properly
+(`atlas/data/round300/s6_burden_effects.json`), the module that appears repeatedly is **IGF-1 BIOAVAILABILITY
+BY PROTEOLYSIS** — and it has the NPR2/NPR3 shape:
+
+| gene | role in one enzymatic step | β cm/allele | P | carriers |
+|---|---|---|---|---|
+| **PAPPA** | protease, cleaves IGFBP-4 → frees IGF-1 **in tissue** | **−4.57** | 1.9e-19 | 194 |
+| **PAPPA2** | protease, cleaves IGFBP-3/-5 | **−2.10** | 1.7e-13 | 610 |
+| **STC2** | **the pappalysins' endogenous INHIBITOR** | **+1.37** | **4.51e-34** | 3,927 |
+Supporting: IGF1 −6.41 · **IGF1R −5.23 (P=4.0e-43)** · IRS1 −5.23 · IGFALS −0.92.
+**Lose the protease → shorter. Lose the protease's brake → taller.** One dataset, one ascertainment.
+⭐ **STC2 has NEVER been a target in any round of this atlas** — it appears only as an incidental expression
+row — and its P=4.51e-34 on 3,927 carriers is among the best-powered rows in the whole table.
+
+✓ **CORR-327 RECEIVER TEST PASSES COMPLETELY** (GSE288028, 14 samples, 79,934 cells): **PAPPA 88.5 CPM
+12/14 (53% of cells) · STC2 18.1 CPM 12/14 (up to 59.8% of cells) · IGFBP4 34.5 · IGF1R 80.4 · IGF2 15.0**.
+**IGFALS 0/14 (0.049 CPM)** — independently reconfirms the atlas's own size-filter argument that the plate
+only ever sees the FREE fraction.
+⭐⭐ **AND THE SHARPEST CORRECTION: PAPPA2 IS 3.8 CPM — 23× BELOW PAPPA.** The protease this file already
+tested in a wild-type animal is **the MINOR pappalysin of this tissue**, and the human betas order the same
+way (−2.10 vs −4.57).
+
+⛔ **THE PRIOR AGAINST, RECORDED FIRST.** `fernndezarjona2026` gave **rhPAPP-A2 to wild-type mice** and on
+the supplementary table (CORR-108) body length did **NOT** rise in either sex — males **15.33 → 15.15,
+numerically lower** — while rhGH did. What survived is a **PROPORTION shift toward LIMB** (femur/body
+0.72→0.75, tibia/body 0.93→0.97, p<0.001, total length unchanged). **Doubly bad: R317/R318 say the residual
+is trunk-dominant.**
+⚠ **Two things separate the proposal from that null, and both are this file's OWN rules, neither measured:**
+① the wrong pappalysin was supplied (above); ② **CORR-300** — removing a **secreted extracellular modulator**
+is a setpoint shift that ADDS length, while **flooding with agonist** saturates and subtracts. Injecting
+recombinant protease *is* the flood. **CORR-300 predicted this failure.**
+
+✓ **LOSING STC2 ENLARGES NORMAL ANIMALS IN THREE SPECIES — and not one endpoint is a bone length.**
+`wang2025stc2a` zebrafish Stc2a-null → raised growth rate, **enlarged adult organ and BODY SIZE** ·
+`lionikas2023` **Stc2−/− MICE (n=21 vs 15) → up to +10% MUSCLE MASS** — the knockout mouse exists and is
+already bred · `bai2025` STC2 **A60P** gene-edited mice → **+11% WEIGHT** in homozygotes.
+⛔ **Body size, muscle, weight. NO femur, tibia or vertebra in any mammal.** Under R302's rule that is the
+GAP, not a disqualification — and it is **a caliper on a mouse that already exists.**
+
+✓ **THE MODALITY IS THE ONE R314 SAID WORKS: STC2 IS SECRETED AND THE DIRECTION IS TO BLOCK IT** — the
+SOST/romosozumab shape exactly. ⭐ And **unlike HHIP (a tumour SUPPRESSOR), STC2's entire oncology literature
+calls it a tumour PROMOTER** (colorectal, lung, osteosarcoma) — for once the cancer literature runs WITH us.
+✗ No anti-STC2 therapeutic antibody exists; PAPP-A-directed antibodies are in development in the **opposite**
+direction (atherosclerosis, oncology).
+
+⛔ **VERDICT: DO NOT ADD IT — Step 0 lands on the GH/IGF-1 arm, which this file prices at ≈0 after
+mid-puberty.** The defence is R326's and it is argued, not measured: `yakar2016` (circulating IGF-1 →
+**radial**; local → **longitudinal**), IGFALS 0/14 (the GH-driven ternary pool can't enter), PAPP-A acts
+pericellularly on IGFBP-4 in the matrix. **The discriminating measurement — free vs total IGF-1 by
+growth-plate zone — does not exist in any species**, which is this atlas's own unclosed gap.
+Gaps: `g_l8_328a` (caliper the Stc2−/− mouse) · `g_l8_328b` (is disinhibition ≠ supplementation?).
 
 ## ⭐⭐⭐⭐⭐ R327 — **THE MECHANICAL AXIS ENDS IN TWO OBTAINABLE COMPOUNDS.** And the growth-plate ABSENCE
 ## that killed each of them is exactly what CLEARS Step 0 here, because this axis does not act at the plate.
