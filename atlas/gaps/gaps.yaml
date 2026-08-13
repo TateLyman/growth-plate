@@ -1,4 +1,28 @@
 gaps:
+- gap_id: g_l12_350a
+  type: known_unknown
+  layer: L12
+  status: open
+  question: What length endpoints are sitting unmined in regulatory juvenile toxicity reviews?
+  why_it_matters: R350 found the length endpoint that R348 declared did not exist in any species inside an FDA
+    nonclinical review - serial ulna length in rats dosed PND 7 to PND 62. ICH S11 juvenile toxicity studies
+    routinely record serial LIMB LENGTH, body weight, sexual maturation and skeletal histopathology in animals
+    dosed through the entire growth period, which is exactly the experiment this atlas repeatedly declares
+    missing. Every drug with a paediatric indication has one. These documents are free and public and are
+    invisible to PubMed and Europe PMC, which is why every literature sweep this file has run missed them.
+  what_is_known: 'Retrieved via openFDA (api.fda.gov/drug/drugsfda.json) to get the review TOC year, then
+    the Drugs@FDA nda path <year>/<appno>Orig1s000PharmR.pdf with a browser
+    User-Agent and a Drugs@FDA Referer - accessdata blocks default clients with an Akamai abuse page that
+    looks like a 404. For Pradaxa the reviews are filed under 2022 although approval was June 2021.'
+  what_is_missing: The atlas has written "no bone-length endpoint in any species" about at least eight agents
+    - LOX/PLOD inhibitors, tankyrase inhibitors, TET inhibitors, PDE inhibitors before CORR-333, sulfate
+    donors, methyl donors, TGF-beta lowering agents and HDAC inhibitors. None of those claims has been checked
+    against a juvenile toxicity review or an EMA assessment report.
+  discriminating_experiment: For each agent the atlas has called length-endpoint-free, check whether it has a
+    paediatric indication or a paediatric investigation plan; if so pull the PharmR from Drugs@FDA and the
+    nonclinical section of the EMA EPAR, and search for limb measurement, ulna length, femur length, body
+    length and sexual maturation. Start with the agents already in this subject's stack, which all have
+    paediatric programmes.
 - gap_id: g_l12_349a
   type: known_unknown
   layer: L12

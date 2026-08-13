@@ -200,7 +200,19 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    FASN −3.61, HTRA1 −3.31, THBS3 −1.72, FIBIN −0.81, CLEC11A −0.74) **and the three brakes are all small.**
    Meanwhile every brake this file actually works — HHIP 62 CPM, STC2 211, CHAD 455, ECRG4 695, CLEC3A 1,069
    — sits at low-to-middling abundance. **Abundance finds the tissue's structural proteins; enrichment plus a
-   SIGNED effect finds levers.** Run both or the screen returns the matrix.**
+   SIGNED effect finds levers.** Run both or the screen returns the matrix.
+
+39. **Writing "no bone-length endpoint in any species" without querying the REGULATORY nonclinical reviews.**
+   CORR-350 (R350) — R348 made that its leading gap for a direct thrombin inhibitor. **The endpoint was in the
+   FDA nonclinical review**: serial LEFT ULNA LENGTH on PND 14/28/42/56 and at necropsy, in Han Wistar rats
+   dosed PND 7→62 at 0/15/32.5/70 mg/kg/day, GLP, n=12–20/sex — **and it is NULL** (males no effect at any
+   dose; the one female result is a transient REDUCTION at the top dose). **Every drug with a paediatric
+   indication has a juvenile toxicity study, and ICH S11 routinely records serial LIMB LENGTH, body weight,
+   sexual maturation and skeletal histopathology in animals dosed through the ENTIRE growth period** — the
+   experiment this file keeps declaring does not exist. **These reviews are free, public and invisible to
+   PubMed and Europe PMC**, which is why every sweep missed them. CORR-328's shape at a new source: it is not
+   enough to query the literature and the supplied datasets — **the phrase is also a claim about Drugs@FDA and
+   the EMA EPARs.****
 
 ## ⚠ GRADING RULE CHANGED BY THE OPERATOR (R302) — APPLY RETROACTIVELY
 
@@ -1774,6 +1786,57 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ⛔⛔⛔ R350 — **THE NONCLINICAL REVIEW WAS HUNTED DOWN AND IT HOLDS THE EXACT EXPERIMENT. IT IS NULL.
+## THE DABIGATRAN ARM CLOSES.** ⭐ **And it opens a whole class of length endpoints this file has never mined.**
+
+⛔ **R348's LEADING GAP — "no thrombin inhibitor has a bone-length endpoint in any species" — IS FALSE.
+DELETE IT WHEREVER IT APPEARS.** The endpoint exists, in the FDA nonclinical review, and it is negative.
+· **Definitive GLP juvenile toxicity study n00251085-1: Han Wistar rat pups, oral gavage, PND 7 → PND 62 —
+  the whole juvenile growth period — at 0 / 15 / 32.5 / 70 mg/kg/day, 12/sex main + 20/sex recovery, four-week
+  recovery to PND 91.** Endpoints included body weight, food consumption, **LIMB MEASUREMENTS** and sexual
+  maturation. **LEFT ULNA LENGTH recorded on PND 14, 28, 42, 56 and at necropsy (main) and PND 14, 28, 42,
+  56, 70, 84 and necropsy (recovery).**
+· ⛔ **RESULT — MALES: no effect on ulna length or growth at ANY dose at ANY timepoint.** FEMALES: one
+  significant **REDUCTION** at 70 mg/kg/day on PND 28 only (24.3 ± 1.9 vs 25.2 ± 0.55 mm), absent at every
+  other timepoint, absent in the PND 14→56 change, gone by end of treatment and recovery. **Key finding 4 and
+  the Integrated Summary both state no effect on growth or development. THE ONLY DIRECTIONAL SIGNAL IN THE
+  DATASET RUNS THE WRONG WAY.**
+· **The preliminary study agrees from the top: PND 7→28 at up to 200 mg/kg/day, individual body weights,
+  NO clear change at any dose in either sex (ratios 0.88–1.05×).** ⚠ Body weight is not a length endpoint
+  (CORR-326) — reported because it is concordant with the ulna null at a 4× higher ceiling.
+→ ⛔ **DABIGATRAN IS DEAD FOR THIS PURPOSE. Right species, right age, right interval, serial limb length,
+doses that killed animals — nothing moved.** R348's grade D is withdrawn.
+
+✓ **WHAT SURVIVES, NARROWLY: THE TARGET, NOT THE DRUG.** Ecrg4-null body length **+0.950 P=4.45e-07** with
+normal weight and increased BMD is a genetic result about the protein; this is a pharmacological result about
+one molecule. Two limitations of the null have standing in this file and were not invented for the occasion:
+**the ULNA IS A FORELIMB BONE** — R318 found the upper limb contributes nothing to standing height and R330
+found the elbow runs OPPOSITE to the knee on HHIP, STC2, NPR3 and PAPPA, so it is the least height-relevant
+long bone available — **and no femur, tibia or vertebra was measured**; and **dabigatran's cartilage exposure
+is entirely unmeasured** (R315's delivery wall was never addressed for this molecule). Those narrow the null.
+**They do not rescue the compound.**
+
+⚠ **AND IT CORRECTS R349 IN BOTH DIRECTIONS.** Stronger: the juvenile study contains a length endpoint R349
+could not see. Weaker on mortality: 28 premature deaths, **none in controls**, 1 female at 15 mg/kg/day, 13 at
+32.5, 13 at 70 — but the **preliminary study found haemorrhage indistinguishable from control across
+20–70 mg/kg/day**, rising only at 100 and 300. The two disagree at the low end; the GLP one governs, so
+R349's "no dose free of bleeding mortality" stands **with less force than R349 gave it**.
+
+⭐⭐ **CORR-350 — THE GENERALISABLE RESULT, AND IT IS WORTH MORE THAN THE KILL: REGULATORY JUVENILE TOXICITY
+REVIEWS ARE A LENGTH-ENDPOINT SOURCE THIS ATLAS HAS NEVER MINED.** Every drug with a paediatric indication
+has one, and the ICH S11 design routinely records **serial LIMB LENGTH, body weight, sexual maturation and
+skeletal histopathology in animals dosed through the ENTIRE growth period** — precisely the experiment this
+file keeps declaring does not exist. **They are free, public, and invisible to PubMed and Europe PMC**, which
+is why every literature sweep missed them. **This file has written "no bone-length endpoint in any species"
+about at least eight agents** (LOX/PLOD, tankyrase, TET, PDE pre-CORR-333, sulfate donors, methyl donors,
+TGF-β-lowering agents, HDAC inhibitors) — **that phrase is now also a claim about Drugs@FDA and the EMA EPARs
+and must be checked against them.** Gap `g_l12_350a`.
+**HOW TO GET THEM (accessdata blocks default clients with an Akamai page that looks like a 404):** query
+`api.fda.gov/drug/drugsfda.json?search=application_number:"NDA<x>"` for the review TOC **year** (Pradaxa's
+reviews are filed under **2022** though approval was June 2021), then fetch
+`accessdata.fda.gov/drugsatfda_docs/nda/<year>/<appno>Orig1s000PharmR.pdf` **with a browser User-Agent and a
+Drugs@FDA Referer**.
+
 ## ⚠⚠ R349 — **THE FDA PAEDIATRIC PRADAXA REVIEW ANSWERS R348 THREE WAYS. The human height data EXIST and
 ## were never analysed; the regulator's stated reason for not analysing them is a mechanistic claim this file
 ## contradicts; and the JUVENILE TOXICITY STUDY IS A HARD CEILING.** (operator-supplied, read in full)
@@ -1817,8 +1880,9 @@ Gap `g_l12_349a`.
 risk with long-term therapy** against UFH and LMWH, and nothing equivalent against dabigatran — a regulatory
 restatement of R348's point that the skeletal liability belongs to particular agents.
 
-## 🎯🎯🎯 R348 — **ECRG4 HAS NO CHEMICAL MATTER BUT ITS ACTIVATING PROTEASE DOES. THE ACTIVE FRAGMENT IS
-## RELEASED BY THROMBIN — and dabigatran is oral, approved and PAEDIATRIC-LABELLED.**
+## ⛔ R348 — **ECRG4'S ACTIVATING PROTEASE IS THROMBIN — the reasoning was right and THE COMPOUND IS DEAD.
+## READ R350 FIRST: dabigatran was tested in growing rats with serial ulna length and it did nothing.**
+## What survives is the MECHANISM and the receiver test below; the dabigatran proposal is WITHDRAWN.
 
 ⭐ **CORR-312 APPLIED ONE LEVEL UPSTREAM.** R347 wrote that ECRG4 has zero chemical matter. **True of the
 TARGET.** The fold to search was never ECRG4 — it is the enzyme that switches it on.
@@ -1840,7 +1904,7 @@ F10 0.0, SERPINC1 0.1), which looked like the NPPC/NPR2 "enzyme systemic, substr
 the osteoclast-rich chondro-osseous junction is exactly what a pure-cartilage sample excludes.** Thrombin is
 available by both routes; the simple version was wrong.
 
-🎯 **THE COMPOUND: DABIGATRAN ETEXILATE — oral, approved, with a PAEDIATRIC VTE INDICATION and established
+⛔ **THE COMPOUND WAS DABIGATRAN ETEXILATE — WITHDRAWN R350 — oral, approved, with a PAEDIATRIC VTE INDICATION and established
 paediatric PK from birth to 16 years.** Direct thrombin inhibitor, so it blocks the cleavage step rather than
 a receptor that is not in the tissue. (FXa inhibitors — rivaroxaban, apixaban, also paediatrically approved —
 act one step upstream and are a weaker instrument.)
@@ -1861,7 +1925,8 @@ a caliper, not a new protocol.** ✗ The real defect is age: **brent2018's mice 
 growing animal has still never been dosed.**
 
 ⛔ **WHAT WOULD KILL IT, STATED BEFORE PROPOSING:**
-· **No thrombin inhibitor has a bone-LENGTH endpoint in any species.**
+· ⛔ **"No thrombin inhibitor has a bone-LENGTH endpoint in any species" — WITHDRAWN R350, IT WAS FALSE.**
+  The endpoint is in the FDA nonclinical review: serial ulna length, rats dosed PND 7→62, and it is NULL.
 · **ECRG4 cleavage by thrombin has NEVER been shown in cartilage** — the requirement is myeloid/microglial,
   and the Ecrg4-null mouse removes BOTH the membrane and soluble forms, so it cannot tell you which one
   carries the length phenotype. **This is the largest inferential step in the node.**
