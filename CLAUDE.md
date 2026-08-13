@@ -125,6 +125,27 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    The pharmacopoeia's handles are GPCRs and soluble enzymes, which live in the circulation; the plate is
    receptors, effectors, matrix and channels. **This is the MECHANISM behind R298's druggability base rate,
    not a restatement of it.** Triage every accessible-drug proposal with the free local query first.
+   ⚠ **AND CORR-342 (R327) SHOWS IT IS DIRECTIONAL, NOT ABSOLUTE — read the rule with its compartment.**
+   The receiver test asks "is the target in **the growth plate**", because that is the only tissue this
+   atlas localises against. **An absence is only a kill for a lever that acts THERE.** SOST is 0/14 in the
+   plate (R314, romosozumab killed) — and the distraction regenerate is osteoblast/osteocyte bone, where
+   sclerostin is the whole point. **Same measurement, opposite verdict, because the axis changed tissue.**
+   Before reading an absence as a kill, name the tissue the lever acts in.
+
+33. **Inheriting a systematic review's INCLUSION CRITERIA as the state of the field.** CORR-342 — R277 read
+   `albishi2026` (LIPUS / PRP / BMAC / MSC / HBO, 9 studies, 304 people, all inconsistent) and wrote
+   consolidation acceleration off as "indexed but not synthesised". **Its eligible interventions never
+   included teriparatide or sclerostin antibody** — and teriparatide has a **randomised human cross-over
+   that doubles regenerate mineralisation** (`wagner2019`). A review's emptiness is a fact about its
+   protocol. **When a review reports nothing works, read its inclusion criteria before believing it.**
+   Third relative of CORR-320/330: a citation filed under a conclusion it does not carry.
+
+34. **Recording a paper's headline arm and dropping the arm that costs us.** CORR-343 (R327) — `kot2026`
+   went into the bibliography 2026-08-05 as "infigratinib lengthens the female femur … reduced male
+   trabecular bone." **The sentence it left out: three-point bending showed REDUCED BONE STRENGTH IN TREATED
+   WILD-TYPE MALES, and the authors name pan-FGFR inhibition's risk to the male skeleton specifically.**
+   The subject is a wild-type male on a pan-FGFR inhibitor. **CORR-309 verbatim, fourth instance** — and the
+   pattern is not random: the arm that gets dropped is the one that runs against the stack.
 
 ## ⚠ GRADING RULE CHANGED BY THE OPERATOR (R302) — APPLY RETROACTIVELY
 
@@ -265,6 +286,7 @@ mid-puberty **≈ 0**. **The surgical option is an order of magnitude larger tha
 Cost: 37.1 days/cm, 7.71 months in frame, **56.1 % complication rate**.
 It works **after fusion**, so it is *additive*, not competing — and the one series combining it with
 vosoritide found no interference. Not a recommendation to operate; a correction to the file's sense of scale.
+⭐ **R327 EXECUTED R277's FRONTIER AND THE RATE-LIMITER HAS TWO OBTAINABLE COMPOUNDS — see the R327 section.**
 
 ## WHERE THE HEIGHT ACTUALLY IS (as of R274)
 
@@ -1617,6 +1639,89 @@ HIF-PHI class was already checked in R284.
   co-substrate runs the height-LOSING direction.** Common longevity supplement. Still untested directly.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
+
+## ⭐⭐⭐⭐⭐ R327 — **THE MECHANICAL AXIS ENDS IN TWO OBTAINABLE COMPOUNDS.** And the growth-plate ABSENCE
+## that killed each of them is exactly what CLEARS Step 0 here, because this axis does not act at the plate.
+
+R277 named consolidation acceleration as the frontier, listed LIPUS/PRP/BMAC/MSC/HBO as *"indexed but not
+synthesised"*, and stopped. **50 rounds later, that is this.** The axis is the file's largest by an order of
+magnitude (**femur 8.85 + tibia 7.36 ≈ 16 cm**, works **AFTER fusion**), its cost is **37.1 days/cm**, and
+the rate-limiter is druggable.
+
+⛔ **ONE — THE INDEX REVIEWED THE WRONG FIVE INTERVENTIONS (CORR-342).** `albishi2026` read in full: 9
+studies, 304 people. LIPUS RCTs disagree by 2× on their own primary metric (**HI 32.8±13.1 and 33 days/cm vs
+65.8±24.7** in the multicentre RCT); it cites a DO meta-analysis showing **no** significant reduction in
+treatment time or complications, plus TRUST's failure. Biologics cluster **27–34 days/cm**, underpowered.
+⭐ **Its ELIGIBLE INTERVENTIONS were LIPUS, PRP, BMAC, cultured MSC and HBO only. TERIPARATIDE AND SCLEROSTIN
+ANTIBODY WERE NOT ELIGIBLE FOR IT.** The atlas inherited a protocol's scope as the field's state.
+
+⭐⭐⭐ **TWO — COMPOUND 1: TERIPARATIDE. THE RANDOMISED HUMAN NUMBER EXISTED; THIS FILE HELD ONLY THE RABBIT.**
+`wagner2019` (Injury, PMID 31227278) — **randomised CROSS-OVER, 16 patients**, tibial bone transport,
+randomised at docking to 8 wk teriparatide → 8 wk none, or the reverse, DEXA of the regenerate at all three
+timepoints:
+**BMD +0.14 g/cm² per 8 wk untreated vs +0.33 g/cm² on drug · phase-adjusted +0.19 (95% CI 0.11–0.28),
+P<0.001 · RATIO 2.43 (CI 1.21–3.65). THE MINERALISATION RATE OF THE HUMAN REGENERATE IS DOUBLED.**
+A **within-patient** design is the one thing that defeats the confounder albishi2026 says wrecks this field.
+Around it: `sharma2025` (rabbit, already here) removes the failure penalty of **DOUBLE-RATE** distraction
+(1/12 vs 4/12, log-rank P=0.02); `patil2020` rescued 9/43 human regenerate insufficiencies at 20 µg/day,
+callus at mean 9.4 wk. Optimal window = the **CONSOLIDATION** phase, which is intramembranous.
+⚠ Endpoint is **mineralisation rate, not days in frame** — no fixator index by arm. ⚠ The abstract prints the
+dose as "0.20 µg", which cannot be right (approved dose 20 µg; patil2020 used 20 µg) — `value_unverified`.
+
+⭐⭐ **THREE — AND STEP 0 CLEARS IT *BY THE RESULT THAT CLOSED IT*.** CORR-269 closed teriparatide on
+**terminal femoral length 0.0% in EVERY arm**; R307/R309 built three lines against raising cAMP (Jansen's ·
+horike2026 CREB · ACRDYS2). **Every one is about the PHYSIS.** An agent with a *measured zero* at the plate
+cannot spend the period, cannot jam the RZ, and cannot deliver the CREB conflict where it matters — while
+doubling regenerate mineralisation in a randomised human trial. **The two accounts R277 named are, for this
+drug, SEPARATELY MEASURED: 0.0% at one, ×2.43 at the other.** The null is the licence, not the objection.
+⛔ The real obstacle is regulatory, not mechanistic: teriparatide's paediatric restriction is **open
+epiphyses** (rat osteosarcoma; US boxed warning removed 2020). Danger is deprioritised — prescribability is not.
+
+⭐⭐⭐ **FOUR — COMPOUND 2: ROMOSOZUMAB, AND CORR-327's RECEIVER TEST RUNS IN REVERSE FOR THE FIRST TIME.**
+R314 killed it: **SOST 0/14 in the postnatal human growth plate, 0.09 CPM**, while BGLAP 50.7 CPM 11/14 and
+SP7 12/14 — a *specific* absence. Correct, **for a growth-plate agent.** ⭐ **Sclerostin is an OSTEOCYTE
+product and a distraction regenerate is osteoblast/osteocyte bone. The absence that disqualified it at the
+plate is, on THIS axis, SELECTIVITY: romosozumab is a growth-plate-blind bone anabolic.**
+`mcdonald2018` (PMID 28884841, J Orthop Res) — **179 rats**, 1 wk latency / 2 wk distraction / 6 wk
+consolidation, Scl-AbIII 25 mg/kg s.c. 2×/wk from distraction or **consolidation only**, vs saline:
+**bone volume +26–38% (microCT, P<0.05)** with raised mineral apposition, and **MAXIMUM LOAD TO FAILURE
++177% (P<0.01) in the consolidation-only arm.** Authors name limb lengthening and **refracture prevention**.
+`alzahrani2018` = independent second group, mouse. **Romosozumab is APPROVED and has been dosed in children
+and adolescents.**
+✓ **The Wnt sign conflict dissolves the same way:** romosozumab RAISES canonical Wnt and R281 says *lower* is
+longer — a conflict the agent **cannot deliver**, because its ligand is not in the plate.
+⛔ **THE STRIKE, PLAINLY: `chandran2024` (IOF/SICOT) — "romosozumab has not shown a beneficial effect on human
+FRACTURE healing."** Defence is mechanistic and untested: a callus bridges in weeks endochondrally; a
+regenerate mineralises for months intramembranously under tension, and the rat benefit was **consolidation-
+phase specific** — the phase a fracture trial has no analogue of. **Hence grade C, not B.**
+
+⛔⛔ **FIVE — R277's GRADE-E OPEN RISK NOW HAS A SIGN, AND IT RUNS AGAINST THIS SUBJECT (CORR-343).**
+`kot2026` **has been in this bibliography since 2026-08-05 with the load-bearing arm missing:** three-point
+bending showed **REDUCED BONE STRENGTH IN TREATED WILD-TYPE MALES** under infigratinib, reduced male
+trabecular parameters, raised serum testosterone — authors name pan-FGFR risk **to the male skeleton**.
+`morice2025` calls **FGFR3 "a critical orchestrator of bone repair"** (Fgfr3-GoF calluses mineralise poorly →
+pseudarthrosis, rescued by infigratinib or vosoritide; CORR-203 applies to the rescue).
+→ **He is a WT male on a pan-FGFR inhibitor, and regenerate STRENGTH is what prevents refracture after frame
+removal.** ⭐ **The pairing is exact: the stack's lead agent's only measured effect on male bone strength
+points DOWN, and the proposed adjunct's largest measured effect (+177% max load) is on that same parameter.**
+Still **no FGFR inhibitor has been given during distraction in any species** — `allegri2025` tested vosoritide.
+
+⭐ **SIX — THE ONE PLACE "AIMED AT THE SPENT COMPARTMENT" IS NOT A DISQUALIFICATION.** R317/R318 select
+against limb-directed levers because the residual is trunk-dominant. **That criterion assumes the lever is
+window-bounded.** The CNP arm is limb-directed AND bounded by the closing plate; **lengthening needs no
+growth plate at all.** A compartment spent for GROWTH is still available for SURGERY. **R318's selection
+criterion must carry this exception explicitly.**
+
+⭐ **SEVEN — A FREE MECHANICAL PARAMETER NOBODY OPTIMISED.** `ilizarov1989` varied frequency at fixed
+1.0 mm/day across **1, 4 and 60 increments/day** and outcome improved **MONOTONICALLY**; the universal
+clinical 4/day is a **stated compromise**, and the source predicts continuous distraction is better still.
+**Motorised intramedullary nails can already deliver far higher frequencies.** No human rate/rhythm
+dose-finding study has ever been run. No drug, no device, no cost.
+
+Gaps: `g_l6mech_327a` (does doubled mineralisation → fewer days in frame?) · `g_l6mech_327b` (does the
+romosozumab fracture-healing negative transfer to a regenerate?) · `g_l12b_327c` (pause the FGFR inhibitor
+around a distraction?).
+
 ## ⭐⭐⭐⭐ R326 — **THE AKT AXIS SWEPT FOR AN ACCESSIBLE AGENT.** 36 of 41 nodes have nothing. The Step-0
 ## objection to the class DISSOLVES. And the answer is **TRODUSQUEMINE**, which completed human phase 1.
 
