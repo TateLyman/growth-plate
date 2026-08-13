@@ -192,7 +192,15 @@ It loads automatically. The ledger node (`ledger_what_is_dead_what_is_settled_wh
    Tet1, Tnks, Pde3b). Only the third can be cited in either direction. **I made this error inside R346
    before catching it** — inferring from six MGI terms with no length term that length must have been
    measured and been null. **Grep the gene's rows and confirm the LENGTH PARAMETER IS PRESENT before writing
-   that a screen says nothing.**
+   that a screen says nothing.
+
+38. **Ranking targets by ABUNDANCE when the signed effect is what matters.** CORR-349 (R347) — CORR-332 said
+   this for PDE isoforms; R347 shows it holds for the whole secretome. Of the nine abundant,
+   highly-cartilage-enriched blind-spot genes that reach the 207, **SIX are LOAD-BEARING** (ANGPTL2 −3.65,
+   FASN −3.61, HTRA1 −3.31, THBS3 −1.72, FIBIN −0.81, CLEC11A −0.74) **and the three brakes are all small.**
+   Meanwhile every brake this file actually works — HHIP 62 CPM, STC2 211, CHAD 455, ECRG4 695, CLEC3A 1,069
+   — sits at low-to-middling abundance. **Abundance finds the tissue's structural proteins; enrichment plus a
+   SIGNED effect finds levers.** Run both or the screen returns the matrix.**
 
 ## ⚠ GRADING RULE CHANGED BY THE OPERATOR (R302) — APPLY RETROACTIVELY
 
@@ -1765,6 +1773,139 @@ bone LENGTH.** With R312's rat contradiction that is **two independent strikes o
 so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
+
+## ⭐⭐⭐⭐ R347 — **R344's CORRECTION WAS APPLIED TO 72 GENES BY HAND. RUN GENOME-WIDE IT RETURNS 301
+## ABUNDANT CARTILAGE-ENRICHED GENES WITH ZERO ATLAS COVERAGE — and the best of them has a length endpoint.**
+
+⭐ **THE SCREEN NOBODY RAN.** R344 fixed the flagship dataset (2 mouse samples; 66-fold purity variation) and
+then corrected **72 hand-picked genes** — which is how CLEC3A appeared in R345, 11.3× understated. **The same
+correction was never applied to the other 36,529.** Run genome-wide on the 12 human samples (5 purest vs 5
+most blood-contaminated by COL2A1): **380 genes at ≥50 CPM in pure cartilage and ≥3× enriched — 301 of them
+had ZERO mentions anywhere in this atlas.** (**275 still do** — this round names 26.) Table:
+`atlas/data/round347/purity_corrected_enrichment_genomewide.json`. Top enrichment: COL10A1 107×, **NDUFA4L2 43×**, MMP13 31×,
+LOX 25×, **IHH 22×**, **ECRG4 16.4×**, **FGFBP2 15.9×**, STC2 13.8×, **SNORC 12.8×**, CHAD 12.8×, CLEC3A 9.9×.
+Biggest zero-coverage transcripts: **SPARC 11,126 CPM · SNORC 7,753 · FGFBP2 3,320 · SERPINE2 2,197 ·
+CNMD 1,695 · PRELP 1,408 · ECRG4 695.**
+
+⭐⭐⭐ **ECRG4 (C2orf40, AUGURIN) — THE FIRST NEW TARGET IN THIS FILE WITH A LENGTH ENDPOINT IN THE RARE
+DIRECTION, AND IT WAS SITTING IN TWO DATASETS WE ALREADY OWN.**
+· **694.6 CPM pure vs 41.6 contaminated = 16.35×, 12/12 samples. ZERO prior nodes, ZERO references.**
+· ⭐ **IMPC `Ecrg4<tm1b(EUCOMM)Hmgu>` HOMOZYGOTE, ICS, n=7m/8f: BODY LENGTH +0.950 at P=4.45e-07 — the
+  SECOND most significant of all 183 parameters measured.** CORR-341 checked: single gene, homozygous, no Cre.
+· ⭐ **IT IS LONGER, NOT BIGGER — every specificity control is null:** lean mass P=0.157 · fat mass P=0.086 ·
+  lean/body weight P=0.126 · fat/body weight P=0.082 · BMC/body weight P=0.518 · heart weight P=0.521.
+· ⭐ **AND BMD RUNS THE RIGHT WAY: Bone Mineral Density (ex-skull) +0.639, P=3.40e-03 — UP.** ECRG4 and
+  CLEC3A are **the only two candidates in this file whose knockouts GAIN bone density**, against SPIN4's
+  BHI −2.34, the ESR1-null spine Z −3.85→−5.6, the AI arm's lumbar trabecular and Tnks-null BMD −1.749.
+· ⭐ **THE BASE RATE WAS COMPUTED BEFORE THE CLAIM (CORR-329), AND REFINED TO THE ACTUAL PARAMETERS:**
+  **Body length — 6,817 IMPC rows, 64.1% negative; at P<0.05 only 24.8% of significant rows are POSITIVE;
+  at P<1e-4 only 12.8%.** (Tibia: 4,477 rows, 63.3% negative, 22.6% / 16.8%.)
+  **ECRG4 RANKS 8th OF THE 367 POSITIVE SIGNIFICANT BODY-LENGTH ROWS IN THE ENTIRE CONSORTIUM.**
+· **What it is:** a **SECRETED** precursor cleaved by furin and thrombin into augurin peptides (`kurabi2022`,
+  which also shows Ecrg4 falls as tissue becomes hyperplastic). Per `richter2023` (**review, index only**)
+  those peptides **inhibit proliferation and migration, INDUCE SENESCENCE and DECREASE TELOMERASE** via
+  NF-κB, p27, p53. **A secreted cartilage-specific senescence signal is a lever on N — THE POOL TERM, WHICH
+  NOTHING IN THIS STACK MOVES.** Step 0 clean. R287's LAYER and R314's antibody class again. Direction = BLOCK.
+· ✗ **AGAINST, and it is severe: ZERO CHEMICAL MATTER** (no human ChEMBL target record at all) · **not in
+  kosmicki2026's 207**, so no human effect size · **the described receptors are INNATE-IMMUNE** (endotoxin
+  receptor complex, scavenger receptors) so the cartilage mechanism is unmapped · **tibia rows −1.040 and
+  −0.863, both ns at n=5m/5f** — body-length-up-with-tibia-flat would point AXIAL (the right compartment)
+  but the tibia arm is underpowered, so that is a hypothesis, not a result · one allele, one centre, never
+  replicated · and ECRG4 is a tumour suppressor, so blocking it is two-sided (unlike STC2).
+· ⭐ **CHEAPEST VALIDATION: the mouse is already made and already phenotyped on 181 parameters — only the
+  skeleton was skipped.** Caliper femur, tibia and vertebrae. Gap `g_l13_347a`.
+
+⭐⭐ **THE ONE-CARBON AXIS — THE OBTAINABLE INVERSE OF A HYPOMETHYLATING AGENT, AND THE ANSWER TO R342's
+DEAD END.** R342 concluded the marketed epigenetic pharmacopoeia is an oncology **INHIBITOR** shelf and that
+for height the usable direction is the other one — *which is why an instruction to think at decitabine scale
+keeps returning contraindications.* **The move out is CORR-344's other shelf: substrate donors and cofactors,
+the shelf that produced this file's only obtainable compound (oral sodium sulfate). YOU CANNOT BUY A DNMT,
+KMT2B OR EZH2 ACTIVATOR. YOU CAN BUY THE METHYL GROUP.**
+· ⭐ **THE PLATE'S CONFIGURATION IS UNUSUAL AND WAS NEVER LOOKED AT: NNMT — the major SAM-consuming
+  methyltransferase — is 446.2 CPM at 5.51× cartilage enrichment with ZERO atlas coverage**, while the
+  **GNMT SAM buffer is 0.1 CPM, BHMT is 0.0, and MTR (0.52×) and MTHFR (0.54×) are contaminant-leaning.**
+  MAT2A 90.6 (1.04×), AHCY 34.7. **A big tissue-specific methyl sink, no buffer, no methionine regeneration.**
+· ⭐ **THE DIRECTION HAS THREE INDEPENDENT HUMAN-ANCHORED ARMS ALREADY IN THIS FILE, PLUS A MOUSE LENGTH
+  ENDPOINT, ALL SAYING MORE METHYLATION IS TALLER:** 5mC — **UHRF1 −2.52, UHRF2 −3.10 vs TET1 +7.95** (R343) ·
+  H3K4me3 — **KMT2B −0.35, ASH1L −0.41** (R333) · PRC2 — R311's screen puts **Eed +2.654, Ezh2 +1.874,
+  Suz12 +1.525 as ACCELERATING on loss**, so more PRC2 DELAYS maturation · **length — `yanagihara2025`,
+  Dnmt1 loss SHORTENS long bones** (and the mechanism is that lost methylation DE-REPRESSES ossification and
+  energy-metabolism genes).
+· ⛔ **THEN IT FAILS ITS OWN TESTS, WHICH IS WHY IT IS RECORDED AND NOT PROMOTED.** `hoang2023`:
+  **① THE MINOXIDIL PROBLEM AGAIN — active at 10–100 µg/mL ≈ 25–250 µM against plasma SAM of order 100 nM.**
+  **② SAM NEGATIVELY REGULATED PROLIFERATION** — the parameter erdafitinib is in the stack to raise (the
+  identical conflict resveratrol carries). **③ THE ROUTE IS POLYAMINES AND DFMO COMPLETELY ELIMINATED IT** —
+  the axis R331 closed, and AMD1 +3.08 says less polyamine flux is taller. **④ NNMT's OWN MOUSE ARM IS WEAK:
+  Nnmt-null body length +0.897 at P=0.0277 ranks 256th of 367, a second row is −0.475 ns, and nothing
+  skeletal appears among its 12 rows at P<0.01 — do NOT quote it as if it were an endpoint.** ⑤ **No
+  one-carbon metabolic gene is in the 207.** ⑥ MAT2A het tibia +0.565 P=0.013 runs the WRONG way (second
+  allele −0.025 ns, so uninformative). ⑦ Homocystinuria is a hypomethylating human state with TALL stature —
+  standard reading is fibrillin (the FBN1 axis, +9.13), but the tension is recorded, not explained away.
+· ✓ **WHAT SURVIVES CLEANLY, AND IT CLOSES HALF OF A GAP OPEN SINCE R287: SAM RAISES COL2A1, ACAN, SOX9 AND
+  THE CHONDROITIN-SULFATE SYNTHESIS ENZYMES (CHSY1, CHSY3, CSGALNACT1/2) IN HUMAN CHONDROCYTE CELLS.** R337
+  wrote that the only route to raising aggrecan is blocking catabolism (the RANKL/denosumab trap) and that
+  **the SYNTHESIS side was untouched. This is the first synthesis-side aggrecan elevator in the file** — and
+  it raises the GAG **sulfation** enzymes too, the same term R320–R322 reached from the sulfate donor.
+  **ACAN is −16.60 cm.** The agent is 250–2500× short; the demonstration that the synthesis side moves is not.
+· ⭐ **FREE SUBTRACTION, SAME MECHANISM: NNMT consumes SAM *and* NICOTINAMIDE, so NICOTINAMIDE RIBOSIDE, NMN
+  AND HIGH-DOSE NICOTINAMIDE LOAD THE PLATE'S METHYL SINK AND DRAIN SAM.** Ubiquitous longevity supplements.
+  Grade E, free to stop — **ask about it alongside topical minoxidil, paracetamol and AKG.**
+
+⚠ **NEW CONTRAINDICATIONS, EACH FROM A TARGET NEVER LOCALISED HERE — all grade D/E watch-items, none with a
+length endpoint under the drug:**
+· ⛔ **CARBONIC ANHYDRASE — CA2 is 369.0 CPM at 6.49×, 12/12, ZERO atlas coverage, and 12,537 ChEMBL
+  activities: the best-drugged gene in the entire screen.** Human **CA2 deficiency = osteopetrosis + renal
+  tubular acidosis + SHORT STATURE**, so losing CA2 activity shortens. **APPROVED INHIBITORS: acetazolamide,
+  methazolamide, dorzolamide — and TOPIRAMATE and ZONISAMIDE, both commonly prescribed to adolescents for
+  migraine and epilepsy.** (CA12 202.9 at 2.24×, CA11 13.8 at 2.81× also present.) ⚠ CA2 deficiency is a
+  biallelic null with systemic acidosis — CORR-203/CORR-325 apply. **Worth asking about.**
+· ⛔ **FASN pLoF −3.61 cm (P=1.4e-08), singleton −5.05** → FASN inhibitors (**denifanstat/TVB-2640**, phase 3).
+· ⛔ **HTRA1 pLoF −3.31 cm (P=6.1e-10)** → anti-HTRA1 agents in development for geographic atrophy.
+  ⚠ Weakened: the mouse null's body length is −0.102, ns.
+· ⛔ **SMPD3 587.8 CPM at 8.80×, 189 ChEMBL activities, zero coverage** → nSMase2 inhibitors.
+· ⛔ **Load-bearing on IMPC length, do not touch: PRELP** hom body **−1.290 P=8.6e-09** AND tibia −1.355
+  P=1.1e-04 · **SLC13A5** hom tibia **−2.396 P=1.9e-08** · **RBP4** hom tibia −0.999 P=6.3e-04.
+
+⛔ **THE HIF AXIS CLOSES WITH A MECHANISM INSTEAD OF AN ABSENCE.** HIF **output** is among the most
+cartilage-enriched signatures in the tissue — **NDUFA4L2 43.08×, CA9 9.47×, ADM 6.50×, BNIP3 5.48×,
+PGK1 4.72×, ENO1 4.42×** — while **the DRUGGED node is not enriched at all: EGLN1 1.12×, EGLN2 1.56×,
+EGLN3 0.49×, VHL 0.67×**, and **no HIF-pathway gene reaches the 207.** **The plate is already
+near-maximally hypoxia-activated; a prolyl-hydroxylase inhibitor has nothing to add.** That gives R284's
+empty roxadustat query a reason. Grade E (a ceiling argument from steady-state abundance is not a
+dose-response) — a reason to stop re-proposing the class, not a proof.
+
+⛔ **THE RETINOID AXIS — OPENED AND CLOSED IN ONE ROUND. DO NOT PROPOSE AN RAR ANTAGONIST.** The
+configuration looked ideal: **RARG 68.8 CPM at 2.06× is the plate's RAR** (RARA 0.56×, RARB 0.49× —
+contaminant-leaning), **the plate makes almost no retinoic acid** (ALDH1A2 ratio **0.06**, ALDH1A1 0.40) and
+**actively destroys it — CYP26A1 20.4 CPM at 18.63× enrichment**; receptor-local/ligand-systemic is the
+configuration that favours a systemic antagonist, and isotretinoin + palovarotene are two grade-A human
+harms showing retinoid excess closes physes. ⛔ **But the het genetics run the OTHER way on two independent
+lines: CYP26B1 pLoF+delmis +0.81 cm P=1.0e-11** (less RA degradation = MORE RA = TALLER) **and IMPC Rbp4
+homozygote TIBIA −0.999 P=6.3e-04** (less retinol delivery = SHORTER). **A band with the peak slightly ABOVE
+wild type — the R307 cAMP shape — and I cannot place it.** (RBP4 itself: 393 CPM, 4.15×, zero coverage.)
+
+⭐ **THE STRUCTURAL RESULT: OF THE NINE BLIND-SPOT GENES THAT ARE IN THE 207, SIX ARE LOAD-BEARING AND ONLY
+THREE ARE BRAKES — AND ALL THREE BRAKES ARE SMALL.** Loss shortens: **ANGPTL2 pLoF −3.65 (P=3.9e-10) ·
+HTRA1 −3.31 · FASN −3.61 · THBS3 −1.72 (P=3.4e-14) · FIBIN −0.81 (n=8,136) · CLEC11A −0.74 (n=10,012)**.
+Loss lengthens: AEBP1 +1.10 · LOXL3 +0.96 (already held) · COL16A1 +0.85. → **The abundant, highly
+cartilage-specific secretome is predominantly REQUIRED rather than restraining; the brakes this file cares
+about (HHIP 62 CPM, STC2 211, CHAD 455, ECRG4 695, CLEC3A 1,069) all sit at low-to-middling abundance.**
+**Abundance is not a target-finding criterion on its own — enrichment plus a signed effect is.**
+
+⚠ **CORR-313, FIFTH INSTANCE, AND IT COST NOTHING TO FIND: `resveratrol_delays_fusion_the_untouched_compound`
+IS A FULLY-WORKED NODE WITH A FINAL-LENGTH AND FUSION-TIMING ENDPOINT AND IT HAS NEVER BEEN IN CLAUDE.md.**
+`karimian2013` (Karimian/Chagin/Ohlsson/Sävendahl — **the laboratory whose `chagin2007` killed tamoxifen
+here**), rabbit, oral trans-resveratrol 200 mg/kg/day: **ovary-intact tibia 111.6 vs 109.5 mm, p<0.05 (+1.9%,
+femur p=0.1 ns); OVX femur 102.4 vs 100.9, p<0.05 (+1.5%, tibia no difference)**; and the strong part —
+**fusion delayed at THREE physes**, distal tibia 57% vs 6% unfused at 4 wk, **proximal tibia (the last to
+fuse, so the one that sets final length) 0% fused on drug vs 50% in controls, p<0.05**, blinded scoring, E2
+positive control fusing everything. **Apoptosis 0.2% = control** (tamoxifen's exact liability, opposite
+sign). Mechanism proposed = **VEGF and laminin suppression at the vascular invasion front** — a different
+control point from aromatase inhibition. ⛔ **TWO HARD STACK CONFLICTS, which is why it was never promoted:**
+**erdafitinib is 39% CYP2C9 + 20% CYP3A4 = 59% of clearance through two enzymes resveratrol inhibits**, and
+**`brown2010`: 40 humans, 0.5–5 g/day × 29 d → circulating IGF-1 AND IGFBP-3 FELL IN ALL VOLUNTEERS, p<0.04
+for both** — against the GH arm. Plus every animal was **FEMALE**, and it **lowers BrdU in the plate**.
+**Read the node before re-deriving any of this.**
 
 ## ⭐⭐ R346 — **"NO IMPC LENGTH ROW" MEANS THREE DIFFERENT THINGS AND THIS FILE HAS READ ALL THREE AS NULL.**
 ## The Clec3a mouse EXISTS and is orderable. And two positive heterozygous body-length effects were sitting

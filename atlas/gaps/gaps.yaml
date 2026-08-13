@@ -1,4 +1,50 @@
 gaps:
+- gap_id: g_l13_347a
+  type: known_unknown
+  layer: L13
+  status: open
+  question: Does deleting Ecrg4 lengthen bone, and does blocking augurin expand the resting zone?
+  why_it_matters: ECRG4 is 694.6 CPM at 16.35x cartilage enrichment in the postnatal human growth plate with
+    zero prior atlas coverage, and its IMPC null has BODY LENGTH +0.950 at P=4.45e-07 - eighth of the 367
+    positive significant body-length rows in the whole consortium, against a base rate where only 24.8% of
+    significant rows are positive. Lean mass, fat mass and body-weight ratios are all null and bone mineral
+    density is UP, so the animal is longer rather than bigger. If augurin is a secreted senescence signal at
+    the plate it is a lever on N, the pool term, which nothing in this stack moves.
+  what_is_known: 'Ecrg4<tm1b(EUCOMM)Hmgu> homozygote, ICS, n=7m/8f: body length +0.950 P=4.45e-07, BMD
+    excluding skull +0.639 P=3.40e-03, tibia length -1.040 and -0.863 both ns at n=5m/5f. richter2023 (review):
+    augurin peptides inhibit proliferation and migration, induce senescence and decrease telomerase via NF-kB,
+    p27 and p53. kurabi2022: the precursor is cleaved by furin and thrombin to a secreted fragment with a
+    defined receptor, and Ecrg4 expression falls as tissue becomes hyperplastic.'
+  what_is_missing: No femur, tibia or vertebral caliper measurement in the Ecrg4 null; no zone histology; no
+    resting-zone cell count; no measurement of ECRG4 in a growth plate by zone in any species; no human height
+    effect size (ECRG4 is not among kosmicki2026's 207); and no chemical matter of any kind - no human ChEMBL
+    target record exists.
+  discriminating_experiment: Order the existing Ecrg4 null, caliper femur, tibia and vertebrae at maturity
+    against littermates, and read the growth plate for resting-zone height and Sfrp5+/CD73+ progenitor number.
+    The mouse is already made and already phenotyped on 181 other parameters; only the skeleton was skipped.
+- gap_id: g_l13_347b
+  type: quantitative_gap
+  layer: L13
+  status: open
+  question: What is the SAM/SAH ratio in growth-plate chondrocytes, and is methylation there substrate-limited?
+  why_it_matters: Three independent human-anchored modules in this atlas say more methylation is taller -
+    5mC (UHRF1 -2.52 cm, UHRF2 -3.10 against TET1 +7.95), H3K4me3 (KMT2B -0.35, ASH1L -0.41) and PRC2 (the
+    R311 maturation screen puts Eed, Ezh2 and Suz12 as accelerating on loss) - with a mouse length endpoint
+    (yanagihara2025, Dnmt1 loss shortens long bones). R342 established that no activator exists for any of
+    those writers, so the only obtainable way to push that direction is the substrate. Whether that would do
+    anything depends entirely on whether supply is rate-limiting, and nobody has measured it.
+  what_is_known: 'In the purity-corrected postnatal human growth plate the configuration is unusual: NNMT, a
+    major SAM consumer, is 446.2 CPM at 5.51x cartilage enrichment; the GNMT SAM buffer is 0.1 CPM; BHMT is
+    0.0; MTR (0.52x) and MTHFR (0.54x) are contaminant-leaning; MAT2A is 90.6 CPM at 1.04x. hoang2023 shows
+    SAM raises COL2A1, ACAN, SOX9 and the chondroitin-sulfate synthesis enzymes in chondrocytes, but at
+    ~25-250 uM and via a polyamine route that DFMO abolishes, while lowering proliferation.'
+  what_is_missing: No measurement of SAM, SAH or the SAM/SAH ratio in growth-plate cartilage in any species;
+    no methyl donor of any kind has a bone-length endpoint in any species; and no one-carbon metabolic gene
+    appears in kosmicki2026's 207, so there is no human genetic anchor on the supply half of the axis.
+  discriminating_experiment: Measure SAM and SAH by LC-MS/MS in microdissected growth-plate zones from a
+    normal growing animal, then feed graded methionine or an NNMT inhibitor and read global 5mC, H3K4me3 and
+    a caliper on the femur and spine. If the SAM/SAH ratio does not move under supply, the axis is closed
+    without any further chemistry.
 - gap_id: g_l3_is_the_pde3_height_effect_local_or_systemic
   question: Is PDE3B's human height effect exerted in the growth plate, or systemically through its adipocyte
     and hepatic insulin biology? The transcript is near background in the only human growth-plate dataset while
