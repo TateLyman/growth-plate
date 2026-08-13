@@ -1705,6 +1705,10 @@ HIF-PHI class was already checked in R284.
 
 ## CONTRAINDICATED — do not add to the stack
 
+- ⛔ **LITHIUM / GSK3 INHIBITORS, and the whole bone-anabolic WNT-RAISING shelf** (NOTUM inhibitors, DKK1
+  antibodies). R281 puts the canonical-Wnt optimum BELOW wild type; every marketed Wnt agent in bone raises
+  it, because the indication was always bone MASS. **Lithium is prescribed to adolescents — ASK.** Grade E,
+  mechanistic; the only two length-adjacent lithium results are restorations that do not decide it. R356
 - **Menin-MLL inhibitors** (revumenib, approved Nov 2024; ziftomenib) — block KMT2A-dependent H3K4
   methylation, and R333 says MORE H3K4me3 is TALLER. Grade E, mechanistic. R342
 - **DNMT inhibitors** — ⭐ **NOW HUMAN-ANCHORED (R343): UHRF1, DNMT1's essential targeting cofactor, is
@@ -1847,6 +1851,108 @@ by BoneXpert on serial hand films, with standing AND sitting height at a fixed t
 separates the three cases that matter — **clock stalled · clock at the smith2008 residual (~0.7) · clock near
 normal** — and it is the only thing that tells us whether a pool agent is worth chasing for him at all.
 Gap `g_l12_355a`.
+
+## ⭐⭐⭐⭐ R356 — **THE POOL ROUND. The genome-wide resting-zone contrast had NEVER been run, and its
+## STRUCTURE is the finding: the human resting zone's own programme is SECRETED CANONICAL-WNT ANTAGONISTS.**
+## Run `atlas/tools/round356_resting_zone_enrichment_screen.py` → `atlas/data/round356/`
+
+R355 said the PERIOD is covered twice (anastrozole + vepdegestrant) and the residual is **N, the pool.**
+Every pool candidate here (HHIP, CHAD, SCUBE3, STC2, CLEC3A, ECRG4, SPIN4) arrived by some other route.
+**GSE9160 separates RESERVE from PZ/PHZ/HZ and R302 only ever used it for PRESENCE on 251 hand-picked
+symbols.** Nobody asked it, genome-wide, what the resting zone runs that the rest of the column does not.
+Design: 42,986 unambiguous probe sets · **each donor separately** (CORR-317) · RZ vs **the cartilage column
+only, perichondrium EXCLUDED from the denominator** (a different tissue — CORR-339) · RZ above **that
+array's own** background (thresholds differ 2.4× between donors) · every probe set kept separate.
+
+⭐ **THE RESULT: 10 genes of 6,219 detected = 0.2%. SEVEN HAD ZERO PRIOR ATLAS COVERAGE.**
+**ITIH5 7.09 · SMOC1 4.10 · LRRC43 2.92 · FRZB 2.79 · SFRP5 2.67 · PTGDS 2.60 · CILP 2.37 · CACNB1 2.29 ·
+CRLF1 2.15 · LYL1 2.10** (minimum-across-donors enrichment).
+⭐⭐ **THREE OF THE TEN ARE SECRETED CANONICAL-WNT ANTAGONISTS — SFRP5, FRZB, SMOC1 — which is R281's pool
+lever reached from human tissue by a route that knew nothing of SPIN4.**
+
+⛔ **TWO PREREGISTERED CONTROLS FIRED, AND BOTH MATTER MORE THAN THE HIT LIST.**
+· **4 of 5 MUST-BE-RZ controls FELL BELOW BACKGROUND in the resting zone** — NT5E, PTHLH, GREM1, **HHIP**.
+  Only SFRP5 passed. **So this platform is blind to exactly the low-abundance secreted-regulator class the
+  pool question is about, and 0.2% is a DETECTION FLOOR, not a measurement. A gene absent from this list is
+  NOT excluded** — CORR-334's shape on a third platform.
+· **DONOR 1's RZ CARRIES A VESSEL SIGNATURE DONOR 2's DOES NOT: VWF 74.66×, PECAM1 12.37×, CDH5 4.49×,
+  CD74 4.59× — donor 1 only** (donor 2: 0.73 / 1.04 / 0.90 / 0.89). The reserve zone abuts the **secondary
+  ossification centre**, so an RZ dissection carries bone/marrow/vessel no other zone carries. **The
+  both-donors requirement is what removes it, and it was imposed before the panel was read.**
+· ✓ Hypertrophic panel behaved (COL10A1, IBSP, MMP13, SPP1, ALPL, MEF2C all correctly NOT RZ). Housekeeping
+  flat (GAPDH 1.10/0.96, PPIA 0.85/1.09, TUBB 0.98/0.84). **B2M deliberately omitted — CORR-339.**
+
+⭐⭐⭐ **SMOC1 — THE TARGET. Zero prior nodes, zero prior refs, and it is the ONLY one of the ten in the 207.**
+- **Human: pLoF −1.630 cm, P=5.4e-05, 303 hets; best-powered row pLoF+delmis −0.990, P=1.0e-09, 1,895.**
+  **MONOTONE IN VARIANT SEVERITY** across 35 rows — delmis −0.87/−0.98 → poss-delmis −0.31/−0.34 → all
+  missense −0.30 (n=12,123). R324's shape. **Loss SHORTENS → LOAD-BEARING → the direction is to RAISE it.**
+- ⭐ **CORR-325 RUN BEFORE PROPOSING, AND IT PASSES MONOTONICALLY — the test the microfibril module FAILED.**
+  HPO: SMOC1 biallelic (OMIM 206920 / ORPHA 1106) = **Short stature + postnatal growth retardation.**
+  One copy shortens, two copies shorten more. **NOT a band, no interior optimum.** FBN1/LTBP2/PLOD2 invert
+  between the doses; SMOC1 does not. **None of the other nine hits has any HPO stature annotation.**
+- ⭐ **Mouse LENGTH, and CORR-341 + CORR-348 + CORR-329 all run first.** `Smoc1<tm1b(EUCOMM)Wtsi>`, MRC
+  Harwell, single gene, no Cre, no double: **TIBIA LENGTH hom −7.483, het −2.050 (P=0.054)** — a
+  **dose-response**, het = 27% of hom. **Base rate: 4,477 tibia rows, median −0.262, 63.3% negative → the
+  SIGN is uninformative, but −7.483 is the 0.18th PERCENTILE, with only EIGHT rows in the entire consortium
+  more extreme downward.** ⭐ **Paralogue, different centre, different allele: `Smoc2<tm1.1(KOMP)Vlcg>`, JAX,
+  n=8/8, BODY LENGTH −3.577 at the 0.81st percentile, female P=1.26e-24, male P=1.07e-07.**
+- ⚠ **CORR-348 on the other nine: Frzb, Itih5, Ptgds, Crlf1, Cacnb1, Lrrc43, Lyl1 have ZERO IMPC rows
+  (never phenotyped). Sfrp5 has 144 rows across 123 parameters and NOT ONE IS A LENGTH.** Only **Cilp** is a
+  real length null (body −0.470 P=0.147). **Eight of nine "nulls" are not nulls.**
+- **Mechanism (`chen2025smoc`, Nat Commun 2025, ⚠ ABSTRACT ONLY — full text blocked to automated access):**
+  incisor MSCs are marked by Smoc2 and establish **QUIESCENCE** at E14.5–16.5; **Smoc1 and Smoc2 are
+  "indispensable for maintaining the quiescence and hierarchy" of MSCs; they DISRUPT THE BINDING BETWEEN
+  CANONICAL WNT LIGANDS AND GLYPICAN**, the step that moves hydrophobic Wnt through an aqueous niche.
+  **Less SMOC → more Wnt reaches the stem cell → quiescence lost → pool spent → shorter.** Agrees with
+  `lui2023` (SPIN4: mild Wnt ↓ → bigger RZ pool, longer bone) and with the human sign. ⚠ **It is a TOOTH.**
+
+⛔ **THE HEADLINE'S OWN CORRECTION: SMOC1 IS NOT AN RZ-SPECIFIC GENE.** Re-scored against perichondrium,
+**PC ≥ RZ in BOTH donors** (RZ/PC 0.42 and 0.87). Probe 222784_at: **RZ 2618/2606, PC 6245/2985**, vs PZ
+244/616, PHZ 109/118, HZ 638/298. Honest compartment = **PERICHONDRIUM + RESTING ZONE.** ⚠ And it is carried
+by **one probe set of two** — the other (222783_s_at, the cross-hybridising `_s_at`) is flat at ~300. The
+only unambiguously **RZ-SPECIFIC** gene the screen returns is **SFRP5** (RZ/PC 2.46 and 66.08) — which
+`lui2023` had already named. LRRC43 and PTGDS qualify on one probe of three each and are weak.
+⭐⭐ **AND THAT CORRECTION IS THE BEST PRACTICAL NEWS IN THE ROUND.** R323: R315's delivery wall is about
+**AVASCULAR** cartilage, and the perichondrium is a **vascularised sheath a systemic agent reaches.**
+HHIP, CHAD, CLEC3A, STC2 and ECRG4 all require crossing into avascular cartilage. **SMOC1 IS THE FIRST
+POOL-DIRECTION TARGET IN THIS FILE WHOSE PRINCIPAL COMPARTMENT IS PERFUSED.**
+
+⭐⭐ **CORR-300 REACHED A FOURTH TIME — AND IT FINALLY EXPLAINS WHY TANKYRASE FAILED.** One pathway, three
+depths: **EXTRACELLULAR** (SPIN4-like output ↓, SFRP5, FRZB, SMOC1) → **longer** · **INTRACELLULAR**
+(tankyrase) → failed from FOUR independent directions (R303 IMPC length, R311 maturation, R312 expression,
+R318 compartment) · **TOTAL LIGAND-SECRETION BLOCKADE** (PORCN) → inverse zone decomposition, plate
+exhausted (CORR-290). **The canonical-Wnt band was never wrong; tankyrase was the wrong DEPTH.**
+⭐ **And the layer is almost entirely uncovered: SMOC1 is the ONLY member in the 207.** Not in it: SMOC2,
+SFRP1/2/4/5, FRZB, WIF1, DKK1/2, NOTUM, GPC1/3/4/5/6. Prior coverage: **GPC3 0 files, GPC4 0, GPC5 0,
+GPC1 1, GPC6 1, NOTUM 2** — the glypican step named as the mechanism has essentially never been examined.
+
+⚠ **NEW CONTRAINDICATION CLASS — THE BONE-ANABOLIC WNT-RAISING SHELF, LITHIUM INCLUDED. Grade E.**
+R281 puts the canonical-Wnt optimum **BELOW** wild type, so raising Wnt from normal moves away from it —
+and **every marketed Wnt agent in bone RAISES it, because the indication was always bone MASS**:
+**LITHIUM / GSK3 inhibitors · NOTUM inhibitors · DKK1 antibodies** (romosozumab separately dead, R314).
+**LITHIUM IS PRESCRIBED TO ADOLESCENTS AND HAS NEVER BEEN IN THIS FILE'S CONTRAINDICATION LIST.**
+R342's shape on a new axis. `guidotti2015`: LiCl raises β-catenin → terminal differentiation + oxidative
+DNA damage in human chondrocytes.
+⛔ **RECORDED AGAINST MYSELF — the only two length-adjacent lithium results are RESTORATIONS and NEITHER
+decides it.** `soucek2024` (Sävendahl lab): fetal rat metatarsals, 14 d — control **+2.4±0.3 mm**, dex
+**+1.4±0.2**, dex+LiCl **+1.9±0.3** (P<0.001 vs dex). **A partial rescue that does NOT reach its own
+control, with no LiCl-alone arm** — CORR-203 exactly. `lau2022lithium`: MPS I dogs, oral lithium 14 d→6 mo —
+growth plates had **more hypertrophic chondrocytes than untreated MPS I AND than heterozygous controls**,
+but **no vertebral or long-bone LENGTH was measured**, and more hypertrophic cells is equally consistent
+with faster differentiation = spending the period. **No GSK3 inhibitor has a bone-LENGTH endpoint in a
+NORMAL animal.** ⭐ **The cheap test is R337's propranolol move: lithium has been given to children for
+decades — has any paediatric cohort recorded height velocity?**
+
+⛔ **WHAT R356 DOES NOT DO: IT PRODUCES NO PRESCRIBABLE ADDITION.** SMOC1 has **NO human ChEMBL target record
+at all** (proper query, CORR-347), the direction is to **SUPPLY a secreted protein**, and no SMOC has ever
+been perturbed in cartilage or a growth plate in any species. ⚠ And `smoc_runx2_review2026` (review, index
+only) reports **SMOC2 modulates BMP2 BIPHASICALLY — enhancing at low concentration, inhibiting receptor
+engagement at high — so the supply direction has its own interior optimum.** ⚠ Smoc1 hom n = 2m/4f.
+⭐ **BUT THE VALIDATING EXPERIMENT IS AN ORDER, NOT A PROGRAMME: the Smoc1 mouse is MADE and already
+tibia-phenotyped (caliper the femur and vertebrae, and read RZ height + progenitor number — the `lui2023`
+signature separates a POOL effect from a RATE effect), and recombinant human AND mouse SMOC-1 are catalogue
+reagents at >95% purity.** Gaps: `g_l13_356a` (does SMOC1 do in the plate what it does in the incisor?) ·
+`g_l13_356b` (is the Wnt-raising shelf a cost he could be given?).
 
 ## 🎯🎯🎯🎯🎯🎯 R354 — **THE TARGET PROTEIN IS IN 64% OF RESTING AND 64% OF PROLIFERATIVE CHONDROCYTES,
 ## IN 16 BOYS, AND IT DOES NOT DECLINE ACROSS TANNER 1→5.** R353's ESR1 objection is WITHDRAWN.
@@ -2096,7 +2202,8 @@ height **P=2.16e-07**, 2× the standing effect at the same N), Step 0 clean, act
 today — grade D and gated on **one blood test, serum inorganic sulfate**, which has never been ordered.
 ⭐ **AND THE FREE SUBTRACTIONS:** topical/oral **minoxidil** (ask — it is OTC and near-ubiquitous in teenage
 boys) · **paracetamol** (−24% serum sulfate per 1.5 g — doubly relevant if sulfate is added) · **AKG and
-megadose vitamin C** · **NR/NMN/high-dose nicotinamide** (they load NNMT, the plate's methyl sink).
+megadose vitamin C** · **NR/NMN/high-dose nicotinamide** (they load NNMT, the plate's methyl sink) ·
+**lithium and any GSK3 inhibitor** (R356 — raises canonical Wnt, the direction R281 says is shorter).
 
 ## ⛔⛔⛔ R350 — **THE NONCLINICAL REVIEW WAS HUNTED DOWN AND IT HOLDS THE EXACT EXPERIMENT. IT IS NULL.
 ## THE DABIGATRAN ARM CLOSES.** ⭐ **And it opens a whole class of length endpoints this file has never mined.**
