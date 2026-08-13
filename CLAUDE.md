@@ -1746,6 +1746,76 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## 🎯🎯🎯 R338 — **THE SWEEP SPECIFIED PROTEIN ABLATION AND DISMISSED THE ONLY DRUG CLASS THAT DOES IT.**
+## The first approved PROTAC arrived after that node was written. This is the largest live proposal in the file.
+
+⛔ **THE ATLAS'S OWN CLOSING MECHANISM.** `the_receptor_level_oestrogen_sweep` closed every antioestrogen
+class — not on missing data but on mechanism: **growth-plate closure runs on ERα functions that DO NOT
+REQUIRE LIGAND.** `brjesson2012` — ERαAF-1(0) mice have a **HYPERACTIVE** receptor and **plates CLOSED in
+every animal while every wild-type stayed open**; `movrareskrtic2014` — ERα lacking AF-2 is **constitutively
+active without ligand**. Every marketed antioestrogen (SERM, pure antagonist, SERD, CERAN, SERCA) is an
+**AF-2 agent**. The node's own words for what would work: *"it is the whole receptor protein that is gone,
+both activation functions and the membrane pool with it. **No drug does that.**"*
+
+⛔ **AND NINE LINES LATER IT FILES "the ERalpha PROTAC vepdegestrant" AS "AF-2 agents by design".** ⭐ **A
+PROTAC IS NOT AN AF-2 AGENT.** It binds an E3 ubiquitin ligase and the receptor simultaneously and triggers
+**ubiquitination and PROTEASOMAL DESTRUCTION OF THE PROTEIN** — AF-1, AF-2, DBD and the membrane pool
+together, catalytically. The ER warhead engages the LBD, which is why it got grouped with the blockers,
+but the warhead is the ADDRESS and degradation is the EFFECT. **The node specified protein ablation as the
+requirement and dismissed the only class that achieves it, in the same paragraph.**
+
+⭐⭐ **THE ORDERING THAT ASSEMBLES — four perturbations of one receptor, ranked by PROTEIN removed, every
+row with a length or plate-status endpoint:**
+| perturbation | ERα protein | endpoint |
+|---|---|---|
+| **ERα−/−** (whole protein gone) | absent | **tibia +8.3% (P<0.01), growth plate height +18% (P<0.05)**, growth continues in old age |
+| **cartilage-specific ERα−/−** | absent in plate | normal through puberty, then **grew past 4 months when controls stopped → INCREASED FEMUR LENGTH at 1 yr** |
+| **ERαAF-1(0)** (one domain gone, receptor hyperactive) | **present** | growth **CEASED**, tibia **−4.9%**, **plates CLOSED in ALL, open in ALL WT** |
+| **fulvestrant / ICI 182,780** (AF-2 blockade) | present | **NO effect in WT** ×3 (sibonga1998, turner2000, movrareskrtic2014), each with its own positive control |
+**Remove the PROTEIN → plate stays open and bone lengthens. Block a DOMAIN or the LIGAND → closure, or
+nothing.** `brjesson2012`'s authors state the human parallel themselves: the ERα-null phenotype *resembles
+patients with inactivating ERα or aromatase mutations.*
+
+⛔ **CORR-309, FIFTH INSTANCE — AND AGAIN THE DROPPED ARM IS THE ONE THAT SUPPORTS THE LEVER.** The sweep
+used `brjesson2010` to argue the compartment is wrong ("grew NORMALLY through sexual maturation"). **The
+same abstract continues: adult cartilage-specific ERα−/− mice CONTINUED TO GROW AFTER 4 MONTHS while
+controls did not, giving INCREASED FEMUR LENGTH at 1 year** — and the authors conclude plate ERα is
+unimportant early and **IS essential for reduction of longitudinal growth in ELDERLY mice.** **Plate ERα is
+dispensable EARLY and operative LATE — which inverts the compartment objection for a BA16 subject.**
+
+✓ **STEP 0 PASSES, AND IT EXPLAINS THE AI CEILING RATHER THAN RESTATING IT.** Anastrozole removes **LIGAND**.
+R274: removing more ligand buys nothing. R337 closed that loophole — letrozole suppresses **every** fraction
+deeper, including the **tissue estrone-sulfate reservoir (90.1% vs 72.9%)**, and still no height. Read with
+brjesson2012 those say **the ligand arm is SATURATED and the residual closure drive is LIGAND-INDEPENDENT** —
+the one step nothing in this stack touches.
+
+⭐ **OBTAINABLE, AND THIS IS NEW SINCE THE SWEEP WAS WRITTEN: VEPDEGESTRANT (ARV-471, Veppanu) WAS FDA-APPROVED
+1 MAY 2026 — THE FIRST PROTAC EVER APPROVED. Oral, 200 mg once daily with food.** No DLTs at that dose;
+TRAEs grade 1 except one grade 2 anaemia. Phase 3 **VERITAC-2 ran it head-to-head against FULVESTRANT** —
+the very AF-2 agent this atlas tested at a plate and found null.
+
+⛔ **WHAT WOULD KILL IT — stated before proposing, and the first is a HUMAN PAEDIATRIC TRIAL.**
+· **`sims2012` IS THE WARNING SHOT.** Fulvestrant, 30 growing girls, 12 months: bone-age advancement fell
+  **1.99 → 1.06 (p=0.0007)** and **PREDICTED ADULT HEIGHT DID NOT MOVE (163.0 → 163.5 cm)** because velocity
+  fell with the clock. **The clock slowed and growth slowed with it.** Defence — fulvestrant is an AF-2
+  blocker and a poor in-vivo degrader, so the mechanism PREDICTS that null — is untested and convenient.
+  **If a PROTAC reproduces that shape, the class is closed for good.**
+· **`smith2008`: bone age STILL ADVANCED 15 → 17.5 y with the receptor entirely absent**, and spine BMD
+  Z **−3.85** falling (feigerlova2025: −3.9 → −5.6, unresponsive to oestradiol AND tamoxifen). Under R278
+  that is an **EFFICACY** term — vertebral, and the residual is trunk-dominant.
+· **brjesson2012 is OLD FEMALE mice; rodent plates do not fuse as human plates do.** Largest translation gap.
+· **Degradation is never complete, and nobody has measured ERα protein in growth-plate chondrocytes under
+  ANY degrader** — the sweep's own open measurement, still open. Cartilage is avascular (R315).
+· **ZERO skeletal/chondrocyte/growth data for vepdegestrant in any species** — a GAP under R302, not a kill.
+· ⚠ **VEPDEGESTRANT IS A CYP3A4 SUBSTRATE and erdafitinib is handled by CYP3A4/CYP2C9 — the interaction is
+  UNRESOLVED.** The sweep's clean-interaction finding was for FULVESTRANT and does NOT transfer.
+· Approved for **adults with ESR1-mutated metastatic breast cancer**; no paediatric experience of any kind.
+
+⭐ **THE DISCRIMINATING EXPERIMENT, CHEAP AND NEVER RUN: give an ERα PROTAC to a NORMAL growing animal and
+measure ERα PROTEIN in growth-plate chondrocytes, plate height, and BONE LENGTH — with fulvestrant as the
+internal comparator.** The mechanism predicts the degrader moves length and the blocker does not.
+**Grade C on the ordering; grade E that it works in this subject. Not a recommendation — a specification.**
+
 ## ⛔ R337 — FIVE OBTAINABLE ROUTES TAKEN DOWN, AND A LENGTH ENDPOINT THAT SAT UNREAD HERE FOR A WEEK
 ## No new addition survived. Recorded in full so the next context cannot re-derive any of it as new.
 
