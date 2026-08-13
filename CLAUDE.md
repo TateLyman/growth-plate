@@ -327,10 +327,16 @@ and do not collapse to knees-only. Both compartments are live for him.
   and no expanded-access programme. Only human data = 3 adult urothelial-carcinoma case reports. R212/R213/
   R275, `the_named_compounds_for_this_case`.
 - **THE AXIAL/APPENDICULAR SPLIT — the most decision-relevant compartment fact in the file.**
-  **CNP arm is LEG-preferential** (navepegritide *lowers* upper:lower segment ratio; vosoritide L1–L4 null in
-  the EMA report, axial null outright in monkeys, and in rats the axial dose that works also causes scoliosis
-  + kyphosis + fractures — R207). **FGFR3 arm REACHES THE SPINE** (dabogratinib, above). Since the residual at
-  BA 14.5+ is trunk-dominant (R274), **the CNP arm is aimed at the spent compartment and the FGFR3 arm is not.**
+  **CNP arm is LEG-preferential** — ⛔ **BUT NOT ON THE U:L RATIO, WHICH WAS WITHDRAWN R329 (CORR-346).**
+  Vosoritide **L1–L4 null** in the EMA report, axial null outright in monkeys, and in rats the axial dose that
+  works also causes scoliosis + kyphosis + fractures — R207. **FGFR3 arm REACHES THE SPINE** (dabogratinib).
+  Since the residual at BA 14.5+ is trunk-dominant (R274), **the CNP arm is aimed at the spent compartment.**
+  ⛔ **"Navepegritide lowers upper:lower segment ratio" IS DELETED as a supporting line.** Three 2026 sources
+  in this bibliography give the **SAME non-significant −0.02** for BOTH arms: `cnpmeta2026` ULS −0.02 (95% CI
+  −0.04 to +0.01), **P=.17, I²=0, vosoritide and navepegritide SEPARATELY both −0.02**; `savarirayan2026infig`
+  (infigratinib phase 3) ULS **−0.02** (96% CI −0.06 to 0.01), ns; `reincke2025` no change. **A measure that
+  returns the same null for both arms cannot rank them.** What carries the claim is the DIRECT axial evidence
+  (L1–L4, monkey, rat, dabogratinib L4–L6) and R318's GWAS — a 52-wk ratio in children is a weak instrument.
 - **NPR3 LIGAND — and read all four lines before proposing a molecule (R300 rewrote this entry).**
   The atlas *derives* this from its own spec (block clearance instead of adding ligand; ~1.3–1.5 kDa
   partitions far better than vosoritide's 4.1 kDa). **Never given to a human, no bone data in any species.**
@@ -1658,6 +1664,92 @@ HIF-PHI class was already checked in R284.
 - **Tamoxifen / SERMs** — permanent arrest via resting-zone apoptosis. R274
 - **Letrozole over anastrozole** — no height advantage, costs IGF-1. R274
 
+## ⭐⭐⭐⭐ R330 — **THE SITE-RESOLVED HUMAN LIMB DATA, OPENED AT LAST** (`atlas/data/round330/`).
+## Seven operator-supplied files, never opened. New capability: chromatin + expression + height GWAS
+## resolved to EIGHT INDIVIDUAL GROWTH PLATES, plus knee/hip/shoulder/elbow DE.
+
+⭐ **NPR3 IS AN ALMOST PRIVATE REGULATORY FEATURE OF THE DISTAL FEMUR** — 4th-ranked of 14 genes for that
+site: **accessibility 0.93, site-GWAS 0.94**, against **0.02–0.08 at ALL SEVEN other plates**; expression
+0.79 vs 0.10–0.22; log2FC +1.50, padj 9.5e-05. **AVG_EXP_GWAS 0.04** → the association is *not* diffuse.
+Only CNP-axis gene in any of the eight blocks. The distal femur is the fastest-growing plate in the body.
+
+⭐ **THE JOINT MAP — KNEE AND ELBOW ARE MIRROR IMAGES ON FOUR ATLAS TARGETS:**
+| | NPPC | NPR3 | HHIP | STC2 | PAPPA |
+|---|---|---|---|---|---|
+| **KNEE** | **+1.22** (2.5e-4) | **+0.97** (2.1e-3) | **−0.92** (2.2e-7) | −0.56 | — |
+| **ELBOW** | — | **−1.27** (1.2e-5) | **+1.26** (1.4e-14) | **+1.20** (2.6e-8) | +0.79 (4.6e-13) |
+| hind-v-fore | — | +0.88 | −1.05 (1.1e-9) | −1.13 (2.3e-8) | −0.47 |
+**Fast lower-limb plates run LOW secreted brakes + HIGH CNP tone; slow upper-limb plates the reverse.**
+
+⛔ **AND CORR-299 KILLED THE LEAD IN THE SAME ROUND. richard2025 is EMBRYONIC (Carnegie E54/E67, ~8–9 wk).**
+Postnatally (GSE288028, 14 plates): **NPR3 5/14 at 1.63 CPM, max 3.8% of cells · NPPC 0/14.** A 1.63-CPM
+gene cannot be a knee-directed target at BA16 on an embryonic patterning signal. → **R302's NPR3 demotion
+STANDS, now by a route independent of its non-additivity argument.** Do not re-promote NPR3 from this.
+
+✓ **WHAT PASSES BOTH TESTS — site-patterned embryonically AND robust postnatally: HHIP (12/14, 21.4 CPM,
+44.7% of cells) · STC2 (12/14, 18.1, 59.8%) · PAPPA (12/14, 88.5, 53.0%).** STC2/PAPPA is **R328's axis,
+independently corroborated one round later from data that was unopened when R328 was written.** PAPPA is
+also the 6th-ranked gene for the PROXIMAL RADIUS in its own right.
+
+⛔ **NEW CAUTION AGAINST BOTH SURVIVORS, recorded because it is inconvenient.** HHIP and STC2 are brakes
+whose loss is +9.92 cm and +1.37 cm — and **both are LOW in the fast lower-limb plates and HIGH in the slow
+upper-limb plates. THE UPPER LIMB CONTRIBUTES NOTHING TO STANDING HEIGHT.** Grade E, a prediction not a
+result (a relative contrast doesn't fix where a systemic blocker acts absolutely, and a low brake can go
+lower) — but it is the first tissue-level reason to doubt these reach the segments that carry stature.
+⭐ **Free fix: the tamoxifen-inducible Hhip1 experiment already planned should measure HUMERUS AND RADIUS
+alongside femur/tibia/vertebrae. Costs nothing at necropsy.** Gap `g_l8_330a`.
+✗ The `DECONVOLUTION` sheet is **limb-only** — it does NOT resolve CORR-339. Axial ATAC stays unusable.
+
+## ⭐⭐⭐⭐ R329 — **THE WITHIN-ARM AUDIT.** Step 0 taught this file to bin substitutions as "not biology" and
+## it then never asked whether he is on the BEST agent in each arm he is already on. That is centimetres.
+
+⛔ **AND THE REAL FINDING IS ABOUT THIS FILE. Rounds 141/142 ALREADY DID MOST OF THIS and none of it reached
+CLAUDE.md.** `cui2025`, `cnpmeta2026`, `savarirayan2026infig`, `reincke2025` all sat in the bibliography with
+their numbers extracted — CORR-145 had even caught the same units error R329 re-derived. **The next context
+reasons from the pre-141 premise, re-derives what is known, and the project looks static while the
+bibliography quietly accumulates the answers. THAT is the mechanism behind "we've got nowhere."** Third
+instance in two rounds after CORR-345/CORR-333. **A round is not finished until its conclusion is in here.**
+
+⛔ **GnRHa — CLOSED, AND IT WAS ABSENT FROM THIS FILE ENTIRELY.** `cui2025`: boys with **bone age ≥13**,
+propensity-matched 32/32/32, followed to **ADULT HEIGHT**, SDS adjusted for target height —
+**anastrozole+rhGH 0.81 · letrozole+rhGH 0.60 · GnRHa+rhGH 0.48**, anastrozole best at **P<.01**.
+`zhang2025bmc`: letrozole+rhGH beat GnRHa+rhGH on gain at 1 y (10.37 vs 7.78 cm) and 2 y (18.82 vs 13.84),
+same BA advance, shorter treatment — **FAH similar**; BMD fell in both, more on letrozole.
+`nct00355030` (the only RCT with attained adult height as PRIMARY) was **null** for GnRHa+GH, −1.8 vs −1.9.
+→ **DO NOT ADD OR SWITCH TO A GnRH ANALOGUE.** Mechanism: it removes the pubertal spurt along with the fusion
+signal and the two cancel. ✓ **And anastrozole 1 mg is confirmed the right AI by a second route after
+`zegarra2024` — now anastrozole > letrozole, not merely equal.**
+
+⭐ **CNP arm — AN APPROVED ALTERNATIVE EXISTS AND IS OBTAINABLE.** **NAVEPEGRITIDE (YUVIWEL)** holds a US
+accelerated approval, **once weekly**, ages ≥2, achondroplasia **with OPEN EPIPHYSES** (label + FDA review
+already refs here). APPROACH **+1.49 cm/yr (95% CI 1.05–1.93)**; CNP class meta **+1.36 (1.05–1.68)**.
+✗ **NOT a demonstrated height upgrade** — separate trials, intervals overlap almost completely, no
+head-to-head. ✓ **What is real: once-weekly vs once-daily over years, and continuous exposure across the
+interval — which R271 gives this file NO basis to disfavour (weekly GH ≥ daily GH).** A substitution decided
+on adherence. ⚠ APPROACH **excluded children with radiographically CLOSED growth plates.**
+
+⭐ **FGFR3 arm — THE BETTER DRUG IS PUBLISHED AND CANNOT BE HAD.** `savarirayan2026infig` **PROPEL 3**, phase
+3, placebo-controlled, **n=114, ages 3–17**, oral 0.25 mg/kg/day: **+1.74 cm/yr (95% CI 1.31–2.17, P<.001)**,
+height Z **+0.32**, no drug-related SAE. **THE LARGEST RANDOMISED HEIGHT-VELOCITY EFFECT IN THIS FILE.**
+He is on **erdafitinib** — pan-FGFR1–4 oncology drug. Its human growth evidence here is a case report
+(`erdachild2024`, 19.06 cm/yr annualised) **PLUS a multi-patient retrospective compassionate-use series**
+(`erdaseries2025`) in which acceleration was **independent of sex steroids AND of IGF1**, with distinct
+growth-plate widening — i.e. uncontrolled, but **not a single case**.
+⛔ **Not obtainable:** NDA planned **Q3 2026**, US launch projected **early–mid 2027**, **NO expanded access**;
+extension NCT05145010 admits 50 infigratinib-naïve participants aged 3–18 **but requires achondroplasia**.
+→ Joins dabogratinib in "wants it, cannot have it" — **but with a dated route: once launched under an ACH
+label, off-label prescription becomes possible exactly as erdafitinib is used off-label now.**
+⚠ **Switching does NOT escape CORR-343 — kot2026's reduced WT-male bone strength was measured on
+INFIGRATINIB itself.** ⚠ Sponsor topline says +2.1 cm/yr and "first significant proportionality improvement";
+**the paper says 1.74 and ULS ns. Cite the paper.**
+
+✓ **THE CNP ARM IS NOT SPENT IN ADOLESCENCE** — `reincke2025` read at source: oldest band (10–<16 y) had the
+highest AGV **z-score 2.30±1.23 (P=.0005)** AND the highest absolute velocity **6.98±1.44 cm/yr** (vs 5.77 at
+5–10, 6.27 at 2–5). ⚠ **n=5, and the cohort's bone age/CA is 0.86 — DELAYED, the opposite of this subject**;
+the z-score's denominator also shrinks with age. **Supports the NEGATIVE claim only: nothing shows the arm
+failing in adolescence.** ⭐ Free corollary for R327: the **previous-limb-lengthening subgroup had the highest
+gain of any subgroup (z 2.67, n=4)** — second independent hint after `allegri2025` that the two do not interfere.
+
 ## ⭐⭐⭐⭐ R328 — **THE 96 SHORTENING GENES, WORKED IN THE ELEVATION DIRECTION.** They converge on ONE
 ## enzymatic step with a bidirectional human control structure, and the atlas has never named its target.
 
@@ -2374,9 +2466,9 @@ the compartment holding **6.5–9.0 cm** at BA14.5 against **0.3–0.4 cm** in t
 a **hypertrophic-zone peak**, Open Targets "High-Quality Ligand, Small Molecule Binder", a **dioxygenase**.
 
 ✓ **R317's HEADLINE SURVIVES BY A BETTER ROUTE — the CNP arm is LIMB-directed.** NPR3's height gain is
-essentially **100% leg**; NPPC 78% leg. No sign convention involved. **Five converging lines** now:
-navepegritide ↓upper:lower ratio · vosoritide **L1–L4 NULL** (EMA) · axial null in monkeys · rat axial dose →
-scoliosis+kyphosis · this.
+essentially **100% leg**; NPPC 78% leg. No sign convention involved. **FOUR converging lines** (⛔ was five —
+the navepegritide ↓U:L line was **WITHDRAWN R329/CORR-346**, see LIVE COMPOUNDS): vosoritide **L1–L4 NULL**
+(EMA) · axial null in monkeys · rat axial dose → scoliosis+kyphosis · this.
 ✓ **AND THE OTHER STACK ARM IS IN THE RIGHT COMPARTMENT: FGFR3 = 73% TRUNK** — independently supporting that
 the FGFR3 arm reaches the spine (dabogratinib lengthens L4–L6). **He is on an FGFR inhibitor.**
 ⚠ **CORR-195 still governs** — his knees are open at BA16, off the population distribution. This is a
@@ -2413,9 +2505,9 @@ skew, so **unlike IMPC the SIGN is informative here.** That check ran before any
 | NPR2 | 1.06e-04 | +0.0082 | nothing |
 **NPR3 is the 2nd most significant of 46 genes tested.** The ligand AND the clearance receptor of the axis
 vosoritide drives are both major limb-vs-trunk allocators, both on the LIMB side.
-✓ **Converges with 4 pharmacological lines already here:** navepegritide lowers upper:lower segment ratio ·
-vosoritide **L1–L4 NULL** in the EMA report · axial null in monkeys · the rat axial dose that works causes
-scoliosis + kyphosis + fractures. **Now with a half-million-person human anchor.**
+✓ **Converges with 3 pharmacological lines already here** (⛔ was 4 — the navepegritide ↓U:L line was
+**WITHDRAWN R329/CORR-346**): vosoritide **L1–L4 NULL** in the EMA report · axial null in monkeys · the rat
+axial dose that works causes scoliosis + kyphosis + fractures. **Now with a half-million-person human anchor.**
 ⛔ Against the residual: at BA~14.5 knees = **0.3–0.4 cm**, trunk = **6.5–9.0 cm** (aeppli2025).
 ⚠ **NOT an argument to stop vosoritide — CORR-195.** His knees ARE open and growing at BA16, off that
 distribution. **What follows: the marginal return on the CNP arm is LIMB-WEIGHTED, so any ADDITION must be
