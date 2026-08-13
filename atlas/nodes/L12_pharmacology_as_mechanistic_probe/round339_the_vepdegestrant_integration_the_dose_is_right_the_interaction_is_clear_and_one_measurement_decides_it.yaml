@@ -1,0 +1,278 @@
+id: round339_the_vepdegestrant_integration_the_dose_is_right_the_interaction_is_clear_and_one_measurement_decides_it
+name: 'Round 339 - integrating vepdegestrant into the stack: the dose is right for a reason unique in this
+  file, the erdafitinib interaction is measured and clear, and the biphasic oestrogen curve puts one cheap
+  measurement in front of the whole plan'
+aliases:
+- can we actually add vepdegestrant
+- vepdegestrant dose for this case
+- vepdegestrant erdafitinib interaction
+- ultrasensitive estradiol as the gate
+- dropping vosoritide
+type: hypothesis
+layer: L12
+stub: false
+summary: 'THE TASK WAS TO WORK OUT WHETHER R338''s PROPOSAL CAN ACTUALLY BE ADDED, AT WHAT DOSE, AND HOW
+  IT SITS WITH THE REST OF THE STACK, WITH VOSORITIDE DROPPED FOR COST. Three of the four practical questions
+  resolve favourably and further than expected. The fourth is a mechanism that was in this atlas the whole
+  time, that R338 did not weigh, and that could reproduce the exact null already observed in children -
+  and it is decidable by one blood test that costs nothing and has never been ordered for this subject.
+
+  ONE - THE DOSE IS 200 mg ONCE DAILY ORAL WITH FOOD, AND FOR ONCE THE ONCOLOGY DOSE IS THE RIGHT DOSE
+  FOR THE RIGHT REASON. This file''s standing objection to borrowing an oncology dose is R303''s, written
+  against tankyrase: "an oncology MTD is emphatically not a growth dose", because that axis has an INTERIOR
+  OPTIMUM and overshoot runts the animal. THAT OBJECTION DOES NOT TRANSFER HERE, and the asymmetry is
+  the point. On canonical Wnt and on cAMP the wanted state is PARTIAL suppression, so maximal target engagement
+  is wrong by construction. On ERalpha the wanted state is the human ESR1-null phenotype - the protein
+  ABSENT - and oncology also wants maximal degradation. The two indications want the same thing at the
+  same node, which is not true of any other candidate in this atlas. 200 mg once daily was selected as
+  the recommended phase 3 dose from the first-in-human phase 1/2, carried into VERITAC-2, and returned no
+  dose-limiting toxicities in phase 1 with all treatment-related adverse events grade 1 except one grade
+  2 anaemia. A subject at bone age 16 is adult-sized, so adult dosing is not prima facie wrong - but there
+  is NO paediatric pharmacokinetic data for this or any PROTAC, and the dose was chosen on tolerability
+  and tumour degradation, never against a growth endpoint.
+
+  TWO - THE ERDAFITINIB INTERACTION IS MEASURED AND IT IS CLEAR, WHICH IS BETTER NEWS THAN R338 EXPECTED.
+  R338 flagged this as unresolved: vepdegestrant is a CYP3A4 substrate (vepdegestrant_ddi2026) and erdafitinib
+  is handled by CYP2C9 and CYP3A4, so an interaction was plausible in both directions. The forward direction
+  is now answered. In 25 patients at erdafitinib steady state, MIDAZOLAM - the index CYP3A4 probe substrate
+  - had geometric mean ratios of 86.3%, 88.5% and 82.1% for Cmax, AUClast and AUCinf, with 1-OH-midazolam
+  essentially unchanged, and the authors conclude repeated erdafitinib dosing has NO CLINICALLY MEANINGFUL
+  EFFECT on midazolam pharmacokinetics (roskos2024). ERDAFITINIB IS THEREFORE NEITHER A MEANINGFUL CYP3A4
+  INDUCER NOR INHIBITOR, so it should not materially move vepdegestrant exposure. The direction of the
+  small deviation is worth noting rather than ignoring - all three midazolam ratios sit BELOW 100%, i.e.
+  a slight tendency to lower CYP3A4 substrate exposure, so if anything vepdegestrant exposure would run
+  marginally low rather than high. THE REVERSE DIRECTION IS UNTESTED: whether vepdegestrant affects erdafitinib
+  is not known, and erdafitinib''s CYP2C9 route is polymorphic, so that arm stays open.
+
+  THREE - THE REST OF THE STACK. Against GH the direction is FAVOURABLE and not merely neutral: oestrogen
+  suppresses hepatic IGF-1, so removing ERalpha should RAISE IGF-1 under a fixed GH dose rather than lower
+  it - the opposite of the metformin and letrozole problems this file has recorded. Against anastrozole
+  the two are not redundant (R338: ligand versus receptor, and the ligand arm is saturated), and there
+  is no described pharmacokinetic interaction, though none has been tested with a PROTAC. DROPPING VOSORITIDE
+  is the cheapest arm to lose on this atlas''s own compartment analysis - R318 puts the CNP axis''s height
+  effect essentially entirely in the LEG (NPR3 ~100% leg, NPPC 78% leg) while the residual at this bone
+  age is trunk-dominant - but it must be said plainly that this trades a MEASURED agent for a HYPOTHETICAL
+  one. Vosoritide has randomised height-velocity data (about +1.2 to +1.6 cm/yr) and a label criterion
+  of open epiphyses; vepdegestrant has no skeletal, chondrocyte or growth endpoint in any species. And
+  CORR-195 applies: this subject''s knees are open and growing at bone age 16, off the population distribution
+  that makes the CNP arm look spent.
+
+  FOUR - AND THIS IS THE ONE THAT GOVERNS THE DECISION. THE OESTROGEN AXIS IS BIPHASIC, THE ASCENDING LIMB
+  IS GROWTH-PROMOTING, AND IN BOYS IT SATURATES AT AN EXTRAORDINARILY LOW CONCENTRATION. estrogen_biphasic_dose_effect
+  has been in this atlas throughout and R338 did not weigh it. carusonicolett1985: five prepubertal or
+  early pubertal boys, double-blind randomised crossover, 4-day intravenous estradiol - ulnar growth velocity
+  rose significantly ONLY at the LOWEST dose (4 ug/day, serum estradiol 10 pg/mL: 0.45 to 1.38 mm/3 weeks,
+  P<0.05), with the 20 and 90 ug/day infusions giving smaller non-significant increments. albin2013 quantifies
+  the limb: half-maximal growth acceleration at morning estradiol 6.5 pmol/L IN BOYS (95% CI 3.2-13). ross2011
+  supplies the long-term pharmacology in both directions - childhood ultra-low-dose oestrogen given ALONE
+  produced an adult height WORSE than placebo (-3.39 vs -2.81 SDS), while the same exposure ADDED TO GH
+  gained 0.32 SDS (2.1 cm). SO OESTROGEN SIGNALLING CONTRIBUTES GROWTH VELOCITY, THAT CONTRIBUTION IS GH-DEPENDENT,
+  AND TOTAL RECEPTOR ABLATION REMOVES IT ALONG WITH THE FUSION SIGNAL. That is not a hypothetical failure
+  mode - IT IS EXACTLY THE SHAPE sims2012 MEASURED: fulvestrant slowed bone-age advancement significantly
+  (1.99 to 1.06, p=0.0007) and predicted adult height did not move (163.0 to 163.5 cm) because growth velocity
+  fell with the clock.
+
+  FIVE - THE ARITHMETIC OF THE TRADE AT BONE AGE 16, DONE HONESTLY. The gain side is period extension,
+  and its ceiling is set by the human genetic maximum: in the ESR1-null propositus BONE AGE STILL ADVANCED
+  15 to 17.5 years over 3.5 years of observation (smith2008), i.e. roughly 0.7 bone-age years per calendar
+  year with the receptor entirely absent. Complete ablation slows the clock; it does not stop it. If this
+  subject has on the order of one to two bone-age years of growth remaining, slowing the clock to ~0.7x
+  buys on the order of half a calendar year of extra growth. The cost side is whatever velocity is lost
+  by removing the ascending limb, which is unquantified in a pubertal male already on an aromatase inhibitor.
+  THE TWO ARE THE SAME ORDER OF MAGNITUDE, WHICH IS WHY sims2012 NETTED ZERO, and it is why this cannot
+  be decided from mechanism alone.
+
+  SIX - THE MEASUREMENT THAT DECIDES IT, AND IT IS ONE BLOOD TEST. The whole question is where this subject
+  sits on the ascending limb RIGHT NOW, on anastrozole. If his oestradiol is still well above the ~6.5
+  pmol/L half-maximal point for boys, the growth-promoting limb is still being used and ablating the receptor
+  would cost it - the sims2012 trade. If anastrozole has already brought him to or below that point, the
+  ascending limb is largely spent already, the velocity there is to lose is small, and what a degrader
+  adds is blockade of the LIGAND-INDEPENDENT closure drive that no aromatase inhibitor can reach. THE ASSAY
+  MUST BE ULTRASENSITIVE - LC-MS/MS or an extraction-based method. 6.5 pmol/L is about 1.8 pg/mL, which
+  is BELOW THE FUNCTIONAL SENSITIVITY OF ROUTINE CLINICAL IMMUNOASSAYS; a standard oestradiol result reported
+  as "undetectable" or "<10 pg/mL" carries no information at this decision point and must not be used.
+  This is the same class of item as the HOMA-IR question open since R297 and the serum inorganic sulfate
+  question from R322: a real analyte, simply not ordered.
+
+  SEVEN - WHAT IS ACTUALLY BLOCKING IT, WHICH IS NOT BIOLOGY. Vepdegestrant is approved for ADULTS WITH
+  ESR1-MUTATED ADVANCED OR METASTATIC BREAST CANCER. There is no paediatric indication, no paediatric pharmacokinetics,
+  and no experience of any PROTAC in a growing human. Obtaining it for a 16-year-old male is a prescribing
+  and access problem, not a dosing problem, and this atlas cannot solve it. ONE GENUINE ADVANTAGE OVER
+  THE GENETIC PHENOTYPE SHOULD BE RECORDED: degradation is REVERSIBLE on stopping, because ERalpha is resynthesised
+  - so unlike the ESR1-null humans this is a reversible commitment, which matters given that the failure
+  mode is detectable within months.'
+quantitative:
+- parameter: 'the CYP3A4 interaction that R338 left open, now measured - erdafitinib does not meaningfully
+    move a CYP3A4 substrate'
+  value: midazolam geometric mean ratios 86.3 per cent (Cmax), 88.5 per cent (AUClast) and 82.1 per cent
+    (AUCinf) at erdafitinib steady state, with 1-OH-midazolam at 99.8, 97.4 and 101.5 per cent
+  unit: geometric mean ratio, per cent, with 90 per cent confidence intervals judged against the 80-125
+    per cent no-interaction interval
+  conditions: roskos2024 - 25 patients with advanced solid tumours harbouring FGFR alterations, single doses
+    of midazolam (CYP3A4 probe) and metformin (OCT2 probe) before and then at erdafitinib steady state.
+    Authors conclude no clinically meaningful effect on either probe.
+  species: human
+  source_ref: roskos2024
+  uncertainty: 'THIS CLEARS THE FORWARD DIRECTION AND ONLY THE FORWARD DIRECTION. Erdafitinib is neither
+    a meaningful CYP3A4 inducer nor inhibitor, so vepdegestrant exposure should not be materially altered
+    by it. Two qualifications. All three midazolam ratios sit BELOW 100 per cent, so the small deviation
+    that exists points toward slightly LOWER exposure of a CYP3A4 substrate, not higher. And THE REVERSE
+    DIRECTION IS UNTESTED - whether vepdegestrant alters erdafitinib is unknown, and erdafitinib also runs
+    through CYP2C9, which is polymorphic. A midazolam probe study is not a vepdegestrant study; this is
+    the best available inference, not a direct measurement of the pair.'
+- parameter: 'the ascending limb of the oestrogen curve in BOYS, which total receptor ablation would remove'
+  value: 'half-maximal growth acceleration at morning oestradiol 6.5 pmol/L in boys (95% CI 3.2-13); and
+    in the only direct human dose-response, ulnar growth velocity rose significantly ONLY at the lowest
+    dose tested - 4 ug/day, serum oestradiol 10 pg/mL, 0.45 +/- 0.11 to 1.38 +/- 0.51 mm per 3 weeks, P<0.05
+    - while 20 ug/day and 90 ug/day gave smaller non-significant increments'
+  unit: pmol/L, and millimetres of ulnar growth per 3 weeks
+  conditions: albin2013 for the half-maximal concentration in boys; carusonicolett1985 for the dose-response
+    - five prepubertal or early pubertal boys, 4-day intravenous oestradiol infusions at 4, 20 and 90 ug/day
+    in double-blind randomised order, three-week ulnar growth velocity measured before and after each with
+    return to baseline between infusions.
+  species: human
+  source_ref: carusonicolett1985
+  uncertainty: 'THIS IS THE NUMBER THE WHOLE PLAN TURNS ON AND IT IS FROM FIVE BOYS IN 1985. The dose-response
+    is small, old, and uses ulnar growth over three weeks rather than stature; no experiment has ever traced
+    a complete curve spanning both limbs to a linear-growth endpoint in humans. albin2013''s half-maximal
+    figure is from healthy children by ultrasensitive assay and is an ASSOCIATION across the pubertal transition,
+    not an intervention. WHAT MAKES IT DECISION-RELEVANT ANYWAY is that both independent sources put the
+    growth-promoting limb at concentrations far below adult male levels, and ross2011 confirms the direction
+    pharmacologically in both directions over years. It is enough to require the measurement; it is not
+    enough to predict the outcome.'
+- parameter: 'the ceiling on the gain side - even complete receptor absence only slows the skeletal clock'
+  value: bone age advanced from 15 to 17.5 years over 3.5 years of observation, approximately 0.7 bone-age
+    years per calendar year, in a human with the oestrogen receptor entirely absent
+  unit: bone-age years per calendar year
+  conditions: smith2008, longitudinal follow-up of the smith1994 homozygous ESR1-null propositus, in whom
+    spine areal BMD simultaneously fell from 0.745 to 0.684 g/cm2 (Z -3.85).
+  species: human
+  source_ref: smith2008
+  uncertainty: 'DERIVED HERE FROM TWO REPORTED FIGURES, GRADE D AS A RATE. The 15-to-17.5 bone age over
+    3.5 years is read off the follow-up description and is a single subject; bone-age reading error alone
+    spans a substantial fraction of it (R282: three maturity methods spanned 0.5 y = 2.2 cm of predicted
+    adult height in one film). IT IS USED ONLY TO BOUND THE GAIN SIDE, and for that it is adequate: it
+    establishes that the genetic maximum on this axis slows the clock rather than stopping it, so period
+    extension from a drug cannot exceed that and will fall short of it.'
+localization:
+- 'systemic: the aromatase inhibitor, the degrader and the GH arm all act on circulating supply or on receptor
+  protein in every tissue; no compartment selectivity is claimed for any of them'
+- 'growth plate chondrocyte: ESR1 detected 12/14 postnatal human growth plates, 33.1 CPM, up to 36.3 per
+  cent of cells - the receptor is present, and brjesson2010 puts its action late rather than during sexual
+  maturation'
+human_evidence: direct
+human_evidence_note: 'Every load-bearing element of this integration is human - the dose and tolerability
+  (phase 1 and VERITAC-2), the CYP3A4 probe study, the biphasic dose-response in boys, the half-maximal
+  concentration in boys, the Turner randomised trial in both directions, the paediatric fulvestrant trial,
+  and the ESR1-null follow-up. What is NOT human, and not anything, is any growth endpoint for this molecule
+  in any species.'
+species_basis:
+- human
+translation_risk: high
+translation_risk_reason: The pharmacology is human and clear; the efficacy is entirely unmeasured. The nearest
+  human test of the same axis in growing children (sims2012) was null on height because velocity fell with
+  the clock, and the biphasic curve gives a specific mechanism by which that could repeat.
+confidence: C
+claim_grades:
+- claim: 200 mg once daily is the appropriate dose, and the usual objection to borrowing an oncology dose
+    does not apply.
+  grade: C
+  basis: 'The dose is the approved and phase 3 dose, selected from first-in-human dose-finding, with no
+    dose-limiting toxicities in phase 1. The reason the R303 objection does not transfer is structural and
+    is the strongest part of this claim: on Wnt and cAMP the wanted state is PARTIAL suppression so an MTD
+    is wrong by construction, whereas on ERalpha the target phenotype is the protein ABSENT and oncology
+    wants the same maximal degradation - the two indications coincide at this node and at no other in this
+    atlas. Not higher than C because there is no paediatric pharmacokinetic data for any PROTAC and the
+    dose was never selected against a growth endpoint.'
+- claim: Erdafitinib will not materially alter vepdegestrant exposure.
+  grade: C
+  basis: 'roskos2024 - at erdafitinib steady state the index CYP3A4 probe midazolam had geometric mean ratios
+    of 86.3, 88.5 and 82.1 per cent with 1-OH-midazolam unchanged, and the authors conclude no clinically
+    meaningful effect. Erdafitinib is therefore neither a meaningful CYP3A4 inducer nor inhibitor. Graded
+    C and not B because this is inference from a probe substrate rather than a study of the pair, all three
+    ratios sit below 100 per cent so the small effect that exists would LOWER exposure, and the reverse
+    direction - vepdegestrant on erdafitinib, which also runs through polymorphic CYP2C9 - is untested.'
+- claim: Removing ERalpha protein will cost growth velocity as well as slowing maturation.
+  grade: C
+  basis: 'The mechanism is established in humans in both directions and the empirical precedent exists.
+    carusonicolett1985 shows the ascending limb is real in boys and saturates at the lowest dose tested;
+    albin2013 puts half-maximal growth acceleration at 6.5 pmol/L in boys; ross2011 shows oestrogen alone
+    made adult height WORSE than placebo while the same exposure added to GH gained 2.1 cm. And sims2012
+    is the measured instance - bone age slowed significantly, velocity fell, predicted adult height did
+    not move. The uncertainty is not whether the limb exists but how much of it is left in a pubertal male
+    already on anastrozole, which is exactly what the gating measurement resolves.'
+- claim: The decision can be made from mechanism without measuring this subject's oestradiol.
+  grade: X
+  basis: 'NO. The gain side is bounded by smith2008 at roughly 0.7 bone-age years per calendar year even
+    with the receptor entirely absent, and the cost side is the ascending limb, and at bone age 16 the two
+    are the same order of magnitude - which is why sims2012 netted zero. Where this subject sits on that
+    limb on anastrozole is unknown and is the only free parameter. THE ASSAY MUST BE ULTRASENSITIVE (LC-MS/MS
+    or extraction-based): 6.5 pmol/L is about 1.8 pg/mL, below the functional sensitivity of routine clinical
+    immunoassays, so a standard result of "undetectable" carries no information here.'
+- claim: Dropping vosoritite to make room is a neutral trade.
+  grade: D
+  basis: 'FAVOURABLE ON COMPARTMENT, UNFAVOURABLE ON EVIDENCE, AND THE SECOND IS THE HONEST HEADLINE. R318
+    puts the CNP axis''s height effect essentially entirely in the leg (NPR3 ~100 per cent, NPPC 78 per
+    cent) while the residual at this bone age is trunk-dominant, so on this atlas''s own analysis it is
+    the cheapest arm to lose. Against that: vosoritide has randomised height-velocity data of about +1.2
+    to +1.6 cm/yr and a label criterion of open epiphyses, vepdegestrant has no growth endpoint in any species,
+    and CORR-195 says this subject''s knees are open and growing at bone age 16 and therefore off the population
+    distribution that makes the limb arm look spent. This is trading a measured agent for a hypothetical
+    one.'
+- claim: The failure mode would be detected early enough to matter.
+  grade: D
+  basis: 'PROBABLY, AND ONLY IF BOTH TERMS ARE TRACKED. The sims2012 signature is a FALL in delta bone age
+    over delta chronological age accompanied by a proportional fall in height velocity, netting no change
+    in predicted adult height - so tracking bone-age deceleration alone would read as success while the
+    trade was neutral. Both must be measured on the same schedule, with standing and sitting height at
+    a FIXED TIME OF DAY (R319, since the diurnal swing exceeds a year of expected gain), BoneXpert on the
+    hand film rather than a by-eye read (R282), and the vertebral cost tracked by lateral thoracolumbar
+    film and DXA (R278), because in the ESR1-null humans spine BMD reached Z -3.85 to -5.6. Degradation
+    is reversible on stopping, which is what makes an early-detection strategy meaningful.'
+key_refs:
+- ref_id: roskos2024
+  year: 2024
+  type: primary
+  one_line_finding: At erdafitinib steady state the CYP3A4 probe midazolam showed geometric mean ratios
+    of 86.3, 88.5 and 82.1 per cent with 1-OH-midazolam unchanged - erdafitinib is neither a meaningful
+    CYP3A4 inducer nor inhibitor.
+- ref_id: carusonicolett1985
+  year: 1985
+  type: primary
+  one_line_finding: Five boys, double-blind crossover intravenous oestradiol - ulnar growth velocity rose
+    significantly ONLY at the lowest dose (4 ug/day), establishing the growth-promoting ascending limb in
+    boys.
+- ref_id: albin2013
+  year: 2013
+  type: primary
+  one_line_finding: Half-maximal pubertal growth acceleration in BOYS occurs at morning oestradiol 6.5 pmol/L
+    (95% CI 3.2-13) - the ascending limb saturates far below adult male concentrations.
+- ref_id: ross2011
+  year: 2011
+  type: primary
+  one_line_finding: Randomised Turner trial - childhood ultra-low-dose oestrogen ALONE gave adult height
+    worse than placebo (-3.39 vs -2.81 SDS) while the same exposure ADDED to GH gained 0.32 SDS, so the
+    growth contribution of oestrogen is GH-dependent.
+- ref_id: sims2012
+  year: 2012
+  type: primary
+  one_line_finding: Fulvestrant in 30 growing girls slowed bone-age advancement significantly while predicted
+    adult height did not move - the measured instance of the trade this plan would be making.
+- ref_id: smith2008
+  year: 2008
+  type: primary
+  one_line_finding: In the human ESR1-null propositus bone age still advanced 15 to 17.5 years over 3.5
+    years, bounding the period gain at roughly 0.7 bone-age years per calendar year, with spine BMD Z -3.85.
+- ref_id: vepdegestrant_ddi2026
+  year: 2026
+  type: primary
+  one_line_finding: 200 mg once daily oral with food is the recommended phase 3 dose, and vepdegestrant
+    is a CYP3A4 substrate.
+- ref_id: vepdegestrant_jp2025
+  year: 2025
+  type: primary
+  one_line_finding: No dose-limiting toxicities at 200 mg once daily, adverse events grade 1 except one
+    grade 2 anaemia, with measured exposure.
+open_questions: []
+contradicts: []
+last_verified: '2026-08-13'

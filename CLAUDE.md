@@ -1746,6 +1746,67 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ⚠⚠ R339 — **THE VEPDEGESTRANT INTEGRATION. Dose right, interaction clear, and ONE BLOOD TEST GATES IT.**
+## Read this before adding it. The biphasic curve was in this atlas the whole time and R338 did not weigh it.
+
+✓ **DOSE — 200 mg ONCE DAILY ORAL WITH FOOD, and for once the oncology dose is right FOR A REASON.**
+R303's standing objection is *"an oncology MTD is emphatically not a growth dose"* — true where the axis has
+an **interior optimum** (Wnt, cAMP: we want PARTIAL suppression). **ERα is the opposite: the target phenotype
+is the protein ABSENT (the ESR1-null human), and oncology also wants maximal degradation. The two indications
+coincide at this node and at no other in this file.** RP2D from phase 1/2, carried into VERITAC-2, no DLTs,
+TRAEs grade 1 bar one grade 2 anaemia. ✗ No paediatric PK for this or any PROTAC; dose never set against growth.
+
+✓ **THE ERDAFITINIB INTERACTION IS MEASURED AND CLEAR — better than R338 assumed.** `roskos2024`: 25 patients,
+**MIDAZOLAM (index CYP3A4 probe) at erdafitinib steady state → GMRs 86.3 / 88.5 / 82.1%**, 1-OH-midazolam
+unchanged; authors conclude **no clinically meaningful effect.** → **Erdafitinib is neither a meaningful
+CYP3A4 inducer nor inhibitor**, so it should not move vepdegestrant exposure. ⚠ All three ratios sit BELOW
+100%, so any real effect runs toward **slightly LOWER** exposure. ⛔ **Reverse direction untested** —
+vepdegestrant on erdafitinib, which also runs through polymorphic **CYP2C9**.
+
+✓ **REST OF STACK.** **GH — FAVOURABLE, not neutral:** oestrogen suppresses hepatic IGF-1, so removing ERα
+should **RAISE** IGF-1 at fixed GH dose (opposite of the metformin/letrozole problem). **Anastrozole — not
+redundant** (ligand vs receptor; the ligand arm is saturated per R274+R337), no described PK interaction,
+none tested with a PROTAC. **Dropping vosoritide** is the cheapest arm to lose on compartment (R318: NPR3
+~100% leg, NPPC 78% leg, residual is trunk) — ⛔ **but it trades a MEASURED agent (+1.2–1.6 cm/yr randomised,
+open-epiphyses label) for one with NO growth endpoint in any species**, and CORR-195 says his knees are open
+and growing at BA16, off that distribution.
+
+⛔⛔ **AND THE ONE THAT GOVERNS THE DECISION — THE OESTROGEN AXIS IS BIPHASIC AND THE ASCENDING LIMB IS
+GROWTH-PROMOTING.** `estrogen_biphasic_dose_effect` was here throughout; R338 missed it.
+· `carusonicolett1985` — 5 boys, double-blind crossover IV oestradiol: velocity rose significantly **ONLY at
+  the LOWEST dose** (4 µg/day, E2 10 pg/mL: **0.45 → 1.38 mm/3wk, P<0.05**); 20 and 90 µg/day did less.
+· `albin2013` — **half-maximal growth acceleration in BOYS at oestradiol 6.5 pmol/L (95% CI 3.2–13)** — far
+  below adult male levels.
+· `ross2011` — ultra-low-dose oestrogen **ALONE gave adult height WORSE than placebo (−3.39 vs −2.81 SDS)**;
+  the same exposure **ADDED TO GH gained +0.32 SDS (2.1 cm)**. The growth contribution is **GH-dependent**.
+→ **Total receptor ablation removes the growth-STIMULATING limb along with the fusion signal — which is
+EXACTLY the `sims2012` shape** (bone age 1.99→1.06 p=0.0007, **PAH 163.0→163.5, velocity fell with the clock**).
+
+⛔ **THE ARITHMETIC, DONE HONESTLY.** Gain side is bounded by the genetic maximum: `smith2008` — bone age
+**still advanced 15 → 17.5 y over 3.5 y with the receptor entirely absent** ≈ **0.7 BA-y per CA-y**. Complete
+ablation SLOWS the clock, never stops it. With ~1–2 BA-years left, that buys ~half a calendar year. Cost side
+is the ascending limb. **Same order of magnitude — which is why sims2012 netted zero.**
+
+⭐⭐ **THE GATE — ONE BLOOD TEST, NEVER ORDERED: ULTRASENSITIVE SERUM OESTRADIOL (LC-MS/MS or extraction).**
+· **E2 still well above ~6.5 pmol/L on anastrozole** → the growth-promoting limb is still in use; ablating the
+  receptor costs it = the sims2012 trade. **Don't.**
+· **E2 already at/below it** → the limb is largely spent, little velocity left to lose, and the degrader adds
+  blockade of the **ligand-independent** closure drive no AI can reach. **That is the case where it makes sense.**
+⛔ **6.5 pmol/L ≈ 1.8 pg/mL — BELOW the functional sensitivity of routine immunoassays. A standard oestradiol
+reported "undetectable" or "<10 pg/mL" CARRIES NO INFORMATION HERE.** Same class as the HOMA-IR (R297) and
+serum inorganic sulfate (R322) items: a real analyte, simply not ordered.
+
+⚠ **MONITORING — track BOTH terms or the failure mode reads as success.** The sims2012 signature is ΔBA/ΔCA
+falling **with** velocity falling proportionally, netting zero. Bone-age deceleration alone would look like a
+win. So: standing + sitting height at a **FIXED time of day** (R319 — the diurnal swing exceeds a year of
+expected gain), **BoneXpert** on the hand film not a by-eye read (R282), IGF-1, ultrasensitive E2 — and the
+vertebral cost by lateral T-L film + DXA (R278), because ESR1-null humans reach spine Z **−3.85 to −5.6**.
+✓ **Degradation is REVERSIBLE on stopping** (ERα is resynthesised) — unlike the genetic phenotype, which is
+what makes early detection worth anything.
+
+⛔ **WHAT ACTUALLY BLOCKS IT IS NOT BIOLOGY:** approved for **adults with ESR1-mutated advanced/metastatic
+breast cancer** only. No paediatric indication, no paediatric PK, no PROTAC ever given to a growing human.
+
 ## 🎯🎯🎯 R338 — **THE SWEEP SPECIFIED PROTEIN ABLATION AND DISMISSED THE ONLY DRUG CLASS THAT DOES IT.**
 ## The first approved PROTAC arrived after that node was written. This is the largest live proposal in the file.
 
