@@ -1854,6 +1854,50 @@ so LOXL2's +1.40 cm is probably NOT acting through cross-linking in the plate.
 → **NET: PXS-5505 survives on SAFETY and is weakened on MECHANISM.** It remains the leading obtainable
 candidate because every competitor has no molecule at all — but the axis is now grade C for a new reason.
 
+## ⛔⛔⛔ R367 — **THE POOL-SPARING SCHEDULE HAS ALREADY BEEN TESTED IN HUMANS THREE TIMES, TWICE
+## RANDOMISED. IT NEVER BOUGHT HEIGHT, AND THE SHORTEST CYCLE LOST HEIGHT.** Do not cycle the GH arm.
+
+R366 ended on *pulse beats sustained* across hedgehog, mTORC1 and GH, and `chu2025`'s own authors call for
+exploring **intermittent GH, especially in non-GH-deficient children**. That is the only intervention in this
+file needing no molecule, no trial and no access — a **schedule**. So I asked whether anyone had run it.
+
+⛔ **THE THREE HUMAN TESTS, AND THEY DISAGREE IN A WAY THAT IS ITSELF THE RESULT — THE ORDERING VARIABLE IS
+THE CYCLE PERIOD:**
+· **`hakeem1993` RANDOMISED, daily vs 3 WEEKS ON / 1 WEEK OFF**, in children already 2 y on GH → velocity
+  fell in both arms but **significantly MORE on intermittent. A ONE-WEEK PAUSE COSTS HEIGHT.**
+· **`simon2006` RANDOMISED, 58 SGA children, TOTO vs TTOO at 67 µg/kg/day** (both arms get 2 years of drug,
+  so this isolates SCHEDULE at **matched total exposure**) → height-SDS gain **1.4±0.1 vs 1.6±0.2**, both
+  ending −2.0 SDS, **and THE RATE OF BONE MATURATION WAS SIMILAR.** A year-scale pause is **NEUTRAL** — and it
+  did not buy PERIOD either.
+· **`bougneres1994`** retrospective, 86 GHD children, 29 with an unplanned 9.7-month pause → **12.1±0.3 cm on
+  24±2 U/kg vs 12.2±0.5 cm on 43±3 U/kg (p<0.0005)** = **SAME HEIGHT ON 56% OF THE CUMULATIVE DOSE**, via
+  "re-acceleration" on re-initiation.
+→ **SHORT PAUSES LOSE · LONG PAUSES ARE NEUTRAL · NOTHING BEATS CONTINUOUS.** Coherent: a one-week gap only
+subtracts treatment days; a multi-month gap lets catch-up repay the lost time. **Repayment is the ceiling.**
+
+⛔⛔ **THIS IS A DIRECT NEGATIVE ON THE MECHANISM'S CLINICAL PREDICTION, NOT AN ABSENCE.** chu2025 predicts
+pool-sparing → more growth over the course. **Three human cohorts with height endpoints, two randomised, had
+the chance to show it and none did.** Under this file's own rules a height endpoint outranks a mechanism.
+⚠ **What is NOT refuted:** the mechanism itself. No study counted a resting-zone cell; chu2025's depletion is
+at **~100× the human therapeutic dose** and **its GHR cKO did not change bone length** (tibia P=0.31, femur
+P=0.35); and none of the three ran to **adult height** (2–4 y windows, in GHD/SGA children aged 2–5).
+✓ **What survives, and it is real but not height:** intermittent gives **the same height for ~half the
+hormone** — a cost/burden/exposure argument. For an arm this file already prices at ≈0 attained height after
+mid-puberty, that is worth knowing; it is simply not centimetres.
+
+⭐ **THE ONE USEFUL POSITIVE — THE CLOSEST PUBLISHED PROTOCOL TO HIS CONFIGURATION.** `rothenbuhler2011`:
+6 children with **FGFR3 N540K hypochondroplasia**, rGH **TITRATED TO IGF-1 ≈ +1.5 SDS rather than to a fixed
+mg/kg**, deliberately discontinuous (off 1 day/wk, 1 month/yr, 6 months every 2 yr) → **+1.9 height SDS over
+6.1 y**, IGF-1 −1.6 → +1.4 SDS, cumulative **0.075±0.018 mg/kg/day**, **trunk-leg disproportion IMPROVED.**
+**The only GH protocol built around the FGFR3 axis and an IGF-1 target** — both directly relevant to a
+subject on an FGFR3 inhibitor with IGF-1 198. ✗ n=6, single-arm, **no continuous comparator**, young children
+with an **ACTIVATING** FGFR3 mutation vs a wild-type subject on an **inhibitor**. **A DOSING-TARGET
+precedent — titrate to IGF-1, not mg/kg — NOT evidence that the schedule works.**
+
+⛔ **Does NOT argue for stopping GH.** Every study compares GH schedules against other GH schedules; none
+compares GH with none, and chu2025's own finding is that **GH signalling is REQUIRED for the pool to
+function** (GHR loss REDUCES the stem cells' ability to form chondrocytes).
+
 ## ⭐⭐⭐ R366 — **THE SELF-RENEWAL FRACTION IS THE VARIABLE, AND WORKING BOTH SIGNS PRODUCED TWO FREE
 ## SUBTRACTIONS AND ONE MECHANISM WITH NO DRUG.** Two common antifungals are SMO antagonists.
 
