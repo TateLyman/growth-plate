@@ -42,13 +42,29 @@ summary: >-
   atlas has it - FBN1, HHIP, TET1 and CHAD are each quoted from a single row.
 
 
-  TWO - X-LINKAGE, AND IT CUTS IN THE FAVOURABLE DIRECTION FOR ONCE. NRK is on Xq22. In an exome burden
-  test a male "carrier" of a protein-truncating NRK variant is HEMIZYGOUS - a complete null, with no second
-  copy. So the +2.79 cm may be substantially a COMPLETE-LOSS effect rather than a haploinsufficiency effect,
-  which is exactly what a drug at full target engagement would emulate; and this subject is male. ✗ The
-  supplementary table does not split by sex and kosmicki2026's X-chromosome handling is not stated in what
-  this atlas holds, so this is a structural argument, not a measurement. Recorded as the single most
-  valuable thing to look up next about NRK.
+  TWO - ⭐⭐⭐ X-LINKAGE, AND THE OPERATOR SUPPLIED THE FULL PREPRINT ON 2026-08-13 SO THIS IS NOW ANSWERED
+  FROM THE METHODS RATHER THAN INFERRED. This node originally recorded the X-chromosome coding as "the
+  single most valuable thing to look up next about NRK". `kosmicki2026`'s methods state it exactly:
+  **"For the non-pseudoautosomal regions of chromosome X, we assumed a dosage compensation model where
+  homozygous reference males are coded as 0 and HEMIZYGOUS MALES ARE CODED AS 2 (and heterozygous males set
+  to missing)."**
+  NRK is at Xq22, outside the pseudoautosomal regions, so this is the model under which its burden effect
+  was fitted. **Under that coding a hemizygous male carrier has genotype value 2 and a heterozygous female
+  has 1, so the reported effect is PER DOSAGE UNIT and a hemizygous male carries TWICE it.**
+  ⭐ **That puts a hemizygous male NRK null at roughly +5.6 cm (2 x 2.79 at AAF<0.01%) and a singleton
+  pLoF male at roughly +7.6 cm (2 x 3.79)** - which moves NRK from the middle of kosmicki's tall list into
+  the company of TET1 (+8.32) and FBN1 (+8.82), with the difference that NRK has **no Mendelian syndrome
+  entry in OMIM at all.** The paper says so directly: of the six genes where singleton pLoFs increase
+  height, only FBN1 has an OMIM stature entry, and **LCORL, NRK and TET1 have none.**
+  ⚠ **Grade C, and the caveat is specific:** the doubling follows from the stated coding applied to a
+  per-dosage-unit beta, and Supplementary Table 6 does not restate the scale per row. It is an inference
+  from an explicit methods statement, not a sex-stratified estimate. A sex-stratified NRK row would settle
+  it outright and is still worth asking for.
+  ⚠ Two further facts from the full text: NRK has **no LOEUF constraint value in gnomAD v4.1** - one of only
+  six of the 207 genes missing one, and the others include the X-linked FGD1, IRS4 and SHOX, so constraint
+  metrics are simply absent for this class. And the authors file NRK under "DNA binding/interaction" with
+  ANKRD11, CHD8, LCORL and TET1, which is a category guess: NRK is a GCK-IV kinase with a CK2-inhibitory
+  region and a CNH lipid-binding domain, and nothing in `lestari2022` supports a DNA-binding role.
 
 
   THREE - ⭐⭐⭐ THE MECHANISM EXISTS, IT IS AKT, AND EVERY NODE OF IT IS IN THE POSTNATAL HUMAN GROWTH PLATE.
@@ -196,6 +212,24 @@ limitations:
 - The expression conflict is resolved by argument (panels lacking growth plate), not by a direct
   side-by-side measurement.
 quantitative:
+- parameter: THE X-CHROMOSOME CODING, READ FROM THE METHODS - a hemizygous male carries TWICE the reported
+    per-dosage-unit effect
+  value: '"For the non-pseudoautosomal regions of chromosome X, we assumed a dosage compensation model where
+    homozygous reference males are coded as 0 and hemizygous males are coded as 2 (and heterozygous males
+    set to missing)." NRK is at Xq22, non-pseudoautosomal. Under that coding the reported beta is per
+    dosage unit, so a hemizygous male null is approximately 2 x 2.79 = +5.6 cm at AAF<0.01%, and
+    approximately 2 x 3.79 = +7.6 cm for singleton pLoF'
+  unit: centimetres
+  conditions: kosmicki2026 full preprint, Methods; operator-supplied 2026-08-13. Effect sizes elsewhere in
+    the paper are converted from SD units by multiplying by 7.994 cm, the sex-stratified sample-size-
+    weighted mean SD of the discovery set
+  species: human
+  source_ref: kosmicki2026
+  uncertainty: 'GRADE C. The doubling is an inference from an explicit methods statement applied to a
+    per-dosage-unit beta; Supplementary Table 6 does not restate the scale per row, and no sex-stratified
+    NRK estimate is published. Also note NRK has NO LOEUF value in gnomAD v4.1 - one of six of the 207
+    genes missing one, the others including the X-linked FGD1, IRS4 and SHOX - so no constraint metric
+    exists for it'
 - parameter: THE NRK ALLELIC SERIES - monotone in variant severity AND in allele rarity
   value: 'pLoF singleton +3.79 cm (P=1.29e-09, n=32); pLoF+deleterious-missense singleton +2.98 (8.10e-12,
     82); pLoF AAF<0.01% +2.79 (1.00e-20, 247); pLoF AAF<0.1-1% +2.49 (7.70e-19, 319); deleterious missense
@@ -295,6 +329,12 @@ claim_grades:
     signalling or cell proliferation; the function sits in the CK2-inhibitory region at aa 565-868. Round
     310''s framing - inhibition, "which for a KINASE is the most drugged fold there is" - is wrong for this
     target. The tractable-looking domain is not the functional one.'
+- claim: The human NRK height effect in a hemizygous male is about twice the reported per-allele figure.
+  grade: C
+  basis: kosmicki2026's methods state the non-pseudoautosomal X was coded with hemizygous males as 2 and
+    heterozygous females as 1, so the fitted beta is per dosage unit and a hemizygous male carries 2x it.
+    C and not B because it is an inference from the coding rather than a published sex-stratified estimate,
+    and Supplementary Table 6 does not restate the scale per row.
 - claim: NRK has never been perturbed in any species.
   grade: X
   basis: 'NO. Nrk<tm1Mkom> exists on a B6.129S4 congenic background and has been phenotyped as hemizygous

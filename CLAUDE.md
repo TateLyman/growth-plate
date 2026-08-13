@@ -1737,10 +1737,18 @@ pLoF singleton **+3.79 cm** (1.3e-09, n=32) · pLoF+delmis singleton **+2.98** (
 That is the shape a causal LoF effect makes. **No other target here has it** — FBN1, HHIP, TET1 and CHAD are
 each quoted from one row.
 
-**TWO — X-LINKAGE CUTS THE FAVOURABLE WAY.** NRK is Xq22, so a male pLoF "carrier" is **HEMIZYGOUS — a
-complete null.** The +2.79 cm may largely be a COMPLETE-LOSS effect, which is what full target engagement
-emulates, and the subject is male. ✗ S6 does not split by sex → gap
-`g_l12_is_the_human_nrk_height_effect_hemizygous_male_or_heterozygous_female`.
+**TWO — ⭐⭐⭐ X-LINKAGE, AND THE METHODS ANSWER IT (operator supplied the full preprint 2026-08-13).**
+`kosmicki2026`: *"For the non-pseudoautosomal regions of chromosome X, we assumed a dosage compensation
+model where homozygous reference males are coded as 0 and **hemizygous males are coded as 2** (and
+heterozygous males set to missing)."* NRK is Xq22, non-PAR. **So the reported β is PER DOSAGE UNIT and a
+hemizygous male carries TWICE it → a male NRK null is ≈ +5.6 cm (2×2.79), and ≈ +7.6 cm on the singleton
+row (2×3.79).** That puts NRK alongside TET1 (+8.32) and FBN1 (+8.82) — and the paper states that of the
+six genes whose singleton pLoFs raise height, **only FBN1 has an OMIM stature entry; LCORL, NRK and TET1
+have none.** ⚠ **Grade C** — an inference from an explicit coding statement, not a published sex-stratified
+estimate; S6 does not restate the scale per row. A sex-stratified NRK row is still the thing to ask for.
+⚠ NRK has **no LOEUF value in gnomAD v4.1** (one of six of the 207 missing; the others include X-linked
+FGD1, IRS4, SHOX), so no constraint metric exists. And the authors file NRK under "DNA binding/interaction",
+which is a category guess — it is a GCK-IV kinase with a CIR and a CNH domain.
 
 **THREE — ⭐⭐⭐ THE MECHANISM EXISTS AND IT IS AKT** (`lestari2022`). NRK carries a **CK2-INHIBITORY REGION**
 that binds CK2β. Chain: **NRK ⊣ CK2 → (CK2 phosphorylates PTEN S380, inactivating it) ⊣ PTEN → more PIP3 →
