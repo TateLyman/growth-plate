@@ -1810,6 +1810,11 @@ rapalogs and metformin (R366 — now a POOL cost, not just a rate cost) · delib
 lever (CORR-353 — it charges the pool but has never beaten control on length).
 
 **THE ONE MEASUREMENT THAT STILL OUTRANKS EVERY COMPOUND QUESTION (R355/R360, still not done):**
+⭐⭐ **R422 SHARPENS WHY: IT IS A FALSIFICATION TEST OF THE OESTRADIOL NUMBER, NOT JUST A MEASUREMENT.**
+If E2 really were 10–25× below the closure threshold, maturation should be near-arrested (`lanfranco2008`:
+BA 15.5 at CA 26.8). **A near-normal ΔBA/ΔCA is evidence the reported E2 is wrong.** And the `ferris2017`
+panel — **testosterone, LH, FSH, HAEMATOCRIT** — resolves target engagement on a routine panel + FBC
+without needing mass-spec E2 at all. **Seven rounds rest on that number and no assay method is recorded.**
 **ΔBONE AGE / ΔCHRONOLOGICAL AGE on the current stack** — BoneXpert on serial hand films, with standing AND
 sitting height at a fixed time of day. It separates clock-stalled from clock-running and decides whether a
 pool agent is worth chasing for him at all.
@@ -2334,6 +2339,128 @@ three weeks ARE ALREADY AVAILABLE.** R361's objection that a joint injection can
 adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that is a direct placement.
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
+
+## 📐📐📐📐 R423 — **AMPLIFICATION IS THIS ATLAS'S DECLARED PRIMARY TARGET, IT IS 88% OF THE YIELD, AND
+## R174/R175/R177 NEVER REACHED CLAUDE.md. Its one named druggable circuit — SIK3/HDAC4 — CLOSES.**
+
+⛔ **ZERO — THE LEDGER FAILURE, MEASURED.** `amplification` **294 node files vs 11 occurrences here, all
+downstream of R360** · **`cells per column` 110 files vs ZERO** · `hypertrophic commitment` 14 vs ZERO ·
+`transit time` 17 vs ZERO · `residence time` 11 vs ZERO. **Third instance in five rounds** after R419
+(androgen axis) and R420 (the androgen_receptor closure) — and this one hits **the term the atlas itself
+calls its primary objective.**
+
+⭐ **ONE — WHAT THE THREE LOST ROUNDS SAY. YIELD = AMPLIFICATION × TERMINAL CELL HEIGHT, and the split is
+not close.** Mouse femur vs metacarpal (a bone that never fuses vs one that fuses at 2–3 wk): **yield ratio
+10.4× with a terminal-cell-height ratio of only 1.32×** (bootstrap 1.15–1.55) → **amplification 7.9×.**
+⭐ **88% OF THE LOG GAP IS AMPLIFICATION, 12% IS CELL SIZE** (tibia vs metacarpal: 93/7). **Rat replicates
+the cell-height half across five ages** (1.45, 1.46, 1.75, 1.47, 1.69) — terminal cell height is conserved
+to ~2× between bones whose fusion times differ by an order of magnitude, in two species. **At fusion both
+terms fail but AMPLIFICATION FAILS FIRST AND HARDER**: metacarpal production collapses **6.58 → 3.35 →
+1.02 cells/column/day** while terminal cell height holds 23.1 → 24.5 and only drops at 3 wk.
+
+⭐⭐ **TWO — AND R175 SAYS WHAT AMPLIFICATION PHYSICALLY IS, WHICH CHANGES THE DRUG.** It is **RESIDENCE
+TIME IN THE PROLIFERATIVE COMPARTMENT BEFORE HYPERTROPHIC COMMITMENT**, and it falls because cells **LEAVE
+SOONER, not because they divide slower** — `newton2019` states the age change "did not reflect changes in
+chondrocyte proliferation or growth rate". Clone size is **niche-set and causally movable**: 7.8 ± 0.3
+cells centrally vs 5.7 ± 0.1 laterally by proximity to the SOC (P=0.0012), and delaying SOC maturation
+with axitinib **REDUCED** it (P=0.0023).
+⭐ **THE DRUG SPEC: DELAY HYPERTROPHIC COMMITMENT WITHOUT SLOWING PROLIFERATION.** That is not what any
+velocity agent in this stack does, and the two are **opposite on the pool** — faster proliferation SPENDS
+it, longer residence spends LESS per cell delivered. **Grade X row from R174 stands: nothing in the stack
+targets amplification, NOT DEMONSTRATED FOR ANY AGENT.**
+
+⛔⛔ **THREE — AND THE ONE NAMED DRUGGABLE CIRCUIT FOR THAT SPEC CLOSES. SIK inhibition genuinely DOES
+isolate the SIK3/HDAC4 arm from CREB — the audit was right about that, and it is irrelevant. Six grounds:**
+· ⛔ **① WRONG DIRECTION, MEASURED.** `sasagawa2012`: **Sik3-null mice are normal as embryos and BECOME
+  DWARFED WITH AGE**, hypertrophy markedly delayed, **growth plates EXPANDED**, chondrocytes accumulating
+  in sternum/ribs/spine. **Expanded plate + shorter animal = CORR-292's JAM**, failure mode #1. R302's
+  disqualifier ②.
+· ⛔⛔ **② STEP 0 SUBSTITUTION, AND IT IS AUTHOR-STATED.** `choi2026sk124` opens by saying SIK2/SIK3
+  inhibitors are a strategy **"to mimic PTH actions"**; `momenzadeh2024` says the same. **PTH1R agonism was
+  already tested to a TERMINAL LENGTH ENDPOINT and gave 0.0% FEMORAL LENGTH IN EVERY ARM AT 26 MONTHS**
+  (CORR-269). **This is a downstream substitution for an intervention already measured to exactly zero.**
+  ⭐ *This is the correct closure — NOT R310's PDE3B argument, which the audit rightly said does not apply.*
+· ⛔ **③ THE ONE SIK INHIBITOR WITH IN VIVO SINGLE-CELL DATA MOVES THE POOL THE WRONG WAY:** YKL-05-099
+  increased osteoblast subsets and **REDUCED CHONDROCYTE PRECURSORS.**
+· ⛔ **④ DOUBLY REDUNDANT** — SIK1/SIK2 substitute for SIK3, HDAC5 for HDAC4. A partial inhibitor is
+  compensated.
+· ⛔ **⑤ NO HUMAN SIK3 SKELETAL PHENOTYPE** — human SIK3 variants are the short-sleep trait.
+· ⛔ **⑥ THE FAR END OF THE BAND IS A HUMAN SHORT-STATURE DISEASE** — constitutive PTH1R activation (max
+  cAMP → max SIK3 inhibition) is **JANSEN metaphyseal chondrodysplasia, short-limbed**, and ablating Hdac4
+  rescued it (`hppner2025`).
+⚠ **NO SIK INHIBITOR HAS A BONE-LENGTH ENDPOINT IN ANY SPECIES** — SK-124 (oral, orchiectomised mice) and
+YKL-05-099 (fracture callus) report **mass, turnover and rigidity**, both in deficit models (CORR-203).
+⚠ **And the circuit closes from its other end too:** `wang2025hdac4` — **Prx1-Cre Hdac4 deletion gives LIMB
+SHORTENING and PREMATURE GROWTH PLATE CLOSURE.** **Both HDAC4 loss and SIK3 loss shorten: a band with no
+accessible interior.**
+
+⛔ **FOUR — R177's SCREEN RE-RUN, AND IT RETURNS NOTHING.** Targeted queries for an agent moving clone size,
+cells per column, or delayed hypertrophic differentiation **with a length endpoint** return one irrelevant
+historical review, five descriptive papers, and **ZERO** for delayed hypertrophy paired with a
+longitudinal-growth endpoint. **R177's blocker stands: the field reports the resting zone as a HEIGHT IN
+MICROMETRES, not a count**, so the quotient cannot be formed — and the dexamethasone probe stays
+uncomputable (`schrier2006` has the RZ cell count but no growth rate or terminal cell size; `gafni2001` has
+those but reports the zone as a height — different experiments). ⚠ Glucocorticoids are contraindicated
+twice over here anyway (GR **and** the SMO CRD) — **mechanism probe, never a candidate.**
+
+🧭 **WHAT R423 SETTLES.** The primary target is real, is **88% of the yield**, has a **precise drug spec no
+agent satisfies**, and its one named druggable circuit is now **closed on DIRECTION rather than absence.**
+The honest state: **the term has NO AGENT ANYWHERE**, and the reason is structural in two layers — the
+field does not report the denominator, and the circuit that sets the numerator is a band whose **both ends
+shorten.** Written plainly so later rounds stop rediscovering it as an open frontier.
+
+## 🩸🩸🩸 R422 — **THE OESTRADIOL FIGURE IS OPERATOR-REPORTED WITH NO METHOD RECORDED ANYWHERE, AND
+## SEVEN ROUNDS REST ON IT. ⭐ THE BONE-AGE FILM FALSIFIES THE BLOOD TEST — and a 2×2 with the ferris2017
+## panel resolves it WITHOUT mass spectrometry.**
+
+⛔ **ONE — THE PROVENANCE IS WORSE THAN "UNVERIFIED".** Grep of every node + CLAUDE.md: **NO ASSAY METHOD
+ANYWHERE.** The value enters in R355's node as, verbatim, an **"OPERATOR-STATED SUBJECT VALUE: 3.3 to 6
+pmol/L on anastrozole 1 mg"** — and **that same node already records it as sitting below routine
+immunoassay sensitivity.** The file flagged its own problem in the round that introduced the number and
+built on it for sixty rounds anyway. **An unactioned flag, not a new discovery.**
+
+⛔ **TWO — THE DEPENDENCY, COUNTED: R351 · R355 · R358 · R359 · R360 · R363 · R419.**
+**R360 IS THE LOAD-BEARING ONE** — its Regime 1 vs Regime 2 framework turns on anastrozole having removed
+the oestrogen deadline, and **Regime 2 is what prices every throughput arm at ≈0, makes the POOL the
+binding constraint, and gives the SAG programme its priority.** ⛔ **If the number is an assay-floor
+artefact, REGIME 2 DOES NOT HOLD and that de-ranking goes with it.**
+
+⭐⭐⭐ **THREE — THE THING THIS ROUND ADDS: THE FILM TESTS THE BLOOD TEST, AND THE FILE HAD IT BACKWARDS.**
+The atlas has treated ΔBA/ΔCA as *a measurement still to take* and the oestradiol as *a measurement
+already taken*. **It is the other way round.** If E2 really were 10–25× below the closure threshold,
+skeletal maturation should be near-arrested — that is what the natural experiment looks like:
+**`lanfranco2008`'s aromatase-deficient man was BONE AGE 15.5 AT CHRONOLOGICAL AGE 26.8**, epiphyses
+unfused, still growing.
+→ ⭐ **A NEAR-NORMAL ΔBA/ΔCA ON THE CURRENT STACK IS PRIMA FACIE EVIDENCE THE OESTRADIOL NUMBER IS WRONG**
+(or that his closure is oestrogen-independent — and R360 already gives the rule that separates them:
+**0.2–0.4 → Regime 2 confirmed · 0.7–1.0 → `smith2008`'s complete-receptor-loss residual, in which case
+NO oestrogen-directed agent reaches it**). **The film is a falsification test, and it may use radiographs
+he already has.**
+
+⭐⭐ **FOUR — AND THE 2×2 THAT SETTLES IT WITHOUT LC-MS/MS.** Cross the oestradiol reading with
+`ferris2017`'s engagement panel:
+| E2 | T / LH / FSH | reading |
+|---|---|---|
+| genuinely low | **raised** | AI engaging and suppressing — **current framework stands, Regime 2 holds** |
+| genuinely low | not raised | the low E2 is **not the drug** — find what is, before any further inference |
+| **not suppressed** | **raised** | ⛔ **`ferris2017`'s configuration — Regime 2 FAILS, throughput arms re-price upward, R351/R355/R358/R359/R360 all need restating** |
+| not suppressed | not raised | **not absorbed / not taken** — and R363 calls adherence the highest-leverage item in the file |
+⭐ **THREE OF THE FOUR CELLS ARE REACHABLE ON A ROUTINE PANEL PLUS A FULL BLOOD COUNT**, because the
+discriminating variables are **testosterone, LH, FSH and HAEMATOCRIT — not oestradiol.** Mass-spec E2
+sharpens the answer; it is not required to get one.
+⚠ **The comparator for testosterone is NOT a normal reference range — it is `ferris2017`'s 1156 ± 302
+ng/dL in Tanner IV–V boys ON an aromatase inhibitor.**
+
+⛔ **FIVE — COUNTERWEIGHT.** `ferris2017` is n=21, retrospective, 0.9 y mean in the late group, endpoint
+is PREDICTED height. **It cannot establish that anastrozole fails, and nothing here argues for stopping
+it** — R274/R329 keep it best-in-class, R363 calls adherence the highest-leverage item in the file. What
+is established is narrower and is about THIS FILE: **target engagement has never been checked, the check
+is a blood draw, and seven rounds rest on a number the file itself flagged as unverifiable on day one.**
+
+⭐ **THE RULE, so it does not recur: ANY SUBJECT-SPECIFIC VALUE ENTERING THIS ATLAS FROM THE OPERATOR
+CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS A PREMISE.** Until the
+method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
+functional sensitivity."*
 
 ## ⚖️⚖️⚖️⚖️ R421 — **THE CNP COMPARTMENT NUMBERS WERE ARTEFACTUAL. NPR3 GOES FROM −4.12% TRUNK TO
 ## 59.2% AT P=4.9e-90 — the largest compartment artefact in this file, on the gene that carried the
