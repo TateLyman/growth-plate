@@ -2451,6 +2451,39 @@ null**, because γ-secretase inhibition already does exactly that (R399).
 GROWING animal.** And the authors' own earlier work states sustained Notch activation gives MSC proliferation
 **AND ARREST OF CELL DIFFERENTIATION** — charge without discharge, in their words.
 
+⛔⛔⛔ **CORR-355 — THE CONTESTED QUESTION IN SIX WAS RESOLVED THE SAME HOUR, AGAINST THE CHEAP ROUTE, AND IT
+WAS FOUND *OUTSIDE* PUBMED'S OBVIOUS PATH.** `sun2018jag1` — **SAME LABORATORY as `wang2021jag1`, sharing four
+authors** — treated mesenchymal stromal cells with **SOLUBLE JAG1** and reports **HES1 *DECREASED*** versus
+control, describing the mechanism throughout as **"transient Notch INHIBITION by soluble JAG1."**
+**Same group. Same readout gene. Opposite sign.** And the 2018 arm is the one done **in a chondrogenic
+context.**
+⭐⭐ **BUT IT DOES NOT DAMAGE THE TARGET — IT IDENTIFIES THE WRONG TOOL, AND THE RULE IS CLEAN:**
+| form | result |
+|---|---|
+| **IMMOBILISED / MULTIVALENT / Fc-clustered JAG1** | **AGONIST** — `youngstrom2017`: recombinant Jagged-1 **on collagen scaffolds** heals femoral AND calvarial defects in mice and rats, bone-anabolic, and **without BMP's diffuse hypertrophy** · `smyrlaki2024` origami · `mout2025notch` designed multivalent |
+| **MONOMERIC SOLUBLE JAG1** | **ANTAGONIST** — `sun2018jag1`, HES1 down |
+⭐⭐⭐ **AND THE PAPER THAT SETS THE RESTING-ZONE DIRECTION USED THE AGONIST FORM: `lin2011` used JAGGED1/**Fc**,
+which is DIMERIC — i.e. multivalent.** So every result showing Notch ON expands the reserve used a CLUSTERED
+form, and the monomeric peptide is the one that inhibits. **The biology is intact; the cheap route is not.**
+⛔ **CONSEQUENCE: DO NOT TREAT THE 17-MER SOLUBLE PEPTIDE AS THE CANDIDATE.** In cartilage the predicted effect
+is Notch INHIBITION, which is the γ-secretase direction — **it would SHRINK the reserve. That is harm, not a
+null.** `wang2021jag1`'s systemic Hes1 rise in marrow is the outlier and may be indirect.
+→ **The candidate is the MULTIVALENT agent — the designed soluble agonist or a CD73-directed SNAG — not the
+peptide.**
+
+⭐⭐ **AND THE "LOCKED AWAY" INTUITION WAS CORRECT, LITERALLY. A GMP NOTCH-AGONIST PLATFORM WAS BUILT, FUNDED
+AT $120M, TAKEN INTO TWO PHASE 2 TRIALS, AND SHELVED.** **NOHLA THERAPEUTICS** (Seattle, 20-year exclusive
+licence from Fred Hutchinson) was founded on a *"proprietary Notch ligand technology platform"*; its lead
+product **DILANUBICEL (NLA101)** — cord-blood progenitors expanded on **immobilised Delta1ext-IgG** — has
+**seven registered trials**, FDA **orphan drug designation**, and **ceased operations in late 2019** with the
+platform dormant. ⛔ **Important limit: patients received the CELLS, not the agonist — so still no human has
+ever been given a Notch agonist.** ⭐ **What it does prove is that a Notch-agonist protein has been
+manufactured to clinical grade and used in registered human trials. That is a position SAG has never
+reached.** And `youngstrom2017`'s scaffold-delivered Jagged-1 is a second bone-anabolic programme that also
+went quiet.
+✓ **Registry check, run this round: EVERY registered Notch trial is an INHIBITOR** (the RO4929097
+γ-secretase series). Zero agonist trials. R400's claim stands.
+
 ⛔ **SEVEN — WHAT IS MISSING, SO THE NEXT ROUND CANNOT CALL IT NEW.** **No Notch agonist of any kind has a
 BONE-LENGTH endpoint in any species.** No soluble or synthetic Notch agonist has ever been given to a growth
 plate. The CD73-SNAG does not exist. **Notch1 is a major T-cell oncogene** — that is this direction's cost.
