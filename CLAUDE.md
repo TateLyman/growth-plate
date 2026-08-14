@@ -2372,6 +2372,70 @@ rewritten.** The 56.1% figure and the ~16 cm figure are both **WITHDRAWN**. ⛔ 
 `speth2026`: whatever the complication rate, a permanent and worsening extensor deficit is the price, and it
 is a price the growth-plate route does not charge.**
 
+## 🎯🎯🎯🎯🎯 R400 — **TURNING NOTCH *ON*. R399's closing line ("the helpful direction has no drug") WAS TRUE
+## UNTIL 2024 AND IS NOW FALSE. Soluble AND targeted Notch agonists exist, work INTRAVENOUSLY in mice — and a
+## JAGGED1 PEPTIDE HAS ALREADY BEEN INJECTED INTO MICE AND EXPANDED AN ENDOGENOUS PROGENITOR POOL IN BONE.**
+
+⭐⭐ **ONE — FOUR INDEPENDENT LINES SAY NOTCH HOLDS THE RESERVE. THREE ARE NEW.**
+· **ORGAN CULTURE** — `lin2011`, neonatal rat femur: **Jagged1/Fc (Notch ON) RAISED the epiphysis-stem-cell zone
+  fraction AND BrdU⁺ stem cells; DAPT (γ-secretase inhibitor) LOWERED BOTH.** PTHrP(1-34) did the same and
+  raised NICD/Jagged1 → **Notch sits DOWNSTREAM of PTHrP.**
+· **MOUSE LENGTH, ON THE PLATE'S OWN LIGAND** — IMPC **Dll1-het BODY LENGTH −1.726 (P=0.00136) and −4.492
+  (P=0.0052)** against a consortium median of −0.212; **Notch3-hom −0.830 (P=0.0016)**. And **DLL1 is
+  cartilage-enriched in the human plate (ratio 3.05, 24.9 CPM).** ⚠ CORR-329: negative is the common direction,
+  so it is the MAGNITUDE that carries this, not the sign.
+· ⭐ **THE CALIBRATED MATURATION SCREEN, AND IT REPLICATES.** In GSE225878 (R311: **positive LFC = matured
+  EARLY = spent the period**) **RBPJ — the obligate Notch TF — scores +0.766 at −log10p 3.61 (D4 primary),
+  +1.887 (D15), and REPLICATES in the independent SECONDARY screen at +0.685, −log10p 5.56 across TEN
+  perturbations, and +1.554 at 3.70.** **MIB1** (the E3 required for ligand activation — a separate pathway
+  node) **+3.385 at −log10p 4.35.** **Losing Notch matures the chondrocyte early.**
+· **HUMAN, WEAK AND CONFOUNDED** — `kindler2020algs`: 10 children with Alagille (Notch LoF), **height Z
+  significantly below zero** — but cholestatic liver disease explains it on its own.
+✓ **And the pathway is ON in the tissue: HES1, its own readout, is cartilage-enriched at 2.00 / 76.2 CPM.**
+
+⭐⭐⭐⭐ **TWO — THE BARRIER FELL IN 2024, AND I WAS ONE ROUND FROM ASSERTING IT AS PERMANENT.** Notch classically
+needs a **MECHANICAL PULLING FORCE** from a ligand on a neighbouring cell, which is why soluble ligand is an
+INHIBITOR and why no Notch agonist drug existed.
+· `smyrlaki2024` (Nat Commun) — **multivalent Jag1 nanopatterns displayed FROM SOLUTION on DNA origami activate
+  Notch WITHOUT a pulling force**, incl. chimeras where most Jag1 is replaced by non-Notch binders.
+  **MULTIVALENCY SUBSTITUTES FOR FORCE.**
+· `mout2025notch` (**Cell**, 2025) — computationally designed complexes with defined valency/geometry are
+  **soluble cytokine-like NOTCH AGONISTS**; they drive T-cell differentiation from cord blood and iPSCs, and
+  **DELIVERED INTRAVENOUSLY IN MICE** they stimulate cytokine production, antigen-specific CD4⁺ expansion and
+  class switching. **A designed soluble Notch agonist that works systemically in a mammal.**
+· `perez2026snag` (Nat Chem Biol, 2026) — **SNAGs**: tether an affinity-matured Notch ligand to a binder
+  against a protein that **INTERNALISES**, so internalisation supplies the pull → **Notch activated ONLY in
+  cells carrying a chosen surface marker.** Built against **six** markers.
+
+⭐⭐⭐ **THREE — AND ONE HAS ALREADY BEEN INJECTED INTO A MOUSE AND EXPANDED A PROGENITOR POOL IN BONE.**
+`wang2021jag1`: a Notch-activating **JAGGED1 PEPTIDE injected into mice** was *"sufficient to maximally
+activate Notch"* and **PROMOTED BONE MARROW STROMAL CELL PROLIFERATION IN VIVO, with NO effect on bone
+structure**; pre-treated animals then made more callus with greater strength in a femur defect model.
+**This is not a proposal — a systemic Notch agonist expanding an endogenous skeletal progenitor pool has been
+done.** ⛔ **CORR-340 EXACTLY: micro-CT, histology AND biomechanics were all run and BONE LENGTH WAS NEVER
+REPORTED.** The animals were dosed and the caliper was never used.
+
+⛔⛔ **FOUR — WHY IT MUST BE PULSED *AND TARGETED*, AND THIS IS MECHANISM NOT GARNISH. NOTCH IS THE EIGHTH
+BOTH-DIRECTIONS-SHORTEN AXIS.** `mead2009`: forced NICD in the chondrocyte lineage **REDUCES proliferation and
+BLOCKS hypertrophic differentiation.** Read with `lin2011` the split is **charge vs discharge by compartment**:
+**RESTING ZONE — Notch ON = more stem cells · PROLIFERATIVE/HYPERTROPHIC — Notch ON = less proliferation,
+blocked hypertrophy.** So sustained untargeted agonism **charges the pool and jams the discharge** — failure
+mode #1, ninth instance. Human gain-of-function agrees: **NOTCH2 stabilising mutations = Hajdu-Cheney =
+short stature.**
+⭐⭐ **WHICH MAKES `perez2026snag`'s TARGETING THE LOAD-BEARING COMPONENT, AND THE ATLAS ALREADY HOLDS THE
+MARKER: NT5E/CD73 is 259.6 CPM at 8.18× cartilage enrichment and IS the resting-zone stem-cell marker.**
+→ **THE CONSTRUCT: a CD73-directed SNAG — a Notch agonist that fires only in the compartment where Notch
+charges the pool, and not in the columns where it jams them.** Every component published separately
+(mechanism · soluble agonist · targeting format · systemic route · marker measured); **nobody has combined
+them.** Same class of ask as the anti-HHIP binder — but here the platform exists.
+
+⛔ **FIVE — WHAT IS MISSING, SO THE NEXT ROUND CANNOT CALL IT NEW.** **No Notch agonist of any kind has a
+BONE-LENGTH endpoint in any species.** No soluble or synthetic Notch agonist has ever been given to a growth
+plate. The CD73-SNAG does not exist. **Notch1 is a major T-cell oncogene** — that is this direction's cost.
+And `lin2011`, which sets the resting-zone direction, is an **abstract-only organ-culture study in a
+Chinese-language journal**. ⭐ **The cheapest step by far is CORR-340's: `wang2021jag1` already dosed the mice
+— put a caliper on those femurs.**
+
 ## ⛔⛔⛔ R399 — **"IS THERE A DRUG WE HAVEN'T FOUND THAT REFILLS THE POOL?" THE FIELD BUILT FOR EXACTLY
 ## THAT WAS NEVER ASKED HERE. ASKED, IT DOES NOT TRANSFER — AND THE TWO SHELVES THAT *DO* REACH CARTILAGE
 ## BOTH POINT THE WRONG WAY, PRODUCING TWO NEW CONTRAINDICATIONS INSTEAD OF A CANDIDATE.**
@@ -2409,7 +2473,7 @@ PAEDIATRIC and young-adult patients. It should not be near an open plate.**
 chondrocyte Rbpj deletion RAISES proliferation and hypertrophic number. `lin2011`: γ-secretase inhibition
 LOWERS resting-zone stem cells. **Both hold — Notch OFF pushes resting cells out into the columns: more
 proliferation, smaller reserve. That IS spending the pool**, the exact failure this whole line exists to
-avoid. ✗ The helpful direction (Notch ON) has no drug — Jagged1/Fc is a reagent.
+avoid. ⛔ **R399 WROTE "the helpful direction (Notch ON) has no drug" — R400 OVERTURNED IT ONE ROUND LATER. Soluble and targeted Notch agonists exist and one has already been injected into mice. See R400 above.**
 ⭐ **FREE QUESTION, CORR-340's shape: nirogacestat has been given to paediatric/young-adult desmoid patients.
 Has anyone measured their HEIGHT VELOCITY?** Same move that closed β2 via propranolol/haemangioma.
 
