@@ -1772,6 +1772,10 @@ occupant, which is the favourable starting state for the hedgehog arm.
 3. **Is he megadosing VITAMIN D3?** (binds SMO, phenocopies the SMO null in zebrafish. Adequacy is
    non-negotiable — target mid-normal 25-OH-D, do not megadose.)
 4. **TOPICAL/ORAL MINOXIDIL, PARACETAMOL, AKG, megadose vitamin C, NR/NMN, LITHIUM?** (all previously listed)
+   ⭐ **NEW, R419 — AND ASK IT IN THE SAME BREATH AS MINOXIDIL: FINASTERIDE OR DUTASTERIDE?** They are the
+   other half of the standard young-male hair-loss prescription, they block the 5α-reductase step that
+   `elbaradie2012` shows is the MALE growth plate's own local androgen conversion, and this atlas had ZERO
+   files on either. Grade E, free to ask, free to stop.
 5. ⭐ **NEW, R375 — ANY DHCR7-INHIBITING MEDICATION?** **HYDROXYZINE** (a common antihistamine),
    **FLUOXETINE, ARIPIPRAZOLE, TRAZODONE, BUSPIRONE, LURASIDONE, ZIPRASIDONE, VILAZODONE, CARIPRAZINE,
    NEBIVOLOL, ROTIGOTINE, AMIODARONE**. They raise 7-DHC, whose B-ring oxysterol **inhibits SMO**. Grade E
@@ -2324,6 +2328,89 @@ three weeks ARE ALREADY AVAILABLE.** R361's objection that a joint injection can
 adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that is a direct placement.
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
+
+## 🧔🧔🧔🧔 R419 — **THE ANDROGEN ARM HAS 106 FILES, ITS OWN NODE AND A HUMAN ADULT-HEIGHT
+## META-ANALYSIS, AND CLAUDE.md HAS NEVER SAID THE WORD. Worked, it kills the raise-oestradiol idea,
+## exposes a TARGET-ENGAGEMENT problem with the AI in LATE PUBERTY, and the MALE PLATE MAKES ITS OWN DHT.**
+
+⛔ **ZERO — THE PUREST CORR-313 YET.** `androgen` 106 files · `testosterone` 130 · `oxandrolone` 15 · a
+dedicated `oxandrolone` node carrying a **human ATTAINED-ADULT-HEIGHT meta-analysis** (`wang2026`: 13
+cohorts, 803 boys, **+1.78 cm**, and **testosterone beat oxandrolone by 2.64 cm**). **CLAUDE.md returns
+ZERO for `oxandrolone` AND for `androgen`.** An entire hormone axis with adult-height evidence, invisible
+to every context that reads this file.
+
+⛔ **ONE — THE HYPOTHESIS I GENERATED AND KILLED IN THE SAME ROUND. RECORDED SO NOBODY RE-DERIVES IT.**
+The setup looked strong: growth acceleration in boys is **half-maximal at E2 6.5 pmol/L** (`albin2013`);
+the one infusion dose that significantly raised velocity sat near **37 pmol/L and TRIPLED it** (0.45→1.38
+mm/3wk, `carusonicolett1985`); closure proceeds only above **~55–73 pmol/L**; **and he is at 3.3–6 — below
+all three.** R339 read that number as permission to suppress FURTHER; **the opposite reading — that he sits
+BELOW the peak of the curve — had never been made.** ⛔ **TWO INDEPENDENT HUMAN LINES REFUTE IT:**
+· **`belgorosky1989`** — 16 normal pubertal boys: growth velocity correlates significantly with
+  **TESTOSTERONE** and **NOT with OESTRADIOL**, *including the bioavailable non-SHBG-bound fractions of
+  both*. Authors: against a growth-promoting role for oestrogen in male puberty.
+· **`ferris2017`** — 21 boys on an AI: **predicted adult height unchanged in BOTH Tanner groups.**
+⚠ Weak instruments (correlational with collinear hormones; n=21 retrospective, predicted not attained) —
+but they run the same way, and `weise2001` says any oestrogen accelerates **all seven** senescence
+parameters. **DO NOT PROPOSE RAISING E2.**
+
+⭐⭐ **TWO — BUT `ferris2017` CARRIES SOMETHING BIGGER THAN THE NULL IT WAS READ FOR: THE DRUG DID NOT MOVE
+THE PARAMETER THE WHOLE STRATEGY IS AIMED AT.** In those AI-treated boys **OESTRADIOL DID NOT SIGNIFICANTLY
+CHANGE IN EITHER GROUP** — while peak testosterone rose to **650 ± 458 ng/dL** (Tanner I–III) and
+**1156 ± 302 ng/dL** (Tanner IV–V), and in late puberty **FSH (p=0.002), LH (p=0.002), HAEMATOCRIT
+(p=0.0001), BMI z-score (p=0.0005) and acne (p=0.01)** all rose. **The authors single out LATE-PUBERTY
+INITIATION as the concerning configuration — which is this subject exactly.** Mechanistically coherent:
+blocking aromatase releases feedback, raises LH and testosterone, and risen substrate can overwhelm a
+partial blockade.
+
+⭐⭐⭐ **THREE — WHICH MAKES THE OESTRADIOL NUMBER LOAD-BEARING AND UNVERIFIED, AND THIS IS THE ACTIONABLE
+PART.** An enormous amount of this file rests on one figure — **3.3–6 pmol/L**: R355's "10–25× below the
+closure threshold" · R360's Regime-1→Regime-2 switch · R339's degrader gate · R351/R358's entire
+ligand-deplete argument. ⛔ **R339 ITSELF RECORDED THAT 6.5 pmol/L ≈ 1.8 pg/mL IS BELOW ROUTINE IMMUNOASSAY
+FUNCTIONAL SENSITIVITY AND THAT A STANDARD ASSAY REPORTING "UNDETECTABLE" CARRIES NO INFORMATION — AND
+NOBODY ACTED ON IT.** With `ferris2017` showing AI-treated late-pubertal boys do NOT show an E2 fall, "the
+number is an assay-floor artefact" is now a live alternative, not a technical caveat.
+⭐ **CONFIRM THE METHOD. LC-MS/MS or extraction, or it is not a measurement.**
+
+⭐⭐⭐ **FOUR — THE NEW MECHANISM, AND IT IS SEX-SPECIFIC IN THE DIRECTION THAT MATTERS HERE.**
+`elbaradie2012`, resting-zone chondrocytes: **FEMALE chondrocytes convert testosterone to 17β-OESTRADIOL;
+MALE chondrocytes produce 5α-DIHYDROTESTOSTERONE**, and DHT mediates the sex-specific effects of
+testosterone in male cells — classical AR signalling **plus** a rapid membrane PKC pathway (G-protein, PLC,
+L-type Ca²⁺, transcription- and translation-independent).
+→ ⭐ **THE MALE GROWTH PLATE'S OWN LOCAL ANDROGEN CONVERSION IS TO A NON-AROMATISABLE ANDROGEN. AN AROMATASE
+INHIBITOR CANNOT BLOCK THAT STEP — AND BY RAISING TESTOSTERONE IT RAISES ITS SUBSTRATE.** With `nilsson2003`
+putting **AR in 65% of resting-zone, 41% of proliferative and 58% of hypertrophic chondrocytes at EVERY
+Tanner stage**, and `belgorosky1989`'s T–velocity correlation, that is **three independent lines on an
+androgen arm this file has ~400 rounds of ER work and zero androgen work against.**
+⚠ Rat, in vitro, no length endpoint. It does NOT show the DHT arm is growth-promoting at a length endpoint
+in any species — only that it is the male plate's local conversion.
+
+⛔⛔ **FIVE — NEW CONTRAINDICATION, FREE, CLINICALLY LIVE, AND IT PAIRS WITH ONE THIS FILE ALREADY HOLDS:
+FINASTERIDE AND DUTASTERIDE.** They block exactly the conversion `elbaradie2012` identifies as the male
+chondrocyte's own. **Grep: finasteride ZERO files, dutasteride ZERO files, anywhere in this atlas.**
+⭐ **AND THEY ARE THE OTHER HALF OF THE STANDARD YOUNG-MALE HAIR-LOSS PRESCRIPTION.** R336 added
+**MINOXIDIL** as a contraindication and said to ask because it is OTC and near-ubiquitous in teenage boys.
+**Finasteride is what is taken alongside it, and nobody has asked. ASK.**
+⚠ **Grade E, counter recorded: SRD5A1/SRD5A2 return NO rows in `kosmicki2026`'s 207** (checked in R359), so
+there is no population-scale height signal for the enzyme, and **no 5α-reductase inhibitor has a bone-length
+endpoint in any species.** Free to ask and free to stop — which is the whole argument for recording it.
+
+⚠ **SIX — AND THE AI's OWN ADULT-HEIGHT EVIDENCE IS SOFTER THAN THIS FILE IMPLIES.** `tanriverdi2023` —
+true adult height, **no difference overall, P=0.071**, significant only in the ≥2-year subgroup (173.1 vs
+169.8, P=0.044). `mauras2016` — near-final height, AI/GH vs GH **P=0.06, ns**. `ferris2017` — PAH null both
+groups. `mauras2008` — **PREDICTED height only**. `binder2021` is the one clean positive and it is
+**aromatase EXCESS syndrome**, a different baseline, with its single low-dose patient merely reaching
+prognosis. ⛔ **NOT an argument to stop anastrozole** — R274/R329 keep it as the best agent in class and
+R363 calls adherence the highest-leverage item in the file. It is an argument that **the effect size is
+softer than the ledger implies and its TARGET ENGAGEMENT in this subject has never been checked.**
+
+⭐ **SEVEN — WHAT TO DO, ALL FREE.**
+· **Confirm the ASSAY METHOD behind the 3.3–6 pmol/L oestradiol.**
+· **Measure the `ferris2017` engagement panel, never specified here: TESTOSTERONE, LH, FSH, HAEMATOCRIT.**
+  Those are what demonstrably move on an AI in late puberty; rising haematocrit is the one with a real edge.
+· **ASK ABOUT FINASTERIDE / DUTASTERIDE**, alongside R336's minoxidil question.
+⛔ **AND OXANDROLONE IS NOT PROMOTED:** `wang2026`'s own subgroup has **testosterone beating oxandrolone by
+2.64 cm on attained adult height**, so the non-aromatisable androgen is the WEAKER agent in the only human
+comparison that exists — and the population is constitutional delay, i.e. **restoration (CORR-203)**.
 
 ## 🦴🦴🦴🦴 R418 — **THE CEILING ON THE LARGEST ARM IN THIS FILE IS NOT CENTIMETRES. It is RATE,
 ## CONFIGURATION and CENTRE — and DISTRIBUTING ACROSS FEMUR AND TIBIA IS THE SOFT-TISSUE-SPARING OPTION,
