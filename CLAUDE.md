@@ -2481,6 +2481,105 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 💧💧💧💧 R428 — **THE TRANSPORT FINDING RE-FILED AS *THE EXPOSURE AND TARGETING TERM* AND PRICED — AND
+## THE MULTIPLIER LARGELY FAILS, BECAUSE THE SMALL MOLECULES ARE ALREADY AT UNITY PARTITION. Two of my own
+## assertions withdrawn: A HUMAN KNEE-LOADING DEVICE HAS BEEN BUILT TWICE, and the instrument that would
+## measure physeal solute uptake EXISTS and has already resolved a growth plate at 3 T.**
+
+⛔ **ZERO — THE EXPOSURE AND TARGETING TERM, NAMED IN THE LEDGER AT LAST.** `growth_plate_drug_exposure`
+(grade B) has held since R155 that **NOT ONE of twelve audited growth-promoting agents has a published
+growth-plate tissue concentration in any species** — every dose rationale in this field uses plasma as a
+surrogate for an avascular, alymphatic, diffusion-limited tissue and the surrogate has never been validated.
+The R155 ledger ranked it **FIRST among all live items** and called it the recommended next dive. **Twelve
+rounds have deferred to it inside a node nobody loads.** Coverage: `perfusion` 9 node files / 0 here ·
+`intramedullary pressure` 2 / 0 · `local limb warming` a dedicated node / 0 · `blood flow` 2 / 0 ·
+`vasodilation` 0 / 0 · `convection` 0 / 0. **Seventh CORR-352 instance in nine rounds — a whole term, six
+vocabulary items, near-zero ledger presence.**
+
+⛔ **ONE — THE 940-CHILD EXTRACTION, STARTED, AND IT CORRECTS MY OWN FRAMING FIRST.** The 2025 review's
+twelve are Arnett & Lutz 2002 (25) · Dowthwaite 2019 (43) · **Fuchs 2001 (89)** · Gomez 2021 (31) ·
+**Macdonald 2008 (222)** · Nichols 2008 (89) · Nichols 2001 (16) · **Nogueira 2014 (138)** · Nogueira 2015
+(36) · Thein-Nissenbaum 2023 (45) · **Weeks 2008 (99)** · Witzke & Snow 2000 (53).
+· ⛔ **FOUR OF THE TWELVE ARE RESISTANCE EXERCISE, NOT JUMPING** (135 participants) and one is combined —
+  **the jumping-only total is ~698, not 940.** · ⛔ **AND `anliker2012`, `vlachopoulos2018`, `johannsen2003`
+  and `weeks2012` ARE NOT IN THE TWELVE** — I conflated the review's set with trials I had named separately,
+  so the true count of controlled paediatric loading trials measuring height is LARGER than twelve.
+  · ⚠ **The twelve sample sizes sum to 886, not 940** — recorded as a discrepancy, not resolved.
+⭐ **PRE-DECLARED BEFORE EXTRACTING:** I expected the estimates to scatter around zero, because a height gain
+would be a headline finding rather than a covariate.
+⭐ **EXTRACTED SO FAR — THREE OF TWELVE, ONE WITH NUMBERS.** `fuchs2001` **+0.5 cm favouring jumpers, never
+tested** (R427) · `witzke2000` states **changes in anthropometric variables were not different** between
+groups, no arm-wise numbers · `weeks2012` no differences in subject characteristics at 3 years.
+**One untested positive against two stated nulls without numbers — NOT ENOUGH TO LEAN EITHER WAY.**
+⛔ **The remaining nine are all closed-access, none with a PMC record. Blocked on PDFs, not on method.**
+⭐ **AND THE FALSIFIABLE PREDICTION IS DECLARED NOW: IF REAL, THE EFFECT SHOULD SCALE WITH MECHANICAL DOSE.**
+`fuchs2001`'s 61 cm drop landing is **8.8 ± 0.9 BW**, ~2.3× `brailey2026`'s ordinary high jump at 3.77 BW,
+and the resistance arms are the lowest-impact members. **If the twelve estimates are unordered with respect
+to peak ground reaction force, the arm is dead regardless of the pooled sign.**
+
+⛔⛔ **TWO — THE MULTIPLIER PRICED, AND THE ARITHMETIC RUNS AGAINST THE REFRAME.** The governing curve is not
+`serrat2014`'s alone but **`farnum2006`'s BASELINE: a 332 Da solute already reaches ~100% of the vascular
+concentration in the plate, saturating in FIVE MINUTES; 3 kDa ~60%; 10 kDa ~10%; 40 kDa undetectable.**
+⭐ **A SOLUTE ALREADY AT UNITY PARTITION HAS NOTHING TO MULTIPLY** — diffusion cannot take a molecule above
+the concentration of the blood supplying it. Against the stack:
+· **erdafitinib ~447 Da · anastrozole ~293 Da · sulfate 96 Da — ALL AT THE TOP OF THE CURVE. Multiplier ≈ 1.0.
+  NOTHING TO GAIN.** · **vepdegestrant 723.9 Da**, >99% protein bound — small free fraction, itself near
+  unity. · ⭐ **the CNP analogue (released CNP-38 ~4 kDa) sits where the curve is ~half — THIS is the band
+  where a delivery increase bites**, and `serrat2014` measured **+150% at 10 kDa**. · **GH ~22 kDa** — large
+  relative multiplier on a tiny absolute, and much of GH's action is hepatic.
+→ ⭐ **"A MULTIPLIER ON FIVE AGENTS" BECOMES "A MULTIPLIER ON ONE — THE PEPTIDE ARM — AND ~NOTHING ON THE
+THREE SMALL MOLECULES."** ⚠ **Limit stated: `serrat2014` never measured below 10 kDa, so the near-unity
+conclusion is an INFERENCE from `farnum2006`'s ceiling, not a measurement**; protein binding, active
+transport, metabolism and residence time are in neither curve.
+⭐ **What survives: the one arm it helps is the CNP analogue — precisely the arm R425 put back in.** So the
+reframe does not raise the grade; it re-ranks WHICH agent a delivery intervention protects.
+⛔ **AND R155's #1 ITEM IS NOT ANSWERED. `serrat2010` measures a fluorescent TRACER, not a drug.** The
+exposure term's core claim is untouched by R426, R427 or this round.
+
+⛔ **THREE — MY OWN ASSERTION WITHDRAWN: THE HUMAN KNEE-LOADING DEVICE EXISTS, AND IT WAS BUILT TWICE.**
+R427 wrote there is none; CORR-267/284 forbid asserting what the literature contains without querying.
+· **`fitzwater2013`** — a **PORTABLE VOICE-COIL ELECTROMECHANICAL KNEE LOADER**, same laboratory as the mouse
+  work, whose stated tasks were loading magnitude and frequency **suitable for humans** and portability,
+  characterised for force, duty cycle and frequency **on a human knee model**.
+· **`korupolu2017`** — an under-actuated four-finger 3D-printed loader, validated for force and frequency,
+  ending by **recommending it be tested in a clinical study**.
+→ **THE CORRECTED STATEMENT IS BETTER FOR THE ARM: THE DEVICE HAS BEEN BUILT FOR HUMANS TWICE AND NEVER USED
+IN ONE.** That moves lateral loading from *no modality exists* to *a characterised device awaiting its first
+biological endpoint.*
+
+⭐⭐⭐ **FOUR — THE INSTRUMENT EXISTS, IT RESOLVES A GROWTH PLATE, AND THE ATLAS ALREADY HELD THE PAPER.**
+⛔ **CORR-356 FIRST: `menezes2006` HAS BEEN IN THIS BIBLIOGRAPHY SINCE 2026-08-07 WITH NO `one_line_finding`,
+CITED BY `drug_property_screen` AND `the_stack_in_a_normal_human`** — and drug_property_screen already
+carries its CHARGE result correctly, even flagging *"abstract only; enhancement ratio values not read"* and
+calling it the cleanest in vivo charge-isolating comparison in a large-animal growing physis. **Only the
+duplicate-ref check caught it pre-commit — CORR-336's fourth instance. The atlas filed it as a CHARGE datum
+and never as a METHODS datum, so nobody noticed it answers whether the instrument can see a growth plate.**
+⭐ **`menezes2006`: 3-T MRI, TWELVE THREE-WEEK-OLD PIGLETS with an open physis, IONIC gadopentetate vs
+NONIONIC gadoteridol. Enhancement ratios AND T1 QUANTIFIED SEPARATELY IN THE PHYSIS, epiphyseal cartilage,
+SOC and metaphysis — before contrast and at THREE 15-MINUTE INTERVALS after, i.e. a TRANSPORT TIME COURSE.
+Enhancement significantly HIGHER for the NEUTRAL agent in the physis, epiphyseal cartilage and SOC (P<0.05);
+the authors nominate the IONIC agent for evaluating cartilage FIXED-CHARGE DENSITY.**
+→ **THAT IS THIS ATLAS'S DONNAN MODEL MEASURED IN VIVO, IN A GROWTH PLATE, WITH A CHARGE COMPARISON.** The
+model has run since R153 (fostriecin 0.21 dianionic, endothall 0.22, neutral M372049 0.82, compound 23 0.74)
+and nobody asked whether the instrument existed.
+⭐ **AND THE VALENCE DEPENDENCE IS ORDERED: `kang2017`, 44 porcine patellae, T1 maps every 10 min to 120 min,
+normal vs proteoglycan-depleted — Gd-BOPTA²⁻ 0.037 > Gd-DTPA²⁻ 0.022 > Gd-DOTA⁻ 0.018 > nonionic gadobutrol
+0.011, with ONLY the double-negative agents significant. z=−2 > z=−1 > z=0, which is r^z scaling.**
+⛔ **THE COSTS, PRICED:** the two best agents are **LINEAR chelates now restricted for gadolinium retention**;
+the macrocyclic ionic alternative (**gadoterate, z=−1**) has about **half the discrimination**; the safest
+agent for an adolescent is the least informative one. ⚠ **AND THE CONFOUND THAT DECIDES WHETHER THIS MEASURES
+TRANSPORT AT ALL: `li2008dce` shows physeal enhancement tracks the adjacent METAPHYSEAL VASCULAR BED**, so
+physeal enhancement is not purely matrix solute — a modelling problem, not a resolution problem. ⚠ **And no
+quantitative MRI of the HUMAN physis has ever been published** — the tissue is on every paediatric knee MRI
+and has never been quantified.
+⭐ **THE STUDY IT ENABLES, WHICH IS THE ONE THE FILE HAS WANTED SINCE R155: a WITHIN-SUBJECT before/after
+measurement of physeal solute uptake under a defined loading intervention, CONTRALATERAL LIMB AS INTERNAL
+CONTROL — `serrat2010`'s design, in a human, non-invasively.** It is also the only route this atlas has ever
+identified to a growth-plate tissue concentration in a living human. **`g_l12_428a`.**
+→ **VERDICT: the measurement half of the exposure term is NOT closed. An instrument class exists, it has
+resolved and quantified a physis in a growing animal, and it has never been pointed at this question. A
+promotion with a named protocol — not a thirteenth deferral.**
+
 ## 🦿🦿🦿🦿🦿 R427 — **THE FOUR PAPERS READ IN FULL. THREE OF R426's CLAIMS CHANGE, AND THE BIGGEST ONE IS
 ## THAT THE PRODUCTIVE MECHANICAL AXIS IS *LATERAL*, NOT AXIAL — 0.5 N ACROSS A KNEE LENGTHENS A BONE 3.5%
 ## WHILE 17 N THROUGH ITS LONG AXIS SHORTENS IT 4%. NO HUMAN MOVEMENT DELIVERS THE AXIS THAT WORKS.**
@@ -2757,10 +2856,11 @@ plate.** `g_l6mech_426b`.
   returning NOTHING.** No traction or suspension modality has a height endpoint in a growing human, and the
   disc component of any acute gain is R425's diurnal artefact.
 
-⛔ **PAYWALLED AND NEEDED — ASKED 2026-08-14:** `fuchs2001` full text (the mean and SD of 7-month height
-change by group, which decides what the randomised null excludes) · `dandrea2021a` and `dandrea2021b`
-(Parts 1 and 2 of the only meta-analysis of mechanical growth modulation) · `xu2013pthrp` (the strain
-magnitudes in the PTHrP dose-response).
+✅ **ALL FOUR SUPPLIED AND READ 2026-08-14 — see R427.** ⛔ **STILL PAYWALLED AND NEEDED, FOR THE
+940-CHILD EXTRACTION (R428): the NINE remaining trials in the 2025 jumping review** — Arnett & Lutz 2002 ·
+Macdonald 2007/2008 · Nichols 2008 · Nichols 2001 · Nogueira 2014 · Nogueira 2015 · Weeks 2008 ·
+Dowthwaite 2019 · Gomez 2021 · Thein-Nissenbaum 2023. **What is needed from each is one table: baseline and
+follow-up HEIGHT by arm, with n and whatever dispersion is reported.**
 
 ## 🦴🦴🦴🦴 R425 — **THREE DECISIONS. NAVEPEGRITIDE GOES *IN*, decided against CORR-195 instead of a
 ## population prior. THE SITE TERM OPENS AND ITS FIRST FINDING IS AN ABSENCE — nobody has ever sampled a
