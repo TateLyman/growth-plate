@@ -2291,6 +2291,105 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ✅✅✅✅✅✅ R390 — **THE SIX BLOCKERS ATTACKED ONE BY ONE. FOUR MOVE, ONE IS CONFIRMED, AND THE
+## SYSTEMIC LENGTH EXPERIMENT TURNS OUT TO HAVE BEEN MEASURED AND USED AS A *NORMALISER*.**
+
+⛔ **BLOCKER 2 — "no aqueous SAG formulation exists at any concentration" — IS FALSE AS WRITTEN, AND I WROTE
+IT.** `lee2016colitis` dosed **SAG21k 0.5 mg/kg i.p. q12h in ADULT mice, VEHICLE = PBS.** An aqueous in vivo
+vehicle for a SMO agonist exists and has been used. ✓ **The narrower claim survives: no aqueous formulation at
+the ~30 mg/mL a human systemic dose needs.**
+
+⭐⭐⭐⭐ **BLOCKER 5 — THE ADULT GUT — IS ANSWERED, AND IT RUNS FAVOURABLY ON *BOTH* INFLAMMATION AND CANCER.**
+Same paper, Beachy lab, PNAS: Hh inhibition by **three** independent means (Smo ablation, XL-139, vismodegib)
+**INTENSIFIES** DSS colitis; genetic augmentation and **systemic small-molecule Hh activation AMELIORATE it
+and restrain initiation and progression of colitis-induced ADENOCARCINOMA.**
+· ⭐ **AOM–DSS COLON CANCER ARM, BOTH DIRECTIONS IN ONE EXPERIMENT: SAG21k → DECREASED tumour burden ·
+  vismodegib → SIGNIFICANTLY GREATER tumour burden · Ptch1⁺/⁻ (more Hh) → reduced tumour volume AND number.**
+· Ptch1⁺/⁻ also: colitis severity **1.8 vs 3.4**, survival **91% vs 55%**.
+· **Mechanism is STROMAL, not epithelial:** Hh induces **IL-10** in sorted Gli1⁺ colonic stromal cells with
+  more **CD4⁺Foxp3⁺ Tregs**; **IL-10 is REQUIRED** for the protection.
+· ✓ **No muscularis or smooth-muscle finding reported.**
+⚠ **Honest limits: 0.5 mg/kg is 40× below li2021's, the course was 6 doses not 3 weeks, and it is a challenged
+system (CORR-203 governs efficacy).** It **constrains** the muscularis liability; it does not exclude it.
+⚠ Also recorded because it is inconvenient: the paper's own **Gli1-null survival data were internally
+contrary** — heterozygotes fared worse than homozygotes — which the authors flag.
+
+⭐⭐⭐⭐ **BLOCKER 4 — "no systemic length endpoint in a normal animal" — IS CORR-340 AGAIN, AND THE BONE WAS
+ALREADY MEASURED.** `rundle2023`: **SAG21k 5 mg/kg/day i.p. × 3 WEEKS**, murine femoral segmental defect,
+n=9/group — and they analysed the **CONTRALATERAL *UNFRACTURED* FEMUR by microCT, with the analysis
+NORMALISED TO THE LENGTH OF THE FEMUR.**
+→ ⭐ **THE ANIMAL WAS DOSED, THE BONE WAS MEASURED, AND THE LENGTH WAS REPORTED ONLY AS A DENOMINATOR. IT IS
+A DATA REQUEST, NOT AN EXPERIMENT.** ⚠ Skeletally mature surgical model; the contralateral limb sits in an
+injured animal, so not a clean control.
+⭐ **AND IT SUPPLIES A PUBLISHED DOSE RANGE THIS FILE DID NOT HAVE: SAG is effective at activating SHH
+signalling in mice at 5–20 mg/kg/day — which BRACKETS li2021's 20 and trompet2024's 25 — and SAG21k is
+reported SEVERAL-FOLD MORE ACTIVE THAN SAG.**
+
+⭐⭐ **BLOCKER 6 — THE REBOUND — IS HALF MEASURED, IN THE PREDICTED DIRECTION.** `lee2016colitis` Fig S3A
+measured **Gli1, Ptch1, HHIP *and* Ihh** in colon under systemic SAG21k in vivo; **PTCH1 and HHIP behave as
+agonist-responsive targets** — present at baseline, suppressed in colitis, restored by the agonist.
+**The first half of R389's prediction — a systemic SMO agonist induces its own brakes — now has direct in vivo
+support in a mammal.** ✗ Still missing: the **post-withdrawal time course**, and the growth plate. Values are
+figure-only (CORR-318).
+
+✅ **BLOCKER 3 — "no SMO agonist ever given to a human" — CONFIRMED, NOT OVERTURNED.** clinicaltrials.gov
+re-queried **three ways** (hedgehog agonist · smoothened agonist · sonic hedgehog protein): **every registered
+hedgehog entry is an ANTAGONIST or an antagonist combination.** R375's claim stands.
+
+⭐⭐⭐ **BUT THE SEARCH RETURNED A MODALITY THIS FILE HAD NEVER HELD, AND ARCHITECTURALLY IT BEATS A SMO
+AGONIST. `zhang2020nanobody` (PNAS): A CONFORMATION-SPECIFIC *NANOBODY AGAINST PATCHED1* THAT POTENTLY
+ACTIVATES THE HEDGEHOG PATHWAY *IN VITRO AND IN VIVO*** — cryo-EM structure, traps PTCH1 in one stage of its
+transport cycle, blocking the sterol conduit — **and it requires NO LIPID MODIFICATION**, which removes the
+manufacturing problem that makes hedgehog ligands hard to produce. Authors' own framing: pathway activation
+may have value for **bone healing**, taste-cell regeneration and colitis, and **agents amenable to tissue
+targeting have been lacking.**
+⭐⭐ **THE ARCHITECTURAL POINT: PTCH1 IS ITSELF A GLI TARGET, SO A PTCH1-DIRECTED AGONIST IS *TITRATED BY THE
+FEEDBACK IT PROVOKES*. A SMO AGONIST ACTS BELOW THAT NODE AND IS NOT. THAT IS R375's ARGUMENT FOR HHIP OVER
+SAG, APPLIED TO A DIFFERENT BRAKE — AND UNLIKE AN ANTI-HHIP BINDER, THIS AGENT EXISTS.** ✗ ~15 kDa, no bone
+endpoint in any species, no human exposure, cartilage delivery untested. **A programme, not a candidate.**
+
+⚠ **BLOCKER 1 — GMP MATERIAL — NOT SOLVED, BUT THE DOSE THAT SETS ITS SIZE IS NO LONGER FIXED.** SAG21k is
+several-fold more potent and has systemic in vivo precedent at **0.5 and 5 mg/kg**. If the plate responds in
+that range the human dose falls one to two orders of magnitude below R388's ~1 g/pulse. → **Gap `g_l12_390a`
+— and it is the highest-tractability gap in the file, because THREE BLOCKERS COLLAPSE ON ONE DOSE-RESPONSE
+CURVE: the formulation problem disappears at a few mg, the material problem becomes a catalogue purchase, and
+the gut liability (seen at 20 mg/kg, absent at 0.5) plausibly falls below threshold.**
+
+⛔⛔ **NEW CONTRAINDICATION, AND IT IS ACTIONABLE TODAY: SAG IS A POTENT TERATOGEN AND THIS FILE FILED IT AS
+A DOSE CEILING.** `mao2026sag`: a **SINGLE 25 mg/kg i.p. dose** in pregnant mice → **cleft lip and palate,
+cranial bone abnormalities, haematomas**, critical window **E9.5–E10.5**. **Vismodegib and sonidegib carry
+MALE-PATIENT CONTRACEPTION REQUIREMENTS for embryo-fetal toxicity and potential seminal transfer; a potent SMO
+*AGONIST* that is a demonstrated teratogen inherits that precaution in full.** ⭐ **ANY MALE ON THIS PROTOCOL
+NEEDS CONTRACEPTION COUNSELLING COVERING THE PULSE AND A WASHOUT AFTER IT — AND THIS FILE HAD NEVER SAID SO.**
+⚠ **And R388's use of it as an anti-proliferative CEILING is WEAKER than written:** that reduced proliferation
+was measured **in an EMBRYO undergoing craniofacial MORPHOGENESIS**, while `trompet2024` gave the **same
+25 mg/kg daily to normal juvenile mice and got a 61% POOL INCREASE with Ki67 UP.** Same dose, opposite
+proliferative reading, different stage and tissue.
+
+⭐ **AND TWO FAVOURABLE MECHANISTIC ADDITIONS.**
+· **`steiner2026smo`: an activated SMOOTHENED BINDS THE PKA CATALYTIC SUBUNIT AND PHYSICALLY BLOCKS IT** (SMO's
+  disordered cytoplasmic domain occupies the PKA-C active site like a regulatory subunit). **R307/R309 give
+  three lines that RAISING cAMP/PKA/CREB is the harmful direction here and that erdafitinib contributes by
+  LOWERING CREB — so the hedgehog arm pushes that node the SAME way rather than opposing it.** Grade E for any
+  skeletal claim, and it is **not** the term SAG is being used for (SAG is for **N**).
+· **`kong2025dhh` (Science): small-molecule Hh agonism protects pancreatic β cells from streptozotocin and
+  airway from SO₂/influenza — and HIGHER DIABETES INCIDENCE IS REPORTED IN PATIENTS ON HEDGEHOG INHIBITORS.**
+→ ⭐ **THIRD INDEPENDENT ORGAN SYSTEM ON WHICH THE HUMAN HARM ATTACHES TO HEDGEHOG *SUPPRESSION*** — after the
+colorectum (`westendorp2021`, `lee2016colitis`) and the FAERS cutaneous-SCC signal (`zheng2025faers`).
+
+🎯 **PROTOCOL DELTA FROM R390 — two additions, no subtractions.**
+· ⭐ **CONTRACEPTION COUNSELLING for the pulse plus a washout, on the vismodegib/sonidegib male-patient
+  precedent.** New, and free.
+· ⭐ **DO NOT FIX THE DOSE AT 1.62 mg/kg UNTIL THE DOSE-RESPONSE EXISTS.** The published effective systemic
+  range spans **40-fold**, and the entire formulation and GMP burden is a function of where in that range the
+  plate responds. **`g_l12_390a` is the single highest-value unrun experiment on this route, and one study
+  design answers it, the length question and the gut question together.**
+
+⛔ **WHAT IS *STILL* NOT FIXED AFTER R390:** no GMP material · **no SMO agonist has ever been given to a human
+(re-confirmed)** · no aqueous formulation at human-dose concentration · **no systemic bone-LENGTH endpoint in
+a normal animal has been REPORTED** (though rundle2023 measured one) · the post-withdrawal rebound time course
+· and **no hedgehog agonist has been given to any animal at a skeletal stage equivalent to BA16.**
+
 ## ✅✅✅✅✅ R389 — **BOTH R388 BLOCKERS TAKEN APART. THE GI FINDING IS *MESENCHYMAL AND MECHANICAL*, NOT
 ## COLORECTAL-NEOPLASTIC — THE COLON IS THE SAFE SEGMENT AND THE STOMACH IS THE RISK — AND THE EXIT MUST BE
 ## A TAPER, BECAUSE THE PATHWAY ADAPTS *BELOW* SMOOTHENED AND R375 SAID IT COULDN'T.**
