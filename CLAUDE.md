@@ -2412,6 +2412,53 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🏆🏆🏆🏆🏆🏆 R403 — **R401's RULE APPLIED TO THE 96 LOAD-BEARING GENES. IT RETURNS *OSTEOLECTIN*, AND THE
+## HEADLINE IS THE SENTENCE THIS FILE HAS BEEN ASKING FOR ON EVERY TARGET IT HAS EVER WORKED:
+## "RECOMBINANT OSTEOLECTIN INJECTIONS INCREASED FEMUR LENGTH IN JUVENILE MICE."**
+
+⛔ **HOW IT WAS MISSED, AND IT IS THE WRONG-QUERY ERROR AGAIN.** R331 declared the ELEVATION direction "fully
+occupied" — but it reached that by **keyword-matching drug mechanisms**, which R401 shows cannot see a
+recombinant protein. R347 listed **CLEC11A −0.74** among six load-bearing blind-spot genes and moved on.
+**Neither asked whether the protein could be SUPPLIED.** Filtering the 96 shortening genes to SECRETED and
+PRESENT returns 14; one has everything.
+
+⭐⭐⭐ **`zhang2023osteolectin` (PNAS, Morrison lab) — and every arm is the right one.**
+· ⭐ **RECOMBINANT OSTEOLECTIN INJECTIONS INCREASED FEMUR LENGTH IN JUVENILE MICE.** **NORMAL animals — not a
+  dysplasia, not a deficiency. CORR-203 DOES NOT APPLY.** Nothing else obtainable in this file has that.
+· **Osteolectin-null mice have SHORTER bones** than sex-matched littermates.
+· **The receptor is INTEGRIN α11, and deleting it IN CHONDROCYTES reduced growth-plate chondrocyte
+  proliferation and bone elongation** — required in cartilage, not merely present.
+· **Neither gene is needed for FETAL skeleton; both are needed for MAINTENANCE** → a POSTNATAL axis, passing
+  CORR-299 outright.
+· **HUMAN, BOTH ENDS: rs182722517 (16 kb downstream) is associated with REDUCED HEIGHT *AND* REDUCED PLASMA
+  OSTEOLECTIN — and human BMSCs gene-edited to carry it produced LESS osteolectin.**
+
+⭐⭐ **AND THIS ATLAS'S OWN DATA ADDS TWO LINES NOBODY HAD JOINED TO IT.**
+· **BURDEN, and it is MONOTONE (R324's causal shape): pLoF −0.742 cm P=1.06e-25 (10,012 carriers) ·
+  pLoF+delmis −0.713 P=1.62e-26 (11,249) · pLoF+poss-delmis −0.511 P=3.64e-20 (16,414).** The
+  **best-powered load-bearing secreted row in the whole kosmicki table.**
+· **RECEIVER TEST PASSES ON THE WHOLE AXIS, 12/12: CLEC11A 274.1 CPM ratio 2.17 · ITGA11 61.8 ratio 2.76 ·
+  ITGB1 310.7 ratio 1.65.** Ligand, receptor and partner, all cartilage-enriched. (AGTR1 0.03 killed
+  losartan; MME 0.17 killed sacubitril.)
+
+⭐ **AND THE PROTEIN IS SOLD** — recombinant human CLEC11A / **SCGF-α**, at least four suppliers, one listed
+**biologically active**, rat protein too. **R401's third query, run once, returns the agent.**
+✓ **STEP 0 CLEAN** — integrin α11 / osteolectin is moved by *nothing* in this stack.
+
+⛔ **THE HONEST OBJECTIONS.**
+· **SIZE. −0.74 cm per allele.** That is the scale — comparable to the AI's ceiling, an order of magnitude
+  below lengthening. **It is not a big lever; it is the only one that is human-anchored, receptor-verified in
+  cartilage, purchasable AND already shown to lengthen bone in a normal animal.**
+· ⛔ **MECHANISM COLLIDES WITH R281. Osteolectin works by ACTIVATING Wnt, and R281 puts the canonical-Wnt
+  optimum BELOW wild type.** Either the pools are compartmentally distinct or the band is narrower than drawn.
+  **Recorded as an unresolved conflict, not argued away.**
+· The femur-length **magnitude is not in the abstract** — read the figures before setting any expectation.
+  Research-grade protein, no toxicology, **no human has received it**, and CLEC11A is a cancer biomarker.
+
+⭐ **AND THE OTHER THIRTEEN HAVE NOT BEEN RUN: ACAN, IHH, COL1A1, EXT1, SCUBE3, SERPINH1, ADAMTS6, PAPPA,
+ANGPTL2, HTRA1, LTBP1, THBS3, SMOC1** — all secreted, all load-bearing, all present in the plate, none put
+through R401's three queries.
+
 ## 🛒🛒🛒🛒 R401 — **"NO MOLECULE EXISTS" HAS MEANT "NO MEDICINE IS SOLD." THE VENDOR CATALOGUE WAS NEVER
 ## QUERIED, AND FOUR THINGS THIS FILE CALLED NON-EXISTENT ARE ON SALE TODAY.**
 ## Run `atlas/tools/round401_vendor_level_availability_sweep.py`

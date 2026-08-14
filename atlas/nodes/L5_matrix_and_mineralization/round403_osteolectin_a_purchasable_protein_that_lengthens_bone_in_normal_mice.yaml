@@ -1,0 +1,234 @@
+id: round403_osteolectin_a_purchasable_protein_that_lengthens_bone_in_normal_mice
+name: "R403: applying R401's rule to the 96 load-bearing genes finds OSTEOLECTIN/CLEC11A - human genetics at P=1e-25, ligand and receptor both cartilage-enriched, recombinant protein sold by four vendors, and it has already been injected into NORMAL juvenile mice and increased femur length"
+aliases:
+  - osteolectin
+  - CLEC11A SCGF
+  - integrin alpha 11 ITGA11
+  - recombinant protein that lengthens bone
+type: intervention
+layer: L5
+stub: false
+summary: >-
+  R401 established that this file has been asking the wrong availability question -
+  ChEMBL indexes small molecules, not the recombinant proteins suppliers sell, and for a
+  secreted-protein atlas that is where answers hide. R403 applies that rule to the one
+  place it should bite hardest: the NINETY-SIX genes in kosmicki2026 whose loss
+  SHORTENS, where the therapeutic direction is to SUPPLY rather than to inhibit. R331
+  concluded that direction was "fully occupied" - but it reached that conclusion by
+  keyword-matching drug mechanisms, which is exactly the query R401 says cannot see a
+  recombinant protein.
+
+  Filtering the 96 to secreted proteins that are actually present in the purity-corrected
+  human growth plate returns fourteen genes. One of them has everything.
+
+  OSTEOLECTIN / CLEC11A, AND THE HEADLINE IS A SENTENCE THIS ATLAS HAS BEEN ASKING FOR ON
+  EVERY TARGET IT HAS EVER WORKED: RECOMBINANT OSTEOLECTIN INJECTIONS INCREASED FEMUR
+  LENGTH IN JUVENILE MICE. zhang2023osteolectin, Morrison lab, PNAS. Not a rescue of a
+  dysplasia, not a restoration of a deficit - a purchasable secreted protein injected into
+  NORMAL growing animals, with a bone-length endpoint that went UP. CORR-203 does not
+  apply.
+
+  THE REST OF THE PAPER IS THE SAME AXIS FROM FIVE MORE DIRECTIONS. Osteolectin-deficient
+  mice have SHORTER bones than sex-matched littermate controls. The receptor is INTEGRIN
+  ALPHA-11, and deleting it in limb mesenchymal progenitors OR IN CHONDROCYTES reduced
+  growth-plate chondrocyte proliferation and bone elongation - so the receptor is required
+  in cartilage, not merely present. Neither gene is required for fetal skeletal formation
+  and both are required for maintenance, which makes this a POSTNATAL axis and passes
+  CORR-299 outright. In humans, a GWAS variant 16 kb downstream of Osteolectin is
+  associated with BOTH reduced height AND reduced plasma osteolectin, and human bone
+  marrow stromal cells gene-edited to carry that variant produced less osteolectin - both
+  ends of the chain, in human cells.
+
+  AND THIS ATLAS'S OWN DATA ADDS TWO INDEPENDENT LINES NOBODY HAD JOINED TO IT.
+  · BURDEN. CLEC11A pLoF is -0.742 cm at P=1.06e-25 across 10,012 carriers - the
+  best-powered load-bearing secreted row in the entire kosmicki table - and the series is
+  MONOTONE in variant severity: pLoF -0.742, pLoF plus deleterious missense -0.713 at
+  P=1.62e-26 across 11,249, pLoF plus possibly-deleterious missense -0.511 at P=3.64e-20
+  across 16,414. That is R324's causal shape, and it is the shape a real loss-of-function
+  effect makes.
+  · RECEIVER TEST. In the purity-corrected human postnatal growth plate the whole axis is
+  cartilage-enriched and detected in all twelve samples: CLEC11A 274.1 CPM at a purity
+  ratio of 2.17, ITGA11 61.8 at 2.76, ITGB1 310.7 at 1.65. Ligand, receptor and integrin
+  partner, all present, all enriched. Compare the ratios that killed drugs here - AGTR1
+  0.03, MME 0.17.
+
+  AND THE PROTEIN IS SOLD. Recombinant human CLEC11A, marketed as SCGF-alpha, is
+  catalogued by at least four suppliers including a listing explicitly described as
+  biologically active, with rat versions available. R401's third query, run once, returns
+  the agent.
+
+  ⛔ THE HONEST OBJECTIONS, AND THE FIRST IS THE SIZE. The human effect is -0.74 cm per
+  loss-of-function allele. That is the scale of this axis and it is small - comparable to
+  the aromatase inhibitor's ceiling, an order of magnitude below what limb lengthening
+  delivers. It is not a large lever; what makes it remarkable is that it is the only lever
+  in this file that is simultaneously human-anchored, receptor-verified in cartilage,
+  purchasable, and already demonstrated to lengthen bone in a normal animal.
+  ⛔ SECOND, THE MECHANISM RUNS INTO R281. Osteolectin acts by ACTIVATING Wnt, and R281
+  places the canonical-Wnt optimum BELOW wild type, with SPIN4-like mild reduction
+  lengthening bone and PORCN-type blockade exhausting the plate. An agent that raises Wnt
+  is on the wrong side of that band as this file currently draws it. Two readings are
+  possible and neither is tested: the relevant Wnt pool may be compartmentally distinct
+  from the resting-zone pool R281 describes, or the band may be narrower than assumed.
+  Recorded as a direct unresolved conflict rather than argued away.
+  ⛔ THIRD, the effect size of the femur-length gain is not in the abstract, no human has
+  received osteolectin, the protein is research grade with no toxicology, systemic
+  half-life is unrecorded here, and CLEC11A appears as a tumour biomarker in several
+  cancer papers.
+  ✓ STEP 0 PASSES. Integrin alpha-11 and osteolectin are moved by nothing in this stack -
+  not CNP, not FGFR3, not GH/IGF-1, not oestrogen.
+
+  THE METHODOLOGICAL POINT, WHICH GENERALISES. R347 already listed CLEC11A among six
+  load-bearing blind-spot genes and moved on. R331 already declared the elevation
+  direction fully occupied. Both were looking for a DRUG. The gene is a secreted protein
+  whose recombinant form is a catalogue item and whose supplementation experiment was
+  published in PNAS. The other thirteen secreted load-bearing genes on the same list -
+  ACAN, IHH, COL1A1, EXT1, SCUBE3, SERPINH1, ADAMTS6, PAPPA, ANGPTL2, HTRA1, LTBP1, THBS3,
+  SMOC1 - have not been run through the same three queries.
+quantitative:
+  - parameter: recombinant osteolectin and femur length in normal juvenile mice
+    value: recombinant Osteolectin injections INCREASED femur length
+    unit: qualitative - magnitude not stated in the abstract
+    species: mouse
+    source_ref: zhang2023osteolectin
+    note: >-
+      normal juvenile mice, not a deficiency or dysplasia model, so CORR-203 does not
+      apply. The magnitude was not retrievable from the abstract and must be read from the
+      figures before any expectation is set
+  - parameter: osteolectin loss and bone length
+    value: Osteolectin-deficient mice have SHORTER bones than sex-matched littermate controls
+    unit: qualitative
+    species: mouse
+    source_ref: zhang2023osteolectin
+    note: the loss arm, with littermate controls
+  - parameter: the receptor is required in cartilage
+    value: >-
+      Integrin alpha-11 deficiency in limb mesenchymal progenitors OR IN CHONDROCYTES
+      reduced growth plate chondrocyte proliferation and bone elongation
+    unit: qualitative
+    species: mouse
+    source_ref: zhang2023osteolectin
+    note: >-
+      a conditional receptor deletion in the relevant cell type - this is what separates a
+      systemic growth factor from one acting at the plate
+  - parameter: human genetics of the CLEC11A locus
+    value: >-
+      rs182722517, 16 kb downstream, associated with REDUCED HEIGHT and REDUCED PLASMA
+      OSTEOLECTIN; human BMSCs edited to carry the variant produced less osteolectin
+    unit: qualitative
+    species: human
+    source_ref: zhang2023osteolectin
+    note: both ends of the chain in humans, with the variant functionally validated in human cells
+  - parameter: CLEC11A burden effect on adult height
+    value: >-
+      pLoF -0.742 cm, P=1.06e-25, 10,012 carriers; pLoF+delmis -0.713, P=1.62e-26, 11,249;
+      pLoF+poss-delmis -0.511, P=3.64e-20, 16,414
+    unit: cm per allele
+    species: human
+    source_ref: zhang2023osteolectin
+    value_unverified: true
+    note: >-
+      from kosmicki2026 Supplementary Table 6 as held in atlas/data/round300; source_ref
+      nominal. MONOTONE in variant severity, which is R324's causal shape. The
+      best-powered load-bearing secreted row in the table
+  - parameter: the axis in the purity-corrected human growth plate
+    value: CLEC11A 274.1 CPM ratio 2.17; ITGA11 61.8 ratio 2.76; ITGB1 310.7 ratio 1.65, all 12/12
+    unit: CPM and purity ratio
+    species: human
+    source_ref: zhang2023osteolectin
+    value_unverified: true
+    note: >-
+      computed in R403 from GSE288028 by R344's purity split; source_ref nominal. Ligand,
+      receptor and partner all cartilage-enriched. Calibration - AGTR1 0.03 killed
+      losartan, MME 0.17 killed sacubitril, COL2A1 is 8.92
+  - parameter: availability
+    value: >-
+      recombinant human CLEC11A/SCGF-alpha catalogued by at least four suppliers, one
+      listed as biologically active; rat protein also available
+    unit: qualitative
+    species: not_applicable
+    source_ref: zhang2023osteolectin
+    value_unverified: true
+    note: >-
+      vendor listings checked 2026-08-14; source_ref nominal. RESEARCH GRADE - no impurity,
+      endotoxin-release or toxicology package, and no human has received it
+localization: growth plate chondrocytes and limb mesenchymal progenitors
+human_evidence: direct
+human_evidence_note: >-
+  Human evidence is a GWAS variant associated with both reduced height and reduced plasma
+  osteolectin, functionally validated by gene editing in human bone marrow stromal cells;
+  a monotone exome burden series at P=1e-25 across 10,012 carriers; and cartilage-enriched
+  expression of ligand and receptor in human postnatal growth plate. The interventional
+  arm is mouse.
+species_basis:
+  - mouse
+  - human
+translation_risk: moderate
+translation_risk_reason: >-
+  The supplementation experiment is mouse and juvenile, and the magnitude is not yet
+  extracted. The human arm is observational genetics with a small effect size. The
+  mechanism runs against this file's own canonical-Wnt band, which is unresolved.
+confidence: B
+claim_grades:
+  - claim: >-
+      Recombinant osteolectin injections increase femur length in normal juvenile mice
+    grade: B
+    basis: >-
+      zhang2023osteolectin, PNAS, Morrison lab. Normal animals rather than a rescue model,
+      which is what makes it unusual here. Magnitude not yet read from the figures
+  - claim: The receptor integrin alpha-11 is required in chondrocytes for bone elongation
+    grade: B
+    basis: conditional deletion in chondrocytes with a proliferation and elongation readout
+  - claim: >-
+      Human genetics support the axis at both ends - a variant lowering height also lowers
+      plasma osteolectin
+    grade: B
+    basis: >-
+      GWAS association plus gene editing of the variant into human BMSCs. Observational,
+      and the burden effect is only -0.74 cm per allele
+  - claim: The whole axis is present and cartilage-enriched in human growth plate
+    grade: B
+    basis: >-
+      ligand, receptor and integrin partner all detected in 12 of 12 samples with purity
+      ratios above 1.6. A transcript-origin argument, subject to CORR-351
+  - claim: Recombinant CLEC11A is purchasable
+    grade: B
+    basis: multiple vendor listings checked 2026-08-14; research grade, not a medicine
+  - claim: >-
+      The Wnt-activating mechanism conflicts with this file's canonical-Wnt band
+    grade: C
+    basis: >-
+      R281 places the optimum below wild type; osteolectin raises Wnt. Whether the pools
+      are the same compartment has never been tested, so this is a recorded conflict
+      rather than a refutation in either direction
+  - claim: >-
+      R331's conclusion that the elevation direction is fully occupied was reached with
+      the wrong query
+    grade: A
+    basis: >-
+      R331 keyword-matched drug mechanisms; R401 established that recombinant proteins are
+      invisible to that query. Applying the corrected query to the same gene list returns
+      this target immediately
+key_refs:
+  - ref_id: zhang2023osteolectin
+    year: 2023
+    type: primary
+    role: >-
+      the whole finding - recombinant osteolectin lengthens femurs in normal juvenile
+      mice, the receptor is required in chondrocytes, and the human variant lowers both
+      height and plasma osteolectin
+  - ref_id: xu2024clec11a
+    year: 2024
+    type: review
+    role: >-
+      index only - restates that Clec11a stimulates chondrocyte proliferation and
+      longitudinal growth, and links it to PIEZO1 mechanotransduction
+  - ref_id: lui2023
+    year: 2023
+    type: primary
+    role: >-
+      the conflict - SPIN4 establishes that mildly LOWERING canonical Wnt lengthens bone
+      and enlarges the resting pool, while osteolectin acts by raising Wnt
+open_questions:
+  - g_l7_360a
+contradicts: []
+last_verified: '2026-08-14'
