@@ -2291,6 +2291,118 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+# 🧭🧭🧭 THE CANONICAL HEDGEHOG-AGONIST STATE (R391) — **READ THIS BEFORE ANY OF R368–R390.**
+# It supersedes the protocol paragraphs in R373, R374, R385, R386, R387 and R388 wherever they differ.
+# Run `atlas/tools/round391_compound_and_route_decision.py`
+
+## ✅ THE COMPOUND: **SAG DIHYDROCHLORIDE.** SAG21k is the named FALLBACK, not the lead.
+**Physicochemistry cannot decide it** — SAG free base **490.1 Da / XLogP 6.3** · SAG·2HCl **563.0** · **SAG21k
+556.1 / 6.5** · Hh-Ag1.5 **526.0 / 6.5** · purmorphamine **520.6 / 6.5**. All 490–556 Da at XLogP 6.3–6.5, and
+R371 already showed the cartilage partition wall does not exist at this size. **So the choice is made on
+evidence in the target tissue, and there it is not close.**
+| | **SAG** | SAG21k |
+|---|---|---|
+| **pool result in a NORMAL animal** | ⭐ **trompet2024 +61% RZ** | — |
+| **VERTEBRAL length measured** | ⭐ **li2021 L3 +32.1%** | — |
+| stature endpoint | li2021 117.2→133.2 mm | — |
+| local bone-LENGTH gain, normal animal | trompet2024 **+3.63%**, still widening | — |
+| water-soluble SALT catalogued | **yes, dihydrochloride** | not established |
+| catalogue ≥98% + CoA | **yes, 6+ vendors** | limited/unclear |
+| systemic study w/ a bone endpoint | — | rundle2023 (as a normaliser) |
+| ADULT systemic organ safety | — | lee2016colitis |
+| **AQUEOUS in vivo vehicle** | — | **yes — PBS** |
+| potency | Kd 59 nM, Gli EC50 ~3 nM | **several-fold more active** |
+⭐ **THE DECIDING LINE: BOTH LOAD-BEARING EFFICACY RESULTS AT THE GROWTH PLATE ARE SAG.** SAG21k's advantages
+are real but every one is in a tissue that is not the target (colon, nerve, callus) or is a formulation
+convenience. **Switching compounds means abandoning the only two efficacy anchors this programme has.**
+⭐ **THE ONE TRIGGER THAT FORCES THE SWITCH: FORMULATION FAILURE.** If SAG·2HCl cannot reach the required
+concentration, SAG21k fixes concentration **and** potency together. That is the fallback, and it is named.
+⚠ PubChem returns the same CID for "SAG1.3" and "smoothened agonist" — **do not treat SAG1.3 as a distinct
+agent without checking the vendor's structure.**
+
+## ✅ THE ROUTE: **SYSTEMIC. And this is a REVERSAL of R375's ranking, made on evidence, not convenience.**
+R375 ranked systemic **fourth** and called it *"not the maximum."* Its case for going local rested on **one
+premise — that systemic hedgehog activation is the hazard and a depot confines it.** R390 tested that premise
+in three organs and **it did not survive**:
+· **COLON** — systemic agonist **ameliorates colitis AND decreases colitis-associated tumour burden**; the
+  antagonist **increases** it (`lee2016colitis`)
+· **PANCREAS** — agonism protects β cells; **hedgehog INHIBITORS raise diabetes incidence in patients** (`kong2025dhh`)
+· **SKIN** — the human cSCC signal attaches to the marketed **ANTAGONISTS** (`zheng2025faers`)
+⭐ **On every organ where systemic hedgehog tone has been manipulated and measured, the harm is on the
+SUPPRESSION side.** Combined with the unchanged compartment fact — **the residual at BA16 is trunk-dominant
+and a knee depot cannot reach a vertebral plate at all** — systemic moves **4th → 2nd.**
+🧭 **REVISED RANKING:** ① HHIP knockdown (true maximum, **no molecule**, $1–3M / 3–4 yr) · ② **SYSTEMIC PULSED
+SAG** · ③ local SOC depot (only true length endpoint, but the **smaller** compartment + a procedure per pulse)
+· ④ sterol subtractions (free — do them regardless).
+⛔ **DO NOT COMBINE SYSTEMIC + LOCAL, and the reason is specific.** A knee depot adds **2.70 mg = 0.27% more
+drug** and looks free. But **R384: this stack is ALREADY Ihh-elevating** (erdafitinib = pharmacological
+postnatal chondrocyte FGFR3 deficiency → raises Ihh, `zhou2015a`) and **cartilaginous lesions are a BAND**
+(too little Ihh → enchondroma; too much → chondroma-like). **Stacking pushes ONE compartment furthest up that
+band.** → **Systemic alone, one pulse, read at 6 months. A knee depot only if the trunk moves and the knee
+doesn't.**
+
+## ✅ ANSWERED — 16 items. Do not re-derive any of these.
+① the regimen exists and is published (`li2021`: 20 mg/kg s.c. q2d, P7/P14→P30, DMSO→saline) · ② **two
+independent mouse regimens cross-check to ~1 g/human pulse, ratio 1.26** · ③ ⭐ **it reaches the TRUNK — L3
++32.1%; no depot can** · ④ pool mechanism in a **NORMAL** animal (+61%, Ki67 up) · ⑤ **post-SOC stage is the
+favourable one, 3 independent lines** · ⑥ an **aqueous vehicle** for a SMO agonist has been used in vivo ·
+⑦ **ADULT gut, inflammation — protective** · ⑧ ⭐ **ADULT gut, CANCER — agonist DECREASED colon tumour burden,
+antagonist INCREASED it** · ⑨ the GI lesion is **MESENCHYMAL/mechanical** (smooth muscle, obstruction), not
+epithelial or neoplastic · ⑩ hedgehog-gain gut tumorigenesis is **STOMACH/GEJ-specific**, sparing intestine and
+colon · ⑪ **human harm attaches to hedgehog LOSS across three organ systems** · ⑫ the pathway **self-limits by
+Gli-level adaptation even BELOW Ptch1** (`cohen2015`) · ⑬ a systemic agonist **induces PTCH1 and HHIP in vivo**
+· ⑭ **intermittent dosing at SMO keeps effect and sheds toxicity in humans** (`liu2026gorlin`) · ⑮ an activated
+SMO **sequesters PKA-C**, aligning with erdafitinib's CREB-lowering · ⑯ **SAG is a teratogen.**
+
+## ⛔ UNANSWERED — 9 items, ranked by what each BLOCKS.
+| # | open item | gap | blocks |
+|---|---|---|---|
+| **1** | ⭐ **DOSE-RESPONSE at the plate** | `g_l12_390a` | **formulation, GMP size AND gut risk — all three** |
+| 2 | systemic **LENGTH** in a normal animal | `g_l12_388a` | whether the route works at all |
+| 3 | aqueous SAG·2HCl at ≥30 mg/mL | `g_l12_388b` | dosing volume — **unless the dose falls** |
+| 4 | adult gut at the HIGH dose | `g_l12_389a` | nothing if the dose falls; a real cap if not |
+| 5 | post-withdrawal rebound trough | `g_l12_389b` | whether the taper is needed |
+| 6 | **GMP material** | — | administration. **Not scientific** |
+| 7 | **no SMO agonist ever in a human** | — | all first-in-human inference. **CONFIRMED R390** |
+| 8 | no agonist at a **BA16-equivalent stage** | — | extrapolation from juvenile rodents |
+| 9 | pulse **INTERVAL** never measured | `g_l7_375a` | pulses 2+. **Not pulse 1** |
+
+## ⭐⭐⭐ FIVE OF THE NINE COLLAPSE ONTO ONE CURVE, AND ONE STUDY CLOSES THEM.
+**The published effective systemic range spans FORTY-FOLD** — 0.5 mg/kg engaged the pathway in colon, 5–20
+mg/kg/day is the stated effective range, 20–25 mg/kg gave both the stature correction and the pool expansion —
+**and nobody has asked where in that range a GROWTH PLATE responds.** At the low end the formulation problem
+disappears (a few mg dissolves in anything), the material becomes a catalogue purchase, and the gut liability
+(seen at 20 mg/kg, absent at 0.5) plausibly falls below threshold.
+🎯 **THE EXPERIMENT: 0.5 / 2 / 5 / 10 / 20 mg/kg s.c. q2d × 3 wk + vehicle, NORMAL mice, POST-SOC, n ≥ 10.
+Read at maturity: femur + tibia + VERTEBRAL length by caliper · resting-zone cell number and Ki67 ·
+growth-plate Gli1/Ptch1/Hhip · muscularis thickness by gut segment. Plus a WITHDRAWAL arm at +2/+10/+21 d.**
+**That single design closes gaps 1, 2, 4, 5 and sizes 3. Everything else on this axis is free or a
+manufacturing contract.**
+
+## 🎯 THE PROTOCOL AS IT STANDS (every parameter, superseding earlier versions)
+· **DRUG** SAG **dihydrochloride**, MW 562.98, ≥98% HPLC + CoA · **fallback SAG21k on formulation failure**
+· **DOSE** **1.62 mg/kg/administration** (≈97 mg at 60 kg) — ⛔ **PROVISIONAL: do not fix until `g_l12_390a`
+  exists; the honest range is tens of mg to ~1 g per pulse**
+· **FORM** aqueous, **≥30 mg/mL**, sterile, 0.22 µm filtered · ⛔ **never scale the DMSO vehicle**
+· **ROUTE** subcutaneous, abdomen/thigh, rotating sites, split if >2 mL
+· **SCHEDULE** ⭐ **TAPERED (R389): q2d × 2 weeks (8 doses) → 1 dose at 72 h → 1 dose at 96 h → stop. 10 doses,
+  slightly LESS drug than a flat 11.** The taper is because the pathway adapts below SMO and abrupt withdrawal
+  is predicted to leave a rebound trough — and six antagonist doses fuse a normal plate.
+· **INTERVAL** ≥3 months, preferably 6. **Derived, never measured.** ⛔ no continuous dosing.
+· **COURSE** ONE pulse, then the 6-month readout, before anything else.
+· ⭐ **CONTRACEPTION COUNSELLING** covering the pulse + a washout — vismodegib/sonidegib male-patient precedent.
+· **MONITOR** ΔBA/ΔCA by BoneXpert (**still primary, still not done**) · standing **AND sitting** height at a
+  fixed time of day · **UPPER GI and obstructive symptoms — the lesion is muscularis and the segment at risk is
+  the STOMACH, not the colon** · knee + spine imaging at 6 and 12 mo · skin surveillance
+· **STOP IF** plate widens without height gain · ΔBA/ΔCA accelerates · any obstructive GI symptom · any skin lesion
+
+## ⚠ AND THE HONEST CALIBRATION, UNCHANGED SINCE R373
+**li2021's +67.4% femur is RESTORATION in an Ihh-ablated dysplasia and CORR-203 excludes it as a prediction.**
+What transfers is dose, route, schedule, formulation, the tox screen and the vertebral reach. The mechanism is
+**pool enlargement**, so the honest expectation is a multiplier on residual growth plus whatever period
+extension a bigger pool buys — **and the residual at BA16 is trunk-dominant, which is exactly why this route
+was chosen over the depot.**
+
 ## ✅✅✅✅✅✅ R390 — **THE SIX BLOCKERS ATTACKED ONE BY ONE. FOUR MOVE, ONE IS CONFIRMED, AND THE
 ## SYSTEMIC LENGTH EXPERIMENT TURNS OUT TO HAVE BEEN MEASURED AND USED AS A *NORMALISER*.**
 
