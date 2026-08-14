@@ -2481,6 +2481,130 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 🧬🧬🧬🧬 R431 — **THE RARγ ARM: THE PROHIBITION IS DELETED AND THE ARM IS STILL HELD — BUT FOR THE
+## OPPOSITE REASON, AND THE ROUND THAT DECIDES IT IS ONE NEITHER SIDE HAD READ.**
+
+⛔⛔ **CORR-357 — AND IT CUTS BOTH WAYS, WHICH IS THE POINT. THE LEDGER LOST THE PROMOTION *AND* THE
+CLOSURE.** R347 wrote **"DO NOT PROPOSE AN RAR ANTAGONIST"** in one pass without reading R255–R260, six
+rounds that had worked the arm to a named, formulated, genetically-controlled compound — `tateiwa2022` 2
+node files / **0** in CLAUDE.md, `janesick2014` 2/**0**, `koyama2021` 10/**0**, `le2019a` 3/**0**, `CD2665`
+10/**0**. That is CORR-352 in its most expensive form.
+⭐⭐ **AND THE AUDIT THAT FOUND IT STOPPED AT R260. `round261_the_monotherapy_has_a_length_endpoint_and_it_is_null`
+EXISTS, WAS WRITTEN IMMEDIATELY AFTER R260, AND ALREADY DEMOTED THE ARM ON A LENGTH ENDPOINT IN A NORMAL
+ANIMAL.** So R347 closed an axis without reading the work, and the proposal to reopen it was built without
+reading the closure. **Neither is a failure of argument; both are the same lossy ledger.** The fix is not to
+open or to close but to put the WHOLE arm, endpoint included, in here — which is what this section is.
+
+⛔⛔⛔ **THE DECIDING RESULT, AND IT IS THE FILE'S OWN: `koyama2021` MEASURED TIBIA LENGTH UNDER THE RARγ
+ANTAGONIST ALONE IN NORMAL MICE AND IT WAS NULL.** CD2665 **1.5 mg/kg daily by gavage P20→P31**, with
+vehicle, LDE225 and combination arms, body length + weight + **TIBIA LENGTH by caliper and whole-body
+X-ray**: *"All the above skeletal parameters were essentially unaffected in companion mice receiving RARγ
+antagonist alone… **GIVEN THE PAUCITY OF RESPONSES, THIS TREATMENT REGIMEN WAS NOT INCLUDED IN SUBSEQUENT
+EXPERIMENTS.**"*
+⭐ **AND THE PLATE DID RESPOND, WHICH IS WHAT MAKES THE NULL INFORMATIVE RATHER THAN AMBIGUOUS** — the same
+mice showed delayed chondrocyte maturation, **increased overall growth-plate height**, and expansion of the
+Col II and Col X zones. **THE DRUG REACHED THE PLATE, CHANGED IT, AND DID NOT LENGTHEN THE BONE.** Failure
+mode #1 with the length endpoint present — R261 counted it as the fifth instance of expansion without flux.
+
+⭐⭐⭐ **R431's OWN CONTRIBUTION: WHY THE NULL HAPPENED, DERIVED FROM HUMAN TISSUE RATHER THAN THE MOUSE.**
+The purity-corrected human plate says the chondrocyte's entire retinoid investment is in **CLEARANCE**:
+**CYP26A1 47.9× enriched · CRABP2 7.6× · CRABP1 4.3×**, against **ALDH1A2 at 0.02** and ALDH1A1 0.31 — the
+RA-SYNTHESISING enzymes are contamination — with STRA6 essentially absent.
+→ ⭐ **THE PLATE ALREADY HOLDS RETINOIC ACID NEAR ZERO, SO RARγ IS ALREADY LARGELY UNLIGANDED — AND R257's
+OWN LIGAND-LESS-REPRESSOR LOGIC SAYS IT IS THEREFORE ALREADY IN THE REPRESSIVE STATE. `le2019a` showed
+CD2665 at RARγ CANNOT DISSOCIATE SMRT — it PRESERVES the co-repressor-bound state. AN AGENT THAT PRESERVES
+A STATE THE TISSUE IS ALREADY IN HAS ALMOST NOTHING TO ADD.** That is a mechanism for `koyama2021`'s null,
+and it is the reason the arm fails that does not depend on the mouse, the dose or the compound.
+
+⛔ **THE SUBTYPE-SPLIT REFRAME WAS TESTED AND IT FAILS, THREE WAYS.** The proposal was that RA through
+RARα/β is permissive (carrying R347's CYP26B1 number) while RARγ ligation terminates elongation, so the two
+are not in conflict.
+· **RARα AND RARβ ARE NOT IN THE CHONDROCYTE** — ratios 0.42 and 0.31 against RARγ's 1.08, and RARγ is 3–4×
+  their abundance. You cannot put the CYP26B1 signal on a plate α/β arm that is not there.
+· **THE HUMAN GENETICS DO NOT SPLIT BY SUBTYPE BECAUSE NO SUBTYPE CARRIES A HEIGHT SIGNAL AT ALL.** RARA,
+  RARB, RARG, RXRA/B/G, CYP26A1, RBP4, STRA6, CRABP1/2, NCOR1/2, SOX9, ALDH1A1/2 — **every one absent from
+  the 207. CYP26B1 is the ONLY member of the whole retinoid panel that reaches it.**
+· ⛔ **AND WITH ONE RECEPTOR PRESENT THE CONFLICT SHARPENS INSTEAD OF DISSOLVING: CYP26B1 loss → less RA
+  degradation → MORE RA → MORE RARγ ligation → +0.808 cm TALLER at P=1.03e-11 across 3,502 carriers.** More
+  RARγ ligation goes with MORE height, which is the direction opposite to blocking it.
+⚠ **Honest counterweight: CYP26B1 is 9.7 CPM at ratio 1.06 — unremarkable in the plate, while CYP26A1 is the
+enriched clearance enzyme. So that signal may not be a plate signal. But that cuts both ways — it leaves NO
+human genetic support for the retinoid axis acting at the plate in EITHER direction.**
+
+⛔ **AND THE BMP CONFLICT IS ALREADY RESOLVED, AGAINST THE ARM, BY A PAPER THE FILE HOLDS.** The open
+question was whether 7C's BMP/SMAD stimulation happens in the resting zone or only in the osteogenic
+compartments where `tateiwa2022` measured it. **`uchibe2017` answers it genetically: "we also confirmed
+BROADENED EXPRESSION OF pSmad1/5/8 IN RARγ-NULL GROWTH PLATE compared to that of wild type."** Removing RARγ
+raises BMP-Smad **in the plate**, not just in an ectopic pellet — so the conflict with R241/R243's
+BMP-Smad-LOW root cell, and with `ambrosi2025`'s independently-derived Smoothened-agonist-plus-**DMH1**
+(a BMP INHIBITOR) combination, is real and is not a model artefact.
+
+⚠ **WHAT SURVIVES, AND IT IS R261's REFRAME, NOT A GROWTH ARM.** LDE225 alone cut body length and weight
+10–15% and shortened the tibia; **CD2665 co-administration largely rescued both** and restored plate
+architecture. **That is CORR-203 restoration toward normal, and it makes the RARγ antagonist a
+PLATE-PROTECTIVE ADJUNCT against a drug that is closing the plate.** ⛔ **And it has no place in THIS stack,
+because the drug it protects against is a SMO ANTAGONIST — which this file already contraindicates outright
+(`newton2019`: six doses of vismodegib FUSE a normal plate) and whose opposite is what the SAG programme
+proposes.** Protection against a drug we would never give.
+⚠ Also recorded: **`matsuoka2025` — local RARγ AGONIST nanoparticles SHORTENED the tibia** against the
+contralateral control, and the group that owns the compound, carrier and model states the
+antagonist-lengthening experiment as **an unrealised possibility.**
+
+🧭 **VERDICT: HELD, NOT ADDED, AND THE REASON WRITTEN ONCE.** The one normal-animal length test of an RARγ
+antagonist is NULL with the plate demonstrably engaged; the human tissue says the receptor is already in the
+state the drug pushes toward; the human genetics offer no support at any subtype and what they do offer runs
+the wrong way; and the compound's own BMP signature is confirmed in the plate and opposes the root-cell
+programme. ⛔ **The obtainability wall is real but is NOT the reason** — 7C is patent WO 2005/066115 A2,
+synthesised to order by Atomax, **no CAS number**, i.e. custom synthesis under R401's rule.
+⭐ **What would reopen it: 7C — not CD2665 — given to a NORMAL growing animal for longer than eleven days
+with a caliper on the femur AND a resting-zone count.** R261 already said the available excuses (too short,
+wrong compound, wrong dose) are the excuses always available and worth little; that stands.
+
+## 🍇 R431 — **RESVERATROL ON PROGRAM (C), WORKED TO A DECISION. HELD — AND NOT ON THE DRUG INTERACTION.**
+
+⭐ **WHAT IS REAL AND RARE.** `karimian2013` (Karimian/Chagin/Ohlsson/Sävendahl — **the laboratory whose
+`chagin2007` killed tamoxifen here**), rabbit, oral trans-resveratrol 200 mg/kg/day: tibia **111.6 vs
+109.5 mm, p<0.05 (+1.9%)**; OVX femur 102.4 vs 100.9, p<0.05; **fusion delayed at THREE physes with blinded
+scoring and an E2 positive control fusing everything — proximal tibia, the last to fuse and therefore the
+one that sets final length, 0% fused on drug vs 50% in controls**; **apoptosis 0.2% = control**, which is
+tamoxifen's exact liability with the opposite sign. Mechanism proposed = **VEGF and laminin suppression at
+the vascular invasion front** = **program (C), the terminal vascular event, and the ONLY obtainable agent
+this file has ever found aimed there.**
+
+⛔ **THE TWO CONFLICTS, AND THE OPERATOR IS RIGHT THAT NEITHER IS A MECHANISM KILL.**
+· **CYP:** erdafitinib is ~39% CYP2C9 + ~20% CYP3A4 = **59% of clearance through two enzymes resveratrol
+  inhibits.** That raises erdafitinib exposure. R215 records the erdafitinib dose as **deliberately low**,
+  which changes a hazard into a variable — ⚠ but CORR-343 records that erdafitinib's ONLY measured effect on
+  **WILD-TYPE MALE** bone strength points DOWN (`kot2026`, three-point bending), so raising the exposure of
+  precisely that agent is not a free variable.
+· **IGF-1:** `brown2010`, 40 humans, 0.5–5 g/day × 29 d — IGF-1 and IGFBP-3 **fell in all volunteers,
+  p<0.04**. ⭐ **This one largely DEFUSES: the GH/IGF-1 arm is already priced at ≈0 attained height after
+  mid-puberty (SOCS2), so lowering it costs little that this file has not already written off.**
+
+⛔ **WHAT ACTUALLY DECIDES IT IS THE MECHANISM, NOT THE INTERACTIONS: RESVERATROL LOWERS BrdU IN THE PLATE.**
+An agent that **delays fusion while lowering proliferation** is `gafni2001`'s configuration — growth
+suppression delaying senescence — and this file has already established that such delays are **LOANS
+REPAID, NOT BANKED HEIGHT** (R366: neither `oichi2023` nor `gafni2001` exceeded control on length).
+⚠ karimian2013 DID exceed control (+1.9%), which is why this is HELD rather than dead — but that gain is
+**single sex (all animals female), single dose level, no dose-response, +1.9%**, against a mechanism whose
+own proliferative sign is negative.
+🧭 **VERDICT: HELD. Not on the DDI, and not on IGF-1 — on the fact that its proposed mechanism is the one
+this file prices as a loan, and the single length gain supporting it is one sex at one dose.**
+⭐ **What would move it: a MALE arm with a dose-response and a resting-zone count.** Program (C) still has
+nothing else, and that is the honest reason to keep it on the list rather than delete it.
+
+## 🔁 R431 — **THE LEDGER SWEEP IS NOW A SCRIPT. `atlas/tools/ledger_coverage_sweep.py`**
+
+Run it before committing a round. For every node it asks: does the text carry a **LENGTH/STATURE endpoint
+AND a signed direction**; is the node id named in CLAUDE.md; how many of its `key_refs` are.
+**470 nodes carry an endpoint with a direction. 430 are not named in CLAUDE.md. 154 have ZERO of their refs
+in it.** ⭐ **It reproduces the RARγ finding mechanically at rank 5** — `round258…` at 0/8 refs, missing
+`janesick2014`, `williams2009`, `koyama2021`, `matsuoka2025` — which is the validation that it works.
+⚠ **AND ITS FALSE-POSITIVE MODE, STATED SO THE LIST IS NOT MISREAD AS 430 MISSES: a well-covered CONCEPT
+with uncovered PRIMARY CITATIONS ranks high.** `fgfr3_receptor` tops the list at 0/10 refs, and this ledger
+names FGFR3 on nearly every page — it simply never cites `shiang1994`. **The output is a TRIAGE QUEUE, not
+a verdict.** Read the top, keep the survivors, and stop counting instances by hand.
+
 ## 🧮🧮🧮🧮🧮 R430 — **THE PARTITION MODEL CALIBRATED AT LAST. IT SURVIVES ON ONE TESTABLE CONDITION,
 ## THE "FALSIFIER" TURNS OUT TO BE A MEASUREMENT ARTEFACT THE PAPER ITSELF NAMES, AND IT CORRECTS THREE
 ## THINGS THIS FILE ACTED ON — INCLUDING A NUMBER R371 QUOTED.**
@@ -2610,29 +2734,6 @@ direction) delivers medio-lateral load at stride frequency, ~1–3 Hz; a valgus/
 **static** moment, not an oscillation. **None of them is in the band.** ⭐ **That is why a DEVICE exists at
 all, and it is the real content of R427's claim that no ordinary movement loads a knee transversely —
 the axis is deliverable, the FREQUENCY is not.**
-
-## 📋 R430 — **THE GATING BLOCK, RESTATED AS ONE LIST. NONE OF THESE HAS BEEN TAKEN.**
-
-Nearly every live item in this file has converged on a measurement nobody has made. **If these have not
-been taken, the correct next round is NOT another compound round.**
-1. ⭐⭐ **ΔBA/ΔCA ON THE CURRENT STACK** — BoneXpert, serial hand films, **standing AND sitting height at a
-   FIXED TIME OF DAY**. Named by R355, R360 and R422; R422 makes it a **falsification test of the
-   oestradiol number**. **Decides:** clock-stalled (Regime 2, pool is the constraint) vs clock-running at
-   `smith2008`'s 0.7 residual (no oestrogen-directed agent reaches it). **Still outranks every compound
-   question in the file.**
-2. ⭐ **STANDING AND SITTING HEIGHT AT A FIXED TIME OF DAY AFTER A FIXED RECUMBENT PERIOD** — R319/R425.
-   **R429 showed the ENTIRE paediatric loading literature is uninterpretable for want of this**, and every
-   velocity number claimed for this subject inherits the same defect. **Decides:** whether any velocity
-   claim about him means anything.
-3. **LC-MS/MS OESTRADIOL + TESTOSTERONE, LH, FSH, HAEMATOCRIT** — R422's 2×2. **Decides:** whether the AI is
-   engaging, whether the 3.3–6 pmol/L figure is an assay-floor artefact, and whether Regime 2 holds at all.
-4. **SERUM INORGANIC SULFATE** — R425 gave the rule in both directions. **Decides:** oral sodium sulfate is
-   TAKEN or DROPPED, not left gated. ⭐ **R430 sharpens why it matters: the passive partition is 0.19, so
-   the arm depends entirely on SLC26A2-mediated transport.**
-5. **HOMA-IR** (fasting insulin + glucose) — decides metformin, the only period-directed agent in R297's audit.
-6. **SERUM OSTEOCRIN / MUSCLIN** — R424's output; paediatric reference values exist.
-7. **EXOME OR WGS AGAINST THE 207 HEIGHT GENES** — R300 gave every one a signed effect in centimetres and
-   nothing in 430 rounds has ordered it.
 
 ## 📊📊📊📊📊 R429 — **THE 940-CHILD EXTRACTION RUN TO THE END. THE JUMPING ARM CLOSES ON ITS OWN DATA:
 ## NINE ARMS, n=939 OF 940, AN n-WEIGHTED MEAN OF −0.13 cm, AND THE PRE-DECLARED DOSE TEST FAILING TWICE —
@@ -7978,15 +8079,16 @@ near-maximally hypoxia-activated; a prolyl-hydroxylase inhibitor has nothing to 
 empty roxadustat query a reason. Grade E (a ceiling argument from steady-state abundance is not a
 dose-response) — a reason to stop re-proposing the class, not a proof.
 
-⛔ **THE RETINOID AXIS — OPENED AND CLOSED IN ONE ROUND. DO NOT PROPOSE AN RAR ANTAGONIST.** The
-configuration looked ideal: **RARG 68.8 CPM at 2.06× is the plate's RAR** (RARA 0.56×, RARB 0.49× —
-contaminant-leaning), **the plate makes almost no retinoic acid** (ALDH1A2 ratio **0.06**, ALDH1A1 0.40) and
-**actively destroys it — CYP26A1 20.4 CPM at 18.63× enrichment**; receptor-local/ligand-systemic is the
-configuration that favours a systemic antagonist, and isotretinoin + palovarotene are two grade-A human
-harms showing retinoid excess closes physes. ⛔ **But the het genetics run the OTHER way on two independent
-lines: CYP26B1 pLoF+delmis +0.81 cm P=1.0e-11** (less RA degradation = MORE RA = TALLER) **and IMPC Rbp4
-homozygote TIBIA −0.999 P=6.3e-04** (less retinol delivery = SHORTER). **A band with the peak slightly ABOVE
-wild type — the R307 cAMP shape — and I cannot place it.** (RBP4 itself: 393 CPM, 4.15×, zero coverage.)
+⛔⛔ **THE RETINOID AXIS — R347's STANDING PROHIBITION IS DELETED (CORR-357). IT WAS WRITTEN IN ONE PASS
+WITHOUT READING R255–R261, WHICH HAD ALREADY WORKED THE ARM TO A LENGTH ENDPOINT. Read the R431 section
+for the real state — the arm is HELD, and the reason is better than the prohibition was.** What R347 got
+right and keeps: **RARG is the plate's RAR** (R431 male-only split: RARG 51.9 CPM ratio **1.08** vs RARA
+12.9 at **0.42** and RARB 15.3 at **0.31** — both contaminant-leaning), **the plate makes almost no retinoic
+acid and actively destroys it** (CYP26A1 25.2 CPM at **47.9× enrichment**, CRABP2 7.6×, CRABP1 4.3×, against
+ALDH1A2 at ratio **0.02**, ALDH1A1 0.31 and STRA6 effectively absent), and **isotretinoin + palovarotene are
+two grade-A human harms showing retinoid excess closes physes.** ⛔ What R347 could NOT place — *"a band with
+the peak slightly ABOVE wild type… and I cannot place it"* — **R431 placed, and it does not resolve in the
+arm's favour: see the R431 section.**
 
 ⭐ **THE STRUCTURAL RESULT: OF THE NINE BLIND-SPOT GENES THAT ARE IN THE 207, SIX ARE LOAD-BEARING AND ONLY
 THREE ARE BRAKES — AND ALL THREE BRAKES ARE SMALL.** Loss shortens: **ANGPTL2 pLoF −3.65 (P=3.9e-10) ·
