@@ -1727,7 +1727,7 @@ vitamin C, NR/NMN or lithium is present. **The four questions are kept as a stan
 item** — and the answer means the SMO cysteine-rich domain (R375) is currently free of every *known*
 occupant, which is the favourable starting state for the hedgehog arm.
 
-**ASK HIM THESE FIVE QUESTIONS** — each maps to a contraindication he may already be carrying:
+**ASK HIM THESE SEVEN QUESTIONS** — each maps to a contraindication he may already be carrying:
 1. **Has he ever taken ITRACONAZOLE or POSACONAZOLE?** (SMO antagonists at ordinary antifungal exposure —
    they inherit the vismodegib fusion result. Standard agents for adolescent onychomycosis/tinea capitis.)
 2. **Does he use an INHALED or TOPICAL CORTICOSTEROID, and which?** (budesonide/beclomethasone/dexamethasone
@@ -1742,6 +1742,14 @@ occupant, which is the favourable starting state for the hedgehog arm.
    **FLUOXETINE, ARIPIPRAZOLE, TRAZODONE, BUSPIRONE, LURASIDONE, ZIPRASIDONE, VILAZODONE, CARIPRAZINE,
    NEBIVOLOL, ROTIGOTINE, AMIODARONE**. They raise 7-DHC, whose B-ring oxysterol **inhibits SMO**. Grade E
    for a skeletal claim, free to substitute. See the contraindication list.
+6. ⭐ **NEW, R377 — ANY HEPARIN, LMWH, PENTOSAN POLYSULFATE OR SULODEXIDE?** Soluble sulfated GAGs suppress
+   hedgehog at two steps and potentiate HHIP (`jakobs2019heparin` + `griffiths2021`). Grade E, free to avoid.
+7. ⭐ **NEW, R377 — HAS HIS OWN GENOME OR EXOME EVER BEEN READ AGAINST THE 207 HEIGHT GENES?** R300 gave
+   every one a **signed effect in centimetres**. **HHIP alone has a +9.92 cm pLoF and a −3.96 cm
+   gain-of-function missense (p.V496E)**, and this atlas has never asked which alleles HE carries — at HHIP,
+   at NPR3/NPR2, at ACAN, at any of them. A single exome or WGS is the cheapest personalised measurement
+   available and nothing in ~380 rounds has ordered it. Same class as the untaken HOMA-IR, serum sulfate and
+   ultrasensitive-oestradiol items.
 ✓ **AND ONE WORRY RAISED AND CLOSED IN THE SAME ROUND — STATINS ARE FINE.** Cholesterol is SMO's endogenous
 CRD agonist, so lowering it looked like a cost. `humphries2018`, 300 children, UK Paediatric FH Register:
 **age-adjusted annual height 4.45 cm on statin vs 4.60 cm off, P=0.73.** The propranolol move again.
@@ -1764,6 +1772,20 @@ pool agent is worth chasing for him at all.
 
 ## CONTRAINDICATED — do not add to the stack
 
+- ⛔⛔ **SOLUBLE SULFATED GLYCOSAMINOGLYCANS — HEPARIN, LMWH, PENTOSAN POLYSULFATE, SULODEXIDE. NEW R377,
+  AND IT CLOSES THE OBVIOUS READING OF `griffiths2021` RATHER THAN OPENING IT.** R291 wrote *"don't remove
+  the protein — UNCLAMP it"*, which invites a soluble GAG competitor. **Both arms run the wrong way.**
+  `jakobs2019heparin`: soluble heparin and HS bind Shh's Cardin-Weintraub motif and **IMPAIR proteolytic Shh
+  processing and release from source cells**, AND separately **block the basic residues Shh needs to bind
+  PATCHED** — two independent suppressive steps, depending on **size and overall charge** rather than
+  specific sulfation. `griffiths2021`: GAG binding is **REQUIRED for full HHIP potency** and a heparin 30-mer
+  drives HHIP oligomers **50 kDa → 6 MDa**. **→ MORE SOLUBLE SULFATED GAG = LESS LIGAND *AND* MORE POTENT
+  ANTAGONIST.** Predicted to attenuate the signal R362 shows is required to prevent fusion. ⚠ Grade E for a
+  skeletal claim — no bone, growth-plate or height endpoint for any sulfated polysaccharide — but free to
+  avoid. ⭐ **ASK: is he on any heparin, LMWH, or pentosan polysulfate?**
+- ⛔ **DNMT INHIBITORS GAIN A SECOND NAMED GENE.** `zhang2020hhipmeth`: **HHIP is silenced by promoter CpG
+  methylation**, so azacitidine/decitabine are predicted to **RE-EXPRESS the secreted antagonist whose loss
+  is +9.92 cm.** Alongside ECRG4 (R348) and R343's human anchor that more 5mC is taller.
 - ⛔⛔ **THE DHCR7-INHIBITING DRUG SHELF — NEW R375, AND IT IS DOZENS OF ORDINARY PRESCRIPTIONS.**
   `sever2016` (PNAS): a **B-RING OXYSTEROL DERIVED FROM 7-DEHYDROCHOLESTEROL INHIBITS SMOOTHENED**, by a
   mechanism distinct from cyclopamine and from side-chain oxysterols — and the potentiating direction was
@@ -2303,7 +2325,21 @@ TRUNK-restricted**, and variants overlapping chondrogenic enhancers explain heig
 non-chondrogenic ones. → **A trunk-directed intervention is in principle addressable BY CHOOSING THE ELEMENT
 — which no drug in this file can do.**
 
-⛔ **FOUR — BUT NO SOMATIC EDITING OF A GROWTH PLATE HAS EVER BEEN REPORTED IN ANY SPECIES.** Every skeletal
+⚠ **FOUR — AND THE HONEST FRAMING, CORRECTED: CRISPR WORKS IN HUMANS. THE BARRIER IS TISSUE TROPISM, NOT
+THE TECHNOLOGY.** **CASGEVY (exagamglogene autotemcel) is FDA-approved** — and it is an **ENHANCER EDIT**,
+disrupting the erythroid-specific BCL11A enhancer to de-repress fetal haemoglobin, i.e. **exactly the
+angelozzi2025/darbellay2024 manoeuvre, already an approved human drug.** **NTLA-2001 / nexiguran ziclumeran**
+is **in vivo** CRISPR by lipid nanoparticle against TTR, first-in-human 2021, now phase 3 in ATTR
+cardiomyopathy; **VERVE base editing of PCSK9** is also in humans. → **The method the HHIP idea needs is
+already licensed. What is missing is the TISSUE.**
+⛔ **BECAUSE EVERY HUMAN SUCCESS IS ONE OF TWO ARCHITECTURES: (a) EX VIVO on cells you can remove and give
+back (HSCs, T cells), or (b) IN VIVO LNP TO THE LIVER, because LNPs traffic to hepatocytes by default via
+ApoE/LDLR.** Cartilage is neither, and the growth plate is the hardest case in the body — avascular, high
+fixed charge, and **fed by self-renewing stem cells**. ⭐ The architecture that would transfer is the EX VIVO
+one — harvest, edit and re-implant autologous epiphyseal skeletal stem cells, Casgevy's logic — and
+**re-engrafting cells into a resting zone has never been demonstrated in any species.**
+
+⛔ **FOUR-B — AND NO SOMATIC EDITING OF A GROWTH PLATE HAS BEEN REPORTED IN ANY SPECIES.** Every skeletal
 CRISPR result here is **germline zygote editing to make a line.** The payload is the obstacle: **SpCas9 ≈
 160 kDa** against farnum2006's curve where **40 kDa is already undetectable**, and SpCas9 + guide sits at
 the top of AAV's ~4.7 kb. `yoon2021aav`: of 14 serotypes only **AAV2, 5, 6, 6.2** substantially transduce
