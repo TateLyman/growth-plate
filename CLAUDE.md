@@ -2341,6 +2341,44 @@ postnatal chondrocyte FGFR3 deficiency → raises Ihh, `zhou2015a`) and **cartil
 band.** → **Systemic alone, one pulse, read at 6 months. A knee depot only if the trunk moves and the knee
 doesn't.**
 
+## ⛔ IS THERE A DRUG THAT MAKES THIS TRIVIAL? **NO — AND THE APPROVED SHELF HAS BEEN SCREENED TWICE (R394)**
+**`wang2010smo`** (β-arrestin2-GFP high-content screen) and **`porcu2015`** (the **1,200-compound Prestwick
+FDA-approved library**) independently screened the approved pharmacopoeia for SMO agonism. **Every hit in both
+is a CORTICOSTEROID** — halcinonide, clobetasol, fluticasone, fluocinonide. R369–R372 worked that class to the
+end: Gli potency is excellent (**0.2–1.8 nM, equal to or better than SAG**), the Hh arm is genuinely
+GR-independent (mifepristone control), the windows are real but narrow — **and what kills them is that
+systemic glucocorticoid exposure suppresses longitudinal growth, grade A.** ⭐ **This is an absence
+established by two other groups' systematic screens, not by this file asserting one.** R342's shape and
+R298's base rate: *nobody ever wanted MORE hedgehog signalling in a patient, so the molecule was never made.*
+✗ **And no oral route exists for ANY SMO agonist in any species** (R393) — every in vivo route is i.p. or s.c.
+
+⭐ **BUT THE FORMULATION BLOCKER HAS A STANDARD ANSWER: CYCLODEXTRIN.** HP-β-CD and SBE-β-CD (Captisol) are
+**FDA/EMA-approved parenteral solubilisers built for exactly this** — bringing lipophilic small molecules to
+injectable concentration. **IV itraconazole, a lipophilic azole, is formulated in HP-β-CD for this reason.**
+That takes the ≥30 mg/mL requirement from an unknown to a standard tool.
+⛔ **AND THE CATCH IS SPECIFIC TO THIS TARGET, AND WOULD BE INVISIBLE IN A SOLUBILITY SCREEN: CYCLODEXTRINS
+SEQUESTER CHOLESTEROL** — methyl-β-CD is *the* standard reagent for depleting cellular cholesterol — **and
+cholesterol is SMO's endogenous CRD agonist** (R375's sterol layer). **A cyclodextrin vehicle could strip the
+receptor's own activating sterol while delivering the agonist.** HP- and SBE-β-CD are far less cholesterol-avid
+than methyl-β-CD and a s.c. depot is not a membrane prep, so this is a caution not a refutation — **but it
+must be tested, not assumed.** Second, ordinary limit: the parenteral cyclodextrin safety record is largely
+**IV**, and subcutaneous local tolerance is a separate question.
+
+⛔⛔ **AND AN UNWELCOME FINDING ABOUT THE STACK: GROWTH HORMONE SHORTENS THE PRIMARY CILIUM.** `karki2026` —
+JAK2 sits at the daughter centriole and sets ciliary length; **GH stimulates relocation of GHR to the cilium
+and SHORTENS cilia, while JAK2 inhibition or knockout ELONGATES them.** **All hedgehog transduction happens
+inside the cilium.** Read with R364's `chu2025` (pharmacological GH promotes committed over self-renewing
+division and **spends the pool**), this is a **SECOND, STRUCTURAL route by which the GH arm opposes a hedgehog
+pool intervention.** ⚠ Grade D–E: **3T3-F442A preadipocyte fibroblasts**, no chondrocytes, no plate, no bone
+endpoint, and cilium length was never linked to Gli output in that paper. ⛔ **It does NOT argue for pausing
+GH** — R367 tested pool-sparing GH schedules three times in humans, twice randomised, and pauses never bought
+height.
+
+⭐ **THE HONEST CONCLUSION: the real simplification available was R393's dose-anchor correction — one
+sub-millilitre injection, ~1 g/year, and a formulation ordinary cyclodextrin chemistry is designed for. The
+residual difficulty is not complexity. It is that no SMO agonist has ever been given to a human, and no amount
+of searching changes that.**
+
 ## ✅ ANSWERED — 16 items. Do not re-derive any of these.
 ① the regimen exists and is published (`li2021`: 20 mg/kg s.c. q2d, P7/P14→P30, DMSO→saline) · ② **two
 independent mouse regimens cross-check to ~1 g/human pulse, ratio 1.26** · ③ ⭐ **it reaches the TRUNK — L3
