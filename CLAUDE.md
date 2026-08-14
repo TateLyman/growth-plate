@@ -2291,6 +2291,58 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ⛔⛔ R395 — **IS THERE ANYTHING BETTER THAN SAG FOR THE POOL? CELL THERAPY IS CLOSED, AND THE TWO
+## UNEXHAUSTED LEVERS ARE BOTH THINGS WE ALREADY CONTROL.**
+
+⛔ **STEM CELLS / TRANSPLANTATION — CLOSED, AND THE ANSWER WAS ALREADY IN THIS FILE (CORR-313 again).**
+`korpershoek2026` has been in the bibliography since **2026-08-07** with its headline already extracted:
+**TRANSPLANTING A GROWTH PLATE DOES NOT RECREATE A GROWTH PLATE.** Physeal allograft transfer, 9 domestic
+swine, distal femoral defects vs cementation vs bone autograft, 3 months, CT + MRI + histology + donor DNA:
+grafts **93% viable**, no gross deformity — and **ALL GROUPS SHOWED DISORGANIZED ARCHITECTURE WITHOUT GROWTH
+PLATE RECAPITULATION**, poor integration, incomplete repair. The most direct version of the idea, in a large
+animal, and it does not work. ⚠ Weakened by controls not forming bars either, which the authors flag.
+⛔ **AND THE WHOLE FIELD IS AIMED SOMEWHERE ELSE.** Every paper on growth-plate cell therapy, scaffolds,
+hydrogels, EVs and tissue engineering is about **REPAIRING AN INJURED PHYSIS** — preventing the bony bar after
+a Salter-Harris fracture. **Nobody is trying to enlarge a NORMAL plate, because short-after-injury is a disease
+and tall is not.** CORR-295 as an entire literature, and CORR-203 excludes all of it from predicting anything
+here.
+⛔ **AND YOU COULD NOT SPECIFY THE CELL. `avijgan2026`: the resting-zone stem cell HIERARCHY IS NOT
+ESTABLISHED** — neither scRNA-seq nor label-retention has resolved whether distinct quiescent subpopulations
+exist. ✓ Against which `newton2019` says the plate is fed by self-renewing stem cells **IN A NICHE** with
+monoclonal columns. **SAG works on the niche that already exists; a cell therapy would have to build one.**
+
+⚠ **UNEXHAUSTED #1 — mTORC1 ACTIVATION.** `newton2019`'s Tsc1 ablation distributed PAR3 **symmetrically** in
+more stem-cell dyads and expanded multi-columnar clones P3→P90 **with every rate control null** — the SPIN4
+signature by a different pathway, i.e. a genuine second pool mechanism. ⛔ **No agent exists in the activating
+direction** — every drug on the axis is an inhibitor, and rapalogs/metformin are already contraindicated for
+exactly that reason. A real gap and probably an empty shelf.
+
+⭐⭐ **UNEXHAUSTED #2, AND IT MAY MATTER MORE THAN ANY COMPOUND: THE GH DOSE.** `hunziker1994` measured every
+term in the same animals, with a **NORMAL-littermate fourth arm** so it is not a deficiency artefact. **From a
+FIXED pool, total height = amplification × h_term, and NOT throughput.** GH: throughput **×5.00**, amplification
+**×0.77**, h_term ×1.36 → **net ×1.05 per unit pool consumed, with 97% of its log effect being pool
+consumption.** Fitted across all four groups **A ∝ throughput^(−0.150)**, so halving throughput buys ~**+11%**
+amplification per stem cell spent.
+⭐ **THREE INDEPENDENT LINES NOW CONVERGE:** hunziker1994 (GH burns the pool at break-even yield) · `chu2025`
+(GH promotes committed over self-renewing division and **depletes** the slow-cycling stem cells) · `karki2026`
+(GH **shortens the primary cilium**, the organelle hedgehog transduces in). **If the pool is the binding
+constraint — which is the entire premise of adding SAG — then the GH dose points the wrong way.**
+⛔ **THE COUNTERWEIGHT, STATED: R367 tested GH SCHEDULES three times in humans, twice randomised, and pauses
+NEVER bought height** — a one-week gap actively lost it. **But a pause is not a dose reduction.** A pause
+removes treatment days; a lower dose changes the **yield per stem cell consumed**. Different quantity.
+⭐ **The closest human precedent is `rothenbuhler2011`** — 6 children with **FGFR3 hypochondroplasia**, GH
+**titrated to an IGF-1 TARGET rather than a fixed mg/kg**, deliberately discontinuous → **+1.9 height SDS over
+6.1 y at a cumulative 0.075 mg/kg/day, with trunk-leg disproportion IMPROVED.** ✗ n=6, single-arm, no
+continuous comparator, and an ACTIVATING FGFR3 mutation rather than a WT subject on an inhibitor. **A
+dosing-TARGET precedent, not evidence the schedule works.**
+
+⭐ **AND AN OBSERVATION ABOUT A DECISION ALREADY MADE.** **h_term is ~80% of longitudinal growth and it is the
+one term that adds height WITHOUT spending a division — POOL-FREE HEIGHT.** The CNP arm is what moved it
+(`dauber2026`: velocity **+4.0 SD** with **BA/CA UNMOVED**). **Dropping vosoritide removed the most
+pool-efficient arm in the stack**, which under a pool-limited model is backwards. ⚠ The counter is compartment
+— R318 puts the CNP axis at ~100% leg allocation while the residual is trunk. **Both are true. And
+navepegritide is APPROVED, once weekly, labelled for OPEN EPIPHYSES — obtainable today in a way SAG is not.**
+
 # 🧭🧭🧭 THE CANONICAL HEDGEHOG-AGONIST STATE (R391) — **READ THIS BEFORE ANY OF R368–R390.**
 # It supersedes the protocol paragraphs in R373, R374, R385, R386, R387 and R388 wherever they differ.
 # Run `atlas/tools/round391_compound_and_route_decision.py`
