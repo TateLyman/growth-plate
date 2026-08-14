@@ -2429,7 +2429,29 @@ charges the pool, and not in the columns where it jams them.** Every component p
 (mechanism · soluble agonist · targeting format · systemic route · marker measured); **nobody has combined
 them.** Same class of ask as the anti-HHIP binder — but here the platform exists.
 
-⛔ **FIVE — WHAT IS MISSING, SO THE NEXT ROUND CANNOT CALL IT NEW.** **No Notch agonist of any kind has a
+🎯 **FIVE — THE PUBLISHED REGIMEN, FROM `wang2021jag1`'s METHODS.** Agent = a **SEVENTEEN-RESIDUE SYNTHETIC
+PEPTIDE, `CDDYYYGFGCNKFCRPR`, ~2.1 kDa**, named commercial supplier, with a **scrambled control**
+(`RCGPDCFDNYGRYKYCF`). **25 µg/g (= 25 mg/kg) INTRAPERITONEAL, DAILY, up to 14 days**, 12-week-old C57BL/6J,
+n=8. FDA BSA allometry → **HED 2.03 mg/kg ≈ 122 mg/dose at 60 kg ≈ 0.85 g per 7-day course.** ⭐ **A 17-mer at
+gram scale is ordinary solid-phase peptide synthesis — a far smaller manufacturing problem than GMP SAG.**
+⭐⭐ **AND THE PULSE LENGTH IS *MEASURED*, NOT DERIVED — the only thing on the pool axis that is.** On
+continuous daily dosing **Hes1, Hey1 and Notch1 rose from day 3, PEAKED AT DAY 7, and had FALLEN
+SIGNIFICANTLY BY DAY 14.** The pathway adapts on drug. **7 days is the pulse; 14 is past it.** That is R389's
+predicted tachyphylaxis, observed. ✓ No change in bone structure or BV/TV at 7 days.
+
+⛔⛔ **SIX — THE ONE FINDING THAT COULD MAKE ALL OF THIS NOTHING: WHETHER A *SOLUBLE* JAG1 PEPTIDE IS AN
+AGONIST OR AN ANTAGONIST IS GENUINELY CONTESTED.** Activation from solution normally requires **MULTIVALENT
+or IMMOBILISED** presentation — `smyrlaki2024`'s whole point; the bone-regeneration literature presents this
+same Jagged-1 mimetic **ON A BIOMATERIAL**; a 2019 paper makes **ASSEMBLY STATE** the determinant; and a 2015
+paper reports **soluble Notch ligand peptides acting ANTAGONISTICALLY** in angiogenesis. `wang2021jag1` is
+**one** report of activation from a soluble peptide in vivo. Maybe 25 mg/kg daily self-associates; maybe the
+Hes1 rise is indirect. ⛔ **AND IF IT ANTAGONISES IN CARTILAGE IT SHRINKS THE RESERVE — that is HARM, not a
+null**, because γ-secretase inhibition already does exactly that (R399).
+⛔ **Plus: the mice were TWELVE WEEKS OLD = SKELETALLY MATURE. No Notch agonist has ever been given to a
+GROWING animal.** And the authors' own earlier work states sustained Notch activation gives MSC proliferation
+**AND ARREST OF CELL DIFFERENTIATION** — charge without discharge, in their words.
+
+⛔ **SEVEN — WHAT IS MISSING, SO THE NEXT ROUND CANNOT CALL IT NEW.** **No Notch agonist of any kind has a
 BONE-LENGTH endpoint in any species.** No soluble or synthetic Notch agonist has ever been given to a growth
 plate. The CD73-SNAG does not exist. **Notch1 is a major T-cell oncogene** — that is this direction's cost.
 And `lin2011`, which sets the resting-zone direction, is an **abstract-only organ-culture study in a

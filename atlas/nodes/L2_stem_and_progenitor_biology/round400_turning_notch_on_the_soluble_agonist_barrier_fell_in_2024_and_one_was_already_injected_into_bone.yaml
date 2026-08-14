@@ -67,6 +67,46 @@ summary: >-
   performed and BONE LENGTH WAS NOT REPORTED. The animals were dosed and the caliper
   was never used.
 
+  ⭐ THE PUBLISHED REGIMEN, PULLED FROM wang2021jag1's METHODS. The agent is a
+  SEVENTEEN-RESIDUE SYNTHETIC PEPTIDE, CDDYYYGFGCNKFCRPR, approximately 2.1 kDa, from a
+  named commercial supplier, with a properly scrambled control peptide
+  (RCGPDCFDNYGRYKYCF) run alongside it. Dose 25 micrograms per gram body weight -
+  25 mg/kg - INTRAPERITONEALLY, DAILY, for up to 14 days, in 12-week-old C57BL/6J mice,
+  n equals 8 per group. By FDA body-surface-area allometry that is a human-equivalent
+  2.03 mg/kg, roughly 122 mg per dose at 60 kg, so about 0.85 g for a seven-day course.
+  A 17-mer peptide at gram scale is ordinary solid-phase synthesis, which is a far
+  smaller manufacturing problem than pharmaceutical-grade SAG.
+  ⭐⭐ AND THE PULSE LENGTH IS MEASURED RATHER THAN DERIVED, WHICH NOTHING ELSE ON THE
+  POOL AXIS HAS. Hes1, Hey1 and Notch1 all rose from day 3, PEAKED AT DAY 7, and had
+  FALLEN SIGNIFICANTLY BY DAY 14 on continuous daily dosing. The pathway adapts on
+  drug. Seven days is the pulse; fourteen is past it. That is the tachyphylaxis R389
+  predicted for the hedgehog axis, here actually observed.
+  ✓ At seven days there was no change in bone structure or BV/TV - tolerated over that
+  window.
+
+  ⛔⛔ AND THE SINGLE FINDING THAT COULD MAKE ALL OF THIS NOTHING, STATED PLAINLY:
+  WHETHER A SOLUBLE JAG1 PEPTIDE IS AN AGONIST OR AN ANTAGONIST IS GENUINELY CONTESTED.
+  The mechanism that makes Notch activation possible from solution is MULTIVALENT or
+  IMMOBILISED presentation - smyrlaki2024's whole point, and the reason the bone
+  regeneration literature presents this same Jagged-1 mimetic ON A BIOMATERIAL, and the
+  reason a 2019 study is titled around the ASSEMBLY STATE determining the peptide's
+  functionality. Against that, a 2015 study reports that SOLUBLE Notch ligand and
+  receptor peptides act ANTAGONISTICALLY during angiogenesis. wang2021jag1 is one paper
+  reporting pathway ACTIVATION from a soluble peptide given systemically, with Hes1,
+  Hey1 and Notch1 as the readout. It may be that 25 mg/kg daily reaches concentrations
+  at which the peptide self-associates, or that the Hes1 rise is indirect. THE
+  DIRECTION OF THIS SPECIFIC MOLECULE IN THIS SPECIFIC FORMAT IS NOT SETTLED, and if it
+  is an antagonist in cartilage it would do the opposite of what is wanted - which,
+  given that gamma-secretase inhibition shrinks the resting zone, is a real harm and
+  not merely a null.
+
+  ⛔ THREE MORE THINGS THAT ARE NOT SETTLED. The mice were TWELVE WEEKS OLD, which is
+  skeletally mature - no Notch agonist has ever been given to a GROWING animal. The
+  authors' own prior work states that sustained Notch activation induces MSC
+  proliferation AND THE ARREST OF CELL DIFFERENTIATION, which is charge without
+  discharge in their own words. And the readouts were all bone marrow stroma; no
+  chondrocyte, no growth plate, and no length.
+
   ⛔ WHY IT MUST BE PULSED AND TARGETED - AND THIS IS A MECHANISTIC REQUIREMENT, NOT A
   SAFETY GARNISH. The atlas's own Notch node holds the other half: mead2009 shows that
   forced NICD in the chondrocyte lineage REDUCES precursor proliferation and BLOCKS
@@ -171,6 +211,43 @@ quantitative:
     note: >-
       the CD73 numbers are this atlas's own computation from GSE288028. The pairing of
       SNAG targeting with CD73 is a proposal made in R400 and has never been built
+  - parameter: the published JAG1 peptide regimen and its human-equivalent scaling
+    value: >-
+      CDDYYYGFGCNKFCRPR, 17 residues, ~2.1 kDa, 25 micrograms per gram (25 mg/kg)
+      intraperitoneally DAILY up to 14 days in 12-week-old C57BL/6J mice, n=8, with a
+      scrambled control peptide; FDA BSA allometry gives HED 2.03 mg/kg, about 122 mg
+      per dose at 60 kg and 0.85 g for a 7-day course
+    unit: mg/kg and mg
+    species: mouse
+    source_ref: wang2021jag1
+    value_unverified: true
+    note: >-
+      the peptide sequence, dose, route, schedule, strain, age and supplier are verbatim
+      from the Methods; the human-equivalent numbers are computed in R400. The mice were
+      SKELETALLY MATURE at 12 weeks
+  - parameter: measured pathway adaptation on continuous daily dosing
+    value: >-
+      Hes1, Hey1 and Notch1 rose from day 3, PEAKED AT DAY 7, and had fallen
+      significantly by DAY 14; no change in bone structure or BV/TV at 7 days
+    unit: qualitative time course
+    species: mouse
+    source_ref: wang2021jag1
+    note: >-
+      the pulse length is MEASURED here rather than derived, which nothing else on the
+      pool axis has. Seven days is the pulse and fourteen is past it - the tachyphylaxis
+      R389 predicted for hedgehog, observed
+  - parameter: is a SOLUBLE JAG1 peptide an agonist or an antagonist
+    value: contested - unresolved
+    unit: qualitative
+    species: multiple
+    source_ref: smyrlaki2024
+    note: >-
+      activation from solution normally requires MULTIVALENT or IMMOBILISED presentation;
+      the bone-regeneration literature presents this same mimetic on a biomaterial, a
+      2019 study makes assembly state the determinant, and a 2015 study reports soluble
+      Notch ligand peptides acting ANTAGONISTICALLY in angiogenesis. wang2021jag1 is one
+      report of activation from a soluble peptide in vivo. If it antagonises in
+      cartilage it would shrink the reserve, which is harm rather than a null
 localization: >-
   growth-plate resting zone for the charging effect; proliferative and hypertrophic
   zones for the jamming effect - the sign of Notch depends on the compartment
