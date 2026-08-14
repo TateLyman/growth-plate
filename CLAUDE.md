@@ -2412,6 +2412,76 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🔬🔬🔬 R410 — **IS THE CHARGE SULFATION-LIMITED? ONE LEVER, TWO STEPS, AND ONLY ONE IS ACTIONABLE.
+## CHST3 AND CHST11 ARE ZONALLY SEGREGATED IN HUMAN TISSUE, THE DESULFATION ROUTE CLOSES ON THREE STORAGE
+## DISEASES, AND THE MEASUREMENT THAT DECIDES THE WHOLE ARM IS A TWO-MINUTE NON-INVASIVE SCAN.**
+
+⭐⭐ **ONE — CHST3 PEAKS EXACTLY WHERE h_term IS MADE, AND CHST11 DOES THE OPPOSITE.** GSE9160 — the only
+zone-resolved human growth plate — had never been asked about this pathway. **On both of CHST3's high-signal
+probes, in both donors, the HYPERTROPHIC ZONE is the maximum**: donor 1 rises monotonically **RZ 2,680 → PZ
+3,982 → PHZ 8,450 → HZ 12,526** and **RZ 3,476 → 6,279 → 7,097 → HZ 12,979** (3.7× each); donor 2 peaks HZ on
+both probes (8,841 and 11,094) without being monotone. **CHST11 peaks PROLIFERATIVE in both donors** (29,568
+and 13,829 vs HZ 10,979 and 7,715), as do **XYLT1 and CSGALNACT1**, the chain-initiation enzymes.
+⭐ **Different platform, different donors, nineteen years apart — independently corroborating R409's
+purity-corrected switch. The matrix is BUILT in the proliferative zone and 6-O-SULFATED in the hypertrophic
+zone**, which is the zone that makes ~80% of longitudinal growth.
+
+⭐⭐ **TWO — AND THE IMPORTER MOVES THE OTHER WAY, WHICH IS THE ARGUMENT THAT THEY ARE IN SERIES AND NOT
+SATURATED.** **SLC26A2 peaks PROLIFERATIVE and FALLS into HZ in both donors** (D1 RZ 2,093 → PZ 8,558 → HZ
+5,059; D2 5,868 → 7,774 → 3,503). **In the one zone that makes height, the importer is declining while the
+enzyme is rising — the configuration in which SUBSTRATE, not enzyme, constrains flux.** First mechanistic
+argument in this file tying the oral sulfate compound specifically to **h_term** rather than to sulfation in
+general. ⚠ Grade E — transcript gradients in two donors, not flux.
+⭐ **The purity data agree from another angle:** the tissue's cartilage-specific investment is in the LAST TWO
+steps — **SLC35B2 (Golgi PAPS transporter) 5.00 and CHST3 3.32** — while the supply enzymes sit at
+housekeeping ratios (**SLC26A2 1.95, PAPSS1 1.01, PAPSS2 1.08**).
+⭐ **And the human genetics say the supply end is NOT saturated at ordinary variation:** `scherer2025`'s
+heterozygous carriers are not ill, sit inside the normal plasma-sulfate range, and are dose-responsively
+SHORTER, sitting-height arm **P=2.16e-07** (R322).
+→ ⭐ **ONE LEVER, TWO STEPS. CHST3 has NO human ChEMBL target record and its direction is to RAISE, so it
+cannot be drugged. Sulfate can be supplied. Only one step is actionable.**
+
+⛔ **THREE — THE OBVIOUS WAY TO MAKE IT BIGGER IS CLOSED, AND CLOSED PROPERLY.** If you cannot add
+sulfotransferase, block the enzymes that REMOVE sulfate. All three fail: **ARSB** (4-sulfatase) loss = **MPS
+VI, short** · **GALNS** (6-sulfatase) loss = **Morquio A, severe short stature** · and **SULF1/SULF2**, which
+look ideal because they act extracellularly on exactly the 6-O position CHST3 sulfates, are **HEPARAN
+SULFATE-specific and do not touch chondroitin sulfate at all.** **The CS desulfation arm is lysosomal, and
+losing any of it shortens people by storage.** ✓ Consistent: the sulfatases are contaminant-leaning
+(ARSB 0.14, SULF1 0.30, SULF2 0.40) while CHST3/CHST13/CHST14 are enriched — **the plate is built to ADD
+charge, not remove it.**
+
+⭐⭐⭐ **FOUR — THE MEASUREMENT THAT WOULD DECIDE THE WHOLE ARM EXISTS, IS NON-INVASIVE, AND TAKES TWO
+MINUTES.** `fixed_charge_density` states that **no zone-resolved FCD measurement of a growth plate exists in
+any species**, and a targeted query confirms it — 415 sodium-MRI records, **none on a physis.** But:
+· ⭐ **IN VIVO, HUMAN KNEE, 3 TESLA, 2 min 06 s.** A dual-echo ultrashort-echo-time rosette sequence
+  (PETALUTE) quantified articular cartilage sodium at **168.8 ± 29.9 mM** in 5 healthy subjects — ordinary
+  clinical field strength, no radiation, no contrast, 41% of the standard scan time.
+· ⭐ **AND SODIUM TRACKS THE THING WE CARE ABOUT: tissue sodium correlated with biopsy sulfated GAG at
+  R²=0.739** in 12 paediatric knee specimens at 10.5 T.
+· ⭐⭐ **AND THE SAME STUDY GIVES THE MATURATION DIRECTION: birth → 12 years, water −18%, collagen +59%,
+  SULFATED GAG −36%, all R² ≥ 0.557.** The charge that drives osmotic swelling is **DECLINING across exactly
+  this window** — the profile of a lever, and the same shape that made SCUBE3 interesting.
+⚠ **THE LIMIT, STATED WITH IT:** those are **ARTICULAR** knee specimens, not growth plate; epiphyseal
+cartilage is only the closest proxy, and nobody has segmented a physis on a sodium scan. **That is the unrun
+experiment and it needs no drug, no animal and no access.** For this subject it is the same class as the
+untaken HOMA-IR and serum sulfate: a measurement that says whether the arm has headroom **in him**.
+
+⛔ **FIVE — THE HONEST CEILING, BECAUSE THE ANSWER TO "CAN THIS BE HUGE" IS NO.**
+· **The cell arm is triply defended and this file already had it:** `hall2001` terminal volume set point
+  re-tunes 180→380 mOsm to the same ~645 µm³ · **`bush2008`: hypotonic swelling gives NO preferential
+  increase in LENGTH — a swelling agent makes a chondrocyte FATTER, NOT TALLER — and the MATRIX OFFERS LITTLE
+  RESTRICTION to swelling, so matrix charge does not direct cell growth either** · and bush2008's osmotically
+  inactive fractions say hypertrophy is mostly PROPORTIONAL enlargement, so h_term costs biosynthesis.
+· **The mouse rows run the wrong way:** IMPC Slc26a2 het **TIBIA +0.242 at P=0.00384** (the rare, informative
+  direction) and Papss2 het body +1.306.
+· **The kidney fights the supplement:** renal sulfate reabsorption is capacity-limited (R322), and the only
+  human demonstration is a single-dose **+25% excursion at 2 h**, not a new set point.
+· **Size, from R322's own gradient and refused there as an estimate for these same reasons: ~0.104 SD of
+  sitting height per SD of plasma sulfate ≈ of order ONE CENTIMETRE at the largest published excursion.**
+→ **WHAT IT IS: a cheap, oral, Step-0-clean addition aimed at the largest term in the identity and at the
+TRUNK, gated on one blood test never ordered, with a second free measurement now available that would say
+whether there is headroom at all. WHAT IT IS NOT is a large effect, and nothing in this round makes it one.**
+
 ## 🔵🔵 R409 — **THE VOLUME MODULE WORKED IN BOTH DIRECTIONS. R408's CHEMISTRY CLAIM IS CORRECTED ONE ROUND
 ## LATER, THE OSMOLYTE CLASS SPLITS AND LEAVES *BETAINE*, CHST3 NOT CHST11 IS THE PLATE'S SULFOTRANSFERASE,
 ## AND PIEZO1 LOSS IS −2.46 cm IN HUMANS.**
