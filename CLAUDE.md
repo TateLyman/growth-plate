@@ -372,6 +372,13 @@ aesthetic indication) and the numbers move:
   (SD 0.6, range 1.5–13.0). **1,555 patients between them, one number.**
 · ⛔ **AND ALMOST NOBODY DOES BOTH SEGMENTS: 717 of 760 were TIBIA ONLY, 43 femoral, and just SEVEN patients
   in the entire aesthetic literature had both.**
+  ⭐⭐ **R418 EXPLAINED THIS AND IT IS A CONVENTION, NOT A CEILING — READ R418 BEFORE QUOTING 6.7 cm AS A
+  LIMIT.** `shabtai2021`: **50 patients, 65 SIMULTANEOUS bilateral femoral AND tibial procedures, mean tibia
+  52 mm + femur 72 mm ≈ 12.4 cm across four segments in ONE session, all adverse events resolved** — and the
+  stated rationale is **SOFT-TISSUE SPARING**, with **LESS** total fixator time than isolated lengthening.
+  `ghaly2023`: single-session femoral + tibial, **no subluxation, no neurovascular injury**. The dysplasia
+  field routinely takes ~2× the aesthetic figure. ⚠ Both populations are achondroplasia / congenital
+  deficiency, whose soft-tissue envelope is not a normal-stature adult's — that is the load-bearing caveat.
 · ⛔ **A PER-PATIENT COMPLICATION RATE DOES NOT EXIST IN A POOLABLE FORM, AND THAT IS A FACT ABOUT THE FIELD.**
   giorgino2025 counted **mentions** rather than incidence and says so explicitly; `yalcinkaya2025` (20 studies,
   410 outcomes) shows why — **ADVERSE EVENTS ARE 3% OF ALL REPORTED OUTCOMES vs 75% physiological/clinical.**
@@ -2317,6 +2324,139 @@ three weeks ARE ALREADY AVAILABLE.** R361's objection that a joint injection can
 adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that is a direct placement.
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
+
+## 🦴🦴🦴🦴 R418 — **THE CEILING ON THE LARGEST ARM IN THIS FILE IS NOT CENTIMETRES. It is RATE,
+## CONFIGURATION and CENTRE — and DISTRIBUTING ACROSS FEMUR AND TIBIA IS THE SOFT-TISSUE-SPARING OPTION,
+## NOT THE RISKY ONE. R398's unexplained "almost nobody does both" is a COSMETIC-FIELD CONVENTION.**
+
+⛔ **ZERO — THE BLIND SPOT WAS TOTAL, AND MY OWN DUPLICATE CHECK FAILED SILENTLY FIRST.** Node/gap grep:
+**peroneal palsy 0 · nerve palsy 0 · lengthening index 0 · joint subluxation 0 · bifocal 0 · simultaneous
+femoral and tibial 0.** The biggest number in the atlas and its actual clinical limits had never been
+asked. ⚠ **CORR-354: my CORR-336 PMID check ran against `atlas/bibliography.yaml`, which does not exist
+(it is `atlas/sources/`), and a `${c:-NEW}` fallback swallowed the error and returned "NEW" for all 13
+papers.** Re-run properly, **two were already here** (yalcinkaya2025, marwan2020). **A duplicate check
+that cannot fail loudly is not a check — assert the file exists before trusting the result.**
+
+⭐ **ONE — THE AMOUNT OF LENGTHENING IS NOT THE MAIN DETERMINANT OF NERVE INJURY. THREE HUMAN LINES.**
+· **`simpson2013`** — 36 patients, electrophysiology at **THREE timepoints** (pre-op / post-fixator but
+  PRE-lengthening / post-lengthening), the design that separates the operation from the distraction.
+  7 of 21 deteriorated with lengthening and not with surgery. **Etiology, site and nerve had "a far
+  greater effect" on risk than the TOTAL AMOUNT OF LENGTHENING.**
+· **`polo1997`** — 14 **SHORT-STATURE** patients, tibial callotasis, motor conduction studies: **a greater
+  PERCENTAGE increase in tibial length did NOT correspond to a higher rate of peroneal palsy.** Some
+  patients improved electrophysiologically **while distraction continued.** Independent replication, in
+  the closest population to this case.
+· **`nogueira2003`** — **814 procedures**, the largest denominator in the field: nerve lesions **9.3%**,
+  84% arising during gradual distraction. Risk factors are **DOUBLE-LEVEL TIBIAL 77%** and **skeletal
+  dysplasia 48%** — configuration and diagnosis, not centimetres. **Complete recovery in 74 of 76.**
+
+⭐⭐ **TWO — WHAT DOES SET IT IS *RATE*, AND THERE IS A CONTROLLED DOSE-RESPONSE.**
+**`shchudlo2018`** — canine Ilizarov, peroneal nerve histology, four regimes: **1 mm/day → massive nerve
+degeneration in 2 of 22 · 3 mm/day → 10 of 18, p<0.01.** Perineurial and endoneurial vessel injury and
+loss of epineurial fat scale with rate.
+⭐ **AND AT FIXED RATE, INCREMENT FREQUENCY DID NOT SEPARATE (4 manual vs 60 automatic increments/day) —
+while R327's `ilizarov1989` shows outcome improves MONOTONICALLY with frequency for BONE. So frequency
+helps the regenerate and is neutral for the nerve; it is the RATE that injures.** Two variables this file
+had conflated, now separated.
+**`mehta2025`** — 173 tibial osteotomies, 135 children: nerve injury **6.3% overall, 3.5% in tibial
+LENGTHENING**, 81% recovering. Significant risk factors **MULTIPLE OSTEOTOMIES (p=0.02, RR 1.30)** and
+acute valgus correction (p=0.01, RR 1.35); authors recommend prophylactic peroneal decompression for
+**double-level** osteotomies and say it is **NOT routinely required for standard tibial lengthening.**
+→ ⭐ **TWO INDEPENDENT HUMAN SERIES CONVERGE ON ONE DANGEROUS CONFIGURATION — DOUBLE-LEVEL WITHIN A SINGLE
+SEGMENT — WHICH IS EXACTLY THE "GET MORE OUT OF ONE BONE" STRATEGY.** And `nogueira2003` shows it is
+managed rather than fixed: **slowing the rate and/or decompressing ALLOWED CONTINUED LENGTHENING** without
+permanent injury, with time-to-decompression predicting time-to-recovery (p=0.0005).
+
+⭐⭐⭐ **THREE — SO THE ANSWER TO R398's UNEXPLAINED FACT: BOTH SEGMENTS IS THE GENTLER OPTION.**
+· **`shabtai2021` — 50 achondroplasia patients, 65 SIMULTANEOUS bilateral femoral AND tibial procedures.
+  Mean tibia 52 mm + femur 72 mm ≈ 12.4 cm across FOUR SEGMENTS IN ONE SESSION.** Healing index 1.4 mo/cm
+  tibia, 1.0 femur; fixator 6.7 months. 76% had ≥1 adverse event, 45% of events needed a further
+  procedure, **ALL RESOLVED**; mechanical axis deviation **IMPROVED** 15 → 8 mm.
+  ⭐ **THE STATED RATIONALE IS SOFT-TISSUE SPARING** — moderate lengthening distributed across femur and
+  tibia **to decrease trauma on soft tissues and joints** — **and it DECREASES total fixator time** versus
+  isolated lengthening.
+· **`ghaly2023`** — 12 children, single-session femoral AND tibial, 7–14.5 cm: **NO subluxation, NO
+  dislocation, NO neurovascular injury**, 83% achieved plan. ⭐ **And the field's answer to the joint
+  problem is SURGICAL AND PROPHYLACTIC at the index operation — Achilles lengthening, peroneal tendon
+  lengthening, ITB release — exactly the structures R398 named as the dominant complications** (equinus,
+  Achilles tightness, subtalar stiffness).
+· **`havitcioglu2020`** — cosmetic, constitutional short stature, IM nails, **mean gain 8.7 cm** across 16
+  femoral + 2 tibial segments. Cosmetic centres already exceed 6.7 cm. ⚠ its healing index "46.8 months/cm"
+  is dimensionally impossible — `value_unverified`.
+→ ⭐ **R398's ~6.7 cm IS THE AESTHETIC FIELD'S PRACTICE CONVENTION, NOT A CEILING. The dysplasia field
+routinely takes roughly TWICE that across four segments in one sitting and argues on record it is
+gentler.** The surgical arm's honest scale is therefore ~2× what CLAUDE.md has been carrying.
+
+⭐⭐ **FOUR — AND THE MUSCLE PREMISE UNDER R397's FRONTIER IS WRONG AT THE CONTRACTILE LEVEL.**
+**`lindsey2002`** — goats lengthened to **20% AND 30%** of tibial length: fibre length and **SARCOMERE
+NUMBER** significantly greater at both, **sarcomere LENGTH unchanged**, and the 30% group added **more**
+than the 20% group. **Authors' own conclusion: the rise in muscle-related complications beyond 20% does
+NOT appear to be a failure of muscle contractile elements to adapt.** `zollner2012` models it — serial
+sarcomere number as the state variable — and **explains why gradual multi-step lengthening is less
+invasive than single-step.**
+→ **`speth2026`'s permanent, worsening extensor deficit is NOT a sarcomerogenesis failure. The muscle
+keeps pace as a contractile machine. What fails is the ECM — fibrosis — which is a different target.**
+
+⛔ **FIVE — AND R397's "NOBODY HAS EVER GIVEN AN ANTI-CATABOLIC DURING DISTRACTION" IS FALSE AS WRITTEN.
+FOUR AGENTS HAVE BEEN TESTED ON MUSCLE DURING DISTRACTION:**
+· ⭐ **IGF-1 (`feng2015`, 102 rats) — POSITIVE.** One injection before distraction: muscle weight, fibre
+  CSA, maximum limit load and force generation all up; **Akt/MyoD/myogenin UP, MYOSTATIN DOWN**; atrophy
+  attenuated and **fibrosis prevented.**
+· **Osteoactivin (`tonogai2015`, transgenic mice) — POSITIVE.** Collagen amount/area and passive torque
+  reduced at 8 wk, **by UPREGULATING MMP-3 and MMP-9** — i.e. by RAISING matrix degradation.
+· **PRP (`tonogai2018`) — NULL** at 4/6/8/10 wk (p=0.89, 0.45, 0.33, 0.52).
+· **Suramin / TGF-β (`koplin2011`, 36 rabbits) — NEGATIVE, and it kills the obvious hypothesis:** no ROM,
+  strength or morphometry benefit, **NO TGF-β1 staining in the intramuscular fibrosis at all**, and
+  high-dose suramin had **paradoxically the MOST fibrosis.**
+→ **TGF-β is excluded as the mediator and PRP as an agent. What is left positive is IGF-1 and an
+MMP-driven ECM-degradation mechanism.**
+
+⭐⭐⭐ **SIX — THE COMPARTMENT CONFLICT R397's OWN PROPOSAL WALKS INTO, AND IT IS NEW.**
+R397 proposed **IL-1 blockade** because `wu2026dolength` found IL-1β, **MMP-13** and RANKL UP with COL-II,
+SOX9 and OPG DOWN in **ARTICULAR CARTILAGE** at 20 mm — catabolism is the damage there. But `tonogai2015`
+attenuates **MUSCLE** fibrosis by **RAISING MMP-3 and MMP-9** — catabolism is the repair there.
+⛔ **ONE DRUG CLASS, TWO COMPARTMENTS, OPPOSITE SIGNS. A systemic anti-catabolic given to protect the joint
+during distraction is predicted to WORSEN the muscle fibrosis `speth2026` shows is the permanent cost.**
+R327's compartment lesson, arriving inside a single operation. ⚠ **Grade E** — no experiment has measured
+both compartments under one agent — but it is specific and falsifiable, and it means `g_l6mech_397a` needs
+**compartment-selective delivery** or it trades one problem for the other.
+
+⭐ **SEVEN — AND THE FIRST USE THIS FILE HAS EVER FOUND FOR THE GH ARM.** The single positive muscle agent
+during distraction is **IGF-1**, and **he is already on GROWTH HORMONE, which raises IGF-1.** CLAUDE.md
+prices GH at **≈0 attained height after mid-puberty** (SOCS2) — true of the plate, and irrelevant to this.
+**On the surgical route the GH arm is the one agent already in hand that is shown to attenuate muscle
+atrophy and prevent fibrosis during lengthening.** ⚠ Grade E: `feng2015` is a single peri-distraction
+injection in a rat, not chronic systemic GH in a human, and **no GH or IGF-1 preparation has ever been
+given during a human lengthening with a muscle endpoint.** Gap.
+
+⛔ **EIGHT — THE LIMITS, AND THEY BEAR DIRECTLY ON THIS CASE.**
+· **`shabtai2021` IS ACHONDROPLASIA.** Achondroplasts carry a relatively long soft-tissue envelope for
+  their bone length — the standard explanation for why they tolerate huge lengthening. **CORR-203's shape
+  applied to anatomy: a result from a disproportionate skeleton is a claim about that disproportion. A
+  NORMAL-STATURE subject is the harder case and the percentage-of-segment limit matters MORE, not less.**
+· **`ghaly2023` is children with FIBULAR HEMIMELIA** — congenital, which `simpson2013` names as the
+  highest-risk etiology. Reassuring *despite* being high-risk, which cuts both ways.
+· **Nobody has shown muscle adaptation beyond 30% of segment length in any species.**
+· **`alramlawi2025`** — 22 referred complication cases, hardware failure 23%, mal/nonunion 45%, **"most
+  done outside the U.S.", rising incidence attributed to MEDICAL TOURISM.** All resolved. Referral series,
+  no denominator: **it identifies CENTRE as a variable; it cannot give a rate.**
+· Every nerve series is mixed-etiology LLD, not elective cosmetic lengthening in a normal-stature adult.
+
+⭐ **NINE — TWO NUMBERS IN THIS FILE UPDATED.**
+· **`bulut2025` splits R398's pooled Paley tiers BY TECHNIQUE across 489 patients: EXTERNAL FIXATION
+  problems 56% / obstacles 48% / TRUE COMPLICATIONS 10%, versus INTRAMEDULLARY NAIL 37% / 42% / NO
+  significant complications reported.** Procedure-related mortality **zero** across all studies.
+  **`marwan2020`'s 0.15 true complications per patient is era-mixed; the modern motorised nail is
+  materially safer than the frame.**
+· `yalcinkaya2025` re-read confirms R398 independently: **410 outcomes, adverse events 3%,
+  physiological/clinical 75%, QoL assessed in only 25% of studies, social functioning least at 15%.**
+
+🧭 **WHAT R418 CHANGES.** The largest term in this atlas was recorded at ~6.7 cm because that is what the
+cosmetic literature *does*, and this file read a practice convention as a ceiling. **The ceiling is a RATE
+constraint, a CONFIGURATION constraint (never stack levels within one segment) and a CENTRE constraint.**
+The soft-tissue frontier R397 opened is real, but its muscle half is not a contractile-adaptation failure,
+TGF-β is refuted as its mediator, PRP is null, and **the obvious anti-catabolic proposal is predicted to
+run backwards in the muscle compartment.**
 
 ## 🔬🔬🔬 R397 — **THE SOFT-TISSUE FRONTIER OPENED. BONE IS NOT THE LIMIT AND 18 cm HAS BEEN DONE IN ONE
 ## PERSON — BUT MUSCLE STRENGTH LOSS IS PERMANENT AND WORSENS OVER TEN YEARS. The joint limit has a
