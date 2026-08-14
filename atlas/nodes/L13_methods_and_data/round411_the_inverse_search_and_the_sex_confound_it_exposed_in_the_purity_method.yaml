@@ -1,0 +1,234 @@
+id: round411_the_inverse_search_and_the_sex_confound_it_exposed_in_the_purity_method
+name: "R411: the inverse search - ask what the tissue invests in that the atlas has never mentioned, not which gene is good. It immediately exposed a SEX CONFOUND in the purity method that withdraws R409's betaine arm, returned 1,492 zero-coverage genes, and produced one complete new module (vitamin K / Gla) that was worked to a conclusion in the same round"
+aliases:
+  - blind spot inventory growth plate
+  - purity method sex confound
+  - vitamin K matrix Gla protein growth plate
+  - VKORC1 cartilage
+type: method
+layer: L13
+stub: false
+summary: >-
+  THE PREMISE, WHICH IS THE OPERATOR'S AND IS CORRECT. R408 found the cell-volume module
+  by accident: it had never been localised in roughly four hundred rounds. The question that
+  follows is what ELSE is sitting unasked. Every search this file has run starts from a GENE
+  (a burden effect, an IMPC row), a DRUG (Open Targets, ChEMBL, a vendor catalogue) or a
+  PAPER (Europe PMC). None of those can find a missing MODULE, because a module is only
+  missing relative to the atlas's OWN coverage, and coverage had never been computed.
+  The inverse search asks: what is this tissue spending itself on that we have never said
+  one word about, and do those genes cluster? A single blind-spot gene is worth a
+  centimetre; a blind-spot cluster is worth an arm.
+  Tool: atlas/tools/round411_blind_spot_inventory.py. Data: atlas/data/round411/.
+
+  ⛔⛔ ONE - AND IT IMMEDIATELY BROKE THE METHOD IT WAS BUILT ON. THE PURITY SPLIT USED SINCE
+  R344 IS CONFOUNDED WITH SEX. Run genome-wide rather than on a hand-picked panel, the top of
+  the enrichment list is RPS4Y1 at 3,442x, UTY at 213x, USP9Y at 199x and PRKY at 29x - all
+  Y-linked. XIST resolves it: the twelve samples are NINE MALE AND THREE FEMALE, and ALL THREE
+  FEMALES SIT IN THE CONTAMINATED HALF (ranks 9, 10 and 11 of 12 by COL2A1). So "contaminated"
+  has partly meant "female" since R344, and every sex-linked gene reads as spuriously enriched.
+  CORR-314 and CORR-317 warned about exactly this on other datasets and it was never run on
+  this one. A hand-picked panel could not see it; a genome-wide pass saw it in the first row.
+  ⭐ THE FIX AND THE RECALIBRATION. Compute the split within the nine males (four purest vs
+  four most contaminated). That removes the confound by construction, but it also REDUCES the
+  contamination contrast, so every ratio compresses toward one and the threshold must be
+  recalibrated rather than carried over. On the sex-corrected split COL2A1 is 7.65 and ACAN is
+  1.96 - so 1.96, not an absolute 2.0, is the cartilage benchmark.
+
+  ⛔ TWO - AND SEVEN CALLS CHANGE, INCLUDING THE ONE R409 LED WITH.
+  WITHDRAWN, sex-corrected: SLC6A12 / BGT1, the betaine transporter, 2.05 -> 1.01 - NOT
+  ENRICHED. That ratio was the ENTIRE basis of R409's betaine arm, so the betaine proposal is
+  withdrawn as stated. Also weakened below the benchmark: AQP1 2.23 -> 1.18, TRPV4 2.17 -> 0.81.
+  HOLDS AND STRENGTHENS: SLC35B2 5.00 -> 9.37 (above COL2A1 itself), CHST14 3.77 -> 9.93,
+  CHST13 10.72 -> 8.44, WNK4 4.04 -> 3.19.
+  HOLDS AT THE ACAN BENCHMARK: CHST3 1.84, KCC1/SLC12A4 1.70, SLC4A2 1.73.
+  ✓ EVERY CONTAMINANT CALL HOLDS OR STRENGTHENS: CHST11 0.09, taurine transporter SLC6A6 0.06,
+  UST 0.06, ARSB 0.11, SLC9A1 0.14, CHST15 0.16, NFAT5 0.21, SULF1 0.32, NKCC1 0.35, SPAK 0.30.
+  → R409's CHST3-not-CHST11 result SURVIVES (a ~20-fold gap, and R410 confirmed it
+  independently by zonal segregation in different donors on a different platform). R409's
+  betaine result does NOT. R408's WNK4 and the export-arm localisation survive.
+
+  ⭐ THREE - THE INVENTORY ITSELF. 1,681 genes sit at or above the ACAN benchmark at >=20 CPM
+  detected in all twelve samples, and 1,492 OF THEM HAVE ZERO MENTIONS anywhere in the node
+  graph, gaps.yaml or CLAUDE.md.
+  ⚠ AND THE NEGATIVE CONTROL THIS SCREEN NEEDED IS INSIDE IT: a large fraction of the list is
+  MITOCHONDRIAL OXIDATIVE PHOSPHORYLATION AND RIBOSOMAL PROTEIN - NDUFA4, NDUFA7, NDUFB3,
+  COX8A, UQCRQ, ATP5MC3, MRPL17, MRPL40, TIMM8B, RPL10A, SLC25A5. That is a composition
+  artefact of contrasting cartilage against blood, not biology, and it means the count of 1,492
+  must not be read as 1,492 leads. What is worth reading is the clusters that are neither
+  housekeeping nor already known.
+  ⭐ Named here so later rounds do not rediscover them one at a time: SCRG1 (1,532 CPM, 13.3x,
+  literally "stimulator of chondrogenesis 1", zero coverage) · ID1 (444 CPM, 11.3x, the
+  canonical BMP target gene - and IMPC Id1 homozygote TIBIA LENGTH -1.264 at P=0.00112) ·
+  MT1X and MT1E (665 and 604 CPM, 17.9x and 13.7x - metallothioneins, i.e. zinc handling) ·
+  LPL (201 CPM, 9.7x - and R379 showed Indian hedgehog circulates on VLDL, which LPL processes)
+  · S100A1 (1,150 CPM, 16.1x) · MATN4 · CTHRC1 · STEAP4 · SLPI · SYT8.
+
+  ⭐⭐ FOUR - AND ONE COMPLETE MODULE FELL OUT, WAS WORKED, AND CLOSES. THE VITAMIN K / Gla ARM.
+  The plate carries the vitamin-K recycling machinery at higher cartilage enrichment than its
+  own collagen: VKORC1 374 CPM at 11.44x (COL2A1 is 7.65), MGP 2,921 CPM at 4.86x, GAS6 73 CPM
+  at 2.29x, GGCX 38 CPM at 1.64x - with two clean internal controls, VKORC1L1 at 0.30 (a
+  paralogue switch) and BGLAP/osteocalcin at 0.90 (the OSTEOBLAST Gla protein, correctly not
+  chondrocyte-enriched). ZERO atlas coverage of any of it, and "vitamin K" has been sitting on
+  R297's list of never-checked agents since that round.
+  ⭐ AND THERE IS A HUMAN HEIGHT LITERATURE THIS FILE HAS NEVER HELD: a 2026 longitudinal study
+  of 1,150 Vietnamese children aged 6-14 with 3,491 height measurements, 537 on MK-7 at
+  360 micrograms/day, reporting a positive interaction between supplementation and follow-up
+  duration of 0.05 cm/month overall and 0.10 cm/month in PRE-PUBERTAL BOYS; and two 2025
+  cross-sectional studies associating vitamin K2 deficiency with short stature.
+  ⛔ AND IT DOES NOT SURVIVE AS A LEVER FOR THIS SUBJECT, ON SIX SEPARATE GROUNDS.
+  · The MK-7 study is OBSERVATIONAL with substantial follow-up imbalance that its own authors
+    flag, and its effect is confined to NO-PUBERTY and PRE-PUBERTY children with nothing in
+    older groups. Wrong population - the fermented-oyster objection from R296, again.
+  · The two cross-sectional odds ratios disagree by four-fold (5.93 and 1.54) in the same design,
+    and vitamin K2 correlated with IGF-1 SDS and 25-hydroxyvitamin D, i.e. it tracks general
+    nutritional status. This is deficiency-restoration, and CORR-203 excludes it.
+  · KEUTEL SYNDROME IS NOT A STATURE DISEASE. The 50-year review's list of major traits is
+    ectopic calcification of cartilaginous tissue, midface hypoplasia, brachytelephalangism,
+    cardiovascular defects and hearing loss. MGP guards cartilage that must NEVER mineralise -
+    trachea, ear, nose, terminal phalanges - and the growth plate is cartilage that MUST
+    mineralise. R327's compartment lesson, running the other way.
+  · THE HETEROZYGOUS MGP DYSPLASIA MUST NOT BE FILED UNDER THIS ARM. The dominant Cys19
+    variants cause spondyloepiphyseal dysplasia by ENDOPLASMIC-RETICULUM-STRESS-INDUCED
+    APOPTOSIS of growth plate chondrocytes, which is a proteostasis mechanism, not loss of
+    mineralisation inhibition. Citing it as evidence that MGP dosage sets growth would be
+    CORR-309 exactly.
+  · NO GLA-MODULE GENE IS IN THE 207, and Mgp and Ggcx have NO IMPC LENGTH ROW AT ALL.
+  · AND THE DIRECTION CARRIES A JAM RISK: MGP inhibits mineralisation, mineralisation at the
+    chondro-osseous junction is REQUIRED for discharge, and raising it is the RANKL/denosumab
+    and aggrecanase trap - failure mode number one.
+  ⛔ Plus the ordinary-dose human negative on the blocking side: 32 children with first-trimester
+  low-dose warfarin exposure had NO growth parameter below the third percentile and no skeletal
+  dysplasia. The grade-A harm on this pathway is warfarin EMBRYOPATHY at therapeutic dose, which
+  is a first-trimester teratology finding and does not transfer to a postnatal plate.
+  → WHAT SURVIVES: the localisation, which is new and clean; vitamin K adequacy as something not
+  to be deficient in rather than something to push; and a recorded negative so that the next
+  context does not re-derive the arm from the same three papers.
+
+  ⭐ WHAT THIS ROUND IS. Not a compound and not a lever. It is a METHOD, a CORRECTION that
+  withdraws one of the previous round's own headlines, and a DURABLE ARTEFACT - a ranked
+  inventory of what the human growth plate invests in that this atlas has never discussed.
+  The operator's point is proved by the round's own output: the vitamin K module had a human
+  height literature, an OTC substrate, a validated biomarker and a grade-A harm on the opposite
+  direction, and four hundred rounds never mentioned it once.
+quantitative:
+  - parameter: the sex confound in the purity split
+    value: >-
+      12 samples are 9 male and 3 female by XIST; all three females rank 9th, 10th and 11th of
+      12 by COL2A1, i.e. entirely within the contaminated half. Y-linked genes consequently read
+      RPS4Y1 3,442x, UTY 213x, USP9Y 199x, PRKY 29x on the uncorrected split
+    unit: enrichment ratio
+    species: human
+    source_ref: lesperance1992
+    value_unverified: true
+    note: >-
+      computed in R411 from GSE288028; source_ref nominal. Affects every purity ratio published
+      since R344 for any sex-linked gene, and compresses thresholds for all genes
+  - parameter: sex-corrected calibration and the calls that change
+    value: >-
+      calibrators COL2A1 7.65, ACAN 1.96, PTPRC 0.00. WITHDRAWN - SLC6A12 2.05 to 1.01,
+      AQP1 2.23 to 1.18, TRPV4 2.17 to 0.81. STRENGTHENED - SLC35B2 5.00 to 9.37, CHST14 3.77 to
+      9.93, WNK4 4.04 to 3.19. HELD at benchmark - CHST3 1.84, SLC12A4 1.70, SLC4A2 1.73
+    unit: enrichment ratio
+    species: human
+    source_ref: lesperance1992
+    value_unverified: true
+    note: >-
+      the SLC6A12 withdrawal removes the entire basis of R409's betaine proposal. The CHST3 and
+      WNK4 results survive
+  - parameter: the blind-spot inventory
+    value: >-
+      1,681 genes at or above the ACAN benchmark at >=20 CPM detected 12/12; 1,492 with ZERO
+      mentions across all node yaml, gaps.yaml and CLAUDE.md
+    unit: gene count
+    species: human
+    source_ref: lesperance1992
+    value_unverified: true
+    note: >-
+      a large fraction is mitochondrial oxidative phosphorylation and ribosomal protein, which is
+      a composition artefact of cartilage-versus-blood and is this screen's negative control. The
+      count is not 1,492 leads
+  - parameter: the vitamin K / Gla module in the human growth plate
+    value: >-
+      VKORC1 374 CPM at 11.44x, MGP 2,921 CPM at 4.86x, GAS6 73 CPM at 2.29x, GGCX 38 CPM at
+      1.64x; controls VKORC1L1 0.30 and BGLAP 0.90
+    unit: purity ratio, sex-corrected
+    species: human
+    source_ref: lesperance1992
+    value_unverified: true
+    note: >-
+      VKORC1's enrichment exceeds COL2A1's on the same split. Zero prior atlas coverage of any
+      member
+  - parameter: the human vitamin K2 height literature, and why it does not transfer
+    value: >-
+      1,150 children aged 6-14, 537 on MK-7 360 micrograms/day, 3,491 height measurements:
+      interaction with follow-up duration 0.05 cm/month overall (95% CI 0.02-0.09) and
+      0.10 cm/month in pre-pubertal boys (95% CI 0.07-0.13), with no independent main effect;
+      cross-sectional odds ratios for vitamin K2 deficiency and short stature of 5.93 and 1.54
+      in two separate cohorts
+    unit: cm/month and odds ratio
+    species: human
+    source_ref: lesperance1992
+    value_unverified: true
+    note: >-
+      source_ref nominal. Observational with acknowledged follow-up imbalance; effect confined to
+      pre-pubertal subgroups; the two cross-sectional odds ratios disagree four-fold and vitamin
+      K2 tracks IGF-1 and 25-hydroxyvitamin D. Deficiency-restoration, CORR-203
+localization: >-
+  human postnatal growth plate, sex-corrected purity split of nine male samples
+human_evidence: direct
+human_evidence_note: >-
+  The inventory and the sex confound are computed on human tissue. The vitamin K height data are
+  human but observational and in the wrong age group.
+species_basis:
+  - human
+translation_risk: high
+translation_risk_reason: >-
+  This round produces no agent. Its vitamin K arm is deficiency-restoration in pre-pubertal
+  children and carries a discharge-jam risk in the raising direction.
+confidence: B
+claim_grades:
+  - claim: The purity split used since R344 is confounded with sex
+    grade: A
+    basis: >-
+      XIST and four Y-linked genes across the twelve samples; all three females fall in the
+      contaminated half. Directly computed, not inferred
+  - claim: R409's betaine arm is withdrawn
+    grade: A
+    basis: >-
+      SLC6A12 falls from 2.05 to 1.01 on the sex-corrected split, below the ACAN benchmark of
+      1.96. That ratio was the arm's only basis
+  - claim: R409's CHST3-not-CHST11 result and R408's WNK4 result survive
+    grade: B
+    basis: >-
+      CHST3 1.84 at the ACAN benchmark against CHST11 0.09, a twenty-fold gap, plus R410's
+      independent zonal segregation in different donors on a different platform; WNK4 3.19
+  - claim: The vitamin K / Gla machinery is cartilage-enriched in the human growth plate
+    grade: B
+    basis: >-
+      VKORC1 11.44x above COL2A1's own 7.65, MGP at 2,921 CPM, with VKORC1L1 and BGLAP behaving
+      as internal negative controls. Transcript origin, subject to CORR-351
+  - claim: Vitamin K supplementation raises adult height in a replete post-pubertal male
+    grade: E
+    basis: >-
+      not supported. The human data are cross-sectional deficiency associations with
+      four-fold-discordant odds ratios and one observational cohort whose effect is confined to
+      pre-pubertal children. No randomised height endpoint at any age
+  - claim: Raising MGP function would extend the growth period
+    grade: E
+    basis: >-
+      refuted in direction as stated. Keutel syndrome is a permanent-cartilage calcification
+      disease rather than a stature disease, the dominant MGP dysplasia acts by ER-stress
+      apoptosis rather than by mineralisation inhibition, and raising an inhibitor of
+      mineralisation at the chondro-osseous junction is the discharge-blockade trap
+key_refs:
+  - ref_id: lesperance1992
+    year: 1992
+    type: primary
+    role: >-
+      placeholder anchor for the computed expression results in this node; the substantive
+      references are the three 2025-2026 vitamin K height papers and the 2023 MGP dysplasia paper
+      recorded in the summary
+open_questions:
+  - g_l5_what_is_the_intracellular_small_solute_content_of_a_hypertrophic_chondrocyte
+contradicts: []
+last_verified: '2026-08-14'

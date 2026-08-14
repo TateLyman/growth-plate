@@ -2412,6 +2412,89 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🚨🚨🚨🚨 R411 — **THE INVERSE SEARCH: ASK WHAT THE TISSUE INVESTS IN THAT THE ATLAS HAS NEVER MENTIONED.
+## IT EXPOSED A SEX CONFOUND IN THE PURITY METHOD THAT WITHDRAWS R409's OWN HEADLINE, RETURNED 1,492
+## ZERO-COVERAGE GENES, AND PRODUCED ONE COMPLETE NEW MODULE — WORKED TO A CLOSE IN THE SAME ROUND.**
+## Run `atlas/tools/round411_blind_spot_inventory.py` → `atlas/data/round411/blind_spot_inventory.json`
+
+⭐ **THE PREMISE, WHICH IS THE OPERATOR'S.** R408 found the cell-volume module **by accident** — it had never
+been localised in ~400 rounds. **Every search this file has ever run starts from a GENE, a DRUG, or a PAPER.
+None of those can find a missing MODULE, because a module is missing only relative to the atlas's OWN
+coverage — and coverage had never been computed.** A blind-spot gene is worth a centimetre; a blind-spot
+cluster is worth an arm.
+
+⛔⛔ **ONE — AND IT BROKE THE METHOD IT WAS BUILT ON. THE PURITY SPLIT USED SINCE R344 IS CONFOUNDED WITH
+SEX.** Run genome-wide instead of on a hand-picked panel, the top of the list is **RPS4Y1 3,442× · UTY 213× ·
+USP9Y 199× · PRKY 29×** — all Y-linked. XIST resolves it: **the 12 samples are 9 MALE and 3 FEMALE, and ALL
+THREE FEMALES SIT IN THE CONTAMINATED HALF** (ranks 9, 10, 11 of 12). **"Contaminated" has partly meant
+"female" since R344.** CORR-314/317 warned of exactly this on other datasets and it was never run on this one.
+**A hand-picked panel could not see it; a genome-wide pass saw it in the first row.**
+⭐ **THE FIX AND THE RECALIBRATION: split within the 9 males.** That removes the confound but REDUCES the
+contamination contrast, so ratios compress and **the threshold must be recalibrated, not carried over: on the
+sex-corrected split COL2A1 = 7.65 and ACAN = 1.96, so 1.96 is the cartilage benchmark.**
+
+⛔ **TWO — SEVEN CALLS CHANGE, INCLUDING THE ONE R409 LED WITH.**
+· ⛔ **WITHDRAWN: SLC6A12 / BGT1 2.05 → 1.01 — NOT ENRICHED. That ratio was the ENTIRE basis of R409's
+  BETAINE arm, so the betaine proposal is withdrawn as stated.** Also weakened below benchmark: **AQP1
+  2.23 → 1.18**, **TRPV4 2.17 → 0.81**.
+· ✓ **STRENGTHENED: SLC35B2 5.00 → 9.37** (above COL2A1 itself) · **CHST14 3.77 → 9.93** · CHST13 → 8.44 ·
+  **WNK4 4.04 → 3.19**.
+· ✓ **HELD at the ACAN benchmark: CHST3 1.84 · KCC1/SLC12A4 1.70 · SLC4A2 1.73.**
+· ✓ **EVERY CONTAMINANT CALL HOLDS OR STRENGTHENS:** CHST11 0.09 · SLC6A6 0.06 · UST 0.06 · ARSB 0.11 ·
+  SLC9A1 0.14 · CHST15 0.16 · NFAT5 0.21 · SPAK 0.30 · SULF1 0.32 · NKCC1 0.35.
+→ **R409's CHST3-not-CHST11 SURVIVES** (a ~20× gap, and R410 confirmed it independently by zonal segregation
+in different donors on a different platform). **R409's betaine does NOT. R408's WNK4 and the export-arm
+localisation survive.**
+
+⭐ **THREE — THE INVENTORY. 1,681 genes at or above the ACAN benchmark, ≥20 CPM, 12/12 — and 1,492 HAVE ZERO
+MENTIONS anywhere in the node graph, gaps.yaml or CLAUDE.md.**
+⚠ **AND THE NEGATIVE CONTROL IS INSIDE IT:** a large fraction is **mitochondrial OXPHOS and ribosomal
+protein** (NDUFA4/A7/B3, COX8A, UQCRQ, ATP5MC3, MRPL17/40, TIMM8B, RPL10A, SLC25A5) — a composition artefact
+of cartilage-versus-blood. **1,492 is not 1,492 leads.** What is worth reading is the clusters that are
+neither housekeeping nor already known.
+⭐ **Named so later rounds do not rediscover them one at a time:** **SCRG1** (1,532 CPM, 13.3×, literally
+"stimulator of chondrogenesis 1") · **ID1** (444 CPM, 11.3×, the canonical BMP target — and **IMPC Id1-hom
+TIBIA −1.264 at P=0.00112**) · **MT1X / MT1E** (665 and 604 CPM, 17.9× and 13.7× — metallothionein, zinc) ·
+**LPL** (9.7× — and R379 showed Ihh circulates on VLDL, which LPL processes) · S100A1 · MATN4 · CTHRC1 ·
+STEAP4 · SLPI · SYT8.
+
+⭐⭐ **FOUR — ONE COMPLETE MODULE FELL OUT AND WAS WORKED TO A CLOSE: THE VITAMIN K / Gla ARM.**
+**The plate carries the vitamin-K recycling machinery at higher cartilage enrichment than its own collagen:
+VKORC1 374 CPM at 11.44× (COL2A1 is 7.65) · MGP 2,921 CPM at 4.86× · GAS6 2.29× · GGCX 1.64×** — with two
+clean internal controls, **VKORC1L1 0.30** (paralogue switch) and **BGLAP/osteocalcin 0.90** (the OSTEOBLAST
+Gla protein, correctly not chondrocyte). **Zero atlas coverage of any of it — and "vitamin K" has sat on
+R297's never-checked list since that round.**
+⭐ **AND THERE IS A HUMAN HEIGHT LITERATURE THIS FILE NEVER HELD:** a 2026 longitudinal study of **1,150
+children aged 6–14, 537 on MK-7 360 µg/day, 3,491 height measurements** — interaction with follow-up duration
+**+0.05 cm/month overall (95% CI 0.02–0.09)** and **+0.10 cm/month in PRE-PUBERTAL BOYS (0.07–0.13)** — plus
+two 2025 cross-sectional studies linking vitamin K2 deficiency to short stature.
+⛔ **AND IT DOES NOT SURVIVE AS A LEVER FOR THIS SUBJECT, ON SIX GROUNDS:**
+· **Observational**, with substantial follow-up imbalance its own authors flag, and **the effect is confined
+  to NO-PUBERTY and PRE-PUBERTY children with nothing in older groups** — the fermented-oyster objection.
+· **The two cross-sectional odds ratios disagree FOUR-FOLD (5.93 vs 1.54)** in the same design, and vitamin K2
+  tracked **IGF-1 SDS and 25-OH-D** — it indexes general nutrition. Deficiency-restoration, **CORR-203**.
+· ⛔ **KEUTEL SYNDROME IS NOT A STATURE DISEASE.** Its major traits are ectopic calcification of cartilaginous
+  tissue, midface hypoplasia, brachytelephalangism, cardiovascular defects, hearing loss. **MGP guards
+  cartilage that must NEVER mineralise — trachea, ear, nose, terminal phalanges — and the growth plate is
+  cartilage that MUST mineralise.** R327's compartment lesson running the other way.
+· ⛔ **DO NOT FILE THE HETEROZYGOUS MGP DYSPLASIA UNDER THIS ARM.** The dominant Cys19 variants cause SED by
+  **ER-STRESS-INDUCED APOPTOSIS of growth-plate chondrocytes** — proteostasis, not loss of mineralisation
+  inhibition. Citing it as MGP-dosage-sets-growth would be **CORR-309 exactly.**
+· **No Gla gene is in the 207, and Mgp and Ggcx have NO IMPC length row at all.**
+· ⛔ **The raising direction is the JAM:** MGP inhibits mineralisation, mineralisation at the chondro-osseous
+  junction is REQUIRED for discharge — the RANKL/denosumab and aggrecanase trap, **failure mode #1.**
+⛔ Plus the ordinary-dose human negative on the blocking side: **32 children with first-trimester low-dose
+warfarin had NO growth parameter below the 3rd percentile and no skeletal dysplasia.** The grade-A harm here
+is warfarin EMBRYOPATHY — first-trimester teratology, which does not transfer to a postnatal plate.
+→ **WHAT SURVIVES: the localisation; vitamin K ADEQUACY as something not to be deficient in rather than
+something to push; and a recorded negative so the next context does not re-derive the arm from the same three
+papers.**
+
+⭐ **WHAT THIS ROUND IS: not a compound and not a lever — a METHOD, a CORRECTION that withdraws the previous
+round's own headline, and a DURABLE ARTEFACT.** And the operator's point is proved by the round's own output:
+**the vitamin K module had a human height literature, an OTC substrate, a validated biomarker and a grade-A
+harm on the opposite direction, and four hundred rounds never mentioned it once.**
+
 ## 🔬🔬🔬 R410 — **IS THE CHARGE SULFATION-LIMITED? ONE LEVER, TWO STEPS, AND ONLY ONE IS ACTIONABLE.
 ## CHST3 AND CHST11 ARE ZONALLY SEGREGATED IN HUMAN TISSUE, THE DESULFATION ROUTE CLOSES ON THREE STORAGE
 ## DISEASES, AND THE MEASUREMENT THAT DECIDES THE WHOLE ARM IS A TWO-MINUTE NON-INVASIVE SCAN.**
