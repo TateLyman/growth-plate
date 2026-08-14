@@ -2291,6 +2291,60 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🎯🎯🎯🎯🎯 R381 — **HOW TO MOVE HHIP: THE COMPLETE ROUTE LIST, AND THE BEST ONE IS A DEGRADER, BECAUSE
+## A DEGRADER DOES NOT HAVE TO BLOCK ANYTHING — IT ONLY HAS TO BIND. And the receptor it needs is 6.17×
+## CARTILAGE-ENRICHED.**
+
+⛔ **ZERO — A CORRECTION TO R378, MADE AGAINST MYSELF, AND IT MAKES THE ANTIBODY ROUTE EASIER NOT HARDER.**
+R378 wrote that an anti-HHIP antibody must avoid the L2 loop face or it would "become a second 5E1". **That
+conflates two different molecules.** 5E1 binds **SHH**, and a binder at the *ligand's* pseudo-active site
+blocks PATCHED too — that part stands. But an antibody binding **HHIP's own** L2 loop stops HHIP from
+gripping the ligand, which is **exactly what we want.** → **The L2 loop is a LEGITIMATE anti-HHIP epitope.**
+R378's GAG/CRD sites remain valid *alternatives*, not requirements.
+
+⭐⭐⭐⭐ **ONE — AND THE MODALITY THAT REMOVES THE EPITOPE QUESTION ENTIRELY: EXTRACELLULAR TARGETED
+DEGRADATION.** HHIP is a **membrane-anchored and secreted** protein — the exact class LYTACs and KineTACs
+were built for. `pance2023kinetac` (Nat Biotech, 220 cites): **KineTACs are fully genetically encoded
+bispecific antibodies** — a cytokine arm plus a target-binding arm — that use the **decoy recycling receptor
+CXCR7/ACKR3** to drag extracellular and cell-surface proteins to the lysosome.
+⭐⭐ **THE DECISIVE PROPERTY: A DEGRADER ONLY HAS TO BIND. It does not have to be function-blocking.** That
+retires the hardest part of the ask from R314 onward — **the existing NON-blocking commercial anti-HHIP
+monoclonals become usable warheads.**
+
+⭐⭐⭐ **TWO — AND THE HANDLE IS CARTILAGE-ENRICHED, WHICH IS NOT TRUE OF THE ALTERNATIVES.** Purity-corrected
+human growth plate (`atlas/data/round381/`):
+| handle | platform | pure CPM | ratio | verdict |
+|---|---|---|---|---|
+| **ACKR3 / CXCR7** | **KineTAC** | **143.6** | **6.17×** | ⭐ **enriched — better than HHIP itself (4.65×)** |
+| IGF2R / CI-M6PR | classic LYTAC | 58.2 | **0.55** | contaminant-leaning |
+| ASGR1 | GalNAc-LYTAC | 3.2 | — | absent; liver platform |
+Lysosomal machinery enriched too: **LRP1 2.62 · CTSD 2.01 · SORT1 1.92 · LAMP1 1.82**, all 12/12.
+⭐ **The growth plate is, specifically, a KineTAC-competent tissue and not an IGF2-LYTAC-competent one.**
+✓ And **CXCL12 itself is 0.37 (contaminant-leaning, 6.4 CPM)** — the plate does not saturate its own ligand.
+
+🎯 **THREE — THE FULL ROUTE LIST FOR LOWERING HHIP, RANKED BY OBTAINABILITY, INCLUDING THE DIRTY ONES:**
+1. **PS-ASO gapmer** — delivery to growth-plate cartilage DEMONSTRATED (`posey2017`); routine chemistry;
+   reversible; one-year regulatory template (`kim2019milasen`). **Best first move.**
+2. ⭐ **anti-HHIP KineTAC** (CXCL12 arm + any HHIP binder) — epitope-agnostic, handle 6.17× enriched,
+   genetically encoded so it is a protein-expression job. **The construct nobody has built.**
+3. **siRNA in a WYRGRL chondrocyte exosome** (`yuan2024`) — demonstrated systemic route to the plate.
+4. **Function-blocking antibody / nanobody** — L2 loop, GAG sites or CRD, selected on a Gli-restoration
+   counter-screen with a SAG-mediated arm (R378).
+5. ⚠ **miR-221 mimic** — HHIP is a **validated miR-221 target** by dual-luciferase and western
+   (`chang2021mir221`); same size class as siRNA so it inherits the exosome route. **Dirtiest option** —
+   miRNAs are promiscuous by design — and recorded precisely because dirty was allowed.
+6. **Somatic enhancer editing at CE2/CE3** — the mouse exists (`darbellay2024`); irreversible; no
+   growth-plate delivery precedent.
+7. ⚠ **SMO agonist as a partial HHIP-lowering agent** — `kwong2014`: Smo activation drives HHIP
+   internalisation and degradation. ⛔ But R380: it also **induces** HHIP transcriptionally. Two opposing
+   arms, net unmeasured.
+8. ⚠ **Raise methyl donor supply** — `zhang2020hhipmeth`: HHIP is silenced by promoter CpG methylation, and
+   R343's human anchor says **more 5mC is taller** (UHRF1 −2.52, UHRF2 −3.10, TET1 +7.95). **SAM is oral and
+   OTC.** ⛔ Grade E, and R347's objections stand (active at 25–250 µM vs ~100 nM plasma; antiproliferative).
+   ⭐ But it is the first mechanism connecting the methylation direction to a **named effector gene**.
+⛔ **DEAD, verified R376:** finerenone · spironolactone · rosiglitazone · liraglutide · canagliflozin.
+⛔ **WRONG WAY, verified R377:** heparin, LMWH, pentosan polysulfate · DNMT inhibitors (they RE-express HHIP).
+
 ## ⭐⭐⭐⭐⭐ R380 — **WHAT HHIP IS DOING TO THE STACK: IT IS THE PATHWAY'S OWN GOVERNOR. `chuang1999` — the
 ## FOUNDING PAPER, NATURE, 588 CITES — WAS NEVER IN THIS ATLAS, AND IT CARRIES BOTH LOAD-BEARING FACTS.**
 
