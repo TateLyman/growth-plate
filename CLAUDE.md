@@ -2291,6 +2291,55 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🎯🎯🎯🎯 R382 — **THE GAPMER DOSE, AND WHICH ROUTE TO ACTUALLY DO.** Run
+## `atlas/tools/round382_hhip_route_cost_and_gapmer_dose.py`
+
+⭐ **ONE — THE DOSE, DERIVED TWICE AND THE TWO ROUTES CONVERGE.**
+· **Allometry:** systemic extrahepatic gapmers dose **20–25 mg/kg twice weekly** in mouse = 40–50 mg/kg/wk;
+  ×Km 3/37 → **3.2–4.1 mg/kg/wk** → **195–284 mg/week at 60–70 kg.**
+· **Empirical class dose:** the approved UNCONJUGATED systemic PS-MOE gapmers — **inotersen 284 mg/week s.c.,
+  volanesorsen 285 mg/week s.c.** (GalNAc conjugates dose ~10× lower but go to liver; **ASGR1 is 3.2 CPM in
+  the plate**, so the conjugate is the wrong format here).
+→ ⭐ **PLANNING DOSE: ~250–300 mg ONCE WEEKLY SUBCUTANEOUS.**
+⭐⭐ **AND THE FEASIBILITY NUMBER IS THE ANNUAL MASS: 285 mg × 52 = 14.8 g of GMP oligo per year.**
+Oligonucleotide synthesis runs at kilogram scale industrially — **~15 g/yr is a rounding error on a line.
+The cost is CMC, release testing and toxicology, NOT the grams.**
+⚠ Assumes growth-plate cartilage behaves like other extrahepatic tissue for a PS-ASO (posey2017 supports it
+qualitatively, nobody has quantified it), and **the required DEPTH of knockdown is unknown** (`g_l12_377b`).
+
+⭐ **TWO — COST TO FIRST DECISION, WHICH IS THE RIGHT METRIC** (every route ends at the same regulatory wall,
+so what matters is what it costs to learn whether it works). All figures `value_unverified`, order-of-magnitude:
+| route | cost to decide | what it buys |
+|---|---|---|
+| SAM / methyl donor | **$20/mo** | OTC today — but grade E, active at 25–250 µM vs ~100 nM plasma |
+| **miR-221 mimic** | **$200–500** | catalogue reagent; HHIP is a **validated** miR-221 target; promiscuous |
+| **PS-ASO gapmer panel** | **$5–15k** | ~20 gapmers + cell assay — **cheapest route to a CLEAN, potent, selective agent** |
+| CRISPRi dose-response | $20–50k | not a therapy — the experiment that says **how much** knockdown to aim for |
+| anti-HHIP KineTAC | $30–80k | needs a binder first; epitope-agnostic; ACKR3 handle 6.17× enriched |
+| exosome siRNA | $50–150k | vehicle demonstrated, but a biologics process not a reagent |
+| somatic enhancer editing | $100k+ | irreversible; only route that could pick a **trunk**-restricted element |
+| function-blocking antibody | $150–500k | most expensive; **superseded as a requirement** by the degrader logic |
+
+🎯 **THREE — AND THE CHEAPEST DECISIVE STEP IS NOT ON THE LIST. IT IS A CALIPER.**
+`darbellay2024` **already built** Col2a1_EGFP;Hhip_ΔCE2-3 — Hhip 15% lower **in cartilage** — and measured no
+bone. Obtaining or re-deriving that line and measuring femur, tibia and vertebral length is **~$10–25k**, no
+new chemistry, no new vehicle, no new target validation. **AND IT GATES IN BOTH DIRECTIONS:**
+· **15% moves a bone** → every one of the eight routes is worth building, because all can beat 15%.
+· **It doesn't** → the required depth is >15% and the cheap dirty options (SAM, miR mimic) are **dead on
+  potency before anyone spends on them.**
+
+🧭 **THE RECOMMENDED SEQUENCE:**
+**STEP 0** caliper the existing mouse — **~$10–25k** — gates everything
+**STEP 1** CRISPRi graded knockdown in human chondrocytes — **~$20–50k** — decides the MODALITY (monotone →
+irreversible routes acceptable; interior optimum → only the titratable gapmer is usable)
+**STEP 2** ASO gapmer panel, screened in the same cells, then a **normal growing mouse with a caliper**
+**STEP 3** only then choose between gapmer and KineTAC
+⛔ **AND THE HONEST TIMELINE: steps 0–2 are 12–24 months.** GMP + tox + IND is a further year at $1–3M, and
+every individualised-oligonucleotide pathway requires a severely debilitating or life-threatening disease
+caused by a specific pathogenic variant (R377). **NOTHING ON THIS LIST REACHES A SUBJECT INSIDE A 1–3 YEAR
+WINDOW. HHIP IS THE RIGHT LONG ANSWER AND IT IS NOT A SHORT ONE** — which is exactly why the free
+subtractions and the ΔBA/ΔCA measurement still outrank it for *this* window.
+
 ## 🎯🎯🎯🎯🎯 R381 — **HOW TO MOVE HHIP: THE COMPLETE ROUTE LIST, AND THE BEST ONE IS A DEGRADER, BECAUSE
 ## A DEGRADER DOES NOT HAVE TO BLOCK ANYTHING — IT ONLY HAS TO BIND. And the receptor it needs is 6.17×
 ## CARTILAGE-ENRICHED.**
