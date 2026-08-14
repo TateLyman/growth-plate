@@ -2481,6 +2481,90 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 🧬🔬🧬🔬 R434 — **I GREPED AND DID NOT SEARCH (CORR-359). SEARCHING RETURNS A LAYER — AND LIN28/let-7
+## IS THE ONLY AXIS IN THIS FILE THAT MOVES *BOTH* TERMS WITH ONE PERTURBATION, AND THE ONLY ONE WHOSE
+## COST *IS* ITS MECHANISM.**
+
+⛔ **ZERO — THE CORRECTION, AND IT IS CORR-267/284's SHAPE.** R433 answered *"where else could large height
+come from"* **by greping the atlas.** The grep was right and useful — it returned the file's own worked
+closures (telomerase dead by direct test; reprogramming backwards for this tissue) — **but a grep CANNOT
+RETURN WHAT NOBODY PUT IN.** Running the external search instead returns an entire **LAYER**.
+
+⭐ **ONE — THE LAYER: POST-TRANSCRIPTIONAL microRNA CONTROL OF THE GROWTH PLATE.** Coverage before this
+round: **microRNA 4 node files · miRNA and miR-1 ZERO · antagomir ZERO · anti-miR ZERO**, and **CLAUDE.md
+returns ZERO for LIN28, let-7 and HMGA2.** `thakore2025`, a 2025 review dedicated to exactly this layer,
+was not held. It records that miRNAs are differentially expressed across **resting, proliferating and
+hypertrophic zones** and differentially enriched in **MATRIX VESICLES**; that **miR-1 and miR-140 converge
+on their mutual target HDAC4** — a node this file already works; that a human **GAIN-OF-FUNCTION mutation
+in miR-140 causes skeletal dysplasia**; and that **miR-26b marks idiopathic short stature.**
+
+⭐⭐⭐ **TWO — AND LIN28/let-7 MOVES *BOTH* TERMS AT ONCE, WHICH NOTHING ELSE HERE DOES.** `zhu2010` (Nat
+Genet, **already in this bibliography**): transgenic mice expressing Lin28a show **INCREASED BODY SIZE,
+INCREASED CROWN-RUMP LENGTH *and* DELAYED ONSET OF PUBERTY** — a length endpoint and a period endpoint in
+the same animals. **Every other arm in the stack moves one term and pays on the other.**
+⭐ **The human side is a GRADE-A node in this atlas that has never been in the ledger** (`lin28b_gene`):
+LIN28B blocks let-7 maturation and was **the first locus shown by GWAS to set human pubertal timing**;
+alleles advancing menarche by **0.12 y/allele give SHORTER adult height** (`ong2009`) — so the
+**menarche-DELAYING direction is the taller one** — and a second variant influences **FINAL HEIGHT IN BOYS**
+(`widn2010`).
+
+⭐⭐ **THREE — AND IT HAS A CARTILAGE-AUTONOMOUS ARM THAT LANDS ON SOX9, WITH THE MEDIATOR PROVEN BY
+KNOCKDOWN.** `jouan2022` (Sci Adv): cartilage-specific Lin28a **OVEREXPRESSION** raised **chondrocyte
+PROLIFERATION, Sox9 and Prg4** and lowered Mmp13; cartilage-specific **DELETION IN INTACT MICE** raised
+Mmp13. The chain is causal, not correlative — Lin28a **inhibited let-7b and let-7c → raised HMGA2 →
+activated SOX9**, and **HMGA2 siRNA knockdown ABOLISHED the effect.**
+**LIN28 ⊣ let-7 → HMGA2 → SOX9, inside the chondrocyte, ending on the master chondrocyte TF.**
+
+⭐ **FOUR — AND A THIRD INDEPENDENT LINE FALLS OUT OF R432's OWN INSTRUMENT.** `zhu2010` names the relevant
+let-7 targets as **Myc, Kras, Igf2bp1 and Hmga2** — and **IGF2BP2 is in the 207 at −8.68 cm.** Loss of the
+let-7 target family **SHORTENS**, so raising it — which is what lowering let-7 does — is the taller
+direction. Human, unbiased ascertainment, reached from a different instrument than either the mouse
+transgenic or the pubertal-timing GWAS.
+
+⭐ **FIVE — THE MODALITY EXISTS AND THIS FILE ALREADY SHOWED IT REACHES THE TISSUE.** R376: **PS-ASO
+gapmers were delivered to growth-plate cartilage in vivo** (`posey2017`), and the Donnan exclusion argument
+**does not apply** to a protein-bound, endocytosed phosphorothioate. **An ANTI-let-7 oligonucleotide is the
+agent this axis wants.** ⛔ Chemical matter on LIN28 itself is **entirely INHIBITORS** — the wrong direction,
+**R342's inhibitor-shelf problem again, because the indication that built those molecules was cancer.**
+
+⛔⛔⛔ **SIX — AND THE COST, WHICH IS THE HONEST ANSWER TO "INSANE": THIS IS THE ONE LEVER IN THE FILE WHOSE
+RISK *IS* ITS MECHANISM RATHER THAN A SIDE EFFECT.** **let-7 is one of the most important tumour-suppressor
+microRNA families known and LIN28B is a bona fide oncogene**, and this is demonstrated rather than
+inferred: **LIN28 cooperates with WNT signalling to drive invasive intestinal and colorectal adenocarcinoma
+in mice AND humans**; **Lin28b is sufficient to drive liver cancer and necessary for its maintenance**;
+LIN28B drives **hepatoblastoma, neuroblastoma and Wilms tumour.** **LOWERING let-7 IS ONCOGENE ACTIVATION BY
+DEFINITION** — and **HMGA2, the required mediator, is itself the canonical lipoma and leiomyoma driver.**
+Recorded as the identified big swing, **not as a proposal.**
+
+⛔ **SEVEN — WHAT WOULD SINK IT FOR THIS SUBJECT, STATED BEFORE ANYONE ACTS.** *Heterochronic* means the
+timing of developmental transitions, and **at BA16 those transitions are nearly spent.** `zhu2010` is
+**germline from conception**; `jouan2022` is **adult ARTICULAR cartilage**. **NO let-7 OR LIN28 PERTURBATION
+HAS EVER BEEN GIVEN A GROWTH-PLATE LENGTH ENDPOINT IN ANY SPECIES.** And `zhu2010`'s own stated mechanism is
+**metabolic** — increased glucose metabolism and insulin sensitivity — which raises the **Step 0** question
+of whether the whole-body arm is simply the **GH/IGF axis**, priced at ≈0 attained height after
+mid-puberty. `jouan2022`'s cartilage-autonomous arm is the reason to think there is also a local one.
+`g_l8_434a`.
+
+⭐ **EIGHT — THE LAYER'S NEGATIVE CONTROL IS BRAND NEW, WAS ALREADY IN THIS BIBLIOGRAPHY, AND WAS
+UNEXTRACTED (CORR-351's shape).** `thakore2026` was added **2026-08-05 with a one_line_finding that merely
+restated its own title**, cited by no node. Read: a conditional **miR-433 TOUGH DECOY** in Prrx1 skeletal
+progenitors gave **SHORTENED AND NARROWER FEMURS in both sexes**, with disorganised plates, **FEWER RESTING
+ZONE CELLS**, abnormal hypertrophic-like cells in the proliferative zone and delayed SOC development, with
+Sox9, Ihh, PTHrP and Bmpr1a all elevated.
+→ **INHIBITING A GROWTH-PLATE microRNA SHORTENS BONE. So miR-433 inhibition is a CONTRAINDICATION, and the
+layer carries real bone-length endpoints in BOTH directions rather than only expression patterns.**
+
+⚠ **AND THE OTHER BIG SWINGS, SEARCHED THIS ROUND AND CLOSED SO THEY ARE NOT RE-PROPOSED:** **X-LAG /
+GPR101 gigantism** produces the tallest humans ever recorded, but it begins **in INFANCY** and runs through
+the entire growth period, and R360's arithmetic already prices GH as **≈height-neutral per unit pool
+consumed (×1.05)** — so more GH reaches the terminus **sooner, not higher**; GPR101 is also absent from
+cartilage (R306). **Engineered / tissue-engineered physis and physeal allograft** is an entirely
+**INJURY-REPAIR** literature (physeal bars) — CORR-203 and CORR-295, nobody is building a plate to make a
+normal person taller, and `korpershoek2026` already showed transplanting one does not recreate one.
+**Inverse pharmacovigilance** (drugs causing excessive linear growth) returns disease states — pituitary
+gigantism, PDGFRB overgrowth syndromes — not new drug-induced overgrowth beyond the FGFR class this file
+already holds.
+
 ## 🍷🧬 R433 — **RESVERATROL SURVIVES R365's KILL ON THE ONE PARAMETER THE KILL REQUIRES. AND THE BIG
 ## REJUVENATION SWING WAS ALREADY WORKED IN THIS ATLAS: IT IS NOT IMPOSSIBLE, IT IS BACKWARDS.**
 
