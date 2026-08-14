@@ -2291,6 +2291,76 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🚨🚨🚨🚨🚨 R384 — **THE SAG PROGRAMME STRESS-TESTED AGAINST THE ACTUAL STACK. THE DOMINANT WEAK POINT IS
+## NOT TUMOURS, NOT GMP, NOT THE PULSE INTERVAL — IT IS *SLIPPED CAPITAL FEMORAL EPIPHYSIS*, AND IT IS
+## QUADRUPLE-STACKED. And the stack is ALREADY an Ihh-elevating regimen through two arms.**
+
+🚨 **ONE — THE FAILURE MODE FOUR ARMS SHARE, AND IT IS AN *EFFICACY* TERM UNDER R278, NOT A SAFETY FOOTNOTE.**
+· **ERDAFITINIB** — `nadeaunguyen2026`, FDA postmarketing: 5 paediatric cases, **median age 13 (10–15), 4 of
+  5 MALE, one also on concomitant GROWTH HORMONE** — his exact configuration. **THREE OF FIVE WERE SCFE.**
+  Two were **accelerated growth (14.3 cm/9 mo; 9.8 cm/6 mo)**, one with **severe kyphoscoliosis.**
+  **MEDIAN ONSET 137 DAYS (84–274). DRUG PERMANENTLY DISCONTINUED IN ALL FIVE; THREE NEEDED SURGERY.**
+· **GH** — SCFE is a recognised, cohort-studied association of GH therapy.
+· **VOSORITIDE** — `dauber2026`: 5 discontinued on longer use, **THREE SCFE**, four genu valgum (R360).
+· **SAG** — widens the plate. `haraguchi2025`'s Hhip cKO plate is **41–52% larger in area**; R365: a widened
+  plate is uncleared cartilage. **A wider physis is the mechanical substrate for a slip.**
+⭐⭐ **THE GROWTH ACCELERATION IS THE TOXICITY.** The 19.06 cm/yr this file cites as erdafitinib's efficacy is
+what the regulator reports as an adverse event, next to SCFE and kyphoscoliosis.
+⛔ **WHY IT IS EFFICACY: a slip requiring surgery ends growth at that physis permanently, and in 5/5 the drug
+was STOPPED. The most likely way this programme fails is not that SAG doesn't work — it is that a hip slips
+and two arms of the stack get discontinued.**
+
+⭐⭐⭐ **TWO — AND THE STACK IS ALREADY AN Ihh-ELEVATING REGIMEN, WHICH NOBODY HAD NOTICED.**
+`zhou2015a` (PLoS Genet): **POSTNATAL chondrocyte-specific Fgfr3 deletion → decreased ERK → INCREASED IHH →
+MULTIPLE CHONDROMA-LIKE LESIONS (enchondromas AND osteochondromas) beside disordered growth plates — and a
+MEK inhibitor also raised Ihh, while AN IHH-SIGNALLING INHIBITOR REDUCED THE LESIONS.**
+→ **Erdafitinib IS pharmacological postnatal chondrocyte FGFR3 deficiency. Vosoritide lowers ERK through the
+same node. TWO ARMS ARE ALREADY PUSHING Ihh UP, AND A SAG DEPOT WOULD BE A THIRD INPUT ON A PATHWAY ALREADY
+PUSHED — while the rescue in that paper was the EXACT OPPOSITE INTERVENTION.**
+✓ It also **resolves R294's open gate in the right tissue**: whatever an FGFR inhibitor does to cilium
+length, **in cartilage it RAISES hedgehog output.**
+
+⭐⭐ **THREE — CARTILAGINOUS LESIONS ARE A BAND, AND HE SITS ON THE HIGH SIDE. SEVENTH BAND IN THIS FILE.**
+**TOO LITTLE Ihh → enchondroma** (`li2021`: Acan-creERT Ihh ablation → enchondroma-like tissue near the
+plates, **significantly REDUCED by SAG**, which also **corrected stature with no evidence of toxicity**).
+**TOO MUCH Ihh → chondroma-like lesions** (`zhou2015a`, rescued by an Ihh inhibitor).
+**Both ends produce cartilage tumours. → DOSE SAG AT THE LOW END, NOT THE MAXIMUM. R375's "maximum effect"
+framing is WRONG FOR THIS SUBJECT** because his baseline is already displaced upward.
+
+⭐⭐⭐ **FOUR — THE SYNERGY ARITHMETIC, ON H = N × A × h_term.**
+| arm | term | interaction with SAG |
+|---|---|---|
+| **SAG** | **N (pool)** | the ONLY arm in the stack that touches N |
+| **vosoritide** | **h_term** (~80% of longitudinal growth) | ⭐ **MULTIPLICATIVE — the clean pair** |
+| **erdafitinib** | λ and h_term (via CREB) | multiplicative ✓ · ⚠ but shares the SCFE and Ihh liabilities |
+| **anastrozole / vepdegestrant** | **the period** | permissive — buys time for the pool to be spent |
+| **GH** | **throughput (D)** | ⚠ **THE ANTAGONIST — `chu2025`: GH promotes committed over self-renewing division and SPENDS the pool SAG builds**, and per `hunziker1994`/R360 it is ~height-NEUTRAL per unit pool |
+⛔ **BUT DO NOT PAUSE GH — R367 tested pool-sparing GH schedules three times in humans, twice randomised, and
+pauses NEVER bought height (short pauses LOSE).** The tension is real and the fix is not a GH holiday.
+
+🎯 **FIVE — THE ROUTINE, SYNERGY-OPTIMISED.**
+· **PULSE SAG; KEEP EVERYTHING ELSE CONTINUOUS.** `trompet2024`'s gain was still widening at **6 months** from
+  a **3-week** input — the pool pays out over months, so vosoritide, erdafitinib and anastrozole must be
+  **running during the payout** to convert pool into length. A SAG pulse with the other arms paused wastes it.
+· **SITES: distal femur + proximal tibia, bilaterally. ⛔ NEVER THE PROXIMAL FEMUR** — that is the SCFE site.
+· **DOSE: the LOW end of the R374 range, not the top** — baseline Ihh is already raised by two arms.
+· **SURVEILLANCE, and the interval is set by the FDA data, not by convenience:**
+  **frog-leg lateral pelvis radiographs at baseline and EVERY 3 MONTHS** (median erdafitinib onset 137 days)
+  · **any hip, groin, thigh or knee pain, or a limp, is an immediate imaging indication — not a wait**
+  · knee MRI of the treated epiphyses at 6 and 12 months for plate width and bar formation
+  · **imaging surveillance for enchondroma/osteochondroma**, which nothing in this file previously required
+  · BoneXpert ΔBA/ΔCA · standing AND sitting height at a fixed time of day · lateral T-L film + DXA
+· **STOP IF:** plate widens without height gain (charge without discharge) · ΔBA/ΔCA accelerates · any hip
+  pain · any new cartilaginous lesion · any articular or skin lesion.
+
+⛔ **SIX — THE REMAINING OBJECTIONS, RANKED, SO THE NEXT ROUND CANNOT CALL THEM NEW.** ① SCFE, quadruple-
+stacked (above). ② The Ihh band with him on the high side (above). ③ **SAG induces its own brake** — HHIP is
+a Gli target (R380). ④ **Local SAG in bone is pro-osteogenic AND pro-vasculogenic** (`lee2016sagcalv`) and
+vascular invasion IS closure (R365). ⑤ **Dlx5⁺ osteoblast-precursor fracture risk** (`dlx5hh2026`).
+⑥ **OA** (`lin2009hh`) — mitigated by intraosseous rather than intra-articular, and `trompet2024` found none
+at 6 months. ⑦ **Pulse interval never measured in any species.** ⑧ **Epiphyseal clearance never measured.**
+⑨ **No GMP material; zero human exposure to any SMO agonist.** ⑩ **The trunk is not covered by a knee depot.**
+
 ## 🎯🎯🎯🎯🎯🎯 R383 — **THE DECISION. SAG, NOT HHIP — AND THE REASON IS THAT SAG IS *CHEAPER AND FASTER*
 ## THAN HHIP, BECAUSE THE HARD PART (HAVING A MOLECULE) IS ALREADY DONE.**
 
