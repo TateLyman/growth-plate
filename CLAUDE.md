@@ -2481,6 +2481,48 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 💊⛔💊⛔ R435 — **IS THERE A DRUG THAT MOVES THE LIN28 AXIS THE RIGHT WAY? NO — AND THE CHAIN HAS
+## FOUR DRUGGABLE NODES, ALL FOUR HAVE REAL CHEMISTRY, AND ALL FOUR POINT BACKWARDS FOR THE SAME REASON.**
+
+| node | direction we want | what actually exists | why it points the wrong way |
+|---|---|---|---|
+| **LIN28** | **RAISE** | inhibitors only — C1632, LI71, computer-aided Lin28-inhibitor programmes, and a published screen titled *"small molecules **RESTORING** levels of let-7"* | **LIN28 is an oncogene** |
+| **let-7** | **LOWER** | therapeutic programmes are let-7 **MIMICS/restorers**; antagomirs exist only as lab reagents | **let-7 is a major tumour suppressor** |
+| **HMGA2** | **RAISE** | inhibition programmes only (fibroid, cancer) | **HMGA2 is the canonical lipoma/leiomyoma driver** |
+| **SOX9 / chondrogenesis** | **RAISE, *with* hypertrophy** | ⭐ **KARTOGENIN and TD-198946 — and this atlas had 0 nodes, 0 refs, 0 CLAUDE.md for BOTH** | built for **PERMANENT cartilage** — see below |
+
+⛔⛔⛔ **AND TD-198946 IS DISQUALIFIED IN ITS AUTHORS' OWN WORDS, WHICH IS WHY THIS IS A KILL AND NOT A GAP.**
+`yano2013` states the field's design goal explicitly — a successful tissue-engineering approach requires not
+only induction of chondrogenic differentiation but **SUPPRESSION OF SUBSEQUENT ENDOCHONDRAL OSSIFICATION** —
+and reports that TD-198946 **INDUCED CHONDROGENIC DIFFERENTIATION WITHOUT PROMOTING ENDOCHONDRAL
+OSSIFICATION**, reconstructing permanent cartilage in mouse and canine knee defects **WITH NO EVIDENCE OF
+CHONDROCYTE HYPERTROPHY.**
+
+⛔⛔⛔ **CORR-360 — A NEW SHELF, AND IT EXPLAINS A RECURRING ATTRACTION. ENDOCHONDRAL OSSIFICATION *IS*
+LONGITUDINAL BONE GROWTH, AND HYPERTROPHY IS ~80% OF IT.** Cartilage regenerative medicine exists to make
+**PERMANENT** cartilage — a joint surface that must **never** hypertrophy and **never** ossify. The growth
+plate is **TRANSIENT** cartilage whose entire output depends on doing both. **THE TWO FIELDS WANT OPPOSITE
+TISSUES, SO EVERY COMPOUND OPTIMISED FOR CARTILAGE REGENERATION IS SELECTED *AGAINST* THE EXACT STEP THAT
+PRODUCES HEIGHT.** That is why "chondrogenic" compounds keep looking attractive here and keep being wrong.
+**R342's inhibitor-shelf shape on a completely different shelf, and CORR-290's rule restated: same pathway
+and same nominal direction is NOT the same lever — match the zone decomposition or it is a different
+intervention.**
+
+⭐ **WHAT SURVIVES — TWO THINGS, AND THE FIRST IS IN EXACTLY SAG's POSITION.**
+· **AN ANTI-let-7 OLIGONUCLEOTIDE IS THE ONLY ROUTE IN THE RIGHT DIRECTION.** The modality is **proven to
+  reach the tissue** (R376/`posey2017`: PS-ASO gapmers delivered to growth-plate cartilage in vivo, and the
+  Donnan argument does not apply to a protein-bound endocytosed phosphorothioate); **anti-let-7 antagomirs
+  are catalogue research reagents**, so material exists at research grade. **NOBODY HAS EVER GIVEN ONE TO A
+  BONE.** What blocks it is neither discovery nor delivery — it is that no such agent has been made to any
+  standard for this purpose, and that **lowering let-7 is oncogene activation by definition.**
+· **KARTOGENIN IS THE ONE CHONDROGENIC SMALL MOLECULE WHOSE GROWTH-PLATE DIRECTION IS GENUINELY UNKNOWN.**
+  Its whole indexed literature is articular repair, OA and delivery vehicles; a targeted query against
+  growth plate, physis, bone length, longitudinal growth and stature returns **nothing on any of those
+  endpoints**. ⚠ It shares TD-198946's **filamin A / CBF-β / RUNX1** mechanism, so the prior is that it
+  inherits the same disqualification — **but that specific result was not found for kartogenin and is not
+  asserted here.** Under R302 the missing endpoint is a **GAP**; under CORR-290 the burden is on the
+  compound to show the **SPIN4** decomposition rather than the permanent-cartilage one. `g_l12_435a`.
+
 ## 🧬🔬🧬🔬 R434 — **I GREPED AND DID NOT SEARCH (CORR-359). SEARCHING RETURNS A LAYER — AND LIN28/let-7
 ## IS THE ONLY AXIS IN THIS FILE THAT MOVES *BOTH* TERMS WITH ONE PERTURBATION, AND THE ONLY ONE WHOSE
 ## COST *IS* ITS MECHANISM.**
