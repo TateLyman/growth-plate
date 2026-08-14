@@ -448,6 +448,12 @@ and do not collapse to knees-only. Both compartments are live for him.
   increased NPR3 **agonist** activity). **AP-811 is an ANTAGONIST (Ki 0.45–0.48 nM, >20,000× over NPR1) and
   therefore the WRONG CLASS — its NPR1 number is the wrong comparison twice over.** Efficacy counter-screen
   = **NPR2**; safety axis = **blocker vs occupant**. Neither run for any candidate.
+  ⭐⭐ **R424: CLAUDE.md HAS BEEN QUOTING THE WEAKEST ROW. Best-powered NPR3 = pLoF+delmis <0.5%, +1.910 cm
+  at P=1.42e-61 across 3,727 carriers; all-missense +0.942 at P=3.76e-55 across 14,092 — a carrier base
+  ~63× the 224 quoted below. AND THE CONSTRAINT FLAGS ARE THE DRUGGABILITY ARGUMENT: NPR3 constrained=0
+  (loss tolerated at population scale, and taller); NPR2 constrained=1, an OMIM height gene, −2.750 cm at
+  P=5.88e-96. THE NPR2 DOWNSIDE EXCEEDS THE NPR3 UPSIDE, WHICH IS WHY SELECTIVITY IS THE GATE — and neither
+  cANF(4-23) nor `nishizawa2017` compound 23 reports an NPR2 number (both report NPR1, the wrong receptor).**
   ✗ **THE EFFECT SIZE WAS INFLATED ~3× AND R300 CORRECTED IT DOWNWARD.** The old ~1 SD/allele (≈7 cm) came
   from **6 clinically-ascertained carriers** (`lauffer2022` + `boudin2018`). `kosmicki2026`, 1.45M exomes,
   unbiased: **pLoF +2.35 cm (224 hets, P=4.5e-07); pLoF+delmis +1.91 cm, P=1.4e-61.** CORR-295 biting a
@@ -1788,7 +1794,14 @@ occupant, which is the favourable starting state for the hedgehog arm.
    for a skeletal claim, free to substitute. See the contraindication list.
 6. ⭐ **NEW, R377 — ANY HEPARIN, LMWH, PENTOSAN POLYSULFATE OR SULODEXIDE?** Soluble sulfated GAGs suppress
    hedgehog at two steps and potentiate HHIP (`jakobs2019heparin` + `griffiths2021`). Grade E, free to avoid.
-7. ⭐ **NEW, R377 — HAS HIS OWN GENOME OR EXOME EVER BEEN READ AGAINST THE 207 HEIGHT GENES?** R300 gave
+7. ⭐⭐ **NEW, R424 — SERUM OSTEOCRIN / MUSCLIN, AND THE LOADING PRESCRIPTION AS AN NPR3 INTERVENTION.**
+   `watanabetakano2021`: load acts on periosteal osteoblasts → they secrete **OSTEOCRIN** → which occupies
+   **NPR3 as a decoy** → sparing local CNP for NPR2 → **long bones elongate.** **That is an ENDOGENOUS NPR3
+   intervention requiring no molecule**, and this atlas held both halves for rounds without joining them.
+   **Osteocrin has published paediatric serum reference values, so it is measurable today and never has
+   been.** ⚠ **MODALITY IS LOAD-BEARING: PERIOSTEAL AND MUSCULAR loading — which runs OPPOSITE to
+   quasi-static AXIAL COMPRESSION** (Hueter-Volkmann, growth-suppressing). Not axial compression.
+8. ⭐ **NEW, R377 — HAS HIS OWN GENOME OR EXOME EVER BEEN READ AGAINST THE 207 HEIGHT GENES?** R300 gave
    every one a **signed effect in centimetres**. **HHIP alone has a +9.92 cm pLoF and a −3.96 cm
    gain-of-function missense (p.V496E)**, and this atlas has never asked which alleles HE carries — at HHIP,
    at NPR3/NPR2, at ACAN, at any of them. A single exome or WGS is the cheapest personalised measurement
@@ -2461,6 +2474,92 @@ is a blood draw, and seven rounds rest on a number the file itself flagged as un
 CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS A PREMISE.** Until the
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
+
+## 🧲🧲🧲 R424 — **THE NPR3 OCCUPANT ARM WORKED TO A DECISION. It SURVIVES the substitution test (and
+## the atlas's own bibliography was overstating why), then FAILS the SELECTIVITY GATE. HELD, not added —
+## and the usable output is FREE and needs no molecule.**
+
+⛔ **ZERO — BOOKKEEPING FIRST.**
+· ⭐ **CORR ON R317: ITS HEADLINE GENE AGAINST THE CNP ARM IS INVERTED.** R317 wrote *"NPR3 is the 2nd most
+  significant of 46 genes tested… both on the LIMB side."* **R421 corrected NPR3 to 59.2% TRUNK at
+  P=4.9e-90.** With CORR-346 having already withdrawn the navepegritide U:L line, **"four converging lines"
+  is now THREE, and the GWAS line has CHANGED SIGN on the gene R317 quoted.** The three PHARMACOLOGICAL
+  lines (EMA L1–L4 null · monkey axial null · rat axial scoliosis/kyphosis/fractures) are untouched and
+  remain the case.
+· ⭐ **FOURTH CORR-313 INSTANCE IN SIX ROUNDS, ON AN ARM WITH A LENGTH ENDPOINT:** `osteocrin` 18 node
+  files vs 2 here · `musclin` 8 vs **0** · `watanabetakano2021` 7 vs **0**. Now in.
+· ⚠ **CORR-353 GREP TRAP, RECORDED: `OSTN` MATCHES INSIDE `POSTNATAL`.** Naive `rg -i OSTN` returns **207
+  files** and is meaningless; `\bOSTN\b` returns **9**. Use `osteocrin`, `musclin`, `\bOSTN\b`.
+
+⛔ **ONE — THE SUBSTITUTION TEST, RUN FIRST AS THE GUARD DEMANDS, AND IT DOES NOT CLOSE THE ROUND.**
+Both sacubitril and NPR3 blockade raise endogenous ligand at NPR2 — one by blocking degradation, one by
+blocking clearance — and `hakata2024` showed sacubitril is **NOT additive with a CNP analogue.** But the
+targets sit in different places: **MME is CONTAMINANT-LEANING at ratio 0.17**, so sacubitril necessarily
+works on the circulating pool.
+⛔ **AND OUR OWN BIBLIOGRAPHY OVERSTATES THE EVIDENCE.** `nishizawa2017`'s entry says its combination
+result *"ANSWERS THE PAIRING QUESTION PHARMACOLOGICALLY."* **IT DOES NOT.** The additive result is
+compound 23 **+ mANP**, read on **blood cGMP**. **mANP is an NPR1 ligand.** The pairing that matters is an
+NPR3 blocker **+ a CNP analogue, read on BONE LENGTH** — never done in any species. **CORR-309's shape
+inside our own bibliography.** → **The additivity question is OPEN, not answered either way.**
+
+⛔⛔ **TWO — IT CLOSES ON THE SELECTIVITY GATE, AND THE ASYMMETRY IS QUANTIFIED. THE FULL BURDEN ROWS,
+WHICH CLAUDE.md HAS NEVER CARRIED:**
+| gene | best-powered row | eff | P | carriers | **constrained** |
+|---|---|---|---|---|---|
+| **NPR3** | pLoF+delmis <0.5% | **+1.910 cm** | 1.42e-61 | 3,727 | **0** |
+| **NPR3** | all missense <0.5% | +0.942 | 3.76e-55 | **14,092** | **0** |
+| **NPR2** | pLoF+delmis <0.1% | **−2.750 cm** | **5.88e-96** | 2,835 | **1 — OMIM height gene** |
+⭐ **THE DOWNSIDE PER UNIT OF NPR2 ENGAGEMENT (−2.75) EXCEEDS THE UPSIDE PER UNIT OF NPR3 ENGAGEMENT
+(+1.91), IN ONE DATASET AND ONE UNIT. Selectivity is not a refinement of this arm — it IS the arm.**
+⛔ **AND NEITHER CANDIDATE HAS THE NUMBER: `nishizawa2017` compound 23 reports hNPR3 0.079 nM vs hNPR1
+>1000 nM (>12,600×) — THAT IS NPR1, THE *ANP* RECEPTOR. cANF(4-23) reports hNPR3 0.51 nM. NPR2 — THE CNP
+RECEPTOR AND THE ONE THAT MATTERS — IS NOT REPORTED FOR EITHER.** ⛔ CLAUDE.md previously carried only
+NPR3 pLoF **+2.35 cm / 224 hets** — understating the carrier base **~63×** and omitting constraint entirely.
+
+⚠ **THREE — AND THE TISSUE ARGUMENT GRADES DOWN.** Purity-corrected postnatal human plate: **NPR3 2.62 CPM
+at ratio 1.42 · NPR2 13.01 at 2.90** (calibrators ACAN 4.65, COL2A1 8.92, IHH 72.45; AGTR1 0.03, NPPC 0.18).
+**NPR3 is PRESENT but NOT chondrocyte-enriched and 5× below the signalling receptor.** Not a CORR-327 kill —
+but not a gene the tissue invests in.
+⭐ **AND THAT RESOLVES A PARADOX R421 LEFT: how can lowering NPR3 be 59.2% trunk when lowering NPR2 — which
+it acts through — is 29.8%?** If NPR3 acted locally through plate NPR2 the coordinates should agree. They
+don't, and the expression says why: **NPR3 is not concentrated in the plate, and its best-known biology is
+vascular, adipose and renal. THE 59.2% IS MOST LIKELY A SYSTEMIC COORDINATE**, so the inference that it
+reports where a drug's growth effect lands is **weaker than it looks.** GSE9160 agrees — NPR2 robust and
+PZ/PHZ-peaked on both probes in both donors (to 1,262); **NPR3's three probes disagree on zone WITHIN a
+donor** and sit near background on one.
+
+⛔ **FOUR — THE ONLY LENGTH ENDPOINT IS A LOADING MODEL.** `watanabetakano2021`: load → periosteal
+osteoblast **OSTEOCRIN** → occupies NPR3 as a decoy → spares local CNP for NPR2 → **elongates long bones.**
+**That is mechanical, not pharmacological. THE ARM HAS NO PHARMACOLOGICAL BONE-LENGTH ENDPOINT IN ANY
+SPECIES** — R151's leading objection, unmoved.
+
+✓ **FIVE — BUT THE PRINCIPAL LIABILITY RUNS BACKWARDS FOR THIS COMPOUND CLASS.** `aubdool2025`: NPR-C-null
+mice have **elongated stature AND a dilated ascending aorta at baseline** — genetic loss gives both. **But
+the AGONIST cANF(4-23), 0.4 mg/kg/day by pump for 28 d, SIGNIFICANTLY REDUCED aortic expansion in wild-type
+mice**, while the **ANTAGONIST M372049 ABOLISHED CNP's protection.** → **For an occupant that SIGNALS the
+aortic liability is predicted to be PROTECTIVE.** That is why the spec is occupant-that-signals, not
+antagonist.
+
+⭐⭐ **SIX — THE USABLE OUTPUT, AND IT NEEDS NO MOLECULE: MECHANICAL LOAD IS AN ENDOGENOUS NPR3
+INTERVENTION.** Read `watanabetakano2021` forwards — load raises periosteal OSTN, the endogenous NPR3
+decoy, which spares local CNP. **The atlas holds both halves and never joined them.**
+⚠ **MODALITY MATTERS AND THE FILE ALREADY KNOWS IT: this is PERIOSTEAL AND MUSCULAR loading, which runs
+OPPOSITE to quasi-static AXIAL COMPRESSION** (Hueter-Volkmann, growth-suppressing). **Muscular/periosteal
+loading — explicitly NOT axial compression.**
+⭐ **AND IT IS MEASURABLE TODAY: osteocrin/musclin has published paediatric serum reference values and this
+atlas has never drawn one.** Same class as the untaken HOMA-IR, serum sulfate and ultrasensitive E2.
+
+⭐ **SEVEN — OBTAINABILITY UNDER R401's RULE.** cANF(4-23) **CATALOGUE REAGENT** · compound 23 **a published
+research peptide, delivered by IMPLANTED OSMOTIC PUMP**, not a catalogued product · recombinant osteocrin
+**CATALOGUE REAGENT**. **None is GMP, none is investigational, none is approved, no human has had any.**
+Under CORR-347: **chemical matter EXISTS (two sub-nanomolar peptides); clinical maturity is ZERO.**
+
+⛔ **THE VERDICT: HELD, NOT ADDED — and the file should say so once and stop re-opening it.** Best human
+genetics of any target here (14,092 carriers, unconstrained), the atlas's own derived spec, CORR-300's
+class rule, two real peptides — **and it fails on ONE unrun two-receptor binding assay**, compounded by a
+local expression level that does not support the compartment inference and no pharmacological length
+endpoint anywhere. **R151's "worth one experiment and not a place in the stack" was exactly right.**
+⭐ **R424 NAMES THE EXPERIMENT: cANF(4-23) and compound 23 against hNPR2 alongside hNPR3, in one assay.**
 
 ## ⚖️⚖️⚖️⚖️ R421 — **THE CNP COMPARTMENT NUMBERS WERE ARTEFACTUAL. NPR3 GOES FROM −4.12% TRUNK TO
 ## 59.2% AT P=4.9e-90 — the largest compartment artefact in this file, on the gene that carried the
