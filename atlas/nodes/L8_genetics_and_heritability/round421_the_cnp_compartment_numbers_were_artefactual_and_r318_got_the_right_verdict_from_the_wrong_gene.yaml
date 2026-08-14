@@ -1,0 +1,204 @@
+id: round421_the_cnp_compartment_numbers_were_artefactual_and_r318_got_the_right_verdict_from_the_wrong_gene
+name: >-
+  R421: the R406 correction re-run on the CNP axis and FGFR3, with the positive control declared first
+  and passed to six decimals. NPR3 moves from -4.12 percent trunk to 59.2 percent at P=4.9e-90 - the
+  largest compartment artefact yet found, on the gene that carried the verdict. But NPPC and NPR2, the
+  two genes that actually constitute the axis vosoritide acts on, come back mildly LIMB-leaning, so the
+  verdict survives while its evidence does not. What does NOT survive is the FGFR3-versus-CNP comparison
+aliases:
+  - CNP compartment correction
+  - NPR3 trunk artefact
+  - NPR2 compartment first assignment
+  - FGFR3 73 percent trunk withdrawn
+type: process
+layer: L8
+stub: false
+summary: >-
+  An external audit of this repository observed that R406 demonstrated R318's compartment method to be
+  selection on the outcome, corrected two genes, and stopped - and that NO CNP GENE WAS EVER CORRECTED
+  while NPR2, the receptor vosoritide actually binds, was never assessed at all. R421 runs the
+  correction on NPPC, NPR2, NPR3 and FGFR3, with NPR1 as a comparator.
+
+  ⭐ METHOD AND THE GUARD, DECLARED BEFORE ANY CNP RESULT WAS LOOKED AT. Three absolute traits from one
+  cohort of 451,921 Europeans - GCST90728584 standing height, GCST90728586 sitting height, GCST90728587
+  leg length. Each gene's STANDING-HEIGHT lead is taken, then the same variant is read out of the other
+  two scans and aligned to the height-increasing allele. Regions of plus or minus 150 kb were pulled by
+  parsing the tabix linear index and issuing HTTP range requests, because the local htslib has no libcurl.
+  The header was read rather than assumed: chromosome, base_pair_location, effect_allele, other_allele,
+  beta, standard_error, effect_allele_frequency, p_value, variant_id, rsid, info, rs_id,
+  hm_coordinate_conversion, hm_code. Build was resolved empirically - base_pair_location is GRCh38 while
+  the position embedded in variant_id is GRCh37, confirmed because R406's published SCUBE3 lead is
+  chr6:35,313,194 with variant_id 6_35280971_T_C.
+  ⭐ THE GUARD PASSED EXACTLY. Regenerated through the new extraction path, SCUBE3 returns 29.5 percent
+  trunk with sitting height +0.045480 at P=1.4e-17, standing +0.098348 at P=8.2e-94 and leg +0.108591 at
+  P=9.1e-98; CLEC11A returns 18.0 percent with sitting +0.021065 at P=0.12. Both reproduce the published
+  R406 values to six decimal places, so the CNP numbers from the same path are admissible.
+
+  ⭐⭐⭐ ONE - THE HEADLINE, AND IT IS THE LARGEST COMPARTMENT ARTEFACT THIS FILE HAS FOUND.
+  NPR3 was recorded in R318 at a sitting-height beta of -0.00195 and -4.12 percent trunk, LIMB-DOMINANT.
+  Corrected it is a sitting-height beta of +0.036334 AT P=4.9e-90 AND 59.2 PERCENT TRUNK. The trunk arm
+  is roughly nineteen times larger and of the opposite sign, and it is now one of the most significant
+  compartment arms in the atlas. The auditor predicted this on the arithmetic alone: R318 gave NPR3
+  -4.12 percent and SCUBE3 -4.05 percent, the same number to two significant figures, and SCUBE3's was
+  already proven artefactual.
+
+  ⛔ TWO - AND THE OTHER SIDE OF THE COMPARISON MOVES TOO, AGAINST THE STACK'S OWN REASONING.
+  FGFR3 was 73.43 percent trunk in R318 and is the line CLAUDE.md uses to say the FGFR3 arm reaches the
+  spine. Corrected it is 49.1 PERCENT - dead average. So the pro-erdafitinib half of the compartment
+  comparison was computed by the same retired method and does not survive it either.
+  → ON CORRECTED NUMBERS NPR3 (59.2 percent) IS MORE TRUNK-DIRECTED THAN FGFR3 (49.1 percent). The
+  compartment argument that ranked the FGFR3 arm above the CNP arm is inverted by its own data.
+
+  ⭐⭐ THREE - BUT THE VERDICT ON THE ARM SURVIVES, BY A DIFFERENT ROUTE, AND THIS IS THE HONEST RESULT.
+  The axis is not uniform, and the split is mechanistically sensible:
+  · NPPC, the LIGAND - 30.9 percent trunk, limb-leaning (R318 had 21.66 percent, so this one moved little).
+  · NPR2, the SIGNALLING RECEPTOR vosoritide binds - 29.8 percent trunk, limb-leaning. NEVER PREVIOUSLY
+    ASSESSED IN ANY ROUND. This is the first compartment assignment of the actual drug target.
+  · NPR3, the CLEARANCE receptor - 59.2 percent trunk. Its job is to REMOVE CNP, so there is no reason its
+    compartment should equal the signalling arm's, and R318 built the case on the one gene in the axis
+    whose direction does not represent the axis.
+  → R318 REACHED THE RIGHT VERDICT FROM THE WRONG GENE. The two genes that constitute the pathway
+  vosoritide acts through are both mildly limb-leaning, which supports the original conclusion - but no
+  round had ever measured either of them correctly, and the gene that was quoted was inverted.
+
+  ⭐ FOUR - THE BASE-RATE CHECK, RUN ON THE CORRECTED METHOD'S OWN 22 GENES (round323).
+  Distribution of percent trunk: median 45.0, mean 41.0, range 8.2 (LTBP2) to 55.2 (TET1), with 15 of 22
+  below 50 percent. So the corrected method is itself mildly limb-leaning on an unrelated gene set, and
+  the sign alone is not informative - magnitude against that distribution is.
+  · NPR3 at 59.2 percent EXCEEDS ALL TWENTY-TWO. It is the most trunk-dominant value the corrected method
+    has produced anywhere in this atlas.
+  · NPPC 30.9 and NPR2 29.8 sit below the median and are unremarkable - comparable to FBN2 at 28.6.
+  · FGFR3 49.1 and NPR1 54.0 are ordinary, sitting just above the median.
+
+  ⛔ FIVE - WHAT THIS DOES NOT TOUCH, STATED SO NOBODY OVERREADS IT.
+  Three lines against the CNP arm are PHARMACOLOGICAL and are untouched by any of this: vosoritide's
+  L1-L4 null in the EMA report, the axial null outright in monkeys, and the rat axial dose that works
+  causing scoliosis, kyphosis and fractures. Those are direct and they remain the actual case.
+  ⚠ Every lead here is a WINDOW lead at plus or minus 150 kb, not a gene lead - NPR2's is about 102 kb
+  from the gene, NPPC's about 125 kb, and FGFR3's about 46 kb upstream in a gene-dense region containing
+  NSD2 and LETM1. Units are inverse-normalised SD, not centimetres. A common regulatory variant need not
+  allocate height the way a coding or pharmacological perturbation does.
+  ⚠ R317 shares the defect class - its outcome variable IS the sitting-height ratio - and was not re-run
+  here. Whether that makes it more or less exposed than R318 is unresolved.
+
+  ⭐ WHAT R421 SETTLES. The compartment case against the CNP arm as WRITTEN was built on a number that was
+  inverted, and the compartment case FOR the FGFR3 arm was built on a number that was inflated. The
+  conclusion about the CNP axis nonetheless holds on the corrected data, because the ligand and the
+  signalling receptor are both limb-leaning. The comparison BETWEEN the two arms does not hold, and should
+  not be restated. NPR2 now has its first compartment assignment in any round.
+quantitative:
+  - parameter: NPR3 compartment, before and after correction
+    value: >-
+      R318 sitting beta -0.00195, -4.12 percent trunk, LIMB-DOMINANT; R421 sitting beta +0.036334 at
+      P=4.9e-90, standing +0.036955 at P=1.9e-120, leg +0.025004 at P=3.2e-47, 59.2 percent trunk
+    unit: inverse-normalised SD and percent
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: >-
+      the largest compartment artefact found in this atlas, on the gene that carried the CNP verdict, and
+      exceeding all 22 genes in the corrected method's own reference distribution
+  - parameter: NPR2 compartment, first assignment in any round
+    value: >-
+      standing +0.018001 (P=2.3e-30), SITTING +0.008481 (P=2.8e-06), leg +0.019987 (P=6.9e-32),
+      29.8 percent trunk, LIMB-leaning
+    unit: inverse-normalised SD and percent
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: >-
+      the receptor vosoritide actually binds. Never compartment-assigned before; window lead sits about
+      102 kb from the gene
+  - parameter: NPPC compartment, corrected
+    value: >-
+      standing +0.058691 (P=6.1e-98), SITTING +0.028695 (P=2.1e-18), leg +0.064238 (P=1.7e-105),
+      30.9 percent trunk versus R318's 21.66 percent
+    unit: inverse-normalised SD and percent
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: the ligand. Moved little, and remains limb-leaning
+  - parameter: FGFR3 compartment, before and after correction
+    value: >-
+      R318 73.43 percent trunk, TRUNK-DOMINANT; R421 standing +0.025796 (P=8.4e-54), SITTING +0.020796
+      (P=2.2e-28), leg +0.021515 (P=2.6e-33), 49.1 percent trunk, BOTH
+    unit: inverse-normalised SD and percent
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: >-
+      the line supporting "the FGFR3 arm reaches the spine" is computed by the retired method and falls to
+      the median on correction
+  - parameter: base rate of the corrected method across R323's 22 genes
+    value: >-
+      median 45.0 percent trunk, mean 41.0, range 8.2 (LTBP2) to 55.2 (TET1), 15 of 22 below 50 percent
+    unit: percent trunk
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: >-
+      the corrected method is itself mildly limb-leaning, so magnitude against this distribution carries
+      the information rather than the sign. NPR3 exceeds every one of the 22
+  - parameter: positive control regenerated through the new extraction path
+    value: >-
+      SCUBE3 29.5 percent trunk with sitting +0.045480 at P=1.4e-17; CLEC11A 18.0 percent with sitting
+      +0.021065 at P=0.12 - both reproducing R406 to six decimal places
+    unit: percent and SD
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: declared before any CNP result was read, per the audit's instruction
+localization: not_applicable
+human_evidence: direct
+human_evidence_note: >-
+  Common-variant association statistics from one cohort of 451,921 Europeans across three absolute
+  anthropometric traits.
+species_basis:
+  - human
+translation_risk: not_applicable
+translation_risk_reason: Human GWAS throughout.
+confidence: B
+claim_grades:
+  - claim: R318's CNP compartment numbers are artefactual
+    grade: A
+    basis: >-
+      the same tool and the same cohort, with the selection step corrected, moves NPR3 from -4.12 to
+      59.2 percent trunk, and the positive control reproduces the published values to six decimals
+  - claim: NPR3's height allele is trunk-dominant
+    grade: B
+    basis: >-
+      sitting-height arm +0.036334 at P=4.9e-90, exceeding all 22 genes in the corrected method's
+      reference distribution. A window lead, not a gene lead
+  - claim: The CNP signalling axis is limb-leaning
+    grade: C
+    basis: >-
+      NPPC 30.9 percent and NPR2 29.8 percent, both below the method's own median of 45.0 but well inside
+      its observed range, so this is an unremarkable rather than an extreme value
+  - claim: The FGFR3 arm reaches the spine preferentially
+    grade: E
+    basis: >-
+      WITHDRAWN as a GWAS claim. 73.43 percent was computed by the retired method; corrected it is 49.1
+      percent, at the median. The direct evidence for FGFR3 axial reach is dabogratinib's L4-L6 result,
+      which this does not touch
+  - claim: The compartment comparison ranking the FGFR3 arm above the CNP arm holds
+    grade: E
+    basis: >-
+      NO. On corrected numbers NPR3 is more trunk-directed than FGFR3. Both sides of that comparison were
+      computed by the retired method
+  - claim: Vosoritide should be restarted on these data
+    grade: E
+    basis: >-
+      NOT ESTABLISHED HERE. The three pharmacological lines - EMA L1-L4 null, monkey axial null, rat axial
+      scoliosis and kyphosis and fractures - are untouched and remain the actual case against the arm
+key_refs:
+  - ref_id: bartell2026
+    year: 2026
+    type: primary
+    role: >-
+      the three absolute-trait GWAS in one cohort of 451,921 Europeans from which all compartment
+      coordinates in R318, R323, R406 and R421 are computed
+open_questions:
+  - g_l12_355a
+contradicts:
+  - round318_the_compartment_test_on_546000_people
+last_verified: '2026-08-14'

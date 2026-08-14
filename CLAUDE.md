@@ -428,6 +428,9 @@ and do not collapse to knees-only. Both compartments are live for him.
   **CNP arm is LEG-preferential** — ⛔ **BUT NOT ON THE U:L RATIO, WHICH WAS WITHDRAWN R329 (CORR-346).**
   Vosoritide **L1–L4 null** in the EMA report, axial null outright in monkeys, and in rats the axial dose that
   works also causes scoliosis + kyphosis + fractures — R207. **FGFR3 arm REACHES THE SPINE** (dabogratinib).
+  ⛔ **R421: the GWAS half of that claim is WITHDRAWN — FGFR3 was 73.43% trunk on the retired method and
+  is 49.1% (the median) corrected, while NPR3 corrects to 59.2%. The axial-reach claim now rests ONLY on
+  dabogratinib's direct L4–L6 result, and the compartment argument no longer ranks the arms.**
   Since the residual at BA 14.5+ is trunk-dominant (R274), **the CNP arm is aimed at the spent compartment.**
   ⛔ **"Navepegritide lowers upper:lower segment ratio" IS DELETED as a supporting line.** Three 2026 sources
   in this bibliography give the **SAME non-significant −0.02** for BOTH arms: `cnpmeta2026` ULS −0.02 (95% CI
@@ -2331,6 +2334,65 @@ three weeks ARE ALREADY AVAILABLE.** R361's objection that a joint injection can
 adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that is a direct placement.
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
+
+## ⚖️⚖️⚖️⚖️ R421 — **THE CNP COMPARTMENT NUMBERS WERE ARTEFACTUAL. NPR3 GOES FROM −4.12% TRUNK TO
+## 59.2% AT P=4.9e-90 — the largest compartment artefact in this file, on the gene that carried the
+## verdict. THE VERDICT SURVIVES; THE FGFR3-vs-CNP COMPARISON DOES NOT.**
+## Data `atlas/data/round421/` · tool = R406's, unmodified · extraction `atlas/tools/tbifetch.py`
+
+⛔ **ZERO — THIS CAME FROM AN EXTERNAL AUDIT AND THE AUDIT WAS RIGHT.** R406 proved R318's method is
+**selection on the outcome**, corrected two genes and stopped. **No CNP gene was ever corrected, and
+NPR2 — the receptor vosoritide actually binds — was never assessed in any round.** R318 gave NPR3
+**−4.12%** and SCUBE3 **−4.05%**, the same number to two significant figures; SCUBE3's was already proven
+artefactual and NPR3's was produced by the identical step.
+
+⭐ **THE GUARD, DECLARED BEFORE ANY CNP NUMBER WAS READ, AND PASSED TO SIX DECIMALS.** Regenerated through
+a new extraction path (tabix linear index + HTTP range requests; local htslib has no libcurl), **SCUBE3
+returns 29.5% trunk with sitting +0.045480 at P=1.4e-17** and **CLEC11A 18.0% with sitting +0.021065 at
+P=0.12** — exactly R406's published values. ⭐ **Build resolved empirically, not assumed:
+`base_pair_location` is GRCh38 while the position inside `variant_id` is GRCh37** (R406's SCUBE3 lead is
+chr6:35,313,194 / `6_35280971_T_C`).
+
+| gene | R318 (retired method) | **R421 (corrected)** | sitting-height arm |
+|---|---|---|---|
+| **NPR3** | **−4.12% · LIMB-DOMINANT** | **59.2% · TRUNK** | **+0.036334, P=4.9e-90** |
+| **FGFR3** | **73.43% · TRUNK-DOMINANT** | **49.1% · BOTH** | +0.020796, P=2.2e-28 |
+| NPPC | 21.66% · BOTH | 30.9% · limb | +0.028695, P=2.1e-18 |
+| **NPR2** | ⛔ **never assessed** | **29.8% · limb** | +0.008481, P=2.8e-06 |
+| NPR1 | never assessed | 54.0% · BOTH | +0.008056, P=1.9e-06 |
+
+⭐ **BASE RATE, on the corrected method's OWN 22 genes (R323): median 45.0%, mean 41.0%, range 8.2
+(LTBP2) → 55.2 (TET1), 15 of 22 below 50%.** The corrected method is itself mildly limb-leaning, so the
+**sign carries little and the magnitude carries the information.**
+· **NPR3 at 59.2% EXCEEDS ALL TWENTY-TWO — the most trunk-dominant value the corrected method has ever
+  produced in this atlas.**
+· **NPPC 30.9 and NPR2 29.8 are UNREMARKABLE** — below median, comparable to FBN2 (28.6).
+· **FGFR3 49.1 and NPR1 54.0 are ORDINARY**, sitting at/just above the median.
+
+⭐⭐ **THE RESULT, AND IT IS BETTER THAN EITHER SIMPLE ANSWER: R318 GOT THE RIGHT VERDICT FROM THE WRONG
+GENE.** The axis is **not uniform**, and the split is mechanistically sensible — **NPPC (ligand) and NPR2
+(the signalling receptor the drug binds) are BOTH limb-leaning**, which supports the original conclusion;
+**NPR3 is the CLEARANCE receptor, whose job is to REMOVE CNP, so its compartment need not represent the
+signalling arm** — and it is the one gene R318 built the case on. **The conclusion holds. The evidence
+quoted for it was inverted.**
+
+⛔⛔ **AND THE COMPARISON BETWEEN THE ARMS DOES NOT SURVIVE — BOTH SIDES WERE COMPUTED BY THE RETIRED
+METHOD.** CLAUDE.md's *"FGFR3 arm REACHES THE SPINE"* rests on 73.43%; corrected it is **49.1%, the
+median**. **On corrected numbers NPR3 (59.2%) is MORE trunk-directed than FGFR3 (49.1%).**
+→ ⛔ **DO NOT RESTATE THE COMPARTMENT ARGUMENT AS RANKING ERDAFITINIB ABOVE THE CNP ARM.** The FGFR3
+arm's axial reach still has DIRECT support — **dabogratinib's L4–L6 result** — which this does not touch.
+
+⛔ **WHAT IS UNTOUCHED, SO NOBODY OVERREADS THIS.** The **three PHARMACOLOGICAL lines** against the CNP
+arm stand intact and remain the actual case: **vosoritide L1–L4 null in the EMA report · axial null
+outright in monkeys · the rat axial dose that works causes scoliosis + kyphosis + fractures.**
+⚠ Every lead here is a **±150 kb WINDOW lead, not a gene lead** — NPR2's sits ~102 kb from the gene,
+NPPC's ~125 kb, FGFR3's ~46 kb upstream in a region containing NSD2/LETM1. Units are **inverse-normalised
+SD, not cm.** ⚠ **R317 shares the defect class** — its outcome variable IS the ratio — **and was not
+re-run**, so "four converging lines" (already three after CORR-346) is really **two independent ones**
+until it is.
+
+⭐ **NEW GAP CLOSED AND NEW GAP OPENED:** NPR2 has its **first compartment assignment in any round**.
+Still open: R317's ratio-trait reads have never been redone on absolute traits.
 
 ## 🧬🧬🧬🧬 R420 — **THE ANDROGEN ARM WORKED TO THE END. This atlas had CLOSED it on the WRONG
 ## COMPARATOR and an UNTESTED LIGAND. Reopened it is REAL, DIRECT, MALE-SPECIFIC and DHT-MEDIATED — a
@@ -8444,6 +8506,9 @@ Pulling the **same SNP** from all four files: **corr(deposited SHR beta, SIT−L
 puts it there. R317 called it "trunk" and I printed the contradiction without catching it.
 → **Every gene-by-gene direction in R317 reverses. Its HEADLINE does not — see below.**
 
+⛔⛔ **R421 WARNING — THE TABLE BELOW IS COMPUTED BY THE METHOD R323/R406 RETIRED, AND FOUR OF ITS ROWS
+HAVE NOW BEEN CORRECTED AND MOVED A LOT. NPR3 −4.12% → 59.2%. FGFR3 73.43% → 49.1%. NPPC 21.66% → 30.9%.
+SCUBE3 −4.05% → 29.5%. DO NOT QUOTE A NUMBER FROM THIS TABLE WITHOUT CHECKING R421/R406/R323 FIRST.**
 ⭐⭐ **THE ANALYSIS THAT CANNOT BE WRONG:** use the THREE ABSOLUTE traits, never the ratio. Align each locus
 to its **HEIGHT-INCREASING allele**, then ask where the height goes. 32 loci, same SNP, same cohort:
 **11 TRUNK-dominant · 14 LIMB-dominant · 7 BOTH.**
@@ -8474,7 +8539,7 @@ a **hypertrophic-zone peak**, Open Targets "High-Quality Ligand, Small Molecule 
 essentially **100% leg**; NPPC 78% leg. No sign convention involved. **FOUR converging lines** (⛔ was five —
 the navepegritide ↓U:L line was **WITHDRAWN R329/CORR-346**, see LIVE COMPOUNDS): vosoritide **L1–L4 NULL**
 (EMA) · axial null in monkeys · rat axial dose → scoliosis+kyphosis · this.
-✓ **AND THE OTHER STACK ARM IS IN THE RIGHT COMPARTMENT: FGFR3 = 73% TRUNK** — independently supporting that
+⛔ **WITHDRAWN R421 — FGFR3 corrects to 49.1%, the median. Formerly read as: FGFR3 = 73% TRUNK** — independently supporting that
 the FGFR3 arm reaches the spine (dabogratinib lengthens L4–L6). **He is on an FGFR inhibitor.**
 ⚠ **CORR-195 still governs** — his knees are open at BA16, off the population distribution. This is a
 **selection criterion for ADDITIONS**, not an instruction to stop vosoritide.
