@@ -2291,6 +2291,54 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🎯🎯🎯🎯🎯🎯 R383 — **THE DECISION. SAG, NOT HHIP — AND THE REASON IS THAT SAG IS *CHEAPER AND FASTER*
+## THAN HHIP, BECAUSE THE HARD PART (HAVING A MOLECULE) IS ALREADY DONE.**
+
+⭐⭐⭐ **ONE — THE COMPARISON, STATED PLAINLY.** Both are the same axis at different depths. What separates
+them is not biology, it is **how much of the object already exists**:
+| | **SAG DEPOT** | **HHIP** |
+|---|---|---|
+| the molecule | ✅ **EXISTS** — 490 Da, CAS 364590-63-6, published synthesis, ≥98% from 6 vendors | ⛔ **DOES NOT EXIST IN ANY SPECIES** |
+| the vehicle | ✅ **FDA-APPROVED** fibrin sealant, already loaded with a SMO agonist (`he2024sag`) | ⚠ demonstrated for oligos (`posey2017`, `yuan2024`) |
+| the procedure | ✅ **ESTABLISHED IN HUMANS** — intraosseous subchondral knee injection, 24 studies, 1,109 patients | same |
+| the dose | ✅ **CALCULATED** — 0.5 mg/depot, 3 cross-checks agreeing | ✅ ~250–300 mg/wk (R382) |
+| **a bone-LENGTH endpoint** | ✅ **THE ONLY AGENT ON THIS AXIS THAT HAS ONE** — femur +2.75/+2.64/**+3.63%**, still widening at 6 mo, 6/6, 9/9, 8/8 | ⛔ none for any agent |
+| the gap | **GMP material + a tox package** — a contract job on a small molecule with a published route | **discover, build, validate, then GMP + tox** |
+| honest cost / time | **~$200–500k, 6–12 months** | **$1–3M, 3–4 years** (R382: steps 0–2 alone are 12–24 mo) |
+→ ⭐ **SAG IS ROUGHLY 4× CHEAPER AND 3× FASTER, AND IT IS THE ONLY ONE WITH A LENGTH ENDPOINT. GO SAG.**
+⛔ **AND THEY ARE NOT COMPETITORS** — R380: SAG *induces* HHIP transcriptionally while degrading it
+post-translationally. HHIP removal is the better long answer precisely because it escapes that loop. **SAG
+now, HHIP as the programme behind it.**
+
+⭐⭐ **TWO — AND A NEW SHELF WAS FOUND AND TRIAGED IN THE SAME ROUND: THE OSTEOGENIC OXYSTEROLS.**
+`corman2012`: a genuine **SMO-agonist SAR series** — side-chain oxysterols, best analogue **23(R)-OHC at
+EC50 0.54–0.65 µM**, ~3× selective over LXR, osteogenic. ⭐ **This partly corrects R368/R371's "there has
+never been a SMO agonist programme"** — true of the ChEMBL-indexed oncology series, false of the oxysterol
+literature, which has SAR, analogues and formulations. `buser2017`: **Oxy133, 5–20 mg/site, rat spinal
+fusion, 100% fusion vs 0% control**, BV/TV comparable to rhBMP2, with liposome and scaffold formulations.
+⛔⛔ **AND IT IS THE WRONG SHELF, FOR THREE REASONS.** ① **~200× weaker than SAG** (0.54 µM vs 3 nM) and only
+3× over LXR. ② **The field's entire endpoint is BONE FORMATION AND FUSION** — a molecule optimised to fuse
+bone is the last thing to put near an open physis, and R365 says vascular invasion/ossification IS closure.
+③ **ZERO oxysterol papers report a growth-plate or bone-LENGTH endpoint in any species**, and the only
+oxysterol–cartilage literature is osteoarthritis, where **25-hydroxycholesterol induces APOPTOSIS in primary
+chondrocytes.** → **Recorded as searched-and-rejected, not as a lead. SAG stays the molecule.**
+
+🎯 **THREE — SO WHAT DO WE ACTUALLY DO, IN ORDER, GIVEN A 1–3 YEAR WINDOW.**
+**NOW, ZERO COST, THIS WEEK** — these are the only things that touch the window:
+· **anastrozole adherence** — closure proceeds above ~55–73 pmol/L, he is 10–25× below it. R363 calls this
+  the highest-leverage item in the file, and it is a behaviour, not a prescription.
+· **the sterol-layer subtractions** — already confirmed clear ("no none"), keep them clear; **cortisol is the
+  one CRD antagonist that is endogenous and modifiable**, and it has never been measured here.
+· **ΔBA/ΔCA by BoneXpert on serial hand films**, standing AND sitting height at a fixed time of day. This
+  decides whether a pool agent is worth chasing for him **at all**, and it is still not done.
+· **the untaken bloods** — ultrasensitive E2 (LC-MS/MS), HOMA-IR, TSH/fT4/fT3, serum inorganic sulfate,
+  25-OH-D, lipid panel, CRP/IL-6 — **and his own exome against the 207 signed height genes.**
+**IN-WINDOW, OBTAINABLE:** oral sodium sulfate (gated on the sulfate assay) · navepegritide substitution ·
+infigratinib once it launches (~2027, off-label under an ACH label) · **distraction osteogenesis, ~16 cm,
+works AFTER fusion so it never competes for the window.**
+**THE PROGRAMME:** **fund the SAG GMP batch + tox.** That is the single item that converts the best-evidenced
+pool lever in this atlas from a paper into a thing. **Everything else on the hedgehog axis waits behind it.**
+
 ## 🎯🎯🎯🎯 R382 — **THE GAPMER DOSE, AND WHICH ROUTE TO ACTUALLY DO.** Run
 ## `atlas/tools/round382_hhip_route_cost_and_gapmer_dose.py`
 
