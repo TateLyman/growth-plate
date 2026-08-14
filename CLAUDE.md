@@ -2291,6 +2291,91 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ✅✅✅ R386 — **BOTH OPEN ISSUES RESOLVED (ONE CLOSED, ONE BYPASSED), A 1000× UNITS BUG IN R372 FOUND,
+## AND THE DOSE RECOMPUTED AFTER VOSORITIDE WAS DROPPED.** Run
+## `atlas/tools/round386_sag_dose_source_strength_and_clearance_bound.py`
+
+⛔ **ZERO — A 1000-FOLD UNITS BUG IN R372.** It computed nmol/µL and printed the result labelled **µM**.
+**nmol/µL is mM.** The rat epiphyseal exposure was reported as **~251× EC50**; the true figure is
+**~250,000× EC50** (752 µM averaged over a 19 µL epiphysis). **Every "× EC50" in R372 section 3 is 1000× low.**
+
+⭐⭐⭐ **ONE — ISSUE 2 IS CLOSED BY REASONING, AND THE WORRY RESTED ON A FALSE REQUIREMENT.**
+R385 asked whether a setting fibrin gel *distributes* through cancellous bone or forms a plug at the cannula
+tip. **A DEPOT IS SUPPOSED TO BE A LOCALISED BOLUS THAT ELUTES. IT DOES NOT NEED TO SPREAD — THE DRUG
+DISTRIBUTES, THE GEL DOES NOT.** Three lines close it:
+· `he2024sag`'s own gel shows **triphasic release over 200 h with only 14.2% out by day 8** — a reservoir
+  behaving exactly as a depot should.
+· `trompet2024`'s agarose bead was a **non-spreading point source 1.5 µL in volume**, and it produced the
+  only length gain on this axis.
+· ⭐ **And the physics agrees: for a sphere of radius a, C(r) = C_source × a/r. A COMPACT SOURCE IS FINE** —
+  see below, it delivers >13,000× EC50 out to 20 mm at even the lowest dose.
+→ **Setting at the tip is the DESIGN, not the failure.** The only real handling requirement is that it sets
+**at the target and not in the cannula** — solved by DUPLOJECT's mix-at-the-tip geometry, priming outside the
+patient, and injecting in one pass without dwelling.
+
+⭐⭐⭐ **TWO — THE RIGHT SCALING IS SOURCE STRENGTH, NOT FILL VOLUME, AND IT SUPERSEDES R372.**
+What must be matched across species is **C_source × a**, not total payload and not average tissue
+concentration. Rat bead: **9.52 mM × 0.71 mm = 6.76 mM·mm.** Human 2 mL depot, radius **7.82 mm**:
+| gel | C·a | vs rat | at the plate (10–20 mm out) |
+|---|---|---|---|
+| 100 µM | 0.78 | 8.65× low | 78 → 39 µM = **26,000–13,000× EC50** |
+| **300 µM** | **2.34** | **2.88× low** | 235 → 117 µM = **78,000–39,000× EC50** |
+| 1000 µM | 7.82 | **0.87× — rat-matched** | 782 → 391 µM = 260,000–130,000× EC50 |
+⭐ **1000 µM in 2 mL matches the rat bead almost exactly. AND THE DEPOT IS NOT POTENCY-LIMITED AT ANY DOSE —
+the choice is about DURATION and SAFETY MARGIN ON THE Ihh BAND, not about reaching threshold.**
+
+⭐⭐ **THREE — ISSUE 1 (CLEARANCE) CANNOT BE CLOSED BY REASONING, BUT IT CAN BE BYPASSED.** The two honest
+bounds are **14.7 µg** (fill a 100 mL epiphysis once at 100× EC50) and **37 mg per epiphysis** (match the
+rat's average tissue concentration) — **a 2,506-fold span, and the entire gap is the unmeasured clearance.**
+⭐ **THE FIX IS TO MEASURE THE EFFECT INSTEAD OF THE PARAMETER. `haraguchi2025`'s plate is 41–52% LARGER IN
+AREA, and physeal thickness is directly readable on MRI. → DOSE-ESCALATE AGAINST AN IMAGING PD READOUT:
+place the pulse, measure physeal thickness at 6 weeks, escalate at the next pulse if it has not moved.**
+That converts an unmeasurable PK parameter into a measured PD one.
+⚠ **AND THE CONTROL THAT MUST RIDE WITH IT: a widened plate with NO height gain is charge-without-discharge
+(failure mode #1, 8 prior instances). Physeal width is TARGET ENGAGEMENT, NOT EFFICACY. Both must move.**
+
+⭐⭐⭐ **FOUR — THE DOSE AFTER VOSORITIDE WAS DROPPED.** R384 set the low column because **two** arms lowered
+ERK and therefore raised chondrocyte Ihh (`zhou2015a`) — erdafitinib at the receptor, vosoritide at RAF-1
+inside the ERK arm. **With vosoritide gone only erdafitinib remains on that node — but erdafitinib is the
+DOMINANT contributor, sitting upstream of ERK *and* CREB (R263/R265), while vosoritide acted only inside the
+ERK arm. So the baseline Ihh elevation falls, BY LESS THAN HALF.**
+· ✓ **SCFE risk drops from quadruple- to triple-stacked** — vosoritide contributed 3 of dauber2026's cases.
+· ⛔ **THE h_term MULTIPLIER IS GONE.** SAG × vosoritide was the clean multiplicative pair in H = N × A ×
+  h_term. **A bigger pool now has a smaller per-cell output to multiply against — this is a real loss to the
+  expected gain.**
+· ⭐ **AND IT MAKES SAG MORE IMPORTANT, NOT LESS.** The remaining stack is GH (throughput, priced at ≈0
+  attained height), erdafitinib (λ and h_term via CREB) and anastrozole (the period). **NOTHING TOUCHES N.
+  SAG IS NOW THE ONLY POOL ARM IN THE ENTIRE STACK, AND THE ONLY GENUINELY ADDITIVE TERM.**
+🎯 **OPERATIVE DOSE: 300 µM IN 2 mL = 337.8 µg SAG·2HCl PER DEPOT = 2.70 mg PER BILATERAL PULSE**
+(spike **60 µL** of 10 mM stock per 2 mL gel, 3.0% v/v). Justified three ways: one fewer Ihh-raising arm than
+R384 assumed · still **2.88× below** the rat-matched source strength, the deliberate margin for erdafitinib's
+residual Ihh elevation · inside `he2024sag`'s published in vivo range.
+⚠ **REVERSE RULE: IF A CNP ANALOGUE IS EVER RESTARTED, DROP BACK TO 100 µM** — that restores the second
+ERK-lowering arm and moves him back up the Ihh band.
+
+🧷 **FIVE — THE CONSOLIDATED PROTOCOL, EVERY PARAMETER FIXED.**
+· **AGENT** SAG dihydrochloride, MW 562.98, ≥98% HPLC + CoA · **STOCK** 10 mM in sterile water (5.63 mg/mL),
+  0.22 µm filtered · **one 1 mg vial = 178 µL = ~3 depots at the operative dose**
+· **VEHICLE** Tisseel 2 mL kit, FIBRINOTHERM ≤5 min, DUPLOJECT, **spike the FIBRINOGEN arm**, 60 µL/2 mL
+· **ACCESS** 11–13 G trocar-tip cannula, image-guided, trajectory planned on MRI/CT to stay **entirely
+  epiphyseal — never cross the physis** · extended applicator passed **down the cannula lumen** (18 G OD
+  1.27 mm inside 11 G ID 2.4 mm) · **inject slowly** (marrow-fat embolism)
+· **CONFIRM BEFORE DRUG** contrast under fluoroscopy + ultrasound Power Doppler: **thin sheet-like
+  subcortical blush = correct · compact ball-shaped hotspot = intramedullary misplacement**
+· **SITES** distal femur + proximal tibia, **bilaterally**, 2 depots each = **8 depots**. ⛔ **NEVER the
+  proximal femur** — the SCFE site · **ANAESTHESIA** general or deep sedation
+· **PULSE** 3 weeks (the depot's own measured life) · **INTERVAL** ≥3 months, preferably 6 · **2–4 pulses/yr**
+· **PD GATE at 6 weeks** MRI physeal thickness; escalate to 1000 µM next pulse only if it has not moved
+· **SURVEILLANCE** frog-leg lateral pelvis **q3 months** (median erdafitinib SCFE onset 137 d) · any hip,
+  groin, thigh or knee pain or limp = **immediate imaging** · knee MRI 6 and 12 mo for width and bar
+  formation · imaging for enchondroma/osteochondroma · BoneXpert ΔBA/ΔCA · standing **and sitting** height at
+  a fixed time of day · lateral T-L film + DXA
+· **STOP IF** plate widens **without** height gain · ΔBA/ΔCA accelerates · any hip pain · any new
+  cartilaginous lesion
+⛔ **THE ONE REMAINING BLOCKER IS UNCHANGED AND IS NOT SCIENTIFIC: the material is not qualified for
+implantation.** Sterile filtration removes bioburden; there is no endotoxin spec, no impurity qualification
+and no SMO agonist has ever been given to a human.
+
 ## 🧷🧷🧷🧷 R385 — **THE ACTUAL PROCEDURE, SPECIFIED.** Needle, cannula, reconstitution, spiking volumes,
 ## placement confirmation, and the two things that can go mechanically wrong.
 ## Run `atlas/tools/round385_sag_depot_preparation_arithmetic.py`
