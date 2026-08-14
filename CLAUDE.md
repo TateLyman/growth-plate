@@ -2412,6 +2412,47 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## ⛔⛔⛔⛔ R407 — **WHY OSTEOLECTIN WORKED, AND WHY IT WILL NOT WORK HERE. The disqualifying experiment is
+## in the SAME PAPER, two paragraphs above the result R403 promoted it on.**
+
+⭐ **WHY IT WORKED, from the full text.** **200 µg/kg/day SUBCUTANEOUS, DAILY, FROM 2 TO 8 WEEKS OF AGE** —
+the whole juvenile growth period — wild-type males and females, n=6/sex/group → **FEMURS 3–4% LONGER.**
+Mechanism measured, not assumed: binds **integrin α11** → total and active **β-catenin** up, **Alpl/Lef1/Runx2**
+up → **raises EdU incorporation in Aggrecan⁺ GROWTH PLATE CHONDROCYTES.** Authors' own words: it promotes
+elongation **by increasing the proliferation of growth plate chondrocytes.**
+
+⛔⛔ **AND THE DOSE-FINDING EXPERIMENT IS THE ANSWER TO "WILL IT WORK HERE." IN 8-WEEK-OLD MICE — WHEN
+ELONGATION IS NEARLY COMPLETE — 50, 100, 200 AND 400 µg/kg/day FOR A FULL MONTH HAD *NO EFFECT* ON FEMUR
+LENGTH OR VERTEBRA LENGTH.** The authors state the reason in the same sentence: *bone elongation is largely
+complete by 8 weeks.* **Four doses, eightfold range, a month of daily injection, and the length endpoint did
+not move.** That is the closest available model of this subject, and it is the arm that failed.
+⛔ **AND IT IS NOT A DOSING PROBLEM, BECAUSE THE MECHANISM FOLLOWS THE SAME CLOCK: EdU in growth-plate
+chondrocytes was HIGHER at 4 wk and SIMILAR TO CONTROL at 8 wk.** There is no dose at which a proliferation
+agonist acts on a compartment that has stopped dividing.
+
+⛔ **SECOND — COMPARTMENT, MEASURED NOT INFERRED: LS3 VERTEBRA LENGTH DID NOT DIFFER EVEN IN THE JUVENILES**,
+in the same animals whose femurs grew 3–4%. R406 inferred limb-dominance from a common variant; **this is the
+direct axial null.** The residual here is trunk-dominant.
+
+⛔ **THIRD — THE TERM IT MOVES.** In clonal culture osteolectin **did NOT change the percentage of chondrocytes
+forming colonies — it increased COLONY SIZE.** Divisions per progenitor, **not progenitor number**. That is
+**amplification/throughput, not N** — and R360 showed that once the AI has turned the terminus from a DATE into
+a BUDGET, raising throughput reaches the terminus sooner without adding height. **This subject is precisely
+the case where a throughput agent is worth least.**
+
+⛔ **FOURTH — the effector is WNT ACTIVATION**, confirmed mechanistically here (β-catenin, Alpl, Lef1, Runx2).
+R281 puts the canonical-Wnt optimum **BELOW** wild type and R356 found the human resting zone's own programme
+is made of **secreted Wnt ANTAGONISTS** (SFRP5, FRZB, SMOC1). Wrong side of the band.
+
+✓ **WHAT SURVIVES.** The target is real and human-anchored; **ITGA11 is cartilage-enriched in the human plate
+(61.8 CPM, ratio 2.76)**; the protein is purchasable; and the HED is trivially small — **16.2 µg/kg/day ≈
+0.97 mg/day at 60 kg, ~27 mg for a 4-week course.** ⭐ **As the ONLY demonstration in this atlas that supplying
+a secreted factor lengthens a NORMAL bone, it stands. As a candidate for THIS subject it fails — on the
+paper's own negative control, not on an argument.**
+⭐ **THE LESSON: R403 promoted it on ONE positive sentence from an abstract; the disqualifying dose-response
+was two paragraphs above the result. CORR-320/CORR-343 in a new place — the dropped arm is the one that runs
+against the headline, and here it was the entire adult experiment.**
+
 ## 📐📐📐 R406 — **THE COMPARTMENT QUESTION RESOLVED. R318's "SCUBE3 IS ~104% LEG" IS WRONG — the corrected
 ## figure is 29.5% TRUNK with the trunk arm at P=1.4e-17 — AND OSTEOLECTIN TURNS OUT TO BE *MORE* LIMB-DOMINANT
 ## THAN SCUBE3.** Run `atlas/tools/round406_scube3_clec11a_compartment_on_standing_height_leads.py`
