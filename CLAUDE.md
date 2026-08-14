@@ -646,7 +646,8 @@ zones and mass, never length).
 
 ## LIVE FRONTIER — the only things worth a round
 
-- ⛔ **CAN WE DOSE HHIP AND ADD IT? NO — R294, and this is the operative answer.** No HHIP-directed agent
+- ⛔ **CAN WE DOSE HHIP AND ADD IT? — R294 said NO; ⭐ R376 NARROWS IT TO "NOT YET, AND THE GAP IS THE
+  MOLECULE, NOT THE MODALITY". Read R376 before repeating R294's line.** No HHIP-directed agent
   exists in any species. The three handles are a charge-reversal MUTANT PROTEIN, a homology-PREDICTED pocket
   with no ligand, and an Fc-HHIP that runs the WRONG WAY. **The target is the best-validated in the atlas
   and it is not available.** Do not re-derive this as if it were new.
@@ -2268,6 +2269,83 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ⭐⭐⭐⭐⭐ R376 — **HHIP IS NO LONGER UNDRUGGABLE-BY-MODALITY.** Eight lowering routes verified: five die
+## on the free local query, one has NO PRIMARY, one makes R375 worse — and the direct route has a VEHICLE.
+
+⛔ **ONE — THE FIVE INDIRECT ROUTES ALL FAIL CORR-327, ON DATA ALREADY ON DISK.** Purity-corrected human
+growth plate (R344, 5 purest vs 5 most blood-contaminated), calibrators in the same panel — COL2A1 8.92,
+ACAN 4.65 · PTPRC 0.00, HBB 0.00 · and the three ratios that already killed drugs here (AGTR1 **0.03**
+losartan, MME 0.17 sacubitril, SOST 0.35 romosozumab):
+| route | target | pure vs contam | ratio | verdict |
+|---|---|---|---|---|
+| **finerenone / spironolactone** | NR3C2 | 7.1 vs 130.4 | **0.05** | dead — and **CYP11B2 0/12**, the plate makes no aldosterone |
+| **rosiglitazone / TZD** | PPARG | 1.3 vs 54.7 | **0.02** | dead — most contaminant-leaning gene in the panel |
+| **liraglutide / GLP-1RA** | GLP1R | 0.3 | 0.66 | dead — absent |
+| **canagliflozin** | SLC5A2 | 0.3 | 0.48 | dead — reproduces R313 on a second dataset |
+Run `atlas/tools/round376_hhip_lowering_route_receiver_test.py`. **The mineralocorticoid arm joins the RAAS
+arm as absent from this tissue.** (PPARD 27.4 is the plate's PPAR and is not what a TZD hits.)
+
+⛔⛔ **TWO — AND THE FINERENONE CLAIM HAS NO PRIMARY AT ALL.** Europe PMC returns **ZERO** records for HHIP
+with aldosterone / mineralocorticoid / finerenone / spironolactone in title or abstract. The five free-text
+co-mentions are **all diabetic-kidney-disease REVIEWS** with the two words in different sections. **No
+experiment shows aldosterone induces HHIP or that an MRA blocks it.** What the renal literature actually
+holds is the OPPOSITE geometry — **Hhip is UPSTREAM of Sglt2** (`zhao2025b`), and canagliflozin acts
+downstream without lowering HHIP.
+
+⚠ **THREE — TZD AND GLP-1 ARE REAL BUT THIN, AND BOTH ARE THE WRONG POOL.** The whole primary basis for
+"TZDs lower HHIP" is **one line of an RNA-seq table in MEIBOMIAN GLAND epithelial cells** (`kim2019ppar`);
+no TZD has ever been shown to lower *circulating* HHIP (query returns zero). GLP-1 is better sourced —
+`xu2023hhip`, 452 women, 49 on liraglutide × 6 wk, **circulating HHIP fell** — but:
+⛔ **CIRCULATING HHIP IS NOT PLATE HHIP.** The plate makes its own (68.8 CPM, 4.65× enriched) and
+`griffiths2021` shows HHIP's potency **REQUIRES glycosaminoglycan binding**, heparin driving 50 kDa → 6 MDa
+oligomers. **A protein that clusters on local heparan sulfate to work is not set by a serum level.**
+⛔ And the serum literature **cannot agree on a sign**: `xu2023hhip` + `lei2024hhip` say RAISED in obesity /
+metabolic syndrome, `chou2021hhip` says LOWERED in overweight/obese. **Three cohorts, two directions.**
+⛔ Both drugs fail on stack grounds anyway — metformin is a **POOL** cost (R366); a GLP-1RA in a lean
+adolescent buys weight loss, which suppresses growth.
+
+✓⛔ **FOUR — THE SMO-AGONIST CLAIM IS VERIFIED AND IT MAKES R375 WORSE, NOT BETTER.** `kwong2014` (Nat
+Commun): Hhip inhibits **non-cell-autonomously**, but **activation of Smoothened drastically increases Hhip
+internalisation and degradation cell-autonomously**, and Hhip cannot cell-autonomously inhibit the
+consequences of Smo activation. ⛔ **R375's whole reason HHIP blockade is the true maximum is that it leaves
+PTCH1 — itself a GLI target, i.e. the pathway's own feedback — INTACT. If SAG also destroys Hhip it removes
+a second brake as well as bypassing the first. THE AGONIST HAS EVEN LESS ENDOGENOUS RESTRAINT THAN R375
+ASSUMED, WHICH IS THE STRONGEST ARGUMENT YET FOR PULSING IT.**
+
+⭐⭐ **FIVE — THE CORRECTION TO THIS FILE, AND IT IS THE USEFUL PART. I WAS ABOUT TO KILL THE OLIGO ROUTE ON
+THIS ATLAS'S OWN PHYSICS AND THE EXPERIMENT HAS BEEN DONE.** Donnan (R371): FCD −0.19 to −0.35 M, a 21-mer
+duplex ≈ 40 negative charges, enrichment = r^z → **exclusion by 10–17 ORDERS OF MAGNITUDE**, the exact
+inverse of why CPC+14 works. **`posey2017` (Mol Ther, Ionis chemistry on the author list) states the
+obstacle in its own abstract — cartilage is avascular and considered inaccessible — then reports SUCCESSFUL
+DELIVERY OF ANTISENSE OLIGONUCLEOTIDES TO CARTILAGE in vivo, target mRNA down, chondrocyte death down,
+PROLIFERATION PARTIALLY RESTORED in the growth plate.**
+⭐ **THE RECONCILIATION, AND IT DECIDES WHAT TO BUILD: an equilibrium partition coefficient describes FREE
+DIFFUSION, and a phosphorothioate gapmer is protein-bound and enters by ENDOCYTOSIS. THE DONNAN ARGUMENT
+DOES NOT APPLY TO A PS-ASO OR TO A PARTICLE-PACKAGED PAYLOAD — and the modality for HHIP is an ASO, not a
+naked siRNA.**
+
+⭐⭐⭐ **SIX — AND THE siRNA VEHICLE EXISTS, WAS BUILT FOR THIS EXACT INDICATION, AND WAS NEVER IN THIS FILE.**
+`yuan2024` (Adv Sci): exosomes from **CHONDROCYTES** displaying the collagen-II peptide **WYRGRL fused to the
+N-terminus of LAMP2b**, loaded with **siRNA + growth hormone**, **TAIL VEIN, 300 µg every 3 days**,
+bioluminescence showing enhanced cartilage targeting with signal **decreased in liver and other organs**.
+⭐ **It reaches WYRGRL independently of `ye2026`** (chondrocyte-membrane PLGA, same peptide, same route,
+small-molecule payload). **TWO GROUPS, TWO PARTICLE CHEMISTRIES, ONE PEPTIDE, BOTH REACHING THE GROWTH PLATE
+SYSTEMICALLY — AND ONE CARRIES A NUCLEIC ACID.**
+✓ **The receiver is there: AGO2 55.4, DICER1 62.7, TARBP2 7.4, all 12/12.** ⛔ **ASGR1 3.2 / ASGR2 1.8 —
+so a GalNAc conjugate, the standard systemic siRNA format, is aimed at a receptor this tissue lacks.**
+
+⭐ **SEVEN — THE CONSTRUCT, EVERY COMPONENT EXISTING SEPARATELY: AN HHIP-DIRECTED PS-ASO GAPMER, OR HHIP
+siRNA IN A WYRGRL CHONDROCYTE EXOSOME, DOSED SYSTEMICALLY, WITH A CALIPER ON FEMUR AND VERTEBRAE.** It is
+the closest pharmacological analogue of `haraguchi2025` that exists — and it inherits R375's decisive
+property: **removing a SECRETED antagonist leaves the PTCH1 feedback intact, so unlike a SMO agonist IT DOES
+NOT HAVE TO BE PULSED.** Gap `g_l12_376a`.
+⛔ **WHAT IS STILL MISSING:** no HHIP-directed oligonucleotide has been dosed **in vivo in any species**
+(the published knockdowns are in vitro, cancer/COPD cells) · **no anti-HHIP function-blocking antibody
+exists** — the only anti-hedgehog antibody in the literature, **5E1, binds SHH not HHIP** · HHIP has **no
+human ChEMBL target record** (R334) · `yuan2024`'s stature result is **qualitative, no length number** ·
+`posey2017` is a rescue in a mutant (CORR-203 applies to efficacy, not to delivery) · and HHIP is
+two-sided — tumour suppressor, top COPD locus.
+
 ## 🎯🎯🎯🎯🎯🎯🎯🎯 R375 — **THE MAXIMUM-EFFECT ANSWER, AND IT IS *NOT* SYSTEMIC.** The ceiling on the
 ## systemic route is measured, sustained Gli1 is safe ONLY from removing a SECRETED antagonist, and the
 ## systemic arm that actually exists is not a drug — it is the STEROL OCCUPANCY OF THE SMO CRD.
@@ -2389,9 +2467,13 @@ PROMOTE TUMOUR FORMATION**, despite hedgehog's neoplasia association. Same sched
   is a set of subtractions with no length endpoint anywhere.
 
 🧭 **THE RANKING — THIS IS THE ACTUAL ANSWER TO "MAXIMUM EFFECT":**
-1. **HHIP FUNCTION-BLOCKING BINDER — the true maximum.** +9.92 cm human pLoF; `haraguchi2025` holds a
-   normal plate open to 53 wk with zones ORDERED; and because it sits **above** Ptch1 it keeps the feedback
-   that makes sustained activation safe. **NO AGENT IN ANY SPECIES.**
+1. **HHIP KNOCKDOWN OR FUNCTION-BLOCKING BINDER — the true maximum.** +9.92 cm human pLoF; `haraguchi2025`
+   holds a normal plate open to 53 wk with zones ORDERED; and because it sits **above** Ptch1 it keeps the
+   feedback that makes sustained activation safe — so it need not be pulsed. ⭐ **R376 UPGRADED THIS FROM
+   "NO AGENT IN ANY SPECIES" TO A CONSTRUCT: the ASO/siRNA modality is demonstrated to reach growth-plate
+   cartilage in vivo (`posey2017`, `yuan2024`), the WYRGRL vehicle carries a nucleic acid there from a tail
+   vein, and the RNAi machinery is present. WHAT IS MISSING IS THE MOLECULE ITSELF — no HHIP-directed
+   oligonucleotide has ever been made or dosed.**
 2. **LOCAL PULSED SMO-AGONIST DEPOT IN THE SOC — the obtainable second-best.** The only length endpoint on
    this axis; the human delivery procedure already exists; chemistry purchasable. **Blocked on GMP material
    alone.**
