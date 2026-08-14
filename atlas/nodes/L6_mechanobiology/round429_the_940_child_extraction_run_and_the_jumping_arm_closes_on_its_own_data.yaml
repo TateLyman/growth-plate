@@ -1,0 +1,220 @@
+id: round429_the_940_child_extraction_run_and_the_jumping_arm_closes_on_its_own_data
+name: The 940-child extraction run to the end - nine arms with numbers, an n-weighted mean of minus 0.13 cm, and the dose test failing inside the one study that contains a dose gradient
+aliases:
+  - R429
+  - the jumping extraction
+  - miao2025 height extraction
+  - does impact loading add height in children
+type: dataset
+layer: L6
+stub: false
+
+summary: >
+  R426 found that twelve controlled paediatric loading trials covering 940 children had all measured
+  height and none had analysed it, and called the extraction the cheapest way to settle the arm.
+  R427 then withdrew R426's reading of fuchs2001 as a null - Table 1 gives jumpers +3.6 cm against
+  controls +3.1 cm, an untested +0.5 cm in the favourable direction - and left the arm UNDECIDED.
+  R428 began the extraction with three of twelve and reported one untested positive against two
+  stated nulls without numbers, explicitly too little to lean either way. The operator then supplied
+  seven papers. This round finishes the job.
+
+  THE HEADLINE IS THAT THE ARM CLOSES, AND IT CLOSES ON ITS OWN DATA RATHER THAN ON ABSENCE.
+  Nine arms now carry an extractable between-group height estimate. The seven JUMPING arms give
+  +0.50, -0.50, -0.50, +0.10, -0.30, +0.20 and -0.60 cm; four of seven are negative, the median is
+  -0.30 and the sample-size-weighted mean across 890 children is -0.127 cm. There is no signal, and
+  such sign as there is runs the wrong way.
+
+  THE SINGLE MOST INFORMATIVE ROW IS THE ONLY ONE THAT REPORTS A CHANGE SCORE WITH AN INTERVAL.
+  macdonald2007 (Action Schools! BC, 222 analysed children, 16 months, the largest participant-months
+  in the set) prints height CHANGE with a 95 per cent CI for every arm, so a between-group interval is
+  recoverable rather than imputed: boys +0.20 cm (95 per cent CI -0.37 to +0.77) and girls -0.60 cm
+  (-1.21 to +0.01), with a minimum detectable effect at 80 per cent power of 0.81 and 0.87 cm. That
+  excludes a gain larger than about 0.8 cm in boys, and in girls the interval lies almost entirely
+  below zero.
+
+  AND THE PRE-DECLARED DOSE TEST FAILS INSIDE THE ONE STUDY THAT CONTAINS A DOSE GRADIENT.
+  R428 declared in advance that a real effect should scale with mechanical dose and that unordered
+  estimates would kill the arm regardless of the pooled sign. dowthwaite2019 split its intervention
+  by observed effort x participation minutes into LO (mean 774) and HI (mean 1561) against a control
+  school - a 2x internal gradient - and per month of inter-scan interval the ordering is LO 0.508 >
+  CONTROL 0.465 > HI 0.422 cm per month, with the GROUP*TIME interaction for height tested and null
+  at p>0.12. Double the dose, the lowest growth. Across studies no ordering by ground reaction force
+  survives either: fuchs2001 at 8.8 body weights is the highest documented dose and gives the largest
+  positive estimate, but weeks2008 is a high-force protocol and is the most negative pair, and the
+  lowest-dose trial in the set (nichols2008, 2-3 BW per nguyen2018) is one of three papers not obtained.
+
+  THREE CORRECTIONS TO MY OWN PRIOR ROUNDS. R428 reported that the twelve sample sizes sum to 886
+  rather than 940 and recorded the discrepancy as unresolved - it is resolved and I was wrong: three
+  of the twelve (Arnett, Dowthwaite, Thein-Nissenbaum) contribute TWO intervention arms against one
+  shared control, and counting both makes the total exactly 940. R428 also reported the resistance
+  fraction as four studies and 135 participants with jumping-only at about 698 - the correct figures
+  are 177 and 763. And macdonald2007, already in this bibliography since an earlier round, IS the
+  review's "Macdonald 2008"; the duplicate check caught it before a second entry was written.
+
+  WHAT THE ROUND DOES NOT CLAIM. Every point estimate here is inside the diurnal stature swing
+  (about 2 cm standing and 0.3-0.8 per cent of sitting height), and not one of these trials
+  standardised time of day, because height was a covariate for bone analysis and never an outcome.
+  So this literature is noise-limited below the effect it would need to resolve. A null from it is
+  a null; a positive from it never could have been trusted. The honest verdict is that impact
+  loading has no demonstrable effect on stature at the doses and durations paediatric trials have
+  used, and that this body of evidence is structurally incapable of demonstrating one.
+
+quantitative:
+  - parameter: Jumping arms with an extractable between-group standing-height estimate
+    value: 7
+    unit: arms
+    species: human
+    source_ref: miao2025
+    note: >
+      fuchs2001; weeks2008 boys and girls; nogueira2014; nogueira2015; macdonald2007 boys and girls.
+      Point estimates (intervention minus control, cm): +0.50, -0.50, -0.50, +0.10, -0.30, +0.20, -0.60.
+  - parameter: Sample-size-weighted mean between-group standing-height difference, jumping arms
+    value: -0.127
+    unit: cm (intervention minus control)
+    species: human
+    source_ref: miao2025
+    note: >
+      Weighted by completer n in each arm, total n=890. Simple mean -0.157 cm, median -0.30 cm,
+      four of seven arms negative. Computed in R429 from the extracted arm-wise tables; the constituent
+      trials never performed this comparison.
+  - parameter: Macdonald 2008 boys, reconstructed between-group height-change difference
+    value: 0.20
+    unit: cm (95 per cent CI -0.37 to +0.77)
+    species: human
+    source_ref: macdonald2007
+    note: >
+      Intervention n=145 change +6.8 (6.5, 7.2) cm; control n=64 change +6.6 (6.2, 7.1). SE of the
+      difference 0.291 cm; minimum detectable effect at 80 per cent power 0.81 cm. This is the only
+      arm in the 940 from which a between-group interval can be recovered rather than imputed.
+  - parameter: Macdonald 2008 girls, reconstructed between-group height-change difference
+    value: -0.60
+    unit: cm (95 per cent CI -1.21 to +0.01)
+    species: human
+    source_ref: macdonald2007
+    note: >
+      Intervention n=136 change +7.5 (7.2, 7.9) cm; control n=65 change +8.1 (7.6, 8.6). SE 0.311 cm,
+      MDE at 80 per cent power 0.87 cm. The interval lies almost entirely below zero, favouring control.
+  - parameter: Dowthwaite 2019 height accrual per month of inter-scan interval, by internal dose tier
+    value: LO 0.508, CONTROL 0.465, HI 0.422
+    unit: cm per month
+    species: human
+    source_ref: dowthwaite2019
+    note: >
+      LO mean 774 effort-minutes (n=22, 152.4 to 162.2 cm over 19.3 mo); HI mean 1561 (n=19, 150.9 to
+      159.0 over 19.2 mo); CONTROL (n=21, 153.1 to 161.7 over 18.5 mo). A 2x internal dose gradient in
+      which the higher-dose arm accrues the least. GROUP*TIME interaction for height tested and null,
+      p>0.12. Per-month normalisation computed in R429 because the control school's inter-scan interval
+      was significantly shorter.
+  - parameter: Fuchs 2001 peak ground reaction force of the 61 cm drop landing
+    value: 8.8
+    unit: body weights (SD 0.9)
+    species: human
+    source_ref: fuchs2001
+    note: >
+      The highest documented mechanical dose in the set and the arm with the largest positive estimate
+      (+0.5 cm, never tested). The lowest-dose trial in the set is nichols2008 at 2-3 BW per nguyen2018,
+      which was not obtained - so the ordering test cannot be run across the full dose range.
+  - parameter: Documented range of measured ground reaction force across school-based jumping trials
+    value: 2 to 8.8
+    unit: body weights
+    species: human
+    source_ref: nguyen2018
+    note: >
+      The single trial with no significant bone effect used the lowest measured GRFs at 2-3 BW; every
+      trial with a significant bone gain used 3.5-8.8 BW. Roughly a 4-fold spread. Reported for the
+      BONE endpoint; nguyen2018 does not report height for any trial.
+  - parameter: Sitting-height between-group differences, four arms
+    value: Nogueira +0.9 and +0.9; Weeks -0.6 and -0.6
+    unit: cm (intervention minus control)
+    species: human
+    source_ref: nogueira2014
+    note: >
+      nogueira2014 girls +0.9 (p=0.565), nogueira2015 boys +0.9 (p=.807), weeks2008 boys -0.6 and girls
+      -0.6 (no between-group test). All four null. The estimates split by PROTOCOL with identical
+      magnitudes within protocol and opposite signs between - the signature of a systematic measurement
+      difference between measurement rounds rather than a dose or sex effect. Same research group runs
+      both protocols.
+  - parameter: Participant accounting across the twelve trials, corrected
+    value: 940 total; 177 in resistance-exercise studies; 763 in jumping studies
+    unit: participants
+    species: human
+    source_ref: miao2025
+    note: >
+      CORRECTS R428, which reported 886 total, 135 resistance and about 698 jumping. Three studies
+      (Arnett 2002, Dowthwaite 2019, Thein-Nissenbaum 2023) contribute two intervention arms against one
+      shared control; counting both makes the total exactly 940 and the resistance fraction 177.
+      Resistance studies are Dowthwaite 2019, Gomez 2020, Nichols 2001 and Thein-Nissenbaum 2023.
+
+localization: not_applicable
+
+human_evidence: direct
+human_evidence_note: >
+  Every datum in this node is human. The limitation is not species but measurement: height was
+  collected in all twelve trials as a covariate for bone analysis, at unstandardised times of day,
+  and the between-group estimates are smaller than the diurnal stature swing. Three of the twelve
+  (Arnett and Lutz 2002, Nichols 2008, Thein-Nissenbaum 2023) were not obtained; two more (Witzke
+  2000, Gomez 2020) state an anthropometric null without arm-wise numbers.
+
+species_basis:
+  - human
+
+confidence: C
+
+translation_risk: low
+translation_risk_reason: >
+  The evidence is human, in children, at the doses the field actually uses, so there is no
+  species translation step. What limits it is that the subject is a male at bone age 16 with a
+  trunk-dominant residual while these cohorts are pre- and peri-pubertal, and that no trial
+  measured height as an outcome or standardised its measurement conditions.
+
+last_verified: 2026-08-14
+
+key_refs:
+  - ref_id: miao2025
+  - ref_id: nguyen2018
+  - ref_id: fuchs2001
+  - ref_id: weeks2008
+  - ref_id: witzke2000
+  - ref_id: macdonald2007
+  - ref_id: nogueira2014
+  - ref_id: nogueira2015
+  - ref_id: dowthwaite2019
+  - ref_id: gomez2020
+  - ref_id: nichols2001
+  - ref_id: brailey2026
+
+edges:
+  - to: round428_the_transport_finding_refiled_as_the_exposure_term_and_the_multiplier_priced_honestly
+    type: corrects
+    note: >
+      R428 began this extraction with three of twelve, reported the sample sizes as summing to 886
+      and the resistance fraction as 135 participants, and recorded the discrepancy as unresolved.
+      Both figures were wrong for the same reason - three studies contribute two intervention arms
+      against a shared control. The corrected totals are 940, 177 resistance and 763 jumping.
+  - to: round427_the_four_papers_read_and_the_axis_is_wrong_lateral_beats_axial_and_growth_happens_when_unloaded
+    type: extends
+    note: >
+      R427 withdrew the word null from fuchs2001 and left the jumping arm UNDECIDED pending exactly
+      this extraction. The extraction is now done and it decides against the arm: fuchs2001's +0.5 cm
+      is the most favourable of seven jumping estimates whose weighted mean is -0.13 cm. R427's
+      reopening was correct on the facts and does not survive the other six arms.
+  - to: round426_the_loading_prescription_optimised_and_the_impact_half_is_rct_null_while_the_perfusion_half_is_untested
+    type: supports
+    note: >
+      R426 predicted that the twelve estimates would scatter around zero because a height gain would
+      have been a headline finding rather than a covariate. The prediction was declared in advance and
+      the extraction confirms it, though R426's route to the conclusion (reading fuchs2001's abstract
+      as a null) was wrong and R427 corrected it.
+  - to: round425_the_site_term_opened_the_cnp_decision_made_and_the_loading_prescription_written
+    type: contradicts
+    note: >
+      R425 prescribed impact-type intermittent axial loading - jumping - as a low-risk unproven
+      adjunct on the strength of one non-randomised trial. Seven arms and 890 children now put the
+      weighted estimate at -0.13 cm. Jumping should be offered as ordinary exercise, not as a height
+      intervention.
+
+open_questions:
+  - g_l6mech_426a
+  - g_l6mech_426b
+  - g_l6mech_426c
+  - g_l6mech_427a

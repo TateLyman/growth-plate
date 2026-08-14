@@ -2481,6 +2481,88 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 📊📊📊📊📊 R429 — **THE 940-CHILD EXTRACTION RUN TO THE END. THE JUMPING ARM CLOSES ON ITS OWN DATA:
+## SEVEN ARMS, n=890, AN n-WEIGHTED MEAN OF −0.13 cm, AND THE PRE-DECLARED DOSE TEST FAILING INSIDE THE ONE
+## STUDY THAT CONTAINS A DOSE GRADIENT. Operator supplied seven of the twelve papers.**
+
+⭐ **THE ARM WAS LEFT UNDECIDED ON PURPOSE AND IS NOW DECIDED.** R426 read `fuchs2001`'s abstract as a
+randomised null; R427 opened Table 1 and **withdrew the word null** (+3.6 cm jumpers vs +3.1 controls =
+**+0.5 cm never tested**), leaving the arm UNDECIDED and naming the extraction as the way to settle it;
+R428 got three of twelve and said explicitly it was **not enough to lean either way.** Seven papers later:
+
+| arm | class | Δ int | Δ con | **diff** | between-group test |
+|---|---|---|---|---|---|
+| **Fuchs 2001** (100 jumps 3×/wk, **8.8 BW**, 7 mo) | jump | +3.6 | +3.1 | **+0.50** | ⛔ never tested |
+| **Weeks 2008 boys** (~300 jumps 2×/wk, 8 mo) | jump | +4.2 | +4.7 | **−0.50** | within-group only |
+| **Weeks 2008 girls** | jump | +1.4 | +1.9 | **−0.50** | within-group only |
+| **Nogueira 2014 girls** (capoeira 10 min 3×/wk, 9 mo) | jump | +4.0 | +3.9 | **+0.10** | **p=0.230** |
+| **Nogueira 2015 boys** (same protocol, 9 mo) | jump | +3.7 | +4.0 | **−0.30** | **p=.990** |
+| ⭐ **Macdonald 2008 boys** (Action Schools! BC, 5 d/wk, 16 mo) | jump | +6.8 | +6.6 | **+0.20** | **95% CI −0.37 to +0.77** |
+| ⭐ **Macdonald 2008 girls** | jump | +7.5 | +8.1 | **−0.60** | **95% CI −1.21 to +0.01** |
+| Dowthwaite 2019 **HI** (resistance, ~19 mo) | res | +8.1 | +8.6 | −0.50 | **GROUP×TIME p>0.12** |
+| Dowthwaite 2019 **LO** | res | +9.8 | +8.6 | +1.20 | same test |
+| Nichols 2001 (resistance, 15 mo, **n=5 completers**) | res | +0.7 | +0.4 | +0.30 | "height did not change" |
+⛔ **Witzke 2000 and Gómez 2020 state an anthropometric null and report NO arm-wise numbers.** Gómez gives
+only a **pooled main time effect for height of 0.3%** across four groups with no significant resistance or
+milk main effect. ⛔ **Arnett & Lutz 2002, Nichols 2008 and Thein-Nissenbaum 2023 were not obtained.**
+
+⭐⭐⭐ **THE RESULT: SEVEN JUMPING ARMS, FOUR NEGATIVE, MEDIAN −0.30, SIMPLE MEAN −0.157, AND AN
+n-WEIGHTED MEAN OF −0.127 cm ACROSS 890 CHILDREN.** There is no signal, and such sign as there is runs
+the wrong way. **R427's reopening was right on the facts and does not survive the other six arms.**
+
+⭐⭐ **THE BEST SINGLE ROW IS THE ONLY ONE REPORTING A CHANGE SCORE WITH AN INTERVAL, AND IT IS THE
+LARGEST TRIAL IN THE SET.** `macdonald2007` (= the review's "Macdonald 2008" — **it was ALREADY in this
+bibliography and the duplicate check caught it pre-write, CORR-336 again**) prints height CHANGE with a
+95% CI per arm, so the between-group interval is **RECOVERED, NOT IMPUTED**: **boys +0.20 cm (−0.37 to
++0.77), girls −0.60 cm (−1.21 to +0.01), MDE at 80% power 0.81 and 0.87 cm.** 222 children, 16 months —
+**it excludes a gain above ~0.8 cm in boys, and in girls the interval sits almost entirely BELOW ZERO.**
+
+⛔⛔ **AND THE PRE-DECLARED DOSE TEST FAILS — INSIDE A SINGLE STUDY, WHICH IS THE STRONGEST FORM.**
+R428 declared in advance: *"IF REAL, THE EFFECT SHOULD SCALE WITH MECHANICAL DOSE… if the twelve estimates
+are unordered with respect to peak ground reaction force, the arm is dead regardless of the pooled sign."*
+`dowthwaite2019` split its own intervention by **observed effort × participation minutes** — **LO mean 774
+vs HI mean 1561, a 2× internal gradient** — and per month of inter-scan interval the ordering is
+**LO 0.508 > CONTROL 0.465 > HI 0.422 cm/month**, with **GROUP×TIME for height tested and NULL (p>0.12)**.
+**Double the dose, the lowest growth.** ⚠ Across studies the test cannot be run properly: `fuchs2001` at
+**8.8 BW** is the highest documented dose and gives the largest positive, but Weeks is also a high-force
+protocol and is the most negative pair — and **the lowest-dose trial (`nichols2008`, 2–3 BW per
+`nguyen2018`) is one of the three not obtained.** One point is not an ordering.
+
+⭐ **AND THE DISPERSION PROBLEM IS TOTAL, SO NO POOLED INTERVAL WAS FABRICATED.** Of the ten arms with
+numbers: **two report SEM of the LEVEL** (Fuchs, Nichols 2001) · **five report SD of the LEVEL** (Weeks ×2,
+Nogueira ×2, Dowthwaite; one Nogueira SD is printed as `(0.0)` and is unrecoverable) · **and only Macdonald's
+two arms report an interval on the CHANGE.** **A pooled confidence interval cannot be formed from this
+literature and none is offered.** The brief's instruction was followed: point estimates, no imputation.
+
+⚠ **SITTING HEIGHT SPLITS BY PROTOCOL, NOT BY DOSE OR SEX — WHICH IS THE SIGNATURE OF MEASUREMENT, NOT
+BIOLOGY.** Nogueira **+0.9 and +0.9** (p=0.565, p=.807); Weeks **−0.6 and −0.6**. **Identical magnitudes
+within protocol, opposite between**, from the same research group. All four null. Recorded because the
+trunk is the compartment this file cares about and it was measured.
+
+⛔⛔ **THE GOVERNING LIMIT, AND IT IS R425's OWN HYGIENE ITEM ARRIVING AS A CEILING ON A WHOLE LITERATURE:
+EVERY ESTIMATE HERE (±0.6 cm) IS INSIDE THE DIURNAL STATURE SWING (~2 cm standing, 0.3–0.8% of sitting),
+AND NOT ONE TRIAL STANDARDISED TIME OF DAY** — because height was the **DENOMINATOR** (a covariate for BMC
+analysis), never an outcome. **That is also the structural reason nobody analysed it.** So: a null from this
+literature is a null, but a positive from it never could have been trusted. **It is noise-limited below the
+effect it would need to resolve.**
+
+🧭 **VERDICT: IMPACT LOADING HAS NO DEMONSTRABLE EFFECT ON STATURE AT THE DOSES AND DURATIONS PAEDIATRIC
+TRIALS HAVE USED, AND THIS BODY OF EVIDENCE CANNOT DEMONSTRATE ONE.** R425's jumping prescription is
+**withdrawn as a height lever** — offer it as ordinary exercise, nothing more. ⭐ **What survives the
+movement arm is unchanged and is NOT this: the SUBTRACTION (protect the unloaded window — `noonan2004`,
+≥90% of elongation occurs during recumbency), and the untested **CHRONIC HIGH-VOLUME** arm for solute
+delivery (`serrat2010`), which is a different prescription from impact and has never been tried in a human.
+And the largest mechanical effect in the atlas is still on an axis no human activity delivers — **LATERAL
+joint loading, 0.5 N, +2.3–3.7% bone length** (R427), with a **human device built twice and never used**
+(R428).
+
+⛔ **STILL OWED, AND NOW A SHORT LIST: `arnett2002` · `nichols2008` (the 2–3 BW low-dose anchor, the one
+that would complete the ordering test) · `theinnissenbaum2023`.** What is needed from each is one table:
+baseline and follow-up HEIGHT by arm, with n and whatever dispersion is reported.
+⚠ **One unresolved observation, recorded not claimed: `dowthwaite2019` and `theinnissenbaum2023` share an
+author and describe the same school-based resistance programme; the review counts them as two studies
+(130 participants). Possible non-independence.**
+
 ## 💧💧💧💧 R428 — **THE TRANSPORT FINDING RE-FILED AS *THE EXPOSURE AND TARGETING TERM* AND PRICED — AND
 ## THE MULTIPLIER LARGELY FAILS, BECAUSE THE SMALL MOLECULES ARE ALREADY AT UNITY PARTITION. Two of my own
 ## assertions withdrawn: A HUMAN KNEE-LOADING DEVICE HAS BEEN BUILT TWICE, and the instrument that would
@@ -2500,11 +2582,15 @@ vocabulary items, near-zero ledger presence.**
 twelve are Arnett & Lutz 2002 (25) · Dowthwaite 2019 (43) · **Fuchs 2001 (89)** · Gomez 2021 (31) ·
 **Macdonald 2008 (222)** · Nichols 2008 (89) · Nichols 2001 (16) · **Nogueira 2014 (138)** · Nogueira 2015
 (36) · Thein-Nissenbaum 2023 (45) · **Weeks 2008 (99)** · Witzke & Snow 2000 (53).
-· ⛔ **FOUR OF THE TWELVE ARE RESISTANCE EXERCISE, NOT JUMPING** (135 participants) and one is combined —
-  **the jumping-only total is ~698, not 940.** · ⛔ **AND `anliker2012`, `vlachopoulos2018`, `johannsen2003`
-  and `weeks2012` ARE NOT IN THE TWELVE** — I conflated the review's set with trials I had named separately,
-  so the true count of controlled paediatric loading trials measuring height is LARGER than twelve.
-  · ⚠ **The twelve sample sizes sum to 886, not 940** — recorded as a discrepancy, not resolved.
+· ⛔ **FOUR OF THE TWELVE ARE RESISTANCE EXERCISE, NOT JUMPING** ⛔ **— R429 CORRECTED BOTH FIGURES BELOW.
+  THE PER-STUDY LIST ABOVE AND THE NUMBERS 135 / ~698 / 886 ARE ALL WRONG: THE RESISTANCE FRACTION IS 177,
+  THE JUMPING TOTAL IS 763, AND THE TWELVE SUM TO EXACTLY 940.** The error was one thing — Arnett,
+  Dowthwaite AND Thein-Nissenbaum each contribute **TWO intervention arms against ONE shared control**
+  (17 arms, not 12), and I counted one arm each. · ⛔ **AND `anliker2012`, `vlachopoulos2018`,
+  `johannsen2003` and `weeks2012` ARE NOT IN THE TWELVE** — I conflated the review's set with trials I had
+  named separately, so the true count of controlled paediatric loading trials measuring height is LARGER
+  than twelve. ⭐ **The review is `miao2025` (PeerJ, DOI 10.7717/peerj.19616) and is now in the bibliography
+  with its full arm table.**
 ⭐ **PRE-DECLARED BEFORE EXTRACTING:** I expected the estimates to scatter around zero, because a height gain
 would be a headline finding rather than a covariate.
 ⭐ **EXTRACTED SO FAR — THREE OF TWELVE, ONE WITH NUMBERS.** `fuchs2001` **+0.5 cm favouring jumpers, never
@@ -2683,7 +2769,9 @@ CD200-sorted rat prehypertrophic/hypertrophic chondrocytes, cyclic TENSILE strai
   fixed at 0.5 Hz and never varied.
 
 🧭 **WHAT R427 CHANGES IN THE PRESCRIPTION.** The subtraction stays first and gets a mechanism: **protect the
-unloaded window**, because that is when the bone actually elongates. **Jumping goes back to UNDECIDED** —
+unloaded window**, because that is when the bone actually elongates. ⛔ **"Jumping goes back to UNDECIDED"
+IS SUPERSEDED — R429 RAN THE EXTRACTION AND DECIDED IT AGAINST: seven jumping arms, n=890, n-weighted mean
+−0.13 cm. Do not re-open it from Fuchs's +0.5 cm.** As R427 wrote it —
 +0.5 cm untested at 8.8 BW — rather than dead, and the way to settle it is a data request, not a trial.
 **Duty cycle, not frequency, is the axial variable.** And the largest mechanical effect in this atlas sits on
 an axis — transverse joint loading — that **no exercise, no device and no human study has ever delivered**,
@@ -2838,7 +2926,10 @@ plate.** `g_l6mech_426b`.
   controlled in humans. **Grade B.**
 · ⭐ **AVOID HIGH-VOLUME TRAINING AT LOW ENERGY AVAILABILITY.** ~3 sessions/wk promotes; 20+ h/wk at energy
   deficit suppresses, and no study separates the two. **Grade C.**
-· ⚠ **IMPACT / JUMPING — DOWNGRADED TO GRADE D–X.** Retained only because it is free, because it is the one
+· ⛔⛔ **IMPACT / JUMPING — WITHDRAWN AS A HEIGHT LEVER BY R429** (seven arms, n=890, n-weighted mean
+  **−0.13 cm**; the one recoverable interval excludes a gain above ~0.8 cm; the dose test fails inside
+  `dowthwaite2019`). **Offer it as ordinary exercise, not as a lever.** R426's grading, now superseded, read:
+  *downgraded to grade D–X, retained only because it is free, because it is the one
   activity class that does not lose its dose through PHV in a male, and because the animal version is
   positive with an internal control. **Offer it as that, not as a lever.**
 · ⭐ **CHRONIC HIGH-VOLUME LOWER-LIMB EXERCISE — the running-wheel equivalent — IS THE ARM WITH THE BEST
@@ -3007,7 +3098,8 @@ HIGH-VOLUME TRAINING AT ENERGY DEFICIT.** Free, open-plate-only, mechanistically
 `watanabetakano2021`'s periosteal osteocrin→NPR3 route (R424), and supported by **ONE non-randomised
 controlled trial with an incoherent mediation analysis.** **A low-risk unproven ADJUNCT, not a lever, and it
 should be offered as such.**
-⛔⛔ **THE JUMPING HALF OF THIS PRESCRIPTION IS DOWNGRADED BY R426 — READ R426 BEFORE CITING IT.**
+⛔⛔ **THE JUMPING HALF OF THIS PRESCRIPTION IS WITHDRAWN — R426 DOWNGRADED IT AND R429 CLOSED IT ON THE
+FULL EXTRACTION (seven arms, n=890, n-weighted mean −0.13 cm). READ R429 BEFORE CITING ANY OF IT.**
 `fuchs2001` randomised 89 children to **100 jumps off a 61 cm box 3×/week for SEVEN MONTHS** — R425's own
 dose — and states that **jumpers and controls had similar increases in HEIGHT**. Twelve controlled trials
 covering **940 children** measured height and none analysed it. What replaces jumping at the top of the
