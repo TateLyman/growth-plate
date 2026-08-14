@@ -2372,6 +2372,46 @@ rewritten.** The 56.1% figure and the ~16 cm figure are both **WITHDRAWN**. ⛔ 
 `speth2026`: whatever the complication rate, a permanent and worsening extensor deficit is the price, and it
 is a price the growth-plate route does not charge.**
 
+## ⛔ R402 — **"LOOK ANYWHERE" APPLIED TO THE PAEDIATRIC-TRIAL AND REGULATORY SPACE. THE INFLAMMATION SHELF
+## IS REAL, IS APPROVED, IS PAEDIATRICALLY DOSED — AND IS A *RESTORATION* AXIS THAT THIS FILE ALREADY CLOSED
+## WITHOUT NOTICING. Plus one calibration rule worth more than the drug result.**
+
+⚠ **R297 flagged anakinra/canakinumab/etanercept/adalimumab as returning ZERO across the graph. That was true
+of the DRUG NAMES and false of the BIOLOGY** — `inflammation_growth_suppression` is a full node with
+denson2003, choukair2014, macrae2006/2009, pass2012, dobie2018, kelly2012, and `debenedetti2015` already
+extracted in full. **CORR-353's shape: a grep that misses on vocabulary is still a failed grep.**
+
+⛔ **AND THE FILE'S OWN DATA CLOSES IT FOR THIS SUBJECT, IN ONE LINE.** `choukair2014`: IL-1β, IL-6 or TNF-α
+cut **IGF-I-DRIVEN** chondrocyte proliferation by 50% **"WITHOUT ALTERING BASELINE PROLIFERATION."**
+→ **Cytokines suppress the stimulated component and do nothing at baseline. In a subject with no inflammatory
+burden there is nothing for a cytokine blocker to restore.** Everything downstream agrees:
+· `debenedetti2015` — tocilizumab, sJIA, **baseline height SDS −2.2**, velocity 6.6 cm/yr above WHO norms, SDS
+  +0.29/+0.31 — **and velocity was INVERSELY related to disease activity**, i.e. the height is bought by
+  removing disease.
+· `bharucha2018` — pcJIA, baseline SDS only **−0.5**, still +0.40 (P<0.0001), 72% above baseline. A *smaller*
+  deficit still yields a gain, which is the strongest version of the case — but it is still a deficit.
+· `fernandezvojvodich2011` (Sävendahl metatarsals, the file's trusted length assay): IL-1β+TNF-α crushed growth
+  **6.6% vs 50.6%**; **anakinra AND etanercept rescued it dose-dependently to control level**, IGF-I additive.
+  ⛔ **THERE IS NO UNCHALLENGED ARM. Nobody has given anakinra or etanercept to NORMAL bones** — one plate in
+  that same system. Gap `g_l10_402a`.
+· ⭐ `cammisa2026fmf`, recorded because it is inconvenient: **1144 children with FMF — recurrent IL-1β disease —
+  and growth was GENERALLY PRESERVED, with inflammatory markers INCONSISTENTLY correlated with growth.**
+→ ⭐ **THE ONLY ACTIONABLE ITEM IS THE ONE R297 AND R316 ALREADY NAMED AND NOBODY HAS DRAWN: CRP AND IL-6.**
+Normal → the whole shelf is inert for him. Raised → it becomes a live restoration lever with approved,
+paediatrically-dosed agents. **One tube.**
+⭐ **AND IL-1 BLOCKADE'S BETTER ROLE IS THE ONE R397 FOUND: IL-1β heads the catabolic cascade that damages the
+joint during DISTRACTION (`g_l6mech_397a`) — that is a use with no deficit requirement.**
+
+⭐⭐ **THE CALIBRATION RULE, AND IT IS WORTH MORE THAN THE DRUG RESULT — CORR-350 EXECUTED AND IT BITES BACK.**
+`campion2022tofacitinib`: a rat JUVENILE ANIMAL STUDY dosing PND 7–49 **with FEMUR LENGTH measured**. The only
+bone finding was **shorter femur — and it tracked LOWER BODY WEIGHT, recovered fully, and had no histologic
+correlate.** They then analysed **HISTORICAL CONTROL DATA across juvenile studies** and showed **shorter femur
+length occurs as an INDIRECT effect highly associated with lower body weight.**
+⛔ **SO EVERY LENGTH ENDPOINT THIS FILE PULLS FROM A REGULATORY JUVENILE-TOX REVIEW MUST BE READ AGAINST BODY
+WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna null, whose one female
+reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
+length can be an artefact OF body weight.
+
 ## 🛒🛒🛒🛒 R401 — **"NO MOLECULE EXISTS" HAS MEANT "NO MEDICINE IS SOLD." THE VENDOR CATALOGUE WAS NEVER
 ## QUERIED, AND FOUR THINGS THIS FILE CALLED NON-EXISTENT ARE ON SALE TODAY.**
 ## Run `atlas/tools/round401_vendor_level_availability_sweep.py`
