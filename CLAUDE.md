@@ -2412,6 +2412,60 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🧪🧪🧪🧪 R405 — **SCUBE3 WORKED PROPERLY. The sufficiency experiment EXISTS and used the recombinant
+## protein · the mechanism is a CO-RECEPTOR, the one architecture where supply is coherent · and an ONCOLOGY
+## PROGRAMME IS BUILDING A NEUTRALISING ANTIBODY AGAINST THE EXACT PROTEIN.**
+
+⭐⭐ **ONE — THE SUFFICIENCY EVIDENCE R404 SAID WAS MISSING EXISTS, AND IT USED rhSCUBE3.** `chen2024scube3`:
+SCUBE3 rises during early osteogenic differentiation of human BMSCs · knockdown hinders it · overexpression
+raises osteogenic genes and calcium deposition · and **TREATMENT WITH RECOMBINANT HUMAN SCUBE3 boosted BMP2
+and TGF-β, activated mitophagy, ameliorated oxidative stress and RESTORED OSTEOGENIC FUNCTION via SMAD
+phosphorylation.** In vivo, SCUBE3-overexpressing cells in GelMA microspheres accelerated healing in a mouse
+bone defect. ⛔ **But the readout is OSTEOGENIC stromal differentiation, not chondrocyte proliferation; the in
+vivo arm is engineered cells in a hydrogel in a DEFECT model; and there is no length endpoint anywhere.**
+
+⭐⭐⭐ **TWO — THE MECHANISM IS THE FAVOURABLE ONE, AND IT ANSWERS R404's OWN GOVERNING CAVEAT.**
+`lin2023scube`: the spacer and cysteine-rich motifs let SCUBEs bind the cell surface, and **MEMBRANE-ASSOCIATED
+SCUBEs FUNCTION AS CORECEPTORS THAT ENHANCE SIGNALLING OF SER/THR AND TYROSINE KINASE RECEPTORS — with
+MEMBRANE-ASSOCIATED SCUBE3 NAMED AS A CORECEPTOR PROMOTING SIGNALLING IN BONE MORPHOGENESIS.**
+R404 assumed a *sequestering* matricellular modulator, where more protein buffers rather than signals.
+**A co-receptor is the opposite — it presents ligand, so more of it plausibly means more signal. That is the
+same architecture that made osteolectin work (integrin α11).** ⭐ Same review puts the family in R379's
+ligand-release layer: soluble SCUBE2 facilitates secretion of dual-lipidated hedgehog.
+
+⚠ **THREE — THE COMPARTMENT IS CONTESTED, AND BOTH SIDES ARE IN THIS FILE.** R318 put the SCUBE3 height allele
+at **~104% LEG** — the wrong compartment for a trunk-dominant residual. Against it, `yeter2025scube3` states
+SCUBE3 is expressed in primary osteoblasts, **long bones AND THE CARTILAGE OF THE AXIAL SKELETON**, and the
+recessive phenotype is prominently axial — **scoliosis, eleven rib pairs, irregular lower thoracic vertebral
+endplates, narrow iliac wings.** ⭐ And **R323 already showed a ratio-selected compartment coordinate is an
+ALLELE fact, not a gene fact** — which is exactly the weakness of R318's number. **Unresolved, and it is the
+difference between the right compartment and the wrong one.**
+
+⛔⛔ **FOUR — THE HARDEST OBJECTION, AND IT IS BRAND NEW.** `singh2026scube3ab` (Cancer Research 2026): a
+**FIRST-IN-CLASS NEUTRALISING ANTIBODY AGAINST SCUBE3** is in preclinical development as a **pan-cancer**
+therapy. Secretory SCUBE3 acts through **EGFR, mutant CALR and TGFβRI/II → FOXR2 and c-Myc**, enhances DNA
+damage repair, and recruits the **DNMT1 complex to IRF1 to silence MHC-I and MHC-II**; the antibody works
+across patient-derived breast and ovarian xenografts. **We would be supplying the exact protein an oncology
+programme is being built to remove.** This file has held two-sided targets before (HHIP a tumour suppressor,
+STC2 a promoter) — **this is the first where the opposing agent is a named first-in-class therapeutic against
+the same molecule.**
+
+⛔ **FIVE — AND THE SATURATION OBJECTION NOW HAS DATA.** `tran2025scube`: single, double and triple scube
+mutants in zebrafish — individual characterisation is obscured by **COMPENSATORY MECHANISMS**, and only the
+**TRIPLE** knockout gives near-complete hedgehog loss. **A system buffered by two paralogues is exactly where
+supplementation saturates.** ✓ Useful construct detail: full-length scube2 rescued better than EGF-truncated,
+so **a supplementation experiment must use FULL-LENGTH protein.**
+
+⛔⛔ **SIX — THE HONEST ANSWER TO "IS IT THE BIGGEST EFFECT". NO — IT IS THE BIGGEST *NUMBER* AND THE WEAKEST
+*INFERENCE*.** −6.71 cm is a **LOSS** effect in **178** carriers. **It is not a promise of +6.71 cm from adding
+the protein**; the removal→addition mapping is precisely what is unmeasured. Against it, **CLEC11A is −0.74 cm
+but across 10,012 carriers, MONOTONE in variant severity, and its supplementation experiment IS DONE, IN
+NORMAL JUVENILE MICE, AND POSITIVE.** → **SCUBE3 = bigger number, weaker inference. Osteolectin = smaller
+number, completed experiment. Run both; call neither larger until a caliper exists.**
+⚠ CORR-325/CORR-299 both apply — the biallelic phenotype is a **prenatal** developmental syndrome with
+microcephaly. ✓ In its favour, **R312 found SCUBE3 FALLS WITH AGE in mouse AND rat** — a declining factor
+whose loss shortens is the right profile for a replacement lever.
+
 ## 🔎🔎🔎 R404 — **THE SUPPLY QUERY RUN ON ALL FOURTEEN. OF THE SECRETED LOAD-BEARING GENES IN THE HUMAN
 ## GROWTH PLATE, *EXACTLY ONE* HAS EVER BEEN GIVEN TO AN ANIMAL — AND IT WORKED. This is not a searched-and-
 ## empty shelf; it is a direction nobody has tried.**
