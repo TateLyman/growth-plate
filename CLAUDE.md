@@ -2379,22 +2379,88 @@ growth-plate Gli1/Ptch1/Hhip · muscularis thickness by gut segment. Plus a WITH
 **That single design closes gaps 1, 2, 4, 5 and sizes 3. Everything else on this axis is free or a
 manufacturing contract.**
 
-## 🎯 THE PROTOCOL AS IT STANDS (every parameter, superseding earlier versions)
-· **DRUG** SAG **dihydrochloride**, MW 562.98, ≥98% HPLC + CoA · **fallback SAG21k on formulation failure**
-· **DOSE** **1.62 mg/kg/administration** (≈97 mg at 60 kg) — ⛔ **PROVISIONAL: do not fix until `g_l12_390a`
-  exists; the honest range is tens of mg to ~1 g per pulse**
-· **FORM** aqueous, **≥30 mg/mL**, sterile, 0.22 µm filtered · ⛔ **never scale the DMSO vehicle**
-· **ROUTE** subcutaneous, abdomen/thigh, rotating sites, split if >2 mL
-· **SCHEDULE** ⭐ **TAPERED (R389): q2d × 2 weeks (8 doses) → 1 dose at 72 h → 1 dose at 96 h → stop. 10 doses,
-  slightly LESS drug than a flat 11.** The taper is because the pathway adapts below SMO and abrupt withdrawal
-  is predicted to leave a rebound trough — and six antagonist doses fuse a normal plate.
-· **INTERVAL** ≥3 months, preferably 6. **Derived, never measured.** ⛔ no continuous dosing.
-· **COURSE** ONE pulse, then the 6-month readout, before anything else.
-· ⭐ **CONTRACEPTION COUNSELLING** covering the pulse + a washout — vismodegib/sonidegib male-patient precedent.
-· **MONITOR** ΔBA/ΔCA by BoneXpert (**still primary, still not done**) · standing **AND sitting** height at a
-  fixed time of day · **UPPER GI and obstructive symptoms — the lesion is muscularis and the segment at risk is
-  the STOMACH, not the colon** · knee + spine imaging at 6 and 12 mo · skin surveillance
-· **STOP IF** plate widens without height gain · ΔBA/ΔCA accelerates · any obstructive GI symptom · any skin lesion
+## 🎯🎯 THE PROTOCOL (R392 — every parameter. Run `atlas/tools/round392_sag_complete_dosing_protocol.py`)
+
+**DRUG** SAG **DIHYDROCHLORIDE** (CAS 364590-63-6 is the FREE BASE — specify the salt), MW 562.98, ≥98% HPLC
++ CoA. **Fallback SAG21k ONLY on formulation failure.**
+**DOSE** **1.622 mg/kg per administration, FREE-BASE EQUIVALENT** → **81.1 / 97.3 / 113.5 mg at 50 / 60 / 70 kg.**
+⚠ **The mass you weigh is the SALT — ×1.149. Getting this backwards under-doses by 13%.**
+
+⭐ **THE PULSE — 10 DOSES OVER 22 DAYS, IN THREE PHASES (worked at 60 kg):**
+| dose | day | interval | % of target | salt mass | volume | phase |
+|---|---|---|---|---|---|---|
+| 1 | 1 | — | **10%** | 11.2 mg | 0.37 mL | **ESCALATION — observe 2 h** |
+| 2 | 3 | 48 h | **25%** | 27.9 mg | 0.93 mL | ESCALATION |
+| 3 | 5 | 48 h | **50%** | 55.9 mg | 1.86 mL | ESCALATION |
+| 4 | 7 | 48 h | 100% | 111.8 mg | 3.73 mL | ESCALATION |
+| 5–8 | 9, 11, 13, 15 | 48 h | 100% | 111.8 mg | 3.73 mL | plateau |
+| 9 | 18 | **72 h** | 100% | 111.8 mg | 3.73 mL | **TAPER** |
+| 10 | 22 | **96 h** | 100% | 111.8 mg | 3.73 mL | **TAPER — final dose** |
+**TOTAL 877 mg (0.88 g) at 60 kg — 29% LESS than R388's flat 11 doses, and safer at both ends.**
+⭐ **WHY ESCALATE — not caution, the only defensible design.** No SMO agonist has ever been given to a human,
+so there is no tolerated dose, no PK, no AE profile; and the published effective systemic range spans
+**40-fold** with the plate-effective point unmeasured inside it. Escalation walks up that range instead of
+guessing a point in it, **and uses less drug.**
+⭐ **WHY TAPER (R389)** — the pathway adapts BELOW SMO; HHIP is a Gli target the agonist INDUCES while SMO
+activation DEGRADES HHIP protein, so an abrupt stop leaves the brake without the degradation arm. **Six
+ANTAGONIST doses fuse a normal plate. The dangerous moment is the STOP.**
+
+**FORM** aqueous, **≥30 mg/mL**, isotonic, pH 4–6, sterile 0.22 µm. ⛔ **NEVER scale the DMSO vehicle** — a
+60 kg dose in li2021's 5 mM stock is **46 mL of DMSO subcutaneously.**
+⭐ **ASK THE FORMULATOR FOR 50 mg/mL, ACCEPT 30** — at 30, anyone >65 kg needs THREE sites per dose; at 50,
+everyone is ≤2. Cheapest improvement available.
+**MATERIAL** 0.88 g/pulse at 60 kg, ~3.5 g for four pulses. ⛔ **Do not buy catalogue at this scale** —
+commission a custom synthesis (490 Da, published route) and put the impurity/residual-solvent/endotoxin
+package in the same order.
+**ROUTE** s.c., 27–30 G, abdomen (5 cm clear of umbilicus) + anterior thigh, split above 2 mL. Pinch, 45–90°,
+inject over 10–20 s, hold 5 s, no massage.
+⭐ **ROTATE AGAINST THE GH SITES, not just within this drug** — two agents into one lipid depot risks
+lipohypertrophy that changes absorption of BOTH.
+**FIRST DOSE** where medical observation is available, **observe 2 h.** It is a first-in-human event.
+**MISSED DOSE** <24 h late → give and resume the grid. >24 h → **skip, never double.** ⚠ **Exception: during
+the TAPER give a late dose rather than skip it** — avoiding the abrupt stop is the whole point of doses 9–10.
+
+⛔ **THE BLACKOUT LIST — during a pulse these are DIRECT OPPONENTS AT THE SAME RECEPTOR, not background
+contraindications. Taking one wastes the pulse.**
+· **SMO antagonists** — vismodegib, sonidegib, glasdegib
+· **ITRACONAZOLE, POSACONAZOLE** — SMO antagonists at ordinary antifungal exposure → **use TERBINAFINE or
+  FLUCONAZOLE**
+· **GLUCOCORTICOIDS BY ANY ROUTE** — cortisol competes with cholesterol at the SMO CRD (`lu2025cortisol`) →
+  if an ICS is unavoidable, **FLUTICASONE**
+· **MEGADOSE VITAMIN D3** (adequacy is non-negotiable; mid-normal 25-OH-D, do not megadose)
+· **THE DHCR7 SHELF** — **HYDROXYZINE**, fluoxetine, aripiprazole, trazodone, buspirone, lurasidone,
+  ziprasidone, vilazodone, cariprazine, nebivolol, rotigotine, amiodarone
+· **HEPARIN / LMWH / pentosan polysulfate / sulodexide** · **DNMT inhibitors**
+✓ **STATINS ARE FINE** — 4.45 vs 4.60 cm/yr, P=0.73, 300 children; and SAG binds the 7TM site, not the CRD.
+⚠ **AND THE HOLE INSIDE THE STACK: SAG's metabolic route is unpublished in every species** — no CYP, no
+transporter, no protein binding — while erdafitinib is ~39% CYP2C9 + ~20% CYP3A4 and a P-gp substrate.
+**THE INTERACTION IS UNKNOWN. That is a hole, not a reassurance.**
+
+**BASELINE (most of it overdue anyway)** ΔBA/ΔCA by BoneXpert · standing **AND sitting** height at a fixed
+time of day · knee + spine imaging · lateral T-L film + DXA · FBC/LFT/U&E/glucose/HbA1c · ultrasensitive E2 by
+LC-MS/MS · IGF-1 · TSH/fT4/fT3 · HOMA-IR · 25-OH-D · **documented baseline bowel habit** · scalp photograph.
+**DURING** injection site + any new GI symptom daily; weekly weight. ⭐ **UPPER GI AND OBSTRUCTIVE SYMPTOMS
+SPECIFICALLY** — pain, distension, vomiting, early satiety, change in bowel habit. **The lesion is MUSCULARIS
+and the segment at risk is the STOMACH/GEJ — colonoscopy is aimed at the compartment the biology says is
+PROTECTED.**
+⚠ **PD, HONESTLY: there is NO accessible readout at the growth plate and nothing in blood reports on it.**
+⭐ What is free: **HAIR AND TASTE** — the antagonist class causes alopecia and ageusia at high incidence, so
+those are the human tissues that visibly report hedgehog tone; the mirror observation costs nothing. A GLI1
+qPCR on a skin punch is the obvious analogue but **no validated agonist-direction protocol was found** — gap.
+⭐ **CONTRACEPTION COUNSELLING covering the pulse + a washout** — SAG is a demonstrated teratogen and
+vismodegib/sonidegib carry male-patient requirements for seminal transfer.
+
+⛔ **STOP THE PULSE IMMEDIATELY** for any obstructive GI symptom · any new skin lesion · **any hip, groin,
+thigh or knee pain or a limp → IMMEDIATE imaging** (SCFE is quadruple-stacked here) · severe injection-site or
+systemic hypersensitivity reaction.
+⛔ **DO NOT PROCEED TO A SECOND PULSE IF** the plate widens **without** height gain (charge-without-discharge,
+8 prior instances — **plate width is TARGET ENGAGEMENT, NOT EFFICACY; both must move**) · ΔBA/ΔCA accelerates
+· any new cartilaginous lesion.
+**INTERVAL** ≥3 months, preferably 6 — **derived, never measured in any species.** ⛔ **NO CONTINUOUS DOSING,
+EVER** (`orikasa2024`: permanent occupancy CONVERTS the pool to bone with no final length).
+**COURSE** **ONE PULSE**, then the 6-month readout, then decide. ⭐ **SITTING HEIGHT IS THE ENDPOINT THAT
+MATTERS** — the trunk is the compartment this route was chosen to reach and the depot could not.
+**Do not schedule pulse 2 before the pulse 1 readout exists.**
 
 ## ⚠ AND THE HONEST CALIBRATION, UNCHANGED SINCE R373
 **li2021's +67.4% femur is RESTORATION in an Ihh-ablated dysplasia and CORR-203 excludes it as a prediction.**
