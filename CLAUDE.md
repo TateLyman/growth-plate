@@ -2412,6 +2412,64 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## ⛔⛔⛔ R415 — **THE ER AXIS WORKED TO A CONCLUSION. The direction is CAUSAL with a length endpoint in a
+## NON-dysplastic animal and the human genetics agree at P=1e-157 — but the tissue carries a LATENT CAPACITY
+## THAT MUST BE EXCEEDED, and the one approved agent was already given to normal growing mice and IMPAIRED
+## FEMUR GROWTH. Closes as a lever. Delivers CARBAMAZEPINE as a contraindication.**
+
+⭐ **ONE — THE DIRECTION IS CAUSAL AND IT IS NOT A RESCUE.** A transgene driving an **ER-stress-inducing
+protein under the COLLAGEN II PROMOTER**, in mice with **NO chondrodysplasia mutation**: BiP up, eIF2α
+phosphorylated, Xbp1 spliced → **DECREASED LONG BONE GROWTH and decreased chondrocyte proliferation rate,
+with morphology, growth-plate architecture and apoptosis ALL UNCHANGED.** ER stress **alone**, on an
+otherwise normal plate, shortens bone — and the intact architecture is what makes it a length result rather
+than a dysplasia. **CORR-203 does not apply to it.**
+
+⭐⭐ **TWO — AND THE HUMAN GENETICS AGREE, FROM TWO INSTRUMENTS.** The whole 108-gene ER/secretory module
+against the 3,034 independent height variants returns 10 hits, **8 intragenic, 6 of the 8 NEGATIVE**:
+· **SERPINH1 (HSP47, the COLLAGEN-SPECIFIC ER CHAPERONE) −0.434 cm at −log10P = 157.5**, distance 0, 394 CPM at 3.4×
+· **EIF2AK3 (PERK, the stress SENSOR) −0.252 cm at −log10P = 90.0**, distance 0
+· then EDEM3 −0.288 · KDELR2 −0.186 · CNIH4 −0.176 · EDEM2 −0.093 — against only RPN2 +0.160 and OS9 +0.293 (ns).
+⭐ **And SERPINH1 carries a SECOND independent instrument: burden −6.50 cm at P=3.1e-25** — recorded in R404
+and dismissed there as *"an intracellular chaperone, wrong modality."* Human disease concurs at both ends:
+**SERPINH1 loss = osteogenesis imperfecta type X; PERK loss = Wolcott-Rallison, with spondyloepiphyseal
+dysplasia and short stature.** → **LOSING ER FOLDING CAPACITY SHORTENS. The module is LOAD-BEARING.**
+
+⛔⛔ **THREE — AND IT IS A THRESHOLD, WITH NORMAL SITTING BELOW IT. THIS IS WHAT CLOSES IT.** Across four
+mouse lines E14.5→E17.5: **HETEROZYGOTES expressed mutant collagen X from E14.5 with NO unfolded protein
+response and NO hypertrophic-zone expansion until after E17.5**; only homozygotes crossed over. The authors'
+own conclusion: **hypertrophic chondrocytes have a LATENT CAPACITY to deal with ER stress WHICH MUST BE
+EXCEEDED to trigger the UPR and the pathology.**
+→ ⭐ **A BUFFER YOU ARE NOT EXCEEDING CANNOT BE RELIEVED.** Every therapeutic result here — carbamazepine in
+Schmid, PERK inhibition in the same model — is **rescue of a plate pushed OVER the threshold. That is CORR-203
+stated as a MECHANISM rather than as a model.**
+
+⛔⛔⛔ **FOUR — AND THE DECISIVE TEST WAS ALREADY DONE, IN THE RIGHT ANIMAL, AND IT RUNS THE WRONG WAY.**
+CORR-340's move returns a study that dosed **CONTROL mice alongside its disease model: 3-week-old MALES,
+3 or 6 weeks of CARBAMAZEPINE at the dose effective in metaphyseal chondrodysplasia**, µCT + three-point
+bending. No benefit in the disease model. ⭐ **IN THE CONTROL MICE, SIX WEEKS OF CARBAMAZEPINE IMPAIRED FEMUR
+GROWTH AND LOWERED FEMORAL CORTICAL AND TRABECULAR BONE MASS** — and the authors flag it themselves for human
+use in growing individuals.
+→ **THE ONLY APPROVED AGENT ON THIS AXIS SHORTENS A NORMAL GROWING MALE MOUSE'S FEMUR AT THE DOSE THAT
+RESCUES THE DYSPLASIA.** Right animal, right age, right sex, right endpoint — **a measured negative, stronger
+than most closures in this file, which rest on absence of data.**
+
+⛔ **NEW CONTRAINDICATION, CLINICALLY LIVE: CARBAMAZEPINE** — a common anticonvulsant and mood stabiliser
+prescribed to adolescents, with a **direct measured impairment of femur growth in normal growing male mice.**
+It joins **topiramate and zonisamide** (R347, via carbonic anhydrase) and is **the best-evidenced of the
+three. ASK WHETHER HE IS ON IT.**
+
+⛔ **FIVE — AND THE ONE DIRECTION THAT IS NOT THRESHOLD-LIMITED HAS NO AGENT.** Raising **chaperone capacity**
+rather than lowering stress would in principle raise folding throughput even in an unstressed cell, and
+**SERPINH1 is the best-anchored gene in the module.** But **HSP47's entire pharmacology runs the other way** —
+it is an INHIBITION target in fibrosis, thrombosis and cancer — and **arimoclomol**, the one approved
+heat-shock amplifier (2024, Niemann-Pick C, oral, paediatric), has **ZERO skeletal literature of any kind.**
+**Nobody has raised a chaperone in a growth plate in any species.**
+
+⭐ **WHAT SURVIVES: the axis is REAL, CAUSAL and LOAD-BEARING, which means ANYTHING THAT LOADS THE CHONDROCYTE
+ER IS A COST** — and this tissue secretes COL2A1 at ~70,000 CPM, among the largest secretory burdens in the
+body. **What it is not is a lever**, because the plate is buffered below the threshold and the only obtainable
+agent is measured to shorten a normal femur.
+
 ## ⚖️⚖️⚖️ R414 — **THE DISCRIMINATING ALLELE WAS PULLED AND IT DAMAGES SERPINA1. PiS is taller in the
 ## SAME direction at P=1.3e-4 but TEN-FOLD smaller while removing HALF as much protein — the dose-response
 ## fails 4.5×, so most of the PiZ effect is NOT lowered antitrypsin. What the failure exposes is bigger than
