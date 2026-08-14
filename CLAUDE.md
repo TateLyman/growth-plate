@@ -360,15 +360,42 @@ Everything else is a gap to record and, where cheap, to fill.
 3. Is the endpoint **bone/body length**, or a proxy? Proxies do not close anything.
 4. Was it measured in a **normal** system, or a rescued deficit?
 
-## SCALE — read every ROI table against this (R277)
+## SCALE — read every ROI table against this ⛔ **REVISED R398. THE OLD NUMBERS WERE FROM THE WRONG POPULATION.**
 
-Pooled, 1149 patients: **femoral lengthening 8.85 cm, tibial 7.36 cm** (~16 cm from both segments).
-Against: CNP analogues **+1.24 cm** at 52 wk; aromatase inhibitor **+1.3 cm** over 3 yr; GH after
-mid-puberty **≈ 0**. **The surgical option is an order of magnitude larger than the whole stack.**
-Cost: 37.1 days/cm, 7.71 months in frame, **56.1 % complication rate**.
-It works **after fusion**, so it is *additive*, not competing — and the one series combining it with
-vosoritide found no interference. Not a recommendation to operate; a correction to the file's sense of scale.
+⛔ **"~16 cm from both segments" AND "56.1 % complication rate" ARE BOTH WITHDRAWN.** They came from pooled
+mixed-indication series (1149 patients, femoral 8.85 cm / tibial 7.36 cm) — and the ~16 cm was an **ARITHMETIC
+SUM OF TWO POOLED MEANS**, not a documented practice. R398 finally read the MATCHED population (adults,
+aesthetic indication) and the numbers move:
+· ⭐ **THE DOCUMENTED GAIN IS ~6.7 cm IN ONE SEGMENT, AND TWO INDEPENDENT REVIEWS AGREE.** `giorgino2025`
+  (12 studies, **760 adults**, mean age 24.75, 67% male): weighted mean **67 mm**, study means 62–87.
+  `marwan2020` (11 studies, **795 patients**, mean follow-up **4.9 y**): mean end lengthening **6.7 cm**
+  (SD 0.6, range 1.5–13.0). **1,555 patients between them, one number.**
+· ⛔ **AND ALMOST NOBODY DOES BOTH SEGMENTS: 717 of 760 were TIBIA ONLY, 43 femoral, and just SEVEN patients
+  in the entire aesthetic literature had both.**
+· ⛔ **A PER-PATIENT COMPLICATION RATE DOES NOT EXIST IN A POOLABLE FORM, AND THAT IS A FACT ABOUT THE FIELD.**
+  giorgino2025 counted **mentions** rather than incidence and says so explicitly; `yalcinkaya2025` (20 studies,
+  410 outcomes) shows why — **ADVERSE EVENTS ARE 3% OF ALL REPORTED OUTCOMES vs 75% physiological/clinical.**
+  The field measures centimetres and does not systematically measure harm.
+· ⭐ **WHAT DOES EXIST IS BETTER: marwan2020's PALEY TIERS, per patient — problems 0.78 · obstacles 0.94 ·
+  TRUE COMPLICATIONS 0.15.** (Problem = resolves without operation; obstacle = needs one; complication =
+  residual sequela.) **~1 in 7 carries a residual sequela; nearly everyone hits something en route. The single
+  56% figure was conflating all three tiers.** `verdoni2023`, modern single-protocol with a denominator:
+  **19/92 segments = 20.7%** (achondroplasia, tibia 7.9 / femur 6.9 cm).
+· ✓ **THE RANKING IS UNCHANGED: ~6.7 cm in ONE segment still beats the whole drug stack (1–3 cm), still works
+  AFTER fusion so it never competes for the window, and satisfaction runs 88.8–98%.** Rate limit 37.1 days/cm.
+  One series combining it with vosoritide found no interference. Not a recommendation to operate.
+⚠ Evidence quality is poor and both reviews say so: **no RCTs, MINORS mean ≈10/16**, uncontrolled case series
+in an elective cosmetic field.
 ⭐ **R327 EXECUTED R277's FRONTIER AND THE RATE-LIMITER HAS TWO OBTAINABLE COMPOUNDS — see the R327 section.**
+
+⭐⭐ **AND THE SAME READ INDEPENDENTLY CORROBORATES R397: THE DOMINANT COMPLICATION IS SOFT TISSUE, NOT BONE.**
+giorgino2025's largest category by far is **JOINT AND TENDON — 425 mentions (45% of the total), more than
+DOUBLE infection (197)**, against bone 100, pain 90, material 82, neuro/vascular 43. Named: **equinus
+deformity, knee and ankle contractures, Achilles tightness, quadriceps contracture, valgus/varus.**
+`marwan2020`, different patients and a different taxonomy, agrees: **ANKLE EQUINUS is the most common PROBLEM
+*and* the most common OBSTACLE**, and **SUBTALAR JOINT STIFFNESS/DEFORMITY** plus regenerate deformation are
+the most common TRUE complications. **Two systematic reviews, 1,555 patients, saying in clinical language what
+R397 derived from a rat dose-response and a ten-year strength study: the bone is not what fails.**
 
 ## WHERE THE HEIGHT ACTUALLY IS (as of R274)
 
@@ -2340,12 +2367,37 @@ osteotomies halves what each regenerate must produce **and halves the time** —
 **37.1 days/cm** limit R277 identified and R327 attacked pharmacologically. Modern **motorised intramedullary
 nails** remove the external fixator entirely; median length of stay reported at **3 days**.
 
-⚠ **AND A CORRECTION TO OUR OWN RISK FIGURE.** The **56.1%** complication rate this file quotes comes from
-pooled series dominated by **external fixation and mixed indications**. `giorgino2025` is a systematic review
-of **AESTHETIC lower limb lengthening in ADULTS** — the matched population — and **should be read in full
-before that figure is quoted again.** ⛔ **But nothing in that touches `speth2026`: whatever the complication
-rate, a permanent and worsening extensor deficit is the price, and it is a price the growth-plate route does
-not charge.**
+✅ **AND THE CORRECTION TO OUR OWN RISK FIGURE WAS EXECUTED IN R398 — see the SCALE section, which is
+rewritten.** The 56.1% figure and the ~16 cm figure are both **WITHDRAWN**. ⛔ **But nothing in R398 touches
+`speth2026`: whatever the complication rate, a permanent and worsening extensor deficit is the price, and it
+is a price the growth-plate route does not charge.**
+
+## 🔬🔬 R398 — **THE MATCHED POPULATION READ. Two of this file's surgical numbers were wrong, a per-patient
+## complication rate turns out not to exist, and the human pooled data independently name R397's frontier.**
+
+⛔ **CORR-351 AGAIN, AND `giorgino2025` HAS BEEN IN THE BIBLIOGRAPHY SINCE 2026-08-07, CITED BY SIX NODES,
+WITH A ONE-LINE FINDING THAT RECORDED ITS *METHOD* AND NONE OF ITS NUMBERS.** R397 flagged it as the
+unfinished item. Read in full — with `marwan2020`, the earlier review it cites, which this file had never
+held at all — it corrects the SCALE entry three ways. **All numbers are now in the SCALE section above.**
+
+⭐⭐⭐ **THE ONE FINDING WORTH REPEATING HERE: JOINT AND TENDON IS THE LARGEST COMPLICATION CATEGORY, 425
+MENTIONS = 45% OF THE TOTAL AND MORE THAN DOUBLE INFECTION** — and `marwan2020` reaches the same place by a
+different route, naming **ANKLE EQUINUS as the most common problem *and* obstacle** and **SUBTALAR JOINT
+STIFFNESS/DEFORMITY** among the leading true complications. The structures named — Achilles, ankle, subtalar
+joint, quadriceps — are exactly the ones **crossing the lengthened segment**.
+→ ⭐ **R397 argued the soft-tissue envelope is rate-limiting from a rat dose-response (`wu2026dolength`) and a
+nine-patient ten-year strength study (`speth2026`). TWO SYSTEMATIC REVIEWS COVERING 1,555 HUMANS HAVE BEEN
+REPORTING IT AS THE FIELD'S DOMINANT PROBLEM THE WHOLE TIME. The frontier is not a hypothesis.**
+⭐ **AND IT SHARPENS `g_l6mech_397a`: the target is not "the joint" generically — it is EQUINUS AND SUBTALAR
+STIFFNESS, i.e. the ankle complex and the Achilles, which is where a contracture-directed or anti-catabolic
+adjunct would have to act.** ✗ Still: **no anti-catabolic agent has ever been given during distraction to
+protect the joint in any species**, and `yalcinkaya2025` shows the field would probably not measure it if one
+were — adverse events are **3% of all reported outcomes**.
+
+⚠ **DO NOT OVERREAD THE COMPLICATION PICTURE EITHER WAY.** `marwan2020`'s own conclusion is *favourable height
+gain and satisfaction with a low rate of MAJOR complications* — true complications are **0.15/patient** — and
+satisfaction is 88.8–98%. The soft-tissue burden is mostly in the **problem/obstacle** tiers, which resolve.
+What `speth2026` adds, and what neither review measured, is that the **strength** deficit does not.
 
 ## 🧭🧭🧭🧭 R396 — **"UNLIMITED" — AND YES, WE HAVE BEEN LOOKING IN THE WRONG PLACE. THE PLATE IS A
 ## BATTERY AND IT IS NEARLY FLAT; DISTRACTION IS A GENERATOR, IT WORKS AFTER FUSION, AND IT IS REPEATABLE
