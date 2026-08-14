@@ -1,0 +1,151 @@
+id: round406_the_compartment_question_answered_scube3_is_not_zero_trunk_and_osteolectin_is_more_limb_than_it_is
+name: "R406: the compartment question resolved on standing-height leads - R318's 104 percent leg for SCUBE3 is WRONG, the corrected figure is 29.5 percent trunk with a highly significant trunk arm, and osteolectin turns out to be MORE limb-dominant than SCUBE3"
+aliases:
+  - SCUBE3 trunk or limb
+  - CLEC11A compartment
+  - standing height lead compartment
+type: dataset
+layer: L8
+stub: false
+summary: >-
+  R405 left the SCUBE3 compartment contested and called it resolvable. This resolves it,
+  and it also answers the same question for osteolectin, which had never been asked.
+
+  THE METHOD IS R323's CORRECTION, WHICH HAS NEVER BEEN APPLIED TO EITHER GENE. R318 read
+  compartment off variants selected from the sitting-height-RATIO scan, which is selection
+  on the outcome and guarantees extreme values; R323 showed the same genes give quite
+  different answers when the STANDING-HEIGHT lead is used instead, and ran the correction
+  on 22 genes. SCUBE3 was not among them and CLEC11A had never been asked at all. This
+  round streams the three ABSOLUTE traits from the GWAS Catalog harmonised summary
+  statistics - standing height, sitting height and leg length, all in one cohort of 451,921
+  Europeans - takes each region's standing-height lead, reads the same variant out of the
+  other two scans, and aligns everything to the height-INCREASING allele.
+
+  SCUBE3. Lead variant at chr6:35,313,194, standing height beta 0.0983 at P=8.2e-94.
+  Aligned to the height-increasing allele: SITTING HEIGHT +0.0455 at P=1.4e-17, leg length
+  +0.1086 at P=9.1e-98. THAT IS 29.5 PERCENT TRUNK.
+  ⭐ R318 reported SCUBE3 at about 104 percent LEG with a sitting-height effect of +0.0012
+  at P=0.47 - a flat null. The corrected figure has a trunk arm that is not merely present
+  but significant at seventeen orders of magnitude. R318's number was an artefact of
+  selecting the allele on the ratio, exactly as R323 predicted, and the cost R405 recorded
+  against SCUBE3 was overstated.
+
+  CLEC11A. Lead variant at chr19:50,745,909, standing height beta 0.0784 at P=4.6e-12.
+  Aligned: SITTING HEIGHT +0.0211 at P=0.12 - NOT SIGNIFICANT - and leg length +0.0962 at
+  P=1.3e-15. THAT IS 18.0 PERCENT TRUNK.
+  ⭐ So osteolectin is MORE limb-dominant than SCUBE3, and unlike SCUBE3 its trunk
+  component cannot be distinguished from zero. That is the opposite of what the ranking in
+  R404 and R405 would have predicted, and it is the first compartment fact anyone has
+  established for the one supply candidate with a completed animal experiment.
+
+  WHAT THIS CHANGES AND WHAT IT DOES NOT. Both genes are limb-leaning, so for a subject
+  whose residual growth is trunk-dominant neither is aimed at the compartment that holds
+  the remaining centimetres, and that is a real and unchanged objection to both. What
+  changes is the ordering between them: SCUBE3's compartment cost is materially smaller
+  than R318 recorded and materially smaller than osteolectin's. The compartment argument
+  therefore no longer separates the two candidates in osteolectin's favour; if anything it
+  runs the other way, while every other consideration - power, monotonicity, and a
+  completed supplementation experiment in normal animals - still favours osteolectin.
+
+  ⛔ THE LIMITATION THAT GOVERNS BOTH NUMBERS, AND IT IS NOT SMALL. These are COMMON-VARIANT
+  regulatory lead alleles. The evidence that put both genes on the list is CODING burden -
+  SCUBE3 minus 6.71 cm, CLEC11A minus 0.74 cm - and a regulatory variant near a gene need
+  not allocate height the same way a loss-of-function allele does. The windows are plus or
+  minus 150 kb, so each lead is the region's rather than demonstrably the gene's; the
+  SCUBE3 lead sits roughly 90 kb from the gene in a gene-dense stretch of chr6p21, and the
+  CLEC11A lead roughly 60 kb from its gene. Units are inverse-normalised SD, not
+  centimetres. A compartment coordinate remains a RANKING criterion for additions rather
+  than a predicted effect, and R327's exception still applies - it selects against a lever
+  only when that lever is bounded by the closing window.
+quantitative:
+  - parameter: SCUBE3 compartment on the standing-height lead
+    value: >-
+      standing +0.0983 (P=8.2e-94), SITTING +0.0455 (P=1.4e-17), leg +0.1086 (P=9.1e-98)
+      aligned to the height-increasing allele - 29.5 percent trunk
+    unit: inverse-normalised SD
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: >-
+      computed in R406 from GCST90728584/86/87 harmonised sumstats, lead at chr6:35,313,194.
+      Supersedes R318's ratio-selected figure of about 104 percent leg with a null trunk arm
+  - parameter: CLEC11A compartment on the standing-height lead
+    value: >-
+      standing +0.0784 (P=4.6e-12), SITTING +0.0211 (P=0.12, NOT significant), leg +0.0962
+      (P=1.3e-15) - 18.0 percent trunk
+    unit: inverse-normalised SD
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: >-
+      computed in R406, lead at chr19:50,745,909. The first compartment fact established for
+      osteolectin, and it is more limb-dominant than SCUBE3
+  - parameter: size of the R318 correction for SCUBE3
+    value: >-
+      trunk arm moves from +0.0012 at P=0.47 (ratio-selected, R318) to +0.0455 at P=1.4e-17
+      (standing-height lead, R406)
+    unit: inverse-normalised SD
+    species: human
+    source_ref: bartell2026
+    value_unverified: true
+    note: >-
+      the magnitude of R323's selection artefact on a single gene - from a flat null to
+      seventeen orders of magnitude, on the same trait in the same cohort
+localization: not_applicable
+human_evidence: direct
+human_evidence_note: >-
+  451,921 Europeans, three absolute anthropometric traits measured in one cohort, all
+  effects aligned to the height-increasing allele.
+species_basis:
+  - human
+translation_risk: moderate
+translation_risk_reason: >-
+  The genetics are human and large, but the alleles are common regulatory variants near the
+  genes rather than the coding loss-of-function alleles that motivated both candidates, and
+  the windows are 150 kb in gene-dense regions.
+confidence: B
+claim_grades:
+  - claim: R318's figure of about 104 percent leg for SCUBE3 is an artefact of ratio-selection
+    grade: A
+    basis: >-
+      same trait, same cohort, same method except the selection step - the trunk arm goes
+      from P=0.47 to P=1.4e-17. This is precisely the artefact R323 identified and quantified
+  - claim: SCUBE3's height allele puts about 30 percent of its effect into the trunk
+    grade: B
+    basis: >-
+      standing-height lead with both component traits significant. A common-variant lead
+      allele, not the coding burden allele
+  - claim: >-
+      CLEC11A is more limb-dominant than SCUBE3, with a trunk arm not distinguishable from
+      zero
+    grade: B
+    basis: sitting-height P=0.12 against leg P=1.3e-15 on the same variant
+  - claim: Both candidates are limb-leaning and neither is a trunk lever
+    grade: B
+    basis: >-
+      29.5 and 18.0 percent trunk. Real for these alleles; whether it holds for the coding
+      alleles is untested
+  - claim: The compartment argument no longer favours osteolectin over SCUBE3
+    grade: B
+    basis: >-
+      it now runs slightly the other way, while power, monotonicity and the completed animal
+      experiment continue to favour osteolectin
+key_refs:
+  - ref_id: bartell2026
+    year: 2026
+    type: primary
+    role: >-
+      the source of all three absolute-trait scans in one cohort, which is what makes a
+      compartment decomposition possible at all
+  - ref_id: zhang2023osteolectin
+    year: 2023
+    type: primary
+    role: the candidate whose compartment had never been asked
+  - ref_id: lin2021
+    year: 2021
+    type: primary
+    role: the human genetics that put SCUBE3 on the list, and which these common variants are not
+open_questions:
+  - g_l7_360a
+contradicts: []
+last_verified: '2026-08-14'

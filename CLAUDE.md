@@ -2412,6 +2412,43 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 📐📐📐 R406 — **THE COMPARTMENT QUESTION RESOLVED. R318's "SCUBE3 IS ~104% LEG" IS WRONG — the corrected
+## figure is 29.5% TRUNK with the trunk arm at P=1.4e-17 — AND OSTEOLECTIN TURNS OUT TO BE *MORE* LIMB-DOMINANT
+## THAN SCUBE3.** Run `atlas/tools/round406_scube3_clec11a_compartment_on_standing_height_leads.py`
+
+**METHOD = R323's CORRECTION, NEVER APPLIED TO EITHER GENE.** R318 read compartment off **RATIO-selected**
+variants — selection on the outcome, which guarantees extremes. R323 fixed it by using each gene's
+**STANDING-HEIGHT lead** and ran 22 genes; **SCUBE3 was not among them and CLEC11A had never been asked.**
+Streamed the three ABSOLUTE traits (GCST90728584/86/87, **451,921 Europeans, one cohort**), took each region's
+standing-height lead, read the same SNP from the other two, aligned to the **height-INCREASING** allele.
+
+| gene | lead | standing | **SITTING** | leg | **% TRUNK** |
+|---|---|---|---|---|---|
+| **SCUBE3** | chr6:35,313,194 | +0.0983 (8.2e-94) | **+0.0455 (P=1.4e-17)** | +0.1086 (9.1e-98) | **29.5%** |
+| **CLEC11A** | chr19:50,745,909 | +0.0784 (4.6e-12) | +0.0211 (**P=0.12, ns**) | +0.0962 (1.3e-15) | **18.0%** |
+
+⭐⭐ **THE CORRECTION IS LARGE. R318 gave SCUBE3 a trunk arm of +0.0012 at P=0.47 — a FLAT NULL. The corrected
+trunk arm is +0.0455 at P=1.4e-17.** Same trait, same cohort, only the selection step differs. **That is
+R323's artefact measured on a single gene, and it means the compartment cost R405 recorded against SCUBE3 was
+OVERSTATED.**
+⭐ **AND THE SURPRISE: OSTEOLECTIN IS MORE LIMB-DOMINANT THAN SCUBE3, with a trunk arm that cannot be
+distinguished from zero.** First compartment fact ever established for the one supply candidate with a
+completed animal experiment — and it runs opposite to the R404/R405 ranking.
+
+🧭 **WHAT IT CHANGES.** **Both are limb-leaning, so for a trunk-dominant residual NEITHER is aimed at the
+compartment holding the remaining centimetres — that objection stands against both.** What changes is the
+ordering: **the compartment argument no longer favours osteolectin over SCUBE3; it now runs slightly the other
+way**, while power (10,012 vs 178 carriers), monotonicity, and a **completed supplementation experiment in
+normal animals** all still favour osteolectin.
+
+⛔ **THE GOVERNING LIMITATION, AND IT IS NOT SMALL: these are COMMON-VARIANT REGULATORY LEADS, not the CODING
+burden alleles** (SCUBE3 −6.71 cm, CLEC11A −0.74 cm) that put either gene on the list — and a regulatory
+variant need not allocate height the way a pLoF does. Windows are ±150 kb, so each lead is the **region's**,
+not demonstrably the gene's (SCUBE3's sits ~90 kb out in gene-dense chr6p21; CLEC11A's ~60 kb out). Units are
+inverse-normalised SD, **not centimetres**. A compartment coordinate is a **ranking criterion**, not a
+predicted effect — and R327's exception still applies: it selects against a lever only if that lever is
+bounded by the closing window.
+
 ## 🧪🧪🧪🧪 R405 — **SCUBE3 WORKED PROPERLY. The sufficiency experiment EXISTS and used the recombinant
 ## protein · the mechanism is a CO-RECEPTOR, the one architecture where supply is coherent · and an ONCOLOGY
 ## PROGRAMME IS BUILDING A NEUTRALISING ANTIBODY AGAINST THE EXACT PROTEIN.**
