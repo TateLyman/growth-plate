@@ -2291,6 +2291,87 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🧾🧾🧾 R387 — **THE OPERATING SEQUENCE FROM A LYOPHILISED VIAL, AND THE INJECTION SITES SPECIFIED WITH
+## CADAVER NUMBERS.** ⭐ The key design change: **run the cannula TRANSVERSELY, PARALLEL to the physis** —
+## not toward it, as every ACL/MPFL technique does.
+
+⛔ **WHY THE SITES ARE THE HARD PART: THE PHYSIS IS NOT A PLANE.** `nguyen2013physis`, 26 cadaveric distal
+femoral epiphyses: **three major undulations — a CENTRAL RIDGE of mean height 5.5 mm (range 2.9–9.8), a
+lateral ridge 2.5 mm, a medial peak 2.9 mm** — plus peripheral notches that **deepen with skeletal maturity**,
+and **the lowest point sits anteromedially or posterolaterally.** → **The physis dips up to nearly a
+centimetre INTO the epiphysis. A cannula aimed at the geometric centre of the condylar block can strike it
+even when a plain AP film looks clear.** Hence: transverse path, and **three-plane fluoroscopy, not two.**
+
+⭐⭐ **THE VALIDATED ANGULAR WINDOW.** `nguyen2017mpfl`, 23 cadaveric epiphyses: from a medial epicondylar
+entry, **41% of paths angled distally <10° hit the PHYSIS**, 40% angled distally >10° but anteriorly <10° hit
+the **NOTCH**, 27% angled >20° in both planes hit the **ARTICULAR CARTILAGE** — and **≥90% were safe to 20 mm
+at 15–20° BOTH anteriorly AND distally.** That is a published window with the failure rate quantified on both
+sides of it.
+⭐ **AND THE TIBIAL CORRIDOR IS PROVEN LARGE:** the proximal tibial epiphysis accommodates a transverse
+crosspin **63.5 ± 5.9 mm long × 8.2 ± 1.5 mm diameter without touching physis or articular cartilage.** A
+13 G cannula is 2.4 mm. **The transverse corridor is 3× wider than we need.**
+
+🧾 **STEP 1 — RECONSTITUTE (day of, clean room / laminar flow).**
+① **Equilibrate the SEALED vial to room temperature (~20 min) BEFORE breaking the seal** — the powder is
+hygroscopic and opening it cold condenses water onto it. ② Tap/spin the vial to floor the powder.
+③ Add **sterile Water for Injection to make 10 mM**: volume in mL = **mass in mg ÷ 5.63** (a 5 mg vial → add
+**0.888 mL**). ④ Cap, vortex 60 s, hold 5 min, **inspect against light — it must be optically clear**; if not,
+warm to 37 °C and sonicate briefly, and **do not proceed with visible particulate**. ⑤ **0.22 µm PES/PVDF
+low-protein-binding syringe filter; prime with the first ~50 µL and DISCARD it** (small molecules adsorb to
+fresh membrane). ⑥ Aliquot, keep at 2–8 °C, **use the same day.**
+⭐ **A 5 mg vial = 888 µL of 10 mM = 2.70 mg used per pulse at 60 µL/depot × 8 → one 5 mg vial covers roughly
+two full bilateral pulses.**
+⛔ **If it will not reach 10 mM in water, do NOT switch to a 3% DMSO gel.** Make a more concentrated DMSO
+stock and keep the **final DMSO in the gel ≤0.5% v/v.**
+
+🧾 **STEP 2 — LOAD THE GEL (at the table, per depot, one depot at a time).**
+Tisseel 2 mL kit, FIBRINOTHERM ≤5 min. **Spike 60 µL of 10 mM stock into the SEALER-PROTEIN (fibrinogen)
+syringe only** → 300 µM, **337.8 µg SAG·2HCl per depot**. Invert to mix. **Do NOT touch the thrombin syringe —
+it is the trigger.** Load DUPLOJECT. **Mix at the tip, never in the barrel.** ⛔ **Prepare each depot
+immediately before injecting it; do not pre-mix all eight.**
+
+🧾 **STEP 3 — POSITION AND PLAN.** Supine, both knees prepped, **C-arm able to take AP, lateral AND oblique**
+of each knee. General or deep sedation. **Plan every trajectory on the pre-op MRI/CT** — the physis outline,
+the central ridge depth, and the entry-to-physis distance measured for THIS knee, not assumed.
+
+🧾 **STEP 4 — THE FOUR SITES, AND THE PATH IS TRANSVERSE IN ALL FOUR.**
+**A · DISTAL FEMUR (×2, left and right).** Entry: **at or just DISTAL to the MEDIAL EPICONDYLE**, a small stab
+incision. Trajectory: **transverse, medial→lateral, angled 15–20° ANTERIORLY and 15–20° DISTALLY** (the
+`nguyen2017mpfl` window). Depth: **20–25 mm**, i.e. into the centre of the condylar block, **stopping with
+≥7 mm bone bridge to the far cortex**. ⛔ **The anterior/distal angulation is what clears the central ridge —
+a purely transverse path with 0° distal angulation is the 41%-physeal-violation trajectory.**
+**B · PROXIMAL TIBIA (×2, left and right).** Entry: **medial proximal tibial epiphysis, BELOW the joint line
+and ABOVE the physis**, in the flare below the medial plateau. Trajectory: **transverse, medial→lateral,
+PARALLEL to the tibial plateau**, in the crosspin corridor. Depth **25–30 mm** (the corridor is 63.5 mm long).
+⛔ **Do NOT use the anteromedial ACL entry — that is where 10 of 15 knees showed physeal violation.**
+⛔ **Do NOT go near the tibial tubercle — it is an apophysis continuous with the physis.**
+⛔⛔ **AND NEVER THE PROXIMAL FEMUR, in any pulse — that is the SCFE site (R384).**
+**Two depots per epiphysis:** withdraw the cannula ~10 mm after the first and redirect slightly for the
+second, so the two sources sit apart rather than superimposed.
+
+🧾 **STEP 5 — CONFIRM BEFORE ANY DRUG GOES IN.** With the stylet out: **inject 0.5 mL of iodinated contrast**
+and take **AP + lateral + oblique**. Simultaneously watch with **ultrasound Power Doppler**:
+**thin, SHEET-LIKE subcortical blush = correct · compact BALL-SHAPED hotspot = intramedullary misplacement**
+(`41089149`). ⛔ **If the pattern is ball-shaped or contrast runs down the medullary canal — WITHDRAW AND
+REPOSITION. Do not inject.** Aspirate briefly to clear residual contrast before the gel.
+
+🧾 **STEP 6 — INJECT.** Pass the extended DUPLOJECT applicator **down the cannula lumen** (18 G OD 1.27 mm
+inside 11–13 G ID ≈2.4 mm). **2 mL over ≥60 seconds** — slow, because intraosseous pressure drives marrow-fat
+embolism. **Hold 60 s** after delivery (fibrin sets in 10–30 s), then withdraw the applicator **while still
+injecting the last 0.1 mL** so the tract seals behind it. Withdraw the cannula. Simple dressing.
+**Repeat for all 8 depots. Total drug for the whole session: 2.70 mg.**
+
+🧾 **STEP 7 — AFTER.** Protected weight-bearing 48 h. **Immediate imaging for ANY hip, groin, thigh or knee
+pain or limp** — that is the SCFE rule and it is not negotiable. Then the standing surveillance: **MRI physeal
+thickness at 6 WEEKS (the PD gate — escalate to 1000 µM next pulse ONLY if it has not moved)** · frog-leg
+lateral pelvis **q3 months** · knee MRI at 6 and 12 months for width and bar formation · BoneXpert ΔBA/ΔCA ·
+standing **and sitting** height at a fixed time of day · lateral T-L film + DXA.
+**Next pulse: ≥3 months, preferably 6.**
+
+⛔ **UNCHANGED AND STILL THE ONLY BLOCKER: the material is not qualified for implantation** — no endotoxin
+spec, no impurity qualification, and no SMO agonist has ever been given to a human. Every other parameter in
+this protocol is now specified.
+
 ## ✅✅✅ R386 — **BOTH OPEN ISSUES RESOLVED (ONE CLOSED, ONE BYPASSED), A 1000× UNITS BUG IN R372 FOUND,
 ## AND THE DOSE RECOMPUTED AFTER VOSORITIDE WAS DROPPED.** Run
 ## `atlas/tools/round386_sag_dose_source_strength_and_clearance_bound.py`
