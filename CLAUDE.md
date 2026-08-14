@@ -2481,6 +2481,115 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 🦿🦿🦿🦿🦿 R427 — **THE FOUR PAPERS READ IN FULL. THREE OF R426's CLAIMS CHANGE, AND THE BIGGEST ONE IS
+## THAT THE PRODUCTIVE MECHANICAL AXIS IS *LATERAL*, NOT AXIAL — 0.5 N ACROSS A KNEE LENGTHENS A BONE 3.5%
+## WHILE 17 N THROUGH ITS LONG AXIS SHORTENS IT 4%. NO HUMAN MOVEMENT DELIVERS THE AXIS THAT WORKS.**
+
+⛔ **ONE — THE FUCHS CORRECTION, AGAINST MYSELF, AND IT REOPENS THE ARM R426 CLOSED.** R426 read the abstract
+sentence *"jumpers and controls had similar increases in height"* as a randomised null. **TABLE 1 SAYS
+SOMETHING ELSE: jumpers (n=45) 125.1 → 128.7 cm = +3.6 cm; controls (n=44) 126.8 → 129.9 cm = +3.1 cm.
+A DIFFERENCE OF +0.5 cm OVER SEVEN MONTHS, IN THE FAVOURABLE DIRECTION, IN THE RANDOMISED ARM.**
+⛔ **AND IT WAS NEVER TESTED.** The only statistic on Table 1 is ANOVA p>0.05 **on the LEVELS** — SEM 1.2–1.3
+on a 126 cm mean, dominated by between-child variance, blind to a 0.5 cm difference in CHANGE. **The change
+scores went into the primary analysis AS COVARIATES.** ⚠ **And it cannot be resolved from the paper:** SEMs
+are of the LEVEL, so the SE of the change difference is unrecoverable and no p-value can be reconstructed.
+**A point estimate with no interval — not a positive, and not a null.**
+⭐ **AND THE DOSE IS THE BIGGEST HUMAN NUMBER IN THE LAYER: 8.8 ± 0.9 BODY WEIGHTS**, force-plate measured
+across the 100 jumps (controls 8.6 ± 1.05). The paper's own comparators: **gymnastics 10–15 BW, running
+2–3 BW**, and `brailey2026`'s standardised high jump is **3.77 BW** — so a **61 cm drop landing is ~2.3× an
+ordinary jump.**
+→ **"A RANDOMISED HUMAN NULL AT ITS OWN DOSE" IS WITHDRAWN. It is CORR-340's shape — the caliper was used,
+the number is in Table 1, nobody analysed it. UNDECIDED, and decidable from 940 already-dosed children.**
+
+⭐ **TWO — THE META-ANALYSIS SETTLES WHICH VARIABLE MATTERS, AND IT IS NOT FREQUENCY.**
+· **FREQUENCY DOES NOTHING.** `dandrea2021a`: no significant effect of loading frequency on growth rate
+  within magnitude- and duration-normalised results; two rat-ulna studies at 0 and 2 Hz across 8.5–17 N
+  found growth inhibited **only by maximum load amplitude and loading duration**. **The authors therefore
+  COMBINED static and cyclic data in all further analysis.**
+· **POOLED SENSITIVITY 15.03%/0.1 MPa**, agreeing with `stokes2006`. **By site: TIBIA 19.04 vs VERTEBRAE
+  15.36 — THE LIMB IS MORE STRESS-SENSITIVE THAN THE SPINE.** Proliferative zone height alone 12.1%/0.1 MPa.
+· ⛔ **HARD CEILING: above 0.3–1.0 MPa (or 8.5–17 N in rat ulna) GROWTH IS ARRESTED** — not a linear region.
+· ⭐ **NO AGE EFFECT WITHIN THE ADOLESCENT RANGE** (N=162 rat caudal vertebrae, and across all species/sites).
+· ⛔ **TORSION IS A COST** — oblique-plate torsion significantly reduced rabbit femoral length in 4 weeks.
+· ⭐ **AND THE AUTHORS' OWN PROPOSED MECHANISM FOR WHY INTERMITTENCY HELPS IS TRANSPORT, NOT STRAIN:** no- or
+  low-load periods allow stress recovery and **MAY FACILITATE FLUID INTAKE**, and the zone-height response to
+  pseudo-intermittent waveforms may act **THROUGH FLUID DIFFUSION** limited by viscoelastic recovery time.
+
+⭐⭐⭐ **THREE — THE FACT THAT REORGANISES THE LAYER, HELD IN THIS ATLAS SINCE `noonan2004` AND NEVER IN THIS
+FILE: IMPLANTED MICROTRANSDUCERS IN LAMBS, SAMPLED EVERY 167 s FOR 21–25 DAYS — AT LEAST 90% OF BONE
+ELONGATION OCCURS DURING RECUMBENCY AND ALMOST NONE DURING STANDING OR LOCOMOTION.** Cited by 25 nodes;
+`saltation_stasis_growth` states it correctly as *growth is mechanically gated on a diurnal cycle*.
+⭐ **IT RECONCILES THE TWO RESULTS THAT LOOKED CONTRADICTORY.** `stokes2005`'s 24 h→12 h duty-cycle recovery
+is **not a point on a stress-response curve — it is the RESTORATION OF THE UNLOADED WINDOW IN WHICH GROWTH
+ACTUALLY HAPPENS.** And `sibonga2000`'s unloading null is exactly what you expect **if the unloaded window in
+a normal animal is already long enough for growth to saturate into it.**
+→ ⭐ **THE VARIABLE IS NOT HOW MUCH LOAD BUT WHETHER THE UNLOADED WINDOW IS INTACT.** That makes **recumbency
+and sleep duration a FIRST-ORDER MECHANICAL variable with a direct continuous measurement behind it** — and
+confirms the arm is **PROTECTION**: losing the window costs growth, extending it beyond sufficiency does not
+add. ⚠ Lamb; the human disc-vs-physis partition has never been measured.
+
+⛔⛔ **FOUR — THE JAM, MEASURED, AND I WAS ONE SENTENCE FROM ENTERING IT AS A POSITIVE.** `dandrea2021b`
+reports hypertrophic zone height rising **96 ± 6 → 540.7 ± 67.2 µm** over two weeks of 17 N haversine
+loading (`robling2001`) — a **5.6-fold expansion of the zone that carries ~80% of longitudinal growth.**
+⛔ **`ohashi2002`, same model, same lab: at 17 N the LONGITUDINAL MINERALISATION RATE WAS COMPLETELY
+SUPPRESSED AND DID NOT RECOVER**, with **cracks in the plate**, suppressed cartilage mineralisation and
+suppressed capillary invasion **despite MORE VEGF-expressing chondrocytes** — while plate and hypertrophic
+zone height rose and hypertrophic cell number increased. **`robling2001` gives the length: 4% SHORTER.**
+→ **THE 5.6× IS A JAM. Failure mode #1, eighth instance** — and it puts a caveat on `dandrea2021b`'s own
+abstract line that intermittent regimens raise hypertrophic presence: **raised hypertrophic presence is the
+signature of BOTH a working h_term and a blocked discharge, and only a length endpoint separates them.**
+
+⛔ **FIVE — AXIAL LOADING OF A LONG BONE IS SUPPRESSIVE AT TEN MINUTES A DAY.** `robling2001`, growing rats,
+10-min daily bouts × 2 wk: **~4% SHORTER at 17 N STATIC and ~4% SHORTER at 17 N DYNAMIC**, ~2% at 8.5 N
+static. ⭐ **AT HIGH MAGNITUDE DYNAMIC IS AS SUPPRESSIVE AS STATIC, AND SUPPRESSION TRACKS PEAK LOAD, NOT
+WAVEFORM.** `ohashi2002`: 4 N and 8.5 N recover within a week; 17 N does not.
+⚠ **THE TENSION WITH `mcgarry2024` IS REAL AND I AM NOT RESOLVING IT BY ASSERTION.** 5 N axially to a MOUSE
+tibia — relatively a far larger load than 4 N on a rat ulna — gave a LONGER bone. The one parameter
+separating them by a large factor is **DUTY CYCLE: 2.5 min/week vs 70 min/week — 28×.** Most parsimonious
+reconciliation, **a hypothesis not a result**; different bone and species are equally available.
+→ ⭐ **IF THE DUTY-CYCLE READING IS RIGHT, AXIAL LOADING IS AN INVERTED U IN DURATION AT FIXED MAGNITUDE:
+seconds per week stimulate (PTHrP), tens of minutes per day suppress (stress integration), high magnitude
+jams.**
+
+⭐⭐⭐ **SIX — THE FINDING: THE PRODUCTIVE AXIS IS LATERAL, AND NO HUMAN MOVEMENT DELIVERS IT.**
+`zhang2010knee` — **LATERAL (transverse) oscillatory loading ACROSS THE KNEE**, C57BL/6, **~8 WEEKS OLD**,
+n=21, **5-MINUTE BOUTS AT 0.5 N**, contralateral limb as control: **FEMUR +2.3% vs contralateral and +3.5%
+vs age-matched; TIBIA +2.3% and +3.7%; all P<0.001.** Proximal tibial **growth plate HEIGHT +19.5%**,
+**cross-sectional AREA +30.7%**, and in the **HYPERTROPHIC ZONE both chondrocyte NUMBER (P<0.01) and CELLULAR
+HEIGHT (P<0.001) increased.** `zhang2012elbow` replicates it in the forelimb (**humerus +1.2%, ulna +1.7/
++3.4%**) and shows the response **propagates to the WRIST AND SHOULDER** of the loaded limb (c-fos, egr1, atf3).
+⭐ **COMPARE THE AXES DIRECTLY: AXIAL 4–17 N, 10 min/day → 2–4% SHORTER. LATERAL 0.5 N, 5 min/day → 2.3–3.7%
+LONGER, with the plate 19.5% TALLER *AND* THE BONE LONGER — which is exactly the pairing that separates a
+real h_term gain from `ohashi2002`'s jam.**
+⭐⭐ **AND THE PROPOSED MECHANISM IS NOT STRAIN.** The programme's own reviews state joint loading works
+**WITHOUT INDUCING SIGNIFICANT IN SITU STRAIN** at the responding site, attributing it to **intramedullary
+pressure and interstitial FLUID FLOW.**
+⭐⭐⭐ **WHICH MAKES THREE INDEPENDENT LITERATURES CONVERGE ON TRANSPORT INTO AN AVASCULAR TISSUE:** Yokota's
+joint loading (lengthens without local strain, fluid-flow mechanism) · `serrat2010` (chronic running raises
+solute delivery, measured at rest, tail as systemic control) · `dandrea2021b` (zone height responds to
+low-load windows, *perhaps through fluid diffusion*). **`noonan2004` is the phenomenon those three mechanisms
+would produce.**
+⛔ **THE HARD LIMIT: it is a piezoelectric loader clamped across a mouse joint.** No human device, no human
+study, no scaled force estimate — and **walking, running and jumping are all AXIAL, i.e. the suppressive
+axis. The human exercise literature has never tested the axis that works.** `g_l6mech_427a`.
+
+⚠ **SEVEN — THE PTHrP DOSE-RESPONSE, WITH ITS THRESHOLD AND ITS INCONVENIENT TIME COURSE** (`xu2013pthrp`,
+CD200-sorted rat prehypertrophic/hypertrophic chondrocytes, cyclic TENSILE strain at 0.5 Hz).
+· **THRESHOLD: 1000 µstrain — NOTHING. 2000 and 4000 µstrain — significant rise in PTHrP mRNA AND protein.**
+  The authors state it: strain regulates PTHrP only **above a threshold between 0.1% and 0.2% strain.**
+· ⛔ **TIME COURSE RUNS AGAINST THE BRIEF-BOUT MODEL: 1 h nothing · 6 h mRNA · 24 h AND 48 h needed for
+  PROTEIN.** `mcgarry2024`'s bout is **50 SECONDS.** Either in vivo strain far exceeds 2000 µstrain, or the
+  2D-membrane time course does not transfer. **RECORDED AS A CONFLICT, NOT SMOOTHED.**
+· Cyclic strain did **not** change the cell cycle at any magnitude — not a proliferation effect. Frequency
+  fixed at 0.5 Hz and never varied.
+
+🧭 **WHAT R427 CHANGES IN THE PRESCRIPTION.** The subtraction stays first and gets a mechanism: **protect the
+unloaded window**, because that is when the bone actually elongates. **Jumping goes back to UNDECIDED** —
++0.5 cm untested at 8.8 BW — rather than dead, and the way to settle it is a data request, not a trial.
+**Duty cycle, not frequency, is the axial variable.** And the largest mechanical effect in this atlas sits on
+an axis — transverse joint loading — that **no exercise, no device and no human study has ever delivered**,
+which is now the single most interesting unbuilt thing in the mechanical arm.
+
 ## 🏃🏃🏃🏃 R426 — **MOVEMENT WORKED TO THE END. The atlas held a SEVENTEEN-NODE LOADING DOSE-RESPONSE
 ## LAYER the ledger never carried. Optimising it SPLITS MOVEMENT INTO THREE DISSOCIABLE MECHANISMS — and
 ## the one R425 prescribed (IMPACT) HAS A RANDOMISED HUMAN NULL AT ITS OWN DOSE, while the one nobody has
@@ -2528,7 +2637,9 @@ whole project.** The greps that find it are **LOADING · STRAIN · COMPRESSION �
   unloading half is a PROTECTION arm, not a growth arm — which retires the recumbency-as-lever idea R425
   left half open.**
 
-⛔⛔ **TWO — AND THEN THE RANDOMISED HUMAN TRIAL. R425's PRESCRIPTION HAS AN RCT NULL AT ITS OWN DOSE.**
+⛔ **TWO — THE RANDOMISED HUMAN TRIAL.** ⛔⛔ **R427 READ IT IN FULL AND WITHDREW THE WORD "NULL" — SEE R427
+BEFORE CITING ANYTHING BELOW. Table 1 gives jumpers +3.6 cm vs controls +3.1 cm = +0.5 cm IN THE FAVOURABLE
+DIRECTION, never tested, at 8.8 BODY WEIGHTS. The arm is UNDECIDED, not dead.**
 **`fuchs2001`: 89 prepubescent children randomised to ONE HUNDRED two-footed jumps off a 61 cm box, THREE
 TIMES A WEEK, for SEVEN MONTHS, vs non-impact stretching.** Femoral neck and lumbar spine BMC up 4.5% and
 3.1%. **AND THE PAPER STATES THAT AFTER SEVEN MONTHS JUMPERS AND CONTROLS HAD SIMILAR INCREASES IN HEIGHT** —
