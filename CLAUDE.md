@@ -2291,6 +2291,129 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🔄🔄🔄🔄🔄 R388 — **THE SWITCH TO SYSTEMIC. THE REGIMEN WAS ALREADY PUBLISHED AND THIS FILE NEVER
+## EXTRACTED IT. Two independent mouse studies cross-check to ONE GRAM PER PULSE, and the only real blocker
+## is FORMULATION VOLUME — which is arithmetic, not biology.** Run `atlas/tools/round388_systemic_sag_regimen.py`
+
+The operator read R385–R387 — image-guided cannulation of four epiphyses, a fibrin applicator that sets in
+10–30 s, sub-milligram spiking arithmetic, an instrument passing millimetres from an open physis — and said
+switch. **He is right, and the reason is better than "it is simpler".**
+
+⛔ **ZERO — CORR-333 AGAIN, ON THE PAPER THAT DECIDES THE ROUTE.** `li2021` has been in this bibliography
+since **2026-08-07**, is **cited by 9 nodes**, and R384 already pulled one arm out of it. **Its DOSING
+SECTION — dose, route, schedule, vehicle, the stature numbers, the toxicity screen and a VERTEBRAL
+measurement — was never read**, while five rounds built a local depot around the claim that the systemic
+route had no usable regimen. Full text is open access at PMC8591400.
+
+⭐⭐⭐ **ONE — THE REGIMEN, VERBATIM FROM THE METHODS.** **SAG 20 µg/g body weight = 20 mg/kg,
+SUBCUTANEOUS, EVERY OTHER DAY, P7 or P14 → P30 (a 16–23 day course).** Vehicle: **SAG dissolved in DMSO to
+5 mM, then diluted with normal saline.**
+· **Body length 117.2 ± 6.9 → 133.2 ± 6.1 mm** · femur **+67.4%** · tibia **+33.1%** · **L3 VERTEBRA +32.1%**
+  · skull +18.5%.
+· **Viscera — spleen, liver, heart, kidney, lung, intestine — inspected: no abnormality or tumorigenesis.**
+  ⚠ **INTESTINAL HYPERPLASIA IN 6.1%** — the classic Hh-agonist gut effect and the one finding that is not clean.
+⛔ **CORR-203 GOVERNS THE EFFECT SIZES ABSOLUTELY.** This is restoration in an Ihh-ablated dysplasia, not
+elevation above normal. **+67.4% femur is not a number to expect. What transfers is DOSE, ROUTE, SCHEDULE,
+FORMULATION, THE TOX SCREEN AND THE VERTEBRAL REACH.**
+
+⭐⭐⭐⭐ **TWO — THE CROSS-CHECK, AND IT IS THE STRONGEST THING IN THE ROUND.** FDA BSA allometry (Km 3 → 37)
+gives **HED 1.62 mg/kg per dose = 81 / 97 / 114 mg at 50 / 60 / 70 kg**. Held to the 3-week pulse the depot's
+own bead life sets, every other day = **11 doses = 0.89 / 1.07 / 1.25 g per pulse.**
+Now scale `trompet2024`'s completely independent systemic arm the same way — **25 mg/kg INTRAPERITONEAL,
+ONCE DAILY, 7 days, in NORMAL wild-type mice** — and it gives **0.85 g per pulse at 60 kg against li2021's
+1.07 g. RATIO 1.26.**
+⭐ **Two laboratories, two routes, two durations, two models, two different endpoints — converging on ROUGHLY
+ONE GRAM PER THREE-WEEK PULSE IN A 60 kg HUMAN.** Not an arithmetic coincidence: both were dosed near the top
+of murine tolerance and BSA is the standard bridge. **The number is robust.**
+⭐⭐ **AND THE TWO ARE COMPLEMENTARY, WHICH IS THE ACTUAL ARGUMENT FOR THE ROUTE:**
+· **`trompet2024` is the NORMAL-ANIMAL arm** — systemic SAG in wild-type mice, **resting-zone pool +61%**,
+  singlets→doublets/triplets, Ki67 up in the top 50 µm. **CORR-203 does not touch it.**
+· **`li2021` is the DOSE / ROUTE / FORMULATION / TOX / COMPARTMENT arm** — and **the only study on this axis
+  that ever measured a VERTEBRA.**
+**Neither alone justifies the route. Together they supply the pool mechanism in a normal animal AND the
+practical regimen with the trunk reach.**
+
+✓ **THREE — THE INTENSITY QUESTION RESOLVES TOWARD THE LOWER SCHEDULE.** `mao2026sag` flags **25 mg/kg** as
+**anti-proliferative with delayed G0/G1** after a single i.p. dose. **li2021's 20 mg/kg EVERY OTHER DAY is
+HALF the cumulative exposure of a 25 mg/kg daily arm** — and it is the arm carrying both the stature result
+and the clean viscera. **Copy li2021's schedule, not trompet2024's.**
+
+⛔⛔ **FOUR — THE REAL BLOCKER, AND IT IS FORMULATION VOLUME.** li2021's 5 mM DMSO stock is **2.45 mg/mL**.
+A **97 mg** human dose in that vehicle is **39.7 mL** — against **204 µL** for a 25 g mouse. Trivial in the
+mouse, **impossible in a human**, because s.c. volume is ~**1–2 mL per site**.
+| aqueous conc. (dihydrochloride) | 60 kg dose volume | s.c. sites |
+|---|---|---|
+| 5.6 mg/mL (10 mM) | 17.3 mL | 9 — no |
+| 10 mg/mL | 9.7 mL | 5 — no |
+| **20 mg/mL** | **4.9 mL** | **3 — feasible** |
+| **30 mg/mL** | **3.2 mL** | **2 — feasible** |
+| **50 mg/mL** | **1.9 mL** | **1 — feasible** |
+→ ⭐ **THE REQUIREMENT IS AN AQUEOUS SAG DIHYDROCHLORIDE FORMULATION AT ≥30 mg/mL.** That is **preformulation
+work — solubility, tonicity, pH, stability — not a scientific unknown**, and the salt exists precisely because
+the free base is cLogP 6.79. ⛔ **DO NOT SCALE THE DMSO VEHICLE. 40 mL of DMSO subcutaneously is not a dosing
+option.** Gap `g_l12_388b`.
+
+⭐⭐ **FIVE — AND THE MATERIAL ARGUMENT INVERTS, WHICH NOBODY EXPECTED.** One pulse at 60 kg ≈ **1.07 g**;
+four pulses a year ≈ **4.28 g**. At catalogue prices (order $300–500 per 10 mg) that is tens of thousands of
+dollars per pulse and is **simply the wrong way to buy it.** ⭐ **AT GRAM SCALE YOU COMMISSION SYNTHESIS
+RATHER THAN BUYING CATALOGUE — SAG is 490 Da with a published route and a multi-gram batch is an ordinary
+contract job. AND ONCE A CUSTOM BATCH IS BEING MADE ANYWAY, THE *INCREMENTAL* COST OF RUNNING IT TO
+PHARMACEUTICAL GRADE WITH AN IMPURITY AND ENDOTOXIN PACKAGE IS FAR SMALLER THAN GMP ON TOP OF NOTHING.**
+**R373's single stated blocker was "no GMP SAG". The systemic route's LARGER dose makes that problem EASIER
+to justify, not harder** — the opposite of what the depot's microgram payload implied.
+
+🧾 **SIX — THE HONEST LEDGER.**
+**SYSTEMIC WINS ON**
+· **NO PROCEDURE AT ALL** — no cannula, no sedation, no fluoroscopy, no instrument near a physis, and the
+  instrumentation-driven SCFE risk that dominated R385–R387 **disappears entirely.**
+· ⭐⭐ **IT REACHES THE TRUNK. L3 +32.1%.** The residual at BA16 is **trunk-dominant** (R274/R318) and **a knee
+  depot cannot reach a vertebral plate at all.** **THIS IS THE DECISIVE ARGUMENT AND IT IS A COMPARTMENT
+  ARGUMENT, NOT A CONVENIENCE ONE.** R374 named this tension and could not resolve it; the systemic route
+  resolves it.
+· every growth plate at once, including ones nobody would instrument
+· **SUBCUTANEOUS — the same route he already uses for GH**
+· **reversible day to day.** A set depot cannot be taken back; this can be stopped mid-pulse.
+· formulation, schedule and a toxicity screen are all published
+**SYSTEMIC LOSES ON**
+· **~1 g per pulse vs 2.70 mg for the depot — about 400×** more drug
+· systemic hedgehog activation is the exact hazard the local route was designed to avoid. Counterweights:
+  `heine2011sag` (one week systemic in neonatal animals, tolerated, **no tumour promotion**) and li2021
+  (2–3 weeks, viscera clean)
+· **intestinal hyperplasia 6.1%**
+· ⛔ **the depot has the ONLY true LENGTH endpoint in a NORMAL animal** (trompet2024's bead: femur
+  +2.75/+2.64/+3.63% at 1/2/6 months, still widening). **Every systemic length result is a rescue.**
+
+⛔ **SEVEN — THE ONE GAP THAT DECIDES IT, STATED SO IT IS NOT RE-READ AS A NEGATIVE.** **No systemic SAG
+regimen has produced a bone-length endpoint in a normal animal.** `trompet2024`'s own systemic length arm is
+**UNINFORMATIVE, NOT NULL** — 7 days of drug read 2 days later, n=7 vs 5, **95% CI −2.03 to +6.23 mm on a
+12.7 mm bone**, point estimate **+2.1 mm in the FAVOURABLE direction** (R368). Under R302 that is a **gap**.
+**It is an unrun experiment, and it is cheap: 20 mg/kg s.c. q2d × 3 wk in NORMAL mice starting POST-SOC, read
+at maturity with a caliper on femur, tibia AND vertebrae, n ≥ 10.** Gap `g_l12_388a`.
+⚠ **And the stage caveat is real: both mouse regimens are early-postnatal. Nobody has given a systemic
+hedgehog agonist to any animal at a skeletal stage equivalent to BA16.**
+
+🎯 **THE SIMPLE PROTOCOL — this is what replaces R385–R387's twelve-step procedure.**
+· **DRUG** — SAG **dihydrochloride**, aqueous, **≥30 mg/mL**, sterile, in a multi-dose vial.
+· **DOSE** — **1.62 mg/kg per administration** (≈97 mg at 60 kg) = **3.2 mL at 30 mg/mL.**
+· **ROUTE** — **subcutaneous**, abdomen or thigh, **rotating sites**, split across **2 injections** if >2 mL.
+· **SCHEDULE** — **EVERY OTHER DAY for 3 WEEKS** = 11 doses. Then **STOP.**
+· **INTERVAL** — **≥3 months, preferably 6**, unchanged from R374/R375 and **still derived, never measured**
+  (`orikasa2024`: sustained occupancy CONVERTS the pool; `trompet2024`: a 3-week input was still widening at
+  6 months). ⛔ **DO NOT MAINTAIN CONTINUOUS DOSING.** The pulse is what substitutes for the PTCH1 feedback a
+  SMO agonist bypasses (R375).
+· **START WITH ONE PULSE AND DO NOT PROCEED UNTIL THE 6-MONTH READOUT EXISTS.**
+· **MONITOR** — **ΔBA/ΔCA by BoneXpert on serial hand films** (still the primary, still not done) · **standing
+  AND sitting height at a fixed time of day** (sitting height is now the endpoint that matters, because this
+  route is the one that can move it) · knee and spine imaging at 6 and 12 months · **GI symptoms** —
+  hyperplasia is the one dirty finding · skin surveillance.
+· **STOP IF** — plate widens without height gain (charge-without-discharge, 8 prior instances) · ΔBA/ΔCA
+  accelerates · any GI or skin lesion.
+
+⛔ **WHAT IS STILL NOT FIXED:** no GMP SAG and **no SMO agonist has ever been given to a human by any route**
+(clinicaltrials.gov returns zero SMO-agonist studies) · **the pulse interval has never been measured in any
+species** · **no aqueous SAG formulation exists at any concentration** · and the systemic length experiment
+above has never been run.
+
 ## 🧾🧾🧾 R387 — **THE OPERATING SEQUENCE FROM A LYOPHILISED VIAL, AND THE INJECTION SITES SPECIFIED WITH
 ## CADAVER NUMBERS.** ⭐ The key design change: **run the cannula TRANSVERSELY, PARALLEL to the physis** —
 ## not toward it, as every ACL/MPFL technique does.
