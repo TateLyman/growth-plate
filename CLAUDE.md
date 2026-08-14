@@ -432,6 +432,12 @@ and do not collapse to knees-only. Both compartments are live for him.
   is 49.1% (the median) corrected, while NPR3 corrects to 59.2%. The axial-reach claim now rests ONLY on
   dabogratinib's direct L4–L6 result, and the compartment argument no longer ranks the arms.**
   Since the residual at BA 14.5+ is trunk-dominant (R274), **the CNP arm is aimed at the spent compartment.**
+  ⛔⛔ **THAT LAST SENTENCE IS OVERTURNED BY R425 FOR THIS SUBJECT — READ R425 BEFORE CITING IT.** The
+  "trunk-dominant residual" is `aeppli2025`'s POPULATION PRIOR and **CORR-195 says he is off that
+  distribution** (knees open, growing at BA16, grew on GH alone). **The CNP arm is IN, on the LIMB
+  compartment**, because under Regime 2 **h_term is the only term left with an approved obtainable agent**.
+  The three pharmacological lines above are untouched and are evidence the arm does not reach the TRUNK —
+  **not evidence it fails at the KNEE.**
   ⛔ **"Navepegritide lowers upper:lower segment ratio" IS DELETED as a supporting line.** Three 2026 sources
   in this bibliography give the **SAME non-significant −0.02** for BOTH arms: `cnpmeta2026` ULS −0.02 (95% CI
   −0.04 to +0.01), **P=.17, I²=0, vosoritide and navepegritide SEPARATELY both −0.02**; `savarirayan2026infig`
@@ -2474,6 +2480,157 @@ is a blood draw, and seven rounds rest on a number the file itself flagged as un
 CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS A PREMISE.** Until the
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
+
+## 🦴🦴🦴🦴 R425 — **THREE DECISIONS. NAVEPEGRITIDE GOES *IN*, decided against CORR-195 instead of a
+## population prior. THE SITE TERM OPENS AND ITS FIRST FINDING IS AN ABSENCE — nobody has ever sampled a
+## PAEDIATRIC HUMAN VERTEBRAL PHYSIS. And the loading prescription is JUMPING, NOT VIBRATION.**
+## Operator constraint: **OPEN-PLATE ROUTES ONLY — compounds and techniques. Every surgical route excluded.**
+
+⭐⭐⭐ **A1 — THE CNP ARM GOES BACK IN, AND THE DECIDING ARGUMENT IS STRUCTURAL, NOT COMPARTMENTAL.**
+The arm was dropped on *"the residual is trunk-dominant, so a limb-directed agent is aimed at the spent
+compartment."* Two things dismantle that as it stands.
+· **R421 REMOVED THE GWAS HALF.** Both sides of the erdafitinib-vs-CNP comparison were computed by a
+  retired method, and NPR2's first-ever compartment assignment is **29.8% trunk — below the corrected
+  method's median of 45.0 but entirely unremarkable against its 8.2–55.2 range.** This file has been
+  reading *"limb-leaning"* as *"aimed at the spent compartment"*. It means slightly below average.
+· ⭐ **AND THE PREMISE IS A POPULATION PRIOR THAT THIS FILE'S OWN CORRECTION SAYS DOES NOT DESCRIBE HIM.**
+  "Trunk-dominant residual" is `aeppli2025`, where at BA 14.5 the knees are worth 0.3–0.4 cm. **CORR-195
+  states he is OFF that distribution — knees radiographically OPEN, demonstrably GROWING at BA16, and they
+  grew on GH alone.** CLAUDE.md already carried the sentence *"NOT an argument to stop vosoritide —
+  CORR-195"* and the arm was dropped anyway. **FOR HIM THE LIMB COMPARTMENT IS NOT SPENT.**
+⭐⭐ **THE DECIDER: h_term IS THE ONLY TERM LEFT WITH AN OBTAINABLE AGENT.** Under R360's **Regime 2** —
+terminus is a BUDGET, not a date — total height is set by **AMPLIFICATION and TERMINAL CELL HEIGHT alone**,
+because throughput only reaches the terminus sooner. **R423 CLOSED amplification** (no agent anywhere; its
+one druggable circuit is a band whose both ends shorten). The **pool** arms have no obtainable molecule
+(SAG has no GMP material, HHIP has no molecule in any species).
+→ **h_term is the ONLY term that (a) adds height under Regime 2, (b) is POOL-FREE — it adds height WITHOUT
+SPENDING A DIVISION — and (c) has an APPROVED agent whose label criterion is "OPEN EPIPHYSES".**
+✓ And it is the only arm with a proven bone-age-sparing human result — `dauber2026`, **+4.0 SD velocity Z
+with BA/CA UNMOVED.**
+⛔ **WHAT DOES NOT CHANGE: the three pharmacological lines are untouched** — vosoritide **L1–L4 null** (EMA),
+**axial null in monkeys**, **rat axial dose → scoliosis + kyphosis + fractures**. ⭐ **NOTE PRECISELY WHAT
+THEY ARE: evidence the arm does NOT REACH THE TRUNK. They are not evidence it fails AT THE KNEE.** So the
+question is not "does the CNP arm reach the spine" — it does not — but **"is a limb-directed, pool-free
+agent worth running in a subject whose limb plates are open and growing", and the answer is yes.**
+⚠ **CONDITIONS: IN, ON THE LIMB COMPARTMENT.** CORR-195 asserts the knees are open; **it has never
+QUANTIFIED the limb residual**, and a velocity agent's value scales with remaining time × remaining
+capacity. The sizing measurement is on the list below (standing MINUS sitting height, plus knee imaging).
+**SCFE surveillance is not optional** — vosoritide contributed 3 of `dauber2026`'s cases and R384 scores the
+risk as stacked: frog-leg lateral pelvis at baseline and q3 months; any hip, groin, thigh or knee pain or
+limp is an IMMEDIATE imaging indication.
+
+⭐ **A2 — THE SIX FREE MEASUREMENTS, ORDERED — AND THE HYGIENE ITEM THAT INVALIDATES EVERY OTHER NUMBER.**
+⭐⭐ **ZERO — MEASUREMENT HYGIENE, FROM R319, AND IT HAD NEVER REACHED THIS LEDGER. STANDING *AND* SITTING
+HEIGHT AT A FIXED TIME OF DAY AFTER A FIXED PERIOD RECUMBENT.** The diurnal swing is **~2 cm of stature
+(19.3 mm, 1.1%)** and **0.3–0.8% of SITTING height**, with **54% lost in the first hour after rising**.
+**AN UNSTANDARDISED MEASUREMENT TIME CAN FABRICATE OR HIDE A CENTIMETRE OF APPARENT ANNUAL GROWTH.** Every
+velocity number claimed for this subject is uninterpretable without it, and it costs nothing.
+1. **ΔBA/ΔCA by BoneXpert on serial hand films** — named by R355, R360 and R422 as outranking every compound
+   question. **0.2–0.4** → Regime 2 confirmed, the height is in yield and pool. **0.7–1.0 despite a low
+   reported oestradiol** → matches `smith2008`'s residual and no oestrogen-directed agent reaches it.
+   R422 makes it additionally a **FALSIFICATION TEST of the oestradiol number.**
+2. **LC-MS/MS (or extraction) oestradiol PLUS the `ferris2017` engagement panel** — testosterone, LH, FSH,
+   haematocrit. R422's 2×2 resolves target engagement even without mass spectrometry if the panel is drawn.
+3. **SERUM INORGANIC SULFATE** — see B2; it now carries a decision rule, not a gate.
+4. **HOMA-IR** — gates metformin, the only period-directed agent in R297's audit.
+5. **SERUM OSTEOCRIN / MUSCLIN** — R424's output; paediatric reference values exist.
+6. **EXOME OR WGS AGAINST THE 207 HEIGHT GENES** — R300 gave every one a signed effect in centimetres and
+   nothing in 425 rounds has ordered it.
+
+⭐⭐ **B1 — THE *SITE* TERM IS NOW A NAMED OPEN TERM, AND ITS FIRST-CLASS FINDING IS AN ABSENCE.**
+**THE PAEDIATRIC HUMAN VERTEBRAL PHYSIS HAS NEVER BEEN SAMPLED BY ANYONE — AND THIS ATLAS'S OWN DATASET
+INVENTORY SAYS SO IN THOSE WORDS.** The Human Cell Atlas disc entry is annotated *vertebral endplate
+cartilage in ADULTS; the paediatric vertebral physis is absent from every atlas.* Checked against every
+axial source the file holds: **GSE146904 = ADULT lumbar spine** (growth plate only as a reference tissue) ·
+**GSE252288 (69 in-vivo human chondrocyte samples) = APPENDICULAR** · **`richard2025`'s LUMBAR/THORACIC ATAC
+= FETAL and killed by CORR-339** (it measures tissue composition, not chondrocyte regulation) · **GSE9160
+and chu2026 = LIMB.**
+→ ⭐ **THE SITE TERM WAS NEVER WORKED BECAUSE THE TISSUE HAS NEVER BEEN COLLECTED. That is a hole in the
+FIELD, not an oversight in this atlas** — and it is why ~270 rounds of ledger have reported it untouched.
+⚠ **CONSEQUENCE: EVERY AGENT IN THIS FILE WAS CHARACTERISED ON LONG BONES.** The complete list of agents
+with ANY vertebral length endpoint is **four, and three are unusable**: dabogratinib L4–L6 (unobtainable,
+no adolescent arm) · SAG/`li2021` L3 **+32.1%** (research-grade, no GMP) · `shuhaibar2017` tail +8.5–9.7%
+(mouse genetic) · **vosoritide L1–L4 (NULL).**
+⚠ **DO NOT OVERREAD `ekizoglu2026`.** Median mature cervical ring apophysis ~22 y in males with stage 3 into
+the third decade is a **peripheral RIM maturity MARKER**, it is **CERVICAL**, and vertebral body height is
+produced by the **ENDPLATE** physes. Evidence the axial skeleton matures late — not a measurement of
+remaining vertebral growth. R319 already says this.
+
+⭐ **B2 — ORAL SODIUM SULFATE: A DECISION RULE, NOT A PERPETUAL GATE.** Stays **grade D**, and it is the
+only obtainable compound in the file with a **TRUNK-SPECIFIC human anchor**.
+✓ **FOR:** sitting-height **P=2.16e-07** vs 0.0064 standing on the commonest SLC13A1 allele, **twice the
+effect at the same N** · Step 0 clean · acts on **h_term** · **CHST3 is HZ-peaked while SLC26A2 DECLINES
+into HZ**, the configuration in which SUBSTRATE rather than enzyme constrains flux · approved, oral, cheap.
+⛔ **AGAINST:** no sulfate donor has a bone-length endpoint in ANY species · renal reabsorption is
+capacity-limited, so the kidney dumps an oral load and the only human demonstration is a **single-dose +25%
+excursion at 2 h**, not a new set point · and the two IMPC rows on the supply chain run the **WRONG** way
+(**Slc26a2 het TIBIA +0.242, P=0.00384** — the rare, informative direction).
+⭐ **THE RULE, SO ONE ASSAY CLOSES IT: DRAW SERUM INORGANIC SULFATE. LOW end of range → the genetics support
+correcting it, the effect is trunk-weighted, take it. MID-RANGE OR ABOVE → homeostasis says there is nothing
+to gain; DROP the compound rather than leave it gated.**
+⭐ **The free half is actionable regardless: 1.5 g of ordinary PARACETAMOL drops serum sulfate 24%** — a
+larger acute perturbation, in the harmful direction, than carrying a nonsense allele.
+
+⛔ **B3 — NON-ENDOCHONDRAL IS A NAMED TERM AND IT CLOSES AS A MEASUREMENT ARTEFACT, NOT A LEVER.**
+Sitting height = vertebral BONE + intervertebral DISC, and the discs are ~¼ of the spinal column.
+`marcoslorenzo2026`: 4 h supine flotation → **stature +1.6 ± 0.5 cm**, only −0.4 ± 0.3 reversed by 15 min
+upright, cervical disc height up at every level C3–T1, passive vertebral stiffness falling across the whole
+column, muscle CSA unchanged. ⛔ **DECIDED: THAT IS THE DIURNAL SWING BEING MAXIMISED, NOT A GAIN** — it is
+disc water and it returns. **R337 already closed the disc as a growth reserve on `stokes2006disc`: discal
+height growth is effectively ZERO after age 12 (n=188), and spinal growth from 10→20 is almost exclusively
+VERTEBRAL.** `veres2026` prices sustained unloading — chronic back pain, degradation of every spinal tissue,
+raised herniation risk — and the flotation subjects developed neck pain within four hours.
+⭐ **What survives is A2's hygiene item, plus ONE unasked question: does sustained axial unloading raise
+vertebral PHYSEAL output, as distinct from disc height?** `halanski2026`'s FEA gives a reason to wonder —
+growth-plate stress WORSENS as disc height DECREASES, so a taller disc mechanically protects the vertebral
+physis — and it has never been asked in any species. **A gap, not a lever.**
+
+⭐⭐ **C — THE LOADING PRESCRIPTION IS *JUMPING*, AND THE BRIEF'S OWN CANDIDATE (VIBRATION) HAS NOTHING.**
+⛔ **THE GUARD FIRST.** `gymnastics_stature_effect` is the human natural experiment and it runs the wrong
+way — >18 h/wk gymnasts had peak height velocity **5.48 cm/yr vs 8.0 in swimmers**, with selective stunting
+of **LEG** length and no change in CA/BA. ⭐ **THE ATLAS'S OWN ADJUDICATION RESOLVES IT AS A MODALITY SPLIT,
+NOT A CONTRADICTION: COMPRESSIVE, REPETITIVE, THROUGH A SMALL JOINT → SUPPRESSES** (the gymnast wrist:
+distal radial physeal stress injury with acquired positive ulnar variance — an internally controlled human
+demonstration) **· IMPACT-TYPE, INTERMITTENT, AXIAL → preserved or promoted.** That is R253's
+two-terms-of-opposite-sign result and the file already contained it.
+⚠ **And the confound that bounds the prescription: the FIG review says causality cannot be established
+because training volume is confounded with SELECTION, ENERGY AVAILABILITY and family size, and no study has
+separated mechanical loading of the physis from energy deficit.** The dose that promotes is modest
+(3 sessions/wk); the dose that suppresses is **20+ h/wk at restricted energy**. **That boundary IS the
+prescription.**
+⭐⭐ **AND THE MODALITY WITH A HUMAN HEIGHT ENDPOINT WAS ALREADY IN THIS ATLAS AND NEVER IN THE LEDGER.**
+`wang2025`: **47 prepubertal children aged 8–11, 24 weeks of progressive jumping, 3 × 50 min/wk → HEIGHT
+GAIN 4.200 vs 2.478 cm, p=0.001**, femoral neck BMD Z **+1.075**.
+⛔ **AND THE DESIGN IS WEAK AND THIS ROUND SAYS SO.** Its sibling `wang2025jumpaxis` carries **THE SAME
+REGISTRATION (ChiCTR2500095544)** — one trial reported twice — and describes the design as
+**NON-RANDOMISED**; the exercise group is **n=20 in one report and n=15 in the other**; registration was
+post-hoc; single centre, unblinded, unequal groups. **AND THE MEDIATION ANALYSIS IS INTERNALLY INCOHERENT:
+the indirect effect via femoral-neck BMD is NEGATIVE (β −0.442, 95% CI −1.474 to −0.009) with NO direct
+effect (p>0.05)** — which does not support the headline.
+✓ **The mechanism arm is at least coherent: IGF-1 and the IGF-1/IGFBP-3 molar ratio ROSE, IGFBP-3 FELL, and
+SERUM GH DID NOT CHANGE** — so if real it is an **IGF-1-BIOAVAILABILITY** effect, not a somatotroph one.
+⚠ Two weak observational lines point the same way and neither is strong: `lin2026lockdown` (72 children,
+growth rate lowest during lockdown but **NOT significant overall**; males significant post-vs-during at
+p=0.04) and `yang2026outdoor` (5,029 adolescents; ≥1 h daily outdoor activity → high growth velocity in
+normal-weight boys 9–15, **OR 1.71–2.01**) — but that paper's ORs reach **7.96**, which for an ordinary
+exposure reads as residual confounding.
+⛔⛔ **VIBRATION HAS NO LENGTH ENDPOINT ANYWHERE.** Targeted queries for whole-body vibration / LMHF
+stimulation against height, stature, linear growth, growth plate and longitudinal bone growth return
+scoliosis physiotherapy, cranial suture work, jumping PERFORMANCE, body composition in Down syndrome, BMC in
+burned children, muscle function in cystic fibrosis, bed-rest bone loss — **and three PATENTS for ultrasonic
+"physis-stimulating growth devices", which are a red flag, not evidence. THE ENTIRE VIBRATION LITERATURE IS
+A BONE MASS AND DENSITY LITERATURE.** Failure mode 3: a proxy closes nothing.
+⭐ **THE PRESCRIPTION, GRADED HONESTLY: SEEK IMPACT-TYPE, INTERMITTENT, AXIAL LOADING — JUMPING — AT MODEST
+VOLUME WITH ADEQUATE ENERGY AVAILABILITY; AVOID SUSTAINED COMPRESSIVE LOADING THROUGH SMALL JOINTS AND
+HIGH-VOLUME TRAINING AT ENERGY DEFICIT.** Free, open-plate-only, mechanistically grounded in
+`watanabetakano2021`'s periosteal osteocrin→NPR3 route (R424), and supported by **ONE non-randomised
+controlled trial with an incoherent mediation analysis.** **A low-risk unproven ADJUNCT, not a lever, and it
+should be offered as such.**
+
+⚠ **CORR-353 GREP COLLISION, SECOND INSTANCE, RECORDED: `traction` MATCHES INSIDE `distraction`,
+`extraction`, `retraction` AND `subtraction`.** A naive grep for the loading literature returns the entire
+limb-lengthening corpus and reads as coverage where there is none. Use `\btraction\b`, and grep the
+CONCEPT under at least two names (`loading`, `impact`, `jumping`, `vibration`, `mechanotransduction`).
 
 ## 🧲🧲🧲 R424 — **THE NPR3 OCCUPANT ARM WORKED TO A DECISION. It SURVIVES the substitution test (and
 ## the atlas's own bibliography was overstating why), then FAILS the SELECTIVITY GATE. HELD, not added —
