@@ -2412,6 +2412,88 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🔵🔵 R409 — **THE VOLUME MODULE WORKED IN BOTH DIRECTIONS. R408's CHEMISTRY CLAIM IS CORRECTED ONE ROUND
+## LATER, THE OSMOLYTE CLASS SPLITS AND LEAVES *BETAINE*, CHST3 NOT CHST11 IS THE PLATE'S SULFOTRANSFERASE,
+## AND PIEZO1 LOSS IS −2.46 cm IN HUMANS.**
+
+⛔ **ONE — R408 SAID THE EXPORT ARM WAS "ORDINARY MEDICINAL CHEMISTRY". THE PROPER ChEMBL QUERY SAYS NO.**
+**SLC12A4 (KCC1) — the exporter R408 nominated — HAS NO HUMAN ChEMBL TARGET RECORD AT ALL.** **WNK4 has a
+target record with ZERO molecules** at pChEMBL ≥5. The family's chemistry is real and sits on the **WRONG
+PARALOGUES**: KCC2 **11** molecules at 7.21 · WNK1 **18** at 8.40 · SPAK **43** at 7.84 · NKCC1 3 at 6.62 ·
+AQP1 4 at 5.57. **CORR-312 half-satisfied — the fold is druggable, the paralogue is not.** R408's sentence is
+a claim about the CLASS, not about an available molecule. **Nothing on the export arm is obtainable.**
+
+⭐⭐ **TWO — THE ORGANIC-OSMOLYTE CLASS SPLITS ON LOCALISATION, AND ONE MEMBER SURVIVES.** R296 queried
+organic osmolytes (taurine / betaine / sorbitol / myo-inositol) for a bone-length endpoint and found the shelf
+empty. **What R296 never ran was the receiver test on the TRANSPORTERS**, and it separates the class:
+· ⭐ **SLC6A12 / BGT1 — the BETAINE transporter — 2.05 ENRICHED**, 14.3 CPM, 12/12
+· ✗ SLC5A3 / SMIT1 (myo-inositol) **0.86, not enriched**; SLC5A11 absent → **the osmolyte reopening of
+  myo-inositol FAILS; R295's PI-substrate framing stands**
+· ✗ SLC6A6 / TauT (taurine) **0.15 contaminant-leaning** → **the taurine arm is dead in the tissue as well as
+  in the literature**
+⭐ **AND THE PLATE CANNOT BURN BETAINE: BHMT — the enzyme that consumes it as a methyl donor — is 0.0 CPM at
+ratio 0.11.** A tissue that imports betaine on a concentrative Na⁺/Cl⁻-coupled transporter and carries no
+betaine-consuming enzyme can only accumulate it **as an OSMOLYTE.**
+⭐ **AND UNLIKE EVERYTHING ELSE IN THIS MODULE IT NEEDS NO DRUG — IT NEEDS A SUBSTRATE.** Betaine anhydrous is
+approved as **CYSTADANE**, oral powder, **6 g/day in two divided doses from age 3, up to 20 g/day used**,
+100 mg/kg/day escalating under 3. Also an ordinary supplement (trimethylglycine). **CORR-344's shelf — the one
+that produced oral sodium sulfate.**
+⛔ **AGAINST IT, STATED BEFORE PROPOSING:** **no betaine study in any species has a bone or body LENGTH
+endpoint** — the growth literature is livestock growth performance (the taurine/aquaculture problem again) and
+the mammalian cartilage work is TMJ-OA repair via chondrogenic differentiation, not volume · **nobody has
+measured chondrocyte betaine content in any species** · **NFAT5/TonEBP, the TF that drives SLC6A12 under
+hypertonicity, is CONTAMINANT-LEANING at 0.32** — the osmolyte-response programme is not itself
+chondrocyte-concentrated, which is a real tension against the framing · and **betaine's own indication is
+homocystinuria, a disease whose skeletal phenotype includes TALL marfanoid stature that treatment prevents**
+(attributed to homocysteine disrupting fibrillin/collagen cross-linking, absent at normal homocysteine — but
+it is the arm that runs against us and it is recorded, not dropped).
+
+⭐⭐ **THREE — CHST3, NOT CHST11, IS THE PLATE'S SULFOTRANSFERASE. THIS CORRECTS R320.** R320 recorded
+**CHST11 at 350.8 CPM** from uncorrected data as the growth plate's chondroitin sulfotransferase.
+Purity-corrected the two **invert**: **CHST3 176.8 CPM ratio 3.32 ENRICHED · CHST11 89.6 ratio 0.11
+CONTAMINANT-LEANING** (UST 0.06, also contamination). **A paralogue switch as sharp as SCUBE1/SCUBE2.**
+⭐ **And the enriched one is the one with the human skeletal phenotype: biallelic CHST3 loss = spondyloepiphyseal
+dysplasia with congenital joint dislocations, SHORT STATURE**, with a large published variant series. Direction
+= **RAISE**; the substrate is PAPS made from sulfate; **and the atlas's one obtainable compound — oral sodium
+sulfate (R320/R321) — already feeds exactly this enzyme.** The volume module and the sulfate arm converge on
+one node from two independent directions.
+⛔ **THE INCONVENIENT HALF: the sulfate supply chain's ONLY two length endpoints both run the WRONG WAY.**
+IMPC **Slc26a2 het TIBIA LENGTH +0.242 at P=0.00384** — POSITIVE, the **RARE** direction under CORR-329 and
+therefore the informative one — and **Papss2 het body +1.306 (ns)**. Small n (5m/4f, 9m/9f), heterozygous mouse
+against a human recessive phenotype — **but they are the only length rows this pathway has and they do not
+support it.**
+
+⭐⭐ **FOUR — PIEZO1 LOSS IS −2.46 cm IN HUMANS AND THIS FILE HAS NEVER QUOTED THE NUMBER.** `kosmicki2026`
+gives PIEZO1 **35 rows, MONOTONE in both variant severity and allele rarity** — R324's causal shape, the one
+that validated NRK: **pLoF singleton −2.590 · pLoF <0.01% −2.460 (P=2.88e-43, 1,572 carriers) ·
+pLoF+delmis <0.01% −1.260 (P=1.79e-49, 6,935)** → −0.450 (delmis <1%) → **−0.169** (all-missense singletons).
+IMPC **Piezo1-het body length −0.546 (P=0.054)**, concordant and weak.
+⛔ **R296 withdrew PIEZO1 as a lever and wrote "Therapeutic direction = INHIBITION" from Yoda1's cartilage
+degeneration and from blockade slowing scoliosis. The burden data have been on disk since 2026-08-12 and say
+the opposite: PIEZO1 IS LOAD-BEARING FOR HUMAN HEIGHT.** R296's **withdrawal stands**; its **direction does
+not**. → ⛔ **NEW CONTRAINDICATION: PIEZO1 INHIBITORS**, and this is not hypothetical — **PIEZO1 blockade is
+being pursued for adolescent scoliosis, in the same patients and the same years.** The direction of interest is
+preservation or activation, which R296 correctly showed has no clean agent (Yoda1 degrades cartilage).
+⚠ Mechanism at the plate unestablished; a systemic route through erythroid/endothelial/lymphatic PIEZO1 is not
+excluded.
+
+⭐ **FIVE — TRPV4 CAME UP ENRICHED WITH PHASE-2 CHEMISTRY AND WAS KILLED BEFORE IT WAS PROPOSED.** TRPV4 is
+**194.1 CPM at ratio 2.17**, one of the most enriched channels in the panel, and TRPV4 antagonists have reached
+phase 2. The attractive reasoning — TRPV4 is the swelling sensor that triggers regulatory volume decrease, so
+blocking it leaves the cell swollen — **fails on two checks run first**: **IMPC Trpv4 hom TIBIA −0.781 at
+P=0.0171**, and this atlas's own `trpv4_channel` node already records **human gain-of-function → metatropic
+dysplasia and Kozlowski SMD while loss-of-function also gives Kozlowski** — non-monotonic, **both directions
+shorten.** Searched and rejected.
+⚠ **Localised for the first time and not pursued: SLC4A2/AE2 is ENRICHED at 2.39 while its published partner
+NHE1/SLC9A1 is contaminant-leaning at 0.20** — two halves of a pair studied together in longitudinal bone
+growth, on opposite sides of the purity split.
+
+⛔ **WHAT R409 DOES NOT DO: it produces no agent for the export arm** (KCC1 and WNK4 have no chemical matter at
+all), **betaine has no length endpoint in any species**, CHST3's direction is to supply and the only supply
+route carries two mouse length rows running the wrong way, and **hall2001's set-point re-tuning objection is
+untouched** — adding one osmolyte from outside may simply be met by the cell lowering another, which is what
+volume regulation is for.
+
 ## 🔵🔵🔵 R408 — **THE LARGEST TERM IN THE IDENTITY, LOCALISED FOR THE FIRST TIME. Within the volume
 ## module the cartilage-enriched members are the K-Cl EXPORTER and WNK4 — NOT NKCC1, NOT SPAK — and that
 ## converts an impossible ask (a transporter ACTIVATOR) into an ordinary one (an INHIBITOR).**
