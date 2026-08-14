@@ -2291,6 +2291,52 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ⭐⭐⭐⭐⭐ R380 — **WHAT HHIP IS DOING TO THE STACK: IT IS THE PATHWAY'S OWN GOVERNOR. `chuang1999` — the
+## FOUNDING PAPER, NATURE, 588 CITES — WAS NEVER IN THIS ATLAS, AND IT CARRIES BOTH LOAD-BEARING FACTS.**
+
+⛔ **CORR-354. Twenty rounds of working HHIP as the best target in the file, and the 1999 Nature paper that
+DEFINED it was never held.** It answers the operator's question directly.
+
+⭐⭐⭐ **ONE — HHIP IS A HEDGEHOG-INDUCED NEGATIVE FEEDBACK GENE. THE ANSWER TO "WHAT IS IT DOING TO OUR
+STACK" IS: IT IS THE GOVERNOR.** `chuang1999`: Hip binds all three mammalian hedgehogs **with an affinity
+comparable to PATCHED-1**, Hip-expressing cells sit next to Hh-expressing cells, and **Hip expression is
+INDUCED by ectopic hedgehog signalling and LOST in hedgehog mutants** — the authors state it plainly:
+**Hip, LIKE Ptc-1, IS A GENERAL TRANSCRIPTIONAL TARGET OF HEDGEHOG SIGNALLING.**
+→ **EVERY INTERVENTION THAT RAISES HEDGEHOG OUTPUT AT THE PLATE INDUCES ITS OWN BRAKE.** That is the
+mechanism by which a hedgehog arm plateaus, and it applies to the SAG depot.
+
+⭐⭐⭐ **TWO — AND THE GAIN-OF-FUNCTION ARM IS IN THE SAME PAPER, IN CARTILAGE, WITH A LENGTH PHENOTYPE:
+OVEREXPRESSION OF Hip IN CARTILAGE, WHERE Ihh CONTROLS GROWTH, GIVES A SHORTENED SKELETON RESEMBLING LOSS
+OF Ihh.** With `haraguchi2025` for the loss direction, **BOTH DIRECTIONS OF HHIP DOSAGE ARE NOW CLOSED IN
+MOUSE CARTILAGE WITH A LENGTH ENDPOINT** — and the human GoF missense **p.V496E −3.96 cm** finally has a
+counterpart in the right tissue. **No other target in this file has both directions closed in cartilage.**
+
+⭐⭐ **THREE — AND THE STACK LINK EXISTS AND IS FROM 2003.** `chuang2003`: Hip1-null mice have defects in
+exactly **two** tissues — the lung (Shh) and **THE ENDOCHONDRAL SKELETON (Ihh)** — with hedgehog signalling
+**up-regulated** in the mutants. And the paper's own subject: **a dynamic interaction between HEDGEHOG and
+FIBROBLAST GROWTH FACTOR signalling, controlled at least in part by Hip1.** → **HHIP SITS AT A HEDGEHOG-FGF
+CROSSTALK NODE AND HE IS ON A CONTINUOUS PAN-FGFR INHIBITOR** — the first mechanistic link in this atlas
+between the target and the stack's lead agent. ⚠ Characterised in branching lung morphogenesis, not a plate;
+no FGFR inhibitor has been shown to move HHIP in any tissue. **Direction and sign at the plate: unmeasured.**
+
+⭐⭐ **FOUR — THE CONSEQUENCE FOR THE SAG DEPOT, AND IT IS NEW: TWO OPPOSING ARMS ON HHIP UNDER A SMO
+AGONIST.** Transcription **UP** (HHIP is a Gli target — `chuang1999`) while protein is driven **DOWN**
+(Smo activation increases HHIP internalisation and degradation — `kwong2014`, R376). **Net unmeasured in any
+species.** It is a concrete mechanism for the depot's effect to plateau, and a second independent reason the
+schedule must be **pulsed** rather than sustained.
+
+⭐⭐⭐ **FIVE — AND IT IS A NEW ARGUMENT THAT HHIP BLOCKADE BEATS SMO AGONISM, INDEPENDENT OF R375's.**
+A SMO agonist raises Gli and therefore **induces the very brake it is trying to overcome**. **An agent that
+removes or neutralises HHIP escapes that loop entirely — you cannot induce a protein that is not there or is
+already blocked.** R375 said HHIP blockade is better because PTCH1 feedback survives it; R380 adds that it is
+better because it is **the only hedgehog intervention that is not self-limiting through HHIP itself.**
+
+⚠ **SIX — THE HONEST COUNTERWEIGHT: THE SYSTEM FIGHTS BACK AT A SECOND LEVEL EVEN WHEN HHIP IS GONE.**
+`saturne2025`: in Hhip−/− tissue the Gli targets **including Pthlh** are up — **and Ihh is PARADOXICALLY
+DOWN**, because PTHrP represses Ihh. So removing HHIP raises output, which raises PTHrP, which lowers the
+ligand. **Expect a damped rather than a runaway response**, which is also why HHIP loss is tolerated (R290's
+buffer argument) and why `haraguchi2025`'s effect is +2.7% at 10 weeks rather than enormous.
+
 ## ⭐⭐⭐ R379 — **THE LIGAND-SUPPLY ARM: HOW HEDGEHOG GETS *OUT* AND HOW IT *TRAVELS*. R290 pointed at this
 ## and nobody followed it. New layer, direction UNRESOLVED, and it explains the SCUBE paralogue switch.**
 
