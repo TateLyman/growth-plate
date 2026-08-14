@@ -2412,6 +2412,41 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🔎🔎🔎 R404 — **THE SUPPLY QUERY RUN ON ALL FOURTEEN. OF THE SECRETED LOAD-BEARING GENES IN THE HUMAN
+## GROWTH PLATE, *EXACTLY ONE* HAS EVER BEEN GIVEN TO AN ANIMAL — AND IT WORKED. This is not a searched-and-
+## empty shelf; it is a direction nobody has tried.**
+
+| gene | β cm | P | purity ratio | verdict |
+|---|---|---|---|---|
+| **ACAN** | −16.60 | 1.9e-52 | 4.65× | recombinant exists (2006, full-length) but **only ever used for biochemistry**; R337's synthesis-side gap stands |
+| **IHH** | −13.10 | 1.0e-26 | **71.87×** | ⛔ **Step 0 redundant** — this is the hedgehog arm |
+| **COL1A1** | −10.40 | 1.5e-10 | 3.87× | recombinant exists (incl. from transgenic corn); a materials product, never supplied |
+| EXT1 | −7.74 | 4.6e-15 | **0.03×** | ⛔ **fails receiver** (losartan's number) |
+| ⭐ **SCUBE3** | **−6.71** | **2.1e-37** | **16.02×** | ⭐⭐ **TOP UNTRIED CANDIDATE — see below** |
+| SERPINH1 | −6.50 | 3.1e-25 | 2.92× | ⛔ **HSP47 is an INTRACELLULAR ER chaperone — wrong modality**, however good the genetics |
+| ADAMTS6 | −5.48 | 3.9e-13 | 0.84× | ⛔ fails receiver |
+| PAPPA | −4.57 | 1.9e-19 | 0.71× | ⛔ fails receiver |
+| ⭐ **ANGPTL2** | **−3.65** | 3.9e-10 | 3.98× | untried; **478 CPM**, entire literature is cardiovascular |
+| HTRA1 | −3.31 | 6.1e-10 | 3.24× | ⚠ **direction CONTESTED** — its own skeletal papers have it *inhibiting* mineral deposition while human loss shortens |
+| LTBP1 | −2.00 | 1.0e-08 | 0.46× | ⛔ fails receiver |
+| ⭐ **THBS3** | −1.72 | 3.4e-14 | **5.37×** | untried; protein sold carrier-free; **essentially no skeletal literature at all** |
+| ⭐ **SMOC1** | −1.63 | 5.4e-05 | 3.04× | untried; protein sold (R356); **the mouse is already made and tibia-phenotyped** |
+| ✅ **CLEC11A** | −0.74 | **1.1e-25** | 2.17× | ✅ **THE ONLY ONE EVER SUPPLIED — and femurs got longer** |
+
+⭐⭐ **SCUBE3 IS THE STANDOUT AND IT IS NOT CLOSE.** −6.71 cm at **P=2.1e-37**, **16.02× cartilage-enriched**
+(second only to IHH), the recombinant protein **sold at >95% purity, endotoxin <0.10 EU/µg — and the vendor
+validates its bioactivity BY ADHESION OF ATDC5 *CHONDROGENIC* CELLS.** ⛔ **R287 named this exact experiment —
+"recombinant SCUBE3 → measure a bone" — as one of FOUR THAT DO NOT EXIST, and R312 wrote "no recombinant
+product."** The product exists, the assay exists, the human genetics are the strongest of any untried member,
+and **nobody has put a caliper on anything.**
+
+⛔ **WHAT THIS DOES NOT ESTABLISH, AND IT IS THE governing caveat.** **A load-bearing genetic effect says the
+gene is REQUIRED. It does not say adding more protein does anything**, and for matricellular proteins the
+endogenous pool may already saturate. Osteolectin worked because it is a **growth FACTOR with a signalling
+receptor** (integrin α11, verified required in chondrocytes). **SCUBE3, THBS3 and SMOC1 are matricellular
+modulators — the supplementation experiment is genuinely open, not predictable.** All are research grade, no
+toxicology, none given to a human.
+
 ## 🏆🏆🏆🏆🏆🏆 R403 — **R401's RULE APPLIED TO THE 96 LOAD-BEARING GENES. IT RETURNS *OSTEOLECTIN*, AND THE
 ## HEADLINE IS THE SENTENCE THIS FILE HAS BEEN ASKING FOR ON EVERY TARGET IT HAS EVER WORKED:
 ## "RECOMBINANT OSTEOLECTIN INJECTIONS INCREASED FEMUR LENGTH IN JUVENILE MICE."**
