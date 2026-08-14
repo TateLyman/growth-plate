@@ -1775,7 +1775,10 @@ occupant, which is the favourable starting state for the hedgehog arm.
    ⭐ **NEW, R419 — AND ASK IT IN THE SAME BREATH AS MINOXIDIL: FINASTERIDE OR DUTASTERIDE?** They are the
    other half of the standard young-male hair-loss prescription, they block the 5α-reductase step that
    `elbaradie2012` shows is the MALE growth plate's own local androgen conversion, and this atlas had ZERO
-   files on either. Grade E, free to ask, free to stop.
+   files on either. ⭐⭐ **R420 UPGRADED THIS FROM GRADE E TO A MEASURED RESULT: `raz2005` gave FINASTERIDE
+   at 1, 5 and 10 µg/mL to male growth-plate chondrocytes and DOSE-DEPENDENTLY BLOCKED their response to
+   testosterone.** And the isoform is **SRD5A1** (SRD5A2 absent from the plate), so **DUTASTERIDE — dual
+   type 1+2 — is the worse of the two.** Grade D, free to ask, free to stop.
 5. ⭐ **NEW, R375 — ANY DHCR7-INHIBITING MEDICATION?** **HYDROXYZINE** (a common antihistamine),
    **FLUOXETINE, ARIPIPRAZOLE, TRAZODONE, BUSPIRONE, LURASIDONE, ZIPRASIDONE, VILAZODONE, CARIPRAZINE,
    NEBIVOLOL, ROTIGOTINE, AMIODARONE**. They raise 7-DHC, whose B-ring oxysterol **inhibits SMO**. Grade E
@@ -2328,6 +2331,88 @@ three weeks ARE ALREADY AVAILABLE.** R361's objection that a joint injection can
 adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that is a direct placement.
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
+
+## 🧬🧬🧬🧬 R420 — **THE ANDROGEN ARM WORKED TO THE END. This atlas had CLOSED it on the WRONG
+## COMPARATOR and an UNTESTED LIGAND. Reopened it is REAL, DIRECT, MALE-SPECIFIC and DHT-MEDIATED — a
+## 46,XY human without a working AR loses 1.9 cm/yr of peak velocity and 0.6 SD of adult height. AND IT
+## STILL DOES NOT OPEN A LEVER, BECAUSE THE HUMAN EFFECT IS EXTINGUISHED AFTER AGE 16.**
+
+⛔ **ZERO — AND CORR-352 AGAIN: the atlas's `androgen_receptor` node CLOSED this arm** ("expressed but not
+demonstrated to be required … androgen's growth effect running predominantly through aromatisation") —
+**and that closure was never in CLAUDE.md either.** The ledger lost the axis AND its closure.
+
+⛔ **ONE — THE CLOSURE IS WRONG ON MECHANISM, AND IT FAILS THE WAY THIS FILE HAS FAILED BEFORE.**
+· **`chagin2009`** — fetal rat metatarsal, no effect of oxandrolone, testosterone or flutamide. **A better
+  null than expected** (BOTH sexes, agonist AND antagonist, 1 nM–10 µM, IGF-I control fired at p<0.001).
+  ⛔ **But ① IT NEVER TESTED DHT** — it tested testosterone and oxandrolone, and the mechanism nominates
+  DHT; **② it is FETAL (E20), before a secondary ossification centre exists**, and R362/R368 established
+  the plate acquires self-renewal **at SOC formation** — pre-niche is exactly the stage where R368 showed
+  hedgehog agonism has the OPPOSITE sign.
+· **CAIS read as "taller than average females" — THE WRONG COMPARATOR.** For a 46,XY subject the question
+  is height against **MALE** norms.
+
+⭐⭐ **TWO — AGAINST MALE NORMS THE NATURAL EXPERIMENT SAYS THE OPPOSITE OF WHAT THE NODE SAYS.**
+· **`danilovic2007`** — 15 AIS patients with proven AR mutations, measured against **BOTH** references:
+  **final heights INTERMEDIATE between female and male predictions**, lumbar BMAD z_f −1.56 (P=0.006),
+  z_m −0.75 (P=0.04), femoral neck normal. **Authors: the data suggest an IMPORTANT ROLE FOR ANDROGENS IN
+  NORMAL MALE GROWTH AND BONE DENSITY NOT REPLACED BY OESTROGENS.**
+· **`zachmann1986`** — the numbers, 8 AIS patients, spontaneous puberty: **adult height 172.3 cm = −0.6 SD
+  vs normal MEN, +1.4 SD vs normal WOMEN · PEAK HEIGHT VELOCITY 7.4 cm/yr, identical to normal girls (7.3)
+  and far below normal boys (9.3)** · age at PHV 12.7 y · **bone age tracked MALE standards.**
+· **`zhao2022ais`** — 118 untreated AIS children, 8 centres: height runs +1 SD to age 12 then **DIVERGES,
+  falling toward −1 SD on the BOYS' chart** while rising to +2 SD on the girls'. **The loss begins AT
+  PUBERTY.**
+→ ⭐ **A 46,XY INDIVIDUAL WITH TESTOSTERONE, INTACT AROMATISATION AND A Y CHROMOSOME BUT NO FUNCTIONAL AR
+LOSES ~1.9 cm/yr OF PEAK VELOCITY AND ENDS 0.6 SD BELOW MALE NORMS.** This atlas had that filed as evidence
+for the opposite conclusion — **CORR-309's shape applied to a natural experiment instead of a paper.**
+
+⭐⭐⭐ **THREE — THE MECHANISM IS MALE-ONLY, ZONE-SPECIFIC, AND RUNS THROUGH 5α-REDUCTASE.** `raz2005`,
+growth-plate chondrocytes split into resting zone and growth zone:
+· **ONLY MALE CELLS RESPOND** to testosterone, though receptors are present in both sexes.
+· T and DHT give comparable dose-dependent rises in thymidine incorporation and ALP in male **GROWTH-ZONE**
+  cells. **Resting-zone cells behave differently** (T *decreased* DNA synthesis, DHT no effect).
+· ⭐ **FINASTERIDE AT 1, 5, 10 µg/mL REDUCED THE MALE GROWTH-ZONE RESPONSE TO TESTOSTERONE
+  DOSE-DEPENDENTLY** — 5α-reduction is REQUIRED.
+· ⭐ **THE ISOFORM IS NAMED: both sexes express SRD5A1, NEITHER expresses SRD5A2; male cells have
+  5α-reductase ACTIVITY, female cells none detectable.**
+`cohen2021` adds: DHT→PKC in male cells is blocked by AR inhibition **AND by ERα/ERβ inhibition**, with AR
+translocating to caveolae. **THE TWO SEX-STEROID ARMS ARE PHYSICALLY COUPLED AT THE MEMBRANE** — a caution
+for any argument that suppressing one leaves the other untouched.
+
+⛔⛔ **FOUR — AND THEN IT CLOSES FOR HIM, ON A GRADED HUMAN DOSE-RESPONSE WITH AN AGE LIMIT.**
+**`vanderwerff2011`** — two Dutch cohorts, **226 subjects followed 13→36 y and 244 followed 8→14 y**. AR
+CAG repeat length correlates **inversely** with receptor transactivation, so it is a graded natural
+instrument on AR function. **Height SDS was inversely associated with CAG length in boys at young,
+prepubertal and early pubertal age** — more AR activity, taller.
+⛔ **"THIS ASSOCIATION DIMINISHES IN THE FOLLOWING YEARS AND COMPLETELY DISAPPEARS AFTER THE AGE OF 16."**
+→ **THE ONE GRADED HUMAN MEASUREMENT OF AR FUNCTION AGAINST HEIGHT IS EXTINGUISHED AT PRECISELY THIS
+SUBJECT'S AGE.** Not "no molecule", not "wrong direction" — **the window for this arm has closed for him
+while staying real for younger boys.**
+
+⛔ **FIVE — AND TWO INDEPENDENT REASONS AGREE, SO IT DOES NOT REST ON ONE STUDY.**
+· **STEP 0 SUBSTITUTION:** `ferris2017` measured peak testosterone at **1156 ± 302 ng/dL in Tanner IV–V
+  boys ON AN AROMATASE INHIBITOR.** He is on anastrozole. **The androgen channel is already being driven
+  hard by a drug already in the stack** (CORR-297).
+· **The only human head-to-head runs against the non-aromatisable agent:** `wang2026` — **testosterone beat
+  oxandrolone by 2.64 cm** on attained adult height, in constitutional delay, i.e. **restoration
+  (CORR-203)**.
+→ ⛔ **OXANDROLONE, SARMs AND ANY NON-AROMATISABLE ANDROGEN ARE NOT PROMOTED.**
+
+⭐⭐ **SIX — WHAT THE ROUND DELIVERS: R419's FINASTERIDE ITEM GOES FROM GRADE E TO A MEASURED RESULT IN THE
+TARGET CELL TYPE.** R419 recorded it as inference from `elbaradie2012`. **`raz2005` had already done the
+experiment** — finasteride, three concentrations, dose-dependent block of the male chondrocyte response.
+⭐ **AND IT PICKS THE WORSE DRUG: the chondrocyte isoform is SRD5A1 and SRD5A2 is ABSENT. Finasteride is
+preferentially type-2 and still blocked the response; DUTASTERIDE INHIBITS TYPE 1 *AND* TYPE 2, so on
+isoform grounds DUTASTERIDE IS THE WORSE CHOICE near an open male plate.**
+⛔ Grade D, not A: rat costochondral cells in vitro, **no bone-length endpoint for any 5α-reductase
+inhibitor in any species**, and SRD5A1/SRD5A2 carry no signal in the 207 (R359). **Free to ask, free to
+stop** — the whole argument for recording it.
+
+🧭 **WHAT R420 SETTLES.** The androgen arm is not a phantom: it is a real, direct, male-specific,
+DHT-mediated, growth-zone-specific input that a human without it pays **0.6 SD of adult height** for, and
+the atlas's closure of it was built on the wrong comparator and an untested ligand. **It still yields no
+addition here** — extinguished after 16, and the channel is already occupied by the AI. **Its usable
+output is a SUBTRACTION, not an addition.**
 
 ## 🧔🧔🧔🧔 R419 — **THE ANDROGEN ARM HAS 106 FILES, ITS OWN NODE AND A HUMAN ADULT-HEIGHT
 ## META-ANALYSIS, AND CLAUDE.md HAS NEVER SAID THE WORD. Worked, it kills the raise-oestradiol idea,
