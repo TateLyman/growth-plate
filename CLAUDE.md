@@ -2341,6 +2341,36 @@ tissue) · HHIP is two-sided (tumour suppressor, top COPD locus).
 ⭐ **AND THE STEP THAT PRECEDES ALL THREE COSTS ALMOST NOTHING: MEASURE THE BONES OF THE Hhip_ΔCE2-3 MOUSE
 THAT ALREADY EXISTS.**
 
+⛔ **EIGHT — CRISPRi SPECIFICALLY, AND IT FAILS IN VIVO ON A MECHANISM ARGUMENT, NOT ONLY ON RISK.**
+The tool is genuinely accessible (2,651 records) — **but only 16 touch cartilage at all and NOT ONE is a
+CRISPRi knockdown in cartilage in vivo.** Three reasons it does not transfer to a growing plate:
+· **CRISPRi IS NOT AN EDIT — IT IS A PERSISTENT OCCUPANCY.** dCas9-KRAB must stay expressed in every target
+  cell or the gene returns. That means either integrating lentivirus or repeat-dosing a >160 kDa fusion into
+  avascular cartilage — the exact thing farnum2006's curve excludes (40 kDa already undetectable).
+· ⭐⭐ **THE STEM-CELL WASHOUT, WHICH IS THE DECISIVE AND SPECIFIC ONE.** `newton2019`: after SOC formation
+  the plate is fed by **self-renewing resting-zone stem cells** with monoclonal columns. **Anything modified
+  in the proliferative or hypertrophic zone is CONSUMED and replaced by unmodified progeny.** A durable
+  effect requires hitting the resting-zone stem cells *specifically* — no vehicle is demonstrated to reach
+  them, and there is no way to verify you did. **A transient or mis-compartmented knockdown washes out by
+  design.** ✓ The one thing that softens it: `kwong2014` shows HHIP acts **non-cell-autonomously**, so
+  edited cells lower HHIP for their neighbours too — mosaicism costs less here than for a cell-autonomous
+  target. The secreted pool is still made by the unedited majority.
+· **NO READOUT.** No biopsy, no assay; the only endpoint is height over years, by which point it is done.
+✓ **The closest in vivo precedents, both recorded:** `ross2026dcas9` (lentiviral dCas9-KRAB repression in a
+musculoskeletal context — but NEURONS, in culture) and `liu2026crispra` (**injectable dCas9-VP64 LNP
+microspheres placed locally INTO BONE in vivo** — but CRISPR-**activation**, BMSCs not chondrocytes, an
+injury model, no length endpoint, **and it promoted vascularisation**, which R365 calls the terminal event
+of closure).
+⭐⭐ **WHERE CRISPRi IS THE RIGHT TOOL AND IS THE HIGHEST-VALUE EXPERIMENT LEFT ON THIS TARGET: IN A DISH,
+TO MEASURE THE HHIP DOSE-RESPONSE.** R281's canonical-Wnt band has an interior optimum BELOW wild type, and
+**nobody has ever asked whether HHIP does too** — the only two points are human het pLoF +9.92 cm and the GoF
+missense −3.96, which bracket wild type and say nothing between 50% and zero. **CRISPRi is the standard tool
+for GRADED knockdown.** A guide panel giving ~10/30/50/70/90% in human chondrocytes, read out on GLI1/PTCH1,
+proliferation and the `lui2023` resting-zone signature, answers the question the whole programme turns on:
+**monotone → editing is on the table; interior optimum → only a titratable reversible agent is usable, which
+puts the ASO far ahead.** Same system identifies which enhancer carries HHIP in POSTNATAL cartilage and
+whether a TRUNK-restricted element exists — far cheaper than deletion mice. Gap `g_l12_377b`.
+
 ## ⭐⭐⭐⭐⭐ R376 — **HHIP IS NO LONGER UNDRUGGABLE-BY-MODALITY.** Eight lowering routes verified: five die
 ## on the free local query, one has NO PRIMARY, one makes R375 worse — and the direct route has a VEHICLE.
 
