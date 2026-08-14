@@ -2291,6 +2291,62 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🔬🔬🔬 R397 — **THE SOFT-TISSUE FRONTIER OPENED. BONE IS NOT THE LIMIT AND 18 cm HAS BEEN DONE IN ONE
+## PERSON — BUT MUSCLE STRENGTH LOSS IS PERMANENT AND WORSENS OVER TEN YEARS. The joint limit has a
+## dose-response AND a named catabolic cascade nobody has ever blocked.**
+
+⭐⭐ **BONE IS NOT THE LIMIT, AND THIS FILE HAS BEEN QUOTING AVERAGES AS CEILINGS.** `maai2024`: a 22-year-old
+lengthened **12 cm femur + 6 cm tibia = 18 cm**, under **full weight bearing** — and because he later requested
+shortening, the regenerate was **harvested and examined by histology and electron microscopy: good bone
+quality, well-organised, COMPARABLE TO NATIVE ADULT HUMAN BONE.** With `santoso2026` (regenerate re-cut and
+re-lengthened successfully) and `cerasoli2026` (16 cm in ONE tibia by staging fixator→nail), **the osseous side
+has no demonstrated ceiling in the relevant range.** The pooled 8.85/7.36 cm figures are averages of mixed
+indications, not limits.
+
+⛔⛔ **THE FINDING THAT HURTS, AND IT IS THE ANSWER TO WHETHER SOFT TISSUE CATCHES UP: IT DOES NOT, AND IT
+GETS WORSE.** `speth2026` — 9 patients after femoral lengthening with a motorised nail, isokinetic knee
+extensor/flexor torque **preop, at 2 YEARS and at 10 YEARS**, vs 10 healthy controls. **THE EXTENSION-TORQUE
+DEFICIT VERSUS THE UNAFFECTED LEG INCREASED AT 2 YEARS AND INCREASED FURTHER AT 10 YEARS.** **Muscle strength
+loss after lengthening is PERMANENT AND PROGRESSIVE.** That is the direct refutation of the premise that
+motivated R396's frontier — soft tissue cannot be made to keep pace, at least not by rehabilitation and time.
+⚠ n=9, single centre, magnitudes not retrievable from the abstract — **direction and persistence only.**
+· **Same lesson, different tissue, smaller dose:** `santos2025patella` — patellar instability with persistent
+  dislocation **5 YEARS after only 4.5 cm**, with **increased QUADRICEPS TENSION**, needing trochleoplasty +
+  tubercle osteotomy + MPFL reconstruction + **quadriceps lengthening** to salvage. **The durable cost of
+  lengthening is MUSCULOSKELETAL AND LATE, not osseous and early.**
+
+⭐⭐⭐ **BUT THE JOINT LIMIT HAS A DOSE-RESPONSE *AND A DRUGGABLE MECHANISM*, AND THAT IS THE OPENING.**
+`wu2026dolength` — 36 rats randomised to femoral distraction of **5 / 10 / 20 mm**. Control and 10 mm:
+**successful osseointegration and physiological tolerance.** ⛔ **20 mm: SEVERE OSTEOARTHRITIS-LIKE PATHOLOGY**
+with cartilage degeneration. **The immunohistochemistry names it: catabolic IL-1β, MMP-13 and RANKL UP;
+anabolic COL-II, SOX9 and OPG DOWN**, in articular cartilage and subchondral bone. (Rat femur, so the absolute
+threshold does not transfer — **the existence of one and its mechanism do.**)
+⭐ **AND THAT IS A DRUG CLASS THIS ATLAS ALREADY HOLDS AND HAS NEVER APPLIED HERE.** R297's audit flagged
+**anakinra, canakinumab, etanercept and adalimumab as returning ZERO hits across the entire graph.** IL-1
+blockade is approved, and **IL-1β heads the list.** **NOBODY HAS EVER GIVEN AN ANTI-CATABOLIC DURING
+DISTRACTION TO PROTECT THE JOINT** — and the exposure would be short, confined to the distraction phase, and
+aimed at a cascade that is already measured. Gap `g_l6mech_397a`.
+⭐⭐ **AND R327's COMPARTMENT LESSON LICENSES RE-EXAMINING WHAT THIS FILE ALREADY CONTRAINDICATED.** R317 made
+**denosumab** a contraindication because RANKL blockade **jams the growth plate** (resorption is required at the
+chondro-osseous junction). But wu2026dolength's RANKL signal is in **ARTICULAR cartilage and subchondral bone
+during distraction** — different tissue, different purpose. **R327 already made exactly this move once: SOST's
+absence killed romosozumab at the plate and simultaneously LICENSED it for the regenerate.** An absence or a
+contraindication is **compartment-specific**, and the compartment has changed.
+
+⭐ **TECHNIQUES THAT RAISE THE PER-SESSION CEILING, UNDER-USED HERE.** `aldzhamal2026`: **DOUBLE-LEVEL
+distraction — two corticotomies in a single sitting — 12 cm of regenerate in 5 months with FULL PAINLESS KNEE
+AND HIP MOTION, no contracture, no neurovascular injury, no regenerate fracture.** Splitting across two
+osteotomies halves what each regenerate must produce **and halves the time** — the direct answer to the
+**37.1 days/cm** limit R277 identified and R327 attacked pharmacologically. Modern **motorised intramedullary
+nails** remove the external fixator entirely; median length of stay reported at **3 days**.
+
+⚠ **AND A CORRECTION TO OUR OWN RISK FIGURE.** The **56.1%** complication rate this file quotes comes from
+pooled series dominated by **external fixation and mixed indications**. `giorgino2025` is a systematic review
+of **AESTHETIC lower limb lengthening in ADULTS** — the matched population — and **should be read in full
+before that figure is quoted again.** ⛔ **But nothing in that touches `speth2026`: whatever the complication
+rate, a permanent and worsening extensor deficit is the price, and it is a price the growth-plate route does
+not charge.**
+
 ## 🧭🧭🧭🧭 R396 — **"UNLIMITED" — AND YES, WE HAVE BEEN LOOKING IN THE WRONG PLACE. THE PLATE IS A
 ## BATTERY AND IT IS NEARLY FLAT; DISTRACTION IS A GENERATOR, IT WORKS AFTER FUSION, AND IT IS REPEATABLE
 ## ON ITS OWN PRODUCT. THE BINDING CONSTRAINT IS NERVE AND MUSCLE, WHICH THIS ATLAS HAS NEVER EXAMINED.**
