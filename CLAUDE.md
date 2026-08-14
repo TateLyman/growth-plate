@@ -1718,16 +1718,32 @@ HIF-PHI class was already checked in R284.
   glucocorticoid-RESPONSIVE while making none of its own (HSD11B1 absent). **So the variable is SYSTEMIC
   cortisol exposure, not local regeneration — and this atlas has never examined it.**
 
-## ⭐ THE FREE LIST — everything actionable TODAY that costs nothing, consolidated (R365–R370)
+## ⭐ THE FREE LIST — everything actionable TODAY that costs nothing, consolidated (R365–R375)
 
-**ASK HIM THESE FOUR QUESTIONS** — each maps to a contraindication he may already be carrying:
+✅ **ANSWERED BY THE OPERATOR (R374): "no none" TO ALL FOUR QUESTIONS BELOW.** None of itraconazole/
+posaconazole, corticosteroids by any route, megadose vitamin D3, minoxidil, paracetamol, AKG, megadose
+vitamin C, NR/NMN or lithium is present. **The four questions are kept as a standing re-check, not an open
+item** — and the answer means the SMO cysteine-rich domain (R375) is currently free of every *known*
+occupant, which is the favourable starting state for the hedgehog arm.
+
+**ASK HIM THESE FIVE QUESTIONS** — each maps to a contraindication he may already be carrying:
 1. **Has he ever taken ITRACONAZOLE or POSACONAZOLE?** (SMO antagonists at ordinary antifungal exposure —
    they inherit the vismodegib fusion result. Standard agents for adolescent onychomycosis/tinea capitis.)
 2. **Does he use an INHALED or TOPICAL CORTICOSTEROID, and which?** (budesonide/beclomethasone/dexamethasone
    run against hedgehog; fluticasone is a SMO agonist and is less growth-suppressive in randomised trials.)
+   ⭐ **R375 UPGRADES THIS: cortisol itself is a COMPETITIVE SMO ANTAGONIST AT THE CYSTEINE-RICH DOMAIN**
+   (`lu2025cortisol`, mutation-verified) — so *any* glucocorticoid exposure by *any* route is now indicted
+   twice, at GR and at SMO.
 3. **Is he megadosing VITAMIN D3?** (binds SMO, phenocopies the SMO null in zebrafish. Adequacy is
    non-negotiable — target mid-normal 25-OH-D, do not megadose.)
 4. **TOPICAL/ORAL MINOXIDIL, PARACETAMOL, AKG, megadose vitamin C, NR/NMN, LITHIUM?** (all previously listed)
+5. ⭐ **NEW, R375 — ANY DHCR7-INHIBITING MEDICATION?** **HYDROXYZINE** (a common antihistamine),
+   **FLUOXETINE, ARIPIPRAZOLE, TRAZODONE, BUSPIRONE, LURASIDONE, ZIPRASIDONE, VILAZODONE, CARIPRAZINE,
+   NEBIVOLOL, ROTIGOTINE, AMIODARONE**. They raise 7-DHC, whose B-ring oxysterol **inhibits SMO**. Grade E
+   for a skeletal claim, free to substitute. See the contraindication list.
+✓ **AND ONE WORRY RAISED AND CLOSED IN THE SAME ROUND — STATINS ARE FINE.** Cholesterol is SMO's endogenous
+CRD agonist, so lowering it looked like a cost. `humphries2018`, 300 children, UK Paediatric FH Register:
+**age-adjusted annual height 4.45 cm on statin vs 4.60 cm off, P=0.73.** The propranolol move again.
 
 **SUBSTITUTIONS — same indication, better direction, zero cost:**
 · oral antifungal → **TERBINAFINE or FLUCONAZOLE**, never itraconazole/posaconazole (R366)
@@ -1747,6 +1763,31 @@ pool agent is worth chasing for him at all.
 
 ## CONTRAINDICATED — do not add to the stack
 
+- ⛔⛔ **THE DHCR7-INHIBITING DRUG SHELF — NEW R375, AND IT IS DOZENS OF ORDINARY PRESCRIPTIONS.**
+  `sever2016` (PNAS): a **B-RING OXYSTEROL DERIVED FROM 7-DEHYDROCHOLESTEROL INHIBITS SMOOTHENED**, by a
+  mechanism distinct from cyclopamine and from side-chain oxysterols — and the potentiating direction was
+  done too: **depleting endogenous 7-DHC ENHANCED hedgehog activation by an agonist.** Human anchor: 7-DHC
+  accumulates in **Smith-Lemli-Opitz syndrome**, which the authors state **phenocopies deficient hedgehog
+  signalling** and includes short stature. With R362 (hedgehog to the RZ is REQUIRED to prevent fusion),
+  anything that raises 7-DHC is predicted to attenuate the fusion-preventing signal.
+  **THE SHELF IS LARGE: `wages2018` — over 20% of an FDA-approved library affects cholesterol biosynthesis
+  and 75 compounds alter 7-DHC.** Named in human dermal fibroblasts by `tallman2025`: primarily DHCR7 —
+  **CARIPRAZINE, NEBIVOLOL, ROTIGOTINE**; combined DHCR7 — **BUSPIRONE, LURASIDONE, HYDROXYZINE**; EBP —
+  **FLUOXETINE**; **AMIODARONE**; multi-enzyme — **VILAZODONE, ZIPRASIDONE**. `korade2013` adds
+  **ARIPIPRAZOLE and TRAZODONE** in people with two working DHCR7 copies.
+  ⭐ **HYDROXYZINE IS A COMMON ANTIHISTAMINE AND FLUOXETINE/ARIPIPRAZOLE/TRAZODONE/BUSPIRONE ARE ROUTINELY
+  PRESCRIBED TO ADOLESCENTS. ASK.** ✗ Grade E for a skeletal claim — **no bone, growth-plate or height
+  endpoint exists for any of them in any species** — but it is free to ask and free to substitute.
+- ⛔⛔ **GLUCOCORTICOIDS BY ANY ROUTE ARE NOW INDICTED TWICE, AND THE SECOND MECHANISM IS STRUCTURAL.**
+  `lu2025cortisol`: **cortisol COMPETES WITH CHOLESTEROL FOR THE SMO CYSTEINE-RICH DOMAIN AND INHIBITS
+  Shh/SMO** — verified causally by a **CRISPR SMO L116A knock-in that is no longer inhibited by cortisol.**
+  `heine2011sag`'s premise is the same direction (glucocorticoids inhibit Shh-Smo; Hh activation protects
+  against them via 11β-HSD2). R298 already had NR3C1 19/25 in both donors rising 915 RZ → 5630 HZ with the
+  plate making no glucocorticoid of its own, so **the variable is SYSTEMIC exposure** — oral, inhaled,
+  topical, intranasal, intra-articular. ⚠ This does NOT cancel R369's finding that four halogenated topical
+  steroids are SMO AGONISTS in a Gli reporter; it makes them the exception in a class whose default
+  direction is inhibitory, and it means any systemic exposure to them competes at the pocket cortisol
+  occupies. **Treat R369's window table as a ranking of an unusable route, not a candidate.**
 - ⛔⛔ **SMOOTHENED ANTAGONISTS — VISMODEGIB, SONIDEGIB, GLASDEGIB. THE HARDEST CONTRAINDICATION IN THIS
   LIST: the marketed molecule itself was given to normal juvenile mice for FOUR DAYS AND THE GROWTH PLATE
   FUSED** (`newton2019`: six administrations P31–P34 → resting-zone clonal size down → **fusion**;
@@ -2226,6 +2267,138 @@ three weeks ARE ALREADY AVAILABLE.** R361's objection that a joint injection can
 adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that is a direct placement.
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
+
+## 🎯🎯🎯🎯🎯🎯🎯🎯 R375 — **THE MAXIMUM-EFFECT ANSWER, AND IT IS *NOT* SYSTEMIC.** The ceiling on the
+## systemic route is measured, sustained Gli1 is safe ONLY from removing a SECRETED antagonist, and the
+## systemic arm that actually exists is not a drug — it is the STEROL OCCUPANCY OF THE SMO CRD.
+
+The operator asked for maximum effect, said to go systemic if systemic is bigger, asked for pulse number
+and duration, and asked for every failure mode to be found and fixed. All four below.
+
+⛔⛔ **ONE — SYSTEMIC IS NOT BIGGER, AND THE CEILING SITS AT EXACTLY THE DOSE THAT MOVES THE POOL.**
+The only systemic schedule ever run on a growth plate is `trompet2024`'s, SAG **25 µg/g i.p. daily
+P31–P37**, and on **LENGTH IT WAS NULL — tibia P=0.29, femur P=0.247.** `mao2026sag` supplies why there is
+no headroom to escalate into: a single i.p. injection **AT THE SAME 25 mg/kg** produced its effects through
+**REDUCED PROLIFERATION and delayed G0/G1, with no change in apoptosis.** In a growth plate that is the
+wrong direction. Against it, **ONE 7 µg LOCAL BEAD** gave femur **+2.75 / +2.64 / +3.63%** at 1/2/6 months,
+6/6, 9/9, 8/8, **still widening at six months.** → **LOCAL HAS BOTH THE DEMONSTRATED EFFECT AND THE HIGHER
+CEILING.** ⚠ R368's withdrawal of "the route must be local" STANDS — the systemic arm was a cell-count arm
+and never got a powered length test — but it is now **capped as well as untested.**
+
+⭐⭐ **TWO — THE AGE SIGN FLIP IS INSIDE `trompet2024` ITSELF AND THIS FILE HAD NEVER EXTRACTED IT.**
+Same drug, same dose, same route, three weeks apart, **opposite results: P10–P16 REDUCED overall clone
+size, especially clones >4 cells (singlets/doublets/triplets unchanged); P30–P36 had the OPPOSITE effect —
+FEWER single labelled cells, MORE doublets and triplets**, i.e. the stem cells divided.
+→ **THIRD INDEPENDENT INSTANCE OF THE SOC BOUNDARY RULE** after `cheng2025` stating it both ways and
+`orikasa2024` (induced P6) vs `trompet2024` (P28–P32). **At BA16 he is as far post-SOC as it is possible to
+be — the favourable side on all three lines.**
+
+⭐⭐⭐⭐ **THREE — THE FINDING OF THE ROUND: SUSTAINED Gli1 IS BENEFICIAL ONLY WHEN IT COMES FROM REMOVING A
+SECRETED ANTAGONIST. FOUR CELL-AUTONOMOUS ACTIVATIONS TO ONE, AND THERE IS A MECHANISTIC REASON.**
+· **SECRETED-ANTAGONIST REMOVAL** — `haraguchi2025` states **PROGRESSIVE plate expansion and long-bone
+  OVERGROWTH TOGETHER WITH SUSTAINED UPREGULATION OF Gli1**, still working at 53 weeks.
+· **CELL-AUTONOMOUS, PTHrP⁺ stem cells** — `orikasa2024`: expand → reverse P56–P70 → gone P96 → trabecular
+  osteoblasts, **no final length.**
+· **CELL-AUTONOMOUS, Dlx5⁺ endosteal osteoblast precursors** — `dlx5hh2026`: Ptch1 deletion → **marrow
+  ADIPOCYTE fate, cortical + trabecular thinning, SPONTANEOUS FRACTURES** — the compartment a depot occupies.
+· **CELL-AUTONOMOUS, maturation screen** — R311: Ptch1 KO **+6.004**, Sufu KO **+3.628** = matures EARLY.
+⭐ **THE REASON: PTCH1 IS ITSELF A GLI TARGET, SO IT *IS* THE PATHWAY'S NEGATIVE FEEDBACK.** Removing HHIP
+leaves that feedback intact and the system re-equilibrates at a higher setpoint. Deleting Ptch1 — **or
+occupying Smoothened directly with an agonist** — acts DOWNSTREAM of it and **cannot self-limit.**
+**CORR-300 reached a FIFTH time, now with its mechanism.**
+⛔ **CONSEQUENCE FOR "MAXIMUM": THE TRUE MAXIMUM IS HHIP BLOCKADE, NOT SMO AGONISM** — and R294 already
+established **no HHIP-directed agent exists in any species.** SMO agonism is the obtainable second-best, and
+**because it sits below the feedback node it MUST BE PULSED. The pulse is not a safety compromise; it is
+what substitutes for the feedback the molecule bypasses.**
+
+⭐⭐⭐ **FOUR — THE SYSTEMIC ARM THAT ACTUALLY EXISTS IS NOT A DRUG. IT IS THE STEROL OCCUPANCY OF THE SMO
+CYSTEINE-RICH DOMAIN, AND THIS ATLAS HAD NEVER NAMED THE POCKET AS A LAYER.** Six ligands, one site, all
+systemic, all modifiable:
+· **CHOLESTEROL** — the endogenous agonist; `yu2026smo` puts it at the **CRD FIRST**, before the TM site.
+· **CORTISOL** — `lu2025cortisol`: **competes with cholesterol at the CRD and INHIBITS**, mutation-verified
+  by a CRISPR **SMO L116A** knock-in that is no longer inhibited.
+· **VITAMIN D3** — `bijlsma2006`: binds SMO, cyclopamine-sensitive, phenocopies the SMO null.
+· **7-DHC-DERIVED B-RING OXYSTEROLS** — `sever2016`: **INHIBIT SMO**, and **depleting 7-DHC ENHANCED an
+  agonist** (the potentiating direction, already done).
+· **SIDE-CHAIN OXYSTEROLS** — 20(S)-hydroxycholesterol, a natural SMO **agonist** at the same domain.
+· **ITRACONAZOLE / POSACONAZOLE** — `kim2010itra`, `chen2016posa`: block ciliary SMO accumulation at
+  ordinary antifungal exposure.
+⭐ **R287's LAYER MOVE APPLIED TO A RECEPTOR POCKET INSTEAD OF THE EXTRACELLULAR SPACE — AND IT IS THE ONLY
+SYSTEMIC HEDGEHOG LEVER THAT NEEDS NO UNOBTAINABLE DRUG, AND THE ONLY ONE THAT REACHES THE TRUNK.** It is
+made entirely of **subtractions**, which is exactly why every compound sweep was blind to it.
+→ New contraindications (DHCR7 shelf; glucocorticoids by any route) are in the CONTRAINDICATED section.
+✓ And the statin worry was raised and **closed on human height data** — `humphries2018`, **4.45 vs 4.60
+cm/yr, P=0.73** in 300 children.
+
+⭐⭐ **FIVE — THE DELIVERY STEP IS NOT NOVEL, AND THE ATLAS HAD NEVER NAMED THE HUMAN PROCEDURE.**
+`abusalem2026`: **INTRAOSSEOUS INJECTION INTO THE SUBCHONDRAL BONE OF THE HUMAN KNEE is an established
+image-guided procedure — 24 studies, 1,109 patients, 5 RCTs, mean follow-up 38 months**, favourable safety
+for PRP and MSC. And `sarrami2025` bounds the physeal injury from the other extreme: an **8.2 mm tunnel
+DRILLED STRAIGHT THROUGH an open physis in 14-year-old males → bars in 2 of 48 (4.2%), all tibial, none
+femoral, NO leg-length discrepancy at 12 months.** → **A fine needle in epiphyseal cancellous bone that
+never crosses the physis sits far below a bound that is already small. Only the payload is new.**
+
+⛔ **SIX — THE FAILURE MODE NOTHING IN THIS FILE HAD RAISED, AND IT IS SPECIFIC TO PUTTING THIS DRUG IN
+BONE.** `lee2016sagcalv`: SAG at **0.5–1.0 mM** in a PLGA/HA scaffold in a bone defect gave a **significant
+dose-dependent increase in bone formation on every parameter AND an increase in BLOOD VESSEL NUMBER AND
+DENSITY** — the authors call SAG pro-osteogenic **and pro-vasculogenic** in bone. **R365 established that
+VASCULAR INVASION IS THE TERMINAL EVENT OF CLOSURE.** → **an intraosseous depot could accelerate the front
+that closes the plate.** ✓ Bounded, not fatal: the `trompet2024` bead held **~9.5 mM in its own volume**,
+an order of magnitude higher, and produced a **longer** bone with no OA at six months; and the calvarial
+model is an **injury** in **intramembranous** bone (CORR-203). **FIX: mid-epiphyseal cancellous placement
+rather than the chondro-osseous junction; PULSE not sustain; read out plate width and the metaphyseal
+vascular front, not only length.**
+
+⛔ **SEVEN — THE ARTICULAR COST, PRICED.** `lin2009hh` (Nat Med, 261 cites): hedgehog is **ACTIVATED in
+human osteoarthritic cartilage**, higher chondrocyte hedgehog gives **more severe OA** across several mouse
+lines via RUNX2→ADAMTS5, and blockade attenuates it in mice and human explants. **FIX: the route is
+INTRAOSSEOUS, not intra-articular** — and `trompet2024` looked, finding no osteoarthritis six months after
+the SOC bead. **The joint is the compartment to keep the drug OUT of**, which argues for the harder SOC
+route over the easy intra-articular one.
+
+⭐ **EIGHT — AND THE PULSE LENGTH HAS A TOLERABILITY PRECEDENT IN A DEVELOPING MAMMAL.** `heine2011sag`
+(Sci Transl Med): **transient ONE-WEEK systemic SAG in neonatal animals was well tolerated and DID NOT
+PROMOTE TUMOUR FORMATION**, despite hedgehog's neoplasia association. Same schedule `trompet2024` used.
+⚠ Cerebellum, neonatal, no skeletal endpoint.
+
+🎯 **NINE — THE MAXIMISED PROTOCOL (the answer to "how many pulses, how long, how everything").**
+· **SITES: FOUR EPIPHYSES — distal femur + proximal tibia, BILATERALLY. TWO DEPOTS EACH = 8 per pulse.**
+  Basis: a **19–33 mm** diffusion reach for a ~500 Da solute over the depot's three-week life against a
+  **35–40 mm** half-width, so one central depot reaches most of an epiphysis and two cover it.
+· **PULSE LENGTH: 3 WEEKS — SET, NOT CHOSEN.** It is the bead's own measured life: Gli1 reporter present at
+  1 week, **gone by 3 weeks**.
+· **INTERVAL: ≥3 MONTHS, PREFERABLY 6. DERIVED, NEVER MEASURED IN ANY SPECIES.** Two bounds and nothing
+  between them: `trompet2024`'s three-week input was **still widening at six months**, so re-dosing sooner
+  buys nothing; `orikasa2024`'s **permanent** occupancy **reversed at P56–P70 and was gone by P96**, so
+  continuous occupancy CONVERTS the pool. Gap `g_l7_375a`.
+· **NUMBER: 2–4 pulses per site per year**, bounded by the remaining window, not by the schedule.
+· **PAYLOAD: micrograms-to-low-milligrams, not grams.** 26.4 µg fills a whole 70 mm human epiphysis at
+  100× EC50; `he2024sag`'s fibrin formulation carries **0.51 mg in 300 µL**, ~19× that — headroom for
+  weeks of clearance. ⛔ **A fill calculation is a LOWER BOUND, not a dose: epiphyseal clearance of any SMO
+  agonist has never been measured.**
+· **READOUTS: standing AND sitting height at a fixed time of day · BoneXpert ΔBA/ΔCA on serial hand films ·
+  MRI of the treated epiphyses at 6 and 12 months for plate width and bar formation · lateral T-L film + DXA.**
+
+⛔⛔ **TEN — WHAT IS STILL NOT FIXED. Stated so the next round cannot call it new.**
+· **NO GMP SAG, AND NO SMOOTHENED AGONIST HAS EVER BEEN GIVEN TO A HUMAN** — re-queried this round,
+  **clinicaltrials.gov returns ZERO Smoothened-agonist studies**; every hedgehog entry is an antagonist.
+· **THE PULSE INTERVAL HAS NEVER BEEN MEASURED IN ANY SPECIES** — nobody has given a second pulse to the
+  same plate, so it is unknown whether the pool responds again, responds less, or converts.
+· **EPIPHYSEAL CLEARANCE IS UNMEASURED**, so the payload rests on a lower bound.
+· **THE TRUNK IS STILL NOT COVERED BY THE DEPOT.** The only systemic arm is the sterol-occupancy one, which
+  is a set of subtractions with no length endpoint anywhere.
+
+🧭 **THE RANKING — THIS IS THE ACTUAL ANSWER TO "MAXIMUM EFFECT":**
+1. **HHIP FUNCTION-BLOCKING BINDER — the true maximum.** +9.92 cm human pLoF; `haraguchi2025` holds a
+   normal plate open to 53 wk with zones ORDERED; and because it sits **above** Ptch1 it keeps the feedback
+   that makes sustained activation safe. **NO AGENT IN ANY SPECIES.**
+2. **LOCAL PULSED SMO-AGONIST DEPOT IN THE SOC — the obtainable second-best.** The only length endpoint on
+   this axis; the human delivery procedure already exists; chemistry purchasable. **Blocked on GMP material
+   alone.**
+3. **SYSTEMIC STEROL-OCCUPANCY MANAGEMENT OF THE SMO CRD** — free, available today, **the only arm that
+   reaches the trunk.** No length endpoint anywhere.
+4. **SYSTEMIC SMO AGONIST — NOT the maximum.** Null on length at the only dose tested, anti-proliferative at
+   that same dose.
 
 ## ⛔⛔⛔ R367 — **THE POOL-SPARING SCHEDULE HAS ALREADY BEEN TESTED IN HUMANS THREE TIMES, TWICE
 ## RANDOMISED. IT NEVER BOUGHT HEIGHT, AND THE SHORTEST CYCLE LOST HEIGHT.** Do not cycle the GH arm.
