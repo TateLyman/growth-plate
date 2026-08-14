@@ -2291,6 +2291,71 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🧷🧷🧷🧷 R385 — **THE ACTUAL PROCEDURE, SPECIFIED.** Needle, cannula, reconstitution, spiking volumes,
+## placement confirmation, and the two things that can go mechanically wrong.
+## Run `atlas/tools/round385_sag_depot_preparation_arithmetic.py`
+
+⛔ **ZERO — A UNIT CORRECTION THAT PROPAGATES BACK THROUGH FOUR ROUNDS.** R372/373/374/375 all computed SAG
+masses on **MW 490.1 — the FREE BASE**. The formulation uses the **DIHYDROCHLORIDE (Tocris 6390), MW 562.98**,
+because the free base is cLogP 6.79 and will not go into an aqueous gel. **Every prior mass must be scaled
+×1.149.** All figures below are for the salt.
+
+🧷 **ONE — THE MATERIAL.** SAG dihydrochloride, CAS 364590-63-6 (free base), **MW 562.98**, ≥98% HPLC with
+CoA, **water-soluble**. Kd 59 nM, Gli EC50 ~3 nM. **Stock: 10 mM in sterile water = 5.63 mg/mL. One 1 mg
+catalogue vial makes 178 µL of 10 mM stock and covers ~9 depots at the operative dose — a single vial is more
+than one whole bilateral pulse.** Sterile-filter 0.22 µm. ⛔ **That removes bioburden; it does NOT qualify the
+material — no endotoxin spec, no impurity qualification. This is the standing blocker, not a formality.**
+
+🧷 **TWO — THE VEHICLE, AND THE TRADE IS REAL.** Tisseel is supplied as **2 / 4 / 10 mL kits**, freeze-dried or
+pre-filled frozen, warmed in FIBRINOTHERM ≤5 min, mixed through **DUPLOJECT** (dual-barrel, mixing at the tip);
+sets in **10–30 s**, 70% strength at ~10 min. **Spike the SEALER-PROTEIN (fibrinogen) arm, never the thrombin
+arm** — thrombin is the trigger and the drug must be distributed through the clot.
+⛔ **THE PRACTICAL PROBLEM NOBODY HAD HIT: the standard DUPLOJECT tip is an 18 G × 1 INCH needle.** That
+cannot reach a depot site inside an epiphysis. Either an extended applicator is passed **down the lumen of the
+access cannula** (an 18 G OD ~1.27 mm passes easily inside an 11 G ID ~2.4 mm), or the vehicle changes.
+| vehicle | for | against |
+|---|---|---|
+| **fibrin (Tisseel)** | FDA-approved, **published SAG loading** (`he2024sag`), resorbable, NOT osteoconductive | 18 G × 1" standard tip; sets in 10–30 s; may plug the cannula |
+| **preformed agarose bead** | **exactly what produced `trompet2024`'s length gain**; no in-situ setting | not an implantable-grade material with a regulatory history |
+| ⛔ **calcium phosphate (AccuFill)** | the purpose-built subchondroplasty material **with a purpose-built cannula** | **OSTEOCONDUCTIVE — it makes bone, and R365 says ossification IS closure. WRONG CARRIER NEXT TO A PHYSIS.** |
+
+🧷 **THREE — THE ACCESS, WITH REAL GAUGES.** Subchondroplasty **AccuPort cannulae are 11 G and 15 G**,
+trocar-tipped, drilled to target; the traditional subchondral orthobiologic route is a **13 G trocar under
+fluoroscopy, patient sedated**; and a **21 G needle under ultrasound** works through a pre-existing cortical
+break without sedation (`chen2020`-type Gerdy's-tubercle route) — **too fine for viscous fibrin.**
+→ **USE AN 11–13 G TROCAR-TIP CANNULA**, cortical entry planned on MRI/CT so the trajectory stays **entirely
+epiphyseal and never crosses the physis**. Routine IO volumes for tibial plateau and femoral condyle are
+**5–10 mL**, so a 1–2 mL depot is comfortably within what the compartment accepts.
+**ANAESTHESIA: the 13 G route is described as requiring sedation; a bilateral 4-epiphysis, 8-depot procedure
+means general or deep sedation.** Inject **slowly** — intraosseous pressure drives marrow-fat embolism, the
+mechanism seen in vertebroplasty.
+
+🧷 **FOUR — PLACEMENT CONFIRMATION, AND THERE IS A PUBLISHED INTRAOPERATIVE TEST.** `41089149` reports the
+documented failure — **INTRAMEDULLARY CANAL FILL**, the needle passing through into the medullary canal, in
+which case the depot is simply lost. The discriminator is real-time ultrasound Power Doppler:
+**a thin, SHEET-LIKE subcortical blush = correct subchondral placement · a compact, BALL-SHAPED hotspot =
+intramedullary misplacement.** Confirm with contrast under fluoroscopy before injecting drug.
+
+🧷 **FIVE — THE DOSE, AND IT IS SMALLER THAN EVERY EARLIER ROUND SAID.** R384 puts him on the HIGH side of the
+Ihh band already, so the operative column is the low one. All within `he2024sag`'s published in vivo range
+(30 / 100 / 1000 µM):
+| | per 2 mL depot | × 2 depots × 4 epiphyses |
+|---|---|---|
+| **LOW — operative** | **100 µM = 112.6 µg** | **0.90 mg per pulse** |
+| MID | 300 µM = 337.8 µg | 2.70 mg |
+| HIGH — R374's original | 1000 µM = 1126 µg | 9.01 mg |
+**Spiking: 20 µL of 10 mM stock per 2 mL of gel (1.0% v/v) for the low dose.**
+⭐ **THE WHOLE BILATERAL PULSE IS UNDER ONE MILLIGRAM OF DRUG.** `trompet2024`'s single rat bead held **7 µg**
+and produced the length gain.
+
+🧷 **SIX — WHAT THE ARITHMETIC STILL DOES NOT SETTLE, STATED SO IT IS NOT MISTAKEN FOR SETTLED.**
+· **Epiphyseal clearance has never been measured for any SMO agonist** — the depot is sized against an
+  unknown washout rate. The 26 µg fill number is a **LOWER BOUND on payload, not a dose.**
+· **Whether a setting fibrin gel distributes through epiphyseal cancellous bone at all**, rather than forming
+  one plug at the cannula tip, **is unknown in any species** — and it is the difference between a depot and a
+  pellet. This is the single most likely way the procedure fails mechanically.
+· **The material is not qualified for implantation.** Everything else here is specified; that is not.
+
 ## 🚨🚨🚨🚨🚨 R384 — **THE SAG PROGRAMME STRESS-TESTED AGAINST THE ACTUAL STACK. THE DOMINANT WEAK POINT IS
 ## NOT TUMOURS, NOT GMP, NOT THE PULSE INTERVAL — IT IS *SLIPPED CAPITAL FEMORAL EPIPHYSIS*, AND IT IS
 ## QUADRUPLE-STACKED. And the stack is ALREADY an Ihh-elevating regimen through two arms.**
