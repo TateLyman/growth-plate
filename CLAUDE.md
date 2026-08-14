@@ -2481,6 +2481,101 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 🍷🧬 R433 — **RESVERATROL SURVIVES R365's KILL ON THE ONE PARAMETER THE KILL REQUIRES. AND THE BIG
+## REJUVENATION SWING WAS ALREADY WORKED IN THIS ATLAS: IT IS NOT IMPOSSIBLE, IT IS BACKWARDS.**
+
+⭐⭐ **ONE — THE RESVERATROL DISCRIMINATOR, AND IT IS PRECISE.** R365's kill of the anti-angiogenic class
+has **exactly two premises**: ① under VEGF blockade **PROLIFERATION CONTINUES** (`gerber1999`: proliferation,
+differentiation and maturation *apparently normal*, only resorption inhibited) · ② senescence is
+**DIVISION-counted** (`marino2008`). Together: the pool drains at full rate for zero output = **pure loss**.
+⛔ **RESVERATROL FAILS PREMISE ①, MEASURED IN THE SAME PAPER THAT SUPPLIES THE LENGTH GAIN.**
+`karimian2013`: **BrdU significantly REDUCED (p<0.05)**, proliferative cells/column **4.5 vs 5.2**, PZ
+height **125 vs 173**. **Under resveratrol the counter slows WITH the output. That is the opposite of
+gerber1999's configuration, and it is the single parameter R365's kill turns on.**
+
+⭐⭐ **TWO — AND IT PASSES CORR-292, THE FILE'S OWN TEST FOR THIS EXACT AMBIGUITY.** Resveratrol **more
+than doubles the resting zone (0.26 vs 0.11 mm², p<0.01)** and raises HZ height (95 vs 71 µm). An expanded
+RZ is a **POOL** in `lui2023` and a **JAM** in `horike2026`, and **only the length endpoint separates
+them** — here it is **POSITIVE** (tibia +1.9% p<0.05; OVX femur +1.5% p<0.05). **R365's phenotype is a
+thickened plate with NO length gain. This is a thickened plate WITH one.**
+⭐ **AND THE ARITHMETIC IS INTERNALLY CONSISTENT, WHICH IS WHY THE SMALL NUMBER READS AS A RESULT:**
+prolif cells/column **−13%** × terminal cell size **+18%** (12.4 vs 10.5 µm) → **predicted ≈ +3%**;
+**observed +1.9%.** The decomposition and the endpoint agree without being fitted to each other.
+
+⛔⛔ **THREE — AND R431's REASON FOR HOLDING IT IS WEAKENED BY R360, WHICH R431 DID NOT APPLY.** R431 held
+it because lowering proliferation is `gafni2001`'s loan configuration. **But under R360's Regime 2 — the
+regime anastrozole puts him in — total height from a fixed pool is AMPLIFICATION × h_term and NOT
+throughput.** Resveratrol **LOWERS throughput (≈free under Regime 2) and RAISES h_term (the one term that
+adds height without spending a division).** R431 scored the free term as a cost.
+⚠ **THE HONEST LIMITS ARE UNCHANGED AND THEY ARE THE REAL OBJECTION:** every animal is **FEMALE** in both
+models · **one dose level, no dose-response** · significant in **two of four bones** (ovary-intact femur
+p=0.1; OVX tibia no difference at any timepoint) · and **amplification may fall too** — fewer proliferative
+cells per column is a shorter residence before commitment, which is R423's term running down.
+🧭 **VERDICT: UPGRADED FROM HELD to the best-evidenced obtainable agent aimed at closure program (C), the
+terminal vascular event, which nothing in the stack touches. Not promoted to the stack.**
+
+⛔⛔⛔ **FOUR — THE TELOMERE SWING IS DEAD AND IT WAS KILLED BY A DIRECT TEST, NOT BY ABSENCE.**
+`nilsson2005`: **resting-zone chondrocytes from YOUNG and OLD rabbits achieved THE SAME NUMBER OF
+POPULATION DOUBLINGS in culture.** The in vivo limit does not survive explantation — **it is not a Hayflick
+limit and TERT is not the target.** Secondary literature routinely re-asserts this as positive.
+
+⛔⛔⛔ **FIVE — PARTIAL REPROGRAMMING IS REAL, HAS BEEN DONE IN CARTILAGE IN VIVO, AND RUNS BACKWARDS FOR
+THIS TISSUE. Three worked nodes, ZERO CLAUDE.md presence** (`epigenetic_age_reset_in_cartilage`,
+`the_counter_is_a_leak_not_an_odometer`, `replicative_senescence_chondrocyte`; *Yamanaka*, *OSKM*,
+*partial reprogramming*, *epigenetic clock* all return **0** in this file).
+· ✓ **The clock exists and is HUMAN:** `sarkar2023`, methylation age predictor across human chondrocyte
+  ontogeny, **r=0.97**; a STAT3 agonist lowered predicted age in **5 of 6** aged donors.
+· ✓ **It can be moved in vivo and the safety is better than expected:** `osk2026`, **AAV-OSK into mouse
+  cartilage**, methylation age down, DNMT3a down, TET2 up, **markers kept, no dedifferentiation, no tumour.**
+· ⛔ **THEN IT FAILS TWICE.** `osk2026` measured proliferation and **Ki67⁺ chondrocytes DID NOT DIFFER** —
+  **the link the entire argument needs, epigenetic age → proliferative capacity, is the one nobody has
+  demonstrated.** And decisively: **ARTICULAR CARTILAGE AGES BY HYPERMETHYLATION and both rejuvenation
+  agents are calibrated on that direction, while THE GROWTH-PLATE RESTING ZONE AGES BY *LOSING*
+  METHYLATION** (`nilsson2005`), with removal of maintenance methylation **REPRODUCING** the arrested
+  phenotype (`yanagihara2025`). **An articular-calibrated reprogramming agent applied to a growth plate
+  pushes it TOWARD its own senescent state. Not impossible — backwards.**
+
+⭐⭐⭐ **SIX — AND THAT JOINS TO SOMETHING THE LEDGER ALREADY CARRIES SEPARATELY. FOUR INDEPENDENT LINES
+SAY THE TERMINUS IS A MAINTENANCE-METHYLATION LEAK AND THAT MORE 5mC IS TALLER:** `nilsson2005` (the clock
+is progressive loss of methylation in the RZ, **specific to SLOW in vivo division — the PZ divides far
+faster and does NOT tick**) · `yanagihara2025` (Dnmt1 loss **shortens** bone, by derepressing
+energy-metabolism genes) · **R343's human burden effects — UHRF1, DNMT1's essential targeting cofactor,
+−2.52 cm at P=7.1e-08; UHRF2 −3.10 at P=7.4e-17; TET1 +7.95** · R276's closure of DNMT inhibitors.
+→ **THE THERAPEUTIC DIRECTION IS TO PLUG THE LEAK, AND NO AGENT EXISTS IN THAT DIRECTION** — R342's
+inhibitor-shelf problem, on the axis that sets the terminus itself. `g_l12_433a`.
+⚠ **ONE GRADE-E INVERSION WORTH RECORDING: if the tick is set by SLOW division rather than by division
+itself — Nilsson and Baron's own proposal, complete maintenance methylation in the PZ but not the RZ — then
+keeping resting-zone cells cycling FASTER might tick LESS per division, which runs OPPOSITE to the
+pool-conservation logic this file has used since R360.** Never tested in any species.
+
+⛔ **SEVEN — THE CEILING, STATED PLAINLY: a targeted query returns NO REPORT, IN ANY SPECIES, OF REOPENING
+OR REACTIVATING A FUSED PHYSIS.** That is why distraction osteogenesis exists as the surgical workaround,
+and it is the honest boundary under every duration argument in this file.
+
+⭐⭐⭐ **EIGHT — SO WHAT IS ACTUALLY OPEN IS NON-DRUG, AND BOTH ITEMS ARE FREE.** The two largest unworked
+effects in the atlas are **mechanical** and **thermal**, both with **contralateral internal controls**, both
+in **normal animals**, and **neither has ever been tried in a human.**
+· **LATERAL JOINT LOADING** (`zhang2010knee`) — **0.5 N transverse across the knee, 5-minute bouts →
+  FEMUR +2.3%, TIBIA +2.3–3.7%, all P<0.001**, plate height **+19.5%**, and hypertrophic chondrocyte
+  **NUMBER *and* CELL HEIGHT both up.** Against **axial** loading at 4–17 N for 10 min/day, which makes
+  bones **2–4% SHORTER**. **A human device has been built THREE times and never used** (R428/R430), and the
+  effective band is **5–20 Hz** while voluntary human limb movement is **0.5–3 Hz** — which is why no
+  exercise prescription substitutes and why this is an **engineering** problem, not a biology one.
+· **LOCAL LIMB WARMING** (`serrat2015`, replicated `racine2018`) — **40 °C to ONE SIDE, 40 min/day × 14 d →
+  femur +1.3%, tibia +1.5%, tibial elongation rate +12%**, humerus and body mass unaffected, **~1% still
+  present at 7 weeks.**
+⭐⭐⭐ **AND THE JOIN NOBODY HAS MADE, WHICH IS THE MOST ACTIONABLE ITEM IN THE ROUND.** `serrat2014`:
+raising hindlimb temperature **22 → 34 °C** — a range its authors call **physiological for a normal human
+knee** — raised **10 kDa tracer entry into the tibial growth plate by MORE THAN 150%**, against only **18%
+at 40 kDa**, via **blood velocity +118% and vessel diameter +31%** rather than vessel leakiness. **R428
+priced the delivery multiplier at ≈1.0 for the stack's small molecules and named the ~4 kDa CNP analogue as
+the ONE arm delivery can help.**
+→ ⭐ **LOCAL KNEE WARMING IS SIMULTANEOUSLY A GROWTH LEVER WITH ITS OWN INTERNALLY-CONTROLLED LENGTH
+ENDPOINT *AND* THE DELIVERY MULTIPLIER FOR THE ONE ARM IN THE STACK THAT DELIVERY CAN HELP.** Two nodes,
+held separately for rounds, and the conjunction is **free, non-invasive and has zero human data.**
+`g_l6mech_433b`. ⚠ `serrat2013` restricts the length effect to a **window of rapid growth**, and every
+result is post-weaning mouse.
+
 ## 🧬🧬🧬🧬🧬 R432 — **"NOTHING IS LEFT" WAS COMPUTED WITH TWO INSTRUMENTS THAT ARE BOTH BLIND TO THE CLASS
 ## CONTAINING EVERY LARGE HUMAN HEIGHT EFFECT IN THIS FILE. THE SCREEN THEY CANNOT RUN, RUN — AND THE
 ## POSITIVE CONTROL COMES BACK AS THE ANSWER.**
