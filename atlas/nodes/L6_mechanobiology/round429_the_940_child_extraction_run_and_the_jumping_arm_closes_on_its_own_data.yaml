@@ -19,10 +19,10 @@ summary: >
   seven papers. This round finishes the job.
 
   THE HEADLINE IS THAT THE ARM CLOSES, AND IT CLOSES ON ITS OWN DATA RATHER THAN ON ABSENCE.
-  Nine arms now carry an extractable between-group height estimate. The seven JUMPING arms give
-  +0.50, -0.50, -0.50, +0.10, -0.30, +0.20 and -0.60 cm; four of seven are negative, the median is
-  -0.30 and the sample-size-weighted mean across 890 children is -0.127 cm. There is no signal, and
-  such sign as there is runs the wrong way.
+  Eleven arms carry an extractable between-group height estimate. The NINE JUMPING arms give
+  +0.50, -0.50, -0.50, +0.10, -0.30, +0.20, -0.60, -0.20 and -0.10 cm; six of nine are negative, the
+  median is -0.20 and the sample-size-weighted mean across 939 children - which is all but one of the
+  940 - is -0.128 cm. There is no signal, and such sign as there is runs the wrong way.
 
   THE SINGLE MOST INFORMATIVE ROW IS THE ONLY ONE THAT REPORTS A CHANGE SCORE WITH AN INTERVAL.
   macdonald2007 (Action Schools! BC, 222 analysed children, 16 months, the largest participant-months
@@ -32,16 +32,24 @@ summary: >
   excludes a gain larger than about 0.8 cm in boys, and in girls the interval lies almost entirely
   below zero.
 
-  AND THE PRE-DECLARED DOSE TEST FAILS INSIDE THE ONE STUDY THAT CONTAINS A DOSE GRADIENT.
-  R428 declared in advance that a real effect should scale with mechanical dose and that unordered
-  estimates would kill the arm regardless of the pooled sign. dowthwaite2019 split its intervention
-  by observed effort x participation minutes into LO (mean 774) and HI (mean 1561) against a control
-  school - a 2x internal gradient - and per month of inter-scan interval the ordering is LO 0.508 >
-  CONTROL 0.465 > HI 0.422 cm per month, with the GROUP*TIME interaction for height tested and null
-  at p>0.12. Double the dose, the lowest growth. Across studies no ordering by ground reaction force
-  survives either: fuchs2001 at 8.8 body weights is the highest documented dose and gives the largest
-  positive estimate, but weeks2008 is a high-force protocol and is the most negative pair, and the
-  lowest-dose trial in the set (nichols2008, 2-3 BW per nguyen2018) is one of three papers not obtained.
+  AND THE PRE-DECLARED DOSE TEST FAILS TWICE, EACH TIME INSIDE A SINGLE STUDY, WHICH IS THE STRONGEST
+  FORM BECAUSE MATURITY AND MEASUREMENT ARE MATCHED BY DESIGN. R428 declared in advance that a real
+  effect should scale with mechanical dose and that unordered estimates would kill the arm regardless
+  of the pooled sign. dowthwaite2019 split its intervention by observed effort x participation minutes
+  into LO (mean 774) and HI (mean 1561) against a control school - a 2x gradient - and per month of
+  inter-scan interval the ordering is LO 0.508 > CONTROL 0.465 > HI 0.422 cm per month, GROUP*TIME for
+  height tested and null at p>0.12. arnett2002 randomised postpubescent girls to HIGH-VOLUME rope
+  jumping (472 jumps), LOW-VOLUME (252) or walking control - a 1.87x gradient - and the estimates are
+  HV -0.20 and LV -0.10 cm, both below control. IN BOTH STUDIES THE HIGHER-DOSE ARM GREW LEAST.
+
+  ACROSS studies the ordering cannot be tested cleanly, and saying so is part of the result. Only two
+  arms carry a MEASURED ground reaction force: arnett2002 at 3.2 +/- 0.2 BW (negative estimates) and
+  fuchs2001 at 8.8 BW (the largest positive). That looks like dose-scaling until the cohorts are read -
+  Arnett's girls are 23-29 months past menarche and grow 0.2-0.4 cm in four months, Fuchs's are
+  prepubescent seven-year-olds growing over 3 cm in seven months. DOSE IS PERFECTLY CONFOUNDED WITH
+  REMAINING GROWTH CAPACITY BETWEEN STUDIES, which is exactly what the two within-study gradients
+  control for, and those both run backwards. The lowest-dose trial in the set (nichols2008, 2-3 BW per
+  nguyen2018) was not obtained.
 
   THREE CORRECTIONS TO MY OWN PRIOR ROUNDS. R428 reported that the twelve sample sizes sum to 886
   rather than 940 and recorded the discrepancy as unresolved - it is resolved and I was wrong: three
@@ -49,7 +57,9 @@ summary: >
   shared control, and counting both makes the total exactly 940. R428 also reported the resistance
   fraction as four studies and 135 participants with jumping-only at about 698 - the correct figures
   are 177 and 763. And macdonald2007, already in this bibliography since an earlier round, IS the
-  review's "Macdonald 2008"; the duplicate check caught it before a second entry was written.
+  review's "Macdonald 2008"; the duplicate check caught it before a second entry was written. Of the
+  three papers R429 first reported as unobtained, arnett2002 was subsequently supplied and is extracted
+  here; nichols2008 and theinnissenbaum2023 remain outstanding and would not change the verdict.
 
   WHAT THE ROUND DOES NOT CLAIM. Every point estimate here is inside the diurnal stature swing
   (about 2 cm standing and 0.3-0.8 per cent of sitting height), and not one of these trials
@@ -61,22 +71,45 @@ summary: >
 
 quantitative:
   - parameter: Jumping arms with an extractable between-group standing-height estimate
-    value: 7
+    value: 9
     unit: arms
     species: human
     source_ref: miao2025
     note: >
-      fuchs2001; weeks2008 boys and girls; nogueira2014; nogueira2015; macdonald2007 boys and girls.
-      Point estimates (intervention minus control, cm): +0.50, -0.50, -0.50, +0.10, -0.30, +0.20, -0.60.
+      fuchs2001; weeks2008 boys and girls; nogueira2014; nogueira2015; macdonald2007 boys and girls;
+      arnett2002 high-volume and low-volume. Point estimates (intervention minus control, cm):
+      +0.50, -0.50, -0.50, +0.10, -0.30, +0.20, -0.60, -0.20, -0.10.
   - parameter: Sample-size-weighted mean between-group standing-height difference, jumping arms
-    value: -0.127
+    value: -0.128
     unit: cm (intervention minus control)
     species: human
     source_ref: miao2025
     note: >
-      Weighted by completer n in each arm, total n=890. Simple mean -0.157 cm, median -0.30 cm,
-      four of seven arms negative. Computed in R429 from the extracted arm-wise tables; the constituent
-      trials never performed this comparison.
+      Weighted by completer n in each arm, total n=939 - all but one of the review's 940. Simple mean
+      -0.156 cm, median -0.20 cm, six of nine arms negative. Computed in R429 from the extracted arm-wise
+      tables; the constituent trials never performed this comparison.
+  - parameter: Arnett 2002 within-study dose gradient, rope jumps per session
+    value: HV 472 (SD 88) vs LV 252 (SD 38); height estimates HV -0.20, LV -0.10
+    unit: jumps per session; cm (intervention minus control)
+    species: human
+    source_ref: arnett2002
+    note: >
+      Randomised three-arm trial, postpubescent girls 23-29 months past menarche, 4 months, weighted
+      vests progressing 0 to 3 kg. Table 1 height (SD of level): HV 164.3 to 164.5, LV 164.5 to 164.8,
+      control 162.9 to 163.3 cm. A 1.87x dose gradient in which the higher-volume arm gives the lower
+      estimate, and both intervention arms sit below control. Between-group significance is marked in
+      the table with a superscript and appears on the bone endpoints but on no height row, so the
+      comparison was made and height is null. Technicians blind to group; same technician at both visits.
+  - parameter: Arnett 2002 measured peak ground reaction force per rope jump
+    value: 3.2
+    unit: body weights (SD 0.2)
+    species: human
+    source_ref: arnett2002
+    note: >
+      One of only two arms in the 940 with a MEASURED GRF; the other is fuchs2001 at 8.8 BW. For scale,
+      brailey2026 puts an ordinary standardised high jump at 3.77 BW, so rope jumping at 8.5 cm clearance
+      is a modest impact. The two measured doses order in the predicted direction across studies (3.2 BW
+      negative, 8.8 BW +0.5) but are perfectly confounded with cohort maturity and remaining growth.
   - parameter: Macdonald 2008 boys, reconstructed between-group height-change difference
     value: 0.20
     unit: cm (95 per cent CI -0.37 to +0.77)
@@ -181,6 +214,7 @@ key_refs:
   - ref_id: dowthwaite2019
   - ref_id: gomez2020
   - ref_id: nichols2001
+  - ref_id: arnett2002
   - ref_id: brailey2026
 
 edges:

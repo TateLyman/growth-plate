@@ -2482,8 +2482,8 @@ method is confirmed, restate the figure as *"operator-reported, method unknown, 
 functional sensitivity."*
 
 ## 📊📊📊📊📊 R429 — **THE 940-CHILD EXTRACTION RUN TO THE END. THE JUMPING ARM CLOSES ON ITS OWN DATA:
-## SEVEN ARMS, n=890, AN n-WEIGHTED MEAN OF −0.13 cm, AND THE PRE-DECLARED DOSE TEST FAILING INSIDE THE ONE
-## STUDY THAT CONTAINS A DOSE GRADIENT. Operator supplied seven of the twelve papers.**
+## NINE ARMS, n=939 OF 940, AN n-WEIGHTED MEAN OF −0.13 cm, AND THE PRE-DECLARED DOSE TEST FAILING TWICE —
+## ONCE INSIDE EACH OF THE TWO STUDIES THAT CONTAIN AN INTERNAL DOSE GRADIENT.**
 
 ⭐ **THE ARM WAS LEFT UNDECIDED ON PURPOSE AND IS NOW DECIDED.** R426 read `fuchs2001`'s abstract as a
 randomised null; R427 opened Table 1 and **withdrew the word null** (+3.6 cm jumpers vs +3.1 controls =
@@ -2502,13 +2502,16 @@ R428 got three of twelve and said explicitly it was **not enough to lean either 
 | Dowthwaite 2019 **HI** (resistance, ~19 mo) | res | +8.1 | +8.6 | −0.50 | **GROUP×TIME p>0.12** |
 | Dowthwaite 2019 **LO** | res | +9.8 | +8.6 | +1.20 | same test |
 | Nichols 2001 (resistance, 15 mo, **n=5 completers**) | res | +0.7 | +0.4 | +0.30 | "height did not change" |
+| ⭐ **Arnett 2002 HV** (rope, **472 jumps**, **3.2 BW**, 4 mo) | jump | +0.2 | +0.4 | **−0.20** | **table marks sig; height unmarked** |
+| ⭐ **Arnett 2002 LV** (rope, **252 jumps**, 3.2 BW, 4 mo) | jump | +0.3 | +0.4 | **−0.10** | same |
 ⛔ **Witzke 2000 and Gómez 2020 state an anthropometric null and report NO arm-wise numbers.** Gómez gives
 only a **pooled main time effect for height of 0.3%** across four groups with no significant resistance or
 milk main effect. ⛔ **Arnett & Lutz 2002, Nichols 2008 and Thein-Nissenbaum 2023 were not obtained.**
 
-⭐⭐⭐ **THE RESULT: SEVEN JUMPING ARMS, FOUR NEGATIVE, MEDIAN −0.30, SIMPLE MEAN −0.157, AND AN
-n-WEIGHTED MEAN OF −0.127 cm ACROSS 890 CHILDREN.** There is no signal, and such sign as there is runs
-the wrong way. **R427's reopening was right on the facts and does not survive the other six arms.**
+⭐⭐⭐ **THE RESULT: NINE JUMPING ARMS, SIX NEGATIVE, MEDIAN −0.20, SIMPLE MEAN −0.156, AND AN
+n-WEIGHTED MEAN OF −0.128 cm ACROSS 939 CHILDREN — ALL BUT ONE OF THE 940.** There is no signal, and such
+sign as there is runs the wrong way. **R427's reopening was right on the facts and does not survive the
+other eight arms.**
 
 ⭐⭐ **THE BEST SINGLE ROW IS THE ONLY ONE REPORTING A CHANGE SCORE WITH AN INTERVAL, AND IT IS THE
 LARGEST TRIAL IN THE SET.** `macdonald2007` (= the review's "Macdonald 2008" — **it was ALREADY in this
@@ -2517,21 +2520,29 @@ bibliography and the duplicate check caught it pre-write, CORR-336 again**) prin
 +0.77), girls −0.60 cm (−1.21 to +0.01), MDE at 80% power 0.81 and 0.87 cm.** 222 children, 16 months —
 **it excludes a gain above ~0.8 cm in boys, and in girls the interval sits almost entirely BELOW ZERO.**
 
-⛔⛔ **AND THE PRE-DECLARED DOSE TEST FAILS — INSIDE A SINGLE STUDY, WHICH IS THE STRONGEST FORM.**
-R428 declared in advance: *"IF REAL, THE EFFECT SHOULD SCALE WITH MECHANICAL DOSE… if the twelve estimates
-are unordered with respect to peak ground reaction force, the arm is dead regardless of the pooled sign."*
-`dowthwaite2019` split its own intervention by **observed effort × participation minutes** — **LO mean 774
-vs HI mean 1561, a 2× internal gradient** — and per month of inter-scan interval the ordering is
-**LO 0.508 > CONTROL 0.465 > HI 0.422 cm/month**, with **GROUP×TIME for height tested and NULL (p>0.12)**.
-**Double the dose, the lowest growth.** ⚠ Across studies the test cannot be run properly: `fuchs2001` at
-**8.8 BW** is the highest documented dose and gives the largest positive, but Weeks is also a high-force
-protocol and is the most negative pair — and **the lowest-dose trial (`nichols2008`, 2–3 BW per
-`nguyen2018`) is one of the three not obtained.** One point is not an ordering.
+⛔⛔ **AND THE PRE-DECLARED DOSE TEST FAILS TWICE — ONCE INSIDE EACH OF THE TWO STUDIES THAT CARRY AN
+INTERNAL GRADIENT. THAT IS THE STRONGEST FORM, BECAUSE MATURITY, MEASURER AND PROTOCOL ARE MATCHED BY
+DESIGN.** R428 declared in advance: *"IF REAL, THE EFFECT SHOULD SCALE WITH MECHANICAL DOSE… if the twelve
+estimates are unordered with respect to peak ground reaction force, the arm is dead regardless of the
+pooled sign."*
+· **`dowthwaite2019`** — effort × participation minutes, **LO 774 vs HI 1561, a 2.0× gradient** → per month
+  of inter-scan interval **LO 0.508 > CONTROL 0.465 > HI 0.422 cm/month**, **GROUP×TIME for height tested
+  and NULL (p>0.12).**
+· ⭐ **`arnett2002`** — randomised, **HV 472 jumps vs LV 252, a 1.87× gradient** → **HV −0.20, LV −0.10, BOTH
+  BELOW CONTROL.**
+→ ⭐ **IN BOTH STUDIES THE HIGHER-DOSE ARM GREW LEAST.**
+⚠ **ACROSS studies it cannot be tested cleanly, and saying so is part of the result. Only TWO arms in the
+whole 940 carry a MEASURED GRF — `arnett2002` at 3.2 ± 0.2 BW (negative) and `fuchs2001` at 8.8 BW (the
+largest positive).** That looks like dose-scaling until the cohorts are read: **Arnett's girls are 23–29
+months past menarche and grow 0.2–0.4 cm in four months; Fuchs's are prepubescent seven-year-olds growing
+over 3 cm in seven months. DOSE IS PERFECTLY CONFOUNDED WITH REMAINING GROWTH CAPACITY BETWEEN STUDIES —
+which is precisely what the two within-study gradients control for, and those both run backwards.**
+(`nichols2008`, the 2–3 BW anchor, was not obtained.)
 
-⭐ **AND THE DISPERSION PROBLEM IS TOTAL, SO NO POOLED INTERVAL WAS FABRICATED.** Of the ten arms with
-numbers: **two report SEM of the LEVEL** (Fuchs, Nichols 2001) · **five report SD of the LEVEL** (Weeks ×2,
-Nogueira ×2, Dowthwaite; one Nogueira SD is printed as `(0.0)` and is unrecoverable) · **and only Macdonald's
-two arms report an interval on the CHANGE.** **A pooled confidence interval cannot be formed from this
+⭐ **AND THE DISPERSION PROBLEM IS TOTAL, SO NO POOLED INTERVAL WAS FABRICATED.** Of the twelve arms with
+numbers: **two report SEM of the LEVEL** (Fuchs, Nichols 2001) · **seven report SD of the LEVEL** (Weeks ×2,
+Nogueira ×2, Dowthwaite, Arnett ×2; one Nogueira SD is printed as `(0.0)` and is unrecoverable) · **and only
+Macdonald's two arms report an interval on the CHANGE.** **A pooled confidence interval cannot be formed from this
 literature and none is offered.** The brief's instruction was followed: point estimates, no imputation.
 
 ⚠ **SITTING HEIGHT SPLITS BY PROTOCOL, NOT BY DOSE OR SEX — WHICH IS THE SIGNATURE OF MEASUREMENT, NOT
@@ -2556,9 +2567,13 @@ And the largest mechanical effect in the atlas is still on an axis no human acti
 joint loading, 0.5 N, +2.3–3.7% bone length** (R427), with a **human device built twice and never used**
 (R428).
 
-⛔ **STILL OWED, AND NOW A SHORT LIST: `arnett2002` · `nichols2008` (the 2–3 BW low-dose anchor, the one
-that would complete the ordering test) · `theinnissenbaum2023`.** What is needed from each is one table:
-baseline and follow-up HEIGHT by arm, with n and whatever dispersion is reported.
+✅ **`arnett2002` WAS SUPPLIED AND IS EXTRACTED — and it is the most useful of the three, because it is
+the only randomised trial in the set with BOTH a measured GRF and an internal dose gradient.**
+⛔ **STILL OUTSTANDING: `nichols2008` (the 2–3 BW low-dose anchor) · `theinnissenbaum2023` (resistance,
+shares an author and a programme with `dowthwaite2019`). NEITHER WOULD CHANGE THE VERDICT** — together they
+are ~134 of 940, the across-study ordering they would complete is confounded by growth capacity anyway, and
+six of nine extracted jumping arms are already negative. **The arm is settled; do not spend another round
+on it.**
 ⚠ **One unresolved observation, recorded not claimed: `dowthwaite2019` and `theinnissenbaum2023` share an
 author and describe the same school-based resistance programme; the review counts them as two studies
 (130 participants). Possible non-independence.**
