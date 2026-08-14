@@ -2372,6 +2372,47 @@ rewritten.** The 56.1% figure and the ~16 cm figure are both **WITHDRAWN**. ⛔ 
 `speth2026`: whatever the complication rate, a permanent and worsening extensor deficit is the price, and it
 is a price the growth-plate route does not charge.**
 
+## 🛒🛒🛒🛒 R401 — **"NO MOLECULE EXISTS" HAS MEANT "NO MEDICINE IS SOLD." THE VENDOR CATALOGUE WAS NEVER
+## QUERIED, AND FOUR THINGS THIS FILE CALLED NON-EXISTENT ARE ON SALE TODAY.**
+## Run `atlas/tools/round401_vendor_level_availability_sweep.py`
+
+⛔ **THE METHOD ERROR, AND IT IS CORR-347 ONE LEVEL FURTHER OUT.** CORR-347 fixed "Open Targets lists only
+CLINICAL agents → query ChEMBL." **But ChEMBL indexes SMALL MOLECULES with bioactivity records. It does not
+index the catalogue of RECOMBINANT PROTEINS AND Fc-FUSIONS that biology suppliers sell.** For a file whose
+best target class is **SECRETED PROTEINS** and whose recurring conclusion is *"the direction is to SUPPLY this
+protein"* or *"the wanted form is the CLUSTERED ligand"*, **that is exactly where the answers hide.**
+
+⭐⭐ **ON SALE, AND WE SAID OTHERWISE OR NEVER ASKED:**
+| reagent | what this file said | what is actually sold |
+|---|---|---|
+| **JAG1-Fc** | R400 called the multivalent agonist "a construct to be built" | **Human full-length + N-terminal Fc chimeras, plus MOUSE; vendor bioactivity measured IMMOBILISED, ED50 0.3–1.8 µg/mL.** ⭐ **THE EXACT REAGENT `lin2011` USED TO EXPAND THE EPIPHYSIS STEM CELL ZONE** — Fc-dimeric = CORR-355's agonist form |
+| **DLL1-Fc** | never asked | **Human, MOUSE and RAT, ED50 0.1–0.5 µg/mL.** ⭐ **DLL1 is THE PLATE'S OWN ligand — 3.05× cartilage-enriched, 24.9 CPM.** The physiological ligand, clustered, in all three relevant species |
+| **SCUBE3** | ⛔ R287: one of **FOUR cheap experiments that DO NOT EXIST**; R312: **"no recombinant product"** | **SOLD. CHO-derived, >95% pure, endotoxin <0.10 EU/µg — AND THE VENDOR VALIDATES IT BY ADHESION OF ATDC5 *CHONDROGENIC* CELLS, ED50 0.25–1.25 µg/mL.** SCUBE3 pLoF **−7.18 cm**, so the direction is to **SUPPLY** |
+| SMOC-1 · SAG | already recorded as purchasable | listed for completeness |
+
+✓ **AND THE SAME SWEEP CONFIRMS THE GAPS THAT ARE REAL — no vendor offers a FUNCTION-BLOCKING or NEUTRALISING
+anti-HHIP** (the listings are WB/IHC/ELISA/IP/flow detection reagents, exactly as R314/R376 said) · **no
+neutralising anti-STC2** · **no CHAD–α2β1 antagonist** · **no NRK inhibitor.** Those four stay construction
+problems.
+
+⛔ **WHAT THIS IS NOT.** **Every item is a RESEARCH-GRADE REAGENT** — no impurity spec, no endotoxin-release
+package, no toxicology, and **none has ever been given to a human.** Nothing here makes any of it a treatment,
+and the standing position is unchanged.
+⭐⭐ **WHAT IT IS: THREE DECIDING EXPERIMENTS BECOME PURCHASE ORDERS RATHER THAN PROGRAMMES.**
+① **Does a CLUSTERED Notch agonist expand the resting zone in a NORMAL GROWING animal, and does the bone get
+longer?** JAG1-Fc / DLL1-Fc, mouse and rat, catalogue.
+② **Is the monomeric soluble JAG1 peptide an agonist or an antagonist IN CHONDROCYTES?** Both forms
+purchasable, readout **HES1**; CORR-355 predicts **peptide INHIBITS, Fc-fusion ACTIVATES**. **One week in a
+dish**, and it decides whether R400 is a lead or a contraindication.
+③ **Does supplying SCUBE3 lengthen a bone?** Protein sold, already vendor-validated on chondrogenic cells.
+
+⭐⭐⭐ **THE GENERALISABLE CORRECTION — APPLY IT RETROSPECTIVELY. "NO MOLECULE EXISTS" MUST BE SPLIT *THREE*
+WAYS, NOT CORR-347's TWO:**
+· **no APPROVED MEDICINE** — true of nearly everything here
+· **no CHEMICAL MATTER** — a **ChEMBL** query (CORR-347)
+· ⭐ **no PURCHASABLE PROTEIN — a VENDOR-CATALOGUE query, and it had NEVER BEEN RUN.**
+**This is a secreted-protein atlas. The third query is the one it could least afford to skip.**
+
 ## 🎯🎯🎯🎯🎯 R400 — **TURNING NOTCH *ON*. R399's closing line ("the helpful direction has no drug") WAS TRUE
 ## UNTIL 2024 AND IS NOW FALSE. Soluble AND targeted Notch agonists exist, work INTRAVENOUSLY in mice — and a
 ## JAGGED1 PEPTIDE HAS ALREADY BEEN INJECTED INTO MICE AND EXPANDED AN ENDOGENOUS PROGENITOR POOL IN BONE.**
