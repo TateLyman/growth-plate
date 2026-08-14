@@ -2383,20 +2383,50 @@ manufacturing contract.**
 
 **DRUG** SAG **DIHYDROCHLORIDE** (CAS 364590-63-6 is the FREE BASE — specify the salt), MW 562.98, ≥98% HPLC
 + CoA. **Fallback SAG21k ONLY on formulation failure.**
-**DOSE** **1.622 mg/kg per administration, FREE-BASE EQUIVALENT** → **81.1 / 97.3 / 113.5 mg at 50 / 60 / 70 kg.**
-⚠ **The mass you weigh is the SALT — ×1.149. Getting this backwards under-doses by 13%.**
 
-⭐ **THE PULSE — 10 DOSES OVER 22 DAYS, IN THREE PHASES (worked at 60 kg):**
-| dose | day | interval | % of target | salt mass | volume | phase |
+⛔⛔ **R393 — THE DOSE ANCHOR WAS CHOSEN BADLY AND ALMOST ALL THE COMPLEXITY CAME FROM IT.** R388–R392 scaled
+everything from li2021's **20 mg/kg — the HIGHEST dose in the published range** — because li2021 is the study
+with a stature endpoint. **But CORR-203 ALREADY EXCLUDES li2021's EFFECT SIZE AS A PREDICTION.** This file
+imported the DOSE from the study whose EFFECT it had already discounted, then let gram-scale synthesis, a
+30 mg/mL formulation and multi-site injections follow from that one choice.
+**THREE ANCHORS EXIST, ALL SYSTEMIC, ALL ENGAGING THE PATHWAY, SPANNING 40-FOLD (60 kg):**
+| anchor | mouse | what was MEASURED there | HED dose | salt | volume | sites | per pulse | per year |
+|---|---|---|---|---|---|---|---|---|
+| **LOW** `lee2016colitis` | 0.5 mg/kg | 2.8× Gli1 in **COLON**, colitis + colon tumours ↓, **PBS vehicle** | 2.4 mg | 2.8 mg | 0.09 mL | 1 | 28 mg | **0.11 g** |
+| ⭐ **MID** `rundle2023` | 5 mg/kg | **PTCH1, GLI1, SOX9 UP IN CHONDROCYTES in vivo**; authors state 5–20 mg/kg/day is the effective systemic range | **24.3 mg** | **27.9 mg** | **0.93 mL** | **1** | **245 mg** | **1.1 g** |
+| HIGH `li2021` | 20 mg/kg | stature + L3 **+32.1%** — ⛔ effect size excluded by CORR-203 | 97.3 mg | 111.8 mg | 3.73 mL | 2–3 | 877 mg | 3.5 g |
+⭐⭐ **USE THE MID ANCHOR. IT IS SIMPLER *AND* BETTER JUSTIFIED** — rundle2023 measured target engagement in
+**the right cell type**, in vivo, at a quarter of the dose, while li2021's only claim to the anchor was an
+endpoint this file already refuses to predict from. **72% less drug · EVERY weight 50–80 kg is ONE
+sub-millilitre injection · formulation eases to ~28 mg/mL for a 1 mL dose (10 mg/mL still gives an ordinary
+2.8 mL) · ~1 g/year instead of 3.5.**
+⛔ **THE HONEST COUNTERWEIGHT: BOTH GROWTH-PLATE RESULTS SIT AT THE TOP** — trompet2024's +61% pool at 25
+mg/kg, li2021's stature at 20. **No lower dose has ever been tested at a plate in any species.** Starting mid
+costs one 6-month cycle if wrong and saves the entire manufacturing burden if right; the escalation shape is
+identical either way, and **pulse 2 can anchor higher if the readout is flat.**
+⚠ **One grade-E argument that the plate needs LESS than the colon:** lee2016colitis attributes its modest
+colonic response to **constitutive epithelial ligand keeping basal Gli1 HIGH** — the colon is hard to move
+proportionally. The plate at BA16 is a tissue whose hedgehog output is **declining**, which is the whole
+premise. Lower basal tone should be easier to move.
+✗ **Oral was checked and does not exist** — no oral administration of SAG, purmorphamine or any SMO agonist in
+any species; every in vivo route is i.p. or s.c. A gap, not a shortcut.
+
+⭐ **THE PULSE — 10 DOSES OVER 22 DAYS, MID ANCHOR, 60 kg. Target 24.3 mg free base = 27.9 mg SALT = 0.93 mL
+at 30 mg/mL = ONE SITE.**
+| dose | day | interval | % | salt | volume | phase |
 |---|---|---|---|---|---|---|
-| 1 | 1 | — | **10%** | 11.2 mg | 0.37 mL | **ESCALATION — observe 2 h** |
-| 2 | 3 | 48 h | **25%** | 27.9 mg | 0.93 mL | ESCALATION |
-| 3 | 5 | 48 h | **50%** | 55.9 mg | 1.86 mL | ESCALATION |
-| 4 | 7 | 48 h | 100% | 111.8 mg | 3.73 mL | ESCALATION |
-| 5–8 | 9, 11, 13, 15 | 48 h | 100% | 111.8 mg | 3.73 mL | plateau |
-| 9 | 18 | **72 h** | 100% | 111.8 mg | 3.73 mL | **TAPER** |
-| 10 | 22 | **96 h** | 100% | 111.8 mg | 3.73 mL | **TAPER — final dose** |
-**TOTAL 877 mg (0.88 g) at 60 kg — 29% LESS than R388's flat 11 doses, and safer at both ends.**
+| 1 | 1 | — | **25%** | 7.0 mg | 0.23 mL | **START — observe 2 h** |
+| 2 | 3 | 48 h | **50%** | 14.0 mg | 0.47 mL | escalation |
+| 3 | 5 | 48 h | 100% | 27.9 mg | 0.93 mL | escalation |
+| 4–8 | 7, 9, 11, 13, 15 | 48 h | 100% | 27.9 mg | 0.93 mL | plateau |
+| 9 | 18 | **72 h** | 100% | 27.9 mg | 0.93 mL | **TAPER** |
+| 10 | 22 | **96 h** | 100% | 27.9 mg | 0.93 mL | **TAPER — final dose** |
+**TOTAL 245 mg at 60 kg. Three escalation steps, not four, because the target is inside the published
+effective range from the start — and the first dose is 7 mg, a trivial exposure to open a first-in-human
+sequence with.**
+⚠ **The mass you weigh is the SALT — ×1.149 on any free-base figure. Backwards under-doses by 13%.**
+⛔ **HIGH-ANCHOR FALLBACK, if pulse 1 reads flat at 6 months:** 111.8 mg salt/dose, 3.73 mL over 2 sites,
+877 mg/pulse — the R392 table, kept for that purpose only.
 ⭐ **WHY ESCALATE — not caution, the only defensible design.** No SMO agonist has ever been given to a human,
 so there is no tolerated dose, no PK, no AE profile; and the published effective systemic range spans
 **40-fold** with the plate-effective point unmeasured inside it. Escalation walks up that range instead of
