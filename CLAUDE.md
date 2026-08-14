@@ -2412,6 +2412,63 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🔵🔵🔵 R408 — **THE LARGEST TERM IN THE IDENTITY, LOCALISED FOR THE FIRST TIME. Within the volume
+## module the cartilage-enriched members are the K-Cl EXPORTER and WNK4 — NOT NKCC1, NOT SPAK — and that
+## converts an impossible ask (a transporter ACTIVATOR) into an ordinary one (an INHIBITOR).**
+
+⭐ **THE ASSUMPTION THAT HAD BLOCKED h_term FOR ROUNDS.** `the_swelling_machinery_has_only_ever_been_switched_off`
+established that **every experiment on this machinery is subtractive** — bumetanide **−35% of elongation with
+hypertrophic cell NUMBER unchanged (193 vs 192, p=0.937)**, DIDS and EIPA the same — and R296's six-class sweep
+found nothing pointing up. The reason given was that raising volume needs an **ACTIVATOR of an importer**, and
+transporter activators are close to a nonexistent drug class.
+⭐⭐ **BUT THE CELL HAS AN EXPORT ARM. The K-Cl cotransporters carry K⁺, Cl⁻ and osmotically obliged water OUT
+— they are what performs regulatory volume decrease. INHIBITING an exporter raises volume by the same
+arithmetic as activating an importer, and inhibitors are what the pharmacopoeia is made of.**
+
+⭐⭐ **AND THE LOCALISATION — NEVER RUN BEFORE — SAYS THE EXPORT ARM IS THE PLATE'S ARM.** Purity-corrected
+human postnatal growth plate, 12/12 samples (calibrators COL2A1 8.92, ACAN 4.65, PTPRC 0.00):
+| ENRICHED | ratio | | CONTAMINANT-LEANING | ratio |
+|---|---|---|---|---|
+| **WNK4** | **4.04** | | NKCC1 / SLC12A2 | 0.25 |
+| **CHST3** | **3.32** | | SPAK / STK39 | 0.29 |
+| **KCC1 / SLC12A4** | **2.60** | | OSR1 / OXSR1 | 0.30 |
+| **AQP1** | **2.23** | | WNK1 0.49 · WNK2 0.23 | |
+| **SLC6A12** | **2.05** | | NFAT5 0.32 · KCC3 0.18 · KCC4 0.48 | |
+**The chondrocyte-concentrated members are the EXPORTER, the kinase WNK4, the 6-O-sulfotransferase, aquaporin
+1 and the betaine transporter — and not one of the five has ever been worked in this file.**
+⚠ **CORR-351 GOVERNS AND MUST BE QUOTED WITH IT: NKCC1 at 0.25 IS NOT AN ABSENCE.** It is 25.7 CPM in all
+twelve samples and `bush2010` is direct functional proof it carries ~35% of elongation **at the plate**. The
+ratio **reorders priorities WITHIN the module**; it does not overturn a functional result — exactly as it did
+not for ESR1.
+
+⭐ **AND WNK4 MOVES BOTH ARMS AT ONCE.** The WNK–SPAK/OSR1 cascade phosphorylates the cation-chloride
+cotransporters **reciprocally — it ACTIVATES the NKCC importers and INHIBITS the KCC exporters**, and both of
+those raise volume. **WNK4 is the ONLY member of that cascade that is cartilage-enriched here**, while WNK1,
+WNK2, SPAK and OSR1 are all contaminant-leaning.
+
+⛔ **WHAT DOES NOT EXIST, AND IT IS STILL THE BINDING PROBLEM.** **No K-Cl cotransporter inhibitor has ever
+been given to cartilage or a growth plate in any species** — a targeted query returns the erythroid, neuronal
+and cryo-EM literature and nothing skeletal. The classical tool is **DIOA**, an erythroid K-Cl cotransport
+inhibitor, unapproved and with no length endpoint. **And every WNK compound ever made is an INHIBITOR, built
+for hypertension — so the WNK4 direction inherits the exact problem the NKCC1 direction had.**
+
+⛔⛔ **THE OBJECTION MOST LIKELY TO SINK IT IS ALREADY IN THIS FILE AND I AM NOT ARGUING AROUND IT.**
+`hall2001`: the volume **SET POINT RE-TUNES** — chondrocytes at **180, 280 and 380 mOsm reached the same
+terminal volume, ~645 µm³**. Regulatory volume decrease is a **deliberately redundant, layered** system and
+this tissue carries **KCC1, KCC3, KCC4, VRAC (LRRC8A 23.3 CPM) and ANO1 in parallel**. Blocking one exporter
+may simply be compensated — and redundancy is what RVD is *for*.
+✓ **One human genetic line survives it, and it is a BAND not an arrow:** **LRRC8A burden −0.272 cm,
+P=3.5e-06, 14,588 carriers**, while **LRRC8C gain-of-function leaving VRAC stuck open is −5.1 SD**
+(`quinodoz2025`). A volume-release channel whose *opening* shortens people is a channel whose *closure* is the
+direction of interest — but losing it shortens too.
+
+⭐ **WHAT THIS ROUND IS: NOT A COMPOUND — A REFRAME PLUS THE FIRST LOCALISATION OF THE MODULE.** Together they
+change the shape of the ask on the largest term in the identity: **from "find an activator of a transporter",
+which is close to a nonexistent drug class, to "find an inhibitor of a specific, cartilage-enriched
+exporter", which is the ordinary business of medicinal chemistry. Nobody has asked for that molecule because
+nobody has ever wanted a bigger chondrocyte.** Step 0 clean — cell-volume regulation is moved by *nothing* in
+this stack.
+
 ## ⛔⛔⛔⛔ R407 — **WHY OSTEOLECTIN WORKED, AND WHY IT WILL NOT WORK HERE. The disqualifying experiment is
 ## in the SAME PAPER, two paragraphs above the result R403 promoted it on.**
 
