@@ -2412,6 +2412,68 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🔍🔍🔍 R416 — **SEARCH FROM RESTRAINT, NOT INVESTMENT. Table S3 gives 34 CODING loss-of-function
+## variants that RAISE height — brakes with a READABLE direction — and the table validates itself by
+## re-finding this file's own targets. The one large novel entry does NOT promote, and the reason is a new
+## failure mode: A GENE IS NOT A UNIT OF FUNCTION.**
+
+⭐ **THE INSTRUMENT.** A common-variant beta at a nearest gene cannot give a gene direction — the allele
+raises height, but whether it raises or lowers the gene is unknown. **Supplementary Table 3 can: 126
+Bonferroni-significant SINGLE-VARIANT EXOME associations, each annotated with its VARIANT EFFECT (pLoF,
+frameshift, stop gained, splice donor, deleterious missense) and an effect in CENTIMETRES.** Filter to
+LoF-type × positive effect = **34 BRAKES WITH A READABLE DIRECTION.**
+
+⭐ **AND THE TABLE VALIDATES ITSELF BY RE-FINDING OUR OWN TARGETS — the control the screen needed:**
+**STC2 +3.16 cm (P=3.0e-40, 250 CPM, 11.3×) · CLEC3A +1.91 (1.4e-25, 1,013 CPM, 18.9× — highest enrichment
+in the table) · NPR3 +2.29 · PTCH1 +1.34 · PTH1R +1.14 · ZFAT · PDE3B · PDE5A · POR · TGFB3 · LCORL ·
+SCMH1 · ESR1 · GLI3 · FBN2 · KAT2B.** Every one reached by a different route in an earlier round. **A method
+that independently returns STC2 and CLEC3A at the top is doing something right.**
+
+⭐ **THE NOVEL ENTRIES, by our own gates (in tissue · brake direction · low coverage):**
+· **LRRC58 +5.20 cm**, P=8.4e-12, deleterious missense p.Ser336Phe, 55 CPM, ratio 1.45, **ZERO mentions**
+· **COL16A1 +0.70**, 445 CPM at **4.7× ENRICHED**, 3 mentions
+· **AEBP1 +0.53, SPLICE DONOR** (unambiguous LoF), 422 CPM at **3.0× ENRICHED**, 5 mentions — and Aebp1 loss
+  in osteoprogenitors gives Ehlers-Danlos-like defects **by diminishing Wnt/β-catenin**, which is R281's band
+· RPL5 +0.71 (1,203 CPM, 6.8×, zero mentions — ribosomal) · **DAP +1.18 STOP GAINED** (115 CPM, 1 mention) ·
+  MTMR11 +1.02 (6 CPM, 3.4×, zero)
+
+⛔⛔ **AND LRRC58 WAS WORKED TO A CONCLUSION IN THE SAME ROUND. IT DOES NOT PROMOTE, AND THE REASON IS
+INSTRUCTIVE. It has TWO mechanisms published in 2025–26 AND THEY POINT OPPOSITE WAYS:**
+· ⛔ **THE BODY-SIZE MECHANISM IS THE 3' UTR, NOT THE PROTEIN.** Two *Genes & Development* papers identify a
+  **target-directed microRNA degradation (TDMD) trigger site in the Lrrc58 3'UTR** that destroys **miR-503-5p**
+  (with *Plagl1* doing the same for miR-322-5p). **Mice lacking those trigger sites are SMALLER**, with
+  miR-322/503-dependent **EMBRYONIC growth restriction.** So the growth-PROMOTING function is NONCODING, its
+  loss makes animals SMALLER, and the phenotype is EMBRYONIC — **CORR-299's exact objection.**
+· **THE PROTEIN MECHANISM IS A CYSTEINE-SENSING E3:** LRRC58 is a **CUL2/CUL5 substrate receptor, stabilised
+  under cysteine starvation, that ubiquitylates CYSTEINE DIOXYGENASE 1 (CDO1)** at Lys8, with cryo-EM
+  structures and a mapped interface.
+⭐ **A MISSENSE HITS ONLY THE PROTEIN.** That cleanly explains why the human coding variant (+5.20 cm, a
+brake) and the mouse 3'UTR deletion (smaller, promoting) run opposite: **THEY ARE DIFFERENT FUNCTIONS OF ONE
+TRANSCRIPT.**
+
+⛔ **AND THE ATTRACTIVE CHAIN FAILS ITS OWN TEST.** LRRC58 degrades CDO1 → less LRRC58 = more CDO1 = more
+cysteine catabolism = **more sulfate**, which would tie the largest novel brake to R320/R321/R410 and to this
+file's one obtainable compound. **Three checks, run before proposing it, and it does not survive:**
+· **The chain is present but UNIFORMLY UNCONCENTRATED** — LRRC58 1.45, CDO1 1.42, CSAD 1.42, SUOX 1.44, all
+  12/12, **none reaching the 1.96 benchmark.** That is a housekeeping metabolic pathway, not a specialisation.
+· **NO OTHER GENE IN THE CHAIN CARRIES A HEIGHT SIGNAL** — CDO1, SUOX, CSAD, CTH, GOT1, SLC26A2, PAPSS2 all
+  return nothing in either variant table. If it acted through CDO1 to sulfate, the enzymes between should show.
+· **No LRRC58 perturbation has a bone-length endpoint in any species, and no agent exists.**
+⭐ **What the localisation DOES support is R410's architecture: sulfate PRODUCTION is systemic and
+unconcentrated (CDO1 1.42, PAPSS2 0.91, SLC26A2 1.35) while sulfate CONSUMPTION is local and enriched
+(SLC35B2 9.37, CHST3 1.84). Production elsewhere, consumption here.**
+⭐ **AND CHST3 GAINS A THIRD INSTRUMENT: an independent common variant, 10:71978155:T:C, −0.0728 cm,
+−log10P 12.5, DISTANCE ZERO.** Small, and a common-variant sign is not a gene direction — but the
+sulfotransferase R409/R410 built on is now a named **height locus** as well as a recessive dysplasia gene and
+a zonally-graded enriched transcript.
+
+⭐⭐ **THE DURABLE OUTPUT IS A NEW FAILURE MODE, AND IT GENERALISES: A GENE IS NOT A UNIT OF FUNCTION.**
+One transcript can carry a **CODING** function and a **NONCODING** function with **OPPOSITE** effects on
+growth, and **the instrument silently selects which one you see** — a missense or pLoF burden reads the
+PROTEIN, a regulatory or 3'UTR variant reads the RNA, and a knockout destroys BOTH. LRRC58 is the
+demonstration. **Before reading a direction off any variant, ask WHICH FUNCTION OF THE TRANSCRIPT THAT
+VARIANT CLASS ACTUALLY TOUCHES.**
+
 ## ⛔⛔⛔ R415 — **THE ER AXIS WORKED TO A CONCLUSION. The direction is CAUSAL with a length endpoint in a
 ## NON-dysplastic animal and the human genetics agree at P=1e-157 — but the tissue carries a LATENT CAPACITY
 ## THAT MUST BE EXCEEDED, and the one approved agent was already given to normal growing mice and IMPAIRED
