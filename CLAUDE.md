@@ -2412,6 +2412,73 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🎯🎯🎯🎯 R413 — **THE STEP THAT TURNS THE SCREEN INTO CANDIDATES. Join the blind spots to the 3,034
+## CONDITIONALLY INDEPENDENT height GWAS variants and 140 acquire a SIGNED effect in centimetres. The
+## headline is SERPINA1 — the ALPHA-1-ANTITRYPSIN DEFICIENCY allele adds +1.19 cm per copy at −log10P 130.**
+
+⭐ **WHY THE SCREEN KEPT CLOSING, AND IT IS STRUCTURAL — NOT BAD LUCK.** Vitamin K, zinc and PANX3 all closed
+the same way: **LOAD-BEARING.** A screen that ranks by *"the tissue invests heavily in this"* preferentially
+finds what is **REQUIRED**; required things must be **RAISED**; and raising is the direction the
+pharmacopoeia does not serve. **CORR-349 said abundance finds the matrix — this sharpens it: ENRICHMENT FINDS
+WHAT IS REQUIRED**, and every brake this file actually works (HHIP 62 CPM, STC2 211, CHAD 455, ECRG4 695,
+CLEC3A 1,069) sits at low-to-middling abundance.
+⭐ **SO THE SCREEN NEEDED A SIGNED EFFECT, AND THE SOURCE WAS ON DISK AND UNOPENED.** Supplementary Table 6
+covers only the 207 significant genes — which is exactly why the blind spots had no direction. **Table S2 is
+different: 3,034 CONDITIONALLY INDEPENDENT height GWAS variants, GENOME-WIDE, effect sizes IN CENTIMETRES,
+with nearest-gene annotation.** The join gives **140 blind-spot genes a signed human effect.**
+Data: `atlas/data/round413/blind_spot_signed_effects.json`.
+
+⭐⭐ **THE HEADLINE: SERPINA1.** Variant **14:94378610:C:T**, AAF **1.47%**, **JOINT EFFECT +1.19 cm PER
+ALLELE at −log10P = 130.2, DISTANCE TO GENE ZERO.** That variant is **rs28929474 — the PiZ / E342K allele,
+the classic cause of alpha-1-antitrypsin deficiency** (position and frequency both confirmed against ClinVar
+and gnomAD, European non-Finnish 1.8%).
+→ ⭐ **THE DEFICIENCY ALLELE MAKES PEOPLE TALLER. LESS ALPHA-1-ANTITRYPSIN IS MORE HEIGHT. SERPINA1 IS A
+BRAKE AND THE THERAPEUTIC DIRECTION IS TO LOWER IT** — which is the direction the pharmacopoeia *does* serve.
+✓ **In the tissue: 1,606 CPM in pure cartilage at 3.8× sex-corrected enrichment, 12/12 samples — and ZERO
+atlas mentions before R411.** ✓ **Step 0 clean** — serine protease inhibition is moved by nothing in this stack.
+⭐ **And it completes a module this file half-built: we have worked the plate's PROTEASES** (CLEC3A enhancing
+plasminogen activation at 950 CPM, R345; thrombin cleaving ECRG4, R348) **and never its INHIBITORS — yet
+SERPINE2 is 2,197 CPM at 3.89×, SERPINA1 1,606 at 3.8×, SERPINA3 499 at 5.7×.** Three abundant
+cartilage-enriched serpins, one now with a signed human effect.
+⭐ **AND UNUSUALLY, A LOWERING AGENT IS IN LATE CLINICAL DEVELOPMENT.** The AAT liver-disease field builds
+**SERPINA1-silencing siRNA** because the Z protein polymerises in hepatocytes — **their therapeutic direction
+is ours.** Granted patents exist and a GalNAc-conjugated SERPINA1 siRNA has reached late-phase trials.
+
+⛔ **THE OBJECTIONS, STATED BEFORE PROMOTION, AND THEY ARE SERIOUS.**
+· ⛔ **PiZ IS NOT SIMPLY "LESS PROTEIN". The Z variant POLYMERISES AND IS RETAINED IN THE ER**, so the allele
+  is an extracellular loss-of-function **and** an intracellular gain-of-toxic-function at once. If the height
+  effect runs through **ER stress**, "inhibit AAT" is the wrong reading — **the identical trap that
+  disqualified the heterozygous MGP dysplasia in R411.**
+  ⛔ **THE DISCRIMINATING TEST IS THE PiS ALLELE (rs17580)**, deficient but far less polymerising. **Table S2
+  contains only ONE SERPINA1 variant, so this round CANNOT RESOLVE IT — and that single question decides
+  whether the candidate is real.**
+· **LOCAL vs SYSTEMIC UNRESOLVED.** AAT is a liver-made plasma protein at enormous concentration. 1,606 CPM
+  at 3.8× says chondrocytes transcribe it; the effect could still be entirely systemic. **This is the PDE3B
+  question on a new gene — and it matters, because the available agent is GalNAc-conjugated and therefore
+  HEPATOCYTE-TARGETED BY DESIGN (ASGR1 is 3.2 CPM in the plate, R376).** Systemic → the agent is right.
+  Local → it misses the compartment entirely.
+· **No SERPINA1 perturbation has a bone-length endpoint in any species**, and SERPINA1 is not in the 207.
+· **Lowering it is the DISEASE direction** — reduced AAT is what causes emphysema, and the therapy that
+  exists for patients is **AUGMENTATION**. The proposal is to induce a deficiency state, not correct one.
+⛔ ⭐ **ONE UNAMBIGUOUS OUTPUT REGARDLESS: ALPHA-1-ANTITRYPSIN AUGMENTATION THERAPY IS PREDICTED TO SHORTEN.**
+Narrow, but new, and free.
+
+⭐ **SECOND AND THIRD HITS.** **ID4 +0.978 cm at −log10P 261.9, distance 0** — the most significant
+blind-spot association in the join — and R412 independently returned **ID1** at 444 CPM/11.3× with **IMPC
+Id1-hom tibia −1.264, P=0.00112**. **Two ID-family HLH factors, both blind spots, both height-relevant, and
+ID1 is the canonical BMP readout — so BMP OUTPUT is a blind spot with two independent entries.** ⚠ ID4 and
+ID1 point opposite ways, so no direction is claimed. · **IMPAD1 +0.223 cm** — the Golgi PAP phosphatase that
+relieves product inhibition of the sulfotransferases, whose loss is a human chondrodysplasia — **so R410's
+sulfation arm gains an independent instrument.** ⚠ Weak: 205 kb from its lead.
+
+⛔ **THE GOVERNING LIMITATION: NEAREST GENE IS NOT CAUSAL GENE.** What makes it more than usually credible
+here is the conjunction — **cartilage-enriched + abundant + a CODING variant at ZERO distance** is a far
+better bet than a regulatory lead 200 kb out, which is why SERPINA1 and ID4 rank and IMPAD1 does not.
+⭐ **WHAT THE ROUND DELIVERS: the step that converts the inverse search from a MODULE-finder into a
+CANDIDATE-finder. The blind-spot inventory now carries direction — and the first thing it returns pointing
+the RIGHT WAY (a brake, in the tissue, with a clinical-stage lowering agent) is a gene this atlas had never
+mentioned.**
+
 ## 🧬🧬🧬 R412 — **THE BLIND SPOTS CLUSTER. Three replicated zonal PROGRAMMES fall out, and the
 ## HYPERTROPHIC one — 76 genes, zero atlas coverage — is where h_term is made. Its top member is a CHANNEL
 ## THAT RISES 180-FOLD.** Run `atlas/tools/round412_blind_spot_zonal_clustering.py` → `atlas/data/round412/`
