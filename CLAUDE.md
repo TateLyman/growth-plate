@@ -2291,6 +2291,128 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ✅✅✅✅✅ R389 — **BOTH R388 BLOCKERS TAKEN APART. THE GI FINDING IS *MESENCHYMAL AND MECHANICAL*, NOT
+## COLORECTAL-NEOPLASTIC — THE COLON IS THE SAFE SEGMENT AND THE STOMACH IS THE RISK — AND THE EXIT MUST BE
+## A TAPER, BECAUSE THE PATHWAY ADAPTS *BELOW* SMOOTHENED AND R375 SAID IT COULDN'T.**
+
+⛔ **ZERO — THE ATLAS HAD *ZERO* COVERAGE OF INTESTINAL HEDGEHOG AND *ZERO* OF PATHWAY REBOUND.** Greped
+under `intestin`, `colon`, `crypt`, `gut`, `mesenchym`, `hyperplasia`, `rebound`, `withdrawal` before drafting
+(CORR-353). Both were genuine blind spots on the route this file has just committed to.
+
+⭐⭐⭐⭐ **ONE — WHAT THE 6.1% ACTUALLY IS, FROM li2021's DISCUSSION AND NOT ITS ABSTRACT.** The abstract says
+*"without evidence of toxicity."* The discussion says the affected animals showed **INCREASED THICKNESS OF THE
+SMOOTH MUSCLE LAYER**, and names the concern as **BOWEL OBSTRUCTION.**
+· **IT IS MESENCHYMAL, NOT EPITHELIAL. NOT MUCOSAL. NOT NEOPLASTIC.** And that is the *correct* compartment:
+  gut hedgehog is a **PARACRINE EPITHELIUM→MESENCHYME signal and the receptor is expressed ONLY in the
+  mesenchyme** (`westendorp2018`).
+· ⚠ **It occurred in BOTH the Ihh cko AND the Ihh fl/fl groups — a DRUG effect, not a model effect.** Recorded
+  because it is the inconvenient half.
+· The authors ask for exactly the study nobody has run: mechanistic and preclinical toxicity work on SAG's
+  effect on intestinal tissue **and function**. Gap `g_l12_389a`.
+
+⭐⭐⭐⭐ **TWO — AND THE COLORECTAL DIRECTION IS *INVERTED*. LOSING GUT HEDGEHOG IS THE HARMFUL DIRECTION.**
+· `westendorp2021`: loss of Ihh signalling → **INCREASED epithelial proliferation, LENGTHENING AND
+  MULTIPLICATION OF CRYPTS**; and in an inducible **Apc**-mutant colonic adenoma model, deleting Ihh gave a
+  **remarkable INCREASE in the hyperproliferative phenotype and INCREASED Lgr5⁺ STEM CELL accumulation.**
+· `westendorp2018` + `razumilava2018`: epithelial Ihh **SUPPRESSES a stromal-driven intestinal immune response
+  and suppresses intestinal inflammation** (DSS colitis).
+→ ⭐ **A SYSTEMIC SMO AGONIST IS PREDICTED TO *RESTRAIN* THE COLONIC CRYPT AND DAMP GUT INFLAMMATION, NOT
+DRIVE THEM. The intuitive colorectal-cancer objection runs the wrong way.**
+
+⭐⭐⭐ **THREE — THE HEDGEHOG-GAIN TUMOUR RISK IN THE GUT IS REAL, MESENCHYMAL, AND SPECIFIC TO THE STOMACH.**
+`li2026stromalhh` activated HH in **Col1a2-, Pdgfra-, Gli1-, Acta2- and Prrx1-CreERT** stromal lineages:
+activation in **Col1a2, Pdgfra or Gli1 stroma → TUMORIGENESIS IN THE STOMACH AND GASTROESOPHAGEAL JUNCTION,
+BUT *NOT* IN SMALL OR LARGE INTESTINE.** Mechanism **is** the segment difference: HH raises **BMP ANTAGONISTS
+in GASTRIC but NOT COLONIC stroma** via Gli1, and those then activate Wnt in gastric stem cells.
+⭐ **AND THE HUMAN COUNTERPART IS A RECOGNISED ENTITY: GLI1-ALTERED *GASTRIC MESENCHYMAL* TUMOURS** —
+plexiform fibromyxoma with **MALAT1::GLI1**, gastric mesenchymal tumour with **PTCH1::GLI2**, and the
+"GLI1-rearranged enteric tumour" class.
+→ **THREE INDEPENDENT LINES — a mouse toxicity in SMOOTH MUSCLE, a mouse tumorigenesis experiment restricted
+to STOMACH, and a human tumour class that is GASTRIC and MESENCHYMAL — ALL POINT AT THE SAME COMPARTMENT, AND
+IT IS NOT THE COLORECTUM.** ⭐ **So the surveillance target changes: watch the STOMACH and GI motility, not
+the colon.**
+
+⚠ **FOUR — AN AGE ARGUMENT THAT MITIGATES BUT DOES NOT REMOVE IT.** The Hh→gut-mesenchyme axis is a
+**MORPHOGENETIC PROGRAMME** — epithelial Hh drives mesenchymal cluster formation and villification via
+Foxl1/BMP/PDGFRα. **li2021 dosed P7/P14→P30, straddling the window in which the murine gut wall is still being
+built and remodelled through weaning.** A subject at BA16 has a fully formed gut. **Whether an ADULT gut
+mesenchyme thickens under a SMO agonist at all has never been tested in any species.** Grade E, and it is the
+whole content of `g_l12_389a`.
+
+⭐⭐ **FIVE — AND THE HUMAN PHARMACOVIGILANCE DIRECTION IS INVERTED TOO.** The only human-scale safety data on
+this pathway come from the marketed **ANTAGONISTS**. `zheng2025faers` (FAERS 2012–2024, four algorithms):
+common AEs are **muscle spasms, alopecia, ageusia** — the human **loss**-of-hedgehog phenotype — and **both
+vismodegib and sonidegib carry a disproportionality signal for CUTANEOUS SQUAMOUS CELL CARCINOMA (ROR ≈50)
+that persists against a comparator of other BCC drugs.** **On the one axis where human data exist, the cancer
+signal belongs to hedgehog SUPPRESSION.** ⚠ Disproportionality is reporting-biased and hypothesis-generating;
+it does **not** establish an agonist is safe. It establishes the intuitive direction of concern is not the one
+the human data show.
+
+⭐⭐⭐⭐ **SIX — THE EXIT, AND IT CORRECTS R375 ON A LOAD-BEARING POINT.** R375 argued a SMO agonist **cannot**
+self-limit because PTCH1 is a Gli target and the drug acts below it. **`cohen2015` shows that is too strong.**
+Quantifying Shh signalling in the neural tube: **Gli transcriptional activity RISES THEN FALLS while the ligand
+gradient is still rising.** Three mechanisms — **PTCH1 transcriptional upregulation · Gli transcriptional
+DOWNregulation · differential stability of active vs inactive Gli isoforms** — and decisively,
+⭐ **ADAPTATION CONTINUES WHEN THE PATHWAY IS STIMULATED *DOWNSTREAM OF PTCH1*.** The Gli-level arms are **not**
+bypassed by acting at Smoothened. (Cell-type dependent: NIH/3T3 don't adapt, because Gli2 transcription is
+induced there.) ✓ **And `trompet2024` observed exactly this in the right cells** — sorted SAG-treated stem
+cells showed hedgehog pathway **downregulation**, which its authors called internal compensation.
+
+⭐⭐⭐ **SEVEN — COMPOSE IT WITH TWO FACTS THIS FILE ALREADY HOLDS AND A SPECIFIC PREDICTION FALLS OUT.**
+**HHIP is itself a Gli target** (`chuang1999`) → agonist exposure **INDUCES** the brake's transcript. **Smo
+activation simultaneously drives HHIP protein internalisation and DEGRADATION** (`kwong2014`) → stopping the
+drug **removes the degradation arm instantly while the induced transcript persists.**
+→ ⛔ **PREDICTED STATE ON ABRUPT WITHDRAWAL: elevated PTCH1 + a SURGE of HHIP protein + downregulated Gli2 =
+A REBOUND TROUGH OF HEDGEHOG OUTPUT *BELOW* THE PRE-TREATMENT BASELINE.**
+⛔ **AND THAT MATTERS HERE AND ALMOST NOWHERE ELSE, BECAUSE `newton2019` SHOWED SIX DOSES OF A SMO ANTAGONIST
+FUSED A NORMAL GROWTH PLATE. THE DANGEROUS MOMENT ON THIS PROTOCOL IS PREDICTED TO BE THE *STOP*, NOT THE
+DOSING.** Grade E — composed, never measured. Gap `g_l12_389b`.
+✓ **The empirical counterweight, stated fairly:** `trompet2024`'s bead had **no Gli1 signal left by 3 weeks and
+the gain kept WIDENING to 6 months** — no catastrophic post-pulse collapse followed a *local* pulse. But that
+is one depot at one site, and the systemic route exposes **every** plate.
+
+🎯 **EIGHT — THE FIX IS FREE, AND IT IS A TAPER. THIS IS THE ONE PROTOCOL CHANGE R389 MAKES.**
+Instead of 11 doses at a fixed q2d interval then an abrupt stop:
+**q2d × 2 weeks (8 doses) → ONE dose at 72 h → ONE dose at 96 h → stop.** **10 doses instead of 11 — slightly
+LESS total drug, not more.** PTCH1 and HHIP induction decay while residual agonist is still present; the system
+is walked down rather than dropped.
+⭐ **And the intermittent principle has a HUMAN datapoint from the opposite pharmacology:** `liu2026gorlin` —
+two Gorlin-syndrome relatives on sonidegib, **200 mg DAILY vs 200 mg EVERY OTHER DAY, 6 months. BOTH regressed
+their lesions; dysgeusia and alopecia occurred ONLY on the daily arm; every-other-day was well tolerated.**
+Antagonist, so it carries nothing about agonist *efficacy* — what it shows is that intermittent dosing at
+Smoothened keeps the on-target effect and sheds the on-target toxicity. **li2021 reached the same schedule from
+the agonist side in mice.**
+⭐ **NINE — ADAPTATION ALSO BOUNDS THE PULSE FROM ABOVE.** If Gli output declines with time on drug, a longer
+pulse buys progressively less. **Second independent reason — alongside `orikasa2024`'s conversion result — not
+to extend beyond ~3 weeks.**
+
+⛔ **TEN — ONE PROVENANCE FLAG, CORR-320/333 DISCIPLINE.** li2021 cites `das2013` for *"no medulloblastoma,
+precancerous lesions or cancer even at 140 µg/g per day."* **das2013's abstract describes a SINGLE treatment of
+newborn mice**, and li2021's superscript is ambiguous between das2013 and `heine2011sag`. **THE 140 µg/g/day
+FIGURE IS `value_unverified` AND MUST NOT BE QUOTED AS A SAFETY MARGIN** until the primary is read in full.
+✓ What das2013 *does* establish is the only precedent in this file for **a SINGLE systemic hedgehog input
+producing a permanent anatomical correction** — normal adult cerebellar morphology from one neonatal dose.
+
+🎯 **THE REVISED SYSTEMIC PROTOCOL — supersedes R388's schedule and surveillance.**
+· **DRUG / DOSE / ROUTE** — unchanged: SAG dihydrochloride, aqueous ≥30 mg/mL, **1.62 mg/kg s.c.** (≈97 mg at
+  60 kg, 3.2 mL over 2 sites).
+· ⭐ **SCHEDULE — TAPERED: every other day × 2 weeks (8 doses), then 1 dose at 72 h, then 1 dose at 96 h, stop.
+  10 doses, ≈0.97 g at 60 kg.**
+· **INTERVAL** — ≥3 months, preferably 6. Unchanged, still derived, still never measured.
+· **ONE PULSE, THEN THE 6-MONTH READOUT.**
+· ⭐ **SURVEILLANCE, RE-AIMED BY THIS ROUND:** ΔBA/ΔCA by BoneXpert (still primary, still not done) · standing
+  **and sitting** height at a fixed time of day · **GI MOTILITY AND OBSTRUCTIVE SYMPTOMS — abdominal pain,
+  distension, vomiting, change in bowel habit — because the predicted lesion is MUSCULARIS, not mucosa** ·
+  ⭐ **UPPER GI, NOT LOWER — the segment at risk is the STOMACH/GEJ; colonoscopy is aimed at the compartment
+  the biology says is protected** · knee and spine imaging at 6 and 12 months · skin surveillance.
+· **STOP IF** — plate widens without height gain · ΔBA/ΔCA accelerates · any obstructive GI symptom · any skin
+  lesion.
+
+⛔ **WHAT R389 DOES *NOT* FIX:** no GMP SAG · no aqueous formulation at any concentration · no SMO agonist ever
+given to a human · **the systemic length experiment in a normal animal is still unrun** (`g_l12_388a`) · the
+adult-gut question is unrun (`g_l12_389a`) · and **the rebound trough is a composed prediction that has never
+been measured in any species** (`g_l12_389b`).
+
 ## 🔄🔄🔄🔄🔄 R388 — **THE SWITCH TO SYSTEMIC. THE REGIMEN WAS ALREADY PUBLISHED AND THIS FILE NEVER
 ## EXTRACTED IT. Two independent mouse studies cross-check to ONE GRAM PER PULSE, and the only real blocker
 ## is FORMULATION VOLUME — which is arithmetic, not biology.** Run `atlas/tools/round388_systemic_sag_regimen.py`

@@ -18349,3 +18349,119 @@ gaps:
     volume. The endpoint is a single number - can a feasible subcutaneous volume carry
     the dose - and the whole question resolves either way in weeks.
   tractability: 8
+- gap_id: g_l12_389a
+  type: known_unknown
+  layer: L12
+  status: open
+  question: >-
+    Does a systemic Smoothened agonist thicken the intestinal smooth muscle layer in an
+    ADULT gut, or is li2021's finding an artefact of dosing through the window in which
+    the gut wall is still being built?
+  why_it_matters: >-
+    This is the only dirty finding in the entire systemic SAG toxicity screen, and it is
+    the one liability that scales with the route rather than being avoidable by
+    formulation. If it is developmental it does not transfer to a subject at bone age 16
+    and the systemic route is clean on the gut. If it is an adult effect it is a real
+    dose-limiting toxicity with a mechanical endpoint - the authors name bowel obstruction
+    - and it would bound the pulse length and the number of pulses per year.
+  what_is_known: >-
+    li2021's full text states that a few SAG-treated animals showed intestinal hyperplasia
+    with INCREASED THICKNESS OF THE SMOOTH MUSCLE LAYER, raising the possibility of bowel
+    obstruction, at 6.1 percent incidence, and that it appeared in BOTH the Ihh
+    conditional knockout and the Ihh flox/flox groups - so it is a drug effect, not a
+    model effect. It is mesenchymal, which is the correct compartment: hedgehog in the gut
+    is a paracrine epithelium-to-mesenchyme signal and the receptor is expressed only in
+    the mesenchyme (westendorp2018). The colonic EPITHELIAL direction is the opposite -
+    losing hedgehog drives crypt hyperproliferation and Lgr5-positive stem cell
+    accumulation (westendorp2021). Hedgehog-gain tumorigenesis in the gut is confined to
+    stomach and gastroesophageal junction and spares small and large intestine
+    (li2026stromalhh). The Hedgehog-to-gut-mesenchyme axis is a morphogenetic programme
+    driving mesenchymal cluster formation and villification, and li2021 dosed from
+    postnatal day 7 or 14 to day 30, straddling the period of murine gut wall remodelling
+    through weaning.
+  what_is_missing: >-
+    No Smoothened agonist has been given to an adult animal with any gastrointestinal
+    endpoint. The li2021 observation was not characterised beyond a histological
+    description - no segment attribution, no measurement of muscularis thickness, no
+    motility or transit endpoint, no reversibility assessment after withdrawal, and no
+    dose-response. Whether an adult, fully patterned gut mesenchyme responds to a
+    Smoothened agonist by thickening at all is untested in every species.
+  nearest_evidence:
+  - li2021
+  - westendorp2021
+  - westendorp2018
+  - li2026stromalhh
+  - razumilava2018
+  discriminating_experiment: >-
+    Give the proposed regimen - 20 mg/kg subcutaneous every other day for three weeks - to
+    ADULT wild-type mice, past the age at which gut wall remodelling is complete, and
+    compare with the same regimen given from postnatal day 7. Measure muscularis propria
+    thickness by segment (stomach, duodenum, jejunum, ileum, caecum, colon), gastric
+    stroma histology given li2026stromalhh's segment result, gastrointestinal transit
+    time, and body weight. Take a second cohort off drug for eight weeks to test
+    REVERSIBILITY, which is the parameter that decides whether a pulsed schedule with
+    months between pulses is tolerable even if the effect is real. Include a colonic
+    crypt-proliferation readout in the same animals, because westendorp2021 predicts the
+    agonist should RESTRAIN the epithelium while the mesenchyme thickens, and observing
+    both in one experiment would settle the compartment question outright.
+  tractability: 8
+- gap_id: g_l12_389b
+  type: known_unknown
+  layer: L12
+  status: open
+  question: >-
+    Does hedgehog output at the growth plate REBOUND BELOW BASELINE after a Smoothened
+    agonist is withdrawn, and does a tapered exit prevent it?
+  why_it_matters: >-
+    This is the only place in the whole protocol where the dangerous moment is predicted
+    to be the STOP rather than the dose, and it matters here more than almost anywhere in
+    this atlas because newton2019 showed that six doses of a Smoothened ANTAGONIST at P31
+    to P34 reduced resting-zone clonal size and FUSED a normal growth plate. If withdrawal
+    transiently drops hedgehog output below the pre-treatment set point, a pulsed protocol
+    could pay back at the exit what it bought during the pulse, or worse. The fix if the
+    prediction is right costs nothing - lengthen the dosing interval over the last week
+    instead of stopping abruptly - which is why the question is worth answering before the
+    first pulse rather than after.
+  what_is_known: >-
+    cohen2015 quantified Shh signalling dynamics and found Gli transcriptional activity
+    rises and then FALLS while ligand amplitude is still rising, driven by three
+    mechanisms - transcriptional upregulation of PTCH1, transcriptional downregulation of
+    Gli, and differential stability of active versus inactive Gli isoforms - and states
+    that adaptation CONTINUES when the pathway is stimulated downstream of PTCH1, which is
+    exactly where a Smoothened agonist acts. It is cell-type dependent: NIH/3T3
+    fibroblasts do not adapt because Gli2 transcription is induced. trompet2024 observed
+    the phenomenon in the relevant cells, reporting hedgehog pathway downregulation in
+    sorted SAG-treated stem cells and calling it internal compensation. Composing this
+    with chuang1999 (HHIP is a Gli target, so agonist exposure INDUCES the brake) and
+    kwong2014 (Smoothened activation drives HHIP protein internalisation and degradation,
+    so stopping removes the degradation arm while the induced transcript persists) gives
+    the specific prediction: elevated PTCH1, surging HHIP protein and downregulated Gli2
+    at the moment of withdrawal.
+  what_is_missing: >-
+    Nobody has measured hedgehog pathway output at a growth plate after withdrawal of an
+    agonist in any species. No time course of Gli1, Ptch1 or Hhip transcript or protein
+    exists across the days-to-weeks after a Smoothened agonist is stopped, in any tissue
+    relevant to bone. The one empirical counterweight is indirect: trompet2024's local
+    bead had no Gli1 signal left by three weeks and the length gain kept WIDENING to six
+    months, so no catastrophic post-pulse collapse followed a single local pulse - but
+    that is one depot at one site, and the systemic route exposes every plate including
+    the axial ones.
+  nearest_evidence:
+  - cohen2015
+  - chuang1999
+  - kwong2014
+  - newton2019
+  - trompet2024
+  - liu2026gorlin
+  discriminating_experiment: >-
+    Give normal mice the systemic regimen and harvest growth plates at day 0, and at 2, 5,
+    10, 21 and 42 days after the last dose, measuring Gli1, Ptch1 and Hhip transcript AND
+    HHIP protein, resting-zone cell number and plate width, against untreated littermates.
+    The prediction is a trough below the untreated baseline somewhere in the first two to
+    three weeks. Run a third arm on a TAPERED exit - every other day for two weeks, then
+    one dose at 72 hours and one at 96 hours - to test whether walking the interval out
+    removes the trough. If there is no trough in the abrupt arm the taper is unnecessary
+    and can be dropped; if there is one, the taper arm shows whether the free fix works.
+    The same cohort answers whether the pulse length should be shorter than three weeks,
+    because adaptation predicts declining Gli output with time on drug.
+  tractability: 8
