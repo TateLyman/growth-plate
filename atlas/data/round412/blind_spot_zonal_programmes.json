@@ -1,0 +1,2659 @@
+{
+ "method": "R412 - CLUSTER THE BLIND SPOTS BY ZONAL SHAPE. A gene closes; a PROGRAMME does not.\n\nR411 produced 1,492 genes that are cartilage-enriched and abundant in the human growth\nplate and have never been mentioned anywhere in this atlas. A flat list of 1,492 is not\nusable, and R411's own negative control shows a large fraction of it is mitochondrial and\nribosomal housekeeping. The way to separate a programme from a housekeeping artefact is\nthat a programme has a SHAPE: it turns on, or off, at a particular point along the column.\n\nSo this takes the R411 blind-spot list and asks GSE9160 - the only zone-resolved human\ngrowth plate - what shape each gene has, and keeps only shapes that REPLICATE IN BOTH\nDONORS. Housekeeping is flat and drops out by construction.\n\nDESIGN CHOICES, EACH MADE FOR A RECORDED REASON\n  \u00b7 PERICHONDRIUM IS EXCLUDED from the shape. It is a different tissue and CORR-339 is\n    the standing instruction not to mix tissue composition into a cell-state contrast.\n  \u00b7 A DETECTION FLOOR of 300 on the MAS5 linear scale, which is well above this array's\n    own floor calibrator (NPPC runs 4-20 across all ten samples).\n  \u00b7 ONE PROBE SET PER GENE, chosen as the highest-signal one, and the probe id is\n    reported so the choice is auditable.\n  \u00b7 BOTH DONORS MUST AGREE IN DIRECTION at >= 1.5-fold. This is the only replication\n    available and it is weak: n = 2, and CORR-317 says a female and a male are never a\n    replicate pair. It is weaker for ABSOLUTE level than for SHAPE, because each donor is\n    its own baseline, but it is not nothing and the claim grade reflects it.\n\nREAD THE OUTPUT AS: three programmes, defined by where they switch.\n  HZ_RISING   - on in the hypertrophic zone. This is where h_term is made.\n  RZ_FALLING  - on in the reserve zone and off downstream. This is the pool compartment.\n  MID_PEAK    - on in the proliferative/prehypertrophic zones and off at both ends.",
+ "n_blind_spot_genes": 1492,
+ "n_with_usable_profile": 1298,
+ "counts": {
+  "HZ_RISING": 76,
+  "RZ_FALLING": 46,
+  "MID_PEAK": 17
+ },
+ "programmes": {
+  "HZ_RISING": [
+   {
+    "symbol": "ARSI",
+    "log2_HZ_over_RZ": 5.11,
+    "pure_cpm": 135.2,
+    "enrichment_ratio": 6.84,
+    "probe": "230275_at",
+    "donor1": {
+     "RZ": 23,
+     "PZ": 1836,
+     "PHZ": 4049,
+     "HZ": 6820
+    },
+    "donor2": {
+     "RZ": 202,
+     "PZ": 252,
+     "PHZ": 526,
+     "HZ": 3133
+    }
+   },
+   {
+    "symbol": "PANX3",
+    "log2_HZ_over_RZ": 4.87,
+    "pure_cpm": 148.5,
+    "enrichment_ratio": 7.62,
+    "probe": "240955_at",
+    "donor1": {
+     "RZ": 223,
+     "PZ": 16244,
+     "PHZ": 37518,
+     "HZ": 40113
+    },
+    "donor2": {
+     "RZ": 1757,
+     "PZ": 9316,
+     "PHZ": 8968,
+     "HZ": 10392
+    }
+   },
+   {
+    "symbol": "SLC18A2",
+    "log2_HZ_over_RZ": 4.77,
+    "pure_cpm": 52.7,
+    "enrichment_ratio": 4.33,
+    "probe": "205857_at",
+    "donor1": {
+     "RZ": 25,
+     "PZ": 3540,
+     "PHZ": 5593,
+     "HZ": 8976
+    },
+    "donor2": {
+     "RZ": 316,
+     "PZ": 1341,
+     "PHZ": 1388,
+     "HZ": 2210
+    }
+   },
+   {
+    "symbol": "SCIN",
+    "log2_HZ_over_RZ": 4.48,
+    "pure_cpm": 293.4,
+    "enrichment_ratio": 2.55,
+    "probe": "1552365_at",
+    "donor1": {
+     "RZ": 33,
+     "PZ": 1745,
+     "PHZ": 5284,
+     "HZ": 7346
+    },
+    "donor2": {
+     "RZ": 873,
+     "PZ": 2085,
+     "PHZ": 2324,
+     "HZ": 5105
+    }
+   },
+   {
+    "symbol": "F13A1",
+    "log2_HZ_over_RZ": 3.94,
+    "pure_cpm": 345.6,
+    "enrichment_ratio": 2.14,
+    "probe": "203305_at",
+    "donor1": {
+     "RZ": 546,
+     "PZ": 858,
+     "PHZ": 6216,
+     "HZ": 21494
+    },
+    "donor2": {
+     "RZ": 2308,
+     "PZ": 4245,
+     "PHZ": 5554,
+     "HZ": 15352
+    }
+   },
+   {
+    "symbol": "SLC44A2",
+    "log2_HZ_over_RZ": 3.18,
+    "pure_cpm": 328.5,
+    "enrichment_ratio": 2.53,
+    "probe": "224609_at",
+    "donor1": {
+     "RZ": 1017,
+     "PZ": 5876,
+     "PHZ": 18327,
+     "HZ": 29446
+    },
+    "donor2": {
+     "RZ": 5509,
+     "PZ": 7076,
+     "PHZ": 9797,
+     "HZ": 16497
+    }
+   },
+   {
+    "symbol": "PPA1",
+    "log2_HZ_over_RZ": 3.08,
+    "pure_cpm": 293.5,
+    "enrichment_ratio": 4.01,
+    "probe": "217848_s_at",
+    "donor1": {
+     "RZ": 1330,
+     "PZ": 1420,
+     "PHZ": 11893,
+     "HZ": 21144
+    },
+    "donor2": {
+     "RZ": 2418,
+     "PZ": 7441,
+     "PHZ": 8594,
+     "HZ": 11401
+    }
+   },
+   {
+    "symbol": "TSPAN13",
+    "log2_HZ_over_RZ": 2.86,
+    "pure_cpm": 56.8,
+    "enrichment_ratio": 4.33,
+    "probe": "217979_at",
+    "donor1": {
+     "RZ": 266,
+     "PZ": 434,
+     "PHZ": 2182,
+     "HZ": 6458
+    },
+    "donor2": {
+     "RZ": 2467,
+     "PZ": 4081,
+     "PHZ": 4296,
+     "HZ": 6363
+    }
+   },
+   {
+    "symbol": "SQLE",
+    "log2_HZ_over_RZ": 2.63,
+    "pure_cpm": 135.8,
+    "enrichment_ratio": 1.98,
+    "probe": "209218_at",
+    "donor1": {
+     "RZ": 566,
+     "PZ": 2221,
+     "PHZ": 6614,
+     "HZ": 8754
+    },
+    "donor2": {
+     "RZ": 1519,
+     "PZ": 3095,
+     "PHZ": 2716,
+     "HZ": 4127
+    }
+   },
+   {
+    "symbol": "RRAGD",
+    "log2_HZ_over_RZ": 2.59,
+    "pure_cpm": 34.8,
+    "enrichment_ratio": 2.9,
+    "probe": "221524_s_at",
+    "donor1": {
+     "RZ": 127,
+     "PZ": 1887,
+     "PHZ": 203,
+     "HZ": 2970
+    },
+    "donor2": {
+     "RZ": 954,
+     "PZ": 1048,
+     "PHZ": 1491,
+     "HZ": 2079
+    }
+   },
+   {
+    "symbol": "SMIM5",
+    "log2_HZ_over_RZ": 2.58,
+    "pure_cpm": 33.4,
+    "enrichment_ratio": 4.97,
+    "probe": "229740_at",
+    "donor1": {
+     "RZ": 823,
+     "PZ": 9202,
+     "PHZ": 4341,
+     "HZ": 10091
+    },
+    "donor2": {
+     "RZ": 1018,
+     "PZ": 2509,
+     "PHZ": 2551,
+     "HZ": 3214
+    }
+   },
+   {
+    "symbol": "JPH1",
+    "log2_HZ_over_RZ": 2.46,
+    "pure_cpm": 25.5,
+    "enrichment_ratio": 2.57,
+    "probe": "229139_at",
+    "donor1": {
+     "RZ": 245,
+     "PZ": 833,
+     "PHZ": 1934,
+     "HZ": 3134
+    },
+    "donor2": {
+     "RZ": 360,
+     "PZ": 688,
+     "PHZ": 745,
+     "HZ": 1095
+    }
+   },
+   {
+    "symbol": "PCOLCE2",
+    "log2_HZ_over_RZ": 2.35,
+    "pure_cpm": 608.6,
+    "enrichment_ratio": 3.79,
+    "probe": "219295_s_at",
+    "donor1": {
+     "RZ": 5028,
+     "PZ": 67097,
+     "PHZ": 61210,
+     "HZ": 66532
+    },
+    "donor2": {
+     "RZ": 14102,
+     "PZ": 33524,
+     "PHZ": 20825,
+     "HZ": 28098
+    }
+   },
+   {
+    "symbol": "SERPINI1",
+    "log2_HZ_over_RZ": 2.25,
+    "pure_cpm": 31.5,
+    "enrichment_ratio": 4.57,
+    "probe": "205352_at",
+    "donor1": {
+     "RZ": 377,
+     "PZ": 344,
+     "PHZ": 378,
+     "HZ": 2650
+    },
+    "donor2": {
+     "RZ": 536,
+     "PZ": 788,
+     "PHZ": 770,
+     "HZ": 2056
+    }
+   },
+   {
+    "symbol": "CAPN6",
+    "log2_HZ_over_RZ": 2.22,
+    "pure_cpm": 108.8,
+    "enrichment_ratio": 6.82,
+    "probe": "202965_s_at",
+    "donor1": {
+     "RZ": 1736,
+     "PZ": 12309,
+     "PHZ": 19279,
+     "HZ": 18705
+    },
+    "donor2": {
+     "RZ": 2719,
+     "PZ": 4813,
+     "PHZ": 3713,
+     "HZ": 5712
+    }
+   },
+   {
+    "symbol": "BOLA3",
+    "log2_HZ_over_RZ": 2.15,
+    "pure_cpm": 35.8,
+    "enrichment_ratio": 5.48,
+    "probe": "227291_s_at",
+    "donor1": {
+     "RZ": 77,
+     "PZ": 711,
+     "PHZ": 1821,
+     "HZ": 1233
+    },
+    "donor2": {
+     "RZ": 1350,
+     "PZ": 1666,
+     "PHZ": 2031,
+     "HZ": 2676
+    }
+   },
+   {
+    "symbol": "SLC30A1",
+    "log2_HZ_over_RZ": 2.13,
+    "pure_cpm": 53.9,
+    "enrichment_ratio": 4.12,
+    "probe": "212907_at",
+    "donor1": {
+     "RZ": 61,
+     "PZ": 63,
+     "PHZ": 82,
+     "HZ": 756
+    },
+    "donor2": {
+     "RZ": 81,
+     "PZ": 815,
+     "PHZ": 764,
+     "HZ": 296
+    }
+   },
+   {
+    "symbol": "STEAP1",
+    "log2_HZ_over_RZ": 2.01,
+    "pure_cpm": 30.6,
+    "enrichment_ratio": 7.07,
+    "probe": "205542_at",
+    "donor1": {
+     "RZ": 359,
+     "PZ": 1479,
+     "PHZ": 1233,
+     "HZ": 3901
+    },
+    "donor2": {
+     "RZ": 700,
+     "PZ": 996,
+     "PHZ": 563,
+     "HZ": 1209
+    }
+   },
+   {
+    "symbol": "RCN1",
+    "log2_HZ_over_RZ": 1.96,
+    "pure_cpm": 454.4,
+    "enrichment_ratio": 3.62,
+    "probe": "201063_at",
+    "donor1": {
+     "RZ": 811,
+     "PZ": 5814,
+     "PHZ": 6565,
+     "HZ": 8111
+    },
+    "donor2": {
+     "RZ": 4045,
+     "PZ": 6603,
+     "PHZ": 4693,
+     "HZ": 6500
+    }
+   },
+   {
+    "symbol": "TUBB2B",
+    "log2_HZ_over_RZ": 1.93,
+    "pure_cpm": 128.0,
+    "enrichment_ratio": 6.29,
+    "probe": "214023_x_at",
+    "donor1": {
+     "RZ": 513,
+     "PZ": 2994,
+     "PHZ": 4734,
+     "HZ": 5037
+    },
+    "donor2": {
+     "RZ": 1819,
+     "PZ": 2029,
+     "PHZ": 942,
+     "HZ": 2964
+    }
+   },
+   {
+    "symbol": "TMEM45A",
+    "log2_HZ_over_RZ": 1.87,
+    "pure_cpm": 151.0,
+    "enrichment_ratio": 2.77,
+    "probe": "219410_at",
+    "donor1": {
+     "RZ": 1506,
+     "PZ": 7419,
+     "PHZ": 13552,
+     "HZ": 13364
+    },
+    "donor2": {
+     "RZ": 6162,
+     "PZ": 9040,
+     "PHZ": 6465,
+     "HZ": 9641
+    }
+   },
+   {
+    "symbol": "TCEAL8",
+    "log2_HZ_over_RZ": 1.8,
+    "pure_cpm": 56.9,
+    "enrichment_ratio": 8.24,
+    "probe": "224819_at",
+    "donor1": {
+     "RZ": 19,
+     "PZ": 44,
+     "PHZ": 648,
+     "HZ": 432
+    },
+    "donor2": {
+     "RZ": 1027,
+     "PZ": 1047,
+     "PHZ": 687,
+     "HZ": 1810
+    }
+   },
+   {
+    "symbol": "CLIC3",
+    "log2_HZ_over_RZ": 1.75,
+    "pure_cpm": 208.7,
+    "enrichment_ratio": 4.1,
+    "probe": "219529_at",
+    "donor1": {
+     "RZ": 44,
+     "PZ": 10,
+     "PHZ": 230,
+     "HZ": 359
+    },
+    "donor2": {
+     "RZ": 332,
+     "PZ": 11,
+     "PHZ": 223,
+     "HZ": 941
+    }
+   },
+   {
+    "symbol": "OSBPL1A",
+    "log2_HZ_over_RZ": 1.73,
+    "pure_cpm": 70.7,
+    "enrichment_ratio": 2.59,
+    "probe": "208158_s_at",
+    "donor1": {
+     "RZ": 747,
+     "PZ": 333,
+     "PHZ": 760,
+     "HZ": 2859
+    },
+    "donor2": {
+     "RZ": 517,
+     "PZ": 1077,
+     "PHZ": 917,
+     "HZ": 1654
+    }
+   },
+   {
+    "symbol": "CSPG4",
+    "log2_HZ_over_RZ": 1.71,
+    "pure_cpm": 926.8,
+    "enrichment_ratio": 3.64,
+    "probe": "214297_at",
+    "donor1": {
+     "RZ": 5050,
+     "PZ": 19558,
+     "PHZ": 26413,
+     "HZ": 25582
+    },
+    "donor2": {
+     "RZ": 7539,
+     "PZ": 10850,
+     "PHZ": 9932,
+     "HZ": 16044
+    }
+   },
+   {
+    "symbol": "MAGOHB",
+    "log2_HZ_over_RZ": 1.68,
+    "pure_cpm": 31.9,
+    "enrichment_ratio": 2.76,
+    "probe": "218894_s_at",
+    "donor1": {
+     "RZ": 50,
+     "PZ": 1141,
+     "PHZ": 198,
+     "HZ": 354
+    },
+    "donor2": {
+     "RZ": 132,
+     "PZ": 492,
+     "PHZ": 309,
+     "HZ": 408
+    }
+   },
+   {
+    "symbol": "CD24",
+    "log2_HZ_over_RZ": 1.67,
+    "pure_cpm": 176.1,
+    "enrichment_ratio": 6.73,
+    "probe": "216379_x_at",
+    "donor1": {
+     "RZ": 286,
+     "PZ": 495,
+     "PHZ": 1073,
+     "HZ": 2206
+    },
+    "donor2": {
+     "RZ": 2249,
+     "PZ": 3344,
+     "PHZ": 3760,
+     "HZ": 3406
+    }
+   },
+   {
+    "symbol": "S100A2",
+    "log2_HZ_over_RZ": 1.61,
+    "pure_cpm": 77.0,
+    "enrichment_ratio": 2.39,
+    "probe": "204268_at",
+    "donor1": {
+     "RZ": 83,
+     "PZ": 617,
+     "PHZ": 682,
+     "HZ": 397
+    },
+    "donor2": {
+     "RZ": 518,
+     "PZ": 193,
+     "PHZ": 344,
+     "HZ": 1527
+    }
+   },
+   {
+    "symbol": "PDCD6",
+    "log2_HZ_over_RZ": 1.6,
+    "pure_cpm": 164.3,
+    "enrichment_ratio": 2.24,
+    "probe": "222380_s_at",
+    "donor1": {
+     "RZ": 3679,
+     "PZ": 9292,
+     "PHZ": 8994,
+     "HZ": 7996
+    },
+    "donor2": {
+     "RZ": 2500,
+     "PZ": 768,
+     "PHZ": 2249,
+     "HZ": 10842
+    }
+   },
+   {
+    "symbol": "MPLKIP",
+    "log2_HZ_over_RZ": 1.58,
+    "pure_cpm": 37.7,
+    "enrichment_ratio": 2.28,
+    "probe": "225419_at",
+    "donor1": {
+     "RZ": 157,
+     "PZ": 1074,
+     "PHZ": 1034,
+     "HZ": 849
+    },
+    "donor2": {
+     "RZ": 547,
+     "PZ": 1126,
+     "PHZ": 851,
+     "HZ": 1174
+    }
+   },
+   {
+    "symbol": "TPD52L1",
+    "log2_HZ_over_RZ": 1.54,
+    "pure_cpm": 94.8,
+    "enrichment_ratio": 1.99,
+    "probe": "203786_s_at",
+    "donor1": {
+     "RZ": 574,
+     "PZ": 2022,
+     "PHZ": 1395,
+     "HZ": 2950
+    },
+    "donor2": {
+     "RZ": 1052,
+     "PZ": 1271,
+     "PHZ": 1620,
+     "HZ": 1902
+    }
+   },
+   {
+    "symbol": "TM9SF1",
+    "log2_HZ_over_RZ": 1.51,
+    "pure_cpm": 56.0,
+    "enrichment_ratio": 4.26,
+    "probe": "209149_s_at",
+    "donor1": {
+     "RZ": 158,
+     "PZ": 3412,
+     "PHZ": 2280,
+     "HZ": 637
+    },
+    "donor2": {
+     "RZ": 935,
+     "PZ": 1392,
+     "PHZ": 1072,
+     "HZ": 2356
+    }
+   },
+   {
+    "symbol": "NID2",
+    "log2_HZ_over_RZ": 1.5,
+    "pure_cpm": 110.6,
+    "enrichment_ratio": 2.5,
+    "probe": "204114_at",
+    "donor1": {
+     "RZ": 517,
+     "PZ": 356,
+     "PHZ": 4065,
+     "HZ": 2755
+    },
+    "donor2": {
+     "RZ": 1387,
+     "PZ": 3524,
+     "PHZ": 1387,
+     "HZ": 2280
+    }
+   },
+   {
+    "symbol": "LPAR4",
+    "log2_HZ_over_RZ": 1.48,
+    "pure_cpm": 85.2,
+    "enrichment_ratio": 2.69,
+    "probe": "206960_at",
+    "donor1": {
+     "RZ": 168,
+     "PZ": 326,
+     "PHZ": 745,
+     "HZ": 651
+    },
+    "donor2": {
+     "RZ": 180,
+     "PZ": 284,
+     "PHZ": 120,
+     "HZ": 507
+    }
+   },
+   {
+    "symbol": "OSTC",
+    "log2_HZ_over_RZ": 1.39,
+    "pure_cpm": 293.1,
+    "enrichment_ratio": 5.54,
+    "probe": "223001_at",
+    "donor1": {
+     "RZ": 1653,
+     "PZ": 2753,
+     "PHZ": 7967,
+     "HZ": 6839
+    },
+    "donor2": {
+     "RZ": 4725,
+     "PZ": 6051,
+     "PHZ": 5972,
+     "HZ": 8089
+    }
+   },
+   {
+    "symbol": "CHMP2B",
+    "log2_HZ_over_RZ": 1.38,
+    "pure_cpm": 44.2,
+    "enrichment_ratio": 2.08,
+    "probe": "202538_s_at",
+    "donor1": {
+     "RZ": 133,
+     "PZ": 88,
+     "PHZ": 232,
+     "HZ": 700
+    },
+    "donor2": {
+     "RZ": 203,
+     "PZ": 609,
+     "PHZ": 276,
+     "HZ": 370
+    }
+   },
+   {
+    "symbol": "DDIT4L",
+    "log2_HZ_over_RZ": 1.33,
+    "pure_cpm": 63.5,
+    "enrichment_ratio": 8.04,
+    "probe": "228057_at",
+    "donor1": {
+     "RZ": 381,
+     "PZ": 198,
+     "PHZ": 279,
+     "HZ": 690
+    },
+    "donor2": {
+     "RZ": 474,
+     "PZ": 663,
+     "PHZ": 777,
+     "HZ": 1881
+    }
+   },
+   {
+    "symbol": "UFC1",
+    "log2_HZ_over_RZ": 1.26,
+    "pure_cpm": 91.4,
+    "enrichment_ratio": 4.1,
+    "probe": "217797_at",
+    "donor1": {
+     "RZ": 1000,
+     "PZ": 1990,
+     "PHZ": 2928,
+     "HZ": 3175
+    },
+    "donor2": {
+     "RZ": 3684,
+     "PZ": 6219,
+     "PHZ": 7731,
+     "HZ": 6899
+    }
+   },
+   {
+    "symbol": "TUBB2A",
+    "log2_HZ_over_RZ": 1.23,
+    "pure_cpm": 128.2,
+    "enrichment_ratio": 6.71,
+    "probe": "204141_at",
+    "donor1": {
+     "RZ": 9578,
+     "PZ": 23767,
+     "PHZ": 23933,
+     "HZ": 31782
+    },
+    "donor2": {
+     "RZ": 9194,
+     "PZ": 9341,
+     "PHZ": 7239,
+     "HZ": 15257
+    }
+   },
+   {
+    "symbol": "TRIM47",
+    "log2_HZ_over_RZ": 1.22,
+    "pure_cpm": 109.9,
+    "enrichment_ratio": 5.86,
+    "probe": "225868_at",
+    "donor1": {
+     "RZ": 2702,
+     "PZ": 3155,
+     "PHZ": 3651,
+     "HZ": 8344
+    },
+    "donor2": {
+     "RZ": 1589,
+     "PZ": 1947,
+     "PHZ": 1479,
+     "HZ": 2847
+    }
+   },
+   {
+    "symbol": "YIF1B",
+    "log2_HZ_over_RZ": 1.21,
+    "pure_cpm": 27.8,
+    "enrichment_ratio": 1.97,
+    "probe": "226437_at",
+    "donor1": {
+     "RZ": 673,
+     "PZ": 1956,
+     "PHZ": 1580,
+     "HZ": 2028
+    },
+    "donor2": {
+     "RZ": 1199,
+     "PZ": 1557,
+     "PHZ": 1773,
+     "HZ": 2263
+    }
+   },
+   {
+    "symbol": "SSR3",
+    "log2_HZ_over_RZ": 1.15,
+    "pure_cpm": 237.0,
+    "enrichment_ratio": 3.31,
+    "probe": "222411_s_at",
+    "donor1": {
+     "RZ": 1789,
+     "PZ": 7853,
+     "PHZ": 8287,
+     "HZ": 5413
+    },
+    "donor2": {
+     "RZ": 4462,
+     "PZ": 5406,
+     "PHZ": 5865,
+     "HZ": 7418
+    }
+   },
+   {
+    "symbol": "TXN",
+    "log2_HZ_over_RZ": 1.09,
+    "pure_cpm": 221.0,
+    "enrichment_ratio": 2.1,
+    "probe": "208864_s_at",
+    "donor1": {
+     "RZ": 1249,
+     "PZ": 2304,
+     "PHZ": 1254,
+     "HZ": 2953
+    },
+    "donor2": {
+     "RZ": 1860,
+     "PZ": 2637,
+     "PHZ": 2137,
+     "HZ": 3694
+    }
+   },
+   {
+    "symbol": "EI24",
+    "log2_HZ_over_RZ": 1.08,
+    "pure_cpm": 66.1,
+    "enrichment_ratio": 2.34,
+    "probe": "216396_s_at",
+    "donor1": {
+     "RZ": 2224,
+     "PZ": 1494,
+     "PHZ": 5780,
+     "HZ": 5690
+    },
+    "donor2": {
+     "RZ": 2866,
+     "PZ": 2071,
+     "PHZ": 3033,
+     "HZ": 5085
+    }
+   },
+   {
+    "symbol": "MRPS33",
+    "log2_HZ_over_RZ": 1.07,
+    "pure_cpm": 48.4,
+    "enrichment_ratio": 5.23,
+    "probe": "218654_s_at",
+    "donor1": {
+     "RZ": 204,
+     "PZ": 726,
+     "PHZ": 524,
+     "HZ": 573
+    },
+    "donor2": {
+     "RZ": 550,
+     "PZ": 553,
+     "PHZ": 846,
+     "HZ": 1033
+    }
+   },
+   {
+    "symbol": "PDK4",
+    "log2_HZ_over_RZ": 1.06,
+    "pure_cpm": 241.8,
+    "enrichment_ratio": 6.3,
+    "probe": "225207_at",
+    "donor1": {
+     "RZ": 286,
+     "PZ": 25,
+     "PHZ": 213,
+     "HZ": 852
+    },
+    "donor2": {
+     "RZ": 556,
+     "PZ": 593,
+     "PHZ": 586,
+     "HZ": 928
+    }
+   },
+   {
+    "symbol": "ATP6V1G1",
+    "log2_HZ_over_RZ": 1.02,
+    "pure_cpm": 146.9,
+    "enrichment_ratio": 3.06,
+    "probe": "208737_at",
+    "donor1": {
+     "RZ": 798,
+     "PZ": 978,
+     "PHZ": 2113,
+     "HZ": 2092
+    },
+    "donor2": {
+     "RZ": 3856,
+     "PZ": 4700,
+     "PHZ": 3054,
+     "HZ": 6295
+    }
+   },
+   {
+    "symbol": "EIF4A2",
+    "log2_HZ_over_RZ": 1.02,
+    "pure_cpm": 229.2,
+    "enrichment_ratio": 2.22,
+    "probe": "1556350_a_at",
+    "donor1": {
+     "RZ": 23,
+     "PZ": 591,
+     "PHZ": 192,
+     "HZ": 122
+    },
+    "donor2": {
+     "RZ": 13,
+     "PZ": 8,
+     "PHZ": 191,
+     "HZ": 60
+    }
+   },
+   {
+    "symbol": "EID1",
+    "log2_HZ_over_RZ": 0.99,
+    "pure_cpm": 322.3,
+    "enrichment_ratio": 6.17,
+    "probe": "211698_at",
+    "donor1": {
+     "RZ": 730,
+     "PZ": 1404,
+     "PHZ": 1646,
+     "HZ": 1211
+    },
+    "donor2": {
+     "RZ": 1073,
+     "PZ": 2342,
+     "PHZ": 1256,
+     "HZ": 2684
+    }
+   },
+   {
+    "symbol": "PGF",
+    "log2_HZ_over_RZ": 0.99,
+    "pure_cpm": 48.9,
+    "enrichment_ratio": 2.7,
+    "probe": "215179_x_at",
+    "donor1": {
+     "RZ": 17197,
+     "PZ": 26656,
+     "PHZ": 18496,
+     "HZ": 26585
+    },
+    "donor2": {
+     "RZ": 3727,
+     "PZ": 3275,
+     "PHZ": 3544,
+     "HZ": 9656
+    }
+   },
+   {
+    "symbol": "TPRKB",
+    "log2_HZ_over_RZ": 0.98,
+    "pure_cpm": 21.2,
+    "enrichment_ratio": 2.22,
+    "probe": "219030_at",
+    "donor1": {
+     "RZ": 322,
+     "PZ": 162,
+     "PHZ": 581,
+     "HZ": 880
+    },
+    "donor2": {
+     "RZ": 495,
+     "PZ": 696,
+     "PHZ": 340,
+     "HZ": 796
+    }
+   },
+   {
+    "symbol": "IRX5",
+    "log2_HZ_over_RZ": 0.96,
+    "pure_cpm": 65.3,
+    "enrichment_ratio": 6.41,
+    "probe": "210239_at",
+    "donor1": {
+     "RZ": 260,
+     "PZ": 112,
+     "PHZ": 132,
+     "HZ": 641
+    },
+    "donor2": {
+     "RZ": 350,
+     "PZ": 256,
+     "PHZ": 570,
+     "HZ": 629
+    }
+   },
+   {
+    "symbol": "GTF3C6",
+    "log2_HZ_over_RZ": 0.96,
+    "pure_cpm": 53.8,
+    "enrichment_ratio": 4.01,
+    "probe": "225083_at",
+    "donor1": {
+     "RZ": 995,
+     "PZ": 1222,
+     "PHZ": 1268,
+     "HZ": 2332
+    },
+    "donor2": {
+     "RZ": 1331,
+     "PZ": 2132,
+     "PHZ": 2323,
+     "HZ": 2242
+    }
+   },
+   {
+    "symbol": "MMAB",
+    "log2_HZ_over_RZ": 0.96,
+    "pure_cpm": 46.3,
+    "enrichment_ratio": 2.64,
+    "probe": "242082_at",
+    "donor1": {
+     "RZ": 1767,
+     "PZ": 789,
+     "PHZ": 1214,
+     "HZ": 2909
+    },
+    "donor2": {
+     "RZ": 557,
+     "PZ": 548,
+     "PHZ": 409,
+     "HZ": 1369
+    }
+   },
+   {
+    "symbol": "GNG10",
+    "log2_HZ_over_RZ": 0.91,
+    "pure_cpm": 90.8,
+    "enrichment_ratio": 5.28,
+    "probe": "201921_at",
+    "donor1": {
+     "RZ": 1345,
+     "PZ": 1736,
+     "PHZ": 2155,
+     "HZ": 2998
+    },
+    "donor2": {
+     "RZ": 2311,
+     "PZ": 3948,
+     "PHZ": 2254,
+     "HZ": 3775
+    }
+   },
+   {
+    "symbol": "RBM3",
+    "log2_HZ_over_RZ": 0.91,
+    "pure_cpm": 261.5,
+    "enrichment_ratio": 4.57,
+    "probe": "208319_s_at",
+    "donor1": {
+     "RZ": 743,
+     "PZ": 2701,
+     "PHZ": 1890,
+     "HZ": 1694
+    },
+    "donor2": {
+     "RZ": 2568,
+     "PZ": 4117,
+     "PHZ": 3073,
+     "HZ": 4130
+    }
+   },
+   {
+    "symbol": "MFGE8",
+    "log2_HZ_over_RZ": 0.86,
+    "pure_cpm": 551.9,
+    "enrichment_ratio": 2.98,
+    "probe": "210605_s_at",
+    "donor1": {
+     "RZ": 993,
+     "PZ": 714,
+     "PHZ": 1567,
+     "HZ": 1784
+    },
+    "donor2": {
+     "RZ": 518,
+     "PZ": 513,
+     "PHZ": 569,
+     "HZ": 1022
+    }
+   },
+   {
+    "symbol": "SAP18",
+    "log2_HZ_over_RZ": 0.84,
+    "pure_cpm": 142.1,
+    "enrichment_ratio": 4.18,
+    "probe": "208742_s_at",
+    "donor1": {
+     "RZ": 880,
+     "PZ": 1371,
+     "PHZ": 3189,
+     "HZ": 1648
+    },
+    "donor2": {
+     "RZ": 1908,
+     "PZ": 2082,
+     "PHZ": 2121,
+     "HZ": 3410
+    }
+   },
+   {
+    "symbol": "LSM6",
+    "log2_HZ_over_RZ": 0.83,
+    "pure_cpm": 44.4,
+    "enrichment_ratio": 2.78,
+    "probe": "205036_at",
+    "donor1": {
+     "RZ": 428,
+     "PZ": 2259,
+     "PHZ": 2157,
+     "HZ": 928
+    },
+    "donor2": {
+     "RZ": 710,
+     "PZ": 872,
+     "PHZ": 672,
+     "HZ": 1133
+    }
+   },
+   {
+    "symbol": "HNRNPK",
+    "log2_HZ_over_RZ": 0.81,
+    "pure_cpm": 316.3,
+    "enrichment_ratio": 2.79,
+    "probe": "200097_s_at",
+    "donor1": {
+     "RZ": 1840,
+     "PZ": 5388,
+     "PHZ": 5778,
+     "HZ": 3672
+    },
+    "donor2": {
+     "RZ": 5855,
+     "PZ": 6371,
+     "PHZ": 4936,
+     "HZ": 9198
+    }
+   },
+   {
+    "symbol": "PDIA4",
+    "log2_HZ_over_RZ": 0.79,
+    "pure_cpm": 147.6,
+    "enrichment_ratio": 2.76,
+    "probe": "211048_s_at",
+    "donor1": {
+     "RZ": 1023,
+     "PZ": 1913,
+     "PHZ": 2326,
+     "HZ": 1756
+    },
+    "donor2": {
+     "RZ": 2217,
+     "PZ": 3133,
+     "PHZ": 2192,
+     "HZ": 4002
+    }
+   },
+   {
+    "symbol": "NDUFB6",
+    "log2_HZ_over_RZ": 0.78,
+    "pure_cpm": 49.1,
+    "enrichment_ratio": 2.84,
+    "probe": "203613_s_at",
+    "donor1": {
+     "RZ": 1163,
+     "PZ": 1216,
+     "PHZ": 1263,
+     "HZ": 1969
+    },
+    "donor2": {
+     "RZ": 1449,
+     "PZ": 1720,
+     "PHZ": 1368,
+     "HZ": 2617
+    }
+   },
+   {
+    "symbol": "REEP5",
+    "log2_HZ_over_RZ": 0.78,
+    "pure_cpm": 114.6,
+    "enrichment_ratio": 2.14,
+    "probe": "208872_s_at",
+    "donor1": {
+     "RZ": 1050,
+     "PZ": 872,
+     "PHZ": 2383,
+     "HZ": 1749
+    },
+    "donor2": {
+     "RZ": 1758,
+     "PZ": 1597,
+     "PHZ": 2774,
+     "HZ": 3190
+    }
+   },
+   {
+    "symbol": "YIPF3",
+    "log2_HZ_over_RZ": 0.77,
+    "pure_cpm": 112.6,
+    "enrichment_ratio": 4.69,
+    "probe": "216338_s_at",
+    "donor1": {
+     "RZ": 584,
+     "PZ": 1186,
+     "PHZ": 1807,
+     "HZ": 932
+    },
+    "donor2": {
+     "RZ": 1559,
+     "PZ": 1338,
+     "PHZ": 1247,
+     "HZ": 2956
+    }
+   },
+   {
+    "symbol": "CERS2",
+    "log2_HZ_over_RZ": 0.77,
+    "pure_cpm": 52.4,
+    "enrichment_ratio": 4.32,
+    "probe": "222212_s_at",
+    "donor1": {
+     "RZ": 1302,
+     "PZ": 1734,
+     "PHZ": 1203,
+     "HZ": 2181
+    },
+    "donor2": {
+     "RZ": 1331,
+     "PZ": 2500,
+     "PHZ": 2443,
+     "HZ": 2401
+    }
+   },
+   {
+    "symbol": "TSPYL1",
+    "log2_HZ_over_RZ": 0.76,
+    "pure_cpm": 76.8,
+    "enrichment_ratio": 2.27,
+    "probe": "221493_at",
+    "donor1": {
+     "RZ": 648,
+     "PZ": 1831,
+     "PHZ": 2428,
+     "HZ": 1214
+    },
+    "donor2": {
+     "RZ": 2118,
+     "PZ": 2837,
+     "PHZ": 1494,
+     "HZ": 3406
+    }
+   },
+   {
+    "symbol": "NOP10",
+    "log2_HZ_over_RZ": 0.75,
+    "pure_cpm": 88.2,
+    "enrichment_ratio": 12.52,
+    "probe": "217962_at",
+    "donor1": {
+     "RZ": 641,
+     "PZ": 802,
+     "PHZ": 726,
+     "HZ": 1038
+    },
+    "donor2": {
+     "RZ": 879,
+     "PZ": 1400,
+     "PHZ": 1656,
+     "HZ": 1620
+    }
+   },
+   {
+    "symbol": "TM2D2",
+    "log2_HZ_over_RZ": 0.72,
+    "pure_cpm": 20.8,
+    "enrichment_ratio": 3.77,
+    "probe": "224413_s_at",
+    "donor1": {
+     "RZ": 1437,
+     "PZ": 642,
+     "PHZ": 5167,
+     "HZ": 2374
+    },
+    "donor2": {
+     "RZ": 1798,
+     "PZ": 1881,
+     "PHZ": 2374,
+     "HZ": 3025
+    }
+   },
+   {
+    "symbol": "PRDX6",
+    "log2_HZ_over_RZ": 0.72,
+    "pure_cpm": 156.7,
+    "enrichment_ratio": 2.89,
+    "probe": "200845_s_at",
+    "donor1": {
+     "RZ": 4015,
+     "PZ": 3512,
+     "PHZ": 1977,
+     "HZ": 6272
+    },
+    "donor2": {
+     "RZ": 3113,
+     "PZ": 4409,
+     "PHZ": 2869,
+     "HZ": 5458
+    }
+   },
+   {
+    "symbol": "THOC7",
+    "log2_HZ_over_RZ": 0.72,
+    "pure_cpm": 64.2,
+    "enrichment_ratio": 2.7,
+    "probe": "218334_at",
+    "donor1": {
+     "RZ": 697,
+     "PZ": 1175,
+     "PHZ": 705,
+     "HZ": 1243
+    },
+    "donor2": {
+     "RZ": 968,
+     "PZ": 1585,
+     "PHZ": 1177,
+     "HZ": 1537
+    }
+   },
+   {
+    "symbol": "FAM210B",
+    "log2_HZ_over_RZ": 0.71,
+    "pure_cpm": 31.7,
+    "enrichment_ratio": 2.55,
+    "probe": "224690_at",
+    "donor1": {
+     "RZ": 1797,
+     "PZ": 4025,
+     "PHZ": 1730,
+     "HZ": 2965
+    },
+    "donor2": {
+     "RZ": 1833,
+     "PZ": 1662,
+     "PHZ": 2575,
+     "HZ": 3047
+    }
+   },
+   {
+    "symbol": "EIF3I",
+    "log2_HZ_over_RZ": 0.69,
+    "pure_cpm": 82.7,
+    "enrichment_ratio": 3.68,
+    "probe": "208756_at",
+    "donor1": {
+     "RZ": 1608,
+     "PZ": 551,
+     "PHZ": 2658,
+     "HZ": 2600
+    },
+    "donor2": {
+     "RZ": 2030,
+     "PZ": 2776,
+     "PHZ": 3490,
+     "HZ": 3339
+    }
+   },
+   {
+    "symbol": "IRF2BPL",
+    "log2_HZ_over_RZ": 0.67,
+    "pure_cpm": 44.5,
+    "enrichment_ratio": 2.53,
+    "probe": "223474_at",
+    "donor1": {
+     "RZ": 6419,
+     "PZ": 7533,
+     "PHZ": 6005,
+     "HZ": 10190
+    },
+    "donor2": {
+     "RZ": 5912,
+     "PZ": 9191,
+     "PHZ": 3313,
+     "HZ": 9478
+    }
+   },
+   {
+    "symbol": "TSC22D3",
+    "log2_HZ_over_RZ": 0.66,
+    "pure_cpm": 616.1,
+    "enrichment_ratio": 4.31,
+    "probe": "208763_s_at",
+    "donor1": {
+     "RZ": 6259,
+     "PZ": 3271,
+     "PHZ": 5730,
+     "HZ": 9759
+    },
+    "donor2": {
+     "RZ": 3520,
+     "PZ": 5130,
+     "PHZ": 4575,
+     "HZ": 5651
+    }
+   },
+   {
+    "symbol": "COMMD2",
+    "log2_HZ_over_RZ": 0.66,
+    "pure_cpm": 30.2,
+    "enrichment_ratio": 2.15,
+    "probe": "226910_at",
+    "donor1": {
+     "RZ": 416,
+     "PZ": 347,
+     "PHZ": 92,
+     "HZ": 695
+    },
+    "donor2": {
+     "RZ": 607,
+     "PZ": 767,
+     "PHZ": 1027,
+     "HZ": 971
+    }
+   },
+   {
+    "symbol": "BZW1",
+    "log2_HZ_over_RZ": 0.66,
+    "pure_cpm": 263.1,
+    "enrichment_ratio": 2.12,
+    "probe": "200777_s_at",
+    "donor1": {
+     "RZ": 1567,
+     "PZ": 3131,
+     "PHZ": 3635,
+     "HZ": 2395
+    },
+    "donor2": {
+     "RZ": 3411,
+     "PZ": 4917,
+     "PHZ": 3445,
+     "HZ": 5658
+    }
+   }
+  ],
+  "RZ_FALLING": [
+   {
+    "symbol": "SLC14A1",
+    "log2_HZ_over_RZ": -4.6,
+    "pure_cpm": 47.9,
+    "enrichment_ratio": 2.6,
+    "probe": "229151_at",
+    "donor1": {
+     "RZ": 1214,
+     "PZ": 2189,
+     "PHZ": 190,
+     "HZ": 32
+    },
+    "donor2": {
+     "RZ": 3774,
+     "PZ": 497,
+     "PHZ": 64,
+     "HZ": 50
+    }
+   },
+   {
+    "symbol": "OGN",
+    "log2_HZ_over_RZ": -3.03,
+    "pure_cpm": 94.2,
+    "enrichment_ratio": 2.4,
+    "probe": "222722_at",
+    "donor1": {
+     "RZ": 3606,
+     "PZ": 23647,
+     "PHZ": 9183,
+     "HZ": 827
+    },
+    "donor2": {
+     "RZ": 7376,
+     "PZ": 7164,
+     "PHZ": 869,
+     "HZ": 411
+    }
+   },
+   {
+    "symbol": "NPDC1",
+    "log2_HZ_over_RZ": -2.8,
+    "pure_cpm": 40.3,
+    "enrichment_ratio": 5.34,
+    "probe": "218086_at",
+    "donor1": {
+     "RZ": 3723,
+     "PZ": 213,
+     "PHZ": 343,
+     "HZ": 207
+    },
+    "donor2": {
+     "RZ": 1239,
+     "PZ": 668,
+     "PHZ": 299,
+     "HZ": 342
+    }
+   },
+   {
+    "symbol": "KRT19",
+    "log2_HZ_over_RZ": -2.22,
+    "pure_cpm": 61.3,
+    "enrichment_ratio": 15.85,
+    "probe": "201650_at",
+    "donor1": {
+     "RZ": 284,
+     "PZ": 806,
+     "PHZ": 508,
+     "HZ": 21
+    },
+    "donor2": {
+     "RZ": 201,
+     "PZ": 26,
+     "PHZ": 8,
+     "HZ": 5
+    }
+   },
+   {
+    "symbol": "PRPF31",
+    "log2_HZ_over_RZ": -2.2,
+    "pure_cpm": 32.5,
+    "enrichment_ratio": 2.1,
+    "probe": "202408_s_at",
+    "donor1": {
+     "RZ": 10108,
+     "PZ": 3058,
+     "PHZ": 2198,
+     "HZ": 1222
+    },
+    "donor2": {
+     "RZ": 6088,
+     "PZ": 4328,
+     "PHZ": 3605,
+     "HZ": 2258
+    }
+   },
+   {
+    "symbol": "CRIP2",
+    "log2_HZ_over_RZ": -2.18,
+    "pure_cpm": 96.8,
+    "enrichment_ratio": 3.88,
+    "probe": "208978_at",
+    "donor1": {
+     "RZ": 4671,
+     "PZ": 50,
+     "PHZ": 413,
+     "HZ": 549
+    },
+    "donor2": {
+     "RZ": 915,
+     "PZ": 458,
+     "PHZ": 479,
+     "HZ": 318
+    }
+   },
+   {
+    "symbol": "SSPN",
+    "log2_HZ_over_RZ": -2.15,
+    "pure_cpm": 196.1,
+    "enrichment_ratio": 3.96,
+    "probe": "226932_at",
+    "donor1": {
+     "RZ": 4563,
+     "PZ": 7891,
+     "PHZ": 4652,
+     "HZ": 1286
+    },
+    "donor2": {
+     "RZ": 6456,
+     "PZ": 5383,
+     "PHZ": 2198,
+     "HZ": 1085
+    }
+   },
+   {
+    "symbol": "SERPINA3",
+    "log2_HZ_over_RZ": -2.06,
+    "pure_cpm": 499.1,
+    "enrichment_ratio": 5.69,
+    "probe": "202376_at",
+    "donor1": {
+     "RZ": 5899,
+     "PZ": 21892,
+     "PHZ": 7041,
+     "HZ": 2570
+    },
+    "donor2": {
+     "RZ": 9350,
+     "PZ": 7411,
+     "PHZ": 3490,
+     "HZ": 1182
+    }
+   },
+   {
+    "symbol": "SCARA3",
+    "log2_HZ_over_RZ": -1.89,
+    "pure_cpm": 36.6,
+    "enrichment_ratio": 2.4,
+    "probe": "219416_at",
+    "donor1": {
+     "RZ": 931,
+     "PZ": 1094,
+     "PHZ": 80,
+     "HZ": 63
+    },
+    "donor2": {
+     "RZ": 2120,
+     "PZ": 1628,
+     "PHZ": 1562,
+     "HZ": 1330
+    }
+   },
+   {
+    "symbol": "CCDC85B",
+    "log2_HZ_over_RZ": -1.62,
+    "pure_cpm": 107.1,
+    "enrichment_ratio": 2.4,
+    "probe": "204610_s_at",
+    "donor1": {
+     "RZ": 3143,
+     "PZ": 1060,
+     "PHZ": 938,
+     "HZ": 507
+    },
+    "donor2": {
+     "RZ": 1683,
+     "PZ": 1252,
+     "PHZ": 1896,
+     "HZ": 1006
+    }
+   },
+   {
+    "symbol": "PAX1",
+    "log2_HZ_over_RZ": -1.6,
+    "pure_cpm": 103.0,
+    "enrichment_ratio": 5.86,
+    "probe": "214401_at",
+    "donor1": {
+     "RZ": 1104,
+     "PZ": 709,
+     "PHZ": 4072,
+     "HZ": 142
+    },
+    "donor2": {
+     "RZ": 1356,
+     "PZ": 734,
+     "PHZ": 116,
+     "HZ": 870
+    }
+   },
+   {
+    "symbol": "CYBRD1",
+    "log2_HZ_over_RZ": -1.5,
+    "pure_cpm": 120.9,
+    "enrichment_ratio": 3.15,
+    "probe": "222453_at",
+    "donor1": {
+     "RZ": 1440,
+     "PZ": 1821,
+     "PHZ": 1701,
+     "HZ": 389
+    },
+    "donor2": {
+     "RZ": 3410,
+     "PZ": 2854,
+     "PHZ": 618,
+     "HZ": 1412
+    }
+   },
+   {
+    "symbol": "C8ORF82",
+    "log2_HZ_over_RZ": -1.45,
+    "pure_cpm": 24.6,
+    "enrichment_ratio": 2.95,
+    "probe": "226710_at",
+    "donor1": {
+     "RZ": 793,
+     "PZ": 89,
+     "PHZ": 1438,
+     "HZ": 226
+    },
+    "donor2": {
+     "RZ": 701,
+     "PZ": 986,
+     "PHZ": 810,
+     "HZ": 259
+    }
+   },
+   {
+    "symbol": "EFNB1",
+    "log2_HZ_over_RZ": -1.39,
+    "pure_cpm": 30.9,
+    "enrichment_ratio": 3.48,
+    "probe": "202711_at",
+    "donor1": {
+     "RZ": 314,
+     "PZ": 162,
+     "PHZ": 176,
+     "HZ": 62
+    },
+    "donor2": {
+     "RZ": 168,
+     "PZ": 253,
+     "PHZ": 159,
+     "HZ": 53
+    }
+   },
+   {
+    "symbol": "TM4SF1",
+    "log2_HZ_over_RZ": -1.38,
+    "pure_cpm": 413.0,
+    "enrichment_ratio": 6.26,
+    "probe": "209386_at",
+    "donor1": {
+     "RZ": 11278,
+     "PZ": 3405,
+     "PHZ": 2627,
+     "HZ": 3229
+    },
+    "donor2": {
+     "RZ": 5524,
+     "PZ": 4859,
+     "PHZ": 3559,
+     "HZ": 2780
+    }
+   },
+   {
+    "symbol": "H2AFX",
+    "log2_HZ_over_RZ": -1.37,
+    "pure_cpm": 24.9,
+    "enrichment_ratio": 2.57,
+    "probe": "205436_s_at",
+    "donor1": {
+     "RZ": 390,
+     "PZ": 3153,
+     "PHZ": 1305,
+     "HZ": 54
+    },
+    "donor2": {
+     "RZ": 949,
+     "PZ": 1224,
+     "PHZ": 1117,
+     "HZ": 581
+    }
+   },
+   {
+    "symbol": "PCGF2",
+    "log2_HZ_over_RZ": -1.36,
+    "pure_cpm": 27.9,
+    "enrichment_ratio": 5.92,
+    "probe": "214239_x_at",
+    "donor1": {
+     "RZ": 10688,
+     "PZ": 8912,
+     "PHZ": 4190,
+     "HZ": 2416
+    },
+    "donor2": {
+     "RZ": 7372,
+     "PZ": 6786,
+     "PHZ": 3563,
+     "HZ": 4880
+    }
+   },
+   {
+    "symbol": "H2AFJ",
+    "log2_HZ_over_RZ": -1.25,
+    "pure_cpm": 82.1,
+    "enrichment_ratio": 2.78,
+    "probe": "224301_x_at",
+    "donor1": {
+     "RZ": 13873,
+     "PZ": 2837,
+     "PHZ": 4486,
+     "HZ": 3662
+    },
+    "donor2": {
+     "RZ": 6193,
+     "PZ": 5592,
+     "PHZ": 5343,
+     "HZ": 4078
+    }
+   },
+   {
+    "symbol": "MAP9",
+    "log2_HZ_over_RZ": -1.23,
+    "pure_cpm": 42.7,
+    "enrichment_ratio": 1.98,
+    "probe": "228423_at",
+    "donor1": {
+     "RZ": 134,
+     "PZ": 1485,
+     "PHZ": 39,
+     "HZ": 43
+    },
+    "donor2": {
+     "RZ": 157,
+     "PZ": 256,
+     "PHZ": 139,
+     "HZ": 24
+    }
+   },
+   {
+    "symbol": "ZNHIT3",
+    "log2_HZ_over_RZ": -1.21,
+    "pure_cpm": 27.9,
+    "enrichment_ratio": 2.18,
+    "probe": "212544_at",
+    "donor1": {
+     "RZ": 309,
+     "PZ": 86,
+     "PHZ": 919,
+     "HZ": 59
+    },
+    "donor2": {
+     "RZ": 884,
+     "PZ": 501,
+     "PHZ": 487,
+     "HZ": 528
+    }
+   },
+   {
+    "symbol": "POLD4",
+    "log2_HZ_over_RZ": -1.19,
+    "pure_cpm": 67.1,
+    "enrichment_ratio": 3.02,
+    "probe": "202996_at",
+    "donor1": {
+     "RZ": 351,
+     "PZ": 217,
+     "PHZ": 407,
+     "HZ": 68
+    },
+    "donor2": {
+     "RZ": 532,
+     "PZ": 551,
+     "PHZ": 375,
+     "HZ": 327
+    }
+   },
+   {
+    "symbol": "COA3",
+    "log2_HZ_over_RZ": -1.17,
+    "pure_cpm": 36.6,
+    "enrichment_ratio": 6.39,
+    "probe": "218026_at",
+    "donor1": {
+     "RZ": 4362,
+     "PZ": 3398,
+     "PHZ": 1742,
+     "HZ": 1314
+    },
+    "donor2": {
+     "RZ": 4184,
+     "PZ": 4087,
+     "PHZ": 2716,
+     "HZ": 2670
+    }
+   },
+   {
+    "symbol": "BDH2",
+    "log2_HZ_over_RZ": -1.08,
+    "pure_cpm": 24.4,
+    "enrichment_ratio": 2.46,
+    "probe": "218285_s_at",
+    "donor1": {
+     "RZ": 8051,
+     "PZ": 20369,
+     "PHZ": 6328,
+     "HZ": 4285
+    },
+    "donor2": {
+     "RZ": 10720,
+     "PZ": 11568,
+     "PHZ": 5871,
+     "HZ": 4462
+    }
+   },
+   {
+    "symbol": "CETN3",
+    "log2_HZ_over_RZ": -1.05,
+    "pure_cpm": 22.8,
+    "enrichment_ratio": 4.01,
+    "probe": "209662_at",
+    "donor1": {
+     "RZ": 432,
+     "PZ": 509,
+     "PHZ": 366,
+     "HZ": 173
+    },
+    "donor2": {
+     "RZ": 1070,
+     "PZ": 935,
+     "PHZ": 483,
+     "HZ": 519
+    }
+   },
+   {
+    "symbol": "RIN1",
+    "log2_HZ_over_RZ": -1.03,
+    "pure_cpm": 26.9,
+    "enrichment_ratio": 2.84,
+    "probe": "205211_s_at",
+    "donor1": {
+     "RZ": 2121,
+     "PZ": 928,
+     "PHZ": 497,
+     "HZ": 767
+    },
+    "donor2": {
+     "RZ": 1230,
+     "PZ": 1091,
+     "PHZ": 1255,
+     "HZ": 765
+    }
+   },
+   {
+    "symbol": "TRIP6",
+    "log2_HZ_over_RZ": -1.02,
+    "pure_cpm": 40.0,
+    "enrichment_ratio": 5.17,
+    "probe": "209129_at",
+    "donor1": {
+     "RZ": 6013,
+     "PZ": 6778,
+     "PHZ": 3889,
+     "HZ": 2252
+    },
+    "donor2": {
+     "RZ": 6254,
+     "PZ": 4879,
+     "PHZ": 5049,
+     "HZ": 3967
+    }
+   },
+   {
+    "symbol": "SLC2A4RG",
+    "log2_HZ_over_RZ": -1.02,
+    "pure_cpm": 47.2,
+    "enrichment_ratio": 3.52,
+    "probe": "218494_s_at",
+    "donor1": {
+     "RZ": 1078,
+     "PZ": 1079,
+     "PHZ": 1282,
+     "HZ": 621
+    },
+    "donor2": {
+     "RZ": 1393,
+     "PZ": 1067,
+     "PHZ": 788,
+     "HZ": 543
+    }
+   },
+   {
+    "symbol": "RGL2",
+    "log2_HZ_over_RZ": -1.02,
+    "pure_cpm": 37.8,
+    "enrichment_ratio": 2.96,
+    "probe": "209110_s_at",
+    "donor1": {
+     "RZ": 4750,
+     "PZ": 7322,
+     "PHZ": 1976,
+     "HZ": 1872
+    },
+    "donor2": {
+     "RZ": 3660,
+     "PZ": 4455,
+     "PHZ": 3746,
+     "HZ": 2214
+    }
+   },
+   {
+    "symbol": "TRAPPC5",
+    "log2_HZ_over_RZ": -0.96,
+    "pure_cpm": 103.3,
+    "enrichment_ratio": 3.97,
+    "probe": "225870_s_at",
+    "donor1": {
+     "RZ": 3955,
+     "PZ": 4132,
+     "PHZ": 3201,
+     "HZ": 2002
+    },
+    "donor2": {
+     "RZ": 2868,
+     "PZ": 3508,
+     "PHZ": 3483,
+     "HZ": 1446
+    }
+   },
+   {
+    "symbol": "EVA1B",
+    "log2_HZ_over_RZ": -0.96,
+    "pure_cpm": 86.1,
+    "enrichment_ratio": 3.02,
+    "probe": "221710_x_at",
+    "donor1": {
+     "RZ": 1015,
+     "PZ": 851,
+     "PHZ": 718,
+     "HZ": 492
+    },
+    "donor2": {
+     "RZ": 959,
+     "PZ": 1047,
+     "PHZ": 804,
+     "HZ": 478
+    }
+   },
+   {
+    "symbol": "DANCR",
+    "log2_HZ_over_RZ": -0.91,
+    "pure_cpm": 51.6,
+    "enrichment_ratio": 3.5,
+    "probe": "224870_at",
+    "donor1": {
+     "RZ": 534,
+     "PZ": 5154,
+     "PHZ": 1266,
+     "HZ": 211
+    },
+    "donor2": {
+     "RZ": 2131,
+     "PZ": 1061,
+     "PHZ": 1820,
+     "HZ": 1323
+    }
+   },
+   {
+    "symbol": "NRN1",
+    "log2_HZ_over_RZ": -0.88,
+    "pure_cpm": 44.7,
+    "enrichment_ratio": 4.58,
+    "probe": "218625_at",
+    "donor1": {
+     "RZ": 1488,
+     "PZ": 493,
+     "PHZ": 247,
+     "HZ": 693
+    },
+    "donor2": {
+     "RZ": 2437,
+     "PZ": 1414,
+     "PHZ": 1392,
+     "HZ": 1472
+    }
+   },
+   {
+    "symbol": "GAS6",
+    "log2_HZ_over_RZ": -0.88,
+    "pure_cpm": 73.3,
+    "enrichment_ratio": 2.29,
+    "probe": "1598_g_at",
+    "donor1": {
+     "RZ": 11933,
+     "PZ": 6523,
+     "PHZ": 4876,
+     "HZ": 6650
+    },
+    "donor2": {
+     "RZ": 6052,
+     "PZ": 4913,
+     "PHZ": 5899,
+     "HZ": 3161
+    }
+   },
+   {
+    "symbol": "SAT2",
+    "log2_HZ_over_RZ": -0.85,
+    "pure_cpm": 54.5,
+    "enrichment_ratio": 3.93,
+    "probe": "225272_at",
+    "donor1": {
+     "RZ": 5728,
+     "PZ": 6147,
+     "PHZ": 5751,
+     "HZ": 2709
+    },
+    "donor2": {
+     "RZ": 6026,
+     "PZ": 4856,
+     "PHZ": 4767,
+     "HZ": 3882
+    }
+   },
+   {
+    "symbol": "UQCC2",
+    "log2_HZ_over_RZ": -0.85,
+    "pure_cpm": 41.4,
+    "enrichment_ratio": 2.52,
+    "probe": "229443_at",
+    "donor1": {
+     "RZ": 504,
+     "PZ": 178,
+     "PHZ": 53,
+     "HZ": 278
+    },
+    "donor2": {
+     "RZ": 221,
+     "PZ": 205,
+     "PHZ": 268,
+     "HZ": 92
+    }
+   },
+   {
+    "symbol": "WDR34",
+    "log2_HZ_over_RZ": -0.85,
+    "pure_cpm": 34.0,
+    "enrichment_ratio": 2.06,
+    "probe": "224715_at",
+    "donor1": {
+     "RZ": 3055,
+     "PZ": 13074,
+     "PHZ": 3497,
+     "HZ": 1872
+    },
+    "donor2": {
+     "RZ": 2746,
+     "PZ": 4164,
+     "PHZ": 2697,
+     "HZ": 1346
+    }
+   },
+   {
+    "symbol": "CCDC124",
+    "log2_HZ_over_RZ": -0.81,
+    "pure_cpm": 42.1,
+    "enrichment_ratio": 3.12,
+    "probe": "225454_at",
+    "donor1": {
+     "RZ": 865,
+     "PZ": 151,
+     "PHZ": 140,
+     "HZ": 457
+    },
+    "donor2": {
+     "RZ": 395,
+     "PZ": 303,
+     "PHZ": 552,
+     "HZ": 210
+    }
+   },
+   {
+    "symbol": "AOC2",
+    "log2_HZ_over_RZ": -0.8,
+    "pure_cpm": 53.9,
+    "enrichment_ratio": 6.17,
+    "probe": "207064_s_at",
+    "donor1": {
+     "RZ": 455,
+     "PZ": 292,
+     "PHZ": 246,
+     "HZ": 243
+    },
+    "donor2": {
+     "RZ": 552,
+     "PZ": 446,
+     "PHZ": 640,
+     "HZ": 292
+    }
+   },
+   {
+    "symbol": "PPP1R35",
+    "log2_HZ_over_RZ": -0.79,
+    "pure_cpm": 20.2,
+    "enrichment_ratio": 2.94,
+    "probe": "226434_at",
+    "donor1": {
+     "RZ": 1161,
+     "PZ": 1449,
+     "PHZ": 714,
+     "HZ": 683
+    },
+    "donor2": {
+     "RZ": 1035,
+     "PZ": 1208,
+     "PHZ": 1163,
+     "HZ": 548
+    }
+   },
+   {
+    "symbol": "TRAPPC1",
+    "log2_HZ_over_RZ": -0.77,
+    "pure_cpm": 71.3,
+    "enrichment_ratio": 6.42,
+    "probe": "225294_s_at",
+    "donor1": {
+     "RZ": 498,
+     "PZ": 302,
+     "PHZ": 433,
+     "HZ": 238
+    },
+    "donor2": {
+     "RZ": 746,
+     "PZ": 542,
+     "PHZ": 798,
+     "HZ": 470
+    }
+   },
+   {
+    "symbol": "FAM3A",
+    "log2_HZ_over_RZ": -0.77,
+    "pure_cpm": 23.8,
+    "enrichment_ratio": 3.56,
+    "probe": "38043_at",
+    "donor1": {
+     "RZ": 3265,
+     "PZ": 3126,
+     "PHZ": 1587,
+     "HZ": 2108
+    },
+    "donor2": {
+     "RZ": 2587,
+     "PZ": 2693,
+     "PHZ": 3254,
+     "HZ": 1350
+    }
+   },
+   {
+    "symbol": "POU3F3",
+    "log2_HZ_over_RZ": -0.76,
+    "pure_cpm": 26.3,
+    "enrichment_ratio": 5.75,
+    "probe": "228780_at",
+    "donor1": {
+     "RZ": 608,
+     "PZ": 318,
+     "PHZ": 1538,
+     "HZ": 343
+    },
+    "donor2": {
+     "RZ": 721,
+     "PZ": 364,
+     "PHZ": 124,
+     "HZ": 402
+    }
+   },
+   {
+    "symbol": "TSPAN4",
+    "log2_HZ_over_RZ": -0.75,
+    "pure_cpm": 113.8,
+    "enrichment_ratio": 3.08,
+    "probe": "209263_x_at",
+    "donor1": {
+     "RZ": 6138,
+     "PZ": 10664,
+     "PHZ": 9589,
+     "HZ": 3721
+    },
+    "donor2": {
+     "RZ": 6865,
+     "PZ": 5967,
+     "PHZ": 4099,
+     "HZ": 3934
+    }
+   },
+   {
+    "symbol": "SOWAHC",
+    "log2_HZ_over_RZ": -0.74,
+    "pure_cpm": 60.3,
+    "enrichment_ratio": 3.16,
+    "probe": "227034_at",
+    "donor1": {
+     "RZ": 444,
+     "PZ": 60,
+     "PHZ": 226,
+     "HZ": 245
+    },
+    "donor2": {
+     "RZ": 349,
+     "PZ": 160,
+     "PHZ": 276,
+     "HZ": 190
+    }
+   },
+   {
+    "symbol": "MARVELD1",
+    "log2_HZ_over_RZ": -0.72,
+    "pure_cpm": 64.9,
+    "enrichment_ratio": 3.49,
+    "probe": "223095_at",
+    "donor1": {
+     "RZ": 4734,
+     "PZ": 8323,
+     "PHZ": 5198,
+     "HZ": 2976
+    },
+    "donor2": {
+     "RZ": 4908,
+     "PZ": 4893,
+     "PHZ": 4696,
+     "HZ": 2835
+    }
+   },
+   {
+    "symbol": "RFXANK",
+    "log2_HZ_over_RZ": -0.66,
+    "pure_cpm": 27.7,
+    "enrichment_ratio": 3.49,
+    "probe": "202758_s_at",
+    "donor1": {
+     "RZ": 76,
+     "PZ": 70,
+     "PHZ": 580,
+     "HZ": 29
+    },
+    "donor2": {
+     "RZ": 505,
+     "PZ": 612,
+     "PHZ": 485,
+     "HZ": 302
+    }
+   }
+  ],
+  "MID_PEAK": [
+   {
+    "symbol": "MIF",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 1080.7,
+    "enrichment_ratio": 5.38,
+    "probe": "217871_s_at",
+    "donor1": {
+     "RZ": 6906,
+     "PZ": 14998,
+     "PHZ": 10299,
+     "HZ": 5695
+    },
+    "donor2": {
+     "RZ": 5290,
+     "PZ": 9121,
+     "PHZ": 6066,
+     "HZ": 5035
+    }
+   },
+   {
+    "symbol": "PRDX4",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 293.0,
+    "enrichment_ratio": 8.28,
+    "probe": "201923_at",
+    "donor1": {
+     "RZ": 4206,
+     "PZ": 29435,
+     "PHZ": 23010,
+     "HZ": 16981
+    },
+    "donor2": {
+     "RZ": 9666,
+     "PZ": 22056,
+     "PHZ": 12005,
+     "HZ": 10792
+    }
+   },
+   {
+    "symbol": "EPYC",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 169.6,
+    "enrichment_ratio": 3.94,
+    "probe": "206439_at",
+    "donor1": {
+     "RZ": 257,
+     "PZ": 10692,
+     "PHZ": 10242,
+     "HZ": 4957
+    },
+    "donor2": {
+     "RZ": 1309,
+     "PZ": 9494,
+     "PHZ": 1985,
+     "HZ": 1066
+    }
+   },
+   {
+    "symbol": "HMGB2",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 159.1,
+    "enrichment_ratio": 2.85,
+    "probe": "208808_s_at",
+    "donor1": {
+     "RZ": 779,
+     "PZ": 4526,
+     "PHZ": 4080,
+     "HZ": 207
+    },
+    "donor2": {
+     "RZ": 2135,
+     "PZ": 3529,
+     "PHZ": 1511,
+     "HZ": 1703
+    }
+   },
+   {
+    "symbol": "C5ORF15",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 154.0,
+    "enrichment_ratio": 2.19,
+    "probe": "203024_s_at",
+    "donor1": {
+     "RZ": 1149,
+     "PZ": 11916,
+     "PHZ": 6754,
+     "HZ": 5456
+    },
+    "donor2": {
+     "RZ": 5001,
+     "PZ": 8286,
+     "PHZ": 4497,
+     "HZ": 2776
+    }
+   },
+   {
+    "symbol": "SNAI2",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 133.5,
+    "enrichment_ratio": 5.64,
+    "probe": "213139_at",
+    "donor1": {
+     "RZ": 135,
+     "PZ": 2101,
+     "PHZ": 1211,
+     "HZ": 586
+    },
+    "donor2": {
+     "RZ": 2472,
+     "PZ": 4726,
+     "PHZ": 1382,
+     "HZ": 2674
+    }
+   },
+   {
+    "symbol": "MUC1",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 117.4,
+    "enrichment_ratio": 4.73,
+    "probe": "213693_s_at",
+    "donor1": {
+     "RZ": 2426,
+     "PZ": 31376,
+     "PHZ": 18996,
+     "HZ": 6960
+    },
+    "donor2": {
+     "RZ": 8915,
+     "PZ": 15076,
+     "PHZ": 2475,
+     "HZ": 3305
+    }
+   },
+   {
+    "symbol": "SSB",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 90.9,
+    "enrichment_ratio": 2.73,
+    "probe": "201139_s_at",
+    "donor1": {
+     "RZ": 402,
+     "PZ": 1038,
+     "PHZ": 1017,
+     "HZ": 617
+    },
+    "donor2": {
+     "RZ": 593,
+     "PZ": 1158,
+     "PHZ": 440,
+     "HZ": 553
+    }
+   },
+   {
+    "symbol": "PGRMC1",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 56.6,
+    "enrichment_ratio": 4.48,
+    "probe": "201121_s_at",
+    "donor1": {
+     "RZ": 635,
+     "PZ": 2257,
+     "PHZ": 1951,
+     "HZ": 598
+    },
+    "donor2": {
+     "RZ": 1627,
+     "PZ": 2568,
+     "PHZ": 1971,
+     "HZ": 1674
+    }
+   },
+   {
+    "symbol": "CHST6",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 53.8,
+    "enrichment_ratio": 2.18,
+    "probe": "223786_at",
+    "donor1": {
+     "RZ": 41,
+     "PZ": 5009,
+     "PHZ": 1882,
+     "HZ": 1273
+    },
+    "donor2": {
+     "RZ": 1350,
+     "PZ": 2240,
+     "PHZ": 973,
+     "HZ": 1366
+    }
+   },
+   {
+    "symbol": "PAICS",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 53.5,
+    "enrichment_ratio": 2.13,
+    "probe": "201013_s_at",
+    "donor1": {
+     "RZ": 902,
+     "PZ": 2654,
+     "PHZ": 1198,
+     "HZ": 1751
+    },
+    "donor2": {
+     "RZ": 1182,
+     "PZ": 2641,
+     "PHZ": 1819,
+     "HZ": 961
+    }
+   },
+   {
+    "symbol": "ORMDL3",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 45.9,
+    "enrichment_ratio": 4.1,
+    "probe": "223259_at",
+    "donor1": {
+     "RZ": 823,
+     "PZ": 3742,
+     "PHZ": 235,
+     "HZ": 496
+    },
+    "donor2": {
+     "RZ": 1152,
+     "PZ": 1792,
+     "PHZ": 1048,
+     "HZ": 1040
+    }
+   },
+   {
+    "symbol": "SRPRB",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 42.7,
+    "enrichment_ratio": 2.08,
+    "probe": "218140_x_at",
+    "donor1": {
+     "RZ": 2455,
+     "PZ": 9654,
+     "PHZ": 7596,
+     "HZ": 4436
+    },
+    "donor2": {
+     "RZ": 5804,
+     "PZ": 8836,
+     "PHZ": 7579,
+     "HZ": 5153
+    }
+   },
+   {
+    "symbol": "CCNG1",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 42.3,
+    "enrichment_ratio": 2.51,
+    "probe": "208796_s_at",
+    "donor1": {
+     "RZ": 257,
+     "PZ": 401,
+     "PHZ": 1249,
+     "HZ": 802
+    },
+    "donor2": {
+     "RZ": 672,
+     "PZ": 917,
+     "PHZ": 1205,
+     "HZ": 745
+    }
+   },
+   {
+    "symbol": "TYMS",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 34.0,
+    "enrichment_ratio": 3.36,
+    "probe": "202589_at",
+    "donor1": {
+     "RZ": 657,
+     "PZ": 7801,
+     "PHZ": 4096,
+     "HZ": 471
+    },
+    "donor2": {
+     "RZ": 2697,
+     "PZ": 8970,
+     "PHZ": 3313,
+     "HZ": 3971
+    }
+   },
+   {
+    "symbol": "THAP5",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 25.3,
+    "enrichment_ratio": 1.99,
+    "probe": "227636_at",
+    "donor1": {
+     "RZ": 389,
+     "PZ": 676,
+     "PHZ": 549,
+     "HZ": 178
+    },
+    "donor2": {
+     "RZ": 487,
+     "PZ": 764,
+     "PHZ": 186,
+     "HZ": 321
+    }
+   },
+   {
+    "symbol": "MTX3",
+    "log2_HZ_over_RZ": 0.0,
+    "pure_cpm": 23.1,
+    "enrichment_ratio": 2.06,
+    "probe": "226528_at",
+    "donor1": {
+     "RZ": 932,
+     "PZ": 4886,
+     "PHZ": 772,
+     "HZ": 1485
+    },
+    "donor2": {
+     "RZ": 1085,
+     "PZ": 1868,
+     "PHZ": 1485,
+     "HZ": 916
+    }
+   }
+  ]
+ }
+}

@@ -2412,6 +2412,77 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🧬🧬🧬 R412 — **THE BLIND SPOTS CLUSTER. Three replicated zonal PROGRAMMES fall out, and the
+## HYPERTROPHIC one — 76 genes, zero atlas coverage — is where h_term is made. Its top member is a CHANNEL
+## THAT RISES 180-FOLD.** Run `atlas/tools/round412_blind_spot_zonal_clustering.py` → `atlas/data/round412/`
+
+⭐ **THE MOVE.** A flat list of 1,492 is not usable and R411's own control showed much of it is housekeeping.
+**The separator is SHAPE — a programme switches on somewhere along the column; housekeeping is flat.** So
+every blind-spot gene was given its GSE9160 zonal profile (perichondrium excluded per CORR-339, floor above
+the array's own NPPC calibrator, one auditable probe per gene) and kept **only if BOTH DONORS AGREE IN
+DIRECTION at ≥1.5-fold.**
+⭐ **1,298 profiled → 139 with a replicated shape: HZ_RISING 76 · RZ_FALLING 46 · MID_PEAK 17.** The flat
+majority drops out, which is the housekeeping control working. **The method returns PROGRAMMES, not genes.**
+
+⭐⭐ **THE HYPERTROPHIC PROGRAMME IS THE PRIZE — h_term is ~80% of longitudinal growth and it is made there.**
+Donor-1 values, log2 HZ/RZ:
+**ARSI +5.11** (RZ 23 → HZ 6,820, ~300×, an ARYLSULFATASE) · **PANX3 +4.87** (223 → **40,113**, ~180×) ·
+SLC18A2 +4.77 · SCIN +4.48 · **F13A1 +3.94** (546 → 21,494, transglutaminase) · SLC44A2 +3.18 ·
+**PPA1 +3.08** (1,330 → 21,144, INORGANIC PYROPHOSPHATASE) · **SQLE +2.63** (566 → 8,754) · PCOLCE2 +2.35 ·
+CAPN6 +2.22 · **SLC30A1 +2.13** (zinc exporter) · CSPG4 +1.71.
+
+⭐⭐ **PANX3 IS THE STANDOUT AND IT IS A CHANNEL.** Pannexin 3, **7.6× cartilage-enriched, ~180× into the zone
+that makes height, at COL2A1-scale abundance there — and this file has never said the word.** Not obscure: a
+**cryo-EM structure of the human channel (2025)**, knockout mice, and an active skeletal literature (knee OA
+and disc degeneration after forced running, severe OA in aged nulls, impaired fracture healing, noncoding
+PANX3 variants and chronic back pain).
+⚠ **AND THE DIRECTION LOOKS WRONG, WHICH IS WHY IT IS RECORDED NOT PROMOTED: IMPC Panx3-hom BODY LENGTH
+−1.358, P=0.055** — the common direction, underpowered, but the largest length row in the programme. **Loss
+shortening ⇒ the direction of interest is preservation, and every pannexin agent is a BLOCKER** (probenecid,
+carbenoxolone, 10Panx). R342's shape again.
+⛔ **STILL OWED: Europe PMC 503'd, so PANX3's growth-plate MECHANISM abstracts were not extracted.** The
+titles establish the field's endpoints are OA/disc/fracture/pain, **not length.** Next read, not a guess.
+
+⭐ **THREE MEMBERS THAT EACH TOUCH SOMETHING WE ALREADY WORK.**
+· **PPA1 — inorganic pyrophosphatase, 16× into HZ, ZERO coverage — while ALPL, ENPP1 and ANKH, the other
+  three nodes of pyrophosphate control, are all covered.** PPi is THE inhibitor of hydroxyapatite formation
+  and mineralisation at the junction is the discharge step. **Our map of that control point has a hole in it.**
+· **ARSI QUALIFIES R410.** R410 wrote that the plate is built to ADD charge and not remove it (ARSB, SULF1,
+  SULF2 all contaminant-leaning). **ARSI was not in that panel and is the steepest riser here.** Whether it
+  acts on chondroitin is unestablished — a 2026 report of arylsulfatase L as a Golgi chondroitin sulfatase
+  makes it live, not settled.
+· **SLC30A1 (zinc exporter) sits here, and R411 separately returned MT1X and MT1E at 665 and 604 CPM,
+  17.9× and 13.7×.** Zinc handling is a candidate cluster across two independent screens, zinc deficiency is
+  a recognised cause of short stature, **and no zinc gene has ever appeared in this atlas.**
+
+⛔ **A SELF-CORRECTION TO R366's OWN SUBSTITUTION.** R366 recommended **TERBINAFINE** as the safe oral
+antifungal. **Terbinafine's target is SQUALENE EPOXIDASE — and SQLE is in this hypertrophic programme, at the
+enrichment benchmark and rising 15× from reserve to hypertrophic zone.** R375: **cholesterol is Smoothened's
+endogenous CRD agonist.** So terbinafine inhibits, in the hypertrophic zone specifically, an enzyme of the
+pathway making the sterol the receptor needs.
+⚠ **Grade E — no skeletal endpoint for terbinafine in any species, local cholesterol is largely taken up
+rather than synthesised, and 2.0× is barely above the 1.96 benchmark. It does NOT reverse R366** (itraconazole
+and posaconazole have direct SMO pharmacology at clinical exposure; terbinafine has none). **What it does is
+remove terbinafine's status as unambiguously clean and promote FLUCONAZOLE — which has no target in this
+tissue at all — to the preferred substitution.**
+
+⭐ **THE OTHER TWO PROGRAMMES, so they are not rediscovered one gene at a time.**
+**RESERVE (46):** **SLC14A1 −4.60** (a UREA TRANSPORTER — an osmolyte channel — falling 24× out of the reserve
+zone) · OGN −3.03 · NPDC1 · CRIP2 · SSPN · SERPINA3 · **PAX1 −1.60** (sclerotome/AXIAL identity TF) · TM4SF1 ·
+PCGF2 · GAS6 · TRIP6.
+**PROLIFERATIVE (17):** MIF (1,081 CPM) · PRDX4 · **EPYC** (epiphycan) · HMGB2 · SNAI2 · MUC1 · **CHST6**
+(a keratan-sulfate 6-O-sulfotransferase peaking proliferative **exactly as CHST11 does — extending R410's
+zonal partition of the sulfotransferases**) · TYMS.
+
+⛔ **THE LIMITS, SEVERE AND APPLYING TO EVERY ROW. NOT ONE gene in any programme is among the 207**, so none
+has a human effect size. **Most have NO IMPC length row at all** (ARSI, SLC30A1, PCOLCE2, CAPN6, OGN, PAX1,
+EPYC, SLC14A1 — CORR-348 case one), and the ones that do are null or underpowered. Replication is **n=2 donors,
+one female one male** (CORR-317 — weaker for absolute level than for SHAPE, since each donor is its own
+baseline, but not nothing). And everything here is **transcript**, not protein or flux.
+⭐ **WHAT THE ROUND DELIVERS IS NOT A LEVER — it is the demonstration that the inverse search returns COHERENT
+PROGRAMMES rather than scattered genes**, three archived for mining, one channel worth a mechanism read, one
+control point whose neighbours are all already covered, one qualification of R410 and one correction to R366.
+
 ## 🚨🚨🚨🚨 R411 — **THE INVERSE SEARCH: ASK WHAT THE TISSUE INVESTS IN THAT THE ATLAS HAS NEVER MENTIONED.
 ## IT EXPOSED A SEX CONFOUND IN THE PURITY METHOD THAT WITHDRAWS R409's OWN HEADLINE, RETURNED 1,492
 ## ZERO-COVERAGE GENES, AND PRODUCED ONE COMPLETE NEW MODULE — WORKED TO A CLOSE IN THE SAME ROUND.**
