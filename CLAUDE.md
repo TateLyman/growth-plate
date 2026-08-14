@@ -2481,6 +2481,159 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 🧮🧮🧮🧮🧮 R430 — **THE PARTITION MODEL CALIBRATED AT LAST. IT SURVIVES ON ONE TESTABLE CONDITION,
+## THE "FALSIFIER" TURNS OUT TO BE A MEASUREMENT ARTEFACT THE PAPER ITSELF NAMES, AND IT CORRECTS THREE
+## THINGS THIS FILE ACTED ON — INCLUDING A NUMBER R371 QUOTED.**
+## Run `atlas/tools/round430_partition_model_calibration.py` → `atlas/data/round430/`
+
+⭐ **ZERO — THERE IS ONE MODEL, NOT TWO.** `round371_smo_agonist_cartilage_selection.py` and
+`endothall_experiment_design.py` implement Donnan in different algebra and are **verified identical in
+code**, and the inversion round-trips. So every ranking since R153 rests on a single function.
+
+⭐ **ONE — SIZE CHECK FIRST, AND IT SEPARATES THE TWO VALIDATION PAPERS.** The species in solution is the
+**ANION, not the dimeglumine salt** — Gd-DTPA²⁻ **545.6** · Gd-BOPTA²⁻ **665.7** · Gd-DOTA⁻ **557.7** ·
+gadobutrol **604.7** · gadoteridol **558.7**, each computed two ways (PubChem salt MW − protonated
+meglumine 196.22, and from the anion formula) and agreeing.
+· ⭐ **`menezes2006` IS THE CLEAN CHARGE TEST: its pair is 2.4% apart in MW AND IDENTICAL in plasma
+  relaxivity (4.1 vs 4.1).** And its direction is the Donnan direction — the NEUTRAL agent enhances the
+  physis more than the anion, which is exclusion, and the anion gives the better physis-vs-metaphysis
+  contrast, which is FCD discrimination.
+· ⛔ **`kang2017` is matched on neither — but SIZE CANNOT RESCUE ITS ANOMALY EITHER: its two z=−2 agents
+  differ 22% in MW and THE LARGER ONE GIVES THE LARGER SIGNAL**, the wrong way round for steric exclusion.
+
+⭐⭐⭐ **TWO — THE CORRECTION NOBODY HAD APPLIED, AND `kang2017`'S OWN CONCLUSION NAMES IT.**
+**dGEMRIC measures ΔR1 = r1 × [Gd], so a slope in ΔR1 is a concentration proxy ONLY IF r1 IS MATCHED
+ACROSS AGENTS — and it is not.** The paper calls Gd-BOPTA *"a high-relaxivity GBCA"* and attributes its
+higher contrast to that. `rohrer2005` Tables 3 and 4 give r1 for all four, **in water and in plasma**:
+| agent | z | r1 water 1.5 T | r1 plasma 1.5 T | raw slope | **corrected (plasma)** |
+|---|---|---|---|---|---|
+| Gd-BOPTA | −2 | 4.0 | 6.3 | 0.037 | **0.0241** |
+| Gd-DTPA | −2 | 3.3 | 4.1 | 0.022 | **0.0220** |
+| Gd-DOTA | −1 | 2.9 | 3.6 | 0.018 | **0.0205** |
+| gadobutrol | 0 | 3.3 | 5.2 | 0.011 | **0.0087** |
+⭐ **THE RAW Gd-BOPTA/Gd-DTPA RATIO OF 1.68× FALLS TO 1.39× ON WATER RELAXIVITIES AND 1.09× ON PLASMA.
+THE "FALSIFIER" IS NOT A TRANSPORT RESIDUAL — IT IS AN ARTEFACT OF USING ΔR1 ACROSS AGENTS OF UNEQUAL r1.**
+⭐ **And the same correction dissolves the paper's headline claim that double-negative beats single-negative:
+corrected, z=−1 sits at 0.0205 against z=−2 at 0.0220.**
+
+⭐⭐ **THREE — THEN THE FALSIFICATION TEST, WHICH BEATS A FIT BECAUSE cF IS *MEASURED*.** `lesperance1992`
+gives FCD by sodium NMR — **calf articular 0.28 M, epiphyseal 0.19–0.35 M** — so cF is an INPUT. Two things
+had to be got right: trypsin digestion is a **LARGE** perturbation, so the prediction is a **FINITE
+DIFFERENCE** in partition and not a derivative; and **the z=0 agent does NOT give zero.** A neutral solute
+must be completely insensitive to proteoglycan removal under Donnan, and gadobutrol gives 0.0087–0.011 —
+**38–50% of the z=−2 value. That is a CHARGE-INDEPENDENT POROSITY AND WATER-CONTENT term trypsin also
+creates, and it has to come off before the charge term is read.** Nobody had separated the two.
+· Charge-attributable excess ratio (z=−2 ÷ z=−1): **water 1.610 · plasma 1.215**
+· ⭐ **AT THE MEASURED cF = 0.28 M — the same tissue class kang2017 used — 73.1% DEPLETION REPRODUCES THE
+  PLASMA-CORRECTED RATIO**, an entirely ordinary trypsin result.
+· ⛔ **On WATER relaxivities NO depletion between 0 and 1 reproduces it at ANY measured cF. The model FAILS.**
+→ ⭐ **THE MODEL IS CONSISTENT WITH THE ONLY ORDERED VALENCE MEASUREMENT IN CARTILAGE IF AND ONLY IF
+Gd-BOPTA'S IN-CARTILAGE r1 APPROACHES ITS PLASMA VALUE — which is the physically expected case, since that
+enhancement comes from binding macromolecules and cartilage matrix is macromolecular. A TESTABLE CONDITION,
+recorded as one.**
+
+⛔⛔⛔ **FOUR — THE BIGGEST CORRECTION IS TO THE MODEL ITSELF, AND IT HITS A NUMBER R371 QUOTED.**
+At r = 2.301: **z=+1 → 2.3× · z=+2 → 5.3× · z=+3 → 12× · z=+6 → 149× · z=+14 → 116,791×.**
+**R371 quoted 1e4–1e6× for CPC+14 from this formula as though it were a concentration ratio.** Ideal Donnan
+assumes a **dilute, ideal, point-charge** solute; at **|z| ≥ 3** what it predicts is not free-solution
+partition but **ELECTROSTATIC ADSORPTION onto the fixed charge — which is exactly what `vedadghavami2022`
+measured and called a BOUND DEPOT. An adsorbed molecule is RETAINED; it is not necessarily FREE to engage a
+receptor.**
+⭐ **THE VALIDATED ENVELOPE IS MW 96–666 Da AND |z| ≤ 2. Beyond it, read r^z as an UPTAKE/RETENTION INDEX,
+never a partition.** Inside it sit anastrozole, erdafitinib, SAG, vepdegestrant, fostriecin and sulfate;
+outside it sit CNP-38, cANF(4-23) and GH, whose absolute numbers are **not usable — only the sign is.**
+
+⛔⛔ **FIVE — AND IT CORRECTS TWO RANKINGS THE FILE ACTED ON.**
+· ⭐ **ORAL SODIUM SULFATE. R428 priced the multiplier from the SIZE curve alone and put sulfate at 96 Da
+  "at the top of the curve, multiplier ≈1.0". SULFATE IS A DIANION: f_size 1.000 × f_charge 0.189 =
+  CALIBRATED PARTITION 0.189, A 5.3-FOLD PENALTY, NOT UNITY.** R428 applied the size half of the model and
+  dropped the charge half **on the one agent in the stack where charge dominates.**
+  ⭐⭐ **AND IT CONVERGES WITH SOMETHING THE ATLAS ALREADY HELD AND NEVER JOINED TO IT: a ~5× passive
+  penalty is exactly why the plate carries a DEDICATED SULFATE TRANSPORTER — SLC26A2, 118 CPM in 82% of
+  cells (R320). The transport model and the localisation agree, and neither had been checked against the
+  other.** The sulfate arm's route is transporter-mediated, not passive diffusion.
+· **R153's NEUTRAL PARTITIONS WERE 20–40% TOO GENEROUS.** A neutral solute's Donnan partition is EXACTLY
+  1.0, so R153's 0.82 (M372049, 887 Da) and 0.74 (compound 23, ~1400 Da) are size terms — and the
+  farnum-fitted size function gives **0.67 and 0.53**.
+· ✓ **R428's broader conclusion SURVIVES**: erdafitinib (0.90) and anastrozole (1.00) are near unity, so the
+  delivery multiplier really is ~1 for them. **What changes is that it is not ~1 for sulfate.**
+
+⭐ **SIX — THE SIZE TERM, FITTED FOR THE FIRST TIME.** `f_size(MW) = exp(−0.1506·(MW^⅓ − 332^⅓))`, one
+parameter, anchored at f(332 Da)=1. Fits 332→1.000, 10 kDa→0.111 (obs 0.10), 40 kDa→0.016 (obs <0.03).
+⚠ **Worst point is 3 kDa — fitted 0.323 against observed 0.50–0.60 — and it is the one `farnum2006` reports
+TWO WAYS (text ~60%, Fig 6 caption "half").** An interpolant, not a mechanism.
+⚠ **AND THE LOAD-BEARING ASSUMPTION, STATED: size and charge are multiplied as if INDEPENDENT. Nobody has
+tested that in cartilage, and farnum2006's tracers were ANIONIC, so the size curve already contains some
+charge exclusion — meaning the product DOUBLE-COUNTS for anions and the true anion partition is probably
+HIGHER than this function returns.**
+
+⛔ **SEVEN — WHAT IT DOES NOT DELIVER.** Not a measured drug concentration in a human growth plate:
+`menezes2006` and `serrat2010` measure **TRACERS, not drugs**, and R155's core claim is untouched. The
+calibration is **porcine and murine** and no quantitative MRI of a HUMAN physis has ever been published.
+And **`li2008dce`'s confound — physeal enhancement carries a metaphyseal vascular component — is NOT
+addressed by an equilibrium fit.** Separating it needs the **TIME COURSE**, which `kang2017` has at
+10-minute intervals and `menezes2006` at three 15-minute intervals, and which this round did not use.
+**That is the obvious next step, it needs no new experiment, and it would also yield the effective
+DIFFUSIVITY that `plate_transport_model.py` currently sweeps over three orders of magnitude.**
+Gap `g_l12_430a`.
+
+## 🦿 R430 — **THE THREE LATERAL-LOADING QUESTIONS, ANSWERED. The arm is unchanged; the device story is
+## worse than R428 recorded, and the human-analogue question has a decisive NO.**
+
+⛔ **① LARGER ANIMAL — SEARCHED, NOT ASSERTED (CORR-267/284), AND NONE FOUND.** No lateral or transverse
+joint-loading study with a **bone-LENGTH** endpoint exists in rat, rabbit, pig or sheep. Everything is
+**mouse, one laboratory**. A rat varus-loading literature exists but its endpoint is **articular cartilage
+damage**, not length — i.e. the larger-animal work on this axis is aimed at the COST, not the benefit.
+**Grade unchanged: one lab, mouse, 8-week-old animals, +2.3–3.7%.**
+
+⛔⛔ **② THE DEVICE WAS BUILT THREE TIMES, NOT TWICE — AND THE TRIAL HAS NEVER APPEARED IN NINE YEARS.**
+R428 corrected R427's "no human device exists" to "built twice". It is **three**, all from the same IUPUI
+programme:
+· **`fitzwater2013`** — portable voice-coil electromechanical knee loader, characterised on a human knee model
+· ⭐ **`prabhala2016` (Sensors 16:1615) — "A Mechatronic Loading Device to Stimulate BONE GROWTH via a
+  HUMAN KNEE"** — slider-crank + brushless DC motor, microcontroller-set force and frequency, FEA-validated,
+  bench-tested, closing that it is **"considered ready to be used for a clinical study"**
+· **`korupolu2017`** — under-actuated 3D-printed 4-finger loader, closing with a **recommendation that it be
+  tested in a clinical study**
+⭐ **EACH ONE ENDS BY RECOMMENDING A TRIAL. NOT ONE HUMAN BIOLOGICAL ENDPOINT EXISTS ANYWHERE IN THE
+GROUP'S OUTPUT — every biological result is mouse (osteoporosis, OA, tumour, MMP13, osteoclast) — and a
+clinicaltrials.gov query returns NO knee-loading device trial.** Three devices across five years, nine
+years since the first, and no trial. **That reads as a programme that could not get the study run, not as
+an idea nobody had.**
+
+⭐⭐ **③ IS THERE A DELIVERABLE HUMAN ANALOGUE? NO, AND THE REASON IS FREQUENCY, NOT GEOMETRY.**
+The mouse work loads at **5, 10, 15 and 20 Hz, with 15 Hz most effective** (1.7× mineralising surface,
+1.4× mineral apposition, 2.4× bone formation rate). **Voluntary human limb movement is ~0.5–3 Hz.**
+→ **THE EFFECTIVE BAND IS 5–20× FASTER THAN ANYTHING A HUMAN LIMB DOES VOLUNTARILY.** Manual-therapy
+tibiofemoral glides are sub-Hertz; frontal-plane sport (skating, skiing, lateral bounds, change of
+direction) delivers medio-lateral load at stride frequency, ~1–3 Hz; a valgus/varus brace applies a
+**static** moment, not an oscillation. **None of them is in the band.** ⭐ **That is why a DEVICE exists at
+all, and it is the real content of R427's claim that no ordinary movement loads a knee transversely —
+the axis is deliverable, the FREQUENCY is not.**
+
+## 📋 R430 — **THE GATING BLOCK, RESTATED AS ONE LIST. NONE OF THESE HAS BEEN TAKEN.**
+
+Nearly every live item in this file has converged on a measurement nobody has made. **If these have not
+been taken, the correct next round is NOT another compound round.**
+1. ⭐⭐ **ΔBA/ΔCA ON THE CURRENT STACK** — BoneXpert, serial hand films, **standing AND sitting height at a
+   FIXED TIME OF DAY**. Named by R355, R360 and R422; R422 makes it a **falsification test of the
+   oestradiol number**. **Decides:** clock-stalled (Regime 2, pool is the constraint) vs clock-running at
+   `smith2008`'s 0.7 residual (no oestrogen-directed agent reaches it). **Still outranks every compound
+   question in the file.**
+2. ⭐ **STANDING AND SITTING HEIGHT AT A FIXED TIME OF DAY AFTER A FIXED RECUMBENT PERIOD** — R319/R425.
+   **R429 showed the ENTIRE paediatric loading literature is uninterpretable for want of this**, and every
+   velocity number claimed for this subject inherits the same defect. **Decides:** whether any velocity
+   claim about him means anything.
+3. **LC-MS/MS OESTRADIOL + TESTOSTERONE, LH, FSH, HAEMATOCRIT** — R422's 2×2. **Decides:** whether the AI is
+   engaging, whether the 3.3–6 pmol/L figure is an assay-floor artefact, and whether Regime 2 holds at all.
+4. **SERUM INORGANIC SULFATE** — R425 gave the rule in both directions. **Decides:** oral sodium sulfate is
+   TAKEN or DROPPED, not left gated. ⭐ **R430 sharpens why it matters: the passive partition is 0.19, so
+   the arm depends entirely on SLC26A2-mediated transport.**
+5. **HOMA-IR** (fasting insulin + glucose) — decides metformin, the only period-directed agent in R297's audit.
+6. **SERUM OSTEOCRIN / MUSCLIN** — R424's output; paediatric reference values exist.
+7. **EXOME OR WGS AGAINST THE 207 HEIGHT GENES** — R300 gave every one a signed effect in centimetres and
+   nothing in 430 rounds has ordered it.
+
 ## 📊📊📊📊📊 R429 — **THE 940-CHILD EXTRACTION RUN TO THE END. THE JUMPING ARM CLOSES ON ITS OWN DATA:
 ## NINE ARMS, n=939 OF 940, AN n-WEIGHTED MEAN OF −0.13 cm, AND THE PRE-DECLARED DOSE TEST FAILING TWICE —
 ## ONCE INSIDE EACH OF THE TWO STUDIES THAT CONTAIN AN INTERNAL DOSE GRADIENT.**
@@ -2623,8 +2776,11 @@ to peak ground reaction force, the arm is dead regardless of the pooled sign.**
 concentration in the plate, saturating in FIVE MINUTES; 3 kDa ~60%; 10 kDa ~10%; 40 kDa undetectable.**
 ⭐ **A SOLUTE ALREADY AT UNITY PARTITION HAS NOTHING TO MULTIPLY** — diffusion cannot take a molecule above
 the concentration of the blood supplying it. Against the stack:
-· **erdafitinib ~447 Da · anastrozole ~293 Da · sulfate 96 Da — ALL AT THE TOP OF THE CURVE. Multiplier ≈ 1.0.
-  NOTHING TO GAIN.** · **vepdegestrant 723.9 Da**, >99% protein bound — small free fraction, itself near
+· **erdafitinib ~447 Da · anastrozole ~293 Da — at the top of the curve, multiplier ≈ 1.0, NOTHING TO GAIN**
+  (confirmed by R430's calibration: 0.90 and 1.00). ⛔ **BUT "sulfate 96 Da" IS WRONG AND R430 CORRECTED IT:
+  SULFATE IS A DIANION, so its charge term is 0.189 and its CALIBRATED PARTITION IS 0.189 — a 5.3-FOLD
+  PENALTY, NOT UNITY. I read the size half of the model and dropped the charge half on the one agent in the
+  stack where charge dominates.** · **vepdegestrant 723.9 Da**, >99% protein bound — small free fraction, itself near
   unity. · ⭐ **the CNP analogue (released CNP-38 ~4 kDa) sits where the curve is ~half — THIS is the band
   where a delivery increase bites**, and `serrat2014` measured **+150% at 10 kDa**. · **GH ~22 kDa** — large
   relative multiplier on a tiny absolute, and much of GH's action is hepatic.
@@ -2645,7 +2801,8 @@ R427 wrote there is none; CORR-267/284 forbid asserting what the literature cont
 · **`korupolu2017`** — an under-actuated four-finger 3D-printed loader, validated for force and frequency,
   ending by **recommending it be tested in a clinical study**.
 → **THE CORRECTED STATEMENT IS BETTER FOR THE ARM: THE DEVICE HAS BEEN BUILT FOR HUMANS TWICE AND NEVER USED
-IN ONE.** That moves lateral loading from *no modality exists* to *a characterised device awaiting its first
+IN ONE.** ⛔ **R430: IT IS THREE, NOT TWO — `prabhala2016` (Sensors 16:1615) is a third, explicitly titled
+for a HUMAN KNEE and BONE GROWTH. Each of the three closes by recommending a clinical study; none exists.** That moves lateral loading from *no modality exists* to *a characterised device awaiting its first
 biological endpoint.*
 
 ⭐⭐⭐ **FOUR — THE INSTRUMENT EXISTS, IT RESOLVES A GROWTH PLATE, AND THE ATLAS ALREADY HELD THE PAPER.**

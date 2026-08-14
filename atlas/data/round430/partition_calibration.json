@@ -1,0 +1,281 @@
+{
+  "size_check": {
+    "kang_anion_mw_range": [
+      545.6,
+      665.7
+    ],
+    "bopta_over_dtpa_mw": 1.2201246334310851,
+    "menezes_mw_diff_pct": 2.401026392961881
+  },
+  "calibration": {
+    "water": {
+      "rows": [
+        {
+          "label": "Gd-BOPTA 2-",
+          "z": -2,
+          "raw": 0.037,
+          "r1": 4.0,
+          "corrected": 0.030524999999999997,
+          "anion_mw": 665.7
+        },
+        {
+          "label": "Gd-DTPA 2-",
+          "z": -2,
+          "raw": 0.022,
+          "r1": 3.3,
+          "corrected": 0.022000000000000002,
+          "anion_mw": 545.6
+        },
+        {
+          "label": "Gd-DOTA -",
+          "z": -1,
+          "raw": 0.018,
+          "r1": 2.9,
+          "corrected": 0.020482758620689653,
+          "anion_mw": 557.7
+        },
+        {
+          "label": "gadobutrol 0",
+          "z": 0,
+          "raw": 0.011,
+          "r1": 3.3,
+          "corrected": 0.011000000000000001,
+          "anion_mw": 604.7
+        }
+      ],
+      "z0": 0.011000000000000001,
+      "z1": 0.020482758620689653,
+      "z2_mean": 0.0262625,
+      "bopta_over_dtpa_corrected": 1.3874999999999997,
+      "excess_ratio": 1.6095000000000006
+    },
+    "plasma": {
+      "rows": [
+        {
+          "label": "Gd-BOPTA 2-",
+          "z": -2,
+          "raw": 0.037,
+          "r1": 6.3,
+          "corrected": 0.024079365079365075,
+          "anion_mw": 665.7
+        },
+        {
+          "label": "Gd-DTPA 2-",
+          "z": -2,
+          "raw": 0.022,
+          "r1": 4.1,
+          "corrected": 0.022,
+          "anion_mw": 545.6
+        },
+        {
+          "label": "Gd-DOTA -",
+          "z": -1,
+          "raw": 0.018,
+          "r1": 3.6,
+          "corrected": 0.020499999999999997,
+          "anion_mw": 557.7
+        },
+        {
+          "label": "gadobutrol 0",
+          "z": 0,
+          "raw": 0.011,
+          "r1": 5.2,
+          "corrected": 0.008673076923076922,
+          "anion_mw": 604.7
+        }
+      ],
+      "z0": 0.008673076923076922,
+      "z1": 0.020499999999999997,
+      "z2_mean": 0.023039682539682537,
+      "bopta_over_dtpa_corrected": 1.0945165945165944,
+      "excess_ratio": 1.2147373854690928
+    },
+    "grid": {
+      "0.19": [
+        1.1824315515785386,
+        1.2826266588082842,
+        1.404475859122482,
+        1.4890222754233355,
+        1.5503520603043133
+      ],
+      "0.28": [
+        0.9552078634855832,
+        1.0714153257286687,
+        1.2280804219621704,
+        1.3455650797930916,
+        1.4345523019122126
+      ],
+      "0.35": [
+        0.8236923028073121,
+        0.9442944086696314,
+        1.119924076215481,
+        1.2600399635847448,
+        1.3699240762154812
+      ],
+      "0.5": [
+        0.6277650243066455,
+        0.7453589109328758,
+        0.9436506316151002,
+        1.1241110533314702,
+        1.2769839649484334
+      ]
+    },
+    "required_depletion": {
+      "water": {
+        "0.19": null,
+        "0.28": null,
+        "0.35": null
+      },
+      "plasma": {
+        "0.19": 0.3362379062253992,
+        "0.28": 0.7313060408613823,
+        "0.35": 0.8547656441426954
+      }
+    }
+  },
+  "size_fit": {
+    "k": 0.15060061451899867,
+    "form": "exp(-k*(MW**(1/3) - 332**(1/3)))",
+    "fitted": {
+      "332": 1.0,
+      "3000": 0.3232838621900796,
+      "10000": 0.11060613976234093,
+      "40000": 0.016446273485682325
+    }
+  },
+  "cF_used": 0.28,
+  "stack": [
+    {
+      "agent": "sulfate ion (oral Na2SO4)",
+      "mw": 96.1,
+      "z": -2,
+      "fu": 1.0,
+      "f_size": 1.0,
+      "f_charge": 0.18883570309720282,
+      "partition_of_free": 0.18883570309720282,
+      "note": "the transported species is SO4 2-",
+      "in_envelope": true
+    },
+    {
+      "agent": "anastrozole",
+      "mw": 293.4,
+      "z": 0,
+      "fu": 0.6,
+      "f_size": 1.0,
+      "f_charge": 1.0,
+      "partition_of_free": 1.0,
+      "note": "triazole, not basic at pH 7.4; PB ~40%",
+      "in_envelope": true
+    },
+    {
+      "agent": "erdafitinib",
+      "mw": 446.5,
+      "z": 0,
+      "fu": 0.002,
+      "f_size": 0.8973990049038094,
+      "f_charge": 1.0,
+      "partition_of_free": 0.8973990049038094,
+      "note": "PB 99.8%; assigned neutral (weak base)",
+      "in_envelope": true
+    },
+    {
+      "agent": "SAG (free base)",
+      "mw": 490.1,
+      "z": 1,
+      "fu": null,
+      "f_size": 0.8653995953479859,
+      "f_charge": 2.3012189685788798,
+      "partition_of_free": 1.9914739642152721,
+      "note": "methylamino-cyclohexyl protonated",
+      "in_envelope": true
+    },
+    {
+      "agent": "fostriecin",
+      "mw": 430.4,
+      "z": -2,
+      "fu": null,
+      "f_size": 0.9100553607581425,
+      "f_charge": 0.18883570309720282,
+      "partition_of_free": 0.17185094390614242,
+      "note": "PubChem C19H27O9P; phosphate monoester dianionic at pH 7.4",
+      "in_envelope": true
+    },
+    {
+      "agent": "M372049",
+      "mw": 887.0,
+      "z": 0,
+      "fu": null,
+      "f_size": 0.6675200435210938,
+      "f_charge": 1.0,
+      "partition_of_free": 0.6675200435210938,
+      "note": "887 Da per the atlas's own record; ASSIGNED neutral",
+      "in_envelope": false
+    },
+    {
+      "agent": "vepdegestrant",
+      "mw": 723.9,
+      "z": 0,
+      "fu": 0.005,
+      "f_size": 0.733868682455535,
+      "f_charge": 1.0,
+      "partition_of_free": 0.733868682455535,
+      "note": "PB >99%; PROTAC",
+      "in_envelope": false
+    },
+    {
+      "agent": "compound 23 (nishizawa2017)",
+      "mw": 1400.0,
+      "z": 0,
+      "fu": null,
+      "f_size": 0.5262703541862133,
+      "f_charge": 1.0,
+      "partition_of_free": 0.5262703541862133,
+      "note": "~1.3-1.5 kDa peptide, ASSIGNED neutral",
+      "in_envelope": false
+    },
+    {
+      "agent": "cANF(4-23)",
+      "mw": 2200.0,
+      "z": 2,
+      "fu": null,
+      "f_size": 0.4001617226520071,
+      "f_charge": 5.295608741347243,
+      "partition_of_free": 2.11909991642854,
+      "note": "20-mer, ASSIGNED net +2",
+      "in_envelope": false
+    },
+    {
+      "agent": "CNP-38 (from navepegritide)",
+      "mw": 4100.0,
+      "z": 6,
+      "fu": null,
+      "f_size": 0.2547221970714182,
+      "f_charge": 148.5072551507805,
+      "partition_of_free": 37.828094313052496,
+      "note": "CNP-38, Arg/Lys rich, ASSIGNED net +6",
+      "in_envelope": false
+    },
+    {
+      "agent": "vosoritide",
+      "mw": 4100.0,
+      "z": 6,
+      "fu": null,
+      "f_size": 0.2547221970714182,
+      "f_charge": 148.5072551507805,
+      "partition_of_free": 37.828094313052496,
+      "note": "CNP-39 analogue, ASSIGNED net +6",
+      "in_envelope": false
+    },
+    {
+      "agent": "somatropin (GH)",
+      "mw": 22124.0,
+      "z": -3,
+      "fu": null,
+      "f_size": 0.041378673123041096,
+      "f_charge": 0.08205898946410065,
+      "partition_of_free": 0.0033954921018420937,
+      "note": "22 kDa protein, ASSIGNED net -3 at pH 7.4",
+      "in_envelope": false
+    }
+  ]
+}

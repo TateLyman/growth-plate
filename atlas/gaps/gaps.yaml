@@ -18804,3 +18804,13 @@ gaps:
     - li2008dce
     - farnum2006
   opened_round: 428
+- gap_id: g_l12_430a
+  type: quantitative_gap
+  layer: L12
+  status: open
+  question: 'Does kang2017''s 10-minute time course separate the vascular component of physeal enhancement from true solute partition into the cartilage matrix, and does the fitted diffusivity match the Thiele-modulus model this atlas already runs?'
+  why_it_matters: 'R430 calibrated the atlas''s Donnan partition model against kang2017''s valence series using EQUILIBRIUM-like slope differences, and it survives on one testable condition. But li2008dce shows physeal enhancement carries a metaphyseal vascular component, which an equilibrium fit cannot separate. kang2017 sampled T1 every 10 minutes from 0 to 120 minutes and menezes2006 at three 15-minute intervals - both hold the KINETICS, and a two-compartment fit to the time course separates a fast vascular phase from a slow matrix-diffusion phase. That would also yield an effective diffusivity in cartilage, which is the one parameter plate_transport_model.py sweeps over three orders of magnitude because the atlas does not hold it.'
+  what_is_known: 'kang2017 reports T1 maps at 10-minute intervals to 120 minutes in 44 porcine patellae across four agents of known charge and molecular weight; menezes2006 reports T1 before contrast and at three 15-minute intervals in 12 piglet knees with the physis, epiphyseal cartilage, SOC and metaphysis segmented separately. R430 used only the reported slope differences and the relaxivity correction from rohrer2005.'
+  what_is_missing: 'The per-timepoint values are not in either abstract, so the curves must be read from the published figures or obtained from the authors. No two-compartment vascular-plus-matrix fit has been performed on either dataset by anyone, and no effective diffusivity for a charged solute in PHYSEAL as opposed to articular matrix exists in any species.'
+  discriminating_experiment: 'Digitise the time-dR curves from kang2017 and the four-timepoint T1 series from menezes2006, fit a two-compartment model with a fast vascular term and a slow matrix term, and test whether the fitted matrix diffusivity is consistent across agents once scaled by molecular weight. A charge-dependent equilibrium with a charge-independent diffusivity would confirm the partition model and separately supply D for the Thiele-modulus model; a charge-dependent diffusivity would mean the two models are not independent and the atlas is double-counting.'
+  blocking: 'Nothing scientific - the datasets are published. It is a figure-digitisation and curve-fitting job, and it is the obvious next step after R430.'
