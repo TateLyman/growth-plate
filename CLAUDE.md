@@ -2481,6 +2481,176 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 🏃🏃🏃🏃 R426 — **MOVEMENT WORKED TO THE END. The atlas held a SEVENTEEN-NODE LOADING DOSE-RESPONSE
+## LAYER the ledger never carried. Optimising it SPLITS MOVEMENT INTO THREE DISSOCIABLE MECHANISMS — and
+## the one R425 prescribed (IMPACT) HAS A RANDOMISED HUMAN NULL AT ITS OWN DOSE, while the one nobody has
+## ever prescribed (CHRONIC EXERCISE RAISING SOLUTE DELIVERY) has the internally-controlled animal positive.**
+
+⛔ **ZERO — CORR-352, SIXTH INSTANCE IN EIGHT ROUNDS, AND THE BIGGEST YET.** L6 holds
+`strain_magnitude_dependence` · `strain_frequency_dependence` · `strain_rate_dependence` ·
+`static_vs_dynamic_loading` · `loading_effect_plate_height` · `mechanical_modulation_growth` ·
+`hueter_volkmann_law` · `physeal_stress_in_vivo` · `disuse_growth_effect` · `bed_rest_growth_human` ·
+`spaceflight_microgravity_growth` · `gravity_posture_spinal_loading` · **`local_limb_warming`** — and
+CLAUDE.md carried **TWO** (gymnastics, diurnal). **A measured stress-growth coefficient has been on disk the
+whole project.** The greps that find it are **LOADING · STRAIN · COMPRESSION · MECHANOTRANSDUCTION**, not
+`jumping`.
+
+⭐ **ONE — THE ANIMAL DOSE-RESPONSE, AND IT IS SHARPER THAN "DYNAMIC GOOD, STATIC BAD".**
+· **SENSITIVITY: 17.1% growth-rate change per 0.1 MPa**, ~linear, **NO DEAD BAND**, over −0.2 to +0.1 MPa,
+  pooled across rat/rabbit/calf (vertebrae 15.0, proximal tibia 18.6) — `stokes2006`.
+· **ASYMMETRIC, AGAINST US:** at ~60% BW × 4 wk, compression → **52%** of control growth; equal distraction
+  → only **113%** (`stokes2002`). **Load costs ~3.7× more than unload buys.**
+· ⭐ **DUTY CYCLE IS THE LARGEST MODIFIABLE TERM IN THE LAYER: 24 h/day → 12 h/day of sustained 0.1 MPa moved
+  rat vertebral growth 82% → 90–93% and TIBIAL 70% → 84–86% — a 14–16 point recovery from halving the HOURS,
+  with NO day/night difference** (`stokes2005`).
+· ⛔ **THE OSCILLATING COMPONENT DOES NOT SET GROWTH RATE.** Sinusoidal 0.2 MPa ±30% at 0.1 Hz cut growth by
+  **exactly the same 19%** as sustained 0.2 MPa; only the static arm lost plate thickness, proliferative
+  cells/column and hypertrophic cell height (`valteau2011`). `dandrea2021b` generalises it: **no significant
+  effect on longitudinal growth from varying frequency or amplitude of cyclic loading.**
+  → **MEAN STRESS SETS GROWTH RATE; WAVEFORM SETS TISSUE DAMAGE.** That is the layer's real summary and it is
+  **not** the one R425 wrote.
+· ⭐⭐ **BUT INTERMITTENCY — RETURNING TO ZERO — IS A DIFFERENT VARIABLE FROM OSCILLATING ABOUT AN ELEVATED
+  MEAN, AND IT POINTS UP.** `dandrea2021b`: **INTERMITTENT compression PRESERVED OR INCREASED plate height
+  and INCREASED HYPERTROPHIC-ZONE chondrocyte presence** vs persistent/static, while **PERSISTENT STATIC
+  reduced plate height AND ENCOURAGED MINERALISATION.** **Mineralisation is closure — static load spends the
+  period; intermittent load loads h_term.**
+· ⭐ **THE POSITIVE LENGTH RESULT IN A NORMAL ANIMAL, WITH THE DOSE:** `mcgarry2024` — **100 cycles at 5 N,
+  2 Hz (= FIFTY SECONDS), 3×/week × 4 weeks from age 4 wk, one tibia loaded, contralateral as control** →
+  loaded tibiae significantly longer, plate height and area greater, **PTHrP up in FEMALES**, bone volume
+  fraction unchanged. Mechanism separately measured: cyclic strain induces PTHrP magnitude- and
+  time-dependently and **cytochalasin D blocks it** — the step runs through F-actin (`xu2013pthrp`).
+· ⛔ **AND THE UNLOADING DIRECTION IS NULL.** `sibonga2000`: four spaceflights + two ground unloading models,
+  fluorochrome-labelled growth rate — **unloading GENERALLY DID NOT AFFECT longitudinal growth**, one
+  exception being 34% *suppression*. `foster2019`: 12 wk of enforced bipedal walking/standing in rats moved
+  percentage change but gave **NO ABSOLUTE DIFFERENCE IN BONE LENGTH.**
+  → ⭐ **THE ASYMMETRY: YOU CAN LOSE LENGTH BY LOADING STATICALLY. YOU CANNOT GAIN IT BY LOADING LESS.**
+  Relieving an *imposed* supraphysiological load recovers growth; going below normal does nothing. **The
+  unloading half is a PROTECTION arm, not a growth arm — which retires the recumbency-as-lever idea R425
+  left half open.**
+
+⛔⛔ **TWO — AND THEN THE RANDOMISED HUMAN TRIAL. R425's PRESCRIPTION HAS AN RCT NULL AT ITS OWN DOSE.**
+**`fuchs2001`: 89 prepubescent children randomised to ONE HUNDRED two-footed jumps off a 61 cm box, THREE
+TIMES A WEEK, for SEVEN MONTHS, vs non-impact stretching.** Femoral neck and lumbar spine BMC up 4.5% and
+3.1%. **AND THE PAPER STATES THAT AFTER SEVEN MONTHS JUMPERS AND CONTROLS HAD SIMILAR INCREASES IN HEIGHT** —
+height change was then used as a **COVARIATE**, which is what you do with a variable that did not move.
+⭐ **IT IS THE SAME DOSE.** 100 jumps 3×/wk is `fuchs2001`'s protocol **AND** `mcgarry2024`'s (100 cycles,
+3×/wk) **AND** approximately `wang2025`'s. **The randomised human version of R425's prescription has been
+run, for longer, and height did not move.**
+⛔ **NOT ISOLATED:** `weeks2012` measured **standing AND sitting height** across an 8-month jumping trial and
+a 3-year follow-up — no group differences. `anliker2012`, 9 months twice weekly, **null even on bone**.
+`vlachopoulos2018` ran the largest dose in the literature (weighted vests, up to 4×20 CMJ/day, 4 d/wk,
+9 months, adolescent males) and reported bone and fitness only.
+⭐⭐ **AND THE FIELD-LEVEL FACT, WHICH IS A DATA REQUEST NOT AN EXPERIMENT: a 2025 systematic review of
+paediatric high-impact jumping covers TWELVE controlled studies and 940 PARTICIPANTS over 3–24 months and NOT
+ONE REPORTS HEIGHT AS AN OUTCOME. Every one measured it, because BMC analysis requires it. 940 CHILDREN HAVE
+BEEN DOSED WITH JUMPING WITH THE CALIPER ALREADY IN HAND AND THE NUMBER HAS NEVER BEEN ANALYSED.** CORR-340
+at the scale of a whole literature, and the cheapest way to settle the arm. `g_l6mech_426a`.
+→ ⛔ **R425's JUMPING GRADE IS DOWNGRADED** from *"low-risk unproven adjunct with one non-randomised human
+positive"* to **"an intervention with a randomised human null at its own dose."**
+
+⭐ **THREE — THE HUMAN MECHANICAL DOSE TABLE, WHICH THIS ATLAS HAS NEVER HAD** (`brailey2026`, 282 children
+8–16 on force plates, by sex and by maturity offset). **Peak vertical force (BW), boys pre→post-PHV:**
+walking **1.36→1.21** · running **1.92→1.70** · low jumps **3.18→3.45** · high jumps **3.64→3.77** · hopping
+2.65→2.63. **Average loading rate (BW/s):** walking 11.35→11.21 · **RUNNING 85.90→66.24** · low jumps
+23.05→25.44 · high jumps 30.54→30.76 · hopping 22.45→19.61.
+⭐ **THE TWO MECHANICAL VARIABLES ARE MAXIMISED BY DIFFERENT ACTIVITIES — JUMPING FOR PEAK FORCE, RUNNING FOR
+LOADING RATE (2–3×) — and nobody knows which one the physis reads.**
+⭐ **AND THE MATURITY INTERACTION FAVOURS JUMPING FOR A POST-PHV MALE: in boys, jumping MAINTAINS OR RAISES
+both variables through PHV while walking and running FALL.** Girls fall on everything.
+⛔ **GOVERNING CAVEAT: force-plate GRF is not physeal stress.** `koller2023` (13 typically developing
+children, musculoskeletal simulation + mechanobiological FE) shows physeal stress is markedly heterogeneous,
+the osteogenic index forming a **RING** — low centre, high border — peaking **POSTERIORLY in 62%** of femurs.
+`physeal_stress_in_vivo` is right: **the human number has never been measured, so the animal coefficient
+cannot be converted into a human prediction.**
+
+⭐⭐⭐ **FOUR — THE ARM THAT SURVIVES, AND IT IS NOT MECHANOTRANSDUCTION. MOVEMENT HAS THREE DISSOCIABLE
+EFFECTS AND THIS ATLAS HAS ONLY EVER PRESCRIBED ONE.**
+· **MECHANICAL** — strain sensed by chondrocytes. Animal-positive, **HUMAN-RCT-NULL**.
+· ⭐ **VASCULAR / SOLUTE DELIVERY — best evidence, zero human tests.** `serrat2010`: 68 weanling mice, cold
+  (16 °C) or warm (25 °C), ± running wheel, 11 days. **ALL RUNNERS HAD SIGNIFICANTLY LONGER LIMBS REGARDLESS
+  OF HOUSING TEMPERATURE** — so it is not a rescue of cold stunting and **CORR-203 does not apply** — while
+  **TAIL LENGTH RESPONDED ONLY TO TEMPERATURE**, the internal control proving the exercise effect is **LOCAL
+  TO LOADED LIMB BONES, not systemic endocrine.** Multiphoton imaging showed **enhanced solute delivery to
+  tibial growth plates in runners, MEASURED AT REST UNDER ANAESTHESIA** — a **LASTING vascular adaptation**,
+  not a transient.
+· **THERMAL** — direct chondrocyte effect. `serrat2015`: **40 °C to ONE SIDE, 40 min/day × 14 days** → femur
+  **+1.3%**, tibia **+1.5%**, tibial elongation rate **+12%**, **humerus and body mass unaffected**, ~1%
+  still present at 7 weeks; `racine2018` replicated it.
+⭐⭐ **AND `serrat2010` EXPLICITLY DISSOCIATES DELIVERY FROM TEMPERATURE**: rearing temperature had minimal
+effect on solute delivery, so a lasting delivery increase matters for **EXERCISE**-mediated lengthening and
+may play **no role** in **TEMPERATURE**-mediated lengthening. **Two independent mechanisms, both moved by
+movement, and they are NOT the same lever — the tempting synthesis that jogging works by warming the knee is
+refuted by the paper that would have supported it.**
+⭐ **WHY IT MATTERS MORE THAN THE MECHANICAL ARM FOR THIS PROJECT: the plate is AVASCULAR and R315's delivery
+wall is the recurring obstacle to every biologic here. A LASTING DELIVERY INCREASE MULTIPLIES EVERY
+SYSTEMICALLY SUPPLIED AGENT IN THE STACK**, and `serrat2014` quantifies the size dependence — 10 kDa entry
+**+150%**, 40 kDa **+18%** — against vosoritide at ~4 kDa. `g_l6mech_426c`.
+⛔ **AGAINST:** `serrat2013` — the skeleton is temperature-responsive **only during a window of rapid growth**
+and every length result here is post-weaning mouse; **no human data of any kind**; `cao2026a`'s
+better-controlled within-China analysis (>90,000 adults) is **negative for temperature**.
+
+⭐⭐ **FIVE — WHAT HUMAN TISSUE ACTUALLY TURNS ON UNDER LOAD, AND IT IS THE POOL AXIS.** `zhang2024a` is the
+**only** transcriptomic response of **human** growth-plate cartilage to load — biopsies from three children
+at epiphysiodesis, **0.4 N at 0.77 Hz for THIRTY SECONDS**, read at 24 h: **NOTCH, oxytocin and tight
+junction UP**; lysosome, sphingolipid and PPAR down. Notch genes named: **PSEN2, HEY1, NCOR2.**
+⭐⭐⭐ **R400 ESTABLISHED THAT NOTCH ON MAINTAINS THE RESTING-ZONE POOL** (`lin2011` Jagged1/Fc raises the
+epiphyseal stem-cell zone, DAPT lowers it; R399 made nirogacestat a contraindication) **and R400's entire
+unsolved problem was that no usable multivalent Notch agonist is obtainable.**
+⭐ **THE CHAIN CLOSES ACROSS THREE INDEPENDENT SYSTEMS AND NOBODY HAD JOINED IT: LOAD → PTHrP
+(`mcgarry2024` in vivo, `xu2013pthrp` in cells) → NOTCH (`lin2011` puts Notch DOWNSTREAM of PTHrP) →
+RESTING-ZONE MAINTENANCE — and the human tissue confirms the Notch step directly under load.**
+→ **MECHANICAL LOADING IS AN ENDOGENOUS AGONIST OF THE EXACT AXIS THIS FILE COULD NOT DRUG.**
+⛔ **OBJECTIONS, AND THE FIRST IS UNFAVOURABLE: `mcgarry2024`'s PTHrP effect was FEMALE-ONLY** (the length
+effect held in both sexes; its named mediator did not) **and the subject is male.** `zhang2024a` is n=3, ex
+vivo, one 30-s bout, no length endpoint. `lin2011` is abstract-only organ culture. **No length endpoint links
+any step of the chain to any other.**
+⭐ Recorded as convergence, not promotion: **CACNB1** — one of the 15 loading-regulated human genes — is also
+one of R356's ten **RESTING-ZONE-enriched** genes, and **NCOR2** is R323's only dose-dependent lengthening
+IMPC series (het tibia +1.104, hom +1.495).
+
+⭐ **SIX — HOW TO DISTRIBUTE A DOSE.** **FREQUENT SMALL BOUTS BEAT OCCASIONAL LARGE ONES**: `ziemian2026` —
+9 N cyclic tibial compression as a **SINGLE bout** gave **more** severe cartilage damage, subchondral erosion
+and soft-tissue calcification at 6 weeks than the same peak magnitude as **DAILY bouts** (articular
+cartilage, mature mice — a distribution principle, not a growth result). **AND THE RESPONSE SATURATES IN
+SECONDS:** `mcgarry2024`'s whole effective dose is **50 s**, `zhang2024a`'s human transcriptomic response
+follows **30 s**, `fuchs2001` used 100 jumps. **Nothing here supports long-duration impact.**
+⛔ **AND THE OPTIMISATION NOBODY HAS RUN IN ANY SPECIES: REST INSERTION.** In bone, brief rest between cycles
+restores mechanosensitivity — rest-inserted loading keeps its effect when bouts are cut 3/wk → 1/wk while
+cyclic loading loses it. **No rest-insertion or bout-partitioning experiment has ever been done on a growth
+plate.** `g_l6mech_426b`.
+
+⭐ **SEVEN — THE PRESCRIPTION, REWRITTEN, EACH LINE CARRYING ITS OWN GRADE.**
+· ⭐ **THE HIGHEST-GRADED ITEM IS A SUBTRACTION: MINIMISE SUSTAINED STATIC AXIAL COMPRESSION** — prolonged
+  loaded standing, heavy pack carriage, sustained slumped sitting. Halving the HOURS recovered 14–16 points
+  in the animal (`stokes2005`); static load is the regimen that thins the plate and **encourages
+  mineralisation** (`dandrea2021b`). **Grade C animal / grade E human transfer.**
+· ⭐ **AVOID COMPRESSIVE REPETITIVE LOADING THROUGH A SMALL JOINT** — the gymnast wrist is internally
+  controlled in humans. **Grade B.**
+· ⭐ **AVOID HIGH-VOLUME TRAINING AT LOW ENERGY AVAILABILITY.** ~3 sessions/wk promotes; 20+ h/wk at energy
+  deficit suppresses, and no study separates the two. **Grade C.**
+· ⚠ **IMPACT / JUMPING — DOWNGRADED TO GRADE D–X.** Retained only because it is free, because it is the one
+  activity class that does not lose its dose through PHV in a male, and because the animal version is
+  positive with an internal control. **Offer it as that, not as a lever.**
+· ⭐ **CHRONIC HIGH-VOLUME LOWER-LIMB EXERCISE — the running-wheel equivalent — IS THE ARM WITH THE BEST
+  ANIMAL EVIDENCE AND NO HUMAN TEST AT ALL.** A different prescription from jumping: **VOLUME and CHRONICITY
+  over peak force**, endpoint a lasting vascular adaptation, and it plausibly multiplies every systemically
+  supplied agent already in the stack. **Grade D — and under R302 the missing human endpoint is a GAP.**
+· ⛔⛔ **NEW FREE SUBTRACTION, NEVER NAMED HERE: ROUTINE POST-EXERCISE ICING AND COLD-WATER IMMERSION OF THE
+  LEGS**, near-universal in youth sport, runs directly against the only axis with a persisting length
+  endpoint in a normal animal. **Grade E, no human data, free to stop.** By the same mechanism prolonged
+  immersion in a **27–28 °C pool** is predicted to be the WORST modality — and `vlachopoulos2018` agrees from
+  another direction, since **swimmers and cyclists gained from added jumping while footballers did not.**
+· ⛔ **VIBRATION STAYS AT GRADE X** — re-queried against growth plate directly, the only returns are three
+  ultrasonic "physis-stimulating device" PATENTS. **No length endpoint in any species.**
+· ⛔ **HANGING, INVERSION AND SPINAL TRACTION: queried directly against stature with a trial design and
+  returning NOTHING.** No traction or suspension modality has a height endpoint in a growing human, and the
+  disc component of any acute gain is R425's diurnal artefact.
+
+⛔ **PAYWALLED AND NEEDED — ASKED 2026-08-14:** `fuchs2001` full text (the mean and SD of 7-month height
+change by group, which decides what the randomised null excludes) · `dandrea2021a` and `dandrea2021b`
+(Parts 1 and 2 of the only meta-analysis of mechanical growth modulation) · `xu2013pthrp` (the strain
+magnitudes in the PTHrP dose-response).
+
 ## 🦴🦴🦴🦴 R425 — **THREE DECISIONS. NAVEPEGRITIDE GOES *IN*, decided against CORR-195 instead of a
 ## population prior. THE SITE TERM OPENS AND ITS FIRST FINDING IS AN ABSENCE — nobody has ever sampled a
 ## PAEDIATRIC HUMAN VERTEBRAL PHYSIS. And the loading prescription is JUMPING, NOT VIBRATION.**
@@ -2626,6 +2796,12 @@ HIGH-VOLUME TRAINING AT ENERGY DEFICIT.** Free, open-plate-only, mechanistically
 `watanabetakano2021`'s periosteal osteocrin→NPR3 route (R424), and supported by **ONE non-randomised
 controlled trial with an incoherent mediation analysis.** **A low-risk unproven ADJUNCT, not a lever, and it
 should be offered as such.**
+⛔⛔ **THE JUMPING HALF OF THIS PRESCRIPTION IS DOWNGRADED BY R426 — READ R426 BEFORE CITING IT.**
+`fuchs2001` randomised 89 children to **100 jumps off a 61 cm box 3×/week for SEVEN MONTHS** — R425's own
+dose — and states that **jumpers and controls had similar increases in HEIGHT**. Twelve controlled trials
+covering **940 children** measured height and none analysed it. What replaces jumping at the top of the
+movement arm is a **SUBTRACTION** (minimise sustained static axial compression) and a **different modality**
+(chronic high-volume lower-limb exercise, for solute delivery rather than for strain).
 
 ⚠ **CORR-353 GREP COLLISION, SECOND INSTANCE, RECORDED: `traction` MATCHES INSIDE `distraction`,
 `extraction`, `retraction` AND `subtraction`.** A naive grep for the loading literature returns the entire
