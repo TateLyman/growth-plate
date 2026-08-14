@@ -2291,6 +2291,58 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## 🧭🧭🧭🧭 R396 — **"UNLIMITED" — AND YES, WE HAVE BEEN LOOKING IN THE WRONG PLACE. THE PLATE IS A
+## BATTERY AND IT IS NEARLY FLAT; DISTRACTION IS A GENERATOR, IT WORKS AFTER FUSION, AND IT IS REPEATABLE
+## ON ITS OWN PRODUCT. THE BINDING CONSTRAINT IS NERVE AND MUSCLE, WHICH THIS ATLAS HAS NEVER EXAMINED.**
+
+⛔ **THE STRUCTURAL POINT FIRST. THE GROWTH PLATE IS FINITE BY CONSTRUCTION.** Closure is pool exhaustion,
+counted in DIVISIONS (`weise2001`, `marino2008`). Every arm in ~400 rounds — SAG, HHIP, SPIN4, tankyrase,
+SMOC1, STC2, CHAD, CLEC3A, ECRG4 — is an attempt to **make a finite battery slightly bigger while it is
+draining.** Even the most complete human lesion known does not stop it: `smith2008`, ERα absent **from
+conception**, bone age still advanced **15 → 17.5 y over 3.5 y ≈ 0.7 BA-y per CA-y.** **THE CLOCK SLOWS. IT
+DOES NOT STOP. There is no known human or pharmacological state of unlimited plate-driven growth.**
+
+⭐⭐⭐ **DISTRACTION OSTEOGENESIS IS NOT THE SAME KIND OF OBJECT, AND THIS FILE HAS BEEN CALLING IT A "SCALE
+CORRECTION" FOR A HUNDRED ROUNDS INSTEAD OF AN ANSWER.**
+· **It is not pool-limited.** The regenerate is built from **periosteal and marrow progenitors**, not from the
+  resting zone. It does not spend the battery.
+· **It has no window.** It **works AFTER fusion**, so it never competes for the closing plate — and one series
+  combining it with vosoritide found no interference.
+· ⭐⭐ **IT IS REPEATABLE ON ITS OWN PRODUCT.** `santoso2026`: a segment created by distraction was
+  **RE-OSTEOTOMISED AND RE-DISTRACTED**, and **good quality callus resulted.** You can lengthen bone that was
+  itself made by lengthening. **Nothing in the pharmacological stack has that property.**
+· **Scale:** pooled 1,149 patients, femoral **8.85 cm** + tibial **7.36 cm ≈ 16 cm** — and `cerasoli2026`
+  reached **16 cm IN ONE TIBIA** by staging an external fixator (10 cm) then a motorised intramedullary nail
+  (6 cm). Against **1–3 cm for the entire drug stack.**
+· ⭐ **And its rate-limiter is already druggable (R327):** **teriparatide DOUBLED regenerate mineralisation in
+  a RANDOMISED HUMAN CROSS-OVER** (ratio 2.43, 95% CI 1.21–3.65, `wagner2019`); **romosozumab gave +177% max
+  load to failure** in the consolidation-only arm in rats (`mcdonald2018`). 37.1 days/cm is not a constant.
+
+⭐⭐ **SO THE FRONTIER FOR "AS MUCH AS POSSIBLE" IS NOT BONE — IT IS THE SOFT-TISSUE ENVELOPE, AND THIS ATLAS
+HAS ESSENTIALLY NEVER LOOKED AT IT.** ~50 files mention lengthening; **"muscle contracture" returns ZERO
+files**, "peroneal" zero, and the seven "soft tissue" hits are incidental. `yang2026dof` names the constraint
+explicitly: the mechanical environment governs **both regenerate quality AND THE SAFETY OF THE SOFT TISSUE
+ENVELOPE**, and distraction resisting force must be monitored to prevent **NERVE ISCHAEMIA, JOINT CONTRACTURES
+and device failure** — with the sensor engineered to decouple axial force from **asymmetric MUSCLE tension**,
+and the model built on patient muscle anatomy.
+→ **IF THE SURGICAL ROUTE IS THE ONE THAT SCALES, THEN NERVE, MUSCLE, VESSEL AND JOINT ARE THE RATE-LIMITING
+TISSUES, AND THEY ARE A COMPLETELY UNEXAMINED RESEARCH QUESTION IN THIS FILE.** That is where an "unlimited"
+answer would have to come from — not from another growth-plate compound.
+
+⛔ **THE HONEST PRICE, UNCHANGED:** **56.1% complication rate**, 37.1 days/cm, **7.71 months in frame**, and
+per-session soft-tissue tolerance is a real biological limit (nerve and muscle stretch, not bone). Repeatable
+does not mean free. **This is surgery, and the complication rate is the highest number attached to any option
+in this file.**
+
+🧭 **THE RE-RANK THIS FORCES.** For maximum attained height the order is:
+① **anastrozole adherence** — free, keeps the window open, he already has it
+② **DISTRACTION OSTEOGENESIS, staged and repeated, AFTER fusion** — the order-of-magnitude term, no window,
+   repeatable, with two obtainable drugs to shorten it
+③ **SAG** — the only thing that grows the pool, but the pool is the small term and the drug does not exist yet
+④ the free measurements and subtractions
+**②'s frontier is SOFT TISSUE. ③'s frontier is manufacturing. Those are different problems and the file has
+only ever worked ③.**
+
 ## ⛔⛔ R395 — **IS THERE ANYTHING BETTER THAN SAG FOR THE POOL? CELL THERAPY IS CLOSED, AND THE TWO
 ## UNEXHAUSTED LEVERS ARE BOTH THINGS WE ALREADY CONTROL.**
 
