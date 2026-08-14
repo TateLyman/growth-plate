@@ -2481,6 +2481,176 @@ CARRIES ITS ASSAY METHOD OR IT IS RECORDED AS UNVERIFIED AND MAY NOT BE USED AS 
 method is confirmed, restate the figure as *"operator-reported, method unknown, below routine immunoassay
 functional sensitivity."*
 
+## 🧬🧬🧬🧬🧬 R432 — **"NOTHING IS LEFT" WAS COMPUTED WITH TWO INSTRUMENTS THAT ARE BOTH BLIND TO THE CLASS
+## CONTAINING EVERY LARGE HUMAN HEIGHT EFFECT IN THIS FILE. THE SCREEN THEY CANNOT RUN, RUN — AND THE
+## POSITIVE CONTROL COMES BACK AS THE ANSWER.**
+## Run `atlas/tools/round432_recessive_period_screen.py` → `atlas/data/round432/`
+
+⛔⛔ **ZERO — THE CHECK, DONE AGAINST BOTH FILES ON DISK BEFORE ANYTHING WAS BUILT. NEITHER SYSTEMATIC
+INSTRUMENT CONTAINS CYP19A1** — the gene behind the largest human height effect this atlas holds
+(aromatase deficiency: untreated men 188–204 cm, **bone age 15.5 at chronological age 26.8**, epiphyses
+unfused, still growing) and the mechanistic reason anastrozole is in the stack.
+· **`kosmicki2026`'s 207** — absent, and **structurally so: it is a HETEROZYGOUS burden test and aromatase
+  deficiency is RECESSIVE.** No number of exomes fixes a zygosity model. Also absent: NPPC, SMO, HHIP,
+  SOX9, PTHLH, COL2A1, RARG, CBS.
+· **R323b's HPO screen** — `TALL_AND_PERIOD` has **n=4** (ESR1, NELFA, PDGFRB, PIGG) and CYP19A1 is in
+  none of its three lists.
+⭐ **R283, R287, R298, R300, R323, R331, R337, R341 and R413 all lean on those two. Every conclusion of
+the form "the elevation direction is fully occupied" inherits both of their design decisions.**
+
+⭐⭐⭐ **ONE — AND WHY R323b MISSED IT IS *NOT* TERM-KEYING. THE REAL CAUSE IS MORE GENERAL AND MORE
+DAMAGING.** CYP19A1 **IS** annotated to **HP:0000098 Tall stature (ORPHA:91)** and to **HP:0002750
+Delayed skeletal maturation (ORPHA:91 and OMIM:613546)**. **The vocabulary was never the problem.**
+R323b took a **SET DIFFERENCE AT THE GENE LEVEL** — tall-annotated genes minus short-annotated genes —
+and CYP19A1 carries **HP:0004322 Short stature** and **HP:0005616 Accelerated skeletal maturation**
+under **ORPHA:178345, which is aromatase EXCESS: the opposite lesion of the same gene.**
+→ ⭐ **TWO OPPOSITE CONDITIONS OF ONE GENE CANCELLED EACH OTHER IN A SET OPERATION.** That is
+**CORR-309's error committed against a gene instead of a paper: RECORD THE DISEASE, NOT THE GENE.**
+⭐ **CLAUDE.md already reported the size of the damage without knowing what it was: "74 of the 180 are
+annotated BOTH ways, leaving 106 directional."** Every one of those 74 is a candidate for this failure.
+
+⭐⭐ **TWO — THE FIX, AND THE ASYMMETRY IS THE POINT.** Key **DIRECTION** per **(gene, disease)** and
+never per gene; union **INHERITANCE and axis coverage** per gene but **only over diseases that already
+passed the direction filter** (so the aromatase-excess record is gone before it can contribute).
+**Gene-level 188 genes → disease-level 319. RECOVERED: 131, of which 80 are recessive and 21 carry the
+tall axis.** ✓ **B1 GUARD, DECLARED BEFORE RESULTS: CYP19A1 recovered; ESR1, NPR3 and CBS survive both
+designs.**
+⭐ **A SECOND STRUCTURAL DEFECT, FOUND BY THE GUARD RATHER THAN ASSUMED: HPO RECORDS THE SAME CONDITION
+TWICE — ONCE AS OMIM, ONCE AS ORPHA — AND ANNOTATES THEM DIFFERENTLY.** CYP19A1's **inheritance sits on
+OMIM:613546** while **tall stature and eunuchoid habitus sit on ORPHA:91**. Joining on `disease_id`
+splits one condition in two, and a naive recessive filter returns **zero** for the positive control.
+
+⭐⭐⭐ **THREE — THE CLASS IS REAL, LARGE, AND NEARLY DISJOINT FROM THE 207. 208 RECESSIVE
+MECHANISM-POSITIVE GENES, SHARING ONLY *TWELVE* MEMBERS WITH kosmicki's 207.** So the two instruments
+really do look at different biology — which is the strongest form of the brief's point, measured.
+⛔ **AND THEN THE STRUCTURE OF IT ANSWERS THE QUESTION, RATHER THAN OPENING IT:**
+· ⭐ **38% (78 genes) sit on the PUBERTY axis and are the HYPOGONADOTROPIC HYPOGONADISM SET** — ANOS1,
+  CHD7, DUSP6, FGF8, FGF17, FGFR1, GNRH1, GNRHR, HS6ST1, KISS1, KISS1R, NHLH2, NSMF, PROK2, PROKR2,
+  SPRY4, TAC3, TACR3, WDR11. **No puberty → no oestrogen → no fusion → eunuchoid proportions with
+  continued growth. THAT IS CYP19A1's PHENOTYPE REACHED FROM THE GONADOTROPIN SIDE INSTEAD OF THE
+  AROMATASE SIDE — closure program (A), and anastrozole already occupies it. Step 0: SUBSTITUTION.**
+· second cluster = **connective tissue / microfibril** (EFEMP2, FBLN5, MYH11, MYLK, ZNF469, PLOD1,
+  CHST14, DSE, FKBP14, COL6A1, EMILIN1, SMAD2) = **CORR-325's band, already worked.**
+· third = **adrenal steroidogenesis** — see FIVE.
+· remainder = GPI-anchor, mitochondrial, X-linked ID, ribosomal — **CORR-349's abundance artefacts.**
+⭐⭐ **AND THE OBTAINABILITY PASS CLOSES IT: of the SIXTEEN members that are cartilage-ENRICHED in the
+purity-corrected human plate (≥1.96× at ≥20 CPM), EXACTLY ONE HAS SUBSTANTIAL CHEMICAL MATTER POINTING
+ANYWHERE USEFUL — CYP19A1 ITSELF, at 3,937 ChEMBL molecules. THE POSITIVE CONTROL CAME BACK AS THE
+ANSWER.** The only other well-drugged enriched member is **MMP13 (3,195 molecules, 2,085 CPM at
+11.89×)** and its direction is **the discharge protease — failure mode #1.** Everything else returns
+0–6 molecules. **That is R298's base rate holding on a gene set it was never computed over.**
+
+⭐⭐⭐⭐ **FOUR — BUT THE CLASS *DOES* RESCUE POWER, NOT ONLY GENES, AND THE DEMONSTRATION IS THE STACK'S
+OWN LEAD ARM. FGFR3's pure-pLoF row in the 207 is +1.75 cm at P=0.23 across TWENTY-THREE CARRIERS —
+uninformative in both directions — while the human phenotype is unambiguous: CATSHL SYNDROME =
+CAMPTODACTYLY, TALL STATURE, SCOLIOSIS, HEARING LOSS, from FGFR3 LOSS OF FUNCTION** (`bonnet2024catshl`:
+girl and father, marked **postnatal** tall stature). **That is the human germline validation of the
+direction erdafitinib pushes, and the het table cannot see it.**
+⛔ **AND IT CARRIES THE COST IN THE SAME BREATH: the phenotype INCLUDES SCOLIOSIS — and `erdachild2024`,
+already in this bibliography, describes the treated child as "reminiscent of patients with congenital
+loss-of-function FGFR3 mutations", with KYPHOSCOLIOSIS.** R384's FDA report says the same. **The
+germline phenocopy tells you what the drug's endpoint state looks like: tall, and scoliotic — and the
+residual compartment here is the TRUNK.** ⚠ **No bone age is stated in any CATSHL report read**, so
+whether that tall stature is PERIOD or RATE is unresolved — `g_l8_432a`, and it is a reading task.
+
+⭐⭐⭐ **FIVE — THE THIRD CLUSTER CLOSES ON A HUMAN ADULT-HEIGHT ENDPOINT, WHICH IS A RESULT AND NOT A
+NULL. FAMILIAL GLUCOCORTICOID DEFICIENCY: FIVE GENES ON ONE DISEASE RECORD** (MC2R, MRAP, STAR, NNT,
+TXNRD2 — ORPHA:361), **decreased circulating cortisol + TALL STATURE.** This is **the human
+loss-of-function arm of the glucocorticoid axis, which this file contraindicates TWICE on mechanism
+(GR, and the SMO cysteine-rich domain) and has NEVER had a human genetic anchor for.**
+⭐ **And it is better than an association — it is a WITHIN-PATIENT REVERSAL.** `duan2023fgd`: homozygous
+MC2R p.His238Tyr, tall stature, and **after ~2 years of hydrocortisone "the excessive growth was reduced
+to near normal."** `liu2023mc2r` replicates the tall stature on the same residue in a second family.
+**That is CORR-295-in-reverse made concrete: the tall phenotype is TREATED AWAY.**
+⛔⛔ **THEN IT DIES AS A LEVER, ON THE ENDPOINT THAT MATTERS.** `karakilicozturan2025` — **seven
+MC2R-deficient patients, five families, ALL with early or precocious puberty; mean onset 8.6 y in boys;
+FINAL HEIGHT BELOW TARGET at −2.6 SDS and −0.7 SDS.** **Tall as a child, SHORT as an adult.** Failure
+mode #1 with a human adult-height endpoint — the same trade as fermented oyster extract and `gafni2001`
+run backwards (glucocorticoid suppresses growth *and* delays senescence; removing it does both in
+reverse).
+⭐⭐ **AND THE TRADE IS STRUCTURAL, NOT INCIDENTAL: the authors' proposed mechanism is ELEVATED ACTH
+STIMULATING KISSPEPTIN NEURONS. Every agent that lowers cortisol or blocks GR — metyrapone,
+osilodrostat, ketoconazole, mifepristone — RAISES ACTH BY FEEDBACK, so every one of them inherits the
+early-puberty arm. THE CORTISOL-LOWERING DIRECTION CANNOT BE ENGINEERED AROUND WITH EXISTING AGENTS.**
+✓ **What survives and is strengthened: the SUBTRACTION.** The glucocorticoid contraindication now has a
+human loss-of-function anchor — and a stated boundary, which is that the anchor's own adult height is
+negative. **Avoid exogenous glucocorticoid; do not go looking for a way to suppress endogenous cortisol.**
+
+⭐ **SIX — THE BRIDGE GENES: the twelve in BOTH instruments, four CONCORDANT across zygosity.**
+**NPR3** (het +2.35 cm / biallelic tall — known, and already demoted for non-additivity with the CNP arm)
+· **PLOD1** (het **+1.03 cm** / biallelic kEDS type 1 with **marfanoid habitus**, and **4.05×
+cartilage-enriched at 160 CPM**) · **HERC1** (het **+2.07 cm at P=9.2e-10** / biallelic overgrowth) ·
+**KIF7** (het **+0.80 cm at P=7.3e-05 across 1,222 carriers** / biallelic acrocallosal) · **POR**
+(concordant, and its mechanism is **the aromatase electron donor** — the positive control's own arm read
+at a different dose).
+⭐⭐ **AND A SHARP CORRECTION INSIDE THE PLOD ARM: THE BIALLELIC DIRECTION SPLITS BETWEEN THE TWO
+PARALOGUES. PLOD1 biallelic = kEDS type 1, MARFANOID. PLOD2 biallelic = BRUCK SYNDROME, SHORT.** R331/
+R334 named PXS-5505 partly on PLOD1 + PLOD2 het concordance (+0.54 / +0.91 cm); **the biallelic data say
+the two genes are NOT the same lever, and it is PLOD1 that passes CORR-325.** CLAUDE.md currently ranks
+PLOD2 higher on abundance (745 vs 40 CPM) — **CORR-349 says abundance is not the criterion, and on the
+purity-corrected split PLOD1 is 160.5 CPM at 4.05× while PLOD2's biallelic phenotype runs backwards.**
+
+⚠ **SEVEN — ONE NAMED BLIND SPOT, RECORDED NOT PROMOTED: FIBP.** 40.4 CPM at **3.78× cartilage
+enrichment**, biallelic loss = **Thauvin-Robinet-Faivre syndrome, an autosomal recessive OVERGROWTH
+syndrome**, four independent case reports, and **essentially zero atlas coverage.** ✗ **4 ChEMBL
+molecules = no chemical matter**; the syndrome carries intellectual disability and macrocephaly; it sits
+on the **FGF axis**, so Step 0 likely makes it a substitution for erdafitinib; and **no FIBP perturbation
+has a bone-length endpoint in any species.** `g_l8_432c`.
+
+⛔⛔⛔ **CORR-358 — THE GENERAL RULE, AND THIS IS THE THIRD TIME. AN EXTERNAL DATASET'S INCLUSION
+CRITERIA ARE THEIR DESIGN DECISIONS, NOT FACTS ABOUT THE TRAIT, AND EVERY CONCLUSION OF THE FORM
+"NOTHING IS LEFT" INHERITS EVERY ONE OF THEM.**
+· **CORR-310** — I imported their **p-value cutoff** (HHIP was sub-threshold in `kosmicki2026`, so R283's
+  tool never crossed it against chu2026; HHIP is now the best-validated target in the atlas).
+· **R406/R421** — I imported their **outcome-selection step** (ratio-selected variants; NPR3 moved from
+  −4.12% trunk to **59.2% at P=4.9e-90**).
+· **R432** — I imported their **ZYGOSITY MODEL** (a het burden table cannot contain a recessive gene) and,
+  separately, **collapsed a curated ontology to the wrong unit** (gene rather than disease).
+⭐ **THE OPERATIONAL FORM: before writing "nothing is left", name the three design choices of every
+instrument the claim rests on — its significance threshold, its outcome definition, and its genetic
+model — and state which classes each one excludes by construction.**
+
+⭐ **AND THE HONEST VERDICT, BECAUSE THE ROUND DOES NOT PRODUCE A LEVER.** The recessive class the two
+instruments cannot see is real, is large, is nearly disjoint from the 207 — **and it is overwhelmingly
+the oestrogen-deficiency mechanism the stack already exploits, plus a connective-tissue band already
+worked, plus a cortisol arm that closes on a negative adult height.** ⭐ **That is not a null: it is the
+first evidence in this file that the DURATION arm is not merely the best available arm but the arm the
+human genetics keep returning to, from four independent directions (aromatase, gonadotropin, oestrogen
+receptor, and the AI already in the stack). "Nothing is left" was computed with the wrong instruments —
+and running the right one returns the arm we are already on.**
+
+## 📎 R432 — **THREE WORKED NODES THAT HAVE NEVER BEEN IN THIS LEDGER. Folded in so they are not
+## re-proposed as fresh ideas.** (CORR-352's shape: correctly deprioritised, and invisible.)
+
+⛔ **GUT MICROBIOME — `microbiome_igf1_axis` + `gut_microbiome_growth`, two worked nodes, ZERO CLAUDE.md
+mentions.** `yan2016`: germ-free colonisation raises serum IGF-1 with more hepatic and adipose
+production; antibiotics lower IGF-1 and inhibit bone formation; **SCFA supplementation RESTORES both** —
+a real sufficiency experiment. `schwarzer2016` (strain-specific lactobacilli), `blanton2016` (Malawian
+microbiota transmits stunting). ⛔ **CORRECTLY DEPRIORITISED ON THREE GROUNDS AND THE FIRST IS
+DECISIVE: the axis is SOMATOTROPIC, and he is already on exogenous GH → Step 0 SUBSTITUTION for an arm
+this file prices at ≈0 attained height after mid-puberty.** Plus **no SCFA receptor or transporter has
+been localised or functionally tested in growth-plate chondrocytes in ANY species** (CORR-327 unrun,
+and the node says so), and every model is a deficit rescue (CORR-203).
+
+⛔ **CIRCADIAN / CARTILAGE CLOCK — `circadian_growth_regulation`, grade D, ZERO CLAUDE.md mentions.**
+Two levels, usually conflated. The **systemic GH rhythm is real and well evidenced** (nycthemeral, burst
+after sleep onset; continuous enteral feeding flattens it) — **and irrelevant under exogenous GH.**
+The **cell-autonomous chondrocyte oscillator is asserted in reviews and not demonstrated**: the node's
+own line is that **no study has shown a functioning BMAL1/PER oscillator in HUMAN growth-plate
+chondrocytes, or that disrupting one changes longitudinal bone growth** — the primary cartilage-clock
+literature is **articular and TMJ**, not physis. ⭐ **What IS real on the diurnal axis is already in this
+file and is a MEASUREMENT rule, not a lever: R425's fixed-time-of-day requirement and `noonan2004`'s
+≥90% of elongation during recumbency.**
+
+⛔ **GENE THERAPY / AAV — one line, so it is not proposed as a round.** R377 worked the editing modality
+to a conclusion: **CRISPR works in humans (Casgevy is itself an enhancer edit), and the barrier is
+TISSUE TROPISM** — every human success is ex vivo on removable cells or in vivo LNP to hepatocytes, and
+the growth plate is neither. **No somatic editing of a growth plate has been reported in any species**,
+SpCas9 at ~160 kDa sits far beyond `farnum2006`'s 40 kDa detection floor, and R377's stem-cell washout
+argument means anything modified outside the resting zone is consumed. **A vector fixes DELIVERY; this
+file's problem on its best targets is that THE MOLECULE DOES NOT EXIST** (HHIP, CHAD, NRK, SCUBE3).
+**Not a round.**
+
 ## 🧬🧬🧬🧬 R431 — **THE RARγ ARM: THE PROHIBITION IS DELETED AND THE ARM IS STILL HELD — BUT FOR THE
 ## OPPOSITE REASON, AND THE ROUND THAT DECIDES IT IS ONE NEITHER SIDE HAD READ.**
 
