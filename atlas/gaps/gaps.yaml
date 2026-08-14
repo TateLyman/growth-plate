@@ -18194,3 +18194,56 @@ gaps:
     individual enhancers identifies WHICH element carries HHIP expression in postnatal cartilage, and whether
     any TRUNK-restricted element exists, which is far cheaper than making deletion mice.'
   tractability: 8
+- gap_id: g_l3_378a
+  type: known_unknown
+  layer: L3
+  status: open
+  question: Can a small, monovalent, non-bridging ligand occupy HHIP's glycosaminoglycan sites and LOWER its
+    inhibitory potency - and would a binder at the cysteine-rich domain do the same?
+  why_it_matters: 'R378 dissected HHIP surface by surface and the result is that the intuitive drug idea is
+    structurally self-defeating. bosanac2009 shows HHIP binds the hedgehog ligand at its pseudo-active-site
+    groove using a loop that mimics the PATCHED1 ectodomains - a patch for Patched - so HHIP is a structural
+    decoy for the real receptor and any molecule that competitively displaces HHIP from the ligand displaces
+    Patched too. maun2010 confirms it from the other direction: 5E1 binds that same groove with an epitope
+    largely overlapping HHIP''s, and it BLOCKS all three hedgehog homologues from reaching Patched. That
+    leaves exactly two HHIP-selective surfaces - the two glycosaminoglycan sites and the cysteine-rich domain
+    - and they are therefore the entire druggable surface of the best-validated target in this atlas. The
+    question is sharp because the obvious occupant is ruled out: R377 established that soluble sulfated
+    polysaccharides run backwards, impairing hedgehog release and reception while POTENTIATING HHIP through
+    oligomerisation. So the wanted molecule is chemically specific - anionic enough to engage a basic patch,
+    small enough not to bridge two HHIP molecules into the megadalton oligomers that carry its potency.
+    Nobody has tested anything at these sites.'
+  what_is_known: 'griffiths2021 - HHIP potency REQUIRES glycosaminoglycan binding; the six-residue Glu mutant
+    K277E/R328E/R350E/K569E/R610E/R613E abolishes heparin, heparan sulfate and chondroitin sulfate binding by
+    SPR and is a significantly weaker SHH inhibitor by Gli1 mRNA across 10 experiments; epistasis in
+    EXTL3-null cells proves the difference requires heparan sulfate; a heparin 30-mer drives HHIP species
+    from 50 kDa to 6 MDa by analytical ultracentrifugation, abolished in the mutant; and the HHIP-N
+    cysteine-rich domain binds PEG-cholesterol at Kd 23 micromolar while free PEG does not, with loops
+    DL1/DL2 positioned where folate receptor beta''s pocket sits. lamson2024 establishes that a
+    glycosaminoglycan-binding interface on a hedgehog-pathway protein is screenable - 34,560 compounds, 26
+    confirmed antagonists, 19 with IC50 under 50 micromolar, two active on Gli1 in ligand-mediated but not
+    SAG-mediated cells - although run against the SHH heparin site rather than against HHIP.'
+  what_is_missing: No compound of any kind has been tested against either HHIP glycosaminoglycan site or
+    against the HHIP-N cysteine-rich domain, in any species. The CRD pocket is a homology prediction with no
+    ligand found. And it is unknown whether occupying a GAG site lowers HHIP potency in the way the genetic
+    mutant does, or whether an occupant would have to abolish both sites to matter.
+  nearest_evidence:
+  - griffiths2021
+  - bosanac2009
+  - maun2010
+  - lamson2024
+  - jakobs2019heparin
+  discriminating_experiment: 'Adapt lamson2024 to the right protein, which is the cheapest version and needs
+    no new assay development. Screen against HHIP-heparin binding rather than SHH-heparin binding, using the
+    published 384-well single-point format, then confirm hits by SPR against HHIP with heparin, heparan
+    sulfate and chondroitin sulfate, and by analytical ultracentrifugation for LOSS of the 6 MDa
+    oligomerisation species - the griffiths2021 Glu mutant is the positive control and defines exactly what a
+    successful hit should phenocopy. THE FUNCTIONAL READOUT IS THE ONE THAT MATTERS AND IT IS ALREADY
+    STANDARDISED: Gli1 mRNA in NIH/3T3 with SHH plus HHIP, selecting for compounds that RESTORE Gli1 - i.e.
+    that make HHIP a weaker inhibitor - with a SAG-mediated arm as the counter-screen to exclude anything
+    acting at or below Smoothened, and an EXTL3-null arm to confirm the effect requires heparan sulfate. In
+    parallel and separately, test the six systemic sterols of R375 - cholesterol, cortisol, vitamin D3,
+    20(S)-hydroxycholesterol, a B-ring oxysterol and itraconazole - for binding to HHIP-N by thermal shift,
+    since the fold is shared with Smoothened and a hit would mean the sterol layer has a second target with a
+    possibly opposite sign.'
+  tractability: 6

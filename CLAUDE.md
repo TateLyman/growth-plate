@@ -2291,6 +2291,60 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ⭐⭐⭐⭐ R378 — **HHIP DISSECTED SURFACE BY SURFACE. The obvious drug idea is STRUCTURALLY SELF-DEFEATING —
+## HHIP is a DECOY FOR PATCHED — and the only HHIP-SELECTIVE surfaces are the TWO GAG SITES and the CRD.**
+
+⛔⛔ **ONE — THE PROOF IS FROM 2009 AND THIS ATLAS NEVER HELD IT.** `bosanac2009` (Nat Struct Mol Biol, 116
+cites) solved human HHIP alone and bound to SHH. HHIP = **two EGF domains + a six-bladed β-propeller**, and
+**a critical HHIP loop binds the SHH PSEUDO-ACTIVE-SITE GROOVE AND DIRECTLY COORDINATES ITS Zn²⁺.** The
+decisive part: comparing that loop with the **PATCHED1 ectodomains**, plus HHIP- and PTC1-peptide binding,
+gives **"A PATCH FOR PATCHED"** — the authors propose **HHIP IS A STRUCTURAL DECOY RECEPTOR.**
+→ **HHIP AND THE REAL RECEPTOR BIND THE SAME SURFACE ON THE LIGAND. Any molecule that competitively
+displaces HHIP from hedgehog displaces PATCHED too.** The intuitive move — block the HHIP–ligand interface —
+frees the ligand from its own receptor as well.
+
+⛔ **TWO — CONFIRMED EXPERIMENTALLY, NOT JUST BY HOMOLOGY.** `maun2010`: the antibody **5E1 blocks all three
+hedgehog homologues from binding PTCH1**, and its co-crystal with SHH shows it binds the pseudo-active-site
+groove **with an epitope that LARGELY OVERLAPS HHIP's binding site** (Ca-enhanced like HHIP; with Ca+Zn the
+affinity tightens 10–20× to <1 nM). **A binder raised against that surface INHIBITS the pathway.** It is also
+why 5E1 keeps surfacing in HHIP searches and is not an anti-HHIP reagent — it binds SHH.
+
+⭐⭐⭐ **THREE — THE PARTITION, AND ONLY TWO SURFACES ARE OURS:**
+| HHIP element | function | shared with PTCH1? |
+|---|---|---|
+| **EGF1 L2 loop + Zn coordination** | binds the ligand pseudo-active site | ⛔ **YES — unusable** |
+| **β-propeller GAG site 1** — K277/R328/R350 | avidity, oligomerisation | ✓ HHIP-selective |
+| **EGF-repeat GAG site 2** — K569/R610/R613 | avidity, oligomerisation | ✓ HHIP-selective |
+| **HHIP-N CRD** — PEG-cholesterol Kd 23 µM | reads the ligand's cholesterol | ✓ HHIP-selective |
+**The GAG sites and the CRD are the ENTIRE druggable surface of this target** — which is why
+`griffiths2021`'s authors called drugging GAG clustering "an unexploited avenue". It is the *only* avenue.
+
+⭐⭐ **FOUR — SO THE FUNCTION-BLOCKING ANTIBODY FINALLY HAS AN EPITOPE SPEC.** It must bind the **GAG sites or
+the CRD** and must **NOT** bind the L2 loop face. **A naive immunisation is more likely to give a second 5E1
+— a pathway INHIBITOR — than nothing**, which is plausibly why the commercial anti-HHIP monoclonals are
+research reagents and not function blockers. Selection criterion is a **functional counter-screen, not
+binding**: select for compounds/antibodies that RESTORE Gli1 in SHH+HHIP cells, with a SAG-mediated arm to
+exclude anything acting at or below Smoothened.
+
+⭐⭐ **FIVE — AND THE SCREEN HAS BEEN RUN ON THE NEIGHBOURING PROTEIN, WITH A HIT RATE.** `lamson2024`:
+**34,560 compounds** vs SHH–heparin binding → **26 confirmed hits, 4 recurring scaffolds, 19 at IC50 <50 µM**,
+4 active in Shh-responsive cells, **2 blocking Gli1 in Shh-mediated but NOT SAG-mediated cells** (the exact
+counter-screen design needed), direct binding by thermal shift + docking. ⛔ Their direction is wrong — they
+inhibit hedgehog. ⭐ **What it establishes is that this interface class is screenable at a workable hit rate.
+HHIP'S OWN TWO GAG SITES HAVE NEVER BEEN SCREENED BY ANYONE.** Gap `g_l3_378a`.
+
+⛔ **SIX — THE HONEST CONSTRAINT: THE WANTED MOLECULE IS *NOT* A GAG MIMETIC.** R377 showed soluble sulfated
+polysaccharides lower hedgehog at two steps AND potentiate HHIP (50 kDa → 6 MDa). **The occupant must be
+SMALL, MONOVALENT AND NON-BRIDGING** — anionic enough to engage a basic patch, too small to scaffold two
+HHIPs. `jakobs2019heparin`'s own finding that the suppressive effect tracks **size and overall charge**
+rather than specific sulfation is what makes that distinction plausible. Untested by anyone.
+
+⚠ **SEVEN — ONE FREE HYPOTHESIS, GRADE E: HHIP-N IS THE SAME CRD FOLD AS SMOOTHENED** (and NPC1, RFBP, JUNO,
+FZD8). R375 assembled six systemic sterols that occupy the SMO CRD. **If they also occupy HHIP's CRD, the
+sterol layer has a SECOND target with a possibly opposite sign, and the net effect of any given sterol on
+hedgehog output at the plate is not yet knowable.** Free to test by thermal shift. No sterol has ever been
+tested against HHIP.
+
 ## ⭐⭐⭐⭐⭐ R377 — **CRISPR WAS NEVER ASKED AS A MODALITY. Asked once, it returns THE Hhip ENHANCER-DELETION
 ## MOUSE, WHICH ALREADY EXISTS, LOWERS Hhip IN CARTILAGE, AND HAS NEVER HAD A BONE MEASURED.**
 
