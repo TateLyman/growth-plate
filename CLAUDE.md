@@ -2372,6 +2372,77 @@ rewritten.** The 56.1% figure and the ~16 cm figure are both **WITHDRAWN**. ⛔ 
 `speth2026`: whatever the complication rate, a permanent and worsening extensor deficit is the price, and it
 is a price the growth-plate route does not charge.**
 
+## ⛔⛔⛔ R399 — **"IS THERE A DRUG WE HAVEN'T FOUND THAT REFILLS THE POOL?" THE FIELD BUILT FOR EXACTLY
+## THAT WAS NEVER ASKED HERE. ASKED, IT DOES NOT TRANSFER — AND THE TWO SHELVES THAT *DO* REACH CARTILAGE
+## BOTH POINT THE WRONG WAY, PRODUCING TWO NEW CONTRAINDICATIONS INSTEAD OF A CANDIDATE.**
+## Run `atlas/tools/round399_pool_expansion_shelf_receiver_test.py`
+
+⛔ **ZERO — THE BLIND SPOT WAS REAL.** Grep 2026-08-14: **UM171 0 files · "aryl hydrocarbon" 0 · StemRegenin 0
+· omidubicel 0 · "stem cell expansion" 0 · CoREST 0 · "gamma secretase" 0 · nirogacestat 0 · jagged 0 ·
+"prostaglandin E2" 0 · sprifermin 0.** Every pool target this file has ever produced (HHIP, SPIN4, SMOC1,
+STC2, CHAD, CLEC3A, ECRG4) came from HEIGHT GENETICS and has no molecule. The inverse question — *what does
+the field that expands stem cells for a living say?* — had never been put.
+
+⭐⭐ **ONE — THE SHELF IS HAEMATOPOIETIC, AND SO ARE ITS TARGETS IN THIS TISSUE.** Purity-corrected human
+postnatal growth plate, run BEFORE any literature search: **AHR (StemRegenin-1's target, THE canonical HSC
+expander) = 7.0 pure vs 77.3 contaminated, RATIO 0.09** — the band that killed losartan (AGTR1 0.03) and
+sacubitril (MME 0.17), against COL2A1 8.92 and the RZ marker NT5E 8.18. Output genes agree: **AHRR 0.01,
+CYP1A1 0.32.** **RCOR1 (the CoREST complex UM171 acts on) 0.19. NAMPT (the nicotinamide route on which
+OMIDUBICEL was APPROVED in 2023) 0.12.** ⭐ **Every drug that expands a stem cell pool was built for the BLOOD
+stem cell, and in cartilage its target sits in the blood fraction.**
+
+⛔⛔ **TWO — AND THE ONE TARGET OF THAT SHELF THAT *IS* IN THE HUMAN PLATE HAS A LENGTH ENDPOINT RUNNING THE
+WRONG WAY. `cedervall2015` — the SÄVENDAHL lab, whose `chagin2007` killed tamoxifen here.** AhR **PROTEIN is
+widely expressed in rare HUMAN growth-plate samples** (so the ratio understated presence — **CORR-351, exactly
+as for ESR1**). Then the experiment: cultured fetal rat metatarsals, longitudinal growth monitored —
+**AhR AGONIST (TCDD) NO EFFECT at ANY dose 1 pM–10 nM; AhR ANTAGONIST (α-naphthoflavone) SUPPRESSED growth
+and raised chondrocyte apoptosis.** **StemRegenin-1 IS AN AhR ANTAGONIST.** Disqualifier ② (wrong direction),
+with a length endpoint in the target tissue. Dead.
+
+⛔⛔ **THREE — NOTCH HAS AN APPROVED DRUG CLASS AND IT IS A CONTRAINDICATION. NEW.** `lin2011`, neonatal rat
+femur organ culture: **Jagged1/Fc (Notch ON) RAISED the epiphysis-stem-cell zone fraction AND BrdU⁺ stem
+cells; DAPT — a GAMMA-SECRETASE INHIBITOR — LOWERED BOTH.** PTHrP(1-34) did the same as Jagged1/Fc and raised
+NICD/Jagged1, putting Notch downstream of PTHrP. → **Notch MAINTAINS the reserve; blocking γ-secretase shrinks
+it.** ⛔ **NIROGACESTAT is an APPROVED γ-secretase inhibitor (2023, desmoid tumours) and has been given to
+PAEDIATRIC and young-adult patients. It should not be near an open plate.**
+⭐ **And it reconciles with the atlas's own Notch node BY COMPARTMENT — CORR-300's shape again.** `mead2009`:
+chondrocyte Rbpj deletion RAISES proliferation and hypertrophic number. `lin2011`: γ-secretase inhibition
+LOWERS resting-zone stem cells. **Both hold — Notch OFF pushes resting cells out into the columns: more
+proliferation, smaller reserve. That IS spending the pool**, the exact failure this whole line exists to
+avoid. ✗ The helpful direction (Notch ON) has no drug — Jagged1/Fc is a reagent.
+⭐ **FREE QUESTION, CORR-340's shape: nirogacestat has been given to paediatric/young-adult desmoid patients.
+Has anyone measured their HEIGHT VELOCITY?** Same move that closed β2 via propranolol/haemangioma.
+
+⛔ **FOUR — THE PROSTAGLANDIN ROUTE DIES ON THE RECEIVER TEST, AND TAKES AN OLD WORRY WITH IT.** dmPGE2
+expands HSCs and EP4 agonists were built for fracture healing. **PTGER4 0.05 · PTGER2 0.11** — both
+Gs-coupled EP receptors contaminant-leaning — while **PTGES is 2.21 ENRICHED and PTGS2 is 70.4 CPM.**
+⭐ **THE PLATE MAKES PGE2 AND CARRIES NEITHER RECEPTOR FOR IT: PGE2 IS AN OUTGOING SIGNAL, NOT AN INCOMING
+ONE.** That removes the receiver for every EP4 agonist — **and weakens R306's NSAID worry**, whose chain ran
+NSAID → ↓PGE2 → ↓EP4 → ↓cAMP → shorter. The EP4 link is not on the chondrocyte.
+
+⛔⛔ **FIVE — THE ONE GENUINELY NEW POOL MECHANISM FOUND, AND IT IS A CONTRAINDICATION.**
+`kobayashi2023glycolysis` (preprint): **suppressing glycolysis (LDH ablation) EXPANDS the resting zone — and
+the mediator is REDUCED ACETYL-CoA, not an ATP deficit, proven because deleting Acly reproduces the expansion
+and the gross phenotype WITHOUT energy deficiency**, via reduced histone acetylation. The machinery is
+emphatically chondrocytic: **LDHA 281 CPM at 3.58× · ACLY 204 at 1.53 · HIF1A 440 at 1.42, all 12/12.**
+⛔ **BUT IT IS CORR-292's JAM, NOT A POOL.** The model is a **miR-140-5p GoF mouse for human SEDN, which is
+SHORT**; the paper reports skeletal developmental defects alongside the expansion; and **the same expansion is
+reproduced by OVEREXPRESSING ACTIVATED FGFR3 — i.e. achondroplasia.** An expanded RZ beside a short bone is a
+jam, and only a length endpoint separates them.
+⭐ **NEW CONTRAINDICATION: BEMPEDOIC ACID — an APPROVED ORAL ACLY INHIBITOR.** Grade E, free to avoid.
+⚠ Weakened honestly: bempedoic acid is a prodrug needing ACSVL1/SLC27A2, only 16 CPM here, so local
+activation is itself unproven. ✓ **Statins are UNAFFECTED** — `humphries2018`, 300 children, 4.45 vs
+4.60 cm/yr, P=0.73.
+
+⭐⭐⭐ **SIX — THE DURABLE RESULT.** A targeted query for *skeletal stem cell expansion* × *small molecule /
+drug / pharmacology* returns **ZERO records. THERE IS NO DRUG IN ANY SPECIES THAT EXPANDS A CHONDROPROGENITOR
+POOL.** And the reason is **R298's base rate one level up: the only stem cell anyone ever needed to expand in
+a patient was the haematopoietic one, so it is the only one the pharmacopoeia was ever built to expand. The
+search was not insufficient — the INDICATION never existed.**
+→ **SAG still stands alone as the only agent shown to enlarge this pool in a NORMAL animal, and HHIP removal
+is still the better target with no molecule at all. Neither moved. What moved is that the alternative shelf
+has now been ASKED AND ANSWERED instead of assumed.**
+
 ## 🔬🔬 R398 — **THE MATCHED POPULATION READ. Two of this file's surgical numbers were wrong, a per-patient
 ## complication rate turns out not to exist, and the human pooled data independently name R397's frontier.**
 
