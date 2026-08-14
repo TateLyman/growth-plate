@@ -2412,6 +2412,63 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## ⚖️⚖️⚖️ R414 — **THE DISCRIMINATING ALLELE WAS PULLED AND IT DAMAGES SERPINA1. PiS is taller in the
+## SAME direction at P=1.3e-4 but TEN-FOLD smaller while removing HALF as much protein — the dose-response
+## fails 4.5×, so most of the PiZ effect is NOT lowered antitrypsin. What the failure exposes is bigger than
+## the candidate: an ER / SECRETORY-PROTEOSTASIS module, 31 blind-spot genes, five with height signals.**
+
+⭐ **THE TEST, RUN AGAINST THE SAME 451,921-PERSON COHORT SO BOTH ALLELES SHARE ONE INSTRUMENT.**
+· **PiZ (rs28929474)**, chr14:94,378,610, effect allele T, EAF 1.99% → **beta +0.1375 SD, P = 4.9e-125**
+· **PiS (rs17580)**, chr14:94,380,925, effect allele A, EAF 4.79% → **beta +0.0138 SD, P = 1.3e-04**
+✓ **THE DIRECTION SURVIVES — both deficiency alleles are TALLER, and PiS independently at P=1.3e-4.** That
+was not guaranteed.
+⛔ **THE DOSE-RESPONSE FAILS, AND THAT IS WHAT DECIDES IT. Observed ratio 0.1375 / 0.0138 = 9.97. Protein
+ratio is not: PiMZ carries ~55–60% of normal serum antitrypsin and PiMS ~80%, so Z removes ~40–45% per copy
+and S ~20% — a ratio of ~2.1–2.25. THE LOSS-OF-FUNCTION MODEL UNDER-PREDICTS BY ~4.5-FOLD.**
+→ ⭐ **AT MOST ABOUT A FIFTH OF THE PiZ HEIGHT EFFECT IS EXPLAINED BY HOW MUCH ANTITRYPSIN IT REMOVES.** The
+residual belongs to what the Z allele does and the S allele does not: **POLYMERISATION AND ER RETENTION.**
+
+⛔⛔ **CONSEQUENCE, STATED PLAINLY: R413's CANDIDATE IS WITHDRAWN AS A LEVER.** A silencing RNA lowers protein
+**without making polymers**, so it can only reproduce the **small** loss-of-function component — scaling from
+PiS, of order a millimetre-to-centimetre, not the 1.19 cm the Z allele carries. **And the drug's own
+population runs against it:** a SERPINA1 siRNA exists for PiZZ liver disease precisely to **REMOVE the
+polymer**, which is the arm carrying most of the association.
+✓ **ONE OUTPUT SURVIVES AND IS STRENGTHENED: ALPHA-1-ANTITRYPSIN AUGMENTATION THERAPY IS PREDICTED TO
+SHORTEN** — the loss-of-function arm is genuine and augmentation is its inverse. Free, narrow, unchanged.
+⚠ Recorded: the locus is not one variant — rs112635299 (+0.131, P=9.6e-120) almost certainly tags PiZ, and
+rs7151526 (+0.056, P=4.4e-48) and rs112963922 (+0.079, P=1.5e-33) are separate weaker signals.
+⛔ **AND CORR-327 ALREADY ARGUED AGAINST A LOCAL STORY: antitrypsin's canonical targets are effectively
+ABSENT from the plate — ELANE 1.1 CPM, PRTN3 0.1, CTSG 0.0** — while the gene itself is 1,606 CPM. The plate
+makes the inhibitor and not the enzymes it inhibits.
+
+⭐⭐ **AND THE FAILURE IS MORE INTERESTING THAN THE CANDIDATE, BECAUSE THE MECHANISM KEEPS RECURRING. THREE
+INDEPENDENT HUMAN STATURE ALLELES IN THIS FILE ACT THROUGH ER STRESS RATHER THAN THROUGH THEIR PROTEIN'S
+FUNCTION:**
+· **MGP** dominant Cys19 → SED by **ER-stress-induced APOPTOSIS OF GROWTH-PLATE CHONDROCYTES**, not by loss
+  of mineralisation inhibition (R411)
+· **MMP13** frameshift → short stature via enhanced interaction with **HSPA5/BiP** and activated ER stress (R412)
+· **SERPINA1 PiZ** → polymerises and is ER-retained, and on this round's arithmetic that arm carries most of it
+**TWO SHORTEN, ONE LENGTHENS — so ER stress is an AXIS, not a direction.**
+⭐ **And SERPINA1 is transcribed in chondrocytes at 1,606 CPM, so a PiZ carrier makes Z protein IN THE GROWTH
+PLATE** — which would make the effect local after all, and a **gain** of function there rather than a loss.
+Untested in any species, and it sits against the CORR-327 result above.
+
+⭐⭐⭐ **AND THE MODULE IS ALREADY IN THE BLIND-SPOT DATA — 31 OF 62 ER/SECRETORY GENES HAVE ZERO ATLAS
+MENTIONS**, all cartilage-enriched and abundant: **SEC61G 453 CPM at 12.3× · HSP90B1 840 · RCN1 454 ·
+PDIA6 335 · SRP14 344 · KDELR2 305 at 6.6× · FKBP10 298 · PRDX4 293 at 8.3× · OSTC 293 · RPN2 278 ·
+TMED9 261 · RCN2 208 · SEC61B 207 · OS9 197 · TMED10 194 · KDELR1 166 · PDIA4 148 · SRP9 124 · TMED2 109 ·
+MANF 104 · UFC1 91 · KDELR3 88 · DDOST 70 · TMED7 69 · CRELD2 64 · DDIT3 54 · CNIH4 51 · DERL2 45 ·
+TMED1 44 at 8.6× · SRPRB 43 · SYVN1 21.**
+⭐ **FIVE CARRY AN INDEPENDENT HEIGHT GWAS SIGNAL: PDIA4 +0.188 cm (−log10P 101.6) · TMED7 +0.186 (55.2) ·
+RPN2 +0.160 (46.6, distance 0) · CNIH4 −0.176 (39.4, distance 0) · KDELR2 −0.186 (8.1, distance 0).**
+⭐ **AND THE MECHANISTIC CASE IS THE STRONGEST PART: the plate secretes COL2A1 at ~70,000 CPM — one of the
+largest secretory burdens of any tissue — and SERPINH1/HSP47, the collagen-specific chaperone, is 394 CPM at
+3.39×. If matrix output is part of elongation, ER FOLDING AND EXPORT CAPACITY IS A CANDIDATE THROUGHPUT LIMIT
+ON IT, and this atlas has never had a node, a gap or a reference for it.**
+⛔ **NO DIRECTION IS CLAIMED.** The five GWAS signals point both ways, the three disease alleles point both
+ways, nothing has a bone-length endpoint in any species, and **an abundant housekeeping apparatus is exactly
+the artefact R411's own negative control warned about.** Recorded as a NAMED UNEXAMINED AXIS, not a lead.
+
 ## 🎯🎯🎯🎯 R413 — **THE STEP THAT TURNS THE SCREEN INTO CANDIDATES. Join the blind spots to the 3,034
 ## CONDITIONALLY INDEPENDENT height GWAS variants and 140 acquire a SIGNED effect in centimetres. The
 ## headline is SERPINA1 — the ALPHA-1-ANTITRYPSIN DEFICIENCY allele adds +1.19 cm per copy at −log10P 130.**
