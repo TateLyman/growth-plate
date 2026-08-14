@@ -2291,6 +2291,47 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ⭐⭐⭐ R379 — **THE LIGAND-SUPPLY ARM: HOW HEDGEHOG GETS *OUT* AND HOW IT *TRAVELS*. R290 pointed at this
+## and nobody followed it. New layer, direction UNRESOLVED, and it explains the SCUBE paralogue switch.**
+
+⭐ **ONE — THE ATLAS HAS WORKED THE BRAKE (HHIP), THE RECEPTOR (PTCH1/SMO) AND THE TRANSDUCER, AND NEVER THE
+RELEASE STEP.** `puschmann2026`: the hedgehog ligand is lipidated and **firmly attached to the membrane of
+the cell that makes it**; getting it off needs **DISPATCHED1 + SCUBE2 + ADAM10 acting SYNERGISTICALLY**,
+proteolytic removal of the lipidated termini, and **SOLUBLE LIPOPROTEINS AS THE TRANSPORTERS** — with SCUBE2
+physically binding lipoproteins and **binding cell-surface heparan sulfate to recruit them to HS-rich release
+sites.** `wang2021` adds that DISP1 is a **Na⁺-powered** exporter. **R290 already saw this from the data
+side — transduction FLAT while DISP1 +1.99, SCUBE1 +1.82, SCUBE2 −3.05 all moved — and wrote "only ligand
+AVAILABILITY differs". Nobody followed it.**
+
+⭐⭐ **TWO — AND THE FREE LOCAL QUERY CONFIRMS THE PARALOGUE SWITCH BY AN INDEPENDENT ROUTE.** Purity-corrected
+human growth plate: **SCUBE1 45.8 CPM at 8.77× and SCUBE3 171.0 at 16.02× are cartilage-enriched, while
+SCUBE2 is 7.7 at 0.35 = CONTAMINANT-LEANING.** **SCUBE1/3 are the plate's SCUBEs, not SCUBE2** — which is
+exactly chu2026's "same job, opposite sides" paralogue switch, now confirmed by tissue origin in human.
+⚠ DISP1 0.23, ADAM10 0.19, HHAT 0.30 are all contaminant-leaning but present at real levels (17–36 CPM);
+CORR-351 applies — these are ubiquitous membrane proteins, so a low ratio is expected and is not an absence.
+
+⭐⭐ **THREE — AND THE TRANSPORT LAYER IS SYSTEMIC, MEASURABLE AND MODIFIABLE.** `queiroz2010`: **INDIAN
+HEDGEHOG — the growth plate's own ligand — circulates in human plasma ON VLDL AND ONLY ON VLDL** (not LDL,
+not HDL; Shh and Dhh undetectable in any fraction; likely source white adipocytes). ✓ **And the plate can
+receive it: LRP1 461 CPM at 2.62× enrichment, LDLR 191 — while making NO apolipoproteins (APOB 0.1, APOA1
+0.5).** That is the receptor-local ligand-systemic configuration again.
+
+⛔⛔ **FOUR — BUT THE DIRECTION IS A BAND, NOT AN ARROW, AND THAT IS WHY THIS IS NOT YET A LEVER.**
+`palm2013` (PLoS Biol, 94 cites): lipoproteins facilitate long-range Hh mobilisation **AND CONTAIN LIPIDS
+THAT REPRESS THE PATHWAY** — conserved from flies to mammals. Lipoprotein-associated Hh **blocks**
+lipoprotein-mediated inhibition; a second, **non-sterol-modified form (Hh-N*)** is released independently and
+the two are **complementary and synergistic** — lipoprotein-Hh alone raises full-length Ci but is
+**INSUFFICIENT** for target-gene activation. → **RAISING LIPOPROTEIN DELIVERS MORE CARRIER AND MORE
+INHIBITORY LIPID AT ONCE.** ⭐ **And the repressive lipids are plausibly R375's STEROL LAYER — the same
+oxysterols and sterols that occupy the SMO cysteine-rich domain — which would make lipoproteins the vehicle
+delivering the ligand AND its own antagonists to the same cell.** Grade E; nobody has identified the species.
+⛔ Also the circulating pool probably does not set the local one, for R376's reason: the plate makes its own
+IHH at **89.5 CPM, 72× enriched — the most cartilage-enriched signalling gene in the tissue.**
+
+⭐ **FIVE — THE ONE FREE THING: a standard lipid panel is already routine and VLDL/triglycerides have never
+been recorded for this subject.** It costs nothing to have, and it is the only measurement that would let
+this arm be interpreted at all. Not a recommendation to change it — the sign is unknown in both directions.
+
 ## ⭐⭐⭐⭐ R378 — **HHIP DISSECTED SURFACE BY SURFACE. The obvious drug idea is STRUCTURALLY SELF-DEFEATING —
 ## HHIP is a DECOY FOR PATCHED — and the only HHIP-SELECTIVE surfaces are the TWO GAG SITES and the CRD.**
 
