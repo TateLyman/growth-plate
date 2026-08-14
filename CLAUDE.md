@@ -2269,6 +2269,78 @@ adolescent epiphysis **does not apply to a bead placed INSIDE the SOC** — that
 **Bead: agarose + SAG 7 µg in 1.5 µL, distal femoral SOC, P30 rat; Gli1-LacZ signal GONE BY 3 WEEKS; femur
 +2.75/+2.64/+3.63% at 1/2/6 months, effect WIDENING; no OA at 6 months.**
 
+## ⭐⭐⭐⭐⭐ R377 — **CRISPR WAS NEVER ASKED AS A MODALITY. Asked once, it returns THE Hhip ENHANCER-DELETION
+## MOUSE, WHICH ALREADY EXISTS, LOWERS Hhip IN CARTILAGE, AND HAS NEVER HAD A BONE MEASURED.**
+
+⛔ **ZERO — THE BLIND SPOT WAS REAL.** 56 files mention CRISPR, 30 Cas9, 8 gene editing — **every one is a
+genome-wide SCREEN (R311), a knock-in DISEASE MODEL, or a CONDITIONAL ALLELE.** Not one asks whether editing
+is a ROUTE. *prime editing* 0 files · *milasen* 0 · *n-Lorem* 0.
+
+⭐⭐⭐ **ONE — AND THE ANSWER IS ANOTHER LOSSY-LEDGER FAILURE ON THIS FILE'S OWN BEST TARGET. `darbellay2024`
+HAS BEEN IN THE BIBLIOGRAPHY SINCE 2026-08-05, CITED BY *ZERO* NODES, WITH A ONE-LINER THAT RECORDED ITS
+ENHANCER COUNT AND OMITTED THAT IT DELETED AN Hhip ENHANCER IN VIVO.** Full text: two **LIMB-ENRICHED
+chondrogenic enhancers at the Hhip locus, CE2 and CE3**; homozygous **3.5 kb CRISPR-Cas9 deletion** →
+**Hhip transcripts −15% IN LIMB, no significant change in TRUNK.** ⛔ **NO SKELETAL PHENOTYPE MEASURED —
+RNA-seq of E14.5 fetuses only, no bone length, no growth plate.**
+→ ⭐ **THE MOUSE THAT LOWERS Hhip IN CARTILAGE EXISTS AND NOBODY PUT A CALIPER ON IT. CORR-340 at the genetic
+level, and the cheapest validating experiment now available on this target.** Gap `g_l8_377a`.
+⚠ **Three caveats that matter:** −15% is modest against a human het pLoF · **CE2-3 are LIMB-restricted**,
+the wrong compartment for a trunk-dominant residual · E14.5 is embryonic, so it says nothing about an open
+plate.
+
+⭐⭐ **TWO — THE METHOD HAS A CLEAN WILD-TYPE PROOF IN THE SKELETON.** `angelozzi2025` (JCI): an enhancer
+29 kb upstream of Fgfr3 (**−29E**) carries a cartilage domain matching Fgfr3's own, and **CRISPR deletion IN
+OTHERWISE WILD-TYPE MICE HALVED Fgfr3 IN THAT DOMAIN WITH NO ADVERSE PHENOTYPES** — the CORR-203-clean arm.
+In ACH mice it **normalised LONG BONE *AND VERTEBRAL BODY* GROWTH**, cut spinal-canal and foramen-magnum
+stenosis, and removed lethality; **−29E is highly conserved in humans.**
+⭐ **WHAT TRANSFERS IS THE METHOD: an enhancer deletion halves a gene IN CARTILAGE ONLY — the shape of a het
+pLoF, and exactly what R281's interior-optimum-below-wild-type needs — and it REACHED THE VERTEBRAE.**
+⛔ FGFR3 is erdafitinib's own arm, so as an *intervention* this is a Step 0 substitution, not an addition.
+
+⭐ **THREE — THE COMPARTMENT PARTITION EXISTS AT THE REGULATORY-ELEMENT LEVEL (R318 one layer down).**
+Of 2,704 chondrocyte enhancers: **2,003 (74%) pan-chondrogenic · 483 (18%) LIMB-restricted · 218 (8%)
+TRUNK-restricted**, and variants overlapping chondrogenic enhancers explain height better than those over
+non-chondrogenic ones. → **A trunk-directed intervention is in principle addressable BY CHOOSING THE ELEMENT
+— which no drug in this file can do.**
+
+⛔ **FOUR — BUT NO SOMATIC EDITING OF A GROWTH PLATE HAS EVER BEEN REPORTED IN ANY SPECIES.** Every skeletal
+CRISPR result here is **germline zygote editing to make a line.** The payload is the obstacle: **SpCas9 ≈
+160 kDa** against farnum2006's curve where **40 kDa is already undetectable**, and SpCas9 + guide sits at
+the top of AAV's ~4.7 kb. `yoon2021aav`: of 14 serotypes only **AAV2, 5, 6, 6.2** substantially transduce
+chondrocytes, and the recommendation is explicitly for **INTRA-ARTICULAR** cartilage — the plate is not
+intra-articular (R361). ✓ **The one route that bypasses partition is a vesicle: `lou2026cas9exo` delivered
+CRISPR-Cas9 to chondrocytes in vivo in peptide-targeted exosomes, 61.7% knockdown** — the editing analogue
+of `yuan2024`, and articular, not physeal.
+
+⭐⭐ **FIVE — IS THE OLIGO SYNTHESIZABLE? YES, AND THE BLOCKER IS ELIGIBILITY, NOT CHEMISTRY.** A 16–20mer PS
+gapmer is routine solid-phase phosphoramidite chemistry against a known human transcript. `kim2019milasen`
+is the template: diagnosis → design → proof of concept in the patient's own cells → tox → GMP manufacture →
+**N-of-1 dosing WITHIN ONE YEAR of first contact**, no serious AEs; FDA then issued **dedicated guidance for
+individualised ASO INDs**, and standing infrastructure exists (**n-Lorem** — free for life; NATA; Rare
+Therapies Launch Pad; Dutch Centre for RNA Therapeutics).
+⛔ **EVERY ONE OF THOSE PATHWAYS REQUIRES A SEVERELY DEBILITATING OR LIFE-THREATENING DISEASE CAUSED BY A
+SPECIFIC PATHOGENIC VARIANT** (n-Lorem: nano-rare, 1–30 patients worldwide). **A healthy subject with a
+height goal and no pathogenic variant meets none of them. The molecule is buildable; the indication is the
+wall.**
+
+⭐ **SIX — AND FOR THIS TARGET, PERMANENCE IS ACCEPTABLE, WHICH IS UNUSUAL.** R375: HHIP removal is the ONE
+hedgehog intervention that need not be pulsed, because it sits **above Ptch1** and leaves the Gli-target
+feedback intact; `haraguchi2025` shows sustained loss still working at 53 wk with zones ORDERED. So editing's
+usual objection costs less here than anywhere else in this file. ⛔ Against: irreversible in a growing person
+for a non-disease indication · off-target editing is an **efficacy** risk too (ACAN −16.55 cm sits in this
+tissue) · HHIP is two-sided (tumour suppressor, top COPD locus).
+
+🧭 **SEVEN — THE RANKING BETWEEN MODALITIES:**
+1. **PS-ASO gapmer** — delivery to growth-plate cartilage is DEMONSTRATED (`posey2017`), chemistry routine,
+   regulatory template exists, and it is **REVERSIBLE — which matters most precisely because the HHIP
+   dose-response has an interior optimum nobody has measured.** Best first move.
+2. **siRNA in a WYRGRL chondrocyte exosome** (`yuan2024`) — same target, demonstrated systemic route, more
+   complex product.
+3. **Somatic enhancer editing** — the most elegant, and **the only route that could pick a TRUNK-restricted
+   element**; no growth-plate delivery precedent in any species, and irreversible.
+⭐ **AND THE STEP THAT PRECEDES ALL THREE COSTS ALMOST NOTHING: MEASURE THE BONES OF THE Hhip_ΔCE2-3 MOUSE
+THAT ALREADY EXISTS.**
+
 ## ⭐⭐⭐⭐⭐ R376 — **HHIP IS NO LONGER UNDRUGGABLE-BY-MODALITY.** Eight lowering routes verified: five die
 ## on the free local query, one has NO PRIMARY, one makes R375 worse — and the direct route has a VEHICLE.
 
