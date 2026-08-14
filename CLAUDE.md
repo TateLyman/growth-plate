@@ -2412,6 +2412,80 @@ WEIGHT BEFORE IT IS READ AS A BONE EFFECT** — including R350's dabigatran ulna
 reduction sat at the top dose. CORR-326's shape inverted: there, body weight was mistaken for length; here,
 length can be an artefact OF body weight.
 
+## 🧬🧬🧬 R417 — **AEBP1 WORKED TO THE END. The best-SHAPED candidate the inverse search produced —
+## right direction, right compartment, right DEPTH on a mapped axis, monotone human genetics at
+## P=8.4e-15, secreted and therefore in the tractable class — AND IT IS A BAND.**
+
+⛔ **FIRST, CORRECT R416's FRAMING: AEBP1 IS NOT A BLIND SPOT.** It **IS** in `kosmicki2026`'s 207 and
+**R347 already named it at +1.10 cm** in the enrichment screen's own list of nine blind-spot genes that reach
+the 207. It is a **NAMED-AND-NEVER-WORKED** gene, not an undiscovered one — R416 reached it from Table S3's
+splice donor without checking that S6 already carried it. **The finding is the work, not the discovery.**
+
+⭐ **ONE — THE HUMAN GENETICS ARE THE BEST OF ANY GENE THIS SEARCH SURFACED, AND THEY ARE MONOTONE.**
+Thirty-five burden rows decaying cleanly as benign variants dilute the mask — **R324's causal signature**, the
+shape that validated NRK and PIEZO1:
+**pLoF <0.01% +1.100 cm (571 carriers) · pLoF+delmis <0.01% +0.657 · delmis <0.01% +0.565 ·
+pLoF+poss-delmis +0.428 · poss-delmis +0.372 · all missense +0.307.**
+⭐ **BEST-POWERED ROW: pLoF+deleterious missense <1%, +0.436 cm at P=8.39e-15 across 15,923 carriers**, with
+pLoF <1% at +0.429, P=8.69e-12, 12,677 carriers. **Plus an INDEPENDENT instrument class: the single-variant
+SPLICE DONOR at +0.53 cm, P=9.77e-10** (Table S3). Two instrument classes, one direction.
+
+⭐⭐ **TWO — AND THE COMPARTMENT IS THE ONE THIS FILE CARES MOST ABOUT.** 422 CPM in pure cartilage at
+**3.0× sex-corrected enrichment**, and zone-resolved (GSE9160, probe 201792_at) it is
+**PERICHONDRIUM-AND-RESTING-ZONE peaked, falling MONOTONICALLY into hypertrophic in BOTH donors**:
+D1 **PC 15,394 > RZ 12,797** > PZ 6,136 > PHZ 4,802 > HZ 3,990 · D2 **PC 13,589 > RZ 9,813** > PZ 6,509 >
+PHZ 4,247 > HZ 4,503.
+⭐ **Those are the two compartments with the best track record here** — the perichondrium is where FBN1's
+restraint acts (its ONLY clean-donor detection is there; Prx1-Cre Fbn1 loss gives bones **+7%**), and the
+resting zone is where **SFRP5, FRZB and SMOC1** run the only programme R356 could find. **SFRP5 in the same
+arrays is RZ 3,656 / 8,431 — the identical shape.**
+
+⭐⭐⭐ **THREE — AND THE MECHANISM LANDS ON CANONICAL Wnt AT THE ONE DEPTH THAT WORKS.** The 2026
+osteoprogenitor conditional knockout shows **Aebp1 loss ATTENUATES Wnt/β-catenin signalling**. R281 puts the
+canonical-Wnt optimum **BELOW** wild type, and **R356 established the axis is DEPTH-dependent**:
+**EXTRACELLULAR** reduction (SPIN4-like output, SFRP5, FRZB, SMOC1) **LENGTHENS** · **INTRACELLULAR**
+(tankyrase) **failed from four independent directions** · **TOTAL LIGAND BLOCKADE** (PORCN) inverts the zone
+decomposition and exhausts the plate.
+⭐ **AEBP1 (ACLP) IS SECRETED. It sits at the extracellular depth — the only one that has ever worked on this
+axis — and unlike SPIN4 (needs a degrader) or SFRP5/FRZB/SMOC1 (need SUPPLYING), the direction here is to
+BLOCK, which is what the pharmacopoeia does.** ✓ Step 0 clean — canonical Wnt is moved by nothing in this
+stack. ✓ R287's LAYER and R314's antibody-tractable class.
+
+⛔⛔ **FOUR — AND IT IS A BAND, WHICH IS WHAT STOPS IT. The mouse and the human disagree by DOSE, not by
+DIRECTION:**
+· **HUMAN HETEROZYGOUS loss → +1.10 cm. TALLER.**
+· **MOUSE OsxCre KNOCKOUT → REDUCES BODY SIZE and bone mass**, impairs osteoblast differentiation.
+· **HUMAN BIALLELIC loss → Ehlers-Danlos classical-like type 2, with OSTEOPOROSIS and SCOLIOSIS.**
+→ **HALF-DOSE IS TALLER; ZERO-DOSE IS SMALLER AND WEAKER.** An **interior optimum between 50% and 100% of
+normal function** — the **THIRD** instance of R281's band after SPIN4/ICAT and the FBN1-LTBP2-PLOD2
+microfibril module, and **the FIRST with a large human heterozygous effect AND a mouse null on the same axis.**
+⛔ **CORR-325 applies in full: NO AGENT IS TITRATED FOR A WINDOW LIKE THAT**, which is a harder objection
+than pleiotropy.
+⭐ **AND THE PAPER'S OWN RESCUE IS THE INTERNAL CONSISTENCY CHECK: it restored the knockout's bone with BIO,
+a GSK3 INHIBITOR — i.e. by RAISING Wnt — which is precisely the shelf R356 contraindicated on R281's grounds.
+Both hold if the null sits BELOW the optimum while normal sits at or slightly above it. The two rounds agree
+about where the band is.**
+
+⛔ **FIVE — THE PRACTICAL OBJECTIONS, UNRESOLVED.**
+· **ZERO CHEMICAL MATTER — AEBP1 has NO human ChEMBL target record at all** on the proper query (CORR-347).
+  The only inhibition work is preclinical anti-fibrotic **siRNA in MSC-derived nanovesicles**, not an agent.
+· **NO BONE-LENGTH ENDPOINT IN ANY SPECIES.** The mouse paper reports BODY SIZE and bone MASS, never femur or
+  tibia; **IMPC Aebp1-het body length +0.061 at P=0.933, n=6m/7f — uninformative in both directions** (CORR-348).
+· **The conditional is OsxCre = OSTEOPROGENITOR-restricted**, so it tests the osteoblast lineage, not the
+  chondrocyte or the perichondrium where AEBP1 actually peaks.
+· Cancer-associated-fibroblast gene with pan-cancer collagen co-expression → two-sided.
+
+⭐ **SIX — COL16A1 RECORDED ALONGSIDE, WEAKER BUT REAL.** pLoF <0.01% **+0.851 cm** (P=1.1e-04); best-powered
+**+0.176 at P=4.79e-07 across 42,606**; **445 CPM at 4.7× enrichment, PROLIFERATIVE-zone peaked**; three prior
+atlas mentions. **No ChEMBL target, no IMPC length row.** A collagen, so it inherits ACAN's supply-vs-block
+problem.
+
+⭐ **WHAT R417 SETTLES.** AEBP1 is the closest the inverse search came: correct direction, correct compartment,
+correct depth on a mapped axis, monotone human genetics at P=8.4e-15, and the secreted target class this file
+has repeatedly identified as the tractable one. **It fails on the same thing that stops every band in this
+atlas — no agent delivers a partial, titrated reduction, and the FULL reduction is MEASURED to be worse than
+doing nothing.** Recorded as **the best-characterised untried target on the canonical-Wnt axis, not a lever.**
+
 ## 🔍🔍🔍 R416 — **SEARCH FROM RESTRAINT, NOT INVESTMENT. Table S3 gives 34 CODING loss-of-function
 ## variants that RAISE height — brakes with a READABLE direction — and the table validates itself by
 ## re-finding this file's own targets. The one large novel entry does NOT promote, and the reason is a new
