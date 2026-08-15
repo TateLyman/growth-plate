@@ -10825,3 +10825,126 @@ the wrong variable (volume, not direction)** — while the co-equal term beside 
 32–49%, has never been worked at all.** The period arm is performing **at its biological ceiling** and two
 independent instruments now agree on what that ceiling is. And the largest unexplained lengthening effect in
 humans is a **limb-wide signal released by a broken femur**, sitting unclaimed since 1981.
+
+## 🏚️🏚️🏚️🏚️ R441 — **THE ABANDONED-INTERVENTION SWEEP. The one obtainable non-invasive candidate it
+## produced is DAMAGED BY A PAPER THAT PREDATES IT BY 23 YEARS IN THE SAME JOURNAL — and the periosteum arm
+## and the fracture-overgrowth arm turn out to be TWO mechanisms this file holds ONE of.**
+
+⛔⛔ **CORR-362 — AN AGENT THAT SEARCHES FOR *FOLLOW-UP* IS NOT SEARCHING FOR *PRIOR WORK*, AND THAT IS HOW
+THE ROUND'S BEST-LOOKING LEAD SURVIVED TO BE PROPOSED.** `rickert2021` (PMID 34016487, verified verbatim)
+is a genuinely good design — **randomised, four arms, HEALTHY IMMATURE RABBITS, blinded observers, calcein
+labels at days 1 and 18, contralateral leg as control**: transdermal **LIPUS +35% (p=0.04)** and **epiphyseal
+rGH injection +41% (p=0.04)**, with **no difference among the four control groups (p=0.37)** and **no physeal
+bar**. Presented as unfollowed, obtainable and the only positive signal in a normal growing animal.
+⛔ **IT WAS PRECEDED. `spadaro1998` (PMID 9651966), *the same journal*: young rats, 1.5 MHz pulsed ultrasound
+at 30 mW/cm² SATA, 20 min/day × 28 days → NO LENGTH DIFFERENCE (≤2%) in femur or tibia against the SHAM
+LEG or unexposed controls, and no BMD difference (≤6%). Repeated with a periosteal trauma stimulus added —
+null again.** Authors' own conclusion: physeal growth is far less sensitive to this level of ultrasound than
+fracture repair is.
+⭐⭐ **AND THE DOSE IS THE POINT: 1.5 MHz / 30 mW/cm² / 20 min per day ARE THE STANDARD CLINICAL LIPUS
+PARAMETERS. The obtainable device was tested at the obtainable dose in a NORMAL GROWING ANIMAL with a
+CALIPER and returned ≤2%.** ⚠ Rickert's own parameters are not in the abstract, so "same dose" is an
+inference the full text would settle.
+⛔ **THIRD ARM AGREES: `chow2011` (PMID 21681954) — rabbit physeal injury, a bioengineered cartilage pellet
+improved femoral lengthening and adding LIPUS gave NO additional enhancement at 4, 8 or 16 weeks.**
+→ ⛔ **THE 1998 STUDY IS A *LENGTH* ENDPOINT AND THE 2021 STUDY IS A *PROXY* (calcein-labelled microscopic
+growth over 18 days). Failure mode #3 — proxies do not close anything, and here the proxy is the positive.
+LIPUS AS A PHYSEAL STIMULUS IS NOT A LEAD.** What survives is a live inconsistency: a sustained +35% rate
+effect should have shown up inside Spadaro's ≤2% bound, so either the effect is not sustained, or dose,
+placement, species or duration separates them. Nobody has run the two designs against each other.
+
+✓ **WHAT DOES SURVIVE FROM THAT PILOT IS THE OTHER ARM, AND IT IS A CONFIGURATION THIS FILE HAS NEVER
+CONSIDERED: A *LOCAL EPIPHYSEAL* rGH DEPOT (+41%).** Spadaro tested ultrasound, not this.
+· **Step 0 is NOT obviously a substitution.** R254/R269 price **SYSTEMIC** GH at ≈0 attained height after
+  mid-puberty via SOCS2 — but R326/`yakar2016` split the axis: **circulating IGF-1 → RADIAL growth; LOCAL
+  IGF-1 → LONGITUDINAL growth.** A depot inside the epiphysis targets the arm the systemic drug reaches
+  least, which is the same argument that let R341 reopen STC2.
+· ⭐ **AND THE ROUTE IS ALREADY SPECIFIED IN THIS FILE.** R373/R374/R385–R387 worked out percutaneous,
+  image-guided, intraosseous placement into the secondary ossification centre in detail — cannula gauge,
+  vehicle, confirmation imaging, sites. **Same route, different payload — and the payload is an APPROVED
+  drug he is already taking systemically, so there is no GMP problem, which is the single thing blocking
+  the SAG programme.**
+· ✗ Against: **proxy endpoint, pilot n, rabbit, no length**, an injection rather than a non-invasive route,
+  and SOCS2 may simply saturate faster at a higher local concentration. `g_l4_441a`.
+
+⭐⭐⭐ **THE JOIN, AND IT IS THE ROUND: THE PERIOSTEUM ARM AND THE FRACTURE-OVERGROWTH ARM ARE TWO DIFFERENT
+MECHANISMS, THIS FILE HOLDS ONE OF THEM, AND `periosteum.yaml` DOES NOT CONTAIN THE WORDS FRACTURE OR
+OVERGROWTH ANYWHERE.** Three papers, never read together:
+· ⭐ **`kaneko2020` (PMID 32875008) IS THE CAUSAL VERSION IN A NORMAL ANIMAL WITH A SHAM CONTROL INSIDE THE
+  SAME MOUSE.** Circumferential periosteal resection of the proximal tibia in **WILD-TYPE** mice at 4 weeks,
+  repeated at 5, read at 6: **tibial LENGTH and bone volume significantly larger on the resected side than
+  the SHAM side, and the growth plate significantly WIDER.** Not significant in Fgfr3-ach mice, which is the
+  entire basis for nominating **IHH** as the mediator — an inference from a non-response, never measured
+  directly. ⛔ **COST, in the same paper: metaphyseal BV/TV and Tb.N significantly DECREASED on the resected
+  side in BOTH genotypes.** ⚠ The +0.71 ± 0.72% magnitude is full-text and `value_unverified`; the SD
+  exceeds the mean.
+· **`shapiro1981` (R440): femoral fracture → 0.92 cm femoral overgrowth AND 0.29 cm in the UNBROKEN
+  ipsilateral tibia in 82% of children.**
+· **`cho2025` — THE MIRROR, and ⚠ CORR-336 AGAIN: IT HAS BEEN IN THIS BIBLIOGRAPHY SINCE 2026-08-08 with
+  fuller numbers than the sweep extracted, cited by three nodes, and the duplicate-key check caught me about
+  to add it twice.** Tibial shaft fracture in 79 children under 14 → ipsilateral **FEMORAL** overgrowth,
+  contributing 25% (IQR 18–31) of the leg-length discrepancy.
+  ⛔ **AND A DISCREPANCY TO RESOLVE, RECORDED RATHER THAN SMOOTHED: THE ABSTRACT SAYS 35 PATIENTS (44%);
+  THIS ATLAS'S OWN 2026-08-08 ENTRY SAYS 66%.** 35/79 = 44.3%, so the abstract is internally consistent and
+  the 66% is presumably a full-text figure on a different denominator. **Both percentages are
+  `value_unverified` until the full text is read.** Also unaffected: the authors state the femoral
+  contribution to LLD was **NOT significant**.
+⭐⭐ **AND THE DECOMPOSITION IS THE AUTHORS' OWN, REACHED FROM RISK FACTORS WHILE THIS FILE REACHED IT FROM
+ANATOMY: the risk factors for tibial and femoral overgrowth DIFFERED — distal location for the femur;
+length-stable pattern, fibular involvement, operative treatment and fracture-site shortening for the tibia —
+"which may be the result of different mechanisms."**
+→ ⭐ **SO THERE ARE TWO ARMS AND ONLY ONE IS COVERED HERE.** The **LOCAL** arm — a bone that was broken or
+stripped — is plausibly release of a periosteal restraint, and `kaneko2020` demonstrates exactly that
+causally, in a normal animal, with a within-animal sham. The **CROSS-BONE** arm cannot be, **because that
+bone's periosteum was never touched**. R440's limb-wide signal is the second arm, and it now has two
+independent human series and an author-stated mechanistic split behind it. ⚠ The periosteal arm carries
+`periosteum.yaml`'s **ROC age cutoff of 9.6 years**, which is against this subject; the cross-bone arm has
+no age analysis in either series.
+
+⭐⭐ **THE MOST GENERALISABLE THING IN THE ROUND IS ABOUT THE HISTORICAL RECORD ITSELF: NO ADULT-HEIGHT
+ENDPOINT EXISTS FOR ESSENTIALLY ANY PRE-1990 GROWTH AGENT.** `thorner1996` (PMID 8772599): once-daily
+subcutaneous **GHRH** in GH-deficient children roughly **DOUBLED height velocity — 4.1 → 8.0 cm/yr at six
+months, 7.2 at twelve — in 86 of 110 children, with a bone-age ratio of 1.04 ± 0.58.** Velocity doubled with
+the skeletal clock **unmoved**, which is the profile this file says it wants, and **the entire GHRH programme
+ended without collecting a single adult height.** The same holds for every other GHRH arm and for the
+cadaveric-hGH era as a body of work.
+→ ⭐ **THEREFORE "ABANDONED FOR LACK OF EFFICACY", APPLIED TO ANY PRE-rhGH AGENT, IS A CLAIM ABOUT A 6–12
+MONTH VELOCITY DATASET AND NOT ABOUT ATTAINED HEIGHT.** That is a structural fact about the historical
+literature and it is worth more than any individual agent in it. ⛔ **It does not rescue GHRH here: a
+secretagogue acts on the somatotroph and exogenous GH bypasses it — R284's LUM-201 argument verbatim.**
+
+⛔ **AND THE COMMERCIAL GRAVEYARD IS REAL, IS DOCUMENTED, AND IS EMPTY FOR US.** Three clean cases of an
+agent removed with its efficacy file intact: **GEREF (sermorelin) — the FDA formally determined it was NOT
+withdrawn for reasons of safety or effectiveness** (commercially discontinued only); **iPlex (mecasermin
+rinfabate), the only IGF-1/IGFBP-3 BINARY complex ever approved, removed by a PATENT SETTLEMENT**; and
+**NCT00572156, a 106-patient rhGH + rhIGF-1 combination trial terminated for "strategic reasons"** — the one
+registered test of whether the two arms are additive. ⭐ **ALL THREE SIT ON THE SOMATOTROPIC AXIS, SO ALL
+THREE FAIL STEP 0.** The generalisation is R298's base rate in the regulatory record: **the commercial
+graveyard and the biological frontier do not overlap, because the only growth agents anyone ever
+commercialised were GH-axis agents.**
+
+⚠ **THE ANDROGEN SIGN-INVERSION — IT REFRAMES R419/R420 AND DOES NOT REOPEN THEM.** `tanaka2020`
+(PMID 32694884, verified verbatim): anabolic steroid hormone **IMPROVED adult height in Turner patients
+WITHOUT spontaneous puberty and DECREASED adult height in those WITH spontaneous puberty.** One drug class,
+one disease, one endpoint, opposite signs — and the discriminating variable is **endogenous oestrogen
+exposure**.
+⭐ **CONSEQUENCE FOR THIS FILE: THE CDGP NULLS ARE FROM THE OESTROGEN-*REPLETE* CONFIGURATION.** R419
+declined oxandrolone partly because `wang2026` has testosterone beating it by 2.64 cm on attained adult
+height — but constitutional-delay boys have intact aromatase, so that comparison tests the replete case,
+while a subject on anastrozole is the **deplete** case, which is the arm where Tanaka's sign is positive.
+⛔ **IT STILL DOES NOT REOPEN, ON TWO GROUNDS THAT DO NOT DEPEND ON OESTROGEN STATUS.** ① R420's
+`vanderwerff2011`: the graded human AR CAG-repeat association with height **"completely disappears after the
+age of 16"** — the one dose-response instrument on AR function, extinguished at his age. ② **Step 0, and it
+is the sharper one: `ferris2017` measured peak testosterone at 1156 ± 302 ng/dL in Tanner IV–V boys ON AN
+AROMATASE INHIBITOR.** An AI raises testosterone and simultaneously blocks its only route out — **so the
+non-aromatisable androgen channel is already being driven hard by a drug in the stack.**
+✗ And `tanaka2020` is a **perspective article** — an index. The primary Japanese series is what would have
+to be retrieved.
+
+🧭 **WHAT R441 CHANGES.** One candidate killed by a paper older than it, one live configuration recovered
+from the same pilot's other arm, one arm of a human phenomenon shown to be two arms with only one of them
+covered here, and a structural correction to how every "abandoned" agent in the historical record should be
+read. ⭐ **AND THE ONE DOCUMENT WORTH OBTAINING BY HAND: the Acta Orthopaedica supplement cataloguing the
+abandoned growth-stimulation methods — venous stasis, sympathectomy, arteriovenous fistula, diathermy,
+irradiation, nerve section — which is 502/403 to automated fetch and is the only reason rows on those
+methods are secondhand.**
