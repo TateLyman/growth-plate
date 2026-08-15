@@ -93,3 +93,37 @@ greped, and the atlas already holds both halves:
   `adenotonsill` 0 files, `sleep apnea` 0 files. `PMID 40909198` (verified, Laryngoscope
   Investigative Otolaryngology 2025, UK Biobank) reports an ADULT HEIGHT endpoint for childhood
   tonsillectomy. An entire airway-obstruction axis with an adult-height number and no coverage.
+
+## 9. CORR-296 UPGRADED — the chu2026 GP1/GP2 contrast is probably COMPOSITIONAL, not a maturity axis
+CORR-296 has said since R296 that the GP1/GP2 direction "cannot currently be resolved" and that four
+rounds (R241, R244, R245, R246) are built on it. R436 tried to resolve it and FAILED IN A SPECIFIC
+AND INFORMATIVE WAY, which is more useful than the standing caution.
+Method: the file is `atlas/data/round243_supplied/chu2026_supp/adw3590_data_file_s1.csv`, header
+"differentially regulated genes (DEGs) between mouse GP1 and GP2 clusters", 15,983 genes.
+⚠ It is semicolon-delimited with COMMA DECIMAL SEPARATORS - a naive csv read returns zero parsed
+rows silently, which is how it can look empty. 1,480 rows reach padj<0.05, 1,039 positive : 441
+negative (the skew CORR-296 already recorded).
+Instead of arguing from single stem markers, orient it with whole PANELS:
+· MATURE/HYPERTROPHIC panel: **5 of 6 significant rows positive** - COL10A1 +3.24 (1e-07),
+  MEF2C +3.48 (7e-38), IBSP +8.34 (4e-51), ALPL +1.77 (9e-10), SPARC +0.95 (6e-38); against
+  RUNX2 -0.95 (1e-05).
+· EARLY/RESTING panel: **only 3 of 6 in the predicted direction** - SFRP5 -2.36 (1e-16),
+  UCMA -1.79 (1e-24), COL9A1 -0.51 (8e-08) go the right way, but CYTL1 **+5.28** (4e-16),
+  PTH1R +1.13 (2e-06) and COL2A1 +0.38 (4e-04) go the wrong way.
+· And the stem panel is openly contradictory: SFRP5 -2.36 and NOTUM -1.57 say one cluster,
+  while **PRRX1 +1.78 (1e-14)** says the other - and PRRX1 is the marker the paper's own HUMAN
+  result uses to name the root population.
+⭐ **THE TELL IS THE TOP OF THE FILE: the two largest positive effects are PRG4 +8.46 and IBSP +8.34.**
+PRG4 is superficial/ARTICULAR and IBSP is BONE. Two different tissues, moving together, at the top
+of a contrast that is supposed to lie along one cartilage differentiation trajectory.
+→ **A contrast whose largest movers are markers of two ADJACENT TISSUES, and which no maturity or
+stem panel can orient, behaves like a difference in TISSUE COMPOSITION rather than in chondrocyte
+regulation. That is CORR-339's shape** - the lesson learned on the LUMBAR/THORACIC ATAC sheets,
+appearing again on the dataset four rounds are built on.
+⛔ HONEST LIMIT: I have the DE table, not the cluster definitions or per-cluster cell counts, so
+this is a strong inference and not a demonstration. What it licenses is NOT a new direction call -
+it is a REASON for CORR-296's caution and an instruction for whoever settles it: get the cluster
+composition, and put a marker of the suspected contaminant (PRG4 for articular, IBSP for bone) in
+the control panel before reading any compartment from this dataset.
+✓ Unaffected: every ABUNDANCE claim made from this table (HHIP baseMean 3.73 above FGFR3 2.30 and
+NT5E 3.21; NRK 6.10) is a baseMean, not a direction, and does not depend on the sign convention.
