@@ -10608,3 +10608,96 @@ not a failure.** What the criticism correctly identifies is the SEARCH, and R437
 the constructive response to it. **The first process off that list was checked properly and immediately
 produced a 42-year-old measurement nobody has followed — which is what "a process that could touch height and
 has never been connected to it" actually looks like in practice.**
+
+## ⏳⏳⏳⏳⏳ R439 — **THE MECHANISM OF THE CEILING ITSELF IS WORKED IN A GRADE-B NODE AND HAS *ZERO*
+## LEDGER PRESENCE. The counter is a MULTI-ORGAN GENETIC PROGRAM, its execution mark is H3K4me3 — the
+## SAME MARK R333 REACHED FROM 1.45M HUMAN EXOMES — its driver is miR-29, and its PACE IS WHAT MAKES
+## LARGE MAMMALS LARGE.**
+
+⛔ **ZERO — THE LARGEST CORR-352 INSTANCE IN THE FILE'S HISTORY, AND IT IS BIGGER THAN R423's.** R423 found
+the file's declared primary target (amplification) invisible to the ledger. This is the **CEILING** — the
+thing every round since R355 has been trying to move. Grep, 2026-08-15: **`miR-29` 2 node files / 0 ledger ·
+`delaney2014` 2 / 0 · `lui2010` 2 / 0 · `finkielstain` 1 / 0 · `growth-limiting program` 3 / 0 ·
+`tryptophan` 4 / 0 · `arm 3` 7 / 0 · `sizostat` 2 / 0 · `canalization` 1 / 0 · `juvenile organs` 1 / 0.**
+**EVERY MECHANISTIC COMPONENT OF THE GROWTH CEILING IS AT ZERO.** And `arm3_pool_ceiling_is_imposed_not_intrinsic`
+is **grade B**, states its own target, and ends with the instruction **"THIS ARM IS NOT CLOSED AND MUST NOT BE
+WRITTEN UP AS THOUGH IT WERE."** It has been written up as though it were, for ~80 rounds.
+
+⭐⭐⭐ **ONE — WHAT THE PROGRAM IS.** `lui2010` (juvenile RAT lung, kidney and liver, microarray + qPCR +
+siRNA validation): a **COMMON MULTI-ORGAN PROGRAM** coordinately down-regulates a large set of
+growth-promoting genes, and **that is why children grow and adults do not.** It is not a growth-plate
+phenomenon — it runs simultaneously in organs that have no growth plate.
+· **THE DRIVER IS GROWTH, NOT TIME.** A **tryptophan-deficient diet** that stalled growth for 4 weeks
+  **DELAYED the program**, compared **AT MATCHED BODY SIZE** precisely to separate growth history from
+  concurrent malnutrition — **159 of 235 uniformly age-downregulated genes significantly delayed.**
+  Hypothyroidism delays it (`finkielstain2009`); dexamethasone delays senescence and fusion (`gafni2001`).
+· ⛔ **AND THAT IS EXACTLY WHY SUPPRESS-AND-RELEASE IS A LOAN.** Every known way to slow the counter slows
+  it **BY SLOWING GROWTH** — R366/R431/R433 reached this from `oichi2023` and `gafni2001` without the
+  mechanism. **Here is the mechanism, and it makes the loan structural rather than incidental.**
+
+⭐⭐⭐⭐ **TWO — THE JOIN NOBODY HAS MADE, AND IT IS THE ROUND. THE PROGRAM'S EXECUTION MARK IS H3K4me3.**
+`lui2010`: the down-regulated genes show **DECLINING HISTONE H3K4 TRIMETHYLATION WITH AGE AT THEIR
+PROMOTERS.** And **R333 reached the same mark from a completely independent instrument** — `kosmicki2026`,
+1.45M human exomes: the H3K4me3 **ERASER LOXL2 is +0.68 cm on loss** (P=1.4e-16, 7,404 carriers) while the
+**WRITERS KMT2B −0.35 and ASH1L −0.41**. **MORE H3K4me3 IS TALLER.**
+⭐ **A RAT MICROARRAY TIME COURSE AND A MILLION-EXOME BURDEN TEST, POINTING AT ONE HISTONE MARK IN ONE
+DIRECTION. THIS FILE HAS HELD BOTH FOR ROUNDS AND NEVER PUT THEM IN THE SAME SENTENCE.** It also upgrades
+the H3K4 arm from "the live half of the epigenetic ceiling" to **the execution mechanism of the ceiling
+itself** — and it retro-explains R337's AKG/megadose-vitamin-C contraindication, since KDM5 erasers are
+2-OG dioxygenases feeding on the same cofactor.
+
+⭐⭐⭐ **THREE — THE PACE IS THE SPECIES BODY-SIZE VARIABLE. `delaney2014` IS THE STRONGEST EVIDENCE IN THE
+ATLAS THAT THE CEILING IS A DIAL AND NOT A WALL.** The same program is **CONSERVED IN SHEEP across ~80
+MILLION YEARS** of divergence — overlapping age-down-regulated gene sets in juvenile sheep kidney and lung,
+matching mouse and rat. **And its PACE is MOST RAPID IN MICE, MORE GRADUAL IN RATS, MOST GRADUAL IN SHEEP.**
+The authors' conclusion is that the program is conserved but **evolutionarily MODULATED IN TIME COURSE,
+allowing more prolonged growth and therefore greater adult size in larger mammals.**
+→ ⭐ **THE SAME GENES, THE SAME PROGRAM, RUNNING AT RATES THAT DIFFER BY ORDERS OF MAGNITUDE BETWEEN
+SPECIES. A RATE THAT VARIES THAT MUCH IS A RATE SOMETHING SETS — AND NOBODY HAS IDENTIFIED WHAT SETS IT.**
+That is the single largest unclaimed question in this file, and it is upstream of every compound in it.
+
+⭐⭐⭐ **FOUR — THE PROGRAM HAS A NAMED microRNA DRIVER, CAUSALLY TESTED, AND IT HAS NEVER BEEN LOOKED AT IN
+A GROWTH PLATE.** `kamran2015`: miR-29 target sites are **over-represented** in the age-down-regulated genes;
+**miR-29a, -29b AND -29c are all strongly UP-REGULATED from 1 to 6 weeks** in kidney, lung, liver and heart;
+and luciferase 3'UTR assays confirm suppression of **IGF1, IMP1/IGF2BP1 and MEST**, abolished by mutating the
+sites. **Rising miR-29 drives the shutdown.**
+⭐ **AND THE QUERY IS EARNED, NOT ASSERTED: `miR-29 AND growth plate` RETURNS ZERO PUBMED RECORDS**, and
+`miR-29 AND chondrocyte` returns **two**. **The microRNA that drives body-growth deceleration has never been
+studied in the tissue that makes height.**
+⭐ **It also joins R434's layer from the other side: let-7 rises with age and targets IGF2BP1/HMGA2; miR-29
+rises with age and targets IGF1/IGF2BP1/MEST. TWO HETEROCHRONIC microRNA FAMILIES, BOTH RISING, CONVERGING
+ON THE SAME IGF/IGF2BP AXIS** — and **IGF2BP2 is −8.68 cm in the 207.**
+
+⛔⛔ **FIVE — AND THE ANTI-miR-29 PROPOSAL IS *NOT* CLEAN. THREE ARMS, THREE SIGNS, STATED BEFORE ANYONE
+PROMOTES IT.**
+| arm | what miR-29 does | blocking it |
+|---|---|---|
+| **growth-limiting program** (`kamran2015`) | rises with age, shuts off growth genes | ⭐ **FAVOURABLE** |
+| **osteoblast** (`hrdlicka2021`) | positive regulator of osteoblast differentiation | ⛔ **COSTLY — decreased bone formation in GROWING mice** |
+| **cartilage Wnt** (`le2016mir29`) | **suppresses canonical WNT** (FZD3, FZD5, DVL3, FRAT2, CK2A2 validated) | ⛔ **blocking RAISES Wnt, and R281 says the optimum is BELOW wild type** |
+⭐⭐ **AND THE COST ARM IS CORR-340 IN ITS PUREST FORM: `hrdlicka2021`'s GLOBAL miR-29-3p TOUGH DECOY MOUSE
+EXISTS, GIVES A 30–60% KNOCKDOWN, WAS BUILT EXPLICITLY AS A PROXY FOR A SYSTEMIC INHIBITOR, WAS PHENOTYPED IN
+GROWING ANIMALS BY MICRO-CT AND HISTOMORPHOMETRY — AND REPORTS BONE FORMATION AND TRABECULAR VOLUME, NEVER
+FEMUR OR TIBIA LENGTH.** Same laboratory and same technique as `thakore2026`, whose **miR-433** decoy **did**
+report **shortened femurs** (R434) — so the group measures length when it chooses to. **The experiment is a
+data request, not a programme.**
+⭐ Mechanistic bonus from the same paper: **SOX9 REPRESSES miR-29** in chondrocytes, and TGF-β1 lowers it
+while IL-1β raises it. **The master chondrocyte TF holds the brake down, so the brake lifts as SOX9 output
+falls** — a candidate for why the program runs at all in cartilage.
+
+⛔ **SIX — WHAT IS STILL NOT TRUE, SO NOBODY OVERREADS THIS.** ✗ **No intervention exists that slows the
+counter WITHOUT slowing growth** — the node's own stated target, unmet. ✗ The program is measured in **lung,
+kidney, liver, heart** and NOT in a growth plate; its plate version is inferred. ✗ **No anti-miR-29 agent has
+a bone-LENGTH endpoint in any species**, and the clinical miR-29 shelf runs the **wrong way** (miR-29
+**MIMICS** for fibrosis — R342's inhibitor-shelf problem inverted). ✗ `delaney2014`'s species comparison is
+kidney and lung, **not bone**, and is expression rather than a length endpoint. ✗ And the honest ceiling from
+the node itself: three independent routes put the residual cost of suppress-then-release at **1.2–1.9 mm,
+2–4% of final bone length** — real, but a *loss*, and **no route to more length than the animal would have
+reached anyway has ever been demonstrated.**
+
+🧭 **WHAT R439 CHANGES.** The file has spent ~80 rounds treating the ceiling as a wall made of spent
+divisions. **It is a growth-driven, multi-organ, epigenetically-executed genetic program whose pace differs
+by orders of magnitude between species, whose execution mark is independently validated by human genetics,
+and whose microRNA driver has never been examined in cartilage.** That is not a wall. The named target is
+unchanged and now has two candidate handles instead of none: **RAISE H3K4me3 at the program's promoters, or
+BLOCK miR-29 — without slowing growth.** Gaps `g_l2_439a`, `g_l2_439b`, `g_l7_439c`.
