@@ -91,7 +91,7 @@ Where I could not verify, the cell says `UNVERIFIED` — see the final section.
 | 70 | **NR3C1 (glucocorticoid receptor)** | Nuclear receptor; the strongest pharmacological suppressor of longitudinal growth in clinical use | NEGATIVE — glucocorticoid excess is grade-A growth suppression, and glucocorticoid **deficiency (familial glucocorticoid deficiency) gives tall stature in childhood** | Cushing (short), FGD (tall as a child) | ⭐ Fully drugged: mifepristone, relacorilant; and the cortisol-lowering enzymes (metyrapone, osilodrostat). ⚠ Every cortisol-lowering agent raises ACTH by feedback | 30321335 (index) | no |
 | 71 | **VDR** | Nuclear receptor | Required for normal growth-plate resorption; VDR in chondrocytes drives osteoclastogenesis and regulates FGF23 | Hereditary vitamin-D-resistant rickets (VDR LoF) — rickets with short stature | ⭐ Fully drugged (calcitriol, paricalcitol, and non-calcaemic VDR agonists) | 17099775 (mouse); 18694980 (index) | no |
 | 72 | **THRA / THRB** | Nuclear receptors for T3; T3 is the classical INDUCER of chondrocyte hypertrophy | POSITIVE for hypertrophy = h_term; but T3 also **advances bone age**, so it is a period/rate trade | **THRA resistance = short stature, skeletal dysplasia, delayed bone age**; THRB resistance = advanced bone maturation in mouse models | ⭐ Fully drugged: levothyroxine, liothyronine, and **THRB-selective agonists (resmetirom, approved 2024)** — the first tissue-selective nuclear-receptor agonist relevant here | 24914936 (Thra mouse); 22442145 (Thrb mouse); 34069457 (human THRA2); 26862888, 29407442 (index) | no |
-| 73 | **RARA / RARB / RARG + RXR** | Retinoid nuclear receptors; RARG is the cartilage-dominant subtype; unliganded RAR is a co-repressor-bound REPRESSOR | BAND with a grade-A human harm on one side: **retinoid excess (isotretinoin, palovarotene) causes PREMATURE EPIPHYSEAL CLOSURE**. Unliganded RARγ appears permissive | Retinoid embryopathy; palovarotene physeal closure in children | ⭐ Fully drugged in both directions — agonists (palovarotene, tretinoin), antagonists (CD2665, the RARγ-selective 7C class), and the RA-degrading enzyme CYP26 has inhibitors (talarozole) | 32151018 (CYP26 index); 25939055 (index). Direction-specific chondrocyte data: UNVERIFIED here | no |
+| 73 | **RARA / RARB / RARG + RXR** | Retinoid nuclear receptors; RARG is the cartilage-dominant subtype; unliganded RAR is a co-repressor-bound REPRESSOR | BAND with a grade-A human harm on one side: **retinoid excess (isotretinoin, palovarotene) causes PREMATURE EPIPHYSEAL CLOSURE**. Unliganded RARγ appears permissive | Retinoid embryopathy; palovarotene physeal closure in children | ⭐⭐ **Fully drugged in both directions AND already delivered LOCALLY to a growth plate: RARγ-agonist-loaded nanoparticles implanted beside the mouse proximal tibial growth plate caused involution and closure of THAT plate and shortened THAT tibia versus the contralateral control, while RARα and RARβ agonists did nothing.** Systemic dosing closed plates everywhere. Agonists (palovarotene/Sohonos, tretinoin), antagonists (CD2665, RARγ-selective 7C class), and CYP26 inhibitors (talarozole) all exist | **39883086** (mouse, local NP, J Bone Miner Res 2025); 39677926 (palovarotene index); 32151018 (CYP26 index) | no |
 | 74 | **PPARG** | Adipogenic nuclear receptor; competes with the chondro/osteogenic program in mesenchymal progenitors | Fate-competition rather than a direct length term | PPARG LoF = familial partial lipodystrophy | ⭐ Fully drugged (TZDs, approved). ⚠ TZDs shift MSC fate to adipose — likely a cost | 23589826 (index) | no |
 | 75 | **NR1D1/2 (REV-ERB), RORA/B/C, BMAL1/CLOCK** | The circadian transcriptional loop; BMAL1 controls the **secretory pathway timing for collagen** | Circadian control of collagen homeostasis is real; a length term is UNVERIFIED | None for stature | ⭐ Fully drugged: REV-ERB ligands (SR9009 class, tool-grade), RORγt inverse agonists (clinical-stage) | 31907414 (collagen circadian, mouse); 27253997 (human cartilage BMAL1) | **yes** |
 | 76 | **NR4A1/2/3 (NUR77/NURR1/NOR1)** | Immediate-early orphan nuclear receptors, mechanically and cAMP-inducible | Direction in growth plate UNVERIFIED | None | ⭐ Ligandable orphan receptors with published agonists/antagonists | 23589826, 35935773, 36110555 (index) | **yes** |
@@ -131,6 +131,7 @@ Where I could not verify, the cell says `UNVERIFIED` — see the final section.
 | 109 | **Chondrocyte super-enhancers** | SOX9 with SOX5/SOX6 act genome-wide **through super-enhancers**, and the trio's targets are enriched at these clusters | The super-enhancer is the functional unit for the SOX trio, not the individual site | n/a | ⭐ Super-enhancers are the class most sensitive to BET and CDK7/12 inhibition — a real (if blunt and antiproliferative) chemical handle on a TF program | 26150426 (mouse/human) | no |
 | 110 | **Knee-chondrocyte regulatory landscape under selection** | Human knee chondrocyte cis-regulatory map showing evolutionary selection and constraint, tied to osteoarthritis risk | Establishes that human knee chondrocyte regulation is under recent selection — the same elements that set joint shape set height risk | Human | Resource | 32220312 (human) | **yes** |
 | 111 | **Pediatric bone-accrual and bone-size GWAS loci** | Longitudinal paediatric bone accrual GWAS; bone-size GWAS with 12 loci overlapping height/BMD/OA | Provides growth-trajectory (not just endpoint) genetic anchors | Human | Resource | 33397451, 31053729 (human) | **yes** |
+| 123 | **RARγ-agonist nanoparticle depot (a TF drug delivered to ONE growth plate)** | Not a factor — a demonstration that a nuclear-receptor ligand can be aimed at a single physis | Direction demonstrated is SHORTENING and DIRECTIONAL: one-sided implantation tilted the epiphysis and angulated the tibia. **The mirror experiment — a local RARγ ANTAGONIST depot to lengthen — is stated by that group as an unrealised possibility and has never been done** | n/a (mouse) | ⭐⭐ The route problem and the TF-selectivity problem are solved simultaneously: a local depot gives compartment selectivity that no systemic TF drug can, and RARγ is one of the few growth-plate TFs with a real ligand pocket | **39883086** (mouse) | **yes** |
 | — | **MODALITIES — the "can a TF be modulated at all" row set** | | | | | | |
 | 112 | **PROTAC / heterobifunctional degrader** | Recruits an E3 (CRBN or VHL) to any protein with a ligandable surface — the TF does not need a *functional* pocket, only a *bindable* one | n/a | n/a | ⭐⭐ **VEPDEGESTRANT (Veppanu) was FDA-approved 1 May 2026 — the first approved PROTAC, and its target is a TRANSCRIPTION FACTOR (ERα).** Also: SD-36 (STAT3 degrader, complete tumour regression in mice); published TEAD PROTACs | 39072356 (VERITAC-2 phase 3); 40702893 (NDA); 38819400 (preclinical); 31715132 (STAT3 SD-36); 38746898 (TEAD) | no |
 | 113 | **Molecular glue / cereblon neosubstrate** | Reshapes the CRBN surface so a zinc finger becomes a substrate; needs NO pre-existing ligandable pocket | n/a | n/a | ⭐⭐ **The two skeletal-relevant human examples are both teratology: thalidomide degrades SALL4 (limb reduction) and 5-hydroxythalidomide degrades PLZF/ZBTB16.** These are proofs that marketed drugs already degrade skeletal TFs in humans — in the harmful direction | 30067223 (SALL4); 33470442 (PLZF); 35856839 (index) | no |
@@ -143,3 +144,254 @@ Where I could not verify, the cell says `UNVERIFIED` — see the final section.
 | 120 | **Dominant-negative mini-protein (the Omomyc precedent)** | An engineered bHLH-LZ that dimerises with the target and poisons its DNA binding | n/a | n/a | ⭐ **OMO-103 (Omomyc) completed a phase 1 trial in solid tumours** — a *protein* drug against a TF everyone called undruggable. The route generalises to any obligate-dimer TF: MYC/MAX, TWIST, ID, bZIP AP-1, HIF/ARNT | 38321218 (human phase 1); 34942444 (index) | no |
 | 121 | **Nuclear-receptor ligand pocket** | The one TF superfamily built to be drugged | n/a | n/a | ⭐⭐ ER, AR, GR, VDR, THR, RAR/RXR, PPAR, REV-ERB, ROR, ERR are all ligandable, and **four of them (ER, AR, GR, THR) are the levers already used clinically against growth or stature** | 23589826 (index) | no |
 | 122 | **PAS-domain internal cavity (the HIF-2α precedent)** | An "undruggable" bHLH-PAS TF turned out to have a buried cavity that a small molecule fills, breaking dimerisation with ARNT | n/a | n/a | ⭐⭐ **BELZUTIFAN is an APPROVED HIF-2α inhibitor.** It is the proof that non-nuclear-receptor TFs can have real orthosteric pockets — and it is the closest structural analogue in medicine to what an anti-SOX9 or anti-RUNX2 agent would have to be | 33945366 (MK-6482/belzutifan in VHL) | no |
+
+**Row count: 123. Marked OBSCURE = 64. Not obscure = 59.**
+
+---
+
+## TRANSCRIPTION FACTORS WHOSE LOSS LENGTHENS
+
+This is the shortest and most important section, and the honest headline is that the list is **thin, and
+almost every member is a band rather than an arrow.** Endochondral growth is built out of factors that are
+*required*, and the base rate for "knock this TF out and the animal is longer" is very low. What follows is
+everything I could find with real evidence, ranked by how directly the human data support the direction.
+
+**Tier 1 — human loss-of-function gives documented TALL stature or overgrowth**
+
+1. **NFIX** *(row 38)* — the best row in the domain and probably the most under-used TF in the whole height
+   literature. **Haploinsufficiency causes Malan syndrome: Sotos-like overgrowth with tall stature and
+   macrocephaly.** The opposite dosage change is also human: **19p13 microduplications encompassing NFIX
+   cause SHORT stature.** So the dose–height curve is documented in humans in *both* directions on one gene,
+   which is true of essentially nothing else here. A third allelic class (variants escaping nonsense-mediated
+   decay, i.e. dominant-negative) gives Marshall–Smith syndrome with accelerated bone maturation — so NFIX
+   also separates *height* from *bone age*, which is the exact separation this project needs.
+   PMIDs 20673863, 25118028, 29897170, 29184170.
+2. **CHD8** *(row 40)* — truncating variants give macrocephaly and increased height/overgrowth in large
+   clinical series. Chromatin-adjacent rather than a classical TF; carries severe neurodevelopmental
+   baggage, so it is a target-validation datum, not a proposal. PMIDs 31001818, 36182950.
+3. **ESR1 / the oestrogen receptor** *(row 68)* — the largest and best-documented "loss lengthens" effect in
+   human skeletal biology: an ERα-null man, and men with aromatase deficiency, keep growing with unfused
+   epiphyses into their twenties and thirties. This one is already exploited pharmacologically, and it is
+   the proof of principle that removing a transcription factor's function adds adult height in humans.
+4. **NR3C1 / the glucocorticoid axis** *(row 70)* — familial glucocorticoid deficiency presents with tall
+   stature in childhood. ⛔ But the honest counterweight is that reported adult heights in MC2R-deficient
+   cohorts end **below** target because of early puberty, so this is a childhood-height effect that does not
+   bank. A cautionary member, not a candidate.
+
+**Tier 2 — mechanistically a brake in cartilage, direction supported in animals, human height data absent**
+
+5. **GLI3** *(row 14)* — the hedgehog repressor. Uniquely attractive because the brake is created by a
+   *proteolytic processing step* (PKA→GSK3→CK1→βTrCP), not by DNA binding, so it is the one TF in this table
+   whose activity could in principle be lowered by an enzyme inhibitor. Nobody has tried.
+6. **NKX3-2/BAPX1** *(row 35)* — represses RUNX2 and delays hypertrophy, i.e. prolongs the proliferative
+   phase. ⛔ Biallelic human loss is a dysplasia, so it is a band.
+7. **ELF3/ESE-1** *(row 84)* — a direct ETS repressor of COL2A1 in human chondrocytes. Obscure, clean
+   direction, no length endpoint anywhere.
+8. **NFATC2** *(row 21)* — a genuine repressor of chondrogenesis; its null develops ectopic cartilage.
+   Whether it restrains *length* has never been asked.
+9. **SMAD6 / SMAD7** *(row 19)* — the inhibitory Smads; removing them raises BMP/TGF-β output.
+10. **TWIST1** *(row 47)* — antagonises RUNX2 by occupying its DNA-binding domain. ⛔ But human
+    haploinsufficiency (Saethre–Chotzen) is craniosynostosis, not tall stature.
+11. **HDAC4** *(row 11)* — the MEF2 co-repressor; Hdac4-null mice ossify prematurely (so it is a brake on
+    hypertrophy), yet limb-restricted deletion **shortens** limbs and closes the plate early. A band with
+    both ends bad.
+
+**Tier 3 — height-GWAS/exome burden signals in the "loss is taller" direction, mechanism unknown**
+
+12. **LCORL/NCAPG** *(row 41)*, **ZFAT** *(42)*, **ZNF518A** *(43)*, **SCMH1** *(44)*, **HMG20B** *(45)*.
+    These are the statistically strongest members and the biologically emptiest. ⛔ I could verify the
+    general result that rare coding variants alter adult height with effects up to ~2 cm per allele
+    (PMID 28146470), but I could **not** externally verify per-gene effect sizes for ZNF518A, SCMH1 or
+    HMG20B, and they are marked UNVERIFIED. LCORL is additionally confounded: it sits in one linkage block
+    with NCAPG and the causal gene is contested in every species examined.
+
+**What is NOT on this list, and why that matters.** SOX9, SOX5/6, RUNX2, RUNX3, CBFB, MEF2C, SP7, GLI2,
+SMAD1/5, STAT5B, SHOX, TRPS1, ATF4, CREB3L2, FOXA1-3, HIF1A, DLX5, HOXA11/D11, ZFHX4 — all POSITIVE. The
+growth plate's transcriptional network is overwhelmingly built from required components, which is the
+network-level reason the "inhibit something" reflex keeps failing in this tissue. **The productive
+direction for most of this domain is RAISING a factor, and raising is what the pharmacopoeia does not do —
+which is precisely why the oligonucleotide and CRISPRa rows (116, 117) matter more here than any inhibitor.**
+
+---
+
+## ANY TF IN THIS LIST WITH A REAL CHEMICAL OR OLIGONUCLEOTIDE HANDLE
+
+**"Transcription factors are undruggable" is now false, and it stopped being true in a specific, datable
+way.** Five distinct routes have each produced an agent that reached humans. Ranked by how real they are:
+
+**A. Nuclear receptors — a ligand pocket by design (row 121).** Not news, but it is the reason four of the
+levers already used against or for stature are TFs: **ER** (aromatase inhibitors remove the ligand; SERMs
+and SERDs block or degrade the receptor), **AR**, **GR** (mifepristone, relacorilant), **VDR**, and **THR**
+— where **resmetirom** is a marketed *isoform-selective* nuclear-receptor agonist, i.e. proof that the
+selectivity problem is solvable within this family. RAR/RXR, PPAR, REV-ERB/ROR, ERR (GSK5182) and NR4A all
+carry pockets too. If a growth-plate TF has a ligand-binding domain, it is already drugged.
+
+**B. Targeted degradation — and this is the one that changed the field (rows 112–114).**
+- ⭐⭐ **VEPDEGESTRANT (Veppanu) was approved by the FDA on 1 May 2026 as the first PROTAC, and its target is
+  a transcription factor.** A TF is now removed as *protein*, orally, in routine human medicine.
+- **SD-36**, a selective STAT3 degrader, produced complete tumour regression in mice — a TF with no ligand
+  pocket, degraded because a bindable surface was enough (PMID 31715132).
+- **TEAD PROTAC degraders are published** (PMID 38746898), on top of clinical-stage TEAD pocket inhibitors.
+- ⭐⭐ And the two most skeletally relevant examples are *already human drugs doing this by accident*:
+  **thalidomide degrades SALL4** (PMID 30067223) and **5-hydroxythalidomide degrades PLZF/ZBTB16**
+  (PMID 33470442) via cereblon — the proposed mechanism of thalidomide limb teratogenicity. **A marketed
+  drug already degrades skeletal transcription factors in humans. The direction is harmful; the capability
+  is proven.**
+- ⭐⭐ **Most of the growth-plate TF network is Cys2His2 zinc-finger — SP7, TRPS1, GLI1-3, SNAI1/2, ZEB1/2,
+  KLF, EGR, ZFAT, ZNF518A** — and systematic work now maps which C2H2 fingers are degradable by
+  cereblon glues and what predicts degradability (PMIDs 40845806, 40835825, 39218923). **That is the
+  single most important generalisable fact in this domain.**
+
+**C. Real orthosteric pockets in non-nuclear-receptor TFs.**
+- ⭐⭐ **BELZUTIFAN**, an approved HIF-2α inhibitor, fills a buried cavity in a bHLH-PAS domain and breaks
+  the HIF-2α/ARNT dimer. This is the structural template for what an anti-SOX9 or anti-RUNX2 agent would
+  have to be, and it says such a thing is not impossible — it is a search problem.
+- ⭐ **TEAD** has a lipid (palmitate) pocket; **VT3989, IK-930, IAG933** are clinical-stage. TEAD is the
+  best-drugged node in the growth-plate network by a wide margin (row 63).
+- ⭐ **CBFB** — the obligate RUNX partner — is a protein–protein interface with real chemistry from the
+  inv(16) AML programme (AI-10-49 class). It is the only drugged node in the entire RUNX arm (row 7).
+- ⭐ **β-catenin/TCF** is attacked from three sides at once: tankyrase inhibitors (Axin stabilisers, human
+  phase 1), the CBP/β-catenin antagonist PRI-724, and PORCN inhibitors upstream (row 20).
+- ⭐ **AP-1** has genuine small-molecule inhibitors that reached clinical study (T-5224 class, PMID 24831826).
+- ⭐ **MRTF/SRF** has the CCG-1423/CCG-203971 series (row 80). **ID1/ID3** and **ETS** have tool compounds.
+
+**D. Protein-based dominant negatives (row 120).** ⭐ **OMO-103 (Omomyc) completed a phase 1 trial**
+(PMID 38321218) — an engineered mini-protein that poisons MYC dimerisation. The principle generalises to
+every obligate-dimer TF in this table: **MYC/MAX, TWIST1/E-protein, ID/bHLH, AP-1 bZIP, HIF/ARNT, RUNX/CBFB,
+SOX9/SOX5-6, YAP/TEAD.** Almost the entire growth-plate network is built from obligate heterodimers, which
+is a structural argument that this modality fits this tissue unusually well.
+
+**D2. Local delivery, which solves TF selectivity by geometry rather than by chemistry (row 123).**
+⭐⭐ `PMID 39883086` — **RARγ-agonist-loaded nanoparticles implanted beside the proximal tibial growth plate
+of juvenile mice closed THAT plate and shortened THAT tibia against the contralateral control**, and
+one-sided implantation angulated the bone; RARα and RARβ agonists did nothing, and systemic dosing closed
+plates everywhere. **This is the only experiment I found in which a transcription-factor drug was aimed at a
+single growth plate and produced a compartment-specific skeletal result.** The direction demonstrated is
+shortening (it was built as an alternative to epiphysiodesis for limb-length discrepancy), so **the mirror
+experiment — a local RARγ ANTAGONIST depot — is the obvious unrun one.** It also shows that the two problems
+this domain keeps hitting, "no selectivity" and "cannot reach avascular cartilage", can be attacked together
+by putting the depot in the bone rather than in the bloodstream.
+
+**E. Oligonucleotides — and this is the only class that goes UP (rows 115–117).**
+- ⭐ **Decoy ODN:** a **STAT3 decoy oligonucleotide has been dosed in a first-in-human trial**
+  (PMID 22719020). Sequence-programmable, so it works against factors with no pocket at all — but it only
+  goes DOWN, and delivery into avascular cartilage is unsolved.
+- ⭐⭐ **Upregulating ASOs (TANGO):** splice-switching oligos that block non-productive alternative splicing
+  and thereby **raise** protein output from the healthy allele (PMID 32647108; also RNA-based translation
+  activators, PMID 37884512). **This is the only pharmacological modality in the entire domain that points
+  in the direction most growth-plate TFs need.** Directly relevant to SHOX, SOX9, RUNX2 and ACAN
+  haploinsufficiency.
+- ⭐⭐ **CRISPRa:** **activation of a promoter or an enhancer rescued a haploinsufficiency phenotype in vivo
+  in mice** (PMID 30545847). That is the decisive precedent for treating a dosage disease by turning the
+  remaining allele up instead of replacing the gene.
+
+**The honest summary.** Of the TFs that actually set longitudinal growth, the ones with real chemical matter
+are mostly the ones we do not want to touch (ER, GR, TEAD, β-catenin, p53, RB/CDK4-6, BET), and the ones we
+would want to move (SOX9, SHOX, ACAN's transcription, RUNX2 dosage, CBFB, GLI3 processing) have none. **The
+gap is not modality — five modalities now work in humans. The gap is that no programme has ever been pointed
+at a growth-plate transcription factor.**
+
+---
+
+## REGULATORY ELEMENTS THAT COULD BE TARGETED INSTEAD OF THE GENE
+
+This is where the domain pays off, because **the regulatory-DNA layer solves the two problems the protein
+layer cannot: TISSUE SELECTIVITY and PARTIAL DOSAGE.** A systemic drug hits a TF in every cell that
+expresses it and at whatever occupancy the PK allows. An enhancer is, by construction, active in one tissue
+and often one compartment, and deleting or activating it produces a *graded* change.
+
+**1. The decisive experiment already exists, and it is the Fgfr3 −29E enhancer (row 95).**
+`PMID 39817451` — a cartilage-specific enhancer 29 kb upstream of mouse Fgfr3. CRISPR deletion **in
+otherwise wild-type mice halved Fgfr3 in that cartilage domain with no adverse phenotype**; in an
+achondroplasia model the same deletion largely normalised **long-bone and vertebral-body growth**, reduced
+spinal-canal and foramen-magnum stenosis, improved craniofacial defects, and removed lethality. The element
+is stated to be highly conserved in humans. **This is a clean, tissue-restricted, ~50% dosage change on a
+growth-plate gene achieved by deleting non-coding DNA — exactly the shape of intervention the protein layer
+has never delivered.** Note also that it reached the **vertebral bodies**, which most limb-directed agents do not.
+
+**2. Compartment selectivity is real at the element level (rows 96–98).**
+`PMID 38844479` maps **2,704 chondrocyte enhancers** and finds **74% pan-chondrogenic, 18% LIMB-restricted,
+8% TRUNK-restricted** — and shows that height-associated variants overlapping chondrocyte enhancers explain
+height better than variants over non-chondrogenic enhancers. It then deletes enhancers at **Fgfr3, Col2a1,
+Hhip and Nkx3-2** and confirms each regulates its gene. **The Hhip enhancer deletion lowered Hhip in limb and
+not trunk.** ⭐ **Nothing in pharmacology can do that. If a lever must reach the trunk and not the limb (or
+vice versa), the enhancer is the only object that carries the address.** `PMID 39549696` does the human
+version, separating skeletal-element-specific from global-acting height variants across growth plates
+sampled from different bones.
+
+**3. The single most common human enhancer lesion in short stature is already known: SHOX (row 107).** A
+large share of SHOX-related short stature — Léri–Weill dyschondrosteosis and a slice of "idiopathic" short
+stature — is caused by **deletion of PAR1 enhancers with an intact SHOX coding sequence**. The therapeutic
+object for those patients is unambiguously an element, and the matching modality (CRISPRa at a promoter or
+enhancer, PMID 30545847) has an in vivo haploinsufficiency rescue behind it.
+
+**4. Elements, not genes, are the causal unit across the whole limb-skeletal disease catalogue.** The
+pattern repeats so consistently that it should be treated as the default rather than the exception:
+- **SOX9 upstream regulatory domain** (row 100) — breakpoints up to >1 Mb away; *which* territory is hit
+  decides whether the patient has acampomelic campomelic dysplasia or isolated Pierre Robin sequence.
+- **ZRS** at SHH (row 103) — single-base changes give preaxial polydactyly; duplications give triphalangeal
+  thumb-polysyndactyly; and one specific variant gives **Werner mesomelic syndrome, a limb-shortening
+  phenotype**. A graded allelic series in one enhancer.
+- **CTCF sites at SHH** (row 104) — deleting the *insulator* rewires enhancer–promoter contacts and causes
+  **acheiropodia**. The boundary, not the enhancer, can be the causal element.
+- **IHH enhancer cluster** (row 102) — expression is set by the **composition and copy number** of a
+  multipartite cluster; human duplications cause syndactyly and craniosynostosis. This is morphogen dosage
+  titrated by DNA.
+- **PITX1** (row 105), **DLX5/6** (row 106), **BMP2 downstream element** (row 108) — enhancer deletion,
+  capture or duplication changes limb identity or digit length with the coding sequence untouched.
+
+**5. ACAN is the case where the element is the ONLY route (row 101).** Aggrecan carries one of the largest
+human height effects and **cannot be supplied as a protein**. Blocking its degradation is the
+denosumab/aggrecanase trap. That leaves transcription — SOX9 acting with SOX5/SOX6 at a far-upstream ACAN
+enhancer (PMID 18559420) and at the promoter (PMID 10753864). **CRISPRa at the ACAN enhancer is the only
+concrete proposal in this domain for raising the plate's dominant proteoglycan.**
+
+**6. The blunt version exists too, and it is a contraindication rather than a lever.** Chondrocyte
+super-enhancers (row 109, PMID 26150426) are the class most sensitive to BET and CDK7/12/13 inhibition —
+real, approved-or-clinical chemistry that would collapse the SOX-trio program non-selectively and is broadly
+antiproliferative. Near an open growth plate that is a hazard to avoid, not an approach.
+
+**What is missing, stated plainly.** No somatic enhancer editing of a growth plate has been reported in any
+species; the Fgfr3 −29E result is germline. Enhancer deletion is irreversible, which is a hard objection for
+a non-disease indication and for any axis with an interior optimum. And CRISPRa/ASO/decoy delivery into
+avascular cartilage is unsolved for every one of them.
+
+---
+
+## WHAT I COULD NOT VERIFY
+
+Listed so nothing here is mistaken for a checked fact.
+
+1. **Per-gene height effect sizes for ZNF518A, SCMH1 and HMG20B.** I could not retrieve a primary source
+   externally that states their height burden effects. Rows 43–45 are marked UNVERIFIED. What I *could*
+   verify is the general result that rare and low-frequency coding variants alter adult height with effects
+   up to about 2 cm per allele (PMID 28146470). The 1.45M-exome-scale burden analysis those genes are
+   usually quoted from did not surface in my searches and I have not read it.
+2. **ZFAT's height direction.** The gene appears in height-GWAS-adjacent literature (PMID 28146470 context),
+   but I did not find a primary stating the sign and magnitude of its effect. Treated as UNVERIFIED.
+3. **SOX6 human skeletal phenotype**, **SMAD7 stature phenotype**, **ZFHX4 stature**, **KLF15/EGR1 direction
+   in cartilage**, **FOXN3/FOXP1/FOXL2 growth-plate roles**, **NR4A direction in the growth plate**, and
+   **RARG-specific chondrocyte direction** — all searched, none returned a primary I would quote. Marked
+   UNVERIFIED in their rows.
+4. **A single-cell MULTIOME (paired RNA+ATAC) atlas of the human growth plate.** My targeted query returned
+   only conference abstracts. A multi-omic atlas of human early skeletal development appeared as a
+   no-PMID record in one result list. **I could not confirm that a published paired single-cell
+   multiome of the postnatal human growth plate exists**, and I have recorded it as a gap rather than
+   asserting either way. `PMID 39549696` (bulk-resolved human chondrocyte epigenomics across skeletal
+   elements) and `PMID 38844479` (mouse chondrocyte enhancer atlas) are the two real resources I verified.
+5. **Hi-C / TAD structure specifically in growth-plate chondrocytes.** I found TAD and CTCF work at
+   *skeletal loci* (SHH, SOX9, HoxD, Pitx1) and a review of the emerging skeletal regulatory landscape
+   (PMID 27814929), but no chondrocyte-specific Hi-C dataset. Recorded as a gap.
+6. **Whether the Hhip elements deleted in PMID 38844479 are the same elements as the "CE2/CE3" naming used
+   in the brief.** The paper deletes enhancers at the Hhip locus and reports a limb-selective reduction; I
+   have described that result and have NOT asserted the CE2/CE3 label maps onto it.
+7. **Exact regulatory-element nomenclature and coordinates** for the SHOX PAR1 enhancers and the SOX9
+   upstream territories. The existence and disease relevance of both is well sourced; the specific element
+   names and distances are not quoted.
+8. **Belzutifan's precise binding-site description.** The approval and target are verified (PMID 33945366 and
+   FDA/regulatory sources); my structural description ("buried PAS-B cavity disrupting the HIF-2α/ARNT
+   dimer") is the standard account but I did not read the structural primary.
+9. **Class IIa HDAC / Hdac4 limb-conditional length numbers.** I have stated the direction qualitatively; I
+   did not retrieve a primary with the length measurements, so no numbers are given.
+10. **Paywalled full texts.** Everything above is from abstracts and open-access records via Europe PMC and
+    NCBI efetch. Where a claim needed a figure or a supplementary table, I did not make the claim.

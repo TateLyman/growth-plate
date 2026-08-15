@@ -32,7 +32,7 @@ than the RATE. Rows are tagged accordingly. Where a mechanism moves both, both a
 | A13 | **All-trans retinoic acid drives premature growth-plate closure / senescence** — multiomics in rat + ATDC5 | **PERIOD** | Accelerates (harm) | rat + cell line, PMID 41239925 | avoid ATRA / isotretinoin | no |
 | A14 | **Raloxifene acts as an estrogen AGONIST at the rabbit plate** — a SERM that hastens fusion rather than sparing it | **PERIOD** | Accelerates | rabbit, PMID 12639932 | avoid raloxifene | **yes** |
 | A15 | **SOCS2 loss accelerates growth-plate fusion** (and *Socs2*−/− mice are gigantic) — coupling of GH signalling gain to earlier plate closure | **PERIOD** + rate | More GH signalling → earlier fusion | mouse, PMID 35272487; gigantism PMID 10890450 | — | **yes** |
-| A16 | **Resveratrol delays growth-plate fusion and improves bone growth** — the only small molecule I found with an explicit *delayed fusion* endpoint in a fusing species | **PERIOD** | **Delays fusion** | female rabbit, PMID 23840780 | resveratrol (oral) | **yes** |
+| A16 | ⭐ **Resveratrol (oral, 200 mg/kg/day) DELAYS FUSION AT THREE PHYSES AND INCREASES FINAL LENGTH** — in ovary-intact rabbits treated 16 wk it increased tibial and vertebral growth and final length; in OVX rabbits it delayed fusion of distal tibia, distal femur and proximal tibia, widened the plate, **enlarged the resting zone**, raised hypertrophic cell number/size and HZ height, and **suppressed chondrocyte VEGF and laminin** (proposed mechanism: impaired growth-plate vascularisation). Biphasic in vitro (stimulates at 0.3 µM, inhibits at 10–50 µM) | **PERIOD** | **Delays fusion, raises final length** | female rabbit (a species that fuses), PMID 23840780 | resveratrol (oral) | **yes** |
 | A17 | **Rodents (mouse, rat) never fuse their growth plates** — the species barrier that makes most of the mechanistic literature unable to test the period question | **PERIOD** | Species-level absence of fusion | mouse/rat vs rabbit/human, review PMID 21540578 | — | no |
 | A18 | **Hox11 paralogues regulate postnatal longitudinal growth and plate proliferation** — dose-dependent; loss abolishes plate establishment in the zeugopod | rate (period at the extreme) | Positional identity gates plate persistence | mouse, PMID 26500224 | none | **yes** |
 | **B. THE RESTING-ZONE POOL, STEM CELLS AND CLONAL DYNAMICS** |
@@ -284,3 +284,312 @@ than the RATE. Rows are tagged accordingly. Where a mechanism moves both, both a
 | W3 | ⚠ **But the direction is Wnt-RAISING** — CXXC5 is a negative Wnt regulator, so blocking it raises canonical Wnt in the plate; a stimulatory Wnt agent must be reconciled against any model in which lower canonical Wnt preserves the resting-zone pool (cf. B4) | — | **Unresolved conflict** | mouse, PMID 30971423 vs PMID 34309509 | — | **yes** |
 
 ---
+
+## PROSE 1 — EVERYTHING THAT EXTENDS THE GROWTH PERIOD IN ANY SPECIES
+
+Grouped by *how* it extends the period, because the mechanism determines whether the extra time is a real
+gain or a loan repaid.
+
+### 1.1 Species and clades that simply never stop (the baseline)
+- **Rodents (mouse, rat) do not fuse their growth plates at all.** This is stated explicitly as the species
+  barrier that frustrates the field (review PMID 21540578) — the entire mechanistic literature is done in an
+  animal that lacks the endpoint being studied. Rabbits and humans fuse; mice and rats do not.
+- **Teleost fish and many reptiles grow indeterminately** — no epiphyseal fusion endpoint exists in the clade.
+  (Teleost muscle/skeletal growth review PMID 21525308; the general point about diversity of ageing across the
+  tree of life, PMID 24317695.)
+- **Deer antler** is the extreme mammalian counter-example: a bony appendage regrown annually **in an adult**
+  by modified endochondral ossification at up to **>2 cm/day, the fastest organ growth in the animal
+  kingdom**, from a resident antler stem-cell population (PMID 15293809; PMID 31165741; PMID 22457177;
+  genomic basis PMID 31221830). Existence proof that an adult mammal can run an endochondral growth engine
+  de novo — but it is a specialised appendage, not a limb long bone.
+
+### 1.2 Removing the fusion signal (oestrogen) — the largest human effect
+- **CYP19A1 (aromatase) deficiency in men: tall stature, delayed bone maturation, UNFUSED EPIPHYSES,
+  eunuchoid proportions** in every reported case (PMID 8530621; review PMID 19707181; PMID 16480891).
+- **ESR1 disruptive mutation in a man: 204 cm, incomplete epiphyseal closure, continued linear growth into
+  adulthood** (PMID 8090165).
+- **Both are reversible with oestrogen** — replacement closes the epiphyses and stops growth (PMID 9211678;
+  PMID 12466340; PMID 10843162; PMID 18590994). That reversal is what makes this causal rather than
+  correlational.
+- **ERα, not ERβ, is the operative receptor**: ERαKO and αβ double-KO mice have reduced longitudinal growth;
+  ERβKO does not (PMID 10805804). ArKO mice show a sexually dimorphic bone response with reduced male femur
+  growth (PMID 10750565) — but mice do not fuse, so mouse data cannot test the fusion endpoint.
+- **Pharmacologically:** letrozole raised predicted adult height in randomised trials in boys with idiopathic
+  short stature (PMID 16189252) and in boys with constitutionally delayed puberty (PMID 11403810).
+  Tamoxifen slowed bone-age advancement in McCune–Albright precocious puberty (PMID 12915825), and letrozole
+  has long-term outcome data in the same population (PMID 27562402).
+- **Delaying oestrogen exposure works in the other direction too**: in Turner syndrome the *age at which
+  oestrogen replacement is started* materially changes final height (PMID 10902791) — a clean human
+  demonstration that later oestrogen = longer growth period.
+- ⚠ **Raloxifene is an oestrogen AGONIST at the rabbit growth plate** (PMID 12639932) — a SERM that hastens
+  fusion. Do not assume SERM = anti-oestrogen at the physis.
+
+### 1.3 Slowing the division counter (growth inhibition buys time)
+This is the mechanistically best-supported route and it is a **loan**, not a gift.
+- **Hypothyroidism** (propylthiouracil, newborn rats) delayed senescence; withdrawal produced catch-up
+  (PMID 18174286).
+- **Tryptophan deficiency** for four weeks in newborn rats delayed structural, functional AND molecular
+  markers of senescence — the generality test that shows it is growth inhibition per se, not thyroid-specific
+  (PMID 20974641).
+- **Glucocorticoid excess** delays senescence by slowing resting-zone proliferation (rabbit PMID 7925098;
+  review PMID 21164272).
+- **Caloric/protein restriction and refeeding** in rat and cattle reproduce the pattern (rat PMID 12508079;
+  cattle PMID 33630953; reviews PMID 25594438, PMID 23428685).
+- ⚠ **In every one of these, growth is suppressed first.** Catch-up is frequently incomplete and permanent
+  deficit is common. None of them has ever been shown to end *above* the untreated trajectory.
+
+### 1.4 Genetic perturbations that delay senescence or fusion
+- **Cxxc5−/− mice: delayed growth-plate senescence AND tibial elongation** (PMID 30971423). CXXC5 is a Wnt
+  brake that rises as the plate senesces.
+- **Lin28a transgenic mice: increased body size AND delayed puberty in the same animal** (PMID 20512147) —
+  the single cleanest heterochronic gain-of-function in a mammal.
+- **p27Kip1-null mice: gigantism with multiorgan hyperplasia** (PMID 8646781).
+- **Socs2−/− mice: gigantism** (PMID 10890450) — but note SOCS2 loss also *accelerates* growth-plate fusion
+  (PMID 35272487), so more GH signalling buys rate at the cost of period.
+- **MC4R deficiency in humans: increased linear growth and increased FINAL height** with incompletely
+  suppressed GH secretion (PMID 21047921).
+- **Untreated hypogonadism / eunuchoidism** (any cause) — the classical clinical route (review PMID 31147553);
+  **CHD7 mutation** causes hypogonadotropic hypogonadism/Kallmann and therefore inherits the delayed-fusion
+  phenotype (PMID 18834967).
+- **Extra SHOX copies (47,XYY, 47,XXY)** lengthen limbs by dosage (PMID 23810129; PMID 27644703; PMID
+  17940117) — XYY is not hypogonadal, so this arm is gene dosage, not delayed fusion.
+
+### 1.5 Pharmacology with an explicit *delayed fusion* or *delayed senescence* endpoint
+Only three items in the whole external search reach this bar:
+1. ⭐ **KY19382** (indirubin analogue, CXXC5–DVL antagonist): **elongated tibia through delayed senescence and
+   further growth-plate activation in ADOLESCENT mice** (PMID 30971423). It has since been formulated
+   transdermally and taken forward in a different indication (PMID 33751552; PMID 32093032).
+2. **Resveratrol delays growth-plate fusion and improves bone growth in female rabbits** (PMID 23840780) —
+   and the rabbit is a species that actually **fuses**, which makes this the most translatable animal result
+   found. Detail worth carrying: oral 200 mg/kg/day; in ovary-intact rabbits treated to fusion it increased
+   **tibial and vertebral** growth and final length; in OVX rabbits it delayed fusion at **distal tibia,
+   distal femur and proximal tibia**, **enlarged the resting zone**, increased hypertrophic chondrocyte
+   number/size and hypertrophic-zone height, and **suppressed chondrocyte VEGF and laminin** — the authors'
+   proposed mechanism is impaired growth-plate vascularisation, i.e. it attacks the *terminal vascular event*
+   of fusion rather than the proliferation counter. In cultured fetal rat metatarsals the dose–response is
+   **biphasic** (stimulatory at 0.3 µM, inhibitory at 10–50 µM), which is the obvious translational hazard.
+3. **Aromatase inhibitors / tamoxifen in humans** (section 1.2) — the only agents with a human
+   predicted-adult-height endpoint.
+
+### 1.6 Things that do NOT extend the period (recorded because negatives are part of the map)
+- **Telomerase.** The growth-plate limit is not a Hayflick limit: rabbit resting-zone chondrocyte population
+  doublings in culture were **independent of donor age** (PMID 16002553). hTERT does not rescue chondrocyte
+  senescence at 21% O₂ (PMID 15071075).
+- **p16 clearance.** p16^INK4a is a biomarker of chondrocyte ageing but does not cause the pathology
+  (PMID 29744983); where a senolytic arm exists in bone it appears to be **p21**, not p16 (PMID 35363946).
+- **mTOR inhibition.** Rapamycin markedly alters the growth plate and retards growth in young rats
+  (PMID 17370095; PMID 19144108) — a rate and pool cost, not an extension.
+- **Growth-plate regeneration after injury.** MSC, chondrocyte-sheet, scaffold and hydrogel approaches in
+  ovine, rabbit and rat models have not restored a normal functioning physis (PMID 20721323; PMID 32283887;
+  PMID 28715376; review PMID 28830302).
+
+---
+
+## PROSE 2 — WHAT ACTUALLY COUNTS DOWN: TIME, DIVISIONS, OR SOMETHING ELSE
+
+**The field's answer is DIVISIONS, and the evidence is a chain of four experiments.**
+
+1. **The decline is intrinsic to the plate, not systemic.** Suppressing growth in a *single* growth plate
+   with locally administered glucocorticoid was followed by local catch-up in *that plate alone* — which
+   falsifies the neuroendocrine "sizostat" model that had stood for thirty years (rabbit, PMID 7925098).
+   Confirmed ex vivo: cultured rat metatarsals show catch-up after dexamethasone withdrawal with no systemic
+   input at all (PMID 19815587).
+2. **Senescence tracks cumulative replications, not age.** Catch-up is associated with delayed senescence
+   (rabbit, PMID 11641457). Hypothyroidism slowed both proliferation and senescence (rat, PMID 18174286).
+   Tryptophan deficiency — an entirely different insult — did the same, establishing that it is growth
+   inhibition *per se* (rat, PMID 20974641). Glucocorticoid excess likewise (PMID 21164272).
+3. **The countdown is a POOL, not a clock.** Resting-zone chondrocyte number and proliferation rate both fall
+   with age (rabbit, PMID 16614378). Oestrogen accelerates fusion by **irreversibly depleting resting-zone
+   progenitor number** — depletion persisted after a 5-week washout (rabbit, PMID 24708243). The resting zone
+   is functionally the origin: ablate the proliferative and hypertrophic zones and a full plate regenerates
+   from the resting zone within a week (rabbit, PMID 11956168). It houses a genuine skeletal stem-cell class
+   whose stem state is conferred at secondary-ossification-centre formation (mouse, PMID 30401834).
+4. **But it is NOT a replicative/telomere limit.** Rabbit resting-zone chondrocytes explanted from old and
+   young animals achieved the **same number of population doublings in culture** — so whatever limits them in
+   vivo does not travel with the cell into a dish (PMID 16002553).
+
+**So what is the physical substrate of the count?** The single best candidate found externally is
+**progressive loss of DNA methylation in resting-zone chondrocytes**, which:
+- decreased with age in vivo;
+- occurred specifically with the **slow** in-vivo proliferation of the resting zone;
+- did **not** occur with the fast proliferation of the proliferative zone, with proliferation in culture, or
+  with liver growth (PMID 16002553).
+That is a division-coupled, compartment-specific, culture-non-transferable mark — the profile of a counter.
+It has never, as far as external search shows, been tested by manipulating methyl-donor supply or DNMT/TET
+activity in a growth plate.
+
+**Three complications that mean "divisions" is not the whole answer:**
+- **The clock is body-wide, not plate-specific.** A large, coordinated genetic programme down-regulates
+  growth-promoting genes across *multiple organs* during postnatal deceleration, including an imprinted gene
+  network (Igf2, Dlk1, Mest, Plagl1, Peg3, Grb10) (PMID 18448610; PMID 19036884; PMID 20371622;
+  PMID 21441345). E2F3 drives the Igf2 arm (PMID 23530192) and miR-29 up-regulation contributes
+  (PMID 25866874). Many changes labelled "ageing" actually originate during juvenile growth (PMID 20816690).
+  A plate-only division counter cannot explain a liver and kidney doing the same thing on the same schedule.
+- **Different bones age at different rates**, and that is what sets skeletal proportion (mouse, PMID 30036371).
+  So there is not one countdown but a set of site-specific ones.
+- **The heterochronic RNA layer runs on a different logic entirely.** lin-4/let-7 in *C. elegans* count
+  developmental *stages*, not divisions (PMID 10706289; PMID 11081512), and the mammalian LIN28/let-7 axis
+  sets human pubertal timing (PMID 19448623) and operates inside growth-plate chondrocytes (PMID 23940373).
+
+**A fourth candidate nobody has excluded: protein turnover rate.** Species-specific developmental tempo
+tracks **protein stability and degradation rates** rather than signalling architecture (human vs mouse motor
+neurons, PMID 32943498), and the segmentation-clock period across six mammals scales with **embryogenesis
+time, not body weight** (PMID 37343565). If the same biochemical scaling governs the growth plate, the
+countdown would be neither time nor divisions but the throughput of an intracellular degradation machine.
+No one appears to have tested this in cartilage.
+
+---
+
+## PROSE 3 — EVERY REPORT OF DELAYED OR ABSENT EPIPHYSEAL FUSION AND ITS CAUSE
+
+### 3.1 Absent oestrogen signalling — the strongest and best documented
+| Cause | Report | What was seen |
+|---|---|---|
+| **ESR1 (ERα) disruptive mutation, man** | human, PMID 8090165 | 204 cm; **incomplete epiphyseal closure**; history of continued linear growth as an adult; oestrogen resistance |
+| **CYP19A1 aromatase deficiency, men** | human, PMID 8530621; PMID 19707181; PMID 16480891 | **All reported men**: tall stature, delayed bone maturation, **unfused epiphyses**, eunuchoid proportions, osteopenia/osteoporosis |
+| Same, individual cases with treatment | PMID 9211678; PMID 12466340; PMID 10843162; PMID 18590994; PMID 10566648 | Oestrogen replacement **closed the epiphyses** and stopped growth — the causal reversal |
+| Aromatase deficiency in women/girls | PMID 9177373; PMID 19844120 | Hypergonadotropic hypogonadism, virilisation; delayed maturation before treatment |
+| ERα / ERαβ knockout mice | PMID 10805804 | Decreased longitudinal growth (mice do not fuse, so fusion itself is untestable) |
+| ArKO mouse | PMID 10750565 | Decreased femur growth in males, sexually dimorphic |
+
+### 3.2 Absent or suppressed gonadal steroid (hypogonadism), any cause
+- **Untreated hypogonadism / eunuchoidism** — classical continued growth with eunuchoid proportions
+  (review PMID 31147553; sex-steroid/bone reviews PMID 27807202, PMID 25202834).
+- **CHD7 mutation** → isolated hypogonadotropic hypogonadism / Kallmann syndrome, and thereby the same
+  phenotype (PMID 18834967; PMID 19021638).
+- **Klinefelter 47,XXY** — tall stature from combined SHOX overdosage and hypogonadism (PMID 27644703;
+  growth/IGF data PMID 17940117).
+- **Constitutional delay of growth and puberty** — bone age delayed, growth period prolonged (review
+  PMID 31220230). Usually no net adult-height gain.
+- **GnRH agonist therapy** — pharmacological suspension of the fusion signal; but height velocity on GnRHa is
+  inversely related to *prior* oestrogen exposure, i.e. the damage already done is not undone (PMID 14715835).
+- **Delayed oestrogen replacement in Turner syndrome** improves final height (PMID 10902791; PMID 11994337).
+
+### 3.3 Gene-dosage causes of tall stature WITHOUT delayed fusion (the discriminating controls)
+- **47,XYY** — tall, extra SHOX copy, **not hypogonadal** (PMID 23810129; PMID 17940117).
+- **SHOX dosage** generally: haploinsufficiency shortens (Léri–Weill, Turner: PMID 10749976; PMID 9590292;
+  PMID 21325865), excess lengthens.
+- **NSD1 haploinsufficiency (Sotos)** — overgrowth **with advanced** bone age (PMID 11896389; PMID 15942875);
+  the period is *shortened*, not extended.
+- **DNMT3A loss (Tatton-Brown–Rahman)** — tall stature (PMID 24614070; PMID 29900417); the reciprocal
+  **gain-of-function causes microcephalic dwarfism** (PMID 30478443).
+- **EZH2 loss (Weaver)** — overgrowth (PMID 29244146), while cartilage-restricted PRC2 loss *shortens*
+  (PMID 27897169; PMID 26424790). Whole-organism germline ≠ cartilage-restricted.
+- **Pituitary gigantism / X-LAG (GPR101 Xq26 microduplication)** — extreme height from GH excess before
+  fusion (PMID 25470569; PMID 26187128); associated hypogonadism can additionally delay fusion.
+- **MC4R deficiency** — increased linear growth and final height (PMID 21047921).
+
+### 3.4 Local, anatomical failure of fusion (the most obscure and the most literal)
+**A physis can simply fail to close at one site.** This is a documented, if rare, entity:
+- **Fracture through a persistent OLECRANON physis in an adult** (PMID 8423189; PMID 30101168; surgical
+  management PMID 31723567).
+- **Fracture of the distal fibula through a persistent physis in an adult** (PMID 12665964).
+- **Bilateral proximal tibial stress fractures through persistent physes** (PMID 30631624).
+- **Symptomatic persistent olecranon physis with cartilage degeneration in adolescent baseball players**
+  (PMID 25580304) and two identified patterns of olecranon physeal nonunion in adolescent athletes
+  (PMID 28139383); systematic review of 174 athletes with proximal ulna physeal nonunion/stress fracture
+  (PMID 40041833). **Repetitive mechanical loading appears to be the cause** — the physis is kept open by
+  chronic distraction/stress rather than by any hormonal mechanism.
+- ⚠ These are all **upper-limb, non-weight-bearing** sites and none contributes to stature. Their value is
+  conceptual: they prove fusion is not an unconditional deadline.
+
+### 3.5 Species-level absence
+- **Mouse and rat never fuse** (review PMID 21540578) — the central methodological problem of the field.
+- **Fish, many reptiles** — indeterminate growth (PMID 21525308 and general comparative literature).
+
+### 3.6 Drugs and exposures that DELAY fusion (as opposed to preventing it)
+- **Resveratrol** delayed growth-plate fusion in female rabbits (PMID 23840780).
+- **KY19382 / CXXC5–DVL antagonism** delayed senescence and elongated tibia in adolescent mice
+  (PMID 30971423).
+- **Aromatase inhibitors and tamoxifen** in humans (PMID 16189252; PMID 11403810; PMID 12915825;
+  PMID 27562402).
+- **Growth-inhibiting states** (hypothyroidism, glucocorticoid excess, tryptophan/protein/energy restriction)
+  delay senescence and therefore delay fusion (PMID 18174286; PMID 20974641; PMID 7925098).
+
+### 3.7 The opposite — accelerated fusion, listed so the causes are on the map
+Oestrogen (PMID 11381135; PMID 24708243); raloxifene (PMID 12639932); all-trans retinoic acid
+(PMID 41239925); ACAN haploinsufficiency (PMID 24762113; PMID 27870580); SOCS2 loss (PMID 35272487);
+NSD1 haploinsufficiency/Sotos (PMID 15942875); precocious puberty of any cause including MKRN3 and DLK1
+imprinted lesions (PMID 23738509; PMID 24891339; PMID 10356135); obesity-associated bone-age advance
+(factors affecting bone-age progression, PMID 36072933).
+
+### 3.8 Can a fused physis be reopened?
+**No report was found, in any species.** Targeted queries for reopening / reactivating / re-forming a closed
+physis returned only:
+- **physeal bar resection**, which works on a *partially* fused plate and only if <~50% of the plate is
+  involved and enough growth remains, with secondary tethers as a common failure mode (PMID 12461380;
+  PMID 29628701);
+- **physeal allograft transfer** for bars, a 2026 safety/feasibility study in swine (PMID 41485130);
+- **regenerative attempts** (MSC, chondrocyte sheets, scaffolds, hydrogels) in injury models — none of which
+  restores a functioning physis (PMID 20721323; PMID 21808649; PMID 26309783; PMID 26847298; PMID 28715376;
+  PMID 32283887; PMID 37274168; review PMID 28830302);
+- **chondrodiatasis**, mechanical distraction *through* an open physis — which uses a plate, does not create
+  one, and itself risks premature closure (PMID 3733829; PMID 3733828);
+- **distraction osteogenesis**, which is the actual clinical workaround and needs no growth plate at all
+  (e.g. PMID 22112021).
+
+---
+
+## WHAT I COULD NOT VERIFY
+
+Honest list of gaps and failures in this session.
+
+**Searched and genuinely empty (these are results, not omissions):**
+1. **m6A in the GROWTH PLATE.** Repeated Europe PMC queries (`METTL3 AND "growth plate"`, `m6A AND
+   endochondral`, `m6A AND "chondrocyte hypertrophy"`) returned nothing physis-specific. The verified skeletal
+   m6A work is MSC/osteoblast/osteoporosis (PMID 30429466; PMID 30696066; PMID 31896070) and osteoarthritis.
+   Several of these queries also returned HTTP 503/504 from the API, so I cannot exclude an indexing miss.
+2. **m5C, pseudouridine, ac4C in cartilage or physis** — nothing skeletal-timing retrieved.
+3. **Partial reprogramming (OSK/OSKM) of growth-plate chondrocytes with a length endpoint** — no report found.
+4. **BET/BRD4, ISWI, INO80 in the growth plate** — no physis-specific result.
+5. **UHRF1/UHRF2 and TET1/2/3 with a bone-length endpoint** — no result retrieved.
+6. **Reopening a fully fused physis** — no report in any species (section 3.8).
+7. **lncRNAs in the growth plate specifically** — the cartilage lncRNA literature retrieved is osteoarthritis
+   and intervertebral disc, not physis.
+
+**Named in the brief but not resolved to a primary I retrieved:**
+- **Fels method** — I found the method paper (PMID 28514006) and its statistical update (PMID 23992229) but
+  did not read either.
+- **Roche–Wainer–Thissen (RWT)** and the **Tanner–Whitehouse adult-height prediction equations** — not
+  retrieved; marked UNVERIFIED in the table.
+- **ICP model** — I retrieved Karlberg's mathematical model papers (PMID 2801108 "A biologically-oriented
+  mathematical model (ICP) for human growth"; PMID 3589247 "On the modelling of human growth"; PMID 3604665)
+  by author search only; I did not read them, so the three-component description in the table is from the
+  titles and general knowledge, not from a record I verified.
+- **Mid-childhood / juvenile growth spurt** — no definitive primary retrieved. Adrenarche literature was
+  found (PMID 15635501; PMID 6447708; PMID 30137510) but does not itself establish the spurt.
+- **miR-433, miR-26b, miR-145, miR-483, miR-675** — individual growth-plate papers not retrieved; only the
+  general cartilage-miRNA review (PMID 32745689).
+- **IGF2BP2 and human height** — I found IGF2BP2 abundantly as a type-2-diabetes locus and as an m6A reader,
+  but no height/growth-plate paper. Marked UNVERIFIED.
+- **Limb/growth-plate-specific enhancers and TAD disruption affecting growth TIMING** — the general principle
+  is well established but I retrieved no timing-specific paper.
+
+**Data-quality caveats on rows I did include:**
+- **B8** (human resting-zone spatial transcriptomics) is a **PMC preprint record with no PMID** in the
+  Europe PMC result; I have not verified peer-reviewed status.
+- **PMID 42582486** (Acan+/− and oestrogen-induced senescence) and **PMID 41748604** (Fgfr3^Ach resting-zone
+  turnover) are 2026 records with zero citations; I read abstracts only.
+- **PMID 41795828** ("Quiescence in the resting zone: a systematic review") and **PMID 41730836**
+  (replicative vs chemical chondrocyte senescence) are likewise very recent, abstract-only reads.
+- Everything marked `(review)` is an index. In particular PMID 15380808, 21865751, 21540578, 23428687,
+  21441345, 25594438 and 39463341 are reviews and I have used them for framing, not as primary evidence.
+- I did not read any full text in this session except the abstracts fetched via eutils for PMIDs 16002553,
+  15380808, 20974641, 16356444 and 30971423. Everything else is from Europe PMC `resultType=core` abstract
+  fields.
+
+**Infrastructure note.** Two Europe PMC queries failed with HTTP 503/504 during the session and were retried;
+one (`m6A/METTL3 AND "growth plate"`) never returned. The scratchpad directory named in my system prompt was
+being written concurrently by another agent and overwrote my helper script once — all searches reported here
+were re-run from an isolated directory afterwards.
+
+---
+
+## COUNTS
+
+- **Table rows: 243** (section headers excluded) across 23 sections —
+  A 18, B 11, C 12, D 10, E 15, F 9, G 4, H 12, I 16, J 12, K 11, L 5, M 9, N 16, O 21, P 6, Q 15, R 9,
+  S 9, T 7, U 9, V 4, W 3.
+- **Marked OBSCURE = yes: 153.** Marked no: 90.
+- Rows tagged **PERIOD** (the term that matters at bone age 16+): the large majority of sections A, B, C, D,
+  J, L, Q, S, T and W.

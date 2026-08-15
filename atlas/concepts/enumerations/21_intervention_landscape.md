@@ -17,8 +17,7 @@ I could not confirm the number from a source I actually reached — it is never 
 
 ## TABLE — THE INTERVENTION LANDSCAPE
 
-| # | AGENT/INTERVENTION | INDICATION | PHASE/STATUS | EFFECT (cm or cm/yr) vs COMPARATOR | REGISTRY ID | OBSCURE? |
-|---|---|---|---|---|---|---|
+**202 rows across 14 sections. 169 marked OBSCURE.**
 
 ### A. CNP-AXIS AGENTS (achondroplasia and beyond)
 
@@ -35,7 +34,7 @@ I could not confirm the number from a source I actually reached — it is never 
 | A9 | **Vosoritide in IDIOPATHIC SHORT STATURE** — head-to-head vs hGH and placebo | ISS | **Phase 2, recruiting** — three-arm, includes an hGH comparator | Ongoing. This is the single most decision-relevant trial in the landscape for a non-dysplastic subject | NCT06382155 | **yes** |
 | A10 | **Vosoritide in MPS IVA (Morquio A) and MPS VI** | Mucopolysaccharidosis growth deficit | Phase 1/2, UCSF, active | Ongoing | NCT05845749 | **yes** |
 | A11 | **Vosoritide for "selected genetic causes of short stature"** — incl. hypochondroplasia, NPR2 haploinsufficiency, ACAN, SHOX, RASopathies | Non-achondroplasia genetic short stature | Phase 2, Children's National / Dauber, active | Reported +~1–2 cm/yr velocity gains in several genotypes; per-genotype cm figures partly UNVERIFIED | NCT04219007 | **yes** |
-| A12 | **Navepegritide (TransCon CNP, ACNU-D01)** — weekly CNP prodrug, 100 µg CNP/kg/wk s.c. | Achondroplasia 2–11 y | **APPROVED — FDA 27 Feb 2026, brand YUVIWEL**, children ≥2 y; first approved ACH therapy giving continuous weekly CNP exposure | **ApproaCH pivotal: AGV 5.84 vs 3.88 cm/yr on placebo ≈ +1.8–1.96 cm/yr at wk 52**, n=84, 2:1 randomisation | NCT05598320 | no |
+| A12 | **Navepegritide (TransCon CNP)** — weekly CNP prodrug, 100 µg CNP/kg/wk s.c. | Achondroplasia 2–11 y | **APPROVED — FDA 27 Feb 2026, brand YUVIWEL**, children ≥2 y; first approved ACH therapy giving continuous weekly CNP exposure | **ApproaCH pivotal: AGV 5.84 vs 3.88 cm/yr on placebo ≈ +1.8–1.96 cm/yr at wk 52**, n=84, 2:1 randomisation | NCT05598320 | no |
 | A13 | Navepegritide — long-term extension (ApproaCH OLE) | Achondroplasia | Phase 2/3 extension, enrolling by invitation | Growth gains sustained to 2 yr in the ≥5 y subgroup | NCT05929807 | no |
 | A14 | Navepegritide — infants 0–<2 y | Achondroplasia infants | Phase 2, recruiting | Ongoing | NCT06079398 | yes |
 | A15 | **Navepegritide in ADOLESCENTS 12–18 y** | Achondroplasia adolescents | **Phase 2, recruiting** — the only registered CNP trial specifically in the adolescent age band | Ongoing | NCT06732895 | **yes** |
@@ -68,7 +67,7 @@ I could not confirm the number from a source I actually reached — it is never 
 | # | AGENT/INTERVENTION | INDICATION | PHASE/STATUS | EFFECT (cm or cm/yr) vs COMPARATOR | REGISTRY ID | OBSCURE? |
 |---|---|---|---|---|---|---|
 | C1 | **Somatropin (daily rhGH)** — Genotropin, Norditropin, Humatrope, Nutropin, Saizen, Omnitrope, Zomacton | GHD (paediatric) | Approved worldwide since 1985 (rDNA) | Adult height gain vs untreated historical GHD is the largest in the field but has no placebo comparator; typical +8–12 cm to adult height in severe GHD (cohort data) | — | no |
-| C2 | **Somatropin for IDIOPATHIC SHORT STATURE** | ISS | **FDA-approved 2003 (Humatrope)**; NOT approved for ISS in most of the EU | **+3.7 cm adult height vs PLACEBO (0.51 SDS), randomised double-blind (Leschek 2004 JCEM)**. Dose-response cohorts report up to ~+7 cm at higher doses without a placebo arm | NCT00001221-era NIH trial; see also NCT01246219 | no |
+| C2 | **Somatropin for IDIOPATHIC SHORT STATURE** | ISS | **FDA-approved 2003 (Humatrope)**; NOT approved for ISS in most of the EU | **+3.7 cm adult height vs PLACEBO (0.51 SDS), randomised double-blind (Leschek 2004 JCEM)**. Dose-response cohorts report up to ~+7 cm at higher doses without a placebo arm | Leschek 2004 JCEM NIH trial, NCT ID UNVERIFIED; see also NCT01246219 and NCT00001221 (Turner GH+EE2) | no |
 | C3 | Somatropin for **TURNER SYNDROME** | Turner | Approved US/EU | **+7.2 cm adult height (95% CI 6.0–8.4) vs untreated randomised control**, Canadian RCT (Stephure, JCEM 2005) | — | no |
 | C4 | Somatropin for **SGA / short children born small for gestational age** | SGA | Approved US (2001) and EU | ~**+0.6 to +1.3 SDS adult height gain vs untreated randomised control** (≈ +4–8 cm depending on dose and duration) | — | no |
 | C5 | Somatropin for **PRADER-WILLI SYNDROME** | PWS | Approved US/EU | Adult height normalised in many treated cohorts; a randomised long-term adult-height comparator is scarce. cm figure vs control UNVERIFIED | — | no |
@@ -148,11 +147,11 @@ I could not confirm the number from a source I actually reached — it is never 
 | F3 | **rhGH + rhIGF-1 combination** | Short stature with IGF-1 deficiency | **TERMINATED** phase 2 (Ipsen) | Terminated; result UNVERIFIED | NCT00572156 | **yes** |
 | F4 | **rhIGF-1 in PAPP-A2 deficiency** | PAPPA2 loss-of-function short stature | Phase 1/2, Cincinnati, completed | n-of-few; growth velocity increased. A genuine n-of-1-scale precision-growth programme | NCT02636270 | **yes** |
 | F5 | rhIGF-1 in **X-linked SCID growth failure**, **Crohn disease**, **anorexia nervosa**, **DMD** | Various | All **TERMINATED or small** | Terminated for recruitment/efficacy | NCT00490100, NCT00764699, NCT01207908 | yes |
-| F6 | **LUM-201 / ibutamoren / MK-677 (oral GH secretagogue, GHSR agonist)** | Paediatric GHD (LUM-201, Lumos Pharma) | **Phase 2 OraGrowtH210/212 completed; Lumos acquired by Double Point 2024; programme status uncertain** | **AHV 8.2 cm/yr at 6 mo and 8.0 cm/yr at 12 mo on 1.6 mg/kg oral LUM-201**, reported by the sponsor as within the pre-specified 2 cm/yr margin of the injectable rhGH comparator arm, in a predictive-enrichment-marker-selected moderate-GHD population. **Oral, and numerically below daily GH** | NCT04667728, NCT04732416 | **yes** |
+| F6 | **LUM-201 / ibutamoren / MK-677 (oral GH secretagogue, GHSR agonist)** | Paediatric GHD (LUM-201, Lumos Pharma) | **Phase 2 OraGrowtH210/212 completed; PHASE 3 NOW RECRUITING (NCT06948214, n=150, placebo-controlled)** | **AHV 8.2 cm/yr at 6 mo and 8.0 cm/yr at 12 mo on 1.6 mg/kg oral LUM-201**, reported by the sponsor as within the pre-specified 2 cm/yr margin of the injectable rhGH comparator arm, in a predictive-enrichment-marker-selected moderate-GHD population. **Oral, and numerically below daily GH** | NCT04614337 (OraGrowtH210), NCT04806854 (OraGrowtH212), NCT05250063, NCT05796440 | **yes** |
 | F7 | **Macimorelin (Macrilen)** | GH-deficiency **diagnosis** only | Approved FDA 2017, EMA 2019 | Single-dose diagnostic. Same target as LUM-201; **never a therapeutic** | — | yes |
 | F8 | **NBI-31772** (IGFBP displacer) | Preclinical only | No clinical programme | No skeletal endpoint in any species | — | **yes** |
 | F9 | **Somatrem (Protropin)** — met-GH, the first rDNA GH | GHD | **APPROVED FDA 1985, DISCONTINUED 2004** | Superseded by native-sequence somatropin; higher antibody formation | — | **yes** |
-| F10 | **Pituitary-derived human GH (hGH, "Crescormin", NHPP)** | GHD | **WITHDRAWN WORLDWIDE 1985** | **Killed by iatrogenic Creutzfeldt-Jakob disease.** ~1,900 CJD-linked recipients tracked in France/UK/US cohorts. The single largest safety catastrophe in the growth field | — | no |
+| F10 | **Pituitary-derived human GH (national pituitary programmes, e.g. the US NHPP)** | GHD | **WITHDRAWN WORLDWIDE 1985** | **Killed by iatrogenic Creutzfeldt-Jakob disease.** ~1,900 CJD-linked recipients tracked in France/UK/US cohorts. The single largest safety catastrophe in the growth field | — | no |
 | F11 | Thyroxine (levothyroxine) | Hypothyroid growth failure | Approved | Restores growth; adult height reaches or exceeds target when replacement is adequate. **Not a lever above euthyroid** | NCT07754370 | yes |
 | F12 | **Glucocorticoid dose minimisation / hydrocortisone in CAH; crinecerfont and tildacerfont (CRF1 antagonists)** | Classic CAH | **Crinecerfont APPROVED FDA Dec 2024 (Crenessity)**; tildacerfont phase 3 | Approved on androgen/glucocorticoid-sparing endpoints; **paediatric growth outcomes are a stated long-term objective — adult-height data not yet available** | NCT04806451 (CAHtalyst Pediatric) | **yes** |
 | F13 | **Modified-release hydrocortisone (Chronocort/Efmody, Alkindi)** | CAH, paediatric adrenal insufficiency | Approved EMA | Growth is a secondary outcome; adult-height benefit UNVERIFIED | — | yes |
@@ -250,7 +249,7 @@ I could not confirm the number from a source I actually reached — it is never 
 | L5 | **Autologous chondrocyte/MSC implantation into a physis** | Physeal bar | Preclinical / case-level | Bar prevention, not stature | — | yes |
 | L6 | **PTH1R agonists (teriparatide, abaloparatide) for longitudinal growth** | Not a growth indication | Rodent terminal femoral length 0.0% in every arm in the regulatory package | **Effectively a measured zero on bone length** | — | **yes** |
 | L7 | **Smoothened AGONISTS (SAG, purmorphamine, Hh-Ag1.5, SAG21k, GSA-10, 20(S)-OHC)** | Achondroplasia/pool expansion, hypothetical | **RESEARCH REAGENTS ONLY — zero registered Smoothened-agonist trials in any human indication in any registry** | No human exposure to any SMO agonist has ever occurred. Every marketed SMO drug is an antagonist | — | **yes** |
-| L8 | **Notch agonists (Jagged1-Fc, DLL1-Fc, designed multivalent agonists, SNAGs)** | Skeletal progenitor expansion | Research reagents; **every registered Notch trial is an INHIBITOR** | Nohla Therapeutics built a GMP Notch-ligand platform (dilanubicel/NLA101, immobilised Delta1ext-IgG) and reached phase 2 in cord-blood expansion — **patients received CELLS, not the agonist — then the company ceased operations in 2019** | NCT01175785 and related (dilanubicel) | **yes** |
+| L8 | **Notch agonists (Jagged1-Fc, DLL1-Fc, designed multivalent agonists, SNAGs)** | Skeletal progenitor expansion | Research reagents; **every registered Notch trial is an INHIBITOR** | Nohla Therapeutics built a GMP Notch-ligand platform (dilanubicel/NLA101, immobilised Delta1ext-IgG) and reached phase 2 in cord-blood expansion — **patients received the EXPANDED CELLS, not the agonist — then the company ceased operations in 2019** | NCT01175785 (Delta1ext-IgG-expanded cord blood) and related | **yes** |
 | L9 | **PXS-5505 / lenumlostat** — oral pan-lysyl-oxidase inhibitor | Myelofibrosis (not growth) | Phase 1/2a completed, 200 mg BID | **No bone-length endpoint in any species.** Enumerated because the LOX/PLOD axis carries positive human height genetics | NCT04676529 | **yes** |
 | L10 | **Tankyrase inhibitors (basroparib/STP1002, E7449)** | Oncology | Phase 1 completed (25 patients, MTD 360 mg) | **No bone-length endpoint in any species.** Grade 3 pancreatitis and mean weight loss 3.5–10.6 kg at the higher doses | NCT04505839 | **yes** |
 | L11 | **Eflornithine/DFMO (ODC inhibitor)** | Neuroblastoma (approved, Iwilfin 2023) | Approved with paediatric dosing | No growth indication; the polyamine axis runs both ways and the drug class is antiproliferative | — | **yes** |
@@ -265,7 +264,7 @@ I could not confirm the number from a source I actually reached — it is never 
 | # | ITEM | FINDING | OBSCURE? |
 |---|---|---|---|
 | M1 | **Expanded access / compassionate use for growth** | A clinicaltrials.gov query filtered to `StudyType = EXPANDED_ACCESS` across achondroplasia, short stature and GHD returns **effectively nothing relevant**. **There is no expanded-access programme for any growth-promoting agent anywhere on the register** — including dabogratinib and infigratinib | **yes** |
-| M2 | Post-marketing surveillance registries | KIGS (Pfizer), GeNeSIS (Lilly), NordiNet/IOS (Novo), ANSWER (Ipsen), LG Growth Study (Korea), and the Japanese somatropin special surveys are the largest growth datasets in existence and are almost all industry-owned | NCT01604395, NCT01009905, NCT01516229, NCT01580605 | yes |
+| M2 | Post-marketing surveillance registries | KIGS (Pfizer), GeNeSIS (Lilly), NordiNet/IOS (Novo), ANSWER (Ipsen), LG Growth Study (Korea) and the Japanese somatropin special surveys are the largest growth datasets in existence and are almost all industry-owned — NCT01604395, NCT01009905, NCT01516229, NCT01580605 | yes |
 | M3 | **No approved agent anywhere targets the PERIOD of growth** | Every approved growth drug raises a RATE. The only agents that extend the growth period are used off-label (aromatase inhibitors, GnRHa) and neither is approved for that purpose in any jurisdiction | **yes** |
 | M4 | **No growth-promoting drug is approved for a healthy, normal-stature child anywhere in the world** | Every approval requires a disease label. ISS is the closest, and it is a US label that most of Europe declined | no |
 | M5 | **The only LAGH approved for ISS and Turner is Chinese (Jintrolong)** | Neither lonapegsomatropin, somapacitan nor somatrogon carries an ISS indication anywhere as of 2026-08 | **yes** |
@@ -288,6 +287,285 @@ I could not confirm the number from a source I actually reached — it is never 
 | N11 | **Navepegritide adolescent trial design detail** | Achondroplasia 12–18 y | **Phase 2b, n=24, DOUBLE-BLIND, PLACEBO-CONTROLLED, navepegritide 100 µg/kg weekly × 52 wk, primary = AGV** | Ongoing. **The only placebo-controlled growth trial in adolescents in the entire landscape** | NCT06732895 | **yes** |
 | N12 | **BMN 333 trial design detail** | Achondroplasia, treatment-naive | Phase 2/3 seamless, **n=160, randomised ACTIVE-CONTROLLED vs vosoritide**, primary = AGV at wk 52 | Ongoing. Locations include Japan and South Korea | NCT07441876 | **yes** |
 | N13 | Vosoritide injector-pen bioequivalence | Device | **TERMINATED** phase 1 in healthy adults | Terminated; reason not stated in the record read | NCT05813314 | yes |
-| N14 | **Zomacton / Ferring somatropin, CinnaTropin, Scitropin, Omnitrope, Valtropin and other biosimilars** | GHD | Approved in various markets | Biosimilar somatropins are approved in the EU (Omnitrope 2006 — the first EU biosimilar of any kind), plus national biosimilars in Iran, India, Russia, China, Argentina and Cuba | NCT00884000 | yes |
+| N14 | **Zomacton (Ferring), Omnitrope (Sandoz), Valtropin (Biopartners, EU, withdrawn), CinnaTropin (Iran), Rastan (Russia) and other biosimilar/national somatropins** | GHD | Approved in various markets | Biosimilar somatropins are approved in the EU (Omnitrope 2006 — the first EU biosimilar of any kind), plus national biosimilars in Iran, India, Russia, China, Argentina and Cuba | NCT00884000 | yes |
 | N15 | **Growth hormone in adults for height** | — | **NOTHING.** No registered trial anywhere attempts to increase adult height with GH after epiphyseal fusion | Adult GH cannot lengthen a fused bone; it causes acromegalic change | — | yes |
 | N16 | **Cervicomedullary decompression, laminectomy, guided-growth surgery in achondroplasia** | Achondroplasia complications | Standard surgical care | Not stature interventions; enumerated because they dominate the achondroplasia surgical literature and are sometimes miscounted as growth interventions | — | yes |
+
+---
+
+## PROSE 1 — EVERYTHING EVER SHOWN TO INCREASE HEIGHT IN A HUMAN, RANKED BY EFFECT SIZE
+
+Three different units are in play and mixing them is the commonest error in this field. I have kept
+them separate. **A cm/yr velocity gain is not a cm of adult height** — the field's own recurring
+finding is that velocity gains are frequently repaid later. Only the first list is about attained
+height.
+
+### 1A. ATTAINED / FINAL ADULT HEIGHT, WITH A CONCURRENT CONTROL — the only list that really counts
+
+| rank | intervention | gain | comparator | quality |
+|---|---|---|---|---|
+| 1 | **Cosmetic limb lengthening (motorised IM nail)** | **~6.7 cm per segment**; up to **~12.4 cm across four segments in one session** in dysplasia series; individual cases to 18 cm | none (uncontrolled series) | Weak evidence, enormous effect. **Works AFTER epiphyseal fusion, so it does not compete for the growth window.** MINORS ≈10/16, no RCT exists |
+| 2 | **GH in Turner syndrome** | **+7.2 cm (95% CI 6.0–8.4)** | untreated randomised control | **Canadian RCT — one of the best-controlled adult-height numbers in medicine** |
+| 3 | **GH in SHOX deficiency / Léri-Weill** | ~**+7–8 cm** | untreated randomised control | Good |
+| 4 | **GH + aromatase inhibitor in pubertal ISS boys** | absolute **+22.5 cm** vs +20.6 cm on GH alone, +18.2 cm on AI alone, against an **expected +13.0 cm** at −2.0 SDS | randomised three-arm | Moderate. The expectation figure, not a placebo arm, carries the headline |
+| 5 | **Aromatase inhibitor ALONE in pubertal ISS boys** | **+18.2 cm vs +13.0 cm expected ≈ +5 cm** | expected-height model | Moderate |
+| 6 | **GH in SGA** | **+0.6 to +1.3 SDS ≈ +4–8 cm** | untreated randomised control | Good |
+| 7 | **Oxandrolone added to GH in Turner** | **+4.1 cm (95% CI 1.6–6.6)** | **placebo** | **Randomised placebo-controlled (UK, Gault). One of very few placebo-controlled adult-height numbers that exist** |
+| 8 | **GH in idiopathic short stature** | **+3.7 cm (0.51 SDS)** | **placebo** | **The single best-quality adult-height number in the non-dysplastic field.** Randomised, double-blind, placebo-controlled |
+| 9 | **GH in achondroplasia (Japan)** | **+3.5 cm males, +2.8 cm females** (+0.60 / +0.51 SD) | untreated achondroplasia | Cohort-controlled, Japanese |
+| 10 | **Delaying pubertal oestrogen induction 12→14 y in Turner** | **+2.7 cm, NOT significant at final analysis** (had been +3.8 cm at interim) | randomised | Good, and instructive — the interim over-read |
+| — | **GH + GnRHa** | predicted adult height **+8.0 cm girls, +10.4 cm boys** in one 3-yr RCT; but a separate randomised GH+leuprorelin vs GH-alone trial gave height SDS **−2.3 on the combination vs −1.8 on GH alone**, i.e. the combination did WORSE | mixed | **Contradictory. Do not treat as established** |
+
+### 1B. GROWTH VELOCITY (cm/yr) AGAINST A CONCURRENT RANDOMISED CONTROL
+
+| rank | intervention | gain | comparator |
+|---|---|---|---|
+| 1 | **Navepegritide + lonapegsomatropin (CNP analogue + weekly GH)** | **+2.74 cm/yr** (LS mean AGV 8.69 vs 5.95) | navepegritide monotherapy, matched |
+| 2 | **Navepegritide (weekly CNP prodrug)** | **≈ +1.96 cm/yr** (5.84 vs 3.88) | placebo |
+| 3 | **Infigratinib (oral FGFR1-3 TKI)** | **+1.74 cm/yr** (5.96 vs 4.22), height z +0.32 | placebo |
+| 4 | **Vosoritide (daily CNP analogue)** | **+1.57 cm/yr** (95% CI 1.22–1.93) | placebo |
+| 5 | **Lonapegsomatropin (weekly GH)** | **+0.9 cm/yr** (11.2 vs 10.3), p=0.009 | daily somatropin — **superiority** |
+| 6 | **Jintrolong (weekly PEG-GH, China)** | HV 13.41 vs 12.55 cm/yr, reported superior on HV, ΔHV and height SDS | daily rhGH |
+| 7 | **Somatrogon (weekly GH)** | +0.33 cm/yr (10.1 vs 9.8), 95% CI −0.24 to 0.89 | daily Genotropin — **non-inferior only** |
+| 8 | **Somapacitan (weekly GH)** | −0.5 cm/yr (11.2 vs 11.7) | daily GH — **non-inferior, numerically lower** |
+| 9 | **Vitamin D (one 6-mo RCT)** | +0.9 cm over 6 mo | placebo. ⚠ a phase 3 in 8,851 children over 3 yr was NULL |
+| 10 | **Fermented oyster extract 500 mg/d, 24 wk** | +0.84 cm over 24 wk | placebo. ⚠ **bone age also advanced significantly** |
+| 11 | **L-arginine / multivitamin** | +0.59 cm/yr | control |
+| 12 | **Zinc (≥2 y of age)** | +1.37 cm; overall in under-5s +0.23 cm | placebo |
+
+### 1C. UNCONTROLLED WITHIN-PATIENT VELOCITY CHANGES — large numbers, weak designs
+
+- **Erdafitinib** (pan-FGFR TKI, oncology): a paediatric case report annualising to ~19 cm/yr, plus a
+  compassionate-use series in which acceleration was independent of sex steroids and IGF-1.
+  **The largest single human growth acceleration ever reported for a drug — n=1, off-label, and the
+  FDA has a paediatric safety communication on it (SCFE, kyphoscoliosis).**
+- **Umedaptanib pegol (anti-FGF2 aptamer, Japan)**: +4.6 and +3.3 cm/yr over own baseline in 2 of 5
+  evaluable children in cohort 1; up to +5.0 cm/yr in cohort 2. Company press release, single-arm, tiny n.
+- **Infigratinib phase 2 cohort 5**: ~+3.0 cm/yr over own baseline at 18 months.
+- **Mecasermin in severe primary IGF-1 deficiency**: HV ~2.8 → ~8.0 cm/yr. No comparator ever ran.
+- **Asfotase alfa in hypophosphatasia**: height Z from median −3.7 by **+2.3 at 144 weeks** — the
+  largest height-Z rescue of any enzyme therapy, single-arm.
+
+### 1D. THE HONEST TOP LINE
+
+**No pharmacological intervention has ever been shown to add more than about 7–8 cm to adult height
+against a concurrent control, in any indication, anywhere.** Limb lengthening is the only thing that
+routinely exceeds that, and it is surgery, and it works after fusion. Everything in the drug landscape
+is a 2–8 cm effect. The CNP and FGFR3 agents, which are the most active area of development, are
+**1.5–2.0 cm/yr velocity agents whose adult-height contribution is still unproven** — no achondroplasia
+agent has an adult-height endpoint yet.
+
+---
+
+## PROSE 2 — AGENTS APPROVED OR IN TRIALS OUTSIDE THE US/EU THAT WESTERN REVIEWS MISS
+
+This is the highest-value section of the sweep, because Western reviews of the growth landscape are
+built from FDA/EMA labels and PubMed, and both systematically under-represent East Asia and the
+non-aligned markets.
+
+**Approvals that exist only outside the US/EU:**
+
+1. ⭐ **Growth hormone for ACHONDROPLASIA and HYPOCHONDROPLASIA — approved in JAPAN since 1997,
+   0.05 mg/kg/day.** Achondroplasia has never been a GH indication in the US or EU. Final height
+   +3.5 cm in males and +2.8 cm in females vs untreated achondroplasia. Novo Nordisk ran a
+   Japan-specific long-term special survey and an adult-height survey, both on clinicaltrials.gov,
+   both invisible to the Western literature. **Any Western statement that "GH does not work in
+   achondroplasia" is a statement about the absence of a Western label, not about the data.**
+2. ⭐ **Jintrolong (PEG-rhGH, GenSci, China; NMPA 2014)** — the only long-acting GH in the world
+   approved for **idiopathic short stature and Turner syndrome** as well as GHD, marketed ~12 years
+   with >150,000 paediatric courses. Reported **superior** to daily rhGH on height velocity, ΔHV and
+   height SDS. No Western LAGH carries an ISS indication anywhere.
+3. **Eutropin Plus / Declage (LB03002, LG Chem, South Korea)** — weekly sustained-release microsphere
+   rhGH, approved in Korea, followed in the LG Growth Study registry. Studied in the EU as BPLG-003
+   and never launched there.
+4. **CinnaTropin (CinnaGen, Iran)**, **Rastan (Pharmstandard, Russia)**, and national somatropin
+   biosimilars in India, China, Argentina and Cuba — a whole tier of approved growth products that
+   Western reviews do not enumerate.
+
+**Programmes running only, or mainly, outside the US/EU:**
+
+5. ⭐ **Umedaptanib pegol (RBM-007, RIBOMIC, Japan)** — a pegylated **anti-FGF2 APTAMER**, a modality
+   found nowhere else in the growth field, in early phase 2 in Japanese children with achondroplasia,
+   reporting the largest within-patient velocity increases of any achondroplasia agent (+4.6 and
+   +5.0 cm/yr). Regulated through PMDA. Essentially absent from Western reviews.
+6. ⭐ **KK8398 (= infigratinib, licensed to Kyowa Kirin for Japan) — AOBA study, jRCT2031240562** — a
+   **6-patient, single-arm, open-label phase 3**. That such a design counts as a phase 3 is itself a
+   fact about the Japanese regulatory route that Western readers routinely misread as weak evidence.
+7. ⭐ **Meclizine/meclozine repurposing for achondroplasia (Nagoya, jRCT2041200114 and a phase 2)** —
+   an OTC antihistamine taken to phase 2 by an academic group. **Result was essentially null on height
+   velocity (4.35 → 4.46 cm/yr, n=9, all on concomitant GH).** A clean, cheap, published negative that
+   the Western literature does not carry.
+8. ⭐ **ABSK061 (Abbisko, China)** — oral FGFR2/3 inhibitor with a paediatric mini-tablet formulation,
+   entering phase 1/2 in achondroplasia. **China's first indigenous FGFR3 programme for a growth
+   indication.**
+9. ⭐ **The Chinese long-acting GH cluster** — inpegsomatropin and givopegsomatropin (Amoytop),
+   GenSci004 and GenSci134 (GenSci), YPEG-rhGH (Amoytop), TJ101 (I-Mab), GB06 (Kexing). Amoytop alone
+   is running phase 3s in **ISS, SGA, Turner and adult GHD simultaneously**. This is a larger active
+   LAGH programme than anything in the West and it is almost entirely uncited outside China.
+10. **rhGH in achondroplasia, China (NCT05353192)** — a completed phase 4, n=39, single-arm, with AHV
+    at 52 weeks as its primary endpoint. The only achondroplasia GH trial outside Japan.
+11. **Chinese herbal medicine for ISS** — a substantial ChiCTR-registered randomised literature with
+    its own systematic review and meta-analysis, and an East-Asian-traditional-medicine network
+    meta-analysis. Quality is judged low by the reviewers themselves, but the **volume** of registered
+    trials exceeds the Western ISS trial literature.
+12. **Fermented oyster extract (Korea)** — a randomised, double-blind functional-food trial with a real
+    height endpoint (+0.84 cm over 24 wk) and a real cost (bone-age advance). Korean functional-food
+    regulation produces trials of this kind that no Western review indexes.
+13. **Agricultural growth promoters** — porcine somatotropin is approved in Australia and Brazil but
+    not the US; ractopamine is approved in the US and **banned in ~160 countries**; rBST is approved in
+    the US and banned in the EU, Canada, Japan, Australia and New Zealand. The regulatory map of
+    growth promotion is nearly the inverse of the pharmaceutical one.
+
+---
+
+## PROSE 3 — DISCONTINUED PROGRAMMES AND WHY THEY DIED
+
+Sorted by how informative the death is.
+
+**KILLED BY SAFETY**
+
+1. **Pituitary-derived human growth hormone (worldwide, 1985).** Withdrawn everywhere after
+   **iatrogenic Creutzfeldt-Jakob disease** in recipients. Cohorts in France, the UK and the US have
+   tracked CJD cases for four decades. This is the founding catastrophe of the field and the reason
+   recombinant GH exists.
+2. **PRECICE STRYDE limb-lengthening nail (FDA Class I recall, April 2021).** Corrosion at the
+   telescoping junction of the stainless-steel nail with focal osteolysis, periosteal reaction and
+   pain; a nationwide cross-sectional study found abnormalities in **21 of 30 segments**. No longer
+   manufactured. **The recall is a device-materials failure, not a failure of the lengthening
+   principle.**
+3. **PHA-794428 (Pfizer, modified GH, phase 2).** Terminated on **injection-site lipoatrophy**.
+4. **High-dose oestrogen for tall stature.** Abandoned on fertility and thrombosis grounds — not
+   efficacy; it worked, reducing adult height by roughly 2–7 cm.
+
+**KILLED BY EFFICACY**
+
+5. **Recifercept / TA-46 (Pfizer soluble FGFR3 decoy, 2022).** Terminated after a planned interim
+   analysis showed the pre-specified 6-month efficacy criteria would **not** be met at any tested dose.
+   Explicitly not a safety failure. **The only decoy-receptor approach ever taken into children with
+   achondroplasia, and it failed on efficacy — which is a real datum about that mechanism.**
+6. **Somavaratan / VRS-317 (Versartis XTEN-fusion GH, 2017).** Phase 3 VELOCITY missed non-inferiority:
+   **9.44 cm/yr vs 10.7 cm/yr on daily Genotropin, lower 95% CI bound −2.3 against a −2.0 threshold.**
+   The company's own account is that the comparator over-performed. The programme, and effectively the
+   company, ended. **A cautionary tale about non-inferiority margins in a field where the active
+   comparator is very good.**
+7. **Letrozole monotherapy in pre- and early-pubertal boys.** Randomised and **did not increase adult
+   height** — a clean negative that bounds the aromatase-inhibitor class by pubertal stage.
+8. **GH + leuprorelin in pubertal ISS (French trial).** Discontinued after ~2.4 years **at the request
+   of the French regulator**, and the height SDS at 2 years was worse on the combination than on GH
+   alone. A regulator-stopped combination trial is a rare and underused datum.
+
+**KILLED BY PORTFOLIO / COMMERCIAL DECISION — the largest category, and the one PubMed cannot see**
+
+9. **SAR442501 (Sanofi anti-FGFR3 antibody, 2024).** Terminated by **sponsor decision, explicitly not
+   a safety concern**, in a broad rare-disease pipeline clear-out. The reported context is competitive
+   pressure from infigratinib. **The only anti-FGFR3 monoclonal ever taken into children was killed by
+   a portfolio review, so the antibody modality on FGFR3 remains untested on efficacy.**
+10. **Nutropin Depot (Genentech/Alkermes, 2004).** The first long-acting GH ever approved (FDA 1999),
+    withdrawn on the stated grounds of **the resources required to manufacture and commercialise it**.
+    Painful large-bore injections and injection-site nodules are the clinical context. Killed
+    commercially, not scientifically.
+11. **Mecasermin rinfabate / iPlex (2007).** Withdrawn from the growth indication after **patent
+    litigation with Tercica**, not for efficacy or safety. Later repurposed for retinopathy of
+    prematurity. **A growth drug removed from the market by a lawsuit.**
+12. **TV-1106 (Teva albumin-fused GH, 2016).** Phase 3s terminated; injection-site reactions and
+    immunogenicity plus a strategic pipeline decision are the reported causes.
+13. **NNC126-0083 (Novo Nordisk first-generation PEG-GH).** Discontinued at phase 2 and superseded
+    internally by somapacitan.
+14. **ARX201 (Ambrx/Merck site-specific PEG-GH).** Discontinued ~2011; I could not locate the registry
+    entries this round.
+15. **Somatrem / Protropin (Genentech, discontinued 2004).** The first rDNA GH, superseded by
+    native-sequence somatropin on immunogenicity grounds.
+16. **GX-H9 / eftansomatropin alfa (Genexine, Korea).** Completed phase 2 in paediatric and adult GHD
+    and never completed a phase 3; the programme has effectively stalled.
+17. **Nohla Therapeutics (dilanubicel / NLA101).** A GMP Notch-ligand platform, ~$120M raised, orphan
+    designation, seven registered trials, **ceased operations in late 2019 with the platform dormant.**
+    Relevant here only because it is the one time a Notch-agonist protein reached clinical-grade
+    manufacture — and patients received the expanded cells, never the agonist.
+18. **Antibiotic growth promoters (avoparcin, virginiamycin) — banned EU 2006**; **rBST — banned EU,
+    Canada, Japan, Australia, NZ**; **hormonal implants — banned EU since 1988.** Growth promotion in
+    animals dies by regulation, not by efficacy failure.
+
+**A NEGATIVE THAT IS ITSELF A FINDING**
+
+19. **There is no expanded-access or compassionate-use programme for any growth-promoting agent
+    anywhere on clinicaltrials.gov.** A `StudyType = EXPANDED_ACCESS` filter across achondroplasia,
+    short stature and growth hormone deficiency returns nothing relevant. Erdafitinib has an expanded
+    access programme — for **cancer**, not growth.
+20. **No somatic gene therapy or gene editing for any short-stature indication has entered a
+    registered clinical trial in any jurisdiction.** Not achondroplasia, not GHD, not Turner.
+21. **No Smoothened agonist has ever been given to a human in a registered trial in any indication.**
+    Every registered hedgehog trial is an antagonist. The reason is indication-driven: nobody has ever
+    wanted more hedgehog signalling in a patient, so the molecule was never developed to clinical grade.
+
+---
+
+## PROSE 4 — STRUCTURAL OBSERVATIONS ABOUT THE LANDSCAPE ITSELF
+
+- **The field has three live mechanisms and only three**: CNP/NPR-B (vosoritide, navepegritide, BMN 333),
+  FGFR3 inhibition (infigratinib, dabogratinib, ABSK061, and the dead recifercept/SAR442501), and
+  GH/IGF-1 (daily, long-acting, and the oral secretagogue). Everything else on the register is
+  restoration of a deficit.
+- **Every approved growth agent raises a RATE. None targets the PERIOD.** The two interventions that
+  plausibly extend the growth window — aromatase inhibitors and GnRH analogues — are off-label
+  everywhere and neither is approved for a height indication in any jurisdiction.
+- **The combination era has started and the numbers are the largest in the field.** COACH
+  (navepegritide + lonapegsomatropin) delivered +2.74 cm/yr over CNP monotherapy, larger than any
+  monotherapy vs placebo. BMN 333 vs vosoritide is the first head-to-head active-comparator superiority
+  trial in achondroplasia.
+- **Adolescents are almost invisible.** Of the whole achondroplasia pipeline, one 24-patient
+  placebo-controlled phase 2b (NCT06732895) targets ages 12–18. The FGFR3 programmes cap at 10, 17 or
+  18 years and dabogratinib's paediatric study is 3–10 years.
+- **The indication boundary is the real constraint, not the biology.** Vosoritide is now in registered
+  trials for hypochondroplasia, Turner, Noonan, MPS IVA/VI, several monogenic short-stature genotypes
+  and **idiopathic short stature with an hGH comparator arm** (NCT06382155). If that ISS trial reads
+  out positive, the CNP class stops being a dysplasia drug.
+- **Non-inferiority is the dominant design in long-acting GH, and it hides the differences.** Only
+  lonapegsomatropin has ever beaten daily GH on the primary endpoint in a Western phase 3 (+0.9 cm/yr).
+  Somapacitan was numerically lower. Somavaratan died on a margin of 0.3 cm/yr.
+
+---
+
+## WHAT I COULD NOT VERIFY
+
+Recorded honestly, so nothing here is mistaken for established.
+
+1. **Registry IDs I could not obtain.** The jRCT identifier for the meclizine **phase 2** (I have the
+   phase 1b, jRCT2041200114); the jRCT/PMDA identifiers for the RIBOMIC umedaptanib pegol observational
+   and early-phase-2 studies; the ChiCTR identifiers for the Chinese herbal medicine ISS trials; the
+   CRIS identifiers for the Korean growth-clinic and fermented-oyster-extract studies; the LIFE-MET
+   metformin/bone-age trial identifier; the registry entries for ARX201.
+2. **Effect sizes I could not obtain.** The cm figures for: the Chinese LAGH phase 3s (inpegsomatropin,
+   GenSci004, YPEG-rhGH, TJ101, GB06, Jintrolong SGA 4-yr); the China rhGH-in-achondroplasia phase 4
+   (NCT05353192, results not posted); the Saizen hypochondroplasia phase 2 (NCT01111019); the GH-in-OI
+   trial (NCT00001305); the CinnaTropin phase 3; the Eutropin Plus weekly-vs-daily comparison; the
+   Turner/Noonan/PWS adult-height figures against randomised controls where I cite only ranges; the
+   fulvestrant MAS trial ID.
+3. **Claims I am carrying at lower confidence.** GH in Noonan "+1.0 to +1.7 SDS" and GH in CF
+   "+3–4 cm/yr" are ranges I reconstructed from secondary sources rather than from a primary I read in
+   full. The erdafitinib ~19 cm/yr figure is an annualisation of a case report. The Turner oxandrolone
+   figure I have corrected once already (interim 4.6 cm → final 4.1 cm) and it should be quoted from
+   the final analysis only.
+4. **Sources I could not reach.** The jRCT search interface is JavaScript-driven and did not render for
+   automated fetch; I reached Japanese trials only through press releases and clinicaltrials.gov
+   mirrors. I did not reach ChiCTR, CTRI, ISRCTN, ANZCTR or the EU CTR directly this round — those
+   registries are the largest remaining gap in this enumeration, and the Chinese and Indian growth
+   trial literature is almost certainly larger than what is represented here.
+5. **A category I could not enumerate at all.** National named-patient and hospital-exemption schemes
+   (e.g. French ATU/AAC, Italian Law 648, UK EAMS, Japanese compassionate-use) are not on any public
+   registry in a searchable form. If any growth agent has been supplied on a named-patient basis, it
+   would not appear anywhere in this sweep.
+6. **Mechanistic class assignments.** For GenSci134 and GB06 I could not confirm the molecular class
+   from a primary source. For KK8398 I confirmed it is infigratinib from the sponsor's own press
+   release, not from a regulatory document.
+
+7. **Registry-ID hygiene.** Every NCT number in this file that carries an effect size or a
+   discontinuation claim was resolved against the clinicaltrials.gov API and confirmed to match the
+   agent named. Two IDs I had drafted from memory were WRONG and were corrected (the LUM-201 phase 2
+   pair, and the ID attached to the Leschek ISS placebo trial, which I have now marked UNVERIFIED
+   rather than guess). Any remaining ID given without a resolved title should be treated as
+   provisional. Where I write "UNVERIFIED" against a registry ID it means the trial exists in a
+   registry I could not query programmatically, not that the trial is doubtful.
+8. **One number I corrected mid-sweep and would flag to any reader:** navepegritide's FDA approval is
+   **27 February 2026**, not 2025 as I first wrote. The regulatory landscape in this domain moved
+   twice during 2026 (navepegritide approval, infigratinib phase 3 readout and NEJM publication) and
+   anything written before mid-2026 is out of date.

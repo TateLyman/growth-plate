@@ -10255,3 +10255,196 @@ excluded.
   positives — kept as the negative result.)
 - Validate before commit: `python3 atlas/tools/validate.py` must print `ERRORS: none`.
 - Branch: `claude/growth-system-atlas-yl5esl`.
+
+## 🗺️🗺️🗺️🗺️🗺️ R436 — **THE CONCEPT COVERAGE MAP. 21 AGENTS ENUMERATED THE OUTSIDE LITERATURE WITHOUT
+## READING THIS REPO, AND 825 OF 2,193 CONCEPTS (37.6%) HAD NEVER BEEN MENTIONED HERE ONCE.**
+## Run `atlas/tools/concept_coverage_map.py` · `build_concept_registry.py` · `triage_zero_concepts.py`
+## · `enumeration_completeness_check.py` · data `atlas/data/round436/` · briefs+output `atlas/concepts/`
+
+⭐ **WHY IT HAD NEVER BEEN ASKED.** Every round of this project is LEAD-DRIVEN — follow a thread, work it,
+close it. That produces depth and **structurally cannot produce coverage**, because you can only follow a
+thread you already thought of. R411 inventoried blind-spot GENES and R431 swept NODES-vs-CLAUDE.md; nobody
+asked what the COMPLETE CONCEPT SPACE is. It cannot be answered from inside — deriving the list from the
+node graph is circular. So: 21 domain agents, hard-ruled not to read this repo, 2,562 rows → 2,193 concepts,
+scored against 941 nodes / 521 gaps / 1,903 refs / CLAUDE.md.
+
+| tier | n | % | meaning |
+|---|---|---|---|
+| **ZERO** | **825** | **37.6%** | **never in a node, a gap, a reference OR the ledger** |
+| REF_ONLY | 41 | 1.9% | a reference mentions it; no node reasons about it |
+| **THIN** | **319** | **14.5%** | worked in a node, **absent from CLAUDE.md** — CORR-352 measured at concept level |
+| COVERED | 1,008 | 46.0% | |
+
+⭐⭐ **THE DOMAIN PROFILE IS THE FINDING, NOT THE HEADLINE.** Deepest where rounds were spent — **endocrine
+17.9% zero**, transcription factors 18.4, dysplasia 20.5, signalling 24.0, matrix 25.2, mechanics 25.6.
+Emptiest where nobody looked — ⛔ **AXIAL/TRUNK 65.4% · VASCULAR/NEURAL/IMMUNE/MICROBIOME 62.9%**, then
+environment 58.3, comparative 55.3, cell biology 50.0.
+→ **THE ATLAS IS THINNEST IN THE COMPARTMENT WHERE THE CENTIMETRES ARE (R274/R318: the residual is
+trunk-dominant) AND IN THE SYSTEM THAT DECIDES WHETHER ANYTHING REACHES IT (R315's delivery wall).**
+
+⭐⭐ **THE CONTROL, AND IT IS THE MORE INTERESTING HALF.** A ZERO list means nothing unless the enumeration
+is at least as broad as the atlas. Run it the other way: **182 of 447 hard-worked atlas gene symbols are
+MISSING from the enumeration — and the top misses are our own leads: HHIP (976 ledger mentions), SAG, NRK,
+PDE3B, SCUBE3, ECRG4, TET1, SFRP5.** ⭐ **NEITHER SET CONTAINS THE OTHER.** The depth is real, the breadth
+is real, the union is far larger than either. **And the inversion is worth stating: this file's
+best-validated target is nearly invisible to a broad survey of the field — which is exactly WHY no
+HHIP-directed agent exists in any species.**
+
+## ⭐⭐⭐ R436 — **"WE SEEM TO ALWAYS GET THE BAD ENDS": ANSWERED, AND MY FIRST HYPOTHESIS WAS WRONG**
+
+⛔ **HYPOTHESIS TESTED AND REFUTED.** CORR-203 is the most-invoked correction in this file (**40 uses**,
+ahead of CORR-327 at 25), and R302's ruling says the only three real disqualifiers are absent-from-tissue,
+wrong-direction and redundant — so CORR-203 might be killing things R302 calls gaps. **Read all forty: it
+is not.** It is used as a MAGNITUDE DISCOUNT or an explicitly scoped caveat (*"applies to the length gain,
+not to the vehicle"*, *"applies to efficacy, not to delivery"*), **five instances use it in the NEGATIVE to
+certify a clean normal-animal result**, and where it is cited as disqualifying an independent decisive
+ground sits in the same sentence. Three instances are mislabelled (study quality; CORR-327; CORR-325) —
+labelling, not misuse.
+
+⭐⭐ **THE REAL ANSWER, AND IT IS STRUCTURAL.** Disposal vocabulary runs **255 words to 43** (5.9:1). And of
+everything in this atlas with a **POSITIVE LENGTH ENDPOINT IN A NORMAL ANIMAL — FOURTEEN ITEMS** (rescues
+and proxies excluded; `atlas/data/round436/positive_length_endpoints_normal_animal.json`):
+| modality | items |
+|---|---|
+| genetic, **no agent** | Hhip1 cKO · Spin4 KO · Fbn1 cKO · Fgfr3 −29E enhancer |
+| **approved drug** | cilostazol · sacubitril · meclozine — ⛔ **ALL THREE FAIL STEP 0** |
+| investigational, unobtainable | dabogratinib |
+| research-grade | SAG · recombinant osteolectin |
+| supplement | resveratrol · myo-inositol (**no long-bone effect**) |
+| physical | lateral joint loading (**device built 3×, never used in a human**) · **local limb warming (FREE)** |
+⭐ **EXACTLY THREE ARE AVAILABLE TO A PERSON TODAY AND NONE OF THEM IS A DRUG. Every approved drug that
+works is already occupied by the stack; everything additive is genetic with no agent, research-grade with
+no GMP, or physical with nobody having built it. THE EMPTINESS IS THE SHAPE OF THE SHELF, NOT BAD LUCK.**
+
+⛔ **AND THE 825 ZEROS DO NOT HIDE A MISSED COMPOUND.** Filtered to cartilage-enriched (≥ the ACAN
+benchmark) **AND** ≥20 CPM **AND** a recorded TALL/LONGER direction, the ZERO list returns **FOUR**, all
+syndromes rather than levers (Costello · AIP pituitary gigantism · congenital generalised lipodystrophy,
+which carries **accelerated** BA · NONO-related XLID). R298's base rate, holding on a set it was never
+computed over. **Said plainly rather than implied.**
+
+## 🧬 R436 — **THE ONE GENUINELY NEW AXIS: SOLUBLE EPOXIDE HYDROLASE. Recorded WITH its objection.**
+⭐ `soluble epoxide hydrolase` **0 files** · `EPHX2` **0** · `TPPU` **0** · `epoxyeicosatrienoic` **0** —
+and **two independent agents surfaced it.** `chen2026seh` (Cell Prolif 2026, verified): the sEH inhibitor
+**TPPU PROMOTED LONG-BONE GROWTH IN NEWBORN MICE — NORMAL ANIMALS, so CORR-203 does not apply** — by raising
+**FABP5⁺ SEPTOCLAST** activity (MMP9, FABP5 up in the metaphysis) via HUVEC→hDPSC crosstalk raising HIF-1α
+and activating NOTCH; the authors' prior work attributes it to **H-type vessel-coupled osteogenesis**.
+✓ **STEP 0 CLEAN** — nothing in this stack touches sEH, EETs or septoclasts. ✓ **sEH inhibitors have reached
+humans** (GSK2256294, EC5026). *(`septoclast` itself is covered, 10 files — the CELL was known, the AXIS was not.)*
+⛔ **THE OBJECTION, AND IT IS SERIOUS: the phenotype is a REDUCED hypertrophic:proliferative width ratio,
+h_term is ~80% of longitudinal growth, and the mechanism is faster MMP9 clearance plus more H-type vessel
+coupling — while R365 established VASCULAR INVASION IS THE TERMINAL EVENT OF CLOSURE.** It buys length only
+if DISCHARGE is rate-limiting, and it may spend the period. **Newborn mice**; CORR-299 unasked in any
+species. **Worth a full round; NOT a promotion.** `g_l12_436a`
+
+## 🚨🚨 R436 — **THREE PAPERS THIS FILE ALREADY OWNED AND NEVER PUT IN THE LEDGER. CORR-351, THREE TIMES.**
+
+⭐⭐⭐ **① `weber2025` — Nat Commun 2025, IN THE BIBLIOGRAPHY SINCE 2026-08-10, CITED BY NINE NODES,
+`one_line_finding: None`, ZERO CLAUDE.md mentions. It holds the vertebral endpoint this file says does not
+exist.** Jerboa + mouse tail skeletons:
+· ⭐ **LOSS OF NPR3 IN MICE CAUSES DISPROPORTIONATE ELONGATION OF THE PROXIMAL AND MID-TAIL VERTEBRAE**, in
+  addition to the proximal limb. **A NORMAL-ANIMAL perturbation with a VERTEBRAL ELONGATION endpoint** —
+  against CLAUDE.md's own line that only four agents have any vertebral endpoint and three are unusable.
+· ⭐⭐ **It converges with R421 from a second instrument: NPR3 corrects to 59.2% TRUNK at P=4.9e-90, the most
+  trunk-dominant value the corrected method has ever produced.** Two independent routes now name NPR3 as
+  **the trunk-directed node of the CNP axis** — the arm R302 demoted and R424 held.
+· ⛔⛔ **AND IT CUTS AGAINST R425's OWN ARGUMENT: CELL NUMBER drives vertebral proportion, while CHONDROCYTE
+  HYPERTROPHY — "a major driver of proportion in all mammal limbs" — IS LIMITED IN VERTEBRAE.** R425 put the
+  CNP arm back in because **h_term is the only term left with an obtainable agent** — but that was reasoned
+  on LIMB biology. **For the TRUNK the lever is N, not h_term**, and R423 closed N as having no agent
+  anywhere. The vertebral genes overlap limb genes *significantly but not substantially*.
+⭐ **② `cyp17d2025` — in the bibliography since 2026-08-06, cited by ONE node, ZERO CLAUDE.md mentions, with
+the numbers already extracted.** 88 patients with 17α-hydroxylase/17,20-lyase deficiency: **bone age delayed
+≥2 y in 92.5%**, and of 51 final heights **77% ≥50th centile, 39% ≥90th, only 8% ≤25th**, with a high stable
+span-to-height ratio. Its own conclusion names the trade: **lower stature in childhood and missed growth
+spurts, then an EXTENDED GROWTH PHASE and GREATER FINAL HEIGHTS.** ⭐ **That is R360's Regime-1→Regime-2
+switch measured in humans with an adult-height endpoint, and it is the best-powered human evidence in this
+file that the anastrozole arm's premise is right** — against `tanriverdi2023` P=0.071, `mauras2016` P=0.06
+and `ferris2017`'s PAH null. ⛔ Limits: sex steroids absent **from birth**, not partial suppression started
+late; **26% had lower Z-scores and plausibly missed a spurt**; and the cohort is BOTH hypo-oestrogenic and
+hypo-androgenic, so it cannot separate R419/R420's androgen arm.
+⭐ **③ `chu2026` is the HUMAN pubertal growth-plate atlas** (Sci Transl Med 2026) — and its **GP1/GP2 mouse
+DE table is what R241–R246 were built on.** Attribution checked and CONSISTENT; no defect. See CORR-296 below.
+
+## ⛔ R436 — **CORR-296 UPGRADED: the chu2026 GP1/GP2 contrast looks COMPOSITIONAL, not a maturity axis**
+Tried to settle the sign convention with whole PANELS instead of single markers.
+⚠ **First, a trap: the file is semicolon-delimited with COMMA DECIMALS — a naive csv read returns ZERO rows
+silently.** 15,983 genes; 1,480 at padj<0.05, **1,039 positive : 441 negative**.
+· **MATURE panel orients 5/6** — COL10A1 +3.24 (1e-07), MEF2C +3.48 (7e-38), IBSP +8.34 (4e-51), ALPL +1.77,
+  SPARC +0.95; against RUNX2 −0.95.
+· ⛔ **EARLY panel only 3/6** — SFRP5 −2.36, UCMA −1.79, COL9A1 −0.51 the right way, but **CYTL1 +5.28**,
+  PTH1R +1.13 and COL2A1 +0.38 the wrong way.
+· ⛔ **The stem markers openly contradict: SFRP5 −2.36 and NOTUM −1.57 one way, PRRX1 +1.78 (padj 1e-14) the
+  other — and PRRX1 is the marker the paper's own HUMAN result uses to name the root population.**
+⭐ **THE TELL IS THE TOP OF THE FILE: the two largest positives are PRG4 +8.46 (superficial ARTICULAR) and
+IBSP +8.34 (BONE). Two different tissues moving together at the top of a contrast that should lie along one
+cartilage trajectory.** → **A contrast no maturity or stem panel can orient, whose biggest movers are markers
+of two ADJACENT TISSUES, behaves like a difference in COMPOSITION rather than regulation — CORR-339's shape,
+on the dataset four rounds are built on.** ⛔ Honest limit: I have the DE table, not cluster composition, so
+this is a strong inference, not a demonstration. **It licenses no new direction call** — it gives CORR-296 a
+REASON, and tells whoever settles it to put **PRG4 and IBSP in the control panel first.** `g_l13_436d`
+✓ **Unaffected: every ABUNDANCE claim from this table** (HHIP baseMean 3.73 > FGFR3 2.30; NRK 6.10) — those
+are baseMeans, not directions.
+
+## 🚫 R436 — **NEW FREE SUBTRACTIONS, EACH VERIFIED AGAINST PUBMED BY THE MAIN LOOP**
+⛔⛔ **CALCIUM SUPPLEMENTATION COSTS 3.5 cm OF ADULT HEIGHT IN BOYS — and it is RANDOMISED.** `prentice2012`
+(AJCN 2012, ISRCTN28836000): 160 Gambian children, double-blind placebo-controlled, **1000 mg Ca/d 5 d/wk ×
+12 months at age 8–12**, followed to 23.5 y. **Boys were 2.0 ± 0.8 cm TALLER at 15.5 y (P=0.01) with age at
+peak height velocity ADVANCED BY 7.4 ± 2.9 MONTHS**, then stopped growing earlier (P=0.02) and finished
+**3.5 ± 1.1 cm SHORTER at 23.5 y (P=0.002)**. No significant effect in girls.
+⭐ **This is failure mode #1 with the ONLY endpoint that settles it. The file has rejected the same trade
+three times — PRC2 (R281), GH after mid-puberty (R254/269), fermented oyster extract (R296) — and NONE of
+those had a randomised ATTAINED ADULT HEIGHT number.** ⚠ The population had low calcium intake and delayed
+puberty, so this is correction *toward* recommendation, not supra-adequate dosing in a replete subject —
+but the direction is the point: **correcting the deficiency ADVANCED puberty and COST adult height. Do not
+push calcium above requirement.**
+⛔ **H. PYLORI — `pylori` returns ZERO files anywhere in this atlas.** `xu2022hpylori`: meta-analysis, 29
+studies / 9,384 subjects, **height-for-age Z SMD ≈ −0.41**. Diagnosable by breath or stool antigen and
+eradicable in a week. ⚠ Observational, SES-confounded — causation not established. **Free to check.**
+⛔ **AIRWAY OBSTRUCTION — `tonsillectomy` 0 files, `adenotonsill` 0, `sleep apnea` 0.** `PMID 40909198`
+(verified, UK Biobank 2025) reports an **ADULT HEIGHT** endpoint for childhood tonsillectomy. An entire axis
+with a human adult-height number and no coverage here.
+
+## 🩺 R436 — **THE INTERVENTION LANDSCAPE HAD TWO FACTS THIS FILE'S CONCLUSIONS DEPEND ON**
+⭐⭐ **GH IS AN APPROVED INDICATION FOR ACHONDROPLASIA AND HYPOCHONDROPLASIA IN JAPAN, SINCE 1997**, at
+0.05 mg/kg/day, with reported **final height +3.5 cm males / +2.8 cm females** vs untreated. **There is no
+Western label, so "GH doesn't work in achondroplasia" is a statement about LABELS, not about data** —
+CORR-342's shape (inheriting an inclusion criterion as the state of the field) on a whole arm. ⚠ Agent-
+reported, not yet re-verified by the main loop; treat as `value_unverified` until the primary is read.
+⭐⭐ **AND THE ONLY PLACEBO-CONTROLLED GROWTH TRIAL IN ADOLESCENTS ANYWHERE: `NCT06732895`, navepegritide
+100 µg/kg weekly, ages 12–18, n=24.** That is **this subject's exact demographic**, on the arm R425 put
+back in. Also reported: **COACH (navepegritide + lonapegsomatropin) AGV 8.69 vs 5.95 cm/yr = +2.74 cm/yr**,
+the largest controlled velocity gain in the field, and it is the CNP + GH pair he is already on; and
+**vosoritide in ISS with an hGH comparator (`NCT06382155`)**, which if positive stops the CNP class being a
+dysplasia drug. ⚠ All agent-reported; verify before acting. ⭐ Structural negatives worth keeping: **no
+expanded-access programme for any growth agent anywhere · no gene therapy for any short-stature indication
+in any registry · no SMO agonist has ever been given to a human.**
+
+## 📋 R436 — **THE ARTEFACTS, so the next round starts from a map instead of a thread**
+`atlas/concepts/briefs/` 21 domain briefs · `atlas/concepts/enumerations/` the raw external enumerations
+(~890 KB, 2,562 rows, tens of thousands of PMIDs, most agents machine-verified every identifier) ·
+`atlas/concepts/concept_registry.yaml` · `atlas/data/round436/coverage.json`, `zero_triage.json`,
+`completeness.json`, `disposal_audit.json`, `positive_length_endpoints_normal_animal.json`,
+`verified_new_findings.md`.
+⚠ **READ THE ENUMERATIONS AS AGENT OUTPUT, NOT AS THIS FILE'S STANDARD.** Everything promoted into CLAUDE.md
+above was re-resolved against PubMed or Europe PMC by the main loop; **the rest has not been, and two agents
+flagged that they worked partly from search metadata rather than full text.** ⚠ Triage caveat: gene symbols
+are extracted from concept names, so collisions happen (LUM-201 aliased to the gene LUM). Rows without a
+gene get no annotation — that is a miss, not a null.
+
+## ⚠⚠ R436 — **THREE LATE NUMBERS THAT CORRECT OR COMPLETE LOAD-BEARING FIGURES IN THIS FILE**
+⛔ **"h_term IS ~80% OF LONGITUDINAL GROWTH" NEEDS A SOURCE AND MAY BE OVERSTATED.** The quantitative-
+structure enumeration returns Wilsman 1996 (`PMID 8982136`), which partitions rat proximal tibial elongation
+**9% cell division / 32% MATRIX SYNTHESIS / 59% chondrocytic enlargement** — shifting to **44/49** in slow
+plates. ⭐ **If that is the right decomposition then hypertrophic enlargement is ~59%, not ~80%, and MATRIX
+SYNTHESIS PER CELL is a term this file has never carried at all** — a third of the total, with its own
+biology (secretory capacity, COPII, TANGO1/MIA3) and its own enumerated domain. ⚠ Agent-reported, rat, one
+study; **re-read the primary before rewriting the identity** — but the ~80% figure should not be quoted
+again without one.
+⭐ **THE CONVERSION FACTOR THE FILE HAS NEVER HAD: distal femur ~9 mm and proximal tibia ~6 mm per SKELETAL
+YEAR** (`PMID 31169579`), which with spine at 1.14–2.00 cm/yr makes **one extra bone-age year worth roughly
+2.5–3.5 cm of stature.** That is the unit every period argument in this file should have been denominated in.
+⭐ **AND THE INSTRUMENT FOR R432's RECESSIVE CLASS EXISTS: the PAKISTAN GENOME RESOURCE reports homozygous
+loss-of-function in 6,476 genes** (`PMID 42310464`). R432 showed a het burden test cannot contain a recessive
+gene by construction; this is the cohort that can. Also flagged: **`hawkes2024` (PMID 39362880) — rare
+NON-CODING WGS in 333,100 people, 29 variants from −7 to +4.7 cm, HMGA1-proximal aggregate +5 cm** — an
+entire variant class exome burden is blind to. ⚠ All agent-reported; verify before use.
