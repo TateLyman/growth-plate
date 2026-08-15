@@ -878,7 +878,7 @@ zones and mass, never length).
 
 ## h_term / HYPERTROPHIC VOLUME — the largest term in the identity, mapped R295
 
-**~80% of longitudinal growth is hypertrophic chondrocyte volume increase.** Prior nodes (2026-08-08):
+**59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361 is hypertrophic chondrocyte volume increase.** Prior nodes (2026-08-08):
 `the_swelling_machinery_has_only_ever_been_switched_off`, `the_volume_set_point_and_where_a_compound_could_act`.
 bush2010 bumetanide = **−35% elongation with hypertrophic cell number UNCHANGED (193 vs 192, p=0.937)** —
 the cleanest isolation of h_term in the file. hall2001: the set-point **re-tunes** (180/280/380 mOsm → same
@@ -1294,7 +1294,7 @@ HDAC class R298 already recorded as CONTRAINDICATED. Without the coverage contro
   authors state **neither additive nor attenuating**. BMD additive, length not. **WT: meclozine lengthens
   ONLY THE HUMERUS.** FGFR3 arm = erdafitinib's arm. Substitution, now with the experiment behind it.
 - **COBIMETINIB fails twice** — it works by **reducing** chondrocyte hypertrophy (COL10A1/MMP13 down), and
-  h_term is ~80% of longitudinal growth; plus MEK1/2 is the ERK arm erdafitinib already blocks.
+  h_term is 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361; plus MEK1/2 is the ERK arm erdafitinib already blocks.
 - ✓ **NRK confirmed empty BY QUERY: ChEMBL has NO human NRK target record** (only rat cell lines). STE20
   family, comprehensively profiled (`PMID 30897078`), no inhibitor, no bioactivity, no chemical series.
 
@@ -1979,7 +1979,7 @@ AMD1-selective agent with a caliper on a bone.
 among the highest-expressed genes in the whole panel (COL2A1 = 9,201); PLOD2 745; LOXL4 21,618 HZ.
 ✓ **Step 0 CLEAN** — matrix cross-linking is moved by *nothing* in this stack. The test that killed
 sacubitril, LUM-201, meclozine, PDE3 and cobimetinib.
-✓ **Acts on h_term** (~80% of longitudinal growth), which R296 said had NO upward-pointing agent.
+✓ **Acts on h_term** (59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361), which R296 said had NO upward-pointing agent.
 ⭐ **NEW THIS ROUND:** IMPC **Plod1 TIBIA LENGTH +0.090, P=2.40e-03** — positive, the RARE direction under
 CORR-329 (245 neg vs 38 pos), and the **first length endpoint anywhere on this pathway**. Plus R330's
 configuration: **LOXL2 −0.347 at the KNEE vs +0.253 at the SHOULDER** = brake-like, matching HHIP/STC2.
@@ -3379,7 +3379,7 @@ add. ⚠ Lamb; the human disc-vs-physis partition has never been measured.
 
 ⛔⛔ **FOUR — THE JAM, MEASURED, AND I WAS ONE SENTENCE FROM ENTERING IT AS A POSITIVE.** `dandrea2021b`
 reports hypertrophic zone height rising **96 ± 6 → 540.7 ± 67.2 µm** over two weeks of 17 N haversine
-loading (`robling2001`) — a **5.6-fold expansion of the zone that carries ~80% of longitudinal growth.**
+loading (`robling2001`) — a **5.6-fold expansion of the zone that carries 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361.**
 ⛔ **`ohashi2002`, same model, same lab: at 17 N the LONGITUDINAL MINERALISATION RATE WAS COMPLETELY
 SUPPRESSED AND DID NOT RECOVER**, with **cracks in the plate**, suppressed cartilage mineralisation and
 suppressed capillary invasion **despite MORE VEGF-expressing chondrocytes** — while plate and hypertrophic
@@ -4642,7 +4642,7 @@ DIRECTION at ≥1.5-fold.**
 ⭐ **1,298 profiled → 139 with a replicated shape: HZ_RISING 76 · RZ_FALLING 46 · MID_PEAK 17.** The flat
 majority drops out, which is the housekeeping control working. **The method returns PROGRAMMES, not genes.**
 
-⭐⭐ **THE HYPERTROPHIC PROGRAMME IS THE PRIZE — h_term is ~80% of longitudinal growth and it is made there.**
+⭐⭐ **THE HYPERTROPHIC PROGRAMME IS THE PRIZE — h_term is 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361 and it is made there.**
 Donor-1 values, log2 HZ/RZ:
 **ARSI +5.11** (RZ 23 → HZ 6,820, ~300×, an ARYLSULFATASE) · **PANX3 +4.87** (223 → **40,113**, ~180×) ·
 SLC18A2 +4.77 · SCIN +4.48 · **F13A1 +3.94** (546 → 21,494, transglutaminase) · SLC44A2 +3.18 ·
@@ -4796,7 +4796,7 @@ both probes (8,841 and 11,094) without being monotone. **CHST11 peaks PROLIFERAT
 and 13,829 vs HZ 10,979 and 7,715), as do **XYLT1 and CSGALNACT1**, the chain-initiation enzymes.
 ⭐ **Different platform, different donors, nineteen years apart — independently corroborating R409's
 purity-corrected switch. The matrix is BUILT in the proliferative zone and 6-O-SULFATED in the hypertrophic
-zone**, which is the zone that makes ~80% of longitudinal growth.
+zone**, which is the zone that makes 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361.
 
 ⭐⭐ **TWO — AND THE IMPORTER MOVES THE OTHER WAY, WHICH IS THE ARGUMENT THAT THEY ARE IN SERIES AND NOT
 SATURATED.** **SLC26A2 peaks PROLIFERATIVE and FALLS into HZ in both donors** (D1 RZ 2,093 → PZ 8,558 → HZ
@@ -5562,7 +5562,7 @@ removes treatment days; a lower dose changes the **yield per stem cell consumed*
 continuous comparator, and an ACTIVATING FGFR3 mutation rather than a WT subject on an inhibitor. **A
 dosing-TARGET precedent, not evidence the schedule works.**
 
-⭐ **AND AN OBSERVATION ABOUT A DECISION ALREADY MADE.** **h_term is ~80% of longitudinal growth and it is the
+⭐ **AND AN OBSERVATION ABOUT A DECISION ALREADY MADE.** **h_term is 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361 and it is the
 one term that adds height WITHOUT spending a division — POOL-FREE HEIGHT.** The CNP arm is what moved it
 (`dauber2026`: velocity **+4.0 SD** with **BA/CA UNMOVED**). **Dropping vosoritide removed the most
 pool-efficient arm in the stack**, which under a pool-limited model is backwards. ⚠ The counter is compartment
@@ -6430,7 +6430,7 @@ framing is WRONG FOR THIS SUBJECT** because his baseline is already displaced up
 | arm | term | interaction with SAG |
 |---|---|---|
 | **SAG** | **N (pool)** | the ONLY arm in the stack that touches N |
-| **vosoritide** | **h_term** (~80% of longitudinal growth) | ⭐ **MULTIPLICATIVE — the clean pair** |
+| **vosoritide** | **h_term** (59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361) | ⭐ **MULTIPLICATIVE — the clean pair** |
 | **erdafitinib** | λ and h_term (via CREB) | multiplicative ✓ · ⚠ but shares the SCFE and Ihh liabilities |
 | **anastrozole / vepdegestrant** | **the period** | permissive — buys time for the pool to be spent |
 | **GH** | **throughput (D)** | ⚠ **THE ANTAGONIST — `chu2025`: GH promotes committed over self-renewing division and SPENDS the pool SAG builds**, and per `hunziker1994`/R360 it is ~height-NEUTRAL per unit pool |
@@ -7616,7 +7616,7 @@ and makes the POOL the binding constraint. **The better the AI works, the less t
 ⛔ **AND THE STACK IS BUILT FOR REGIME 1. NOTHING IN IT RAISES AMPLIFICATION, AND GH LOWERS IT 23%.**
 ✓ **The one term the stack moves that is demonstrably BONE-AGE-SPARING is h_term** — `dauber2026`, phase II,
 **30 children**, vosoritide 15 µg/kg/d × 12 mo: velocity 4.53 → **8.09 cm/yr, +4.0 SD velocity Z** (95% CI
-3.08–4.91), height +0.65 SD, **BA/CA ratio UNMOVED.** h_term is ~80% of longitudinal growth and does not
+3.08–4.91), height +0.65 SD, **BA/CA ratio UNMOVED.** h_term is 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361 and does not
 spend the budget. ⚠ Same trial: five discontinued on longer use — **three SCFE**, four genu valgum.
 
 ⛔ **FIVE — AND A WARNING AGAINST R355's OWN REASSURANCE. BONE AGE IS NOT THE POOL.** R355 read "vosoritide
@@ -9624,7 +9624,7 @@ more AKT.** So **losing NRK RAISES AKT.** In vivo: Nrk-KO placentas have raised 
 tall + **disproportionate tall** + overgrowth (Proteus) · **PIK3CA** → tall + overgrowth · **MTOR pLoF
 −3.65 cm** and HPO short. **And the drug agrees: `alvarezgarcia2007` — rapamycin 2 mg/kg/day in 4-wk rats
 HALVED longitudinal growth rate, 94 vs 182 µm/day.**
-⭐ **It lands on h_term** — AKT/mTOR sets CELL SIZE, ~80% of longitudinal growth, the term R296 said had no
+⭐ **It lands on h_term** — AKT/mTOR sets CELL SIZE, 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361, the term R296 said had no
 upward-pointing agent.
 
 **FOUR — ⛔⛔⛔ AND THE MODALITY IS WRONG. NRK's ANTIPROLIFERATIVE FUNCTION IS KINASE-INDEPENDENT.**
@@ -10157,7 +10157,7 @@ hypopituitary patients on GH. ⭐ **In children, a GREATER fT4 fall on starting 
 response**, and a persistent fall *"can significantly reduce height velocity… levothyroxine should be
 considered."*
 ⛔ **THIS SUBJECT IS ON GH AND HIS TSH / FREE T4 / FREE T3 APPEAR NOWHERE IN THIS ATLAS.**
-✓ Why it's a height endpoint: **T3 INDUCES HYPERTROPHY** (grade A) = h_term ≈ 80% of longitudinal growth ·
+✓ Why it's a height endpoint: **T3 INDUCES HYPERTROPHY** (grade A) = h_term 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361 ·
 `delvecchio2015` **215 pts / 20 yr: adequate levothyroxine restores final height to normal and EXCEEDS
 target** · `cammisa2024`: acquired hypothyroidism, catch-up often incomplete, **PUBERTAL-ONSET WORST** ← his stage.
 ⛔ **CEILING, STATE IT WITH THE RECOMMENDATION:** the endpoint **SATURATES** at adequate replacement (dose and
@@ -10331,7 +10331,7 @@ and activating NOTCH; the authors' prior work attributes it to **H-type vessel-c
 ✓ **STEP 0 CLEAN** — nothing in this stack touches sEH, EETs or septoclasts. ✓ **sEH inhibitors have reached
 humans** (GSK2256294, EC5026). *(`septoclast` itself is covered, 10 files — the CELL was known, the AXIS was not.)*
 ⛔ **THE OBJECTION, AND IT IS SERIOUS: the phenotype is a REDUCED hypertrophic:proliferative width ratio,
-h_term is ~80% of longitudinal growth, and the mechanism is faster MMP9 clearance plus more H-type vessel
+h_term is 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361, and the mechanism is faster MMP9 clearance plus more H-type vessel
 coupling — while R365 established VASCULAR INVASION IS THE TERMINAL EVENT OF CLOSURE.** It buys length only
 if DISCHARGE is rate-limiting, and it may spend the period. **Newborn mice**; CORR-299 unasked in any
 species. **Worth a full round; NOT a promotion.** `g_l12_436a`
@@ -10432,7 +10432,7 @@ are extracted from concept names, so collisions happen (LUM-201 aliased to the g
 gene get no annotation — that is a miss, not a null.
 
 ## ⚠⚠ R436 — **THREE LATE NUMBERS THAT CORRECT OR COMPLETE LOAD-BEARING FIGURES IN THIS FILE**
-⛔ **"h_term IS ~80% OF LONGITUDINAL GROWTH" NEEDS A SOURCE AND MAY BE OVERSTATED.** The quantitative-
+⛔ **"h_term IS 59% of longitudinal growth in a FAST plate and 44% in a SLOW one ⛔CORR-361" NEEDS A SOURCE AND MAY BE OVERSTATED.** The quantitative-
 structure enumeration returns Wilsman 1996 (`PMID 8982136`), which partitions rat proximal tibial elongation
 **9% cell division / 32% MATRIX SYNTHESIS / 59% chondrocytic enlargement** — shifting to **44/49** in slow
 plates. ⭐ **If that is the right decomposition then hypertrophic enlargement is ~59%, not ~80%, and MATRIX
@@ -10701,3 +10701,127 @@ by orders of magnitude between species, whose execution mark is independently va
 and whose microRNA driver has never been examined in cartilage.** That is not a wall. The named target is
 unchanged and now has two candidate handles instead of none: **RAISE H3K4me3 at the program's promoters, or
 BLOCK miR-29 — without slowing growth.** Gaps `g_l2_439a`, `g_l2_439b`, `g_l7_439c`.
+
+## 🔭🔭🔭🔭🔭 R440 — **THE ANOMALY SWEEP. Six external hunts, and the largest term in the identity turns
+## out to be MIS-SIZED, MIS-MEASURED AND MIS-AIMED. Plus the price of the PERIOD, measured in 286,205
+## humans, agreeing with this file's own AI ceiling from a completely independent instrument.**
+
+⛔⛔ **CORR-361 — THE ~80% FIGURE IS WRONG AND IT WAS IN THIS FILE'S OWN NODE THE WHOLE TIME. CORRECTED IN
+13 PLACES.** `elongation_budget` (grade C) holds `wilsman1996`'s closed partition — oxytetracycline for
+elongation rate plus BrdU and unbiased stereology across **four plates of 28-day-old rats**, with the
+internal check that cells produced per day matched cells lost at the chondro-osseous junction:
+| | division | **MATRIX SYNTHESIS** | hypertrophy |
+|---|---|---|---|
+| **FAST plate** (proximal tibia) | 9% | **32%** | **59%** |
+| **SLOW plate** (proximal radius) | 7% | **49%** | **44%** |
+⭐⭐ **SO h_term IS 59% AT BEST AND 44% IN A SLOW PLATE — AND MATRIX SYNTHESIS IS 32–49%, WHICH IN A SLOW
+PLATE EXCEEDS HYPERTROPHY.** This file has worked h_term to exhaustion and has **never worked matrix
+synthesis as a term** (14 nodes / 2 ledger). **A subject at BA16 has SLOW plates, so for him the ordering
+may be inverted.** ⭐ And R437's eighth ZERO process — **Golgi proteoglycan assembly rate** — is not a minor
+curiosity; it is the machinery of the term that may be largest for him. Independently confirmed by two
+separate agents this round. ⚠ No human equivalent of the partition exists in any bone.
+
+⭐⭐⭐⭐ **ONE — THE DIRECTION FINDING, AND IT IS DERIVABLE FROM THE FIELD'S MOST-CITED PAPER.** R437 flagged
+"what makes swelling AXIAL rather than isotropic" as 18 node hits and ZERO ledger. Worked externally:
+· ⭐ **`hunziker1987`'s own canonical ratios — cell HEIGHT ×4 and cell VOLUME ×10 — FORCE A DIAMETER RATIO OF
+  ×1.58, against ×2.15 for isotropic expansion. THAT IS A 2.53-FOLD ANISOTROPY SITTING UNREMARKED IN THE
+  FIELD'S FOUNDATIONAL STEREOLOGY PAPER, AND NOBODY HAS DIVIDED THE TWO NUMBERS.** (Computed here: V ∝ h·d²,
+  so d = √(10/4) = 1.581; isotropic = 10^⅓ = 2.154.)
+· ⭐⭐ **AND IT HAS BEEN MEASURED IN A HUMAN ADOLESCENT VERTEBRAL PHYSIS — the exact tissue R425/R436 say has
+  never been profiled.** `bylskiaustrow2018`, scoliosis apex vs age-matched autopsy controls: hypertrophic
+  cell **HEIGHT 12.8±1.2 → 8.5±1.1 µm, P<0.0005**; hypertrophic cell **WIDTH 15.0±2.5 → 14.9±1.5 µm, NS**.
+  **A physiological load cut cell volume ~34% ENTIRELY THROUGH THE AXIAL DIMENSION, leaving the transverse
+  dimension untouched. The two axes are under SEPARATE CONTROL, in human tissue.**
+· ⛔⛔ **AND THE METHODOLOGICAL BOMB, IN THE SAME SPECIMENS: ZONE HEIGHT MISSED IT — 180±42 → 152±34 µm,
+  P=0.21, NON-SIGNIFICANT, while cell height was P<0.0005.** **ZONE HEIGHT IS THE READOUT NEARLY EVERY
+  RESULT IN THIS ATLAS RESTS ON.** It is blind to a 34% cell-level effect. → **Any agent scored null on zone
+  height may have moved cell height; and "expanded hypertrophic zone" may be measuring the wrong variable.**
+· ⭐ **The direction is EXTRINSIC, not cell-autonomous: chondrocytes hypertrophying in hydrogels become large
+  and ROUND, never elongated.** And the candidate mould is imaged — collagen fibrils run **proximodistal in
+  the longitudinal septa and mediolateral in the transverse septa** — which is **exactly the plant cell-wall
+  architecture that sets directional turgor-driven expansion**, a mature field nobody here has imported.
+· ⛔ **AND NO GROWTH-PROMOTING AGENT IN THIS FILE HAS EVER BEEN SCORED ON CELL HEIGHT VS WIDTH — not CNP, not
+  GH, not IGF-1, not an FGFR3 inhibitor.** So it is unknown whether any of them moves the variable that
+  actually produces length. `g_l5_440a`.
+
+⭐⭐⭐ **TWO — THE PRICE OF THE PERIOD, AND TWO INSTRUMENTS AGREE.** `onlandmoret2005`, **EPIC, 286,205 women,
+nine countries**: **menarche one year later = +0.31 cm of adult height** (country range 0.13–0.50). A year of
+extra pubertal growth is worth several centimetres of GROWTH and yields a third of a centimetre of HEIGHT —
+**compensation is ~95% complete.** Independently, `holmgren2017bmi` (1,901 Swedish children): high childhood
+BMI advanced puberty 3–3.5 months, cost **2.3–3.1 cm of pubertal gain**, and left **adult height UNRELATED
+to childhood BMI**.
+⭐⭐ **NOW COMPARE THIS FILE'S OWN AI CEILING: R274 prices anastrozole at +1.3 cm over 3 years = 0.43 cm/year
+— INSIDE Onland-Moret's country range.** **A 286,205-person epidemiological cohort measuring NATURAL tempo
+variation and randomised aromatase-inhibitor trials measuring PHARMACOLOGICAL period extension converge on
+~0.3–0.4 cm PER YEAR OF EXTRA GROWTH PERIOD.**
+→ ⭐ **THAT IS A VALIDATED CEILING ON THE ENTIRE PERIOD STRATEGY, AND IT EXPLAINS EVERY NULL ON THAT AXIS:**
+R274 (letrozole = anastrozole), R337 (deeper estrone-sulfate suppression bought nothing), R419's soft AI
+evidence, R358. **The compensation is INTRINSIC TO THE SYSTEM, not a property of the drug — so there is no
+better oestrogen agent to find.** ⚠ Observational, in women, natural tempo rather than pharmacological.
+
+⭐⭐⭐ **THREE — AND THE SECULAR TREND SAYS THE HEIGHT IS NOT IN THE PERIOD *OR* IN EXTRA DIVISIONS.**
+`cole2018` (SITAR, Japan 1950–2010 + South Korea 1965–2005), authors' own words: **the growth period ADVANCED
+IN TIMING AND SHRANK IN DURATION**, and **MOST OF THE ADULT HEIGHT INCREMENT HAD ALREADY ACCRUED BY AGE 1.5
+YEARS.** Up to **20 cm** gained in some populations — **an order of magnitude more than this entire drug
+stack — WITHOUT extra growing time.**
+⭐⭐ **THE CONSTRAINT NOBODY HAS STATED, AND IT FALLS OUT OF THIS FILE'S OWN FRAMEWORK: if the plate carries a
+finite division budget (R360, R439), then a gain delivered in a SHORTENED period cannot be extra divisions
+either. IT MUST BE YIELD PER DIVISION — cell size, MATRIX PER CELL, or progenitor number set in infancy.**
+**Which lands exactly on CORR-361: matrix synthesis is 32–49% of elongation and unworked.**
+⛔ **AND THE COMPARTMENT IS WRONG FOR HIM, WHICH IS THE HONEST LIMIT.** `tanner1982leg`: the Japanese
+1957–77 gain was **~all LEG with sitting height practically unchanged**. `bogin2002maya`: Maya children in
+the USA vs Guatemala, **+11.54 cm of which +6.83 cm is LEG**. The secular mechanism is leg-directed and
+delivered before 18 months; **his residual is trunk and he is 16.**
+⛔ **AND THE TWO LEADING PROPOSED DRIVERS FAIL AT A LENGTH ENDPOINT:** `kang2019milk` — **17 RCTs, 2,844
+children: milk raised weight (+0.48 kg) and lean mass (+0.21 kg) and DID NOT RAISE HEIGHT.** The biomarker
+moves and the bone does not. ⚠ Ages 6–18, so it does **not** test the infancy window where the gain lives.
+
+⭐⭐ **FOUR — ~1 cm OF HUMAN LONG-BONE LENGTHENING FROM A NON-PHARMACOLOGICAL STIMULUS, INTERNALLY
+CONTROLLED, AND UNEXPLAINED SINCE 1981.** `shapiro1981`, 74 children under 13, orthoroentgenogram to
+skeletal maturity, contralateral limb as control: **femoral overgrowth after shaft fracture averaged 0.92 cm
+(0.4–2.7), was UNIVERSAL, and was INDEPENDENT OF AGE, FRACTURE LEVEL AND HEALING POSITION.**
+⭐⭐ **AND THE UNBROKEN IPSILATERAL TIBIA ALSO OVERGREW — 0.29 cm in 82% of patients.**
+→ **The standard explanation is local post-traumatic hyperaemia, and it fails twice on the paper's own data:
+hyperaemia should scale with injury severity and does not, and a femoral shaft fracture cannot deliver a
+LOCAL stimulus to a plate in a different bone across a joint. A BONE THAT WAS NEVER BROKEN LENGTHENED. That
+is a LIMB-WIDE TRANSMISSIBLE SIGNAL and nobody has identified it in 45 years** — filed as a nuisance
+variable surgeons must anticipate when setting a child's leg. `g_l6mech_440b`.
+
+⚠ **FIVE — AND A CHALLENGE TO THE PREMISE OF THE WHOLE PERIOD FRAMEWORK, RECORDED WITH ITS PROVENANCE
+CAVEAT.** `parfitt2002` is titled ***"Misconceptions (1): epiphyseal fusion causes cessation of growth"*** —
+Parfitt arguing the causality runs the other way, that growth ceases FIRST and fusion FOLLOWS. If right, an
+AI does not buy height by postponing fusion; it buys height only while the plate is still PRODUCING, and the
+two are dissociable. Consistent with the aromatase-deficient men who have unfused plates **and** continued
+growth into the third and fourth decades — a state the conventional model cannot distinguish from unfused
+plates and no growth. ⛔ **TITLE AND JOURNAL VERIFIED; THERE IS NO ABSTRACT IN PUBMED AND THE FULL TEXT IS
+UNREAD. Do not quote it as established until the two pages are obtained.**
+
+⭐ **SIX — FOUR MORE VERIFIED ANOMALIES, RECORDED SO THEY ARE NOT REDISCOVERED.**
+· **THE AXIAL PLATE IS 5.6× SLOWER THAN THE LIMB PLATE IN THE SAME ANIMAL** — `stokes2007`-series control
+  data: rat **vertebra 39 vs tibia 218 µm/day**, calf **35 vs 192**. Same genome, same hormones, same day.
+  Unexplained, and printed as a control column. ⭐ **And the vertebral plate has NO secondary ossification
+  centre, which R362/`xie2020` says exists to shield hypertrophic chondrocytes from load — so the plate under
+  the highest axial compression in the body runs its most fragile cells unprotected.**
+· **93% OF THE OSMOTIC DRIVE FOR HYPERTROPHY IS UNACCOUNTED FOR** — `farnum2002`, bovine, zone-resolved:
+  betaine + free amino acids + inositol + sorbitol account **maximally for 6–7%**. ⭐ The candidate their
+  panel could not contain is **GLYCOGEN**, because osmotic pressure is COLLIGATIVE — one particle of ~10⁴
+  glucose residues yields ~10⁴ osmotically active particles at near-constant mass, which would ALSO dilute
+  dry mass exactly as `cooper2013` measured. **`horigome2020` then showed growth-plate autophagy IS glycogen
+  mobilisation and Atg7-null chondrocytes accumulate glycogen granules.** Both halves published, never
+  joined; **glycogen by zone has never been quantified in any species.** Grade E. `g_l5_440c`.
+· **THE RESTING-ZONE POOL EMPTIES WITHOUT DIVIDING AND WITHOUT DYING** — `nilsson2014`: oestrogen
+  irreversibly accelerated resting-zone cell loss while **slowing** their proliferation, and the loss "did
+  not appear to be due to apoptosis." **A pool that drains by a non-mitotic route is not a division budget**
+  — which is R437's ZERO process #4, and it qualifies R360's Regime 2 and R439's framework at their root.
+· **A LONG ENOUGH INSULT ABOLISHES CATCH-UP ALTOGETHER** — `chagin2010`, rat metatarsal, 160-day culture:
+  7 and 12 days of dexamethasone → catch-up; **19 days → NONE, permanently short.** A reserve model predicts
+  MORE banked capacity from longer restriction. It banks none. **There is a duration threshold that destroys
+  the capacity**, independently reproduced in lambs. ⭐ And catch-up happens **in a bone in a dish**, which
+  kills the neuroendocrine set-point outright.
+
+🧭 **WHAT R440 CHANGES.** The largest term in the identity is **smaller than this file said (59/44%, not
+80%)**, **measured with an instrument that is blind to it (zone height, not cell height)**, and **aimed at
+the wrong variable (volume, not direction)** — while the co-equal term beside it, **matrix synthesis at
+32–49%, has never been worked at all.** The period arm is performing **at its biological ceiling** and two
+independent instruments now agree on what that ceiling is. And the largest unexplained lengthening effect in
+humans is a **limb-wide signal released by a broken femur**, sitting unclaimed since 1981.
