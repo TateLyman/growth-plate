@@ -10453,9 +10453,12 @@ entire variant class exome burden is blind to. ⚠ All agent-reported; verify be
 ## PROCESS list — and 8 of the 48 things a growth plate MUST PHYSICALLY DO are ZERO everywhere.**
 ## Run `atlas/tools/inverse_pharmacovigilance.py` · data `atlas/data/round437/`
 
-⛔ **THE OPERATOR'S CRITICISM, MEASURED AND CONFIRMED — AND THE DISPOSAL IS THE SMALLER HALF.** The ledger
-carries **80 mentions of "length endpoint"** and 8 of *"no length endpoint in any species"*, **6 of which sit
-beside a KILL word** despite R302 ruling it a GAP. But the real damage is that **THE FILTER SHAPED THE
+⛔ **THE OPERATOR'S CRITICISM, MEASURED — AND R438 RETRACTED THE DISPOSAL HALF OF THIS PARAGRAPH.**
+⛔ **"6 of 8 sit beside a KILL word" IS WITHDRAWN AS MISLEADING (see R438).** A kill word IS nearby, but on
+a proper count of all **19** instances, **12 sit in a bulleted list beside another NAMED objection that
+carries the disposal** (zero chemical matter, an interior optimum, not in the 207, a tumour signal, wrong
+direction), **2 are the file CORRECTING ITSELF** (CORR-350's withdrawal of the thrombin line), and only
+**5 stand alone**. Proximity is not causation and I read it as causation. **The real damage is that THE FILTER SHAPED THE
 SEARCH**: every sweep here is *"query X AND bone length"*, and since nobody was trying to make people taller
 nobody measured length — **so that query returns near-nothing BY CONSTRUCTION.** It can only find agents
 whose developers already wanted what we want. R436 showed the shelf was built for other indications; this is
@@ -10525,3 +10528,83 @@ tissue that already exists; **(2) what sets the DIRECTION of hypertrophic expans
 term's untouched half and the mechanism every positive mechanical result names; **(3) is there attrition in
 the resting zone**, an unmeasured leak from the pool; **(4) is crowding the set point** that explains why
 `hall2001`'s volume target survives a 2-fold osmotic challenge.
+
+## 🔁🔁🔁 R438 — **THE DISPOSAL AUDIT RUN PROPERLY, AND IT RETRACTS R437's OWN HEADLINE. The nodes are
+## clean, the ledger is mostly clean, and essentially NOTHING was binned for lacking a caliper.
+## ⭐ Then the same discipline applied to R437's ZEROS finds that POLYPLOID CHONDROCYTES WERE MEASURED
+## IN A RAT GROWTH PLATE IN 1984 AND NOBODY HAS TOUCHED IT SINCE.**
+## Run `atlas/tools/process_evidence_rerank.py` · data `atlas/data/round438/`
+
+⛔ **ONE — R437's "6 of 8 sit beside a KILL word" IS WITHDRAWN AS MISLEADING, AND I WROTE IT YESTERDAY.**
+Counted properly across all **19** instances of *"no length endpoint in any species"*: **12 sit in a bulleted
+AGAINST list beside another NAMED objection that actually carries the disposal** (zero chemical matter, an
+interior optimum, not in the 207, a tumour signal, wrong direction, a deficit model) · **2 are the file
+CORRECTING ITSELF** (CORR-350 withdrawing the thrombin line) · and **5 stand alone**. Of those five, one is
+TET1 — which the same file **re-ranked UP** in R302 and calls its best chemical-matter candidate — one is the
+sulfate arm, recorded under **"STILL MISSING"** and left as the standing recommendation, one names *"and no
+agent exists"* in the same sentence, and one is vibration, whose stated ground is that the literature is
+**three patents**. ⭐ **PROXIMITY IS NOT CAUSATION AND I READ IT AS CAUSATION.**
+
+⛔ **TWO — AND THE NODE-LEVEL AUDIT EXONERATES THE FILE OUTRIGHT.** 98 nodes cite a missing caliper. Split by
+node class: **of the 16 SINGLE-TOPIC nodes, 13 record it as a GAP and ZERO dispose on it plus a real ground**;
+the 3 flagged recoverable turn out on reading to record it as a **scoped caveat with the finding explicitly
+kept** (*"NO BONE LENGTH ENDPOINT — the measurement is GROWTH PLATE LENGTH… WHAT SURVIVES ALL OF THAT is the
+zonal and second-messenger dissociation"*). **The other 82 are ROUND-SUMMARY nodes, which are MULTI-AGENT, so
+a disposal word and a caliper complaint co-occur while belonging to different agents** — that is the tool's
+scope limit and it is why the audit has to run at CLAIM level, not node level.
+⭐ **AND THE TOOL OVER-CALLED UNTIL I FIXED IT, WHICH IS ITS OWN FINDING: R302's THREE DISQUALIFIERS ARE NOT
+THE COMPLETE SET THIS FILE LEGITIMATELY USES.** R302 lists absent-from-tissue, wrong-direction and redundant
+— all three are about BIOLOGY. The file also disposes, correctly, on **ZERO CHEMICAL MATTER** (there is
+nothing to give, and CORR-347 makes it checkable rather than assertable) and on **AN INTERIOR OPTIMUM WITH NO
+TITRATABLE AGENT** (CORR-325's band). **AEBP1 is the case that exposed it** — 35 monotone burden rows at
+P=8.4e-15, right compartment, right depth — and it fails on those two, not on the caliper. **Scoring it as
+mis-binned would have been my error, not the file's.**
+🧭 **SO THE OPERATOR'S CRITICISM IS RIGHT ABOUT THE SEARCH AND WRONG ABOUT THE DISPOSAL.** R437's other half
+stands untouched and is the important one: **every sweep here is shaped "query X AND bone length", nobody was
+trying to make people taller so nobody measured length, and that query returns near-nothing BY CONSTRUCTION.**
+
+⭐⭐⭐⭐ **THREE — THEN THE SAME DISCIPLINE TURNED ON R437's OWN ZEROS, AND IT WAS OVERDUE: R437 CALLED EIGHT
+PROCESSES "ZERO EVERYWHERE" HAVING CHECKED ONLY THIS REPOSITORY. CORR-267/284 SAYS DO NOT ASSERT WHAT THE
+LITERATURE CONTAINS WITHOUT QUERYING IT.** Queried:
+| query | PubMed hits | what they actually are |
+|---|---|---|
+| `hypertrophic chondrocyte AND ploidy` | **0** | — |
+| `endoreduplication AND chondrocyte` | **1** | a cytogenetics-QC paper on cultured chondrocytes |
+| `polyploidy AND chondrocyte` | 5 | MSC differentiation, iPSC tetraploid complementation, a triploid infant, a 1968 axolotl |
+| `macromolecular crowding AND chondrocyte` | 3 | **all three are TISSUE-ENGINEERING** — crowding as a culture additive, never as an intracellular set point |
+| `chondrocyte AND "DNA content" AND hypertrophy` | 14 | ⭐ **every one uses DNA content as a NORMALISER for cell number** (µg proteoglycan per µg DNA) — which is exactly why a ploidy question is invisible to a keyword search |
+
+⭐⭐ **AND THE ZERO DOES NOT SURVIVE — WHICH IS BETTER THAN IF IT HAD. TWO PAPERS EXIST, IN TWO SPECIES BY TWO
+METHODS, AND BOTH ARE DESCRIPTIVE AND UNCITED IN THIS CONTEXT.**
+· ⭐ **`kusuzaki1984` — GROWING RAT epiphyseal cartilage plate, multiparametric cytofluorometry, nuclear DNA
+  versus cellular RNA. Chondrocytes resolve into G0-G1, S and G2 — and the author reports TWO FURTHER
+  SUBPOPULATIONS: BINUCLEAR CELLS AND MONONUCLEAR TETRAPLOID CELLS**, both with higher RNA than mononuclear
+  G2. **THE ONLY PLOIDY MEASUREMENT OF A MAMMALIAN GROWTH PLATE THAT EXISTS, IT IS FORTY-TWO YEARS OLD, AND
+  IT IS IN A JAPANESE-LANGUAGE ORTHOPAEDIC JOURNAL WITH NO DOI.**
+· **`erenpreisa1999` — CHICK embryo femoral epiphysis by electron microscopy: POLYPLOID METAPHASES and giant
+  segmentating cells in the perichondrium, PREMATURE CHROMOSOME CONDENSATION in the RESTING ZONE, ~5% of
+  proliferative-zone divisions aberrant, and A-MITOTIC NUCLEAR SEGMENTATION in dark chondrocytes in ALL
+  layers** — which its authors call normal developmental mechanisms, not pathology.
+⭐⭐⭐ **THE REASON IT WENT NOWHERE IS THE INTERPRETATION, NOT THE DATA. kusuzaki1984 read tetraploidy as
+"polyploid cell groups ACCOMPANYING HIGHLY ACTIVE CELL PROLIFERATION" — i.e. as a by-product of dividing
+fast. Nobody has ever asked the other question: DOES PLOIDY SET TERMINAL CHONDROCYTE VOLUME?** In every other
+tissue where cells get very large — hepatocyte, megakaryocyte, trophoblast, cardiomyocyte, insect and plant —
+**endoreduplication is a principal volume mechanism**, and a terminal hypertrophic chondrocyte enlarges
+5–10-fold and delivers the largest term in the height identity. **The observation is 42 years old, the
+question has never been asked in any species, and it sits entirely outside every osmotic and matrix-synthesis
+argument this file has made about h_term.**
+⛔ **AGAINST, STATED WITH IT:** both papers are DESCRIPTIVE — **no ploidy fraction by zone, no relationship to
+cell size, no growth-rate contrast and no bone-length endpoint in either.** erenpreisa1999 is **chick and
+EMBRYONIC**, so CORR-299 governs any inference to an open postnatal plate; kusuzaki1984 is abstract-only and
+its numbers are unextractable without the full text. **And the direction is unknown** — if ploidy tracks
+proliferation rather than causing volume, it is a marker and not a lever.
+⭐ **THE EXPERIMENT IS UNCHANGED AND CHEAP: ploidy by zone in an existing growth plate, with liver and
+megakaryocytes as positive controls** (`g_l5_437a`) — but it is now a **REPLICATION AND EXTENSION of a 1984
+result**, not a first look, which makes it easier to justify and easier to interpret.
+
+🧭 **WHAT R438 SETTLES.** The file's disposal discipline is sound at node level and largely sound in the
+ledger; **the recovery operation I expected to find candidates in returns none, and that is a real answer,
+not a failure.** What the criticism correctly identifies is the SEARCH, and R437's process decomposition is
+the constructive response to it. **The first process off that list was checked properly and immediately
+produced a 42-year-old measurement nobody has followed — which is what "a process that could touch height and
+has never been connected to it" actually looks like in practice.**
