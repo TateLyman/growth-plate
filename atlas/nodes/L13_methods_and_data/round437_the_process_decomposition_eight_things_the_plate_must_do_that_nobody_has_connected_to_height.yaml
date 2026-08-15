@@ -1,0 +1,187 @@
+id: round437_the_process_decomposition_eight_things_the_plate_must_do_that_nobody_has_connected_to_height
+name: R437 - the process decomposition, and the answer to "processes that have never been observed"
+aliases:
+- process decomposition
+- R437
+- inverse pharmacovigilance
+- FAERS disproportionality
+- the eight zero processes
+type: dataset
+layer: L13
+stub: false
+confidence: B
+last_verified: '2026-08-15'
+species_basis: mixed
+human_evidence: indirect
+human_evidence_note: The process decomposition is a coverage measurement over this repository and carries
+  no species. The FAERS arm is human spontaneous-report data with no exposure denominator, so it generates
+  hypotheses and cannot establish an effect; every biological claim folded in below carries its own species
+  and citation.
+translation_risk: low
+translation_risk_reason: Nothing is proposed as an intervention. The round produces one new instrument,
+  one derived process list with its coverage scored, and four named experiments.
+summary: 'THE TWO CRITICISMS THIS ROUND ANSWERS. First, that this atlas only ever looks for bone-length
+  endpoints, which excludes any drug that might work through an unexpected effect. Second, and harder,
+  that there are biological processes capable of touching height which have never been observed at all
+  - and those cannot be found by any search, because a search can only return what somebody has already
+  written down.
+
+
+  THE FIRST CRITICISM, MEASURED AND CONFIRMED - AND THE DISPOSAL IS THE SMALLER HALF. CLAUDE.md carries
+  80 mentions of "length endpoint" and 8 instances of the phrase "no length endpoint in any species",
+  6 of which sit beside a kill word despite R302 ruling that a missing length endpoint is a GAP. But the
+  real damage is upstream of the disposal: every compound sweep in this project is shaped as "query X
+  AND bone length", and since nobody was trying to make people taller, nobody measured length - so that
+  query returns near-nothing BY CONSTRUCTION. It can only ever find agents whose developers already wanted
+  what we want. R436 showed the drug shelf was built for other indications; this is the same fact one
+  step further back, applied to the SEARCH rather than to the shelf.
+
+
+  THE FIRST FIX - FIND A DRUG BY WHAT HAPPENED TO PEOPLE. atlas/tools/inverse_pharmacovigilance.py queries
+  openFDA FAERS (20.7M reports) for growth-related MedDRA terms in both directions and computes PRR and
+  ROR with 95% confidence intervals, because raw counts are useless here - aspirin and paracetamol head
+  every unadjusted list. IT VALIDATES ON KNOWN TRUE POSITIVES, which is the credibility check: "Epiphyses
+  premature fusion" returns ISOTRETINOIN at ROR 187.6 (146.5-240.2, 91 co-reports), SOMATROPIN 52.2, ESTRADIOL
+  19.5 and HYDROCORTISONE 7.3 - four agents this file contraindicated by mechanism, recovered independently
+  from human reports. Isotretinoin is the cleanest, because acne is not a growth disease and the patients
+  are adolescents with open plates.
+
+
+  AND THE FAVOURABLE DIRECTION IS STRUCTURALLY BLIND, WHICH IS THE FINDING. "Growth accelerated" is topped
+  by histrelin (ROR 1338), triptorelin (854) and leuprolide - GnRH agonists given FOR precocious puberty,
+  where accelerated growth is the presenting complaint. That is confounding by indication in its purest
+  form. The only unexpected names, zonisamide and clobazam, sit at n=4 with confidence intervals an order
+  of magnitude wide. THE REASON IS THAT FAERS IS AN ADVERSE-EVENT SYSTEM AND GETTING TALLER IS NOT AN
+  ADVERSE EVENT. After burden tests that cannot contain a recessive gene (CORR-358) and drug databases
+  indexed by medicinal-chemistry programmes (CORR-347), this is the third instrument built for a different
+  question - and the adverse direction is the trustworthy half, which makes this a contraindication finder
+  rather than a lever finder.
+
+
+  THE SECOND FIX, AND IT IS THE ONE THAT ANSWERS THE HARDER QUESTION: DERIVE THE PROCESS SPACE INSTEAD
+  OF SEARCHING IT. R436''s 2,193 concepts were still literature-derived - 2,193 things somebody had written
+  about. A process nobody has ever connected to height is invisible to that method by definition. So this
+  enumerates, from engineering necessity, what the tissue must physically and biochemically DO to convert
+  resting cells into bone length, and scores coverage afterwards. 48 processes, grouped under N (pool),
+  A (amplification), h_term volume, h_term shape and anisotropy, matrix synthesis per cell, discharge,
+  and cross-cutting physics. THE FILE HAS ALWAYS HAD A PARTS LIST AND HAS NEVER HAD A PROCESS LIST.
+
+
+  THE RESULT: 8 processes score ZERO in nodes AND ledger, and 19 more are worked in a node but absent
+  from CLAUDE.md - the CORR-352 lossy-ledger state, measured on processes instead of genes. The eight
+  zeros are each a live field in cell biology that nobody has pointed at a growth plate: macromolecular
+  crowding as a volume set point (and hall2001''s unexplained finding that the volume set point RE-TUNES,
+  180/280/380 mOsm all reaching the same 645 cubic micrometres, is exactly what a crowding-based set point
+  predicts); polyploidy or endoreduplication in chondrocytes (a hypertrophic chondrocyte is enormous and
+  nobody has asked whether it endoreduplicates - a volume mechanism that sits outside every osmotic argument
+  in this file); replication stress limiting division number, and nucleotide pool sufficiency, both candidates
+  for the division counter that R360 and R423 need; apoptosis or attrition WITHIN the reserve zone, an
+  unmeasured leak from the very pool the SAG programme exists to enlarge; physical migration into and
+  out of the niche; autophagy sustaining a quiescent stem cell; and proteoglycan assembly rate in the
+  Golgi.
+
+
+  AND THE SINGLE MOST IMPORTANT ROW IS NOT A ZERO - IT IS A THIN. "What makes swelling AXIAL rather than
+  isotropic" scores 18 node hits and ZERO ledger mentions. h_term is the largest term in the height identity;
+  bush2008 states that hypotonic swelling gives no preferential increase in LENGTH, so a swelling agent
+  makes a chondrocyte fatter and not taller; and the chondrocyte_hypertrophy node records that hypertrophy
+  is anisotropic and that Hunziker and Schenk found SHAPE MODULATION rather than volume is what changes
+  when growth accelerates - final cell height rises, lateral diameter falls, final volume slightly reduced.
+  SO h_term SPLITS INTO VOLUME, WHICH THIS FILE HAS WORKED TO EXHAUSTION AND WHERE EVERY AGENT FAILS,
+  AND DIRECTION, WHICH HAS NEVER ONCE REACHED THE LEDGER - and direction is where every positive normal-animal
+  mechanical result points (sansone2009periosteum: periosteal resection raises velocity in lambs specifically
+  by axial elongation of the hypertrophic chondrocyte; R427''s lateral joint loading; R426''s mcgarry2024).
+  Its named machinery is thin to absent as well: longitudinal matrix septa as a mould 10 nodes and 0 ledger,
+  pericellular matrix mechanics 54 and 0, cell-matrix adhesion at the lateral surface 4 and 0.
+
+
+  OTHER THIN ROWS WORTH NAMING. G1 length as THE regulated variable, 1 node and 0 ledger, while the quantitative
+  enumeration reports that essentially all inter-plate cycle-time difference sits in G1. The division counter
+  itself, 4 and 0. The oxygen gradient across the zones, 28 and 0. And CONVECTIVE solute transport driven
+  by a vascular-to-cartilage pressure difference, 0 nodes and 1 ledger mention - a different transport
+  mechanism from the diffusion-plus-Donnan model R430 calibrated, and pressure-driven, which joins it to
+  R427''s finding that lateral joint loading acts through intramedullary pressure and fluid flow rather
+  than through strain.
+
+
+  METHOD CAVEAT, RECORDED BECAUSE IT BIT ME. Substring matching without word boundaries made pH read 13,502
+  hits; the bare-word count is 72 and the specific concepts 14, so pH is THIN and not covered. Any row
+  of this table must be re-verified with a word-boundary grep before it is quoted. The decomposition is
+  also mine rather than a field consensus - a different decomposition would produce a different 48, and
+  a process scoring ZERO here may be well studied under a name I did not use, which is CORR-353 applied
+  to my own instrument.
+
+
+  WHAT IT CHANGES. The next moves are no longer "find a compound with a length endpoint". They are: does
+  the hypertrophic chondrocyte endoreduplicate, which is one flow-cytometry or imaging experiment on tissue
+  that already exists; what sets the DIRECTION of hypertrophic expansion, which is the largest term''s
+  untouched half and the mechanism every positive mechanical result names; is there attrition in the resting
+  zone, an unmeasured leak from the pool; and is crowding the set point that explains why hall2001''s volume
+  target survives a two-fold osmotic challenge.'
+quantitative:
+- parameter: processes derived from what a growth plate must physically do
+  value: 48
+  unit: processes
+  species: not_applicable
+  source_ref: r436enum
+  note: derived from engineering necessity rather than from the literature, then scored against 942 nodes
+    and CLAUDE.md [derived in R437; see atlas/data/round437/process_decomposition.json]
+- parameter: processes scoring ZERO in both nodes and CLAUDE.md
+  value: 8
+  unit: processes
+  species: not_applicable
+  source_ref: r436enum
+  note: crowding, endoreduplication, replication stress, nucleotide pools, reserve-zone attrition, niche
+    migration, autophagy in quiescence, Golgi proteoglycan assembly [derived in R437]
+- parameter: processes worked in a node but absent from CLAUDE.md
+  value: 19
+  unit: processes
+  species: not_applicable
+  source_ref: r436enum
+  note: the CORR-352 lossy-ledger state measured on processes rather than genes [derived in R437]
+- parameter: CLAUDE.md mentions of the phrase "no length endpoint in any species"
+  value: 8
+  unit: mentions
+  species: not_applicable
+  source_ref: r436enum
+  note: six of the eight sit beside a kill word, against R302's ruling that a missing length endpoint is
+    a gap [derived in R437]
+- parameter: node hits vs ledger hits for "what makes swelling axial rather than isotropic"
+  value: 18
+  unit: node hits against 0 ledger mentions
+  species: not_applicable
+  source_ref: r436enum
+  note: the largest term's untouched half; DIRECTION of hypertrophic expansion has never reached the ledger
+    [derived in R437]
+- parameter: FAERS reporting odds ratio, isotretinoin and Epiphyses premature fusion
+  value: 187.6
+  unit: ROR (95% CI 146.5-240.2), 91 co-reports
+  species: human
+  source_ref: r436enum
+  note: openFDA FAERS queried 2026-08-15 across 20.7M reports; a spontaneous reporting system with no exposure
+    denominator, so this is a hypothesis generator and not evidence of effect size [derived in R437; see
+    atlas/data/round437/faers.json]
+- parameter: FAERS reporting odds ratio, somatropin and Epiphyses premature fusion
+  value: 52.2
+  unit: ROR, 46 co-reports
+  species: human
+  source_ref: r436enum
+  note: recovered independently of mechanism; part of the validation set alongside estradiol 19.5 and hydrocortisone
+    7.3 [derived in R437]
+- parameter: FAERS reporting odds ratio, histrelin and Growth accelerated
+  value: 1338.2
+  unit: ROR, 12 co-reports
+  species: human
+  source_ref: r436enum
+  note: the favourable direction is dominated by GnRH agonists given FOR precocious puberty - confounding
+    by indication, recorded as the reason the favourable direction is structurally blind [derived in R437]
+key_refs:
+- ref_id: r436enum
+- ref_id: bush2008
+- ref_id: hall2001
+- ref_id: sansone2009periosteum
+open_questions:
+- g_l5_437a
+- g_l7_437b
+- g_l5_437c
+- g_l13_437d

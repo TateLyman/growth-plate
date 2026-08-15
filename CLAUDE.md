@@ -10448,3 +10448,80 @@ loss-of-function in 6,476 genes** (`PMID 42310464`). R432 showed a het burden te
 gene by construction; this is the cohort that can. Also flagged: **`hawkes2024` (PMID 39362880) — rare
 NON-CODING WGS in 333,100 people, 29 variants from −7 to +4.7 cm, HMGA1-proximal aggregate +5 cm** — an
 entire variant class exome burden is blind to. ⚠ All agent-reported; verify before use.
+
+## 🔬🔬🔬🔬🔬 R437 — **THE PROCESS DECOMPOSITION. The file has a PARTS list and has never had a
+## PROCESS list — and 8 of the 48 things a growth plate MUST PHYSICALLY DO are ZERO everywhere.**
+## Run `atlas/tools/inverse_pharmacovigilance.py` · data `atlas/data/round437/`
+
+⛔ **THE OPERATOR'S CRITICISM, MEASURED AND CONFIRMED — AND THE DISPOSAL IS THE SMALLER HALF.** The ledger
+carries **80 mentions of "length endpoint"** and 8 of *"no length endpoint in any species"*, **6 of which sit
+beside a KILL word** despite R302 ruling it a GAP. But the real damage is that **THE FILTER SHAPED THE
+SEARCH**: every sweep here is *"query X AND bone length"*, and since nobody was trying to make people taller
+nobody measured length — **so that query returns near-nothing BY CONSTRUCTION.** It can only find agents
+whose developers already wanted what we want. R436 showed the shelf was built for other indications; this is
+the same fact one step further back, applied to the SEARCH rather than the shelf.
+
+⭐ **FIRST FIX — FIND A DRUG BY WHAT HAPPENED TO PEOPLE. FAERS, 20.7M reports, PRR/ROR with 95% CIs.**
+✓ **IT VALIDATES ON KNOWN TRUE POSITIVES, which is the credibility check.** `Epiphyses premature fusion`
+returns **ISOTRETINOIN ROR 187.6 (146.5–240.2, 91 co-reports)** · **SOMATROPIN 52.2** · **ESTRADIOL 19.5** ·
+**HYDROCORTISONE 7.3** — four agents this file contraindicated BY MECHANISM, recovered independently from
+human reports. Isotretinoin is the cleanest: acne is not a growth disease, the patients are adolescents with
+open plates.
+⛔ **AND THE FAVOURABLE DIRECTION IS STRUCTURALLY BLIND, WHICH IS THE FINDING.** `Growth accelerated` is
+topped by **histrelin 1338, triptorelin 854, leuprolide 17.6** — GnRH agonists given FOR precocious puberty,
+where accelerated growth is the presenting complaint. Pure confounding by indication. The only unexpected
+names (**zonisamide 25.2, clobazam 15.3**) sit at **n=4** with CIs an order of magnitude wide.
+⭐ **THE REASON IS THE SAME PATTERN A THIRD TIME: FAERS IS AN *ADVERSE EVENT* SYSTEM, AND GETTING TALLER IS
+NOT AN ADVERSE EVENT.** After burden tests that cannot hold a recessive gene (CORR-358) and drug databases
+indexed by medicinal-chemistry programmes (CORR-347), this is the third instrument built for a different
+question. ⚠ **ZERO atlas files: azathioprine · etoposide · clobazam.** Zero ledger: melphalan, triptorelin,
+histrelin. All confounded by the diseases they treat — **recorded, none established.**
+
+⭐⭐⭐ **SECOND FIX, AND IT IS THE ONE THAT ANSWERS THE HARDER QUESTION: DERIVE THE PROCESS SPACE INSTEAD OF
+SEARCHING IT.** R436's 2,193 concepts were still LITERATURE-DERIVED — 2,193 things somebody wrote about. A
+process nobody has ever connected to height cannot be found by any search. So: enumerate what the tissue
+**must physically and biochemically DO** to convert resting cells into bone length, from engineering
+necessity, and score coverage afterwards. **48 processes. 8 ZERO in nodes AND ledger; 19 more worked in a
+node but ABSENT from CLAUDE.md — the CORR-352 state, now measured on PROCESSES instead of genes.**
+
+⛔ **THE EIGHT ZEROS — each verified with word boundaries, each a live field in cell biology that NOBODY HAS
+POINTED AT A GROWTH PLATE:**
+| process | term it moves |
+|---|---|
+| **macromolecular CROWDING as a volume set point** | h_term — ⭐ and `hall2001`'s unexplained result that the set point RE-TUNES (180/280/380 mOsm → same 645 µm³) is exactly what a crowding-based set point predicts |
+| **POLYPLOIDY / ENDOREDUPLICATION in chondrocytes** | h_term — a hypertrophic chondrocyte is enormous; nobody has asked whether it endoreduplicates, and that is a volume mechanism outside every osmotic argument in this file |
+| **REPLICATION STRESS limiting division number** | A — a direct candidate for the division counter |
+| **NUCLEOTIDE POOL sufficiency during rapid division** | A |
+| **APOPTOSIS or attrition WITHIN the reserve zone** | N — an unmeasured leak from the pool the whole SAG programme exists to enlarge |
+| **MIGRATION of cells into and out of the niche** | N |
+| **AUTOPHAGY sustaining a quiescent stem cell** | N |
+| **PROTEOGLYCAN ASSEMBLY RATE in the Golgi** | matrix synthesis |
+
+⭐⭐⭐ **AND THE SINGLE MOST IMPORTANT ROW IS NOT A ZERO — IT IS A THIN: "WHAT MAKES SWELLING AXIAL RATHER
+THAN ISOTROPIC" — 18 node hits and ZERO CLAUDE.md mentions.** h_term is the largest term in the identity;
+`bush2008` states that hypotonic swelling gives **NO preferential increase in LENGTH — a swelling agent makes
+a chondrocyte FATTER, NOT TALLER**; `chondrocyte_hypertrophy` records that hypertrophy is ANISOTROPIC and
+that Hunziker and Schenk found **SHAPE MODULATION, NOT VOLUME, is what changes when growth accelerates**
+(final cell height rises, lateral diameter falls, final VOLUME slightly REDUCED). **So h_term splits into
+VOLUME, which this file has worked to exhaustion and which every agent fails at, and DIRECTION, which has
+never once reached the ledger — and DIRECTION is where the only positive normal-animal mechanical results
+point** (`sansone2009periosteum`: periosteal resection raises velocity in lambs by **axial elongation of the
+hypertrophic chondrocyte**; R427's lateral joint loading; R426's `mcgarry2024`). Its named machinery is also
+thin-to-absent: **longitudinal matrix septa as a mould 10 nodes / 0 ledger · pericellular matrix mechanics
+54 / 0 · cell-matrix adhesion at the lateral surface 4 / 0.**
+⚠ Other THIN rows worth naming: **G1 length as THE regulated variable 1 node / 0 ledger** (and the
+quantitative enumeration reports essentially ALL inter-plate cycle-time difference sits in G1) · the
+**division counter** 4/0 · the **oxygen gradient across the zones** 28/0 · **CONVECTIVE solute transport
+driven by a vascular-to-cartilage pressure difference** 0 nodes/1 ledger — which is a DIFFERENT transport
+mechanism from the diffusion+Donnan model R430 calibrated, and it is **pressure-driven, so it joins R427's
+finding that lateral joint loading acts through intramedullary pressure and fluid flow rather than strain.**
+⚠ **METHOD CAVEAT, recorded because it bit me: substring matching without word boundaries made pH read
+13,502 hits; the bare-word count is 72 and the specific concepts 14, so pH is THIN, not covered.** Verify any
+row of this table with `grep -E "\b...\b"` before quoting it.
+
+🧭 **WHAT THIS CHANGES.** The file's next moves are no longer "find a compound with a length endpoint". They
+are: **(1) does the hypertrophic chondrocyte endoreduplicate** — one flow-cytometry or imaging experiment on
+tissue that already exists; **(2) what sets the DIRECTION of hypertrophic expansion**, which is the largest
+term's untouched half and the mechanism every positive mechanical result names; **(3) is there attrition in
+the resting zone**, an unmeasured leak from the pool; **(4) is crowding the set point** that explains why
+`hall2001`'s volume target survives a 2-fold osmotic challenge.
