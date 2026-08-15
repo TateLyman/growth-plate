@@ -100,6 +100,32 @@ def load_corpora():
     return node_texts, slurp(GAPS), slurp(BIB), slurp(LEDGER)
 
 
+# --- fast path -------------------------------------------------------------
+# The naive scorer is O(concepts x aliases x nodes) regex searches - 2,193 concepts
+# against 941 nodes did not finish in two minutes. Tokenising each corpus ONCE turns
+# the single-word case (which is nearly all of it) into a set membership test, and the
+# whole map then runs in about twenty seconds.
+TOKEN = re.compile(r"[a-z0-9]+(?:[-\']?[a-z0-9]+)*")
+WORDLIKE = re.compile(r"^[a-z0-9]+(?:[-\'][a-z0-9]+)*$")
+
+
+def build_index(node_texts, gaps_t, bib_t, ledger_t):
+    blob = {"nodes": "\n".join(node_texts.values()), "gaps": gaps_t,
+            "bib": bib_t, "ledger": ledger_t}
+    lower = {k: v.lower() for k, v in blob.items()}
+    tokens = {k: set(TOKEN.findall(v)) for k, v in lower.items()}
+    return lower, tokens
+
+
+def alias_hits(alias, lower, tokens, key):
+    a = alias.lower().strip()
+    if len(a) < 3:
+        return False
+    if WORDLIKE.match(a):
+        return a in tokens[key]
+    return a in lower[key]      # multi-word aliases fall back to substring
+
+
 def make_matcher(alias: str, substring: bool):
     """Word-boundary matcher unless the alias is punctuation-heavy or opted out."""
     esc = re.escape(alias)
@@ -164,7 +190,26 @@ def main() -> None:
         sys.exit(1)
 
     node_texts, gaps_t, bib_t, ledger_t = load_corpora()
-    rows = [score_concept(c, node_texts, gaps_t, bib_t, ledger_t) for c in concepts]
+    lower, tokens = build_index(node_texts, gaps_t, bib_t, ledger_t)
+
+    rows = []
+    for c in concepts:
+        aliases = [c["concept"]] + list(c.get("aliases") or [])
+        h = {k: any(alias_hits(a, lower, tokens, k) for a in aliases)
+             for k in ("nodes", "gaps", "bib", "ledger")}
+        if not any(h.values()):
+            tier = "ZERO"
+        elif not h["nodes"] and not h["gaps"]:
+            tier = "REF_ONLY"
+        elif not h["ledger"]:
+            tier = "THIN"
+        else:
+            tier = "COVERED"
+        rows.append(dict(concept=c["concept"], domain=c.get("domain", "unassigned"),
+                         aliases=aliases[1:], direction=c.get("direction"),
+                         source=c.get("source"), note=c.get("note"), obscure=c.get("obscure"),
+                         tier=tier, n_nodes=int(h["nodes"]), n_gaps=int(h["gaps"]),
+                         n_bib=int(h["bib"]), n_ledger=int(h["ledger"]), example_nodes=[]))
 
     if args.domain:
         rows = [r for r in rows if r["domain"] == args.domain]

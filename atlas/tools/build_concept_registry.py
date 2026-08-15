@@ -79,12 +79,31 @@ def is_separator(cells: list[str]) -> bool:
     return bool(cells) and all(re.fullmatch(r":?-{2,}:?", c or "") for c in cells if c != "")
 
 
+def strip_md(s: str) -> str:
+    """Agents write **bold**, *italic*, `code` and stray backslashes into cells."""
+    s = re.sub(r"[*`\\]", "", str(s or "")).strip()
+    return re.sub(r"\s+", " ", s)
+
+
+def concept_col(headers: list[str]) -> int:
+    """Several agents prepend a row-number column headed '#'. The concept is then in
+    column 1, not column 0, and taking column 0 silently drops the entire table."""
+    h0 = strip_md(headers[0]).upper() if headers else ""
+    if h0 in ("#", "N", "NO", "NO.", "ID", "IDX", "ROW", "") and len(headers) > 1:
+        return 1
+    return 0
+
+
 def classify_headers(headers: list[str]) -> dict:
+    c0 = concept_col(headers)
     role = {}
     for i, h in enumerate(headers):
-        H = h.upper()
-        if i == 0:
+        H = strip_md(h).upper()
+        if i == c0:
             role[i] = "concept"
+            continue
+        if i < c0:
+            role[i] = "index"
         elif "OBSCURE" in H:
             role[i] = "obscure"
         elif "DIRECTION" in H or "EFFECT" in H or ("HEIGHT" in H and "DIRECTION" not in H):
@@ -168,15 +187,22 @@ def parse_file(path: str, domain: str) -> list[dict]:
                 headers = cells
                 role = classify_headers(cells)
                 continue
-            if not cells or not cells[0]:
+            if not cells:
                 continue
-            first = cells[0]
+            cidx = concept_col(headers)
+            # a section-divider row like "| **A. ENERGY AND MACRONUTRIENTS** |" has one real cell
+            if sum(1 for c in cells if c.strip()) <= 1:
+                continue
+            if cidx >= len(cells):
+                continue
+            first = cells[cidx]
+            if not first.strip():
+                continue
             # a repeated header inside the same table
-            if first.upper() == (headers[0] or "").upper():
+            if strip_md(first).upper() == strip_md(headers[cidx] if cidx < len(headers) else "").upper():
                 continue
-            # strip markdown emphasis and leading numbering
-            name = re.sub(r"^\**|\**$", "", first).strip()
-            name = re.sub(r"^\d+[.)]\s*", "", name)
+            name = strip_md(first)
+            name = re.sub(r"^\d+[.)]?\s+", "", name)
             if len(name) < 3 or name.upper() in STOPWORDS:
                 continue
 
@@ -185,10 +211,13 @@ def parse_file(path: str, domain: str) -> list[dict]:
             genes_cell = ""
             for i, cell in enumerate(cells):
                 r = role.get(i)
-                if not r or i == 0 or not cell:
+                if not r or r == "index" or i == cidx or not cell:
+                    continue
+                cell = strip_md(cell)
+                if not cell:
                     continue
                 if r == "obscure":
-                    rec["obscure"] = cell.strip().lower().startswith("y")
+                    rec["obscure"] = strip_md(cell).lower().startswith("y")
                 elif r == "direction":
                     rec.setdefault("direction", cell)
                 elif r == "source":
