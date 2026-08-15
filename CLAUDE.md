@@ -10948,3 +10948,89 @@ read. ⭐ **AND THE ONE DOCUMENT WORTH OBTAINING BY HAND: the Acta Orthopaedica 
 abandoned growth-stimulation methods — venous stasis, sympathectomy, arteriovenous fistula, diathermy,
 irradiation, nerve section — which is 502/403 to automated fetch and is the only reason rows on those
 methods are secondhand.**
+
+## 🔩🔩🔩🔩🔩 R442 — **THE ANOMALY IS REAL, IT IS RECENT, IT IS RANDOMISED AND SHAM-CONTROLLED IN A NORMAL
+## GROWING ANIMAL WITH A LENGTH ENDPOINT, AND IT IS ABSENT FROM THIS ATLAS. A HOLE IN THE METAPHYSIS
+## LENGTHENS A BONE — AND *ONLY IF YOU PLUG IT*, WHICH REFUTES BOTH EXPLANATIONS THE FIELD OFFERS.**
+
+⭐⭐ **THE HUMAN OBSERVATION FIRST, BECAUSE IT IS WHY THE ANIMAL WORK EXISTS: CHILDREN WHO UNDERGO ANTERIOR
+CRUCIATE LIGAMENT RECONSTRUCTION — WHICH DRILLS A METAPHYSEAL TUNNEL — GET TIBIAL OVERGROWTH.** That is
+`lee2023metaphyseal`'s own opening sentence, and there is a live paediatric-sports-medicine literature about
+it (18 records on the skeletally-immature ACL overgrowth question). **The field is studying it as a
+COMPLICATION TO BE AVOIDED. Nobody is studying it as a lever.** CORR-295's shape on a procedure instead of
+a gene.
+
+⭐⭐⭐ **THE EXPERIMENT, TWO PAPERS, ONE GROUP, BOTH VERIFIED VERBATIM.**
+· **`lee2023metaphyseal` (PMID 37286806, Sci Rep).** 7–8-week-old male New Zealand White rabbits, proximal
+  tibia, 6 weeks, sham controls: a metaphyseal hole with the cancellous bone beneath the physis curetted and
+  the space filled with **BONE WAX** →  **overgrowth +3.17 ± 1.16 mm against sham −0.17 ± 0.39 mm, P<0.001**,
+  operated tibia **10.65 ± 0.35 vs 10.43 ± 0.29 cm, P=0.002**.
+  ⭐ **AND IT IS STATISTICALLY INDISTINGUISHABLE FROM PERIOSTEAL RESECTION — 2.23 ± 1.52 mm, P=0.287.**
+· **`park2025metaphyseal` (PMID 40081414, Bone Joint Res) — the randomised follow-up, and the design is what
+  makes this a finding rather than a curiosity.** 38 rabbits randomised to a hole at **5, 10 or 15 mm distal
+  to the physis** filled with bone wax, or sham → **length and rate of overgrowth higher at 5 and 10 mm**,
+  new bone width significantly increased at 10 mm, **nothing at 15 mm.** Then 20 more rabbits with the defect
+  at 10 mm filled with **TISSEEL** or **LEFT UNFILLED** → ⛔ **GROWTH STIMULATION NOT SIGNIFICANT IN EITHER.**
+
+⭐⭐⭐⭐ **THE REFUTATION FALLS OUT OF THE DESIGN, AND NOBODY HAS STATED IT. `lee2023metaphyseal` OFFERS TWO
+MECHANISMS — HYPERAEMIA FROM DRILLING, AND MICROINSTABILITY FROM THE HOLE. AN UNFILLED HOLE DELIVERS BOTH IN
+FULL AND PRODUCES NOTHING.** Same drill, same injury, same bleeding, same defect, same microinstability —
+and the only variable that separates a null from +3.17 mm is **whether a persistent occlusive material is
+sitting in the metaphysis beneath the physis.**
+→ ⭐ **SO THE STIMULUS IS NOT THE INJURY AND NOT THE HYPERAEMIA. IT IS SUSTAINED OCCLUSION.** And that lands
+exactly on the oldest mechanistic proposal in this whole area, which this file holds only secondhand:
+**Cavadias & Trueta 1965 — blocking the medullary canal produces a lasting compensatory rise in metaphyseal
+blood flow and an increased growth rate.** **A 1965 hypothesis, re-demonstrated in 2025 with randomisation,
+a sham arm and a material comparison, and the two have never been joined.**
+⚠ **AND THE DISTINCTION MATTERS BECAUSE IT IS TESTABLE: hyperaemia is transient and occlusion is sustained.
+The material dependence says the tissue integrates a MAINTAINED physical state, not an ACUTE insult** —
+which is the same shape as R427's finding that lateral joint loading works through intramedullary pressure
+and fluid flow rather than through strain, and R437's `CONVECTIVE solute transport driven by a
+vascular-to-cartilage pressure difference`, which scores 0 nodes and 1 ledger mention.
+
+⭐⭐ **AND IT HANDS AN EXISTING PROGRAMME IN THIS FILE A FREE, PUBLISHED, IN-VIVO NEGATIVE CONTROL. TISSEEL
+IS THE EXACT VEHICLE R373/R374/R385–R387 SPECIFIED FOR THE SAG DEPOT — and here a Tisseel-filled defect in a
+growing animal produced NO growth stimulation.** So the fibrin gel by itself is not a growth stimulus, and
+any effect from a SAG-loaded fibrin depot would be attributable to the drug rather than the vehicle. **That
+question has been open in this file since R374 and it is answered by a control arm in somebody else's
+experiment.** ⚠ **Compartment caveat, stated: R373's depot goes in the EPIPHYSEAL secondary ossification
+centre and this hole is METAPHYSEAL, 5–15 mm distal to the physis on the other side — so the control is
+informative and not exact.** ⭐ **The other half of the same result is a warning: an occlusive material placed
+near a physis is NOT inert for growth. Bone wax proves the compartment is growth-responsive to a filling.
+Choosing a depot vehicle is not a neutral decision.**
+
+⛔ **THE COST IS UNAVOIDABLE AND IS IN THE SAME PAPER: VALGUS DEFORMITY IN *ALL* METAPHYSEAL-HOLE GROUPS
+VERSUS SHAM.** A unilateral stimulus at one side of a metaphysis produces an angular deformity — the generic
+failure mode of every asymmetric local intervention, and the reason the ACL literature treats this as a
+complication. ⛔ And this is a **surgical/procedural** route, which the operator has excluded. **It is
+recorded as MECHANISM, not as a proposal** — its value is that it identifies *what the stimulus is*, and
+that opens the question of whether a sustained metaphyseal pressure or flow change can be produced without
+drilling anything. Nobody has asked. `g_l6mech_442a`.
+
+⭐⭐⭐ **AND A SECOND PAPER NARROWS R440's HEADLINE ANOMALY WHILE MAKING WHAT REMAINS PURER.**
+`li2024overgrowth` (PMID 39524394, 138 children with femoral shaft fracture, flexible intramedullary nail)
+introduces **distal physis growth proportion (DPGP)** to ask where the extra femoral length actually comes
+from. **Mean DPGP 50.9%, with 114 of 138 (82.6%) BELOW 70% — and the authors conclude this indicates a
+significant role for FRACTURE-END STIMULATION in femoral lengthening.**
+→ ⛔ **SO THE OVERGROWTH OF THE *BROKEN* BONE IS SUBSTANTIALLY NOT PHYSEAL. It is callus and fracture-end
+new bone, which has an ordinary explanation.** R440 framed `shapiro1981`'s 0.92 cm femoral overgrowth as a
+growth-plate phenomenon; roughly half of it is not.
+⭐⭐ **BUT THAT SHARPENS THE ANOMALY RATHER THAN DISSOLVING IT, BECAUSE IT CANNOT TOUCH THE CROSS-BONE ARM.
+THE UNBROKEN IPSILATERAL TIBIA (`shapiro1981`, 0.29 cm in 82%) AND THE UNBROKEN IPSILATERAL FEMUR
+(`cho2025`) HAVE NO FRACTURE END. Their overgrowth MUST be physeal or periosteal.** So the decomposition is
+now three-way and each arm has a different account:
+| arm | bone | mechanism |
+|---|---|---|
+| **fracture-end** | the broken bone | callus / new bone at the fracture — `li2024overgrowth`, ~49% of it |
+| **local periosteal** | broken or stripped bone | restraint release — `kaneko2020` causally, sham-controlled |
+| ⭐ **CROSS-BONE** | **a bone nobody touched** | **UNEXPLAINED — this is the actual anomaly** |
+⚠ DPGP is a **new parameter introduced by that paper** and is not independently validated; the ~70% expected
+physeal share is the paper's own premise.
+
+🧭 **WHAT R442 CHANGES.** The fracture-overgrowth phenomenon splits three ways and only the cross-bone arm is
+genuinely unexplained — which is a smaller claim than R440 made and a much better-posed one. And the
+metaphyseal-hole system is the strongest thing the anomaly sweep has produced: **large, recent, randomised,
+sham-controlled, distance-dependent, material-dependent, in normal growing animals, with a LENGTH endpoint,
+driven by a human clinical observation — and with both of the field's own proposed mechanisms refuted by its
+own control arm.** It is not usable as a route here. **What it is, is the first clean evidence that a
+sustained physical state in the metaphysis sets growth rate, which is a lever class this file has never had.**
