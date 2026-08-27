@@ -14579,3 +14579,277 @@ drug experiment is an **EZH2 inhibitor** — a class this file contraindicates t
 Adam12, and HDAC3 knockdown does the same.** R298 contraindicated HDAC inhibitors — including **GIVINOSTAT,
 approved 2024 and taken chronically by growing boys** — on the HDAC4–MEF2C argument. **This points the same way
 by a different route, and valproic acid is prescribed to adolescents.** Grade E for a skeletal claim.
+
+## 🦵🦵🦵🦵🦵 R479 — **THE OPERATOR OPENED THE LIMB COMPARTMENT, AND THE ONE OBTAINABLE AGENT AIMED AT IT
+## TURNS OUT TO HAVE A *POSITIVE* BONE-LENGTH ENDPOINT IN 1,152 NORMAL ANIMALS THAT THIS ATLAS FILED AS A
+## NULL. R464 RECORDED `munoz2025cs` AS A COUNTERWEIGHT WHERE EVERYTHING WAS "UNAFFECTED (P>0.10)". IT
+## MEASURED LENGTH AND CHONDROITIN SULFATE RAISED IT.**
+
+⭐ **THE RULING.** *"the legs are open. we are still gonna add something if it's legs alright?"* — and R451's
+demotion of oral chondroitin sulfate was **entirely compartmental**, in its own words: *"the wild-type
+signature is LIMB and his residual is TRUNK."* That objection is lifted by instruction, and in the same week
+the evidence under the arm inverted.
+
+⭐⭐⭐ **ONE — WHAT `munoz2025cs` ACTUALLY SAYS.** **1,152 NORMAL male Cobb broilers**, completely randomised
+4×3 factorial, chondroitin sulfate **IN FEED** at 0.00 / 0.06 / 0.12 / 0.18 % w/w crossed with three manganese
+levels, day 1 → day 47, one bird per replicate giving **n=24 per chondroitin level**:
+**TIBIOTARSAL LENGTH 10.79 / 10.90 / 11.06 / 10.98 cm — P=0.032, QUADRATIC P=0.012, fitted peak 11.02 cm at
+0.14 %, R²=0.89. THAT IS +0.27 cm = +2.50 % IN NORMAL FAST-GROWING ANIMALS, ON THE ENDPOINT THIS WHOLE ATLAS
+IS DENOMINATED IN.** ⭐ **And the internal control attributes it to the right factor: MANGANESE HAD NO EFFECT
+ON LENGTH, P=0.631.**
+⛔ **R464's list of nulls is accurate and is the REST of the table** — body weight, BMC, BMD, ash, absolute
+bone weight, diaphyseal perimeter. **THE LENGTH ROW IS BURIED IN THE ABSTRACT AS "morphometric traits of the
+proximal and distal tibiotarsus", WHICH IS HOW IT WAS MISSED.** CORR-309's shape on our own record: the arm
+that got dropped was the one that ran with us, and R464 filed the paper under a conclusion it does not carry.
+⚠ **No SEM column is printed, so no confidence interval is recoverable.**
+
+⭐ **TWO — AND THE HONEST COUNTERWEIGHT IS NARROWER THAN "MOSTLY NULL".** `martins2023cs` measured **TIBIA
+LENGTH AT TWO AGES** in a 3×3 factorial with chondroitin at 0.00 / 0.05 / 0.10 %: **73.61 / 73.33 / 74.67 mm
+at 21 d and 103.53 / 103.42 / 104.06 mm at 42 d, chondroitin main effect NOT SIGNIFICANT at either age.**
+**SAME DIRECTION, +0.5 % at 42 d, and not significant — and its top dose of 0.10 % sits BELOW `munoz2025cs`'s
+fitted 0.14 % optimum, with three levels against four.** A fair partial disagreement, not a refutation.
+⛔ **THOSE TWO STUDIES ARE THE ENTIRE WORLD LITERATURE.** A targeted sweep found **no other study in ANY
+species** giving oral or dietary chondroitin sulfate to a **NORMAL** growing animal with a bone-length
+endpoint — not dog, horse, cattle, sheep, rat, mouse or rabbit, and no oligosaccharide or low-MW preparation.
+The weaned-piglet study measured defatted bone weight, mineral density, ash, calcium and phosphorus and **NOT
+LENGTH**; the rat and broiler positives elsewhere are low-calcium and tibial-dyschondroplasia **DISEASE**
+models, which CORR-203 excludes.
+
+⭐⭐ **THREE — THE SHAPE IS A BAND, WHICH IS THIS FILE'S OWN RECURRING SIGNATURE. 0.18 % GIVES LESS THAN
+0.12 %.** Seedor index, relative bone weight and both epiphyseal perimeters are quadratic in chondroitin too,
+all peaking at 0.06–0.12 %. **R467 derived from `schneider1963` that a mild stimulus near a plate is readily
+reversed into retardation if the optimal degree is exceeded by a small margin; R281 derived the same shape for
+canonical Wnt. THIRD INDEPENDENT AXIS WITH AN INTERIOR OPTIMUM AND A DECLINE ABOVE IT.**
+
+⛔ **FOUR — THE DOSE IS THE UNCOMFORTABLE PART AND BOTH POSITIVES AGREE ON IT.** R451 scaled the minipig
+patent's 70 mg/kg by BSA allometry to **45–66 mg/kg/day = 2.7–4.6 g/day at 60–70 kg**. **THE ORDINARY HUMAN
+SUPPLEMENT DOSE IS 0.8–1.2 g/day AND THE OBSERVED SAFE LEVEL IS 1200 mg/day — SO BOTH ANIMAL POSITIVES POINT
+3–5× ABOVE ORDINARY USE AND ABOVE THE SAFE-LEVEL FIGURE.** ⭐ That figure is **NOT a toxicity threshold**: its
+authors state it is **the highest level tested in human clinical trials**, i.e. an evidence ceiling. The
+highest single human dose formally studied is **2400 mg**, tolerability described as excellent.
+⛔ **AND THE HUMAN SIDE IS ENTIRELY DOSE AND SAFETY: NO HUMAN STUDY OF ORAL CHONDROITIN SULFATE HAS EVER
+MEASURED HEIGHT, GROWTH VELOCITY OR A BONE LENGTH, AT ANY AGE** — earned by query (40 records, every one
+genetic, dysplasia, MPS or enzyme-replacement). **Paediatric systemic trials: ZERO; the one clinicaltrials.gov
+paediatric record, NCT06547424, was WITHDRAWN with zero enrolment.**
+
+⭐⭐ **FIVE — WHY IT IS THE ANSWER TO THE QUESTION ASKED ANYWAY.** It is **ORAL, OTC AND OBTAINABLE TODAY,
+WHICH NOTHING ELSE ON THE LIMB SHORTLIST IS** — the SAG depot has no pharmaceutical-grade material,
+indirubin-3-oxime is a research reagent, lateral joint loading has a device built three times and never used
+in a human, and local limb warming has a human null at the knee. **Step 0 CLEAN** — matrix sulfation is moved
+by nothing in the stack. **It acts on h_term and on the MATRIX term, which CORR-361 prices at 32 % of
+elongation in a fast plate and 49 % in a slow one.** And **R448's Donnan exponent makes fixed charge a
+LEVERAGED parameter at dlnΠ/dlnFCD = 1.73**, so a sulfation gain is convex rather than linear.
+⚠ **MECHANISM STILL UNMEASURED, WHICH IS THE HONEST GRADE (C).** R451 replaced the patent's own
+glycosaminoglycan-supply story with a **SLOW-RELEASE SULFATE DONOR** reading, because `jackson2010` shows
+ingested CS alters neither the concentration nor the disaccharide composition of circulating CS in humans
+after three months. ⭐ **That reading gained a named enzyme this round: `alvarez2025bcsulf` shows a
+*Bacteroides caccae* locus can only degrade chondroitin sulfate AFTER an ENDO-SULFATASE, BcSulf, strips the
+sulfate — so DESULFATION IS AN OBLIGATORY FIRST STEP IN COLONIC CATABOLISM.** ✗ It does not quantify the
+sulfate released, and **NOBODY HAS MEASURED SERUM INORGANIC SULFATE AFTER ORAL CHONDROITIN SULFATE IN ANY
+SPECIES** — the single assay that would decide the arm. `g_l5_479a`, `g_l5_451a`.
+
+## 🧬🧬🧬 R479 — **THE SECOND LIMB CANDIDATE HAS THE CLEANEST TIBIAL ENDPOINT IN THE FILE — AND R462
+## RECORDED `kapadia2005`'s SIGN BACKWARDS, IN THE DIRECTION THAT FAVOURS A SUBJECT ON AN FGFR INHIBITOR.**
+
+⭐⭐ **INDIRUBIN-3′-OXIME, read in full from the publisher PDF.** **NORMAL 3-week-old C57BL/6, 0.05 or
+0.5 mg/kg INTRAPERITONEALLY, DAILY, TEN WEEKS, n=13/group: TIBIAL LENGTH INCREASED DOSE-DEPENDENTLY (P<0.05
+and P<0.005) WITH BODY WEIGHT NOT DIFFERING ACROSS THE TEN WEEKS.** Per `campion2022tofacitinib` a length
+endpoint must be read against body weight before it is read as a bone effect — **here that control is run and
+passed.** µCT found no trabecular or cortical difference (n=5); articular cartilage and liver unchanged.
+⭐⭐ **AND THE ZONE DECOMPOSITION PASSES CORR-292 WITH THE RESORPTION CONTROL ACTUALLY RUN, WHICH IS RARE
+HERE.** Two-week arm at 0.5 mg/kg, n=5: **HYPERTROPHIC ZONE HEIGHT UP (P<0.0005) WITH RESTING AND
+PROLIFERATIVE ZONE HEIGHTS UNCHANGED, BrdU⁺ UP (P<0.005), AND TRAP⁺ FOCI AT THE CARTILAGE–BONE INTERFACE
+UNCHANGED.** A taller hypertrophic zone with unchanged resorption **and a longer bone** is charge **WITH**
+discharge — not the jam that has failed nine times here, and the same pairing R469 credited to ADAM12-S.
+⭐ **AND IT IS THE MISSING CONTROL FOR AN ARM THIS FILE ALREADY WORKS.** R460/R473 built on **KY19382**
+(~+2.9 % tibia, same chemotype, same schedule, same strain), and R462's central objection is that KY19382 is
+**DUAL** — CXXC5–DVL at 1.9e-8 M and **GSK3β at 1e-8 M** — so a β-catenin-dependent result cannot separate the
+routes. **INDIRUBIN-3-OXIME IS THE PARENT INDIRUBIN WITH NO CXXC5 ARM, AND IT WORKS.** That does not prove
+KY19382 acts through GSK3β; it removes the possibility that the GSK3β route is inert.
+
+⭐⭐⭐ **THE SIGN CORRECTION, AND IT RUNS OUR WAY.** R462 recorded `kapadia2005` as an objection — that
+KY19382's GSK3β arm is *attenuated* in a subject on a pan-FGFR inhibitor. **Read verbatim, `kapadia2005`
+reports that GSK3 inhibition strongly REPRESSED chondrocyte and perichondrial osteoblast differentiation and
+INHIBITED chondrocyte proliferation, mechanistically through β-catenin → FGF18 → FGFR3, and that this effect
+IS REPRESSED IN TISSUES LACKING FGFR3. THE ARM REMOVED BY BLOCKING FGFR3 IS THE *SUPPRESSIVE* ONE.** So a
+subject on a pan-FGFR inhibitor is the one in whom GSK3 inhibition's own negative-feedback brake is
+pharmacologically blocked.
+⛔ **THE LIMITS, STATED BEFORE ANYONE USES IT:** `kapadia2005` is **EX VIVO metatarsal culture**; its
+inhibitors are **SB216763 and lithium, not an indirubin**; it characterised only the **SUPPRESSIVE** regime,
+so it is genuinely ambiguous whether removing FGFR3 also abolishes a low-dose stimulatory effect rather than
+only the brake; and **the combination has never been given to any animal. Grade E for the interaction, grade
+C for the compound's own endpoint.** `g_l2_479b`.
+⛔ **AND WHAT ARGUES AGAINST THE AXIS IS ALREADY HERE AND IS BETTER POWERED THAN THE POSITIVE.** R462's
+`harvey2015` — oral LiCl 20 mg/kg/day in growing broilers, **n=48 PER GROUP, no difference in bone length at
+P≥0.52**, femoral stiffness −22 %. And R462's dose ladder puts every intracellular Wnt-raising perturbation
+above the mildest at shorter or dead. **If the window is real it is narrow — and 0.05–0.5 mg/kg is 20–200×
+BELOW the 10 mg/kg used for this compound in anti-osteoporosis and anti-obesity work, which the authors state
+themselves.** ⚠ All in vivo magnitudes are **FIGURE-ONLY** (CORR-318). No approved medicine, no human exposure
+of any indirubin with a skeletal endpoint, i.p. route only.
+
+## 🌡️🌡️🌡️ R479 — **THE THERMAL ARM SPLITS INTO A *DELIVERY* DOSE A HUMAN KNEE CAN REACH AND A *GROWTH*
+## DOSE IT CANNOT — WHICH IS A MECHANISTIC ACCOUNT OF `ring1958`'s HUMAN NULL, AND ONE MODALITY INVERTS THE
+## CONSTRAINT.**
+
+⭐ **ONE — THE BASELINE, THREE GROUPS, 59 YEARS APART, ONE ANSWER.** A resting normal human knee joint cavity
+sits at **31.4–32.8 °C, about 4–5 °C BELOW core**, skin 1–2 °C below that again: `horvath1949` (4 normal men,
+thermocouple through a 19-G needle, room 24 °C) **31.44–32.83 °C with skin 29.56–31.94**; `becher2008` median
+**31.4 and 32.2** in six healthy males; `oosterveld1992` **31.9 and 32.9** in 42 healthy subjects. **Arthritic
+knees run 3.5 °C hotter at 35.5–35.8.**
+⭐ **TWO — HOW FAR SURFACE HEAT GETS, MEASURED WITHIN ONE EXPERIMENT.** `draper1998`, 21 humans, silicate-gel
+hot pack from 75 °C water × 15 min, indwelling thermistors: **+3.8 °C AT 1 cm AND +0.74 °C AT 3 cm — a
+FIVE-FOLD ATTENUATION OVER TWO CENTIMETRES.** The knee is the favourable exception because it is shallow
+anteriorly — **paraffin raised skin 8.9 °C and the JOINT CAVITY 3.5 °C** in healthy knees, the largest
+superficial-heat deep result in the literature — but only **+1.7** in arthritic knees, and continuous SWD only
+**+1.4** intra-articular.
+⭐⭐⭐ **THREE — AND THAT IS THE DECOMPOSITION.** `serrat2014`'s **DELIVERY** result raised murine hindlimb
+temperature **22 → 34 °C** and raised 10 kDa tracer entry to the growth plate by **>150 %**. `serrat2015`'s
+**GROWTH** result used **40 °C** for 40 min/day × 14 d and gave **femur +1.3 %, tibia +1.5 %**. **IN A MOUSE A
+40 °C SURFACE IS A 40 °C LIMB, BECAUSE THE LIMB IS MILLIMETRES THICK. IN A HUMAN, PARAFFIN AT ITS BEST TAKES A
+KNEE CAVITY FROM 31.9 TO ABOUT 35.4 °C.** → ⭐ **SURFACE HEATING REACHES THE DELIVERY TEMPERATURE AND FALLS
+~5 °C SHORT OF THE GROWTH TEMPERATURE — and `serrat2014`'s own authors describe 22–34 °C as a physiological
+range for a normal human knee, which is exactly the point: the delivery experiment was run inside the
+reachable band and the growth experiment was not. THAT PREDICTS `ring1958`'s NULL** (4 children, 40 °C
+maintained around the epiphysial zones at the knee, no influence on longitudinal growth — R450).
+⭐⭐ **FOUR — AND ONE MODALITY INVERTS THE CONSTRAINT.** `weinberger1989mw`: **seven human rheumatoid knees,
+915 MHz microwave WITH ACTIVE SKIN COOLING, 1 h twice weekly × 2 wk — INTRA-ARTICULAR 40.6 / 41.2 / 41.3 °C AT
+15 / 30 / 60 MIN WHILE THE SKIN OVER THE HEATED KNEE STAYED AT 24.3 ± 1.1 °C.** No adverse reaction observed.
+**THE LIMITING TISSUE FOR EVERY HOT PACK, PARAFFIN BATH AND HEATING PAD IS THE SKIN, AND THIS DEPOSITS ENERGY
+PAST IT.** ✗ n=7, single group, no sham, arthritic baseline, **no growth endpoint of any kind.**
+⭐ **FIVE — AND THE HONEST COMPARATOR IS NOT A HEATING MODALITY.** `becher2008`, six healthy knees, 60 min
+treadmill jogging: **intra-articular +6.1 °C (31.4 → ~37.5), with +2.1 / +4.0 / +5.8 / +6.1 at 15/30/45/60
+min. EXERCISE BEATS EVERY SUPERFICIAL HEATING MODALITY BY ROUGHLY TWO-FOLD, AND IT IS FREE** — which reframes
+`serrat2010`'s running-wheel result, read here purely as a vascular delivery adaptation: **a running human knee
+is also a warm human knee.**
+⚠ **SIX — THE CEILING AND THE SUB-BURN HARM.** EN ISO 13732-1 via CENELEC Guide 29: skin burn threshold
+**43 °C for ≥8 h, 48 °C for 10 min, 51 °C for 1 min on metal**, with water assessed against the metal column —
+so 40 °C is under it. **But ERYTHEMA AB IGNE is a documented reaction to prolonged infrared heat AT
+TEMPERATURES INSUFFICIENT TO CAUSE A BURN, is reported in ADOLESCENTS from therapeutic heating pads, and a
+nationwide case-control analysis reports raised odds of BCC, SCC and melanoma at the affected site.** No
+adverse *skeletal* effect of repeated limb heating has been reported in humans.
+⛔ **SEVEN — AND THE STRUCTURAL NEGATIVE: NOBODY HAS EVER MEASURED THE TEMPERATURE OF A HUMAN GROWTH PLATE,
+EPIPHYSIS OR METAPHYSIS IN VIVO, AT ANY AGE** — searched six ways; the human intraosseous thermometry
+literature is entirely dental-implant and orthopaedic drilling heat. **Zero intra-articular knee temperatures
+in a child or adolescent**, so the adult numbers are being carried across an age gap. **And no human study of
+any design has applied local limb heat and measured bone length, limb length or growth velocity.**
+`g_l6mech_479c`.
+⛔ **AND THE SERRAT ARM ITSELF IS THINNER THAN THIS FILE HAS RECORDED IT: there is NO INDEPENDENT
+REPLICATION** — `racine2018` is the same laboratory — **the bone-length data are FEMALE-ONLY, there is NO
+GROWTH-PLATE HISTOMORPHOMETRY for the unilateral heating model, and `serrat2013`, which carries the
+window-of-rapid-growth restriction the whole arm's age caveat rests on, is UNOBTAINABLE (Wiley 403,
+abstract only).**
+
+## 🧬📐 R479 — **THE LD PANEL WAS PULLED AND THE ADAM12 TEST R477 COULD NOT RUN IS RUN. THE TWO SIGNALS ARE
+## INDEPENDENT — AND THE COROLLARY WITHDRAWS R466's HEADLINE P VALUE.**
+
+⭐ **THE PANEL.** 1000 Genomes phase 3 EUR from the MRC IEU file server — **503 individuals, 8,550,156
+biallelic SNPs, GRCh37** — read directly from the PLINK `.bed` with numpy because no plink executable exists
+here (3 magic bytes, then ⌈N/4⌉ bytes per variant, SNP-major, 2 bits/sample little-endian, 00 hom A1,
+01 MISSING, 10 het, 11 hom A2). **Call rate 1.0000 at both anchors, so nothing rests on imputation.**
+⭐⭐ **THE RESULT.** Between **rs3858310** (the ADAM12 fibroblast eQTL lead, p=3.47e-26) and **rs7920091** (the
+region's headline `yengo2022` height variant): **r = −0.0529, r² = 0.0028.** And the stronger version, which
+does not depend on which lead survives a biallelic filter: **THE MAXIMUM r² BETWEEN rs3858310 AND EVERY ONE OF
+THE 182 COMMON VARIANTS ACROSS THE WHOLE NEIGHBOURING 50 kb BLOCK IS 0.0123** (at rs1459711).
+→ **THE ADAM12 EXPRESSION SIGNAL AND THE NEIGHBOURING UROS/DHX32 HEIGHT SIGNAL ARE INDEPENDENT IN A REAL
+REFERENCE PANEL, SO R477's COMPARTMENT RESULT — sitting height frankly null, the whole effect in the leg — IS
+ATTRIBUTABLE TO ADAM12 RATHER THAN BEING A SHADOW OF A NEIGHBOUR.**
+⛔⛔ **AND THE COROLLARY IS A CORRECTION TO OUR OWN LEDGER, IN THE UNFAVOURABLE DIRECTION. R466 HEADLINED THAT
+ADAM12's TOP GWAS TRAIT IS HUMAN HEIGHT WITH NINE CONDITIONALLY INDEPENDENT `yengo2022` SIGNALS AND A BEST P
+OF 6e-73. THAT SIGNAL IS NOT THE ADAM12-EXPRESSION SIGNAL** — its lead is a **UROS eQTL at p=1.35e-39 and a
+DHX32 eQTL at p=4.25e-28. IT MUST NOT BE QUOTED AS EVIDENCE ABOUT ADAM12.** ⭐ What survives as human evidence
+for the gene is the weaker, cleaner thing: **the eQTL-signed cluster, where 27 of 33 variants at fibroblast
+eQTL p<1e-8 have the ADAM12-RAISING allele associated with a LONGER LEG, best variant rs34925916 at leg length
++0.00973, P=8.3e-08, with sitting height NULL at P=0.82.**
+⚠ **WHAT THIS IS NOT: an LD test is not a colocalisation.** It establishes two lead variants are not the same
+signal; it does not prove the eQTL and the leg-length association share ONE causal variant, which needs coloc
+or SMR-HEIDI and a conditional analysis. **Two of R477's four named variants — rs34845021 and rs34925916 — are
+ABSENT from the biallelic-filtered panel, which is exactly why the whole-block scan is the load-bearing
+number.** `g_l8_477a`.
+
+## 💉⛔ R479 — **THE SAG DEPOT AUDITED AT THE LEVEL OF PURCHASE ORDERS. THE FORMULATION GAP DISSOLVES, THE
+## MATERIAL GAP IS CONFIRMED BY NAME — AND THE VEHICLE THIS FILE CALLED "APPROVED" HAS A LABEL
+## CONTRAINDICATION AGAINST THE EXACT ROUTE R373–R387 SPECIFIED.**
+
+⭐ **ONE — `g_l12_388b` CLOSES.** R388 made an aqueous SAG dihydrochloride at **≥30 mg/mL** a named
+requirement, because a 60 kg systemic dose in the published DMSO vehicle is ~40 mL of DMSO subcutaneously.
+**THE VENDOR STATES AQUEOUS SOLUBILITY TO 56.3 mg/mL = 100 mM, WITH NO EXCIPIENTS.** R388's requirement is met
+by the salt itself and R392's stretch target of 50 mg/mL is also met. ⚠ Vendor specification, not an
+independent measurement.
+⛔ **TWO — THE MATERIAL GAP IS CONFIRMED, AND NOW BY NAME RATHER THAN BY ASSUMPTION.** The vendor that sells
+SAG runs a **formal GMP and ancillary-material small-molecule range of seventeen compounds** — CHIR 99021,
+LDN 193189, SB 431542, XAV 939, Y-27632, A 83-01, DAPT, dexamethasone, forskolin, retinoic acid and the rest —
+**AND SAG IS IN NEITHER LIST.** The one product marketed as "GMP-grade SAG" carries a datasheet that **defers
+every purity, endotoxin, bioburden, sterility and residual-solvent figure to a lot certificate** and closes
+saying it is not fully validated for medical applications and is **for research use only.** It is an ancillary
+material for cell-therapy manufacturing, not a drug substance.
+⭐ **THREE — AND SCALE IS NOT THE OBSTACLE, WHICH SHARPENS THE POINT.** Catalogue SAG runs to **2 g at ~$5,850**,
+custom synthesis at a **1 g minimum, 2–4 month lead time** — against R392's **245 mg per systemic pulse** and
+**2.70 mg for a whole bilateral local pulse. THE LOCAL DEPOT IS TRIVIALLY WITHIN CATALOGUE SCALE. WHAT CANNOT
+BE BOUGHT IS THE QUALIFICATION, NOT THE COMPOUND.**
+⚠ **FOUR — A PURCHASING TRAP THAT WOULD SURVIVE AN ORDER FORM.** CLAUDE.md records CAS **364590-63-6** as the
+free base. **Half right: PubChem attaches it to the free base AND to the dihydrochloride MONOHYDRATE, and
+vendors use it for both.** Anhydrous dihydrochloride at MW 562.98 is **2702366-44-5**; free base at 490.06 is
+**912545-86-9**; monohydrochloride **2095432-58-7**; and at least one vendor sells the dihydrate at MW 599.0.
+⭐ **SPECIFY BY MOLECULAR FORMULA AND MOLECULAR WEIGHT, NOT BY CAS.**
+⛔⛔ **FIVE — AND THE THING THAT IS FALSE IS THE VEHICLE, WHICH IS THE ONE PART OF THE PROTOCOL THIS FILE
+CALLED APPROVED.** R373–R387 specified **TISSEEL** because it is FDA-approved and paediatrically indicated.
+**Its label says FOR TOPICAL USE ONLY, and section 4 contraindicates injecting it directly into the
+circulatory system OR INTO HIGHLY VASCULARIZED TISSUE, on the stated grounds that intravascular application
+can cause intravascular coagulation and life-threatening thromboembolic events. EPIPHYSEAL CANCELLOUS BONE IS
+A HIGHLY VASCULARISED COMPARTMENT DRAINING INTO THE VENOUS CIRCULATION.** An intraosseous fibrin depot is
+off-label by route **and sits against an explicit label contraindication, and no round of this programme
+priced that.**
+⚠ Corrected in passing: the current indication statement reads **adult and paediatric patients** without the
+">1 month" qualifier this file carried — that figure is from §8.4, where efficacy was supported by one study
+including 27 paediatric patients aged 1 month to 16 years. **EVICEL is supported only above six months, so
+Tisseel does have the lower paediatric limit — just not for this route.**
+⭐ **SIX — WHAT THE VEHICLE DOES HAVE IS TWO PIECES OF DIRECT EVIDENCE NEAR THE TARGET, ONE OF THEM NEW.**
+`park2025metaphyseal` doubles as a vehicle control — **a Tisseel-filled metaphyseal defect in a normal growing
+rabbit gave NO significant growth stimulation where bone wax did, so the fibrin itself is not a growth
+stimulus in that compartment.** NEW: **`abood2020` put Tisseel into a standardised PHYSEAL gap in the porcine
+distal femur for FOURTEEN WEEKS — every empty gap formed a bone bridge and Tisseel alone gave a bridge in
+about 1 gap of 5.** Pilot, n=5/arm; the only large-animal precedent for this vehicle against a growth plate.
+⭐ **SEVEN — THE ACCESS ROUTE IS ESTABLISHED IN ADULTS AND, FOR THE INSTRUMENT IF NOT THE DRUG, IN CHILDREN.**
+Percutaneous subchondral knee injection in adults now covers **24 studies and 1,109 patients, median
+complication rate 6.7 %**, calcium phosphate leakage commonest, with a five-case series of talar osteonecrosis
+after calcium phosphate. **In skeletally immature knees, percutaneous retrograde drilling obliquely THROUGH
+THE CONDYLAR EPIPHYSIS starting distal to the physis is established practice for juvenile OCD — 31 patients at
+mean four years (`boughanem2011`), with an MRI-guided series of ten reporting no procedural complications.
+NOBODY HAS DELIVERED A DRUG THROUGH THAT ROUTE IN A CHILD.**
+⛔ **EIGHT — AND THE REGISTRY NEGATIVE IS NOW EARNED TWICE OVER.** clinicaltrials.gov and the EU Clinical
+Trials Register queried directly for *smoothened agonist*, *hedgehog agonist*, SAG21k, purmorphamine, GSA-10,
+Hh-Ag1.5 and *hedgehog pathway activator*: **EVERY hedgehog entry in both registries is an ANTAGONIST.** The
+nearest thing to a clinical programme was **Curis licensing its hedgehog protein and small-molecule agonists
+to Wyeth in January 2004 for stroke and cardiovascular disease; Wyeth terminated it effective 6 May 2008 with
+the work still preclinical.** R441's shape again — the indication was dropped, not the biology refuted.
+⚠ **NINE — AND ONE ROUTE IS FURTHER ALONG THAN SAG AND IT IS A PROTEIN.** Recombinant human Sonic hedgehog is
+sold **at GMP grade, purity >95 %, ENDOTOXIN <0.01 EU/µg, ISO 9001:2015 and ISO 13485:2016, against USP <1043>
+— and licensed for preclinical or clinical EX VIVO use, NOT in vivo administration.** So a qualified hedgehog
+activator IS purchasable today; it is a **~19 kDa protein**, which sits where `farnum2006`'s size curve is
+around 10 %, and it is not licensed for the route that would be needed.
+
+## ⛔ R479 — **THREE SMALLER CORRECTIONS TO THIS LEDGER, EACH AGAINST A ROUND OF OUR OWN**
+
+⛔ **① `jhan2025` IS NOT CORROBORATION FOR THE rESWT ARM AND R456 QUOTED IT AS ONE.** Read directly, the paper
+is internally contradictory: **its Results state no statistically significant changes in the length of the
+left tibia, while its Discussion proposes ESWT-induced UNDERGROWTH as a potential epiphysiodesis technique.**
+→ **R468's corrected `ramesh2022` reading — 0.28 cm at 26 weeks decaying to 0.03 cm at the paper's own stated
+primary endpoint at sacrifice, with the plates fused by then — IS THE ONLY rESWT LENGTH EVIDENCE. SIXTH
+PROXY-TO-LENGTH FAILURE**, after LIPUS, capacitive coupling, LLLT, laser acupuncture and lovastatin.
+⛔ **② THE SERRAT WARMING ARM'S EVIDENCE BASE IS THINNER THAN RECORDED** — see the thermal block above: no
+independent replication, female-only bone-length data, no growth-plate histomorphometry for the unilateral
+model, and `serrat2013` unobtainable.
+⛔ **③ STILL OWED FROM AN EARLIER SESSION: the "188–204 cm" range this file attributes to AROMATASE
+DEFICIENCY is wrong at the top end — 204 cm belongs to `smith1994`'s ESR1 patient, not to an aromatase-
+deficient man.**
+
+🧭 **WHAT R479 DELIVERS AGAINST THE INSTRUCTION.** A limb-compartment ADD that is **oral, OTC and obtainable
+today**, whose one blocking objection the operator lifted and whose evidence base inverted in the same week —
+**+2.50 % of tibiotarsal length at P=0.032 in 1,152 normal animals, on the endpoint this atlas is denominated
+in, from a paper this file had filed as a null.** Ranked beside it: **indirubin-3-oxime** (cleanest tibial
+endpoint in the file, with the body-weight and resorption controls both run, and `kapadia2005`'s sign now
+running our way in a subject on an FGFR inhibitor); **the SAG depot**, re-ranked upward now that R391's
+compartment argument for the systemic route has fallen, but newly burdened by a **label contraindication
+against its own vehicle**; **lateral joint loading**, still a device built three times and never used in a
+human; and **local limb warming**, now split into a delivery dose a human knee can reach and a growth dose it
+cannot.

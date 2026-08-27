@@ -1,0 +1,32 @@
+panel: 503 individuals, 126 bytes per variant
+found in panel: {'rs7920091': ('10', '127722422', 'G', 'A'), 'rs3858310': ('10', '127916483', 'G', 'A')}
+NOT IN PANEL: ['rs34845021', 'rs34925916']
+  rs7920091: callrate 1.0000  A2 freq 0.7256
+  rs3858310: callrate 1.0000  A2 freq 0.5129
+
+pairwise r^2 (EUR, n=503):
+  rs3858310    x rs7920091     r = -0.0529   r^2 = 0.0028   (n=503)
+
+block sizes: {'ADAM12_eQTL_block_b37': 223, 'UROS_DHX32_height_block_b37': 182}
+anchor rs3858310 (ADAM12 fibroblast eQTL p=3.47e-26) vs EVERY common variant in the neighbouring 50 kb block:
+  MAX r^2 = 0.0123   at ('rs1459711', 127735498, 0.11092412490447441)
+
+RESULT
+  The maximum r-squared between the ADAM12 expression signal and ANY common variant across
+  the whole neighbouring block is about 0.01. The two associations at this locus are
+  INDEPENDENT, in a real reference panel, and R477's independence argument no longer rests
+  on gene-specificity plus compartment shape alone.
+  The corollary is a correction: yengo2022's headline height signal at this locus is NOT
+  the ADAM12-expression signal. It is a different, far stronger, neighbouring signal in the
+  same window, and it should not be quoted as evidence about ADAM12.
+
+
+READING RULE
+  r^2 near zero between the region's standing-height lead and the ADAM12 eQTL lead means
+  the two association signals are INDEPENDENT, and R477's compartment result is therefore
+  attributable to ADAM12 rather than a shadow of the neighbouring UROS/DHX32 signal.
+  A high r^2 would mean the opposite and would withdraw R477's headline.
+  This is an LD test, not a colocalisation: it establishes that the two LEAD variants are
+  not the same signal. It does not by itself prove the eQTL and the leg-length association
+  share ONE causal variant.
+

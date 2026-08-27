@@ -1,0 +1,76 @@
+id: round479_the_adam12_expression_signal_is_ld_independent_of_the_height_signal_in_a_real_reference_panel
+name: >-
+  R479 - the 1000 Genomes EUR panel was pulled and the two associations at the ADAM12 locus are independent at
+  r-squared 0.01 across the whole neighbouring block, which secures R477 and withdraws R466's headline P value
+aliases:
+  - ADAM12 locus LD independence
+  - rs3858310 rs7920091
+  - yengo2022 ADAM12 signal misattribution
+type: dataset
+layer: L8
+stub: false
+confidence: B
+last_verified: '2026-08-27'
+species_basis: human
+human_evidence: direct
+human_evidence_note: >-
+  1000 Genomes phase 3 EUR reference panel, 503 individuals, 8,550,156 biallelic SNPs, GRCh37, read directly from
+  the PLINK binary. Genotype call rate 1.0000 at both anchor variants.
+translation_risk: low
+translation_risk_reason: Human reference genotypes and human summary statistics throughout.
+summary: >-
+  R477 SIGNED THE ADAM12 DIRECTION BY CROSSING THE eQTL AGAINST THE GWAS AND ARGUED THE SIGNAL WAS INDEPENDENT OF
+  ITS NEIGHBOUR ON THREE INDIRECT GROUNDS - lead-variant gene specificity, mutual eQTL nullity, and discordant
+  compartment shape - while recording that no formal test was possible without an LD reference. The operator
+  supplied the panel and the test is now run.
+  THE PANEL. 1000 Genomes phase 3 EUR from the MRC IEU file server, 503 individuals and 8,550,156 variants, read
+  directly from the PLINK .bed binary with numpy because no plink executable is available. Call rate is 1.0000 at
+  both anchors, so nothing rests on imputation.
+  THE RESULT. Between rs3858310, the ADAM12 fibroblast eQTL lead at p=3.47e-26, and rs7920091, the region's
+  headline yengo2022 height variant, r = -0.0529 and R-SQUARED = 0.0028. And the stronger version, which does not
+  depend on which lead happens to be present in a biallelic-filtered panel: THE MAXIMUM R-SQUARED BETWEEN
+  rs3858310 AND EVERY ONE OF THE 182 COMMON VARIANTS ACROSS THE WHOLE NEIGHBOURING 50 kb BLOCK IS 0.0123.
+  So the ADAM12 expression signal and the neighbouring UROS/DHX32 height signal are INDEPENDENT in a real
+  reference panel, and R477's compartment result - sitting height frankly null, the whole effect in the leg - is
+  attributable to ADAM12 rather than being a shadow of a neighbour.
+  AND THE COROLLARY IS A CORRECTION TO OUR OWN LEDGER, IN THE UNFAVOURABLE DIRECTION. R466 headlined that ADAM12's
+  top GWAS trait is human height with nine conditionally independent yengo2022 signals and a best P of 6e-73.
+  THAT SIGNAL IS NOT THE ADAM12-EXPRESSION SIGNAL. It is a different, far stronger, LD-independent association in
+  the same window whose lead is a UROS eQTL at p=1.35e-39 and a DHX32 eQTL at p=4.25e-28. IT MUST NOT BE QUOTED AS
+  EVIDENCE ABOUT ADAM12. What survives as human evidence for the gene is the weaker, cleaner thing: the eQTL-signed
+  cluster, where 27 of 33 variants at fibroblast eQTL p<1e-8 have the ADAM12-RAISING allele associated with a
+  LONGER LEG, best variant rs34925916 at leg length +0.00973 and P=8.3e-08 with sitting height null at P=0.82.
+  WHAT THIS IS NOT. It is an LD test and not a colocalisation. It establishes that two lead variants are not the
+  same signal; it does not by itself prove that the eQTL and the leg-length association share ONE causal variant,
+  which would need coloc or SMR-HEIDI and a full conditional analysis. Two of R477's four named variants -
+  rs34845021 and rs34925916 - are ABSENT from the panel, which is biallelic-SNP filtered, which is exactly why the
+  whole-block scan rather than the two-variant test is the load-bearing number.
+quantitative:
+  - parameter: pairwise LD between the ADAM12 eQTL lead and the region's headline height variant
+    value: '0.0028'
+    unit: r-squared in EUR (r = -0.0529), n=503, both call rate 1.0000
+    species: human
+    source_ref: yengo2022
+    note: >-
+      rs3858310 (chr10:127,916,483 GRCh37, A2 frequency 0.5129) against rs7920091 (chr10:127,722,422, A2 frequency
+      0.7256). Computed this round from the PLINK binary.
+  - parameter: maximum LD between the ADAM12 eQTL lead and ANY common variant in the neighbouring block
+    value: '0.0123'
+    unit: r-squared, across 182 common variants spanning the 50 kb UROS/DHX32 height block
+    species: human
+    source_ref: yengo2022
+    note: >-
+      Maximum at rs1459711, chr10:127,735,498. THE LOAD-BEARING NUMBER, because it does not depend on which lead
+      variants happen to survive the panel's biallelic-SNP filter.
+  - parameter: reference panel size
+    value: 503 individuals, 8,550,156 variants
+    unit: 1000 Genomes phase 3 EUR, GRCh37, biallelic SNPs only
+    species: human
+    source_ref: yengo2022
+    note: >-
+      Read directly from the PLINK .bed with numpy - three magic bytes, then ceil(N/4) bytes per variant,
+      SNP-major, two bits per sample little-endian, codes 00 hom A1, 01 MISSING, 10 het, 11 hom A2.
+key_refs:
+  - ref_id: yengo2022
+open_questions:
+  - g_l8_477a
