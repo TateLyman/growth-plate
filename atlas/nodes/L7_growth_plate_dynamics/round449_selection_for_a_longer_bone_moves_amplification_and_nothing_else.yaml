@@ -124,8 +124,70 @@ summary: 'THE CLEANEST TERM RANKING THAT EXISTS, AND IT IS AN EVOLUTIONARY EXPER
   that got SHORTER and with the increment banked before school age. R440 already derived the consequence and it
   stands: if the plate carries a finite division budget then a gain delivered in a shortened period cannot be extra
   divisions either, so it must be YIELD PER DIVISION - which lands on CORR-361''s matrix term. And the compartment
-  is wrong for this subject, since the secular mechanism is leg-directed and delivered before eighteen months.'
+  is wrong for this subject, since the secular mechanism is leg-directed and delivered before eighteen months.
+
+  R452-ERA ADDENDUM, 2026-08-27: THE FULL TABLE 1 READ FROM THE PDF, AND IT IS STRONGER AND MORE SPECIFIC THAN
+  THE ABSTRACT. Least-squares means with standard errors, ALL CONTROLLED FOR BODY MASS, at postnatal day 14,
+  Control n=16, Longshanks 1 n=16, Longshanks 2 n=17. Tibia length 11.39, 12.11, 12.16 mm - both selected
+  lines significantly above Control. Proximal growth plate 0.408, 0.506, 0.545 mm, significant. Total growth
+  plate 0.516, 0.566, 0.601, significant. RESTING ZONE 0.050, 0.061, 0.078 mm, i.e. plus 22 and plus 56 per
+  cent, with LS2 significantly above both. PROLIFERATIVE ZONE 0.200, 0.253, 0.273 mm, plus 27 and plus 37 per
+  cent, both significant. NUMBER OF PROLIFERATIVE CHONDROCYTES PER COLUMN 25, 29, 33, plus 16 and plus 32 per
+  cent, both significant. And then the three that did not move, none of which carries a significance
+  superscript: HYPERTROPHIC ZONE 0.249, 0.228, 0.231 mm - numerically SMALLER in both selected lines; NUMBER
+  OF HYPERTROPHIC CHONDROCYTES 18, 18, 18 - identical; LAST HYPERTROPHIC CHONDROCYTE HEIGHT 0.030, 0.029,
+  0.030 mm - IDENTICAL TO THREE DECIMAL PLACES. Growth rate 0.35, 0.41, 0.43 mm/day, ANCOVA P below 0.001,
+  while growth was 99 per cent complete on day 69, 70 and 71 - so RATE differs and DURATION does not. And
+  labelling indices did not differ between the three groups at two, six or 24 hours, so the proliferative
+  chondrocytes do not cycle faster.
+
+
+  SO THE DECOMPOSITION IS EXACT: TWENTY GENERATIONS OF DIRECTIONAL SELECTION ON TIBIA LENGTH MOVED THE
+  RESTING POOL AND THE NUMBER OF AMPLIFYING CELLS, AND MOVED NEITHER PROLIFERATION RATE, NOR TERMINAL CELL
+  SIZE, NOR THE PERIOD, BY ANY DETECTABLE AMOUNT.
+
+
+  AND THE REFRAME THAT MATTERS, WHICH THE ABSTRACT CANNOT SUPPORT AND THE TABLE CAN: SELECTION MOVES WHAT HAS
+  VARIANCE, NOT WHAT HAS LEVERAGE. Terminal cell enlargement contributes 44 to 59 per cent of daily elongation
+  by wilsman1996''s closed partition, and it was INVARIANT to twenty generations of selection - 0.030, 0.029,
+  0.030 mm. That does not make it unimportant. It makes it a HARD-CONSTRAINED term, and it means a
+  PHARMACOLOGICAL handle on terminal cell height accesses variance that selection cannot reach, rather than
+  being redundant with what evolution already optimised. R436 read this paper as evidence against the h_term
+  arm; on the full table the correct reading is the opposite one.
+
+
+  THE AUTHORS'' OWN CAVEAT, VERBATIM IN SUBSTANCE AND UNCHANGED: the cell proliferation data provide evidence
+  that the differences in Longshanks likely derive from an earlier developmental time point, whether through a
+  larger pool of undifferentiated resting-zone cells or through early embryonic factors such as anlagen size
+  or the timing of the primary and secondary ossification centres. CORR-299 therefore governs any inference
+  from this to an open postnatal plate - but note that the FIRST of the two mechanisms the authors offer is
+  the resting-zone pool, which is exactly the N term, and which their own Table 1 shows expanded by 56 per
+  cent in the longer-tibia line.'
 quantitative:
+- parameter: 'Longshanks Table 1 - what TWENTY GENERATIONS OF SELECTION FOR A LONGER TIBIA ACTUALLY MOVED'
+  value: 'resting zone 0.050/0.061/0.078 mm (+22%, +56%); proliferative zone 0.200/0.253/0.273 (+27%, +37%);
+    proliferative chondrocytes per column 25/29/33 (+16%, +32%) - all significant'
+  unit: least-squares means (SE) controlled for body mass, Control / Longshanks 1 / Longshanks 2, P14, n=16/16/17
+  species: mouse
+  source_ref: marchini2018
+  note: tibia length 11.39/12.11/12.16 mm and proximal growth plate 0.408/0.506/0.545 mm
+- parameter: 'Longshanks Table 1 - what selection DID NOT MOVE, none carrying a significance superscript'
+  value: 'hypertrophic zone 0.249/0.228/0.231 mm (numerically SMALLER in both selected lines); number of
+    hypertrophic chondrocytes 18/18/18 (identical); LAST HYPERTROPHIC CHONDROCYTE HEIGHT 0.030/0.029/0.030 mm
+    (IDENTICAL TO THREE DECIMAL PLACES)'
+  unit: least-squares means (SE) controlled for body mass, same animals
+  species: mouse
+  source_ref: marchini2018
+  note: SELECTION MOVES WHAT HAS VARIANCE, NOT WHAT HAS LEVERAGE - h_term is 44-59 per cent of elongation by
+    wilsman1996 and was invariant to 20 generations, which makes it HARD-CONSTRAINED rather than unimportant,
+    and makes a pharmacological handle on it access variance selection cannot reach
+- parameter: 'Longshanks - growth RATE differs and growth DURATION does not'
+  value: 0.35 / 0.41 / 0.43 mm per day, ANCOVA P<0.001; growth 99 per cent complete on postnatal day 69 / 70 / 71
+  unit: mm/day and days, Control / LS1 / LS2
+  species: mouse
+  source_ref: marchini2018
+  note: and labelling indices did not differ between the three groups at 2, 6 or 24 hours, so the extra
+    proliferative chondrocytes do not cycle faster - the term that moved is their NUMBER
 - parameter: what twenty generations of artificial selection on tibia length actually changed
   value: increased NUMBER of proliferative chondrocytes only
   unit: no change in proliferation rate, in hypertrophic cell size or number, or in growth duration
