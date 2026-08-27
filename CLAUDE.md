@@ -13430,3 +13430,62 @@ number, a regulatory strategy and a composition shift**, and the one paper the l
 missing document turns out to argue **for** rather than against the pharmacological direction. And the **direction of
 hypertrophic expansion is answered**: the axial path is the soft one, the anisotropy is collagen density rather than
 fibre angle, and the soft path is the charged one.
+
+## 📜📜📜 R468 ADDENDUM — **A9 WAS ALREADY IN THE UPLOAD STORE. `nordentoft1964` RE-READ, AND IT SUPPLIES A
+## MEASUREMENT-NOISE FLOOR THAT PRICES THE WHOLE HUMAN LIMB-LENGTH LITERATURE OF ITS ERA — PLUS TWO DISCUSSION
+## VERDICTS THAT PAIR EXACTLY WITH `hansson1967`.**
+
+⛔ **PROVENANCE FIRST, AND IT IS CORR-333's SHAPE AGAIN: the Acta Orthop Scand supplement this file has been asking
+for as A9 has been sitting in `/root/.claude/uploads/` since 2026-08-27 01:46 as `ort.1964.35.suppl74.01.pdf`, 25
+pages, alongside `brodin1955` as `ort.1955.26.suppl20.01.pdf`, 91 pages.** Both were supplied together and only the
+1955 one had been opened. **`nordentoft1964`'s table of contents IS the eleven-method catalogue** — periosteal
+stripping · implantation of foreign material · occlusion of the medullary cavity · occlusion of the nutrient arteries
+· arteriovenous anastomoses · venous stasis · sympathetic denervation · short-wave diathermy · heat · X-radiation.
+**A9 is struck.** ✓ Every figure R450 held secondhand through it — Hierton 3.0–6.5 cm, Janes & Jennings 2.7 cm with
+cardiac dilatation, Gullickson −2.8 mm on stimulation and +2.7 to +14.0 mm on sympathectomy, Ring & Lee's null at
+40 °C in 4 children, Richards & Stofer's +2–6% on electrical heating, Trueta's wax result — **verified verbatim.**
+
+⭐⭐⭐ **ONE — THE NEW NUMBER, AND IT IS A CEILING ON AN ENTIRE LITERATURE. SPOT ORTHORADIOGRAPHIC MEASUREMENT OF
+THE DIFFERENCE BETWEEN TWO BONES HAS SD ±2.5 mm; A GROWTH RESULT IS THE DIFFERENCE BETWEEN TWO TIMEPOINTS, SO THE
+COMPOUNDED SD IS ±3.54 mm AND ±2 SD IS ABOUT 7 mm — PURELY FROM MEASUREMENT INACCURACY.** That is why he can state
+that **no individual case exceeded the average effect**, and it means **any single-patient limb-length claim below
+about 7 mm in that era is inside noise.**
+⭐ **It immediately re-prices two things.** **Carpenter & Dalton 1956 — drill holes + marrow curettage + IVORY CHIPS,
+26 of 28 CHILDREN, average 0.7 cm — sits AT the noise floor** (and R450 had this pair filed as "iron nails …
+insignificant", which is a different report). And it is why **the AV fistula is the only arm in the catalogue with
+centimetre-scale effects: 2.7–6.5 cm is the only band comfortably above ±7 mm.**
+
+⭐⭐ **TWO — AND HIS OWN SERIES, THE LARGEST PUBLISHED, CLOSES THE IMPLANT ROUTE: Pease ivory screws in 44 long bones
+of 26 children — SIGNIFICANT +2 mm IN THE FIRST POSTOPERATIVE YEAR AND NOTHING IN YEARS 2 AND 3**, no case
+significantly exceeding the average, **"the effect has disappeared, completely or very nearly, in 1 year"** — and his
+verdict is that it **"does not justify a continued clinical application."** Lumbar sympathectomy on 16 bones in 11
+patients: **no definite stimulation**, and he states the result makes a several-centimetre reduction **unlikely**,
+against Harris & McDonald's >400 operations and Barr et al.'s 23 patients (−0.3 cm vs +1.8 cm in controls, **but only
+3 with a definite reduction once error is allowed**).
+
+⭐⭐ **THREE — TWO DISCUSSION VERDICTS THAT PAIR EXACTLY WITH `hansson1967` THREE YEARS LATER, AND TOGETHER THEY ARE
+THE CLOSURE: "PERIOSTEAL STRIPPING HAS NOT GIVEN DEFINITE GROWTH STIMULATION IN ANIMAL EXPERIMENTS" AND "OCCLUSION
+OF THE MEDULLARY CAVITY HAS NOT AFFORDED A DEFINITE EFFECT IN ANIMAL EXPERIMENTS."** A 1964 review of the whole
+field and a 1967 experiment with a seven-arm sham ladder and a normal reference group, from two countries, reaching
+the same place from the literature and from the bench.
+
+⛔ **FOUR — AND THE OCCLUSION RESULT THIS ATLAS HAS BEEN CITING FOR THREE ROUNDS IS UNQUANTIFIED IN ITS OWN SOURCE.**
+R442 and R450 both trace the bone-wax finding to **Trueta 1953**, through `nordentoft1964`. Read directly, Nordentoft
+writes that severing the nutrient arteries did nothing while blocking their lumina with wax or periosteal stripping
+around the foramen gave a stimulation **"which is not further specified."** ⭐ **There is no number.** C6 stays on the
+blocked list for that reason, and R442's modern replication (`lee2023metaphyseal`, `park2025metaphyseal`) is now the
+only quantified version of the occlusion result — with `hansson1967` showing the long-run sign is negative.
+
+⛔ **FIVE — SHORT-WAVE DIATHERMY IS NULL AS A CLASS AND HIGH DOSES DESTROY THE PLATE.** Four studies (Buchtala, Wise
+et al., De Forest et al., Vaughen & Bender): **no growth-stimulating effect in any, and at high dose extensive
+destruction of bone, EPIPHYSIAL PLATE and joint cartilage.** ⭐ **That largely closes C8** — `schneider1963`'s
+reference 9 (Doyle & Smart 1963) is one positive claim against four negatives at the class level. **X-radiation
+likewise null or retarding.** ⚠ And venous stasis has a positive arm he calls negligible overall: Servelle 1948, 7
+puppies, **2.6–7.6%** with the measuring method undescribed, and Hutchison & Burdeaux 1954, **+1.45%** on femora and
+tibiae of 6 dogs when applied to the HIND legs and **nothing in 11 dogs' forelegs** — against Dickinson 1953 and Wu &
+Miltner 1937, both null.
+
+🧭 **NET: the abandoned-methods corpus is now read from both ends — the 1964 review and the 1967 experiment — and it
+closes on ATTAINED LENGTH rather than on absence of data. What survives from it is exactly what R450 identified: the
+ARTERIOVENOUS ANASTOMOSIS is the only arm with centimetre-scale effects sustained over years, it is the only one
+clearly above the ±7 mm noise floor, and it is surgical and therefore excluded here on route.**
