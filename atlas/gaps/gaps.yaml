@@ -11543,32 +11543,25 @@ gaps:
     zero. forcinito2011, rat: senescence tracks growth rather than time, and four weeks of growth inhibition delays it by
     about two. chu2025, mouse: the pool renews by population asymmetry, so the ratio of self-renewing to committed divisions
     is a regulated quantity.'
-  what_is_missing: 'PARTIALLY CLOSED 2026-08-07 - AND BY ARITHMETIC, NOT BY AN EXPERIMENT. This field previously read THE
-    QUANTITY HAS NEVER BEEN MEASURED IN ANY SPECIES. That is still true of MEASUREMENT, and no longer true of ESTIMATION.
-    lui2018 publishes its per-animal values as an open CC-BY supplementary workbook which contains both terms in the same
-    mice at the same ages - calcein bone growth in micrometres per day and resting zone cell count per 500 micrometres of
-    plate width - and this atlas computed the quotient (atlas/tools/yield_lui2018.py). Over the same 2-to-3-week interval
-    in the same animals the metacarpal, which fuses at 2-3 weeks, returns 14 micrometres of bone per resting zone cell spent
-    (95% CI 12-18) against the femur''s 146 (110-208), a tenfold separation with non-overlapping intervals inside one animal.
-    THE YIELD IS THEREFORE A REAL, BONE-SPECIFIC, ORDER-OF-MAGNITUDE-VARIABLE QUANTITY and not merely a term in an argument.
-    It is a re-analysis, flagged value_unverified, and every value is an UPPER BOUND because a fall in a standing stock
-    understates gross consumption. WHAT REMAINS MISSING IS STILL MOST OF THE GAP. Specifically - (a) no value has been MEASURED
-    by anyone, and this estimate matches numerator and denominator by age and bone across two separate cohorts rather than
-    within animals; it also cannot separate progenitor efficiency from terminal hypertrophic cell size, which lui2018 shows
-    is smaller in the small bones and which lowers micrometres per division independently. No published value exists for
-    proliferative divisions per resting-zone cell consumed in any species; nilsson2014 infers the DIRECTION of a change
-    in it from two separately measured parameters in a discussion, and attaches no number. (b) Whether it varies between
-    bones is now ANSWERED IN THE AFFIRMATIVE by the estimate above - lui2018 shows small and large bones differ in senescence
-    rate and in proliferation per column, which is the numerator, but resting zone consumption was not measured, so the
-    ratio cannot be computed from THAT figure either - though the S1 Data workbook behind the same paper turned out to contain
-    a different, usable pair. (c) WHETHER ANYTHING RAISES IT IS STILL COMPLETELY OPEN, and is now the whole gap. Every intervention
-    in this atlas changes pool size or exit rate; none has been assessed for yield. The estimate above is observational
-    - it says the yield DIFFERS between bones, not that it can be MOVED. (d) Whether yield and exit rate are independently
-    addressable, or whether any manipulation that slows exit necessarily lowers yield - which would close the route. (e)
-    AND A NEW ONE FROM THE schrier2006 FULL TEXT: whether the elimination that motivates the whole gap survives a longer
-    exposure. The double null is at TWO WEEKS, n = 6-7, with no power calculation, and nilsson2014 at FIVE weeks did see
-    the numerical depletion Schrier did not. If the null is simply too short or too small, the yield reverts from a residual
-    to a conjecture. Tracked as contradiction C-L2-06 and gap g_l2_oestrogen_depletion_time_course.'
+  what_is_missing: 'PARTIALLY CLOSED AGAIN 2026-08-27 (R470) - THE SECOND SPECIES NOW HAS A NUMBER AND IT IS ON THE AXIS
+    THE STACK ACTUALLY MANIPULATES. The operator supplied the nilsson2014 scan; Figures 2G/2H (resting zone chondrocytes
+    per mm plate width) and Figure 3B/3C/3D (proximal tibial growth rate and BrdU proliferation) are on the same page and
+    were rendered at 760-900 dpi and read. Computed in atlas/tools/round470_nilsson2014_yield.py. ON TREATMENT, oestrogen
+    against vehicle: proximal tibia 511 against 868 micrometres of growth per resting-zone cell lost, ratio 0.59; proximal
+    tibia 0.364 against 0.654 BrdU cells per column per resting-zone cell lost, ratio 0.56; distal radius 0.319 against
+    0.759, ratio 0.42. THREE COMPUTATIONS, TWO BONES, TWO NUMERATORS, ALL SAYING OESTROGEN ROUGHLY HALVES THE YIELD - which
+    is the authors own unquantified claim that there are fewer proliferative replications per lost resting zone chondrocyte.
+    AND THE SHAPE MATTERS MORE THAN THE RATIO: the vehicle arm falls 868 to 443 over ten weeks of ordinary ageing while
+    the oestradiol arm is flat at 511 then 500, so oestrogen delivered the entire normal decline in five weeks and it did
+    not recover - the control arm catches DOWN to it. FOUR CAVEATS. Every input is an axis-calibrated visual read of a printed
+    figure and the paper publishes no table. The resting zone is a STANDING STOCK so its fall understates gross consumption
+    and every value is an UPPER BOUND, making the between-arm ratio the robust part. The units are cells per mm of plate
+    WIDTH against a length, so only the ratio within one bone is interpretable. And the growth rate came from a dedicated
+    pinned subset followed radiographically while the histology came from separate animals killed at each timepoint - NOT
+    the same animals, which is weaker than the lui2018 computation where both terms are per-animal. The washout arms also
+    disagree by bone: proximal tibia converges, distal radius does not. WHAT IS STILL MISSING: a DIRECT measurement rather
+    than a quotient of two figure-read curves, in one set of animals, with a bone-length endpoint at maturity - and any
+    intervention that RAISES the yield, which has never been attempted in any species.'
   nearest_evidence:
   - schrier2006
   - nilsson2014
@@ -11582,21 +11575,15 @@ gaps:
     rate as BrdU-labelled cells per proliferative column. Oestrogen and vehicle, proximal tibia and distal radius, 16 and
     21 weeks. Every term needed for a yield is in one paper. schrier2006 is the origin of the idea and is the paper that
     comes closest to isolating it, by excluding both observable alternatives in one animal series.
-  discriminating_experiment: 'THE FIRST STEP IS NOT AN EXPERIMENT, IT IS A DIVISION - and the atlas previously understated
-    how close it is. nilsson2014 contains the change in resting zone chondrocytes per mm between timepoints (the denominator,
-    Figure 2 G and H) and the proliferation rate per column over the same interval (the numerator, Figure 3), in the same
-    animals under oestrogen and vehicle. Taking the quotient gives the first published estimate of proliferative output
-    per resting zone cell consumed, and directly tests the authors'' own undemonstrated claim that oestrogen lowers it.
-    THE OBSTACLE IS MECHANICAL, NOT SCIENTIFIC: both figures are raster images in the PDF this atlas holds, with no source
-    data table and no supplemental values, so the numbers must be digitised with axis calibration and would carry read error
-    - any result must be graded as a re-analysis of plotted values, not as a measurement. Requesting the underlying values
-    from the authors is the clean route and is cheap. A UNITS CAVEAT THAT MUST NOT BE GLOSSED: cells per column and cells
-    per mm width are STANDING STOCKS, and a yield is a flux over a flux, so the ratio of two stocks is not the quantity
-    - the correct construction is proliferative divisions ACCUMULATED over an interval divided by resting zone cells LOST
-    over that same interval, which is why the timepoint pairs matter and a single-timepoint ratio would be wrong. THEN PERTURB
-    IT: dexamethasone is the one agent known to uncouple exit rate from renewal rate, so measuring yield under dexamethasone
-    tests directly whether conserving the pool costs efficiency or preserves it. If yield is preserved while exit slows,
-    the two terms are independent and the route is open.'
+  discriminating_experiment: 'THE COMPUTATION IS DONE (R470); WHAT REMAINS IS AN INTERVENTION. In a species that fuses,
+    measure output per resting-zone cell consumed directly - calcein or oxytetracycline growth rate as numerator and serial
+    resting-zone counts as denominator, in the SAME animals - under an agent predicted to raise it, with bone length at
+    maturity as the terminal endpoint. The one mechanistic lead is schrier2006 dexamethasone contrast: dexamethasone and
+    oestrogen BOTH slow resting-zone proliferation, yet dexamethasone CONSERVES resting-zone cell number because it additionally
+    inhibits differentiation to proliferative cells. That says the OUTFLOW is separately controllable from the renewal rate,
+    so an agent that blocks differentiation without slowing renewal is the specification. Glucocorticoids themselves are
+    contraindicated twice in this atlas (GR, and the SMO cysteine-rich domain), so the dexamethasone result is a mechanism
+    and never a candidate.'
 - gap_id: g_l2_oestrogen_depletion_time_course
   type: known_unknown
   layer: L2

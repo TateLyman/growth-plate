@@ -13616,3 +13616,142 @@ to it at all. What is withdrawn is the framing — **it is not an unopposed gain
 is a GAIN-ONLY lever whose loss anchor is null by design, which is a target class every systematic screen in this
 atlas is blind to.** ⭐ **And the one experiment that matters is unchanged and better specified: supply active
 ADAM12-S to a normal growing animal and measure the Col X⁺ zone and terminal cell height alongside the caliper.**
+
+## 🧮🧮🧮🧮🧮 R470 — **THE LEDGER LOST THE *YIELD* TERM. A grade-B node has held the whole argument since
+## 2026-08-07 with ZERO CLAUDE.md presence — and R459, a round explicitly about how the pool drains, walked
+## straight past it. ⭐ TWO SUPPLIED PRIMARIES THEN CLOSE ITS NAMED EXPERIMENT: OESTROGEN ROUGHLY HALVES THE
+## OUTPUT PER RESTING-ZONE CELL SPENT, ON THREE INDEPENDENT COMPUTATIONS.**
+## Run `atlas/tools/round470_nilsson2014_yield.py` → `atlas/data/round470/`
+
+⛔⛔ **CORR-365 — CORR-352 ON THE SINGLE MOST WORKED NODE IN THE POOL ARM.**
+`the_exchange_rate_between_growth_and_pool_depletion` — **grade B, five key refs, two named gaps, written
+2026-08-07** — returns **ZERO** for its node id, for *"yield per cell spent"* and for its central result in
+CLAUDE.md. It already holds: the reversible/irreversible dissociation · TUNEL negative · **the pool drains by
+DIFFERENTIATION, not death** · *"fewer proliferative chondrocyte replications per lost resting zone
+chondrocyte… That is a YIELD, and oestrogen lowers it"* · **the DEXAMETHASONE MIRROR** · and a quantitative
+result from `lui2018`'s open supplementary workbook — **metacarpal 14 µm of bone per resting-zone cell spent
+(95% CI 12–18) against femur 146 (110–208), a TENFOLD DIFFERENCE WITH NON-OVERLAPPING INTERVALS INSIDE ONE
+ANIMAL.** ⛔ **R459 wrote "the resting pool drains by a route nobody has named" one round ago. This file named
+it in 2026-08-07 and credited `schrier2006` with proposing it in 2006.**
+
+⭐⭐⭐ **ONE — AND `schrier2006`'s ARGUMENT IS A FORCED MOVE, NOT A SPECULATION, WHICH IS WHY IT MATTERS.**
+Schrier went in with two candidate mechanisms for how oestrogen accelerates senescence — it speeds resting-zone
+proliferation, or it speeds the numerical loss of resting-zone cells — and **in their own words OESTROGEN DID
+NEITHER: it DECREASED resting-zone proliferation (P=0.011) and had NO significant effect on resting-zone cell
+number**, at the same dose, compound and route `nilsson2014` later used. ⭐ **So after two weeks of oestrogen
+the two measurable state variables of the pool — how fast it divides and how many cells it holds — are moving
+the WRONG WAY and NOT AT ALL respectively, while senescence accelerates. Something is being spent that neither
+number sees, and the residual is the yield.** It is the only term left standing once both observables are
+excluded **by measurement rather than by argument.**
+
+⭐⭐⭐⭐ **TWO — AND THE GAP'S OWN NAMED EXPERIMENT IS NOW DONE.** `g_l2_raise_the_yield_per_progenitor` states
+the discriminating step verbatim: *nilsson2014 contains the change in resting-zone chondrocytes between
+timepoints (the denominator, Fig 2 G–H) and the proliferation rate over the same interval (the numerator,
+Fig 3), in the same animals* — and records the obstacle as **MECHANICAL: both are raster images.** R175's note
+adds that Figure 2 had been digitised by eye and **"the flux numerator is the paper's Figure 3, which was not
+in the panel supplied and is still needed."**
+⭐ **THE OPERATOR SUPPLIED THE SCAN. FIGURES 2 AND 3 ARE ON THE SAME PAGE. Rendered at 760–900 dpi and read.**
+| yield (output ÷ resting-zone cells lost) | vehicle | estradiol | **ratio** |
+|---|---|---|---|
+| **PT µm of growth per RZ cell lost, 11→16 wk ON TREATMENT** | **868** | **511** | **0.59** |
+| PT µm per RZ cell lost, 16→21 wk WASHOUT | 443 | 500 | 1.13 |
+| PT BrdU cells/column per RZ cell lost, ON TREATMENT | 0.654 | 0.364 | **0.56** |
+| **DR** BrdU cells/column per RZ cell lost, ON TREATMENT | 0.759 | 0.319 | **0.42** |
+| DR, WASHOUT | 0.730 | 0.332 | 0.46 |
+⭐⭐ **THREE INDEPENDENT COMPUTATIONS — TWO BONES, TWO NUMERATORS — ALL SAY OESTROGEN ROUGHLY HALVES THE
+OUTPUT PER RESTING-ZONE CELL SPENT. THAT IS THE AUTHORS' OWN UNQUANTIFIED CLAIM, QUANTIFIED.**
+⭐⭐ **AND THE SHAPE IS BETTER THAN THE RATIO: IN THE VEHICLE ARM THE PT YIELD FALLS 868 → 443, A 49% DECLINE
+OVER TEN WEEKS OF ORDINARY AGEING, WHILE THE OESTRADIOL ARM IS ESSENTIALLY FLAT AT 511 → 500. OESTROGEN
+DELIVERED THE ENTIRE NORMAL DECLINE IN THE FIRST FIVE WEEKS AND IT STAYED THERE. THAT IS SENESCENCE EXPRESSED
+AS A YIELD, AND IT DOES NOT RECOVER — THE CONTROL ARM CATCHES *DOWN* TO IT.**
+⛔ **FOUR CAVEATS, AND THEY BOUND WHAT THE NUMBER MEANS.** ① Every input is an **axis-calibrated visual read of
+a printed figure**; the paper publishes no table. ② The resting zone is a **STANDING STOCK**, so its fall
+understates gross consumption and every value is an **UPPER BOUND** — the between-arm ratio is the robust part.
+③ **Units**: cells per mm of plate *width* against a length, so only the ratio within one bone is
+interpretable. ④ ⛔ **NOT THE SAME ANIMALS** — growth rate came from a dedicated pinned subset followed
+radiographically, histology from separate animals killed at each timepoint. That is weaker than `lui2018`,
+where both terms are per-animal. ⚠ And the washout arms disagree by bone (PT converges, DR does not).
+
+⭐⭐ **THREE — `nilsson2014` READ IN FULL, AND IT SUPPLIES THE DISCRIMINATOR BETWEEN A LOAN AND A LOSS, STATED
+BY THE PEOPLE WHO RAN BOTH EXPERIMENTS.** After withdrawal the functional parameters returned to normal **but
+did not rebound above it**, so **the decreased tibial length of oestrogen-treated animals was at least as
+pronounced 5 weeks after withdrawal as at the end of treatment — NO CATCH-UP GROWTH.** The authors contrast
+this explicitly with **hypothyroidism, glucocorticoid excess and malnutrition, all of which ARE followed by
+catch-up BECAUSE growth inhibition slows senescence** — and conclude oestrogen is the exception because **it
+does not slow functional senescence.**
+⭐ **THE RULE: A GROWTH-INHIBITING AGENT THAT *ALSO* SLOWS SENESCENCE IS A LOAN REPAID; ONE THAT DOES NOT IS A
+PURE LOSS.** R366, R431 and R433 circled this from `oichi2023` and `gafni2001` without ever having it stated
+by a group that had done both arms. **It is also the test to apply to R431's resveratrol** — which lowers
+BrdU — and to every future agent that buys duration by slowing growth.
+
+⭐⭐⭐ **FOUR — AND THE DRAIN R459 COULD NOT NAME IS NAMED, WITH ITS MIRROR.** Oestrogen **decreases
+proliferation and thus SELF-RENEWAL of resting-zone chondrocytes WITHOUT delaying — and possibly while
+accelerating — their differentiation out.** Inflow falls, outflow does not, the pool drains.
+⭐⭐ **THE MIRROR IS DEXAMETHASONE: it ALSO slows resting-zone proliferation, and it CONSERVES resting-zone
+cell number, because it ADDITIONALLY INHIBITS DIFFERENTIATION TO PROLIFERATIVE CELLS** (`schrier2006`).
+**TWO AGENTS, ONE SHARED EFFECT ON RENEWAL, OPPOSITE EFFECTS ON THE POOL — AND THE DIFFERENCE IS WHETHER THE
+OUTFLOW IS ALSO BLOCKED. THE EXIT RATE IS SEPARATELY CONTROLLABLE, WHICH IS THE ONE THING R459's MODEL
+REQUIRED AND COULD NOT SUPPLY.** ⛔ Glucocorticoids are contraindicated twice here (GR, and the SMO
+cysteine-rich domain), so this is **MECHANISM, never a candidate** — and it is `gafni2001`'s delayed fusion
+read at the cellular level.
+✓ **AND `nilsson2014` INDEPENDENTLY NAMES R356's RESTING-ZONE PROGRAMME:** the RZ's secreted products are
+listed as **PTHrP, gremlin, chordin and the Wnt inhibitor sfrp5** — R356's genome-wide screen returned
+**SFRP5, FRZB and SMOC1** as the only genes the human RZ runs above the rest of the column.
+
+⭐ **FIVE — A10 IS ANSWERED AND R459's FIGURES ARE VERIFIED FROM THE PRIMARY, WITH ONE QUALIFIER.** TUNEL-
+positive resting-zone cells **4.6 ± 0.6% estradiol vs 4.4 ± 1.0% vehicle, P = .87**, 16-week timepoint — so
+**RZ apoptosis is NOT ZERO, it is ~4.5% standing in BOTH arms, and what the paper excludes is an oestrogen-
+INDUCED excess, not a standing death rate.** R459 said exactly this from an agent report; it is now primary.
+⛔ **AND ONE CORRECTION TO R459: the irreversibility is significant at the DISTAL RADIUS (P<.01) and is only a
+TREND at the PROXIMAL TIBIA (P=.07).** R459 called it "the paper's strongest" result without the qualifier.
+✓ Fusion, Fig 2J, distal tibia % unfused: **vehicle 100 / 100 / ~10 against estradiol 100 / ~44 / 0** at
+11/16/21 wk, P<.05 by log-rank. ⚠ **Confound the authors state themselves: oestrogen-treated animals GAINED
+MORE WEIGHT during treatment**, normalising after — so the growth suppression must be read against it.
+
+⭐⭐⭐ **SIX — `breur1997` WAS IN THE SAME BUNDLE (operator item 7) AND IT QUALIFIES R454's CENTRAL CLAIM.**
+Rat, **four growth plates × two ages**, oxytetracycline growth rate plus nine stereologic parameters in the
+same animals, across an **8.4-fold range of growth rate (35 → 335 µm/day)**, every cell with a coefficient of
+variation and every 95% non-significance pairing marked.
+| µm³ per cell, D21 → D35 | prox radius | distal radius | prox tibia | distal tibia |
+|---|---|---|---|---|
+| **MATRIX per cell** | 4,650 → 4,270 | 6,380 → 6,240 | **8,950 → 8,880** | 7,860 → 6,230 |
+| CELL volume | 4,420 → 3,240 | 12,860 → 10,450 | 17,040 → 13,140 | 11,900 → 6,990 |
+| growth rate µm/day | 40 → 35 | 240 → 170 | 335 → 245 | 190 → 115 |
+⭐⭐ **MATRIX VOLUME PER CELL IS *SITE*-VARIABLE AND *AGE*-INVARIANT — a 1.9-fold range between plates, and
+NOT significantly different between 21 and 35 days in ALL FOUR plates.** R454 concluded from `hunziker1989`
+and `hunziker1994` that matrix per cell is **"a fixed structural quantum"**, invariant across a nine-fold
+range of growth rate. **Both are right and the reconciliation is precise: Hunziker varied rate WITHIN ONE
+PLATE by hormone and by age and found invariance; Breur varied it BETWEEN PLATES and found a 1.9× spread.**
+→ ⭐ **MATRIX PER CELL IS A SITE PROPERTY, NOT A RATE PROPERTY — AND THAT REOPENS IT AS A LEVER.** A quantity
+invariant under every hormonal input ever tested but differing 1.9-fold between anatomical sites in the same
+animal is a **developmentally patterned setpoint, not a physical ceiling.** ⚠ The same pattern holds for cell
+HEIGHT (11.4 / 20.9 / 26.7 / 22.6 µm at D21, not significantly different between ages in **3 of 4** plates)
+and for the **rate of cell loss** (not significantly different between ages in any plate) — **while cell
+VOLUME and numerical density DO change with age. Within a plate, ageing changes CELL PRODUCTION; between
+plates, everything differs.** That is R423/R449/R455/`thorngren1981` with the site axis added.
+
+⭐⭐ **SEVEN — AND BREUR MEASURED THE DIRECTION QUESTION R454 AND R463 SAID NOBODY HAD.** The terminal cell's
+**axial ratio X_vert/X_hor is 0.80 / 1.02 / 1.17 / 1.15 at D21 and 0.83 / 1.18 / 1.20 / 1.07 at D35.**
+⭐ **IN THE SLOWEST PLATE THE TERMINAL HYPERTROPHIC CHONDROCYTE IS *WIDER THAN IT IS TALL*, AND IN THE FASTEST
+IT IS ONLY 1.17–1.20. THE TERMINAL CELL IS ROUGHLY ISODIAMETRIC — IT IS NOT A TALL COLUMN.**
+⭐⭐ **THAT DOES NOT CONTRADICT THE ANISOTROPY ARGUMENT, IT CORRECTS A NATURAL MISREADING OF IT.** R454 derived
+from `hunziker1987` that during hypertrophy height goes ×4 while width goes ×1.58 — **those are RATIOS OF
+CHANGE, not the terminal SHAPE. A proliferative chondrocyte is a FLATTENED DISC, wide and short; hypertrophy
+carries it toward ISODIAMETRIC. Height rises much more than width because it STARTS much smaller.** Both
+statements are true and the atlas had been sliding between them.
+✓ **AND SHAPE IS IN THE BEST-FITTING MODEL OF GROWTH RATE:** Model 1 **LG = −40.71 + 0.0212·V_cell, R²=0.950**
+— terminal cell volume alone explains 95% of growth-rate variance across four plates and two ages — and
+Model 2 **LG = 89.2 + 27.4·X_vert − 437·(X_vert/X_hor), R²=0.929**, with the paper's overall best (**R²=0.992**)
+combining terminal cell volume with the rate of cell loss over cell proliferation. ⛔ **MATRIX VOLUME IS NOT IN
+ANY WINNING MODEL, AND THAT IS NOT A CONTRADICTION OF CORR-361: matrix is 33–57% of the hypertrophic zone by
+volume here (V_c/V_str 0.43–0.67, concordant with `wilsman1996`'s 32–49%) while varying only 1.9× against cell
+volume's 3.9–5.3×. IT IS A LARGE SHARE OF THE OUTPUT AND A SMALL SHARE OF THE VARIANCE.** Those are different
+questions and this file had not separated them.
+
+🧭 **WHAT R470 CHANGES.** The pool arm's governing quantity is not pool size and not exit rate but **YIELD —
+output per progenitor spent — and this atlas has held that since 2026-08-07 in a node no context ever loads.**
+It now has a second number, in a second species, on the axis the stack actually manipulates: **oestrogen
+halves it, the loss does not reverse, and the control arm catches down rather than the treated arm catching
+up.** The drain is **reduced self-renewal against unblocked differentiation**, and dexamethasone proves the
+outflow is separately controllable. And the matrix term, which R454 read as a fixed quantum, is a
+site-patterned setpoint with a 1.9-fold range — which is a lever's profile, not a ceiling's.
