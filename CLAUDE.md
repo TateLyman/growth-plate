@@ -12526,8 +12526,13 @@ significant change in BrdU or β-catenin in the knockouts. **That is genetic epi
 showed it irreversibly depletes the pool. **Neither named the molecule. CXXC5 is the first candidate, and it
 sits DOWNSTREAM of the signal this file's whole period strategy suppresses.**
 
-⭐⭐⭐ **THE STRUCTURAL FINDING IS BIGGER THAN THE COMPOUND: R281's WNT BAND MAY BE A *DEPTH* ARTEFACT RATHER
-THAN A *DOSE* BAND.** Four points, not on one monotone curve:
+⛔⛔⛔ **THIS ENTIRE PARAGRAPH IS WITHDRAWN BY R462 — READ R462 BEFORE CITING ANY OF IT. I WROTE IT WITHOUT
+GREPING THE GRAPH, AND `wnt_canonical_chondrocyte.yaml` ALREADY HELD THE CORRECT DOSE MODEL INCLUDING
+`yuasa2009`'s POSTNATAL β-CATENIN ACTIVATION CAUSING PREMATURE GROWTH PLATE CLOSURE. CORR-313/CORR-324 failed
+in the round immediately after R459, which is itself about lossy-ledger failures.** Kept below, struck
+through, so the error is visible rather than deleted:
+⭐⭐⭐ ~~**THE STRUCTURAL FINDING IS BIGGER THAN THE COMPOUND: R281's WNT BAND MAY BE A *DEPTH* ARTEFACT RATHER
+THAN A *DOSE* BAND.**~~ Four points, not on one monotone curve:
 | perturbation | depth | direction | result |
 |---|---|---|---|
 | `chen2008` Col2a1-ICAT | intracellular, strong | LOWER | progressively **runted** |
@@ -12538,7 +12543,9 @@ THAN A *DOSE* BAND.** Four points, not on one monotone curve:
 tankyrase lowering failed from FOUR independent directions, total ligand blockade exhausts. Read at DEPTH the
 four points are consistent: AT THE INTRACELLULAR DEPTH THE LOWERING DIRECTION FAILED AND THE RAISING DIRECTION
 HAS A LENGTH ENDPOINT, while at the EXTRACELLULAR depth lowering is what works.** Same pathway, two depths,
-opposite favourable directions. **That is a reformulation of R281 and it is testable.** Gap `g_l2_460b`.
+opposite favourable directions. ~~That is a reformulation of R281 and it is testable.~~ ⛔ **FALSE — the
+extracellular lowering half breaks too (`enomotoiwamoto2002`: Frzb-1 misexpression SHORTENS), and FIVE
+intracellular RAISING perturbations shorten or close the plate. See R462.** Gap `g_l2_460b`.
 
 ⭐ **OBTAINABILITY, UNDER R401's THREE-WAY SPLIT, AND IT IS FURTHER ALONG THAN ANYTHING ELSE ON THE PERIOD
 AXIS.** Chemical matter real (synthesised, optimised indirubin, published IC50s, **published transdermal
@@ -12687,3 +12694,69 @@ Gap `g_l12_460a`.
 stemTOC) has ever been run on cartilage or bone · no dNTP pool, γH2AX zone map or 53BP1 body has ever been
 measured in a chondrocyte · and NO INTERVENTION ANYWHERE, IN ANY TISSUE OR SPECIES, HAS CONVERTED EXTRA
 STEM-CELL DIVISIONS INTO A TISSUE DIMENSION.**
+
+## ⛔⛔⛔⛔ R462 — **THE R460 WNT "DEPTH" REFORMULATION IS WITHDRAWN. I WROTE IT WITHOUT GREPING THE GRAPH, ONE
+## ROUND AFTER R459, WHICH IS ITSELF ABOUT LOSSY-LEDGER FAILURES. AND WHAT REPLACES IT IS WORSE FOR THE ARM:
+## TWO WNT-RAISING AGENTS HAVE BEEN GIVEN TO NORMAL GROWING ANIMALS WITH A CALIPER AND BOTH ARE NULL.**
+
+⛔ **THE FAILURE, NAMED.** R460 proposed that the canonical-Wnt axis is **DEPTH**-dependent rather than **DOSE**-dependent
+— extracellular lowering works, intracellular RAISING works — on the strength of `choi2019cxxc5`'s tibia. **The atlas
+already held the correct model in a grade C non-stub node.** `wnt_canonical_chondrocyte.yaml` states in its own summary
+that the pathway is **dose-dependent with opposite phenotypes at the two extremes**, established by **paired gain- and
+loss-of-function alleles in the same mouse background**, and cites **`yuasa2009`: transient postnatal activation causes
+growth retardation with PREMATURE GROWTH PLATE CLOSURE.** And `bali2021`'s one_line_finding — already correct, already
+in the file — says Gsk3a/Gsk3b double cKO gives **"shorter long bones and growth retardation."**
+⭐ **CORR-313/CORR-324's rule is GREP THE GRAPH BEFORE DRAFTING, and it was broken in the round immediately after R459.**
+
+⛔⛔ **ONE — THE INTRACELLULAR RAISING HALF IS A MONOTONE SERIES AND EVERY POINT ABOVE THE MILDEST IS BAD.**
+| perturbation (intracellular, RAISING) | design | result |
+|---|---|---|
+| **`Cxxc5−/−`** — removes ONE DVL scaffold; whole-body KO grossly normal | germline | **+3.8% tibia** |
+| **Gsk3b SINGLE cartilage cKO** | inducible, cartilage | **NO effect** (stated inside `bali2021`) |
+| ⛔ **`bali2021` Gsk3a/Gsk3b DOUBLE cKO** | **tamoxifen-inducible, POSTNATAL, cartilage-restricted, NORMAL mice** | **SHORTER long bones**, precocious remodelling, **lethal** |
+| ⛔ **`yuasa2009` stabilised β-catenin** | **Col11a2-CreER, POSTNATAL, young adult NORMAL mice** | growth retardation, **PREMATURE PLATE CLOSURE** |
+| ⛔ **`itoh2012` Gsk3a−/−;Gsk3b+/−** | germline | **dwarfism** |
+| ⛔ **`miclea2009` Col2a1-Cre Apc cKO** | germline cartilage | **PERINATAL DEATH** |
+| ⛔ `akiyama2004` stabilised β-catenin, Sox9 lineage | germline | severe chondrodysplasia |
+⭐ **Rows 3 and 4 are POSTNATAL, INDUCIBLE, CARTILAGE-RESTRICTED AND IN NORMAL MICE — the best-designed members of the
+class, passing CORR-299 outright — and both run against the arm.**
+⛔ **AND THE OTHER HALF BREAKS TOO: `enomotoiwamoto2002` — misexpressing the SECRETED antagonist Frzb-1, i.e.
+EXTRACELLULAR LOWERING — SHORTENS skeletal elements.** So neither depth has a uniform favourable direction.
+
+⭐⭐ **TWO — WHAT REPLACES IT IS R281's BAND WITH THE PEAK JUST ABOVE WILD TYPE: A NARROW DOSE SHELF, REACHED AT ONE
+DEPTH.** Order the intracellular perturbations by how hard they push: **one DVL scaffold removed → +3.8% · one GSK3
+paralogue → nothing · both GSK3 paralogues → shorter and dead · APC → dead · stabilised β-catenin → plate closes.**
+**That is a dose-response with a narrow window, not a depth effect** — and it explains why CXXC5 works where every
+stronger agent fails: **it is the mildest available intracellular elevation.**
+⭐ **AND IT PRICES R460's OWN COMPOUND: KY19382 inhibits GSK3β at IC50 1e-8 M against 1.9e-8 M for CXXC5–DVL, so THE
+GENETIC COMPLETION OF ITS GSK3β ARM IS `bali2021` — SHORTER BONES AND DEATH.**
+
+⛔⛔ **THREE — AND THE DECISIVE EVIDENCE IS TWO NULLS NOBODY IN THIS FILE HAD FOUND. TWO WNT-RAISING AGENTS, TWO
+SPECIES, TWO LABORATORIES, BOTH DOSED INTO NORMAL GROWING ANIMALS WITH A LENGTH ENDPOINT:**
+· **`roschger2014` — SCLEROSTIN ANTIBODY in WILD-TYPE mice from 4 wk × 4 wk: "Sost-ab had no effect on weight or FEMUR
+  LENGTH"** while raising bone mass.
+· **`harvey2015` — ORAL LiCl 20 mg/kg/day in growing broilers 1→6 wk, n=48 PER GROUP: "No differences (P≥0.52) in bone
+  length" — and FEMORAL STIFFNESS FELL ~22% (P=0.02).**
+⭐ **`harvey2015` IS BETTER POWERED THAN ANY POSITIVE ON THIS AXIS.** Either the window is narrow enough that two blunt
+agents missed it, **or the CXXC5 result is carried by something other than Wnt elevation.** ⭐ **And it independently
+re-confirms R356's lithium contraindication at a LENGTH endpoint in a normal growing animal** — that row was grade E on
+mechanism; it now has a null-plus-a-mechanical-cost.
+
+⛔ **FOUR — AND A THIRD OBJECTION SPECIFIC TO THIS SUBJECT: `kapadia2005` — GSK3 inhibition acts on chondrocyte
+proliferation through β-catenin → FGF18 → FGFR3, and "the effect… is repressed in tissues lacking a receptor for FGF18,
+FGF receptor 3."** **He is on a continuous pan-FGFR inhibitor, so KY19382's GSK3β arm is predicted to be attenuated in
+exactly this stack.**
+
+✓ **WHAT SURVIVES R460, UNCHANGED.** R301's rejection of CXXC5 *on an inference* while a tibial-length endpoint existed
+was a real CORR-309/CORR-320 failure and stands. **CXXC5 is still the only gene reported to blunt oestrogen-induced
+growth-plate senescence**, and `bendre2026` shows that assay is live and reproducible in 2026. Magnitude ~**+3% of
+tibial length** in both arms, figure-read.
+⚠ **BUT THE OESTROGEN SIGN IS CONTESTED: `yan2022` has E2 → ERα/β → DMP1 → **RAISING** GSK-3β/β-catenin → chondrocyte→
+osteoblast trans-differentiation → closure — the OPPOSITE β-catenin direction to `choi2019cxxc5`.** Unresolved.
+⭐⭐ **AND THE DECIDING TOOL IS FULLY SPECIFIED AND WAS ALREADY DOSED: PTD-DBM (⚠ `choi2019` spells it PTD-DBM*P*;
+PubMed returns 0 for that and 9 for PTD-DBM) — sequence from `lee2015cxxc5` Fig 7A, `RRRRRRRRR–GGGG–RKTGHQICKFRKC–K-FITC`
+(segment boundaries `value_unverified`) — was given 1 mg/kg i.p. daily × 2 wk to 7-WEEK-OLD NORMAL MALE MICE, n=10,
+REACHED THE TIBIAL GROWTH PLATE by fluorescent imaging, raised cells/column — AND NO LENGTH WAS MEASURED.**
+**CORR-340 on the one reagent that separates CXXC5 from GSK3β.** ⛔ And the authors **DECLINED a reviewer's request for
+the Cxxc5−/− × KY19382 epistasis control**, replying that KY19382 is expected to act partly independently of CXXC5.
+⚠ KY19382 PK (rat, n=3): **i.p. F = 16.74%**, t½ 16.2 h, Cmax 463 ng/mL at 5 mg/kg. **No oral column exists.**

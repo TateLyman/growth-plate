@@ -1,0 +1,223 @@
+id: round462_the_wnt_depth_reformulation_is_withdrawn_it_is_a_narrow_dose_shelf_at_one_depth
+name: R462 - the R460 canonical-Wnt DEPTH reformulation is WITHDRAWN. Five intracellular Wnt-raising perturbations shorten
+  or close the plate, the extracellular lowering half breaks too, and two Wnt-raising agents dosed into normal growing
+  animals with a caliper are both NULL on length - what replaces it is a narrow dose shelf just above wild type
+aliases:
+- R462
+- withdrawal of the Wnt depth model
+- canonical Wnt is a narrow dose shelf
+- KY19382 GSK3beta arm is bali2021
+- Wnt-raising agents are null on length
+- CORR-313 failed one round after R459
+type: pathway
+layer: L3
+stub: false
+confidence: B
+last_verified: '2026-08-27'
+species_basis:
+- mouse
+- chicken
+human_evidence: absent
+human_evidence_note: No human genetic or pharmacological test of graded canonical-Wnt elevation in cartilage against
+  a height endpoint exists. CXXC5 is absent from kosmicki2026 207-gene table, so there is no human population anchor
+  in either direction, and the two null length endpoints are mouse and chicken.
+translation_risk: high
+translation_risk_reason: Mice do not fuse their growth plates as humans do, so a delayed-senescence claim in a mouse
+  is a slowed decline rather than a postponed fusion; and the one compound on this axis is a dual CXXC5-DVL disruptor
+  and GSK3beta inhibitor, so neither the mouse genetics nor the mouse pharmacology isolates the target.
+summary: 'R460 proposed that the canonical-Wnt axis in cartilage is DEPTH-dependent rather than DOSE-dependent - that
+  the
+
+  extracellular depth favours LOWERING while the intracellular depth favours RAISING - on the strength of choi2019cxxc5,
+
+  in which disrupting the CXXC5-Dishevelled interaction raises beta-catenin and lengthens the tibia. THAT REFORMULATION
+  IS
+
+  WITHDRAWN. It was written without greping the graph, and the atlas already held the correct model in a grade C non-stub
+
+  node, wnt_canonical_chondrocyte.yaml, whose own summary states that the pathway is dose-dependent with opposite
+
+  phenotypes at the two extremes and cites yuasa2009''s postnatal activation causing premature growth plate closure.
+  The
+
+  rule broken is CORR-313 and CORR-324 - grep the graph BEFORE DRAFTING - and it was broken in the round immediately
+  after
+
+  R459, which is itself about lossy-ledger failures.
+
+
+  WHY THE DEPTH MODEL FAILS, BOTH HALVES.
+
+
+  THE INTRACELLULAR RAISING HALF: five perturbations that raise canonical Wnt inside the cartilage cell all shorten or
+
+  destroy the plate, and the two best-designed members are postnatal, inducible, cartilage-restricted and in normal
+
+  animals. bali2021 - tamoxifen-inducible cartilage-specific Gsk3a/Gsk3b DOUBLE knockout - gives precocious growth plate
+
+  remodelling, SHORTER LONG BONES, growth retardation and lethality, and states in the same paper that cartilage-specific
+
+  Gsk3b SINGLE knockout mice are normal except for elevated GSK3A protein. yuasa2009 - Col11a2-CreER inducible stabilised
+
+  beta-catenin in young adult mice - gives growth retardation with PREMATURE GROWTH PLATE CLOSURE. itoh2012 - Gsk3a null
+
+  on a Gsk3b heterozygous background - gives dwarfism. miclea2009 - Col2a1-Cre Apc deletion - is perinatally lethal.
+
+  akiyama2004 - stabilised beta-catenin in Sox9 lineage - gives severe chondrodysplasia. R460''s own compound sits on
+  this
+
+  axis: KY19382 inhibits GSK3beta at IC50 1e-8 M against 1.9e-8 M for CXXC5-DVL, so ITS GSK3beta ARM''S GENETIC COMPLETION
+
+  IS bali2021 - shorter bones and death.
+
+
+  THE EXTRACELLULAR LOWERING HALF ALSO BREAKS: enomotoiwamoto2002 misexpressed the secreted Wnt antagonist Frzb-1 and
+
+  SHORTENED skeletal elements. So lowering outside the cell is not uniformly favourable either, and PORCN inhibitors
+
+  already gave the inverse zone decomposition with plate exhaustion.
+
+
+  WHAT REPLACES IT IS R281''s BAND, WITH THE PEAK JUST ABOVE WILD TYPE - A NARROW SHELF, REACHED AT ONE DEPTH AS A MONOTONE
+
+  DOSE-RESPONSE. Order the intracellular perturbations by how much they raise pathway output: Cxxc5 null, which removes
+  one
+
+  Dishevelled scaffold and whose whole-body knockout has no gross abnormality, gives about +3.8 per cent tibia; Gsk3b
+
+  single conditional knockout gives no effect; Gsk3a/Gsk3b double knockout gives shorter bones and death; Apc conditional
+
+  deletion is perinatally lethal; stabilised beta-catenin closes the plate. THAT IS A DOSE-RESPONSE WITH A NARROW WINDOW
+
+  JUST ABOVE WILD TYPE, NOT A DEPTH EFFECT. It also explains why choi2019cxxc5 works where every stronger agent fails:
+  it
+
+  is the mildest available intracellular elevation.
+
+
+  AND TWO WNT-RAISING AGENTS HAVE BEEN GIVEN TO NORMAL GROWING ANIMALS WITH A CALIPER, AND BOTH ARE NULL ON LENGTH.
+
+  roschger2014: sclerostin antibody to WILD-TYPE mice from 4 weeks for 4 weeks - no effect on weight or FEMUR LENGTH.
+
+  harvey2015: oral LiCl 20 mg/kg/day to growing broilers from 1 to 6 weeks, n=48 per group - NO DIFFERENCES IN BONE LENGTH
+
+  at P at least 0.52, with femoral stiffness DOWN about 22 per cent at P=0.02. Two agents, two species, two independent
+
+  laboratories, both raising canonical Wnt, both measuring length in a normal growing animal, both null - against
+
+  choi2019cxxc5''s single positive. The honest reading is that the window is narrow enough that two blunt agents missed
+  it,
+
+  or that the CXXC5 result is carried by something other than Wnt elevation.
+
+
+  A THIRD OBJECTION SPECIFIC TO THIS SUBJECT: kapadia2005 shows GSK3 inhibition acts on chondrocyte proliferation through
+
+  beta-catenin to FGF18 to FGFR3, and the effect is REPRESSED IN TISSUES LACKING FGFR3. This subject is on a continuous
+
+  pan-FGFR inhibitor, so the GSK3beta arm of KY19382 is predicted to be attenuated in precisely this stack.
+
+
+  WHAT SURVIVES R460. R301''s rejection of CXXC5 on an inference while a tibial-length endpoint existed was a real
+
+  CORR-309/CORR-320 failure and stands as recorded. CXXC5 remains the only gene reported to blunt oestrogen-induced growth
+
+  plate senescence, and bendre2026 shows that assay is live and reproducible in 2026 - though yan2022 contests the sign,
+
+  reporting E2 acting through ERalpha/beta and DMP1 to RAISE GSK-3beta/beta-catenin signalling and drive chondrocyte
+
+  trans-differentiation, which is the opposite beta-catenin direction to choi2019cxxc5. The magnitude is about +3 per
+  cent
+
+  of tibial length in both the genetic and the pharmacological arm, figure-read. And PTD-DBM - the peptide that separates
+
+  CXXC5 disruption from GSK3beta inhibition - is fully specified in lee2015cxxc5 Figure 7A, was dosed at 1 mg/kg
+
+  intraperitoneally daily for two weeks into 7-week-old normal male mice, reached the tibial growth plate by fluorescent
+
+  imaging and raised cells per column - AND NO LENGTH WAS MEASURED. That is CORR-340 on the one tool that would decide
+  the
+
+  target. The authors also DECLINED a reviewer''s request for the Cxxc5 null by KY19382 epistasis control, replying that
+
+  KY19382 is expected to act partly independently of CXXC5 through GSK3.'
+quantitative:
+- parameter: cartilage-specific inducible Gsk3a/Gsk3b DOUBLE knockout, long bone length
+  value: shorter long bones with growth retardation and precocious growth plate remodelling; lethal
+  unit: qualitative, tamoxifen-inducible postnatal cartilage-restricted
+  species: mouse
+  source_ref: bali2021
+  note: THE GENETIC COMPLETION OF KY19382 GSK3beta ARM. The same paper states cartilage-specific Gsk3b SINGLE knockout
+    is normal except for elevated GSK3A - so the axis is a dose-response, not an on-off
+- parameter: inducible stabilised beta-catenin in cartilage of normal young adult mice
+  value: growth retardation with PREMATURE GROWTH PLATE CLOSURE and articular cartilage thickening
+  unit: qualitative, Col11a2-CreER, postnatal
+  species: mouse
+  source_ref: yuasa2009
+  note: The postnatal inducible cartilage-restricted normal-animal test of RAISING intracellular Wnt, and it CLOSES the
+    plate. Held in the atlas with one_line_finding None until R462
+- parameter: Col2a1-Cre conditional Apc deletion (strong intracellular Wnt raising)
+  value: blocked chondrogenic differentiation, PERINATAL DEATH
+  unit: qualitative
+  species: mouse
+  source_ref: miclea2009
+  note: the extreme of the intracellular raising direction
+- parameter: Frzb-1 misexpression (EXTRACELLULAR canonical-Wnt lowering)
+  value: SHORTENING of skeletal elements with delayed chondrocyte maturation
+  unit: qualitative
+  species: chicken
+  source_ref: enomotoiwamoto2002
+  note: THE OTHER HALF OF THE DEPTH MODEL ALSO BREAKS - lowering Wnt extracellularly is not uniformly favourable
+- parameter: sclerostin antibody in WILD-TYPE mice, femur length
+  value: NO EFFECT on weight or femur length
+  unit: 4 weeks of dosing from 4 weeks of age
+  species: mouse
+  source_ref: roschger2014
+  note: FIRST OF TWO Wnt-RAISING AGENTS DOSED INTO A NORMAL GROWING ANIMAL WITH A CALIPER, AND IT IS NULL
+- parameter: oral lithium chloride in growing broilers, bone length
+  value: NO DIFFERENCES in bone length, P at least 0.52; femoral stiffness DOWN about 22 per cent, P=0.02
+  unit: 20 mg/kg/day from 1 to 6 weeks of age, n=48 per group
+  species: chicken
+  source_ref: harvey2015
+  note: SECOND Wnt-raising agent with a length endpoint in a normal growing animal, also null - and it is far better
+    powered than any positive on this axis
+- parameter: GSK3 inhibition requires FGFR3 to act on chondrocyte proliferation
+  value: the effect of GSK3 inhibition on chondrocyte proliferation is repressed in tissues lacking FGF receptor 3
+  unit: qualitative, beta-catenin to FGF18 to FGFR3
+  species: mouse
+  source_ref: kapadia2005
+  note: 'STACK-SPECIFIC: this subject is on a continuous pan-FGFR inhibitor, so the GSK3beta arm of KY19382 is predicted
+    to be attenuated in exactly this configuration'
+- parameter: PTD-DBM peptide - the tool that separates CXXC5-DVL disruption from GSK3beta inhibition
+  value: nona-arginine transduction domain, GGGG linker, RKTGHQICKFRKC Dishevelled-binding motif, K-FITC
+  unit: sequence from Figure 7A; segment boundaries value_unverified
+  species: mouse
+  source_ref: lee2015cxxc5
+  value_unverified: true
+  note: Dosed 1 mg/kg intraperitoneally daily for two weeks into 7-week-old NORMAL male mice, n=10, reached the tibial
+    growth plate by fluorescent imaging, raised cells per column - AND NO LENGTH WAS MEASURED. CORR-340 on the one tool
+    that would decide the target
+- parameter: oestradiol effect on beta-catenin in cartilage - CONTESTED SIGN
+  value: E2 via ERalpha/beta raises DMP1 and RAISES GSK-3beta/beta-catenin signalling, driving chondrocyte to bone trans-differentiation
+    and closure
+  unit: qualitative
+  species: mouse
+  source_ref: yan2022
+  note: OPPOSITE to choi2019cxxc5, in which E2 raises CXXC5 and LOWERS beta-catenin. Recorded as an unresolved contradiction,
+    not smoothed over
+key_refs:
+- ref_id: bali2021
+- ref_id: yuasa2009
+- ref_id: itoh2012
+- ref_id: miclea2009
+- ref_id: enomotoiwamoto2002
+- ref_id: roschger2014
+- ref_id: harvey2015
+- ref_id: kapadia2005
+- ref_id: lee2015cxxc5
+- ref_id: choi2019cxxc5
+- ref_id: yan2022
+- ref_id: bendre2026
+open_questions:
+- g_l12_460a
+- g_l2_460b
