@@ -11106,3 +11106,76 @@ physis intact and open.** The correct statement is that the plate is **avascular
 focally**, and the delivery question is therefore not "can anything cross an avascular tissue" but **"what
 fraction of the plate does a focal vascular route serve, and does a macromolecule leave that vessel"** —
 which is a smaller, better-posed and answerable question that nobody has asked. `g_l1_443a`.
+
+## 🧵🧵🧵🧵 R444 — **THE MATRIX TERM, OPENED. The cell that secretes more collagen than almost any other in
+## the body does NOT concentrate the COPII export machinery — it concentrates the FOLDING enzymes 3–6×. And
+## the collagen pathway's human effect signs SPLIT at the secretion-competence / cross-linking boundary,
+## which is why the arm this file spent four rounds on has a null length endpoint.**
+## Run `atlas/data/round444/copii_export_panel.json`
+
+⭐ **WHY THIS TERM AT ALL: CORR-361 exposed matrix synthesis as 32% of elongation in a fast plate and 49%
+in a slow one — co-equal with hypertrophy and larger than it in a slow plate — and this file has never
+worked it.** Coverage before this round: **CRTAP 0 nodes / 0 ledger · PPIB 0 / 0 · SEC23A 0 / 0 · "prolyl
+4-hydroxylase" 0 / 0 · "secretion competence" 0 / 0 · COPII 0 nodes.**
+
+⭐⭐⭐ **THE RESULT, ON THE FREE LOCAL QUERY (GSE288028, sex-corrected purity split, 4 purest vs 4 most
+contaminated MALE samples — R411's method, calibrators COL2A1 7.65, COL10A1 49.6, ACAN 1.96, PTPRC 0.00,
+HBB 0.03).**
+| arm | genes and purity ratios |
+|---|---|
+| ⭐ **COLLAGEN FOLDING / PTM — ENRICHED** | **CRTAP 6.25 · P4HB 5.55 · PPIB 5.45 · P3H1 4.72 · FKBP10 4.52 · PLOD1 4.05 · SERPINH1 3.39 · P4HA2 2.96 · P3H3 2.68 · P4HA1 1.82** |
+| ⛔ **COPII INNER COAT — NOT ENRICHED** | SAR1A 1.29 · SAR1B 0.97 · SEC23A 0.91 · SEC24C 0.73 · SEC23B 0.64 · SEC24A 0.42 · **SEC24D 0.37** · SEC24B 0.22 |
+| ⛔ **COPII OUTER COAT — NOT ENRICHED** | SEC13 0.92 · SEC31A 0.73 · SEC31B 0.39 |
+| ⛔ **LARGE-CARGO EXPORT — NOT ENRICHED** | **MIA3/TANGO1 0.63** · MIA2 0.47 · SEC16A 0.60 · KLHL12 0.76 · CUL3 0.26 |
+→ ⭐⭐ **NINE OF TEN FOLDING/PTM GENES CLEAR THE ACAN BENCHMARK OF 1.96; NOT ONE OF THE SIXTEEN EXPORT GENES
+DOES.** The chondrocyte's entire collagen investment is in making the molecule **foldable**, not in making
+it **exportable**.
+⭐ **AND THE LOGIC IS ROBUST TO WHAT THE COMPARATOR IS — which matters, because the contaminated fraction is
+blood and contains professional secretors.** Both arms are scored against the **same** comparator, so the
+INTERNAL contrast between them stands however secretory the comparator is.
+→ ⛔ **CONSEQUENCE: IF SECRETION IS RATE-LIMITING IN THIS CELL, THE LIMIT IS AT FOLDING, NOT AT EXPORT. The
+COPII / TANGO1 large-cargo axis — the obvious place to go from CORR-361, and a fashionable one — is closed
+before a round is spent on it.** ⚠ Grade D: steady-state transcript abundance is not flux, and a coat
+protein could be rate-limiting without being abundant.
+
+⭐⭐⭐⭐ **AND THE HUMAN EFFECT SIGNS SPLIT ALONG THE SAME SEAM, WHICH IS THE PART THAT CHANGES A DECISION.**
+Of the whole panel only five genes reach `kosmicki2026`'s 207, and they sort perfectly:
+| function | gene | best-powered burden row | direction |
+|---|---|---|---|
+| **makes collagen SECRETABLE** | **SERPINH1 / HSP47** | **−1.15 cm, P=6.06e-28, 4,537 carriers** | **LOAD-BEARING → RAISE** |
+| **initiates the GAG chain** | **XYLT1** | **−3.88 cm, P=1.3e-11** | **LOAD-BEARING → RAISE** |
+| the proteoglycan core | ACAN | −16.6 cm, P=1.9e-52 | LOAD-BEARING |
+| **makes collagen CROSS-LINKED** | **PLOD1** | **+0.535 cm, P=1.1e-11, 8,036** | **BRAKE → BLOCK** |
+| **makes collagen CROSS-LINKED** | **PLOD2** | **+0.909 cm, P=1.0e-11, 2,791** | **BRAKE → BLOCK** |
+⭐⭐ **ONE PATHWAY, OPPOSITE SIGNS, AND THE SEAM IS EXACTLY WHETHER THE ENZYME SERVES SECRETION COMPETENCE
+OR CROSS-LINK FORMATION.** Enzymes that get collagen out of the cell are load-bearing; enzymes that stitch
+it together once it is out are brakes.
+⭐ **AND THAT RETRO-EXPLAINS R332's INCONVENIENT NULL.** `mcnerny2015` gave BAPN to growing male mice,
+reduced mature cross-linking substantially with target engagement proven in the same animals, and **tibia
+length did not move (p=0.580)** — which R332 recorded as a "mechanistic strike" it could not account for.
+**On this split it is predicted: cross-linking sets mechanical QUALITY and not LENGTH, so the arm R331/R334
+built PXS-5505 on was never the arm that carries the matrix term.** The arm that does — secretion
+competence — has never been examined.
+
+⚠ **THE ASCORBATE TENSION, RAISED AND RESOLVED IN THE SAME ROUND SO IT IS NOT LEFT AS AN UNNOTICED
+CONFLICT.** P4HA1/P4HA2/P4HB are **2-oxoglutarate/Fe(II) dioxygenases requiring ASCORBATE**, they are
+1.8–5.5× cartilage-enriched, and prolyl 4-hydroxylation is **required for the triple helix to fold and
+therefore for collagen to leave the cell at all** — while this file contraindicates megadose vitamin C
+because ascorbate also feeds **TET and KDM5**, which run height-losing (R302, R337). **Two arms of one
+cofactor, opposite directions, never previously stated together.** ✓ **It resolves in favour of the
+existing contraindication:** P4H is not ascorbate-limited at dietary adequacy, so megadosing cannot raise
+its flux while it can still feed the erasers. ⛔ **Adequacy remains non-negotiable — scurvy is a collagen-
+secretion disease, which is this axis stated in the negative.** Recorded as checked, not as a new lever.
+
+⛔ **WHAT THIS DOES NOT PRODUCE, STATED PLAINLY.** No compound. **SERPINH1's entire pharmacology runs the
+wrong way** — HSP47 is an INHIBITION target in fibrosis, thrombosis and cancer (R415), and **arimoclomol**,
+the one approved heat-shock amplifier, has zero skeletal literature in any species. **XYLT1 has no agent
+either, and its direction is also to RAISE.** ⚠ And the whole panel is transcript abundance in 12 samples;
+**nobody has measured collagen SECRETION RATE per chondrocyte in any species**, which is the actual quantity
+CORR-361 makes 32–49% of elongation. `g_l5_444a`.
+
+🧭 **WHAT R444 CHANGES.** The largest unworked term now has a map: **the export machinery is not where the
+investment is, the folding machinery is, and the human genetics split cleanly at the point where the
+molecule leaves the cell.** That closes the COPII axis cheaply, explains a null this file could not account
+for, and names the arm — secretion competence — that carries a third to a half of elongation and has never
+been looked at.
