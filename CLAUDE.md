@@ -14106,3 +14106,181 @@ POSITIVES**, which is what `nordentoft1964` and `hansson1967` also carry: **nega
 Herndon & Spencer, Meisenbach, Montgomery & Ingram), on heating (Ring & Lee), and ultrasound nil at moderate
 dose with RETARDATION at higher dose (Vaughen & Bender; De Forest et al.).** ⭐ **THREE INDEPENDENT MONOGRAPHS
 NOW AGREE THAT THE ABANDONED CORPUS IS MOSTLY NEGATIVE AT CLASS LEVEL, AND THE ATLAS HAS ALL THREE.**
+
+## 🔎🔎🔎🔎🔎 R476 — **"CHECK FOR THAT EXPERIMENT YOU CLAIM DOESN'T EXIST" — RUN, AND IT DOES NOT: EXACTLY
+## ONE PAPER IN EUROPE PMC PAIRS ADAM12 WITH A SKELETAL GROWTH ENDPOINT AND IT IS `kveiborg2006` ITSELF.
+## ⭐ BUT THE *CLASS* EXPERIMENT EXISTS AND IS POSITIVE — AND ITS AUTHOR PUBLISHED THE *ARREST* ARM IN THE
+## SAME JOURNAL AND THE SAME YEAR, WHICH IS THE BAND WITH BOTH ENDS SIGNED BY ONE INVESTIGATOR.**
+
+⭐ **ONE — THE NEGATIVE, EARNED BY QUERY RATHER THAN ASSERTED (CORR-267/284).** Five Europe PMC searches,
+run 2026-08-27: `ADAM12 AND (recombinant OR administration OR injection OR supplementation) AND (bone OR
+femur OR tibia OR "growth plate")` **640** · `("ADAM12-S" OR "ADAM12 S")` **89** · `ADAM12 AND chondrocyte`
+**178** · `ADAM12 AND (overexpression OR transgenic) AND skeletal` **543** · and the tightest,
+`ADAM12 AND ("bone length" OR "femur length" OR "tibia length" OR "longitudinal growth" OR "skeletal
+growth")` **39, whose titles were listed rather than counted.**
+⭐⭐ **OF THOSE 39, EXACTLY ONE CARRIES A SKELETAL GROWTH ENDPOINT — `kveiborg2006`. The rest are livestock
+and goose GWAS, Kashin-Beck disease, cardiac hypertrophy, keloid, colorectal ECM and Down's-syndrome
+screening. NO EXOGENOUS ADAM12 SUPPLY EXPERIMENT WITH A BONE ENDPOINT EXISTS IN ANY SPECIES.**
+⛔ **AND THE ONE EXOGENOUS-PROTEIN ARM THAT DOES EXIST IS THE WRONG READOUT, WHICH IS WHY IT CONSTRAINS
+ALMOST NOTHING:** purified recombinant ADAM12-S on murine chondrocytes, **no effect on PROLIFERATION by
+BrdU or flow cytometry** — while in vivo **cells per column are UNCHANGED** and the entire plate effect is
+**confined to the collagen type X-positive region.** It rules out the proliferation route and is silent on
+the hypertrophic one. `g_l12_476a` restates the experiment with the right readouts.
+
+⭐⭐⭐ **TWO — AND THE COMPARTMENT COORDINATE, COMPUTED THIS ROUND, IS THE MOST FAVOURABLE NEW FACT ABOUT
+THE TARGET.** The ADAM12 region streamed ±150 kb from the three ABSOLUTE traits in one cohort of 451,921
+(GCST90728584/86/87), aligned to the height-increasing allele on the region's own **standing-height** lead
+per R323/R406's corrected method: **rs34845021, chr10:126,019,392, EAF 0.408 — standing +0.01008
+(P=7.7e-11) · sitting +0.00916 (P=1.1e-08) · leg +0.00744 (P=1.4e-05) → 55.2% TRUNK.**
+⭐ **THAT IS THE TOP OF R421's CORRECTED RANGE (22 genes, median 45.0, span 8.2 LTBP2 → 55.2 TET1), AND THE
+RESIDUAL AT BA16 IS TRUNK-DOMINANT. ADAM12 IS THE FIRST GAIN-ONLY CANDIDATE IN THIS FILE TO SIT AT THE
+TRUNK END OF THAT DISTRIBUTION** — and `kveiborg2006` Fig 2B independently measures three caudal vertebrae
+at p<0.005. ⚠ Common-variant lead in inverse-normalised SD, ±150 kb window, ranking criterion not effect.
+
+⛔ **THREE — THE CODING-VARIANT TEST WAS RUN AND IT IS UNINFORMATIVE FOR A REASON THAT IS CHECKABLE RATHER
+THAN CONVENIENT.** `drobiova2026` (PMID 41501303) reports four ADAM12 coding variants, of which **M662V
+(rs115100580) and I908V (rs41303603) RAISE PROTEOLYTIC ACTIVITY IN INTACT CELLS** — naturally occurring
+human gain-of-function alleles of the enzyme whose overexpression lengthens mouse bone 8–17%. Its own
+reported associations are metabolic; **GWAS Catalog returns nothing for any of the four.**
+· **rs41303603 IS in the sumstats at EAF 3.58% AND IS FLAT: beta +0.000214, SE 0.004355, P=0.91** — a 95%
+  interval of ±0.0085 SD ≈ **0.6 mm per allele.** Sitting −0.00731 (P=0.087) and leg +0.00662 (P=0.13) run
+  in OPPOSITE directions, which is a compartment signature at p≈0.1 and not a height one.
+· ⭐⭐ **AND THE NULL DOES NOT TEST THE HYPOTHESIS: UniProt O43184 gives canonical ADAM12 at 909 residues
+  with VAR_SEQ 705–740 and 705–738 REPLACED and 739–909 and 741–909 DELETED in the secreted isoforms — SO
+  RESIDUE 908 IS ABSENT FROM ADAM12-S.** The one variant with the power to speak is in the membrane isoform.
+· **rs115100580 (M662V) DOES lie in the shared region and is ABSENT from the sumstats at MAF 0.77%.**
+→ **The human coding test of ADAM12-S has not been run and cannot be run on these data.**
+
+⭐⭐⭐⭐ **FOUR — AND THE ANSWER TO "IS THERE ANYTHING WE CAN ACTUALLY DO" IS THAT THE CLASS EXPERIMENT
+EXISTS, IS POSITIVE, AND IS ALREADY IN THIS FILE.** R448: animals have **no expansin** and every animal
+matrix-loosening modality is a **PROTEASE**. R463: the plate's directional yield must therefore be
+proteolytic. `schneider1963`: an exogenous **PROTEASE** into a normal growing bone under **tourniquet
+confinement**, with a **caliper**, gave **+0.98 mm net over the whole distribution and +3 to +6 mm in 41%
+of animals.** ADAM12-S is a secreted protease whose gain lengthens bone 8–17%. **THOSE ARE THE SAME IDEA AT
+TWO LEVELS OF SPECIFICITY, AND THIS FILE HAD THEM IN TWO DIFFERENT ROUNDS.**
+⛔⛔ **AND THE COMPANION IS NOW IDENTIFIED AND MUST NEVER BE OMITTED AGAIN: THE SAME AUTHOR, THE SAME AGENT
+AND THE SAME YEAR PUBLISHED `schneiderarrest1963` — "EXPERIMENTAL EPIPHYSEAL *ARREST* BY INTRA-OSSEOUS
+INJECTION OF PAPAIN", JBJS Am 1963;45-A(1):25–35, DOI 10.2106/00004623-196345010-00003.** Not in PubMed;
+found only through the JBJS DOI registry. **ONE INVESTIGATOR, ONE ENZYME, BOTH ARMS OF THE BAND, PUBLISHED
+SEPARATELY.** That is R467's *narrow limits of tolerance* conclusion in its strongest possible form, and it
+means the acceleration paper cannot be quoted alone. ⛔ Text unread — all seven JBJS targets hit the
+subscription gate and IA holds index volumes only for 1963; **the dose and whether arrest sat above or
+below schneider1963's own 0.6 mg total-dose threshold are UNKNOWN.**
+✓ Also identified from the same registry: `doyle1963`, "Stimulation of Bone Growth by Short-Wave Diathermy",
+JBJS Am 1963;45-A(1):15–24 — schneider1963's reference 9, i.e. the single positive claim in a class
+`nordentoft1964` reviews as null across four studies. Attributable now rather than anonymous.
+
+## 📄📄📄 R476 — **THE DOCUMENT HAUL. FOUR PRIMARIES READ IN FULL, AND THREE OF THEM CORRECT THIS LEDGER
+## AGAINST ITSELF — INCLUDING THE ONE ARM R450 AND R468 BOTH CALLED THE ONLY CENTIMETRE-SCALE SURVIVOR.**
+
+⭐⭐⭐⭐ **① `wray1961` — B8 STRUCK. THE 65-YEAR-OLD ORIGINAL OF THE CROSS-BONE ANOMALY IS A PROSPECTIVE
+RANDOMISED DESIGN WITH A NON-OPERATED CONTROL GROUP, AND IT IS BETTER *AND* WORSE THAN THIS FILE ASSUMED.**
+JBJS Am 43-A(7):1047–1055, obtained from the Internet Archive scan. **432 male C.F. Nelson weanling rats,
+all 4 weeks old, randomised by Fisher–Yates tables into three equal groups: A = closed manual TIBIAL
+fracture + plastic vascular-bed injection · B = tibial fracture + FEMUR measurement · C = NON-FRACTURED
+CONTROLS.** Right and left tibiae fractured alternately, no immobilisation, sacrifice every 3 days to 48.
+· ⭐ **THE CROSS-BONE EFFECT IS REAL AND PROSPECTIVELY DEMONSTRATED: fracture the TIBIA, the FEMUR of the
+  same limb overgrows**, and the authors' first conclusion is that the factors are **REGIONAL and NOT
+  LIMITED TO THE FRACTURED BONE**, explicitly against Compere & Adams.
+· ⛔⛔ **AND IT IS TRANSIENT. The overgrowth phase runs day ~6–18 only; at day 3 BOTH femora are SHORTER
+  than control; from day 30–39 the experimental animals grow LESS than controls; and at the terminal
+  48-day sacrifice the authors state the data give no unequivocal answer and "do not argue for any striking
+  differences", speculating that some mechanism equalises femur length by the completion of growth.**
+  **Same decay shape as `hansson1967`, `elo1960`, `garces1991` and `ramesh2022` — five now.**
+· ⭐ **THE NON-FRACTURED SIDE ALSO OVERGROWS relative to control, the fractured side more — so it is
+  cross-LIMB as well as cross-BONE, and the authors propose a systemic factor, naming growth hormone.**
+· ⭐⭐ **AND THE HYPERAEMIA EXPLANATION IS REFUTED QUANTITATIVELY IN THE SAME ANIMALS: mean femoral-length
+  difference against mean vascular-bed volume difference gives r = 0.10, P > 0.5.** That is the strongest
+  of R467's four anti-hyperaemia lines and it was the one held secondhand. What they keep alive is arterial
+  **FLOW** — in dogs, tibial fracture raises flow in the fractured limb and **DECREASES** it in the
+  opposite one — while conceding a lag would be required.
+· ⭐ **The day-3 BILATERAL retardation is `hansson1967`'s finding reached six years earlier**, and they
+  attribute it to trauma-liberated cortisone and to reduced weight-bearing.
+🧭 **NET: R440/R441/R442's cross-bone anomaly SURVIVES AS A PHENOMENON and its TERMINAL-LENGTH status is
+NULL in the one prospective controlled experiment.** `g_l6mech_476b`.
+
+⛔⛔⛔ **② `hierton1961` — AND IT WITHDRAWS THE NUMBER R450 AND R468 BOTH BUILT ON.** Acta Orthop Scand
+1961;31(1):25–44, free from the actaorthop.org open back catalogue. Three-armed femoral arteriovenous
+fistula in **FIVE** poliomyelitis children, fistulae open **5–7 years**, followed 10.
+· **By TAPE MEASURE and by blocks under the short leg, the discrepancy fell in ALL FIVE.**
+· ⛔ **By ORTHOROENTGENOGRAPHY — the exact method, routine only since 1953 — IT FELL IN ONLY TWO: 2.5 cm in
+  case 1 and 1.0 cm in case 5**, with the author stating that deviations ≤0.5 cm are probably not
+  significant **and that a completely satisfactory objective roentgen measurement of the growth-stimulating
+  effect IS LACKING IN THIS STUDY**, because the pre-1953 method is not comparable.
+→ ⛔ **R450's "ANISOMELIA DECREASED BY 3.0–6.5 cm", taken secondhand through `nordentoft1964`, IS NOT IN
+THE PRIMARY AND IS WITHDRAWN. The defensible numbers are 2.5 cm in one patient and 1.0 cm in another.**
+Against R468's ±7 mm measurement-noise floor the 1.0 cm case is marginal and only the 2.5 cm case is clear.
+· **COSTS:** chronic lower-leg ulceration in **THREE OF FIVE**, one with a pulsating haemorrhage from a
+  2 cm ulcer and a later spontaneous venous thrombosis into the fistula. ✓ **NO adverse cardiac or blood-
+  volume effect on twice-yearly study — which CONTRADICTS `janes1961`, where ALL patients developed
+  considerable cardiac dilatation.** Fistulae closed at 17 and 18 y; ulcers healed, no venous insufficiency.
+✓ **What survives: the AV fistula is still the only arm in the abandoned corpus with a clearly
+supra-noise centimetre-scale effect — but it is n=1–2, not n=5, and its own author disclaims the
+measurement.** It remains excluded here on route.
+
+⚠ **③ `gullickson1951` — EVERY NUMBER R450 QUOTED IS CORRECT AND THE TIER IS LOWER THAN RECORDED: IT IS A
+ONE-PARAGRAPH FEDERATION PROCEEDINGS MEETING ABSTRACT (Fed Proc 1951;10(1):56), NOT A PAPER.** Young
+puppies, LEFT lumbar chain stimulated at 3 cps through implanted silver electrodes for 23–70 days, femur +
+tibia + metatarsal summated, right limb as control: **stimulation 10 dogs ALL shorter, 0.5–3.5 mm, mean
+2.8 · sympathectomy 6 puppies ALL longer, 2.7–14.0 mm, mean 6.5 · controls 7 dogs, max 1 mm, mean 0.2.**
+⭐ **NEW DETAIL, AND IT IS UNFAVOURABLE: MOST OF THE SHORTENING TOOK PLACE IN THE METATARSAL BONES** — the
+small distal bones that contribute least to stature. The authors attribute it to vasoconstriction.
+⚠ **TENSION TO CARRY: this dog result runs OPPOSITE to `nordentoft1964`'s own human series (16 bones, 11
+patients, lumbar sympathectomy, NO definite stimulation) and to R475's `troupp1961`, which concludes the
+nerve arm is a trauma artefact.** One abstract against two monographs.
+
+⭐⭐ **④ `koch2026` — A8 STRUCK, AND THE POINT ESTIMATE IS BETTER CONTROLLED THAN `joshi2015`'s.**
+Supplementary Table S5 extracted: **HEIGHT, N=140,886, −0.054 SD [−0.061, −0.047], P=1.6e-48; WITHOUT the
+rank-inverse-normal transform, −0.502 cm [−0.570, −0.434], P=7.29e-48, per F_ROH of 0.0625** (= the
+autozygosity of first-cousin offspring). With **education and tobacco** as additional covariates,
+−0.046 SD at P=6.54e-36.
+⭐⭐ **AND THE CONTROL THAT MATTERS MOST IS A WITHIN-CONSANGUINITY ONE: restricted to the 21,426
+participants whose PARENTS WERE FIRST COUSINS, the effect is −0.041 [−0.059, −0.023] at P=8.83e-06** — so
+it is not an artefact of comparing consanguineous with non-consanguineous families. Consistent across sex
+(P-het 0.234) and seven of eight ethnicities (P-het 0.118), with only a weak age gradient for height
+(P-het 0.041) against a steep one for education (3.4e-08), i.e. **not a secular-trend artefact.**
+⚠ **DISCREPANCY RECORDED, NOT EXPLAINED: `joshi2015` puts first-cousin offspring at 1.2 cm shorter in
+354,224 people of four continental ancestries; `koch2026` puts the same quantity at 0.502 cm in 140,886
+Pakistanis. A 2.4-fold difference in the same units.**
+
+## 🧾🧾 R476 — **THREE CORRECTIONS TO NUMBERS THIS FILE HAS BEEN QUOTING, EACH AGAINST A ROUND OF ITS OWN**
+
+⛔⛔ **⑤ `cohen1998` — THE 9.7-FOLD DIRECTIONAL STIFFNESS RESULT R463 LED WITH IS CORRECTED THREE WAYS, AND
+ONE OF THEM IS MY OWN CAVEAT BEING WRONG.** Abstract re-read verbatim:
+· ⛔ **THERE IS NO TENSION TEST. The paper is UNCONFINED COMPRESSION STRESS-RELAXATION only, and BOTH E1
+  and E3 are CURVE-FIT PARAMETERS of a transversely isotropic biphasic model.** R463's caveat — *"loading
+  modes differ (E1 tensile, E3 compressive)"* — is **withdrawn** and replaced by the sharper one: **the
+  anisotropy is a property of the fitted model**, and the paper's own claim is that the transversely
+  isotropic fit beats the isotropic fit, which is a goodness-of-fit argument.
+· ⛔ **"NEWBORN" IS NOT IN THE ABSTRACT** — it says only *bovine distal ulnar growth plate and
+  chondroepiphysis*. It most likely leaked in from `sergerie2009`, which IS newborn porcine.
+  `value_unverified`. ⛔ **"n=20 PAIRED" IS NOT IN THE ABSTRACT AND HAS NO SOURCE HERE.** `value_unverified`.
+✓ **WHAT SURVIVES IS THE DIRECTION AND THE ORDER OF MAGNITUDE, AND IT IS INDEPENDENTLY CORROBORATED
+PER-ZONE BY `sergerie2009`: E1/E3 = 17.0 complete, 23.1 reserve, 13.7 proliferative, 12.1 HYPERTROPHIC.**
+The anisotropy argument does not depend on `cohen1998` at all.
+
+⛔⛔ **⑥ `bylskiaustrow2018` FIGURE 5 READ AT 900 dpi — AND IT QUALIFIES *BOTH* CLAIMS THIS FILE BUILT ON
+THAT PAPER.** Figure 5 re-plots the human data beside three animal compression models — porcine thoracic
+spine hemiepiphysiodesis (ps), rat tail at 0.2 MPa × 4 wk (rs), rat proximal tibia stapling (rpt).
+· ⛔ **CELL WIDTH: human 1% lower and UNMARKED · PORCINE SPINE 13% LOWER AND MARKED p<0.0005 · rat proximal
+  tibia 9% lower, unmarked · rat tail not reported.** → **R440/R463's "compression cuts cell volume
+  ENTIRELY THROUGH THE AXIAL DIMENSION, leaving the transverse dimension untouched" HOLDS IN THE HUMAN AND
+  FAILS IN THE PIG.** And the paper's own power statement is that power was *probably irrelevant for cell
+  width* — i.e. the human width null was never a powered test.
+· ⛔ **ZONE HEIGHT: human NS · porcine p<0.0005 · rat tail p<0.05 · rat proximal tibia p<0.0005.** →
+  **ZONE HEIGHT DOES MOVE SIGNIFICANTLY UNDER A LARGE COMPRESSIVE PERTURBATION IN ALL THREE ANIMAL MODELS
+  AND FAILS ONLY IN THE HUMAN, WHICH IS A POWER RESULT AND NOT A GENERAL BLINDNESS OF THE READOUT.**
+  ⭐ **R463's rule must therefore be stated in its correct and narrower form: `wilson2021` shows
+  hypertrophic zone height does not CORRELATE with growth rate across normal development, and
+  `bylskiaustrow2018` shows it can miss a cell-level effect in an UNDERPOWERED human sample. Neither shows
+  it is insensitive to a large perturbation. A ZONE-HEIGHT NULL IS WEAK EVIDENCE, NOT NO EVIDENCE.**
+· Reductions for the record — zone height 16 / 27 / 13 / 73% and cell height 33 / 17 / 15 / 45% across
+  human / porcine / rat tail / rat proximal tibia.
+
+⛔ **⑦ AND THE `Trueta 1953` CITATION BEHIND R442's AND R450's OCCLUSION RESULT IS PROBABLY THE WRONG
+PAPER.** `nordentoft1964`'s reference list carries no Bull Hosp Joint Dis entry; the wax result traces to
+the **SICOT 5th Congress proceedings (Stockholm 1951, published Brussels 1953), pp. 611–621** — and
+Nordentoft, read directly, says the stimulation there is **"not further specified"**, i.e. there is no
+number in the source either. **Blocked item C6's identifier (PMID 13141004) is `value_unverified` and the
+modern replication (`lee2023metaphyseal`, `park2025metaphyseal`) is the only quantified version of the
+occlusion result — with `hansson1967` showing its long-run sign is negative.**
