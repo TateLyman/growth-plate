@@ -14028,3 +14028,81 @@ per cell by compartment) are unread, so the territorial/interterritorial reversa
 magnitude**. ⚠ **AND THE SPECIES IS NOT STATED IN THE ABSTRACT — this atlas has been carrying "mouse" for
 `buckwalter1986` unverified, including in R461's organelle-fraction arithmetic against `cooper2013`. Marked
 unverified in the bibliography.** Blocked item **A5** stays open, narrowed to the tables and the species.
+
+## 🧠🩸🧠🩸 R475 — **`troupp1961` OBTAINED FREE IN ONE FETCH: THE WHOLE ACTA ORTHOPAEDICA BACK CATALOGUE IS
+## OPEN ACCESS AND PubMed DOES NOT KNOW. The NERVE arm resolves as a TRAUMA ARTEFACT, the VASCULAR arm is a
+## destruction result — and the number worth most is that A GROWING GROWTH PLATE TOLERATES FIVE HOURS OF
+## COMPLETE LIMB ISCHAEMIA WITH NO SIGNIFICANT LOSS OF LENGTH.**
+
+⭐⭐ **THE ROUTE, BECAUSE IT GENERALISES AND IT UNLOCKS THE WHOLE SET.** PubMed carries **no abstract** for this
+78-page monograph and the naive DOI guess 404s. **The CrossRef API returns the real DOI with a HYPHEN —
+`10.3109/ort.1961.32.suppl-51.01` — and `doi.org` redirects it to `actaorthop.org`, the journal's own OJS site,
+which serves the complete PDF free from a `citation_pdf_url` meta tag.** ⭐ **`elo1960` (suppl 45),
+`nordentoft1964` (suppl 74), `hansson1967` (suppl 101) and `brodin1955` (suppl 20) are all in the same series
+and were obtained from the operator by hand. THEY WERE ALL FREE. B1's lesson for the third time and now with a
+mechanical recipe: CrossRef first, hyphens and all, then the journal's own site.**
+
+⭐⭐⭐ **ONE — THE NERVE ARM RESOLVES, AND IT RESOLVES AS AN ARTEFACT, WITH THE CONTROL NEITHER MODERN PAPER
+HAS.** 132 usable rabbits operated at 13–17 days, left hind limb, contralateral control, nine procedures.
+· **Section of 3–4 lumbosacral MOTOR roots → almost complete paralysis and severe muscle atrophy, and only
+  5 PER CENT OR LESS femoral retardation with ALMOST NONE IN THE TIBIA.** Two roots: atrophy and osteoporosis,
+  **no significant retardation.** Motor plus sensory ≈ motor alone.
+· ⭐ **Section of 4 SENSORY roots DID retard the femur — and histology found METAPHYSIAL FRACTURES, i.e. the
+  animal was injuring a limb it could not feel. PROTECTING the denervated limb under the abdominal skin
+  ABOLISHED BOTH THE FRACTURES AND THE RETARDATION.**
+→ ⭐ **THAT ADJUDICATES `g_l7_449d` IN THE DIRECTION OF "DENERVATION PER SE DOES VERY LITTLE".** R463 held
+`killion2017` (mouse, sciatic transection P8, significantly shorter tibiae) against R464's `garces1988` (rat,
+1 month, **no tibial difference**, metatarsals 3–5% shorter). **Neither controlled for self-injury of an
+insensate limb. Troupp did, by design, and the effect vanished.** ⚠ Nerve-root section is not sciatic
+transection and the rabbit is not the mouse — but it is the only arm in the literature with the confound
+removed. **The nerve-as-niche idea (R449's `pei2023`) is untouched: that is an FGF1 signalling argument about
+an incisor stem-cell pool, not a claim about limb innervation setting bone length.**
+
+⛔ **TWO — AND THE VASCULAR ARM IS A DESTRUCTION RESULT, NOT A REGULATION RESULT, WHICH IS WHY IT SAYS NOTHING
+ABOUT THE DIRECTION WE WANT.** Subtotal devascularisation retarded the femur **10–15%** and the tibia more —
+by outright **NECROSIS of the growth cartilage within 24 hours**, with regeneration beginning **at the
+PERIPHERY at 48 h** and moving inward, and survivors past 21 days showing a cup-shaped tibial plateau with a
+broad central **BONY BRIDGE**. **LUMBAR SYMPATHECTOMY DID NOT COMPENSATE.** ⭐ The peripheral-first
+regeneration is independently concordant with `cohen1994`'s finding that the plate's **periphery is more
+permeable than its interior** and with R452's 2.1× peripheral diffusivity. ⚠ And one incidental observation
+worth recording because this stack carries the risk quadruple-stacked: devascularised plates showed **a SPLIT
+THROUGH THE HYPERTROPHIC ZONE**, which the author proposes bears on **slipped upper femoral epiphysis**.
+
+⭐⭐⭐⭐ **THREE — THE NUMBER WORTH MOST, AND IT IS A SAFETY ENVELOPE FOR A DELIVERY ROUTE THIS FILE ALREADY
+HAS. COMPLETE LIMB ISCHAEMIA BY RUBBER TOURNIQUET CAUSED *NO SIGNIFICANT RETARDATION* OF TIBIAL GROWTH UP TO
+FIVE HOURS**, read 40–42 days later as a percentage of the control limb; **6 h gave some retardation and 7 h
+more**, and the author notes the residue may be vascular INJURY rather than the ischaemia itself.
+⭐⭐ **R467's central result depends entirely on a tourniquet: `schneider1963` held a rubber tourniquet on the
+thigh for THIRTY MINUTES after each intramedullary injection, and that is what converts papain — a systemically
+CHONDROLYTIC agent that arrests growth intravenously — into a local stimulus confined to one bone. THIRTY
+MINUTES SITS ABOUT TEN-FOLD INSIDE A MEASURED ENVELOPE, AND THIS ATLAS DID NOT KNOW THE ENVELOPE EXISTED.**
+→ ⭐ **THAT IS THE ROUND'S ONE TRANSFERABLE ENGINEERING FACT: the recurring obstacle here is that the agents
+with the best target validation cannot be given systemically (SAG's systemic hedgehog hazard, papain's
+systemic chondrolysis, HHIP's tumour-suppressor two-sidedness). A CONFINEMENT STEP WITH A TEN-FOLD SAFETY
+MARGIN IS A GENERAL TOOL, NOT A DETAIL OF ONE 1963 PAPER.** ✗ Rabbit; one animal per column; and nobody has
+measured what fraction a tourniquet actually retains. `g_l12_475b`.
+
+⚠ **FOUR — AND THE HISTORICAL REVIEW SUPPLIES A GENERAL EXPLANATION FOR THE WHOLE ABANDONED CORPUS THAT THIS
+FILE HAD NEVER HELD, RECORDED BECAUSE ITS OWN DATA ADJUDICATE AGAINST IT.** Two competing accounts sit in one
+paragraph: **Janes & Musgrove — "the common denominator for procedures resulting in stimulation of bone growth
+is an increase in the blood flow"**, undercut in the same sentence by the observation that flow is **DECREASED
+just distal to an arteriovenous fistula, at least at first**; and ⭐ **Arkin & Katz — that IMMOBILISATION of
+the operated limb, with consequent decrease of pressure on the growth cartilages, is what accelerates growth.**
+⭐ **THE UNLOADING ACCOUNT WOULD EXPLAIN THE CORPUS'S ENTIRE SIGNATURE AT ONCE:** transient gains that decay as
+the limp resolves · results **indistinguishable across materials** (`kramer1955`: ivory pegs, brass screws and
+plain drill holes alike in children) · the narrow band with harm above it · **`hansson1967`'s systemic
+retardation with the OPERATED side spared** · and **`elo1960`'s within-bone split, if a local plate injury is
+subtracted from a limb-wide unloading benefit.**
+⛔ **AND THIS FILE'S OWN MODERN DATA ARGUE AGAINST IT, WHICH IS WHY IT IS A CANDIDATE AND NOT A CONCLUSION:
+`sibonga2000` (four spaceflights plus two ground unloading models, fluorochrome growth rate) and `foster2019`
+(12 weeks enforced bipedal walking) both show that going BELOW normal weight-bearing does not change bone
+length — R426's asymmetry, "you can lose length by loading statically, you cannot gain it by loading less."**
+⛔ **NOT ONE STUDY IN THE STIMULATION CORPUS MEASURED GAIT OR WEIGHT-BEARING ON THE OPERATED LIMB**, so the
+confound was never quantified in any of them. `g_l6mech_475a`.
+
+⭐ **FIVE — AND ITS REVIEW IS A SECOND INDEX TO THE ABANDONED CORPUS WITH THE CLASS-LEVEL NEGATIVES BESIDE THE
+POSITIVES**, which is what `nordentoft1964` and `hansson1967` also carry: **negative reports on venous stasis
+(Borel, Dickinson, Grey & Carr, Helferich 1887), on implantation of foreign material (Bohlman, Haas 1958,
+Herndon & Spencer, Meisenbach, Montgomery & Ingram), on heating (Ring & Lee), and ultrasound nil at moderate
+dose with RETARDATION at higher dose (Vaughen & Bender; De Forest et al.).** ⭐ **THREE INDEPENDENT MONOGRAPHS
+NOW AGREE THAT THE ABANDONED CORPUS IS MOSTLY NEGATIVE AT CLASS LEVEL, AND THE ATLAS HAS ALL THREE.**
