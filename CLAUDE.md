@@ -12422,3 +12422,268 @@ the vertebral elongation endpoint R436 recovered from that paper.
 by the depositors to the MOUSE transcriptome (ENSMUST IDs).** That is what makes the jerboa libraries
 analysable against a mouse gene panel at all, **and it biases absolute CPM toward conserved sequence**, so
 cross-species CPM comparisons are not safe and within-species group contrasts are.
+
+## 🪦🪦🪦 R459 — **THE RESTING POOL DRAINS BY A ROUTE NOBODY HAS NAMED. THREE SPECIES, THREE METHODS,
+## TWENTY YEARS APART, ALL FIND GROWTH-PLATE CHONDROCYTES DO NOT DIE BY CLASSICAL APOPTOSIS — THE HUMAN
+## MEMBER HAS BEEN IN THIS ATLAS THE WHOLE TIME, AND `chondroptosis` RETURNS ZERO FILES ANYWHERE.**
+
+⛔ **ONE — THE CORRECTION, AND IT IS AGAINST THIS FILE'S OWN READING.** R440 recorded from `nilsson2014` that
+the resting pool empties **WITHOUT DIVIDING AND WITHOUT DYING**. The abstract says the decrease **"did not
+appear to be due to apoptosis"** — which is a statement that the **OESTROGEN-INDUCED EXCESS LOSS** is not
+apoptotic. **It is not a statement that the pool drains without dying.** A comparison of two arms is blind by
+construction to a standing death rate common to both. ⚠ **AGENT-REPORTED AND UNVERIFIED HERE (PMC and Europe
+PMC full texts did not return): the resting-zone TUNEL indices are said to be 4.6 ± 0.6% under oestrogen vs
+4.4 ± 1.0% under vehicle, P=0.87.** If that is right, **RZ apoptosis is NOT ZERO, it is ~4.5% standing, and
+nobody has converted it into a per-day flux against the differentiation outflow** — arithmetic on numbers that
+already exist. ✓ The irreversibility result is untouched and remains the paper's strongest: transient
+oestrogen → depletion still present five weeks after withdrawal → fusion hastened.
+
+⭐⭐ **TWO — AND THE NON-APOPTOTIC ROUTE IS REAL, LARGE, MEASURED, AND ITS HUMAN MEMBER WAS ALREADY HELD.**
+· **HUMAN — `emons2009`:** not a single TUNEL-positive cell in the one fusing plate; **EM found NO typical
+  signs of apoptosis or autophagy in any plate, but did show HYPOXIA AND NECROSIS.**
+· **RABBIT, NORMAL ANIMALS — `roach2000`:** the authors set out to give definitive EM evidence of chondrocyte
+  apoptosis in vivo and were **UNABLE TO FIND A SINGLE CHONDROCYTE with classical apoptotic ultrastructure IN
+  VIVO — while finding one IN VITRO**, which is the control that makes the negative interpretable. Instead:
+  **DARK CHONDROCYTES** and **PARALYSED CELLS**, with a mechanical reason specific to this tissue —
+  **confinement within lacunae prevents phagocytosis of apoptotic bodies, so cartilage needs a different
+  elimination mechanism.**
+· **CHICK — `erenpreisa1998`:** dark chondrocytes are **10–35% OF THE CELL POPULATION**, at all stages and all
+  ages, **15–30% tetraploid with no S-phase**, ~10% with substantial DNA loss, advanced cells carrying nuclear
+  features of **BOTH apoptosis AND necrosis**.
+⭐ **THREE SPECIES SAYING ONE THING, AND THE HUMAN ONE WAS ALREADY IN `apoptosis_at_fusion`.** Meanwhile
+**`chondroptosis` — the name Roach gave the morphology — RETURNS ZERO FILES ANYWHERE IN THIS ATLAS**, and its
+~100-record literature is entirely OA, alkaptonuria and disc. **Not one growth plate.**
+
+⭐⭐ **THREE — AND IT JOINS R438's PLOIDY FINDING: THEY ARE ONE OBSERVATION SEEN FROM TWO SIDES.** R438 chased
+endoreduplication as a candidate h_term mechanism and found `erenpreisa1999`'s polyploid chick figures,
+recording them as descriptive. **`erenpreisa1998` is the same laboratory and the same phenomenon read as DEATH
+rather than as PLOIDY** — 15–30% tetraploid dark cells with no S-phase. **This file has held one half since
+R438 without the other.**
+
+⛔ **FOUR — THE OESTROGEN BAND, RECORDED BECAUSE IT RUNS AGAINST THE STACK AND NOT FOR IT.** `takano2008`,
+48 female rabbits, three arms: **BOTH OVARIECTOMY AND HIGH-DOSE OESTROGEN REDUCED CHONDROCYTE NUMBER**, the
+oestrogen arm more dramatically, authors concluding oestrogen must sit **within a narrow range**. ⛔ **IT DOES
+NOT REOPEN RAISING OESTRADIOL — R419 closed that on two human lines** (`belgorosky1989`: velocity correlates
+with testosterone and NOT oestradiol, including bioavailable fractions; `ferris2017`: PAH unchanged in both
+Tanner groups on an AI). Proxy, female, deficiency arm — **CORR-203 governs.** A cost to watch on an endpoint
+the human trials did not measure.
+
+⭐⭐ **FIVE — THE CROSS-SYSTEM ANSWER, AND IT REPRODUCES THIS TISSUE'S OWN LESSON FROM OUTSIDE IT.** A draining
+stem-cell pool **has been made to stop draining, three times, by three mechanisms**: `chakkalakal2012`
+(inhibiting Fgfr1 or overexpressing Spry1 **prevents** satellite-cell depletion in aged mice) · `boyle2007`
+(forced niche *upd* **maintains** germline stem cells in older male flies) · `easwaran2022` (**reduced juvenile
+hormone enhanced GSC longevity IN NON-DIAPAUSING FLIES**, i.e. on a normal background).
+⛔ **IN NONE OF THE THREE DOES THE ABSTRACT DEMONSTRATE THAT DOWNSTREAM OUTPUT ROSE.** chakkalakal2012
+demonstrates regenerative capacity in the **DEPLETION** direction; the other two report no output endpoint.
+⭐ **THE COUNT ROSE AND THE OUTPUT WAS NOT MEASURED, OR WAS MEASURED ONLY IN THE OPPOSITE DIRECTION — which is
+exactly `stem_pool_size_versus_flux` reached from outside cartilage. POOL SIZE AND OUTPUT ARE SEPARATE
+VARIABLES, IN FOUR TISSUES AND THREE PHYLA.**
+
+⭐ **SIX — IS THE POOL FINITE? IT IS FINITE IN THE SENSE THAT MATTERS AND NOT IN THE SENSE USUALLY ASSERTED.**
+**For:** RZ proliferation AND cell number both fall with age (`schrier2006`) · transient oestrogen gives
+**permanent** depletion · fetal/neonatal growth demonstrably depletes progenitors and labelled column number
+falls to a plateau (`newton2019`, `mizuhashi2018`) · the durably slow-cycling compartment is **2.6%**
+(`hallett2021`) · GH measurably spends it (`chu2025`).
+**Against:** **post-SOC progenitors ACQUIRE SELF-RENEWAL** and form stable monoclonal columns still present at
+12 months — **and he is maximally post-SOC** · `nilsson2005` shows the counter does **not** tick during far
+faster division in culture, so it is niche-imposed, not obligate per division · and depletion is sufficient to
+**STOP** growth but **NOT** to **FUSE**, since rodents senesce to near-cessation without fusing.
+→ ⭐ **THE MODEL IS NEITHER BUDGET NOR IMMORTAL: A SELF-RENEWING POOL WHOSE RENEWAL FRACTION SITS BELOW
+REPLACEMENT, WITH THE DEFICIT SET BY THE NICHE. That makes RENEWAL FRACTION, not pool size, the controllable
+variable — the only formulation consistent with pool size and output being separate.**
+
+⛔ **SEVEN — AND THE DENOMINATOR EVERY ATTRITION ARGUMENT NEEDS DOES NOT EXIST. THE HUMAN RESTING-ZONE
+CHONDROCYTE NUMBER HAS NEVER BEEN MEASURED AT ANY AGE** — five query formulations, nothing on point — while
+the human **PROLIFERATIVE** zone **is** measured (`kember1976`: 24 cells/column, cycle time ~20 days against
+~2 days in rodent, and its own authors warn against extrapolating from mouse to man). **Per R449 the tissue to
+do it on is being surgically removed and discarded at epiphysiodesis.** Gaps `g_l7_459a`, `g_l7_459b`.
+
+## 🧬🧬🧬🧬🧬 R460 — **CXXC5 WAS REJECTED ON AN INFERENCE WHILE A TIBIAL-LENGTH ENDPOINT IN NORMAL MICE HAD
+## EXISTED SINCE 2019. It is the OESTROGEN-INDUCED EFFECTOR of growth-plate senescence, the compound was
+## dosed IN LATE PUBERTY, and the chemotype has a COMPLETED PHASE 1.**
+
+⛔ **THE ERROR, IN R301's OWN WORDS.** R301 localised CXXC5 emphatically — **15/15 probe-donor cells in BOTH
+GSE9160 donors, the only gene in that round matching COL2A1 for completeness, peaking PZ 5,748** — and then
+rejected it: CXXC5 is a Wnt brake, so inhibiting it RAISES Wnt, R281's band puts the optimum BELOW wild type,
+wrong half — **"CXXC5 is not in kosmicki2026's 207, so there is no human height number to overrule the
+inference."** There was no human height number. **There was something better and it was four years old.**
+
+⭐⭐⭐ **WHAT `choi2019cxxc5` DID (Life Sci Alliance, open access, FULL TEXT READ).** CXXC5 rises progressively
+in resting, proliferative and hypertrophic chondrocytes as the plate senesces, with β-catenin falling.
+· **GENETIC: `Cxxc5−/−` mice show DELAYED GROWTH-PLATE SENESCENCE AND TIBIAL ELONGATION**, with more cells per
+  column and higher β-catenin and RUNX2.
+· **PHARMACOLOGICAL: 2,280 compounds screened on the CXXC5–DVL interaction → KY19382, 0.1 mg/kg i.p. DAILY.**
+  Two weeks from **SEVEN WEEKS OF AGE — which the authors call LATE PUBERTY** — raised total plate height and
+  cells per column; two weeks from 3 wk raised plate height and BrdU; and **TEN WEEKS FROM 3 TO 13 WK, n=7–15,
+  SIGNIFICANTLY INCREASED TIBIAL LENGTH AT P<0.0005.** No histological abnormality in articular cartilage or
+  liver, **no weight difference across ten weeks**, no activation of 19 other pathway reporters.
+
+⭐⭐ **AND IT PUTS A NAMED EFFECTOR BETWEEN OESTROGEN AND SENESCENCE — WHICH THIS ATLAS HAS NEVER HAD.**
+**17β-estradiol INDUCES CXXC5 in human C28/I2 chondrocytes**, maximal at 24 h, with β-catenin falling at 24 h;
+and in vivo **E2-induced structural senescence is seen in Cxxc5+/+ and HARDLY OBSERVED in Cxxc5−/−**, with no
+significant change in BrdU or β-catenin in the knockouts. **That is genetic epistasis, not correlation.**
+`weise2001` showed oestrogen accelerates all seven senescence parameters and initiates none; `nilsson2014`
+showed it irreversibly depletes the pool. **Neither named the molecule. CXXC5 is the first candidate, and it
+sits DOWNSTREAM of the signal this file's whole period strategy suppresses.**
+
+⭐⭐⭐ **THE STRUCTURAL FINDING IS BIGGER THAN THE COMPOUND: R281's WNT BAND MAY BE A *DEPTH* ARTEFACT RATHER
+THAN A *DOSE* BAND.** Four points, not on one monotone curve:
+| perturbation | depth | direction | result |
+|---|---|---|---|
+| `chen2008` Col2a1-ICAT | intracellular, strong | LOWER | progressively **runted** |
+| `lui2023` SPIN4 | **extracellular** (RZ secreted programme), mild | LOWER | **longer** |
+| PORCN inhibitors | ligand secretion, total | LOWER | zone decomposition inverted, plate **exhausted** |
+| **`choi2019cxxc5`** | **intracellular** (CXXC5–DVL) | **RAISE** | **longer tibia** |
+⭐ **R356 had already found the axis is DEPTH-DEPENDENT — extracellular lowering works, intracellular
+tankyrase lowering failed from FOUR independent directions, total ligand blockade exhausts. Read at DEPTH the
+four points are consistent: AT THE INTRACELLULAR DEPTH THE LOWERING DIRECTION FAILED AND THE RAISING DIRECTION
+HAS A LENGTH ENDPOINT, while at the EXTRACELLULAR depth lowering is what works.** Same pathway, two depths,
+opposite favourable directions. **That is a reformulation of R281 and it is testable.** Gap `g_l2_460b`.
+
+⭐ **OBTAINABILITY, UNDER R401's THREE-WAY SPLIT, AND IT IS FURTHER ALONG THAN ANYTHING ELSE ON THE PERIOD
+AXIS.** Chemical matter real (synthesised, optimised indirubin, published IC50s, **published transdermal
+micellar formulation**). Clinical maturity: an **ACTIVE MULTI-INDICATION PROGRAMME** — hair regrowth and
+follicle neogenesis, cutaneous and diabetic wound healing, obesity/insulin resistance, NASH, Alzheimer's — and
+**A COMPLETED PHASE 1: NCT05833906, CK Regeon Inc, 52 HEALTHY MALE SUBJECTS, transdermal, 5 g and 10 g vs
+placebo, completed January 2024.** ⚠ **THE IDENTITY OF CKR-051 AS A KY-SERIES CXXC5–DVL COMPOUND IS AN
+INFERENCE from sponsor, indication and route and is NOT stated in the registry record.** No oral formulation,
+no results posted, no skeletal endpoint anywhere in the human programme.
+
+⛔ **WHAT IS WRONG WITH IT, BEFORE ANY PROMOTION.**
+· ⛔⛔ **THE COMPOUND DOES NOT CLEANLY TEST THE TARGET: IC50 1.9×10⁻⁸ M on CXXC5–DVL and 1×10⁻⁸ M on GSK3β,
+  and the authors describe dual function.** It is at least as potent a GSK3β inhibitor as a CXXC5 disruptor —
+  **and GSK3β inhibition is the LITHIUM direction R356 contraindicated.** The band objection is not dissolved,
+  it is **displaced** onto whether ten weeks at 0.1 mg/kg sits inside or outside it.
+· ⛔ **MICE DO NOT FUSE.** "Delayed senescence" here is a slowed decline, not a postponed fusion. **The rabbit,
+  which does fuse, has never been given this compound.**
+· ⛔ **EVERY MAGNITUDE IS FIGURE-ONLY** (Figs 3B, 5J) — mean ± SEM, no mm or % anywhere in the text. CORR-318.
+· ⚠ Indirubins are a broadly kinase-active chemotype; a 19-reporter panel is not a kinome scan.
+· ⚠ **No human height genetics** — CXXC5 is absent from the 207, so no population anchor in either sign.
+· ✓ **STEP 0 IS CLEAN** — canonical Wnt is moved by *nothing* in this stack.
+⭐ **WHAT WOULD SETTLE IT — `karimian2013`'s DESIGN: KY19382 *and* the target-selective PTD-DBMP peptide (no
+GSK3β arm) in a RABBIT through the pubertal window, blinded fusion scoring at three physes, caliper at
+maturity.** The peptide arm is what separates the target from the kinase, and nobody has run either.
+Gap `g_l12_460a`.
+
+## 🧪🧪🧪🧪 R461 — **THREE INVERSE SEARCHES CONVERGE. The hypertrophic chondrocyte BREAKS the mass-density
+## set point every other animal cell defends; the matrix term's Golgi module runs in TEN MINUTES and is
+## limited by ACCEPTOR and DONOR SUPPLY, not enzymes; and every duration lever in biology is a RATE term.**
+
+⭐⭐ **PART ONE — THE DENSITY SET POINT, AND THE CHONDROCYTE IS OFF THE SCALE.**
+· **THE PRINCIPLE WAS SETTLED IN 1992 AND NEVER APPLIED TO CARTILAGE.** `colclasure1992`: resealed dog
+  red-cell ghosts with the **same membrane area and same [Hb] but under a THIRD the volume** activate
+  swelling-induced K-Cl cotransport at **~20 fL vs 70 fL** in intact cells — a 3.5-fold difference in the
+  putative volume signal — **BUT AT THE SAME 30–35 g DRY SOLIDS PER 100 g WET WEIGHT.** Albumin-loaded ghosts
+  activate at the same solids concentration; shrinkage-activated Na/H exchange behaves identically.
+  **CELLS DEFEND CYTOSOLIC MACROMOLECULE CONCENTRATION, NOT VOLUME.**
+· **THE SENSOR WAS FOUND IN 2022 AND THE EXPERIMENT DISCRIMINATES.** `boydshiwarski2022`: WNK1 condenses
+  within seconds of osmotic challenge and drives regulatory volume increase — and **injecting Ficoll, which
+  RAISES CROWDING WHILE MAKING THE CELL BIGGER, TRIGGERS CONDENSATES** where vehicle disperses them.
+· ⭐⭐ **THE NUMBERS.** Ordinary mammalian cell defends **~208 fg/µm³** and returns to it monotonically over
+  48 h after a shock (`fu2025cmd`); *Xenopus* egg cytoplasm ~100. **`cooper2013`: chondrocyte phase 1 = 183 —
+  ordinary — and TERMINAL HYPERTROPHIC = ~70, a THIRD of the set point, below a Xenopus egg. AND IT DOES NOT
+  COME BACK.**
+· ⭐ **INDEPENDENTLY CONFIRMED 27 YEARS EARLIER BY A DIFFERENT METHOD.** `buckwalter1986`, mouse tibial plate,
+  EM stereology by zone: **organelle volume/cell +126% while cytoplasm+nucleoplasm +779%**, "apparently by
+  accumulation of water" — an organelle volume-fraction fall of **3.89×** against cooper2013's **2.61×**
+  dry-mass fall. **NEITHER CITES THE OTHER AND NEITHER USES THE WORD CROWDING.**
+· ⛔ **CORRECTION TO R437's PREMISE, AGAINST THIS FILE: `hall2001` DOES NOT DEMONSTRATE A CROWDING SET POINT.**
+  Equal terminal volume at 180/280/380 mOsm demonstrates a defended **VOLUME**; it becomes a defended
+  **CROWDING** only if dry mass is also constant, and **dry mass was not measured.** The experiment that
+  separates them — hall2001's design read out with cooper2013's method — **has not been done in any cell type.**
+· ⭐ **AND THE QUESTION INVERTS: if the chondrocyte dilutes 2.6–3.9× and does not correct, the interesting
+  question is not how it SENSES crowding but HOW IT SWITCHES THE DEFENCE OFF. Nobody has asked it.**
+  ⛔ Measured negative: *macromolecular crowding* × growth plate/bone growth/chondrocyte returns **ONE**
+  PubMed record and it is **extracellular Ficoll in culture medium**. **No crowding probe — GEMs, FRET sensor,
+  Brillouin, quantitative phase intracellularly — has ever been used in a chondrocyte.**
+· ⚠ **COLLISION WITH OUR OWN LOCALISATION:** the characterised sensor is WNK1→SPAK/OSR1, and R408/R411 find
+  the plate concentrates **WNK4 at 3.19–4.04×** while WNK1 0.49, WNK2 0.23, SPAK 0.29–0.30, OSR1 0.30 are
+  contaminant-leaning. **Whether WNK4 phase-separates on crowding has never been tested.** Gap `g_l5_461a`.
+
+⭐⭐ **PART TWO — THE MATRIX TERM'S GOLGI MODULE IS FAST AND SUPPLY-LIMITED.** CORR-361 made matrix synthesis
+**32% of elongation in a fast plate and 49% in a slow one** and this file had never worked it.
+· **KINETICS:** aggrecan **core protein clears the rough ER and the Golgi region with half-times UNDER TEN
+  MINUTES EACH**, while type II collagen is 3–4× slower (`campbell1988`); linkage galactoses and chain GlcA
+  label at t½ 5–8 min; sulfation is not a separate downstream step (30 s of polymerisation already gives
+  20–25% sulfated chains). **BUT THE CORE-PROTEIN PRECURSOR HAS AN INTRACELLULAR t½ OF 45–90 MIN AND
+  CYCLOHEXIMIDE TAKES 79 MIN TO STOP SULPHATE INCORPORATION** — a large pool sitting **UN-GLYCANATED**.
+  → ⭐ **THE MODULE RUNS IN TEN MINUTES AND THE CORE PROTEIN WAITS AN HOUR. THE BOTTLENECK IS UPSTREAM OF THE
+  ENZYMES**, and two independent perturbations name it:
+· **ACCEPTOR — `mitchell1982`: 50 µM xyloside RAISED TOTAL CS SYNTHESIS 60–80%** while cutting incorporation
+  into proteoglycan by 70%; cooling lengthened chains on endogenous core but **not** on xyloside. **The
+  elongation machinery has spare capacity; what it lacks is PRIMED CORE.** ✗ Wrong shape as a lever — the
+  product is free GAG chains, not aggrecan.
+· ⭐ **DONOR — `dick2008papst`: overexpressing the Golgi PAPS transporter PAPST1/SLC35B2 raised Golgi-vesicle
+  PAPS uptake ~3× and APICAL CSPG SULFATION SEVERAL-FOLD**, HSPG essentially unchanged, authors concluding
+  CSPG sulfation runs at **SUBOPTIMAL** conditions. **THIS IS AN ELEVATION EXPERIMENT IN AN UNSTRESSED CELL
+  AND IT WORKED** — the clearest demonstration anywhere that a Golgi step is rate-limiting and can be RAISED.
+  ✗ Canine kidney epithelium, route-specific, no bone endpoint, never done in a chondrocyte.
+· ⚠ **AND CANT1 BOUNDS IT FROM INSIDE:** losing CANT1 accumulates UDP, product-inhibits the transferases,
+  **shortens chains — and RAISES sulfation**, because fixed PAPS is spread over less polymer. **PAPS becomes
+  limiting only when polymer flux is high.**
+· ⛔ **EXPANDING THE ORGANELLE IS NOT THE PLATE'S OWN STRATEGY.** `hunziker1999organelle` did exactly the right
+  experiment — rat tibial plate in vivo at 21/35/80 d, stereology of rough ER, **GOLGI** and mitochondrial
+  surface area and volume **with matrix synthesis measured in the same animals** — and concluded **MODULATIONS
+  IN THE LEVEL OF ACTIVITY PREDOMINATE OVER ALTERATIONS IN THE SURFACE AREA OR VOLUME OF THEIR MEMBRANES.**
+  Argues against build-a-bigger-Golgi and for supply-the-substrate. ⛔ **PAYWALLED; its individual values are
+  NOT RETRIEVED and it is the highest-value missing document in this round.**
+· ⚠ **TRADE-OFF AGAINST SPEED:** modification extent is set by **Golgi RESIDENCE TIME**, not enzyme levels, so
+  faster transit predicts **shorter or less sulfated** chains — and R448's Donnan exponent (dlnΠ/dlnFCD =
+  1.73) makes fixed charge a **LEVERAGED** parameter, so the trade is not obviously favourable.
+· ⛔ **DIRECTION STATUS: every Golgi-assembly gene with a bone-LENGTH endpoint is a LOSS-of-function — CANT1,
+  IMPAD1, XYLT1, FAM20B (birth length ≈ −7 SD), TMEM165, SLC35D1, TRIP11, MIA3. NOBODY HAS RUN THE ELEVATION
+  DIRECTION WITH A LENGTH ENDPOINT IN ANY SPECIES.** And **the rate of aggrecan output per cell has no unit
+  and no number anywhere in the literature.** Gap `g_l5_461b`.
+
+⛔ **PART THREE — THE DURATION LEVERS, AND THEY DO NOT TRANSFER.**
+· ⭐ **THE INSECT RESULT IS THE CLEANEST DEMONSTRATION IN BIOLOGY THAT DURATION ALONE BUYS SIZE, AND IT IS THE
+  WRONG ARCHITECTURE.** `mcbrayer2007`: ablating the four PTTH neurons in *Drosophila* gives delayed
+  development and **LARGER FLIES WITH MORE CELLS**, and the authors state the mechanism — **PROLONGED FEEDING
+  WITHOUT CHANGING THE RATE OF GROWTH.** Bidirectional (PTTH overexpression → small flies), reversed by
+  feeding ecdysone, and replicated in a **hemimetabolous** insect with a **FEMUR** endpoint (`luo2024ptth`).
+  ⛔ **WHY IT DOES NOT TRANSFER: the insect grows by FEEDING, in a soft cuticle, with no growth plate and no
+  progenitor pool being spent. The mammalian equivalent — removing the terminal steroid — IS THE ARM THE STACK
+  ALREADY OCCUPIES, and R440 priced it at 0.3–0.4 cm per extra year with ~95% compensation. The insect has no
+  compensating mechanism because it has no counter to compensate against.**
+· ⛔ **DEVELOPMENTAL TEMPO IS NOT A SIZE DIAL, AND THIS IS NOW AN EXPERIMENTAL RESULT.** `lazaro2023`
+  measured segmentation-clock period in iPSC-derived presomitic mesoderm from **SIX MAMMALS INCLUDING A
+  RHINOCEROS AND A MARMOSET** — ~1000-fold in adult mass — and **the periods DID NOT SCALE WITH BODY WEIGHT
+  BUT WITH EMBRYOGENESIS LENGTH.** `seleit2024` ran the causal test: **~600 *Oryzias* F2 hybrid embryos
+  DECOUPLE TIMING FROM SIZE CONTROL** while spatial scaling is preserved, with **DISTINCT devQTL loci** for
+  each. And `harima2013`'s mechanism makes bigger **UNITS**, not a bigger animal. **NOBODY HAS SLOWED A TEMPO
+  AND PRODUCED A LARGER STRUCTURE.**
+· ⛔ **SUSPENSION PRESERVES THE PROGRAMME AND ADDS NOTHING.** Roe-deer embryonic diapause is slowed rather than
+  stopped with the blastocyst proliferating throughout; *C. elegans* dauer decelerates and even **reverses** a
+  transcriptomic age clock and exits with normal lifespan and fully retained fecundity — **and no report of a
+  LARGER post-dauer or post-diapause adult exists.** The single most important negative for pause-the-clock.
+· ⛔ **AND THE REPLICATION MODULE IS A RATE TERM, NOT THE COUNTER.** Twelve genes reach the 207 and this atlas
+  had never named them as a module: **DTL −4.67 cm (P=1.11e-26; best-powered row P=2.10e-39)**, TLK1 −4.66,
+  XRN2 −2.97, RFC1 −1.91, PCNA −1.56 — and **ONE BRAKE, HLTF +1.47 cm (P=1.06e-10, 957 carriers, monotone),
+  which is a REPLICATION-FORK-REVERSAL TRANSLOCASE — a fact this file has cited HLTF's concordance for four
+  rounds without noticing.** Mouse concords on Dtl, Tyms, Orc4, Slc29a1, Uhrf2, and **Hltf runs the RARE
+  positive direction (+0.058, P=1.08e-07)** against a 64.1%-negative base rate.
+  ⛔ **BUT THE DECISIVE HUMAN TEST ARGUES AGAINST THE COUNTER: Meier-Gorlin syndrome is biallelic hypomorphic
+  pre-replication-complex mutation — reduced ORIGIN LICENSING from conception — with median height Z ≈ −4.4
+  AND 70% DELAYED BONE AGE.** If licensing were the division budget, a licensing-deficient plate should
+  exhaust EARLY with ADVANCED maturation. **It is short with the clock running SLOW. That lands on RATE, not
+  NUMBER.** ⚠ CORR-203 and CORR-299 both govern, and delayed bone age is equally consistent with the whole
+  organism running slow — **the weak joint, recorded as one.**
+· ⭐ **WHAT SURVIVES AS LEVER-SHAPED IS THE NUCLEOTIDE SUPPLY ARM — THE SAME SHAPE AS THE GOLGI ARM.** In the
+  purity-corrected plate the chondrocyte **CONCENTRATES NUCLEOTIDE SUPPLY AND NOT REPLICATION MACHINERY**:
+  IMPDH2 **6.77×**, APRT 5.70, NME2 5.44, SHMT2 5.10, PCNA 4.18, TYMS 3.36, **SLC29A1 2.69 at 259 CPM**,
+  against ORC1 0.30, ORC2 0.28, MCM9 0.10, **POLA1 0.09**, RRM2 0.52. ⚠ **CORR-363 GOVERNS AND IS APPLIED
+  AGAINST THIS ROUND** — the screen is structurally blind to universal machinery, so the low replisome ratios
+  are **NOT a kill**; what survives is the **INTERNAL CONTRAST** between two equally universal modules scored
+  against one comparator (R444's logic). Three things make it more than a pattern: **Slc29a1-null gives the
+  largest length effect in the module (body −3.470, P≈0; tibia −2.604, P=2.38e-05)** · Tyms-het shortens on
+  two independent parameters · and **HUMANS WHO CANNOT HANDLE PURINES GET A GROWTH-PLATE LESION** — ADA-SCID
+  produces costochondral cupping specific enough to distinguish it radiographically from other SCIDs, with the
+  mechanism worked out in **rabbit growth plate** as selective deoxyadenosine toxicity to **IMMATURE
+  cartilage**. ✗ **SAMHD1 runs the wrong way** (−1.00 cm at P=5.46e-21 for a gene that DEGRADES dNTPs), with
+  an interferonopathy confound as the available and convenient defence. ✗ **No nucleotide supplementation
+  study has a bone-length endpoint in any species.** Gap `g_l5_461c`.
+
+⭐ **THREE FIELD-LEVEL NEGATIVES, RECORDED SO NOBODY RE-DERIVES THEM: no mitotic clock (epiTOC, MiAge,
+stemTOC) has ever been run on cartilage or bone · no dNTP pool, γH2AX zone map or 53BP1 body has ever been
+measured in a chondrocyte · and NO INTERVENTION ANYWHERE, IN ANY TISSUE OR SPECIES, HAS CONVERTED EXTRA
+STEM-CELL DIVISIONS INTO A TISSUE DIMENSION.**
