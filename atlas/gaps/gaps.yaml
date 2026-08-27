@@ -19235,7 +19235,7 @@ gaps:
 - gap_id: g_l6mech_448a
   type: quantitative_gap
   layer: L6
-  status: open
+  status: closed
   question: What is the hydraulic permeability of the growth plate, and what loading period actually ventilates
     it?
   why_it_matters: From articular-cartilage parameters the poroelastic diffusivity is 5.3e-9 square metres per
@@ -19255,6 +19255,8 @@ gaps:
     from one second to four hours, reporting enhancement against the predicted penetration depth over plate
     thickness.
   blocking: false
+  closed_by: round452_the_plate_is_more_permeable_than_articular_cartilage_and_compression_strangles_its_own_supply
+  closure_note: 'CLOSED R452. cohen1994 measured the growth plate''s own biphasic parameters in 1994 and used them only for stress relaxation. Model B (permeable metaphysis, impermeable epiphysis, the best curve-fit): intrinsic permeability k0 3.4 +/- 0.3 at interior sites and 13.0 +/- 4.0 at peripheral sites versus 0.4 +/- 0.2 for articular cartilage in the same table, i.e. the plate is 8.5 to 32-fold MORE permeable than the tissue R448 borrowed from. Poroelastic diffusivity 4.08e-9 to 8.58e-9 m2/s, which BRACKETS R448''s borrowed 5.32e-9, so R448''s conclusions survive. Periphery is 2.1-fold more diffusive than interior. And permeability is exponentially strain-dependent with M = 5.8 to 17.8, so 20 per cent compression cuts it 3.2 to 35-fold. The residual gap - no HUMAN growth plate has ever been measured - is carried forward as g_l6mech_452a.'
 - gap_id: g_l5_448b
   type: known_unknown
   layer: L5
@@ -19509,4 +19511,29 @@ gaps:
     or pigs against vehicle and against an equimolar-sulfate dose of sodium sulfate, reading femur, tibia AND
     vertebral length with calipers plus serum inorganic sulfate - which tests the growth claim and the
     sulfate-donor mechanism in the same animals.
+  blocking: false
+- gap_id: g_l6mech_452a
+  type: known_unknown
+  layer: L6
+  status: open
+  question: What are the biphasic or poroelastic parameters of a HUMAN growth plate, and do they change with
+    skeletal maturity?
+  why_it_matters: "Every transport conclusion this file has drawn - R428's delivery multiplier, R430's
+    partition calibration, R448's frequency ceiling on mechanical loading, R450's reading of Brodin's tracer
+    timings, R452's exponential strain-dependence - now rests on ONE bovine dataset from 1994 and on articular
+    parameters borrowed from a different tissue. The bovine plate turns out to be 8.5 to 32-fold more
+    permeable than articular cartilage, which is a large enough surprise to make the human value worth having
+    rather than assuming. And the maturity question is not cosmetic: if permeability falls as the plate
+    involutes, then every delivery argument gets worse precisely in the subject this file is about."
+  what_is_known: cohen1994 gives bovine distal femoral values - aggregate modulus 1.20 MPa interior and 0.66
+    MPa peripheral, intrinsic permeability 3.4 and 13.0 x 10^-15 m4/N.s, strain-dependency coefficient 5.8 and
+    9.5 - with the periphery more compliant and more permeable than the interior, and with a permeable
+    metaphyseal boundary giving the best curve-fit. Nothing equivalent exists for any human specimen.
+  what_is_missing: A confined or unconfined compression stress-relaxation measurement on human growth-plate
+    tissue with a nonlinear biphasic fit. Human physeal tissue is obtainable from epiphysiodesis, which is
+    performed on constitutionally tall adolescents and is the source of every human growth-plate transcriptome
+    that exists - so the specimens are already being cut out and discarded.
+  discriminating_experiment: Confined compression stress-relaxation on epiphysiodesis specimens across a
+    maturity range, fitted with the same nonlinear biphasic model, reporting aggregate modulus, intrinsic
+    permeability and the strain-dependency coefficient separately for peripheral and interior sites.
   blocking: false

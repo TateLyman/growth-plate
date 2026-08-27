@@ -11940,3 +11940,68 @@ patent's own histology, to its SLC13A1 model, and to five prior rounds of this f
 which is **decided by a single serum assay nobody has ever run.** ⛔ **And the compartment is wrong for him:
 the wild-type signature is LIMB and his residual is TRUNK**, so even a positive assay makes this a mechanism
 result before it is a lever.
+
+## 🌊🌊🌊🌊 R452 — **THE PLATE'S OWN TRANSPORT PARAMETERS, AT LAST. IT IS 8.5–32× MORE PERMEABLE THAN
+## ARTICULAR CARTILAGE, ITS PERIPHERY IS TWICE AS DIFFUSIVE AS ITS INTERIOR, A 1994 CURVE-FIT INDEPENDENTLY
+## SELECTS THE *METAPHYSEAL* SIDE AS THE OPEN BOUNDARY — AND PERMEABILITY IS EXPONENTIALLY STRAIN-DEPENDENT,
+## SO SUSTAINED COMPRESSION STRANGLES THE PLATE'S OWN SOLUTE SUPPLY.** Closes `g_l6mech_448a`.
+
+R448 named the plate's own hydraulic permeability **"the single most valuable missing number in this round,
+and every δ above scales on it."** `cohen1994` measured it in 1994 and used it only for stress relaxation.
+
+⭐⭐ **ONE — THE PLATE IS FAR MORE PERMEABLE THAN ARTICULAR CARTILAGE, AND THE CONTRAST IS INTERNAL TO ONE
+TABLE.** Bovine distal femur, bone–plate–bone cylinders, 3 peripheral and 6 interior sites across 10 femora,
+confined compression with a **nonlinear** biphasic fit. On the best-fitting boundary condition:
+| | H_A (MPa) | **k₀ (10⁻¹⁵ m⁴/N·s)** | **M** |
+|---|---|---|---|
+| **interior** (n=39) | 1.20 ± 0.36 | **3.4 ± 0.3** | **5.8 ± 1.3** |
+| **periphery** (n=17) | 0.66 ± 0.35 | **13.0 ± 4.0** | **9.5 ± 2.1** |
+| articular cartilage, same table | 0.89 ± 0.29 | **0.4 ± 0.2** | — |
+→ ⭐ **8.5× MORE PERMEABLE AT THE INTERIOR AND 32× AT THE PERIPHERY THAN THE TISSUE R448 BORROWED FROM.**
+
+⭐ **TWO — AND R448's CONCLUSION SURVIVES, WHICH IS THE POINT OF CHECKING.** D_p = H_A·k = **4.08e-9
+(interior) to 8.58e-9 (periphery) m²/s** — and **R448's borrowed 5.32e-9 sits BETWEEN them**, so every number
+it derived was approximately right for the wrong reason. On the plate's own parameters:
+| loading | δ = √(D_p/ω) |
+|---|---|
+| **15 Hz** (R427's most effective lateral-loading frequency) | **6.6–9.5 µm** — one cell |
+| **1 Hz** (walking) | **25–37 µm** |
+| **30-minute period** | **1.1–1.6 mm** |
+| **diurnal** | **7.5–10.9 mm** |
+**τ = L²/D_p: 1.9–4.1 min for a 1 mm plate, 17.5–37 min for 3 mm. Full ventilation of 1 mm needs a loading
+PERIOD of order 26 MINUTES.**
+→ ⛔ **IMPACT AND VIBRATORY LOADING AT 1–20 Hz STILL CANNOT VENTILATE THE BULK OF A PLATE, BY TWO ORDERS OF
+MAGNITUDE. THE POSTURAL AND DUTY-CYCLE TIMESCALES STILL CAN.**
+
+⭐⭐ **THREE — A TRANSPORT ASYMMETRY NOBODY HAS NAMED: THE PERIPHERY IS 2.1× MORE DIFFUSIVE THAN THE
+INTERIOR.** That is intrinsic to the material, and it is **independent of and ADDITIVE TO** the SUPPLY
+asymmetry `brodin1955` measured with IV tracers (entry mainly metaphyseal). **Two asymmetries, two different
+physics, forty years apart, both naming the outside and the metaphyseal face as the accessible surfaces.**
+
+⭐⭐⭐ **FOUR — AND THE 1994 CURVE-FIT INDEPENDENTLY SELECTS THE METAPHYSEAL SIDE AS THE OPEN BOUNDARY.** Three
+models: **A** permeable epiphysis + metaphysis · **B** permeable metaphysis, **IMPERMEABLE epiphysis** · **C**
+both impermeable. **Model B gives a significantly higher curve-fit than C and a slightly (not significantly)
+higher fit than A.** ⚠ **So the defensible claim is that the METAPHYSEAL interface is PERMEABLE; the closed
+epiphyseal interface is supported, not established.** ⭐ **A mechanical stress-relaxation experiment and a
+fluorescent-tracer study, neither citing the other, both make the metaphysis the open side — and R442
+independently found a sustained METAPHYSEAL occlusion lengthens a bone.**
+
+⭐⭐⭐⭐ **FIVE — AND THE FINDING THAT MATTERS MOST, BECAUSE IT IS A MECHANISM FOR SOMETHING THIS FILE ALREADY
+HOLDS ONLY AS A PHENOMENON: PERMEABILITY IS EXPONENTIALLY STRAIN-DEPENDENT, k = k₀·exp(M·e), WITH M = 5.8–17.8.**
+| strain | k falls | δ falls |
+|---|---|---|
+| 10% | **1.8–5.9×** | 1.3–2.4× |
+| **20%** | **3.2–35×** | **1.8–5.9×** |
+→ ⭐⭐ **SUSTAINED COMPRESSION DOES NOT MERELY DEFORM THE PLATE — IT PROGRESSIVELY CLOSES THE PLATE'S OWN
+TRANSPORT PATHWAY, EXPONENTIALLY IN STRAIN.** That is a **poroelastic mechanism for HUETER-VOLKMANN** and for
+`stokes2005`'s result that halving sustained loading from 24 h to 12 h recovered **14–16 points of growth
+rate**. ⭐ **And it predicts `stokes2002`'s asymmetry** — load costs ~3.7× more growth than equal distraction
+buys — **because compression closes the pathway exponentially while tension cannot open it by the same
+factor.** First mechanistic account this file has had of why the mechanical arm is one-sided.
+
+⛔ **WHAT IT DOES NOT SETTLE.** Every parameter is **BOVINE**, from bone–plate–bone cylinders in confined
+compression, not an intact loaded limb. **NO BIPHASIC OR POROELASTIC MEASUREMENT OF A HUMAN GROWTH PLATE
+EXISTS AT ANY AGE** — and human physeal tissue is already being cut out and discarded at epiphysiodesis,
+which is where every human growth-plate transcriptome came from. `g_l6mech_452a`. And a diffusivity is not a
+delivery measurement: it says how fast a pressure disturbance and its fluid movement propagate, not what
+concentration of a given solute arrives.
