@@ -1,0 +1,92 @@
+id: round453_stc2_papp_a_is_a_causal_human_lever_and_the_step0_kill_was_measured_wrong
+name: R453 - STC2 to PAPP-A is a CAUSAL human height mechanism with in-vitro confirmation, the Stc2-null mouse is
+  10-15% larger, and BOTH papers say the effect is NOT through GH/IGF-I signalling as R328 assumed - the Step-0
+  kill on this target rests on an inference that has been directly measured against
+aliases:
+- R453
+- STC2
+- PAPP-A
+- stanniocalcin 2
+- marouli2017
+- chang2008
+- IGFBP-4 cleavage
+type: protein
+layer: L4
+stub: false
+confidence: B
+last_verified: '2026-08-27'
+species_basis:
+- human
+- mouse
+human_evidence: direct
+human_evidence_note: 'marouli2017 is 711,428 people: rare STC2 missense alleles raise adult height 1-2 cm per allele
+  and the mechanism was confirmed in vitro on the purified system. What is NOT human is any bone-length or growth-plate
+  measurement under an STC2-directed agent, because no such agent exists in any species.'
+translation_risk: moderate
+translation_risk_reason: The human arm is genetic and the mouse arm measures body size rather than bone length.
+  The direction is concordant across both and the biochemistry is explicit, but nobody has removed STC2 pharmacologically
+  in a growing animal and put a caliper on a bone.
+summary: 'R328 removed STC2 from consideration with the sentence ''Step 0 lands on the GH/IGF-1 arm, which this
+  file prices at approximately zero attained height after mid-puberty''. R341 reopened it on a compartment argument
+  - that PAPP-A acts pericellularly on IGFBP-4 in the matrix while IGFALS is 0/14 in the plate, so the growth plate
+  cannot see the GH-driven circulating ternary pool at all. That argument was reasoned. R453 finds it has been MEASURED,
+  twice, by two groups, in two species, and both say the same thing.
+
+
+  ONE - THE HUMAN MECHANISM IS CAUSAL AND IT IS STATED IN THE ABSTRACT. marouli2017 (Nature, 711,428 people) reports
+  83 height-associated coding variants of minor-allele frequency 0.1 to 4.8 per cent with effects up to 2 cm per
+  allele, and then does the functional follow-up: RARE HEIGHT-INCREASING ALLELES OF STC2, GIVING AN INCREASE OF
+  1 TO 2 CENTIMETRES PER ALLELE, COMPROMISED PROTEOLYTIC INHIBITION OF PAPP-A AND INCREASED CLEAVAGE OF IGFBP-4
+  IN VITRO, RESULTING IN HIGHER BIOAVAILABILITY OF INSULIN-LIKE GROWTH FACTORS. That is the exact chain R341 proposed
+  - less STC2, more PAPP-A activity, more IGFBP-4 cleaved, more free IGF - with the direction fixed by human alleles
+  and the biochemistry confirmed on purified protein. This atlas has held marouli2017 since 2026-08-05 with 472
+  citing nodes and a one-line finding that recorded only that 83 variants alter height. THE MECHANISM WAS NEVER
+  EXTRACTED.
+
+
+  TWO - AND THE MOUSE SAYS THE GH/IGF-I OBJECTION IS WRONG AS A MATTER OF MEASUREMENT. chang2008: Stc2-null mice
+  were 10 to 15 per cent LARGER and grew at a faster rate than wild-type FROM 4 WEEKS ONWARD, with Stc1-/-Stc2-/-
+  doubles behaving the same - and the authors state in the abstract that THIS EFFECT WAS NOT MEDIATED THROUGH THE
+  GH/IGF-I AXIS. Serum calcium and phosphate were normal, fertility and fecundity unaffected. So the objection that
+  killed the target in R328 - that removing STC2 is just another way of pushing an arm already occupied by growth
+  hormone - has been tested by the people who made the knockout and it does not hold.
+
+
+  THREE - WHAT IS STILL MISSING IS THE SAME THING AS IN R341 AND IT IS NOW THE ONLY THING. No femur, tibia or vertebra
+  has been measured in an Stc2-null mouse. chang2008 measured body size and growth rate; lionikas2023 measured muscle
+  mass; wang2025stc2a measured zebrafish body size; bai2025 measured weight. FOUR PAPERS, THREE SPECIES, AND NOT
+  ONE CALIPER ON A BONE. The mouse is bred and the measurement is a pair of calipers at necropsy.
+
+
+  FOUR - AND MAROULI''S OWN PATHWAY LIST NAMES THE OTHER ARM THIS FILE IS WORKING. Among the biological pathways
+  the 83 variants highlight, the abstract names PROTEOGLYCAN AND GLYCOSAMINOGLYCAN SYNTHESIS - reached from an unbiased
+  711,000-person coding-variant scan, with no knowledge of the sulfate arm. That is an independent instrument landing
+  on R320/R321/R410/R457''s axis.'
+quantitative:
+- parameter: effect of rare height-increasing STC2 coding alleles on adult height
+  value: 1 to 2 cm per allele
+  unit: centimetres per allele, minor-allele frequency 0.1-4.8%
+  species: human
+  source_ref: marouli2017
+  note: 'n=711,428. Mechanism confirmed in vitro: compromised proteolytic inhibition of PAPP-A, increased IGFBP-4
+    cleavage, higher IGF bioavailability'
+- parameter: body size of Stc2-null mice versus wild type
+  value: 10 to 15 per cent larger, from 4 weeks onward
+  unit: per cent, body size and growth rate; Stc1-/-Stc2-/- similar
+  species: mouse
+  source_ref: chang2008
+  note: AUTHORS STATE THE EFFECT WAS NOT MEDIATED THROUGH THE GH/IGF-I AXIS - the direct measurement against R328
+    Step-0 kill. NO BONE LENGTH MEASURED
+- parameter: STC2 burden effect on adult height in the 207-gene exome table
+  value: '+1.37'
+  unit: cm per allele, P=4.51e-34, 3,927 carriers
+  species: human
+  source_ref: kosmicki2026
+  note: held since R328; among the best-powered positive rows in the table, and concordant with marouli2017 rare-variant
+    estimate of 1-2 cm
+key_refs:
+- ref_id: marouli2017
+- ref_id: chang2008
+- ref_id: kosmicki2026
+open_questions:
+- g_l4_453a

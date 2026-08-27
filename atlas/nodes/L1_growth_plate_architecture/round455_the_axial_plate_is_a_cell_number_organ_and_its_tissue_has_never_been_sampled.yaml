@@ -1,0 +1,110 @@
+id: round455_the_axial_plate_is_a_cell_number_organ_and_its_tissue_has_never_been_sampled
+name: R455 - the axial plate runs at one fifth the limb plate's rate in the SAME animal, and the whole gap is CELL
+  PRODUCTION rather than cell size; the tissue has never been transcriptomically sampled in a growing human; and
+  single-vertebra radiographic error is about three times one year of that vertebra's growth
+aliases:
+- R455
+- axial growth
+- vertebral growth plate
+- cells per column per day
+- sitting height
+- GSE299515
+- vertebral body height measurement error
+type: tissue_structure
+layer: L1
+stub: false
+confidence: C
+last_verified: '2026-08-27'
+species_basis:
+- rat
+- bovine
+- mouse
+- human
+human_evidence: indirect
+human_evidence_note: The rate decomposition is rat and calf. The human contributions are the reserve figures, the
+  per-vertebra growth rate in children and the measurement-error bound - all radiographic, and none separating vertebral
+  body height from disc height.
+translation_risk: moderate
+translation_risk_reason: Two species agree on the decomposition and a third (mouse plus jerboa) reaches the same
+  conclusion by a different route, but no human vertebral physis has been measured cellularly.
+summary: 'R440 recorded that the axial plate is 5.6-fold slower than the limb plate in the same animal and that
+  nobody has explained it. R455 decomposes it, and finds the field cannot currently test the answer in humans because
+  the tissue has never been collected.
+
+
+  ONE - THE GAP IS PRODUCTION, NOT SIZE, AND THE ARITHMETIC IS ON THE PUBLISHED TABLE. Longitudinal growth rate
+  divided by terminal hypertrophic cell height gives cells delivered per column per day. On stokes2007''s control
+  rows that is about 1.6 for rat caudal vertebra against about 8.1 for rat proximal tibia, and about 2.4 against
+  9.3 in calf - while terminal cell height is nearly matched in rat (about 24 versus 27 micrometres) and only modestly
+  smaller in calf. On a log decomposition roughly 80 to 95 per cent of the axial-appendicular gap is CELL PRODUCTION
+  and only 5 to 20 per cent is terminal cell size. THE INPUT CELL HEIGHTS ARE TEXT-EXTRACTOR OUTPUT FROM A TABLE
+  READ SECONDHAND AND ARE value_unverified.
+
+  weber2025 reaches the same conclusion independently in mouse and jerboa and states it directly: cell number is
+  a common driver of limb and vertebral proportion, and chondrocyte hypertrophy - a major driver of proportion in
+  all mammal limbs - is LIMITED in vertebrae, with hypertrophic cells the same size in mouse vertebrae elongating
+  at different rates.
+
+  THE CONSEQUENCE FOR THIS FILE: any agent whose mechanism is terminal chondrocyte ENLARGEMENT is aimed at the term
+  the vertebral plate does not use. The CNP axis is the partial exception, because Npr3 loss elongates vertebrae
+  specifically THROUGH an increase in hypertrophic cell size.
+
+
+  TWO - AND THE REASON MAY BE THAT THE VERTEBRAL PLATE CANNOT AFFORD LARGE HYPERTROPHIC CELLS. The vertebral body
+  has NO SECONDARY OSSIFICATION CENTRE, and xie2020 showed the SOC exists to shield hypertrophic chondrocytes -
+  the least stiff cells in the plate at about a quarter of proliferative stiffness - with bones carrying an SOC
+  tolerating roughly 25-fold greater load. A plate under the highest sustained axial compression in the body, with
+  no SOC, building its length out of small cells is at least coherent. INFERENCE ONLY: xie2020 contains no vertebral
+  arm.
+
+
+  THREE - THE TISSUE HAS NEVER BEEN SAMPLED IN A GROWING HUMAN, AND THIS IS NOW A CHECKED NEGATIVE. A GEO query
+  run three ways on 2026-08-27 returns no paediatric or adolescent HUMAN vertebral growth-plate transcriptome, chromatin
+  dataset or single-cell atlas. Everything human is fetal, adult degenerative endplate, or engineered. The ONLY
+  vertebral growth-cartilage RNA-seq that exists anywhere is GSE299515 - mouse and jerboa caudal vertebrae 1 and
+  6, 16 samples, released June 2025. This independently reproduces R425''s conclusion that the paediatric human
+  vertebral physis is absent from every atlas, by direct query rather than by reading an inventory annotation.
+
+
+  FOUR - AND THE MEASUREMENT PROBLEM IS ARITHMETICALLY FATAL FOR A PER-VERTEBRA ENDPOINT. Direct paediatric measurement
+  gives about 0.83 to 0.86 mm per vertebra per year; interobserver limits of agreement for vertebral body height
+  on PA radiographs are about plus or minus 2.4 mm for a single rater. THE ERROR ON ONE VERTEBRAL BODY IS ROUGHLY
+  THREE TIMES ONE YEAR OF THAT VERTEBRA''S GROWTH. Anything real must be read as a summed T1-S1 length. And no longitudinal
+  human series separates vertebral BODY height from DISC height, which matters because disc height is water and
+  reverses diurnally. BOTH FIGURES ARE SECONDHAND AND value_unverified.
+
+
+  FIVE - ONE PHARMACOLOGICAL DISSOCIATION WORTH RECORDING AND ONE CORRECTION TO THIS LEDGER. li2018leptin reports
+  leptin PROMOTING tibial epiphyseal-plate chondrocyte proliferation and INHIBITING vertebral, through STAT in tibial
+  and ERK in vertebral cells - the cleanest axial-versus-appendicular pharmacological split found, in vitro, with
+  no length endpoint. And the correction: CLAUDE.md''s dabogratinib entry pairs ''the only agent shown to lengthen
+  bone in a WILD-TYPE animal'' with ''the only one that lengthens LUMBAR VERTEBRAE (L4-L6)''. Those are DIFFERENT
+  ARMS - the L4-L6 result is the Fgfr3 mutant rescue; the wild-type arm''s axial endpoint is TAIL LENGTH, which
+  rose significantly at 12 and 14 mg/kg. Tail is caudal vertebrae, so an axial signal in a normal animal survives,
+  but it is not a lumbar measurement.'
+quantitative:
+- parameter: cells delivered per column per day, axial versus appendicular, same animals
+  value: rat vertebra about 1.6 versus tibia about 8.1; calf vertebra about 2.4 versus tibia about 9.3
+  unit: cells per column per day, derived as growth rate divided by terminal hypertrophic cell height
+  species: rat
+  source_ref: stokes2007
+  note: COMPUTED IN R455 from stokes2007 control rows. Roughly 80-95 per cent of the axial-appendicular gap is cell
+    PRODUCTION and 5-20 per cent is terminal cell SIZE. THE TERMINAL CELL HEIGHTS ARE SECONDHAND TEXT-EXTRACTOR
+    OUTPUT AND value_unverified; the growth rates 39 versus 218 and 35 versus 192 micrometres per day are held in
+    R440
+- parameter: single-vertebra radiographic measurement error against one year of that vertebra growth
+  value: about 3-fold
+  unit: limits of agreement about +/-2.4 mm single rater, against 0.83-0.86 mm per vertebra per year
+  species: human
+  source_ref: stokes2007
+  note: SECONDHAND AND value_unverified - both figures are from an agent summary of Photopoulos 2023 and Murray
+    2020, neither retrieved here. Recorded because it bounds any per-vertebra endpoint. source_ref is a placeholder
+    to the axial rate paper
+key_refs:
+- ref_id: stokes2007
+- ref_id: stokes2006
+- ref_id: weber2025
+- ref_id: li2018leptin
+- ref_id: tyra300_2025
+open_questions:
+- g_l1_455a

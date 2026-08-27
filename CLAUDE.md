@@ -12005,3 +12005,383 @@ EXISTS AT ANY AGE** — and human physeal tissue is already being cut out and di
 which is where every human growth-plate transcriptome came from. `g_l6mech_452a`. And a diffusivity is not a
 delivery measurement: it says how fast a pressure disturbance and its fluid movement propagate, not what
 concentration of a given solute arrives.
+
+## 🧬💉🧬💉 R453 — **STC2 → PAPP-A IS A *CAUSAL* HUMAN MECHANISM WITH IN-VITRO CONFIRMATION, THE KNOCKOUT
+## MOUSE IS 10–15% LARGER, AND *BOTH PAPERS SAY IT IS NOT THROUGH GH/IGF-I* — R328's STEP-0 KILL WAS AN
+## INFERENCE AND IT HAS BEEN DIRECTLY MEASURED AGAINST.**
+
+⛔ **CORR-351, AND IT IS THE MOST-CITED REFERENCE IN THIS FILE.** `marouli2017` has been in the bibliography
+since **2026-08-05 with 472 citing nodes** and a one-line finding that recorded only *"83 rare and
+low-frequency coding variants alter adult height."* **THE MECHANISM WAS NEVER EXTRACTED.**
+
+⭐⭐⭐ **ONE — THE CHAIN R341 PROPOSED IS THE CHAIN THE PAPER MEASURED.** `marouli2017` (Nature, **711,428
+people**), abstract verbatim: **rare height-increasing alleles of STC2, giving an increase of 1–2 cm per
+allele, COMPROMISED PROTEOLYTIC INHIBITION OF PAPP-A AND INCREASED CLEAVAGE OF IGFBP-4 IN VITRO, RESULTING
+IN HIGHER BIOAVAILABILITY OF INSULIN-LIKE GROWTH FACTORS.** Less STC2 → more PAPP-A activity → more IGFBP-4
+cut → more free IGF. **Human alleles fix the direction; purified protein confirms the biochemistry.**
+✓ Concordant with the burden row this file already held: **STC2 +1.37 cm at P=4.51e-34 across 3,927 carriers.**
+
+⭐⭐⭐ **TWO — AND THE OBJECTION THAT KILLED IT IN R328 IS REFUTED BY MEASUREMENT, NOT BY ARGUMENT.**
+R328's verdict was *"DO NOT ADD IT — Step 0 lands on the GH/IGF-1 arm."* `chang2008` (Endocrinology),
+abstract verbatim: **Stc2-null mice were 10–15% LARGER and grew at a faster rate than wild type FROM 4 WEEKS
+ONWARD**, Stc1⁻/⁻Stc2⁻/⁻ doubles the same — **and "This effect was not mediated through the GH/IGF-I axis."**
+Serum calcium and phosphate normal, fertility unaffected. **R341 reopened the target on an argued compartment
+split (PAPP-A acts pericellularly; IGFALS is 0/14 in the plate). The knockout's own authors had already
+answered it.**
+
+⛔ **THREE — AND WHAT IS MISSING IS EXACTLY WHAT R341 SAID AND IT IS NOW THE ONLY THING. NO FEMUR, TIBIA OR
+VERTEBRA HAS EVER BEEN MEASURED IN AN Stc2-NULL ANIMAL.** `chang2008` body size · `lionikas2023` muscle mass
+· `wang2025stc2a` zebrafish body size · `bai2025` weight. **Four papers, three species, not one caliper.**
+⭐ The mouse is bred and phenotyped. **The experiment is calipers at necropsy.** `g_l4_453a`
+✗ Still true: **no anti-STC2 therapeutic antibody exists in any species**, and PAPP-A antibodies are being
+built in the OPPOSITE direction.
+
+⭐ **FOUR — AND MAROULI'S OWN PATHWAY LIST LANDS ON THE SULFATE ARM FROM AN UNBIASED INSTRUMENT.** Among the
+biological pathways its 83 variants highlight, the abstract names **PROTEOGLYCAN AND GLYCOSAMINOGLYCAN
+SYNTHESIS** — reached from a 711,000-person coding scan with no knowledge of R320/R321/R410/R457.
+
+## 🧬🧬 R453 — **THE RECESSIVE INSTRUMENT AT POPULATION SCALE CONFIRMS R432, QUANTIFIES IT, AND EXPLAINS
+## WHY THE CLASS KEEPS RETURNING SHORTENING GENES**
+
+⭐⭐ **`joshi2015` (Nature), abstract verbatim: runs of homozygosity against 16 traits in 354,224 individuals
+from 102 cohorts. HEIGHT IS THE STRONGEST ASSOCIATION IN THE STUDY AT P < 1e-300, increased homozygosity
+associated with DECREASED height, EQUIVALENT TO THE OFFSPRING OF FIRST COUSINS BEING 1.2 cm SHORTER** —
+similar effect sizes across **four continental groups** and across populations of differing baseline
+homozygosity, which the authors take as evidence that homozygosity itself and not confounding drives it.
+✓ **And it is specific, not generic inbreeding depression: blood pressure, LDL and ten cardio-metabolic
+traits showed nothing.**
+⭐⭐⭐ **AND THE AUTHORS' OWN INTERPRETATION IS THE USEFUL PART: directional dominance is predicted for traits
+under directional selection, so they conclude INCREASED STATURE HAS BEEN POSITIVELY SELECTED IN HUMAN
+EVOLUTION.** That is a **second, non-ascertainment reason** why the recessive class returns shortening genes
+almost exclusively — selection has already driven the height-increasing alleles toward fixation and left the
+recessive load on the other side. **CORR-295 explained the 8.2:1 HPO asymmetry by clinic ascertainment; this
+is additive to it, and it is a fact about the biology rather than about where we look.**
+
+⭐⭐ **AND THE SCAN THAT WOULD ACTUALLY TEST R432 EXISTS AS A COHORT AND HAS NEVER BEEN RUN.** `koch2026`:
+the **Pakistan Genome Resource, 173,303 participants, homozygous loss-of-function variants in 6,476 GENES**,
+built explicitly because such variants mimic pharmacological inhibition. **CORR-358 says a het burden test
+cannot contain a recessive gene by construction — this is the cohort where that lifts.**
+⛔ **But F_ROH is an AGGREGATE. It says the recessive load lowers height on average; it names no gene.
+A GENE-LEVEL HOMOZYGOUS-LoF SCAN AGAINST HEIGHT HAS NEVER BEEN PUBLISHED IN ANY COHORT.** It needs no new
+data collection and it is **the only instrument that could return a recessive gene whose loss LENGTHENS.**
+`g_l8_453b` ⚠ A reported F_ROH height effect of −0.05 SD at P=1.6e-48 in the PGR is **NOT in koch2026's
+abstract**, is secondhand, and is recorded `value_unverified`. The height claim rests on joshi2015.
+
+## 📏📏📏📏📏 R454 — **THE MATRIX TERM FINALLY HAS A UNIT AND A MAGNITUDE — AND THE ANSWER IS THAT A
+## GROWTH-PLATE CHONDROCYTE SECRETES AT THE PLASMA-CELL CEILING WHILE MATRIX PER CELL STAYS *CONSTANT*
+## ACROSS A NINE-FOLD RANGE OF GROWTH RATE.**
+
+CORR-361 made matrix synthesis **32% of elongation in a fast plate and 49% in a slow one** — co-equal with
+hypertrophy, larger in a slow plate — and R447 noted the term **has no unit in this field.** Both halves now
+exist and they point in opposite directions.
+
+⭐⭐ **ONE — THE MAGNITUDE, THREE ROUTES, AGREEING TO ~4×.** Bovine chondrocytes in 3D at 30 M cells/mL
+synthesise ~1 mg/mL/day each of GAG and collagen = **~70 pg/cell/day**. Derived in vivo from `hunziker1994` +
+`wilsman1996`: matrix per departing cell 10,246 µm³ × 32/68, 10 cells/column/day, ~33 cells/column →
+**1,473 µm³/cell/day**, which at hyaline dry-solid density 0.15–0.25 g/cm³ is **220–370 pg/cell/day**. Floor:
+an **ADULT ARTICULAR** chondrocyte, from collagen t½ 117 y and aggrecan 19.5–23.5 y, runs at **~0.5**.
+⭐ **SO A GROWTH-PLATE CHONDROCYTE SECRETES AT THE PROFESSIONAL-SECRETOR CEILING — plasma cell 2–220
+pg/cell/day, industrial CHO production line 3–51 — AND ~100–1000× FASTER THAN THE SAME CELL TYPE DOING
+MAINTENANCE.** ⚠ The in-vivo route imports a dry-solid density the growth-plate field's own review says is
+unknown, and is **not independent of** the 32% it prices. `g_l5_454a`
+
+⭐⭐⭐ **TWO — AND THE REGULATION RUNS THE OTHER WAY, MEASURED TWICE.** `hunziker1989`: on acceleration 21→35 d
+**net matrix production per cell REMAINS UNCHANGED**, and on deceleration cells continue at a comparable
+level. `hunziker1994` is stronger because it is pharmacological: across **hypophysectomy, IGF-I, GH and normal
+— growth rates 31 / 92 / 163 / 284 µm/day, A NINE-FOLD RANGE — average matrix volume per cell AT EACH
+DIFFERENTIATION STAGE WAS SIMILAR IN ALL FOUR GROUPS.** What moved was cell height, cell volume, cycle time
+(50 → 6 d) and cells/column/day (1 → 10).
+→ ⭐ **MATRIX VOLUME PER CELL IS A FIXED STRUCTURAL QUANTUM; MATRIX PER UNIT TIME = QUANTUM ÷ TRANSIT TIME.
+The plate raises matrix output by pushing cells through faster and NEVER by making a cell secrete more.**
+Hunziker's own conclusion: cartilage matrix plays a **subordinate role** in regulating growth rate.
+⚠ **THE HONEST READING: a term can be a third to a half of the budget, invariant under every physiological
+input ever tested, and still be raisable by something the organism does not use — that is the definition of
+an unexploited lever AND the definition of a hard structural constraint. NOTHING DISTINGUISHES THE TWO.**
+
+⭐⭐ **THREE — THE EXPORT STEP HAS ≥2-FOLD RESERVE IN HUMANS, WHICH ANSWERS R447 DIRECTLY.** `guillemyn2021`:
+complete human TANGO1 loss is embryonic-lethal with near-total bone loss and a truncation gives short
+stature — **and HETEROZYGOUS PARENTS HAVE ENTIRELY NORMAL TYPE I COLLAGEN SECRETION AND ECM ORGANISATION**
+despite reduced mRNA and protein, which the authors call a **THRESHOLD MODEL.** 50% gene dosage of the
+principal procollagen export receptor is not limiting. Same shape industrially: across real CHO clones the
+dominant determinant is transgene copy number and mRNA, not the secretory pathway, and relieving a
+demonstrated folding bottleneck buys **tens of per cent, not fold changes.**
+
+⚠⚠ **FOUR — AND CORR-361 RE-PRICES AN ARM THIS FILE ALREADY HELD AS UNRESOLVED, WITH ZERO LEDGER PRESENCE.**
+`cinque2015` (Nature): autophagy is induced in growth-plate chondrocytes postnatally and **REGULATES THE
+SECRETION OF TYPE II COLLAGEN**; chondrocyte Atg7 loss gives **ER storage of procollagen II** and a defective
+Col2 network; and the inducer is **FGF18 → FGFR4 → JNK → VPS34–beclin-1**, with Fgf18⁺/⁻ and Fgfr4⁻/⁻ failing
+to induce it and showing **decreased Col2 in the growth plate — rescued in vivo by pharmacological activation
+of autophagy.** R219 already worked this and concluded **erdafitinib removes 5–20% of FGFR4** and that
+FGFR4's net direction in human cartilage is **UNRESOLVED**.
+→ **What changes is the PRICE. Before CORR-361 this looked like a side effect on a minor term; it is now an
+arm acting on a third to a half of the elongation budget. `FGFR4` and `autophagy` return ZERO in this ledger.
+NOT a new alarm and NOT settled either way — a re-pricing of a known open arm.**
+
+⛔ **FIVE — AND A FREE SUBTRACTION FELL OUT, IN THE RIGHT TISSUE. ARTIFICIAL LIGHT AT NIGHT.** `chen2023`
+(Cell Death Differ, abstract verbatim): artificial LAN **impairs developmental growth-plate cartilage ECM
+formation and causes ER dilation, compromising bone formation**, by downregulating **BMAL1** — which is the
+**DIRECT transcriptional activator of P4ha1** in chondrocytes, orchestrating collagen prolyl hydroxylation
+**and secretion**. Restoring BMAL1/P4HA1 rescues it. Authors: **LAN is a significant risk factor in bone
+growth and development.**
+⭐ **It lands exactly on R444's finding that the chondrocyte concentrates the collagen FOLDING enzymes —
+P4HA1 1.82×, P4HB 5.55×, PPIB 5.45×, CRTAP 6.25× — and NOT the COPII coat. The step BMAL1 controls is the
+step the tissue invests in.** ⚠ Mouse, developmental, no human equivalent. **Darkness at night is free.**
+
+⚠ **SIX — THE OPEN POSSIBILITY THAT WOULD COLLAPSE TWO TERMS INTO ONE.** In CHO fed-batch, specific
+productivity rises **LINEARLY with cell volume** (~2× across a 3× volume rise), larger cells more efficient
+per unit oxygen. **If that holds in a chondrocyte, enlarging the terminal hypertrophic cell IS raising its
+matrix output, and `wilsman1996`'s 59% and 32% are not independent terms.** The opposite is equally available
+— terminal hypertrophy is classically swelling and dilution, in which case synthesis per cell FALLS as the
+cell enlarges. **Never measured in any species.** `g_l5_454b`
+
+## 📐📐📐 R454 — **THE DIRECTION OF HYPERTROPHIC EXPANSION IS A FIBRE-ANGLE PROBLEM, THE REQUIRED
+## ANISOTROPY IS ONLY ~2.4:1, AND THE ANGLE HAS NEVER BEEN MEASURED IN A GROWTH PLATE IN ANY SPECIES**
+
+⭐ **ONE — THE DRIVE IS ISOTROPIC, AND THAT IS MEASURED IN CARTILAGE.** `bush2008`: osmotically inactive
+fraction 39.5% PZ vs 47.0% HZ with **IDENTICAL** osmotic sensitivity, and **the dimensions of hypotonic
+swelling DIFFERED from the preferential lengthening seen in vivo.** A freely swelling chondrocyte gets
+bigger, not taller. **THE ANISOTROPY IS IMPOSED FROM OUTSIDE THE CELL.**
+
+⭐ **TWO — AND THE AMOUNT REQUIRED IS SMALL.** From `hunziker1987`'s own ratios — height ×4, volume ×10 —
+the diameter ratio is **forced** to √(10/4) = **1.58**, against **2.15** for isotropic expansion. Linear
+anisotropy needed = 3.91 : 1.58 = **2.47 : 1**. A printed hydrogel with a few per cent of aligned cellulose
+fibrils already achieves **4:1**. **This is not a large anisotropy to engineer.**
+
+⭐⭐ **THREE — EVERY OTHER SYSTEM SOLVES IT WITH A FIBRE ANGLE, AND THE ANGLE IS CALCULABLE.** For a
+constant-volume cylinder wound with crossed helical inextensible fibres at angle θ to the long axis, enclosed
+volume is maximal at tan²θ = 2, i.e. **θ = 54.74°**. **Below it, pressurising SHORTENS AND FATTENS; above it,
+pressurising LENGTHENS AND NARROWS.** The same angle falls out of netting analysis from the exact **2:1
+hoop-to-axial stress ratio** of a thin-walled vessel, and McKibben pneumatic actuators reverse the sign of
+their axial work there. **The pressure is a scalar. THE WALL IS THE VECTOR.**
+⭐ The animal instance is the **notochord**: as sheath fibre density rises, internal pressure rises 2–3× and
+flexural stiffness ~10×, and the structure elongates **because the sheath resists RADIAL expansion while
+permitting AXIAL.** And the crossover already exists — `voigt2025` shows **inppl1a controls both notochord
+vacuolated-cell expansion AND hypertrophic chondrocyte enlargement in the same fish.**
+
+⛔⛔ **FOUR — THE GROWTH PLATE HAS BOTH FIBRE SYSTEMS, DESCRIBED IN 1982, AND NOBODY HAS MEASURED AN ANGLE.**
+Polarised light identifies **TRANSPHYSEAL fibres** running from metaphyseal calcified spicules across the
+plate into epiphyseal cartilage (an axial tether) and **abundant CIRCUMFERENTIAL collagen in the
+perichondrial groove** (a hoop). **THE FIBRE ANGLE THE ENTIRE ARGUMENT TURNS ON HAS NEVER BEEN MEASURED IN A
+GROWTH PLATE IN ANY SPECIES** — no SAXS, no quantitative polarised light, no SHG. `g_l5_454c`
+
+⭐ **FIVE — AND CARTILAGE HAS PLANT BIOLOGY'S PARADOX, WHICH POINTS AT *YIELD* NOT STIFFNESS.** `prein2016`
+is the only directional mechanical measurement of growth-plate matrix and it runs the wrong way —
+pericellular/territorial matrix is **SOFTER** than interterritorial (1.6 vs 3.6 kPa). Plants had the same
+paradox and dissolved it: **rsw4 and rsw7 roots lose growth anisotropy while microtubules and microfibrils
+are neither depleted nor disoriented** — oriented fibres are **INSUFFICIENT** — and **expansin lowers the
+YIELD THRESHOLD** without changing stiffness or hydrolysing anything. Under Lockhart, rate = φ(P − Y);
+stiffness is φ, and **Y is what a protease changes.** R448 established **animals have no expansin and every
+animal matrix-loosening tool is a protease** — so cartilage's directional yield must be **PROTEOLYTIC**, and
+MMP13/MMP9 double inactivation does expand the hypertrophic zone.
+
+⭐ **SIX — TWO FALSIFIABLE EXPERIMENTS, ONE OF THEM FREE.** Confinement predicts that **releasing the hoop
+makes cells WIDEN instead of HEIGHTEN at unchanged volume** — unilateral circumferential division of the
+perichondrial ring, contralateral sham, scoring terminal cell **HEIGHT and WIDTH SEPARATELY.** And the free
+one: archived histology already exists for CNP analogue, GH, IGF-I, FGFR3-inhibitor and loading studies, and
+⛔ **NO GROWTH-PROMOTING AGENT IN THIS FILE HAS EVER BEEN SCORED ON CELL HEIGHT VERSUS CELL WIDTH.**
+⭐ Which matters because R440 already showed the standard readout is blind to it: in human adolescent
+vertebral physes, compression cut hypertrophic cell **HEIGHT** 12.8 → 8.5 µm at **P<0.0005** with **WIDTH
+UNCHANGED** and **ZONE HEIGHT NON-SIGNIFICANT (P=0.21) on the same sections.**
+
+## 🦴📉 R455 — **THE AXIAL PLATE IS A *CELL-NUMBER* ORGAN, ITS TISSUE HAS NEVER BEEN SAMPLED IN A GROWING
+## HUMAN, AND A SINGLE-VERTEBRA RADIOGRAPHIC ENDPOINT IS UNUSABLE**
+
+⭐⭐ **ONE — THE 5.6× GAP DECOMPOSES, AND THE ARITHMETIC IS ON A PUBLISHED TABLE.** Growth rate ÷ terminal
+hypertrophic cell height = cells delivered per column per day. On `stokes2007`'s control rows: **rat caudal
+vertebra ≈1.6 vs proximal tibia ≈8.1; calf ≈2.4 vs ≈9.3** — while terminal cell height is nearly matched in
+rat (≈24 vs 27 µm). **On a log decomposition roughly 80–95% of the axial–appendicular gap is CELL PRODUCTION
+and only 5–20% is terminal cell SIZE.** ⚠ The cell heights are secondhand text-extractor output,
+`value_unverified`; the rates 39 vs 218 and 35 vs 192 µm/day are held in R440.
+⭐ `weber2025` reaches the same conclusion independently in mouse and jerboa and **states it**: cell number is
+a common driver of limb and vertebral proportion, while **chondrocyte hypertrophy — a major driver in all
+mammal limbs — is LIMITED in vertebrae**, with hypertrophic cells the same size in mouse vertebrae elongating
+at different rates.
+→ ⭐ **ANY AGENT WHOSE MECHANISM IS TERMINAL CHONDROCYTE ENLARGEMENT IS AIMED AT THE TERM THE VERTEBRAL PLATE
+DOES NOT USE.** The CNP axis is the partial exception — **Npr3 loss elongates vertebrae specifically THROUGH
+an increase in hypertrophic cell size.**
+
+⚠ **TWO — AND A CANDIDATE REASON, INFERRED NOT MEASURED.** The vertebral body has **no secondary ossification
+centre**, and `xie2020` showed the SOC exists to shield hypertrophic chondrocytes — the least stiff cells in
+the plate at ~25% of proliferative stiffness — with SOC-bearing bones tolerating ~25× greater load. **A plate
+under the highest sustained axial compression in the body, with no SOC, building its length out of small
+cells is at least coherent. `xie2020` contains no vertebral arm.**
+
+⛔⛔ **THREE — CHECKED NEGATIVE, BY DIRECT QUERY: NO PAEDIATRIC OR ADOLESCENT HUMAN VERTEBRAL GROWTH-PLATE
+OMICS DATASET EXISTS.** A GEO query run three ways on 2026-08-27 returns none — everything human is **fetal**,
+**adult degenerative endplate**, or **engineered**. ⭐ **The only vertebral growth-cartilage RNA-seq anywhere
+is GSE299515 — mouse and jerboa caudal vertebrae 1 and 6, 16 samples, released June 2025.** This
+independently reproduces R425's conclusion by query rather than by reading an inventory annotation.
+**The compartment holding the residual centimetres is the one with no tissue.** `g_l1_455a`
+
+⛔⛔ **FOUR — AND A PER-VERTEBRA ENDPOINT IS ARITHMETICALLY UNUSABLE.** Direct paediatric measurement gives
+**0.83–0.86 mm per vertebra per year**; interobserver limits of agreement for vertebral body height on PA
+radiographs are **±2.4 mm** for a single rater. **THE ERROR ON ONE VERTEBRAL BODY IS ~3× ONE YEAR OF THAT
+VERTEBRA'S GROWTH.** Anything real must be read as a summed T1–S1 length — and **no longitudinal human series
+separates vertebral BODY height from DISC height**, which matters because disc height is water and reverses
+diurnally (R425's hygiene item). ⚠ Both figures secondhand, `value_unverified`.
+
+⚠ **FIVE — ONE AXIAL-SPECIFIC PHARMACOLOGY AND ONE CORRECTION TO THIS LEDGER.** `li2018leptin` reports
+**leptin PROMOTING tibial epiphyseal-plate chondrocyte proliferation and INHIBITING vertebral**, through STAT
+in tibial and **ERK in vertebral** cells — the cleanest axial-vs-appendicular split found; in vitro, no length
+endpoint, `value_unverified`.
+⛔ **AND THE CORRECTION: CLAUDE.md's dabogratinib entry pairs "the ONLY agent shown to lengthen bone in a
+WILD-TYPE animal" with "the only one that lengthens LUMBAR VERTEBRAE (L4–L6)". THOSE ARE DIFFERENT ARMS.**
+The **L4–L6 result is the Fgfr3-mutant rescue**; the **wild-type arm's axial endpoint is TAIL LENGTH**, which
+rose significantly at 12 and 14 mg/kg. Tail is caudal vertebrae, so an axial signal in a normal animal
+survives — **but it is not a lumbar measurement, and the two must not be read as one.**
+
+## ⚡🦴 R456 — **THE PHYSICAL-MODALITY SWEEP RUN TO THE END: *FIVE* MODALITIES NOW DIE AT THE PROXY-TO-LENGTH
+## STEP, VIBRATION TURNS OUT TO *HAVE* A LENGTH ENDPOINT AND IT IS NULL — AND THE ONE SURVIVOR'S IN-VIVO ARM
+## HAS BEEN IN THIS BIBLIOGRAPHY SINCE 2026-08-05 FILED UNDER A 24-HOUR MARKER RESULT.**
+
+⛔ **ONE — THE PATTERN, NOW FIVE DEEP.** **Capacitive coupling**: `brighton1983` dose-response peaking at
+5 V p-p on 48 h label displacement → `armstrong1986`, **same group, same modality, same species, 6 weeks:
+NO SIGNIFICANT DIFFERENCE IN TIBIAL LENGTH.** **LIPUS**: `rickert2021` +35% on 18-day calcein growth →
+`spadaro1998`, **23 years earlier in the same journal at the standard clinical dose: ≤2%, null.**
+**LLLT 830 nm**: cartilage thickness and chondrocyte number up, **length explicitly unchanged**; 670 nm null.
+**Laser acupuncture**: growth rate +61%, **length never measured.**
+⭐ **AND WHOLE-BODY VIBRATION IS A CORRECTION TO THIS FILE.** R425 and R426 wrote that vibration has **no
+length endpoint in any species**. **IT HAS ONE.** Growing rats, **50 Hz, 0.5 g, 15 min/day, 5 d/wk for 5 or
+10 weeks, tibia length in mm — NULL in every arm.** That **closes** the vibration question rather than leaving
+it open. ⚠ Secondhand, `value_unverified` pending the primary.
+
+⭐⭐⭐ **TWO — THE SURVIVOR THIS FILE ALREADY OWNED AND FILED UNDER THE WRONG ARM. CORR-309/CORR-343 AGAIN.**
+`ramesh2022`'s **TITLE** reads *"…promotes chondrogenesis in human growth plate **AND LONGITUDINAL BONE GROWTH
+IN RABBITS**"*, and its one_line_finding here since 2026-08-05 recorded **only the 24-hour explant marker
+arm.** Read in full it has **three** arms: cultured human growth-plate cartilage (n=5), SOX9 and COL2A1 up at
+24 h · six-week-old rabbits, four weekly sessions to the **distal femur** at two energies (n=4 each),
+proliferative chondrocytes and column density up at both · and **PROXIMAL TIBIAE OF 22-WEEK-OLD RABBITS
+(n=12) ASYMMETRICALLY EXPOSED, CONTRALATERAL SIDE UNTREATED, FINAL BONE LENGTH MEASURED — INCREASED TIBIAL
+LENGTH FROM THE FOURTH HIGH-ENERGY SESSION AND UNTIL SIX WEEKS AFTER TREATMENT.**
+⭐ **And the ex vivo companion is the control that makes it interpretable: `ramesh2020` applied rSWT to
+CULTURED FETAL RAT METATARSALS — no blood supply, no circulating factors — and got more growth. THE EFFECT IS
+LOCAL TO THE PLATE.** `jhan2025` is an independent second laboratory (focused ESWT, 4-week-old rats, sham +
+untreated contralateral) reporting a longer treated tibia, with within-group change across timepoints **not**
+significant.
+⛔ **AGAINST: NO MILLIMETRE OR PER CENT VALUE IN THE ABSTRACT, the authors call it preliminary, the dose in
+bar/impulses is not stated, and one secondary source puts the magnitude near 1% of final length** — inside the
+range where one laboratory's caliper technique matters. `g_l6mech_456a`
+✓ **What is unmatched is deliverability: radial ESWT devices are commercially sold, exposure is minutes, and
+there is direct paediatric safety data** — 22 growing athletes at 0.1 mJ/mm² with no adverse events, and a
+documented case where focused ESWT over a calcaneal epiphysis **did not cause early physeal closure.**
+
+⛔ **THREE — AND THE DEVICE PROBLEM ON THE OTHER SURVIVOR IS WORSE THAN R428/R430 RECORDED.** Of the three
+human knee-loading devices, the **2013 voice-coil loader spans 1–20 Hz** and covers the whole effective band,
+while the **2016 mechatronic device is specified 1–5 Hz — BELOW the 15 Hz femoral optimum the same group's own
+mouse data identify.** The later, more polished device **cannot reach the femoral optimum.** `value_unverified`.
+
+⭐⭐ **FOUR — AND THE MECHANISM IS DELIVERABLE BY A CUFF THAT NOBODY HAS PUT A CALIPER ON.** Knee loading's own
+authors attribute the effect to **intramedullary pressure and interstitial fluid flow, not strain**. `hu2013`
+built exactly that: a **non-invasive inflatable cuff around the tibia**, swept **0.5–10 Hz**, with
+intramedullary pressure peaking near **2 Hz at ~7× baseline WITH MINIMAL BONE STRAIN.** It has been used
+against disuse bone loss. **NO BONE LENGTH HAS EVER BEEN MEASURED UNDER IT IN ANY SPECIES** — and a pressure
+cuff is trivially human-deliverable where a voice-coil actuator clamped across a joint is not.
+⚠ **R452's own arithmetic bounds what it can be doing: at 2 Hz the poroelastic penetration depth into the
+plate is ~18–26 µm, so whatever a 2 Hz cuff does, IT IS NOT BULK VENTILATION of a millimetre-thick plate.**
+
+## 🧂⛔ R457 — **THE SULFATE ARM AUDITED ON THE ANALYTE: R321's OWN COMPOUND IS CONTRADICTED BY A HUMAN STUDY
+## THIS FILE NEVER HELD, THE SAME EXPERIMENT SUPPLIES A NON-LAXATIVE DONOR THAT *DID* WORK, AND LITHIUM GETS
+## A SECOND INDEPENDENT SKELETAL MECHANISM ON THIS EXACT ARM**
+
+⛔⛔ **ONE — THE PROMOTED AGENT HAS A PUBLISHED HUMAN CONTRADICTION.** `hoffer2001` (Metabolism), abstract
+verbatim: **"Unlike glucosamine sulfate, ORAL SODIUM SULFATE DID NOT SIGNIFICANTLY INCREASE THE SERUM SULFATE
+CONCENTRATION."** The sodium sulfate dose is **not stated in the abstract**. `morris1983`'s positive used
+**9 g of the decahydrate = 27.9 mmol**, against ~1.6 mmol delivered by 1.0 g of glucosamine sulfate — about
+**17× more** — so the likeliest reconciliation is a **dose-response rather than a conflict**, with Hoffer
+having sulfate-matched to the glucosamine arm. ⚠ **THAT IS AN INFERENCE. Until the full text settles it,
+R321's compound rests on one study with a published human contradiction against it.** `g_l5_457a`
+
+⭐⭐ **TWO — AND THE SAME EXPERIMENT SUPPLIES A BETTER-TOLERATED DONOR THAT WORKED.** Serum inorganic sulfate
+in 7 normal subjects **331 ± 21 → 375 ± 17 µmol/L three hours after 1.0 g ORAL GLUCOSAMINE SULFATE, P<0.05
+(+13.3%)** — an ordinary, cheap, **NON-LAXATIVE** supplement, against 9 g sodium sulfate which is an osmotic
+laxative whose divided-dose requirement exists precisely because a single dose causes severe diarrhoea.
+**R296 listed glucosamine among 26 never-checked agents and never checked it.**
+⭐ **And the transfer step is in the same paper: synovial fluid and serum sulfate are closely similar in 15
+patients undergoing knee aspiration, r = 0.99, slope 0.97, P<0.0001. THE EXTRACELLULAR FLUID BATHING
+CARTILAGE SITS AT SERUM CONCENTRATION.**
+
+⛔⛔ **THREE — THE LARGEST HUMAN MOVEMENT OF THIS POOL IS STILL A SUBTRACTION, AND IT IS SUSTAINED.**
+`hoffman1990`: **acetaminophen 650 mg q.i.d. for FOUR DAYS reduced the 24-hour average serum inorganic
+sulfate 360 → 253 µmol/L, −29.7%**, with renal sulfate excretion **−51%** and renal clearance **−33%**.
+**The best single-dose ELEVATION ever measured is +25%. ORDINARY PARACETAMOL USE IS BIGGER AND RUNS THE OTHER
+WAY.** And `hoffer2001` closes it in the same subjects — **1 g acetaminophen turned glucosamine sulfate's
++13% into −11%.** The chain reaches tissue in a NORMAL animal: chronic paracetamol in rats lowered serum
+sulfate and lowered patellar cartilage GAG content, **recovering as sulfate returned toward normal.**
+⛔ **GOVERNING LIMIT: the entire concentration-response literature tests DOWNWARD from physiological, because
+its authors were asking whether analgesics HARM cartilage. NOBODY HAS EVER RAISED EXTRACELLULAR SULFATE ABOVE
+NORMAL AND MEASURED CARTILAGE SULFATION IN ANY SPECIES.** `g_l5_457b`
+
+⚠ **FOUR — A MEASUREMENT-DISCIPLINE FACT THAT BOUNDS THE WHOLE ARM.** Serum inorganic sulfate has a circadian
+rhythm — **lowest at 11:00, peak at 19:00, min-to-max 25.8%** — **THE SAME SIZE AS THE ENTIRE REPORTED EFFECT
+OF A 9 g SODIUM SULFATE DOSE.** Any single measurement of this analyte must be time-standardised.
+
+⛔⛔ **FIVE — AND LITHIUM ACQUIRES A SECOND, INDEPENDENT, *SKELETAL* MECHANISM ON THIS ARM.** R356
+contraindicated lithium on canonical-Wnt grounds, grade E. `frederick2008` (PNAS), abstract verbatim:
+identifies a **Golgi-resident PAP 3-phosphatase (gPAPP = IMPAD1/BPNT2)** that clears the nucleotide product of
+every sulfotransferase reaction, and demonstrates its activity is **POTENTLY INHIBITED BY LITHIUM IN VITRO.**
+Inactivating gPAPP in mice gives neonatal lethality and **DWARFISM WITH ABERRANT CARTILAGE MORPHOLOGY, with
+UNDERSULFATED CHONDROITIN.** ⚠ In-vitro potency is not inhibition at therapeutic lithium levels in cartilage
+in vivo — but it is the **same drug, a second mechanism, and this time with a skeletal endpoint.**
+
+⭐ **SIX — AND THE THIOL ROUTE IS A CONDITIONAL, STATED BY THE PEOPLE WHO PRODUCED ITS POSITIVES.** R321
+called NAC an intravenous-only demonstration; **corrected** — `monti2015` gave it transplacentally and
+`paganini2021` gave it **subcutaneously and POSTNATALLY** to dtd mice, both raising cartilage PG sulfation
+with improved skeletal phenotype by DEXA and µCT. ⛔ But `pecora2006` injected labelled cysteine into
+**WILD-TYPE as well as mutant** mice and concludes verbatim that cysteine's contribution to cartilage
+proteoglycan sulfation in vivo is **MINIMAL under physiological conditions even when extracellular sulfate is
+low**, becoming significant only **by increasing plasma thiol concentration.** Every skeletal result is a
+rescue in a transport-deficient animal, and the drug is rapidly cleared.
+
+## 💊🔍 R457 — **THE INVERSE DRUG SEARCH: THE REGULATORY RECORD IS ONE-SIDED *BY CONSTRUCTION*, AND THE ONE
+## CLASS THAT VISIBLY CHANGES A NORMAL PLATE IS CHARGE WITHOUT DISCHARGE WITH THE CALIPER ALREADY USED**
+
+R437 argued this file's search has been shaped by *"query X AND bone length"*, which can only find agents
+whose developers already wanted what we want. Run inversely — start from what HAPPENED — four results.
+
+⛔⛔ **ONE — THE STRUCTURAL NEGATIVE IS COMPLETE, AND IT FINISHES CORR-350.** A full-text query of the openFDA
+label corpus for *increased femur length*, *increased bone length*, *increased long bone length*, *longer
+femur* and *increased tibia length* **RETURNS ZERO LABELS FOR EVERY PHRASING.** Of **294 labels mentioning
+femur length in §13, ALL are the same proton-pump-inhibitor sentence reporting a DECREASE that tracks a 14%
+body-weight fall.** The only labels carrying growth-acceleration language at all are **somatropin,
+tesamorelin and erdafitinib.** → **A JUVENILE TOXICITY PACKAGE IS AN ADVERSE-FINDINGS DOCUMENT AND BEING
+TALLER IS NOT AN ADVERSE FINDING. Do not spend another round expecting a positive from Drugs@FDA or the
+EPARs.** ⚠ Secondhand agent query, `value_unverified`.
+
+⛔ **TWO — AND THE ONE CLASS THAT DOES CHANGE A NORMAL PLATE IS FAILURE MODE #1 WITH THE CALIPER ALREADY
+USED.** **Soluble guanylate cyclase stimulators — RIOCIGUAT and VERICIGUAT, both approved, plus two
+unapproved compounds, two independent laboratories — produce distinct THICKENING OF THE HYPERTROPHIC ZONE of
+the femoral and tibial physis in NORMAL growing rats**, with hyperostosis and metaphyseal remodelling, fully
+reversible. **AND THE RIOCIGUAT REGULATORY REVIEW STATES THERE WERE NO CLEAR EFFECTS ON BONE LENGTH.** An
+academic neonatal-rat study run specifically to address that concern also measured long-bone growth and was
+null. **Ninth instance of charge without discharge, and this one had the length endpoint.**
+⚠ **UNRESOLVED TENSION WITH R298**, which killed the sGC shelf because GUCY1A1/GUCY1B1 are absent from the
+human plate while PRKG1/PRKG2 are present. These compounds demonstrably reach and change a **rodent** plate.
+Either the rat plate carries sGC the human plate does not, or the effect is indirect — **and the LENGTH
+endpoint is null either way, so it changes no decision.**
+
+⭐ **THREE — ONE APPROVED cAMP-RAISING DRUG PRODUCED AN ACCELERATED-OSSIFICATION FINDING IN A 39-WEEK JUVENILE
+DOG STUDY AND NOBODY MEASURED A BONE.** **SELEXIPAG** (prostacyclin IP agonist): by 39 weeks, **2 of 3
+low-dose and ALL mid- and high-dose males had increased ossification of the femoral shaft**, with **delayed
+sexual maturation in both sexes** and physes still open. The review's "no treatment-related effects on growth"
+refers to **body size**. **CORR-340 in its purest form** — nine months of dosing in a large animal with open
+physes, and the missing measurement is a pair of calipers. ⚠ High-dose female body weight fell 20%, so any
+re-measurement must be read against weight per `campion2022tofacitinib`. `g_l12_457c`
+
+⭐⭐ **FOUR — THE OESTROGEN MECHANISM HAS A MAGNITUDE IN NORMAL ANIMALS AT POPULATION SCALE, FROM VETERINARY
+DATA.** **306 large-breed bitches, prospective: those neutered BEFORE puberty gained ~2.0 cm MORE height
+between 6 and 17 months, P<0.001.** Independently, **783 feline pelvic radiographs show significantly delayed
+physeal closure in neutered vs entire male cats** at the greater trochanter, distal femur and tibial
+tuberosity. **And the paired cost arrives from the same literature: delayed closure + high body weight +
+neutering gives a large excess of SCFE in Maine Coon cats** — the same failure mode reported for erdafitinib,
+GH and vosoritide in children, reached independently by veterinary orthopaedics. All `value_unverified`.
+⛔ **AND THE TEXTBOOK CLAIM IN THE OTHER DIRECTION FAILS: in an 80-steer serial-harvest trial the standard
+trenbolone + oestradiol implant did NOT increase hip height or any frame measure, and body length TENDED TO
+BE GREATER IN THE NON-IMPLANTED CONTROLS.**
+
+⛔ **FIVE — WHAT DID NOT SURVIVE, SO IT IS NOT RE-PROPOSED.** **Cyproheptadine** raised height velocity
+strikingly in GH-insensitivity **with BMI-SDS unchanged**, but a **double-blind RCT in mildly undernourished
+near-normal children found NO height-velocity difference while BMI rose** — a deficiency agent. **Two
+randomised azithromycin trials measured linear growth and both were null.** An RCT of stimulant drug holidays
+vs caloric supplementation **raised weight velocity and none raised height velocity.** And **PDE4 inhibition,
+JAK inhibition, MC4R agonism and GnRH agonism have NO bone-length, growth-plate or physeal endpoint anywhere
+in their regulatory packages** — unmeasured, not negative.
