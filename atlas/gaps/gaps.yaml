@@ -19753,7 +19753,18 @@ gaps:
 - gap_id: g_l12_477a
   type: search_established
   layer: L12
-  status: open
+  status: 'ANSWERED 2026-08-27 (R478) - schmidt2026 obtained in full as a green open-access accepted manuscript from
+    the LSHTM repository, and R477''s description of the paper was WRONG: the tetracycline numbers ARE in Table 2 of
+    the main text and only the ABSTRACT omits them. MEN, 17,527 oral tetracycline users (at least 90 tablets within any
+    six-month period, isotretinoin-naive), mean adult height 180.7 cm (SD 6.63) against a 315,370-man no-acne reference
+    of 180.2: ADJUSTED DIFFERENCE PLUS 0.43 cm (95% CI 0.33 to 0.54) - THE TALLEST EXPOSURE GROUP IN THE STUDY. Stunting
+    1.67% versus 2.14%, adjusted prevalence ratio 0.79 (0.70 to 0.89). WOMEN, 587 users, plus 0.33 (-0.17 to 0.83). THERE
+    IS NO SIGNAL OF TETRACYCLINE-ASSOCIATED HEIGHT REDUCTION. Not proof of safety - confounding by indication and healthy-user
+    effects run in the favourable direction and the authors invoke them - but the internal control decomposes it: TOPICAL
+    acne treatment, n=18,702, is FLAT at plus 0.01 (-0.09 to 0.11), so a pure health-seeking effect does not explain
+    the systemic-arm positives. The concern is no longer open in the direction of harm. WHAT REMAINS: the second half
+    of this gap, which is free - ask the subject about any long-term acne antibiotic, its dose and its duration. And
+    the supplement (eTables 1-7) was not retrieved.'
   question: What is the adult-height estimate for the oral tetracycline arm of schmidt2026, and is the subject taking
     or has he taken a long-term acne tetracycline?
   why_it_matters: Sub-antimicrobial doxycycline is the ONLY metalloproteinase inhibitor in routine long-term human use
@@ -19800,3 +19811,63 @@ gaps:
     vehicle arm, reading femur and tibia length, the collagen type X-positive zone width and TERMINAL CELL HEIGHT separately
     from cell width - not proliferation, which the in vitro null already excludes, and not zone height alone, which R463
     and R471 show is a weak readout.
+- gap_id: g_l8_478a
+  type: quantitative_gap
+  layer: L8
+  status: open
+  question: How much of the isotretinoin initiation-age gradient in schmidt2026 is the drug closing an open plate, and
+    how much is confounding by pubertal tempo - and can the same registry give the gradient for a drug that is NOT plate-closing?
+  why_it_matters: The within-exposure gradient - minus 1.81 cm at age 13, minus 0.95 at 14, plus 0.51 at 15 or later,
+    a 2.32 cm swing with every confidence interval excluding zero - is one of the largest human attained-adult-height
+    effects for any drug in this atlas, against a whole pharmacological stack worth 1 to 3 cm. It is also, read the other
+    way, a direct human measurement of how much remaining growth is at risk at each age in a male, and therefore a quantitative
+    statement of the window this entire project is trying to hold open. Both readings depend on the same number and it
+    deserves to be understood rather than quoted.
+  what_is_known: 'schmidt2026 Table 2, men, adjusted for birth cohort year and education level, against 315,370 men with
+    no acne. Isotretinoin by age at first prescription: before 13 years minus 1.70 (-3.15 to -0.25, n=84); at 13 minus
+    1.81 (-2.43 to -1.19, n=464); at 14 minus 0.95 (-1.29 to -0.60, n=1,484); at 15 or later plus 0.51 (0.40 to 0.63,
+    n=14,707). The comparison across strata is WITHIN one exposure, so confounding by indication and by health-seeking
+    behaviour is controlled by design. R457''s FAERS analysis independently returns isotretinoin at a reporting odds
+    ratio of 187.6 (146.5 to 240.2, 91 co-reports) for EPIPHYSES PREMATURE FUSION. Retinoid excess is the classical cause
+    of premature epiphyseal closure and this atlas already contraindicates the class on mechanism.'
+  what_is_missing: A negative control drug. The gradient is compared against a NO-ACNE reference, so each stratum carries
+    both the drug effect and whatever distinguishes a boy who develops severe acne at 13 from one who develops it at
+    16 - and severe early acne marks early androgen exposure, which independently predicts an earlier and shorter growth
+    window. The decisive analysis is the SAME age-at-initiation stratification applied to the ORAL TETRACYCLINE arm,
+    which shares the indication and the timing but has no plate-closing mechanism. That stratification is not in Table
+    2 and may be in the unretrieved supplement. Cumulative-dose strata are also referenced and not retrieved.
+  discriminating_experiment: Obtain the schmidt2026 supplement (eTables 1-7) and read whether age-at-initiation and cumulative-dose
+    strata exist for the tetracycline comparator. If the tetracycline arm shows NO age gradient while the isotretinoin
+    arm shows 2.3 cm, the effect is the drug. If tetracyclines show the same gradient, it is pubertal tempo. This is
+    a document request against an existing analysis, not a new study.
+- gap_id: g_l4_478b
+  type: species_gap
+  layer: L4
+  status: open
+  question: Does ADAM12-S exist as a translated protein in any non-primate mammal, and if not, which isoform does the
+    R477 human eQTL height signal actually measure?
+  why_it_matters: 'The whole ADAM12 proposal in this atlas rests on one mouse transgenic secreting the HUMAN short isoform,
+    and R478 finds neither mouse nor rat has an annotated short ADAM12 transcript while cattle demonstrably cannot splice
+    one. If ADAM12-S is a primate innovation then rodent physiology says nothing about what having more of it does, the
+    human GWAS becomes the only relevant instrument, and there is no species in which its loss can be tested. It also
+    decides which molecule an intervention would have to be: the secreted isoform, which has no rodent model and no route
+    to endogenous elevation, or the membrane form ADAM12-L/m, which is what the growth plate expresses in both species
+    and which cleaves IGFBP-5 pericellularly.'
+  what_is_known: 'NCBI RefSeq queried directly 2026-08-27: HUMAN ten curated ADAM12 mRNAs of which three are about 3.3
+    kb (NM_021641 the annotated ADAM12-S, NM_001288974, NM_001288975) against long forms near 7.95 kb; MOUSE exactly
+    one, NM_007400 at 7708 nt; RAT exactly one, NM_001427293 at 7631 nt. A bovine gene study reports no canonical 3-prime
+    splice acceptor upstream of the putative short-form exon. gilpin1998 found the short transcript abundant in human
+    term placenta and tumour lines while the long form is what normal adult skeletal, cardiac and smooth muscle carry.
+    Every isoform-resolved inducer raises L and not S, the two isoforms having different 3-prime UTRs. R477 established
+    that ADAM12-raising alleles are associated with longer legs at P=8.3e-08 using GTEx CULTURED FIBROBLAST eQTLs.'
+  what_is_missing: Absence of a curated RefSeq transcript is not proof of absence of the protein - it is an annotation
+    state, and short isoforms of large genes are systematically under-annotated in non-human species. Nobody has looked
+    for a secreted ADAM12 species in rodent serum by mass spectrometry, and no rodent RNA-seq has been examined for the
+    corresponding junction. Separately, GTEx quantifies at the GENE level, so the R477 direction is a TOTAL-ADAM12 direction
+    and is presumably dominated by the long form in fibroblasts - which would mean the human genetic support this atlas
+    holds is support for ADAM12-L, not ADAM12-S.
+  discriminating_experiment: Two cheap steps, both computational. First, take the human ADAM12-S-specific terminal exon
+    and search mouse and rat genomic sequence for a syntenic splice acceptor, then interrogate public rodent RNA-seq
+    junction data for reads spanning it - this decides annotation versus absence. Second, re-run the R477 eQTL alignment
+    against ISOFORM-level or transcript-level quantification rather than gene-level, so the human direction can be attributed
+    to L or to S.

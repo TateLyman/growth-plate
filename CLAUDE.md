@@ -14450,3 +14450,132 @@ analyte, so circulating ADAM12 is measurable in humans today — and the human d
 plasma ADAM12 at 36 weeks REDUCED in pregnancies delivering small-for-gestational-age infants in two
 independent cohorts** (`andres2022adam12`). ⚠ Cost on the gain arm: `jorgensen2007adam12` — transgenic
 ADAM12 overexpression **suppresses muscle regeneration and aggravates dystrophy in AGED mdx mice.**
+
+## 📄📄📄📄 R478 — **schmidt2026 CRACKED (green OA, LSHTM repository) AND R477's DESCRIPTION OF IT WAS WRONG.
+## THE TETRACYCLINE WATCH-ITEM IS DEFUSED — AND THE THING THAT MATTERS IS IN THE SAME TABLE: A WITHIN-EXPOSURE
+## ISOTRETINOIN INITIATION-AGE GRADIENT SWINGING 2.32 cm OF ADULT HEIGHT, DISMISSED BY ITS AUTHORS AGAINST A
+## FIVE-CENTIMETRE RELEVANCE THRESHOLD.**
+
+⭐ **THE ROUTE, BECAUSE IT GENERALISES.** Europe PMC says `isOpenAccess N, inPMC N` and PMC13191450 is embargoed
+to **2027-05-20**. **Unpaywall → OpenAlex → LSHTM RESEARCH ONLINE served the accepted manuscript free** (an
+LSHTM author is on the paper). **A JAMA-gated paper with an embargoed PMC deposit can still be in a co-author's
+institutional repository — check every author's institution before recording a document as blocked.**
+⛔ **AND R477 SAID IT "reports detailed numbers only for the isotretinoin arm, not even disclosing the number of
+tetracycline users." FALSE. THE TETRACYCLINE NUMBERS ARE IN TABLE 2 OF THE MAIN TEXT; ONLY THE ABSTRACT OMITS
+THEM.** Danish conscription records × nationwide prescription registries, **379,196 individuals, ADULT HEIGHT
+MEASURED AT A FIXED AGE (median 19) BY STANDARDISED EXAMINATION** — not self-reported, not predicted.
+
+✓ **ONE — THE TETRACYCLINE ARM IS LARGELY DEFUSED, IN 17,527 MEN.** Oral tetracycline-class antibiotics
+(≥90 tablets dispensed in any six-month period, isotretinoin-naive) vs 315,370 men with no acne: **adjusted
++0.43 cm (95% CI 0.33 to 0.54), mean height 180.7 (SD 6.63) — THE TALLEST EXPOSURE GROUP IN THE STUDY** —
+with **stunting 1.67% vs 2.14%, adjusted PR 0.79 (0.70–0.89)**. Women +0.33 (−0.17 to 0.83), n=587.
+⭐ **AND THE INTERNAL HEALTH-SEEKING CONTROL IS IN THE SAME TABLE AND IS FLAT: TOPICAL acne treatment,
+n=18,702, +0.01 cm (−0.09 to 0.11).** Topical users are acne patients with the same health-seeking behaviour
+as the systemic arms, **so a pure healthy-user effect should appear there and does not.** ⚠ It does not fully
+exonerate the systemic positives — topical treatment also marks MILDER disease and acne severity tracks
+androgen exposure — **but it DECOMPOSES the confound instead of leaving it undifferentiated.**
+→ **R477's tetracycline concern (MMP-13 inhibition inside achievable serum, plus a 1963 oxytetracycline fibula
+observation at ~60× the acne dose) now has a well-powered human arm running the other way, alongside
+`defigueiredo2019`'s null rat femur. NOT proof of safety — confounding by indication runs favourably and the
+authors say so — but the question is no longer open in the direction of harm.** The free question stays on the
+list; the alarm comes off it.
+
+⭐⭐⭐⭐ **TWO — AND THE ROUND IS THE OTHER HALF OF TABLE 2. ISOTRETINOIN IN MEN, BY AGE AT FIRST PRESCRIPTION,
+ADJUSTED, AGAINST A NO-ACNE REFERENCE OF 180.2 cm:**
+| age at initiation | n | adjusted Δ adult height | 95% CI |
+|---|---|---|---|
+| **<13 y** | 84 | **−1.70 cm** | −3.15 to −0.25 |
+| **13 y** | 464 | **−1.81 cm** | −2.43 to −1.19 |
+| **14 y** | 1,484 | **−0.95 cm** | −1.29 to −0.60 |
+| **≥15 y** | 14,707 | **+0.51 cm** | 0.40 to 0.63 |
+⭐⭐ **MONOTONE IN MAGNITUDE *AND* IN PRECISION, A 2.32 cm SWING, EVERY CONFIDENCE INTERVAL EXCLUDING ZERO, AND
+A SIGN FLIP.** ⭐ **AND THE COMPARISON IS *WITHIN* ONE EXPOSURE — same drug, same disease, same health-seeking
+behaviour, same registry, same conscription measurement, and the only variable is WHEN in the growth window the
+drug was given. CONFOUNDING BY INDICATION CANNOT PRODUCE A 2.3 cm SWING ACROSS AGE AT INITIATION INSIDE ONE
+EXPOSURE GROUP.** The abstract's pooled **+0.31 cm** is the average of a large late-initiating group in which
+the drug costs nothing and a small early-initiating group in which it costs ~1.8 cm.
+⭐ **IT ALSO COMPLETES AN ARC THIS FILE HELD IN TWO DISCONNECTED PIECES: R457's FAERS query returns
+ISOTRETINOIN at ROR 187.6 (146.5–240.2, 91 co-reports) for EPIPHYSES PREMATURE FUSION — the strongest single
+agent in that query, from spontaneous human reports. This supplies the population MAGNITUDE and LOCALISES it to
+the open window. A pharmacovigilance signal, an attained-height number and an age gradient, one direction.**
+
+⛔⛔ **CORR-366 — A NEW IMPORT ERROR, AND IT IS CORR-310's SHAPE AT A DIFFERENT LEVEL. THE AUTHORS DECLARE A
+PREDEFINED MINIMAL CLINICALLY IMPORTANT DIFFERENCE OF 5 cm AND THEREFORE REPORT −1.81 cm (CI −2.43 to −1.19) AS
+NO MEANINGFUL VARIATION BY AGE AT INITIATION.** CORR-310 says another group's SIGNIFICANCE THRESHOLD is their
+multiple-testing burden and not a filter on your data. **THIS IS THE SAME MOVE ONE LEVEL UP: A MINIMAL
+CLINICALLY IMPORTANT DIFFERENCE IS A STATEMENT ABOUT WHAT MATTERS *IN THEIR INDICATION*. Dermatology can
+rationally call 2 cm irrelevant to prescribing isotretinoin for acne. THIS ATLAS'S ENTIRE PHARMACOLOGICAL STACK
+IS WORTH 1–3 cm, SO 1.81 cm IS NOT A NULL HERE, IT IS THE WHOLE PRIZE.** ⭐ **Before reading any paper's
+"no clinically meaningful difference", find its declared MCID and re-read the interval against YOUR OWN scale.**
+
+⚠ **AND IT CUTS BOTH WAYS FOR THIS SUBJECT, WITH THE SECOND READING THE UNCOMFORTABLE ONE.** The retinoid
+contraindication is essentially SPENT for a male past 15 — reassuring. **But the same gradient is a direct human
+measurement of HOW MUCH REMAINING GROWTH IS AT RISK AT EACH AGE, and by ≥15 in an average Danish male a drug
+that closes growth plates costs nothing measurable, because there is almost nothing left for it to close.**
+**CORR-195 says this subject is off that distribution — knees radiographically open and growing at BA16 — and
+that correction now has to carry more weight than before, because THIS is the population number it is an
+exception to.** ⛔ Still outstanding: **eTables 1–7**, needed for the tetracycline age-at-initiation arm, which
+would be the negative control on the whole gradient (`g_l8_478a`).
+
+⭐ **THREE — `buckwalter1986` (A5): THE FULL TEXT IS GENUINELY PAYWALLED AND THE SPECIES IS NOW VERIFIED FROM
+MeSH.** Searched Unpaywall, OpenAlex, PMC, Europe PMC, Internet Archive and the LWW page: **no lawful open
+copy exists**; the realistic route is interlibrary loan for pp. 243–255. ⭐ **But the MeSH terms settle what
+this atlas was carrying unverified: `Animals · Cartilage · Cell Count · Disease Models, Animal · Extracellular
+Matrix · Fixatives · Growth Plate · Hypertrophy · MALE · Mathematics · MICE · Mice, Inbred Strains · TIBIA`.
+The carried "mouse" was CORRECT and gains two facts — MALE and TIBIA.** Strain is not stated (only *Mice,
+Inbred Strains*); C57BL is an inference from the 1985 companion `buckwalter1985` and is marked
+`value_unverified`. ⛔ **A5 stays open, narrowed from "species + tables" to THE PER-ZONE TABLES ONLY.**
+⚠ Also corrected: the paper's DOI is **10.2106/00004623-198668020-00010**; `-00011` is a different arthroscopy
+paper, and this file had the wrong TITLE on record until now.
+
+## 🧬🔬🧬🔬 R478 — **ADAM12-S HAS NO ANNOTATED RODENT COUNTERPART. THE NULL MOUSE FEMUR NEVER TESTED IT, AND
+## THE ISOFORM THE GROWTH PLATE ACTUALLY EXPRESSES IS THE MEMBRANE ONE — RUNNING THE SAME IGFBP CHEMISTRY.**
+## Run: NCBI eutils `esearch`/`esummary` on nuccore, `srcdb_refseq[prop] AND biomol_mrna[prop]`, 2026-08-27
+
+⭐⭐⭐ **THE QUERY, RUN THIS ROUND, AND THE SPLIT IS SPECIES-LEVEL.**
+| species | curated RefSeq ADAM12 mRNAs | short/secreted form |
+|---|---|---|
+| **HUMAN** | **10** — long NM_003474 (7950 nt), NM_001288973 (7941) | ⭐ **THREE at ~3.3 kb: NM_021641 (3337, the annotated ADAM12-S), NM_001288974 (3334), NM_001288975 (3328)** |
+| **MOUSE** | **1** — NM_007400, **7708 nt, LONG** | ⛔ **NONE ANNOTATED** |
+| **RAT** | **1** — NM_001427293, **7631 nt, LONG** | ⛔ **NONE ANNOTATED** |
+⭐ **Independently, a bovine promoter/gene study reports cattle LACK a canonical 3′ splice acceptor upstream of
+the putative short-form exon and cannot produce an ADAM12-S counterpart at all.**
+
+⭐⭐ **THREE CONSEQUENCES AND THE FIRST TWO CUT IN OUR FAVOUR.**
+· ⭐ **THE NULL MOUSE FEMUR NEVER TESTED ADAM12-S.** R469 closed `g_l12_466b` on `kveiborg2006` Fig 3B —
+  Adam12-null, het and wild-type littermates with indistinguishable femoral length — and used it to define the
+  **GAIN-ONLY LEVER** class. **That class survives and its reason improves: the mouse knockout removes the LONG
+  form because there is no short form in a mouse to remove. THE NULL IS UNINFORMATIVE ABOUT THE SECRETED
+  ISOFORM RATHER THAN EVIDENCE THAT LOSING IT IS FREE.**
+· ⭐⭐ **AND IT EXPLAINS THE TRANSGENE. `kveiborg2006` EXPRESSED THE *HUMAN* GENE OUT OF NECESSITY — there was
+  no mouse orthologue to express. THAT MAKES IT THE PUREST ELEVATION-ABOVE-NORMAL DESIGN IN THIS ATLAS: the
+  animal is given a protein species it does not itself make, so CORR-203 cannot reach it in any form.**
+· ⚠ **AND THE LOSS DIRECTION IS *NOT* NULL WHERE IT WAS ASKED PROPERLY: ADAM12-deficient ZEBRAFISH show
+  retardation in body growth at the juvenile stage without developmental defects** (`adam12zf2016`). Zebrafish,
+  like rodents, are losing the long form. **Losing ADAM12-L SHORTENS a fish while gaining human ADAM12-S
+  LENGTHENS a mouse, and the two are not the same molecule.**
+
+⭐⭐ **AND THE MEMBRANE FORM IS THE ONE THE PLATE EXPRESSES, WITH A MECHANISM LANDING ON THIS FILE'S OWN
+LOCAL-IGF ARM.** `kerna2008`: in **human** chondrocytes TGF-β **selectively enhances ADAM-12m, the MEMBRANE
+form, which cleaves IGFBP-5 to liberate IGF-1** and drive proliferation — and IGFBP-5 is one of ADAM12-S's two
+substrates in `loechel2000`, so **the two isoforms run the same chemistry from different locations.**
+`horita2019`: ADAM12 protein sits in the **PROLIFERATIVE ZONE** of the mouse growth plate, TGF-β1 inducing it
+and regulating IGF-1 and RUNX2. ⭐ **R326's `yakar2016` split makes LOCAL IGF-1 the LONGITUDINAL arm and
+circulating IGF-1 the RADIAL one, and pericellular IGFBP-5 cleavage inside the plate is as local as that gets.**
+
+⛔⛔ **WHAT IT COSTS THE PROPOSAL: THERE IS NO ROUTE TO RAISING ENDOGENOUS ADAM12-S IN A NON-PREGNANT MAMMAL.**
+Its physiological source is essentially **placenta and tumour stroma** (`gilpin1998` found the short transcript
+abundant in human term placenta while normal adult skeletal, cardiac and smooth muscle carry the long form).
+**EVERY ISOFORM-RESOLVED INDUCER RAISES *L* AND EXPLICITLY NOT *S*** — Notch upregulates the long but not the
+short form; TGF-β-driven EMT raises ADAM12-L; **miR-29 and miR-200 target the ADAM12-L 3′UTR while ADAM12-S is
+unchanged, because the isoforms carry DIFFERENT 3′UTRs and are separately regulated** (`rao2015adam12l`).
+⛔ **AND NO SPLICING FACTOR HAS EVER BEEN LINKED TO ADAM12 IN ANY SYSTEM** (Europe PMC TITLE_ABS, ADAM12 ×
+SRSF / splicing factor / hnRNP / ESRP = **0**). The only S-selective transcriptional mechanism on record is
+placental syncytialisation lifting **EZH2**-mediated H3K27me3 at the promoter, and the only in vivo S-raising
+drug experiment is an **EZH2 inhibitor** — a class this file contraindicates twice over (R281, R311).
+
+⭐ **ONE FREE BY-PRODUCT FOR THE CONTRAINDICATION LIST: HDAC INHIBITORS GAIN A SECOND, INDEPENDENT MECHANISM.**
+`hdac_tgfb_adam12_2010`: **trichostatin A, VALPROIC ACID, MS-275 and apicidin abrogate TGF-β induction of
+Adam12, and HDAC3 knockdown does the same.** R298 contraindicated HDAC inhibitors — including **GIVINOSTAT,
+approved 2024 and taken chronically by growing boys** — on the HDAC4–MEF2C argument. **This points the same way
+by a different route, and valproic acid is prescribed to adolescents.** Grade E for a skeletal claim.

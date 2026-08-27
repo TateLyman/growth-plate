@@ -23,3 +23,10 @@ atlas/data/supplied_2026_08_13/*.xlsx
 atlas/data/supplied_2026_08_13/*.gz
 atlas/data/supplied_2026_08_13/*.txt
 atlas/data/supplied_2026_08_13/*.yaml
+
+# R478: 1000 Genomes phase 3 EUR PLINK LD reference panel (MRC IEU), ~1.1 GB of
+# re-downloadable third-party data. Re-fetch with:
+#   curl -sS "http://fileserve.mrcieu.ac.uk/ld/1kg.v3.tgz" \
+#     | tar -xz --wildcards -C atlas/data/ld '*EUR*'
+# NOTE: the origin server's HTTPS certificate has EXPIRED; plain http:// works.
+atlas/data/ld/
