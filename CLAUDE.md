@@ -12166,7 +12166,13 @@ GROWTH PLATE IN ANY SPECIES** — no SAXS, no quantitative polarised light, no S
 
 ⭐ **FIVE — AND CARTILAGE HAS PLANT BIOLOGY'S PARADOX, WHICH POINTS AT *YIELD* NOT STIFFNESS.** `prein2016`
 is the only directional mechanical measurement of growth-plate matrix and it runs the wrong way —
-pericellular/territorial matrix is **SOFTER** than interterritorial (1.6 vs 3.6 kPa). Plants had the same
+pericellular/territorial matrix is **SOFTER** than interterritorial (1.6 vs 3.6 kPa).
+⛔⛔ **THAT SENTENCE IS WITHDRAWN BY R468, WHICH READ THE PAPER: THE SOFT COMPARTMENT IS THE *AXIAL* PATH AND IT RUNS
+THE RIGHT WAY.** The transverse septum is the PCM+TM **between cells WITHIN a column** — what a hypertrophic cell
+displaces to get TALLER — and the longitudinal septum is the ITM **between columns**, what it displaces to get WIDER;
+transverse is always ~half as stiff. And the anisotropy is **collagen DENSITY, with fibril orientation RANDOM in both
+compartments**, which dissolves the plant fibre-angle paradox rather than inheriting it. **Read R468 before citing
+anything in this paragraph.** What survives untouched is the YIELD-not-stiffness argument and the proteolysis point. Plants had the same
 paradox and dissolved it: **rsw4 and rsw7 roots lose growth anisotropy while microtubules and microfibrils
 are neither depleted nor disoriented** — oriented fibres are **INSUFFICIENT** — and **expansin lowers the
 YIELD THRESHOLD** without changing stiffness or hydrolysing anything. Under Lockhart, rate = φ(P − Y);
@@ -12253,6 +12259,10 @@ arm.** Read in full it has **three** arms: cultured human growth-plate cartilage
 proliferative chondrocytes and column density up at both · and **PROXIMAL TIBIAE OF 22-WEEK-OLD RABBITS
 (n=12) ASYMMETRICALLY EXPOSED, CONTRALATERAL SIDE UNTREATED, FINAL BONE LENGTH MEASURED — INCREASED TIBIAL
 LENGTH FROM THE FOURTH HIGH-ENERGY SESSION AND UNTIL SIX WEEKS AFTER TREATMENT.**
+⛔⛔ **THAT LAST SENTENCE IS TRUE AND CONCEALS A NINE-FOLD DECAY — R468 READ THE PAPER AND CORRECTED IT. The
+difference is 0.28 cm at 26 weeks immediately after the four sessions (p=0.008) and 0.03 cm at sacrifice at 32 weeks
+(p=0.001), and THE VALUE AT SACRIFICE IS THE PAPER'S OWN STATED PRIMARY OUTCOME, with the plates FUSED by then and an
+intra-assay CV of 4%. The dose is 3000 impulses, 180 mJ, 5 Hz, weekly × 4. Read the R468 block before citing this.**
 ⭐ **And the ex vivo companion is the control that makes it interpretable: `ramesh2020` applied rSWT to
 CULTURED FETAL RAT METATARSALS — no blood supply, no circulating factors — and got more growth. THE EFFECT IS
 LOCAL TO THE PLATE.** `jhan2025` is an independent second laboratory (focused ESWT, 4-week-old rats, sham +
@@ -12634,6 +12644,12 @@ Gap `g_l12_460a`.
   IN THE LEVEL OF ACTIVITY PREDOMINATE OVER ALTERATIONS IN THE SURFACE AREA OR VOLUME OF THEIR MEMBRANES.**
   Argues against build-a-bigger-Golgi and for supply-the-substrate. ⛔ **PAYWALLED; its individual values are
   NOT RETRIEVED and it is the highest-value missing document in this round.**
+  ⛔⛔ **BOTH SENTENCES ARE SUPERSEDED BY R468, WHICH OBTAINED AND READ IT. ITS VALUES: GAG production 54.2 / 62.6 /
+  25.2 µm³ per cell per hour at 21 / 35 / 80 d and collagen 44.9 / 77.6 / 82.5 — and 62.6 × 24 h ≈ 1,502 µm³/cell/day
+  against R454's independently derived 1,473, agreeing to 2%. AND THE DISCUSSION REVERSES THE INFERENCE: the authors
+  attribute activity-not-mass to the plate's SHORT PHASE DURATIONS and name the exception — in CONTINUALLY STIMULATED
+  cell systems TOTAL ORGANELLAR MASS IS MODULATED. A drug is a sustained input; a developmental phase transition is
+  not. The physiological negative does not exclude the pharmacological positive.** `g_l12_468a`.
 · ⚠ **TRADE-OFF AGAINST SPEED:** modification extent is set by **Golgi RESIDENCE TIME**, not enzyme levels, so
   faster transit predicts **shorter or less sulfated** chains — and R448's Donnan exponent (dlnΠ/dlnFCD =
   1.73) makes fixed charge a **LEVERAGED** parameter, so the trade is not obviously favourable.
@@ -12776,6 +12792,11 @@ meets ~10× more resistance widening than heightening. ⚠ Loading modes differ 
 so `value_unverified`. ⚠ **`sergerie2009` qualifies it: PZ+HZ are 0.5× the reserve zone AXIALLY but 0.33× TRANSVERSELY,
 so the hypertrophic zone is ~1.5× LESS anisotropic than the reserve zone. The absolute per-zone E1/E3 for the HZ is the
 single most useful missing number and has been in print since 2009.**
+⛔⛔ **BOTH HALVES OF THIS PARAGRAPH ARE CORRECTED BY R468.** ① **`prein2016` IS directional** — its transverse septum
+is the intracolumnar AXIAL path and its longitudinal septum the intercolumnar RADIAL path, transverse always ~half as
+stiff, so it runs the RIGHT way and at ~2.25× it is almost exactly the 2.47:1 required. My "false twice" was itself
+wrong on the geometry. ② **`sergerie2009` was obtained and the missing number is in Table 1: E1/E3 = 17.0 complete,
+23.1 reserve, 13.7 proliferative, 12.1 HYPERTROPHIC**, with the HZ also **4.2× more permeable** than the reserve zone.
 
 ⭐⭐⭐ **ONE — THE DECISIVE IN-VIVO CONTROL IS A NATURAL EXPERIMENT INSIDE ONE MOUSE, AND IT BEATS THE HYDROGEL
 ARGUMENT.** `shapiro2015` (verified verbatim): in the **SAME BALB/c mouse at the SAME stage of differentiation**,
@@ -13271,3 +13292,141 @@ endpoint and therefore **not** a contradiction of `humphries2018` (300 children,
 **`elo1960` — Elo JO, Acta Orthop Scand Suppl 1960;45:1–90 (PMID 13726535), 90 pages** — cited as the index to
 periosteal stripping, metaphyseal drilling and marrow implants. **That is one of the two candidates for the Acta Orthop
 Scand supplement this file has been trying to obtain; `nordentoft1964` is the other.** Blocked, no abstract.
+
+## 📚📚📚📚📚 R468 — **SEVEN SUPPLIED PRIMARIES READ IN FULL. THE OCCLUSION / LOCAL-IRRITATION ARM CLOSES ON A
+## 1967 SEVEN-ARM DESIGN THAT NOBODY HAS MATCHED SINCE, THE MATRIX TERM GETS ITS UNIT *AND* A COMPOSITION SHIFT,
+## AND THE DIRECTION QUESTION IS ANSWERED WITH R463's OWN GEOMETRY INVERTED.**
+
+⛔⛔⛔⛔ **ONE — `hansson1967` CLOSES THE MEDULLARY-OCCLUSION AND LOCAL-IRRITATION ARM, AND IT IS THE SOLE CITER OF
+`schneider1963` IN 63 YEARS.** Acta Orthop Scand Suppl 101, ~160 pp, read in full. Young rabbits, proximal tibial
+metaphyseal marrow cavity **plugged with homologous cortical bone** at 30 days, **daily growth by oxytetracycline in
+FIVE growth regions from 2 days before to 100 days after**, plus a **SEVEN-ARM SHAM LADDER IN LITTER MATES**, plus a
+**NORMAL UNOPERATED REFERENCE GROUP.** Three results and each one costs this file something.
+· ⛔ **(a) THE GAIN IS TRANSIENT AND THEN REVERSES INTO A NET DEFICIT.** Proximal tibia peaked at **+25 ± 25 µm/day
+  (4.9%)** on days 3–6 and **+60–70 µm cumulative at day 6**, after which the control side overtook it, and **AT 40
+  DAYS THE CUMULATIVE DIFFERENCE WAS ~105 µm IN FAVOUR OF THE CONTROL SIDE**. Proximal fibula peaked at **+60–70
+  µm/day (14–16%)** and **+331 µm cumulative at 7 days**, was equal at 25–30 days, and **the control side led by
+  ~119 µm at 40 days**. At **60, 80 and 100 days the operated side was growing ~10% SLOWER with SHORTER cell
+  columns** — i.e. at 130 days of age, with most of the growth period elapsed, the treated bone is behind.
+· ⭐ **(b) THE SHAM LADDER ORDERS CLEANLY, AND IT IS THE FACTORIAL DECOMPOSITION R442/R450 SAID HAD NEVER BEEN RUN:**
+  **anaesthesia alone → NOTHING · skin incision → NOTHING · periosteal incision → smaller and shorter · cortical
+  drilling → real, a few days · marrow destruction without a plug → more · plugging → most.**
+· ⛔⛔ **(c) THE DECISIVE ARM, AND IT REQUIRES THE NORMAL REFERENCE GROUP: THE OPERATION RETARDS GROWTH BELOW NORMAL
+  IN EVERY REGION ON BOTH SIDES, INCLUDING THE DISTAL RADIUS OF THE FORELIMB** (−26 µm/5.3% day 1 → **−60 µm/12.5%
+  day 4**, cell columns **10.7% shorter**). Proximal tibia control side −36 → −63 µm (6.3→11.3%), operated side −40
+  to −60 µm (7–11%). **And at the DISTAL FIBULA the control side fell 51–71 µm/day while the OPERATED SIDE WAS
+  UNCHANGED — so the apparent "+57–67 µm stimulation" there is ENTIRELY CONTROL-SIDE RETARDATION.** The author's own
+  generalisation: **the difference between the sides is due TO A LARGER EXTENT TO RETARDATION ON THE UNOPERATED SIDE
+  THAN TO STIMULATION ON THE OPERATED SIDE.**
+⭐⭐ **AND IT REFUTES TRUETA'S LOCAL MODEL FROM INSIDE ITS OWN DATA: the plate whose OWN metaphyseal vessels were
+destroyed (proximal tibia) showed the SMALLEST early difference, while the plates with INTACT vessels (proximal and
+distal fibula) showed the LARGEST. THE STIMULUS IS LIMB-WIDE AND VASCULAR, NOT LOCAL TO THE INJURED METAPHYSIS** —
+which is simultaneously **the mechanism for R440/R441/R442's cross-bone overgrowth anomaly**, and it explains why the
+injured bone is the one that benefits least.
+⭐ It also contains the **abandoned-methods survey** in full (AV fistula, sympathectomy, arterial implantation into
+the marrow cavity, nutrient-artery ligation, osteotomy, ivory and metal implants, periosteal stripping,
+Hueter-Volkmann) — so **`hansson1967` is a third candidate identity for A9 alongside `nordentoft1964` and `elo1960`,
+and it is the one already in hand** — and it reports **`wray1961` (B8) in detail**: tibial fracture in rat retards
+femoral growth **on BOTH sides** for a few days against a comparable control series, then raises it above normal on
+both sides and especially the fractured side, netting a longer femur there.
+🧭 **WHAT THIS CHANGES: R442's "sustained occlusion is a real growth stimulus" and R450's reading of Trueta 1953 are
+both WITHDRAWN as claims about ATTAINED LENGTH.** Plugging IS the bone-wax manoeuvre, it was followed daily for 100
+days with the right control, and it nets negative. **The one thing that survives is R467's band argument — a mild
+irritant near a plate accelerates briefly and is readily reversed into retardation — now with the reversal measured
+rather than inferred.**
+
+⭐⭐⭐⭐ **TWO — `hunziker1999organelle` SUPPLIES THE UNIT R447/R454 SAID THE MATRIX TERM DOES NOT HAVE, AND THE TWO
+INDEPENDENT DERIVATIONS AGREE TO 2%.** Rat proximal tibia at **21 (accelerating), 35 (peak) and 80 days
+(decelerating)**, EM stereology of rough ER, Golgi and mitochondria **per TERMINAL HYPERTROPHIC CHONDROCYTE** with
+matrix synthesis measured **in the same animals**.
+· ⭐ **MATRIX GAG PRODUCTION = 54.2 / 62.6 / 25.2 µm³ PER CELL PER HOUR** (+16% on acceleration, **−60%** on
+  deceleration). **FIBRILLAR COLLAGEN PRODUCTION = 44.9 / 77.6 / 82.5 µm³/h** (+73%, then +6%).
+· ⭐⭐ **62.6 µm³/h × 24 h = ~1,502 µm³ PER CELL PER DAY, AGAINST R454's INDEPENDENTLY DERIVED 1,473 µm³/cell/day
+  FROM `hunziker1994` + `wilsman1996`. TWO ROUTES, THIRTY YEARS APART, AGREEING TO 2%.**
+· ⭐ **ALL THREE ORGANELLES REGULATE BY ACTIVITY, NOT BY MASS:** the +16% GAG rise came from a **+65% rise in Golgi
+  activity per unit membrane** while **total Golgi membrane surface area per cell FELL ~22%**; **RER activity per
+  unit membrane rose 261% across 21→80 days** while RER membrane surface fell 31% and RER volume 56%; total
+  mitochondrial volume was unchanged on acceleration and **−35%** on deceleration.
+⛔⛔ **AND THE DISCUSSION REVERSES R447's READING OF THIS PAPER, WHICH R447 TOOK FROM THE ABSTRACT.** R447 wrote that
+it "argues against build-a-bigger-Golgi and for supply-the-substrate." **The authors attribute activity-not-mass to
+the plate's SHORT PHASE DURATIONS requiring rapid adaptation, and name the counterexample explicitly: in cell systems
+that are CONTINUALLY STIMULATED and sustain high activity — they cite hepatocytes under chronic drug exposure — TOTAL
+ORGANELLAR MASS IS MODULATED INSTEAD.** ⭐ **A DRUG IS A SUSTAINED INPUT AND A DEVELOPMENTAL PHASE TRANSITION IS NOT.
+The physiological negative does not exclude the pharmacological positive, and organelle expansion under sustained
+stimulation is the DOCUMENTED response in other cell types.** `g_l12_468a`.
+
+⭐⭐⭐ **THREE — AND THE SAME PAPER CARRIES A COMPOSITION SHIFT THIS ATLAS HAS NEVER HAD, WHICH IS A MECHANISM FOR
+h_term's DECLINE.** Matrix volume per cell **had to be corrected for changing constituent densities**, because during
+hypertrophy **the volume density of FIBRILLAR COLLAGEN INCREASES while the density of GLYCOSAMINOGLYCANS DECREASES**,
+and at 80 days **collagen concentration is HIGHER and GAG concentration SIGNIFICANTLY LOWER** than at 21 and 35 days.
+→ ⭐⭐ **A SLOW PLATE MAKES A COMPOSITIONALLY DIFFERENT MATRIX — MORE COLLAGEN, LESS GAG — AND GAG IS THE FIXED
+CHARGE R448 SHOWS IS LEVERAGED AT AN EXPONENT OF 1.73.** It converges with **R446** (ARSI, a lysosomal chondroitin
+desulfatase **~300× enriched into the hypertrophic zone**, with PG sulfation falling through maturation) and with
+**R410**'s sulfation arm, from a third direction. **The ageing plate loses fixed charge from two sides at once: it
+makes less GAG and strips more sulfate.**
+⭐ **And it reconciles with R454 rather than contradicting it: matrix VOLUME per cell is near-invariant across a
+nine-fold range of growth rate (`hunziker1994`) while matrix COMPOSITION per cell is not. The "fixed structural
+quantum" is a VOLUME quantum, not a synthesis quantum.**
+
+⭐⭐⭐⭐ **FOUR — `prein2016` ANSWERS THE DIRECTION QUESTION, AND R463's READING OF IT WAS GEOMETRICALLY INVERTED.**
+R463 wrote *"prein2016 is a RADIAL comparison, not directional with respect to the growth axis at all."* **It is
+directional, and it runs the RIGHT way.**
+· ⭐ **THE SEPTUM IDENTITY, WHICH IS THE WHOLE THING: the TRANSVERSE SEPTUM is the pericellular + territorial matrix
+  BETWEEN CELLS WITHIN A COLUMN — the material a hypertrophic chondrocyte must displace to get TALLER — while the
+  LONGITUDINAL SEPTUM is the interterritorial matrix BETWEEN COLUMNS, what it must displace to get WIDER.**
+· ⭐⭐ **TRANSVERSE (axial path) 7.5–48.3 kPa, narrow · LONGITUDINAL (radial path) 8.9–137.9 kPa, bimodal at 26.1 ±
+  0.4 and 59.9 ± 2.1 kPa — and the authors state the transverse septum was ALWAYS SIGNIFICANTLY SOFTER, ROUGHLY BY A
+  FACTOR OF ONE HALF THROUGHOUT ALL MEASUREMENTS. THE AXIAL PATH IS THE SOFT ONE, AT ~2.25×, AGAINST THE 2.47:1
+  LINEAR ANISOTROPY R454's CELL-SHAPE ARITHMETIC REQUIRES.** Widths: transverse 2–3 µm, longitudinal 10–30 µm.
+· ⭐⭐⭐ **AND THE ANISOTROPY IS COMPOSITIONAL, NOT ORIENTATIONAL — collagen density is significantly LOWER in the
+  transverse septum, and THE ORIENTATION OF THE FIBRILS APPEARED RANDOM IN BOTH COMPARTMENTS. THAT DISSOLVES THE
+  PLANT FIBRE-ANGLE PARADOX R454/R463 COULD NOT RESOLVE, BECAUSE NO HOOP IS REQUIRED**, and it demotes B3/`bunger2006`
+  from load-bearing: the plate's directional anisotropy does not need an oriented fibre at all.
+· ⭐ **The authors propose the same constraint mechanism R463 derived independently:** the stiff longitudinal septum
+  **RESISTS mediolateral elongation of daughter cells and CONSTRAINS them into the softer transverse space** within
+  the column. And they note the PCM carries a **high hyaluronic-acid fixed negative charge with high water content
+  and reduced permeability** — **so the soft axial path is the CHARGED, WATER-RICH one, which links the sulfation arm
+  directly to the DIRECTION of expansion, not merely to the amount.** `g_l5_468b`.
+⚠ Limits: embryonic-to-newborn MOUSE, **PROLIFERATIVE zone**, not the hypertrophic zone and not across growth rates.
+
+⭐⭐ **FIVE — `sergerie2009` (B4) CLOSES THE PER-ZONE ANISOTROPY WITH ABSOLUTE VALUES, AND ADDS AN INDEPENDENT
+ARGUMENT FOR A TRANSPHYSEAL FIBRE SYSTEM.** Newborn porcine distal ulna, unconfined compression, transversely
+isotropic biphasic model, Table 1: **complete plate E3 0.51 ± 0.12 / E1 8.65 ± 1.72 MPa · reserve 0.48 / 11.08 ·
+proliferative 0.25 / 3.42 · hypertrophic 0.27 / 3.26 MPa**, permeability k1 1.82 / 1.41 / 5.60 / 5.98 ×10⁻¹⁵ m⁴/Ns.
+**COMPUTED HERE: E1/E3 = 17.0 complete, 23.1 reserve, 13.7 proliferative and 12.1 HYPERTROPHIC — the anisotropy holds
+in the zone where the cell actually elongates — and the HYPERTROPHIC ZONE IS 4.2× MORE PERMEABLE than the reserve.**
+⭐ **AND THE COMPLETE PLATE IS STIFFER THAN THE SUM OF ITS OWN ZONES: measured E3 0.51 ± 0.05 against a
+three-springs-in-series prediction of 0.353 ± 0.02, significantly different, which the authors attribute to
+SECTIONING INTERRUPTING CONTINUOUS COLLAGEN AND PROTEOGLYCAN NETWORKS THAT SPAN THE THREE ZONES.** That is a
+mechanical measurement of the transphyseal fibre system `speer1982` described histologically.
+⚠ They also record matrix-to-cell volume ratio **>9 reserve, 4–8 proliferative, <1 HYPERTROPHIC** (citing farnum2002)
+and flag that their zone ordering contradicts `villemure2007`'s rat strain-pattern result.
+
+⛔ **SIX — `ramesh2022` (A4) CLOSES THE rESWT DOSE QUESTION AND THE LENGTH EFFECT DECAYS NINE-FOLD.** Twelve
+22-week-old rabbits, **3000 impulses, 180 mJ, 5 Hz to the RIGHT proximal tibia weekly × 4**, untreated left limb,
+sacrifice at 32 weeks: **mean difference 0.28 cm at 26 weeks (p=0.008) → 0.03 cm at sacrifice (p=0.001)**, and **the
+value at sacrifice is the paper's own stated PRIMARY OUTCOME**, with radiographs documenting **FUSED plates by then**
+and an intra-assay CV of 4%. ⛔ **CLAUDE.md's R456 line — "increased tibial length from the fourth high-energy session
+and until six weeks after treatment" — is technically true of both timepoints and CONCEALS a ~90% decay. Corrected.**
+⭐ **And its immature arm is another instance of R463's blind readout: column density per mm rose at both energies
+(p=0.0049, p=0.0005) and PCNA-positive cells at high energy (p=0.02) WHILE AVERAGE GROWTH PLATE HEIGHT AND AREA DID
+NOT INCREASE** and resting and hypertrophic zone heights were unaffected.
+
+⛔ **SEVEN — `leem2002` (B7) IS RESOLVED AND IS NOT A CONTRADICTION.** 3-week-old male SD rats, **lovastatin 5 mg/kg
+INTRAPERITONEALLY × 5 days, n=5/group**, tetracycline double-label: growth **489.0 ± 70.1 → 780.5 ± 72.8 µm per 48 h
+(P<0.05, +59.6%)**, BrdU labelling index **19.0 ± 7.8% → 32.5 ± 5.7%**, BMP-2 up. **A 48-HOUR RATE PROXY, IP ROUTE,
+n=5, NO ATTAINED LENGTH — so it does not contradict `humphries2018` (300 children, ORAL statin, 4.45 vs 4.60 cm/yr,
+P=0.73).** ⭐ **Fifth instance in this file of a large short-term rate proxy that never converted into length**, after
+LIPUS, capacitive coupling, LLLT and laser acupuncture. **The statin position is unchanged: fine, and not a lever.**
+
+⛔ **EIGHT — AND ONE ITEM IS NOT ANSWERED: THE `buckwalter1986` FETCH RETURNED THE JBJS VOLUME 68-A INDEX, NOT THE
+PAPER.** The per-zone organelle tables remain unread and A5 stays on the blocked list. Recorded because a wrong
+document that looks like the right one is exactly how a `value_unverified` becomes a fact.
+
+🧭 **WHAT R468 SETTLES.** An arm this file re-derived three times independently (R442's bone wax, R450's Trueta,
+R467's papain band) is **closed on attained length by a 1967 experiment with a better control design than anything
+since** — and the same paper hands back the cross-bone anomaly's mechanism. The **matrix term now has a unit, a
+number, a regulatory strategy and a composition shift**, and the one paper the ledger called its highest-value
+missing document turns out to argue **for** rather than against the pharmacological direction. And the **direction of
+hypertrophic expansion is answered**: the axial path is the soft one, the anisotropy is collagen density rather than
+fibre angle, and the soft path is the charged one.
