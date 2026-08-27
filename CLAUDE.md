@@ -11678,3 +11678,145 @@ derived the consequence and it stands: **if the plate carries a finite division 
 a SHORTENED period cannot be extra divisions either — it must be YIELD PER DIVISION**, which lands on
 CORR-361's matrix term. ⚠ And the compartment is wrong for him: the secular mechanism is **leg-directed and
 delivered before eighteen months**, while his residual is trunk and he is sixteen.
+
+## 🩸🩸🩸🩸🩸 R450 — **THE PERFUSION TERM, OPENED FROM FIVE OPERATOR-SUPPLIED PDFs. THE PLATE'S SOLUTE
+## SUPPLY WAS MEASURED IN 1955 AND IT IS *METAPHYSEAL* AND *CHARGE-INDEPENDENT*. THE PERIOSTEAL EFFECT IS A
+## WITHIN-BONE CROSS-PLATE SIGNAL WITH OPPOSITE SIGNS AT THE TWO ENDS OF ONE BONE. AND R442's BONE-WAX
+## RESULT WAS PUBLISHED IN 1953.**
+
+⛔ **ZERO — COVERAGE, MEASURED BEFORE ANYTHING WAS READ.** `hyperaemia|hyperemia` **0 node/gap files and 0
+CLAUDE.md** · `sympathectomy` **0 nodes** · `anisomelia` **0** · `Brodin` **0** · `nutrient artery` **0** ·
+`arteriovenous` 5 files / 1 ledger · `perfusion` 11 / 1. **The question the field spent 1867–1964 on — does
+BLOOD SUPPLY set longitudinal growth rate — is a near-total blind spot in an atlas of ~950 nodes.**
+
+⭐⭐⭐⭐ **ONE — THE DELIVERY ROUTE INTO THE PLATE WAS MEASURED DIRECTLY, AND IT IS ONE-SIDED AND
+CHARGE-BLIND.** `brodin1955` (Acta Orthop Scand Suppl, 91 pp, read in full) injected **two chemically
+opposite** fluorescent tracers intravenously into rabbits — **3,4-benzpyrene, water-INSOLUBLE and neutral**,
+and **sodium 3-oxypyrene-5,8,10-trisulphonate, water-soluble, ACIDIC, a TRIANION** — and killed animals at
+**30 s, 1 min, 3.5 min and 10 min.**
+· ⭐ **BOTH TRACERS WERE DEMONSTRATED IN THE SAME PARTS OF THE CARTILAGE**, which is his own basis for
+  concluding the spread is not governed by electrolytic dissociation.
+· **Entry was mainly from the METAPHYSEAL side**, less from the perichondrial and epiphyseal borders; the
+  **perichondrium took up strongly and passed little on.**
+· ⭐ **THE INTERNAL CONTROL THAT MAKES THE ASYMMETRY INTERPRETABLE: an EXCISED plate soaked for 30 s took the
+  tracer up from BOTH borders — so the in vivo one-sidedness is a property of the SUPPLY, not of the tissue.**
+⭐⭐ **AND IT BEARS ON TWO THINGS THIS FILE HAS BUILT.** ① **R430's Donnan calibration predicts a dianion
+partitions at 0.189 and puts a trianion near 0.08 — and a trisulphonate reaching the same places as a neutral
+polycyclic hydrocarbon is not what strong charge exclusion looks like.** ⚠ Honest limit: fluorescence
+intensity is **not comparable across two fluorophores**, so what is comparable is the **PATTERN** — which is
+the thing Donnan is supposed to distort. ② ⭐ **DEPOT PLACEMENT. R373/R374/R385–R387 put the SAG depot in the
+EPIPHYSEAL secondary ossification centre because that is where `trompet2024`'s bead went. The plate's
+dominant physiological solute supply is the METAPHYSEAL marrow.** Not contradictory — a depot works by
+proximity, not by the physiological route — **but the two placements have never been compared, and R442
+independently found a sustained METAPHYSEAL occlusion lengthens a bone.** `g_l1_450b`.
+
+⛔ **AND A CORRECTION TO BRODIN, WITH THIS FILE'S OWN ARITHMETIC.** He concluded the tracers *"can hardly
+have entered by ordinary diffusion"* because they reached the inner portion within 30 s, and proposed
+**"minute canals" parallel to the cartilage columns communicating with the metaphyseal spongiosa.** For a
+~500 Da solute at cartilage D = 1–3 ×10⁻¹⁰ m²/s, **√(2Dt) = 78–134 µm at 30 s · 205–355 µm at 3.5 min ·
+346–600 µm at 10 min** — and a rabbit plate at that age is a few hundred µm thick. ⭐ **SO THE ENTIRE
+OBSERVED SEQUENCE — PERIPHERY-ONLY EARLY, UNIFORM BY TEN MINUTES — IS EXACTLY WHAT ORDINARY DIFFUSION
+PREDICTS, AND THE CANAL INFERENCE IS NOT SUPPORTED BY HIS OWN TIMINGS, WHICH GIVE NO DISTANCE.** What
+survives untouched is the **ASYMMETRY** and the **CHARGE-INDEPENDENCE**.
+⭐ **The corrected reading is FAVOURABLE to R428/R430 rather than against them: the plate behaves like a
+diffusion-fed tissue whose source is one-sided and metaphyseal** — and it agrees on timescale with
+`farnum2006`, where 332 Da reaches ~100% of vascular concentration and saturates in five minutes.
+
+⭐⭐⭐⭐ **TWO — THE PERIOSTEAL EFFECT IS A WITHIN-BONE CROSS-PLATE SIGNAL, AND THE TWO ENDS MOVE IN OPPOSITE
+DIRECTIONS.** Same paper: **44 rabbits, metal indicators implanted in the bone, contralateral leg as control,
+followed to 160 DAYS.** Ollier's loosening of the periosteum from the **PROXIMAL half** of the tibia:
+· **DISTAL plate — the far end, OUTSIDE the operative field — ACCELERATED**: +0.12 mm week 1, a further
+  +0.22 mm week 2, individual maxima **+1.5 mm at 7 wk and +1.6 mm at 16 wk.**
+· **PROXIMAL plate — at the operative field — INHIBITED** from week 2 onward, greatest individual **−1.0 mm
+  at 10 wk.** **Both changes still present at 160 days.**
+⭐⭐ **THE NEAR PLATE GOES DOWN AND THE FAR PLATE GOES UP, IN ONE BONE, FROM ONE LOCAL INTERVENTION. THAT IS
+THE WITHIN-BONE VERSION OF THE CROSS-BONE ANOMALY R440/R441/R442 COULD NOT EXPLAIN** — `shapiro1981`'s
+unbroken ipsilateral tibia overgrowing in 82% of children, `cho2025`'s unbroken ipsilateral femur.
+⭐ **AND IT REFINES THE MODERN PERIOSTEAL LITERATURE: `kaneko2020` and the rest measure WHOLE-BONE length and
+would score this simply as "the operated tibia is longer". THE COMPARTMENT SPLIT HAS NOT BEEN REPORTED SINCE
+1955.**
+⛔ **AND BRODIN REFUTES BOTH STANDARD EXPLANATIONS HIMSELF.** *Osteogenin* cannot explain a substance
+released proximally that **stimulates the distal plate while inhibiting the nearer one**. And *hyperaemia*
+cannot, because his **Cr-51 erythrocyte blood-volume rise lasted at most 2.5 weeks against a 160-day growth
+change.** His own named unrun experiment is the one that would settle the term: **produce a PERSISTENT
+circulatory disturbance WITHOUT damaging the bone.** `g_l6mech_450c`.
+
+⭐⭐⭐ **THREE — THE ABANDONED-METHODS CATALOGUE, AND EVERY METHOD THAT WORKED WORKED BY RAISING LOCAL
+PERFUSION.** `nordentoft1964` (Acta Orthop Scand Suppl, read in full). **All of the following are SECONDHAND
+within it and are recorded as such.**
+· ⭐ **HIERTON 1961 — femoral artery-to-vein anastomosis in 5 children with polio sequelae and progressive
+  anisomelia. Open 5.3–7.5 years → ANISOMELIA DECREASED BY 3.0–6.5 cm**, with arteriography afterwards showing
+  **extremely ample vascularization around the epiphysial zones at the knee.** All developed varicose veins,
+  3 developed leg ulcers that healed once normal circulation was re-established, **no cardiac complication.**
+· **JANES & JENNINGS 1961** (`janes1961`, PMID 13789389, *ten-year observations*, Mayo) — **5 of 8 patients,
+  mean anisomelia decrease 2.7 cm at mean 4.4 y**, 3 progressed, and **ALL developed considerable CARDIAC
+  DILATATION which subsided when the anastomosis was closed.**
+· ⭐⭐ **GULLICKSON, KUBICEK & KOTTKE 1951 — BIDIRECTIONAL AND INTERNALLY CONTROLLED, which is what separates
+  it from everything else in the catalogue. Electrical stimulation of the sympathetic trunk in 10 puppies →
+  average SHORTENING of 2.8 mm on the stimulated side. Lumbar sympathectomy in 6 puppies → INVARIABLY a
+  LENGTHENING of 2.7 to 14.0 mm, average +6.5 mm — against a normal control series whose MAXIMUM was 1 mm and
+  whose mean difference was 0.2 mm.**
+⭐⭐⭐ **AND THE SAME CATALOGUE CONTAINS R442's RESULT, SEVENTY YEARS EARLY. TRUETA 1953: SEVERING the
+nutrient arteries of rabbits produced NO growth stimulation, while BLOCKING THEIR LUMINA WITH WAX — or
+periosteal stripping around the nutrient foramen — DID; and his own generalisation was that stimulation
+appears chiefly when the lesion is DIAPHYSEAL and is active ONLY WHILE THE MEDULLARY CAVITY IS OCCLUDED.**
+R442 read `lee2023metaphyseal`/`park2025metaphyseal` as showing a metaphyseal defect lengthens a bone **only
+if filled with BONE WAX**, an unfilled or Tisseel-filled defect doing nothing, and concluded the stimulus is
+**SUSTAINED OCCLUSION** rather than injury or hyperaemia. **The same material, the same filled-versus-unfilled
+contrast and the same conclusion, seven decades apart, with neither group citing the other.**
+
+⭐⭐ **FOUR — THE MODERN INTERNALLY-CONTROLLED CONFIRMATION, AND A ZERO-HIT THAT SHOULD NOT BE ZERO.**
+`bojakowski2015` (PLoS One): side-to-side AV fistula between the common femoral vessels in Wistar rats with
+proximal venous outflow limitation, **CONTRALATERAL LIMB SHAM-OPERATED**, 30 days → significant iliac venous
+hypertension and limb overgrowth, and the authors state the overgrowth is caused by muscle overgrowth,
+varicose veins **AND BONE ELONGATION**, with **femoral bone length measured directly.**
+⭐⭐ **AND THE EXPERIMENT HAS BEEN RUN UNINTENTIONALLY THOUSANDS OF TIMES AND NOBODY HAS READ IT OUT. Every
+child who receives a radiocephalic or brachiocephalic fistula for haemodialysis access carries a HIGH-FLOW
+ARTERIOVENOUS SHUNT IN ONE ARM FOR YEARS THROUGH THE GROWTH PERIOD, WITH THE OTHER ARM AS A PERFECT INTERNAL
+CONTROL. Three PubMed queries — AVF × limb length discrepancy × dialysis; haemodialysis access × bone growth
+or limb length × children; AVF × arm length — RETURN ZERO ON POINT.** ⚠ Caveats to carry with any positive:
+**R330 says the upper limb contributes nothing to standing height**, so it would be a MECHANISM result and
+not a lever; and CKD is a badly confounded growth population — **but the contralateral arm controls every
+systemic confound there is.** **It is a retrospective review of films that already exist.** `g_l1_450a`.
+
+⛔⛔ **FIVE — THE OBVIOUS DRUG IDEA, RUN BEFORE PROPOSING, AND IT DOES NOT SURVIVE.** The tempting move is
+that a **vasodilator is a non-surgical arteriovenous fistula**, and that R298's kill of the nitrate/sGC shelf
+and R300's kill of PDE5A were about the **CHONDROCYTE** while a vasodilator's target is **vascular smooth
+muscle in the epiphyseal and metaphyseal vessels** — a different tissue, which is exactly the **CORR-342
+inversion** that licensed romosozumab for the regenerate after SOST's absence killed it at the plate.
+**FOUR THINGS STOP IT, and the third is the specific one:**
+· ⛔ **THIS FILE'S OWN DATA: `kawabe2025`'s cilostazol lengthens EX VIVO METATARSALS (120.7% → 127.6% at
+  10 µM). AN EXPLANTED RUDIMENT HAS NO BLOOD SUPPLY, so that result cannot be a perfusion effect.**
+· **R305 killed PDE5A a third time on a mouse LENGTH endpoint** — body length −1.092, P=2.3e-05, discordant
+  with the human +1.42 cm.
+· ⭐⭐ **ZINN et al. 1941, via `nordentoft1964`: after sympathectomy, carbon-particle injection showed
+  hyperaemia of the leg **EXCEPT THE MARROW CAVITY**, with LESS carbon in the operated marrow than in
+  controls, attributed to soft-tissue vasodilatation drawing flow AWAY from the marrow. A SYSTEMIC VASODILATOR
+  LOWERS RESISTANCE IN SKIN AND MUSCLE; AN AV FISTULA RAISES FLOW THROUGH THE DEEP FEMORAL SYSTEM. THEY ARE
+  NOT THE SAME INTERVENTION AND THE STEAL RUNS THE WRONG WAY.**
+· **Brodin argues against BOTH passive and active hyperaemia as the CAUSE**, on his own data.
+
+⛔⛔ **SIX — AND THE ONE NON-SURGICAL PERFUSION-RAISING INTERVENTION THAT HAS ACTUALLY BEEN TRIED IN HUMANS AT
+THE KNEE IS NULL. THIS CORRECTS AN ATLAS NODE.** `ring1958` (Ring & Lee, via `nordentoft1964`): **40 °C
+maintained around the epiphysial zones AT THE KNEE in 4 children with poliomyelitis sequelae → NO influence
+on longitudinal growth demonstrated.** ⛔ **`local_limb_warming_is_a_free_delivery_and_growth_lever` states
+verbatim "THERE IS NO HUMAN DATA OF ANY KIND — not a trial, not a case series, not an observational study
+with a length endpoint." THAT IS FALSE, and the node has been corrected in this commit.** Same temperature,
+same anatomical target, same endpoint as the `serrat2015`/`racine2018` mouse experiments the node is built
+on. ⚠ **It does NOT close the axis** — 4 children, no control arm stated, a disease population, secondhand,
+primary unread — and the same catalogue records **Richards & Stofer 1959 getting +2–6% with ELECTRICAL
+heating of animal epiphysial regions**, a different modality pointing the other way. **But the human arm
+exists and it is negative, and any future proposal starts there.**
+
+⛔ **SEVEN — NORDENTOFT'S OWN SERIES IS THE HONEST CEILING ON THE NON-VASCULAR HALF OF THE CLASS.** The
+largest published series for **Pease's ivory screws** — 44 long bones in 26 patients — gave a **SIGNIFICANT
+average +2 mm confined to the FIRST postoperative year** (annual progression of anisomelia **2.32 mm greater
+in years 2–3 than in year 1, p<0.01**), no case exceeding the average effect, **and the effect gone within a
+year.** **Lumbar sympathectomy on 16 bones in 11 patients: no definite stimulation.** He rejected both.
+🧭 **SO THE CLASS CONTAINS EXACTLY ONE ARM WITH CENTIMETRE-SCALE EFFECTS SUSTAINED OVER YEARS — THE
+ARTERIOVENOUS ANASTOMOSIS — AND IT IS SURGICAL, CARRIES CARDIAC DILATATION IN ONE SERIES AND VARICOSE VEINS
+PLUS ULCERS IN THE OTHER, AND IS EXCLUDED HERE ON ROUTE. Everything else in the catalogue decays within a
+year, does not replicate, or is null.** What the round delivers is not a lever: it is **the plate's supply
+geometry measured directly, a within-bone cross-plate signal nobody has explained in seventy years, the 1953
+original of R442's occlusion result, one correction to an atlas node, and one free retrospective study in
+films that already exist.**

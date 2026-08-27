@@ -19374,3 +19374,83 @@ gaps:
   discriminating_experiment: Verify the patent text directly, then measure serum inorganic sulfate before and
     after oral chondroitin sulfate in a human - which also settles whether the agent raises the pool at all.
   blocking: false
+- gap_id: g_l1_450a
+  type: known_unknown
+  layer: L1
+  status: open
+  question: Is the arm carrying a long-standing surgical arteriovenous fistula longer than the contralateral
+    arm in people who had one created during growth?
+  why_it_matters: "The only interventions in the entire abandoned-methods literature that produced
+    centimetre-scale, multi-year length changes were arteriovenous anastomoses - Hierton 1961 gave 3.0 to
+    6.5 cm over 5.3 to 7.5 years in 5 children, janes1961 gave a mean 2.7 cm in 5 of 8 at 4.4 years. Both are
+    uncontrolled surgical series in poliomyelitis anisomelia from the early 1960s, and the modern
+    internally-controlled confirmation is a rat model (bojakowski2015). But the experiment has since been
+    performed, unintentionally, thousands of times: every child who receives a radiocephalic or brachiocephalic
+    fistula for haemodialysis access carries a high-flow arteriovenous shunt in ONE arm for years through the
+    growth period, with the other arm as a perfect internal control for every systemic confound."
+  what_is_known: Three PubMed queries - arteriovenous fistula with limb length discrepancy and dialysis or
+    haemodialysis, haemodialysis access with bone growth or limb length in children, and arteriovenous fistula
+    with arm length - return ZERO records for the first and nothing on point for the others. The paediatric
+    dialysis literature measures access patency, maturation and stature, never limb symmetry.
+  what_is_missing: "The measurement. Radiographic or clinical arm-length comparison, fistula side versus
+    contralateral, in paediatric or adolescent access recipients, stratified by age at creation and years of
+    patency. Two caveats must be carried with any positive: R330 finds the upper limb contributes nothing to
+    standing height, so a positive would be a MECHANISM result and not a lever; and chronic kidney disease is
+    a badly confounded growth population - though the contralateral arm controls the confounds that matter."
+  discriminating_experiment: A retrospective review of existing radiographs in a paediatric dialysis or
+    transplant cohort. No new imaging, no intervention, no consent for a procedure - the films exist.
+  blocking: false
+- gap_id: g_l1_450b
+  type: known_unknown
+  layer: L1
+  status: open
+  question: Does an intraosseous depot placed on the METAPHYSEAL side reach the growth plate better than one
+    placed in the epiphyseal secondary ossification centre?
+  why_it_matters: "R373, R374 and R385 to R387 specified the SAG depot in the epiphyseal SOC because that is
+    where trompet2024 placed the bead that produced the only local length gain on the hedgehog axis. But
+    brodin1955 measured the plate's solute supply directly with two intravenous tracers and found entry mainly
+    from the METAPHYSEAL side, with the perichondrium taking up strongly and passing little on. Independently,
+    R442 found that a sustained METAPHYSEAL occlusion lengthens a bone in randomised, sham-controlled rabbits,
+    and that the effect is distance-dependent, present at 5 and 10 mm from the physis and absent at 15 mm.
+    Two separate lines put the metaphysis at the centre of the plate's supply and the file has never compared
+    the two placements."
+  what_is_known: brodin1955's asymmetry is a supply property rather than a tissue property, because an excised
+    plate soaked in vitro took the tracer up from both borders. The corrected timing arithmetic in R450 shows
+    the observed spread is consistent with ordinary diffusion from a one-sided source, so the relevant question
+    is the geometry of the source, not a special transport route.
+  what_is_missing: A head-to-head placement comparison with a measured payload concentration in the plate.
+    Nobody has quantified drug or tracer concentration in physeal cartilage as a function of depot side in any
+    species. The metaphyseal side also carries a specific hazard the epiphyseal side does not - it is the
+    vascular invasion front, and R365 establishes that vascular invasion is the terminal event of closure.
+  discriminating_experiment: In a growing large animal, place an identical labelled depot in the epiphyseal SOC
+    on one side and in the metaphysis 5 to 10 mm from the physis on the other, and measure label concentration
+    across the plate by zone at matched times.
+  blocking: false
+- gap_id: g_l6mech_450c
+  type: known_unknown
+  layer: L6
+  status: open
+  question: What is the signal by which a local intervention at one end of a long bone accelerates the growth
+    plate at the OTHER end while inhibiting the near one?
+  why_it_matters: "brodin1955, 44 rabbits with implanted metal indicators and a contralateral control followed
+    to 160 days, found that periosteal loosening of the PROXIMAL half of the tibia accelerated the DISTAL plate
+    and inhibited the PROXIMAL one, both persisting for the whole 160 days. That is the within-bone version of
+    the cross-bone anomaly in shapiro1981 and cho2025, where a fractured femur is followed by overgrowth of the
+    UNBROKEN ipsilateral tibia in 82 per cent of children. A signal that crosses several centimetres of bone,
+    or a joint, and arrives with OPPOSITE signs at two plates is not explained by local hyperaemia and not
+    explained by a diffusible osteogenic factor - Brodin refutes both himself, the second because a substance
+    released proximally should stimulate the nearer plate most, and the first because his measured blood-volume
+    rise lasted at most two and a half weeks against a 160-day effect."
+  what_is_known: The phenomenon is reproducible, internally controlled, and reported in rabbit and in human
+    children. The modern periosteal literature measures WHOLE-BONE length and therefore reports only the net
+    effect, so the compartment split has not been reported since 1955. R449 independently identified nerve as
+    a candidate limb-wide carrier, since pei2023 shows nerve-derived FGF1 sustains a mesenchymal stem cell pool
+    and denervation reduces it.
+  what_is_missing: Any test of a candidate carrier. The obvious ones are neural, since a nerve is the only
+    structure that spans the whole limb and crosses joints, and mechanical, since removing periosteal restraint
+    at one end changes the load distribution along the whole bone.
+  discriminating_experiment: Repeat Brodin's operation in a normal growing animal with a unilateral surgical
+    or pharmacological sympathetic and sensory denervation, reading growth from BOTH plates separately with
+    implanted markers - which tests whether the cross-plate signal is nerve-borne and simultaneously tests
+    R449's denervation question with the same animals.
+  blocking: false
