@@ -18961,25 +18961,38 @@ gaps:
     microgram, furin-activatable, and its vendor bioactivity assay is IGFBP-3 cleavage - the mechanism itself. Substrates
     FN1 and ITGB1 are cartilage-enriched at 10,529 and 311 CPM (R465). Protease activity is required (protease-dead truncation
     is null).
-  what_is_missing: Any administration of recombinant ADAM12-S to a growing animal, at any dose, by any route, with a length
+  what_is_missing: 'Any administration of recombinant ADAM12-S to a growing animal, at any dose, by any route, with a length
     endpoint. And a resolution of whether the catalogued Arg29-Ser513 construct retains the cysteine-rich domain shi2000adam12
-    implicates in IGFBP-3 binding.
+    implicates in IGFBP-3 binding. RESTATED R469: the readout is specified by the paper own in vitro null. Purified recombinant
+    ADAM12-S had NO effect on murine chondrocyte proliferation by BrdU or flow cytometry, and the in vivo effect is confined
+    to the collagen X-positive region with cells per column unchanged. So the supply experiment must measure Col X-positive
+    zone width and TERMINAL CELL HEIGHT separately from cell WIDTH and separately from zone height (R463), and must use
+    enzymatically active protein - the A12-deltaPM and catalytic-site-mutant arms both show the effect is metalloprotease
+    dependent, which is the one specification a catalogue protein can fail silently.'
   discriminating_experiment: Recombinant human ADAM12-S to normal growing mice or rabbits, contralateral or vehicle control,
     with femur, tibia AND vertebral length by caliper at maturity, BODY WEIGHT recorded throughout, and serum IGFBP-3, IGFBP-5
     and free IGF-1 measured to test the substrate chain.
 - gap_id: g_l12_466b
   type: known_unknown
   layer: L12
-  status: open
-  question: What is the bone length of an Adam12-null mouse? Nobody has ever measured it.
+  status: closed
+  question: CLOSED BY READING, NOT BY EXPERIMENT (R469). What is the bone length of an Adam12-null mouse? Nobody has ever
+    measured it.
   why_it_matters: ADAM12 has NO loss-direction anchor in any species, which is the single structural weakness of the target
     - every other well-validated target in this file has a signed genetic loss effect fixing the direction. A +17 per cent
     gain with no measured loss is an unopposed overexpression.
-  what_is_known: 'kurisaki2003 built the null in 2003 and states the viable homozygotes appear normal and are fertile -
-    a gross observation with no bone measured. IMPC has never phenotyped the gene (CORR-348 case one). MGI carries no skeletal
-    term for any Adam12-alone allele. Human loss is tolerated: LOEUF 0.803, one homozygote, no OMIM entry.'
-  what_is_missing: 'A caliper on the existing null, and the CORR-299-clean version: crossing one of the two commercially
-    available conditional-ready floxed alleles to a cartilage Cre and measuring a bone.'
+  what_is_known: 'ANSWERED. kveiborg2006 Figure 3B is femoral length in 10-week-old ADAM12-deficient (A12-/-), heterozygous
+    (A12+/-) and littermate wildtype (A12+/+) mice, n>7 per group, and it is NULL - bars about 14.3 / 14.4 / 14.8 mm with
+    no significance marker, and the text states no difference was observed. The loss anchor has existed since 2006 in the
+    same paper the gain arm comes from. R466 asserted it had never been measured in any species after querying IMPC (zero
+    Adam12 rows), MGI (23 rows, 19 quadruple knockouts, none skeletal), gnomAD (pLI 2.9e-15, LOEUF 0.803) and kurisaki2003
+    - four external instruments, correctly queried, all irrelevant. CORR-364. The null is the FAVOURABLE reading: ADAM12
+    cannot be a restoration story because removing all of it does nothing, so CORR-203 does not apply to the gain arm at
+    all. It is consistent with buffering by ADAM9, ADAM15 and ADAM17 - which is why kurisaki2003 built quadruple alleles
+    in the first place.'
+  what_is_missing: 'NOTHING for this gap. What remains open is a different question, held in g_l12_466a: whether SUPPLYING
+    active recombinant ADAM12-S to a normal growing animal lengthens bone, read out on collagen X-positive zone width and
+    terminal cell height rather than on proliferation, since the dish arm on proliferation is already null.'
   discriminating_experiment: Caliper femur, tibia and vertebrae in Adam12 null versus wild-type littermates at maturity,
     both sexes, with body weight; and separately cross a floxed allele to a postnatally-inducible cartilage Cre to test
     whether the gene is doing work in an OPEN plate.
@@ -19082,3 +19095,67 @@ gaps:
     in the transverse and longitudinal septa, with terminal chondrocyte HEIGHT and WIDTH measured separately on the same
     sections per R463. The prediction is that the transverse-septum collagen density rises and its GAG density falls disproportionately
     as the plate slows, and that the axial-over-radial softness ratio falls with it.
+- gap_id: g_l12_469a
+  type: known_unknown
+  layer: L12
+  status: open
+  question: How many GAIN-ONLY LEVERS are there - secreted proteins whose loss does nothing and whose supraphysiological
+    supply lengthens bone - and how would a systematic search find them, given that every instrument this atlas uses is
+    a LOSS instrument?
+  why_it_matters: ADAM12 sat invisible to this atlas for 460 rounds and was found by R464 endpoint-first query rather than
+    by any gene-first route, and R469 explains why the gene-first routes could not have found it. A heterozygous coding
+    burden test has no signal without a heterozygous effect, so ADAM12 is absent from kosmicki2026 207. Knockout phenotyping
+    scores a null gene as unphenotyped or negative, so IMPC has zero Adam12 rows. Disease ascertainment needs a loss disease,
+    so HPO and OMIM are empty. All three miss the same class at once and for one shared reason, so any conclusion of the
+    form nothing is left computed from a combination of them inherits one shared blind spot rather than three independent
+    checks - CORR-358 one level up. If the class has more members, they are the only targets in this atlas that are simultaneously
+    secreted, tractable as a supply, and exempt from CORR-203 by construction, because a gene whose total removal does nothing
+    cannot be a restoration story.
+  what_is_known: 'Three probable members, all already in this bibliography and never previously connected. ADAM12: kveiborg2006
+    circulating ADAM12-S gives femur +8 per cent at 5 wk, +9 at 10 wk and +17 per cent at 6 months plus tibia and three
+    caudal vertebrae, gene-dose dependent across two founder lines, metalloprotease dependent - while Figure 3B shows the
+    knockout femur is NULL and ADAM12 is absent from the 207, from IMPC and from HPO. NPPB: suda1998 BNP transgenics with
+    plasma BNP over 200-fold above normal have significantly longer femora and a transgene dose-response across three independent
+    lines, and NPPB likewise has no rows in the 207. OSTN: kanai2017 osteocrin by CNP double transgenics gain additional
+    bone length. In all three the effect appears only above the physiological range and the loss direction is null or unmeasured.'
+  what_is_missing: Nobody has enumerated the class. There is no systematic list of transgenic overexpression experiments
+    with a bone-length endpoint, in any species, and the endpoint-first query strategy that found ADAM12 was run once in
+    R464 across about 40 queries with no decay in yield, so the corpus is not exhausted. It is also unknown whether the
+    class is a real biological category or an artefact of which genes people happened to overexpress - the discriminating
+    property is whether loss is null, and for most overexpression papers the matched knockout has never been calipered.
+  discriminating_experiment: 'Run R464 endpoint-first strategy specifically against the gain direction: query PubMed titles
+    and Europe PMC full text for transgenic, overexpression, gain of function and recombinant supply paired with increased
+    bone length, increased femur length, skeletal overgrowth and increased body length, in every species, WITHOUT conditioning
+    on a gene name. For each hit, check three things in order - is the protein SECRETED, is the background NORMAL rather
+    than a deficiency model, and is the matched loss of function null or unmeasured. The class is real if a substantial
+    fraction of hits are secreted proteins with null knockouts and no entry in the 207; it is an artefact if the hits are
+    dominated by intracellular proteins or by rescue models.'
+- gap_id: g_l8_469b
+  type: contradiction
+  layer: L8
+  status: open
+  question: If ADAM12 loss of function is null in mouse and tolerated in humans, why is HEIGHT the single most represented
+    GWAS trait at the ADAM12 locus, with nine conditionally independent intronic signals and a best P of 6e-73?
+  why_it_matters: 'It decides what kind of target ADAM12 is. If the common variants act on the UP direction, where there
+    demonstrably is a dose-response - kveiborg2006 two founder lines differ from each other at p<0.001 - while the DOWN
+    direction is buffered by ADAM9, ADAM15 and ADAM17, then the human common-variant data and the mouse null are not in
+    conflict at all: they are the two arms of an ASYMMETRIC DOSE-RESPONSE, and this atlas has never had a target with that
+    shape. That reading would also make the human data a genuine anchor for the supply direction, which the class otherwise
+    entirely lacks. If instead the signal belongs to a neighbouring gene, ADAM12 loses its only human evidence and reverts
+    to a mouse-only transgenic result.'
+  what_is_known: 'yengo2022 maps nine conditionally independent height associations to intronic variants inside the 376
+    kb ADAM12 gene body, best rs7920091 at P=6e-73, split five height-decreasing and four height-increasing, so the lead
+    alleles give no gene direction. ADAM12 is absent from kosmicki2026 207 coding burden genes, consistent with a regulatory
+    rather than a coding mechanism - CORR-358 shape. Human loss is tolerated: pLI 2.9e-15, LOEUF 0.803, 70 observed pLoF
+    against 106 expected, one homozygote, no OMIM entry, zero HPO rows. Mouse Adam12 knockout femoral length is null at
+    10 weeks (kveiborg2006 Fig 3B), and kurisaki2003 built Adam9/12/15/17 and Adam9/12/15/19 quadruple alleles because single
+    nulls are uninformative.'
+  what_is_missing: 'No eQTL colocalisation has been reported between the ADAM12 height signals and ADAM12 expression in
+    any tissue, so it is not established that the variants act on ADAM12 at all, nor in which direction. No measurement
+    exists of circulating or growth-plate ADAM12 protein against height in humans. And the redundancy hypothesis is untested
+    for length: no Adam9/12/15/17 or Adam9/12/15/19 compound animal has had a femur or tibia measured.'
+  discriminating_experiment: Colocalise the nine ADAM12 height signals against ADAM12 cis-eQTLs and, where available, pQTLs,
+    and align each to the height-increasing allele - if the height-increasing allele consistently raises ADAM12 expression
+    the asymmetric dose-response reading is supported and the human data anchor the supply direction. In parallel, caliper
+    femur and tibia in an Adam9/12/15/17 compound null, which tests the redundancy explanation for the single-null result
+    directly.

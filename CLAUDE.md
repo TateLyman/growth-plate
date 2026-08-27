@@ -13045,17 +13045,22 @@ is the configuration the CNP ligand, the RAAS and PDE5A all fail.**
 test by the route that actually applies to it. ADAM12 is now the single most interesting unworked target in the file.**
 
 ## 🧬🧬🧬🧬 R466 — **ADAM12 WORKED TO A DECISION: THE PROTEIN IS ON A CATALOGUE SHELF WITH AN ENDOTOXIN SPEC AND
-## A VENDOR BIOACTIVITY ASSAY THAT *IS* THE MECHANISM, ITS TOP GWAS TRAIT IS HUMAN HEIGHT AT P=6e-73 — AND THE
-## LOSS DIRECTION HAS NEVER BEEN MEASURED IN ANY SPECIES DESPITE THE MOUSE EXISTING FOR 23 YEARS.**
+## A VENDOR BIOACTIVITY ASSAY THAT *IS* THE MECHANISM, ITS TOP GWAS TRAIT IS HUMAN HEIGHT AT P=6e-73 — ⛔ **AND ITS
+## THIRD HEADLINE, "THE LOSS DIRECTION HAS NEVER BEEN MEASURED IN ANY SPECIES", IS WITHDRAWN BY R469: IT WAS
+## MEASURED, IN THE SAME PAPER, AND IT IS NULL.**
 
-⛔ **ONE — THE STRUCTURAL PROBLEM: THE +17% IS AN UNOPPOSED GAIN OF FUNCTION.** **IMPC has ZERO Adam12 rows** in the
-12,068-row bulk length file, zero in `statistical-results-ALL`, and the live API returns `latest_phenotype_status:
-None` — **CORR-348 case one, never phenotyped.** MGI carries 23 rows and **CORR-341 is load-bearing: NINETEEN ARE
-QUADRUPLE KNOCKOUTS** (Adam9/12/15/17 or Adam9/12/15/19), and every cardiac, valve, septal and eyelid term belongs to
-those. **Only four rows are Adam12-alone and NOT ONE IS SKELETAL.** `kurisaki2003` states the viable homozygotes appear
-normal and are fertile — **a gross observation with NO BONE MEASURED, in a mouse that has existed since 2003.**
-Human loss is tolerated: **pLI 2.9e-15, LOEUF 0.803, 70 observed pLoF vs 106 expected, ONE HOMOZYGOTE, no OMIM entry,
-zero HPO rows.** **Every other well-validated target in this file has a loss anchor. This one has none.**
+⛔⛔ **ONE — THIS PARAGRAPH IS WITHDRAWN BY R469 AND ITS CENTRAL CLAIM IS FALSE. THE LOSS ANCHOR IS FIGURE 3B OF
+`kveiborg2006` ITSELF — THE SAME PAPER R464, R465 AND R466 ARE ALL BUILT ON — AND IT IS NULL. READ R469 FIRST.**
+Kept as written so the error is visible: ~~THE STRUCTURAL PROBLEM: THE +17% IS AN UNOPPOSED GAIN OF FUNCTION.~~
+**IMPC has ZERO Adam12 rows** in the 12,068-row bulk length file, zero in `statistical-results-ALL`, and the live API
+returns `latest_phenotype_status: None` — **CORR-348 case one, never phenotyped.** MGI carries 23 rows and **CORR-341
+is load-bearing: NINETEEN ARE QUADRUPLE KNOCKOUTS** (Adam9/12/15/17 or Adam9/12/15/19), and every cardiac, valve,
+septal and eyelid term belongs to those. **Only four rows are Adam12-alone and NOT ONE IS SKELETAL.** ⛔ **All of that
+is TRUE OF IMPC AND MGI AND IRRELEVANT, because the measurement was never in a screen — it was in the paper.**
+`kurisaki2003` states the viable homozygotes appear normal and are fertile. Human loss is tolerated: **pLI 2.9e-15,
+LOEUF 0.803, 70 observed pLoF vs 106 expected, ONE HOMOZYGOTE, no OMIM entry, zero HPO rows** — ✓ **and THAT half
+survives and is now corroborated by the mouse rather than merely unopposed by it.**
+~~Every other well-validated target in this file has a loss anchor. This one has none.~~
 
 ⭐⭐⭐ **TWO — BUT ITS TOP GWAS TRAIT IS HUMAN HEIGHT AND THIS ATLAS HAD NO IDEA.** ADAM12 is absent from
 `kosmicki2026`'s 207 and has no HPO annotation — **and of all its GWAS Catalog associations the single most represented
@@ -13104,15 +13109,16 @@ mechanism as stated is contradicted at the extreme and the dose-response has nev
 laboratory, the same ADAM12-S construct and the same protease-dead control, and it **names the promoter: MUSCLE
 CREATINE KINASE** — a postnatally-activating driver secreting into the circulation, **which is favourable for
 CORR-299.** It reports **FEMALE** transgenics gaining body weight, total and abdominal fat and herniation — ⭐ **while
-MALE TRANSGENICS WERE ONLY SLIGHTLY OVERWEIGHT AND DID NOT BECOME OBESE.** `kveiborg2006` does not state the sex of its
-6-month animals or report body weight, **so a body-size confound must be read against the +17% — but it is
-sex-dependent and much weaker in the relevant sex.** ⚠ Per `campion2022tofacitinib` a length endpoint must be read
-against body weight before it is read as a bone effect.
+MALE TRANSGENICS WERE ONLY SLIGHTLY OVERWEIGHT AND DID NOT BECOME OBESE.** ⛔ **"`kveiborg2006` does not state the sex
+of its 6-month animals or report body weight" IS WITHDRAWN BY R469 — Figure 2A reports body weight for BOTH SEXES to
+25 weeks and there is no difference.** ⚠ Per `campion2022tofacitinib` a length endpoint must be read against body
+weight before it is read as a bone effect, **and R469 shows the +8% and +9% arms sit INSIDE the clean weight window
+while the +17% at 6 months sits at its edge.**
 
 🧭 **VERDICT: A MECHANISM RESULT, NOT YET A TARGET — AND THE MISSING OBJECT IS NOT A MOLECULE, IT IS TWO
 MEASUREMENTS.** ⭐ **① Supply recombinant ADAM12-S to a NORMAL growing animal and use a caliper** (`g_l12_466a`) —
-the direction is to RAISE a secreted protein and the protein is purchasable today. ⭐ **② CALIPER THE 23-YEAR-OLD NULL,
-or cross the floxed allele to a cartilage Cre** (`g_l12_466b`) — the loss anchor every other target here has.
+the direction is to RAISE a secreted protein and the protein is purchasable today. ⛔ **② IS WITHDRAWN — "CALIPER THE
+23-YEAR-OLD NULL" WAS ALREADY DONE, IN THE PAPER, AND IT IS NULL (R469). `g_l12_466b` IS CLOSED.**
 
 ## 🧫🧫🧫🧫🧫 R467 — **THE 1963 PAPAIN EXPERIMENT WAS NOT BLOCKED. READ IN FULL, IT IS THE HIGHEST RESPONSE RATE OF
 ## ANY GROWTH-STIMULATION METHOD OF ITS ERA, ITS COST IS DOSE-SEGREGATED, IT HAS A CROSS-BONE FEMORAL ARM — AND ITS
@@ -13489,3 +13495,124 @@ Miltner 1937, both null.
 closes on ATTAINED LENGTH rather than on absence of data. What survives from it is exactly what R450 identified: the
 ARTERIOVENOUS ANASTOMOSIS is the only arm with centimetre-scale effects sustained over years, it is the only one
 clearly above the ±7 mm noise floor, and it is surgical and therefore excluded here on route.**
+
+## 🧬⛔🧬⛔ R469 — **THE ADAM12 LOSS ANCHOR EXISTS, IT IS FIGURE 3B OF THE SAME PAPER R464/R465/R466 ARE BUILT ON,
+## AND IT IS NULL. I SPENT R466 SEARCHING IMPC, MGI AND gnomAD FOR A MEASUREMENT THAT WAS ON THE FACING PAGE.
+## ⭐ AND THE NULL DOES NOT WEAKEN THE ARM — IT NAMES A TARGET CLASS EVERY SYSTEMATIC INSTRUMENT IN THIS FILE IS
+## BLIND TO BY CONSTRUCTION.**
+
+⛔⛔ **CORR-364 — CORR-309's SHAPE, COMMITTED AGAINST MY OWN ROUND, AND THE WORST-SITED INSTANCE SO FAR.** R466's
+first section is headed *"THE STRUCTURAL PROBLEM: THE +17% IS AN UNOPPOSED GAIN OF FUNCTION"* and closes *"Every other
+well-validated target in this file has a loss anchor. This one has none."* It reached that by querying **IMPC** (zero
+Adam12 rows), **MGI** (23 rows, 19 of them quadruple knockouts, none skeletal), **gnomAD** (pLI 2.9e-15, LOEUF 0.803)
+and **`kurisaki2003`** (viable, fertile, no bone measured) — four external instruments, correctly, and all irrelevant.
+⭐ **`kveiborg2006` FIGURE 3B IS FEMORAL LENGTH IN 10-WEEK-OLD `A12−/−`, `A12+/−` AND LITTERMATE `A12+/+` MICE, n>7
+PER GROUP, AND THE TEXT STATES IT PLAINLY: no difference between ADAM12-deficient, heterozygous and wildtype mice.**
+Bars ≈ **14.8 / 14.4 / 14.3 mm**, and the panel carries **no significance marker** while Fig 3A's positive arm carries
+`b` = p<0.001. **THE LOSS DIRECTION HAS BEEN MEASURED SINCE 2006, IN THE PAPER THIS FILE HAS BEEN QUOTING FOR THREE
+ROUNDS.** `g_l12_466b` — *"caliper the 23-year-old null"* — **IS CLOSED, NOT BY AN EXPERIMENT BUT BY READING.**
+⭐ **THE GENERALISABLE FORM, AND IT IS NEW: R466 ASKED "IS THERE A LOSS ANCHOR?" AND SEARCHED THE PLACES LOSS ANCHORS
+NORMALLY LIVE. THE RIGHT FIRST QUERY WAS "DOES THE PAPER I AM ALREADY HOLDING CONTAIN ONE?"** CORR-309 says record the
+ARM and not the citation; this says a gain-of-function paper routinely contains its own loss arm as a control, because
+that is what a careful author does — and it will never appear in a screen, a burden table or a phenotype database.
+**Before searching an external instrument for a target's opposite direction, read the figure list of the primary you
+already have.**
+
+⭐⭐⭐⭐ **ONE — AND THE NULL IS THE FAVOURABLE READING, NOT THE UNFAVOURABLE ONE. IT RETIRES CORR-203 FROM THIS
+TARGET ENTIRELY.** Every supply proposal in this atlas has had to answer *"is this restoration of a deficit?"* — it
+killed the cyproheptadine arm, it governs every NAC and cysteamine result, it discounts `li2021`'s +67% femur and
+`martin2018`'s cilium rescue. **ADAM12 CANNOT BE A RESTORATION STORY, BECAUSE REMOVING ALL OF IT DOES NOTHING.** The
++8 / +9 / +17% is measured against animals with a fully intact endogenous gene, and the knockout of that gene is
+indistinguishable from wild type. ⭐ **This is the cleanest ELEVATION-ABOVE-NORMAL result in the file: the physiological
+range is demonstrably not rate-limiting, and the effect appears only above it.**
+⚠ **The honest counter, stated with it: the family is redundant by design — `kurisaki2003`'s own compound alleles are
+Adam9/12/15/17 and Adam9/12/15/19 quadruples, which exist BECAUSE single nulls are uninformative — so the null is
+consistent with buffering rather than with irrelevance.** That does not weaken the gain arm; it explains the null.
+
+⭐⭐⭐ **TWO — AND IT NAMES A TARGET CLASS THIS FILE HAS NEVER NAMED, WHICH IS WHY ADAM12 SAT INVISIBLE FOR 460
+ROUNDS: THE GAIN-ONLY LEVER.** A secreted protein whose **loss does nothing** and whose **supraphysiological supply
+lengthens bone** is invisible to all three of this atlas's systematic instruments **simultaneously and for the same
+structural reason — every one of them is a LOSS instrument:**
+| instrument | why it cannot see a gain-only lever |
+|---|---|
+| **`kosmicki2026`'s 207** | a het pLoF burden test; no het effect → no signal. **ADAM12 is absent from the 207** |
+| **IMPC / MGI** | knockout phenotyping; loss is null → the gene is either unphenotyped or scored negative |
+| **HPO / OMIM** | disease ascertainment; no loss disease → **zero HPO rows, no OMIM entry** |
+⭐ **AND THE ONLY INSTRUMENT THAT SEES IT IS A TRANSGENIC OVEREXPRESSION OR AN EXOGENOUS SUPPLY EXPERIMENT — WHICH IS
+EXACTLY WHAT R464's ENDPOINT-FIRST QUERY RETURNED, AND EXACTLY WHY A GENE-FIRST SEARCH NEVER COULD.** That is
+**CORR-358 one level up**: R432 showed a het burden table cannot contain a recessive gene by construction; this shows
+that **all three loss instruments miss the same class at once**, so "nothing is left" computed from any combination of
+them inherits a shared blind spot rather than three independent ones.
+⭐ **AND THE CLASS HAS OTHER MEMBERS ALREADY IN THIS FILE, PREVIOUSLY UNCONNECTED:** `suda1998`'s **BNP** transgenic
+(plasma BNP >200-fold above normal, femur significantly longer, and NPPB likewise absent from the 207) and
+`kanai2017`'s **osteocrin × CNP** double transgenics. **Three secreted proteins, three overexpression length
+endpoints, none of them in the 207, none with a loss phenotype.**
+⚠ **AND THE PRICE OF THE CLASS IS STATED IN THE SAME BREATH: a lever with no endogenous dose-response has no human
+genetic anchor in EITHER direction, so there is no population-scale estimate of what supplying it is worth.**
+
+⚠ **THREE — THE ONE GENUINE TENSION, RECORDED NOT RESOLVED: IF LOSS IS NULL, WHY IS ADAM12's TOP GWAS TRAIT HEIGHT AT
+P=6e-73?** R466 found nine conditionally independent `yengo2022` signals, all intronic within the 376 kb gene body.
+Three readings, and the file cannot choose between them: **(a)** the common variants act on the **UP** direction, where
+there demonstrably is a dose-response (the two founder lines differ from each other at p<0.001), while the DOWN
+direction is buffered by ADAM9/15/17 — **the reading most consistent with both datasets**; **(b)** the signal belongs
+to a neighbouring gene despite being intronic; **(c)** mouse redundancy is not human redundancy. **Under (a) the human
+common-variant data and the mouse null are not in conflict at all — they are the two arms of an asymmetric
+dose-response, and this file has never had a target with that shape.**
+
+⭐⭐ **FOUR — THE VERTEBRAL ENDPOINT EXISTS AND R464 SAID IT DID NOT.** R464 wrote *"ADAM12-S, Pten and BNP are the
+ONLY interventions found with any axial length claim, and NONE REPORTS A VERTEBRAL NUMBER."* ⭐ **`kveiborg2006`
+FIGURE 2B MEASURES FEMUR, TIBIA *AND THREE CONSECUTIVE TAIL VERTEBRAE* IN 6-MONTH-OLD TRANSGENICS, n>7 PER GROUP,
+WITH THE VERTEBRAL BAR MARKED `a` = p<0.005** (femur and tibia both `b` = p<0.001). **It is figure-only — bars, no mm
+in the text — but it is a measured, significance-tested, NORMAL-BACKGROUND axial length endpoint, which is more than
+this file credited it with.** ⚠ **CAUDAL, not lumbar** — the same limitation R455 imposed on dabogratinib's wild-type
+arm, and the axial compartment that matters for a human is the one nobody has measured under any agent.
+
+⭐ **FIVE — THE BODY-WEIGHT CONFOUND IS ANSWERED BY THE PAPER, AND THE ANSWER SPLITS THE ARMS.** Figure 2A plots
+**total body weight of FEMALE AND MALE transgenics versus littermate controls to 25 weeks, n>5 per group**, and the
+text states there was **no overall difference in size or total body weight** over that window. ⛔ **BUT THE +17% IS AT
+26 WEEKS, AND THE SAME PARAGRAPH SAYS OLDER TRANSGENICS — ESPECIALLY FEMALES — DEVELOP INCREASED TOTAL BODY FAT AND
+KYPHOSIS.** → ⭐ **THE +8% AT 5 WEEKS AND +9% AT 10 WEEKS SIT INSIDE THE CLEAN WEIGHT WINDOW AND ARE THE NUMBERS TO
+QUOTE; THE HEADLINE +17% SITS AT ITS EDGE.** Per `campion2022tofacitinib`, a length endpoint is read against body
+weight before it is read as a bone effect — and here that discipline costs the headline and spares the mechanism.
+
+⭐⭐ **SIX — THE ZONE DECOMPOSITION IS AN h_term RESULT AND IT PASSES CORR-292's TEST.** Proximal tibia at 5, 7.5 and
+10 weeks: growth plate organisation **apparently normal**; overall plate width **statistically significantly
+increased**; and the increase is **confined to the collagen type X–POSITIVE region — prehypertrophic plus hypertrophic
+— with NO CHANGE in the Col X–NEGATIVE region (proliferative plus resting).** BrdU⁺ cells in the proliferative zone
+**increased** at 7.5 weeks; **cells per column NOT significantly different**; ApoTag apoptosis **not different**.
+⭐ **A WIDER HYPERTROPHIC ZONE *WITH* A LONGER BONE IS A GENUINE h_term GAIN AND NOT CORR-292's JAM — charge AND
+discharge, which is the pairing that has failed nine times in this file.** And it is the term CORR-361 prices at 44–59%
+of elongation. ⚠ **Cells per column unchanged means AMPLIFICATION IS NOT THE MECHANISM** — which is unusual, because
+R423, R449, R455 and `thorngren1981` all find amplification carries the variance and terminal cell size is
+near-invariant. **ADAM12-S moves the term those four say does not normally move.**
+
+⛔⛔ **SEVEN — AND THE MOST PRACTICALLY IMPORTANT LINE IN THE PAPER IS A NULL ON THE PURCHASABLE REAGENT.**
+R466's ranked ask ① was *"supply recombinant ADAM12-S to a NORMAL growing animal and use a caliper — the protein is
+purchasable today."* **The dish arm has already been run: murine chondrocytes treated with purified recombinant
+ADAM12-S showed NO effect on proliferation by EITHER BrdU incorporation OR flow cytometry**, and the authors conclude
+the in vivo effect **involves additional factors present only in vivo.**
+⭐ **THAT DOES NOT KILL THE SUPPLY EXPERIMENT — IT SPECIFIES IT. The dish measured PROLIFERATION, and the in vivo
+result is in the HYPERTROPHIC zone with proliferation not the load-bearing term (cells per column unchanged). So the
+animal experiment must read out HYPERTROPHIC ZONE WIDTH, Col X⁺ region width and TERMINAL CELL HEIGHT — per R463,
+separately from cell WIDTH and separately from zone height — and NOT proliferation.** `g_l12_466a` restated.
+✓ **And the catalytic requirement is confirmed twice over: `A12-ΔPM`, lacking the pro- and metalloprotease domains,
+gives NO change in bone length (Fig 3A, ≈15.4 TG vs ≈15.6 LC against A12-HIGH's ≈17.7 vs ≈15.2 at p<0.001) — and in
+the adhesion assay the CATALYTIC-SITE MUTANT showed no significant effect.** Whatever is supplied must be
+enzymatically active, which is the one specification a catalogue protein can fail silently.
+
+⭐ **EIGHT — AND THE ADHESION MECHANISM GETS ITS NUMBERS AND ITS OWN INTERNAL CONTROL.** ADAM12-S reduced chondrocyte
+attachment to **collagen type II by 46% and fibronectin by 36%**; in **β1-integrin-deficient** chondrocytes the
+reductions were **17% and 38%** — so the fibronectin arm survives loss of β1 almost intact and the collagen II arm
+does not. ⚠ **R466 recorded `aszodi2003` (cartilage β1-integrin ablation → chondrodysplasia from lost collagen II
+adhesion) as contradicting the mechanism at the genetic extreme. That stands, and this refines it: partial soluble
+reduction lengthens, total receptor ablation shortens, and ADAM12-S is only partly β1-dependent — R281's band shape
+with a second, β1-independent arm.** ✓ And R465 already showed the substrates are abundantly present in the human
+plate: **FN1 ratio 2.11 at 10,528.9 CPM — one of the most abundant transcripts in the tissue — with ITGB1 1.71 at
+310.7 and COL2A1 the 7.65 calibrator.**
+
+🧭 **WHAT R469 CHANGES.** ADAM12's evidence is **stronger** than R466 left it, not weaker: the body-weight confound is
+answered, the vertebral endpoint exists, the catalytic requirement is doubly controlled, and CORR-203 does not apply
+to it at all. What is withdrawn is the framing — **it is not an unopposed gain of function awaiting a loss anchor; it
+is a GAIN-ONLY lever whose loss anchor is null by design, which is a target class every systematic screen in this
+atlas is blind to.** ⭐ **And the one experiment that matters is unchanged and better specified: supply active
+ADAM12-S to a normal growing animal and measure the Col X⁺ zone and terminal cell height alongside the caliper.**

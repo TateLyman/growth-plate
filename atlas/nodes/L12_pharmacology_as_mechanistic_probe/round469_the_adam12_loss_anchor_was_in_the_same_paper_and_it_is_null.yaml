@@ -1,0 +1,140 @@
+id: round469_the_adam12_loss_anchor_was_in_the_same_paper_and_it_is_null
+name: 'R469: the ADAM12 loss anchor was figure 3B of the same paper and it is null, which names a gain-only target class
+  every loss instrument in this atlas is blind to'
+aliases:
+- ADAM12 loss anchor
+- CORR-364
+- gain-only lever class
+- kveiborg2006 figure 3B
+type: hypothesis
+layer: L12
+stub: false
+confidence: B
+last_verified: '2026-08-27'
+species_basis: mouse
+human_evidence: indirect
+human_evidence_note: 'ADAM12 is absent from kosmicki2026 207 coding burden genes, has no OMIM entry and zero HPO rows,
+  and human loss is tolerated (pLI 2.9e-15, LOEUF 0.803, 70 observed pLoF against 106 expected, one homozygote). The
+  only human signal is common and regulatory: yengo2022 maps nine conditionally independent height associations to intronic
+  variants inside the 376 kb ADAM12 gene body, best rs7920091 at P=6e-73, split five height-decreasing and four height-increasing,
+  so the human data carry no gene direction. All length endpoints here are mouse.'
+translation_risk: high
+translation_risk_reason: Every length endpoint is a transgenic mouse overexpressing human ADAM12-S from a muscle creatine
+  kinase promoter into the circulation at levels far above physiological. No human has been given ADAM12-S, no recombinant
+  ADAM12 preparation has been given to any animal with a length endpoint, and the one in vitro test of the purchasable
+  reagent was null on chondrocyte proliferation.
+summary: 'R466 headlined that ADAM12 has no loss anchor and that the loss direction had never been measured in any species
+  despite the knockout existing since 2003. That is false. kveiborg2006 Figure 3B measures femoral length in 10-week-old
+  A12-/-, A12+/- and littermate A12+/+ mice, n>7 per group, and it is NULL - bars about 14.3, 14.4 and 14.8 mm with no
+  significance marker, and the text states no difference was observed. R466 reached its claim by querying IMPC, MGI,
+  gnomAD and kurisaki2003 - four external instruments, correctly queried, all irrelevant, because the measurement was
+  a control panel in the gain-of-function paper this file has quoted for three rounds. CORR-364: before searching an
+  external instrument for a target opposite direction, read the figure list of the primary you already hold, because
+  a careful gain-of-function paper routinely contains its own loss arm and that arm will never appear in a screen or
+  a phenotype database. The null is the favourable reading rather than the unfavourable one. ADAM12 cannot be a restoration
+  story because removing all of it does nothing, so CORR-203 does not apply to the gain arm at all - this is the cleanest
+  elevation-above-normal result in the atlas, with the physiological range demonstrably not rate-limiting and the effect
+  appearing only above it. The honest counter is that the ADAM family is redundant by design, which is why kurisaki2003
+  built Adam9/12/15/17 and Adam9/12/15/19 quadruple alleles, so the null is consistent with buffering rather than with
+  irrelevance - that explains the null without weakening the gain arm. The structural finding is a target class this
+  atlas has never named: a GAIN-ONLY LEVER, a secreted protein whose loss does nothing and whose supraphysiological supply
+  lengthens bone. Such a lever is invisible to all three of the systematic instruments used here simultaneously and for
+  one shared reason - every one of them is a LOSS instrument. A heterozygous coding burden test has no signal without
+  a heterozygous effect, so ADAM12 is absent from the 207. Knockout phenotyping scores a null gene as unphenotyped or
+  negative, so IMPC has zero rows. Disease ascertainment needs a loss disease, so HPO and OMIM are empty. Only a transgenic
+  overexpression or an exogenous supply experiment can see the class, which is exactly what R464 endpoint-first query
+  returned and exactly why a gene-first search never could. This is CORR-358 one level up: R432 showed a het burden table
+  cannot contain a recessive gene by construction, and this shows all three loss instruments miss the same class at once,
+  so a claim that nothing is left computed from any combination of them inherits one shared blind spot rather than three
+  independent checks. Other members already in this file, previously unconnected: suda1998 BNP transgenic, with plasma
+  BNP over 200-fold above normal and a significantly longer femur and NPPB likewise absent from the 207, and kanai2017
+  osteocrin by CNP double transgenics. The price of the class is that a lever with no endogenous dose-response has no
+  human genetic anchor in either direction and therefore no population-scale estimate of what supplying it is worth.
+  Four further corrections to earlier rounds fall out of the same two pages. R464 wrote that no intervention with an
+  axial length claim reports a vertebral number; Figure 2B measures three consecutive tail vertebrae at six months, n>7,
+  significant at p<0.005, which is figure-only but measured and significance-tested in a normal background, and caudal
+  rather than lumbar. R466 wrote that the paper does not report body weight; Figure 2A plots both sexes to 25 weeks with
+  no overall difference in size or total body weight, which places the +8 per cent at 5 weeks and +9 per cent at 10 weeks
+  inside a clean weight window and the headline +17 per cent at 26 weeks at its edge, with older transgenics especially
+  females developing increased body fat and kyphosis. The zone decomposition is an h_term result that passes CORR-292
+  - the plate width increase is confined to the collagen X-positive prehypertrophic and hypertrophic region with no change
+  in the collagen X-negative region, cells per column are unchanged and apoptosis is unchanged, and the bone is longer,
+  so charge and discharge both move and amplification is not the mechanism, which is unusual against R423, R449, R455
+  and thorngren1981 all finding that amplification carries the variance. And the purchasable reagent has already failed
+  once in a dish: purified recombinant ADAM12-S had no effect on murine chondrocyte proliferation by BrdU or flow cytometry
+  and the authors attribute the in vivo effect to additional factors present only in vivo, which does not kill the supply
+  experiment but specifies its readout as collagen X-positive zone width and terminal cell height rather than proliferation,
+  and specifies that the protein must be enzymatically active because both the A12-deltaPM transgenic and the catalytic-site
+  mutant are inert.'
+quantitative:
+- parameter: ADAM12 loss of function, femoral length at 10 weeks
+  value: A12-/- about 14.3, A12+/- about 14.4, A12+/+ about 14.8 mm; no significance marker on the panel and the text
+    states no difference was observed
+  unit: mm
+  species: mouse
+  source_ref: kveiborg2006
+  note: Figure 3B, n>7 per group, bar chart so values are figure-read; this is the loss anchor R466 asserted did not
+    exist
+- parameter: ADAM12-S gain of function, femoral length gain by age
+  value: +8 per cent at 5 weeks (p<0.005), +9 per cent at 10 weeks (p<0.001), +17 per cent at 6 months (p<0.001)
+  unit: per cent over littermate controls
+  species: mouse
+  source_ref: kveiborg2006
+  note: Figure 2C; the first two sit inside the window in which body weight is shown equal, the third does not
+- parameter: ADAM12-S gain of function, axial endpoint
+  value: three consecutive tail vertebrae significantly longer at 6 months, p<0.005, against femur and tibia both p<0.001
+  unit: significance only, bars with no mm in text
+  species: mouse
+  source_ref: kveiborg2006
+  note: Figure 2B, n>7 per group; CAUDAL vertebrae, not lumbar, the same limitation R455 imposed on dabogratinib wild-type
+    arm
+- parameter: Metalloprotease requirement
+  value: A12-HIGH about 17.7 transgenic versus 15.2 mm control at p<0.001, while A12-deltaPM lacking the pro- and metalloprotease
+    domains gives about 15.4 versus 15.6 mm and no significance
+  unit: mm
+  species: mouse
+  source_ref: kveiborg2006
+  note: Figure 3A; independently confirmed in the adhesion assay where the catalytic-site mutant showed no significant
+    effect
+- parameter: Body weight of ADAM12-S transgenics versus littermate controls
+  value: no overall difference in size or total body weight up to 25 weeks in either sex
+  unit: grams, both sexes plotted
+  species: mouse
+  source_ref: kveiborg2006
+  note: Figure 2A, n>5 per group; older transgenics especially females develop increased total body fat and kyphosis
+- parameter: Growth plate zone decomposition under ADAM12-S
+  value: overall plate width significantly increased with the increase confined to the collagen type X-positive region
+    (prehypertrophic plus hypertrophic) and no change in the collagen X-negative region (proliferative plus resting);
+    BrdU+ cells in the proliferative zone increased at 7.5 weeks; cells per column not significantly different; ApoTag
+    apoptosis not different
+  unit: qualitative and per-region width
+  species: mouse
+  source_ref: kveiborg2006
+  note: proximal tibia at 5, 7.5 and 10 weeks; a wider hypertrophic zone WITH a longer bone passes CORR-292
+- parameter: Recombinant ADAM12-S on chondrocyte proliferation in vitro
+  value: no effect by either BrdU incorporation or flow cytometry of propidium iodide-stained cells
+  unit: 'null'
+  species: mouse
+  source_ref: kveiborg2006
+  note: the authors conclude the in vivo effect involves additional factors present only in vivo; this is a null on the
+    modality R466 proposed and it specifies the readout rather than killing it
+- parameter: ADAM12-S effect on chondrocyte attachment
+  value: collagen type II reduced 46 per cent and fibronectin 36 per cent in control chondrocytes; 17 and 38 per cent
+    in beta1-integrin-deficient chondrocytes; catalytic-site mutant no significant effect
+  unit: per cent reduction in attachment
+  species: mouse
+  source_ref: kveiborg2006
+  note: the fibronectin arm is largely beta1-independent and the collagen II arm is not
+key_refs:
+- ref_id: kveiborg2006
+- ref_id: kurisaki2003
+- ref_id: yengo2022
+- ref_id: kawaguchi2002
+- ref_id: aszodi2003
+- ref_id: suda1998
+- ref_id: kanai2017
+- ref_id: campion2022tofacitinib
+open_questions:
+- g_l12_466a
+- g_l12_469a
+- g_l8_469b
