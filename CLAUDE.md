@@ -11246,3 +11246,435 @@ independent lines pointing at it — a 5–7× enriched destruction pathway in h
 that accumulates the substrate, and a −0.695 cm human effect on the priming enzyme at P=2.9e-16 — **a single
 cheap experiment that discriminates the two competing readings, and a fixation protocol that explains why
 nobody has run it.** `g_l5_445a`.
+
+## 🐔🐔 R446 — **THE AGRICULTURAL AND VETERINARY READ. Four measurements, and the largest artificial-selection
+## experiment on vertebrate growth rate ever run DID NOT BUY BONE LENGTH.**
+
+⭐⭐ **ONE — THE INORGANIC HALF OF R440's OSMOTIC BUDGET WAS MEASURED IN 1985, BY ZONE, IN ABSOLUTE UNITS, AND
+HAS ONLY EVER BEEN CITED FOR MINERALISATION.** `hargest1985` — quantitative electron probe analysis of chick
+epiphyseal growth cartilage, **two independent anhydrous preparations, four zones**: matrix **Na up to
+550 and K up to 200 mmol/kg wet weight**, which the authors say are largely bound to fixed anions; matrix
+**S about 400 mmol/kg wet weight**, rising slightly with maturation; and **INSIDE THE CELLS Na EXCEEDED K —
+140 versus 20-34 mmol/kg wet weight** — which the authors themselves suggest may reflect hypoxia.
+⭐ **R440 recorded that 93% of the osmotic drive for hypertrophy is unaccounted for, on `farnum2002`'s ORGANIC
+osmolyte panel. This is the INORGANIC half of the same budget, in the same tissue class, measured forty years
+earlier, and the two have never been summed.** ⛔ Chick, and cell-versus-matrix partition in an electron-probe
+preparation is not a free-solute measurement — but a cell whose intracellular Na exceeds its K is not a cell
+in ordinary ionic homeostasis, and nobody has asked what that means for its volume.
+⭐ It is also the closest thing to a **zone-resolved fixed-charge-density readout** that exists in a growth
+plate, which `fixed_charge_density` states does not exist in any species.
+
+⭐⭐ **TWO — A DIETARY SUBTRACTION THAT LENGTHENS BONE IN A NORMAL ANIMAL.** `jugdaohsingh2008`, titled
+*"Increased longitudinal growth in rats on a silicon-depleted diet"*: 21-day-old female Sprague-Dawley rats,
+**n=20 depleted versus n=10 supplemented, 26 weeks, a 24-fold intake difference**, with serum and urinary
+silicon confirming exposure (P=0.03 and 0.004). **Removing a trace element made normal animals LONGER.**
+⚠ Female, one species, and the deficiency direction of silicon is classically the opposite — `carlisle1972`
+reports silicon-deficient chicks with shorter leg bones of smaller circumference through **reduced collagen
+AND glycosaminoglycan synthesis**, i.e. a MATRIX lesion rather than a mineralisation one (agent-reported,
+primary not read here). **Two directions, two species, opposite signs — a band, not an arrow, and recorded as
+one.** No silicon intervention has a human height endpoint.
+
+⛔⛔ **THREE — AND THE MOST INSTRUCTIVE NEGATIVE: SIXTY YEARS OF THE MOST INTENSE ARTIFICIAL SELECTION EVER
+APPLIED TO A VERTEBRATE'S GROWTH RATE DID NOT BUY BONE LENGTH.** `santos2022` — **14 broiler strains, 7,216
+birds**, compared at two MATCHED target weights so that size is held constant: the **conventional
+fastest-growing birds had the NARROWEST AND SHORTEST TIBIAE at 2.1 kg (P<0.001) and the SHORTEST TIBIAE at
+3.2 kg (P<0.001)**. Selection for growth RATE produced a bird that reaches weight sooner with a **worse**
+bone. ⭐ **That is R360's Regime 2 in an agricultural population: raising throughput reaches the terminus
+sooner and does not add length** — reached from poultry science, at n=7,216, by people who were not asking
+the question.
+⛔ **AND THE COMPANION GAP IS LARGE AND CHEAP: NOBODY HAS COMPARED THE GROWTH-PLATE CELLULAR ARCHITECTURE OF
+FAST- VERSUS SLOW-GROWING BROILER LINES.** The endpoint is always whole-bone morphometry — length, width,
+robusticity, ash. **Chondrocyte number, terminal cell size, cells per column and matrix per cell have never
+been measured between lines**, in the one vertebrate where growth rate has been driven to its extreme under
+controlled husbandry and the tissue is available by the thousand. `g_l7_446a`.
+
+⭐ **FOUR — R412's EXPLICIT OPEN QUESTION ABOUT ARSI IS ANSWERED, AND IT QUALIFIES R410.** R412 found **ARSI
+the steepest riser in the hypertrophic programme — RZ 23 to HZ 6,820, roughly 300-fold** — and recorded that
+whether it acts on chondroitin was unestablished. `greccomachado2026`: **ARSI is a novel LYSOSOMAL CHONDROITIN
+ENDOSULFATASE desulfating chondroitin-4-sulfate at pH 4.5**, proteoglycan sulfation **significantly DECREASES
+during cartilage maturation**, and Arsi knockout raises Col10a1 and Mmp13.
+⛔ **R410 concluded that "the plate is built to ADD charge, not remove it" from ARSB, SULF1 and SULF2 all
+being contaminant-leaning. ARSI was not in that panel and it is the exception** — a desulfatase the tissue
+concentrates 300-fold into exactly the zone that makes height. ⭐ **And the direction is favourable for the
+sulfate arm, which is why it matters: if PG sulfation FALLS through maturation and ARSI is what removes it,
+then the fixed charge that drives hypertrophic swelling is being actively stripped in the hypertrophic zone,
+and inhibiting ARSI is a route to raising it that requires no substrate at all.** ✗ No ARSI inhibitor exists
+in any species, no bone-length endpoint, and whether removing sulfate at pH 4.5 in a lysosome affects
+EXTRACELLULAR matrix charge at all is unestablished. `g_l5_446b`.
+
+## 🏭🏭🏭🏭 R447 — **THE SECRETION-CAPACITY ROUND. R444's CENTRAL INFERENCE IS CORRECTED AGAINST ITSELF: THE
+## PURITY SCREEN IS STRUCTURALLY BLIND TO THE SECRETORY APPARATUS. And a human SHORT-TRUNK disease turns out
+## to be a procollagen EXPORT-RATE defect.**
+
+⛔⛔⛔ **CORR-363 — THE ENRICHMENT SCREEN CANNOT FILTER THIS MODULE, AND R444 USED IT TO CLOSE AN AXIS.**
+R444 measured the collagen FOLDING enzymes at 1.8-6.25× and the COPII coat at 0.22-1.29× and concluded that
+if secretion is rate-limiting the limit sits at folding rather than export. **Three genes refute the
+inference outright, and all three have a LENGTH or STATURE endpoint:**
+· **CREB3L2 / BBF2H7 — ratio 0.66.** Its cartilage knockout gives **severe chondrodysplasia with dilated
+  rough ER**, and **re-introducing Sec23a restored matrix secretion** (`saito2009`). The best-validated
+  secretory-capacity gene in cartilage, with a rescue, scoring contaminant-leaning.
+· **SEC23A — 0.91.** Human mutation causes cranio-lenticulo-sutural dysplasia.
+· **SEC24D — 0.37.** Human mutation shortens fetal long bones.
+· **MIA3 / TANGO1 — 0.63.** Knockout mouse: **global collagen secretion failure, dwarfism, neonatal
+  lethality** (`wilson2011`); complete human loss gives **near-total absence of bone mineralisation**
+  (`guillemyn2021`); biallelic loss gives **odontochondrodysplasia with severe short limbs and short
+  stature** (`abdelhamid2025`); medaka Tango1L knockout gives a **shorter tail** with collagen II stuck in
+  the ER (`yasuda2025`, already held).
+→ ⭐ **THE SECRETORY APPARATUS IS UNIVERSAL — EVERY CELL HAS IT — SO A CARTILAGE-VERSUS-BLOOD CONTRAST CANNOT
+CONCENTRATE IT EVEN WHERE IT IS DEMONSTRABLY RATE-LIMITING FOR BONE LENGTH. ENRICHMENT MEASURES INVESTMENT,
+NOT RATE-LIMITATION, AND R444 CONFLATED THE TWO.** CORR-351 said a low ratio is a hypothesis about a
+transcript's cellular origin; this is the sharpest instance yet, and it is against my own round.
+✓ **What survives of R444: the folding-versus-cross-linking SIGN SPLIT in the human burden data** (SERPINH1
+−1.15 cm at P=6.06e-28 and XYLT1 −3.88 versus PLOD1 +0.535 and PLOD2 +0.909), which rests on genetics and not
+on enrichment, **and the retro-explanation of R332's BAPN null.**
+
+⭐⭐⭐ **ONE — AND THE ONE THAT MATTERS MOST FOR THIS SUBJECT: A HUMAN SHORT-***TRUNK*** DISEASE WHOSE
+MECHANISM IS PROCOLLAGEN EXPORT RATE.** `lou2023`: **TRAPPC2 / Sedlin loss causes X-linked spondyloepiphyseal
+dysplasia tarda — SHORT TRUNK WITH ARM SPAN EXCEEDING HEIGHT — and the mechanism is failure of type II
+collagen ER export.** ⭐ **The residual at BA16 is trunk-dominant and the file has never had a mechanism that
+is specifically trunk-limiting. This is one, it is human, and it is a RATE defect in the term CORR-361 makes
+32-49% of elongation.** ⚠ Direction is to RAISE, no agent exists, and the disease is a loss-of-function so
+CORR-203 governs any inference that raising it above normal does anything.
+
+⭐⭐ **TWO — THE LOCAL QUERY, RUN ON THE ARM R444 NEVER TESTED: ER MEMBRANE BIOGENESIS. The headline candidate
+FAILS ITS OWN RECEIVER TEST, and I ran it before promoting it.** The secretory agent nominated
+**PCYT1A/CCT** — the rate-limiting enzyme of phosphatidylcholine synthesis, whose auto-inhibitory domain
+CRISPR deletion expanded the ER and raised secreted IgA **about ten-fold in planta** (`goritzer2025`), and
+whose biallelic loss is **human spondylometaphyseal dysplasia with severe short stature** (`yamamoto2014`)
+and **disproportionate dwarfism with marked humeral and femoral shortening in Vizsla dogs**
+(`ludwigpeisker2022`). Purity-corrected human plate (COL2A1 7.65, ACAN benchmark 1.96):
+**PCYT1A 0.64 · CHKA 0.19 · CEPT1 0.70 · CHPT1 0.88 · LPIN1 0.36 · LPIN2 0.30.** ⛔ **THE ENTIRE KENNEDY
+PATHWAY IS CONTAMINANT-LEANING. The plant lever has no concentrated substrate here** — though by CORR-363
+above that is now a weak filter, so this is recorded as *not enriched* rather than as a kill.
+
+⭐⭐ **THREE — TWO STRUCTURAL SPLITS THE PANEL DID RETURN, BOTH NEW.**
+· ⭐ **THE CARGO RECEPTORS ARE ENRICHED WHILE THE COAT IS NOT — which refines R444 rather than repeating it.**
+  **TMED9 4.59 · TMED2 2.78 · TMED10 2.55 · SURF4 1.90 · LMAN1 1.90 · MCFD2 1.84** against SEC23A 0.91,
+  SEC24D 0.37, MIA3 0.63, SAR1A 1.29. R444 wrote *"not one of sixteen export genes clears the benchmark"* —
+  true of the **coat**, false of the **cargo-receptor** layer, which the round did not test.
+· ⭐ **THE UPR SENSORS ARE CONTAMINANT-LEANING AND THE EFFECTORS ARE ENRICHED. ERN1/IRE1 0.05 · ATF6 0.11 ·
+  EIF2AK3/PERK 0.14**, against **ATF4 2.99 (420.9 CPM) · DDIT3/CHOP 2.65 · CREB3L1 1.79 · XBP1 1.73.**
+  All present in 12/12 (CORR-351), so this is about investment: **the tissue does not concentrate the
+  stress-SENSING apparatus and does concentrate the downstream integrated-stress-response output.** ⚠ CHOP is
+  the terminal pro-apoptotic effector and terminal hypertrophic chondrocytes die, so its enrichment may
+  belong to DISCHARGE rather than to capacity. **No ER-capacity gene reaches the 207 except SERPINH1 and
+  FASN.**
+
+⛔⛔ **FOUR — AND THE FALSIFIER IS ALREADY IN THIS FILE, WHICH IS WHY THIS ROUND PROMOTES NOTHING.** R415
+holds `kung2012` verbatim: onset of the UPR and of hypertrophic-zone expansion depends on mutation type and
+gene dosage across E14.5 to E17.5, so **hypertrophic chondrocytes have a LATENT CAPACITY WHICH MUST BE
+EXCEEDED**. **A cell running below its ceiling cannot be helped by raising the ceiling** — R415's own
+threshold argument, applied to capacity expansion rather than to stress relief. Corroborated independently:
+an osteogenesis-imperfecta meta-analysis has collagen **FOLDING half-life significantly delayed while
+SECRETION half-life is NOT** (agent-reported, ES 0.23, 95% CI −0.13 to 0.59).
+⭐ **THE DISCRIMINATING EXPERIMENT IS THEREFORE NOT A KNOCKOUT BUT A GAIN IN AN UNSTRESSED CELL, AND IT HAS
+NEVER BEEN DONE IN CARTILAGE IN ANY SPECIES.** Every chondrocyte ER result in the literature is a
+loss-of-function or a disease model, demonstrating only that secretion is REQUIRED — while the gain has been
+done and works in **CHO cells, plant leaves, bovine mammary epithelium and silk glands.** ⭐ **That asymmetry
+is the finding.** The obtainable reagent is **exogenous recombinant HSP47**, which is taken up by cells,
+localises to ER exit sites and the ERGIC, and **increases collagen secretion** in OI fibroblasts
+(`besio2025`) — dose it onto NORMAL growth-plate chondrocytes and the readout is whether output rises in a
+cell that is not stressed. `g_l5_447a`.
+
+⭐⭐⭐ **FIVE — AND A STRUCTURAL POSSIBILITY THAT WOULD CHANGE CORR-361's ARITHMETIC: h_term AND MATRIX MAY BE
+THE SAME VARIABLE COUNTED TWICE.** `pan2017`: in CHO fed-batch there is a distinct size-increase phase in
+which cell volume and dry mass rise about three-fold and **SPECIFIC PRODUCTIVITY RISES WITH CELL VOLUME**,
+with larger cells more efficient per unit oxygen and nutrient. **If matrix secretion per chondrocyte scales
+with chondrocyte volume, then enlarging the terminal cell IS raising its matrix output, and wilsman1996's
+59% and 32% are not independent terms.** ⛔ Equally it may run the other way — terminal hypertrophy is
+classically described as swelling and dilution rather than biosynthesis, in which case synthesis per cell
+falls as the cell enlarges. **Nobody has measured matrix synthesis per cell against cell volume by zone in
+any species**, and until that exists the two terms cannot be added or multiplied with confidence.
+⭐ **SIX — AND THE TERM HAS NO UNIT IN THIS FIELD.** Bioprocess engineering reports specific productivity in
+picograms per cell per day universally; matrix biology reports "increased collagen production." **Nobody has
+measured how much collagen a growth-plate chondrocyte secretes per hour, in any species** — so "is secretion
+limiting?" is currently unanswerable in cartilage for want of a denominator, which is the same shape as
+R177's resting-zone-count problem and R423's amplification problem.
+
+⭐⭐ **SEVEN — THE COLLAGEN EXPORT MACHINE IS CLOCK-GATED TO RUN AT NIGHT, WHICH IS A SECOND EXPLANATION FOR
+THE RECUMBENCY RESULT.** `chang2020`: in mouse tendon the circadian clock rhythmically times **SEC61,
+TANGO1, PDE4D and VPS33B in sequence**, giving **nocturnal procollagen synthesis and daytime fibril
+assembly**; clock disruption gives abnormal fibrils and collagen accumulation. **R427 holds `noonan2004`'s
+result that at least 90% of bone elongation occurs during recumbency, and attributes it entirely to
+mechanical unloading. Here is an independent, molecular, non-mechanical candidate for the same observation,
+and the two are not exclusive.** ⚠ Tendon, not growth plate — and R432 records that no functioning
+BMAL1/PER oscillator has been demonstrated in **human** growth-plate chondrocytes, so this is unresolved
+rather than established. ⭐ **PDE4D is in that list, a gene this file has worked hard on a completely
+different axis.** The cheap test needs no compound: **measure TANGO1, SEC61A1, VPS33B and PDE4D rhythmicity
+across 24 h in growth-plate chondrocytes.** `g_l5_447b`.
+
+## ⚛️⚛️⚛️⚛️⚛️ R448 — **THE PHYSICS ROUND, AND IT IS THE MOST DECISION-RELEVANT OF THE EIGHT. THE SWELLING
+## CELL CANNOT MAKE THE PRESSURE — THE MATRIX BEATS IT BY 710× — SO h_term IS MATRIX-YIELD LIMITED, NOT
+## PRESSURE LIMITED. AND AT 1-15 Hz A LOAD VENTILATES 8-29 MICROMETRES OF A THREE-MILLIMETRE PLATE.**
+## All arithmetic below independently reproduced in the main loop from the cited primary parameters.
+
+⭐⭐⭐⭐ **ONE — THE PRESSURE ARITHMETIC, AND IT MOVES h_term FROM CELL BIOLOGY TO MATRIX RHEOLOGY.**
+`fischerfriedrich2014` measured, by wedged AFM cantilever plus confocal reconstruction fitted to Laplace's
+law, the internal hydrostatic pressure a single animal cell can sustain: **about 40 Pa in interphase and
+400 Pa in metaphase**, with cortical tension 0.2 to 1.6 mN/m. `stewart2011` gives the mechanism — osmotic
+pressure makes the force and the **actomyosin cortex is what holds it** against an impediment. Against that,
+`maroudas1981` puts the swelling pressure of a charged matrix at cartilage fixed-charge density at about
+**0.28 MPa**.
+⭐ **THE MATRIX OUT-PRESSURES THE CELL BY 710-FOLD** (0.284e6 / 400, computed here). And the cross-kingdom
+comparison says the difference is the WALL and not the cytoplasm: plant roots convert turgor into about
+**0.5 MPa of axial growth pressure**, and a *Magnaporthe* appressorium reaches **8.0 MPa** (`howard1991`) —
+the biological record — **and both are walled. No wall-less cell comes within three orders of magnitude.**
+⭐⭐ **AND THE SECOND ARITHMETIC CLOSES IT FROM THE OTHER SIDE: THE WATER FLUX REQUIRED TO ELONGATE A BONE AT
+ORDINARY RATES NEEDS OF ORDER 90 Pa OF DRIVING PRESSURE AGAINST ~284,000 Pa AVAILABLE — A FACTOR OF ~3,000.
+ELONGATION IS NOT PRESSURE-LIMITED AND NOT WATER-SUPPLY-LIMITED.**
+→ ⭐⭐⭐ **BY `lockhart1965`'s LAW — growth rate = extensibility × (pressure − yield threshold) — IF PRESSURE
+GREATLY EXCEEDS THE THRESHOLD THEN RATE IS SET BY EXTENSIBILITY. h_term IS A MATRIX-YIELD PROBLEM.** That
+reframes an entire arm: R296 searched for osmolytes and agonists to raise the DRIVE, and R408 searched for a
+transporter inhibitor to raise cell volume. **On this arithmetic the drive is already 3,000× sufficient and
+the missing variable is how readily the matrix yields.** ⚠ Grade C: the parameters are ARTICULAR cartilage
+(`mow1980`), and `fischenich2022` gives growth-plate equilibrium modulus 0.86 ± 0.46 MPa across 153
+measurements against articular 0.70 — a defensible substitution to about 20%, and **fischenich2022 also
+finds the HYPERTROPHIC ZONE IS THE SOFTEST, which is mechanically coherent with it being the zone that
+expands.**
+
+⭐⭐⭐⭐ **TWO — THE POROELASTIC PENETRATION DEPTH, AND IT RE-PRICES THE WHOLE MECHANICAL ARM.** From
+`mow1980`'s measured parameters the poroelastic diffusivity is **D_p = H_A·k = 5.3e-9 m²/s**, and the
+oscillatory penetration depth is δ = √(D_p/ω):
+| loading | δ | reaches |
+|---|---|---|
+| **15 Hz** (R427's lateral joint loader, most effective frequency) | **7.5 µm** | one cell |
+| **1 Hz** (walking, and `ohara1990`'s cyclic loading) | **29 µm** | two or three cells |
+| one cycle per **30 min** | **1.2 mm** | most of a plate |
+| one cycle per **~3 h** | **3.0 mm** | **full thickness** |
+| **diurnal** | **8.6 mm** | the whole tissue and then some |
+Consolidation time for a 3 mm plate is **τ = L²/D_p = 28 minutes.**
+→ ⛔ **IMPACT AND VIBRATORY LOADING AT 1-20 Hz CANNOT VENTILATE THE BULK OF A GROWTH PLATE. IT IS
+PHYSICALLY INCAPABLE OF IT BY TWO ORDERS OF MAGNITUDE.** That is a hard constraint on R425's jumping
+prescription (already withdrawn by R429 on human data), on R426's impact arm, and on **R427's lateral joint
+loading, whose own authors attribute it to intramedullary pressure and interstitial FLUID FLOW — at 5-20 Hz
+that mechanism reaches 7-17 µm and therefore cannot be bulk solute transport.**
+⭐⭐ **AND THE SAME NUMBER SUPPORTS THE ARM THAT ACTUALLY WORKS. `noonan2004`: at least 90% of elongation
+occurs during RECUMBENCY. `stokes2005`: halving the DUTY CYCLE from 24 h to 12 h recovered 14-16 points of
+growth. Both are DIURNAL-timescale, where δ is 8.6 mm — full ventilation.** R426 and R427 read those as
+mechanotransduction and duty cycle; **they are equally well explained as transport, and this is the first
+quantitative reason to prefer the postural timescale over the impact timescale.**
+⭐ **AND THE SIZE SELECTIVITY MATCHES R428 EXACTLY.** `ohara1990`, human femoral-head cartilage at 2.8 MPa
+and 1 Hz: **albumin desorption up 30-100%, urea and NaI UNCHANGED.** R428 concluded independently from
+`farnum2006`'s size curve that the delivery multiplier is ≈1.0 for the stack's small molecules and bites
+only on the ~4 kDa peptide. **Two different physics, one conclusion: loading helps big solutes and does
+nothing for small ones.**
+⛔ **THE GOVERNING LIMIT, AND IT IS ONE NUMBER: `cohen1994` MEASURED THE GROWTH PLATE'S OWN BIPHASIC
+PROPERTIES — bovine distal femur, with the PERIPHERY MORE PERMEABLE THAN THE INTERIOR — AND USED THEM ONLY
+FOR STRESS RELAXATION.** `kazemi2021` built a multiscale poroelastic finite-element model of reserve-zone
+cartilage and computed **cell strain and fluid shear, never solute delivery.** **The modality was borrowed
+for this tissue twice and the transport question was never asked. The growth plate's own hydraulic
+permeability is the single most valuable missing number in this round, and every δ above scales on it.**
+`g_l6mech_448a`.
+
+⭐⭐⭐ **THREE — ANIMALS HAVE NO EXPANSIN, AND THAT IS A SPECIFICATION RATHER THAN A DEAD END.** Plants have
+**three** matrix-loosening modalities: non-catalytic slippage (**expansin** — `mcqueenmason1992`,
+`durachko2009`: loosens by breaking non-covalent bonds at acidic pH, without hydrolysis), cut-and-rejoin
+(XET), and hydrolysis. **Animals have only the third.** Every matrix-loosening tool in animal biology is a
+protease — MMP, ADAMTS, cathepsin — and a targeted search for a vertebrate protein that loosens matrix by
+interfibrillar slippage rather than cutting returns nothing; `expansin AND cartilage` returns **zero**
+PubMed records.
+⭐⭐ **AND THE CONSTRAINT THAT MAKES IT MATTER IS PROVEN GENETICALLY IN A THIRD KINGDOM: `singh2012` — an
+endopeptidase TRIPLE MUTANT CANNOT INCORPORATE NEW MUREIN AND LYSES. A COVALENTLY CROSS-LINKED LOAD-BEARING
+MATRIX CANNOT GROW WITHOUT CUTTING ITSELF.** ⭐ **THAT IS THE GENERAL FORM OF THE AGGRECANASE AND RANKL
+TRAP** — R317 killed denosumab and R337 killed aggrecanase inhibition because blocking matrix catabolism
+JAMS the plate. This says the jam is not a quirk of cartilage; **it is a property of any cross-linked
+load-bearing matrix, and the only escape is a loosening modality that does not degrade — which animals do
+not have.** ⭐ And the phenotype of removing loosening is measured: `goh2012`, inducible repression of
+multiple expansins, gives **SMALLER ORGANS WITH LARGER CELLS** — charge without discharge, with a causal
+gene, in a system where loosening can be switched off on demand.
+⭐ **The obtainable probe: bacterial EXLX1 from *Bacillus subtilis* is purified and characterised. Apply it
+to cartilage explants in a constant-load creep assay and ask whether a bacterial expansin loosens an animal
+ECM.** Nobody has tried. `g_l5_448b`.
+
+⭐⭐ **FOUR — TWO EXPONENTS THAT CONVERT EXISTING ARMS INTO FALSIFIABLE MAGNITUDES.**
+· **DONNAN IS SUPERLINEAR IN FIXED CHARGE: dlnΠ/dlnFCD = 1.73.** ⭐ **So SULFATION IS A LEVERAGED PARAMETER,
+  NOT A LINEAR ONE** — a 10% rise in fixed charge buys ~17% more swelling pressure. That upgrades the whole
+  sulfate arm (R320, R321, R322, R410) and R446's ARSI finding: R322 computed the sulfate gradient as
+  ~0.104 SD of sitting height per SD of plasma sulfate and refused to extrapolate; the exponent says
+  whatever the transfer function is, it is convex.
+· **FLORY-REHNER: SWELLING RATIO SCALES AS ν^(−3/5) IN CROSS-LINK DENSITY, SO HALVING MATURE CROSS-LINKING
+  PREDICTS ABOUT +15% LINEAR SWELLING AND A 20% REDUCTION PREDICTS +4.4%.** ⭐ **That converts "inhibit LOX"
+  from a direction into a NUMBER — and it is testable against R332's own data.** `mcnerny2015` reduced
+  mature cross-linking substantially in growing male mice and tibia length did not move at p=0.580, with a
+  computed 95% CI of ±0.97% and an MDE of 1.39%. **A +15% prediction is wildly outside that interval, so
+  either the cross-link reduction was far smaller than "substantial" implies, or bone length is not set by
+  matrix swelling ratio at all.** Recorded as a live inconsistency, not resolved.
+⚠ Both are ideal-network derivations applied to a biological composite; grade D-E, and the second is offered
+precisely because it is falsifiable against a null this file already holds.
+
+⭐ **FIVE — THE PLATE SITS AT ITS OWN TRANSPORT CEILING, WHICH BOUNDS EVERY SYNTHESIS-RAISING PROPOSAL.**
+The canonical avascular diffusion limit is **100-200 µm** (`griffith2005`), against which a millimetre-thick
+plate should be impossible. It is not, because **chondrocyte oxygen consumption is of order 16.5 amol per
+cell per second — roughly a twelfth of an ordinary cell** (`carroll2021`) — giving a computed oxygen
+penetration of about **1.1 mm**. ⭐⭐ **VIABLE HALF-THICKNESS SCALES AS Q^(−1/2), SO DOUBLING PER-CELL
+METABOLIC DEMAND CUTS SUPPORTABLE THICKNESS TO 71% OF ITS VALUE. ASKING A CHONDROCYTE TO SYNTHESISE FASTER
+IS NOT FREE — IT IS PAID FOR IN PLATE THICKNESS**, and R443's focal vascular breach is the only thing in
+this file that would relax it. That is a hard physical ceiling on the MATRIX term and nobody has stated it.
+⚠ Krogh-Thiele arithmetic on measured parameters, not a measurement in a plate.
+
+⭐⭐ **SIX — AND THE GLYCOGEN ENGINE HAS A MEASURED PRECEDENT WITH A NAMED GENETIC CONTROL, WHICH IS EXACTLY
+WHAT R445 LACKED.** `howard1991` measured 8.0 MPa of appressorial turgor; `thines2000` identified its
+source — **glycogen and triacylglycerol are rapidly DEGRADED at the onset of turgor generation, yielding
+molar glycerol, under PMK1 MAP-kinase and cpkA PKA control.** ⭐ **The colligative arithmetic is the point
+and it is exact: osmotic pressure is per PARTICLE, so depolymerising a store multiplies its osmotic
+contribution by the degree of polymerisation — of order 10⁴ for glycogen — AT CONSTANT MASS AND NEAR-ZERO
+SYNTHETIC COST.** Two further systems validate the class independently: **nematocysts at ~15 MPa from ~2 M
+poly-γ-glutamate plus counterions** (`weber1990`), and **mucin granules swelling hundreds-fold purely by
+exchanging Ca²⁺ for two Na⁺** (`verdugo1991`) — doubling counterion NUMBER at unchanged fixed charge.
+⭐ **R445 found the plate concentrates glycogen DESTRUCTION 5-7× and not synthesis (STBD1 6.57, GAA 4.90,
+PPP1R3C 2.35 against GYS1 0.35, GBE1 0.24) and could not say what the destruction was for. This is what it
+could be for.** ⛔ **And the honest reconciliation with FINDING ONE: an animal cell has no wall, so a full
+glycogen store cannot make MPa-scale PRESSURE — but it can make a large osmotic GRADIENT, which is what
+draws water in once the matrix yields. The two findings are complementary: glycogen supplies the drive,
+matrix loosening permits the expansion.**
+
+⛔ **SEVEN — THE PARADOX I AM NOT SMOOTHING OVER, BECAUSE IT IS THE SAME ONE PLANT BIOLOGY HAS.** The plant
+rule is unambiguous: **transverse fibres — hoops around a barrel — produce AXIAL elongation**, and measured
+wall extensibility is **30-90% HIGHER PERPENDICULAR to the fibres** (`suslov2006`). Applied naively to a
+growth plate whose septal collagen runs LONGITUDINALLY, that predicts lateral, not axial, expansion — the
+opposite of observation. `baskin2013` raises the identical paradox for plant stems, whose outer epidermal
+microfibrils are axial and which elongate anyway. **Three distinguishable resolutions:** longitudinal septa
+anchored at both ends resist lateral bulging by TENSION rather than by fibre stiffness in the expansion
+direction; the effective hoop is the septal network plus the perichondrial ring rather than fibre
+orientation within one septum; or `boudaher2018`'s second, additive, NON-FIBRILLAR matrix elastic asymmetry
+dominates. **The prediction common to all three is that the TRANSVERSE septum must be the more extensible,
+and directional stiffness of transverse versus longitudinal septa has never been measured.**
+⭐ **And the required anisotropy is modest, which is encouraging: a cell going ×10 in volume and ×1.6 in
+width expands ×3.91 axially against ×1.6 radially — a linear anisotropy of 2.44:1, barely above what a
+plant wall achieves from fibre texture alone.** ⚠ **BUT `wiedemeier2002` and `baskin1999` both show fibril
+orientation sets DIRECTION and NOT DEGREE — mutants lose anisotropy with normal fibril orientation — so a
+purely orientational explanation is insufficient in the field that owns the problem.**
+
+## 🧭🧭🧭🧭 R449 — **THE INSTRUMENTS ROUND. Artificial selection for a longer bone moves N AND A AND NOTHING
+## ELSE — an unbiased confirmation of R423's term ranking. And EVERY HUMAN GROWTH-PLATE ATLAS IN EXISTENCE
+## WAS BUILT FROM TISSUE CUT OUT OF CONSTITUTIONALLY TALL CHILDREN, WITH NO CONTROL.**
+
+⭐⭐⭐⭐ **ONE — THE CLEANEST TERM RANKING THAT EXISTS, AND IT IS AN EVOLUTIONARY EXPERIMENT RATHER THAN A
+DRUG.** `marchini2018`: the **Longshanks** mice, roughly twenty generations of artificial selection on tibia
+length relative to body mass, against random-bred controls on the same background, with cross-sectional
+growth curves plus histomorphometry and proliferation assays on the proximal tibial growth plate. Verbatim
+from the abstract: the length difference is **NOT due to prolonged growth but to accelerated growth rates**;
+it is associated with an **INCREASED NUMBER OF PROLIFERATIVE CHONDROCYTES**; and there is **NO difference in
+the rate of chondrocyte proliferation, nor in the size or number of hypertrophic cells.**
+→ ⭐⭐ **ASK BIOLOGY, WITH NO HYPOTHESIS, WHAT IT CHANGES WHEN YOU SELECT FOR A LONGER BONE, AND IT CHANGES
+THE NUMBER OF AMPLIFYING CELLS. NOT THE DIVISION RATE. NOT TERMINAL CELL SIZE. NOT THE PERIOD.**
+⭐ **THAT IS R423's DECOMPOSITION, REACHED INDEPENDENTLY.** R423 computed from mouse femur-versus-metacarpal
+that **88% of the log yield gap is AMPLIFICATION and 12% is terminal cell height**, and that amplification
+has **no agent anywhere**. Longshanks is the perturbation experiment: twenty generations of selection landed
+on exactly that term. **And it is a second, independent argument that h_term — the term R425 put the CNP arm
+back in for — is not what selection moves when it is free to move anything.**
+⭐ **AND THE GENOMIC FOLLOW-UP VALIDATES THIS ATLAS AS AN INSTRUMENT: `marchini2021` names Fxyd2, Npr3,
+Dlk1, Sox9 and Sfrp1 as moved by the selection. FOUR OF THOSE FIVE ARE ALREADY IN THIS LEDGER.** The one
+that is not is **FXYD2, a Na⁺/K⁺-ATPase regulatory subunit reduced in long-boned mice**, with
+pharmacological NKA inhibition disrupting chondrocyte differentiation — an **ION PUMP**, i.e. the same
+machinery class as R408/R409's cell-volume module, with zero prior coverage here.
+⛔ **CAVEATS BEFORE ANYONE BUILDS ON IT:** the selected alleles must act postnatally rather than on limb-bud
+patterning, and a secondary report has the length difference already present at birth — which would fail
+CORR-299 outright. **And FXYD2 has no therapeutic literature, no bone-length endpoint under any agent, and
+the only pharmacology on its target runs the wrong way.** ⚠ **Cardiac glycosides — digoxin, ouabain — are
+Na⁺/K⁺-ATPase INHIBITORS, i.e. the direction that disrupts chondrocyte differentiation in `marchini2021`,
+and digoxin is given to children with congenital heart disease for years through the growth window. Grade E,
+free to ask, no skeletal-length study of digoxin exists.** `g_l7_449a`.
+
+⭐⭐⭐⭐ **TWO — AND A FACT ABOUT EVERY HUMAN DATASET THIS FILE RELIES ON. THE ONLY SOURCE OF HEALTHY HUMAN
+GROWTH-PLATE TISSUE IS SURGERY PERFORMED TO DESTROY IT, AND THAT SURGERY IS ONLY DONE ON CHILDREN WHO ARE
+TOO TALL.** `avijgan2026` states it plainly — biopsies from healthy adolescents undergoing epiphysiodesis
+for **idiopathic tall stature**, aged 12-14. `chu2026`, the pubertal human atlas this file has built four
+rounds on, describes its material as surgical specimens from growth-restricting procedures.
+→ ⛔⛔ **THE FIELD'S CANONICAL DESCRIPTION OF "THE HUMAN GROWTH PLATE" IS A DESCRIPTION OF THE TALL TAIL,
+PHENOTYPE-SELECTED, WITH NO NORMAL-STATURE OR SHORT-STATURE COMPARATOR — AND NEITHER PAPER FRAMES IT THAT
+WAY.** Every zone marker, every resting-zone sub-population, every abundance number this atlas quotes from
+those datasets inherits that selection.
+⭐ **Read favourably it is the best possible bias — the reference tissue is the phenotype we want.** Read
+carefully it means **no human plate has ever been compared against a control**, and that is why R449 records
+it as a property of the instrument rather than as a finding.
+⭐⭐ **AND IT MAKES A FREE EXPERIMENT AVAILABLE ON DATA THAT ALREADY EXIST: predicted adult height IS the
+surgical indication, so every donor has a height SDS in the clinical record. Regress resting-zone cell
+fraction, or the CHRDL2/SFRP5 sub-population proportion, on donor height SDS.** That is the first direct
+test of what makes a plate tall, in humans, and it needs no new tissue. `g_l1_449b`.
+
+⭐ **THREE — THE TALL TAIL IS A KNEE PHENOMENON, AND HALF THE EVIDENCE FOR THAT IS ALLOMETRY.** Five lines
+put the excess in the leg — Dinaric relative sitting height 52.0-52.3%; constitutionally tall adolescents
+sitting below age norms with knee epiphysiodesis NORMALISING the ratio; `tanner1982leg`'s Japanese gain being
+almost entirely leg with sitting height practically unchanged; Maya migrants gaining 11.54 cm of which
+6.83 cm is leg. ⛔ **But `fredriks2005`, 14,500 Dutch children, shows sitting-height ratio correlates
+NEGATIVELY with height SDS — tall people have relatively long legs BY CONSTRUCTION — so cross-sectional
+leg-dominance is substantially an allometric artefact.** ⭐ **What survives the objection is the
+LONGITUDINAL evidence, where the population is held constant and only the environment changes: Tanner and
+Bogin. The trunk does not move at all.** That is a genuine anatomical localisation, and it is unfavourable
+for this subject, whose residual is trunk. ⭐ **And R449 adds the in-human demonstration that the two
+compartments run independently: after knee epiphysiodesis, girls gained 8.0 ± 0.5 cm of SITTING height and
+0.2 ± 0.4 cm of leg** (`aeppli2025`, already held) — **ablating the knee does not stop the trunk.**
+
+⭐⭐ **FOUR — THE ANTLER, DECOMPOSED FOR THE FIRST TIME, AND THE ANSWER IS ARCHITECTURE NOT KINETICS.**
+`muir1988` places the antler mineralisation front **5 to 10 cm below the tip**, so the unmineralised growth
+zone is 50-100 mm long, and antler blood volume rises about **194 ml per kg of antler**. At 2 cm/day a cell
+transits that zone in **2.5 to 5 days** — and a mammalian growth plate is sub-millimetre with a transit time
+also measured in days.
+→ ⭐⭐ **THE ANTLER IS NOT FAST BECAUSE ITS CELLS ARE FASTER OR BIGGER. IT IS FAST BECAUSE IT STACKS A ZONE
+TWO ORDERS OF MAGNITUDE LONGER IN SERIES — AND THE ENABLING CONDITION IS THAT ANTLER CARTILAGE IS
+VASCULAR**, so a 5 cm depth of cartilage does not starve. ⭐ **That is R448's oxygen ceiling read from the
+other end: the plate is 1 mm thick because that is what avascular cartilage supports, and the only organism
+that beat it did so by vascularising the cartilage.** It also connects to R443 — the human plate is
+avascular in bulk and breached focally — and makes the fraction of the plate a focal vascular route serves
+the interesting quantity. ⚠ **The transit arithmetic is mine, from two cited numbers; no label or BrdU
+transit study of the antler exists, and antler cell-cycle time, chondrocyte height and matrix per cell are
+unmeasured in any species.** `g_l7_449c`.
+
+⭐⭐ **FIVE — AN INDEPENDENT TISSUE IN WHICH DELETING AN FGF RECEPTOR LOWERS HEDGEHOG AND SHORTENS THE
+STRUCTURE.** `pei2024`: **Gli1-CreER;Fgfr2 conditional deletion gives SHORTENED ROOTS with IMPAIRED HEDGEHOG
+SIGNALLING, RESCUED by modulating Hh.** ⭐ **This subject is wild-type FGFR3 on a continuous pan-FGFR
+inhibitor, and R362/R363 named the cilium-length question — does an FGFR inhibitor cost him hedgehog? — as
+the most urgent experiment in the file. R370 de-escalated it because the only cartilage measurement ran the
+other way. Here is the same directional result in a third tissue, in a Gli1⁺ mesenchymal progenitor, owing
+nothing to the cilium argument.** ⚠ Tooth root, conditional germline deletion, not a drug and not a plate.
+⭐ **And its companion is the mammalian never-stopping engine: `pei2023` — loss of sensory innervation
+DECREASES mesenchymal stem cell number in the continuously growing incisor, and nerve-derived FGF1 acting on
+FGFR1 sustains the pool through an mTOR/AUTOPHAGY axis, with modulation rescuing it.** **A NERVE IS A
+STEM-CELL NICHE** — and R437 listed *autophagy sustaining a quiescent stem cell* as one of its eight
+zero-coverage processes. ⛔ **Nerve-to-physis signalling has only ever been studied as PATHOLOGY** (bony bar
+formation after injury). **Denervation of one hindlimb in a normal growing animal, contralateral as
+internal control, reading resting-zone cell number, Gli1/Ptch1 and femur and tibia length, has never been
+done — and it would simultaneously test R440/R442's unexplained CROSS-BONE fracture overgrowth, since a
+limb-wide signal crossing a joint into an untouched bone is exactly what a nerve could carry.** `g_l7_449d`.
+
+⭐ **SIX — THE GREY LITERATURE, THREE ITEMS, EACH RECORDED WITH ITS EVIDENCE GRADE.**
+· ⚠ **CHONDROITIN SULFATE IN A MINIPIG — patent CN119055678A (Institute of Zoology, Chinese Academy of
+  Sciences, priority 2024-11-06), agent-reported, NOT independently verified here.** It claims a
+  **gene-edited SLC13A1 Guangxi Bama minipig short-stature model that does not appear in the literature**,
+  and chondroitin sulfate at 70 mg/kg giving **+18.5% height in mutants and +12.6% in WILD-TYPE animals
+  (p<0.01, n=3)** with body weight unchanged. ⭐ **If real it is the first large-animal model of this file's
+  sulfate axis, with a NORMAL-animal arm, and it supplies the finished sulfated GAG rather than inorganic
+  sulfate — which sidesteps R322's renal-dumping objection because chondroitin is not filtered as sulfate.**
+  ⛔ **n=3, a patent, no peer review, and the wild-type arm is internally odd (height up, body length
+  unchanged). Recorded as a LEAD TO VERIFY, not a result.** `g_l5_449e`.
+· ⚠ **THE CAPACITIVELY-COUPLED FIELD, AND ITS NULL.** `brighton1983`: rabbit, oxytetracycline-labelled
+  growth rate, non-invasive 60 kHz field, a **dose-response peaking near 5 V peak-to-peak**. Then
+  `armstrong1986`, six weeks at that setting: **NO significant difference in tibial LENGTH — and the authors
+  state in their own abstract that the apparatus or methodology may have impaired the animals' overall
+  growth.** ⭐ **This is R441's LIPUS shape exactly — a positive short-term RATE PROXY that fails to convert
+  into a LENGTH endpoint, with a confound sitting inside the null.** What makes it worth recording rather
+  than closing is that the confound is mechanical and fixable (a taped electrode harness and body vest worn
+  for six weeks) and that an inverted-U across four voltages is not the signature of an artefact.
+  ⛔ **AND THE INTERNAL CONTROL THAT FORBIDS TREATING "ELECTRICAL STIMULATION" AS ONE THING: `dodge2007` —
+  INVASIVE direct current through an electrode IN the plate causes bony bridging and growth ARREST, and is
+  proposed as an epiphysiodesis. Opposite modality, opposite sign.**
+· ⭐ **AND A STRUCTURAL NEGATIVE THAT COMPLETES CORR-350: a full-text query of the openFDA label corpus for
+  increased bone length returns EXACTLY ONE DRUG — SOMATROPIN — and it states a mechanism rather than
+  reporting an animal measurement.** Everything else in the juvenile-toxicity record runs the other way.
+  **CORR-350 is right that these reviews contain serial limb lengths invisible to PubMed; R449 adds that the
+  DISTRIBUTION of those lengths is one-sided by construction, because a juvenile toxicity package is an
+  adverse-findings document and being taller is not an adverse finding. Do not spend another round expecting
+  a positive from Drugs@FDA or the EPARs.** (Agent-reported query, run 2026-08-27.)
+
+⛔ **SEVEN — AND THE FINDING THAT RUNS HARDEST AGAINST THIS WHOLE PROJECT, RECORDED BECAUSE IT IS THE
+STRONGEST OBJECTION IN THE EIGHT RETURNS.** `cole2018` and the auxology literature agree on three things:
+**most of the adult secular height increment has already accrued by age 1.5-2 years**; **the growth period
+ADVANCED IN TIMING AND SHRANK IN DURATION** while height rose; and **South Korean women gained 20.2 cm in a
+century on a completely different genome**. ⭐ **Every documented secular height gain in history was
+achieved with a growth period that got SHORTER, not longer, and with the increment banked before school
+age.** Nothing in the tall-tail literature supports extending the period as a route to height. R440 already
+derived the consequence and it stands: **if the plate carries a finite division budget, a gain delivered in
+a SHORTENED period cannot be extra divisions either — it must be YIELD PER DIVISION**, which lands on
+CORR-361's matrix term. ⚠ And the compartment is wrong for him: the secular mechanism is **leg-directed and
+delivered before eighteen months**, while his residual is trunk and he is sixteen.

@@ -19131,3 +19131,246 @@ gaps:
     the 32 versus 49 per cent split. Then perturb the folding arm rather than the cross-linking arm, with
     bone length as the endpoint.
   blocking: 'no'
+- gap_id: g_l5_445a
+  type: quantitative_gap
+  layer: L5
+  status: open
+  question: What is the glycogen content of a growth-plate chondrocyte by zone, and does it fall across the
+    proliferative-to-hypertrophic transition?
+  why_it_matters: Osmotic pressure is colligative, so depolymerising a store multiplies its osmotic contribution
+    by the degree of polymerisation - of order 10,000 for glycogen - at constant mass and near-zero synthetic
+    cost. R445 found the human plate concentrates glycogen DESTRUCTION 5 to 7 fold (STBD1 6.57, GAA 4.90,
+    PPP1R3C 2.35) and not synthesis (GYS1 0.35, GBE1 0.24), and could not say what the destruction is for.
+    R440 recorded that 93 per cent of the osmotic drive for hypertrophy is unaccounted for by the organic
+    osmolyte panel, which would miss a polymer entirely.
+  what_is_known: The purity-corrected human expression split (R445). thines2000 gives the measured precedent -
+    glycogen and triacylglycerol rapidly degraded at the onset of turgor generation in a fungal appressorium,
+    yielding molar glycerol under named MAP-kinase and PKA control, reaching 8.0 MPa. horigome2020 shows
+    growth-plate autophagy is glycogen mobilisation. GYG1 burden is -0.695 cm at P=2.89e-16.
+  what_is_missing: A zonal quantification of glycogen and free monosaccharide or polyol content per cell in a
+    growth plate, in any species. Standard aqueous fixation dissolves glycogen, which is why the measurement
+    does not exist rather than being negative.
+  discriminating_experiment: Quantify glycogen and free small solutes by zone in a single growth plate using a
+    fixation protocol that preserves glycogen, with liver and megakaryocytes as positive controls. If glycogen
+    is unchanged across the transition the osmotic residual is not a polymer store.
+  blocking: false
+- gap_id: g_l7_446a
+  type: quantitative_gap
+  layer: L7
+  status: open
+  question: What is the growth-plate cellular architecture of fast- versus slow-growing broiler lines at matched
+    body weight?
+  why_it_matters: santos2022 compared 14 strains and 7,216 birds and found the fastest-growing conventional
+    birds had the SHORTEST and NARROWEST tibiae at both matched target weights, P<0.001 - sixty years of the
+    most intense artificial selection ever applied to a vertebrate's growth rate did not buy bone length. That
+    is R360's Regime 2 in an agricultural population, and the mechanism is unexamined.
+  what_is_known: Whole-bone morphometry - length, width, robusticity, ash - across many strains and thousands
+    of birds, with husbandry controlled and tissue available in quantity.
+  what_is_missing: Chondrocyte number, terminal cell size, cells per column and matrix per cell have never been
+    measured between broiler lines. The endpoint in this literature is always the whole bone.
+  discriminating_experiment: Histomorphometry of the proximal tibial growth plate in a fast and a slow line at
+    matched body weight, reading resting-zone cell number, cells per column, terminal chondrocyte height and
+    matrix per cell. It decomposes an existing large-scale selection experiment at no experimental cost.
+  blocking: false
+- gap_id: g_l5_446b
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Does ARSI desulfation reach the extracellular matrix, and would inhibiting it raise growth-plate
+    fixed charge?
+  why_it_matters: ARSI is the steepest riser in R412's hypertrophic programme, roughly 300-fold from reserve to
+    hypertrophic zone, and greccomachado2026 identifies it as a lysosomal chondroitin endosulfatase with
+    proteoglycan sulfation falling during cartilage maturation. If the fixed charge that drives hypertrophic
+    swelling is being actively stripped in the zone that makes height, inhibiting the stripping raises it
+    without needing any substrate - and R448's Donnan exponent of 1.73 makes fixed charge a leveraged parameter.
+  what_is_known: ARSI enzymology at pH 4.5, the zonal expression gradient, and that Arsi knockout raises
+    Col10a1 and Mmp13. R410 concluded the plate is built to add charge and not remove it from a panel that did
+    not contain ARSI.
+  what_is_missing: Whether a lysosomal desulfatase affects EXTRACELLULAR matrix charge at all. No ARSI
+    inhibitor exists in any species and there is no bone-length endpoint.
+  discriminating_experiment: Measure zonal fixed-charge density or sulfated glycosaminoglycan content in an
+    Arsi-null growth plate against wild type, with a bone-length endpoint in the same animals.
+  blocking: false
+- gap_id: g_l5_447a
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Does raising secretory capacity in an UNSTRESSED chondrocyte increase matrix output and bone length?
+  why_it_matters: Matrix synthesis is 32 to 49 per cent of elongation (CORR-361) and has never been worked as a
+    term. Every chondrocyte endoplasmic-reticulum result in the literature is a loss of function or a disease
+    model, establishing only that secretion is REQUIRED - while the gain has been done and works in CHO cells,
+    plant leaves, bovine mammary epithelium and silk glands. That asymmetry is the whole question.
+  what_is_known: Loss of function shortens or destroys bone through MIA3, TRAPPC2, SEC23A, SEC24D, CREB3L2 and
+    PCYT1A. goritzer2025 raised secreted output about ten-fold by deleting the CCT auto-inhibitory domain.
+    besio2025 shows exogenous recombinant HSP47 is taken up by cells, reaches ER exit sites and increases
+    collagen secretion in osteogenesis imperfecta fibroblasts.
+  what_is_missing: kung2012 shows hypertrophic chondrocytes have a latent capacity that must be exceeded before
+    the unfolded protein response fires - a cell running below its ceiling cannot be helped by raising the
+    ceiling. Whether a normal chondrocyte is near its secretory ceiling is unmeasured, and nobody has measured
+    collagen secretion rate per growth-plate chondrocyte in any species.
+  discriminating_experiment: Dose exogenous recombinant HSP47 onto NORMAL growth-plate chondrocytes and measure
+    collagen II secretion rate. The discriminating readout is whether output rises in a cell that is not
+    stressed. Then BBF2H7 or SEC23A overexpression in a normal growing animal with a caliper on femur and
+    vertebrae.
+  blocking: false
+- gap_id: g_l5_447b
+  type: quantitative_gap
+  layer: L5
+  status: open
+  question: Is the collagen export machinery rhythmic in growth-plate chondrocytes, and does that explain why
+    bone elongates during recumbency?
+  why_it_matters: noonan2004 shows at least 90 per cent of bone elongation occurs during recumbency, and R426
+    and R427 attribute it entirely to mechanical unloading of the plate. chang2020 shows the circadian clock
+    times SEC61, TANGO1, PDE4D and VPS33B in sequence in tendon, giving nocturnal procollagen synthesis. These
+    are two independent explanations for one observation and they have never been tested against each other.
+  what_is_known: The tendon rhythm, with clock loss producing abnormal fibrils and collagen accumulation, and
+    a separate circadian VPS33B and integrin alpha-11 arm gating fibril assembly independently of secretion.
+  what_is_missing: R432 records that no functioning BMAL1 or PER oscillator has been demonstrated in HUMAN
+    growth-plate chondrocytes. The primary cartilage-clock literature is articular and temporomandibular, not
+    physeal.
+  discriminating_experiment: Measure TANGO1, SEC61A1, VPS33B and PDE4D transcript rhythmicity across 24 hours
+    in growth-plate chondrocytes, then phase-shift a growing animal by light schedule or restricted feeding
+    with a bone-length endpoint. Needs no compound.
+  blocking: false
+- gap_id: g_l6mech_448a
+  type: quantitative_gap
+  layer: L6
+  status: open
+  question: What is the hydraulic permeability of the growth plate, and what loading period actually ventilates
+    it?
+  why_it_matters: From articular-cartilage parameters the poroelastic diffusivity is 5.3e-9 square metres per
+    second, giving an oscillatory penetration depth of 7.5 micrometres at 15 Hz, 29 micrometres at 1 Hz, 1.2 mm
+    at one cycle per 30 minutes and 8.6 mm diurnally. If those numbers hold for the plate then impact and
+    vibratory loading are physically incapable of ventilating it by two orders of magnitude, while postural and
+    diurnal timescales do so completely - which is a quantitative reason to prefer the recumbency arm over the
+    impact arm, and a constraint on R427's lateral joint loading whose own proposed mechanism is fluid flow.
+  what_is_known: cohen1994 measured the bovine growth plate biphasically, finding the periphery more permeable
+    than the interior, and used it only for stress relaxation. kazemi2021 built a poroelastic finite-element
+    model of reserve-zone cartilage and computed cell strain and fluid shear, never solute delivery.
+    ohara1990 shows cyclic loading raises albumin transport 30 to 100 per cent and does nothing for urea.
+  what_is_missing: The growth plate's own hydraulic permeability as a number. Every penetration depth above
+    scales on it and is currently computed from articular cartilage.
+  discriminating_experiment: Re-run ohara1990's desorption design on growth-plate explants with a solute size
+    ladder - urea, glucose, a 4 kDa peptide, a 15 kDa single-domain antibody, albumin - across loading periods
+    from one second to four hours, reporting enhancement against the predicted penetration depth over plate
+    thickness.
+  blocking: false
+- gap_id: g_l5_448b
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Can an animal extracellular matrix be loosened without degrading it?
+  why_it_matters: singh2012 shows a covalently cross-linked load-bearing matrix cannot incorporate new material
+    without cleaving itself - an endopeptidase triple mutant lyses. That is the general form of the aggrecanase
+    and RANKL trap that killed denosumab here in R317 and aggrecanase inhibition in R337. Plants have three
+    loosening modalities including non-catalytic slippage by expansin; animals have only hydrolysis. If
+    elongation is matrix-yield limited rather than pressure limited, as R448's arithmetic indicates, then a
+    non-degrading loosening agent is the missing tool.
+  what_is_known: Expansins loosen by breaking non-covalent bonds at acidic pH without hydrolysis, are
+    sub-stoichiometric, and repressing them gives smaller organs with larger cells. No animal homologue exists;
+    expansin-like genes reach animals only by horizontal transfer into plant parasites. A query for expansin
+    and cartilage returns zero records.
+  what_is_missing: Whether a bacterial expansin acts on an animal matrix at all. EXLX1 from Bacillus subtilis is
+    purified and characterised and has never been applied to cartilage.
+  discriminating_experiment: Apply purified EXLX1 to cartilage or growth-plate explants in a constant-load
+    creep assay at controlled pH and measure extension against a heat-inactivated control.
+  blocking: false
+- gap_id: g_l7_449a
+  type: known_unknown
+  layer: L7
+  status: open
+  question: Do the Longshanks selected loci act postnatally, and is FXYD2 a growth-plate lever?
+  why_it_matters: marchini2018 is the only unbiased perturbation experiment that asks what biology changes when
+    a mammal is optimised for one bone's length, and it answers with an increased NUMBER of proliferative
+    chondrocytes and no change in proliferation rate, hypertrophic cell size or growth duration - independently
+    reproducing R423's finding that amplification carries the yield. The genomic follow-up names Fxyd2, and
+    four of its other five named genes are already in this ledger, which validates the instrument.
+  what_is_known: marchini2021 identifies Fxyd2, a Na+/K+-ATPase regulatory subunit, as reduced in long-boned
+    mice, with pharmacological NKA inhibition disrupting chondrocyte differentiation.
+  what_is_missing: Whether the selected alleles act on postnatal growth-plate architecture or on limb-bud
+    patterning - a secondary report has the length difference already present at birth, which would fail
+    CORR-299. FXYD2 has no bone-length endpoint under any agent, and the only pharmacology on its target
+    (cardiac glycosides) runs in the disrupting direction.
+  discriminating_experiment: Cross the Longshanks selected-locus list against the 207 signed height genes, and
+    test whether the tibial length difference is present at birth or accrues postnatally.
+  blocking: false
+- gap_id: g_l1_449b
+  type: quantitative_gap
+  layer: L1
+  status: open
+  question: Does resting-zone cell fraction scale with donor height SDS in the existing human growth-plate
+    atlases?
+  why_it_matters: Every human growth-plate transcriptomic atlas was built from biopsies taken at epiphysiodesis
+    for idiopathic tall stature, because that is the only circumstance in which healthy human physis is
+    removed. The field's canonical description of the human growth plate is therefore a description of the tall
+    tail, phenotype-selected, with no normal-stature or short-stature comparator - and neither paper frames it
+    that way. Every abundance number this atlas quotes from those datasets inherits that selection.
+  what_is_known: avijgan2026 states the donors had idiopathic tall stature and were 12 to 14 years old.
+    chu2026 describes surgical specimens from growth-restricting procedures.
+  what_is_missing: No stratification by donor phenotype has been published, and no human plate has ever been
+    compared against a control.
+  discriminating_experiment: Predicted adult height IS the surgical indication, so every donor has a height SDS
+    in the clinical record. Regress resting-zone cell fraction, or the CHRDL2 and SFRP5 sub-population
+    proportion, on donor height SDS. It is the first direct test of what makes a plate tall in humans and it
+    needs no new tissue.
+  blocking: false
+- gap_id: g_l7_449c
+  type: quantitative_gap
+  layer: L7
+  status: open
+  question: Is the antler fast because its growth zone is long rather than because its cells are fast?
+  why_it_matters: muir1988 places the antler mineralisation front 5 to 10 centimetres below the tip, so the
+    unmineralised growth zone is 50 to 100 mm long. At 2 cm per day a cell transits that zone in 2.5 to 5 days,
+    which is the same order as a sub-millimetre mammalian growth plate. If the transit times match and the zone
+    lengths differ by two orders of magnitude then the antler is fast by ARCHITECTURE and not by kinetics - and
+    the enabling condition is that antler cartilage is vascular, which is R448's oxygen ceiling read from the
+    other end.
+  what_is_known: The mineralisation depth, the elongation rate, the vascularity of antler cartilage, and that
+    blood volume rises about 194 ml per kg of antler.
+  what_is_missing: No label or BrdU transit study of the antler exists. Antler cell-cycle time, chondrocyte
+    height, cells per column and matrix per cell are unmeasured, so the fastest-growing bone in any mammal has
+    never had its rate decomposed.
+  discriminating_experiment: Fluorochrome or thymidine-analogue labelling through the antler growth zone with
+    zonal histomorphometry, giving transit time, cells per column and terminal cell height for direct
+    comparison against a growth plate.
+  blocking: false
+- gap_id: g_l7_449d
+  type: known_unknown
+  layer: L7
+  status: open
+  question: Is the growth-plate resting zone innervated, and does denervation reduce the progenitor pool and
+    bone length in a normal growing animal?
+  why_it_matters: pei2023 shows loss of sensory innervation decreases mesenchymal stem cell number in the
+    continuously growing incisor, with nerve-derived FGF1 acting on FGFR1 through an mTOR and autophagy axis
+    that can be rescued - and autophagy sustaining a quiescent stem cell is one of R437's eight zero-coverage
+    processes. pei2024 shows deleting Fgfr2 from a Gli1-positive progenitor lowers hedgehog output and shortens
+    the structure, which is the unfavourable direction for a wild-type subject on a continuous pan-FGFR
+    inhibitor, from a tissue owing nothing to the cilium-length argument.
+  what_is_known: The resting zone's catalogued niche inputs are secondary-ossification-centre Shh and
+    hypertrophic-zone Ihh. Nerve to Gli1-positive mesenchymal signalling is established in bone repair, and the
+    physis is demonstrably nerve-accessible in injury, where somatosensory nerves drive bony bar formation.
+  what_is_missing: Innervation has never been examined as a third niche input in a physiological context. No
+    denervation study with a longitudinal growth endpoint in a normal growing animal exists.
+  discriminating_experiment: Surgical or chemical denervation of one hindlimb in a normal growing animal with
+    the contralateral limb as internal control, reading resting-zone cell number, Gli1 and Ptch1, and femur and
+    tibia length. The same design tests the unexplained cross-bone overgrowth after fracture, since a limb-wide
+    signal crossing a joint into an untouched bone is what a nerve could carry.
+  blocking: false
+- gap_id: g_l5_449e
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Does oral chondroitin sulfate lengthen bone in a normal large animal, as a patent claims?
+  why_it_matters: Patent CN119055678A claims a gene-edited SLC13A1 minipig short-stature model that does not
+    appear in the literature, and chondroitin sulfate at 70 mg/kg giving 18.5 per cent height gain in mutants
+    and 12.6 per cent in WILD-TYPE animals with body weight unchanged. If real it is the first large-animal
+    model of this file's sulfate axis with a normal-animal arm, and it supplies the finished sulfated
+    glycosaminoglycan rather than inorganic sulfate - sidestepping R322's renal-dumping objection because
+    chondroitin is not filtered as sulfate.
+  what_is_known: The human SLC13A1 burden genetics with a trunk-weighted effect, natural biallelic loss in
+    Texel sheep and miniature poodles, and R410's zonal segregation of CHST3 into the hypertrophic zone.
+  what_is_missing: Independent verification of the patent's content and data. n is 3, there is no peer review,
+    and the wild-type arm is internally odd in reporting height up with body length unchanged.
+  discriminating_experiment: Verify the patent text directly, then measure serum inorganic sulfate before and
+    after oral chondroitin sulfate in a human - which also settles whether the agent raises the pool at all.
+  blocking: false
