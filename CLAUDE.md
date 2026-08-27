@@ -12760,3 +12760,117 @@ REACHED THE TIBIAL GROWTH PLATE by fluorescent imaging, raised cells/column — 
 **CORR-340 on the one reagent that separates CXXC5 from GSK3β.** ⛔ And the authors **DECLINED a reviewer's request for
 the Cxxc5−/− × KY19382 epistasis control**, replying that KY19382 is expected to act partly independently of CXXC5.
 ⚠ KY19382 PK (rat, n=3): **i.p. F = 16.74%**, t½ 16.2 h, Cmax 463 ng/mL at 5 mg/kg. **No oral column exists.**
+
+## 📐📐📐📐📐 R463 — **THE DIRECTION QUESTION, ANSWERED FROM THE LITERATURE — AND IT CORRECTS R454 FOUR TIMES.
+## THE 9.7-FOLD DIRECTIONAL STIFFNESS MEASUREMENT WAS IN SIX ATLAS NODES AND ZERO LEDGER LINES; THE FIBRE ANGLE
+## HAS BEEN MEASURED BY SAXS AND CANNOT YET BE READ; AND THE HYPERTROPHIC-ZONE-HEIGHT READOUT DOES NOT
+## CORRELATE WITH GROWTH IN EITHER MOUSE OR HUMAN.**
+
+⛔ **CORR-352, ON THE ROUND THAT NAMED THE PROBLEM.** R454 wrote *"prein2016 is the only directional mechanical
+measurement of growth-plate matrix and it runs the wrong way."* **False twice.** `prein2016` is a **RADIAL** comparison
+(pericellular 1.6 vs interterritorial 3.6 kPa) — **not directional with respect to the growth axis at all.** The
+directional measurement is **`cohen1998`** (PMID 10412420, **NORMAL** newborn bovine distal ulna, **n=20 paired**):
+**transverse E1 4.55 ± 1.21 MPa against axial E3 0.47 ± 0.11 MPa — a 9.7-FOLD RATIO, RUNNING THE RIGHT WAY.**
+⭐ **AND IT IS THE RIGHT SIZE: the cell-shape requirement derived from `hunziker1987` is only 2.47:1 linear.** A cell
+meets ~10× more resistance widening than heightening. ⚠ Loading modes differ (E1 tensile, E3 compressive); paywalled,
+so `value_unverified`. ⚠ **`sergerie2009` qualifies it: PZ+HZ are 0.5× the reserve zone AXIALLY but 0.33× TRANSVERSELY,
+so the hypertrophic zone is ~1.5× LESS anisotropic than the reserve zone. The absolute per-zone E1/E3 for the HZ is the
+single most useful missing number and has been in print since 2009.**
+
+⭐⭐⭐ **ONE — THE DECISIVE IN-VIVO CONTROL IS A NATURAL EXPERIMENT INSIDE ONE MOUSE, AND IT BEATS THE HYDROGEL
+ARGUMENT.** `shapiro2015` (verified verbatim): in the **SAME BALB/c mouse at the SAME stage of differentiation**,
+**PHYSEAL hypertrophic chondrocytes "elongated along the long axis"** while **EPIPHYSEAL hypertrophic chondrocytes
+"remained circular to oval with no elongation."** Same genome, same programme, same animal, no culture artefact.
+**DIRECTION IS A PROPERTY OF THE ARCHITECTURE THE CELL SITS IN, NOT OF THE CELL.**
+
+⛔⛔ **TWO — THE FIBRE ANGLE *HAS* BEEN MEASURED IN A GROWTH PLATE BY ALL THREE MODALITIES R454 SAID HAD NEVER BEEN
+APPLIED — AND THE RESULT CANNOT CURRENTLY BE READ.** **SAXS: `bunger2006`** (pig L4 neurocentral plate, fibrils
+90–112 nm). **Polarised light: `speer1982`.** **SHG: `finnoy2016`.**
+⛔ **THE AMBIGUITY IS THE ROUND'S MOST DECISION-RELEVANT ITEM: the abstract says "predominant orientation in the
+LONGITUDINAL direction of the NGP" and separately refers to "the direction PERPENDICULAR to the growth plate."** If
+longitudinal means the **GROWTH AXIS**, fibres sit near **θ ≈ 0°**, far below the 54.74° crossover, and **R454's own
+arithmetic then predicts pressurisation SHORTENS AND FATTENS — the wrong sign.** If it means the plate's **in-plane**
+long dimension, the fibres are a **HOOP** and the model is confirmed. **BLOCKED ON ONE PAYWALLED FIGURE.**
+
+⛔ **THREE — AND THE ×1.58 DIAMETER RATIO IS NOT AN INDEPENDENT NUMBER.** `cruzorive1986` — the method paper behind
+`hunziker1987`, sharing its third author — defines cell height as **X(0°) = 5·V̄ / (π·E{X²(90°)})**, i.e. **volume
+divided by a width second moment.** **So height is not a third observation; it is the QUOTIENT of the other two**, and
+×4 = ×10 ÷ 2.5 forces the RMS width ratio to **√2.5 = 1.581 BY IDENTITY.** Carrying the published two-model prefactor
+scheme (oblate spheroid for PZ, super-egg n=2.9 for HZ) moves the implied width ratio to **≈1.45** and the anisotropy
+from 2.47:1 to **≈2.76:1**. → **The anisotropy claim rests on ONE model-free measurement (volume) and ONE biased
+measurement (width, which `cruzorive1986` §10.5 says is biased HIGH in hypertrophic cells) — not on three.**
+⚠ **And the BASELINE expansion is not purely axial by the atlas's own model-free measurement: `breur1994` reconstructed
+individual cells by serial section and reports the volume rise raising BOTH vertical AND horizontal diameters.**
+`bylskiaustrow2018`'s unchanged human width is the **RESPONSE TO A PERTURBATION** being purely axial, not the baseline.
+⛔ **And the same laboratory's PIG study disagrees with its own HUMAN study on that variable** — `bylskiaustrow2009`:
+zone height, cell height **AND cell width** all lowest on the stapled side (model p<0.02). **Both paywalled.**
+
+⛔⛔⛔ **FOUR — THE ZONE-HEIGHT READOUT IS BLIND, THE FIELD SAID SO IN 1989, AND IT WAS TESTED SYSTEMATICALLY IN 2021.**
+`hunziker1989`'s own conclusion, already in this atlas: growth-plate height as an estimator of linear growth rate is
+**"limited."** `wilson2021` (**NORMAL mouse neonate→young adult PLUS HUMAN tibial radiographs**) then regressed every
+plate parameter against growth: ⭐ **HYPERTROPHIC ZONE HEIGHT AND PLATE AREA DID NOT CORRELATE**, while total height,
+**resting-zone height**, PZ+PHZ height, proliferation activity and **PLATE WIDTH** did — width most strongly, in both
+species. **THE ONE ZONE WHOSE HEIGHT IS BLIND IS THE ZONE CARRYING 44–59% OF ELONGATION** (CORR-361), and it is exactly
+the variable `bylskiaustrow2018` showed misses a **34% cell-level effect on the same sections at P=0.21.**
+⭐ **THE OPERATIONAL RULE: ANY RESULT IN THIS FILE WHOSE ONLY CARTILAGE ENDPOINT IS HYPERTROPHIC ZONE HEIGHT IS
+UNINFORMATIVE RATHER THAN NULL, UNLESS A BONE-LENGTH ENDPOINT ACCOMPANIES IT.** Named cases:
+· ⚠ **`movrareskrtic2014` — FULVESTRANT in WILD-TYPE ovariectomised mice: "effect on growth plate height = 0", 3 weeks,
+  NO cell height, NO cell width, no length.** This is one of the three wild-type fulvestrant nulls R338/R357/R358 lean
+  on. **It does not overturn the argument** — `sibonga1998` and `turner2000` are separate, and R358 already withdrew
+  the animal nulls on the different ground that rodents do not fuse — **but it is a second reason not to lean on it.**
+· ⚠ **`lui2019` — CARTILAGE-TARGETED IGF-1 (Mol Ther 2019, GH-deficient *lit* mouse): the ENTIRE efficacy endpoint is
+  "increased overall growth plate height."** A modern, deliberately plate-targeted biologic resting on the one
+  parameter shown not to track growth rate. Deficiency model, so CORR-203 also applies.
+· ✓ **`nakagawa2008` — cinacalcet: tibia length measured ALONGSIDE zone height, so its null does not depend on it.**
+
+⭐⭐⭐ **FIVE — AND THE CLEANEST COUNTEREXAMPLE IN THE ATLAS TO A PURE h_term STRATEGY, NEW THIS ROUND.** `rathod2024`
+(verified verbatim), **global TRAP/ACP5 knockout vs WILD-TYPE LITTERMATE, both sexes: "growth plate height as well as
+height of terminal hypertrophic chondrocytes were markedly increased, and the number of columns was decreased" — AND
+THE TIBIA WAS SHORTER**, with **serum IGF-1 unchanged** and organ masses not proportionally lower, so it is not a
+general growth reduction. **RAISING TERMINAL CELL HEIGHT IS NOT SUFFICIENT FOR LENGTH — ninth instance of charge
+without discharge, and the first with the cell-level term itself measured.**
+
+⭐⭐ **SIX — AND `g_l7_449d` IS HALF-ANSWERED: THE DENERVATION EXPERIMENT R449 SAID HAD NEVER BEEN DONE HAS BEEN DONE.**
+`killion2017` — **NORMAL mouse, sciatic nerve transected at P8, CONTRALATERAL LIMB AS INTERNAL CONTROL** — gives
+**significantly SHORTER TIBIAE at 8 and 14 weeks**, reduced BMD, disrupted columns, **ALTERED COLLAGEN FIBRE
+ORGANISATION by polarised light**, and disrupted actin. `sciatic nerve` returned **0 node files and 0 ledger hits**.
+✗ It does not close the gap — **no resting-zone count, no Gli1/Ptch1** — but it closes the length and architecture half,
+and it is the only in-vivo link between cytoskeleton, matrix fibre order and bone length in one animal.
+
+⭐ **SEVEN — R440's CLAIM SURVIVES WITH ONE QUALIFICATION, AND THE SEARCH THAT CONFIRMS IT IS SMALL ENOUGH TO
+ENUMERATE.** Full-text co-occurrence of `"chondrocyte height"` with `"chondrocyte width"` returns **ZERO** records.
+The real corpus measuring growth-plate cell width is **mechanical, genetic, nutritional and developmental — NOT ONE IS
+A GROWTH-PROMOTING PHARMACOLOGICAL AGENT.** ⛔ **Vocabulary trap recorded: `orikasa2024`'s "cell width" is COLUMN width
+in CELLS (1 vs 2), not µm.**
+⭐ **THE QUALIFICATION IS VALUABLE: GH AND IGF-1 *HAVE* BEEN SCORED ON TWO DIMENSIONS — HEIGHT AND VOLUME — AND WIDTH
+IS RECOVERABLE.** `hunziker1994`: terminal cell height 19.5 / 27.3 / 26.5 / 29.8 µm and volume 6,370 / 9,890 / 11,140 /
+10,246 µm³ for saline / IGF-I / GH / normal littermate → back-calculated aspect ratios **0.96 / 1.27 / 1.15 / 1.42**.
+⭐ **HORMONES RESTORE SIZE MORE COMPLETELY THAN SHAPE** — IGF-I and GH bring volume to or above normal while the aspect
+ratio reaches only 1.27 and 1.15 against a normal 1.42. ⚠ Hypophysectomy rescue, so CORR-203; cylinder assumption mine.
+
+⭐ **EIGHT — THE MECHANISM RANKING, AND THE PLANT ANALOGY RESOLVED.** Ranked by what is measured: **① tissue-level
+mechanical anisotropy** (the only one with a number, and the right size) · **② the column itself, via integrin-driven
+90° rotation** — `greer2024` shows **integrin β1 drives it and N-cadherin restrains it**, and `yuan2023`'s α-parvin
+mutants are **"shorter but wider"**, the exact phenotype of losing axial channelling · **③ the primary cilium**
+(`deandrea2010`: RZ non-polarised, PZ and HZ aligned to the long axis — correlation only) · **④ pericellular matrix**
+(`noonan1998`: PCM/territorial **+61%** vs interterritorial **+26%** — actively remodelled, not passively stretched) ·
+**⑤ cytoskeleton** (`killion2017` only) · **⑥ NOT osmotic and NOT biosynthetic** — `bush2008` shows free swelling does
+not reproduce in-vivo lengthening, and the cichlid work shows matrix production does not correlate with rate.
+⭐⭐ **AND THE PLANT ANALOGY TRANSFERS AS LOGIC AND FAILS AS OBJECT.** `baskin2013`'s own sentence is the transferable
+one: *"an isolated cylindrical cell should have an intramural stress anisotropy favouring the transverse direction"* —
+**even in plants a single pressurised cell wants to WIDEN; only the TISSUE makes it lengthen.** ⛔ **And the chondrocyte
+cannot be the pressure vessel at all: R448 established the matrix out-pressures the cell 710-fold. R454's fibre-wound
+hydrostat was applied to the wrong object — the growth plate's analogue of "the wall" is the MATRIX SEPTUM, a
+tissue-level structure SHARED BETWEEN CELLS.** Take the analogy at the tissue tier and abandon it at the cell tier.
+⭐ **AND THE CONSEQUENCE: if the cell cannot shove the matrix aside, hypertrophy must occupy space the matrix CONCEDES
+— a YIELD problem — and R448 established animals have no expansin and every animal matrix-loosening tool is a protease.
+So the plate's directional yield is predicted to be PROTEOLYTIC AND DIRECTIONALLY TARGETED, and nobody has looked for a
+protease with a septal-face preference in any species.**
+
+⛔ **EARNED NEGATIVES, EACH BY QUERY:** no directional stiffness measurement of a longitudinal versus a transverse
+septum in any species (`"longitudinal septa" OR "transverse septa"` × modulus/stiffness/AFM/nanoindentation = **0**) ·
+no measurement of adhesion or integrin engagement on the LATERAL versus the AXIAL face of a hypertrophic chondrocyte ·
+**`vimentin` = 0 files in this atlas** and no growth-plate vimentin anisotropy measurement · no experiment has
+reoriented cilia and measured cell height and width.
+⚠ **BIBLIOGRAPHY DEFECT FIXED THIS ROUND: `farnum2002` carried the TITLE of `farnum2000`** (PMID, DOI and
+one_line_finding were correct; title field only).
