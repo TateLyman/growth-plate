@@ -1,0 +1,129 @@
+id: round477_chronic_metalloproteinase_inhibition_as_a_hidden_growth_cost
+name: >-
+  R477 - chronic metalloproteinase inhibition as a hidden growth cost: the tetracycline class carries a
+  human bone-length reduction on its own label, and the one direct test in a normal animal is NULL
+aliases:
+  - doxycycline growth cost
+  - tetracycline fibula growth rate
+  - TIMP-3 chondrocyte overexpression
+  - ADAM12 inducers
+type: intervention
+layer: L12
+stub: false
+confidence: D
+last_verified: '2026-08-27'
+species_basis: human, rat, mouse
+human_evidence: direct
+human_evidence_note: >-
+  The human evidence is a label statement traceable to a 1963 primary (chu1963fibula) - a decrease in
+  fibula growth rate in premature infants on oral tetracycline at 25 mg/kg every six hours, reversible on
+  discontinuation - at roughly sixty times the dose an adolescent takes for acne, and attributed by the
+  label to calcium chelation rather than to metalloproteinase inhibition. No paediatric acne cohort with a
+  height endpoint has ever been reported, although one already exists uncomputed inside schmidt2026.
+translation_risk: high
+translation_risk_reason: >-
+  The mechanism is supported from three sides and the only direct pharmacological test in a growing animal
+  is negative. Everything connecting an acne-dose tetracycline to a growth plate is inference across a
+  sixty- to one-hundred-and-fifty-fold dose gap.
+summary: >-
+  R469 named ADAM12 a GAIN-ONLY LEVER, which raises the mirror question: is anything an adolescent might
+  take chronically INHIBITING the matrix-proteolysis arm, and therefore paying a hidden growth cost? The
+  drug class that fits is the tetracyclines, because sub-antimicrobial doxycycline (Periostat 20 mg twice
+  daily, Oracea 40 mg) is the only metalloproteinase inhibitor in routine long-term human use and is
+  marketed explicitly for that action - the oncology MMP-inhibitor class failed and left nothing else. The
+  atlas had a genuine blind spot here: every one of the six files matching doxycycline is the tet-on/tet-off
+  inducible genetic system, not the drug.
+  WHAT THE MECHANISM ACTUALLY IS. A tetracycline has never been tested against ADAM12 in any system -
+  (doxycycline OR minocycline) AND ADAM12 returns ZERO PubMed records - so the ADAM12 route is unmeasured
+  rather than refuted. It does reach beyond the MMPs: doxycycline reduces recombinant ADAMTS-13 activity by
+  18 to 21 per cent in human plasma (bartoli2015), which is the adamalysin clan ADAM12 belongs to, modest
+  and not the same enzyme family branch. THE SHARPER ROUTE NEEDS NO REFERENCE TO ADAM12 AT ALL: tetracyclines
+  inhibit MMP-13 at IC50 generally below 1 ug/mL against MMP-8 at 15-86 and MMP-1 requiring above 200
+  (greenwald1998), so MMP-13 is the only mammalian collagenase inhibited inside the achievable serum range -
+  and MMP-13 is this atlas's discharge protease at 2,085 CPM and 11.89-fold cartilage enrichment (R432),
+  with blocking discharge as failure mode number one.
+  THE EVIDENCE SPLITS THREE WAYS AND DOES NOT CONVICT THE DRUG AT ACNE DOSE. FOR: the label sentence and its
+  1963 primary, at 100 mg/kg/day; TIMP-3 overexpression in chondrocytes, which is the genetic version of
+  putting a broad-spectrum metalloproteinase inhibitor into the target cell, shortening the growth plate
+  (poulet2016timp3); and tetracycline in young mice delaying longitudinal bone growth, although the headline
+  arm is co-exposure with microplastics and the mechanism proposed is the gut-bone axis. AGAINST, and it is
+  the only direct test: doxycycline at 10 and 30 mg/kg/day for 60 days in rats with non-treated control arms
+  and femur length by digital caliper found NO DIFFERENCE (defigueiredo2019) - at six to forty-five times
+  the human acne dose, and with the drug demonstrably reaching the tissue, since the same authors report it
+  changes growth-plate morphology. AND TIMP-3's OWN SHORTENING IS TRANSIENT, fully recovered by 8 weeks.
+  THE INVERSE - ANYTHING THAT RAISES ADAM12 - IS ALMOST EMPTY. No human or animal exercise or training study
+  has ever measured ADAM12, despite it being a myoblast-fusion gene and despite kveiborg2006 driving the
+  transgene from a MUSCLE creatine kinase promoter. The only known in vivo pharmacological raiser is an EZH2
+  inhibitor (zhu2022adam12ezh2), which this atlas contraindicates twice. What is usable is a measurement:
+  ADAM12 is an established first-trimester serum screening analyte, so circulating ADAM12 can be measured in
+  humans today, and the human direction is concordant - plasma ADAM12 at 36 weeks is REDUCED in pregnancies
+  delivering small-for-gestational-age infants in two independent cohorts (andres2022adam12).
+  VERDICT: A WATCH-ITEM AND A QUESTION TO ASK, NOT AN ESTABLISHED COST. It costs nothing to ask whether the
+  subject is on a long-term acne antibiotic and nothing to substitute a non-tetracycline agent, which is the
+  same class as the minoxidil, paracetamol and finasteride items already in the ledger.
+quantitative:
+  - parameter: tetracycline inhibition of MMP-13 (the plate's discharge protease)
+    value: 'IC50 below 1'
+    unit: ug/mL, against MMP-8 15-86 and MMP-1 above 200
+    species: in_vitro_human_cell
+    source_ref: greenwald1998
+    note: >-
+      A greater than 200-fold potency spread across the three mammalian collagenases. Only the MMP-13 figure
+      sits inside the serum range of an oral tetracycline.
+  - parameter: doxycycline inhibition of ADAMTS-13 in human plasma
+    value: '18-21'
+    unit: per cent reduction (p=0.01)
+    species: human
+    source_ref: bartoli2015
+    note: >-
+      The only evidence that a tetracycline reaches beyond the MMPs into the adamalysin clan. ADAMTS is not
+      ADAM, and no tetracycline has ever been tested against ADAM12 in any system.
+  - parameter: femur length in rats on doxycycline 10 and 30 mg/kg/day for 60 days
+    value: no difference
+    unit: digital caliper, with non-treated control arms
+    species: rat
+    source_ref: defigueiredo2019
+    note: >-
+      NULL at six to forty-five times the human acne dose, with target engagement demonstrated by altered
+      growth-plate morphology in the same animals. Female only, dosing begun at 165 days against a stated
+      bone maturity of 300 days, n=7 per group.
+  - parameter: human dose gap between the label's fibula finding and acne dosing
+    value: '60-150'
+    unit: fold
+    species: human
+    source_ref: chu1963fibula
+    note: >-
+      DERIVED HERE: 25 mg/kg every six hours is 100 mg/kg/day, against about 1.7 mg/kg/day for 100 mg
+      doxycycline in a 60 kg adolescent and 0.67 for sub-antimicrobial 40 mg.
+  - parameter: growth plate length under chondrocyte TIMP-3 overexpression
+    value: transient reduction
+    unit: recovered by 8 weeks, with permanent loss of tibial structure and mechanical properties
+    species: mouse
+    source_ref: poulet2016timp3
+    note: >-
+      TIMP-3 is the broad-spectrum TIMP inhibiting MMPs, ADAMTSs and ADAM12/ADAM17, so this is a
+      metalloproteinase inhibitor delivered to the target cell genetically. Direction-concordant with the
+      ADAM12 gain arm and magnitude-unimpressive.
+  - parameter: exercise or training studies measuring ADAM12 in any species
+    value: '0'
+    unit: records, across three query formulations returning 7, 27 and 18 hits
+    species: human
+    source_ref: kveiborg2006
+    note: >-
+      Every hit is cancer bioinformatics using the phrase training set, myoblast cell culture, or
+      preeclampsia screening. ADAM12 is a myoblast fusion gene and nobody has measured it before and after
+      training.
+key_refs:
+  - ref_id: greenwald1998
+  - ref_id: smith1999doxy
+  - ref_id: bartoli2015
+  - ref_id: defigueiredo2019
+  - ref_id: poulet2016timp3
+  - ref_id: chu1963fibula
+  - ref_id: carson2023mino
+  - ref_id: zhu2022adam12ezh2
+  - ref_id: andres2022adam12
+  - ref_id: jorgensen2007adam12
+  - ref_id: schmidt2026
+open_questions:
+  - g_l12_477a

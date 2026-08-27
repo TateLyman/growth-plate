@@ -19725,3 +19725,78 @@ gaps:
     caliper measurement of BOTH femora and BOTH tibiae at skeletal maturity, with serial in-vivo imaging so the transient
     and the terminal states are read in the same animals, and with the contralateral FORELIMB measured to separate a
     limb-regional signal from a whole-animal one per hansson1967.
+- gap_id: g_l8_477a
+  type: quantitative_gap
+  layer: L8
+  status: open
+  question: Does the ADAM12 fibroblast eQTL signal formally colocalise with the leg-length association, and is the leg-length
+    association independent of the UROS/DHX32 height lead 208 kb away?
+  why_it_matters: R477 is the only human directional evidence that raising ADAM12 lengthens bone, and it is the fact
+    that makes ADAM12 a candidate rather than an unopposed mouse transgenic. It also carries the compartment verdict
+    - the effect is entirely in the leg, which is the wrong compartment for a trunk-dominant residual - so both the promotion
+    and the demotion of the target rest on it.
+  what_is_known: At chr10:126,229,943 (rs34925916) the ADAM12-raising allele C is associated with leg length at +0.00973
+    SD, P=8.3e-08, with sitting height NULL at P=0.82, while the same variant is an ADAM12 fibroblast eQTL at p=8.69e-18
+    with the next gene nineteen orders weaker. The region's standing-height lead rs34845021, 208 kb away, is a UROS eQTL
+    at p=1.35e-39 and is fibroblast-null for ADAM12 at p=0.79; reciprocally the ADAM12 lead is whole-blood-null at p=0.99.
+    The two clusters also have incompatible compartment shapes (55 per cent trunk versus 0 per cent trunk), which two
+    variants tagging one causal signal could not.
+  what_is_missing: A formal colocalisation posterior. R477 used lead-variant gene specificity, mutual eQTL nullity and
+    compartment-shape discordance, which is weaker than coloc or SMR-HEIDI, and no conditional analysis was run because
+    that needs individual-level genotypes or an LD reference matched to the cohort. GTEx also contains no cartilage,
+    so the mesenchymal tissue is cultured fibroblasts.
+  discriminating_experiment: Run coloc (or SMR with the HEIDI heterogeneity test) between the GTEx v8 Cells_Cultured_fibroblasts
+    ADAM12 cis-eQTL and each of GCST90728584/86/87 across the ADAM12 region, then repeat conditioning on rs34845021,
+    using a European LD reference. A high posterior for a shared causal variant on leg length that survives conditioning
+    would make ADAM12 the first gain-only target in this file with a human signed direction; failure would return it
+    to the unopposed-transgenic state.
+- gap_id: g_l12_477a
+  type: search_established
+  layer: L12
+  status: open
+  question: What is the adult-height estimate for the oral tetracycline arm of schmidt2026, and is the subject taking
+    or has he taken a long-term acne tetracycline?
+  why_it_matters: Sub-antimicrobial doxycycline is the ONLY metalloproteinase inhibitor in routine long-term human use
+    and is marketed explicitly for that action, the oncology MMP-inhibitor class having failed. Tetracyclines inhibit
+    MMP-13 - this atlas's discharge protease at 2,085 CPM and 11.89-fold cartilage enrichment - at IC50 below 1 ug/mL,
+    inside the achievable serum range, and the class carries a human bone-length reduction on its own label. If it is
+    a real cost it is free to stop.
+  what_is_known: 'greenwald1998 gives the MMP-13 potency; bartoli2015 shows doxycycline also reaches ADAMTS-13 by 18-21
+    per cent in human plasma; chu1963fibula is the primary behind the label sentence, at 100 mg/kg/day, sixty to one
+    hundred and fifty times an acne dose, and reversible. AGAINST: defigueiredo2019 gave doxycycline at 10 and 30 mg/kg/day
+    for 60 days to rats with untreated control arms and femur length by caliper did not move, with growth-plate morphology
+    visibly changed in the same animals. poulet2016timp3 shortens the plate genetically but transiently.'
+  what_is_missing: The human number. schmidt2026 measured adult height at conscription in 379,196 Danes with oral tetracycline-class
+    antibiotics as an explicit exposure and reports detailed results only for the isotretinoin arm, without even disclosing
+    the number of tetracycline users. Europe PMC isOpenAccess N, inPMC N, no preprint. Separately, no paediatric acne
+    cohort with a height endpoint has ever been reported and no doxycycline trial registers height as an outcome.
+  discriminating_experiment: Obtain schmidt2026 in full and read the tetracycline comparator row - it is a document request,
+    not an experiment, and the estimate is already computed. Secondarily, ask the subject about any long-term acne antibiotic
+    and its dose and duration; substitution to a non-tetracycline agent is trivial.
+- gap_id: g_l4_477b
+  type: contradiction
+  layer: L4
+  status: open
+  question: Why does chronic transgenic secretion of an IGFBP protease lengthen a normal bone while daily recombinant
+    protein fails, and does that failure predict the outcome of supplying recombinant ADAM12-S?
+  why_it_matters: The single ranked ask on the ADAM12 arm (g_l12_466a, g_l12_476a) is to supply catalytically active
+    recombinant ADAM12-S to a normal growing animal. If the modality rather than the target is what fails, that experiment
+    is predicted null before it is run, and the correct construct is a chronic secreting one - which is a far larger
+    programme.
+  what_is_known: 'POSITIVE, both chronic transgenic and both in normal animals: kveiborg2006 ADAM12-S from a muscle creatine
+    kinase promoter, femur +8, +9 and +17 per cent; qin2006pappa osteoblast-specific PAPP-A under Col1a1, femur length
+    107 per cent of wild type with a wider plate and unchanged body weight. NEGATIVE, both exogenous protein: fernndezarjona2026
+    daily rhPAPP-A2 to wild-type mice PND5 to PND35, body length 15.33 to 15.15 in males, ns, moving only the femur-to-body
+    and tibia-to-body ratios; and kveiborg2006''s own purified recombinant ADAM12-S was null on chondrocyte proliferation
+    in vitro. Candidate explanations, none tested: pharmacokinetics, since a daily injection gives a peak-and-trough
+    exposure where a transgene gives a continuous one; the site of secretion, since both positives secrete from a tissue
+    rather than into a vein; and pro-domain processing, since ADAM12 requires furin activation and a catalogued construct
+    can be inactive.'
+  what_is_missing: Nobody has compared a continuous-infusion or depot delivery of either protease against a daily injection
+    with the same length endpoint, and no pharmacokinetic measurement of either recombinant protein exists in a growing
+    animal.
+  discriminating_experiment: Give catalytically active recombinant ADAM12-S to normal growing mice by osmotic minipump
+    (continuous) against daily subcutaneous injection at matched total dose, with a protease-dead ADAM12-S arm and a
+    vehicle arm, reading femur and tibia length, the collagen type X-positive zone width and TERMINAL CELL HEIGHT separately
+    from cell width - not proliferation, which the in vitro null already excludes, and not zone height alone, which R463
+    and R471 show is a weak readout.

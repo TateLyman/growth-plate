@@ -14284,3 +14284,169 @@ Nordentoft, read directly, says the stimulation there is **"not further specifie
 number in the source either. **Blocked item C6's identifier (PMID 13141004) is `value_unverified` and the
 modern replication (`lee2023metaphyseal`, `park2025metaphyseal`) is the only quantified version of the
 occlusion result — with `hansson1967` showing its long-run sign is negative.**
+
+## 🧬📐🧬📐 R477 — **THE ADAM12 DIRECTION IS SIGNED AT LAST, AND THE METHOD IS NEW TO THIS FILE: CROSS THE
+## eQTL AGAINST THE GWAS. RAISING ADAM12 IS TALLER — AND IT IS ENTIRELY LEG, WHICH WITHDRAWS R476'S OWN
+## COMPARTMENT COORDINATE ONE ROUND AFTER I COMPUTED IT.**
+## Run `atlas/tools/round477_adam12_eqtl_direction.py` · data `atlas/data/round477/`
+
+⭐ **THE PROBLEM R466 LEFT.** ADAM12's top GWAS trait is human height — **nine conditionally independent
+`yengo2022` signals inside a 376 kb gene body, best P=6e-73** — and they split **five height-decreasing
+against four height-increasing**, so the locus carried **no GENE direction at all.** The fix costs nothing:
+**align every variant to its ADAM12-RAISING allele using the GTEx normalised effect size — NES is defined
+per ALT relative to REF — then read the height beta.** Run over **all 588 GTEx v8 cis variants** tested
+against ENSG00000148848 (`metasoft` endpoint) against the **three absolute traits in one cohort of 451,921**.
+
+⛔⛔ **ONE — THE CRUDE AGGREGATE IS AN ARTEFACT, IT POINTS THE WRONG WAY, AND I NEARLY REPORTED IT.** Pooled
+over 346 variant-tissue pairs at eQTL p<1e-4 it reads **211 shorter against 135 taller**, and among the
+**71 genome-wide-significant height variants it is 71 shorter and 0 taller** — which at face value refutes
+the mouse outright. **It is wrong for a checkable reason: THE REGION CARRIES TWO INDEPENDENT REGULATORY
+SIGNALS 208 kb APART AND THE ONE CARRYING THE HEIGHT ASSOCIATION IS NOT AN ADAM12 eQTL.**
+
+⭐⭐⭐ **TWO — THE GENE-SPECIFICITY QUERY SETTLES IT, AND IT IS ONE API CALL PER VARIANT.**
+· **rs34845021 (chr10:126,019,392) — the region's standing-height lead, P=7.7e-11 — IS A `UROS` eQTL AT
+  p=1.35e-39 IN FIBROBLASTS AND A `DHX32` eQTL AT p=4.25e-28. Its ADAM12 arm is p=6.71e-05 in VISCERAL
+  ADIPOSE alone — thirty-five orders weaker — and at NES +0.118 it is the OPPOSITE SIGN to the whole-blood
+  −0.198 the aggregate used.** (Also BCCIP p=3.8e-06, FANK1 p=1.1e-05.)
+· **rs3858310 (chr10:126,227,914) is ADAM12 at p=3.47e-26 in fibroblasts, next gene C10orf90 NINETEEN
+  ORDERS WEAKER.**
+· ⭐ **AND THEY ARE MUTUALLY NULL: the fibroblast lead has whole-blood NES +0.000 at p=0.99, and the height
+  lead has fibroblast NES −0.008 at p=0.79. Two separate signals, not one in LD.**
+
+⭐⭐⭐⭐ **THREE — THE RESULT, ON THE CLUSTER THAT ACTUALLY IS AN ADAM12 eQTL: THE ADAM12-RAISING ALLELE IS
+ASSOCIATED WITH LONGER LEGS.** Of **33 variants at fibroblast eQTL p<1e-8, 27 have the ADAM12-raising allele
+TALLER**, and the six exceptions are a separate sub-block at 126.468–126.471 Mb whose height p is 0.15–0.16,
+i.e. **null rather than opposing.** Best variant **rs34925916 (chr10:126,229,943, raising allele C, EAF
+0.381, ADAM12 fibroblast eQTL p=8.69e-18):**
+| trait | beta per ADAM12-raising allele | P |
+|---|---|---|
+| **LEG LENGTH** | **+0.00973** (SE 0.00178) | **8.3e-08** |
+| standing height | +0.00734 (SE 0.00168) | 3.3e-05 |
+| **SITTING HEIGHT** | **+0.00065** (SE 0.00188) | **0.82 — NULL** |
+→ ⭐ **FIRST HUMAN DIRECTIONAL EVIDENCE THAT RAISING ADAM12 LENGTHENS BONE, AND IT AGREES WITH
+`kveiborg2006`'s TRANSGENIC.** Nine anonymous signals could not deliver this; one eQTL alignment does.
+
+⛔⛔ **FOUR — AND IT WITHDRAWS R476'S OWN COMPARTMENT COORDINATE, WHICH WAS THE MOST FAVOURABLE FACT IN THAT
+ROUND. R476 COMPUTED 55.2% TRUNK FROM rs34845021 — A UROS/DHX32 VARIANT. THE ADAM12-ATTRIBUTABLE COMPARTMENT
+IS THE OPPOSITE: SITTING HEIGHT IS NULL AND THE ENTIRE EFFECT IS IN THE LEG. ADAM12 IS A LIMB SIGNAL, AND
+THE RESIDUAL AT BA16 IS TRUNK-DOMINANT.**
+⭐ **And the compartment discordance is itself the independence check: two variants tagging ONE causal signal
+must share a compartment SHAPE.** The height lead is 55% trunk (sitting −0.00916 at P=1.1e-08); the ADAM12
+cluster is ~0% trunk with sitting frankly null. **Different shapes = not an LD shadow** — which corroborates
+the mutual eQTL nullity by a completely different route.
+
+⚠ **FIVE — MAGNITUDE AND LIMITS, STATED PLAINLY.** Leg-length SD is of order 4–5 cm, so **+0.0097 SD ≈
+0.4–0.5 mm per allele** — and that is the point of a common variant changing fibroblast ADAM12 by ~20%
+(NES −0.228). **It establishes the SIGN and says nothing about supraphysiological supply.** ✗ **No formal
+colocalisation was run** — this is lead-variant gene specificity + mutual eQTL nullity + compartment-shape
+discordance, weaker than coloc or SMR-HEIDI, and no conditional analysis was possible without an LD
+reference. ✗ **GTEx has no cartilage**; cultured fibroblasts are the mesenchymal proxy, and ADAM12 in the
+human plate is 32.6 CPM at ratio 0.24 (R465). ✗ **And NO gene at the locus reaches the 207 — ADAM12, UROS,
+DHX32, C10orf90, FANK1 and BCCIP all return ZERO burden rows** — exactly R469's gain-only prediction (a het
+pLoF test cannot see a lever whose loss is null) and simultaneously **no coding anchor in either direction.**
+Gap `g_l8_477a`.
+
+## 🧬⛔ R477 — **AND THE PLATE PHENOTYPE *IS* AN IGF PHENOTYPE, AGAINST MY OWN HYPOTHESIS. THE MODALITY IS
+## WHAT FAILS: CHRONIC TRANSGENIC SECRETION LENGTHENS A NORMAL BONE TWICE, RECOMBINANT INJECTION FAILS TWICE.**
+
+⛔ **THE HYPOTHESIS I WAS CARRYING AND THE PRIMARIES THAT REFUTE IT.** R466/R469 established that ADAM12-S
+widens the plate **only in the Col X⁺ region with cells per column UNCHANGED**, and I read that as *not* an
+IGF phenotype — which would have cleared Step 0 by putting ADAM12-S on matrix proteolysis instead of the
+GH/IGF-1 arm this file prices at **≈0 attained height after mid-puberty.** **THREE PRIMARIES SAY IT IS
+EXACTLY THE IGF-I SIGNATURE:**
+· ⭐ **`hunziker1994` Fig 2B — and this file read that paper in full on 2026-08-06 and recorded only the
+  yield decomposition (CORR-351): PROLIFERATIVE CELLS PER COLUMN ARE 14 FOR SALINE, IGF-I AND NORMAL
+  LITTERMATE ALIKE, while GH is significantly higher at 18**; hypertrophic cells per column 8 / 12 / 16 / 12;
+  hypertrophic zone height **114 / 207 / 279 / 237 µm.** **IGF-I RAISES HYPERTROPHY AND LEAVES PROLIFERATIVE
+  CELLS PER COLUMN EXACTLY AT CONTROL.**
+· **`wang1999`: Igf1-null has NORMAL chondrocyte numbers and proliferation with terminal hypertrophic cells
+  30% SHORTER, accounting for most of a 35% growth deficit, and normal ColX.**
+· ⭐ **`wang2004` separates the arms in one paper: Igf1-null = ENLARGED germinal zone, normal proliferation,
+  reduced hypertrophy · Ghr-null = HYPOPLASTIC germinal zone, reduced proliferation. GH GENERATES
+  CHONDROCYTES; IGF-I ENLARGES THEM.**
+→ **So the IGFBP-3/-5 proteolysis mechanism (`loechel2000`) is LOAD-BEARING, and the Step-0 defence reverts
+to R326's `yakar2016` split — circulating IGF-1 → RADIAL, LOCAL IGF-1 → LONGITUDINAL — which is the identical
+argument that let R341 reopen STC2, plus IGFALS being 0/14 in the human plate.** ⚠ Unresolved edge:
+`kveiborg2006` reports BrdU **increased**, which is a GH-like element that does not fit a pure IGF-I
+signature (reconcilable with cells/column unchanged, but not free).
+
+⭐⭐ **THE HUMAN ANCHOR IS BETTER THAN THIS FILE HAD IT — AND `dauber2016`'s ENTRY SAID "growth failure with
+HIGH total IGF-I but low free IGF-I" AND NOTHING ELSE.** Read properly: **FIVE patients, TWO families**
+(a WebFetch summary reporting eight is **wrong** — the text says four of five and all five). **Height SDS
+−1.10, −0.96, −3.81, −2.82, −3.14**, with **total IGF-I 831–1060 µg/l (HIGH), IGFBP-3 HIGH, IGFBP-5 high in
+4/5, IGF-II high in all 5 — and FREE IGF-I 0.27–3.31 against a prepubertal reference of 1.58–3.15, LOW in
+4/5**, bioactive-to-total reduced in all five against a normal median of 1.23%. **LOSING AN IGFBP-3/-5
+PROTEASE LEAVES THE TOTAL POOL ELEVATED AND THE FREE POOL DEPLETED AND THE PATIENTS ARE SHORT — the exact
+mirror of ADAM12-S overexpression.** rhIGF-1 roughly **doubles** velocity (3.0→6.2 cm/yr; 3.0→5.0–7.6) and
+**two patients reached target height**, though Muthuvel 2023 records **+0.6 SDS without true catch-up.**
+
+⭐⭐⭐ **AND THE FINDING THAT DECIDES WHAT TO DO NEXT — A MODALITY SPLIT, TWO FOR TWO ON EACH SIDE:**
+| | intervention | result |
+|---|---|---|
+| ⭐ **chronic transgenic secretion** | `kveiborg2006` ADAM12-S from a **muscle creatine kinase** promoter | femur **+8 / +9 / +17%** |
+| ⭐ **chronic transgenic secretion** | ⭐ **`qin2006pappa` — NEW — osteoblast-specific PAPP-A under Col1a1, 3-mo F1 females** | **FEMUR LENGTH 107% of WT (P<0.05), bone area 126%, WIDER GROWTH PLATE, BODY WEIGHT UNCHANGED at 3 and 6 mo** |
+| ⛔ **recombinant protein, daily** | `fernndezarjona2026` rhPAPP-A2 to **WILD-TYPE** mice PND5→PND35 | body length **15.33 → 15.15** in males, **numerically LOWER, ns** (CORR-108/345 confirmed from the supplementary tables); only the **femur/body 0.72→0.75 and tibia/body 0.93→0.97** ratios moved, both P<0.001 |
+| ⛔ **recombinant protein, in vitro** | `kveiborg2006`'s own purified ADAM12-S on murine chondrocytes | **null on proliferation** |
+→ ⭐⭐ **TWO DIFFERENT IGFBP PROTEASES, SAME PHENOTYPE SHAPE (longer femur, wider plate, weight unchanged),
+BOTH BY CHRONIC TRANSGENIC SECRETION IN NORMAL ANIMALS — AND BOTH RECOMBINANT-PROTEIN ARMS ARE NULL. THE
+MODALITY MAY BE THE THING THAT FAILS, NOT THE TARGET.** That is a direct warning to `g_l12_466a` and
+`g_l12_476a`, whose ranked ask is *supply recombinant ADAM12-S*. Candidate explanations, none tested:
+peak-and-trough versus continuous exposure; secretion from a tissue versus injection into a vein; and
+**ADAM12 requires furin activation, so a catalogue construct can be inactive silently.** Gap `g_l4_477b`.
+⚠ **Recorded discrepancy inside `fernndezarjona2026`: its prose claims increased body length in rhPAPP-A2
+wild-type males "from PND5" while its terminal PND35 table shows the value BELOW saline and unmarked** —
+the factorial ANOVA is pooled across timepoints. Absolute femur length is **not in the supplement**.
+⚠ And `harboe2024` runs the same way from the loss side: PAPP-A KO gives **germinal zone 15.8→19.3 µm
+(p=0.028, INCREASED), hypertrophic 153→137, femur −7% (p=0.03)** — `wang2004`'s Igf1-null signature
+reproduced by removing an IGFBP protease. ⛔ **Confound: body mass 11.7 vs 18.4 g (p=0.001).**
+
+⛔ **AND THE MATRIX ALTERNATIVE HAS NO SUBSTRATE.** `roy2004adam12`: ADAM12-S cleaves **gelatin, type IV
+collagen and fibronectin** and **NOT type I collagen**. **ADAM12 × aggrecan returns ONE REVIEW; ADAM12 ×
+type II collagen cleavage returns ZERO; ADAM12 × COMP returns no cleavage demonstration.** `kveiborg2006`
+measured **ADHESION** to fibronectin and collagen II — not proteolysis of them. **If ADAM12-S were acting on
+cartilage matrix rather than on IGFBPs, no published substrate would support it.**
+
+## 🦠⚠ R477 — **THE MIRROR QUESTION: IS ANYTHING HE MIGHT TAKE *INHIBITING* THIS ARM? THE TETRACYCLINES —
+## AND THE CLASS CARRIES A HUMAN BONE-LENGTH REDUCTION ON ITS OWN LABEL WHILE THE ONE DIRECT ANIMAL TEST
+## IS NULL. WATCH-ITEM, FREE TO ASK, FREE TO SUBSTITUTE.**
+
+⛔ **THE BLIND SPOT WAS REAL: all six atlas files matching `doxycycline` are the tet-on/tet-off inducible
+GENETIC system, not the drug.** And the class matters because **sub-antimicrobial doxycycline (Periostat
+20 mg BID, Oracea 40 mg) is the ONLY metalloproteinase inhibitor in routine long-term human use and is
+marketed explicitly for that action** — the oncology MMP-inhibitor class failed and left nothing else.
+⭐ **THE SHARP ROUTE NEEDS NO REFERENCE TO ADAM12: `greenwald1998` — tetracyclines inhibit MMP-13 at IC50
+generally BELOW 1 µg/mL against MMP-8 at 15–86 and MMP-1 requiring above 200. MMP-13 is the only mammalian
+collagenase inhibited inside achievable serum — and MMP-13 is this file's DISCHARGE PROTEASE (2,085 CPM,
+11.89× cartilage-enriched, R432), with blocking discharge as failure mode #1.**
+⚠ **The ADAM12 route is unmeasured, not refuted: `(doxycycline OR minocycline) AND ADAM12` returns ZERO
+PubMed records.** What is measured is that doxycycline reaches beyond the MMPs — **ADAMTS-13 activity down
+18–21% in human plasma, p=0.01** (`bartoli2015`) — modest, and ADAMTS is not ADAM.
+✓ **FOR:** the label sentence on every tetracycline, traced to its primary (`chu1963fibula`, **no PubMed
+abstract, magnitude NOT RETRIEVED**) — decreased fibula growth rate in premature infants, **reversible** —
+and `poulet2016timp3`, **chondrocyte TIMP-3 overexpression shortening the growth plate**, which is the
+genetic version of putting a broad-spectrum metalloproteinase inhibitor into the target cell.
+⛔ **AGAINST, and it is the only direct test: `defigueiredo2019` — doxycycline 10 and 30 mg/kg/day × 60 days
+in rats WITH untreated control arms, femur length by digital caliper — NO DIFFERENCE, at 6–45× the human
+acne dose, with the drug demonstrably reaching the tissue (the same authors report altered growth-plate
+morphology). AND TIMP-3's OWN SHORTENING IS TRANSIENT, fully recovered by 8 weeks.** ⛔ **And the dose gap
+is 60–150× (derived: 100 mg/kg/day against ~1.7 for acne doxycycline at 60 kg), with the label attributing
+the effect to CALCIUM CHELATION rather than to metalloproteinase inhibition.**
+⭐ **THE ONE OBTAINABLE ITEM THAT WOULD SETTLE IT IS A DOCUMENT, NOT AN EXPERIMENT: `schmidt2026` measured
+ADULT HEIGHT AT CONSCRIPTION IN 379,196 DANES WITH ORAL TETRACYCLINE-CLASS ANTIBIOTICS AS AN EXPLICIT ACTIVE
+COMPARATOR, AND REPORTS DETAILED NUMBERS ONLY FOR THE ISOTRETINOIN ARM** — not even disclosing the number of
+tetracycline users. Europe PMC `isOpenAccess N`, `inPMC N`, no preprint. Gap `g_l12_477a`.
+⭐ **ADD TO THE FREE-QUESTIONS LIST: any long-term acne antibiotic — doxycycline, minocycline, lymecycline,
+sarecycline — with dose and duration. Substitution to a non-tetracycline agent is trivial.** Same class as
+the minoxidil, paracetamol, finasteride and AKG items. **Grade D–E, watch-item, not an established cost.**
+
+⛔ **AND THE INVERSE IS ALMOST EMPTY.** **NO human or animal exercise or training study has EVER measured
+ADAM12** (three query formulations, 7/27/18 hits, every one cancer bioinformatics using the phrase *training
+set*, myoblast culture, or preeclampsia screening) — **despite ADAM12 being a myoblast-fusion gene and
+despite `kveiborg2006` driving the transgene from a MUSCLE creatine kinase promoter.** The only known in
+vivo pharmacological raiser is an **EZH2 inhibitor** (`zhu2022adam12ezh2`, ADAM12-S up in maternal blood
+with fetoplacental weights up), **which this file contraindicates twice** (R281, R311) — recorded, **not
+proposed.** ⭐ **What IS usable is a MEASUREMENT: ADAM12 is an established first-trimester serum screening
+analyte, so circulating ADAM12 is measurable in humans today — and the human direction is concordant, with
+plasma ADAM12 at 36 weeks REDUCED in pregnancies delivering small-for-gestational-age infants in two
+independent cohorts** (`andres2022adam12`). ⚠ Cost on the gain arm: `jorgensen2007adam12` — transgenic
+ADAM12 overexpression **suppresses muscle regeneration and aggravates dystrophy in AGED mdx mice.**
