@@ -11034,3 +11034,75 @@ sham-controlled, distance-dependent, material-dependent, in normal growing anima
 driven by a human clinical observation — and with both of the field's own proposed mechanisms refuted by its
 own control arm.** It is not usable as a route here. **What it is, is the first clean evidence that a
 sustained physical state in the metaphysis sets growth rate, which is a lever class this file has never had.**
+
+## 🩸🩸🩸🩸🩸 R443 — **THE GROWTH PLATE IS NOT UNIFORMLY AVASCULAR. CONSTANT VASCULAR CHANNELS BREACH THE
+## INTACT OPEN HUMAN PHYSIS IN THE DISTAL FEMUR AND PROXIMAL TIBIA — THIS ATLAS HAS HELD THE ANATOMY IN TWO
+## GRADE-C NODES SINCE 2026-08-05, AND THE LEDGER ASSERTS AVASCULARITY FOURTEEN TIMES WITHOUT NAMING THEM.**
+
+⛔⛔ **THE MEASUREMENT, AND IT IS THE MOST EXPENSIVE CORR-352 INSTANCE YET BECAUSE OF *WHICH* ARGUMENT IT
+UNDERMINES.** CLAUDE.md: **`transphyseal` 0 · `cartilage canal` 0 · `shao2022` 0 · `avascular` 14.**
+`transphyseal_canal.yaml` and `cartilage_canal.yaml` both exist, both grade C, both written **2026-08-05**,
+and **neither contains the words delivery, drug, biologic or therapy even once.** The delivery wall is the
+single most-cited obstacle to every biologic in this file — R314, R315, R330, R376, R401, R430 — and the
+anatomical counterexample has been sitting in the node graph the whole time, filed under **oncology and
+osteomyelitis**.
+
+⭐⭐⭐ **WHAT `shao2022` (PMID 35199961, Orthop Surg 2022) ACTUALLY FOUND, VERIFIED VERBATIM.** A previously
+undescribed **INTERCONDYLAR TRANSPHYSEAL COMPLEX (ITC)**: a vasculature-canal compound structure arising
+from the **middle genicular vessels**, traversing **the whole epiphysis**, and **breaching the INTACT OPEN
+PHYSIS** of the immature **proximal tibia or distal femur**. Its named components are juxta-articular,
+epiphyseal and transphyseal **vessel** segments; **canals that traverse the entire epiphysis AND the physis
+and enclose those vessels**; **vascular foramina on the articular facet**; and foramina-covering synovium.
+Three types — femoral, anterior tibial, posterior tibial. Established across **28 pediatric knee MRIs at
+1 mm slices, 10 dissected pediatric knees, H&E, immunofluorescence and angiography.**
+⭐ **Clinically it is how osteosarcoma crosses a growth plate — and the authors state it does so WITHOUT
+DAMAGING THE ADJACENT PHYSEAL CARTILAGE**, i.e. it is a normal anatomical structure, not an invasion front.
+
+⭐⭐⭐⭐ **THE JOIN NOBODY HAS MADE, AND IT IS THE ROUND.**
+· **THE TWO PLATES IT DESCRIBES ARE THE DISTAL FEMUR AND THE PROXIMAL TIBIA — the exact two R373/R374
+  selected for the SAG depot, and the two that carry most knee growth.**
+· ⭐ **A ROUTE THAT PASSES TUMOUR CELLS PASSES A PROTEIN, AND IT IS NOT CLOSE.** An osteosarcoma cell is of
+  order 10 µm; a nanobody is ~15 kDa and a few nanometres. **The bar for cell transit is orders of magnitude
+  higher than for a macromolecule**, and the cell transit is demonstrated in patients.
+· ⭐⭐ **AND IT CHANGES THE BOUNDARY CONDITION OF THE TRANSPORT MODEL RATHER THAN THE MODEL.** R430
+  calibrated diffusion-plus-Donnan **from the plate's perimeter**; R315's wall is about crossing avascular
+  cartilage from outside. **A patent vessel lumen INSIDE the physis moves the source from the perimeter to
+  a point within the tissue and collapses the diffusion distance** — and for a **systemically** administered
+  agent, which is what a vessel carries, that is the favourable direction. R430's arithmetic is not wrong;
+  its geometry may be.
+· ⛔ **AND IT DOES *NOT* RESCUE THE INTRA-ARTICULAR ROUTE, WHICH IS THE TEMPTING MISREADING.** The articular
+  foramina are **synovium-covered**, and the canals **enclose vessels** — so this is a vascular conduit, not
+  an open channel from the joint cavity. **R361's objection to a joint injection at BA16 stands.**
+
+⛔ **THE FOUR HONEST LIMITS, STATED BEFORE ANYONE BUILDS ON IT.** ① **REGIONAL, NOT DISTRIBUTED** — it is
+*intercondylar*, so anything delivered through it arrives in one region of the plate rather than across it.
+② **AGE IS UNVERIFIED FOR HIM** — the specimens are "immature" knees, which is his state (open physes), but
+nobody has measured ITC patency against skeletal maturity, and that is exactly the variable that matters at
+BA16. ③ **ONE GROUP, ONE DISCOVERY PAPER, 2022, UNREPLICATED** — and this atlas's own node says the human
+quantitative anatomy, the number, diameter and age-dependence of these channels, is essentially unmapped.
+④ ⭐ **A VESSEL LUMEN IS NOT THE CARTILAGE.** The agent still has to leave the vessel and enter the matrix,
+and **that step has never been measured for any molecule** — it is the same extravasation question R430's
+model does not contain.
+
+⛔ **AND THE COMPANION STRUCTURE IS THE WRONG ONE FOR HIM, BY THIS FILE'S OWN NODE.** `cartilage_canal.yaml`
+describes vascularised channels that invade epiphyseal cartilage **BEFORE the secondary ossification centre
+appears** — a pre-SOC structure that regresses as the centre forms. **At BA16 he is maximally post-SOC, so
+cartilage canals are not his route. The ITC, described in bone with an intact OPEN physis, is.** ⭐ Worth
+recording that the node calls the canals *"not merely a plumbing system but a delivery route"* — **for
+osteogenic precursors. This file's own vocabulary had the phrase and applied it to cells.**
+
+⚠ **THE INVERSE, RECORDED BECAUSE IT IS A COST NOBODY HAS PRICED.** If constant vascular structures breach
+the intact physis, the plate is **exposed to systemic factors it was assumed to be shielded from** — which
+bears directly on R365, where vascular invasion is the terminal event of closure, and on R442's finding that
+a sustained metaphyseal occlusion changes growth. `shao2022` says explicitly that ITCs cross without damaging
+the adjacent physeal cartilage, so they are not an invasion front — **but nobody has asked what an
+anti-angiogenic or a pro-angiogenic agent does to them**, and this stack contains agents that move
+angiogenesis.
+
+🧭 **WHAT R443 CHANGES.** Not a compound, and not a licence to assume delivery is solved. What changes is
+that **"the growth plate is avascular" — asserted fourteen times in this ledger and load-bearing under every
+biologic argument in it — is FALSE AS A UNIVERSAL, in the two plates that matter most, in humans, with the
+physis intact and open.** The correct statement is that the plate is **avascular in bulk and breached
+focally**, and the delivery question is therefore not "can anything cross an avascular tissue" but **"what
+fraction of the plate does a focal vascular route serve, and does a macromolecule leave that vessel"** —
+which is a smaller, better-posed and answerable question that nobody has asked. `g_l1_443a`.
