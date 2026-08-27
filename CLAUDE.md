@@ -13910,3 +13910,83 @@ FIRST COUSINS, so koch2026 and joshi2015's "1.2 cm shorter" are on the same scal
 Height ranks third in that panel behind **weight 3.6e-89** and **number of children 2.1e-54**, ahead of BMI 2.5e-35.
 ⛔ **The point estimate is a figure bar on an axis running ~−0.075 to +0.025 and is NOT recoverable from the scan —
 CORR-318. What is verified is the sign, the two p-values and the units.**
+
+## 🧬🧬🧬🧬🧬 R473 — **THE CXXC5 MAGNITUDES ARE IN HAND AT LAST, BOTH AXES ARE *PER CENT* NOT mm — AND THE
+## SHAPE IS WORTH MORE THAN THE SIZE: THE KNOCKOUT IS 3% *SHORTER* AT 3 WEEKS, IDENTICAL AT 6 AND 9, AND
+## 3.7% LONGER AT 12 — THE ENTIRE GAIN ACCRUES IN THE WINDOW WHERE THE PLATE IS DECELERATING.**
+
+⭐ **HOW.** `choi2019cxxc5` Figures 3B and 5J were **operator item 1 and blocked item A1**, named by R460 as *"the
+numbers everything about how much CXXC5 is worth turns on"* and existing only as bars. They were in bundle 2.
+Rendered at 900 dpi and read. ⭐ **THEY ARE PER CENT AXES, WHICH IS WHY NO MILLIMETRE VALUE APPEARS ANYWHERE IN
+THE TEXT** — five rounds of looking for one that was never there.
+
+⭐⭐ **ONE — THE DRUG: `Fig 5J`, KY19382 0.1 mg/kg i.p. daily for TEN WEEKS from 3→13 wk. Vehicle mean 100.0,
+KY19382 mean ≈102.9, P<0.0005, ~7 vehicle against ~17 drug animals, vehicle scatter 98.4–102.**
+→ **THE COMPOUND IS WORTH ABOUT +2.9% OF TIBIAL LENGTH.** R460's figure-read guess of "~+3%" is confirmed.
+
+⭐⭐⭐⭐ **TWO — THE GENETIC ARM, AND ITS SHAPE IS THE ROUND.** `Fig 3B`, normalised to Cxxc5⁺/⁺ at 3 wk = 100:
+| age | Cxxc5⁺/⁺ | Cxxc5⁻/⁻ | |
+|---|---|---|---|
+| **3 wk** | 100 | **≈97** | ⛔ **THE KNOCKOUT IS ~3% SHORTER** |
+| 6 wk | 115.0 | 115.3 | indistinguishable |
+| 9 wk | 118.7 | 119.1 | indistinguishable |
+| **12 wk** | 121.5 | **126.0** | ⭐ **~3.7% LONGER, ** P<0.005** |
+⭐⭐ **THE ENTIRE DIVERGENCE ACCRUES BETWEEN 9 AND 12 WEEKS: WT GAINED 2.8 POINTS AND THE KNOCKOUT 6.9 — A RATIO
+OF ~2.5 — IN THE WINDOW IN WHICH A MOUSE TIBIA IS DECELERATING TOWARD ITS PLATEAU.**
+→ ⭐ **THAT IS THE STRONGEST SHAPE ARGUMENT IN THIS ATLAS FOR A LATE-STAGE AGENT. The effect does not exist until
+the plate is slowing.** Everything else on the pool and period axes either acts early or was only measured early.
+⭐ **AND IT KILLS THE DEVELOPMENTAL-PATTERNING EXPLANATION BY ITS OWN DATA: a germline knockout that is SHORTER at
+3 weeks and LONGER at 12 cannot be acting by patterning.** CORR-299's question — is the gene still doing work in an
+OPEN plate — is answered affirmatively and unusually cleanly, **at the cost of recording that the gene's EARLY role
+is the OPPOSITE of its late one.**
+⭐ **And the two arms agree: 3.7% genetic against 2.9% pharmacological.**
+
+⛔⛔ **THREE — AND THE LIMITATION THAT MATTERS MOST FOR THIS CASE IS NEW AND SPECIFIC. THE PAPER HAS THREE IN VIVO
+DOSING ARMS AND ONLY ONE HAS A LENGTH ENDPOINT.**
+· **3→13 wk (starts EARLY puberty) → TIBIAL LENGTH, +2.9%.** This is the number.
+· **7→9 wk — which the authors themselves call LATE PUBERTY, and which is the stage-matched arm — → plate height,
+  cells per column, BrdU, RUNX2, β-catenin, TRAP. NO LENGTH.**
+· 3→5 wk → the same histology. No length.
+⛔ **SO EVERY CLAIM THAT THIS AXIS IS WORTH ANYTHING TO A LATE-PUBERTAL SUBJECT RESTS ON HISTOLOGY — AND R463 AND
+R471 BOTH ESTABLISH THAT PLATE AND ZONE HEIGHT ARE READOUTS THAT DO NOT TRACK LENGTH.**
+⭐⭐ **AND THE TWO WINDOWS DEMONSTRABLY DO DIFFERENT THINGS, WHICH IS WHY THE EARLY RESULT CANNOT BE CARRIED
+ACROSS: TRAP⁺ foci at the growth-plate/trabecular interface were UNCHANGED when dosing 3→5 wk and ELEVATED when
+dosing 7→9 wk** — the authors reading the late rise as activation of the whole maturation process *including
+preparation of the space to be replaced by bone*. **Discharge accompanying charge, which this file demands — and
+simultaneously the maturation process accelerating, which this file warns about.** The genetic arm resolves it in
+our favour at the endpoint (the knockout is longer at 12 wk), but the DRUG has no such endpoint in that window.
+`g_l12_473a`.
+
+✓ **FOUR — WHAT THE FULL TEXT ADDS IN THE COMPOUND'S FAVOUR IS SPECIFICITY, AND IT IS BETTER THAN R462 HAD.** The
+in vitro effects were **ABOLISHED by siRNA knockdown of Ctnnb1**, and of the pathway reporter panel **only Wisp1
+and Axin2 rose while 19 other genes were unaltered**; no histological abnormality in articular cartilage or liver,
+no weight difference over ten weeks. ⛔ **What is NOT fixed is R462's central objection — the compound is dual at
+IC50 1.9e-8 M on CXXC5–DVL and 1e-8 M on GSK3β, so a β-catenin-dependent effect does not distinguish the two
+routes.** ✓ And `Fig 3J` confirms R462's read of the one target-selective reagent: **the PTD-DBM arm (1 mg/kg i.p.
+daily × 2 wk, 7-week-old mice, n=10, fluorescent imaging confirming it reaches the tibial growth plate) is scored
+on CELL NUMBER PER ZONE, with no length.**
+
+⭐⭐ **FIVE — AND `bunger2006` WAS IN THE SAME BUNDLE AND SETTLES R454's ORIENTATION AMBIGUITY, WHICH R468 HAD
+DEMOTED RATHER THAN RESOLVED. THE ANSWER IS BETTER THAN A CONFIRMATION.**
+⭐ **The convention is stated in the Figure 7 legend: predominant orientation is depicted IN THE DIRECTION OF THE
+LARGE DIMENSIONS OF THE PLATE — in-plane, perpendicular to the growth axis — and in the growth plate the particles
+are predominantly oriented that way. THAT IS THE HOOP READING R454's FIBRE-WOUND HYDROSTAT REQUIRES.**
+⛔⛔ **THEN THE ZONE-RESOLVED DATA CUT AGAINST THE MODEL EXACTLY WHERE IT MATTERS. Degree of preferred orientation:
+31 ± 13% in trabecular bone · ~24% at the plate centre (roughly resting and proliferative) · 7–11% in the vertebral
+body · AND 12 ± 15% — THE LOWEST VALUE IN THE ENTIRE SCAN — AT THE PLATE EDGE THE AUTHORS IDENTIFY AS THE
+HYPERTROPHIC ZONE.**
+→ ⭐ **THE MATRIX IS LEAST ORDERED IN PRECISELY THE ZONE WHERE THE CELL EXPANDS AXIALLY.** That independently
+corroborates `prein2016`'s finding that fibril orientation appears **RANDOM in both septal compartments** and
+R463's conclusion that the directional anisotropy is collagen **DENSITY and not fibre angle** — from a different
+modality (SAXS vs AFM), a different species (pig vs mouse) and a different skeletal site.
+⭐ **What survives as the mechanism is TISSUE-LEVEL anisotropy without fibre order: `sergerie2009` puts E1/E3 at
+12.1 in the hypertrophic zone, so the ~10× transverse-over-axial stiffness IS present there even though the fibre
+ordering is not.** `g_l5_473b`.
+⚠ Caveats carried: the paper calls these **MINERAL** particles throughout, which sits awkwardly with a
+90.8–112.6 nm cylinder diameter in unmineralised cartilage and with the authors' own drift to the word "molecules";
+and it is a **pig VERTEBRAL NEUROCENTRAL** plate, which R455/R472 show is a cell-number organ with limited
+hypertrophy.
+
+⭐ **BLOCKED ITEMS STRUCK: A1 (`choi2019cxxc5` Figs 3B/5J) and B3 (`bunger2006`). Of the operator's ten, EIGHT are
+now read in full; only `buckwalter1986` (A5 — the supplied page is the JBJS volume index, not the paper) and the
+un-arrived bundles 4 and 5 remain.**
