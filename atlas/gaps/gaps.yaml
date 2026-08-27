@@ -19209,3 +19209,66 @@ gaps:
     gain, score the complete panel on one set of sections at the plate that is actually growing faster. The height identity
     says the gain must appear in cell number, amplification, terminal cell height or matrix per cell; the existing negatives
     exclude zone height and plate area, so the surviving candidates are testable and few.
+- gap_id: g_l5_472a
+  type: contradiction
+  layer: L5
+  status: open
+  question: By what factor does a change in terminal hypertrophic cell height translate into a change in longitudinal growth
+    rate - about 1.4, as stokes2007 regression gives, or about 3.2, as bylskiaustrow2018 pairing implies?
+  why_it_matters: It is the conversion factor between the one histological variable that reliably tracks growth and the
+    endpoint that matters, and this atlas has been using cell height as a readout without one. R463 established that zone
+    height is blind and cell height is not; R471 added a positive-direction instance in which a 2 mm length gain left every
+    zone height unmoved. So cell height is the surviving readout - and its exchange rate against growth is contested by
+    a factor of more than two between the only two sources that give one. If it is 1.4 then an agent must move terminal
+    cell height a lot to be worth anything; if it is 3.2 then a modest cell-height change is a large growth effect and several
+    agents scored null on zone height may have been productive.
+  what_is_known: 'stokes2007: across mechanically altered growth rates spanning up to 53 per cent change, growth rate tracked
+    proliferative chondrocyte number per unit width and MAXIMUM HYPERTROPHIC CELL HEIGHT with regression coefficients 0.72
+    and 1.39 respectively - so cell height is amplified but only mildly, and there is a second independent term. bylskiaustrow2018
+    instead pairs a single rat-tail result - a 15 per cent cell-height reduction associated with a 48 per cent growth-rate
+    reduction at 0.2 MPa over 4 weeks - which is an implied amplification of about 3.2, and the authors themselves call
+    the resulting curve speculative and imprecise and note it is presumably nonlinear. stokes2006 gives the stress side
+    at 17.1 per cent growth-rate change per 0.1 MPa, which at 0.2 MPa predicts about 34 per cent rather than 48.'
+  what_is_missing: No study has regressed growth rate on terminal cell height across a graded series with the second term
+    - proliferative cell number per unit width - measured in the same sections, in a normal animal, over a range wide enough
+    to test linearity. The two existing sources differ in species, in loading regime and in whether the second term was
+    controlled.
+  discriminating_experiment: A graded loading or pharmacological dose-response in a normal growing animal with fluorochrome
+    growth rate, terminal hypertrophic cell HEIGHT and WIDTH separately, proliferative cells per unit width, and bone length
+    at maturity, all in the same animals. Fit growth rate on cell height with and without the proliferative term. The answer
+    converts every cell-height readout in this atlas into an expected length effect, and it is the missing denominator R463
+    identified.
+- gap_id: g_l1_472b
+  type: species_gap
+  layer: L1
+  status: open
+  question: Is the axial-to-appendicular growth-rate ratio far larger in humans than in rat or calf, and if so does R455
+    decomposition of that gap - 80 to 95 per cent cell production, 5 to 20 per cent terminal cell size - still hold at the
+    human ratio?
+  why_it_matters: 'R455 decomposed the axial-appendicular gap using stokes2007 control rows: rat caudal vertebra about 39
+    micron per day against proximal tibia 218, calf 35 against 192 - a ratio of about 5.6 in both species - and concluded
+    that roughly 80 to 95 per cent of it is cell PRODUCTION and only 5 to 20 per cent terminal cell SIZE, which is why any
+    agent whose mechanism is terminal chondrocyte enlargement is aimed at the term the vertebral plate does not use. bylskiaustrow2018
+    now supplies the human vertebral figure - on the order of 1 micron per physis per day in children and adolescents -
+    and R440 holds a human distal femur figure of about 9 mm per skeletal year, which is about 24.7 micron per day. That
+    implies a human ratio near 25, roughly four to five times the animal ratio the decomposition was computed on. If real,
+    the human axial plate is proportionally far further from the limb plate than any animal model represents, and the compartment
+    holding this subject residual centimetres is more different from the compartment every agent was characterised on than
+    the atlas has assumed.'
+  what_is_known: 'The human vertebral rate is cited rather than measured in bylskiaustrow2018 and its own internal check
+    is reassuring: 1 micron per physis per day times two physes times 365 days is 0.73 mm per vertebra per year, against
+    a direct paediatric radiographic measurement of 0.83 to 0.86 mm per vertebra per year held in R455 - agreement to about
+    15 per cent by two independent routes. The human distal femur figure is secondhand and value_unverified.'
+  what_is_missing: The two human numbers come from different sources, different methods and different anatomical literatures,
+    so the ratio computed from them is grade E arithmetic and not a measurement. No study has measured axial and appendicular
+    longitudinal growth rate in the same human subjects by a common method, and R455 established that no paediatric human
+    vertebral growth-plate omics dataset exists at all. And nobody has decomposed the human ratio into cell production and
+    terminal cell size, because the human vertebral terminal cell height is known only from bylskiaustrow2018 five autopsy
+    controls (12.8 +/- 1.2 micron) against kember1976 human distal femur value of 29 to 38 micron - which, taken at face
+    value, would put roughly a 2.5-fold share of the human ratio on cell size rather than the 1.1 to 1.5-fold the animal
+    decomposition allows.
+  discriminating_experiment: Measure terminal hypertrophic cell height and cells produced per column per day in human vertebral
+    and human distal femoral physes from the same donors or the same age band by a single method - the tissue is removed
+    and discarded at epiphysiodesis and at spinal deformity surgery respectively. The comparison decides whether the human
+    axial deficit is a production deficit as in animals, or whether a materially larger share of it is terminal cell size,
+    which would change which term an axial-directed agent should aim at.

@@ -13842,3 +13842,71 @@ opened the vascular half and R449/R463 left the nervous half ambiguous (`killion
 denervated at P8 against `garces1988` no tibial difference in rats denervated at 1 month). **Same species, same era
 and same journal as `elo1960` and `nordentoft1964`, both of which turned out to contain far more than their titles
 promise.** Added as blocked item **C10**.
+
+## 📏📏📏📏📏 R472 — **THE PAEDIATRIC HUMAN VERTEBRAL PHYSIS *HAS* BEEN MEASURED AND THIS LEDGER SAID IT NEVER
+## HAD. Its growth rate is ~1 µm PER PHYSIS PER DAY — 35–39× SLOWER THAN RAT OR CALF — AND THE CELL-HEIGHT
+## CONVERSION FACTOR EVERY FUTURE READOUT DEPENDS ON IS CONTESTED BY MORE THAN TWOFOLD.**
+
+⛔ **ZERO — CORR-351, ON A PAPER TWO ROUNDS ALREADY BUILT ON.** `bylskiaustrow2018`'s `one_line_finding` was
+**EMPTY** while R440 quoted its cell heights and R463 quoted its zone-height null. Supplied in bundle 3 and read in
+full 2026-08-27; the entry is now written out.
+
+⛔⛔ **ONE — AND IT CORRECTS THIS LEDGER. R425 WROTE "THE PAEDIATRIC HUMAN VERTEBRAL PHYSIS HAS NEVER BEEN SAMPLED
+BY ANYONE." THAT IS OVER-BROAD AND THIS PAPER REFUTES IT AS STATED** — 13 spinal deformity patients plus **FIVE
+AGE-MATCHED AUTOPSY CONTROLS**, human vertebral physes, sectioned and measured.
+⭐ **R455 STATED THE DEFENSIBLE VERSION AND IT SURVIVES INTACT: no paediatric or adolescent human vertebral
+growth-plate OMICS dataset exists, verified by GEO query run three ways.** **Histomorphometry exists. Omics does
+not. Do not conflate them again.**
+
+⭐⭐ **TWO — THE NUMBERS, INCLUDING TWO THE FILE DID NOT HAVE.** Zone height **152 ± 34 vs 180 ± 42 µm, p=0.21 NS**
+· hypertrophic **CELL height 8.5 ± 1.1 vs 12.8 ± 1.2 µm, p<0.0005, a 33% fall** · cell **WIDTH 14.9 ± 1.5 vs
+15.0 ± 2.5, UNCHANGED**. ⭐ **NEW: measured cell density 152 ± 25 cells/mm² in scoliosis convex against
+103.9 ± 50 in controls — 46% higher, which is exactly what shorter cells at unchanged width must produce.** The
+picture is internally coherent, which is the check R463 could not run.
+⚠ **AND THE CONCAVE-SIDE CLAIM IS TWO PATIENTS WIDE AND NOT UNIFORM:** the two AIS patients have zone, cell height
+and cell width all lower on the compressed concave side (182→133, 10.1→8.3, 14.8→13.8) — **but the single NF sample
+runs the OTHER way on cell height, 7.0 convex vs 9.2 concave.**
+
+⭐⭐⭐ **THREE — TWO HUMAN NUMBERS THIS ATLAS HAS NEVER HAD, AND ONE OF THEM CHECKS OUT AGAINST ITS OWN INDEPENDENT
+SOURCE.** The authors cite that **the average growth rate in children and adolescents is ON THE ORDER OF 1 µm PER
+PHYSIS PER DAY**, and that **average remaining SPINE growth is ~6–7 cm at a skeletal age of 11–12 years.**
+⭐ **THE CHECK: 1 µm/physis/day × 2 physes × 365 = 0.73 mm per vertebra per year, against 0.83–0.86 mm/vertebra/year
+from the direct paediatric radiography R455 already holds. TWO INDEPENDENT ROUTES, ~15% APART.** R455 recorded the
+radiographic figure as secondhand; it now has a corroborator.
+⭐⭐ **AND THE SPECIES COMPARISON IS STARK AND UNSTATED ANYWHERE HERE: the human vertebral physis runs ~35–39×
+SLOWER PER PHYSIS than the rat (39 µm/day) or calf (35 µm/day) vertebral physis in `stokes2007`'s own control
+rows.** ⚠ **Which raises a problem for R455's decomposition: crossing the human vertebral rate against R440's
+human distal-femur figure (~9 mm/skeletal year ≈ 24.7 µm/day) gives a human axial-to-appendicular ratio near 25,
+against ~5.6 in BOTH rat and calf** — so R455's 80–95%-is-cell-production split was computed on animals whose split
+is four to five times smaller than the human one. **Grade E arithmetic on two secondhand numbers from different
+literatures, recorded as an observation and not a result.** `g_l1_472b`.
+
+⭐⭐⭐⭐ **FOUR — THE ROUND: THE CONVERSION FACTOR EVERY CELL-HEIGHT RESULT DEPENDS ON IS CONTESTED BY MORE THAN
+TWOFOLD, AND THE HIGHER FIGURE IS THE WEAKER ONE.** R463 showed zone height is blind and cell height is not;
+R471 added the positive-direction instance (a 2 mm gain with every zone height unmoved). **So terminal cell height
+is the surviving readout — and what it is WORTH in growth rate is what every future result must be multiplied by.**
+| source | pairing | implied amplification |
+|---|---|---|
+| **`bylskiaustrow2018`** | 15% cell-height fall ↔ **48%** growth-rate fall (rat tail, 0.2 MPa × 4 wk) | **≈3.2** |
+| ⭐ **`stokes2007`** | regression of growth rate on **max hypertrophic cell height, coefficient 1.39**, alongside **0.72 on proliferative cells per unit width** | **≈1.4** |
+| `stokes2006` | 17.1% growth-rate change per 0.1 MPa → **~34%** at 0.2 MPa | — |
+⭐ **`stokes2007` IS BETTER POWERED, SPANS UP TO A 53% GROWTH CHANGE, AND CONTROLS THE SECOND TERM; `stokes2006`
+INDEPENDENTLY PREDICTS 34% WHERE THE PAIRING NEEDS 48. AND THE AUTHORS THEMSELVES CALL THEIR CURVE "SPECULATIVE
+AND IMPRECISE" AND PRESUMABLY NONLINEAR.**
+→ ⛔ **THE DEFENSIBLE AMPLIFICATION IS ABOUT 1.4, NOT 3.2. DO NOT QUOTE THE 15-TO-48 PAIRING AS A CONVERSION
+FACTOR** — it is the load-bearing step under this paper's own downstream inferences (that scoliosis apex growth is
+reduced >50%, and stress raised >0.4 MPa to 0.4–1.1 MPa), and those inherit its weakness. `g_l5_472a`.
+⭐ **The practical consequence cuts the encouraging way: at ~1.4 a cell-height change is only mildly amplified, so
+an agent has to move terminal cell height a LOT — and `stokes2007`'s second term says proliferative cells per unit
+width carries an independent 0.72, which is a variable nothing in this file has ever scored an agent on.**
+
+⭐ **FIVE — AND SEPARATELY, `koch2026` EXTENDED DATA FIG. 5 VERIFIES A NUMBER R453 HELD AS SECONDHAND AND
+`value_unverified`.** The F_ROH association with height is **P=1.6e-48**, and **P=6.5e-36 AFTER ADDITIONAL
+ADJUSTMENT FOR EDUCATIONAL ATTAINMENT AND TOBACCO USAGE** — a **direct socioeconomic-confounder control**, which
+`joshi2015` could only approach through cross-population consistency.
+⭐ **AND THE UNITS ARE THE HALF R453's SECONDHAND FIGURE OMITTED, stated verbatim in the legend: standard
+deviations of the normalized trait PER F_ROH OF 0.0625 — and 0.0625 IS EXACTLY THE AUTOZYGOSITY OF THE OFFSPRING OF
+FIRST COUSINS, so koch2026 and joshi2015's "1.2 cm shorter" are on the same scale and are directly comparable.**
+Height ranks third in that panel behind **weight 3.6e-89** and **number of children 2.1e-54**, ahead of BMI 2.5e-35.
+⛔ **The point estimate is a figure bar on an axis running ~−0.075 to +0.025 and is NOT recoverable from the scan —
+CORR-318. What is verified is the sign, the two p-values and the units.**
