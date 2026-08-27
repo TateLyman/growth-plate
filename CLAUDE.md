@@ -13019,3 +13019,73 @@ AT VERY HIGH ABUNDANCE IN THE TARGET TISSUE IS EXACTLY THE CONFIGURATION A SYSTE
 is the configuration the CNP ligand, the RAAS and PDE5A all fail.**
 🧭 **NET: of R464's three headlines, the GC-A arm collapses into the CNP arm, and ADAM12-S survives the localisation
 test by the route that actually applies to it. ADAM12 is now the single most interesting unworked target in the file.**
+
+## 🧬🧬🧬🧬 R466 — **ADAM12 WORKED TO A DECISION: THE PROTEIN IS ON A CATALOGUE SHELF WITH AN ENDOTOXIN SPEC AND
+## A VENDOR BIOACTIVITY ASSAY THAT *IS* THE MECHANISM, ITS TOP GWAS TRAIT IS HUMAN HEIGHT AT P=6e-73 — AND THE
+## LOSS DIRECTION HAS NEVER BEEN MEASURED IN ANY SPECIES DESPITE THE MOUSE EXISTING FOR 23 YEARS.**
+
+⛔ **ONE — THE STRUCTURAL PROBLEM: THE +17% IS AN UNOPPOSED GAIN OF FUNCTION.** **IMPC has ZERO Adam12 rows** in the
+12,068-row bulk length file, zero in `statistical-results-ALL`, and the live API returns `latest_phenotype_status:
+None` — **CORR-348 case one, never phenotyped.** MGI carries 23 rows and **CORR-341 is load-bearing: NINETEEN ARE
+QUADRUPLE KNOCKOUTS** (Adam9/12/15/17 or Adam9/12/15/19), and every cardiac, valve, septal and eyelid term belongs to
+those. **Only four rows are Adam12-alone and NOT ONE IS SKELETAL.** `kurisaki2003` states the viable homozygotes appear
+normal and are fertile — **a gross observation with NO BONE MEASURED, in a mouse that has existed since 2003.**
+Human loss is tolerated: **pLI 2.9e-15, LOEUF 0.803, 70 observed pLoF vs 106 expected, ONE HOMOZYGOTE, no OMIM entry,
+zero HPO rows.** **Every other well-validated target in this file has a loss anchor. This one has none.**
+
+⭐⭐⭐ **TWO — BUT ITS TOP GWAS TRAIT IS HUMAN HEIGHT AND THIS ATLAS HAD NO IDEA.** ADAM12 is absent from
+`kosmicki2026`'s 207 and has no HPO annotation — **and of all its GWAS Catalog associations the single most represented
+trait is HEIGHT, with `yengo2022` mapping NINE CONDITIONALLY INDEPENDENT SIGNALS to ADAM12, best rs7920091 at
+P=6e-73.** ⭐ **Every one is an INTRON variant inside a 376 kb gene body rather than a lead in a window — stronger than
+R413's usual nearest-gene caveat allows.** And it explains the discordance with the burden table exactly: **the signal
+is REGULATORY and a coding burden test is blind to it by construction — CORR-358's shape.**
+⛔ **What it does NOT give is a gene DIRECTION: the nine signals split five height-decreasing and four
+height-increasing.** ⚠ The one direction-concordant human result is `hao2016kbd` — a bivariate GWAS of Kashin-Beck
+disease on joint deformity **AND BODY HEIGHT**, ADAM12 the most significant gene at **P=9.25e-9 with replication**,
+ADAM12⁺ chondrocytes **47.6% in KBD cartilage vs 64.7% healthy**. Articular not physeal, n=8 IHC, endemic
+osteochondropathy — **grade C.**
+
+⭐⭐⭐ **THREE — R401's THIRD QUESTION RETURNS A YES.** *No approved medicine* — correct, zero, and **ChEMBL CHEMBL5030
+has SEVEN activities and ZERO mechanism records.** *No chemical matter* — essentially correct, and any small molecule
+would be an **INHIBITOR**, the wrong direction. ⭐ ***NO PURCHASABLE PROTEIN — FALSE.* Recombinant human ADAM12 is sold
+CHO-derived at >90% purity, endotoxin <1.0 EU/µg, furin-activatable — AND ITS STATED VENDOR BIOACTIVITY ASSAY IS ITS
+ABILITY TO CLEAVE IGFBP-3, WHICH IS THE MECHANISM.** ⚠ Research use only, and two construct caveats: `shi2000adam12`
+implicates the **CYSTEINE-RICH domain** in IGFBP-3 binding and the catalogued construct stops before it; a separate
+*E. coli* product under a similar name is an immunoassay control, not an active enzyme.
+⭐ **R342's empty-shelf prediction is HALF-TESTED AND HALF-FAILS, in a way that matters.** The inhibitor shelf is real
+and the activator shelf empty exactly as R342 says — `ray2011` names therapeutic **DOWN**-regulation of ADAM-12 as the
+field's goal. **But ADAM12-S IS SECRETED, so CORR-344's other shelf applies: you do not need an activator, you supply
+the enzyme.** This is the SCUBE3/osteolectin architecture of R401–R405, **not** the HHIP architecture.
+
+⭐⭐ **FOUR — AND THE SUBSTRATE CHAIN LANDS EXACTLY ON THIS FILE'S OWN IGF WORK.** `loechel2000`, verified verbatim:
+**ADAM12-S cleaves IGFBP-3 AND IGFBP-5 and does NOT cleave IGFBP-1, -2, -4 or -6**, both cleavages TIMP-3-inhibited,
+and the authors propose it is the **IGFBP-5 protease secreted by osteoblasts.** ⭐ **THOSE ARE EXACTLY PAPP-A2's TWO
+SUBSTRATES AND POINTEDLY NOT PAPP-A's IGFBP-4.** Against this file's own numbers — **PAPPA −4.57 cm · PAPPA2 −2.10 ·
+STC2 +1.37 at P=4.5e-34** and R453's `marouli2017` causal chain — **ADAM12-S IS A PAPPALYSIN-PARALLEL,
+STC2-INDEPENDENT ENZYME REACHING THE SAME ENDPOINT, and the only member of that axis with BOTH a purchasable enzyme
+AND a positive length result in a normal animal.** ⚠ Recorded against: `mohan2002adam9` purified the IGFBP-5 protease
+from human osteoblast conditioned medium and concludes **ADAM-9, not ADAM-12.**
+✓ And it is in the right zone: `horita2019` puts ADAM12 protein **predominantly in PROLIFERATIVE-ZONE chondrocytes**,
+with knockdown lowering Igf-1 and raising Runx2/Col10a1.
+
+⛔ **FIVE — THE OTHER STATED MECHANISM IS CONTRADICTED AT THE GENETIC EXTREME.** `kveiborg2006` attributes part of the
+effect to ADAM12-S **inhibiting chondrocyte adhesion to fibronectin and collagen II**. `aszodi2003` inactivated **β1
+integrin in chondrocytes** and produced a **CHONDRODYSPLASIA caused by loss of adhesion to collagen II and impaired
+spreading on fibronectin** — the exact two substrates, and removing that adhesion genetically **SHORTENS** the bone;
+`lu2007flnb` corroborates (Flnb-null: shortened distal limbs, decreased chondrocyte ECM adhesion). ⚠ **Not a kill** —
+genetic receptor ablation is not partial soluble competition and R281's band shape allows a narrow window — **but the
+mechanism as stated is contradicted at the extreme and the dose-response has never been measured.**
+
+⚠ **SIX — THE BODY-WEIGHT CONFOUND, AND IT IS SEX-DEPENDENT IN THE FAVOURABLE DIRECTION.** `kawaguchi2002` is the same
+laboratory, the same ADAM12-S construct and the same protease-dead control, and it **names the promoter: MUSCLE
+CREATINE KINASE** — a postnatally-activating driver secreting into the circulation, **which is favourable for
+CORR-299.** It reports **FEMALE** transgenics gaining body weight, total and abdominal fat and herniation — ⭐ **while
+MALE TRANSGENICS WERE ONLY SLIGHTLY OVERWEIGHT AND DID NOT BECOME OBESE.** `kveiborg2006` does not state the sex of its
+6-month animals or report body weight, **so a body-size confound must be read against the +17% — but it is
+sex-dependent and much weaker in the relevant sex.** ⚠ Per `campion2022tofacitinib` a length endpoint must be read
+against body weight before it is read as a bone effect.
+
+🧭 **VERDICT: A MECHANISM RESULT, NOT YET A TARGET — AND THE MISSING OBJECT IS NOT A MOLECULE, IT IS TWO
+MEASUREMENTS.** ⭐ **① Supply recombinant ADAM12-S to a NORMAL growing animal and use a caliper** (`g_l12_466a`) —
+the direction is to RAISE a secreted protein and the protein is purchasable today. ⭐ **② CALIPER THE 23-YEAR-OLD NULL,
+or cross the floxed allele to a cartilage Cre** (`g_l12_466b`) — the loss anchor every other target here has.
