@@ -12975,7 +12975,10 @@ a round of our own.**
 non-abstracted literature** — the blocked set is disproportionately old and disproportionately interesting: **PMID
 13992165, *Acceleration of longitudinal bone growth by intra-osseous injection of PAPAIN PROTEASE*, Proc Soc Exp Biol
 Med 1963, NO PubMed abstract** — and it lands exactly on R448's "animals loosen matrix only by proteolysis" and on
-ADAM12-S · **PMID 12174823, lovastatin raises longitudinal bone growth in normal SD rats, no abstract** · **PMID
+ADAM12-S ⛔⛔ **— AND R464's WORD "BLOCKED" WAS WRONG: THE PUBLISHER SERVES THE COMPLETE 5-PAGE PDF FREE AT THE
+DOI-RESOLVED URL. Fetched 2026-08-27 (HTTP 200, 1.25 MB) and READ IN FULL — see R467. `NO PubMed abstract` is true;
+`not open access` was FALSE, and the two are not the same claim.** · **PMID 12174823, lovastatin raises longitudinal
+bone growth in normal SD rats, no abstract** · **PMID
 14040339, Wray & Goodman 1961, the original of R440/R442's cross-bone anomaly, no abstract.** ② **The agricultural
 above-requirement supplementation literature** — ~600 hits across four queries, **sampled not read**, and dominated by
 deficiency correction which CORR-203 excludes. ③ ⛔ **The Drugs@FDA nonclinical REVIEW PDFs — STRATEGY UNRUN, no
@@ -13089,3 +13092,182 @@ against body weight before it is read as a bone effect.
 MEASUREMENTS.** ⭐ **① Supply recombinant ADAM12-S to a NORMAL growing animal and use a caliper** (`g_l12_466a`) —
 the direction is to RAISE a secreted protein and the protein is purchasable today. ⭐ **② CALIPER THE 23-YEAR-OLD NULL,
 or cross the floxed allele to a cartilage Cre** (`g_l12_466b`) — the loss anchor every other target here has.
+
+## 🧫🧫🧫🧫🧫 R467 — **THE 1963 PAPAIN EXPERIMENT WAS NOT BLOCKED. READ IN FULL, IT IS THE HIGHEST RESPONSE RATE OF
+## ANY GROWTH-STIMULATION METHOD OF ITS ERA, ITS COST IS DOSE-SEGREGATED, IT HAS A CROSS-BONE FEMORAL ARM — AND ITS
+## HONEST INTENTION-TO-TREAT EFFECT IS +0.98 mm, TEN TIMES SMALLER THAN THE NUMBER EVERYONE QUOTES.**
+
+⛔ **ZERO — THE CORRECTION, AND IT IS TO A ROUND WRITTEN THIS SAME SESSION.** R464 listed **PMID 13992165** as blocked
+and **"not open access."** ⭐ **THE PUBLISHER SERVES THE COMPLETE 5-PAGE PDF FREE AT THE DOI-RESOLVED URL** — fetched
+2026-08-27, **HTTP 200, 1.25 MB**, read in full, every number in Tables I and II independently re-extracted and checked
+for internal consistency. **`NO PubMed abstract` and `not open access` ARE DIFFERENT CLAIMS AND I CONFLATED THEM.**
+Struck from `atlas/asks/BLOCKED_DOCUMENTS.md` as item B1.
+
+⭐ **ONE — THE EXPERIMENT, AND THE CONTROL ARM IS STRONGER THAN 1963 HAS ANY RIGHT TO BE.** **NORMAL** New Zealand
+white rabbits ~1 kg, **weighed daily with failure-to-thrive animals excluded**; n=113 (89 experimental, 24 control).
+Papain activated with cysteine and versene, buffered to 1 mg/mL, **each shipment assayed against ¹³¹I-albumin**.
+**Intramedullary injection into the PROXIMAL TIBIAL METAPHYSIS of the LEFT tibia, No. 22 needle, under nembutal, at
+3–4 day intervals, with a RUBBER TOURNIQUET on the lower thigh held for 30 MINUTES after each injection to limit
+diffusion.** ⭐ **Controls received three intratibial injections of buffer OR OF PAPAIN PREVIOUSLY INACTIVATED BY
+BOILING — so the control arm controls for the needle, the volume, the anaesthetic AND the tourniquet.** Endpoint:
+caliper on the excised specimen, mean of three measurements, **S.E. ±0.3 mm**, plus two-plane radiographs and coronal
+histology of both tibial plates, the lower femur and the contralateral upper tibia.
+
+⭐ **TWO — TABLE I, RE-EXTRACTED, AND IT RECONCILES WITH THE TEXT EXACTLY.**
+| injected − contralateral | **papain n=63** | **control n=20** |
+|---|---|---|
+| shorter by 2–11 mm | **5** | 0 |
+| −1 to 0 mm | 1 | 2 |
+| equal | 15 | 8 |
+| +1 mm | 8 | 7 |
+| +2 mm | 8 | **3** |
+| **+3 / +4 / +5 / +6 mm** | **13 / 6 / 6 / 1 = 26** | **0 / 0 / 0 / 0** |
+**26 of 63 at +3 to +6 is the paper's 41%; 3 of 20 controls at +2 with the other 17 within 1 mm is the paper's own
+sentence. Both columns sum correctly.**
+
+⭐⭐⭐ **THREE — AND THE HONEST EFFECT SIZE IS AN ORDER OF MAGNITUDE BELOW THE HEADLINE. THIS IS THE ROUND.**
+The quoted **3.8 mm = 3.5% of a 10.8 cm tibia is a RESPONDER mean — it conditions on the outcome.** Computed over the
+whole distribution, with the exact shortening values (−2, −2, −4, −4, −11 mm) recovered from Table II's retardation
+column: **papain +1.579 mm · control +0.600 mm · NET +0.979 mm = 0.91% OF TIBIAL LENGTH, t = 2.56.**
+⭐ **AND THE VARIANCE IS THE TELL: papain SD 2.67 mm against control SD 0.80 — a 3.3× ratio, which is the signature of
+a BIMODAL response (41% gain, 8% are harmed), not a shifted distribution.**
+**The paper reports NO statistics at all.** Fisher exact computed here: **+3 mm threshold 26/63 vs 0/20, p = 1.5e-4**;
++2 mm threshold 34/63 vs 3/20, p = 1.9e-3.
+
+⭐⭐ **FOUR — THE CONTROLS CARRY THEIR OWN FINDING AND EVERY SECONDARY SUMMARY OBSCURES IT.** **THREE OF TWENTY
+CONTROLS REACHED +2 mm, and the author attributes it explicitly to the trauma of three intra-osseous injections.**
+**NEEDLE TRAUMA ALONE MOVES THE ENDPOINT.** So papain's marginal contribution is the **+3 to +6 band specifically**,
+not the whole positive tail — and "no control exceeded +2 mm", the way this result is usually stated, hides the fact
+that the *sham* worked a little.
+
+⭐⭐ **FIVE — THE DOSE BAND, AND BENEFIT AND HARM ARE CLEANLY SEGREGATED.**
+| arm | n | responders +3–6 mm | retardation |
+|---|---|---|---|
+| 0.2 mg ×3, **1 mo** | 34 | 11 | one −2 mm |
+| ⭐ **0.2 mg ×3, 4 MONTHS** | 7 | **5** | **ZERO** |
+| 0.2 mg ×6, 2 mo | 14 | 7 | one −2 mm, two −4 mm |
+| 0.3 mg ×3, 2 mo | 8 | 3 | **one −11 mm** |
+Responders sum to 26 and retardations to 5, reconciling with Table I. **The author states retardation occurred only
+above 0.6 mg TOTAL dose.** Independently, **7 of 63 had PERMANENT plate changes — V-shaped deformity, persistent
+cartilaginous rests, areas reduced to a few rows of resting cells — ALL in the 0.3 mg or 6-injection groups.**
+→ ⭐ **THE WINDOW IS THREE INJECTIONS OF 0.2 mg AND EVERYTHING ABOVE IT COSTS. AND THE 4-MONTH ARM HAS BOTH THE
+HIGHEST HIT RATE AND ZERO HARM, SO THE GAIN PERSISTS RATHER THAN BEING AN EARLY TRANSIENT.**
+
+⭐⭐ **SIX — THE PLATE-THICKNESS/LENGTH DISSOCIATION, DEMONSTRATED IN 1963.** Normal columns ≈0.4 mm. **At 4 days after
+ONE injection every animal thickened, portions reaching 0.85 mm. At 6 days after the SECOND of two injections one or
+both plates had UNIFORMLY DOUBLED with TRANSVERSE SPLITTING THROUGH THE HYPERTROPHIC ZONE.** Then, verbatim: **these
+changes did not persist more than a few days**, and animals at **10 and 17 days showed NO microscopic abnormality** —
+**while the LENGTH gain persisted to 4 months.**
+⭐ **R463 established that hypertrophic zone height does not track growth and can miss a 34% cell-level effect at
+P=0.21 on the same sections. HERE THE DISSOCIATION RUNS THE OTHER WAY — a dramatic, fully reversible thickening
+sitting on top of a small, permanent length gain — AND IT WAS IN PRINT IN 1963.**
+
+⭐⭐ **SEVEN — A CROSS-BONE ARM, IN THE SAME ANIMALS. The FEMUR of the injected limb was 2 mm longer than the
+contralateral femur in 6 of 63, against no control femoral difference exceeding 1 mm.** R440/R441/R442 identified the
+cross-bone arm of fracture overgrowth — an untouched bone in the same limb lengthening — as the genuinely unexplained
+residue after fracture-end callus and local periosteal release are subtracted. ⭐ **Here it appears with NO FRACTURE,
+NO PERIOSTEAL STRIPPING AND NO HARDWARE — after an enzyme injection into a different bone.**
+
+⭐⭐⭐ **EIGHT — THE AUTHOR'S GENERALISATION IS A BAND, AND IT IS THE MOST TRANSFERABLE THING IN THE PAPER.** Reviewing
+periosteal stripping, metaphyseal drilling, marrow implants and **Meisenbach's 1910 intra-osseous irritants (negative
+except three animals RETARDED by formalin)**, he concludes a mild irritant near a plate does accelerate growth **and
+is READILY REVERSED INTO RETARDATION IF THE OPTIMAL DEGREE IS EXCEEDED BY A SMALL MARGIN**, attributing the field's
+unpredictability to **the narrow limits of tolerance of the plate.** ⭐ **THAT IS R281's BAND SHAPE, DERIVED IN 1963
+FOR AN ENTIRE CLASS OF INTERVENTIONS RATHER THAN A PATHWAY** — and it is the explanation for why every method in the
+abandoned corpus works in some animals and harms others.
+
+⭐⭐ **NINE — AND THE ROUTE IS THE ENTIRE INTERVENTION, WHICH RESOLVES THE CONTRADICTION R466 RECORDED.** Schneider's
+own opening sentence: **INTRAVENOUS papain in immature animals causes profound degenerative change in ALL epiphyseal
+plates and ARREST of growth.** `johnson1978papain` and `dixon1994papain` report exactly that. **THERE IS NO
+CONTRADICTION — systemic papain arrests growth, intramedullary papain confined by a tourniquet lengthens the injected
+bone. THE TOURNIQUET IS NOT A DETAIL; IT IS WHAT CONVERTS A CHONDROLYTIC SYSTEMIC AGENT INTO A LOCAL STIMULUS.**
+
+⛔ **TEN — AND THE OPEN QUESTION IS WHETHER IT IS A *PROTEASE* RESULT OR AN *IRRITATION* RESULT, BECAUSE THE TWO HAVE
+OPPOSITE IMPLICATIONS.** R448: animals have no expansin and every animal matrix-loosening modality is **proteolytic**.
+R463: the plate's directional yield is predicted to be **proteolytic and directionally targeted**. **schneider1963 is
+the only experiment in this atlas that put a protease into a normal growing bone and measured length.**
+⛔ **Against that reading: its own author says non-specific irritation, and `kramer1955` found IVORY PEGS, BRASS SCREWS
+AND PLAIN DRILL HOLES INDISTINGUISHABLE FROM ONE ANOTHER in children — which says the material is irrelevant and the
+irritation is the intervention.** ⭐ **The discriminating arm is a HEAT-INACTIVATED ENZYME at matched protein and
+volume, and it has never been run.** `g_l12_467a`
+
+## 🏚️🏚️🏚️ R467 — **THE CORPUS AROUND IT: THE HYPERAEMIA EXPLANATION IS REFUTED FOUR TIMES INDEPENDENTLY, THE
+## PERSISTENCE-VERSUS-DECAY TABLE CONFLATES TWO ENDPOINTS, AND THE FIELD WAS ABANDONED AS OBSOLETE NOT REFUTED.**
+## All PMIDs below verified verbatim from PubMed 2026-08-27.
+
+⭐⭐ **ONE — HYPERAEMIA IS THE STANDARD EXPLANATION FOR FRACTURE OVERGROWTH AND FOUR INDEPENDENT LINES REFUTE IT.**
+· **`alpar1986` (PMID 3705937) — ³H autoradiography, rat.** Mitotic activity of **GERMINAL AND PROLIFERATIVE ZONE**
+  cells and periosteal callus rose at 24 h, peaked at 48 h, continued to day 18. Author's conclusion: overgrowth is due
+  to **LOCAL MITOGENIC FACTOR(S) AND NOT increased blood supply**, explicitly against the then-prevailing view.
+· ⭐ **`kuijpersjagtman1988` (PMID 3232844) — THE STRONGEST DISSOCIATION, rabbit femur with metallic implants.**
+  Periosteal sectioning **INCREASED THE ULTIMATE LENGTH OF THE FEMUR**, both plates stimulated after circumferential
+  section, **"no indications for any inhibition during the last phase of growth"** — while **interference with
+  SUBCHONDRAL VASCULARISATION HAD NO EFFECT** and nutrient-artery ligation only a very limited curbing effect. Authors:
+  periosteal stimulation **CANNOT** be vascular, and they hypothesise **the periosteum transmits MECHANICAL stimuli**.
+· **`hansson1975` (PMID 1146509) — venous stasis, NULL.** Femoral + circumflexal + deep femoral (± sciatic) vein
+  ligation in growing rabbits, tetracycline growth rate to 40 days: **neither stimulation nor retardation.**
+· **`wray1961` (PMID 14040339)** — the original, **NO PubMed abstract**; an agent-supplied OpenAlex summary reports a
+  bilateral biphasic response with an ipsilateral excess and **vascular casting falsifying hyperaemia**. ⚠ Secondhand,
+  `value_unverified`, primary still blocked.
+
+⭐⭐⭐ **TWO — AND THE "PERSISTENCE VERSUS DECAY" READING OF THIS CORPUS CONFLATES TWO DIFFERENT ENDPOINTS. MY OWN
+CORRECTION TO THE AGENT'S TABLE.** **A tetracycline study measures a growth RATE; a caliper study measures attained
+LENGTH. A rate that returns to normal after running 8% high for two weeks has BANKED A PERMANENT INCREMENT — decay of
+the rate is NOT loss of the gain.**
+| endpoint | result |
+|---|---|
+| **RATE returns to normal** | `hansson1976` 30 days · `kery1980` "normalization" · `kramer1955` "six to ten months" |
+| ⭐ **LENGTH persists** | `schneider1963` to 4 months · `kuijpersjagtman1988` to ultimate length, no late inhibition |
+| ⛔ **LENGTH genuinely reverses** | **`garces1991` — the ONE true reversal, and it measured length serially** |
+⛔ **`garces1991` (PMID 2071281), 70 rats + 70 controls at 7 timepoints to 20 weeks: femur significantly longer ONLY at
+4 weeks (+1.5%, p 0.001) AND NOT MAINTAINED — while DIAPHYSEAL DIAMETER WAS PROGRESSIVELY NARROWER on the stripped
+side and significant at EVERY stage. A temporary length gain bought with a permanent width loss.**
+
+⭐⭐ **THREE — `hansson1976` (PMID 1015254) IS THE METHODOLOGICAL KEYSTONE AND IT INDICTS THE CONTRALATERAL-CONTROL
+DESIGN THE WHOLE CORPUS USES.** It carries a **NORMAL non-operated reference group in addition to the contralateral
+limb**, and it **DECOMPOSES the ipsilateral–contralateral difference into a GENERAL GROUP RETARDATION and a LOCAL
+STIMULATION.** The split differs by fracture type: **retardation pronounced after tibiofibular fracture, insignificant
+after femoral and metatarsal fracture — where the fractured side genuinely EXCEEDED normal.**
+→ ⭐ **A CONTRALATERAL CONTROL CANNOT TELL "THIS LIMB GREW MORE" FROM "THE ANIMAL GREW LESS AND THIS LIMB WAS SPARED."
+schneider1963, kaneko2020, shapiro1981, cho2025, abbaspour2008 and the metaphyseal-hole series ALL use contralateral
+controls without a normal reference group.** Not a refutation of any of them — **a stated limit on all of them.**
+
+⛔ **FOUR — THE COSTS, VERIFIED, AND ONE IS WEAKER THAN SECONDARY SUMMARIES SAY.**
+· ⛔ **`forgon1985` (PMID 3876815) — 20 µA continuous DC to the rabbit distal femoral plate: 18 of 20 showed increased
+  "LENGTHENING **OR BROADENING**" — the two are NOT separated in the abstract — and **14 OF 20 DEVELOPED VARUS OR
+  VALGUS DEFORMITY.** A 70% deformity rate is the price of an asymmetric stimulus to one side of a plate.
+· **`kramer1955` (PMID 13270107), HUMAN — 12 children, 15 procedures, 11 beneficial**, ivory pegs vs brass screws vs
+  drill holes **indistinguishable**, **stimulation persisting six to ten months**, complications **varus/valgus, growth
+  DELAY, COMPLETE FUSION, infection** — and the 1955 fix: **stimulate BOTH medial and lateral sides simultaneously.**
+· ⛔ **`bjerkreim1983` (PMID 6858653) IS THE BOUNDARY CONDITION ON EVERY INTRA-OSSEOUS ROUTE IN THIS FILE.** Nailing
+  **THROUGH** the distal femoral plate **RETARDED** growth; a pin left 7 weeks inhibited; **but DRILLING ONLY WITH
+  IMMEDIATE PIN REMOVAL GAVE NO DISTURBANCE.** → **An intra-osseous route must not cross the physis and must not leave
+  hardware in it** — which the R373/R385–R387 depot specification already requires, now with the experiment behind it.
+
+⭐⭐ **FIVE — `thorngren1981` (PMID 7331746) IS R423/R449/R455 REACHED IN 1981, ACROSS SPECIES INCLUDING MAN.**
+Cell production computed as oxytetracycline longitudinal growth ÷ terminal cell size across rabbit growth plates:
+production falls with age at **all** regions and **differs between plates**, while **"there was little influence by age
+or localization on the size of the degenerative cells"** — and, verbatim, **compared to rat AND MAN the cell size is
+almost the same, whereas the difference in growth rate depends mainly on the CELL PRODUCTION.**
+→ ⭐ **TERMINAL CELL SIZE IS A NEAR-INVARIANT ACROSS AGE, SITE AND SPECIES; AMPLIFICATION CARRIES THE VARIANCE. Fourth
+independent line after R423's femur-vs-metacarpal decomposition (88% amplification), R449's Longshanks (selection moves
+cell NUMBER and nothing else) and R455's axial split (80–95% cell production).**
+
+⭐ **SIX — `revell1994` (PMID 7928650): THE FIELD WAS ABANDONED AS OBSOLETE, NOT REFUTED.** Verbatim: interference with
+venous outflow to stimulate fracture repair and bone growth **has a long history with beneficial effects confirmed by
+many experimental and clinical studies**, and **"with the development of fracture fixation systems, the therapeutic use
+of circulatory intervention became redundant."** ⭐ **R441's structural fact — that "abandoned" means the indication
+disappeared, not that the biology failed — in a second field.** ⚠ **Tension recorded: `hansson1975` tested venous
+stasis directly against a growth endpoint and found nothing**, so "beneficial effects confirmed by many studies" is
+about fracture repair generally and not about longitudinal growth.
+
+⚠ **SEVEN — AND THE LOVASTATIN "CONTRADICTION" CANNOT BE RESOLVED FROM PUBMED.** `leem2002` (PMID 12174823) is a
+**2-page short report with NO abstract**. An agent-supplied summary reports the route is **INTRAPERITONEAL** and the
+endpoint a **4-day tetracycline-band growth-RATE assay**, which would make it a rate proxy with no attained-length
+endpoint and therefore **not** a contradiction of `humphries2018` (300 children, 4.45 vs 4.60 cm/yr, P=0.73).
+⛔ **THAT SUMMARY IS SECONDHAND AND `value_unverified` — the route and endpoint are not recoverable from PubMed.**
+
+⭐ **EIGHT — AND THE ABANDONED-METHODS CATALOGUE HAS A CANDIDATE IDENTITY AT LAST.** `schneider1963`'s reference 11 is
+**`elo1960` — Elo JO, Acta Orthop Scand Suppl 1960;45:1–90 (PMID 13726535), 90 pages** — cited as the index to
+periosteal stripping, metaphyseal drilling and marrow implants. **That is one of the two candidates for the Acta Orthop
+Scand supplement this file has been trying to obtain; `nordentoft1964` is the other.** Blocked, no abstract.
