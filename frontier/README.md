@@ -25,11 +25,13 @@ target list. It is a new instrument.
 | file | what it is |
 |---|---|
 | `R001_paediatric_rct_height_screen.md` | **The round.** A new instrument, built and run: the ClinicalTrials.gov results database as a randomised, bidirectional, human height assay. Produces the first measured **base rate** for drug effects on paediatric linear growth, closes one open atlas gap with human randomised data, and lands one number the atlas's SCALE section does not have. |
+| `R003_the_redox_ledger.md` | **The main result.** R436 measured an 825-concept blind spot, scored 199 of 866, filtered that with three criteria its own correction ledger forbids, and closed it. Working one unscored domain returns an axis absent from this atlas — selenium 0 files, selenoprotein 0, G6PD 0, oxidative protein folding 0, ferroptosis 0 nodes and 0 gaps — that lands on R459's named open question, on R454/R461's supply-limited matrix module, and on a 2025 *Nature Metabolism* paper whose first sentence is about **bone lengthening**. Proposes that the budget is a **redox ledger**, not a division counter — the only lever class that raises yield without raising rate. |
+| `R004_the_unscored_queue.md` | The other 667, opened and ranked: six length endpoints in normal animals already run and never scored, a second epigenetic axis, a second route to fusion, and a comparative argument that what imposes the limit is the **secondary ossification centre** — a structure this atlas already has a node for. |
 | `R002_coverage_redteam.md` | **The negative space of my own search.** Forty-one out-of-the-box axes generated from first principles, each greped against this repository, each given a verdict. Thirty-four were already worked, several more deeply than I would have. Seven are genuinely open. Recorded so nobody re-derives them. |
 | `ASKS.md` | What I need from the operator, ranked, with what each unlocks. |
 | `screens/ctg_paediatric_rct/` | Code, raw harvest parameters and result tables. Re-runnable. |
 
-## The one-paragraph summary
+## The two-paragraph summary
 
 The atlas's own acquisition round (R18, 2026-08-06) downloaded 506 clinical trials with posted
 height results and wrote that **269 of them are "natural experiments on human height that nobody has
@@ -43,3 +45,32 @@ drugs given to children for reasons unrelated to growth have a **median effect o
 What does appear is a **−1.7 cm, p = 0.030, 96-week randomised placebo-controlled human result for
 selexipag** — the exact measurement the atlas's R457 said was missing, on a cAMP-raising agent, in
 the direction that argues against the arm.
+
+
+---
+
+## The second summary — F-R003, and why F-R001 was the smaller half
+
+F-R001 built a good instrument over a low-ceiling space: approved paediatric drugs, tested against
+placebo, in indications unrelated to growth. It measured the base rate honestly and the base rate is
+−0.27 cm/yr. **That space cannot contain a revolutionary answer, because a drug that made children
+dramatically taller would not have stayed in a diabetes trial.**
+
+F-R003 goes at the ceiling instead, and finds the crack in a different place: not in the biology, but
+in the **coverage instrument**. R436 is the best thing in this repository for finding what nobody has
+thought of — 21 external domain agents, 2,193 concepts, scored against the whole graph. It found 825
+concepts the atlas had never once mentioned, then **scored 199 of 866**, filtered those with three
+criteria (ACAN-level cartilage enrichment, ≥20 CPM in the plate, a recorded TALL direction) that
+CORR-349, CORR-363, CORR-342, CORR-295 and CORR-344 each independently forbid, got four syndromes, and
+recorded that the blind spot "does not hide an obvious missed compound."
+
+**The unscored 667 are 97–100% of the mechanics, cell-biology, vascular-neural-immune and
+intervention-landscape domains.** Working one of them returns the redox axis: the chondrocyte secretes
+collagen at the plasma-cell ceiling (R454) in an avascular, transport-limited compartment (R448/R450/
+R452), disulfide folding makes ROS, the plate pays it down through the pentose phosphate pathway,
+glutathione and selenoprotein GPX4 — and when supply fails, the cell dies by a **non-apoptotic,
+TUNEL-poor, necrosis-like, iron-driven** route that matches, exactly, the death morphology R459
+assembled from three species and could not name. That axis has **no node, no gap and no question**
+anywhere in this atlas. Its receiver passes the free local query in all four human donors — GPX4 is
+detected in more cells than NPR2, the vosoritide receptor, in every one — and the zonal gradient
+argues against the naive version of the model, which F-R003 reports rather than smooths.
