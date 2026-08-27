@@ -1,0 +1,147 @@
+id: round465_the_gc_a_arm_fails_the_receiver_test_and_adam12_passes_it_by_the_other_route
+name: 'R465 - the free local query run before any further literature work: the GC-A/NPR1 arm FAILS the receiver test
+  at the growth plate and is most likely NPR2 spillover, the whole natriuretic ligand family is absent from the plate,
+  and ADAM12''s SUBSTRATES are abundantly present even though ADAM12 itself is not enriched'
+aliases:
+- R465
+- NPR1 is not in the growth plate
+- BNP transgenic is probably NPR2 spillover
+- natriuretic ligands are all systemic
+- ADAM12 substrates FN1 and ITGB1 are enriched
+- PRKG1 platform discrepancy
+type: dataset
+layer: L1
+stub: false
+confidence: B
+last_verified: '2026-08-27'
+species_basis:
+- human
+human_evidence: direct
+human_evidence_note: GSE288028 is postnatal HUMAN growth-plate tissue, 12 usable samples after removing the two mouse
+  libraries identified in R344. The purity split is computed within the nine male samples per R411 to remove the sex
+  confound, and calibrated on COL2A1, ACAN, COL10A1, PTPRC and HBB in the same run.
+translation_risk: low
+translation_risk_reason: 'Human tissue, human question, and the calibrators behave. The residual risk is interpretive
+  rather than translational: CORR-363 establishes that a low purity ratio measures investment rather than rate-limitation,
+  so an absence call is strong and a low-but-present call is weak.'
+summary: 'R464 promoted three headlines from the endpoint-first sweep. The free local query - CORR-316''s rule, run before
+  any
+
+  further literature work - kills one of them at the growth plate, qualifies the second and strengthens the third.
+
+  GSE288028, sex-corrected purity split, four purest against four most contaminated MALE samples, calibrated on
+
+  COL2A1 7.65 and ACAN 1.96 against PTPRC 0.00 and HBB 0.03.
+
+
+  ONE - THE GC-A ARM FAILS CORR-327 AT THE PLATE, AND IT FAILS IN THE BAND THAT KILLED LOSARTAN AND SACUBITRIL.
+
+  NPR1 is 0.5 CPM in pure cartilage at ratio 0.17. AGTR1 was 0.03 and MME was 0.17. suda1998''s BNP transgenic raises
+
+  plasma BNP to 12.2 pmol per millilitre against a control of less than 0.06 - over two hundred fold - and BNP
+
+  cross-activates NPR-B at high concentration. Against that, NPR2 in the same tissue is ratio 2.40 at 12.0 CPM and NPR3
+
+  is 2.83 at 2.8 CPM, both cartilage-enriched. THE MOST PARSIMONIOUS READING OF THE BNP TRANSGENIC IS SPILLOVER ONTO
+
+  NPR2, WHICH MAKES IT A SUBSTITUTION FOR THE CNP ARM ALREADY IN THE STACK RATHER THAN A NEW RECEPTOR ARM - Step 0,
+
+  CORR-297. It is not a refutation of suda1998, whose length endpoint is real; it is a statement that the receptor the
+
+  paper names is not in the tissue and the receptor that is there is the one navepegritide already occupies.
+
+
+  AND THE WHOLE NATRIURETIC LIGAND SET IS ABSENT FROM THE PLATE, WHICH IS THE SAME CONFIGURATION THIS FILE ALREADY HELD
+
+  FOR CNP AND HAS NOW EXTENDED TO THE ENTIRE FAMILY: NPPA 0.0 CPM at ratio 0.03, NPPB 0.0 detected in only 3 of 12
+
+  samples, NPPC 0.1 at 0.46, OSTN 0.0 at 0.12. Receptors local, ligands systemic - for all three peptides, not just CNP.
+
+
+  TWO - AND A QUALIFICATION THAT MATTERS FOR ANY FUTURE cGMP ARGUMENT: PRKG1 IS CONTAMINANT-LEANING HERE AT RATIO 0.05,
+
+  29.5 CPM pure against 646.7 contaminated. R298 recorded PRKG1 as present and hypertrophy-enriched from GSE9160, rising
+
+  1441 in the resting zone to 4228 in the hypertrophic zone. Two platforms, two answers. PRKG2 is 0.73 at 57.5 CPM.
+
+  CORR-363 governs - a low purity ratio measures investment rather than rate-limitation and cannot by itself refute a
+
+  zone-resolved measurement on another platform - but the discrepancy is recorded rather than smoothed, because R298''s
+
+  conclusion that the plate carries the cGMP effector kinases is load-bearing for the whole CNP arm.
+
+
+  THREE - ADAM12 IS CONTAMINANT-LEANING AT RATIO 0.24 AND THAT IS NOT THE RIGHT TEST FOR IT. It is 32.6 CPM in pure
+
+  cartilage against 133.8 contaminated, detected in all twelve samples - genuinely present, not concentrated. Two reasons
+
+  that is not a kill. First, CORR-363: the screen is structurally blind to universal machinery, and every other ADAM
+  in
+
+  the panel scores the same way - ADAM10 at 0.22, ADAM17 at 0.18, ADAM9 at 0.53, ADAM19 at 0.04 - with only ADAM15 at
+
+  2.67 enriched. Second and decisively, kveiborg2006''s transgenic expresses ADAM12-S IN THE CIRCULATION, so the
+
+  chondrocyte does not have to make it; the correct receiver test is whether its SUBSTRATES are in the tissue.
+
+
+  AND THEY ARE, ABUNDANTLY. The mechanism the paper names is inhibition of chondrocyte adhesion to FIBRONECTIN and
+
+  COLLAGEN II. FN1 is ratio 2.11 at 10,528.9 CPM - one of the most abundant transcripts in the entire tissue - and ITGB1
+
+  is 1.71 at 310.7 CPM. COL2A1 is the calibrator at 7.65. So a circulating protease acting on chondrocyte-matrix adhesion
+
+  has its named targets present at very high abundance in the target tissue, which is the configuration a systemically
+
+  delivered agent needs and which the CNP ligand, the RAAS and PDE5A all fail.'
+quantitative:
+- parameter: NPR1 (GC-A, the BNP receptor) in the postnatal human growth plate
+  value: pure 0.5 CPM, contaminated 2.9, ratio 0.17, detected 12/12
+  unit: CPM, sex-corrected purity split
+  species: human
+  source_ref: gse288028
+  note: THE BAND THAT KILLED LOSARTAN (AGTR1 0.03) AND SACUBITRIL (MME 0.17). The receptor suda1998 names is not in the
+    tissue
+- parameter: NPR2 and NPR3 in the same samples, for contrast
+  value: NPR2 pure 12.0 CPM ratio 2.40; NPR3 pure 2.8 ratio 2.83
+  unit: CPM
+  species: human
+  source_ref: gse288028
+  note: BOTH CARTILAGE-ENRICHED. With plasma BNP raised over 200-fold in the transgenic and BNP cross-activating NPR-B
+    at high concentration, the parsimonious reading of suda1998 is SPILLOVER ONTO NPR2 - which makes it a SUBSTITUTION
+    for the CNP arm, not a new receptor arm
+- parameter: the whole natriuretic LIGAND family in the plate
+  value: NPPA 0.0 CPM ratio 0.03; NPPB 0.0, detected only 3/12; NPPC 0.1 ratio 0.46; OSTN 0.0 ratio 0.12
+  unit: CPM
+  species: human
+  source_ref: gse288028
+  note: RECEPTORS LOCAL, LIGANDS SYSTEMIC - FOR ALL THREE PEPTIDES, not just CNP. Extends a configuration this file previously
+    held only for NPPC
+- parameter: ADAM12 and the ADAM family in the plate
+  value: ADAM12 pure 32.6 CPM ratio 0.24; ADAM10 0.22; ADAM17 0.18; ADAM9 0.53; ADAM19 0.04; ADAM15 2.67
+  unit: CPM, all detected 12/12
+  species: human
+  source_ref: gse288028
+  note: CORR-363 GOVERNS - the screen is blind to universal machinery and the whole family scores alike. AND IT IS THE
+    WRONG TEST FOR ADAM12-S ANYWAY, because kveiborg2006 expresses it in the CIRCULATION
+- parameter: ADAM12-S's named substrates in the plate - the RIGHT receiver test
+  value: FN1 pure 10,528.9 CPM ratio 2.11; ITGB1 pure 310.7 CPM ratio 1.71
+  unit: CPM, calibrators COL2A1 7.65 and ACAN 1.96
+  species: human
+  source_ref: gse288028
+  note: THE MECHANISM kveiborg2006 NAMES IS INHIBITION OF CHONDROCYTE ADHESION TO FIBRONECTIN AND COLLAGEN II, AND FN1
+    IS ONE OF THE MOST ABUNDANT TRANSCRIPTS IN THE WHOLE TISSUE. A circulating protease with its targets abundantly present
+    is the configuration a systemic agent needs
+- parameter: PRKG1 - a discrepancy against R298, recorded not resolved
+  value: PRKG1 pure 29.5 CPM ratio 0.05; PRKG2 pure 57.5 ratio 0.73
+  unit: CPM
+  species: human
+  source_ref: gse288028
+  note: R298 recorded PRKG1 as PRESENT and hypertrophy-enriched from GSE9160 (1441 RZ to 4228 HZ) and that conclusion
+    is load-bearing for the whole CNP arm. Two platforms, two answers. CORR-363 says a purity ratio cannot by itself
+    refute a zone-resolved measurement - flagged for whoever next leans on it
+key_refs:
+- ref_id: suda1998
+- ref_id: kveiborg2006
+- ref_id: abbaspour2008
+open_questions: []

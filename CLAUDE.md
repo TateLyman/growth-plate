@@ -12980,3 +12980,42 @@ ADAM12-S · **PMID 12174823, lovastatin raises longitudinal bone growth in norma
 above-requirement supplementation literature** — ~600 hits across four queries, **sampled not read**, and dominated by
 deficiency correction which CORR-203 excludes. ③ ⛔ **The Drugs@FDA nonclinical REVIEW PDFs — STRATEGY UNRUN, no
 full-text API, search budget exhausted.**
+
+## 🧪🧪🧪 R465 — **THE FREE LOCAL QUERY, RUN BEFORE ANY FURTHER LITERATURE WORK (CORR-316), AND IT KILLS ONE OF
+## R464's THREE HEADLINES AT THE PLATE, QUALIFIES THE SECOND AND STRENGTHENS THE THIRD.**
+## GSE288028, sex-corrected purity split · calibrators **COL2A1 7.65 · ACAN 1.96** vs **PTPRC 0.00 · HBB 0.03**
+
+⛔⛔ **ONE — THE GC-A / NPR1 ARM FAILS CORR-327, IN THE EXACT BAND THAT KILLED LOSARTAN AND SACUBITRIL.**
+**NPR1 = 0.5 CPM pure, ratio 0.17.** AGTR1 was **0.03**; MME was **0.17**. Against that, in the same samples
+**NPR2 is ratio 2.40 at 12.0 CPM and NPR3 is 2.83 at 2.8 CPM — both cartilage-enriched.**
+⭐ **AND `suda1998`'s TRANSGENIC RAISES PLASMA BNP OVER 200-FOLD (12.2 vs <0.06 pmol/mL), AND BNP CROSS-ACTIVATES
+NPR-B AT HIGH CONCENTRATION. THE PARSIMONIOUS READING IS SPILLOVER ONTO NPR2 — WHICH MAKES THE BNP RESULT A
+SUBSTITUTION FOR THE CNP ARM ALREADY IN THE STACK, NOT A NEW RECEPTOR ARM.** Step 0 / CORR-297.
+⚠ **Not a refutation of `suda1998` — its length endpoint is real.** It is a statement that **the receptor the paper
+names is not in the tissue, and the receptor that IS there is the one navepegritide already occupies.**
+⭐ **AND THE WHOLE NATRIURETIC *LIGAND* FAMILY IS ABSENT FROM THE PLATE — a configuration this file previously held
+only for CNP: NPPA 0.0 CPM (ratio 0.03) · NPPB 0.0, detected in only 3/12 · NPPC 0.1 (0.46) · OSTN 0.0 (0.12).**
+**RECEPTORS LOCAL, LIGANDS SYSTEMIC — for ALL THREE PEPTIDES.**
+
+⚠ **TWO — A DISCREPANCY AGAINST R298, RECORDED NOT SMOOTHED, AND IT IS LOAD-BEARING FOR THE CNP ARM.**
+**PRKG1 is CONTAMINANT-LEANING here at ratio 0.05** (29.5 pure vs 646.7 contaminated); PRKG2 0.73 at 57.5.
+**R298 recorded PRKG1 as PRESENT and hypertrophy-enriched from GSE9160 — 1441 RZ → 4228 HZ — and used it to conclude
+the plate carries the cGMP effector kinases while lacking soluble cyclase, which is the whole basis for killing the
+nitrate shelf and for saying the relevant cGMP pool is NPR-B-derived.** ⚠ **CORR-363 governs: a purity ratio measures
+INVESTMENT, not rate-limitation, and cannot by itself refute a zone-resolved measurement on another platform.**
+**Two platforms, two answers. Flagged for whoever next leans on it.**
+
+⭐⭐⭐ **THREE — ADAM12 IS CONTAMINANT-LEANING AT 0.24, AND THAT IS THE WRONG TEST FOR IT. ITS SUBSTRATES ARE
+ABUNDANTLY PRESENT, WHICH IS THE RIGHT ONE.**
+**ADAM12 32.6 CPM pure, ratio 0.24, 12/12 — genuinely present, not concentrated.** ⚠ **Two reasons that is not a kill.**
+① **CORR-363: the screen is structurally blind to universal machinery, and the WHOLE FAMILY scores alike** — ADAM10
+0.22, ADAM17 0.18, ADAM9 0.53, ADAM19 0.04, with only ADAM15 (2.67) enriched. ② **DECISIVELY: `kveiborg2006` expresses
+ADAM12-S IN THE CIRCULATION, so the chondrocyte does not have to make it — the correct receiver test is whether its
+SUBSTRATES are in the tissue.**
+⭐⭐ **AND THEY ARE, AT THE TOP OF THE TISSUE. The mechanism the paper names is INHIBITION OF CHONDROCYTE ADHESION TO
+FIBRONECTIN AND COLLAGEN II — and FN1 is ratio 2.11 at 10,528.9 CPM, ONE OF THE MOST ABUNDANT TRANSCRIPTS IN THE ENTIRE
+TISSUE, with ITGB1 1.71 at 310.7 CPM and COL2A1 the 7.65 calibrator.** **A CIRCULATING PROTEASE WHOSE NAMED TARGETS SIT
+AT VERY HIGH ABUNDANCE IN THE TARGET TISSUE IS EXACTLY THE CONFIGURATION A SYSTEMICALLY DELIVERED AGENT NEEDS — and it
+is the configuration the CNP ligand, the RAAS and PDE5A all fail.**
+🧭 **NET: of R464's three headlines, the GC-A arm collapses into the CNP arm, and ADAM12-S survives the localisation
+test by the route that actually applies to it. ADAM12 is now the single most interesting unworked target in the file.**
