@@ -13755,3 +13755,90 @@ halves it, the loss does not reverse, and the control arm catches down rather th
 up.** The drain is **reduced self-renewal against unblocked differentiation**, and dexamethasone proves the
 outflow is separately controllable. And the matrix term, which R454 read as a fixed quantum, is a
 site-patterned setpoint with a 1.9-fold range — which is a lever's profile, not a ceiling's.
+
+## 🦴🦴🦴🦴🦴 R471 — **`elo1960` WAS IN THE BUNDLE ALL ALONG AND THE BLOCKED-ITEM NOTE HAD IT BACKWARDS: THE
+## EXPERIMENT IS THE VALUABLE HALF, NOT THE REVIEW. IT REPLICATES `brodin1955`'s WITHIN-BONE CROSS-PLATE SPLIT
+## WITH X-RAY BONE MARKERS AND AN INTACT NUTRIENT ARTERY — AND ITS 2 mm LENGTH GAIN SITS ON ZONE HEIGHTS
+## STATISTICALLY INDISTINGUISHABLE FROM CONTROL.**
+
+⭐ **WHAT IT IS.** Item **C2** on this file's blocked list and item **9** on the operator's own list of ten, hunted as
+*"the Acta Orthop Scand supplement cataloguing abandoned growth-stimulation methods."* **PMID 13726535, Elo JO, Acta
+Orthop Scand Suppl 1960;45:1–90, NO PubMed abstract — so every number below is from the paper.** 143 young rabbits,
+subperiosteal autogenous **whole-thickness skin graft, free and without function**, serial roentgenologic tibial
+length to one year, contralateral tibia as control. ⛔ **The blocked-item note said "the review section is what
+matters, not the skin-graft experiment in the title." THAT IS WRONG AND THE ROUND IS THE CORRECTION.**
+
+⭐ **ONE — THE EFFECT AND ITS BAND, WITH FOUR CONTROL ARMS.** Maximal mean discrepancy **2.3 mm at 17 weeks**, falling
+to **1.6 mm at 25 weeks** and **1.4 mm at 12 months** — partial decay with a persistent residual. Against that:
+· **plain periosteal detachment, and detachment plus subcutaneous tissue: ~0.5 mm, "minimal and transient"** — and
+  plain LARGE detachment turns **NEGATIVE by a year, −0.5 mm at 26 weeks and −1.0 mm at 53 weeks.**
+· ⭐ **SERIES C — extending the detachment BEYOND the epiphyseal line gave RETARDATION AS THE RULE at 12 and 24
+  weeks.** The author's own summary states the band: the detachment **"had to be sufficiently large and outside the
+  area of the epiphyseal cartilage or retardation of growth ensued between 12 and 24 weeks."**
+⭐ **THAT IS `schneider1963`'s "narrow limits of tolerance" conclusion reached independently, in a different decade, on
+a different intervention.** R467 recorded that generalisation from one 1963 paper; it is now two.
+
+⭐⭐ **TWO — AND THE MEDULLARY-CAVITY CONTROL REMOVES THE OBVIOUS MECHANISMS, INCLUDING ONE THIS FILE BUILT ON.**
+A fourth arm implanted the skin graft **INTO THE MARROW CAVITY**: the same cyst formed, of corresponding size, **and
+it did not stimulate growth.** Verbatim: *"Cyst formation in the bone did not in itself cause stimulation of
+longitudinal bone growth. Stimulation required extensive periosteal detachment."*
+→ **NOT the foreign body, NOT the cyst, NOT medullary occlusion.** ⚠ **AND THAT IS A DIRECT NEGATIVE CONTROL ON THE
+OCCLUSION ACCOUNT R442 AND R450 BUILT** from Trueta 1953's wax result and the modern metaphyseal-hole series — a graft
+sitting in the marrow cavity for a year did nothing, in the same laboratory and the same species. It does not refute
+the wax result (different material, different placement) but it is the closest control anyone ran, and it is null.
+⭐ **AND THE VASCULAR CONFOUND WAS DELIBERATELY EXCLUDED BY DESIGN: the nutrient artery was LEFT INTACT** using
+Brodin's method — against **Trueta, who regarded ligation of the nutrient artery as the important stimulation-inducing
+factor, and Brookes, who RETARDED growth by simple ligation.** The stimulation happened without touching the vessel
+the field was arguing about.
+
+⭐⭐⭐⭐ **THREE — THE FINDING: THE GAIN COMES FROM THE PLATE AT THE FAR END, AND THE PLATE AT THE LESION IS
+INHIBITED. `brodin1955` REPLICATES, WITH BONE MARKERS.** Series D placed **X-RAY-POSITIVE MARKERS** in the bone,
+**DISTAL to the cyst**. Verbatim: the postoperative positive discrepancy derives **"from the activity of the distal
+epiphyseal cartilage"**, while *"after 7 postoperative weeks the proximal epiphyseal cartilage also caused some growth
+stimulation, but then the proximal epiphyseal cartilage began to retard growth"* — and never reached significance.
+**Table 14, distal minus proximal: 0.3 ± 0.1 (CI 0.0–0.6) over weeks 6–8 · 0.8 ± 0.2 (0.2–1.3) over 6–12 ·
+1.5 ± 0.3 (0.9–2.2) over 6–16 — significant and GROWING.**
+⭐ **And the paradox that makes it a result rather than an artefact: rabbit tibial growth comes MAINLY from the
+PROXIMAL plate, so the gain is carried by the MINOR, DISTANT plate while the major, local one runs backwards.**
+⭐ **The marker placement also excludes new bone at the operation site** — the author says so and attributes the gain
+to epiphyseal cartilage activity, citing **Compere & Adams 1937 on femoral fractures**, i.e. he reached R442's own
+three-way decomposition of fracture overgrowth in 1960.
+⛔ **CONSEQUENCE FOR THIS LEDGER: R450's line "THE COMPARTMENT SPLIT HAS NOT BEEN REPORTED SINCE 1955" IS FALSE, AND
+FALSE IN THE FILE'S FAVOUR.** Two laboratories, two decades, two interventions, two methods — and elo1960 adds
+statistics and bone markers that brodin1955 did not have.
+⭐⭐ **THE CROSS-BONE ANOMALY NOW HAS FOUR LINES AND NO MEDIATOR: `brodin1955` (within-bone, rabbit) · `elo1960`
+(within-bone, rabbit, markers, artery intact) · `shapiro1981` (unbroken ipsilateral TIBIA overgrows 0.29 cm in 82% of
+children) · `cho2025` (unbroken ipsilateral FEMUR, 25% of the discrepancy).** ⚠ **`hansson1967` deflates the
+operated-versus-contralateral SIDE difference — with a normal reference group the operation retards growth on both
+hindlimbs AND on the contralateral FORELIMB distal radius by 12.5% — but it CANNOT explain the WITHIN-BONE split,
+because both plates sit in the same limb of the same animal and move in OPPOSITE directions.** `g_l6mech_471a`.
+
+⭐⭐⭐ **FOUR — AND TABLE 17 IS A READOUT RESULT, WITH ITS OWN INTERNAL POSITIVE CONTROL.** At 16 weeks, in animals
+carrying about a 2 mm length gain, **there was NO significant difference between stimulated and control tibia in the
+height of the whole epiphyseal cartilage, NOR in the proliferating zone, NOR in the hypertrophic zone, at EITHER the
+proximal or the distal plate** (left minus right: proximal 0.28 ± 0.21 / 0.11 ± 0.10 / 0.39 ± 0.28; distal
+0.30 ± 0.29 / 0.15 ± 0.10 / 0.45 ± 0.36).
+⭐⭐ **THE SAME TABLE DETECTS THE WITHIN-ANIMAL PROXIMAL-MINUS-DISTAL CONTRAST AT 2.48 ± 0.44 PROLIFERATING,
+1.26 ± 0.16 HYPERTROPHIC AND 3.74 ± 0.56 TOTAL. THE ASSAY WAS SENSITIVE. THE TREATMENT EFFECT WAS INVISIBLE TO IT.**
+→ **R463 established the zone-height readout is blind from the NEGATIVE side — `wilson2021` (hypertrophic zone height
+and plate area do not correlate with growth in mouse OR human) and `bylskiaustrow2018` (a 34% fall in cell HEIGHT at
+P<0.0005 while zone height read P=0.21 on the same sections). THIS IS THE POSITIVE SIDE, WITH A SUSTAINED
+MULTI-MILLIMETRE LENGTH GAIN ATTACHED: A PLATE CAN LENGTHEN A BONE WITHOUT THICKENING AT ALL.**
+⭐ Independently concordant with `ramesh2022`, where column density per mm and PCNA⁺ cells rose significantly while
+plate height and area did not. **So which histological variable DOES carry a real gain is an open question with the
+two commonest readouts already excluded** — `g_l5_471b`.
+
+⛔ **WHAT IT IS NOT.** The intervention is a subperiosteal skin graft in a rabbit in 1960 and is of **no interest as a
+route** — surgical, and excluded here. Everything claimed to transfer is structural: the band, the medullary control,
+the cross-plate split, and the blind readout. ⚠ And Table 3's group labels are subscripted in the original and OCR
+inconsistently, so **only the group-A₁ series (the headline arm) and the explicitly-named control arms are quoted
+here**; per-group n's are animals, not measurements.
+
+⭐ **AND ONE NEWLY-IDENTIFIED DOCUMENT, FOUND BY PUBMED esearch RATHER THAN GUESSED: `troupp1961` — PMID 13778213,
+Acta Orthop Scand Suppl 1961;51:1–78, *"Nervous and vascular influence on longitudinal growth of bone. An
+experimental study on rabbits"*, NO abstract, NEVER PREVIOUSLY IN THIS ATLAS.** It is the only monograph found that
+tests the **NERVOUS** and the **VASCULAR** routes against longitudinal growth **in one experimental series** — R450
+opened the vascular half and R449/R463 left the nervous half ambiguous (`killion2017` shorter tibiae in mice
+denervated at P8 against `garces1988` no tibial difference in rats denervated at 1 month). **Same species, same era
+and same journal as `elo1960` and `nordentoft1964`, both of which turned out to contain far more than their titles
+promise.** Added as blocked item **C10**.
