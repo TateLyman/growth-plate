@@ -12385,3 +12385,40 @@ randomised azithromycin trials measured linear growth and both were null.** An R
 vs caloric supplementation **raised weight velocity and none raised height velocity.** And **PDE4 inhibition,
 JAK inhibition, MC4R agonism and GnRH agonism have NO bone-length, growth-plate or physeal endpoint anywhere
 in their regulatory packages** — unmeasured, not negative.
+
+## 🦴🦴🦴 R458 — **THE ONLY VERTEBRAL GROWTH-CARTILAGE TRANSCRIPTOME IN EXISTENCE, DOWNLOADED AND ANALYSED.
+## IT IS COMPOSITION-DOMINATED IN BOTH SPECIES AND CANNOT CARRY A REGULATORY CONTRAST — AND THE ONE THING
+## THAT SURVIVES THE CONFOUND PUTS THE CNP RECEPTOR-LOCAL / LIGAND-SYSTEMIC CONFIGURATION IN THE *AXIAL*
+## COMPARTMENT FOR THE FIRST TIME.** Data `atlas/data/round458/`
+
+⭐ **WHY IT MATTERS: R425/R436 established that THE PAEDIATRIC HUMAN VERTEBRAL PHYSIS HAS NEVER BEEN SAMPLED
+BY ANYONE, and this atlas's own dataset inventory says so.** GSE299515 (`weber2025`'s deposit) is the closest
+thing that exists — **caudal vertebral growth cartilage, mouse P7 and JERBOA P16, dissected as cd1 (proximal,
+short vertebra) versus cd6 (distal, elongating vertebra), 16 libraries.** Nobody in this file had opened it.
+
+⛔⛔ **THE CONTRAST IS COMPOSITION-DOMINATED IN BOTH SPECIES, AND THE SEPARATION IS COMPLETE. Mouse P7:
+Acan 857–2206 CPM in cd1 versus 3803–8624 in cd6; Mki67 2314–3089 versus 268–448 — both genes separate the
+groups with no overlap. Jerboa P16: Col2a1 mean 35,365 versus 201,742 CPM — ONE GENE AT A FIFTH OF THE
+TRANSCRIPTOME in cd6 — with Mki67 2624 versus 204.** cd1 is a proliferative, cartilage-poor compartment and
+cd6 is a matrix-rich, post-proliferative one. **That is CORR-339's shape: the biggest movers are markers of
+tissue COMPOSITION, not of regulation, so no gene's log-fold change in this contrast can be read as
+regulatory.**
+⛔ **AND THE OBVIOUS FIX FAILS: NORMALISING TO Acan DRIVES NEARLY EVERY PANEL GENE NEGATIVE, BECAUSE Acan IS
+ITSELF A MATURATION MARKER RATHER THAN A NEUTRAL CARTILAGE-CONTENT MARKER. A usable composition control for
+this tissue does not currently exist** — which is a methodological finding about the axial compartment, not
+a defect in this deposit.
+
+⭐⭐ **WHAT SURVIVES THE CONFOUND IS A PRESENCE CALL, WHICH NEEDS NO CONTRAST — AND IT IS THE CNP ARM.**
+**NPPC is 0.5 and 0.06 CPM in mouse vertebral growth cartilage — effectively ABSENT — while NPR2 is 49–90 CPM
+and NPR3 is 12–14 CPM.** ⭐ **THE RECEPTOR-LOCAL / LIGAND-SYSTEMIC CONFIGURATION THIS FILE ESTABLISHED FOR
+THE LIMB PLATE ON TWO INDEPENDENT HUMAN PLATFORMS (GSE9160 NPPC 1–2 orders below background; GSE288028
+NPPC 0/14 at 0.1 CPM with NPR2 10/14) NOW HOLDS IN THE AXIAL COMPARTMENT TOO.** Third platform, third
+species, same answer: **the plate — limb or vertebral — makes no CNP of its own and carries both receptors.**
+⭐ **And NPR3 rises 8.1 → 42.1 CPM in jerboa cd6 with complete group separation**, which is consistent with
+`weber2025`'s own headline that **Npr3 loss disproportionately elongates proximal and mid-tail vertebrae** —
+the vertebral elongation endpoint R436 recovered from that paper.
+
+⚠ **TECHNICAL NOTE, RECORDED BECAUSE IT BOTH ENABLES AND LIMITS THE JERBOA ARM: the jerboa reads were mapped
+by the depositors to the MOUSE transcriptome (ENSMUST IDs).** That is what makes the jerboa libraries
+analysable against a mouse gene panel at all, **and it biases absolute CPM toward conserved sequence**, so
+cross-species CPM comparisons are not safe and within-species group contrasts are.
