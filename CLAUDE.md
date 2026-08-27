@@ -13990,3 +13990,41 @@ hypertrophy.
 ⭐ **BLOCKED ITEMS STRUCK: A1 (`choi2019cxxc5` Figs 3B/5J) and B3 (`bunger2006`). Of the operator's ten, EIGHT are
 now read in full; only `buckwalter1986` (A5 — the supplied page is the JBJS volume index, not the paper) and the
 un-arrived bundles 4 and 5 remain.**
+
+## 🔬 R474 — **`buckwalter1986` HUNTED. THE FULL TEXT IS GENUINELY PAYWALLED — AND THE ABSTRACT WAS ALWAYS
+## RETRIEVABLE AND THIS FILE HAD ONLY EVER QUOTED HALF OF IT. THE MISSING HALF IS `prein2016`'s COMPOSITIONAL
+## ANISOTROPY, MEASURED THIRTY YEARS EARLIER BY A DIFFERENT METHOD, AND CARRIED THROUGH THE ONE ZONE
+## `prein2016` DOES NOT COVER.**
+
+⛔ **THE HUNT, AND WHAT IT SETTLES.** PMID **3944163** resolves correctly to **Buckwalter JA, Mower D, Ungar R,
+Schaeffer J, Ginsberg B, *Morphometric analysis of chondrocyte hypertrophy*, J Bone Joint Surg Am 1986;68(2):
+243–55** — this atlas had the **WRONG TITLE** on file. Searched 2026-08-27: **no PMC, no preprint, no open PDF;
+LWW/Ovid subscription only.** The full text stays blocked. ⭐ **But the ABSTRACT was always retrievable through
+PubMed eutils, and R461 quoted only its organelle sentence.**
+
+⭐⭐⭐ **THE SENTENCE NOBODY HAD READ, VERBATIM IN SUBSTANCE:** between the lower proliferative and lower
+hypertrophic zones, **TERRITORIAL MATRIX VOLUME INCREASED AS ITS COLLAGEN CONTENT DECREASED, AND
+INTERTERRITORIAL MATRIX VOLUME DECREASED AS ITS COLLAGEN CONTENT INCREASED.**
+⭐⭐ **THAT IS `prein2016` — territorial/PCM soft and collagen-poor, interterritorial stiff and collagen-rich —
+REACHED IN 1986 BY EM STEREOLOGY INSTEAD OF AFM, AND CARRIED THROUGH THE HYPERTROPHIC ZONE, WHICH R468 NAMED AS
+`prein2016`'s ONE LIMIT** (*"embryonic-to-newborn MOUSE, PROLIFERATIVE zone, not the hypertrophic zone"*).
+⭐⭐⭐ **AND THE DIRECTION IS THE FAVOURABLE ONE: the AXIAL path (territorial, the transverse septum, the
+material a cell displaces to get TALLER) GAINS volume and LOSES collagen, while the RADIAL path
+(interterritorial, the longitudinal septum, what it displaces to get WIDER) LOSES volume and GAINS collagen.
+THE ANISOTROPY WIDENS AS THE CELL ENLARGES, AND IT WIDENS FROM BOTH ENDS AT ONCE.** Two methods, two decades,
+two laboratories, neither citing the other — and it is the mechanism, not a correlate.
+⭐ **It also independently corroborates R468's septum identity, which R463 had inverted**, and it agrees with
+`sergerie2009`'s per-zone E1/E3 (17.0 complete · 23.1 reserve · 13.7 proliferative · **12.1 hypertrophic**) that
+the anisotropy is present where the cell actually elongates.
+
+⭐ **TWO SMALLER RECOVERIES FROM THE SAME ABSTRACT.** Mean cell volume rose **more than 500%** upper
+proliferative → lower hypertrophic — a third independent volume figure alongside `hunziker1987`'s ×10 and
+`breur1997`'s 3.9–5.3×. And **organelles of the lower hypertrophic zone showed NO changes associated with cell
+injury or death** — which bears on R459's chondroptosis/dark-cell arm from a fifth direction and runs against
+reading terminal hypertrophy as a degenerative state.
+
+⛔ **WHAT IS STILL MISSING, AND ONE OF IT IS A DEFECT IN OUR OWN RECORD.** The **per-zone tables** (absolute µm³
+per cell by compartment) are unread, so the territorial/interterritorial reversal has a **direction and no
+magnitude**. ⚠ **AND THE SPECIES IS NOT STATED IN THE ABSTRACT — this atlas has been carrying "mouse" for
+`buckwalter1986` unverified, including in R461's organelle-fraction arithmetic against `cooper2013`. Marked
+unverified in the bibliography.** Blocked item **A5** stays open, narrowed to the tables and the species.
