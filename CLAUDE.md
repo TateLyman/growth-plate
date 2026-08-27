@@ -11179,3 +11179,70 @@ investment is, the folding machinery is, and the human genetics split cleanly at
 molecule leaves the cell.** That closes the COPII axis cheaply, explains a null this file could not account
 for, and names the arm — secretion competence — that carries a third to a half of elongation and has never
 been looked at.
+
+## 🍬🍬🍬🍬 R445 — **THE MISSING 93% OF THE OSMOTIC DRIVE: THE PLATE CONCENTRATES GLYCOGEN *DESTRUCTION*
+## 5–7× AND NOT GLYCOGEN SYNTHESIS, THE PRIMING ENZYME IS −0.695 cm AT P=2.9e-16 IN HUMANS, AND THE REASON
+## NOBODY HAS MEASURED IT BY ZONE IS THAT THE STANDARD FIXATION PROTOCOL DESTROYS THE ANALYTE.**
+## Run `atlas/data/round444/glycogen_osmolyte_panel.json`
+
+⭐ **WHY: R440 left glycogen as the one untested candidate for `farnum2002`'s hole — betaine plus free amino
+acids plus inositol plus sorbitol account MAXIMALLY for 6–7% of the osmotic drive for hypertrophy, and
+osmotic pressure is COLLIGATIVE, so one particle of ~10⁴ glucose residues yields ~10⁴ osmotically active
+particles at near-constant mass, which would also dilute dry mass exactly as `cooper2013` measured.**
+Coverage before this round: **glycophagy 0 nodes / 0 ledger · GYG1 0 / 0 · STBD1 0 / 0 · GAA 0 / 0 ·
+Pompe 0 / 0.** And `glycophagy AND cartilage` returns **ZERO PubMed records.**
+
+⭐⭐⭐ **ONE — THE INVESTMENT IS ASYMMETRIC, AND IT POINTS THE WAY THE HYPOTHESIS NEEDS.** Same sex-corrected
+purity split, same calibrators (COL2A1 7.65, COL10A1 49.6, ACAN 1.96, PTPRC 0.00):
+| arm | ratios |
+|---|---|
+| ⭐ **GLYCOGEN DESTRUCTION — ENRICHED** | **STBD1 6.57** (the glycophagy receptor) · **PPP1R3G 4.93** · **GAA 4.90** (lysosomal acid α-glucosidase) · PPP1R3C 2.35 · PGM1 2.45 · PPP1R3D 2.08 |
+| ⛔ **GLYCOGEN SYNTHESIS — NOT ENRICHED** | **GYS1 0.35** (the synthase) · **GBE1 0.24** (branching enzyme) · GYS2 0.07 · GYG1 1.47 · UGP2 1.19 |
+| ✓ glycolysis, for scale | **LDHA 4.43 · LDHB 3.99** — the plate is strongly glycolytic, as expected in a hypoxic tissue |
+→ ⭐⭐ **STBD1 + GAA IS THE GLYCOPHAGY PATHWAY — STBD1 tags glycogen for the lysosome and GAA degrades it
+there — AND BOTH ARE 5–7× CARTILAGE-ENRICHED.** ⭐ **That is independent human corroboration of
+`horigome2020`, which is mouse, names STBD1 in its own abbreviation list, and showed Atg7-null chondrocytes
+accumulating large numbers of glycogen granules.** ⚠ **CORR-351: GYS1 at 14.1 CPM is PRESENT, just not
+concentrated — the cell can make glycogen, it simply does not invest disproportionately in doing so.**
+
+⭐⭐ **TWO — AND THE PRIMING ENZYME CARRIES A WELL-POWERED HUMAN HEIGHT EFFECT NOBODY HAS CONNECTED TO THIS.**
+**GYG1 — glycogenin-1, which self-glucosylates to prime every glycogen particle — is −0.695 cm at
+P=2.89e-16 across 6,915 carriers.** LOAD-BEARING: **you have to be able to make glycogen to reach full
+height.** ⚠ GYG1 is ubiquitous, so a systemic or muscle route is not excluded; but it is the only member of
+the panel in the 207, and it is the step without which no glycogen particle exists at all.
+
+⭐⭐⭐⭐ **THREE — AND THE ZONE IS THE WHOLE ARGUMENT, BECAUSE THE TWO HYPOTHESES MAKE OPPOSITE PREDICTIONS.**
+`horigome2020`'s conclusion is **METABOLIC — autophagy participates in glycogenolysis to supply GLUCOSE AS
+FUEL in an avascular plate — and its Atg7-null cells die specifically in the PROLIFERATIVE ZONE.** R440's
+colligative hypothesis needs glycogen **stored before hypertrophy and depolymerised during it**, i.e. peaking
+**PRE-HYPERTROPHIC and collapsing through the HYPERTROPHIC zone.**
+→ ⭐ **FUEL PREDICTS GLYCOGEN HIGH IN THE PROLIFERATIVE ZONE. OSMOLYTE PREDICTS IT HIGH PRE-HYPERTROPHIC AND
+FALLING THROUGH HYPERTROPHY. ONE ZONE-RESOLVED MEASUREMENT SEPARATES THEM, AND IT HAS NEVER BEEN MADE.**
+
+⭐⭐⭐ **FOUR — AND THE REASON IT HAS NEVER BEEN MADE IS MECHANICAL, NOT AN OVERSIGHT. THE STANDARD FIXATION
+PROTOCOL EXTRACTS GLYCOGEN.** `shepard1989` (PMID 2644406, verified): with osmium-potassium ferrocyanide as
+secondary fixative, **extensive glycogen preservation was noted, the volume and organisation of cytoplasmic
+glycogen were GREATER than after standard buffered osmium, and THE CELLULAR VACUOLES WERE GREATLY REDUCED.**
+⭐⭐ **SO THE "VACUOLES" IN DECADES OF STANDARD-FIXATION CHONDROCYTE ULTRASTRUCTURE ARE, AT LEAST PARTLY,
+WHERE THE GLYCOGEN WAS. The routine protocol destroys the analyte and leaves a hole where it stood.** That
+is the same class of finding as CORR-347 (a database field that cannot show tool compounds) and R438's
+DNA-content-as-normaliser: **an absence with a mechanical cause, which is far more tractable than an absence
+without one.** ⚠ One 1989 methods paper, and it is the secondary ossification centre rather than the primary
+plate — where the authors note those cells hold glycogen **WITHOUT** cellular enlargement, which is a datum
+against the osmolyte model and is recorded as such.
+⭐ **It also explains the apparent literature: `glycogen AND growth plate` returns 74 records and nearly all
+are GSK3 — "glycogen synthase kinase" matching on the word. The real zone-resolved literature is close to
+empty, and R440's "never quantified in any species" survives the check.**
+
+⛔ **WHAT THIS IS NOT.** No compound, and no agent on this axis in any species. The direction implied by GYG1
+is to **preserve or raise** glycogen availability, and the only pharmacology on glycogen is for storage
+diseases and runs the other way. **GAA is the Pompe gene** — a human loss-of-function state with lysosomal
+glycogen accumulation — and whether Pompe patients have a growth-plate phenotype has not been examined here;
+the one growth-referral paper found is `glycogen storage disease type IXb` appearing in a short-stature
+cohort, which is hepatic and systemic. **Grade E for the osmolyte join, exactly as R440 recorded it.**
+
+🧭 **WHAT R445 CHANGES.** The largest unexplained quantity in the largest term now has a candidate with three
+independent lines pointing at it — a 5–7× enriched destruction pathway in human tissue, a mouse knockout
+that accumulates the substrate, and a −0.695 cm human effect on the priming enzyme at P=2.9e-16 — **a single
+cheap experiment that discriminates the two competing readings, and a fixation protocol that explains why
+nobody has run it.** `g_l5_445a`.
