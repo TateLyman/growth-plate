@@ -11648,6 +11648,16 @@ limb-wide signal crossing a joint into an untouched bone is exactly what a nerve
   sulfate — which sidesteps R322's renal-dumping objection because chondroitin is not filtered as sulfate.**
   ⛔ **n=3, a patent, no peer review, and the wild-type arm is internally odd (height up, body length
   unchanged). Recorded as a LEAD TO VERIFY, not a result.** `g_l5_449e`.
+  ⛔⛔ **VERIFIED AND REFRAMED IN R451 — READ R451 BEFORE CITING ANY OF THE ABOVE. THREE CHANGES.** ① The
+  particulars are CONFIRMED and the route is **ORAL, IN FEED, 1→6 months of age**. ② **"THE WILD-TYPE ARM IS
+  INTERNALLY ODD" IS WITHDRAWN** — in a pig, height is a withers measure (limb) and body length is
+  nose-to-tail (trunk), so height up with body length flat **is exactly what a LIMB-DIRECTED effect looks
+  like**, and the patent's own bone list is femur, humerus, tibia, fibula, radius — **all limb**. Coherent,
+  and **aimed at the compartment that is NOT his residual.** ③ ⛔ **"IT SUPPLIES THE FINISHED SULFATED GAG,
+  WHICH SIDESTEPS R322'S RENAL-DUMPING OBJECTION" IS REFUTED IN HUMANS.** `jackson2010` (NIH GAIT): oral CS
+  alters **neither the concentration nor the disaccharide composition** of circulating CS, n=29 single-dose
+  and n=28 after **three months** daily. ⭐ **What survives is a BETTER mechanism, not the one R449 assumed —
+  see R451.**
 · ⚠ **THE CAPACITIVELY-COUPLED FIELD, AND ITS NULL.** `brighton1983`: rabbit, oxytetracycline-labelled
   growth rate, non-invasive 60 kHz field, a **dose-response peaking near 5 V peak-to-peak**. Then
   `armstrong1986`, six weeks at that setting: **NO significant difference in tibial LENGTH — and the authors
@@ -11820,3 +11830,113 @@ year, does not replicate, or is null.** What the round delivers is not a lever: 
 geometry measured directly, a within-bone cross-plate signal nobody has explained in seventy years, the 1953
 original of R442's occlusion result, one correction to an atlas node, and one free retrospective study in
 films that already exist.**
+
+## 💊💊💊💊💊 R451 — **THE MINIPIG PATENT PULLED AND READ. R449's TWO RESERVATIONS BOTH MOVE — ONE
+## DISSOLVES, ONE HARDENS INTO A HUMAN REFUTATION — AND WHAT SURVIVES IS A BETTER MECHANISM THAN THE ONE
+## R449 ASSUMED: ORAL CHONDROITIN SULFATE AS A *SLOW-RELEASE SULFATE DONOR*, WHICH IS THE ONE PROFILE THAT
+## DEFEATS R322's RENAL-DUMPING OBJECTION.**
+
+⭐ **ONE — THE PATENT, VERIFIED.** `cn119055678` (CN119055678A, Institute of Zoology CAS, priority
+2024-11-06). Guangxi Bama minipigs carrying **SLC13A1 W48R** and **WILD-TYPE controls**, chondroitin sulfate
+**ADDED TO THE FEED — the route is ORAL — from 1 to 6 months of age**, stated effective range 20–100 mg/kg,
+**70 mg/kg preferred**. At month 5: **HEIGHT +18.5% in mutants and +12.6% IN WILD TYPES, both p<0.01, n=3
+per group, with BODY WEIGHT NOT significantly increased in either.** Body length **+29.1%** in mutants,
+**no significant trend** in wild types. Example 2: significantly increased length of **femur, humerus,
+tibia, fibula and radius.** Claimed mechanism is **SULFATION** — more growth-plate chondrocytes, deeper
+Alcian blue and Safranin O, increased CS-56, elevated SOST. **No human data.** ⛔ **And it does NOT disclose
+the molecular weight, source or subtype of the CS used — which turns out to be the parameter that decides
+everything.**
+
+⭐⭐ **TWO — R449's "INTERNALLY ODD" READING IS WITHDRAWN, AND THE CORRECTION IS UNFAVOURABLE FOR HIM.**
+In a pig, **height is a withers/shoulder measure and is LIMB-dominated; body length is nose-to-tail-base and
+is TRUNK.** **Height up 12.6% with body length flat in a wild type is EXACTLY what a limb-directed effect
+looks like** — and the patent's own bone list is **entirely limb bones.** The mutant is a systemic
+sulfate-deficiency dysplasia *with* axial involvement, which is why its body length moves +29.1% and the
+wild type's does not. ⭐ **The arm is coherent. It is also aimed at the compartment that is NOT this
+subject's residual.** ⚠ The landmarks are not defined in the document, so the landmark inference is grade E;
+the limb-only bone list is independent support for it.
+
+⛔⛔ **THREE — AND THE HARD OBJECTION IS A HUMAN PK STUDY FROM THE NIH GAIT TRIAL, WHICH REFUTES R449's OWN
+STATED MECHANISM.** R449 wrote that the patent *"supplies the finished sulfated GAG rather than inorganic
+sulfate — which sidesteps R322's renal-dumping objection."* **`jackson2010`: circulating CS in human plasma
+is ~20 µg/mL, and THE ENDOGENOUS CONCENTRATION AND THE CS DISACCHARIDE COMPOSITION WERE NOT DETECTABLY
+ALTERED BY INGESTION OF CS**, alone or with glucosamine, in **n=29 normals single-dose and n=28 patients
+after THREE MONTHS of daily dosing.** The authors' own conclusion: any effect **probably does not result
+from ingested CS reaching the joint space.** → **A MOLECULE THAT DOES NOT ENTER THE CIRCULATION CANNOT
+DELIVER SULFATED GAG TO A GROWTH PLATE.**
+
+⭐ **FOUR — MOLECULAR WEIGHT IS WHY THAT IS NOT THE END OF IT.** `mizuta2023`, humans, four CS species —
+**tetrasaccharide 980 Da · CSOS-1 1,500 · CSOS-2 2,800 · high-MW 70,000** — quantified in plasma and urine:
+**24-hour urinary exogenous CS was HIGHER for the oligosaccharide groups than for the 70 kDa group**, and
+the authors conclude lower-MW CS is more efficiently absorbed through the human digestive tract.
+**jackson2010 tested the ordinary supplement; mizuta2023 tested depolymerised oligosaccharides. They are not
+in conflict — and the patent does not say which it used.**
+
+⭐⭐⭐⭐ **FIVE — THE REFRAMING, AND IT IS THE ROUND. jackson2010 SUPPLIES ITS OWN ALTERNATIVE AND NOBODY HAS
+FOLLOWED IT: the effect may arise in the gut lining or liver, where concentrations of ingested CS *OR ITS
+BREAKDOWN PRODUCTS* could be substantially elevated. CHONDROITIN SULFATE'S BREAKDOWN PRODUCT IS INORGANIC
+SULFATE.**
+· **The gut has a dedicated apparatus for producing it:** `ndeh2020` dissects a **versatile core genetic
+  locus in *Bacteroides thetaiotaomicron* orchestrating metabolism of multiple glycosaminoglycans**, and
+  `luis2023` establishes that **carbohydrate sulfatases stripping sulfate from host glycans are widespread
+  and substrate-specific among gut Bacteroidetes.**
+· **And the GAG is a demonstrated in-vivo sulfate source in a mammal:** `pecly2006` — after IV
+  **³⁵S-chondroitin sulfate in rats, ~25% of urinary ³⁵S appears as INORGANIC SULFATE.**
+· ⭐ **And the patent's OWN claimed mechanism is SULFATION, in an animal whose lesion is in a SULFATE
+  TRANSPORTER. THE PATENT MAY HAVE FOUND A SULFATE-DONOR EFFECT AND ATTRIBUTED IT TO THE GLYCOSAMINOGLYCAN.**
+
+⭐⭐⭐ **SIX — AND THAT READING DEFEATS THE EXACT OBJECTION THAT KILLED THE MAGNITUDE OF R322's SULFATE ARM.**
+R322 established that **renal sulfate reabsorption is CAPACITY LIMITED**, so an oral bolus of sodium sulfate
+raises the filtered load and **the kidney dumps it — a +25% excursion at 2 h, not a new set point.**
+**A POLYSACCHARIDE PROGRESSIVELY DESULFATED BY COLONIC BACTERIAL SULFATASES OVER MANY HOURS IS A
+SLOW-RELEASE SULFATE DONOR, WHICH IS PRECISELY THE PHARMACOKINETIC PROFILE A CAPACITY-LIMITED RENAL
+TRANSPORTER DOES NOT DEFEAT.** That is a mechanism-level reason why CS might do what sodium sulfate cannot,
+and **it is derivable entirely from material this file already held plus `jackson2010`.**
+⭐ **It also explains why a WILD TYPE responded** — a wild-type animal is not GAG-deficient, but its sulfate
+pool is still capacity-limited — **which removes CORR-203 from the wild-type arm specifically.**
+⭐ **And it converges with the rest of the sulfate work rather than being an orphan claim:** R320/R321
+(oral sodium sulfate) · R322 (sitting height **P=2.16e-07**, twice the standing effect at the same N) ·
+R409 (CHST3 is the plate's sulfotransferase, 3.32 enriched) · R410 (SLC26A2 falls into HZ while CHST3 rises
+— substrate-limited, not enzyme-limited) · R446 (ARSI, ~300× into the hypertrophic zone, actively stripping
+that charge) · R448 (**Donnan is SUPERLINEAR in fixed charge, dlnΠ/dlnFCD = 1.73** — sulfation is a
+LEVERAGED parameter).
+
+⛔ **SEVEN — THE ZERO THAT DECIDES IT, AND IT IS ONE BLOOD TEST ON AN OTC SUPPLEMENT. NOBODY HAS MEASURED
+SERUM INORGANIC SULFATE AFTER ORAL CHONDROITIN SULFATE, IN ANY SPECIES.** Narrow queries against chondroitin
+× inorganic sulfate × plasma/serum return **three records** — one is `pecly2006`'s IV rat study and two are
+from the 1950s. **It is the same assay R322 already named as the gate on the whole sulfate arm.** ⭐ **And
+the right design is a TIME COURSE against oral sodium sulfate as comparator, because the whole hypothesis is
+about the SHAPE of the curve and not its peak.** `g_l5_451a`.
+
+⚠ **EIGHT — INDEPENDENT SPECIES CORROBORATION, WITH TWO CAVEATS.** `li2025cs`: chondroitin sulfate
+**alleviates broiler tibial dyschondroplasia, raising body weight and tibial mass and restoring normal
+growth-plate morphology, via CHST11/β-catenin.** ⛔ **TD is a DISEASE model (CORR-203)**; and ⛔ **R409
+established that in HUMAN plate CHST3 is enriched at 3.32 while CHST11 is CONTAMINANT-LEANING at 0.11 — the
+named mechanism sits on the paralogue that is not the human plate's.**
+⛔ **And there is NO peer-reviewed publication of the minipig work at all** — PubMed returns nothing for the
+SLC13A1 minipig model or for CS against a bone-length endpoint.
+
+⚠ **NINE — THE OTHER PATENT THE OPERATOR SENT IS THE WRONG MOLECULE, AND ITS VALUE IS A SAFETY ENVELOPE.**
+`wo2013174863` (Altergon, **NON-SULPHATED** chondroitin, De Rosa & Schiraldi): **rat chronic toxicity 26
+weeks at up to 200 mg/kg/day with NO adverse effects · oral LD50 >2000 mg/kg · 90 dogs at 15 mg/kg/day
+orally for 6 months.** ⛔ **But it reports that NON-sulphated chondroitin maintains COL2A1 BETTER than
+chondroitin SULPHATE — so the two are not interchangeable and it is the wrong agent for a sulfation
+mechanism — and it carries NO bone, growth-plate or length endpoint anywhere.**
+
+⭐ **TEN — THE DOSE, DERIVED AND MARKED AS DERIVED.** Scaling **70 mg/kg** in a minipig by BSA allometry with
+animal Km 24–35 against human Km 37 gives **45–66 mg/kg/day ≈ 2.7–4.6 g/day at 60–70 kg.** ⭐ **The ordinary
+human CS supplement dose is 0.8–1.2 g/day, so ORDINARY SUPPLEMENT USE IS 3–5× BELOW THE TESTED RANGE** —
+which matters, because it means the millions of people who take chondroitin have not tested this.
+
+⭐ **ELEVEN — AND ONE NEW ORAL SULFATE-REPLETING AGENT THIS FILE HAS NEVER NAMED.** `bakker2026`, 14 children
+with proximal renal tubular defects: 5 had decreased plasma sulfate and 13 increased fractional excretion,
+and the authors state that **sulfate stores CAN BE REPLETED BY ORAL DRUGS LIKE CYSTEAMINE** — approved, with
+paediatric formulations. ⛔ Recorded, **not promoted**: its indication is cystinosis, it carries real GI
+toxicity and body odour, and **no cysteamine study has a bone-length endpoint in any species.**
+
+🧭 **WHAT R451 SETTLES.** The patent is real and its wild-type arm is coherent. Its *stated* mechanism is
+refuted in humans. What replaces it is **a slow-release sulfate donor**, which is a *better* fit to the
+patent's own histology, to its SLC13A1 model, and to five prior rounds of this file's sulfate work — and
+which is **decided by a single serum assay nobody has ever run.** ⛔ **And the compartment is wrong for him:
+the wild-type signature is LIMB and his residual is TRUNK**, so even a positive assay makes this a mechanism
+result before it is a lever.
