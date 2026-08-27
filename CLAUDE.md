@@ -12874,3 +12874,109 @@ no measurement of adhesion or integrin engagement on the LATERAL versus the AXIA
 reoriented cilia and measured cell height and width.
 ⚠ **BIBLIOGRAPHY DEFECT FIXED THIS ROUND: `farnum2002` carried the TITLE of `farnum2000`** (PMID, DOI and
 one_line_finding were correct; title field only).
+
+## 🔎🔎🔎🔎🔎 R464 — **"THE POSITIVE-LENGTH-ENDPOINT CLASS IS NEAR-EMPTY" IS FALSE. IT WAS A VOCABULARY LIMIT,
+## AND ONE SESSION OF ENDPOINT-FIRST QUERYING ROUGHLY DOUBLED IT — RETURNING +17% FEMUR *INCLUDING VERTEBRAE*
+## FROM A GENE AT ABSOLUTE ZERO HERE, AND THE INTRAOSSEOUS EPIPHYSEAL DEPOT ROUTE ALREADY VALIDATED WITH A
+## TRACER ARM IN A NORMAL ANIMAL.**
+
+⛔ **ZERO — R436's COUNT OF FOURTEEN IS NOT A CENSUS, AND THE PROOF IS IN THIS REPOSITORY.** It omits at least three
+members **already in this bibliography**: `kanai2017` (osteocrin × CNP double transgenics gain **"additional bone
+length"**), `kake2009` (*chronically elevated plasma CNP stimulates skeletal growth in transgenic mice*), and
+`shuhaibar2017`, **cited in this ledger itself for tail +8.5–9.7%.** ⭐ **R437 diagnosed why: every sweep here is shaped
+`query X AND bone length`, which can only find agents whose developers already wanted what we want. QUERY THE ENDPOINT
+PHRASE FIRST — in PubMed titles AND in Europe PMC FULL TEXT — and you find papers whose authors were studying something
+else.** ~40 queries → **11 new strict candidates and 36 unheld PMIDs**, from 2,053 refs and ~460 rounds, **with no decay
+in yield.** ADAM12 was a metalloprotease paper; HES1 a bone-mass paper; the xenoestrogens a toxicology paper.
+
+⭐⭐⭐⭐ **ONE — `kveiborg2006`: ADAM12-S. THE LARGEST POSITIVE LENGTH ENDPOINT IN A NORMAL-BACKGROUND ANIMAL IN THIS
+ATLAS, AND THE ONLY ONE THAT NAMES VERTEBRAE.** Verified verbatim: transgenic mice with the **SECRETED** form of human
+ADAM12 in the **CIRCULATION** show *"a pronounced increase in the length of bones, such as femur, tibia, and
+vertebrae"* — progressive and age-dependent, **MAXIMUM +17% FEMUR AT 6 MONTHS.**
+⭐⭐ **TWO INTERNAL CONTROLS THE PAPER SUPPLIES ITSELF:** it is **GENE-DOSE DEPENDENT** across two lines, and **a
+TRUNCATED form lacking the pro- and metalloprotease domains showed NO ALTERATION IN BONE LENGTH — so CATALYTIC PROTEASE
+ACTIVITY IS REQUIRED.** Growth plate **ORGANISATION UNALTERED** while plate width, BrdU and the **Col X hypertrophic
+zone width** all rose; in vitro ADAM12-S **inhibits chondrocyte adhesion to fibronectin and collagen II.**
+⭐ **WHY IT MATTERS BEYOND ITS SIZE: a SECRETED, CIRCULATING PROTEASE whose gain-of-function lengthens bone INCLUDING
+THE AXIAL COMPARTMENT** — R287's LAYER, R314's antibody-tractable class, and the compartment R425/R436/R455 say holds
+his residual centimetres. **And it is a direct instance of R448's argument that in animals matrix loosening is
+NECESSARILY PROTEOLYTIC, and of R454's unmeasured matrix-per-cell term.**
+⛔ **`ADAM12` RETURNED ZERO IN NODES, GAPS, CLAUDE.md AND THE BIBLIOGRAPHY.** ⛔ Against: the direction is to **RAISE** a
+protease (R342's empty shelf) · **no rows in the 207** · broad-substrate sheddase · **germline from conception, so
+CORR-299 is unrun** · per-bone means, SDs and n are **not in the abstract and the full text is not open access.**
+
+⭐⭐⭐⭐ **TWO — `abbaspour2008`: THE INTRAOSSEOUS EPIPHYSEAL DEPOT ROUTE HAS ALREADY BEEN DONE, IN A NORMAL ANIMAL,
+WITH A WITHIN-ANIMAL CONTROL — AND IT HAS A TRACER ARM.** Healthy 4-week-old rabbits, **IGF-I 150 µg/kg/day by osmotic
+pump through a cannula INTO THE PROXIMAL TIBIAL EPIPHYSEAL MARROW CAVITY, contralateral tibia saline through identical
+apparatus**: **2 mm of tibial overgrowth at 4 weeks** (agent-extracted 90.3±1.3 vs 88.2±1.4 mm, n=14, p<0.004 —
+`value_unverified`; the abstract's "2-mm overgrowth" is verified), **growth-plate thickness +15%**, proliferative and
+hypertrophic chondrocyte numbers both up.
+⭐⭐ **THE PART THIS ATLAS NEEDS MOST IS THE TRACER: repeating the infusion with INDIA INK showed most stayed in the
+epiphyseal marrow BUT A PORTION INFILTRATED THE GROWTH PLATE, REACHING THE DEEP LAYER OF PHYSEAL CHONDROCYTES AND THE
+PRIMARY SPONGIOSA.** **That is a DIRECT DISTRIBUTION MEASUREMENT for the exact route R373/R374/R385–R387 specified for
+the SAG depot and R441 proposed for a local rGH depot — a route this file has only ever argued from geometry.**
+⛔⛔ **AND ITS PAIRED NEGATIVE IS THE CONTROL THAT MAKES IT INTERPRETABLE: `yang1993pge2` — local intraosseous PGE2,
+1/10/100 pmol/day into NORMAL rat tibial metaphysis × 14 d, contralateral vehicle: metaphyseal trabeculae UP 45–81%
+dose-dependently and NO EFFECT ON TIBIAL LENGTH. THE ROUTE IS NOT AUTOMATICALLY PRODUCTIVE.** ⚠ And its title says
+*"Increased bone growth by local prostaglandin E2"* — **CORR-309's shape with the null in the same abstract.**
+⛔ Against the IGF-I arm: an implanted pump and cannula, not a depot; 4 weeks only; **plate height rose 15% while length
+rose ~2.4%, so most of the charge did not discharge.**
+
+⭐⭐⭐ **THREE — `suda1998`: A NATRIURETIC LIGAND ARM WITH A LENGTH ENDPOINT IN NORMAL-BACKGROUND MICE, AND THIS FILE HAS
+NEVER WORKED IT.** BNP transgenics: marked skeletal overgrowth, **FEMUR LENGTH INCREASED (P<0.01, n=12)**, and **BODY
+LENGTH RISING IN PROPORTION TO PLASMA BNP ACROSS THREE INDEPENDENT LINES — a transgene dose-response.** Growth-plate
+cartilage height up **in VERTEBRAE and long bones**; embryonic tibial organ culture shows BNP raises cartilaginous
+primordium height **DIRECTLY.**
+⭐⭐ **BNP SIGNALS THROUGH GC-A / NPR1, NOT NPR-B.** This atlas's entire natriuretic effort is CNP→NPR2 plus NPR3
+clearance; **`brain natriuretic` returns 0 in nodes, gaps and ledger** and every existing BNP mention here is a cardiac
+biomarker. ⭐ **And R421's corrected compartment coordinate puts NPR1 at 54.0% TRUNK — near the median, NOT limb-leaning
+like NPPC (30.9%) and NPR2 (29.8%).** The atlas already holds **allosteric GC-A enhancers** (compound 20: BNP potency
+×2.8, max cGMP +30%) filed under a receptor nobody had a bone reason to want.
+⛔ Against: **severe kyphosis and crooked tails** — a deformity phenotype, not clean elongation · germline · **NPPB has
+no rows in the 207** · and **Step 0 is genuinely contested**, because raising GC-A output may reach the same cGMP pool
+R311's `kawabe2025` showed the CNP arm already saturates. Length in mm is **figure-only.**
+
+⛔ **FOUR — TWO COLLATERAL CORRECTIONS, ONE OF THEM AGAINST R463, WRITTEN THIS SAME SESSION.**
+· ⭐ **THE NSAID WATCH-ITEM LOSES ITS ONLY DIRECT EXPERIMENTAL SUPPORT: `park2016retracted` — the paper reporting NSAID
+  inhibition of the growth plate — IS RETRACTED** (J Pediatr Orthop 2016;36(2):218). And **`li1989flurbiprofen` runs the
+  OTHER way in a NORMAL animal: proximal tibial LONGITUDINAL GROWTH RATE, plate thickness and periosteal formation rate
+  ALL UP 30–40% at 0.1 and 0.5 mg/kg/day, with an INVERTED-U across five doses** (2.5 less effective) and osteoclasts
+  −62 to −70%. ⛔ **PROXY ONLY — rate and plate thickness, no attained length, and R463 shows plate thickness is a blind
+  readout — so it is NOT a lever.** What it does is make **R297/R306's NSAID concern grade E in BOTH directions.**
+· ⛔ **`garces1988` COMPLICATES R463's DENERVATION ANSWER.** 50 NORMAL rats, right sciatic nerve cut at 1 month,
+  contralateral control, **calipers to 0.05 mm**, to 12 weeks: **metatarsals 3–5% SHORTER** from week 1 with no further
+  increase, **femora <1% LONGER at weeks 2 and 8 only**, and **NO DIFFERENCE IN TIBIAL LENGTH** — against `killion2017`'s
+  significantly SHORTER tibiae in mice denervated at P8. **Different species, different age at transection.
+  `g_l7_449d` IS ANSWERED AMBIGUOUSLY, NOT CLEANLY, AND R463's line should be read with this beside it.**
+
+⛔ **FIVE — WHERE THE CLASS GENUINELY *IS* EMPTY, CHECKED RATHER THAN ASSUMED — AND IT IS THE COMPARTMENT THAT MATTERS.**
+`"increased vertebral length"` = **0** in PubMed · `("vertebral length" OR "vertebral body height") AND increased AND
+(mice OR rats)` = **4** · `"increased vertebral height"` = **31** Europe PMC hits, **ALL spine surgery, vertebroplasty
+or OI — not one a growth intervention.** ⭐ **ADAM12-S, Pten and BNP are the ONLY interventions found with any axial
+length claim, and NONE REPORTS A VERTEBRAL NUMBER. R425/R436/R455 stand.**
+✓ And **openFDA independently reproduces R449 §SIX: `"femur length"` appears in 1,521 labels while `"increased femur
+length"`, `"increased bone length"`, `"increased tibia/tibial length"`, `"longer femurs"` and `"increased linear
+growth"` return ZERO each.**
+
+⭐ **SIX — TWO MORE MEMBERS, AND ONE COUNTERWEIGHT TO A ROUND OF OUR OWN.** `fordhutchinson2007`: Col2a1-Cre Pten cKO →
+**increased skeletal size, PARTICULARLY OF VERTEBRAE** — ⛔ with **growth-plate disorganisation and FUSION BY 6 MONTHS**
+in the same paper. `eswarakumar2007`: **Fgfr3c isoform-selective null gives dramatic overgrowth while Fgfr3b null is
+NORMAL** — genetic validation of the isoform-selectivity argument behind dabogratinib, with BMD down as the visible
+cost. ⚠ `pelch2012`: **low-dose EE₂, DES or BPA from GD11→PND12 INCREASED ADULT FEMUR LENGTH in normal mice and the
+HIGHEST EE₂ dose did NOT — non-monotonic**, tensile strength down. A developmental oestrogenic exposure **lengthening**
+the adult femur is the opposite sign to the mature-plate literature.
+⛔ **AND THE COUNTERWEIGHT: `munoz2025cs` — 1,152 NORMAL Cobb broilers to 47 d on chondroitin sulfate: body weight, BMC,
+BMD, ash, absolute bone weight and diaphyseal perimeter ALL UNAFFECTED (P>0.10).** The largest normal-animal chondroitin
+dataset available and it is mostly null, against R449/R451's minipig patent claim of **+12.6% wild-type height.**
+Different species, endpoint and dose — **a counterweight, not a refutation, and it is recorded because it runs against
+a round of our own.**
+
+⛔ **SEVEN — THREE BLOCKS REMAIN UNMINED, AND ONE IS UNRUN FOR WANT OF SEARCH BUDGET.** ① **The pre-1990
+non-abstracted literature** — the blocked set is disproportionately old and disproportionately interesting: **PMID
+13992165, *Acceleration of longitudinal bone growth by intra-osseous injection of PAPAIN PROTEASE*, Proc Soc Exp Biol
+Med 1963, NO PubMed abstract** — and it lands exactly on R448's "animals loosen matrix only by proteolysis" and on
+ADAM12-S · **PMID 12174823, lovastatin raises longitudinal bone growth in normal SD rats, no abstract** · **PMID
+14040339, Wray & Goodman 1961, the original of R440/R442's cross-bone anomaly, no abstract.** ② **The agricultural
+above-requirement supplementation literature** — ~600 hits across four queries, **sampled not read**, and dominated by
+deficiency correction which CORR-203 excludes. ③ ⛔ **The Drugs@FDA nonclinical REVIEW PDFs — STRATEGY UNRUN, no
+full-text API, search budget exhausted.**
