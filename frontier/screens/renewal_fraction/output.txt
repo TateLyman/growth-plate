@@ -1,0 +1,109 @@
+
+THE RENEWAL FRACTION REQUIRED FOR INDETERMINATE GROWTH.
+
+Model. Resting-zone progenitors renew by POPULATION asymmetry (chu2025/newton2019: clone
+number falls while clone size rises). Let p = probability that a daughter of a stem-cell
+division remains a stem cell. Each division cycle multiplies the pool by 2p.
+
+  2p > 1  -> pool grows          -> growth never ceases
+  2p = 1  -> pool constant       -> INDETERMINATE GROWTH.  p = 0.500 exactly.
+  2p < 1  -> pool decays geometrically -> a finite growth period
+
+So the entire question "why does a human stop growing" reduces to: how far below 0.500 does
+the human resting zone sit?
+
+We do not know p. But we know how long the pool lasts (the human growth period) and roughly
+how often it divides. p is then determined, and — the point of this script — p depends only
+LOGARITHMICALLY on both, so the answer is robust to large errors in either.
+
+============================================================================================
+SENSITIVITY SWEEP — human post-SOC growth period, resting-zone cycle time, exhaustion criterion
+============================================================================================
+growth yrs  RZ cycle d  end frac  n divisions  p (renewal)  gap to 0.500
+        14          20      0.01          256       0.4911        0.0089
+        14          20     0.001          256       0.4867        0.0133
+        14          30      0.01          170       0.4867        0.0133
+        14          30     0.001          170       0.4801        0.0199
+        14          60      0.01           85       0.4737        0.0263
+        14          60     0.001           85       0.4611        0.0389
+        14          90      0.01           57       0.4611        0.0389
+        14          90     0.001           57       0.4428        0.0572
+        14         120      0.01           43       0.4488        0.0512
+        14         120     0.001           43       0.4252        0.0748
+        14         180      0.01           28       0.4252        0.0748
+        14         180     0.001           28       0.3921        0.1079
+        16          20      0.01          292       0.4922        0.0078
+        16          20     0.001          292       0.4883        0.0117
+        16          30      0.01          195       0.4883        0.0117
+        16          30     0.001          195       0.4826        0.0174
+        16          60      0.01           97       0.4769        0.0231
+        16          60     0.001           97       0.4658        0.0342
+        16          90      0.01           65       0.4658        0.0342
+        16          90     0.001           65       0.4495        0.0505
+        16         120      0.01           49       0.4549        0.0451
+        16         120     0.001           49       0.4339        0.0661
+        16         180      0.01           32       0.4339        0.0661
+        16         180     0.001           32       0.4042        0.0958
+        18          20      0.01          329       0.4930        0.0070
+        18          20     0.001          329       0.4896        0.0104
+        18          30      0.01          219       0.4896        0.0104
+        18          30     0.001          219       0.4845        0.0155
+        18          60      0.01          110       0.4794        0.0206
+        18          60     0.001          110       0.4695        0.0305
+        18          90      0.01           73       0.4695        0.0305
+        18          90     0.001           73       0.4549        0.0451
+        18         120      0.01           55       0.4597        0.0403
+        18         120     0.001           55       0.4408        0.0592
+        18         180      0.01           37       0.4408        0.0592
+        18         180     0.001           37       0.4138        0.0862
+--------------------------------------------------------------------------------------------
+ACROSS ALL 36 PARAMETER COMBINATIONS: p ranges 0.3921 to 0.4930
+  mean 0.4610 | every value is BELOW 0.5 and the largest shortfall is 0.1079
+  i.e. the human resting zone misses indeterminate growth by 0.70-10.79 PERCENTAGE POINTS of self-renewal probability (1.4-21.6% in relative terms).
+
+============================================================================================
+WHAT A SMALL CHANGE IN p BUYS — growth period as a function of p (16 y baseline, 60 d cycle)
+============================================================================================
+baseline p = 0.4769  (97 divisions, 16.0 y)
+
+       p       2p   divisions to 1%   growth period (y)  x baseline
+  0.4769   0.9538                97                16.0        1.00
+  0.4789   0.9578               107                17.6        1.10
+  0.4819   0.9638               125                20.5        1.28
+  0.4869   0.9738               174                28.5        1.78
+  0.4885   0.9770               198                32.5        2.03
+  0.4919   0.9838               282                46.4        2.90
+  0.4969   0.9938               743               122.0        7.63
+  0.5001   1.0002          INFINITE       INDETERMINATE           -
+  0.5019   1.0038          INFINITE       INDETERMINATE           -
+
+============================================================================================
+THE SAME THING AS A HEIGHT ESTIMATE (crude, terminal-velocity integration)
+============================================================================================
+carani1997 is the only man followed far enough to give a decay shape: 1.31 cm/yr from 18-31,
+then 0.43 cm/yr from 31-38 with plates never closed. Take the extra years at that envelope.
+  p +0.005: growth period 20.5 y (+4.5 y) -> roughly +6 cm on the terminal envelope
+  p +0.010: growth period 28.5 y (+12.5 y) -> roughly +16 cm on the terminal envelope
+  p +0.0232 (to threshold): INDETERMINATE — no endpoint
+
+============================================================================================
+THE CORRECT DURATION — the POOL-limited period, not the hormone-limited one
+============================================================================================
+A normal plate is switched OFF by oestrogen with capacity to spare (CEILING_CENSUS).
+The duration that measures the POOL is the oestrogen-null one: herrmann2002 grew until 24 y
+untreated with epiphyses still open at 27; carani1997 was still growing at 38. The SOC forms
+~1-5 y, so the post-SOC pool-limited period is ~20-35 y, not 16.
+
+ post-SOC yrs  cycle d         p  gap to 0.500
+           20       30    0.4906        0.0094
+           20       60    0.4814        0.0186
+           24       30    0.4922        0.0078
+           24       60    0.4845        0.0155
+           30       30    0.4937        0.0063
+           30       60    0.4875        0.0125
+           35       30    0.4946        0.0054
+           35       60    0.4893        0.0107
+
+  -> using the pool-limited duration the gap NARROWS to 0.54-1.86 percentage points.
+     The better the estimate of how long a plate lasts when nothing switches it off,
+     the CLOSER the human resting zone sits to the indeterminate-growth threshold.
