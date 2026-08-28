@@ -1329,3 +1329,62 @@ oxygen is *not* the limiting solute, *"Diffusion in the various zones of the nor
 growth plate"* is the only existing measurement of what else crosses the plate. **Second: Brighton, Ray,
 Soble & Kuettner, *JBJS* 51A:1383, 1969** — the oxygen dose-response, which would be the dose curve for
 the `a − b` knob.
+
+---
+
+## The twenty-sixth summary — F-R035, the two papers hunted, and the size gate
+
+**Brighton 1969 — results recovered, PDF not.** *"In vitro epiphyseal-plate growth in various oxygen
+tensions"* (JBJS 51A:1383–96, PMID 4186275): **cartilage growth maximal at 21% O₂ (160 mmHg)**;
+**maximum metaphyseal bone formation at 5% O₂ (38 mmHg)**; above 21%, *"progressive loss of acid
+mucopolysaccharide stainability, eventual loss of the zone of hypertrophic cells."* Retrieval note:
+Unpaywall flags this DOI **green OA** via a figshare thesis deposit — **false positive**, the record has
+`files: []`, license *"In Copyright"*, a ProQuest stub. **The UIC INDIGO handle 10027/14248 on this
+branch's standing list resolves to the same record**, so the "Brighton thesis" ask and this paper are one
+item with no file behind it.
+
+**Stambaugh & Brighton 1980 — partially recovered, verified genuinely closed.** Via Serrat 2014, which
+cites it in text: *"**diffusion coefficients for radioactively labeled insulin in the reserve growth
+plate zone were over twofold greater at 22°C than at 4°C**."* So: radiolabelled insulin (~5.8 kDa),
+zone-specific coefficients, normal vs rachitic. The zone table is **not** obtained — PubMed no abstract,
+Unpaywall `is_oa:false`/no repository copy, no PMC, no Internet Archive scan, OpenAlex closed, LWW
+Cloudflare 403, **Ovid HTTP 402 Payment Required**, 11 citing works of which 1 is in EPMC full text.
+**It needs a library scan or ILL of pages 740–749.**
+
+**The 1969 dose-response corrects F-R034 §7.** Not "hypoxia is good" — a **monotone knob with a
+ceiling**: raising pO₂ shifts cells reserve→hypertrophy (`a − b` falls, elongation rises), lowering it
+holds them in reserve, cartilage optimum ~21%, toxic above. `leijten2012` agrees. And Brighton's own
+electrode data put the living proliferative zone at **6.0–7.1%** — **far below the in vitro optimum, on
+the reserve-preserving side.** That is F-R016's velocity/duration trade with a measured dose axis.
+
+**The 40-year contradiction is resolved, and it is perfusion.** An A-V fistula is a flow intervention:
+Serrat measures **blood velocity +118%, vessel diameter +31%**, tracer entry **>150%**. Its low pO₂ is
+the signature of shunting, not the mechanism. And an atlas node I had not read —
+`the_plate_is_advection_fed_not_diffusion_limited` — reaches my Brighton conclusion independently and
+quantitatively: measured diffusivity 20–60 µm²/s, **interstitial flow +2.5/−2 µm/s converging from both
+junctions**, **Péclet 6–25**, **Damköhler 0.015–0.185** — *"a tissue that consumes a few per cent of what
+crosses it is not consumption-limited."* Two routes, one conclusion. **Oxygen is a signal; advection is
+the supply.** (It also corrects my one-sided-slab geometry a second time — the plate is fed
+convergently from both ends.)
+
+**And hunting the 1980 paper produced the thing that matters more than either — the size gate:**
+
+> *"Williams et al. … showed that **molecules >10 kDa were essentially size excluded from the growth
+> plate**."*
+
+Small molecules (<500 Da) enter freely; CNP/vosoritide ~4 kDa enters; **IGF-1 at 7.6 kDa enters**;
+**GH at 22 kDa is essentially excluded**; antibodies at 150 kDa are out. **This predicts `chu2026`'s
+P = 0.1827**: GH triples GP3 cycling in a 1–2 mm bathed explant, where there is no barrier — the direct
+GH-on-plate mechanism may be largely an artefact of bypassing the transport block. **The first
+constraint in this programme that filters agents rather than mechanisms.**
+
+**Credit where the atlas had it:** the Serrat temperature work is already held, graded, in
+`local_limb_warming_is_a_free_delivery_and_growth_lever` — unilateral 40°C giving femur +1.3%, tibia
++1.5%, elongation rate +12%, persisting ~1% at seven weeks — **together with the two things that stop it
+being an answer**: `serrat2013`'s finding that temperature-responsiveness exists only in a window of
+rapid growth (rates identical at 7/21/27°C in the second phase), and **Ring & Lee 1958 — 40°C at the
+knee in four children, no influence on longitudinal growth.**
+
+**Still needed: a library scan of Stambaugh & Brighton 1980** (zone-by-zone diffusion coefficients, plus
+the rachitic comparison — now load-bearing because the size gate needs calibrating), and **Williams et
+al.**, the primary behind the 10 kDa cut-off.
