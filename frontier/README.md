@@ -1789,3 +1789,61 @@ one structural improvement proposed here, and it now has a human benchmark to be
 **New flaw 13:** durability is almost never measured. Every positive in this programme is ≤12 weeks, ≤6
 months, or a single late timepoint — and **the only study that followed to 18 months is the one where the
 advantage vanished.**
+
+---
+
+## The thirty-fourth summary — F-R043: the identity integrates, and the stack falls out of the closed form
+
+**The equation was never solved. Solving it reorganises the whole problem.** With `influx = 0` — now
+settled, because the Axin2⁺ groove-of-Ranvier population does *"appositional (**transverse**) growth"* and
+F-R033's parallel-column geometry gives width no length term — `dn/dt = λn(a−b)` integrates, and the
+finite case has an asymptote:
+
+> # L∞ = A · h_term · n₀ / (b − a)
+
+**`λ` does not appear.** It sets the rate and not the total. **`A` and `h_term` are free multipliers** —
+they scale the total linearly and appear nowhere in `dn/dt`. **`(b − a)` is the only term in the
+denominator**, so it alone decides whether the total is finite.
+
+**Which retires the assumption this branch carried since F-R024: fast and unlimited are not antagonistic.**
+They looked antagonistic because every lever the field has tested — GH, oestrogen, Hedgehog, ERβ — moves
+`λ`, and `λ` is the one term that trades. `A` and `h_term` raise rate *and* total at once. And "unlimited"
+and "never close" turn out to be the same instruction: **drive `(b − a)` to zero.** There were never three
+problems.
+
+**The agent the theory said could not exist, exists.** FLAW 8 said a cartilage-restricted ERα block needed
+targeted delivery that nobody had built. But closure has a **local effector downstream of the receptor**:
+*"estrogen induces **CXXC5** expression and subsequently inhibits the Wnt/β-catenin pathway, resulting in
+growth plate senescence"* (Life Science Alliance 2019;2:e201800254). `Cxxc5⁻/⁻` mice: senescence delayed,
+tibiae longer at 12 weeks. **KY19382** — dual CXXC5–DVL / GSK3β inhibitor, IC₅₀ 19/10 nM, orally active —
+at **0.1 mg/kg/day in wild-type mice** for ten weeks lengthened tibiae (P < 0.0005) and raised cells per
+column in **all three zones**, with no cartilage or liver pathology. **Blocking the effector instead of the
+receptor leaves the systemic GH/IGF-1 spurt untouched by construction: cartilage restriction stops being
+necessary rather than staying unsolved.**
+
+**FLAW 1 — limb-only — is repaired, by arms I was not looking at.** **CATSHL** (partial FGFR3 loss of
+function, p.R621H) gives **mean adult male height 195.6 cm, 5/5 men >97th centile, and tall vertebral
+bodies**; **CNP-transgenic mice are +19% with overgrowth of "long bones of limbs, vertebrae and skulls."**
+The oestrogen arms never reached the spine. The arms the stack actually rests on do.
+
+**And both have wild-type gain arms — the thing F-R038/R040 said no candidate had.** TYRA-300 in normal
+C57BL/6: **femur +8.2%, tibia +6.4%, nasoanal +7.3%** in four weeks. CNP22 on wild-type tibiae: +31–42%.
+
+**The stack:** navepegritide (`h_term`, licensed Feb 2026, **bone age not advanced at 104 weeks**) +
+infigratinib or dabogratinib (`A`; note the paediatric dose is titrated against a *hyperactive* receptor
+and sits **25–100× below** what moved a wild-type plate) + KY19382 (`b − a`, no human exposure).
+Human-validated fallback for the third arm: GnRHa/anastrozole/oxandrolone **plus** GH — 5–10 cm, +2.7 cm,
+RCT-confirmed, and **delay alone is null at adult height**, exactly as `L∞` predicts.
+
+**Eliminated:** the whole SERM class (**tamoxifen causes chondrocyte apoptosis and permanent growth
+arrest; raloxifene is an ERβ *agonist* and *induces* fusion**); mTORC1 activation (**pool expands, bones
+do not** — a pure identity trade with the length side empty); Ranvier influx (transverse only).
+
+**New flaw 14, and it is the one that decides the stack:** KY19382 works by **raising** Wnt, but
+*Apc*-haploinsufficiency raises Wnt in PTHrP⁺ cells and **cuts them 35–40%**, and the first human
+growth-plate atlas puts the root stem cells in a niche *"low in WNT and TGF-β."* Two of three say Wnt-high
+is where stem cells go to die. **New flaw 15:** the FGFR3 dose gap above.
+
+**The honest position:** the equation now says what to build and in what order; two of three arms are
+licensed or phase-3-positive with human tall-stature genetics behind them; and the arm that decides whether
+the answer is "a lot" or "unlimited" rests on one 2019 mouse paper and one unresolved contradiction.
