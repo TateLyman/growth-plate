@@ -1388,3 +1388,68 @@ knee in four children, no influence on longitudinal growth.**
 **Still needed: a library scan of Stambaugh & Brighton 1980** (zone-by-zone diffusion coefficients, plus
 the rachitic comparison — now load-bearing because the size gate needs calibrating), and **Williams et
 al.**, the primary behind the 10 kDa cut-off.
+
+---
+
+## The twenty-seventh summary — F-R036, the transport map completed and the gate is mineral
+
+Tate obtained all three: **Stambaugh & Brighton 1980**, **Williams/Zipfel/Tinsley/Farnum** (*Biophys J*
+93:1039–1050 — which turns out to be **the source of the atlas's whole Péclet/Damköhler analysis**), and
+**Brighton & Schaffzin 1970**.
+
+**Two corrections I owe.** It is **inulin**, not insulin — Serrat's text carries the error and I
+propagated it (the 2.76× temperature claim checks out: 2.02 → 5.57). And *"molecules >10 kDa are
+essentially size excluded"* is Serrat's paraphrase, too strong: the primary says **3 kDa enters at 62%
+and 10 kDa at 15%** of a small tracer's level, that **10 kDa still saturates the plate in 5 minutes**,
+and that since FL and 10k-FL diffusivities differ only ~2× ex vivo, *"the transport block **may be a
+charge effect**."*
+
+**Stambaugh & Brighton — the barrier is mineral, and it is reversible.** Rabbit, ³H-inulin
+(×10⁻⁶ cm²/s): hyaline 1.89, **reserve 2.02**, columns 1.51, **hypertrophic 0.62** — the hypertrophic
+value is **31% of the reserve zone**. At 22°C: **reserve 5.57 (highest in the table, Q₁₀ 1.97)** vs
+**hypertrophic 1.11**, and warming raised D in **every zone except the hypertrophic one**. Meanwhile
+**% matrix FALLS** 88.9 → 55.0 toward the barrier while **ash rises 3.1 → 24.4% of dry matter (8×)**, and
+**ash was the single best correlate** of diffusion across every parameter measured. The causal test:
+rachitic rat hypertrophic D **0.71 → 4.65 (6.5× open)** as ash falls 23.4 → 11.1%, and healing closes it
+again to 1.27. **Demineralise the front and it opens; re-mineralise and it shuts.**
+
+**Williams — the map.** Three sources (epiphyseal, metaphyseal, subperichondrial plexus). COJ-entering
+molecules distribute throughout in 90 s; perichondrium-entering molecules stay put. **The proliferative
+and early hypertrophic zones are "at least two-to-fivefold as permissive" as either junction** — the
+midplane is the open door, both junctions are the barriers. And the midplane is *"the transition at which
+chondrocytes commit to hypertrophy"*, where perichondrial BMP2/FGF18/PTHrP concentrate.
+
+> **The place where the commitment decision is made is the most transport-accessible place in the plate.**
+
+**And a mechanism for commitment nobody has framed as a lever:** swelling hypertrophic chondrocytes
+*"can no longer communicate as freely with the perichondrium… **this self-constructed environment may
+then partially define their development toward hypertrophy**."* **Commitment is partly a transport
+event** — a positive feedback loop mediated by geometry, not signalling. Maintaining midplane access
+should oppose it. Also recovered: **EXT1 loss → less heparan sulfate → longer Ihh range → extended
+proliferative zone**, i.e. a tunable range-setter on the exact term Longshanks selection moved.
+
+**My one-sided slab dies a third and final time** — *"no indication of a proposed unidirectional
+entrance… generally symmetric from both the E and M vasculatures"* — and the centrifugal flow field is
+*"characteristic of a **resting limb only**"*, so **the advective field is load-dependent**.
+
+**Brighton & Schaffzin — the oxygen ceiling has a blockable mechanism.** At 90% O₂: **no reduction in
+cartilage length**, but proteoglycan stainability lost, **hypertrophic zone lost**, bone component
+markedly shortened — and **EACA (protease inhibitor) and chloroquine (lysosome stabiliser) partially
+reversed it**. Oxygen toxicity is lysosomal and proteolytic, it attacks hypertrophy and ossification
+rather than cartilage production, and it is druggable.
+
+**Delivery is now a design constraint that favours us:** the reserve pool (where `a` is set) is the most
+permeable zone measured and the most temperature-responsive; the midplane (where `b` is set) is the most
+permissive band. And it filters agents before any are named — **every small-molecule lever in this
+programme reaches its target and every protein lever does not**: pO₂/HIF, Hedgehog and ER blockade get
+in; **GH at 22 kDa is largely excluded in vivo** (which quantitatively supports F-R035's prediction of
+`chu2026`'s P = 0.1827); GREM1/FRZB/DKK1/SFRP5 at 20–40 kDa **cannot be delivered as protein and must be
+induced in situ** — which is exactly why hypoxia/HIF or Hedgehog is the right *shape* of intervention.
+
+**Chased myself rather than asked:** **Serrat 2017** obtained on retry — **IGF-I (7.6 kDa) is readily
+taken up, peaks in the plate within ~90 min, is bioactive (>4× p-Akt), and localises to chondrocytes** —
+with the perichondrium showing **IGFBP entrapment**, *"IGFBPs up to **50-fold higher** in perichondrium
+than growth plate."* So for the one protein lever inside the gate, the rate-limiting step may be
+**binding-protein displacement at the perichondrium**, not the matrix. And: **no human growth-plate
+transport measurement exists** — every value here is rabbit, rat, mouse or pig. That absence is the
+finding, and it is what unknowns #4 and #13 turn on.
