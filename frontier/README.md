@@ -1576,3 +1576,63 @@ and CD73 at power 0.16; the human hypoxia negative holds and now has a mechanism
 does raising glycolytic flux/acetyl-CoA in a normal plate lengthen bone — untested, and now the highest
 -value experiment in the programme. Nothing is retrieval-blocked; `Kobayashi`'s GEO series **GSE192971**
 and **GSE98309** are public and I can pull them myself.
+
+---
+
+## The thirtieth summary — F-R039, the antagonism dissolves: the closure arm is local
+
+Since F-R028 this branch has carried an unresolved tension it logged as U12 and never answered: every
+human with ER or aromatase loss grows **slowly** (0.3–1.3 cm/yr), and the pubertal spurt is
+oestrogen-driven — so "never close" and "fast" looked antagonistic *through oestrogen itself*. If true,
+that is fatal to the goal.
+
+**It is not true. The two arms run through different tissues, and the separation is demonstrated
+genetically.** The **Col2α1-ERα⁻/⁻** mouse — ERα deleted **only in cartilage** — against whole-body ERα⁻/⁻:
+
+| | whole-body ERα⁻/⁻ | **cartilage-only** |
+|---|---|---|
+| growth during sexual maturation | **reduced**, shorter bones | **normal** |
+| serum IGF-I / GH secretion | **significantly reduced**, disturbed | intact |
+| old age | continued; **tibia +8.3%, plate height +18%** at 16–19 mo | **continued** |
+| **supraphysiological E2 challenge** | plate height reduced | **NO reduction, either sex** |
+| E2 on bone mass, uterus, thymus | — | **normal in both** |
+
+> *"**indirect, probably GH/IGF-I-mediated effects NOT requiring ERα in growth plate cartilage** are
+> responsible for the role of ERα to modulate skeletal growth during early sexual maturation"* — and
+> *"this effect was **not seen in either female or male Col2α1-ERα⁻/⁻ mice**, demonstrating an
+> **essential role of cartilage-located ERα**"* for E2-induced plate reduction.
+
+**Deleting ERα in cartilage alone gives a normal pubertal spurt, normal systemic oestrogen action,
+complete resistance to E2 closing the plate, and continued growth into old age.** And it explains the
+human cases: aromatase deficiency and whole-body ESR1 loss remove oestrogen action *everywhere*,
+including the GH/IGF-I amplification that drives the spurt. **Their slow growth is a property of a broken
+systemic axis, not of an open plate** — the two have been confounded in every round of this branch until
+now.
+
+The mechanism lands on the right compartment: in WT the E2 reduction was *"due to a reduction of the
+**proliferative zone**, while the hypertrophic zone was unchanged"* — that is `A`, the same term
+Longshanks moved. And the mirror confirms the direction: **ERαAF-1⁰ mice carry a hyperactive ERα**, growth
+ceased, tibia **−4.9%**, and *"the proximal tibial growth plates were **closed in all** old ERαAF-1⁰ mice
+while they were **open in all** WT mice"* — with closure running through a pathway that *"does not
+require ERα AF-1."*
+
+**What it changes:** never-close no longer costs velocity. **"Fast" stops being a fight against closure
+and becomes "hold the pubertal state."** Sustained normal pubertal velocity — ~8–10 cm/yr — held
+indefinitely requires exceeding no human rate ever observed; it requires holding one. **What it does not
+show:** mouse plates don't normally fuse; "normal growth" is normal, not enhanced; and **no human has a
+cartilage-restricted ER defect** — every human datapoint is the *slow* configuration.
+
+**The acetyl-CoA lever takes a hard hit.** The one accessible way to raise histone acetylation in humans
+points the wrong way: **valproic acid, an HDAC inhibitor at therapeutic concentrations, is associated with
+short stature in children**, *"markedly suppressed"* metatarsal longitudinal growth, and represses
+Sox5/Sox6/Sox9/Col2 — with a COX-2 → caspase-3 → apoptosis mechanism. Mechanistically expected too, since
+**HDAC4 represses hypertrophy**, so global HDACi de-represses it. And I checked the gain arm at source:
+**GSE192971**, verbatim — *"To test the consequence of **reduced** glycolysis and **reduced** cytoplasmic
+acetyl-CoA."* Both GEO series are loss-of-function by design. **Downgraded** from best-supported candidate
+to "coherent chain, human negative on its only accessible proxy." The chain still explains the *failure
+mode*; running it backwards as therapy does not follow.
+
+**Needed:** **Börjesson AE et al., JBMR 2010, PMID 20564247** — *"The role of estrogen receptor α in
+growth plate cartilage for longitudinal bone growth."* **Not open access, no PMC record** (checked). It is
+the primary behind every Col2α1-ERα⁻/⁻ result above and this round rests on the same group's review
+account of it.
