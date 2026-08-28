@@ -1734,3 +1734,58 @@ under it.** Flaw 7 (GH × cartilage ERα) unchanged and still the crux.
 **Needed: Chagin AS et al., JBMR 2004, PMID 14753739, DOI 10.1359/jbmr.0301203** — not OA, no PMC. It is
 load-bearing twice: the magnitude of the axial+appendicular gain in ERβ⁻/⁻ mice (the velocity number for
 the whole ERβ arm) and the 18-month fusion histology. Lower priority: **Lindberg 2001** and **Vidal 1999**.
+
+---
+
+## The thirty-third summary — F-R042, the ERβ gain is transient, and the human RCTs confirm the stack shape
+
+**Chagin 2004 read in the primary. The abstract sells an increase; the results price it.** The
+amplification effect is real and large — proximal tibia at 4 months, **proliferative chondrocytes per
+column 6.1 ± 0.1 (ERβ⁻/⁻) vs 3.9 ± 0.3 (WT), +56%, p<0.001**, with hypertrophic cells *down* 2.5→1.5.
+That is `A` moving further than 20 generations of Longshanks selection achieved. **And then it does not
+translate:** femur length increased at 2 and 4 months but **not at 18**; crown-rump increased at 4 months
+but **not at 18**. Calcein labelling at 4 months: **ERβ⁻/⁻ growth velocity was already equal to WT** —
+*"the increased appendicular skeletal growth… **must have occurred before 4 months of age**."*
+
+> **ERβ deletion front-loads growth and the advantage is gone by 18 months.** For it to disappear, WT
+> must out-grow the knockout after 4 months — the ERβ⁻/⁻ plate stopped while WT kept going.
+
+**That is the conjugacy identity, confirmed a fourth time.** GH, oestrogen, Hedgehog and now ERβ have each
+produced early gain followed by convergence. **The identity is no longer a model; it is the observed
+behaviour of every lever tested.** Lindberg 2001 supplies the mechanism — *"the effects on longitudinal
+bone growth were **correlated with similar effects on serum levels of IGF-I**"* — so the ERβ effect is
+substantially a **systemic IGF-1** effect, i.e. a drive lever in disguise, which is exactly what
+front-loading predicts. (Vidal 1999: ERα⁻/⁻ femur **93%**, crown-rump **98%**, serum IGF-1 **−23%**.)
+
+**Two corrections to F-R041.** The axial repair was overstated: the CR gain is transient, and **mouse
+vertebral plates never fuse in any genotype** — *"the vertebra growth plates were open at both 4 and 18
+months… no differences between the different genotypes"* — so **no mouse experiment can inform human
+spinal fusion.** FLAW 1 reinstated. And DERKO growth is *"intermediate"*, so **the double block gives open
+plates at 18 months with roughly normal velocity** — Terms A and B, not C.
+
+**Then the search I said I would run rather than ask for returned the most useful clinical result of the
+programme.** Looking for growth endpoints measured past skeletal maturity:
+
+> **Delay alone fails. Delay plus drive works.**
+> Letrozole alone in ISS: **+5.9 cm predicted adult height on treatment, "no statistically significant
+> difference in AH"** — gains reversed (RCT). In pre/early-pubertal boys: **164.8 ± 4.0 vs 163.7 ± 3.7 cm
+> placebo, null**. GnRHa alone in ISS: *"insufficient evidence."*
+> **GnRHa + rhGH: 6–9 cm in GHD (*"NAH difference close to 10 cm"*), 5–10 cm in ISS, +2.8 to +4.3 cm in
+> CPP by meta-analysis — sustained, RCT-confirmed.** AI + rhGH: *"more than rhGH or AI alone"*, and
+> *"considerably greater if patients were treated for **at least 36 months**"* — but **adult height never
+> collected**.
+
+**This was the model's prediction and it is confirmed in humans.** F-R039–R041 argued that *systemic*
+oestrogen blockade removes the GH/IGF-1 amplification driving the spurt (whole-body ERα⁻/⁻ IGF-1 −20%;
+MPP lowers femur, plate height, PZ and PCNA; Vidal −23%). **Delay without drive should buy nothing at
+adult height — two randomised trials say it buys nothing.** Restoring drive pharmacologically recovers
+5–10 cm.
+
+**What the theory adds over the existing clinical stack:** GnRHa abolishes the endogenous spurt so GH must
+substitute, and GH itself depletes the pool (`chu2025`). **A cartilage-restricted ERα block would delay
+closure while leaving the endogenous spurt intact** — no substitution, no imported pool cost. That is the
+one structural improvement proposed here, and it now has a human benchmark to beat: **5–10 cm.**
+
+**New flaw 13:** durability is almost never measured. Every positive in this programme is ≤12 weeks, ≤6
+months, or a single late timepoint — and **the only study that followed to 18 months is the one where the
+advantage vanished.**
