@@ -1512,3 +1512,67 @@ agent that raises output spends the pool. **No counterexample exists in the reco
 panel 2M, and 5E/5F — the terminal-cell-height data on which §2 turns); **`horike2026`**, the cleanest
 published case of expanded RZ with short bones; and **Bailey 2007**, *"Tradeoffs between oxygen and energy
 in tibial growth at high altitude."*
+
+---
+
+## The twenty-ninth summary — F-R038, the lever was real and pointing the other way
+
+**`trompet2024` supplement — flaw two refined, and I was unfair in one direction.** Supplementary
+Figure 2 is titled by the authors *"Intraperitoneal injections of SAG **do not alter the number or
+proliferation of CD73⁺ cells**"* — so the negative is theirs, not my inference. **But its power is 0.1648
+and 0.3323** (n = 3/5, 3/3), which is uninformative rather than null. The fair statement is symmetrical:
+at this n, **neither the claim that SAG expands the stem pool nor the claim that it does not is
+supported.**
+
+**Supplementary Figure 5 confirms the substance.** Femur, bead, paired t-test: **plate height ns / ✱✱ /
+ns** and **terminal hypertrophic cell height ns / ✱ / ns** at 1 week, 1 month, 2 months; **Ki67 in the
+proliferative zone ns**; OARSI joint score at 6 months **ns** (no joint damage). **The entire significant
+mechanism is two panels at one timepoint, and h_term is one of them.** So the corrected flaw two: the
+length gain is solid and durable; the only mechanism it can point to is **h_term** — which sits
+**outside the pool equation**, i.e. the one free direction the conjugacy identity permits.
+
+**`horike2026` read — a clean negative that removes a candidate.** Expanded resting zone in
+achondroplasia comes from *"disruption of turnover… **accumulation of cells in the resting zone**"*, by
+lineage tracing. And the restoration trap is resolved: *"administration of 666-15 **significantly changed
+neither weight, femur length, nor expression of CD73 in the resting zone in control mice**… not effective
+in a physiological condition."* **CREB inhibition does nothing to a normal mouse.** The atlas ranked it
+third among pool levers with CORR-203 unresolved; it is now resolved, negatively. (Also kept: **cystine-
+dense peptides and octaarginine preferentially accumulate in cartilage** — a cartilage-targeting carrier
+chemistry whose **cationic** charge matches Williams's charge hypothesis exactly.)
+
+**`bailey2007` read — and it explains flaw one through glucose, not oxygen.** 113 children at 3100 m:
+*"independent of ethnicity or caloric status, absolute and relative **tibia length was significantly
+reduced in children with lower blood oxygen saturation**"*, and *"in hypoxemia, body fat has less impact
+on growth than when ample oxygen is present."* Their model: *"in hypoxemia, **glucose metabolism will be
+downregulated**."* Put beside `Kobayashi 2023`, the chain closes:
+
+> hypoxaemia → glucose metabolism down → glycolytic flux down → citrate/**acetyl-CoA** down → histone
+> acetylation down → **FGFR3 up** → resting-zone turnover disrupted, cells accumulate → **expanded RZ,
+> short bones**
+
+Human epidemiology, mouse metabolic genetics and mouse FGFR3 genetics on one pathway — and it runs
+through **glucose, not oxygen**, which is what Brighton said in 1971 when he found the plate
+*"predominantly glycolytic"* and barely oxygen-consuming.
+
+> **My F-R034 §7 lever was real. Its sign was inverted.** Lowering pO₂ suppresses glycolysis, starves
+> acetyl-CoA, de-represses FGFR3 and jams the reserve — the dysplasia phenotype. The corrected direction:
+> **raise glycolytic flux / acetyl-CoA → more histone acetylation → FGFR3 down → turnover restored →
+> longer bone.**
+
+It is also the first candidate in this programme that clears the transport gate by construction —
+**acetate is 59 Da**, and Kobayashi names the route: *"Ac-CoA is generated from… **dietary acetate via
+Acetyl-CoA synthases**"*, with **Acss2-mediated synthesis from acetate** shown to partially compensate in
+these very cells.
+
+**And the caveat, which is the trap that just killed CREB.** Kobayashi tested **only loss of function**.
+I searched the full text: **zero occurrences of "rescue", "restored", "supplementation", "HDAC", or any
+gain-of-glycolysis experiment.** Nobody has raised acetyl-CoA in a normal growth plate and measured bone
+length. **Five converging lines on direction, no test of the gain arm — exactly where CREB inhibition sat
+until someone tried it in wild-type mice and it did nothing.** Recorded as the best-supported open
+candidate, explicitly not as an answer.
+
+**Closed this round:** CREB is not an elevation lever; the Trompet supplement shows h_term at one month
+and CD73 at power 0.16; the human hypoxia negative holds and now has a mechanism. **Open, top-ranked:**
+does raising glycolytic flux/acetyl-CoA in a normal plate lengthen bone — untested, and now the highest
+-value experiment in the programme. Nothing is retrieval-blocked; `Kobayashi`'s GEO series **GSE192971**
+and **GSE98309** are public and I can pull them myself.
