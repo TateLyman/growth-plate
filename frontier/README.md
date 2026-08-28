@@ -1453,3 +1453,62 @@ than growth plate."* So for the one protein lever inside the gate, the rate-limi
 **binding-protein displacement at the perichondrium**, not the matrix. And: **no human growth-plate
 transport measurement exists** — every value here is rabbit, rat, mouse or pig. That absence is the
 finding, and it is what unknowns #4 and #13 turn on.
+
+---
+
+## The twenty-eighth summary — F-R037, I checked my own "does not exist" and broke two of my own claims
+
+Tate's instruction was to not accept my own absence claims. The three unknowns **are** genuinely
+unmeasured — but hunting them found **two flaws in my stack**, one in its keystone.
+
+**FLAW ONE — "hypoxia is the `a − b` lever" is a pool-without-flux trap.** Four independent lines:
+**(a)** `leijten2012`'s own length endpoint — hypoxia expanded the resting zone **and produced a shorter
+tibia**; I quoted the zone result and left the length result in a table. **(b)** `Kobayashi 2023`
+(PMC9882305), fetched in full: **four genetic routes — miR-140-5p GOF (the model of human SEDN), Ldha
+cKO, Acly cKO, and Fgfr3 activation — all give expanded resting zone with MORE resting chondrocytes and
+SHORT bones**, all converging on FGFR3 upregulation, and the miR-140 mutant gets there via **reduced
+Hif1a**, the opposite direction from my story. **(c)** `horike2026` — FGFR3-ACH knock-in, cells
+*"accumulating in the resting zone instead of entering columns."* **(d)** The human experiment I hadn't
+looked for: at altitude, *"independent of ethnicity or caloric status, absolute and relative **tibia
+length was significantly reduced in children with lower blood oxygen saturation**"*, with **~1–2 cm of
+adult stature attributable to hypoxia itself**.
+
+> **An increased number of resting-zone chondrocytes is a signature of skeletal dysplasia, not of tall
+> stature.**
+
+And the sign flips back when you look at **delivery** rather than tension: warming lengthens, exercise
+lengthens, an A-V fistula lengthens, altitude shortens. **More delivery, longer limb** — which is
+F-R035's conclusion, intact. Hypoxia is withdrawn as a lever; the GREM1/FRZB/DKK1/SFRP5 niche convergence
+stands, but hypoxia is not the route to it. (Calibration: the 2025 gpSSC niche review contains **zero**
+occurrences of "oxygen" or "hypoxia" — unexamined, not refuted.)
+
+**FLAW TWO — and it is the keystone.** My whole "fast must be bought in N" architecture rests on
+`trompet2024` demonstrating pool expansion → length. Read against its own text, **it does not**:
+
+- *"**neither the number nor proliferative activity of cells expressing CD73 was affected** by treatment
+  with SAG at both time points tested"* — and Tomato⁺CD73⁺ *"tended to be **suppressed** on P30–P36"*,
+  the exact window where the length effect is obtained. Overlap with PTHrP⁺ is only **40–50%**.
+- *"proliferation in the **columnar zone of flat chondrocytes was not affected**"* — no amplification gain.
+- *"the **orientation of stem cell division… is not affected** by Hh signaling"* — no shift toward renewal.
+- *"**Although the mode of epSSC renewal remains to be elucidated**…"* — the authors decline to claim the
+  pool grew.
+- And the length gain is attributed by them to *"**an elevation in the height of the terminal hypertrophic
+  chondrocytes**"* — h_term, which sits **outside** the pool equation entirely.
+
+**So there is now no experiment showing that buying growth in N works.**
+
+**The discriminator, and it saves the model.** Longshanks LS2 *also* had an expanded resting zone
+(**+56%**) and got **longer** bones — because PZ **+37%** and cells/column **+32%** expanded with it. The
+dysplasias expand the reserve while output falls; Longshanks expanded it while output rose. And
+`chu2026` fig. S2L: tall and normal-height children **both** show a *"prominently enlarged resting
+zone."* **Pool size is not the variable. Pool size with maintained discharge is** — which is the
+conjugacy identity, unbroken.
+
+**The central gap, sharper:** *there is no demonstrated intervention, in any species, that increases the
+growth-plate stem pool while maintaining output.* Every agent that raises the pool blocks the exit; every
+agent that raises output spends the pool. **No counterexample exists in the record.**
+
+**Still wanted:** `trompet2024` **Supplemental Figures 2 and 5** (the CD73 panels, the division-orientation
+panel 2M, and 5E/5F — the terminal-cell-height data on which §2 turns); **`horike2026`**, the cleanest
+published case of expanded RZ with short bones; and **Bailey 2007**, *"Tradeoffs between oxygen and energy
+in tibial growth at high altitude."*
