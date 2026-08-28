@@ -1080,3 +1080,49 @@ differentiation rate postnatally without losing output — plus two genuine unkn
 fired a second Hedgehog pulse** (`trompet2024` fired one; signal gone by 3 weeks, no OA at 6 months,
 effect still widening), and **nothing yet measures whether the root tier is refillable or is the true
 terminal reservoir.**
+
+
+---
+
+## The twenty-second summary — F-R031, Trompet's Figure 5, and two corrections
+
+**The figure, read.** `trompet2024` Fig 5B–E: paired DMSO-contralateral vs SAG, **every line rises**,
+and the significance *deepens with time* — femur P<0.05 → P<0.01 → P<0.001 at 1, 2, 6 months; whole leg
+to **P<0.0001**; panel E is two femurs against a ruler. Fig 5G–H: the calcein–xylenol **growth-rate**
+difference is significant only at 1 month (femur) and 2 months (tibia). Fig 5J–K: **Ki67⁺ cells in the
+top 50 µm — the resting zone — spike at ONE WEEK only** (femur ≈4.5%→13%, tibia ≈8%→19%, both P<0.01)
+and are **NS at 1 and 2 months.** Fig 5M: **Pthlh⁺ cells ≈20% → ≈29% at one week.**
+
+> **The stem-cell response is a one-week event. The SAG signal is gone by three weeks. And the length
+> gap widens for six months with the P value falling the whole way. A single week of stem-cell
+> proliferation buys at least six months of divergent growth — not a sustained drug effect, but a
+> larger pool created once and paying out continuously.** The pool has been expanded **once**. Nobody
+> has expanded it **twice**.
+
+**Correction 1 — GH does not push the root tier.** F-R030 explained Wadlow's flat curve that way.
+`chu2026`'s own quantification (7 vehicle / 6 GH donors, EdU counted separately by zone) refutes it:
+**PZ P = 0.013, RZ P = 0.79.** GH is a working-tier drug — it amplifies output downstream of the stem
+compartment and does not replenish it, agreeing with `PMC12685065`. **F-R030's central argument gets
+stronger** (the largest output driver known still fails the second half of the condition) **and its
+mechanism for Wadlow is withdrawn.** The observation stands; I have no explanation for it and will not
+invent one.
+
+**Correction 2 — the hierarchy conflated two compartments.** `chu2026` states: *"gene expression
+analysis for **periostin (POSTN) confirmed their absence**"* — perichondrium was excluded by design.
+**GP1 is intracartilaginous**, upstream of PTHrP⁺ by velocyto trajectory (*"GP1 as the root population
+and GP5 as the terminal end point"*), but inside the plate. Prrx1 is shared with perichondrial
+mesenchyme, which is what misled me. **The perichondrium → root arrow is demonstrated in fetal mouse
+and unmeasured in humans — because the one human dataset excluded the compartment.**
+
+**What `chu2026` gives that nothing else does:** the root niche with human markers — **SFRP5** (secreted
+WNT antagonist) and **APOE**, in a niche *"low in WNT and TGF-β"*, with DKK1/GREM1/FGF2/KLF4 in the
+regulatory set — **the atlas's R241 "self-secreted WNT and TGF-β antagonists" with human gene names on
+it.** And the platform: human growth plate in **1-mm slices, two months**, which *"retained its
+structural integrity and biological activity, as evidenced by preserved histology and **proteoglycan
+abundance assessed by Safranin O staining**"* — the stain I had been asking for across four rounds,
+already done, on human tissue. Plus a result aimed straight at this branch's oxygen arc:
+***"vascularization is dispensable for chondrogenesis but essential for ossification"*** — cartilage
+grows on diffusion alone at 1 mm; bone does not.
+
+**And the honest limitation on GH:** *"not all patient samples responded… interindividual differences
+in GH responsiveness."*
