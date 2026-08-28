@@ -1026,3 +1026,57 @@ with untreated gigantism plus hypogonadism decelerate, or hold velocity?** The *
 **X-LAG/GPR101** cohorts are the modern genetically-defined populations with systematic follow-up.
 Atlas: `AIP` 98 files, `GPR101` 26, `X-LAG` 18 — but **`gonadotropin deficiency` 3 and `Wadlow` 0.**
 **The conjunction that is the whole phenotype is not a concept anywhere in the graph.**
+
+
+---
+
+## The twenty-first summary — F-R030, every within-plate lever fails the same half
+
+**The atlas stated F-R027's condition before I derived it, and killed the obvious lever.** R242:
+*"The target condition asked for was **replacement greater than or equal to loss WITHOUT losing
+output**, and a PRRX1 lever **fails the second half**."* Because `hu2024`/`hu2025` in antler reserve
+mesenchyme show **PRRX1 is the brake**: *"as miR-140-3p rises, Prrx1 is inhibited, **the maintenance of
+RM cell self-renewal and pluripotency is disrupted**, and that is what **initiates** the rapid
+chondrogenic differentiation"*; overexpression *"decreases proliferation and maintains the
+undifferentiated state."* R241 had already found the ligand-level version — the root cell holds itself
+quiescent with **self-secreted WNT and TGF-β antagonists.**
+
+**The structural finding: the same shape appears at five levels.** PRRX1↑, Wnt/TGF-β antagonists↑,
+hypoxia, glucocorticoid — all preserve the pool by stopping growth. GH, oestrogen, Hh-release,
+miR-140-3p — all buy output by draining. **Every lever acting *inside* the plate is one knob on one
+flow — the exit of a cell from the resting state — and no setting does both, because pool and output
+are the same cells at two moments. That is why a century of work produced percentages, and it is
+topological, not pharmacological.**
+
+> **Therefore the condition cannot be met by any intracartilaginous lever. Replacement must arrive from
+> cells that are not themselves the output — and there is exactly one such route: Pdgfrα⁺ inner
+> perichondrium → Gli1⁺ chondroprogenitor → resting zone.**
+
+**And this year's human paper supplies the architecture.** Chu TL et al., *Sci Transl Med* 2026
+(`10.1126/scitranslmed.adw3590`), single-cell + spatial on **human pubertal growth plates from
+growth-restricting surgery**: **two stem populations in the resting zone**; the **root cells are
+Prrx1⁺, PTHrP-negative, in a niche low in WNT *and* TGF-β**, and clonal tracing shows they *"generate
+extensive chondrocyte clones."* And: **"GH… stimulates cartilage growth and PROLIFERATION OF CARTILAGE
+STEM CELLS."**
+
+**That resolves the GH paradox into a tier structure** — `PMC12685065` (mouse) has GH *depleting* the
+PTHrP⁺ pool; Chu has GH *stimulating* stem proliferation in human explants. Both hold if **GH spends
+the working tier and pushes the root tier that feeds it** — which is the mechanism for **Wadlow's flat
+nine-year curve**. Maximal drive on one pool must decelerate; on a two-tier hierarchy where the drive
+also pushes the upstream tier, it need not.
+
+**The hierarchy is now four deep and every arrow crosses a compartment:** perichondrium (Pdgfrα⁺/Prrx1⁺,
+outside) → root (Prrx1⁺ PTHrP⁻, low-Wnt/low-TGF-β) → PTHrP⁺ working tier → proliferative/hypertrophic
+output. **Only the top arrow originates outside the cartilage, and it is the only source not itself
+being spent as output.**
+
+**"Never close until we choose" is finished, and it is a switch with both directions shown in humans:**
+ER-α disruption held a plate open against a **tenfold** oestradiol challenge on top of an endogenous
+level already 2.4× ULN (`smith2008`); **25 µg transdermal oestradiol twice weekly fused a 31-year-old
+in six months** (`imre2025`). Term A is not a research problem.
+
+**What is left is one quantitative question** — can perichondrial recruitment be driven to match the
+differentiation rate postnatally without losing output — plus two genuine unknowns: **nobody has ever
+fired a second Hedgehog pulse** (`trompet2024` fired one; signal gone by 3 weeks, no OA at 6 months,
+effect still widening), and **nothing yet measures whether the root tier is refillable or is the true
+terminal reservoir.**
