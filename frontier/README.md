@@ -865,3 +865,59 @@ oestradiol), ligand-level (closes on ligand restoration), and **local/acquired (
 and permanent — the only compartment-specific one, and therefore the most interesting for delivery).**
 **Fast** remains unsolved but now has a histological lead: whatever term C is, it is the difference
 between cartilage that runs the endochondral programme and cartilage that merely persists.
+
+
+---
+
+## The eighteenth summary — F-R027, the absolute statement
+
+**Why `herrmann2002`'s man stopped at 24 — the atlas answered it before I asked.**
+`rz_depletion_causes_fusion.yaml`: *"**Depletion is SUFFICIENT TO STOP GROWTH and NOT SUFFICIENT TO
+FUSE A PLATE**; fusion additionally requires the oestrogen signal that converts an exhausted plate to
+bone."* And the mechanism, separating two things I had been treating as one: *"**oestrogen slows
+resting-zone proliferation — that is, SELF-RENEWAL — without delaying, and possibly while accelerating,
+DIFFERENTIATION OUT of the resting zone. The pool drains because the OUTFLOW is unchanged while the
+INFLOW falls.**"* `nilsson2014`: oestrogen-accelerated RZ loss **persisted five weeks after washout**,
+and transient exposure **permanently** hastened fusion.
+
+**So he drained.** No oestrogen meant nothing suppressed his inflow — and he drained anyway, because
+self-renewal alone does not keep up. The plate was still there at bone age 16 three years later because
+**there was no oestrogen signal to convert an exhausted plate into bone.** Open, cell-poor,
+nonossifying, producing nothing — exactly `carroll2018`'s histology.
+
+**The balance:** `d(RZ)/dt = self-renewal + recruitment − differentiation`, and
+`dH/dt ∝ differentiation × λ × h_term`. Three established facts make the answer forced:
+**(i) growth IS outflow** — every centimetre is a cell leaving the resting zone, an identity not a
+trade-off; **(ii) self-renewal cannot cover it** — `p = 0.392–0.493`, all below 0.500, and
+`PMC12685065` confirms renewal by population asymmetry while GH *depletes* the pool; **(iii) oestrogen
+blockade removes the conversion step, not the consumption step.**
+
+**Which explains a century of percentages in one table.** GH: outflow ↑, inflow unchanged → drains
+faster. Oestrogen blockade alone: nothing changes but the ending → open empty plate at 1 cm/yr.
+Glucocorticoid: outflow ↓↓ → duration bought with velocity. Oestrogen: inflow ↓ → the fastest drain.
+**Nobody has ever raised inflow.**
+
+> **THE ABSOLUTE STATEMENT — unbounded, fast, non-closing growth requires the perichondrial recruitment
+> rate to equal or exceed the differentiation rate, with oestrogen-receptor signalling blocked so that a
+> transient shortfall does not become irreversible bony conversion.**
+> **Speed** = `differentiation × λ × h_term`. **Sustainability** = `recruitment ≥ differentiation`.
+> **Oestrogen blockade** makes a shortfall recoverable rather than terminal.
+> **Fast and unbounded are not in tension — they are coupled by one inequality: recruit at least as
+> fast as you grow.**
+
+Recruitment is the only inflow that escapes the trade, because **a recruited Pdgfrα⁺ stromal cell
+arrives with its own unspent division counter.** Every term now has a name: blockade **receptor-level**
+(`smith2008`, survived 10× oestradiol); inflow **Pdgfrα⁺ inner perichondrium → Gli1⁺**
+(`rosellodiez2025`, `mundy2026`); throttle **PTCH1⁺ groove** (`karlsson2009`, `trompet2024`); brake
+**CCN2**; steering **heparan sulfate**; exposure rule **transient, local, self-limiting**; speed
+`P_swell × f_axial × Φ`. And what is *not* the answer: GH/IGF-1 and androgen, both refuted in humans.
+
+**The census could not be run, and that is the finding.** Round 86: *"NOT ONE has a reported final
+height"* without intervention; the numbers that exist are *"the height at which a clinician
+deliberately stopped them."* **The human ceiling has never been observed — not unknown, never
+permitted.**
+
+**Still open, and stated exactly:** recruitment has never been shown to **exceed** the set point
+(everything demonstrated is homeostatic restoration); it has never been demonstrated postnatally; the
+8% switch has never been measured in an adult physis; radial confinement has never been tested
+constructively; and **no one has combined any two of these arms in the same animal.**
