@@ -971,3 +971,58 @@ output: **"polarized bone elongation."** Closed end, radial wall (the perichondr
 — local Hh pulse at the groove, unchallenged limb, contralateral control, length to maturity; (2) is an
 arrested plate above the **8% switch** — one Safranin-O, and the Leiden model supplies the tissue
 prospectively instead of waiting on a pathology archive.
+
+
+---
+
+## The twentieth summary — F-R029, the three-term phenotype already exists, and I had two conclusions wrong
+
+**Correction 1, to F-R027.** I called its load-bearing assumption untested — *"recruitment has never
+been shown to exceed the set point."* **I had the refuting paper and had read it twice without pulling
+the sentence.** `trompet2024` (JCI Insight 2024;9(6):e165226, open access): *"we used an alternative
+approach that **enhanced the number of stem cells, which subsequently converted into the leg length
+outgrowth, thus demonstrating that the growth potential can be improved by the increased number of
+stem cells**."* Normal rats, contralateral control, one leg longer and the gap widening at 2 and 6
+months. **Not homeostasis. The assumption is met.**
+
+And the mechanism is this branch's own, reached from the other side. Their Figure 3: *"SAG
+administration expands the growth plate skeletal stem cell pool and **creates a Wnt-inhibitory
+environment**."* A **six-day** systemic SAG pulse raised Pthrp-mCherry⁺ resting-zone stem cells
+**+61%**; RNA-seq put **Wnt among the top 2 downregulated pathways**; and they cite `hallett2021` — the
+exact paper F-R017 built its Wnt-inhibitory-niche argument on. **F-R017 got there through oxygen and
+Frzb/Dkk1; `trompet2024` got there through Hedgehog. Two routes, one niche.**
+
+**Correction 2, to F-R025.** I concluded *"the drive is not endocrine"* from `smith2008`'s IGF-1 of
+528 against a range of 123–465 and called it supranormal. **It is 1.14× the upper limit.** The Endotext
+gigantism case grew **19 cm/yr** at IGF-1 **1.03× ULN**. **Serum IGF-1 does not measure the drive.**
+F-R025 survives narrowly (a *normal* axis, however high in range, does not restore adult velocity) and
+fails generally (at tumoral output the axis is the largest lever ever documented).
+
+**The finding: the three-term phenotype exists and the standard literature states it in one sentence** —
+*"when GH hypersecretion is accompanied by gonadotropin deficiency, **accelerated linear growth may
+persist for decades**."* Never closes (no gonadotropin → no sex steroid → no fusion), constant
+("decades"), fast (up to 19 cm/yr).
+
+**And the tallest documented case says the quiet part.** Robert Wadlow: 183 cm at 8, 196 at 10,
+**224 at 13**, **265 at ~21**, **272 at 22** — **~5.1 cm/yr from 13 to 21 and ~5.2 cm/yr in the final
+year. Nine years, essentially linear, no detectable deceleration**, against 0.3–1.3 cm/yr in the
+oestrogen-null men of the same age band. **He did not stop. He died** — of an infected blister from a
+leg brace, still growing.
+
+**Both human phenotypes that satisfy all three terms have existed, and neither has ever been permitted
+or survived long enough to reach an endpoint.** The aromatase census: *"NOT ONE has a reported final
+height"* without intervention. Gigantism: treated, or dead of the tumour.
+
+**Model update:** `dH/dt = DRIVE × pool × λ × h_term`, `d(pool)/dt = inflow − outflow(DRIVE, pool)`.
+**Drive multiplies both** — it raises velocity *and* accelerates depletion, exactly as `PMC12685065`
+shows GH depleting the stem pool. **Wadlow's flat nine-year curve is then the anomaly worth staring
+at:** maximal drive on a finite pool should visibly decelerate, and it did not. Either the pool is far
+larger than the aromatase cases imply, or **high drive recruits as well as spends** — which is what
+`trompet2024` shows Hedgehog doing (+61%) and `rosellodiez2025` shows the perichondrium doing on
+demand.
+
+**The decisive question is now answerable from existing case material, not new experiments: do adults
+with untreated gigantism plus hypogonadism decelerate, or hold velocity?** The **AIP** and
+**X-LAG/GPR101** cohorts are the modern genetically-defined populations with systematic follow-up.
+Atlas: `AIP` 98 files, `GPR101` 26, `X-LAG` 18 — but **`gonadotropin deficiency` 3 and `Wadlow` 0.**
+**The conjunction that is the whole phenotype is not a concept anywhere in the graph.**
