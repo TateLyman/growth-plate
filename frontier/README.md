@@ -1257,3 +1257,75 @@ with `marchini2019` naming de-repression via two limb enhancers of **Nkx3-2**.
 unmeasured beyond one week; and **Longshanks is ambiguous in exactly the sentence that matters** (more
 cells *per column*, which §2 taxes, or *per plate*, which §0 says is useless) — and that paper is
 paywalled.
+
+---
+
+## The twenty-fifth summary — F-R034, oxygen is not a supply, it is the renewal knob
+
+**F-R033 §2 is falsified, and the paper I said I needed is what refutes it.** Tate could not get Brighton
+& Heppenstall 1971 (*JBJS* 53A:719–728) — but its companion, **Brighton & Heppenstall, *Clin Orthop*
+1971;80:167–173 (PMID 5133323)**, has been archived in this repo as page scans since F-R014 and I had
+never fully read it. Its **Table 1 is the complete zonal oxygen profile**, and its footnote —
+*"First value = oxygen tension in mm Hg. Value in parentheses = per cent oxygen"* — closes the provenance
+question. **My numbers were right**: SOC 14.9–15.1%, proliferative 6.0–7.1%, hypertrophic 2.0–2.2%,
+metaphysis 1.0–2.5%, diaphysis 14.0–15.2%. Species is dog; the rabbit values match.
+
+**And the same paper's discussion destroys the model I built on it:**
+
+> *"**High oxygen consumption in the epiphyseal plate has not been reported by any author under any
+> condition or circumstance**… Despite increased epiphyseal plate growth, the oxygen tension at the zone
+> level did not change. **Little oxygen was consumed in the face of active bone growth**… **the delivery
+> of less oxygen to the plate results in more growth of the plate**."*
+> **Low O₂ → Anaerobic Metabolism → Increased Plate Growth. High O₂ → Aerobic → Decreased Plate Growth.**
+
+Plus: less O₂ in vitro → *more* bone; the in vivo plate grows **5× faster** than in vitro at **4–5×
+lower** pO₂; and the A-V fistula lowered pO₂ in every zone while lengthening **100%** of puppies. The
+plate is **glycolytic and barely consumes oxygen**. So there is no oxygen budget, no inter-zone
+competition, and **"raise the supply" — the one lever I called untaxed — points the wrong way.** Had the
+mechanism-first rule not held, F-R033 would have produced a hyperoxia recommendation.
+
+**Marchini's workbook kills it independently.** Per-animal (n=49): **PZ vs HZ r = −0.118, p = 0.42**;
+within-line −0.013 / +0.021 / −0.159, all null. **No zone trade-off exists.** Total plate height spans
+**435–753 µm (1.73×)** in one cohort at one age, against my computed 1.3× ceiling.
+
+**Flaw 3 closed: "per column", explicitly.** And Table 1 shows the plate **got thicker** — μCT +24%/+34%
+— with **HZ unchanged (P=0.219)**, **hypertrophic cells/column 18/18/18 (P=0.722)**, **h_term unchanged
+(P=0.775)**, **division rate unchanged**, **duration unchanged (99% complete within 24–48 h of each
+other)**. Selection moved exactly one term: **proliferative cells per column, +32%.**
+
+**A dissociation the paper does not report:** from the raw data, **LS1 is already +14.5% at birth
+(p≈0.001)** while **LS2 is +5.2%, n.s.** — same endpoint, opposite routes. And LS2, the postnatal line,
+carries the larger plate phenotype (RZ +56%, PZ +37%). **So the postnatally achievable figure is LS2's
+~18%**, and any claim that Longshanks demonstrates a postnatal mechanism must rest on LS2 alone.
+
+**Wilson 2021 signs confirmed** — height/RZ/PZ positive with rate, **width negative**, area R²=0.171
+n.s. My reconstruction was right. **Breur confirms the column model formally** (*"the complete
+chondrocytic column is the functional unit"*) — and challenges the atlas's `h_term` axis, since *"it is
+unlikely that the mean height… is an indicator of the mean chondrocytic volume"* and 1-D models were
+*"unsuitable or not as robust"* as 3-D ones.
+
+**What replaces the dead lever is better.** `leijten2012` seems to contradict Brighton (normoxia
+increased length) until it is read against the conjugacy identity: *"**hypoxia retains chondrocytes in
+the resting zone while normoxia stimulates them to progress towards the hypertrophic zone**."* That is
+`a − b` in words — normoxia spends the pool, hypoxia preserves it; a fixed-pool fetal explant rewards
+spending, an intact animal rewards preserving. **Oxygen tension is a control input on the renewal
+balance, not a supply.**
+
+And the mechanism converges four ways. Hypoxia induces **GREM1, FRZB, DKK1** (mRNA and ELISA protein) —
+secreted WNT/BMP antagonists. `chu2026`: the human root niche is *"low in WNT and TGF-β"*, markers
+**SFRP5** + APOE, with DKK1/GREM1 in its regulatory set. `trompet2024`: SAG works by *"creating a
+**Wnt-inhibitory environment**"* and Hh governs *"the balance between daughter stem cells and committed
+progeny."* Atlas R241: the niche is *"self-secreted WNT and TGF-β antagonists."*
+
+> **A candidate `a − b` lever that is local, physiological, has a named effector set, has human niche
+> validation — and is not a tumour suppressor.** Every prior pool lever in the atlas was one.
+
+Its failure mode is stated: it raises `a − b` at the cost of `λ`. **On its own it delivers two of three
+terms**, and the third needs it co-dosed with a drive lever — the titration architecture nobody has run.
+
+**Still needed, and now top of the list: Stambaugh & Brighton 1980, *JBJS* 62A:740–749** (PMID 7391097) —
+verified genuinely closed (Unpaywall `is_oa:false`, no repository, no PMC, no scan, no abstract). Since
+oxygen is *not* the limiting solute, *"Diffusion in the various zones of the normal and the rachitic
+growth plate"* is the only existing measurement of what else crosses the plate. **Second: Brighton, Ray,
+Soble & Kuettner, *JBJS* 51A:1383, 1969** — the oxygen dose-response, which would be the dose curve for
+the `a − b` knob.
