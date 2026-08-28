@@ -263,3 +263,57 @@ oxygen node and its osmotic node have never been connected.
 The deciding experiment is small and does not exist: metatarsal organ culture — the same assay
 `newton2015`/`newton2018` used — run at 1/2/5/8/12/21% O₂, measuring **length, GAG and hypertrophic
 zone height together**. 1969 measured the wrong endpoint; 2014 used the wrong cell.
+
+
+---
+
+## The seventh summary — F-R016, oxygen trades velocity against duration
+
+Built `frontier/screens/brighton_recovery/cite_harvest.py`: resolve each Brighton paper in OpenAlex,
+enumerate every citing work, pull full text for the OA ones, regex-scan for quantitative
+restatements. **372 citing works, 71 open access, 13 restatements.** Two targets recovered, one
+located, and a paper nobody here had seen falsifies F-R015.
+
+**Recovered — `brighton1983` (PMID 6406512).** Rabbit rib growth plate, zones separated by a
+purpose-built guillotine, fluorimetric assay: *"No glycerol phosphate dehydrogenase activity was
+detectable in any zone of the growth plate, whereas control liver slices exhibited abundant enzyme
+activity. Thus the glycerol phosphate shuttle… is entirely lacking in growth-plate chondrocytes."*
+**Not low — absent, in every zone.** Obligate glycolysis by construction: giving this tissue more
+oxygen does not give it more ATP, because the machinery that would convert the offer is not installed.
+
+**Located — Brighton's thesis.** The "green OA full text" OpenAlex and Unpaywall both point at is a
+Figshare record with an empty file list. Full metadata identifies it as **UIC's INDIGO repository,
+handle `10027/14248`, Degree Grantor "University of Illinois at Chicago, Health Sciences Center,"**
+with the field *"File(s) available to UIC only."* Robert D. Ray, second author on the 1969 paper,
+chaired orthopaedics at Illinois. The file is catalogued and restricted, not lost — a document-delivery
+or ILL request against that handle.
+
+**Falsified — F-R015.** `leijten2012` (PLoS ONE 7:e49896, PMC3503827): fetal mouse tibiae, 21 days at
+**21% vs 2.5% O₂**. *"Normoxia increased the length of the tibiae, length of the hypertrophic zone…
+and mRNA levels of MMP9, MMP13, RUNX2, COL10A1, ALPL. Hypoxia increased the size of the cartilaginous
+epiphysis, length of the resting zone… and ACAN, COL2A1, SOX9."* And: *"**hypoxia retains chondrocytes
+in the resting zone while normoxia stimulates them to progress towards the hypertrophic zone.**"* That
+replicates `brighton1969` on a real length endpoint 43 years later. The **matrix-program half of the
+8% switch survives** (ACAN up in hypoxia, COL10A1 up in normoxia). My inference that the proteoglycan
+program *drives elongation* dies — I had the osmotic mechanics right and the control logic backwards.
+
+**The corrected model.** A 21-day explant has a fixed pool and no renewal, so only *velocity* is
+observable, and 21% wins. A puppy with an open plate has months, so *duration* dominates, and the A-V
+fistula's lower pO₂ wins. Same knob, opposite arms:
+
+> **Oxygen does not set how fast a plate grows. It sets whether the progenitor pool is preserved or
+> spent. High O₂ → differentiate now → velocity up, duration down. Low O₂ → stay resting → velocity
+> down, duration up.**
+
+That is the atlas's own `height = Σ (velocity × duration)` with a knob on the trade, and it settles
+every conflict in the branch: Brighton's paradox (in vivo 5× faster at 4–5× lower pO₂ — because in
+vivo the pool renews), `newton2019`'s resting zone collapsing 31.7→15.0 in controls while the Tsc1
+mutant's grows 36.2→57.0, and `stegen2019`'s less-hypoxic chondrocytes spending faster into a
+**shorter** tibia. CORR-203 in its sharpest form: an intervention that raises velocity in a closed
+assay may be shortening the animal.
+
+**So the target is sequential, not simultaneous: preserve the pool at low pO₂, then spend it at high
+pO₂.** Every experiment in this literature holds oxygen constant and reports whichever arm its
+timescale could see. Staged hypoxic-expansion-then-normoxic-differentiation is routine in stem-cell
+manufacturing and has never been applied to a growth plate. In the metatarsal assay it is one extra
+pipetting step, and it is the first question in this branch whose answer nobody can currently guess.
