@@ -595,3 +595,50 @@ exists but buys width. The deciding experiment: local Hh agonist **at the groove
 contralateral control, perichondrial lineage label scored for entry into the **PTHrP⁺ resting zone**,
 and **length and width measured separately to skeletal maturity.** Nobody has ever reported both from
 the same animal — and **Rodriguez 1985's ring-excision study may already contain the answer.**
+
+
+---
+
+## The thirteenth summary — F-R022, the pool-expanding levers are all tumour suppressors
+
+**Three corrections.** (a) I gave the wrong DOI last round — `10.1007/BF02554932` is `caraceni1985`
+(bromocriptine, Calcif Tissue Int 1985;**37:687–689**), which is why that is what arrived. Rodriguez is
+ten pages earlier in the same issue: **PMID 3937595, DOI `10.1007/bf02554930`, 37:677–683.**
+(b) **Its abstract refutes the claim I built on.** Excision of the perichondrial ring gave *"an
+enlargement of the growth plate at the exposed surface that grew in an abnormal direction… and bending
+of the bone,"* supporting *"the role of the perichondrial ring in the **mechanical constraint** of the
+growth plate."* **It did not arrest growth.** `fenichel2006`'s "removal causes growth arrest and short
+stature" is unsupported by the literature it points at — and F-R021 had already noted its citation
+keying was unreliable. **The loss-of-function leg of the influx argument is withdrawn**; the positive
+evidence (label-retention gradient at the rim, labelled cells crossing the physis, `rosellodiez2025`'s
+genetics) is untouched. (c) The SAG-bead paper is **`trompet2024`**, not the label I had been using.
+
+**One new positive.** Rodriguez's companion paper (**PMID 4064411**, Clin Orthop 1985;201:251–258):
+150 r focused on the perichondrial groove **"induced the formation of a chondrocyte nest at the
+proximal external edge of the growth plate,"** which then **"underwent endochondral ossification."**
+A focal insult to the groove builds a cartilage engine outside the plate — the classical origin of
+osteochondroma. `chondrocyte nest` returns **0 files** in the atlas.
+
+**The convergence.** The atlas's `the_stack_in_a_normal_human.yaml` says *"**mundy2026** localises the
+osteochondroma progenitor to the **PDGFRα-positive inner perichondrium**, the population this atlas
+nominated for recruitment."* That is the same cell `rosellodiez2025` shows entering the plate and
+being required for normal bone length, and the same compartment Rodriguez irradiated. **One population:
+recruited into the plate it restores growth; released without control it builds an ectopic engine.**
+
+**And the ceiling, which the atlas named before I did:** *"**EVERY KNOWN POOL-EXPANDING LEVER IS A
+TUMOUR SUPPRESSOR.** PTCH1 loss gives Gorlin syndrome. TSC1/TSC2 gives tuberous sclerosis… PTEN and
+DEPDC5 [in a 37-patient tall-stature cohort] are both tumour suppressors… **AN EXPANDABLE SELF-RENEWING
+PROGENITOR POOL IS WHAT A TUMOUR IS**… that is why no pharmacological pool recruiter exists: the obvious
+molecules are the ones oncology spends its effort BLOCKING."* That is deeper than "delivery is the
+problem," and it was here first.
+
+**The dose–response it implies is the actual answer.** Same Hedgehog/pool axis, three exposures:
+chronic germline (PTCH1→Gorlin; EXT1/2→hereditary multiple exostoses, whose carriers are **short**) →
+tumours and lost height; chronic systemic → oncogenic risk plus F-R019's cancellation; **transient
+local pulse (`trompet2024`: signal gone by 3 weeks, divergence widening to 6 months, no OA) →
+positive and compounding.** The atlas reaches the identical prescription — *"a pulse rather than a
+chronic state, delivered into one anatomical compartment"* — from tumour-suppressor genetics while this
+branch reached it from the cancellation theorem. **Two routes, one answer; the atlas's was deeper.**
+What F-R019–F-R021 add is why the pulse must also be *spatially split*, and where the valve is
+(PTCH1⁺ groove of Ranvier). And **osteochondroma bounds the risk**: over-driving this axis does not
+merely risk cancer, it **costs height**, because an ectopic engine competes with the plate it grew from.
