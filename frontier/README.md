@@ -642,3 +642,63 @@ branch reached it from the cancellation theorem. **Two routes, one answer; the a
 What F-R019–F-R021 add is why the pulse must also be *spatially split*, and where the valve is
 (PTCH1⁺ groove of Ranvier). And **osteochondroma bounds the risk**: over-driving this axis does not
 merely risk cancer, it **costs height**, because an ectopic engine competes with the plate it grew from.
+
+
+---
+
+## The fourteenth summary — F-R023, the plate is a hydraulic press
+
+`rodriguez1985` arrived and answers a bigger question than the one asked of it. It measured **no bone
+lengths** — pure histomorphology — so the loss-of-function leg stays withdrawn. But in **every operated
+radius** it reports a law:
+
+> *"there was **a lengthening of the hypertrophic cartilage at the external edge of the growth plate,
+> subjacent to the removed perichondrial ring**. This feature seems to be a **specific response** of the
+> growth plate to the excision of the perichondrial ring."* … *"the lengthened hypertrophic cartilage
+> **protruded forming an arc**."* … and where an **osseous bridge** formed instead, it *"would constrain
+> the growth plate and **impede the protrusion of cartilage**."*
+
+**Cut the wall and the tissue comes out through the hole. Leave a wall and it does not.**
+
+**Against R448 that is a reframe.** R448 computes chondrocyte turgor ≈ **400 Pa** against matrix
+swelling pressure ≈ **0.28 MPa** — *"the matrix out-pressures the cell by 710-fold"* — and concludes
+h_term is a **matrix-yield** problem, correctly killing the raise-the-drive arm. But 0.28 MPa is ~2.8
+atmospheres, generated continuously, and **isotropic**. An isotropic pressure in a confined space does
+not choose a direction; **the confinement chooses for it.**
+
+> **The growth plate is a hydraulic press. Proteoglycan matrix is the working fluid; the perichondrial
+> ring and cortical bone are the cylinder walls; longitudinal elongation is what happens because it is
+> the only direction left open.**
+>
+> `longitudinal output ∝ (pressure generated) × (fraction vectored axially)` — and **the second factor
+> is architectural.** R448 searched the first and found it saturated. **Nobody has searched the second:
+> `radial constraint`, `hoop stress` and `circumferential constraint` each return 0 files.**
+
+The field already knows the axial half under other names — **Hueter–Volkmann** (compression slows,
+tension accelerates; 61 files) and **distraction osteogenesis** (pure axial tension lengthens a human
+limb **with no growth plate at all**, 14.5 cm/person; 47 files). Three literatures, one law, never
+joined.
+
+**And this is the only lever in twenty-three rounds not gated by a tumour suppressor.** F-R022's
+ceiling — *"an expandable self-renewing progenitor pool is what a tumour is"* — constrains the influx
+arm regardless of risk tolerance, because chronic release of those brakes **costs height** (HME
+carriers are short). **Confinement geometry has no such ceiling. A stiffer cylinder wall is not an
+oncogene.**
+
+**The combination**, `dH/dt = P_swell × f_axial × Φ`, duration = ∫ until influx < outflux — five levers
+on four independent axes: **(1)** generate pressure — pO₂ **< 8%** → proteoglycan, plus GAG substrate
+(glucose, sulfate/PAPS, NADPH); **(2) vector it — maximise radial confinement, apply axial tension
+never compression**; **(3)** supply — cyclic loading convection (Serrat 1.5×, McGarry, Zhang human
+AQP9/tight-junction response); **(4)** feed the pool — transient local Hh pulse at the PTCH1⁺ groove
+(the one axis with a ceiling: pulse, don't saturate); **(5)** schedule — alternate hypoxic-preserve and
+normoxic-spend phases. **Axes 1 and 2 multiply**, and every study in the literature has worked one and
+left the other at baseline — a second, mechanical reason the field's effects are percentages. **Axis 2
+also works when the pool is nearly spent, because it consumes nothing** — so for a subject at BA16+ the
+ordering is **2 → 1 → 3 → 5 → 4**, the reverse of where this branch spent its first fifteen rounds.
+
+**The test:** a compliant circumferential band around the perichondrial ring of one proximal tibia,
+contralateral control, gripping radially but sliding axially so it does not become a tether. Predict
+**longer and narrower** versus **shorter and wider**. The field builds growth-modulation hardware
+constantly — tension-band plates, guided growth, the Luque trolley — and **every device ever built
+applies axial force. Nobody has built one that applies radial force**, because nobody has framed the
+plate as a pressure vessel.
