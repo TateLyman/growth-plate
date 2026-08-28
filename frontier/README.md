@@ -482,3 +482,65 @@ The honest objective function is `H = Σ_plates ∫ h_term·outflux dt` with `dR
 The atlas sets `influx = 0` and `Σ_plates` constant; with those the integral is bounded and conservation
 is optimal. **Unbounded is `influx ≥ outflux`. Fast is `h_term × outflux` large. They are independent —
 they only looked like a trade-off because influx was assumed to be zero.**
+
+
+---
+
+## The eleventh summary — F-R020, the reserve IS fed, and the gate has a name
+
+F-R019 asserted `dReserve/dt = influx − outflux` had never had its first term measured, and asked for a
+lineage trace across the perichondrial boundary. **That experiment was published eleven months ago,
+open access, and I had not found it.**
+
+**Rosello-Diez lab, Nat Commun 2025;16:10107 (PMC12627582).** Mosaic cartilage-targeted **p21**
+overexpression (cell-cycle arrest), left limb only with a contralateral control, plus `Gli1-CreER` and
+`Pdgfra-CreER` lineage tracing, snRNA-seq, clonal RGBow reporters and DTA ablation:
+
+- **The plate compensates completely.** Followed to **P100**, past the end of growth: *"no major
+  asymmetries in bone length"* — femur only ~1.5% short, despite a large fraction of cartilage being
+  cell-cycle arrested.
+- **The compensating cells come from outside.** *"Reparative Gli1⁺ cells originate from **Pdgfra⁺ cells
+  outside the cartilage**, revealing the surrounding tissues as an unexpected CP source."*
+- **It is demand-responsive** — *"the challenged cartilage signals to the surrounding tissues"* — and
+  Pdgfra-lineage cells **in the resting zone** proliferate more under challenge.
+- **It is necessary.** Ablating Gli1-derived chondrocytes on the p21 background significantly
+  **shortened** the bone; ablating them in normal growth shortened femur and tibia at P100.
+- The **groove of Ranvier** is quantified explicitly in their figures.
+
+**A2 is falsified. `height = RESERVE × h_term` is missing a source term that is real and required.**
+And this resolves F-R018 cleanly: a recruited stromal cell brings its **own unspent division counter**,
+so influx adds capacity without touching the resident clock.
+
+**The gate is CCN2.** Pseudobulk DE + MultiNicheNet found not hedgehog but **CCN2/CTGF, downregulated**
+in challenged limbs, with *"p21⁺ chondrocytes generate a Ccn2-inhibiting area"*; and ex vivo human CCN2
+on fetal femurs **downregulated Gli1 and reduced Ki67**. CCN2 restrains Gli1 activation in stromal
+progenitors; when it falls, they convert and migrate in.
+
+**And then the discipline paid off.** I drafted this proposing **pamrevlumab** (phase-3 anti-CCN2) as
+the obvious agent — then greped, and found the atlas had **already killed CCN2** in R341: not in
+kosmicki2026's 207, no IMPC length row, and *"the published Ctgf-null phenotype is an EXPANDED
+hypertrophic zone with impaired angiogenesis — i.e. a DISCHARGE FAILURE… PAMREVLUMAB therefore points
+the wrong way."*
+
+**That kill stands. Both are right, about different compartments — and the collision is the cleanest
+confirmation of F-R019's cancellation theorem yet.** Inside the cartilage CCN2 is a matricellular
+coordinator and blocking it causes discharge failure (height-negative). Outside it, CCN2 restrains
+Gli1 in Pdgfra⁺ stroma and blocking it recruits progenitors (height-positive). **One molecule,
+opposite signs in adjacent compartments; a systemic antibody hits both and the discharge failure wins
+— which is exactly what R341 measured.**
+
+> **CCN2 is not a drug target. It is a delivery target.** R341's kill should be amended from *"CCN2 is
+> not a lever"* to *"CCN2 is not a **systemic** lever; its intracartilaginous arm is a discharge-failure
+> contraindication and its stromal arm is the only measured controller of progenitor influx."*
+
+**The limit I am not hiding:** all of this is fetal/perinatal mouse, and the compensation *restored*
+normal length rather than exceeding it. The demonstrated influx is **homeostatic** — it defends a set
+point. Whether that set point can be raised is now a question about a named molecule in a named
+compartment, which is a different kind of question from the one F-R019 was asking.
+
+Supporting chain, four species and four decades, never assembled before: **PMID 16652202** (2006,
+chick) lacZ-labelled LaCroix-ring cells re-injected into the ring were found *"arranged horizontally
+along parts of the physis"*; **PMID 19563472** (2009, rabbit) the groove of Ranvier is a **stem cell
+niche** with label-retaining Stro-1⁺/Jagged1⁺/BMPr1a⁺ cells; **PMC3854713** (2013, rabbit) BrdU and
+Fe-nanoparticle tracing shows *"a gradual migration of cells"* from niche into cartilage; **PMC12627582**
+(2025, mouse) closes it with genetics.
