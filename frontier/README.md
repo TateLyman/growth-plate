@@ -544,3 +544,54 @@ along parts of the physis"*; **PMID 19563472** (2009, rabbit) the groove of Ranv
 niche** with label-retaining Stro-1⁺/Jagged1⁺/BMPr1a⁺ cells; **PMC3854713** (2013, rabbit) BrdU and
 Fe-nanoparticle tracing shows *"a gradual migration of cells"* from niche into cartilage; **PMC12627582**
 (2025, mouse) closes it with genetics.
+
+
+---
+
+## The twelfth summary — F-R021, Hedgehog is the throttle and the groove of Ranvier is the valve
+
+Both operator-supplied papers deliver, and they close a chain across 2006→2025, four species, five
+papers that do not cite each other.
+
+**`karlsson2009` (rabbit, BrdU 12 d + chase to 56 d).** Label-retaining cells persist in the germinal
+zone while *"no positive cells could be detected in the proliferative or hypertrophic zone."* The
+groove of Ranvier is a bona fide niche — **Stro-1, Patched, Jagged1, BMPr1a, N-cadherin**, with
+*"cells in the growth plate directly adjacent… **did not express these markers**"* and Jagged1 forming
+*"a distinct boundary."* And the sentence the authors buried: *"**Interestingly, a more abundant
+expression of BrdU-positive cells was detected in the growth plate near the perichondrial groove of
+Ranvier compared to centrally in the growth plate at later time points.**"* **A gradient of
+label-retaining cells inside the plate, highest at the rim — the spatial signature of influx, which a
+sealed depot spending itself uniformly has no reason to produce.**
+
+**`fenichel2006` (chick).** Ring-of-LaCroix cells, adenoviral-lacZ labelled and re-injected into the
+ring, were found 4 weeks later *"arranged horizontally along parts of the physis,"* their Fig. 5
+showing *"migration of the cells from the periphery **transversely through the physis**."* Plus the
+loss-of-function context: **excision of the ring causes growth arrest and short stature** (Rodriguez
+1985), and human **Salter-Harris VI** injuries to the perichondrial ring cause growth arrest.
+
+**The join is PATCHED.** `PTCH1` is the Hedgehog receptor and direct upstream of `GLI1`. So the groove
+is **Hh-responsive tissue immediately outside the plate** — and F-R020's Nat Commun paper showed
+**Gli1⁺ stromal cells outside the cartilage** are the long-lived chondroprogenitor precursors, required
+for normal bone length, braked by CCN2. **PTCH1 in the groove and GLI1 in the recruits are the same
+pathway one step apart: Hedgehog is the throttle on influx and the groove of Ranvier is the valve.**
+
+**This reinterprets `newton2024sag`.** Its authors read it as expansion of epSSCs *inside* the plate —
+but they delivered SAG from a bead in the secondary ossification centre, adjacent to where the Hh
+receptor actually concentrates, and a length advantage that keeps widening long after the agent cleared
+is what **recruitment** looks like, not a transient proliferative push. And it explains why Hedgehog
+reads contradictory across this literature: Hh drives resting cells osteogenic *inside* the plate
+(PMC10906233), discharge needs Hh *withdrawal* (R251), and Hh *recruits* outside. **F-R019's
+cancellation theorem, third confirmation. `newton2024sag` got a large compounding effect because a bead
+is not systemic.**
+
+**Credit where due:** the atlas's `groove_of_ranvier.yaml` already grades this `confidence: C` and says
+its function *"supplying cells for latitudinal growth — rests on rabbit morphology and **has never been
+tested by lineage tracing in any species**."* It flagged the gap. What it lacks is the evidence:
+`Fenichel` returns **0 files**, and `karlsson2009` exists here only inside a downloaded review's
+reference list.
+
+**The remaining uncertainty is one caliper measurement.** If the groove is latitudinal-only, influx
+exists but buys width. The deciding experiment: local Hh agonist **at the groove** (not the SOC),
+contralateral control, perichondrial lineage label scored for entry into the **PTHrP⁺ resting zone**,
+and **length and width measured separately to skeletal maturity.** Nobody has ever reported both from
+the same animal — and **Rodriguez 1985's ring-excision study may already contain the answer.**
