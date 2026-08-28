@@ -1975,3 +1975,68 @@ Brizini 2024), any FGFR-inhibitor dose–response for growth — **the most usef
 that gives 6–8 cm/yr instead of 19** — and one experiment: **count root stem cells in the resting zone of
 an adult with an open plate.** If they are there, `(b − a) = 0` is demonstrated in a human and the question
 is closed.
+
+---
+
+## The thirty-seventh summary — F-R046: PTH1R is dead, the pool question resolves into two clocks, and the full stack
+
+**Teriparatide and abaloparatide: no. You and the atlas were right and I was wrong.** Winer's children with
+hypoparathyroidism took **PTH(1-34) at 0.75 ± 0.15 µg/kg/day for up to 10 years with open growth plates**,
+and *"mean height velocity was normal for age throughout the study."* Not increased. And the human
+gain-of-function is **Jansen metaphyseal chondrodysplasia** — constitutively active PTH1R — which is
+**severe short stature** with *"markedly expanded zones of proliferating/prehypertrophic chondrocytes…
+progressive reduction of type X collagen-positive hypertrophic chondrocytes."* **That is the dysplasia
+signature this branch has been flagging since F-R034: Jansen's is what "expand the pool" looks like when
+you get it.** The transport map makes the null a real test rather than a delivery miss — teriparatide is
+4.1 kDa and abaloparatide 3.8 kDa, and a 3 kDa tracer enters at 62%. The drug reached the plate and did
+nothing.
+
+**The pool question — two clocks.** *Endocrinology 2014;155:2892* separates them in ovariectomised rabbits
+given E2 for 5 weeks then 5 weeks off. **Reversible on stopping:** growth rate, proliferation rate,
+hypertrophic cell size — all normalised. **Irreversible:** plate height, proliferative and hypertrophic
+cell number, and **resting zone cell number** — all stayed advanced. And the RZ loss *"did not appear to be
+due to apoptosis."* Non-apoptotic loss from the resting zone means the cells **committed out**. Put beside
+Nilsson 2006 — estradiol simultaneously **slowed** RZ proliferation while accelerating senescence, which
+he could not explain — the picture is:
+
+> **Oestrogen drains the pool while suppressing output. It does not spend the pool on growth; it discards
+> it. Closure is not exhaustion by use — it is a controlled write-off.**
+
+**Clock B, the slow use-linked drawdown, is real** (RZ cells per area fall with age; dexamethasone
+conserves them by slowing proliferation — the catch-up growth mechanism). **But it is nowhere near
+complete when growth stops:** Chu 2026 finds the human pubertal RZ is *"nearly half of the structure."*
+And the cells that remain are undamaged — Nilsson 2005's 16-week cells had the same doublings left as
+fetal cells (P = 0.36). **So yes, the pool persists in an adult with an open plate, and Rochira's four men
+are the functional proof: bone age frozen at 14.8–15.5, epiphyses open, still growing at 183.5–193.0 cm,
+with GH peaks of 1.0–2.8 µg/L. A plate cannot elongate for a decade with no progenitors.** Nobody has
+stained one; the function is the assay.
+
+**One hard consequence: the write-off is irreversible. You keep what you have when you start.** Every
+month of oestrogen exposure is permanently subtracted, which sets the timing of the whole stack.
+
+**The final equation.** `dn/dt = −λnd − w(E₂)`, giving `L∞ = (A·h_term/d)·n₀`. λ is absent — **never raise
+it**. And `A` and `h_term` are not only free multipliers: **at any fixed velocity they reduce the number of
+stem divisions needed per centimetre.** They multiply the total *and* slow the drawdown. That is the
+cleanest reason the stack works.
+
+**THE STACK.** (1) **Complete aromatase inhibition ± GnRHa**, E2 to undetectable on a third-generation
+assay — reversed with transdermal oestradiol when height is sufficient, which closes every epiphysis in
+6 months at a cost of ~1 cm. AI in males also raises non-aromatizable testosterone: drive without closure.
+(2) **Erdafitinib**, 5 mg/day anchor (7 mg forced interruptions for hyperphosphataemia) — **but keep IGF-1
+in range, because FGFR blockade alone is apoptotic and IGF-1/AKT rescues it.** (3) **Navepegritide**
+100 µg/kg weekly — serial with arm 2, not redundant, because FGFR3 inactivates NPR2 by dephosphorylation.
+(4) **Romosozumab 210 mg monthly** — chosen *by the transport map*: at ~150 kDa the size gate keeps it out
+of the plate, so it builds bone without touching the Wnt-low root niche, which is exactly why abaloparatide
+at 3.8 kDa was the wrong agent. (5) **Load management** — both SCFE cases were obese, neither growth-only
+case was; hip films from day 60, spine films quarterly, baseline DEXA. (6) **Vitamin K2** for MGP
+carboxylation. Order: arm 1 first and alone, then 4 and 6, then 3, then 2 titrated up last.
+
+**The ceiling is now mechanical, not cellular.** Duration alone with a broken GH axis gave 189.6 cm. The
+`A` arm alone gave 19.06 cm/yr with bone age not advancing. What broke was SCFE at 84 days, cord
+compression at 9 months, ALP 2× normal, DEXA −3.8 SD. **So run the A arm at what the hips and the
+ossification front will carry and take the height out of duration.**
+
+**Still missing:** count root stem cells in an adult with an open plate (the experiment); an
+FGFR-inhibitor dose–response for growth — **the dose that gives 6–8 cm/yr instead of 19**; a systemic
+Smoothened agonist (periosteal Ihh maintains the root pool — strong mechanism, **no molecule**); and the
+two SCFE primaries for the mechanical envelope.
