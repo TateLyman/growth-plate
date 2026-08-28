@@ -1914,3 +1914,64 @@ unlimited growth as a failure.**
 the plate open and closes it on command; `A` and `h_term` supply speed without touching the clock; tier-2
 recruitment supplies cells. **What stands between this and infinite is not a mechanism — it is that nobody
 has counted FoxA2⁺ cells past twelve weeks.**
+
+---
+
+## The thirty-sixth summary — F-R045: the exhaustion model is dead, and three of the four papers that killed it were the ones I asked for
+
+**The premise underneath forty-four rounds — a finite stem pool that is spent and cannot be refilled — is
+not supported by the primaries.**
+
+**Nilsson 2005, read at source, says the opposite of what it is cited for.** Resting-zone chondrocytes from
+**fetal, 4-week and 16-week rabbits underwent 13.1 ± 1.1, 14.6 ± 0.6 and 14.3 ± 0.8 population doublings —
+P = 0.36.** *"Previous proliferation in vivo had **no effect** on subsequent proliferation in vitro."* And
+methylation **did not fall in culture — it rose**, +0.21% per doubling, because *"**maintenance methylases
+were upregulated when the cells were placed in cell culture**… loss of cell–cell or cell–matrix
+interactions."* Telomeres excluded three ways. Methylation fell in the **slow** resting zone, not the fast
+proliferative zone — the wrong ordering for a per-division counter. **Take the cell out of the plate and
+its clock resets. The limit is the niche, not the cell.**
+
+**Chu 2026 rejects exhaustion by name.** *"A notable feature of human pubertal growth plates is the **large
+RZ, which comprises nearly half of the structure**. **This challenges the long-standing hypothesis that
+growth ceases because of the exhaustion of chondroprogenitors** [ref 52 = Nilsson & Baron 2004]. Instead…
+growth cessation might involve **active remodeling of the stem cell niche**… by elevating hormones such as
+estrogens and GH."* Also: **PTH1R is the most abundant endocrine receptor in the human growth plate**;
+**GHR peaks in the root stem cells and IGF1R in the hypertrophic cells**; GH raises phospho-STAT5
+**in the resting zone** (P = 0.034) and S-phase fraction (P < 0.001) — `chu2025`'s pool-spending, now on
+human tissue; and the **root niche is low in WNT *and* TGF-β**.
+
+**Rochira 2010 Table 2 is the cleanest human proof that duration beats drive.** Four adult men with
+aromatase deficiency: heights **190.0 / 183.5 / 191.8 / 193.0 cm**, bone ages **14.8 / 15.0 / 15.3 / 15.5**,
+all radial epiphyses open — with **GH peaks of 2.0, 1.5, 1.0 and 2.8 µg/L** against a cutoff of ≥11.
+Oestrogen closed every plate within six months and bought **~1 cm**. **Bone age is not a clock that runs on
+time; it runs on oestrogen, and without oestrogen it stops.** This retires F-R042's "delay alone buys
+nothing" — those RCTs tested 2–3 years of *partial* suppression.
+
+**The erdafitinib record, complete.** Index case: male **15 y 4 m**, Tanner 2–3, **7 mg/day → 5 mg/day**,
+**14.3 cm in 9 months = 19.06 cm/yr**, centile 16–25th → 70th — with **normal GH, IGF-1 and IGFBP-3**, and
+**bone age 14.0 at chronological 16.2, still 2 years delayed 15 months after stopping.** Growth without
+maturation, unconfounded. FDA series (n = 5, median onset 137 d): **two SCFE at 84 and 137 days, both in
+obese patients**; three accelerated-growth cases, **none obese**. ALP 746 U/L, DEXA −3.8 SD, kyphoscoliosis
+with cord compression. **And the mechanism sets a constraint: erdafitinib alone is apoptotic (PARP, cleaved
+caspase-3); IGF-1 via sustained AKT completely rescues it.** So F-R044's "drop GH" was half right — GH as a
+*driver* stays out, but **IGF-1/AKT must be preserved as a survival floor.**
+
+**The model corrects.** `(b − a)` is not a biological constant; it is set by oestrogen and the niche, and
+both are switchable. **The plate does not run out. It is switched off — and the switch has been in clinical
+use since the 1990s.** The binding constraint moves from cells to structure: SCFE at 84 days under load,
+kyphoscoliosis at 9 months, ALP 2× normal, DEXA −3.8. **So do not run at 19 cm/yr.** Run the `A` arm at the
+rate the ossification front and the hips will carry, with **abaloparatide** behind it — which holds RZ
+quiescence, raises `A` by delaying hypertrophy, hits the plate's most abundant receptor, *and* is the
+strongest bone anabolic available — and take the height out of **duration**, now the cheap resource.
+
+**Two arms removed, one of them mine.** **CXXC5/KY19382 downgraded** — its mechanism is Wnt elevation and
+the human root niche is Wnt-low (three independent lines). **TGF-β inhibition rejected before it landed** —
+the niche is TGF-β-low but Tgfbr2 deletion accelerates hypertrophy. One rule covers both: *the root niche
+wants low WNT and low TGF-β; the maturing compartment needs both, and no systemic agent can tell them
+apart.*
+
+**What I need now is the mechanical envelope, not the biology:** the two SCFE primaries (Farouk Sait 2023;
+Brizini 2024), any FGFR-inhibitor dose–response for growth — **the most useful missing number is the dose
+that gives 6–8 cm/yr instead of 19** — and one experiment: **count root stem cells in the resting zone of
+an adult with an open plate.** If they are there, `(b − a) = 0` is demonstrated in a human and the question
+is closed.
