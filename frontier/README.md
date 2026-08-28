@@ -423,3 +423,62 @@ SAG, then measure the expanded pool's **mean methylation age** against the contr
 chondrocyte clock. Age up → per-lineage → neutral. Age flat while cell number rose → per-cell →
 capacity was created → unbounded height is arithmetically available. The pool-expansion lab and the
 clock lab have never cited each other.
+
+
+---
+
+## The tenth summary — F-R019, the constraint is topology, not chemistry
+
+The atlas's objective function is `adult height = RESERVE × h_term`, with the exchange rate that a
+division adds 8–9 µm at the cost of one unit of exhaustible reserve while the hypertrophy of the same
+cell adds 40–50 µm free. Good model, real exchange rate — resting on **three unstated assumptions,
+all of them false or untested.**
+
+**A1 — the number of plates is fixed. False.** `PMC12678681` uses natural anatomical variation:
+metatarsals form a plate at one end only, the pisiform is the only carpal with one, and the difference
+*is* the reserve zone — *"at the opposite end, the absence of a PTHrP⁺ reserve zone results in premature
+chondrocyte differentiation,"* and *"a pool of PTHrP⁺ reserve zone chondrocytes is a defining
+characteristic of growth plates."* **A growth plate is a cell state, not an anatomical given.** The
+atlas's own coverage table starred this — *"a growth plate is not guaranteed, it is specified"* — in one
+of the 87 rows the spreadsheet bug destroyed.
+
+**A2 — RESERVE has no influx. Untested, and the atlas names the gap then misses the answer.** R202:
+*"where the extra cells come from is the whole question under a fixed reserve… extra cells from extra
+divisions spend reserve; extra cells from delayed clearance do not. Nobody has measured which."* Two
+options offered. **The third is recruitment.** The plate has a groove of Ranvier, a perichondrial ring
+and an SOC-derived niche, and **`dReserve/dt = influx − outflux` has never had its first term measured
+in any species.**
+
+**A3 — h_term saturates. On the hormonal axis only.** GH 1.36×, NPR3 loss 1.20×, IGF-1 setting it — all
+the same knob, *"sub-additive by construction."* But hypertrophy is **osmotic**, the atlas owns that
+mechanics in R448, and F-R015/F-R016 showed proteoglycan deposition is oxygen-gated at ~8% pO₂. The
+matrix route to h_term is orthogonal to a saturated axis and has never been tried.
+
+**And the fact that reframes the clinic:** `PMC12685065` (2025) — **"GH reduces the pool of
+slow-cycling, label-retaining stem cells by promoting their differentiation into transient
+progenitors… leading to stem cell depletion,"** with renewal *"via population asymmetry"* (F-R007's
+model, lineage-traced). **The standard height drug buys velocity by burning duration**, and above the
+saturating h_term dose it is height-negative.
+
+**The antler, read as topology.** Human plate: reserve is a **depot**, consumed one way, vascular
+invasion terminates it, ~0.05 mm/day, ends once. Antler: reserve is a **flow** fed by the antlerogenic
+periosteum — *"the only tissue responsible for postnatal antler formation"* — with **RXFP2⁺ MSCs**,
+**vascularised cartilage**, two hypertrophic exits, ~20 mm/day, and **annual full regeneration
+indefinitely.** Same chemistry. **The plate is a burning fuse; the antler is a flame. Nobody has tried
+to attach a fuel line.**
+
+**The cancellation theorem — why this whole field returns percentages.** `ba2025`: the antler's
+periosteal stem cells are *"primarily activated by Wnt signalling."* `hallett2021`: the plate's
+resting-zone stem cells are *maintained by a Wnt-inhibitory environment* and forcing Wnt on impairs
+them. **The same signal recruits in the source compartment and depletes in the reserve compartment.**
+Hedgehog does it too (SAG expands epSSCs and lengthens bone; Hh also drives resting-zone cells
+osteogenic; R251 found discharge needs Hh *withdrawal*). So does GH. **Every intervention ever tried
+was systemic, hit both compartments, and partly cancelled — which is why the only reliably large
+effect in the literature, the A-V fistula at 100% of puppies, is the one that is inherently local.**
+The route to large effects is **spatial, not chemical**, and `newton2024sag` is the accidental proof:
+a bead in one femoral SOC, agent cleared by week 3, advantage still widening at 6 months.
+
+The honest objective function is `H = Σ_plates ∫ h_term·outflux dt` with `dReserve/dt = influx − outflux`.
+The atlas sets `influx = 0` and `Σ_plates` constant; with those the integral is bounded and conservation
+is optimal. **Unbounded is `influx ≥ outflux`. Fast is `h_term × outflux` large. They are independent —
+they only looked like a trade-off because influx was assumed to be zero.**
