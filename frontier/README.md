@@ -921,3 +921,53 @@ permitted.**
 (everything demonstrated is homeostatic restoration); it has never been demonstrated postnatally; the
 8% switch has never been measured in an adult physis; radial confinement has never been tested
 constructively; and **no one has combined any two of these arms in the same animal.**
+
+
+---
+
+## The nineteenth summary — F-R028, the knife edge, the drain, and the human pressure vessel
+
+**`imre2025` is genuinely closed** — Unpaywall `oa_status: closed`, `has_repository_copy: false`,
+`oa_locations: []`; Europe PMC lists one URL, "Subscription required." No open copy exists. **But the
+abstract carries the decisive number:** *"transdermal estradiol (**25 µg twice weekly**)… **Epiphyseal
+fusion occurred within 6 months**"* — in a **31-year-old**. A low-dose HRT patch fused every long-bone
+physis in half a year. Against `smith2008`, where **a tenfold oestradiol elevation on top of an
+endogenous level already 2.4× the upper limit "could not be closed by any means."**
+
+> **Ligand-level blockade is a knife edge; a trace of oestrogen from any source closes it, and the plate
+> is more sensitive at 31 than an adolescent's at 14. Receptor-level is the only durable form of term
+> A.** Any aromatase-inhibition strategy has to contend with adrenal androgen aromatised in adipose,
+> incomplete enzyme inhibition, and dietary oestrogens — all reaching a receptor that is present and
+> evidently exquisite.
+
+**`nilsson2014` measures the drain, and it is not cell death.** RZ chondrocytes per mm decline with age
+(PT p<0.001, DR p<0.001); oestrogen accelerates it (p<0.01, p<0.001); **TUNEL⁺ RZ cells are identical —
+4.6 ± 0.6% vs 4.4 ± 1.0%, p = 0.87**; and **five weeks after washout the deficit remained** (DR p<0.01),
+*"a mechanism by which estrogen permanently advances structural growth plate senescence."*
+**The cells are not dying — they are leaving and not being replaced.** F-R027's outflow model,
+measured. **And an honest negative: the pool did not spontaneously refill in five weeks.** Caveats —
+nobody looked at the perichondrium, and `rosellodiez2025`'s refill was *induced* by a challenge that
+made the cartilage signal to surrounding tissue, which oestrogen depletion may not do. **But
+spontaneous postnatal recruitment sufficient to refill a depleted resting zone has not been observed,
+and one study looked in roughly the right place and did not find it.**
+
+**The human test system exists and I did not know it.** *The Leiden ex vivo human growth plate model in
+severe tall stature* (2026): viable human GP obtained **reproducibly** during routine percutaneous
+epiphysiodesis in adolescents treated for **extreme tall stature**, expanded, formed organoids,
+deposited cartilage matrix — *"a unique platform to study local mechanisms of endochondral bone
+growth."* **The only reliable source of living human growth plate is surgery performed to stop tall
+adolescents from growing.**
+
+**And F-R023's pressure vessel is now described in human tissue.** PMC12334589 (2025, OA): the
+**GP–epiphysis interface** shows *"a sharp transition in tissue modulus, **acting as a protective
+shell**"* and is a **mineralization INHIBITION zone** (**SPP1, AHSG** — *"forming a defense line"*);
+the **GP–metaphysis interface** shows *"a gradual modulus increase, enabling efficient load
+redistribution"* and is a **mineralization PROMOTION zone** (**ENPP1, ALPL**). Their phrase for the
+output: **"polarized bone elongation."** Closed end, radial wall (the perichondrial ring), moving face
+— all three named, in humans, with moduli and a proteomic map. Atlas: `AHSG` **0 files**,
+`mineralization inhibition zone` **0**, `polarized bone elongation` **0**.
+
+**The framework now reduces to two runnable experiments:** (1) can recruitment **exceed** the set point
+— local Hh pulse at the groove, unchallenged limb, contralateral control, length to maturity; (2) is an
+arrested plate above the **8% switch** — one Safranin-O, and the Leiden model supplies the tissue
+prospectively instead of waiting on a pathology archive.
