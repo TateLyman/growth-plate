@@ -76,3 +76,39 @@ assembled from three species and could not name. That axis has **no node, no gap
 anywhere in this atlas. Its receiver passes the free local query in all four human donors — GPX4 is
 detected in more cells than NPR2, the vosoritide receptor, in every one — and the zonal gradient
 argues against the naive version of the model, which F-R003 reports rather than smooths.
+
+
+---
+
+## The third summary — F-R012, and the retraction of F-R006 through F-R011
+
+Rounds F-R006 through F-R011 built one thesis: *charge without discharge*. The plate can make matrix
+faster than it can clear it; the hypertrophic chondrocyte has exactly one exit and that exit is the
+fusion mechanism; therefore unjamming the discharge should buy length. F-R011 compressed it to
+`Growth = SYNTHESIS × DISCHARGE, and OXYGEN sets both`.
+
+**F-R012 retracts it.** Stegen 2019 (Nature) ran that experiment in vivo, in both directions, with a
+ruler on the tibia, and printed the answer in an Extended Data p-value list that the abstract does
+not mention:
+
+- Over-modifying a **wild-type** growth plate with dimethyl-αKG raised hydroxyproline, COL2⁺
+  cartilage remnants and trabecular bone volume — and **did not change tibia length at all.**
+- Un-jamming a wild-type plate with the GLS1 inhibitor BPTES **shortened the tibia at p = 1×10⁻⁷**,
+  the largest length effect in the paper.
+- In the PHD2-null mutant, BPTES **normalised** αKG, hydroxyproline, remnants and bone mass and
+  **did not rescue length**. DCA — restoring glucose oxidation — **did** rescue length, at
+  p = 1.2×10⁻⁴, while driving the remnants and the mineralised mass strictly *higher*.
+
+**Matrix clearance is a mass valve, not a length valve.** Discharge failure diverts cartilage into
+trabecular bone; it does not slow the plate's linear output. This kills the protease/cross-link/LOX
+class as a height lever, confirms the atlas's αKG contraindication a second time, and explains the
+entire Lublin pig corpus in one line — those are modification-arm interventions, so mass, density and
+strength move and length does not.
+
+What survives is the synthesis side: **length is a bioenergetic term, spent at prehypertrophy.**
+Oohira 1974 localises it — collagen synthesis per cell is **17–20× higher** at the Zone 3/4 transition
+than in the proliferative zone, in the same compartment where CORR-361 puts 44–59% of elongation and
+where F-R008's bafilomycin result raised terminal cell height by 71%. And CORR-203 lands immediately
+on the new candidate: DCA rescued a deficient tibia and did nothing to a wild-type one. Restoration is
+not elevation. The open question the branch now carries is the one nobody has run — **raise
+biosynthetic capacity at prehypertrophy in an animal that is not deficient, and measure the bone.**
