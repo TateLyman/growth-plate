@@ -112,3 +112,49 @@ where F-R008's bafilomycin result raised terminal cell height by 71%. And CORR-2
 on the new candidate: DCA rescued a deficient tibia and did nothing to a wild-type one. Restoration is
 not elevation. The open question the branch now carries is the one nobody has run — **raise
 biosynthetic capacity at prehypertrophy in an animal that is not deficient, and measure the bone.**
+
+
+---
+
+## The fourth summary — F-R013, and the bug that ate the answer
+
+The atlas's own blind-spot instrument found the best out-of-the-box height lead in this repository,
+marked it with its highest flag, and lost it twice.
+
+`atlas/data/round436/coverage.json`, row `NRF2 / KEAP1`: **"⭐ Nrf2 ACTIVATION stimulates chondrocyte
+differentiation and INCREASES BONE LENGTHS in zebrafish"**, source `37748761`, `n_bib: 0`. The one
+node that lifted it off ZERO mentions Nrf2 exactly once — in a sentence saying *metformin's* Nrf2
+literature has no bone-length endpoint. A starred lead was down-ranked by a string match on a
+sentence dismissing a different drug.
+
+The systematic loss is bigger. **87 of the 2,193 rows carry a spreadsheet cell reference — `A10`,
+`D15`, `G16` — in the `concept` field instead of a concept name**, with the real name surviving only
+as a fragment spliced into the `note`. Every tier score on those rows was computed by grepping the
+atlas for the cell reference. 53 came back ZERO because nothing contains the string "A17"; 27 came
+back COVERED by matching a two-character substring (`E13` → a 325-node file). `MIA3/TANGO1` occupies
+six rows and was scored COVERED four times and ZERO twice. **50 of the 87 are axial/trunk — the
+operator's own residual compartment.** `frontier/screens/r436_recovery/recover.py` recovers the names
+and re-scores: **55 of 87 verdicts flip.**
+
+`coverage.json` also carries ⭐ on 112 rows, of which **31 never entered the bibliography**. Six of
+those have a positive length endpoint and no node: NRF2 (+5.6% zebrafish), Serrat 2010 (*"all runners
+had significantly longer limbs"*), McGarry 2024 (cyclic loading → longer tibiae), swimming (humerus
++2.8%), Romeo 2019 (endothelial proteolysis mediates elongation), PP5 ablation. Plus **FXYD2 /
+Longshanks** (a selection line bred for long tibiae), **NFIX** (tall direction is the *loss*
+direction), and the only genomic read-out of mechanical loading in **human** growth-plate cartilage
+(PMID 39655393, ZERO, no node).
+
+Read together they are one term. Cartilage has no vessels; it is perfused by convection driven by
+cyclic loading. Five of those leads raise **delivery**; NRF2 raises **utilisation** — glutathione via
+GCLC/GCLM, exactly the program F-R003 found the atlas has no node for and the plate looks starved of.
+F-R012 reached the same term from the opposite direction: length is bioenergetic, spent at
+prehypertrophy. **The plate is not signal-limited, it is supply-limited, and nobody has ever run the
+transport arm and the utilisation arm together.**
+
+Two corrections in this round. I withdrew last round's oxygen-tension ask as probably nonexistent;
+**Brighton & Heppenstall 1971 (PMID 5580029, 5133323) is starred at ZERO in this repository's own
+table** — including plate pO₂ measured distal to an arteriovenous fistula. And the pig rib anomaly
+resolved without falsifying F-R012 (femur +1.1% ns, humerus +0.3% ns; the rib gained length with a
+16% *thinner* wall and flat cross-section) — while handing over a contraindication the atlas does not
+hold: **AKG raises plasma 17β-oestradiol 20% (p=0.002), and 158%/121% in Kowalik 2005a, with growth
+retardation specific to males.**
