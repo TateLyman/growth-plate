@@ -208,3 +208,58 @@ patterning cue. Nothing anywhere in the atlas says low oxygen increases growth r
 `yoshida2018` (Keap1-null NEKO mice: femur significantly shorter, P<0.05, but growth-plate thickness
 unaffected and the lesion in osteoblasts) re-grades F-R013's NRF2 lead from best-in-repository to
 dose-dependent with an unresolved mammalian direction.
+
+
+---
+
+## The sixth summary — F-R015, the 8% switch
+
+I could not get `brighton1969` in full (JBJS Am 1969;51:1383–96, PMID 4186275). OpenAlex and Unpaywall
+both flag it green OA with full text; **they are wrong** — the target is a Figshare record for
+Brighton's *thesis* of the same title, with `files: []` and "In Copyright." LWW and Ovid return HTTP
+402. But Semantic Scholar returned the paper's opening paragraph, two independent searches recovered
+its abstract, and the abstract corrects F-R014:
+
+> "**The cartilage portion of the epiphyseal plate exhibited maximum growth in 21 per cent oxygen,
+> while maximum metaphyseal bone formation occurred in 5 per cent oxygen.** … in higher oxygen
+> tensions, the cartilage portion showed narrowing, a progressive loss of acid mucopolysaccharide
+> stainability, **eventual loss of the zone of hypertrophic cells**…"
+
+In 1971 Brighton paraphrased this as "less oxygen → greater bone formation." True of *bone* — and he
+omitted that his cartilage endpoint peaked at 21%. F-R014 inherited the selective half. **There is no
+single sign. There is a threshold.**
+
+Following the OA citing literature produced the keystone, which neither this branch nor the atlas
+held: **Li, Oreffo, Sengers & Tare, Biotechnol Bioeng 2014;111:1876–1885.** Human chondrocyte pellets
+generating their own oxygen gradients give a threshold at **pO₂ ≈ 8%**: *below* it "enhanced PG
+deposition," *above* it "favor collagenous matrix production." **Oxygen does not set how much matrix a
+chondrocyte makes. It sets which matrix.**
+
+Against Brighton's 1971 in vivo map: secondary epiphysis **15.2%**, cell columns **6.0–7.0%**,
+hypertrophic cells **2.1–2.2%**, diaphysis **14.0–15.2%**. **The growth plate is the only compartment
+in the bone below the switch, and the bone on both sides of it is above.** The plate is a
+proteoglycan-program slot cut into collagen-program tissue.
+
+Proteoglycan carries the matrix's fixed charge; fixed charge draws water; swelling pressure is the
+work that separates epiphysis from metaphysis (the atlas's own R448, "the matrix outpressures the cell
+by 710-fold"); and terminal hypertrophy — CORR-361's 44–59% of elongation — is mostly water. So
+**pO₂ < 8% → proteoglycan → osmotic swelling → hypertrophy → elongation; pO₂ > 8% → collagen → the
+hypertrophic zone disappears.**
+
+Six results collapse into that one statement: Brighton 1969's AMPS loss and vanishing hypertrophic
+zone at high O₂; the A-V fistula driving every zone *deeper* below the switch and lengthening 100% of
+limbs; `stegen2019`'s *less hypoxic* chondrocytes flipping to the collagen program (P4HA, PLOD, LOX,
+pyridinoline up; tibia shorter, p=1e-8); Farquharson's 10-fold pyridinoline fall down the plate as the
+descent through the gradient rather than de-cross-linking for discharge; Serrat's 1.5× solute delivery
+feeding a running program; and F-R003's NADPH/PPP arm, which supplies UDP-sugars for GAG as well as
+glutathione.
+
+**The target is now specific: hold the plate below 8% pO₂ while flooding it with the substrates of
+sulfated proteoglycan synthesis** — glucose (UDP-glucuronate, hexosamine pathway), sulfate
+(PAPS/PAPSS2/SLC26A2), and NADPH. The atlas holds every part as disease genes and holds the osmotic
+engine in R448, but `threshold oxygen` returns **0 files** and `UDP-glucuronate` returns **0**: its
+oxygen node and its osmotic node have never been connected.
+
+The deciding experiment is small and does not exist: metatarsal organ culture — the same assay
+`newton2015`/`newton2018` used — run at 1/2/5/8/12/21% O₂, measuring **length, GAG and hypertrophic
+zone height together**. 1969 measured the wrong endpoint; 2014 used the wrong cell.
