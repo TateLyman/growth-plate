@@ -2040,3 +2040,70 @@ ossification front will carry and take the height out of duration.**
 FGFR-inhibitor dose–response for growth — **the dose that gives 6–8 cm/yr instead of 19**; a systemic
 Smoothened agonist (periosteal Ihh maintains the root pool — strong mechanism, **no molecule**); and the
 two SCFE primaries for the mechanical envelope.
+
+---
+
+## The thirty-eighth summary — F-R047: eight layers of oestrogen, five ways to get more cells, and the one arm of the proposal to change
+
+**There are eight routes by which an oestrogenic signal can reach ERα in a growth-plate chondrocyte. An
+aromatase inhibitor blocks one.**
+
+**Layer 0 — the receptor, and it is the only complete answer.** **Fulvestrant** is *"a pure antiestrogen
+with no agonistic effects, leading to degradation of ERα."* **Not elacestrant** — nonclinical data show
+*"agonist effects on bone"*, and a bone-agonist SERD is the one thing you must not give. Two subtleties:
+**ERβ is a proven escape route** (Chagin: ERα⁻/⁻ mice all fused at 18 months via ERβ; only the double
+knockout stayed open) and fulvestrant's ERβ degradation is undocumented — which is the argument for doing
+receptor *and* ligand ablation. And **do not block GPER1: it is growth-promoting.** Chondrocyte-specific
+GPER1 knockouts have significantly **decreased** proliferative zone thickness and shorter tibiae, acting
+*"via PTHrP/Ihh regulation."* Fulvestrant is a GPER agonist — the right sign by accident.
+
+**Layer 2 is the hole nobody in this field has mentioned.** **Estrone sulfate is the most abundant
+circulating oestrogen**, and **steroid sulfatase regenerates E2 from it entirely independently of
+aromatase** — and *"increase in intratumoral STS has been demonstrated **following treatment with an
+AI**… a compensatory and adaptive response."* **You give the AI, the tissue upregulates the bypass.** The
+agent is **irosustat (STX64), IC₅₀ 8 nM**, through phase 1/2. It also blocks DHEA-S → DHEA.
+
+The rest: **exemestane** (irreversible; and chondrocytes make their own aromatase — *"articular
+chondrocytes possess CYP19A1 at mRNA and protein levels"* — but AIs are 285–296 Da and cross the plate in
+90 seconds); **abiraterone + prednisone** to cut adrenal *and* gonadal precursor supply, with
+**non-aromatizable oxandrolone added back**; **HSD17B1 inhibitors** for the potency step;
+**27-hydroxycholesterol**, *"an endogenous SERM"* made from cholesterol by CYP27A1 **inside bone itself**
+— lower cholesterol hard, no AI touches it; **calcium-D-glucarate** for enterohepatic recirculation; and
+**eliminate soy, flax and hops** (8-prenylnaringenin is the most potent phytoestrogen known; genistein is
+a potent **ERβ** agonist — the escape receptor). Verify by **LC-MS/MS measuring E1S, not just E2**, and by
+bone age: in Rochira's men it froze at 14.8–15.5 for years.
+
+**The cell problem, and five refills.** The write-off is irreversible and non-apoptotic — the cells commit
+out. **(1) Ex vivo expansion, and Nilsson licenses it himself:** cells from fetal, 4-week and 16-week
+rabbits gave 13.1 / 14.6 / 14.3 doublings (P = 0.36) and methylation **rose** in culture because
+*"maintenance methylases were upregulated when the cells were placed in cell culture."* **Fourteen
+doublings is 16,000×. The cells you have left are not the cells you are limited to.** (2) **FoxA2⁺
+injury expansion** — 2.7× in 3 days, 96% regeneration in 7, growth unaffected, symmetric self-renewal by
+dye dilution. (3) **Periosteal Ihh** — strongest mechanism, **no molecule exists** (only antagonists).
+(4) **Partial reprogramming** — AAV-OSK in cartilage reduced senescence and DNMT expression with no rise
+in stemness genes, and Chu found the **KLF4 regulon already selectively active in human
+chondroprogenitors**. (5) Raising `A·h_term` cuts stem divisions per centimetre — automatic conservation.
+
+**The proposal: two-thirds right. Drop the GH.** Chu 2026, on human tissue: **GHR is highest in GP1, the
+root stem cells; IGF1R is highest in GP5, the hypertrophic cells — *"opposite gradients."*** GH raised
+phospho-STAT5 **in the resting zone** (P = 0.034) and S-phase (P < 0.001), and chu2025 states outright
+that *"excess GH… **depletes the stem cell pool**."* **High-dose GH is a maximum-rate drawdown on exactly
+the cells you are short of.** The substitution: **mecasermin (rhIGF-1) 50–100 µg/kg BID to a normal — not
+high — IGF-1.** It acts on GP5, not on the root cells, and it is the exact molecule erdafitinib needs,
+because **FGFR blockade alone is apoptotic and IGF-1 via sustained AKT completely rescues it.** The reason
+to want GH here is to supply IGF-1; IGF-1 supplies IGF-1 without the cost.
+
+**Romosozumab rechecked — survives, wrong reason.** **Sclerosteosis (SOST loss) causes gigantism and tall
+stature; van Buchem, with partial loss, has normal stature** — dose-dependent, in humans. But sclerostin
+*"is expressed in the hypertrophic chondrocytes within the growth plate"*, and at 150 kDa romosozumab
+cannot get in. **So it will strengthen bone and will not add height** — plus a 12-month approved ceiling
+and a cardiovascular boxed warning. **And teriparatide comes back, for the opposite reason to the one it
+was removed for:** Winer's ten years in children with open plates is not just a null, it is **the best
+long-duration safety dataset for a bone anabolic in a growing human that exists.** Structural arm, not
+growth arm. Jansen's stays the warning against continuous or supraphysiological dosing.
+
+**Papers wanted, Tier 1:** **Endocrinology 2014;155:2892 (PMID 24708243)** — the only quantitative
+measurement of the oestrogen write-off, and the single most important paper for the cell question;
+**J Endocrinol 2006;189:27 (PMID 16614378)** — the age-by-age RZ counts and the dexamethasone conservation
+data; **Farouk Sait 2023 (Pediatr Blood Cancer e30410)** and **Brizini 2024 (Front Oncol 14:1399356)** —
+the mechanical envelope that sets the ceiling on the erdafitinib arm.
