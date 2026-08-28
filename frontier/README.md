@@ -1636,3 +1636,49 @@ mode*; running it backwards as therapy does not follow.
 growth plate cartilage for longitudinal bone growth."* **Not open access, no PMC record** (checked). It is
 the primary behind every Col2α1-ERα⁻/⁻ result above and this round rests on the same group's review
 account of it.
+
+---
+
+## The thirty-first summary — F-R040, the theory and its complete flaw register
+
+**Börjesson 2010 read in the primary; every F-R039 claim holds, with numbers.** At 17 weeks (male):
+total ERα⁻/⁻ had reduced femur *and* crown-rump length with **serum IGF-1 −20% ± 6% (p<0.01)** and
+**liver MUP −24% ± 18% (p<0.05)**; **Col2α1-ERα⁻/⁻ was normal on all of them** (IGF-1 +14% ± 7% ns).
+Under E2 challenge (830 ng/d): controls lost plate height and terminal cell height (10.5→9.6) with BrdU
+770→**485✱**; the knockout held plate height and terminal cell height (10.5→**10.5**) — while uterus,
+thymus, fat and every BMD measure responded **identically** in both. At one year, continued growth and
+increased femur length with **serum IGF-1 −3.0% ± 6.5% ns**. And the human split confirmed at source:
+*"Estrogen therapy resulted in rapid growth plate closure in patients with aromatase deficiency **but not
+in the man with a mutation in the ERα gene**."*
+
+**A new velocity lever, with the sign I have never seen before.** *"Region-specific effects of blocking
+estrogen receptors on longitudinal bone growth"* (J Endocrinol 2021;250(1), PMID 34014834): **ERβ blocking
+INCREASED appendicular elongation (P<0.01)** while ERα blocking suppressed it (P<0.05), with Col2,
+aggrecan, Sox9, ColX, MMP13 and Runx2 all up and **local IGF-1 unchanged**. **The two oestrogen receptors
+have opposite signs on limb growth** — nothing in this branch had considered ERβ.
+
+**And a genuine structural flaw, confirmed twice: this is a limb theory, not a height theory.**
+Börjesson: crown-rump **2.1% ± 1.7%, ns**, and *"increased **appendicular but not axial** skeletal
+growth… resembles the **eunuchoid habitus**."* Independently: *"**ERs appeared not to affect axial bone
+growth** during puberty."* **Sitting height is roughly half of adult stature, and this theory does not
+reach it.**
+
+**The full flaw register (F-R040 §3), twelve items.** The load-bearing ones: the E2 protection may be
+**partial** (BrdU 795→554, −30%, ns against controls' −37%✱ — height was protected, proliferation may not
+have been); **mouse plates don't fuse**, so every murine "never close" result is a slowing, and the human
+receptor-level evidence is **one patient**; **no human has a cartilage-restricted ER defect**, so the
+central claim has no human instance; **still no velocity lever that spares the pool**; and a mechanical
+ceiling on "unlimited" that is not a risk preference — **bone strength scales as L², load as L³**.
+
+**FLAW 7 is the crux and it names the experiment that decides the stack.** The stack shape is *sustain
+systemic GH/IGF-1 + block cartilage ERα locally*. But GH depletes the pool and oestrogen *"accelerates
+the proliferative exhaustion, and thereby senescence"*. **Does removing cartilage ERα protect against
+GH's pool cost, or are they additive? Nobody has run GH on a Col2α1-ERα⁻/⁻ animal.**
+
+**Closed to date:** Term A's mechanism at receptor and tissue level; the Term A/C antagonism dissolved;
+the conjugacy identity; the transport map; oxygen as signal not supply; parallel-column geometry.
+**Eliminated:** hypoxia as a pool lever, CREB inhibition, global HDAC inhibition, GH as a direct in-vivo
+plate lever.
+
+**Wanted:** **PMID 34014834** (region-specific ER blocking) — closed access. Anything primary on
+**vertebral growth-plate cessation control**. Everything else remaining is experiments, not documents.
