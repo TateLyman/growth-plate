@@ -158,3 +158,53 @@ resolved without falsifying F-R012 (femur +1.1% ns, humerus +0.3% ns; the rib ga
 16% *thinner* wall and flat cross-section) — while handing over a contraindication the atlas does not
 hold: **AKG raises plasma 17β-oestradiol 20% (p=0.002), and 158%/121% in Kowalik 2005a, with growth
 retardation specific to males.**
+
+
+---
+
+## The fifth summary — F-R014, and the sign
+
+I have had the sign of oxygen wrong for four rounds. F-R005 said "perfuse without ossifying";
+F-R011 said `OXYGEN sets both`; F-R013 said the plate is supply-limited and left oxygen inside
+"supply." **PMID 5133323 — the paper whose abstract is not deposited anywhere, recovered this round
+from scanned page images — decides it, and the sign is negative.**
+
+Brighton & Heppenstall 1971, femoral A-V fistula in 18 mongrel puppies, oxygen microelectrode with a
+histologically burn-marked tip, contralateral limb as paired control. The fistula is the one
+manipulation that lengthens a tibia in **100% of puppies**. Distal to it, plate pO₂ was
+**significantly lower in every zone**, widening with time: ns at day 1, **P<0.01** at day 3 and week
+1, **P<0.001** at week 3; cell columns −3.48% O₂ (t=−6.94), hypertrophic cells −1.00% (t=−6.32). In
+the six dogs whose fistula closed, no difference. And it is not a consumption artefact — explants
+going from dormant to log-phase growth showed identical pO₂ at day 0, 3 and 7.
+
+Their conclusion: **Low O₂ → anaerobic metabolism → increased plate growth. High O₂ → aerobic
+metabolism → decreased plate growth.** Two more dose-responses agree: less O₂ to explants gave *more*
+bone formation (JBJS 1969), and the in vivo plate grows **5× faster at 4–5× lower pO₂** than the in
+vitro plate. The same table is the pO₂ map nobody had read: proliferative zone **6–7% O₂**,
+hypertrophic zone **2.0–2.2%**, between a 15% epiphysis and a 14% diaphysis.
+
+`serrat2010` supplies the other arm and the control that makes it: wheel running raised fluorescein
+delivery to the tibial plate **1.5×** and lengthened femur (P<0.001), radius, tibia and humerus,
+while **tail length was unaffected** — local, not endocrine. `zhang2024` (n=3, the only
+transcriptomic read-out of loading in human growth-plate cartilage) shows 30 seconds of cyclic load
+remodelling the **tight-junction pathway, AQP9 up, AQP7 and SLC27A4 down** 24 h later — the transport
+apparatus itself.
+
+So the equation is **`Length ∝ (substrate delivery) × (glycolytic capacity)`, with pO₂ entering
+NEGATIVELY.** An A-V fistula raises flow while shunting arterial blood past the capillary bed: more
+volume, less oxygen. It is a device that does both of the things that lengthen a bone, and nothing in
+the literature has ever done all three arms at once.
+
+This also reconciles `stegen2019`, which I had been reading backwards: its PHD2-null chondrocytes
+consumed *less* oxygen, "**making centrally localized chondrocytes less hypoxic**" — a less hypoxic
+plate with a short tibia, exactly as Brighton predicts.
+
+Two honest corrections. The atlas is **not** blind to delivery — `R450 the perfusion term` and
+`local_limb_warming_is_a_free_delivery_and_growth_lever` already hold it well, and F-R013's
+"supply-limited" claim was largely already this atlas's position. The real gap is narrow: the atlas
+carries `brighton1971` as **`primary_abstract_only`** with the finding recorded as *"Oxygen tension
+was measured by microelectrode"* — no numbers, no direction, no sign — and frames oxygen only as a
+patterning cue. Nothing anywhere in the atlas says low oxygen increases growth rate. And
+`yoshida2018` (Keap1-null NEKO mice: femur significantly shorter, P<0.05, but growth-plate thickness
+unaffected and the lesion in osteoblasts) re-grades F-R013's NRF2 lead from best-in-repository to
+dose-dependent with an unresolved mammalian direction.
