@@ -1847,3 +1847,70 @@ is where stem cells go to die. **New flaw 15:** the FGFR3 dose gap above.
 **The honest position:** the equation now says what to build and in what order; two of three arms are
 licensed or phase-3-positive with human tall-stature genetics behind them; and the arm that decides whether
 the answer is "a lot" or "unlimited" rests on one 2019 mouse paper and one unresolved contradiction.
+
+---
+
+## The thirty-fifth summary — F-R044: yes we still close, and I killed the wrong influx term
+
+**Direct answer, in three parts.**
+
+**The oestrogen arm — no, and it is already solved in humans.** *"**Epiphyseal fusion never takes place** in
+men with estrogen deficiency or estrogen resistance."* Aromatase deficiency: **204.5 cm at 24**, steady
+growth, no spurt. ESR1 resistance: **204 cm at 28**, still growing. And Morishima's patient closes the loop
+in both directions — continuous growth into adulthood that **ceased on Premarin**, with *"all epiphyses of
+the hand and wrist completely fused **within 6 months**."* **"Never close until needed" is a dosing
+decision, not a research problem.** It also reframes F-R042's letrozole null: those RCTs tested 2–3 years of
+*partial* suppression, not the mechanism.
+
+**The matrix arm — new, and it does not need the pool to run out.** The aged plate silts up: mineral first
+(scattered deposits from W10), then aggrecan and Col II down, Col X and MMP-13 gone, and at W55 *"the growth
+plate **remained calcified cartilage**."* This is F-R036's mineral barrier arriving from the other side.
+**MGP-null mice, Keutel syndrome and fetal warfarin syndrome all show excessive growth-plate calcification
+and short stature; Enpp1⁻/⁻ mice have "markedly thinner growth plates" restored by ENPP1-Fc.** Two
+physiological inhibitors — carboxylated MGP (vitamin K-dependent) and pyrophosphate — keep the upper plate
+uncalcified, and **nobody has ever raised either in a normal plate.**
+
+**The exhaustion arm — yes on the old model, but the model was wrong.** F-R043 set `influx = 0` because the
+Axin2⁺ Ranvier cells do transverse growth. True, and irrelevant: **the relevant source is inside the plate.**
+**FoxA2⁺ cells sit at the *top* of the resting zone (PTHrP⁺ sit at the bottom) and are an order of magnitude
+longer-lived — 9% reach passage 9+ versus 1.4% of PTHrP⁺ reaching passage 5.** Their column contribution
+*rises* with age, 1% at one month to **26% at nine months**. And after injury they show **2.7-fold expansion
+in 3 days**, rebuild **96% of the plate in a week** as real physeal cartilage, **without costing
+longitudinal growth**, with **symmetric self-renewal confirmed by serial transplant and dye dilution.**
+
+> **`a > b` is not hypothetical. It has been demonstrated in a mammalian growth plate. Every "pool
+> depletion" result in this branch, `chu2025` included, measured tier one.**
+
+**The design rule inverts.** `λ` is absent from `L∞`, and §1 says the plate can be held open indefinitely —
+so **time is free and λ is worthless. Never buy speed with λ.** Speed comes only from `A` and `h_term`.
+Which means the stack needs a **quiescence-*preserving*** agent — the opposite of everything the field does.
+The circuit is named: **BMP maintains quiescence, Wnt and Hedgehog break it, Gsα and Gq/11α downstream of
+PTH1R are required to sustain it**, and the review's own warning is that *"releasing RZ cells from
+quiescence… risks stem cell depletion."* **PTHrP is the uniquely well-shaped signal — it holds the resting
+zone quiescent *and* raises `A` by delaying terminal differentiation — and its human agent, abaloparatide,
+already exists.**
+
+**Erdafitinib, accepted.** Its human record adds the thing the theory needed: **a child growing at 10 cm/yr
+with oestradiol <5 pg/mL and IGF-1 at −3.8 SD** — *"growth acceleration independent of sex steroids and
+IGF-1."* Drive that needs neither oestrogen nor the GH axis. **Two honest corrections:** its bone-age
+sparing is **confounded** (both patients hypogonadal, so bone age could not advance anyway — the
+unconfounded evidence is navepegritide's), and **the failure mode matters more than the velocity** —
+physeal widening, metaphyseal sclerosis, kyphoscoliosis, and SCFE as *"a major on-target adverse event"* are
+one syndrome: **the plate outran its own mineralisation.** That is a hard ceiling on `A`, and it collides
+with the anti-mineralisation arm above. Sharpest internal conflict in the design.
+
+**KY19382's five issues each have a fix:** use **KY19334** or **PTD-DBM** (CXXC5–DVL only, no GSK3β arm);
+cap the dose at restoration of the juvenile Wnt set-point rather than elevation; cartilage-target it
+(octaarginine / WYRGRL / CBD precedent); PTD-DBM's human topical programme is the only PK anchor; and
+**count FoxA2⁺, not just CD73 and PTHrP.**
+
+**And the reason nothing has ever worked may be a screening artefact.** A λ lever shows early gain and late
+convergence. A true `(a−b)` lever shows **little early gain and late divergence**, because pool divergence
+has time constant `1/(λ(a−b))` and resting-zone cells are slow-cycling. **Every trial in this field measures
+AGV at 52 weeks — an endpoint that scores front-loaders as successes and the one class that could deliver
+unlimited growth as a failure.**
+
+**Bottom line: the three goals are orthogonal for the first time in 44 rounds.** Oestrogen ablation holds
+the plate open and closes it on command; `A` and `h_term` supply speed without touching the clock; tier-2
+recruitment supplies cells. **What stands between this and infinite is not a mechanism — it is that nobody
+has counted FoxA2⁺ cells past twelve weeks.**
