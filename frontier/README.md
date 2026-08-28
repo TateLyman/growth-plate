@@ -811,3 +811,57 @@ drug, and none touches F-R022's tumour-suppressor ceiling.
 **Next round needs no new papers:** the atlas's round-86 census already holds 14 aromatase-deficient
 males from 743 screened records. Extracting growth velocities across all fourteen tests §1, which
 currently rests on two cases.
+
+
+---
+
+## The seventeenth summary — F-R026, one cell two fates, and the histology of an arrested plate
+
+**The deferred round, run.** The `nihms2173869` file **is** `mundy2026`. It resolves the perichondrium
+into two layers and asks which makes the tumour: `Pdgfrα-CreER` targets **inner + outer**,
+`Fgf18-CreER` targets **outer only**, both crossed to floxed *Ext1*. *"Osteochondromas had formed in
+**Pdgfrα;Ext1** mutants targeting both layers, but **NONE** were appreciable in **Fgf18;Ext1** mutants
+targeting the outer layer."* **The tumour progenitor is the Pdgfrα⁺ cell of the INNER cuboidal
+perichondrial layer.**
+
+Set beside F-R020: `rosellodiez2025` shows the **Pdgfrα⁺ cell outside the cartilage** becomes a Gli1⁺
+long-lived chondroprogenitor, **enters the plate**, and is **required for normal bone length**.
+**Same cell, two fates, and neither paper cites the other.**
+
+**And EXT1 names the steering.** EXT1/EXT2 build **heparan sulfate**, which binds Ihh and turns a
+secreted molecule into a spatial **gradient**. Lose HS, the gradient flattens.
+
+> **The difference between "recruited productively into the plate" and "forms a lump beside it" is not
+> which cell and not whether Hedgehog is on — it is whether the heparan-sulfate-shaped gradient is
+> intact to tell the cell where to go. The goal is not more Hedgehog; it is a steeper gradient.**
+> Flooding with agonist flattens the very gradient that directs the cell — a third independent reason
+> systemic Hh gives percentages while a local bead compounds.
+
+Atlas: `heparan sulfate` 37, `EXT1` 67, `Fgf18` 75 — parts held; **`inner perichondrium` 1 file,
+`Ihh gradient` 0.**
+
+**Three persistent-physis cases, and a distinction that had to be drawn.** `tas2020`: a 32-year-old,
+electric shock 17 years earlier causing a left femoral fracture — *"a **normal right knee** and a
+**persistent distal femoral physis line in the left**,"* confirmed on T1 MRI. **One man, one hormonal
+milieu — one physis persisted, the other closed. Closure is under local control.**
+
+`carroll2018` biopsied one: **"fragments of NONOSSIFYING hyaline cartilage with admixed fibroconnective
+tissue, consistent with persistent physis."** Real cartilage, not scar — but **nonossifying**, fibrous-
+admixed, no zonal architecture described. **The first histology of an adult persistent physis in this
+branch, and it is a hard result: cartilage that has stopped running the endochondral programme.**
+
+> **"Persistent physis" and "still-growing physis" are not the same tissue.** Persistent (normal adult):
+> nonossifying, fibrous, mechanically weak enough to stress-fracture through, **zero output**, locally
+> caused. Unfused (oestrogen-null): **0.3–1.3 cm/yr sustained for decades**, systemically caused.
+> **The comparison between those two columns is exactly term C** — both open, one producing nothing and
+> one producing a centimetre a year. A side-by-side of `carroll2018`'s H&E against a Safranin-O of an
+> oestrogen-null physis would isolate the drive in one figure, and half the tissue already exists in a
+> pathology archive.
+
+Atlas: `persistent physis` 1 file, `nonossifying` 0, `electric shock` 0.
+
+**Never close now has three routes of different grade:** receptor-level (`smith2008`, survived 10×
+oestradiol), ligand-level (closes on ligand restoration), and **local/acquired (`tas2020`, unilateral
+and permanent — the only compartment-specific one, and therefore the most interesting for delivery).**
+**Fast** remains unsolved but now has a histological lead: whatever term C is, it is the difference
+between cartilage that runs the endochondral programme and cartilage that merely persists.
