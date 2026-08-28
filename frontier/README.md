@@ -317,3 +317,57 @@ pO₂.** Every experiment in this literature holds oxygen constant and reports w
 timescale could see. Staged hypoxic-expansion-then-normoxic-differentiation is routine in stem-cell
 manufacturing and has never been applied to a growth plate. In the metatarsal assay it is one extra
 pipetting step, and it is the first question in this branch whose answer nobody can currently guess.
+
+
+---
+
+## The eighth summary — F-R017, growth that does not end is a cycle
+
+**Retrieval closed out.** The Figshare OAI-PMH record for Brighton's thesis returns `In Copyright` /
+**`Restricted Access`** in the metadata itself, and `/articles/10911983/files` returns `[]`. OpenAlex
+and Unpaywall are both wrong to call it green OA. It is catalogued, restricted, and has no online copy
+— UIC document delivery, ILL against handle `10027/14248`, or ProQuest. Stambough & Brighton 1980 has
+20 citations and exactly one OA, which does not restate the data. The Internet Archive holds **no**
+Surgical Forum volumes and only the JBJS 1969 *index*. Three ILL slips; the branch is no longer
+blocked on them.
+
+**The oxygen knob is now molecular, from two papers that have never been cited together.** Re-reading
+`leijten2012` past its abstract: its Figure 4D is *"secreted **Wnt and BMP antagonists**"* and it
+carries the heading **"Normoxia Reduces Frzb and Dkk1 Protein Levels"** — ELISA, not mRNA. And
+`hallett2021` (eLife, PMC8313235) shows the resting-zone stem cell requires exactly that: LRCs are
+enriched for Wnt *inhibitors*, non-LRCs for Wnt *activators*, and forcing Wnt on in PTHrP⁺ resting
+chondrocytes (*Pthlh-creER; Apc*-fl) **"impaired their ability to form columnar chondrocytes."**
+`zhang2018yap` adds the identity arm — hypoxia → HIF-1α → YAP (Hippo-independent) → SOX9/COL2 — and,
+crucially, **reoxygenation reverses it.** A toggle, not a ratchet.
+
+> **Low pO₂ → HIF-1α → YAP/SOX9 + Frzb/Dkk1/Grem1 → Wnt-inhibitory niche → pool preserved.
+> High pO₂ → Frzb/Dkk1 protein falls → Wnt de-repressed → columnar/hypertrophic output → length
+> produced, pool spent.**
+
+**And that relaxes F-R007's impossible constraint.** F-R007 required `p ≥ 0.500` — the stem-daughter
+renewal fraction — and found 0.392–0.493 across 36 combinations. But every one of those numbers comes
+from an animal in a **constant** regime. Over a cycle of `N_E` expansion rounds at `p_E` and `N_S`
+spend rounds at `p_S`, the pool returns to baseline when
+`N_E·ln(2p_E) + N_S·ln(2p_S) = 0` — when the **geometric mean of `2p` over the cycle equals 1.**
+Not `p ≥ 0.5` always; `p ≥ 0.5` on average.
+
+> **Growth that does not end is not a state to be held. It is a cycle with net-zero pool balance,
+> and height accrues one spend-phase at a time. Rate = spend-phase output ÷ cycle time — so "fast"
+> and "unending" are set by different parameters and stop competing.**
+
+This is why F-R014 and F-R015 kept inverting: each was hunting a single optimal oxygen tension for a
+system whose two phases have opposite optima. `brighton1969` and `leijten2012` measure the spend
+phase; the A-V fistula measures a system with its expansion phase intact. They were never in conflict.
+
+**The named hazard is lactate.** `cih2025` (PMC12306074): chronic intermittent hypoxia inhibited long
+bone growth via lactate → **H3K18 lactylation on the *PPARγ* promoter** → adipogenic shift in BM-MSCs,
+partially rescued by T0070907. Different timescale and different compartment from the proposed cycle —
+but `brighton1983` showed the plate has **no glycerol phosphate shuttle in any zone**, so its entire
+redox balance leaves as lactate. Lactate clearance is a design parameter of the expansion phase, and
+`serrat2010`'s convection carries it both ways.
+
+**What would kill it:** a replicative or epigenetic clock in the resting-zone cell that runs
+independently of `p`, so restoring pool *size* does not restore pool *capacity*. The 2026 PRISMA
+systematic review of resting-zone quiescence (PMC13110114) says the field cannot currently settle it:
+*"features of cellular quiescence in RZ chondrocytes remain poorly reported and underexplored."*
+The framework is not proven — it is now specific enough to be wrong in a particular way.
