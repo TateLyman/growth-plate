@@ -754,3 +754,60 @@ stain); what is its pO₂; is there PDGFRα⁺/Gli1⁺ influx at the margin; is 
 **Every open question in this branch is answerable from one piece of tissue that exists in living
 people** — and `imre2025` was published this year, so at least one of them is alive, identified,
 thirty-one, and still growing.
+
+
+---
+
+## The sixteenth summary — F-R025, the drive is not endocrine
+
+You did get `smith2008`, and it settles term C.
+
+**The ESR1-null man at 28.5 y: IGF-I 528 ng/ml (nr 123–465) — above the adult range — and oestradiol
+119 pg/ml (nr 10–50), 2.4× above it** (ER-α disruption removes the negative feedback, so he was
+swimming in a hormone he could not read). The paper states it: *"the IGF-I concentrations in the
+propositus were slightly elevated for an adult male, and testosterone levels were persistently within
+normal limits."*
+
+**What that bought:** arm span **213 → 216 cm over ten years = 0.30 cm/yr** (unconfounded; stature is
+confounded by bilateral distal femoral surgery), bone age **15 → 17.5 over seven years**, and
+**"length of the hands and feet was unchanged."** `maffei2004`'s untreated series is the cleanest:
+**177 → 179 → 180 → 182.5 → 183.5 cm across five adult years = 1.3 cm/yr, approximately linear**, then
+oestradiol took him to 184.5 and stopped him there.
+
+> **An open, uncloseable, cell-containing human growth plate under supranormal IGF-1 produces
+> 0.3–1.3 cm/yr against a pubertal 8–10.**
+
+**This forecloses the obvious plan.** Hold the plate open and drive it with GH/IGF-1 — refuted before
+anyone runs it, because the drive was already supranormal. `maffei2004` adds the androgen arm:
+**27 months of supraphysiological testosterone with bone age frozen at 15 throughout. Term C is local,
+exactly as F-R023 requires.**
+
+**Second finding — the two ways of never closing are not equivalent.** Aromatase deficiency (no
+ligand) **closes the moment you give the ligand back**: `maffei2004` went 183.5 → 184.5 on oestradiol
+and stopped. ESR1 disruption (no receptor) **"could not be closed by any means — six months of
+transdermal oestrogen raising free oestradiol tenfold had no detectable effect."** **The durable form
+of term A is receptor-level, not ligand-level** — and the atlas holds the SERD class well
+(`fulvestrant` 33, `tamoxifen` 135) while `ESR1 disruption` returns **2**.
+
+**Third — residual growth is not uniform across plates.** Same man, same decade: **arm span grew,
+hands and feet did not.** The Marmara case lists humerus, radius, ulna, femur, tibia, fibula still
+unfused at 31 — long bones only. A metacarpal physis spans nearly the whole width of a narrow bone; a
+femoral physis sits inside a wide metaphysis behind a substantial perichondrial ring. **Different
+cylinders** — a testable prediction of F-R023's pressure-vessel model, and an anomaly the endocrine
+model does not address at all.
+
+**So the goal decomposes cleanly:** *never close* — **solved, and now graded** (receptor-level survives
+a 10× challenge); *constant* — **solved** (linear multi-year adult growth, bone age frozen for four
+years, open epiphyses at BA 16 in a 27-year-old); *fast* — **unsolved, and now known not to be
+endocrine.**
+
+**One question remains: why does an open, uncloseable, well-driven plate run at a tenth of pubertal
+speed?** Leading answer, from F-R015: the **8% pO₂ switch**. An adult epiphysis is far better perfused
+than a child's; above the switch the chondrocyte makes collagen instead of proteoglycan, generates no
+swelling pressure, and does nothing with every cell intact. **That would explain the entire 1 cm/yr
+and it is testable with one Safranin-O stain.** None of F-R023's three candidate answers requires a
+drug, and none touches F-R022's tumour-suppressor ceiling.
+
+**Next round needs no new papers:** the atlas's round-86 census already holds 14 aromatase-deficient
+males from 743 screened records. Extracting growth velocities across all fourteen tests §1, which
+currently rests on two cases.
