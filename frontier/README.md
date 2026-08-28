@@ -702,3 +702,55 @@ contralateral control, gripping radially but sliding axially so it does not beco
 constantly — tension-band plates, guided growth, the Luque trolley — and **every device ever built
 applies axial force. Nobody has built one that applies radial force**, because nobody has framed the
 plate as a pressure vessel.
+
+
+---
+
+## The fifteenth summary — F-R024, "never closes" is solved; velocity is the whole problem
+
+The strongest evidence in this project was in the atlas the whole time, in
+`round200_arrest_not_absence_and_the_adult_velocity.yaml`, and I had not read it.
+
+**Term A — the plate never closes — is a described human phenotype with a failed closure attempt on
+record.** `smith2008`'s ESR1-null man: **204 cm at 28**, continued adult growth, and *"**could not be
+closed by any means — six months of transdermal oestrogen raising free oestradiol tenfold had no
+detectable effect**,"* bone age moving only 15 → 17.5 in three and a half years. Not a mouse inference:
+a deliberate, sustained, 10× closure attempt in a person that **failed**.
+
+**Term B — the cells are still there.** `herrmann2002`: grew 170 → 197 cm, **ceased spontaneously at
+24**, and three years later still untreated showed **open epiphyses at bone age 16**. *"A plate that
+had run out of cells would not still be a plate."* **Arrest, not depletion.** A 27-year-old with an
+open physis that has simply stopped being used. The round-86 census: 743 records screened, 45 full
+texts, **20 people** with complete oestrogen loss, **not one** with a final height reached without
+intervention.
+
+**Term C — velocity — is unsolved, and it is the entire remaining problem.** `maffei2004`
+**1.44 cm/yr** (21→29 y, bone age frozen at 15 *through 27 months of supraphysiological testosterone*);
+`imre2025` **0.83 cm/yr** (25→31 y, still growing at 31). The atlas's own verdict: *"**ONE CENTIMETRE A
+YEAR IS THE MEASURED CEILING OF THE DURATION LEVER.** Removing oestrogen for an entire lifetime does
+not restore pubertal velocity."* Against a pubertal 8–10 cm/yr, **the uncloseable plate runs at roughly
+one-tenth of what the same tissue does in a fourteen-year-old.** And the spread — one man quit at 24
+while others ran a decade longer — is *"larger than any pharmacological effect in this file."*
+
+**Which means every one of the twenty-three rounds before this was working on B.** Reserve, influx, the
+clock, the renewal fraction, the groove, CCN2, Hedgehog. **B is not the binding constraint in the one
+population where A is already satisfied.** Those men have cells and an uncloseable plate. What they
+lack is drive.
+
+**F-R023 says what drive is made of:** `dH/dt = P_swell × f_axial × Φ`. An open, arrested,
+cell-containing plate at 1 cm/yr has one of those near zero, and **nobody has ever looked at the
+tissue.** The leading candidate is P_swell: F-R015's **8% pO₂ switch** gates the proteoglycan program,
+an adult epiphysis is far better vascularised than a child's, and **a plate sitting above the switch
+would be making collagen instead of proteoglycan and generating no swelling pressure with all its cells
+intact.** That single fact would explain the entire 1 cm/yr.
+
+**A × C is the product nobody has attempted** — because in every recorded case of an uncloseable plate,
+the clinical response was to **close it**. Twenty people in the world literature had permanently open
+growth plates and medicine's response was to shut them.
+
+**And one measurement answers almost everything.** An MRI or biopsy of an adult oestrogen-null open
+physis would settle: does it have a resting zone; is it making proteoglycan or collagen (one Safranin-O
+stain); what is its pO₂; is there PDGFRα⁺/Gli1⁺ influx at the margin; is the PTCH1⁺ groove intact.
+**Every open question in this branch is answerable from one piece of tissue that exists in living
+people** — and `imre2025` was published this year, so at least one of them is alive, identified,
+thirty-one, and still growing.
