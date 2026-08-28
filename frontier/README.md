@@ -371,3 +371,55 @@ independently of `p`, so restoring pool *size* does not restore pool *capacity*.
 systematic review of resting-zone quiescence (PMC13110114) says the field cannot currently settle it:
 *"features of cellular quiescence in RZ chondrocytes remain poorly reported and underexplored."*
 The framework is not proven — it is now specific enough to be wrong in a particular way.
+
+
+---
+
+## The ninth summary — F-R018, the clock counts divisions, and capacity is not conserved
+
+F-R017 said the framework dies if the resting-zone cell carries a clock independent of `p`. **It does,
+and it counts divisions, not time.** Nilsson & Baron: *"growth plate senescence occurs because the
+progenitor chondrocytes in the resting zone have a limited replicative capacity which is gradually
+exhausted with increasing cell division… senescence is a function of cell divisions rather than time
+alone,"* and growth-inhibiting conditions *"conserve"* that capacity — which is why catch-up growth
+exists. So a hold phase genuinely banks potential; that half of F-R017 is already validated across
+species and decades. But an expansion phase that grows the pool **by division** spends the budget it
+is trying to save, and F-R017 tracked pool *size* when what must return is *capacity*.
+
+**The atlas got here first and graded the pessimistic answer E.**
+`arm3_pool_ceiling_is_imposed_not_intrinsic.yaml` holds: the ceiling is **not Hayflick and not
+telomeric** (C); the program is **epigenetically encoded**, not hormonal, not time (B); it is delayed
+by anything that slows growth (B); and — *"INFERENCE, and the most consequential one in the node"* —
+**"delaying is height-neutral rather than height-additive" (E)**, with the basis line *"no study has
+run a full charge-then-discharge cycle to adult height and compared."* Two independent routes, same
+gap, and the futility assumption is explicitly unproven.
+
+**The arithmetic, which I think everyone has had backwards.** "Height-neutral" assumes a fixed
+division budget. That holds only for purely differentiative divisions. For a per-cell counter `n`, a
+symmetric self-renewing division gives `1×n → 2×(n−1) = 2n−2`, a **net gain of `n−2`** — positive for
+every `n > 2`. The Hayflick budget is per *cell*; the pool's budget is the *sum*, and the sum grows
+whenever a cell doubles rather than differentiates. So the entire question reduces to one measurable
+property:
+
+> **Per-cell counter, partitioned at division → expansion CREATES capacity → height-additive,
+> unbounded while `n > 2`. Per-lineage program, inherited whole → expansion adds cells but not
+> capacity → height-neutral, and the atlas's grade-E inference is right.**
+
+**The one in vivo test is consistent with capacity addition.** `newton2024sag` (PMC11063944): SAG
+beads in one rat femoral SOC, vehicle beads contralateral. The treated femur was significantly longer
+at 1 month, *"an effect that was even more pronounced 2 and 6 months after implantation"* — tibia too,
+growth rate up by calcein/xylenol, growth-plate height augmented, no OA at 6 months. And **"the signal
+vanished within 3 weeks."** A stimulus gone by week 3 whose length advantage keeps widening at months
+2 and 6 is not a velocity effect; it is capacity that was added once and kept paying out.
+
+**And if it falls the other way, the clock is still resettable.** `stat3clock2023` (PMC9924946) built a
+**DNA-methylation epigenetic clock across human chondrocyte ontogeny**, then showed a **small-molecule
+STAT3 agonist decreased adult chondrocyte methylation** (STAT3 ablation hypermethylated), with
+**DNMT3B** as the CUT&RUN-validated target. Plus local OSK delivery (PMC13049178, 2026). The ceiling
+being epigenetic rather than telomeric is what makes a reset conceivable at all.
+
+**The deciding experiment is one assay on tissue that already exists:** expand a resting-zone pool with
+SAG, then measure the expanded pool's **mean methylation age** against the contralateral control on the
+chondrocyte clock. Age up → per-lineage → neutral. Age flat while cell number rose → per-cell →
+capacity was created → unbounded height is arithmetically available. The pool-expansion lab and the
+clock lab have never cited each other.
