@@ -1682,3 +1682,55 @@ plate lever.
 
 **Wanted:** **PMID 34014834** (region-specific ER blocking) — closed access. Anything primary on
 **vertebral growth-plate cessation control**. Everything else remaining is experiments, not documents.
+
+---
+
+## The thirty-second summary — F-R041, two receptors with opposite signs, and a hole in Term A
+
+**`jin2021` read in full — the best-shaped lever in the programme.** PHTPP (selective ERβ antagonist),
+**0.3 mg/kg/day i.p., 5 d/wk, 4→12 weeks**, female C57BL/6, n=6: **femur length ↑ (P<0.01)**, **GP height
+↑ (P<0.01)**, **PZ ↑ with HZ unchanged**, **PZ/HZ ratio the highest of any group**, **PCNA ↑**, **TUNEL
+unchanged**, **PTHrP ↑ / Ihh ↓**, local IGF-1 unchanged, and **serum GH and IGF-1 higher**. The authors:
+*"ERβ blocking can promote appendicular bone growth via the **Ihh/PTHrP signaling pathway rather than the
+GH/IGF-1 pathway in situ**."*
+
+It is the right shape for five reasons: it moves **`A`** specifically (PZ up, HZ unchanged — the exact
+signature of the term Longshanks moved and the term Börjesson showed E2 suppresses); it is not an
+apoptosis artefact; PTHrP↑/Ihh↓ is `b` down, reached from a new pathway; it *raises* the systemic drive
+rather than costing it; and **systemic dosing worked, so it needs no cartilage targeting.**
+
+**And MPP validates the ERα story from the other side:** systemic ERα blockade *decreased* femur length,
+GP height, PZ and PCNA — reproducing whole-body ERα⁻/⁻ and every human aromatase/ESR1 case. **Systemic
+ERα blockade loses the spurt; that is why the ERα arm must be cartilage-restricted.**
+
+**FLAW 1 (limb-only) substantially repaired — by the other receptor.** Chagin 2004: *"Young adult
+ERβ⁻/⁻ mice demonstrated an increased **AXIAL- and APPENDICULAR**-skeletal growth… ERβ is a physiological
+inhibitor of appendicular- and axial-skeletal growth."* ERα is appendicular-selective (ERα⁻/⁻ crown-rump
+**98% of control**); **ERβ inhibits both.** Residual: 8 weeks of PHTPP during puberty did *not* move
+lumbar length, while lifelong genetic ERβ⁻/⁻ did by 4 months — so duration or completeness matters.
+
+**NEW FLAW, and it is in Term A which I had called solved.** Chagin 2004: *"the growth plates were
+**consistently FUSED in the appendicular skeleton of 18-month-old female ERα⁻/⁻ mice**… **must be
+mediated through ERβ** because old ERα⁻/⁻β⁻/⁻ mice displayed **unchanged, unfused growth plates**."*
+**Blocking ERα alone does not give permanent non-closure.** Every never-close result this branch relied
+on is an ERα result, and Börjesson stopped at 12 months; Chagin went to 18 and found fusion. Caveats that
+bound it: the driver is compensatory hyperoestrogenaemia specific to the whole-body KO (*"the ERα⁻/⁻ and
+ERα⁻/⁻β⁻/⁻, **but not the ERβ⁻/⁻**, mouse models have clearly increased serum estradiol"*), which a
+cartilage-restricted block should not produce; and the human ERα-mutant man resisted 10× oestradiol with
+ERβ intact. **But it proves ERβ can mediate fusion given enough oestrogen for long enough.**
+
+> **The theory converges on two receptors, and they do not cancel.** Block **ERβ systemically** — raises
+> `A`, raises PCNA without apoptosis, raises serum GH/IGF-1, **reaches the spine**, and **closes the
+> ERβ-mediated fusion escape**. Block **ERα in cartilage only** — removes local closure and age-related
+> slowing while preserving the systemic spurt.
+
+**`henry2012`** read for completeness: postnatal Sox9 inactivation causes stunting, reduced proliferation
+and de-differentiation — Sox9 is **required**, but this is loss-of-function only, so it is a downstream
+marker, not a lever with a gain arm. Same trap as CREB and acetyl-CoA; recorded, not promoted.
+
+**Flaw 5 now has its first real candidate — PHTPP — with the test named: the stem pool was never measured
+under it.** Flaw 7 (GH × cartilage ERα) unchanged and still the crux.
+
+**Needed: Chagin AS et al., JBMR 2004, PMID 14753739, DOI 10.1359/jbmr.0301203** — not OA, no PMC. It is
+load-bearing twice: the magnitude of the axial+appendicular gain in ERβ⁻/⁻ mice (the velocity number for
+the whole ERβ arm) and the 18-month fusion histology. Lower priority: **Lindberg 2001** and **Vidal 1999**.
