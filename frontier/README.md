@@ -1126,3 +1126,76 @@ grows on diffusion alone at 1 mm; bone does not.
 
 **And the honest limitation on GH:** *"not all patient samples responded… interindividual differences
 in GH responsiveness."*
+
+---
+
+## The twenty-third summary — F-R032, output is conjugate to the pool, and that is an identity
+
+Two documents this programme had never read: **`chu2026`'s supplement** (Tate supplied it — the atlas
+called it *"the highest-value unobtained document"*) and **`chu2025`'s full text** (PNAS, PMID 41289405,
+PMC12685065, open access, plus its SI Appendix and figures).
+
+**The identity.** `round247` showed that under neutral drift the self-renewal fraction `r` cancels out of
+the output equation — one committed cell per stem division for every `r` — and concluded the fraction is
+not in the equation. That is right *only because the premise imposed neutrality*. Let symmetric renewal
+have probability `a` and symmetric loss `b`:
+
+> **E[committed] + E[Δstem] = 1, exactly, for all `a` and `b`.**
+
+**Output above the neutral rate is not paid for by pool loss. It *is* pool loss, in the same cells,
+counted twice.** The atlas has been pricing an "exchange rate" empirically since R198. There is no
+exchange rate; it is 1:1 and it is arithmetic. `round247` was right that `r` cancels and wrong that the
+fraction is gone — the *neutral* parameter cancels, the **asymmetry `a − b` is the pool derivative** and
+is conjugate to output one-for-one. `round240` named the right quantity and the wrong fraction.
+
+**Measured, not argued.** `chu2025` fig. **S6** stratifies clones in the femoral plate, n=5/group:
+**singlets 47.4% → 37.6% (p<0.01), dyads 38.7% → 40.4% (n.s.), long columns 7.4% → 16.1% (p<0.001).**
+GH moves −9.8 points out of the retained class and +8.7 into the committed class **and leaves the
+asymmetric class alone — the one class the arithmetic says is fate-neutral.** With CD73⁺ cells
+283 → 220/mm (p<0.001) and **Ki67 in stem cells unchanged (22.2% → 19.3%, n.s.)**: the pool falls by
+*conversion*, not by dividing faster.
+
+**The escape.** The identity is denominated *per stem division*, so it prices **λ** and does not price
+**N**. Doubling λ doubles output and doubles the spend; **doubling N doubles output and spends nothing
+extra per unit output.** Every drug the field has targets λ. **Fast must be bought in N.** Which makes
+Terms B and C the same lever, and the whole problem one inequality:
+
+> ### `influx ≥ λ·N·(b − a)`, with ER signalling blocked, and λ·N large.
+
+The RHS scales with the drive, so **influx cannot be a pre-treatment — it must be co-dosed and titrated
+against the drive.** Nobody has done this: `trompet2024` fired one Hedgehog pulse and stopped; the GH
+literature raises λ with no influx term at all.
+
+**`chu2026`'s figures correct the atlas's record of `chu2026`.** Round 240 recorded, from the abstract,
+that it showed GH *"stimulating proliferation of both cartilage stem cells and proliferative-zone
+chondrocytes."* **Every stem-compartment endpoint in the supplement is null and trends the wrong way** —
+GP2 cycling 22.5%→23%, RZ CYTL1⁺ n.s. (down), RZ RAMP3⁺ n.s., RZ SOX9⁺ P=0.79 (down) — while GP3
+(proliferating) goes 14%→45%, p<0.0001. **And the only length endpoint in the paper is P = 0.1827, n=5
+paired.** The preprint title said *"direct stimulation of cartilage stem cells"*; the published title says
+*"direct effect."* The counterweight round 240 carried can be set down: human agrees with mouse.
+
+**A consequence that kills a whole class of levers.** `A` is a *count*, not a rate. Accelerating a fixed
+count changes *when* cells emerge, not how many per stem division. **Tripling proliferative-zone cycling
+cannot raise height at steady state** — which is exactly what S10T + S8C measured and did not conclude.
+
+**Also in the supplement, unused by anyone:** RZ height does **not** distinguish tall-stature from
+normal-height children (fig. S2L — a lead, n=2 vs 4, unquantified); clonal scaling is exponential,
+i.e. *"stochastic drift in a **zero-sum system**"*, raising the possibility that N is capped by niche
+slots rather than cell behaviour; the explant is **normoxic** (~18.6% O₂ against Brighton's 6–7% PZ and
+2.1% HZ, on the wrong side of the 8% switch); the culture itself **halves** the cycling fraction
+(14.2% → 8.4%, p<0.0001); and the explant is **influx-free by construction** — a central core has no
+groove of Ranvier — so it is permanently in the bounded regime.
+
+**One measurement, absent, would have decided the paper:** fig. S8C is a paired test on *absolute* plate
+height at two months **with no day-zero baseline**, though spare slices from each biopsy were explicitly
+allocated to immediate fixation. **The highest-value missing measurement in the field's best human
+platform is a day-zero plate height, and it costs nothing.**
+
+**Chain checked, not assumed.** `chu2025` names **PCP** as the regulator of symmetric vs asymmetric stem
+division — the one lead that would separate the `λ` machinery from the `a−b` machinery. I pulled the cited
+paper (Li 2017, eLife 6:e23279): **"self-renewal" appears 0 times, "fate" once (about *Drosophila*), and
+every "stem"/"asymmetric" hit is introduction framing or reference list.** It contains no stem-fate data.
+The lead is real and currently **unsupported** — recorded as such.
+
+**Still unexplained, on the record:** Wadlow's flat ~5 cm/yr from 13 to 22. Under §2 a pituitary giant
+sits in the `a < b` regime and should decelerate. He did not.
