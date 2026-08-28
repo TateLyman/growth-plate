@@ -1199,3 +1199,61 @@ The lead is real and currently **unsupported** — recorded as such.
 
 **Still unexplained, on the record:** Wadlow's flat ~5 cm/yr from 13 to 22. Under §2 a pituitary giant
 sits in the `a < b` regime and should decelerate. He did not.
+
+---
+
+## The twenty-fourth summary — F-R033, the thickness budget, and a geometry error of mine
+
+**I had the geometry wrong and I am correcting it first.** F-R032 §3 said doubling N doubles output, and
+§5b proposed that niche slot count scales with plate cross-sectional area. **Columns act in parallel** —
+every column pushes the epiphysis away by the same distance simultaneously, so adding columns makes a bone
+**wider, not longer**. The field's own rate formula (divisions per column per unit time × terminal cell
+height) has no width term. So `N` must be read as **reserve depth above one column**, and the "free"
+direction I had found contributes nothing to height. **The niche-widening architecture is withdrawn.**
+
+**Kondo 2021 (PMC8804827) is the measurement that settles it.** Mouse tibia P6–P70: growth rate tracks
+**resting zone height (R² = 0.973)** and **proliferative zone height (R² = 0.948)** — and **growth plate
+area returns R² = 0.171, P = 0.415.** The abstract reports width as "the strongest correlation"
+(R² = 0.989), but the paper's own text has rate falling after P13 while width rises to P28 — **opposite
+trajectories, and R² is unsigned, so that is a strong NEGATIVE correlation.** The area null is the check
+that proves the signs: area combines a positive axial dimension with a negative radial one and cancels.
+
+**U2 — closed to a residual. The plate has a diffusion-limited thickness budget and every term is inside
+it.** Seven lines: growth-plate thickness conserved to ~2–3× across 10⁵-fold body mass while **articular
+cartilage in the same animals spans 33×** (90 µm mouse → 3,000 µm elephant); the plate is fed essentially
+from one side (Brighton: metaphyseal bone 19.8 mmHg vs diaphyseal 108.7); chondrocytes evolved
+**haemoglobin bodies, P50 27.6 vs 58.2 mmHg**; HIF-1α deletion kills the plate interior; `newton2019`'s
+clone size runs **7.8 central vs 5.7 lateral by SOC proximity (P = 0.0012)** and **axitinib, which blocks
+SOC vessels, reduced it (P = 0.0023)**; the one-sided slab calculation gives ~1.3× headroom and the
+observed intra-plate spread is 1.37×; and the only untaxed dimension is the one that does not lengthen.
+
+> **Identity 1 (conjugacy): output above neutral = pool loss, 1:1. Prices λ.**
+> **Constraint 2 (thickness budget): RZ + PZ + HZ ≤ L_max(D, C₀, Q). Prices n, A and h_term against each other.**
+> **There is no free term** — and the one lever outside both is **supply**, since L_max ∝ √(D·C₀/Q).
+
+**U3 — advanced, one measurement short, and the news is bad.** Reading `trompet2024` Fig 5 panel by panel:
+Ki67 up only at **1 week** (femur 4.5→13%, tibia 8→19%, both ✱✱), growth **rate** up only at 1 month and
+**NS at 2 months**, length offset ~1.5 mm on 35 mm femur (≈4%) persisting to 6 months. The famous **+61%**
+is a different experiment read **two days after the last dose**, and the bead's Gli1 signal **vanished
+within 3 weeks**. **That is a one-off gain banked, not a compounding one.** But the pool was counted at one
+week and **never again** — set-point versus sustained-elevation is undecided, and nobody has fired a
+second pulse.
+
+**Two things in Trompet that are better than recorded:** the age-window is a **route artefact** — genetic
+activation in PTHrP⁺ cells works *"independent of age"* — which removes that constraint; and **Hedgehog is
+named as the `a − b` regulator** (*"the balance between generation of daughter stem cells and committed
+progeny"*), acting by creating a **Wnt-inhibitory environment**, converging with `chu2026`'s human root
+niche being **low in WNT and TGF-β**. Unlike F-R032's PCP lead, this one is supported by its own data.
+
+**"Fast" now has a number.** Rat proximal tibia runs **~360–400 µm/day**; the human distal femoral physis
+averages **~27 µm/day** and peaks near 50–55. **A rat plate runs ~7× a human plate, at similar thickness.**
+Wilsman's four-plate series spans 50→400 µm/day with cycle times 30.9/34.0/48.7/76.3 h and *"almost all
+differences… attributable to the length of the **G1 phase**."* And **Longshanks** — 20 generations of
+selection, **13% longer tibiae** — moved *"the number of proliferative chondrocytes"* and **nothing else**,
+with `marchini2019` naming de-repression via two limb enhancers of **Nkx3-2**.
+
+**Where it is still flawed, precisely:** the thickness cap is inferred from seven lines and never measured
+— **no one has ever measured oxygen tension in a human growth plate**; Trompet's pool persistence is
+unmeasured beyond one week; and **Longshanks is ambiguous in exactly the sentence that matters** (more
+cells *per column*, which §2 taxes, or *per plate*, which §0 says is useless) — and that paper is
+paywalled.
