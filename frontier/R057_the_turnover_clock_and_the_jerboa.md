@@ -345,27 +345,36 @@ closes. The missing component is a numerator-raiser that leaves τ alone, and Co
 
 Ranked by how much each would move the model, not by how hard it is to get.
 
-1. **Farnum CE, Wilsman NJ — the hypertrophic-zone turnover measurement itself.** Cooper cites it as
-   reference 7 (neonatal bat and mouse forelimb). I need the primary paper: **is τ ≈ 24 h a constant across
-   species and ages, or does it vary and simply happen not to co-vary with rate in that dataset?** The
-   entire `dL/dt = N_h · h_term / τ` framing stands or falls on this. Likely
-   *Farnum CE, Wilsman NJ, "Determination of proliferative characteristics of growth plate chondrocytes by
-   labeling with bromodeoxyuridine," Calcif Tissue Int 1993* and/or the 1997 *"The domain of hypertrophic
-   chondrocytes in growth plates growing at different rates"* (PMID 9351885).
-2. **Wilsman NJ, Farnum CE, Leiferman EM, Fry M, Barreto C. "Differential growth by growth plates as a
-   function of multiple parameters of chondrocytic kinetics." J Orthop Res 1996;14(6):927–936** (PMID
-   8982136). Wiley, paywalled. I have the abstract-level numbers (enlargement 59%→44%, matrix 32%→49%) and
-   need the full eight-variable decomposition and the equations.
-3. **Cooper 2013 Supplementary Figures S3 and S5.** S3 has **total cell number per zone in the jerboa
-   metatarsal** — which tells me whether the jerboa raises `h_term` alone or `N_h` as well. S5 is the BrdU
-   pulse-chase that establishes the 12 h + 12 h schedule. Nature supplementary; may be free at PMC3606657.
-4. **Any measurement of τ under an intervention.** Nobody appears to have asked whether resveratrol,
-   dexamethasone or VEGF blockade changes hypertrophic-zone transit time. If the answer exists it decides
-   whether §4's central claim is a measurement or an inference.
-5. **Growth-plate histology or radiographs from the CYP19A1⁻/⁻ rabbits** (standing request, F-R056).
-6. **Voss SD et al., Pediatr Blood Cancer 2015;62(1):45–51** in full — I want the **magnitude** of physeal
-   widening in the children, the agent-by-agent breakdown, and whether any patient's height velocity was
-   recorded.
+1. **Farnum CE, Wilsman NJ. "The domain of hypertrophic chondrocytes in growth plates growing at different
+   rates." Calcif Tissue Int 1997;61(4):323–328. PMID 9351885.** Cooper's reference 7 and **the single most
+   important outstanding paper in the branch.** Europe PMC: closed, no PMC copy, not OA. This is the τ
+   measurement. **Is τ ≈ 24 h a constant across species, ages and rates, or does it simply happen not to
+   co-vary in that dataset?** The entire `dL/dt = N_h · h_term / τ` framing stands or falls on it, and so
+   does §4's claim that resveratrol and VEGF blockade bought τ.
+2. **Breur GJ, VanEnkevort BA, Farnum CE, Wilsman NJ. "Linear relationship between the volume of hypertrophic
+   chondrocytes and the rate of longitudinal bone growth in growth plates." J Orthop Res 1991;9(3):348–359.
+   PMID 2010838.** Closed, not OA. If the relationship really is **linear**, this is the coefficient that
+   converts a volume gain into a length gain — the number the identity has been missing since F-R043. It
+   would tell me directly what the jerboa's 23,000 fl is worth in centimetres.
+3. **Kuhn JL, DeLacey JH, Leenellett EE. "Relationship between bone growth rate and hypertrophic chondrocyte
+   volume in New Zealand White rabbits of varying ages." J Orthop Res 1996;14(5):706–711.** Closed. Same
+   relationship **in the rabbit** — the species that fuses, that Weise, Gafni, Nilsson and Karimian all used,
+   and **across ages**, which means it may also carry how `h_term` changes as the plate senesces.
+4. **Wilsman NJ, Farnum CE, Leiferman EM, Fry M, Barreto C. "Differential growth by growth plates as a
+   function of multiple parameters of chondrocytic kinetics." J Orthop Res 1996;14(6):927–936. PMID
+   8982136.** Wiley, closed. I have the abstract-level numbers (enlargement 59%→44%, matrix 32%→49%) and need
+   the full eight-variable decomposition and the equations.
+5. **Cooper 2013 Supplementary Figures S3 and S5** — `NIHMS440348-supplement-1.docx` and `-2.pdf` at
+   PMC3606657. **These are not paywalled**; PMC serves them behind a proof-of-work bot challenge that I will
+   not solve, and they open normally in a browser. S3 has **total cell number per zone in the jerboa
+   metatarsal**, which decides whether the jerboa raises `h_term` alone or `N_h` with it. S5 is the BrdU
+   pulse-chase behind the 12 h + 12 h schedule.
+6. **Any measurement of τ under an intervention.** Nobody appears to have asked whether resveratrol,
+   dexamethasone, oestrogen or VEGF blockade changes hypertrophic-zone transit time. If such a number exists
+   anywhere it converts §4's central claim from an inference into a measurement. I could not find one.
+7. **Growth-plate histology or radiographs from the CYP19A1⁻/⁻ rabbits** (standing request, F-R056 §1).
+8. **Voss SD et al., Pediatr Blood Cancer 2015;62(1):45–51** in full — the **magnitude** of physeal widening
+   in the children, the agent-by-agent breakdown, and whether any patient's height velocity was recorded.
 
 ---
 

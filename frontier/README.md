@@ -2165,8 +2165,16 @@ plate area → +4.5% length over a year). A stack of four τ-lengtheners never c
 fails the brief as badly as one that grows fast and closes. Not building the oestrogen side until a
 numerator-raiser with τ held fixed exists.**
 
-**Papers wanted:** **Farnum & Wilsman, the hypertrophic-zone turnover measurement itself** (Cooper ref 7;
-likely Calcif Tissue Int 1993 and/or PMID 9351885) — the whole τ framing stands or falls on whether 24 h is a
-constant; **Wilsman 1996, J Orthop Res 14:927 (PMID 8982136)** full eight-variable decomposition;
-**Cooper 2013 Supplementary S3 and S5** (jerboa per-zone cell counts; the BrdU schedule); **any measurement
-of τ under an intervention** — nobody appears to have asked; **Voss 2015 Pediatr Blood Cancer 62:45** in full.
+**Papers wanted, ranked.** (1) **Farnum & Wilsman, Calcif Tissue Int 1997;61:323, PMID 9351885** — *"The
+domain of hypertrophic chondrocytes in growth plates growing at different rates."* Closed, no PMC copy. **The
+single most important outstanding paper in the branch:** the whole τ framing stands or falls on whether 24 h
+is a constant. (2) **Breur, VanEnkevort, Farnum, Wilsman, J Orthop Res 1991;9:348, PMID 2010838** — the
+*linear* relationship between hypertrophic cell volume and growth rate; this is the coefficient that converts
+a volume gain into centimetres, missing since F-R043. (3) **Kuhn, DeLacey, Leenellett, J Orthop Res
+1996;14:706** — same relationship **in the rabbit, across ages**. (4) **Wilsman 1996, J Orthop Res 14:927,
+PMID 8982136** — the full eight-variable decomposition. (5) **Cooper 2013 Supplementary S3 and S5**
+(`NIHMS440348-supplement-1.docx`, `-2.pdf` at PMC3606657) — *not paywalled*, PMC serves them behind a
+proof-of-work bot challenge I will not solve; they open in a browser. (6) **Any measurement of τ under an
+intervention** — nobody appears to have asked, and it would turn this round's central claim from an inference
+into a measurement. (7) **CYP19A1⁻/⁻ rabbit growth-plate histology** (standing). (8) **Voss 2015, Pediatr
+Blood Cancer 62:45** in full.
