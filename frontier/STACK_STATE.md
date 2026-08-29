@@ -1,12 +1,98 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R090
+**Last updated:** F-R108
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-SWEEP. **F-R108 — EVERY GEO DATASET. SMO CONFIRMED IN SIX SPECIES; THE SURVIVING AXIS IS CELL CYCLE, INVERTED.**
+
+**622 series enumerated, all 622 downloaded, 264 loaded to gene symbols (7 species), 205 scored.**
+Code + outputs: `frontier/analysis/geo_sweep/`. Full corpus listing with sample labels: `catalog.txt`.
+
+### => ZONE BATTERY, 9 DATASETS, 6 SPECIES (rat x3, HUMAN, mouse x2, bovine, chick)
+**SMO: 5+ / 0- / 4 at zero of 9. Never depleted in the stem compartment in any species.**
+Same cells: GLI1 4/8 negative, PTCH1 3/9 negative, IHH 6/9 negative, **BOC 6/8 positive**,
+**SUFU 0+/5-**. Receptor present, co-receptor high, ligand absent, output off = maximum agonist
+headroom, now in six species. Strongest form F-R092 has ever taken.
+**HHIP splits by clade: rodent RZ-enriched, HUMAN -0.57 and chick -0.64.** The human root has LESS
+decoy than its PZ. F-R092's decoy geometry is rodent-specific and the human case is better.
+
+### => FOUR AGENTS MOVE ON THAT TABLE
+| gene | result | consequence |
+|---|---|---|
+| **PTH1R** | **1+/7-/1 of 9** | **abaloparatide DEMOTED to the rate axis.** PTHLH 8+/0- (RZ makes the ligand); receptor is in the PZ. F-R089's "maintains RZ quiescence" named the wrong cell. |
+| **ESR1/ESR2** | 2+/4- and **1+/6-** | **F-R083 (ESR1 = RZ gene) does not replicate.** Nilsson 2014's irreversible RZ depletion is real; the mechanism is indirect. Anastrozole survives on outcome only. |
+| **NPR2** | **5+/1- of 8** | **NEW. CNP receptor IS stem-compartment enriched. Vosoritide (approved) may have an unexamined pool component.** Flagged, not an arm. |
+| FGFR3 | 2+/5- | erdafitinib is a PZ/flux agent. Placement confirmed. |
+
+### => F-R107 SS1 FAILS TO REPLICATE, AND THE REASON RETIRES FOUR ROUNDS
+DNMT3A 4+/2-/3 (human -0.01), DNMT1 4+/2-/3, TET1 3+/3-. The 8.9x was one array in one species.
+**Deeper: DNMT/UHRF/TET expression in bulk cartilage is a PROLIFERATION readout** (replication-coupled),
+not a methylation readout. Once cell cycle is removed the signal has no independent existence.
+**F-R104/105/106/107's entire transcript-based argument about row 3's direction is uninterpretable and
+is retired.** Pirfenidone stays OUT on F-R106's human-genetics reason (raises DNMT3a p<0.0001; DNMT3A
+loss = +3.0 SD tall) which does not depend on any of it.
+*Correction:* F-R107's "DNMT1 has no human height phenotype" is true of HSAN1E, **false of common
+variation - 10 GWAS height hits, p=5e-154; TET1 18 hits, p=9e-232.**
+
+### => THE TWO DATASETS WHERE THE PHENOTYPE IS BONE LENGTH (new to the file)
+**GSE189528 Longshanks** (13 generations selection, +11-12% tibia, P14 GP) and **GSE53277 Great Dane vs
+Miniature Poodle GP**. 100 concordant genes. Positive half = proteoglycan supply chain
+(PAPSS2, GFPT1/2, HAS2, CSGALNACT1, HAPLN1) + glycolysis + MEST. Validated 8/8 across Dnmt1-cKO,
+Fgfr3-GOF, enchondroma, human puberty, dexamethasone, SSC.
+**GWAS Catalog: 134 genome-wide height associations across 49 pathway genes; CHSY3 p=8e-240,
+CHSY1 p=3e-208, CSGALNACT1 p=4e-78, GFPT2 p=1e-300. Size/LD-matched null (3000 draws): 134 vs
+69.5 +/- 21.8, empirical p=0.009.**
+
+### => AND THE CONTROL KILLED IT. **SULFATION ARM STAYS CLOSED.**
+Re-scored against the general cartilage-matrix program (ACAN/COL2A1/COMP/MATN/SOX9) instead of the
+dataset mean. **Every sulfation and hexosamine module collapses to noise or points the wrong way.**
+The 8/8 was the chondrocyte matrix program; the pathway was a passenger. Closed for a better reason
+than F-R100's: not "substrate is not limiting" but **"no signal independent of the general chondrocyte
+program in any system where length varies."** The GWAS enrichment is not subject to this confound and
+stays on the ledger as a **LEAD, NOT AN ARM**.
+
+### => WHAT SURVIVED: CELL CYCLE, INVERTED. 10/11 CONTRASTS, 6 SPECIES.
+`analysis/geo_sweep/cycle_matrix.out`. 40 cell-cycle genes minus 17 matrix genes:
+Longshanks **-0.73**, Great Dane **-0.74**, enchondroma **-1.26 / -1.14**, dexamethasone **-0.33**;
+Dnmt1-cKO **+0.35**, Fgfr3-GOF 3-4wk **+1.60**, human late-vs-pre puberty **+0.87**, late-vs-early
+**+1.00**, rat PZ 12wk vs 3wk **+0.19**. Only failure = Fgfr3-GOF at 1-2wk, before its phenotype exists.
+
+> **Relative to what its cells produce, a growth plate that makes long bones cycles LESS. A closing or
+> genetically short plate cycles MORE.** This is F-R058's `dL/dt = flux x v(d)` recovered from
+> transcriptomes. **The lever is v, not flux.**
+
+| agent | sign on the surviving axis |
+|---|---|
+| **dexamethasone** | **correct** - second independent reason for the banking arm |
+| **erdafitinib** | **correct** - Fgfr3-GOF raises cycling +1.60 |
+| **SMO agonist** | **correct** - Gli1+ progenitors carry the long-bone program (+0.41) |
+| abaloparatide | correct sign, **wrong row** (rate, not pool) |
+| **somatropin / mecasermin** | **WRONG SIGN - their mechanism is raising proliferation. REMOVE.** |
+
+### => ENCHONDROMA IS THE ONLY "NEVER-CLOSING" CARTILAGE IN THE CORPUS
+Ollier enchondroma (persistent ectopic growth-plate cartilage, IDH1/2-mutant) scores **above normal
+growth plate** on the length program in two independent datasets and has the **lowest relative cycle
+load of anything measured**; chondrosarcoma scores BELOW enchondroma, so it is not a generic tumour
+effect. **Checked and rejected the hypermethylation explanation** - enchondroma has DNMT1 -0.61,
+UHRF1 -1.72. It is a phenotype matching the target state with no obtainable agent attached.
+
+### => GLUCOSAMINE: THE SECOND EXPERIMENT IN THE FILE THAT EXCEEDS NORMAL, WITH THE USUAL CAVEAT
+`PMC4286662`, OVX rat, 60d, n=10. Paper compares only to OVX-vehicle. Reading the sham column myself:
+RZ chondrocytes **19.5+/-0.5 (GS) vs 15.0+/-0.4 (sham)**; PZ 58.5 vs 47.5; PZ thickness 81.5 vs 66.5 um.
+**BUT total cartilage thickness identical in every group (156.5) and NO bone length measured**, and RZ
+*thickness* fell while RZ *percentage* rose. Stock-is-not-flow (F-R099). **Recorded, not promoted.**
+
+### => REMAINING HOLES
+1. No experiment lowers proliferation without lowering matrix and measures length. That is the one test of the surviving axis.
+2. No bone-length endpoint for glucosamine/GlcNAc in a normal growing animal.
+3. **The entire corpus has no resting-zone transcriptome at more than one age.** GSE16981's RZ is 1-week only.
 
 ---
 
