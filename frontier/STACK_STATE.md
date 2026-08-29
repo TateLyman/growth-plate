@@ -1,12 +1,65 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R109
+**Last updated:** F-R110
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-FORK. **F-R110 — GH IS NULL ON THE AXIS, YOUNG BLOOD DOES NOT WORK, AND THE NEGATIVE HELD AT 2x CORPUS.**
+
+### => THE SCREEN REPLICATED AT DOUBLE SIZE
+**528 datasets, 9,074 contrasts.** Top of the list unchanged - every leading contrast is still age or
+zone (rat 1wk-4wk +0.731, Fgfr3 7d-14d +0.443, rat 3wk-12wk +0.367). **No intervention in the top forty.**
+F-R109's negative is not a small-corpus artefact.
+
+### => GROWTH HORMONE, MEASURED IN HUMAN GROWTH PLATE - F-R108 WAS TOO STRONG
+`GSE288028` (Chu). Human GP +/- GH, 10x, **4 vehicle + 4 GH libraries, 29,042 cells**, pseudobulk built
+from raw .h5 by me. `frontier/analysis/GSE288028_GH/`.
+- **Experiment worked:** CISH +0.81, IGF1 +0.97, GHR +0.31, STAT5A +0.12
+- **Paper's claim supported:** RZ markers up - PTHLH +0.61, FRZB +1.16, GREM1 +0.52, SFRP5 +0.49
+- **ON THE AXIS: r = +0.029, p=0.036, n=5255. NULL.** (scale: rat 1wk-4wk +0.731; human pre-late puberty +0.263)
+- **But it raises the three strongest OLD/SHORT genes:** KAZALD1 **+1.74** (youth-z -3.13),
+  CXCL12 **+1.09** (-2.93), ADAMTS5 **+0.63** (-3.18); and lowers IHH -1.54 (+0.76), GPC3 -0.69 (+2.45),
+  NOG -0.74 (+1.22). One correctly-signed move: SCUBE3 +1.58 (+1.52).
+**CORRECTION: F-R108 said somatropin/mecasermin are "wrongly signed". They are NULL. They stay out for
+F-R089's reason (buy nothing, cost pool), not F-R108's.**
+
+### => THE SYSTEMIC ROUTE CLOSED BY DIRECT EXPERIMENT; 4-ROUND ASK ANSWERED
+`GSE161946 / Ambrosi TH et al., Aged skeletal stem cells generate an inflammatory degenerative niche.
+Nature 2021 (s41586-021-03795-7).`
+> *"Exposure to a youthful circulation through **heterochronic parabiosis** or **systemic reconstitution
+> with young haematopoietic stem cells** did not reverse the diminished osteochondrogenic activity of
+> aged skeletal stem cells, or improve bone mass or skeletal healing parameters in aged mice."*
+**Two systemic-rejuvenation modalities, both negative, in the exact cell type.** Parabiosis DID reduce
+local inflammatory cytokines - the young blood reached the tissue - and still did not restore capacity.
+**This closes the Stevens/Boyer/Bowen 1999 ask carried since F-R103, with a better experiment.**
+**The ageing of the skeletal stem cell is cell-intrinsic and is not reversible by anything in blood.**
+
+### => THE FORK THIS FORCES
+1. Nothing in 528 datasets / 9,074 contrasts moves the axis.
+2. The most-used paediatric growth drug is null on it, in human tissue.
+3. A young circulation - the most powerful systemic intervention that exists - does not rejuvenate the cell.
+4. The ONLY intervention that ever lengthened a normal animal was a **single local SAG bead in the SOC**
+   (F-R109): femur/tibia/whole leg longer at 6 months from an exposure gone by 3 weeks.
+
+**Tate's standing constraint was "local delivery is not available - solve systemic." That has now been
+tested for eight rounds and three independent lines say the systemic space is empty.** Options:
+**(a)** accept a local one-time intra-epiphyseal route (where every positive result and all the
+durability lives); **(b)** stay systemic and accept row 2 only - anastrozole + dexamethasone, the
++7.5 cm GH+AI tier and nothing beyond; **(c)** run the experiment that does not exist.
+**This is a decision for Tate, and it is the first genuine fork in the file.**
+
+### => STILL OPEN
+1. **Resting-zone transcriptome at >1 age - still absent from all 4,421 series.** Nearest: `GSE182540`
+   (growth-plate-resident CD73+ gpSSCs under Zmpste24 deletion - premature-ageing genotype, not natural
+   age). Only growth-plate stem-cell ageing dataset in the corpus. **Not yet analysed.**
+2. Vosoritide / any CNP-agonist growth-plate transcriptome on the axis.
+3. Whether an Hh agonist delivered into a mature human epiphysis is obtainable - route/material, not biology.
 
 ---
 
