@@ -163,7 +163,45 @@ one — which means an INHIBITOR is the intervention.**
 
 > **Sotos = grow fast, mature fast, end normal — the failure mode since F-R024. TBRS = grow fast and the
 > skeletal clock does not run with it.** **DNMT3A loss appears to decouple rate from maturation; NSD1 loss
-> does not.** **CAVEAT: the bone-age cell rests on ONE patient; the 55-patient cohort has no bone-age data.**
+> does not.**
+
+### **F-R081 — THE DECOUPLING NOW RESTS ON THREE PATIENTS, NOT ONE**
+
+| patient | age | height | **bone age** | advance |
+|---|---|---|---|---|
+| **Japanese** (Miyoshi, 17-yr) | **10y7m** | **166.4 cm, +3.77 SD, Tanner 4** | **11.1 y** | **+0.5 y** |
+| **Swedish** (Lennartsson) | 12y2m | 172.5 cm, +2.8 SDS | **12.0 y** | **−0.2 y** |
+| Chilean (Martin) | 8y10m | +2.42 SD | 13 y | +4.2 y |
+
+**+3.77 SD and Tanner 4 at ten-and-a-half with a bone age of 11.1** is the strongest single observation in
+the branch. **The Chilean counterexample is disarmed by its own authors:** his **non-carrier sister** also had
+advanced bone age (13y at 10y7m), *"raises the possibility that there are other familial factors"* — it
+segregates independently of DNMT3A. And they state advanced BA *"has not been reported frequently in TBRS."*
+
+**Fourth line, from the surgeons:** Greulich-Pyle *"**underestimated the amount of remaining growth**…
+not validated for individuals with specific growth syndromes."* **These children have more growth left than
+their skeletons say.**
+
+### **AND THE OVERGROWTH IS NOT ENDOCRINE**
+Japanese case at +3.77 SD: **IGF-1 325 ng/mL (+0.22 SD)**, *"Serum GH and IGF-1 levels were not elevated."*
+Chilean: IGF-1 normal. **DNMT3A runs at +3 SD on a normal somatotropic axis — genuinely ORTHOGONAL to the GH
+arm, and intrinsic to the tissue.**
+
+### **BOTH TBRS GIRLS NEEDED TREATMENT TO STOP GROWING**
+Japanese: **oral oestrogen 10.8→13.6 y to induce fusion** → 176 cm at 26. Swedish: **bilateral
+epiphysiodesis at 12y9m** → 187.4 cm (+3.2 SDS). **Two countries, two deliberate forced-fusion
+interventions, both still finished above +3 SD.**
+
+### Heyn 2019 read in full — the mechanism IS the branch's pool axis
+`Dnmt3a^W326R/+` mice: *"viable, healthy… **proportionately small with significantly reduced body and brain
+weight**"*; in vivo hypermethylation at Hoxc13/Sox1. **The sentence:** *"hypermethylation of DMV/DMRs could
+lead to a **skewing of stem/progenitor cells towards differentiation away from self-renewal**."* **That is
+`a > b`, reached independently.** Also: *"**NSD1, DNMT3A and EZH2 are both height QTLs**"*; PHC1 mutation
+gives microcephalic dwarfism. Conclusion: *"the interplay between DNA methylation and polycomb… as a
+**determinant of organism size in mammals**."* **Limit: mouse phenotype is body WEIGHT; bone length not measured.**
+
+**Tatton-Brown 2014 verified at the primary:** *"Height was increased in **all** individuals ranging from
+**1.8 to 4.2 (mean 3.0)** SD… head circumference **1.2 to 5.1 (mean 2.5)**."*
 
 ### THE PACING LAW IS CONFIRMED IN HUMANS (Jeffries, PMC6633263, Horvath clock)
 
@@ -178,7 +216,30 @@ one — which means an INHIBITOR is the intervention.**
 > are **early, not overgrown**, so F-R077's null is exactly what the law predicts. *(Excluding the p.Arg882Cys
 > ">800%" outlier — Arg882 is the clonal-haematopoiesis allele.)*
 
-## -1b-NEW. THE OSK DIRECTION PROBLEM — DOWNGRADED, WRONG ENZYME (F-R080)
+## -1b-FINAL. THE OSK DIRECTION PROBLEM IS **REFUTED** — REPROGRAMMING RAISES DNMT1 (F-R081)
+
+**Su et al., *Eur Rev Med Pharmacol Sci* — senescent Integrin-a6^high CD71^high epidermal stem cells, transient
+OSKM. The only direct measurement of DNMT1 after partial reprogramming that exists:**
+
+> *"partial reprogramming **increased DNMT1 mRNA expression** in senescent ESCs, but had **no effect on TET1,
+> TET2, and TET3**… we verified that partial reprogramming **significantly increased the DNMT1 PROTEIN
+> expression**."* And *"young ESCs also had a **higher** mRNA expression of DNMT1 compared to senescent ESCs."*
+
+**DNMT1 falls with senescence; reprogramming restores it. Effect persists 2 weeks after withdrawal.**
+Their mechanism sentence is `Dnmt1^ΔPrx1` in another tissue: *"**DNMT1 is essential for the preservation of
+the progenitor state**… lack of DNMT1 would result in severe defects in **proliferation and self-renewal**."*
+
+> ### **F-R079's hazard predicted OSK would lower maintenance methylation and shorten bone. The measurement says DNMT1 goes UP. REFUTED, not downgraded.**
+>
+> ### **And the structural correction matters more:** methylation age fell **while DNMT1 rose, in the same
+> cells**. **Rejuvenation is NOT global demethylation.** F-R069, F-R072 and F-R079 all implicitly equated
+> them. **Partial reprogramming raises the maintenance writer AND lowers the de novo writer at Polycomb
+> targets (F-R080) — both height-positive.**
+
+**Limits:** epidermal stem cells not chondrocytes; **OSKM with c-Myc** vs the cartilage study's OSK without;
+n=3; low-tier journal. **Direction clear, weight behind it thin.**
+
+## -1b-OLD-3. THE OSK DIRECTION PROBLEM — DOWNGRADED, WRONG ENZYME (F-R080, superseded above)
 
 **F-R080 read the OSK primary. The only methyltransferase antibody in it is DNMT3a (ab188470).**
 *"post-OSK treatment, **DNMT3a** levels were noticeably declined."* **"DNMT1" occurs twice in the whole

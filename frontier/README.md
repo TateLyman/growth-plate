@@ -2847,3 +2847,62 @@ in chondrocytes.** That is not evidence that methylation controls their expressi
 methylation layer sits *upstream of* both the matrix term and the closure term rather than beside them.
 **One positive control failed to replicate** (`Nnat`, the densest locus in the deposit, 0.73×, p=0.22), and
 I am recording that rather than dropping it.
+
+---
+
+## The fifty-first summary — F-R081: the OSK hazard is refuted, and the DNMT3A decoupling now rests on three patients
+
+**All four of F-R080's asks were answered by the supplied documents. The most important one refutes a hazard
+I raised two rounds ago.**
+
+**Partial reprogramming RAISES DNMT1.** Su et al. sorted senescent epidermal stem cells with low self-renewal
+and applied transient OSKM: *"partial reprogramming **increased DNMT1 mRNA expression**… but had **no effect
+on TET1, TET2, and TET3**… partial reprogramming **significantly increased the DNMT1 protein expression**."*
+And *"young ESCs also had a **higher** expression of DNMT1 compared to senescent ESCs"* — DNMT1 falls with
+senescence and reprogramming restores it. Their mechanism sentence is `Dnmt1^ΔPrx1` in another tissue:
+*"DNMT1 is essential for the preservation of the progenitor state… lack of DNMT1 would result in severe
+defects in proliferation and self-renewal capacity."*
+
+> **F-R079 predicted OSK would lower maintenance methylation and shorten bone. The measurement says the
+> opposite. The hazard is refuted, not downgraded.**
+
+**And the structural correction matters more than the hazard.** Methylation age fell **while DNMT1 rose, in
+the same cells, in the same experiment.** **Rejuvenation is not global demethylation** — and F-R069, F-R072
+and F-R079 all quietly assumed it was. Partial reprogramming **raises the maintenance writer and lowers the
+de novo writer at Polycomb targets**, and both of those are height-positive. The contradiction that ran
+through four rounds was an artefact of treating "DNMT" as one thing.
+
+*(Limits: epidermal stem cells not chondrocytes, OSKM with c-Myc rather than the cartilage study's OSK
+without it, n=3, low-tier journal. The direction is clear; the weight behind it is one experiment.)*
+
+**On bone age — my #1 ask — the decoupling survives and is now much stronger.** The Japanese 17-year case is
+the single best observation in this branch: **+3.77 SD tall and breast Tanner 4 at ten years seven months,
+with a bone age of 11.1 years.** In an ordinary child that stature and pubertal stage come with a markedly
+advanced skeleton; here it is half a year ahead. The Swedish girl was **bone age 12.0 at 12 years 2 months**.
+The Chilean boy *does* have a bone age 4.2 years advanced — **but his non-carrier sister has advanced bone
+age too**, and his authors write that this *"raises the possibility that there are other familial factors,"*
+adding that advanced bone age *"has not been reported frequently in TBRS."* **It segregates independently of
+DNMT3A.** And Lennartsson's surgeons found Greulich-Pyle *"underestimated the amount of remaining growth"* —
+the decoupling seen from the other side.
+
+**The overgrowth is not endocrine.** At +3.77 SD the Japanese patient had **IGF-1 of +0.22 SD** and *"serum
+GH and IGF-1 levels were not elevated."* **DNMT3A runs at +3 SD on a completely normal somatotropic axis** —
+which makes it genuinely orthogonal to the stack's GH arm rather than redundant with it.
+
+**Heyn 2019, read in full, lands on the branch's own pool axis.** `Dnmt3a^W326R/+` mice are *"viable,
+healthy… proportionately small with significantly reduced body and brain weight."* And the sentence:
+*"hypermethylation of DMV/DMRs could lead to a **skewing of stem/progenitor cells towards differentiation
+away from self-renewal**."* **That is `a > b` — the lever this branch has hunted since F-R022 — reached
+independently from the other end of the literature.** Also worth recording: *"NSD1, DNMT3A and EZH2 are both
+height QTLs,"* so all three overgrowth genes are common-variant height loci, and their conclusion is the
+branch's thesis verbatim — *"the interplay between DNA methylation and polycomb at key developmental
+regulators as a determinant of organism size in mammals."*
+
+**Tatton-Brown 2014 verified at the primary:** *"Height was increased in **all** individuals ranging from
+1.8 to 4.2 (mean 3.0) standard deviations."* All thirteen.
+
+**And the detail that says what we are actually chasing:** the Japanese girl was given **oral oestrogen from
+10.8 to 13.6 years specifically to force her growth plates shut**, and the Swedish girl had **bilateral
+epiphysiodesis**. **Two countries, two deliberate interventions to stop growth — and both still finished
+above +3 SD.** The programme's entire difficulty is manufacturing what these children had to be treated to
+prevent.
