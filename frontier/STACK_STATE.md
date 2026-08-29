@@ -1,12 +1,98 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R110
+**Last updated:** F-R111
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-COUNTER. **F-R111 — THE RESTING ZONE AT TWO AGES, FOUND. THE COUNTER IS THE IMPRINTED GENE NETWORK.**
+
+**The search had a structural blind spot for five rounds:** "resting zone" appears only in *sample*
+characteristics; every enumeration searched *series* titles/summaries. Downloaded sample-level metadata
+for **999 growth-plate series** and grepped that. 13 candidates, one hit.
+`analysis/geo_sweep/softmeta.py` + `findrz.py`.
+
+`GSE113982 - Newton AH et al., A radical switch in clonality reveals the formation of a stem cell niche
+in the epiphyseal growth plate. Nature 2019.` LCM mouse growth plate:
+**RZ 14 @P2/P3 + 18 @P28; PZ 12/22; HZ 12/22.** Not just two ages - the SOC/niche transition that
+F-R110 showed flips the sign of systemic SAG.
+**Validates:** RZ identity holds at both ages; **MKI67 in RZ-vs-PZ goes +1.32 (P2) -> -1.03 (P28)** -
+the resting zone is not quiescent before the niche exists and is after.
+
+### => CORRECTION TO F-R109: THE THREE ZONES DO NOT AGE BY THE SAME PROGRAM
+PZ vs HZ **r=+0.336**; RZ vs PZ **r=+0.160**; RZ vs HZ **r=+0.081**.
+**F-R109's youth axis (built from PZ+HZ only) describes RZ ageing only weakly: r=+0.136.**
+**That axis is a proliferative/hypertrophic-zone axis. It is marginally informative about the pool.**
+
+### => THE COUNTER: THE IMPRINTED GENE NETWORK COLLAPSES, 4x HARDER IN THE POOL
+Unbiased top losses in the RZ P2->P28: **IGF2 -7.7, DLK1 -6.5, MEST -5.7, PLAGL1 -5.7, CDKN1C -4.1,
+H19 -4.0, MEG3 -3.6, ZIM1 -3.4, RIAN -3.2, AIRN -3.1, PEG3 -3.1, MAGEL2 -2.8, KCNQ1OT1 -2.8, GPC3 -2.7.**
+**Fourteen imprinted genes in the top fifty** - every major domain at once.
+
+| zone | **IGN** | cell cycle | background | expression-matched null | **z** |
+|---|---|---|---|---|---|
+| **RESTING** | **-3.09** | -0.84 | -0.48 | -0.55 +/- 0.22 | **-11.4** |
+| proliferative | -0.71 | -0.07 | +0.12 | +0.56 +/- 0.18 | -6.9 |
+| hypertrophic | -0.61 | +0.09 | +0.18 | +0.41 +/- 0.15 | -6.9 |
+
+**4x larger than either differentiated zone (same animals/dissection/libraries) and 3.7x larger than the
+cell-cycle change in the same cells. Not proliferation, not a general developmental downshift.**
+
+### => THE MECHANISM I PROPOSED AND REFUTED IN THE SAME HOUR
+ICR machinery falls RZ-specifically: **TRIM28 -1.53, DNMT1 -1.12, DAXX -1.36, CTCF -0.94,
+MPHOSPH8 -0.91, ZFP57 -0.80, SETDB1 -0.57** (PZ/HZ flat or rising). Tested with `GSE202057` (Trim28 KO
+in cartilage): **KO worked (Trim28 -1.89); IGN moved only -0.30 (vs -1.79); correlation with the RZ
+ageing vector r=-0.014, p=0.2 = NULL.** **Correlate, not cause. Hypothesis refuted.**
+
+### => HUMAN GENETICS - THE STRONGEST IN THE FILE
+**264 GWAS height associations across 32/54 IGN genes; matched null 118 +/- 44; p=0.0077.**
+ZFAT 52, SLC38A4 34, **PLAG1 24**, GNAS 22, **IGF2 19**, GRB10 18, **DLK1 17**, GLIS3 17.
+**The machinery is NOT enriched (ZFP57 1, ZNF445 1)** - independently consistent with the refutation.
+**Bidirectional Mendelian dose-response at TWO independent loci:**
+**11p15 (IGF2/H19/CDKN1C): Silver-Russell = severe short stature <-> Beckwith-Wiedemann = overgrowth.**
+**14q32 (DLK1/MEG3): Temple = short stature <-> Kagami-Ogata = overgrowth.**
+Plus GPC3 loss = Simpson-Golabi-Behmel overgrowth; GNAS = PHP1A short stature.
+Same evidential structure this file reserves for PTCH1 (1/2/3 copies) and DNMT3A.
+
+### => THE POOL BECOMES HEDGEHOG-*LIGAND*-RESISTANT BUT THE RECEPTOR DOES NOT MOVE
+RZ, P28 minus P2/P3: **HHIP +3.86 (~15x)**, BOC -1.93, GAS1 -1.93, CDON -1.09, GPC3 -2.74,
+SCUBE3 -1.38, **SMO -0.27 (flat)**, PTCH1 +0.04.
+> **Everything that degrades with age on this axis is UPSTREAM of the drug target. A SMO agonist acts
+> downstream of ligand, co-receptors and HHIP.** Strongest, most specific argument the SMO-agonist class
+> has ever had - and an argument AGAINST every ligand-side / Ihh / delivery-based approach.
+
+### => TWO MORE FROM THE POOL
+- **NPR2 +1.05 in the ageing RZ** (PZ 0.00, HZ -0.02) - vosoritide's target rises in the aged pool.
+  Against: **PRKG1 -0.89**. Arm survives with the caveat.
+- **IGF1 +3.15 in the RZ while IGF1R -1.38 and GHR -1.45** - ligand up, both receptors down.
+  **Third independent reason the GH axis is weak in the pool** (after F-R089 and F-R110).
+
+### => THE COUNTER CAN RUN BACKWARDS: FRACTURE
+Screened **5,112 contrasts** for anything raising the IGN. **Nothing pharmacological.** Three states do:
+HEY1-NCOA2 fusion (oncogenic) **+3.74**; the SSC itself vs progeny **+2.65**; and
+**FRACTURE CALLUS SSC/BCSP vs uninjured (GSE213574): +2.72** - IGF2 +5.19, PEG3 +5.89, GRB10 +4.47,
+MEST +4.42, CDKN1C +4.25, PEG10 +3.91, MEG3 +3.43, PLAGL1 +2.46.
+> **The near-exact inverse of the -3.09 ageing collapse, in ADULT skeletal stem cells, physiologically,
+> without a tumour. The shutdown is NOT irreversible.**
+**What it is not:** callus makes bone, not length - the program without the geometry (F-R099).
+**What it is:** the first backwards movement of the counter anywhere in this file.
+
+### => FINAL ANSWER ON THE METHYLATION ARM (F-R104-F-R107)
+In the resting zone **every** methylation gene falls together - DNMT1 -1.12, DNMT3A -0.91, TET2 -2.59,
+TET3 -1.56, MECP2 -1.09 - writers and erasers alike, tracking MKI67 -1.77. **There is no writer/eraser
+imbalance and there never was.** What exists is a specific downstream OUTPUT - the imprinted network -
+falling 3.7x harder than either the machinery or the cell cycle.
+
+### => ASKS
+1. **Anything that reactivates imprinted gene expression in a somatic stem cell WITHOUT a demethylating
+   agent.** DNMT inhibitors excluded (F-R079: Dnmt1^dPrx1 bones < half length). This is now THE question.
+2. **What in fracture callus does it.** GSE213574 is sorted cells, no time course, no mechanism.
+3. **A HUMAN growth-plate resting zone at >1 age.** GSE113982 is mouse; no human equivalent in 4,421 series.
 
 ---
 
