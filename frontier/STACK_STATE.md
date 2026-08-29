@@ -93,6 +93,65 @@ needs no τ assumption.
 
 ---
 
+## -1. THE CELLS ARE NOT EXHAUSTED, AND THE COST PER DIVISION IS VARIABLE (F-R071)
+
+**Nilsson, Baron et al., *J Endocrinol* 2005;186:241 (PMID 16002553):**
+> *"the number of population doublings of rabbit resting zone chondrocytes in culture **did not depend on
+> the age of the animal** from which the cells were harvested... the mechanisms limiting replicative
+> capacity **in vivo are distinct from those in vitro**."*
+
+**Cells from old animals divide as well as cells from young ones. The senescent plate is not made of
+exhausted cells. Hayflick/telomere exhaustion is EXCLUDED by direct experiment.** The limit is imposed
+in vivo and is epigenetic. Baron's own conclusion: **"loss of DNA methylation might be a fundamental
+biological mechanism that limits longitudinal bone growth in mammals, thereby determining the overall adult
+size of the organism."**
+
+**Schrier, Baron et al., *J Endocrinol* 2006;189:27 (PMID 16614378)** — RZ proliferation rate and RZ cell
+number both fall with age; **dexamethasone decreased RZ proliferation AND slowed numerical depletion**
+(banking, measured at cell-count level). **And the result that breaks the conservation law:**
+> *"Estrogen is known to accelerate growth plate senescence. **However, we found that estradiol cypionate
+> treatment slowed resting zone chondrocyte proliferation**... estrogen might accelerate senescence by a
+> proliferation-independent mechanism, or by **increasing the loss of proliferative capacity per cell
+> cycle**."*
+
+> ### F-R066's conservation law ("every centimetre advances the programme by a fixed amount") is CORRECTED. The advance per division is **not constant** — oestrogen raises it:
+> ```
+> clock advance = SUM over divisions of ( cost per division )    <- cost is MODULATED, not fixed
+> ```
+> **This is the first genuine escape from the conservation law.** And it upgrades the anti-oestrogen arm's
+> rationale: it does not merely postpone the endpoint, **it makes every division cheaper in capacity.**
+> Joins CXXC5 — a transcriptional brake applied every cycle is exactly what a per-cycle cost term looks like.
+
+## -1b. THE DIRECTION PROBLEM FOR OSK (F-R071) — unresolved
+
+| | direction |
+|---|---|
+| growth-plate senescence (Nilsson 2005, in vivo, global) | **methylation LOST** |
+| OSK in chondrocytes (F-R069) | **DNMTs down, TET2 up = drives DEmethylation** |
+
+**If senescence IS methylation loss, OSK's demonstrated mechanism pushes the same way as senescence.**
+Possible reconciliation: ageing = global hypomethylation **plus** focal hypermethylation at CpG islands and
+PRC2 targets; the 2005 assay was **global**, the clocks and the PRC2 convergence are **site-specific gains**.
+Both can be true and OSK may be correcting the focal component. **But nobody has run a site-specific
+methylation clock on growth-plate tissue, so this rests on an unexamined assumption.** The H3K4me3/bivalent
+evidence (F-R070) is more specific and points the right way — flagged, not resolved.
+
+## -1c. DELIVERY — exhausted, gap confirmed and sharpened (F-R071)
+
+**AAV reaches the growth plate only by the route that does not help.** **AAV8-CNP works** — increased
+chondrocytes, both PZ and HZ heights up in ACH mice — **but CNP is SECRETED**: the vector transduces liver
+or muscle and the protein circulates. **It never transduces a growth-plate chondrocyte.** **OSK is
+cell-autonomous and must be inside the target cell.** The entire successful AAV-skeletal literature routes
+around exactly our problem. **No serotype characterised for direct resting-zone transduction.**
+
+**Cyclic vs constitutive, settled (F-R071):** continuous OSKM causes *"rapid sickness... mortality in as
+little as 4 days"* **before** teratomas; **cyclic 2-on/5-off ran 35 weeks safely at single copy**, but
+**8 cycles at two copies caused teratomas in liver, kidney, pancreas**. **Cyclic OSKM drives proliferation
+of beta cells and satellite cells — it works in dividing compartments.** Design must be cyclic, single-copy,
+dose-controlled.
+
+---
+
 ## 0. THE RESET — where "infinite" actually lives (F-R068)
 
 **The counter can be un-counted. Demonstrated in *Drosophila*, and a candidate exists in mammalian
