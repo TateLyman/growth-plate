@@ -2397,3 +2397,73 @@ answer it**; (3) does any FGFR3 inhibitor delay fusion in a **long bone** (verif
 inferred for physes); (4) erdafitinib + VEGFR2 blockade hit the same ERK/caspase-9 node — redundant,
 synergistic, or additively unsafe mechanically; (5) what sets **bat manus 40,300 vs bat pes 1,300 µm³** in
 one animal; (6) CYP19A1⁻/⁻ rabbit growth plates — now confirmed non-existent.
+
+---
+
+## The forty-fourth summary — F-R061: the counter-move is inside erdafitinib, at the dose we specified
+
+**Correction, and it reverses F-R060 §4.** I predicted oestrogen ablation would *lower* serum phosphate and
+create a rickets-like failure mode. **Backwards for humans.** **Uemura, *JCEM* 2000;85:1215** — HRT dropped
+TmP/GFR in all 5 patients (**mean −14.5%**); **GnRH-a raised it in all 5 (mean +28.5%, up to +78.3%),
+reversible**; TmP/GFR and serum Pi both correlate **negatively** with E2 (**r = −0.767 / −0.797**, P<0.01).
+**Zhang, *AJKD* 2014;63:198, NHANES n=7,005** — postmenopausal women **on** oestrogen: phosphorus **3.83 vs
+3.98 mg/dL, P<0.001** fully adjusted; phosphorus **rises** across ages 46–60, sex×age P<0.001. Rat mechanism:
+oestrogen **downregulates NaPi-IIa** causing phosphate wasting, independent of PTH and apparently not via
+ERα. **Ikedo is the outlier — adipose-local, lifelong, murine — and I'm not smoothing it over. There is no
+rickets risk in the oestrogen arm.**
+
+**Wickman 2003 (letrozole in 23 CDGP boys, 12 mo) settles three things.** **E2 fell to 8.1 ± 2.1 pM ≈ 2.2
+pg/mL** — well under the Nilsson/Schrier **11 ± 2 pg/mL** threshold — while the control arm sat at **40.6 pM
+≈ 11.1 pg/mL**, i.e. *normal male puberty runs right at the threshold*. **Testosterone shunted to 57.8 nM
+(~3× control)** — F-R052's substrate counter-move, quantified. **No BMD/BMC/BMAD difference between groups**;
+CTx, PICP, osteocalcin unchanged. **And E2 fully rebounds by 6 months after stopping.** Wickman does not
+measure phosphate, and **no published paediatric AI study does** — stated as non-existence, not a request.
+
+**The wild-type histology I asked for exists — in the FDA tox package, not the literature.** The full
+TYRA-300 paper confirms its wild-type arm is **length and PK only** (no histology), and its ACH-model
+endpoint is described as *"more similar to a wild-type growth plate"* — normalisation. **FDA NDA 214622
+(infigratinib), GLP toxicology in normal animals:** *"sternal bone **minimal/mild growth plate thickening**
+at **1 mg/kg/day and above**"* (13-wk rat); femur and sternum at ≥3 mg/kg; and in **6-month-old beagles**,
+*"**increased growth plate thickness** and **fractures in the lumbar spine** associated with increased
+physeal thickness… and/or **bone loss**"* at 3 mg/kg. **FGFR3 inhibition thickens the plate in normal
+animals — not merely normalisation.**
+
+**And the mechanical-envelope claim survives, sharpened.** TYRA-300 showed **BMD +21.4%, BV/TV +73.3%** in
+the ACH model, which nearly made me withdraw F-R060 §5.1 — the dog data resolves it: **FGFR3 inhibition
+normalises bad bone and degrades good bone.** The stack operates on good bone. Abaloparatide stays, now on a
+wild-type fracture finding.
+
+**The finding I did not expect.** F-R060 named the executioner: `phosphate → VEGFR2 → Raf/MEK/ERK1/2 →
+caspase-9`. **FGFR inhibition raises serum phosphate as its defining on-target effect** — FGF23 resistance.
+From the FDA review: **hyperphosphatemia in 89%** (82% by lab), **median onset 8 days**, **phosphate binders
+in 83%**, **the commonest cause of dose reduction (78%)**, a **DLT**, positive exposure–response; rat
+phosphorus **+30–38%** and dog **FGF23 +6.9-fold**, with **kidney mineralization**.
+
+> **So erdafitinib hits ERK1/2 twice with opposite signs:** FGFR3 → ERK ↓ (suppresses terminal apoptosis —
+> wanted) and phosphate ↑ → VEGFR2 → ERK ↑ → caspase-9 (promotes it — against us). **F-R052's "every node
+> has a counter-move" appearing inside the stack's own first drug.**
+
+**And the specified dose is on the wrong side of it.** **BALVERSA is titrated *upward on phosphate*: start
+8 mg, go to 9 mg if phosphate is <5.5 mg/dL at day 14, target 5.5–7.0 mg/dL** — hyperphosphatemia is the
+proof-of-target-engagement biomarker. **That is precisely the range that maximally drives the death signal.**
+
+**The two effects separate by ~10×.** Plate thickening from **1 mg/kg** (rat) vs hyperphosphatemia only at
+**10 mg/kg**; and in children, **0.25 mg/kg infigratinib → +3.38 cm/yr AHV with *zero* hyperphosphatemia
+events**, with the programme stating *"hyperphosphatemia does not occur at the low doses of infigratinib
+that show activity in vivo."* **This is why F-R046's "threshold, not gradient" plateau exists: past
+threshold you stop buying plate and start buying phosphate.**
+
+**Recommendation, and the honest gap.** Dose the FGFR3 arm to the lowest plate-thickening dose with **serum
+phosphate held at low-normal — the inverse of the oncology paradigm**, binders to normal rather than to 7.0.
+**But all the low-dose growth data is *infigratinib* and the stack specifies *erdafitinib 8 mg*, which has
+no growth-plate dose–response and a deliberate phosphate target. No published mapping between them exists
+and I will not guess one.** Either dose low with phosphate control, or substitute infigratinib at the
+PROPEL 2 dose — the only agent with an actual paediatric growth-plate dose–response. That is your call.
+
+**Open:** (1) **serum phosphate on FGFR3 inhibition *plus* oestrogen ablation** — both raise it by
+independent mechanisms, never combined, now the most important unknown in the stack; (2) erdafitinib
+growth-plate dose–response (does not exist); (3) does phosphate binding preserve the FGFR3 plate effect
+(directly testable, never tested); (4) **the Dunkel CDGP bone-health paper (NCT01797718, letrozole vs
+testosterone, n=35, 2013–2018)** — if it reports serum phosphate or TmP/GFR it answers the oestrogen half of
+(1), and I could not reach that publication; (5) bat manus 40,300 vs pes 1,300 µm³; (6) CYP19A1⁻/⁻ rabbit
+growth plates, confirmed non-existent.
