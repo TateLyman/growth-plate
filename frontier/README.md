@@ -2178,3 +2178,73 @@ proof-of-work bot challenge I will not solve; they open in a browser. (6) **Any 
 intervention** — nobody appears to have asked, and it would turn this round's central claim from an inference
 into a measurement. (7) **CYP19A1⁻/⁻ rabbit growth-plate histology** (standing). (8) **Voss 2015, Pediatr
 Blood Cancer 62:45** in full.
+
+---
+
+## The forty-first summary — F-R058: the identity closes to 0.1%, and two F-R057 claims do not survive
+
+**Restored, having been dropped: the ALT argument for GH.** GH is **not** in this stack as a rate driver —
+it is **AKT support for erdafitinib**, because FGFR3 blockade alone is **apoptotic** and IGF-1 via sustained
+AKT rescues it. `STACK_STATE` had described its job as `h_term` delivery and then complained it was in the
+wrong compartment; wrong job description, and the complaint answered a question nobody asked. And the
+strongest single result in the branch, also dropped: **"when GH hypersecretion is accompanied by
+gonadotropin deficiency, accelerated linear growth may persist for DECADES"** — all three terms at once, in
+a real human phenotype, **through the systemic axis.** The dose question resolves as a **sign flip**, in the
+authors' own words: *"GH augments both stem cell number and activity under physiological conditions but
+causes stem cell depletion under pharmacological exposure."* **2 IU is not a compromise — it is the side of
+the flip where GH adds to the pool.** 0.35 mg/kg/wk is ~5× higher and lands in the depleting range.
+
+**The identity is not a model. It was derived in 1996 and it is exact.** Wilsman's two independently
+measured equations collapse at steady state to **`dL/dt = flux × terminal chondrocytic domain volume`**
+(`v(d) = v(c) + v(m)`). Tested on his own Table 2/3/4, proximal tibia against proximal radius: **flux 3.16×
+× domain volume 2.67× = 8.42×, against a measured growth ratio of 8.43×.** Breur 1997 confirms it from the
+other direction — best model `R² = 0.992`, exactly those two variables plus their interaction; I refit it
+from his table and got 0.997. **Both factors are comparable and they multiply — which kills "λ is worthless"
+(F-R044, wrong: flux is the *larger* factor) and "h_term is the free multiplier" (F-R043 on, overstated).**
+
+**Retraction 1: τ is not a constant.** F-R057 made `dL/dt = N_h·h_term/τ` its spine. Whole-plate transit
+from Wilsman's Table 2 is **1.56 / 1.91 / 2.36 / 3.85 days — a 2.46× range**, varying inversely with rate.
+Cooper's "~24 h" is a narrower hypertrophic-zone claim inherited from bat/mouse forelimb work; his own
+supplementary BrdU runs to **18, 30 and 42 h**. The §1 form needs no τ at all.
+
+**Retraction 2: the jerboa is not a pure h_term demonstration.** Supplementary Fig. S3, now in hand: the
+jerboa metatarsal plate is *"approximately **three-times taller in each zone**"* — resting, proliferating
+**and** hypertrophic. A coordinated whole-plate scale-up, which is what the identity demands and not what I
+claimed it showed. It still checks out quantitatively (Fig. S2: mouse tibia **158 ± 24 µm/day**, metatarsal
+**102 ± 14.5**; a 2-point mouse slope ≈0.0093 predicts ~241 µm/day at 23,000 fl ≈ 2.4× the mouse metatarsal).
+**Slopes do not transfer between species:** rat 0.0212, pig 0.0338, rabbit 0.030–0.061, mouse ≈0.0093 — and
+**Kuhn's 5-week rabbit slope is ~2× the 8/12-week slope (p<0.01), with no relationship at all at 2–3 weeks.**
+That is a **second senescence mechanism: conversion efficiency per unit volume degrades with age.**
+
+**A hard ceiling I did not know existed.** Wilsman's continuous-BrdU **growth fraction is 0.89–0.99** in all
+four plates. **Essentially every proliferative-zone chondrocyte is already cycling** — there is no quiescent
+reserve to recruit, and any "wake up resting proliferative cells" mechanism is capped at 1–11%. Flux is
+reachable only through cell-cycle time (2.47×) and PZ height (3.19×).
+
+**Senescence and closure are carried by volume, not flux.** Recomputed from Breur's Table 1, D21→D35:
+elongation −12.5 to −39.5%, **cell volume −18.7 to −41.3%, flux only −7.7 to −16.6% and *rising* 7.4% in
+the proximal radius.** Kuhn gives the same dissociation *inside one bone under identical hormones*: at 12
+weeks the rabbit **proximal radius is "almost fused" at v(c) = 2,590 µm³** while the **distal radius still
+runs 290 µm/day at v(c) = 11,770 µm³**. **Maintenance of terminal cell volume is the signature of a plate
+that stays open — and nothing in the stack defends it.**
+
+**Correcting my own correction:** Karimian's "<10% of growth from proliferation" is **numerically right**
+(Wilsman: duplication 9%, matrix 32%, enlargement 59% in the fast plate; 7%/49%/44% in the slow one).
+F-R057 called it a misreading of *column height* — wrong, it decomposes **daily turned-over volume by
+source**. The real error is Karimian's: a source share is not a sensitivity coefficient, since `N_lost`
+multiplies through all three terms. **And matrix production is 32–49% of elongation — larger than cell
+enlargement in slow plates — and this branch has never once addressed it.**
+
+**Stack status: the identity has six levers and the stack moves one.** Erdafitinib works on cell-cycle time;
+GH and abaloparatide are enablers, not terms. Growth fraction is closed. **Terminal domain volume — 2.67× of
+the range, the carrier of senescence, the signature of an open plate — is untouched on both sub-levers.**
+Oestrogen side still unbuilt, now with a third reason: until something defends `v(c)` there is nothing for
+it to preserve.
+
+**Still needed:** **Farnum & Wilsman, Calcif Tissue Int 1997;61(4):323–328, PMID 9351885** — *still
+outstanding*; the bundle held **Breur et al., 61(5):418–425**, a different paper with a near-identical title
+in the same volume, which does not measure transit time. **Cooper's reference 7** (bat/mouse forelimb, the
+source of the 24 h claim). **Any measurement of terminal hypertrophic chondrocyte volume in a human growth
+plate** — I have rat, pig, rabbit, mouse and jerboa and **no human number**, so every claim about human
+headroom is unanchored. **Anything post-1997 on pharmacological control of matrix volume per chondrocyte.**
+Plus the standing two: CYP19A1⁻/⁻ rabbit growth plates, and Voss 2015 in full.
