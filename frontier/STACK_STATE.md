@@ -111,11 +111,42 @@ cells into osteoblasts**"* which **leave the plate**. **Pool spending dressed as
 systemic SAG's failure (activation must be **RZ-confined**; Col2a1-creER did nothing), Haraguchi's slow
 +4.5%, and the KY19382 niche-drain risk.
 
-**The actual reset candidate: OSK partial reprogramming, in chondrocytes** (*Exp Mol Med*, PMID 41786976).
-Partial reprogramming *"resets the epigenetic clock"* in mammals. By AAV in chondrocytes: **identity
-retained, no stemness gain**; **counteracts the osteogenic conversion** that Hedgehog drives; and **aged
-chondrocytes from human OA donors showed partial reversal to a more youthful state.** Delivery is **local**,
-which solves the compartment problem.
+**The reset candidate, now MEASURED (F-R069): OSK partial reprogramming in chondrocytes** (*Exp Mol Med*,
+PMC13049178). **AAV2, >1e11 gc intra-articular, OSK constitutive, c-Myc excluded.** They built a mouse
+DNA-methylation clock (255 samples, 90 CpG sites, elastic net, calibrated) and ran WGBS on cartilage:
+**methylation age reduced vs control, and YOUNGER THAN CHRONOLOGICAL AGE.** DNMTs down, **TET2** pivotal
+(siRNA-confirmed), P21 down, **osteogenic conversion counteracted** — directly opposing the Hedgehog export
+route above. Identity retained, no stemness gain. The window is independently established: **Lu et al.,
+*Cell* 2025 (Altos/Salk)** — partial reprogramming reduces mesenchymal drift *"before dedifferentiation and
+gain of pluripotency."*
+
+> **THE LAYER MISMATCH — the live hole.** The growth-plate clock we identified is **H3K4me3** (Lui, histone).
+> The OSK reset is measured on **DNA methylation** (WGBS, CpG clock). **No histone mark was assayed.**
+> Nothing yet shows OSK restores H3K4me3 at Lui's growth-gene set. **The reset is proven on the layer we did
+> not identify as the clock, in the tissue next to the one we care about.** If OSK does not touch H3K4me3,
+> **KDM5 inhibition becomes the primary route, not the backup.**
+
+> **And two transfer gaps:** articular chondrocytes are non-renewing and load-bearing; growth-plate
+> chondrocytes are **consumed** and fed by a niche — **rejuvenating a cell about to die at the junction
+> accomplishes nothing (F-R064). The target is the resting-zone stem cells**, and intra-articular AAV2 is
+> not obviously the route to them. Also **constitutive, not cyclic** — a different risk profile in a
+> proliferating compartment.
+
+**VERIFIED ABSENCE: partial reprogramming has never been applied to a growth plate, a physis, or
+longitudinal bone growth.** AAV-OSK has rejuvenated kidney and muscle and extended lifespan in aged
+wild-type mice. Cartilage now. Never the physis.
+
+> ### THE DEFINING EXPERIMENT: deliver OSK to the resting zone of an open growth plate and measure longitudinal growth and time to fusion. Every component exists — factors, vector, a cartilage-validated serotype, a mouse methylation clock, and *Pthrp-creER* / FoxA2 drivers marking exactly the target cells.
+
+**The architecture, if it holds:**
+```
+grow  -> clock advances (H3K4me3 erased; methylation age rises)
+reset -> clock runs back (OSK, measured)
+grow  -> ...
+```
+**If growth advances a clock and something winds it back, the total is no longer fixed.** "Infinite" stops
+being a category error and becomes a question of cycle timing. **Three of six lines are solid, one is
+measured on the wrong layer in the neighbouring tissue, and two have never been attempted.**
 
 > **This is the first candidate for the one thing "infinite" requires: clearing accumulated epigenetic
 > division memory in a mammalian chondrocyte.** **Not yet done in a growth plate, and no longitudinal-growth
