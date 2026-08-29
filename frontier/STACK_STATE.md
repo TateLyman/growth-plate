@@ -1,7 +1,7 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R076
+**Last updated:** F-R089
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
@@ -10,7 +10,76 @@ ledger.
 
 ---
 
-## 0-POOL. **F-R088 — THE POOL CANNOT BE BOUGHT, AND THE ONE EXCEPTION**
+## 0-POOLFIX. **F-R089 — THE POOL *CAN* BE BOUGHT. F-R088 IS WITHDRAWN.**
+
+**Every load-bearing pool claim in F-R088 was wrong, and the refutations were already on disk.**
+
+### ⇒ RETRACTIONS (all five)
+| F-R088 said | truth | source (already supplied) |
+|---|---|---|
+| *"no pharmacological intervention has ever expanded the pool in vivo"* | **FALSE — it has been done twice** | `trompet2024`, `schrier2006` |
+| Hedgehog **breaks** quiescence, spends the pool | **BACKWARDS — Hh CREATES the Wnt-inhibitory niche** | Trompet RNA-seq: Wnt = top-2 **down**regulated |
+| **mecasermin** is the obtainable pool agent | **ZERO pool.** IGF-1 ratio **0.96 ± 0.04** | Ohlsson 1992 PNAS 89:9826 |
+| **anastrozole** gets a pool job via ESR1 | **withdrawn** — oestrogen slows RZ proliferation but does **not** change RZ number | Schrier Fig 7 |
+| *"pool preservation and growth rate are the same axis, opposite signs"* | **separable** — SAG raised pool **and** rate; dex raised pool, lowered rate | Trompet / Schrier |
+
+**Plus a reading error of mine:** the "Schrier flat 9.2/9.2/7.6%" I carried for rounds is the **BrdU
+labelling index (rate)**, NOT cell number. **RZ chondrocyte number per mm falls with age, P<0.001**, in
+overall / epiphyseal / reserve RZ. Rate collapses by week 5 then plateaus; **number keeps draining.**
+So F-R088 §5.1 "empty or asleep" is answered: **it drains, and the drain is measured.**
+
+### ⇒ THE FATE AXIS — bidirectionally drug-accessible, proliferation unchanged throughout
+| intervention | pool | proliferation | source |
+|---|---|---|---|
+| Tsc1 ablation -> mTORC1 | **24.7 -> 62.4 /section (2.5x)** | Ki67, pH3 **unchanged** | Newton 2019 |
+| **SAG intra-articular x3** | **65.5 -> 139.8 cells/mm2 (2.13x), P=0.017** | **unchanged**, RZ and PZ | Trompet 2024 |
+| **SAG SYSTEMIC i.p. x7 (25 ug/g/d, P30-36)** | **PTHrP+ +61%**, CD73+ up on FACS | Ki67 up in top 50 um | Trompet 2024 |
+| **dexamethasone 0.5 mg/kg/d x 2wk** | **number GREATER, P=0.016** (reserve RZ P<0.001) | BrdU **down**, P<0.001 | Schrier 2006 |
+| GH **pharmacological** (5 mg/kg/d, non-deficient) | **PTHrP+ down P<0.0001; LRC down P<0.001** | EdU/Ki67 **unchanged** | Chu/Chagin PNAS 2025 |
+| GH **physiological** local (1 ug/d) | **germinal LRC 1.95 +/- 0.13x** | — | Ohlsson 1992 |
+| IGF-1 local (10 ug/d) | **0.96 +/- 0.04 — NOTHING** | acts only downstream | Ohlsson 1992 |
+
+**Not a rate axis. A FATE axis — symmetric-renewing vs lineage-committed division.** Pushed positive by
+three agents, one of them an approved generic.
+
+### ⇒ TROMPET: SYSTEMIC WORKS, AND IT COMPOUNDS AFTER THE DRUG IS GONE
+- Figure title: **"SAG administration EXPANDS the growth plate skeletal stem cell pool."**
+- *"3 intra-articular injections had a similar effect on epSSC clonogenicity as **7 systemic
+  injections**."* -> **local is a convenience, not a requirement.** F-R022's "must be local" over-fitted
+  to the bead arm.
+- Bead in rat femoral SOC: **Gli1 signal gone by 3 weeks; femur longer at 1 mo, more at 2 mo, more at
+  6 mo**; tibia at 2 and 6 mo; growth rate up; plate height up; hypertrophic cell height up; **columnar
+  zone proliferation unaffected**; no osteoarthritis at 6 mo. **A rate agent cannot widen a gap for five
+  months after exposure ends. Only `n0` does that** — our own `Linf` proportional to `n0`, observed.
+- **The age sign-flip is drug toxicity, not biology:** genetic Ptch1-cKO in PTHrP+ cells expands clones
+  at **both** P6 and P25 (25 columns >30 cells in cKO vs **zero** in controls, P=0.038). Only *systemic
+  pharmacological* SAG is negative, and only in infants. **Every human we would treat is post-SOC and in
+  the positive regime.**
+
+### ⇒ GH IS DEPLETING OUR POOL AT THE CURRENT DOSE
+`Chu NTL, Zhou B, ... Chagin AS. PNAS 2025;122:e2512316122 (PMC12685065, OA).` Non-GH-deficient mice —
+**deliberately modelling GH in children who are not deficient, i.e. us.** *"GH promotes their **committed
+cell division**, leading to stem cell depletion."* Renewal mode established as **population asymmetry /
+neutral competition / zero-sum drift** -> the pool is dynamically regulated, which is *why* a drug moves
+it. Pharmacological GH also **lowers** serum IGF-1 and hepatic Igf1/Igfbp3/ALS. Authors recommend
+**intermittent GH**, and flag depletion may be **reversible on withdrawal**. This is the mechanism of the
+long-known decay of GH efficacy after 1-2 years.
+
+### ⇒ WHAT BUYS POOL, BY OBTAINABILITY
+| tier | agent | status |
+|---|---|---|
+| **1 — free** | **re-dose somatropin**: down toward physiological + **intermittent** | costs velocity, buys `Linf`. Flips the stack's largest agent from pool-negative to pool-positive |
+| **2 — approved generic** | **dexamethasone, CYCLED as a banking agent** | only approved drug with a **measured increase in RZ chondrocyte number (P=0.016)**, not IGF-1-mediated. Suppresses growth -> alternate with growth phases. This is F-R022's "pulse not chronic state" achieved **in time, systemically**, not in space |
+| **3 — best mechanism, no human exposure** | **Hedgehog / SMO agonist** | **no SMO agonist has ever been given to a human.** Nearest real: **Oxy133** (MAX BioPharma, IND-track, binds SMO, 8x-Gli, cyclopamine-blocked); **20(S)-hydroxycholesterol** (endogenous sterol, SMO **CRD** allosteric site, EC50 ~3 uM, catalogue-available, confounded by LXR agonism). **TOP ASK** |
+| **4 — substitutable, obtainable** | **systemic Wnt inhibition** — the effector Trompet's RNA-seq identifies | **niclosamide** (FDA-approved oral anthelmintic, generic, paediatric use; low bioavailability), **pyrvinium pamoate** (approved), **WNT974/LGK974, ETC-159, RXC004** (clinical-stage PORCN). **Counterweight stated: anti-osteoanabolic; PORCN inhibitors carry dose-limiting bone fragility; collides with our bone-quality arm; Usami 2019 shows Wnt-responsive chondroprogenitors do contribute** |
+| **5 — already in stack, under-credited** | **abaloparatide** | PTHrP(1-34) analogue; PTH/PTHrP-R **maintains** RZ quiescence (Hirai 2011; Chagin 2014 Gsa + Gq/11a). Trompet: SAG **raises Pthlh+ RZ cells** -> abaloparatide sits **downstream of the Hh effect we cannot buy upstream** |
+
+**KY19382 stays disqualified** (Wnt activator, wrong-signed). **Hedgehog is re-qualified on mechanism and
+remains unavailable in practice.**
+
+---
+
+## 0-POOL. **F-R088 — THE POOL CANNOT BE BOUGHT, AND THE ONE EXCEPTION** *(WITHDRAWN — see 0-POOLFIX above)*
 
 ### ⇒ RECORDED: WHAT WE WOULD USE AND CANNOT
 | ideal agent | buys | why not |

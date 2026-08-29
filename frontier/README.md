@@ -3152,3 +3152,68 @@ arrested, they grew **+10.9 cm of sitting height and +20.5 cm of arm span**. F-R
 one epiphysis; a human has about thirty plus the spine. **A stack that reaches only the knee produces the
 proportions of an epiphysiodesis patient, not height** — and nobody in this literature has even posed the
 problem.
+
+---
+
+## F-R089 — the pool CAN be bought, and I had the papers on disk
+
+Tate stopped me for looping and told me to re-read what we already have, looking specifically for
+things **read wrong or incomplete**. He was right. Five claims in F-R088 are withdrawn, and every
+refutation came from a file already in this repository.
+
+**1. "No pharmacological intervention has ever expanded the pool" — false.** `trompet2024` (supplied as
+`jci.insight.165226.sd_2.pdf`, cited by name in F-R022) has a figure *titled* "SAG administration
+expands the growth plate skeletal stem cell pool." Systemic SAG, 25 µg/g/day i.p. × 7 doses after SOC
+maturation: **PTHrP⁺ cells +61%**, confirmed by FACS. Intra-articular: **65.5 → 139.8 cells/mm²,
+P=0.017, all within the resting zone.** And the sentence that dissolves Tate's delivery constraint:
+*"3 intra-articular injections had a similar effect on epSSCs' clonogenicity as 7 systemic injections."*
+
+**2. I had Hedgehog's sign backwards.** F-R088 filed Hh under "breaks quiescence." Trompet sequenced the
+sorted stem cells: **Wnt is a top-2 downregulated pathway after SAG** — *"activation of Hh pathway
+creates a Wnt-inhibitory microenvironment."* Hallett 2021 says that environment is what maintains the
+resting zone. So Hh does not break the niche; **Hh builds it.** The age-dependent negative results are a
+drug-toxicity artefact in infant animals — genetic Ptch1 ablation expands clones at every age tested.
+
+And it compounds: the bead's Gli1 signal was **gone by 3 weeks**, yet femur length kept diverging from
+the contralateral control at 1, 2 and **6 months**. A rate agent cannot do that. Only `n₀` can.
+
+**3. GH is depleting our pool right now.** Chu/Chagin, *PNAS* 2025 (PMC12685065, open access), built
+specifically to model GH given to non-deficient children: PTHrP⁺ stem cells down P<0.0001, label-
+retaining cells down P<0.001, **EdU and Ki67 unchanged** — *"GH promotes their committed cell division,
+leading to stem cell depletion."* Our somatropin is at 0.07 mg/kg/day. But Ohlsson 1992 (PNAS 89:9826)
+shows **physiological** GH gives **1.95 ± 0.13×** the germinal pool. Same hormone, opposite signs,
+separated by dose. The fix costs nothing: **lower the dose toward physiological and make it intermittent**
+— which is the PNAS authors' own recommendation.
+
+**4. Mecasermin buys zero pool.** Ohlsson tested IGF-1 head-to-head in the same experiment:
+**0.96 ± 0.04.** Nothing. *"IGF-I acts only on the proliferation of the resulting chondrocytes."*
+F-R088 added it as *the* obtainable pool agent and named its effect the top open question. That question
+was answered in 1992. It survives as a rate agent only.
+
+**5. I had been quoting Schrier's rate as if it were his number.** The "flat 9.2/9.2/7.6%" I carried for
+rounds is the **BrdU labelling index**. Read properly, `schrier2006.pdf`: **RZ chondrocyte number per mm
+falls with age, P<0.001**, in all three regions. The rate collapses by week 5 and plateaus; the number
+keeps draining. That answers "empty or asleep" — it drains, and the drain is measured.
+
+**And it hands us a second pool agent that is an approved generic.** Schrier's dexamethasone arm, which
+I had never read past the abstract: 0.5 mg/kg/day × 2 weeks → BrdU index **down** (P<0.001) but
+**resting-zone chondrocyte number GREATER, P=0.016**, localised to the reserve zone, and not mediated by
+IGF-1. Slow the divisions, spend the pool more slowly, end with more cells. The cost is that
+glucocorticoids suppress growth — so dexamethasone is not a continuous agent, it is a **banking** agent
+for a cycled protocol. That is F-R022's "pulse, not chronic state" achieved by **cycling systemic agents
+in time** rather than by local delivery in space, which is exactly the constraint Tate set.
+
+**The structural conclusion.** Seven interventions across five experiments move the number of stem cells
+with **proliferation essentially unchanged**. This is not a rate axis, it is a **fate** axis —
+symmetric-renewing versus lineage-committed division — and it is **bidirectionally drug-accessible**.
+F-R088's "the pool cannot be bought" is withdrawn, and so is its corollary that pool and rate are the
+same axis with opposite signs: Trompet's bead raised pool *and* rate together; Schrier's dexamethasone
+raised pool while lowering rate.
+
+**What we still cannot have:** no Smoothened agonist has ever been given to a human. SAG and
+purmorphamine are catalogue reagents. The nearest real things are **Oxy133** (MAX BioPharma, IND-track,
+binds SMO directly, cyclopamine-blocked) and **20(S)-hydroxycholesterol** (endogenous sterol, allosteric
+SMO agonist at the cysteine-rich domain, EC50 ≈ 3 µM, confounded by LXR agonism). That is the top ask.
+The obtainable substitute follows from Trompet's own mechanism — if the effector is Wnt inhibition, then
+**niclosamide, pyrvinium, or a clinical-stage PORCN inhibitor** reaches the same niche state, at the
+honest cost of being anti-osteoanabolic.
