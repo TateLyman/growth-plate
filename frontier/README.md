@@ -2825,3 +2825,25 @@ acceleration in girls with precocious puberty and bone age +1.69 y, and I conclu
 "chronologically paced." That needs refining: CPP children are early, not overgrown.** The clock tracks
 **growth accomplished**, not pubertal stage or skeletal maturation — so F-R077's null is precisely what the
 law predicts, and it is a cleaner control than I realised.
+
+**The SRA pull finished.** No sra-toolkit, aligner or samtools in this environment and 55 GB of FASTQ against
+27 GB of disk, so I built a repeat-masked 32-mer index of the target loci and streamed the reads straight
+from ENA without writing them to disk.
+
+**It validated itself on the engineered lesion:** the `Dnmt1` locus is the *only* one that falls in raw
+counts (0.58×) while every other locus rises — that is the floxed-exon deletion, detected in the correct
+three samples. And the negative control earned its place: **the gene desert rises 4.6× in the knockouts**,
+because MBD2 pulldown specificity collapses as methylation is lost and the library drifts toward input.
+**Raw counts alone are uninterpretable.**
+
+Read against that background, **the genes the deposit omitted are Dnmt1-dependent after all** — **`Acan`
+(0.43×, p=0.015)** and **`Cyp19a1` (0.53×, p=0.012)**, plus `Igf2/H19`, `Cdkn1c`, `Mkrn3`, `Peg3` and
+`Gpc3`. The known positives from the deposit rank immediately below the deletion (`Dlk1` 0.24×, `Meg3`
+0.26×), and **`Hhip` returns a clean null (4.31× against a 4.61× background), which is what makes the
+positives mean anything.**
+
+**The matrix gene of F-R078 and the aromatase gene of the closure arm both carry Dnmt1-dependent methylation
+in chondrocytes.** That is not evidence that methylation controls their expression — it is evidence that the
+methylation layer sits *upstream of* both the matrix term and the closure term rather than beside them.
+**One positive control failed to replicate** (`Nnat`, the densest locus in the deposit, 0.73×, p=0.22), and
+I am recording that rather than dropping it.

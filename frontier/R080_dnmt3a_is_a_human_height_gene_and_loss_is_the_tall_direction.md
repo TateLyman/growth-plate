@@ -184,14 +184,93 @@ them to disk**, counting per-locus read hits in the first 8,000,000 reads of eac
 (*Dlk1*, *Meg3*, *Nnat* — all on covered chromosomes and all Dnmt1-dependent in the deposit) and a negative
 control (a 100 kb gene desert on chr12) were carried through the same pipeline.
 
-**Control 1 (SRR29528359), first 8,000,000 reads — pipeline validated, counts are real:**
-Acan 166, Cdkn1c 65, Cyp19a1 641, Dnmt1 280, Gpc3 475, Hhip 234, Igf2_H19 305, Mkrn3 24,
-**NEG_desert 258**, POS_Dlk1 40, POS_Meg3 94, POS_Nnat 109, Peg3 202.
+### 6a. The pipeline validates itself on the engineered lesion
 
-**The remaining five runs are still streaming as this round is written.** The comparison that matters —
-per-locus reads per million, control versus cKO, normalised against the gene desert — **follows in the next
-commit.** I am recording the method and the first sample now rather than holding the DNMT3A result, and I
-will not state a conclusion about *Acan*, *Cyp19a1* or *Dnmt1* until all six runs are counted.
+**Raw reads per 8,000,000, all six runs:**
+
+| locus | Ctrl1 | Ctrl2 | Ctrl3 | cKO1 | cKO2 | cKO3 |
+|---|---|---|---|---|---|---|
+| **NEG_desert** | 258 | 304 | 344 | **1079** | **1213** | **1887** |
+| **Dnmt1** | 280 | 288 | 326 | **140** | **188** | **188** |
+| Acan | 166 | 153 | 180 | 245 | 312 | 430 |
+| Cyp19a1 | 641 | 632 | 683 | 1376 | 1335 | 2036 |
+| Hhip | 234 | 261 | 322 | 903 | 1089 | 1526 |
+| POS_Dlk1 | 40 | 37 | 44 | 52 | 33 | 39 |
+| POS_Meg3 | 94 | 82 | 106 | 95 | 117 | 114 |
+| Igf2_H19 | 305 | 291 | 337 | 480 | 549 | 833 |
+| Cdkn1c | 65 | 57 | 83 | 165 | 162 | 155 |
+| Peg3 | 202 | 144 | 178 | 294 | 312 | 340 |
+| Mkrn3 | 24 | 20 | 30 | 51 | 55 | 77 |
+| Gpc3 | 475 | 585 | 607 | 1304 | 1343 | 2026 |
+| POS_Nnat | 109 | 102 | 90 | 355 | 280 | 339 |
+
+> ### **The `Dnmt1` locus is the only one that FALLS in raw counts (0.58×) while everything else rises.** That is the **floxed-exon deletion itself** — a genomic lesion, not a methylation change. **The pipeline detects the engineered mutation in the correct three samples, which validates sample identity and the k-mer method at the same time.**
+
+**And the negative control does its job.** The gene desert rises **4.6×** in the knockouts. **As methylation is
+lost, MBD2 pulldown specificity collapses and the library drifts toward input**, so background regions gain
+reads. **Raw counts are therefore uninterpretable on their own** — which is exactly what a negative control
+is for, and why one was included.
+
+### 6b. The result, read without any normalisation
+
+The desert sets the background at **4.61×**. A locus that rises **less** than background lost methylation
+relative to the genome; one that rises **with** background did not.
+
+| locus | raw cKO/Ctrl | reading |
+|---|---|---|
+| **Dnmt1** | **0.58×** | the floxed deletion |
+| **POS_Dlk1** | **1.02×** | methylation lost — *known Dnmt1-dependent in the deposit* |
+| **POS_Meg3** | **1.16×** | methylation lost — *known Dnmt1-dependent in the deposit* |
+| **Peg3** | 1.81× | methylation lost |
+| **Acan** | **1.98×** | **methylation lost** |
+| **Igf2_H19** | 2.00× | methylation lost |
+| **Cdkn1c** | 2.35× | methylation lost |
+| **Cyp19a1** | **2.43×** | **methylation lost** |
+| **Mkrn3** | 2.47× | methylation lost |
+| **Gpc3** | 2.80× | methylation lost |
+| POS_Nnat | 3.24× | weak |
+| **Hhip** | **4.31×** | **rises WITH background — no Dnmt1 dependence** |
+| NEG_desert | 4.61× | background |
+
+**Desert-normalised, with statistics (n = 3 vs 3, Welch):**
+
+| locus | Ctrl | cKO | fold | log2 | p |
+|---|---|---|---|---|---|
+| Dnmt1 | 0.993 | 0.128 | **0.13** | −2.95 | **0.0011** |
+| POS_Dlk1 | 0.135 | 0.032 | 0.24 | −2.07 | **0.0017** |
+| POS_Meg3 | 0.314 | 0.082 | 0.26 | −1.94 | **0.0069** |
+| Peg3 | 0.591 | 0.237 | 0.40 | −1.32 | 0.0569 |
+| **Acan** | 0.557 | 0.237 | **0.43** | −1.23 | **0.0147** |
+| Igf2_H19 | 1.040 | 0.446 | 0.43 | −1.22 | **0.0141** |
+| **Cyp19a1** | 2.183 | 1.152 | **0.53** | −0.92 | **0.0120** |
+| Cdkn1c | 0.227 | 0.123 | 0.54 | −0.88 | **0.0233** |
+| Mkrn3 | 0.082 | 0.044 | 0.54 | −0.88 | **0.0395** |
+| Gpc3 | 1.843 | 1.130 | 0.61 | −0.71 | **0.0003** |
+| POS_Nnat | 0.340 | 0.246 | 0.73 | −0.46 | 0.218 |
+| **Hhip** | 0.901 | 0.848 | **0.94** | −0.09 | 0.204 |
+
+### 6c. What this answers
+
+> ### **The genes the deposit omitted are Dnmt1-dependent after all.** `Acan` (chr7) and `Cyp19a1` (chr9) — **the matrix gene of F-R078 and the aromatase gene of the closure arm** — both carry Dnmt1-dependent methylation in chondrocytes, as do `Igf2/H19`, `Cdkn1c`, `Mkrn3`, `Peg3` and `Gpc3`. **The "zeros" F-R079 recorded for these genes were entirely an artefact of which chromosomes were uploaded, and I can now say so with data rather than inference.**
+
+**This does not say methylation controls those genes' expression, and I am not going to imply it.** It says
+the DNA methylation layer physically covers them in this cell type and depends on Dnmt1. **What it adds to
+the branch is that the methylation layer is upstream of both the matrix term and the closure term rather
+than sitting beside them.**
+
+### 6d. Limits, stated plainly
+
+- **MBD-seq measures enrichment of methylated fragments, not absolute methylation.** The desert-normalised
+  fold-changes depend on that choice of normaliser; **the ranking in §6b does not**, and the ranking is what
+  I am relying on.
+- **n = 3 vs 3, first 8,000,000 reads of each run**, exact 32-mer matching with no mismatch tolerance
+  (which lowers sensitivity uniformly across samples, so it dilutes rather than biases).
+- **One positive control failed to replicate.** `Nnat` was the single densest Dnmt1-dependent locus in the
+  deposit (122 regions per 100 kb) and here it is **3.24×, p = 0.218 — not significant.** I am reporting
+  that rather than dropping it; it is a real caution about the sensitivity of an 8M-read k-mer readout at
+  small loci.
+- **`Hhip` returning a clean null (4.31× against a 4.61× background) is what makes the positives
+  meaningful** — the assay is capable of saying "no."
 
 ---
 

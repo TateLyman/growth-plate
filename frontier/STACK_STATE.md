@@ -223,7 +223,23 @@ separation does not protect against a global reduction of the writer.
 dexamethasone banking result, same cost.
 
 **Data-quality note:** the deposited file is **missing chr7, chr8, chr9, chrX entirely** (76% genome
-coverage). *Acan* (chr7), *Cyp19a1* and *Dnmt1* (chr9) cannot be assessed. **Dlk1–Dio3 domain enrichment is
+coverage). **RESOLVED IN F-R080 by pulling the raw runs.** No SRA toolkit, aligner or samtools in this
+environment and 55 GB of FASTQ against 27 GB of disk, so I built a **repeat-masked 32-mer index** of the
+target loci and **streamed reads from ENA without writing them to disk** (8M reads/run, SRR29528354-59).
+
+**Validation:** the `Dnmt1` locus is the **only** one that FALLS in raw counts (0.58x) while everything else
+rises — that is the **floxed-exon deletion itself**, detected in the correct three samples. The gene desert
+rises **4.6x** in cKO (MBD pulldown specificity collapses as methylation is lost), so raw counts need the
+desert as reference. **`Hhip` returns a clean null (4.31x vs 4.61x background), so the assay can say "no."**
+
+**Result — the omitted genes ARE Dnmt1-dependent** (desert-normalised, Welch, n=3v3):
+**Acan 0.43x p=0.015**; **Cyp19a1 0.53x p=0.012**; Igf2_H19 0.43x p=0.014; Cdkn1c 0.54x p=0.023;
+Mkrn3 0.54x p=0.040; Gpc3 0.61x p=0.0003; Peg3 0.40x p=0.057. Known positives from the deposit rank at the
+top (Dlk1 0.24x p=0.002, Meg3 0.26x p=0.007). **One positive control failed: Nnat 0.73x p=0.22.**
+
+> **The matrix gene (`Acan`, F-R078) and the aromatase gene (`Cyp19a1`, the closure arm) both carry
+> Dnmt1-dependent methylation in chondrocytes.** Not evidence that methylation controls their expression —
+> evidence that **the methylation layer sits upstream of both the matrix term and the closure term.** **Dlk1–Dio3 domain enrichment is
 2.38×, permutation p = 0.059 — NOT significant** (my first-pass Poisson p = 3.6e-19 used the wrong null).
 
 ## -1b-OLD. THE DIRECTION PROBLEM FOR OSK — dissolved (F-R072) — **RETRACTED BY F-R079 ABOVE**
