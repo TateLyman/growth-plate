@@ -196,7 +196,46 @@ Tested Dnmt1-dependent regions against Polycomb loci. **Hox clusters are ENRICHE
 
 *Caveat: POMC is 74 kb away; no formal colocalisation performed.*
 
-### (d) WHAT STILL CANNOT BE SUBSTITUTED FOR
+### (d) **F-R084 — ALL THREE RESOLVED**
+
+**1. POSTNATAL WINDOW — answered.** Mouse `Dnmt3a^R878H/+` is *"normal weight and size at birth"*, weights
+**identical before 100 days**, longer femurs at 210 d; plate thicker at **P27**. **The entire phenotype is
+acquired postnatally.** Human: both TBRS girls were **still growing at a raised setpoint at 10-13 y** and
+needed treatment to stop. **Counterweight:** a documented **post-zygotic MOSAIC DNMT3A carrier** (identified
+because **4 of his 14 offspring have TBRS**) is **NOT tall — 32nd percentile** (epigenetic age +23% vs ~40%
+in full carriers). **⇒ The constraint is TARGET ENGAGEMENT FRACTION, not developmental timing.**
+
+**2. HEIGHT/DENSITY SEPARABLE — YES.**
+- **The bad news first:** IMPC **`Dnmt3a^tm1b` TRUE NULL het** — Bone Area F 8.754→8.399 **p=3.8e-05**;
+  **BMC F 0.4274→0.4078 p=5.6e-04, M 0.4534→0.4429 p=0.039 (BOTH SEXES)**. Weaker `tm1a` allele: nothing
+  (p=0.54, 0.91) — internal dose-response. **Three allele classes now agree (missense mice, human common
+  variation, true null). The trade-off is INTRINSIC to DNMT3A.**
+- **But it is NOT a law of skeletal biology.** Genome-wide **rg(height, bone area) = 0.064 (spine), 0.14
+  (hip)** — near-independent. And direct: **ACAN 190 mapped SNPs, dense height signal, ZERO bone-density
+  associations. CCN2 the same.** vs **DNMT3A: 47 height + 4 BMD, one SNP carrying both in OPPOSITE
+  directions.**
+> ### **Separability is demonstrated. The liability is DNMT3A-specific, and CCN2 is the counter on TWO independent grounds — a height locus with no BMD penalty in human genetics, AND the one agent measured to raise cortical thickness and mineral content while lengthening bone (F-R078).**
+
+**3. SETPOINT + DEADLINE ADDITIVE — YES, 47,XXY ALREADY RUNS BOTH.**
+**SHOX x3** (setpoint) + **hypogonadal delayed epiphyseal closure** (deadline) → **+5 to +7 cm**, on
+*"normal circulating IGF-1 and IGFBP-3"*. **Separable in time:** height excess present **at ages 4-12, before
+fusion matters** (SHOX arm alone); **increased LEG length** from delayed closure (deadline arm on top).
+**This is the stack's exact architecture, occurring naturally and working.**
+
+> ### **NEW CONSTRAINT:** a 47,XXY man also carrying heterozygous **ACAN** c.7141G>A reached **151.6 cm
+> (−2.8 SDS)** with **bone age 17 y and plates FUSED at chronological 16 y 2 m**. **ACAN haploinsufficiency
+> advanced bone age and closed the plates DESPITE Klinefelter hypogonadism.** **The deadline arm is NOT
+> unconditional — a matrix defect forces fusion through it.** So **CCN2 protects the deadline arm as well as
+> the cortex**, and anything degrading matrix sabotages both.
+
+### ⚠️ THE FLAW I NEARLY MISSED
+IMPC's true null shows the **bone deficit WITHOUT the length gain**, and **Tatton-Brown 2014 wrote *"a simple
+haploinsufficiency model appears unlikely"***. **Had that stood, a DNMT3A INHIBITOR would be the wrong tool
+entirely.** **Refuted by four human truncating alleles:** c.934_937dupTCTT **+3.2 SD**; p.Arg320* **+3.2
+SDS**; p.G587fs **+3.77 SD**; p.Arg771* **+2.42 SD**. **Haploinsufficiency IS sufficient in humans; an
+inhibitor is viable.** The mouse discrepancy is the n=8 power problem Tatton-Brown himself named.
+
+### (d-old) WHAT COULD NOT BE SUBSTITUTED FOR AS OF F-R083 (now resolved above)
 1. **Whether POSTNATAL DNMT3A reduction reproduces the phenotype.** All human+mouse data is germline. TBRS is
    overgrown by age 3; the mouse diverges only after 100 days. **Unresolvable from existing data, and the most
    important unknown in the arm** — a postnatal intervention is the only usable kind.

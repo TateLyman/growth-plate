@@ -3036,3 +3036,61 @@ counter is already in the stack and already expressed in the right tissue.**
 diverges only after 100 days — those point opposite ways); whether height and bone density are separable at
 all; and whether removing the fusion deadline and raising the setpoint are additive. **None of the three
 exists in the literature in any form.**
+
+---
+
+## The fifty-fourth summary — F-R084: all three "impossible" items resolved, and a flaw caught that would have been fatal
+
+**F-R083 closed with three items I called unsubstitutable. All three are answered — two from human
+populations that already run the experiment, one from a standardised mouse resource I had never queried.**
+
+**First, the flaw.** IMPC holds a **true-null `Dnmt3a` heterozygote** (`tm1b`), which I had not looked at. It
+shows **reduced bone area (female p = 3.8 × 10⁻⁵) and reduced bone mineral content in both sexes (p = 5.6 ×
+10⁻⁴ and 0.039)** — so the cortical penalty is **not** an artefact of dominant-negative missense alleles, and
+F-R082's hope is dead. **But the same record shows no body-length gain in that true null.** Combined with
+Tatton-Brown's own 2014 sentence — *"a simple haploinsufficiency model appears unlikely"* — that would mean
+**a DNMT3A inhibitor, which reduces activity rather than altering it, would be the wrong tool entirely and
+the whole arm would be broken.**
+
+> **It is refuted by four human truncating alleles**: c.934_937dupTCTT at **+3.2 SD**, p.Arg320\* at **+3.2
+> SDS**, p.G587fs at **+3.77 SD**, p.Arg771\* at **+2.42 SD**. **Haploinsufficiency is sufficient in humans.
+> An inhibitor is viable.** And the mouse discrepancy resolves the way Tatton-Brown himself proposed — *"the
+> overgrowth phenotype is too subtle to detect in mice"* — with IMPC's own n = 8–9 exposing it.
+
+**Item 2 — separability — answered, and it closes the largest hole in the stack.** Genome-wide, height and
+bone size are genetically near-independent (**rg = 0.064 spine, 0.14 hip**). And directly: I pulled every
+GWAS Catalog SNP at the two `v(m)` genes. **ACAN has 190 mapped SNPs and a dense height signal with ZERO
+bone-density associations. CCN2 the same.** Against DNMT3A's **47 height and 4 BMD associations with one SNP
+carrying both in opposite directions.**
+
+> **Height can be moved without a density cost — just not at DNMT3A.** The trade-off is locus-specific, not
+> a law. **CCN2 is now the counter on two independent grounds: a height locus with no BMD penalty in human
+> genetics, and the one agent measured to raise cortical thickness and mineral content while lengthening
+> bone.**
+
+**Item 1 — the postnatal window — answered as a dose question, not a timing one.** The mouse is *"normal
+weight and size at birth"* with weights **identical before 100 days**, acquiring the entire phenotype after
+it; plates are thicker at P27 and bones longer at 210 days. Both human TBRS girls were **still growing at a
+raised setpoint at 10–13 years and had to be treated to stop.** The counterweight is a documented
+**post-zygotic mosaic DNMT3A carrier** — found only because **4 of his 14 children have TBRS** — who is
+**not tall, at the 32nd percentile.** **So the effect is expressed postnatally but needs a large fraction of
+cells: that is a target-engagement specification, not a developmental veto.**
+
+**Item 3 — additivity — answered by a population that already runs both arms.** **47,XXY Klinefelter is the
+stack's architecture occurring naturally**: three copies of **SHOX** raise the setpoint, and hypogonadal
+**delayed epiphyseal closure** extends the deadline. And they are separable in time — the height excess is
+present *"already at ages 4 to 12, well before normal epiphyseal fusion"* (SHOX alone), while the
+disproportionate **leg length** comes from the delayed closure. Net **+5 to +7 cm on a normal IGF-1 axis.**
+
+> **And a constraint the branch did not know about.** A 47,XXY man who also carries a heterozygous *ACAN*
+> variant reached **151.6 cm (−2.8 SDS)** with **bone age 17 and plates already fused at 16 years 2 months**.
+> **ACAN haploinsufficiency advanced bone age and closed the plates despite Klinefelter hypogonadism.** The
+> deadline arm is **not unconditional** — a matrix defect forces fusion through it. **So CCN2 is protecting
+> the deadline arm as well as the cortex, and anything that degrades matrix sabotages both.**
+
+**What is left is one document and two experiments, and the distinction is now sharp.** The document is
+**"Tissue-Biased Expansion of DNMT3A-Mutant Clones in a Mosaic Individual" (S1934-5909(20)30285-X)** —
+ScienceDirect returned 403 — which would give the per-tissue mutant fraction in a non-overgrown mosaic
+carrier, i.e. the quantitative engagement threshold for the whole arm. The experiments are a DNMT3A
+inhibitor in a growing animal with a bone-length readout, and the DNMT3A + oestrogen-ablation combination.
+**Both are now well-posed rather than open-ended.**
