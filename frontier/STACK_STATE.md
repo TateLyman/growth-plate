@@ -1,12 +1,124 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R108
+**Last updated:** F-R109
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-AXIS. **F-R109 — A SHORT BONE IS AN OLD GROWTH PLATE. ROWS 1 AND 3 ARE ONE ROW.**
+
+**Re-enumerated GEO with 96 queries: 4,421 series (7x the F-R108 corpus). 528 datasets cached with gene
+symbols.** Code: `frontier/analysis/geo_sweep/`. Axis gene ranking: `youth_axis_genes.tsv`.
+
+### => THE DATASET F-R108 ASKED FOR
+`GSE114919 - Differential ageing of growth plate cartilage determines skeletal proportions.`
+RNA-seq, **mouse AND rat independently**, PZ and HZ dissected, **1wk vs 4wk**, and **tibia vs phalanx in
+the same animal at the same age**. n=5/cell.
+
+### => THE RESULT: (tibia - phalanx) IS THE SAME PROGRAM AS (young - old)
+| | PZ | HZ |
+|---|---|---|
+| **mouse** | **r=+0.36** | **r=+0.43** |
+| **rat** | **r=+0.65** | **r=+0.58** |
+| shuffled null | 0.000 +/- 0.011 | |
+| zone-MISMATCHED control (PZ-len vs HZ-age) | r=+0.008, p=0.44 | |
+
+**Survives removing all 120 immune/endothelial/erythroid/muscle/osteoblast/Hox markers:**
+mouse PZ +0.299, HZ +0.443; rat PZ +0.623, HZ +0.571 (all p->0). Not a dissection artefact.
+
+> **A short bone is a bone whose growth plate is further along the senescence program at the same
+> chronological age. RAISING THE SETPOINT AND SLOWING THE COUNTER ARE THE SAME OPERATION.**
+> **The three-row model is retired. One axis + row 2 (deadline) as a separable spend-rate.**
+
+### => THE AXIS GENE SET, HUMAN-HEIGHT-VALIDATED
+Consensus over 8 zone-matched axes (mouse+rat x PZ+HZ x age+bone-type). 5,351 genes; 1,590 concordant >=7/8.
+**YOUNG+LONG:** SHOX2, **PLAG1**, IGF2, H19, MEG3, ZIM1, **GPC3**, **NOG**, SMOC1/2, **SCUBE3**,
+**DISP1**, IHH, **NPR2**, **PRKG1**, DIO2, MSI1, RARG, PENK, SLC2A1, ADAMTS3, IGF1R.
+**OLD+SHORT:** the vascular/myeloid invasion front - CXCL12, ADAMTS5, TNFRSF11A, NPR1, GFRA1, KAZALD1.
+**GWAS Catalog gradient:** top300 **3.204** height-assoc/gene, next700 2.400, middle3000 1.987,
+bottom300 2.610. Matched null: 926 observed vs 643+/-228, **p=0.037**.
+Per gene: IGF1R 50, ADAMTS3 42, SMOC2 35, **NOG 32**, **PRKG1 28**, **PLAG1 24**, IGF2 19, CHSY1 19,
+IHH 16, **NPR2 12**, FGFR3 11, **DISP1 11**.
+**NEW: SCUBE3 / DISP1 / GPC3 are the Hh LIGAND-DELIVERY machinery and all three are young+long.**
+
+### => VOSORITIDE PROMOTED - best-supported obtainable agent on the axis
+Three independent lines: **NPR2 stem-compartment enriched 5+/1- (F-R108)** + **NPR2 (+0.69) and PRKG1
+(+1.52) both in the young+long program** + **40 human height associations between them** + **approved
+CNP analogue with paediatric dosing.** F-R103 listed CNP analogues as one of four things the field has
+and never scored it. **This is a change of position.**
+
+### => TROMPET 2024 READ IN FULL (`PMC11063944`) - CORRECTS F-R094 AND F-R095
+> *"systemic activation of the Hh pathway during the early growth period **reduces** the activity of
+> epSSCs but **promotes** their activity when performed after maturation of the SOC."*
+- SAG i.p. **P10-P16 (before niche): clone size DOWN, RZ proliferation DOWN**
+- SAG i.p. **P30-P36 (after niche): singlets down, doublets/triplets up, RZ proliferation UP**
+- Genetic Ptch1 ablation works at BOTH ages => the early failure is a **systemic side effect**, not the cell
+- **F-R094/F-R095's "systemic SAG does not lengthen a normal mouse" - result stands, interpretation was wrong.**
+
+| | |
+|---|---|
+| SAG P30-36 systemic | **PTHrP+ cells +61%** |
+| same experiment, LENGTH | **tibia P=0.29, femur P=0.247 - NO change, but readout was only 8 DAYS** |
+| 3 intra-articular injections | **= 7 systemic injections** in clonogenic effect |
+| intra-articular | RZ cells **65.5 -> 139.8/mm2, P=0.017** |
+| SAG bead in SOC (rat) | femur longer 1/2/6 months, tibia 2/6, whole leg all timepoints (paired, contralateral) |
+| **bead exposure** | **Gli1 signal present 1wk, GONE by 3wk - benefit outlives exposure ~5.5x** |
+| **HOW it lengthened** | **taller TERMINAL HYPERTROPHIC chondrocytes; columnar-zone proliferation UNCHANGED** |
+| OA at 6 months | none |
+
+**The lengthening mechanism is `v`, measured histologically - independently confirming F-R108's
+transcriptome axis (cycle-low / matrix-high). Two unrelated lines, same answer.**
+**GSE254020 (sorted epSSC, SAG vs DMSO) is UNUSABLE** - dominated by a FACS purity shift (neutrophil up,
+B-cell down) plus compensatory Hh feedback (PTCH1 -1.22, GLI1 -1.58). Real signal that survives:
+**Wnt output down (LEF1 -1.38, WNT4 -1.45, AXIN2 -0.30, DKK1 +1.09)**, confirming F-R089.
+
+### => THE SCREEN: 5,936 CONTRASTS AND NOTHING MOVES THE AXIS
+Positive controls recover: rat 1wk-vs-4wk **+0.731**; HUMAN pre- vs late-puberty **+0.263** (different
+lab/species/platform); phalanx-vs-tibia **-0.496**; enchondroma vs GP **+0.215**.
+
+| perturbation | r(youth) | p |
+|---|---|---|
+| **gefitinib (rescuing TGF-a)** | **+0.096** | 2.7e-12 |
+| **dexamethasone, rat GP in vivo** | **+0.081** | 1.4e-07 |
+| Fgfr3 gain-of-function | +0.056 | 1.2e-04 |
+| **Dnmt1 cKO (short bones)** | **+0.013** | **0.36 = NULL** |
+| Tet1 KO SSC | -0.083 | 1.1e-09 |
+| **TGF-a / EGFR activation** | **-0.159** | 4.9e-31 |
+| **retinoic acid** | **-0.181** | 1.1e-20 |
+| TIMPless / Xbp1 KO | -0.206 / -0.236 | |
+
+> **Largest agent effect anywhere: r=+0.096, against a +0.731 positive control. NOTHING PHARMACOLOGICAL
+> MOVES THIS AXIS. The gap is in the experiments, not in the search.**
+
+**Two signs that did fall out:** retinoic acid AGES the plate (-0.181) while RARG *expression* is
+youthful (+1.22) => **the arm is an RARg ANTAGONIST; F-R093's direction was right.** And EGFR activation
+ages the plate while **gefitinib partially reverses it** - approved, correctly signed, one rescue
+experiment in cultured chondrocytes, no skeletal endpoint. **Recorded, not promoted.**
+
+### => METHYLATION ARM CLOSED
+**Dnmt1 cKO - a genetic short-bone model - is NULL on the axis (r=+0.013, p=0.36).** Nine rounds of
+argument and the mutant that shortens bones does not move the thing that tracks bone length.
+
+### => WHERE THE AXIS FAILS (stated up front)
+1. **It scores immaturity, and arrest looks like immaturity.** `Ppp1r15b^Prx1` (disorganised plate,
+   SHORT) scores **+0.193**, wrongly.
+2. **Longshanks does not fit** - correlates -0.08 to 0.00 with every youth axis. 13 generations of
+   selection for +12% tibia produced something that is NOT a senescence-position shift. Unexplained.
+3. It is a **bulk-tissue** axis - applying it to sorted stem cells is a category error.
+4. The length half is partly **positional** (Hox); excluded Hox/Tbx, and the age half carries it.
+
+### => REMAINING HOLES
+1. **A resting-zone transcriptome at more than one age. The 4,421-series corpus still has NONE.**
+   GSE114919 is PZ+HZ only. Every F-R109 conclusion is about PZ and HZ. **The pool compartment has been
+   measured at exactly one age, ever.**
+2. **Any experiment in any species that moves a growth plate backwards along this axis.** None exists in
+   the reachable record.
+3. **Vosoritide / any CNP-agonist growth-plate transcriptome with zones.** GSE112637-9 are n=1/group.
 
 ---
 
