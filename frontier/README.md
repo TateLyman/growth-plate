@@ -3094,3 +3094,61 @@ ScienceDirect returned 403 — which would give the per-tissue mutant fraction i
 carrier, i.e. the quantitative engagement threshold for the whole arm. The experiments are a DNMT3A
 inhibitor in a growing animal with a bone-length readout, and the DNMT3A + oestrogen-ablation combination.
 **Both are now well-posed rather than open-ended.**
+
+---
+
+## The fifty-fifth summary — F-R085: the last document, the engagement bracket, and the complete audit
+
+**Tovy 2020 was the last thing I asked for, and it does three things.**
+
+**One — it removes the argument against a postnatal intervention.** The mosaic DNMT3A carrier is not tall,
+and F-R084 treated that as evidence the window might be closed. The per-tissue numbers dissolve it: his
+**blood is ~100% mutant** while his **eyebrow-hair epidermis is 0.022%**, saliva 8%, urine 20%. The paper's
+own heading is *"Expansion of DNMT3A mutant cells is unique to the blood lineage."* **His skeleton was never
+substantially mutant.** Everything else points one way — the mouse is *"normal weight and size at birth"*
+with weights identical before 100 days, plates thicker at P27, bones longer at 210 days; both TBRS girls
+were still growing at a raised setpoint at 10–13 years. **The postnatal window is open.**
+
+**Two — it brackets the dose.** Germline heterozygotes carry a **50% reduction** in every cell and are
+**+3.0 SD, thirteen of thirteen**. The mosaic's urine epithelium is 20% heterozygous cells — a **10% average
+reduction** — and shows nothing.
+
+> **~10% engagement is too little; ~50% is sufficient and fully penetrant.** That is the first quantitative
+> dosing constraint the DNMT3A arm has ever had. Against DY-46-2's measured **33-fold selectivity over
+> DNMT1**, 50% DNMT3A inhibition implies **~1.5–3% DNMT1 inhibition** — comfortably inside the hard
+> "preserve DNMT1" constraint. **The window exists and it is not narrow.**
+
+**Three — it makes local delivery mandatory rather than preferable.** This man's blood went to ~100% mutant
+over six decades while nothing else did. **DNMT3A-deficient HSCs outcompete wild-type ones.** A systemic
+inhibitor applies that selection to every haematopoietic stem cell in the body — the clonal-haematopoiesis
+pathway, engaged deliberately. *(The counterweight, stated because it cuts the other way: he carried ~100%
+mutant blood for sixty years with normal counts and no transformation, while every reconstituted
+`Dnmt3a`-null mouse eventually succumbs.)*
+
+**And the mechanism now states in one sentence.** Tovy: DNMT3A loss makes cells *"fail to gain active
+lineage-specific methylation normally acquired in WT cells"* during differentiation. **DNMT3A writes the
+commitment mark. Less of it delays commitment, so cells stay proliferative longer; more of it commits them
+early.** Bell-Hensley's **unchanged PCNA** confirms the thicker plate is retention, not extra proliferation.
+
+**The stack changes.** **Abaloparatide is demoted** — its role was always inference from Winer's safety
+data, and **CCN2 does the same job with a direct measurement.** **CCN2 is promoted to load-bearing** with
+three distinct jobs: it raises matrix (97.9th percentile in human growth plate), it is the only agent
+measured to **raise cortical thickness and mineral content while lengthening bone**, and it **protects the
+deadline arm** — because F-R084's ACAN+Klinefelter case showed a matrix defect forces fusion straight
+through hypogonadism. **Selective DNMT3A inhibition enters as the setpoint arm**, at ~50% engagement, local.
+
+**On "infinite," I am going to be straight.** The deadline can be removed — two men grew into their
+thirties. The setpoint can be raised about 3 SD. The two are additive; 47,XXY runs both. The rate terms have
+6.8× of measured human headroom. **But every arm has a finite measured magnitude. TBRS patients reach +3 SD
+and stop. The ESR1-null man kept growing at 0.3 cm/year.** Unbounded growth needs `a > b` sustained
+indefinitely, and that is the one place where the two best papers in the field flatly contradict each other
+— Heyn says progenitors are pushed out of self-renewal, Jackson says their numbers stay constant and only
+output falls. **This is a stack that plausibly raises the ceiling by several standard deviations and removes
+the deadline that stops you reaching it. That is a large claim and it is supported. It is not the same claim
+as infinite.**
+
+**And the hole that deserves the next effort is not biology.** After the two TBRS girls had their legs
+arrested, they grew **+10.9 cm of sitting height and +20.5 cm of arm span**. F-R074's delivery route reaches
+one epiphysis; a human has about thirty plus the spine. **A stack that reaches only the knee produces the
+proportions of an epiphysiodesis patient, not height** — and nobody in this literature has even posed the
+problem.

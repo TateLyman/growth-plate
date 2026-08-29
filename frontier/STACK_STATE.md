@@ -10,7 +10,71 @@ ledger.
 
 ---
 
+## 0. **F-R085 — THE ENGAGEMENT BRACKET, MANDATORY LOCAL DELIVERY, AND THE FINAL AUDIT**
+
+**Tovy 2020 *Cell Stem Cell* 27:326 — the mosaic DNMT3A carrier, per tissue:**
+
+| tissue | % mutant cells | VAF |
+|---|---|---|
+| **peripheral blood** (3 draws / 7 yr) | **~100%** | ~0.5 |
+| germline (from 4/14 offspring) | ~57% | 0.29 |
+| urine epithelium | 20% | 0.1 |
+| saliva | 8% | 0.04 |
+| **eyebrow hair bulb (epidermis)** | **0.022%** | 0.011 |
+
+Height 5'8" (**32nd pct**), no overgrowth, no TBRS facies, normal counts.
+
+> ### **His blood is 100% mutant and his skin is 0.022%.** *"Expansion of DNMT3A mutant cells is unique to
+> the blood lineage."* **His skeleton was never substantially mutant — the missing overgrowth is a
+> tissue-distribution artefact, NOT evidence against a postnatal window. F-R084's counterweight is
+> WITHDRAWN.** Mouse: normal at birth, all of it after day 100, plate thicker at P27, bones longer at 210 d.
+> Humans: both TBRS girls still growing at a raised setpoint at 10-13 y. **THE POSTNATAL WINDOW IS OPEN.**
+
+### ⇒ THE ENGAGEMENT THRESHOLD, BRACKETED
+
+| state | mean DNMT3A reduction | overgrowth |
+|---|---|---|
+| germline het (all cells) | **50%** | **YES, +3.0 SD, 13/13** |
+| mosaic urine (20% of cells het) | **10%** | **NO** |
+| mosaic saliva (8%) | 4% | NO |
+
+> ### **~10% reduction is INSUFFICIENT; 50% is SUFFICIENT and fully penetrant. Target ~50% engagement.**
+> First quantitative dosing constraint the arm has ever had. **DY-46-2: IC50 0.39 uM, 33x selective over
+> DNMT1** ⇒ at 50% DNMT3A inhibition, **~1.5-3% DNMT1 inhibition** — inside the hard "preserve DNMT1"
+> constraint (`Dnmt1^ΔPrx1` bone <50% of control). **The window exists and is not narrow.**
+
+### ⇒ LOCAL DELIVERY IS NOW MANDATORY, NOT PREFERRED
+Blood went to ~100% mutant over six decades while other tissues did not. **DNMT3A-deficient HSCs outcompete
+WT.** A systemic inhibitor applies that selection to every HSC = the CHIP→AML pathway, deliberately.
+**F-R074's intra-epiphyseal route is the requirement.** *(Counterweight: this man had ~100% mutant blood for
+60 years with normal counts and no transformation — but every reconstituted `Dnmt3a^-/-` mouse eventually
+succumbs to haematologic disease.)*
+
+### ⇒ THE MECHANISM IN ONE SENTENCE
+Tovy: DNMT3A loss makes cells *"fail to gain active lineage-specific methylation normally acquired in WT
+cells"* during differentiation. Jackson: DNMT3A gain *"impairs transcriptional activation dynamics during
+differentiation."* Yanagihara: methylation **maintained in proliferating, lost in hypertrophic** chondrocytes.
+> ### **DNMT3A writes the COMMITMENT mark. Less delays commitment (cells stay proliferative → thicker plate
+> → longer bone); more commits early (thinner plate → growth failure).** Bell-Hensley's **PCNA unchanged**
+> confirms it is retention, not extra proliferation.
+
+### ⇒ OPEN HOLES, RANKED (full audit in F-R085 §4)
+1. **Never-closing and fast have never coexisted** — ESR1-null man grew **0.3 cm/yr**. HIGHEST.
+2. **Every physis must be treated** — F-R074 reaches one epiphysis; a human has ~30 plus spine. The TBRS
+   girls grew **+10.9 cm sitting height vs +1.7 cm legs** after epiphysiodesis. HIGH.
+3. **Which term DNMT3A moves is unresolved** — plate thicker, PCNA unchanged ⇒ `v(d)` or duration, unmeasured. HIGH.
+4. **Mouse-to-human magnitude gap** — human +3.0 SD vs mouse "small significant increase". HIGH.
+5. **Pool: number or output?** Heyn says self-renewal lost; Jackson says numbers constant, output falls. MEDIUM.
+6. **Mechanical square-cube** — CCN2 fixes bone *quality*, not geometry. **A true physical ceiling.** MEDIUM.
+
 ## 1. What is currently in the stack
+
+> ### **F-R085 CHANGES:** **abaloparatide DEMOTED** (its role was inference; CCN2 does the same job with a
+> direct measurement). **CCN2 (Col2a1-restricted) PROMOTED TO LOAD-BEARING** — three jobs: raises `v(m)`
+> (97.9th pct in human plate), **raises cortical thickness AND mineral content while lengthening bone** (the
+> only agent measured to do both), and **protects the deadline arm** (matrix failure forces fusion through
+> hypogonadism — F-R084's ACAN+Klinefelter case). **Selective DNMT3A inhibition ADDED as the setpoint arm,
+> target ~50% engagement, local delivery mandatory.**
 
 | agent | dose | arm | what it actually does to the identity |
 |---|---|---|---|
