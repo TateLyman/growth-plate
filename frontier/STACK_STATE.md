@@ -120,11 +120,17 @@ route above. Identity retained, no stemness gain. The window is independently es
 *Cell* 2025 (Altos/Salk)** — partial reprogramming reduces mesenchymal drift *"before dedifferentiation and
 gain of pluripotency."*
 
-> **THE LAYER MISMATCH — the live hole.** The growth-plate clock we identified is **H3K4me3** (Lui, histone).
-> The OSK reset is measured on **DNA methylation** (WGBS, CpG clock). **No histone mark was assayed.**
-> Nothing yet shows OSK restores H3K4me3 at Lui's growth-gene set. **The reset is proven on the layer we did
-> not identify as the clock, in the tissue next to the one we care about.** If OSK does not touch H3K4me3,
-> **KDM5 inhibition becomes the primary route, not the backup.**
+> **THE LAYER MISMATCH IS CLOSED (F-R070).** *"Convergence of aging- and rejuvenation-related epigenetic
+> alterations on **PRC2 targets**"* (*Mol Syst Biol* 2026; open preprint bioRxiv 2023.06.08.544045):
+> **poised/bivalent promoters — defined by simultaneous H3K27me3 AND H3K4me3 — gain the greatest entropy
+> with age, and "such epigenetic disorder can be reversed upon partial reprogramming treatment."** Their
+> age-related DNA-methylation gain is **also** reversed, with *"specific reversal of methylation changes in
+> PRC2-target genomic regions."*
+>
+> **And Lui's eleven growth-plate promoters — Igf2, H19, Plagl1, Mest, Peg3, Dlk1, Gtl2, Cdkn1c, Mdk,
+> Meis1, Gpc3 — ARE the PRC2-target bivalent class.** The two layers are two readouts of one process, and
+> partial reprogramming reverses both. **KDM5 inhibition drops back to being the alternative route, not the
+> primary one.**
 
 > **And two transfer gaps:** articular chondrocytes are non-renewing and load-bearing; growth-plate
 > chondrocytes are **consumed** and fed by a niche — **rejuvenating a cell about to die at the junction
@@ -136,7 +142,26 @@ gain of pluripotency."*
 longitudinal bone growth.** AAV-OSK has rejuvenated kidney and muscle and extended lifespan in aged
 wild-type mice. Cartilage now. Never the physis.
 
-> ### THE DEFINING EXPERIMENT: deliver OSK to the resting zone of an open growth plate and measure longitudinal growth and time to fusion. Every component exists — factors, vector, a cartilage-validated serotype, a mouse methylation clock, and *Pthrp-creER* / FoxA2 drivers marking exactly the target cells.
+> ### THE DEFINING EXPERIMENT: deliver OSK to the resting zone of an open growth plate and measure longitudinal growth and time to fusion.
+
+**The clock reagents are open and in hand (F-R070):** **Petkovich, *Cell Metab* 2017;25:954, PMC5578459** —
+the 90-CpG mouse clock the OSK study trained against, **built explicitly to evaluate longevity
+interventions**; plus **Stubbs, *Genome Biol* 2017;18:68, PMC5389178**. **Cheapest decisive test available:
+run the clock on resting-zone chondrocytes across ages and ask whether methylation age tracks *growth
+accomplished* rather than chronological age.** Lui's tryptophan result predicts it does.
+
+**DELIVERY IS NOW THE REAL GAP (F-R070).** The entire AAV cartilage literature is **articular**: AAV2 best
+in arthritic chondrocytes; AAV2/5/6/6.2 substantial in normal and OA; **AAV6 aggravates cartilage
+degeneration**; **AAV7/8/9 hit liver strongly even after intra-articular injection**, AAV6 does not.
+**But the resting zone sits beneath the secondary ossification centre, fed by epiphyseal vessels, not
+exposed to the joint cavity — intra-articular delivery reaches articular cartilage, not obviously a resting
+zone behind the SOC** (my inference from the anatomy; untested either way). And F-R068 showed compartment
+specificity is **not optional** — Hedgehog worked only when confined to PTHrP+ cells; Col2a1-creER did
+nothing.
+
+> **No AAV serotype has been characterised for the growth-plate resting zone. That is the most specific
+> unfilled hole in the programme — and unlike the mechanism questions it is a straightforward screen:
+> seven serotypes, one reporter, one readout.**
 
 **The architecture, if it holds:**
 ```
