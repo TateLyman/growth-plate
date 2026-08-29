@@ -151,6 +151,50 @@ or muscle and the protein circulates. **It never transduces a growth-plate chond
 cell-autonomous and must be inside the target cell.** The entire successful AAV-skeletal literature routes
 around exactly our problem. **No serotype characterised for direct resting-zone transduction.**
 
+## -1c-ii. THE CHEMICAL ROUTE: solves delivery, fails in vivo (F-R073)
+
+**7c** = CHIR99021, DZNep, forskolin, TTNPB, valproic acid, Repsox, tranylcypromine. **2c** = Repsox +
+tranylcypromine. **No vector — so no serotype problem.** And **four of seven map onto axes this branch
+derived independently**: **CHIR99021** (GSK3beta -> Wnt = half of KY19382), **DZNep** (EZH2 = the PRC2
+axis), **Repsox** (TGF-beta = F-R034's "low WNT and TGF-beta" niche), **tranylcypromine** (LSD1).
+*Flag: TTNPB is an RAR agonist and retinoic acid suppresses chondrocyte identity — plausibly adverse.*
+
+**But in vivo it fails** (PMC12835892, 7c by osmotic minipump x1 month): **lipid droplet accumulation in
+liver and kidney, abnormal mitochondrial morphology, acute kidney injury** — and **2c was WORSE than 7c**.
+The same paper: *"partial reprogramming with **OSK alone has been shown to avoid these toxicity
+challenges**, whilst still... extend[ing] lifespan in wild-type mice."*
+
+> **The trade is not in the chemical route's favour. Chemical solves delivery and creates systemic
+> toxicity; AAV-OSK avoids toxicity and has a delivery problem. A screening problem beats a mechanism
+> problem — AAV-OSK stays.**
+
+**PROPOSED DELIVERY ROUTE, no precedent found:** every cartilage tropism study is **intra-articular**
+because the target was always articular cartilage. **But the resting zone's neighbour is the SOC —
+vascularised bone with marrow.** **Intra-epiphyseal delivery into the SOC puts vector on the correct side
+of the barrier that defeats intra-articular injection.** Needs no new vector, only a different needle
+position and a tropism readout.
+
+**PRECISION CORRECTION (F-R073):** **LSD1/KDM1A demethylates H3K4me1/me2, NOT me3; KDM5A-D does me2/me3.**
+Lui measured **me3**, so **KDM5 inhibition remains the specific tool** — tranylcypromine acts one state
+below. **But tranylcypromine earns a place independently: it raises bone mass in mice via LSD1 derepressing
+BMP2 and WNT7B -> mTOR signalling** — **mTOR is Newton's pool-expansion axis** — **and it is an approved
+human drug.**
+
+## -1c-iii. THE CLOCK IN THE GROWTH PLATE: confirmed absent (F-R073)
+
+| dataset | covers | why it fails |
+|---|---|---|
+| Nilsson 2005 | rabbit plate, fetal/4wk/16wk | **bulk CCGG, no site resolution** |
+| human cartilage development methylome (PMC11639090) | ~700,000 CpGs, 72 samples | **FETAL ONLY, 7-21 post-conception weeks**; articular |
+| adult chondrocyte clock | adult articular | no growth window |
+| Petkovich (PMC5578459) / Stubbs (PMC5389178) | validated mouse clocks, open | **never applied to growth plate** |
+
+> **The measurement: resting-zone chondrocytes at a series of postnatal ages through the Petkovich or Stubbs
+> clock, asking whether methylation age tracks GROWTH ACCOMPLISHED rather than chronological age.**
+> **Falsifiable shape, not just direction:** F-R072 showed RZ labelling collapses 95.6% -> 9.2% between fetal
+> and 5 weeks then plateaus. **If the clock is growth-paced, methylation age should advance steeply over
+> that same window and then flatten — mirroring the labelling curve, not the calendar.**
+
 **Cyclic vs constitutive, settled (F-R071):** continuous OSKM causes *"rapid sickness... mortality in as
 little as 4 days"* **before** teratomas; **cyclic 2-on/5-off ran 35 weeks safely at single copy**, but
 **8 cycles at two copies caused teratomas in liver, kidney, pancreas**. **Cyclic OSKM drives proliferation
