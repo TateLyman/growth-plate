@@ -2,7 +2,7 @@
 
 **Every file Tate has supplied to this branch. GREP THIS BEFORE ASKING FOR ANYTHING.**
 
-**126 files.** Raw location this session: `/root/.claude/uploads/e8535f73-3f0e-5ef4-ad60-d18dfdab5c10/`
+**130 files.** Raw location this session: `/root/.claude/uploads/e8535f73-3f0e-5ef4-ad60-d18dfdab5c10/`
 (filenames there carry an 8-hex-char prefix; stripped below)
 
 | file | size |
@@ -22,6 +22,7 @@
 | `bailey2007.pdf` | 155 KB |
 | `main_24.pdf` | 21758 KB |
 | `main_25.pdf` | 21758 KB |
+| `pdf_4.pdf` | 2641 KB |
 | `genes1302070_2.pdf` | 7036 KB |
 | `41598_2019_Article_40693.pdf` | 3345 KB |
 | `main_23.pdf` | 4606 KB |
@@ -47,6 +48,7 @@
 | `joa02150355.pdf` | 1086 KB |
 | `10.1007bf02554930.pdf` | 2905 KB |
 | `Depletion_of_resting_zone_chondrocytes_during_grow.pdf` | 318 KB |
+| `JCMM29e70804.pdf` | 7204 KB |
 | `2024.06.24.600344v3.full.pdf` | 566 KB |
 | `nihms2179313.pdf` | 508 KB |
 | `byers2000_2.pdf` | 246 KB |
@@ -84,6 +86,7 @@
 | `luac014.013.pdf` | 120 KB |
 | `Sex_Steroid_Metabolism_in_the_Tibial_Growth_Plate_of_the_Rat__van_der_Eerden_B__C__J__van_de_Ven_J__Lowik_C__W__G___Endocrinology_10_143__doi_10_1210_en_2002220093__850854bec756075d917e06bec47c303.pdf` | 777 KB |
 | `hmed.2019.0350.pdf` | 373 KB |
+| `zhang2015.pdf` | 3365 KB |
 | `01_Irosustat_STS_Clinical.zip` | 1668 KB |
 | `andersen2008.pdf` | 110 KB |
 | `vidal1999.pdf` | 49 KB |
@@ -128,6 +131,7 @@
 | `nihms1576233.pdf` | 7994 KB |
 | `229.pdf` | 146 KB |
 | `growth_plate_bundle_3.pdf` | 4163 KB |
+| `main_26.pdf` | 2253 KB |
 | `growth_plate_bundle_1.zip` | 6897 KB |
 | `nilsson2014.pdf` | 1095 KB |
 | `cxxc5_bundle_3.zip` | 7379 KB |
@@ -139,9 +143,4 @@
 ## Why this file exists
 
 I repeatedly asked Tate for papers he had already supplied — Newton 2019, Lui 2010, Nilsson 2005,
-Schrier 2006, trompet2024, and others. With 126 supplied files across 20+ turns, memory is not a
-reliable index. **Grep this manifest, and the extracted text in the scratchpad, before requesting
-anything.**
-
-Extracted text for most of these lives under the session scratchpad in `b/`, `b12/`-`b18/`, `z/`
-and loose `.txt` files. Those are session-local and do not survive; **this manifest does.**
+Schrier 2006, trompet2024. Memory across 25+ turns is not an index. **Grep this manifest first.**

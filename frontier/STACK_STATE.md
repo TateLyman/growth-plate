@@ -168,7 +168,26 @@ challenges**, whilst still... extend[ing] lifespan in wild-type mice."*
 > toxicity; AAV-OSK avoids toxicity and has a delivery problem. A screening problem beats a mechanism
 > problem — AAV-OSK stays.**
 
-**PROPOSED DELIVERY ROUTE, no precedent found:** every cartilage tropism study is **intra-articular**
+## -1c-iv. DELIVERY: SOLVED (F-R074)
+
+**The intra-epiphyseal route is published and works.** Zhang 2015, rabbit femoral head (an epiphysis with
+an SOC): *"the greater trochanter of the femoral head was **drilled into the subchondral bone region using
+a 1-mm Kirschner wire** without crossing the boundary surface of the femoral head cartilage under x-ray
+perspective inspection. Then, the **rAAV virus variants (5.5 x 10^11 vp/mL) were injected into the
+decompression region of the femoral head (25 uL per side)**."* **Expression confirmed at 12 weeks.**
+Corroborated by AAV-anti-miR-214 work in femoral-head osteonecrosis and local rat bone.
+
+> **The objection was mis-specified all along. It was never "AAV cannot reach that compartment" — it was
+> "everyone injects into the joint because everyone is treating articular cartilage."** Change the needle
+> position and the compartment is accessible. **The human analogue — core decompression — is a routine
+> orthopaedic procedure.**
+
+**What remains:** these targeted necrotic femoral-head bone, not the physis. **Whether vector in SOC marrow
+diffuses into the adjacent resting zone is untested — but that is a millimetre-scale diffusion question on
+an existing surgical model, not an inaccessible compartment.** *Caveat: drilling near an open physis risks
+iatrogenic bone-bridge formation, the exact lesion we are avoiding.*
+
+**SUPERSEDED — the original proposal, now shown to have precedent:** every cartilage tropism study is **intra-articular**
 because the target was always articular cartilage. **But the resting zone's neighbour is the SOC —
 vascularised bone with marrow.** **Intra-epiphyseal delivery into the SOC puts vector on the correct side
 of the barrier that defeats intra-articular injection.** Needs no new vector, only a different needle
@@ -189,7 +208,17 @@ human drug.**
 | adult chondrocyte clock | adult articular | no growth window |
 | Petkovich (PMC5578459) / Stubbs (PMC5389178) | validated mouse clocks, open | **never applied to growth plate** |
 
-> **The measurement: resting-zone chondrocytes at a series of postnatal ages through the Petkovich or Stubbs
+**AND THE CLOCK ALREADY ENCODES GROWTH-PACING (F-R074).** Horvath's clock applies a **logarithmic
+transformation below age 20 and linear above**: *"the tick rate was **exponential between 0 and 20 years
+old**, after which it continued linearly"*; *"the rate of change of epigenetic ages is roughly the **inverse
+of the chronological age**."* **The clock ticks fastest when growth is fastest, decelerates as growth
+decelerates, and goes linear at about the age growth stops.** That is the growth-pacing shape — as a
+**fitted empirical necessity**, because a linear model does not fit children. *(Shape correspondence, not
+causal proof: growth co-occurs with everything else developmental, and these clocks are mostly blood-trained.)*
+
+> ### THE CHEAPEST DECISIVE TEST IN THE PROGRAMME: **if growth paces the clock, the log-to-linear inflection should track FUSION and MOVE when fusion moves.** ESR1-null and aromatase-deficient men keep epiphyses open into their thirties. **Their DNAm age should stay logarithmic past 20 and lag chronological age.** If the clock is time-paced it goes linear at 20 like everyone else. **A single methylation array on stored blood from an already-identified patient. No tissue, no animal.**
+
+> **The animal version: resting-zone chondrocytes at a series of postnatal ages through the Petkovich or Stubbs
 > clock, asking whether methylation age tracks GROWTH ACCOMPLISHED rather than chronological age.**
 > **Falsifiable shape, not just direction:** F-R072 showed RZ labelling collapses 95.6% -> 9.2% between fetal
 > and 5 weeks then plateaus. **If the clock is growth-paced, methylation age should advance steeply over
