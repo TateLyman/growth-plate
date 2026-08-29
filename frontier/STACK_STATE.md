@@ -1,12 +1,88 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R111
+**Last updated:** F-R112
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-COMPOUNDS. **F-R112 — TATE'S ALLELE-UNSILENCER LIST SCORED; ASK #2 ANSWERED; ASK #3 FOUND AND UNUSABLE.**
+
+Corpus extended again: **5,591 series enumerated** (96 + 43 new queries incl. every compound class).
+
+### => THE DOSE ARITHMETIC THAT DECIDES HOW TO READ THE LIST
+Every listed compound is an **allele-unsilencer**. We need **total dose**.
+**IGF2 falls 7.68 log2 (~200x) in the ageing RZ. Unsilencing the silent allele gives 2/200. Not a rescue.**
+And F-R111 showed IGF2 (paternal) AND H19 (maternal) BOTH collapse at the same locus - a LOI/GOI switch
+moves them oppositely. **Whole-domain shutdown, not an allelic switch. Allelic tools, domain lesion.**
+
+### => TESTED IT ANYWAY - TWO SYSTEMS, BOTH NULL
+**GSE168763** (UNC G9a-i, GSK EZH2-i, combo; CAOV3/MDA231/D14, edgeR tables):
+every IGN value **< 0.1 log2, every |z| < 1.2**.
+**GSE280605** (UNC0642, NORMAL mouse ESC, imprints intact, 48h): PLAGL1 +0.75, IGF2 +0.34, IMPACT +0.66
+but H19 -1.13, DLK1 -0.73, GPC3 -0.65, SNRPN -0.65. **IGN +0.120 vs matched null +0.147+/-0.097, z=-0.28. NULL.**
+
+### => DIRECTION TRIAGE - CUTS THE LIST HARD
+| subset | unsilences | sign |
+|---|---|---|
+| **TSA, sodium butyrate** | **maternal IGF2** | **CORRECT** (Beckwith-Wiedemann direction) |
+| **nicotinamide** | Igf2-H19 somatic imprint | correct, obtainable, weak evidence |
+| VPA, romidepsin, CI-994, SAHA, I-BET151, GSK726/0858, GSK-J4, DZNep | **paternal CDKN1C**, KCNK9 | **WRONG-SIGNED** - CDKN1C = p57KIP2, a maternally-expressed CDK inhibitor and GROWTH SUPPRESSOR |
+| **all 34 UBE3A compounds** (topotecan/irinotecan/etoposide/indenoisoquinolines/(S)-PHA533533/APPA) | paternal UBE3A (15q11) | **WRONG LOCUS** - not a growth gene; TOP set is cytotoxic chemo; PHA/APPA mechanism is UBE3A-ATS suppression, locus-specific, no counterpart at 11p15/14q32 |
+| UNC0638/0642/617/618, MS152, MS1262 | maternal SNRPN/SNORD116/NDN/IPW | best-developed class, **wrong demonstrated locus, null on dose above** |
+| TSA again | ALSO paternal Cdkn1c AND paternal Igf2r | **pulls both ways at once** |
+**NET: correctly-signed subset = TSA, sodium butyrate, nicotinamide. TSA raises two growth suppressors too.**
+
+### => ASK #2 ANSWERED: WHAT IN FRACTURE CALLUS REACTIVATES THE NETWORK
+**GSE213574** (sorted SSC/BCSP): callus vs uninjured **SSC +2.27 (z=+6.29), BCSP +2.50 (z=+6.43)**.
+**Oestrogen does NOT block it (E2 effect +0.01, z=+0.17)** - decoupled from the anastrozole arm.
+Co-moving sets: **IGN +2.94**, chondrogenic **+3.60**, PDGF/FGF +2.76, YAP/TAZ +2.44, Wnt +2.11,
+TGFb +1.72, BMP +1.65, hypoxia +1.56, inflammation +0.10, Notch -0.16, stemness -0.61,
+DNA damage -1.19, **cell cycle -1.85**.
+Top genes up = the ones the ageing RZ loses: **IGF2 +5.2, PEG3 +5.9, CAPN6 +5.8, C1QTNF3 +7.2, MIR675 +6.2.**
+
+**GSE1371 - rat fracture x THREE AGES x time course (the load-bearing result):**
+| age | 3d | 1wk | 2wk | 4wk | 6wk |
+|---|---|---|---|---|---|
+| young (6wk) | +0.37 | **+0.76** | +0.33 | -0.11 | -0.30 |
+| adult (26wk) | +0.30 | **+1.41** | **+1.44** | +0.47 | +0.31 |
+| **old (52wk)** | +0.47 | **+1.47** | **+1.51** | +0.71 | +0.58 |
+**Peaks 1-2 weeks. NOT lost with age - LARGER in old animals.** (Young has less headroom.)
+
+**Across all 15 fracture x age cells:** chondrogenic **r=+0.859 (p=0.0003)**, cell cycle **r=-0.589
+(p=0.021)**, osteogenic +0.505, hypoxia +0.422, YAP/TAZ -0.106, inflammation +0.086.
+
+**Control against overclaiming - GSE104473 distraction osteogenesis (mechanical LENGTHENING) + FAKi arm:**
+vs POD5 baseline: fracture **+0.61 (z=+5.54)**, distraction **+0.46 (z=+3.75)**; DO vs Fx directly
+-0.07 to -0.31 with **chondrogenic -1.27 (z=-3.31)** (DO heals intramembranously).
+**=> chondrogenesis is the strongest correlate but NOT a requirement.**
+
+> **ANSWER: injury-driven regenerative activation of skeletal stem cells - tracked by chondrogenic
+> re-specification (r=+0.86), running OPPOSITE to proliferation (r=-0.59), peaking 1-2 weeks,
+> independent of oestrogen/inflammation/Notch/DNA-damage - and PRESERVED AND AMPLIFIED IN OLD ANIMALS.**
+> **The counter can be run backwards at any age.**
+
+### => ASK #3 FOUND AND UNUSABLE
+**GSE9160 has it and has been on disk since F-R092:** human growth plate, five zones incl. **reserve**,
+**two donors: 11y10m and 13y3m**. Older minus younger: reserve **-0.14 (z=-0.30, NULL)**; proliferative
+-0.48; prehypertrophic -0.42; **hypertrophic -0.77 (z=-2.39)**; perichondrium +0.11.
+**WHY IT CANNOT BE USED: n=1 per age; the donors differ in SEX (11y10m female vs 13y3m male) and girls
+fuse ~2 years earlier, so the "younger" donor is plausibly the skeletally MORE advanced one - the age
+contrast may be inverted; 18 months apart.**
+**Restated ask: human reserve zone from >=3 SEX-MATCHED donors per age group.**
+
+### => ASKS
+1. **Any TOTAL-DOSE measurement (not allelic status) of IGF2/DLK1/MEST/PEG3 after any listed compound in
+   a normal somatic cell.** The single number that decides the class. No paper I can reach reports dose.
+2. **MS152 / MS1262 transcriptome data** - best in-vivo EHMT1/2 inhibitors, no GEO deposit found.
+3. **The 2026 APPA supplementary CSV** - specifically any counter-screen against other imprinted domains.
+4. **What a fracture does to an OPEN growth plate.** All callus data is diaphyseal/adult. Whether an
+   injury signal can reactivate an intact resting zone turns section 2 from a mechanism into an arm.
+   Not in 5,591 series.
 
 ---
 
