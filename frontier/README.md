@@ -3217,3 +3217,67 @@ SMO agonist at the cysteine-rich domain, EC50 ≈ 3 µM, confounded by LXR agoni
 The obtainable substitute follows from Trompet's own mechanism — if the effector is Wnt inhibition, then
 **niclosamide, pyrvinium, or a clinical-stage PORCN inhibitor** reaches the same niche state, at the
 honest cost of being anti-osteoanabolic.
+
+---
+
+## F-R090 — it exists: four FDA-approved Smoothened agonists
+
+I closed F-R089 by asserting that no Smoothened agonist had ever been given to a human. **That was wrong
+by sixteen years, and the reason I got it wrong is instructive: I searched, got back nothing but
+antagonists, and concluded the class was empty. Inhibitors are what oncology funds and therefore what
+the literature indexes. The agonists were approved decades ago — for skin and for asthma — and nobody
+filed them under Hedgehog.**
+
+`Wang JC et al., PNAS 2010;107:9323 (PMC2889058, Duke)` screened **68 glucocorticoids** from the
+FDA-approved Prestwick library on a Smo/β-arrestin2-GFP assay and found four that **bind Smo, drive Smo
+internalisation, activate Gli, and synergise with Sonic hedgehog**: **halcinonide, fluticasone
+propionate, clobetasol propionate, fluocinonide.** Their own closing sentence: these *"provide a
+significant jumpstart in the process of beginning human studies."*
+
+**Fluticasone propionate is the most potent at the receptor (EC50 0.099 µM, ten-fold ahead of the rest)
+and is the only one with a routine systemic-ish route and a large paediatric pharmacokinetic record.
+Halcinonide produces the largest cellular response (40–50× over vehicle, matching purmorphamine's
+maximum).**
+
+**This corrects F-R089's Tier 2.** I had nominated dexamethasone as the banking agent. **Dexamethasone is
+not a Smoothened agonist — it inhibits Shh-driven proliferation dose-dependently**, as do cortisone,
+prednisolone and corticosterone. So Schrier's dexamethasone result is a GR conservation effect, not the
+Hedgehog mechanism, and conservation is the weaker buy. The structure–activity rule explains the split
+and it is not "fluorinated equals active": the actives carry 11β-OH **plus a large, branched, hydrophobic
+C-17**, while the inactives have a small hydrophilic C-17 and often a 9α-fluorine — which describes
+dexamethasone exactly.
+
+**The finding that makes the class usable** is that the Smoothened arm is separable from the
+glucocorticoid-receptor arm. The proliferative response survives 5 µM mifepristone, and dexamethasone
+activates GR identically while producing the opposite outcome — so the effect is *"independent of
+glucocorticoid nuclear receptor signalling and most probably attributable directly to activation of
+Smo."* That means the growth-suppressing arm the glucocorticoid class otherwise carries can be stripped
+with an approved drug that already has a chronic systemic dosing precedent.
+
+**Chu 2026, read properly, moves the target — and this is where our nuance was wrong.** The human resting
+zone holds two clusters. **GP1** is the dormant root: low WNT, **low TGF-β and actively repressing it
+through THBS1/THBS2/DCN**, high SFRP5, the lowest proliferative index of any cluster. **GP2 is the
+PTHrP-positive tier, already partially activated.** Every mouse pool number this branch has ever quoted —
+Trompet's +61%, his 65.5 → 139.8 cells/mm², the PNAS GH depletion — is measured on a **PTHrP reporter**,
+which in human terms is **GP2, not the root.** So Trompet's expansion is consistent with genuine pool
+growth *or* with recruitment of GP1 into GP2, and **nobody has measured GP1 under any intervention in any
+species.** That is the last open hole and I am not going to paper over it. What leans toward real
+expansion: the bead's Gli1 signal was gone by three weeks and the length gap was still widening at six
+months, whereas recruitment off a fixed root should decelerate.
+
+Chu also hands us **the half of the niche we never had**. We had low-WNT from Hallett. GP1 is low-WNT
+**and** low-TGF-β, and GH activates TGF-β autocrine in exactly these cells — so **TGF-β blockade should
+preserve the root**, and that axis is obtainable: losartan (approved, paediatric record), pirfenidone
+(approved), galunisertib (phase II).
+
+**On adapting it to humans, the counterweight goes first.** Inhaled fluticasone reduces growth velocity
+in children — one of the best-documented paediatric drug effects there is. That cuts both ways: at
+asthma doses the GR arm dominates the rate term, *and* it is direct proof that inhaled fluticasone
+reaches the human growth plate at pharmacologically active concentrations. The delivery question is
+answered by the side effect. And the shape of that clinical signal — velocity down a lot, final adult
+height down very little — is a pool-preserved, rate-suppressed signature.
+
+**The one thing nobody has done: no Smoothened agonist has ever been tested on cartilage or growth
+plate.** The FGSA functional assay was cerebellar granule precursors. The Hedgehog-and-growth-plate
+literature and the FDA-approved-Smoothened-agonist literature have never been crossed, and that crossing
+is the whole programme.

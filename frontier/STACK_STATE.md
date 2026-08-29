@@ -1,12 +1,102 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R089
+**Last updated:** F-R090
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-SMO. **F-R090 — FDA-APPROVED SMOOTHENED AGONISTS EXIST. FOUR OF THEM.**
+
+`Wang JC et al. PNAS 2010;107(20):9323-9328. PMID 20439738 / PMC2889058 (Duke).` Screened **68
+glucocorticoids** from the Prestwick FDA-approved library on a Smo / beta-arrestin2-GFP high-content
+assay. **F-R089's claim that no SMO agonist has ever been in a human was wrong by sixteen years.**
+
+### ⇒ THE FOUR AGENTS
+| compound | EC50 (b-arr2-GFP) | GCP proliferation vs DMSO | route |
+|---|---|---|---|
+| **fluticasone propionate** | **0.099 uM** — most potent | 5-6x | **inhaled / intranasal, routine paediatric** |
+| **halcinonide** | 1.1 uM | **40-50x** (= purmorphamine max) | topical 0.1% (Halog) |
+| **clobetasol propionate** | 1.5 uM | 5-6x | topical 0.05% (superpotent; HPA suppression proves systemic absorption) |
+| fluocinonide | >5 uM | none alone, 30x with Shh | topical |
+
+They **bind Smo, promote Smo internalisation, activate Gli**, and are **synergistic with Shh**.
+Authors: *"could be used **immediately orally or i.v.**"*; *"FDA-approved steroid Smo agonists provide a
+significant jumpstart in the process of **beginning human studies**."* Duke filed a provisional patent.
+
+### ⇒ DEXAMETHASONE IS NOT ONE — IT IS THE OPPOSITE. F-R089 TIER 2 IS WITHDRAWN.
+*"dexamethasone **inhibited Shh-activated GCP proliferation in a dose-dependent manner**"*; **no**
+growth-enabling response from cortisone, dexamethasone, prednisolone, corticosterone.
+**So Schrier's dexamethasone pool result (number greater, P=0.016) is a GR conservation effect, NOT the
+Hedgehog mechanism.** Conservation != expansion. Dexamethasone is dropped; the FGSAs replace it.
+
+**SAR (explains the split, and it is NOT "fluorinated = active"):** active = **11b-OH + LARGE, branched,
+hydrophobic C-17**. Inactive = *"C-17 substituent more hydrophilic, less branched and generally smaller"*,
+often with **9a-fluorine** — which is dexamethasone exactly.
+
+### ⇒ THE LOAD-BEARING FINDING: SMO IS SEPARABLE FROM GR
+- proliferative effect **survives 5 uM mifepristone (RU-486)**
+- **dexamethasone activates GR identically** (GR-GFP translocation) yet gives the **opposite**
+  proliferative outcome
+- authors: response is *"**independent of glucocorticoid nuclear receptor signalling and most probably
+  attributable directly to activation of Smo**"*
+
+**=> the growth-suppressing GR arm can be stripped while keeping SMO agonism. Mifepristone is approved
+with a chronic systemic precedent (Korlym 300-1200 mg/d).** This is the human-adaptation move.
+
+### ⇒ CHU 2026 MOVES THE TARGET — AND WE HAD THE NUANCE WRONG
+`Chu TL et al. Sci Transl Med 2026;18:eadw3590` (on disk). Human RZ holds **TWO** clusters:
+
+| | **GP1 — the dormant root** | **GP2 — PTHrP+** |
+|---|---|---|
+| WNT | **low** | partially activated |
+| **TGF-b** | **low, ACTIVELY REPRESSED** (THBS1, THBS2, DCN) | partially activated |
+| SFRP5 | high | lower |
+| proliferation | **lowest of all clusters** | higher |
+
+**PTHrP is NOT the human root — it marks the already-activated second tier.** Every mouse pool number
+this branch has quoted is a **PTHrP reporter**: Trompet's +61% and 65.5->139.8/mm2, the PNAS GH depletion
+P<0.0001, Newton, Mizuhashi. **In human terms all of it is measured on GP2.** So Trompet's +61% is
+consistent with either true expansion **or GP1->GP2 recruitment (spending the root to fill tier 2)**.
+**Nobody has measured GP1 under any intervention in any species. THIS IS THE LAST OPEN HOLE.**
+Leaning toward true expansion: the bead's Gli1 signal was **gone by 3 weeks** yet length kept diverging
+to **6 months** — pure recruitment off a fixed root should decelerate. Suggestive, not decisive.
+
+### ⇒ NEW OBTAINABLE AXIS FROM CHU: TGF-b (we only ever had the WNT half)
+GP1 is **TGF-b-low and actively repressed**; GH activates TGF-b **autocrine** in these cells.
+**Blocking TGF-b should preserve the root.** Obtainable, descending realness: **galunisertib (LY2157299,
+ALK5i, phase II)**, **vactosertib**, **fresolimumab**, **pirfenidone (FDA-approved oral)**,
+**losartan (approved generic, paediatric record in Marfan)**.
+
+### ⇒ HUMAN ADAPTATION — AND THE COUNTERWEIGHT STATED FIRST
+Inhaled fluticasone **reduces growth velocity in children** (~0.5-1 cm/yr; ~1.2 cm final height, CAMP).
+Cuts both ways: **against** — at asthma doses the **GR arm dominates the rate term**; **for** — it is
+direct proof **inhaled fluticasone reaches the human growth plate at active concentrations.** And the
+signal's *shape* — velocity down a lot, final height down very little — is a **pool-preserved,
+rate-suppressed signature**, the same shape as Schrier's dexamethasone arm.
+
+| arm | agent |
+|---|---|
+| **pool / SMO** | **fluticasone propionate** (most potent, systemic-ish route) or **halcinonide** (largest cellular response) |
+| **uncouple GR** | **mifepristone** |
+| **pool / root, TGF-b** | losartan -> pirfenidone -> galunisertib |
+| **pool / WNT half** | niclosamide / pyrvinium / PORCN (anti-osteoanabolic cost, F-R089) |
+| **do no harm** | **somatropin down to physiological + intermittent** (F-R089) |
+| **downstream of Hh** | abaloparatide (= GP2 tier) |
+| **DROPPED** | **dexamethasone** — wrong receptor arm, *inhibits* Shh |
+
+**Risk, plainly:** sustained Hh agonism is the mechanism of BCC and medulloblastoma; PTCH1 loss is
+Gorlin. Ruled out of scope by Tate, recorded anyway. Mitigation: the effective exposure is **short and
+the benefit outlives it**.
+
+### ⇒ REMAINING HOLES
+1. **GP1 vs GP2** — which tier do these agents move? Never measured.
+2. **FGSAs have never been tested on cartilage or growth plate** — the assay was cerebellar granule
+   precursors. **Nobody has crossed the two literatures.**
 
 ---
 
