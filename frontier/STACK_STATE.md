@@ -18,7 +18,7 @@ ledger.
 | **somatropin (GH)** | **2 IU/day** | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. Separately, 2 IU sits on the **physiological** side of the GH stem-pool sign flip (§3.8). **And a third candidate role as of F-R059:** GH **normalises terminal chondrocyte volume** in uremic rat via proposed Nkcc1 + Igf1 — the only half of the identity nothing else touches. One study, deficit-normalisation not supranormal gain; carried as a hypothesis. |
 | **abaloparatide** | **80 µg** | structural — now with a mechanism | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). For the **mechanical envelope** — and F-R060 gives the reason: *Fgfr3*-null mice show **increased femur length with decreased BMD**, and aromatase loss gives **increased osteoid and low phosphate**. **SCFE is the mechanical shadow of the effect we want, not an incidental toxicity.** |
 | **serum phosphate** | **AGE-NORMAL** | **corrected again in F-R064 — this is now the third revision and the last one is right** | F-R060 predicted oestrogen ablation would *lower* it and cause rickets. **Backwards for humans:** oestrogen ablation **raises** phosphate (Uemura TmP/GFR +28.5% on GnRH-a; Zhang NHANES n=7,005, 3.83 vs 3.98 mg/dL, P<0.001; rat NaPi-IIa mechanism). **And erdafitinib raises it on-target (89% of patients).** Both stack arms push phosphate UP, and **phosphate is the executioner's ligand.** **F-R064: holding it LOW was wrong and pushes toward rickets.** Phosphate is *permissive* for the junction to advance; hypophosphatemia blocks terminal apoptosis and produces a thick plate on a short child. **Target age-normal** — not suppressed, not the oncology 5.5-7.0. The reason to control it is **ectopic/renal mineralisation**, not growth. Note **GH raises phosphate too** (IGF-1 upregulates proximal-tubule NaPi), so three arms raise it; **abaloparatide is phosphaturic** and pushes the other way. |
-| **anastrozole** | **1 mg** | oestrogen arm — **revised in F-R063** | Head-to-head over 3 yr, 79 boys: anastrozole arm **+1.0 cm** PAH vs letrozole **+0.5 cm**; letrozole **slowed growth velocity** (P=.039) and **lowered IGF-1**, the Phase 3 driver of `v(c)`. Anastrozole keeps T in range (552 vs 982 ng/dL, 48% >1000 on letrozole). **Effect plateaus at 1 mg** — 0.5 mg approximately equals 1 mg in adolescent males, and >=1 mg reaches the assay floor, so doubling is inert. **Decision variable: at baseline E2 above ~15 pg/mL a ~50% suppression may not clear the 11 pg/mL threshold; the letrozole arm would.** | Standing instruction, plus a second reason as of F-R057 (§4). |
+| **anastrozole** | **1 mg** | oestrogen arm — **revised in F-R063** | Head-to-head over 3 yr, 79 boys: anastrozole arm **+1.0 cm** PAH vs letrozole **+0.5 cm**; letrozole **slowed growth velocity** (P=.039) and **lowered IGF-1**, the Phase 3 driver of `v(c)`. Anastrozole keeps T in range (552 vs 982 ng/dL, 48% >1000 on letrozole). **Effect plateaus at 1 mg** — 0.5 mg approximately equals 1 mg in adolescent males, and >=1 mg reaches the assay floor, so doubling is inert. **RESOLVED in F-R065: anastrozole.** The letrozole argument was residual intracrine substrate (2.0% vs 6.5% residual E1S, with STS at 265-660x aromatase in the plate) — but that mattered only if residual oestrogen closed the plate, and link 11 shows it does not. **What binds is supply, and anastrozole preserves velocity, IGF-1 and normal T.** | Standing instruction, plus a second reason as of F-R057 (§4). |
 
 ---
 
@@ -90,6 +90,59 @@ needs no τ assumption.
 | oestrogen | `w(E₂)` | Weise, Nilsson, aromatase-deficiency cases | removes a write-off; does not stop the count |
 | Hedgehog, ligand level only | flux/amplitude | Haraguchi *Hhip1* cKO, +43% plate area → +4.5% length at 53 wk | weak |
 | vascular | transit | Gerber Flt-(1-3)-IgG; Voss 2015 human paediatric widening; resveratrol | banks, reversible |
+
+---
+
+## 1b. LINK 11 IS SETTLED — and the answer is yes (F-R065)
+
+**In humans, oestrogen ablation prevents fusion. It does not merely postpone it.**
+
+| case | plate status | growth velocity |
+|---|---|---|
+| **ESR1-null man, age 28.5** (smith2008, read in F-R025) | **never fused**, bone age 15 at 28 | **0.3 cm/yr** |
+| aromatase-deficient (maffei2004) | never fused | 1.3 cm/yr |
+| aromatase-deficient, age 31 (Akcay) | **all epiphyses unfused** | ~0.83 cm/yr |
+| **Wadlow** — GH excess from age 2, never pubertal | could not close | **~5 cm/yr for 9 years, no deceleration** |
+
+**The rabbit misled me for six rounds.** Ovariectomy is not aromatase deficiency — it leaves adrenal
+precursors, intracrine CYP19A1 and STS intact. **The human genetic experiments are better evidence.**
+
+**But fusion and senescence are two different endpoints.** Open plate + no drive = 0.3 cm/yr. **Oestrogen
+ablation blocks only one of them.** An open plate is necessary, not sufficient.
+
+> **The three-term phenotype is human and its recipe is: block fusion at oestrogen, drive supply hard.**
+> Wadlow is the demonstration.
+
+## 1c. Senescence is a PROGRAMME, not damage (F-R065)
+
+Not telomere attrition. A coordinated multi-organ transcriptional schedule — the **imprinted gene network**
+(Lui & Baron): **Igf2, H19, Plagl1, Mest, Peg3, Dlk1, Gtl2/Meg3, Grb10, Ndn, Cdkn1c, Slc38a4** declining
+together across organs on a time course matching the growth-rate decline. In the plate: **Mest, Dlk1, H19,
+Gtl2 fall** while **Cdkn1c (p57KIP2) and Grb10 rise**.
+
+**And the pool genuinely self-renews** — Newton, *Nature* 2019;567:234: at secondary-ossification-centre
+formation chondroprogenitors **acquire self-renewal**, forming *"large, stable monoclonal columns."*
+
+> **This converts `n0` from "impossible" to "unsolved," and names targets. Most tractable: DLK1.**
+
+## 1d. The core combination has been randomised (F-R065)
+
+**Mauras 2016, JCEM 101:4984** — 76 pubertal boys, AI vs GH vs AI/GH, 24-36 months, to near-final height:
+
+| | to near-final height | near-final SDS |
+|---|---|---|
+| AI alone | +18.2 cm | -1.4 |
+| GH alone | +20.6 cm | -1.4 |
+| **AI + GH** | **+22.5 cm** | **-1.0** |
+| *expected at -2.0 SDS* | *+13.0 cm* | |
+
+**+9.5 cm over expectation (P=.01)**, bone health and adverse events similar across arms. **Sub-additive**
+(+1.9 over GH alone). **Both arms are supply-side, so F-R064 leaves this untouched.**
+
+**GH dose tension:** Mauras and ANSWER used **0.24-0.53 mg/kg/wk**; **2 IU/day is ~0.12 mg/kg/wk**. The
+higher range produced the +22.5 cm and was safe over 24-36 months; Chu's depletion argument concerns
+**indefinite** preservation, which those trials could not detect. **A time-horizon choice, not a right/wrong
+number.**
 
 ---
 
