@@ -126,7 +126,70 @@ number both fall with age; **dexamethasone decreased RZ proliferation AND slowed
 > rationale: it does not merely postpone the endpoint, **it makes every division cheaper in capacity.**
 > Joins CXXC5 — a transcriptional brake applied every cycle is exactly what a per-cycle cost term looks like.
 
-## -1b-NEW. THE OSK DIRECTION PROBLEM IS BACK, AND IT IS REAL (F-R079)
+## -1a. **DNMT3A — A HUMAN GENE WHOSE LOSS GIVES +3.0 SD OF HEIGHT (F-R080)**
+
+**The strongest lead in the programme. Bidirectional, human, monogenic, and the loss direction is the tall
+one — which means an INHIBITOR is the intervention.**
+
+| direction | phenotype |
+|---|---|
+| **loss of function** (TBRS, OMIM 615879) | **tall stature, mean +3.0 SD** (first 13 patients); **height ≥+2 SD in 83% (44/53)** of the 55-patient cohort; one girl required **bilateral epiphysiodesis to STOP growth** |
+| **PWWP gain of function** (Heyn, *Nat Genet* 2019) | **microcephalic dwarfism**, via **hypermethylation of Polycomb DNA-methylation valleys with depletion of H3K27me3 and H3K4me3 bivalent marks**; `Dnmt3a^W326R/+` dwarf mice |
+
+**The epiphysiodesis case (*Front Endocrinol* 2021), c.958C>T p.Arg320\*:** +2.9 SDS at 3y3m; at 12y2m
+**172.5 cm (+2.8 SDS) with BONE AGE 12y — NOT advanced**; PAH 187.1 cm; epiphysiodesis at 12y9m;
+**final height 187.4 cm (+3.2 SDS)** at 19y6m. Post-surgery: legs +1.7 cm, sitting height +10.9, arm span +20.5.
+
+> ### **The compartment is the one F-R070 already identified** — Polycomb/bivalent H3K27me3+H3K4me3, the class Lui measured H3K4me3 falling at. **DNMT3A's substrate is that compartment; DNMT1's is not (F-R079: 95.9% outside promoters/islands).**
+
+### THE RESOLUTION — two enzymes, two compartments, OPPOSITE height signs
+
+| | **DNMT1** | **DNMT3A** |
+|---|---|---|
+| role | maintenance | de novo |
+| compartment | 95.9% gene body/intergenic | Polycomb valleys / bivalent promoters |
+| **loss** | **SHORT** (`Dnmt1^ΔPrx1`; human *DNMT1*–Height in MSK-KP) | **TALL, +3.0 SD** |
+| **gain** | untested | **dwarfism** |
+| OSK | **never measured** | **decreased** |
+
+> ### **TARGET: LOWER DNMT3A, PRESERVE DNMT1.** Azacitidine/decitabine are **exactly wrong** — nucleoside analogues trap all DNMTs including the one that must be kept. **Selective non-nucleoside DNMT3A inhibitors exist** (selectivity determinant: **Asn1192** in DNMT1 abolishes affinity). Chemical probes, not drugs — but the selectivity axis is solved.
+
+### SOTOS vs TBRS — the contrast is the whole programme
+
+| | **Sotos (NSD1)** | **TBRS (DNMT3A)** |
+|---|---|---|
+| bone age | **ADVANCED** | **not advanced** (n=1) |
+| adult height | **"upper limit of normal"** — men 184.3, women 172.9 cm | **+3.2 SDS retained**, growth to 19y6m |
+
+> **Sotos = grow fast, mature fast, end normal — the failure mode since F-R024. TBRS = grow fast and the
+> skeletal clock does not run with it.** **DNMT3A loss appears to decouple rate from maturation; NSD1 loss
+> does not.** **CAVEAT: the bone-age cell rests on ONE patient; the 55-patient cohort has no bone-age data.**
+
+### THE PACING LAW IS CONFIRMED IN HUMANS (Jeffries, PMC6633263, Horvath clock)
+
+| syndrome | growth | epigenetic age acceleration |
+|---|---|---|
+| **TBRS** (*DNMT3A*) | overgrowth | **~+40%**, ANCOVA **P=0.004** |
+| **Sotos** (*NSD1*) | overgrowth | **~+40%**, **P=6.4e-9** |
+| **Kabuki** (*KMT2D*) | growth deficiency | **~−40%**, **P=0.023** |
+
+> ### **Overgrowth → fast clock. Growth deficiency → slow clock.** **This REFINES F-R077:** the clock is not
+> "chronologically paced" — it is paced by **growth accomplished**, not pubertal stage or bone age. CPP girls
+> are **early, not overgrown**, so F-R077's null is exactly what the law predicts. *(Excluding the p.Arg882Cys
+> ">800%" outlier — Arg882 is the clonal-haematopoiesis allele.)*
+
+## -1b-NEW. THE OSK DIRECTION PROBLEM — DOWNGRADED, WRONG ENZYME (F-R080)
+
+**F-R080 read the OSK primary. The only methyltransferase antibody in it is DNMT3a (ab188470).**
+*"post-OSK treatment, **DNMT3a** levels were noticeably declined."* **"DNMT1" occurs twice in the whole
+paper, both citing the OA disease state — it was NEVER measured after OSK.** F-R069's "DNMTs down" should
+have read **"DNMT3a down"** — and DNMT3A loss is the **height-POSITIVE** direction. **Hazard downgraded from
+likely to unmeasured-and-probably-the-wrong-enzyme. Not withdrawn: DNMT1 after OSK is still the discriminator.**
+
+**ALSO CORRECTED:** F-R069 reported OSK reducing cartilage methylation age. The authors: *"the limited sample
+size in our study **precludes the attainment of statistical significance**."* **Not a measurement.**
+
+## -1b-OLD-2. THE OSK DIRECTION PROBLEM AS STATED IN F-R079 (superseded above)
 
 **F-R072 dissolved it on the grounds that Nilsson's assay was bulk. There is now a site-resolution map, a
 conditional knockout, a mechanism and a human association. THE DISSOLUTION BELOW IS RETRACTED.**

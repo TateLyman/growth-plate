@@ -2769,3 +2769,59 @@ followed to **24 months**: healthy, CCN2 still accumulated in growth-plate carti
 line, 24 months of follow-up, micro-CT and serial radiography of four joints — and neither ever measured
 adult bone length.** The only length figure in the whole line is a **P1 tibia at n = 3**. Those radiographs
 may already contain the number.
+
+---
+
+## The fiftieth summary — F-R080: DNMT3A is a human height gene, and loss is the tall direction
+
+**The supplied paper was the OSK study itself — F-R079's ask #3, which I called the single highest-value
+unknown in the stack. Reading it downgraded the hazard I raised last round and opened the strongest lead the
+programme has found.**
+
+**First, the correction.** F-R079 warned that OSK lowers DNMTs and `Dnmt1^ΔPrx1` shortens bone, so AAV-OSK in
+a growing animal might phenocopy the knockout. **The primary shows that rested on an imprecision in my own
+F-R069 record.** The only methyltransferase antibody in the entire paper is **DNMT3a (ab188470)** —
+*"post-OSK treatment, DNMT3a levels were noticeably declined."* **The string "DNMT1" appears exactly twice in
+the whole paper, both citing the OA disease state. It was never measured after OSK.** DNMT3A is a **de novo**
+methyltransferase; DNMT1 is the **maintenance** enzyme. **F-R069's "DNMTs down" should have read "DNMT3a
+down," and that turns out to matter enormously.** *(Also corrected: the authors say their methylation-age
+result is underpowered — "the limited sample size in our study precludes the attainment of statistical
+significance." F-R069 reported it as a measurement.)*
+
+**Because DNMT3A is a human height gene, and loss is the tall direction.**
+
+| direction | phenotype |
+|---|---|
+| **loss of function** — Tatton-Brown-Rahman syndrome | **tall stature, mean +3.0 SD**; height ≥+2 SD in **83% (44/53)**; one girl needed **bilateral epiphysiodesis to stop growing** |
+| **PWWP gain of function** (Heyn, *Nat Genet* 2019) | **microcephalic dwarfism**, by **hypermethylation of Polycomb DNA-methylation valleys with depletion of H3K27me3 and H3K4me3** |
+
+**One gene, both directions, in humans.** And the compartment is the one F-R070 already identified —
+Polycomb/bivalent, the class Lui measured H3K4me3 falling at.
+
+**This resolves the F-R079 conflict completely.** F-R079 measured that **95.9% of Dnmt1-dependent methylation
+is outside promoters and CpG islands** — gene bodies and intergenic. Heyn's dwarfism mechanism is
+hypermethylation of Polycomb valleys. **Two enzymes, two compartments, opposite height signs: DNMT1 loss →
+short; DNMT3A loss → tall.** So the target is precise: **lower DNMT3A, preserve DNMT1** — which makes
+azacitidine and decitabine exactly the wrong tools, since nucleoside analogues trap all DNMTs including the
+one that must be kept. **Selective non-nucleoside DNMT3A inhibitors exist**, with the selectivity determinant
+named (Asn1192 in DNMT1 abolishes affinity).
+
+**And then the contrast that is the whole programme.** Sotos syndrome (NSD1) is also an overgrowth syndrome
+from loss of an epigenetic writer — but Sotos has **advanced bone age**, early puberty, and an adult height
+only at the *"upper limit of normal"* (men 184.3 cm, women 172.9). *"Advanced bone age… accelerates skeletal
+maturation and closure of growth plates, ultimately limiting the period of growth despite early childhood
+overgrowth."* **That is the failure mode this branch has described since F-R024.** The TBRS girl, by
+contrast, had **bone age 12 years at chronological 12 years**, grew until **19 years 6 months**, and kept
+**+3.2 SDS**.
+
+> **DNMT3A loss appears to decouple growth rate from skeletal maturation. NSD1 loss does not.** That is
+> exactly the property "fast without paying in duration" requires. **And the crucial cell rests on one
+> patient — the 55-patient cohort contains no bone-age data at all.**
+
+**Finally, the pacing law is confirmed in humans and it rescues my own F-R077 null.** Jeffries et al. ran the
+Horvath clock across three syndromes: **TBRS +40% (P=0.004), Sotos +40% (P=6.4×10⁻⁹), Kabuki −40%
+(P=0.023).** Overgrowth accelerates the clock; growth deficiency decelerates it. **F-R077 found no
+acceleration in girls with precocious puberty and bone age +1.69 y, and I concluded the clock was
+"chronologically paced." That needs refining: CPP children are early, not overgrown.** The clock tracks
+**growth accomplished**, not pubertal stage or skeletal maturation — so F-R077's null is precisely what the
+law predicts, and it is a cleaner control than I realised.
