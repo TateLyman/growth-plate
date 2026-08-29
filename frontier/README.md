@@ -2467,3 +2467,60 @@ growth-plate dose–response (does not exist); (3) does phosphate binding preser
 testosterone, n=35, 2013–2018)** — if it reports serum phosphate or TmP/GFR it answers the oestrogen half of
 (1), and I could not reach that publication; (5) bat manus 40,300 vs pes 1,300 µm³; (6) CYP19A1⁻/⁻ rabbit
 growth plates, confirmed non-existent.
+
+---
+
+## The forty-fifth summary — F-R062: the stack, and the one requirement it does not meet
+
+**The Dunkel CDGP bone paper: retrieved as far as it legitimately goes.** It is **Varimo T, Miettinen PJ,
+Huopio H, Rikkonen T, Voutilainen R, Tenhola S, Raivio T, Hero M. *Eur J Endocrinol* 2025;193(2):289–296**
+(doi 10.1093/ejendo/lvaf160). Full abstract obtained via NCBI E-utilities; **OpenAlex confirms
+`oa_status: closed`, `any_repository_has_fulltext: False`** — no preprint, no accepted manuscript, no
+repository copy anywhere, and the Finnish portals sit behind anti-bot layers. **I did not route around the
+paywall.** Two useful conclusions anyway: the paper reports **pQCT and turnover markers, not phosphate**, so
+the full text would not have answered the phosphate question; and its result is real — **27 boys, letrozole
+2.5 mg/day (n=15) vs testosterone 1 mg/kg q4wk (n=12), 6 months: distal tibia BMC 0–6 mo −1.8 mg/mm on Lz vs
++18.1 on T (P = .043)**, P1NP and BAP rising more on T, **no cortical or endosteal differences**, and the
+authors' own limit: *"do not allow conclusions regarding skeletal safety of longer Lz use."*
+
+**The stack is specified in F-R062, and it meets two of the three requirements.**
+
+| requirement | status |
+|---|---|
+| **fast** | **solved** — identity verified to 0.1%; both factors have agents with wild-type effect sizes |
+| **never-closing** | **substantially solved, one gap** — executioner identified and blockable at three points, one human-validated with growth preserved |
+| **infinite** | **NOT solved** — nothing expands or renews `n₀`, and `L∞ ∝ n₀` |
+
+**Arms:** (1) **erdafitinib 8 mg** — the load-bearing agent, the only one moving flux **+** `v(c)` **+** the
+ERK closure node, and the only growth-plate agent in the branch with a wild-type effect size (TYRA-300
+**femur +8.2%** in 4 wk; FDA tox: plate thickening in **normal** rats from **1 mg/kg**). (2) **Phosphate
+control — mandatory, not optional**, and inverted from oncology practice: **hold serum phosphate at
+low-normal, never the label's 5.5–7.0 target**, because erdafitinib hits ERK1/2 twice with opposite signs
+and **Arm 5 raises phosphate too, by an independent renal route.** (3) **GH 2 IU** — AKT rescue for Arm 1
+(FGFR blockade alone is apoptotic), on the *augmenting* side of the stem-pool sign flip, plus a speculative
+`v(c)` role via Nkcc1. (4) **Abaloparatide 80 µg** — the envelope failure is **intrinsic**: normal dogs
+fracture at the plate-thickening dose; FGFR3 inhibition **normalises bad bone and degrades good bone**.
+(5) **Letrozole 2.5 mg/day** (Varimo's dose) → **E2 ≈ 2.2 pg/mL**, below the 11 pg/mL threshold, with
+**testosterone shunting ~3× to 57.8 nM** — protective, and an argument against suppressing androgens
+anywhere in this stack.
+
+**The five issues, stated after assembly:** (1) **two of five arms push phosphate the wrong way by
+independent mechanisms and that combination has never been measured in any organism**; (2) 8 mg violates
+Rule 1 — the plate effect is available ~10× lower, and the excess is bought from `n₀`, the already-unsolved
+term; (3) the mechanical envelope is a **ceiling on achievable effect**, not a safety footnote, and
+abaloparatide's role there is inference; (4) **every closure term is a delay, not a prevention** — VEGFR2
+blockade reverses *"rapidly"*, letrozole's E2 **fully rebounds in 6 months**, dexamethasone returns; (5) the
+honest magnitudes are **+8.2% femur (wild-type mouse, 4 wk)**, **+4.5% (Hhip1 cKO, 53 wk)**, **+3.38 cm/yr
+(children)** — the **6.8× `v(d)` headroom is measured biology, not a demonstrated drug effect.**
+
+**What is genuinely still open, and none of it is a dose.** (1) **A pool-renewal agent** — FoxA2⁺ proves
+`a > b` is achievable through three serial transplants; **nothing reproduces it pharmacologically**, and
+`L∞ ∝ n₀`. (2) **Link 11** — ovariectomy does not prevent fusion in the rabbit (Weise; Karimian **16/17
+distal tibiae fused by 4 weeks**), and only the CYP19A1⁻/⁻ rabbit skeleton separates the two readings; that
+animal exists and the data does not. (3) **Whether terminal chondrocyte volume can be pushed *above* normal
+in a healthy plate** — three lines converge on the lever (FGFR3→`v(c)`, GH→Nkcc1, IGF-1→Phase 3) and **every
+one is measured only as normalisation of a deficit**, while the bat proves 31× is biologically available.
+
+**Bottom line: this is a fast, long-duration growth stack with an unusually well-characterised closure-delay
+arm. It is not an infinite-growth stack, and no arrangement of currently existing molecules is — the missing
+piece is stem-pool renewal, and that molecule has not been made.**
