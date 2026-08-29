@@ -10,7 +10,53 @@ ledger.
 
 ---
 
-## 0-NEW. **F-R086 — SYSTEMIC IS VIABLE, AND THE OBTAINABLE STACK**
+## 0-NEWEST. **F-R087 — THE VERDICT ON BOTH NEW ARMS**
+
+### ⇒ **ASCORBATE: KEEP.** Measured in the right cells, right direction
+**Thaler, *PLoS One* 2019;14:e0220653 — primary mouse GROWTH PLATE chondrocytes, 284 uM AA, 3 d:**
+**5hmC +30-90% (dot blot) / +160-790% (ELISA), P<0.05**; **aggrecan UP**; **Col2 UP**; **Col10 DOWN
+0.8-fold P<0.1**. Authors: *"delayed maturation toward hypertrophy, **maintaining cells in a proliferative
+state** rather than accelerating differentiation."*
+> ### **Both arms at once, in the right cells:** Acan+Col2 ARE the `v(m)` term (F-R078); Col10-down IS the
+> retention mechanism (F-R085). **F-R086's "ascorbate promotes differentiation via ERK" liability is
+> WITHDRAWN — that was ATDC5 MSC→chondrocyte induction, a DIFFERENT transition.**
+> **Weak points: in vitro, 3 d, no bone length; Col10 is P<0.1 only; and 284 uM in vitro vs ~70-80 uM
+> plasma at oral saturation — a 4x dose gap nobody has bridged.**
+
+### ⇒ **AKG: KEEP BUT DEMOTED — NOT A LENGTH AGENT**
+**Andersen/Tatara, *J Anim Physiol Anim Nutr* 2008 — the better design: 0.1 g/kg bw/day PER OS (bolus, NO
+intake confound), 21-24 d postpartum only, vehicle control, n=12/group, bones at day 169:**
+
+| bone | result |
+|---|---|
+| **6th rib** | length **+7.3% (P<0.01)**; ultimate strength **+23%**; **Young's modulus +52% (P<0.001)** |
+| **femur** | **NO significant change in length, strength or modulus** |
+| **humerus** | **NO significant change in length, strength or modulus** |
+
+> ### **The long bones did NOT lengthen — only the rib, and rib length is not stature.** F-R086 built the
+> length claim on Wang 2023's piglet tibia (+4.0%), which used **in-feed dosing with +10% intake and +13%
+> ADG**. **The study that removes the confound removes the effect.**
+> **Two further problems: (1) SEX-DIVERGENT** — *"AKG preferentially increased the growth of female
+> piglets, whilst for male piglets AKG had the opposite effect."* **(2) plasma 17β-OESTRADIOL +20%
+> (P=0.002)** — **direct antagonism to the deadline arm, which is the strongest thing in the programme.**
+>
+> ### **What survives: the MATERIAL properties.** Young's modulus +52%, ultimate strength +23%, BMD +10-13%,
+> persisting 5 months after dosing stopped. **And material properties are EXACTLY the DNMT3A liability**
+> (F-R084: *"reduced Young's modulus, yield stress and ultimate stress"*). **AKG = the bone-quality arm,
+> with direct measurements where abaloparatide had only inference.**
+
+### ⇒ **AND THE HONEST POSITION ON THE SETPOINT ARM**
+> ### **DNMT3A inhibition is worth +3.0 SD in humans and has NO obtainable agent. Ascorbate is a cofactor
+> that moves 5hmC and nudges Col10 down at P<0.1. Those are not the same size of claim.** The setpoint arm
+> is **mechanistically identified and pharmacologically unavailable.**
+
+### ⇒ WHAT WOULD DECIDE IT
+Ascorbate to a growing rodent at plasma saturation with **tibial length + zone heights**. **Thaler measured
+mechanism and no bone; every AKG study measured bone and no mechanism. Nobody has done both in one animal.**
+**Best natural experiment: guinea pigs / *Gulo*-null mice (cannot synthesise vitamin C) — supraphysiological
+vs normal ascorbate, bone length.**
+
+## 0-NEW. **F-R086 — SYSTEMIC IS VIABLE, AND THE OBTAINABLE STACK** *(its AKG length claim is HALF-RETRACTED above)*
 
 ### ⇒ **RETRACTED: F-R085's "local delivery is mandatory."** My argument was that DNMT3A-deficient HSCs
 outcompete WT. **Clonal selection requires DIFFERENTIAL fitness; a drug inhibits every cell equally and
