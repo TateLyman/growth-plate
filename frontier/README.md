@@ -2331,3 +2331,69 @@ endocrine-independent controller with 31× range; (3) the within-plate closure t
 volumes and Noonan's invasion anatomy. **Still not gettable by me:** CYP19A1⁻/⁻ rabbit growth-plate histology
 (animals exist at INRAE, no skeletal phenotype published), and **Voss 2015, *Pediatr Blood Cancer* 62(1):45–51**
 in full (Wiley, closed).
+
+---
+
+## The forty-third summary — F-R060: the executioner has a name, and erdafitinib was doing three jobs
+
+**All three standing requests closed.** Voss received and read; **the CYP19A1⁻/⁻ rabbit question closed as
+"the data does not exist"** — Jolivet's 259 pages (all supplements; Figs S1–S7 entirely gonadal) mention bone
+twice in passing, and Dewaele's "body weight ratio" is *testis*/body weight. **Verified by reading, not
+inferred from search.**
+
+**The terminal step now has a molecular identity.** `serum phosphate → VEGFR2 **on the hypertrophic
+chondrocyte** → Raf/MEK/ERK1/2 → caspase-9 → apoptosis → vascular invasion → junction advances.`
+Sabbagh/Demay *PNAS* 2005;102:9637 (low phosphate blocks the apoptosis — that expansion **is** rickets);
+Yadav/Demay *iScience* 2023, [PMID 37636062](https://pubmed.ncbi.nlm.nih.gov/37636062/) (a screen for
+blockers of phosphate-induced ERK1/2 **identified VEGFR2**; chondrocyte-specific VEGFR2 depletion → more
+hypertrophic cells, less apoptosis, impaired invasion). **VEGFR2 is a phosphate sensor that triggers the
+cell's own death — so "the vascular arm" was never primarily vascular.** This unifies four arms the branch
+had treated separately: oestrogen, vascular, mechanical envelope, transit.
+
+**A renal route from oestrogen to closure, which appears to be new.** **Ikedo 2024** ([bioRxiv
+2024.06.24.600344](https://doi.org/10.1101/2024.06.24.600344)): **osteoblast**-specific aromatase KO → *no*
+bone phenotype; **adipose**-specific KO → lower tibial/femoral BMD, **increased osteoid volume and width**,
+**serum phosphate ↓, renal reabsorption ↓, FGF23 ↓, renal NaPi2a/2c protein ↓.** So adipose aromatase → E2 →
+NaPi2 → phosphate → the axis above. **Nothing to do with ERα on a chondrocyte.** Two opposite consequences:
+it may be *part of why* oestrogen ablation delays fusion, **and** it is a named failure mode — low phosphate
+plus osteoid is rickets, and a widened undermineralised physis on weak metaphysis is the SCFE substrate.
+**Design rule: block the death signal at VEGFR2, not by lowering phosphate. New non-optional stack
+requirement: serum phosphate monitored and repleted.**
+
+**Voss in full overturns F-R057's vascular reading.** Patient 5, pazopanib ×10 cycles: MRI **expansion of
+the hypertrophic chondrocyte layer**, rapidly reversible on stopping — and ***"no disruption in longitudinal
+growth… gaining approximately 6 cm while on study."*** **The terminal step slowed while flux and volume
+carried on** — the profile F-R059 said doesn't exist. F-R057's "VEGF blockade costs rate" came from Gerber's
+**ligand trap** (abolishes VEGF-A entirely); **receptor-level partial blockade behaves differently.**
+Incidence **5/35 = 14.3%** among anti-VEGFR2 TKI recipients specifically; cediranib and sorafenib gave none.
+
+**The central correction: erdafitinib was never a one-lever drug.** F-R058 and F-R059 both said "the stack
+moves one of six levers" and that **no agent raises terminal chondrocyte volume in a mammal.** Both wrong,
+and the counter-example was the first drug in the stack. FGFR3 inhibition: **(1) flux** — PZ **+25%** in
+Fgfr3 cKO; **(2) terminal cell volume** — *"significant swelling of hypertrophic cells"* (infigratinib,
+*JBMR* 2024;39:765), HZ **+45%**, i.e. zone up while cell *number* falls; **(3) the closure step** — lowers
+**ERK1/2**, the same node the phosphate death signal runs through. And **FGFR3 promotes closure**
+(Matsushita, *Hum Mol Genet* 2009;18:227 — activated Fgfr3 → **premature synchondrosis closure** via MAPK,
+BMP ligand up / antagonist down).
+
+**And it passes the test that killed the Hedgehog arm.** **TYRA-300 in WILD-TYPE C57BL/6J**, oral daily,
+4→8 wk ([PMID 40178985](https://pubmed.ncbi.nlm.nih.gov/40178985/)): **femur +8.2%, tibia +6.4%, nasoanal
++7.3%** at 14 mg/kg, dose-dependent, **no body-weight difference.** Compare Haraguchi's *Hhip1* cKO: +4.5%
+**at 53 weeks**. Systemic SAG did nothing in wild-type (F-R053/54); **systemic FGFR3 inhibition works.**
+**Caveat enforced: no growth-plate histology was done in wild-type** — the length gain is measured, the
+mechanism is inferred from gain-of-function models.
+
+**SCFE explained.** Larger terminal cells, fewer of them, expanded HZ, suppressed terminal apoptosis, and
+*Fgfr3*-null mice showing **increased femur length with decreased BMD**. **SCFE is the mechanical shadow of
+exactly the effect we want** — it cannot be dosed away without giving up the benefit, which is what
+abaloparatide is for, now for a stated reason. Also: **FGFR3 loss upregulates Hedgehog signalling**
+([PMC4474636](https://pmc.ncbi.nlm.nih.gov/articles/PMC4474636/)), linking this arm to the `A`-lever.
+
+**Open, all experiments or specific unavailable documents:** (1) **does FGFR3 inhibition raise terminal cell
+volume in a *wild-type* plate** — one histology panel on animals already run, the highest-value missing
+measurement in the branch; (2) **serum phosphate in AI-treated children** — predicted to fall; not reported
+in the published paediatric AI literature, so **Hero 2005/2006/2009 supplementary chemistry tables would
+answer it**; (3) does any FGFR3 inhibitor delay fusion in a **long bone** (verified for synchondroses,
+inferred for physes); (4) erdafitinib + VEGFR2 blockade hit the same ERK/caspase-9 node — redundant,
+synergistic, or additively unsafe mechanically; (5) what sets **bat manus 40,300 vs bat pes 1,300 µm³** in
+one animal; (6) CYP19A1⁻/⁻ rabbit growth plates — now confirmed non-existent.
