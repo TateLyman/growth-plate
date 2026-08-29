@@ -15,63 +15,91 @@ ledger.
 | agent | dose | arm | what it actually does to the identity |
 |---|---|---|---|
 | **erdafitinib** | **8 mg** | FGFR3 brake removal | Removes a brake on the **proliferative zone**. Acts on λ and column output. **Does not touch `h_term`.** |
-| **somatropin (GH)** | **2 IU/day** | systemic rate | Raises systemic IGF-1. See §3.2 — systemic is probably the wrong compartment. |
-| **abaloparatide** | **80 µg** | structural | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). It is in the stack for the **mechanical envelope**, and that job got more important in F-R057. |
+| **somatropin (GH)** | **2 IU/day** | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. Separately, 2 IU sits on the **physiological** side of the GH stem-pool sign flip (§3.8), where GH adds to the pool rather than spending it. |
+| **abaloparatide** | **80 µg** | structural | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). It is in the stack for the **mechanical envelope**. |
 | **oestrogen / other side** | — | **deliberately unbuilt** | Standing instruction, plus a second reason as of F-R057 (§4). |
 
 ---
 
-## 2. The identity as it now stands
+## 2. The identity as it now stands — measured, not modelled (F-R058)
 
 ```
-rate      dL/dt  =  N_h · h_term / τ          τ ≈ 24 h, hypertrophic zone turnover (Cooper 2013)
-total     L∞     =  A · h_term · n₀ / (b − a)
+dL/dt  =  flux  ×  v(d)_terminal
+          │         │
+          │         └─ terminal chondrocytic domain volume = v(c) cell + v(m) matrix per cell
+          └─ N_lost per day; gated by cell-cycle time and proliferative-zone height
 ```
 
-`N_h` = hypertrophic cells per column · `h_term` = terminal cell height · `τ` = transit time ·
-`n₀` = resting stem pool · `A` = amplification · `(b−a)` = senescence slope.
+Derived independently by **Wilsman 1996** from two separately-measured equations; confirmed empirically by
+**Breur 1997** (`R² = 0.992`, exactly these two variables plus their interaction). **Verified on Wilsman's
+own data: flux × domain = 8.42× against a measured growth ratio of 8.43×.**
 
-**The four arms found so far and which term each moves:**
+**The decomposition of the natural range, fastest rat plate against slowest:**
+
+| factor | contribution | in the stack? |
+|---|---|---|
+| **flux** (N_lost/day) | **3.16×** | erdafitinib, via cell-cycle time |
+| ↳ cell-cycle time | 2.47× (30.9 → 76.3 h) | erdafitinib |
+| ↳ proliferative-zone height | 3.19× (43 → 137 µm) | **nothing** |
+| ↳ growth fraction | **saturated, 0.89–0.99** | **closed — no headroom exists** |
+| **terminal domain volume** | **2.67×** | **nothing** |
+| ↳ cell volume `v(c)` | 3.63× | **nothing** |
+| ↳ matrix per cell `v(m)` | 32–49% of daily elongation | **nothing, ever** |
+| conversion efficiency per unit volume | ~2× loss, rabbit 5 → 8 wk | **nothing** |
+
+**Both factors are of comparable size and they multiply.** This kills both extreme positions the branch has
+held: *"λ is worthless"* (F-R044 — wrong, flux is the larger factor) and *"h_term is the free multiplier"*
+(F-R043 onward — overstated; it is one of two, and cannot act alone).
+
+**Retracted:** F-R057's `dL/dt = N_h · h_term / τ`. Whole-plate transit time is **not** constant — 1.56 →
+3.85 days in the rat, a 2.46× range varying inversely with growth rate. Cooper's "~24 h" is a narrower,
+hypertrophic-zone-only claim inherited from bat/mouse forelimb work I still do not have. The form above
+needs no τ assumption.
+
+**The four arms and which term each moves:**
 
 | arm | term | best evidence | verdict |
 |---|---|---|---|
-| pool | `n₀`, `(b−a)` | FoxA2⁺ serial transplant; dexamethasone banking (Gafni, 88% → 14% fusion) | **buys τ** |
-| oestrogen | `w(E₂)` | Weise, Nilsson, aromatase-deficiency cases | removes a write-off; **does not stop the count** |
-| Hedgehog, ligand level only | `A` | Haraguchi *Hhip1* cKO, +43% plate area → +4.5% length at 53 wk | **raises numerator — weakly** |
-| vascular | `τ` | Gerber Flt-(1-3)-IgG; Voss 2015 human paediatric widening; resveratrol | **buys τ, reversible** |
-
-**Three of four buy τ. Only one raises the numerator, and it does so weakly.**
+| pool | flux, `(b−a)` | FoxA2⁺ serial transplant; dexamethasone banking (Gafni, 88% → 14% fusion) | banks |
+| oestrogen | `w(E₂)` | Weise, Nilsson, aromatase-deficiency cases | removes a write-off; does not stop the count |
+| Hedgehog, ligand level only | flux/amplitude | Haraguchi *Hhip1* cKO, +43% plate area → +4.5% length at 53 wk | weak |
+| vascular | transit | Gerber Flt-(1-3)-IgG; Voss 2015 human paediatric widening; resveratrol | banks, reversible |
 
 ---
 
 ## 3. What is missing — ranked by how much it costs us
 
-### 3.1 There is no `h_term` agent. Anywhere. — *the biggest hole*
+### 3.1 Nothing in the stack touches terminal domain volume — *the biggest hole*
 
-`h_term` is a free multiplier with a demonstrated **4.6× range** across mammalian growth plates
-(mouse radius ~5,000 fl → jerboa metatarsal ~23,000 fl), and **60% of column height comes from cell
-enlargement** (Wilsman). Nothing in the stack touches it.
+`v(d)` carries **2.67×** of the natural range, and it is the half of the identity the stack does not
+address at all. Two sub-levers, both untouched:
 
-NKCC1, NHE1 and AE2 are each **necessary** — blocking any one costs 35–70% of longitudinal growth — and
-**not one has been shown sufficient to increase volume.** There is no published pharmacological agent that
-raises terminal chondrocyte volume in a mammalian growth plate. **Local IGF-1 → Phase 3 is the only
-positive-direction mechanism identified in the entire literature, and it comes from a conditional knockout
-read backwards.**
+**Cell volume `v(c)`.** NKCC1, NHE1 and AE2 are each **necessary** — blocking any one costs 35–70% of
+longitudinal growth — and **not one has been shown sufficient to increase volume.** There is no published
+pharmacological agent that raises terminal chondrocyte volume in a mammalian growth plate. Local IGF-1 →
+Cooper's Phase 3 is the only positive-direction mechanism in the literature, and it comes from a
+conditional knockout read backwards.
 
-### 3.2 Nothing in the stack raises the numerator with τ held fixed — *the R057 hole*
+**Matrix per cell `v(m)`.** **32–49% of daily elongation** — larger than cellular enlargement in slow plates
+— and this branch has **never once addressed it.** Breur: matrix volume per cell is essentially
+age-invariant and *"may be predetermined"*; its regulators were *"largely unknown"* as of 1997. Whether
+that changed is an open question I have not yet answered.
 
-Every banking agent found so far raises `N_h` **by** lengthening `τ`, which is why resveratrol moved every
-single term of the identity the right way and delivered **1.9%**. The stack currently has no answer to this.
+### 3.2 And volume is what senescence and closure actually take
 
-**And the GH line may not reach the right compartment.** Cooper's Phase 3 requires **limb-local** Igf1
-(`Igf1^fl/fl;HoxB6-Cre` → terminal height −34%). Karimian's resveratrol worked with **serum IGF-I
-unchanged** and worked in cultured metatarsals with no blood supply. So the hypertrophic-zone effect is
-local. **We have no agent that delivers IGF-1 signalling to the hypertrophic zone locally** — and that is
-precisely the manoeuvre F-R057 identifies as the only one that is *fast* without being a withdrawal.
+Across Breur's four plates from 21 to 35 days, elongation fell 12.5–39.5% and **cell volume fell 18.7–41.3%
+while flux fell only 7.7–16.6% — and rose 7.4% in the proximal radius.** Kuhn gives the same dissociation
+*inside one bone under identical systemic hormones*: at 12 weeks the rabbit **proximal radius is "almost
+fused" at v(c) = 2,590 µm³** while the **distal radius is still growing at 290 µm/day at v(c) = 11,770 µm³**.
+The two plates with no significant volume decline are exactly the two still open at 12 weeks.
 
-*(2 IU is on the correct side of the Chu 2026 argument — GHR is highest in GP1, the root stem cells, and
-excess GH depletes the pool, so a low GH dose is right. The problem is not that 2 IU is too low. The
-problem is that the systemic axis may not be the lever for `h_term` at all.)*
+> **Maintenance of terminal cell volume is the signature of a plate that stays open. Its collapse is what
+> closure looks like mechanically — locally, within one bone. Nothing in the stack defends it.**
+
+**A second, independent senescence mechanism** (Kuhn): the **conversion efficiency per unit cell volume**
+degrades with age — the 5-week rabbit slope is ~2× the 8- and 12-week slope (p < 0.01), and no
+volume-to-rate relationship exists at all at 2–3 weeks. Restoring `v(c)` in an old plate buys about half
+what it buys in a young one.
 
 ### 3.3 No pool arm
 
@@ -120,27 +148,32 @@ growth plates** (F-R056 §1).
 
 ### 3.8 Two dose items to reconcile
 
-- **GH:** 2 IU/day ≈ 0.67 mg/day ≈ 0.067 mg/kg/week at 70 kg. An earlier figure in this branch was
-  **0.35 mg/kg/week** — roughly 5× higher. Both are defensible for different reasons; the branch's own
-  Chu-2026 argument favours the **lower** one. Confirm which is settled.
+- **GH: resolved, not merely "confirm which."** The two figures sit on opposite sides of a **sign flip the
+  authors state explicitly** — *"GH augments both stem cell number and activity **under physiological
+  conditions** but causes stem cell depletion **under pharmacological exposure**"* (F-R032). 2 IU/day
+  (≈0.067 mg/kg/wk at 70 kg) is physiological; **0.35 mg/kg/wk is ~5× higher and lands in the depleting
+  range.** The low dose is not a compromise — it is the side where GH adds to the pool while still
+  supplying the AKT tone erdafitinib requires.
 - **Erdafitinib 8 mg** sits inside the 5–9 mg window that has not produced SCFE. Consistent.
 
 ---
 
 ## 4. Why the oestrogen side is still not built
 
-The standing instruction, and now a second reason. **Until something raises the numerator with τ held
-fixed, there is nothing for the oestrogen arm to protect.** A stack of four τ-lengtheners never closes and
-barely grows — that fails the brief exactly as badly as one that grows fast and closes.
+The standing instruction, and now a third reason. §3.2 says what closure looks like mechanically — a
+**local collapse of terminal cell volume**. **Until something defends `v(c)`, there is nothing for an
+anti-oestrogen arm to preserve.**
 
 ---
 
 ## 5. The single next thing
 
-**Extend Phase 3 into the idle second twelve hours.** Cooper's schedule: the chondrocyte reaches terminal
-size at ~12 h, then sits at that size for another ~12 h before turnover. Half the hypertrophic lifetime is
-unused. The jerboa proves the envelope has room — 23,000 fl inside an unchanged 24 h τ — and names the
-mechanism: extended, locally IGF-1-dependent Phase 3.
+**Find or build an agent that raises terminal chondrocytic domain volume.** That is half the identity,
+2.67× of the natural range, the carrier of senescence, the signature of a plate that stays open, and the
+one half the stack does not touch. Its two sub-levers are cell volume (three necessary transporters, none
+sufficient; local IGF-1 → Phase 3 the only positive-direction mechanism) and matrix per cell (a third of
+growth, never examined here).
 
-**That is the only manoeuvre identified so far that is fast and is not a withdrawal from the account.**
-Everything else in the stack is either a brake removal in the wrong zone, a τ-buyer, or structural support.
+Flux is not neglected — erdafitinib works there — but flux alone is capped: **growth fraction is already
+saturated at 0.89–0.99**, so the only remaining flux channels are cell-cycle time and proliferative-zone
+height.
