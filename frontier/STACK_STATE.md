@@ -15,7 +15,7 @@ ledger.
 | agent | dose | arm | what it actually does to the identity |
 |---|---|---|---|
 | **erdafitinib** | **8 mg** | FGFR3 brake removal | Removes a brake on the **proliferative zone**. Acts on λ and column output. **Does not touch `h_term`.** |
-| **somatropin (GH)** | **2 IU/day** | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. Separately, 2 IU sits on the **physiological** side of the GH stem-pool sign flip (§3.8), where GH adds to the pool rather than spending it. |
+| **somatropin (GH)** | **2 IU/day** | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. Separately, 2 IU sits on the **physiological** side of the GH stem-pool sign flip (§3.8). **And a third candidate role as of F-R059:** GH **normalises terminal chondrocyte volume** in uremic rat via proposed Nkcc1 + Igf1 — the only half of the identity nothing else touches. One study, deficit-normalisation not supranormal gain; carried as a hypothesis. |
 | **abaloparatide** | **80 µg** | structural | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). It is in the stack for the **mechanical envelope**. |
 | **oestrogen / other side** | — | **deliberately unbuilt** | Standing instruction, plus a second reason as of F-R057 (§4). |
 
@@ -34,6 +34,30 @@ Derived independently by **Wilsman 1996** from two separately-measured equations
 **Breur 1997** (`R² = 0.992`, exactly these two variables plus their interaction). **Verified on Wilsman's
 own data: flux × domain = 8.42× against a measured growth ratio of 8.43×.**
 
+**The human, anchored for the first time (F-R059).** `v(c)` measured stereologically in a human distal
+tibial physis at closure — **5,900 µm³** (White 2008, RHT fixation, Wilsman's lab, same method as all animal
+data; n=1 and chemotherapy-exposed, so plausibly depressed). Distal tibia peak rate 5 mm/yr = 13.7 µm/day.
+
+| plate | rate µm/day | v(c) µm³ | flux cells/mm²/day |
+|---|---|---|---|
+| rat proximal tibia | 396 | 14,997 | 12,830 |
+| rat proximal radius (slowest) | 47 | 4,135 | 4,340 |
+| **HUMAN distal tibia, peak** | **13.7** | **5,900** | **≈1,300** |
+
+> **The human runs at ~1/3 the cell flux of the slowest rat growth plate, at a comparable cell volume.
+> Poor on both factors.** Humans are tall by *lasting*, not by growing fast — low flux **is** the mechanism
+> of long duration, which is Gafni's banking result read forward.
+>
+> **Hence: raising flux is a withdrawal; raising `v(d)` is not.** Every extra division spends the account
+> "never close" depends on; every extra µm³ of domain volume converts the *same* division into more length.
+> **`v(d)` is the only lever that is fast and not a withdrawal.**
+
+**Measured headroom in terminal cell volume, all wild-type mammals:** rat proximal tibia 14,997 (**2.5×**),
+rabbit distal radius 18,000 (**3.1×**), jerboa metatarsal 23,000 (**3.9×**), **bat manus 40,300 µm³
+(6.8×)** — the bat carrying 1,300 µm³ cells in its own foot, a **31× range in one animal under one
+endocrine environment.** At constant flux the distal tibia alone would run **10 mm/yr at 2×, 34 mm/yr at
+6.8×**, against 5 mm/yr now.
+
 **The decomposition of the natural range, fastest rat plate against slowest:**
 
 | factor | contribution | in the stack? |
@@ -42,9 +66,10 @@ own data: flux × domain = 8.42× against a measured growth ratio of 8.43×.**
 | ↳ cell-cycle time | 2.47× (30.9 → 76.3 h) | erdafitinib |
 | ↳ proliferative-zone height | 3.19× (43 → 137 µm) | **nothing** |
 | ↳ growth fraction | **saturated, 0.89–0.99** | **closed — no headroom exists** |
-| **terminal domain volume** | **2.67×** | **nothing** |
+| **terminal domain volume** | **2.67×** (human headroom **6.8×**) | **nothing — GH a candidate** |
 | ↳ cell volume `v(c)` | 3.63× | **nothing** |
-| ↳ matrix per cell `v(m)` | 32–49% of daily elongation | **nothing, ever** |
+| ↳ **pericellular/territorial** matrix | +61% P→H; **the capillary invasion route** | **nothing** |
+| ↳ interterritorial matrix | +26% P→H; calcifying structural template | **nothing** |
 | conversion efficiency per unit volume | ~2× loss, rabbit 5 → 8 wk | **nothing** |
 
 **Both factors are of comparable size and they multiply.** This kills both extreme positions the branch has
@@ -93,8 +118,17 @@ while flux fell only 7.7–16.6% — and rose 7.4% in the proximal radius.** Kuh
 fused" at v(c) = 2,590 µm³** while the **distal radius is still growing at 290 µm/day at v(c) = 11,770 µm³**.
 The two plates with no significant volume decline are exactly the two still open at 12 weeks.
 
-> **Maintenance of terminal cell volume is the signature of a plate that stays open. Its collapse is what
-> closure looks like mechanically — locally, within one bone. Nothing in the stack defends it.**
+> **Corrected in F-R059.** This holds *between* plates, not *within* one. In the human specimen caught
+> mid-closure, cell volume was **statistically uniform across all nine regions** while bridging bone was
+> **46% in one region and ~0 elsewhere**. **Closure initiates focally in a plate whose cells are all the
+> same size — local volume collapse is not the local trigger.** Between-plate volume remains a valid
+> correlate of remaining capacity.
+
+**And the species split (F-R059).** In the *rat* 21→35 d, volume carried the decline and flux barely moved.
+In the *human rib* birth→13.5 y, **cell size is preserved (lacunar diameter unchanged, ns) while cell number
+collapses** — PZ height to 34%, HZ to 26%, matrix fraction rising 60→82.5% and 25→40%. **The human
+age-related slowdown is flux-limited.** Which is exactly why volume is the compartment to push: the flux the
+human is losing is the thing we must not spend.
 
 **A second, independent senescence mechanism** (Kuhn): the **conversion efficiency per unit cell volume**
 degrades with age — the 5-week rabbit slope is ~2× the 8- and 12-week slope (p < 0.01), and no
@@ -168,12 +202,21 @@ anti-oestrogen arm to preserve.**
 
 ## 5. The single next thing
 
-**Find or build an agent that raises terminal chondrocytic domain volume.** That is half the identity,
-2.67× of the natural range, the carrier of senescence, the signature of a plate that stays open, and the
-one half the stack does not touch. Its two sub-levers are cell volume (three necessary transporters, none
-sufficient; local IGF-1 → Phase 3 the only positive-direction mechanism) and matrix per cell (a third of
-growth, never examined here).
+**Raise terminal chondrocytic domain volume.** It is half the identity, it carries **6.8× measured headroom
+in the human** against a wild-type mammalian ceiling, and — uniquely among the levers — **it buys speed
+without spending the division count that closure draws on.**
 
-Flux is not neglected — erdafitinib works there — but flux alone is capped: **growth fraction is already
-saturated at 0.89–0.99**, so the only remaining flux channels are cell-cycle time and proliferative-zone
-height.
+**The one experiment that would settle it, and that appears never to have been done:** has anything ever
+raised terminal hypertrophic chondrocyte volume **above normal in a healthy mammalian growth plate**?
+Searched (F-R059 §7): only deficit-normalisation (GH in uremia, via proposed Nkcc1/Igf1) and
+loss-of-function (bumetanide −35%, EIPA/DIDS −60–70%, Igf1 cKO −34% height). Three independent lines —
+GH→Nkcc1, CNP→hypertrophy, IGF-1→Phase 3 — converge on the lever from different directions and **none has
+been pushed past normal.** Both candidate molecules (**GH, vosoritide**) are already in or adjacent to the
+stack.
+
+**The highest-value mechanistic question:** what sets the **bat manus at 40,300 µm³ and the bat pes at
+1,300 µm³ in the same animal**? Whatever it is, it is local, endocrine-independent, and has a 31× dynamic
+range.
+
+Flux is not neglected — erdafitinib works there — but flux is capped (**growth fraction already saturated
+at 0.89–0.99**) and, more importantly, **spending it is the thing that closes the plate.**
