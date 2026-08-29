@@ -2524,3 +2524,46 @@ one is measured only as normalisation of a deficit**, while the bat proves 31× 
 **Bottom line: this is a fast, long-duration growth stack with an unusually well-characterised closure-delay
 arm. It is not an infinite-growth stack, and no arrangement of currently existing molecules is — the missing
 piece is stem-pool renewal, and that molecule has not been made.**
+
+---
+
+## The forty-sixth summary — F-R076: DLK1 is a timing gene, and the clock question splits
+
+**F-R065 called DLK1 "the most tractable entry point" into Lui's imprinted senescence network. It is
+tractable and it is the wrong kind of lever, and finding that out was worth more than the lever.**
+
+**DLK1 loss is a human disease, and it comes in two sizes.** Paternal deletion of *DLK1* alone gives
+**central precocious puberty and essentially nothing else** — *"did not demonstrate additional features of
+the imprinted disorder Temple syndrome except for increased fat mass."* Paternal loss of the whole 14q32.2
+domain gives **Temple syndrome**: IUGR, hypotonia, precocious puberty, short stature.
+
+**Across 17 reported DLK1-defect individuals, untreated adult heights run 137.8–160.5 cm.** And then the
+sentence that decides it: *"Female patients... who received **regular GnRHa treatment all had reached
+normal-range adult heights**."*
+
+> **A human born with no functional DLK1 at all reaches normal adult height provided the plate is given
+> time.** DLK1's entire effect on height runs through **pubertal timing**, and delaying puberty recovers
+> **all** of it. **As a capacity lever it is withdrawn.**
+
+**But that is the branch's cleanest human demonstration of its own central claim.** Capacity and duration
+are separable; **duration is what costs the height.** Delete one of the eleven network genes outright and
+the plate is still fine — it just runs out of time. The Temple cohort says the same thing louder: adults at
+**−3.67 / −3.41 / −2.73 SDS**, yet the treated children go **7.13 → 11.81 cm/year** on 0.042 mg/kg/day GH.
+**A plate missing DLK1 *and* GTL2/MEG3 is not rate-limited.**
+
+**On the pacing law, two more human datasets, and they do not agree.** **EPOCH (n=135)** independently
+reproduces the split F-R075 argued for — **peak height velocity associated (β 0.018, p=0.0008), age at peak
+height velocity null** — but only on the **cell-composition-sensitive** extrinsic clock; the intrinsic
+Horvath measure was null (p=0.22). **And the only interventional dataset in existence (n=10, GH-deficient
+children) splits inside itself:** height velocity doubled, **raw epigenetic age acceleration fell**
+(non-significant, p=0.179) — against pacing — while **IGF-1, the mediator of the growth, was positively
+associated with acceleration (β 0.011, p=0.026)** — for it.
+
+**Ledger: four for, two against. The observational associations replicate; the one experiment that actually
+manipulated growth did not reproduce them.** Supported, unproven, and now unproven in a sharper way.
+
+**One consequence the branch had not confronted.** IGF-1 was the accelerating term, and the GH arm raises
+IGF-1 roughly three-fold at **half** the stack's dose. **If IGF-1 paces the clock, "blast" is the
+accelerant, not a free choice.** That does not overturn the blast argument — F-R065 settled that the closure
+deadline it was racing is removable in humans — **but it prices it, and nobody has run the measurement that
+would settle the price.**

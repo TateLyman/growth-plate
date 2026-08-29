@@ -1,7 +1,7 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R057
+**Last updated:** F-R076
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
@@ -235,6 +235,45 @@ g/yr trajectory), which **weakens skeletal specificity**. Effect sizes are small
 
 **Three independent supports now:** Lui's tryptophan experiment (direct, rat, multi-organ), Horvath's
 log-below-20 structure (fitted necessity), ALSPAC (human, correct signature). **Supported, not proven.**
+
+## -1c-vii. TWO MORE HUMAN DATASETS — ONE REPLICATES, THE ONE EXPERIMENT SPLITS (F-R076)
+
+**EPOCH, n=135, methylation at 10.4 y** (*Sci Rep* 2024) — **independent replication of the rate/timing
+split I argued in F-R075:**
+
+| | extrinsic EAA (Hannum) | intrinsic EAA (Horvath) |
+|---|---|---|
+| **peak height velocity** | **beta 0.018 (0.008-0.028), p=0.0008** | 0.011, **p=0.22** |
+| **age at** peak height velocity | -0.0022, **p=0.067** | -0.0029, **p=0.12** |
+
+**Rate associated, timing null — as predicted.** *Against it:* significant only on the **cell-composition-
+sensitive** extrinsic measure; **intrinsic (Horvath) null.** SAT explains 8.4%. Authors call the effect small.
+
+**The only INTERVENTIONAL dataset (n=10, GHD children, rhGH 0.025-0.035 mg/kg/day, 6 mo, 5-CpG forensic
+predictor):**
+
+| | baseline | 6 mo | p |
+|---|---|---|---|
+| height velocity | 3.9 cm/y | **8.7 cm/y** | **<0.0001** |
+| IGF-1 | 120.5 ug/L | **341 ug/L** | 0.0076 |
+| **epigenetic age acceleration** | +0.92 y | **-0.92 y** | **0.179 NS** |
+| EAA adjusted for IGF-1 | | **-4.137 y** | 0.0295 |
+| **IGF-1 -> age acceleration** | | **beta 0.011** | **0.0260** |
+
+> **Velocity doubled and raw EAA FELL — against pacing, but non-significant at n=10. IGF-1, the mediator of
+> the growth, was POSITIVELY associated with acceleration — for pacing.** The one experiment supplies one of
+> each. **n=10, single arm, no control, and not a validated clock. It settles nothing and names the
+> experiment.**
+
+**Ledger: four for, two against.** *For:* Lui tryptophan; Horvath log-below-20; ALSPAC opposite-sign;
+EPOCH rate/timing split. *Against:* EPOCH intrinsic-null; GH raw EAA direction.
+**The observational associations replicate; the one manipulation of growth did not reproduce them.**
+
+> **Consequence the branch had not confronted:** IGF-1 is the term that accelerated the clock, and the GH
+> arm raises IGF-1 ~3x at **half** the stack's 0.07 mg/kg/day. **If IGF-1 is the pacer, "blast" is the
+> accelerant, not neutral.** This does not overturn the blast argument — F-R065 showed the closure deadline
+> it was racing is removable — **but it converts a free choice into a measured trade**, and the measurement
+> is methylation age before/after GH with a real clock and a control arm.
 
 ## -1c-vi. THE HH ARRAY DATA EXISTS BUT WAS FILTERED (F-R075)
 
@@ -519,6 +558,29 @@ Gtl2 fall** while **Cdkn1c (p57KIP2) and Grb10 rise**.
 formation chondroprogenitors **acquire self-renewal**, forming *"large, stable monoclonal columns."*
 
 > **This converts `n0` from "impossible" to "unsolved," and names targets. Most tractable: DLK1.**
+
+### 1c-i. DLK1 RETRACTED as a capacity lever — and the retraction is good news (F-R076)
+
+**DLK1 has a human loss-of-function phenotype and it is the wrong kind.** Paternal deletion of *DLK1* alone
+(14–69 kb, 14q32.2) causes **central precocious puberty and nothing skeletal beyond it** — *"did not
+demonstrate additional features of the imprinted disorder Temple syndrome except for increased fat mass."*
+Across **17 reported DLK1-defect individuals**, untreated adult heights run **137.8–160.5 cm**, but:
+
+> *"Female patients... who received **regular GnRHa treatment all had reached normal-range adult heights**."*
+
+**A human born with no functional DLK1 reaches normal adult height provided the plate is given time.**
+DLK1's entire height effect runs through **pubertal timing**, and delaying puberty recovers **all** of it.
+
+> **So the imprinted network does not gate plate capacity — but the same result is the branch's cleanest
+> human demonstration that capacity and duration are separable and DURATION is what costs height.**
+
+**Losing the whole domain (Temple syndrome, mat UPD14) is different and worse** — untreated adults at
+**−3.67, −3.41, −2.73 SDS** — but that cohort is 86% SGA and **half the deficit is prenatal**, and the plate
+still runs at **7.13 → 11.81 cm/yr** on GH 0.042 mg/kg/day (Brightman 2018, n=6). **A plate missing DLK1 and
+GTL2/MEG3 outright is not rate-limited.**
+
+**Mouse dosage, the up direction:** Dlk1 at **2× → embryonic overgrowth**; at **3× → late-gestation lethal**
+with oedema and skeletal defects. Real effect, prenatal, window under one doubling wide. Not a lever.
 
 ## 1d. The core combination has been randomised (F-R065)
 
