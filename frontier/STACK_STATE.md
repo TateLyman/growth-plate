@@ -126,6 +126,85 @@ number both fall with age; **dexamethasone decreased RZ proliferation AND slowed
 > rationale: it does not merely postpone the endpoint, **it makes every division cheaper in capacity.**
 > Joins CXXC5 — a transcriptional brake applied every cycle is exactly what a per-cycle cost term looks like.
 
+## -1a-00. **F-R083 — THE THREE MISSING EXPERIMENTS, ANSWERED WITHOUT RUNNING THEM**
+
+**Computed from the repo's own growth-plate atlas + the chondrocyte methylome + GWAS Catalog.**
+Code: `frontier/analysis/no_new_experiments/`.
+
+### (a) HUMAN GROWTH PLATE, ZONE-RESOLVED (Chu atlas, 22,971 genes, 10 donors aged 11-14)
+Paired within donor, prolif vs stem:
+
+| gene | stem | prolif | preHT | HT | delta | p | pct |
+|---|---|---|---|---|---|---|---|
+| **DNMT1** | 14.1 | **33.0** | 26.8 | 23.4 | **+16.5** | **0.047** | 82 |
+| **UHRF1** | 6.4 | **15.7** | **4.5** | **3.4** | **+11.0** | **0.051** | 60 |
+| **DNMT3A** | 24.7 | 27.0 | 28.4 | 27.0 | −0.6 | 0.23 | **84** |
+| DNMT3B | 1.2 | 2.1 | 1.2 | 0.9 | +1.3 | 0.085 | **35** |
+| EZH2 / EED / SUZ12 | | **all peak in prolif** | | | | **0.016 / 0.009 / 0.037** | |
+| **ESR1** | **44.5** | 30.6 | 28.3 | 29.2 | **−16.7** | **0.017** | 88 |
+| ACAN / CCN2 | | | | | | | **97 / 98** |
+| **RTL1 / CYP19A1** | | | | | | | **25 / 29 — ABSENT** |
+
+> ### **Yanagihara's mouse IHC REPLICATES IN HUMAN TISSUE:** DNMT1 and UHRF1 both rise stem→proliferative
+> and **collapse in preHT/HT** — maintenance machinery on in the proliferative compartment, off as cells
+> leave it. **DNMT3A is at the 84th percentile in ALL zones incl. stem; DNMT3B is absent (35th) — DNMT3A has
+> NO redundant partner in this tissue.** With TBRS's normal IGF-1/GH (F-R081), **cell autonomy is the
+> parsimonious reading.**
+
+**Three unlooked-for findings:** (i) **PRC2 is zonally organised** — EZH2/EED/SUZ12 all peak in prolif;
+(ii) **ESR1 is a RESTING-ZONE gene**, falling on proliferation — a new argument that oestrogen acts on the
+pool, fitting Schrier (F-R072); (iii) **RTL1 is at the 25th percentile — NOT expressed in human growth
+plate.** F-R078 called RTL1 the second height gene at 14q32.2; **whatever it does, it does not do it in the
+plate.** CYP19A1 at 29th weakens F-R049's intracrine-aromatase argument.
+
+### (b) POLYCOMB TERRITORY — **I WAS WRONG, AND THIS IS THE CORRECTION**
+Tested Dnmt1-dependent regions against Polycomb loci. **Hox clusters are ENRICHED, not depleted**
+(HoxA 4.82x, HoxC 3.05x, HoxD 2.37x; all DMV loci 1.69x). But the gradient explains it:
+
+| | fold | p(enrich) |
+|---|---|---|
+| **canyon cores** (CGI >=2 kb) | **1.18x** | **0.19 n.s.** |
+| flanks (+/-5 kb) | 1.27x | **0.020** |
+| distal (20-50 kb) | **1.65x** | **0.003** |
+
+> ### **"DNMT1 and DNMT3A act on DIFFERENT COMPARTMENTS" (F-R080/81/82) is WITHDRAWN.** Territories overlap.
+> What is true: **Dnmt1 methylation is un-enriched at canyon cores and rises monotonically with distance from
+> them.** **"Lower DNMT3A, preserve DNMT1" can no longer rest on territory — it rests on enzyme function
+> (de novo vs maintenance) and on the phenotypes (`Dnmt1^ΔPrx1` bone <50% vs `Dnmt3a` het longer). Those hold.**
+
+### (c) THE LIABILITY IS REAL IN HUMANS — GWAS PLEIOTROPY
+161 DNMT3A SNPs pulled from GWAS Catalog: **47 body-height associations, 4 heel-BMD. One SNP carries both.**
+
+**rs13002567 — chr2:25,242,851, INTRON VARIANT OF DNMT3A (distance 0; next gene 33 kb):**
+
+| trait | allele | beta | direction | p |
+|---|---|---|---|---|
+| **body height** | **C** | 0.0376 | **decrease** | **1e-300** |
+| body height (repl.) | C | 0.0346 | decrease | 3e-38 |
+| **heel bone mineral density** | **T** | 0.0197 | **decrease** | **3e-24** |
+| bone tissue density | T | 0.0200 | decrease | 2e-23 |
+
+> ### **The height-INCREASING allele (T) is the bone-density-DECREASING allele.** Bell-Hensley's mouse
+> phenotype — longer bones, weaker bones — **reproduced in humans on COMMON variation, not dominant-negative
+> missense.** **F-R082 hoped the cortical penalty was an allele-class artefact. It is not. The trade-off is
+> intrinsic to the axis.**
+>
+> ### **Which makes F-R078's CCN2 pairing LOAD-BEARING, not optional:** CCN2 is at the **97.9th percentile**
+> in human growth plate and is the one agent measured to raise **cortical thickness AND mineral content while
+> lengthening bone.** **The liability is real and its counter is already in the stack and already expressed
+> in the right tissue.**
+
+*Caveat: POMC is 74 kb away; no formal colocalisation performed.*
+
+### (d) WHAT STILL CANNOT BE SUBSTITUTED FOR
+1. **Whether POSTNATAL DNMT3A reduction reproduces the phenotype.** All human+mouse data is germline. TBRS is
+   overgrown by age 3; the mouse diverges only after 100 days. **Unresolvable from existing data, and the most
+   important unknown in the arm** — a postnatal intervention is the only usable kind.
+2. **Whether height and bone density are separable.** They travel together at rs13002567. CCN2 is the proposed
+   counter; **the combination has never been tried in any organism.**
+3. **Whether removing the deadline (F-R065 oestrogen) and raising the setpoint (DNMT3A) are additive.** Both
+   established separately in humans; **the combination has never existed.**
+
 ## -1a-0. **THE CLOCK AND THE HEIGHT LEVER ARE THE SAME MOLECULE (F-R082)**
 
 **Jackson lab, *Nat Genet* 2026;58:1632 — the causal experiment the pacing law never had.**

@@ -2974,3 +2974,65 @@ same laboratory says **"HSC and early progenitor numbers remain constant"** with
 targets not de-repressed, proposing instead that methylation **"impairs transcriptional activation dynamics
 during differentiation."** Number preserved, output reduced — that is flux, not `n₀`. The two papers
 disagree, and the later, better-powered one says output.
+
+---
+
+## The fifty-third summary — F-R083: the three missing experiments, answered without running them
+
+**Tate is right that F-R082's asks are experiments, not papers, and that they do not exist. So I computed
+substitutes for all three — from the repository's own growth-plate atlas, from the chondrocyte methylome I
+already pulled, and from open human population genetics. All three are answered. One answer contradicts a
+claim I have been making for three rounds, and one reproduces the mouse liability in humans at p = 3×10⁻²⁴.**
+
+**Ask #1 — is the effect cell-autonomous to the plate?** The branch already held a zone-resolved human
+growth-plate expression table (Chu 2026, 22,971 genes, 10 donors aged 11–14). Tested paired within donor:
+**DNMT1 rises from stem to proliferative zone (+16.5, p = 0.047) and UHRF1, its obligate partner, does the
+same (+11.0, p = 0.051) and then collapses to 4.5 and 3.4 in the prehypertrophic and hypertrophic zones.**
+That is **Yanagihara's mouse immunohistochemistry replicating in human tissue** — maintenance machinery
+switched on in the proliferative compartment and off as cells leave it. And **DNMT3A sits at the 84th
+percentile of all genes, evenly across every zone including the stem zone, while DNMT3B is at the 35th and
+effectively absent — so DNMT3A has no redundant partner in this tissue.** With TBRS's normal IGF-1 and GH,
+cell autonomy is now the parsimonious reading.
+
+**Three things I was not looking for.** The whole PRC2 core is zonally organised — **EZH2 (p = 0.016), EED
+(p = 0.009) and SUZ12 (p = 0.037) all peak in the proliferative zone.** **ESR1 is a resting-zone gene**,
+highest in the stem zone and falling significantly on entering proliferation (p = 0.017) — a new argument
+that oestrogen acts on the pool rather than the rate, which fits Schrier. And **RTL1 is at the 25th
+percentile — it is not expressed in human growth plate at all.** F-R078 concluded RTL1 was the second height
+gene at 14q32.2; whatever it does to stature, **it does not do it in the plate.**
+
+**Ask #3 — Polycomb territory. Here I was wrong.** I predicted that Dnmt1-dependent methylation would avoid
+the Polycomb canyons where DNMT3A acts. **The Hox clusters are enriched, not depleted** (HoxA 4.82×, HoxC
+3.05×, HoxD 2.37×). But the gradient explains it: **canyon cores 1.18× (p = 0.19, not significant), flanks
+1.27× (p = 0.020), distal 20–50 kb 1.65× (p = 0.003).**
+
+> **"DNMT1 and DNMT3A act on different compartments" — which I argued in F-R080, F-R081 and F-R082 — is
+> withdrawn.** The territories overlap. What is true is that **DNMT1 methylation is un-enriched at the canyon
+> cores and rises monotonically with distance from them.** "Lower DNMT3A, preserve DNMT1" can no longer rest
+> on territory. It rests on enzyme function and on the phenotypes — `Dnmt1^ΔPrx1` bone length under half of
+> control against `Dnmt3a` heterozygotes with longer bones. **Those still hold; the territorial argument does
+> not.**
+
+**Ask #2 — is the cortical liability an artefact of the dominant-negative allele?** No mouse exists, so I
+used the human population. I pulled all 161 GWAS Catalog SNPs mapped to DNMT3A and every association:
+**47 body-height associations, 4 heel-bone-mineral-density. One SNP carries both.**
+
+**rs13002567 — an intron variant of DNMT3A (distance 0, next gene 33 kb away):** the **C allele decreases
+height (p = 1×10⁻³⁰⁰)** and the **T allele decreases heel bone mineral density (p = 3×10⁻²⁴)**. They are the
+two alleles of one SNP.
+
+> **The height-increasing allele is the bone-density-decreasing allele.** Bell-Hensley's mouse phenotype —
+> longer bones, weaker bones — **reproduced in humans on common regulatory variation, not on
+> dominant-negative missense.** F-R082 hoped the penalty might vanish with true haploinsufficiency. **It does
+> not. The trade-off is intrinsic to the axis.**
+
+**Which makes F-R078's CCN2 pairing load-bearing rather than optional.** CCN2 is at the **97.9th percentile**
+in human growth plate — one of the most expressed genes in the tissue — and it is the one agent measured to
+raise cortical thickness and mineral content *while* lengthening bone. **The liability is real, and its
+counter is already in the stack and already expressed in the right tissue.**
+
+**And three things I genuinely cannot substitute for, stated so they are not mistaken for solved:** whether
+**postnatal** DNMT3A reduction reproduces a germline phenotype (TBRS is overgrown by age 3; the mouse
+diverges only after 100 days — those point opposite ways); whether height and bone density are separable at
+all; and whether removing the fusion deadline and raising the setpoint are additive. **None of the three
+exists in the literature in any form.**
