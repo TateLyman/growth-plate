@@ -2248,3 +2248,86 @@ source of the 24 h claim). **Any measurement of terminal hypertrophic chondrocyt
 plate** — I have rat, pig, rabbit, mouse and jerboa and **no human number**, so every claim about human
 headroom is unanchored. **Anything post-1997 on pharmacological control of matrix volume per chondrocyte.**
 Plus the standing two: CYP19A1⁻/⁻ rabbit growth plates, and Voss 2015 in full.
+
+---
+
+## The forty-second summary — F-R059: the human number, the bat ceiling, and the lever that is not a withdrawal
+
+**Every F-R058 request is closed. Nothing below is a paper I failed to look for.**
+
+**τ is settled.** Cooper's reference 7 is **Farnum, Tinsley & Hermanson, *Cells Tissues Organs*
+2008;187:35–47** (big brown bat). Table 4: hypertrophic-zone fraction lost per 24 h ranges **0.48–1.60**
+(τ_HZ **15–50 h, 3.3×**); whole-plate **0.17–0.78** (**1.3–5.9 days, 4.6×**); terminal cell life span
+**1.2–10.0 h**. Farnum calls it *"quite constant"* and immediately adds ***"the data are fairly noisy."***
+**HZ transit is loosely conserved to ~3×; whole-plate transit is not conserved at all.** F-R058's retraction
+was right, and my computed 1.56–3.85 d from Wilsman's rat data is confirmed in a second species by the
+original measurement.
+
+**The ceiling is a bat wing.** Same paper: **manus MC digit 4 terminal hypertrophic cell = 40,300 µm³ at
+52.5 µm height; the same animal's pes carries 1,300 µm³ at 9.1 µm.** A **31× range of terminal cell volume
+within one individual under one endocrine environment**, with P→H amplification ~52× in the manus vs ~2.5×
+in the pes and HZ area fraction 0.7–0.8 vs 0.5. **`v(c)` is a locally-set free multiplier, not a species
+constant — and the bat, not the jerboa, is the ceiling.**
+
+**The human number exists.** **White, Wilsman, Leiferman & Noonan, *J Child Orthop* 2008;2:315–319** — a
+human **distal tibial physis caught mid-closure** at 12 y 11 m, **RHT fixation and point-sampled stereology
+in Wilsman's own lab**, i.e. identical method to every rat/pig/bat number. **Average hypertrophic cell volume
+5,900 µm³** (range 3,600–8,400, **no significant difference across nine regions**), physeal height 980 µm,
+**46% bridging bone in the middle of the central region and ~0 elsewhere.** Caveats carried, not buried:
+**n = 1**, osteosarcoma treated with **cisplatin/doxorubicin/methotrexate** — which the authors note reduce
+growth rate and final height — so 5,900 is plausibly *depressed*.
+
+**This corrects F-R058.** I had written that *"maintenance of terminal cell volume is the signature of a
+plate that stays open."* **That holds between plates, not within one:** cell volume was uniform across the
+whole physis while bridging was focal. **Closure initiates focally in a plate whose cells are all the same
+size — local volume collapse is not the local trigger.**
+
+**Putting the human on the identity reorders the stack.** Distal tibia peak **5 mm/yr = 13.7 µm/day**
+([Pritchett 1984](https://pubmed.ncbi.nlm.nih.gov/6499303/)). With `dL/dt = flux × v(d)`: **human flux
+≈ 1,300 cells/mm²/day against the rat's *slowest* plate at 4,340 measured.** **The human is flux-poor AND
+volume-poor at once.** Humans are tall by *lasting*, not by growing fast — and low flux **is** the mechanism
+of duration, which is Gafni's banking result read forward.
+
+> **Therefore raising flux is a withdrawal and raising `v(d)` is not.** Every extra division spends the
+> account "never close" depends on; every extra µm³ converts the *same* division into more length. **`v(d)`
+> is the only lever that is fast and not a withdrawal.** F-R057 reached this via a τ argument that was
+> wrong; it is re-derived here from flux/senescence coupling, which is not.
+
+**Measured human headroom:** rat prox tibia 2.5×, rabbit 3.1×, jerboa 3.9×, **bat manus 6.8×**. At constant
+flux the distal tibia alone runs **10 mm/yr at 2× and 34 mm/yr at 6.8×**, against 5 now.
+
+**Human plate ageing is the opposite of the rat's.** **Byers et al., *Bone* 2000;27:495–501** (46 children,
+11 d – 13.5 y): PZ height to **34%**, HZ to **26%**, matrix fraction **60→82.5%** and **25→40%** — and
+**chondrocyte lacunar diameter unchanged in both zones (ns).** **Cell number collapses, cell size is
+preserved.** In the rat 21→35 d volume carried the decline. **The human slowdown is flux-limited** — which is
+exactly why volume is the compartment to push.
+
+**Matrix is two levers, and one of them is the closure pathway.** **Noonan, Hunziker, Nessler & Buckwalter,
+*J Orthop Res* 1998;16:500–508** (6 mini-pigs): cell volume **1,174→5,530 µm³ (4.7×)**; matrix/cell
+**8,040→11,760 (+46%)**, split **pericellular/territorial +61% (4,580→7,390)** vs **interterritorial +26%
+(3,460→4,370)**; absolute cell **+4,356** vs matrix **+3,720**. Growth rate correlates with **interterritorial**
+matrix/cell in the PZ but **pericellular/territorial** matrix/cell in the HZ. And the anatomy: *"the
+pericellular/territorial matrix does not calcify"* while the interterritorial calcifies, and **"capillaries
+invade the pericellular/territorial matrix compartment after mineralization of the interterritorial matrix."**
+**That is the same door the VEGF/laminin executioner comes through (F-R057), described anatomically.**
+
+**The volume-accelerator gap is narrower than F-R058 said.** **GH normalises terminal chondrocyte volume** in
+uremic rat, authors proposing **Nkcc1 + Igf1** ([PMC7350242](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7350242/));
+**CNP increases chondrocyte hypertrophy**; NKCC1 (bumetanide −35%, [PMC3154001](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3154001/)),
+NHE1/AE2 and local IGF-1 remain loss-of-function only. **Three lines converge on the lever and none has been
+pushed above normal in a healthy plate.** **That gives GH a third candidate job — a `v(c)` agent via Nkcc1 —
+on one uremic-rat study, labelled as a hypothesis.**
+
+**Stack: erdafitinib 8 mg on cell-cycle time; GH 2 IU as AKT support, physiological side of the sign flip,
+and now candidate `v(c)`; abaloparatide 80 µg on the mechanical envelope. Terminal domain volume — half the
+identity, 6.8× human headroom, the only non-withdrawal lever — is still untouched.** Oestrogen side stays
+unbuilt: it protects duration, and duration is currently protecting 13.7 µm/day.
+
+**Open, and stated as experiments rather than requests:** (1) has *anything* raised terminal hypertrophic
+chondrocyte volume **above normal in a healthy mammal** — searched, apparently never done, and both candidate
+molecules (GH, vosoritide) are already at hand; (2) **what sets bat manus 40,300 vs bat pes 1,300 in the same
+animal** — Farnum describes it and does not explain it, and the answer is by construction a local
+endocrine-independent controller with 31× range; (3) the within-plate closure trigger, given White's uniform
+volumes and Noonan's invasion anatomy. **Still not gettable by me:** CYP19A1⁻/⁻ rabbit growth-plate histology
+(animals exist at INRAE, no skeletal phenotype published), and **Voss 2015, *Pediatr Blood Cancer* 62(1):45–51**
+in full (Wiley, closed).
