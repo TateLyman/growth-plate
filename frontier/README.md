@@ -2710,3 +2710,62 @@ the resting-zone niche as *"low in WNT and TGF-β"* and F-R073's cocktail contai
 the depleting range"* while §1 carries 0.49 mg/kg/wk and calls the low-dose rationale withdrawn. The
 depleting claim came from a mouse stem-cell paper; the ACAN trial ran **exactly 0.35 mg/kg/wk in children
 for three years** with sustained gain and no maturation cost. **§3.8 corrected to agree with §1.**
+
+---
+
+## The forty-ninth summary — F-R079: the growth-plate methylome exists, and it reverses one of my own retractions
+
+**The gap I have named in four consecutive rounds is closed, and closing it cost me a retraction I made in
+F-R072.**
+
+**GSE270641 is site-resolution DNA methylation in growth-plate chondrocytes with a bone-length phenotype.**
+Yanagihara et al., *Nat Commun* 2025: `Dnmt1^ΔPrx1` mice have **significantly shortened long bones** from
+*"decreased chondrocyte proliferation and accelerated differentiation."* Dnmt1 and Uhrf1 sit in the
+**proliferative zone**. At one week the proliferative area is smaller, BrdU⁺ lower, and the **hypertrophic
+and mineralised areas wider**; by six weeks there is **loss of growth plates** and delayed secondary
+ossification.
+
+**The mechanism is the branch's whole thesis in one sentence:** *"DNA methylation **maintenance in
+proliferating chondrocytes** and **demethylation of DNA in hypertrophic chondrocytes** is essential for bone
+elongation."* **Demethylation is the differentiation signal.** And there is a human anchor — *"In the
+Musculoskeletal Knowledge Portal, Dnmt1 is significantly associated with Height."*
+
+**This is Nilsson 2005's hypothesis with a knockout behind it, twenty years later.**
+
+> **And it forces a retraction.** F-R072 §1 was headed *"the OSK direction problem dissolves — the assay had
+> no site resolution."* **That dissolution is withdrawn.** F-R069 records OSK's cartilage mechanism as
+> **"DNMTs down, TET2 pivotal"** — which is now the measured height-negative direction.
+
+**I analysed the deposit myself.** 95.9% of Dnmt1-dependent methylation lies **outside** promoters and CpG
+islands — promoters show **no enrichment at all** (2.7% observed vs 2.5% shuffled, 1.07×), gene bodies
+53.8%, intergenic 45.8%. **So the marks are in a different compartment from OSK's CpG-island/bivalent target
+class. But the enzyme is shared** — if OSK lowers DNMT1 protein, compartment separation does not save you.
+
+> **Named hazard: AAV-OSK in a growing animal may phenocopy `Dnmt1^ΔPrx1`.** The published OSK cartilage
+> work was adult articular cartilage for osteoarthritis — **no growth plate**. Nobody has run it with open
+> physes. The reprogramming arm has carried this assumption since F-R069 and I did not see it until the
+> knockout existed. **Discriminator: DNMT1 protein in proliferative-zone chondrocytes after OSK, with bone
+> length.**
+
+**And the untested direction is the interesting one.** The paper never tests Dnmt1 over-expression. **Raising
+maintenance methylation should hold cells proliferative for longer** — the same shape as the dexamethasone
+banking result in F-R072, and the same cost.
+
+**I also found a defect in the deposit and an error of my own.** The file is **missing chr7, chr8, chr9 and
+chrX entirely** — 76% genome coverage — so my first-pass "zero regions" at *Acan*, *Igf2*, *H19*, *Cdkn1c*,
+*Cyp19a1* and *Dnmt1* were artefacts of which chromosomes were uploaded. And my first-pass Dlk1–Dio3
+enrichment of *"3.2×, p = 3.6 × 10⁻¹⁹"* used a Poisson null against a uniform rate, which is wrong because
+methylation regions cluster. **Permutation against 20,000 random same-size windows gives 2.38×, p = 0.059 —
+not significant.** Both are recorded in the round rather than quietly fixed.
+
+**Kagami's supplement confirmed the height figures exactly** — −2.2, −2.9 and −4.4 SD — and added that case
+11 was already **−2.4 SD at birth**, so about half the RTL1 effect is prenatal. It also showed her menarche
+was **normal** while the DLK1-only case was **early**: height and pubertal timing move separately at that
+locus, which is F-R078's conclusion seen a third time.
+
+**On CCN2, half the ask is answered and the other half is now very sharp.** The same Col2a1-CCN2 line was
+followed to **24 months**: healthy, CCN2 still accumulated in growth-plate cartilage at 21 months, and
+**radiographic osteoarthritis in 50% of wild-type knees and none of the transgenics**. But **two papers, one
+line, 24 months of follow-up, micro-CT and serial radiography of four joints — and neither ever measured
+adult bone length.** The only length figure in the whole line is a **P1 tibia at n = 3**. Those radiographs
+may already contain the number.

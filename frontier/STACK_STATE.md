@@ -126,7 +126,44 @@ number both fall with age; **dexamethasone decreased RZ proliferation AND slowed
 > rationale: it does not merely postpone the endpoint, **it makes every division cheaper in capacity.**
 > Joins CXXC5 — a transcriptional brake applied every cycle is exactly what a per-cycle cost term looks like.
 
-## -1b. THE DIRECTION PROBLEM FOR OSK — RESOLVED, dissolved (F-R072)
+## -1b-NEW. THE OSK DIRECTION PROBLEM IS BACK, AND IT IS REAL (F-R079)
+
+**F-R072 dissolved it on the grounds that Nilsson's assay was bulk. There is now a site-resolution map, a
+conditional knockout, a mechanism and a human association. THE DISSOLUTION BELOW IS RETRACTED.**
+
+**Yanagihara et al., *Nat Commun* 2025 (GSE270641, MBD-seq, mouse chondrocytes P3–5).** `Dnmt1^ΔPrx1`:
+long bones **significantly shortened**, *"decreased chondrocyte proliferation and accelerated
+differentiation"*; **Dnmt1/Uhrf1 localise to the PROLIFERATIVE zone**; at 1 wk proliferative area smaller,
+BrdU⁺ lower, **hypertrophic and mineralised areas WIDER**; at 6 wk **loss of growth plates**, delayed SOC.
+
+> *"DNA methylation **maintenance in proliferating chondrocytes** and **demethylation of DNA in hypertrophic
+> chondrocytes** is essential for bone elongation."*
+
+> ### **Demethylation IS the differentiation signal in the plate.** Less maintenance methylation → premature
+> hypertrophy → shorter bone. **Human anchor: *"In the Musculoskeletal Knowledge Portal, Dnmt1 is
+> significantly associated with Height."***
+
+**F-R069 records OSK's cartilage mechanism as "DNMTs down, TET2 pivotal" — the height-negative direction.**
+
+**My own analysis of the deposit (`frontier/analysis/GSE270641/`):** **95.9% of Dnmt1-dependent methylation
+is OUTSIDE promoters/CpG islands** (promoters 2.7% obs vs 2.5% shuffled = **1.07×, no enrichment**; CpG
+islands 1.7% vs 0.7%; gene bodies 53.8% vs 42.0%; intergenic 45.8%). **So the MARKS are in a different
+compartment from OSK's CpG-island/bivalent target class (F-R070) — but the ENZYME is shared.** Compartment
+separation does not protect against a global reduction of the writer.
+
+> ### **NAMED HAZARD: AAV-OSK in a growing animal may phenocopy `Dnmt1^ΔPrx1`.** The published OSK cartilage
+> work was **adult articular cartilage for OA — no growth plate.** **Nobody has run OSK with open physes.**
+> **Discriminator: measure DNMT1 protein in proliferative-zone chondrocytes after OSK, alongside bone length.**
+
+**And the untested direction is the interesting one:** the paper never tests Dnmt1 **over**-expression.
+**Raising maintenance methylation should hold cells proliferative longer** — same shape as F-R072's
+dexamethasone banking result, same cost.
+
+**Data-quality note:** the deposited file is **missing chr7, chr8, chr9, chrX entirely** (76% genome
+coverage). *Acan* (chr7), *Cyp19a1* and *Dnmt1* (chr9) cannot be assessed. **Dlk1–Dio3 domain enrichment is
+2.38×, permutation p = 0.059 — NOT significant** (my first-pass Poisson p = 3.6e-19 used the wrong null).
+
+## -1b-OLD. THE DIRECTION PROBLEM FOR OSK — dissolved (F-R072) — **RETRACTED BY F-R079 ABOVE**
 
 | | direction |
 |---|---|
@@ -927,6 +964,13 @@ reasoning implies the answer.**
 | proliferation | PCNA up in PZ **and resting zone** — flux, possibly `n₀` |
 | IGF | IGF-I/II mRNA up several-fold; **IGF-1R autophosphorylation enhanced** |
 | **bone strength** | **mineral content, trabecular mineral, cortical thickness all up, P<0.05** |
+
+**F-R079 — the same line followed to 24 months (*PLoS One* 2013;8:e71156):** viable and healthy to
+**24 months**, CCN2 protein still accumulated in **growth-plate cartilage at 21 months**, **radiographic OA
+in 50% of WT knees and NONE of the transgenics**, reduced ColX/ColI/MMP-13, enhanced proliferation at 21 mo.
+**But neither paper ever measured adult bone length** — two papers, one line, 24 months, micro-CT and serial
+radiography of four joints, and the number this programme needs was never taken. **The radiographs may
+already contain it** (Hattori & Takigawa, Okayama).
 
 **What it does NOT show:** the only length measurement is **P1 tibia, n=3**; *"12% larger at 8 weeks"* is
 **body size/mass, not bone length**; **adult bone length was never measured**; zone heights are qualitative
