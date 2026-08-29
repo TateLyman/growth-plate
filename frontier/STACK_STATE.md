@@ -10,6 +10,67 @@ ledger.
 
 ---
 
+## 0-POOL. **F-R088 — THE POOL CANNOT BE BOUGHT, AND THE ONE EXCEPTION**
+
+### ⇒ RECORDED: WHAT WE WOULD USE AND CANNOT
+| ideal agent | buys | why not |
+|---|---|---|
+| **selective DNMT3A inhibitor** (DY-46-2, IC50 **0.39 uM**, **33x over DNMT1**) | **+3.0 SD**, ~50% engagement | **research probe only.** Every OBTAINABLE DNMT inhibitor (azacitidine, decitabine, hydralazine, procaine, disulfiram) hits **DNMT1** — the enzyme that must be preserved |
+| **Col2a1-restricted CCN2** | `v(m)` + cortical + deadline protection | gene therapy; promoter restriction is the point |
+| **direct mTORC1 activator** | **the only mechanism that adds pool without spending it** | **no such drug in any pipeline** — the entire mTOR pharmacopoeia is inhibitors |
+
+### ⇒ **THE STRUCTURE I HAD MISSED** (*Stem Cells* 2026 systematic review)
+| **MAINTAINS quiescence (preserves pool)** | **BREAKS quiescence (spends pool)** |
+|---|---|
+| **BMP via BMPR1A** | **Hedgehog** → RZ cells lose quiescence, become transit-amplifying, **convert to trabecular OSTEOBLASTS** |
+| **Wnt-INHIBITORY environment** | **Wnt** |
+| **PTH/PTHrP receptor signalling** (Gsa and Gq/11a) | |
+| ***ADGRG6*** — essential for the PTHrP+ slow-cycling RZ | |
+
+> ### **"No pharmacological intervention has ever expanded the growth-plate stem pool in vivo."** The only
+> documented in-vivo reactivation is **FoxA2+ cells after a growth-plate FRACTURE** — injury, not a drug.
+> ### **You cannot buy pool. Pool preservation and growth rate are the SAME AXIS WITH OPPOSITE SIGNS.**
+
+### ⇒ **THIS DISQUALIFIES F-R067's "BEST AGENT FOUND"**
+**KY19382 is a Wnt activator** (CXXC5-DVL + GSK3B inhibition). **The resting zone is maintained in a
+Wnt-INHIBITORY environment.** It lengthens bone by **breaking quiescence and spending the pool** — a rate
+agent bought with duration, **the Sotos failure mode at molecular resolution. EXCLUDED, now on mechanism.**
+**Same exclusion for any Hedgehog agonist** — Hh converts RZ cells into osteoblasts.
+
+### ⇒ **THE ONE EXCEPTION: mTORC1 IS A FATE SWITCH, NOT A RATE SWITCH**
+Newton: Tsc1 ablation → **asymmetric→symmetric division**, EdU+ stem cells **24.7→62.4/section (2.5x,
+P=0.014)** with **Ki67 and pH3 UNCHANGED**. Independent 2018 Col2-CreERT study replicates *"no changes in
+proliferation or differentiation"* — **confirming it is a fate switch** — and names the cost: *"disorganization
+of the resting zone."*
+> ### **Hh and Wnt make resting cells divide and LEAVE. mTORC1 makes one stem cell become TWO stem cells.
+> It is the only measured escape from the pool/rate trade, and therefore the only real pool arm we have.**
+
+### ⇒ **ADDED TO THE STACK: mecasermin (Increlex, rhIGF-1)**
+**0.04-0.12 mg/kg BID SC, with food** (approved range). Direct AKT→mTORC1. Children with low IGF-1:
+**80 ug/kg BID → 7.0 cm/yr; 120 ug/kg BID → 7.9 cm/yr; untreated 5.2 cm/yr.** Severe primary IGF-1
+deficiency: **2.8 → 8.0 cm/yr sustained 8 years.**
+**HONEST: deficiency-correction evidence; GH already raises IGF-1 so the increment is unknown; and NOBODY
+has shown pharmacological IGF-1 reproduces any fraction of Newton's 2.5x fate switch — the single most
+important unmeasured number in the pool arm. Liability: hypoglycaemia, must be taken with a meal.**
+
+### ⇒ TWO RE-ATTRIBUTIONS
+- **abaloparatide** is a **PTHrP(1-34) analogue**, and **PTH/PTHrP receptor signalling MAINTAINS RZ
+  quiescence.** A second, previously uncredited job. *Caveat: maintaining the non-dividing state also
+  suppresses output (the dexamethasone bargain), and Winer's 10-yr PTH(1-34) data showed no growth effect.*
+- **anastrozole** — **F-R083 showed ESR1 is a RESTING-ZONE gene** (highest in stem zone, −16.7 p=0.017 on
+  entering proliferation). **Oestrogen ablation derepresses the compartment where the pool lives**, as well
+  as removing the deadline. **Double duty, never credited.**
+
+### ⇒ **THE DECIDING UNKNOWN: is the pool EMPTY or ASLEEP?**
+The 2026 review does not address number-vs-activity anywhere. **The branch's own evidence says ASLEEP:**
+Nilsson — max population doublings **independent of donor age (P=0.36)**; Schrier — RZ labelling **flat at
+9.2 / 9.2 / 7.6% from 5 to 17 weeks**; Jackson 2026 — **numbers constant, output falls**; FoxA2+ — `a > b`
+recovered by **serial transplant into a new host**.
+> ### **If ASLEEP, the target is DEREPRESSION and the agents are already in the stack (ESR1, the DNMT3A mark).
+> If EMPTY, no arrangement of obtainable molecules gets there and the ceiling is finite.**
+> **WANTED: resting-zone chondrocyte NUMBER across the full postnatal range, to and past fusion, any species.
+> Nobody has published the human curve and it decides whether this programme has a ceiling.**
+
 ## 0-NEWEST. **F-R087 — THE VERDICT ON BOTH NEW ARMS**
 
 ### ⇒ **ASCORBATE: KEEP.** Measured in the right cells, right direction
