@@ -2107,3 +2107,66 @@ measurement of the oestrogen write-off, and the single most important paper for 
 **J Endocrinol 2006;189:27 (PMID 16614378)** — the age-by-age RZ counts and the dexamethasone conservation
 data; **Farouk Sait 2023 (Pediatr Blood Cancer e30410)** and **Brizini 2024 (Front Oncol 14:1399356)** —
 the mechanical envelope that sets the ceiling on the erdafitinib arm.
+
+---
+
+## The fortieth summary — F-R057: the turnover clock, and why every brake so far bought time instead of speed
+
+**The identity was missing a term.** Cooper 2013 (Nature 495:375, PMC3606657), confirming Farnum's bat and
+mouse work by BrdU pulse-chase: *"the entire hypertrophic zone of each growth plate turns over once in about
+24 hours regardless of the maximum volume attained by individual chondrocytes, the number of hypertrophic
+chondrocytes, or rate of growth plate elongation."* So **`dL/dt = N_h · h_term / τ`**. And the cell reaches
+terminal size at ~12 h then **sits at that size for another ~12 h** before turnover — half the hypertrophic
+lifetime is unused schedule.
+
+**That dissolves a paradox fourteen rounds old.** **Karimian 2013 (PLoS ONE 8:e67859)** — resveratrol
+200 mg/kg/d, 16 weeks, rabbits — moved **every term of the identity the right way at once**: resting-zone
+area 0.11→0.26 mm² (p<0.01), hypertrophic cells/column 3.3→5.0, terminal cell size 10.5→12.4 µm, plate height
+133→284 µm, BrdU **down**, apoptosis unchanged, and **fusion delayed at the distal tibia, distal femur and
+proximal tibia** — the last of which sets final length. E2 moved every one of them the opposite way. **Length
+gain: 1.9%.** Numerator up 1.79×, output up 2% ⇒ **τ rose by nearly the same factor.** Same for VEGF blockade
+(Gerber 1999: hypertrophic zone expands *because* junction turnover is blocked; growth impaired, fully
+reversible on withdrawal) and dexamethasone. **Banking agents raise the numerator *by* lengthening τ. It is
+one act, not two, which is why "fast" and "unlimited" have refused to combine.**
+
+**The jerboa separates them.** Metatarsal hypertrophic chondrocytes reach **~23,000 fl** — 4.6× the mouse
+radius, 1.6× the mouse tibia — inside an unchanged 24 h envelope, by **extending Phase 3** of the three-phase
+enlargement (Phase 1 true hypertrophy 600→2,000 fl; Phase 2 **swelling**, 2,000→8,000 fl at density diluted
+to 0.07 pg/fl; Phase 3 mass added at the new low density). **Phase 3 is locally IGF-1-dependent** —
+*Igf1^fl/fl;HoxB6-Cre* cuts terminal height 34% and stops cells dead at 7,000 fl. **The one manoeuvre that is
+fast and is not a withdrawal: extend Phase 3 into the idle second twelve hours.**
+
+**Two corrections.** (1) F-R055 read Haraguchi's *Hhip1* cKO as a clock lever; the supplied figure shows
+plate area falling 0.44→0.29 in control and 0.62→0.42 in mutant — **parallel decline**. It raises amplitude
+(`A`) and leaves the senescence slope untouched. (2) Karimian's discussion cites Wilsman 1996 for *"less than
+10% of bone growth… linked to cell proliferation"* — that decomposes **column height**, not rate sensitivity
+to λ. It means per-cell amplification is ~10×. It is not a licence to spend λ.
+
+**Xiu constrains the Hedgehog arm to one layer:** ablating **either Smo or Sufu** in juvenile chondrocytes
+causes **premature closure and shorter limbs** — the response is bell-shaped. **Remove brakes that act on the
+ligand (HHIP1), never brakes that act on the transducer (Sufu, Ptch1)** — a second, independent reason
+systemic SAG did nothing.
+
+**A fourth arm, and it reaches humans already.** Fusion has an executioner arriving from outside the plate:
+RES cut VEGF⁺ cells 626→265/mm² and junction laminin 515→368, while **E2 raised laminin 62%**. **Voss 2015
+(COG Phase I): 5/53 children on pazopanib or sunitinib had growth-plate abnormalities — four with widening on
+successive radiographs, one with physeal cartilage hypertrophy on MRI.** Reversible in rats and monkeys. The
+ceiling is mechanical: Hall 2016, juvenile rabbits, plate dysplasia **and fracture** — the F-R048 envelope
+from an independent direction.
+
+**Link 11 hardened and cracked in the same round.** Karimian's OVX controls fused 16/17 distal tibiae by four
+weeks — **ovariectomy does not prevent fusion in the rabbit**, confirming Weise in a second laboratory. But
+that residual fusion was **delayed at all three plates by an agent with no anti-oestrogen mechanism**, acting
+locally, serum IGF-I unchanged. Whatever closes the plate after the ovaries are gone is **druggable outside
+the oestrogen axis** — or is the plate's own intracrine oestrogen, which only the CYP19A1⁻/⁻ rabbit separates.
+
+**Stack status: three of four arms buy τ; only Hedgehog-at-the-ligand raises the numerator, and weakly (+43%
+plate area → +4.5% length over a year). A stack of four τ-lengtheners never closes and barely grows, which
+fails the brief as badly as one that grows fast and closes. Not building the oestrogen side until a
+numerator-raiser with τ held fixed exists.**
+
+**Papers wanted:** **Farnum & Wilsman, the hypertrophic-zone turnover measurement itself** (Cooper ref 7;
+likely Calcif Tissue Int 1993 and/or PMID 9351885) — the whole τ framing stands or falls on whether 24 h is a
+constant; **Wilsman 1996, J Orthop Res 14:927 (PMID 8982136)** full eight-variable decomposition;
+**Cooper 2013 Supplementary S3 and S5** (jerboa per-zone cell counts; the BrdU schedule); **any measurement
+of τ under an intervention** — nobody appears to have asked; **Voss 2015 Pediatr Blood Cancer 62:45** in full.
