@@ -14,9 +14,10 @@ ledger.
 
 | agent | dose | arm | what it actually does to the identity |
 |---|---|---|---|
-| **erdafitinib** | **8 mg** | FGFR3 brake removal | Removes a brake on the **proliferative zone**. Acts on λ and column output. **Does not touch `h_term`.** |
+| **erdafitinib** | **8 mg** | **three jobs, not one (F-R060)** | (1) flux — PZ **+25%** in Fgfr3 cKO; (2) **terminal cell volume** — *"significant swelling of hypertrophic cells"* (infigratinib, JBMR 2024), HZ **+45%**; (3) **the closure step** — lowers **ERK1/2**, the same node phosphate→VEGFR2→caspase-9 uses to kill the terminal chondrocyte. **Works in wild-type: TYRA-300 gave femur +8.2%, tibia +6.4% in 4 weeks.** |
 | **somatropin (GH)** | **2 IU/day** | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. Separately, 2 IU sits on the **physiological** side of the GH stem-pool sign flip (§3.8). **And a third candidate role as of F-R059:** GH **normalises terminal chondrocyte volume** in uremic rat via proposed Nkcc1 + Igf1 — the only half of the identity nothing else touches. One study, deficit-normalisation not supranormal gain; carried as a hypothesis. |
-| **abaloparatide** | **80 µg** | structural | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). It is in the stack for the **mechanical envelope**. |
+| **abaloparatide** | **80 µg** | structural — now with a mechanism | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). For the **mechanical envelope** — and F-R060 gives the reason: *Fgfr3*-null mice show **increased femur length with decreased BMD**, and aromatase loss gives **increased osteoid and low phosphate**. **SCFE is the mechanical shadow of the effect we want, not an incidental toxicity.** |
+| **serum phosphate** | **monitored + repleted** | **new, non-optional (F-R060)** | Oestrogen ablation predictably lowers it via adipose aromatase → renal NaPi2a/2c. The same fall that helps the plate stay open undermineralises the bone holding it. **Repletion decouples them.** |
 | **oestrogen / other side** | — | **deliberately unbuilt** | Standing instruction, plus a second reason as of F-R057 (§4). |
 
 ---
@@ -92,18 +93,51 @@ needs no τ assumption.
 
 ---
 
+## 2b. The terminal step, named (F-R060)
+
+```
+serum phosphate → VEGFR2 (on the hypertrophic chondrocyte, not the endothelium)
+                → Raf/MEK/ERK1/2 → caspase-9 → apoptosis → vascular invasion → junction advances
+```
+
+Sabbagh/Demay *PNAS* 2005 (low phosphate blocks the apoptosis; that expansion **is** rickets);
+Yadav/Demay *iScience* 2023 (a screen for blockers of phosphate-induced ERK1/2 **identified VEGFR2**;
+chondrocyte-specific VEGFR2 depletion → more hypertrophic cells, less apoptosis, impaired invasion).
+
+**This unifies four arms previously treated as separate — oestrogen, vascular, mechanical envelope, and
+transit time — and it retires "the vascular arm" as a description. Vascular invasion is downstream of a
+cell-autonomous suicide signal, and the signal is phosphate.**
+
+**And it supplies a renal route from oestrogen to closure** (Ikedo 2024): adipose aromatase → E2 → renal
+NaPi2a/2c → serum phosphate → the axis above. **Nothing to do with ERα on a chondrocyte.**
+
+**Design rule: block the death signal at VEGFR2, not by lowering phosphate.** Lowering phosphate achieves
+the same plate effect and gives rickets; blocking the receptor spares the mineral.
+
+**Human validation, and it contradicts F-R057.** Voss 2015 patient 5, pazopanib ×10 cycles: MRI-confirmed
+**expansion of the hypertrophic chondrocyte layer**, fully reversible on stopping — and ***"no disruption in
+longitudinal growth… gaining approximately 6 cm while on study."*** **The terminal step slowed while flux
+and volume carried on.** F-R057's "VEGF blockade is a pure banking agent that costs rate" was drawn from
+Gerber's ligand trap (which abolishes VEGF-A entirely); a receptor-level partial blockade behaves
+differently.
+
+---
+
 ## 3. What is missing — ranked by how much it costs us
 
-### 3.1 Nothing in the stack touches terminal domain volume — *the biggest hole*
+### 3.1 Terminal domain volume — **partly addressed after all** (corrected F-R060)
 
-`v(d)` carries **2.67×** of the natural range, and it is the half of the identity the stack does not
-address at all. Two sub-levers, both untouched:
+`v(d)` carries **2.67×** of the natural range and **6.8× measured human headroom**. F-R058 and F-R059 both
+said nothing in the stack touches it and that **no agent raises terminal chondrocyte volume in a mammal**.
+**Both were wrong, and the counter-example was the first drug in the stack:** FGFR3 inhibition produces
+*"significant swelling of hypertrophic cells"* with HZ **+45%** against PZ +25%. **The volume lever is
+occupied by erdafitinib.** What remains genuinely untouched:
 
-**Cell volume `v(c)`.** NKCC1, NHE1 and AE2 are each **necessary** — blocking any one costs 35–70% of
-longitudinal growth — and **not one has been shown sufficient to increase volume.** There is no published
-pharmacological agent that raises terminal chondrocyte volume in a mammalian growth plate. Local IGF-1 →
-Cooper's Phase 3 is the only positive-direction mechanism in the literature, and it comes from a
-conditional knockout read backwards.
+**Cell volume `v(c)` — occupied, but unmeasured in wild-type.** Erdafitinib's class raises it; **the
+measurement exists only in FGFR3 gain-of-function models**, where it may be deficit-normalisation. TYRA-300
+proved the **length** gain in wild-type (+8.2% femur, 4 weeks) and **did no histology.** *That one missing
+histology panel is the highest-value measurement in the branch.* NKCC1/NHE1/AE2 remain necessary-but-not-
+sufficient; GH→Nkcc1 remains a one-study hypothesis.
 
 **Matrix per cell `v(m)`.** **32–49% of daily elongation** — larger than cellular enlargement in slow plates
 — and this branch has **never once addressed it.** Breur: matrix volume per cell is essentially
