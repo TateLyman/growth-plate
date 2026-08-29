@@ -14,10 +14,10 @@ ledger.
 
 | agent | dose | arm | what it actually does to the identity |
 |---|---|---|---|
-| **erdafitinib** | **8 mg** | **three jobs, not one (F-R060)** | (1) flux — PZ **+25%** in Fgfr3 cKO; (2) **terminal cell volume** — *"significant swelling of hypertrophic cells"* (infigratinib, JBMR 2024), HZ **+45%**; (3) **the closure step** — lowers **ERK1/2**, the same node phosphate→VEGFR2→caspase-9 uses to kill the terminal chondrocyte. **Works in wild-type: TYRA-300 gave femur +8.2%, tibia +6.4% in 4 weeks.** |
+| **erdafitinib** | **8 mg** | **three jobs, not one (F-R060)** | (1) flux — PZ **+25%** in Fgfr3 cKO; (2) **terminal cell volume** — *"significant swelling of hypertrophic cells"* (infigratinib, JBMR 2024), HZ **+45%**; (3) **the closure step** — lowers **ERK1/2**, the same node phosphate→VEGFR2→caspase-9 uses to kill the terminal chondrocyte. **Works in wild-type: TYRA-300 femur +8.2%, tibia +6.4% in 4 wk; and the FDA tox package shows growth-plate thickening in NORMAL rats (≥1 mg/kg) and dogs (3 mg/kg).** **But see F-R061: at oncology doses it raises serum phosphate, which drives the very death signal it otherwise suppresses. The 8 mg label dose is titrated INTO phosphate 5.5–7.0 mg/dL.** |
 | **somatropin (GH)** | **2 IU/day** | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. Separately, 2 IU sits on the **physiological** side of the GH stem-pool sign flip (§3.8). **And a third candidate role as of F-R059:** GH **normalises terminal chondrocyte volume** in uremic rat via proposed Nkcc1 + Igf1 — the only half of the identity nothing else touches. One study, deficit-normalisation not supranormal gain; carried as a hypothesis. |
 | **abaloparatide** | **80 µg** | structural — now with a mechanism | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). For the **mechanical envelope** — and F-R060 gives the reason: *Fgfr3*-null mice show **increased femur length with decreased BMD**, and aromatase loss gives **increased osteoid and low phosphate**. **SCFE is the mechanical shadow of the effect we want, not an incidental toxicity.** |
-| **serum phosphate** | **monitored + repleted** | **new, non-optional (F-R060)** | Oestrogen ablation predictably lowers it via adipose aromatase → renal NaPi2a/2c. The same fall that helps the plate stay open undermineralises the bone holding it. **Repletion decouples them.** |
+| **serum phosphate** | **held at LOW-normal** | **sign reversed in F-R061** | F-R060 predicted oestrogen ablation would *lower* it and cause rickets. **Backwards for humans:** oestrogen ablation **raises** phosphate (Uemura TmP/GFR +28.5% on GnRH-a; Zhang NHANES n=7,005, 3.83 vs 3.98 mg/dL, P<0.001; rat NaPi-IIa mechanism). **And erdafitinib raises it on-target (89% of patients).** Both stack arms push phosphate UP, and **phosphate is the executioner's ligand.** Requirement: **binders to a normal target, not the oncology target of 7.0.** |
 | **oestrogen / other side** | — | **deliberately unbuilt** | Standing instruction, plus a second reason as of F-R057 (§4). |
 
 ---
@@ -123,6 +123,36 @@ differently.
 
 ---
 
+## 2c. The counter-move inside erdafitinib (F-R061)
+
+| via | terminal apoptosis | for us |
+|---|---|---|
+| FGFR3 → **ERK1/2 ↓** | suppressed | **delays closure — wanted** |
+| FGF23 resistance → **phosphate ↑** → VEGFR2 → **ERK1/2 ↑** → caspase-9 | promoted | **accelerates closure — against us** |
+
+**The same drug hits the same kinase with opposite signs.** Invisible until F-R060 named the executioner.
+
+**They separate by ~10× in dose:**
+
+| effect | normal rat | normal dog | ACH children |
+|---|---|---|---|
+| growth-plate thickening | **≥1 mg/kg** | 3 mg/kg | — |
+| growth effect | — | — | **0.25 mg/kg → +3.38 cm/yr** |
+| hyperphosphatemia | **10 mg/kg only** | — | **0 events at 0.25 mg/kg** |
+| fracture + bone loss | — | **3 mg/kg** | — |
+
+*"Hyperphosphatemia does not occur at the low doses of infigratinib that show activity in vivo."*
+**Past the threshold you stop buying plate effect and start buying phosphate, which works against you.**
+This is why F-R046's "threshold, not gradient" plateau at 0.25 mg/kg exists.
+
+**Open decision (F-R061 §4.3):** all low-dose growth data is **infigratinib**; the stack specifies
+**erdafitinib 8 mg**, an oncology dose with no growth-plate dose–response and a deliberate phosphate target
+of 5.5–7.0 mg/dL. **No published mapping between the two exists and I will not guess one.** Either dose the
+FGFR3 arm low with phosphate held at low-normal, or substitute infigratinib at the PROPEL 2 dose, which is
+the only agent with a paediatric growth-plate dose–response behind it.
+
+---
+
 ## 3. What is missing — ranked by how much it costs us
 
 ### 3.1 Terminal domain volume — **partly addressed after all** (corrected F-R060)
@@ -133,10 +163,12 @@ said nothing in the stack touches it and that **no agent raises terminal chondro
 *"significant swelling of hypertrophic cells"* with HZ **+45%** against PZ +25%. **The volume lever is
 occupied by erdafitinib.** What remains genuinely untouched:
 
-**Cell volume `v(c)` — occupied, but unmeasured in wild-type.** Erdafitinib's class raises it; **the
-measurement exists only in FGFR3 gain-of-function models**, where it may be deficit-normalisation. TYRA-300
-proved the **length** gain in wild-type (+8.2% femur, 4 weeks) and **did no histology.** *That one missing
-histology panel is the highest-value measurement in the branch.* NKCC1/NHE1/AE2 remain necessary-but-not-
+**Cell volume `v(c)` — occupied, and now confirmed in wild-type (F-R061).** The published literature has
+histology only in FGFR3 gain-of-function models (where TYRA-300's authors call the endpoint *"more similar
+to a wild-type growth plate"* — normalisation). **The FDA infigratinib tox package supplies the wild-type
+answer: dose-dependent growth-plate thickening in normal rats from 1 mg/kg and normal dogs at 3 mg/kg.**
+Per-cell volume in wild-type is still inferred rather than measured (HZC-count-in-fixed-ROI is the ACH-model
+proxy). NKCC1/NHE1/AE2 remain necessary-but-not-
 sufficient; GH→Nkcc1 remains a one-study hypothesis.
 
 **Matrix per cell `v(m)`.** **32–49% of daily elongation** — larger than cellular enlargement in slow plates
