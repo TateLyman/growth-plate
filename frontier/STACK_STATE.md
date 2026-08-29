@@ -93,6 +93,60 @@ needs no τ assumption.
 
 ---
 
+## 1. THE CLOCK IS A CHROMATIN DIVISION-COUNTER (F-R067) — and this is the governing constraint
+
+***Nature*, "Intestinal stem cells count self-renewal divisions to switch multipotency":** ISCs count
+**eight divisions** via *"antagonistic histone modifications: TrxG-dependent active marks (**H3K4me3** and
+H3K36me3) progressively **decline**, whereas Polycomb repressive marks accumulate during successive
+divisions."* **Same mark, same direction, as Lui's growth-plate programme, in an independent tissue.**
+
+```
+growth -> divisions -> H3K4me3 erasure at the growth-gene set -> senescence
+```
+
+> **Self-renewal ADVANCES the counter, it does not reset it.** Both daughters inherit the parent's advanced
+> state. **So mTORC1 pool expansion buys cell NUMBER, not remaining CAPACITY.** F-R066's 2.5x is real and
+> does not by itself buy "infinite."
+
+**Demonstrated: the counter can be PAUSED** (tryptophan restriction delayed the programme; dexamethasone
+banks, 88% -> 14% fusion). **Not demonstrated: any reset.** The fly counter resets at division nine, so
+resets exist in nature; the mammalian growth-plate reset is unknown.
+
+**Therefore the only target that attacks the counter rather than feeding it is the ERASER.** H3K4me3 is
+removed by **KDM5/JARID1**. **CPI-455**: pan-KDM5, **IC50 10 nM**, **>200x selective**, *"elevated global
+levels of H3K4 trimethylation."* **KDM5A inhibition is pro-osteogenic in vivo** (rescued bone loss in
+osteoporotic mice). **Human direction check: Kabuki syndrome (KMT2D loss = less H3K4me3) -> "precocious
+chondrocyte differentiation disrupts skeletal growth" -> short stature.**
+
+> **KDM5 inhibition on skeletal growth is UNTESTED and is now the highest-value experiment in the programme.**
+
+## 1a-0. THE BEST AGENT FOUND: KY19382 / CXXC5 (F-R067)
+
+**Kim et al., *EMBO Mol Med* (PMC6458850).** **CXXC5 is the mediator of oestrogen-induced growth-plate
+senescence** — a Wnt/beta-catenin negative regulator binding DVL's PDZ domain, **induced by oestrogen**,
+rising in all three zones during senescence, suppressing FGF18/IHH/PTHrP. **Cxxc5-/- mice: oestrogen-derived
+senescence abolished, longer tibiae.** **It sits downstream of the receptor — blockable without ablating
+oestrogen.**
+
+**KY19382** (CXXC5-DVL IC50 1.9e-8 M; GSK3beta IC50 1e-8 M), **0.1 mg/kg i.p. daily:**
+
+| | 7-wk-old (LATE puberty, already senescing) | 3-wk-old |
+|---|---|---|
+| plate height | **significantly increased** | increased, every zone |
+| **prolif + hypertrophic cells/column** | **BOTH increased, P<0.0005** | increased |
+| **TRAP+ resorption foci** | **ELEVATED** | unchanged |
+| **10 wk dosing (3->13 wk)** | **tibiae significantly longer, P<0.0005** | no weight/liver/cartilage abnormality |
+
+**Passes the F-R064 test explicitly: TRAP+ resorption ROSE — the plate converts faster, it does not
+accumulate.** Raises **both** factors of the identity in the same animals. **19 other pathways unchanged;
+effects abolished by Ctnnb1 siRNA.** **No other agent in this branch does this.**
+
+**Tension to watch:** F-R034's niche is WNT-antagonist-high and that state *preserves* the pool; KY19382
+activates Wnt globally. Compartmental resolution (WNT-low in niche, high in columns), but **whether chronic
+dosing eventually drains the niche is untested** — Newton's vismodegib result is the shape of that risk.
+
+---
+
 ## 1a. THE POOL AGENT EXISTS (F-R066) — four rounds of "nothing renews n0" were wrong
 
 **Newton, *Nature* 2019;567:234.** Chondrocyte-specific **Tsc1 ablation** = constitutive mTORC1 activation:
