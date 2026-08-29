@@ -10,7 +10,75 @@ ledger.
 
 ---
 
-## 0. **F-R085 — THE ENGAGEMENT BRACKET, MANDATORY LOCAL DELIVERY, AND THE FINAL AUDIT**
+## 0-NEW. **F-R086 — SYSTEMIC IS VIABLE, AND THE OBTAINABLE STACK**
+
+### ⇒ **RETRACTED: F-R085's "local delivery is mandatory."** My argument was that DNMT3A-deficient HSCs
+outcompete WT. **Clonal selection requires DIFFERENTIAL fitness; a drug inhibits every cell equally and
+creates no differential.** And the empirical test is already run at scale, the other way:
+**DNMT3A-mutant AML gets 75% CR on decitabine vs 34% WT**; **DNMT3A^R882H HSCs are hypersensitive to
+azacitidine via a viral-mimicry response → apoptosis**; azacitidine helped survival **solely** in R882
+carriers. **Hypomethylating agents KILL DNMT3A-mutant clones, they do not expand them. SYSTEMIC IS THE ROUTE.**
+
+### ⇒ HARD NEGATIVE: no obtainable DNMT3A-selective agent exists
+| agent | status | target | verdict |
+|---|---|---|---|
+| azacitidine/decitabine | approved | deplete **DNMT1** | **contraindicated** |
+| **hydralazine** | approved; demethylation trials at **83 mg/d slow / 182 mg/d fast acetylators** | *"partial competitive inhibitor of **DNMT1**"* | **contraindicated — wrong enzyme** |
+| DY-46-2 (IC50 0.39 uM, 33x over DNMT1) | **research probe only** | DNMT3A | **not obtainable** |
+
+> ### **Every obtainable DNMT inhibitor targets DNMT1 — the enzyme we must PRESERVE (`Dnmt1^ΔPrx1` bone
+> <50%). The writer cannot be drugged. The output can still be moved from the ERASER side.**
+
+### ⇒ THE ERASER ROUTE — and it was already the validated half
+F-R080: OSK's cartilage benefit runs through **TET2, *"identified as a pivotal factor."*** TETs are
+**Fe(II)/alpha-ketoglutarate dioxygenases with ascorbate as cofactor** — both obtainable. Human dose-response
+exists: **plasma ascorbate correlates with leukocyte 5hmC** (upper vs lower quartile, significant);
+~50 uM optimal, <11.4 uM deficient. **Reaches the same output as DNMT3A inhibition without touching DNMT1.**
+
+### ⇒ **AKG DOES WHAT CCN2 WAS PROMOTED FOR — IN A PIG, FROM A SUPPLEMENT**
+Dietary AKG 10 g/kg diet, piglets from 30 d, 21 d, n=8/group:
+
+| readout | control | AKG | change | p |
+|---|---|---|---|---|
+| **tibia length** | 114.27 mm | **118.89** | **+4.0%** | **0.015** |
+| femur length | 124.17 | 127.98 | +3.1% | 0.109 |
+| **femur BMD** | 0.75 | **0.83** | **+10%** | **0.026** |
+| **tibia BMD** | 0.52 | **0.59** | **+13%** | **0.008** |
+| **breaking force, both bones** | | | **up** | **<0.05** |
+
+> ### **Longer AND stronger, same animals — the exact property F-R085 called CCN2's unique contribution,
+> with BETTER evidence for the combination** (CCN2's length was P1 tibia n=3 with pQCT in a separate cohort).
+> **And AKG is the co-substrate of BOTH the TET dioxygenases AND prolyl/lysyl hydroxylase (the `v(m)`
+> collagen step). One compound, both new arms.**
+> **CONFOUND, not buried: feed intake +10%, ADG +13%. No growth-plate histology. One dose, 21 d, n=8.**
+
+### ⇒ **THE OBTAINABLE STACK**
+| # | agent | dose | status | arm |
+|---|---|---|---|---|
+| 1 | **erdafitinib** | **8 mg** PO daily | **approved** | flux, `v(c)`, lowers ERK1/2 |
+| 2 | **somatropin** | **0.07 mg/kg/day** | **approved** | AKT rescue; IGF-1→mTORC1 pool |
+| 3 | **anastrozole** | **1 mg** PO daily | **approved** | **the deadline arm** |
+| 4 | **abaloparatide** | **80 ug** SC daily | **approved** | cortical envelope — **REINSTATED** (F-R085 demoted it for CCN2, which is not obtainable) |
+| 5 | **calcium alpha-ketoglutarate** | **~2 g/day** PO | **supplement** | **TET co-substrate + prolyl-hydroxylase co-substrate — stands in for BOTH the DNMT3A and CCN2 arms** |
+| 6 | **ascorbate** | **~500 mg/day divided** (plasma ~70-80 uM; oral absorption saturates) | **supplement** | TET cofactor + collagen reductant |
+| 7 | serum phosphate | **age-normal**, monitored | — | permissive for the junction |
+
+**REMOVED:** selective DNMT3A inhibition (**no obtainable agent**); CCN2 gene therapy (not obtainable — its
+three jobs split to AKG+ascorbate, abaloparatide, and the matrix arm); intra-epiphyseal delivery (no longer
+required, and unavailable).
+
+### ⇒ NEW HOLES
+1. **HIGHEST — the setpoint arm is now an APPROXIMATION.** DNMT3A inhibition is worth **+3.0 SD**; the TET
+   arm reaches the same output by a weaker route with **no growth-plate dose-response**. **The largest lever
+   has been replaced by its cheapest proxy and the magnitude is unknown.**
+2. **Ascorbate promotes chondrocyte differentiation via matrix→ERK** — wrong direction for retention.
+   **Partially self-cancelling: erdafitinib lowers ERK1/2.** Untested as a combination.
+3. AKG pig result confounded by intake; no plate histology.
+4. AKG dose translation (1% of piglet diet vs 2 g/day human) unbridged.
+5. High-dose ascorbate *"tended to increase oxidative damage"*; F-R003's redox axis says the plate is sensitive.
+6. **TET1 inhibition prevents OA** — TET activation is not uniformly benign in cartilage.
+
+## 0. **F-R085 — THE ENGAGEMENT BRACKET, AND THE FINAL AUDIT** *(its §2 "local delivery mandatory" is RETRACTED above)*
 
 **Tovy 2020 *Cell Stem Cell* 27:326 — the mosaic DNMT3A carrier, per tissue:**
 
