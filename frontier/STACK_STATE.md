@@ -216,6 +216,40 @@ decelerates, and goes linear at about the age growth stops.** That is the growth
 **fitted empirical necessity**, because a linear model does not fit children. *(Shape correspondence, not
 causal proof: growth co-occurs with everything else developmental, and these clocks are mostly blood-trained.)*
 
+## -1c-v. THE PACING LAW NOW HAS HUMAN COHORT SUPPORT (F-R075)
+
+**Simpkin et al., *Int J Epidemiol* 2017;46:549 — ALSPAC, n=1,018**, methylation at birth / 7 y / 15-17 y.
+**Epigenetic age acceleration at age 7, per 1 year:**
+
+| outcome | effect |
+|---|---|
+| **average height across childhood** | **+0.23 cm** (0.04-0.41, **p=0.018**) |
+| **subsequent height growth velocity** | **-0.031 cm/yr** (-0.057 to -0.005, **p=0.021**) |
+
+> ### Epigenetically **older** at seven = **taller already, then growing more slowly.** The budget model made visible. **The opposite-sign pattern is the discriminator:** nutrition/SES confounding makes children taller AND keep growing well — **same sign**. A drawn-down conserved quantity gives **opposite signs**, which is what is observed.
+
+**Honest counterweights:** age at **peak height velocity is NULL** at all three timepoints (r=0.006/0.014/0.014)
+— defensible, since PHV is a *timing* variable and pacing concerns a *cumulative* one, but that is my
+argument not the authors'. **And fat mass shows the same opposite-sign pattern** (+1,321 g average, -112.5
+g/yr trajectory), which **weakens skeletal specificity**. Effect sizes are small; blood, not plate.
+
+**Three independent supports now:** Lui's tryptophan experiment (direct, rat, multi-organ), Horvath's
+log-below-20 structure (fitted necessity), ALSPAC (human, correct signature). **Supported, not proven.**
+
+## -1c-vi. THE HH ARRAY DATA EXISTS BUT WAS FILTERED (F-R075)
+
+**Suzuki et al.** ran **Infinium EPIC on 9 hypogonadotropic hypogonadism patients + 12 controls** (blood) —
+the delayed-fusion population. **But:** *"Probes known to show **aging-related** or sex-biased DNA methylation
+changes were also **excluded**"* — **their ref 14 is Horvath 2013. They removed the clock CpGs.** No HH
+epi-signature was found (clustering did not separate patients from controls).
+
+**Data availability:** *"has not been deposited into a publicly available repository. **Data will be made
+available on request**."* **The clock CpGs are present in the raw IDATs — the exclusion was analytical.**
+Computing DNAm age on 21 existing samples is a laptop-scale reanalysis. **Corresponding authors: Maki Fukami
+and Keiko Matsubara, National Research Institute for Child Health and Development, Tokyo.**
+**Must also request chronological ages and androgen treatment status — the paper reports neither, and if the
+patients are pre-pubertal the test is underpowered.**
+
 > ### THE CHEAPEST DECISIVE TEST IN THE PROGRAMME: **if growth paces the clock, the log-to-linear inflection should track FUSION and MOVE when fusion moves.** ESR1-null and aromatase-deficient men keep epiphyses open into their thirties. **Their DNAm age should stay logarithmic past 20 and lag chronological age.** If the clock is time-paced it goes linear at 20 like everyone else. **A single methylation array on stored blood from an already-identified patient. No tissue, no animal.**
 
 > **The animal version: resting-zone chondrocytes at a series of postnatal ages through the Petkovich or Stubbs

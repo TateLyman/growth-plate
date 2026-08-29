@@ -1,9 +1,8 @@
 # SUPPLIED MATERIALS INDEX
 
-**Every file Tate has supplied to this branch. GREP THIS BEFORE ASKING FOR ANYTHING.**
+**Every file Tate has supplied. GREP THIS BEFORE ASKING FOR ANYTHING.**
 
-**130 files.** Raw location this session: `/root/.claude/uploads/e8535f73-3f0e-5ef4-ad60-d18dfdab5c10/`
-(filenames there carry an 8-hex-char prefix; stripped below)
+**132 files.** `/root/.claude/uploads/e8535f73-3f0e-5ef4-ad60-d18dfdab5c10/` (8-hex prefix stripped below)
 
 | file | size |
 |---|---|
@@ -32,6 +31,7 @@
 | `pone.0067859.pdf` | 8051 KB |
 | `xie2021.pdf` | 3960 KB |
 | `R1.pdf` | 591 KB |
+| `main_27.pdf` | 1284 KB |
 | `nilsson2005.pdf` | 330 KB |
 | `Changes_in_cell_matrix_compartment_and_fibrillar_collagen__Kenneth_J__Noonan_Ernst_B__Hunziker_Julie_Nessler_Joseph__Journal_of_Orthopaedic__doi_10_1002_jor_1100160416__12baab4d423de185ed828f4091f.pdf` | 3071 KB |
 | `kaup11091068489.pdf` | 1330 KB |
@@ -108,6 +108,7 @@
 | `nihms619092.pdf` | 2975 KB |
 | `pdf_3.pdf` | 9040 KB |
 | `tatara2007.pdf` | 149 KB |
+| `mmc1.xlsx` | 4773 KB |
 | `newton2019_under_30MB.pdf` | 27690 KB |
 | `HMB_pig_series_1.pdf` | 12367 KB |
 | `fonc141399356_2.pdf` | 1815 KB |
@@ -140,7 +141,4 @@
 
 ---
 
-## Why this file exists
-
-I repeatedly asked Tate for papers he had already supplied — Newton 2019, Lui 2010, Nilsson 2005,
-Schrier 2006, trompet2024. Memory across 25+ turns is not an index. **Grep this manifest first.**
+I repeatedly re-asked for papers already supplied. Memory across 25+ turns is not an index. **Grep this first.**
