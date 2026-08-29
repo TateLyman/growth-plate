@@ -100,8 +100,12 @@ needs no τ assumption.
 > the age of the animal** from which the cells were harvested... the mechanisms limiting replicative
 > capacity **in vivo are distinct from those in vitro**."*
 
-**Cells from old animals divide as well as cells from young ones. The senescent plate is not made of
-exhausted cells. Hayflick/telomere exhaustion is EXCLUDED by direct experiment.** The limit is imposed
+**Sharper than the abstract (F-R072):** RZ chondrocytes **DO** undergo Hayflick in culture — plateau at
+**~14 population doublings**, with senescence-associated beta-galactosidase (vs 8-10 PD for adult rabbit
+articular, **35-40 for young adult human articular**). **But maximum PD did not depend on donor age
+(P=0.36).** **The cells have a finite intrinsic counter and living in an old animal does not spend it.**
+**Two clocks, not one:** the in-vitro Hayflick counter is real and untouched by in-vivo ageing; the in-vivo
+limit is separate and is what actually stops growth. The limit is imposed
 in vivo and is epigenetic. Baron's own conclusion: **"loss of DNA methylation might be a fundamental
 biological mechanism that limits longitudinal bone growth in mammals, thereby determining the overall adult
 size of the organism."**
@@ -122,19 +126,22 @@ number both fall with age; **dexamethasone decreased RZ proliferation AND slowed
 > rationale: it does not merely postpone the endpoint, **it makes every division cheaper in capacity.**
 > Joins CXXC5 — a transcriptional brake applied every cycle is exactly what a per-cycle cost term looks like.
 
-## -1b. THE DIRECTION PROBLEM FOR OSK (F-R071) — unresolved
+## -1b. THE DIRECTION PROBLEM FOR OSK — RESOLVED, dissolved (F-R072)
 
 | | direction |
 |---|---|
 | growth-plate senescence (Nilsson 2005, in vivo, global) | **methylation LOST** |
 | OSK in chondrocytes (F-R069) | **DNMTs down, TET2 up = drives DEmethylation** |
 
-**If senescence IS methylation loss, OSK's demonstrated mechanism pushes the same way as senescence.**
-Possible reconciliation: ageing = global hypomethylation **plus** focal hypermethylation at CpG islands and
-PRC2 targets; the 2005 assay was **global**, the clocks and the PRC2 convergence are **site-specific gains**.
-Both can be true and OSK may be correcting the focal component. **But nobody has run a site-specific
-methylation clock on growth-plate tissue, so this rests on an unexamined assumption.** The H3K4me3/bivalent
-evidence (F-R070) is more specific and points the right way — flagged, not resolved.
+**The methods section settles it.** Nilsson's assay is headed *"Assessment of **global** DNA methylation"* —
+**MspI/HpaII isoschizomer digestion at CCGG sites, 32P end-labelling, TLC**, reported as one genome-averaged
+percentage. **Zero site resolution.** It cannot distinguish global hypomethylation from focal PRC2-target
+hypermethylation, **so it cannot conflict with the clock data or the PRC2 convergence.** Objection withdrawn.
+
+**And the same assay contradicts itself across contexts:** growth plate in vivo **decreased**; **liver in
+vivo INCREASED (P<0.001)**; **cultured RZ chondrocytes INCREASED +0.21%/population doubling (P=0.012)**.
+A measure that moves in opposite directions by tissue and in vitro/in vivo is a context-dependent aggregate,
+not a clock.
 
 ## -1c. DELIVERY — exhausted, gap confirmed and sharpened (F-R071)
 
@@ -149,6 +156,41 @@ little as 4 days"* **before** teratomas; **cyclic 2-on/5-off ran 35 weeks safely
 **8 cycles at two copies caused teratomas in liver, kidney, pancreas**. **Cyclic OSKM drives proliferation
 of beta cells and satellite cells — it works in dividing compartments.** Design must be cyclic, single-copy,
 dose-controlled.
+
+---
+
+## -1d. RETRACTED: the 11 pg/mL "threshold" (F-R072)
+
+Since F-R047 the branch treated **11 +/- 2 pg/mL** as the oestradiol level at which RZ self-renewal is
+suppressed. **Its actual source:** Schrier gave **estradiol cypionate 70 ug/kg i.m. weekly x2 weeks** and
+measured *"serum estradiol... was **11 +/- 2 pg/mL**, compared to **<5 pg/mL** in animals treated with the
+vehicle."* **That is one achieved concentration in one experiment. No dose-response. Nothing tested at 7,
+15 or 30.** **Two points, not a threshold.**
+
+**Consequence:** the anastrozole-vs-letrozole argument in F-R063/R065 partly rested on which agent "clears
+the threshold." **That framing is unsupported.** What survives: less oestrogen is better, both agents get
+well below the tested level, and **the decision rests on outcome data** (anastrozole +1.0 vs letrozole
++0.5 cm PAH; velocity and IGF-1 preserved) — where F-R063 landed anyway.
+
+## -1e. THE POOL COLLAPSES BEFORE FIVE WEEKS (F-R072)
+
+**Schrier, RZ BrdU labelling index, distal femur:** fetal **95.6 +/- 0.8%** -> 5 wk **9.2 +/- 1.2%** ->
+9 wk 9.2% -> 17 wk 7.6%. **A ten-fold collapse before five weeks, then flat.** RZ cell number per mm also
+fell (P<0.001, all regions).
+
+**And the banking dissociation, measured:**
+
+| | RZ labelling index | **RZ cell number** |
+|---|---|---|
+| **dexamethasone** 0.5 mg/kg/d | decreased (P<0.001) | **INCREASED (P=0.016)**, in the **reserve** RZ (P<0.001) |
+| **estradiol cypionate** 70 ug/kg/wk | decreased (P=0.011) | **not affected** |
+
+**Both slow division; only dexamethasone increases cell number.** That is banking vs braking, and it is the
+direct evidence behind the per-cycle-cost escape (F-R071).
+
+> **The constraint this creates:** if ~90% of the RZ proliferative collapse precedes five weeks in rabbit,
+> pubertal interventions act on an already-mostly-spent compartment. **That raises the value of anything
+> that RESTORES over anything that PRESERVES — an argument for the reprogramming arm over the banking arm.**
 
 ---
 
