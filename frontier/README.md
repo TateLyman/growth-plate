@@ -2906,3 +2906,71 @@ regulators as a determinant of organism size in mammals."*
 epiphysiodesis**. **Two countries, two deliberate interventions to stop growth — and both still finished
 above +3 SD.** The programme's entire difficulty is manufacturing what these children had to be treated to
 prevent.
+
+---
+
+## The fifty-second summary — F-R082: the clock and the height lever are the same molecule
+
+**Both F-R081 asks answered, and the answer collapses two of the branch's problems into one.**
+
+**The mouse question is settled in both directions.** `Dnmt3a^R878H/+` mice have **significantly longer
+femurs** at 210 days (Smith, *Nat Commun* 2021, n=4 pairs) — normal at birth, diverging only after 100 days.
+Bell-Hensley (*Bone* 2024) adds tibial overgrowth in both TBRS models and, crucially, the mechanism:
+**the proximal tibial growth plate is significantly thicker in juvenile mutants, the thickening is not
+zone-specific, and PCNA⁺ cell density and size are unchanged.** **A thicker plate with unchanged
+proliferation puts the gain in `v(d)` or duration, not flux** — the same compartment F-R058's identity
+says holds the largest untapped headroom.
+
+**And the gain-of-function mouse is the mirror.** `Dnmt3a^W326R/+` (Jackson lab, *Nat Genet* 2026):
+**median lifespan 12.8 months against an expected 26–29 — halved**; postnatal growth failure; osteoporosis
+at 6 months; and **growth plate thickness reduced at 10–12 months.** **The growth plate reads this axis in
+both directions, in mice, measured. F-R079 said that had never been done; it has now been done twice from
+opposite ends.**
+
+**Then the finding that unifies the programme.** That 2026 paper built a clock from the **2,646 CpGs that
+DNMT3A gain-of-function hypermethylates** and tested it against the **332 Horvath clock CpGs** in **5,085
+people from Generation Scotland**. The HESJAS sites track chronological age *"performing just as well as the
+CpGs used to derive Horvath's."*
+
+> **The sites DNMT3A hypermethylates are the sites the epigenetic clock reads.** The clock is not a passive
+> correlate of time — it is substantially **a record of DNMT3A activity at Polycomb domains**, and that
+> activity **causally reduces stem-cell output.** The senescence clock, the pool term, the imprinted network,
+> Lui's H3K4me3 loss at bivalent promoters, and the height lever are one axis.
+
+**The human mirror is complete at the methylation level too.** Smith's WGBS on 11 DOS patients found **focal
+hypomethylation — 2,209 DMRs, all hypomethylated**, with the **HOXB cluster** as the worked example. Heyn
+found **Hoxc13 hypermethylated** in the gain-of-function mice. Same Polycomb domain class, opposite
+directions, opposite growth phenotypes.
+
+**But the round also found the largest liability in the arm.** The `Dnmt3a` mutant mice have **thinner
+cortical bone and significantly lower stiffness, yield load and maximum load** — and **normalising for
+cross-sectional area does not remove it**, so it is a material deficit, not a thinner tube. Tissue mineral
+density, osteoblast activity and osteoclast number are all unchanged; the mechanism is unresolved, and the
+authors recommend adding bone density and quality testing to clinical assessment of TBRS patients.
+
+> **That is §3.6's mechanical ceiling appearing inside the DNMT3A lever — and it makes F-R078's CCN2 result
+> load-bearing rather than incidental.** CCN2 over-expression raised **cortical thickness (0.060 vs 0.049 mm)
+> and total mineral content (1.36 vs 1.10 mg/mm)** while lengthening bone. **The same variables, opposite
+> signs. CCN2 is the measured counter to the measured liability.**
+
+*(A caveat that may dissolve the liability entirely: these are missense alleles and R878H is a dominant
+negative. The authors note prior work in which "partial loss of Dnmt3a may increase cortical thickness."
+Nobody has compared nonsense with missense skeletons, and human TBRS has both.)*
+
+**And the two enzymes are not symmetric.** From the full Dnmt1 PDF: at 16 weeks `Dnmt1^ΔPrx1` bone length is
+**less than half** of control. `Dnmt3a` heterozygotes get *"a small significant increase."* **"Preserve
+DNMT1" is a hard constraint; "lower DNMT3A" is a titratable gain** — which is why any global hypomethylating
+agent trades a catastrophic loss for a modest one.
+
+**What this does not deliver, stated plainly.** TBRS patients reach **+3.0 SD and then stop.** DNMT3A loss
+**raises the setpoint and the rate; it does not remove the endpoint.** The endpoint is a separate arm and the
+branch already has it — F-R065's finding that oestrogen ablation prevents fusion in humans outright.
+**DNMT3A inhibition raises the ceiling; oestrogen ablation removes the deadline. Neither alone is unbounded;
+together they are the closest this programme has come to the three-term goal.**
+
+**One tension I am not smoothing over.** Heyn 2019 said hypermethylation skews progenitors *"towards
+differentiation away from self-renewal"* — pool depletion, the branch's `a > b`. The 2026 paper from the
+same laboratory says **"HSC and early progenitor numbers remain constant"** with output reduced and Polycomb
+targets not de-repressed, proposing instead that methylation **"impairs transcriptional activation dynamics
+during differentiation."** Number preserved, output reduced — that is flux, not `n₀`. The two papers
+disagree, and the later, better-powered one says output.

@@ -126,6 +126,68 @@ number both fall with age; **dexamethasone decreased RZ proliferation AND slowed
 > rationale: it does not merely postpone the endpoint, **it makes every division cheaper in capacity.**
 > Joins CXXC5 — a transcriptional brake applied every cycle is exactly what a per-cycle cost term looks like.
 
+## -1a-0. **THE CLOCK AND THE HEIGHT LEVER ARE THE SAME MOLECULE (F-R082)**
+
+**Jackson lab, *Nat Genet* 2026;58:1632 — the causal experiment the pacing law never had.**
+
+They built a clock from the **2,646 CpGs that DNMT3A gain-of-function hypermethylates** and tested it against
+the **332 Horvath clock CpGs** in **5,085 people (Generation Scotland)**. The HESJAS sites track age
+*"**performing just as well as the CpGs used to derive Horvath's**."*
+
+> ### **The sites DNMT3A hypermethylates ARE the sites the epigenetic clock reads.** The clock is not a
+> passive correlate of time — it is substantially **a record of DNMT3A activity at Polycomb domains**, and
+> that activity **causally reduces stem-cell output**. *"Age-related gains in DNAme predominantly occur
+> within Polycomb-marked domains"*; *"methylation at DMVs… accumulates in a time-dependent manner."*
+
+**THE GROWTH PLATE READS IT IN BOTH DIRECTIONS, IN MICE:**
+
+| | **DNMT3A LOSS** (Bell-Hensley, *Bone* 2024) | **DNMT3A GAIN** (Jackson 2026) |
+|---|---|---|
+| **growth plate** | **THICKER** (both R878H, P900L; not zone-specific; PCNA unchanged) | **THINNER** (10-12 mo) |
+| **bone length** | **longer femur** (Smith, n=4, 210d); tibia small but significant | **postnatal growth failure** |
+| trabecular | — | **osteoporosis at 6 mo** |
+| lifespan | — | **12.8 mo vs 26-29 — HALVED** |
+
+**Plate thicker + PCNA unchanged ⇒ the gain is in `v(d)` or duration, NOT flux.**
+
+**Human mirror complete at the methylation level:** Smith 2021 WGBS, 11 DOS patients — **focal HYPOmethylation,
+2,209 DMRs (R882) / 332 (non-R882), ALL hypomethylated**, worked example **the HOXB cluster**. Heyn found
+**Hoxc13 HYPERmethylated** in GOF mice. **Same Polycomb class, opposite directions, opposite growth.**
+
+### ⚠️ THE LIABILITY — LONGER BONES, WEAKER BONES
+
+`Dnmt3a` mutant mice: **thinner cortical bone** (femur AND tibia), **significantly lower stiffness, yield
+load, maximum load**; **normalised: reduced Young's modulus, yield stress, ultimate stress** — a **material**
+deficit, not just geometry. Brittleness, tissue mineral density, osteoblast activity and osteoclast number
+all **unchanged** — mechanism unresolved. Authors recommend **bone density and quality testing in patients**.
+
+> ### **This is §3.6's mechanical ceiling INSIDE the DNMT3A lever — and it makes F-R078's CCN2 finding
+> load-bearing:** CCN2 over-expression raised **cortical thickness (0.060 vs 0.049 mm) and mineral content
+> (1.36 vs 1.10 mg/mm)** while lengthening bone. **The same variables, opposite signs. CCN2 is the measured
+> counter to the measured liability.**
+
+**Caveat that may dissolve it:** these are **missense** alleles (R878H is a **dominant negative**), and the
+authors note prior work where *"partial loss of Dnmt3a may **increase** cortical thickness."* **True
+haploinsufficiency may carry no cortical penalty, and nobody has compared nonsense vs missense skeletons.**
+
+### THE TWO ENZYMES ARE NOT SYMMETRIC
+**`Dnmt1^ΔPrx1` at 16 weeks: bone length LESS THAN HALF of control.** `Dnmt3a` het: *"small significant
+increase."* **"Preserve DNMT1" is a hard constraint; "lower DNMT3A" is a titratable gain.** Any global
+hypomethylating agent (azacitidine, decitabine) trades a catastrophic loss for a modest gain.
+
+### WHAT IT DOES NOT DELIVER
+**TBRS patients reach +3.0 SD and STOP.** DNMT3A loss **raises the setpoint and the rate; it does not remove
+the endpoint.** **The endpoint is F-R065's arm — oestrogen ablation prevents fusion in humans (ESR1-null man
+growing at 28.5; aromatase-null at 31).** **DNMT3A raises the ceiling; oestrogen ablation removes the
+deadline. Neither alone is unbounded; together they are the closest to the three-term goal.**
+
+### TENSION, NOT SMOOTHED OVER
+Heyn 2019: hypermethylation skews progenitors *"towards differentiation away from self-renewal"* (pool
+depletion, `a > b`). Jackson 2026, same lab, better powered: *"**HSC and early progenitor numbers remain
+constant**… Polycomb-target genes are **not de-repressed**… could **impair transcriptional activation
+dynamics** during differentiation."* **Number preserved, output reduced — that is flux, not `n0`. The two
+papers disagree and the later one says output.**
+
 ## -1a. **DNMT3A — A HUMAN GENE WHOSE LOSS GIVES +3.0 SD OF HEIGHT (F-R080)**
 
 **The strongest lead in the programme. Bidirectional, human, monogenic, and the loss direction is the tall
