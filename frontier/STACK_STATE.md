@@ -93,6 +93,43 @@ needs no τ assumption.
 
 ---
 
+## 0. THE RESET — where "infinite" actually lives (F-R068)
+
+**The counter can be un-counted. Demonstrated in *Drosophila*, and a candidate exists in mammalian
+chondrocytes.**
+
+**Fly (the mechanism):** *"Adult ISCs... **receive Delta from EMCs/EEPs to maintain stemness and reset the
+division counter**."* Loss-of-function confirms it — Delta RNAi in the differentiated daughters
+**significantly reduced stem cell numbers**. **Renewal capacity is conferred by the cell's own progeny, not
+intrinsic to it.**
+
+**Mammalian growth plate has the same topology** — Ihh is *"a reverse signal from terminally differentiated
+chondrocytes... increasing PTHrP expression in the resting zone."* **But Hedgehog activation MOBILISES
+rather than resets:** RZ-confined Ptch1 deletion gives "patched roses," wider columns and plate hyperplasia,
+then *"drives resting zone chondrocytes into **transit-amplifying states**... and eventually **converts these
+cells into osteoblasts**"* which **leave the plate**. **Pool spending dressed as expansion.** This explains
+systemic SAG's failure (activation must be **RZ-confined**; Col2a1-creER did nothing), Haraguchi's slow
++4.5%, and the KY19382 niche-drain risk.
+
+**The actual reset candidate: OSK partial reprogramming, in chondrocytes** (*Exp Mol Med*, PMID 41786976).
+Partial reprogramming *"resets the epigenetic clock"* in mammals. By AAV in chondrocytes: **identity
+retained, no stemness gain**; **counteracts the osteogenic conversion** that Hedgehog drives; and **aged
+chondrocytes from human OA donors showed partial reversal to a more youthful state.** Delivery is **local**,
+which solves the compartment problem.
+
+> **This is the first candidate for the one thing "infinite" requires: clearing accumulated epigenetic
+> division memory in a mammalian chondrocyte.** **Not yet done in a growth plate, and no longitudinal-growth
+> measurement exists.** That is now the defining experiment of the programme.
+
+**Also settled in F-R068:** the fly counter's "precisely eight divisions" claim is **contested** by a
+*Nature* referee (neutral competition confounds the clone analysis — *"a fatal flaw"*), so F-R067's
+conservation law is **downgraded from measured to strongly indicated**. Lui's mammalian H3K4me3 decline
+stands independently. **KY19382 caveat:** its own reviewer was *"not convinced"* the effect runs through
+CXXC5-DVL rather than GSK3beta. **CKR-051 (CK Regeon) completed Phase 1** (NCT05833906, 52 healthy males) —
+but **transdermal**, dermatological indication.
+
+---
+
 ## 1. THE CLOCK IS A CHROMATIN DIVISION-COUNTER (F-R067) — and this is the governing constraint
 
 ***Nature*, "Intestinal stem cells count self-renewal divisions to switch multipotency":** ISCs count
