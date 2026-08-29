@@ -267,6 +267,49 @@ predictor):**
 
 **Ledger: four for, two against.** *For:* Lui tryptophan; Horvath log-below-20; ALSPAC opposite-sign;
 EPOCH rate/timing split. *Against:* EPOCH intrinsic-null; GH raw EAA direction.
+**SUPERSEDED IN BLOOD BY F-R077 — see -1c-viii.**
+
+## -1c-viii. I RAN THE CLOCK MYSELF. IN BLOOD IT IS CHRONOLOGICALLY PACED (F-R077)
+
+**ArrayExpress E-MTAB-13950** (Palumbo 2024, public, EPIC, 45 samples) is a 2x2 separating chronological age
+from developmental stage:
+
+| group | n | chron age | Tanner | bone age |
+|---|---|---|---|---|
+| CT_PP pre-pubertal controls | 14 | 7.83 | 1 | - |
+| **CPP** | **19** | **7.83** | **2 (2-3)** | **+1.69 +/- 1.00 y ADVANCED** |
+| CT_P pubertal controls | 12 | 14.55 | 3 (2-4) | - |
+
+**I computed Horvath 2013 (326/353 probes) and Horvath skin&blood 2018 (381/391) directly from the betas.**
+
+| | CPP - CT_PP (same age, +1.69 y bone age) | 95% CI | p |
+|---|---|---|---|
+| Horvath 2013 | +0.417 y | -0.915 to +1.750 | **0.528** |
+| **skin & blood** | **-0.016 y** | **-0.649 to +0.616** | **0.959** |
+
+**Positive control both clocks p ~ 1e-4.** Calibration: CT_PP 7.70 vs chron 7.83; CT_P 13.54 vs 14.55.
+**Not underpowered** - pooled SD 0.870 y gives 80% power at n=5/group for 1.69 y. Compression-corrected, a
+true 1.69 y advance should read +0.84 y; **CI tops out at +0.62, so it is EXCLUDED, not merely unfound.**
+
+**Reciprocal:** CPP vs CT_P (same Tanner, ~7 chron years apart) = **-3.353 y, p=7e-5.**
+
+> ### Match chronological age -> clocks agree. Match developmental stage -> 3.4 years apart. **In blood the clock tracks TIME, not development.**
+
+**Two clock-free confirmations from the same data:** (1) puberty axis built on controls only - CPP score
+**+0.204** on a 0->1 scale, **p=0.357**, LOO-stable; (2) Lui's imprinted network (1,299 EPIC probes,
+24 genes) - normal puberty moves **CDKN1C, MEIS1, PEG10, SGCE** at q<0.05; **CPP vs age-matched: NOTHING.**
+
+**Also settles Bessa vs Palumbo:** of 8,967 probes moving >10% between control groups, **91% LOSE methylation
+at puberty.** Palumbo's direction is right; Bessa's 450K/X-chromosome-dominated DMRs are not.
+**And it explains EPOCH:** the only positive there was **extrinsic** (cell-composition-sensitive) EAA;
+intrinsic was null, and my two intrinsic-type clocks are null. **The "EAA tracks pubertal development" signal
+is most likely leukocyte composition.**
+
+> ### **RETRACTED: F-R074 section 2's "cheapest decisive experiment" (a blood array on an ESR1-null man) and the Suzuki HH IDAT request in `data_request_suzuki_et_al.md`. DO NOT SEND THAT EMAIL.** A blood methylome that does not move for a 1.69-year bone-age advance in 19 children will not resolve delayed fusion in nine adults.
+>
+> **NOT retracted: Lui's tryptophan result.** That was rat growth plate and organ expression, not a blood
+> clock. **The pacing law survives; every cheap blood proxy for it is dead.** The measurement must be made in
+> physeal tissue - which makes F-R073 section 3 the only route left, not merely the best one.
 **The observational associations replicate; the one manipulation of growth did not reproduce them.**
 
 > **Consequence the branch had not confronted:** IGF-1 is the term that accelerated the clock, and the GH
@@ -581,6 +624,28 @@ GTL2/MEG3 outright is not rate-limited.**
 
 **Mouse dosage, the up direction:** Dlk1 at **2× → embryonic overgrowth**; at **3× → late-gestation lethal**
 with oedema and skeletal defects. Real effect, prenatal, window under one doubling wide. Not a lever.
+
+### 1c-ii. CORRECTED AGAINST THE PRIMARIES, AND THE HEIGHT GENE IS PROBABLY MEG3 (F-R077)
+
+**Two softenings.** (1) GnRHa-treated DLK1 girls reached **normal-range but NOT target** height — Dauber
+Table 1 shortfalls **−9.5, +1.2, +0.8, −6.0 cm** vs midparental target, mean **−3.4 cm**. "Recovers all of
+it" was too strong; it recovers most. (2) **Gomes argues a puberty-INDEPENDENT growth effect** — untreated
+DLK1 women mean **−3.1 SD**, worse than historical untreated CPP, and *"a null mouse model… resulted in
+decreased prenatal and postnatal growth… suggesting a potential direct effect of DLK1 on growth, independent
+of early puberty."* (Caveat I add: the two worst heights are women aged 56 and 63 scored on modern
+references — secular trend inflates that.)
+
+**But the deletion-size series is better than what F-R076 claimed:**
+
+| lesion (paternal) | genes | height | puberty |
+|---|---|---|---|
+| DLK1 exon 1 | DLK1 | −0.3 to −0.9 SD on GnRHa | **CPP, thelarche 4.6–5.9 y** |
+| 109 kb | DLK1 + MEG3 | **−2.9, −2.2 SD** | menarche 10y3m |
+| **411 kb** | + RTL1, MEG8, BEGAIN, WDR25 | **−4.4 SD** | **NORMAL menarche** |
+| mat UPD14 (Temple) | whole domain | −2.7 to −3.7 SD | CPP 89% |
+
+> ### **Stature scales with deletion size; puberty tracks DLK1. The largest lesion has the worst height and NORMAL menarche.** So the height gene at 14q32.2 is **not DLK1** — candidates are **GTL2/MEG3 (the other Lui-network gene at the locus)** and **RTL1**. A paternal DLK1+MEG3 deletion also removes the **IG-DMR**, converting the paternal allele to a maternal epigenotype — so these are imprinting-control lesions, not gene-count lesions.
+
 
 ## 1d. The core combination has been randomised (F-R065)
 

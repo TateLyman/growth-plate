@@ -2567,3 +2567,68 @@ IGF-1 roughly three-fold at **half** the stack's dose. **If IGF-1 paces the cloc
 accelerant, not a free choice.** That does not overturn the blast argument — F-R065 settled that the closure
 deadline it was racing is removable in humans — **but it prices it, and nobody has run the measurement that
 would settle the price.**
+
+---
+
+## The forty-seventh summary — F-R077: I ran the clock myself, and in blood it is chronologically paced
+
+**Tate supplied Dauber 2017 and Gomes 2019 as asked. He also supplied two papers I did not know to ask for,
+and one of them names a public dataset that answers the question the branch has been circling since F-R066.**
+
+Palumbo 2024's data-availability line reads: *"Raw methylation data and the normalized beta-values are
+available on ArrayExpress (E-MTAB-13950)."* **It is public. EPIC arrays. 45 samples. And the design is
+better than anything I had asked for:**
+
+| group | n | chronological age | Tanner | bone age |
+|---|---|---|---|---|
+| pre-pubertal controls | 14 | **7.83** | 1 | — |
+| **central precocious puberty** | **19** | **7.83** | **2 (2–3)** | **+1.69 ± 1.00 y advanced** |
+| pubertal controls | 12 | 14.55 | 3 (2–4) | — |
+
+**Same chronological age, 1.69 years of extra skeletal maturation.** I streamed the 625 MB beta matrix and
+computed the Horvath 2013 pan-tissue clock (326/353 probes) and the Horvath skin-&-blood clock (381/391)
+directly from the published coefficients.
+
+**The pipeline works:** pre-pubertal controls came out at DNAmAge **7.70** against a chronological 7.83;
+pubertal controls at **13.54** against 14.55. Positive control p ≈ 7×10⁻⁵.
+
+**The result:**
+
+| clock | CPP − age-matched controls | 95% CI | p |
+|---|---|---|---|
+| Horvath 2013 | +0.417 y | −0.915 to +1.750 | 0.528 |
+| **skin & blood** | **−0.016 y** | **−0.649 to +0.616** | **0.959** |
+
+**And it is not a power failure** — pooled SD 0.870 y gives 80% power to detect 1.69 y at n=5 per group.
+Correcting for the clock's compression, a true 1.69-year advance should read +0.84 y. **The confidence
+interval tops out at +0.62. It is excluded, not merely unfound.**
+
+**The reciprocal:** matched on *Tanner stage* instead, CPP and pubertal controls differ by **−3.353 years,
+p = 7×10⁻⁵**. Match the chronological age and the clocks agree; match the developmental stage and they are
+3.4 years apart. **In blood, the clock tracks time, not development.**
+
+**Two clock-free confirmations from the same data.** A puberty axis built on controls alone puts the CPP
+girls **one fifth** of the way along the normal transition (p = 0.36). And Lui's imprinted network — 1,299
+EPIC probes across 24 genes — moves with normal puberty (**CDKN1C, MEIS1, PEG10, SGCE** at q<0.05) and
+**not at all** in CPP versus age-matched controls.
+
+**It also settles a contradiction and explains a split.** Bessa 2018 and Palumbo 2024 disagree flatly on the
+direction of the pubertal methylation shift; on Palumbo's own probe-level data, **91% of the moving probes
+lose methylation at puberty** — Palumbo is right. And EPOCH's only positive was on **extrinsic** (blood-cell-
+composition-sensitive) age acceleration, with intrinsic null. **My two intrinsic-type clocks are null too.
+The "epigenetic age accelerates with puberty" signal is most likely leukocyte composition.**
+
+**What I had to retract is the part that matters.** F-R074 §2 called a blood array on an ESR1-null man *"the
+cheapest decisive experiment the programme has."* It is not decisive — it is not even sensitive. And the
+letter I drafted last round asking Fukami and Matsubara for the hypogonadotropic-hypogonadism IDATs is now
+marked **do not send**: it would be asking two researchers for their time to reproduce a negative at lower
+power. **Lui's tryptophan result is untouched — that was rat growth plate, measured by expression. The
+pacing law survives; every cheap blood proxy for it is dead, and the measurement has to be made in physeal
+tissue.**
+
+**On DLK1, the primaries corrected me twice.** GnRHa-treated girls reached normal-*range* height but not
+their own targets (shortfalls −9.5, +1.2, +0.8, −6.0 cm), and Gomes explicitly argues a puberty-independent
+growth effect that F-R076 denied. **But the deletion-size series is better than what I claimed:** DLK1-exon-1
+alone gives precocious puberty with near-normal height; a 411-kb deletion gives **−4.4 SD and normal
+menarche**. Stature scales with how much of the domain is lost; puberty tracks DLK1. **So the height gene at
+14q32.2 is not DLK1 — it is GTL2/MEG3 or RTL1, and MEG3 is the other Lui-network gene at that locus.**

@@ -1,5 +1,21 @@
 # Data request — Suzuki et al., HH methylation array
 
+> ## ⛔ DO NOT SEND — SUPERSEDED BY F-R077 (2026-08-29)
+>
+> **The question this letter was written to answer has been answered on public data.** ArrayExpress
+> **E-MTAB-13950** (Palumbo 2024) contains EPIC arrays on 19 girls with central precocious puberty whose
+> **bone age is advanced 1.69 ± 1.00 years** and 14 age-matched pre-pubertal controls. I computed the
+> Horvath 2013 and Horvath skin-&-blood clocks on it directly. **The difference was −0.016 years,
+> 95% CI −0.649 to +0.616, p = 0.959**, with a positive control at p ≈ 7×10⁻⁵ — tight enough to **exclude**
+> the bone-age advance rather than merely fail to find it.
+>
+> **A blood methylome that does not move for a 1.7-year bone-age advance in 19 children will not resolve
+> delayed fusion in nine adults.** Sending this letter would be asking two researchers for their time in
+> order to reproduce a negative at lower power. **The file is kept for the reasoning, not for use.**
+> See `R077_i_ran_the_clock_myself_and_it_is_chronologically_paced.md`.
+
+---
+
 **To:** Dr Maki Fukami and Dr Keiko Matsubara
 Department of Molecular Endocrinology, National Research Institute for Child Health and Development, Tokyo
 *(corresponding authors; addresses on the paper)*
