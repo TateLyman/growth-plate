@@ -644,7 +644,35 @@ references — secular trend inflates that.)
 | **411 kb** | + RTL1, MEG8, BEGAIN, WDR25 | **−4.4 SD** | **NORMAL menarche** |
 | mat UPD14 (Temple) | whole domain | −2.7 to −3.7 SD | CPP 89% |
 
-> ### **Stature scales with deletion size; puberty tracks DLK1. The largest lesion has the worst height and NORMAL menarche.** So the height gene at 14q32.2 is **not DLK1** — candidates are **GTL2/MEG3 (the other Lui-network gene at the locus)** and **RTL1**. A paternal DLK1+MEG3 deletion also removes the **IG-DMR**, converting the paternal allele to a maternal epigenotype — so these are imprinting-control lesions, not gene-count lesions.
+> ### **Stature scales with deletion size; puberty tracks DLK1.** So the height gene at 14q32.2 is **not DLK1 alone.**
+
+### 1c-iii. THE LOCUS IS CLOSED. IT IS RTL1, NOT MEG3, AND BOTH DIRECTIONS ARE SHORTER (F-R078)
+
+**Kagami 2008 (*Nat Genet* 40:237), the primary, supplied.** The **same 108,768-bp deletion gives opposite
+syndromes by parental origin** — maternal → Kagami-Ogata, paternal → Temple. This is an imprinting-control
+system, not gene dosage, and F-R077's gene-count reading was the wrong frame.
+
+**MEG3 is REFUTED, twice.** (i) It is **maternally expressed**, so a *paternal* deletion removes an already-
+silent allele and can contribute nothing to cases 9–11. (ii) *"**Gtl2^lacZ** mice… have a **normal
+phenotype** with at least **60–80% reduction of all the MEGs**."* **DIO3 refuted too** (no thyroid
+dysfunction in any case).
+
+**RTL1 is confirmed, by the authors:** *"loss of active **DLK1 and RTL1** seems to constitute **additive**
+underlying major factors… growth is more severely compromised in case 11, with **additional loss of active
+RTL1**."* Mouse: paternal **Dlk1** KO **~80%** of normal size; paternal **Rtl1** deletion **~80%**; **both
+~60%** (0.80 × 0.80 = 0.64).
+
+**And F-R076 §1 is now FULLY retracted, not softened:** *"the paternally derived Dlk1 mutation… result[s] in
+**pre- and postnatal growth deficiency**."* **DLK1 is both a timing gene and a growth gene.**
+
+| gene | loss | excess |
+|---|---|---|
+| **DLK1** | ~80% size, precocious puberty | 2× overgrowth; **3× late-gestation lethal** |
+| **RTL1** | ~80% size | 2.5–3× placental abnormality; human **bell-shaped thorax, coat-hanger ribs, growth retardation** |
+| MEG3 / all MEGs | **60–80% down → normal mouse** | — |
+| DIO3 | nothing | — |
+
+> ### **Every gene at 14q32.2 with a height effect has an optimum and both directions away from it are shorter.** **The locus is not a gain-of-height lever. Thread opened F-R065, closed F-R078 on primary data.**
 
 
 ## 1d. The core combination has been randomised (F-R065)
@@ -779,10 +807,16 @@ Per-cell volume in wild-type is still inferred rather than measured (HZC-count-i
 proxy). NKCC1/NHE1/AE2 remain necessary-but-not-
 sufficient; GH→Nkcc1 remains a one-study hypothesis.
 
-**Matrix per cell `v(m)`.** **32–49% of daily elongation** — larger than cellular enlargement in slow plates
-— and this branch has **never once addressed it.** Breur: matrix volume per cell is essentially
-age-invariant and *"may be predetermined"*; its regulators were *"largely unknown"* as of 1997. Whether
-that changed is an open question I have not yet answered.
+**Matrix per cell `v(m)` — ADDRESSED IN F-R078 after being untouched for the whole programme.**
+**32–49% of daily elongation**, larger than cellular enlargement in slow plates. Breur: matrix volume per
+cell is essentially age-invariant and *"may be predetermined"*; regulators *"largely unknown"* as of 1997.
+
+**The human loss-of-function gene is `ACAN`** — heterozygous aggrecan variants give autosomal dominant
+short stature with **advanced bone age and premature epiphyseal fusion**, histologically *"reduced
+hypertrophic cell expansion and decreased extracellular matrix volume."* **Halve the matrix, get a short
+child whose plate closes early.**
+
+**And a published gain-of-function lengthens bone: cartilage-specific CCN2 over-expression** — see §3.9.
 
 ### 3.2 And volume is what senescence and closure actually take
 
@@ -839,6 +873,12 @@ to do with risk tolerance. **Abaloparatide is plausibly the counter** — that i
 is an inference from Winer's safety data, **not a measurement**. Nobody has tested whether a bone anabolic
 protects a pharmacologically widened plate.
 
+> **F-R078 supplies the first measured counter-example, and it is not abaloparatide.** Cartilage-specific
+> CCN2 over-expression lengthened the neonatal tibia **+5.6%** AND raised femoral **total mineral content
+> (1.36 vs 1.10 mg/mm), trabecular mineral (0.49 vs 0.38) and cortical thickness (0.060 vs 0.049 mm), all
+> P<0.05**, in the same animals. **Longer and stronger together — the only agent in the programme that does
+> both.** See §3.9.
+
 ### 3.7 Link 11 is still open
 
 **Ovariectomy does not prevent fusion in the rabbit** — Weise (E2 < 5 pg/mL, distal tibia fused at 2–6 wk)
@@ -856,13 +896,55 @@ growth plates** (F-R056 §1).
 
 ### 3.8 Two dose items to reconcile
 
-- **GH: resolved, not merely "confirm which."** The two figures sit on opposite sides of a **sign flip the
-  authors state explicitly** — *"GH augments both stem cell number and activity **under physiological
-  conditions** but causes stem cell depletion **under pharmacological exposure**"* (F-R032). 2 IU/day
-  (≈0.067 mg/kg/wk at 70 kg) is physiological; **0.35 mg/kg/wk is ~5× higher and lands in the depleting
-  range.** The low dose is not a compromise — it is the side where GH adds to the pool while still
-  supplying the AKT tone erdafitinib requires.
+- **GH — CORRECTED IN F-R078. This paragraph contradicted §1 and had been stale since F-R066.** It used
+  to read that 0.35 mg/kg/wk *"lands in the depleting range"* on the strength of a mouse stem-cell paper
+  (F-R032: *"GH augments both stem cell number and activity under physiological conditions but causes stem
+  cell depletion under pharmacological exposure"*). **The only human outcome data at exactly that dose says
+  otherwise.** Muthuvel/Dauber, **rhGH 50 µg/kg/day = 0.35 mg/kg/wk**, 10 ACAN-deficient children, 3 years:
+  **height SDS +1.21 (P = 0.002), predicted adult height +6.8 cm (P = 0.002), IGF-1 SDS held at ~+2.3, and
+  bone age/chronological age ratio change −0.10 (P = 0.205, NOT significant)** — in a population already
+  prone to premature fusion. **Sustained gain, no maturation cost. §1's 0.07 mg/kg/day stands, and the
+  low-dose rationale stays withdrawn.**
 - **Erdafitinib 8 mg** sits inside the 5–9 mg window that has not produced SCFE. Consistent.
+
+### 3.9 CCN2 — the branch had the sign backwards (F-R078)
+
+**R341 killed CCN2 via pamrevlumab** (*"the published Ctgf-null phenotype is an EXPANDED hypertrophic zone…
+a DISCHARGE FAILURE… PAMREVLUMAB points the wrong way"*), and the p21/Gli1 work found the opposite sign in
+the stroma (*"p21⁺ chondrocytes generate a Ccn2-inhibiting area"*), amending the kill to **"not a *systemic*
+lever."** **Both analyses are about LOWERING it. Nobody asked what raising it does — and the branch's own
+reasoning implies the answer.**
+
+**Cartilage-specific CCN2 over-expression (Col2a1 promoter, two independent founder lines, PLoS One
+2013;8:e59226):**
+
+| readout | result |
+|---|---|
+| **tibial diaphysis P1** | **6.225 ± 0.080 vs 5.897 ± 0.116 mm — +5.6%, P < 0.0001** |
+| dose-dependence | correlated with transgene expression **in both founder lines** |
+| **proteoglycan density** | enhanced (Safranin-O) — **this is `v(m)`** |
+| Col2a1 / aggrecan mRNA | 100–1,000× / 15,000–20,000× |
+| proliferation | PCNA up in PZ **and resting zone** — flux, possibly `n₀` |
+| IGF | IGF-I/II mRNA up several-fold; **IGF-1R autophosphorylation enhanced** |
+| **bone strength** | **mineral content, trabecular mineral, cortical thickness all up, P<0.05** |
+
+**What it does NOT show:** the only length measurement is **P1 tibia, n=3**; *"12% larger at 8 weeks"* is
+**body size/mass, not bone length**; **adult bone length was never measured**; zone heights are qualitative
+(**HZ shorter** — a `v(c)` cost, since CCN2 *"promotes proliferation and differentiation but not
+hypertrophy"*).
+
+> **Complementarity:** CCN2 raises flux and `v(m)` and shrinks the HZ; **erdafitinib raises `v(c)`** (HZ +45%
+> vs PZ +25%, *"significant swelling of hypertrophic cells"*). **Opposite halves of `v(d)`; each one's cost
+> is the other's mechanism.** First genuinely complementary pairing in the stack.
+
+> **The design that follows:** **Col2a1-promoter AAV-CCN2 by the intra-epiphyseal route of F-R074** (Zhang
+> 2015 — 1 mm K-wire, 5.5×10¹¹ vp/mL, 25 µL, 12-week expression). **Promoter restriction solves the
+> compartment problem the branch identified; the route solves the delivery problem. Both halves exist and
+> nobody has combined them.**
+
+**Unreconciled conflict, flagged not resolved:** CCN2's classical inducer is **TGF-β**, while F-R034 has the
+resting-zone niche as *"low in WNT and TGF-β"* and F-R073's cocktail contains **Repsox (TGF-β/ALK5
+inhibitor)** mapped onto that axis. **A CCN2 arm and a Repsox arm pull against each other.**
 
 ---
 

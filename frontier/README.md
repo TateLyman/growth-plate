@@ -2632,3 +2632,81 @@ growth effect that F-R076 denied. **But the deletion-size series is better than 
 alone gives precocious puberty with near-normal height; a 411-kb deletion gives **−4.4 SD and normal
 menarche**. Stature scales with how much of the domain is lost; puberty tracks DLK1. **So the height gene at
 14q32.2 is not DLK1 — it is GTL2/MEG3 or RTL1, and MEG3 is the other Lui-network gene at that locus.**
+
+---
+
+## The forty-eighth summary — F-R078: the locus closes, the plate has its own clock, and I had CCN2 backwards
+
+**Kagami 2008 is the primary I asked for last round, and it corrects F-R077's own §7c.**
+
+The four deletions come with parental origin, and that is what makes the series work: **the identical
+108,768-bp deletion gives Kagami-Ogata when maternal and Temple syndrome when paternal.** This is an
+imprinting-control system, not gene dosage, and my gene-count reading was the wrong frame.
+
+**MEG3 is refuted twice over.** It is maternally expressed, so a *paternal* deletion removes an already
+silent allele — and *"Gtl2^lacZ mice… have a **normal phenotype** with at least 60–80% reduction of all the
+MEGs."* DIO3 too. **RTL1 is the second height gene, and the authors say so:** *"growth is more severely
+compromised in case 11, with additional loss of active RTL1."* In mouse: Dlk1 KO **~80%** of normal size,
+Rtl1 deletion **~80%**, both **~60%**.
+
+**And F-R076 §1 is now fully retracted rather than softened** — *"the paternally derived Dlk1 mutation…
+result[s] in pre- and postnatal growth deficiency."* DLK1 is a timing gene **and** a growth gene.
+
+> **But the useful conclusion is that the locus closes as a lever.** DLK1 at 2× overgrows and at 3× is
+> lethal; RTL1 in excess gives a bell-shaped thorax and coat-hanger ribs. **Every gene there with a height
+> effect has an optimum, and both directions away from it are shorter.** Four rounds on this locus,
+> excluded on primary data.
+
+**Nilsson I under-weighted, and re-reading it partially rescues the pacing law from my own null.** I
+dismissed it in F-R072 as a bulk assay. The assay is bulk; the **pattern** is the finding. In the same
+rabbits at the same ages: growth-plate resting zone **down** (P=0.004), all three ulnar zones **down**
+(P<0.001), **no difference between zones within an age**, **liver up** (P<0.001), cultured chondrocytes
+**up**. **The plate and the liver move in opposite directions in the same animal, and it is not the
+transit-amplifying divisions doing it.** F-R077 showed the blood clock is chronological; this shows the
+plate is not doing what the rest of the body does — **which is exactly why a systemic readout cannot see
+it, and it is the positive evidence that there is something in the plate worth measuring.**
+
+**Then I audited the ledger's own open terms, and the biggest one had a gene.** STACK_STATE §3.1 said of
+matrix volume per cell — **32–49% of daily elongation** — that *"this branch has never once addressed it."*
+The human loss-of-function is **ACAN**: heterozygous aggrecan variants give short stature with advanced bone
+age and premature fusion, *"decreased extracellular matrix volume."* **Halve the matrix, get a short child
+whose plate closes early.**
+
+**And the GH trial in those patients answers a worry I raised two rounds ago.** F-R076 §5 asked whether
+IGF-1 is the accelerant that makes the blast strategy costly. Ten ACAN-deficient children, three years of
+rhGH, IGF-1 SDS held at **+2.3**: height SDS **+1.21**, predicted adult height **+6.8 cm**, and **bone
+age/chronological age ratio change −0.10, not significant.** In a population already prone to premature
+fusion. **The blast argument survives a real test.**
+
+**The thing I most want on record is a sign error of my own.** The branch reached CCN2 twice and both times
+asked about *blocking* it — R341 killed pamrevlumab because Ctgf-null gives an expanded hypertrophic zone,
+i.e. discharge failure. **Nobody asked what raising it does, even though that reasoning implies the
+answer.** Cartilage-specific CCN2 over-expression: **tibia +5.6% at P1 (P<0.0001), dose-dependent across two
+independent founder lines**, enhanced proteoglycan density (**that is `v(m)`**), proliferation up in the
+proliferative **and resting** zones, IGF-I/II up with enhanced IGF-1R autophosphorylation — **and femoral
+mineral content, trabecular mineral and cortical thickness all up.**
+
+> **That last row matters more than the length.** §3.6 states the mechanical ceiling as a hard physical
+> limit — everything that widens the plate weakens it — and says abaloparatide is *"an inference, not a
+> measurement."* **CCN2 is the measurement: longer and stronger in the same animal. The only agent in the
+> programme that does both.**
+
+**What it does not show, stated because I nearly carried it forward wrongly:** the only length measurement
+is a **P1 tibia at n=3**; *"12% larger at 8 weeks"* is **body mass, not bone length**; **adult bone length
+was never measured**; and the hypertrophic zone was **shorter** — a `v(c)` cost. **Which is exactly why it
+pairs with erdafitinib**, which raises `v(c)` (HZ +45% vs PZ +25%). Opposite halves of `v(d)`; each one's
+cost is the other's mechanism. First genuinely complementary pairing in the stack.
+
+**And the compartment problem has a solution the branch already built.** CCN2 is height-positive inside
+cartilage and height-negative outside it, which is why R341's systemic kill was right. The published
+transgenic is **promoter-restricted**. **Col2a1-promoter AAV-CCN2 by the intra-epiphyseal route of F-R074 —
+both halves exist and nobody has combined them.**
+
+**One conflict I am flagging rather than resolving:** CCN2's classical inducer is TGF-β, while F-R034 has
+the resting-zone niche as *"low in WNT and TGF-β"* and F-R073's cocktail contains Repsox, a TGF-β inhibitor.
+**A CCN2 arm and a Repsox arm pull against each other.**
+
+**And one contradiction inside the ledger, now fixed.** §3.8 still argued that 0.35 mg/kg/wk GH *"lands in
+the depleting range"* while §1 carries 0.49 mg/kg/wk and calls the low-dose rationale withdrawn. The
+depleting claim came from a mouse stem-cell paper; the ACAN trial ran **exactly 0.35 mg/kg/wk in children
+for three years** with sustained gain and no maturation cost. **§3.8 corrected to agree with §1.**
