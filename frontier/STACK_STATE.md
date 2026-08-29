@@ -15,7 +15,7 @@ ledger.
 | agent | dose | arm | what it actually does to the identity |
 |---|---|---|---|
 | **erdafitinib** | **8 mg** | **three jobs, not one (F-R060)** | (1) flux — PZ **+25%** in Fgfr3 cKO; (2) **terminal cell volume** — *"significant swelling of hypertrophic cells"* (infigratinib, JBMR 2024), HZ **+45%**; (3) **the closure step** — lowers **ERK1/2**, the same node phosphate→VEGFR2→caspase-9 uses to kill the terminal chondrocyte. **Works in wild-type: TYRA-300 femur +8.2%, tibia +6.4% in 4 wk; and the FDA tox package shows growth-plate thickening in NORMAL rats (≥1 mg/kg) and dogs (3 mg/kg).** **But see F-R061: at oncology doses it raises serum phosphate, which drives the very death signal it otherwise suppresses. The 8 mg label dose is titrated INTO phosphate 5.5–7.0 mg/dL.** |
-| **somatropin (GH)** | **2 IU/day** | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. Separately, 2 IU sits on the **physiological** side of the GH stem-pool sign flip (§3.8). **And a third candidate role as of F-R059:** GH **normalises terminal chondrocyte volume** in uremic rat via proposed Nkcc1 + Igf1 — the only half of the identity nothing else touches. One study, deficit-normalisation not supranormal gain; carried as a hypothesis. |
+| **somatropin (GH)** | **0.07 mg/kg/day** (= 0.49 mg/kg/wk) | **AKT support for erdafitinib** | **Not a rate agent.** FGFR3 blockade alone is **apoptotic**; IGF-1 via sustained AKT rescues it. That is the job. **REVISED in F-R066: the low-dose rationale is withdrawn.** GH -> IGF-1 -> AKT -> TSC2 -> **mTORC1**, and mTORC1 activation is what **expands** the stem pool (Newton: 2.5x). So GH does not merely spend the pool - it plausibly renews it. Chu's depletion was measured in an **oestrogen-replete** setting; oestrogen is the spending signal. **0.49 mg/kg/wk sits at the top of the range the human efficacy data used** (Mauras/ANSWER 0.24-0.53, +22.5 vs +13.0 expected); 2 IU/day is ~0.12 and no combination trial used it. **And a third candidate role as of F-R059:** GH **normalises terminal chondrocyte volume** in uremic rat via proposed Nkcc1 + Igf1 — the only half of the identity nothing else touches. One study, deficit-normalisation not supranormal gain; carried as a hypothesis. |
 | **abaloparatide** | **80 µg** | structural — now with a mechanism | **Not a growth agent** (Winer, 10 years, open plates, no growth effect). For the **mechanical envelope** — and F-R060 gives the reason: *Fgfr3*-null mice show **increased femur length with decreased BMD**, and aromatase loss gives **increased osteoid and low phosphate**. **SCFE is the mechanical shadow of the effect we want, not an incidental toxicity.** |
 | **serum phosphate** | **AGE-NORMAL** | **corrected again in F-R064 — this is now the third revision and the last one is right** | F-R060 predicted oestrogen ablation would *lower* it and cause rickets. **Backwards for humans:** oestrogen ablation **raises** phosphate (Uemura TmP/GFR +28.5% on GnRH-a; Zhang NHANES n=7,005, 3.83 vs 3.98 mg/dL, P<0.001; rat NaPi-IIa mechanism). **And erdafitinib raises it on-target (89% of patients).** Both stack arms push phosphate UP, and **phosphate is the executioner's ligand.** **F-R064: holding it LOW was wrong and pushes toward rickets.** Phosphate is *permissive* for the junction to advance; hypophosphatemia blocks terminal apoptosis and produces a thick plate on a short child. **Target age-normal** — not suppressed, not the oncology 5.5-7.0. The reason to control it is **ectopic/renal mineralisation**, not growth. Note **GH raises phosphate too** (IGF-1 upregulates proximal-tubule NaPi), so three arms raise it; **abaloparatide is phosphaturic** and pushes the other way. |
 | **anastrozole** | **1 mg** | oestrogen arm — **revised in F-R063** | Head-to-head over 3 yr, 79 boys: anastrozole arm **+1.0 cm** PAH vs letrozole **+0.5 cm**; letrozole **slowed growth velocity** (P=.039) and **lowered IGF-1**, the Phase 3 driver of `v(c)`. Anastrozole keeps T in range (552 vs 982 ng/dL, 48% >1000 on letrozole). **Effect plateaus at 1 mg** — 0.5 mg approximately equals 1 mg in adolescent males, and >=1 mg reaches the assay floor, so doubling is inert. **RESOLVED in F-R065: anastrozole.** The letrozole argument was residual intracrine substrate (2.0% vs 6.5% residual E1S, with STS at 265-660x aromatase in the plate) — but that mattered only if residual oestrogen closed the plate, and link 11 shows it does not. **What binds is supply, and anastrozole preserves velocity, IGF-1 and normal T.** | Standing instruction, plus a second reason as of F-R057 (§4). |
@@ -90,6 +90,46 @@ needs no τ assumption.
 | oestrogen | `w(E₂)` | Weise, Nilsson, aromatase-deficiency cases | removes a write-off; does not stop the count |
 | Hedgehog, ligand level only | flux/amplitude | Haraguchi *Hhip1* cKO, +43% plate area → +4.5% length at 53 wk | weak |
 | vascular | transit | Gerber Flt-(1-3)-IgG; Voss 2015 human paediatric widening; resveratrol | banks, reversible |
+
+---
+
+## 1a. THE POOL AGENT EXISTS (F-R066) — four rounds of "nothing renews n0" were wrong
+
+**Newton, *Nature* 2019;567:234.** Chondrocyte-specific **Tsc1 ablation** = constitutive mTORC1 activation:
+
+| readout | control | mTORC1-activated |
+|---|---|---|
+| **EdU+ epiphyseal stem cells/section** | **24.7 +/- 3.7** | **62.4 +/- 7.5, P = 0.014 (2.5x)** |
+| PAR3 symmetric in clonal dyads | lower | **higher** — the direct symmetric-division marker |
+| multi-columnar clones | — | **increased P3->P90**, *"accelerated expansion of colony-forming cells"* |
+| Ki67, pH3 | unchanged | unchanged — **a fate switch, not a rate change** |
+
+**Opposite direction confirms:** Raptor ablation (mTORC1 down) -> *"enhanced loss of clones"*; vismodegib
+(Hh block) -> *"forced them to differentiate."* **pS6 is naturally LOW in resting-zone chondrocytes** —
+the zone actively holds mTORC1 down to stay asymmetric. **That is the switch.**
+
+> **`a > b` is a directional, measured, druggable axis in an intact mammal.** Oncogenic route: Tsc1/mTORC1.
+> Non-oncogenic parallel (F-R034): hypoxia -> GREM1/FRZB/DKK1/SFRP5, converging with chu2026's human root
+> niche and trompet2024's Hh-driven Wnt-inhibitory environment.
+
+## 1a-ii. THE CLOCK IS PACED BY GROWTH AND WRITTEN IN HISTONE MARKS (F-R066)
+
+**Lui, *FASEB J* 2010;24:3083.** Tryptophan restriction for 4 wk: *"the genetic program had been **delayed**,
+implying that it is driven by **body growth itself rather than age**."*
+
+> **A conservation law: every centimetre grown advances the programme by a fixed amount.** Growing faster
+> reaches the same endpoint sooner. This is F-R018's "clock counts divisions," formalised — and the
+> mechanism behind catch-up growth and Gafni's banking.
+
+**The substrate is specific: H3K4me3 (activating) significantly DECREASED 1->4 wk in all 3 organs at all 3
+promoters** (Mdk, Peg3, Plagl1), confirmed with a second antibody across 11 genes. **H3Ac: no consistent
+change. H3K27me3: liver only.** **It is erasure of an activating mark, not deposition of a repressive one.**
+
+> **H3K4me3 is erased by the KDM5/JARID1 demethylases, and KDM5 inhibitors exist.** Blocking that erasure is
+> the first concrete named route to holding the programme open. **Untested on skeletal growth.**
+
+**The unbeaten question:** does symmetric self-renewal **reset** the mark, or do daughters inherit it? If
+inherited, mTORC1 expansion adds cells without resetting the clock — more cells, same budget each.
 
 ---
 
