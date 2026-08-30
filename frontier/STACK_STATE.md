@@ -1,12 +1,116 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R129
+**Last updated:** F-R130
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-RATIO. **F-R130 — N IS NOT A STOCK. IT IS A **RATIO**. THE CHARGE/DISCHARGE MODEL IS THE FETAL MODEL, AND THE STACK IS LOADED WITH COMMITMENT-DRIVERS.**
+
+### => ⛔ THE TANK DOES NOT EXIST IN THE POSTNATAL PLATE
+> **Newton PT, ... Savendahl L, Chagin AS. Nature 2019;567:234-8 — "A radical switch in clonality reveals a
+> stem cell niche in the epiphyseal growth plate."**
+> *"Chondroprogenitors in the resting zone are thought to be gradually consumed... **but this model has
+> NEVER BEEN PROVED.**"*
+Clonal genetic tracing (multicolour reporters): **consumption holds in FETAL and NEONATAL periods only; in
+the ADULT a stem cell niche forms that allows RENEWAL of chondroprogenitors.**
+**I applied the FETAL model to a BA-16 plate for ten rounds (R119-R129).**
+
+### => ⭐⭐⭐ THE CORRECT MODEL: POPULATION ASYMMETRY
+> **Chu NTL, Zhou B, ... Ohlsson C, Chagin AS. PNAS 2025;122(48):e2512316122 — "Growth hormone regulates the
+> stem cell population in the growth plate."**
+> - **GH REDUCES the pool of slow-cycling, label-retaining stem cells by promoting differentiation into
+>   transient progenitors**
+> - **stem cells renew via POPULATION ASYMMETRY; GH promotes their COMMITTED cell division -> STEM CELL DEPLETION**
+> - GHR deletion in stem cells **impairs their ability to generate chondrocytes** (direct effect)
+> - **"a potential explanation for... the DECLINING LONG-TERM EFFICACY OF GH THERAPY"**
+
+| stock model (what I used) | RATIO model (what is true) |
+|---|---|
+| N finite, drains one way | N is a **steady state** that can be held, raised, or lost |
+| spending is irreversible | spending is net loss **only if commitment exceeds renewal** |
+| "charge" then "discharge" | **shift and HOLD the renewal:commitment ratio** |
+| exhaustion inevitable | **exhaustion is a RATIO FAILURE, and ratios are correctable** |
+| small effect adds a little | **a small persistent ratio shift COMPOUNDS over years** |
+**A TANK EMPTIES. AN EQUILIBRIUM CAN BE MOVED AND HELD.** That is the difference between a fixed ceiling and
+an open-ended one, and why the oestrogen-null men kept producing for a decade.
+
+### => ⛔⛔ SERIOUS CAUTION ON THE LARGEST TERM IN THE STACK
+R123 put GH in on **+3.7 cm vs placebo, randomised. That number stands.** But PNAS 2025 shows the mechanism
+is **committed division at the expense of the stem pool**, and the authors offer it as the explanation for
+**GH's declining long-term efficacy.**
+> **GH BUYS HEIGHT BY SPENDING THE RENEWAL RATIO. Early gain, then depletion, then fade — exactly the
+> clinical curve.**
+Not a reason to remove it. **A reason to expect FRONT-LOADED benefit and to pair it with something that
+holds the ratio — which nothing in the stack does.**
+**And androgen does the same** (R127/128: Peralta's "depleting the source of stem cells"; Huang 2013's
+AR-suppression-raises-self-renewal).
+> **⭐ THE STACK IS LOADED WITH COMMITMENT-DRIVERS — GH and androgen (the latter ~2x via the AI) — AND
+> CONTAINS NOTHING THAT HOLDS THE RENEWAL SIDE. That is the real structural gap, and it is not the gap I
+> have been describing for ten rounds.**
+
+### => ⭐⭐ THE HUMAN NICHE IS NOW DEFINED — AND IT NAMES A NEW AGENT CLASS
+> **Chu NTL, ... Adameyko I, Chagin AS. Sci Transl Med 2026;18(845):eadw3590 (April 2026) — "A
+> transcriptional atlas of the pubertal HUMAN growth plate reveals TWO populations of stem cells and direct
+> effect of growth hormone."**
+- **TWO distinct stem-like populations in the human resting zone**
+- ⭐ **"Root" stem cells express skeletal stem cell markers but NOT PTHrP, and reside in a specialised
+  microenvironment LOW IN WNT AND TGF-beta.** Marked by **Prrx1**; extensive chondrocyte clones
+- **GH directly activates JAK/STAT, TGF-beta and ERK, INHIBITS AKT** in human explants
+**THREE CONSEQUENCES:**
+1. **The root population is PTHrP-NEGATIVE. Every n0 number here was PTHrP+ (0.72%) or FOXA2+ (2.80%) —
+   THE ROOT CELLS WERE NEVER COUNTED.**
+2. **Niche is WNT-low AND TGF-beta-low.** Wnt half we have (R117/R120). **TGF-beta half is ENTIRELY NEW —
+   TGF-beta inhibition has never appeared in this file as a niche-holding agent**, and the class is deeply
+   druggable (galunisertib, vactosertib).
+3. ⭐ **GH ACTIVATES TGF-beta — precisely the signal the root niche is defined by being LOW in.** Plausible
+   mechanism for the PNAS depletion, and it makes **a TGF-beta inhibitor the mechanistically matched partner
+   for GH: keep the proliferative drive, blunt the niche-dissolving arm.**
+**AND IT CONFIRMS R129:** Zhou 2015 claimed TGF-beta/Smad3 is the RZ->PZ gate; my GSE9160 replication found
+SMAD3 HIGHER in RZ and the TGF-beta axis at chance; **the 2026 human atlas independently says the root niche
+is TGF-beta-LOW. Two independent lines against Zhou.**
+
+### => WHAT N COULD BE — RANKED
+| model | status |
+|---|---|
+| **stock / charge-discharge** | ⛔ **fetal+neonatal only; "never been proved" postnatally** |
+| **⭐ population asymmetry — a renewal:commitment RATIO** | ✅ **demonstrated by clonal lineage tracing (PNAS 2025)** |
+| loss of lineage specificity (number preserved, quality lost) | plausible, untested here |
+| **cell ENLARGEMENT driving loss of potential** | *"not the division history itself... but the cellular enlargement"* — never examined in growth plate |
+| niche loss (SOC-dependent) | supported by the two-population atlas |
+| architectural / column failure | one of weise2001's seven parameters; unexamined |
+
+### => WHAT THIS DOES TO THE PROGRAMME
+**The decisive experiment CHANGES.** R119's "charge with mTORC1, discharge with vismodegib" was built on the
+tank model. **The right question is now: CAN THE RENEWAL:COMMITMENT RATIO BE HELD WHILE GH DRIVES OUTPUT? —
+a COMBINATION question, not a SEQUENCE question.**
+**New stack target:** **HOLD the ratio** (WNT-low + **TGF-beta-low**) while **driving output** (GH,
+androgen). **They must run TOGETHER, not in phases.**
+**And it explains the clinical curve nobody here had explained:** GH's declining efficacy, the AI's two-year
+threshold, and why every "pool expander" gave pool without flux — **they were raising the renewal side,
+which BY DEFINITION lowers output. Never a bug. That is what a ratio means.**
+
+### => WHAT I NEED
+1. ⭐ **Full text of PNAS 2025 and Sci Transl Med 2026** (abstracts only so far). Need the quantitative
+   renewal:commitment ratios and **whether GH's depletion is DOSE-DEPENDENT in 0.24-0.37 mg/kg/wk. If the
+   bone-age-neutral dose window is ALSO the ratio-sparing window, that is the single most useful number in
+   the programme.**
+2. Whether TGF-beta inhibition preserves the root population in cartilage — no such experiment known to me.
+
+### CORRECTIONS
+- **Charge/discharge model of N WITHDRAWN for the postnatal plate** — it is the fetal model.
+- **N REDEFINED as a renewal:commitment RATIO maintained by population asymmetry.**
+- **GH flagged as a RATIO-DEPLETING agent** (PNAS 2025); its randomised +3.7 cm stands but benefit is
+  FRONT-LOADED.
+- **Structural gap restated: two commitment-drivers, nothing holding renewal.**
+- **NEW TARGET CLASS: TGF-beta inhibition** from the human root-niche definition.
+- **n0 INCOMPLETE — the root population is PTHrP-negative and was never counted.**
+- **R129's rejection of Zhou 2015 independently confirmed.**
 
 ---
 
