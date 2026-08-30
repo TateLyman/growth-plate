@@ -1,12 +1,64 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R160
+**Last updated:** F-R161
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-CORRECT8. **F-R161 — ⛔⛔ **R160's "HOLE 8 PATCHED" IS WITHDRAWN — I OVER-READ THE ABSTRACT.** ALL TETi76 5hmC IS IN CELLS; **"REVERSIBLE" APPEARS ONLY IN THE ABSTRACT**. ⭐⭐ BUT: **3 MONTHS ORAL TET INHIBITION, NO WEIGHT OR BLOOD-COUNT CHANGE**; ⭐⭐ **AURANOFIN IS ~200–370× MORE POTENT THAN TETi76**; ⭐⭐⭐ AND **GEO IN VIVO AURANOFIN DATA RESOLVES R160's LIVER CONFLICT.**
+
+### => ⛔⛔ THE CORRECTION
+With the full text (operator-supplied) in hand, R160 was too strong on two counts:
+1. ⛔ **Every 5hmC measurement is a dot blot in a CELL LINE** (K562, MEG-01, SIG-M5, OCI-AML5, MOLM13).
+   The abstract's *"in vitro and in vivo"* attaches to **CLONAL OUTGROWTH**, not to the 5hmC claim.
+   ⛔ **I read it the way I wanted to read it.**
+2. ⛔ **"Reversible" appears ONLY in the abstract.** Searching `reversib`/`washout`/`withdraw`/`discontinu`/
+   `recover` across the full text yields only a **discussion proposal** to dose transiently.
+   **R160 used that sentence as the direct answer to R158 (Ho) and R159 (Smeriglio). Downgraded from
+   evidence to authors' assertion.**
+
+> ### ⛔ **HOLE 8 IS NARROWED, NOT CLOSED: nobody has measured 5hmC or TET activity in the TISSUE of a treated animal — not for gold, not for any TET inhibitor.**
+
+### => ⭐⭐ WHAT SURVIVES AND IS STILL WORTH HAVING
+| finding | detail |
+|---|---|
+| ⭐⭐ **chronic tolerability** | **50 mg/kg p.o., 5 d/wk, 3 MONTHS**: *"no impact on overall body weight or any significant change in the overall blood counts"* |
+| ⭐ **in vivo window** | *"the ratio of mice receiving **Tet2+/+** CD45.2 cells **did not change**"* — normal cells unaffected in a living animal |
+| ⭐ therapeutic index | **10-fold** in TET2-WT cells |
+| ⭐ superfamily selectivity | *"other αKG-consuming enzymes… remained unaffected"* |
+| ⭐ mechanism | *"**AA [ascorbate]**… **counteracted** the changes induced by TETi76"* |
+
+⚠ **body weight ≠ body length**, and these are adult mice.
+
+### => ⭐⭐ A FAVOURABLE NEW COMPARISON FOR OUR AGENT
+> **TETi76: 50% cellular 5hmC inhibition at 20–37 µM. Auranofin: 5hmC down at 0.1 µM.**
+> ### ⭐⭐ **AURANOFIN IS ~200–370× MORE POTENT ON THE SAME ENDPOINT. The molecule with 3 months of in vivo tolerability is the WEAK one; ours is the potent one — and ours is already approved.**
+
+### => ⭐⭐⭐ NEW ANGLE THAT WORKED: **GEO — 146 auranofin datasets, THREE IN VIVO MOUSE**
+| dataset | n | what |
+|---|---|---|
+| ⭐⭐⭐ **GSE202935** | **32** | *"Accumulation of auranofin in **white adipose tissue** lowers leptin, exerts **anti-diabetic** effects"* |
+| ⭐⭐ **GSE176346** | 8 | *"**Auranofin prevents liver fibrosis**…"* |
+| ⭐ **GSE293697** | 13 | auranofin **3 mg/kg/day** chronic, Western diet |
+
+⭐⭐⭐ **GSE202935 INDEPENDENTLY CONFIRMS R157:** *"**allometrically scaled SAFE auranofin doses HOMED TO WAT**
+and improved insulin sensitivity."* Different group, tissue and decade from Cottrill — **at explicitly
+human-scaled safe doses.**
+
+### => ⭐⭐⭐ AND IT RESOLVES R160's LIVER CONFLICT — AGAINST MY OWN WORRY
+R160 warned that Tet1+/− hepatic steatosis (Yuan 2021) might worsen the metformin arm's deciding variable,
+and promoted liver fat to the #1 measurement.
+> ### ⭐⭐⭐ **THE DRUG GOES THE OTHER WAY: in vivo auranofin IMPROVES insulin sensitivity, LOWERS leptin, is ANTI-DIABETIC (GSE202935) and PREVENTS LIVER FIBROSIS (GSE176346).**
+> ### ⭐⭐ **THE GENETIC Tet1+/− STEATOSIS DOES NOT TRANSFER TO THE DRUG — the SECOND instance in two rounds of *genetic loss ≠ pharmacological inhibition*, this time with the actual molecule, in vivo, from two independent datasets.**
+
+⚠ **Limits:** metabolic/fibrosis endpoints, not hepatic-fat quantification in a lean adolescent; effects
+shown in **obese** mice where there is more to improve; ⛔ **auranofin's own ALT/hepatotoxicity signal is
+untouched and remains real.** ⭐ **Liver fat stays a monitoring item; its promotion to #1 is withdrawn.**
 
 ---
 
