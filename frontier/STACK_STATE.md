@@ -1,12 +1,161 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R140
+**Last updated:** F-R141
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-SELA. **F-R141 — **SELAMECTIN IS THE AGENT.** DOSE CONVERGES AT **~0.15 mg/kg**, MARGIN **90x IN THE WORST-CASE GENOTYPE**, AND THE **ERDAFITINIB x P-gp HOLE CLOSES BY GENOTYPE** RATHER THAN BY A STUDY. ONE HOLE LEFT: **NO HUMAN HAS EVER TAKEN IT.**
+
+Read in full: `Griffin 2005` (P-gp, Caco-2 + canine PBL), **REVOLUTION (selamectin) label**,
+**ProHeart 12 FOI** (NADA 141-519), **ProHeart 6 FOI** (NADA 141-189), + `Novotny/Boy 2002` selamectin
+PK (PMID 12213114). Calculation: `analysis/redundancy/selamectin.py`.
+**Both R140 asks arrived. R140's safety ranking is INVERTED and the interaction hole is CLOSED.**
+
+### => ⚠ THE PAPER THAT SHOULD HAVE KILLED SELAMECTIN
+`Griffin 2005`:
+| compound | **P-gp inhibition IC50** | **secretory/absorptive ratio** | Rh-123 efflux, canine PBL |
+|---|---|---|---|
+| ivermectin | **0.1 uM** | 7.5 | inhibited |
+| ⛔ **selamectin** | ⛔ **0.1 uM** | 4.7 | inhibited |
+| ⭐ **moxidectin** | ⭐ **10 uM (100x weaker)** | ⭐ **2.6** | ⭐ **no significant effect** |
+> **On this data selamectin half-inhibits P-gp at almost exactly the concentration we need (0.069 uM)
+> — autoinhibition of the transporter that IS the CNS safety margin, at the working dose. It also
+> explains why moxidectin is the member that got human approval. THE PREDICTION IS WRONG.**
+
+### => ⭐⭐⭐ THE IN VIVO GENOTYPE DATA REFUTES IT AND **INVERTS R140's RANKING**
+**Revolution label, ivermectin-sensitive (MDR1-mutant = P-gp-NULL) Collies:**
+> *"**Oral administration of 2.5, 10, and 15 mg/kg** in this dose escalating study **did not cause any
+> adverse reactions**; however, eight hours after receiving 5 mg/kg orally, one collie became ataxic
+> for several hours, but did not show any other adverse reactions after receiving subsequent doses of
+> 10 and 15 mg/kg."* · Topical 1/3/5x: **salivation in ALL groups INCLUDING VEHICLE CONTROL.**
+> · **1, 3, 5 and 10x in SIX-WEEK-OLD PUPPIES: no adverse reactions.**
+| agent | route | dose | outcome in P-gp-NULL Collies |
+|---|---|---|---|
+| ⭐ **selamectin** | ORAL | **15 mg/kg** | ⭐ **no adverse reactions** |
+| ⛔ **moxidectin** (R140) | ORAL | **1.0 mg/kg** | ⛔ **4/5 COMATOSE, ALL FOUR EUTHANIZED** |
+> ### ⭐⭐⭐ **SELAMECTIN IS TOLERATED AT 15 mg/kg ORAL IN THE GENOTYPE MOXIDECTIN KILLS AT 1.0 mg/kg. >=15-FOLD ADVANTAGE, IN VIVO, SAME ROUTE, IN THE POPULATION THAT DEFINES THE HAZARD. R140's "moxidectin has the best safety data" IS INVERTED.**
+⚠ **Why the in vitro failed** is not established; the label's authors say it *"is not fully
+understood."* Likeliest: **moxidectin has intrinsic mammalian GABA-A activity** (`Cotreau`), so
+removing P-gp uncovers a liability selamectin does not have. ⭐ **Another instance of the named error
+class: an in vitro affinity read as an in vivo direction. The genotype experiment is the arbiter.**
+
+### => ⭐⭐⭐ AND THAT CLOSES THE HOLE THAT HAS BLOCKED THIS ARM SINCE R139
+R139 and R140 both stopped on *"erdafitinib's P-gp status is untested and P-gp is the whole safety margin."*
+> ### **IT NEEDS NO STUDY. THE WORST CASE OF P-gp INHIBITION IS P-gp ABSENCE — THAT IS THE COLLIE. SELAMECTIN HAS A 90x MARGIN IN THAT STATE. Even a complete P-gp inhibitor can only phenocopy the Collie, and the Collie tolerates selamectin at 90x the required dose. THE INTERACTION THAT DISQUALIFIED THE MOXIDECTIN REGIMEN CANNOT DISQUALIFY SELAMECTIN.**
+**Same logic answers Griffin's autoinhibition worry:** ~41% P-gp inhibition at our target, but **100%
+inhibition IS the Collie**, and the Collie is fine at 90x.
+
+### => ⭐⭐ THE DOSE — TWO INDEPENDENT METHODS CONVERGE
+`Novotny/Boy 2002` selamectin PK:
+| route | species | Cmax | tmax | **F** | t1/2 (IV) |
+|---|---|---|---|---|---|
+| ⭐ **oral 24 mg/kg** | **dog** | **7,630 +/- 3,140 ng/mL** | 8 h | ⭐ **62%** | **14 h** |
+| oral 24 mg/kg | cat | 11,929 +/- 5,922 | 7 h | 109% | **69 h** |
+| topical 24 mg/kg | dog | **86.5 +/- 34.0** | 72 h | **4.4%** | |
+| topical 24 mg/kg | cat | 5,513 +/- 2,173 | 15 h | **74%** | |
+| IV | dog | Cl **1.18 mL/min/kg**, Vdss **1.24 L/kg** | | | |
+*"Linearity established in… dogs for plasma concentrations up to **636 ng/mL**"* — ⭐ **our 53 ng/mL
+target is INSIDE the validated linear range.**
+**TARGET: 40% engagement (Spin4 loss = 38-45%, R140), IC50 0.103 uM -> C = 0.0687 uM = 52.9 ng/mL**
+| method | dose |
+|---|---|
+| (a) linear scaling from oral Cmax | **0.166 mg/kg** |
+| (b) from clearance: D = Css x Cl / F (Cl 1.699 L/day/kg, F 0.62) | **0.145 mg/kg/day** |
+| ⭐ **CONVERGENT** | ⭐ **~0.15 mg/kg = ~9 mg for a 60 kg subject** |
+**MARGIN:** required **0.166 mg/kg** vs **15 mg/kg tolerated ORALLY in P-gp-NULL Collies = ⭐ 90x**;
+plus **10x label dose tolerated in SIX-WEEK-OLD PUPPIES.**
+⭐ **AND THE MARKETED PRODUCT IS ALREADY IN THE WINDOW:** topical label dose in dogs gives Cmax
+**86.5 ng/mL = 0.112 uM = 52% engagement** — ABOVE the 40% target. ⚠ **But transdermal F is 4.4% in
+dogs and 74% in cats — it does NOT transfer to human skin without measurement.**
+
+### => ⭐⭐⭐ R140's ROUTE ARGUMENT IS NOW **PROVEN WITH A MATCHED DOSE** (ProHeart 6 FOI)
+| formulation | route | dose | P-gp-NULL Collies |
+|---|---|---|---|
+| **ProHeart 6 microspheres** | **SC DEPOT** | **0.17 / 0.51 / 0.85 mg/kg** | ⭐ *"**No adverse reactions… in any of the treated dogs**"* |
+| oral solution | **ORAL BOLUS** | **1.0 mg/kg** | ⛔ **4/5 coma, euthanized** |
+> ### **0.85 mg/kg AS A DEPOT IS HARMLESS; 1.0 mg/kg AS A BOLUS IS LETHAL. SAME DRUG, SAME GENOTYPE, NEARLY THE SAME DOSE. THE ONLY DIFFERENCE IS RELEASE RATE. R140's route argument is no longer an inference.**
+**ProHeart 12 (0.5 mg/kg SC, 12 MONTHS of protection from one injection):** Cmax **8.5-15.9 ng/mL**,
+⭐ **tmax 10-30 DAYS**, trough at 6 mo **0.33-2.26 ng/mL**, **"little or no accumulation"** over three
+6-monthly doses, ⭐ *"**no effects on physical examinations, BODY WEIGHT, or food consumption**"*, only
+finding granulomatous injection-site inflammation.
+⭐ **That body-weight line BOUNDS R140's puppy weight-gain decrement** (at depot exposures there is
+none) ⚠ but at much lower exposure, so it does not overturn it.
+⛔ **BUT THE DEPOT IS MIS-LOADED: 8.5-15.9 ng/mL moxidectin = 0.013-0.025 uM = only 1.0-1.9% ENGAGED.
+THE FORMULATION CONCEPT IS EXACTLY RIGHT AND THE MOLECULE IN IT IS EXACTLY WRONG.** A microsphere
+depot loaded with a selamectin-class compound is the object three rounds have converged on — **and the
+delivery technology is an approved, manufactured product.**
+
+### => ⛔ THE ONE REMAINING HOLE, UNMOVED
+Searched specifically for human selamectin PK, toxicity, poison-control, dermatological use: **3 hits,
+none human.**
+> ### **THERE IS NO HUMAN DATA FOR SELAMECTIN OF ANY KIND. Every number in this round is dog or cat.**
+- ⛔ 0.15 mg/kg is a **DOG-derived** dose. **Dog t1/2 14 h vs cat t1/2 69 h — 5-fold interspecies spread
+  in the same molecule.** Human t1/2 unknown; the dosing interval cannot be set without it.
+- ⚠ **The cat data are a warning as much as a reassurance:** transdermal F 74% and Cmax 5,513 ng/mL at
+  label dose — **64x the dog value from an identical application.** Species variance here is extreme.
+- ✅ **What DOES transfer is the genotype logic** — P-gp absence is the worst case for CNS exposure of
+  a macrocyclic lactone in **any** mammal, and selamectin has a 90x margin in that state. Mechanism-
+  based and species-robust in a way a PK number is not.
+
+### => THE RANKING
+| | Wnt IC50 | dose needed | margin in P-gp-null | human data | verdict |
+|---|---|---|---|---|---|
+| ⭐⭐ **SELAMECTIN** | ⭐ **0.103 uM** | ⭐ **0.15 mg/kg** | ⭐ **90x** | ⛔ **NONE** | ⭐ **THE AGENT** |
+| moxidectin | 1.27 uM | ⛔ 250 mg/wk | ⛔ **lethal at 1.0 mg/kg** | ✅ approved | ⛔ **10x too weak AND less safe** |
+| ivermectin | 0.8-2.3 uM | ~moxidectin | ⛔ neurotoxic 0.1-0.25 mg/kg | ✅ approved | ⛔ worst of both |
+| doramectin / abamectin | 0.6-2.8 / 1-2 uM | ~moxidectin | untested | ⛔ vet/agri | ⛔ no advantage |
+| **bryostatin** | **inactive** | — | — | — | ⭐ **NEGATIVE CONTROL** |
+**THE PERFECT OBJECT — TWO OF THREE PARTS ALREADY EXIST:**
+| requirement | status |
+|---|---|
+| **selamectin-class potency (~0.1 uM)** | ⭐ **EXISTS — selamectin** |
+| **depot / flat-release delivery** | ⭐ **EXISTS — ProHeart microsphere technology** |
+| **human data** | ⛔ **DOES NOT EXIST** |
+> **The gap is no longer scientific or pharmacological. Nobody has ever given this molecule to a
+> person. That is a far smaller and better-defined gap than this arm started with, and it is the kind
+> a single Phase 0 microdose PK study closes.**
+
+### => THE EXPERIMENT — SHARPENED IN CONCENTRATION
+| arm | conc | role |
+|---|---|---|
+| ⭐ **selamectin** | **0.02 / 0.07 / 0.2 / 0.6 uM** | ⭐ **LEAD — brackets the 40% point (0.069 uM) two logs wide** |
+| moxidectin | 0.5 / 1.3 / 4 uM | approved comparator; brackets its 40% point (0.85 uM) |
+| ⭐ **bryostatin** | matched | ⭐ internal negative control |
+| overshoot | selamectin 2 uM (~95%) | ladder AND the rat cleft-palate/delayed-ossification finding both predict **SHORTENING** |
+**Readouts: Axin2 mRNA** (calibrate to Spin4-KO's 45%), **Sfrp5+ RZ cell count**, **terminal
+hypertrophic cell height** (must be unchanged), **length.** Then a **length endpoint in a growing
+animal** (non-optional since R140) and **Spin4 x Cxxc5** (R139).
+
+### => WHAT I NEED
+1. ⭐⭐ **ANYTHING on selamectin in humans** — Phase 0/1, occupational exposure, poison-control series,
+   dermatology case report. **The ONLY thing between the analysis and a usable agent.**
+2. ⭐ **Selamectin plasma protein binding and tissue distribution.**
+3. **The Revolution FOI (NADA 141-152)** — full target-animal-safety package, any juvenile growth data.
+4. **`Novotny/Boy 2002` full text** — multi-dose and tissue data.
+
+### CORRECTIONS
+- ⭐⭐⭐ **R140's SAFETY RANKING INVERTED** — selamectin tolerated at 15 mg/kg oral in P-gp-null Collies
+  where moxidectin kills 4/5 at 1.0 mg/kg. >=15-fold advantage in the defining genotype.
+- ⭐⭐⭐ **THE ERDAFITINIB x P-gp HOLE IS CLOSED BY GENOTYPE, NOT BY A STUDY** — the worst case of P-gp
+  inhibition is P-gp absence, and selamectin has a 90x margin there.
+- ⛔ **`Griffin 2005`'s in vitro prediction REFUTED IN VIVO** — potent P-gp inhibitor in Caco-2, safest
+  member in P-gp-null animals. **In vitro affinity read as in vivo direction, again.**
+- ⭐⭐ **DOSE CONVERGES AT ~0.15 mg/kg** (0.166 by Cmax scaling, 0.145 by clearance), inside the
+  validated linear range, **90x margin in the worst genotype**.
+- ⭐ **The marketed topical dog dose already gives 52% engagement** — ⚠ does not transfer to humans
+  (transdermal F 4.4% dog vs 74% cat).
+- ⭐⭐ **R140's ROUTE ARGUMENT PROVEN WITH A MATCHED DOSE** — 0.85 mg/kg depot harmless vs 1.0 mg/kg
+  bolus lethal, same genotype. **Release rate, not dose.**
+- ⭐ **Depot technology validated and mis-loaded** — ProHeart 12 gives tmax 10-30 d, no accumulation, no
+  body-weight effect, but only **1.0-1.9% engagement.**
+- ⛔ **THE REMAINING HOLE IS UNMOVED AND IS NOW THE ONLY ONE: no human has ever taken selamectin**, and
+  this molecule's interspecies variance is extreme (t1/2 14 h dog vs 69 h cat; transdermal F 4.4% vs 74%).
 
 ---
 

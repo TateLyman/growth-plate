@@ -175,3 +175,12 @@ I repeatedly re-asked for papers already supplied. Memory across 25+ turns is no
 | `FDA_Advantage_Multi_FOI_803.pdf` | **P-gp-null Collies: oral 1.0 mg/kg -> 4/5 coma, euthanized; topical 5x -> nothing.** Repeat-dose PK (3 monthly doses, 1.45x accumulation, steady state in 4-5 intervals). **Puppy repeat-dose: 1X and 3X males GAINED LESS WEIGHT.** |
 | `WHO_moxidectin_PhaseII_meeting_report.pdf` | contains the full **Investigator's Brochure**: **1-year dog oral NOAEL 1.1 mg/kg/day**; not carcinogenic; not genotoxic; **no CYP3A4 inhibition**; rat developmental **cleft palate + delayed ossification** at >=10 mg/kg/day; juvenile dog **testes/spermatogenesis** finding |
 | `Bowman_2016_monthly_moxidectin_dogs.pdf` | four monthly doses -> saw-tooth accumulation to steady state |
+
+## 2026-08-30 (5) — selamectin / P-gp / depot (R141)
+| file | what it settles |
+|---|---|
+| `griffin2005.pdf` | P-gp: selamectin and ivermectin inhibit at **IC50 0.1 uM**, moxidectin at **10 uM**; substrate ratios 7.5 / 4.7 / 2.6. **In vitro predicts selamectin is dangerous - REFUTED in vivo.** |
+| `Safari__Aug_30_2026` (REVOLUTION label) | ***THE DECISIVE SAFETY DATA.*** Selamectin **ORAL 2.5/10/15 mg/kg in ivermectin-sensitive (P-gp-null) Collies = no adverse reactions**; topical 1/3/5x only salivation (also in vehicle); **1/3/5/10x in six-week-old puppies = no adverse reactions** |
+| `7307.pdf` (ProHeart 12 FOI) | 0.5 mg/kg SC depot = 12 months protection. Cmax 8.5-15.9 ng/mL, **tmax 10-30 DAYS**, little/no accumulation, **no effect on body weight**. Only **1.0-1.9% Wnt engagement** - concept right, molecule wrong |
+| `700.pdf` (ProHeart 6 FOI) | ***THE MATCHED-DOSE ROUTE PROOF.*** Depot **0.85 mg/kg SC in P-gp-null Collies = no adverse reactions**, vs **1.0 mg/kg ORAL = 4/5 coma and death**. Release rate, not dose |
+| Novotny/Boy 2002 (PMID 12213114, abstract) | selamectin PK: dog oral 24 mg/kg -> Cmax 7,630 ng/mL, **F 62%**, Cl 1.18 mL/min/kg, t1/2 14 h; cat t1/2 69 h; topical F 4.4% dog vs 74% cat; linearity to 636 ng/mL |
