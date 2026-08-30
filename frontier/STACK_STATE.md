@@ -1,12 +1,132 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R135
+**Last updated:** F-R136
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-PERTURB. **F-R136 — "WHAT ELSE LOWERS SPIN4?" I NEVER CHECKED. THE SCREEN IS **STATISTICALLY NULL**; ITS VALUE IS THREE CONVERGENCES, AND THE BEST FINDING IS NOT A DRUG.**
+
+**Method:** Harmonizome `gene/SPIN4?showAssociations=true` -> **3,890 associations**; parsed RummaGEO
+drug (270) + gene (207) perturbations, ENCODE TFBS (434), ENCODE/ChEA TF targets (126), histone marks (339).
+Code: `analysis/redundancy/spinpert.py`, `spingene.py`, `epmc.py`.
+
+### => ⛔⛔ THE BASE RATE KILLS THE NAIVE READING — **STATED BEFORE THE TABLE, NOT AFTER**
+```
+ALL RummaGEO drug signatures containing SPIN4:  DOWN=186  UP=84  ->  down fraction 0.689
+```
+| agent | down/total | p vs base rate |
+|---|---|---|
+| palbociclib | 10/10 | 0.024 |
+| osimertinib | 8/8 | 0.051 |
+| **metformin** | **6/6** | **0.107** |
+| sulforaphane | 5/5 | 0.155 |
+| verteporfin | 5/5 | 0.155 |
+**88 agents tested. NOTHING survives multiple-comparison correction.**
+> ⭐ **AND THE CONFOUND INVERTS IT:** the top of the list is palbociclib, fludarabine, osimertinib,
+> trametinib, carfilzomib, cisplatin, volasertib, venetoclax — **all cytotoxic/cytostatic.
+> SPIN4-DOWN IS LARGELY A GROWTH-ARREST SIGNATURE — a CONSEQUENCE of arrest, not a CAUSE of growth.
+> A 0.689 base rate is what that confound looks like numerically.** Which is exactly why only the
+> NON-suppressive agents matter. **Null first, table second. R118 in reverse.**
+
+### => THREE CONVERGENCES (drug hit + TF binding + length endpoint), AND THEY DISAGREE
+| axis | drug | TF binds SPIN4? | LENGTH endpoint? | verdict |
+|---|---|---|---|---|
+| ⭐ **NRF2** | **sulforaphane 5/0** | ✅ ChEA NRF2-31884422 | ✅ **Nrf2 activation INCREASES bone length in zebrafish, Nrf2-dependent; and DIMETHYL FUMARATE (approved, oral, generic) reproduces it** | ⏸ **HELD — see below** |
+| ⚠ **YAP/TEAD** | **verteporfin 5/0** (approved) | ✅ ENCODE TEAD4 + 4 YAP1-TEAD4 peak sets | ⛔ **NONE, EITHER DIRECTION** | ⛔ **CANNOT ENTER** |
+| ⛔ **AR** | **enzalutamide 6 down / 15 UP** | ✅ ChEA AR LNCaP + VCaP | — | ⛔ **POINTS THE WRONG WAY** |
+
+**⛔ DMF HELD DESPITE PASSING THE LETTER OF R131'S RULE — two objections, both mine:**
+1. ⭐ **Its named mechanism is HYPERTROPHIC ACCELERATION** (*"stimulates hypertrophic chondrocyte
+   differentiation"*). **That is a DISCHARGE mechanism.** R131: removing the TGF-beta brake on
+   hypertrophy SHORTENS bone. **A bone-age risk at BA 16 — the one currency we cannot spend.**
+2. ⭐ **Larval zebrafish have NO epiphyseal growth plate and NO bone age.** The endpoint cannot
+   separate "grew more" from "matured faster" — the only distinction that matters.
+> **Clears the LETTER of my rule, fails its SPIRIT. Flagged so I do not launder a weak endpoint
+> through my own rule. DMF -> EXPERIMENT QUEUE, not the stack.**
+⚠ **Keap1-null (constitutive NRF2) -> OSTEOMALACIA.** ⭐ **The floor-and-ceiling dosage law now holds
+at FOUR independent nodes (PRC2, NSD1/EZH2, Wnt, NRF2). Looks like a property of the tissue.**
+**⛔ VERTEPORFIN held for having EXACTLY the R126-AR / R130-TGFbeta evidence class. Not a third time.**
+**⛔ ENZALUTAMIDE: we want SPIN4 LOWER; enzalutamide RAISES it 2.5:1. A SECOND independent mark
+against R128's AR-antagonist nomination, from a screen unrelated to androgen.**
+
+### => ⭐⭐⭐ THE BEST FINDING IS NOT A DRUG: **SPIN4 IS A TCF7L2 (=TCF4) TARGET**
+ENCODE TFBS at the SPIN4 locus (100 distinct TFs): POLR2A(66) MAX(25) CTCF(16) **H3K27me3(15)** MYC(13)
+EP300(11) YY1(9) **EZH2(8)** SIN3A(7) MAZ(6) **TCF7L2(4)** ... **H3K4me3(188)**
+> ### **SPIN4 PROMOTES WNT (R133/134), AND WNT/TCF7L2 BINDS AND DRIVES SPIN4. POSITIVE FEEDBACK LOOP.**
+**Changes R135's dose reasoning IN OUR FAVOUR:** overshoot risk unchanged, **but a positive feedback
+loop is SELF-AMPLIFYING at low input — the dose needed to move this node is LOWER than linear.
+An argument FOR the deliberately sub-saturating strategy ON MECHANISM, and AGAINST "nuking them".**
+⚠ ENCODE is cancer lines, TCF7L2 only 4 peaks; **occupancy != regulation.** Hypothesis, not result.
+
+### => ⭐ AND SPIN4 IS ACTIVELY REGULATED **IN CARTILAGE** — FIRST EVIDENCE OF THIS
+| ChEA set | tissue |
+|---|---|
+| ⭐ **JUN-27471255-CHONDROCYTES-MOUSE-RIB** | **primary mouse rib CHONDROCYTES** |
+| ⭐ **PBX-27287812-CHIP-SEQ-EMBYONIC-LIMB-MOUSE** | **mouse EMBRYONIC LIMB** |
+| **SOX9** (+ SOX9-25088423) | resting/proliferative identity TF |
+| **RUNX2** (x3, incl. MC3T3E1-MOUSE-BONE) | hypertrophic commitment TF |
+| VDR-22108803 | vitamin D receptor |
+**Every prior SPIN4 result was mouse KOs, one human family and a zonal expression table. SPIN4 is
+bound by BOTH fate-defining chondrocyte TFs, in real cartilage.**
+**Also POLYCOMB-CONTROLLED (EZH2 8 peaks + H3K27me3 15)** — the same machinery whose PARTIAL loss
+causes Sotos/Weaver/TBRS overgrowth (R134's class law). **Coherent, not coincidental.**
+**Gene perturbations lowering SPIN4** (base rate only 0.522 here): slamf6 4/0, lsm14b 4/0, **med1 3/0**,
+**chd4 3/1 (3 GSEs)** — Mediator + NuRD, consistent with an actively-regulated locus.
+
+### => ⭐⭐ METFORMIN: CLEANEST HIT, BUT ITS REAL CASE HAS NOTHING TO DO WITH SPIN4
+**6 DOWN / 0 UP, 5 distinct GSEs, human AND mouse — the only clean cross-species hit and the only
+top-ranked agent that is NOT cytotoxic**, which is precisely the filter the confound demands. p=0.107.
+> **Ibanez 2018: *"Metformin for Rapidly Maturing Girls with Central Adiposity: Less Liver Fat and
+> SLOWER BONE MATURATION"*** — longitudinal hand X-rays, **BoneXpert**, n=34; parent cohort
+> *"normalizes puberty and ADULT HEIGHT."*
+**R125: the discriminator is BONE AGE. R131: the entire GH dose ceiling IS a bone-age constraint.**
+> ### ⭐ **A PHARMACOLOGICAL BONE-AGE DECELERATOR IS THE ONLY THING THAT WOULD MOVE THE GH DOSE CEILING. Everything else in the stack SPENDS duration or is neutral. This is the first candidate that BUYS it.**
+**⛔ WHY IT STILL DOES NOT ENTER — three objections:**
+1. ⭐ **WRONG POPULATION.** Every positive result is in LBW girls with central adiposity,
+   hyperinsulinism and ALREADY-ACCELERATED maturation. **In a lean, normoinsulinaemic BA-16 male
+   there is no acceleration to normalise and the effect may be ZERO.** No growth-plate-level
+   metformin data exists; no bone-age data in a normal-weight subject.
+2. ⭐ **REDUNDANCY WITH ANASTROZOLE — the R132 sacubitril trap.** If metformin decelerates maturation
+   by lowering adipose aromatase drive, **anastrozole already owns that lever at full strength.**
+3. ⚠ **UNRESOLVED TENSION:** metformin is an **AMPK activator / mTORC1 INHIBITOR**; **newton2019 has
+   mTORC1 ACTIVATION expanding the pool.** Mechanism opposes the renewal arm. **Not pretending to reconcile it.**
+
+### => ⭐ NEW ARM NAMED: **PHARMACOLOGICAL BONE-AGE DECELERATION**
+**SPIOMET (spironolactone+pioglitazone+metformin) and LIFE-MET are RANDOMISED PLACEBO-CONTROLLED
+trials whose EXPLICIT ENDPOINT is slowing skeletal maturation. This project has never read them.**
+Given R125 and R131, **this may be the highest-value unexplored direction in the file — larger than
+any single agent.** ⚠ Only the metformin component imports: spironolactone is an antiandrogen
+(collides with R128's discharge arm) and pioglitazone is a PPAR-gamma agonist (impairs bone).
+
+### => THE EXPERIMENT THIS ROUND ARMS
+⭐ **R135's explant now has THREE OBTAINABLE ARMS instead of one problematic one.** Fetal tibial /
+E16.5 femur, **LENGTH endpoint**, dose-ranged: **VinSpinIn** (direct) vs **dimethyl fumarate**
+(NRF2, approved) vs **verteporfin** (YAP/TEAD, approved) — **three different upstream routes to
+SPIN4-down. If SPIN4 is causal they agree; if they disagree, SPIN4-down was the arrest confound and
+the arm is wrong. A genuinely discriminating experiment that did not exist before this round.**
+Plus: **TCF7L2 knockdown -> measure SPIN4** (one qPCR; converts occupancy into regulation).
+
+### => STACK CHANGES: **NOTHING ENTERS.** Three candidates surfaced; all three held by rules this
+file already wrote. **That is the rules working, not the round failing.**
+
+### CORRECTIONS
+- **Screen reported STATISTICALLY NULL up front** (base rate 0.689, 88 agents, nothing survives).
+- **GROWTH-ARREST CONFOUND NAMED** — SPIN4-down is largely a consequence of arrest, inverting the reading.
+- **DMF held despite passing the LETTER of R131's rule** — larval zebrafish is not a growth-plate
+  endpoint; "hypertrophic differentiation" is a discharge mechanism.
+- **Verteporfin held for having exactly the R126/R130 evidence class** — error not made a third time.
+- **R128's AR-antagonist nomination takes a SECOND independent mark against it.**
+- **R135's sub-saturating strategy STRENGTHENED ON MECHANISM** by the TCF7L2 positive feedback loop.
+- **SPIN4 shown TF-occupied in real chondrocytes and embryonic limb** (JUN, PBX, SOX9, RUNX2) — first
+  evidence it is actively regulated in the tissue of interest.
+- **Dosage floor-and-ceiling law now holds at FOUR independent nodes.**
+- **NEW ARM: pharmacological bone-age deceleration, with an unread randomised literature.**
 
 ---
 
