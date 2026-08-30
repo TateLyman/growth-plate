@@ -184,3 +184,9 @@ I repeatedly re-asked for papers already supplied. Memory across 25+ turns is no
 | `7307.pdf` (ProHeart 12 FOI) | 0.5 mg/kg SC depot = 12 months protection. Cmax 8.5-15.9 ng/mL, **tmax 10-30 DAYS**, little/no accumulation, **no effect on body weight**. Only **1.0-1.9% Wnt engagement** - concept right, molecule wrong |
 | `700.pdf` (ProHeart 6 FOI) | ***THE MATCHED-DOSE ROUTE PROOF.*** Depot **0.85 mg/kg SC in P-gp-null Collies = no adverse reactions**, vs **1.0 mg/kg ORAL = 4/5 coma and death**. Release rate, not dose |
 | Novotny/Boy 2002 (PMID 12213114, abstract) | selamectin PK: dog oral 24 mg/kg -> Cmax 7,630 ng/mL, **F 62%**, Cl 1.18 mL/min/kg, t1/2 14 h; cat t1/2 69 h; topical F 4.4% dog vs 74% cat; linearity to 636 ng/mL |
+
+## 2026-08-30 (6) — the "is this it" pair (R142)
+| file | what it settles |
+|---|---|
+| `gupta2005.pdf` | ⛔ **NOT human PK.** Selamectin on cotton gloves + **DOG** blood. Authors: *"no data concerning the effects in humans are currently available."* **Corrects R141: topical LABEL dose in dogs = 10.26 ng/mL = 11.5% engagement, not 52%** (Novotny's 86.5 was at 4x label) |
+| `669.pdf` (REVOLUTION FOI, NADA 141-152) | ⭐ **Closes both R140 holes.** 40 puppies from **6 weeks**, 1/3/5/**10x**, 7 treatments, **196 days**, necropsy + histopathology + **brain GFAP** = no treatment-related effects. Breeding males **3x, 17 treatments, 203 days, SERIAL SEMEN ANALYSIS** = clean. Oral 6 mg/kg in 5-8 month dogs = clean (36x the required dose). **Section VIII: human safety data "were not required"** |

@@ -1,12 +1,134 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R141
+**Last updated:** F-R142
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HONEST. **F-R142 — **NO, THIS IS NOT IT.** NEITHER PAPER CONTAINS A HUMAN BLOOD LEVEL. BUT THEY **CLOSE TWO NAMED HOLES** AND THEY **CAUGHT ME OVERSTATING A NUMBER IN MY OWN FAVOUR**.
+
+Read in full: **`Gupta 2005`** *"Human Exposure to Selamectin from Dogs Treated with Revolution"* and
+the **REVOLUTION FOI, NADA 141-152** (45 pp).
+
+### => ⛔ THE DIRECT ANSWER: `Gupta 2005` IS **NOT** HUMAN PHARMACOKINETICS — THE TITLE MISLEADS
+Six dogs, one topical label-dose application. Measured: **selamectin on COTTON GLOVES** worn while
+petting them, and selamectin in **DOG blood**. ⛔ **No human dosed. No human sampled. No human blood.**
+> **The authors, in the paper:** *"Assessing the risk that selamectin residue may present to humans is
+> difficult due to the levels absorbed by the skin as opposed to the cotton glove. **No data concerning
+> the effects in humans are currently available since selamectin is recommended for use in dogs and
+> cats.**"*
+**And its own conclusion runs AGAINST us:** *"selamectin has the potential to **bioconcentrate**, and
+therefore, its **long-term repeated exposure may pose adverse health risks**."*
+**REVOLUTION FOI Section VIII HUMAN SAFETY, in full:** *"Data on human safety… **were not required for
+approval of this NADA**."* The only human-directed content in 45 pages is a warning label.
+> ### ⛔ **THERE IS STILL NO HUMAN SELAMECTIN DATA. TWO MORE DOCUMENTS HAVE NOW FAILED TO CLOSE R141's "ONLY THING LEFT".**
+
+### => ⛔⛔ AND `Gupta` CAUGHT AN R141 ERROR — IN THE FLATTERING DIRECTION
+**R141 claimed:** *"the marketed topical dose in dogs already gives 86.5 ng/mL = 52% engagement… the
+therapeutic dose is approximately the dose that has been sold since 1999."*
+⛔ **WRONG. `Novotny`'s topical arm was 24 mg/kg — FOUR TIMES the 6 mg/kg LABEL dose.** I read a
+4x-label figure as a label figure.
+| measurement | ng/mL | uM | **% engaged** |
+|---|---|---|---|
+| `Novotny` topical **24 mg/kg (4x label)** | 86.5 | 0.1123 | 52.2% |
+| -> linear-scaled to the **6 mg/kg LABEL** | 21.6 | 0.0281 | **21.4%** |
+| ⭐ **`Gupta` topical 6 mg/kg LABEL, 72 h, n=6** | ⭐ **10.26 +/- 1.06** | 0.0133 | ⭐ **11.5%** |
+| **TARGET** | **52.9** | **0.0687** | **40%** |
+> ### **THE MARKETED PRODUCT AT THE MARKETED DOSE GIVES ~12-21% ENGAGEMENT, NOT 52%. I WAS 3-4x TOO GENEROUS, IN THE DIRECTION I WANTED. WITHDRAWN.**
+⭐ **What survives:** topical dose needed for 40% = **2.4-5.2x label**, ⭐ **and 5x TOPICAL IS A
+FORMALLY TESTED DOSE — clean in six-week-old puppies over 196 days AND in P-gp-null Collies.**
+✅ **The ORAL calculation (0.166 mg/kg) is UNAFFECTED** — it scaled within the oral dataset.
+
+### => ⭐⭐ WHAT THE FOI **DOES** CLOSE — BOTH HOLES R140 OPENED
+**1. ⭐⭐⭐ THE JUVENILE GROWTH CONCERN — ANSWERED.** R140 found moxidectin puppies at 1x and 3x
+*"gained less weight than controls."* **The selamectin counterpart (FOI 1462N-60-96-197):**
+| | |
+|---|---|
+| animals | **40 Beagle puppies (20M/20F), 6 WEEKS OF AGE** |
+| doses | saline, **1x (6), 3x (18), 5x (30), 10x (60 mg/kg)** |
+| schedule | **every 28 days x SEVEN treatments, 196 DAYS** |
+| assessments | clinical pathology before each dose; **necropsy on ALL**; **histopathology** (placebo + 10x); ⭐ **brain GFAP immunohistochemistry** (nervous-tissue injury marker) |
+| ⭐ **result** | ⭐ ***"There were NO TREATMENT-RELATED EFFECTS in any of the dogs."*** No clin-path changes, **no histopathological changes**; only hair clumping/residue at the site |
+> **196 days of repeat dosing in animals growing from six weeks, to 10x label, with necropsy, histology
+> and brain GFAP — nothing. The OPPOSITE of the moxidectin puppy finding, in a larger study, longer,
+> at a higher multiple.**
+⚠ **HONEST LIMIT: body weight is NOT in the listed parameters.** *"No treatment-related effects"* is
+strong but **I cannot claim a body-weight endpoint was measured and reported**, and it is not a length
+endpoint. **The explant and a growing-animal length study are still required.**
+**2. ⭐⭐ THE GONADAL FLAG — ANSWERED, WITH SERIAL SEMEN ANALYSIS** (FOI 1465N-60-96-196):
+20 mature male Beagles, **3x dose, every 14 days x SEVENTEEN treatments, 203 DAYS**; ⭐ **semen
+evaluated for volume, colour, pH, SPERM COUNT, MOTILITY, CYTOLOGY, MORPHOLOGY** weekly pre-treatment
+and every 28 days throughout, plus matings/litter size/congenital abnormalities →
+⭐ ***"No adverse effects… in ANY of the reproductive parameters."*** Females (226 d, through gestation
+to weaning) and cats (3x x 6 treatments) also clean.
+> ⭐ **R140's gonadal concern is CLOSED FOR SELAMECTIN.** ⚠ Topical, mature not juvenile males, and 3x
+> topical is only ~0.04 uM — **tests the marketed exposure, not the 0.069 uM therapeutic target.**
+**3. A THIRD INDEPENDENT ORAL SAFETY POINT:** oral 6 mg/kg single dose in **5-8 month Beagles**, clean
+= ⭐ **36x the required 0.166 mg/kg**, in adolescent animals, by the proposed route.
+**Selamectin's oral record now stands at three points:** 15 mg/kg in **P-gp-NULL Collies**; 6 mg/kg in
+adolescent Beagles; **required 0.166 mg/kg = 90x below the highest tolerated.**
+
+### => ⭐ SO, HONESTLY: IS THIS IT? **NO.**
+| | status |
+|---|---|
+| the target — 38-45% chondrocyte Wnt reduction | ⭐ measured (R140) |
+| the molecule — selamectin IC50 0.103 uM | ⭐ measured (R140) |
+| the oral dose — ~0.166 mg/kg | ⭐ convergent (R141) |
+| margin, P-gp-null genotype | ⭐ **90x, now THREE independent oral points** |
+| P-gp / erdafitinib interaction | ⭐ **closed by genotype (R141)** |
+| juvenile safety | ⭐ **CLOSED (this round)** |
+| gonadal safety | ⭐ **CLOSED (this round)** |
+| ⛔ **a bone LENGTH endpoint, in anything** | ⛔ **STILL ZERO** |
+| ⛔ **any human blood level** | ⛔ **STILL ZERO** |
+> ### **EVERY SAFETY QUESTION I HAVE ASKED ABOUT SELAMECTIN HAS COME BACK CLEAN — SEVEN STUDIES, TWO SPECIES, THE P-gp-NULL GENOTYPE, JUVENILES FROM SIX WEEKS, 203 DAYS OF SEMEN ANALYSIS. AND I STILL CANNOT TELL YOU WHAT ONE MILLIGRAM DOES IN A PERSON, OR WHETHER ANY DOSE OF IT LENGTHENS A SINGLE BONE.**
+**THE TWO GAPS ARE DIFFERENT IN KIND:**
+- **The human PK gap is PROCEDURAL.** A microdose study closes it; nothing in the biology blocks it.
+- ⛔⛔ **THE EFFICACY GAP IS SCIENTIFIC AND IT IS THE REAL ONE. NO MACROCYCLIC LACTONE HAS EVER BEEN
+  GIVEN TO A GROWING BONE WITH A LENGTH ENDPOINT, IN ANY SYSTEM, AT ANY DOSE.** The whole case is:
+  SPIN4 loss lowers Wnt ~40% and lengthens bone; selamectin lowers Wnt; therefore selamectin may
+  lengthen bone. **THE MIDDLE STEP HAS NEVER BEEN TESTED.**
+> **Seven clean safety studies are evidence that the EXPERIMENT IS AFFORDABLE — not evidence that the
+> agent works. I would rather be blunt about that than let them read as efficacy.**
+
+### => WHAT WOULD ACTUALLY BE "IT" — ONE SMALL EXPERIMENT
+**Fetal tibial / E16.5 femur explant. Selamectin 0.02 / 0.07 / 0.2 / 0.6 uM. Bryostatin matched as the
+internal negative control. Endpoint BONE LENGTH, plus Axin2 mRNA (calibrate to Spin4-KO's 45%),
+Sfrp5+ RZ cell count, terminal hypertrophic cell height.**
+- **~40% Axin2 reduction + Sfrp5+ RZ number up + h_term unchanged + bone longer -> the arm is REAL**
+  and the human PK study is worth doing.
+- **No lengthening, or bryostatin does it too -> the arm is DEAD** and six rounds resolve cleanly to a
+  negative. **That single experiment is worth more than every remaining document.**
+
+### => WHAT I NEED
+1. ⛔ **Still: ANY human selamectin blood level.** If it exists it will be in an **occupational
+   biomonitoring study** or a **poison-control case series** (the label directs human ingestions to a
+   physician and gives a reporting number) — **not** in the veterinary literature.
+2. ⭐ **Selamectin plasma protein binding.**
+3. **`Novotny 2000` "Safety of selamectin in dogs"** (Vet Parasitol 91:377-391) — the primary behind
+   these FOI summaries; may contain **body-weight curves** for the puppy study.
+
+### CORRECTIONS
+- ⛔ **`Gupta 2005` IS NOT HUMAN PK** — gloves and DOG blood. Authors: *"no data concerning the effects
+  in humans are currently available."* **Confirms R141's blocker rather than closing it**, and warns
+  selamectin *"has the potential to bioconcentrate."*
+- ⛔⛔ **R141's "marketed topical dose = 52% engagement" WITHDRAWN.** `Novotny`'s 86.5 ng/mL was at
+  **24 mg/kg = 4x label**; `Gupta` measures the label dose at **10.26 ng/mL = 11.5%**. **Real figure
+  ~12-21%. I was 3-4x too generous, in the direction I wanted.**
+- ⭐ **Survives:** topical dose for 40% = **2.4-5.2x label**, and **5x topical is formally tested clean**
+  in six-week-old puppies (196 d) and P-gp-null Collies.
+- ✅ **The oral dose calculation is unaffected.**
+- ⭐⭐ **R140's JUVENILE GROWTH CONCERN CLOSED FOR SELAMECTIN** — 40 puppies from 6 wk, 10x, 196 d,
+  necropsy + histopathology + brain GFAP, no treatment-related effects. ⚠ Body weight not listed among
+  parameters; not a length endpoint.
+- ⭐⭐ **R140's GONADAL FLAG CLOSED FOR SELAMECTIN** — 203 d at 3x with serial semen analysis. ⚠ Mature
+  males, marketed exposure not therapeutic target.
+- ⭐ **Third independent oral safety point** — 6 mg/kg in 5-8 month Beagles = 36x the required dose.
+- ⛔ **HUMAN BLOOD LEVEL AND BONE LENGTH ENDPOINT BOTH REMAIN AT ZERO.**
 
 ---
 
