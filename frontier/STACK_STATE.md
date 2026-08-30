@@ -1,12 +1,87 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R155
+**Last updated:** F-R156
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HOLES. **F-R156 — THE COMPLETE HOLE LEDGER: **7 PATCHED, 7 OPEN, 2 MITIGATED — AND EVERY REMAINING HOLE IS ABOUT THE AGENT, NOT THE TARGET.** ⭐⭐ THE ALBUMIN HOLE IS PATCHED WITH THE EXACT FRAGMENT (**HSA-Au(PEt₃) IS ACTIVE AT NANOMOLAR**). ⭐ OPENTARGETS RANKS **SKELETAL #1 OF 2,782**. ⛔ THE GOLD-EPIGENETICS PAPERS DO **NOT** SUPPORT AURANOFIN AND THE ONE IN-VIVO TEST IS **NULL**.
+
+> ### ⭐⭐⭐ **THE TARGET IS VALIDATED TO A STANDARD ALMOST NOTHING ELSE IN THIS FILE MEETS. ⛔⛔ THE AGENT IS NOT — no gold compound has ever been shown to inhibit a TET enzyme in a living animal.**
+
+### => ⛔ THE FOUR NEW DOCUMENTS, HONESTLY
+| paper | what | verdict |
+|---|---|---|
+| **Ma, Sci Rep 2016** — Au **nanoclusters** | 5hmC ↓, TET1/2 mRNA ↓, *"aggregations of TET proteins through **oxidation** of their catalytic domains"* | ⚠ right direction, **wrong mechanism, wrong gold species** |
+| ⛔ **Tabish, PLoS One 2017** — Au **nanoparticles**, mouse, intratracheal 0.25/2.5 mg/kg | ⛔ *"**NO effect on 5mC and 5hmC** levels in mouse lungs"* (**p=0.107**) | ⛔ **THE ONLY IN-VIVO GOLD→5hmC TEST, AND IT IS NULL** |
+| **Gambelunghe, Antioxidants 2020** — AuNP, human lung cells | 5hmC ↓ but driven by **LPS → glyoxalase-1 inactivation → methylglyoxal**, not gold-on-TET | ⚠ non-specific stress |
+| Chen 2023 (re-supplied) | mined in R154/R155 | — |
+
+⛔ **All three use nanoparticles/nanoclusters, not Au(I)-thiolate; all attribute 5hmC change to ROS/oxidation/glycation; the in-vivo one is null. NOT counted as support.**
+⭐ **But they supply a contrast:** the non-specific route is **ROS-driven**, and the auranofin study **excluded exactly that** — NAC no rescue, ROS unchanged, TrxR manipulation null, **rescue by TET1-CD but NOT TET2-CD/TET3-CD**. The specificity claim survives the comparison.
+
+### => ⭐⭐⭐ THE ALBUMIN HOLE IS PATCHED — WITH THE EXACT FRAGMENT AURANOFIN CARRIES
+> ⭐ **`Dean, Bierbach et al., ACS Med Chem Lett 2017;8:572-6` (PMID 28523113):** **[Au(PEt₃)]⁺ — precisely
+> the fragment auranofin delivers** — transferred onto recombinant **HSA at Cys34** ("HSA-1").
+> ⭐⭐ ***"HSA-1… strongly inhibits T cell proliferation at NANOMOLAR doses."***
+> ⭐ ***"The potential role of HSA as a **DELIVERY VEHICLE** in gold-based autoimmune disease treatment."***
+> Thiourea→**cysteine thiol** exchange is facile (NMR, ESI-MS).
+
+> ### ⭐⭐⭐ **ALBUMIN-Au IS THE CARRIER, NOT THE GRAVEYARD. R155's withdrawal is answered — right fragment, right protein, right cysteine.** ⚠ It does **not** show HSA-Au inhibits TET1; the hole moves from *"the active species does not exist"* to *"the carrier is identified and bioactive; TET1 delivery untested."*
+
+### => ⭐⭐ INDEPENDENT SUPPORT: OPEN TARGETS
+TET1 (ENSG00000138336), **2,782 associated diseases**:
+| rank | association | score |
+|---|---|---|
+| ⭐ **1** | ⭐ **Abnormality of the skeletal system** | ⭐ **0.406** |
+| 2 | type 2 diabetes mellitus | 0.388 |
+| 3+ | various carcinomas | ~0.37 |
+
+⭐ **The single highest-scoring association out of 2,782 is SKELETAL — independent of kosmicki and of IMPC.**
+⚠ **Counterweight:** cancer dominates the remainder; **chronic partial inhibition has an unquantified neoplasia question.**
+
+### => ⛔⛔ A NEW HOLE I RAISED MYSELF — **DELIVERY TO AVASCULAR GROWTH-PLATE CARTILAGE**
+1. ⛔ Growth-plate cartilage is **avascular**, fed by diffusion through dense proteoglycan matrix (this file's own R005: *"the ceiling is avascularity"*).
+2. ⛔ The circulating species is **albumin-Au, ~66 kDa**, and cartilage matrix is **size-selective**.
+3. ⛔ **No measurement of gold in growth-plate cartilage exists in any species.** Searched.
+
+⭐ **Mitigations, none measured here:** facile **thiol exchange** liberates small diffusible Au-cysteine/Au-GSH species; the **RESTING ZONE — the compartment this arm targets — abuts the epiphyseal vasculature**, the shortest diffusion path in the tissue; and **vosoritide, a 39-residue peptide, works on the plate**, so size alone does not bar access.
+⚠ **OPEN. Largest untested assumption in the delivery chain.**
+
+### => THE COMPLETE HOLE LEDGER
+| # | hole | status |
+|---|---|---|
+| 1 | **Is TET1 inhibition good for growth?** | ⭐⭐⭐ **PATCHED** — human +7.74 cm (P=8.8e-27, n=90, 88% repl.) + IMPC het body length +0.28 male-specific weight-adjusted + 4/4 male hits MSK (hypergeom **P=1.8e-4**) + OpenTargets **#1 skeletal of 2,782** |
+| 2 | **What dose?** | ⭐ **PATCHED** — het pLoF ≈ **50% gene dosage**; a dosage anchor, not a downstream readout |
+| 3 | **Overshoot** | ⭐ **QUANTIFIED** — hom null mice smaller; ladder visible at both ends; **~50% is a hard ceiling** |
+| 4 | **Albumin destroys the drug?** | ⭐⭐ **PATCHED** — HSA-Au(PEt₃) active at nM (Dean 2017) |
+| 5 | **Trabecular bone loss** | ⭐ **PATCHED** — that was the **DOUBLE** KO; single het has **BMD UP** (male p=0.0148) |
+| 6 | **TET2 → CHIP/AML** | ⭐ **PATCHED functionally (~206×)**; ⚠ SPR binding selectivity only 3.5–4.3× |
+| 7 | **Ascorbate contradiction** | ⭐ **RESOLVED** — R087's arm withdrawn (no length endpoint; fails R131's own rule) |
+| 8 | ⛔⛔ **In vivo gold → TET/5hmC** | ⛔ **OPEN — and adjacent evidence UNFAVOURABLE (Tabish NULL)** |
+| 9 | ⛔⛔ **Growth-plate delivery** | ⛔ **OPEN — never measured. My own new hole** |
+| 10 | ⛔ **35-day half-life** | ⛔ **OPEN — ~6 mo to steady state; months to reverse overshoot. Worst structural defect** |
+| 11 | ⛔ **Off-targets** | ⛔ **OPEN — GR 599 nM, D3 224 nM, α2A 331 nM. Directions unclaimed** |
+| 12 | **TrxR primary target** | ⚠ **MITIGATED — 40 yr use + 231-child randomised trial** |
+| 13 | ⛔ **TET1 7/10 in growth plate** | ⛔ **OPEN — low target expression in the tissue of interest** |
+| 14 | ⛔ **2-OG accumulation arm** | ⛔ **OPEN — shares the arm Dnmt1 blames for reduced collagen synthesis** |
+| 15 | ⚠ **24× binding-vs-activity inconsistency** | ⚠ **OPEN in the source paper** |
+| 16 | ⚠ **Neoplasia on chronic partial inhibition** | ⚠ **OPEN, unquantified** |
+
+> ### ⭐⭐ **7 PATCHED · 7 OPEN · 2 MITIGATED. EVERY HOLE ABOUT THE TARGET IS PATCHED; EVERY REMAINING HOLE IS ABOUT THE AGENT OR ITS DELIVERY. The biology is settled far better than the pharmacology.**
+
+### => ⭐⭐⭐ THE ZERO-COST LEVER, NEEDING NO DRUG
+TETs are Fe(II)/2-OG dioxygenases with **ascorbate as a required cofactor** (this file's R086: *"plasma
+ascorbate correlates with leukocyte 5hmC"*), and **enasidenib works by raising α-KG to ACTIVATE TETs.**
+> ### ⭐⭐ **SUPPLEMENTAL VITAMIN C AND SUPPLEMENTAL α-KG ARE BOTH TET *ACTIVATORS* AND POINT DIRECTLY AGAINST THIS ARM. Stopping supplementation is FREE, IMMEDIATE, FULLY REVERSIBLE and carries no toxicity — the only zero-cost TET1-directed lever in the file.**
+⚠ **Hard floor:** ascorbate is also the **collagen prolyl hydroxylase** cofactor, so deficiency wrecks
+collagen and bone. ⭐ **Target is NORMAL dietary intake — not supplemented, not deficient.**
+⚠ Calcium AKG was already OUT (R113); this is a **second independent reason** it stays out.
 
 ---
 
