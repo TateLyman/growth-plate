@@ -1,12 +1,47 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R157
+**Last updated:** F-R158
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-CONTRA. **F-R158 — ⛔ 4 OF 5 DOCUMENTS UNREACHABLE. ⛔⛔ BUT THE SEARCH FOUND A **DIRECT TET1 KNOCKDOWN** SUPPRESSING HUMAN MSC PROLIFERATION, AND **VITAMIN C AS A TET1 ACTIVATOR ALLEVIATING OSTEOPOROSIS IN AGED MICE IN VIVO** — SO **R156's "STOP VITAMIN C" ADVICE IS WITHDRAWN.**
+
+### => THE DOCUMENT HUNT, HONESTLY
+| # | target | status |
+|---|---|---|
+| 1 | 任安琪 WUST MSc thesis | ⛔ **NOT OBTAINABLE** — 5 verbatim Chinese searches null; ResearchGate **403**; CNKI paywalled and **not routed around** |
+| 2 | SIOP 2024 #870 poster | ⛔ **NOT OBTAINABLE, and NO FULL PAPER EXISTS** (Europe PMC: TXNRD2+neuroblastoma 89 hits, TXNRD2+IRAK1 29 — none is it) |
+| 3 | NSFC 82100193 report | ⛔ portals login-gated / unreachable. ⭐ **Project confirmed real & complete:** *FGF2–FGFR1 in T-ALL LSCs*, Zhu Haichuan, 2022-01→2024-12 |
+| 4 | other 祝海川 theses | ⛔ not found openly |
+| 5 | JHO Additional file 2 | ⭐ **ALREADY IN HAND, mined in R155** (S3 KDs, S8 selectivity) |
+
+### => ⛔⛔ WHAT THE SEARCH FOUND INSTEAD — THE STRONGEST CHALLENGE THIS ARM HAS MET
+> **`Ho, Hung et al., Nat Commun 2025` (PMC12748648) — "TRIM37–PARP1–**TET1** axis maintains stemness and **prevents osteoporosis**… via **5hmC** regulation."**
+> ⛔ *"**TET1 knockdown reduces 5hmC levels, and SUPPRESSES the proliferation and differentiation potential of early human MSCs**."*
+> ⛔ *"early MSCs with TET1 KD exhibited **reduced cell growth** and decreased differentiation potential."*
+> ⛔ *"**5hmC is crucial for MSC growth and differentiation potential**."*
+> ⭐ *"Co-treatment with resveratrol and **VITAMIN C (TET1 activator)** rejuvenates late MSCs… **alleviates OSTEOPOROSIS IN AGED MICE**… enhances **bone regeneration in vivo**."*
+
+**TET1-specific (not the double KO), PARTIAL loss (shRNA), HUMAN cells, with an IN VIVO bone endpoint.**
+
+> ### ⛔⛔ **R156's "STOPPING VITAMIN C IS A FREE, ZERO-COST LEVER" IS WITHDRAWN. That was actionable advice and it was wrong to state as free — there is now an in vivo mouse bone endpoint on the other side. ⭐ The vitamin C question is UNRESOLVED; normal dietary intake stands as the NEUTRAL DEFAULT, not a move in our favour.**
+
+### => ⭐ THE WEIGHING
+⛔ **Serious because:** TET1-specific · partial loss · human cells · in vivo bone endpoint · **converges with R087/Thaler** (raising 5hmC in growth-plate chondrocytes delayed hypertrophy, maintained proliferative state). **Two independent lines now say raising 5hmC helps the mesenchymal compartment.**
+
+⭐ **Limited because:**
+1. ⭐⭐⭐ **IMPC MEASURED BMD IN THE EXACT Tet1 HETEROZYGOTE AND IT IS *UP* (male p=0.0148), WITH BODY LENGTH UP ALONGSIDE.** If haploinsufficiency caused MSC senescence and osteoporosis, BMD would FALL. **Same genotype, systematic measurement, opposite direction.**
+2. ⭐ **MAGNITUDE:** shRNA KD removes 70–90%; het pLoF ~50%. **R137's ladder deciding the answer for the third time** (Wnt, Tet1-null vs het, now this).
+3. ⭐ **COMPARTMENT:** searched the paper — **"chondrocyte" 0 · "bone length" 0 · "femur length" 0**; "growth plate" twice in passing. It is entirely **bone-MASS** biology, and mass ≠ length in this file's own identity.
+4. ⭐ **ENDPOINT:** a cell proliferation assay does not outrank **+7.74 cm final adult height in 90 humans, P=8.84e-27**.
+
+> ### ⭐⭐ **RECONCILIATION (labelled as REASONING, NOT DATA): deep TET1 loss is bad for MSC proliferation and bone mass; ~50% loss is good for adult height. Ho's mice are AGED with LOW baseline 5hmC — restoring toward normal helps them. A healthy adolescent moving from normal to −50% is a DIFFERENT MOVE ON THE SAME CURVE.**
 
 ---
 
