@@ -1,12 +1,108 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R133
+**Last updated:** F-R134
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-OFFTARGET. **F-R134 — THE OFF-TARGETS ARE UNSPECIFIED BY ANYONE. SPIN4 IS VinSpinIn's **WEAKEST** TARGET. MY SPIN1 ARGUMENT WAS WRONG. THE REAL RISK IS **ON-TARGET NEOPLASIA**.**
+
+### => ⭐ "SPECIFY THE OFF-TARGETS" — I CANNOT, AND NEITHER CAN ANYONE. THAT IS THE FINDING.
+From the Chemical Probes Portal entry for VinSpinIn:
+- **NO off-target proteins named. NO IC50s. NO affinities. NO concentration. NO cell type.**
+- Selectivity assessed **ONLY against the four SPIN subfamily members** (ITC + DSF)
+- Reviewer: *"both the active AND inactive compounds displayed toxicity, **implying off-target effects**"*;
+  **"toxicity issues relating to this series" persist "despite significant effort"**
+- cellular working range **0.5-3 uM**; **NO in vivo statement exists on the entry at all**
+> **An UNATTRIBUTED toxicity that survived a med-chem campaign and is present in the purpose-built INACTIVE
+> control is WORSE than a named off-target. You cannot design around what nobody has identified, and you
+> cannot dose-separate it from the on-target effect because the inactive twin carries it too.**
+
+### => ⭐⭐ THE SELECTIVITY IS WORSE THAN "SPIN1-FIRST" — **SPIN4 IS LAST**
+| target | ΔTm | other |
+|---|---|---|
+| **SPIN3** | **14.12** | |
+| **SPIN1** | **13.17** | Kd 9.9 nM; IC50 33 nM; **cellular EC50 270 nM** |
+| **SPIN2B** | **10.47** | |
+| **SPIN4** | **6.53** | ⛔ **LOWEST engagement of the four** |
+> **VinSpinIn binds SPIN4 the MOST WEAKLY of every family member it touches, and its cellular EC50 is
+> measured against SPIN1. To reach meaningful SPIN4 occupancy you must first saturate SPIN3, SPIN1 and
+> SPIN2B — carrying an unidentified toxicity.**
+**The correct objection is not "SPIN1 is essential" but "this molecule CANNOT deliver SPIN4 engagement as
+its dominant pharmacology, by its own selectivity data."**
+
+### => ⛔ MY SPIN1-LETHALITY ARGUMENT IS WITHDRAWN — OPERATOR CORRECT
+**Germline Spin1-null lethality is a DEVELOPMENTAL phenotype and does not establish that acute SPIN1
+inhibition in an adolescent is harmful.** I made exactly this germline-vs-acute distinction for SPIN4 one
+round earlier and failed to apply it to SPIN1. **And SPIN1 inhibitors are in oncology development, which
+presupposes acute inhibition is tolerable.** The question that mattered — does SPIN1 inhibition affect
+longitudinal growth — **I asserted "essential" instead of answering, and it remains UNKNOWN. Recorded as
+unknown, NOT as an objection.**
+
+### => ⭐⭐⭐ THE REAL OBJECTION IS **ON-TARGET**, AND IT IS MEASURED
+**Lui JC, Hannula I, Rama-Krishnan A, Dong L, Baron J. bioRxiv 8 Feb 2026 — Spin4 ablation in AGING mice,
+18-month endpoint.**
+**GROWTH CONFIRMS THE TARGET:**
+| | Spin4^Y/- | WT | P |
+|---|---|---|---|
+| **body length, males** | **10.80 cm** | **10.28 cm** | **0.002 (+5.06%)** |
+| body weight | 46.39 g | 42.71 g | 0.06 NS |
+| **lean/fat/body composition** | — | — | **NO significant effect** |
+| **bone mineral density + content** | — | — | **NO difference** |
+| females (het) | 10.31 | 10.01 | 0.128 NS |
+**AND THEN THE CANCER RESULT:**
+| | tumours | |
+|---|---|---|
+| **WT males** | **0 / 17** | |
+| **Spin4^Y/- males** | **5 / 19** | **P = 0.047** two-sided Fisher |
+| WT females | 3/15 | |
+| Spin4^+/- females | 3/23 | P = 0.66 NS |
+Male tumours: histiocytic sarcoma + mesenteric lymphoma (common in aged C57BL/6) **PLUS two
+bronchiolo-alveolar carcinomas and one cranial osteoma, which the authors flag as NOT common.**
+> **ON-TARGET. It CANNOT be engineered away with better selectivity, a cleaner molecule, or an oligo — it is
+> what losing SPIN4 does.** Class signature: BWS, Sotos, Weaver, Tatton-Brown-Rahman all carry raised
+> malignancy risk.
+**⚖️ HONEST COUNTERWEIGHTS, RAISED BY THE AUTHORS THEMSELVES:**
+1. **n=19 vs 17, five events vs zero, P=0.047 — right at the boundary.** One event either way moves it.
+2. ⭐ **The human expression data CONTRADICTS the simple model.** Authors predicted SPIN4 would be
+   DOWNregulated in cancers; **instead SPIN4 is ELEVATED in many human cancers (P=0.0008)**, as are EZH2
+   (P<0.0001) and DNMT3A (P=0.0057) — *"contrary to our prediction."* **A gene UP in tumours is a poor fit
+   for a tumour suppressor whose loss causes them.**
+3. **Female heterozygotes showed NO increase (P=0.66).**
+
+### => THE MECHANISM (Lui 2023) — EXACTLY THE TERM WE WANT
+| zone | Spin4-KO |
+|---|---|
+| **resting zone** | ⭐ **significant INCREASE in zone height**; increased progenitor chondrocyte number |
+| **proliferative zone** | **NO change** in height, cells/column, or cell height — **but INCREASED proliferation rate (EdU)** |
+| **hypertrophic zone** | **NO change** in height, cells/column, or **terminal cell height** |
+| mechanism | **DECREASED canonical Wnt signalling in growth-plate chondrocytes** — offered as the explanation for increased RZ number |
+**SPIN4 loss raises N AND proliferation rate and leaves h_term COMPLETELY UNTOUCHED — a pure N-and-flux
+intervention with no borrowing from terminal cell size. The cleanest term profile of anything in this file.**
+**Also: ablation of TUDOR-LIKE DOMAIN 3 ALONE was sufficient to promote growth in vivo and impair histone
+binding** — names the exact sub-domain a selective agent must target.
+
+### => ⚠ DOSAGE WARNING THAT GENERALISES ACROSS THE CLASS
+Same paper: in humans **heterozygous PARTIAL** loss of NSD1 (Sotos) and EZH2 (Weaver) **INCREASES** growth;
+in mice **homozygous COMPLETE** loss of Nsd1 or Ezh1/Ezh2 **IMPAIRS** growth.
+> **PARTIAL LOSS GROWS. COMPLETE LOSS SHORTENS.** Already found for PRC2 (R113), now generalised.
+> **Any SPIN4 knockdown has a therapeutic window with a FLOOR as well as a ceiling — too much is not more
+> growth, it is less.**
+
+### CORRECTIONS
+- **Off-targets are UNSPECIFIED by anyone** — unattributed toxicity, present in the inactive control.
+- **Selectivity objection CORRECTED and SHARPENED: SPIN4 is VinSpinIn's WEAKEST target (ΔTm 6.53 vs 13-14).**
+- **SPIN1-lethality argument WITHDRAWN** as a germline-vs-acute error; SPIN1-and-growth recorded UNKNOWN.
+- **Real objection is ON-TARGET neoplasia** (5/19 vs 0/17, P=0.047, uncommon types), counterweighted by small
+  n and by SPIN4 being ELEVATED in human cancers.
+- **Target profile confirmed IDEAL:** +5.06% length to 18 months, RZ height up, proliferation up, **h_term
+  untouched**, no BMD or adiposity penalty.
+- **NEW CONSTRAINT: partial knockdown only.**
 
 ---
 
