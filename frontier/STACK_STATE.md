@@ -1,12 +1,126 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R153
+**Last updated:** F-R154
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-TET1. **F-R154 — ⭐⭐⭐ THE AGENT EXISTS AND IT IS **AURANOFIN**: FDA-APPROVED, ORAL, **TET1 IC50 76 nM**, 2-OG-COMPETITIVE, **≥13× SELECTIVE OVER TET2**, AND ALREADY GIVEN TO **231 CHILDREN IN A RANDOMISED PLACEBO-CONTROLLED TRIAL** + 88 FOR **FIVE YEARS**. THE DOSE BAND **BRACKETS** THE TARGET. ⛔⛔ AND IT COLLIDES HEAD-ON WITH **ASCORBATE, WHICH R087 PUT IN THE STACK.**
+
+### => THE HUMAN GENETICS, VERIFIED COLUMN BY COLUMN (kosmicki Table S5)
+| | discovery | replication | **combined** |
+|---|---|---|---|
+| effect | **+8.32 cm** | **+7.29 cm** | ⭐ **+7.74 cm** |
+| P | 2.23e-14 | 4.47e-14 | ⭐ **8.84e-27** |
+| hets | 42 | 48 | **90** |
+| homozygotes | 0 | 0 | **0** |
+
+Gene-level (S4) **P=3.89e-39**. ⭐ **Table S6 missense allelic series, dose-graded, ALL POSITIVE:**
++0.289 cm (<0.01%), +0.188 (<0.1%), +0.135 (<0.5%), +0.134 (<1%).
+⭐ **BEST REPLICATION RETENTION OF THE WHOLE POSITIVE SET — 88%** (NRK 81, FBN1 72, LCORL 70, ZFAT 70, ⛔ CHD8 45).
+
+### => ⭐⭐ THE DOSE ANCHOR
+> ### **Het pLoF = ~50% gene dosage → +7.74 cm in 90 people. THE VALIDATED PERTURBATION IS ~50% LOSS OF TET1 ACTIVITY.** ⭐ **Cleaner than SPIN4's 38–45%, which was a downstream readout — this is GENE DOSAGE, the same quantity a drug titrates.**
+
+⚠ **"0 homozygotes" CORRECTED AS UNINFORMATIVE:** expected N·p² = **0.0015**. Zero is what chance predicts.
+Complete TET1 loss is **untested in humans**, not shown intolerable. (Contrast NRK, X-linked, 34 nulls — that WAS informative.)
+
+### => EXPRESSION IN HUMAN GROWTH PLATE (GSE9160, corrected 60th-pct threshold)
+| gene | probe | detected | range |
+|---|---|---|---|
+| COL2A1 | 213492_at | 10/10 | 44,607–104,438 (control) |
+| ⚠ **TET1** | 228906_at | ⚠ **7/10** | **210–753 — present but WEAK** |
+| TET2 | 227624_at | 7/10 | 92–973 |
+| TET3 | — | 2–5/10 | ⛔ background |
+| ⭐ **DNMT1** | 201697_s_at | ⭐ **10/10** | **978–4,722 robust** |
+| ⭐ IDH1/IDH2 | | **10/10** | 2-OG supply robust |
+
+⛔ **NO ZONAL CLAIM IS MADE** — values are 1–2× threshold and that is exactly how the SPIN4 error happened.
+
+### => ⭐⭐⭐ THE AGENT — AURANOFIN (`Chen, J Hematol Oncol 2023`, PMID 37993905, OA)
+Found by structure-guided virtual screening + HTS of **2,059 FDA/EMA-approved drugs**.
+| | |
+|---|---|
+| ⭐ **TET1 IC50** | ⭐ **76 nM** · KD (SPR) 1.804 µM · cellular 5hmC ↓ at **0.1 µM** |
+| ⭐ **mechanism** | **direct, competitive at the 2-OG/Fe(II) pocket** (NOG and Fe(II) compete it off; raising 2-OG attenuates) |
+| ⭐ **selectivity** | ⭐ **≥13× over TET2** (the CHIP/AML gene) **and KDM6B** |
+| ⭐ **TrxR/ROS confound** | ⭐ **experimentally EXCLUDED** |
+| ⭐ **status** | ⭐ **FDA-approved (max_phase 4), oral, in use since 1985** |
+
+### => ⭐⭐⭐ PAEDIATRIC RANDOMISED EXPOSURE — NO OTHER CANDIDATE IN THIS FILE HAS EVER HAD THIS
+> **`Giannini, Arthritis Rheum 1990;33:466–76`** — USA–USSR **double-blind randomised placebo-controlled**,
+> **n=231 CHILDREN** with JRA, auranofin **0.15–0.20 mg/kg/day**, 6 months.
+> **`Giannini, J Rheumatol 1991;18:1240–2`** — **88 children**, open-label extension, mean 646 days,
+> **11 completed FIVE YEARS**, *"relatively well tolerated."*
+
+### => THE DOSE ARITHMETIC
+Phase I healthy volunteers: **Cmax 0.312 µg/mL gold = 1.58 µM total = 21× the IC50**; t½ ≈ **35 days**.
+⚠ **Protein binding stated explicitly because R141 is where I overstated a number:** gold rides albumin Cys34,
+total gold ≠ free auranofin.
+| free fraction | free conc | **engagement** | |
+|---|---|---|---|
+| 100% | 1.584 µM | 95.4% | ⛔ overshoot |
+| 10% | 0.158 µM | 67.6% | ⛔ overshoot |
+| ⭐ **5%** | **0.079 µM** | ⭐ **51.0%** | ⭐ **ON TARGET** |
+| 2% | 0.032 µM | 29.4% | below |
+| 1% | 0.016 µM | 17.2% | below |
+
+> ⭐ **THE 50% TARGET SITS INSIDE THE BAND** — same structure as R148. ⭐ **The failure mode is OVERSHOOT, which is fixable by dosing less** — the inverse of moxidectin's unfixable 10× shortfall.
+
+⭐⭐ **BUILT-IN BRAKE:** auranofin is 2-OG-competitive, and TET inhibition **raises** 2-OG (Dnmt1 paper), so
+**rising 2-OG competes auranofin off TET1 — negative feedback that self-limits toward PARTIAL inhibition**,
+the exact regime the genetics validates.
+
+### => ⛔⛔⛔ HOLE 1 — **IT CONTRADICTS ASCORBATE, WHICH F-R087 PUT IN THE STACK, IN THE SAME CELL TYPE**
+R087 kept ascorbate **to RAISE 5hmC = to ACTIVATE TETs** in growth-plate chondrocytes (Thaler 2019:
+5hmC +30–90%/+160–790%, *"delayed maturation toward hypertrophy"*); R086: *"TETs are Fe(II)/α-KG
+dioxygenases **with ascorbate as cofactor**… reaches the same output as DNMT3A inhibition."*
+
+> ### ⛔⛔⛔ **R087 ADDS AN AGENT TO ACTIVATE TETs IN GROWTH-PLATE CHONDROCYTES. R154 PROPOSES A DRUG TO INHIBIT TET1 IN THE SAME CELLS. BOTH CANNOT BE RIGHT AND BOTH CANNOT BE IN THE STACK.**
+
+| | ascorbate (R087) | ⭐ TET1 inhibition |
+|---|---|---|
+| endpoint | ⛔ **5hmC + markers, in vitro, 3 d. NO LENGTH.** | ⭐ **ADULT HEIGHT, 90 humans** |
+| stats | Col10 only **P<0.1** | ⭐ **P=8.8e-27, 88% replication** |
+| dose | ⛔ **284 µM in vitro vs ~70–80 µM plasma — 4× gap, my own file called it unbridged** | band brackets target |
+| attribution | ⛔ **pleiotropic** (antioxidant; collagen prolyl hydroxylase cofactor) | direct, ≥13× selective |
+| ⭐ **passes R131's rule?** | ⛔ **NO — never should have been IN** | ⭐ yes |
+
+⭐ **Second, independent contradiction:** ascorbate raises 5hmC = more demethylation, but the **Dnmt1 paper
+shows hypomethylation ACCELERATES differentiation and SHORTENS bone by up to 55%.**
+⛔ **VERDICT: F-R087's "ASCORBATE: KEEP" is WITHDRAWN.** ⚠ Not "harmful" — **never earned**, and incompatible with this arm.
+
+### => ⛔ THE REST OF THE HOLES
+2. ⛔⛔ **Tet1-NULL MICE ARE SMALLER** (*"viable but smaller"*; *"slightly smaller body size at birth"*).
+   ⭐ **R137's magnitude ladder again — partial good, complete harmful. Overshoot has a PUBLISHED phenotype,
+   so the ~50% ceiling is a hard constraint.** ⚠ Mitigating: prenatal body size ≠ pubertal bone length; germline null ≠ adult partial inhibition.
+3. ⛔ **THE 2-OG ARM CUTS AGAINST US:** Dnmt1 paper — reduced demethylation demand → **2-OG accumulates →
+   collagen prolyl hydroxylase up → collagen synthesis DOWN.** TET1 inhibition shares that arm. **The
+   mechanism is NOT clean; the human net is +7.74 cm.**
+4. ⛔ **Tet1/Tet2 DOUBLE KO in Prx1:Cre reduces trabecular bone** — mass not length, double KO, but the same driver that refuted verteporfin.
+5. ⛔ **35-DAY HALF-LIFE** — ~6 months to steady state, months to reverse an overshoot. Serious operational defect for a "hit 50%, don't exceed" agent.
+6. ⛔ **OFF-TARGETS within 3–8× of the TET1 IC50:** D3 224 nM · α2A 331 · α2B 363 · D4 394 · ⚠ **GR 599** · A3 954 · Fyn 1197. **Directions NOT claimed.**
+7. ⛔ **TrxR is the canonical target — ratio backwards** (the VinSpinIn objection). ⭐ Mitigated by 40 years of human use + the 231-child trial characterising that engagement.
+8. ⛔ **FREE FRACTION UNKNOWN** — the whole calculation is a band. **This is the R141 error class.**
+9. ⛔ **TET1 only 7/10 in growth plate.**
+10. ⚠ **Gold toxicity:** diarrhoea (dose-limiting), rash, **proteinuria/nephropathy**, thrombocytopenia, hepatotoxicity — accumulating on a 35-day t½.
+
+### => ⭐⭐⭐ WHAT WOULD SETTLE IT — A DOCUMENT, NOT AN EXPERIMENT
+> ⭐⭐ **`Giannini, Arthritis Rheum 1990;33:466–76` FULL TEXT** (231 children, randomised, placebo-controlled)
+> **and `J Rheumatol 1991;18:1240–2`** (88 children, 5 years). **JRA trials routinely record height and
+> growth velocity because growth failure is a core disease outcome. If either reports height by arm, this
+> programme has a RANDOMISED PLACEBO-CONTROLLED PAEDIATRIC GROWTH READOUT ON A TET1 INHIBITOR — more than
+> any agent in the file has ever had, including the ones already in the stack.**
+Secondary: the auranofin paper's **Additional file 2 Fig. S8** (turn "≥13×" into a number); any
+**free vs albumin-bound auranofin** measurement.
+
+⚠ **HIF-PHIs stay OUT** — they were rejected in R113 on a GOF test; the 2-OG/TET rationale flagged in R153
+is a different rationale and is **not** reinstated here without its own assessment.
 
 ---
 
