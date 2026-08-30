@@ -1,12 +1,95 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R126
+**Last updated:** F-R127
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-DHT. **F-R127 — ANDROGEN ACTS VIA **DHT**, ON THE **GROWTH ZONE**, BY **DEPLETING THE STEM SOURCE**. NAAS REDUNDANT. MY R126 AR-AS-N-AGENT HYPOTHESIS REFUTED. ONE CONTRAINDICATION FOUND.**
+
+### => THE TWO SUPPLIED PAPERS
+**Raz, Nasatzky, Boyan, Ornoy & Schwartz 2005, J Cell Biochem 95:108-19 (PMID 15723286)** — rat
+costochondral RC and GC (prehypertrophic + upper hypertrophic) cells, male and female:
+- **Only MALE cells respond to testosterone**, though receptors present in both
+- **GC: T and DHT gave COMPARABLE dose-dependent increases in [3H]-thymidine AND alkaline phosphatase**
+- ⭐ **RC: testosterone DECREASED DNA synthesis; DHT had NO effect.** ALP unaffected by either
+- ⭐⭐ **FINASTERIDE (1/5/10 ug/mL) reduced the GC response to T DOSE-DEPENDENTLY — METABOLISM TO DHT IS REQUIRED**
+- Both sexes express **SRD5A1**, **neither SRD5A2**; **only MALE cells have 5a-reductase ACTIVITY**; female
+  cells fail to respond because they **AROMATISE** instead
+
+**Peralta, Arnold, Currie & Thonney 1994, J Anim Sci 72:2629** — 20 rams / 20 wethers / 20 wethers+T,
+10 slaughter ages 49-217 d, metacarpal physis:
+- **T increased metacarpal WEIGHT and LENGTH (P<0.03)**
+- **Length gain associated with higher PROLIFERATIVE-zone labeling index (P<0.05)**
+- ⭐⭐⭐ **Authors' own mechanism: *"Testosterone may mediate this accelerated growth by first increasing
+  bone growth and THEN DEPLETING THE SOURCE OF STEM CELLS in the cartilage growth plate."***
+
+### => ⭐⭐⭐ THE COHERENT MODEL = R125'S EXHAUSTION THESIS, IN THE 1994 AUTHORS' OWN WORDS
+> **ANDROGEN PULLS CELLS OUT OF THE RESTING ZONE INTO THE GROWTH ZONE, DRIVES PROLIFERATION THERE, AND
+> DEPLETES THE STEM SOURCE. IT IS A POOL-SPENDING AGENT.**
+Raz: T ↓ RC DNA synthesis; T and DHT ↑ GC thymidine. Peralta: ↑ PZ labeling, ↑ length, **then depletion.**
+
+### => ⛔ WHICH REFUTES MY OWN R126 HYPOTHESIS ONE ROUND AFTER I RAISED IT
+R126 found AR is the highest-expressed sex-steroid receptor in the human resting zone (1077 vs ESR1 278,
+r=+0.671 with the stem signature) and proposed **AR as an N agent. REFUTED BY FUNCTION:** T DECREASES RC
+DNA synthesis, DHT does NOTHING in RC, and T DEPLETES the stem source.
+**Androgen is a GROWTH-ZONE agent, NOT an N agent. High AR expression in the resting zone does not mean
+androgen EXPANDS it — it means androgen EMPTIES it.** Expression located the receptor; function inverted
+the prediction. **R126's AR-as-N entry WITHDRAWN.**
+
+### => NAAS VERDICT: REDUNDANT — AND NOW FOR THE RIGHT REASON
+R126 argued from receptor occupancy. **That was weak. The strong argument:**
+1. **DHT IS THE ACTIVE SPECIES** — finasteride abolishes T's effect. The plate's androgen response is
+   ALREADY a non-aromatisable-androgen response.
+2. **The plate makes its own DHT via SRD5A1** — present in all zones of the human plate (R126: 208-320),
+   and it is the **type-1** isoform, exactly the one Raz identifies as active.
+3. **An AI raises T ~2x** (265->513 ng/dL; letrozole 2.5x) **while blocking diversion to E2** — more
+   substrate reaches SRD5A1.
+4. **SRD5A1 Km for T is low-uM while tissue T sits far below it** -> enzyme UNSATURATED -> **local DHT
+   scales ~linearly with T.**
+> **ON AN AI THE PLATE IS ALREADY GENERATING ~DOUBLE ITS NORMAL LOCAL DHT, THROUGH THE EXACT ENZYME RAZ
+> SHOWS IS REQUIRED, ACTING ON THE EXACT ZONE RAZ AND PERALTA SHOW RESPONDS. A NAAS IS A DOSE INCREMENT ON
+> A PATHWAY ALREADY RUNNING AT DOUBLE STRENGTH — NOT A NEW MECHANISM.**
+**And the rate-yield cost now argues against pushing further:** androgen's mechanism IS pool depletion
+(Peralta), and under A ∝ throughput^-0.150 driving depletion harder spends a small remaining pool at
+reduced amplification. **At BA16 that is the high-dose-GH failure mode wearing a different hat.**
+**Confirmed by the only direct human test in the right sex with intact gonads: oxandrolone in CDGP, NO
+significant final-height effect.**
+**WHAT WOULD OVERTURN IT:** evidence that 5a-reductase capacity is RATE-LIMITING at 2x testosterone. If it
+saturates, a direct DHT-class agent bypasses the bottleneck. **No growth-plate 5a-reductase kinetics at
+supraphysiological substrate exists that I can find.**
+
+### => ⭐⭐ ACTIONABLE FINDING NOBODY HAD FLAGGED
+> **5a-REDUCTASE INHIBITORS ARE CONTRAINDICATED IN THIS STACK.**
+**Finasteride reduced the plate's response to testosterone dose-dependently; dutasteride blocks both
+isoforms.** These are extremely common in young men (androgenetic alopecia) — **and finasteride is
+frequently taken ALONGSIDE an aromatase inhibitor precisely because AI-raised testosterone worsens hair
+loss.** It would block the growth plate's entire androgen response at the required enzymatic step **and do
+so silently — serum testosterone would look fine or better.**
+**FIRST DRUG-DRUG INTERACTION IDENTIFIED IN THIS PROGRAMME, and highly likely in this exact population.**
+Also: **sex-specificity is favourable — male cells have the 5a-reductase activity, female cells do not.**
+
+### => ⚠️ CANNOT FIND THE KANG PAPER — AND THE SEARCH IS INFORMATIVE
+PubMed `Kang[Author] AND androgen receptor AND chondrocyte AND 2016[PDAT]` -> **0**;
+`androgen receptor AND chondrogenic proliferation AND endochondral ossification` -> **0**;
+`Col2a1-Cre AND androgen receptor AND cartilage` -> **0**; Europe PMC exact title -> **0**;
+**Europe PMC `TITLE:"androgen receptor" AND TITLE:chondro*` -> 0 HITS.**
+**Zero papers with both terms in the title is strong evidence it is not indexed as described.**
+**⭐ NEED FROM OPERATOR: DOI, PMID, or the PDF.** It is the one document that could overturn the section
+above — a Col2-ARKO with growth-plate ZONE measurements is the direct functional test of whether AR loss
+depletes or preserves the resting zone, and Raz's in-vitro result is not a substitute.
+
+### CORRECTIONS
+- **R126's "AR as an N-compartment target" WITHDRAWN** — androgen empties the resting zone, not expands it.
+- **NAAS redundancy UPHELD but RE-ARGUED** — from receptor occupancy (weak) to DHT-is-active-species +
+  unsaturated SRD5A1 already fed double substrate by the AI (strong).
+- **R125's exhaustion principle INDEPENDENTLY CONFIRMED** by Peralta 1994, in the authors' own words.
+- **NEW: 5a-reductase inhibitors CONTRAINDICATED.**
 
 ---
 
