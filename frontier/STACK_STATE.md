@@ -1,12 +1,66 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R158
+**Last updated:** F-R159
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-LADDER. **F-R159 — ⛔⛔ THE COMPARTMENT GAP IS CLOSED AND IT IS **NEGATIVE AT COMPLETE LOSS**: `Tet1−/−` EMBRYOS ARE **6–10% SHORTER**, IN THE GROWTH PLATE, AND TET1 KD **BLOCKS SOX9 BINDING TO `Col2a1` AND `Acan`**. ⭐⭐⭐ BUT IT COMPLETES THE LADDER WITH **BODY LENGTH AT BOTH ENDS IN ONE SPECIES** — STRONGEST SUPPORT *AND* SHARPEST WARNING. ⚠ TWO NEW HOLES: **ACAN** AND **CYP2C9/3A4 × ERDAFITINIB**.
+
+### => ⛔⛔ THE PAPER R158 SAID DIDN'T EXIST
+> **`Smeriglio, Grandi, Taylor, Zalc & Bhutani, JBMR Plus 2020` (PMC7587462), Stanford Orthopaedics —
+> "TET1 Directs Chondrogenic Differentiation by Regulating **SOX9**-Dependent Activation of **Col2a1** and **Acan**."**
+
+| | |
+|---|---|
+| ⛔ *"**Knockdown of Tet1 via shRNAs BLOCKED ATDC5 chondrogenic differentiation**"* | 40–60% loss of total 5hmC |
+| ⛔ *"**54% of downregulated genes were SOX9 targets**"* | the master chondrogenic programme |
+| ⛔ *"**SOX9 is unable to bind Col2a1 and Acan after Tet1 KD**, despite no change in SOX9 levels"* | mechanism |
+| ⛔⛔ *"genetic loss of TET1 **in the growth plate**… **Tet1−/− embryos ~10% smaller**"* | ⛔ **BODY LENGTH endpoint** |
+| ⛔ E13.5: WT **10.3±0.2 mm** vs Tet1−/− **9.7±0.3 mm** | ⛔ **−6%** |
+| ⛔ E17.5: WT **20.8±1.0 mm**, null ~10% smaller | ⛔ **−10%** |
+
+**Searched for a het: `Tet1+/−` appears ZERO times. Nulls only.** ⚠ **R158 said nobody had looked at the growth plate. Someone had, and I should have found it a round earlier.**
+
+### => ⭐⭐⭐ THE LADDER, NOW WITH BODY LENGTH AT BOTH ENDS IN THE SAME SPECIES
+| dosage | system | endpoint | result |
+|---|---|---|---|
+| ⛔ **0% (Tet1−/−)** | mouse embryo, growth plate | **body length** | ⛔ **−6% / −10%** |
+| ⭐ **~50% (Tet1+/−)** | mouse adult, IMPC DXA | **body length** | ⭐ **+0.28 SD, male p=0.024** |
+| ⭐ **~50% (human het)** | 1.45M exomes | **adult height** | ⭐ **+7.74 cm, P=8.84e-27** |
+
+> ### ⭐⭐⭐ **A NON-MONOTONIC DOSE–RESPONSE ON ONE ENDPOINT AT TWO DOSAGES IN ONE SPECIES, WITH THE HUMAN AT THE BENEFICIAL DOSAGE. The strongest version of R137's ladder in the file.**
+> ### ⛔⛔ **AND THE SHARPEST WARNING: PAST ~50% THE DIRECTION DOES NOT WEAKEN — IT FLIPS. Overshoot SHORTENS bone by up to 10%, and nobody knows where between 50% and 100% the sign changes.**
+
+⭐ **This promotes R154's 2-OG competition and R157's measured nuclear saturation (3× dose → 0–18% change) from favourable details to LOAD-BEARING safety features — they are the only things between the window and a regime that shortens bone.**
+
+⭐ **Favourable detail inside the bad news:** *"loss of SOX9 target gene expression is **MORE MODEST**"* in the E17.5 null than in vitro — **the intact animal buffers TET1 loss better than a dish does** (Tet2/Tet3 redundancy).
+
+⚠ **Compartment/timing caveat, recorded but NOT used as a get-out:** Smeriglio measures **embryonic chondrogenesis** (E13.5/E17.5 — building the anlage), not renewal:commitment in an established adolescent plate. **Still the closest endpoint that exists, and negative at complete loss.**
+
+### => ⚠⚠ NEW HOLE 1 — **THE ACAN CONFLICT**
+The mechanism by which TET1 loss hurts is **loss of SOX9 binding at `Acan`**.
+> ### ⛔⛔ **`ACAN` pLoF is the MOST HEIGHT-NEGATIVE GENE IN THE ENTIRE kosmicki TABLE: −14.1 cm/allele, P=3.79e-93, 99 carriers.**
+⭐ **Countered empirically by the +7.74 cm human het — at 50% the net in 90 people is strongly positive.**
+⭐ **But it now NAMES what breaks on overshoot and why the ladder flips.**
+
+### => ⚠ NEW HOLE 2 — **CYP COLLISION WITH THE BASE OF OUR OWN STACK**
+`Pharmaceutics 2026` (PMC13210512), ADME of **Au(I)–phosphine complexes**:
+> *"weakly inhibited most CYP isoforms, with **stronger effects on CYP2C9 and CYP3A4/5**… **non-competitive**."*
+
+| stack drug | metabolism | collision |
+|---|---|---|
+| ⛔ **Erdafitinib** (base, not replaceable) | **CYP2C9 + CYP3A4** | ⚠⚠ **BOTH isoforms hit hardest** |
+| **Anastrozole** (base) | CYP3A4, 1A2, 2C8/9 | ⚠ affected |
+| Metformin | renal/OCT | ✅ none |
+
+⚠ Erdafitinib's dose-limiting toxicity is **hyperphosphataemia**, so raised exposure matters.
+⚠ **Honest limit: those are Au(I)-triphenylphosphine 9-deazapurines, NOT auranofin — a CLASS-LEVEL FLAG, monitorable rather than disqualifying.**
 
 ---
 
