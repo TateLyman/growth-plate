@@ -1,12 +1,116 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R165
+**Last updated:** F-R166
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-ZONES. **F-R166 — ⭐⭐⭐ I RAN THE MICRODISSECTED GROWTH-PLATE ZONES MYSELF: **`TET1` IS A RESTING-ZONE GENE — RZ 866 → PZ 467 → HZ 145, MONOTONIC, RZ/HZ = 6.0**, ZONE CALLS VALIDATED ON FOUR CANONICAL MARKERS. ⭐⭐ **HOLE 13 IS ANSWERED — "7/10" WAS BULK TISSUE DILUTING A 6-FOLD GRADIENT.** ⛔⛔ AND THE AuNP PAPER HAS A **MISSING ARM**: THE GOLD-ONLY GROUP IS **ABSENT FROM EVERY GROWTH-PLATE PANEL**, AND ITS MECHANISM (**GOLD NARROWS THE PROLIFERATIVE ZONE**) RUNS AGAINST US.**
+
+**Document:** `R166_i_ran_the_growth_plate_zones_myself_tet1_is_a_resting_zone_gene_and_the_aunp_paper_has_a_missing_arm.md`
+**Script:** `analysis/redundancy/gpzone.py`
+**Operator-supplied:** `main_31.pdf` + `Supporting_Information.docx` (Bai et al., Mater Today Bio 2023;23:100795)
+
+### ⭐⭐⭐ TET1 BY GROWTH-PLATE ZONE
+`GSE16981` (Lui & Baron, *"Spatial and Temporal Regulation of Gene Expression in the Mammalian Growth
+Plate"*) + `GSE23432` — postnatal rat growth plates **microdissected into constituent zones**, GPL1355,
+**n = 5 per zone.**
+
+**Zone calls validate on four canonical markers:** Col10a1 RZ/HZ **0.01** · Ihh **0.02** · Pthlh (canonical
+RZ gene) **12.2** · Mki67 peaks in PZ. ✅
+
+| gene | **RZ** | **PZ** | **HZ** | RZ/PZ | ⭐ **RZ/HZ** |
+|---|---|---|---|---|---|
+| ⭐⭐⭐ **TET1** | ⭐ **865.5** | 467.4 | 145.1 | 1.85 | ⭐⭐ **5.97** |
+| **TET2** | 1,442.7 | 606.2 | 644.2 | 2.38 | 2.24 |
+| TET3 (3 probes) | 458/212/231 | 480/81/274 | 536/231/177 | ~flat | ⛔ **~flat** |
+
+> ⭐⭐⭐ **TET1 IS HIGHEST IN THE RESTING ZONE AND FALLS MONOTONICALLY ALONG THE WHOLE DIFFERENTIATION AXIS.
+> Its profile PARALLELS PTHrP and MIRRORS Col10a1/Ihh. It is patterned along the exact axis this programme
+> tries to move.**
+> ⭐⭐ **HOLE 13 ANSWERED: "TET1 only 7/10 in growth plate" was BULK tissue averaging a 6-fold gradient. In
+> the compartment where R130 says the renewal:commitment ratio is set, TET1 is a top-of-the-plate gene.**
+
+⭐ **Relevant to R163's pan-TET finding: TET3 is FLAT across zones.** ⚠ **TET2 is RZ-enriched 2.2×** — that
+paralogue is not neutral here.
+
+### ⛔ AND I REFUSE MY OWN CONVENIENT READING
+"TET1 highest in RZ" invites *"TET1 maintains the RZ, so inhibiting it pushes cells out"* — which would be
+bad for us and lines up with Smeriglio. ⛔ **But that is `LOCALISATION ≠ INTERVENTION DIRECTION`, this
+file's own named error class. A gene enriched in a compartment may maintain it, may be the brake that
+drives cells out, or may be a passive marker — the gradient cannot distinguish them.**
+⭐⭐ **Direction is settled by the endpoint: human TET1 het pLoF = +8.32 cm. The gradient establishes only
+that the target is PRESENT and PATTERNED where we need it.**
+
+⚠ **REPLICATION CAVEAT: GSE16981 and GSE23432 SHARE their RZ and HZ samples — one experiment, one group,
+not independent replication.** The four-marker internal validation is what carries it.
+
+### ⚠ THE TEMPORAL SERIES — FAVOURABLE, CONFOUNDED, NOT COUNTED
+PZ at 3/6/9/12 weeks, n=5 each (a direct read on the **`A`** term):
+
+| gene | 3wk | 6wk | 9wk | 12wk | 12/3 |
+|---|---|---|---|---|---|
+| ⭐ **TET1** | 264 | 405 | 569 | 467 | ⭐ **1.77 ↑** |
+| **Ihh** | 5,252 | 3,981 | 2,835 | 2,373 | ⛔ **0.45 ↓** |
+| Acan | 35,594 | 30,739 | 28,138 | 28,334 | 0.80 ↓ |
+| Mki67 | 3,275 | 3,145 | 3,025 | 3,371 | 1.03 |
+| ⚠ **Pthlh** | 163 | 209 | 322 | 326 | ⚠ **2.00 ↑** |
+
+⭐⭐ **TET1 rises as Ihh — the growth driver — falls: TET1 anti-correlates with growth capacity over time,
+which is the direction we want.**
+⛔ **BUT Pthlh, also RZ-enriched, rises 2.00× in lockstep — exactly what increasing RZ contamination of a
+narrowing plate produces; the TET1:Pthlh ratio stays roughly constant (1.62, 1.94, 1.77, 1.43).**
+⭐ Col10a1 staying flat (1.08) argues somewhat against pure contamination. ⚠ **VERDICT: suggestive,
+confounded, NOT COUNTED.** ⭐ **Resolving it needs purified RZ across age, or single-cell/in-situ zone
+assignment — a specific, findable experiment.**
+
+### ⛔ THE AuNP PAPER — R164's REFUSAL VERIFIED, PLUS A MISSING ARM
+> `Bai et al., Mater Today Bio 2023;23:100795`, Beihang University.
+
+⛔ **Supporting Information contains exactly ONE figure (S1, XPS of sulphur) + a primer table. No ICP-MS, no
+tissue TEM, no biodistribution — gold was NEVER measured in the growth plate in vivo.** ⭐ Its **in vitro**
+bio-TEM (AuNPs in chondrocyte intracellular vesicles) is the cell-culture analogue of Oryschak's aurosomes.
+
+⛔⛔ **THE MISSING ARM.** Design = 4 groups (saline · **AuNP alone 40 mg/kg** · LPS 5 mg/kg · LPS+AuNP), i.p.,
+**5-week-old female BALB/c**, to day 16. **But Fig. 5 has only THREE bars — Control, LPS, LPS+AuNPs. The
+AuNP-alone group is absent from GP, PZ and HZ thickness.** It appears in Fig. 4 (biosafety) and Fig. 6
+(apoptosis) — **so the experiment was run and its growth-plate morphometry was never shown.**
+
+⭐ **What IS reported for gold alone in growing mice:** no body-weight difference; no organ-coefficient
+change; no oxidative-stress induction; normal organ H&E; serum IL-12/TNF-α unchanged; GP apoptosis like
+control; *"none of these pathological features of cartilage damage were present in the AuNP group"*; no
+collagen reduction.
+⚠ **But their own data show *"AuNP injection caused an INCREASE in the transcriptional level of IL-12 in the
+liver, kidneys, and lungs"*, immediately soft-pedalled as *"did not induce a severe inflammatory
+response."* Recorded here as a real finding.**
+
+### ⛔⛔ NEW DIRECTIONAL FLAG
+| Fig. 5 | Control | LPS | LPS+AuNP |
+|---|---|---|---|
+| GP thickness (µm) | ~165 | ~220 * | ~170 * |
+| ⭐ **Proliferative zone** | ~80 | ~147 * | ~106 * |
+| Hypertrophic zone | ~80 | ~68 | ~98 (ns) |
+
+Their mechanism: *"PZ and GP extension can be attributed to inflammation interfering with the
+**differentiation of PZ chondrocytes into HZ cells**"* — **AuNPs prevented the PZ widening.**
+
+> ⛔⛔ **THE ONLY IN VIVO GROWTH-PLATE DATA FOR ANY GOLD COMPOUND HAS GOLD NARROWING THE PROLIFERATIVE ZONE
+> BY RESTORING PZ→HZ DIFFERENTIATION. Our arm wants to RETAIN proliferative reserve, not accelerate its
+> consumption. PZ height is a positive correlate of growth rate.**
+⭐ **Bounded:** LPS-induced PZ widening is **pathological stalling** (apoptotic PZ–HZ fissure, ECM loss), so
+normalising ≠ accelerating past normal; the treated PZ (~106) stayed **above** control (~80); the gold-alone
+arm is missing; and this is **Au(0) colloid at 40 mg/kg i.p.**, the species R156 rejected. ⚠ **None of that
+removes the direction.**
+
+### ⛔ STILL UNMEASURED
+**Gold in growth-plate chondrocytes.** Ten-plus further searches this round — autometallography/silver
+enhancement, synchrotron XRF of bone and cartilage, juvenile AuNP biodistribution by ICP-MS, auranofin
+tissue distribution in bone/cartilage — **returned nothing.**
 
 ---
 
