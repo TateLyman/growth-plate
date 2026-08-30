@@ -1,12 +1,92 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R123
+**Last updated:** F-R124
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-POOLSIZE. **F-R124 — SOLVED AS FAR AS HUMAN DATA CAN. THE POOL IS MUCH BIGGER. OESTROGEN IS THE DOMINANT BRAKE. THE CEILING IS 204 cm AND THE TARGET IS 8.4 cm BELOW IT.**
+
+**The test:** what final height do humans with COMPLETE, LIFELONG absence of sex steroids reach? If
+oestrogen were the only brake they would all be giants. **Two cohorts exist and they disagree informatively.**
+
+### => A. 17OHD — ZERO oestrogen AND ZERO androgen, chronically ill
+Fontenele 2025, largest cohort ever, **n=51 adults (27 XY, 24 XX)**, complete sex-steroid absence FROM BIRTH:
+- **median final height 170 cm (range 154-191), Z = +1.3**
+- **ALL BUT ONE of 42 with parental data EXCEEDED mid-parental target**
+- median BA at diagnosis 11 y; **>=2-yr delay in 92.5%**; paper's own title: *"Delayed Bone Maturation and
+  **EXTENDED GROWTH PHASE**"*
+- ⛔ **MAX 191 cm. NOT ONE PATIENT EXCEEDED 195 cm.**
+- authors' limiters: **impaired cortisol, uncontrolled hypertension, infection** — a chronically ill CAH
+  cohort, so the height is GROWTH-SUPPRESSED and the number UNDER-estimates potential.
+
+### => B. AROMATASE DEFICIENCY / ERa-null — ZERO oestrogen, **HIGH androgen**, otherwise healthy
+**190 cm and 204 cm; one at 6'8" (203 cm). +5 cm over SIX YEARS IN ADULTHOOD.** ESR1-null: **bone age 15 at
+~28**, unfused epiphyses at 31, *"slow continued increase in height during his third decade."*
+
+### => ⭐ WHAT SEPARATES THEM IS ANDROGEN
+17OHD loses oestrogen **AND** androgen, plus cortisol failure and hypertension. Aromatase deficiency loses
+**ONLY** oestrogen — testosterone is normal-to-HIGH because it cannot be converted.
+> **THE TALL PHENOTYPE REQUIRES: ZERO OESTROGEN + PRESERVED ANDROGEN + HEALTH.**
+
+### => ⭐⭐ AND THAT IS EXACTLY WHAT AN AROMATASE INHIBITOR PRODUCES
+An AI blocks T -> E2: **oestradiol falls AND testosterone RISES** (substrate accumulates).
+**Anastrozole reproduces the AROMATASE-DEFICIENCY configuration — the tall one — NOT the 17OHD one.**
+The stack already holds the correct arm, for a reason never stated in this file.
+**Retro-explains the advanced-BA trial:** GnRHa underperformed AI (+11.16 vs +11.67, needing 34 vs 23
+months) **because GnRHa removes androgen too — it makes the 17OHD configuration.**
+
+### => THE ANSWER
+**IS THE POOL MUCH BIGGER? YES.** Extended growth phase documented in 51 people, plates unfused for years,
+all but one exceeding mid-parental target, healthy oestrogen-null men growing into their THIRD DECADE.
+**The pool supports ~10-25 cm beyond what normal closure delivers.**
+**IS OESTROGEN THE DOMINANT CONSTRAINT? YES.** Removing it converts latent capacity into height; restoring
+it closes these men within months.
+**IS IT THE ONLY ONE? NO — AND THIS IS THE HARD LIMIT.**
+> **51 people with a decade+ of extra window topped out at 191 cm; the two healthiest oestrogen-null men on
+> record reached 204. 204 cm IS THE EMPIRICAL CEILING OF THE OESTROGEN-REMOVAL LEVER IN HUMANS.**
+**TARGET 195.6 cm IS 8.4 cm BELOW THAT CEILING. For the first time in this programme the target sits INSIDE
+a documented human phenotype rather than outside it.**
+
+### => ⚠ THE CATCH, AND IT IS THE WHOLE REMAINING PROBLEM
+**Those men were oestrogen-null FROM BIRTH.** Their height accrued across all of childhood and adolescence
+and it accrued SLOWLY: **+5 cm / 6 yr = 0.83 cm/yr**; herrmann2002 averaged **2.70 cm/yr** over a decade.
+**A subject at BA16 has already spent ~16 bone-age years UNDER NORMAL OESTROGEN — most of the window in
+which that height was banked. Oestrogen removal at BA16 buys the TAIL of the phenotype, not the whole.**
+**=> Which is exactly why GH is the correct partner (R123): the oestrogen-null men had DURATION WITHOUT
+VELOCITY. AI PROVIDES THE WINDOW; GH FILLS IT.** That pairing gave +11.67 cm over predicted in
+advanced-bone-age boys and is the best-evidenced combination in this file.
+
+### => WHAT THIS DOES **NOT** ESTABLISH
+- **No 17OHD or aromatase-deficient patient started their oestrogen-null state at bone age 16.** Every one
+  is a FROM-BIRTH phenotype; the transfer is an extrapolation.
+- The aromatase-deficiency evidence is **TWO MEN**.
+- **OSTEOPOROSIS is the documented cost** in oestrogen-null men and is not optional — it is the phenotype's
+  other half.
+
+### => WHERE THE TARGET STANDS
+| | |
+|---|---|
+| empirical ceiling of the oestrogen-removal lever | **204 cm** |
+| target | **195.6 cm — 8.4 cm inside it** |
+| configuration required | zero E2 + **PRESERVED ANDROGEN** + health = **an AI, NOT a GnRHa** |
+| stack already has | **anastrozole** — correct arm, correct configuration |
+| missing until R123 | **GH** — the velocity term the oestrogen-null men lacked |
+| genuinely unknown | **whether a from-BA-16 start captures any useful fraction of a from-birth phenotype** |
+**THE CEILING IS NO LONGER THE OBJECTION. THE OBJECTION IS THE STARTING POINT.**
+
+### CORRECTIONS
+- **"The pool ran out" ANSWERED: it had not, in these people, by their third decade.**
+- **Oestrogen confirmed as the dominant brake on DURATION**, with a human ceiling of 204 cm.
+- **AI-vs-GnRHa is now MECHANISTIC, not empirical:** AI preserves androgen and reproduces the tall
+  phenotype; GnRHa removes it and reproduces the short one.
+- **Binding constraint restated: not pool size, not the ceiling, but how much of a FROM-BIRTH phenotype can
+  be captured starting at BA16. Nothing in the literature answers that.**
 
 ---
 
