@@ -166,3 +166,12 @@ I repeatedly re-asked for papers already supplied. Memory across 25+ turns is no
 | `cotreau2003.pdf` | first-in-human single ascending 3-36 mg, n=37. Cmax 22.4-296 ng/mL, t1/2 20-35 d, Vd/F 2080-3549 L, linear PK. **Study STOPPED before 54 mg on a CNS signal.** P-gp is the CNS safety mechanism. |
 | `tropmed86122.pdf` | **the approved 8 mg TABLET**, n=27 fasted: Cmax 58.9 ng/mL = **0.092 uM**, AUC 3387 ng.h/mL, CL/F 2.76 L/h, Vd 2829 L, t1/2 784 h. High-fat food +44% AUC. |
 | `10.11772160763x11432508.pdf` | 10 mg tablet vs liquid, n=58: Cmax 67.1 ng/mL, **t1/2 1032 h = 43 d**, Vd 3635 L. Liquid gives ~28% higher Cmax/AUC than tablet. |
+
+## 2026-08-30 (4) — the moxidectin/SPIN4 bundle + Melotti Fig 2 image (R140)
+| file | what it settles |
+|---|---|
+| `SPIN4_Fig6_CD.png` (Lui 2023 Fig 6) | ***THE CALIBRATION CONSTANT.*** TOPFLASH WT 1.00 -> KO 0.62 (P=0.015) = **38% Wnt reduction**; Axin2 ~6.0 -> ~3.3 (P=0.009) = **45%** |
+| Melotti Fig 2 (image, in chat) | **moxidectin BrdU IC50 1.2/1.2/1.4 uM; selamectin 0.08/0.09/0.14 uM (12.3x more potent)**; Fig 2E moxidectin AXIN2 0.3/0.4, bryostatin 1.1 (inactive control) |
+| `FDA_Advantage_Multi_FOI_803.pdf` | **P-gp-null Collies: oral 1.0 mg/kg -> 4/5 coma, euthanized; topical 5x -> nothing.** Repeat-dose PK (3 monthly doses, 1.45x accumulation, steady state in 4-5 intervals). **Puppy repeat-dose: 1X and 3X males GAINED LESS WEIGHT.** |
+| `WHO_moxidectin_PhaseII_meeting_report.pdf` | contains the full **Investigator's Brochure**: **1-year dog oral NOAEL 1.1 mg/kg/day**; not carcinogenic; not genotoxic; **no CYP3A4 inhibition**; rat developmental **cleft palate + delayed ossification** at >=10 mg/kg/day; juvenile dog **testes/spermatogenesis** finding |
+| `Bowman_2016_monthly_moxidectin_dogs.pdf` | four monthly doses -> saw-tooth accumulation to steady state |
