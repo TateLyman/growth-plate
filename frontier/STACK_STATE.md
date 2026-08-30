@@ -1,12 +1,91 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R116
+**Last updated:** F-R117
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-POOL. **F-R117 — TWO STEM POPULATIONS, NOT ONE. THE BIGGER ONE REBUILDS A PLATE IN 7 DAYS AND ADDS NO LENGTH.**
+
+### => ⭐⭐⭐ THE POOL IS TWO POPULATIONS AND THIS FILE HAS ONLY EVER TARGETED ONE
+**FoxA2+ cells sit at the TOP of the RZ next to the SOC; PTHrP+ cells at the BOTTOM. Geographically
+separate niches.** FoxA2+ have **higher clonogenicity and longevity**. R112 measured both without knowing:
+**PTHrP+ 0.72%, FOXA2+ 2.80%.** Every pool intervention in the atlas (Trompet SAG bead, R373/388/393
+fibrin depot, the whole Hedgehog thread) aimed at PTHrP+/Hedgehog. **FoxA2+ has NEVER been targeted
+pharmacologically by anyone.**
+
+### => AND IT CREATES PHYSEAL TISSUE ON DEMAND
+Salter-Harris type 1 injury at P18: **2.7-fold FoxA2+ expansion by day 3; growth plate 96% REGENERATED
+by day 7 with all three zones; healed with PHYSEAL CARTILAGE not fibrocartilage or bone;** 4-8 cell
+clonal stacks = correct columnar architecture. **Nothing else in this corpus creates growth plate tissue.**
+
+### => ⛔ AND IT ADDS NO LENGTH — THE RESCUE LAW AT TISSUE LEVEL
+**"Overall longitudinal growth was not affected at 7- and 21-day post-op."** Tissue returned, bone did not
+grow more. F-R094 holding at the level of the tissue itself.
+
+### => BUT THE TWO DECIDING EXPERIMENTS WERE NEVER DONE
+1. **The trigger was never identified** — no ligand, no pathway, no mechanism named.
+2. **Never tested in a mature animal** — injury at P18, tracing P0-P28 only.
+3. Population **PERSISTS rather than exhausts** — present in RZ at 3 and 9 months post-labelling.
+**=> "Can FoxA2+ expansion be induced pharmacologically, in an OLD plate, WITHOUT injury" is completely
+open and is the highest-value unanswered question for this target.**
+
+### => MAINTENANCE SIDE: WNT IS A NEGATIVE REGULATOR OF N; THE REVERSE TEST WAS NEVER RUN
+Niche signature w/ fold-enrichment: **Gas1 12x, Spon1 10x, Wif1 3.8x, Pthlh 2.6x, Sfrp5 2.4x**, Prg4,
+Sfrp1, Dkk2, Notum, Fzd6. **Apc cHet (Wnt ON) costs pool and columns:** PTHrP+ P9 718.7->474.8, P12
+910.3->558.4, P21 655.4->443.4 (all p<=0.04); **long columns P96 26.5 -> 7.3 (-72%).**
+**"No reverse experiment was conducted... no evidence that expansion is possible"** — authors name the gap.
+**Why the obvious drug fails:** systemic porcupine inhibition (LGK974) elongates tibiae in organ culture
+but REDUCES the PZ and **impairs trabecular+cortical bone mass and strength in vivo.** Wnt is required for
+osteoblasts. **This is exactly what the intraosseous depot thread exists to solve.**
+
+### => VALIDATED N SIGNATURE SCORED ON THE STACK — AND THE CNP ARM GETS ITS FIRST CONTRAINDICATION
+Rat validation (RZ-HZ): **Pthlh +3.76, Sfrp5 +5.99, Sfrp1 +2.96 robust; Gas1/Spon1/Wif1/Dkk2 DO NOT
+TRANSFER to rat.** Robust core = **Pthlh, Sfrp5, Sfrp1**.
+**erda: z -7.65 / -4.65 / +2.28 / +1.46 — SIGN-FLIPS with age, rescue-direction, UNRESOLVED. Cannot claim
+erda preserves N.**
+**CNP: z -1.61 (R/P) / -3.39 (H) / -0.58 (M) — NEGATIVE EVERYWHERE.** With R115's R/P commitment
+suppression, the reading is **CNP CONVERTS N INTO A.** Great trade in a young plate; **at BA16 it is the
+GH failure mode in another pathway.** Unresolved against dauber2026 bone-age sparing.
+
+### => SELF-CORRECTION: "THE POOL IS STALLED NOT DEPLETED" IS WITHDRAWN
+Mid-round I found Pthlh RISING in the ageing rat PZ (r=+0.972, Sfrp5 +0.916) and proposed N is an
+ACTIVATION problem not a stock problem. **Refuted by direct cell counting:** Schrier/Nilsson/Baron
+*J Endocrinol* 2006 — in rabbit, RZ proliferation rate falls with age **AND so does the NUMBER of resting
+zone chondrocytes per area.** My rat signal is likely dissection contamination as the plate thins.
+**Schrier also reproduces arm3's law: dexamethasone decreased RZ proliferation rate AND slowed the
+numerical depletion.** Pool is spent by its own divisions.
+
+### => ⭐ EXPLAINS THE ATLAS'S OWN 3-10% CONVERSION PUZZLE
+`Hedgehog activation promotes osteogenic fates of RZ chondrocytes through transient clonal competency`:
+**Hh activation makes RZ chondrocytes efficiently become trabecular bone OSTEOBLASTS.**
+**The SAG/Hedgehog route expands the pool then spends it into BONE, not cartilage columns.** That is why
+Trompet's +61% pool bought +3.63% length. **Conversion loss is a FATE problem specific to the Hedgehog
+route this atlas chose.** Every future pool intervention must be assayed for FATE, not just number.
+
+### => WHERE THE TARGET STANDS
+| term | agent | status at BA16 |
+|---|---|---|
+| **N** | none | depleted (Schrier). 2 populations; larger (FoxA2+) never targeted. Creation shown but adds no length; trigger unknown; untested in mature animals. |
+| **A** | CNP axis | works, **but appears paid for out of N** |
+| **h_term** | erdafitinib, CNP cAMP arm | works; capped ~4-5% (GC-B7E/7E in WT) |
+| **NPR2 receptor** | erdafitinib (phospho-state), LB-100 | falls r=-0.964; no upregulator exists |
+
+**k~7x still unreachable; stack still tops out ~2.6x; every remaining gap is still STOCK.** What changed:
+the stock problem now has a named unexploited target, a named unrun experiment, and an explanation for
+why the last attempt converted so badly.
+
+### THE THREE EXPERIMENTS THAT WOULD DECIDE IT
+1. **Identify the FoxA2+ expansion trigger, then test it in a mature plate WITHOUT injury.**
+2. **Run the reverse Wnt experiment LOCALLY** — measure pool size AND fate AND length.
+3. **Assay FATE not number on every pool intervention** — predicts any Hedgehog-based arm keeps failing.
+
+Code: `frontier/analysis/redundancy/{npanel,ntraj}.py`.
 
 ---
 
