@@ -1,12 +1,108 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R163
+**Last updated:** F-R164
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HOLE9CLOSED. **F-R164 — ⭐⭐⭐ **HOLE 9 IS PATCHED**: SYSTEMICALLY (I.M.) INJECTED Au(I)-THIOLATE PUTS GOLD **INSIDE CHONDROCYTES OF AVASCULAR ARTICULAR CARTILAGE — ⭐⭐⭐ IN IMMATURE ANIMALS ONLY, NOT IN MATURE ONES.** OUR SUBJECT IS IMMATURE. ⛔ R163's "NOBODY MEASURED GOLD IN CARTILAGE" IS **WITHDRAWN — IT WAS A VOCABULARY FAILURE** (the field's word is `aurosome`). ⚠ NEW HARM SIGNAL: **ZONE-SPECIFIC CHONDROCYTE LOSS.** ⛔ AND R157's "JOINT" NUMBER IS **SYNOVIUM, NOT CARTILAGE.****
+
+**Document:** `R164_hole_9_is_patched_systemic_gold_reaches_cartilage_chondrocytes_in_immature_animals_only.md`
+
+### ⛔ FIRST, MY OWN ERROR
+R163 stated flatly: *"Searched Europe PMC five ways… fifty years of chrysotherapy and nobody measured gold in
+cartilage."* ⛔ **False.** The literature is 1974–1984 and its term is **`aurosome`** — the morphologically
+distinctive gold-loaded lysosome, EM-visible, confirmed by electron-microprobe X-ray analysis.
+> `Pääkö, Ultrastruct Pathol 1984` (PMID 6537095): *"In the synovial lining cells and **articular
+> cartilage**, the morphology of lysosomes containing gold, the aurosomes, is **well documented**."*
+
+⛔ **Fourth time in this file that a search term, not the evidence, decided an answer.**
+
+### ⭐⭐⭐ THE PAPER
+> **`Oryschak AF & Ghadially FN, J Pathol 1976` (PMID 822141) — "Aurosome formation in articular tissues
+> after **parenteral** administration of gold":**
+> ⭐⭐⭐ ***"Intramuscularly injected sodium aurothiomalate in IMMATURE RABBITS leads to the production of
+> aurosomes in the ARTICULAR CARTILAGE CHONDROCYTES and synovial intimal cells and subsynovial macrophages.
+> In MATURE RABBITS aurosomes develop ONLY in the synovial intimal cells and subsynovial macrophages, but
+> NOT in the chondrocytes."***
+
+| hole 9's three objections (R156, mine) | answer |
+|---|---|
+| ⛔ growth-plate cartilage is **avascular**, diffusion-fed through dense proteoglycan | ⭐ **articular cartilage is too — and gold crossed it** |
+| ⛔ circulating species is albumin-Au **~66 kDa**; matrix is **size-selective** | ⭐ **answered empirically — it arrived** |
+| ⛔ **no measurement of gold in cartilage in any species** | ⭐⭐⭐ **it exists: rabbit, SYSTEMIC route, intracellular, EM + microprobe** |
+
+⭐⭐ **The route is right: INTRAMUSCULAR — blood-borne, the same problem our oral drug faces. Not an
+intra-articular injection.**
+
+### ⭐⭐⭐ THE AGE-DEPENDENCE IS THE RESULT, AND IT SELECTS FOR OUR SUBJECT
+Same experiment, same drug, same route, same species, internal control:
+
+| animal | synovial cells | subsynovial macrophages | ⭐ **CARTILAGE CHONDROCYTES** |
+|---|---|---|---|
+| ⭐ **IMMATURE** | yes | yes | ⭐⭐⭐ **YES** |
+| **MATURE** | yes | yes | ⛔ **NO** |
+
+> ⭐⭐⭐ **Cartilage penetration by systemic gold is a property of the IMMATURE SKELETON and is ABSENT in the
+> adult. Our subject is BA-16 with OPEN PLATES.** ⭐⭐ **Every adult-derived PK intuition in this file has
+> been UNDER-estimating cartilage delivery for him.**
+⚠ **Attribution to cartilage canals (vascular channels that regress with maturity) is MY inference, not the
+paper's.** ⭐ Converges with R156's own mitigation: the **resting zone abuts the epiphyseal vasculature**.
+
+### ⭐⭐ AND THE CHEMOTYPE IS RIGHT — WHY THIS COUNTS WHERE R156's THREE PAPERS DID NOT
+| | species | |
+|---|---|---|
+| ⛔ Ma 2016 / Tabish 2017 / Gambelunghe 2020 | **Au(0) colloid**, 10–100 nm | ⛔ rejection **stands** |
+| ⭐ **Oryschak 1976** | ⭐ **sodium aurothiomalate = small-molecule Au(I)-THIOLATE** | ⭐ **same oxidation state and ligand class as auranofin** |
+
+⭐ Corroborated: `Ghadially, Ann Pathol 1982` (PMID 6809016) — in vitro aurosomes *"morphologically
+indistinguishable"* from in vivo, **Au, P and S** by microprobe.
+
+### ⚠⚠ NEW HARM SIGNAL FROM THE SAME LITERATURE
+> `Ghadially & Lalonde, Virchows Arch B 1978` (PMID 97856), **intra-articular** aurothiomalate:
+> ⚠ ***"a REDUCTION IN THE POPULATION OF SUPERFICIAL CHONDROCYTES (Zone I)"***… *"regressive or degenerative
+> changes produced by gold."* Deposits detectable to **14 months**, absent at 18–24 months.
+
+> ⚠⚠ **Gold in cartilage is NOT inert, and ZONE-SPECIFIC cell loss is exactly the shape of harm that matters
+> to a programme built on a zone-specific ratio (resting-zone renewal:commitment).**
+⭐ Bounded by route (**IA bolus**, not systemic — the systemic paper reports aurosome *formation*, not cell
+loss), by zone (Zone I is the drug-facing surface, not the resting-zone analogue), and by clearance.
+⛔ **AND IT MAKES HOLE 10 WORSE: cartilage gold persists to 14 MONTHS** — residence is months-to-a-year, not
+the 35-day plasma half-life.
+
+### ⛔ CORRECTION TO R157's OWN FRAMING
+Cottrill's assayed organs are **blood, kidney, liver, spleen, lung, joint, bone, muscle, skin — no
+cartilage**, and the paper says the joint signal indicates *"a concentration in the **SYNOVIUM**."*
+⛔ **R157's "joint 11.1 µM" is SYNOVIUM (vascularised soft tissue) and never spoke to cartilage.** ⭐ Hole 9
+was genuinely open when R163 said so; it is now closed by a different paper.
+
+### ⭐ SUPPORTING BUT NOT COUNTED
+`Chondrocyte targeting gold nanoparticles protect growth plate…`, Mater Today Bio 2023 (PMC10519832):
+⭐⭐ **chondrocytes take up gold ~20× more than macrophages (ICP-MS: 15.74 ± 1.00 vs 0.85 ± 0.05 pg/cell)**;
+15.8 nm AuNPs **i.p. 40 mg/kg q3d × 15 d in 5-week-old mice** preserved **PZ and HZ zone heights**.
+⛔ **But they NEVER measured gold in the growth plate — histology and IF only — so this is NOT delivery
+evidence and is not counted.** ⭐ The chondrocyte-avidity number is the part worth keeping: **the immature
+matrix lets gold through and the chondrocyte behind it is an avid accumulator.**
+
+### ⛔ RESIDUAL GAPS
+1. ⛔ **ARTICULAR cartilage was measured; EPIPHYSEAL / growth-plate cartilage never has been, in any
+   species.** ⭐ Both are avascular hyaline cartilage and the barrier argument transfers; the tissue identity
+   does not.
+2. ⛔ **NO PAEDIATRIC GROWTH OUTCOME EXISTS.** ⭐ **Verified directly: the Giannini 231-child randomised trial
+   is on disk and its full text contains ZERO occurrences of `height`, `stature`, `growth`, `centile` or
+   `percentile`** — and at 6 months it could not have supported one. Not in the abstracts of the **88-child
+   5-year extension** (`J Rheumatol 1991`, PMID 1941832 — 0.15–0.20 mg/kg/day, 11 completed 5 y, mean 646 d
+   for discontinuers), `Arthritis Rheum 1988` (PMID 3044374), or `Minerva Pediatr 1992` (PMID 1363792).
+   ⭐ **PMID 1941832 full text is the highest-value document request open to this programme.**
+   ⚠ **Weak inference meanwhile:** in that extension the commonest reasons for stopping were *"parental/
+   patient decision and insufficient therapeutic effect,"* **ahead of adverse effects**, in 88 growing
+   children on ~646 days of gold, in a disease where growth failure is closely monitored. **Evidence of no
+   LARGE harm — not evidence of benefit, and not a measurement.**
 
 ---
 
