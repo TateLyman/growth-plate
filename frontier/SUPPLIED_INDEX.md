@@ -190,3 +190,11 @@ I repeatedly re-asked for papers already supplied. Memory across 25+ turns is no
 |---|---|
 | `gupta2005.pdf` | ⛔ **NOT human PK.** Selamectin on cotton gloves + **DOG** blood. Authors: *"no data concerning the effects in humans are currently available."* **Corrects R141: topical LABEL dose in dogs = 10.26 ng/mL = 11.5% engagement, not 52%** (Novotny's 86.5 was at 4x label) |
 | `669.pdf` (REVOLUTION FOI, NADA 141-152) | ⭐ **Closes both R140 holes.** 40 puppies from **6 weeks**, 1/3/5/**10x**, 7 treatments, **196 days**, necropsy + histopathology + **brain GFAP** = no treatment-related effects. Breeding males **3x, 17 treatments, 203 days, SERIAL SEMEN ANALYSIS** = clean. Oral 6 mg/kg in 5-8 month dogs = clean (36x the required dose). **Section VIII: human safety data "were not required"** |
+
+## 2026-08-30 (7) — kosmicki supplement + kinome (R145)
+| file | what it settles |
+|---|---|
+| `media2_4.xlsx` (kosmicki2026 supplement, 29 tables) | ***THE FULL 17.*** Table S5 = all 17 singleton-pLoF genes with effect, P and carrier counts. **NRK is the ONLY gene with hom/hemizygous nulls - 34 of them, all 34 in the whole table.** Six positives: FBN1 +9.37, LCORL +8.18, TET1 +7.74, CHD8 +7.05, ZFAT +6.49, NRK +3.48 cm |
+| `Gizzio_et_al_Active_kinases_AF2` | NRK IS in the structural kinome table (`STE_NRK … 17 321 305 1582`), between MAP4K5/MINK1 and OXSR1/PAK1-4. Conformational call for NRK not yet located |
+| UniProt Q7Z2Y5 (REST) | 1,582 aa; kinase domain 25-313; CNH 1209-1552; STE20/GCK-IV; **zero ChEMBL/BindingDB/DrugBank xrefs**; phosphorylates cofilin-1 |
+| ChEMBL + Pharos (queried directly) | **NRK = Tdark, 0 ligands, 0 drugs, not a registered ChEMBL target.** MAP4K4/TNIK/MINK1 have 745/469/217 potent compounds; **26 hit all three; bosutinib at 3-25 nM** |

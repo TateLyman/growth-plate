@@ -1,12 +1,136 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R144
+**Last updated:** F-R145
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-OFFTGT. **F-R145 — NRK IS **Tdark, ZERO LIGANDS** — BUT ITS KINASE DOMAIN IS **65% IDENTICAL** TO THREE DRUGGED KINASES, HAS THE **SAME Met GATEKEEPER**, AND **FIVE APPROVED DRUGS HIT THAT CLADE AT 3-25 nM**. ⛔ THE CATCH: THOSE FIVE ARE THE DRUG CLASS **DOCUMENTED TO STUNT CHILDREN'S GROWTH**. ⭐ AND NRK HAS **34 HUMAN KNOCKOUTS**.
+
+Supplied: `kosmicki2026` FULL supplement (media2_4.xlsx, 29 tables), `Gizzio 2026` active-kinase AF2
+preprint, UniProt Q7Z2Y5. Queried directly: ChEMBL, Pharos/IDG, UniProt REST.
+Code: `analysis/redundancy/kos.py`, `homalt.py`, `pocket.py`, `offtarget.py`.
+
+### => ⭐⭐⭐ THE SUPPLEMENT DELIVERS SOMETHING UNEXPECTED: **NRK HAS A HUMAN KNOCKOUT COHORT**
+Table S5, all 17 singleton-pLoF genes, discovery+replication (1.45M exomes):
+| gene | chr | **effect (cm)** | het | ⭐ **hom/hemi NULLS** | P |
+|---|---|---|---|---|---|
+| FBN1 | 15 | **+9.37** | 87 | **0** | 1.95e-37 |
+| LCORL | 4 | **+8.18** | 166 | **0** | 1.89e-53 |
+| TET1 | 10 | **+7.74** | 90 | **0** | 8.84e-27 |
+| CHD8 | 14 | **+7.05** | 45 | **0** | 5.8e-12 |
+| ZFAT | 8 | **+6.49** | 94 | **0** | 5.39e-20 |
+| ⭐ **NRK** | **X** | **+3.48** | 80 | ⭐⭐ **34** | 2.13e-13 |
+| the other 11 (NF1…ACAN) | | −5.39 to **−14.10** | | **0** | |
+**Six of seventeen positive — the atlas list was right and is now COMPLETE.**
+> ### ⭐⭐⭐ **NRK IS THE ONLY GENE OF THE 17 WITH HOM/HEMIZYGOUS NULLS — 34 OF THEM, AND ALL 34 IN THE ENTIRE TABLE ARE NRK. EVERY OTHER GENE: ZERO. X-linked, so male HomAlt = COMPLETE LOSS. 34 adults in a health-system biobank with no functional NRK, 3.48 cm taller.**
+> **For a drug target that is the best safety evidence class that exists — better than a knockout
+> mouse, better than a Phase 1.**
+⚠ **Limits:** biobank ascertainment is not a safety study; Nrk-null mice show **delayed parturition**,
+which no biobank captures. NRK's effect is the **smallest** of the six positives and its pLoF:GWAS
+ratio (19.7) the lowest (TET1 41.6, ZFAT 49.3, CHD8 59.9).
+
+### => THE TARGET (UniProt Q7Z2Y5)
+**1,582 aa**; kinase domain **25-313** (N-terminal), **CNH domain 1209-1552**; **STE20 subfamily
+(GCK-IV)**; ACT_SITE 177; ATP binding 31-39 (P-loop) + 54 (b3 Lys).
+⭐ *"May phosphorylate **cofilin-1** and induce **actin polymerisation**… involved in TNF-induced signalling."*
+⛔ **NO ChEMBL / BindingDB / DrugBank / Guide-to-Pharmacology xref. ChEMBL direct query: 0 targets for
+Q7Z2Y5. Pharos: `Tdark`, ligands 0, drugs 0.** ⭐ **`Gizzio 2026` DOES contain NRK** (`STE_NRK … 17 321
+305 1582`, between MAP4K5/MINK1 and OXSR1/PAK1-4) — **it is in the STRUCTURAL kinome, not the
+PHARMACOLOGICAL one.**
+> ### **Tdark WITH ZERO LIGANDS MEANS NOBODY HAS LOOKED, NOT THAT NOTHING BINDS. NRK is absent from the commercial selectivity panels, and its restricted expression keeps it out of chemoproteomic lysates. THE OFF-TARGET SPACE IS UNEXPLORED, NOT EMPTY — the operator's framing was right.**
+
+### => ⭐⭐ SO I ASKED IT STRUCTURALLY: **HOW CLOSE IS NRK'S POCKET TO DRUGGED KINASES?**
+Pairwise global alignment (BLOSUM62) of NRK's kinase domain vs every GCK/STE20 relative:
+| kinase | KD identity | similarity | chemical matter |
+|---|---|---|---|
+| ⭐ **MINK1** | ⭐ **64.9%** | 80.8% | Tchem — hit by MAP4K4 inhibitors |
+| ⭐ **MAP4K4** | ⭐ **64.5%** | 80.8% | Tchem — PF-06260933, GNE-495, DMX-5804 |
+| ⭐ **TNIK** | ⭐ **63.0%** | 80.8% | Tchem — NCB-0846 · ⭐ **and TNIK is a Wnt/TCF4 kinase** |
+| MAP4K3 / MAP4K2 / MAP4K1 / MAP4K5 | 40.9-44.3% | 60-64% | |
+| OXSR1 / STK39 | 33.6-34.6% | 55.0% | |
+**NRK is squarely GCK-IV — 20 points above every other STE20.** And the pocket motifs match:
+| | HRD motif | **gatekeeper** |
+|---|---|---|
+| **NRK** | **HRDIK** | ⭐ **Met** — `RHQLWMV`**`M`**`ELCAA` |
+| MAP4K4 | **HRDIK** | ⭐ **Met** — `DDQLWLV`**`M`**`EFCGA` |
+| TNIK / MINK1 | **HRDIK** | **Met** |
+> ### ⭐⭐ **SAME GATEKEEPER, SAME CATALYTIC MOTIF, 65% IDENTITY. The gatekeeper is the single biggest determinant of ATP-competitive selectivity — there is NO STERIC REASON a GCK-IV inhibitor would not bind NRK.**
+
+### => ⭐⭐⭐ THE SEARCH: WHICH COMPOUNDS HIT ALL THREE? (ChEMBL, pChEMBL>=6, intersected)
+MAP4K4 745 · TNIK 469 · MINK1 217 potent compounds -> **26 hit all three**; 13 are clinical/approved:
+| compound | phase | MAP4K4 | TNIK | MINK1 |
+|---|---|---|---|---|
+| ⭐⭐ **BOSUTINIB** | ⭐ **4 APPROVED** | ⭐ **8.1 (8 nM)** | **7.6 (25 nM)** | ⭐ **8.5 (3 nM)** |
+| **SUNITINIB** | **4 APPROVED** | 6.8 | 7.6 | 7.5 |
+| **NINTEDANIB** | **4 APPROVED** | 6.8 | 7.3 | 7.1 |
+| **NERATINIB** | **4 APPROVED** | 6.5 | 6.8 | 7.5 |
+| **AXITINIB** | **4 APPROVED** | 6.5 | 6.8 | 6.2 |
+| LESTAURTINIB / DOVITINIB | 3 | 7.6 | 8.3 / ⭐ **8.7 (2 nM)** | 8.4 / 8.0 |
+| BRIVANIB · SOTRASTAURIN · SU-014813 · DORAMAPIMOD · AST-487 · KW-2449 | 1-2 | 6.2-7.8 | 6.8-8.0 | 6.5-8.1 |
+> ### **THE GCK-IV CLADE IS NOT AN ORPHAN POCKET — IT IS DRUGGED TO 3 nM BY APPROVED CHEMISTRY. R144's "ideal target class and NOT ONE MOLECULE" IS CORRECTED: NRK has none, its clade has a dozen.**
+
+### => ⛔⛔ THE CATCH, SEVERE ENOUGH TO LEAD WITH
+All five approved binders are promiscuous ABL/SRC/KIT/PDGFR/VEGFR multi-kinase inhibitors — **and that
+class has a MEASURED effect on children's height, in the wrong direction:**
+> **German CML-PAED II, 2024, n=94 children on imatinib >12 months:** *"**impaired growth due to
+> tyrosine kinase inhibitor therapy**… **significant height reduction occurred, with medians of −0.35
+> standard deviation score.**"* Plus a 2019 case: imatinib then dasatinib, *"downward crossing of
+> height percentiles."*
+> ### ⛔ **THE APPROVED DRUGS MOST LIKELY TO HIT NRK ARE THE ONE CLASS DOCUMENTED TO STUNT CHILDREN'S GROWTH. Bosutinib for height would be a growth-impairing agent for a growth indication.**
+**Mechanism is PDGFR-b/c-KIT inhibition in the plate plus GH/IGF-1 effects — ON-target, so not dosable
+around. Same failure logic as R138's verteporfin rejection: a systemic agent cannot choose compartment.**
+
+### => WHAT SURVIVES — A REAL ADVANCE, JUST NOT THE HOPED-FOR ONE
+| | before R145 | after |
+|---|---|---|
+| is NRK druggable? | ⛔ "dark kinase, zero chemical matter" | ⭐ **clade drugged to 3 nM; 65% identity, same gatekeeper. POCKET IS TRACTABLE** |
+| is there an NRK inhibitor? | ⛔ no | ⛔ **still no — and none has EVER been tested against NRK** |
+| repurpose an approved drug? | unknown | ⛔ **NO — the five are the growth-stunting TKI class** |
+| what is needed? | med-chem from scratch | ⭐ **a GCK-IV-selective compound WITHOUT ABL/KIT/PDGFR — PF-06260933, GNE-495, NCB-0846 already exist** |
+### ⭐⭐ THE CONVERGENCE WORTH MORE THAN THE REST: **TNIK IS A Wnt/TCF4 KINASE**
+```
+TNIK inhibition -> ↓Wnt/TCF output      -> the SPIN4 axis (R138's 38-45% target)
+NRK inhibition  -> ↑AKT -> ↑mTORC1      -> the N axis (newton2019, R130/R144)
+```
+> **The two mechanisms this file has pursued SEPARATELY for ten rounds, and one chemical clade touches
+> BOTH. NCB-0846 reached clinical development — so unlike selamectin, that chemotype may have human
+> exposure data.** ⚠ **R137's ladder still applies: a POTENT TNIK inhibitor would overshoot the Wnt arm.**
+
+### => ⭐ THE EXPERIMENT THAT SETTLES IT, AND IT IS ONE ASSAY
+**Recombinant NRK vs a 6-compound panel: bosutinib, lestaurtinib, dovitinib, PF-06260933, GNE-495,
+NCB-0846.** NRK is absent from the standard panels — **that absence IS why nobody knows.** One custom
+kinase assay (Reaction Biology / Eurofins / DiscoverX).
+- **Hit at <=100 nM by a selective compound -> Tdark to chemically addressable in one experiment.**
+- **Not hit despite 65% identity and an identical gatekeeper -> a real negative:** selectivity lives in
+  the 35% that differs, and a dedicated programme is required.
+**Highest information-per-dollar experiment anywhere in this file, including the explant.**
+
+### => WHAT I NEED
+1. ⭐⭐ **`Gizzio` main text + supplementary on NRK's CONFORMATIONAL CALL** — if NRK is predicted
+   canonical active DFG-in, ATP-competitive inhibition is straightforward; pseudokinase-like or
+   constitutively DFG-out changes the chemistry. I found NRK in their table, not their call for it.
+2. ⭐ **ANY kinome selectivity panel that actually contains NRK** — would replace all this homology
+   reasoning with data.
+3. **The `NCB-0846` clinical file** — a TNIK inhibitor with human exposure hits both arms at once.
+
+### CORRECTIONS
+- ⭐⭐⭐ **NRK HAS A HUMAN KNOCKOUT COHORT — 34 hom/hemizygous nulls in 1.45M exomes, the ONLY gene of
+  the 17 with any (all 34 in the table are NRK).** Best target-safety evidence class that exists.
+- ⭐⭐ **R144's "NOT ONE MOLECULE" CORRECTED** — NRK has zero ligands, but its clade is hit by five
+  approved drugs at 3-25 nM, and NRK shares 65% identity, HRDIK, and the **Met gatekeeper**.
+- ⭐ **"Tdark" reinterpreted: nobody has looked.** NRK is off the commercial panels and out of
+  chemoproteomic lysates.
+- ⛔⛔ **DIRECT REPURPOSING IS DEAD** — all five approved binders are the TKI class with a measured
+  **−0.35 SDS** growth decrement in children.
+- ⭐ **The needed compound class is named and exists** (PF-06260933, GNE-495, NCB-0846).
+- ⭐⭐ **TNIK is a Wnt/TCF4 kinase — one GCK-IV chemotype touches BOTH arms.**
+- ⭐ **The decisive experiment is now ONE KINASE ASSAY, not a med-chem programme.**
 
 ---
 
