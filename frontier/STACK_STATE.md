@@ -1,12 +1,151 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R136
+**Last updated:** F-R137
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-WHYSPIN4. **F-R137 — WHY SPIN4 LOSS IS GOOD (MAGNITUDE, NOT DIRECTION), VERTEPORFIN IS **REFUTED**, AND R132's "NOTHING DOES THIS" SPECIFICATION IS FILLED BY **IVERMECTIN**.**
+
+Operator supplied and read in full: `de_Zegher_2017`, `Bassols_2023` (mini-SPIOMET), `Laerkholm_2025`
+(LIFE-MET), `Deng_2016`, `Goto_2018`, `Vanyai_2020`, `Li_2021`.
+
+### => ⛔⛔⛔ VERTEPORFIN IS DEAD — AND IT IS **N-NEGATIVE**, THE ONE THING WE CANNOT AFFORD
+| genotype (`Deng 2016`, Cell Rep, OA) | compartment | result |
+|---|---|---|
+| Col2a1-Yap1 tg/tg (overexpr) | committed chondrocytes | smaller skeleton, plates **SHORTER** |
+| Yap1 c/c; **Col2a1**-Cre (loss) | committed chondrocytes | *"slightly BIGGER"*, plates **progressively LONGER** |
+| ⛔⛔ **Yap1 c/c; Prx1-Cre (loss)** | ⭐ **EARLY LIMB-BUD MESENCHYME** | ⛔ **"significant SMALLER skeleton… mainly a consequence of REDUCED PROLIFERATION OF EARLY CHONDROPROGENITOR CELLS"** |
+> ### **PRX1 = PRRX1. R117/Chu 2026: the human ROOT stem population is PTHrP-neg, PRRX1+. Deleting YAP in EXACTLY the compartment we are buying SHRINKS THE SKELETON.** Same paper: YAP overexpression raised MSC proliferation, colony formation and **Sox2/Pou5f1/Klf4**; knockdown "displayed mirror phenotypes". **YAP IS A POSITIVE REGULATOR OF PROGENITOR SELF-RENEWAL. A YAP INHIBITOR IS AN N-NEGATIVE AGENT, AND A SYSTEMIC DRUG CANNOT CHOOSE ITS COMPARTMENT.**
+**THREE MORE, EACH SUFFICIENT:** `Li 2021` — **TAZ is REQUIRED**; Col2-Cre;TAZ^f/f impairs growth plate;
+**global TAZ KO = SMALL STATURE** (verteporfin hits YAP *and* TAZ). `Vanyai 2020` — the only in vivo
+**double** KO **contradicts Deng**: no growth benefit, **skeletal DEFORMITIES incl. CLEFT PALATE**; and
+nls-YAP5SA / Lats1/2 KO → **"catastrophic malformations resembling chondrodysplasia or achondrogenesis"**.
+`Goto 2018` — YAP/TAZ **activation** → chondrodysplasia via TEAD repression of SOX9.
+Plus `Deng`: YAP loss RAISED Col10a1/Runx2/mineralisation = **accelerated maturation** = bone-age cost.
+⭐⭐ **AND THIS IS R136's GROWTH-ARREST CONFOUND, CAUGHT IN THE ACT: verteporfin lowers SPIN4 *BECAUSE* it
+arrests progenitors. The confound is now a DEMONSTRATED MECHANISM that cost a candidate, not a caution.**
+
+### => ⭐⭐⭐ WHY SPIN4 LOSS IS GOOD — AND THE WNT PARADOX RESOLVED AS **MAGNITUDE, NOT DIRECTION**
+**Mechanism (Lui 2023/2026):** partial cell-intrinsic ↓Wnt → **RZ progenitor NUMBER ↑**, PZ proliferation
+rate ↑, PZ height/cells-per-column/cell height **unchanged**, ⭐ **h_term COMPLETELY UNTOUCHED**, +5.06%
+tibia at 18 mo, human +4.5–5 SDS, no BMD/adiposity penalty.
+> **In R130's terms: SPIN4 loss raises the SELF-RENEWAL:COMMITMENT RATIO in the resting zone. It does not
+> withdraw from a stock — it changes the division-fate split. The only perturbation in this file with a
+> resting-zone CELL-COUNT endpoint, borrowing nothing from terminal cell size.**
+⛔ **THE APPARENT CONTRADICTION THE FILE WAS CARRYING:** `Spin4−/−` **LOWERS** Wnt → +5.06%; `Cxxc5−/−`
+**RAISES** Wnt (CXXC5 is a Wnt brake) → **+3.8%**. Both losses lengthen; opposite Wnt directions.
+⭐ **RESOLVED FROM R462's OWN LADDER — order by PUSH STRENGTH, ignore sign:**
+| push | perturbation | result |
+|---|---|---|
+| ⭐ **mildest LOWER** | **Spin4 loss** (one reader, cell-intrinsic) | ⭐ **+5.06%** |
+| ⭐ **mildest RAISE** | **Cxxc5−/−** (one DVL scaffold) | ⭐ **+3.8%** |
+| mild raise | Gsk3b single cKO | nothing |
+| stronger lower | Col2a1-ICAT / Frzb-1 / PORCN | ⛔ runted / shortens / plate exhausted |
+| stronger raise | Gsk3a/b dKO / stabilised β-cat / Apc | ⛔ shorter+lethal / **PREMATURE CLOSURE** / death |
+> ### **THE ONLY TWO PERTURBATIONS THAT LENGTHEN BONE ARE THE TWO MILDEST IN THE LITERATURE, AND THEY POINT OPPOSITE WAYS. EVERYTHING STRONGER — EITHER DIRECTION — SHORTENS, CLOSES OR KILLS. NOT A DIRECTION QUESTION: A NARROW SHELF, AND THE VARIABLE IS MAGNITUDE.** SPIN4 works because it is the SMALLEST AVAILABLE NUDGE, applied cell-intrinsically, in the right cells.
+⭐ **WHY THE SHELF IS NARROW — candidate already in the file:** R117 **two stem populations**; Chu 2026 the
+**root** niche is **WNT-LOW**; R132 **Axin2+ stem cells REQUIRE Wnt**. **Two progenitor populations with
+OPPOSITE Wnt requirements in one plate: any move big enough to matter expands one and empties the other.**
+⭐⭐ **SO SPIN4 AND CXXC5 ARE ORTHOGONAL, NOT COMPETING — SPIN4 buys N, CXXC5 buys DURATION (senescence
+timing, E2-induced). Different terms. POTENTIALLY ADDITIVE. This file had them fighting for one slot.**
+
+### => ⭐⭐⭐ THE EASIER DRUG: **R132 SAID NOTHING IN THE PHARMACOPOEIA DOES THIS. WRONG.**
+**Test run:** for each SPIN4-lowering agent, within its OWN SPIN4-down signatures, which way does a
+10-gene canonical Wnt target panel move (`AXIN2 LEF1 TCF7 NKD1 RNF43 ZNRF3 SP5 CCND1 NOTUM TNFRSF19`)?
+**Base rate 172 dn / 142 up = 0.548 — near coin-flip, so this filter DOES discriminate** (unlike R136's
+SPIN4-only filter at 0.689). Code `analysis/redundancy/wntpanel.py`.
+| agent | SPIN4 | WNT panel | p | call |
+|---|---|---|---|---|
+| ⭐ **ivermectin** | **4/0** | **7 dn / 1 up** | **0.062** | ⭐ **BOTH DOWN, non-cytotoxic** |
+| ⭐ **sulforaphane** | **5/0** | **7 dn / 3 up** | 0.262 | ⭐ **BOTH DOWN, non-cytotoxic** |
+| verteporfin | 5/0 | 4 / 0 | 0.090 | ⛔ refuted above |
+| carfilzomib / trametinib | 6/0, 7/0 | 9/0, 13/2 | 0.005, 0.010 | ⛔ cytotoxic/cytostatic |
+| ⛔ **metformin** | 6/0 | ⛔ **5 dn / 11 UP** | **0.984** | ⛔ **RAISES Wnt** |
+| ⛔ pirfenidone / enzalutamide | — | 3/8, 3/6 | — | ⛔ **WNT UP** |
+**⭐ THE CASE FOR IVERMECTIN IS *NOT* THE SCREEN (p=0.062, one GSE). IT IS INDEPENDENT AND MECHANISTIC:**
+> **`Melotti 2014`, EMBO Mol Med — "The river blindness drug Ivermectin and related macrocyclic lactones
+> inhibit WNT-TCF pathway responses in human cancer."** A repositioning screen *"aiming to recapitulate the
+> genetic blockade afforded by dominant-negative TCF"*; ivermectin **"inhibits the expression of WNT-TCF
+> targets, mimicking dnTCF"**, and ⭐ **"its low concentration effects are rescued by direct activation by
+> TCF(VP16)"** — a proper EPISTASIS CONTROL placing the action AT OR ABOVE TCF. Represses C-terminal
+> β-catenin phosphoforms and CYCLIN D1. **`2022`: binds TELO2** → ↓cytoplasmic β-catenin, ↓β-cat/TCF.
+**= "a partial reducer of canonical Wnt TRANSCRIPTIONAL OUTPUT" — R132's exact unfilled specification.**
+**Obtainability is at the extreme favourable end: approved, oral, generic, mass administration INCLUDING
+IN CHILDREN, non-cytotoxic at therapeutic exposure — so it escapes the arrest confound.**
+**⛔⛔ WHY IT STILL DOES NOT ENTER — three, and the first is serious:**
+1. ⛔⛔ ⭐ **"MIMICS dnTCF" IS THE PROBLEM, NOT THE SELLING POINT. The closest genetic analogue of dnTCF is
+   ICAT — Inhibitor of β-CAtenin And TCF — and Col2a1-ICAT SHORTENS BONE. Ivermectin's node and direction
+   match the perturbation that FAILS. Only MAGNITUDE separates it from SPIN4, and that is unmeasured.**
+2. ⛔ **NO bone/cartilage/growth-plate data exists for ivermectin** (searched; 22 hits, none on point).
+   **R131's rule just held verteporfin and verteporfin turned out HARMFUL. I will not waive it here.**
+3. ⚠ **Delivery is real:** cartilage avascular; ivermectin highly lipophilic, large Vd, P-gp substrate.
+> **BEST-SPECIFIED RENEWAL CANDIDATE THE FILE HAS EVER HAD — right node, right direction, epistasis
+> control, obtainable, non-cytotoxic — blocked on the one axis that decides it. LEAD ARM OF THE EXPERIMENT.**
+
+### => ⭐⭐ METFORMIN: SPIN4 STORY **DEAD**, BONE-AGE RESULT **BETTER THAN R136 SAID**
+⛔ **R136's metformin-as-SPIN4-agent framing WITHDRAWN** — it RAISES Wnt output (5 dn / 11 up, p=0.984).
+⭐⭐⭐ **`de Zegher 2017`, RANDOMISED, ISRCTN84749320, n=34, BoneXpert. Metformin 425→850 mg/day, age 8.
+INCLUSION REQUIRED BMI<22 — THESE GIRLS WERE NOT OBESE (mean 18.4).**
+| | untreated (17) | metformin (17) | p |
+|---|---|---|---|
+| **ΔBA/ΔCA (GP)** | **1.16±0.06** | ⭐ **0.96±0.06** | ≤0.05 |
+| Δ(BA−CA) over 4 yr | **+0.7 yr** | ⭐ **−0.2 yr** | ≤0.05 |
+| cm per **chronological** year | 5.9±0.2 | 6.4±0.2 | **NS** |
+| ⭐⭐ **cm per BONE-AGE year (GP)** | **5.3±0.4** | ⭐ **7.0±0.5** | ⭐ **≤0.01 → +32%** |
+| age at menarche | 11.5±0.1 | **12.6±0.2** | ≤0.005 |
+| hepatic fat | 18±2% | **9±1%** | ≤0.005 |
+| **BMD / BMC / lean mass** | — | — | ⭐ **NO DIFFERENCE** |
+Tempo of maturation correlated with **HEPATIC FAT R=0.55 p<0.001**; difference **independent of BMI**.
+> ### ⭐⭐⭐ **THE EXACT INVERSE OF KAMP 2002.** Kamp: high-dose GH → velocity UP, *"height SDS for bone age NOT significantly different"* — **ALL RATE, NO YIELD.** de Zegher: velocity per CA **unchanged (NS)**, height per BONE-AGE year **+32%** — ⭐ **ALL YIELD, NO RATE.**
+> **METFORMIN IS A PURE YIELD AGENT WITH ZERO RATE COST. In A ∝ throughput^−0.150, GH raises throughput and pays the exponent; metformin never touches throughput — it LOWERS THE MATURATION DENOMINATOR.**
+⭐⭐ **FIRST AGENT IN THE FILE THAT RELAXES ANOTHER AGENT'S CEILING RATHER THAN ADDING AN INCREMENT.**
+R131's GH cap (0.24–0.37 mg/kg/wk) is a **bone-age constraint and nothing else**. An agent running
+ΔBA/ΔCA at 0.96 instead of 1.16 buys headroom **in the currency the cap is denominated in.**
+**TWO OBJECTIONS SURVIVE:** ⚠ **population** — but WEAKER than R136 said: subjects **non-obese**, effect
+**BMI-independent**, tracked **HEPATIC** fat. ⭐ **The discriminating measurement is LIVER FAT, not BMI.**
+⚠ **redundancy with anastrozole, now sharper:** metformin delayed **MENARCHE** (+1.1 yr) = a **CENTRAL**
+event; anastrozole blocks **PERIPHERAL** aromatase. **If the route runs through the central pubertal clock
+they are additive; if through adipose aromatase, anastrozole owns it. Authors state the mediator is unknown.**
+**THE ARM IS LIVE AND UNPUBLISHED:** **mini-SPIOMET** (double-blind placebo-controlled, n=64; primary =
+**annualised bone-age advancement by BoneXpert**) and **LIFE-MET** (2×2 factorial, n=80, metformin 1000
+mg/d; primary = **change in bone age to 12 mo**) — **NO RESULTS POSTED FOR EITHER.**
+⚠ Only the metformin component of SPIOMET imports: spironolactone is an antiandrogen (collides with R128's
+discharge arm); pioglitazone is a PPARγ agonist (impairs bone).
+
+### => STACK CHANGES — **still no new drug enters**, but:
+⛔ **verteporfin REMOVED from the queue entirely** (refuted, N-negative).
+⛔ **metformin-as-SPIN4-agent withdrawn**; ⭐⭐ **metformin-as-bone-age-agent PROMOTED** on a randomised
+quantitative endpoint. ⭐⭐⭐ **ivermectin ENTERS THE QUEUE as the lead renewal candidate.**
+⭐ **sulforaphane** second (passes both filters; NRF2 has an independent length endpoint).
+
+### => THE EXPERIMENT — the whole question is now ONE NUMBER: where on the ladder does each agent land?
+**Fetal tibial / E16.5 femur explant, DOSE-RANGED, LENGTH endpoint.** Arms: ⭐ **ivermectin (5-point, lead)**
+· sulforaphane or DMF · VinSpinIn (mechanistic anchor) · ⭐ **a deliberate OVERSHOOT arm — the ladder
+predicts it SHORTENS, and if it does not the magnitude model is wrong.** **A dose range is not optional —
+it IS the hypothesis.** Non-monotonic peak just off wild type; never drawn in cartilage for any agent.
+**Two cheap deciders:** ① **TCF7L2 knockdown → measure SPIN4** (converts R136's feedback loop from
+occupancy to regulation). ② ⭐ **Spin4 × Cxxc5 double, tibial length — DIRECTLY TESTS ORTHOGONALITY.
+If SPIN4 buys N and CXXC5 buys duration the double exceeds both singles. Nobody has crossed these mice.**
+
+### CORRECTIONS
+- **VERTEPORFIN REFUTED AND REMOVED** — YAP loss in the **Prrx1+ root compartment shrinks the skeleton by
+  depleting progenitor proliferation**. **A YAP inhibitor is N-NEGATIVE.**
+- **R136's growth-arrest confound DEMONSTRATED, not hypothesised** — it just killed a candidate.
+- **R136's metformin-as-SPIN4-agent framing WITHDRAWN** (metformin raises Wnt output).
+- **R132's "nothing in the pharmacopoeia does that" CORRECTED — ivermectin does**, with a TCF(VP16)
+  epistasis control and a named target (TELO2). The file had never looked outside oncology chemistry.
+- **SPIN4/CXXC5 Wnt contradiction RESOLVED as a MAGNITUDE law**, from the atlas's own R462 ladder.
+- **SPIN4 and CXXC5 RECLASSIFIED as ORTHOGONAL (N vs duration), potentially additive** — they had been
+  treated as competitors for one slot.
+- **A whole clinical field NAMED that this programme had never read:** randomised bone-age deceleration.
+- ⚠ **R136's "wrong population" objection to metformin WEAKENED by the primary text** — non-obese,
+  BMI-independent, hepatic-fat-tracking. **Liver fat is the discriminating measurement.**
 
 ---
 

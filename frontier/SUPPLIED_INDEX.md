@@ -142,3 +142,14 @@
 ---
 
 I repeatedly re-asked for papers already supplied. Memory across 25+ turns is not an index. **Grep this first.**
+
+## 2026-08-30 — SPIOMET / YAP-TAZ bundles (R137)
+| file | what it settles |
+|---|---|
+| `de_Zegher_2017_Metformin_Slower_Bone_Maturation.pdf` | **the bone-age numbers.** dBA/dCA 1.16 -> 0.96; cm per bone-age year 5.3 -> 7.0 (p<=0.01) |
+| `Bassols_2023_Mini_SPIOMET_Protocol.pdf` | mini-SPIOMET protocol; primary = annualised BoneXpert bone-age advancement; **no results** |
+| `Laerkholm_2025_LIFE_MET_Protocol.pdf` | LIFE-MET protocol; metformin 1000 mg/d; primary = bone-age change at 12 mo; **no results** |
+| `Deng_2016_Yap1_Chondrocyte_Differentiation.pdf` | **refutes verteporfin.** Prx1-Cre Yap1 loss = SMALLER skeleton via reduced progenitor proliferation |
+| `Goto_2018_Mob1_YAP_TAZ_Chondrodysplasia.pdf` | YAP/TAZ activation -> chondrodysplasia via TEAD repression of SOX9 |
+| `Vanyai_2020_Hippo_YAP_TAZ_Skeletal_Morphogenesis.pdf` | cartilage Yap/Taz dKO -> no growth benefit, deformities incl. cleft palate |
+| `Li_2021_TAZ_Chondrogenesis_Skeletal_Development.pdf` | **TAZ is REQUIRED**; global TAZ KO = small stature |
