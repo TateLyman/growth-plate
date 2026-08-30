@@ -1,12 +1,87 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R150
+**Last updated:** F-R151
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-FMEASURED. **F-R151 — ⛔⛔⛔ `f` WAS NEVER UNKNOWN. IT IS PUBLISHED, AND IT KILLS THE NRK ARM. **RENTOSERTIB LOSES 3.7× ON MINK1 AND 8.9× ON MAP4K4 — PARALOGS WHOSE LIGAND-CONTACT SURFACE IS 100% IDENTICAL TO TNIK's.** MEASURED CEILING ON NRK ENGAGEMENT 14–18%; R148 REQUIRED 30%. **THE CEILING IS BELOW THE FLOOR.**
+
+### => THE SOURCE
+`Supplementary Information 5, Table S-5` of **PMC11738990** (open access) — **Eurofins KinaseProfiler,
+430 kinases at 10 µM, 42 top hits to full IC50.** ⚠ NRK is not on the panel (Tdark) — **and does not need to be.**
+
+| kinase | **IC50 (nM)** | fold vs TNIK | ⭐ **f** | R150 contact identity | divergence at rentosertib's **own design pharmacophore** |
+|---|---|---|---|---|---|
+| **TNIK** | **31** | 1.0× | 1.000 | ref | ref |
+| **MINK1** | **115** | **3.7×** | ⭐ **0.270** | ⭐ **23/23 = 100%** | ⭐ **0 of 6** |
+| **MAP4K4** | **277** | **8.9×** | ⭐ **0.112** | ⭐ **23/23 = 100%** | ⭐ **0 of 6** |
+| **MAP4K5** | **1228** | **39.6×** | **0.025** | 17/23 | 4 of 6 |
+
+### => ⛔⛔⛔ THE INFERENCE
+MINK1 and MAP4K4 are **structurally indistinguishable from TNIK everywhere the drug touches** (R150:
+23/23 contacts; 0/6 at the Cys108 hinge anchor + Met105/Leu73/Leu103/Ala52/Val104 back cavity Insilico
+named as the design pharmacophore). **They are the best possible case.**
+
+> ### ⛔⛔ **AND RENTOSERTIB STILL LOSES 3.7× AND 8.9× ON THEM. NRK — 6 contact substitutions, 1 design-residue substitution (L103M) — CANNOT DO BETTER. f(NRK) ≤ 0.27, realistically well below.**
+
+⚠ **This does not contradict R150 — it exposes a LIMIT OF THE METHOD.** NRK's pocket really is TNIK-like
+where it matters. **The problem was never NRK's pocket: rentosertib discriminates 8.9× between kinases
+whose contact surfaces are IDENTICAL.** Its selectivity lives in conformational preference, kinetics or
+back-cavity geometry — **things sequence and contact analysis cannot see.**
+
+### => ⛔ INTO R148's EQUATION  `E_nrk = f·E_wnt/(1−E_wnt+f·E_wnt)`
+| case | f | **NRK engagement at Wnt 38–45%** | |
+|---|---|---|---|
+| ⭐ **MINK1 (identical pocket) = CEILING** | **0.270** | ⛔ **14.2 – 18.1%** | **DEAD** |
+| MAP4K4 (identical pocket) | 0.112 | ⛔ 6.4 – 8.4% | DEAD |
+| MAP4K5 (17/23, like NRK) | 0.025 | ⛔ 1.5 – 2.0% | DEAD |
+| ⭐ **what R148 REQUIRED** | **0.700** | **30.0 – 36.4%** | ← required |
+
+> ⛔⛔⛔ **CEILING 14–18% vs REQUIREMENT 30%+ — and that is the OPTIMISTIC case, using a paralog NRK cannot beat.**
+
+### => ⭐ THE NANOBRET EXPERIMENT (R149) IS WITHDRAWN AS DECISIVE
+Even a clean positive would not save the arm: it needs **f ≥ 0.7** and the paralog data caps f at 0.27.
+⭐ **I was conflating "binds" with "useful."** No assay was needed and none would have helped.
+
+### => ✅ R147's FALSIFIABLE PREDICTION CONFIRMED
+Predicted from sequence alone that rentosertib, being AI-optimised for TNIK selectivity, would be
+**worst of the panel for NRK**. **Measured: 3.7–40× over its own clade, and 65–111% of control (i.e. no
+inhibition) on NCB-0846's reported targets.** ⭐ **It is a genuinely clean molecule — which is exactly why
+it is useless for the second arm.**
+
+### => ⭐ THE SEARCH INVERTS
+If a *selective* clade inhibitor cannot carry to a paralog, the best NRK bet is the **least** selective one:
+| candidate | evidence | status |
+|---|---|---|
+| ⛔ **rentosertib** | **f ≤ 0.27 measured** | ⛔ **dead for NRK** |
+| ⭐ **NCB-0846** | TNIK co-crystal **5D7A**, touches only **5** NRK-divergent contacts, **promiscuous where rentosertib is clean** | ⭐ best structural bet — ⛔ **no human exposure** |
+| compound 9 (6RA7) | touches **fewest** (4) | tool only |
+| ⛔ 8ZML chemotype | *"selective TNIK inhibitor for IPF"* — touches **8** | ⛔ worst |
+
+⛔ **The NRK arm has a structural direction and no clinical molecule. It is a med-chem programme, not a dosing decision.**
+
+### => ⭐⭐ AND THE WNT ARM IS UNTOUCHED
+R148's **30 mg QD** rests on FVC and ALT data from 71 people and **never depended on NRK.**
+⭐ **It was always the whole case; now it is explicitly the only case.**
+
+### => ⚠ NEW AND UNRESOLVED — RENTOSERTIB's OTHER ENGAGEMENTS AT THE SAME DOSE
+| off-target | IC50 | f | **engagement at Ew≈41.5%** |
+|---|---|---|---|
+| ⚠ **YES1** | **48 nM** | 0.65 | ⚠ **~31%** |
+| ALK4 | 59 nM | 0.53 | ~27% |
+| **TGFBR1** | **168 nM** | 0.185 | ~12% |
+| Fms/CSF1R | 170 nM | 0.18 | ~11% |
+| DDR1 | 184 nM | 0.17 | ~11% |
+
+⚠ **Directions NOT claimed** — that is the *localisation ≠ intervention direction* error. But **YES1 ~31%
+and TGFBR1 ~12% at the proposed dose were not in the ledger, and TGFBR1 intersects R130's TGF-β arm.
+This needs its own round before the Wnt arm is called clean.**
 
 ---
 
