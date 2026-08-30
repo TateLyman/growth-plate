@@ -1,12 +1,101 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R124
+**Last updated:** F-R125
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-EXHAUST. **F-R125 — NORMAL FUSION STRANDS BUDGET. THE DISCRIMINATOR IS BONE AGE, NOT POOL CONSUMPTION.**
+
+### => ⭐⭐⭐ THE OPERATOR'S REFRAME IS CORRECT
+| | |
+|---|---|
+| normal male | fuses BA ~17-18 at ~176 cm |
+| **herrmann2002 oestrogen-null** | **170 cm @14 -> 197 cm @24**, plates STILL OPEN at 27 |
+| ESR1-null | BA 15 at ~28, unfused at 31, still gaining in 3rd decade |
+**A plate can keep PRODUCING for a decade past normal fusion age. That man laid down 27 cm AFTER the point
+normal closure would have stopped him. If fusion occurred at exhaustion, that is impossible.**
+> **NORMAL CLOSURE STRANDS BUDGET. The oestrogen-null men are tall because they spent what a normal plate
+> leaves unspent. EXHAUSTION IS NOT THE ENEMY — IT IS THE ENDPOINT.**
+**This programme has treated pool PRESERVATION as a goal. It is not. A preserved pool in a closing plate is
+STRANDED BUDGET — which is exactly what a normal skeleton does.**
+
+### => ⛔ BUT "SPEND FAST" DOES NOT FOLLOW — THE RATE-YIELD LAW IS THE COUNTERWEIGHT
+R360/hunziker1994: **A proportional to throughput^-0.150**
+| throughput | amplification | total height from a fixed pool |
+|---|---|---|
+| 2x | x0.901 | **-9.9%** |
+| 3x | x0.848 | -15.2% |
+| 5x | x0.786 | **-21.4%** |
+| 10x | x0.708 | -29.2% |
+**In a BUDGET regime speed COSTS total height.** 5x throughput surrenders 21%.
+> **THE INSTRUCTION IS: SPEND IT COMPLETELY. Speed is a cost; completeness is the objective. NOT THE SAME.**
+Speed only earns its penalty if the plate would otherwise close before exhausting — and the AI is precisely
+what removes that deadline.
+
+### => ⭐⭐ THE CORRECT DISCRIMINATOR — AND IT RETRACTS ONE OF MY OWN FLAGS
+**WRONG question:** does this agent spend the pool? **RIGHT question:** does it advance BONE AGE?
+Spending the pool is the ONLY mechanism by which pool becomes height. **The failure mode is converting
+pool -> BONE AGE, not pool -> height.**
+> **⛔ RETRACTED: R117 flagged the CNP arm as CONTRAINDICATED because "CNP converts N into A — the GH
+> failure mode." WRONG-HEADED.** Converting N into A is the entire point, and vosoritide's BA-to-chrono
+> ratio is UNMOVED (dauber2026), so the conversion is FREE. **Flag withdrawn; CNP arm reinstated without
+> reservation.** The same error sits under my pre-R123 treatment of GH and the whole "preserve the pool" posture.
+
+### => AGENTS SCORED ON THE RIGHT CRITERION
+| agent | bone-age effect | qualifies |
+|---|---|---|
+| **anastrozole** | **slowed ~24%** (1.37 vs 1.81 BA-yr, p=0.001) | ✅ + preserves yield/division |
+| **GH 0.24-0.37 mg/kg/wk** | **neutral** (0.37 not different from 0.24) | ✅ |
+| **oxandrolone** ⭐NEW | **"bone age did NOT accelerate"**; GH+oxa = greater final height **with NO significant increase in bone maturation** vs GH alone | ✅ |
+| **vosoritide / CNP** | BA-to-chrono ratio **UNMOVED** | ✅ |
+| **erdafitinib / FGFR3i** | ⚠️ **NEVER MEASURED** | **UNKNOWN — see below** |
+| testosterone / aromatisable androgens | **aromatise to E2 -> ADVANCE BA** | ❌ |
+| GH >=0.5 mg/kg/wk | advances pubertal onset AND bone maturation | ❌ |
+
+### => ⭐ NEW AGENT: OXANDROLONE
+Non-aromatisable — cannot become E2, *"exerts a relatively limited effect on epiphyseal plate closure"* —
+while raising IGF-1. **Turner: rhGH + oxandrolone gave GREATER FINAL HEIGHT with NO significant increase in
+bone maturation vs rhGH alone.** And the concept has a 1961 paper: *"Dissociation of growth-stimulating and
+skeleton-maturing actions of the synthetic androgen, fluoxymesterone."* **The androgen class SPLITS into a
+growth arm and a maturation arm and they are SEPARABLE. This file never held that.**
+⚠ **COUNTERWEIGHT: in CDGP oxandrolone showed NO significant final-height effect**, and one source reports
+little difference from short-term low-dose testosterone. **Established as bone-age-sparing; NOT established
+as final-height-adding outside Turner.**
+
+### => ⚠️ THE HOLE THIS OPENS IS UNDER THE BASE AGENT
+**ERDAFITINIB'S EFFECT ON BONE AGE HAS NEVER BEEN MEASURED.** The infigratinib phase-3 readout
+(0.25 mg/kg/day, 52 wk, ACH 3-17 y) has **annualised height velocity** as primary endpoint; no
+bone-maturation ratio appears anywhere in the FGFR3-inhibitor literature. The atlas's "FGFR3's third arm is
+closure, so blocking it should DELAY maturation" is **INFERENCE, NOT MEASUREMENT, and it sits under the base
+agent of the whole stack.** On this round's criterion it is now **the single most important unmeasured
+quantity in the programme.**
+
+### => THE STACK, RESTATED ON THE EXHAUSTION PRINCIPLE
+**OBJECTIVE: convert the ENTIRE pool into height before anything closes, using ONLY agents that do not
+advance bone age. Do not preserve. Do not rush. COMPLETE.**
+1. **Anastrozole** — removes the deadline AND preserves yield/division (weise2001's 7 parameters). The
+   permission-granting agent. **>=2 years or it does nothing.**
+2. **GH 0.24-0.37 mg/kg/wk** — velocity, BA-neutral. **NEVER >=0.5.**
+3. **Oxandrolone** — second BA-sparing velocity agent, non-aromatisable, additive to GH where tested.
+4. **Vosoritide +/- sacubitril** — REINSTATED; conversion is free at an unmoved BA ratio.
+5. **Erdafitinib** — retained on h_term/matrix/NPR2 grounds, **BA effect flagged UNMEASURED.**
+**WHAT WE CANNOT DO:** go past an AI to full oestrogen ablation. Round 272 holds that all three oestrogen
+receptors at the plate are brakes and the one you cannot spare is already leaving; and complete blockade
+takes the **17OHD path (R124) — the SHORT configuration.** **The AI is not a compromise; it is the correct
+DEPTH of intervention.**
+
+### CORRECTIONS
+- **Exhaustion reframe ACCEPTED** — pool preservation has been a mis-specified goal throughout this file.
+- **"Spend fast" REJECTED on the rate-yield law** (5x throughput = -21% total height). Completeness, not speed.
+- **R117's CNP contraindication WITHDRAWN.**
+- **Oxandrolone ADDED**, with final-height evidence honestly limited to Turner.
+- **Erdafitinib's bone-age effect flagged NEVER MEASURED — now the top open quantity in the stack.**
 
 ---
 
