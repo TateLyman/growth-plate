@@ -1,12 +1,112 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R166
+**Last updated:** F-R167
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HUMANZONE. **F-R167 — ⭐⭐⭐ I RAN THE **HUMAN PUBERTAL GROWTH-PLATE scRNA-seq**: `TET1` IS EXPRESSED IN **4/4 DONORS** AND IS **RESTING-ZONE ENRICHED IN 4/4** (RZ 59.3 > PZ 34.0 > HZ 29.0 CPM) — R166's RAT RESULT **REPLICATES IN OUR SUBJECT'S EXACT TISSUE, SPECIES AND LIFE STAGE.** ⭐⭐ AND THE WITHIN-STACK QUESTION: **GH DOES NOT MOVE TET1** (flat in all 3 zones in the only donor with verified GH signalling). ⚠ THE CONFOUND-FREE AGEING TEST IS FAVOURABLE BUT **p = 0.206, NOT BANKED.** ⛔ **GOLD IN GROWTH-PLATE CARTILAGE: DECLARED NON-EXISTENT AFTER 20+ SEARCHES.****
+
+**Document:** `R167_human_pubertal_growth_plate_replicates_the_resting_zone_result_and_gh_does_not_touch_tet1.md`
+**Scripts:** `analysis/redundancy/hsgp.py`, `analysis/redundancy/hsgh.py`, `analysis/redundancy/gpage2.py`
+
+### ⭐⭐⭐ HUMAN PUBERTAL GROWTH PLATE — `GSE288028`
+10x 3' v3, CellRanger 7.1.0. **4 fresh human growth plates + 3 paired cultured vehicle-vs-GH donors.**
+R166 closed by asking for *"single-cell/in-situ growth-plate data with real zone assignment."* **It exists,
+it is human, it is pubertal, and it contains GH — which is already in our stack.**
+
+**TET1 is expressed in every donor** (pseudobulk CPM): 52.1 / 32.0 / 23.5 / 29.0 — **mean 34.1**.
+⭐ **The most consistently expressed of the three paralogues**: TET2 higher on average (163.8) but
+**16-fold variable (21–330)**; TET3 51.7 (2.5–102, 40-fold).
+
+**By zone** (cells assigned by normalised marker score; RESTING set includes **APOE**, which `GSE288529`
+identifies as marking *"all chondrocytes in the growth plate resting zone"*):
+
+| zone | **TET1 CPM** | donors | per-donor |
+|---|---|---|---|
+| ⭐⭐⭐ **RESTING** | ⭐ **59.3** | 4 | **98, 52, 36, 51** |
+| **PROLIFERATIVE** | 34.0 | 3 | 45, 21, 36 |
+| **HYPERTROPHIC** | 29.0 | 4 | 46, 26, 20, 24 |
+
+> ⭐⭐⭐ **RESTING > PROLIFERATIVE > HYPERTROPHIC — the same monotonic order as the rat, RESTING highest in
+> 4 OF 4 DONORS, ~2× each.**
+> ⭐⭐⭐ **R166's CAVEAT IS ANSWERED: different species (human), platform (scRNA-seq), lab and donors — in the
+> exact tissue and life stage of our subject.**
+
+⚠ **Weaker than the rat in four named ways:** zone calls are **mine** (marker score, not the authors'
+clustering); the hypertrophic bin is likely **contaminated with bone lineage** (IBSP/SPP1, >50% of cells);
+the gradient is **shallower (2.05× vs 5.97×)**; 4/4 is a sign test at **p = 0.0625**.
+⛔ **`LOCALISATION ≠ INTERVENTION DIRECTION` still binds — presence and pattern, not sign. The sign is the
++8.32 cm.**
+
+### ⭐⭐ THE WITHIN-STACK QUESTION NOBODY HAS ASKED: DOES GH MOVE TET1?
+**GH is in the stack at 0.24–0.37 mg/kg/wk. If GH raised TET1, our own two arms would oppose each other.**
+
+⛔ **Naive pseudobulk said TET1 +0.51 log2 ("GH raises TET1") — WITHDRAWN BEFORE BANKING:** chondrocyte
+genes swung **±6 log2** between donors (COL10A1 +5.60, +0.55, −6.57), so **composition dominated.** Redone
+**cell-type-matched.**
+
+⛔⛔ **THE POSITIVE CONTROLS DISQUALIFY TWO OF THREE DONORS:**
+
+| donor | CISH | IGF1 | verdict |
+|---|---|---|---|
+| rep1 | ⛔ −3.07 | ⛔ −0.96 | ⛔ no GH response |
+| rep2 | ⛔ −0.16 | ⛔ −2.09 | ⛔ no GH response |
+| ⭐ **rep3** | ⭐ **+1.51…+2.19** | ⭐ **+1.64…+3.44** | ⭐ **GH verified** |
+
+⭐⭐ **In rep3 — the only donor where GH demonstrably worked — TET1 is FLAT in all three zones:
+RESTING −0.03 · PROLIFERATIVE −0.13 · HYPERTROPHIC −0.24 log2**, while CISH rose 2.9× and IGF1 up to 10.9×
+in the same cells.
+
+> ⭐⭐ **NO WITHIN-STACK GH↔TET1 CONFLICT APPEARS. GH's programme runs through SOCS2/CISH/IGF1 and leaves
+> TET1 untouched — the arms look ORTHOGONAL, not opposed.**
+⚠ **n = 1 donor and an ABSENCE of effect: evidence against a conflict, not proof of independence.**
+
+### ⚠ THE CONFOUND-FREE AGEING TEST — FAVOURABLE, NOT SIGNIFICANT, NOT BANKED
+`GSE114919` (*"Differential ageing of growth plate cartilage determines skeletal proportions"*) supplies the
+clean design R166 lacked: a **FAST** plate (tibia) vs a **SLOW** one (phalanx) at **matched age, zone and
+dissection**, n=5. **Prediction if TET1 opposes growth: higher in the SLOW plate.**
+
+Mouse, 1 wk, HZ — phalanx minus tibia (log2):
+
+| gene | Δlog2 | ×-fold | p |
+|---|---|---|---|
+| ⭐ **Tet1** | **+0.55** | **1.47 ↑ in SLOW** | ⚠ **0.206 — ns** |
+| Tet2 | −0.00 | 1.00 | 0.978 |
+| Tet3 | −0.46 | 0.73 | **0.011 ↓** |
+| *Ihh* | −2.36 | 0.19 | 0.005 ✅ |
+| *Acan* | −2.43 | 0.19 | 0.004 ✅ |
+| *Col10a1* | −1.73 | 0.30 | 0.004 ✅ |
+| *Fgfr3* | −2.06 | 0.24 | 0.020 ✅ |
+
+⭐ The contrast is valid — the slow plate has far less growth machinery, all significant. ⚠ **Tet1 goes the
+favourable way and is TET1-SPECIFIC among the paralogues, but p = 0.206.**
+⛔ **Only ONE contrast exists (mouse, 1wk, HZ — the least relevant zone), and the RAT TABLE CONTAINS NO TET
+GENES AT ALL** (checked every row by symbol and by description). ⚠ **R166's temporal claim is NOT rescued.**
+
+### ⛔ GOLD IN GROWTH-PLATE CARTILAGE — DECLARED NON-EXISTENT
+Searched **20+ distinct ways** across R163–R167 in PubMed and Europe PMC full text: the field's vocabulary
+(**`aurosome`**), method vocabulary (autometallography/silver enhancement, electron-probe microanalysis,
+neutron-activation autoradiography, synchrotron XRF), and adjacent framings (placental/fetal transfer,
+veterinary gold beads, gold-thioglucose models, juvenile AuNP ICP-MS).
+⛔ **It does not exist. The one study that looked at the epiphyseal plate — `Tonna 1963` — was NEGATIVE.**
+
+| what we have instead | strength |
+|---|---|
+| ⭐⭐⭐ human **ARTICULAR** cartilage **0.64 mg/100 g**, highest tissue assayed, **64× plasma** (Lawrence 1961) | strongest, n=1 |
+| ⭐⭐ systemic Au(I)-thiolate → aurosomes in cartilage chondrocytes, **immature only**, deep zones, **Zone I spared** (Oryschak 1976) | strong, rabbit |
+| ⭐⭐ children with **open epiphyses**, intra-articular ¹⁹⁸Au, **no change in fusion timing or skeletal growth over 3–9 y** (Ahlberg 1979) | human, growth-plate-specific |
+| ⛔ **growth-plate cartilage itself** | ⛔ **never measured; one negative** |
+
+⭐ **THE CLOSING EXPERIMENT, NAMED: dose a growing animal (rabbit 3–4 mth or 4–5 wk mouse) with oral
+auranofin to steady state, then ICP-MS the microdissected proximal tibial growth plate (RZ/PZ/HZ) with
+plasma and articular cartilage as internal references — or one autoradiography animal, now that
+[¹⁹⁸Au]auranofin exists (2025).** ⛔ **Not in the literature; cannot be generated from here.**
 
 ---
 
