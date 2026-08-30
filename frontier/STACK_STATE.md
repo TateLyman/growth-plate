@@ -1,12 +1,95 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R127
+**Last updated:** F-R128
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-DISCHARGE. **F-R128 — KANG LOCATED (a 2016 ECTS ABSTRACT, NEVER A PAPER). ANDROGEN RECLASSIFIED AS A **DISCHARGE** AGENT. AN **AR ANTAGONIST** IS THE MISSING **CHARGE** AGENT.**
+
+### => THE PAPER, LOCATED — AND WHY 5 SEARCHES MISSED IT
+**Kang H-Y, Chen Y-J, Huang K-E, Chang C.** *"Loss of androgen receptor suppresses chondrogenic
+proliferation during endochondral ossification in mice."* **43rd Annual ECTS Congress, Rome, 14-17 May 2016,
+poster P58.** Chang Gung Kaohsiung + Univ. Rochester. **It is a CONFERENCE ABSTRACT in Bone Abstracts, which
+is NOT PubMed-indexed** — the searches were correct, the venue was outside the index.
+**Content:** **Col2-ARKO males have SHORTER bone length**; delayed endochondral formation; impaired
+chondrocyte proliferation; **AR promotes chondrogenic IGF-1 expression by DEMETHYLATING H3-K27**; AR
+silencing reduced proliferation, **rescued by IGF-1**. ⚠ **NO ZONE-SPECIFIC QUANTIFICATION.**
+⚠ **EVIDENTIARY WEIGHT: it NEVER became a full paper.** Kang H-Y has 10 PubMed papers on androgen and bone;
+none is this study. **A 2016 abstract unpublished 10 years later is weak on its own, and it lacks the zone
+data that was the whole reason to want it.**
+
+### => ⭐⭐⭐ BUT THE SAME GROUP PUBLISHED SOMETHING STRONGER, POINTING THE OTHER WAY
+**Huang C-K, Tsai M-Y, Luo J, Kang H-Y, Lee S-O, Chang C. BBA 2013;1833:1222-34 (PMID 23333872):
+"Suppression of androgen receptor ENHANCES THE SELF-RENEWAL of mesenchymal stem cells through elevated
+EGFR."**
+- **BM-MSCs and ADSCs from AR-KNOCKOUT mice have HIGHER self-renewal than WT**; AR knockdown same
+- mechanism: AR depletion -> **EGFR** -> Erk and Akt
+- ⭐ **ASC-J9 (AR degrader), hydroxyflutamide (AR antagonist), and AR-siRNA ALL enhanced self-renewal** —
+  three independent routes, one direction
+Companion (PMID 23859805, Stem Cell Res 2013): **AR loss SUPPRESSES osteogenesis and PROMOTES adipogenesis**
+via IGFBP3-mediated IGF signalling. **AR holds progenitors on the osteo/chondro lineage and away from fat.**
+
+### => ⭐⭐ RECLASSIFICATION: ANDROGEN IS A **DISCHARGE** AGENT
+| source | finding |
+|---|---|
+| Raz 2005 | T **decreases** resting-zone DNA synthesis; DHT does nothing there |
+| Peralta 1994 | T accelerates growth **"then depleting the source of stem cells"** |
+| Kang 2016 (abstract) | **AR loss -> SHORTER bone**, impaired chondrocyte proliferation |
+| **Huang/Kang/Chang 2013** | **AR suppression -> HIGHER self-renewal**, three independent routes |
+> **AR CONVERTS STEM/PROGENITOR CELLS INTO DIFFERENTIATED OUTPUT. Remove it: pool preserved, bone SHORTER.
+> Activate it: pool spent, bone LONGER, then it runs out. ANDROGEN IS NOT A CHARGE AGENT — IT IS A
+> **DISCHARGE** AGENT, and the ONLY discharge agent in this file with a LENGTH ENDPOINT attached.**
+R119 established every pool expander gives *pool without flux*, and that the decisive unrun experiment is
+*"charge with mTORC1, discharge with vismodegib... **NO BONE LENGTH WAS MEASURED AFTER THE DISCHARGE
+STEP.**"* **Androgen is a discharge agent that HAS one** (Peralta +length; Kang AR-loss -> shorter).
+
+### => ⭐⭐⭐ THEREFORE AN **AR ANTAGONIST** IS A **CHARGE** AGENT — R119'S MISSING PAIR
+| phase | agent | status |
+|---|---|---|
+| **CHARGE** | **AR antagonist** — bicalutamide, hydroxyflutamide, ASC-J9, enzalutamide | **obtainable; bicalutamide & enzalutamide APPROVED** |
+| **DISCHARGE** | **androgen** — already ~2x endogenously via the AI (R127) | **ALREADY IN THE STACK** |
+**A charge-then-discharge cycle from AR antagonism followed by AR agonism. Both halves obtainable, the
+discharge half already present, and the switch is one drug started and stopped.**
+### ⚠ CAVEATS, AND THEY ARE SERIOUS
+1. **The self-renewal result is in BM-MSCs and ADSCs, NOT growth-plate resting-zone chondrocytes.**
+   Hypothesis by analogy, not demonstration. The experiment that would test it in cartilage is the
+   Col2-ARKO zone data — **which does not exist.**
+2. **During charge, an AR antagonist removes the androgen signal the plate depends on** — Kang's own
+   finding is AR loss shortens bone. **Charge would cost growth while it ran.**
+3. **AR loss promotes ADIPOGENIC DRIFT** (PMID 23859805) — R117/R118's fate problem in a new form.
+4. In a male at BA16, AR blockade also removes the anabolic and pubertal androgen signal systemically.
+   **Not a small intervention.**
+
+### => NAAS VERDICT UNCHANGED
+R127 stands: **DHT is the active species, the plate makes it via an unsaturated SRD5A1, the AI already
+doubles the substrate.** A NAAS is a dose increment on a pathway at double strength.
+**What changes is what androgen IS in the ledger:** from *"velocity agent, redundant"* to **"DISCHARGE
+agent, already present at 2x, the only one with a length endpoint."**
+**AND IT SHARPENS THE CONTRAINDICATION: finasteride does not merely blunt a redundant velocity agent — IT
+DISABLES THE STACK'S DISCHARGE STEP**, at the required enzymatic conversion, silently.
+
+### => ⭐ WHAT I STILL NEED — ONE QUESTION DECIDES IT
+**Col2-ARKO growth-plate zone measurements do not exist in the public record.** If the authors can be
+reached:
+> **In Col2-ARKO mice, is the RESTING ZONE larger or smaller than wild-type, and is resting-zone cell
+> number increased?**
+**If AR loss EXPANDS the resting zone while shortening the bone, the charge/discharge pair above is real and
+becomes the most important arm in the programme. If the resting zone is unchanged or smaller, it collapses
+and androgen is discharge-only.**
+
+### CORRECTIONS
+- **Kang 2016 located** — conference abstract, never a paper; the five null searches were correct.
+- **Androgen RECLASSIFIED "velocity agent" -> "DISCHARGE agent"** (4 lines, one peer-reviewed with 3
+  orthogonal perturbations).
+- **NEW: AR antagonists as candidate CHARGE agents**, completing R119's missing pair — **flagged
+  MSC-derived, NOT demonstrated in growth-plate cartilage.**
+- **R127's NAAS verdict UNCHANGED; its 5a-reductase-inhibitor contraindication UPGRADED IN SEVERITY.**
 
 ---
 
