@@ -1,12 +1,91 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R151
+**Last updated:** F-R152
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-CLINSEARCH. **F-R152 — **NRK IS PHARMACOLOGICALLY ISOLATED** (its hinge block is UNIQUE in 435 human kinases), AND ⛔⛔ **THE DRUGS MOST LIKELY TO CATCH IT ARE THE ONES DOCUMENTED TO *CLOSE GROWTH PLATES*.** ⭐ ONE SURVIVOR: **SOTRASTAURIN**. ⚠ TWO SELF-CORRECTIONS MID-ANALYSIS.
+
+### => NO PROXY TARGET EXISTS
+R150's 23-position contact frame mapped into **all 480 human kinases** (PROSITE PS50011; 435 aligned):
+| rank | kinase | %id to NRK |
+|---|---|---|
+| 1 | **NRK** | 100% |
+| 2 | MYO3A | **73.9%** |
+| 3–5 | ⛔ **TNIK · MINK1 · MAP4K4** | **73.9%** |
+| 6–7 | TAOK1 71.4% · **CDK5 70.0%** | |
+
+> ⛔ **Nothing exceeds 73.9%. And on the gatekeeper+hinge block alone, NRK's `MELCAAGS` is UNIQUE — no
+> other human kinase carries it** (TNIK/MINK1/MAP4K4 `MEFCGAGS`; STK3/4 `MEYCGAGS`). **No shortcut exists.**
+
+### => ⛔⛔ THE TRAP
+R151: only a **promiscuous** compound can catch a kinase nobody designed for. Intersected every ChEMBL
+compound ≤1 µM on 19 NRK pocket-neighbours with **all 16,784 clinical-phase molecules**, scored against
+**PDGFRA/PDGFRB/KIT**:
+
+| drug | phase | #proxies | ⛔ PDGFR/KIT |
+|---|---|---|---|
+| SUNITINIB | 4 | **15** | ⛔ KIT 0, PDGFRA 1 |
+| LESTAURTINIB | 3 | **15** | ⛔ KIT 7 |
+| NINTEDANIB | 4 | 13 | ⛔ KIT 3 |
+| BOSUTINIB | 4 | 12 | ⛔ KIT 32 |
+| ⭐ **NERATINIB** | 4 | 12 | ⭐ clean |
+| ⭐ **SOTRASTAURIN** | 2 | 6 | ⭐ clean |
+
+**Verified and WORSE than R145 recorded** (`PMC11290534`, CML-PAED II, NCT00445822):
+> *"medians of **−0.35 SDS at 12 months and −0.76 SDS at 24 months**… **37%** stunted below −0.5 SD…
+> only **18%** unaffected."*
+⛔⛔ And the mechanism: **`Vandyke, Leukemia 2009` — "Imatinib mesylate causes growth plate CLOSURE in vivo."**
+
+> ### ⛔⛔⛔ **FOR A PROGRAMME TRYING TO HOLD THE PLATE OPEN AT BA 16, A CLASS THAT CLOSES IT IS CATEGORICALLY OUT — the inverse of the objective, not a tolerability question.**
+
+### => ⚠⚠ TWO SELF-CORRECTIONS
+**A — my aggregation was biased optimistic.** `min()` across published values reports the single most
+potent measurement ever made. Recombinant panels vs **Kinobeads** (native protein, lysate — more
+physiological) disagree up to **200×**:
+| drug | target | recombinant | **Kinobeads** |
+|---|---|---|---|
+| neratinib | TNIK | 140 nM | ⛔ **30,000 nM** |
+| lestaurtinib | TNIK | 5.4 nM | ⛔ **30,000 nM** |
+| bosutinib | MAP4K4 | 8.2 nM | ⛔ **30,000 nM** |
+
+**B — NERATINIB WITHDRAWN as the answer.** Looked ideal (approved, 12 proxies, clean, "MAP4K5 1 nM") but
+its own targets are **EGFR 2.5 nM / HER2 29 nM**, and by Kinobeads only **MAP4K5 (13 nM)** is real.
+**An EGFR drug with one clade off-target, not a clade inhibitor.**
+
+### => ⭐ THE HONEST RANKING (Kinobeads where available)
+| drug | primary | clade engagement | PDGFR/KIT | verdict |
+|---|---|---|---|---|
+| **BOSUTINIB** | ABL1 1 nM | ⭐ **MAP4K5 16, TNIK 23, MAP4K3 58** (~20× off primary) | ⛔ KIT 32 | ⭐ **most likely to catch NRK** ⛔ **closes plates** |
+| LESTAURTINIB | FLT3 3 nM | MINK1 41, MAP4K4 91 | ⛔ KIT 7 | ⛔ out |
+| ⭐⭐ **SOTRASTAURIN** | PKCθ 1 nM | ⭐ **TNIK 38, MINK1 41** | ⭐ **clean** | ⭐⭐ **ONLY SURVIVOR** |
+| NERATINIB | EGFR 2.5 nM | MAP4K5 13 only | clean | ⚠ not clade-promiscuous |
+| DEFACTINIB | FAK 0.2 nM | ⛔ **all 30,000 nM** | clean | ⛔ **flatly inactive** |
+| PF-562271 | FAK 0.6 nM | STK26 12, MINK1 631 | unmeasured | ⚠ ph1, discontinued |
+
+⭐⭐ **SOTRASTAURIN (AEB071):** ⭐ **not an oncology drug** — Novartis, **psoriasis and transplant**, so a
+chronic-dosing risk profile; TNIK 38 / MINK1 41 nM by Kinobeads; **no PDGFR/KIT ≤1 µM**; oral, phase 2.
+⛔ Discontinued for efficacy; PKCθ ~1 nM primary so clade engagement costs full PKC blockade
+(immunosuppressive by design); ⛔ **never measured against NRK.**
+
+### => ⛔ THE COVALENT ESCAPE HATCH — REAL IN PRINCIPLE, EMPTY IN PRACTICE
+R151's kill is **equilibrium** math; irreversible covalent occupancy accumulates against protein
+resynthesis instead, so a weak target can still saturate. ⭐ **NRK conserves Cys108.** ⛔ But:
+1. **85 of 435 human kinases (19.5%) carry the same cysteine** — no selectivity.
+2. ⛔ **Every approved covalent kinase drug targets gatekeeper+7 (EGFR Cys797 / BTK Cys481); Cys108 is
+   gatekeeper+3, and TNIK/NRK carry Ser112 at the covalent position.** They bind this clade reversibly.
+   No Cys108 chemistry exists in the literature — searched.
+
+### => ⛔ AND THE STANDING FACT
+**Nothing has ever been measured against NRK.** ChEMBL 0 · BindingDB 0 · PDB 0 · absent from Eurofins
+KinaseProfiler (430) and KINOMEscan. The only molecules ever shown to occupy it remain Promega's
+broad-spectrum tracers (R149) — where it was the **weakest of five MAP4Ks**.
 
 ---
 
