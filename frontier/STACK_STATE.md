@@ -1,12 +1,135 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R147
+**Last updated:** F-R149
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-ASSAY. **F-R149 — THE PROMEGA TRACER ROW IS **NOT A DRUG HIT** — BUT NRK'S POCKET IS NOW **EMPIRICALLY LIGANDABLE IN LIVE CELLS**, AND NRK IS AN **OFF-THE-SHELF CATALOG ASSAY**. THE #1 EXPERIMENT IS NOW TWO VECTORS AND ONE NUMBER.
+
+### => ⛔ WHAT IT IS NOT
+`US20200003771A1 / US11442063B2 — Promega, "Broad spectrum kinase binding agents."`
+**CC-1817, CC-1804, CC-1294 are FLUORESCENT TRACERS, not inhibitors** — a broad-spectrum kinase-binding
+core (CC-1852 / CC-1861 / CTx-0294885) plus a fluorophore on a PEG linker. They exist **to be displaced**;
+promiscuity is their design goal. **A promiscuous tracer binding NRK is weak evidence about a
+selectivity-optimised drug.** Reading it as "an NRK inhibitor exists" = *localisation ≠ intervention*, again.
+
+### => ⚠ AND THE NUMBERS, AGAINST THE PATENT'S OWN SCALE (green >3× robust / yellow 2–3× moderate / red 1.5–2× marginal)
+| entity | conc | BRET | **the patent's own call** |
+|---|---|---|---|
+| CC-1817 | 0.5 µM | **2.85×** | ⚠ **yellow — MODERATE, not robust** |
+| CC-1804 | 0.5 µM | **1.51×** | ⚠ **red — MARGINAL** |
+| CC-1294 | 1 µM | 1.09× | ⛔ negative **at 2× the concentration** |
+
+### => ⭐⭐ WHAT IT DOES BUY
+1. ⭐ **NRK's ATP pocket is ligandable IN LIVING CELLS — first direct evidence.** R145 had it as Pharos
+   **Tdark, 0 ligands, 0 drugs**; R147's druggability case was **100% sequence inference**. A permeable
+   small molecule now demonstrably occupies the site **at cellular ATP**. Inference → observation.
+2. ⭐ **Chemotype discrimination measured:** NRK takes the CC-1852/CC-1861 cores, **rejects the
+   CTx-0294885 bisanilinopyrimidine core even at 2×.** Argues slightly **down** on R147's ~70% blanket
+   carry-over (the pocket is not a sponge) but makes a future **negative interpretable, not ambiguous**.
+3. ⭐⭐⭐ **NRK IS A CATALOG PRODUCT.**
+
+| component | ⭐ **catalog** | detail |
+|---|---|---|
+| ⭐ **NanoLuc®-NRK Fusion Vector** | ⭐ **NV3831** | 20 µg · **N-terminal** NanoLuc–human NRK |
+| ⭐ **NanoBRET® TE Tracer K-11** | ⭐ **N2650** (100 assays) / **N2651** (1,000) | Promega's own NRK example data uses K-11 |
+| counter-screen vectors | same line | **>340 kinases**; MAP4K4 / TNIK / MINK1 standard |
+
+> ### ⭐⭐⭐ **THIS KILLS THE FEASIBILITY OBJECTION.** The R146/R147 experiment was a *recombinant NRK ACTIVITY assay* — and NRK is Tdark: **no known substrate, no validated activity buffer, no known activation state.** That build was the expensive, may-simply-fail step and the real reason it kept being described rather than run. **NanoBRET needs no activity at all** — binding by tracer displacement in live HEK293 cells. **And it measures the RIGHT quantity: intracellular occupancy, permeability included, against real cellular ATP** — exactly what R148 needs, not a buffer IC50 needing translation.
+
+### => ⭐ THE EXPERIMENT, REWRITTEN
+| run | vector | readout |
+|---|---|---|
+| A | ⭐ **NV3831 (NRK)** + Tracer K-11 | cellular IC50 of rentosertib on **NRK** |
+| B | **TNIK vector** + its tracer | cellular IC50 of rentosertib on **TNIK** |
+| ⭐ **f = IC50(TNIK)/IC50(NRK)** | | ⭐ **the entire answer** |
+
+| f returns | verdict |
+|---|---|
+| ⭐ **≥ 0.7** | ⭐⭐ **R146 reinstated — one oral, human-tested molecule serves BOTH arms at 30 mg QD** |
+| 0.3–0.7 | real Wnt arm, weak NRK arm — NRK needs its own agent |
+| ⛔ **< 0.2** | ⛔ **rentosertib is Wnt-arm-only — and NV3831 is how you screen for the NRK molecule instead** |
+
+Same plate, extra wells: PF-06260933 · GNE-495 · NCB-0846 · bosutinib · lestaurtinib · dovitinib.
+⭐ **R147's ordering goes in PRE-REGISTERED: rentosertib is AI-optimised for TNIK selectivity and is
+predicted WORST of the panel for NRK.** If it returns best, my selectivity model is wrong.
+⚠ Prices are login-gated; I will not invent them. The factual claim is only that these are **catalog line
+items, not a custom protein-science project** — which was the whole objection.
+
+---
+
+## 0-RENTODOSE. **F-R148 — ⭐ THE WNT DOSE IS FOUND AND HUMAN-VALIDATED: **RENTOSERTIB 30 mg QD**, WITH THE 38–45% SPIN4 WINDOW INSIDE ITS BAND. ⛔ BUT THE **EXPOSURE AXIS CANCELS** — NRK CANNOT BE BOUGHT WITH DOSE. **R146's "ONE MOLECULE, BOTH ARMS" WITHDRAWN.**
+
+`Xu et al., Nat Med 2025` (PMID 40461817, PMC12353801, **open access**) — phase 2a, 12 wk, IPF, n=71.
+
+| arm | AUC₀₋ₜ wk12 | ΔFVC (mL) | 95% CI | ALT↑ | d/c per 18 |
+|---|---|---|---|---|---|
+| placebo | – | −20.3 | (−116.1, 75.6) | 5.9% | 2 |
+| ⭐ **30 mg QD** | **788** | **not reported** | – | ⭐ **5.6%** | ⭐ **2** |
+| 30 mg BID | **1390** | +19.7 | (−60.5, 99.9) **crosses zero** | 5.6% | 6 |
+| 60 mg QD | **3450** | **+98.4** | (10.9, 185.9) **excludes zero** | ⛔ **33.3%** | 6 |
+
+t½ 10.9–12.0 h · tmax 1 h · steady state wk 2 · no accumulation to wk 12.
+
+> ### ⭐ **THE TABLE'S STRUCTURE IS THE FINDING.** The Wnt-driven **tissue phenotype** (FVC gain) and the **dose-limiting toxicity** (ALT, 6× placebo) switch on **together** between AUC 1390 and 3450, and **both are absent at 788.** One mechanism driving both = on-target TNIK/Wnt engagement. **30 mg QD is measured, in humans, to sit BELOW the threshold for a Wnt-driven tissue phenotype while still being a real exposure** — precisely the object R137's magnitude ladder demands.
+
+### => HOW MILD? (exposure ratios exact: **60QD/30QD = 4.38×**; Hill n=1 back-calculation)
+| assumed E₆₀ | → **E₃₀ at 30 mg QD** | vs 38–45% target |
+|---|---|---|
+| 50% | 18.6% | below |
+| 70% | 34.8% | below |
+| ⭐ **80%** | ⭐ **47.7%** | above |
+| 90% | 67.3% | above |
+
+> ⭐ **30 mg QD lands at 18–48%. The 38–45% SPIN4 constant sits INSIDE that band.** First obtainable
+> molecule in the programme to **bracket** the calibration constant rather than miss it 10× (moxidectin: 3.5–7%).
+
+### => ⭐⭐⭐ THE DECISIVE NEGATIVE — THE EXPOSURE AXIS CANCELS
+```
+E_wnt = A/(A+Kt)   E_nrk = A/(A+Kn),  Kn = Kt/f
+=>  E_nrk = f·E_wnt / (1 − E_wnt + f·E_wnt)     <-  A DROPS OUT ENTIRELY
+```
+> ### ⛔⛔ **At ANY dose landing Wnt in the SPIN4 window, NRK engagement depends on RELATIVE AFFINITY ALONE. There is no dose to find.**
+
+| f = IC50(TNIK)/IC50(NRK) | **NRK engagement at Wnt 38–45%** | Wnt needed for NRK 50% |
+|---|---|---|
+| ⭐ **1.00** | ⭐ **38.0–45.0%** — both arms | 50.0% ⛔ past window |
+| ⭐ **0.70** | ⭐ **30.0–36.4%** — both arms | 58.8% ⛔ |
+| 0.50 | 23.5–29.0% marginal | 66.7% ⛔ |
+| 0.30 | 15.5–19.7% marginal | 76.9% ⛔ |
+| 0.20 | ⛔ 10.9–14.1% dead | 83.3% ⛔ |
+| 0.10 | ⛔ 5.8–7.6% dead | **90.9%** ⛔⛔ deep ICAT |
+
+⛔ **Any f below ~0.9 forces you PAST the window to buy NRK** — and past the window is R137's ladder:
+Spin4 loss (38–45%) **+5.06%** and Cxxc5−/− **+3.8%** LENGTHEN; ICAT / Ctnnb1 cKO / Lrp5/6 **SHORTEN, CLOSE or KILL.**
+
+| expected value | |
+|---|---|
+| P(binds NRK at all) | **70%** (R147) |
+| E[NRK ∣ binds, Wnt 41.5%] | **18.2%** |
+| E[NRK unconditional] | ⛔ **12.7%** |
+| ⭐ **P(f ≥ 0.9 — both arms)** | ⛔ **~10%** |
+
+### => ⚠ THE CAVEATS, UNPAPERED
+1. ⛔⛔ **THE NODE IS NOT THE SAME NODE.** TNIK acts at **TCF4**; SPIN4's effect is **β-catenin-dependent
+   but TCF1-INDEPENDENT** (Lui 2023 Fig 6B); and **ICAT — which blocks β-catenin/TCF — SHORTENS bone.**
+   Node-wise **TNIK inhibition sits closer to ICAT than to SPIN4.** Magnitude match ≠ mechanism match.
+   **Largest open objection to the whole arm.**
+2. ⚠ **Lung-fibroblast Wnt ≠ chondrocyte Wnt.** FVC is a fibroblast phenotype; nothing here touches cartilage.
+3. ⚠ **No Wnt PD biomarker in the trial** despite an **Olink Explore 3072 panel (2,841 proteins,
+   baseline/2/4/12 wk)** — I searched. **FVC is the only pathway anchor, and it is indirect.**
+4. ⚠ 12 weeks in elderly IPF patients ≠ years in an adolescent. ALT monitoring mandatory.
+
+⭐ **THE ASSAY QUESTION SHARPENS:** it was *"does it bind NRK?"* — it is now **"does it bind NRK within
+~1.4-fold of its TNIK potency?"** ⭐ And R147's falsifiable ordering bites: **rentosertib is AI-optimised
+for TNIK selectivity → predicted WORST of the panel for NRK. The molecule best for one arm is predicted
+worst for the other.**
 
 ---
 
