@@ -1,7 +1,7 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R118
+**Last updated:** F-R118 (+CORR)
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
@@ -10,77 +10,47 @@ ledger.
 
 ---
 
-## 0-TRIGGER. **F-R118 — MECHANICAL ACTIVATION IS THE ONLY THING THAT HAS EVER MOVED AN ADULT TOWARD YOUNG.**
+## 0-TRIGGER. **F-R118 — PARTLY RETRACTED. The literature synthesis stands; MY QUANTITATIVE CLAIMS DO NOT.**
 
-Both experiments named at the end of R117 were attempted. Results asymmetric.
+### ⛔⛔ RETRACTION (same session, before anything was built on it)
+**r(activation, youth) = +0.446 IS WITHDRAWN. So are the stem-panel z=+1.78 / Pthlh +1.87 and the
+BMP2/sVEGFR1 fate numbers.** I published before running a permutation null. Controls:
+- **GSE151303's GPL1261 deposit is THRESHOLDED, not an expression matrix.** **62.7% of probes are exactly
+  ZERO per sample**; only **1,983 of 45,101** nonzero across all 14 arrays. The +4 to +6.5 log2 "effects"
+  were zero-to-value transitions.
+- **ACT and YOUTH SHARE A DENOMINATOR** (adult uninjured). Label-permuted null with that shared denominator
+  = **r = +0.386 ± 0.144.** The observed +0.446 is INSIDE the null.
+- Clean probes only: observed shared-denom r = **+0.232, p = 0.820** — BELOW the null mean.
+- **Disjoint split (no shared samples): r = +0.047**, null +0.001 ± 0.088, **p = 0.320. Not significant.**
+- **Pthlh, Spon1, Prg4, Sox9, Acan, Col2a1 ALL contain zeros and drop out** under a clean-probe filter.
+**=> "Mechanical stimulus transcriptionally rejuvenates an adult tissue" is NOT ESTABLISHED. Open question.
+Needs a dataset with a real expression matrix.**
 
-### => ⭐⭐⭐⭐ EXP 1: CAN THE POOL BE ACTIVATED IN A MATURE ANIMAL? **YES, AND IT PARTIALLY REJUVENATES**
-**GSE151303** (mouse, GPL1261, n=14): P3 bulk / **adult uninjured** / **adult MICROFRACTURE** / sorted
-adult MF mSSC under control|BMP2|sVEGFR1. Built YOUTH = P3-adult, ACTIVATION = adultMF-adult, 22,550 probes.
-> ### **r(ACTIVATION, YOUTH) = +0.446**
-**A LOCAL MECHANICAL STIMULUS IN AN ADULT MOVES THE TRANSCRIPTOME HALF-WAY TO JUVENILE.** For scale the
-FGFR3 axis correlates with ITSELF at 0.461. **FIRST THING IN THIS PROJECT TO MOVE AN ADULT TOWARD YOUNG.**
-Set against what is already killed — **R110 young blood NULL, R103 no systemic drug resets the clock,
-R104-107 methylation closed.** All were **systemic**. The thing that works is **LOCAL and MECHANICAL.**
-**Stem/chondro panel z=+1.78** (Pthlh **+1.87**, Spon1 **+2.74**); fibrous +0.81; bone +0.46.
-**PTHrP rises in an ADULT joint after mechanical stimulus** — the test the FoxA2+ paper never ran.
+### WHAT STILL STANDS (literature only, not my analysis)
+- **GSE151303 authors' own result:** SSC expansion **can be triggered in ADULT joints by microfracture**;
+  MF-activated SSCs tend to form **fibrous** tissue; they redirect fate with **BMP2 + soluble VEGFR1**.
+  Independently reported, unaffected by my analysis failure. **sVEGFR1 = VEGF trap = aflibercept.**
+- **FoxA2+ 2.7x expansion, plate 96% regenerated in 7 d, all three zones** (R117, separate paper, young only).
+- **Trigger enumeration**, and the literature-level observation that **every adult-competent trigger is
+  mechanical** — microfracture, suture expansion (GSE227468), distraction osteogenesis (8.85cm femoral +
+  7.36cm tibial, n=1149, works AFTER fusion). Retro-assigns R277's unassignable intervention to a term.
+- **TWO AXES UNTOUCHED BY THIS ATLAS: p75/NGF sensory (GSE263602) and SLIT2 sympathetic (GSE284991)
+  innervation control of the SSC niche.** 2024-25 primaries. Nerves are pharmacologically accessible.
+- **Reverse Wnt experiment is UNRUNNABLE on public data** (GSE211559 has no vehicle arm — XAV939 vs TGFb,
+  two chondrogenic drivers, all panels negative; GSE245140 deposited without processed expression).
+  **Reclassified: requires data generation.**
 
-### => ⭐⭐ THE R117 FATE PROBLEM HAS AN APPROVED-DRUG CANDIDATE
-Sorted adult MF mSSC, **n=1 per arm, DIRECTIONAL ONLY**: **BMP2 bone z=+1.74 / stem -0.36**;
-**sVEGFR1 stem z=+1.63** / bone +1.54. **BMP2 drives differentiation, the VEGF TRAP holds the chondro
-program.** Charge + blocked-discharge deployed as a **FATE SWITCH**, not a growth lever.
-**Soluble VEGFR1 = VEGF trap = AFLIBERCEPT, approved.** **Re-scopes R364:** anti-VEGF was rejected as a
-LENGTHENING agent; as a FATE agent for activated stem cells, blocking discharge is the point.
+### 7x ARITHMETIC — UNCHANGED
+Need **6.99x**, stack tops out **~2.60x**, **missing 4.4x is ALL N.** N still has no drug. What R118
+legitimately adds is the literature case that N's triggers are mechanical, plus a fate problem
+(R117: Hedgehog-expanded RZ cells become osteoblasts) with a candidate answer the AUTHORS demonstrated.
 
-### => ⛔ EXP 2: THE REVERSE WNT TEST CANNOT BE RUN ON PUBLIC DATA
-Searched GEO systematically (58 series, 16 queries). Only candidate with usable expression is **GSE211559**
-— XAV939 vs TGFb, 3 paired human MSC lines. **NO VEHICLE ARM** — compares two chondrogenic drivers, so all
-panels read negative (stem -2.25, chondro -4.79, **hypertrophic -15.73**, fibrous -5.85). Only extractable
-content is rank order: hypertrophy most suppressed (MMP13 -3.66), **stem LEAST suppressed, SFRP1 +0.53**.
-Weakly consistent with Wnt inhibition holding cells undifferentiated; **CANNOT establish pool expansion.**
-GSE245140 (LGK974 in vivo) deposited without processed expression.
-**=> RECLASSIFIED from "unrun in the literature" to "UNRUNNABLE ON PUBLIC DATA - REQUIRES GENERATION."**
+### METHOD RULE ADOPTED
+**Any correlation between two contrasts sharing a denominator group must be reported against a
+label-permuted null using that same shared denominator, and any GEO matrix must be checked for
+zero-inflation before use.** This failure would have been caught by either check.
 
-### => EVERY TRIGGER FOUND
-| trigger | effect | age | obtainable |
-|---|---|---|---|
-| **microfracture** | **r=+0.446 to young; stem z=+1.78; Pthlh +1.87** | **ADULT** | surgical |
-| Salter-Harris injury | FoxA2+ **2.7x**; plate **96% regen in 7d**, 3 zones, physeal cartilage | young only | surgical |
-| suture expansion (GSE227468) | mechanical expansion -> SSC proliferation | - | mechanical |
-| **distraction osteogenesis** | **8.85cm femoral + 7.36cm tibial, n=1149, works AFTER fusion** | **adult** | approved |
-| **p75/NGF sensory innervation** (GSE263602) | regulates the SSC niche | - | **UNTOUCHED BY THIS ATLAS** |
-| **SLIT2 sympathetic innervation** (GSE284991) | regulates the SSC niche | - | **UNTOUCHED BY THIS ATLAS** |
-| Hedgehog/SAG | pool +61% -> length +3.63% | young | ⛔ osteogenic fate (R117) |
-
-### => ⭐ THE PATTERN IS THE ROUND
-**EVERY TRIGGER THAT WORKS IN AN ADULT IS MECHANICAL.** Every systemic pharmacological rejuvenation
-attempt in this file has failed. **THE STEM POOL IS MECHANICALLY GATED, NOT CHEMICALLY GATED.**
-**Retro-explains R277:** distraction osteogenesis was ranked an order of magnitude above the whole
-pharmacological stack and R264's audit could not assign it to a term. **It can be assigned now — sustained
-mechanical activation of skeletal stem cells over months.** The largest intervention in the file and the
-only adult-competent stem trigger are THE SAME MECHANISM. (Mechanistic result, not a surgical recommendation.)
-**TWO WHOLE AXES UNTOUCHED: sensory (p75/NGF) and sympathetic (SLIT2) innervation control of the SSC niche.**
-Both have 2024-25 primaries. **Nerves are pharmacologically accessible in ways cartilage is not.**
-
-### => WHAT IT TAKES TO REACH 7x
-| term | best available | ceiling | gap |
-|---|---|---|---|
-| h_term | erdafitinib + CNP cAMP arm | ~4-5% (GC-B7E/7E in WT) | at ceiling |
-| NPR2 activity | erdafitinib, LB-100 | phospho-state only, no upregulator | at ceiling |
-| A | CNP axis | real **but paid out of N** (R117 z=-3.39) | contraindicated here |
-| **N** | **nothing pharmacological** | mechanical trigger + BMP2/VEGF-trap fate switch | **THE ENTIRE RESIDUAL** |
-**The missing 4.4x is ALL N. N has no drug — it has a mechanical trigger and a fate switch.**
-Arithmetic unchanged (need 6.99x, have ~2.60x). What changed: **N is no longer a closed door** — it has a
-demonstrated adult-competent trigger, a measured stem response, an identified fate problem, and an
-approved-drug candidate for the fate half.
-
-### THE THREE THINGS THAT WOULD MOVE THE NUMBER
-1. **Run the reverse Wnt experiment** — local, vehicle-controlled, measuring pool AND fate AND length.
-2. **Find what microfracture does CHEMICALLY.** r=+0.446 is a signature; the ligands inside it are the
-   candidate drugs. **If the mechanical gate has a chemical key, that is the whole game.**
-3. **Open the innervation axis** (p75/NGF, SLIT2).
-
-Code: `frontier/analysis/redundancy/{act,wntrev,search}.py`.
+Code: `frontier/analysis/redundancy/{act,key,key2,ctrl2,ctrl3,wntrev,search}.py`.
 
 ---
 

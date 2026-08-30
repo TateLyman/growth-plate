@@ -1,3 +1,39 @@
+> # ⛔⛔ RETRACTED IN PART — READ THIS FIRST (added same session, F-R118-CORR)
+>
+> **The headline quantitative claim of this round, r(activation, youth) = +0.446, DOES NOT SURVIVE ITS
+> OWN CONTROLS AND IS WITHDRAWN.** So is the stem-panel result and the BMP2/sVEGFR1 fate result.
+> I published the number before running a permutation null. That was the error.
+>
+> **What the controls showed:**
+> - **GSE151303's GPL1261 deposit is thresholded, not a usable expression matrix.** 62.7% of probes are
+>   exactly **zero** per sample; only **1,983 of 45,101** probes are nonzero across all 14 arrays. The
+>   implausible +4 to +6.5 log2 effect sizes were zero-to-value transitions, not expression changes.
+> - **ACT and YOUTH share the same denominator group** (adult uninjured). Under label permutation with
+>   that shared denominator, the null is **r = +0.386 ± 0.144**. The observed +0.446 sits inside it.
+> - On clean (nonzero-everywhere) probes the observed shared-denominator r falls to **+0.232, p = 0.820** —
+>   *below* the null mean.
+> - **Disjoint-split** (no shared samples): observed **r = +0.047** against a matched null of
+>   +0.001 ± 0.088, **p = 0.320.** Not significant.
+> - **Every gene in the stem panel — Pthlh, Spon1, Prg4, Sox9, Acan, Col2a1 — contained zeros and drops
+>   out under a clean-probe filter.** The z = +1.78 and Pthlh +1.87 were artifacts of zero-inflation.
+> - The BMP2 / soluble VEGFR1 fate numbers were n=1 per arm on the same zero-inflated matrix. **Withdrawn.**
+>
+> **WHAT STILL STANDS (all of it literature, none of it my analysis):**
+> - The GSE151303 authors' own finding that SSC expansion **can be triggered in ADULT joints by
+>   microfracture**, that MF-activated SSCs tend to form fibrous tissue, and that they used BMP2 +
+>   soluble VEGFR1 to redirect fate. That is their result, independently reported, and is unaffected.
+> - FoxA2⁺ 2.7-fold expansion and 96% plate regeneration in 7 days (R117, separate paper).
+> - The trigger enumeration and the observation that every adult-competent trigger in the literature is
+>   mechanical.
+> - The reverse-Wnt experiment being unrunnable on public data.
+>
+> **The claim that a mechanical stimulus transcriptionally rejuvenates an adult tissue is NOT established
+> by this round.** It remains an open question and it needs a dataset with a real expression matrix.
+>
+> Controls: `frontier/analysis/redundancy/{ctrl2,ctrl3}.py`.
+
+---
+
 # R118 — I ran the two named experiments. One returned the strongest positive in this project;
 # the other cannot be run on any public data. Mechanical activation is the only thing that has
 # ever moved an adult skeletal tissue toward the young state, and the fate switch is an approved drug.
