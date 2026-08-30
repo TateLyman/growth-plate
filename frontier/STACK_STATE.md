@@ -1,12 +1,94 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R130
+**Last updated:** F-R131
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-TGFB. **F-R131 — TGF-beta INHIBITION WOULD **HURT**. R130'S PROPOSAL WITHDRAWN ONE ROUND LATER, FOR THE SAME REASON R126's DID. AND THE GH DOSE WINDOW IS NOW TRIANGULATED.**
+
+### => ⛔⛔ TGF-beta: THE ANSWER IS **HURT**
+R130 proposed TGF-beta inhibition as the renewal-holding arm, from Chu 2026's *"root niche is low in WNT
+and TGF-beta."* **THAT INFERENCE WAS WRONG.**
+**THE DIRECT EXPERIMENT SAYS SHORTER:**
+> **TGF-beta/Smad3 REPRESSES chondrocyte hypertrophic differentiation** (Yang et al., J Cell Biol
+> 2001;153:35). **Smad3-null mice show ENHANCED terminal differentiation of epiphyseal growth-plate
+> chondrocytes shortly after weaning and are SMALLER than wild-type.**
+**Removing TGF-beta/Smad3 removes a BRAKE ON HYPERTROPHY. Cells burn through to terminal differentiation
+prematurely and the bone ends up SHORTER.** In this file's vocabulary that is **UNCONTROLLED DISCHARGE** —
+the failure mode R125/R127 already named.
+**AND THE HUMAN GENETICS AGREES ONCE THE PARADOX IS READ CORRECTLY:**
+| syndrome | mutation | tissue TGF-beta signalling | stature |
+|---|---|---|---|
+| Marfan | FBN1 loss (fibrillin sequesters TGF-beta) | **INCREASED** | **TALL** |
+| Loeys-Dietz | TGFBR1/2 **loss-of-function** | ⭐ **paradoxically INCREASED** | **TALL** |
+> **BOTH human tall-stature TGF-beta syndromes carry ELEVATED signalling. The mouse with REDUCED signalling
+> is SHORT. Every direction agrees: MORE TGF-beta -> LONGER; LESS -> SHORTER.**
+⚠ **Caveat kept:** Marfan/LDS stature is confounded by connective-tissue laxity; **the load-bearing evidence
+is Smad3-null being short with accelerated terminal differentiation.** That alone rejects the proposal.
+
+### => ⭐ THE REASON I GOT IT WRONG IS A PATTERN I HAVE NOW REPEATED TWICE
+- **R126:** AR most abundant in resting zone -> proposed AR as an N agent. **R127 refuted: androgen EMPTIES it.**
+- **R130:** root niche is TGF-beta-low -> proposed TGF-beta inhibition. **This round refutes: lowering it
+  accelerates hypertrophy and shortens bone.**
+> **LOCALISATION IS NOT INTERVENTION DIRECTION.** A niche being low in a signal describes where quiescent
+> cells SIT; it does not mean lowering that signal tissue-wide expands the niche. **Both times I read a
+> zonal expression gradient as a therapeutic vector.**
+**⭐ RULE ADOPTED: NO AGENT ENTERS THE STACK ON ZONAL-EXPRESSION EVIDENCE ALONE — a perturbation with a
+LENGTH or CELL-COUNT endpoint is required.**
+**WHAT SURVIVES:** Chu 2026's **WNT-low** half stands, because it HAS an independent perturbation behind it
+(R117: Wnt activation costs 1/3 of the PTHrP+ pool and 72% of long columns). **The Wnt arm survives; the
+TGF-beta arm does not. They were never equivalent — one had a functional test, one didn't.**
+
+### => ⭐⭐ KAMP 2002 CLOSES THE GH DOSE QUESTION
+**Kamp GA, ... Wit JM. Arch Dis Child 2002;87:215-20 — RANDOMISED CONTROLLED**, 35 prepubertal ISS children
+(17 GH / 18 control), **6.0 IU/m2/day**, 5-year follow-up:
+- **bone maturation 3.6 yr per 2 yr treated vs 2.0 yr per 2 yr in controls -> BA:CA = 1.8**
+- height SDS for chronological age -2.6 -> -1.3 at 2 yr ... **-> -1.4 at 5 yr**
+- ⭐⭐ **"Height SDS for BONE AGE was NOT significantly different between groups."**
+- **GH-treated children entered puberty SIGNIFICANTLY EARLIER**
+- authors: *"High dose GH accelerates bone age and induces an earlier onset of puberty. This may limit the
+  potential therapeutic benefit."*
+> **THE ENTIRE VELOCITY GAIN WAS REAL AND WAS PAID FOR ENTIRELY IN MATURATION. Cleanest statement of the
+> rate-yield trade anywhere in the human literature, and it is RANDOMISED.**
+**DOSE CONVERTED:** 6.0 IU/m2/day = 2.0 mg/m2/day = 14.0 mg/m2/wk; at BSA 0.80-1.00 m2 and 20-28 kg =
+**0.50-0.56 mg/kg/wk.**
+
+### => THE TRIANGULATED DOSE-RESPONSE — THREE INDEPENDENT STUDIES
+| dose | bone age | height outcome |
+|---|---|---|
+| **0.24 mg/kg/wk** | **NEUTRAL** | +5.4 cm over predicted |
+| **0.37 mg/kg/wk** | **NEUTRAL** (not different from 0.24) | +7.2 cm |
+| 0.50 mg/kg/wk | **ADVANCES puberty AND bone maturation** | — |
+| **~0.50-0.56 (Kamp, RCT)** | **BA:CA 1.8** | **HEIGHT-FOR-BONE-AGE UNCHANGED** |
+> **THRESHOLD AT ~0.4-0.5 mg/kg/WEEK, SUPPORTED BY THREE INDEPENDENT STUDIES. ABOVE IT GH CONVERTS ENTIRELY
+> INTO BONE AGE. BELOW IT THE HEIGHT BANKS.**
+**Maps exactly onto PNAS 2025:** GH promotes committed division at the expense of the stem pool. Higher dose
+-> more committed division -> faster maturation, earlier puberty, pool spent without net gain.
+**KAMP IS WHAT THE PNAS MECHANISM LOOKS LIKE AT THE LEVEL OF A CHILD.**
+
+### => STACK CHANGES
+**REMOVED:** TGF-beta inhibition (withdrawn as a proposal).
+**SHARPENED — now the single most operationally important line in the file:**
+> **GH MUST BE DOSED AT 0.24-0.37 mg/kg/WEEK. NOT 0.5. The difference between the two is the difference
+> between BANKING the height and PAYING FOR ALL OF IT IN BONE AGE** — established by a randomised trial
+> with 5-year follow-up.
+**UNCHANGED:** anastrozole (>=2 yr, binary), erdafitinib, CNP axis, the Wnt-low renewal arm.
+**ONLY renewal-side candidate with a functional test behind it:** chondrocyte-intrinsic Wnt lowering — the
+SPIN4 phenocopy, NOT a PORCN inhibitor (R119/R120).
+
+### CORRECTIONS
+- **R130's TGF-beta inhibition proposal WITHDRAWN.**
+- **Repeated reasoning error NAMED and RULE ADOPTED:** localisation != intervention direction; no agent
+  enters on zonal-expression evidence alone (R126's AR, R130's TGF-beta — same shape, twice).
+- **Chu 2026's WNT-low half SURVIVES** (has a perturbation); TGF-beta half does not.
+- **GH dose window TRIANGULATED at ~0.4-0.5 mg/kg/wk** with Kamp 2002's randomised
+  "height-for-bone-age unchanged" as the upper-bound demonstration.
 
 ---
 
