@@ -1,12 +1,151 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R137
+**Last updated:** F-R138
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-BANEUTRAL. **F-R138 — SPIN4 IS THE **ONLY BONE-AGE-NEUTRAL** MEMBER OF ITS CLASS (THE AUTHORS SAY SO). THE MECHANISM IS **REDUCED RECRUITMENT**, NOT PROLIFERATION — I HAD IT WRONG FOR FIVE ROUNDS. THE OBTAINABLE PHENOCOPY IS **MOXIDECTIN**.**
+
+Read in full: `Lui 2023` JCI Insight 8(9):e167074 (SPIN4 primary); `Melotti 2014` EMBO Mol Med 6(10):1263.
+
+### => ⭐⭐⭐ THE STANDING QUESTION — "AN AGENT THAT DOESN'T SPEND BA" — IS ANSWERED BY THE TARGET WE ALREADY HAVE
+> **`Lui 2023` Discussion, verbatim:** *"Patients with other overgrowth syndromes involving epigenetic
+> mechanisms often have **ADVANCED BONE AGE, which reduces the total period for linear growth during
+> childhood, resulting in a NORMAL HEIGHT rather than tall stature as an adult.** Interestingly, our
+> proband **did not show a significantly advanced bone age**, giving him an adult height prediction of
+> **+3.7 SDS**."*
+| syndrome | gene | role | bone age | **adult height** |
+|---|---|---|---|---|
+| Sotos / Weaver / Cohen-Gibson / Imagawa-Matsumoto / TBRS | NSD1 / EZH2 / EED / SUZ12 / DNMT3A | **writers** | **advanced** | ⛔ **NORMAL** |
+| ⭐ **Lui-Jee-Baron** | ⭐ **SPIN4** | ⭐ **READER** | ⭐ **NOT advanced** | ⭐ **+3.7 SDS** |
+> ### **EVERY EPIGENETIC OVERGROWTH GENE MAKES CHILDREN GROW FASTER. ONLY ONE MAKES ADULTS TALL. THE DIFFERENCE IS ENTIRELY BONE AGE. FIVE SAME-CLASS NEGATIVE CONTROLS, ONE POSITIVE — AND IT IS ALREADY THE TOP TARGET IN THE STACK.**
+**R134's law was PARTIAL-vs-COMPLETE. THIS IS A SECOND, BETTER AXIS: BA-SPENDING vs BA-NEUTRAL.**
+**THE PROBAND:** birth 5.85 kg (+4.3 SDS)/62 cm (+4.8 SDS); height **+4.5 to +5 SDS** vs midparental
++1.2; **BA 13y6m at CA 12y5m — read as NOT significantly advanced**; ⭐ **Bayley-Pinneau PAH 203 cm**;
+⛔ **EPIPHYSIODESIS AT 13 TO STOP IT**; ⭐ **IGF-1, IGF-2, testosterone ALL NORMAL, pubertal timing NORMAL**.
+> ⭐⭐ **NOT THE GH AXIS. NOT THE SEX-STEROID AXIS. GROWTH-PLATE-INTRINSIC AND CELL-AUTONOMOUS = ADDITIVE TO EVERYTHING IN THE STACK. And 203 cm is 7.4 cm ABOVE the 195.6 target, from ONE GENE, then surgically halted.**
+⭐ **DOSAGE FAVOURABLE, CONFIRMED TWICE:** het mother + maternal grandmother **+2 SDS** over midparental;
+mice — *"body weight significantly greater in homozygous vs heterozygous females… effect of gene dosage."*
+**PARTIAL LOSS WORKS. R134's partial-knockdown constraint is SATISFIED by human genetics.**
+
+### => ⛔⛔ THE MECHANISM WAS WRONG IN R133–R137. **IT IS REDUCED RECRUITMENT.**
+> *"when the number of EdU+ cells was normalized to total cell number (proliferative index), **the
+> fraction of cells that incorporated EdU did NOT differ significantly**… our findings **do NOT support
+> an increased tendency of progenitor cells to lose quiescence and increase proliferation**… may be due
+> to … **REDUCED RECRUITMENT INTO THE PROLIFERATIVE COLUMNS**."*
+**I read the abstract's PROLIFERATIVE-ZONE finding into the RESTING zone across five rounds.**
+> ### ⭐⭐⭐ **"REDUCED RECRUITMENT" IS EXACTLY R130's RATIO, IN PRIMARY DATA. The RZ enlarges because FEWER progenitors are SPENT, not because more divide.**
+> ### ⭐ **AND THAT IS *WHY* IT IS BA-NEUTRAL: BONE AGE IS SPENT BY THROUGHPUT. Every writer-class gene raises throughput and pays the A ∝ throughput^−0.150 exponent. SPIN4 loss raises N by LOWERING CONSUMPTION — N up, throughput flat, nothing paid.**
+⭐ **NEW DESIGN CRITERION, AND IT DISQUALIFIES A WHOLE CLASS: any replacement agent must LOWER RZ→PZ
+RECRUITMENT and must NOT RAISE PROGENITOR PROLIFERATION. Every mitogenic route to N is now suspect —
+that is the writer-class failure mode.**
+**ZONAL RESULT EXACT:** RZ height ↑, RZ cell number ↑, **Sfrp5+ and CD73+ cells ↑**, ⛔ **proliferative
+index NOT different**, RZ density ↓ (more matrix); PZ proliferation rate ↑ but height/cells/cell-height
+unchanged; **HZ height, cells/column and TERMINAL CELL HEIGHT ALL UNCHANGED.** *"Hyperplasia rather than
+hypertrophy"* — h_term untouched, nothing borrowed.
+
+### => ⭐⭐ THE NODE IS **β-CATENIN, NOT TCF** — R137's OBJECTION TO IVERMECTIN **WITHDRAWN**
+`Lui` Fig 6B transfection epistasis: SPIN4 + **β-catenin** → **~800-fold vs ~250-fold, P<0.0001**;
+SPIN4 + **TCF1 alone** → ⛔ **NOTHING**; SPIN4 + TCF1 + β-catenin → YES. *"primarily dependent on
+β-catenin, rather than TCF1."*
+`Melotti`: ivermectin acts by **"repression of the levels of C-terminally phosphorylated β-CATENIN
+forms"**, okadaic-acid-sensitive (phosphatase-mediated); their intro: *"phosphorylation of β-CATENIN at
+C-terminal sites is required for full activation of WNT-TCF signaling."*
+> **BOTH ACT ON THE TRANSCRIPTIONALLY ACTIVE β-CATENIN POOL. THE NODE MATCHES.** The TCF(VP16) rescue
+> proves downstream-rescuability, not TCF binding. ⚠ **ICAT is also β-catenin-level, so the node is NOT
+> the discriminator — MAGNITUDE still is (R137 stands). The match removes an objection, not a barrier.**
+⭐ **SHARED READOUT GENE:** `Lui` demonstrated reduced Wnt in Spin4-KO chondrocytes with **Axin2**;
+`Melotti` measured ivermectin with **AXIN2**. Same gene, same direction.
+
+### => ⭐⭐⭐ THE AGENT IS **MOXIDECTIN** — FDA-APPROVED, EQUIPOTENT, NEVER CONNECTED TO THIS
+`Melotti` Fig 2E, fraction of DMSO control, same concentration:
+| | Ivermectin | Doramectin | ⭐ **Moxidectin** | **Bryostatin** |
+|---|---|---|---|---|
+| Ls174T **AXIN2** | 0.2 | 0.3 | ⭐ **0.3** | ⛔ **1.1** |
+| Ls174T **LGR5** | 0.1 | 0.1 | ⭐ **0.1** | ⛔ **1.0** |
+| CC14 **AXIN2 / LGR5** | 0.2 / 0.02 | 0.4 / 0.06 | ⭐ **0.4 / 0.12** | — |
+*"equal potency of Ivermectin, Doramectin, and Moxidectin in Ls174T cells."*
+⭐ **BRYOSTATIN IS A BUILT-IN NEGATIVE CONTROL** — distant macrocyclic lactone, **inactive on every
+readout (1.0–1.1)**. The activity is chemotype-specific, not a lactone class effect.
+| | ivermectin | ⭐ **moxidectin** | selamectin |
+|---|---|---|---|
+| human approval | ✅ | ⭐ ✅ **FDA 2018, ages ≥12** | ⛔ veterinary only |
+| paediatric | widely used | ⭐ **4–11 yr dosing study 2025** | — |
+| potency | IC50 1–2.4 µM | "comparable" | ⭐ **IC50 0.08–0.14 µM** |
+| exposure | t½ ~18 h | ⭐ **long t½, single 8 mg oral** | topical |
+**MOXIDECTIN = LEAD. SELAMECTIN = POTENCY ARM. BRYOSTATIN = NEGATIVE CONTROL.**
+### ⛔⛔ THE DECISIVE UNKNOWN — **THE EXPOSURE GAP**, STATED WITHOUT SPIN
+At `Melotti`'s 1–5 µM, **AXIN2 falls to 0.1–0.3 of control = 70–90% Wnt suppression.**
+> ⛔ **THAT IS DEEP BLOCKADE, COMPARABLE TO dnTCF — AND R137's LADDER SAYS DEEP BLOCKADE IS THE ICAT
+> REGIME, WHICH SHORTENS BONE. If a lactone reached those concentrations in cartilage it is predicted
+> to make the subject SHORTER.**
+⚠ Approved human oral dosing is **~2 orders of magnitude below** 1–5 µM (⚠ **`value_unverified` — general
+PK knowledge, NOT confirmed from a paper this round**).
+> ⭐ **THE GAP MAY BE THE POINT: the ladder says we do not WANT the active concentration, we want a small
+> fraction of it.** ⛔ **FLAGGED AS THE ROUND'S MOST MOTIVATED-REASONING-PRONE CLAIM — a hypothesis with
+> a plausible shape and ZERO measurement. The 0.05→5 µM dose-response has never been drawn for any
+> readout, and the SIGN of a small Wnt reduction in cartilage is unknown.**
+
+### => ⭐⭐⭐ HUMAN PROOF RUN THIS ROUND: **THE RESTING ZONE IS WNT-INHIBITORY IN HUMAN**
+`Lui` cites this from MOUSE (ref 19). Measured in **GSE9160, LCM human growth plate, 5 zones × 2 donors**
+(`analysis/redundancy/rzwnt.py`). Zones validated first: **COL10A1 8,486→59,122 (7×); IHH 332→18,709 (56×)**.
+| WNT ANTAGONIST | Reserve | Prolif | PreHyp | Hyper | RZ/HZ | pctile |
+|---|---|---|---|---|---|---|
+| ⭐ **SFRP5** | **6043.0** | 1029.6 | 379.4 | **70.0** | ⭐ **86×** | **96.2** |
+| ⭐ **FRZB** | **5048.0** | 778.4 | 533.2 | 531.2 | **9.5×** | **95.1** |
+| **DKK3** | **5504.1** | 3280.0 | 2168.4 | 3029.4 | 1.8× | **95.7** |
+| **SFRP1** | 1532.7 | 721.3 | 476.5 | 579.1 | 2.6× | 80.7 |
+| **WNT OUTPUT** | Reserve | Prolif | PreHyp | **Hyper** | | pctile |
+| **AXIN2** | 809.6 | 564.1 | 361.4 | ⭐ **2699.9** | | 67.0 |
+| **SP5** | 33.9 | 31.2 | 29.3 | **97.5** | | ⭐ **2.2** |
+| **LGR5** | 64.7 | 34.2 | 65.8 | **317.4** | | ⭐ **7.3** |
+> ### ⭐⭐ **HIGHEST ANTAGONIST LOAD AND LOWEST WNT OUTPUT IN THE PLATE. Lui's Wnt-inhibitory niche PROVEN IN HUMAN. A drug lowering chondrocyte Wnt does pharmacologically what SFRP5/FRZB do endogenously here.**
+> ### ⭐⭐⭐ **AND IT EXPLAINS THE MAGNITUDE SHELF MECHANISTICALLY: the zone we want LOWER is already the plate's LOWEST; the zone that CANNOT lose Wnt — the HZ, where it drives terminal differentiation and the ossification front — is the HIGHEST (3.3×). A SMALL reduction moves the RZ meaningfully and leaves the high-reserve HZ functional; a LARGE one collapses the HZ. THAT IS THE ICAT FAILURE MODE, NOW PREDICTED RATHER THAN OBSERVED.** R137 named the shelf; R138 explains it.
+⭐⭐ **AND NOBODY HAS MADE THIS ARGUMENT: TELO2 — ivermectin's molecular target — is RZ-HIGHEST**
+(3313.7 RZ → 2808 PZ → 1921 PreHyp → 2046 HZ, **91.8 pctile**). Also **CXXC5 4044.9 RZ (93.5)**; ⭐ **PRRX1
+2714.9 RZ (89.5) / 5208.9 perichondrium — Chu 2026's root population CONFIRMED IN HUMAN.**
+⚠ n=2 per zone; **expression is not dependence.**
+### ⚠ TWO THINGS THAT DID **NOT** VALIDATE — REPORTED BECAUSE THEY DIDN'T
+1. ⛔ **CD73/NT5E does NOT transfer to human** — 418.9 RZ vs 1086 PZ vs **1789 HZ**, runs the WRONG way.
+   **SFRP5 validates spectacularly; CD73 does not.** One of Lui's two markers is human-portable.
+2. ⛔ **OPEN CONFLICT, NOT EXPLAINED AWAY:** mouse Spin4 is **RZ-highest** (P=0.033); **human SPIN4 in
+   GSE9160 is PZ-enriched and RZ-LOWEST (90.9 RZ vs 267.8 PZ, pctile 11.9).** Direct opposites. If human
+   SPIN4 is not an RZ gene the human relevance of the RZ mechanism is weaker — **counterweighted by the
+   human PHENOTYPE (+4.5–5 SDS) being the strongest evidence in the file.**
+
+### => ⛔ THE COSTS, PLAINLY — **SPIN4 LOSS IS NOT SKELETALLY SELECTIVE**
+Proband: **macrocephaly** (>97th pct since birth), **hydrocephalus** (no raised ICP, no intervention),
+**hepatosplenomegaly**. Mice: kidney, heart, lung, brain, spleen AND skeleton up, **proportional to body
+mass** — *"uniform overgrowth in multiple tissues."* ✓ **No developmental delay or cognitive impairment**
+(*"speaks 3 languages fluently, particularly good at math"*) — which SEPARATES SPIN4 from the writer class,
+where intellectual disability is common. ⚠ R134's neoplasia watch item unchanged.
+
+### => THE EXPERIMENT — NOW WITH AN INTERNAL NEGATIVE CONTROL, WHICH IT HAS NEVER HAD
+Fetal tibial / E16.5 femur explant, **DOSE-RANGED ACROSS 4–5 LOGS**, endpoint **BONE LENGTH**.
+Arms: ⭐ **moxidectin (lead)** · ivermectin (1–5 µM reference) · **selamectin (nanomolar arm)** ·
+⭐ **bryostatin (NEGATIVE CONTROL — inactive on AXIN2/LGR5/proliferation; any length effect is off-target)**
+· **deliberate overshoot arm (ladder predicts it SHORTENS; if not, the magnitude model is wrong)**.
+⭐ **Secondary readouts that make it decisive: Axin2 mRNA (the gene BOTH papers share) and Sfrp5+ RZ cell
+count (the marker that validated in human). A lactone that raises Sfrp5+ RZ number while leaving terminal
+hypertrophic cell height unchanged has PHENOCOPIED Spin4 loss on the two measurements that define it.**
+
+### CORRECTIONS
+- ⛔⛔ **SPIN4 MECHANISM WRONG IN R133–R137** — RZ proliferative index is **NOT** increased; the authors
+  reject increased proliferation and propose **reduced recruitment**. I read the PZ finding into the RZ.
+- ⭐ **The correction CONFIRMS R130** and explains the BA-neutrality: N up, throughput flat, nothing paid.
+- ⭐ **SPIN4 = THE ONLY BA-NEUTRAL MEMBER OF THE EPIGENETIC OVERGROWTH CLASS**, five same-class controls.
+- **R137's node objection to ivermectin WITHDRAWN** (both act on active β-catenin); magnitude still decides.
+- ⭐ **MOXIDECTIN promoted over ivermectin**; **bryostatin identified as a built-in negative control**.
+- ⭐ **Wnt-inhibitory resting zone PROVEN IN HUMAN TISSUE**; ⭐ **the magnitude shelf now has a MECHANISM**.
+- ⭐ **TELO2 (ivermectin's target) is RZ-highest in human growth plate, 91.8 pctile.**
+- ⚠ **CD73/NT5E does NOT validate as a human RZ marker.** ⛔ **Mouse-vs-human SPIN4 zonal conflict RECORDED.**
+- ⛔ **Exposure gap flagged as the round's most motivated-reasoning-prone claim.**
 
 ---
 

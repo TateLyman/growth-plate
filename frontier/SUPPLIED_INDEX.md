@@ -153,3 +153,9 @@ I repeatedly re-asked for papers already supplied. Memory across 25+ turns is no
 | `Goto_2018_Mob1_YAP_TAZ_Chondrodysplasia.pdf` | YAP/TAZ activation -> chondrodysplasia via TEAD repression of SOX9 |
 | `Vanyai_2020_Hippo_YAP_TAZ_Skeletal_Morphogenesis.pdf` | cartilage Yap/Taz dKO -> no growth benefit, deformities incl. cleft palate |
 | `Li_2021_TAZ_Chondrogenesis_Skeletal_Development.pdf` | **TAZ is REQUIRED**; global TAZ KO = small stature |
+
+## 2026-08-30 (2) — the two decisive primaries (R138)
+| file | what it settles |
+|---|---|
+| `Lui_2023_JCI_Insight_167074_SPIN4.pdf` (`167074.2202304281134...`) | **SPIN4 primary.** BA NOT advanced vs the whole writer class; PAH 203 cm; mechanism is **reduced recruitment**, NOT increased RZ proliferation; Wnt effect is **beta-catenin-dependent, TCF1-independent** |
+| `emmm.201404084.pdf` (Melotti 2014) | ivermectin/WNT-TCF. **Moxidectin equipotent** on AXIN2/LGR5; **bryostatin inactive = built-in negative control**; ivermectin 1-5 uM, selamectin IC50 0.08-0.14 uM; acts via C-terminal beta-catenin phosphoforms |
