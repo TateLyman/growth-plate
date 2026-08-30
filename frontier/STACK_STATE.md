@@ -1,12 +1,104 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R146
+**Last updated:** F-R147
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-PREDICT. **F-R147 — THE NRK PREDICTION, **CALIBRATED AGAINST MEASURED CROSS-REACTIVITY**: NRK's pocket is **77.4% identical** to the drugged trio — **MORE than MAP4K1 (71.0%), which carries over 92-94%**. ⭐ **BEST ESTIMATE ~70%.** ⛔ ONE REAL DEFLATOR: **all 7 differences are NRK-UNIQUE.**
+
+### => ⛔ A BUG CAUGHT AND KILLED BEFORE REPORTING
+First attempt located motifs by regex **independently per sequence** then compared **by string index** —
+producing a false *"16/18 pocket positions differ, 0 conservative"* that would have killed the arm.
+**Artefact.** NRK's motifs are canonical but VARIANT: P-loop `GLGTYG**RI**` (not `...Q**V**`), b3
+`TA**VK**` (not `AA**IK**`). One conservative substitution each broke both patterns, the pocket set
+collapsed to the HRD/DFG block, and **NRK's catalytic loop got compared against everyone else's P-loop.**
+**Rebuilt ALIGNMENT-BASED** (`analysis/redundancy/predict2.py`; broken `predict.py` retained so the
+error stays visible): define the pocket ONCE in MAP4K4 (inhibitor co-crystals exist), map into every
+other kinase through a pairwise alignment.
+
+### => THE POCKET — 31 POSITIONS, ALL ON THE SAME REFERENCE COLUMNS
+```
+MAP4K4/TNIK/MINK1  GNGTYGQVGHAKNKWLVMEFCGHRDIGVDFG
+NRK                GLGTYGRIGHTKNKWMVMELCAHRDIGVDFG   <- 7 differences
+MAP4K1             GGGTYGEVADVKIKWICMEFCGHRDIGADFG
+```
+⭐ **Catalytic core `HRDIGVDFG` IDENTICAL between NRK and the trio.** MAP4K1/2/3/5 differ even there
+(`HRDIGADFG`) **and still cross-react 92-94%.**
+
+### => ⭐⭐⭐ CALIBRATION AGAINST THE R146 MEASUREMENTS
+| pair | **pocket identity** | **MEASURED carry-over** |
+|---|---|---|
+| MAP4K4 / MINK1 | **100.0%** | **68%** (n=260) |
+| TNIK / MINK1 | **100.0%** | **87%** (n=38) |
+| MAP4K4 / TNIK | **100.0%** | **89%** (n=72) |
+| ⭐ **MAP4K4 / MAP4K1** | ⭐ **71.0%** | ⭐ **92%** (n=37) |
+| ⭐ **TNIK / MAP4K1** | ⭐ **71.0%** | ⭐ **94%** (n=33) |
+> ### **THE LOWEST POCKET IDENTITY IN THE CALIBRATION SET IS 71.0% AND IT STILL CARRIES OVER 92-94%. Across 71-100% carry-over is uniformly 68-94% with NO evidence lower identity reduces it — if anything inverted, so identity is NOT rate-limiting in this range.**
+
+### => ⭐⭐⭐ WHERE NRK SITS
+| NRK vs | pocket ident | pocket simil | |
+|---|---|---|---|
+| ⭐ **TNIK / MINK1 / MAP4K4** | ⭐ **77.4%** | **87.1%** | ⭐ **ABOVE the 71% floor** |
+| MAP4K3 / MAP4K1 | 61.3% | 67.7-71.0% | below |
+| MAP4K5 / MAP4K2 | 58.1% | 67.7-71.0% | below |
+| STK39 / OXSR1 | 41.9-42.3% | 61.3-65.4% | below |
+> ### ⭐⭐ **NRK'S POCKET IS *MORE* SIMILAR TO THE DRUGGED TRIO (77.4%) THAN MAP4K1 IS (71.0%) — AND MAP4K1 IS CROSS-INHIBITED 92-94% OF THE TIME. INTERPOLATION INSIDE the calibrated range, not extrapolation beyond it.**
+**GATEKEEPER CONFIRMED, WITH AN R145 CORRECTION:**
+```
+MAP4K4  Q L W L V M E F C G A     hinge E-F-C -> gatekeeper = M
+NRK     Q L W M V M E L C A G     hinge E-L-C -> gatekeeper = M  (SAME)
+```
+⚠ **R145 said "Met104" — it is Met105; NRK's is Met129** (NRK's domain carries a ~24-residue
+insertion). ⭐ **The substance stands and is now VERIFIED rather than recalled: conserved Met
+gatekeeper with conserved V(gk-1), E(gk+1), C(gk+3). Only gk+2 differs (F->L) — the most
+solvent-exposed, most tolerant hinge position.**
+
+### => ⛔ THE HONEST DEFLATOR: **ALL 7 DIFFERENCES ARE NRK-UNIQUE**
+`N->L@2 · Q->R@7 · V->I@8 · A->T@11 · L->M@16 · F->L@20 · G->A@22` — **3/7 conservative.**
+Checked against the whole family: **every one is a residue no other GCK member carries.**
+| pos | element | trio | MAP4K1/2/3/5 | **NRK** |
+|---|---|---|---|---|
+| ⭐ **7** | **P-loop** | **Q** | **E/D (acidic)** | ⭐ **R (BASIC) — CHARGE REVERSAL vs half the family** |
+| 2, 8, 11, 16, 20, 22 | P-loop / b3 / hinge | | | all NRK-unique |
+> ### ⛔ **NRK IS THE FAMILY OUTLIER, and the calibration set contains NO example of an outlier like it. A series optimised against MAP4K4/TNIK/MINK1 could systematically miss NRK at exactly these positions, and the calibration CANNOT SEE that failure mode.**
+> ⭐ **Q7R is the most consequential: the glycine-rich loop caps the ATP site and NRK puts an ARGININE where the trio has Gln and MAP4K1/2/3/5 have Asp/Glu. If NRK is missed, that is where.** **3 of 7 are in the P-loop and 3 in the gatekeeper/hinge block — the two regions med-chem uses to build selectivity.**
+
+### => ⭐ THE ANSWER
+| | |
+|---|---|
+| family base rate | **68-94%** (measured, 5 pairs, bias-controlled) |
+| NRK pocket identity to the trio | **77.4%** — above the 71% floor |
+| catalytic core / gatekeeper | **identical / conserved Met** |
+| ⛔ deflator | **7 NRK-unique residues incl. a P-loop charge reversal** |
+| ⭐ **BEST ESTIMATE** | ⭐ **~70% that a pan-GCK-IV inhibitor engages NRK at comparable potency** |
+**More likely than not by a clear margin — but NOT a result. The 30% is not noise; it is concentrated
+in seven named residues the calibration could not test.** ⚠ Selectivity can genuinely turn on one
+residue, and the ChEMBL base rate is enriched for compounds DESIGNED as pan-family inhibitors.
+**One assay replaces all of this.**
+
+### => ⭐ AND IT MAKES THE EXPERIMENT DISCRIMINATING
+| arm | what it tests |
+|---|---|
+| **rentosertib** | the one with human Phase 1/2a — the outcome that matters most |
+| **PF-06260933 / GNE-495** | MAP4K4-optimised — **most likely DEFEATED by Q7R + the hinge block** |
+| **NCB-0846** | TNIK-optimised |
+| **bosutinib / lestaurtinib / dovitinib** | promiscuous — ⭐ **least shaped by the trio's pocket, so MOST likely to tolerate NRK's 7 differences** |
+> ⭐ **PREDICTION ON THE RECORD BEFORE THE ASSAY: the promiscuous scaffolds should hit NRK MORE readily than the selective GCK-IV tool compounds, because selectivity optimisation shapes a molecule to the trio's pocket and NRK is the outlier. AN INVERTED RESULT FALSIFIES THIS HOMOLOGY MODEL.**
+
+### CORRECTIONS
+- ⛔ **Bug caught and killed pre-report** — regex-per-sequence + compare-by-index misaligned NRK's
+  catalytic loop against the others' P-loop. Rebuilt alignment-based; broken script retained.
+- ⭐⭐ **Calibrated prediction: 77.4% pocket identity, above the 71% floor that still yields 92-94%.**
+- ⭐ **Catalytic core `HRDIGVDFG` identical** to the trio.
+- ⚠ **R145's "Met104" corrected to Met105; NRK's gatekeeper is Met129.** Substance verified.
+- ⛔ **Deflator added: all 7 pocket differences are NRK-unique, incl. a P-loop charge reversal (Q->R).**
+- ⭐ **Best estimate ~70%; a falsifiable compound-ordering prediction put on the record.**
 
 ---
 
