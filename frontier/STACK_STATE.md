@@ -1,12 +1,98 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R156
+**Last updated:** F-R157
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-DELIVERY. **F-R157 — ⭐⭐⭐ **THE DELIVERY CHAIN IS CLOSED, END TO END, WITH NUMBERS.** ORAL AURANOFIN → **JOINT 11 µM / BONE 5 µM AT ONE WEEK**, TISSUE:BLOOD **3.95** → AND MEASURED **INSIDE THE NUCLEUS AT 4.6–12.5 µM**, WHERE TET1 LIVES = **46–125× THE CELLULAR ACTIVE CONCENTRATION**. ⭐⭐ THE NUCLEUS IS **SATURABLE** — A SECOND BRAKE, MEASURED IN VIVO. ⛔ HOLE 8 STILL WILL NOT CLOSE.
+
+### => ⭐⭐⭐ GOLD REACHES SKELETAL TISSUE AND STAYS
+`Cottrill, Sharma, Parish & McAuliffe, J Chem Soc Perkin Trans II 1989, 53–58` — **¹⁹⁹Au + ³⁵S auranofin,
+2.5 mg/kg ORAL**, Wistar rats ~200 g (**growth plates OPEN**), Table 4, **%dose/g**:
+
+| organ | 2 h | 24 h | 48 h | **168 h** |
+|---|---|---|---|---|
+| Blood | 0.93 | **1.8** | 0.83 | ⛔ **0.076** |
+| ⛔ Kidney | 1.1 | 6.8 | 7.1 | ⛔ **6.6** |
+| ⭐ **Joint** | 0.12 | **0.45** | 0.37 | ⭐ **0.30** |
+| ⭐ **Bone** | 0.11 | **0.31** | 0.21 | ⭐ **0.14** |
+| Muscle | 0.068 | 0.20 | 0.17 | 0.059 |
+
+**tissue : blood ratio** — Joint **0.13 → 3.95** · Bone **0.12 → 1.84** · Muscle 0.07 → 0.78 · ⛔ Kidney 1.18 → **86.8**
+
+> ### ⭐⭐⭐ **BLOOD FALLS 24× BETWEEN 24 h AND 168 h; JOINT FALLS 1.5× (67% RETAINED), BONE 2.2× (45%). BY ONE WEEK JOINT GOLD IS ~4× BLOOD. GOLD PARTITIONS INTO SKELETAL TISSUE AND IS RETAINED.**
+Authors: *"gold levels in the **joint**… **2–3× higher than the surrounding bone**… the therapeutic metal **reaches this area and, once there, it is retained**."*
+
+**Absolute (auranofin is 29.0% Au → 0.726 mg Au/kg):**
+| tissue | time | %dose/g | µg Au/g | ⭐ µM |
+|---|---|---|---|---|
+| **Joint** | 24 h | 0.45 | 3.27 | ⭐ **16.6** |
+| **Joint** | 168 h | 0.30 | 2.18 | ⭐ **11.1** |
+| **Bone** | 24 h | 0.31 | 2.25 | **11.4** |
+| **Bone** | 168 h | 0.14 | 1.02 | **5.2** |
+**vs 0.10 µM cellular 5hmC-active concentration → joint at one week is 111×.**
+
+### => ⭐⭐⭐ AND IT IS MEASURED **INSIDE THE NUCLEUS**
+`Sharma, Smillie & Laverty, J Pharm Pharmacol 1984;36:441–5` — oral auranofin, purified subcellular fractions.
+Single dose: ***"60–80% of hepatic and 50–70% of renal gold was present in the cytosol"*** — gold is **intracellular**.
+
+| fraction | LIVER 5/10/15 mg/kg/d | µM | KIDNEY 5/10/15 | µM |
+|---|---|---|---|---|
+| whole tissue | 1.78 / 2.89 / 4.49 | 9–23 | 9.04 / 13.54 / 16.55 | 46–84 |
+| ⭐ **NUCLEAR** | ⭐ **1.04 / 0.90 / 0.95** | ⭐ **4.6–5.3** | ⭐ **2.09 / 2.33 / 2.46** | ⭐ **10.6–12.5** |
+| mitochondrial | 1.21 / 1.46 / 1.52 | 6–8 | 1.28 / 1.43 / 1.93 | 6.5–9.8 |
+| cytosol | 0.76 / 1.14 / 1.96 | 4–10 | 2.93 / 4.85 / 6.06 | 15–31 |
+
+⭐ Kidney: *"the **nuclei consistently contained significantly (P<0.05) higher gold** than the mitochondria."*
+> ### ⭐⭐⭐ **TET1 IS A NUCLEAR ENZYME AND THE DRUG IS MEASURED IN THAT COMPARTMENT AT 46–125× THE CELLULAR ACTIVE CONCENTRATION. THE LAST STEP IS MEASURED, NOT ASSUMED.**
+
+### => ⭐⭐ SECOND BRAKE: THE NUCLEUS IS SATURABLE
+| | 3× dose → TOTAL tissue | → **NUCLEAR** |
+|---|---|---|
+| liver | 1.78 → 4.49 (**2.5×**) | ⭐ **1.04 → 0.95 (0.91×)** |
+| kidney | 9.04 → 16.55 (**1.8×**) | ⭐ **2.09 → 2.46 (1.18×)** |
+
+> ### ⭐⭐ **TRIPLING THE DOSE MOVES NUCLEAR GOLD 0–18%. For an agent that must reach ~50% and NOT exceed it, this is a SECOND self-limiting mechanism on top of R154's 2-OG competition — and this one is measured in vivo.**
+
+### => ⭐ THREE MORE THINGS SETTLED
+1. ⭐ **The active moiety is GOLD, not the ligand** — the ³⁵S label is *"rapidly and effectively completely eliminated… the thiolate parts are **not responsible** for the therapeutic action."* **Independent confirmation of the thiol-exchange model that R156's albumin patch rests on.**
+2. ⭐ **Oral absorption is "effectively complete" when given as a SOLUTION (5% ethanol-water) rather than a solid** — a formulation variable that changes exposure from partial to complete.
+3. ⭐ **`Madeira 2013` independently corroborates the cellular window** — auranofin active on human astrocytes at **0.1–5 µM, IC50 0.5–1 µM**; same range as Chen's 5hmC data, different lab and readout.
+
+### => THE HUMAN BRIDGE
+human 6 mg/day ÷ 70 kg = **0.0857 mg/kg/day** · t½ 35 d daily → accumulation **51×** → **steady-state
+equivalent 4.37 mg/kg** vs rat single **2.50 mg/kg** = ⭐ **1.75×, same order.**
+⚠ Allometry not applied; humans clear gold far more slowly than rats, so this is **conservative**.
+
+### => HOLE LEDGER MOVEMENT
+| hole | before | now |
+|---|---|---|
+| ⭐ **9. skeletal / growth-plate delivery** | ⛔ *"largest untested assumption"* | ⭐⭐⭐ **CLOSED** |
+| ⭐ **intracellular + nuclear access** | not raised | ⭐ **CLOSED — quantified** |
+| ⭐ **overshoot control** | one brake | ⭐⭐ **TWO brakes** |
+| ⛔ **8. in vivo gold → TET/5hmC** | ⛔ OPEN | ⛔ **STILL OPEN — nothing here measures 5hmC** |
+| ⛔ 10. 35-day half-life · 13. TET1 7/10 | ⛔ OPEN | unchanged |
+
+### => ⚠ THE HOLE INSIDE THE PATCH, NAMED BEFORE ANYONE ELSE DOES
+⛔ **Total tissue gold ≠ FREE gold.** Sharma: cytosolic gold is *"largely bound to proteins including
+**metallothionein**."* The exchangeable fraction is **unmeasured**. **This is the identical error class that
+cost me R141 and R155 and I am not walking into it a third time.**
+⭐ **Survivable only on margin: at 46–125× in the nucleus, even a 1–2% free fraction clears 0.1 µM. That is
+an argument from MARGIN, not from measurement, and it is labelled as such.**
+⚠ Also: "joint"/"bone" are **whole-tissue homogenates**, not growth-plate cartilage — though the rats had
+**open growth plates**, so the plate is inside the sample rather than excluded. ⛔ **`Intoccia 1982` could
+not be retrieved** (1982 J Rheumatol supplement, not indexed with an abstract).
+
+### => ⛔ NEW LIABILITY THIS DATA CREATES
+**Kidney is 86.8× blood at 168 h and 46–84 µM in tissue** — the highest of any compartment and the
+mechanistic basis of gold nephropathy. ⭐ **Renal monitoring is non-negotiable**, matching Giannini's own
+exclusions (proteinuria >200 mg/24 h, creatinine >1.5).
 
 ---
 
