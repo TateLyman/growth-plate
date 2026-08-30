@@ -1,12 +1,96 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R112
+**Last updated:** F-R113
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-DECOMP. **F-R113 — "INFINITE" IS TWO SEPARABLE HALVES. ONE IS ALREADY SOLVED. BROAD DE-REPRESSION FAILS IN VIVO.**
+
+### => THE DECOMPOSITION
+**`infinite = never-closing x non-senescing`** - and they come apart in humans in both directions.
+
+**NEVER-CLOSING IS SOLVED.** Aromatase deficiency (CYP19A1) and ER-alpha mutation in men: **unfused
+epiphyses into the mid-twenties, continued linear growth into adulthood, >3 SD.** The ER-alpha case
+(Smith 1994) was **204 cm and still growing at 28 with open epiphyses**; oestradiol fuses them in 6
+months. **Aromatase inhibition has been in the stack since F-R087 labelled "row 2 deadline agent" and
+that was the wrong label.** Ceiling of this half alone: **~+3 SD.**
+
+### => AND THE COUNTER RUNS WITHOUT OESTROGEN - PROVEN FROM DATA HELD SINCE F-R103
+`GSE16981`'s PZ time course is **CASTRATED rats** (steroid removed from 3wk) = the animal model of the
+aromatase-deficient man. F-R103 called it "the intrinsic clock" and never ran the test.
+| | 6wk vs 3wk | 9wk vs 3wk | 12wk vs 3wk |
+|---|---|---|---|
+| **imprinted network** | **-0.67, z=-7.9** | **-0.83, z=-7.1** | **-0.93, z=-6.7** |
+| cell cycle | +0.22 | +0.28 | +0.18 |
+IGF2 -6.35, MEST -2.82, SLC38A4 -1.65, H19 -1.63, NDN -1.12.
+> **Removing the deadline does not slow the program. The second factor is the entire remaining problem.**
+
+### => ASK #4 (F-R112) ANSWERED FROM DISK, AND IT IS NO
+`GSE3298` summary: *"**Mid-shaft fracture stimulates bone lengthening by increasing linear growth at the
+growthplate.**"* Rat proximal femoral GROWTH PLATE after a distant mid-shaft fracture, 7 timepoints,
+paired controls. **IGN: +0.19 / -0.09 / -0.07 / -0.08 / -0.09 / +0.15 / -0.48; z from +0.16 to -3.47.**
+Not underpowered (427 and 573 genes |d|>1 at d1 and wk1) - what moves is an **interferon/macrophage**
+signature (ISG15, MX2, AIF1, MPEG1, MRC1, CCL2). **F-R112's callus reactivation stays local to the callus.**
+
+### => HEDGEHOG IS ORTHOGONAL TO THE COUNTER - AND THAT IS GOOD NEWS
+Gli1+ vs Gli1- progenitors **IGN +0.08, z=+0.07 NULL**; rat RZ vs PZ -0.10, z=-0.52 null.
+**Exactly what F-R096 predicted from human genetics: every PTCH1+/- patient is +0.8 to +3.8 SD and every
+one stops.** Hedgehog buys pool, not program. **=> pool and counter are INDEPENDENT AXES, so ADDITIVE.**
+
+### => CORRECTING F-R112 AGAINST MYSELF: THE CHROMATIN CLASS IS NOT NULL
+F-R112 tested **G9a inhibitors only** and generalised. Built a proper screen: **204 drug-vs-control
+contrasts across 654 cached datasets**, each vs an expression-matched null.
+| compound | IGN | z |
+|---|---|---|
+| **vorinostat/SAHA 10uM** | **+0.85** | **+2.81** |
+| **romidepsin 30nM / 10nM / 2nM** | **+0.69 / +0.39 / +0.14** | +2.57 / +2.15 / +2.22 |
+| **JQ1 500nM (BET)** | **+0.44** | **+3.53** |
+| MS-275 entinostat | +0.36 | +2.62 |
+| trichostatin A (x2 datasets) | +0.23 / +0.23 | +2.53 / +1.98 |
+| I-BET151 | +0.09 | +1.98 |
+| GSK126 (EZH2i) | +0.06 / +0.14 | +2.54 / +2.15 |
+| dexamethasone, primary chondrocytes | +0.17 | +2.19 |
+| **G9a inhibitors (UNC, BIX)** | **~0** | **<= +1.8** |
+**Romidepsin dose-responsive over 3 doses; JQ1 over 5 datasets. HDACi and BETi DO raise total dose.**
+**But: +0.06 to +0.85 against a -3.09 deficit = a quarter to a thirtieth of the hole.**
+
+### => THEN THE TOP HIT KILLED THE CLASS, IN VIVO, WITH A LENGTH ENDPOINT
+Top hit was not a drug: **`GSE84198`, Ezh1-/-;Col2-Cre Ezh2 fl/fl vs littermates, LCM growth plate, P3,
+n=6/group.** Right tissue, in vivo, well powered.
+**PZ: imprinted network +0.28, z=+7.53** (cell cycle -0.07, chondrogenic -0.01). HZ +0.18, z=+2.75.
+PEG10 +0.81, PPP1R9A +0.69, DLK1 +0.61, GPC3 +0.52, RIAN +0.50, NNAT +0.47, MEG3 +0.40, MEST +0.37.
+**And the paper it comes from is `Lui JC et al., EZH1 and EZH2 PROMOTE skeletal growth by repressing
+inhibitors of chondrocyte proliferation and hypertrophy. Nat Commun 2016;7:13685.` Those mice have
+REDUCED skeletal growth.**
+> **The one experiment in existence where the imprinted network was raised in a growth plate and length
+> was measured: the network went UP and the bone got SHORTER.**
+**Generalises to the class incl. Tate's list: broad de-repressors do not selectively lift imprinted
+domains - they lift everything, including the brakes on chondrocyte proliferation and hypertrophy.**
+**EZH2 inhibition (tazemetostat) OUT. No HDACi/BETi added.**
+
+### => THE PROGRAMME, STATED ONCE
+| factor | status | agent | ceiling |
+|---|---|---|---|
+| **never-closing** | **SOLVED**, human genetic proof | **aromatase inhibition** (approved, already held) | **~+3 SD alone** |
+| **pool** | human-validated, **orthogonal to counter => additive** | SMO agonism; local SOC delivery is the only demonstrated route | +2 to +4 SD by genotype |
+| **faster / v** | lever is hypertrophic size not proliferation | erdafitinib, vosoritide, GH+AI (+7.5cm) | small |
+| **non-senescing** | **the entire remaining problem** - oestrogen-independent (z=-6.7..-7.9), Hedgehog-orthogonal, unreachable by remote injury, and raising it in vivo shortened the bone | **NONE** | - |
+
+### => STILL OPEN - THREE SPECIFIC THINGS
+1. **A SELECTIVE de-repressor of imprinted domains** that does not lift the chondrocyte-proliferation
+   brakes. Nothing in 5,591 series does it.
+2. **Whether raising the IGN in the RESTING ZONE specifically lengthens bone.** GSE84198 is PZ+HZ; F-R111
+   showed the RZ collapse is 4x larger and the RZ ages by a different program (r=+0.16 with PZ).
+   **The Ezh2 refutation may simply be the wrong compartment.**
+3. **Whether never-closing and pool are additive in vivo.** Orthogonal on the transcriptome; nobody has
+   combined a SMO agonist with oestrogen blockade in any animal. **On the arithmetic that combination is
+   the whole obtainable programme.**
 
 ---
 
