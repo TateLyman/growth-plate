@@ -1,12 +1,132 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R162
+**Last updated:** F-R163
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HOLE8CLOSED. **F-R163 — ⭐⭐⭐ **HOLE 8 IS CLOSED**: A SMALL MOLECULE (ITACONATE), I.P. INTO A LIVING MOUSE, LOWERED 5hmC **36% IN PERITONEAL LEUKOCYTES AND LUNG BY LC-MS/MS WITH 5mC UNCHANGED.** ⛔ THE SECOND DOCUMENT IS COMPROMISED (**B339 = BOBCAT339, ACTIVITY IS CONTAMINATING Cu(II)**) AND IS NOT COUNTED. ⛔⛔⛔ AND MY OWN STRUCTURAL ANALYSIS **BREAKS OUR SELECTIVITY CLAIM: THE 2-OG POCKET IS 9/9 IDENTICAL ACROSS TET1/TET2/TET3, `Cys1374` INCLUDED.** ⭐⭐⭐ THE HUMAN GENETICS THEN RESCUES **EFFICACY** — TET2 AND TET3 APPEAR **NOWHERE** IN 29 kosmicki TABLES.**
+
+**Document:** `R163_hole_8_is_closed_by_itaconate_and_my_own_structural_analysis_breaks_the_selectivity_claim.md`
+**Scripts:** `analysis/redundancy/znsite.py`, `analysis/redundancy/cysdiv.py`, `analysis/redundancy/tetplof.py`
+**Operator-supplied:** `nihms1820811.pdf` (Chen L-L et al., Nat Cell Biol — itaconate inhibits TET), `jci170173.pdf` (PCIF1/m6Am HNSCC supplement)
+
+### ⭐⭐⭐ HOLE 8 — CLOSED AT CLASS LEVEL
+> **Ext Data Fig 10a:** *"Mice were i.p. injected with ITA prior to LPS challenge (25 mg/kg, n=3/group). At
+> 2 h post LPS, **peritoneal leukocytes AND LUNG** were freshly isolated and subjected to determination of
+> **genomic 5hmC and 5mC by LC-MS/MS**."* Main text: *"i.p. injection of ITA led to **reduced 5hmC by as
+> much as 36%**… while **5mC was unaffected**."* Methods: **50 mg/kg ITA, 12 h.**
+
+⭐⭐ **A small molecule, a living animal, a SOLID TISSUE, a QUANTITATIVE method, and a SPECIFICITY CONTROL.**
+Open since R156, falsely patched in R160, withdrawn in R161. **Done.**
+
+⭐⭐ **Second result:** `Tet2HxD` catalytic-dead chimeras (~50% global 5hmC reduction) were **fully
+recapitulated by ITA pre-treatment** across molecular, tissue and organism endpoints. ⚠ **This cuts AGAINST
+R160's "pharmacological ≠ genetic" defence** (already downgraded in R161). What survives is **magnitude and
+duration, not a categorical difference.**
+
+⭐ Also from the paper: **ITA IC50 171 µM on mTET2CD**, α-KG-competitive, **no effect on histone KDMs**
+(superfamily selectivity, 2nd chemotype after TETi76); ITA **also lowers α-KG** via SDH inhibition.
+⛔ **ITA is NOT a better agent than auranofin:** pan-TET, ~2,250× weaker, SDH-entangled, and **TET1 was never
+tested** (Tet1 mRNA "extremely low" in their macrophages). **Its value is the measurement, not the molecule.**
+
+### ⛔ THE SECOND DOCUMENT IS NOT COUNTED
+`JCI170173` Supp Fig 9 looked like a second in vivo TET-inhibitor→tissue-5hmC experiment. **Its agent "B339"
+is Bobcat339.** ⛔ `ACS Med Chem Lett` PMC9109264: **HPLC-purified Bobcat339 shows NO inhibition of
+recombinant TET1 or TET2; activity of commercial lots correlates directly with Cu(II) content.**
+⭐ **Checked before crediting. Hole 8 is closed by the itaconate paper alone.**
+
+### ⛔⛔⛔ THE STRUCTURAL RESULT THAT BREAKS OUR OWN SELECTIVITY CLAIM
+From `4NM6` (TET2-CD + DNA + Fe(II) + 2-OG), every residue within 4.2 Å of the bound cosubstrate, mapped
+onto TET1 and TET3:
+
+| TET2 2-OG pocket | dist | TET1 | TET3 |
+|---|---|---|---|
+| R1261 | 2.58 Å | R1551 ✅ | R956 ✅ |
+| ⭐ **C1374** | **3.27 Å** | **C1664 ✅** | **C1069 ✅** |
+| H1382 / D1384 / H1416 | 3.29 / 3.60 / 2.86 Å | ✅ ✅ ✅ | ✅ ✅ ✅ |
+| H1881 / T1883 / R1896 / S1898 | 3.27 / 3.32 / 2.78 / 2.75 Å | ✅ ✅ ✅ ✅ | ✅ ✅ ✅ ✅ |
+
+> ⛔⛔⛔ **9/9 IN TET1. 9/9 IN TET3. The three structural Zn sites are likewise 9/9 and 9/9 (9 Zn-coordinating
+> cysteines). CD cysteine content indistinguishable (2.64 / 2.72 / 2.49%).**
+>
+> ⛔⛔⛔ **R151's KILL ARGUMENT, AIMED AT OUR OWN LEAD: an agent acting at this pocket CANNOT be ≥13×
+> selective, let alone 206%, because the pocket is identical in all three enzymes.** R154's **mechanism**
+> claim (2-OG/Fe(II)-competitive) and its **selectivity** claim (≥13× over TET2) **cannot both be true.**
+
+⭐⭐ **And the chemistry agrees, calibrated by the operator's own new paper:** the pocket is lined by
+**R1261/R1896/H1416** — an **ANION-recognition site**. **Itaconate, a dicarboxylate shaped for it, gets
+171 µM; `[Au(PEt₃)]⁺`, a CATION, is claimed at 76 nM — a 2,250× advantage in the wrong charge direction.**
+
+⭐⭐ **THE MECHANISM THAT FITS EVERYTHING: Au(I) coordinating the conserved active-site `Cys1374`** — explains
+the potency (Au–thiolate, not H-bonding), the 2-OG competition (same pocket), the Fe(II) sensitivity (3.3 Å),
+and the intact DNA binding — **and predicts a PAN-TET drug.**
+⭐ **Hole 15 is thereby EXPLAINED: the SPR numbers (TET1 1.804 / TET2 7.820 / TET3 6.280 µM = 3.5–4.3×) are
+the honest ones.**
+
+### ⛔⛔ CONSEQUENCES
+1. ⛔⛔ **HOLE 6 (TET2 → CHIP/AML) IS RE-OPENED** — it was patched on the ~206× functional number.
+2. ⛔⛔ **R154's 2-OG-COMPETITION BRAKE IS IN DOUBT.** R159 made it and R157's nuclear saturation the two
+   load-bearing brakes against a regime that **shortens bone by up to 10%**. ⭐ **Nuclear saturation now
+   carries the load alone.**
+3. ⚠ A covalent-type Au–thiolate adduct fits the **35-day half-life (hole 10) better** than reversible
+   competition — making hole 10 **worse**, not better.
+
+### ⭐⭐⭐ BUT THE HUMAN GENETICS RESCUES EFFICACY
+All 29 kosmicki supplementary tables searched for all three paralogs:
+
+| gene | rows across 29 tables | height |
+|---|---|---|
+| ⭐ **TET1** | ⭐ **38 rows (S4, S5, S6, S7)** | ⭐ **singleton pLoF +1.04 SD = +8.32 cm, SE 1.09, P=2.23e-14** |
+| **TET2** | ⛔ **0 — NOWHERE** | no significant association |
+| **TET3** | ⛔ **0 — NOWHERE** | no significant association |
+
+> ⭐⭐⭐ **ONLY TET1 CARRIES A HEIGHT SIGNAL IN 1.45M EXOMES. A pan-TET inhibitor's height effect is DOMINATED
+> BY THE TET1 ARM. THE SELECTIVITY COLLAPSE IS A SAFETY PROBLEM, NOT AN EFFICACY PROBLEM.**
+⚠ Precisely: absence from a significance-filtered table is *not significant*, not *measured zero* — but TET2
+pLoF carriers are common (the canonical CHIP gene), so an effect near +8.32 cm would have surfaced.
+
+### ⭐ THE ONLY CANDIDATE SELECTIVITY SURFACE, AND A SPECIES HOLE INSIDE IT
+**TET1-CD vs TET2-CD = 52.3% identity over 719 columns** (unlike NRK, there IS room to discriminate).
+16 Cys conserved; ⭐ **3 unique to TET1-CD vs BOTH paralogs: C1746 (TET2 M1456), C1870 (A1605), C1881 (N1616).**
+
+| C1746 geometry (via TET2 M1456 in 4NM6) | value |
+|---|---|
+| SASA | ⭐ **47.0 Å² — solvent-EXPOSED** (mean Met 36.3) |
+| to Fe(II) / 2-OG / DNA | ⛔ **23.7 / 22.8 / 18.7 Å — ALLOSTERIC, not cosubstrate-competitive** |
+
+⛔ C1870/C1881 fall in TET2 1464–1841, **absent from the crystal** (low-complexity insert) — accessibility
+unassessable. ⛔ **So if selectivity lives here, the drug is allosteric and claim A fails instead of claim B.
+There is no reading in which both published claims survive.**
+
+> ⛔⛔ **NEW SPECIES HOLE: mouse Tet1 lacks 2 of the 3 — C1746→R1725, C1870→G1792; only C1881→C1803 conserved.
+> Every mouse experiment tests a different molecular surface from the human one.**
+> ⭐ **Favourable corollary: human TET1 should be MORE gold-sensitive than mouse, so mouse-scaled doses
+> OVER-estimate the human requirement — the safe direction, given that overshoot shortens bone.**
+
+### ⚠ THREE SMALLER ITEMS
+- ⚠ **NEW OFF-TARGET — PARP-1.** `PMC12720219`: Au(I) drugs are **"zinc ejectors"** forming *"gold fingers"*.
+  **PARP-1 IC50: aurothiomalate 24.8 nM · aurothioglucose 206 nM · ⚠ auranofin 2,554 nM** (PARP-2, no Zn
+  fingers, µM). ⚠ **PARP1 is the middle node of R158's TRIM37–PARP1–TET1 axis** — above working exposure, so
+  a **ceiling flag**, but the drug touches two consecutive nodes of one axis. *"ca. 3,000 zinc-binding
+  proteins"* → hole 11.
+  ⭐ **Hypothesis only: TET1 (584–625) and TET3 (50–90) have CXXC zinc fingers at ~19% cysteine; TET2 has
+  NONE** — the one gold-discriminable family feature, **but outside the CD, so it cannot explain a
+  TET1-CD-rescued phenotype.**
+- ⚠ **NEW ALBUMIN CONFLICT.** `[¹⁹⁸Au]Auranofin` (EJNMMI Radiopharm Chem 2025, PMC12589756): ***"96.9 ± 2.5%
+  integrity over 72 h in human serum albumin."*** ⛔ Hard to square with R155's basis for withdrawing the
+  R154 dose table (Nguyen/Østergaard: 50% of unbound drug consumed in 2–3 min). ⚠ **The dose table is NOT
+  reinstated** — radiolabel integrity ≠ free-drug persistence — **but the conflict is on the record.**
+- ⛔ **HOLE 9 (growth-plate delivery) STILL OPEN.** Searched Europe PMC five ways (gold × cartilage ×
+  concentration; chrysotherapy tissue distribution; aurothiomalate × synovium; autoradiography ×
+  chondrocyte; auranofin × bone/cartilage, 1,070 hits). ⛔ **Fifty years of chrysotherapy and nobody measured
+  gold in cartilage.** ⭐ **The tool now exists — [¹⁹⁸Au]auranofin, 2025 — but that study is explicitly in
+  vitro only.**
 
 ---
 
