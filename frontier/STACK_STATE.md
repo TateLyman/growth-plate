@@ -1,12 +1,105 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R113
+**Last updated:** F-R114
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-GOF. **F-R114 — THE GAIN-OF-FUNCTION AUDIT. TWO MORE ARMS DIE. VOSORITIDE IS THE ARM.**
+
+**The test I had never applied systematically: for every candidate, find the experiment where the pathway
+was pushed the way we want, in an animal, with bone length measured.**
+
+### => 22 DRUGGABLE AXES SCORED IN THE POOL COMPARTMENT (GSE113982 RZ, P2/P3 -> P28)
+Only two move. **imprinted network -2.92 (RZ-specific -1.85); hypoxia/HIF -0.80 (RZ-specific -1.16).**
+GH/IGF, Notch, cilium, mTOR, FGF, AMPK, Hippo, PTHrP, thyroid, BMP, RA, Wnt, TGFb, CNP, autophagy,
+senescence, Hedgehog: **all <= |0.43|.**
+
+### => HYPOXIA/HIF LOOKED LIKE A NEW ARM AND DIED THE SAME DAY
+Clean HIF core (collagen hydroxylases P4HA1/2, PLOD2 removed - they are height genes for collagen reasons):
+**6/7 length systems positive** (mouse tibia-vs-phalanx PZ z=+2.82, rat PZ z=+3.70, rat HZ z=+3.40,
+Longshanks z=+2.28, Dnmt1 z=+2.07); **RESTING ZONE with age +0.81 z=+4.50 while PZ -0.11 and HZ +0.02
+(pool-specific)**; HUMAN pre- vs late-puberty +0.27 z=+1.81.
+**KILLED BY TWO THINGS:** (1) **no human genetic support - 68 height hits vs 89+/-168 matched null,
+p=0.41**; (2) `Pfander D ... Schipani E, Development 2004;131:2497` - **Vhl cKO in chondrocytes stabilises
+HIF1a (= what roxadustat/daprodustat do) and gives SEVERE DWARFISM** with reduced proliferation.
+**HIF-PHD inhibitors are wrongly signed. Closed.**
+
+### => THE AUDIT AND THE PATTERN
+| arm | pushed our way | length outcome | verdict |
+|---|---|---|---|
+| **Hedgehog PARTIAL/het** | PTCH1+/-; SAG bead | **taller** (+0.8 to +3.8 SD; 1/2/6 months) | **SURVIVES** |
+| Hedgehog full/sustained | Sufu-cKO; full Ptch1 loss | shorter (-3.7mm) | fails at full dose |
+| **oestrogen blockade** | aromatase/ERa deficiency | **taller, 204 cm, epiphyses open at 28** | **SURVIVES** |
+| **CNP/NPR2** | see below | **taller** | **SURVIVES** |
+| sulfation | PAPSS2/SLC26A2/CHSY1 loss | shorter | LOF only, no GOF |
+| DNA methylation | Dnmt1 dPrx1 | shorter | LOF only |
+| **chromatin de-repression** | Ezh1-/-;Ezh2 cKO | **shorter** (raised IGN z=+7.5) | **FAILS** |
+| **HIF/hypoxia** | Vhl cKO | **severe dwarfism** | **FAILS** |
+| GH/IGF-1 | somatropin, human GP | null (r=+0.029), pool-negative | fails |
+| injury | remote fracture GSE3298 | plate unchanged | doesn't reach the plate |
+| FGFR3i | erdafitinib | achondroplasia rescue | rescue only |
+> **Every candidate except three has an expression correlate the right way and a GOF experiment the wrong
+> way. The arms that survive are the ones with a HUMAN DOSE-RESPONSE IN BOTH DIRECTIONS.**
+
+### => AND THE SURVIVOR IS THE ONE I CALLED A "FLAG" IN F-R108
+**CNP / NPR2 / vosoritide:**
+| evidence | |
+|---|---|
+| human LOF | **acromesomelic dysplasia Maroteaux - severe short stature** |
+| **human GOF** | **epiphyseal chondrodysplasia MIURA type (OMIM 615923) - TALL STATURE, overgrowth** (V883M, R655C, A488P) |
+| **human CNP overexpression** | balanced t(2;7) overexpressing NPPC -> **overgrowth and bone anomalies** |
+| **mouse GOF in a NORMAL animal** | **SAP-CNP-Tg, ~2x wild-type plasma CNP -> SKELETAL OVERGROWTH**; Col2a1-CNP also overgrowth |
+| expression | **NPR2 RZ-enriched 5+/1- of 8** (F-R108); **NPR2 RISES +1.05 in the ageing RZ** (F-R111) |
+| GWAS | NPR2 + PRKG1 = **40 height associations** |
+| mechanism | cGMP/PKG inhibits the **MAPK arm of FGFR3**, raises matrix + hypertrophic size = **v**, the F-R108 surviving axis |
+| **obtainable** | **VOSORITIDE - approved, systemic daily SC, paediatric dosing** |
+**THIRD experiment in the file that EXCEEDS NORMAL, and the cleanest: wild-type animal, systemic,
+2x plasma, length endpoint. F-R094's rescue law broken properly for the first time.**
+**AND IT IS SYSTEMIC - F-R110's fork (accept local delivery, or deadline-only) has a third option.**
+
+### => IMMEDIATE STACK CORRECTION: ERDAFITINIB IS REDUNDANT WITH VOSORITIDE
+CNP acts by inhibiting the MAPK arm of FGF signalling; erdafitinib inhibits FGFR3 upstream. **Same node =>
+not additive. Erdafitinib OUT in favour of vosoritide** (human GOF genetics + approved paediatric label).
+
+### => TWO CORRECTIONS TO F-R112/F-R113
+**(a) The deadline arm's value is set by WHEN YOU START, not by how completely you block.** The 3-year
+randomised trial: **letrozole gave greater hormonal suppression than anastrozole and NO greater height**;
+PAH gain "minimal" after years 2-3. The +3.8cm vs +20cm gap is **zero lifetime oestrogen exposure**, i.e.
+Nilsson 2014's irreversible structural advancement confirmed from the other direction. **Front-loaded.**
+**(b) The imprinted network is mostly an AGE variable, not a length variable.** Age z=+9.27/+6.53 but
+long-vs-short-at-same-age z=+1.08/+1.00 (**null in PZ**); Longshanks +4.47, HZ +3.83/+3.11, Dnmt1 and
+Fgfr3 null. **Tracks age 4-9x more strongly than length.** With F-R113's Ezh2 result (network up, bone
+shorter), **downgraded from "the counter" to "the largest measured correlate of pool ageing, causal
+status unproven."** F-R111's measurement stands; its interpretation was too strong.
+
+### => THE STACK, FINAL FORM
+| arm | buys | obtainable |
+|---|---|---|
+| **1. VOSORITIDE (CNP/NPR2)** | rate and v; human GOF = tall; exceeds normal in a normal animal | **YES - approved, systemic** |
+| **2. AROMATASE INHIBITION** | the deadline, ~+3 SD alone; **start as early as possible** | **YES - approved** |
+| **3. Hedgehog at partial dose** | setpoint/pool; **orthogonal to 1 and 2 => additive** | **local only** |
+| OUT | erdafitinib (redundant with 1); somatropin, mecasermin, EZH2i, HDACi, BETi, HIF-PHD inhibitors, pirfenidone, calcium AKG | each fails its own GOF test |
+| **the counter** | **still nothing** | every proposed mechanism fails GOF |
+
+### => WHERE INFINITY STANDS
+**never-closing: SOLVED** (human-proven, approved, ~+3 SD, front-loaded).
+**non-senescing: NOT solved, and now I can say why rather than just that.** Division-based,
+cell-intrinsic, oestrogen-independent, Hedgehog-orthogonal, unreachable by remote injury - and **all four
+best-supported mechanisms have been pushed the right way in an animal and made bones SHORTER.**
+**Infinite is not reachable on current biology. The ceiling is capacity, and nothing yet moves it.**
+
+### => THE ONE ASK
+**Any experiment giving vosoritide/CNP/an NPR2 agonist to a NORMAL (non-dysplastic) growing animal with a
+final-length endpoint.** SAP-CNP-Tg is transgenic from birth; vosoritide is a drug for a few years. The
+gap between them is what the arm is worth. Not in 5,591 series or reachable literature.
+
+**LEDGER RULE ADDED: do not promote an arm until its gain-of-function experiment has been found and read.**
 
 ---
 
