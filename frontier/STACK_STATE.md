@@ -1,12 +1,96 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R134
+**Last updated:** F-R135
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-SPINFAM. **F-R135 — THE SPIN FAMILY CHARACTERISED. "NUKE THEM" IS NOT OBVIOUSLY WRONG — SPIN1 INHIBITION POINTS THE **SAME WAY** AS SPIN4. THE RISK IS **OVERSHOOT**, NOT OFF-TARGET.**
+
+**Operator: the cancer point is weak.** Agreed — 5/19 vs 0/17 at P=0.047, small n, **null in females**, and
+human SPIN4 expression **ELEVATED** in cancers rather than reduced. **A signal to watch, not a finding.
+I over-weighted it. DOWNGRADED to a watch item.**
+
+### => THE FAMILY, MEASURED IN HUMAN GROWTH PLATE (GSE9160, LCM zones; percentiles 60.8/196.9/539.8)
+| gene | Reserve | Prolif | PreHyp | Hyper | Perich | call |
+|---|---|---|---|---|---|---|
+| **SPIN1** | **1430.6** | 1129.0 | 1325.3 | 1173.9 | 1410.3 | **DOMINANT, uniform across ALL zones** |
+| **SPIN3** | 608.4 | 323.3 | 290.8 | 330.7 | 324.8 | expressed, RZ-enriched |
+| **SPIN2A** | 300.4 | 41.6 | 76.9 | 135.8 | 96.9 | expressed, **7x RZ-enriched** |
+| **SPIN4** | 90.9 | **267.8** | 193.2 | 153.6 | 195.3 | **PZ-enriched, LOWEST of the family** |
+| SPIN2B | — | — | — | — | — | **no probe on array** |
+1. **SPIN1 is 5-15x SPIN4 in the plate and uniform across every zone. Any pan-SPIN agent delivered locally
+   is functionally a SPIN1 agent there. R133's "local delivery makes it SPIN4-selective" is DEAD.**
+2. **SPIN4 is PZ-enriched and LOWEST in the RZ — which fits Lui 2023 exactly:** her primary finding was
+   **increased PZ proliferation rate** with no zone-height change; the RZ increase followed downstream from
+   decreased Wnt. **The gene acts where it is expressed.**
+
+### => WHAT EACH ONE DOES
+| gene | function | evidence |
+|---|---|---|
+| **SPIN1** | **transcriptional COACTIVATOR**; reads H3K4me3 + H3R8me2a; coactivates rRNA genes, MAZ targets, and ⭐ **Wnt/TCF4 TARGET GENES**; overexpression transforms NIH3T3; elevated in many cancers; **active oncology target** | **well characterised** |
+| **SPIN4** | histone reader; **PROMOTES canonical Wnt**; inhibits proliferation; **negatively regulates RZ progenitor number**; LOF -> human +4.5-5 SDS, mouse +5.06% length | **well characterised** |
+| **SPIN2A / 2B / 3** | 3 Tudor domains + IDRs; methylated-histone-binding adaptors; annotated for transcription, chromatin organisation, ⭐ **GAMETE GENERATION**; **all five bind SPIN·DOC**, which ATTENUATES SPIN1 coactivator activity | **largely uncharacterised** |
+⚠ GeneCards lists SPIN3 against X-linked deafness 4 and X-linked severe congenital neutropenia — **very
+likely POSITIONAL locus associations, flagged UNVERIFIED, not treated as SPIN3 LOF phenotypes.**
+
+### => ⭐⭐⭐ THE REFRAME: SPIN1 INHIBITION POINTS THE **SAME WAY** AS SPIN4 INHIBITION
+**SPIN1 coactivates Wnt/TCF4. SPIN4 promotes canonical Wnt. Inhibiting EITHER lowers chondrocyte Wnt —
+precisely the mechanism by which SPIN4 loss raises RZ progenitors and lengthens bone.**
+> **My R133/R134 objection was that VinSpinIn hits SPIN1 hardest and SPIN4 weakest. ON THE WNT AXIS THAT MAY
+> NOT BE A DEFECT AT ALL. SPIN1 is 5-15x more abundant AND is a direct Wnt/TCF4 coactivator — a pan-SPIN
+> agent would deliver a LARGER chondrocyte Wnt reduction than a SPIN4-selective one. The operator's instinct
+> is mechanistically defensible and my framing was wrong.**
+
+### => ⛔ BUT THE RISK IS **OVERSHOOT** — AND THIS FILE ALREADY HAS THAT EXPERIMENT
+**The Wnt-lowering dose-response in cartilage is NON-MONOTONIC and both ends are measured:**
+| intervention | degree of chondrocyte Wnt reduction | result |
+|---|---|---|
+| **Spin4 loss** | **PARTIAL, cell-intrinsic, one reader** | ⭐ **RZ progenitors ↑, tibia length ↑ to 18 mo, h_term untouched** |
+| **Col2a1-ICAT** | chondrocyte-wide beta-catenin blockade | ⛔ **SHORTENS BONE** |
+| PORCN inhibition | organism-wide ligand blockade | ⛔ reduces PZ; impairs trabecular + cortical bone mass |
+**Plus R134's class law:** heterozygous **PARTIAL** loss of NSD1/EZH2 **INCREASES** growth in humans;
+homozygous **COMPLETE** loss of Nsd1/Ezh1/Ezh2 **IMPAIRS** it in mice.
+> **PARTIAL LOSS GROWS. COMPLETE LOSS SHORTENS. Removing SPIN1's coactivator function at 1430 units,
+> uniformly across every zone, is far more likely to be the ICAT case than the Spin4 case. "Nuking them all"
+> risks landing on the WRONG SIDE of a non-monotonic curve, and the wrong side is SHORTER.**
+**THAT is the real objection — not off-target toxicity, not SPIN1 essentiality. Both of mine were weaker.**
+
+### => NAMED, SPECIFIABLE RISKS THAT REMAIN
+1. **OVERSHOOT into the ICAT regime -> bone SHORTENING.** The dominant risk.
+2. **GAMETE GENERATION** — shared annotation across SPIN2A/2B/3. Plausible reproductive effect, specifiable.
+3. **VinSpinIn's unattributed toxicity**, present in the INACTIVE control, unresolved "despite significant effort".
+4. On-target neoplasia — **downgraded to watch item.**
+
+### => SO CAN WE NUKE THEM? **MECHANISM SAYS MAYBE. DOSE-RESPONSE SAYS BE CAREFUL. THE MOLECULE SAYS NOT THIS ONE.**
+- ✅ **Direction right:** SPIN1 and SPIN4 inhibition both lower chondrocyte Wnt = the validated
+  growth-promoting direction
+- ⚠️ **Magnitude is the whole question:** non-monotonic curve, overshoot end measured and shortens bone
+- ⛔ **VinSpinIn still wrong tool** — **ΔTm 6.53 for SPIN4 (weakest of four)**, unattributed toxicity shared
+  with its inactive control, **no PK, no in vivo administration on record**
+> **What the analysis argues for is a LOW-DOSE, DELIBERATELY SUB-SATURATING pan-SPIN engagement — the
+> OPPOSITE of nuking. The therapeutic object is a PARTIAL Wnt-output reduction, and the family is a
+> legitimate route to it. Floor and ceiling both matter and NOBODY HAS MAPPED EITHER IN CARTILAGE.**
+
+### => ⭐ THE EXPERIMENT THAT WOULD SETTLE IT, AND IT IS SMALL
+**Dose-ranging VinSpinIn (or A366) in fetal tibial explant / E16.5 femur culture — the systems this file
+already uses (hakata2024, shuhaibar2021) — with BONE LENGTH as the endpoint.** A non-monotonic curve would
+show directly, the readout is length not a marker, and it costs one experiment.
+**NO SPIN COMPOUND HAS EVER BEEN GIVEN TO A GROWING BONE IN ANY SYSTEM.**
+
+### CORRECTIONS
+- **Neoplasia objection DOWNGRADED to a watch item** — operator was right that I over-weighted it.
+- **R133/R134 selectivity objection REVERSED IN DIRECTION** — SPIN1-dominance is not obviously a defect.
+- **Real risk NAMED: OVERSHOOT into the Col2a1-ICAT regime** on a non-monotonic dose-response.
+- **Family expression in human growth plate measured for the first time** — SPIN1 dominant/uniform, SPIN4
+  lowest/PZ-enriched, SPIN2A+SPIN3 RZ-enriched, SPIN2B absent from array.
+- **"Nuke them" RE-SPECIFIED as "partially engage them"**; decisive experiment is a dose-ranging explant
+  with a length endpoint.
 
 ---
 
