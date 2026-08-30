@@ -1,12 +1,123 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R164
+**Last updated:** F-R165
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HUMANNUMBER. **F-R165 — ⭐⭐⭐ **THE HUMAN CARTILAGE NUMBER EXISTS: `0.64 mg/100 g` — THE HIGHEST TISSUE ASSAYED, 64× PLASMA, 32× SYNOVIUM**, AFTER SYSTEMIC Au(I)-THIOLATE. ⭐⭐⭐ AND **CHILDREN WITH OPEN EPIPHYSES** GIVEN INTRA-ARTICULAR RADIOGOLD, FOLLOWED **3–9 YEARS**: *"ACCELERATION OR RETARDATION OF EPIPHYSEAL FUSION OR DYSPLASTIC SKELETAL GROWTH WAS NOT NOTED IN ANY CASE."* ⭐⭐ THE ORYSCHAK FULL TEXT **REVERSES R164's ZONE I HARM SIGNAL — SYSTEMIC DOSING SPARES ZONE I.** ⛔ AND `TONNA 1963` IS A **DIRECT NEGATIVE IN THE EPIPHYSEAL PLATE.****
+
+**Document:** `R165_the_human_number_exists_cartilage_is_the_highest_gold_tissue_measured_and_childrens_growth_plates_were_followed.md`
+**Operator-supplied (`gold_growth_papers.zip`):** `annrheumd00199-0037.pdf` (Lawrence 1961), `17453677908989797.pdf` (Ahlberg & Pettersson 1979), `oryschak1976.pdf`, `oryschak1975.pdf`, `tonna1963.pdf`, `Giannini_1991_Auranofin_JRA_pages_1240-1242.pdf` (scan — read by page rendering)
+
+### ⛔⛔ THE NEGATIVE, FIRST — IT IS IN OUR EXACT TISSUE
+> `Tonna, Brecher, Cronkite & Schwartz, Arthritis Rheum 1963;6(1):1-10` — ¹⁹⁸Au autoradiography in **mouse
+> long bones**: ⛔ *"Radioactivity was not seen over cartilage."* ⛔ *"Cartilage cells of both the articulating
+> surfaces and **epiphyseal plate** are NON-LABELED."* ⛔ *"Gold was not observed in cartilage."*
+
+⭐ Gold labelled everything else in the growing skeleton — periosteal osteogenic layer, cortical bands,
+metaphyseal marrow/trabeculae, secondary ossification centres, synovium, fat-pad histiocytes.
+
+⭐⭐ **Reconciled, not dismissed — the designs differ on every axis:**
+
+| | ⛔ Tonna (negative) | ⭐ Oryschak (positive) |
+|---|---|---|
+| dosing | ⛔ **SINGLE i.p. injection** | ⭐ **20 weekly injections, 0.8 mg/kg** |
+| washout | ⛔ **1–2 MONTHS** | ⭐ **2 weeks** |
+| detection | LM autoradiography, 5 µm | ⭐ **EM + electron-probe X-ray** |
+
+⭐⭐ **Oryschak's own clause is the reconciliation: *"only a FEW chondrocytes in Zones II and III contained
+aurosomes."* Sparse focal intracellular deposits are exactly what LM autoradiography cannot see.**
+⛔ **Residue stands: nobody has ever seen gold in a GROWTH-PLATE chondrocyte.**
+
+### ⭐⭐⭐ THE HUMAN NUMBER
+> `Lawrence JS, Ann Rheum Dis 1961;20:341` — 10 patients, **IM sodium aurothiomalate labelled with ¹⁹⁸Au**;
+> biopsies at operation, **dissolved in aqua regia**, wet-counter assay.
+
+| tissue | gold, mg/100 g |
+|---|---|
+| Skin | 0.05 |
+| Subcutaneous fat | 0.12 |
+| ⛔ Synovial membrane | 0.02 |
+| ⭐⭐⭐ **ARTICULAR CARTILAGE** | ⭐⭐⭐ **0.64** |
+| Fibrin clot | 0.67 |
+| **plasma** | **0.01 mg/100 mL** |
+
+> ⭐⭐⭐ **CARTILAGE IS THE HIGHEST TISSUE ASSAYED — 64× PLASMA, 32× SYNOVIUM, 13× SKIN — HUMAN, SYSTEMIC
+> ROUTE, AURANOFIN'S OWN CHEMOTYPE.** *"There was thus a very high concentration in both the fibrin clot and
+> the articular cartilage."*
+
+⭐⭐⭐ **AND R156's PROTEOGLYCAN OBJECTION IS PLAUSIBLY INVERTED.** Lawrence: *"copper and beryllium were
+bound to a greater extent… attributed to the greater binding by **CHONDROITIN SULPHATE** of multinuclear
+ions. **It is possible that a similar affinity exists for gold.**"* ⭐ **The sulphated matrix is a SINK, not
+a barrier.** ⚠ **His hypothesis, not a measurement.**
+
+⛔ **LIMITS, WHICH HE STATES TOO: n = 1; sample 0.03 g (*"must be accepted with caution"*); diseased joint;
+TOTAL not free gold; and the synovium value (0.02, below skin) is anomalous and undercuts the same table.**
+
+### ⭐⭐ DOSE ARITHMETIC, BOTH WAYS
+⛔ **Against us:** Oryschak 0.8 mg/kg/wk IM aurothiomalate (**50% Au**) ≈ **0.40 mg Au/kg/wk absorbed**.
+Auranofin 0.15–0.20 mg/kg/day (**29.0% Au**, MW 678.5) × **~25% oral absorption** ≈ **0.076–0.102 mg
+Au/kg/wk** — ⛔ **4–5× BELOW the rabbit regimen.**
+⭐⭐⭐ **For us:** Lawrence's patient had **plasma 0.01 mg/100 mL** with cartilage at 0.64. Our conservative
+figure (R154 Cmax **0.0312 mg/100 mL**) is **~3× higher** → at the same 64× partition, cartilage ≈ **2.0
+mg/100 g = 20 µg/g ≈ 100 µM total gold**. ⭐⭐ **~1,300× the 76 nM TET1 IC50; still ~13× at a 1% free
+fraction — a band that BRACKETS R157's independently measured nuclear gold of 4.6–12.5 µM.**
+⚠ Single-dose Cmax used (conservative vs steady state); partition assumed transferable; **total gold**.
+
+### ⭐⭐⭐ CHILDREN WITH OPEN GROWTH PLATES, GOLD, AND YEARS OF RADIOGRAPHS
+> `Ahlberg Å & Pettersson H, Acta Orthop Scand 1979;50:513-517` — intra-articular **¹⁹⁸Au** synoviorthesis.
+> ⭐ **17 children (16 joints), aged 2–15**, *"**by definition** those in whom **epiphyseal fusion had not
+> occurred**"*; 13 adults for comparison. ⭐ **Radiographs 1–15 y before and 3–9 y (mean 5.6) after**,
+> examined for *"**the time and mode of epiphyseal fusion, and skeletal growth**."*
+>
+> ⭐⭐⭐ ***"Acceleration or retardation of epiphyseal fusion or dysplastic skeletal growth was NOT NOTED IN
+> ANY CASE."***
+
+⭐⭐ **A fortiori: an ABLATIVE β-emitting gold colloid put directly into a child's joint left the growth
+plate undisturbed through fusion, over up to nine years.**
+⚠ Au(0) colloid not Au(I)-thiolate; intra-articular so systemic exposure low; n=17; endpoint is radiographic
+fusion timing/dysplasia — **coarse, would not detect a few-percent height change.**
+
+### ⭐⭐ R164's ZONE I HARM SIGNAL IS WITHDRAWN FOR SYSTEMIC DOSING
+> `Oryschak & Ghadially 1976` full text: ⭐⭐ *"intra-articularly injected gold salt produced aurosomes in
+> **Zones I and II** chondrocytes, while **INTRAMUSCULARLY** administered gold salt produces aurosomes in
+> **Zones II and III** chondrocytes but **CHONDROCYTES OF ZONE I ARE SPARED**."*
+
+| route | zones loaded | Zone I |
+|---|---|---|
+| ⛔ intra-articular | I, II | ⛔ **depleted** (Ghadially 1978) |
+| ⭐⭐ **intramuscular — OUR route** | ⭐ **II, III (deep)** | ⭐⭐ **SPARED** |
+
+⭐⭐⭐ **The harm signal is ROUTE-SPECIFIC and our route spares the damaged zone.** ⭐⭐ **And the deep-zone
+gradient is mechanistically right: it implies delivery FROM THE VASCULAR/SUBCHONDRAL SIDE — precisely
+R156's own mitigation that the RESTING ZONE abuts the epiphyseal vasculature.**
+⭐ **Design, now exact:** mature **12–18 mth** vs immature **3–4 mth**; **20 IM injections, weekly,
+0.8 mg/kg**, explicitly *"simulates the regime commonly employed for human patients"*; killed 2 weeks after.
+
+### ⛔ THE FIVE-YEAR EXTENSION IS IN HAND — SETTLED, NOT "NOT IN THE ABSTRACT"
+> `Giannini et al., J Rheumatol 1991;18:1240-2` (scan, read by page rendering). ⛔ **No growth or height
+> measurement anywhere in the paper.**
+
+| | |
+|---|---|
+| population | **88 children (68 F, 20 M)**, 0.15 → 0.2 mg/kg/day, 1 mg tablets, max 9 mg/day |
+| ⭐⭐ duration (Table 1) | parent decision **784 ± 350 d** · insufficient effect **751 ± 427** · adverse **803 ± 480** · administrative **991 ± 395**; **range to 1,780 d**; ⭐ **11 completed 5 years** |
+| dose at final visit | **≥0.2 mg/kg/day in 26 of 88** |
+| monitoring | monthly CBC + urinalysis; **quarterly** rheumatologic evaluation, standardised PRCSG protocols |
+| ⭐⭐ complete AE list (18 discontinuations) | hematuria (3); anemia, proteinuria, abdominal pain, diarrhea (2 ea); orthostatic hypotension w/ syncope, oral lesions, gastric ulcer, tachycardia, vesicular rash, foot vasculitis, coagulopathy (1 ea) |
+
+⭐⭐ **NO growth item anywhere in that enumeration**, and *"no patient experienced clinically significant
+residua… all adverse effects ultimately resolved."* ⚠ **Evidence of no GROSS harm — not a measurement.**
+⚠ **NEW CONFOUND: concomitant prednisone was permitted (≤10 mg/day or 5 mg/m²/day) — steroids stunt growth,
+so even recovered height data would be confounded toward harm.**
+⭐ New denominator from its reference list: `Blodgett & Pietrusko 1986` — **134/413 (32%) adult RA patients
+took auranofin >5 years.**
 
 ---
 
