@@ -1,12 +1,96 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R121
+**Last updated:** F-R122
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-SPINE. **F-R122 — "HOLD IT OPEN WITH TIME" = NO. "ATTACK THE SPINE" = YES, FIVE UNUSED LEVERS.**
+
+### => "HOLD IT OPEN WITH TIME" IS ANSWERED **NO**
+**The counter counts DIVISIONS, not time.** lui2010 (tryptophan delayed the programme at MATCHED body
+size), gafni2001 (dex delayed senescence AND fusion, then catch-up), forcinito2011. arm3's own line:
+*"Every intervention that slows the program does so BY SLOWING GROWTH... the divisions are spent more
+slowly, not spared."* **Holding it open spreads a fixed budget. It does not enlarge it.** Suppress-then-
+release even costs 1.2-1.9 mm.
+**BUT ANASTROZOLE IS NOT A CLOCK-STOPPER AND THAT IS THE USEFUL PART.** weise2001: SEVEN parameters decline
+spontaneously (growth rate, proliferation rate, plate height, proliferative cell number, hypertrophic cell
+number, **terminal hypertrophic cell size**, column density); **oestrogen ACCELERATES ALL SEVEN AND
+INITIATES NONE.** So AI **preserves A and h_term — yield per division — not just time.** That is why
+herrmann2002 got **+27 cm at 2.70 cm/yr from age 14.** Duration x PRESERVED YIELD.
+
+### => ⭐⭐⭐ THE SPINE IS THE ACCOUNT STILL OPEN — AND NOTHING HERE HAS EVER TARGETED IT
+**LEVER 1 — the pharmacology transfers, MEASURED.** Vosoritide gives a significant increase in annualised
+**SITTING-HEIGHT velocity of +0.89 +/- 1.05 cm/yr**, plus a dedicated phase-2 spine-morphology study.
+**CNP axis is spine-competent => stack arms 3-5 already work on this compartment.**
+⚠ **SD > MEAN, and it is measured in ACHONDROPLASIA — a RESCUE.** Applying it to a normal spine is the
+rescue-law violation (F-R094) this file polices everywhere else. Upper-bound flavour, not a constant.
+
+**LEVER 2 — ⭐ HUETER-VOLKMANN RUN IN THE DIRECTION NOBODY RUNS IT.** Compression retards, **distraction
+STIMULATES**. Not theoretical in the spine — it is the operating principle of anterior vertebral body
+tethering and growing rods, used in children weekly. **And it stimulates rather than preserves:** children
+with distraction devices showed *"extra gain in vertebral height growth compared to historical controls...
+growth in WIDTH was diminished."*
+> **VBT applies COMPRESSION to STOP growth on one side of a scoliotic spine. The reverse — SYMMETRIC
+> distraction of vertebral endplates to ADD height in a STRAIGHT spine — is routine hardware pointed in a
+> direction nobody has ever pointed it.** Magnitude in a normal spine: NEVER MEASURED.
+
+**LEVER 3 — adult axial unloading. WEAK AND CONFOUNDED.** 200 adults 20-50, hooks+rods 2 levels above and
+below, >=1 yr: first distal vertebra anterior **30.11 -> 30.48 mm (P=0.037)**; combined **28.51 -> 28.83
+(P=0.021)**; posterior unchanged. ⛔ **FRACTURE cohort with instrumentation — may be fracture healing.**
+Authors: *"could not be concluded that axial unloading promoted endochondral ossification"*;
+mechanosensitivity *"begins to decline soon after the stimulus is initiated."* Upper bound +0.37 mm x 17
+units = **+0.63 cm. Do not bank it.**
+
+**LEVER 4 — the disc, fusion-independent.** +1.6+/-0.5 cm after 4 h flotation; only -0.4+/-0.3 reversed by
+15 min upright -> **~1.2 cm persisting**; stiffness reduced across the whole column and **staying below
+baseline after reloading.** Works at ANY age, after every plate has closed.
+
+**LEVER 5 — the base stack ALREADY acts here and has NEVER been measured here.** Oestrogen closes the ring
+apophysis as it closes the knee. **Anastrozole should be extending the spinal account right now and nobody
+has measured sitting height to find out.**
+
+### => THE SPINE ACCOUNT, COSTED
+| term | cm | basis |
+|---|---|---|
+| natural remaining at BA16 (mostly spinal) | +2.19 | BP — **TOTAL stature, do not double-count** |
+| CNP arm on spine, 5 yr @ 0.89 | +4.45 | measured but RESCUE-derived, SD > mean |
+| AI extending ring-apophysis closure ~3 yr | +2.70 | **ASSUMPTION, not a measurement** |
+| disc / decompression | +1.20 | flotation, persisting fraction |
+| leg-side N-raising IF it converts | +3.00 | speculative, no length endpoint exists |
+| **TOTAL** | **+13.54** | **-> 193.8 cm = 6'4.3"** |
+**Against +15.3 needed. Shortfall 1.8 cm.**
+⚠ **HEALTH WARNING:** ceiling built from one rescue-derived velocity, one closure-timing assumption, one
+speculative N term, one acute mechanical effect. **DEEPEST CAVEAT: THE SPINE HAS THE SAME N PROBLEM.** Its
+budget is set by its own resting zones and its own proliferative exhaustion. **Extending ring-apophysis
+closure does not create spinal N. If the vertebral plates exhaust on schedule, most of the CNP and AI terms
+evaporate.**
+**What is new is NOT the total — it is that an entire compartment with a 5-6 year open account sat
+unexamined while every arm of this programme was aimed at a joint with no budget left.**
+
+### => WHAT WOULD DECIDE IT — THE FIRST IS FREE
+1. ⭐ **Measure SITTING HEIGHT and SUBISCHIAL LEG LENGTH separately + stage the ring apophysis on a spine
+   film.** Hand bone age reports the FINISHED compartment, not the one with budget. **A tape measure and one
+   radiograph, and it re-aims the entire programme.**
+2. **Serial sitting height on anastrozole** — if the AI is already extending the spinal account it is
+   visible NOW, free, retrospectively.
+3. **Does a vertebral growth plate have the same resting-zone structure and N trajectory as a long-bone
+   physis?** Unknown here — the whole programme's zone biology is femoral/tibial. **GEO-searchable, never searched.**
+4. **Symmetric vertebral distraction for height in a straight spine.** Hardware exists, principle
+   established, direction never tried.
+
+### CORRECTIONS
+- **"Hold it open with time" = NO** on division-counting evidence; **anastrozole re-specified as preserving
+  YIELD PER DIVISION**, a stronger claim than time-buying.
+- **R121 ceiling revised UP 190.4 -> 193.8 cm** once the spine is costed — **and the revision rests on
+  weaker evidence than the number it replaces.** Stated, not hidden.
+- **Vosoritide sitting-height number flagged RESCUE-DERIVED** — not a normal-spine constant.
+- **The spine's own N budget is now the open question, and it is the same question as the knee's.**
 
 ---
 
