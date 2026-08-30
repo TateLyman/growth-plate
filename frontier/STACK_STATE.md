@@ -1,12 +1,115 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R149
+**Last updated:** F-R150
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-POCKET. **F-R150 — ⭐⭐ THE NRK ANSWER COMES FROM **TNIK's CO-CRYSTALS**, NO EXPERIMENT NEEDED. **NRK PRESERVES EVERY POSITION WHERE THE LIGAND IS TIGHT AND DIFFERS ONLY WHERE THERE IS ROOM.** ⛔ TWO SELF-CORRECTIONS: R146's BASE RATE WAS NEVER TRANSFERABLE, AND R147's SEVEN DIFFERENCES MOSTLY AREN'T WHERE THE LIGAND IS.
+
+### => THE PATENT, VERIFIED FROM THE FIGURE IMAGE (OCR had misread CC-1804 as 5.32)
+**FIG. 1F sheet 14 — NRK: hit 2 · CC-1804 1.51 · CC-1817 2.85 · CC-1294 1.09.** ⚠ The row above NRK is
+**NIM1K**, a different kinase, **not MINK1**.
+⛔ **MAP4K4, TNIK and MINK1 are ALL ABSENT from the 595-entity panel** (FIG. 1E jumps MAP4K3 → MAP4K5),
+so the direct clade comparison cannot be made inside this patent.
+
+| kinase | 1804 | 1817 | 1294 | **sum** | rank |
+|---|---|---|---|---|---|
+| MAP4K2 | 7.03 | 10.89 | 1.97 | **19.89** | 1 |
+| MAP4K3 | 6.84 | 3.45 | 1.58 | **11.87** | 2 |
+| MAP4K1 | 3.94 | 2.07 | 2.58 | **8.59** | 3 |
+| MAP4K5 | 2.82 | 1.74 | 1.18 | **5.74** | 4 |
+| ⛔ **NRK** | 1.51 | 2.85 | 1.09 | ⛔ **5.45** | ⛔ **5/5 LAST** |
+
+⛔ **First hard number pushing NRK DOWN.** ⚠ Confounded by fusion geometry/expression — suggestive, not quantitative.
+
+### => ⭐⭐⭐ THE MOVE: NRK HAS **0** PDB STRUCTURES (Tdark), **TNIK HAS 12 — FOUR WITH ATP-SITE INHIBITORS**
+⭐ **5D7A = NCB-0846** (already in the panel) · 6RA7 compound 9 (1.2 Å) · 5AX9 · ⭐ **8ZML = 2025
+*"bis-imidazolecarboxamide, potent and SELECTIVE TNIK inhibitor for IPF"***.
+Contacts = residues within 4.5 Å of ligand heavy atoms, kept if seen in ≥2 of 4 complexes → **23 core
+positions**. **Numbering validated 29/29 against UniProt Q9UKE5.**
+```
+V31 G32 N33 G34 V39 A52 K54 E69 A83 M105 E106 F107 C108 G109 A110 G111 S112 D115 Q157 N158 L160 V170 D171
+```
+
+### => ⛔⛔ CORRECTION 1 — **R146's 68–94% BASE RATE IS WITHDRAWN AS SUPPORT FOR NRK**
+| TNIK vs | contact identity | R146 carry-over |
+|---|---|---|
+| **MAP4K4** | ⭐ **23/23 = 100%** | 89% |
+| **MINK1** | ⭐ **23/23 = 100%** | 87% |
+| **MAP4K1** | **17/23 = 74%** | ⭐ **94%** |
+| **NRK** | **17/23 = 74%** | **?** |
+
+> ⛔ **MAP4K4 and MINK1 carry over because their ligand-contact surface is 100% IDENTICAL — there is
+> nothing there to discriminate. R145/R147 used that as a general clade property. It never was.**
+
+### => ⭐⭐ CORRECTION 2, THE OTHER WAY — **MAP4K1 IS AT EXACTLY NRK's SCORE AND CARRIES OVER AT 94%**
+17/23 with four non-conservative substitutions, the **highest** measured carry-over. **A raw count of
+contact differences cannot condemn NRK.**
+
+### => ⭐⭐⭐ ONLY **TWO** SUBSTITUTIONS ARE NRK-SPECIFIC — AND ONE IS FREE
+| pos | TNIK→NRK | MAP4K1/2/3/5 | contact type | verdict |
+|---|---|---|---|---|
+| V31 | V→I | 1:L 2:V 3:I 5:V | side chain 3.37 Å | shared; BLOSUM +3 |
+| **N33** | N→L | 1:G 2:A 3:S 5:S | ⭐ **backbone-only, side chain 6.09 Å** | ⭐ **INVISIBLE to ligand. Free.** |
+| **V39** | V→I | all keep V | side chain 3.21 Å | ⚠ **NRK-specific**, BLOSUM +3 |
+| A83 | A→V | **all four also V** | side chain 4.35 Å | shared with MAP4K1 (94%) |
+| ⚠ **F107** | F→**L** | 1:F 2:F 3:F **5:Y** | **side chain 3.43 Å** | ⚠⚠ **THE ONE REAL RISK** |
+| **G109** | G→A | all keep G | ⭐ backbone-only | ⭐⭐ **Cβ clearance 5.25 Å — FREE** |
+
+### => ⭐⭐⭐ THE HINGE IS INTACT AND THE GLYCINES ARE WHERE THEY MUST BE
+Identical: G32 G34 A52 K54 E69 **M105 (gatekeeper)** **E106** **C108** A110 **G111** S112 D115 Q157 N158 L160 V170 D171.
+Virtual-Cβ clash test at every contacting glycine:
+
+| Gly | Gly→Ala clearance | fits? | **NRK has** |
+|---|---|---|---|
+| **G34** | **2.36 Å** | ⛔ clash | ⭐ **GLYCINE** |
+| **G111** | **2.93 Å** | ⛔ clash | ⭐ **GLYCINE** |
+| G32 | 3.70 Å | fits | glycine |
+| **G109** | ⭐ **5.25 Å** | ✅ fits | **ALANINE — and there is room** |
+
+> ### ⭐⭐⭐ **NRK KEEPS GLYCINE AT BOTH POSITIONS WHERE A METHYL WOULD CLASH AND TAKES ALANINE ONLY WHERE THERE IS 5.25 Å OF SPACE. IT CONSERVES WHERE THE LIGAND IS TIGHT.**
+
+⚠ **The one genuine risk, which my own script's "shared" test was too loose to catch: F107L.**
+MAP4K1/2/3 keep F; MAP4K5 keeps the aromatic as **Y**; **only NRK loses it (L)**, at a 3.43 Å side-chain
+contact. ⚠ MAP4K5, the other 107-substituted kinase, is also the **weakest** tracer binder of the MAP4Ks.
+
+### => ⭐ PER-COMPOUND RANKING — REPRODUCES R147's PREDICTION FROM AN INDEPENDENT DIRECTION
+| PDB | ligand | contacts | **NRK diffs touched** |
+|---|---|---|---|
+| ⭐ **6RA7** | compound 9 | 17 | ⭐ **4 — fewest** (misses N33 and G109) |
+| **5D7A** | **NCB-0846** | 19 | 5 |
+| 5AX9 | TNIK inhibitor | 21 | 5 |
+| ⛔ **8ZML** | ⛔ **"selective TNIK inhibitor for IPF"** | 25 | ⛔ **8 — most** |
+
+> ⭐⭐ **The compound optimised as a SELECTIVE TNIK inhibitor FOR IPF touches twice as many NRK-divergent
+> positions as the smallest ligand. Rentosertib is the same optimisation target in the same indication,
+> and R147 predicted it worst for NRK before any structure was opened.**
+
+### => WHERE `f` STANDS
+| | | |
+|---|---|---|
+| small molecule occupies NRK's pocket at all | ⭐ yes (R149, live cells) | settled |
+| contact surface TNIK-like | ⭐ **more than R147 implied** | ⭐ up |
+| R146 base rate usable | ⛔ **withdrawn** | ⛔ down |
+| precedent for this divergence | ⭐ **MAP4K1, same 17/23, 94%** | ⭐ up |
+| strong binder of a broad chemotype | ⛔ **last of five** | ⛔ down |
+| ⭐ **P(binds NRK)** | **~70%**, now structural not base-rate | better founded |
+| ⛔⛔ **P(f ≥ 0.7 = both arms)** | ⛔ **~15%** | barely moved |
+
+> ⛔ **THE LIMIT: contact analysis says "likely binds," never "binds within 1.4-fold" — and R148 proved
+> 1.4-fold is what the both-arms claim needs, because the exposure axis cancels. F107L is exactly the
+> class of change that costs 3–30×, and 3× kills the NRK arm while leaving the Wnt arm untouched.**
+
+### => ⭐⭐ ACTIONABLE WITHOUT ANY ASSAY
+**The Wnt arm stands entirely on its own** — R148's 30 mg QD is anchored on FVC and ALT data from 71
+people and **does not depend on NRK at all.** ⭐ **NRK is ~15% upside, not a reason to dose and not a
+reason to hold.**
 
 ---
 
