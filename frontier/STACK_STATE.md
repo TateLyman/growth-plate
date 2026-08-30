@@ -1,12 +1,137 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R143
+**Last updated:** F-R144
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-NRK. **F-R144 — **SPIN4 IS AT BACKGROUND IN THE HUMAN GROWTH PLATE** (1/10 arrays). R143's SECOND LEG WITHDRAWN. **THE REPLACEMENT GENE IS `NRK`** — same functional class, better human evidence, a **KINASE** instead of a reader, and **no drug at all**.
+
+EPAR = dead end (veterinary document, no human data; fetched PDF was a 1-page stub). **R142 stands:
+there is no human selamectin data.** Code: `analysis/redundancy/detect2.py`.
+
+### => ⛔⛔ THE CORRECTION: I HAVE BEEN QUOTING NOISE SINCE R135
+Atlas R292 recorded *"**SPIN4** = **0/10 arrays**"* in GSE9160. **I never checked it and built three
+rounds on the numbers.** Verified independently: background = 60th pct of 54,675 probes = **210-385**,
+and the controls behave — **COL2A1 10/10** (44,607-104,438), **ACAN 10/10**, **COL10A1 72,039 HZ ->
+426 PZ**, **IHH 20,856 HZ -> 141 PZ**.
+| gene | probe | values across 10 arrays | detected |
+|---|---|---|---|
+| ⛔ **SPIN4** | 228654_at (only probe) | 166 178 353 36 186 141 209 183 146 205 | ⛔ **1 / 10** |
+> ### **SPIN4 SITS AT BACKGROUND ON THE ONLY ZONE-RESOLVED HUMAN GROWTH-PLATE TRANSCRIPTOME.**
+| claim | status |
+|---|---|
+| ⛔ **R143 TERM B2** (SPIN4 anti-correlates with Wnt across zones, r=-0.28) | ⛔ **WITHDRAWN — noise vs noise. And the Wnt panel is at background too: SP5 0/10, LGR5 1/10, AXIN2 on 1 of 4 probes** |
+| ⛔ **R138** "mouse Spin4 RZ-highest vs human PZ-enriched = open species conflict" | ⛔ **THERE WAS NO CONFLICT** — a below-background probe read as a pattern |
+| ⛔ **R135 SPIN-family zonal table** | ⛔ SPIN4/SPIN2A/SPIN3 at background. ✅ **SPIN1 survives** (222431_at, 10/10, 1,595-3,910) |
+| ✅ **R143 TERM B1** (drug signatures, SPIN4 52.1% vs AXIN2 69.5%, n=466) | ✅ **UNTOUCHED — independent data source. B1 ALONE CARRIES THE LOOP-GAIN CONCLUSION, WHICH STANDS: g=0.016-0.042, amplification 1.02x** |
+| ✅ **R138 Wnt-ANTAGONIST half** | ✅ **STANDS** — SFRP5 6,043 · FRZB 5,048 · DKK3 5,504 · SFRP1 1,533, all far above threshold. ⚠ The Wnt-*output* half now rests on AXIN2 alone |
+⚠ **NOT a refutation of SPIN4** — the same platform reads **NPPC** (vosoritide's own ligand) below
+background while detecting NPR2/NPR3. **The human SPIN4 phenotype (+4.5-5 SDS, 3 relatives) is
+unaffected. What is gone is my claim to have MEASURED SPIN4 in human cartilage.**
+
+### => ⭐⭐⭐ THE STRUCTURAL POINT THIS ARM NEVER USED: **`kosmicki2026`'s ENDPOINT IS *ADULT* HEIGHT**
+826,066 discovery exomes + 624,567 replication. **Singleton pLoF in 17 genes moves adult height a mean
+8.92 cm/allele — ~52x the average common variant. Our whole stack is 1-3 cm.**
+> ### **R138 spent a round establishing that SPIN4 is the ONLY bone-age-neutral member of the epigenetic overgrowth class — every WRITER advances BA and lands at NORMAL adult height. `kosmicki2026` measures FINAL height, so EVERY POSITIVE-BETA GENE IN THAT TABLE IS BONE-AGE-SURVIVABLE BY CONSTRUCTION. A pre-filtered list of 17 levers with exactly the decisive property, and this arm went to the syndrome literature instead.**
+| gene | b cm/allele | carriers | class | baggage |
+|---|---|---|---|---|
+| FBN1 | +11.14 | 40 | ECM/TGF-b | ⛔ Marfan (aorta) |
+| **CHD8** | **+10.22** | 21 | ⭐ **chromatin, Wnt** | ⛔ **ASD + ID + macrocephaly** |
+| LCORL | +9.99 | 71 | TF | ⛔ downgraded R285 |
+| ⭐ **TET1** | ⭐ **+8.32** | 42 | ⭐ **ENZYME** | ⭐ **none** |
+| ZFAT | +7.86 | 41 | TF | ⚠ nothing skeletal in any species |
+| ⭐⭐ **NRK** | **+3.79** | **56** | ⭐⭐ **KINASE** | ⭐ **none** |
+**CHD8 is the closest mechanistic match to SPIN4 in the table — chromatin + Wnt, +10.22 cm — and it is
+UNUSABLE. Autism, ID and macrocephaly are the syndrome, not a side effect.**
+
+### => ⭐⭐⭐ THE ANSWER: **NRK**, AND THE PARALLEL IS ALMOST POINT-FOR-POINT
+| | **SPIN4** | ⭐ **NRK** |
+|---|---|---|
+| chromosome | **X-linked** | ⭐ **X-linked** (hemizygous male = one allele) |
+| KO mice | **viable**, larger | ⭐ **viable** (phenotype: delayed delivery, placental signalling) |
+| function | *"inhibits cell proliferation"* | ⭐ *"**prevents placental HYPERPLASIA**"* |
+| loss produces | **hyperplasia not hypertrophy** | ⭐ **hyperplasia** |
+| human LOF | +4.5-5 SDS, **1 family** | ⭐ **+3.79 cm/allele, 56 carriers, 1.45M exomes** |
+| druggable class | ⛔ **Tudor reader — hardest in the genome** | ⭐⭐ **KINASE — easiest** |
+| direction | inhibition | ⭐ **inhibition** (pLoF is the beneficial allele) |
+| **human growth plate** | ⛔ **1/10 — background** | ⭐⭐ **10/10, 557-9,980** |
+**NRK, GSE9160 probe 227971_at:** donor 1 RZ 1,050 · PZ **8,062** · PHZ **9,980** · HZ **9,289** · PC 3,556;
+donor 2 RZ 2,444 · PZ **4,297** · PHZ 1,771 · HZ 1,448 · PC 557.
+> **One of only THREE genes — with ACAN and COL2A1 — detected in all five compartments of both
+> children. NRK has BETTER human growth-plate evidence than SPIN4 has ever had.**
+### ⭐⭐ AND THE MECHANISM IS A ROUTE TO N **INDEPENDENT OF WNT**
+> *"Placental mammals acquired functional sequences in NRK for regulating the **CK2-PTEN-AKT pathway**
+> and placental cell proliferation."*
+**NRK -| (via CK2) PTEN -| AKT -> mTORC1**, and **`newton2019` (R130) has mTORC1 activation expanding
+the stem pool by SYMMETRIC DIVISION** — the exact N mechanism this file has chased.
+> ### **NRK INHIBITION -> ↑AKT -> ↑mTORC1 -> SYMMETRIC DIVISION -> N. Every link published; the chain never assembled, never in cartilage.**
+⭐ **ORTHOGONAL TO WNT — potentially ADDITIVE rather than competing for R137's narrow shelf.**
+⭐ **And it INVERTS R136's metformin problem:** metformin *inhibits* mTORC1 and opposes the pool arm;
+**NRK inhibition activates it.**
+### ⛔ WHAT IS WRONG WITH IT, FIRST-CLASS
+1. ⛔⛔ **THERE IS NO NRK INHIBITOR. NONE.** Searched for probe/tool/selective compound — **zero
+   results.** GCK group-IV STE20 kinase; an **understudied ("dark") kinase**. ⭐ **Exact opposite of
+   selamectin's problem: SPIN4 had a bad drug for an undruggable target; NRK has an ideal target class
+   and no chemical matter at all.**
+2. ⛔ **NO SKELETAL PERTURBATION IN ANY SPECIES** (`g_l8_nrk_has_no_skeletal_experiment_in_any_species`).
+   Direction comes entirely from human pLoF genetics.
+3. ⚠ **The zonal profile does not obviously say "N"** — NRK is LOWEST in the RZ (1,050) and highest in
+   PZ/PHZ. If it acts where expressed, inhibition raises PZ proliferation = **throughput = bone age**.
+   > ⭐ **Counter: +3.79 cm is measured on ADULT height in 56 carriers. If the gain were paid for in
+   > bone age it would not survive to maturity.** Same argument R138 used for SPIN4.
+   > ⚠ **Flagged, not read as a direction — that is the error made three times (R126 AR, R130 TGF-b,
+   > nearly R137 verteporfin).**
+
+### => THE SECOND CANDIDATE: **TET1** — bigger effect, real drug class, worse specificity
+**+8.32 cm/allele, 42 carriers** (2.2x NRK's); **enzyme** (Fe(II)/2-OG dioxygenase); **no baggage**;
+**7/10 in human growth plate** (228906_at, 210-753).
+⭐ **CLASS LOGIC:** `Lui 2023`'s own intro — *"no overgrowth syndrome has been ascribed to a gene that
+acts primarily as epigenetic **erasers**… or **readers**."* **SPIN4 became the first reader; TET1 would
+be the first eraser — both OUTSIDE the bone-age-spending writer class.**
+⛔ **DRUG PROBLEM: Bobcat339 is the only tool compound, it is PAN-TET (1/2/3), selectivity contested,
+and TET1/2/3 are redundant. A pan-TET inhibitor is the ICAT-equivalent mistake — total family blockade
+where partial single-member loss is what is wanted.**
+⚠ **UNRESOLVED PARADOX:** DNMT3A **writes** methylation, its loss -> overgrowth (TBRS, BA advanced);
+TET1 **erases** methylation, its loss -> overgrowth (+8.32, BA-survivable). **Opposite enzymes, same
+direction — structurally identical to the SPIN4/CXXC5 Wnt paradox R137 resolved as a MAGNITUDE law.
+Should be explained before TET1 advances.**
+
+### => THE HONEST RANKING
+| | target | human evidence | druggability | verdict |
+|---|---|---|---|---|
+| ⭐⭐ **NRK** | ⭐ anti-proliferative, X-linked, viable KO, **mTORC1 route to N, Wnt-independent** | ⭐ **+3.79 cm, 56 carriers; 10/10 in human plate** | ⛔ **ideal class, ZERO chemical matter** | ⭐ **best target, no drug** |
+| ⭐ **TET1** | ⭐ eraser, outside the BA-spending writers | ⭐ **+8.32 cm, 42 carriers**; 7/10 | ⚠ pan-TET only, contested | ⚠ **bigger effect, worse tool** |
+| CHD8 | ⭐⭐ **chromatin + Wnt — closest match to SPIN4** | ⭐ **+10.22 cm** | — | ⛔ **unusable (ASD+ID)** |
+| SPIN4 | ⭐ validated mechanism, 38% of chondrocyte Wnt | ⭐ family + mouse; ⛔ **not detectable in human plate** | ⛔ reader; selamectin has no human data | ⚠ **still the lead on mechanism** |
+> ### **NRK AND SPIN4 HAVE OPPOSITE PROBLEMS. SPIN4: validated mechanism, measured 38% Wnt contribution, proven phenotype — best tool is a veterinary drug no human has taken. NRK: 1.45M-exome genetics, best growth-plate expression of any candidate, ideal druggable class — AND NOT ONE MOLECULE.**
+> **NRK's gap is a med-chem programme against a defined kinase. SPIN4's gap is a Phase 0 study of an existing molecule. The second is much cheaper.**
+
+### => NEXT, IN ORDER
+1. ⭐ **Run the explant with selamectin anyway** — still the only experiment that converts six rounds
+   of preparation into a sign. R142's design unchanged.
+2. ⭐⭐ **Get the full `kosmicki2026` 17-gene table.** I have six; **eleven are unnamed, and CORR-303
+   records that the 11 NEGATIVE-beta genes were never searched in the ELEVATION direction.**
+3. **Check whether any approved kinase inhibitor hits NRK off-target** — neighbours MAP4K4/TNIK/MINK1
+   have inhibitors, and **TNIK inhibitors are themselves Wnt/TCF4 agents.** One kinome-panel lookup.
+4. **Explain the DNMT3A/TET1 paradox** before TET1 advances.
+
+### CORRECTIONS
+- ⛔⛔ **SPIN4 IS AT BACKGROUND IN GSE9160 (1/10)** where COL2A1 and ACAN read 10/10. Atlas recorded it
+  at R292; I never checked. **Every SPIN4 number from that dataset in R135/R138/R143 is noise.**
+- ⛔ **R143 TERM B2 WITHDRAWN** — doubly, since SP5 is 0/10 and LGR5 1/10. ✅ **R143's conclusion
+  survives on Term B1 alone.**
+- ⛔ **R138's "mouse-vs-human SPIN4 conflict" WITHDRAWN — there was no conflict.**
+- ⛔ **R135's SPIN-family zonal table invalid** except SPIN1. ✅ **R138's Wnt-antagonist finding STANDS.**
+- ⭐⭐ **STRUCTURAL: `kosmicki2026`'s 17 genes are BONE-AGE-SURVIVABLE BY CONSTRUCTION** (endpoint is
+  adult height) — the property R138 established for SPIN4 alone.
+- ⭐⭐ **NRK NOMINATED** as the replacement gene. ⛔ **No inhibitor and no skeletal perturbation exist.**
+- ⭐ **TET1 nominated second.** ⛔ **Stronghold EPAR is a dead end.**
 
 ---
 
