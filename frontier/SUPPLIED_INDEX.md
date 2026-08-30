@@ -159,3 +159,10 @@ I repeatedly re-asked for papers already supplied. Memory across 25+ turns is no
 |---|---|
 | `Lui_2023_JCI_Insight_167074_SPIN4.pdf` (`167074.2202304281134...`) | **SPIN4 primary.** BA NOT advanced vs the whole writer class; PAH 203 cm; mechanism is **reduced recruitment**, NOT increased RZ proliferation; Wnt effect is **beta-catenin-dependent, TCF1-independent** |
 | `emmm.201404084.pdf` (Melotti 2014) | ivermectin/WNT-TCF. **Moxidectin equipotent** on AXIN2/LGR5; **bryostatin inactive = built-in negative control**; ivermectin 1-5 uM, selamectin IC50 0.08-0.14 uM; acts via C-terminal beta-catenin phosphoforms |
+
+## 2026-08-30 (3) — moxidectin human PK (R139)
+| file | what it settles |
+|---|---|
+| `cotreau2003.pdf` | first-in-human single ascending 3-36 mg, n=37. Cmax 22.4-296 ng/mL, t1/2 20-35 d, Vd/F 2080-3549 L, linear PK. **Study STOPPED before 54 mg on a CNS signal.** P-gp is the CNS safety mechanism. |
+| `tropmed86122.pdf` | **the approved 8 mg TABLET**, n=27 fasted: Cmax 58.9 ng/mL = **0.092 uM**, AUC 3387 ng.h/mL, CL/F 2.76 L/h, Vd 2829 L, t1/2 784 h. High-fat food +44% AUC. |
+| `10.11772160763x11432508.pdf` | 10 mg tablet vs liquid, n=58: Cmax 67.1 ng/mL, **t1/2 1032 h = 43 d**, Vd 3635 L. Liquid gives ~28% higher Cmax/AUC than tablet. |
