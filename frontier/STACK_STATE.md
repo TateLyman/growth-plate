@@ -1,12 +1,95 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R132
+**Last updated:** F-R133
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-SPIN4. **F-R133 — MY REJECTION WAS INCONSISTENT. SPIN4 IS THE BEST-VALIDATED TARGET IN THE FILE AND IS *EXACTLY* R132's SPECIFICATION. BUT VinSpinIn IS NOT THE AGENT.**
+
+### => ⛔ THE INCONSISTENCY, OWNED
+R131's rule: *"no agent enters on **ZONAL-EXPRESSION** evidence alone."* R132 then rejected VinSpinIn for
+*"no bone endpoint **for the class**"* — **a DIFFERENT objection that does not follow.**
+**SPIN4 is NOT zonal-expression evidence.** It is germline LOF with a **resting-zone CELL COUNT** endpoint,
+**a tibia LENGTH endpoint at 2wk/10wk/18 MONTHS**, and **a HUMAN final-height endpoint (+4.5 to +5 SDS,
+replicated in a 2nd family)**. **That passes R131's rule more completely than ANY agent currently in the
+stack.** And R120 had already argued a Tudor blocker is the correct phenocopy of a READER LOF. **Operator
+caught a real inconsistency.**
+
+### => ⭐⭐⭐ THE TARGET (Lui-Jee-Baron syndrome, X-linked overgrowth, OMIM 301113)
+| evidence | finding |
+|---|---|
+| **human** | SPIN4 frameshift -> **+4.5 to +5 SDS**; 2nd family replicates overgrowth AND segregation |
+| **mouse Spin4-KO** | **VIABLE**; generalised overgrowth; **increased longitudinal bone growth**; increased PZ proliferation; ⭐ **INCREASED NUMBER OF PROGENITOR CHONDROCYTES IN THE RESTING ZONE**; tibia length to **18 months**; h_term untouched |
+| **mechanism** | SPIN4 binds histone modifications, **PROMOTES canonical WNT**, inhibits proliferation, **negatively regulates the number of resting-zone progenitors**; the frameshift lost all of it |
+
+### => ⭐ R132 WROTE A SPECIFICATION. **SPIN4 *IS* THAT OBJECT.**
+R132: *"a **partial, chondrocyte-intrinsic reducer of canonical Wnt transcriptional output, with a
+bone-length endpoint.** Nothing in the pharmacopoeia does that."*
+**SPIN4 loss is precisely that** — lowers Wnt **cell-intrinsically** (SPIN4 PROMOTES Wnt), **partially**
+(one reader among many inputs), **in the right cells** (RZ progenitors increase), **with length endpoints in
+two species and a human.** Not an approximation — **the specification, and it was in the atlas at round 281.**
+**THIS ALSO RESOLVES R132's WNT PROBLEM:** I rejected Wnt inhibition because the drugs are global blockade
+and ICAT shortens bone. **SPIN4 is the endogenous proof that the PARTIAL CELL-INTRINSIC version does the
+opposite. The target was never wrong — only the tools.**
+
+### => ⛔⛔ BUT VinSpinIn IS NOT THE AGENT — TWO HARD STOPS, NEITHER OF THEM MY RULE
+**STOP 1 — ITS OWN NEGATIVE CONTROL IS TOXIC.** From the probe characterisation: **"Both the active AND
+inactive compounds displayed toxicity, implying OFF-TARGET EFFECTS."** VinSpinIC, the purpose-built inactive
+control, is toxic too. **The toxicity is off-target chemistry, not SPIN inhibition.** A probe whose inactive
+twin is equally toxic cannot be dosed and attributed to its target.
+**STOP 2 — SELECTIVITY RUNS EXACTLY BACKWARDS, AND THE OFF-TARGET IS LETHAL.**
+| | SPIN1 | SPIN4 |
+|---|---|---|
+| **VinSpinIn** | **9.9 nM — HIGHEST affinity** | binds (thermal shift); family KDs 10-130 nM |
+| compound 18 | 30 nM | 0.71 uM — **24-fold SPIN1-selective** |
+| EML631-633 | selective | ⛔ **NO interaction** |
+> **SPIN1 KNOCKOUT MICE DIE SHORTLY AFTER BIRTH** — essential for postnatal survival, controls skeletal
+> muscle development. **SPIN4 KNOCKOUT MICE ARE VIABLE, LARGER, WITH MORE RESTING-ZONE PROGENITORS.**
+**The safety asymmetry is PERFECT and points AWAY from every available molecule.** We need SPIN4 WITHOUT
+SPIN1; the pharmacopoeia offers SPIN1 WITHOUT SPIN4. **Dosing VinSpinIn hits the ESSENTIAL gene FIRST, at
+the tightest affinity, with a compound whose control is already toxic.**
+
+### => ⭐ HOW TO ACTUALLY HIT IT
+| route | selectivity | status |
+|---|---|---|
+| **ASO / siRNA vs SPIN4** | ⭐ **FREE — sequence-based; SPIN1 vs SPIN4 discrimination trivial** | **THE RIGHT ANSWER** |
+| SPIN4-selective Tudor binder | **provably feasible** — field made SPIN1-selective compounds, so the family IS separable | **does not exist; nobody wants it** |
+| PROTAC/degrader | needs a selective binder first | blocked |
+| pan-SPIN small molecule | ⛔ SPIN1-first, SPIN1 essential | **REJECTED** |
+**The oligo route INVERTS the problem in our favour:** small molecules fail on selectivity between two
+~60%-identical Tudor proteins; **an ASO gets that selectivity for free.** The hard part becomes DELIVERY.
+> ⭐ **AND THIS PROGRAMME ALREADY SOLVED THAT DELIVERY PROBLEM FOR A DIFFERENT AGENT.** The intraosseous
+> fibrin-depot route into the SOC (R373/388/393), designed for SAG, is **exactly the format a
+> cartilage-targeted oligo needs. The two halves were developed ELEVEN ROUNDS APART and have never been put
+> together.**
+**Also: SPIN4 is X-LINKED — a male subject is HEMIZYGOUS. One allele, not two. Halves the knockdown burden.**
+
+### => THE RECOMMENDATION
+**SPIN4 ENTERS AS THE TOP-RANKED TARGET FOR THE RENEWAL ARM** — ahead of everything else on the N side: the
+only one with a cell-count endpoint, length endpoints in two species, a human phenotype, AND a favourable
+essentiality profile.
+**VinSpinIn does NOT enter as the agent** — toxic negative control; SPIN1-first against an essential gene.
+**The agent is a SPIN4-directed OLIGONUCLEOTIDE, delivered LOCALLY.** Beyond off-the-shelf, stated plainly:
+**it requires synthesis, not a prescription.** But it is a defined object with a named target, a validated
+endpoint, free selectivity, and a delivery route this file already designed.
+
+### => WHAT I NEED
+1. **lui2023 / lui2026 primary texts** — need the actual MAGNITUDE of the RZ progenitor increase and the
+   tibia-length delta. I have only the atlas summary and the JCI Insight abstract.
+2. **Whether Spin4 KNOCKDOWN (not germline KO) in a GROWING animal reproduces it** — germline KO permits
+   developmental compensation; acute knockdown in an adolescent is the relevant test and I cannot find it.
+
+### CORRECTIONS
+- **R132's rejection of the SPIN4 arm WITHDRAWN as inconsistent.**
+- **SPIN4 identified as the object R132 specified** — specification filled by a gene already in the atlas.
+- **VinSpinIn rejected on NEW grounds** — toxic inactive control; SPIN1-first against a postnatally lethal gene.
+- **Delivery convergence noted:** intraosseous depot (R373/388/393) + cartilage-targeted oligo belong together.
 
 ---
 
