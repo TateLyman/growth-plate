@@ -1,12 +1,97 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R114
+**Last updated:** F-R115
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-REDUN. **F-R115 — THE REDUNDANCY GAP IS CLOSED WITH DATA. ERDA + CNP ARE ADDITIVE. N IS THE ONLY TERM LEFT.**
+
+**Target reset by operator:** 180.3 -> 195.6 cm (5'11" -> 6'5") at BA 16. Near-closure population chosen
+deliberately (young is easy); delta chosen above the observed ceiling. **Base stack erdafitinib +
+anastrozole is NOT replaceable — only additions count.**
+
+### => THE FRAMEWORK: R360 AND arm3 ARE THE SAME TARGET IN TWO VOCABULARIES
+`height = N x A x h_term`, rate-yield law `A ∝ throughput^-0.150`. Anastrozole moves the subject into the
+**fixed-budget regime** where "throughput is worth nothing and yield is everything". arm3's target
+("run the counter slowly while the plate keeps producing") **is** R360's target (raise A, h_term), because
+the counter tracks **resting-zone divisions**, so A and h_term are counter-free. Already demonstrated once:
+**dauber2026 vosoritide, velocity +4.0 SD, bone-age ratio UNMOVED.**
+
+### => ⭐ THE ATLAS'S OWN OPEN GAP, ANSWERED — CNP IS NOT INSIDE ERDAFITINIB
+`is_the_cnp_arm_redundant_with_fgfr3_blockade`: *"nobody has run it in any species."* Run it on GEO instead.
+**GSE4481** (CD1 E15.5 tibia, 3 reps, BSA vs CNP, zones R/P + H + M) x **GSE145821** (Fgfr3-Y367C vs control
+littermate, 7/14/21/28 d, n=3), **both GPL1261** so probe-level, 18,183 expressed probes.
+- **positive control:** FGFR3-blockade axis vs itself, mean |r| = **0.461**, wk3 vs wk4 = **+0.861**
+- **cross-correlation: max |r| = 0.155, shared variance <= 2.4%**
+**=> ADDITIVE. R114 ("vosoritide is redundant with FGFR3i") IS RETRACTED. The operator was right.**
+
+### => WHAT EACH AGENT COVERS (measured, per-gene)
+**ERDA = h_term + MATRIX, and is NOT a proliferation agent:** Col10a1 **+3.10**, Col2a1 **+2.36**,
+Sp7 +2.20, Alpl +1.82, Mest +3.44, **Mki67 -0.87**. Those are the two largest Wilsman terms (59% hypertrophy
++ 32% matrix fast plate; 44% + 49% slow plate — and BA16 = slow plate, where MATRIX is larger).
+**CNP = A + closure brake:** h_term panel **-4.25 in R/P** (delayed hypertrophic commitment = longer
+residence = amplification); closure/vascular **-4.78 in H**; Mmp9 -1.73.
+
+### => ⭐⭐ CNP INDUCES ITS OWN CLEARANCE RECEPTOR — Npr3 +2.58 (log2, ~6x) IN THE HYPERTROPHIC ZONE
+Zone-specific (-0.20 R/P, +0.17 M). **A CNP analogue self-limits in the exact zone its non-redundant
+cAMP/PKA arm acts in.** This is the measured mechanism for **kanai2017: CNP x OSTN double-Tg gains
+additional length over elevated CNP alone — the only demonstrated additivity on bone length in this atlas.**
+**=> AGENT 4 IS AN NPR3 DECOY (osteocrin-class).**
+
+### => THE HUMAN GENETICS ARE THE STRONGEST "EXCEEDS NORMAL" EVIDENCE IN THE FILE
+NPR3 biallelic LOF: **+3.03 / +3.43 / +4.41 / +4.76 SDS**, height velocity **+6.17 SD**. Lauffer2022
+proband 172.1 cm @10 -> **195.6 @13.5** -> **205.1 @14.7**, above midparental target (+3.93 vs range
+-0.8..+2.4), **bone age = calendar age at 13**. NPR2 GOF = Miura overgrowth. Npr3-null mouse, 3 alleles,
+all overgrowth. OSTN-Tg dose-dependent overgrowth. **Bone-age-neutral + supranormal velocity + above
+midparental = YIELD not rate** — the property GH and PTH1R both fail.
+
+### => ⭐⭐⭐ THE ONLY DOCUMENTED CREATION OF N IN A HUMAN
+NPR3-LOF patients grow **EXTRA EPIPHYSES** — pseudoepiphysis at base of MC2, extra epiphysis at distal
+MT1, distal ends of proximal phalanges 2-5. **New ossification centres at the normally NON-growing end.**
+Proposed mechanism: **incomplete elimination of PTHrP from epiphyseal chondrocytes** — and PTHrP+ cells
+are exactly the RZ stem cells measured at **0.72% for n0** in R112. Case report: *"Complete Pseudoepiphyses
+With Associated ENHANCED GROWTH."* **boudin2018: never reported in the mouse models — the human phenotype
+EXCEEDS the mouse, inverting translation risk on this arm.**
+
+### => THE ARITHMETIC, AND WHERE IT BREAKS
+BP male SA16.0 = 98.8% -> **2.19 cm remaining**; target needs **+15.3 cm** -> **k = 6.99x required**.
+Best supportable k: CNP alone 1.25x, NPR3-LOF human velocity 1.62x, LB-100+BMN-111 2.06x,
+**optimistic log-additive full stack 2.60x -> 186.0 cm (6'1.2")**. SA16.5 needs 9.34x; SA17.0 needs 12.04x.
+**Nothing in the corpus reaches k~7 on a fixed N.** A and h_term are MULTIPLICATIVE on N, so every
+high-value lever is worth zero once N is spent — visible in the drug's own record: **vosoritide's effect
+collapses in older children, "no apparent differences vs placebo" in the oldest group.** That is N -> 0.
+
+### THE STACK (additions only, nothing removed)
+1. **erdafitinib** — h_term + matrix + closure arm. BASE.
+2. **anastrozole** — fixed-budget regime, defers terminal event. BASE.
+3. **CNP-axis agent** (vosoritide / navepegritide) — <=2.4% redundant with erda, PROVEN this round.
+4. **NPR3 decoy, osteocrin-class** — removes the Npr3 +2.58 brake; only demonstrated additive pair.
+5. *(watchlist)* **LB-100** — PP2A/PPP inhibitor, sustains NPR2 phosphorylation vs FGF dephosphorylation.
+   1.30x alone / 1.78x BMN-111 / **2.06x combined** — but ex vivo E16.5 femur only, and SUB-multiplicative.
+
+**CEILING ON ARMS 3-4:** NPR3 also clears ANP/BNP; boudin2018 patients had aortic dilatation + joint
+hypermobility; **not one osteocrin study measured an aortic dimension.** Dose-limiting and unmeasured.
+
+### KILLED / CORRECTED THIS ROUND
+- **PTH1R stays dead** — FDA NDA 21-318 terminal table, femur length **35 mm in all 8 arms** at 26 months
+  including continuous dosing from 2 months. Rate effect on unchanged total.
+- **R114 retracted** (redundancy, above).
+- **in-round self-correction:** "erda raises N" panel score was **circular via the Fgfr3 probe**; gene-level
+  it is mixed (Grem1 +1.45 up, **Foxa2 -1.46 down**, Nt5e -0.33, **Pthlh has no working probe**).
+  **Erda's evidence is h_term + matrix. N is unresolved.**
+
+### WHAT IS LEFT
+**N is now the ONLY term in the identity with no agent, and it is the ENTIRE remaining gap to target.**
+Lead: NPR3 loss creates new plates in humans via retained PTHrP+ cells and does not in mice. Nobody has
+asked whether it can be induced pharmacologically rather than genetically. **That is the next round.**
+
+Code: `frontier/analysis/redundancy/` (parse, redun, ctrl, zones, genes, k).
 
 ---
 
