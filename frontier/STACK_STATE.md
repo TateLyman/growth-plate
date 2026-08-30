@@ -1,12 +1,97 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R145
+**Last updated:** F-R146
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-CLADE. **F-R146 — PF-06260933: **YES AS THE REAGENT, NO AS A THERAPEUTIC.** THE GCK-IV POCKET IS **68-94% PROMISCUOUS** (measured), AND THE SEARCH TURNED UP A CLADE INHIBITOR **ALREADY THROUGH PHASE 2 IN HUMANS**.
+
+`Ammirati 2015` (PMID 26617966): PF-06260933 is *"a **tool compound**… possessing excellent kinome
+selectivity"* delivered to establish MAP4K4 proof-of-concept **in vivo**, with published PK and
+activity in an insulin-resistance model. ✅ **Sourcable** (MedChemExpress/Tocris/Selleck/Sigma).
+⛔ **No human exposure, no IND, no GMP, no formal tox. Never tested against NRK.**
+
+### => ⭐⭐ THE MEASUREMENT THE QUESTION FORCED: **CAN YOU BE SELECTIVE *WITHIN* THIS CLADE?**
+R145 argued NRK is likely hit on 63-65% identity + the same Met gatekeeper. **But PF-06260933 was
+optimised FOR selectivity — exactly the property that would make it MISS an untested clade member.**
+So I measured the base rate. Every ChEMBL compound assayed against BOTH members of a pair (controls
+for testing bias). Code: `analysis/redundancy/clade.py`.
+| pair | co-tested | potent on A | **also potent B** | ⭐ **carry-over** |
+|---|---|---|---|---|
+| MAP4K4 -> MINK1 | 353 | 260 | 178 | **68%** |
+| MAP4K4 -> TNIK | 89 | 72 | 64 | **89%** |
+| TNIK -> MINK1 | 60 | 38 | 33 | **87%** |
+| **MAP4K4 -> MAP4K1** | 44 | 37 | 34 | ⭐ **92%** |
+| **TNIK -> MAP4K1** | 46 | 33 | 31 | ⭐ **94%** |
+> ### ⭐⭐⭐ **68-94% CARRY-OVER. AND THE DECISIVE DETAIL: MAP4K1 is only 41% identical to NRK — LESS related than MINK1 at 64.9% — yet carry-over to it is the HIGHEST at 92-94%. IDENTITY IS NOT THE LIMITING FACTOR; THE WHOLE MAP4K/GCK ATP POCKET IS PROMISCUOUS.**
+1. ⭐ **NRK (65%, same HRDIK, same Met gatekeeper) is very likely in range of ANY GCK-IV inhibitor** —
+   R145's homology argument now rests on a MEASURED base rate, not sequence inference.
+2. ⭐ **"Excellent kinome selectivity" = selectivity against the BROAD kinome, not within the clade** —
+   that separation is evidently very hard. **Favourable for us.**
+⚠ **Confound:** ChEMBL is enriched for compounds designed as MAP4K inhibitors; programmes that achieved
+within-clade selectivity may be under-reported. **But 68-94% across five pairs at n=44-353 is consistent.**
+
+### => ⛔ NOT SOMETHING TO TAKE — FOUR REASONS, ONLY ONE REGULATORY
+1. ⛔ **Tool compound.** No human exposure/IND/tox/GMP. Pfizer proved the point and stopped.
+2. ⛔ **Primary target MAP4K4 is EMBRYONIC LETHAL on germline deletion** (~E9.5, defective mesoderm
+   migration through the primitive streak). ⚠ Germline != acute (the R134 SPIN1 distinction) — **but it
+   is developmentally essential and there is ZERO cartilage/growth-plate data for its inhibition.**
+3. ⛔⛔ **THE RATIO IS BACKWARDS.** Even if it hits NRK, **NRK would be the OFF-target** — dosing to
+   saturate MAP4K4+MINK1+TNIK and catching NRK incidentally. **Identical to the objection that killed
+   VinSpinIn in R134, where SPIN4 was the weakest of four targets.**
+4. ⛔ **NRK binding never measured.** 68-94% makes it likely; likely is not measured.
+
+### => ⭐⭐⭐ AND THE SEARCH TURNED UP A BETTER MOLECULE: **rentosertib (INS018_055)**
+> *"A small-molecule TNIK inhibitor targets fibrosis in **preclinical and clinical models**"* (2025).
+> AI-designed (Insilico); *"anti-fibrotic activity across different organs in vivo through **oral**,
+> inhaled or topical administration"*; **through Phase 1 and Phase 2a in IPF.** Independently flagged
+> 2025 as a **potent senomorphic** at the TGF-b/senescence node.
+| | PF-06260933 | ⭐ **rentosertib** |
+|---|---|---|
+| primary target | MAP4K4 | ⭐ **TNIK** |
+| identity to NRK | 64.5% | 63.0% — same clade, same Met gatekeeper |
+| ⭐ **human exposure** | ⛔ **none** | ⭐⭐ **Phase 1 + 2a completed** |
+| route | parenteral tool | ⭐ **ORAL** |
+| ⭐ **primary target on-mechanism?** | ⛔ no | ⭐⭐ **YES — TNIK is the nuclear activator of Wnt/b-catenin target genes, so inhibiting it LOWERS Wnt/TCF output = the SPIN4 axis (R138's 38-45% target)** |
+> ### **FIRST MOLECULE IN THE PROGRAMME WHOSE *PRIMARY* TARGET IS ON-MECHANISM FOR ONE ARM AND WHOSE MOST LIKELY OFF-TARGET IS ON-MECHANISM FOR THE OTHER.** TNIK -> ↓Wnt/TCF = SPIN4 axis; NRK (if it binds) -> ↑AKT -> ↑mTORC1 = newton2019's symmetric division = N axis. **One oral molecule, both arms, already in people.**
+### ⚠ CAVEATS — THIS IS EXACTLY WHERE I HAVE OVERREACHED BEFORE
+1. ⛔ **Nobody has tested rentosertib against NRK either.** 68-94% is a base rate, not a measurement.
+   **The R145 assay is now MORE valuable, not less.**
+2. ⛔⛔ **R137's MAGNITUDE LADDER CUTS HARD.** Rentosertib was optimised for **potent** anti-fibrotic
+   TNIK inhibition; **deep Wnt blockade is the Col2a1-ICAT regime, which SHORTENS bone. The dose that
+   treats fibrosis is very likely far past the dose that helps a growth plate. Moxidectin's problem was
+   TOO WEAK; this one's may be TOO STRONG.**
+3. ⚠ **IPF patients are elderly with a fatal disease** — Phase 2a safety there is not safety in a
+   healthy adolescent, and the risk calculus is different.
+4. ⚠ Any pan-clade agent also inhibits **MAP4K4** (developmentally essential, no cartilage data) and MINK1.
+
+### => THE ANSWER
+| use | verdict |
+|---|---|
+| ⭐ **reagent for the R145 NRK binding assay** | ⭐ **YES — sourcable, legitimate, exactly right** |
+| lead structure / med-chem start | ✅ yes — published PK and in vivo tolerability |
+| ⛔ **to give a person** | ⛔ **NO** — tool compound, wrong target ratio, essential primary target |
+| best clade molecule? | ⛔ **no — rentosertib is, and it has been in humans** |
+**THE EXPERIMENT GAINS AN ARM:** recombinant NRK vs **PF-06260933 · GNE-495 · ⭐ rentosertib · NCB-0846
+· bosutinib · lestaurtinib · dovitinib.** ⭐ **If rentosertib hits NRK at <=100 nM, this programme has an
+ORAL, CLINICALLY-TESTED molecule engaging BOTH arms.** If not, PF-06260933 stays the med-chem start.
+
+### CORRECTIONS
+- ⭐⭐ **WITHIN-CLADE CROSS-REACTIVITY MEASURED: 68-94%**, five pairs, testing-bias controlled.
+- ⭐ **IDENTITY IS NOT LIMITING** — MAP4K1 at 41% identity carries over 92-94%, higher than MINK1 at 65%.
+- ⭐ **"Kinome selectivity" reinterpreted** as broad-kinome, not within-clade. Favourable.
+- ⛔ **PF-06260933 REJECTED AS A THERAPEUTIC** — tool compound; MAP4K4 germline-lethal with no cartilage
+  data; ⛔ **target ratio backwards (the R134 VinSpinIn objection)**; NRK binding unmeasured.
+- ✅ **ACCEPTED as the reagent and as a med-chem starting point.**
+- ⭐⭐⭐ **rentosertib (INS018_055) FOUND — oral TNIK inhibitor, Phase 1+2a in humans, primary target
+  on-mechanism for the SPIN4 arm, likely off-target on-mechanism for the N arm.**
+- ⚠ **But R137's ladder cuts against it: optimised for POTENT Wnt blockade = the ICAT regime.**
 
 ---
 
