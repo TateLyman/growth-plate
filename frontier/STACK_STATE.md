@@ -1,12 +1,95 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R118 (+CORR)
+**Last updated:** F-R119
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-N. **F-R119 — YES, N CAN BE RAISED. DONE FOUR WAYS, TWICE WITH A LENGTH ENDPOINT. THE ATLAS ALREADY KNEW.**
+
+### => ⭐ THE ANSWER
+| lever | pool effect | length endpoint | drug |
+|---|---|---|---|
+| **SPIN4 loss** | RZ height ↑, resting chondrocyte NUMBER ↑, Sfrp5+ ↑ | **tibia ↑ at 2wk, 10wk AND 18 MONTHS**, h_term untouched | none (histone reader) |
+| **local GH** | germinal label-retaining cells **ratio 1.95±0.13** | not measured | **APPROVED** |
+| **SAG post-SOC** | pool doubling | **+3.63% femur** | research-grade |
+| **mTORC1 (Tsc1)** | colony-forming pool ↑, symmetric division, CD73 ↑ | **NEVER MEASURED AFTER DISCHARGE** | none |
+| **PDGF-BB** *(new)* | RZ proliferation ↑, maturation blocked | not measured | **APPROVED (Augment, becaplermin)** |
+**AND THERE IS A HUMAN.** lui2023: boy with SPIN4 frameshift growing **+4.5 to +5 SDS vs midparental**;
+second family, different frameshift, replicates overgrowth AND segregation. **HUMAN FINAL-HEIGHT GAIN FROM
+A PARTIAL LOSS OF FUNCTION — WHICH IS WHAT A DRUG MAKES.** Mechanism: reduced TOPFLASH, reduced Axin2,
+Spin4 highest in resting zone => **lowered canonical Wnt in resting chondrocytes.**
+
+### => ⛔ CORRECTION TO MY R117/R118: THE REVERSE WNT EXPERIMENT HAS BEEN RUN
+R117 said it was never run; R118 escalated to "unrunnable on public data". **WRONG — the atlas closed it at
+round 281.** eLife 64513's authors ran only the ACTIVATION arm in THEIR system. **SPIN4 loss IS the
+inhibition arm** — atlas gap `g_l2_wnt_inhibition_in_resting_cells_long_columns_at_late_timepoint` since
+round 182. **lui2023 ran it without calling it that.** Caveats the atlas keeps: germline not conditional,
+no long-column count.
+**Why no drug follows is SPECIFIC:** chen2008 Col2a1-ICAT (chondrocyte-restricted Wnt reduction) **SHORTENS**.
+**Complete extracellular blockade of Wnt ligand secretion (PORCN inhibitors) is NOT the same intervention
+as chondrocyte-intrinsic reduction of transcriptional output.** Target restated: **find an agent that lowers
+canonical Wnt TRANSCRIPTIONAL OUTPUT in resting cells — not ligand secretion.**
+
+### => ⭐⭐ THE DECISIVE UNRUN EXPERIMENT IS ONE PAPER (newton2019)
+**CHARGE:** Tsc1 loss expands colony-forming pool via **symmetric** division, CD73 ↑, clone size ↑ — but
+*"neither proliferation of chondroprogenitors nor their recruitment into the proliferative layer changed
+detectably."* **POOL WITHOUT FLUX.**
+**DISCHARGE, SAME PAPER:** Tsc1-expanded clusters retain Hh dependence; **vismodegib FORCED them to
+differentiate directly into columnar cells.**
+**=> CHARGE WITH mTORC1, DISCHARGE WITH HEDGEHOG INHIBITION.**
+> **NO BONE LENGTH WAS MEASURED AFTER THE DISCHARGE STEP, IN THAT PAPER OR ANY OTHER.**
+**Bound:** two extra vismodegib doses **FUSED the plate at P37.** Window never mapped.
+**That is the experiment: two agents, one published protocol, and a caliper.**
+
+### => ⭐ THE LAW THAT EXPLAINS WHY N LOOKED AGENTLESS
+**EVERY pool expander produces POOL WITHOUT FLUX — it expands by BLOCKING THE EXIT, and blocking the exit
+is what prevents length.** Four independent confirmations: mTORC1/Tsc1 (recruitment unchanged; and
+separately "blockage of differentiation, reduced bone length"); PDGF-BB (maturation inhibited, no ALP rise);
+sustained Hedgehog (fate → osteoblasts, R117); axitinib (R364).
+**=> THE MECHANISM THAT FILLS THE POOL IS THE MECHANISM THAT STOPS IT EMPTYING. ANY N STRATEGY MUST BE
+TWO-PHASE — CHARGE THEN RELEASE — AND NOBODY HAS MEASURED LENGTH AFTER THE RELEASE.**
+
+### => STAGE RULE FAVOURS THIS SUBJECT
+Hedgehog's sign depends on **STAGE not duration**. Pre-SOC: both LDE225 and SAG REDUCE PTHrP+ cells.
+Post-SOC: SAG promotes RZ proliferation; vismodegib causes premature fusion. orikasa2024 pulsed P6
+(pre-SOC) → derangement + length decrement. trompet2024 dosed P28/30/32 (post-SOC) → pool doubling +3.63%.
+**A subject at bone age 16 is as far post-SOC as it is possible to be.**
+
+### => NEW: PDGF-BB, OBTAINABLE
+Not previously in this atlas as a pool agent. RZ chondrocytes + PDGF-BB: **proliferation ↑, proteoglycan ↑,
+maturation along the endochondral pathway INHIBITED**, prevents the normal ALP rise. **rhPDGF-BB is APPROVED
+— becaplermin (Regranex), and Augment Bone Graft (rhPDGF-BB + β-TCP) as an implanted LOCAL MATRIX**, the
+same delivery format as the SAG fibrin depot. **It is a CHARGE agent — pool without flux. Never alone.**
+
+### => RECOVERED: LOCAL GH IS A POOL AGENT AND R110 DID NOT TEST THAT
+R110 killed **systemic GH on attained height** — that stands. **ohlsson1992 is a different experiment:**
+hypophysectomised rats, local GH by cannula into ONE proximal tibia vs contralateral, **germinal
+label-retaining cells ratio 1.95 ± 0.13**; **IGF-I did nothing (0.96 ± 0.04).** GH and IGF-1 are NOT
+interchangeable at the resting zone (atlas CORR-187). `dual_effector_hypothesis`: GH both RECRUITS
+(gevers1996a) and MULTIPLIES (ohlsson1992) germinal cells; net depends on dose and background.
+**Open gap chu2025 names: does local GH raise the pool in a GH-REPLETE subject?**
+
+### => FIVE POPULATIONS — AND ONLY ONE IS HUMAN-VALIDATED
+PTHrP+ (lower RZ, exhausted by passage 5) | CD73+ (adjacent SOC, ~P28) | Axin2+ (Ranvier's groove,
+appositional, **REQUIRES Wnt/β-catenin**) | FoxA2+ (uppermost RZ, persists past passage 9) |
+**ApoE+ (~97% of resting chondrocytes, THE ONLY MARKER VALIDATED IN BOTH MOUSE AND HUMAN)**.
+avijgan2026 PRISMA: **the hierarchy is NOT established.** Every experiment here labels one of five and
+generalises. **The denominator of every yield in this file is a marker, not a cell type.**
+**Note the conflict: Axin2+ cells REQUIRE Wnt while resting cells are maintained by Wnt INHIBITION.** A
+Wnt-lowering agent helps one population and harms another — a second reason the pathway-wide hammer fails.
+
+### => TARGET STATUS
+**7x arithmetic UNCHANGED (need 6.99x, have ~2.60x).** But N is **not a closed door and not agentless** —
+it is a **two-phase problem where nobody has measured the second phase.**
+**RANKED NEXT:** (1) run newton2019's own pairing to a length endpoint; (2) find a chondrocyte-intrinsic
+canonical-Wnt-output lowering agent (the SPIN4 phenocopy, NOT a PORCN inhibitor); (3) evaluate PDGF-BB as
+the charge half in the approved β-TCP matrix; (4) test local GH on the pool in a GH-REPLETE background.
 
 ---
 
