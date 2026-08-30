@@ -1,12 +1,59 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R159
+**Last updated:** F-R160
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-INVIVO. **F-R160 — ⭐⭐⭐ **HOLE 8 PATCHED AT CLASS LEVEL**: A TET-SELECTIVE INHIBITOR **DECREASED CYTOSINE HYDROXYMETHYLATION IN VIVO**, SPARED NORMAL CELLS, AND ITS EFFECT ON NORMAL STEM CELLS WAS **"UNLIKE MUTATIONS, REVERSIBLE"** — THE DIRECT ANSWER TO R158 *AND* R159. ⭐⭐ A PUBLISHED `Tet1+/−` PHENOTYPE EXISTS. ⛔⛔ AND IT CREATES A NEW **LIVER** CONFLICT WITH THE METFORMIN ARM.
+
+### => ⭐⭐⭐ THE PAPER THAT CLOSES HOLE 8 FOR THE CLASS
+> **`Guan, Tiwari … Maciejewski & Jha, Blood Cancer Discovery 2021;2(2):146–161` (PMID 33681816) — the TETi76 paper.**
+
+| finding | why it matters |
+|---|---|
+| ⭐⭐ *"a TET-selective small molecule inhibitor **decreased cytosine hydroxymethylation** and restricted clonal outgrowth… **in vitro and in vivo**"* | ⭐ **IN VIVO TET ENGAGEMENT DEMONSTRATED** |
+| ⭐ *"restricted… TET2 mutant, **but not normal** hematopoietic precursor cells"* | ⭐ **a therapeutic window for PARTIAL TET inhibition exists in vivo** |
+| ⭐⭐⭐ *"While TET-inhibitor **phenocopied somatic TET2 mutations**, its pharmacologic effects on **normal stem cells were, unlike mutations, REVERSIBLE**"* | ⭐⭐⭐ **ANSWERS R158 AND R159** |
+
+> ### ⭐⭐⭐ **THE TWO STRONGEST ARGUMENTS AGAINST THIS ARM WERE BOTH GENETIC — Ho's TET1 knockdown in MSCs and Smeriglio's Tet1−/− embryos. Guan states explicitly that pharmacological TET inhibition and genetic TET loss are NOT the same in NORMAL cells: the drug phenocopied the mutation in the diseased clone, but in normal stem cells the effect was REVERSIBLE where the mutation is not. Every genetic argument against this arm is an argument about permanent, constitutive, developmental loss. A drug is none of those.**
+
+⚠ **Limits:** TETi76 is **not gold** — the class, not auranofin; **haematopoietic, not skeletal**; and PMC7935131 is **not open**, so this rests on the abstract, not the in-vivo 5hmC figure.
+
+### => ⭐⭐ A PUBLISHED `Tet1+/−` PHENOTYPE EXISTS — AND IT IS DIET-DEPENDENT
+> **`Yuan … Huang & Zheng, Mol Nutr Food Res 2021;65:e2100417` (PMID 34129274) — "Vitamin C Inhibits the Metabolic Changes Induced by **Tet1 Insufficiency** Under **High Fat Diet Stress**."**
+> *"**Tet1+/+ and Tet1+/− mice** fed a high fat diet. **Higher weight gain and more severe hepatic steatosis**, accompanied by **reduced 5hmC**, in the **white adipose tissue and liver** of Tet1+/− mice."*
+
+| | IMPC (het, **normal chow**) | Yuan (het, **HFD**) |
+|---|---|---|
+| fat | ⭐ **fat mass DOWN** (−0.391, male p=0.042) | ⛔ **weight gain up, steatosis** |
+⭐ **Not a contradiction — "Under High Fat Diet Stress" is the title. THE HET PHENOTYPE IS DIET-DEPENDENT.**
+
+### => ⛔⛔ NEW STACK CONFLICT — **HEPATIC STEATOSIS vs THE METFORMIN ARM**
+> ### ⛔⛔ **`Tet1+/−` MICE DEVELOP HEPATIC STEATOSIS — AND HEPATIC FAT IS THE EXACT VARIABLE THE METFORMIN ARM IS KEYED TO.**
+`de Zegher 2017`: hepatic fat **18±2% → 9±1%** (p≤0.005); *"tempo of maturation correlated with **HEPATIC FAT R=0.55, p<0.001**"* — which is why **R153 lists liver fat as the measurement that decides metformin.**
+⭐ **Softened (not removed) by:** metformin already halves hepatic fat, and Yuan's phenotype required dietary stress.
+
+### => ⭐⭐ THREE ARMS NOW CONVERGE ON ONE TEST
+| source | liver signal |
+|---|---|
+| auranofin | hepatotoxicity is a recognised gold effect |
+| ⭐ **Tet1+/−** | ⭐ **hepatic steatosis under dietary stress** |
+| ⭐ **metformin** | ⭐ **hepatic fat is its deciding variable** |
+> ⭐ **LIVER FAT WAS THIRD ON R153's MEASUREMENT LIST. IT IS NOW FIRST.**
+
+### => ⛔ WHAT I LOOKED FOR AND DID NOT FIND
+| target | result |
+|---|---|
+| ⛔ IMPC Tet1 **homozygote** skeletal data | **312 hom records exist — all 21 skeletal/body-composition parameters are `status=NotProcessed`.** No same-pipeline hom-vs-het comparison possible. (I had not noticed the hom records existed at all.) |
+| ⛔ Chen 2023 in vivo 5hmC | ⛔ **not measured** — Fig 2d–i is efficacy only (bioluminescence, BM flow, survival). Dose **20 mg/kg q2d IP, NCG mice**. |
+| ⛔ TET1 eQTL × height | Both height variants (**10:68632853**, **10:68691307**) sit **inside** TET1 (chr10:68,560,656–68,694,482) but **neither is a significant GTEx v8 eQTL** — direction unreadable. TET1 has 180 eQTLs (adipose 60, cerebellum 45, fibroblasts 35), none matching. **Route does not resolve.** |
+| ⛔ MGI Tet1 het skeletal phenotype | **MGI:1098693**, many alleles, **none annotated** |
 
 ---
 
