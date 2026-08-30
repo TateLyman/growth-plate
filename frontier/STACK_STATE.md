@@ -1,12 +1,114 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R142
+**Last updated:** F-R143
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-LOOPGAIN. **F-R143 — I MEASURED THE LOOP GAIN. **0.016-0.042 AGAINST THE 0.91 REQUIRED.** AMPLIFICATION IS **1.02x, NOT 5x**. THE FEEDBACK RESCUE IS DEAD AND THE POSITIVE CONTROL PROVES THE ASSAY WOULD HAVE SEEN IT. **MOXIDECTIN SYSTEMICALLY IS DEAD.**
+
+R136 proposed SPIN4 is a TCF7L2 target AND promotes Wnt = positive feedback, so a small drug input
+amplifies. R139 and R142 both leaned on it to keep a 3.5%-engagement agent alive. **Operator asked me
+to check it properly and not lie about the answer.** Code: `analysis/redundancy/loopgain.py`.
+**g = (dlnW/dlnS)(dlnS/dlnW); amplification = 1/(1-g). For 3.5% -> 40%, g must be ~0.91.**
+
+### => TERM A — HOW MUCH DOES SPIN4 DRIVE WNT? **0.38, AND IT IS AN UPPER BOUND**
+`Lui 2023` Fig 6C: complete Spin4 loss takes TOPFLASH **1.00 -> 0.62**. **SPIN4's ENTIRE contribution
+to Wnt output is 38%**, so **dlnW/dlnS <= 0.38** (and only if linear, which flatters the hypothesis).
+**A = 0.38 -> for g = 0.91 you would need B >= 2.4**, i.e. Wnt driving SPIN4 MORE than proportionally.
+
+### => TERM B — HOW MUCH DOES WNT DRIVE SPIN4? **TWO INDEPENDENT MEASUREMENTS. BOTH: BARELY.**
+**B1 — concordance across 270 RummaGEO drug perturbations:** does SPIN4 move the SAME direction as
+canonical Wnt targets?
+| | concordant | discordant | % |
+|---|---|---|---|
+| AXIN2 27/20 · LEF1 37/33 · TCF7 22/25 · NKD1 7/22 · RNF43 18/21 · ZNRF3 16/7 · SP5 5/1 · CCND1 64/46 · NOTUM 12/13 · TNFRSF19 35/35 | | | |
+| ⛔ **TOTAL** | **243** | **223** | ⛔ **52.1%** |
+**z = 0.93, n = 466. Indistinguishable from a coin flip.**
+### ⭐⭐ THE POSITIVE CONTROL IS WHAT MAKES THIS A MEASUREMENT, NOT A WEAK NULL
+Identical test, same 9 genes, same code, run on **AXIN2 — an unambiguous canonical Wnt target:**
+| | concord | discord | % | coupling index |
+|---|---|---|---|---|
+| ⭐ **AXIN2 (real Wnt target)** | **490** | 215 | ⭐ **69.5%** (n=705) | **0.390** |
+| ⛔ **SPIN4** | 243 | 223 | ⛔ **52.1%** (n=466) | **0.043** |
+> ### **THE ASSAY DETECTS WNT CO-REGULATION WHEN IT IS THERE (69.5%). SPIN4 SCORES 52.1%. ITS COUPLING IS 11% OF A GENUINE WNT TARGET'S. The instrument works; SPIN4 is not a Wnt-responsive gene.**
+**B2 — zonal co-variation, human growth plate (GSE9160):**
+| gene | Reserve | Prolif | PreHyp | **Hyper** | **r vs SPIN4** |
+|---|---|---|---|---|---|
+| AXIN2 | 809.6 | 564.1 | 361.4 | **2699.9** | **-0.305** |
+| SP5 | 33.9 | 31.2 | 29.3 | **97.5** | **-0.241** |
+| LGR5 | 64.7 | 34.2 | 65.8 | **317.4** | **-0.290** |
+| NKD1 | 211.6 | 199.5 | 231.8 | **319.5** | **-0.267** |
+| **SPIN4** | 90.9 | **267.8** | 193.2 | 153.6 | mean **-0.28** |
+> ⛔ **SPIN4 does not merely fail to track Wnt — it runs OPPOSITE on all four readouts.** Wnt output
+> peaks in the HZ; SPIN4 peaks in the PZ and is LOW in the HZ. ⚠ n=4 zones, 2 donors — indicative only,
+> but a second independent dataset in the CORRECT tissue, agreeing in direction and magnitude.
+
+### => ⛔⛔⛔ THE RESULT
+| | B | **g = A x B** | **amplification** | 3.5% becomes |
+|---|---|---|---|---|
+| drug-signature coupling | 0.043 | **0.016** | **1.02x** | **3.6%** |
+| scaled to a real Wnt target's coupling | 0.110 | **0.042** | **1.04x** | **3.7%** |
+| ⛔ **REQUIRED for the rescue** | **>=2.4** | **0.91** | **11x** | 40% |
+> ### **MEASURED 0.016-0.042. REQUIRED 0.91. NOT A NEAR MISS — TWO ORDERS OF MAGNITUDE. The amplification argument buys 0.1-0.2 PERCENTAGE POINTS, not a factor of five.**
+**AND THE SECOND HALF OF THE RESCUE — "IT COMPOUNDS OVER TIME" — ALSO FAILS.** (I had lumped two
+different claims together; they deserve separating.) `Spin4`-KO carries **~40% from conception**,
+through every high-throughput phase, for **+5.06% tibia**. A drug gives **~3.5%** — 8.7% of that
+magnitude — for **~2 of ~16 growth years**, and **the last two**, when throughput is lowest.
+> **An order-of-magnitude smaller perturbation over an eighth of the growth period at its least
+> productive end does not reproduce a lifelong 40%.** ⚠ Scaling argument, not a measurement — flagged.
+
+### => WHAT THIS KILLS AND WHAT IT DOES NOT
+| | status |
+|---|---|
+| ⛔ **the feedback-amplification rescue** | ⛔ **DEAD — measured, with a positive control** |
+| ⛔ **MOXIDECTIN AT SYSTEMIC DOSES** | ⛔ **DEAD — 12x short with no amplifier** |
+| ⛔ "compounds over time" | ⛔ does not close the gap |
+| ✅ **SELAMECTIN** | ✅ **UNAFFECTED — never needed amplification** (IC50 0.103 uM, 0.166 mg/kg, 90x margin) |
+| ✅ **LOCAL / DEPOT DELIVERY, either drug** | ✅ **UNTOUCHED — a local depot sets tissue concentration directly and removes the systemic CNS ceiling. Moxidectin CAN reach 0.847 uM locally.** |
+| ✅ **the SPIN4 target itself** | ✅ **CONFIRMED by Term A — SPIN4 supplies 38% of chondrocyte Wnt output, which is exactly why its loss works** |
+⭐ **R136's STRUCTURAL CLAIM IS CORRECTED, NOT JUST ITS CONSEQUENCE.** R136 wrote the loop means *"the
+dose required to move this node is LOWER than a linear model predicts"* — **withdrawn. TCF7L2 does
+occupy the locus (4 peaks of 100 TFs, on a constitutively transcribed gene) but the loop carries
+essentially no gain. R136 read OCCUPANCY as REGULATION, having flagged that exact risk in the same
+paragraph and then relied on it anyway.**
+
+### => WHAT I WOULD HAVE ACCEPTED AS A POSITIVE (so the negative is not unfalsifiable)
+- SPIN4 concordance **>=65%** in B1 (near AXIN2's 69.5%) -> coupling ~0.3, g ~0.11 — a real loop.
+- SPIN4 **positively** correlated with Wnt output across zones.
+**NEITHER HAPPENED. BOTH WENT THE WRONG WAY, IN INDEPENDENT DATA.**
+⚠ **Limits, in full:** (1) RummaGEO is mostly cancer lines — ⚠ **but so was the ENCODE TCF7L2
+occupancy that motivated the hypothesis; both stand on the same tissue footing.** (2) binary calls,
+coarse — ⚠ **which is why the AXIN2 control matters: the same coarse instrument resolved a real target
+at 69.5%.** (3) B2 is n=4 zones. (4) a steeply nonlinear loop with high gain only near an unvisited
+threshold is the one escape hatch — **a bare possibility with no evidence.** (5) Term A is an upper bound.
+> **Every limitation would have to be wrong by ~100x to rescue this. g needs 0.91; it measures 0.016-0.042.**
+
+### => ⛔ SO: IS MOXIDECTIN DEAD? **SYSTEMICALLY, YES.**
+> **I checked the one thing that could have saved it, with a positive control proving the assay works,
+> and the answer is 1.02x. It is not "probably too weak" or "needs more work" — it is 12x short with no
+> amplifier, and the amplifier I proposed two rounds ago does not exist.**
+**Explant design changes:** there is **no longer any reason to include moxidectin-achievable systemic
+concentrations (0.03-0.17 uM) hoping amplification rescues them.** Include low concentrations to MAP
+THE CURVE, not to test a rescue that has been measured and refuted.
+
+### CORRECTIONS
+- ⛔⛔ **R136's POSITIVE-FEEDBACK AMPLIFICATION ARGUMENT WITHDRAWN, MEASURED.** g = 0.016-0.042 vs 0.91
+  required; amplification **1.02x**.
+- ⭐ **Positive control included:** AXIN2 scores **69.5%** where SPIN4 scores **52.1%** on the identical
+  test. **SPIN4's Wnt coupling is 11% of a real Wnt target's.**
+- ⭐ **Second independent line agrees:** SPIN4 **anti**-correlates with Wnt output across human zones
+  (mean r = -0.28, all four readouts negative).
+- ⛔ **R139's and R142's reliance on the amplification argument is withdrawn.**
+- ⛔ **The "compounds over time" argument separated out and also fails.**
+- ⛔⛔ **MOXIDECTIN AT SYSTEMIC DOSES IS DEAD.**
+- ✅ **Selamectin unaffected. Local/depot delivery unaffected and now the ONLY route that rescues
+  moxidectin. The SPIN4 target itself is CONFIRMED by Term A.**
 
 ---
 
