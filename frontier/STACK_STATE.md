@@ -1,12 +1,101 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R119
+**Last updated:** F-R120
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-DRUGS. **F-R120 — THE DRUGGABILITY SWEEP. SPIN4 HAS A COMMERCIAL nM INHIBITOR. THE DECISIVE EXPERIMENT IS FULLY ARMED.**
+
+**PROCESS FAILURE FIRST.** R119 repeated the atlas line *"there is no SPIN4 drug, a histone reader with no
+inhibitor"* **without testing it. It is wrong.** **RULE ADOPTED: no target is recorded as undruggable
+without a chemical-matter search; any inherited "no drug exists" claim is re-verified before reuse.**
+
+### => ⭐⭐⭐ SPIN4 IS DRUGGABLE AND THE FIELD'S "LIABILITY" IS OUR ACTIVITY
+| compound | SPIN1 | SPIN4 | availability |
+|---|---|---|---|
+| **VinSpinIn** | **9.9 nM** | **BINDS — large thermal shift; KDs ~10-130 nM ACROSS the Spin family** | **COMMERCIAL (MCE), SGC probe, PDB 6I8B** |
+| compound 18 | 30 nM | **Kd 0.71 uM** | published series |
+| A366 | ~180 nM Tudor | nonselective | commercial — **but major G9a off-target (G9a already null, R112/113)** |
+| EML631-633 | selective | **NO interaction** | ⛔ wrong compounds for us |
+**THE INVERSION:** the med-chem field spent a decade engineering SPIN4 binding OUT as an off-target
+liability. **FOR US THE OFF-TARGET IS THE TARGET — the "unselective" compounds are the valuable ones.**
+That is why "SPIN4 inhibitor" returns nothing and SPIN1 chemistry returns a nM commercial SPIN4 binder.
+**Reader logic:** SPIN4's phenotype is LOSS of function (lui2023 +4.5 to +5 SDS); a Tudor-domain blocker
+prevents chromatin engagement = the LOF mechanism. No degrader needed.
+**CAVEATS:** pan-SPIN also blocks SPIN1 (an oncology target) — not clean. **Binding SPIN4 ≠ phenocopying
+Spin4-KO in cartilage. No Spindlin inhibitor has EVER been given to a growing animal. No bone-length
+endpoint exists for the class.**
+
+### => ⭐⭐ THE WNT AGENT ROUND 281 SAID DID NOT EXIST — IT EXISTS, DOSED IN HUMANS
+R281's spec: *"an agent that lowers canonical Wnt TRANSCRIPTIONAL OUTPUT — not ligand secretion."*
+**β-catenin/CBP interaction inhibitors are exactly that class:** **PRI-724 / C-82** (dosed in humans to
+**905 mg/m2/day**, NCT01764477; pancreatic/colon/myeloid, HCV cirrhosis), **ICG-001** (blocks CBP/β-catenin
+**without disturbing β-catenin/p300**), **E7386** (clinical). Act downstream of ligand and receptor.
+**⚠ MAY BE SIGN-WRONG:** ICG-001 blocks the **CBP** arm (proliferation/stemness) and spares **p300**
+(differentiation). SPIN4 loss lowers Wnt and **EXPANDS** the pool; a CBP-selective blocker may push resting
+cells to differentiate instead. **Direction unverified in cartilage. Candidate, not answer.**
+**Second conflict (R119):** Axin2+ cells REQUIRE Wnt while resting cells need Wnt INHIBITION.
+
+### => ⭐⭐ newton2019's DECISIVE EXPERIMENT IS NOW FULLY ARMED
+**CHARGE (4 options, 2 APPROVED):** **MHY1485** — mTORC1-SELECTIVE activator (requires mTORC1 not mTORC2),
+dose-dependent p-mTOR/p-S6 at 1/3/10 uM, **IN VIVO PRECEDENT (activated ovarian grafts -> healthy pups)**,
+commercial | **PDGF-BB — APPROVED** (becaplermin; Augment rhPDGF-BB+β-TCP local matrix) | **local GH —
+APPROVED** (ratio 1.95) | SAG post-SOC (research-grade, +3.63%).
+**DISCHARGE: VISMODEGIB — APPROVED (Erivedge).** Forced Tsc1-expanded clusters to differentiate directly
+into columnar cells. **HARD BOUND: two extra doses FUSED the plate at P37; window never mapped.**
+**=> NOTHING ABOUT THIS EXPERIMENT IS BLOCKED BY CHEMISTRY ANY MORE. IT IS BLOCKED BY NOBODY RUNNING IT.**
+
+### => THE FULL DRUGGABILITY MAP — 16 TARGETS, 9 APPROVED
+| term | target | agent | status |
+|---|---|---|---|
+| N charge | SPIN4/pan-Spindlin | **VinSpinIn** | commercial probe, nM, binds SPIN4 |
+| N charge | canonical Wnt output | **PRI-724/C-82**, ICG-001, E7386 | human PK; **direction unverified** |
+| N charge | mTORC1 | **MHY1485** | commercial, in vivo precedent |
+| N charge | PDGFR | **PDGF-BB** | **APPROVED** |
+| N charge | GHR (local) | **somatropin** | **APPROVED** |
+| N charge | SMO | SAG | research-grade |
+| N discharge | SMO | **vismodegib** | **APPROVED** |
+| N fate | VEGF | **aflibercept** | **APPROVED** |
+| N fate | BMP | **BMP-2** | **APPROVED** (INFUSE) |
+| h_term / NPR2 activity | FGFR1-4 | **erdafitinib** | **APPROVED — BASE** |
+| NPR2 phospho | PP2A/PPP | LB-100 | clinical-stage |
+| CNP ligand | NPR2 | **vosoritide/navepegritide** | **APPROVED** |
+| clearance-enzyme | neprilysin | **sacubitril** | **APPROVED, paediatric** |
+| clearance-receptor | NPR3 | osteocrin-class | **research-grade only — the ONLY unobtainable one** |
+| closure/regime | aromatase | **anastrozole** | **APPROVED — BASE** |
+
+### => ⭐ THE CONCLUSION
+**THIS PROGRAMME IS NO LONGER CHEMISTRY-LIMITED.** Every term in `height = N x A x h_term`, plus the fate
+switch, plus BOTH halves of the decisive pool experiment, has an obtainable agent. **What is missing is not
+molecules — it is that the two-phase pool protocol has never been run to a length endpoint in any species,
+and no Spindlin inhibitor has ever been given to a growing animal.**
+
+### => TARGET STATUS: 7x ARITHMETIC UNCHANGED
+**Nothing here is a measured length gain.** VinSpinIn has no bone endpoint; PRI-724 has none and may be
+sign-wrong; MHY1485 has no skeletal data; the charge/discharge pairing is unmeasured. **Need 6.99x, have
+~2.60x.** What changed is the CHARACTER of the gap: four rounds ago N was "a term with no agent"; it is now
+a term with **five candidate charge agents, an approved discharge agent, an approved fate switch, and a
+commercial inhibitor of the one gene with a human +4.5 to +5 SDS overgrowth phenotype** — none connected
+to a caliper.
+
+### RANKED NEXT
+1. **VinSpinIn in a growing animal, bone-length endpoint.** Compound exists, human genetics are +4.5-5 SDS,
+   never attempted in any form.
+2. **newton2019's pairing to a length endpoint** — runnable with MHY1485 -> vismodegib, or **PDGF-BB ->
+   vismodegib using TWO APPROVED AGENTS.**
+3. **Resolve the β-catenin/CBP direction in cartilage** before treating PRI-724 as an N agent.
+
+### CORRECTIONS
+- **"There is no SPIN4 drug" WITHDRAWN** — atlas round 281 is factually wrong.
+- **R281's "the compound that reaches its pathway implements the wrong half" SCOPED** — true of PORCN
+  inhibitors, false of β-catenin/CBP inhibitors, which were never considered.
+- **R119's "no drug follows" withdrawn on both counts.**
 
 ---
 
