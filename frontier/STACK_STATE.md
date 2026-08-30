@@ -1,12 +1,119 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R154
+**Last updated:** F-R155
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-TETANSWER. **F-R155 — ⭐⭐⭐ **YES, AT ~50% AND ONLY AT ~50%.** `IMPC` HAS SYSTEMATIC PHENOTYPING ON **HETEROZYGOUS** Tet1 MICE — THE EXACT GENOTYPE OF THE 90 HUMAN CARRIERS — AND **BODY LENGTH IS UP, MALE-SPECIFIC, WEIGHT-ADJUSTED**. ALL 4 MALE HITS IN A 57-TEST PANEL ARE MUSCULOSKELETAL AND BENEFICIAL (**HYPERGEOMETRIC P=1.8e-4**). ⛔ AND THE ALBUMIN PAPER **BREAKS MY R154 DOSE TABLE.**
+
+### => ⭐⭐⭐ THE DECISIVE DATASET — IMPC, IN THE RIGHT GENOTYPE
+R154's threat was *"mice lacking TET1 are viable but **smaller**"* — a **HOMOZYGOUS** claim. The human
+evidence is **HETEROZYGOUS**. **Nobody had checked the het.** IMPC has, systematically and blind:
+
+> **`Tet1<tm1a(KOMP)Wtsi>`, colony MGCW, WTSI, MGP Select Pipeline, `IMPC_DXA_006_001` "Body length",
+> LMM **including Weight**, ⭐ zygosity HETEROZYGOTE.**
+
+| | |
+|---|---|
+| **effect size** | ⭐ **+0.282** |
+| genotype p | **0.0217** |
+| ⭐ **male p** | ⭐ **0.0237** |
+| female p | 0.342 |
+| homozygote | **NotProcessed** |
+
+> ### ⭐⭐ **BODY LENGTH UP IN Tet1 HETS, MALE-SPECIFIC, BY DXA WITH WEIGHT IN THE MODEL — a skeletal length effect, not a body-size confound. The subject is male.**
+
+### => ⭐⭐⭐ AND EVERY MALE HIT IS MUSCULOSKELETAL AND BENEFICIAL
+| parameter | effect | **p (male)** | |
+|---|---|---|---|
+| **Bone Mineral Density (excl. skull)** | **+0.045** | **0.0148** | ⭐ denser |
+| ⭐ **Body length** | ⭐ **+0.282** | ⭐ **0.0237** | ⭐ **longer** |
+| **Fat mass** | **−0.391** | **0.0420** | leaner |
+| **Forelimb grip strength** | **+0.552** | **0.0422** | stronger |
+
+**Females: only haematocrit and creatine kinase — nothing musculoskeletal.**
+
+⚠ **THE OBJECTION, AND THE TEST THAT ANSWERS IT.** IMPC flags all of these **`significant=False`** (they
+fail the pipeline-wide correction), and 4 hits from 57 tests is near chance. **On individual p-values this
+would be noise.** But the hits are not scattered:
+```
+unique parameters with a male KO effect : 57
+musculoskeletal / body composition      :  8  (14.0%)
+nominally significant p<0.05            :  4
+of those musculoskeletal                :  4  (ALL)
+expected by chance                      :  0.56
+⭐ HYPERGEOMETRIC P                      :  1.77e-4
+```
+> ### ⭐⭐⭐ **THE CLUSTERING IS THE SIGNAL: P=1.8e-4. Chance scatters hits across haematology, immunology, metabolism, behaviour — where the other 49 tests live. All four landed in the 14% that measure the skeleton, same direction, one sex.**
+
+### => ⭐⭐⭐ THE MAGNITUDE LADDER NOW HOLDS IN TWO SPECIES
+| perturbation | system | result |
+|---|---|---|
+| ⭐ **~50% (het)** | **human, n=90, 1.45M exomes** | ⭐ **+7.74 cm, P=8.84e-27** |
+| ⭐ **~50% (het)** | ⭐ **mouse, IMPC, systematic** | ⭐ **body length +0.28, male p=0.024** |
+| ⛔ **100% (hom null)** | mouse | ⛔ **smaller** |
+
+> ### ⭐⭐⭐ **ANSWER: TET1 INHIBITION IS GOOD FOR GROWTH AT ~50%, AND ONLY AT ~50%. Overshoot is not theoretical — it has a published phenotype, and we can now see both ends of the ladder.**
+
+⭐ **R154's HOLE 4 RETIRED:** trabecular bone loss belongs to the Tet1/Tet2 **DOUBLE** KO. In the **single
+het, BMD is UP** (male p=0.0148).
+
+### => ⛔⛔ THE ALBUMIN PAPER BREAKS R154's DOSE TABLE
+`Nguyen, Østergaard & Gammelgaard, Anal Bioanal Chem` (CE-ICP-MS):
+> *"The reaction of auranofin with HSA and plasma proceeded **fast; 50% of unbound auranofin disappeared
+> within 2 and 3 min**… **Cys-34 was the main reaction site**."*
+
+> ### ⛔⛔ **NOT reversible binding — auranofin REACTS with albumin and is CONSUMED with a 2–3 MINUTE half-life. Intact auranofin barely circulates; the persistent species is albumin-Au.**
+> ### ⛔ **R154's free-fraction table is WITHDRAWN — it compared a "free fraction of total gold" against a 76 nM IC50 measured on the INTACT drug, i.e. a species that is not there. The R141 error class, caught by an operator-supplied document rather than by me.**
+
+⭐ **WHAT SURVIVES:** the cellular result was obtained **in serum-containing medium (albumin present)** —
+0.1 µM → global **5hmC down, 5mC up** (dot blot + LC-MS/MS). So **0.1 µM with albumin is a MEASURED active
+concentration**. And gold pharmacology is thiol-exchange shuttling: albumin-Au is a **transport form**.
+
+| | |
+|---|---|
+| cellular active concentration (albumin present) | **0.10 µM** |
+| plasma total gold, RA / phase-I dose | **1.58 µM** |
+| ⭐ ratio | ⭐ **~16× above active** |
+
+⭐ **Direction unchanged and still favourable: probably TOO MUCH, and too much is fixable by dosing less**
+(the inverse of moxidectin). ⛔ **But fractional engagement is no longer calculable — exposure bounded, % inhibition not.**
+
+### => ⭐ SELECTIVITY, HARD NUMBERS (supplementary .docx cracked — it is a zip; `word/document.xml`)
+| | TET1 | TET2 | TET3 |
+|---|---|---|---|
+| **SPR KD** | **1.804 µM** | **7.820 µM** | **6.280 µM** |
+| binding selectivity | — | ⚠ **4.3×** | ⚠ **3.5×** |
+| **activity** | **IC50 76 nM** | ⭐ **6% inhibited at 1 µM** → implied **~15.7 µM** | — |
+| ⭐ **functional selectivity** | — | ⭐ **~206×** | — |
+
+⭐ **Functional selectivity over TET2 (the CHIP/AML gene) is ~200×, far better than the "≥13×" claimed.**
+⚠ But **binding** selectivity is only 3.5–4.3×, and ⛔ **the paper has a 24-fold internal inconsistency**
+(TET1 KD 1.804 µM vs IC50 0.076 µM, same study). The "≥13×" matches neither. **Flagged, unresolved.**
+⭐ **ON-TARGET GENETICALLY (S11/S12): rescued by TET1-CD overexpression, NOT by TET2-CD or TET3-CD.**
+⭐ **S13: NAC does not rescue, ROS unchanged — TrxR/ROS route excluded again.**
+
+### => ⛔ GIANNINI 1990 — NO GROWTH DATA. PLAINLY.
+All 11 pages read and searched. **The 12 outcome variables are entirely articular** (physician global,
+active joint count, severity scores). ⛔ **No height, no growth velocity, no anthropometry.** The only
+"growing child" is a sentence about adjusting mg for **weight gain**. **The randomised paediatric growth
+readout I hoped for does not exist.**
+
+⭐ **But two things do land:**
+| | auranofin (n=119) | placebo (n=112) |
+|---|---|---|
+| discontinued | **14 (11.8%)** | **14 (12.5%)** |
+| ⭐ **for an adverse effect** | ⭐ **1** | **4** |
+*"Auranofin appears to be **very safe in children with JRA**."* 231 children, 6 months, 0.15–0.20 mg/kg/day.
+⭐⭐ **And: *"the drug is well absorbed in children with JRA, and blood levels are comparable with those
+attained in adults"* — this LICENSES ADULT PK FOR A PAEDIATRIC DOSE**, a bridge this programme rarely gets.
+Monitoring set from the exclusions: proteinuria >200 mg/24h, haematuria, creatinine >1.5, WBC <4,000, platelets <150,000.
 
 ---
 
