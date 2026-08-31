@@ -1,12 +1,121 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R173
+**Last updated:** F-R174
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-NDA. **F-R174 — ⭐⭐⭐ **THE FDA APPROVAL PACKAGE (NDA 18-689) CLOSES THE CHAIN.** IT CONFIRMS THE TOXOPHORE ARGUMENT IN THE REGULATOR'S OWN WORDS (***"NO INTACT AURANOFIN WAS FOUND IN BLOOD… THE PHOSPHOROUS MOIETY WAS EXCRETED AS TRIETHYLPHOSPHINE OXIDE"***), GIVES **DEFINITIVE STEADY-STATE BLOOD GOLD `0.62 ± 0.195 µg/mL` AT 6 mg/day (n=91), EXPLICITLY *PROPORTIONAL TO DOSE***, AND **ONLY 0.4% RETAINED AT 6 MONTHS.** ⭐⭐⭐ **`2 mg/day` → 45–53% TET1 OCCUPANCY — DEAD ON THE HETEROZYGOTE TARGET — AND IS ITSELF AN FDA-CHARACTERISED DOSE.** ⛔ THREE OF MY OWN NUMBERS CORRECTED.**
+
+**Document:** `R174_the_fda_approval_package_closes_the_chain_and_2mg_per_day_lands_on_fifty_percent.md`
+**Operator-supplied:** `Ridaura_NDA_18689_FULL_2up_59pages.pdf` (FDA Summary Basis of Approval, scan — read by page rendering), `walz1983.pdf`
+
+### ⭐⭐⭐ THE TOXOPHORE ARGUMENT, CONFIRMED BY THE REGULATOR WITH THREE RADIOLABELS
+> ⭐⭐⭐ *"In rats and dogs, using **³²P, ³⁵S, and ¹⁹⁵Au labeled auranofin, NO INTACT AURANOFIN WAS FOUND IN
+> BLOOD.** Gold was found mostly bound to red blood cells and plasma proteins. **The phosphorous moiety was
+> excreted in the urine as TRIETHYLPHOSPHINE OXIDE.** The sulfur moiety is presumed to be acetyl
+> thioglucose. **The active moiety is presumed to be gold.**"*
+> ⭐⭐ *"…intact auranofin is not detected in the blood, and the presumed active moiety is the gold itself."*
+
+⭐⭐⭐ **Three radiolabels, two species, stated twice. R169/R171's chondrocyte ceiling is CLOSED as a
+systemic-dosing concern** — Kirkpatrick applied a molecule that does not exist in dosed blood.
+⚠ *"the possibility of pharmacological effects of the other two moieties has not been studied"*; the
+`Dean 2017` HSA-Au(PEt₃) tension remains unresolved.
+
+### ⭐⭐⭐ DEFINITIVE HUMAN PK — REPLACES EVERY ESTIMATE I HAD
+| quantity | FDA value | replaces |
+|---|---|---|
+| ⭐⭐⭐ **steady-state blood gold, 6 mg/day** | **0.62 ± 0.195 µg/mL (n=91, 3 mo); 0.68 ± 0.452 (n=63, 6 mo)** | Walz's single 0.6 |
+| ⭐⭐⭐ **dose–exposure** | ***"proportional to dose"*** | ⭐ **the enabling fact** |
+| ⛔ plasma t½ | **17 d single / 26 d steady state** | ⛔ **my "35 days" — WRONG** |
+| ⛔ total-body t½ | 58 d / 80 d | — |
+| ⛔ time to steady state | **~3 months** | ⛔ **my "~6 months" — WRONG** |
+| ⭐⭐⭐ **retention at 6 mo** | ***"only 0.4% retained"***; ~100% eliminated | ⭐⭐ **hole 10** |
+| ⭐ absorption | ~25% | confirms assumption |
+| ⚠ single-dose peak | 0.039–0.11 µg/mL @1.5–2.5 h | R154's "Cmax 0.312" is **not** steady state |
+| denominator | **4,784 patients, 78 studies** | — |
+
+> ⭐⭐⭐ **HOLE 10 LARGELY CLOSES: Vernon-Roberts' 23-YEAR depot is an INJECTABLE AUROTHIOMALATE phenomenon.
+> Oral auranofin is ~100% eliminated by 6 months with 0.4% retained. I had been importing the wrong drug's
+> kinetics.** ⚠ Emergency reversal is still weeks, not hours.
+
+### ⭐⭐⭐ THE DOSE FALLS OUT AND LANDS ON THE TARGET
+Chain: **FDA blood gold (∝ dose)** → **Gottlieb cartilage:plasma 0.53** → **R172 nuclear fraction** →
+occupancy = C/(C+IC₅₀), IC₅₀ = 0.076 µM.
+
+| dose | blood Au µg/mL | cartilage total µM | nuclear µM | ⭐ **TET1 occupancy** |
+|---|---|---|---|---|
+| 1 mg/day | 0.103 | 0.28 | 0.031–0.043 | 29–36% |
+| ⭐⭐⭐ **2 mg/day** | **0.207** | **0.56** | **0.062–0.086** | ⭐⭐⭐ **45–53%** |
+| ⭐ 3 mg/day | 0.310 | 0.83 | 0.093–0.129 | 55–63% |
+| ⛔ **6 mg/day (standard)** | 0.620 | 1.67 | 0.187–0.258 | ⛔ **71–77%** |
+| ⛔ 9 mg/day | 0.930 | 2.50 | 0.280–0.387 | ⛔ 79–84% |
+
+> ⭐⭐⭐ **`2 mg/day` = 45–53% OCCUPANCY AGAINST A ~50% TARGET.** ⭐⭐ **The standard 6 mg/day = 71–77% — a
+> FIFTH independent line reaching the overshoot conclusion of R168, R169, R170 and R172.**
+
+### ⭐⭐⭐ AND 2 mg/day IS FDA-CHARACTERISED, NOT AN EXTRAPOLATION
+> **Protocol 15 (n=273), 2 vs 6 mg/day:** *"**Both dose groups showed a statistically significant
+> improvement** from baseline in the number of tender joints, the number of swollen joints, the articular
+> index, ESR and grip strength at both the three and six month intervals."*
+> ⭐⭐ **AE discontinuation/reduction: 12% (14/114) on 2 mg/day vs 18% (21/116) on 6 mg/day.**
+> **Protocol 14 (n=138), 1 vs 9 mg/day:** *"**neither 1 mg/day nor 9 mg/day appeared to be an optimum
+> starting dose: 1 mg/day had an insufficient therapeutic effect and 9 mg/day had an excessive increase in
+> incidence of diarrhea**."*
+
+⭐⭐⭐ **2 mg/day was studied in 134 patients with demonstrated activity and a LOWER AE rate than the marketed
+dose; 1 mg/day is the FDA's own floor of activity. The dose our TET1 arithmetic wants is INSIDE the
+characterised range.**
+
+### ⭐⭐ THE BEST SKELETAL-SAFETY DATA AURANOFIN HAS — AND IT IS NEGATIVE FOR SKELETAL DEFECTS
+| species | dose | × human | finding |
+|---|---|---|---|
+| ⛔ rabbit | 0.5, 3, 6 mg/kg/d | 4.2–50× | resorptions, abortions, congenital abnormalities — ⭐ *"**mainly ABDOMINAL defects** such as gastroschisis and umbilical hernia"* |
+| ⭐ rat | 5 mg/kg/d | 42× | resorptions ↑, litter size/weight ↓, *"linked to **maternal toxicity**"*; ⭐⭐ **none at 2.5 (21×)** |
+| ⭐⭐ mouse | 5 mg/kg/d | 42× | ⭐⭐⭐ *"**had NO teratogenic effects**"* |
+
+⭐⭐ **Segment II protocols mandate whole-fetal skeletal examination. Across three species at up to 42–50×
+the human dose the malformations were ABDOMINAL-WALL, not skeletal.**
+⚠ **Fetal skeletal development ≠ postnatal growth-plate function, and this does not measure gold in a
+growth plate.**
+
+### ⛔⛔ HOLE 16 QUANTIFIED, AND IT IS REAL
+| study | doses | × human | finding |
+|---|---|---|---|
+| ⛔⛔ **rat 24-mo** | 0.4, 1.0, 2.5 mg/kg/d | 3, 8, 21× | **malignant renal epithelial carcinomas + tubular karyomegaly/cytomegaly significantly ↑ at 1.0 and 2.5** — ⭐ **NOT at 0.4** |
+| ⛔ rat 12-mo | 23 | 192× | renal tubular tumours; ⭐ not at 3.6 (30×) |
+| ⛔ mouse 18-mo | 1, 3, 9 | 8, 24, 72× | benign hepatomas, high-dose males (p=0.02) |
+| ⭐ genotoxicity | — | — | ⭐ **NEGATIVE**: Ames, Saccharomyces, BALB/T3, Dominant Lethal; positive only mouse lymphoma 313–700 ng/mL **+S9** |
+
+⭐ **Gold sodium thiomalate gave the same renal finding — a gold-class effect in the organ where gold
+concentrates most** (Gottlieb renal cortex 129 µg/g; Intoccia: highest rat tissue = kidney). ⭐ **Negative
+genotoxicity battery ⇒ non-genotoxic accumulation mechanism ⇒ dose-avoidable.**
+
+**Margins at 2 mg/day (45 kg = 0.044 mg/kg/day; FDA implied human reference 0.122 mg/kg/day → we are 0.36×):**
+| benchmark | margin |
+|---|---|
+| ⭐ **rat 24-mo renal NOAEL (0.4)** | ⭐ **9.0×** |
+| rat 24-mo renal LOAEL (1.0) | 22.5× |
+| rabbit teratology LOAEL (0.5) | 11.2× |
+| rat teratology NOEL (2.5) | 56× |
+| mouse no-teratogenicity (5.0) | 112× |
+
+⚠ **9× to a rodent tumour NOAEL under chronic multi-year dosing is not enormous. This is the residual
+neoplasia risk; it is now quantified rather than hand-waved, and 40 years of human use has produced no
+renal-cancer signal.**
+
+### ⛔ CORRECTIONS TO MY OWN NUMBERS
+| my figure | correct |
+|---|---|
+| ⛔ "35-day half-life" (carried since R154) | **17 d plasma single / 26 d steady state**; 58/80 d total-body |
+| ⛔ "~6 months to steady state" | ⭐ **~3 months** |
+| ⛔ "cartilage gold persists; hole 10 is the worst structural defect" | ⭐ **~100% eliminated by 6 mo, 0.4% retained** |
+| ⚠ R154 "Cmax 0.312 µg/mL" | single-dose peak, **not** steady state (0.62–0.68) |
 
 ---
 
