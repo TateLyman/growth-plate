@@ -1,12 +1,96 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R168
+**Last updated:** F-R169
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-CHONDROCEIL. **F-R169 — ⭐⭐⭐ CHASING GOLD FOUND SOMETHING BETTER THAN A LOCALISATION STUDY: A **MEASURED CHONDROCYTE TOXICITY THRESHOLD FOR `TRIETHYLPHOSPHINE GOLD` — AURANOFIN'S OWN FRAGMENT — IN THE TARGET CELL TYPE.** NOAEL **0.86 µM**, CYTOTOXIC **4.28 µM**. ⭐⭐ **THE FILE'S FIRST THERAPEUTIC WINDOW IN CHONDROCYTES: 11.3×.** ⛔⛔ IT BREAKS R165's ARITHMETIC (**23× OVER**) AND **FORCES THE FREE FRACTION BELOW ~4% FROM THE CLINICAL RECORD.** ⛔ **AND GOLD IS NOT THE LAST HOLE — TEN REMAIN.****
+
+**Document:** `R169_the_chondrocyte_toxicity_threshold_for_auranofins_own_fragment_exists_and_it_sets_the_dose.md`
+
+### ⭐⭐⭐ THE PAPER, AND IT USES OUR EXACT MOIETY
+> `A comparison of the effects of two gold-containing therapeutic agents on articular chondrocyte growth in
+> vitro`, **Rheumatol Int 1983 (PMID 6414070)** — lapine articular chondrocytes, monolayer. Endpoints:
+> **proliferation** and **³⁵SO₄ incorporation** (GAG synthesis) — what a growth-plate chondrocyte must do.
+
+| agent | conc. | result |
+|---|---|---|
+| **Aurothioglucose** | 0.2, 1, **10 µg/mL (28.5 µM)** | ⭐ *"failed to affect either parameter… no cytotoxic effect"* |
+| ⭐ **Triethylphosphine gold** | **0.3 µg/mL = 0.86 µM** | ⭐ *"did not alter proliferation or sulphate incorporation… not cytotoxic"* — **NOAEL** |
+| ⛔ **Triethylphosphine gold** | **1.5 / 3 µg/mL = 4.28 / 8.56 µM** | ⛔⛔ *"prevented subcultured chondrocytes from forming monolayers and was **CYTOTOXIC**"* — **LOAEL** |
+
+⭐⭐⭐ **`Triethylphosphine gold` is NOT a class analogue — it is the exact fragment auranofin delivers**
+(auranofin = Au(PEt₃)(tetraacetylthioglucose); on thiol exchange `[Au(PEt₃)]⁺` transfers to protein, Dean
+2017/R156). **Our species, our cell type, with a dose–response.**
+⭐⭐ **The internal contrast identifies the toxophore: aurothioglucose INERT at 28.5 µM vs triethylphosphine
+gold lethal at 4.28 µM — >33× apart. THE PHOSPHINE, NOT THE GOLD, IS THE CHONDROCYTE TOXOPHORE.**
+
+### ⭐⭐ THE FIRST THERAPEUTIC WINDOW ANCHORED IN THE TARGET CELL
+| quantity | value |
+|---|---|
+| **TET1 IC₅₀** | **0.076 µM** |
+| ⭐ **chondrocyte NOAEL** | ⭐ **0.86 µM** |
+| ⛔ **chondrocyte LOAEL** | ⛔ **4.28 µM** |
+
+> ⭐⭐⭐ **WINDOW = 11.3×.** Narrow but real — and the failure mode above it is **dose-dependent
+> cytotoxicity, titratable**, not a fixed developmental lesion.
+
+### ⛔⛔ IT BREAKS R165's ARITHMETIC — WHICH IS THE USEFUL PART
+| quantity | value | vs LOAEL 4.28 µM |
+|---|---|---|
+| ⛔ R165 projected cartilage **TOTAL** gold | ~100 µM | ⛔⛔ **23× OVER** |
+| ⚠ R157 **MEASURED** nuclear gold (Sharma) | 4.6–12.5 µM | ⚠ **1.1–2.9× OVER** |
+
+⛔ **If those were FREE concentrations, auranofin would be frankly chondrotoxic at the paediatric dose.**
+
+> ### ⭐⭐⭐ **BUT THE CLINICAL RECORD SAYS IT IS NOT — 88 children at 0.15–0.20 mg/kg/day for a mean ~2 years
+> (11 to five years) with NO cartilage or growth adverse effect, and 17 children with open epiphyses with
+> normal fusion over 3–9 years. THEREFORE THE FREE, CHONDROCYTE-AVAILABLE FRACTION OF CARTILAGE GOLD MUST
+> BE BELOW ~4% OF TOTAL.**
+> ⭐⭐ **First time this file has BOUNDED the free fraction from data rather than assuming it — and it
+> retro-validates the `TOTAL ≠ FREE` error class (R141/R155/R157) by showing what would follow if it were
+> false.**
+
+⭐ **And at that ceiling engagement is still comfortable: ≤4.28 µM free vs IC₅₀ 0.076 µM = ≤56×.**
+> ⭐⭐ **THE DRUG IS DOSE-LIMITED BY CHONDROCYTE TOXICITY, NOT BY TARGET ENGAGEMENT** — independently
+> reaching R168's conclusion from the toxicology side rather than the overshoot side.
+
+⚠ **Five caveats, recorded not buried:** subcultured monolayer chondrocytes are the most fragile
+preparation; culture albumin buffers less than plasma; µM conversion assumes Et₃PAuCl (350.6) — using
+[Au(PEt₃)]⁺ (315.1) shifts values ~11% and changes no conclusion; in vivo PEt₃ transfers to albumin Cys34
+and **Dean 2017 showed that species is bioactive at nanomolar, so binding does NOT simply detoxify**; rabbit
+articular ≠ human growth-plate resting-zone chondrocytes.
+
+### ⛔ GOLD IN GROWTH-PLATE CARTILAGE — ROUND FIVE, STILL NOTHING
+New angles this round: British spelling **`epiphysial`**; **`sanocrysin`** (the 1920s–30s gold drug given to
+children with skeletal TB); **`costochondral junction`** (toxicology's growth-cartilage sampling site);
+chronic rodent/dog bone histopathology; **citations of Oryschak 1976**; non-articular aurosome work; and an
+**open-web search** for book chapters and theses outside PubMed.
+⛔ **~30 distinct formulations across R163–R169. This is an ABSENCE IN THE LITERATURE, not a search failure.**
+
+### ⛔⛔ AND GOLD IS NOT THE LAST HOLE — TEN REMAIN
+| # | open hole | status |
+|---|---|---|
+| ⛔⛔ **6** | **TET2 → CHIP / myeloid malignancy** | **RE-OPENED (R163)** — pocket 9/9 identical; SPR says 3.5–4.3×, not 206× |
+| ⛔ **10** | **35-day half-life; cartilage residence to 14 months** | open, **worsened by R164** |
+| ⛔ **11** | off-targets: GR 599 nM, D3 224, α2A 331, **PARP-1 2,554** (inside the TRIM37–PARP1–TET1 axis) | open |
+| ⛔ **16** | neoplasia on chronic partial TET inhibition | open, unquantified |
+| ⛔⛔ **NEW** | **chondrocyte ceiling — 11.3× window, free fraction must stay <~4%** | **quantified here; the binding constraint on dose** |
+| ⛔ **R166** | gold **NARROWS the proliferative zone** in the only in vivo GP gold experiment | direction flag |
+| ⛔ | CYP2C9/3A4 × **erdafitinib** (stack base, narrow window) | monitorable |
+| ⛔ | **vitamin C** — TET1 activator, unresolved since R158 | open |
+| ⛔ | gold in growth-plate cartilage | absent from literature; needs one experiment |
+| ⚠ | [¹⁹⁸Au]auranofin 96.9% intact in HSA/72 h vs Nguyen 50% in 2–3 min | measurement conflict |
+
+> ⭐⭐ **The TARGET biology is in good shape after R167 (human resting-zone replication) and R168 (50% dosage
+> phenotypically silent; ACAN conflict deflated). What is NOT settled is the AGENT: selectivity, kinetics,
+> off-targets, and now the chondrocyte ceiling.**
 
 ---
 
