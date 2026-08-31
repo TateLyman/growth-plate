@@ -1,12 +1,86 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R172
+**Last updated:** F-R173
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-TOXOPHORE. **F-R173 — ⭐⭐⭐ **THE CHONDROCYTE CEILING LARGELY DISSOLVES: `Intoccia 1982` SHOWS AURANOFIN IS RAPIDLY DEGRADED TO TRIETHYLPHOSPHINE *OXIDE* IN VIVO — AND KIRKPATRICK'S OWN CONTROL SHOWS THE PHOSPHINE IS THE TOXOPHORE. THE TOXIC SPECIES IS NOT THE SPECIES PRESENT IN A LIVING ANIMAL.** ⛔⛔ AND HOLE #2 IS WITHDRAWN BY CORRECTING MYSELF: **THE `AuNP`-ALONE ARM APPEARS IN *NO* GROWTH-PLATE FIGURE.** ⭐ HOLE 10 REFINED (**the 23-year depot is sequestered macrophage gold**). ⛔ HOLE #1 UNMOVED.**
+
+**Document:** `R173_the_toxophore_is_destroyed_in_vivo_and_hole_2_was_my_own_over_reading.md`
+
+### ⛔⛔ HOLE #2 — I OVER-READ IT, AND THE RENDERED FIGURES SAY SO
+| figure | groups actually shown |
+|---|---|
+| **Fig 4** biosafety | **Control · AuNPs** — systemic only, ⛔ **no growth plate** |
+| **Fig 5** GP/PZ/HZ | ⛔ **Control · LPS · LPS+AuNPs** |
+| **Fig 6** TUNEL + toluidine blue | ⛔⛔ **Control · LPS · LPS+AuNPs** — ⛔ **R166's claim that the gold-only arm appears here is WRONG** |
+
+> ⭐⭐⭐ **THE `AuNP`-ALONE GROUP APPEARS IN NO GROWTH-PLATE PANEL ANYWHERE. Four groups were dosed; the
+> gold-only animals were assessed for SYSTEMIC biosafety only.**
+> ⭐⭐⭐ **THEREFORE THE PAPER PROVIDES NO EVIDENCE THAT GOLD NARROWS A NORMAL PROLIFERATIVE ZONE.** The only
+> PZ data is an LPS-inflamed plate where widening is **pathological stalling** and gold's effect is
+> **normalisation** (147 → 106 µm; control 80).
+⛔ **R166's flag is WITHDRAWN AS STATED — replaced by "never measured," the same status as hole #1, not a
+clean bill of health.**
+
+⭐ **Gold-alone data that does exist is neutral:** Fig 4A body-weight trajectories of Control and AuNP are
+**superimposed across all 16 days** in growing mice at 40 mg/kg i.p.
+⚠ Fig 4C confirms **IL-12 higher in AuNP in liver, kidney and lung** (3 of 4 organs).
+⚠⚠ **NEW DATA-QUALITY FLAG: Methods say "5 weeks old, female, 15 ± 1.2 g"; Fig 4A plots 38–47 g — a 2.5×
+internal inconsistency in the only in vivo growth-plate gold paper that exists.**
+
+### ⭐⭐⭐ THE CHONDROCYTE CEILING: THE TOXIC SPECIES IS DESTROYED IN VIVO
+> **`Intoccia AP et al., "Pharmacokinetics of auranofin in animals," J Rheumatol Suppl 1982` (PMID 6813497):**
+> ⭐⭐⭐ *"Evidence indicated that AF was **RAPIDLY DEGRADED TO TRIETHYLPHOSPHINE OXIDE** with the remaining
+> molecular fragments postulated to be a **PROTEIN-GOLD COMPLEX** and acetylthioglucose."*
+
+| compound | phosphine? | Kirkpatrick chondrocyte result |
+|---|---|---|
+| ⛔ **auranofin (intact)** | ⭐ YES | ⛔ **cytotoxic at 0.5 µg/mL gold** |
+| ⭐ **aurothioglucose** | NO | ⭐ **INERT at 5 µg/mL gold — 10× above therapeutic** |
+
+> ⭐⭐⭐ **KIRKPATRICK'S OWN INTERNAL CONTROL IDENTIFIES THE PHOSPHINE AS THE TOXOPHORE. INTOCCIA SHOWS IT IS
+> OXIDISED OFF IN VIVO. THE SPECIES THAT KILLED CHONDROCYTES IS NOT THE SPECIES CIRCULATING IN A TREATED
+> ANIMAL — AND WHAT *IS* CIRCULATING IS CHEMICALLY THE AUROTHIOGLUCOSE CASE HE FOUND INERT.**
+> ⭐⭐ **That resolves the paradox R171 could only partly explain: 40 years of serum gold ABOVE the in vitro
+> LOAEL with no cartilage pathology, including 88 children for ~2 years.**
+
+⭐ Kirkpatrick asked for exactly this — *"it would be of interest to know what **metabolites** of
+triethylphosphine gold are formed in vivo"* — and **Intoccia had answered it the year before, in the same
+drug's development programme.**
+⚠ **Tension recorded, not hidden:** `Dean 2017` showed **HSA-Au(PEt₃) with the phosphine RETAINED is
+bioactive at nanomolar**, so some phosphine-gold survives on protein. **Intoccia measured the actual in vivo
+fate and governs for the in vivo question; the tension is real and unresolved.**
+
+⭐ **Also from Intoccia:** oral absorption **17–23% (rat), 15–38% (dog)** — **my 25% assumption sits inside
+it**; terminal half-life **1.2–1.8 d (rat), 19.5 d (dog)**; ⛔ **rat tissue gold HIGHEST IN KIDNEY**
+(consistent with Gottlieb's renal cortex 129 µg/g, and not with cartilage); excretion faeces 84/81%,
+urine 10/16%, bile 3%.
+
+### ⭐⭐ HOLE 10 — WORSE AND BETTER AT ONCE, AND THE DISTINCTION IS THE POINT
+> `Vernon-Roberts 1976` (7 autopsies, 0–23 y after stopping; 23 serial synovial biopsies):
+> ⛔⛔ *"Gold persisted in synovial and other tissues for up to **23 YEARS** after chrysotherapy was stopped."*
+> ⭐⭐ *"…after stopping chrysotherapy, gold **DISAPPEARED FROM THE SYNOVIAL LINING CELLS**."*
+> ⭐ *"…accumulated progressively in the subsynovial connective tissues… **BORE NO RELATIONSHIP TO
+> FLUCTUATIONS IN SERUM GOLD LEVELS**"*; *"found within the **MACROPHAGES** of many organs."*
+
+> ⭐⭐⭐ **THE 23-YEAR DEPOT IS SEQUESTERED AUROSOMAL GOLD IN MACROPHAGE LYSOSOMES, EXPLICITLY DECOUPLED FROM
+> SERUM. THE METABOLICALLY ACTIVE COMPARTMENT CLEARED WHEN DOSING STOPPED. Hole 10's reversal problem
+> concerns the ACTIVE pool (~19.5 d dog / ~35 d human), not the depot** — the same `TOTAL ≠ FREE`
+> distinction R172 forced on the partition, now applied to the kinetics.
+⭐ Confirms the inflamed-synovium sink: *"gold is selectively concentrated within inflamed synovial tissues."*
+
+### ⛔ HOLE #1 UNMOVED
+Full Vernon-Roberts text read: **"cartilage" appears exactly TWICE, both in passing, with no measurement.**
+⛔ **Gold in growth-plate (epiphyseal) cartilage has still never been measured in any species. All three
+human surveys sampled ARTICULAR cartilage or none, in adults. `Tonna 1963` remains the only study that
+looked at the epiphyseal plate, and it was negative.**
 
 ---
 
