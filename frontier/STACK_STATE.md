@@ -1,12 +1,109 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R170
+**Last updated:** F-R171
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-KIRK. **F-R171 — ⛔⛔⛔ THE OPERATOR'S PDF **CORRECTS ME TWICE**. (1) KIRKPATRICK'S "TRIETHYLPHOSPHINE GOLD" IS **AURANOFIN ITSELF**, SO EVERY MOLAR VALUE IN R169 WAS **1.9× TOO HIGH — THE WINDOW IS 5.8×, NOT 11.3×**. (2) IT CITES A HUMAN AUTOPSY SURVEY SAYING **CARTILAGE GOLD IS *LOW*, NOT HIGH**, CONTRADICTING R165 AND **FLIPPING THE PROBLEM FROM TOXICITY TO POSSIBLE NON-DELIVERY.** ⛔⛔ AND THE AUTHORS' OWN CALCULATION: **THE CYTOTOXIC CONCENTRATION SITS *BELOW* HUMAN THERAPEUTIC SERUM GOLD.****
+
+**Document:** `R171_kirkpatricks_triethylphosphine_gold_is_auranofin_itself_and_it_corrects_me_twice.md`
+**Source:** `Kirkpatrick CJ & Mohr W, Rheumatol Int 1983;3:49–56` (operator-supplied full text)
+
+### ⛔⛔⛔ CORRECTION 1 — IT IS THE WHOLE DRUG, AND MY MW WAS WRONG
+Methods: ***"2,3,4,6-tetra-O-acetyl-1-thio-β-D-glucopyranosato-S (triethylphosphine) gold… supplied by
+**Smith, Kline & Dauelsberg GmbH**"*** — **the complete IUPAC name of AURANOFIN, from its own manufacturer.**
+R169 called it *"the exact fragment auranofin delivers."* ⛔ **It is the drug.** The paper confirms the mass
+balance: *"approximately **one-third** of the compound is gold"* (29.0%).
+
+| | R169 (wrong, MW 350.58) | ⭐ **R171 (correct, MW 678.48)** |
+|---|---|---|
+| NOAEL 0.3 µg/mL | 0.86 µM | ⭐ **0.442 µM** |
+| **LOAEL 1.5 µg/mL** | 4.28 µM | ⛔ **2.211 µM** |
+| ⭐ **window vs TET1 IC₅₀ 0.076 µM** | 11.3× | ⛔ **5.8×** |
+| projected cartilage total (~100 µM) | 23× over | ⛔ **45× over** |
+| measured nuclear gold 4.6–12.5 µM | 1.1–2.9× over | ⛔ **2.1–5.7× over** |
+
+⛔⛔ **EVERY MARGIN IN R169 WAS 1.9× TOO GENEROUS, IN MY OWN FAVOUR.**
+⭐ **What improves: relevance. A result on the actual clinical molecule outranks one on a fragment — this is
+now the most directly applicable toxicology datum in the file.**
+
+### ⛔⛔ THE AUTHORS' OWN THERAPEUTIC COMPARISON
+> ⭐ *"The concentration range… was 0.3 to 3 µg/ml, corresponding to a gold concentration of **0.1 to 1
+> µg/ml, comparable to the blood levels achieved during chrysotherapy**."*
+> `Finkelstein 1976`: auranofin **6–9 mg/day × 12 wk → peak blood gold 0.9–1.2 µg/mL**
+> `Walz 1979`: **6 mg/day × 4 wk → mean serum gold ≈ 0.6 µg/mL**
+
+| | as gold |
+|---|---|
+| ⭐ chondrocyte NOAEL | **0.1 µg/mL** |
+| ⛔ chondrocyte LOAEL | ⛔ **0.5 µg/mL** |
+| ⛔⛔ **human serum, 6 mg/day** | ⛔ **0.6 µg/mL** |
+| ⛔⛔ **human peak, 6–9 mg/day** | ⛔ **0.9–1.2 µg/mL** |
+
+> ⛔⛔⛔ **HUMAN THERAPEUTIC BLOOD GOLD EXCEEDS THE CYTOTOXIC CONCENTRATION BY 1.2–2.4× AND THE NO-EFFECT
+> LEVEL BY 6–12×.**
+
+⛔ **The specificity controls block the easy dismissal: aurothioglucose was INERT at 5 µg/mL gold (above
+therapeutic), and piroxicam, diclofenac, sulindac sulphide and indomethacin were inert in the same system.
+Auranofin alone was cytotoxic.**
+
+### ⭐⭐ THE RECONCILIATION IS ALBUMIN, AND IT IS QUANTIFIABLE
+Medium was **DMEM + 10% FBS** → albumin ≈ 2.3 g/L ≈ **35 µM**.
+
+| system | albumin | gold | **albumin : gold** |
+|---|---|---|---|
+| ⛔ culture at LOAEL | ~35 µM | 2.21 µM | ⛔ **≈16 : 1** |
+| ⭐ human plasma, 6 mg/day | ~600 µM | 1.6–3.1 µM | ⭐ **≈195–380 : 1** |
+
+⭐⭐⭐ **12–24× MORE BUFFERING CAPACITY PER UNIT GOLD IN VIVO.** Au(I) binds albumin Cys34 rapidly and
+near-quantitatively (Nguyen), so free fraction in vivo is ~an order of magnitude lower at equal total
+concentration — **why children tolerate serum gold above this assay's LOAEL.**
+⭐ Authors' own caveats: *"**matrix components were present in quantities much smaller than in the in vivo
+situation**"*; the cytotoxicity *"**does not necessarily mean that this gold compound is damaging to human
+articular cartilage in vivo**."* ⭐ Exposure was **acute (2–6 h)** on passage-II dedifferentiated cells.
+
+### ⛔⛔⛔ CORRECTION 2 — IT CONTRADICTS R165's CENTREPIECE
+> ⛔ Citing **`Gottlieb, Smith & Smith, Arthritis Rheum 1972;15:16–22`** (human autopsy tissue-gold survey):
+> *"the levels achieved in **cartilage are considerably LOWER** than… reticuloendothelial tissues,
+> **SYNOVIUM**, renal cortex or adrenal glands."*
+
+⛔⛔ **R165 reported Lawrence 1961 with cartilage as the HIGHEST tissue, 64× plasma and 32× synovium. THESE
+CANNOT BOTH BE TRUE** — and I had already flagged Lawrence's synovium value (0.02 mg/100 g, *below skin*,
+n=1, 0.03 g sample) as anomalous.
+
+| if cartilage gold is… | consequence |
+|---|---|
+| HIGH (Lawrence, ~100 µM) | ⛔ 45× over cytotoxic — a **SAFETY** problem |
+| LOW (Gottlieb) | ⭐ safety margin fine ⛔ but **does enough gold reach the plate to engage TET1?** — an **EFFICACY** problem |
+
+> ⭐⭐ **THE PROBLEM FLIPS RATHER THAN VANISHING.** R169's *"free fraction must be <4%"* derivation rests on
+> the HIGH estimate and becomes unnecessary if Gottlieb is right. ⭐ **The dose conclusion is unchanged —
+> start low, titrate on a measurement — but WHICH failure mode we steer away from is now unresolved.**
+
+### ⭐⭐ THREE THINGS IT INDEPENDENTLY CONFIRMS
+1. ⭐⭐ **Third-party corroboration of R164, different group:** *"Parenteral administration… resulted in the
+   production of aurosomes in the articular chondrocytes of **immature, but not mature, rabbits**."*
+2. ⭐ **Oral absorption = 25%, exactly the value R165 assumed** — ⚠ **but "with subsequent SPLITTING OFF of
+   sulphur and phosphine ligands and binding of the released aurous atoms to serum globulins and albumin."
+   The circulating species is protein-bound gold, NOT intact auranofin** — which further weakens transfer
+   of an intact-auranofin culture result to cartilage in vivo.
+3. ⭐ **R169's toxophore assignment strengthens: on a GOLD basis, aurothioglucose inert at 5 µg/mL vs
+   auranofin cytotoxic at 0.5 µg/mL — a ≥10-fold phosphine-attributable difference.**
+
+### ⛔ HIGHEST-VALUE OUTSTANDING DOCUMENTS
+1. ⭐⭐⭐ **`Gottlieb NL, Smith PM, Smith EM (1972) Arthritis Rheum 15:16–22`** — the human autopsy tissue-gold
+   survey. **Decides whether cartilage concentrates or excludes gold, and therefore whether our risk is
+   toxicity or non-delivery.**
+2. ⭐⭐ **`Grahame R et al. (1974) Ann Rheum Dis 33:536–539`** (PMID 4441131, PMCID PMC1006321) — independent
+   second survey. ⚠ **PMC serves it as a page scan behind a proof-of-work anti-automation challenge; I did
+   not defeat it.**
+3. ⭐ **`Vernon-Roberts B et al. (1976)`** — third survey, would break a 1–1 tie.
 
 ---
 
