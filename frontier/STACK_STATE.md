@@ -1,12 +1,100 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R169
+**Last updated:** F-R170
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-CHIPINVERT. **F-R170 — ⭐⭐⭐ **HOLE 6 DOES NOT JUST CLOSE — IT INVERTS.** TET INHIBITION **RESTRICTS `Tet2+/−` CLONES (THE CHIP GENOTYPE) WHILE SPARING WILD-TYPE MARROW**, AND **R163's "PAN-TET" FINDING IS THE PROPERTY THE MECHANISM REQUIRES, NOT A LIABILITY.** ⚠ ONE SMALL CONFOUNDED HUMAN SIGNAL REPORTED IN FULL. ⭐ **CYP × ERDAFITINIB DOWNGRADED**, ⭐ **GR DIRECTION CLAIMED**, ⭐ **HOLE 10 REFRAMED.****
+
+**Document:** `R170_hole_6_does_not_just_close_it_inverts_tet_inhibition_suppresses_the_chip_clone.md`
+
+### ⭐⭐⭐ HOLE 6 — THE ONE I RE-OPENED MYSELF, ANSWERED BY A PAPER ON DISK SINCE R161
+`Guan et al., Blood Cancer Discov 2021` exists **because TET inhibition is a THERAPY for TET2-mutant myeloid
+disease** — *"A Therapeutic Strategy for **Preferential Targeting of TET2 Mutant**… Cells in Myeloid
+Neoplasms."*
+
+> ⭐⭐⭐ ***"we did NOT observe any significant growth-inhibitory or anticlonogenic effects of TETi76 on bone
+> marrow–derived mononuclear cells from TET dioxygenase–PROFICIENT WILD-TYPE mice; on the contrary, it
+> significantly restricted the growth of `Tet2−/−` AND `Tet2+/−` mouse bone marrow mononuclear cells."***
+
+⭐⭐ **`Tet2+/−` IS THE CHIP GENOTYPE** — heterozygous TET2 loss is the commonest driver of clonal
+haematopoiesis. **A pan-TET inhibitor restricts it and spares wild type.**
+⭐ In direct competition: *"Tet2mt cells grew at a faster rate in the controls… TETi76 treatment
+**selectively restricted** the proliferation of Tet2mt cells"* — **the clonal advantage was abolished.**
+
+⭐⭐⭐ **THE MECHANISM REQUIRES PAN-TET ACTIVITY:** *"cells with functional TET2 and adequate TET activity may
+survive… whereas the cells with **defective TET2 are ELIMINATED or growth restricted**"*; the strategy is
+*"selective targeting of **RESIDUAL TET dioxygenase activity** in TET-deficient clones."* **A TET2-mutant
+clone lives on residual TET1/TET3; only a pan-TET agent removes that crutch.**
+
+> ⭐⭐⭐ **SO R163's FINDING — auranofin cannot be TET1-selective because the cosubstrate pocket is 9/9
+> identical — IS THE EXACT PHARMACOLOGY THIS PROTECTION NEEDS.** ⛔ **I filed that fact under "hole
+> re-opened" when it belonged under "hole closed," with the paper already on disk for seven rounds.**
+
+⭐ **Chronic in vivo, right genotypes:** `Tet2+/+`, `+/−`, `−/−`, **50 mg/kg 5 d/wk × 3 MONTHS** — no body
+weight or blood count change, and ⭐ **spleen size DECREASED in Tet2-deficient mice gene-dose-dependently**
+(splenomegaly is the myeloproliferation readout). Plus competitive reconstitution and human xenografts:
+*"suppresses the clonal evolution of TET2-mutant cells."*
+
+### ⚠⚠ THE ONE UNFAVOURABLE HUMAN DATUM, REPORTED BEFORE BANKING ANY OF THAT
+> `Scand J Rheumatol 1995` (PMID 7747148): **305 RA patients on sodium aurothiomalate, 2,293 person-years**
+> vs regional cancer register — *"no increased risk of total malignancies… however… an increased risk of
+> lymphoma and leukemia was found although **only significant in the gold-treated group**."*
+
+⭐ **Bounded four ways:** the authors attribute it to **RA's own haematopoietic excess** (no untreated
+comparator); ⭐⭐ ***"NOT correlated to dosage or duration"*** — **no exposure–response, the strongest
+argument against drug causation**; small (n=305, mean 19 mo) with acknowledged reporting error; and the
+comparator arm was **podophyllotoxin**, itself leukaemogenic.
+⚠ **Recorded as a residual watch item with a named measurement — annual CBC with differential, already
+standard on auranofin — NOT an unqualified closure.**
+
+### ⭐ CYP2C9/3A4 × ERDAFITINIB — CLASS EVIDENCE NOW SPLIT
+> `Toxicol In Vitro 2013` (PMID 24157406): a different Au(I)-**PPh₃** series ([Au(Ln)(PPh₃)], N⁶-benzyladenine)
+> in **PRIMARY HUMAN HEPATOCYTES**: ⭐ *"**no negative influence** on the major drug-metabolizing cytochrome
+> P450 isoenzymes and their signaling pathway."*
+
+⚠ **Two Au(I)-phosphine series, opposite results, neither is auranofin** — but the counter-evidence is in
+the better system. ⭐ **Plus 40 years of RA polypharmacy with no established CYP interaction; the 88-child
+extension explicitly permitted concomitant prednisone (≤10 mg/day) and TWO NSAIDs; and gold is not a CYP
+substrate at all** (disposition is thiol ligand exchange, not oxidative metabolism).
+⭐ **Downgraded to monitorable.** ⚠ Fix unchanged: serum phosphate + erdafitinib level, not abandonment.
+
+### ⭐ HOLE 11 — THE `GR` DIRECTION IS CLAIMED
+R154 listed **GR 599 nM** among off-targets with *"directions NOT claimed."* **GR agonism is one of the most
+reliable causes of growth failure in children**, so this is the off-target that mattered.
+⭐ The same 2013 study tested **GR transcriptional activity** directly: **no activation** (nor AhR).
+> ⭐⭐ **GR BINDING ≠ GR SIGNALLING. The catastrophic direction — glucocorticoid agonism in a growing child —
+> has evidence against it.**
+⚠ Class-level, reporter assay. ⭐ **The 40-year clinical phenotype is stronger: auranofin produces no
+Cushingoid features, no adrenal suppression, no steroid growth failure.**
+
+### ⭐ HOLE 10 REFRAMED — I HAD ONLY SCORED ONE SIDE
+> ⭐⭐ **A 35-day half-life means exposure climbs over MONTHS, not days. A low starting dose with a monthly
+> readout CANNOT overshoot abruptly. The kinetics that make an error slow to undo also make it slow to
+> commit and visible for months before it matters.**
+⭐ Converts hole 10 from "worst structural defect" into a **dosing constraint with a protocol shape**: start
+below target, titrate on a monthly measurement, accept ~6 months to steady state.
+⛔ **Emergency reversal remains unsolved — that part of the hole stands and cannot be engineered away.**
+
+### THE LEDGER AFTER THIS ROUND
+| # | hole | status |
+|---|---|---|
+| ⭐⭐⭐ **6** | TET2 → CHIP/AML | ⭐⭐⭐ **CLOSED AND INVERTED** ⚠ one small confounded human signal |
+| ⭐ **16** | neoplasia, chronic partial inhibition | ⭐ **substantially addressed by the same evidence** |
+| ⭐ | CYP × erdafitinib | ⭐ **downgraded — class data split, clean clinical record** |
+| ⭐ **11** | GR direction | ⭐ **claimed — binding ≠ signalling** |
+| ⭐ **10** | 35-day half-life | ⭐ **reframed, titratable** ⛔ emergency reversal unsolved |
+| ⛔ | **chondrocyte ceiling (R169)** | ⛔ **the binding constraint on dose** |
+| ⛔ | gold narrows the proliferative zone (R166) | ⛔ open |
+| ⛔ | vitamin C | ⛔ open |
+| ⛔ | gold in growth-plate cartilage | ⛔ absent from literature |
+| ⚠ | [¹⁹⁸Au]auranofin albumin conflict | ⚠ unresolved |
 
 ---
 
