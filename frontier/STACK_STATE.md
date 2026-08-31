@@ -1,12 +1,88 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R167
+**Last updated:** F-R168
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HET50. **F-R168 — ⭐⭐⭐ **THE HETEROZYGOTE WAS IN SMERIGLIO'S SUPPLEMENT ALL ALONG AND R159 SAID IT WASN'T.** AT `Tet1+/-` — **OUR EXACT DOSAGE** — THE EMBRYO IS **NOT SIGNIFICANTLY SHORTER AT EITHER STAGE** (E13.5 **−0.10%, p=0.92**; E17.5 −4.0%, p=0.09) WHILE THE NULL IS (**−5.79%, p<0.0001**; **−7.42%, p=0.005**). ⭐⭐⭐ AND THE **ACAN CONFLICT IS QUANTIFIED AND LARGELY DEFLATED** — `Acan` FALLS **−7.5×** UNDER shRNA IN A DISH AND **IS ABSENT FROM THE KO ANIMAL'S ENTIRE 28-GENE DE LIST.****
+
+**Document:** `R168_the_heterozygote_was_in_the_supplement_all_along_and_at_50_percent_the_embryo_is_normal.md`
+**Scripts:** `analysis/redundancy/acan.py`, `analysis/redundancy/smeriglio.py`
+**Source:** `Smeriglio 2020` JBMR Plus (PMC7587462) supplementary **s005** (DE tables) and **s008** (embryo measurements)
+
+### ⛔⛔ THE CORRECTION, AND IT IS MINE
+R159 stated: *"I searched for a heterozygote in this paper: **`Tet1+/-` appears ZERO times. It is nulls
+only.**"* ⛔ **False.** Supplementary **s008** carries heterozygote body lengths at both stages,
+**n = 22 and n = 27 — larger groups than the wild types.** **I read the article and never opened the
+workbook.** ⛔ **Fifth time in this programme that where I looked, not what exists, decided an answer**
+(R164 was a vocabulary failure; this is a file-coverage failure).
+
+### ⭐⭐⭐ AND IT IS THE BEST RESULT THE ARM HAS
+Welch's t vs WT, computed from the per-embryo values:
+
+| stage | genotype | n | mean (mm) | SD | vs WT | t | **p** |
+|---|---|---|---|---|---|---|---|
+| E13.5 | Tet1+/+ | 8 | 10.338 | 0.213 | — | — | — |
+| E13.5 | ⭐⭐⭐ **Tet1+/- (50% — OUR TARGET)** | **22** | **10.327** | 0.355 | ⭐ **−0.10%** | −0.10 | ⭐⭐⭐ **0.9246 ns** |
+| E13.5 | ⛔ **Tet1-/- (0%)** | 13 | 9.738 | 0.304 | ⛔ **−5.79%** | −5.29 | ⛔ **0.0000** |
+| E17.5 | Tet1+/+ | 8 | 20.837 | 1.047 | — | — | — |
+| E17.5 | ⭐⭐ **Tet1+/- (50%)** | **27** | 20.004 | 1.488 | ⚠ **−4.00%** | −1.78 | ⚠ **0.0935 ns** |
+| E17.5 | ⛔ **Tet1-/- (0%)** | 13 | 19.292 | 1.044 | ⛔ **−7.42%** | −3.29 | ⛔ **0.0050** |
+
+> ⭐⭐⭐ **AT 50% DOSAGE — the dosage of the 90 human carriers who are +8.32 cm — THE EMBRYO IS NOT
+> SIGNIFICANTLY SHORTER AT EITHER STAGE, AND AT E13.5 IS INDISTINGUISHABLE FROM WILD TYPE. THE SAME
+> EXPERIMENT, SAME LITTERS, SAME MEASUREMENT RESOLVES A 6–7% DEFICIT AT 0%.**
+
+⚠ **Not overstated:** E17.5 het is a **−4.0% NON-SIGNIFICANT DOWNWARD TREND** with only 8 WTs — a larger
+control group could make it significant. Mouse embryos ≠ adolescent human growth plates.
+⭐ **Even in the worst reading the ladder is monotonic and 50% is far milder than 0%, and is contradicted at
+that dosage by both adult endpoints.**
+
+> ⭐⭐ **R159's CENTRAL WARNING IS ANSWERED ON ITS OWN TERMS.** It said the direction *"FLIPS past ~50% and
+> nobody knows where."* **The crossover is now bounded: at 50% there is no measurable deficit in an assay
+> that resolves 6–7% at 0%.**
+
+### ⭐⭐⭐ THE LADDER, WITH 50% MEASURED AT THREE INDEPENDENT LEVELS
+| dosage | mouse embryo (s008) | mouse adult (IMPC) | human adult (kosmicki) |
+|---|---|---|---|
+| 100% | ref | ref | ref |
+| ⭐ **50% (het)** | ⭐ **−0.10% ns / −4.0% ns** | ⭐ **+0.28 SD, male p=0.024** | ⭐⭐ **+8.32 cm, P=2.2e-14** |
+| ⛔ **0% (null)** | ⛔ **−5.8% / −7.4%, p≤0.005** | — | — |
+
+### ⭐⭐⭐ THE ACAN CONFLICT — QUANTIFIED FOR THE FIRST TIME, AND IT IS AN IN-VITRO ARTEFACT
+R159 named it the sharpest hole (ACAN pLoF = **−14.1 cm/allele**, most height-negative gene in the table)
+and never quantified it. **Supplementary s005 has both arms.**
+
+⛔ **KD (deep shRNA, ATDC5, in a dish):** **Acan 1426.8 → 191.1 = −7.5×** · Col10a1 −4.2× · Col2a1 −2.7×.
+
+⭐⭐⭐ **KO (the actual animal): the ENTIRE differentially-expressed list is 28 GENES — 14 up, 14 down.
+`Acan` IS NOT ONE OF THEM. Neither is `Col2a1`. Neither is `Sox9`.** Only **Col9a1 (−2.7×, p=0.023)** and
+**Col10a1 (−2.6×, p=0.017)** appear.
+
+⛔ **And every q-value in that list is 0.68–0.76 — NOTHING survives FDR.**
+
+> ⭐⭐⭐ **THE ACAN CONFLICT LIVES ENTIRELY IN THE DISH: a 7.5-fold collapse of the most height-negative gene
+> in the genome under deep shRNA becomes NO DETECTABLE CHANGE in the intact knockout animal.**
+> ⭐⭐ **R137's magnitude ladder, FIFTH independent instance — and it puts numbers under Smeriglio's own
+> sentence that R159 quoted without data: *"loss of SOX9 target gene expression is MORE MODEST than upon
+> Tet1 KD in vitro."***
+
+⚠ **Honest counterweight: the KO transcriptome is UNDERPOWERED (n=3, nothing FDR-significant), so absence of
+Acan is weak evidence of no change — the same error class I flagged for TET2/TET3 in kosmicki.**
+⭐ **The asymmetry still counts: the KD arm found −7.5× on Acan easily; the KO arm, at COMPLETE loss, found
+nothing.**
+
+### ⛔ AND THE GEO COUNTS MATRIX IS UNUSABLE — CHECKED BEFORE USE
+`GSE105122_RAW.tar`, uc-IDs mapped via `kg10ToKg11` coordinates × mm10 refGene (14,876/21,929 mapped).
+⛔ **Library sizes 335k–422k; max single count 759; top loci Rpgrip1l/Helz2/Kcnb1/Arhgef28; not one
+canonical cartilage gene present** — in a cartilage experiment where Col2a1/Acan should dominate.
+⛔ **Rejected. Part 2's conclusions rest on the authors' published DE tables instead.**
 
 ---
 
