@@ -1,12 +1,129 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R176
+**Last updated:** F-R177
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-FOUR. **F-R177 — ⭐⭐⭐ **ALL FOUR OPEN ITEMS ANSWERED.** THE `IC₅₀` FIGHT WAS THE WRONG QUESTION: THE SOURCE PAPER IS **OPEN ACCESS** AND CONTAINS A **MEASURED CELLULAR 5hmC DECREASE AT `0.1 µM` BY THREE ORTHOGONAL ASSAYS** = **`19.7 ng/mL` GOLD**, AND HUMAN BLOOD GOLD IS `103–620 ng/mL` — ⭐⭐⭐ **`5–31×` ABOVE IT. R176's "AURANOFIN MAY BE INERT" IS WITHDRAWN.** ⭐⭐ **`TONNA 1963` DOES NOT SURVIVE READING — THE AUTHORS DOCUMENT THE CONVEYOR THAT SWEEPS THEIR OWN LABEL OFF THE PLATE.** ⭐⭐ **HOLE 16: 805 PATIENTS / 12 YEARS — GOLD-TREATED HAD *LOWER* MALIGNANCY (11% vs 17%), ZERO LYMPHOMA, NO RENAL.** ⭐⭐⭐ **HOLE #2-bis: 88 CHILDREN AT `3.4–4.5×` OUR DOSE FOR UP TO 5 YEARS.** ⛔⛔ **`LCORL` IS THE BIGGEST MISS OF THE PROJECT.** ⭐⭐⭐ **`STC2`/`PAPP-A` IS A WHOLE NEW AXIS.** ⭐⭐ VITAMIN C CLOSED.**
+
+**Document:** `R177_all_four_open_items_answered_the_ic50_fight_was_the_wrong_question_and_lcorl_is_the_biggest_miss_of_the_project.md`
+
+### ⭐⭐⭐ ITEM #1 — THE `IC₅₀`: THE SOURCE PAPER WAS OPEN ACCESS AND I HAD NEVER READ IT
+> **`Chen L, Ren A, Zhao Y, et al., "Direct inhibition of dioxygenases TET1 by the rheumatoid arthritis drug auranofin selectively induces cancer cell death," J Hematol Oncol 2023` (PMID 37993905, PMC10666452).**
+
+⛔⛔ **IT KILLS MY OWN COVALENT MODEL WITH FOUR EXPERIMENTS, NOT DOCKING:** SPR binding *"**competed by increasing concentration of** substrate analogue **NOG**"*; 5hmC inhibition *"**attenuated by increasing concentration of 2-OG**"*; Fe(II) likewise; EMSA shows *"auranofin **did not affect DNA substrate binding**"*. → ⭐⭐⭐ ***"auranofin inhibits TET1 by COMPETING WITH SUBSTRATES"*** at the **2-OG/Fe(II) cofactor pocket**.
+⛔⛔ **R163's covalent Au–thiolate inference and R176's covalent defence are BOTH WITHDRAWN.** ⭐ And competitive-at-the-2-OG-pocket makes R176's cross-comparison with `R-2HG`/`IOX1` legitimate. ⛔⛔ It also makes `IC₅₀ (0.076) < K_D (1.804)` **thermodynamically impossible** — one of the two numbers is simply wrong.
+
+⭐⭐⭐ **AND THE PAPER MAKES THE ARGUMENT MOOT BY MEASURING THE OUTCOME:**
+> ⭐⭐⭐ *"genome-wide 5hmC distribution in T-ALL Jurkat cells treated with or without **`0.1 μM` auranofin for 24 h. Auranofin treatment DECREASED global 5hmC levels. n = 5 replicates**."*
+> ⭐⭐ *"**dose-dependent decrease** in cellular 5hmC… by **dot blot AND genome-wide 5hmC/5mC sequencing**… **LC–MS/MS CONFIRMED**"*
+> ⭐⭐ On-target: TET1-CD overexpression rescued, **catalytic-dead and TET2/TET3-CD did NOT**.
+
+⛔ **I CAUGHT MYSELF MID-ERROR:** my first instinct compared `0.1 µM` (a **MEDIUM** concentration) to R174's `0.062–0.086 µM` (a **NUCLEAR** estimate). ⛔ **Different quantities — the `TOTAL ≠ FREE`/unit-mismatch class for the 6th time. Corrected before publishing.**
+
+**Matched units — `0.1 µM` auranofin (MW 678.48, 29.03% Au) = `19.7 ng/mL` GOLD:**
+| dose | blood gold (FDA) | ⭐ **× the 5hmC-lowering gold concentration** |
+|---|---|---|
+| 1 mg/day | 0.103 µg/mL | ⭐ **5.2×** |
+| ⭐⭐ **2 mg/day** | **0.207 µg/mL** | ⭐⭐ **10.5×** |
+| 3 mg/day | 0.310 | 15.7× |
+| 6 mg/day | 0.620 | 31.5× |
+| 9 mg/day | 0.930 | 47.2× |
+
+> ⭐⭐⭐ **"IS AURANOFIN TOO WEAK?" RESOLVES *NO*, IN MATCHED UNITS, WITHOUT EITHER CONTESTED `IC₅₀`. R176's ARM-KILLING SCENARIO IS WITHDRAWN. R174's DOSE TABLE STOPS BEING LOAD-BEARING — the dose is now anchored to a MEASURED cellular effect concentration.**
+⚠ **Three limits, stated:** (1) ⚠ **protein binding is NOT matched** — 10% serum vs ~95%-bound blood; the margin erodes by an amount I cannot quantify (⭐ partly offset by R175's higher auranofin unbound fraction); (2) ⚠ Jurkat, 24 h, TET1-overexpressing leukaemia — not chondrocytes, not chronic; (3) ⚠ **`0.1 µM` is one point, not the EC₅₀.**
+
+### ⭐⭐ ITEM #2 — `TONNA 1963` DOES NOT SURVIVE READING ITS OWN METHODS
+| design | value | consequence |
+|---|---|---|
+| n | **20 mice total** | ⛔ tiny |
+| age | **1 and 2 months old** | ⭐ **GROWING — the `Ghadially` age-defence does NOT rescue it. Said honestly.** |
+| dosing | ⛔⛔ **a SINGLE i.p. injection** | ⛔ not chronic |
+| chase | ⛔⛔⛔ **killed 1 or 2 MONTHS later** | ⛔⛔⛔ **fatal** |
+| compound | ⛔ gold thioglucose/thiomalate | ⛔ **not auranofin — and aurothioglucose is Kirkpatrick's INERT compound (R173)** |
+| method | "hot spot" autoradiography | ⚠ localisation, not quantification |
+
+> ⭐⭐⭐ **THE AUTHORS DOCUMENT THE FLAW THEMSELVES:** *"deposits of gold **may be expected to MOVE TOWARD THE SHAFT AS THE BONE GROWS LONGITUDINALLY**, thus accounting for maximal deposition **SOME DISTANCE FROM THE EPIPHYSEAL PLATE**"*; *"1 month after injection, some activity… **in the IMMEDIATE PROXIMITY of the epiphyseal plate**, while… 2 months after injection, the **immediate neighborhood of the plate was FREE of activity**."*
+> ⭐⭐⭐ **THE PLATE IS A CONVEYOR BELT. ANY CHONDROCYTE LABELLED AT INJECTION WAS EXTRUDED INTO BONE WEEKS BEFORE SACRIFICE. THE DESIGN IS STRUCTURALLY INCAPABLE OF DETECTING GROWTH-PLATE GOLD.**
+⭐⭐ **And gold WAS found in every contiguous tissue:** *"osteogenic layer of the **PERICHONDRIAL** periosteum"*, *"**metaphyseal trabeculae**"*, *"**secondary centers of ossification**"* — ⭐ the perichondrial ring surrounds and feeds the plate.
+> ⭐⭐ **HOLE #1 RECLASSIFIED from "looked, negative" to "NEVER ADEQUATELY LOOKED." Not closed.**
+
+### ⭐⭐ ITEM #3 — HOLE 16 HAS A HUMAN ANSWER, AND IT FAVOURS US
+> **`Am J Med 1985` (PMID 3970042): 805 consecutive RA patients, prospective, mean 12 y, 94% follow-up, 233 deaths.**
+> ⭐⭐⭐ *"**Gold-treated patients trended toward LOWER malignancy rates (11 versus 17 percent)**"*; ⭐⭐ *"at least two treatments, **gold** and prednisone, are **NOT associated with higher risk of malignancy**"*
+> ⭐ Types: colon 7, lung 4, breast 3, prostate 3, leukaemia 3, ovary 3, stomach 2, ⭐⭐ **lymphoma ZERO, RENAL ZERO.**
+
+> ⭐⭐⭐ **AND R170's UNFAVOURABLE DATUM IS NAMED AS AN ARTEFACT:** `Semin Arthritis Rheum 1999` (PMID 10622679) — *"Studies that showed an increased risk of cancer associated with **GOLD**… are **INCONCLUSIVE as they have used cancer incidence in the GENERAL POPULATION as the reference**"*; ⭐ RA itself carries **~2× lymphoma RR**. ⭐ The 1995 study says its own excess *"was **NOT correlated to dosage or duration**."* **A non-dose-, non-duration-related effect is not a drug effect.**
+
+| duration normalisation | |
+|---|---|
+| rat 24-mo ÷ ~30-mo lifespan | **80% of lifespan** |
+| our ~2.5 y ÷ 80 y | **3.1%** |
+| ⭐ ratio | ⭐ **26× longer as a fraction of life** |
+| ⭐⭐ **× the 9.0× dose margin** | ⭐⭐ **≈230× on dose × lifespan-fraction** |
+⭐ Plus: **negative genotoxicity battery ⇒ non-genotoxic, threshold- AND duration-dependent**; **~100% eliminated by 6 months ⇒ no lifetime accumulation.**
+⛔ **Honest power limit: ~11,950 person-years → only 1.8 expected RCC cases → only a >3–5× excess was detectable.**
+> ⭐⭐ **HOLE 16 DOWNGRADED ⛔⛔ → ⚠.**
+
+### ⭐⭐⭐ ITEM #4 — HOLE #2-bis ANSWERED BY 88 CHILDREN
+> **`Giannini EH et al., "Auranofin therapy for JRA: results of the FIVE-YEAR open label extension trial," J Rheumatol 1991` (PMID 1941832):**
+> ⭐⭐⭐ *"**88 children**… auranofin at **`0.15–0.2 mg/kg/day` (9 mg/day max)**"*; *"**Eleven (12.5%) completed 5 YEARS**… mean duration for those who discontinued **646 days**"*; ⭐⭐ *"**Parental/patient decision and insufficient therapeutic effect** were the 2 most frequent reasons… **followed by** adverse effects"*; ⭐ *"**relatively well tolerated**"*
+
+⭐⭐⭐ **At 45 kg that is `6.75–9 mg/day` = `3.4–4.5×` our 2 mg/day target (0.044 mg/kg/day). ~155 patient-years of GROWING children. GROWTH FAILURE IS NOT AMONG THE DISCONTINUATION REASONS — in a 5-year paediatric trial it would have been the headline adverse event.**
+⭐⭐ **Re-frames safety generally: the marketed dose AND the dose the FDA called "excessive" were both given to children for years. Our 2 mg/day sits 3.4–4.5× BELOW that.**
+⛔⛔ **Honest limit (R155 found it first): outcome variables were entirely ARTICULAR. Growth was not an endpoint. This excludes a GROSS effect, not a few-centimetre one — and a few cm is the whole point. Reassurance about harm, not evidence about the endpoint.**
+> ⭐⭐ **HOLE #2-bis DOWNGRADED ⛔⛔ → ⚠. The toxophore argument is no longer the sole defence — R176's specific worry.**
+
+### ⛔⛔ `LCORL` — THE BIGGEST MISS OF THIS PROJECT
+> **`Bai F et al., "LCORL and STC2 Variants Increase Body Size and Growth Rate in Cattle and Other Animals," Genomics Proteomics Bioinformatics 2025` (PMID 40094447, PMC12448305):**
+> ⭐⭐⭐ *"The **ACT-to-A FRAMESHIFT mutation in LCORL**… **stimulates growth**. Remarkably, **convergent TRUNCATING mutations were also found in commercial breeds of SHEEP, GOATS, PIGS, HORSES, DOGS, RABBITS, and CHICKENS**."*
+> ⭐⭐⭐ *"gene-edited mouse models… homozygous carriers **significantly increase the average weight by 11%**"*
+
+| evidence | `TET1` | ⭐⭐⭐ **`LCORL`** |
+|---|---|---|
+| human pLoF | ⭐ +8.32 cm (replicated) | ⭐⭐ **+9.99 cm, P=6.2e-33 — LARGEST non-syndromic positive in 1.45M exomes** |
+| mouse null | ⛔ **SHORTER — wrong direction** | ⭐⭐⭐ **gene-edited mouse +11%** |
+| ⭐⭐⭐ **convergent LoF selected in other species** | ⛔ **none** | ⭐⭐⭐ **EIGHT SPECIES** |
+| cross-species body-size QTL | ⛔ no | ⭐⭐⭐ **`NCAPG-LCORL` is THE canonical locus** |
+
+> ⭐⭐⭐ **`TET1`'s DIRECTION RESTS ON ONE HUMAN COLUMN WITH A MOUSE NULL POINTING THE WRONG WAY. `LCORL`'s IS CONFIRMED BY BREEDERS INDEPENDENTLY SELECTING TRUNCATING LoF IN EIGHT SPECIES PLUS A PURPOSE-BUILT MOUSE. A CATEGORY OF EVIDENCE THIS PROJECT HAS NEVER HAD.**
+⭐ Mechanism is coherent with the chromatin thesis: *"**PRC2-mediated H3K27me3** modification."*
+⛔⛔ **R144 was RIGHT to demote it on druggability (TF, not enzyme) — but it should have been logged as "best-validated target, NO AGENT," not left blank for 33 rounds.**
+
+### ⭐⭐⭐ `STC2 → PAPP-A → IGFBP-4 → free IGF-I` — A NEW, FULLY-MAPPED, BIDIRECTIONAL AXIS ENDING IN THE PLATE
+| link | evidence |
+|---|---|
+| STC2 covalently inhibits PAPP-A/A2 | `Cell Discov 2022` (PMID 36550107) — **cryo-EM structure of the complex** |
+| ⭐⭐⭐ **PAPP-A REQUIRED in the growth plate** | `PMC11364822` (2024): PAPP-A KO — *"**femur length was reduced**… **disorganized columnar organization of growth plate chondrocytes**"*; zebrafish `pappaa` KO phenocopies, **rescued by exogenous IGF-I** |
+| ⛔ less PAPP-A → SHORTER | human `PAPP-A2` LoF → short stature |
+| ⭐⭐ **more PAPP-A → TALLER** | human **`STC2` LoF p.R44L/p.M86I → +1.9 / +0.9 cm** |
+| ⭐⭐ animal | cattle `STC2` A60P → **+11% weight in gene-edited mice** |
+| ⭐⭐⭐ **six-year human ADULT-HEIGHT data** | `PMID 34358737`: two `PAPP-A2`-deficient siblings, rhIGF-1 **6 years** — *"**both patients ACHIEVED THEIR TARGET HEIGHT**… no… adverse effects"* |
+| ⭐⭐ **serum-measurable** | `PMID 38245583` (n=394): **PAPP-A, PAPP-A2, STC2, free IGF-1, IGFBPs — all commercial ELISAs** |
+
+⛔⛔ **Obtainability problem, stated: NO small molecule inhibits STC2 or activates PAPP-A. The only obtainable agent is `rhIGF-1` (mecasermin/Increlex, FDA-approved) — but it is DOWNSTREAM, carries hypoglycaemia/tonsillar hypertrophy, and ⛔⛔ ADVANCES BONE AGE, exactly what the anastrozole arm exists to prevent.** ⭐ **Status: top-tier target, no usable agent — same as SPIN4 and NRK.**
+⭐⭐ **What IS usable now: the ELISA panel reads growth-plate IGF bioavailability directly — a better-motivated Tier-3 readout than NT-proCNP, which R175 demoted for sign-ambiguity.**
+
+### ⛔ `ZFAT` — SIGNAL WITHOUT A MECHANISM
+⭐ Open Targets ranks *"Abnormality of the skeletal system"* as `ZFAT`'s **TOP** association (**0.595** > TET1 0.406 > LCORL 0.303); human pLoF **+7.86 cm**. ⛔ **But the entire literature is immune/erythropoiesis/apoptosis/angiogenesis — a title search with skeletal/growth/height/bone returns nothing relevant.** ⭐ **Verdict: real signal, no mechanistic handle, no agent. Parked with an honest label.**
+
+### ⭐⭐ VITAMIN C — OPEN SINCE R158, NOW CLOSED, AND IT IS AN INTERACTION
+> `PMID 39883951` (2025): ⭐⭐⭐ *"Enzyme activity is **specifically stimulated by L-ascorbic acid**, an effect **not well mimicked by other reducing agents**"*; ⭐⭐⭐ *"**stereospecific binding of ascorbate IN THE ENZYME ACTIVE SITE**."* `PMID 41287077`: vitamin C **ACTIVATES** TET demethylation.
+> ⭐⭐⭐ **ASCORBATE IS A DIRECT COMPETITIVE ANTAGONIST OF THIS ARM AT THE SAME SITE AURANOFIN OCCUPIES. High-dose vitamin C would partially reverse the intervention.**
+⚠⚠ **But the naive conclusion is wrong: the same class includes COLLAGEN PROLYL-4-HYDROXYLASE, and scurvy arrests growth.** ⭐ **RULE: maintain NORMAL DIETARY vitamin C; avoid SUPRAPHYSIOLOGICAL gram-dose supplementation. Not "avoid vitamin C."**
+
+### ⛔ THE ONE THING I COULD NOT GET
+⛔ **Additional file 2 of `PMC10666452`** — the auranofin **5hmC dose–response**, LC–MS/MS quantitation, and TET2/KDM6B selectivity panel. Europe PMC's supplementary endpoint returns HTML; Springer's static CDN returns **403**. **I did not route around it.** ⭐ **It would convert Part 1's single point into an EC₅₀ and let the dose table be rebuilt on measured cellular efficacy. Fully open-access paper — free to anyone with a browser. HIGHEST-VALUE OPERATOR FETCH.**
+
+### ⭐⭐ OPEN ITEMS: FOUR → ONE-AND-A-HALF
+1. ⛔ **Gold still never measured in an epiphyseal growth plate.** Reclassified, not closed. **One experiment closes it: oral auranofin to steady state in a growing animal, ICP-MS the microdissected proximal tibial plate.**
+2. ⚠ **The `IC₅₀` band is formally unresolved but NO LONGER LOAD-BEARING.** The supplement above would close it.
 
 ---
 
