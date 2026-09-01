@@ -1,12 +1,107 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R177
+**Last updated:** F-R178
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-SUPP. **F-R178 — ⭐⭐⭐ **THE SUPPLEMENT ARRIVED; I READ ALL 15 FIGURES.** ⭐⭐⭐ **SELECTIVITY SETTLED AND IT IS THE NEAR-INVERSE OF 2HG: `TET1 93%` vs `TET2 6%` vs `KDM6B 17%` AT 1 µM → ⭐⭐⭐ **HOLE 6 CLOSES** AND R176's OLLIER COUNTER-EVIDENCE IS ANSWERED ON MEASURED SELECTIVITY.** ⭐⭐⭐ **`5fC = 0` ON A DEFINED SUBSTRATE ⇒ THE SIGN-INVERSION ALARM IS DEAD.** ⭐⭐ **THE 24× `IC₅₀` FLAG (OPEN SINCE R155) CLOSES: ENZYME ~1.3–1.8 µM, CELLULAR ~0.2 µM, DIFFERENCE = CELLULAR ACCUMULATION; `76 nM` IS THE OUTLIER.** ⛔⛔ **BUT THE DOSE IS REVISED *UPWARD* — 2 mg/day IS `2.1–5.3×`, NOT `10.5×`.** ⭐⭐⭐ **AND HOLE #2-bis *INVERTS* IN CARTILAGE.**
+
+**Document:** `R178_the_supplement_settles_the_selectivity_and_revises_the_dose_upward_and_hole_2bis_inverts_in_cartilage.md`
+**Operator-supplied:** `13045_2023_1513_MOESM2_ESM.docx` (Additional file 2 of PMC10666452 — 15 figures, read by TIFF rendering)
+
+### ⭐⭐⭐ SELECTIVITY — THE NUMBERS THE MAIN TEXT ONLY CALLED "≥13-FOLD"
+| target | at **1 µM auranofin** |
+|---|---|
+| ⭐⭐⭐ **TET1** | ⭐⭐⭐ **92.9% inhibited** |
+| ⭐⭐⭐ **TET2** | ⭐⭐⭐ **100 → 94% = 6%, error bars overlap, NOT SIGNIFICANT** |
+| ⭐⭐ **KDM6B** | ⭐⭐ **100 → 96% (0.5 µM) → 83% (1 µM) = 17%** |
+| SPR K_D | TET1 **1.804** · KDM6B **4.22** · TET3 **6.280** · TET2 **7.820 µM** |
+
+| | ⛔ **(R)-2HG (Ollier)** | ⭐⭐⭐ **auranofin** |
+|---|---|---|
+| TET1 | ⛔ **LEAST inhibited (676 µM)** | ⭐⭐⭐ **MOST (93%)** |
+| TET2 | ⛔⛔ **MOST (15.5 µM)** | ⭐⭐⭐ **BARELY (6%)** |
+| KDM | ⛔⛔ heavily | ⭐⭐ **17%** |
+
+> ⭐⭐⭐ **NEAR-ORTHOGONAL — ALMOST EXACTLY INVERSE PROFILES. AURANOFIN IS NOT "A PARTIAL OLLIER." THE `Grem1+/Ucma+` RESTING-ZONE COLLAPSE I MEASURED IN R176 IS DRIVEN BY THE PARALOGS AND ENZYME CLASSES AURANOFIN LEAVES ALONE. ANSWERED ON MEASURED SELECTIVITY, NOT THE MAGNITUDE LADDER.**
+> ⭐⭐⭐ **HOLE 6 (TET2→CHIP) CLOSES: ~1–2% TET2 inhibition at therapeutic nuclear concentrations.**
+⛔⛔ **R163's "auranofin is effectively pan-TET" (a structural inference) is WITHDRAWN — direct assay says 93% vs 6%. Functional data governs.** ⚠ Binding selectivity is only 3.5–4.3× while functional is ~15×; that gap is unexplained and the TET2 panel has wide error bars.
+
+### ⭐⭐⭐ `Fig S6` — THE SIGN-INVERSION ALARM DIES ON A DEFINED SUBSTRATE
+Synthetic ssDNA with **a single 5mC**, purified TET1, ± auranofin, LC–MS/MS:
+| | 5mC | 5hmC | ⭐⭐⭐ **5fC** |
+|---|---|---|---|
+| Ctrl | ~96% | ~4% | ⭐⭐⭐ **0** |
+| TET1 | ~53% | ~47% | ⭐⭐⭐ **0** |
+| TET1+AUF | ~72% | **~28%** (p<0.001) | ⭐⭐⭐ **0** |
+> ⭐⭐⭐ **NO SECOND OXIDATION STEP EXISTS TO DIFFERENTIALLY INHIBIT ⇒ PARTIAL TET1 INHIBITION CAN ONLY *LOWER* 5hmC. TIER-2's READOUT DIRECTION IS PROVEN.**
+⭐ Third IC₅₀ datum: **44% inhibition**; ⛔ if at 1 µM (the convention throughout S8), implied IC₅₀ **1.27 µM** — agreeing with the SPR K_D, not with 76 nM. ⚠ **Concentration NOT stated; flagged, not assumed.**
+
+### ⭐⭐ THE 24× GAP RECONCILES — CELLULAR ACCUMULATION
+`Fig S13D` cellular dose–response (Ctrl): 0.1 µM → 81%, ⭐ **0.2 µM → ~44%**, 0.5 → 33%, 1 → 21%. ⭐ TET1-dependent (rescued by TET1-CD; **not** by catalytic-dead, TET2-CD or TET3-CD).
+| measurement | value |
+|---|---|
+| SPR K_D | **1.804 µM** |
+| Fig S6 (if 1 µM) | ~**1.27 µM** |
+| ⭐⭐ **intact cells, TET1-dependent EC₅₀** | ⭐⭐ **~0.2 µM** |
+| ⛔ fluorometric "IC₅₀" | ⛔ **0.076 µM — outlier of four** |
+> ⭐⭐⭐ **ENZYME ~1.3–1.8 µM; CELLS ~0.2 µM; THE 6–9× GAP IS NUCLEAR GOLD ACCUMULATION (R157) — THE EXPECTED DIRECTION, NOT A CONTRADICTION. THE R155 FLAG IS CLOSED.**
+
+### ⛔⛔ AND THE DOSE IS REVISED *UPWARD*. R177 WAS TOO GENEROUS.
+⛔ `Fig S4c`: relative 5mC = **1.00 (DMSO) / 1.04 (0.1 µM — essentially nothing) / 1.30 (0.5 µM — clear)**. ⭐ Internally consistent (5hmC is a ~50× smaller pool) ⛔ **but the CLEAN cellular effect is `0.2–0.5 µM`, not `0.1`.**
+
+`0.1 µM = 19.7 ng/mL Au` · `0.2 µM = 39.4` · `0.5 µM = 98.5`
+| dose | blood Au | ×0.1 µM | ⭐ **×0.2 µM (best-defined)** | ⛔ **×0.5 µM (conservative)** |
+|---|---|---|---|---|
+| 1 mg/day | 103 | 5.2× | 2.6× | ⛔ **1.0×** |
+| ⭐ **2 mg/day** | **207** | 10.5× | ⭐ **5.3×** | ⛔ **2.1×** |
+| 3 mg/day | 310 | 15.7× | 7.9× | 3.1× |
+| ⭐ 6 mg/day | 620 | 31.5× | 15.7× | ⭐ 6.3× |
+⚠⚠ **Free-fraction correction runs UNFAVOURABLY and is unquantified** (blood ~95% bound vs 10%-FBS medium); ⭐ partly offset by R175's higher auranofin unbound fraction.
+> ⛔⛔ **`2 mg/day` IS THE *LOW END* OF THE ENGAGING RANGE, NOT DEAD-CENTRE. R177 quoted the most permissive of three defensible readings instead of the range.** ⭐ **R176 was DIRECTIONALLY RIGHT though its extreme conclusion was wrong.**
+> ⭐⭐⭐ **DOSE RECOMMENDATION REVISED: "2 mg/day" → "START at 2 mg/day, TITRATE UPWARD on the wk-14 leukocyte 5hmC, HEADROOM TO 6 mg/day" — headroom validated by R177's 88 children at 6.75–9 mg/day for up to 5 years.**
+
+### ⭐⭐ `Fig S2` — THE FIELD'S TWO REFERENCE TET INHIBITORS, SAME ASSAY
+| compound | tested | Jurkat viability | verdict |
+|---|---|---|---|
+| ⛔⛔ **Bobcat339** (most-cited "TET inhibitor") | **33, 66 µM** | 91/82% (24 h), 81/69% (48 h) | ⛔⛔ **INERT AT 66 µM** |
+| ⚠ **eltrombopag** (⭐ approved, oral, **paediatric-labelled**) | 10, 20 µM | Jurkat 85/82%, LOUCY 75/49% | ⚠ weak; broad chelator, hepatotox/thrombosis |
+| ⭐⭐⭐ **auranofin** | **0.1–1 µM** | 81% → 21% | ⭐⭐⭐ **~660× more potent than Bobcat339** |
+
+⭐⭐⭐ **`Fig S13` EXCLUDES THE TrxR ROUTE *GENETICALLY*:** NAC does not rescue (ns, 2 lines); ROS histogram superimposed on control; ⭐⭐⭐ **TXNRD1 (5.6×) + TXNRD2 (13.6×) OVEREXPRESSION DOES NOT RESCUE — the curve sits BELOW control at every dose.**
+
+### ⭐⭐⭐ HOLE #2-bis DOES NOT DEFLATE — IT *INVERTS* IN CARTILAGE
+| study | tissue | finding |
+|---|---|---|
+| ⛔ `1986` (3086527) | calvaria | *"significantly inhibited collagen synthesis"* at 10⁻⁶ M; **reduced** resorption |
+| ⛔⛔ `1989` (2778756) | calvaria | ⛔ **0.3–3 µM STIMULATED resorption** (PG-mediated); ⭐⭐⭐ ***"Cytotoxic effects… with `3×10⁻⁶` and `1×10⁻⁵` mol/l"*** — **threshold is `3 µM`, NOT 1** |
+| ⭐ `JBMR 1988` (3137774) | ⭐ **FETAL RAT LONG BONE** | 3 µM **inhibited** stimulated resorption **39–74%** |
+| ⭐⭐ `2008` (18729088) | ⭐⭐ **HUMAN cells, CHRONIC, clinically relevant conc.** | ⭐⭐⭐ *"**alters only WEAKLY… alkaline phosphatase… overall MODEST EFFECT ON OSTEOGENESIS**"* |
+| ⭐⭐⭐ `2019` (31275508) | ⭐⭐⭐ **IN VIVO, ORAL** | ⭐⭐⭐ *"bone mass… **significantly RECOVERED by ORAL administration of auranofin**"* |
+| ⭐⭐⭐ `2022` (36308906) | ⭐⭐⭐ **CHONDROCYTES + IN VIVO** | ⭐⭐⭐ **inhibits ADAMTS5/MMP13, *ENHANCES* `COL2A1` and `SOX9`**; *"**attenuate DMM-induced osteoarthritis progression IN VIVO**"* |
+
+> ⭐⭐⭐ **THE 1986 RESULT IS ONE OF THREE MUTUALLY CONTRADICTORY ORGAN-CULTURE PAPERS. THE ONLY IN VIVO ORAL EXPERIMENT SHOWS BONE MASS *GAIN*. AND IN CHONDROCYTES — THE TISSUE THAT MATTERS — AURANOFIN RAISES TYPE II COLLAGEN AND SOX9 AND PROTECTS CARTILAGE IN VIVO.**
+⭐⭐ **Threshold obtained: cytotoxicity begins at `3 µM`. Cartilage total is `0.56 µM` at 2 mg/day (`5.4×`) and `1.67 µM` at 6 mg/day (`1.8×`).** ⚠ **1.8× at the marketed dose is thin — the one place the old "overshoot" reasoning still holds. Stay ≤6 mg/day.**
+⚠ **Limits:** the 2022 work is IL-1β-inflamed OA chondrocytes, reads ECM homeostasis not longitudinal growth, and credits **TXNRD1/Nrf2** — which `Fig S13` says is *not* the TET1 mechanism. **Possibly two different actions of one drug.**
+> ⭐⭐ **HOLE #2-bis: ⚠ → ⭐ RESOLVED-FAVOURABLE, residual = keep ≤6 mg/day.**
+
+### ⭐ HOLE #1 — A *CLEAN* NEGATIVE, NEW FETAL DATA, AND A REFRAMING
+⭐⭐ `(gold OR auranofin OR chrysotherapy) AND ("epiphyseal plate" OR "growth plate" OR epiphysis OR physeal)` → **20 hits, ALL unrelated orthopaedic surgery.** **After SEVEN vocabulary failures, this query used the field's own terms and found nothing. Hole #1 is a TRUE GAP, not another search-term failure.**
+⭐⭐ **NEW — transplacental transfer established:** `Exp Mol Pathol 1984` (6416891) — gold in **yolk-sac epithelium and FETAL HEPATOCYTES**, lysosomal; ⛔ *"**NOT detected in the KIDNEY or CNS of the fetuses**"*. `Rheumatol Int 1987` (3109003) — **human fetal liver and placenta**. `Lancet 1977` (63741). ⛔ **Fetal cartilage/bone examined in none.**
+
+> ⭐⭐ **REFRAMING: the dose chain does NOT rest on an unmeasured quantity. It uses (1) a MEASURED human cartilage:plasma partition `0.53` (Gottlieb/R172), (2) demonstrated systemic uptake into IMMATURE but not mature chondrocytes (Ghadially 1976/R176), (3) R177's demolition of `Tonna 1963`, (4) perichondrial-ring loading. HOLE #1 IS A MULTIPLIER OF UNKNOWN SIZE ON A MEASURED NUMBER — NOT A VOID.**
+⚠ **And its likely direction is favourable:** the plate has higher cellularity, higher metabolic rate and a metaphyseal vascular front, vs avascular near-quiescent adult articular cartilage.
+
+### ⛔ STILL OPEN — ONE ITEM
+1. ⛔ **Gold never measured in an epiphyseal growth plate in any species.** Everything around it is now established. **Only one experiment closes it: oral auranofin to steady state in a growing animal, ICP-MS the microdissected proximal tibial plate.**
+
+⚠ **Two wants, neither a hole:** the auranofin concentration used in `Fig S6` (online-only methods); and a free-fraction measurement in whole blood vs 10%-FBS medium — **every margin above carries that unquantified correction and it runs against us.**
 
 ---
 
