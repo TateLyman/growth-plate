@@ -1,12 +1,73 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R184
+**Last updated:** F-R185
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-HSCREEN. **F-R185 — ⭐⭐⭐⭐ **WHY OSTEOCRIN LENGTHENED LIMBS AND SACUBITRIL DIDN'T: *LOCALISATION*. `OSTN` IS MADE BY PERIOSTEAL OSTEOBLASTS AND BLOCKS `NPR3` AT THE BONE; SACUBITRIL IS SYSTEMIC. AND ***"MECHANICAL LOAD REGULATES BONE GROWTH VIA PERIOSTEAL OSTEOCRIN"*** VIA `FoxO1` SUPPRESSION.** ⭐⭐⭐⭐⭐ **`COOPER 2013` REDEFINES `h_term`: THE PHASE THAT VARIES MOST BETWEEN FAST AND SLOW PLATES IS ***IGF-DEPENDENT*** ⇒ `h_term`'s DOMINANT NODE IS LOCAL FREE IGF-I = THE `PAPP-A` AXIS = WHAT R181 SHOWED `TET1` REGULATES.** ⛔⛔⛔ **23-GENE COMPOUND SCREEN: THE DOMINANT NODE HAS *ZERO* DRUGS AND *ZERO* SMALL-MOLECULE TRACTABILITY — NOT EVEN A POCKET.**
+
+**Document:** `R185_osteocrin_works_because_it_is_periosteal_and_the_h_term_screen_says_the_dominant_node_is_pharmacologically_empty.md`
+**Analysis:** Open Targets tractability + drug/clinical-candidate screen across 23 `h_term` genes
+
+### ⭐⭐⭐⭐ THE MECHANISM QUESTION IS ANSWERED — LOCALISATION
+> `J Biol Chem 2007` (PMID 17951249): ⭐⭐ **OSTN binds `NPR-C` at `Kd ≈ 5 nM`, NO GC-A/GC-B binding ⇒ blocks clearance with NO natriuretic/BP activity.** ⭐ OSTN-Tg: elongated bones; ⚠ **marked KYPHOSIS.**
+> `JCI 2017` (PMID 28990933): ⭐⭐⭐ dose-dependent overgrowth, **abolished on CNP- OR NPR-C-null backgrounds**; ⭐⭐ **CNP+OSTN double-Tg ADDITIVE.**
+> `Cell Reports 2021` (PMID 34260913): ⭐⭐⭐⭐ **OSTN made by PERIOSTEAL OSTEOBLASTS; "binds to `NPR3` in periosteal osteoprogenitors, thereby preventing NPR3-mediated clearance of CNP."**
+
+| | acts on | **where** | limbs |
+|---|---|---|---|
+| ⛔ **sacubitril** | `NEP` (enzymatic) | ⛔ **SYSTEMIC — circulating CNP** | ⛔⛔ **nothing** (R184) |
+| ⭐⭐⭐ **osteocrin** | `NPR3` (receptor) | ⭐⭐⭐ **LOCAL — periosteum of long bones** | ⭐⭐⭐ **elongation** |
+> ⭐⭐⭐⭐ **THE CNP THAT LENGTHENS A LIMB IS *LOCAL PERIOSTEAL* CNP. A SYSTEMIC ENZYME INHIBITOR RAISES THE WRONG POOL AND LANDS AXIALLY. THAT IS WHY R184's RESULT SPLIT BY COMPARTMENT.** ⭐ Same anatomy as the perichondrial ring `Tonna 1963`/`Roberts 1937` found loads with gold.
+
+### ⭐⭐⭐ LOADING IS THE PHYSIOLOGICAL SWITCH — WITH AN HONEST LIMIT
+> ⭐⭐⭐⭐ *"**physiological loading induces `Ostn` expression in periosteal osteoblasts by suppressing `FoxO1`**… OSTN [is] a mechanotransducer converting mechanical loading to CNP-dependent bone formation."*
+⭐⭐ Measurable: exercise-induced myokine (PMID 38954528) with **paediatric serum reference values** (PMID 42181195).
+⛔⛔ **HONEST LIMIT: I searched for human evidence that loading increases bone LENGTH and did not find it.** The unilateral-loading literature is **cortical area/density/geometry**; I found **no limb-length asymmetry** in racquet athletes. ⚠ **Mechanism shown in mice; the human loading phenotype is a THICKER bone, not a longer one.** ⭐ **Logged as a free, safe, plausibly-additive ADJUNCT — not an `h_term` agent.**
+
+### ⭐⭐⭐⭐⭐ `COOPER 2013` REDEFINES `h_term` AND IT LOOPS BACK TO THE EXISTING STACK
+> **`Multiple phases of chondrocyte enlargement underlie differences in skeletal proportions`, Nature 2013 (PMID 23485973, PMC3606657):**
+> ⭐⭐⭐ *"the **largest contribution to the lengthening of a skeletal element**… comes from a dramatic **increase in the volume of hypertrophic chondrocytes**"*
+> ⭐⭐⭐⭐ *"it is the **duration of the FINAL phase**… **that varies most between rapidly and slowly elongating growth plates**"*
+> ⭐⭐⭐⭐ *"this **third phase is locally regulated through a mechanism dependent on INSULIN-LIKE GROWTH FACTOR**"*
+
+> ⭐⭐⭐⭐⭐ **`h_term`'s DOMINANT VARIABLE IS NOT CNP — IT IS THE DURATION OF AN IGF-DEPENDENT LOCAL SWELLING PHASE. LOCAL FREE IGF-I IS SET BY `PAPP-A/PAPP-A2/STC2/IGFBP-4` — R177's "whole new axis the stack does not touch" — WHICH R181 SHOWED **`TET1` REGULATES VIA `Pappa2`**. THE STACK MAY ALREADY TOUCH `h_term` THROUGH AURANOFIN.**
+
+⛔⛔⛔ **AND THIS SHARPENS R181's COUNTER-PATHWAY AGAINST US: R181 scored `Tet` loss → ↓`Pappa2` → ↓free IGF-I as a BONE-MASS concern. If phase 3 is IGF-dependent, ↓free IGF-I costs `h_term` DIRECTLY. THE COUNTER-PATHWAY IS WORSE THAN SCORED, and the `PAPP-A2`/free IGF-I panel now guards BOTH terms — the single most important safety measurement in the scheme.**
+
+### ⛔⛔⛔ THE 23-GENE SCREEN — EVERY COMPOUND THAT TOUCHES `h_term`
+| tier | gene | drugs | SM tractability | verdict |
+|---|---|---|---|---|
+| **A** IGF/phase-3 | ⛔ **PAPPA, PAPPA2, STC2, IGFBP4, IGFBP5** | ⛔⛔ **0 each** | ⛔⛔ **NONE — no pocket** | ⛔⛔⛔ **EMPTY** |
+| A | IGF1 | 2 | — | ⛔ both are IGF-1 **BLOCKERS** |
+| A | IGF1R | 20 | approved | ⛔ all **INHIBITORS** (oncology); only `mecasermin rinfabate` agonist-side |
+| B CNP | NPPC / OSTN | 0 | none | ⛔ empty |
+| B | NPR2 | 2 | — | ⛔ **vosoritide — contraindicated (R182)** |
+| B | ⭐ **NPR3** | 1 | ⭐⭐ **HIGH-QUALITY POCKET** | ⭐⭐ **chemically tractable, NO LIGAND EVER MADE** |
+| B | MME | 4 | approved | ⛔⛔ sacubitril/racecadotril — **DEAD on compartment (R184)** |
+| C | IHH / SOX9 / RUNX2 / GLI2 | 0 each | none | ⛔ TFs — empty |
+| C | PTH1R | 6 | — | ⚠ teriparatide-class acts on **`A`**, not `h_term` |
+| C | HDAC4 | 12 | approved | ⛔⛔ **HDAC4 loss ACCELERATES hypertrophy ⇒ inhibiting = WRONG direction** |
+| C | SMO | 10 | approved | ⛔ Hh **inhibitors** — wrong direction |
+| D | MTOR | 26 | approved | ⛔⛔ all **INHIBITORS**; Cooper says we need MORE IGF/mTOR |
+| D | FGFR3 | 25 | approved | ⭐ **already occupied by erdafitinib** |
+| D | INPPL1 | 0 | none | ⛔ empty |
+
+> ⛔⛔⛔ **EVERY GENE IN THE DOMINANT NODE HAS ZERO DRUGS AND ZERO SMALL-MOLECULE TRACTABILITY — NOT A CANDIDATE, NOT A PROBE, NOT EVEN A POCKET. A SYSTEMATIC DATABASE-WIDE NEGATIVE WITH A REASON: THESE ARE SECRETED PROTEASES AND PROTEASE–INHIBITOR–BINDING-PROTEIN COMPLEXES. THERE IS NO POCKET TO DRUG.**
+> ⭐⭐ **AND EVERY DRUGGED `h_term` GENE POINTS THE WRONG WAY — IGF1R, mTOR, HDAC4, SMO ALL HAVE APPROVED *INHIBITORS* OF NODES WE WOULD NEED TO *ACTIVATE*. THE BIOLOGY IS AGONIST-SHAPED AND THE PHARMACOPOEIA IS ANTAGONIST-SHAPED. THAT IS WHY THE SLOT IS EMPTY.**
+⭐⭐ **ONE GENUINE OPENING: `NPR3` carries a "High-Quality Pocket" flag with NO small-molecule ligand ever made — the route R182 reasoned to and R184 confirmed is CHEMICALLY TRACTABLE AND UNEXPLOITED.** ⛔ **A med-chem programme, not a prescription.**
+
+### ⭐ WHERE THIS LEAVES `h_term`
+> ⭐⭐ **`h_term` is real, it is the second term, and its dominant node is undruggable by construction. The best available lever is the one ALREADY IN THE STACK — `TET1` → `Pappa2` → local free IGF-I. The right move is to get the AURANOFIN arm right, not to add a fourth drug.**
+> ⭐ **Mechanical loading enters as a free adjunct with honest uncertainty. Nothing else survives.**
+
+⛔ **Unchanged:** gold never measured in an epiphyseal growth plate; `erdafitinib × auranofin` unstudied.
 
 ---
 
