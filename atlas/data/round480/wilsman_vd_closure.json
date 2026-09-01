@@ -1,0 +1,110 @@
+{
+ "note": "R480 - v(d) = v(c) + v(m) CLOSES TO 0.04% ON WILSMAN 1996's OWN MEASURED NUMBERS,\nAND THE PAPER CONTAINS A SECOND, INDEPENDENT MEASUREMENT OF v(m) IN THE SAME FOUR\nPLATES AS BREUR 1997.\n\nPROVENANCE. Every value below is transcribed from the atlas's own local full text\nof Wilsman NJ, Farnum CE, Leiferman EM, Fry M, Barreto C, \"Differential growth by\ngrowth plates as a function of multiple parameters of chondrocytic kinetics\",\nJ Orthop Res 1996;14:927-936 (acquire/papers/txt/wilsman1996.txt). Tables 4, 5 and\n6 plus the Results text. NOT re-derived, NOT inferred, NOT from a secondary source.\n\n  Table 6   matrix per cell, V[m]hypertrophic (um^3)\n  Table 4   N_lost (chondrocytes lost per day at the chondro-osseous junction),\n            V_T turned over (mm^3/day), and mean hypertrophic cellular volume\n  text      \"Mean cellular volumes ranged from 14,997 um^3 in the proximal tibia\n            to 4,135 um^3 in the proximal radius\"\n\nWHY THIS IS NOT CIRCULAR. round480_vd_decomposition.py noted honestly that once\nflux is DEFINED as rate/v_d the identity is closed by construction. Here it is not:\nv(c) is a stereological mean cell volume, v(m) is computed from the hypertrophic\nvolume fraction, and v(d) is the total turned-over volume divided by the cells lost.\nThree separately measured quantities. Their agreement is a real check.\n\nWHAT IS NEW. The atlas has carried Wilsman's 9/32/59 and 7/49/44 source\ndecomposition since R470 and has never extracted Table 6, which gives MATRIX VOLUME\nPER CELL directly for all four plates. That makes Wilsman an independent second\nmeasurement of v(m) against Breur 1997 in the same four rat growth plates.\n\nOutput: atlas/data/round480/wilsman_vd_closure.json",
+ "per_plate": [
+  {
+   "plate": "proximal_tibia",
+   "elongation_rate_um_day": 396,
+   "n_lost_per_day": 14200,
+   "vt_turned_over_mm3_day": 0.311,
+   "v_m_matrix_per_cell_um3_measured": 6900,
+   "v_d_domain_um3_measured": 21901.4,
+   "v_c_implied_by_identity_um3": 15001.4,
+   "v_c_stereologically_measured_um3": 14997,
+   "matrix_fraction_of_domain": 0.315,
+   "identity_residual_pct": 0.0201
+  },
+  {
+   "plate": "distal_radius",
+   "elongation_rate_um_day": null,
+   "n_lost_per_day": 11450,
+   "vt_turned_over_mm3_day": 0.211,
+   "v_m_matrix_per_cell_um3_measured": 5970,
+   "v_d_domain_um3_measured": 18427.9,
+   "v_c_implied_by_identity_um3": 12457.9,
+   "v_c_stereologically_measured_um3": null,
+   "matrix_fraction_of_domain": 0.324
+  },
+  {
+   "plate": "distal_tibia",
+   "elongation_rate_um_day": null,
+   "n_lost_per_day": 7520,
+   "vt_turned_over_mm3_day": 0.108,
+   "v_m_matrix_per_cell_um3_measured": 5780,
+   "v_d_domain_um3_measured": 14361.7,
+   "v_c_implied_by_identity_um3": 8581.7,
+   "v_c_stereologically_measured_um3": null,
+   "matrix_fraction_of_domain": 0.4025
+  },
+  {
+   "plate": "proximal_radius",
+   "elongation_rate_um_day": 47,
+   "n_lost_per_day": 4500,
+   "vt_turned_over_mm3_day": 0.037,
+   "v_m_matrix_per_cell_um3_measured": 4090,
+   "v_d_domain_um3_measured": 8222.2,
+   "v_c_implied_by_identity_um3": 4132.2,
+   "v_c_stereologically_measured_um3": 4135,
+   "matrix_fraction_of_domain": 0.4974,
+   "identity_residual_pct": 0.0338
+  }
+ ],
+ "identity_closure": {
+  "claim": "v(d) = v(c) + v(m) with all three terms separately measured",
+  "proximal_tibia": "14997 + 6900 = 21897 against a measured 21901 um^3",
+  "proximal_radius": "4135 + 4090 = 8225 against a measured 8222 um^3",
+  "max_residual_pct": 0.0338,
+  "why_not_circular": "v(c) is a stereological mean cell volume, v(m) is computed from the hypertrophic volume fraction, and v(d) is total turned-over volume divided by cells lost. Three independent measurements."
+ },
+ "growth_identity": {
+  "rate_ratio_fast_over_slow": 8.426,
+  "v_d_ratio": 2.664,
+  "implied_flux_ratio": 3.163,
+  "comment": "reproduces the frontier branch's 3.16 x 2.67 = 8.42 against 8.43 measured"
+ },
+ "cross_paper_agreement": [
+  {
+   "plate": "proximal_tibia",
+   "v_m_wilsman": 6900,
+   "v_m_breur_d21": 8950,
+   "v_m_pct_apart": 25.9,
+   "v_c_wilsman": 15001.0,
+   "v_c_breur_d21": 17040,
+   "v_c_pct_apart": 12.7
+  },
+  {
+   "plate": "distal_radius",
+   "v_m_wilsman": 5970,
+   "v_m_breur_d21": 6380,
+   "v_m_pct_apart": 6.6,
+   "v_c_wilsman": 12458.0,
+   "v_c_breur_d21": 12860,
+   "v_c_pct_apart": 3.2
+  },
+  {
+   "plate": "distal_tibia",
+   "v_m_wilsman": 5780,
+   "v_m_breur_d21": 7860,
+   "v_m_pct_apart": 30.5,
+   "v_c_wilsman": 8582.0,
+   "v_c_breur_d21": 11900,
+   "v_c_pct_apart": 32.4
+  },
+  {
+   "plate": "proximal_radius",
+   "v_m_wilsman": 4090,
+   "v_m_breur_d21": 4650,
+   "v_m_pct_apart": 12.8,
+   "v_c_wilsman": 4132.0,
+   "v_c_breur_d21": 4420,
+   "v_c_pct_apart": 6.7
+  }
+ ],
+ "between_site_ranges": {
+  "v_c_range_wilsman": 3.63,
+  "v_m_range_wilsman": 1.69,
+  "v_c_range_breur": 3.86,
+  "v_m_range_breur": 1.92,
+  "reading": "Two independent papers on the same four rat growth plates agree that terminal CELL volume varies about twice as much between sites as MATRIX per cell does. The organism modulates the cell more than the matrix."
+ },
+ "the_headline": "In the slowest plate v(c) = 4135 and v(m) = 4090 um^3, a ratio of 1.011. THE TERMINAL CHONDROCYTIC DOMAIN OF THE SLOWEST RAT GROWTH PLATE IS HALF CELL AND HALF MATRIX TO ONE PER CENT. And the matrix fraction rises monotonically as the plate slows: 31.5 / 32.4 / 40.2 / 49.7 per cent."
+}

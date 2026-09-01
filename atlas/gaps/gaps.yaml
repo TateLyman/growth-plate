@@ -19945,3 +19945,93 @@ gaps:
     deep-heating applicator, to establish what band each route actually reaches in the right age group. Second, and only
     if the deep route reaches about 40 C, a unilateral protocol with the contralateral limb as internal control, standing
     and sitting height at a fixed time of day, and skin surveillance for erythema ab igne.'
+- gap_id: g_l5_480a
+  type: quantitative_gap
+  layer: L5
+  status: open
+  question: Has matrix volume per chondrocyte ever been raised above normal in a healthy growing animal,
+    and does bone length rise with it?
+  why_it_matters: The growth identity is dL/dt = flux x v(d) with v(d) = v(c) + v(m), and Wilsman 1996's
+    own source decomposition makes matrix production 32 percent of elongation in a fast rat plate and 49
+    percent in a slow one, larger than cellular enlargement in the slow plate. Human plates are the slow
+    case. The elasticity is exact - at constant flux and constant terminal cell volume, d ln(rate) / d ln(v_m)
+    equals the matrix fraction of the domain - so a 20 percent rise in matrix per cell buys about 10 percent
+    of elongation rate in a slow plate, and unlike a flux increase it is not a withdrawal from the progenitor
+    pool. The frontier branch screened 23 h_term genes and declared the term pharmacologically empty; every
+    one of those 23 is a v(c) gene and not one is a matrix-synthesis gene, so the empty verdict covers the
+    other half of the domain and not this half.
+  what_is_known: The term has been perturbed four times and never went up. hunziker1994 gave GH and IGF-I
+    to hypophysectomised rats and reports matrix volume per cell similar in normal, hormone-treated and
+    untreated animals while cell volume and height were restored - the hormonal axis moves v(c) and does
+    not move v(m). hunziker1989 reports net matrix production per cell invariant across an approximately
+    eightfold growth-rate range and concludes cartilage matrix plays a subordinate role in regulating longitudinal
+    growth rate. breur1997 finds matrix per cell age-invariant within a plate while spanning 1.92-fold between
+    plates, against 3.86-fold for terminal cell volume. pfander2004 Vhlh conditional knockout raises extracellular
+    matrix and produces severe dwarfism, which is charge without discharge. noonan1998 is the one positive
+    direction, relating growth rate to interterritorial matrix volume per cell in the upper proliferative
+    zone and to pericellular and territorial matrix in the lower hypertrophic zone, while concluding cell
+    enlargement contributes more.
+  what_is_missing: No intervention of any kind has raised matrix volume per chondrocyte above normal in
+    a healthy growing animal in any species, so the direction has never been tested. No measurement of matrix
+    volume per chondrocyte exists for a human growth plate at any age or site. And stokes2002 raised normal
+    rat caudal vertebral growth to 113 percent of control by distraction with hypertrophic zone height, mean
+    chondrocyte height and cell height increase all unchanged - which leaves matrix per cell as the only
+    unmeasured term that could carry it, and it was not measured.
+  discriminating_experiment: Point-sampled stereology for matrix volume per cell and terminal cell volume
+    in the same animals, in a normal growing animal, under an agent that raises matrix synthesis per chondrocyte,
+    with oxytetracycline elongation rate and a caliper at maturity. The cheapest version is a re-measurement
+    rather than a new experiment - stokes2002's distracted plates already exist and matrix per cell was never
+    scored on them.
+- gap_id: g_l5_480b
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Is matrix volume per chondrocyte a structural constraint or a developmentally patterned setpoint
+    that the organism simply does not use as a rate control?
+  why_it_matters: The two readings license opposite conclusions from the same arithmetic and nothing in
+    the arithmetic distinguishes them. If v(m) is a structural constraint - the volume of matrix a cell must
+    make to build a functional septum - then raising it is not available and the term is closed. If it is
+    a setpoint patterned by skeletal position, then it is an unexploited lever, and the file's own precedent
+    for that shape is the aggrecan and sulfation arm, where the machinery is present, enriched and never
+    perturbed upward.
+  what_is_known: breur1997 shows matrix per cell varies 1.92-fold BETWEEN four plates of one animal at one
+    age while being age-invariant WITHIN each plate across a falling growth rate, and describes it as possibly
+    predetermined and constant through active growth. That is the signature of a site-patterned setpoint
+    rather than a physiological rate control. Against that, hunziker1989 finds the term invariant under an
+    eightfold rate change and reads the invariance as subordinacy. lui2018 shows differential RESPONSIVENESS
+    between elements of one mouse - exogenous IGF1 stimulated phalangeal but not tibial chondrocytes, exogenous
+    BMP2 raised hypertrophy in metatarsals but not tibias - so between-element differences in this tissue
+    are demonstrably regulatory and not only structural.
+  what_is_missing: No positional transcription factor has ever been crossed against a chondrocyte size or
+    matrix-per-cell measurement in any tissue or species, and no between-element cell-volume or matrix-volume
+    measurement exists under any pharmacological or genetic manipulation. So the question of whether the
+    site-to-site difference is instructable has never been asked.
+  discriminating_experiment: Take the two elements of one animal that differ most in matrix per cell, apply
+    a manipulation known to change element length between them, and measure matrix volume per cell and terminal
+    cell volume separately by stereology in the same animals. If matrix per cell moves with the manipulation
+    it is a setpoint; if element length moves and matrix per cell does not, it is a constraint.
+- gap_id: g_l5_480c
+  type: contradiction
+  layer: L5
+  status: open
+  question: Does a slow growth plate allocate MORE or LESS of its matrix budget to sulfated proteoglycan
+    relative to fibrillar collagen than a fast one?
+  why_it_matters: The two arms of the v(m) term - collagen scaffold and sulfated proteoglycan - have
+    different levers. Collagen is a secretion-competence problem (R444, R447) with no agent in the raising
+    direction; sulfated proteoglycan is a substrate-supply problem with an obtainable oral donor arm
+    (R320, R321, R451, R479) and a leveraged Donnan exponent of 1.73 (R448). Which of the two a slow plate
+    is short of decides which arm is worth building.
+  what_is_known: R480's preregistered module test on GSE114919 finds, in BOTH mouse and rat hypertrophic
+    zone, that the slow (phalangeal) plate holds sulfation and core-proteoglycan machinery near the
+    genome-wide background median while dropping fibrillar collagen far below it - mouse 60.1st versus
+    3.6th percentile, rat 58.3rd versus 10.0th. Both modules are measured in the same libraries, so the
+    split is internally controlled even though the absolute levels are not interpretable. Against that,
+    hunziker1999organelle reports that in the SLOW 80-day rat plate collagen concentration is HIGHER and
+    glycosaminoglycan concentration SIGNIFICANTLY LOWER than at 21 and 35 days.
+  what_is_missing: The two results are on different axes (site at one age versus age within one plate) and
+    measure different quantities (transcript fraction versus protein volume density), so they need not
+    agree - but nobody has measured both on one axis. No zone-resolved matrisome exists in any species
+    (R480 section NINE), which is the measurement that would settle it.
+  discriminating_experiment: Quantitative matrisome mass spectrometry, or biochemical collagen and sulfated
+    GAG assay, on laser-captured hypertrophic zone from a fast and a slow growth plate of the same animal
+    at the same age, expressed per hypertrophic cell rather than per unit tissue.

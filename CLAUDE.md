@@ -2710,7 +2710,8 @@ result is post-weaning mouse.
 ⛔⛔ **ZERO — THE CHECK, DONE AGAINST BOTH FILES ON DISK BEFORE ANYTHING WAS BUILT. NEITHER SYSTEMATIC
 INSTRUMENT CONTAINS CYP19A1** — the gene behind the largest human height effect this atlas holds
 (aromatase deficiency: untreated men 188–204 cm, **bone age 15.5 at chronological age 26.8**, epiphyses
-unfused, still growing) and the mechanistic reason anastrozole is in the stack.
+unfused, still growing) and the mechanistic reason anastrozole is in the stack. ✓ **THE "188–204" RANGE IS
+VERIFIED AND THE CORRECTION AGAINST IT — CARRIED IN THIS FILE SINCE R479 — IS ITSELF WITHDRAWN: see R481.**
 · **`kosmicki2026`'s 207** — absent, and **structurally so: it is a HETEROZYGOUS burden test and aromatase
   deficiency is RECESSIVE.** No number of exomes fixes a zygosity model. Also absent: NPPC, SMO, HHIP,
   SOX9, PTHLH, COL2A1, RARG, CBS.
@@ -14285,6 +14286,281 @@ number in the source either. **Blocked item C6's identifier (PMID 13141004) is `
 modern replication (`lee2023metaphyseal`, `park2025metaphyseal`) is the only quantified version of the
 occlusion result — with `hansson1967` showing its long-run sign is negative.**
 
+## ⛔⛔ R481 — **CORR-367: A CORRECTION IS A CLAIM, AND IT MUST BE VERIFIED AGAINST THE PRIMARY BEFORE IT IS
+## PROPAGATED. R479's OWN "STILL OWED" ITEM WAS FALSE, AND IT WAS ONE COMMAND FROM BEING WRITTEN INTO NINE
+## FILES.**
+
+R479 closed with an item carried forward from an earlier session: *"the 188–204 cm range this file
+attributes to AROMATASE DEFICIENCY is wrong at the top end — 204 cm belongs to `smith1994`'s ESR1 patient,
+not to an aromatase-deficient man."* Applying it means editing **CLAUDE.md, `edges.yaml`, two edge shards,
+`adult_height_attainment.yaml`, `duration_lever_is_a_switch_not_a_slope.yaml` and
+`round432_recessive_period_screen.py`** — nine places, per CORR-345's rule that a correction must be
+propagated to every store in the same edit. **I made the first edit and then checked the primaries.**
+⛔ **THE RANGE IS CORRECT AND THE CORRECTION IS FALSE.** `morishima1995` is on disk, was **read in full from
+a supplied PDF on 2026-08-07**, and its extracted note gives the **AROMATASE-DEFICIENT BROTHER at 170.2 cm
+at 14 y 8 m and 204.0 cm (+3.7 SD) at 24 y 3 m AND STILL GROWING**, iliac apophyses unossified, arm span
+210.6 cm, upper-to-lower segment 0.84. ⭐ **`smith1994`'s ESR1 patient IS ALSO 204 cm — and that coincidence
+is the entire origin of the error.** Two different lesions, two different patients, the same number, and a
+plausible-sounding correction assembled from the collision.
+✓ **The rest of the range checks out in the same holdings: `carani1997` 187 cm at 31 and 190 at 38 with bone
+age frozen for seven years, `lanfranco2008` 193.0 cm at 26.8 with bone age 15.5.**
+⭐ **CORR-367, AND IT IS NOT CORR-345's SHAPE BUT ITS MIRROR. CORR-345 IS ABOUT A CORRECTION THAT FAILED TO
+PROPAGATE. THIS IS ABOUT A CORRECTION THAT WAS ABOUT TO PROPAGATE AND WAS WRONG — AND THE MORE STORES A
+CLAIM SITS IN, THE MORE DAMAGING A FALSE CORRECTION IS, BECAUSE PROPAGATION DISCIPLINE ACCELERATES IT.**
+**Before executing any inherited "still owed" item, re-derive it from the primary. A carried correction has
+no provenance attached to it and is therefore weaker evidence than the claim it attacks, which usually
+does.**
+
+## 📐📐📐📐📐 R480 — **THE IDENTITY HAS TWO TERMS AND THE FILE HAS ONLY EVER SCREENED ONE. F-R185 DECLARED
+## h_term PHARMACOLOGICALLY EMPTY ON 23 GENES OF WHICH NOT ONE IS A MATRIX GENE — WHILE MATRIX IS 32% OF
+## ELONGATION IN A FAST PLATE AND 49% IN A SLOW ONE, AND F-R058 PUT THAT EXACT GAP ON ITS OWN ASKS LIST
+## 127 ROUNDS EARLIER.**
+## Run `atlas/tools/round480_wilsman_vd_closure.py` · `round480_vd_decomposition.py` ·
+## `round480_vm_matrix_panel.py` · `round480_vm_module_site_axis.py` · data `atlas/data/round480/`
+
+⭐ **THE EQUATION, AND THE HALF NOBODY WORKED.** The frontier branch's identity is `dL/dt = flux × v(d)`
+with **v(d) = v(c) + v(m)** — terminal hypertrophic cell volume PLUS the matrix volume attributable to that
+cell. F-R185 then screened **23 h_term genes** for every compound that touches them and declared the
+dominant node pharmacologically empty. Its 23 are **PAPPA PAPPA2 STC2 IGFBP4 IGFBP5 IGF1 IGF1R | NPPC NPR2
+NPR3 OSTN MME | IHH SOX9 RUNX2 GLI2 PTH1R HDAC4 SMO | MTOR FGFR3 INPPL1.** ⛔ **EVERY ONE IS v(c) — cell
+swelling, CNP, hypertrophy timing, mTOR. NOT ONE MATRIX-SYNTHESIS GENE.** So the empty verdict covers 59%
+of the terminal domain in a fast plate and 44% in a slow one, and is silent on the other 32–49%.
+⛔ **AND F-R058 FLAGGED IT ITSELF.** Its own lever table reads `| matrix per cell v(m) | 32–49% of growth |
+**nothing, ever** |`, and its asks list requests *pharmacological control of matrix volume per chondrocyte*.
+**Measured across the frontier branch's 185 rounds: XYLT1 0 mentions · SLC35B2 0 · CHST3 0 · SERPINH1 0 ·
+glycosaminoglycan 0 · Golgi 0 · "matrix production" 0 in STACK_STATE (the 2 in README are F-R058's own
+flag) · aggrecan 3 · "matrix volume" 2.** The term was named as missing and then never worked.
+
+⭐⭐⭐⭐ **ONE — AND THE MEASUREMENTS EXIST. WILSMAN 1996's TABLE 6 GIVES MATRIX VOLUME PER CELL DIRECTLY FOR
+FOUR RAT PLATES AND THIS ATLAS HAS HELD THE FULL TEXT SINCE 2026-08 WITHOUT EXTRACTING IT.** The file has
+quoted the 9/32/59 and 7/49/44 source decomposition since R470 — verified verbatim from the local text this
+round — and never opened the table underneath it.
+| plate | rate µm/d | **v(c) µm³** | **v(m) µm³** | **v(d) µm³** | **matrix %** |
+|---|---|---|---|---|---|
+| proximal tibia | 396 | **14,997** | **6,900 ± 980** | 21,901 | **31.5%** |
+| distal radius | — | (12,458) | 5,970 ± 1,100 | 18,428 | 32.4% |
+| distal tibia | — | (8,582) | 5,780 ± 1,270 | 14,362 | 40.2% |
+| proximal radius | 47 | **4,135** | **4,090 ± 780** | 8,222 | **49.7%** |
+⭐⭐ **THE IDENTITY v(d) = v(c) + v(m) CLOSES TO 0.03%, AND IT IS NOT CIRCULAR: 14,997 + 6,900 = 21,897
+AGAINST A MEASURED 21,901, AND 4,135 + 4,090 = 8,225 AGAINST 8,222.** v(c) is a stereological mean cell
+volume, v(m) is computed from the hypertrophic volume fraction, and v(d) is total volume turned over at the
+chondro-osseous junction divided by cells lost there. **Three separately measured quantities.**
+⭐ *(`round480_vd_decomposition.py` states honestly that once flux is DEFINED as rate/v_d the flux×v_d form
+is closed by construction — that script's value is the partition, not the residual. This one is a real check
+because all three terms are measured independently.)*
+⭐⭐⭐ **AND THE HEADLINE IS THE SLOWEST PLATE: v(c) 4,135 AGAINST v(m) 4,090 — A RATIO OF 1.011. THE
+TERMINAL CHONDROCYTIC DOMAIN OF THE SLOWEST RAT GROWTH PLATE IS HALF CELL AND HALF MATRIX TO ONE PER CENT.**
+And the matrix fraction is monotone in rate: **31.5 / 32.4 / 40.2 / 49.7%.**
+
+⭐⭐ **TWO — BREUR 1997 IS AN INDEPENDENT MEASUREMENT OF BOTH TERMS IN THE SAME FOUR PLATES AND REACHES THE
+SAME STRUCTURAL CONCLUSION.** Per-plate agreement is 3.2% and 6.7% on two plates, 12.7% on one and 32.4% on
+the worst (distal tibia). What matters is the ranges: **terminal CELL volume spans 3.63× (Wilsman) and 3.86×
+(Breur); MATRIX per cell spans only 1.69× and 1.92×.** Two papers, two methods, one answer — **the organism
+modulates the cell about twice as much as the matrix between sites**, and Breur adds that matrix per cell is
+**age-INVARIANT within a plate** while cell volume is not, describing it as possibly predetermined.
+⭐ **THAT IS A SITE-PATTERNED SETPOINT RATHER THAN THE PHYSIOLOGICAL RATE CONTROL — which is the signature
+of an unexploited lever and equally the signature of a structural constraint. Nothing in the arithmetic
+distinguishes them, and that ambiguity IS the round's open question** (`g_l5_480b`).
+
+⭐⭐⭐ **THREE — THE HUMAN ANCHOR EXISTS, IT IS IN THIS ATLAS'S OWN HOLDINGS, AND AN AGENT TOLD ME IT WAS
+PAYWALLED AND UNVERIFIABLE. CORR-333's SHAPE, CAUGHT BEFORE IT ENTERED THE FILE.** `byers2000` is on disk
+as a PDF **and** as extracted text, `full_text_read: 2026-08-06`, and every figure checks out verbatim.
+⭐⭐ **AND THE RECOGNITION IS NEW: WILSMAN DEFINES MATRIX PER CELL AS (1 − HYPERTROPHIC CELLULAR VOLUME
+FRACTION) × v(d), SO THE MATRIX FRACTION OF THE TERMINAL DOMAIN IS IDENTICALLY THE CARTILAGE VOLUME FRACTION
+OF THE HYPERTROPHIC ZONE — WHICH IS EXACTLY WHAT BYERS MEASURED IN 46 HUMAN GROWTH PLATES.** His
+hypertrophic-zone cartilage volume fraction runs **25% at 11 days → 40% by one year → 40% at 13.5 years**
+(r=0.35, p<0.05). → ⭐ **A HUMAN TERMINAL CHONDROCYTIC DOMAIN IS ABOUT 40% MATRIX**, inside the rat range of
+31.5–49.7% and at its slow end, which is where a rib should sit. **The file has been saying no human
+measurement of this quantity exists; it exists, and it was mis-filed as a tissue fraction.**
+⚠ **Limits, stated with it: RIB rather than a long bone; and the authors attribute the HZ rise to a fall in
+lacunar profile diameter (0.043 → 0.036 mm) that was NOT statistically significant, so their own mechanism
+rests on a trend.** ✓ The proliferative zone is cleaner in one respect — **cartilage volume fraction 60 →
+82.5% while lacunar profile diameter does NOT change significantly**, i.e. matrix per cell rising — but it
+is the wrong zone for v(m)/v(d).
+
+⭐⭐ **FOUR — THE ELASTICITY IS EXACT, AND IT IS THE REASON TO CARE.** At constant flux and constant v(c),
+**d ln(rate) / d ln(v_m) = the matrix fraction of the domain.** In a slow plate that is ~0.49, so **+20% of
+matrix per cell buys ~10% of elongation rate and a doubling buys ~50%.**
+⭐⭐⭐ **AND IT IS THE ONLY TERM IN THE IDENTITY THAT IS BOTH FAST AND NOT A WITHDRAWAL. F-R032/F-R059's
+conjugacy result is that raising FLUX spends the progenitor pool; raising v(d) does not.** R360's Regime 2
+prices throughput at ≈0 once an AI has removed the deadline, and R423 closed amplification as having no
+agent anywhere. **v(m) is pool-free height, at a third to a half of the total, with a closed-form elasticity
+— and it has never been touched.**
+
+⛔⛔⛔ **FIVE — AND THE LOAD-BEARING NEGATIVE, STATED HERE RATHER THAN BURIED, BECAUSE IT IS THE STRONGEST
+OBJECTION IN THE ROUND. `hunziker1989` (J Physiol 414:55-71, PMID 2607442) REPORTS NET MATRIX PRODUCTION PER
+CELL INVARIANT ACROSS AN ~8-FOLD GROWTH-RATE RANGE AND CONCLUDES THAT CARTILAGE MATRIX PLAYS A SUBORDINATE
+ROLE IN REGULATING LONGITUDINAL GROWTH RATE.** That is the paper this thesis has to argue against.
+· ⛔ **AND `hunziker1994` SAYS THE SAME FROM THE PHARMACOLOGICAL SIDE: GH AND IGF-I IN HYPOPHYSECTOMISED
+  RATS RESTORED CELL VOLUME AND HEIGHT WHILE MATRIX VOLUME PER CELL WAS SIMILAR IN NORMAL, HORMONE-TREATED
+  AND UNTREATED ANIMALS. THE SOMATOTROPIC AXIS MOVES v(c) AND DOES NOT MOVE v(m).**
+· ⛔ **THE CLASS IS EMPTY IN THE DIRECTION THAT MATTERS: NO INTERVENTION HAS EVER RAISED MATRIX VOLUME PER
+  CHONDROCYTE ABOVE NORMAL IN A HEALTHY GROWING ANIMAL, IN ANY SPECIES.** The term has been perturbed four
+  times and never went up. **`pfander2004`'s Vhlh conditional knockout raises extracellular matrix and gives
+  SEVERE DWARFISM** — charge without discharge on the matrix term, the tenth instance in this file.
+⭐ **THE HONEST READING OF THE INVARIANCE, AND IT CUTS BOTH WAYS: a term can be a third to a half of the
+budget, invariant under every physiological and hormonal input ever tested, and still be raisable by
+something the organism does not use. That is simultaneously the definition of an unexploited lever and the
+definition of a hard constraint.** R454 reached the same impasse and could not break it; neither can this.
+✓ **The one positive direction is `noonan1998`**, which relates growth rate to interterritorial matrix
+volume per cell in the upper proliferative zone and to pericellular/territorial matrix in the lower
+hypertrophic zone — while concluding cell enlargement contributes more.
+⭐ **AND THE CHEAPEST RESIDUAL IN THE LITERATURE IS `stokes2002`: DISTRACTION RAISED NORMAL RAT CAUDAL
+VERTEBRAL GROWTH TO 113% OF CONTROL WITH HYPERTROPHIC ZONE HEIGHT, MEAN CHONDROCYTE HEIGHT AND CELL-HEIGHT
+INCREASE ALL UNCHANGED — WHICH LEAVES MATRIX PER CELL AS THE ONLY UNMEASURED TERM THAT COULD CARRY IT, AND
+IT WAS NOT MEASURED.** CORR-340's shape: the animals were dosed and the measurement was never taken.
+
+⛔⛔ **SIX — THE PREREGISTERED TEST WAS RUN AND IT FAILED AT TRANSCRIPT LEVEL. RECORDED AS A NEGATIVE.**
+Prediction, written before looking: if the matrix fraction rises as a plate slows, the matrix-synthesis
+module should sit HIGHER in the slow plate relative to the genome-wide background. GSE114919 is the only
+site × zone-resolved dataset in the atlas — **1-week TIBIA (fast) against 1-week PHALANX (slow), same
+animals, same age, zones separated by LCM, in mouse AND rat.**
+⛔ **IT DOES NOT. In both species and both zones every v(m) module sits AT OR BELOW the background median,
+and FIBRILLAR COLLAGEN is the most strongly down of any non-confound module — mouse HZ 3.6th percentile,
+rat HZ 10.0th.** Mouse PZ has every matrix module at the 20–33rd percentile while F-R185's v(c) set sits at
+the 84th.
+✓ **THE CONTROLS FIRED AND THE HOUSEKEEPING PANEL BEHAVED (32–58th percentile in all four contrasts), which
+is what makes the rest readable — and R312's four measured confounds are all at the extremes: distal-HOX
+99.8–100.0, muscle 0.2–2.6, bone 81.7–97.4, marrow/immune 66.5–97.3.** The contrast is dominated by tissue
+composition, exactly as R312 warned.
+⭐⭐ **BUT THE METHODOLOGICAL POINT IS THAT THIS TEST COULD NEVER HAVE MEASURED v(m) AND I SHOULD HAVE SAID
+SO BEFORE RUNNING IT: A BULK LIBRARY NORMALISED TO TOTAL COUNTS REPORTS TRANSCRIPTOME *FRACTIONS*, WHILE
+v(m) IS AN ABSOLUTE VOLUME PER CELL. If a tibial hypertrophic cell is three times larger and makes three
+times more of everything, the fractions are unchanged.** So the test could only ever detect a change in
+ALLOCATION — and it detected one.
+⭐ **THE SURVIVOR IS A MODULE SPLIT INSIDE THE MATRIX TERM, INTERNALLY CONTROLLED BECAUSE BOTH MODULES ARE
+MEASURED IN THE SAME LIBRARIES: in mouse HZ, sulfation sits at the 60th percentile and fibrillar collagen at
+the 3.6th — a 56-percentile spread. In rat HZ, core proteoglycan 58.3 against collagen 10.0. IN BOTH SPECIES
+THE SLOW PLATE'S HYPERTROPHIC ZONE HOLDS PROTEOGLYCAN AND SULFATION MACHINERY NEAR BACKGROUND WHILE DROPPING
+COLLAGEN.**
+⚠ **AND THAT COLLIDES WITH R468, WHICH IS RECORDED AND NOT SMOOTHED: `hunziker1999organelle` finds that in
+the SLOW (80-day) plate collagen concentration is HIGHER and GAG SIGNIFICANTLY LOWER than at 21 and 35 days
+— the opposite ordering.** Different axes (age within one plate versus site at one age) and different
+quantities (protein volume density versus transcript fraction), so they need not agree — but the tension is
+real and unresolved. `g_l5_480c`.
+
+⭐ **SEVEN — AND THE LOCAL TISSUE QUERY SHOWS WHERE THE INVESTMENT ACTUALLY IS.** R411's sex-corrected
+purity split on the postnatal human plate, v(m) panel against F-R185's v(c) set:
+**COL2A1 70,350 CPM · COL11A1 14,499 · COMP 6,903 · HAPLN1 6,340 · COL10A1 6,183 · ACAN 3,574 · MMP13 2,086**
+against **IGF1 1.6 CPM (ratio 0.33) · NPPC 0.1 · OSTN 0.0 · NPR3 2.9 · PAPPA2 4.4 · MTOR 12.1 (0.22) ·
+PAPPA 63.5 (0.30).** ⚠ **CORR-349 GOVERNS — abundance is not a ranking criterion and this is not offered as
+one.** What it is: the tissue spends its transcriptome on the matrix module by three to four orders of
+magnitude over the module F-R185 screened, and the file has screened the small one.
+✓ Reconfirmed on the way through: **CHST3 205.7 CPM at ratio 1.84 against CHST11 134.7 at 0.09** (R409's
+paralogue switch), **SLC35B2 80.3 at ratio 9.38** — the single most enriched gene in the panel and R461's
+one v(m) node with a working elevation experiment — SLC26A2 139.0 at 1.35, XYLT1 200.2 at 0.16.
+⭐ **AND THE DIRECTION SPLITS CLEANLY IN `kosmicki2026`'s 207, which the v(m) panel reaches with 8 genes:
+LOAD-BEARING (raise) ACAN −16.60 cm at P=1.9e-52, XYLT1 −3.88, COL27A1 −1.51, SERPINH1 −1.15 best row /
+−6.50 pLoF, ASPN −1.00 · BRAKES (block) CHAD +2.63, PLOD2 +0.909, PLOD1 +0.535.** F-R185's v(c) set reaches
+the 207 with 11 of 22, so both halves are genetically real; only one has been worked.
+
+⛔⛔⛔ **EIGHT — CAN IT BE RAISED? THE ELEVATION SHELF IS EMPTY *BY CONSTRUCTION*, AND THE ONE WHOLE-ANIMAL
+EXPERIMENT THAT EXISTS DOES NOT TEST THE HYPOTHESIS IT LOOKS LIKE IT TESTS.**
+⛔ **THERE IS NO TRANSGENIC OVEREXPRESSION ALLELE IN MOUSE FOR *ANY* OF SLC35B2, PAPSS1, PAPSS2, CHST3,
+CHST11, ACAN, CANT1 OR IMPAD1/BPNT2 — every allele in MGI for all eight genes is a LOSS of function.**
+That is R342's inhibitor-shelf problem in its purest form and one level further back: **nobody ever wanted
+MORE matrix, so the gain-of-function reagent was never made, so the term cannot be screened even in a
+mouse.** It is also why the whole arm is invisible to IMPC, to `kosmicki2026`'s het burden test and to HPO
+simultaneously — R469's **gain-only lever** class, on a term worth 32–49% of elongation.
+⭐⭐ **THE ONE EXCEPTION IS REAL AND IT IS A LENGTH ENDPOINT IN A NORMAL ANIMAL: a C6ST1/CHST3 TRANSGENIC ON
+A WILD-TYPE BACKGROUND (PMID 36572689) GIVES FEMUR 15.79 ± 0.129 → 15.99 ± 0.089 mm (+1.27%, p=0.0217) AND
+TIBIA 18.40 ± 0.197 → 18.70 ± 0.137 mm (+1.63%, p=0.0233), n=5** — extracted from the paper's own Source
+Data workbook, not from its text, and **not a skeletal paper: the bone measurements are incidental to a
+neural study.**
+⛔⛔ **AND ITS TABLE S6 IS WHY IT DOES NOT TEST THE OSMOTIC HYPOTHESIS: TOTAL CHONDROITIN-SULFATE
+DISACCHARIDE FELL NUMERICALLY (837.2 → 802.4) AND SULFATES PER DISACCHARIDE WERE 1.0295 AGAINST 1.0297 AT
+p=0.956. IT IS A 4-O → 6-O POSITIONAL SWITCH AT CONSTANT CHARGE AND CONSTANT GAG MASS.**
+→ ⭐⭐⭐ **WHICH MAKES IT MORE INTERESTING, NOT LESS: A ~1.3–1.6% LENGTH GAIN IN A NORMAL ANIMAL FROM A
+CHANGE IN SULFATION *POSITION* WITH FIXED CHARGE UNMOVED. Every sulfation argument in this file — R320,
+R321, R322, R410, R446, R451, R479, and R448's Donnan exponent of 1.73 — is denominated in FIXED CHARGE.
+This result is orthogonal to all of them and cannot be explained by any of them.** ⚠ n=5, incidental
+endpoint, no growth-plate histology, no v(m) measurement, and the isomer switch has its own extensive
+non-skeletal biology. **Grade D, and the single most decision-relevant unread document on this arm is the
+line's construct and promoter** (Miyata 2012, Nat Neurosci, PMID 22246436).
+⛔ **AND THE STANDARD DEFICIENCY CONTROL DOES NOT BOUND THE TERM, WHICH IS A CORRECTION TO THE OBVIOUS
+READING: the brachymorphic `bm/bm` mouse (PAPSS2) loses about two-thirds of longitudinal growth, and its
+own authors report that THE RATE AT WHICH EACH CELL INCREASED ITS MATRIX VOLUME SEEMED NORMAL** — the loss
+was proliferative-zone height, G0 arrest and blocked hypertrophy. **A two-thirds growth deficit with matrix
+per cell intact says undersulfation shortens bone through the CELL arm, not through v(m).**
+⭐ **THE CLOSEST ANYONE HAS COME TO RAISING PER-CELL MATRIX OUTPUT IS `sox9` RETROVIRAL TRANSDUCTION OF
+HUMAN ARTICULAR CHONDROCYTES (PMID 18433381), WHICH RAISED BOTH THE RATE AND THE TOTAL CAPACITY OF GAG
+SYNTHESIS PER CELL — WITH NO CHANGE IN THE TRANSCRIPTION OF THE BIOSYNTHETIC ENZYMES.** ⛔ In vitro,
+articular not physeal, and SOX9 is already in F-R185's v(c) list, so Step 0 is not clean. **But it is the
+one demonstration that per-cell matrix capacity is raisable at all, and it says the control point is not
+the enzymes.**
+⛔ **NEW CONTRAINDICATION MECHANISM, THIRD INDEPENDENT ONE AGAINST THE SAME DRUG: LITHIUM DIRECTLY INHIBITS
+BPNT2/IMPAD1 (PMID 34920982), DECREASING CHONDROITIN-4-SULFATION.** R356 contraindicated lithium on
+canonical-Wnt grounds (grade E), R457 added `frederick2008`'s gPAPP inhibition with a dwarfism phenotype,
+and this is the third — same target family, now with a measured sulfation readout.
+⚠ **TWO DATA-INTEGRITY FLAGS RECORDED SO THEY DO NOT COST A LATER ROUND: PubMed's DOI field is CORRUPT for
+PMID 36572689 and PMID 40747004, and MOUSE IMPAD1 IS SYMBOL `Bpnt2` IN MGI — a naive symbol query returns
+nothing.** ⚠ And `dick2008papst`, which R461 leaned on for the PAPS-transporter elevation, is **MDCK II
+canine kidney epithelium**, its "~3×" and "several-fold" are **phrases rather than printed numbers**, and
+HSPG sulfation was **essentially unchanged.**
+
+⛔ **NINE — THE DATASET HUNT, AND ITS ANSWER IS A STRUCTURAL NEGATIVE.** ⭐ **NOT ONE DEPOSITED DATASET IN
+ANY REPOSITORY SEPARATES CELL FROM MATRIX. Every omics record measures transcript or protein abundance in a
+mixture, and abundance of a matrix gene is not matrix volume per cell.** The two that come closest are of
+different kinds and neither is both: **PXD019374** (newborn mouse femoral+tibial epiphyses, **deglycosylation
++ 4 M GuHCl — a true matrisome protocol**, the only real cartilage matrisome found) has no zones and no cell
+count; **10.5061/dryad.0g1f2** (Longshanks selected-vs-control tibia, the only deposited *cellular*
+measurement from a growth-rate contrast) has no matrix. ⭐ **A ZONE-RESOLVED MATRISOME DOES NOT EXIST IN ANY
+SPECIES.**
+⭐ **NEW AND NOT PREVIOUSLY HELD — the within-animal fast-vs-slow contrast, invisible to GEO:
+`PRJNA769490` (jerboa) and `PRJNA769454` (mouse), distal METATARSAL versus distal RADIUS/ULNA growth
+cartilage at P5, RNA-seq n=5+5 each, public SRA, with an ATAC arm at Zenodo 10.5281/zenodo.5120588 and
+fastq at 10.5281/zenodo.5123254.** A clean 2×2 of species × site at one postnatal age. ⛔ Whole growth
+cartilage **with intact perichondrium** and no zone separation, so it cannot separate cell from matrix and
+will load ECM genes specifically.
+⭐ Also new: **PXD069390** — pig growth plate proteome with a **body-size contrast across four breeds, two
+miniature and two large, in triplicate** (⛔ detergent whole-lysate, so ECM is systematically under-recovered)
+· **PXD032668** — red deer **antler tip cartilage**, the fastest-growing cartilage known, SWATH-MS + RNA-seq,
+3 deer × 3 stages · **GSE18738** bovine HZ-vs-RZ · **GSE144362** mouse femoral P14 zone-resolved ·
+**PXD002125**, the only zone-resolved growth-plate proteome anywhere (HZ-only, MCDS model with a WT arm).
+⛔ **EARNED NEGATIVES: no postnatal bat growth-plate dataset of any assay type exists** — all eight
+chiropteran limb datasets are embryonic autopod, so the 31-fold bat metacarpal-versus-metatarsal cell-volume
+contrast has no omics behind it. **No additional postnatal human growth-plate single-cell dataset beyond
+GSE288028.** **Nothing deposited anywhere for dGEMRIC, sodium MRI, Raman or FTIR of a growth plate**, and
+**BioImage Archive holds no growth-plate cell-segmentation dataset** — the modalities exist and are published
+as figures, and none of it is deposited. ⚠ **Method warnings recorded: ProteomeCentral keyword search returns
+1 record where the PRIDE full-text endpoint returns 4 verified — do not treat a ProteomeCentral zero as
+absence; MassIVE's PROXI endpoint 404s and is effectively unsearched; and every Dryad download from this
+environment returned 403/401 bot protection, so those files need a browser.**
+
+⛔ **TEN — FOUR CORRECTIONS OWED TO THIS FILE, EACH AGAINST A ROUND OF ITS OWN.**
+· ⛔ **R454 CITED THE LAMB PERIOSTEAL-RESECTION PAPER (PMID 19098649) FOR AXIAL ELONGATION OF THE
+  HYPERTROPHIC CHONDROCYTE. THE PAPER DOES NOT SUPPORT ITS OWN ABSTRACT: growth +36% (p=0.03) but
+  hypertrophic cell volume 8,499 against 8,607 at p=0.33, eccentricity p=0.08, density p=0.28, turnover
+  p=0.12, volume fraction p=0.14, n=3. NOT ONE CELLULAR PARAMETER REACHED SIGNIFICANCE.**
+· ⛔ **THE CNP ARM'S h_term CLAIM RESTS ON ZONE THICKNESS ONLY. No paper on CNP, vosoritide or NPR2 reports
+  hypertrophic cell volume or height** — the normal-animal gain-of-function studies (osteocrin transgenic
+  PMID 28990933; sacubitril PMID 38752331) report zone thickness, which **R463 and R471 both show is a blind
+  readout.** R425 put the CNP arm back in *because h_term is the only term left with an obtainable agent*;
+  that arm's own cell-level evidence does not exist.
+· ⛔ **THE VOLUME-VERSUS-RATE SLOPES ARE LARGELY UNVERIFIED: rat 0.0212 is `breur1997`'s Model 1, a partial
+  model; pig 0.0338 is unverified; MOUSE 0.0093 HAS NO PRIMARY AT ALL.** And **`barreto1994` breaks the
+  relationship in birds** — mallard and leghorn plates span 318–1,418 and 77–445 µm/day against mean cell
+  volumes of only 2,709–4,786 and 3,663–5,719 µm³, r² 65% and 54%. **The rate↔volume coupling is not
+  universal across taxa.**
+· ⛔ **`white2008`'s SINGLE HUMAN TERMINAL CELL VOLUME (5,900 µm³) IS A FLOOR, NOT A REPRESENTATIVE VALUE:
+  the plate was undergoing physiological epiphysiodesis with 46% central bridging bone, in a child treated
+  with cisplatin, doxorubicin and methotrexate.** And ⛔ **the bat 40,300 / 1,300 µm³ figures are NOT
+  verifiable** — both Farnum 2008 papers are closed access and the abstract supports only *"volume changes
+  approaching ×70"*, which is a within-plate proliferative-to-hypertrophic fold change and not the same
+  quantity.
+
+🧭 **WHAT R480 SETTLES.** The identity's second term is **a third to a half of longitudinal growth, has two
+independent measurements in the same four rat plates, closes the identity to 0.03% on separately measured
+quantities, has a human anchor at ~40% that was mis-filed as a tissue fraction, has an exact closed-form
+elasticity, is the only term that is fast and not a withdrawal from the pool — and has never been screened,
+never been raised in any species, and is invisible to every instrument this file owns.** Against it stands
+one 1989 paper saying it is subordinate, one 1994 paper showing the hormonal axis does not move it, one
+gain-of-function shelf that is empty because nobody ever wanted more matrix, and one failed transcript-level
+test of my own. ⭐ **The one whole-animal elevation experiment that exists gives +1.27% femur and +1.63%
+tibia in a normal mouse from a sulfation POSITION switch at unmoved fixed charge — orthogonal to every
+sulfation argument in this file. That is the honest state, and the deciding measurements are documents
+rather than experiments.**
+
 ## 🧬📐🧬📐 R477 — **THE ADAM12 DIRECTION IS SIGNED AT LAST, AND THE METHOD IS NEW TO THIS FILE: CROSS THE
 ## eQTL AGAINST THE GWAS. RAISING ADAM12 IS TALLER — AND IT IS ENTIRELY LEG, WHICH WITHDRAWS R476'S OWN
 ## COMPARTMENT COORDINATE ONE ROUND AFTER I COMPUTED IT.**
@@ -14839,9 +15115,12 @@ PROXY-TO-LENGTH FAILURE**, after LIPUS, capacitive coupling, LLLT, laser acupunc
 ⛔ **② THE SERRAT WARMING ARM'S EVIDENCE BASE IS THINNER THAN RECORDED** — see the thermal block above: no
 independent replication, female-only bone-length data, no growth-plate histomorphometry for the unilateral
 model, and `serrat2013` unobtainable.
-⛔ **③ STILL OWED FROM AN EARLIER SESSION: the "188–204 cm" range this file attributes to AROMATASE
-DEFICIENCY is wrong at the top end — 204 cm belongs to `smith1994`'s ESR1 patient, not to an aromatase-
-deficient man.**
+⛔ **③ THIS ITEM — "the 188–204 cm range attributed to AROMATASE DEFICIENCY is wrong at the top end, because
+204 cm belongs to `smith1994`'s ESR1 patient" — IS ITSELF WRONG AND IS WITHDRAWN BY R481. THE RANGE IS
+CORRECT.** `morishima1995`, read in full from a supplied PDF on 2026-08-07, gives the **AROMATASE-DEFICIENT
+BROTHER at 204.0 cm (+3.7 SD) at 24 y 3 m AND STILL GROWING**, iliac apophyses unossified, arm span
+210.6 cm. **Smith's ESR1 patient is ALSO 204 cm, and the coincidence of the two figures is what generated
+the false correction.** Do not propagate it — it was about to be pushed into nine files.
 
 🧭 **WHAT R479 DELIVERS AGAINST THE INSTRUCTION.** A limb-compartment ADD that is **oral, OTC and obtainable
 today**, whose one blocking objection the operator lifted and whose evidence base inverted in the same week —
