@@ -1,12 +1,102 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R178
+**Last updated:** F-R179
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-ROBERTS. **F-R179 — ⭐⭐⭐⭐ **`ROBERTS 1937` (Utrecht thesis, Dutch) SECTIONED FETAL LIMBS AND LOOKED AT CARTILAGE CELLS: AT 120 mg Au/kg *"GEHEEL VRIJ VAN GOUD"*; AT 480 mg Au/kg ***"BIJNA ALLE KRAAKBEENCELLEN VERTOONEN EENIGE KLEINE GOUDKORRELTJES"* — ALMOST ALL CARTILAGE CELLS CONTAIN GOLD GRANULES.** CHONDROCYTES ARE AN **ACCESSIBLE COMPARTMENT WITH A THRESHOLD**, AND IT CONVERGES EXACTLY WITH R172's MEASURED `0.53`.** ⭐⭐ **FREE FRACTION QUANTIFIED: `7%` IN HUMAN PLASMA (`Nguyen 2015`).** ⛔⛔⛔ **AND THE SUPPLEMENTARY TABLES BREAK ONE OF MY OWN CLAIMS: THE GENOME-WIDE 5hmC ANALYSIS IS *NULL* — 108,052 REGIONS, MIN `padj = 0.816`, RAW p<0.05 AT `5.6%` = THE NULL RATE.**
+
+**Document:** `R179_roberts_1937_found_gold_inside_fetal_chondrocytes_and_the_supplementary_tables_break_the_locus_level_claim.md`
+**Operator-supplied:** `Roberts_1937_Sanocrysine_OCR.txt`, `nguyen2015.pdf`, `13045_2023_1513_MOESM1_ESM.xlsx` (Additional file 1, six tables), RSC Med Chem Au(I) manuscript
+
+### ⭐⭐⭐⭐ HOLE #1 MOVES FURTHER THAN IT EVER HAS — GOLD *INSIDE* FETAL CHONDROCYTES
+> **`Roberts WJ, Rijksuniversiteit Utrecht, 27 April 1937`** — *"…localisatie van het goud na Sanocrysine-injectie… betreffende centraal zenuwstelsel, **PLACENTA en FOETAAL LICHAAM**."* Method: **autometallography / physical development**, gold grains scored cell by cell. **Chapter IV = "GOUDVERDEELING IN HET FOETALE LICHAAM."**
+
+| # | animal | loading | fetal age | ⭐ **CARTILAGE CELLS** | **PERICHONDRIUM** |
+|---|---|---|---|---|---|
+| 1 | **Rabbit N° 3** | 120 mg Au/kg | term | ⛔ ***"geheel vrij van goud"* — ENTIRELY FREE** (limb **and** rib cartilage) | ⭐ **slight, diffuse** |
+| 2 | **Rabbit N° 2** | 120 mg Au/kg | d23 p.c. | ⛔ **"kraakbeen vrij"** | ⭐ **diffuse** |
+| 3 | **Rat N° 50** | 600 mg Au/kg | 14 d | (whole fetus faintly loaded) | — |
+| 4 | ⭐⭐⭐ **Rat N° 51** | **480 mg Au/kg** | ⭐ **17 d** | ⭐⭐⭐ ***"BIJNA ALLE KRAAKBEENCELLEN vertoonen eenige kleine goudkorreltjes"*** | ⭐⭐ **"overal matige belading"** |
+| — | further fetus | — | — | ⚠ *"slechts bij wijze van uitzondering… een enkel goudkorreltje"* | ⭐ slight |
+
+> ⭐⭐⭐⭐ **GOLD ENTERS CHONDROCYTES. IT IS A THRESHOLD PHENOMENON. THE PERICHONDRIUM LOADS FIRST AND ALWAYS, IN EVERY ANIMAL AT EVERY DOSE.**
+
+⭐⭐⭐ **AND IT RESOLVES THE WHOLE LITERATURE'S APPARENT CONTRADICTION AS ONE THRESHOLD:**
+| source | finding | explained as |
+|---|---|---|
+| `Tonna 1963` | cartilage negative, **perichondrial osteogenic layer POSITIVE** | ⭐ below chondrocyte threshold, above perichondrial |
+| `Ghadially 1976` | aurosomes in **IMMATURE** but not mature chondrocytes | ⭐ above threshold in growing cartilage |
+| ⭐⭐ **`Roberts 1937`** | ⭐⭐ **free at 120 → almost all cells at 480 mg/kg** | ⭐⭐⭐ **the threshold observed directly** |
+| ⭐ `Gottlieb 1972` (R172) | ⭐ **cartilage:plasma `0.53` — LOWEST tissue measured** | ⭐⭐⭐ **the same fact, quantified in humans** |
+> ⭐⭐⭐⭐ **R172's "LOWEST-UPTAKE TISSUE" AND ROBERTS' "LAST COMPARTMENT TO LOAD" ARE THE SAME FINDING BY TWO METHODS 35 YEARS APART — AND R174's DOSE CHAIN ALREADY USES THE MEASURED `0.53`.**
+
+⛔⛔ **THE HARD LIMIT, NOT SOFTENED.** Our absorbed cumulative Au (29.03% Au, 25% absorption, 45 kg, 2.5 y): **2 mg/day → `2.94 mg Au/kg`; 6 mg/day → `8.83`.**
+| Roberts | loading | ⛔ **× our 2 mg/day** |
+|---|---|---|
+| ⛔ **cartilage cells FREE** | 120 mg Au/kg | ⛔ **40.8×** |
+| almost all chondrocytes loaded | 480 mg Au/kg | ⛔⛔ **163×** |
+> ⛔⛔ **THE DOSE AT WHICH HE FOUND CARTILAGE CELLS *FREE* IS STILL `41×` OUR EXPOSURE. ROBERTS SHOWS CHONDROCYTE UPTAKE IS REAL WITH A HIGH THRESHOLD — NOT THAT GOLD REACHES CHONDROCYTES AT OUR DOSE.**
+⭐ **Two partial answers, neither a rescue:** (1) cumulative injected dose is the wrong comparator for a steady-state question — **partition governs, and it is measured (0.53)**; (2) his own sensitivity anchor is a positive in renal cortex at **~1.5 mg Au/kg**, and our 2.5-y cumulative is **2.94 = 2.0× that** — in a *high*-uptake tissue. **Marginal-to-negative in the lowest-uptake tissue is exactly what he found.**
+
+⭐⭐ **HIS OWN PARADOX IS THE MOST INFORMATIVE PART:** Rat 51 got **less** gold than Rat 50 yet *"**is de belading der foetus toch VEEL ZWAARDER**"* — his explanation is 17-day vs 14-day embryos, *"a much younger embryo and thus a much younger placenta."* ⭐⭐ **Fetal loading tracks developmental stage/placental maturity, not maternal dose — and the most developed skeleton is the one where almost every chondrocyte held gold.** ⚠ **Against myself: the rabbits at TERM were "entirely free," so this is not a clean developmental gradient; species and a 4× dose difference confound. Not claiming one from n=4.**
+
+### ⭐⭐ THE FREE FRACTION — FLAGGED UNQUANTIFIED IN R178, NOW MEASURED
+> **`Nguyen TTTN, Østergaard J, Gammelgaard B, Anal Bioanal Chem 2015`** (CE-ICP-MS, LOD 18 ng/mL auranofin = 5.2 ng/mL Au):
+> ⭐⭐⭐ ***"the `4 and 7 %` of FREE AURANOFIN found in the untreated HSA and plasma solutions"*** — **`7%` FREE IN HUMAN PLASMA.**
+> ⭐ *"50% of the unbound auranofin had disappeared within **2 and 3 min**"*; **Cys-34 is the site** (alkylation leaves 94–96% free); **40% of blood gold on RBCs, 60% on plasma proteins; 99% protein-associated after IV.**
+
+⛔ **Naive correction would gut R178's margins** (10%-FBS medium has ~10× less albumin → higher free fraction; 4–10× correction → 2 mg/day = **0.5–1.3×**).
+> ⭐⭐⭐ **BUT THE NAIVE DIVIDE IS WRONG FOR THIS DRUG CLASS. Au(I)–Cys-34 is a REVERSIBLE THIOL-EXCHANGE equilibrium, not hydrophobic sequestration. Albumin is a CARRIER/RESERVOIR that hands gold to any higher-affinity thiol. If the bound pool were inert, gold would never reach tissue — yet Gottlieb measured 5–129 µg/g across human tissues and ROBERTS WATCHED GOLD CROSS A PLACENTA AND LOAD FETAL CELLS ONE BY ONE FROM AN OVERWHELMINGLY PROTEIN-BOUND CIRCULATION.**
+> ⭐⭐ **Correction real, bounded well below the naive ratio. Conclusion unchanged from R178, now quantified: THE MARGIN AT 2 mg/day MUST NOT BE ASSUMED — start there, titrate up, headroom to 6 mg/day.**
+⚠ Logged not used: Nguyen cites **median plasma gold 0.9 µg Au/mL** vs the FDA's 0.62 whole blood (plasma ≠ whole blood, second-hand).
+
+### ⛔⛔⛔ THE SUPPLEMENTARY TABLES BREAK ONE OF MY OWN CLAIMS
+| Table S4 — genome-wide 5hmC differential regions | value |
+|---|---|
+| regions tested | **108,052** |
+| ⛔⛔⛔ **minimum `padj` in the whole table** | ⛔⛔⛔ **`0.8163`** |
+| padj < 0.25 / 0.10 / 0.05 | ⛔⛔⛔ **ZERO / ZERO / ZERO** |
+| ⛔⛔ raw p<0.05 | ⛔⛔ **6,045/108,052 = `5.6%` — EXACTLY THE NULL EXPECTATION** |
+
+⭐ **For contrast the RNA-seq is genuinely strong:** Table S3, 14,834 genes, **min padj `5.2e-172`, 1,767 at padj<0.05.** **The failure is specific to the 5hmC sequencing.** ⚠ **Table S5 (5mC DMRs) has NO p-value or FDR column at all.** ⛔ **Table S6's 31-gene intersection uses the unfiltered 5hmC list as an input — not a validated set, and the c-Myc-via-5hmC mechanism rests on it.**
+
+⛔⛔ **THE CORRECTION I OWE.** R177 claimed *"three orthogonal assays."* **Two legs don't bear weight:**
+| leg | what it actually is |
+|---|---|
+| ⭐ dot blot | ⭐ **cellular but semi-quantitative** (and 5mC is 1.04 at 0.1 µM vs 1.30 at 0.5) |
+| ⛔⛔ genome-wide 5hmC-seq | ⛔⛔ **NULL after correction** |
+| ⛔ LC–MS/MS (Fig S6) | ⛔ **BIOCHEMICAL — purified TET1 + synthetic substrate. NOT a cellular measurement.** |
+> ⛔⛔ **THE *CELLULAR* 5hmC EVIDENCE REDUCES TO DOT BLOT. I CONFLATED BIOCHEMICAL WITH CELLULAR IN R177 AND CARRIED IT INTO R178.**
+
+⭐⭐⭐ **BUT THE FAIR READING RESCUES THE GLOBAL CLAIM AND KILLS ONLY THE LOCUS-LEVEL ONE:** **5hmC-seq libraries are NORMALISED PER SAMPLE, so a UNIFORM GLOBAL DECREASE IS INVISIBLE BY CONSTRUCTION to a differential-region analysis — normalisation divides it straight back out. A null differential result is EXACTLY WHAT A UNIFORM GLOBAL SHIFT PREDICTS.**
+
+| claim | status |
+|---|---|
+| purified TET1 catalysis inhibited | ⭐⭐⭐ **SOLID** (LC–MS/MS, p<0.001, 5fC=0) |
+| phenotype is TET1-dependent | ⭐⭐⭐ **SOLID** (rescue genetics) |
+| selectivity TET1 ≫ TET2/KDM6B | ⭐⭐⭐ **SOLID** |
+| TrxR excluded | ⭐⭐⭐ **SOLID** |
+| cellular EC₅₀ ~0.2 µM | ⭐⭐ **SOLID** |
+| transcriptional effect | ⭐⭐⭐ **SOLID** |
+| ⚠ **GLOBAL cellular 5hmC decrease** | ⚠ **dot blot only — plausible, consistent with the null, weaker than I claimed** |
+| ⛔⛔ **locus-level 5hmC / c-Myc** | ⛔⛔ **NOT SUPPORTED** |
+
+⭐⭐ **AND THE CONSEQUENCE FOR TIER 2 IS FAVOURABLE: if the effect is a UNIFORM GLOBAL shift, a GLOBAL assay (total-DNA ELISA / LC–MS/MS on leukocytes) is precisely the right instrument and sequencing was the wrong one. R175's Tier 2 is the correct design; R175's noise warning (26% CV, 27.5% age drift) remains the binding constraint — not the effect's existence.**
+
+### ⭐ THE FOURTH PAPER — A SECOND PROTEIN-BINDING BRACKET
+`RSC Med Chem` (accepted ms), organometallic **Au(I)** with **4-ethynylanisole + TRIETHYLPHOSPHANE**, A549 xenograft: ⭐⭐ *"**protein binding of approximately 65%**"* (=35% free) vs auranofin's 93%/7% — ⚠ **different molecule and assay; logged as a bracket, not substituted.** ⭐ *"well tolerated in vivo in mice at 10 mg/kg"*; strong TrxR inhibition. ⭐ **This makes `Fig S13`'s GENETIC exclusion of TrxR in the TET1/T-ALL setting more striking, not less — the generic gold(I) mechanism was available and the rescue still failed.** ⚠ **Working position: gold(I) hits TrxR AND TET1; which dominates is cell-context dependent — which also explains R178's tension where cartilage protection was credited to TXNRD1/Nrf2 while leukaemia is TET1.**
+
+### ⭐ WHERE THE ARM STANDS
+**Solid:** purified-enzyme TET1 inhibition; TET1-dependence by rescue genetics; selectivity that is the near-inverse of the Ollier oncometabolite; TrxR excluded; a cellular EC₅₀; human PK proportional to dose; a **measured** human cartilage partition; **chondrocyte accessibility now demonstrated**; ~155 patient-years of paediatric oral exposure at 3.4–4.5× our dose; no human renal-cancer signal; cartilage-protective in vivo.
+**Thin:** the concentration margin at 2 mg/day after an honest free-fraction correction. **This is why the dose is now a TITRATION, not a number.**
+⛔ **OPEN — ONE ITEM, UNCHANGED: gold has never been measured in an epiphyseal growth plate.** After Roberts the residual question is no longer *"can gold enter chondrocytes"* (yes, with a threshold) but ***"where does our exposure sit relative to that threshold in a growing physis"*** — one experiment: **oral auranofin to steady state in a growing animal, ICP-MS the microdissected proximal tibial plate.**
 
 ---
 
