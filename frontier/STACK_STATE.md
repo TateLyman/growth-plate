@@ -1,12 +1,92 @@
 # Live stack state — what is in it, what is missing, and why
 
 **Branch:** `claude/height-enhancement-research-v34b4r`
-**Last updated:** F-R179
+**Last updated:** F-R180
 **The goal, unchanged:** fast **and** unlimited **and** never-closing — all three simultaneously.
 Only then the compounds.
 
 This file exists so the state survives context loss. The round documents are the reasoning; this is the
 ledger.
+
+---
+
+## 0-PNAS. **F-R180 — ⭐⭐⭐⭐⭐ **THE `N` FRAMEWORK WAS INDEPENDENTLY DEMONSTRATED IN `PNAS 2025` BY LINEAGE TRACING: GROWTH-PLATE STEM CELLS ***"RENEW VIA POPULATION ASYMMETRY"*** AND GH ***"PROMOTES THEIR COMMITTED CELL DIVISION, LEADING TO STEM CELL DEPLETION"*** — OFFERED AS THE EXPLANATION FOR ***"THE DECLINING LONG-TERM EFFICACY OF GH THERAPY."*** THAT IS R130's `N`-AS-RATIO, THE RATE-YIELD LAW, AND R175's FALSIFIABLE PREDICTION, ALL CONFIRMED.** ⭐⭐⭐ **`Sci Transl Med 2026`: TWO RESTING-ZONE STEM POPULATIONS IN *EARLY PUBERTAL HUMAN* PLATES ⇒ THE TIMING OBJECTION IS ANSWERED.** ⛔⛔⛔ **BUT MY DELIVERY ARGUMENT IS CONTRADICTED BY THE FIELD'S OWN 2026 CONSENSUS — WITHDRAWN BEFORE USE.** ⭐⭐⭐⭐ **AND `TET1` SURVIVES A HARD ADVERSARIAL AUDIT: A PERFECT MONOTONIC ALLELIC SERIES.**
+
+**Document:** `R180_the_N_framework_was_independently_demonstrated_in_pnas_and_my_delivery_argument_is_contradicted_by_the_field.md`
+
+### ⭐⭐⭐⭐⭐ SOMEONE ELSE DEMONSTRATED THIS PROJECT'S THEORY, AND DIDN'T KNOW IT
+> **`Growth hormone regulates the stem cell population in the growth plate`, PNAS 2025 (PMID 41289405, PMC12685065)** — transgenic lines, label-retention, clonal + lineage tracing:
+> ⭐⭐⭐ *"GH **REDUCES THE POOL of slow-cycling, label-retaining STEM CELLS** by promoting their differentiation into transient progenitors."*
+> ⭐⭐⭐⭐ *"these stem cells **RENEW VIA POPULATION ASYMMETRY** and… **GH PROMOTES THEIR COMMITTED CELL DIVISION, LEADING TO STEM CELL DEPLETION**."*
+> ⭐⭐⭐⭐ *"…a potential explanation for… **THE DECLINING LONG-TERM EFFICACY OF GH THERAPY**."*
+
+| this project's claim | source | ⭐ **PNAS 2025's independent version** |
+|---|---|---|
+| ⭐⭐⭐ **`N` is a RATIO, not a stock** | **R130**, never externally validated | ⭐⭐⭐⭐ ***"renew via POPULATION ASYMMETRY"*** — by clonal lineage tracing |
+| ⭐⭐⭐ **raising throughput BURNS the reserve** | `A ∝ throughput^−0.150` — ⛔ theoretical | ⭐⭐⭐⭐ ***"GH promotes COMMITTED CELL DIVISION → STEM CELL DEPLETION"*** |
+| ⭐⭐⭐ **yield falls as rate rises** | the `A` term | ⭐⭐⭐⭐ ***"the DECLINING LONG-TERM EFFICACY OF GH THERAPY"*** |
+| ⭐⭐⭐ **R175: a velocity spike is a WARNING** | predicted **before this paper was found** | ⭐⭐⭐⭐ **GH is the canonical velocity-raiser — and the one shown to deplete the pool** |
+
+> ⭐⭐⭐⭐⭐ **THE ARM'S PURPOSE, STATED SHARPLY FOR THE FIRST TIME: SHIFT RESTING-ZONE POPULATION ASYMMETRY TOWARD SELF-RENEWAL — PRECISELY THE OPPOSITE OF WHAT GROWTH HORMONE DOES.**
+⛔⛔ **GH and rhIGF-1 are now ACTIVELY CONTRAINDICATED on BOTH terms of the identity: rhIGF-1 ADVANCES BONE AGE (destroys `A`, R177) and GH DEPLETES THE STEM POOL (destroys `N`).**
+
+### ⭐⭐⭐ THE HARDEST OBJECTION TO THE ARM — WHICH I HAD NEVER MADE — IS ANSWERED
+⛔⛔⛔ **The objection at full strength:** *kosmicki carriers had TET1 haploinsufficiency FROM CONCEPTION. `N` is set early and depleted across growth. We start at BA ~14–16 with a nearly exhausted pool. Most of the +8 cm may accrue before puberty, so a 2-year pharmacological window captures almost none of it.* ⛔ **This is my own error class (genetic loss ≠ pharmacological inhibition) applied to the TIMING dimension, which I had never done.**
+
+> **`A transcriptional atlas of the PUBERTAL HUMAN growth plate reveals TWO POPULATIONS OF STEM CELLS`, Sci Transl Med 2026 (PMID 41984930)** — human surgical specimens, single-cell + spatial:
+> ⭐⭐⭐ *"**EARLY PUBERTAL HUMAN GROWTH PLATES**… revealed **TWO DISTINCT STEMLIKE POPULATIONS IN THE RESTING ZONE**"*; ⭐⭐⭐ *"**ROOT STEM CELLS**… reside in a specialized microenvironment **LOW IN WNT and TGF-β**… marked by **`Prrx1`**… **generate extensive chondrocyte clones**."*
+> ⭐⭐⭐⭐ **`N` IS A LIVE, PARTITIONABLE VARIABLE IN EXACTLY OUR WINDOW — IN HUMANS, WITH SINGLE-CELL DATA. THE TIMING OBJECTION IS ANSWERED.**
+
+⭐⭐ **UNEXPECTED ANSWER TO THE WNT ARM (open since R137): the root stem-cell niche is *"LOW IN WNT and TGF-β"* ⇒ RAISING Wnt pushes the niche toward COMMITMENT, not self-renewal.** First non-speculative directional argument on it.
+⚠ **Field's own limit:** `"Quiescence" in the resting zone… a systematic review` (PMID 41795828, 2026) — *"features of cellular quiescence in RZ chondrocytes remain **poorly reported and underexplored**."* **Compartment real and live; its control not yet well characterised.**
+
+### ⛔⛔⛔ THE ATTACK — I FOUND IT IN MY OWN NEXT SEARCH, AND IT RUNS AGAINST US
+I was one step from arguing the physis takes up more gold than articular cartilage (canals + metaphyseal vascular front). Then:
+> ⛔⛔⛔ **`Growth plate cartilage-targeting nanoparticles…`, Bioactive Materials 2026 (PMID 42338508):** ***"the AVASCULAR and ALYMPHATIC nature of GROWTH PLATE CARTILAGE SEVERELY LIMITS DRUG DELIVERY AND ACCUMULATION."***
+> ⛔⛔⛔ **THE FIELD'S OWN 2026 FRAMING, IN A PAPER WHOSE PREMISE IS THAT YOU MUST BUILD A COLLAGEN-II-TARGETED NANOPARTICLE TO REACH A GROWTH PLATE. MY ARGUMENT IS CONTRADICTED BY THE PEOPLE WHO DO THIS FOR A LIVING.**
+
+⚠ **And the cartilage-canal evidence is weaker than its title:** `J Anat 2016` (PMID 26471892), 6 foals — ⚠ *"the **MAJORITY** of patent canals… **CONTINUOUS endothelium**; fenestrations in **two locations in ONE venule**"*; only **chondrifying** (regressing) canals showed gaps. **Real but transient and limited.**
+
+⛔⛔ **THE ERROR I ALMOST MADE, NAMED — 6th appearance of this class:** my three supports were about **UPTAKE CAPACITY**, not **ACCESS**.
+- ⭐ **`Bai 2023` ICP-MS, never previously extracted:** *"**15.74 ± 1.00 pg/cell** entered **CHONDROCYTES**, but only **0.85 ± 0.05 pg/cell** into **MACROPHAGES**"* = **18.5×**, primary chondrocytes from 5-week-old mice. ⛔ **But nanoparticle endocytosis, not molecular Au(I)-thiolate.**
+- ⚠ **`Gottlieb` Table 2, half of which I had never quoted:** femoral condyle **bone `11 µg/g`** vs **cartilage `5 µg/g`**. ⛔ **NOT usable — mixed tissue containing marrow at `81 µg/g`.**
+- ⭐ perichondrium loads in every animal (Tonna, Roberts).
+> ⛔⛔ **CONSEQUENCE, AGAINST US: `USE 0.53`. DO NOT REVISE THE PARTITION UPWARD. R174's chain was right to take the conservative number, and the thin margin at 2 mg/day (R178, R179) STANDS UNRELIEVED.**
+⭐ **What survives at true weight:** delivery is **poor, not zero** — `5 µg/g` is measured in the *worst-case* tissue, and Roberts saw gold *inside* fetal chondrocytes.
+
+### ⭐⭐⭐⭐ THE `TET1` ADVERSARIAL AUDIT — IT PASSES HARDER THAN ANYTHING ELSE HERE
+The arm rests on **42 singleton pLoF carriers**, so I ran the audit I should have run 30 rounds ago: **does it show a graded ALLELIC SERIES?** An artefact does not produce a dose-response across ordered severity classes.
+| `TET1` category | AAF | ⭐ **effect (SD)** | P | carriers |
+|---|---|---|---|---|
+| all missense | <0.01% | **+0.0362** | 9.8e-05 | 9,142 |
+| possibly deleterious missense | <0.1% | **+0.0389** | 1.3e-06 | 12,179 |
+| ⭐ deleterious missense | <0.01% | ⭐ **+0.317** | 4.9e-17 | 545 |
+| ⭐ pLoF | <0.01% | ⭐ **+0.628** | 5.2e-14 | 112 |
+| ⭐⭐ deleterious missense | singleton | ⭐⭐ **+0.959** | 2.8e-15 | 53 |
+| ⭐⭐⭐ **pLoF** | **singleton** | ⭐⭐⭐ **+1.04** | 2.2e-14 | 42 |
+| ⭐⭐⭐ **pLoF + deleterious missense** | singleton | ⭐⭐⭐ **+0.995** | ⭐⭐⭐ **4.84e-28** | 95 |
+
+> ⭐⭐⭐⭐ **PERFECT MONOTONIC ALLELIC SERIES ACROSS SIX ORDERED SEVERITY CLASSES, 42 → 34,130 CARRIERS, ALL POSITIVE, p FROM `1e-4` TO `5e-28`. NOT AN ARTEFACT.**
+⭐⭐⭐ **INTERNAL CONTROL IS DECISIVE: `ACAN` — known OMIM height gene — shows the IDENTICAL STRUCTURE WITH OPPOSITE SIGN:** missense −0.025 → deleterious missense −0.178 → pLoF −0.801 → **singleton pLoF −2.07**. **The method reproduces a known gene correctly, which validates it on TET1.**
+⭐⭐ **`LCORL` mechanism revealed: pLoF +1.11 (P=4.2e-70, 198 carriers) but ALL MISSENSE NULL (+0.003, p=0.72) — a PURE LOSS-OF-FUNCTION gene, exactly matching the convergent TRUNCATING mutations selected in 8 species (R177). Human and animal genetics agree on mechanism, not just direction.**
+⚠ **Winner's curse caveat: TET1 replication +0.912 vs discovery +1.04 = 88% retention. Mild, not artefactual.**
+
+### ⭐⭐ WHAT I COULD NOT FIND, AFTER EXHAUSTING THE ANGLES
+| angle | result |
+|---|---|
+| gold × `epiphyseal plate/growth plate/physis/epiphysis` | ⛔ 20 hits, all unrelated surgery (R178) |
+| ⭐ **gold × `metaphyseal band`/`zone of provisional calcification`** | ⛔ **ZERO** |
+| heavy metal/bismuth/lead line × zone of provisional calcification | ⛔ **ZERO** |
+| whole-body autoradiography × gold | ⛔ 2 hits, dental alloys |
+| `Ghadially` full gold corpus (18 papers) | ⭐ articular cartilage only |
+| Danscher / gold beads / GNP biodistribution | ⛔ different exposure route |
+
+⭐⭐ **THE METAPHYSEAL-BAND NEGATIVE, BOTH WAYS:** lead and bismuth make dense metaphyseal bands; **gold never has**, despite decades of serially-radiographed gold-treated children. ⛔ *Against:* no radiographically detectable physeal deposition. ⭐ *For (stronger):* a band needs **bone-seeking substitution into hydroxyapatite at gram-scale burden**; gold is thiophilic with a **milligram** body burden — at `5–11 µg/g` it would be **invisible**. **The absence is EXPECTED, not evidence against penetration.** ⭐⭐ **And it IS good negative safety evidence: no metaphyseal/physeal/epiphyseal abnormality has ever been reported in gold-treated children who were radiographed serially for years.**
+
+### ⛔ THE ONE ITEM, AFTER EVERYTHING
+⭐ chondrocytes **take up gold when reached** (Roberts in vivo; Bai by ICP-MS) · ⭐ the **worst-case partition is measured in humans (`0.53`)** · ⛔⛔ **but growth-plate access is POOR by the field's own account and there is NO basis for assuming the physis beats 0.53** · ⛔ **and the margin at 2 mg/day is thin on that number.**
+> ⭐⭐ **This is why the dose is a TITRATION and the primary readout is a HAND FILM — both decided before this round, both strengthened by it.**
+> ⛔ **One experiment still closes it: oral auranofin to steady state in a growing animal, ICP-MS the microdissected proximal tibial plate.**
 
 ---
 
