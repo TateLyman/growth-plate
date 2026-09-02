@@ -446,7 +446,15 @@ and do not collapse to knees-only. Both compartments are live for him.
   (L1–L4, monkey, rat, dabogratinib L4–L6) and R318's GWAS — a 52-wk ratio in children is a weak instrument.
 - **NPR3 LIGAND — and read all four lines before proposing a molecule (R300 rewrote this entry).**
   The atlas *derives* this from its own spec (block clearance instead of adding ligand; ~1.3–1.5 kDa
-  partitions far better than vosoritide's 4.1 kDa). **Never given to a human, no bone data in any species.**
+  partitions far better than vosoritide's 4.1 kDa). ⛔ **"NEVER GIVEN TO A HUMAN, NO BONE DATA IN ANY
+  SPECIES" IS FALSE ON BOTH CLAUSES AND IS WITHDRAWN BY R487.** ① **cANF HAS BEEN GIVEN INTRAVENOUSLY TO
+  ~52 HUMANS ACROSS TWO *COMPLETED* TRIALS** — NCT02498379 (EARLY_PHASE1, n=8 healthy volunteers, a dedicated
+  safety / biodistribution / dosimetry study) and NCT02417688 (PHASE1, n=44), with NCT05838547 recruiting 80
+  more; all Cu[64]-25%-CANF-Comb. ⚠ **At TRACER/MICRODOSE level on a comb-polymer conjugate, so it carries NO
+  pharmacological tolerability** — what it does carry is human biodistribution, a clinical-grade manufacturing
+  route, and a non-invasive way to measure NPR3 occupancy. ② **BONE DATA EXIST FOR THE ENDOGENOUS OCCUPANT:
+  OSTN-Tg mice have ELONGATED BONES, `kanai2017`'s overgrowth is abolished on CNP- or NPR-C-depleted
+  backgrounds, and `watanabetakano2021` runs the whole chain from mechanical load. See R487.**
   ✗ **"ANTAGONIST" IS THE WRONG WORD AND WAS THE WRONG SPEC.** `npr3_is_bifunctional_and_the_spec_was_backwards`
   (aubdool2025): NPR-C is a clearance sink in cartilage **and a Gi-coupled aortoPROTECTIVE receptor**, and
   **M372049 is the tool reagent used to ABOLISH that protection.** Wanted profile = **an occupant that
@@ -1117,10 +1125,16 @@ Gap: `g_l2_does_a_tankyrase_inhibitor_reproduce_the_spin4_zone_decomposition_and
 - ⬆ **LOXL2/pan-LOX strengthens** — **LOXL4 at 21,618 HZ**, higher than LOXL2 anywhere; LOX, PLOD3 (10,274),
   P4HA1 (17,346), P4HB (59,234) all present. PXS-5505 is **pan**-LOX, so family co-expression argues FOR it.
   ✗ But it loses the cartilage-safety head-to-head against tankyrase.
-- ⬇ **NPR3 DEMOTED FOR THIS STACK — by the argument that killed sacubitril.** `hakata2024` showed raising
-  ENDOGENOUS CNP is **not additive** with a CNP analogue. NPR3 blockade raises endogenous CNP by the other
-  clearance route, so expect the same non-additivity against vosoritide. **Human genetics untouched; still a
-  first-rate target for anyone NOT already on a CNP analogue.**
+- ⛔⛔ **NPR3 DEMOTED FOR THIS STACK — AND THIS ROW IS WITHDRAWN BY R487. ITS PREMISE WAS AN INFERENCE AND THE
+  DIRECT EXPERIMENT REFUTES IT.** R302 reasoned: `hakata2024` showed raising ENDOGENOUS CNP is **not additive**
+  with a CNP analogue; NPR3 blockade raises endogenous CNP by the other clearance route, **so expect the same
+  non-additivity against vosoritide.** ⭐ **`kanai2017` RAN IT: CNP × OSTN DOUBLE-TRANSGENIC MICE HAD HIGHER
+  CIRCULATING CNP AND *ADDITIONAL* INCREASES IN BONE LENGTH OVER ELEVATED CNP ALONE**, and its authors conclude
+  OSTN administration is an adjuvant for CNP therapy. **The two clearance arms are not interchangeable —
+  neprilysin degrades CNP enzymatically and locally, NPR-C internalises it and blocking NPR-C RAISES CIRCULATING
+  CNP.** ⛔ **THAT PAPER HAS BEEN IN THIS BIBLIOGRAPHY, READ IN FULL, SINCE 2026-08-09, WITH A NOTE WHOSE OWN
+  FIRST SENTENCE IS "THIS REFUTES A PREDICTION THIS ATLAS WAS ABOUT TO MAKE" — and R302's row stood for ~185
+  rounds anyway.** ✓ Human genetics untouched. **See R487.**
 
 ## THE ALL-207 LOCALISATION SWEEP (R302) — `atlas/data/round302/gse9160_all207_localisation.tsv`
 All 207 height genes **plus 60 druggable targets the atlas had named but never localised** — 251 symbols,
@@ -15868,3 +15882,144 @@ UNII ZC6062V1O9. **VTP-194204 = CID 9863341, C₂₄H₃₂O₂, MW 352.5, CAS 2
 pentadienoic acid and an RXR *AGONIST*, a different chemotype and a different receptor.** ⛔ And **PubChem
 conflates BMS-453 and BMS-189453 onto one CID (9875424)**, which the literature treats as distinct. **Specify
 retinoid tool compounds by molecular formula and CAS, never by trivial alias.**
+
+## 🧲🧲🧲🧲🧲 R487 — **THE NPR3 OCCUPANT ARM HAS AN ENDOGENOUS LIGAND THAT PASSES R424's SELECTIVITY GATE,
+## AND R302's DEMOTION OF IT WAS AN INFERENCE THAT THE DIRECT EXPERIMENT REFUTES. THE PAPER THAT REFUTES IT
+## HAS BEEN IN THIS BIBLIOGRAPHY, READ IN FULL, FOR ~185 ROUNDS, WITH A NOTE WHOSE FIRST SENTENCE SAYS SO.**
+
+⛔ **ZERO — THE LEDGER FAILURE, AND IT IS CORR-333/CORR-351 ON THE ARM THIS FILE KEEPS RE-OPENING.**
+`kanai2017` (PMID 28990933) was added **2026-08-09, `full_text_read`**, with a note beginning *"THIS REFUTES A
+PREDICTION THIS ATLAS WAS ABOUT TO MAKE."* R302's demotion row stood in CLAUDE.md anyway. And the whole
+osteocrin bibliography block — `moffatt2007`, `scott2024`, `schn2026` — turns out to have been **harvested on
+one day as bare metadata and never opened**; `scott2024` (PMID 38890799), the only administration study in a
+normal large mammal, was read for the first time this round.
+
+⭐⭐⭐ **ONE — THE GATE R424 ERECTED IS PASSED, AND IT IS PASSED BY THE ENDOGENOUS LIGAND RATHER THAN BY A
+SYNTHETIC PEPTIDE.** R424 held this arm *"HELD, NOT ADDED"* on exactly one unrun assay: **NPR2 loss is
+−2.750 cm at P=5.88e-96 while NPR3 loss is +1.910 cm, so the downside per unit of NPR2 engagement EXCEEDS the
+upside per unit of NPR3 engagement — and neither cANF(4-23) nor `nishizawa2017` compound 23 reports an NPR2
+number, both reporting NPR1, the wrong receptor.**
+⭐ **`moffatt2007` (PMID 17951249) REPORTS IT: OSTEOCRIN BINDS NPR-C AT Kd ≈5 nM WITH *NO* BINDING TO GC-A OR
+GC-B — AND GC-B *IS* NPR2.** The one molecule with the selectivity profile the arm requires is the one the
+body already makes. ⚠ Binding, not a functional NPR2 counter-screen, and not in cartilage — but it is the
+number R424 said did not exist for any candidate.
+✓ Same paper: **OSTN-transgenic mice have ELONGATED BONES** — so the "no bone data in any species" clause of
+the LIVE COMPOUNDS entry was false as well.
+
+⭐⭐⭐⭐ **TWO — AND R302's DEMOTION IS REFUTED BY DIRECT EXPERIMENT RATHER THAN BY ARGUMENT.** R302 reasoned
+from `hakata2024` — raising ENDOGENOUS CNP via neprilysin blockade is **not additive** with a CNP analogue —
+to the prediction that NPR3 blockade, being the other clearance route, would be non-additive too.
+⭐ **`kanai2017` CROSSED THEM: CNP × OSTN DOUBLE-TRANSGENIC MICE HAD HIGHER CIRCULATING CNP AND *ADDITIONAL*
+INCREASES IN BONE LENGTH OVER ELEVATED CNP ALONE**, and its authors conclude OSTN administration is an
+adjuvant for CNP therapy. Its overgrowth is **abolished on CNP-depleted and on NPR-C-depleted backgrounds** —
+two epistasis controls, so the phenotype is on-pathway and on-target.
+⭐⭐ **AND THE TWO CLEARANCE ARMS ARE NOT INTERCHANGEABLE, WHICH IS WHY THE INFERENCE FAILED: NEPRILYSIN
+DEGRADES CNP ENZYMATICALLY AND LOCALLY, WHILE NPR-C INTERNALISES IT AND BLOCKING NPR-C *RAISES CIRCULATING*
+CNP.** Sacubitril's non-additivity is a statement about the local enzymatic step and does not transfer.
+⛔ Recorded against it: **MME is 0.17 on the purity split**, i.e. contaminant-leaning, so sacubitril
+necessarily worked on the circulating pool too — the two are less cleanly separated than the mechanism
+suggests, and this is a real weakness in the argument rather than a decorative caveat.
+
+⭐⭐ **THREE — THE CHAIN HAS A MECHANOTRANSDUCER AND A HUMAN CONFIRMATION OF THE INPUT.**
+`watanabetakano2021` (PMID 34260913): **mechanical load → PERIOSTEAL OSTEOCRIN → NPR3 occupancy → local CNP
+spared for NPR2 → long bones elongate**, with Ostn induced by suppressing FoxO1. `diazcastro2021`
+(PMID 34746212, PMC8568884): in **52 exercising boys, osteocrin rose markedly at P<0.01.**
+⭐ **So this is the one arm in the file where a FREE, NON-PHARMACOLOGICAL INPUT RAISES THE MOLECULE, and the
+human half of that has been measured.** ⚠ **AND THE MODALITY IS LOAD-BEARING: PERIOSTEAL AND MUSCULAR
+loading, which runs OPPOSITE to quasi-static AXIAL COMPRESSION (Hueter-Volkmann, growth-suppressing).**
+⚠ `diazcastro2021`'s own Table 1 heights are control 147.31→148.01 against exercise 145.28→146.35, i.e.
+**+0.37 cm untested** — `fuchs2001`'s shape exactly, and **NOT a reopening of R429**, which closed the impact
+arm on nine arms and an n-weighted mean of −0.13 cm.
+
+⭐⭐ **FOUR — AND IT HAS BEEN ADMINISTERED TO A NORMAL LARGE MAMMAL WITH THE RIGHT PHARMACODYNAMIC READOUT.**
+`scott2024` (PMID 38890799): incremental **INTRAVENOUS proOSTN(83-133) in 8 conscious NORMAL sheep** raised
+**plasma ANP, BNP AND CNP together with cGMP, dose-dependently**; clearance was inversely proportional to
+dose, i.e. the clearance receptor saturates as predicted; arterial and central venous pressure fell. It also
+**identifies proOSTN(83-133) as the major circulating form in HUMAN plasma.**
+⭐ **THAT IS TARGET ENGAGEMENT ON THE EXACT MECHANISM — occupy NPR-C, and circulating natriuretic peptide and
+its second messenger rise — in a normal animal, by a systemic route.**
+⛔ **AND IT IS NOT A GROWTH EXPERIMENT: NO BONE, NO PLATE, NO LENGTH, ACUTE INFUSION IN ADULT SHEEP.**
+
+⭐ **FIVE — IT PASSES ALL THREE OF R302's DISQUALIFIERS, WHICH ALMOST NOTHING IN THIS FILE DOES.**
+① **PRESENT** — NPR3 2.83 / 2.8 CPM and NPR2 2.40 / 12.0 CPM on the purity split, both cartilage-enriched
+(R465), and the periosteal compartment where OSTN acts is **VASCULARISED**, so R315's avascular-cartilage
+delivery wall does not apply to it (R323's exception). ② **DIRECTION** — human NPR3 pLoF+delmis **+1.910 cm at
+P=1.42e-61 across 3,727 carriers**, constrained=0. ③ **NOT REDUNDANT** — `kanai2017`'s double transgenic is
+the direct additivity test against an elevated-CNP background and it is **positive**, so this is an
+**ADJUVANT TO THE CNP ARM ALREADY IN THE STACK**, not a substitution.
+⭐ **OBTAINABLE AND MEASURABLE TODAY:** recombinant human OSTN is a catalogue protein at >95% purity,
+endotoxin <1.0 EU/µg; and **serum musclin has 2026 LMS PAEDIATRIC REFERENCE VALUES** (`schn2026`, 399
+children — musclin rises from infancy to adulthood and is **lower on oestrogen-containing oral
+contraceptives**), so the analyte can be drawn and interpreted.
+
+⛔⛔ **SIX — AND WHAT STOPS IT BEING PROPOSED, STATED BEFORE ANYONE PROPOSES IT.**
+· ⛔ **NO OSTEOCRIN ADMINISTRATION STUDY IN ANY SPECIES HAS A BONE-LENGTH ENDPOINT. Every bone arm is GERMLINE
+  TRANSGENIC and every administration arm is cardiovascular.** That is the gap, and under R302 it is a gap
+  rather than a disqualification — but it is the whole distance between this and a candidate.
+· ⛔ **THE CATALOGUE CONSTRUCT IS NOT THE CIRCULATING SPECIES.** Vendors sell Val28–Gly133 or the full-length
+  precursor; `scott2024`'s active human species is **proOSTN(83-133)**. **A supply experiment using the
+  catalogue construct may silently test the wrong molecule** — the same failure mode as an unactivated ADAM12
+  construct (R469).
+· ⛔ **COSTS IN THE TRANSGENIC: MARKED KYPHOSIS** (`moffatt2007`) — a deformity phenotype riding with the
+  elongation, exactly as in `suda1998`'s BNP mice — **and blood pressure falls** (`scott2024`).
+· ⛔ **SIZE: a ~13 kDa precursor and a ~5.7 kDa circulating peptide, with the half-life problem that implies**;
+  and `scott2024`'s own finding that clearance falls with dose means the exposure–response is nonlinear.
+· ⚠ **AND THE cANF HUMAN EXPOSURE IS TRACER-DOSE ONLY** — see the corrected LIVE COMPOUNDS entry. ~52 humans
+  across two COMPLETED trials establishes biodistribution, a clinical-grade manufacturing route and a
+  non-invasive occupancy readout. **It establishes nothing about pharmacological tolerability.**
+
+🧭 **WHAT R487 SETTLES.** The NPR3 arm's two standing objections were **R424's unrun NPR2 counter-screen** and
+**R302's predicted non-additivity with the CNP analogue**. The first is answered by the endogenous ligand's own
+binding data; the second is refuted by a double-transgenic cross this file has held, read, for 185 rounds.
+**What remains is a single missing experiment — give osteocrin, or a proOSTN(83-133)-matched construct, to a
+normal growing animal and put a caliper on the femur — and one measurement that costs a blood draw.**
+Gaps `g_l3_487a`, `g_l3_487b`.
+
+## 🍬⛔🍬⛔ R487 — **THE GLYCOGEN ARM CLOSES. R440's COLLIGATIVE HYPOTHESIS IS REFUTED BY THE ONLY TWO
+## ZONE-RESOLVED MEASUREMENTS THAT EXIST — THE STORE PEAKS *IN* THE HYPERTROPHIC CELL AND FALLS ONLY IN THE
+## DEGENERATIVE ZONE, SO IT CANNOT BE POWERING THE SWELLING. AND THAT *RESOLVES* R445's ASYMMETRY.**
+
+⭐ **THE HYPOTHESIS, AND WHY IT WAS WORTH TESTING.** R440 identified glycogen as the one untested candidate for
+`farnum2002`'s missing **93% of the osmotic drive for hypertrophy**: osmotic pressure is **colligative**, so
+depolymerising a store multiplies its osmotic contribution by the degree of polymerisation — of order 10⁴ —
+**at near-constant mass and near-zero synthetic cost**, which would also dilute dry mass exactly as
+`cooper2013` measured. **The hypothesis has a hard requirement: the store must be LOADED BEFORE hypertrophy
+and CASHED IN DURING it.**
+
+⛔⛔ **AND THE TWO ZONE-RESOLVED MEASUREMENTS THAT EXIST BOTH SAY THE OPPOSITE. `tokunaga1987` (PMID 2834983,
+rat, zone-resolved) AND `daimon1977` (PMID 890543, chick, EM): GLYCOGEN PEAKS IN THE HYPERTROPHIC CHONDROCYTE
+AND FALLS ONLY IN THE DEGENERATIVE ZONE — WITH PHOSPHORYLASE *a* AND GLUCOSE-6-PHOSPHATASE AT THEIR MINIMUM
+EXACTLY WHERE THE STORE IS AT ITS MAXIMUM.**
+→ ⭐ **THE POLYMER IS STILL FILLING WHILE THE CELL ENLARGES, AND THE MOBILISING ENZYMES ARE SWITCHED DOWN
+THERE. DEPOLYMERISATION CANNOT BE POWERING THE SWELLING.** R440's arithmetic was right and its premise is
+not. ⚠ Honest limits: **only the CYTOSOLIC route was measured**, and a standing stock is not a flux.
+
+⭐⭐ **AND THE REFUTATION *RESOLVES* R445's UNEXPLAINED ASYMMETRY RATHER THAN LEAVING IT OPEN.** R445 found the
+plate concentrates glycogen **DESTRUCTION** and not synthesis — **STBD1 6.57, GAA 4.90, PPP1R3G 4.93** against
+**GYS1 0.35, GBE1 0.24** — and could not say what the destruction was for.
+→ ⭐ **IT IS A DISPOSAL EVENT, NOT A SWELLING EVENT. The store is cashed at the TERMINAL/DEGENERATIVE step,
+which is where both zone-resolved measurements put its disappearance, and STBD1+GAA is the LYSOSOMAL route —
+i.e. glycophagy at the end of the cell's life, not glycogenolysis during its expansion.** Concordant with
+`horigome2020`, whose Atg7-null chondrocytes accumulate glycogen granules.
+
+⛔ **AND THE LOCAL INSTRUMENT KILLED THE ONLY DRUGGABLE ROUTE BEFORE IT WAS PROPOSED.** Run on R411's
+sex-corrected split: the plate invests in the **LYSOSOMAL** arm (STBD1 6.57, **GAA 4.90**, GBA 2.22) and **not
+at all** in the **CYTOSOLIC PHOSPHORYLASE** arm — **PYGL 1.17, PYGB 0.70, PYGM 0.21, PHKA1 0.81, PHKB 0.21,
+AGL 0.82** — and the phosphorylase arm is **the only one with a real drug class (CP-91149, ingliforib).**
+**THE SHELF AND THE TISSUE ARE ON DIFFERENT ARMS OF THE SAME PATHWAY.** R298's base rate again.
+⛔ **INFORMATIVE NEGATIVE ON THE ADJACENT ROUTE (R438's ploidy question): the canonical ENDOCYCLE programme is
+not invested in either — E2F7 0.12, CCNE1 0.28, AURKA 0.32.** So whatever `kusuzaki1984`'s tetraploid
+chondrocytes are, the tissue does not concentrate the machinery that normally makes them.
+
+⛔ **EARNED NEGATIVES, BY QUERY RATHER THAN BY ASSERTION.** **No glycogen measurement in a growth-plate
+chondrocyte exists for any glycogen storage disease in any species.** **McArdle disease (PYGM) and GYG1
+myopathy have NO stature phenotype.** And **`pendyal2025` (PMID 40507177): 37 children with late-onset Pompe
+disease — the human lysosomal-glycogen loss-of-function state, i.e. the arm the plate actually invests in —
+have heights spanning the 4th to 97th percentile.** A human population that cannot clear lysosomal glycogen is
+not short.
+
+🧭 **VERDICT: THE GLYCOGEN ARM IS CLOSED AS A LEVER AND SURVIVES AS AN EXPLANATION.** R440's colligative
+hypothesis is refuted on its own load-bearing requirement by the only two zone-resolved datasets in existence;
+R445's expression asymmetry is explained; the one druggable enzyme class sits on the arm the tissue does not
+use; and the human loss-of-function state has normal stature. **`farnum2002`'s missing 93% of the osmotic
+drive is still missing, and glycogen is no longer a candidate for it.** `g_l5_487c`.
