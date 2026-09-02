@@ -20035,3 +20035,58 @@ gaps:
   discriminating_experiment: Quantitative matrisome mass spectrometry, or biochemical collagen and sulfated
     GAG assay, on laser-captured hypertrophic zone from a fast and a slow growth plate of the same animal
     at the same age, expressed per hypertrophic cell rather than per unit tissue.
+- gap_id: g_l5_484a
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Does the recessive-class instrument that recovered CYP19A1 recover the cartilage sulfation
+    enzymes, and does any of them carry a signed human height effect the het burden table cannot see?
+  why_it_matters: R484 verified that CHST3, CHST11, CHST7, CHST12, CHST14, SLC35B2, PAPSS1, PAPSS2,
+    SLC26A2, UST, ARSB, ARSL, ARSD, CSGALNACT1, CSGALNACT2 and CHSY1 are ALL absent from kosmicki2026's
+    207, while the only two members that reach it - ACAN and XYLT1 - are the substrate genes and both are
+    load-bearing. The entire ENZYME half of the pathway therefore has no human effect size in either
+    direction, and every ranking this file has made on the sulfation arm has been made without one.
+  what_is_known: Both human sulfotransferase diseases are RECESSIVE BY CONSTRUCTION - CHST3 R304Q
+    homozygous in consanguineous Omani families (thiele2004), CHST11 a homozygous in-frame deletion
+    (shabbir2018) - and CORR-358 establishes that a heterozygous burden test cannot contain a recessive
+    gene. So the absence is a design artefact of the instrument rather than evidence of no effect, exactly
+    as R432 demonstrated for CYP19A1. R432 built and ran a disease-level recessive screen over HPO and it
+    was never run across the sulfation pathway. The pathway's human compartment signal is real and points
+    at the trunk from two independent instruments - SLC13A1 sitting height P=2.16e-07 (R322) and CHST3
+    HP:0003521 disproportionate short-trunk short stature (R484).
+  what_is_missing: A gene-level homozygous loss-of-function scan against height. R453 identified the
+    cohort - the Pakistan Genome Resource, 173,303 participants with homozygous LoF in 6,476 genes - and
+    noted that no such scan has ever been published in any cohort. Failing that, R432's own disease-level
+    HPO screen re-run with the sulfation pathway as its gene set, keyed by (gene, disease) per R432's
+    correction so that opposite conditions of one gene do not cancel.
+  discriminating_experiment: Run R432's recessive screen over the 16 absent sulfation genes and report,
+    per gene and per disease, the direction and axis of the stature annotation; then check each against
+    the purity-corrected human growth-plate enrichment already on disk.
+- gap_id: g_l5_484b
+  type: known_unknown
+  layer: L5
+  status: open
+  question: Does the 4-O versus 6-O sulfation POSITION change matrix osmotic pressure, fixed-charge
+    density, hydration or aggrecan-hyaluronan aggregation at MATCHED total charge?
+  why_it_matters: This is the load-bearing step of the only positional lever in the file. miyata2012's
+    transgenic holds sulfates per disaccharide constant to four decimal places (1.0295 vs 1.0297,
+    p=0.956) and still lengthens femur and tibia in a normal mouse, so R448's Donnan exponent of 1.73 -
+    which is a TOTAL-charge argument - cannot explain the gain. Either there is a positional biophysics
+    nobody has measured, or the bone result is not a matrix result at all and is a maturation-clock
+    effect (miyata2012's own line holds the cortical critical period open into adulthood).
+  what_is_known: Five separate Europe PMC queries pairing chondroitin 4-sulfate with 6-sulfate against
+    conformation, hydration, persistence length, molecular dynamics, osmotic pressure, fixed charge,
+    collagen binding and aggrecan-hyaluronan aggregation returned 169, 495, 416, 448 and 2 hits with
+    nothing on point - an EARNED negative. The only physically argued primary is scott1992, in which CS6
+    aggregates into meshworks and CS4 does not, with duplex stability falling as charge is concentrated
+    toward the polymer centre line, and aggregation driven by hydrophobic patches that negative charge
+    opposes. A frequently repeated claim that 4-O-sulfated CS binds calcium better traces to a primary
+    that does not compare 4S with 6S at all.
+  what_is_missing: Any measurement of the four biophysical quantities as a function of sulfation POSITION
+    at matched total charge, in any system. And, in vivo, a zone-resolved 4S/6S measurement in the C6ST-1
+    transgenic itself - which would say whether the growth plate's own sulfation pattern was actually
+    moved by a ubiquitous pCAG transgene.
+  discriminating_experiment: Osmotic stress measurement of purified CS-A versus CS-C solutions matched
+    for total sulfate per disaccharide and for chain length, plus the same comparison on reconstituted
+    aggrecan-hyaluronan aggregates; and disaccharide composition analysis of growth-plate cartilage from
+    the C6ST-1 transgenic against its wild-type littermate.

@@ -14311,6 +14311,348 @@ CLAIM SITS IN, THE MORE DAMAGING A FALSE CORRECTION IS, BECAUSE PROPAGATION DISC
 no provenance attached to it and is therefore weaker evidence than the claim it attacks, which usually
 does.**
 
+## 🧮🧮🧮🧮🧮 R482 — **THE EQUATION CLOSES ON A GENETIC DWARF'S OWN TABLE, AND THE TERMINAL DOMAIN TURNS
+## OUT TO HAVE INTERNAL STRUCTURE NOBODY HAS EVER SPLIT: IN THE UNDERSULFATED MOUSE THE CELL HALVES AND THE
+## MATRIX NEARLY DOUBLES, SO THE DOMAIN BARELY MOVES. R480 READ THIS PAPER FOR ONE SENTENCE AND MISSED IT.**
+## Run `atlas/tools/round482_longshanks_vm_decomposition.py` · primaries in `acquire/bundle4/txt/`
+
+⭐ **ZERO — FOUR PRIMARIES READ IN FULL THIS ROUND** (`vanky2000`, `hunziker1989`, `miyata2012`, `dick2007`),
+plus the Longshanks raw workbook re-analysed. R480 built its matrix thesis on abstracts and secondary
+reports of three of them; every number below is re-derived by me from the printed tables.
+
+⭐⭐⭐ **ONE — `vanky2000` (Calcif Tissue Int 2000;66:355–362, brachymorphic bm/bm mouse, male B6C3Fe
+littermates, proximal tibia, IdUrd/BrdUrd double label + morphometry on 1 µm plastic sections, n=5+5).
+R480 SECTION EIGHT QUOTES ITS ONE SENTENCE — "the rate at which each cell increased the matrix volume seemed
+normal" — AND THAT IS VERIFIED VERBATIM. TABLE 3 CONTAINS SOMETHING R480 DOES NOT HAVE.**
+⭐ **THE UNIT RECOGNITION THAT UNLOCKS IT: the column headed "matrix volume per cell compartment" in
+nL/mm² IS A HEIGHT IN µm — it equals cell-centre distance × Vv(matrix), and it reproduces the paper's own
+printed value on ALL SEVEN ROWS to ≤0.03 µm** (6.34×0.615=3.899 vs 3.90 · 9.74×0.509=4.958 vs 4.96 ·
+20.3×0.286=5.806 vs 5.81 · 22.1×0.200=4.420 vs 4.43 · 7.33×0.608=4.457 vs 4.45 · 16.6×0.486=8.068 vs 8.04 ·
+17.2×0.462=7.946 vs 7.95). **So Vanky measured v(m) directly in 2000 and nobody has read it as v(m).**
+⭐⭐ **THE TERMINAL DOMAIN, AT THE LOWER BORDER OF THE MINERALIZING ZONE:**
+| | **v(d)** cell-centre distance | **v(c)** cell | **v(m)** matrix | matrix share |
+|---|---|---|---|---|
+| **bm/+ control** | **22.10 µm** | **17.68** | **4.42** | **20.0%** |
+| **bm/bm dwarf** | **17.20 µm** | **9.25** | **7.95** | **46.2%** |
+| ratio dwarf/control | **0.778** | **0.523** | **1.799** | — |
+⭐⭐⭐ **THE CELL IS AT 52% OF CONTROL HEIGHT AND THE MATRIX IS AT 180%, AND THE TWO NEARLY CANCEL — THE
+DOMAIN ITSELF FALLS ONLY 22%.** A sulfation-supply lesion halves the chondrocyte and the matrix compartment
+expands into the space. **That is the first v(c)/v(m) split of a terminal domain in any perturbed animal in
+this atlas, and it says the two sub-terms are not independent — they trade against each other.**
+
+⭐⭐⭐⭐ **TWO — AND THE NEWEST EQUATION CLOSES ON THE PAPER'S OWN TABLES, IN BOTH GENOTYPES, TO 0.1%.**
+`dL/dt = flux × v(d)`: bm/+ **0.5005 cells/h/column × 22.10 µm = 11.06** against Table 2's printed
+**11.06 µm/h**; bm/bm **0.2105 × 17.20 = 3.62** against printed **3.62**. Growth ratio **0.327** = flux ratio
+**0.4206** × v(d) ratio **0.7783** = 0.327 exactly. **Log split: 77.6% FLUX, 22.4% v(d).**
+⭐⭐ **AND THE RESIDENCE-TIME IDENTITY IS VERIFIED ON EVERY ZONE OF THE CONTROL, WHICH IS WHAT MAKES v(m)
+MECHANISTIC RATHER THAN DESCRIPTIVE.** `Vcell = ΔVcell × residence` and `residence = cells per zone ÷ flux`:
+resting 36.0 h predicted vs 35.5 observed · proliferative 11.8 vs 11.8 · hypertrophic 13.8 vs 14.2 ·
+mineralizing 5.2 vs 5.3 — and in the dwarf's hypertrophic zone 38.0 vs 39.9.
+→ ⭐⭐⭐ **SO THE DWARF'S MATRIX COMPARTMENT IS BIGGER FOR A REASON THAT IS NOT MORE SYNTHESIS: ΔVcell IN
+THE HYPERTROPHIC ZONE IS 0.09 IN BOTH GENOTYPES — IDENTICAL — WHILE RESIDENCE RUNS 13.8 h AGAINST 38.0 h.
+THE MATRIX TERM IS SYNTHESIS RATE × TIME, AND ONLY THE TIME MOVED.**
+⛔⛔ **WHICH IS THE HARDEST CONSTRAINT ON THE WHOLE v(m) THESIS AND IT IS ARITHMETIC RATHER THAN
+EMPIRICAL: residence = cells per zone ÷ flux, SO v(m) AND FLUX ARE INVERSELY COUPLED BY CONSTRUCTION.
+RAISING v(m) BY SLOWING FLUX IS SELF-DEFEATING — it is what a dwarf does.** The only non-self-defeating
+route is to raise **ΔVcell**, the synthesis rate per cell per hour, which is the term Hunziker and Vanky
+both find clamped. `g_l5_482a`.
+⭐ Recorded because it is unexpected: **ΔVcell is NEGATIVE in the control's mineralizing zone (−0.26/h,
+Vcell −1.38) — matrix per cell PEAKS in the hypertrophic zone at 5.81 µm and FALLS to 4.43 at the junction.**
+The terminal domain is measured after a partial matrix withdrawal, in a normal animal.
+⚠ And the dwarf's other numbers, for the record: total plate 296±2 → 181±2 µm · cells/column 33.5 → 20.4 ·
+S-phase 6.4 → 6.9 h · cycle time 34.2 → 39.3 h · **G0 fraction 5.0±0.2% → 22.1±2.1%.**
+
+⛔ **THREE — TWO CORRECTIONS TO R480, BOTH AGAINST MY OWN ROUND.**
+· ⛔ **R480 SAID `dick2008papst`'s "~3×" AND "several-fold" WERE PHRASES RATHER THAN PRINTED NUMBERS.
+FALSE — TABLE I PRINTS THEM.** Sulfate:disaccharide, CS: **PAPST1 apical 0.90±0.05 and basolateral
+0.77±0.02, against wild-type apical 0.17±0.03 and basolateral 0.43±0.07 — a 5.3-FOLD APICAL RISE.**
+Heparan sulfate is **unchanged** (0.92 / 0.96 / 0.90 / 1.09). ⛔ **AND THE COST IS IN THE SAME TABLE AND
+R480 DID NOT HAVE IT: total apically secreted CS-GAG FELL 30%, with gel filtration showing SHORTER CHAINS,
+so net incorporated sulfate is ~3.7-fold, not 5.3.** ⭐ Decisive for the mechanism split: *"the relative
+amounts of all sulfated CS disaccharides were increased"* — **PAPS supply raises TOTAL sulfation density and
+does NOT shift the 4S/6S ratio.** (MDCK II canine kidney epithelium; still no cartilage arm.)
+· ⭐ **`miyata2012`'s CONSTRUCT IS SETTLED AND IT IS THE OTHER LEVER ENTIRELY: full-length HUMAN C6ST-1 cDNA
+from a placenta library into pCAG (chicken β-actin promoter + CMV enhancer), injected into C57BL6 embryos —
+UBIQUITOUS AND CONSTITUTIVE — and "the total amount of chondroitin sulfate remained constant during
+development and did not differ between C6ST-1 transgenic and wild-type mice."** In adult wild-type brain
+6-sulfation is ~2% of total CS, and the line holds the cortical critical period open into adulthood.
+→ ⭐⭐ **SO THE ATLAS'S SULFATION ARM IS TWO EXPERIMENTALLY DISSOCIATED LEVERS AND HAS BEEN TREATING THEM AS
+ONE: PAPS SUPPLY (SLC35B2) RAISES TOTAL CHARGE — R448's DONNAN EXPONENT OF 1.73 APPLIES — WHILE CHST3/C6ST-1
+MOVES 4-O vs 6-O POSITION AT CONSTANT TOTAL CHARGE, WHERE DONNAN CANNOT APPLY AT ALL.** R480 recorded the
+C6ST-1 transgenic's **+1.27% femur and +1.63% tibia in normal mice** as orthogonal to every fixed-charge
+argument in this file; the construct now says why, and `miyata2012`'s critical-period result raises the
+live possibility that the mechanism is a **maturation clock** rather than a matrix-volume effect. `g_l5_482b`.
+
+⛔ **FOUR — AND THE LONGSHANKS RE-ANALYSIS RETURNS A DESIGN-CONTROLLED NEGATIVE FOR THE TERMINAL DOMAIN.**
+Marchini & Rolian raw workbook (Dryad), 49 animals with histomorphometry, two independently selected lines
+against controls, ~20 generations of selection **on tibia length**:
+**tibia +7.8% (p=6.6e-06) · total GP height +15.2% (p=1.7e-05) · RESTING ZONE DEPTH +39.7% (p=9.2e-05,
+the largest proportional change of any parameter) · proliferative zone +31.6% (p=1.3e-06) · proliferative
+cell number +22.7% (p=2.2e-04)** — against **hypertrophic zone depth ×0.950 p=0.298 · hypertrophic cell
+number ×1.037 p=0.448 · mean hypertrophic cell height ×0.969 p=0.537.** Both lines replicate independently
+(LS1 RZ +21.5% p=0.033; LS2 +56.9% p=2.0e-04). Pooled correlation of terminal cell height with tibia length
+is **NEGATIVE, r=−0.434 p=1.8e-03.**
+⭐ **SELECTION FOR A LONGER TIBIA MOVED THE RESTING AND PROLIFERATIVE ZONES AND MOVED NO HYPERTROPHIC
+PARAMETER AT ALL.**
+⛔⛔ **AND THE v(m) DECOMPOSITION THIS DATASET LOOKED ABLE TO SUPPORT CANNOT BE DONE ON IT — RECORDED AS A
+FAILURE RATHER THAN DELETED.** Hypertrophic zone depth ÷ hypertrophic cell number gives a domain height of
+**13.9 µm per cell while the printed mean hypertrophic cell height is 30.2 µm.** A cell cannot be taller
+than the domain containing it, so **column M is a TERMINAL cell height and column J/L is a ZONE MEAN over
+all hypertrophic cells, which start small — the two are not measured on the same population.** The script
+prints the subtraction labelled `INVALID` so the trap is visible to the next reader. Sanity checks that
+support the diagnosis: RZ 49.8 + PZ 200.0 + HZ 244.0 = 493.8 against a printed total of 510.1, and PZ
+200.0/25.1 = 7.97 µm per proliferative cell.
+
+## 🦇🦇🦇🦇🦇 R483 — **THE ONE ANIMAL THAT PROVES THE TERMINAL DOMAIN CAN CARRY IT. IN A SINGLE BAT,
+## COMPARING ITS OWN BONES, 61–76% OF AN EIGHT- TO SIXTEEN-FOLD ELONGATION DIFFERENCE IS TERMINAL CELL SIZE
+## — AND IT IS ACHIEVED BY SHAPE, AT AN AXIAL RATIO OF 2.0 WHERE EVERY RODENT PLATE EVER MEASURED IS ≤1.2.**
+## Run `atlas/tools/round483_bat_terminal_domain_decomposition.py`
+
+⭐ **THE DESIGN IS WHY IT COUNTS.** `farnum2007` (Cells Tissues Organs 2008;187:35–47), *Eptesicus fuscus*,
+**29 growth plates from ONE 13-day-old animal**, stereology by the Cruz-Orivé & Hunziker anisotropic model,
+elongation by oxytetracycline label over 48 h. **One animal means systemic hormone, age, nutrition, sex and
+genotype are held constant BY DESIGN** — the confound that `hansson1967` showed wrecks contralateral-control
+designs cannot arise. ⚠ And the cost of that design is stated with it: **n=1, no SD or SEM anywhere in any
+table, no statistical test in either paper.**
+
+⭐⭐ **ONE — THE ATLAS'S OWN UNVERIFIED FIGURES ARE SETTLED, AND R480 CORRECTION #4 WAS HALF RIGHT.** R480
+recorded *"the bat 40,300 / 1,300 µm³ figures are NOT verifiable"*. **Each appears exactly once, in Table 1,
+and I read both lines: 40,300 µm³ is the TERMINAL HYPERTROPHIC CELL VOLUME of the digit-4 METACARPAL
+(manus) and 1,300 µm³ that of the digit-5 PHALANX 1 (pes).** Both blocks close arithmetically against the
+paper's own fold-change column (40,300/780 = 51.7 printed 51.7; 1,300/410 = 3.17 printed 3.2).
+→ ⭐ **THEY ARE A BETWEEN-BONE COMPARISON OF TERMINAL CELL VOLUMES, NOT A WITHIN-PLATE FOLD CHANGE — WHICH
+IS WHAT R480 SUSPECTED AND COULD NOT CONFIRM.** They are also not a homologous pair (different digit,
+different bone), the paper's largest within-plate fold change is **71.3×** and its abstract says *"volume
+changes approaching ×70"*, and **40,300 is not even the maximum terminal volume — 47,900 µm³ is** (digit-2
+manus MC). **The 31× ratio of the two quoted numbers corresponds to nothing in the paper.**
+
+⭐⭐⭐⭐ **TWO — THE DECOMPOSITION, WITHIN ONE ANIMAL, AND IT IS THE OPPOSITE OF EVERY VARIANCE RESULT IN
+THIS FILE.** Elongation and terminal cell height, same animal, same method, same day:
+| contrast | elongation | terminal cell height | flux | **log share: terminal domain** |
+|---|---|---|---|---|
+| **MC digit 3 vs its own proximal tibia** | **7.88×** | **4.82×** | 1.63× | **76.2%** |
+| MC digit 4 vs proximal tibia | 7.73× | 4.65× | 1.66× | **75.1%** |
+| MC digit 3 vs MT digit 3 (pes) | 16.00× | 5.40× | 2.97× | **60.8%** |
+| ⭐ **proximal tibia vs MT digit 3 — TWO ORDINARY PLATES** | 2.03× | 1.12× | 1.82× | **15.8%** |
+⭐⭐ **THE FOURTH ROW IS THE CONTROL AND IT IS THE MOST IMPORTANT ONE: COMPARE TWO ORDINARY PLATES AND FLUX
+CARRIES 84%, EXACTLY AS R423 (88% amplification), R449 (Longshanks moves no hypertrophic parameter), R455
+(axial 80–95% cell production), R470/`vanky2000` (77.6% flux) AND `thorngren1981` ALL FOUND. IT IS ONLY WHEN
+THE SPECIALISED WING ELEMENT ENTERS THAT THE TERMINAL DOMAIN TAKES OVER.**
+→ ⭐⭐⭐ **THAT IS THE RECONCILIATION THE FILE HAS NEEDED. A VARIANCE DECOMPOSITION MEASURES WHAT VARIES
+WITHIN NORMAL MAMMALIAN DESIGN; A CANALISED TERM HAS LITTLE STANDING VARIANCE, SO EVERY SUCH DECOMPOSITION
+SCORES IT LOW. THAT SAYS NOTHING ABOUT WHAT A PERTURBATION OUTSIDE THE NORMAL RANGE CAN DO — WHICH IS
+R469's GAIN-ONLY-LEVER LOGIC APPLIED TO A TERM INSTEAD OF A GENE.** The bat is the existence proof that the
+terminal domain is a 5–15× lever when something actually pushes on it.
+⚠ **Bound stated honestly: v(m) is NOT measured in the bat, so this uses v(c) as a lower bound on v(d).
+If v(m) scales with v(c) the split is unchanged; if v(m) is constant the terminal share is UNDERSTATED.**
+
+⭐⭐⭐ **THREE — AND IT IS DONE BY SHAPE, WHICH IS THE DIRECTION QUESTION R454/R463/R468/R474 COULD NOT
+SETTLE, NOW WITH A NATURAL EXPERIMENT ATTACHED.** `farnum2007` (187:48–58), verbatim: terminal hypertrophic
+axial ratio (height/width) **≈2.0 in the bat metacarpal digit 3**, **≈0.55 in the bat pes**, and **<1.0 in
+ALL FOUR mouse plates** — the authors' phrase is *"extreme shape modulation in the direction of growth."*
+⭐ **THE LADDER, ASSEMBLED ACROSS THE ATLAS:** mouse manus and pes **<1.0** · rat, 4 plates × 2 ages
+**0.80–1.20** (`breur1997`, R470) · bat pes **0.55** · **bat metacarpal 2.0.**
+⭐⭐ **AND IT PASSES AN INTERNAL CONSISTENCY CHECK FROM INDEPENDENTLY REPORTED NUMBERS: at h=54.5 µm and
+V=33,900 µm³ a cylinder implies a width of 28.1 µm and an axial ratio of 1.94, against the stated ~2.0.**
+Two separately measured quantities reproduce the third. ⭐ **R454's arithmetic required only 2.47:1 LINEAR
+anisotropy to generate the observed ×4 height / ×10 volume hypertrophy; the bat reaches an ABSOLUTE terminal
+axial ratio of 2.0 where every rodent ever measured sits at or below ~1.2.**
+⭐ **And the other half is invariant, which sharpens it: proliferative-zone cell volume spans only
+590–1,010 µm³ across all 29 plates while terminal volume spans 1,300–47,900** — the paper's own Fig 7 legend
+says proliferative cell volume is essentially constant in all growth plates. **The bat does not start with a
+bigger cell. It ends with one.**
+
+⛔⛔ **FOUR — AND A SYSTEMATIC ARITHMETIC FEATURE OF THE PRIMARY LITERATURE THAT THIS FILE HAS INHERITED
+WITHOUT NOTICING: THE FIELD'S "CELLS TURNED OVER PER DAY" SETS v(m) = 0.** Farnum computes flux as
+**elongation ÷ terminal CELL HEIGHT** — verified on his own printed value (tibia 132 ÷ 11.3 = 11.68 against
+a printed 11.7). But the terminal DOMAIN is the cell-to-cell centre distance, which is cell height **plus
+the transverse septum**, and `vanky2000` measures that septum at **20.0% of the domain in a normal animal.**
+→ ⭐ **EVERY TERMINAL-CHONDROCYTE LIFE SPAN COMPUTED THIS WAY IS ~20% TOO SHORT AND EVERY FLUX ~25% TOO
+HIGH.** On the bat tibia: implied v(d) 14.12 µm, corrected flux 9.35 cells/day rather than 11.7. **This is
+a feature of the construction, not an error in one paper — and it means every published flux estimate in
+this literature is biased in the direction that UNDERSTATES the terminal domain's share.**
+⚠ **Unresolved and recorded: Table 5's four decimals (0.53, 0.53, 0.22, 0.35) cannot be assigned to their
+four column headings from the OCR.** The Methods constraint (proliferative axial ratio <0.4, hypertrophic
+>0.5) forces H axial ratio = 0.53 and P = 0.22 or 0.35, but the two AREA fractions cannot be separated.
+**The bat tibia area fractions are therefore not used anywhere.** ⚠ Digit-5 manus elongation (410 and
+170 µm/day) reproduces Table 4's life spans but **not** its growth-plate-height-loss column, uniquely among
+26 rows — treated as unverified and excluded from every contrast above.
+
+## 🧂🧂🧂🧂🧂 R484 — **THE 4-O/6-O QUESTION, ANSWERED — AND THE LOAD-BEARING CONCLUSION INVERTS ON A
+## SPECIES CHECK. THE 6-O ENZYME'S MOUSE NULL HAS ZERO SKELETAL PHENOTYPE AND ITS HUMAN NULL IS A
+## CHONDRODYSPLASIA WITH *DISPROPORTIONATE SHORT-TRUNK SHORT STATURE* — WHICH PUTS A SECOND, INDEPENDENT
+## HUMAN GENETIC ROUTE INTO CARTILAGE SULFATION ON THE COMPARTMENT THAT HOLDS THE RESIDUAL.**
+## Every claim below re-verified in the main loop: MGI from the local `.rpt` files, HPO from the supplied
+## `hpo_genes_to_phenotype.txt`, ChEMBL and PubMed by direct API with `--cacert /root/.ccr/ca-bundle.crt`.
+
+⭐ **WHY THE ROUND EXISTS.** R482 split the atlas's sulfation arm into **two experimentally dissociated
+levers** and registered `g_l5_482b`: **PAPS SUPPLY (SLC35B2, sulfate donors) raises TOTAL charge, so
+R448's Donnan exponent of 1.73 applies — while CHST3/C6ST-1 moves 4-O vs 6-O POSITION at constant total
+charge, where Donnan cannot apply at all.** The whole positional arm rested on **one** result:
+`miyata2012`'s ubiquitous C6ST-1 transgenic, read out incidentally in `PMID 36572689`'s Source Data —
+**femur 15.79 → 15.99 mm (+1.27%, p=0.0217) and tibia 18.40 → 18.70 (+1.63%, p=0.0233), n=5, with total CS
+disaccharide FALLING numerically (837.2 → 802.4) and sulfates per disaccharide 1.0295 vs 1.0297 at
+p=0.956.** A length gain in a normal mouse from a positional switch at unmoved fixed charge.
+
+⛔⛔⛔ **ONE — AND THE CENTRAL CONCLUSION OF THE SWEEP INVERTS ON ONE SPECIES CHECK. THE MOUSE SAYS THE
+6-O ENZYME IS DISPENSABLE FOR THE SKELETON; THE HUMAN SAYS IT IS REQUIRED, AND REQUIRED FOR THE TRUNK.**
+· **MOUSE — verified from `MGI_PhenoGenoMP.rpt` on disk, allele strings read per CORR-341 (both homozygous,
+  single gene, no Cre, no double):** `Chst3<tm1Tmu>/Chst3<tm1Tmu>` carries **decreased T cell number ·
+  decreased neutrophil number · abnormal ovarian folliculogenesis · abnormal bone marrow morphology ·
+  decreased aggression · increased T cell proliferation · lymph node hypoplasia · decreased prepulse
+  inhibition**, and `Chst3<tm1Dgen>/Chst3<tm1Dgen>` carries **decreased locomotor activity · increased
+  coping response · decreased prepulse inhibition**. ⭐ **NOT ONE BONE, CARTILAGE, GROWTH-PLATE, LENGTH OR
+  LIMB TERM ACROSS TWO INDEPENDENT ALLELES AND TWO LABORATORIES** — "abnormal bone marrow morphology" is
+  haematopoietic. **And it is not for want of looking at cartilage:** `uchimura2002` (J Biol Chem 2002,
+  PMID 11696535) reports the nulls **born at approximately the expected frequency and viable through
+  adulthood with chondroitin sulfate D DISAPPEARING FROM CARTILAGE.** A >100-assay phenotype survey of the
+  same line (`heikinheimo2013`, Glycobiology, PMID 23118208) found nothing skeletal. ⛔ **IMPC never
+  phenotyped Chst3 at all — 0 genotype-phenotype rows, 0 statistical results — so that half is CORR-348
+  case one and says nothing in either direction.**
+· ⭐⭐ **HUMAN — `thiele2004` (PNAS 2004, PMID 15215498), and its TITLE is the finding: *loss of chondroitin
+  6-O-sulfotransferase-1 function results in severe human chondrodysplasia with progressive spinal
+  involvement.*** Two large consanguineous Omani families, SED Omani type, mapped to 10q23, **homozygous
+  CHST3 R304Q in the PAPS-binding site, recombinant enzyme showing the mutation COMPLETELY ABOLISHES
+  C6ST-1 ACTIVITY**, patient cells showing ΔHexA-GalNAc(6S) and ΔHexA(2S)-GalNAc(6S) significantly reduced
+  with ΔHexA-GalNAc(4S,6S) — undetectable in controls — elevated. Authors' own summary: a generalised
+  defect of CS chain sulfation **resulting in chondrodysplasia with major involvement of the spine.**
+· ⭐⭐⭐ **AND THE HPO ANNOTATION NAMES THE COMPARTMENT: CHST3 carries HP:0003521 DISPROPORTIONATE
+  SHORT-TRUNK SHORT STATURE (ORPHA:263463) plus HP:0004322 short stature under BOTH OMIM:143095 and
+  OMIM:245600 — three disease entities, 185 HPO rows.** Verified from the supplied HPO file.
+→ ⭐ **THE SWEEP'S HEADLINE — "the two enzymes are not symmetric, 6-O is not required" — IS A MOUSE
+STATEMENT THAT THE HUMAN CONTRADICTS, AND THE ATLAS ALREADY HELD HALF OF IT SINCE R320/R409 WITHOUT EVER
+JOINING IT TO THE MOUSE OR TO THE COMPARTMENT.** R320 recorded *"CHST3 → SED with joint dislocations"* and
+R409 *"biallelic CHST3 loss = spondyloepiphyseal dysplasia with joint dislocations, SHORT STATURE"* —
+neither carried the spinal specificity, and neither is in this ledger.
+
+⭐⭐ **TWO — AND THE DISCORDANCE RUNS BOTH WAYS, WHICH GENERALISES IT BEYOND ONE GENE.** For the 4-O
+enzyme the species run in the OPPOSITE direction: **mouse `Chst11<Gt(PT-1)1Wran>` homozygote is
+NEONATAL-LETHAL with 23 MP terms including MP:0004686 DECREASED LENGTH OF LONG BONES, MP:0008151 INCREASED
+DIAMETER OF LONG BONES, MP:0006395 abnormal epiphyseal plate morphology, MP:0000165 abnormal long bone
+hypertrophic chondrocyte zone, MP:0002427 disproportionate dwarf and MP:0000547 short limbs**
+(`kluppel2005`, Development, PMID 16079159), with an **independent ENU allele `Chst11<m1Btlr>` giving
+MP:0002764 short tibia and MP:0003109 short femur** (`beutler2021`, JBMR, PMID 33905568) and
+`Chst11<tm1a(KOMP)Wtsi>` giving abnormal perichondrial ossification, cleft palate and complete preweaning
+lethality — **while the HUMAN homozygous CHST11 in-frame deletion (`shabbir2018`, J Med Genet, PMID
+29514872) carries only HP:0003502 MILD SHORT STATURE under a single OMIM entry with 22 HPO rows.**
+→ ⭐ **MOUSE KNOCKOUT SEVERITY DOES NOT PREDICT HUMAN SEVERITY FOR EITHER CHONDROITIN SULFOTRANSFERASE,
+AND IT FAILS IN OPPOSITE DIRECTIONS FOR THE TWO. Any argument of the form "the mouse null is/is not
+skeletal, therefore the enzyme does/does not matter" is unusable on this pathway in either sign.**
+
+⭐⭐⭐ **THREE — WHY THE WHOLE ARM IS INVISIBLE TO THE INSTRUMENT THIS FILE USES MOST, AND IT IS
+STRUCTURAL RATHER THAN BAD LUCK. RUN AGAINST `kosmicki2026`'s 207: CHST3, CHST11, CHST7, CHST12, CHST14,
+SLC35B2, PAPSS1, PAPSS2, SLC26A2, UST, ARSB, ARSL, ARSD, CSGALNACT1, CSGALNACT2 AND CHSY1 ARE ALL ABSENT.
+THE ONLY TWO MEMBERS THAT REACH IT ARE THE SUBSTRATE GENES — ACAN (pLoF singleton −16.6 cm, P=1.9e-52) AND
+XYLT1 (pLoF <0.1% −3.88 cm, P=1.3e-11) — AND BOTH ARE LOAD-BEARING.**
+⭐ **THE REASON IS CORR-358's ZYGOSITY POINT AND IT IS CHECKABLE: BOTH HUMAN SULFOTRANSFERASE DISEASES ARE
+RECESSIVE BY CONSTRUCTION — CHST3 R304Q homozygous in consanguineous families, CHST11 a homozygous
+in-frame deletion — AND A HETEROZYGOUS BURDEN TEST CANNOT CONTAIN A RECESSIVE GENE.** So their absence
+from the 207 is a **design artefact of the instrument, not evidence of no effect**, exactly as R432 showed
+for CYP19A1. **R432's recessive-class screen is the instrument that would see them and it was never run
+over the sulfation pathway.** Gap `g_l5_484a`.
+
+⛔ **FOUR — THE CHEMICAL MATTER IS AN EARNED NEGATIVE OF THE STRONGEST KIND, WITH A POSITIVE CONTROL.**
+Re-run in the main loop against the ChEMBL REST API by exact UniProt accession (CORR-347's requirement to
+separate `n_molecules` from `max_phase`, and its own warning that free-text target search is fuzzy):
+**`target_components__accession=Q9NPF2` (CHST11) → 0 targets · `Q7LGC8` (CHST3) → 0 targets · `Q8NCG5`
+(CHST4, the control) → 1 target.** ⭐ **THIS IS NOT A LOW MOLECULE COUNT — CHEMBL HAS NO TARGET RECORD AT
+ALL FOR EITHER ENZYME, SO `n_molecules` IS UNDEFINED RATHER THAN ZERO.** The closest chemical matter is
+**compound 34** (`cheung2017`, ACS Chem Biol, PMID 29099173), discovered against CHST15 and inhibiting
+**Chst11, the 2-O-sulfotransferase Ust and Hs3st1 at IC50 2.0–2.5 µM** — a **pan-GAG-sulfotransferase
+inhibitor that lowers TOTAL sulfation, never tested against CHST3, and therefore not a 4S/6S ratio
+shifter in either direction.** **There is no selective CHST11 inhibitor, no selective CHST3 inhibitor and
+no CHST3 activator in any species.**
+
+⭐ **FIVE — THE MATURATION DIRECTION, FOUR SPECIES, ONE SIGN — AND IT POINTS THE SAME WAY AS THE
+TRANSGENIC.** `mourao1988` (Arthritis Rheum, PMID 3136774): human **growth cartilage contains nearly equal
+4S and 6S while adult cartilage, calcification complete, contains ONLY 6S.** `bayliss1999` (J Biol Chem,
+PMID 10336494): human articular birth → 20 y, **6-sulfated disaccharide ~50% → ~85%** with a concomitant
+fall in 4-sulfated, and **deeper layers of immature cartilage richer in 4-sulfated.** `deutsch1995`
+(J Orthop Res, PMID 7722760), bovine, zone-resolved on purified aggrecan CS: **reserve → hypertrophic
+ΔDi-6S ~32% → ~52% and ΔDi-4S ~53% → ~35%** — a computed ~2.5-fold fall in the 4S/6S ratio. Human
+tracheobronchial cartilage runs the same way with age.
+⛔ **AND IT IS CONTESTED ACROSS ZONES BY A DIFFERENT MEASUREMENT, WHICH IS RECORDED AND NOT SMOOTHED:
+`hagiwara1995` (Histochem Cell Biol, PMID 7553135), rat immunoelectron microscopy with stub-epitope
+antibodies, reports C4S INCREASING proliferative → calcifying.** These are not the same quantity —
+Deutsch measures mol% composition of purified chains, Hagiwara measures immunoreactivity of
+chondroitinase-generated stubs — and **`bayliss1999` warns explicitly that reducing-terminal stub
+sulfation need not reflect the internal disaccharide composition of the chain.** Unresolved without both
+full texts. ⚠ Also recorded: a 2026 review (PMC13254587) states *"high levels of 4-O-sulfate CS at the
+growth plate in newborns"* citing Mourão — **Mourão's own abstract says NEARLY EQUAL. The adult-is-only-6S
+half is faithful; the newborn half is not.** Third instance this month of a review overstating its primary.
+
+⛔⛔ **SIX — AND THE HONEST LIMIT, WHICH IS THE REASON THIS IS A MECHANISM RESULT AND NOT YET A LEVER: THE
+HUMAN CHST3 PHENOTYPE DOES NOT ISOLATE POSITION FROM TOTAL CHARGE.** `thiele2004`'s own patient urine
+shows **marked undersulfation of CS with an INCREASE IN THE NONSULFATED UNIT** — so abolishing the 6-O
+enzyme lowers total fixed charge as well as moving position, and the trunk phenotype is fully consistent
+with R448's Donnan argument without requiring any positional mechanism at all. ⭐ **`miyata2012`'s
+transgenic is the opposite and is the only pure positional experiment in existence — total CS unchanged,
+sulfates per disaccharide 1.0295 vs 1.0297 — and it is n=5 with the bone endpoint incidental to a
+neuroscience paper.** **The loss arm is charge-confounded and the gain arm is underpowered. Neither alone
+carries the positional hypothesis.** `g_l5_482b` stays open, restated.
+
+⭐⭐⭐ **SEVEN — BUT THE CHARGE READING IS THE FAVOURABLE ONE FOR THIS FILE, BECAUSE IT PUTS A SECOND
+INDEPENDENT HUMAN GENETIC ROUTE INTO CARTILAGE SULFATION ON THE TRUNK.**
+| route | gene | variant class | compartment evidence |
+|---|---|---|---|
+| **sulfate SUPPLY** | **SLC13A1** | common LoF alleles, UK Biobank ~466,900 | **SITTING height −0.0774 SD, P=2.16e-07 vs standing −0.0380, P=0.0064 — twice the effect, four orders more significant at the same N** (R322) |
+| **sulfate TRANSFER** | **CHST3** | recessive, three disease entities | **HP:0003521 disproportionate SHORT-TRUNK short stature**; authors' phrase, major involvement of the spine |
+⭐ **TWO DIFFERENT GENES, TWO DIFFERENT VARIANT CLASSES, TWO DIFFERENT ASCERTAINMENTS — POPULATION
+BIOBANK AND CONSANGUINEOUS PEDIGREE — ONE PATHWAY, AND BOTH LAND ON THE COMPARTMENT THAT HOLDS THE
+RESIDUAL AT BA16.** The file has held both halves and never stated the convergence.
+⛔ **AND IT QUALIFIES R451/R479's OWN COMPARTMENT DEMOTION OF THE SULFATE ARM.** R451 demoted oral
+chondroitin sulfate because *"the wild-type signature is LIMB and his residual is TRUNK"*, on the minipig
+patent's withers-versus-body-length reading, and R479 lifted that only by operator instruction. **The
+HUMAN GENETICS OF THE SAME PATHWAY SAY TRUNK, TWICE.** The animal compartment signature and the human
+genetic compartment signature disagree, and the human one is on the right species. **That does not
+promote the compound — `munoz2025cs`'s +2.50% is a broiler TIBIOTARSUS, a limb bone — but it removes the
+compartment argument as a reason to hold the pathway back.**
+
+⭐ **EIGHT — AND ONE SIGNATURE WORTH RECORDING FOR A DIFFERENT ARM: THE 4-O KNOCKOUT IS SHORT *AND WIDE*.**
+`Chst11<Gt(PT-1)1Wran>` carries **MP:0004686 decreased length of long bones TOGETHER WITH MP:0008151
+increased diameter of long bones**, and `kluppel2005`'s abstract describes **specific alterations in the
+orientation of chondrocyte columns.** ⭐ **Shorter and wider with disordered column orientation is a
+LOSS-OF-ANISOTROPY signature, not simple growth failure — which is the direction-of-hypertrophic-expansion
+question R454, R463, R468 and R474 have been working, arriving here from a sulfotransferase.** It sits
+beside `killion2017` (denervation → shorter tibiae with altered collagen fibre organisation) and
+`yuan2023` (α-parvin mutants "shorter but wider") as the third genetic instance of the same shape.
+⚠ Mechanistically `kluppel2005` reports **strong upregulation of TGF-β signalling with concomitant
+downregulation of BMP and Ihh unaffected** — and the CHST11 expression literature has **TGF-β1 raising
+CHST11**, so there is a negative feedback loop around the 4-O enzyme that would make any 4-O manipulation
+partly self-cancelling. Recorded as a reason not to enter on the 4-O side even if an agent existed.
+
+⛔ **NINE — THE BIOPHYSICS GAP, EARNED BY QUERY AND NOT ASSERTED, AND IT IS THE ONE THAT MATTERS MOST.**
+Five separate Europe PMC queries pairing 4-sulfate with 6-sulfate against conformation, hydration,
+persistence length, molecular dynamics, osmotic pressure, fixed charge, collagen binding and
+aggrecan–hyaluronan aggregation returned **169, 495, 416, 448 and 2 hits with nothing on point.**
+⭐ **THERE IS NO MEASUREMENT OF OSMOTIC PRESSURE, FIXED-CHARGE DENSITY, HYDRATION OR AGGRECAN–HYALURONAN
+AGGREGATION AS A FUNCTION OF 4S VERSUS 6S AT MATCHED TOTAL CHARGE, IN ANY SYSTEM.** The only physically
+argued primary is **`scott1992`** (Eur J Biochem, PMID 1425674): rotary shadowing/EM plus molecular
+mechanics showing **CS6 aggregates into meshworks and CS4 does not**, with duplex stability falling as
+charge is concentrated toward the polymer centre line, i.e. in CS4, and aggregation driven by hydrophobic
+patches that negative charge opposes. **Given that `miyata2012`'s transgenic holds sulfates per
+disaccharide constant to four decimal places, that gap is precisely the one the positional hypothesis
+needs filled, and Scott 1992 is the only thing in it.** ⛔ And a review gloss to distrust: the claim that
+4-O-sulfated CS has a higher calcium-binding capacity traces to a primary (PMID 16251185) that **does not
+compare 4S with 6S at all.**
+
+⚠ **TEN — TWO BOOKKEEPING CORRECTIONS TO THE SWEEP ITSELF, CAUGHT ON VERIFICATION.** PMID **19369399** was
+filed twice under two different identities — once as the brachymorphic *Papss2* mouse and once as the
+Ihh/C4S binding result. **Its verified title is `Sulfation of chondroitin sulfate proteoglycans is
+necessary for proper Indian hedgehog signaling in the developing growth plate`, Development 2009**, so the
+Ihh attribution is correct and the Papss2 one is a mis-file. And `PMID 20470884` is **Matrix Biol 2010,
+*Defective proteoglycan sulfation of the growth plate zones causes reduced chondrocyte proliferation via
+an altered Indian hedgehog signalling*** — a **TOTAL-undersulfation** result (dtd mouse), not a positional
+one, and it must not be read as 4S/6S evidence.
+
+🧭 **WHAT R484 SETTLES.** The positional lever is **not** supported by the loss data the way it first
+appeared: the mouse 6-O null is skeletally silent, the human 6-O null is charge-confounded, and no agent
+exists on either enzyme in either direction with ChEMBL holding no target record at all. **What the round
+delivers instead is bigger than the positional question — the human genetics of cartilage sulfation
+converge on the TRUNK from two independent instruments, the entire enzyme half of the pathway is invisible
+to the 207 by a zygosity artefact rather than by absence of effect, and mouse knockout severity is
+demonstrated to be uninformative about human severity for both sulfotransferases in opposite directions.**
+
 ## 📐📐📐📐📐 R480 — **THE IDENTITY HAS TWO TERMS AND THE FILE HAS ONLY EVER SCREENED ONE. F-R185 DECLARED
 ## h_term PHARMACOLOGICALLY EMPTY ON 23 GENES OF WHICH NOT ONE IS A MATRIX GENE — WHILE MATRIX IS 32% OF
 ## ELONGATION IN A FAST PLATE AND 49% IN A SLOW ONE, AND F-R058 PUT THAT EXACT GAP ON ITS OWN ASKS LIST
@@ -14495,8 +14837,12 @@ and this is the third — same target family, now with a measured sulfation read
 ⚠ **TWO DATA-INTEGRITY FLAGS RECORDED SO THEY DO NOT COST A LATER ROUND: PubMed's DOI field is CORRUPT for
 PMID 36572689 and PMID 40747004, and MOUSE IMPAD1 IS SYMBOL `Bpnt2` IN MGI — a naive symbol query returns
 nothing.** ⚠ And `dick2008papst`, which R461 leaned on for the PAPS-transporter elevation, is **MDCK II
-canine kidney epithelium**, its "~3×" and "several-fold" are **phrases rather than printed numbers**, and
-HSPG sulfation was **essentially unchanged.**
+canine kidney epithelium** and HSPG sulfation was **essentially unchanged.** ⛔⛔ **"its '~3×' and
+'several-fold' are PHRASES RATHER THAN PRINTED NUMBERS" IS WITHDRAWN BY R482, WHICH READ THE PAPER: TABLE I
+PRINTS THEM. CS sulfate:disaccharide PAPST1 apical 0.90±0.05 against wild-type apical 0.17±0.03 = 5.3-FOLD,
+with HS unchanged — and the cost R480 did not have is in the same table, TOTAL APICALLY SECRETED CS-GAG DOWN
+30% WITH SHORTER CHAINS, so net incorporated sulfate is ~3.7-fold. Decisively: "the relative amounts of ALL
+sulfated CS disaccharides were increased" — PAPS SUPPLY RAISES TOTAL CHARGE AND DOES NOT SHIFT 4S/6S.**
 
 ⛔ **NINE — THE DATASET HUNT, AND ITS ANSWER IS A STRUCTURAL NEGATIVE.** ⭐ **NOT ONE DEPOSITED DATASET IN
 ANY REPOSITORY SEPARATES CELL FROM MATRIX. Every omics record measures transcript or protein abundance in a
@@ -14544,10 +14890,12 @@ environment returned 403/401 bot protection, so those files need a browser.**
   universal across taxa.**
 · ⛔ **`white2008`'s SINGLE HUMAN TERMINAL CELL VOLUME (5,900 µm³) IS A FLOOR, NOT A REPRESENTATIVE VALUE:
   the plate was undergoing physiological epiphysiodesis with 46% central bridging bone, in a child treated
-  with cisplatin, doxorubicin and methotrexate.** And ⛔ **the bat 40,300 / 1,300 µm³ figures are NOT
-  verifiable** — both Farnum 2008 papers are closed access and the abstract supports only *"volume changes
-  approaching ×70"*, which is a within-plate proliferative-to-hypertrophic fold change and not the same
-  quantity.
+  with cisplatin, doxorubicin and methotrexate.** ⛔⛔ **AND THE BAT HALF OF THIS CORRECTION IS SUPERSEDED BY
+  R483, WHICH READ BOTH PAPERS: 40,300 µm³ AND 1,300 µm³ ARE BOTH TERMINAL HYPERTROPHIC CELL VOLUMES IN
+  TABLE 1 — digit-4 METACARPAL (manus) and digit-5 PHALANX 1 (pes) — i.e. a BETWEEN-BONE comparison, which
+  is what R480 suspected. They are not a homologous pair, 40,300 is not the maximum (47,900 is), and their
+  31× ratio corresponds to nothing in the paper. The "approaching ×70" figure is a separate, correctly
+  identified within-plate fold change whose true maximum is 71.3×.**
 
 🧭 **WHAT R480 SETTLES.** The identity's second term is **a third to a half of longitudinal growth, has two
 independent measurements in the same four rat plates, closes the identity to 0.03% on separately measured
